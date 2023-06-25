@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,22 +7,21 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
-
-# edit to match directory level 
+# edit to match directory level
 PRJ		= ..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = helpcontent2
@@ -46,7 +45,7 @@ ZIP1LIST=$(LANGDIR)$/text$/sdraw$/* -x "*.xhp????*" -x "*.dphh*" -x "*.hzip" -x 
 LINKNAME=sdraw
 LINKADDEDFILES= \
    -add sdraw.cfg $(PRJ)$/source$/auxiliary$/LANGUAGE$/sdraw.cfg \
-   -add sdraw.jar  $(COMMONBIN)$/xhp_sdraw_LANGUAGE.zip
+   -add sdraw.jar $(COMMONBIN)$/xhp_sdraw_LANGUAGE.zip
 
 
 LINKADDEDDEPS= \
@@ -221,7 +220,6 @@ LINKLINKFILES= \
    text$/simpress$/02$/13040000.xhp \
    text$/simpress$/02$/13050000.xhp \
    text$/simpress$/02$/13060000.xhp \
-   text$/simpress$/02$/13070000.xhp \
    text$/simpress$/02$/13080000.xhp \
    text$/simpress$/02$/13090000.xhp \
    text$/simpress$/02$/13100000.xhp \

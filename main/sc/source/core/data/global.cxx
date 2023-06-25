@@ -895,10 +895,10 @@ sal_Bool ScGlobal::EETextObjEqual( const EditTextObject* pObj1,
 	if ( pObj1 && pObj2 )
 	{
 		//	first test for equal text content
-		sal_uInt16 nParCount = pObj1->GetParagraphCount();
+		sal_uInt32 nParCount = pObj1->GetParagraphCount();
 		if ( nParCount != pObj2->GetParagraphCount() )
 			return sal_False;
-		for (sal_uInt16 nPar=0; nPar<nParCount; nPar++)
+		for (sal_uInt32 nPar=0; nPar<nParCount; nPar++)
 			if ( pObj1->GetText(nPar) != pObj2->GetText(nPar) )
 				return sal_False;
 

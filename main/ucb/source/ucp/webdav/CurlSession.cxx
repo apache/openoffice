@@ -373,25 +373,24 @@ int CurlSession::validateServerX509Certificate( X509_STORE_CTX *x509StoreContext
          X509_STORE_CTX_get_chain( x509StoreContext );
 #endif
     
-    if ( depth == 0 ) {
-        std::vector< uno::Sequence< sal_Int8 > > asn1DerCertificates;
-        if ( chain != NULL ) {
-            int nCertificates = sk_X509_num( chain );
-            for ( int i = 0; i < nCertificates; i++ ) {
-                X509 *certificate = sk_X509_value( chain, i );
-                uno::Sequence< sal_Int8 > asn1DerCertificate = convertCertificateToAsn1Der( certificate );
-                if ( asn1DerCertificate.getLength() == 0 )
-                    return 0;
-                asn1DerCertificates.push_back( asn1DerCertificate );
-            }
-        } else {
-            uno::Sequence< sal_Int8 > asn1DerCertificate = convertCertificateToAsn1Der( serverCertificate );
+    std::vector< uno::Sequence< sal_Int8 > > asn1DerCertificates;
+    if ( chain != NULL ) {
+        int nCertificates = sk_X509_num( chain );
+        for ( int i = 0; i < nCertificates; i++ ) {
+            X509 *certificate = sk_X509_value( chain, i );
+            uno::Sequence< sal_Int8 > asn1DerCertificate = convertCertificateToAsn1Der( certificate );
             if ( asn1DerCertificate.getLength() == 0 )
                 return 0;
             asn1DerCertificates.push_back( asn1DerCertificate );
         }
-        verifyOk = verifyCertificateChain( asn1DerCertificates );
+    } else {
+        uno::Sequence< sal_Int8 > asn1DerCertificate = convertCertificateToAsn1Der( serverCertificate );
+        if ( asn1DerCertificate.getLength() == 0 )
+            return 0;
+        asn1DerCertificates.push_back( asn1DerCertificate );
     }
+    verifyOk = verifyCertificateChain( asn1DerCertificates );
+
     m_aLogger.log( LogLevel::FINE, "validateServerX509Certificate() returning $1$ at depth $2$",
         (sal_Int32)verifyOk, (sal_Int32)depth );
     return verifyOk;

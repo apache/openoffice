@@ -27,7 +27,9 @@
 #include <com/sun/star/table/XCell.hpp>
 #include <com/sun/star/table/XCellRange.hpp>
 #include <com/sun/star/text/XText.hpp>
+#include <com/sun/star/util/DateTime.hpp>
 #include "oox/helper/attributelist.hxx"
+#include "oox/helper/datetimehelper.hxx"
 #include "oox/helper/propertyset.hxx"
 #include "oox/xls/addressconverter.hxx"
 #include "oox/xls/biffinputstream.hxx"
@@ -44,6 +46,7 @@ using namespace ::com::sun::star::sheet;
 using namespace ::com::sun::star::table;
 using namespace ::com::sun::star::text;
 using namespace ::com::sun::star::uno;
+using namespace ::com::sun::star::util;
 
 using ::oox::core::ContextHandlerRef;
 using ::rtl::OUString;
@@ -103,6 +106,8 @@ SheetDataContextBase::SheetDataContextBase( const WorksheetHelper& rHelper ) :
     mrSheetData( rHelper.getSheetData() ),
     mnSheet( rHelper.getSheetIndex() )
 {
+    maLastCellAddress.Sheet = rHelper.getSheetIndex();
+    maLastCellAddress.Row = SAL_MAX_UINT32; // wraps around to 0 when incremented
 }
 
 SheetDataContextBase::~SheetDataContextBase()
@@ -210,6 +215,15 @@ void SheetDataContext::onEndElement()
                 case XML_n:
                     mrSheetData.setValueCell( maCellData, maCellValue.toDouble() );
                 break;
+                case XML_d:
+                {
+                    DateTime dateTime;
+                    if ( parseISO8601DateTime( maCellValue, dateTime ) )
+                        mrSheetData.setDateTimeCell( maCellData, dateTime );
+                    else
+                        mrSheetData.setErrorCell( maCellData, maCellValue );
+                }
+                break;
                 case XML_b:
                     mrSheetData.setBooleanCell( maCellData, maCellValue.toDouble() != 0.0 );
                 break;
@@ -284,6 +298,11 @@ void SheetDataContext::importRow( const AttributeList& rAttribs )
 {
     RowModel aModel;
     aModel.mnRow          = rAttribs.getInteger( XML_r, -1 );
+    if ( aModel.mnRow == -1 )
+        aModel.mnRow = ++maLastCellAddress.Row;
+    else
+        maLastCellAddress.Row = aModel.mnRow - 1;
+    maLastCellAddress.Column = SAL_MAX_UINT32; // wraps around to 0 when incremented
     aModel.mfHeight       = rAttribs.getDouble( XML_ht, -1.0 );
     aModel.mnXfId         = rAttribs.getInteger( XML_s, -1 );
     aModel.mnLevel        = rAttribs.getInteger( XML_outlineLevel, 0 );
@@ -317,9 +336,22 @@ void SheetDataContext::importRow( const AttributeList& rAttribs )
 
 bool SheetDataContext::importCell( const AttributeList& rAttribs )
 {
-    bool bValidAddr = mrAddressConv.convertToCellAddress( maCellData.maCellAddr, rAttribs.getString( XML_r, OUString() ), mnSheet, true );
+    OUString r = rAttribs.getString( XML_r, OUString() );
+    bool bValidAddr;
+    if ( r.getLength() > 0 )
+        bValidAddr = mrAddressConv.convertToCellAddress( maCellData.maCellAddr, rAttribs.getString( XML_r, OUString() ), mnSheet, true );
+    else
+    {
+        maCellData.maCellAddr.Column = ++maLastCellAddress.Column;
+        maCellData.maCellAddr.Row = maLastCellAddress.Row;
+        maCellData.maCellAddr.Sheet = maLastCellAddress.Sheet;
+        bValidAddr = true;
+    }
     if( bValidAddr )
     {
+        maLastCellAddress.Column  = maCellData.maCellAddr.Column;
+        maLastCellAddress.Row     = maCellData.maCellAddr.Row;
+        maLastCellAddress.Sheet   = maCellData.maCellAddr.Sheet;
         maCellData.mnCellType     = rAttribs.getToken( XML_t, XML_n );
         maCellData.mnXfId         = rAttribs.getInteger( XML_s, -1 );
         maCellData.mbShowPhonetic = rAttribs.getBool( XML_ph, false );

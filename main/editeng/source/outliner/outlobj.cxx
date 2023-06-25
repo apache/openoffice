@@ -194,7 +194,7 @@ sal_uInt32 OutlinerParaObject::Count() const
     return mpImplOutlinerParaObject->maParagraphDataVector.size();
 }
 
-sal_Int16 OutlinerParaObject::GetDepth(sal_uInt16 nPara) const
+sal_Int16 OutlinerParaObject::GetDepth(sal_uInt32 nPara) const
 {
     if(nPara < mpImplOutlinerParaObject->maParagraphDataVector.size())
     {

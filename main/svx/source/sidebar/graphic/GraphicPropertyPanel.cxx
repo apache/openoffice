@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #include <sfx2/sidebar/ResourceDefinitions.hrc>
 #include <sfx2/sidebar/Theme.hxx>
@@ -53,7 +55,7 @@ GraphicPropertyPanel::GraphicPropertyPanel(
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
 :   Control(
-        pParent, 
+        pParent,
         SVX_RES(RID_SIDEBAR_GRAPHIC_PANEL)),
     mpFtBrightness(new FixedText(this, SVX_RES(FT_BRIGHTNESS))),
     mpMtrBrightness(new MetricField(this, SVX_RES(MTR_BRIGHTNESS))),
@@ -89,22 +91,22 @@ GraphicPropertyPanel::GraphicPropertyPanel(
     // Setup the grid layouter.
     maLayouter.GetCell(0,0).SetControl(*mpFtBrightness).SetGridWidth(2);
     maLayouter.GetCell(1,0).SetControl(*mpMtrBrightness).SetGridWidth(2);
-    
+
     maLayouter.GetCell(0,3).SetControl(*mpFtContrast).SetGridWidth(2);
     maLayouter.GetCell(1,3).SetControl(*mpMtrContrast).SetGridWidth(2);
-    
+
     maLayouter.GetCell(2,0).SetControl(*mpFtColorMode).SetGridWidth(2);
     maLayouter.GetCell(3,0).SetControl(*mpLBColorMode).SetGridWidth(2);
-    
+
     maLayouter.GetCell(2,3).SetControl(*mpFtTrans).SetGridWidth(2);
     maLayouter.GetCell(3,3).SetControl(*mpMtrTrans).SetGridWidth(2);
-    
+
     maLayouter.GetCell(4,0).SetControl(maImgRed).SetFixedWidth();
     maLayouter.GetCell(4,1).SetControl(*mpMtrRed);
 
     maLayouter.GetCell(5,0).SetControl(maImgBlue).SetFixedWidth();
     maLayouter.GetCell(5,1).SetControl(*mpMtrBlue);
-    
+
     maLayouter.GetCell(4,3).SetControl(maImgGreen).SetFixedWidth();
     maLayouter.GetCell(4,4).SetControl(*mpMtrGreen);
     maLayouter.GetCell(5,3).SetControl(maImgGamma).SetFixedWidth();
@@ -125,7 +127,7 @@ GraphicPropertyPanel::GraphicPropertyPanel(
         .SetWeight(1)
         .SetMinimumWidth(Layouter::MapWidth(*this, MBOX_WIDTH - 10))
         .SetRightPadding(Layouter::MapWidth(*this,SECTIONPAGE_MARGIN_HORIZONTAL));
-    
+
     // Make controls that display text handle short widths more
     // graceful.
     Layouter::PrepareForLayouting(*mpFtBrightness);
@@ -304,12 +306,12 @@ GraphicPropertyPanel* GraphicPropertyPanel::Create (
     SfxBindings* pBindings)
 {
     if (pParent == NULL)
-        throw lang::IllegalArgumentException(A2S("no parent Window given to GraphicPropertyPanel::Create"), NULL, 0);
+        throw lang::IllegalArgumentException(A2S("no parent window given to GraphicPropertyPanel::Create"), NULL, 0);
     if ( ! rxFrame.is())
         throw lang::IllegalArgumentException(A2S("no XFrame given to GraphicPropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to GraphicPropertyPanel::Create"), NULL, 2);
-    
+
     return new GraphicPropertyPanel(
         pParent,
         rxFrame,
@@ -322,15 +324,15 @@ void GraphicPropertyPanel::DataChanged(
     const DataChangedEvent& rEvent)
 {
     (void)rEvent;
-    
+
     SetupIcons();
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
-void GraphicPropertyPanel::NotifyItemUpdate( 
-    sal_uInt16 nSID, 
-    SfxItemState eState, 
+void GraphicPropertyPanel::NotifyItemUpdate(
+    sal_uInt16 nSID,
+    SfxItemState eState,
     const SfxPoolItem* pState,
     const bool bIsEnabled)
 {
@@ -536,9 +538,9 @@ void GraphicPropertyPanel::NotifyItemUpdate(
 
 
 
-SfxBindings* GraphicPropertyPanel::GetBindings() 
-{ 
-    return mpBindings; 
+SfxBindings* GraphicPropertyPanel::GetBindings()
+{
+    return mpBindings;
 }
 
 

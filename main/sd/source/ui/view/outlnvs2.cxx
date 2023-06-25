@@ -232,7 +232,7 @@ void OutlineViewShell::FuTemporary(SfxRequest &rReq)
 			sal_uLong nParaCount = pOutl->GetParagraphCount();
 			if (nParaCount > 0)
 			{
-				pOutlinerView->SelectRange( 0, (sal_uInt16) nParaCount );
+				pOutlinerView->SelectRange( 0, nParaCount );
 			}
 			Cancel();
 		}

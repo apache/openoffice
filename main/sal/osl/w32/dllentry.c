@@ -88,7 +88,7 @@ extern BOOL (WINAPI *_pRawDllMain)(HANDLE, DWORD, LPVOID) = _RawDllMain;
 // globales
 //------------------------------------------------------------------------------
 
-DWORD         g_dwPlatformId = VER_PLATFORM_WIN32_WINDOWS; // remember plattform
+DWORD         g_dwPlatformId = VER_PLATFORM_WIN32_WINDOWS; // remember platform
 
 //------------------------------------------------------------------------------
 // DllMain

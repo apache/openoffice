@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ namespace drawinglayer
 
             if(pSource)
             {
-    		    Graphic* pOLEGraphic = (getHighContrast()) 
+    		    Graphic* pOLEGraphic = (getHighContrast())
                     ? pSource->getEmbeddedObjectRef().GetHCGraphic()
                     : pSource->GetGraphic();
 
@@ -61,8 +61,8 @@ namespace drawinglayer
 
             if(GRAPHIC_NONE == aGraphic.GetType())
             {
-                // no source, use fallback ressource emty OLE graphic
-                const Bitmap aEmptyOLEBitmap(SdrOle2Obj::GetEmtyOLEReplacementBitmap());
+                // no source, use fallback resource empty OLE graphic
+                const Bitmap aEmptyOLEBitmap(SdrOle2Obj::GetEmptyOLEReplacementBitmap());
 				aGraphic = Graphic(aEmptyOLEBitmap);
                 bScaleContent = true;
             }
@@ -72,7 +72,7 @@ namespace drawinglayer
 		        const GraphicObject aGraphicObject(aGraphic);
 		        const GraphicAttr aGraphicAttr;
                 drawinglayer::primitive2d::Primitive2DSequence xOLEContent;
-                
+
                 if(bScaleContent)
                 {
 				    // get transformation atoms
@@ -105,8 +105,8 @@ namespace drawinglayer
 
                         const drawinglayer::primitive2d::Primitive2DReference aGraphicPrimitive(
 		                    new drawinglayer::primitive2d::GraphicPrimitive2D(
-                                aInnerObjectMatrix, 
-                                aGraphicObject, 
+                                aInnerObjectMatrix,
+                                aGraphicObject,
                                 aGraphicAttr));
                         drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, aGraphicPrimitive);
 					}
@@ -116,8 +116,8 @@ namespace drawinglayer
 			        // create graphic primitive for content
                     const drawinglayer::primitive2d::Primitive2DReference aGraphicPrimitive(
                         new drawinglayer::primitive2d::GraphicPrimitive2D(
-                            getObjectTransform(), 
-                            aGraphicObject, 
+                            getObjectTransform(),
+                            aGraphicObject,
                             aGraphicAttr));
                     drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, aGraphicPrimitive);
                 }
@@ -146,7 +146,7 @@ namespace drawinglayer
 
 		SdrOleContentPrimitive2D::SdrOleContentPrimitive2D(
 			const SdrOle2Obj& rSdrOle2Obj,
-			const basegfx::B2DHomMatrix& rObjectTransform, 
+			const basegfx::B2DHomMatrix& rObjectTransform,
             sal_uInt32 nGraphicVersion,
 			bool bHighContrast)
 		:	BufferedDecompositionPrimitive2D(),
@@ -163,9 +163,9 @@ namespace drawinglayer
 			{
 				const SdrOleContentPrimitive2D& rCompare = (SdrOleContentPrimitive2D&)rPrimitive;
                 const bool bBothNot(!mpSdrOle2Obj.is() && !rCompare.mpSdrOle2Obj.is());
-                const bool bBothAndEqual(mpSdrOle2Obj.is() && rCompare.mpSdrOle2Obj.is() 
+                const bool bBothAndEqual(mpSdrOle2Obj.is() && rCompare.mpSdrOle2Obj.is()
                     && mpSdrOle2Obj.get() == rCompare.mpSdrOle2Obj.get());
-				
+
 				return ((bBothNot || bBothAndEqual)
                     && getObjectTransform() == rCompare.getObjectTransform()
 
@@ -183,7 +183,7 @@ namespace drawinglayer
         {
             basegfx::B2DRange aRange(0.0, 0.0, 1.0, 1.0);
             aRange.transform(getObjectTransform());
-            
+
             return aRange;
         }
 
@@ -193,5 +193,4 @@ namespace drawinglayer
 	} // end of namespace primitive2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

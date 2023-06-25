@@ -439,7 +439,7 @@ sal_Bool executeMacro( SfxObjectShell* pShell, const String& sMacroName, uno::Se
         if ( pShell )
         {
             nErr = pShell->CallXScript( sUrl,
-                               aArgs, aRet, aOutArgsIndex, aOutArgs, false ); 
+				aArgs, aRet, aOutArgsIndex, aOutArgs, ::rtl::OUString(), false );
             sal_Int32 nLen = aOutArgs.getLength();
             // convert any out params to seem like they were inouts
             if ( nLen )

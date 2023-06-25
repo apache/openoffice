@@ -1,0 +1,9 @@
+--- misc/build/boost_1_55_0/boost/config/user.hpp	2023-01-20 06:52:20.006784000 +0200
++++ misc/build/boost_1_55_0/boost/config/user.hpp	2023-01-20 06:54:54.816087000 +0200
+@@ -122,3 +122,6 @@
+  
+ 
+ 
++#if defined(__clang__)
++#define BOOST_NO_CXX11_HDR_TUPLE
++#endif

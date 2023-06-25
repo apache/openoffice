@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,20 +28,19 @@
 #include <vcl/outdev.hxx>
 #include <vcl/bitmap.hxx>
 
-///////////////////////////////////////////////////////////////////////////////
 
-void ImpCalcBmpFillSizes( Size&			   rStartOffset,
-                          Size&			   rBmpOutputSize,
-                          const Rectangle& rOutputRect,
-                          const MapMode&   rOutputMapMode,
-                          const Bitmap&    rFillBitmap,
-                          const Size&      rBmpSize,
-                          const Size&      rBmpPerCent,
-                          const Size&	   rBmpOffPerCent,
-                          sal_Bool             bBmpLogSize,
-                          sal_Bool             bBmpTile,
-                          sal_Bool             bBmpStretch,
-                          RECT_POINT       eBmpRectPoint )
+void ImpCalcBmpFillSizes( Size&				rStartOffset,
+						  Size&				rBmpOutputSize,
+						  const Rectangle&	rOutputRect,
+						  const MapMode&	rOutputMapMode,
+						  const Bitmap&		rFillBitmap,
+						  const Size&		rBmpSize,
+						  const Size&		rBmpPerCent,
+						  const Size&		rBmpOffPerCent,
+						  sal_Bool			bBmpLogSize,
+						  sal_Bool			bBmpTile,
+						  sal_Bool			bBmpStretch,
+						  RECT_POINT		eBmpRectPoint )
 {
 	sal_Bool	bOriginalSize = sal_False, bScaleSize = sal_False;
 
@@ -73,10 +72,10 @@ void ImpCalcBmpFillSizes( Size&			   rStartOffset,
 
 		// Falls keine gesetzt ist, nehmen wir Pixel
 		if( !aBmpPrefSize.Width() || !aBmpPrefSize.Height() )
-        {
+		{
 			aBmpPrefSize = rFillBitmap.GetSizePixel();
-            aBmpPrefMapMode = MAP_PIXEL;
-        }
+			aBmpPrefMapMode = MAP_PIXEL;
+		}
 
 		if( bOriginalSize )
 		{
@@ -126,7 +125,7 @@ void ImpCalcBmpFillSizes( Size&			   rStartOffset,
 	// nur bei Kachelung die anderen Positionen berechnen
 	if( bBmpTile )
 	{
-        Point aStartPoint;
+		Point aStartPoint;
 
 		// Grundposition der ersten Kachel berechen;
 		// Diese Position wird spaeter zur Berechnung der absoluten
@@ -199,10 +198,10 @@ void ImpCalcBmpFillSizes( Size&			   rStartOffset,
 		if( rBmpOffPerCent.Width() )
 			aStartPoint.X() += ( rBmpOutputSize.Width() * rBmpOffPerCent.Width() / 100 );
 
-        if( rBmpOffPerCent.Height() )
+		if( rBmpOffPerCent.Height() )
 			aStartPoint.Y() += ( rBmpOutputSize.Height() * rBmpOffPerCent.Height() / 100 );
 
-		// echten Startpunkt berechnen ( links oben )
+		// echten Startpunkt berechnen (links oben)
 		if( rBmpOutputSize.Width() && rBmpOutputSize.Height() )
 		{
 			const long nDiffX = aStartPoint.X() - rOutputRect.Left();
@@ -229,23 +228,22 @@ void ImpCalcBmpFillSizes( Size&			   rStartOffset,
 			}
 		}
 
-        rStartOffset = Size( aStartPoint.X() - rOutputRect.Left(),
-                             aStartPoint.Y() - rOutputRect.Top() );
+		rStartOffset = Size( aStartPoint.X() - rOutputRect.Left(),
+							 aStartPoint.Y() - rOutputRect.Top() );
 	}
-    else
-    {
-        if( bBmpStretch )
-        {
-            rStartOffset = Size(0, 0);
-            rBmpOutputSize = rOutputRect.GetSize();
-        }
-        else
-        {
-            rStartOffset = Size( ( rOutputRect.GetWidth() - rBmpOutputSize.Width() ) >> 1,
-                                 ( rOutputRect.GetHeight() - rBmpOutputSize.Height() ) >> 1 );
-        }
-    }
+	else
+	{
+		if( bBmpStretch )
+		{
+			rStartOffset = Size(0, 0);
+			rBmpOutputSize = rOutputRect.GetSize();
+		}
+		else
+		{
+			rStartOffset = Size( ( rOutputRect.GetWidth() - rBmpOutputSize.Width() ) >> 1,
+								 ( rOutputRect.GetHeight() - rBmpOutputSize.Height() ) >> 1 );
+		}
+	}
 }
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

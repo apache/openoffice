@@ -539,7 +539,7 @@ sal_Bool PPTWriter::ImplCreateDocument()
             << nHeight                          //   "     "   "    "        "      Y
             << (sal_Int32)maNotesPageSize.Width     // Notes Page Size                  X
             << (sal_Int32)maNotesPageSize.Height    //   "     "   "                    Y
-            << (sal_Int32)1 << (sal_Int32)2;            // the scale used when the Powerpoint document is embedded. the default is 1:2
+            << (sal_Int32)1 << (sal_Int32)2;            // the scale used when the PowerPoint document is embedded. the default is 1:2
     mpPptEscherEx->InsertPersistOffset( EPP_MAINNOTESMASTER_PERSIST_KEY, mpStrm->Tell() );
     *mpStrm << (sal_uInt32)0                        // Reference to NotesMaster ( 0 if none );
             << (sal_uInt32)0                        // Reference to HandoutMaster ( 0 if none );

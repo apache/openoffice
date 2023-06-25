@@ -6652,7 +6652,7 @@
 						</xsl:call-template>
 					</xsl:element>
 					<!-- ss:MergeAcross (column spanned) indicates a covered table-cell in Open Document XML-->
-					<xsl:if test="@ss:MergeAcross">
+					<xsl:if test="@ss:MergeAcross &gt; 0">
 						<xsl:element name="table:covered-table-cell">
 							<xsl:if test="@ss:MergeAcross &gt; 1">
 								<xsl:attribute name="table:number-columns-repeated">
@@ -6866,20 +6866,10 @@
 					</xsl:attribute>
 				</xsl:when>
 				<xsl:when test="ss:Data/@ss:Type = 'DateTime'">
-					<xsl:choose>
-						<xsl:when test="(contains( $data-format, 'Date') or contains($data-format,'y') or contains($data-format,'g') or contains($data-format,'d') or contains($data-format,'e') or starts-with( substring( ss:Data, 11), 'T00:00:00.000' ) ) and (not (contains( $data-format, 'Time') ) )">
-							<xsl:attribute name="office:value-type">date</xsl:attribute>
-							<xsl:attribute name="office:date-value">
-								<xsl:value-of select="substring-before(ss:Data, 'T')"/>
-							</xsl:attribute>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:attribute name="office:value-type">time</xsl:attribute>
-							<xsl:attribute name="office:time-value">
-								<xsl:value-of select="concat('P',substring(ss:Data, 11, 3), 'H', substring(ss:Data, 15, 2), 'M', substring(ss:Data, 18,2), 'S')"/>
-							</xsl:attribute>
-						</xsl:otherwise>
-					</xsl:choose>
+					<xsl:attribute name="office:value-type">date</xsl:attribute>
+					<xsl:attribute name="office:date-value">
+						<xsl:value-of select="ss:Data"/>
+					</xsl:attribute>
 				</xsl:when>
 				<xsl:when test="ss:Data/@ss:Type = 'Boolean'">
 					<xsl:attribute name="office:value-type">boolean</xsl:attribute>
@@ -8225,11 +8215,23 @@
 		<xsl:param name="row-number"/>
 		<xsl:param name="column-pos-style"/>
 		<xsl:param name="row-pos-style"/>
+		<xsl:variable name="zero-based-column-number">
+			<xsl:value-of select="$column-number - 1"/>
+		</xsl:variable>
 		<xsl:variable name="column-number1">
-			<xsl:value-of select="floor( $column-number div 26 )"/>
+			<xsl:value-of select="floor( $zero-based-column-number div 676 )"/>
+		</xsl:variable>
+		<xsl:variable name="column-remainder1">
+			<xsl:value-of select="floor( $zero-based-column-number mod 676 )"/>
 		</xsl:variable>
 		<xsl:variable name="column-number2">
-			<xsl:value-of select="$column-number mod 26"/>
+			<xsl:value-of select="floor( $column-remainder1 div 26 )"/>
+		</xsl:variable>
+		<xsl:variable name="column-remainder2">
+			<xsl:value-of select="floor( $column-remainder1 mod 26 )"/>
+		</xsl:variable>
+		<xsl:variable name="column-number3">
+			<xsl:value-of select="( $column-remainder2 mod 26 ) + 1"/>
 		</xsl:variable>
 		<xsl:variable name="column-character1">
 			<xsl:call-template name="number-to-character">
@@ -8241,13 +8243,18 @@
 				<xsl:with-param name="number" select="$column-number2"/>
 			</xsl:call-template>
 		</xsl:variable>
+		<xsl:variable name="column-character3">
+			<xsl:call-template name="number-to-character">
+				<xsl:with-param name="number" select="$column-number3"/>
+			</xsl:call-template>
+		</xsl:variable>
 		<!-- position styles are 'absolute' or 'relative', -->
 		<xsl:choose>
 			<xsl:when test="$column-pos-style = 'absolute'">
-				<xsl:value-of select="concat( '$', $column-character1, $column-character2)"/>
+				<xsl:value-of select="concat( '$', $column-character1, $column-character2, $column-character3)"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="concat( $column-character1, $column-character2)"/>
+				<xsl:value-of select="concat( $column-character1, $column-character2, $column-character3)"/>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:choose>

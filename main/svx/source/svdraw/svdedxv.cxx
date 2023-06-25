@@ -1488,7 +1488,7 @@ sal_Bool SdrObjEditView::ImpIsTextEditAllSelected() const
 	        Paragraph* pLastPara=pTextEditOutliner->GetParagraph( nParaAnz > 1 ? nParaAnz - 1 : 0 );
 
 			ESelection aESel(pTextEditOutlinerView->GetSelection());
-            if (aESel.nStartPara==0 && aESel.nStartPos==0 && aESel.nEndPara==sal_uInt16(nParaAnz-1))
+            if (aESel.nStartPara==0 && aESel.nStartPos==0 && aESel.nEndPara==(nParaAnz-1))
 			{
                 XubString aStr(pTextEditOutliner->GetText(pLastPara));
 
@@ -1496,7 +1496,7 @@ sal_Bool SdrObjEditView::ImpIsTextEditAllSelected() const
 					bRet = sal_True;
             }
             // und nun auch noch fuer den Fall, das rueckwaerts selektiert wurde
-            if (!bRet && aESel.nEndPara==0 && aESel.nEndPos==0 && aESel.nStartPara==sal_uInt16(nParaAnz-1))
+            if (!bRet && aESel.nEndPara==0 && aESel.nEndPos==0 && aESel.nStartPara==(nParaAnz-1))
 			{
                 XubString aStr(pTextEditOutliner->GetText(pLastPara));
 
@@ -2046,11 +2046,11 @@ sal_uInt16 SdrObjEditView::GetSelectionLevel() const
 		{
 			//start and end position
 			ESelection aSelect = pTextEditOutlinerView->GetSelection();
-			sal_uInt16 nStartPara = ::std::min( aSelect.nStartPara, aSelect.nEndPara );
-			sal_uInt16 nEndPara = ::std::max( aSelect.nStartPara, aSelect.nEndPara );
+			sal_uInt32 nStartPara = ::std::min( aSelect.nStartPara, aSelect.nEndPara );
+			sal_uInt32 nEndPara = ::std::max( aSelect.nStartPara, aSelect.nEndPara );
 			//get level from each paragraph
 			nLevel = 0;
-			for( sal_uInt16 nPara = nStartPara; nPara <= nEndPara; nPara++ )
+			for( sal_uInt32 nPara = nStartPara; nPara <= nEndPara; nPara++ )
 			{
 				sal_uInt16 nParaDepth = 1 << pTextEditOutliner->GetDepth( nPara );
 				if( !(nLevel & nParaDepth) )
@@ -2199,7 +2199,7 @@ void SdrObjEditView::ApplyFormatPaintBrushToText( SfxItemSet& rFormatSet, SdrTex
 
 	    if(nParaCount)
 	    {
-		    for(sal_uInt16 nPara = 0; nPara < nParaCount; nPara++)
+		    for(sal_uInt32 nPara = 0; nPara < nParaCount; nPara++)
 		    {
 			    if( !bNoCharacterFormats )
 				    rOutliner.QuickRemoveCharAttribs( nPara, /* remove all */0 );
@@ -2209,7 +2209,7 @@ void SdrObjEditView::ApplyFormatPaintBrushToText( SfxItemSet& rFormatSet, SdrTex
 			    rOutliner.SetParaAttribs(nPara, aSet);
 		    }
 
-		    OutlinerParaObject* pTemp = rOutliner.CreateParaObject(0, (sal_uInt16)nParaCount);
+		    OutlinerParaObject* pTemp = rOutliner.CreateParaObject(0, nParaCount);
 		    rOutliner.Clear();
 
 		    rTextObj.NbcSetOutlinerParaObjectForText(pTemp,pText);

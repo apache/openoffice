@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -92,7 +92,7 @@
                  com.sun.star.sheet.SpreadsheetDocument
                  com.sun.star.presentation.PresentationDocument
                  com.sun.star.drawing.DrawingDocument
-             
+
              Recognized shortcuts:
                  Writer
                  Calc
@@ -103,9 +103,9 @@
                  DrawImpress
                  WriterVariants
              These shortcuts exist for even more convenience and handle the frequent case of Draw
-	     and Impress as well as different variants of the Writer where they have otherwise 
+	     and Impress as well as different variants of the Writer where they have otherwise
 	     identical context descriptions.
-             
+
              Special values:
                  any
                  none
@@ -119,11 +119,11 @@
              Special values:
                  any
 
-          3  Panel state.  One of 
+          3  Panel state.  One of
              visible  Panel is initially visible and expanded
-             hidden   Panel is initially collapsed, ie only its title bar is visible
+             hidden   Panel is initially collapsed, i.e. only its title bar is visible
 
-          4  (Optional, only used for panels) UNO command that overrides the DefaultMenuCommand.  Use 
+          4  (Optional, only used for panels) UNO command that overrides the DefaultMenuCommand.  Use
              the special value none to override the DefaultMenuCommand to the empty string and thereby
              disable the showing of a) the menu button in the panel titlebar and b) the showing of a dialog.
         </desc></info>
@@ -186,7 +186,7 @@
       <prop oor:name="DefaultMenuCommand" oor:type="xs:string">
         <info><desc>
           The default UNO command to execute when the user clicks on the menu button in the panel title bar.
-          Can be overriden in the ContextList to provide context dependent menu dialogs.
+          Can be overridden in the ContextList to provide context dependent menu dialogs.
           When empty then the menu icon is not shown in the panel title bar.
         </desc></info>
         <value></value>

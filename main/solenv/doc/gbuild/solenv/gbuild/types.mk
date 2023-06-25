@@ -53,7 +53,7 @@ namespace gb { namespace types
 	/// There are const boolean values true and false for
 	/// comparisons (written as $(true) and $(false) in makefiles.
 	class Bool {};
-	/// A language (for localisation)
+	/// A language (for localization)
 
 	/// A language represented by its ISO 639-1:2002 code.
 	class Language {};

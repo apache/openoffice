@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,14 +41,14 @@ String STR_LEVEL
 };
 String STR_FILE_NOT_FOUND
 {
-	Text [ en-US ] = "The file, \"%1\" in the \"%2\" path could not be found.";
+	Text [ en-US ] = "The file \"%1\" in the \"%2\" path could not be found." ;
 };
 /*************************************************************************
 
 *************************************************************************/
 TabDialog DLG_MULTI_TOX
 {
-	HelpID = HID_MULTI_TOX_DLG;
+	HelpID = HID_MULTI_TOX_DLG ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
 
@@ -61,21 +61,21 @@ TabDialog DLG_MULTI_TOX
 		{
 			PageItem
 			{
-				Identifier =  TP_TOX_SELECT;
-				PageResID = TP_TOX_SELECT;
-				Text [ en-US ] = "Index/Table";
+				Identifier = TP_TOX_SELECT ;
+				PageResID = TP_TOX_SELECT ;
+				Text [ en-US ] = "Index/Table" ;
 			};
 			PageItem
 			{
-				Identifier =  TP_TOX_ENTRY;
-				PageResID = TP_TOX_ENTRY;
-				Text [ en-US ] = "Entries";
+				Identifier = TP_TOX_ENTRY ;
+				PageResID = TP_TOX_ENTRY ;
+				Text [ en-US ] = "Entries" ;
 			};
 			PageItem
 			{
-				Identifier =  TP_TOX_STYLES;
-				PageResID = TP_TOX_STYLES;
-				Text [ en-US ] = "Styles";
+				Identifier = TP_TOX_STYLES ;
+				PageResID = TP_TOX_STYLES ;
+				Text [ en-US ] = "Styles" ;
 			};
 			PageItem
 			{
@@ -93,114 +93,114 @@ TabDialog DLG_MULTI_TOX
 	};
 	Window WIN_EXAMPLE
 	{
-        Pos = MAP_APPFONT ( 0 , 12 ) ;
-        Size = MAP_APPFONT (  150, 188 ) ;
+		Pos = MAP_APPFONT ( 0, 12 ) ;
+		Size = MAP_APPFONT ( 150, 188 ) ;
 	};
 	String ST_USERDEFINEDINDEX
 	{
-		Text [ en-US ] = "User-Defined Index";
+		Text [ en-US ] = "User-Defined Index" ;
 	};
 	CheckBox CB_SHOWEXAMPLE
 	{
-        Size = MAP_APPFONT (  200, 10 ) ;
-		Text [ en-US ] = "Preview";
+		Size = MAP_APPFONT ( 200, 10 ) ;
+		Text [ en-US ] = "Preview" ;
 	};
-	Text [ en-US ] = "Insert Index/Table";
+	Text [ en-US ] = "Insert Index/Table" ;
 };
 //------------------------------------------------------------------
 TabPage TP_TOX_SELECT
 {
-	HelpID =  HID_TP_TOX_SELECT;
-	Size = MAP_APPFONT ( 260 , 185 ) ;
+	HelpID = HID_TP_TOX_SELECT ;
+	Size = MAP_APPFONT ( 260, 185 ) ;
 	Hide = TRUE ;
 
-    FixedLine        FL_TYPETITLE
+	FixedLine FL_TYPETITLE
 	{
-		Pos = MAP_APPFONT ( 6 , 3 ) ;
-        Size = MAP_APPFONT ( 248, 8 ) ;
-		Text [ en-US ] = "Type and title";
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
+		Text [ en-US ] = "Type and title" ;
 	};
-	FixedText		FT_TITLE
+	FixedText FT_TITLE
 	{
-        Pos = MAP_APPFONT ( 12 , 16 ) ;
+		Pos = MAP_APPFONT ( 12, 16 ) ;
 		Size = MAP_APPFONT ( 30 ,10 ) ;
-		Text [ en-US ] = "~Title";
+		Text [ en-US ] = "~Title" ;
 	};
-	Edit			ED_TITLE
+	Edit ED_TITLE
 	{
-	    HelpID = "sw:Edit:TP_TOX_SELECT:ED_TITLE";
-        Pos = MAP_APPFONT ( 45 , 14 ) ;
-		Size = MAP_APPFONT ( 203 , 12 ) ;
+		HelpID = "sw:Edit:TP_TOX_SELECT:ED_TITLE" ;
+		Pos = MAP_APPFONT ( 45, 14 ) ;
+		Size = MAP_APPFONT ( 203, 12 ) ;
 		Border = TRUE;
 	};
-	FixedText		FT_TYPE
+	FixedText FT_TYPE
 	{
-        Pos = MAP_APPFONT ( 12 , 32 ) ;
-		Size = MAP_APPFONT (  30, 10 ) ;
-		Text [ en-US ] = "Type";
+		Pos = MAP_APPFONT ( 12, 32 ) ;
+		Size = MAP_APPFONT ( 30, 10 ) ;
+		Text [ en-US ] = "Type" ;
 	};
-	ListBox			LB_TYPE
+	ListBox LB_TYPE
 	{
-	    HelpID = "sw:ListBox:TP_TOX_SELECT:LB_TYPE";
-        Pos = MAP_APPFONT ( 45 , 30 ) ;
-		Size = MAP_APPFONT ( 80 , 80 ) ;
+		HelpID = "sw:ListBox:TP_TOX_SELECT:LB_TYPE" ;
+		Pos = MAP_APPFONT ( 45, 30 ) ;
+		Size = MAP_APPFONT ( 80, 80 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 	StringList [ en-US ] =
 	{
-			< "Table of Contents" ; 	TO_CONTENT 		;> ;
-		< "Alphabetical Index" ; 	TO_INDEX		;> ;
-		< "Illustration Index" ; TO_ILLUSTRATION ;> ;
-		< "Index of Tables" ; 	TO_TABLE 		;> ;
-		< "User-Defined" ; 	TO_USER 		;> ;
-		< "Table of Objects" ; 	TO_OBJECT 		;> ;
-		< "Bibliography" ;	TO_AUTHORITIES  ;> ;
+		< "Table of Contents" ; TO_CONTENT ;		> ;
+		< "Alphabetical Index" ; TO_INDEX ;			> ;
+		< "Illustration Index" ; TO_ILLUSTRATION ;	> ;
+		< "Index of Tables" ; TO_TABLE ;			> ;
+		< "User-Defined" ; TO_USER ;				> ;
+		< "Table of Objects" ; TO_OBJECT ;			> ;
+		< "Bibliography" ; TO_AUTHORITIES ;			> ;
 	};
 	};
-	CheckBox		CB_READONLY
+	CheckBox CB_READONLY
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_READONLY";
-        Pos = MAP_APPFONT ( 51 , 46 ) ;
-        Size = MAP_APPFONT ( 200 , 10 ) ;
-		Check = TRUE;
-		Text [ en-US ] = "Protected against manual changes";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_READONLY" ;
+		Pos = MAP_APPFONT ( 51, 46 ) ;
+		Size = MAP_APPFONT ( 200, 10 ) ;
+		Check = TRUE ;
+		Text [ en-US ] = "Protected against manual changes" ;
 	};
-    FixedLine  FL_AREA
+	FixedLine FL_AREA
 	{
-        Pos = MAP_APPFONT ( 6 , 59 ) ;
-        Size = MAP_APPFONT ( 248, 8 ) ;
-		Text [ en-US ] = "Create index/table";
+		Pos = MAP_APPFONT ( 6, 59 ) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
+		Text [ en-US ] = "Create index/table" ;
 	};
-    FixedText       FT_AREA
+	FixedText FT_AREA
 	{
-        Pos = MAP_APPFONT ( 12 , 72 ) ;
-        Size = MAP_APPFONT (  30, 8 ) ;
-		Text [ en-US ] = "for";
+		Pos = MAP_APPFONT ( 12, 72 ) ;
+		Size = MAP_APPFONT ( 30, 8 ) ;
+		Text [ en-US ] = "for" ;
 	};
-    ListBox         LB_AREA
+	ListBox LB_AREA
 	{
-        HelpID = "sw:ListBox:TP_TOX_SELECT:LB_AREA";
-        Pos = MAP_APPFONT ( 45 , 70 ) ;
-        Size = MAP_APPFONT ( 80 , 12 ) ;
+		HelpID = "sw:ListBox:TP_TOX_SELECT:LB_AREA" ;
+		Pos = MAP_APPFONT ( 45, 70 ) ;
+		Size = MAP_APPFONT ( 80, 12 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 	StringList [ en-US ] =
 	{
-			< "Entire document" ; 	AREA_DOCUMENT 		;> ;
-		< "Chapter" ; 				AREA_CHAPTER	  	;> ;
+		< "Entire document" ; AREA_DOCUMENT ;	> ;
+		< "Chapter" ; AREA_CHAPTER ;			> ;
 	};
 	};
-    FixedText       FT_LEVEL
+	FixedText FT_LEVEL
 	{
-        Pos = MAP_APPFONT ( 130 , 70 ) ;
-        Size = MAP_APPFONT ( 60 , 8 ) ;
-    	Text [ en-US ] = "Evaluate up to level";
+		Pos = MAP_APPFONT ( 130, 70 ) ;
+		Size = MAP_APPFONT ( 60, 8 ) ;
+		Text [ en-US ] = "Evaluate up to level" ;
 	};
-    NumericField    NF_LEVEL
+	NumericField NF_LEVEL
 	{
-        HelpID = "sw:NumericField:TP_TOX_SELECT:NF_LEVEL";
-        Pos = MAP_APPFONT ( 231 , 72 ) ;
-		Size = MAP_APPFONT ( 20 , 12 ) ;
+		HelpID = "sw:NumericField:TP_TOX_SELECT:NF_LEVEL" ;
+		Pos = MAP_APPFONT ( 231, 72 ) ;
+		Size = MAP_APPFONT ( 20, 12 ) ;
 		Border = TRUE ;
 		TabStop = TRUE ;
 		Left = TRUE ;
@@ -211,158 +211,158 @@ TabPage TP_TOX_SELECT
 		Value = 10 ;
 		SpinSize = 1 ;
 	};
-    FixedLine        FL_CREATEFROM
+	FixedLine FL_CREATEFROM
 	{
-        Pos = MAP_APPFONT ( 6 , 87 ) ;
-        Size = MAP_APPFONT ( 248, 8 ) ;
-		Text [ en-US ] = "Create from";
+		Pos = MAP_APPFONT ( 6, 87 ) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
+		Text [ en-US ] = "Create from" ;
 	};
-	CheckBox		CB_FROMHEADINGS
+	CheckBox CB_FROMHEADINGS
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMHEADINGS";
-        Pos = MAP_APPFONT ( 12 , 99 ) ;
-        Size = MAP_APPFONT ( 95 , 10 ) ;
-		Check = TRUE;
-		Text [ en-US ] = "Outline";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMHEADINGS" ;
+		Pos = MAP_APPFONT ( 12, 99 ) ;
+		Size = MAP_APPFONT ( 95, 10 ) ;
+		Check = TRUE ;
+		Text [ en-US ] = "Outline" ;
 	};
-//  #outline level,removed by zhaojianwei
-/*	PushButton	PB_CHAPTERDLG
+//	#outline level,removed by zhaojianwei
+/*	PushButton PB_CHAPTERDLG
 	{
-        Pos = MAP_APPFONT ( 115 , 98 ) ;
-		Size = MAP_APPFONT ( 12 , 12 ) ;
+		Pos = MAP_APPFONT ( 115, 98 ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		Text = "~..." ;
 		TabStop = TRUE ;
 	};
-*/	
-    CheckBox CB_ADDSTYLES
+*/
+	CheckBox CB_ADDSTYLES
 	{
-        HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_ADDSTYLES";
-        Pos = MAP_APPFONT ( 12 , 115 ) ;
-		Size = MAP_APPFONT ( 75 , 10  ) ;
-		Text [ en-US ] = "~Additional Styles";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_ADDSTYLES" ;
+		Pos = MAP_APPFONT ( 12, 115 ) ;
+		Size = MAP_APPFONT ( 75, 10 ) ;
+		Text [ en-US ] = "~Additional Styles" ;
 	};
 	String ST_USER_ADDSTYLE
 	{
-		Text [ en-US ] = "Styl~es";
+		Text [ en-US ] = "Styl~es" ;
 	};
-	PushButton		PB_ADDSTYLES
+	PushButton PB_ADDSTYLES
 	{
-	    HelpID = "sw:PushButton:TP_TOX_SELECT:PB_ADDSTYLES";
-        Pos = MAP_APPFONT ( 115 , 114 ) ;
-		Size = MAP_APPFONT ( 12 , 12 ) ;
+		HelpID = "sw:PushButton:TP_TOX_SELECT:PB_ADDSTYLES" ;
+		Pos = MAP_APPFONT ( 115, 114 ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		Text = "..." ;
 		TabStop = TRUE ;
 	};
-	CheckBox		CB_TOXMARKS
+	CheckBox CB_TOXMARKS
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_TOXMARKS";
-        Pos = MAP_APPFONT ( 12 , 131 ) ;
-		Size = MAP_APPFONT ( 90 , 10 ) ;
-		Text [ en-US ] = "Inde~x marks";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_TOXMARKS" ;
+		Pos = MAP_APPFONT ( 12, 131 ) ;
+		Size = MAP_APPFONT ( 90, 10 ) ;
+		Text [ en-US ] = "Inde~x marks" ;
 	};
 
-	RadioButton		RB_FROMCAPTIONS
+	RadioButton RB_FROMCAPTIONS
 	{
-	    HelpID = "sw:RadioButton:TP_TOX_SELECT:RB_FROMCAPTIONS";
-        Pos = MAP_APPFONT ( 12 , 98 ) ;
-		Size = MAP_APPFONT ( 90 , 10 ) ;
-		Text [ en-US ] = "Captions";
+		HelpID = "sw:RadioButton:TP_TOX_SELECT:RB_FROMCAPTIONS" ;
+		Pos = MAP_APPFONT ( 12, 98 ) ;
+		Size = MAP_APPFONT ( 90, 10 ) ;
+		Text [ en-US ] = "Captions" ;
 	};
 	FixedText FT_CAPTIONSEQUENCE
 	{
-        Pos = MAP_APPFONT ( 12 , 114 ) ;
-        Size = MAP_APPFONT ( 40 , 8 ) ;
-		Text [ en-US ] = "Category";
+		Pos = MAP_APPFONT ( 12, 114 ) ;
+		Size = MAP_APPFONT ( 40, 8 ) ;
+		Text [ en-US ] = "Category" ;
 	};
 	ListBox LB_CAPTIONSEQUENCE
 	{
-	    HelpID = "sw:ListBox:TP_TOX_SELECT:LB_CAPTIONSEQUENCE";
-        Pos = MAP_APPFONT ( 55 , 112 ) ;
-		Size = MAP_APPFONT ( 70 , 40 ) ;
+		HelpID = "sw:ListBox:TP_TOX_SELECT:LB_CAPTIONSEQUENCE" ;
+		Pos = MAP_APPFONT ( 55, 112 ) ;
+		Size = MAP_APPFONT ( 70, 40 ) ;
 		DropDown = TRUE;
 		TabStop = TRUE;
 	};
 	FixedText FT_DISPLAYTYPE
 	{
-        Pos = MAP_APPFONT ( 12 , 130 ) ;
-        Size = MAP_APPFONT ( 40 , 8 ) ;
-		Text [ en-US ] = "Display";
+		Pos = MAP_APPFONT ( 12, 130 ) ;
+		Size = MAP_APPFONT ( 40, 8 ) ;
+		Text [ en-US ] = "Display" ;
 	};
 	ListBox LB_DISPLAYTYPE
 	{
-	    HelpID = "sw:ListBox:TP_TOX_SELECT:LB_DISPLAYTYPE";
-        Pos = MAP_APPFONT ( 55 , 128 ) ;
-		Size = MAP_APPFONT ( 70 , 40 ) ;
-		DropDown = TRUE;
-		TabStop = TRUE;
+		HelpID = "sw:ListBox:TP_TOX_SELECT:LB_DISPLAYTYPE" ;
+		Pos = MAP_APPFONT ( 55, 128 ) ;
+		Size = MAP_APPFONT ( 70, 40 ) ;
+		DropDown = TRUE ;
+		TabStop = TRUE ;
 	StringList [ en-US ] =
 	{
-			< "References" ; > ;
-		< "Category and Number" ; > ;
-		< "Caption Text" ; > ;
+		< "References" ;			> ;
+		< "Category and Number" ;	> ;
+		< "Caption Text" ;			> ;
 	};
 	};
-	RadioButton        RB_FROMOBJECTNAMES
+	RadioButton RB_FROMOBJECTNAMES
 	{
-	    HelpID = "sw:RadioButton:TP_TOX_SELECT:RB_FROMOBJECTNAMES";
-        Pos = MAP_APPFONT ( 156 , 98 ) ;
-		Size = MAP_APPFONT ( 90 , 10 ) ;
-		Text [ en-US ] = "Object names";
+		HelpID = "sw:RadioButton:TP_TOX_SELECT:RB_FROMOBJECTNAMES" ;
+		Pos = MAP_APPFONT ( 156, 98 ) ;
+		Size = MAP_APPFONT ( 90, 10 ) ;
+		Text [ en-US ] = "Object names" ;
 	};
-	CheckBox		CB_COLLECTSAME
+	CheckBox CB_COLLECTSAME
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_COLLECTSAME";
-        Pos = MAP_APPFONT ( 12 , 98 ) ;
-		Size = MAP_APPFONT ( 121 , 10 ) ;
-		Text [ en-US ] = "Combine identical entries";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_COLLECTSAME" ;
+		Pos = MAP_APPFONT ( 12, 98 ) ;
+		Size = MAP_APPFONT ( 121, 10 ) ;
+		Text [ en-US ] = "Combine identical entries" ;
 	};
-	CheckBox		CB_USEFF
+	CheckBox CB_USEFF
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_USEFF";
-        Pos = MAP_APPFONT ( 18 ,  111 ) ;
-		Size = MAP_APPFONT ( 115 , 10 ) ;
-		Text [ en-US ] = "Combine identical entries with p or ~pp";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_USEFF" ;
+		Pos = MAP_APPFONT ( 18, 111 ) ;
+		Size = MAP_APPFONT ( 115, 10 ) ;
+		Text [ en-US ] = "Combine identical entries with p or ~pp" ;
 	};
 	CheckBox CB_USE_DASH
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_USE_DASH";
-        Pos = MAP_APPFONT ( 18 , 124 ) ;
-		Size = MAP_APPFONT ( 115 , 10 ) ;
-		Text [ en-US ] = "Combine with -";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_USE_DASH" ;
+		Pos = MAP_APPFONT ( 18, 124 ) ;
+		Size = MAP_APPFONT ( 115, 10 ) ;
+		Text [ en-US ] = "Combine with -" ;
 	};
-	CheckBox		CB_CASESENSITIVE
+	CheckBox CB_CASESENSITIVE
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_CASESENSITIVE";
-        Pos = MAP_APPFONT ( 18 , 137 ) ;
-		Size = MAP_APPFONT ( 115 , 10 ) ;
-		Text [ en-US ] = "Case sensitive";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_CASESENSITIVE" ;
+		Pos = MAP_APPFONT ( 18, 137 ) ;
+		Size = MAP_APPFONT ( 115, 10 ) ;
+		Text [ en-US ] = "Case sensitive" ;
 	};
-	CheckBox		CB_INITIALCAPS
+	CheckBox CB_INITIALCAPS
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_INITIALCAPS";
-        Pos = MAP_APPFONT ( 136 , 98 ) ;
-		Size = MAP_APPFONT ( 115 , 10 ) ;
-		Text [ en-US ] = "AutoCapitalize entries";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_INITIALCAPS" ;
+		Pos = MAP_APPFONT ( 136, 98 ) ;
+		Size = MAP_APPFONT ( 115, 10 ) ;
+		Text [ en-US ] = "AutoCapitalize entries" ;
 	};
-	CheckBox		CB_KEYASENTRY
+	CheckBox CB_KEYASENTRY
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_KEYASENTRY";
-        Pos = MAP_APPFONT ( 136, 111 ) ;
-        Size = MAP_APPFONT ( 115 , 10 ) ;
-		Text [ en-US ] = "Keys as separate entries";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_KEYASENTRY" ;
+		Pos = MAP_APPFONT ( 136, 111 ) ;
+		Size = MAP_APPFONT ( 115, 10 ) ;
+		Text [ en-US ] = "Keys as separate entries" ;
 	};
-	CheckBox	CB_FROMFILE
+	CheckBox CB_FROMFILE
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMFILE";
-        Pos = MAP_APPFONT ( 136 , 124 ) ;
-        Size = MAP_APPFONT ( 115 , 10 ) ;
-		Text [ en-US ] = "~Concordance file";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMFILE" ;
+		Pos = MAP_APPFONT ( 136, 124 ) ;
+		Size = MAP_APPFONT ( 115, 10 ) ;
+		Text [ en-US ] = "~Concordance file" ;
 	};
-	MenuButton 	MB_AUTOMARK
+	MenuButton MB_AUTOMARK
 	{
-	    HelpID = "sw:MenuButton:TP_TOX_SELECT:MB_AUTOMARK";
-        Pos = MAP_APPFONT ( 136 , 137 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "sw:MenuButton:TP_TOX_SELECT:MB_AUTOMARK" ;
+		Pos = MAP_APPFONT ( 136, 137 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		ButtonMenu = Menu
 		{
@@ -371,67 +371,67 @@ TabPage TP_TOX_SELECT
 				MenuItem
 				{
 					Identifier = MN_AUTOMARK_OPEN ;
-					Text [ en-US ] = "Open";
+					Text [ en-US ] = "Open" ;
 				};
 				MenuItem
 				{
 					Identifier = MN_AUTOMARK_NEW ;
-					Text [ en-US ] = "~New...";
+					Text [ en-US ] = "~New..." ;
 				};
 				MenuItem
 				{
 					Identifier = MN_AUTOMARK_EDIT ;
-					Text [ en-US ] = "~Edit...";
+					Text [ en-US ] = "~Edit..." ;
 				};
 			};
 		};
-		Text [ en-US ] = "~File";
+		Text [ en-US ] = "~File" ;
 	};
-	CheckBox	CB_FROMTABLES
+	CheckBox CB_FROMTABLES
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMTABLES";
-        Pos = MAP_APPFONT ( 112 , 99 ) ;
-		Size = MAP_APPFONT ( 68 , 10 ) ;
-		Text [ en-US ] = "Tables";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMTABLES" ;
+		Pos = MAP_APPFONT ( 112, 99 ) ;
+		Size = MAP_APPFONT ( 68, 10 ) ;
+		Text [ en-US ] = "Tables" ;
 	};
-	CheckBox	CB_FROMFRAMES
+	CheckBox CB_FROMFRAMES
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMFRAMES";
-        Pos = MAP_APPFONT ( 182 , 99 ) ;
-		Size = MAP_APPFONT ( 68 , 10 ) ;
-		Text [ en-US ] = "Te~xt frames";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMFRAMES" ;
+		Pos = MAP_APPFONT ( 182, 99 ) ;
+		Size = MAP_APPFONT ( 68, 10 ) ;
+		Text [ en-US ] = "Te~xt frames" ;
 	};
-	CheckBox	CB_FROMGRAPHICS
+	CheckBox CB_FROMGRAPHICS
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMGRAPHICS";
-        Pos = MAP_APPFONT ( 112 , 113 ) ;
-		Size = MAP_APPFONT ( 68 , 10 ) ;
-		Text [ en-US ] = "Graphics";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMGRAPHICS" ;
+		Pos = MAP_APPFONT ( 112, 113 ) ;
+		Size = MAP_APPFONT ( 68, 10 ) ;
+		Text [ en-US ] = "Graphics" ;
 	};
-	CheckBox		CB_FROMOLE
+	CheckBox CB_FROMOLE
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMOLE";
-        Pos = MAP_APPFONT ( 182 , 113 ) ;
-		Size = MAP_APPFONT ( 68 , 10 ) ;
-		Text [ en-US ] = "OLE objects";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_FROMOLE" ;
+		Pos = MAP_APPFONT ( 182, 113 ) ;
+		Size = MAP_APPFONT ( 68, 10 ) ;
+		Text [ en-US ] = "OLE objects" ;
 	};
-	CheckBox		CB_LEVELFROMCHAPTER
+	CheckBox CB_LEVELFROMCHAPTER
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_LEVELFROMCHAPTER";
-        Pos = MAP_APPFONT ( 118 ,  127 ) ;
-		Size = MAP_APPFONT ( 103 , 10 ) ;
-		Text [ en-US ] = "Use level from source chapter";
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_LEVELFROMCHAPTER" ;
+		Pos = MAP_APPFONT ( 118, 127 ) ;
+		Size = MAP_APPFONT ( 103, 10 ) ;
+		Text [ en-US ] = "Use level from source chapter" ;
 	};
-    FixedLine        FL_IDXOPTIONS
+	FixedLine FL_IDXOPTIONS
 	{
-        Pos = MAP_APPFONT ( 6 , 87 ) ;
-        Size = MAP_APPFONT ( 248, 8 ) ;
-		Text [ en-US ] = "Options";
+		Pos = MAP_APPFONT ( 6, 87 ) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
+		Text [ en-US ] = "Options" ;
 	};
 	Control CLB_FROMOBJ
 	{
-        Pos = MAP_APPFONT ( 12 , 98 ) ;
-        Size = MAP_APPFONT ( 236 ,49 ) ;
+		Pos = MAP_APPFONT ( 12, 98 ) ;
+		Size = MAP_APPFONT ( 236 ,49 ) ;
 		Border = TRUE ;
 		TabStop = TRUE ;
 	};
@@ -449,429 +449,429 @@ TabPage TP_TOX_SELECT
 
 		ItemList [ en-US ] =
 		{
-			< "%PRODUCTNAME Math" ; 				1;> ;
-			< "%PRODUCTNAME Chart" ; 			2;> ;
-			< "%PRODUCTNAME Calc" ; 				8;> ;
-			< "%PRODUCTNAME Draw/%PRODUCTNAME Impress" ; 	16;> ;
-			< "Other OLE Objects"; 	128;> ;
+			< "%PRODUCTNAME Math" ; 1 ;							> ;
+			< "%PRODUCTNAME Chart" ; 2 ;						> ;
+			< "%PRODUCTNAME Calc" ; 8 ;							> ;
+			< "%PRODUCTNAME Draw/%PRODUCTNAME Impress" ; 16 ;	> ;
+			< "Other OLE Objects" ; 128 ;						> ;
 			};
 	};
 	};
-    FixedLine FL_FROMOBJ
+	FixedLine FL_FROMOBJ
 	{
-        Pos = MAP_APPFONT ( 6 , 87) ;
-        Size = MAP_APPFONT ( 248, 8 ) ;
-		Text [ en-US ] = "Create from the following objects";
+		Pos = MAP_APPFONT ( 6, 87) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
+		Text [ en-US ] = "Create from the following objects" ;
 	};
 	CheckBox CB_SEQUENCE
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_SEQUENCE";
-        Pos = MAP_APPFONT ( 12, 70) ;
+		HelpID = "sw:CheckBox:TP_TOX_SELECT:CB_SEQUENCE" ;
+		Pos = MAP_APPFONT ( 12, 70) ;
 		Size = MAP_APPFONT ( 100, 10 ) ;
-		Text [ en-US ] = "~Number entries";
+		Text [ en-US ] = "~Number entries" ;
 	};
 	FixedText FT_BRACKET
 	{
-        Pos = MAP_APPFONT ( 12, 86) ;
+		Pos = MAP_APPFONT ( 12, 86) ;
 		Size = MAP_APPFONT ( 60, 8 ) ;
-		Text [ en-US ] = "~Brackets";
+		Text [ en-US ] = "~Brackets" ;
 	};
 	ListBox LB_BRACKET
 	{
-	    HelpID = "sw:ListBox:TP_TOX_SELECT:LB_BRACKET";
-        Pos = MAP_APPFONT ( 75, 84) ;
-        Size = MAP_APPFONT ( 40, 50 ) ;
-		Border = TRUE;
-		DropDown = TRUE;
+		HelpID = "sw:ListBox:TP_TOX_SELECT:LB_BRACKET" ;
+		Pos = MAP_APPFONT ( 75, 84) ;
+		Size = MAP_APPFONT ( 40, 50 ) ;
+		Border = TRUE ;
+		DropDown = TRUE ;
 		StringList =
 		{
-			< "[]" ;> ;
-			< "()" ;> ;
-			< "{}" ;> ;
-			< "<>" ;> ;
+			< "[]" ;	> ;
+			< "()" ;	> ;
+			< "{}" ;	> ;
+			< "<>" ;	> ;
 		};
 	};
-    String ST_NO_BRACKET
-    {
-    	Text [ en-US ] = "[none]";
-	};
-    FixedLine FL_AUTHORITY
+	String ST_NO_BRACKET
 	{
-        Pos = MAP_APPFONT ( 6 , 59) ;
-        Size = MAP_APPFONT ( 248, 8 ) ;
-		Text [ en-US ] = "Formatting of the entries";
+		Text [ en-US ] = "[none]" ;
+	};
+	FixedLine FL_AUTHORITY
+	{
+		Pos = MAP_APPFONT ( 6, 59) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
+		Text [ en-US ] = "Formatting of the entries" ;
 	};
 	String ST_AUTOMARK_TYPE
 	{
-		Text [ en-US ] = "Selection file for the alphabetical index (*.sdi)";
+		Text [ en-US ] = "Selection file for the alphabetical index (*.sdi)" ;
 	};
-    FixedLine FL_SORTOPTIONS
-    {
-        Pos = MAP_APPFONT ( 6, 153) ;
-        Size = MAP_APPFONT ( 248, 8 ) ;
-    	Text [ en-US ] = "Sort";
+	FixedLine FL_SORTOPTIONS
+	{
+		Pos = MAP_APPFONT ( 6, 153) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
+		Text [ en-US ] = "Sort" ;
 	};
-    FixedText FT_LANGUAGE
-    {
-        Pos = MAP_APPFONT ( 12, 166) ;
-        Size = MAP_APPFONT ( 33, 8 ) ;
-    	Text [ en-US ] = "Language";
+	FixedText FT_LANGUAGE
+	{
+		Pos = MAP_APPFONT ( 12, 166) ;
+		Size = MAP_APPFONT ( 33, 8 ) ;
+		Text [ en-US ] = "Language" ;
 	};
-    ListBox LB_LANGUAGE
-    {
-        HelpID = "sw:ListBox:TP_TOX_SELECT:LB_LANGUAGE";
-        Pos = MAP_APPFONT ( 47, 164) ;
-        Size = MAP_APPFONT ( 80, 50 ) ;
-		Border = TRUE;
-		DropDown = TRUE;
-    };
-    FixedText FT_SORTALG
-    {
-        Pos = MAP_APPFONT ( 130, 166) ;
-        Size = MAP_APPFONT ( 50, 8 ) ;
-    	Text [ en-US ] = "Key type";
+	ListBox LB_LANGUAGE
+	{
+		HelpID = "sw:ListBox:TP_TOX_SELECT:LB_LANGUAGE" ;
+		Pos = MAP_APPFONT ( 47, 164) ;
+		Size = MAP_APPFONT ( 80, 50 ) ;
+		Border = TRUE ;
+		DropDown = TRUE ;
 	};
-    ListBox LB_SORTALG
-    {
-        HelpID = "sw:ListBox:TP_TOX_SELECT:LB_SORTALG";
-        Pos = MAP_APPFONT ( 201, 164) ;
-        Size = MAP_APPFONT ( 50, 50 ) ;
-		Border = TRUE;
-		DropDown = TRUE;
-    };
+	FixedText FT_SORTALG
+	{
+		Pos = MAP_APPFONT ( 130, 166) ;
+		Size = MAP_APPFONT ( 50, 8 ) ;
+		Text [ en-US ] = "Key type" ;
+	};
+	ListBox LB_SORTALG
+	{
+		HelpID = "sw:ListBox:TP_TOX_SELECT:LB_SORTALG" ;
+		Pos = MAP_APPFONT ( 201, 164) ;
+		Size = MAP_APPFONT ( 50, 50 ) ;
+		Border = TRUE ;
+		DropDown = TRUE ;
+	};
 };
 
 TabPage TP_TOX_ENTRY
 {
-	HelpID =  HID_TP_TOX_ENTRY;
-	Size = MAP_APPFONT ( 260 , 185 ) ;
+	HelpID = HID_TP_TOX_ENTRY ;
+	Size = MAP_APPFONT ( 260, 185 ) ;
 	Hide = TRUE ;
 	FixedText FT_LEVEL
 	{
 		Pos = MAP_APPFONT ( 6, 3 ) ;
 		Size = MAP_APPFONT ( 25, 8 ) ;
-		Text [ en-US ] = "~Level";
+		Text [ en-US ] = "~Level" ;
 	};
 	Control LB_LEVEL
 	{
-		Pos = MAP_APPFONT (  6, 15 ) ;
+		Pos = MAP_APPFONT ( 6, 15 ) ;
 		Size = MAP_APPFONT ( 25, 167 ) ;
 		TabStop = TRUE ;
-		Border = TRUE;
+		Border = TRUE ;
 	};
 	String ST_AUTHTYPE
 	{
-		Text [ en-US ] = "~Type";
+		Text [ en-US ] = "~Type" ;
 	};
-    FixedText FT_TOKEN
-    {
-        Pos = MAP_APPFONT (  37, 18 ) ;
-        Size = MAP_APPFONT ( 30, 8 ) ;
-    	Text [ en-US ] = "~Structure";
-	};
-    Window WIN_TOKEN
+	FixedText FT_TOKEN
 	{
-        Pos = MAP_APPFONT (  70, 15 ) ;
-        Size = MAP_APPFONT ( 136, 14 ) ;
+		Pos = MAP_APPFONT ( 37, 18 ) ;
+		Size = MAP_APPFONT ( 30, 8 ) ;
+		Text [ en-US ] = "~Structure" ;
+	};
+	Window WIN_TOKEN
+	{
+		Pos = MAP_APPFONT ( 70, 15 ) ;
+		Size = MAP_APPFONT ( 136, 14 ) ;
 		ImageButton WIN_LEFT_SCROLL
 		{
-		    HelpID = "sw:ImageButton:TP_TOX_ENTRY:WIN_LEFT_SCROLL";
-			Pos = MAP_APPFONT (  0, 0 ) ;
+			HelpID = "sw:ImageButton:TP_TOX_ENTRY:WIN_LEFT_SCROLL" ;
+			Pos = MAP_APPFONT ( 0, 0 ) ;
 			Size = MAP_APPFONT ( 10, 12 ) ;
-			Symbol = IMAGEBUTTON_ARROW_LEFT;
-            DialogControl        = FALSE;
-            TabStop              = FALSE;
-        };
+			Symbol = IMAGEBUTTON_ARROW_LEFT ;
+			DialogControl = FALSE ;
+			TabStop = FALSE ;
+		};
 		Window WIN_CTRL_PARENT
 		{
-			Pos = MAP_APPFONT (  11, 0 ) ;
-            Size = MAP_APPFONT ( 114, 12 ) ;
-            DialogControl        = TRUE;
-        };
+			Pos = MAP_APPFONT ( 11, 0 ) ;
+			Size = MAP_APPFONT ( 114, 12 ) ;
+			DialogControl = TRUE ;
+		};
 		ImageButton WIN_RIGHT_SCROLL
 		{
-		    HelpID = "sw:ImageButton:TP_TOX_ENTRY:WIN_RIGHT_SCROLL";
-            Pos = MAP_APPFONT (  126, 0 ) ;
+			HelpID = "sw:ImageButton:TP_TOX_ENTRY:WIN_RIGHT_SCROLL" ;
+			Pos = MAP_APPFONT ( 126, 0 ) ;
 			Size = MAP_APPFONT ( 10, 12 ) ;
-			Symbol = IMAGEBUTTON_ARROW_RIGHT;
-            DialogControl        = FALSE;
-            TabStop              = FALSE;
-        };
+			Symbol = IMAGEBUTTON_ARROW_RIGHT ;
+			DialogControl = FALSE ;
+			TabStop = FALSE ;
+		};
 		String STR_TOKEN_ENTRY_NO
 		{
-			Text [ en-US ] = "E#";
+			Text [ en-US ] = "E#" ;
 		};
 		String STR_TOKEN_ENTRY
 		{
-			Text [ en-US ] = "E";
+			Text [ en-US ] = "E" ;
 		};
 		String STR_TOKEN_TAB_STOP
 		{
-			Text [ en-US ] = "T";
+			Text [ en-US ] = "T" ;
 		};
 		String STR_TOKEN_TEXT
 		{
-			Text = "";
+			Text = "" ;
 			//unused
 		};
 		String STR_TOKEN_PAGE_NUMS
 		{
-			Text [ en-US ] = "#";
+			Text [ en-US ] = "#" ;
 		};
 		String STR_TOKEN_CHAPTER_INFO
 		{
-			Text [ en-US ] = "CI";
+			Text [ en-US ] = "CI" ;
 		};
 		String STR_TOKEN_LINK_START
 		{
-			Text [ en-US ] = "LS";
+			Text [ en-US ] = "LS" ;
 		};
 		String STR_TOKEN_LINK_END
 		{
-			Text [ en-US ] = "LE";
+			Text [ en-US ] = "LE" ;
 		};
 		String STR_TOKEN_AUTHORITY
 		{
-			Text [ en-US ] = "A";
+			Text [ en-US ] = "A" ;
 		};
 		String STR_TOKEN_HELP_ENTRY_NO
 		{
-			Text [ en-US ] = "Chapter number";
+			Text [ en-US ] = "Chapter number" ;
 		};
 		String STR_TOKEN_HELP_ENTRY
 		{
-			Text [ en-US ] = "Entry";
+			Text [ en-US ] = "Entry" ;
 		};
 		String STR_TOKEN_HELP_TAB_STOP
 		{
-			Text [ en-US ] = "Tab stop";
+			Text [ en-US ] = "Tab stop" ;
 		};
 		String STR_TOKEN_HELP_TEXT
 		{
-			Text [ en-US ] = "Text";
+			Text [ en-US ] = "Text" ;
 		};
 		String STR_TOKEN_HELP_PAGE_NUMS
 		{
-			Text [ en-US ] = "Page number";
+			Text [ en-US ] = "Page number" ;
 		};
 		String STR_TOKEN_HELP_CHAPTER_INFO
 		{
-			Text [ en-US ] = "Chapter info";
+			Text [ en-US ] = "Chapter info" ;
 		};
 		String STR_TOKEN_HELP_LINK_START
 		{
-			Text [ en-US ] = "Hyperlink start";
+			Text [ en-US ] = "Hyperlink start" ;
 		};
 		String STR_TOKEN_HELP_LINK_END
 		{
-			Text [ en-US ] = "Hyperlink end";
+			Text [ en-US ] = "Hyperlink end" ;
 		};
 		String STR_TOKEN_HELP_AUTHORITY
 		{
-			Text [ en-US ] = "Bibliography entry: ";
+			Text [ en-US ] = "Bibliography entry: " ;
 		};
 		String STR_CHARSTYLE
 		{
-			Text [ en-US ] = "Character Style: ";
+			Text [ en-US ] = "Character Style: " ;
 		};
 		String STR_STRUCTURE
 		{
-			Text [ en-US ] = "Structure text";
+			Text [ en-US ] = "Structure text" ;
 		};
 		String STR_ADDITIONAL_ACCNAME_STRING1
 		{
-			Text [ en-US ] = "Press Ctrl+Alt+A to move focus for more operations";
+			Text [ en-US ] = "Press Ctrl+Alt+A to move focus for more operations" ;
 		};
 		String STR_ADDITIONAL_ACCNAME_STRING2
 		{
-			Text [ en-US ] = "Press left or right arrow to choose the structure controls";
+			Text [ en-US ] = "Press left or right arrow to choose the structure controls" ;
 		};
 		String STR_ADDITIONAL_ACCNAME_STRING3
 		{
-			Text [ en-US ] = "Press Ctrl+Alt+B to move focus back to the current structure control";
+			Text [ en-US ] = "Press Ctrl+Alt+B to move focus back to the current structure control" ;
 		};
 	};
 	PushButton PB_ALL_LEVELS
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_ALL_LEVELS";
-        Pos = MAP_APPFONT ( 209 , 14 ) ;
-        Size = MAP_APPFONT ( 40, 14 ) ;
-    	Text [ en-US ] = "~All";
-	};
-    PushButton PB_ENTRYNO
-	{
-        HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_ENTRYNO";
-        Pos = MAP_APPFONT ( 37 , 32 ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_ALL_LEVELS" ;
+		Pos = MAP_APPFONT ( 209, 14 ) ;
 		Size = MAP_APPFONT ( 40, 14 ) ;
-		Text [ en-US ] = "Chapter no.";
+		Text [ en-US ] = "~All" ;
+	};
+	PushButton PB_ENTRYNO
+	{
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_ENTRYNO" ;
+		Pos = MAP_APPFONT ( 37, 32 ) ;
+		Size = MAP_APPFONT ( 40, 14 ) ;
+		Text [ en-US ] = "Chapter no." ;
 	};
 	PushButton PB_ENTRY
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_ENTRY";
-        Pos = MAP_APPFONT (  80, 32 ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_ENTRY" ;
+		Pos = MAP_APPFONT ( 80, 32 ) ;
 		Size = MAP_APPFONT ( 40, 14 ) ;
-		Text [ en-US ] = "Entry text";
+		Text [ en-US ] = "Entry text" ;
 	};
 	PushButton PB_CHAPTERINFO
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_CHAPTERINFO";
-        Pos = MAP_APPFONT ( 123 , 32 ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_CHAPTERINFO" ;
+		Pos = MAP_APPFONT ( 123, 32 ) ;
 		Size = MAP_APPFONT ( 40, 14) ;
-		Text [ en-US ] = "~Chapter info";
+		Text [ en-US ] = "~Chapter info" ;
 	};
 	PushButton PB_PAGENO
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_PAGENO";
-        Pos = MAP_APPFONT ( 166 , 32 ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_PAGENO" ;
+		Pos = MAP_APPFONT ( 166, 32 ) ;
 		Size = MAP_APPFONT ( 40, 14 ) ;
-		Text [ en-US ] = "Page no.";
+		Text [ en-US ] = "Page no." ;
 	};
 	PushButton PB_TAB
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_TAB";
-        Pos = MAP_APPFONT ( 209 ,32  ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_TAB" ;
+		Pos = MAP_APPFONT ( 209 ,32 ) ;
 		Size = MAP_APPFONT ( 40, 14 ) ;
-		Text [ en-US ] = "Tab stop";
+		Text [ en-US ] = "Tab stop" ;
 	};
 	PushButton PB_HYPERLINK
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_HYPERLINK";
-        Pos = MAP_APPFONT ( 209 , 32 ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_HYPERLINK" ;
+		Pos = MAP_APPFONT ( 209, 32 ) ;
 		Size = MAP_APPFONT ( 40, 14 ) ;
-		Text [ en-US ] = "H~yperlink";
+		Text [ en-US ] = "H~yperlink" ;
 	};
 	ListBox LB_AUTHFIELD
 	{
-	    HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_AUTHFIELD";
-        Pos = MAP_APPFONT ( 37 , 33 ) ;
+		HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_AUTHFIELD" ;
+		Pos = MAP_APPFONT ( 37, 33 ) ;
 		Size = MAP_APPFONT ( 59, 60 ) ;
-		DropDown = TRUE;
-		Border = TRUE;
-		Sort = TRUE;
+		DropDown = TRUE ;
+		Border = TRUE ;
+		Sort = TRUE ;
 	};
 	PushButton PB_AUTHINSERT
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_AUTHINSERT";
-        Pos = MAP_APPFONT ( 99 , 32 ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_AUTHINSERT" ;
+		Pos = MAP_APPFONT ( 99, 32 ) ;
 		Size = MAP_APPFONT ( 39, 14 ) ;
-		Text [ en-US ] = "~Insert";
+		Text [ en-US ] = "~Insert" ;
 	};
 	PushButton PB_AUTHREMOVE
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_AUTHREMOVE";
-        Pos = MAP_APPFONT ( 142 , 32 ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_AUTHREMOVE" ;
+		Pos = MAP_APPFONT ( 142, 32 ) ;
 		Size = MAP_APPFONT ( 39, 14 ) ;
-		Text [ en-US ] = "~Remove";
+		Text [ en-US ] = "~Remove" ;
 	};
 	FixedText FT_CHARSTYLE
 	{
-        Pos = MAP_APPFONT ( 37 , 55 ) ;
-        Size = MAP_APPFONT (60 , 8 ) ;
-		Text [ en-US ] = "Character Style";
+		Pos = MAP_APPFONT ( 37, 55 ) ;
+		Size = MAP_APPFONT (60, 8 ) ;
+		Text [ en-US ] = "Character Style" ;
 	};
 	ListBox LB_CHARSTYLE
 	{
-	    HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_CHARSTYLE";
-        Pos = MAP_APPFONT ( 100 , 53 ) ;
-        Size = MAP_APPFONT ( 93, 60 ) ;
+		HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_CHARSTYLE" ;
+		Pos = MAP_APPFONT ( 100, 53 ) ;
+		Size = MAP_APPFONT ( 93, 60 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 	};
 	PushButton PB_EDITSTYLE
 	{
-	    HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_EDITSTYLE";
-        Pos = MAP_APPFONT ( 199 , 52 ) ;
+		HelpID = "sw:PushButton:TP_TOX_ENTRY:PB_EDITSTYLE" ;
+		Pos = MAP_APPFONT ( 199, 52 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
-		Text [ en-US ] = "~Edit...";
+		Text [ en-US ] = "~Edit..." ;
 	};
 	FixedText FT_FILLCHAR
 	{
-        Pos = MAP_APPFONT ( 37 , 71 ) ;
-		Size = MAP_APPFONT (60 , 8 ) ;
-		Text [ en-US ] = "Fill character";
+		Pos = MAP_APPFONT ( 37, 71 ) ;
+		Size = MAP_APPFONT (60, 8 ) ;
+		Text [ en-US ] = "Fill character" ;
 	};
 	ComboBox CB_FILLCHAR
 	{
-	    HelpID = "sw:ComboBox:TP_TOX_ENTRY:CB_FILLCHAR";
-        Pos = MAP_APPFONT ( 100 , 69 ) ;
-        Size = MAP_APPFONT ( 40, 40 ) ;
+		HelpID = "sw:ComboBox:TP_TOX_ENTRY:CB_FILLCHAR" ;
+		Pos = MAP_APPFONT ( 100, 69 ) ;
+		Size = MAP_APPFONT ( 40, 40 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 	};
 	FixedText FT_CHAPTERENTRY
 	{
-        Pos = MAP_APPFONT ( 37 , 71 ) ;
-        Size = MAP_APPFONT ( 60, 8 ) ;
-		Text [ en-US ] = "Chapter entry";
+		Pos = MAP_APPFONT ( 37, 71 ) ;
+		Size = MAP_APPFONT ( 60, 8 ) ;
+		Text [ en-US ] = "Chapter entry" ;
 	};
 	ListBox LB_CHAPTERENTRY
 	{
-	    HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_CHAPTERENTRY";
-        Pos = MAP_APPFONT ( 100 , 69 ) ;
-        Size = MAP_APPFONT ( 93, 40 ) ;
+		HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_CHAPTERENTRY" ;
+		Pos = MAP_APPFONT ( 100, 69 ) ;
+		Size = MAP_APPFONT ( 93, 40 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 	StringList [ en-US ] =
 	{
-			< "Number range only" ; > ;
-		< "Description only" ; > ;
-		< "Number range and description" ; > ;
+		< "Number range only" ;				> ;
+		< "Description only" ;				> ;
+		< "Number range and description" ;	> ;
 	};
 	};
 
-    FixedText FT_ENTRY_NO
-        {
-            Pos = MAP_APPFONT ( 37 , 71 ) ;
-            Size = MAP_APPFONT ( 60, 8 ) ;
-            Text [ en-US ] = "Format";
-        };
+	FixedText FT_ENTRY_NO
+		{
+			Pos = MAP_APPFONT ( 37, 71 ) ;
+			Size = MAP_APPFONT ( 60, 8 ) ;
+			Text [ en-US ] = "Format" ;
+		};
 	ListBox LB_ENTRY_NO
 	{
-	    HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_ENTRY_NO";
-        Pos = MAP_APPFONT ( 100 , 69 ) ;
-        Size = MAP_APPFONT ( 93, 40 ) ;
-        TabStop = TRUE ;
-        DropDown = TRUE ;
-        StringList [ en-US ] =
-            {
-                < "Number" ; > ;
-                < "Number without separator" ; > ;
-            };
+		HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_ENTRY_NO" ;
+		Pos = MAP_APPFONT ( 100, 69 ) ;
+		Size = MAP_APPFONT ( 93, 40 ) ;
+		TabStop = TRUE ;
+		DropDown = TRUE ;
+		StringList [ en-US ] =
+			{
+				< "Number" ;					> ;
+				< "Number without separator" ;	> ;
+			};
 	};
 
-    FixedText       FT_LEVEL_OL
-        {
-            Pos = MAP_APPFONT ( 37 , 87 ) ;
-            Size = MAP_APPFONT ( 60 , 8 ) ;
-            Text [ en-US ] = "Evaluate up to level";
-        };
-    NumericField    NF_LEVEL_OL
-        {
-        HelpID = "sw:NumericField:TP_TOX_ENTRY:NF_LEVEL_OL";
-            Pos = MAP_APPFONT ( 100 , 85 ) ;
-            Size = MAP_APPFONT ( 20 , 12 ) ;
-            Border = TRUE ;
-            TabStop = TRUE ;
-            Left = TRUE ;
-            Repeat = TRUE ;
-            Spin = TRUE ;
-            Minimum = 1 ;
-            Maximum = 10 ;
-            Value = 10 ;
-            SpinSize = 1 ;
-        };
+	FixedText FT_LEVEL_OL
+		{
+			Pos = MAP_APPFONT ( 37, 87 ) ;
+			Size = MAP_APPFONT ( 60, 8 ) ;
+			Text [ en-US ] = "Evaluate up to level" ;
+		};
+	NumericField NF_LEVEL_OL
+		{
+		HelpID = "sw:NumericField:TP_TOX_ENTRY:NF_LEVEL_OL" ;
+			Pos = MAP_APPFONT ( 100, 85 ) ;
+			Size = MAP_APPFONT ( 20, 12 ) ;
+			Border = TRUE ;
+			TabStop = TRUE ;
+			Left = TRUE ;
+			Repeat = TRUE ;
+			Spin = TRUE ;
+			Minimum = 1 ;
+			Maximum = 10 ;
+			Value = 10 ;
+			SpinSize = 1 ;
+		};
 
 	FixedText FT_TABPOS
 	{
-        Pos = MAP_APPFONT ( 37 , 87 ) ;
+		Pos = MAP_APPFONT ( 37, 87 ) ;
 		Size = MAP_APPFONT ( 60, 8 ) ;
-		Text [ en-US ] = "Tab stop position";
+		Text [ en-US ] = "Tab stop position" ;
 	};
 	MetricField MF_TABPOS
 	{
-	    HelpID = "sw:MetricField:TP_TOX_ENTRY:MF_TABPOS";
-        Pos = MAP_APPFONT ( 100 , 85 ) ;
-        Size = MAP_APPFONT ( 40, 12 ) ;
+		HelpID = "sw:MetricField:TP_TOX_ENTRY:MF_TABPOS" ;
+		Pos = MAP_APPFONT ( 100, 85 ) ;
+		Size = MAP_APPFONT ( 40, 12 ) ;
 		Border = TRUE ;
 		TabStop = TRUE ;
 		Left = TRUE ;
@@ -888,477 +888,466 @@ TabPage TP_TOX_ENTRY
 	};
 	CheckBox CB_AUTORIGHT
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_ENTRY:CB_AUTORIGHT";
-        Pos = MAP_APPFONT ( 143 , 86 ) ;
+		HelpID = "sw:CheckBox:TP_TOX_ENTRY:CB_AUTORIGHT" ;
+		Pos = MAP_APPFONT ( 143, 86 ) ;
 		Size = MAP_APPFONT ( 100, 10 ) ;
-		Text [ en-US ] = "Align right";
+		Text [ en-US ] = "Align right" ;
 	};
-    FixedLine FL_ENTRY
+	FixedLine FL_ENTRY
 	{
-		Pos = MAP_APPFONT ( 34 , 3 ) ;
-        Size = MAP_APPFONT ( 220, 8 ) ;
-        Text [ en-US ] = "Structure and Formatting";
+		Pos = MAP_APPFONT ( 34, 3 ) ;
+		Size = MAP_APPFONT ( 220, 8 ) ;
+		Text [ en-US ] = "Structure and Formatting" ;
 	};
 	CheckBox CB_RELTOSTYLE
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_ENTRY:CB_RELTOSTYLE";
-        Pos = MAP_APPFONT ( 37 , 110 ) ;
+		HelpID = "sw:CheckBox:TP_TOX_ENTRY:CB_RELTOSTYLE" ;
+		Pos = MAP_APPFONT ( 37, 110 ) ;
 		Size = MAP_APPFONT ( 200, 10 ) ;
-		Text [ en-US ] = "Tab position relati~ve to Paragraph Style indent";
+		Text [ en-US ] = "Tab position relati~ve to Paragraph Style indent" ;
 	};
 	FixedText FT_MAIN_ENTRY_STYLE
 	{
-        Pos = MAP_APPFONT ( 37 , 112 ) ;
-        Size = MAP_APPFONT ( 116, 8 ) ;
-		Text [ en-US ] = "Character Style for main entries";
+		Pos = MAP_APPFONT ( 37, 112 ) ;
+		Size = MAP_APPFONT ( 116, 8 ) ;
+		Text [ en-US ] = "Character Style for main entries" ;
 	};
 	ListBox LB_MAIN_ENTRY_STYLE
 	{
-	    HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_MAIN_ENTRY_STYLE";
-        Pos = MAP_APPFONT ( 157 , 110 ) ;
-        Size = MAP_APPFONT ( 92, 80 ) ;
+		HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_MAIN_ENTRY_STYLE" ;
+		Pos = MAP_APPFONT ( 157, 110 ) ;
+		Size = MAP_APPFONT ( 92, 80 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
-        AutoHScroll = TRUE;
+		AutoHScroll = TRUE ;
 	};
 
 	CheckBox CB_ALPHADELIM
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_ENTRY:CB_ALPHADELIM";
-        Pos = MAP_APPFONT ( 37 , 126 ) ;
+		HelpID = "sw:CheckBox:TP_TOX_ENTRY:CB_ALPHADELIM" ;
+		Pos = MAP_APPFONT ( 37, 126 ) ;
 		Size = MAP_APPFONT ( 105, 10 ) ;
-		Text [ en-US ] = "Alphabetical delimiter";
+		Text [ en-US ] = "Alphabetical delimiter" ;
 	};
 	CheckBox CB_COMMASEPARATED
 	{
-	    HelpID = "sw:CheckBox:TP_TOX_ENTRY:CB_COMMASEPARATED";
-        Pos = MAP_APPFONT ( 37 , 140 ) ;
+		HelpID = "sw:CheckBox:TP_TOX_ENTRY:CB_COMMASEPARATED" ;
+		Pos = MAP_APPFONT ( 37, 140 ) ;
 		Size = MAP_APPFONT ( 105, 10 ) ;
-		Text [ en-US ] = "Key separated by commas";
+		Text [ en-US ] = "Key separated by commas" ;
 	};
-    FixedLine FL_FORMAT
+	FixedLine FL_FORMAT
 	{
-        Pos = MAP_APPFONT ( 34 , 99 ) ;
-        Size = MAP_APPFONT ( 220, 8  ) ;
-		Text [ en-US ] = "Format";
+		Pos = MAP_APPFONT ( 34, 99 ) ;
+		Size = MAP_APPFONT ( 220, 8 ) ;
+		Text [ en-US ] = "Format" ;
 	};
 	RadioButton RB_DOCPOS
 	{
-	    HelpID = "sw:RadioButton:TP_TOX_ENTRY:RB_DOCPOS";
-        Pos = MAP_APPFONT ( 40 , 113) ;
-        Size = MAP_APPFONT ( 94, 10  ) ;
-		Text [ en-US ] = "Document ~position ";
+		HelpID = "sw:RadioButton:TP_TOX_ENTRY:RB_DOCPOS" ;
+		Pos = MAP_APPFONT ( 40, 113) ;
+		Size = MAP_APPFONT ( 94, 10 ) ;
+		Text [ en-US ] = "Document ~position " ;
 	};
 	RadioButton RB_SORTCONTENT
 	{
-	    HelpID = "sw:RadioButton:TP_TOX_ENTRY:RB_SORTCONTENT";
-        Pos = MAP_APPFONT ( 136 , 113 ) ;
-        Size = MAP_APPFONT ( 90, 10  ) ;
-		Text [ en-US ] = "~Content";
+		HelpID = "sw:RadioButton:TP_TOX_ENTRY:RB_SORTCONTENT" ;
+		Pos = MAP_APPFONT ( 136, 113 ) ;
+		Size = MAP_APPFONT ( 90, 10 ) ;
+		Text [ en-US ] = "~Content" ;
 	};
-    FixedLine FL_SORTING
+	FixedLine FL_SORTING
 	{
-        Pos = MAP_APPFONT ( 34 , 102 ) ;
-        Size = MAP_APPFONT ( 220, 8  ) ;
-		Text [ en-US ] = "Sort by";
+		Pos = MAP_APPFONT ( 34, 102 ) ;
+		Size = MAP_APPFONT ( 220, 8 ) ;
+		Text [ en-US ] = "Sort by" ;
 	};
 	FixedText FT_FIRSTKEY
 	{
-		Pos = MAP_APPFONT ( 40 , 140 ) ;
-		Size = MAP_APPFONT ( 10, 8  ) ;
+		Pos = MAP_APPFONT ( 40, 140 ) ;
+		Size = MAP_APPFONT ( 10, 8 ) ;
 		Text = "~1" ;
 	};
 	ListBox LB_FIRSTKEY
 	{
-	    HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_FIRSTKEY";
-		Pos = MAP_APPFONT ( 60 , 138 ) ;
-		Size = MAP_APPFONT ( 159, 50  ) ;
-		Border = TRUE;
-		DropDown = TRUE;
+		HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_FIRSTKEY" ;
+		Pos = MAP_APPFONT ( 60, 138 ) ;
+		Size = MAP_APPFONT ( 159, 50 ) ;
+		Border = TRUE ;
+		DropDown = TRUE ;
 	};
 	Image IMG_SORTUP_HC
 	{
-		ImageBitmap = Bitmap{File = "sch10712.png"; };
-        MaskColor = IMAGE_MASK_COLOR ;
-    };
+		ImageBitmap = Bitmap{File = "sch10712.png" ; };
+	};
 	Image IMG_SORTDOWN_HC
 	{
-		ImageBitmap = Bitmap{File = "sch10713.png"; };
-        MaskColor = IMAGE_MASK_COLOR ;
+		ImageBitmap = Bitmap{File = "sch10713.png" ; };
 	};
 	ImageRadioButton RB_SORTUP1
 	{
-	    HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP1";
-		Pos = MAP_APPFONT ( 222 , 138 ) ;
-		Size = MAP_APPFONT ( 12, 12  ) ;
+		HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP1" ;
+		Pos = MAP_APPFONT ( 222, 138 ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10712.png"; };
-                MaskColor = IMAGE_MASK_COLOR ;
-            };
+				ImageBitmap = Bitmap{File = "sc10712.png" ; };
+			};
 		Check = TRUE;
-		QuickHelpText [ en-US ] = "Ascending";
+		QuickHelpText [ en-US ] = "Ascending" ;
 	};
 	ImageRadioButton RB_SORTDOWN1
 	{
-	    HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN1";
-		Pos = MAP_APPFONT ( 237 , 138 ) ;
-		Size = MAP_APPFONT ( 12, 12  ) ;
+		HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN1" ;
+		Pos = MAP_APPFONT ( 237, 138 ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10713.png"; };
-                MaskColor = IMAGE_MASK_COLOR ;
-            };
-		QuickHelpText [ en-US ] = "Descending";
+				ImageBitmap = Bitmap{File = "sc10713.png" ; };
+			};
+		QuickHelpText [ en-US ] = "Descending" ;
 	};
 	ImageRadioButton RB_SORTUP2
 	{
-	    HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP2";
-		Pos = MAP_APPFONT ( 222 , 153 ) ;
-		Size = MAP_APPFONT ( 12, 12  ) ;
+		HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP2" ;
+		Pos = MAP_APPFONT ( 222, 153 ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10712.png"; };
-                MaskColor = IMAGE_MASK_COLOR ;
-            };
+				ImageBitmap = Bitmap{File = "sc10712.png" ; };
+			};
 		Check = TRUE;
-		QuickHelpText [ en-US ] = "Ascending";
+		QuickHelpText [ en-US ] = "Ascending" ;
 	};
 	ImageRadioButton RB_SORTDOWN2
 	{
-	    HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN2";
-		Pos = MAP_APPFONT ( 237 , 153 ) ;
-		Size = MAP_APPFONT ( 12, 12  ) ;
+		HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN2" ;
+		Pos = MAP_APPFONT ( 237, 153 ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10713.png"; };
-                MaskColor = IMAGE_MASK_COLOR ;
-            };
-		QuickHelpText [ en-US ] = "Descending";
+				ImageBitmap = Bitmap{File = "sc10713.png" ; };
+			};
+		QuickHelpText [ en-US ] = "Descending" ;
 	};
 	ImageRadioButton RB_SORTUP3
 	{
-	    HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP3";
-		Pos = MAP_APPFONT ( 222 , 168 ) ;
-		Size = MAP_APPFONT ( 12, 12  ) ;
+		HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTUP3" ;
+		Pos = MAP_APPFONT ( 222, 168 ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10712.png"; };
-                MaskColor = IMAGE_MASK_COLOR ;
-            };
+				ImageBitmap = Bitmap{File = "sc10712.png" ; };
+			};
 		Check = TRUE;
-		QuickHelpText [ en-US ] = "Ascending";
+		QuickHelpText [ en-US ] = "Ascending" ;
 	};
 	ImageRadioButton RB_SORTDOWN3
 	{
-	    HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN3";
+		HelpID = "sw:ImageRadioButton:TP_TOX_ENTRY:RB_SORTDOWN3" ;
 		Pos = MAP_APPFONT ( 237 ,168 ) ;
-		Size = MAP_APPFONT ( 12, 12  ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10713.png"; };
-                MaskColor = IMAGE_MASK_COLOR ;
-            };
-		QuickHelpText [ en-US ] = "Descending";
+				ImageBitmap = Bitmap{File = "sc10713.png" ; };
+			};
+		QuickHelpText [ en-US ] = "Descending" ;
 	};
 	FixedText FT_SECONDKEY
 	{
-		Pos = MAP_APPFONT ( 40 , 155 ) ;
-		Size = MAP_APPFONT ( 10, 8  ) ;
+		Pos = MAP_APPFONT ( 40, 155 ) ;
+		Size = MAP_APPFONT ( 10, 8 ) ;
 		Text = "~2" ;
 	};
 	ListBox LB_SECONDKEY
 	{
-	    HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_SECONDKEY";
-		Pos = MAP_APPFONT ( 60 , 153 ) ;
-		Size = MAP_APPFONT ( 159, 50  ) ;
-		Border = TRUE;
-		DropDown = TRUE;
+		HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_SECONDKEY" ;
+		Pos = MAP_APPFONT ( 60, 153 ) ;
+		Size = MAP_APPFONT ( 159, 50 ) ;
+		Border = TRUE ;
+		DropDown = TRUE ;
 	};
 	FixedText FT_THIRDDKEY
 	{
-		Pos = MAP_APPFONT ( 40 , 170 ) ;
-		Size = MAP_APPFONT ( 10, 8  ) ;
+		Pos = MAP_APPFONT ( 40, 170 ) ;
+		Size = MAP_APPFONT ( 10, 8 ) ;
 		Text = "~3" ;
 	};
 	ListBox LB_THIRDKEY
 	{
-	    HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_THIRDKEY";
-		Pos = MAP_APPFONT ( 60 , 168 ) ;
-		Size = MAP_APPFONT ( 159, 50  ) ;
-		Border = TRUE;
-		DropDown = TRUE;
+		HelpID = "sw:ListBox:TP_TOX_ENTRY:LB_THIRDKEY" ;
+		Pos = MAP_APPFONT ( 60, 168 ) ;
+		Size = MAP_APPFONT ( 159, 50 ) ;
+		Border = TRUE ;
+		DropDown = TRUE ;
 	};
-    FixedLine FL_SORTKEY
+	FixedLine FL_SORTKEY
 	{
-		Pos = MAP_APPFONT ( 34 , 126) ;
-        Size = MAP_APPFONT ( 220, 8  ) ;
-		Text [ en-US ] = "Sort keys";
+		Pos = MAP_APPFONT ( 34, 126) ;
+		Size = MAP_APPFONT ( 220, 8 ) ;
+		Text [ en-US ] = "Sort keys" ;
 	};
 
 	String STR_NOSORTKEY
 	{
-		Text [ en-US ] = "<None>";
+		Text [ en-US ] = "<None>" ;
 	};
 	String STR_NO_CHAR_STYLE
 	{
-		Text [ en-US ] = "<None>";
+		Text [ en-US ] = "<None>" ;
 	};
 	String STR_DELIM
 	{
-		Text [ en-US ] = "S";
+		Text [ en-US ] = "S" ;
 	};
 };
 TabPage TP_TOX_STYLES
 {
-	HelpID =  HID_TOX_STYLES_PAGE;
-	Size = MAP_APPFONT ( 260 , 185 ) ;
+	HelpID = HID_TOX_STYLES_PAGE ;
+	Size = MAP_APPFONT ( 260, 185 ) ;
 	Hide = TRUE ;
 	FixedText FT_LEVEL
 	{
-		Pos = MAP_APPFONT ( 11 , 14 ) ;
-        Size = MAP_APPFONT ( 102 , 8 ) ;
+		Pos = MAP_APPFONT ( 11, 14 ) ;
+		Size = MAP_APPFONT ( 102, 8 ) ;
 		Text [ en-US ] = "~Levels" ;
 		Left = TRUE ;
 	};
 	ListBox LB_LEVEL
 	{
-	    HelpID = "sw:ListBox:TP_TOX_STYLES:LB_LEVEL";
+		HelpID = "sw:ListBox:TP_TOX_STYLES:LB_LEVEL" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 12 , 25 ) ;
-        Size = MAP_APPFONT ( 102 , 131 ) ;
+		Pos = MAP_APPFONT ( 12, 25 ) ;
+		Size = MAP_APPFONT ( 102, 131 ) ;
 		TabStop = TRUE ;
 		AutoHScroll = TRUE ;
 	};
 	FixedText FT_TEMPLATE
 	{
-        Pos = MAP_APPFONT ( 142 , 14 ) ;
-        Size = MAP_APPFONT ( 102 , 8 ) ;
+		Pos = MAP_APPFONT ( 142, 14 ) ;
+		Size = MAP_APPFONT ( 102, 8 ) ;
 		Text [ en-US ] = "Paragraph ~Styles" ;
 		Left = TRUE ;
 	};
 	ListBox LB_PARALAY
 	{
-	    HelpID = "sw:ListBox:TP_TOX_STYLES:LB_PARALAY";
+		HelpID = "sw:ListBox:TP_TOX_STYLES:LB_PARALAY" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 142 , 25 ) ;
-        Size = MAP_APPFONT ( 101 , 131 ) ;
+		Pos = MAP_APPFONT ( 142, 25 ) ;
+		Size = MAP_APPFONT ( 101, 131 ) ;
 		TabStop = TRUE ;
 		Sort = TRUE ;
 		AutoHScroll = TRUE ;
 	};
 	PushButton BT_STD
 	{
-	    HelpID = "sw:PushButton:TP_TOX_STYLES:BT_STD";
-        Pos = MAP_APPFONT ( 64 , 162 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "sw:PushButton:TP_TOX_STYLES:BT_STD" ;
+		Pos = MAP_APPFONT ( 64, 162 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		Text [ en-US ] = "~Default" ;
 	};
-    ImageButton BT_ASSIGN
+	ImageButton BT_ASSIGN
 	{
-        HelpID = "sw:ImageButton:TP_TOX_STYLES:BT_ASSIGN";
-        Pos = MAP_APPFONT ( 118 , 28 ) ;
-		Size = MAP_APPFONT ( 20 , 12 ) ;
+		HelpID = "sw:ImageButton:TP_TOX_STYLES:BT_ASSIGN" ;
+		Pos = MAP_APPFONT ( 118, 28 ) ;
+		Size = MAP_APPFONT ( 20, 12 ) ;
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "one_left.png" ;
+				File = "one_left.png" ;
 			};
-            MaskColor = IMAGE_MASK_COLOR ;
-        };
+		};
 	};
 	PushButton BT_EDIT_STYLE
 	{
-	    HelpID = "sw:PushButton:TP_TOX_STYLES:BT_EDIT_STYLE";
-        Pos = MAP_APPFONT ( 193 , 162 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "sw:PushButton:TP_TOX_STYLES:BT_EDIT_STYLE" ;
+		Pos = MAP_APPFONT ( 193, 162 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "~Edit";
+		Text [ en-US ] = "~Edit" ;
 	};
-    FixedLine FL_FORMAT
+	FixedLine FL_FORMAT
 	{
-		Pos = MAP_APPFONT ( 6 , 3 ) ;
-        Size = MAP_APPFONT ( 248 , 8 ) ;
-		Text [ en-US ] = "Assignment";
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
+		Text [ en-US ] = "Assignment" ;
 	};
 };
 ModalDialog DLG_ADD_IDX_STYLES
 {
-	HelpId = HID_DLG_ADD_IDX_STYLES;
+	HelpId = HID_DLG_ADD_IDX_STYLES ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 350 , 200 ) ;
+	Size = MAP_APPFONT ( 350, 200 ) ;
 	Moveable = TRUE ;
 	Control TR_HEADER
 	{
-		Pos = MAP_APPFONT ( 12 , 15 ) ;
-        Size = MAP_APPFONT ( 273 , 164 ) ;
-		Border = TRUE;
-		TabStop = TRUE;
+		Pos = MAP_APPFONT ( 12, 15 ) ;
+		Size = MAP_APPFONT ( 273, 164 ) ;
+		Border = TRUE ;
+		TabStop = TRUE ;
 		Window HB_STYLES
 		{
-			Pos = MAP_APPFONT ( 0 , 0 ) ;
-            Size = MAP_APPFONT ( 273 , 20 ) ;
+			Pos = MAP_APPFONT ( 0, 0 ) ;
+			Size = MAP_APPFONT ( 273, 20 ) ;
 		};
 		Control TLB_STYLES
 		{
-			Pos = MAP_APPFONT ( 0 , 20 ) ;
-            Size = MAP_APPFONT ( 273 , 132 ) ;
-			Border = TRUE;
+			Pos = MAP_APPFONT ( 0, 20 ) ;
+			Size = MAP_APPFONT ( 273, 132 ) ;
+			Border = TRUE ;
 		};
 	};
-    ImageButton PB_LEFT
+	ImageButton PB_LEFT
 	{
-        HelpID = "sw:ImageButton:DLG_ADD_IDX_STYLES:PB_LEFT";
-		Pos = MAP_APPFONT ( 12 , 182 ) ;
-		Size = MAP_APPFONT ( 50 , 12 ) ;
+		HelpID = "sw:ImageButton:DLG_ADD_IDX_STYLES:PB_LEFT" ;
+		Pos = MAP_APPFONT ( 12, 182 ) ;
+		Size = MAP_APPFONT ( 50, 12 ) ;
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "all_left.png" ;
+				File = "all_left.png" ;
 			};
-            MaskColor = IMAGE_MASK_COLOR ;
-        };
-        QuickHelpText [ en-US ] = "Left" ;
+		};
+		QuickHelpText [ en-US ] = "Left" ;
 	};
-    ImageButton PB_RIGHT
+	ImageButton PB_RIGHT
 	{
-        HelpID = "sw:ImageButton:DLG_ADD_IDX_STYLES:PB_RIGHT";
-		Pos = MAP_APPFONT ( 65 , 182 ) ;
-		Size = MAP_APPFONT ( 50 , 12 ) ;
+		HelpID = "sw:ImageButton:DLG_ADD_IDX_STYLES:PB_RIGHT" ;
+		Pos = MAP_APPFONT ( 65, 182 ) ;
+		Size = MAP_APPFONT ( 50, 12 ) ;
 		TabStop = TRUE ;
-        ButtonImage = Image
+		ButtonImage = Image
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "all_right.png" ;
+				File = "all_right.png" ;
 			};
-            MaskColor = IMAGE_MASK_COLOR ;
 		};
 		QuickHelpText [ en-US ] = "Right" ;
 	};
-    FixedLine FL_STYLES
+	FixedLine FL_STYLES
 	{
-		Pos = MAP_APPFONT ( 6 , 3 ) ;
-        Size = MAP_APPFONT ( 285 , 8 ) ;
-		Text [ en-US ] = "Styl~es";
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 285, 8 ) ;
+		Text [ en-US ] = "Styl~es" ;
 	};
 	OKButton PB_OK
 	{
-		Pos = MAP_APPFONT ( 297 , 6 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 297, 6 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		DefButton = TRUE ;
 	};
 	CancelButton PB_CANCEL
 	{
-		Pos = MAP_APPFONT ( 297 , 23 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 297, 23 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	HelpButton PB_HELP
 	{
-		Pos = MAP_APPFONT ( 297 , 40 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 297, 40 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	String	ST_HB_FIRST
 	{
-		Text [ en-US ] = "Not applied";
+		Text [ en-US ] = "Not applied" ;
 	};
-	Text [ en-US ] = "Assign Styles";
+	Text [ en-US ] = "Assign Styles" ;
 };
 /*-----------------------------------------------------------
 
 -----------------------------------------------------------*/
 ModalDialog DLG_CREATE_AUTOMARK
 {
-	HelpId = HID_DLG_CREATE_AUTOMARK;
+	HelpId = HID_DLG_CREATE_AUTOMARK ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 350 , 200 ) ;
+	Size = MAP_APPFONT ( 350, 200 ) ;
 	Moveable = TRUE ;
 	OKButton PB_OK
 	{
-		Pos = MAP_APPFONT ( 297 , 6 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 297, 6 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		DefButton = TRUE ;
 	};
 	CancelButton PB_CANCEL
 	{
-		Pos = MAP_APPFONT ( 297 , 23 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 297, 23 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	HelpButton PB_HELP
 	{
-		Pos = MAP_APPFONT ( 297 , 40 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 297, 40 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	Control BB_ENTRIES
 	{
-		Pos = MAP_APPFONT ( 12 , 18 ) ;
-		Size = MAP_APPFONT ( 276 , 175 ) ;
+		Pos = MAP_APPFONT ( 12, 18 ) ;
+		Size = MAP_APPFONT ( 276, 175 ) ;
 		TabStop = TRUE ;
-		Border = TRUE;
+		Border = TRUE ;
 		String ST_SEARCH
 		{
-			Text [ en-US ] = "Search term";
+			Text [ en-US ] = "Search term" ;
 		};
 		String ST_ALTERNATIVE
 		{
-			Text [ en-US ] = "Alternative entry";
+			Text [ en-US ] = "Alternative entry" ;
 		};
 		String ST_PRIMKEY
 		{
-			Text [ en-US ] = "1st key";
+			Text [ en-US ] = "1st key" ;
 		};
 		String ST_SECKEY
 		{
-			Text [ en-US ] = "2nd key";
+			Text [ en-US ] = "2nd key" ;
 		};
 		String ST_COMMENT
 		{
-			Text [ en-US ] = "Comment";
+			Text [ en-US ] = "Comment" ;
 		};
 		String ST_CASESENSITIVE
 		{
-			Text [ en-US ] = "Match case";
+			Text [ en-US ] = "Match case" ;
 		};
 		String ST_WORDONLY
 		{
-			Text [ en-US ] = "Word only";
+			Text [ en-US ] = "Word only" ;
 		};
 		String ST_TRUE
 		{
-			Text [ en-US ] = "Yes";
+			Text [ en-US ] = "Yes" ;
 		};
 		String ST_FALSE
 		{
-			Text [ en-US ] = "No";
+			Text [ en-US ] = "No" ;
 		};
 	};
-    FixedLine        FL_ENTRIES
+	FixedLine FL_ENTRIES
 	{
-		Pos = MAP_APPFONT ( 6 , 3 ) ;
-        Size = MAP_APPFONT ( 288, 8 ) ;
-		Text [ en-US ] = "Entries";
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 288, 8 ) ;
+		Text [ en-US ] = "Entries" ;
 	};
 
-	Text [ en-US ] = "Edit Concordance File";
+	Text [ en-US ] = "Edit Concordance File" ;
 };
-// -----------------------------------------------------------------------------
 
+// ********************************************************************** EOF

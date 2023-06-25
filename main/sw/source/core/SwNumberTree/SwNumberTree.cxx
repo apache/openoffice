@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ SwNumberTreeNode::SwNumberTreeNode()
       mpParent( 0 ),
       mnNumber( 0 ),
       // --> OD 2008-11-26 #158694#
-      mbContinueingPreviousSubTree( false ),
+      mbContinuingPreviousSubTree( false ),
       // <--
       mbPhantom( false ),
       mItLastValid()
@@ -191,7 +191,7 @@ void SwNumberTreeNode::ValidateHierarchical(const SwNumberTreeNode * pNode) cons
         {
             aIt = mChildren.begin();
             // --> OD 2008-11-26 #158694#
-            (*aIt)->mbContinueingPreviousSubTree = false;
+            (*aIt)->mbContinuingPreviousSubTree = false;
             // <--
 
             // determine default start value
@@ -223,7 +223,7 @@ void SwNumberTreeNode::ValidateHierarchical(const SwNumberTreeNode * pNode) cons
                     if ( pPrevNode->GetChildCount() > 0 )
                     {
                         // --> OD 2008-11-26 #158694#
-                        (*aIt)->mbContinueingPreviousSubTree = true;
+                        (*aIt)->mbContinuingPreviousSubTree = true;
                         // <--
                         nTmpNumber = (*(pPrevNode->mChildren.rbegin()))->GetNumber();
                         // --> OD 2005-10-27 #126009#
@@ -255,7 +255,7 @@ void SwNumberTreeNode::ValidateHierarchical(const SwNumberTreeNode * pNode) cons
         {
             ++aIt;
             // --> OD 2008-11-26 #158694#
-            (*aIt)->mbContinueingPreviousSubTree = false;
+            (*aIt)->mbContinuingPreviousSubTree = false;
             // <--
 
             // --> OD 2005-10-19 #126009# - only for counted nodes the number
@@ -784,9 +784,9 @@ SwNumberTree::tSwNumTreeNumber SwNumberTreeNode::GetNumber(bool bValidate)
 }
 
 // --> OD 2008-11-26 #158694#
-bool SwNumberTreeNode::IsContinueingPreviousSubTree() const
+bool SwNumberTreeNode::IsContinuingPreviousSubTree() const
 {
-    return mbContinueingPreviousSubTree;
+    return mbContinuingPreviousSubTree;
 }
 // <--
 
@@ -907,8 +907,8 @@ bool SwNumberTreeNode::IsFirst() const
 
             // --> OD 2007-10-02 #b6600435#
             // If node isn't the first child, it is the second child and the
-            // first child is a phanton. In this case check, if the first phantom
-            // child have only phanton childs
+            // first child is a phantom. In this case check, if the first phantom
+            // child have only phantom childs
             if ( bResult &&
                  this != *(GetParent()->mChildren.begin()) &&
                  !(*(GetParent()->mChildren.begin()))->HasOnlyPhantoms() )

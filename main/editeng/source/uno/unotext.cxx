@@ -126,7 +126,7 @@ void GetSelection( struct ESelection& rSel, SvxTextForwarder* pForwarder ) throw
 	DBG_ASSERT( pForwarder, "I need a valid SvxTextForwarder!" );
 	if( pForwarder )
 	{
-		sal_Int16 nParaCount = pForwarder->GetParagraphCount();
+		sal_Int32 nParaCount = pForwarder->GetParagraphCount();
 		if(nParaCount>0)
 			nParaCount--;
 
@@ -139,7 +139,7 @@ void CheckSelection( struct ESelection& rSel, SvxTextForwarder* pForwarder ) thr
 	DBG_ASSERT( pForwarder, "I need a valid SvxTextForwarder!" );
 	if( pForwarder )
 	{
-		if( rSel.nStartPara == 0xffff )
+		if( rSel.nStartPara == EE_PARA_ALL )
 		{
 			::GetSelection( rSel, pForwarder );
 		}
@@ -318,7 +318,7 @@ void SvxUnoTextRangeBase::SetEditSource( SvxEditSource* pSource ) throw()
 
 	mpEditSource = pSource;
 
-	maSelection.nStartPara = 0xffff;
+	maSelection.nStartPara = EE_PARA_MAX; // or EE_PARA_NOT_FOUND? EE_PARA_ALL? What is the intent?
 
 	if( mpEditSource )
 		mpEditSource->addRange( this );
@@ -515,9 +515,9 @@ void SAL_CALL SvxUnoTextRangeBase::_setPropertyValue( const OUString& PropertyNa
 				while( nPara <= nEndPara )
 				{
 					// we have a paragraph
-					SfxItemSet aSet( pForwarder->GetParaAttribs( (sal_uInt16)nPara ) );
+					SfxItemSet aSet( pForwarder->GetParaAttribs( nPara ) );
 					setPropertyValue( pMap, aValue, maSelection, aSet, aSet );
-					pForwarder->SetParaAttribs( (sal_uInt16)nPara, aSet );
+					pForwarder->SetParaAttribs( nPara, aSet );
 					nPara++;
 				}
 			}
@@ -650,7 +650,7 @@ uno::Any SAL_CALL SvxUnoTextRangeBase::_getPropertyValue(const OUString& Propert
 		{
 			SfxItemSet* pAttribs = NULL;
 			if( nPara != -1 )
-				pAttribs = pForwarder->GetParaAttribs( (sal_uInt16)nPara ).Clone();
+				pAttribs = pForwarder->GetParaAttribs( nPara ).Clone();
 			else
 				pAttribs = pForwarder->GetAttribs( GetSelection() ).Clone();
 
@@ -859,7 +859,7 @@ void SAL_CALL SvxUnoTextRangeBase::_setPropertyValues( const uno::Sequence< ::rt
 				{
 					if( NULL == pNewParaSet )
 					{
-						const SfxItemSet aSet( pForwarder->GetParaAttribs( (sal_uInt16)nTempPara ) );
+						const SfxItemSet aSet( pForwarder->GetParaAttribs( nTempPara ) );
 						pOldParaSet = new SfxItemSet( aSet );
 						pNewParaSet = new SfxItemSet( *pOldParaSet->GetPool(), pOldParaSet->GetRanges() );
 					}
@@ -887,9 +887,9 @@ void SAL_CALL SvxUnoTextRangeBase::_setPropertyValues( const uno::Sequence< ::rt
 			{
 				while( nTempPara <= nEndPara )
 				{
-					SfxItemSet aSet( pForwarder->GetParaAttribs( (sal_uInt16)nTempPara ) );
+					SfxItemSet aSet( pForwarder->GetParaAttribs( nTempPara ) );
 					aSet.Put( *pNewParaSet );
-					pForwarder->SetParaAttribs( (sal_uInt16)nTempPara, aSet );
+					pForwarder->SetParaAttribs( nTempPara, aSet );
 					nTempPara++;
 				}
 				bNeedsUpdate = sal_True;
@@ -935,7 +935,7 @@ uno::Sequence< uno::Any > SAL_CALL SvxUnoTextRangeBase::_getPropertyValues( cons
 	{
 		SfxItemSet* pAttribs = NULL;
 		if( nPara != -1 )
-			pAttribs = pForwarder->GetParaAttribs( (sal_uInt16)nPara ).Clone();
+			pAttribs = pForwarder->GetParaAttribs( nPara ).Clone();
 		else
 			pAttribs = pForwarder->GetAttribs( GetSelection() ).Clone();
 
@@ -1003,7 +1003,7 @@ beans::PropertyState SAL_CALL SvxUnoTextRangeBase::_getPropertyState(const SfxIt
 				    while( *pWhichId )
 				    {
 					    if(nPara != -1)
-						    eTempItemState = pForwarder->GetItemState( (sal_uInt16)nPara, *pWhichId );
+						    eTempItemState = pForwarder->GetItemState( nPara, *pWhichId );
 					    else
 						    eTempItemState = pForwarder->GetItemState( GetSelection(), *pWhichId );
 
@@ -1052,7 +1052,7 @@ beans::PropertyState SAL_CALL SvxUnoTextRangeBase::_getPropertyState(const SfxIt
 		    if( nWID != 0 )
 		    {
 			    if( nPara != -1 )
-				    eItemState = pForwarder->GetItemState( (sal_uInt16)nPara, nWID );
+				    eItemState = pForwarder->GetItemState( nPara, nWID );
 			    else
 				    eItemState = pForwarder->GetItemState( GetSelection(), nWID );
 		    }
@@ -1103,7 +1103,7 @@ uno::Sequence< beans::PropertyState > SvxUnoTextRangeBase::_getPropertyStates(co
 		SfxItemSet* pSet = NULL;
 		if( nPara != -1 )
 		{
-			pSet = new SfxItemSet( pForwarder->GetParaAttribs( (sal_uInt16)nPara ) );
+			pSet = new SfxItemSet( pForwarder->GetParaAttribs( nPara ) );
 		}
 		else
 		{
@@ -1277,7 +1277,7 @@ void SvxUnoTextRangeBase::_setPropertyToDefault(SvxTextForwarder* pForwarder, co
 		}
 
 		if(nPara != -1)
-			pForwarder->SetParaAttribs( (sal_uInt16)nPara, aSet );
+			pForwarder->SetParaAttribs( nPara, aSet );
 		else
 			pForwarder->QuickSetAttribs( aSet, GetSelection() );
 
@@ -1407,7 +1407,7 @@ sal_Bool SvxUnoTextRangeBase::GoLeft(sal_Int16 nCount, sal_Bool Expand) throw()
 
 	//	#75098# use end position, as in Writer (start is anchor, end is cursor)
 	sal_uInt16 nNewPos = maSelection.nEndPos;
-	sal_uInt16 nNewPar = maSelection.nEndPara;
+	sal_uInt32 nNewPar = maSelection.nEndPara;
 
 	sal_Bool bOk = sal_True;
 	SvxTextForwarder* pForwarder = NULL;
@@ -1448,10 +1448,10 @@ sal_Bool SvxUnoTextRangeBase::GoRight(sal_Int16 nCount, sal_Bool Expand)  throw(
 
 
 		sal_uInt16 nNewPos = maSelection.nEndPos + nCount;			//! Ueberlauf ???
-		sal_uInt16 nNewPar = maSelection.nEndPara;
+		sal_uInt32 nNewPar = maSelection.nEndPara;
 
 		sal_Bool bOk = sal_True;
-		sal_uInt16 nParCount = pForwarder->GetParagraphCount();
+		sal_uInt32 nParCount = pForwarder->GetParagraphCount();
 		sal_uInt16 nThisLen = pForwarder->GetTextLen( nNewPar );
 		while ( nNewPos > nThisLen && bOk )
 		{
@@ -1496,7 +1496,7 @@ void SvxUnoTextRangeBase::GotoEnd(sal_Bool Expand) throw()
 	if( pForwarder )
 	{
 
-		sal_uInt16 nPar = pForwarder->GetParagraphCount();
+		sal_uInt32 nPar = pForwarder->GetParagraphCount();
 		if (nPar)
 			--nPar;
 
@@ -2118,7 +2118,7 @@ void SvxPropertyValuesToItemSet(
 		const uno::Sequence< beans::PropertyValue > rPropertyVaules,
         const SfxItemPropertySet *pPropSet,
         SvxTextForwarder *pForwarder /*needed for WID_NUMLEVEL*/,
-        sal_uInt16 nPara /*needed for WID_NUMLEVEL*/)
+        sal_uInt32 nPara /*needed for WID_NUMLEVEL*/)
 	throw(lang::IllegalArgumentException, beans::UnknownPropertyException, uno::RuntimeException)
 {
     sal_Int32 nProps = rPropertyVaules.getLength();
@@ -2197,7 +2197,7 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::appendParagraph(
     SvxTextForwarder *pTextForwarder = pEditSource ? pEditSource->GetTextForwarder() : 0;
     if (pTextForwarder)
     {
-        sal_uInt16 nParaCount = pTextForwarder->GetParagraphCount();
+        sal_uInt32 nParaCount = pTextForwarder->GetParagraphCount();
         DBG_ASSERT( nParaCount > 0, "paragraph count is 0 or negative" );
 		pTextForwarder->AppendParagraph();
 
@@ -2228,12 +2228,12 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::finishParagraph(
     SvxTextForwarder *pTextForwarder = pEditSource ? pEditSource->GetTextForwarder() : 0;
     if (pTextForwarder)
     {
-        sal_uInt16 nParaCount = pTextForwarder->GetParagraphCount();
+        sal_uInt32 nParaCount = pTextForwarder->GetParagraphCount();
         DBG_ASSERT( nParaCount > 0, "paragraph count is 0 or negative" );
         pTextForwarder->AppendParagraph();
 
         // set properties for the previously last paragraph
-        sal_uInt16 nPara = nParaCount - 1;
+        sal_uInt32 nPara = nParaCount - 1;
         ESelection aSel( nPara, 0, nPara, 0 );
         SfxItemSet aItemSet( *pTextForwarder->GetEmptyItemSetPtr() );
         SvxPropertyValuesToItemSet( aItemSet, rCharAndParaProps, 
@@ -2260,9 +2260,9 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::appendTextPortion(
 	uno::Reference< text::XTextRange > xRet;
     if (pTextForwarder)
     {
-        sal_uInt16 nParaCount = pTextForwarder->GetParagraphCount();
+        sal_uInt32 nParaCount = pTextForwarder->GetParagraphCount();
         DBG_ASSERT( nParaCount > 0, "paragraph count is 0 or negative" );
-		sal_uInt16 nPara = nParaCount - 1;
+		sal_uInt32 nPara = nParaCount - 1;
         SfxItemSet aSet( pTextForwarder->GetParaAttribs( nPara ) );
 		xub_StrLen nStart = pTextForwarder->AppendTextPortion( nPara, rText, aSet );
         pEditSource->UpdateData();
@@ -2511,12 +2511,12 @@ void SvxDummyTextSource::UpdateData()
 {
 }
 
-sal_uInt16 SvxDummyTextSource::GetParagraphCount() const
+sal_uInt32 SvxDummyTextSource::GetParagraphCount() const
 {
 	return 0;
 }
 
-sal_uInt16 SvxDummyTextSource::GetTextLen( sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetTextLen( sal_uInt32 ) const
 {
 	return 0;
 }
@@ -2534,12 +2534,12 @@ SfxItemSet SvxDummyTextSource::GetAttribs( const ESelection&, sal_Bool ) const
 	return SfxItemSet(EditEngine::GetGlobalItemPool());
 }
 
-SfxItemSet SvxDummyTextSource::GetParaAttribs( sal_uInt16 ) const
+SfxItemSet SvxDummyTextSource::GetParaAttribs( sal_uInt32 ) const
 {
 	return GetAttribs(ESelection());
 }
 
-void SvxDummyTextSource::SetParaAttribs( sal_uInt16, const SfxItemSet& )
+void SvxDummyTextSource::SetParaAttribs( sal_uInt32, const SfxItemSet& )
 {
 }
 
@@ -2547,7 +2547,7 @@ void SvxDummyTextSource::RemoveAttribs( const ESelection& , sal_Bool , sal_uInt1
 {
 }
 
-void SvxDummyTextSource::GetPortions( sal_uInt16, SvUShorts& ) const
+void SvxDummyTextSource::GetPortions( sal_uInt32, SvUShorts& ) const
 {
 }
 
@@ -2556,7 +2556,7 @@ sal_uInt16 SvxDummyTextSource::GetItemState( const ESelection&, sal_uInt16 ) con
 	return 0;
 }
 
-sal_uInt16 SvxDummyTextSource::GetItemState( sal_uInt16, sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetItemState( sal_uInt32, sal_uInt16 ) const
 {
 	return 0;
 }
@@ -2582,12 +2582,12 @@ void SvxDummyTextSource::QuickInsertLineBreak( const ESelection& )
 {
 };
 
-XubString SvxDummyTextSource::CalcFieldValue( const SvxFieldItem&, sal_uInt16, sal_uInt16, Color*&, Color*& )
+XubString SvxDummyTextSource::CalcFieldValue( const SvxFieldItem&, sal_uInt32, sal_uInt16, Color*&, Color*& )
 {
 	return XubString();
 }
 
-void SvxDummyTextSource::FieldClicked( const SvxFieldItem&, sal_uInt16, xub_StrLen )
+void SvxDummyTextSource::FieldClicked( const SvxFieldItem&, sal_uInt32, xub_StrLen )
 {
 }
 
@@ -2600,32 +2600,32 @@ void SvxDummyTextSource::SetNotifyHdl( const Link& )
 {
 }
 
-LanguageType SvxDummyTextSource::GetLanguage( sal_uInt16, sal_uInt16 ) const
+LanguageType SvxDummyTextSource::GetLanguage( sal_uInt32, sal_uInt16 ) const
 {
     return LANGUAGE_DONTKNOW;
 }
 
-sal_uInt16 SvxDummyTextSource::GetFieldCount( sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetFieldCount( sal_uInt32 ) const
 {
     return 0;
 }
 
-EFieldInfo SvxDummyTextSource::GetFieldInfo( sal_uInt16, sal_uInt16 ) const
+EFieldInfo SvxDummyTextSource::GetFieldInfo( sal_uInt32, sal_uInt16 ) const
 {
     return EFieldInfo();
 }
 
-EBulletInfo SvxDummyTextSource::GetBulletInfo( sal_uInt16 ) const
+EBulletInfo SvxDummyTextSource::GetBulletInfo( sal_uInt32 ) const
 {
     return EBulletInfo();
 }
 
-Rectangle SvxDummyTextSource::GetCharBounds( sal_uInt16, sal_uInt16 ) const
+Rectangle SvxDummyTextSource::GetCharBounds( sal_uInt32, sal_uInt16 ) const
 {
     return Rectangle();
 }
 
-Rectangle SvxDummyTextSource::GetParaBounds( sal_uInt16 ) const
+Rectangle SvxDummyTextSource::GetParaBounds( sal_uInt32 ) const
 {
     return Rectangle();
 }
@@ -2640,37 +2640,37 @@ OutputDevice* SvxDummyTextSource::GetRefDevice() const
     return NULL;
 }
 
-sal_Bool SvxDummyTextSource::GetIndexAtPoint( const Point&, sal_uInt16&, sal_uInt16& ) const
+sal_Bool SvxDummyTextSource::GetIndexAtPoint( const Point&, sal_uInt32&, sal_uInt16& ) const
 {
     return sal_False;
 }
 
-sal_Bool SvxDummyTextSource::GetWordIndices( sal_uInt16, sal_uInt16, sal_uInt16&, sal_uInt16& ) const
+sal_Bool SvxDummyTextSource::GetWordIndices( sal_uInt32, sal_uInt16, sal_uInt16&, sal_uInt16& ) const
 {
     return sal_False;
 }
 
-sal_Bool SvxDummyTextSource::GetAttributeRun( sal_uInt16&, sal_uInt16&, sal_uInt16, sal_uInt16, sal_Bool ) const
+sal_Bool SvxDummyTextSource::GetAttributeRun( sal_uInt16&, sal_uInt16&, sal_uInt32, sal_uInt16, sal_Bool ) const
 {
     return sal_False;
 }
 
-sal_uInt16 SvxDummyTextSource::GetLineCount( sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetLineCount( sal_uInt32 ) const
 {
     return 0;
 }
 
-sal_uInt16 SvxDummyTextSource::GetLineLen( sal_uInt16, sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetLineLen( sal_uInt32, sal_uInt16 ) const
 {
     return 0;
 }
 
-void SvxDummyTextSource::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt16 /*nParagraph*/, sal_uInt16 /*nLine*/ ) const
+void SvxDummyTextSource::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 /*nParagraph*/, sal_uInt16 /*nLine*/ ) const
 {
     rStart = rEnd = 0;
 }
     
-sal_uInt16 SvxDummyTextSource::GetLineNumberAtIndex( sal_uInt16 /*nPara*/, sal_uInt16 /*nIndex*/ ) const
+sal_uInt16 SvxDummyTextSource::GetLineNumberAtIndex( sal_uInt32 /*nPara*/, sal_uInt16 /*nIndex*/ ) const
 {
     return 0;
 }    
@@ -2680,12 +2680,12 @@ sal_Bool SvxDummyTextSource::QuickFormatDoc( sal_Bool )
     return sal_False;
 }
 
-sal_Int16 SvxDummyTextSource::GetDepth( sal_uInt16 ) const
+sal_Int16 SvxDummyTextSource::GetDepth( sal_uInt32 ) const
 {
     return -1;
 }
 
-sal_Bool SvxDummyTextSource::SetDepth( sal_uInt16, sal_Int16 nNewDepth )
+sal_Bool SvxDummyTextSource::SetDepth( sal_uInt32, sal_Int16 nNewDepth )
 {
     return nNewDepth == 0 ? sal_True : sal_False;
 }
@@ -2709,7 +2709,7 @@ void SvxDummyTextSource::AppendParagraph()
 {
 }
 
-xub_StrLen SvxDummyTextSource::AppendTextPortion( sal_uInt16, const String &, const SfxItemSet & )
+xub_StrLen SvxDummyTextSource::AppendTextPortion( sal_uInt32, const String &, const SfxItemSet & )
 {
     return 0;
 }

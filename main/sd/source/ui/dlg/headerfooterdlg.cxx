@@ -767,8 +767,8 @@ void HeaderFooterTabPage::GetOrSetDateTimeLanguage( LanguageType &rLanguage, boo
 			EFieldInfo aFieldInfo;
 			aFieldInfo.pFieldItem = NULL;
 
-			sal_uInt16 nParaCount = pEdit->GetParagraphCount();
-			sal_uInt16 nPara;
+			sal_uInt32 nParaCount = pEdit->GetParagraphCount();
+			sal_uInt32 nPara;
 			for( nPara = 0; (nPara < nParaCount) && (aFieldInfo.pFieldItem == NULL); nPara++ )
 			{
 				sal_uInt16 nFieldCount = pEdit->GetFieldCount( nPara );

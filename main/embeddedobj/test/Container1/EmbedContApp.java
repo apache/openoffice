@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 package embeddedobj.test;
 
@@ -118,7 +120,7 @@ public class EmbedContApp extends Applet
 	private Menu m_aFileMenu;
 	private Menu m_aObjectMenu;
 	private Toolkit m_aToolkit;
-	
+
 	private Image m_aImage;
 	private Object m_oImageLock;
 
@@ -157,19 +159,19 @@ public class EmbedContApp extends Applet
 	private final byte CONVERT_LINK_TO_OBJECT	= 10;
 	private final byte ACTIVATE_INPLACE			= 11;
 	private final byte DEACTIVATE				= 12;
-	
+
 // Methods
 	public EmbedContApp( Frame aFrame, XMultiServiceFactory xServiceFactory )
-	{ 
+	{
 		m_aFrame = aFrame;
 		m_xServiceFactory = xServiceFactory;
 	}
-	
-	public void init() 
+
+	public void init()
 	{
 		resize( 800, 600 );
-		setBackground( Color.gray ); 
-		
+		setBackground( Color.gray );
+
 		m_aToolkit = Toolkit.getDefaultToolkit();
 
 		try {
@@ -227,10 +229,10 @@ public class EmbedContApp extends Applet
 
 		aItem = new SaveMenuItem();
 		m_aFileMenu.add( aItem );
-	
+
 		aItem = new SaveAsMenuItem();
 		m_aFileMenu.add( aItem );
-		
+
 		// Object menu
 		m_aObjectMenu = new Menu( "Object", true );
 		aMenuBar.add( m_aObjectMenu );
@@ -264,7 +266,7 @@ public class EmbedContApp extends Applet
 		m_aNativeView.resize( 800, 600 );
 		this.add( m_aNativeView );
 
-		// Handle mouse clicks in our window.  
+		// Handle mouse clicks in our window.
 //		addMouseListener( this );
 	}
 
@@ -335,13 +337,13 @@ public class EmbedContApp extends Applet
 	{
 		// for now nothing to do
 	}
-	
+
 	// XInplaceClient
 	public boolean canInplaceActivate()
 	{
 		return true;
 	}
-	
+
 	public void onInplaceActivate()
 	{
 		// TODO
@@ -352,13 +354,13 @@ public class EmbedContApp extends Applet
 		if ( m_aBitmapPainter != null )
 			m_aBitmapPainter.stopPainting();
 	}
-	
+
 	public void onUIActivate()
 	{
 		// TODO
 		// prepare for UI activate
 	}
-	
+
 	public void onInplaceDeactivate()
 	{
 		// TODO
@@ -369,7 +371,7 @@ public class EmbedContApp extends Applet
 		if ( m_aBitmapPainter != null )
 			m_aBitmapPainter.startPainting();
 	}
-	
+
 	public void onUIDeactivate()
 	{
 		// TODO
@@ -385,7 +387,7 @@ public class EmbedContApp extends Applet
 
 		return null;
 	}
-	
+
 	public XInplaceUIWindow getDocumentWindow()
 	{
 		// TODO
@@ -395,7 +397,7 @@ public class EmbedContApp extends Applet
 
 		return null;
 	}
-	
+
 	public com.sun.star.awt.Rectangle getPosRect()
 	{
 		// provide position rectangle to the object
@@ -435,14 +437,14 @@ public class EmbedContApp extends Applet
 
 		return new com.sun.star.awt.Rectangle( 10, 10, 110, 110 );
 	}
-	
+
 	public void translateAccelerators( com.sun.star.awt.KeyEvent[] aKeys )
 	{
 		// TODO
 		// an accelerator table for object
 		// ui activation related
 	}
-	
+
 	public void scrollObj( com.sun.star.awt.Size aOffset )
 	{
 		// TODO
@@ -460,7 +462,7 @@ public class EmbedContApp extends Applet
 				// such a position change make sense only when object is
 				// either inplace or ui active
 				if ( nState == EmbedStates.EMBED_INPLACE_ACTIVE
-			  	|| nState == EmbedStates.EMBED_UI_ACTIVE )
+				|| nState == EmbedStates.EMBED_UI_ACTIVE )
 			 	{
 					XInplaceObject xInplObj = (XInplaceObject)UnoRuntime.queryInterface( XInplaceObject.class, m_xEmbedObj );
 			 		if ( xInplObj != null )
@@ -482,7 +484,7 @@ public class EmbedContApp extends Applet
 		else
 		 	System.out.println( "Who asks to change visual area?!!" );
 	}
-	
+
 	// XJob
 	public Object execute( NamedValue[] pValues )
 	{
@@ -545,7 +547,7 @@ public class EmbedContApp extends Applet
 
 					// load from specified file
 					loadFileURI( aAction.m_sParam );
-		
+
 					if ( m_xEmbedObj != null )
 					{
 						try {
@@ -556,7 +558,7 @@ public class EmbedContApp extends Applet
 							System.out.println( "Exception in OpenFileMenuItem: " + ex );
 						}
 					}
-		
+
 					generateNewImage();
 					repaint();
 				}
@@ -565,7 +567,7 @@ public class EmbedContApp extends Applet
 					if ( m_xStorage != null && m_xEmbedObj != null )
 					{
 						// if has persistence store there
-						// if not it is and error, SaveAs had to be used 
+						// if not it is and error, SaveAs had to be used
 
 						if ( m_bOwnFile )
 						{
@@ -573,10 +575,10 @@ public class EmbedContApp extends Applet
 							{
 								try {
 									saveObject();
-			
+
 									if ( m_bLinkObj )
 										storeLinkToStorage();
-			
+
 									XTransactedObject xTransact = (XTransactedObject)UnoRuntime.queryInterface( XTransactedObject.class,
 																												m_xStorage );
 									if ( xTransact != null )
@@ -600,18 +602,18 @@ public class EmbedContApp extends Applet
 				}
 				else if ( aAction.m_nID == NEW_OBJECT )
 				{
-					// remove current object an init a new one
+					// remove current object and init a new one
 					clearObjectAndStorage();
-		
+
 					if ( aAction.m_sParam != null )
 					{
 						m_xStorage = createTempStorage();
-		
+
 						if ( m_xStorage != null )
 							m_xEmbedObj = createEmbedObject( aAction.m_sParam );
 						else
 							System.out.println( "Can't create temporary storage!" );
-		
+
 						if ( m_xEmbedObj != null )
 						{
 							try {
@@ -623,7 +625,7 @@ public class EmbedContApp extends Applet
 							}
 						}
 					}
-					
+
 					generateNewImage();
 					repaint();
 				}
@@ -634,10 +636,10 @@ public class EmbedContApp extends Applet
 
 					// create object from specified file
 					m_xStorage = createTempStorage();
-		
+
 					if ( m_xStorage != null )
 						m_xEmbedObj = loadEmbedObject( aAction.m_sParam );
-		
+
 					if ( m_xEmbedObj != null )
 					{
 						try {
@@ -658,10 +660,10 @@ public class EmbedContApp extends Applet
 					clearObjectAndStorage();
 
 					m_xStorage = createTempStorage();
-		
+
 					// create object from specified file
 					m_xEmbedObj = createLinkObject( aAction.m_sParam );
-		
+
 					if ( m_xEmbedObj != null )
 					{
 						m_aLinkURI = aAction.m_sParam;
@@ -675,7 +677,7 @@ public class EmbedContApp extends Applet
 							System.out.println( "Exception in LinkObjectMenuItem:" + ex );
 						}
 					}
-		
+
 					generateNewImage();
 					repaint();
 				}
@@ -686,7 +688,7 @@ public class EmbedContApp extends Applet
 						System.out.println( "The object is not a link!" );
 						continue;
 					}
-					
+
 					if ( m_xEmbedObj != null )
 					{
 						if ( m_xStorage != null )
@@ -696,7 +698,7 @@ public class EmbedContApp extends Applet
 																								m_xStorage );
 								if ( xNameAccess != null && xNameAccess.hasByName( "LinkName" ) )
 									m_xStorage.removeElement( "LinkName" );
-		
+
 								XLinkageSupport xLinkage = (XLinkageSupport)UnoRuntime.queryInterface( XLinkageSupport.class,
 																										m_xEmbedObj );
 								if ( xLinkage != null )
@@ -762,11 +764,11 @@ public class EmbedContApp extends Applet
 				}
 				else
 				{
-					System.out.println( "Unknoun action is requested: " + aAction.m_nID + "\n" );
+					System.out.println( "Unknown action is requested: " + aAction.m_nID + "\n" );
 				}
 			}
 		}
-			
+
 		m_aActionsList.clear();
 
 		synchronized( m_oInHandlerLock )
@@ -795,7 +797,7 @@ public class EmbedContApp extends Applet
 			}
 		}
 	}
-	
+
 	public void SaveAsOperation()
 	{
 		if ( m_xStorage != null && m_xEmbedObj != null )
@@ -839,12 +841,12 @@ public class EmbedContApp extends Applet
 
 		super.destroy();
 	}
-	
+
 	public void update( Graphics g )
 	{
 		paint( g );
 	}
-	
+
 	public void paint( Graphics g )
 	{
 		super.paint( g );
@@ -880,7 +882,7 @@ public class EmbedContApp extends Applet
 				 	aBitmapSize = m_xBitmap.getSize();
 
 				System.out.println( "The visual area is Width = " + aBitmapSize.Width + "; Height = " + aBitmapSize.Height );
-				
+
 				com.sun.star.awt.Rectangle aRect = new com.sun.star.awt.Rectangle(
 														10,
 														10,
@@ -904,7 +906,7 @@ public class EmbedContApp extends Applet
 					m_xEmbedObj.changeState( EmbedStates.EMBED_RUNNING );
 					nState = EmbedStates.EMBED_RUNNING;
 				}
-	
+
 				if ( nState == EmbedStates.EMBED_UI_ACTIVE || nState == EmbedStates.EMBED_INPLACE_ACTIVE
 				  || nState == EmbedStates.EMBED_ACTIVE || nState == EmbedStates.EMBED_RUNNING )
 				{
@@ -973,12 +975,12 @@ public class EmbedContApp extends Applet
 			actionRegister( ACTIVATE_OUTPLACE, null );
 		}
 	}
-	
+
 	public void mousePressed( MouseEvent e ){};
 	public void mouseEntered( MouseEvent e ){};
 	public void mouseExited( MouseEvent e ){};
 	public void mouseReleased( MouseEvent e ){};
-	
+
 	// classes
 	class NewMenuItem extends MenuItem implements ActionListener // Menu New
 	{
@@ -987,7 +989,7 @@ public class EmbedContApp extends Applet
 			super( "New", new MenuShortcut( KeyEvent.VK_A ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			actionRegister( NEW_DOCUMENT, null );
@@ -1001,7 +1003,7 @@ public class EmbedContApp extends Applet
 			super( "SaveAs..." );
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			// open SaveAs dialog and store
@@ -1017,7 +1019,7 @@ public class EmbedContApp extends Applet
 			super( "Open", new MenuShortcut( KeyEvent.VK_C ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			// open OpenFile dialog and load doc
@@ -1044,7 +1046,7 @@ public class EmbedContApp extends Applet
 			super( "Save", new MenuShortcut( KeyEvent.VK_D ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			// if has persistence store there
@@ -1062,7 +1064,7 @@ public class EmbedContApp extends Applet
 
 						return;
 					}
-		
+
 					actionRegister( SAVE, null );
 				}
 				else
@@ -1082,7 +1084,7 @@ public class EmbedContApp extends Applet
 			super( "Create", new MenuShortcut( KeyEvent.VK_N ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			Object[] possibleValues = { "com.sun.star.comp.Writer.TextDocument",
@@ -1093,11 +1095,11 @@ public class EmbedContApp extends Applet
 										"com.sun.star.comp.Draw.DrawingDocument",
 										"com.sun.star.comp.Math.FormulaDocument",
 										"BitmapImage" };
-					
+
 			String selectedValue = (String)JOptionPane.showInputDialog( null, "DocumentType", "Select",
-       																	JOptionPane.INFORMATION_MESSAGE, null,
-       																	possibleValues, possibleValues[0] );
-	
+																		JOptionPane.INFORMATION_MESSAGE, null,
+																		possibleValues, possibleValues[0] );
+
 			actionRegister( NEW_OBJECT, selectedValue );
 		}
 	}
@@ -1109,7 +1111,7 @@ public class EmbedContApp extends Applet
 			super( "Load from file", new MenuShortcut( KeyEvent.VK_L ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			// open OpenFile dialog and load doc
@@ -1136,7 +1138,7 @@ public class EmbedContApp extends Applet
 			super( "Create link", new MenuShortcut( KeyEvent.VK_M ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			// open OpenFile dialog and load doc
@@ -1163,7 +1165,7 @@ public class EmbedContApp extends Applet
 			super( "Convert link to embed", new MenuShortcut( KeyEvent.VK_M ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			actionRegister( CONVERT_LINK_TO_OBJECT, null );
@@ -1177,7 +1179,7 @@ public class EmbedContApp extends Applet
 			super( "Activate outplace", new MenuShortcut( KeyEvent.VK_A ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			actionRegister( ACTIVATE_OUTPLACE, null );
@@ -1191,7 +1193,7 @@ public class EmbedContApp extends Applet
 			super( "Activate inplace", new MenuShortcut( KeyEvent.VK_I ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			actionRegister( ACTIVATE_INPLACE, null );
@@ -1205,7 +1207,7 @@ public class EmbedContApp extends Applet
 			super( "Deactivate", new MenuShortcut( KeyEvent.VK_D ));
 			addActionListener( this );
 		}
-		
+
 		public void actionPerformed( ActionEvent e )
 		{
 			actionRegister( DEACTIVATE, null );
@@ -1230,42 +1232,42 @@ public class EmbedContApp extends Applet
 			int[] pTempClassID = { 0xB2, 0x1A, 0x0A, 0x7C, 0xE4, 0x03, 0x41, 0xFE,
 									0x95, 0x62, 0xBD, 0x13, 0xEA, 0x6F, 0x15, 0xA0 };
 			for ( int ind = 0; ind < 16; ind++ )
-				pClassID[ind] = (byte)pTempClassID[ind];		
+				pClassID[ind] = (byte)pTempClassID[ind];
 		}
 		else if ( aServiceName.equals( "com.sun.star.comp.Writer.WebDocument" ) )
 		{
 			int[] pTempClassID = { 0xA8, 0xBB, 0xA6, 0x0C, 0x7C, 0x60, 0x45, 0x50,
 									0x91, 0xCE, 0x39, 0xC3, 0x90, 0x3F, 0xAC, 0x5E };
 			for ( int ind = 0; ind < 16; ind++ )
-				pClassID[ind] = (byte)pTempClassID[ind];		
+				pClassID[ind] = (byte)pTempClassID[ind];
 		}
 		else if ( aServiceName.equals( "com.sun.star.comp.Calc.SpreadsheetDocument" ) )
 		{
 			int[] pTempClassID = { 0x47, 0xBB, 0xB4, 0xCB, 0xCE, 0x4C, 0x4E, 0x80,
 									0xA5, 0x91, 0x42, 0xD9, 0xAE, 0x74, 0x95, 0x0F };
 			for ( int ind = 0; ind < 16; ind++ )
-				pClassID[ind] = (byte)pTempClassID[ind];		
+				pClassID[ind] = (byte)pTempClassID[ind];
 		}
 		else if ( aServiceName.equals( "com.sun.star.comp.Draw.PresentationDocument" ) )
 		{
 			int[] pTempClassID = { 0x91, 0x76, 0xE4, 0x8A, 0x63, 0x7A, 0x4D, 0x1F,
 									0x80, 0x3B, 0x99, 0xD9, 0xBF, 0xAC, 0x10, 0x47 };
 			for ( int ind = 0; ind < 16; ind++ )
-				pClassID[ind] = (byte)pTempClassID[ind];		
+				pClassID[ind] = (byte)pTempClassID[ind];
 		}
 		else if ( aServiceName.equals( "com.sun.star.comp.Draw.DrawingDocument" ) )
 		{
 			int[] pTempClassID = { 0x4B, 0xAB, 0x89, 0x70, 0x8A, 0x3B, 0x45, 0xB3,
 									0x99, 0x1C, 0xCB, 0xEE, 0xAC, 0x6B, 0xD5, 0xE3 };
 			for ( int ind = 0; ind < 16; ind++ )
-				pClassID[ind] = (byte)pTempClassID[ind];		
+				pClassID[ind] = (byte)pTempClassID[ind];
 		}
 		else if ( aServiceName.equals( "com.sun.star.comp.Math.FormulaDocument" ) )
 		{
 			int[] pTempClassID = { 0x07, 0x8B, 0x7A, 0xBA, 0x54, 0xFC, 0x45, 0x7F,
 									0x85, 0x51, 0x61, 0x47, 0xE7, 0x76, 0xA9, 0x97 };
 			for ( int ind = 0; ind < 16; ind++ )
-				pClassID[ind] = (byte)pTempClassID[ind];		
+				pClassID[ind] = (byte)pTempClassID[ind];
 		}
 		else if ( aServiceName.equals( "BitmapImage" ) )
 		{
@@ -1445,7 +1447,7 @@ public class EmbedContApp extends Applet
 		{
 			JOptionPane.showMessageDialog( m_aFrame, e, "Exception in createTempStorage():", JOptionPane.ERROR_MESSAGE );
 		}
-		
+
 		return xTempStorage;
 	}
 
@@ -1500,7 +1502,7 @@ public class EmbedContApp extends Applet
 		{
 			JOptionPane.showMessageDialog( m_aFrame, e, "Exception in saveStorageToFileURI():", JOptionPane.ERROR_MESSAGE );
 		}
-	
+
 	}
 
 	public void loadFileURI( String aFileURI )
@@ -1535,7 +1537,7 @@ public class EmbedContApp extends Applet
 			if ( xNameAccess.hasByName( "LinkName" ) && xTargetStorage.isStreamElement( "LinkName" ) )
 			{
 			/*
-				// OOo links will not be tested until they have correct persistence
+				// AOO links will not be tested until they have correct persistence
 				XStream xLinkStream = xTargetStorage.openStreamElement( "LinkName", ElementModes.ELEMENT_READ );
 				if ( xLinkStream != null )
 				{
@@ -1592,15 +1594,15 @@ public class EmbedContApp extends Applet
 					if ( xLinkOutStream != null && xTruncate != null )
 					{
 						xTruncate.truncate();
-	
+
 						char[] aLinkChar = m_aLinkURI.toCharArray();
 						byte[] aLinkBytes = new byte[ aLinkChar.length ];
 						for ( int ind = 0; ind < aLinkChar.length; ind++ )
 							aLinkBytes[ind] = (byte)aLinkChar[ind];
-	
+
 						xLinkOutStream.writeBytes( aLinkBytes );
 						xLinkOutStream.closeOutput();
-	
+
 						XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class,
 																						xLinkStream );
 						if ( xComponent != null )
@@ -1625,7 +1627,7 @@ public class EmbedContApp extends Applet
 											e,
 											"Exception in storeLinkToStorage:",
 											JOptionPane.ERROR_MESSAGE );
-		
+
 			}
 		}
 	}
@@ -1697,7 +1699,7 @@ public class EmbedContApp extends Applet
 		// it is not really required for testing application
 
 		clearObjectAndStorage();
-		
+
 		if ( m_aBitmapPainter != null )
 		{
 			m_aBitmapPainter.disconnectListener();
@@ -1705,4 +1707,3 @@ public class EmbedContApp extends Applet
 		}
 	}
 }
-

@@ -215,7 +215,7 @@ namespace sdr
 
 					sal_uInt32 nParaCount(pOutliner->GetParagraphCount());
 
-					for(sal_uInt16 nPara = 0; nPara < nParaCount; nPara++)
+					for(sal_uInt32 nPara = 0; nPara < nParaCount; nPara++)
 					{
 						SfxItemSet aSet(pOutliner->GetParaAttribs(nPara));
 						aSet.Put(rSet);
@@ -1596,7 +1596,7 @@ void SAL_CALL Cell::setAllPropertiesToDefault(  ) throw (RuntimeException)
 			ESelection aSelection( 0, 0, EE_PARA_ALL, EE_PARA_ALL);
 			rOutliner.RemoveAttribs(aSelection, sal_True, 0);
 
-			OutlinerParaObject* pTemp = rOutliner.CreateParaObject(0, (sal_uInt16)nParaCount);
+			OutlinerParaObject* pTemp = rOutliner.CreateParaObject(0, nParaCount);
 			rOutliner.Clear();
 
 			SetOutlinerParaObject(pTemp);

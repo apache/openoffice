@@ -308,7 +308,7 @@ void SwAnnotationShell::Exec( SfxRequest &rReq )
             {
                 sal_uLong nParaCount = pOutliner->GetParagraphCount();
                 if (nParaCount > 0)
-                    pOLV->SelectRange(0L, sal_uInt16(nParaCount) );
+                    pOLV->SelectRange(0L, nParaCount );
             }
 			break;
 		}

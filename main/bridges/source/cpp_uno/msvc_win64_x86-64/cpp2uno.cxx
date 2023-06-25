@@ -48,7 +48,7 @@ namespace
 
 // Perform the UNO call
 //
-// We must convert the paramaters stored in pCallStack to UNO
+// We must convert the parameters stored in pCallStack to UNO
 // arguments and call pThis->getUnoI()->pDispatcher.
 //
 // pCallStack:  ret addr, this, [ret *], [params]

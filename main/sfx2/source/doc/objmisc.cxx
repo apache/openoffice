@@ -1697,13 +1697,15 @@ namespace
 }
 
 ErrCode SfxObjectShell::CallXScript( const Reference< XInterface >& _rxScriptContext, const ::rtl::OUString& _rScriptURL,
-    const Sequence< Any >& aParams, Any& aRet, Sequence< sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam, bool bRaiseError )
+    const Sequence< Any >& aParams, Any& aRet, Sequence< sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam,
+    const ::rtl::OUString& aReferer, bool bRaiseError )
 {
     OSL_TRACE( "in CallXScript" );
 	ErrCode nErr = ERRCODE_NONE;
 
 	bool bCaughtException = false;
     Any aException;
+    bool bRefererIsTrusted = ( aReferer.compareToAscii("private:", 8) == 0 );
     try
     {
         uno::Reference< lang::XMultiServiceFactory > xServiceManager( ::comphelper::getProcessServiceFactory(), uno::UNO_SET_THROW );
@@ -1711,7 +1713,7 @@ ErrCode SfxObjectShell::CallXScript( const Reference< XInterface >& _rxScriptCon
             xServiceManager->createInstance( rtl::OUString::createFromAscii(
                 "com.sun.star.uri.UriReferenceFactory") ) , UNO_QUERY_THROW );
         Reference< uri::XVndSunStarScriptUrlReference > xScriptUri( xFac->parse( _rScriptURL ), UNO_QUERY_THROW );
-        if ( !lcl_isScriptAccessAllowed_nothrow( _rxScriptContext ) )
+        if ( !bRefererIsTrusted && !lcl_isScriptAccessAllowed_nothrow( _rxScriptContext ) )
             return ERRCODE_IO_ACCESSDENIED;
 
         // obtain/create a script provider
@@ -1765,10 +1767,11 @@ ErrCode SfxObjectShell::CallXScript( const String& rScriptURL,
             aParams,
         ::com::sun::star::uno::Any& aRet,
         ::com::sun::star::uno::Sequence< sal_Int16 >& aOutParamIndex,
-        ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aOutParam
-        , bool bRaiseError )
+        ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aOutParam,
+        const ::rtl::OUString& aReferer,
+        bool bRaiseError )
 {
-    return CallXScript( GetModel(), rScriptURL, aParams, aRet, aOutParamIndex, aOutParam, bRaiseError );
+    return CallXScript( GetModel(), rScriptURL, aParams, aRet, aOutParamIndex, aOutParam, aReferer, bRaiseError );
 }
 
 //-------------------------------------------------------------------------

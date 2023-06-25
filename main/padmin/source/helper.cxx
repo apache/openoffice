@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,33 +61,33 @@ ResId padmin::PaResId( sal_uInt32 nId )
 	static ResMgr* pPaResMgr = NULL;
 	if( ! pPaResMgr )
 	{
-        ::com::sun::star::lang::Locale aLocale;
+		::com::sun::star::lang::Locale aLocale;
 //		LanguageType nLang = LANGUAGE_SYSTEM;
-       
-        utl::OConfigurationNode aNode =
-            utl::OConfigurationTreeRoot::tryCreateWithServiceFactory(
-                    vcl::unohelper::GetMultiServiceFactory(),
-                    OUString::createFromAscii( "org.openoffice.Setup/L10N" ) );
-        if ( aNode.isValid() )
-        {
-            rtl::OUString aLoc;
-            Any aValue = aNode.getNodeValue( OUString::createFromAscii( "ooLocale" ) );
-            if( aValue >>= aLoc )
-            {
-//                LanguageType nTmpLang = MsLangId::convertIsoStringToLanguage( aLoc );
-//                if( nTmpLang != LANGUAGE_DONTKNOW )
-//                    nLang = nTmpLang;
-                sal_Int32 nIndex = 0;
-                aLocale.Language = aLoc.getToken( 0, '-', nIndex );
-                aLocale.Country = aLoc.getToken( 0, '-', nIndex );
-                aLocale.Variant = aLoc.getToken( 0, '-', nIndex );
-            }
-        }
+
+		utl::OConfigurationNode aNode =
+			utl::OConfigurationTreeRoot::tryCreateWithServiceFactory(
+					vcl::unohelper::GetMultiServiceFactory(),
+					OUString::createFromAscii( "org.openoffice.Setup/L10N" ) );
+		if ( aNode.isValid() )
+		{
+			rtl::OUString aLoc;
+			Any aValue = aNode.getNodeValue( OUString::createFromAscii( "ooLocale" ) );
+			if( aValue >>= aLoc )
+			{
+//			LanguageType nTmpLang = MsLangId::convertIsoStringToLanguage( aLoc );
+//			if( nTmpLang != LANGUAGE_DONTKNOW )
+//				nLang = nTmpLang;
+				sal_Int32 nIndex = 0;
+				aLocale.Language = aLoc.getToken( 0, '-', nIndex );
+				aLocale.Country = aLoc.getToken( 0, '-', nIndex );
+				aLocale.Variant = aLoc.getToken( 0, '-', nIndex );
+			}
+		}
 		pPaResMgr = ResMgr::SearchCreateResMgr( "spa", aLocale );
 		AllSettings aSettings = Application::GetSettings();
-//        aSettings.SetUILanguage( nLang );
-        aSettings.SetUILocale( aLocale );
-        Application::SetSettings( aSettings );
+//		aSettings.SetUILanguage( nLang );
+		aSettings.SetUILocale( aLocale );
+		Application::SetSettings( aSettings );
 	}
 	return ResId( nId, *pPaResMgr );
 }
@@ -98,13 +98,13 @@ ResId padmin::PaResId( sal_uInt32 nId )
 
 void padmin::FindFiles( const String& rDirectory, ::std::list< String >& rResult, const String& rSuffixes, bool bRecursive )
 {
-    rResult.clear();
+	rResult.clear();
 
 	OUString aDirPath;
 	::osl::FileBase::getFileURLFromSystemPath( rDirectory, aDirPath );
 	Directory aDir( aDirPath );
 	if( aDir.open() != FileBase::E_None )
-        return;
+		return;
 	DirectoryItem aItem;
 	while( aDir.getNextItem( aItem ) == FileBase::E_None )
 	{
@@ -112,43 +112,43 @@ void padmin::FindFiles( const String& rDirectory, ::std::list< String >& rResult
 							FileStatusMask_Type
 							);
 		if( aItem.getFileStatus( aStatus ) == FileBase::E_None )
-        {
-            if( aStatus.getFileType() == FileStatus::Regular ||
-			    aStatus.getFileType() == FileStatus::Link )
-            {
-                String aFileName = aStatus.getFileName();
-                int nToken = rSuffixes.GetTokenCount( ';' );
-                while( nToken-- )
-                {
-                    String aSuffix = rSuffixes.GetToken( nToken, ';' );
-                    if( aFileName.Len() > aSuffix.Len()+1 )
-                    {
-                        String aExtension = aFileName.Copy( aFileName.Len()-aSuffix.Len() );
-                        if( aFileName.GetChar( aFileName.Len()-aSuffix.Len()-1 ) == '.' &&
-                            aExtension.EqualsIgnoreCaseAscii( aSuffix ) )
-                        {
-                            rResult.push_back( aFileName );
-                            break;
-                        }
-                    }
-                }
-            }
-            else if( bRecursive && aStatus.getFileType() == FileStatus::Directory )
-            {
-                OUStringBuffer aSubDir( rDirectory );
-                aSubDir.appendAscii( "/", 1 );
-                aSubDir.append( aStatus.getFileName() );
-                std::list< String > subfiles;
-                FindFiles( aSubDir.makeStringAndClear(), subfiles, rSuffixes, bRecursive );
-                for( std::list< String >::const_iterator it = subfiles.begin(); it != subfiles.end(); ++it )
-                {
-                    OUStringBuffer aSubFile( aStatus.getFileName() );
-                    aSubFile.appendAscii( "/", 1 );
-                    aSubFile.append( *it );
-                    rResult.push_back( aSubFile.makeStringAndClear() );
-                }   
-            }
-        }
+		{
+			if( aStatus.getFileType() == FileStatus::Regular ||
+				aStatus.getFileType() == FileStatus::Link )
+			{
+				String aFileName = aStatus.getFileName();
+				int nToken = rSuffixes.GetTokenCount( ';' );
+				while( nToken-- )
+				{
+					String aSuffix = rSuffixes.GetToken( nToken, ';' );
+					if( aFileName.Len() > aSuffix.Len()+1 )
+					{
+						String aExtension = aFileName.Copy( aFileName.Len()-aSuffix.Len() );
+						if( aFileName.GetChar( aFileName.Len()-aSuffix.Len()-1 ) == '.' &&
+							aExtension.EqualsIgnoreCaseAscii( aSuffix ) )
+						{
+							rResult.push_back( aFileName );
+							break;
+						}
+					}
+				}
+			}
+			else if( bRecursive && aStatus.getFileType() == FileStatus::Directory )
+			{
+				OUStringBuffer aSubDir( rDirectory );
+				aSubDir.appendAscii( "/", 1 );
+				aSubDir.append( aStatus.getFileName() );
+				std::list< String > subfiles;
+				FindFiles( aSubDir.makeStringAndClear(), subfiles, rSuffixes, bRecursive );
+				for( std::list< String >::const_iterator it = subfiles.begin(); it != subfiles.end(); ++it )
+				{
+					OUStringBuffer aSubFile( aStatus.getFileName() );
+					aSubFile.appendAscii( "/", 1 );
+					aSubFile.append( *it );
+					rResult.push_back( aSubFile.makeStringAndClear() );
+				}
+			}
+		}
 	}
 	aDir.close();
 }
@@ -167,8 +167,8 @@ long DelMultiListBox::Notify( NotifyEvent& rEvent )
 		m_aDelPressedLink.Call( this );
 		nRet = 1;
 	}
-    else
-        nRet = MultiListBox::Notify( rEvent );
+	else
+		nRet = MultiListBox::Notify( rEvent );
 
 	return nRet;
 }
@@ -187,8 +187,8 @@ long DelListBox::Notify( NotifyEvent& rEvent )
 		m_aDelPressedLink.Call( this );
 		nRet = 1;
 	}
-    else
-        nRet = ListBox::Notify( rEvent );
+	else
+		nRet = ListBox::Notify( rEvent );
 
 	return nRet;
 }
@@ -203,27 +203,27 @@ QueryString::QueryString( Window* pParent, String& rQuery, String& rRet, const :
 		m_aCancelButton( this, PaResId( RID_STRQRY_BTN_CANCEL ) ),
 		m_aFixedText( this, PaResId( RID_STRQRY_TXT_RENAME ) ),
 		m_aEdit( this, PaResId( RID_STRQRY_EDT_NEWNAME ) ),
-        m_aComboBox( this, PaResId( RID_STRQRY_BOX_NEWNAME ) ),
+		m_aComboBox( this, PaResId( RID_STRQRY_BOX_NEWNAME ) ),
 		m_rReturnValue( rRet )
 {
 	FreeResource();
 	m_aOKButton.SetClickHdl( LINK( this, QueryString, ClickBtnHdl ) );
 	m_aFixedText.SetText( rQuery );
-    if( rChoices.begin() != rChoices.end() )
-    {
-        m_aComboBox.SetText( m_rReturnValue );
-        m_aComboBox.InsertEntry( m_rReturnValue );
-        for( ::std::list<String>::const_iterator it = rChoices.begin(); it != rChoices.end(); ++it )
-            m_aComboBox.InsertEntry( *it );
-        m_aEdit.Show( sal_False );
-        m_bUseEdit = false;
-    }
-    else
-    {
-        m_aEdit.SetText( m_rReturnValue );
-        m_aComboBox.Show( sal_False );
-        m_bUseEdit = true;
-    }
+	if( rChoices.begin() != rChoices.end() )
+	{
+		m_aComboBox.SetText( m_rReturnValue );
+		m_aComboBox.InsertEntry( m_rReturnValue );
+		for( ::std::list<String>::const_iterator it = rChoices.begin(); it != rChoices.end(); ++it )
+			m_aComboBox.InsertEntry( *it );
+		m_aEdit.Show( sal_False );
+		m_bUseEdit = false;
+	}
+	else
+	{
+		m_aEdit.SetText( m_rReturnValue );
+		m_aComboBox.Show( sal_False );
+		m_bUseEdit = true;
+	}
 	SetText( Application::GetDisplayName() );
 }
 
@@ -282,42 +282,44 @@ void padmin::freePadminRC()
 
 bool padmin::chooseDirectory( String& rInOutPath )
 {
-    bool bRet = false;
-    Reference< XMultiServiceFactory > xFactory( ::comphelper::getProcessServiceFactory() );
-    if( xFactory.is() )
-    {
-        Reference< XFolderPicker > xFolderPicker( xFactory->createInstance( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.ui.dialogs.FolderPicker" ) ) ), UNO_QUERY );
-        if( xFolderPicker.is() )
-        {
-            Reference< XControlAccess > xCA( xFolderPicker, UNO_QUERY );
-            if( xCA.is() )
-            {
-                try
-                {
-                    Any aState;
-                    aState <<= sal_False;
-                    xCA->setControlProperty( OUString( RTL_CONSTASCII_USTRINGPARAM( "HelpButton" ) ),
-                                             OUString( RTL_CONSTASCII_USTRINGPARAM( "Visible" ) ),
-                                             aState );
+	bool bRet = false;
+	Reference< XMultiServiceFactory > xFactory( ::comphelper::getProcessServiceFactory() );
+	if( xFactory.is() )
+	{
+		Reference< XFolderPicker > xFolderPicker( xFactory->createInstance( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.ui.dialogs.FolderPicker" ) ) ), UNO_QUERY );
+		if( xFolderPicker.is() )
+		{
+			Reference< XControlAccess > xCA( xFolderPicker, UNO_QUERY );
+			if( xCA.is() )
+			{
+				try
+				{
+					Any aState;
+					aState <<= sal_False;
+					xCA->setControlProperty( OUString( RTL_CONSTASCII_USTRINGPARAM( "HelpButton" ) ),
+											 OUString( RTL_CONSTASCII_USTRINGPARAM( "Visible" ) ),
+											 aState );
 
-                }
-                catch( ... )
-                {
-                }
-            }
-            INetURLObject aObj( rInOutPath, INET_PROT_FILE, INetURLObject::ENCODE_ALL );
-            xFolderPicker->setDisplayDirectory( aObj.GetMainURL(INetURLObject::DECODE_TO_IURI) );
-            if( xFolderPicker->execute() == ExecutableDialogResults::OK )
-            {
-                aObj = INetURLObject( xFolderPicker->getDirectory() );
-                rInOutPath = aObj.PathToFileName();
-                bRet = true;
-            }
-        }
+				}
+				catch( ... )
+				{
+				}
+			}
+			INetURLObject aObj( rInOutPath, INET_PROT_FILE, INetURLObject::ENCODE_ALL );
+			xFolderPicker->setDisplayDirectory( aObj.GetMainURL(INetURLObject::DECODE_TO_IURI) );
+			if( xFolderPicker->execute() == ExecutableDialogResults::OK )
+			{
+				aObj = INetURLObject( xFolderPicker->getDirectory() );
+				rInOutPath = aObj.PathToFileName();
+				bRet = true;
+			}
+		}
 #if OSL_DEBUG_LEVEL > 1
-        else
-            fprintf( stderr, "could not get FolderPicker service\n" );
+		else
+			fprintf( stderr, "could not get FolderPicker service\n" );
 #endif
-    }
-    return bRet;
+	}
+	return bRet;
 }
+
+/* vim: set noet sw=4 ts=4: */

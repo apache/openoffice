@@ -70,7 +70,7 @@
 /** Error message: "Read error. Unsupported encryption method." */
 #define ERRCODE_SVX_READ_FILTER_CRYPT       (16UL | ERRCODE_AREA_SVX | ERRCODE_CLASS_READ)
 
-/** Error message: "Read error. Passwort encrypted Powerpoint documents..." */
+/** Error message: "Read error. Password encrypted PowerPoint documents..." */
 #define ERRCODE_SVX_READ_FILTER_PPOINT      (17UL | ERRCODE_AREA_SVX | ERRCODE_CLASS_READ)
 
 /** Error message: "Warning. Passwort protection is not suppported when ..." */

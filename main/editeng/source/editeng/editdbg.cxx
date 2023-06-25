@@ -333,7 +333,7 @@ void EditDbg::ShowEditEngineData( EditEngine* pEE, sal_Bool bInfoBox )
 	fprintf( fp, "================================================================================" );
 	fprintf( fp, "\n==================   Dokument   ================================================" );
 	fprintf( fp, "\n================================================================================" );
-	for ( sal_uInt16 nPortion = 0; nPortion < pEE->pImpEditEngine->GetParaPortions(). Count(); nPortion++)
+	for ( sal_uInt32 nPortion = 0; nPortion < pEE->pImpEditEngine->GetParaPortions(). Count(); nPortion++)
 	{
 
 		ParaPortion* pPPortion = pEE->pImpEditEngine->GetParaPortions().GetObject(nPortion );

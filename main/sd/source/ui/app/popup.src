@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@
     {\
         Identifier = SID_CONVERT_TO_CONTOUR ; \
         HelpId = CMD_SID_CONVERT_TO_CONTOUR ; \
-		Text [ en-US ] = "To C~ontour";\
+		Text [ en-US ] = "To C~ontour" ; \
 	};
 
 #define MN_CONVERT_TO_3D \
@@ -196,8 +196,8 @@
                 MN_UNGROUP_IMPRESS\
                 MN_ENTER_GROUP_IMPRESS\
                 MN_LEAVE_GROUP_IMPRESS\
-            };\
-        };\
+            }; \
+        }; \
 	};
 
 #define MN_DISTRIBUTE \
@@ -313,7 +313,7 @@
     {\
         Identifier = SID_SELECT_BACKGROUND ; \
         HelpId = CMD_SID_SELECT_BACKGROUND ; \
-        Text [ en-US ] = "Set Background Picture for Slide ..." ; \
+        Text [ en-US ] = "Set Background Picture for Slide..." ; \
     };
 #define MN_DISPLAY_MASTER_BACKGROUND \
     MenuItem\
@@ -346,8 +346,8 @@
                 SEPARATOR\
                 MN_INSERT_PAGE\
                 MN_DELETE_PAGE\
-            };\
-        };\
+            }; \
+        }; \
         Text [ en-US ] = "Pag~e" ; \
 	};
 
@@ -371,8 +371,8 @@
                 SEPARATOR\
                 MN_INSERT_SLIDE\
                 MN_DELETE_SLIDE\
-            };\
-        };\
+            }; \
+        }; \
         Text [ en-US ] = "Slid~e" ; \
 	};
 
@@ -506,7 +506,7 @@
     {\
         Identifier = SID_POSITION ; \
         HelpId = CMD_SID_POSITION ; \
-        Command = ".uno:ObjectPosition"; \
+        Command = ".uno:ObjectPosition" ; \
         Text [ en-US ] = "Arra~nge" ; \
         SubMenu = Menu\
         {\
@@ -517,53 +517,53 @@
                     Identifier = SID_FRAME_TO_TOP ; \
                     HelpId = CMD_SID_FRAME_TO_TOP ; \
                     Text [ en-US ] = "~Bring to Front" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_MOREFRONT ; \
                     HelpId = CMD_SID_MOREFRONT ; \
                     Text [ en-US ] = "Bring ~Forward" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_MOREBACK ; \
                     HelpId = CMD_SID_MOREBACK ; \
                     Text [ en-US ] = "Send Back~ward" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_FRAME_TO_BOTTOM ; \
                     HelpId = CMD_SID_FRAME_TO_BOTTOM ; \
                     Text [ en-US ] = "~Send to Back" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Separator = TRUE ; \
-                };\
+                }; \
                 MenuItem\
                 {\
                     Identifier = SID_BEFORE_OBJ ; \
                     HelpId = CMD_SID_BEFORE_OBJ ; \
                     Text [ en-US ] = "In Front of ~Object" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_BEHIND_OBJ ; \
                     HelpId = CMD_SID_BEHIND_OBJ ; \
                     Text [ en-US ] = "Be~hind Object" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Separator = TRUE ; \
-                };\
+                }; \
                 MenuItem\
                 {\
                     Identifier = SID_REVERSE_ORDER ; \
                     HelpId = CMD_SID_REVERSE_ORDER ; \
                     Text [ en-US ] = "~Reverse" ; \
-				};\
-            };\
-        };\
+				}; \
+            }; \
+        }; \
 	};
 
  // Text-Elemente
@@ -578,9 +578,9 @@
 #define MN_CHAR_PARAGRAPH \
     MN_CHAR \
     MenuItem {\
-        Identifier = SID_PARA_DLG;\
-        HelpId = CMD_SID_PARA_DLG;\
-        Text [ en-US ] = "P~aragraph...";\
+        Identifier = SID_PARA_DLG; \
+        HelpId = CMD_SID_PARA_DLG; \
+        Text [ en-US ] = "P~aragraph..." ; \
 	};
 
 #define MN_TEXT_ATTR\
@@ -589,13 +589,13 @@
         Identifier = SID_ATTR_CHAR_FONT ; \
         HelpId = CMD_SID_ATTR_CHAR_FONT ; \
         Text [ en-US ] = "~Font" ; \
-	};\
+	}; \
     MenuItem\
     {\
         Identifier = SID_ATTR_CHAR_FONTHEIGHT ; \
         HelpId = CMD_SID_ATTR_CHAR_FONTHEIGHT ; \
         Text [ en-US ] = "~Size" ; \
-	};\
+	}; \
     MenuItem\
     {\
         Identifier = DUMMY ; \
@@ -610,45 +610,45 @@
                     Identifier = SID_ATTR_CHAR_WEIGHT ; \
                     HelpId = CMD_SID_ATTR_CHAR_WEIGHT ; \
                     Text [ en-US ] = "Bold" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_CHAR_POSTURE ; \
                     HelpId = CMD_SID_ATTR_CHAR_POSTURE ; \
                     Text [ en-US ] = "Italic" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_CHAR_OVERLINE ; \
                     HelpId = CMD_SID_ATTR_CHAR_OVERLINE ; \
                     Text [ en-US ] = "Overline" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_CHAR_UNDERLINE ; \
                     HelpId = CMD_SID_ATTR_CHAR_UNDERLINE ; \
                     Text [ en-US ] = "Underline" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_CHAR_STRIKEOUT ; \
                     HelpId = CMD_SID_ATTR_CHAR_STRIKEOUT ; \
                     Text [ en-US ] = "Strikethrough" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_CHAR_SHADOWED ; \
                     HelpId = CMD_SID_ATTR_CHAR_SHADOWED ; \
                     Text [ en-US ] = "Shadow" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_CHAR_CONTOUR ; \
                     HelpId = CMD_SID_ATTR_CHAR_CONTOUR ; \
                     Text [ en-US ] = "~Contour" ; \
-				};\
-            };\
-        };\
+				}; \
+            }; \
+        }; \
 	};
 
 #define MN_LINESPACING_ATTR\
@@ -667,23 +667,23 @@
                     HelpId = CMD_SID_ATTR_PARA_LINESPACE_10 ; \
                     RadioCheck = TRUE ; \
                     Text [ en-US ] = "Single Line Spacing" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_PARA_LINESPACE_15 ; \
                     HelpId = CMD_SID_ATTR_PARA_LINESPACE_15 ; \
                     RadioCheck = TRUE ; \
                     Text [ en-US ] = "1.5 Lines" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_PARA_LINESPACE_20 ; \
                     HelpId = CMD_SID_ATTR_PARA_LINESPACE_20 ; \
                     RadioCheck = TRUE ; \
                     Text [ en-US ] = "~Double" ; \
-				};\
-            };\
-        };\
+				}; \
+            }; \
+        }; \
 	};
 
 #define MN_BULLET \
@@ -711,30 +711,30 @@
                     HelpId = CMD_SID_ATTR_PARA_ADJUST_LEFT ; \
                     RadioCheck = TRUE ; \
                     Text [ en-US ] = "~Left" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_PARA_ADJUST_RIGHT ; \
                     HelpId = CMD_SID_ATTR_PARA_ADJUST_RIGHT ; \
                     RadioCheck = TRUE ; \
                     Text [ en-US ] = "~Right" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_PARA_ADJUST_CENTER ; \
                     HelpId = CMD_SID_ATTR_PARA_ADJUST_CENTER ; \
                     RadioCheck = TRUE ; \
                     Text [ en-US ] = "~Centered" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_ATTR_PARA_ADJUST_BLOCK ; \
                     HelpId = CMD_SID_ATTR_PARA_ADJUST_BLOCK ; \
                     RadioCheck = TRUE ; \
                     Text [ en-US ] = "Justified" ; \
-				};\
-            };\
-        };\
+				}; \
+            }; \
+        }; \
 	};
 
  // Objekt-Ausrichtung
@@ -754,40 +754,40 @@
                     Identifier = SID_OBJECT_ALIGN_LEFT ; \
                     HelpId = CMD_SID_OBJECT_ALIGN_LEFT ; \
                     Text [ en-US ] = "~Left" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_OBJECT_ALIGN_CENTER ; \
                     HelpId = CMD_SID_OBJECT_ALIGN_CENTER ; \
                     Text [ en-US ] = "~Centered" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_OBJECT_ALIGN_RIGHT ; \
                     HelpId = CMD_SID_OBJECT_ALIGN_RIGHT ; \
                     Text [ en-US ] = "~Right" ; \
-				};\
+				}; \
                 SEPARATOR\
                 MenuItem\
                 {\
                     Identifier = SID_OBJECT_ALIGN_UP ; \
                     HelpId = CMD_SID_OBJECT_ALIGN_UP ; \
                     Text [ en-US ] = "~Top" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_OBJECT_ALIGN_MIDDLE ; \
                     HelpId = CMD_SID_OBJECT_ALIGN_MIDDLE ; \
                     Text [ en-US ] = "C~enter" ; \
-				};\
+				}; \
                 MenuItem\
                 {\
                     Identifier = SID_OBJECT_ALIGN_DOWN ; \
                     HelpId = CMD_SID_OBJECT_ALIGN_DOWN ; \
                     Text [ en-US ] = "~Bottom" ; \
-				};\
-            };\
-        };\
+				}; \
+            }; \
+        }; \
 	};
 
  // Bezier-Funktionen
@@ -805,64 +805,64 @@
         Identifier = SID_BEZIER_EDIT ; \
         HelpId = CMD_SID_BEZIER_EDIT ; \
         Text [ en-US ] = "Edit ~Points" ; \
-	};\
+	}; \
     SEPARATOR\
     MenuItem\
     {\
         Identifier = SID_BEZIER_MOVE ; \
         HelpId = CMD_SID_BEZIER_MOVE ; \
         Text [ en-US ] = "~Move Points" ; \
-	};\
+	}; \
     MenuItem\
     {\
         Identifier = SID_BEZIER_INSERT ; \
         HelpId = CMD_SID_BEZIER_INSERT ; \
         Text [ en-US ] = "Insert ~Points" ; \
-	};\
+	}; \
     MenuItem\
     {\
         Identifier = SID_BEZIER_DELETE ; \
         HelpId = CMD_SID_BEZIER_DELETE ; \
         Text [ en-US ] = "~Delete Points" ; \
-	};\
+	}; \
     SEPARATOR\
     MenuItem\
     {\
         Identifier = SID_BEZIER_CLOSE ; \
         HelpId = CMD_SID_BEZIER_CLOSE ; \
         Text [ en-US ] = "Close ~Object" ; \
-	};\
+	}; \
     MenuItem\
     {\
         Identifier = SID_BEZIER_CUTLINE ; \
         HelpId = CMD_SID_BEZIER_CUTLINE ; \
         Text [ en-US ] = "~Split Curve" ; \
-	};\
+	}; \
     MenuItem\
     {\
         Identifier = SID_BEZIER_CONVERT ; \
         HelpId = CMD_SID_BEZIER_CONVERT ; \
         Text [ en-US ] = "Con~vert to Curve" ; \
-	};\
+	}; \
     SEPARATOR\
     MenuItem\
     {\
         Identifier = SID_BEZIER_EDGE ; \
         HelpId = CMD_SID_BEZIER_EDGE ; \
         Text [ en-US ] = "~Corner" ; \
-	};\
+	}; \
     MenuItem\
     {\
         Identifier = SID_BEZIER_SMOOTH ; \
         HelpId = CMD_SID_BEZIER_SMOOTH ; \
         Text [ en-US ] = "Smoot~h" ; \
-	};\
+	}; \
     MenuItem\
     {\
         Identifier = SID_BEZIER_SYMMTR ; \
         HelpId = CMD_SID_BEZIER_SYMMTR ; \
         Text [ en-US ] = "S~ymmetric" ; \
-	};\
+	}; \
     SEPARATOR\
     MenuItem\
     {\
@@ -1132,7 +1132,7 @@
     {\
         Identifier = SID_GRID_USE ; \
         HelpId = CMD_SID_GRID_USE; \
-		Text [ en-US ] = "Snap to Grid"; \
+		Text [ en-US ] = "Snap to Grid" ; \
 	};
 
 #define MN_GRID_FRONT\
@@ -1155,9 +1155,9 @@
                 MN_GRID_VISIBLE\
                 MN_GRID_USE\
                 MN_GRID_FRONT\
-            };\
-        };\
-		Text [ en-US ] = "~Grid";\
+            }; \
+        }; \
+		Text [ en-US ] = "~Grid" ; \
 	};
 
 #define MN_HELPLINES_VISIBLE\
@@ -1173,7 +1173,7 @@
     {\
         Identifier = SID_HELPLINES_USE ; \
         HelpId = CMD_SID_HELPLINES_USE ; \
-		Text [ en-US ] = "Snap to Snap Lines"; \
+		Text [ en-US ] = "Snap to Snap Lines" ; \
 	};
 
 #define MN_HELPLINES_FRONT\
@@ -1196,9 +1196,9 @@
                 MN_HELPLINES_VISIBLE\
                 MN_HELPLINES_USE\
                 MN_HELPLINES_FRONT\
-            };\
-        };\
-		Text [ en-US ] = "~Snap Lines";\
+            }; \
+        }; \
+		Text [ en-US ] = "~Snap Lines" ; \
 	};
 
 #define MN_CONTROL_SHOW_BROWSER\
@@ -1281,8 +1281,8 @@
                 MN_CONVERT_TO_8BIT_GRAYS\
                 MN_CONVERT_TO_8BIT_COLORS\
                 MN_CONVERT_TO_24BIT\
-            };\
-        };\
+            }; \
+        }; \
         Text [ en-US ] = "~Color Resolution" ; \
 	};
 
@@ -1304,8 +1304,8 @@
                 MN_CONVERT_TO_3D_LATHE_FAST\
 				MN_CONVERT_TO_BITMAP\
 				MN_CONVERT_TO_METAFILE\
-            };\
-        };\
+            }; \
+        }; \
 	};
 
 #define MNSUB_MIRROR \
@@ -1321,8 +1321,8 @@
             {\
                 MN_VERTICAL\
                 MN_HORIZONTAL\
-            };\
-        };\
+            }; \
+        }; \
 	};
 
 #define MNSUB_ROTATE \
@@ -1330,7 +1330,7 @@
     {\
 		Identifier = SID_OBJECT_ROTATE ; \
 		HelpId = CMD_SID_OBJECT_ROTATE ; \
-		Text [ en-US ] = "~Rotate";\
+		Text [ en-US ] = "~Rotate" ; \
 	};
 
 #define MN_CONNECT \
@@ -1370,7 +1370,7 @@
     {\
         Identifier = SID_BEZIER_EDIT ; \
         HelpId = CMD_SID_BEZIER_EDIT ; \
-		Text [ en-US ] = "Poi~nts";\
+		Text [ en-US ] = "Poi~nts" ; \
 	};
 
 #define MN_GLUE_EDITMODE \
@@ -1378,7 +1378,7 @@
     {\
 		Identifier = SID_GLUE_EDITMODE ; \
 		HelpId = CMD_SID_GLUE_EDITMODE ; \
-		Text [ en-US ] = "~Glue Points";\
+		Text [ en-US ] = "~Glue Points" ; \
 	};
 
 #define MN_LAYER_EDITMODE \
@@ -1386,7 +1386,7 @@
 	{\
         Identifier = DUMMY + 7 ; \
         Command = ".uno:LayerMenu" ; \
-		Text [ en-US ] =  "La~yer"; \
+		Text [ en-US ] =  "La~yer" ; \
         SubMenu	= Menu \
 		{\
             ItemList = \
@@ -1395,28 +1395,28 @@
 				{\
 					Identifier = SID_INSERTLAYER ; \
 					HelpId = CMD_SID_INSERTLAYER ; \
-					Text [ en-US ] = "~Insert";\
-				};\
+					Text [ en-US ] = "~Insert" ; \
+				}; \
 				MenuItem \
 				{\
 					Identifier = SID_MODIFYLAYER ; \
 					HelpId = CMD_SID_MODIFYLAYER ; \
-					Text [ en-US ] = "~Modify";\
-				};\
+					Text [ en-US ] = "~Modify" ; \
+				}; \
 				MenuItem \
 				{\
 					Identifier = SID_DELETE_LAYER ; \
 					HelpId = CMD_SID_DELETE_LAYER ; \
-					Text [ en-US ] = "Delete";\
-				};\
+					Text [ en-US ] = "Delete" ; \
+				}; \
 				MenuItem \
 				{\
 					Identifier = SID_RENAMELAYER ; \
 					HelpId = CMD_SID_RENAMELAYER ; \
-					Text [ en-US ] = "~Rename";\
+					Text [ en-US ] = "~Rename" ; \
 				}; \
-            };\
-        };\
+            }; \
+        }; \
 	};
 
 // ------------------------------------------------------------------------------------------------
@@ -1517,7 +1517,7 @@ Menu RID_DRAW_TEXTOBJ_POPUP
 		MN_ACTION
 		SEPARATOR
 		MN_STYLEDT
-		SEPARATOR		
+		SEPARATOR
 	};
 };
 
@@ -1941,9 +1941,9 @@ Menu RID_DRAW_TABLE_POPUP
 		SEPARATOR
 		MenuItem
 		{
-			Identifier = SID_FORMAT_TABLE_DLG;
-			HelpId = CMD_SID_FORMAT_TABLE_DLG;
-			Text [ en-US ] = "~Table...";
+			Identifier = SID_FORMAT_TABLE_DLG ;
+			HelpId = CMD_SID_FORMAT_TABLE_DLG ;
+			Text [ en-US ] = "~Table..." ;
 		};
 		MenuItem
 		{
@@ -1956,34 +1956,34 @@ Menu RID_DRAW_TABLE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_MERGE_CELLS;
-						HelpId = CMD_SID_TABLE_MERGE_CELLS;
-						Text [ en-US ] = "~Merge";
+						Identifier = SID_TABLE_MERGE_CELLS ;
+						HelpId = CMD_SID_TABLE_MERGE_CELLS ;
+						Text [ en-US ] = "~Merge" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_SPLIT_CELLS;
-						HelpId = CMD_SID_TABLE_SPLIT_CELLS;
-						Text [ en-US ] = "~Split...";
+						Identifier = SID_TABLE_SPLIT_CELLS ;
+						HelpId = CMD_SID_TABLE_SPLIT_CELLS ;
+						Text [ en-US ] = "~Split..." ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_NONE;
-						HelpId = CMD_SID_TABLE_VERT_NONE;
-						Text [ en-US ] = "~Top";
+						Identifier = SID_TABLE_VERT_NONE ;
+						HelpId = CMD_SID_TABLE_VERT_NONE ;
+						Text [ en-US ] = "~Top" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_CENTER;
-						HelpId = CMD_SID_TABLE_VERT_CENTER;
-						Text [ en-US ] = "C~enter";
+						Identifier = SID_TABLE_VERT_CENTER ;
+						HelpId = CMD_SID_TABLE_VERT_CENTER ;
+						Text [ en-US ] = "C~enter" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_BOTTOM;
-						HelpId = CMD_SID_TABLE_VERT_BOTTOM;
-						Text [ en-US ] = "~Bottom";
+						Identifier = SID_TABLE_VERT_BOTTOM ;
+						HelpId = CMD_SID_TABLE_VERT_BOTTOM ;
+						Text [ en-US ] = "~Bottom" ;
 					};
 				};
 			};
@@ -1999,28 +1999,28 @@ Menu RID_DRAW_TABLE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_DISTRIBUTE_ROWS;
-						HelpId = CMD_SID_TABLE_DISTRIBUTE_ROWS;
-						Text [ en-US ] = "Space ~Equally";
+						Identifier = SID_TABLE_DISTRIBUTE_ROWS ;
+						HelpId = CMD_SID_TABLE_DISTRIBUTE_ROWS ;
+						Text [ en-US ] = "Space ~Equally" ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_SELECT_ROW;
-						HelpId = CMD_SID_TABLE_SELECT_ROW;
-						Text [ en-US ] = "~Select";
+						Identifier = SID_TABLE_SELECT_ROW ;
+						HelpId = CMD_SID_TABLE_SELECT_ROW ;
+						Text [ en-US ] = "~Select" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_INSERT_ROW_DLG;
-						HelpId = CMD_SID_TABLE_INSERT_ROW_DLG;
-						Text [ en-US ] = "~Insert...";
+						Identifier = SID_TABLE_INSERT_ROW_DLG ;
+						HelpId = CMD_SID_TABLE_INSERT_ROW_DLG ;
+						Text [ en-US ] = "~Insert..." ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_DELETE_ROW;
-						HelpId = CMD_SID_TABLE_DELETE_ROW;
-						Text [ en-US ] = "~Delete";
+						Identifier = SID_TABLE_DELETE_ROW ;
+						HelpId = CMD_SID_TABLE_DELETE_ROW ;
+						Text [ en-US ] = "~Delete" ;
 					};
 				};
 			};
@@ -2036,28 +2036,28 @@ Menu RID_DRAW_TABLE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_DISTRIBUTE_COLUMNS;
-						HelpId = CMD_SID_TABLE_DISTRIBUTE_COLUMNS;
-						Text [ en-US ] = "Space ~Equally";
+						Identifier = SID_TABLE_DISTRIBUTE_COLUMNS ;
+						HelpId = CMD_SID_TABLE_DISTRIBUTE_COLUMNS ;
+						Text [ en-US ] = "Space ~Equally" ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_SELECT_COL;
-						HelpId = CMD_SID_TABLE_SELECT_COL;
-						Text [ en-US ] = "~Select";
+						Identifier = SID_TABLE_SELECT_COL ;
+						HelpId = CMD_SID_TABLE_SELECT_COL ;
+						Text [ en-US ] = "~Select" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_INSERT_COL_DLG;
-						HelpId = CMD_SID_TABLE_INSERT_COL_DLG;
-						Text [ en-US ] = "~Insert...";
+						Identifier = SID_TABLE_INSERT_COL_DLG ;
+						HelpId = CMD_SID_TABLE_INSERT_COL_DLG ;
+						Text [ en-US ] = "~Insert..." ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_DELETE_COL;
-						HelpId = CMD_SID_TABLE_DELETE_COL;
-						Text [ en-US ] = "~Delete";
+						Identifier = SID_TABLE_DELETE_COL ;
+						HelpId = CMD_SID_TABLE_DELETE_COL ;
+						Text [ en-US ] = "~Delete" ;
 					};
 				};
 			};
@@ -2081,34 +2081,6 @@ Menu RID_DRAW_TABLE_POPUP
 // ------------------------------------------------------------------------------------------------
 // draw popups
 // ------------------------------------------------------------------------------------------------
-
-/*************************************************************************
- *
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
- * 
- * Copyright 2000, 2010 Oracle and/or its affiliates.
- *
- * OpenOffice.org - a multi-platform office productivity suite
- *
- * This file is part of OpenOffice.org.
- *
- * OpenOffice.org is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License version 3
- * only, as published by the Free Software Foundation.
- *
- * OpenOffice.org is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License version 3 for more details
- * (a copy is included in the LICENSE file that accompanied this code).
- *
- * You should have received a copy of the GNU Lesser General Public License
- * version 3 along with OpenOffice.org.  If not, see
- * <http://www.openoffice.org/license.html>
- * for a copy of the LGPLv3 License.
- *
- ************************************************************************/
- 
 //
 // TEXTOBJ_POPUP
 //
@@ -2198,7 +2170,7 @@ Menu RID_GRAPHIC_CUSTOMSHAPE_POPUP
 		SEPARATOR
 		MN_STYLEDT
 		SEPARATOR
-		
+
 	};
 };
 
@@ -2582,9 +2554,9 @@ Menu RID_GRAPHIC_TABLE_POPUP
 		SEPARATOR
 		MenuItem
 		{
-			Identifier = SID_FORMAT_TABLE_DLG;
-			HelpId = CMD_SID_FORMAT_TABLE_DLG;
-			Text [ en-US ] = "~Table...";
+			Identifier = SID_FORMAT_TABLE_DLG ;
+			HelpId = CMD_SID_FORMAT_TABLE_DLG ;
+			Text [ en-US ] = "~Table..." ;
 		};
 		MenuItem
 		{
@@ -2597,34 +2569,34 @@ Menu RID_GRAPHIC_TABLE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_MERGE_CELLS;
-						HelpId = CMD_SID_TABLE_MERGE_CELLS;
-						Text [ en-US ] = "~Merge";
+						Identifier = SID_TABLE_MERGE_CELLS ;
+						HelpId = CMD_SID_TABLE_MERGE_CELLS ;
+						Text [ en-US ] = "~Merge" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_SPLIT_CELLS;
-						HelpId = CMD_SID_TABLE_SPLIT_CELLS;
-						Text [ en-US ] = "~Split...";
+						Identifier = SID_TABLE_SPLIT_CELLS ;
+						HelpId = CMD_SID_TABLE_SPLIT_CELLS ;
+						Text [ en-US ] = "~Split..." ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_NONE;
-						HelpId = CMD_SID_TABLE_VERT_NONE;
-						Text [ en-US ] = "~Top";
+						Identifier = SID_TABLE_VERT_NONE ;
+						HelpId = CMD_SID_TABLE_VERT_NONE ;
+						Text [ en-US ] = "~Top" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_CENTER;
-						HelpId = CMD_SID_TABLE_VERT_CENTER;
-						Text [ en-US ] = "C~enter";
+						Identifier = SID_TABLE_VERT_CENTER ;
+						HelpId = CMD_SID_TABLE_VERT_CENTER ;
+						Text [ en-US ] = "C~enter" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_BOTTOM;
-						HelpId = CMD_SID_TABLE_VERT_BOTTOM;
-						Text [ en-US ] = "~Bottom";
+						Identifier = SID_TABLE_VERT_BOTTOM ;
+						HelpId = CMD_SID_TABLE_VERT_BOTTOM ;
+						Text [ en-US ] = "~Bottom" ;
 					};
 				};
 			};
@@ -2640,28 +2612,28 @@ Menu RID_GRAPHIC_TABLE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_DISTRIBUTE_ROWS;
-						HelpId = CMD_SID_TABLE_DISTRIBUTE_ROWS;
-						Text [ en-US ] = "Space ~Equally";
+						Identifier = SID_TABLE_DISTRIBUTE_ROWS ;
+						HelpId = CMD_SID_TABLE_DISTRIBUTE_ROWS ;
+						Text [ en-US ] = "Space ~Equally" ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_SELECT_ROW;
-						HelpId = CMD_SID_TABLE_SELECT_ROW;
-						Text [ en-US ] = "~Select";
+						Identifier = SID_TABLE_SELECT_ROW ;
+						HelpId = CMD_SID_TABLE_SELECT_ROW ;
+						Text [ en-US ] = "~Select" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_INSERT_ROW_DLG;
-						HelpId = CMD_SID_TABLE_INSERT_ROW_DLG;
-						Text [ en-US ] = "~Insert...";
+						Identifier = SID_TABLE_INSERT_ROW_DLG ;
+						HelpId = CMD_SID_TABLE_INSERT_ROW_DLG ;
+						Text [ en-US ] = "~Insert..." ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_DELETE_ROW;
-						HelpId = CMD_SID_TABLE_DELETE_ROW;
-						Text [ en-US ] = "~Delete";
+						Identifier = SID_TABLE_DELETE_ROW ;
+						HelpId = CMD_SID_TABLE_DELETE_ROW ;
+						Text [ en-US ] = "~Delete" ;
 					};
 				};
 			};
@@ -2677,28 +2649,28 @@ Menu RID_GRAPHIC_TABLE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_DISTRIBUTE_COLUMNS;
-						HelpId = CMD_SID_TABLE_DISTRIBUTE_COLUMNS;
-						Text [ en-US ] = "Space ~Equally";
+						Identifier = SID_TABLE_DISTRIBUTE_COLUMNS ;
+						HelpId = CMD_SID_TABLE_DISTRIBUTE_COLUMNS ;
+						Text [ en-US ] = "Space ~Equally" ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_SELECT_COL;
-						HelpId = CMD_SID_TABLE_SELECT_COL;
-						Text [ en-US ] = "~Select";
+						Identifier = SID_TABLE_SELECT_COL ;
+						HelpId = CMD_SID_TABLE_SELECT_COL ;
+						Text [ en-US ] = "~Select" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_INSERT_COL_DLG;
-						HelpId = CMD_SID_TABLE_INSERT_COL_DLG;
-						Text [ en-US ] = "~Insert...";
+						Identifier = SID_TABLE_INSERT_COL_DLG ;
+						HelpId = CMD_SID_TABLE_INSERT_COL_DLG ;
+						Text [ en-US ] = "~Insert..." ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_DELETE_COL;
-						HelpId = CMD_SID_TABLE_DELETE_COL;
-						Text [ en-US ] = "~Delete";
+						Identifier = SID_TABLE_DELETE_COL ;
+						HelpId = CMD_SID_TABLE_DELETE_COL ;
+						Text [ en-US ] = "~Delete" ;
 					};
 				};
 			};
@@ -2764,9 +2736,9 @@ Menu RID_DRAW_TABLEOBJ_INSIDE_POPUP
 		SEPARATOR
 		MenuItem
 		{
-			Identifier = SID_FORMAT_TABLE_DLG;
-			HelpId = CMD_SID_FORMAT_TABLE_DLG;
-			Text [ en-US ] = "~Table...";
+			Identifier = SID_FORMAT_TABLE_DLG ;
+			HelpId = CMD_SID_FORMAT_TABLE_DLG ;
+			Text [ en-US ] = "~Table..." ;
 		};
 		MenuItem
 		{
@@ -2779,34 +2751,34 @@ Menu RID_DRAW_TABLEOBJ_INSIDE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_MERGE_CELLS;
-						HelpId = CMD_SID_TABLE_MERGE_CELLS;
-						Text [ en-US ] = "~Merge";
+						Identifier = SID_TABLE_MERGE_CELLS ;
+						HelpId = CMD_SID_TABLE_MERGE_CELLS ;
+						Text [ en-US ] = "~Merge" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_SPLIT_CELLS;
-						HelpId = CMD_SID_TABLE_SPLIT_CELLS;
-						Text [ en-US ] = "~Split...";
+						Identifier = SID_TABLE_SPLIT_CELLS ;
+						HelpId = CMD_SID_TABLE_SPLIT_CELLS ;
+						Text [ en-US ] = "~Split..." ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_NONE;
-						HelpId = CMD_SID_TABLE_VERT_NONE;
-						Text [ en-US ] = "~Top";
+						Identifier = SID_TABLE_VERT_NONE ;
+						HelpId = CMD_SID_TABLE_VERT_NONE ;
+						Text [ en-US ] = "~Top" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_CENTER;
-						HelpId = CMD_SID_TABLE_VERT_CENTER;
-						Text [ en-US ] = "C~enter";
+						Identifier = SID_TABLE_VERT_CENTER ;
+						HelpId = CMD_SID_TABLE_VERT_CENTER ;
+						Text [ en-US ] = "C~enter" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_VERT_BOTTOM;
-						HelpId = CMD_SID_TABLE_VERT_BOTTOM;
-						Text [ en-US ] = "~Bottom";
+						Identifier = SID_TABLE_VERT_BOTTOM ;
+						HelpId = CMD_SID_TABLE_VERT_BOTTOM ;
+						Text [ en-US ] = "~Bottom" ;
 					};
 				};
 			};
@@ -2822,28 +2794,28 @@ Menu RID_DRAW_TABLEOBJ_INSIDE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_DISTRIBUTE_ROWS;
-						HelpId = CMD_SID_TABLE_DISTRIBUTE_ROWS;
-						Text [ en-US ] = "Space ~Equally";
+						Identifier = SID_TABLE_DISTRIBUTE_ROWS ;
+						HelpId = CMD_SID_TABLE_DISTRIBUTE_ROWS ;
+						Text [ en-US ] = "Space ~Equally" ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_SELECT_ROW;
-						HelpId = CMD_SID_TABLE_SELECT_ROW;
-						Text [ en-US ] = "~Select";
+						Identifier = SID_TABLE_SELECT_ROW ;
+						HelpId = CMD_SID_TABLE_SELECT_ROW ;
+						Text [ en-US ] = "~Select" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_INSERT_ROW_DLG;
-						HelpId = CMD_SID_TABLE_INSERT_ROW_DLG;
-						Text [ en-US ] = "~Insert...";
+						Identifier = SID_TABLE_INSERT_ROW_DLG ;
+						HelpId = CMD_SID_TABLE_INSERT_ROW_DLG ;
+						Text [ en-US ] = "~Insert..." ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_DELETE_ROW;
-						HelpId = CMD_SID_TABLE_DELETE_ROW;
-						Text [ en-US ] = "~Delete";
+						Identifier = SID_TABLE_DELETE_ROW ;
+						HelpId = CMD_SID_TABLE_DELETE_ROW ;
+						Text [ en-US ] = "~Delete" ;
 					};
 				};
 			};
@@ -2859,28 +2831,28 @@ Menu RID_DRAW_TABLEOBJ_INSIDE_POPUP
 				{
 					MenuItem
 					{
-						Identifier = SID_TABLE_DISTRIBUTE_COLUMNS;
-						HelpId = CMD_SID_TABLE_DISTRIBUTE_COLUMNS;
-						Text [ en-US ] = "Space ~Equally";
+						Identifier = SID_TABLE_DISTRIBUTE_COLUMNS ;
+						HelpId = CMD_SID_TABLE_DISTRIBUTE_COLUMNS ;
+						Text [ en-US ] = "Space ~Equally" ;
 					};
 					SEPARATOR
 					MenuItem
 					{
-						Identifier = SID_TABLE_SELECT_COL;
-						HelpId = CMD_SID_TABLE_SELECT_COL;
-						Text [ en-US ] = "~Select";
+						Identifier = SID_TABLE_SELECT_COL ;
+						HelpId = CMD_SID_TABLE_SELECT_COL ;
+						Text [ en-US ] = "~Select" ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_INSERT_COL_DLG;
-						HelpId = CMD_SID_TABLE_INSERT_COL_DLG;
-						Text [ en-US ] = "~Insert...";
+						Identifier = SID_TABLE_INSERT_COL_DLG ;
+						HelpId = CMD_SID_TABLE_INSERT_COL_DLG ;
+						Text [ en-US ] = "~Insert..." ;
 					};
 					MenuItem
 					{
-						Identifier = SID_TABLE_DELETE_COL;
-						HelpId = CMD_SID_TABLE_DELETE_COL;
-						Text [ en-US ] = "~Delete";
+						Identifier = SID_TABLE_DELETE_COL ;
+						HelpId = CMD_SID_TABLE_DELETE_COL ;
+						Text [ en-US ] = "~Delete" ;
 					};
 				};
 			};
@@ -3103,30 +3075,30 @@ Menu RID_TASKPANE_MASTERPAGESSELECTOR_POPUP
 	{
 		MenuItem
 		{
-			Identifier = SID_TP_APPLY_TO_ALL_SLIDES;
-			HelpId = CMD_SID_TP_APPLY_TO_ALL_SLIDES;
-			Text [ en-US ] = "~Apply to All Slides";
+			Identifier = SID_TP_APPLY_TO_ALL_SLIDES ;
+			HelpId = CMD_SID_TP_APPLY_TO_ALL_SLIDES ;
+			Text [ en-US ] = "~Apply to All Slides" ;
         };
 		MenuItem
 		{
-			Identifier = SID_TP_APPLY_TO_SELECTED_SLIDES;
-			HelpId = CMD_SID_TP_APPLY_TO_SELECTED_SLIDES;
-			Text [ en-US ] = "Apply to ~Selected Slides";
+			Identifier = SID_TP_APPLY_TO_SELECTED_SLIDES ;
+			HelpId = CMD_SID_TP_APPLY_TO_SELECTED_SLIDES ;
+			Text [ en-US ] = "Apply to ~Selected Slides" ;
         };
 
 		SEPARATOR
 
 		MenuItem
 		{
-			Identifier = SID_TP_SHOW_LARGE_PREVIEW;
-			HelpId = CMD_SID_TP_SHOW_LARGE_PREVIEW;
-            Text[ en-US ] = "Show ~Large Preview";
+			Identifier = SID_TP_SHOW_LARGE_PREVIEW ;
+			HelpId = CMD_SID_TP_SHOW_LARGE_PREVIEW ;
+            Text [ en-US ] = "Show ~Large Preview" ;
         };
         MenuItem
         {
-            Identifier = SID_TP_SHOW_SMALL_PREVIEW;
-            HelpId = CMD_SID_TP_SHOW_SMALL_PREVIEW;
-            Text[ en-US ] = "Show S~mall Preview";
+            Identifier = SID_TP_SHOW_SMALL_PREVIEW ;
+            HelpId = CMD_SID_TP_SHOW_SMALL_PREVIEW ;
+            Text [ en-US ] = "Show S~mall Preview" ;
         };
 	};
 };
@@ -3137,15 +3109,15 @@ Menu RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP
 	{
 		MenuItem
 		{
-			Identifier = SID_TP_APPLY_TO_ALL_SLIDES;
-			HelpId = CMD_SID_TP_APPLY_TO_ALL_SLIDES;
-			Text [ en-US ] = "~Apply to All Slides";
+			Identifier = SID_TP_APPLY_TO_ALL_SLIDES ;
+			HelpId = CMD_SID_TP_APPLY_TO_ALL_SLIDES ;
+			Text [ en-US ] = "~Apply to All Slides" ;
         };
 		MenuItem
 		{
-			Identifier = SID_TP_APPLY_TO_SELECTED_SLIDES;
-			HelpId = CMD_SID_TP_APPLY_TO_SELECTED_SLIDES;
-			Text [ en-US ] = "Apply to ~Selected Slides";
+			Identifier = SID_TP_APPLY_TO_SELECTED_SLIDES ;
+			HelpId = CMD_SID_TP_APPLY_TO_SELECTED_SLIDES ;
+			Text [ en-US ] = "Apply to ~Selected Slides" ;
         };
 
 
@@ -3153,9 +3125,9 @@ Menu RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP
 
         MenuItem
         {
-            Identifier = SID_TP_EDIT_MASTER;
-            HelpId = CMD_SID_TP_EDIT_MASTER;
-            Text[ en-US ] = "~Edit Master...";
+            Identifier = SID_TP_EDIT_MASTER ;
+            HelpId = CMD_SID_TP_EDIT_MASTER ;
+            Text [ en-US ] = "~Edit Master..." ;
         };
 
 		MN_DELETE_MASTER
@@ -3164,15 +3136,15 @@ Menu RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP
 
 		MenuItem
 		{
-			Identifier = SID_TP_SHOW_LARGE_PREVIEW;
-			HelpId = CMD_SID_TP_SHOW_LARGE_PREVIEW;
-            Text[ en-US ] = "Show ~Large Preview";
+			Identifier = SID_TP_SHOW_LARGE_PREVIEW ;
+			HelpId = CMD_SID_TP_SHOW_LARGE_PREVIEW ;
+            Text [ en-US ] = "Show ~Large Preview" ;
         };
         MenuItem
         {
-            Identifier = SID_TP_SHOW_SMALL_PREVIEW;
-            HelpId = CMD_SID_TP_SHOW_SMALL_PREVIEW;
-            Text[ en-US ] = "Show S~mall Preview";
+            Identifier = SID_TP_SHOW_SMALL_PREVIEW ;
+            HelpId = CMD_SID_TP_SHOW_SMALL_PREVIEW ;
+            Text [ en-US ] = "Show S~mall Preview" ;
         };
 	};
 };
@@ -3183,18 +3155,20 @@ Menu RID_TASKPANE_LAYOUTMENU_POPUP
 	{
 		MenuItem
 		{
-			Identifier = SID_TP_APPLY_TO_SELECTED_SLIDES;
-			HelpId = CMD_SID_TP_APPLY_TO_SELECTED_SLIDES;
-			Text [ en-US ] = "Apply to ~Selected Slides";
+			Identifier = SID_TP_APPLY_TO_SELECTED_SLIDES ;
+			HelpId = CMD_SID_TP_APPLY_TO_SELECTED_SLIDES ;
+			Text [ en-US ] = "Apply to ~Selected Slides" ;
         };
 
 		SEPARATOR
 
 		MenuItem
 		{
-			Identifier = SID_INSERTPAGE_LAYOUT_MENU;
-			HelpId = CMD_SID_INSERTPAGE_LAYOUT_MENU;
-            Text [ en-US ] = "~Insert Slide";
+			Identifier = SID_INSERTPAGE_LAYOUT_MENU ;
+			HelpId = CMD_SID_INSERTPAGE_LAYOUT_MENU ;
+            Text [ en-US ] = "~Insert Slide" ;
         };
 	};
 };
+
+// ********************************************************************** EOF

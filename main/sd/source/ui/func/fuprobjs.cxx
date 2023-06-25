@@ -100,12 +100,12 @@ void FuPresentationObjects::DoExecute( SfxRequest& )
 	::Outliner* pOutl = pOutlinerView->GetOutliner();
 	List* pList = pOutlinerView->CreateSelectionList();
 	Paragraph* pPara = (Paragraph*)pList->First();
-	nDepth = pOutl->GetDepth((sal_uInt16)pOutl->GetAbsPos( pPara ) );
+	nDepth = pOutl->GetDepth( pOutl->GetAbsPos( pPara ) );
 	bool bPage = pOutl->HasParaFlag( pPara, PARAFLAG_ISPAGE );
 
 	while( pPara )
 	{
-		nTmp = pOutl->GetDepth((sal_uInt16) pOutl->GetAbsPos( pPara ) );
+		nTmp = pOutl->GetDepth( pOutl->GetAbsPos( pPara ) );
 
 		if( nDepth != nTmp )
 		{

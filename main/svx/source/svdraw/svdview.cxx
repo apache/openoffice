@@ -1268,7 +1268,7 @@ XubString SdrView::GetStatusText()
 		ESelection aSel(pTextEditOutlinerView->GetSelection());
 		long nPar=aSel.nEndPara,nLin=0,nCol=aSel.nEndPos;
 		if (aSel.nEndPara>0) {
-			for (sal_uInt16 nParaNum=0; nParaNum<aSel.nEndPara; nParaNum++) {
+			for (sal_uInt32 nParaNum=0; nParaNum<aSel.nEndPara; nParaNum++) {
 				nLin+=pTextEditOutliner->GetLineCount(nParaNum);
 			}
 		}
@@ -1386,7 +1386,7 @@ SdrViewContext SdrView::GetContext() const
 void SdrView::MarkAll()
 {
 	if (IsTextEdit()) {
-		GetTextEditOutlinerView()->SetSelection(ESelection(0,0,0xFFFF,0xFFFF));
+		GetTextEditOutlinerView()->SetSelection(ESelection(0,0,EE_PARA_MAX,EE_INDEX_MAX));
 #ifdef DBG_UTIL
 		if (pItemBrowser!=NULL) pItemBrowser->SetDirty();
 #endif

@@ -159,7 +159,7 @@ void TextObjectBar::Execute( SfxRequest &rReq )
                     if (pStyleSheet != NULL)
                     {
                         SfxItemSet aAttr( pStyleSheet->GetItemSet() );
-                        SfxItemSet aTmpSet( pOLV->GetOutliner()->GetParaAttribs( (sal_uInt16) nPara ) );
+                        SfxItemSet aTmpSet( pOLV->GetOutliner()->GetParaAttribs( nPara ) );
                         aAttr.Put( aTmpSet, sal_False ); // sal_False= InvalidItems nicht als Default, sondern als "Loecher" betrachten
                         const SvxULSpaceItem& rItem = (const SvxULSpaceItem&) aAttr.Get( EE_PARA_ULSPACE );
                         SvxULSpaceItem* pNewItem = (SvxULSpaceItem*) rItem.Clone();
@@ -187,7 +187,7 @@ void TextObjectBar::Execute( SfxRequest &rReq )
                         SfxItemSet aNewAttrs( aAttr );
                         aNewAttrs.Put( *pNewItem );
                         delete pNewItem;
-                        pOLV->GetOutliner()->SetParaAttribs( (sal_uInt16)nPara, aNewAttrs );
+                        pOLV->GetOutliner()->SetParaAttribs( nPara, aNewAttrs );
                     }
 				}
 			}

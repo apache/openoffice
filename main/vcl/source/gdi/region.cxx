@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
@@ -43,9 +45,9 @@ DBG_NAMEEX( PolyPolygon )
 
 //////////////////////////////////////////////////////////////////////////////
 
-namespace 
+namespace
 {
-    /** Return <TRUE/> when the given polygon is rectiliner and oriented so that
+    /** Return <TRUE/> when the given polygon is rectilinear and oriented so that
         all sides are either horizontal or vertical.
     */
     bool ImplIsPolygonRectilinear (const PolyPolygon& rPolyPoly)
@@ -135,7 +137,7 @@ namespace
                 const long nTop (::std::min(aStart.Y(), aEnd.Y()));
                 const long nBottom (::std::max(aStart.Y(), aEnd.Y()));
                 const LineType eLineType (aStart.Y() > aEnd.Y() ? LINE_DESCENDING : LINE_ASCENDING);
-        
+
                 // Make sure that the current line is covered by bands.
                 pRegionBand->ImplAddMissingBands(nTop,nBottom);
 
@@ -198,7 +200,7 @@ namespace
         // initialisation and creation of Bands
         RegionBand* pRegionBand = new RegionBand();
         pRegionBand->CreateBandRange(rPolygonBoundingBox.Top(), rPolygonBoundingBox.Bottom());
-            
+
         // insert polygons
 	    const sal_uInt16 nPolyCount = rPolyPoly.Count();
 
@@ -542,7 +544,7 @@ bool Region::Union( const Rectangle& rRect )
         basegfx::B2DPolyPolygon aThisPolyPoly(GetAsB2DPolyPolygon());
 
         aThisPolyPoly = basegfx::tools::prepareForPolygonOperation(aThisPolyPoly);
-        
+
         if(!aThisPolyPoly.count())
         {
             // no local polygon, use the rectangle as new region
@@ -551,16 +553,16 @@ bool Region::Union( const Rectangle& rRect )
         else
         {
             // get the other B2DPolyPolygon and use logical Or-Operation
-            const basegfx::B2DPolygon aRectPoly( 
-                basegfx::tools::createPolygonFromRect( 
+            const basegfx::B2DPolygon aRectPoly(
+                basegfx::tools::createPolygonFromRect(
                     basegfx::B2DRectangle(
-                        rRect.Left(), 
-                        rRect.Top(), 
-                        rRect.Right(), 
+                        rRect.Left(),
+                        rRect.Top(),
+                        rRect.Right(),
                         rRect.Bottom())));
             const basegfx::B2DPolyPolygon aClip(
                 basegfx::tools::solvePolygonOperationOr(
-                    aThisPolyPoly, 
+                    aThisPolyPoly,
                     basegfx::B2DPolyPolygon(aRectPoly)));
             *this = Region(aClip);
         }
@@ -579,7 +581,7 @@ bool Region::Union( const Rectangle& rRect )
     }
 
     RegionBand* pNew = new RegionBand(*pCurrent);
-        
+
     // get justified rectangle
     const long nLeft(std::min(rRect.Left(), rRect.Right()));
     const long nTop(std::min(rRect.Top(), rRect.Bottom()));
@@ -633,12 +635,12 @@ bool Region::Intersect( const Rectangle& rRect )
             const basegfx::B2DPolyPolygon aPoly(
                 basegfx::tools::clipPolyPolygonOnRange(
                     *getB2DPolyPolygon(),
-                    basegfx::B2DRange( 
-                        rRect.Left(), 
+                    basegfx::B2DRange(
+                        rRect.Left(),
                         rRect.Top(),
-                        rRect.Right() + 1, 
+                        rRect.Right() + 1,
                         rRect.Bottom() + 1),
-                    true, 
+                    true,
                     false));
 
             mpB2DPolyPolygon.reset(aPoly.count() ? new basegfx::B2DPolyPolygon(aPoly) : 0);
@@ -722,18 +724,18 @@ bool Region::Exclude( const Rectangle& rRect )
 	{
 	    // get this B2DPolyPolygon
 	    basegfx::B2DPolyPolygon aThisPolyPoly(GetAsB2DPolyPolygon());
-	    
+
         aThisPolyPoly = basegfx::tools::prepareForPolygonOperation(aThisPolyPoly);
-	    
+
 	    if(!aThisPolyPoly.count())
         {
             // when local polygon is empty, nothing can be excluded
 	        return true;
         }
-	    
+
 	    // get the other B2DPolyPolygon
-	    const basegfx::B2DPolygon aRectPoly( 
-            basegfx::tools::createPolygonFromRect( 
+	    const basegfx::B2DPolygon aRectPoly(
+            basegfx::tools::createPolygonFromRect(
                 basegfx::B2DRectangle(rRect.Left(), rRect.Top(), rRect.Right(), rRect.Bottom())));
 	    const basegfx::B2DPolyPolygon aOtherPolyPoly(aRectPoly);
 	    const basegfx::B2DPolyPolygon aClip = basegfx::tools::solvePolygonOperationDiff(aThisPolyPoly, aOtherPolyPoly);
@@ -806,17 +808,17 @@ bool Region::XOr( const Rectangle& rRect )
 	    basegfx::B2DPolyPolygon aThisPolyPoly(GetAsB2DPolyPolygon());
 
         aThisPolyPoly = basegfx::tools::prepareForPolygonOperation( aThisPolyPoly );
-	    
+
 	    if(!aThisPolyPoly.count())
 	    {
             // no local content, XOr will be equal to rectangle
 	        *this = rRect;
 	        return true;
 	    }
-	    
+
 	    // get the other B2DPolyPolygon
-	    const basegfx::B2DPolygon aRectPoly( 
-            basegfx::tools::createPolygonFromRect( 
+	    const basegfx::B2DPolygon aRectPoly(
+            basegfx::tools::createPolygonFromRect(
                 basegfx::B2DRectangle(rRect.Left(), rRect.Top(), rRect.Right(), rRect.Bottom())));
 	    const basegfx::B2DPolyPolygon aOtherPolyPoly(aRectPoly);
 	    const basegfx::B2DPolyPolygon aClip = basegfx::tools::solvePolygonOperationXor(aThisPolyPoly, aOtherPolyPoly);
@@ -896,7 +898,7 @@ bool Region::Union( const Region& rRegion )
         basegfx::B2DPolyPolygon aThisPolyPoly(GetAsB2DPolyPolygon());
 
         aThisPolyPoly = basegfx::tools::prepareForPolygonOperation(aThisPolyPoly);
-    
+
         if(!aThisPolyPoly.count())
         {
             // when no local content, union will be equal to rRegion
@@ -910,7 +912,7 @@ bool Region::Union( const Region& rRegion )
 
         // use logical OR operation
         basegfx::B2DPolyPolygon aClip(basegfx::tools::solvePolygonOperationOr(aThisPolyPoly, aOtherPolyPoly));
-    
+
         *this = Region( aClip );
 	    return true;
 	}
@@ -990,7 +992,7 @@ bool Region::Intersect( const Region& rRegion )
 
     if(IsEmpty())
     {
-        // local region is empty, cannot get more emty than that. Nothing to do
+        // local region is empty, cannot get more empty than that. Nothing to do
         return true;
     }
 
@@ -1001,7 +1003,7 @@ bool Region::Intersect( const Region& rRegion )
 
         if(!aThisPolyPoly.count())
         {
-            // local region is empty, cannot get more emty than that. Nothing to do
+            // local region is empty, cannot get more empty than that. Nothing to do
             return true;
         }
 
@@ -1016,10 +1018,10 @@ bool Region::Intersect( const Region& rRegion )
         }
 
         const basegfx::B2DPolyPolygon aClip(
-            basegfx::tools::clipPolyPolygonOnPolyPolygon( 
-                aOtherPolyPoly, 
-                aThisPolyPoly, 
-                true, 
+            basegfx::tools::clipPolyPolygonOnPolyPolygon(
+                aOtherPolyPoly,
+                aThisPolyPoly,
+                true,
                 false));
         *this = Region( aClip );
 	    return true;
@@ -1030,7 +1032,7 @@ bool Region::Intersect( const Region& rRegion )
 
     if(!pCurrent)
     {
-        // local region is empty, cannot get more emty than that. Nothing to do
+        // local region is empty, cannot get more empty than that. Nothing to do
         return true;
     }
 
@@ -1117,7 +1119,7 @@ bool Region::Exclude( const Region& rRegion )
         // get the other B2DPolyPolygon
         basegfx::B2DPolyPolygon aOtherPolyPoly(rRegion.GetAsB2DPolyPolygon());
         aOtherPolyPoly = basegfx::tools::prepareForPolygonOperation( aOtherPolyPoly );
-    
+
         basegfx::B2DPolyPolygon aClip = basegfx::tools::solvePolygonOperationDiff( aThisPolyPoly, aOtherPolyPoly );
         *this = Region( aClip );
 	    return true;
@@ -1205,7 +1207,7 @@ bool Region::XOr( const Region& rRegion )
         // get the other B2DPolyPolygon
         basegfx::B2DPolyPolygon aOtherPolyPoly(rRegion.GetAsB2DPolyPolygon());
         aOtherPolyPoly = basegfx::tools::prepareForPolygonOperation( aOtherPolyPoly );
-    
+
         basegfx::B2DPolyPolygon aClip = basegfx::tools::solvePolygonOperationXor( aThisPolyPoly, aOtherPolyPoly );
         *this = Region( aClip );
 	    return true;
@@ -1258,7 +1260,7 @@ Rectangle Region::GetBoundRect() const
 	if(IsNull())
     {
         // error; null region has no BoundRect
-        // OSL_ENSURE(false, "Region::GetBoundRect error: null region has unlimitied bound rect, not representable (!)");
+        // OSL_ENSURE(false, "Region::GetBoundRect error: null region has unlimited bound rect, not representable (!)");
 		return Rectangle();
     }
 
@@ -1276,7 +1278,7 @@ Rectangle Region::GetBoundRect() const
         {
             // #122149# corrected rounding, no need for ceil() and floor() here
             return Rectangle(
-                basegfx::fround(aRange.getMinX()), basegfx::fround(aRange.getMinY()), 
+                basegfx::fround(aRange.getMinX()), basegfx::fround(aRange.getMinY()),
                 basegfx::fround(aRange.getMaxX()), basegfx::fround(aRange.getMaxY()));
         }
 	}
@@ -1303,7 +1305,7 @@ const PolyPolygon Region::GetAsPolyPolygon() const
 
     if(getB2DPolyPolygon())
     {
-        // the polygon needs to be converted, buffer the down converion
+        // the polygon needs to be converted, buffer the down conversion
         const PolyPolygon aPolyPolgon(*getB2DPolyPolygon());
         const_cast< Region* >(this)->mpPolyPolygon.reset(new PolyPolygon(aPolyPolgon));
 
@@ -1312,7 +1314,7 @@ const PolyPolygon Region::GetAsPolyPolygon() const
 
     if(getRegionBand())
     {
-        // the BandRegion needs to be converted, buffer the converion
+        // the BandRegion needs to be converted, buffer the conversion
         const PolyPolygon aPolyPolgon(ImplCreatePolyPolygonFromRegionBand());
         const_cast< Region* >(this)->mpPolyPolygon.reset(new PolyPolygon(aPolyPolgon));
 
@@ -1340,7 +1342,7 @@ const basegfx::B2DPolyPolygon Region::GetAsB2DPolyPolygon() const
 
     if(getRegionBand())
     {
-        // the BandRegion needs to be converted, buffer the converion
+        // the BandRegion needs to be converted, buffer the conversion
         const basegfx::B2DPolyPolygon aB2DPolyPolygon(ImplCreateB2DPolyPolygonFromRegionBand());
         const_cast< Region* >(this)->mpB2DPolyPolygon.reset(new basegfx::B2DPolyPolygon(aB2DPolyPolygon));
 
@@ -1444,7 +1446,7 @@ bool Region::IsOver( const Rectangle& rRect ) const
         return true;
     }
 
-	// Can we optimize this ??? - is used in StarDraw for brushes pointers
+	// Can we optimize this ??? - is used in Draw for brushes pointers
 	// Why we have no IsOver for Regions ???
 	// create region from rectangle and intersect own region
 	Region aRegion(rRect);
@@ -1675,7 +1677,7 @@ SvStream& operator<<( SvStream& rOStrm, const Region& rRegion )
     }
     else
     {
-        // for compatibility, write an empty RegionBand (will only write 
+        // for compatibility, write an empty RegionBand (will only write
         // the end marker STREAMENTRY_END, but this *is* needed)
         const RegionBand aRegionBand;
 
@@ -1730,31 +1732,31 @@ static inline bool ImplPolygonRectTest( const Polygon& rPoly, Rectangle* pRectOu
             if( pRectOut )
             {
                 long nSwap;
-                
+
                 if( nX2 < nX1 )
                 {
                     nSwap = nX2;
                     nX2 = nX1;
                     nX1 = nSwap;
                 }
-                
+
                 if( nY2 < nY1 )
                 {
                     nSwap = nY2;
                     nY2 = nY1;
                     nY1 = nSwap;
                 }
-                
+
                 if( nX2 != nX1 )
                 {
                     nX2--;
                 }
-                
+
                 if( nY2 != nY1 )
                 {
                     nY2--;
                 }
-                
+
                 pRectOut->Left()    = nX1;
                 pRectOut->Right()   = nX2;
                 pRectOut->Top()     = nY1;
@@ -1769,13 +1771,13 @@ static inline bool ImplPolygonRectTest( const Polygon& rPoly, Rectangle* pRectOu
 Region Region::GetRegionFromPolyPolygon( const PolyPolygon& rPolyPoly )
 {
     //return Region( rPolyPoly );
-    
+
     // check if it's worth extracting the XOr'ing the Rectangles
     // empiricism shows that break even between XOr'ing rectangles separately
     // and ImplCreateRegionBandFromPolyPolygon is at half rectangles/half polygons
     int nPolygonRects = 0, nPolygonPolygons = 0;
     int nPolygons = rPolyPoly.Count();
-    
+
     for( sal_uInt16 i = 0; i < nPolygons; i++ )
     {
         const Polygon& rPoly = rPolyPoly[i];
@@ -1794,7 +1796,7 @@ Region Region::GetRegionFromPolyPolygon( const PolyPolygon& rPolyPoly )
     {
         return Region( rPolyPoly );
     }
-    
+
     Region aResult;
     Rectangle aRect;
 

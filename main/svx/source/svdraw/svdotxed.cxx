@@ -287,7 +287,7 @@ void SdrTextObj::EndTextEdit(SdrOutliner& rOutl)
 			// Damit der grauen Feldhintergrund wieder verschwindet
 			rOutl.UpdateFields();
 
-			sal_uInt16 nParaAnz = static_cast< sal_uInt16 >( rOutl.GetParagraphCount() );
+			sal_uInt32 nParaAnz = rOutl.GetParagraphCount();
 			pNewText = rOutl.CreateParaObject( 0, nParaAnz );
 		}
 

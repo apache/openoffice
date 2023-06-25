@@ -107,31 +107,40 @@ void BitmapReadAccess::ImplCreate( Bitmap& rBitmap )
 			const long	nHeight = mpBuffer->mnHeight;
 			Scanline	pTmpLine = mpBuffer->mpBits;
 
-			mpScanBuf = new Scanline[ nHeight ];
-			maColorMask = mpBuffer->maColorMask;
+            try {
+                mpScanBuf = new Scanline[ nHeight ];
+            } catch (std::bad_alloc &) {
+                mpScanBuf = NULL;
+            }
+            if (mpScanBuf) {
+                maColorMask = mpBuffer->maColorMask;
 
-			if( BMP_SCANLINE_ADJUSTMENT( mpBuffer->mnFormat ) == BMP_FORMAT_TOP_DOWN )
-			{
-				for( long nY = 0L; nY < nHeight; nY++, pTmpLine += mpBuffer->mnScanlineSize )
-					mpScanBuf[ nY ] = pTmpLine;
-			}
-			else
-			{
-				for( long nY = nHeight - 1; nY >= 0; nY--, pTmpLine += mpBuffer->mnScanlineSize )
-					mpScanBuf[ nY ] = pTmpLine;
-			}
+                if( BMP_SCANLINE_ADJUSTMENT( mpBuffer->mnFormat ) == BMP_FORMAT_TOP_DOWN )
+                {
+                    for( long nY = 0L; nY < nHeight; nY++, pTmpLine += mpBuffer->mnScanlineSize )
+                        mpScanBuf[ nY ] = pTmpLine;
+                }
+                else
+                {
+                    for( long nY = nHeight - 1; nY >= 0; nY--, pTmpLine += mpBuffer->mnScanlineSize )
+                        mpScanBuf[ nY ] = pTmpLine;
+                }
 
-			if( !ImplSetAccessPointers( BMP_SCANLINE_FORMAT( mpBuffer->mnFormat ) ) )
-			{
-				delete[] mpScanBuf;
-				mpScanBuf = NULL;
+                if( !ImplSetAccessPointers( BMP_SCANLINE_FORMAT( mpBuffer->mnFormat ) ) )
+                {
+                    delete[] mpScanBuf;
+                    mpScanBuf = NULL;
 
-				pImpBmp->ImplReleaseBuffer( mpBuffer, !mbModify );
-				mpBuffer = NULL;
-			}
-			else
-				maBitmap = rBitmap;
-		}
+                    pImpBmp->ImplReleaseBuffer( mpBuffer, !mbModify );
+                    mpBuffer = NULL;
+                }
+                else
+                    maBitmap = rBitmap;
+            } else {
+                pImpBmp->ImplReleaseBuffer( mpBuffer, !mbModify );
+                mpBuffer = NULL;
+            }
+        }
 	}
 }
 

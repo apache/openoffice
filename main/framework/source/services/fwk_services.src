@@ -91,7 +91,7 @@ Resource RES_BACKING_IMAGES
 	};
 	Bitmap BMP_BACKING_EXT
 	{
-		File = "extension.png" ;
+		File = "extension_32.png" ;
 	};
 	Bitmap BMP_BACKING_REG
 	{
@@ -99,7 +99,7 @@ Resource RES_BACKING_IMAGES
 	};
 	Bitmap BMP_BACKING_INFO
 	{
-		File = "info_26.png" ;
+		File = "info_32.png" ;
 	};
 	Bitmap BMP_BACKING_TPLREP
 	{
@@ -163,19 +163,19 @@ Resource RES_BACKING_IMAGES_HC
 	};
 	Bitmap BMP_BACKING_EXT
 	{
-		File = "extension_hc.png" ;
+		File = "extension_32_hc.png" ;
 	};
 	Bitmap BMP_BACKING_REG
 	{
-		File = "register_hc.png" ;
+		File = "register_32_hc.png" ;
 	};
 	Bitmap BMP_BACKING_INFO
 	{
-		File = "info_hc.png" ;
+		File = "info_32_hc.png" ;
 	};
 	Bitmap BMP_BACKING_TPLREP
 	{
-		File = "template_hc.png" ;
+		File = "addtemplate_32_hc.png" ;
 	};
 	Bitmap BMP_BACKING_WRITER
 	{

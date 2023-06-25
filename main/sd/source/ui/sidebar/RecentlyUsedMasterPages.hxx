@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,74 +47,74 @@ namespace sd { namespace sidebar {
 /** This singleton holds a list of the most recently used master pages.
 */
 class RecentlyUsedMasterPages
-    : public SdGlobalResource
+	: public SdGlobalResource
 {
 public:
-    /** Return the single instance of this class.
-    */
-    static RecentlyUsedMasterPages& Instance (void);
+	/** Return the single instance of this class.
+	*/
+	static RecentlyUsedMasterPages& Instance (void);
 
-    void AddEventListener (const Link& rEventListener);
-    void RemoveEventListener (const Link& rEventListener);
-    
-    int GetMasterPageCount (void) const;
-    MasterPageContainer::Token GetTokenForIndex (sal_uInt32 nIndex) const;
+	void AddEventListener (const Link& rEventListener);
+	void RemoveEventListener (const Link& rEventListener);
+
+	int GetMasterPageCount (void) const;
+	MasterPageContainer::Token GetTokenForIndex (sal_uInt32 nIndex) const;
 
 private:
-    /** The single instance of this class.  It is created on demand when
-        Instance() is called for the first time.
-    */
-    static RecentlyUsedMasterPages* mpInstance;
+	/** The single instance of this class. It is created on demand when
+		Instance() is called for the first time.
+	*/
+	static RecentlyUsedMasterPages* mpInstance;
 
-    ::std::vector<Link> maListeners;
+	::std::vector<Link> maListeners;
 
-    class MasterPageList;
-    ::std::auto_ptr<MasterPageList> mpMasterPages;
-    unsigned long int mnMaxListSize;
-    ::boost::shared_ptr<MasterPageContainer> mpContainer;
-    
-    RecentlyUsedMasterPages (void);
-    virtual ~RecentlyUsedMasterPages (void);
+	class MasterPageList;
+	::std::auto_ptr<MasterPageList> mpMasterPages;
+	unsigned long int mnMaxListSize;
+	::boost::shared_ptr<MasterPageContainer> mpContainer;
 
-    /** Call this method after a new object has been created.
-    */
-    void LateInit (void);
+	RecentlyUsedMasterPages (void);
+	virtual ~RecentlyUsedMasterPages (void);
 
-    /// The copy constructor is not implemented.  Do not use!
-    RecentlyUsedMasterPages (const RecentlyUsedMasterPages&);
+	/** Call this method after a new object has been created.
+	*/
+	void LateInit (void);
 
-    /// The assignment operator is not implemented.  Do not use!
-    RecentlyUsedMasterPages& operator= (const RecentlyUsedMasterPages&);
+	/// The copy constructor is not implemented. Do not use!
+	RecentlyUsedMasterPages (const RecentlyUsedMasterPages&);
 
-    void SendEvent (void);
-    DECL_LINK(MasterPageChangeListener, MasterPageObserverEvent*);
-    DECL_LINK(MasterPageContainerChangeListener, MasterPageContainerChangeEvent*);
+	/// The assignment operator is not implemented. Do not use!
+	RecentlyUsedMasterPages& operator= (const RecentlyUsedMasterPages&);
 
-    /** Add a descriptor for the specified master page to the end of the
-        list of most recently used master pages.  When the page is already a
-        member of that list the associated descriptor is moved to the end of
-        the list to make it the most recently used entry.
-        @param bMakePersistent
-            When <TRUE/> is given then the new list of recently used master
-            pages is written back into the configuration to make it
-            persistent.  Giving <FALSE/> to ommit this is used while loading
-            the persistent list from the configuration.
-    */
-    void AddMasterPage (
-        MasterPageContainer::Token aToken,
-        bool bMakePersistent = true);
+	void SendEvent (void);
+	DECL_LINK(MasterPageChangeListener, MasterPageObserverEvent*);
+	DECL_LINK(MasterPageContainerChangeListener, MasterPageContainerChangeEvent*);
 
-    /** Load the list of recently used master pages from the registry where
-        it was saved to make it persistent.
-    */
-    void LoadPersistentValues (void);
+	/** Add a descriptor for the specified master page to the end of the
+		list of most recently used master pages. When the page is already a
+		member of that list the associated descriptor is moved to the end of
+		the list to make it the most recently used entry.
+		@param bMakePersistent
+			When <TRUE/> is given then the new list of recently used master
+			pages is written back into the configuration to make it
+			persistent. Giving <FALSE/> to omit this is used while loading
+			the persistent list from the configuration.
+	*/
+	void AddMasterPage (
+		MasterPageContainer::Token aToken,
+		bool bMakePersistent = true);
 
-    /** Save the list of recently used master pages to the registry to make
-        it presistent.
-    */
-    void SavePersistentValues (void);
+	/** Load the list of recently used master pages from the registry where
+		it was saved to make it persistent.
+	*/
+	void LoadPersistentValues (void);
 
-    void ResolveList (void);
+	/** Save the list of recently used master pages to the registry to make
+		it persistent.
+	*/
+	void SavePersistentValues (void);
+
+	void ResolveList (void);
 };
 
 

@@ -131,7 +131,7 @@ void FuExpandPage::DoExecute( SfxRequest& )
 			SfxItemSet aEmptyEEAttr(mpDoc->GetPool(), EE_ITEMS_START, EE_ITEMS_END);
 			sal_uLong nParaCount1 = pOutl->GetParagraphCount();
 
-			for (sal_uInt16 nPara = 0; nPara < nParaCount1; nPara++)
+			for (sal_uInt32 nPara = 0; nPara < nParaCount1; nPara++)
 			{
 				pOutl->QuickRemoveCharAttribs(nPara);
 				pOutl->SetParaAttribs(nPara, aEmptyEEAttr);
@@ -143,7 +143,7 @@ void FuExpandPage::DoExecute( SfxRequest& )
 			while (pPara)
 			{
 				sal_uLong nParaPos = pOutl->GetAbsPos( pPara );
-				sal_Int16 nDepth = pOutl->GetDepth( (sal_uInt16) nParaPos );
+				sal_Int16 nDepth = pOutl->GetDepth( nParaPos );
 				if ( nDepth == 0 )
 				{
 					// Seite mit Titel & Gliederung!
@@ -239,7 +239,7 @@ void FuExpandPage::DoExecute( SfxRequest& )
 						{
 							pTempOutl->SetDepth (
                                 pTempOutl->GetParagraph( nPara ), 
-                                pTempOutl->GetDepth((sal_uInt16) nPara ) - 1);
+                                pTempOutl->GetDepth( nPara ) - 1);
 						}
 
 						delete pOPO;

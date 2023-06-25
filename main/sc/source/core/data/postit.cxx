@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,13 +58,13 @@ using ::rtl::OUStringBuffer;
 
 namespace {
 
-const long SC_NOTECAPTION_WIDTH             =  2900;    /// Default width of note caption textbox.
-const long SC_NOTECAPTION_MAXWIDTH_TEMP     = 12000;    /// Maximum width of temporary note caption textbox.
-const long SC_NOTECAPTION_HEIGHT            =  1800;    /// Default height of note caption textbox.
-const long SC_NOTECAPTION_CELLDIST          =   600;    /// Default distance of note captions to border of anchor cell.
-const long SC_NOTECAPTION_OFFSET_Y          = -1500;    /// Default Y offset of note captions to top border of anchor cell.
-const long SC_NOTECAPTION_OFFSET_X          =  1500;    /// Default X offset of note captions to left border of anchor cell.
-const long SC_NOTECAPTION_BORDERDIST_TEMP   =   100;    /// Distance of temporary note captions to visible sheet area.
+const long SC_NOTECAPTION_WIDTH             =  2900; // Default width of note caption textbox.
+const long SC_NOTECAPTION_MAXWIDTH_TEMP     = 12000; // Maximum width of temporary note caption textbox.
+const long SC_NOTECAPTION_HEIGHT            =  1800; // Default height of note caption textbox.
+const long SC_NOTECAPTION_CELLDIST          =   600; // Default distance of note captions to border of anchor cell.
+const long SC_NOTECAPTION_OFFSET_Y          = -1500; // Default Y offset of note captions to top border of anchor cell.
+const long SC_NOTECAPTION_OFFSET_X          =  1500; // Default X offset of note captions to left border of anchor cell.
+const long SC_NOTECAPTION_BORDERDIST_TEMP   =   100; // Distance of temporary note captions to visible sheet area.
 
 // ============================================================================
 
@@ -72,16 +72,16 @@ const long SC_NOTECAPTION_BORDERDIST_TEMP   =   100;    /// Distance of temporar
 class ScCaptionUtil
 {
 public:
-    /** Moves the caption object to the correct layer according to passed visibility. */
-    static void         SetCaptionLayer( SdrCaptionObj& rCaption, bool bShown );
-    /** Sets basic caption settings required for note caption objects. */
-    static void         SetBasicCaptionSettings( SdrCaptionObj& rCaption, bool bShown );
-    /** Stores the cell position of the note in the user data area of the caption. */
-    static void         SetCaptionUserData( SdrCaptionObj& rCaption, const ScAddress& rPos );
-    /** Sets all default formatting attributes to the caption object. */
-    static void         SetDefaultItems( SdrCaptionObj& rCaption, ScDocument& rDoc );
-    /** Updates caption item set according to the passed item set while removing shadow items. */
-    static void         SetCaptionItems( SdrCaptionObj& rCaption, const SfxItemSet& rItemSet );
+	/** Moves the caption object to the correct layer according to passed visibility. */
+	static void         SetCaptionLayer( SdrCaptionObj& rCaption, bool bShown );
+	/** Sets basic caption settings required for note caption objects. */
+	static void         SetBasicCaptionSettings( SdrCaptionObj& rCaption, bool bShown );
+	/** Stores the cell position of the note in the user data area of the caption. */
+	static void         SetCaptionUserData( SdrCaptionObj& rCaption, const ScAddress& rPos );
+	/** Sets all default formatting attributes to the caption object. */
+	static void         SetDefaultItems( SdrCaptionObj& rCaption, ScDocument& rDoc );
+	/** Updates caption item set according to the passed item set while removing shadow items. */
+	static void         SetCaptionItems( SdrCaptionObj& rCaption, const SfxItemSet& rItemSet );
 };
 
 // ----------------------------------------------------------------------------
@@ -121,7 +121,7 @@ void ScCaptionUtil::SetDefaultItems( SdrCaptionObj& rCaption, ScDocument& rDoc )
     aTriangle.append( ::basegfx::B2DPoint( 20.0, 30.0 ) );
     aTriangle.setClosed( true );
     /*  #99319# Line ends are now created with an empty name. The
-        checkForUniqueItem() method then finds a unique name for the item's
+        checkForUniqueItem() method then finds a unique name for the items
         value. */
     aItemSet.Put( XLineStartItem( String::EmptyString(), ::basegfx::B2DPolyPolygon( aTriangle ) ) );
     aItemSet.Put( XLineStartWidthItem( 200 ) );
@@ -177,7 +177,7 @@ public:
 
     /** Returns the drawing layer page of the sheet contained in maPos. */
     SdrPage*            GetDrawPage();
-    /** Returns the caption drawing obejct. */
+    /** Returns the caption drawing object. */
     inline SdrCaptionObj* GetCaption() { return mpCaption; }
 
     /** Moves the caption inside the passed rectangle. Uses page area if 0 is passed. */
@@ -320,14 +320,14 @@ void ScCaptionCreator::AutoPlaceCaption( const Rectangle* pVisRect )
         // Y position according to top cell border
         aCaptPos.Y() = maCellRect.Top() + SC_NOTECAPTION_OFFSET_Y;
     }
-    else    // top or bottom placement
+    else // top or bottom placement
     {
         // X position
         aCaptPos.X() = maCellRect.Left() + SC_NOTECAPTION_OFFSET_X;
         // top placement, if possible
         if( bFitsTop )
             aCaptPos.Y() = maCellRect.Top() - SC_NOTECAPTION_CELLDIST - nHeight;
-        else    // bottom placement
+        else // bottom placement
             aCaptPos.Y() = maCellRect.Bottom() + SC_NOTECAPTION_CELLDIST;
     }
 
@@ -427,7 +427,7 @@ public:
 // ----------------------------------------------------------------------------
 
 ScNoteCaptionCreator::ScNoteCaptionCreator( ScDocument& rDoc, const ScAddress& rPos, ScNoteData& rNoteData ) :
-    ScCaptionCreator( rDoc, rPos )  // use helper c'tor that does not create the caption yet
+    ScCaptionCreator( rDoc, rPos ) // use helper c'tor that does not create the caption yet
 {
     SdrPage* pDrawPage = GetDrawPage();
     OSL_ENSURE( pDrawPage, "ScNoteCaptionCreator::ScNoteCaptionCreator - no drawing page" );
@@ -473,12 +473,12 @@ struct ScCaptionInitData
     typedef ::std::auto_ptr< SfxItemSet >           SfxItemSetPtr;
     typedef ::std::auto_ptr< OutlinerParaObject >   OutlinerParaObjPtr;
 
-    SfxItemSetPtr       mxItemSet;          /// Caption object formatting.
-    OutlinerParaObjPtr  mxOutlinerObj;      /// Text object with all text portion formatting.
-    ::rtl::OUString     maSimpleText;       /// Simple text without formatting.
-    Point               maCaptionOffset;    /// Caption position relative to cell corner.
-    Size                maCaptionSize;      /// Size of the caption object.
-    bool                mbDefaultPosSize;   /// True = use default position and size for caption.
+    SfxItemSetPtr       mxItemSet;          // Caption object formatting.
+    OutlinerParaObjPtr  mxOutlinerObj;      // Text object with all text portion formatting.
+    ::rtl::OUString     maSimpleText;       // Simple text without formatting.
+    Point               maCaptionOffset;    // Caption position relative to cell corner.
+    Size                maCaptionSize;      // Size of the caption object.
+    bool                mbDefaultPosSize;   // True = use default position and size for caption.
 
     explicit            ScCaptionInitData();
 };
@@ -565,7 +565,7 @@ OUString ScPostIt::GetText() const
     if( const EditTextObject* pEditObj = GetEditTextObject() )
     {
         OUStringBuffer aBuffer;
-        for( sal_uInt16 nPara = 0, nParaCount = pEditObj->GetParagraphCount(); nPara < nParaCount; ++nPara )
+        for( sal_uInt32 nPara = 0, nParaCount = pEditObj->GetParagraphCount(); nPara < nParaCount; ++nPara )
         {
             if( nPara > 0 )
                 aBuffer.append( sal_Unicode( '\n' ) );
@@ -797,7 +797,7 @@ SdrCaptionObj* ScNoteUtil::CreateTempCaption(
     if( pNote && !pNote->IsCaptionShown() )
     {
         if( aBuffer.getLength() > 0 )
-            aBuffer.appendAscii( RTL_CONSTASCII_STRINGPARAM( "\n--------\n" ) ).append( pNote->GetText() );
+            aBuffer.appendAscii( RTL_CONSTASCII_STRINGPARAM( "\n________\n" ) ).append( pNote->GetText() );
         pNoteCaption = pNote->GetOrCreateCaption( rPos );
     }
 

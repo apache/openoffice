@@ -27,8 +27,7 @@
 #include "globals.hrc"
 #include "app.hrc"
 #include "swerror.h"
-#include "comcore.hrc"// MS: 	Warum gibst auf der Core-Seite
-// 		jetzt Resourcen
+#include "comcore.hrc" // MS: Warum gibt es auf der Core-Seite jetzt Ressourcen
 
 /*--------------------------------------------------------------------
  Description: Strings
@@ -56,7 +55,7 @@ InfoBox ERR_CLPBRD_READ
 
 
 #define ERR_CODE( class, err )	(class | (err - ERROR_SW_BASE))
-#define WARN_CODE( class, err )	(class | ( err - WARN_SW_BASE))
+#define WARN_CODE( class, err )	(class | (err - WARN_SW_BASE))
 
 Resource RID_SW_ERRHDL
 {
@@ -91,7 +90,7 @@ Resource RID_SW_ERRHDL
 	};
 	String ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR )
 	{
-		Text [ en-US ] = "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again." ;
+		Text [ en-US ] = "This file was saved with Word in 'Fast Save' mode. Please unmark the Word option 'Allow Fast Saves' and save the file again." ;
 	};
 	String ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL )
 	{

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #ifndef _MSVBASIC_HXX
 #define _MSVBASIC_HXX
@@ -60,57 +58,57 @@ DECLARE_DYNARRAY(StringArray,String *)
 //
 typedef sal_Int32 ModType;
 typedef ::std::map< UniString,
-    ModType > ModuleTypeHash;
+	ModType > ModuleTypeHash;
 
 class VBA_Impl
 {
 public:
-    VBA_Impl(SvStorage &rIn, bool bCmmntd = true);
-    ~VBA_Impl();
-    //0 for failure, 1 for success
-    bool Open( const String &rToplevel, const String &rSublevel);
-    const StringArray & Decompress(sal_uInt16 nIndex, int *pOverflow=0);
-    sal_uInt16 GetNoStreams() const { return nOffsets; }
-    const String &GetStreamName(sal_uInt16 nIndex) const
-    {
-        DBG_ASSERT( nIndex < nOffsets, "Index out of range" );
-        return pOffsets[ nIndex ].sName;
-    }
-    //I'm the method that would be made virtual to make this class
-    //useful elsewhere
-    void Output(int len, const sal_uInt8 *data);
-    //
-    // #117718# member map of module names to types of module
-    ModType GetModuleType( const UniString& rModuleName );
-    std::vector<String> maReferences;
+	VBA_Impl(SvStorage &rIn, bool bCmmntd = true);
+	~VBA_Impl();
+	// 0 for failure, 1 for success
+	bool Open( const String &rToplevel, const String &rSublevel);
+	const StringArray & Decompress(sal_uInt16 nIndex, int *pOverflow=0);
+	sal_uInt16 GetNoStreams() const { return nOffsets; }
+	const String &GetStreamName(sal_uInt16 nIndex) const
+	{
+		DBG_ASSERT( nIndex < nOffsets, "Index out of range" );
+		return pOffsets[ nIndex ].sName;
+	}
+	// I'm the method that would be made virtual to make this class
+	// useful elsewhere
+	void Output(int len, const sal_uInt8 *data);
+	//
+	// #117718# member map of module names to types of module
+	ModType GetModuleType( const UniString& rModuleName );
+	std::vector<String> maReferences;
 private:
-    struct VBAOffset_Impl
-    {
-        String sName;
-        sal_uInt32 nOffset;
-    };
+	struct VBAOffset_Impl
+	{
+		String sName;
+		sal_uInt32 nOffset;
+	};
 
-    // #117718# member map of module names to types of module
-    ModuleTypeHash mhModHash;
-    SvStorageRef xVBA;
-    StringArray aVBAStrings;
-    String sComment;
-    SvStorageRef xStor;
-    VBAOffset_Impl *pOffsets;
-    sal_uInt16 nOffsets;
-    enum Limits {nWINDOWLEN = 4096};
-    sal_uInt8 aHistory[nWINDOWLEN];
-    rtl_TextEncoding meCharSet;
-    bool bCommented;
-    bool mbMac;
-    int nLines;
+	// #117718# member map of module names to types of module
+	ModuleTypeHash mhModHash;
+	SvStorageRef xVBA;
+	StringArray aVBAStrings;
+	String sComment;
+	SvStorageRef xStor;
+	VBAOffset_Impl *pOffsets;
+	sal_uInt16 nOffsets;
+	enum Limits {nWINDOWLEN = 4096};
+	sal_uInt8 aHistory[nWINDOWLEN];
+	rtl_TextEncoding meCharSet;
+	bool bCommented;
+	bool mbMac;
+	int nLines;
 
-    //0 for failure, anything else for success
-    int ReadVBAProject(const SvStorageRef &rxVBAStorage);
-    int DecompressVBA(int index, SvStorageStreamRef &rxVBAStream);
-    sal_uInt8 ReadPString(SvStorageStreamRef &xVBAProject, bool bIsUnicode);
+	// 0 for failure, anything else for success
+	int ReadVBAProject(const SvStorageRef &rxVBAStorage);
+	int DecompressVBA(int index, SvStorageStreamRef &rxVBAStream);
+	sal_uInt8 ReadPString(SvStorageStreamRef &xVBAProject, bool bIsUnicode);
 };
 
 #endif
 
-/* vi:set tabstop=4 shiftwidth=4 expandtab: */
+/* vim: set noet sw=4 ts=4: */

@@ -72,7 +72,7 @@ Resource RID_UUI_ERRHDL
 
 	String (ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK)
 	{
-		Text [ en-US ] = "You are about to save/export a password protected basic library containing module(s)\n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?" ;
+		Text [ en-US ] = "You are about to save/export a password protected BASIC library containing module(s)\n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?" ;
 	};
 
 	String (ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK)

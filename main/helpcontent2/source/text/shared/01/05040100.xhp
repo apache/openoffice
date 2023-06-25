@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
       <topic id="textshared0105040100xml" indexer="include" status="PUBLISH">
          <title xml-lang="en-US" id="tit">Organizer</title>
@@ -48,7 +47,7 @@
       <paragraph xml-lang="en-US" id="par_id3160481" role="paragraph" l10n="U" oldref="4"><ahelp hid="SFX2:EDIT:TP_MANAGE_STYLES:ED_NAME">Displays the name of the selected style. If you are creating or modifying a custom style, enter a name for the style. You cannot change the name of a predefined style.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_MANAGE_STYLES:CB_AUTO" id="bm_id8273873" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153750" role="heading" level="2" l10n="U"
-                 oldref="13"><switchinline select="appl"><caseinline select="WRITER">AutoUpdate 
+                 oldref="13"><switchinline select="appl"><caseinline select="WRITER">AutoUpdate
 </caseinline></switchinline></paragraph>
       <paragraph xml-lang="en-US" id="par_id3153749" role="paragraph" l10n="U" oldref="14"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="SFX2:CHECKBOX:TP_MANAGE_STYLES:CB_AUTO">Updates the style when you apply direct formatting to a paragraph using this style in your document. The formatting of all paragraphs using this style is automatically updated.</ahelp>
 </caseinline></switchinline></paragraph>
@@ -67,8 +66,8 @@
 <paragraph xml-lang="en-US" id="hd_id3153717" role="heading" level="2" l10n="U"
                  oldref="11">Contains</paragraph>
       <paragraph xml-lang="en-US" id="par_id3154306" role="paragraph" l10n="U" oldref="12"><ahelp hid="SFX2:MULTILINEEDIT:TP_MANAGE_STYLES:ED_DESC">Describes the relevant formatting used in the current style.</ahelp></paragraph>
-      <paragraph xml-lang="en-US" id="par_idN1072D" role="heading" level="2" l10n="NEW">Assign Shortcut Key</paragraph>
-      <paragraph xml-lang="en-US" id="par_idN10731" role="paragraph" l10n="NEW">Opens the <emph>Tools - Customize - Keyboard</emph> tab page where you can assign a shortcut key to the current Style.</paragraph>
+<!--      <paragraph xml-lang="en-US" id="par_idN1072D" role="heading" level="2" l10n="NEW">Assign Shortcut Key</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10731" role="paragraph" l10n="NEW">Opens the <emph>Tools - Customize - Keyboard</emph> tab page where you can assign a shortcut key to the current Style.</paragraph>-->
       <section id="relatedtopics">
          <paragraph xml-lang="en-US" id="par_id3145085" role="paragraph" l10n="C"><link href="text/swriter/01/05140000.xhp" name="Update Style">Update Style</link></paragraph>
       </section>

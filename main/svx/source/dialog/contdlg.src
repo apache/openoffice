@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,34 +7,35 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- // include ---------------------------------------------------------------
+
+// include ---------------------------------------------------------------
 #include "helpid.hrc"
 #include "contdlg.hrc"
 
 #define MASKCOLOR	MaskColor = Color { Red = 0xFFFF; Green = 0x0000; Blue = 0xFFFF; } ;
 
- // RID_SVXDLG_CONTOUR ----------------------------------------------------
+// RID_SVXDLG_CONTOUR ----------------------------------------------------
 FloatingWindow RID_SVXDLG_CONTOUR
 {
-    HelpID = "svx:FloatingWindow:RID_SVXDLG_CONTOUR";
+	HelpID = "svx:FloatingWindow:RID_SVXDLG_CONTOUR" ;
 	OutputSize = TRUE ;
 	Hide = TRUE ;
 	SVLook = TRUE ;
-	Pos = MAP_APPFONT ( 0 , 0 ) ;
-	Size = MAP_APPFONT ( 270 , 213 ) ;
+	Pos = MAP_APPFONT ( 0, 0 ) ;
+	Size = MAP_APPFONT ( 270, 213 ) ;
 	Text [ en-US ] = "Contour Editor" ;
 	Sizeable = TRUE ;
 	Moveable = TRUE ;
@@ -43,7 +44,7 @@ FloatingWindow RID_SVXDLG_CONTOUR
 	ToolBox TBX1
 	{
 		SVLook = TRUE ;
-		Pos = MAP_APPFONT ( 6 , 6 ) ;
+		Pos = MAP_APPFONT ( 6, 6 ) ;
 		HelpId = HID_CONTDLG_TOOLBOX ;
 		ItemList =
 		{
@@ -173,10 +174,10 @@ FloatingWindow RID_SVXDLG_CONTOUR
 	};
 	MetricField MTF_TOLERANCE
 	{
-	    HelpID = "svx:MetricField:RID_SVXDLG_CONTOUR:MTF_TOLERANCE";
+		HelpID = "svx:MetricField:RID_SVXDLG_CONTOUR:MTF_TOLERANCE" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 0 , 0 ) ;
-		Size = MAP_APPFONT ( 28 , 12 ) ;
+		Pos = MAP_APPFONT ( 0, 0 ) ;
+		Size = MAP_APPFONT ( 28, 12 ) ;
 		TabStop = TRUE ;
 		Repeat = TRUE ;
 		Spin = TRUE ;
@@ -190,42 +191,42 @@ FloatingWindow RID_SVXDLG_CONTOUR
 	{
 		Border = TRUE ;
 		SVLook = TRUE ;
-		Pos = MAP_APPFONT ( 6 , 24 ) ;
+		Pos = MAP_APPFONT ( 6, 24 ) ;
 		HelpId = HID_CONTDLG_GRAPHWND ;
 	};
 
-#define CONTOURDLG_IDLIST \
-        IdList =            \
-        {                   \
-			TBI_APPLY ;	\
-			TBI_WORKPLACE ;	\
-			TBI_SELECT ;	\
-			TBI_RECT ;	\
-			TBI_CIRCLE ;	\
-			TBI_POLY ;	\
-			TBI_POLYEDIT ;	\
-			TBI_POLYMOVE ;	\
-			TBI_POLYINSERT ; \
+#define CONTOURDLG_IDLIST		\
+		IdList =				\
+		{						\
+			TBI_APPLY ;			\
+			TBI_WORKPLACE ;		\
+			TBI_SELECT ;		\
+			TBI_RECT ;			\
+			TBI_CIRCLE ;		\
+			TBI_POLY ;			\
+			TBI_POLYEDIT ;		\
+			TBI_POLYMOVE ;		\
+			TBI_POLYINSERT ;	\
 			TBI_POLYDELETE ;	\
 			TBI_AUTOCONTOUR ;	\
-			TBI_UNDO ;	\
-			TBI_REDO ;	\
-			TBI_PIPETTE ; \
-        }; \
-        IdCount = { 14 ; };
+			TBI_UNDO ;			\
+			TBI_REDO ;			\
+			TBI_PIPETTE ;		\
+		}; \
+		IdCount = { 14 ; };
 
 	ImageList CD_IMAPDLG
 	{
-        Prefix = "cd";
+		Prefix = "cd" ;
 		MASKCOLOR
-        CONTOURDLG_IDLIST
-    };
-    ImageList CDH_IMAPDLG
+		CONTOURDLG_IDLIST
+	};
+	ImageList CDH_IMAPDLG
 	{
-        Prefix = "cdh";
+		Prefix = "cdh" ;
 		MASKCOLOR
-        CONTOURDLG_IDLIST
-    };
+		CONTOURDLG_IDLIST
+	};
 };
 /******************************************************************************/
 String STR_CONTOURDLG_MODIFY
@@ -244,42 +245,5 @@ String STR_CONTOURDLG_LINKED
 {
 	Text [ en-US ] = "This graphic object is linked to the document. Do you want to unlink the graphics in order to edit it?" ;
 };
-/******************************************************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF

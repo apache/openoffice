@@ -174,7 +174,7 @@ void FuInsertFile::DoExecute( SfxRequest& rReq )
 				if( pFilter )
 					xFilterManager->appendFilter( pFilter->GetUIName(), pFilter->GetDefaultExtension() );
 
-                // get Powerpoint filter
+                // get PowerPoint filter
                 aExt = UniString::CreateFromAscii( RTL_CONSTASCII_STRINGPARAM( ".ppt" ) );
 				pFilter = aMatch.GetFilter4Extension( aExt );
 				if( pFilter )
@@ -714,7 +714,7 @@ void FuInsertFile::InsTextOrRTFinOlMode(SfxMedium* pMedium)
 		while (pSourcePara)
 		{
 			sal_uLong nPos = pOutliner->GetAbsPos( pSourcePara );
-			sal_Int16 nDepth = pOutliner->GetDepth( (sal_uInt16) nPos );
+			sal_Int16 nDepth = pOutliner->GetDepth( nPos );
 
 			// den letzte Absatz nur uebernehmen, wenn er gefuellt ist
 			if (nSourcePos < nParaCount - 1 ||

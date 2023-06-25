@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -174,7 +174,7 @@ struct FontModel
     bool                mbItalic;           /// True = italic characters.
     bool                mbStrikeout;        /// True = Strike out characters.
     bool                mbOutline;          /// True = outlined characters.
-    bool                mbShadow;           /// True = shadowed chgaracters.
+    bool                mbShadow;           /// True = shadowed characters.
 
     explicit            FontModel();
 
@@ -241,7 +241,7 @@ struct ApiFontData
     sal_Int16           mnEscapement;       /// Escapement style.
     sal_Int8            mnEscapeHeight;     /// Escapement font height.
     bool                mbOutline;          /// True = outlined characters.
-    bool                mbShadow;           /// True = shadowed chgaracters.
+    bool                mbShadow;           /// True = shadowed characters.
 
     explicit            ApiFontData();
 };
@@ -778,7 +778,7 @@ public:
     inline const Alignment& getAlignment() const { return maAlignment; }
     /** Returns the cell protection data of this style. */
     inline const Protection& getProtection() const { return maProtection; }
-    /** Returns true, if any "attribute used" flags are ste in this XF. */
+    /** Returns true, if any "attribute used" flags are set in this XF. */
     bool                hasAnyUsedFlags() const;
 
     /** Writes all formatting attributes to the passed property map. */
@@ -1031,7 +1031,7 @@ public:
     XfRef               getCellXf( sal_Int32 nXfId ) const;
     /** Returns the specified style format object. */
     XfRef               getStyleXf( sal_Int32 nXfId ) const;
-    /** Returns the specified diferential cell format object. */
+    /** Returns the specified differential cell format object. */
     DxfRef              getDxf( sal_Int32 nDxfId ) const;
 
     /** Returns the font object of the specified cell XF. */

@@ -210,6 +210,7 @@ namespace slideshow
             }
 
             // redraw all view shapes, by calling their update() method
+            ViewShape::RenderArgs aViewRenderArgs = getViewRenderArgs();
             if( ::std::count_if( maViewShapes.begin(),
                                  maViewShapes.end(),
                                  ::boost::bind<bool>(
@@ -220,8 +221,7 @@ namespace slideshow
                                      										// the extra mem_fn. WTF.
                                      _1,
                                      ::boost::cref( mpCurrMtf ),
-                                     ::boost::cref(
-                                         getViewRenderArgs() ), 
+                                     ::boost::cref( aViewRenderArgs ),
                                      nUpdateFlags,
                                      isVisible() ) ) 
                 != static_cast<ViewShapeVector::difference_type>(maViewShapes.size()) )

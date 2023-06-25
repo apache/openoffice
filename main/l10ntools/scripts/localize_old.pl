@@ -118,7 +118,7 @@ sub splitfile{
             my $gid            = defined $7 ? $7 : '';
             my $lid            = defined $8 ? $8 : '';
             my $lang           = defined $12 ? $12 : '';
-            my $plattform      = defined $10 ? $10 : '';
+            my $platform       = defined $10 ? $10 : '';
             my $helpid         = defined $9 ? $9 : ''; 
            
             next if( $prj eq "binfilter" );     # Don't merge strings into binfilter module
@@ -145,7 +145,7 @@ sub splitfile{
             if( $lang eq "en-US" ){}
             elsif( $cur_sdffile eq $last_sdffile )
             { 
-                $block{ "$prj\t$file\t$type\t$gid\t$lid\t$helpid\t$plattform\t$lang" } =  $line ;
+                $block{ "$prj\t$file\t$type\t$gid\t$lid\t$helpid\t$platform\t$lang" } =  $line ;
             }
             else
             {
@@ -154,7 +154,7 @@ sub splitfile{
                 $last_sdffile = $cur_sdffile;
                 %block = ();
                 #if( ! $lang eq "en-US"  ) {  
-                $block{ "$prj\t$file\t$type\t$gid\t$lid\t$helpid\t$plattform\t$lang" } =  $line ; 
+                $block{ "$prj\t$file\t$type\t$gid\t$lid\t$helpid\t$platform\t$lang" } =  $line ; 
                 #}
 
             }
@@ -195,11 +195,11 @@ sub writesdf{
             my $gid            = defined $7 ? $7 : '';
             my $lid            = defined $8 ? $8 : '';
             my $lang           = defined $12 ? $12 : '';
-            my $plattform      = defined $10 ? $10 : ''; 
+            my $platform       = defined $10 ? $10 : ''; 
             my $helpid         = defined $9 ? $9 : '';
             
             chomp( $line );    
-            $index{ "$prj\t$file\t$type\t$gid\t$lid\t$helpid\t$plattform\t$lang" } =  $line ;
+            $index{ "$prj\t$file\t$type\t$gid\t$lid\t$helpid\t$platform\t$lang" } =  $line ;
             
          } #else { print STDOUT "writesdf REGEX kaputt $_\n";}
 
@@ -268,7 +268,7 @@ sub get_license_header{
 "#    #   #  #   #    #  ##  #   #    #      #      #   #    #      #    \n".
 "#    ####    ###     #   #   ###     #      #####  ####   #####    #    \n".
 "#\n".
-"#    DO NOT EDIT! This file will be overwritten by localisation process\n".
+"#    DO NOT EDIT! This file will be overwritten by localization process\n".
 "#\n".
 "#**************************************************************\n".
 "#  \n".
@@ -455,7 +455,7 @@ sub collectfiles{
                             my $gid            = defined $7 ? $7 : '';
                             my $lid            = defined $8 ? $8 : '';
                             my $lang           = defined $12 ? $12 : '';
-                            my $plattform      = defined $10 ? $10 : ''; 
+                            my $platform       = defined $10 ? $10 : ''; 
                             my $helpid         = defined $9 ? $9 : '';
                             
                             chomp( $line );
@@ -463,7 +463,7 @@ sub collectfiles{
                             if ( $lang eq $cur_lang ){
                                 # Overwrite fallback strings with collected strings
                                 #if( ( !has_two_sourcelanguages( $cur_lang) && $cur_lang eq "de" ) || $cur_lang ne "en-US" ){
-                                     $fallbackhashhash_ref->{ $cur_lang }{ $prj.$gid.$lid.$file.$type.$plattform.$helpid } =  $line ;
+                                     $fallbackhashhash_ref->{ $cur_lang }{ $prj.$gid.$lid.$file.$type.$platform.$helpid } =  $line ;
                                      #}
 
                             }
@@ -517,7 +517,7 @@ sub collectfiles{
                     my $gid            = defined $7 ? $7 : '';
                     my $lid            = defined $8 ? $8 : '';
                     #my $lang           = defined $12 ? $12 : '';
-                    my $plattform      = defined $10 ? $10 : ''; 
+                    my $platform       = defined $10 ? $10 : ''; 
                     my $helpid         = defined $9 ? $9 : '';
  
                     
@@ -535,16 +535,16 @@ sub collectfiles{
                     else {
                         foreach my $sLang ( keys( %{ $langhash_ref } ) ){
                             if( $sLang=~ /all/i )                       {  
-                                push @{ $output{ $prj.$gid.$lid.$file.$type.$plattform.$helpid } } ,  $leftpart."\t".$lang."\t".$rightpart.$extract_date ;
+                                push @{ $output{ $prj.$gid.$lid.$file.$type.$platform.$helpid } } ,  $leftpart."\t".$lang."\t".$rightpart.$extract_date ;
                                 #print DESTFILE $leftpart."\t".$lang."\t".$rightpart.$extract_date;  
                             }
                             #if( $sLang eq "de" && $lang eq "de" )       {  
-                            #    push @{ $output{ $prj.$gid.$lid.$file.$type.$plattform.$helpid } } ,  $leftpart."\t".$lang."\t".$rightpart.$extract_date ;
+                            #    push @{ $output{ $prj.$gid.$lid.$file.$type.$platform.$helpid } } ,  $leftpart."\t".$lang."\t".$rightpart.$extract_date ;
                                 #print DESTFILE $leftpart."\t".$lang."\t".$rightpart.$extract_date;  
                                 #}
                             if( $sLang eq "en-US" && $lang eq "en-US" ) {  
-                                push @order , $prj.$gid.$lid.$file.$type.$plattform.$helpid;
-                                if( !$bFakeEnglish ){ push @{ $output{ $prj.$gid.$lid.$file.$type.$plattform.$helpid } } ,  $leftpart."\t".$lang."\t".$rightpart.$extract_date ; }
+                                push @order , $prj.$gid.$lid.$file.$type.$platform.$helpid;
+                                if( !$bFakeEnglish ){ push @{ $output{ $prj.$gid.$lid.$file.$type.$platform.$helpid } } ,  $leftpart."\t".$lang."\t".$rightpart.$extract_date ; }
                                 #print DESTFILE $leftpart."\t".$lang."\t".$rightpart.$extract_date;  
                             }
 
@@ -567,7 +567,7 @@ sub collectfiles{
                     my $gid            = defined $7 ? $7 : '';
                     my $lid            = defined $8 ? $8 : '';
                     #my $lang           = defined $12 ? $12 : '';
-                    my $plattform      = defined $10 ? $10 : ''; 
+                    my $platform       = defined $10 ? $10 : ''; 
                     my $helpid         = defined $9 ? $9 : '';
  
                     
@@ -581,7 +581,7 @@ sub collectfiles{
                     }
 
                     if( ! ( $prj =~ /binfilter/i ) ) { 
-                        push @{ $output{ $prj.$gid.$lid.$file.$type.$plattform.$helpid } } , $leftpart."\t".$lang."\t".$rightpart.$extract_date ; 
+                        push @{ $output{ $prj.$gid.$lid.$file.$type.$platform.$helpid } } , $leftpart."\t".$lang."\t".$rightpart.$extract_date ; 
                         #print DESTFILE $leftpart."\t".$lang."\t".$rightpart.$extract_date ; 
                     }
                  }
@@ -629,10 +629,10 @@ sub remove_obsolete{
                 my $type           = defined $6 ? $6 : '';
                 my $gid            = defined $7 ? $7 : '';
                 my $lid            = defined $8 ? $8 : '';
-                my $plattform      = defined $10 ? $10 : ''; 
+                my $platform       = defined $10 ? $10 : ''; 
                 my $helpid         = defined $9 ? $9 : '';
                 
-                my $leftpart = $prj.$gid.$lid.$file.$type.$plattform.$helpid;
+                my $leftpart = $prj.$gid.$lid.$file.$type.$platform.$helpid;
                 
                 if( $language eq "en-US" ){                 # source string found, 1. entry
                     $enusleftpart = $leftpart;
@@ -842,12 +842,12 @@ sub read_file{
             my $type           = defined $6 ? $6 : '';
             my $gid            = defined $7 ? $7 : '';
             my $lid            = defined $8 ? $8 : '';
-            my $plattform      = defined $10 ? $10 : '';
+            my $platform       = defined $10 ? $10 : '';
             my $lang           = defined $12 ? $12 : '';
             my $helpid         = defined $9 ? $9 : '';
             
             foreach my $isolang ( keys ( %{ $langhash_ref } ) ){
-                if( $isolang=~ /$lang/i || $isolang=~ /all/i ) { $block{$prj.$gid.$lid.$file.$type.$plattform.$helpid } =  $line ; }
+                if( $isolang=~ /$lang/i || $isolang=~ /all/i ) { $block{$prj.$gid.$lid.$file.$type.$platform.$helpid } =  $line ; }
             }
         }
     }
@@ -872,14 +872,14 @@ sub read_fallbacks_from_particles{
                     my $gid            = defined $7 ? $7 : '';
                     my $lid            = defined $8 ? $8 : '';
                     my $lang           = defined $12 ? $12 : '';
-                    my $plattform      = defined $10 ? $10 : ''; 
+                    my $platform       = defined $10 ? $10 : ''; 
                     my $helpid         = defined $9 ? $9 : '';
                           
                     chomp( $line );
              
                     foreach my $isolang ( @{$isolanglist_ref}  ){
                         if( $isolang=~ /$lang/i ) { 
-                            $fallbackhashhash_ref->{ $isolang }{ $prj.$gid.$lid.$file.$type.$plattform.$helpid } =  $line ; 
+                            $fallbackhashhash_ref->{ $isolang }{ $prj.$gid.$lid.$file.$type.$platform.$helpid } =  $line ; 
                         }
                     }
                 }
@@ -909,10 +909,10 @@ sub read_fallbacks_from_source{
             my $lid            = defined $8 ? $8 : '';
             my $helpid         = defined $9 ? $9 : '';
             my $lang           = defined $12 ? $12 : '';
-            my $plattform      = defined $10 ? $10 : '';
+            my $platform       = defined $10 ? $10 : '';
             
             chomp( $line ); 
-            if( $isolang=~ /$lang/i ) { $fallbackhashhash_ref->{ $isolang }{ $prj.$gid.$lid.$file.$type.$plattform.$helpid } =  $line ; 
+            if( $isolang=~ /$lang/i ) { $fallbackhashhash_ref->{ $isolang }{ $prj.$gid.$lid.$file.$type.$platform.$helpid } =  $line ; 
             }
         }
     }
@@ -1048,7 +1048,7 @@ sub usage{
 #            my $gid            = defined $7 ? $7 : '';
 #            my $lid            = defined $8 ? $8 : '';
 #            my $helpid         = defined $9 ? $9 : '';
-#            my $plattform      = defined $10 ? $10 : '';
+#            my $platform       = defined $10 ? $10 : '';
 #            my $width          = defined $11 ? $11 : '';
 #            my $lang           = defined $12 ? $12 : '';
 #            my $rightpart      = defined $13 ? $13 : '';

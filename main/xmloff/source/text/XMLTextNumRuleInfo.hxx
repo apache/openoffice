@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ class XMLTextNumRuleInfo
     const ::rtl::OUString msPropNameListId;
     const ::rtl::OUString msPropNameStartWith;
     // --> OD 2008-11-26 #158694#
-    const ::rtl::OUString msContinueingPreviousSubTree;
+    const ::rtl::OUString msContinuingPreviousSubTree;
     const ::rtl::OUString msListLabelStringProp;
     // <--
 
@@ -77,7 +77,7 @@ class XMLTextNumRuleInfo
     // <--
 
     // --> OD 2008-11-26 #158694#
-    sal_Bool mbContinueingPreviousSubTree;
+    sal_Bool mbContinuingPreviousSubTree;
     ::rtl::OUString msListLabelString;
     // <--
 public:
@@ -145,9 +145,9 @@ public:
     }
 
     // --> OD 2008-11-26 #158694#
-    inline sal_Bool IsContinueingPreviousSubTree() const
+    inline sal_Bool IsContinuingPreviousSubTree() const
     {
-        return mbContinueingPreviousSubTree;
+        return mbContinuingPreviousSubTree;
     }
     inline const ::rtl::OUString& ListLabelString() const
     {
@@ -170,7 +170,7 @@ inline XMLTextNumRuleInfo& XMLTextNumRuleInfo::operator=(
     mbOutlineStyleAsNormalListStyle = rInfo.mbOutlineStyleAsNormalListStyle;
     // <--
     // --> OD 2008-11-26 #158694#
-    mbContinueingPreviousSubTree = rInfo.mbContinueingPreviousSubTree;
+    mbContinuingPreviousSubTree = rInfo.mbContinuingPreviousSubTree;
     msListLabelString = rInfo.msListLabelString;
     // <--
 
@@ -189,7 +189,7 @@ inline void XMLTextNumRuleInfo::Reset()
     mbOutlineStyleAsNormalListStyle = sal_False;
     // <--
     // --> OD 2008-11-26 #158694#
-    mbContinueingPreviousSubTree = sal_False;
+    mbContinuingPreviousSubTree = sal_False;
     msListLabelString = ::rtl::OUString();
     // <--
 }

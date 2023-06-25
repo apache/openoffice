@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns:c="urn:schemas-microsoft-com:office:component:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+    <Colors>
+      <Color>
+        <Index>3</Index>
+        <RGB>#c0c0c0</RGB>
+      </Color>
+    </Colors>
+  </OfficeDocumentSettings>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <WindowHeight>9000</WindowHeight>
+    <WindowWidth>13860</WindowWidth>
+    <WindowTopX>240</WindowTopX>
+    <WindowTopY>75</WindowTopY>
+    <ProtectStructure>False</ProtectStructure>
+    <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Default"/>
+    <Style ss:ID="Result" ss:Name="Result">
+      <Font ss:Bold="1" ss:Italic="1" ss:Underline="Single"/>
+    </Style>
+    <Style ss:ID="Result2" ss:Name="Result2">
+      <Font ss:Bold="1" ss:Italic="1" ss:Underline="Single"/>
+    </Style>
+    <Style ss:ID="Heading" ss:Name="Heading">
+      <Alignment ss:Horizontal="Center"/>
+      <Font ss:Bold="1" ss:Italic="1" ss:Size="16"/>
+    </Style>
+    <Style ss:ID="Heading1" ss:Name="Heading1">
+      <Alignment ss:Horizontal="Center" ss:Rotate="90"/>
+      <Font ss:Bold="1" ss:Italic="1" ss:Size="16"/>
+    </Style>
+    <Style ss:ID="co1"/>
+    <Style ss:ID="co2"/>
+    <Style ss:ID="ta1"/>
+    <Style ss:ID="ce1"/>
+    <Style ss:ID="T1">
+      <Font ss:VerticalAlign="Subscript"/>
+    </Style>
+  </Styles>
+  <ss:Worksheet ss:Name="Sheet1">
+    <Table ss:StyleID="ta1">
+      <Column ss:Width="218.4408"/>
+      <Column ss:Span="1022" ss:Width="64.26"/>
+      <Row ss:Height="12.1032">
+        <Cell ss:StyleID="ce1">
+          <Data ss:Type="String">TestID</Data>
+        </Cell>
+        <Cell ss:StyleID="ce1">
+          <Data ss:Type="String">TestOK</Data>
+        </Cell>
+        <Cell ss:Index="10">
+          <Data ss:Type="String">wrapped!</Data>
+        </Cell>
+        <Cell ss:Index="25">
+          <Data ss:Type="String">Y test</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Z test</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">AA test</Data>
+        </Cell>
+        <Cell ss:Index="1024">
+          <Data ss:Type="String">AMJ test</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="12.1032">
+        <Cell>
+          <Data ss:Type="String">Y2=Y1?</Data>
+        </Cell>
+        <Cell ss:Formula="=R2C25=R1C25">
+          <Data ss:Type="Boolean">1</Data>
+        </Cell>
+        <Cell ss:Index="25" ss:Formula="=R[-1]C">
+          <Data ss:Type="String">Y test</Data>
+        </Cell>
+        <Cell ss:Formula="=R[-1]C">
+          <Data ss:Type="String">Z test</Data>
+        </Cell>
+        <Cell ss:Formula="=R[-1]C">
+          <Data ss:Type="String">AA test</Data>
+        </Cell>
+        <Cell ss:Index="1024" ss:Formula="=R[-1]C">
+          <Data ss:Type="String">AMJ test</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="13.4064">
+        <Cell>
+          <ss:Data xmlns="http://www.w3.org/TR/REC-html40" ss:Type="String">Z2=Z1? (26th column.)</ss:Data>
+        </Cell>
+        <Cell ss:Formula="=R2C26=R1C26">
+          <Data ss:Type="Boolean">1</Data>
+        </Cell>
+        <Cell ss:Index="1024"/>
+      </Row>
+      <Row ss:Height="12.1032">
+        <Cell>
+          <Data ss:Type="String">AA2=AA1?</Data>
+        </Cell>
+        <Cell ss:Formula="=R2C27=R1C27">
+          <Data ss:Type="Boolean">1</Data>
+        </Cell>
+        <Cell ss:Index="1024"/>
+      </Row>
+      <Row ss:Height="13.4064">
+        <Cell>
+          <ss:Data xmlns="http://www.w3.org/TR/REC-html40" ss:Type="String">AMJ2=AMJ1? (1024th column.)</ss:Data>
+        </Cell>
+        <Cell ss:Formula="=R2C1024=R1C1024">
+          <Data ss:Type="Boolean">1</Data>
+        </Cell>
+        <Cell ss:Index="1024"/>
+      </Row>
+    </Table>
+    <x:WorksheetOptions/>
+  </ss:Worksheet>
+</Workbook>

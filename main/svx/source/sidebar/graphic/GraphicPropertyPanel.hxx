@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #ifndef SVX_PROPERTYPANEL_GRAPHICPAGE_HXX
 #define SVX_PROPERTYPANEL_GRAPHICPAGE_HXX
@@ -102,7 +104,7 @@ private:
     cssu::Reference<css::frame::XFrame>                 mxFrame;
     SfxBindings*                                        mpBindings;
     ::sfx2::sidebar::GridLayouter maLayouter;
-    
+
     DECL_LINK( ModifyBrightnessHdl, void * );
     DECL_LINK( ModifyContrastHdl, void * );
     DECL_LINK( ModifyTransHdl, void * );
@@ -113,7 +115,7 @@ private:
     DECL_LINK( BlueHdl, void*);
     DECL_LINK( GammaHdl, void*);
 
-    // constructor/destuctor
+    // constructor/destructor
     GraphicPropertyPanel(
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,

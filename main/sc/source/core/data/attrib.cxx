@@ -795,8 +795,8 @@ void lcl_SetSpace( String& rStr, const ESelection& rSel )
 sal_Bool lcl_ConvertFields(EditEngine& rEng, const String* pCommands)
 {
 	sal_Bool bChange = sal_False;
-	sal_uInt16 nParCnt = rEng.GetParagraphCount();
-	for (sal_uInt16 nPar = 0; nPar<nParCnt; nPar++)
+	sal_uInt32 nParCnt = rEng.GetParagraphCount();
+	for (sal_uInt32 nPar = 0; nPar<nParCnt; nPar++)
 	{
 		String aStr = rEng.GetText( nPar );
 		xub_StrLen nPos;
@@ -930,7 +930,7 @@ SfxPoolItem* ScPageHFItem::Create( SvStream& rStream, sal_uInt16 nVer ) const
 //UNUSED2009-05 class ScFieldChangerEditEngine : public ScEditEngineDefaulter
 //UNUSED2009-05 {
 //UNUSED2009-05     TypeId      aExtFileId;
-//UNUSED2009-05     sal_uInt16      nConvPara;
+//UNUSED2009-05     sal_uInt32      nConvPara;
 //UNUSED2009-05     xub_StrLen  nConvPos;
 //UNUSED2009-05     sal_Bool        bConvert;
 //UNUSED2009-05 
@@ -938,7 +938,7 @@ SfxPoolItem* ScPageHFItem::Create( SvStream& rStream, sal_uInt16 nVer ) const
 //UNUSED2009-05     ScFieldChangerEditEngine( SfxItemPool* pEnginePool, sal_Bool bDeleteEnginePool );
 //UNUSED2009-05     virtual     ~ScFieldChangerEditEngine() {}
 //UNUSED2009-05 
-//UNUSED2009-05     virtual String  CalcFieldValue( const SvxFieldItem& rField, sal_uInt16 nPara,
+//UNUSED2009-05     virtual String  CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara,
 //UNUSED2009-05                                     sal_uInt16 nPos, Color*& rTxtColor,
 //UNUSED2009-05                                     Color*& rFldColor );
 //UNUSED2009-05 
@@ -956,7 +956,7 @@ SfxPoolItem* ScPageHFItem::Create( SvStream& rStream, sal_uInt16 nVer ) const
 //UNUSED2009-05 }
 //UNUSED2009-05 
 //UNUSED2009-05 String ScFieldChangerEditEngine::CalcFieldValue( const SvxFieldItem& rField,
-//UNUSED2009-05             sal_uInt16 nPara, sal_uInt16 nPos, Color*& /* rTxtColor */, Color*& /* rFldColor */ )
+//UNUSED2009-05             sal_uInt32 nPara, sal_uInt16 nPos, Color*& /* rTxtColor */, Color*& /* rFldColor */ )
 //UNUSED2009-05 {
 //UNUSED2009-05     const SvxFieldData* pFieldData = rField.GetField();
 //UNUSED2009-05     if ( pFieldData && pFieldData->Type() == aExtFileId )

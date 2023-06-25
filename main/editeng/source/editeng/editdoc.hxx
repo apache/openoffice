@@ -28,6 +28,7 @@
 #include <com/sun/star/i18n/XExtendedInputSequenceChecker.hpp>
 #endif
 
+#include <baselist.hxx>
 #include <editattr.hxx>
 #include <edtspell.hxx>
 #include <editeng/svxfont.hxx>
@@ -58,11 +59,11 @@ class EditDoc;
 
 struct EPaM
 {
-	sal_uInt16 nPara;
+	sal_uInt32 nPara;
 	sal_uInt16 nIndex;
 
 	EPaM()								{ nPara = 0; nIndex = 0; }
-	EPaM( sal_uInt16 nP, sal_uInt16 nI )		{ nPara = nP; nIndex = nI; }
+	EPaM( sal_uInt32 nP, sal_uInt16 nI )		{ nPara = nP; nIndex = nI; }
 	EPaM( const EPaM& r)				{ nPara = r.nPara; nIndex = r.nIndex; }
 	EPaM& operator = ( const EPaM& r )	{ nPara = r.nPara; nIndex = r.nIndex; return *this; }
 	inline sal_Bool operator == ( const EPaM& r ) const;
@@ -281,14 +282,13 @@ public:
 };
 
 typedef ContentNode* ContentNodePtr;
-SV_DECL_PTRARR( DummyContentList, ContentNodePtr, 0, 4 )
 
-class ContentList : public DummyContentList
+class ContentList : public BaseList<ContentNode>
 {
-  sal_uInt16 nLastCache;
+    sal_uInt32 nLastCache;
 public:
-  ContentList() : DummyContentList( 0, 4 ), nLastCache(0) {}
-  sal_uInt16 GetPos( const ContentNodePtr &rPtr ) const;
+    ContentList() : nLastCache(0) {}
+    sal_uInt32 GetPos( const ContentNodePtr &rPtr ) const;
 };
 
 // -------------------------------------------------------------------------
@@ -447,8 +447,8 @@ private:
 	sal_uInt16			nStartPosX;
 	sal_uInt16			nStart;		// koennte durch nStartPortion ersetzt werden
 	sal_uInt16			nEnd;       // koennte durch nEndPortion ersetzt werden
-	sal_uInt16			nStartPortion;
-	sal_uInt16 			nEndPortion;
+	sal_uInt16			nStartPortion; // index of TextPortion in TextPortionList
+	sal_uInt16 			nEndPortion; // index of TextPortion in TextPortionList
 	sal_uInt16			nHeight;	// Gesamthoehe der Zeile
 	sal_uInt16			nTxtHeight;	// Reine Texthoehe
 	sal_uInt16			nCrsrHeight;	// Bei Konturfluss hohe Zeilen => Cursor zu gro?.
@@ -609,26 +609,25 @@ public:
 };
 
 typedef ParaPortion* ParaPortionPtr;
-SV_DECL_PTRARR( DummyParaPortionList, ParaPortionPtr, 0, 4 )
 
 // -------------------------------------------------------------------------
 // class ParaPortionList
 // -------------------------------------------------------------------------
-class ParaPortionList : public DummyParaPortionList
+class ParaPortionList : public BaseList<ParaPortion>
 {
-	sal_uInt16 nLastCache;
+	sal_uInt32 nLastCache;
 public:
 					ParaPortionList();
 					~ParaPortionList();
 
 	void			Reset();
 	long			GetYOffset( ParaPortion* pPPortion );
-	sal_uInt16			FindParagraph( long nYOffset );
+	sal_uInt32			FindParagraph( long nYOffset );
 
-	inline ParaPortion*	SaveGetObject( sal_uInt16 nPos ) const
+	inline ParaPortion*	SaveGetObject( sal_uInt32 nPos ) const
 		{ return ( nPos < Count() ) ? GetObject( nPos ) : 0; }
 
-	sal_uInt16                  GetPos( const ParaPortionPtr &rPtr ) const;
+	sal_uInt32                  GetPos( const ParaPortionPtr &rPtr ) const;
 
 	// temporaer:
 	void			DbgCheck( EditDoc& rDoc );
@@ -674,15 +673,15 @@ class DeletedNodeInfo
 {
 private:
 	sal_uIntPtr 	nInvalidAdressPtr;
-	sal_uInt16	nInvalidParagraph;
+	sal_uInt32	nInvalidParagraph;
 
 public:
-			DeletedNodeInfo( sal_uIntPtr nInvAdr, sal_uInt16 nPos )
+			DeletedNodeInfo( sal_uIntPtr nInvAdr, sal_uInt32 nPos )
 											{ 	nInvalidAdressPtr = nInvAdr;
 												nInvalidParagraph = nPos; }
 
 	sal_uIntPtr	GetInvalidAdress()				{	return nInvalidAdressPtr; }
-	sal_uInt16	GetPosition()					{	return nInvalidParagraph; }
+	sal_uInt32	GetPosition()					{	return nInvalidParagraph; }
 };
 
 typedef DeletedNodeInfo* DeletedNodeInfoPtr;
@@ -742,7 +741,7 @@ public:
 	String			GetText( LineEnd eEnd ) const;
 	sal_uLong			GetTextLen() const;
 
-	XubString 		GetParaAsString( sal_uInt16 nNode ) const;
+	XubString 		GetParaAsString( sal_uInt32 nNode ) const;
 	XubString 		GetParaAsString( ContentNode* pNode, sal_uInt16 nStartPos = 0, sal_uInt16 nEndPos = 0xFFFF, sal_Bool bResolveFields = sal_True ) const;
 
 	inline EditPaM	GetStartPaM() const;
@@ -760,8 +759,8 @@ public:
 	sal_Bool			RemoveAttribs( ContentNode* pNode, sal_uInt16 nStart, sal_uInt16 nEnd, EditCharAttrib*& rpStarting, EditCharAttrib*& rpEnding, sal_uInt16 nWhich = 0 );
 	void			FindAttribs( ContentNode* pNode, sal_uInt16 nStartPos, sal_uInt16 nEndPos, SfxItemSet& rCurSet );
 
-	sal_uInt16			GetPos( ContentNode* pNode ) const { return ContentList::GetPos(pNode); }
-	ContentNode*	SaveGetObject( sal_uInt16 nPos ) const { return ( nPos < Count() ) ? GetObject( nPos ) : 0; }
+	sal_uInt32			GetPos( ContentNode* pNode ) const { return ContentList::GetPos(pNode); }
+	ContentNode*	SaveGetObject( sal_uInt32 nPos ) const { return ( nPos < Count() ) ? GetObject( nPos ) : 0; }
 
 	static XubString	GetSepStr( LineEnd eEnd );
 };

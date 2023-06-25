@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,22 +9,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Validate" script:language="StarBasic">
 &apos;############################################
 &apos;  VALIDATION ROUTINES
-&apos;
-&apos;  May, 19 2004 - fpe
 &apos;############################################
 
 Dim sSwitchType As String
@@ -55,7 +53,7 @@ Sub Validate
 		Exit Sub
 	End If
 
-	oDoc = StarDesktop.CurrentComponent	
+	oDoc = StarDesktop.CurrentComponent
 	sSwitchType = &quot;&quot;
 	sCaseType = &quot;&quot;
 	sDefaultType = &quot;&quot;
@@ -65,13 +63,13 @@ Sub Validate
 
 	CheckMetaData(oDoc)
 	CheckHeading(oDoc)
-	
+
 	Enum = oDoc.Text.createEnumeration
 	Do While Enum.hasMoreElements
 
 		TextElement = Enum.nextElement
 		If TextElement.supportsService(&quot;com.sun.star.text.Paragraph&quot;) Then		&apos; we are a paragraph
-	
+
 			CheckSwitches(TextElement)
 			CheckParaID(TextElement)
 			CheckParaFormat(TextElement)
@@ -86,7 +84,7 @@ Sub Validate
 
 			CheckCell(TextElement)
 		End If
-	Loop	
+	Loop
 
 	If sCaseType &lt;&gt; &quot;&quot; Then
 		Terminate(&quot;Previous case (&quot;+sCaseType+&quot;) not closed!&quot;,TextElement)
@@ -99,13 +97,13 @@ Sub Validate
 	If sSwitchType &lt;&gt; &quot;&quot; Then
 		Terminate(&quot;Previous switch (&quot;+sSwitchType+&quot;) not closed!&quot;,TextElement)
 	End If
-	
+
 	If ubound(aTagsOpen()) &gt; 0 Then
 		Terminate(&quot;Element &quot;+aTagsOpen(ubound(aTagsOpen()))+&quot; not closed&quot;,TextElement)
 	End If
-	
+
 	msgbox(&quot;Validation finished.&quot;)
-		
+
 End Sub
 
 &apos;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -115,17 +113,17 @@ End Sub
 
 Sub CheckCell(TE As Object)
 	On Local Error Goto ERRHANDLE:
-	
+
 	CellName = &quot;A1&quot;
 	Cell = TE.getCellByName(CellName)
 	tmpCellEnum = Cell.createEnumeration
 	tmpCellElement = tmpCellEnum.nextElement
-	
+
 	Rows = TE.getRows
 	Cols = TE.getColumns
 
 	ReDim aCellTagsOpen(0)
-	
+
 	For RowIndex = 1 to Rows.getCount()
 
 		For ColIndex = 1 to Cols.getCount()
@@ -147,7 +145,7 @@ Sub CheckCell(TE As Object)
 				EndIf
 
 			Loop
-			
+
 			If sCellCaseType &lt;&gt; &quot;&quot; Then
 				Terminate(&quot;Previous case (&quot;+sCellCaseType+&quot;) not closed!&quot;,CellElement)
 			End If
@@ -155,11 +153,11 @@ Sub CheckCell(TE As Object)
 			If sCellSwitchType &lt;&gt; &quot;&quot; Then
 				Terminate(&quot;Previous switch (&quot;+sCellSwitchType+&quot;) not closed!&quot;,CellElement)
 			End If
-			
+
 			If ubound(aCellTagsOpen()) &gt; 0 Then
 				Terminate(&quot;Element &quot;+aCellTagsOpen(ubound(aCellTagsOpen()))+&quot; not closed&quot;,CellElement)
 			End If
-	
+
 		Next
 	Next
 
@@ -179,7 +177,7 @@ Sub CheckParaID(TE As Object)
 	If Left(TE.ParaStyleName,4) = &quot;hlp_&quot; AND Not(Left(TE.ParaStyleName,8) = &quot;hlp_aux_&quot;) Then
 
 		sText = TE.GetString
-        
+
 		If sText = &quot;&quot; Then
 			If bWarnEmptyPara Then
 				Warn(&quot;Empty Paragraph&quot;,&quot;Empty paragraphs should be avoided. Do not use empty paragraphs for formatting purpose.&quot;,TE)
@@ -209,7 +207,7 @@ Sub CheckParaID(TE As Object)
 
 			If posID = 0 Then
 				If bWarnParaNoID Then
-	 				Warn(&quot;Paragraph has no id.&quot;,&quot;IDs will be assigned on safe. You can also assign an ID using the Assign Paragraph ID menu item&quot;,TPE)
+	 				Warn(&quot;Paragraph has no id.&quot;,&quot;IDs will be assigned on save. You can also assign an ID using the Assign Paragraph ID menu item&quot;,TPE)
 	 				bWarnParaNoID = FALSE
 					InsertNewParaData
 	 			Else
@@ -263,7 +261,7 @@ Sub CheckSwitches(TE As Object)
 			End If
 
 		End If	&apos; OPENING SWITCH
-			
+
 		If Left(sText,8) = &quot;&lt;/SWITCH&quot; Then								&apos; a closing switch tag
 
 			If sSwitchType = &quot;&quot; Then									&apos; there was no switch open
@@ -272,7 +270,7 @@ Sub CheckSwitches(TE As Object)
 				If not(bCaseSet OR bDefaultSet) Then
 					Terminate(&quot;Empty switch&quot;,TE)
 				End If
-			
+
 				If sCaseType &lt;&gt; &quot;&quot; Then									&apos; there is still a case open
 					Terminate(&quot;Previous case (&quot;+sCaseType+&quot;) not closed!&quot;,TE)
 				End If
@@ -280,11 +278,11 @@ Sub CheckSwitches(TE As Object)
 				bDefaultSet = FALSE
 				bCaseSet = FALSE
 			End If
-					
+
 		End If  &apos; CLOSING SWITCH
-		
+
 		If Left(sText,6) = &quot;&lt;CASE &quot; Then								&apos; an opening case tag
-					
+
 			If bDefaultSet Then
 				Terminate(&quot;No case after default allowed.&quot;,TE)
 			End If
@@ -301,7 +299,7 @@ Sub CheckSwitches(TE As Object)
 			End If
 
 		End If  &apos; OPENING CASE
-				
+
 		If Left(sText,6) = &quot;&lt;/CASE&quot; Then								&apos; a closing case tag
 
 			If sCaseType = &quot;&quot; Then
@@ -311,7 +309,7 @@ Sub CheckSwitches(TE As Object)
 			End If
 
 		End If  &apos; CLOSING  CASE
-				
+
 		If Left(sText,8) = &quot;&lt;DEFAULT&quot; Then								&apos; an opening default tag
 
 			If sCaseType = &quot;&quot; Then
@@ -319,7 +317,7 @@ Sub CheckSwitches(TE As Object)
 					Terminate(&quot;Multiple default not allowed.&quot;,TE)
 				Else
 					sDefaultType = &quot;DEFAULT&quot;
-								
+
 					If sSwitchType = &quot;&quot; Then
 						Terminate(&quot;Default without switch&quot;,TE)
 					End If
@@ -331,7 +329,7 @@ Sub CheckSwitches(TE As Object)
 			End If
 
 		End If  &apos; OPENING CASE
-				
+
 		If Left(sText,9) = &quot;&lt;/DEFAULT&quot; Then								&apos; a closing default tag
 
 			If sDefaultType &lt;&gt; &quot;DEFAULT&quot; Then
@@ -345,7 +343,7 @@ Sub CheckSwitches(TE As Object)
 		If (sSwitchType &lt;&gt; &quot;&quot; AND sCaseType = &quot;&quot; AND sDefaultType = &quot;&quot;) Then
 			Terminate(&quot;Nothing allowed between switch and case or default or /case or /default and /switch&quot;, TE)
 		End If
-	End If		
+	End If
 
 End Sub
 
@@ -372,7 +370,7 @@ Sub CheckSwitchesInCell(CE As Object)
 			End If
 
 		End If	&apos; OPENING SWITCH
-			
+
 		If Left(sText,8) = &quot;&lt;/SWITCH&quot; Then								&apos; a closing switch tag
 
 			If sCellSwitchType = &quot;&quot; Then									&apos; there was no switch open
@@ -381,7 +379,7 @@ Sub CheckSwitchesInCell(CE As Object)
 				If not(bCellCaseSet OR bCellDefaultSet) Then
 					Terminate(&quot;Empty switch&quot;,CE)
 				End If
-			
+
 				If sCellCaseType &lt;&gt; &quot;&quot; Then									&apos; there is still a case open
 					Terminate(&quot;Previous case (&quot;+sCellCaseType+&quot;) not closed!&quot;,CE)
 				End If
@@ -389,9 +387,9 @@ Sub CheckSwitchesInCell(CE As Object)
 				bCellDefaultSet = FALSE
 				bCellCaseSet = FALSE
 			End If
-					
+
 		End If  &apos; CLOSING SWITCH
-		
+
 		If Left(sText,6) = &quot;&lt;CASE &quot; Then								&apos; an opening case tag
 
 			If bCellDefaultSet Then
@@ -410,7 +408,7 @@ Sub CheckSwitchesInCell(CE As Object)
 			End If
 
 		End If  &apos; OPENING CASE
-				
+
 		If Left(sText,6) = &quot;&lt;/CASE&quot; Then								&apos; a closing case tag
 
 			If sCellCaseType = &quot;&quot; Then
@@ -420,7 +418,7 @@ Sub CheckSwitchesInCell(CE As Object)
 			End If
 
 		End If  &apos; CLOSING  CASE
-				
+
 		If Left(sText,8) = &quot;&lt;DEFAULT&quot; Then								&apos; an opening default tag
 
 			If sCellCaseType = &quot;&quot; Then
@@ -428,7 +426,7 @@ Sub CheckSwitchesInCell(CE As Object)
 					Terminate(&quot;Multiple default not allowed.&quot;,CE)
 				Else
 					sCellDefaultType = &quot;DEFAULT&quot;
-								
+
 					If sCellSwitchType = &quot;&quot; Then
 						Terminate(&quot;Default without switch&quot;,CE)
 					End If
@@ -440,7 +438,7 @@ Sub CheckSwitchesInCell(CE As Object)
 			End If
 
 		End If  &apos; OPENING CASE
-				
+
 		If Left(sText,9) = &quot;&lt;/DEFAULT&quot; Then								&apos; a closing default tag
 
 			If sCellDefaultType &lt;&gt; &quot;DEFAULT&quot; Then
@@ -454,7 +452,7 @@ Sub CheckSwitchesInCell(CE As Object)
 		If (sCellSwitchType &lt;&gt; &quot;&quot; AND sCellCaseType = &quot;&quot; AND sCellDefaultType = &quot;&quot;) Then
 			Terminate(&quot;Nothing allowed between switch and case or default or /case or /default and /switch&quot;, CE)
 		End If
-	End If		
+	End If
 
 
 End Sub
@@ -466,7 +464,7 @@ End Sub
 Sub Terminate(sStr As String, TE As Object)
 
 	oCur = TE.getText.createTextCursorByRange(TE)
-	thiscomponent.getcurrentcontroller.select(oCur)					
+	thiscomponent.getcurrentcontroller.select(oCur)
 	msgbox sStr,48,&quot;D&apos;oh!&quot;
 	Stop
 
@@ -487,7 +485,7 @@ Sub Warn(sWarn As String, sSolv As String, Optional TE As Object)
 
 		If not(IsMissing(TE)) Then
 			oCur = TE.getText.createTextCursorByRange(TE)
-			thiscomponent.getcurrentcontroller.select(oCur)					
+			thiscomponent.getcurrentcontroller.select(oCur)
 		End If
 
 		If oDialog.Execute() = 1 Then
@@ -539,7 +537,7 @@ Sub CheckMetaData(oDoc As Object)
 	End If
 
 	sIndex = oDoc.DocumentInfo.GetUserFieldValue(0)
-	
+
 End Sub
 
 &apos;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -554,10 +552,10 @@ End Sub
 &apos;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Sub CheckInlineTags(TE As Object)
 
-	
+
 
 	If Left(TE.ParaStyleName,4)=&quot;hlp_&quot; AND (Left(TE.ParaStyleName,8)&lt;&gt;&quot;hlp_aux_&quot; OR TE.ParaStyleName=&quot;hlp_aux_bookmark&quot;) Then
-	
+
 		Dim aTokens(0) As Object
 		Dim aInlineTagsOpen(0) As String
 		TP = TE.createEnumeration
@@ -570,63 +568,63 @@ Sub CheckInlineTags(TE As Object)
 
 		For i=1 to ubound(aTokens())
 			Token = aTokens(i)
-			
+
 			If Token.supportsService(&quot;com.sun.star.text.TextField&quot;) Then
 				sTag = Token.TextField.TextFieldMaster.Name
-			
+
 				If Right(sTag,1)=&quot;_&quot; Then   &apos; a tag starts
-		
+
 					sTagName = Left(sTag,Len(sTag)-1)
-					
+
 					&apos; check for forbidden tags in paragraphs
 					sTagFormat = TagFormatIsCorrect(sTagName, TE.ParaStyleName)
 					If sTagFormat &lt;&gt; &quot;&quot; Then
 						Terminate(sTagName+&quot; element has wrong paragraph style (&quot;+TE.ParaStyleName+&quot;).&quot;+chr(13)+&quot;Must be &quot;+sTagFormat,Token)
 					End If
-					
+
 					sDim = ubound(aInlineTagsOpen())+1
 					Redim Preserve aInlineTagsOpen(sDim) as String
 					aInlineTagsOpen(sDim)=sTagName
 
 				ElseIf Left(sTag,1)=&quot;_&quot; Then  &apos; a tag ends, all other cases are empty tags
-		
+
 					sTagName = Right(sTag,Len(sTag)-1)
-					
+
 					&apos; check for forbidden tags in paragraphs
 					sTagFormat = TagFormatIsCorrect(sTagName, TE.ParaStyleName)
 					If sTagFormat &lt;&gt; &quot;&quot; Then
 						Terminate(sTagName+&quot; element has wrong paragraph style (&quot;+TE.ParaStyleName+&quot;).&quot;+chr(13)+&quot;Must be &quot;+sTagFormat,Token)
 					End If
-					
+
 					If ubound(aInlineTagsOpen()) &gt; 0 Then
 						If aInlineTagsOpen(ubound(aInlineTagsOpen())) &lt;&gt; sTagName Then
-							Terminate(&quot;Inline Element &quot;+aInlineTagsOpen(ubound(aInlineTagsOpen()))+&quot; not closed&quot;,Token)							
+							Terminate(&quot;Inline Element &quot;+aInlineTagsOpen(ubound(aInlineTagsOpen()))+&quot; not closed&quot;,Token)
 						End If
 						sDim = ubound(aInlineTagsOpen())-1
 					Else
 						Terminate(&quot;No opening tag for &quot;+sTagName,Token)
 					End If
 					Redim Preserve aInlineTagsOpen(sDim) as String
-	
+
 				Else &apos; empty tag
 					sTagName = sTag
 					sTagFormat = TagFormatIsCorrect(sTagName, TE.ParaStyleName)
 					If sTagFormat &lt;&gt; &quot;&quot; Then
 						Terminate(sTagName+&quot; element has wrong paragraph style (&quot;+TE.ParaStyleName+&quot;).&quot;+chr(13)+&quot;Must be &quot;+sTagFormat,Token)
 					End If
-				
+
 				EndIf
 			ElseIf (i &gt; 1) AND (Trim(Token.String) &lt;&gt; &quot;&quot;) Then
 				If aInlineTagsOpen(ubound(aInlineTagsOpen())) = &quot;SWITCHINLINE&quot; Then
 					Terminate(&quot;No text allowed here.&quot;,Token)
 				End If
 			End If
-		Next 
-	
+		Next
+
 	If ubound(aInlineTagsOpen()) &gt; 0 Then
 		Terminate(&quot;Inline Element &quot;+aInlineTagsOpen(ubound(aInlineTagsOpen()))+&quot; not closed&quot;,Token)
 	End If
-	
+
 	End If
 End Sub
 
@@ -644,14 +642,14 @@ Sub CheckTags(TE As Object)
 		If TPE.supportsService(&quot;com.sun.star.text.TextField&quot;) Then
 			sTag = TPE.TextField.TextFieldMaster.Name
 			If Right(sTag,1)=&quot;_&quot; Then   &apos; a tag starts
-		
+
 				sTagName = Left(sTag,Len(sTag)-1)
 				sDim = ubound(aTagsOpen())+1
 				Redim Preserve aTagsOpen(sDim) as String
 				aTagsOpen(sDim)=sTagName
-				
+
 			ElseIf Left(sTag,1)=&quot;_&quot; Then  &apos; a tag ends, all other cases are empty tags
-		
+
 				sTagName = Right(sTag,Len(sTag)-1)
 				If ubound(aTagsOpen()) &gt; 0 Then
 					If aTagsOpen(ubound(aTagsOpen())) &lt;&gt; sTagName Then
@@ -665,7 +663,7 @@ Sub CheckTags(TE As Object)
 				Redim Preserve aTagsOpen(sDim) as String
 
 			Else &apos; empty tags
-		
+
 			EndIf
 		End If
 	Wend
@@ -686,14 +684,14 @@ Sub CheckTagsInCell(CE As Object)
 		If CPE.supportsService(&quot;com.sun.star.text.TextField&quot;) Then
 			sTag = CPE.TextField.TextFieldMaster.Name
 			If Right(sTag,1)=&quot;_&quot; Then   &apos; a tag starts
-		
+
 				sTagName = Left(sTag,Len(sTag)-1)
 				sDim = ubound(aCellTagsOpen())+1
 				Redim Preserve aCellTagsOpen(sDim) as String
 				aCellTagsOpen(sDim)=sTagName
-				
+
 			ElseIf Left(sTag,1)=&quot;_&quot; Then  &apos; a tag ends, all other cases are empty tags
-		
+
 				sTagName = Right(sTag,Len(sTag)-1)
 				If ubound(aCellTagsOpen()) &gt; 0 Then
 					If aCellTagsOpen(ubound(aCellTagsOpen())) &lt;&gt; sTagName Then

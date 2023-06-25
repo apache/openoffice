@@ -148,7 +148,7 @@ public:
 	virtual void NbcSetOutlinerParaObject(OutlinerParaObject* pTextObject);
 	virtual OutlinerParaObject* GetOutlinerParaObject() const;
 
-	virtual FASTBOOL CalcFieldValue(const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos,
+	virtual FASTBOOL CalcFieldValue(const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos,
 		FASTBOOL bEdit, Color*& rpTxtColor, Color*& rpFldColor, String& rRet) const;
 
     // #i97878#

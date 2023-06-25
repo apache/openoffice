@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
@@ -77,7 +79,7 @@ void impAddB2DPolygonToGDIPlusGraphicsPathReal(Gdiplus::GraphicsPath& rPath, con
 		        const basegfx::B2DPoint aCb(rPolygon.getPrevControlPoint(nNextIndex));
 
 		        rPath.AddBezier(
-			        aFCurr, 
+			        aFCurr,
 			        Gdiplus::PointF(Gdiplus::REAL(aCa.getX()), Gdiplus::REAL(aCa.getY())),
 			        Gdiplus::PointF(Gdiplus::REAL(aCb.getX()), Gdiplus::REAL(aCb.getY())),
 			        aFNext);
@@ -123,7 +125,7 @@ void impAddB2DPolygonToGDIPlusGraphicsPathInteger(Gdiplus::GraphicsPath& rPath, 
 		        const basegfx::B2DPoint aCb(rPolygon.getPrevControlPoint(nNextIndex));
 
 		        rPath.AddBezier(
-			        aICurr, 
+			        aICurr,
 			        Gdiplus::Point(INT(aCa.getX()), INT(aCa.getY())),
 			        Gdiplus::Point(INT(aCb.getX()), INT(aCb.getY())),
 			        aINext);
@@ -184,9 +186,9 @@ bool WinSalGraphics::drawPolyPolygon( const ::basegfx::B2DPolyPolygon& rPolyPoly
             // Normally GdiPlus should not be used for printing at all since printers cannot
             // print transparent filled polygon geometry and normally this does not happen
             // since OutputDevice::RemoveTransparenciesFromMetaFile is used as preparation
-            // and no transparent parts should remain for printing. But this can be overriden
-            // by the user and thus happens. This call can only come (currently) from 
-            // OutputDevice::DrawTransparent, see comments sthere with the same TaskID.
+            // and no transparent parts should remain for printing. But this can be overridden
+            // by the user and thus happens. This call can only come (currently) from
+            // OutputDevice::DrawTransparent, see comments there with the same TaskID.
             // If it is used, the mapping for the printer is wrong and needs to be corrected. I
             // checked that there is *no* transformation set (testcode commented out below) and
             // estimated that a stable factor dependent of the printer's DPI is used. Create
@@ -211,14 +213,14 @@ bool WinSalGraphics::drawPolyPolygon( const ::basegfx::B2DPolyPolygon& rPolyPoly
  	return true;
 }
 
-bool WinSalGraphics::drawPolyLine( 
-    const basegfx::B2DPolygon& rPolygon, 
-    double fTransparency, 
-    const basegfx::B2DVector& rLineWidths, 
-    basegfx::B2DLineJoin eLineJoin,
-    com::sun::star::drawing::LineCap eLineCap)
+bool WinSalGraphics::drawPolyLine(
+	const basegfx::B2DPolygon& rPolygon,
+	double fTransparency,
+	const basegfx::B2DVector& rLineWidths,
+	basegfx::B2DLineJoin eLineJoin,
+	com::sun::star::drawing::LineCap eLineCap)
 {
-    const sal_uInt32 nCount(rPolygon.count());
+	const sal_uInt32 nCount(rPolygon.count());
 
 	if(mbPen && nCount)
 	{
@@ -294,7 +296,7 @@ bool WinSalGraphics::drawPolyLine(
             // #i101491# needed to create the correct line joins
             aPath.CloseFigure();
         }
-		
+
         if(getAntiAliasB2DDraw())
         {
     		aGraphics.SetSmoothingMode(Gdiplus::SmoothingModeAntiAlias);
@@ -321,7 +323,7 @@ void paintToGdiPlus(
     Gdiplus::PointF aDestPoints[3];
     Gdiplus::ImageAttributes aAttributes;
 
-    // define target region as paralellogram
+    // define target region as parallelogram
     aDestPoints[0].X = Gdiplus::REAL(rTR.mnDestX);
     aDestPoints[0].Y = Gdiplus::REAL(rTR.mnDestY);
     aDestPoints[1].X = Gdiplus::REAL(rTR.mnDestX + rTR.mnDestWidth);
@@ -332,7 +334,7 @@ void paintToGdiPlus(
     aAttributes.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
 
     rGraphics.DrawImage(
-        &rBitmap, 
+        &rBitmap,
         aDestPoints,
         3,
         Gdiplus::REAL(rTR.mnSrcX),
@@ -388,15 +390,15 @@ bool WinSalGraphics::tryDrawBitmapGdiPlus(const SalTwoRect& rTR, const SalBitmap
             Gdiplus::Graphics aGraphics(getHDC());
 
             setInterpolationMode(
-                aGraphics, 
+                aGraphics,
                 rTR.mnSrcWidth,
-                rTR.mnDestWidth, 
+                rTR.mnDestWidth,
                 rTR.mnSrcHeight,
                 rTR.mnDestHeight);
 
             paintToGdiPlus(
-                aGraphics, 
-                rTR, 
+                aGraphics,
+                rTR,
                 *aARGB.get());
 
             return true;
@@ -406,9 +408,9 @@ bool WinSalGraphics::tryDrawBitmapGdiPlus(const SalTwoRect& rTR, const SalBitmap
     return false;
 }
 
-bool WinSalGraphics::drawAlphaBitmap( 
+bool WinSalGraphics::drawAlphaBitmap(
     const SalTwoRect& rTR,
-    const SalBitmap& rSrcBitmap, 
+    const SalBitmap& rSrcBitmap,
     const SalBitmap& rAlphaBmp)
 {
     if(rTR.mnSrcWidth && rTR.mnSrcHeight && rTR.mnDestWidth && rTR.mnDestHeight)
@@ -422,15 +424,15 @@ bool WinSalGraphics::drawAlphaBitmap(
             Gdiplus::Graphics aGraphics(getHDC());
 
             setInterpolationMode(
-                aGraphics, 
+                aGraphics,
                 rTR.mnSrcWidth,
-                rTR.mnDestWidth, 
+                rTR.mnDestWidth,
                 rTR.mnSrcHeight,
                 rTR.mnDestHeight);
 
             paintToGdiPlus(
-                aGraphics, 
-                rTR, 
+                aGraphics,
+                rTR,
                 *aARGB.get());
 
             return true;
@@ -470,13 +472,13 @@ bool WinSalGraphics::drawTransformedBitmap(
                 Gdiplus::ImageAttributes aAttributes;
 
                 setInterpolationMode(
-                    aGraphics, 
+                    aGraphics,
                     nSrcWidth,
-                    nDestWidth, 
+                    nDestWidth,
                     nSrcHeight,
                     nDestHeight);
 
-                // this mode is only capable of drawing the whole bitmap to a paralellogram
+                // this mode is only capable of drawing the whole bitmap to a parallelogram
                 aDestPoints[0].X = Gdiplus::REAL(rNull.getX());
                 aDestPoints[0].Y = Gdiplus::REAL(rNull.getY());
                 aDestPoints[1].X = Gdiplus::REAL(rX.getX());
@@ -487,8 +489,8 @@ bool WinSalGraphics::drawTransformedBitmap(
                 aAttributes.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
 
                 aGraphics.DrawImage(
-                    aARGB.get(), 
-                    aDestPoints, 
+                    aARGB.get(),
+                    aDestPoints,
                     3,
                     Gdiplus::REAL(0.0),
                     Gdiplus::REAL(0.0),
@@ -507,5 +509,4 @@ bool WinSalGraphics::drawTransformedBitmap(
     return false;
 }
 
-// -----------------------------------------------------------------------
-// eof
+/* vim: set noet sw=4 ts=4: */

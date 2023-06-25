@@ -1010,7 +1010,7 @@ OutlinerParaObject* SdrTextObj::GetEditOutlinerParaObject() const
 	OutlinerParaObject* pPara=NULL;
 	if( HasTextImpl( pEdtOutl ) )
 	{
-		sal_uInt16 nParaAnz = static_cast< sal_uInt16 >( pEdtOutl->GetParagraphCount() );
+		sal_uInt32 nParaAnz = pEdtOutl->GetParagraphCount();
 		pPara = pEdtOutl->CreateParaObject(0, nParaAnz);
 	}
 	return pPara;

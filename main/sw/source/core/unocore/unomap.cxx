@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -150,7 +150,7 @@ SwUnoPropertyMapProvider::~SwUnoPropertyMapProvider()
         { SW_PROP_NMID(UNO_NAME_PARA_IS_NUMBERING_RESTART), FN_NUMBER_NEWSTART,     CPPU_E2T(CPPUTYPE_BOOLEAN),     PropertyAttribute::MAYBEVOID, 0 }, \
         { SW_PROP_NMID(UNO_NAME_PARA_CONTINUEING_PREVIOUS_SUB_TREE), FN_UNO_PARA_CONT_PREV_SUBTREE, CPPU_E2T(CPPUTYPE_BOOLEAN), PropertyAttribute::READONLY, 0 }, \
         { SW_PROP_NMID(UNO_NAME_PARA_LIST_LABEL_STRING), FN_UNO_PARA_NUM_STRING, CPPU_E2T(CPPUTYPE_OUSTRING), PropertyAttribute::READONLY, 0 }, \
-		{ SW_PROP_NMID(UNO_NAME_OUTLINE_LEVEL), RES_PARATR_OUTLINELEVEL,        CPPU_E2T(CPPUTYPE_INT16),                PropertyAttribute::MAYBEVOID,     0}, //#outline level, zhaojianwei
+		{ SW_PROP_NMID(UNO_NAME_OUTLINE_LEVEL), RES_PARATR_OUTLINELEVEL,        CPPU_E2T(CPPUTYPE_INT16),                PropertyAttribute::MAYBEVOID,     0}, // #outline level, zhaojianwei
 
 #define COMMON_HYPERLINK_PROPERTIES \
         { SW_PROP_NMID(UNO_NAME_HYPER_LINK_U_R_L), RES_TXTATR_INETFMT,          CPPU_E2T(CPPUTYPE_OUSTRING), PropertyAttribute::MAYBEVOID ,MID_URL_URL},                \
@@ -615,7 +615,7 @@ const SfxItemPropertyMapEntry* SwUnoPropertyMapProvider::GetPropertyMapEntries(s
                     { SW_PROP_NMID(UNO_NAME_PARA_CHAPTER_NUMBERING_LEVEL), FN_UNO_PARA_CHAPTER_NUMBERING_LEVEL,CPPU_E2T(CPPUTYPE_INT8), PROPERTY_NONE, 0},                                                     \
                     { SW_PROP_NMID(UNO_NAME_PARA_CONDITIONAL_STYLE_NAME), RES_FRMATR_CONDITIONAL_STYLE_NAME,        CPPU_E2T(CPPUTYPE_OUSTRING),         PropertyAttribute::MAYBEVOID|PropertyAttribute::READONLY,   0},                       \
 					{ SW_PROP_NMID(UNO_NAME_PARA_IS_NUMBERING_RESTART), FN_NUMBER_NEWSTART,     CPPU_E2T(CPPUTYPE_BOOLEAN),     PropertyAttribute::MAYBEVOID, 0 },                       \
-					{ SW_PROP_NMID(UNO_NAME_OUTLINE_LEVEL), RES_PARATR_OUTLINELEVEL,        CPPU_E2T(CPPUTYPE_INT16),                PropertyAttribute::MAYBEVOID,     0}, //#outline level,zhaojianwei
+					{ SW_PROP_NMID(UNO_NAME_OUTLINE_LEVEL), RES_PARATR_OUTLINELEVEL,        CPPU_E2T(CPPUTYPE_INT16),                PropertyAttribute::MAYBEVOID,     0}, // #outline level,zhaojianwei
                     COMMON_CRSR_PARA_PROPERTIES_WITHOUT_FN
                     TABSTOPS_MAP_ENTRY
                     COMMON_TEXT_CONTENT_PROPERTIES
@@ -992,8 +992,8 @@ const SfxItemPropertyMapEntry* SwUnoPropertyMapProvider::GetPropertyMapEntries(s
                     FILL_PROPERTIES_SW
 
                     //UUUU Added DrawingLayer FillStyle Properties for Header. These need an own unique name,
-                    // but reuse the same WhichIDs as the regular fill. The implementation will decide to which 
-                    // group of fill properties it belongs based on the start of the name (was already done in 
+                    // but reuse the same WhichIDs as the regular fill. The implementation will decide to which
+                    // group of fill properties it belongs based on the start of the name (was already done in
                     // the implementation partially), thus all SlotNames *have* to start with 'Header'
                     { SW_PROP_NMID(UNO_NAME_HEADER_FILLBMP_LOGICAL_SIZE),           XATTR_FILLBMP_SIZELOG,          CPPU_E2T(CPPUTYPE_BOOLEAN) ,        0,  0},
                     { SW_PROP_NMID(UNO_NAME_HEADER_FILLBMP_OFFSET_X),               XATTR_FILLBMP_TILEOFFSETX,      CPPU_E2T(CPPUTYPE_INT32) ,          0,  0},
@@ -3339,4 +3339,3 @@ sal_Bool SwItemPropertySet::FillItem(SfxItemSet& /*rSet*/, sal_uInt16 /*nWhich*/
 	}*/
 	return bRet;
 }
-

@@ -251,4 +251,4 @@ $(MYZIPTARGET) : $(BIN)/unowinreg.dll $(DESTCLASSESLIST)
 	cd $(MYZIPDIR) && zip $(MYZIPFLAGS) ../../../bin/$(MYZIPTARGET:b) $(MYZIPLIST)
 .ENDIF
 
-# vim: set noet ts=4 sw=4:
+# vim: set noet sw=4 ts=4:

@@ -28,7 +28,7 @@
 	Text [ en-US ] = "Text Flow" ; \
 
 /**************************************************************************/
-/*                                                                        */
+/*
 /**************************************************************************/
 TabDialog DLG_FORMAT_TABLE
 {
@@ -74,7 +74,7 @@ TabDialog DLG_FORMAT_TABLE
 	};
 };
 /**************************************************************************/
-/*                                                                        */
+/*
 /**************************************************************************/
 TabPage TP_FORMAT_TABLE
 {
@@ -316,14 +316,14 @@ TabPage TP_FORMAT_TABLE
 		Hide = TRUE ;
 	StringList [ en-US ] =
 	{
-		 < "Left-to-right" ; 0; > ;
-		< "Right-to-left" ; 1; > ;
-		< "Use superordinate object settings" ; 4; > ;
+		< "Left-to-right" ; 0;						> ;
+		< "Right-to-left" ; 1;						> ;
+		< "Use superordinate object settings" ; 4;	> ;
 	};
 	};
 };
 /**************************************************************************/
-/*                                                                        */
+/*
 /**************************************************************************/
 TabPage TP_TABLE_COLUMN
 {
@@ -565,7 +565,7 @@ TabPage TP_TABLE_COLUMN
 	};
 };
 /**************************************************************************/
-/* Text flow                                                              */
+/* Text flow
 /**************************************************************************/
 TabPage TP_TABLE_TEXTFLOW
 {
@@ -582,7 +582,7 @@ TabPage TP_TABLE_TEXTFLOW
 	CheckBox CB_PAGEBREAK
 	{
 		HelpID = "sw:CheckBox:TP_TABLE_TEXTFLOW:CB_PAGEBREAK" ;
-		 //			Disable = TRUE ;
+		//		Disable = TRUE ;
 		Pos = MAP_APPFONT ( 12, 14 ) ;
 		Size = MAP_APPFONT ( 90, 8 ) ;
 		Text [ en-US ] = "~Break" ;
@@ -601,7 +601,7 @@ TabPage TP_TABLE_TEXTFLOW
 	RadioButton RB_BREAKCOLUMN
 	{
 		HelpID = "sw:RadioButton:TP_TABLE_TEXTFLOW:RB_BREAKCOLUMN" ;
-		 //			Disable = TRUE ;
+		//		Disable = TRUE ;
 		Pos = MAP_APPFONT ( 178, 14 ) ;
 		Size = MAP_APPFONT ( 70, 10 ) ;
 		Text [ en-US ] = "Col~umn" ;
@@ -609,7 +609,7 @@ TabPage TP_TABLE_TEXTFLOW
 	RadioButton RB_PAGEBREAKBEFORE
 	{
 		HelpID = "sw:RadioButton:TP_TABLE_TEXTFLOW:RB_PAGEBREAKBEFORE" ;
-		 //			Disable = TRUE ;
+		//		Disable = TRUE ;
 		Pos = MAP_APPFONT ( 105, 28 ) ;
 		Size = MAP_APPFONT ( 70, 10 ) ;
 		Text [ en-US ] = "Be~fore" ;
@@ -619,7 +619,7 @@ TabPage TP_TABLE_TEXTFLOW
 	RadioButton RB_PAGEBREAKAFTER
 	{
 		HelpID = "sw:RadioButton:TP_TABLE_TEXTFLOW:RB_PAGEBREAKAFTER" ;
-		 //			Disable = TRUE ;
+		//		Disable = TRUE ;
 		Pos = MAP_APPFONT ( 178, 28 ) ;
 		Size = MAP_APPFONT ( 70, 10 ) ;
 		Text [ en-US ] = "~After" ;
@@ -627,7 +627,7 @@ TabPage TP_TABLE_TEXTFLOW
 	CheckBox CB_PAGECOLL
 	{
 		HelpID = "sw:CheckBox:TP_TABLE_TEXTFLOW:CB_PAGECOLL" ;
-		 //			Disable = TRUE ;
+		//		Disable = TRUE ;
 		Pos = MAP_APPFONT ( 12, 44 ) ;
 		Size = MAP_APPFONT ( 90, 10 ) ;
 		Text [ en-US ] = "With Page St~yle" ;

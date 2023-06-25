@@ -70,9 +70,13 @@ public class TestFormulaDocs {
 				{"uno/sc/fvt/FormulaTest1.ods", "FormulaTest1.ods"},
 				{"uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods", "Basic Year Month Date Hour Minute Second Test"},
 				{"uno/sc/fvt/StarBasicCLng.ods", "Basic Convert to Long Function Test"},
+				{"uno/sc/fvt/StarBasicTab.ods", "Basic Tab Function Test"},
 				{"uno/sc/fvt/DGET on formulas.ods", "DGET on formulas Test"},
 				{"uno/sc/fvt/Basic Line as variable and Line Input.ods", "Basic Line as variable and Line Input Test"},
-				{"uno/sc/fvt/comment-in-single-line-if-then-else.ods", "Basic comment after single line if statement Test"}
+				{"uno/sc/fvt/comment-in-single-line-if-then-else.ods", "Basic comment after single line if statement Test"},
+				{"uno/sc/fvt/Bug81233ColumnZReference.xml", "Bug 81233 column Z reference wrongly converts to column A"},
+				{"uno/sc/fvt/Bug100989MergeAcross0AddsExtraEmptyCell.xml", "Bug 100989 ss:MergeCross=\"0\" adds an extra empty cell to the right"},
+				{"uno/sc/fvt/Bug128554FractionalSecondsIgnored.xml", "Bug 100989 fractional seconds are silently ignored during import"}
 		});
 	}
 

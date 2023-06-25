@@ -276,7 +276,7 @@ Size PptDocumentAtom::GetPageSize(const Size& rSiz) const
     Size aRet;
     switch ( eSlidesPageFormat )
 	{
-        // Wenn man in Powerpoint als Seitenformat "Bildschirmgroesse"
+        // Wenn man in PowerPoint als Seitenformat "Bildschirmgroesse"
         // einstellt, dann zeigt dieser Dialog zwar 24x18cm an, die
         // angezeigte Seite ist aber anders. Das sieht man, wenn man
         // ein Rechteck seitenfuellend aufzieht und sich dessen Groesse
@@ -2458,7 +2458,7 @@ SdrObject* SdrPowerPointImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* 
 						nCurrentIndex += nCharacters;
 					}
 				}
-				sal_uInt16	nParaIndex = (sal_uInt16)pTextObj->GetCurrentIndex();
+				sal_uInt32	nParaIndex = pTextObj->GetCurrentIndex();
 				SfxStyleSheet* pS = ( ppStyleSheetAry ) ? ppStyleSheetAry[ pPara->pParaSet->mnDepth ] : pSheet;
 
 				ESelection aSelection( nParaIndex, 0, nParaIndex, 0 );
@@ -2954,8 +2954,10 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 
 		rSlidePersist.pHeaderFooterEntry = new HeaderFooterEntry( pMasterPersist );
 		ProcessData aProcessData( rSlidePersist, (SdPage*)pRet );
+        sal_Size nLastPosition;
 		while ( ( rStCtrl.GetError() == 0 ) && ( rStCtrl.Tell() < aPageHd.GetRecEndFilePos() ) )
 		{
+            nLastPosition = rStCtrl.Tell();
 			DffRecordHeader aHd;
 			rStCtrl >> aHd;
 			switch ( aHd.nRecType )
@@ -3062,9 +3064,11 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 									DffRecordHeader aShapeHd;
 									if ( SeekToRec( rStCtrl, DFF_msofbtSpContainer, aEscherObjListHd.GetRecEndFilePos(), &aShapeHd ) )
 									{
+                                        sal_Size nShapeLastPosition;
 										aShapeHd.SeekToEndOfRecord( rStCtrl );
 										while ( ( rStCtrl.GetError() == 0 ) && ( rStCtrl.Tell() < aEscherObjListHd.GetRecEndFilePos() ) )
 										{
+                                            nShapeLastPosition = rStCtrl.Tell();
 											rStCtrl >> aShapeHd;
 											if ( ( aShapeHd.nRecType == DFF_msofbtSpContainer ) || ( aShapeHd.nRecType == DFF_msofbtSpgrContainer ) )
 											{
@@ -3085,6 +3089,10 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 												}
 											}
 											aShapeHd.SeekToEndOfRecord( rStCtrl );
+                                            if (rStCtrl.Tell() == nShapeLastPosition) {
+                                                // We are inside an endless loop
+                                                break;
+                                            }
 										}
 									}
 								}
@@ -3137,6 +3145,10 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 				break;
 			}
 			aHd.SeekToEndOfRecord( rStCtrl );
+            if (rStCtrl.Tell() == nLastPosition) {
+                // We are inside an endless loop
+                break;
+            }
 		}
 		if ( rSlidePersist.pSolverContainer )
             SolveSolver( *rSlidePersist.pSolverContainer );

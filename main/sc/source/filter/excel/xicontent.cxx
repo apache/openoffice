@@ -188,7 +188,7 @@ void lclInsertUrl( const XclImpRoot& rRoot, const String& rUrl, SCCOL nScCol, SC
             if( pEditObj )
             {
                 rEE.SetText( *pEditObj );
-                rEE.QuickInsertField( SvxFieldItem( aUrlField, EE_FEATURE_FIELD ), ESelection( 0, 0, 0xFFFF, 0 ) );
+                rEE.QuickInsertField( SvxFieldItem( aUrlField, EE_FEATURE_FIELD ), ESelection( 0, 0, EE_PARA_MAX, 0 ) );
             }
             else
             {
@@ -198,7 +198,7 @@ void lclInsertUrl( const XclImpRoot& rRoot, const String& rUrl, SCCOL nScCol, SC
                 {
                     SfxItemSet aItemSet( rEE.GetEmptyItemSet() );
                     pPattern->FillEditItemSet( &aItemSet );
-                    rEE.QuickSetAttribs( aItemSet, ESelection( 0, 0, 0xFFFF, 0 ) );
+                    rEE.QuickSetAttribs( aItemSet, ESelection( 0, 0, EE_PARA_MAX, 0 ) );
                 }
             }
             ::std::auto_ptr< EditTextObject > xTextObj( rEE.CreateTextObject() );

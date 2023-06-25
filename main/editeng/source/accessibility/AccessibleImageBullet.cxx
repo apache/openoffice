@@ -214,7 +214,7 @@ namespace accessibility
                    "AccessibleImageBullet::getLocale: paragraph index value overflow");
 
         // return locale of first character in the paragraph
-        return SvxLanguageToLocale(aLocale, GetTextForwarder().GetLanguage( static_cast< sal_uInt16 >( GetParagraphIndex() ), 0 ));
+        return SvxLanguageToLocale(aLocale, GetTextForwarder().GetLanguage( GetParagraphIndex(), 0 ));
     }
 
     void SAL_CALL AccessibleImageBullet::addEventListener( const uno::Reference< XAccessibleEventListener >& xListener ) throw (uno::RuntimeException)
@@ -267,8 +267,8 @@ namespace accessibility
                    "AccessibleEditableTextPara::getBounds: index value overflow");
 
         SvxTextForwarder& rCacheTF = GetTextForwarder();
-        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 > (GetParagraphIndex()) );
-        Rectangle aParentRect = rCacheTF.GetParaBounds( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
+        Rectangle aParentRect = rCacheTF.GetParaBounds( GetParagraphIndex() );
 
         if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND &&
             aBulletInfo.bVisible &&

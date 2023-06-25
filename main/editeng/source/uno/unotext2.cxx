@@ -128,7 +128,7 @@ SvxUnoTextContent::SvxUnoTextContent() throw()
 {
 }
 
-SvxUnoTextContent::SvxUnoTextContent( const SvxUnoTextBase& rText, sal_uInt16 nPara ) throw()
+SvxUnoTextContent::SvxUnoTextContent( const SvxUnoTextBase& rText, sal_uInt32 nPara ) throw()
 :	SvxUnoTextRangeBase(rText)
 ,	mnParagraph(nPara)
 ,	mrParentText(rText)
@@ -403,7 +403,7 @@ uno::Sequence< OUString > SAL_CALL SvxUnoTextContent::getSupportedServiceNames()
 //  class SvxUnoTextRangeEnumeration
 // ====================================================================
 
-SvxUnoTextRangeEnumeration::SvxUnoTextRangeEnumeration( const SvxUnoTextBase& rText, sal_uInt16 nPara ) throw()
+SvxUnoTextRangeEnumeration::SvxUnoTextRangeEnumeration( const SvxUnoTextBase& rText, sal_uInt32 nPara ) throw()
 :	mxParentText(  const_cast<SvxUnoTextBase*>(&rText) ),
 	mrParentText( rText ),
 	mnParagraph( nPara ),

@@ -46,7 +46,7 @@ all:
 
 TARFILE_NAME=boost_1_55_0
 TARFILE_MD5=d6eef4b4cacb2183f2bf265a5a03a354
-PATCH_FILES= $(TARFILE_NAME).patch
+PATCH_FILES= $(TARFILE_NAME).patch boost-clang.patch
 .IF "$(GUI)"=="OS2"
 PATCH_FILES+=boost-os2.patch
 .ENDIF

@@ -52,22 +52,29 @@
 			</fileset>
 			<globmapper from="*" to="junit.jar" />
         </copy>
+		<available file="lib/junit.jar" property="junit.jar.exists"/>
+	</target>
+
+	<target name="check.hamcrest">
 		<copy todir="lib" >
 			<fileset dir="${junit.home}" erroronmissingdir="false">
 				<include name="hamcrest*.jar" />
 			</fileset>
 			<globmapper from="*" to="hamcrest.jar" />
 		</copy>
-		<available file="lib/junit.jar" property="junit.jar.exists"/>
 		<available file="lib/hamcrest.jar" property="hamcrest.jar.exists"/>
 	</target>
 
-	<target name="prepare.junit" depends="check.junit" unless="junit.jar.exists">
+	<target name="prepare.junit" depends="check.junit, prepare.hamcrest" unless="junit.jar.exists">
 		<mkdir dir="lib" />
 		<get src="${junit.jar.repos}" dest="lib/junit.jar" skipexisting="true" />
+	</target>
+
+	<target name="prepare.hamcrest" depends="check.hamcrest" unless="hamcrest.jar.exists">
+		<mkdir dir="lib" />
 		<get src="${hamcrest.jar.repos}" dest="lib/hamcrest.jar" skipexisting="true" />
 	</target>
-	
+
 	<target name="testcommon.init">
 		<mkdir dir="testcommon/bin" />
 		<copy includeemptydirs="false" todir="testcommon/bin">

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,27 +45,27 @@ using namespace rtl;
 */
 inline void printUString( const ::rtl::OUString & str, const sal_Char * msg = NULL )
 {
-    if ( msg != NULL )
-    {
-    	printf("#%s #printUString_u# ", msg );
-    }
-    rtl::OString aString;
-    aString = ::rtl::OUStringToOString( str, RTL_TEXTENCODING_ASCII_US );
-    printf("%s\n", (char *)aString.getStr( ) );
+	if ( msg != NULL )
+	{
+		printf("#%s #printUString_u# ", msg );
+	}
+	rtl::OString aString;
+	aString = ::rtl::OUStringToOString( str, RTL_TEXTENCODING_ASCII_US );
+	printf("%s\n", (char *)aString.getStr( ) );
 }
 
 // -----------------------------------------------------------------------------
 inline ::rtl::OUString getModulePath( void )
 {
-    ::rtl::OUString suDirPath;
-    ::osl::Module::getUrlFromAddress(
-        reinterpret_cast< oslGenericFunction >(getModulePath), suDirPath );
+	::rtl::OUString suDirPath;
+	::osl::Module::getUrlFromAddress(
+		reinterpret_cast< oslGenericFunction >(getModulePath), suDirPath );
 
-    printUString(suDirPath, "modulePath:");
-    suDirPath = suDirPath.copy( 0, suDirPath.lastIndexOf('/') );
-    suDirPath = suDirPath.copy( 0, suDirPath.lastIndexOf('/') + 1);
-    suDirPath += rtl::OUString::createFromAscii("bin");
-    return suDirPath;
+	printUString(suDirPath, "modulePath:");
+	suDirPath = suDirPath.copy( 0, suDirPath.lastIndexOf('/') );
+	suDirPath = suDirPath.copy( 0, suDirPath.lastIndexOf('/') + 1);
+	suDirPath += rtl::OUString::createFromAscii("bin");
+	return suDirPath;
 }
 
 // -----------------------------------------------------------------------------
@@ -75,14 +75,14 @@ namespace rtl_Process
 class getAppCommandArg : public ::testing::Test
 {
 public:
-    // initialise your test code values here.
-    void SetUp()
-    {
-    }
+	// initialize your test code values here.
+	void SetUp()
+	{
+	}
 
-    void TearDown()
-    {
-    }
+	void TearDown()
+	{
+	}
 }; // class getAppCommandArg
 
 TEST_F(getAppCommandArg, getAppCommandArg_001)
@@ -125,13 +125,13 @@ TEST_F(getAppCommandArg, getAppCommandArg_001)
 
     ASSERT_TRUE(osl_error == osl_Process_E_None) <<
         "osl_createProcess failed";
-    //we could get return value only after the process terminated
+    // we could get return value only after the process terminated
     osl_joinProcess(hProcess);
     // ASSERT_TRUE(osl_Process_E_None == osl_error)
     //     << "osl_joinProcess returned with failure";
     oslProcessInfo* pInfo = new oslProcessInfo;
-    //please pay attention to initial the Size to sizeof(oslProcessInfo), or else
-    //you will get unknow error when call osl_getProcessInfo
+    // please pay attention to initial the Size to sizeof(oslProcessInfo), or else
+    // you will get unknown error when call osl_getProcessInfo
     pInfo->Size = sizeof(oslProcessInfo);
     osl_error = osl_getProcessInfo( hProcess, osl_Process_EXITCODE, pInfo );
     ASSERT_TRUE(osl_Process_E_None == osl_error)
@@ -189,7 +189,7 @@ void printUuidtoBuffer( sal_uInt8 *pNode, sal_Char * pBuffer )
 class getGlobalProcessId : public ::testing::Test
 {
 public:
-    // initialise your test code values here.
+    // initialize your test code values here.
     void SetUp()
     {
     }
@@ -199,7 +199,7 @@ public:
     }
 }; // class getGlobalProcessId
 
-//gets a 16-byte fixed size identifier which is guaranteed not to change	during the current process.
+// gets a 16-byte fixed size identifier which is guaranteed not to change during the current process.
 TEST_F(getGlobalProcessId, getGlobalProcessId_001)
 {
     sal_uInt8 pTargetUUID1[16];
@@ -210,7 +210,7 @@ TEST_F(getGlobalProcessId, getGlobalProcessId_001)
         << "getGlobalProcessId: got two same ProcessIds.";
 }
 
-//different processes different pids
+// different processes different pids
 TEST_F(getGlobalProcessId, getGlobalProcessId_002)
 {
 #if defined(WNT) || defined(OS2)
@@ -247,7 +247,7 @@ TEST_F(getGlobalProcessId, getGlobalProcessId_002)
 
     ASSERT_TRUE(osl_error == osl_Process_E_None)
         << "osl_createProcess failed";
-    //we could get return value only after the process terminated
+    // we could get return value only after the process terminated
     osl_joinProcess(hProcess);
 
     sal_Char pUUID2[33];
@@ -266,3 +266,5 @@ int main(int argc, char **argv)
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
+
+/* vim: set noet sw=4 ts=4: */

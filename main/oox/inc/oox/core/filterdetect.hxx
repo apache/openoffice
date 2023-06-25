@@ -139,8 +139,8 @@ public:
         - MS Excel 2007 XML Document (*.xlsx, *.xlsm)
         - MS Excel 2007 BIFF12 Document (*.xlsb)
         - MS Excel 2007 XML Template (*.xltx, *.xltm)
-        - MS Powerpoint 2007 XML Document (*.pptx, *.pptm)
-        - MS Powerpoint 2007 XML Template (*.potx, *.potm)
+        - MS PowerPoint 2007 XML Document (*.pptx, *.pptm)
+        - MS PowerPoint 2007 XML Template (*.potx, *.potm)
 
         If the package is encrypted, the detection tries to decrypt it into a
         temporary file. The user may be asked for a password. The XStream

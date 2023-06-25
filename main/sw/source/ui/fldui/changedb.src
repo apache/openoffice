@@ -84,17 +84,22 @@ ModalDialog DLG_CHANGE_DB
 		Left = TRUE ;
 		Text [ en-US ] = "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file." ;
 	};
+	FixedLine FL_APPLDB
+	{
+		Pos = MAP_APPFONT ( 6, 154 ) ;
+		Size = MAP_APPFONT ( 274, 8 ) ;
+	};
 	FixedText FT_DOCDBTEXT
 	{
-		Pos = MAP_APPFONT ( 6, 161 ) ;
-		Size = MAP_APPFONT ( 100, 8 ) ;
+		Pos = MAP_APPFONT ( 6, 162 ) ;
+		Size = MAP_APPFONT ( 106, 8 ) ;
 		Left = TRUE ;
 		Text [ en-US ] = "Database applied to document:" ;
 	};
 	FixedText FT_DOCDBNAME
 	{
-		Pos = MAP_APPFONT ( 109, 161 ) ;
-		Size = MAP_APPFONT ( 114, 8 ) ;
+		Pos = MAP_APPFONT ( 118, 162 ) ;
+		Size = MAP_APPFONT ( 162, 8 ) ;
 		Left = TRUE ;
 		Text [ en-US ] = "Addresses.Addresses" ;
 	};

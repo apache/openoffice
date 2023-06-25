@@ -1147,10 +1147,15 @@ case "$build_os" in
       		fi
 		SDKROOT="`xcrun --sdk macosx --show-sdk-path`"
 		if test ! -n "$CC"; then
-		   CC="`xcrun -f clang` -arch x86_64"
+		   CC="`xcrun -f clang`"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -std=c++11 -stdlib=libc++ -arch x86_64"
+		   CXX="`xcrun -f clang++` -std=c++11"
+		   macos_c11=`pwd`/macos_c11
+		   echo "#!/bin/sh" > $macos_c11
+		   echo "$CXX \"\$@\"" >> $macos_c11
+		   chmod 755 $macos_c11
+		   CXX="$macos_c11"
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
@@ -1639,8 +1644,18 @@ if test $_os = "WINNT"; then
    dnl ===================================================================
    dnl As long as awk instead of $AWK is used somewhere in the sources,
    dnl check for $AWK and awk. $AWK is pointing to gawk in cygwin.
-      if test -L $AWK -o -L `which awk` -o -L `which tar` -o -L `which gunzip` ; then
-         AC_MSG_ERROR([$AWK, awk, tar or gunzip is a cygwin symlink!
+      if test -L $AWK -o -L `which awk` ; then
+         AC_MSG_ERROR([$AWK / awk is a cygwin symlink!
+Native Windows programs cannot use cygwin symlinks. Remove the symbolic
+link, and copy the program to the name of the link.])
+      fi
+      if test -L `which tar` ; then
+         AC_MSG_ERROR([tar is a cygwin symlink!
+Native Windows programs cannot use cygwin symlinks. Remove the symbolic
+link, and copy the program to the name of the link.])
+      fi
+      if test -L `which gunzip` ; then
+         AC_MSG_ERROR([gunzip is a cygwin symlink!
 Native Windows programs cannot use cygwin symlinks. Remove the symbolic
 link, and copy the program to the name of the link.])
       fi
@@ -2962,10 +2977,14 @@ fi
 
 if test "$_os" = "WINNT"; then
    if test -z "$with_jdk_home"; then
+      AC_MSG_CHECKING([for JDK home])
       _jdk_home=`$OOWINTOOL --jdk-home`
-       if test -d "$_jdk_home"; then
+      AC_MSG_RESULT([$_jdk_home])
+      if test -d "$_jdk_home"; then
           with_jdk_home="$_jdk_home"
-       fi
+      else
+          AC_MSG_WARN([$_jdk_home is not a JDK home directory, ignoring it])
+      fi
    else
       with_jdk_home=`cygpath -u "$with_jdk_home"`
    fi
@@ -3111,7 +3130,7 @@ if test "$SOLAR_JAVA" != ""; then
     else
         javacompiler="javac"
     fi
-    if test "$_os" = "OS2"; then
+    if test "$_os" = "WNT" -o "$_os" = "OS2"; then
       if test x`echo "$javacompiler" | $GREP -i '\.exe$'` = x; then
           javacompiler="${javacompiler}.exe"
       fi
@@ -3170,7 +3189,7 @@ if test "$SOLAR_JAVA" != ""; then
         AC_PATH_PROG(JAVADOC, javadoc)
     else
         _javadoc_path="$with_jdk_home/bin/javadoc"
-        if test "$_os" = "OS2"; then
+        if test "$_os" = "WNT" -o "$_os" = "OS2"; then
           if test x`echo "$_javadoc_path" | $GREP -i '\.exe$'` = x; then
               _javadoc_path="${_javadoc_path}.exe"
           fi
@@ -3902,7 +3921,11 @@ if test  "$_os" = "Darwin"; then
           sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
           dnl If not found, look for macOS11.x SDKs (Xcode 12.2 and later)
           if test -z "$sdk_found"; then
-             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0|1)" | sed -e "s/.*sdk //" | tail -n1`
+             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0|1|2|3)" | sed -e "s/.*sdk //" | tail -n1`
+          fi
+          dnl If not found, look for macOS12.x SDKs (Xcode 13.0 and later)
+          if test -z "$sdk_found"; then
+             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx12.(0|1|2)" | sed -e "s/.*sdk //" | tail -n1`
           fi
           if test -z "$sdk_found"; then
              AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])

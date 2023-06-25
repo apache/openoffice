@@ -2487,9 +2487,18 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
 
                             if ( ( eAktPageKind != PPT_NOTEPAGE ) && ( pSlideLayout->aPlacementId[ i ] != (sal_uLong)-1 ) )
                             {
-                                SdrObject* pTitleObj = ((SdPage&)pPage->TRG_GetMasterPage()).GetPresObj( PRESOBJ_TITLE );
-                                SdrObject* pOutlineObj = ((SdPage&)pPage->TRG_GetMasterPage()).GetPresObj( PRESOBJ_OUTLINE );
-
+                                SdrObject* pTitleObj;
+                                try {
+                                    pTitleObj = ((SdPage&)pPage->TRG_GetMasterPage()).GetPresObj( PRESOBJ_TITLE );
+                                } catch (uno::Exception &) {
+                                    pTitleObj = NULL;
+                                }
+                                SdrObject* pOutlineObj;
+                                try {
+                                    pOutlineObj = ((SdPage&)pPage->TRG_GetMasterPage()).GetPresObj( PRESOBJ_OUTLINE );
+                                } catch (uno::Exception &) {
+                                    pOutlineObj = NULL;
+                                }
                                 Rectangle aTitleRect;
                                 Rectangle aOutlineRect;
                                 Size      aOutlineSize;
