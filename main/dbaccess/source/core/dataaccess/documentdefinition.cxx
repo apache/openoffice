@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -282,13 +282,13 @@ namespace dbaccess
 {
 //.............................................................................
 
-    typedef ::boost::optional< bool > optional_bool;
+	typedef ::boost::optional< bool > optional_bool;
 
 	//=========================================================================
 	//= helper
 	//=========================================================================
-    namespace
-    {
+	namespace
+	{
         // --------------------------------------------------------------------
         ::rtl::OUString lcl_determineContentType_nothrow( const Reference< XStorage >& _rxContainerStorage,
             const ::rtl::OUString& _rEntityName )
@@ -306,8 +306,8 @@ namespace dbaccess
     	        DBG_UNHANDLED_EXCEPTION();
             }
             return sContentType;
-        }
-    }
+		}
+	}
 
 	//==================================================================
 	// OEmbedObjectHolder
@@ -319,7 +319,7 @@ namespace dbaccess
 		Reference< XEmbeddedObject >    m_xBroadCaster;
 		ODocumentDefinition*			m_pDefinition;
 		bool							m_bInStateChange;
-        bool                            m_bInChangingState;
+		bool                            m_bInChangingState;
 	protected:
 		virtual void SAL_CALL disposing();
 	public:
@@ -328,13 +328,13 @@ namespace dbaccess
 			,m_xBroadCaster(_xBroadCaster)
 			,m_pDefinition(_pDefinition)
 			,m_bInStateChange(false)
-            ,m_bInChangingState(false)
+			,m_bInChangingState(false)
 		{
 			osl_incrementInterlockedCount( &m_refCount );
-            {
-			    if ( m_xBroadCaster.is() )
-				    m_xBroadCaster->addStateChangeListener(this);
-            }
+			{
+				if ( m_xBroadCaster.is() )
+					m_xBroadCaster->addStateChangeListener(this);
+			}
 			osl_decrementInterlockedCount( &m_refCount );
 		}
 
@@ -353,10 +353,10 @@ namespace dbaccess
 	//------------------------------------------------------------------
 	void SAL_CALL OEmbedObjectHolder::changingState( const lang::EventObject& /*aEvent*/, ::sal_Int32 nOldState, ::sal_Int32 nNewState ) throw (embed::WrongStateException, uno::RuntimeException)
 	{
-        if ( !m_bInChangingState && nNewState == EmbedStates::RUNNING && nOldState == EmbedStates::ACTIVE && m_pDefinition )
+		if ( !m_bInChangingState && nNewState == EmbedStates::RUNNING && nOldState == EmbedStates::ACTIVE && m_pDefinition )
 		{
 			m_bInChangingState = true;
-            //m_pDefinition->save(sal_False);
+			//m_pDefinition->save(sal_False);
 			m_bInChangingState = false;
 		}
 	}
@@ -401,7 +401,7 @@ namespace dbaccess
 		// XComponentSupplier
 		virtual Reference< util::XCloseable > SAL_CALL getComponent(  ) throw (RuntimeException)
 		{
-            return Reference< css::util::XCloseable >();
+			return Reference< css::util::XCloseable >();
 		}
 
 		// XEmbeddedClient
@@ -411,12 +411,12 @@ namespace dbaccess
 		inline void resetClient(ODocumentDefinition* _pClient) { m_pClient = _pClient; }
 	};
 
-    //==================================================================
+	//==================================================================
 	// LockModifiable
 	//==================================================================
-    class LockModifiable
-    {
-    public:
+	class LockModifiable
+	{
+	public:
         LockModifiable( const Reference< XInterface >& i_rModifiable )
             :m_xModifiable( i_rModifiable, UNO_QUERY )
         {
@@ -482,20 +482,20 @@ namespace dbaccess
                 _rxActor->addEventListener( this );
             }
 			osl_decrementInterlockedCount( &m_refCount );
-            DBG_ASSERT( m_refCount, "LifetimeCoupler::LifetimeCoupler: the actor is not holding us by hard ref - this won't work!" );
-        }
+			DBG_ASSERT( m_refCount, "LifetimeCoupler::LifetimeCoupler: the actor is not holding us by hard ref - this won't work!" );
+		}
 
-        virtual void SAL_CALL disposing( const css::lang::EventObject& Source ) throw (RuntimeException);
-    protected:
-    };
+		virtual void SAL_CALL disposing( const css::lang::EventObject& Source ) throw (RuntimeException);
+	protected:
+	};
 
-    //------------------------------------------------------------------
-    void SAL_CALL LifetimeCoupler::disposing( const css::lang::EventObject& /*Source*/ ) throw (RuntimeException)
-    {
-        m_xClient.clear();
-    }
+	//------------------------------------------------------------------
+	void SAL_CALL LifetimeCoupler::disposing( const css::lang::EventObject& /*Source*/ ) throw (RuntimeException)
+	{
+		m_xClient.clear();
+	}
 
-    //==================================================================
+	//==================================================================
 	// ODocumentSaveContinuation
 	//==================================================================
 	class ODocumentSaveContinuation : public OInteraction< XInteractionDocumentSave >
@@ -1138,22 +1138,22 @@ Any ODocumentDefinition::onCommandOpenSomething( const Any& _rOpenArgument, cons
         return makeAny( xReportEngine->createDocumentAlive( NULL ) );
     }
 
-    if ( _bActivate && !bOpenHidden )
+	if ( _bActivate && !bOpenHidden )
 	{
-        LockModifiable aLockModify( impl_getComponent_throw() );
+		LockModifiable aLockModify( impl_getComponent_throw() );
 		m_xEmbeddedObject->changeState( EmbedStates::ACTIVE );
-        impl_onActivateEmbeddedObject_nothrow( false );
+		impl_onActivateEmbeddedObject_nothrow( false );
 	}
-    else
-    {
-        // ensure that we ourself are kept alive as long as the document is open
-        LifetimeCoupler::couple( *this, xModel.get() );
-    }
+	else
+	{
+		// ensure that we ourself are kept alive as long as the document is open
+		LifetimeCoupler::couple( *this, xModel.get() );
+	}
 
 	if ( !m_bForm && m_pImpl->m_aProps.bAsTemplate && !m_bOpenInDesign )
-        ODocumentDefinition::fillReportData( m_aContext, getComponent(), xConnection );
+		ODocumentDefinition::fillReportData( m_aContext, getComponent(), xConnection );
 
-    return makeAny( xModel );
+	return makeAny( xModel );
 }
 
 // -----------------------------------------------------------------------------
@@ -1260,7 +1260,7 @@ Any SAL_CALL ODocumentDefinition::execute( const Command& aCommand, sal_Int32 Co
 	    aIni[0] >>= sURL;
 	    onCommandInsert( sURL, Environment );
     }
-    else if (   aCommand.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "getdocumentinfo" ) )   // compatibility
+    else if (   aCommand.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "getdocumentinfo" ) ) // compatibility
             ||  aCommand.Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "getDocumentInfo" ) )
             )
     {
@@ -1354,30 +1354,30 @@ namespace
         catch( const Exception& )
         {
             DBG_UNHANDLED_EXCEPTION();
-        }
+		}
 
-    }
+	}
 }
 // -----------------------------------------------------------------------------
 void ODocumentDefinition::onCommandInsert( const ::rtl::OUString& _sURL, const Reference< XCommandEnvironment >& Environment )
-    throw( Exception )
+	throw( Exception )
 {
 	osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
 	// Check, if all required properties were set.
 	if ( !_sURL.getLength() || m_xEmbeddedObject.is() )
 	{
-        OSL_ENSURE( sal_False, "Content::onCommandInsert - property value missing!" );
+		OSL_ENSURE( sal_False, "Content::onCommandInsert - property value missing!" );
 
-        Sequence< rtl::OUString > aProps( 1 );
-        aProps[ 0 ] = PROPERTY_URL;
-        ucbhelper::cancelCommandExecution(
+		Sequence< rtl::OUString > aProps( 1 );
+		aProps[ 0 ] = PROPERTY_URL;
+		ucbhelper::cancelCommandExecution(
             makeAny( MissingPropertiesException(
                                 rtl::OUString(),
                                 static_cast< cppu::OWeakObject * >( this ),
                                 aProps ) ),
             Environment );
-        // Unreachable
+		// Unreachable
 	}
 
 
@@ -1397,10 +1397,10 @@ void ODocumentDefinition::onCommandInsert( const ::rtl::OUString& _sURL, const R
 																				,aMediaDesc
 																				,aEmpty),UNO_QUERY);
 
-                lcl_resetFormsToEmptyDataSource( m_xEmbeddedObject );
-                // #i57669# / 2005-12-01 / frank.schoenheit@sun.com
+				lcl_resetFormsToEmptyDataSource( m_xEmbeddedObject );
+				// #i57669# / 2005-12-01 / frank.schoenheit@sun.com
 
-                Reference<XEmbedPersist> xPersist(m_xEmbeddedObject,UNO_QUERY);
+				Reference<XEmbedPersist> xPersist(m_xEmbeddedObject,UNO_QUERY);
 				if ( xPersist.is() )
 				{
 					xPersist->storeOwn();
@@ -1415,11 +1415,11 @@ void ODocumentDefinition::onCommandInsert( const ::rtl::OUString& _sURL, const R
 				{
 				}
 				m_xEmbeddedObject = NULL;
-      		}
+			}
 		}
 	}
 
-//  @@@
+//	@@@
 //	storeData();
 
 	aGuard.clear();
@@ -1429,8 +1429,8 @@ void ODocumentDefinition::onCommandInsert( const ::rtl::OUString& _sURL, const R
 sal_Bool ODocumentDefinition::save(sal_Bool _bApprove)
 {
 	// default handling: instantiate an interaction handler and let it handle the parameter request
-    if ( !m_bOpenInDesign )
-        return sal_False;
+	if ( !m_bOpenInDesign )
+		return sal_False;
 	try
 	{
 
@@ -1476,26 +1476,26 @@ sal_Bool ODocumentDefinition::save(sal_Bool _bApprove)
 			pRequest->addContinuation(pAbort);
 
 			// create the handler, let it handle the request
-            Reference< XInteractionHandler > xHandler( m_aContext.createComponent( (::rtl::OUString)SERVICE_TASK_INTERACTION_HANDLER ), UNO_QUERY );
+			Reference< XInteractionHandler > xHandler( m_aContext.createComponent( (::rtl::OUString)SERVICE_TASK_INTERACTION_HANDLER ), UNO_QUERY );
 			if ( xHandler.is() )
 				xHandler->handle(xRequest);
 
 			if ( pAbort->wasSelected() )
 				return sal_False;
-			if  ( pDisApprove->wasSelected() )
+			if ( pDisApprove->wasSelected() )
 				return sal_True;
 			if ( pDocuSave && pDocuSave->wasSelected() )
 			{
 				Reference<XNameContainer> xNC( pDocuSave->getContent(), UNO_QUERY_THROW );
 
-                ::osl::ResettableMutexGuard aGuard( m_aMutex );
-                NameChangeNotifier aNameChangeAndNotify( *this, pDocuSave->getName(), aGuard );
-                m_pImpl->m_aProps.aTitle = pDocuSave->getName();
+				::osl::ResettableMutexGuard aGuard( m_aMutex );
+				NameChangeNotifier aNameChangeAndNotify( *this, pDocuSave->getName(), aGuard );
+				m_pImpl->m_aProps.aTitle = pDocuSave->getName();
 
 				Reference< XContent> xContent = this;
 				xNC->insertByName(pDocuSave->getName(),makeAny(xContent));
 
-                updateDocumentTitle();
+				updateDocumentTitle();
 			}
 		}
 
@@ -1517,8 +1517,8 @@ sal_Bool ODocumentDefinition::save(sal_Bool _bApprove)
 sal_Bool ODocumentDefinition::saveAs()
 {
 	// default handling: instantiate an interaction handler and let it handle the parameter request
-    if ( !m_bOpenInDesign )
-        return sal_False;
+	if ( !m_bOpenInDesign )
+		return sal_False;
 
 	{
 		osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
@@ -1557,7 +1557,7 @@ sal_Bool ODocumentDefinition::saveAs()
 
 			if ( pAbort->wasSelected() )
 				return sal_False;
-			if  ( pDisApprove->wasSelected() )
+			if ( pDisApprove->wasSelected() )
 				return sal_True;
 			if ( pDocuSave->wasSelected() )
 			{
@@ -1877,7 +1877,7 @@ void ODocumentDefinition::loadEmbeddedObject( const Reference< XConnection >& i_
 						m_xEmbeddedObject->setVisualAreaSize(Aspects::MSOLE_CONTENT,aSize);
 					}
 				}
-      		}
+			}
 		}
 	}
 	else
@@ -1937,13 +1937,13 @@ void ODocumentDefinition::loadEmbeddedObject( const Reference< XConnection >& i_
             	DBG_UNHANDLED_EXCEPTION();
             }
         }
-    }
+	}
 
 	// set the OfficeDatabaseDocument instance as parent of the embedded document
-    // #i40358# / 2005-01-19 / frank.schoenheit@sun.com
-    Reference< XChild > xDepdendDocAsChild( getComponent(), UNO_QUERY );
-    if ( xDepdendDocAsChild.is() )
-    {
+	// #i40358# / 2005-01-19 / frank.schoenheit@sun.com
+	Reference< XChild > xDepdendDocAsChild( getComponent(), UNO_QUERY );
+	if ( xDepdendDocAsChild.is() )
+	{
         try
         {
             if ( !xDepdendDocAsChild->getParent().is() )
@@ -1964,7 +1964,7 @@ void ODocumentDefinition::loadEmbeddedObject( const Reference< XConnection >& i_
 // -----------------------------------------------------------------------------
 void ODocumentDefinition::onCommandPreview(Any& _rImage)
 {
-    loadEmbeddedObjectForPreview();
+	loadEmbeddedObjectForPreview();
 	if ( m_xEmbeddedObject.is() )
 	{
 		try
@@ -1974,7 +1974,7 @@ void ODocumentDefinition::onCommandPreview(Any& _rImage)
 			{
 				DataFlavor aFlavor;
 				aFlavor.MimeType = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("image/png"));
-				aFlavor.HumanPresentableName = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Portable Network Graphics"));
+				aFlavor.HumanPresentableName = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Portable Network Graphic"));
 				aFlavor.DataType = ::getCppuType(static_cast< const Sequence < sal_Int8 >* >(NULL));
 
 				_rImage = xTransfer->getTransferData( aFlavor );
@@ -2005,7 +2005,7 @@ void ODocumentDefinition::onCommandGetDocumentProperties( Any& _rProps )
 		}
 		catch( const Exception& )
 		{
-            DBG_UNHANDLED_EXCEPTION();
+			DBG_UNHANDLED_EXCEPTION();
 		}
 	}
 }
@@ -2325,7 +2325,7 @@ void ODocumentDefinition::updateDocumentTitle()
             if ( xUntitledProvider.is() )
                 sName += ::rtl::OUString::valueOf( xUntitledProvider->leaseNumber(getComponent()) );
         }
-    
+
         Reference< XTitle > xDatabaseDocumentModel(m_pImpl->m_pDataSource->getModel_noCreate(),uno::UNO_QUERY);
         if ( xDatabaseDocumentModel.is() )
             sName = xDatabaseDocumentModel->getTitle() + ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" : ")) + sName;
