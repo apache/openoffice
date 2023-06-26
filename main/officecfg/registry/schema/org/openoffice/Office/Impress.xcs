@@ -145,7 +145,7 @@
 			</prop>
 			<prop oor:name="OLEOptimizationType" oor:type="xs:short">
 				<info>
-					<desc>Specifies the compression type that is being used.</desc>
+					<desc>Specifies the compression type that is being used,.</desc>
 				</info>
 				<constraints>
 					<enumeration oor:value="0">
@@ -1396,7 +1396,7 @@
 								<desc>MS Windows bitmap</desc>
 							</info>
 						</enumeration>
-						<enumeration oor:value="PNG - Portable Network Graphic">
+						<enumeration oor:value="PNG - Portable Network Graphics">
 							<info>
 								<desc>Portable Network Graphic</desc>
 							</info>
