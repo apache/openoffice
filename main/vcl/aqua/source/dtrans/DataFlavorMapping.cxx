@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ namespace // private
   const Type CPPUTYPE_SEQINT8  = getCppuType((Sequence<sal_Int8>*)0);
   const Type CPPUTYPE_OUSTRING = getCppuType( (OUString*)0 );
 
-  /* Determine whether or not a DataFlavor is valid. 
+  /* Determine whether or not a DataFlavor is valid.
    */
   bool isValidFlavor(const DataFlavor& aFlavor)
   {
@@ -107,7 +107,7 @@ namespace // private
   const char* FLAVOR_GDIMF = "application/x-openoffice-gdimetafile;windows_formatname=\"GDIMetaFile\"";
   const char* FLAVOR_WMF = "application/x-openoffice-wmf;windows_formatname=\"Image WMF\"";
   const char* FLAVOR_EMF = "application/x-openoffice-emf;windows_formatname=\"Image EMF\"";
-  
+
   const char* FLAVOR_DUMMY_INTERNAL = "application/x-openoffice-internal";
 
 
@@ -119,16 +119,16 @@ namespace // private
 	Type DataType;
   };
 
-  /* At the moment it appears as if only MS Office pastes "public.html" to the clipboard. 
+  /* At the moment it appears as if only MS Office pastes "public.html" to the clipboard.
    */
   static const FlavorMap flavorMap[] =
 	{
 	  { NSStringPboardType, "text/plain;charset=utf-16", "Unicode Text (UTF-16)", CPPUTYPE_OUSTRING },
 	  { NSRTFPboardType, "text/richtext", "Rich Text Format", CPPUTYPE_SEQINT8 },
-	  { NSTIFFPboardType, "image/png", "Portable Network Graphics", CPPUTYPE_SEQINT8 },
-	  { NSPICTPboardType, "image/png", "Portable Network Graphics", CPPUTYPE_SEQINT8 },
+	  { NSTIFFPboardType, "image/png", "Portable Network Graphic", CPPUTYPE_SEQINT8 },
+	  { NSPICTPboardType, "image/png", "Portable Network Graphic", CPPUTYPE_SEQINT8 },
 	  { NSHTMLPboardType, "text/html", "Plain Html", CPPUTYPE_SEQINT8 },
-	  { NSFilenamesPboardType, "application/x-openoffice-filelist;windows_formatname=\"FileList\"", "FileList", CPPUTYPE_SEQINT8 }, 
+	  { NSFilenamesPboardType, "application/x-openoffice-filelist;windows_formatname=\"FileList\"", "FileList", CPPUTYPE_SEQINT8 },
 	  { PBTYPE_SESX, FLAVOR_SESX, "Star Embed Source (XML)", CPPUTYPE_SEQINT8 },
 	  { PBTYPE_SLSDX, FLAVOR_SLSDX, "Star Link Source Descriptor (XML)", CPPUTYPE_SEQINT8 },
 	  { PBTYPE_ESX, FLAVOR_ESX, "Star Embed Source (XML)", CPPUTYPE_SEQINT8 },
@@ -161,7 +161,7 @@ namespace // private
 
 //###########################
 
-/* A base class for other data provider. 
+/* A base class for other data provider.
  */
 class DataProviderBaseImpl : public DataProvider
 {
@@ -182,7 +182,7 @@ DataProviderBaseImpl::DataProviderBaseImpl(const Any& data) :
 {
 }
 
-DataProviderBaseImpl::DataProviderBaseImpl(id data) : 
+DataProviderBaseImpl::DataProviderBaseImpl(id data) :
   mSystemData(data)
 {
   [mSystemData retain];
@@ -203,7 +203,7 @@ class UniDataProvider : public DataProviderBaseImpl
 {
 public:
   UniDataProvider(const Any& data);
-  
+
   UniDataProvider(NSData* data);
 
   virtual NSData* getSystemData();
@@ -238,8 +238,8 @@ Any UniDataProvider::getOOoData()
 
   if (mSystemData)
 	{
-	  oOOData = makeAny(OUString(reinterpret_cast<const sal_Char*>([mSystemData bytes]), 
-								 [mSystemData length], 
+	  oOOData = makeAny(OUString(reinterpret_cast<const sal_Char*>([mSystemData bytes]),
+								 [mSystemData length],
 								 RTL_TEXTENCODING_UTF8));
 	}
   else
@@ -299,7 +299,7 @@ Any ByteSequenceDataProvider::getOOoData()
 	{
 	  oOOData =  mData;
 	}
-  
+
   return oOOData;
 }
 
@@ -358,14 +358,14 @@ Any HTMLFormatDataProvider::getOOoData()
 		  plainHtml = HTMLFormatToTextHtml(unkHtmlData);
 		  pPlainHtml = &plainHtml;
 		}
-	  
+
 	  oOOData = makeAny(*pPlainHtml);
 	}
   else
 	{
 	  oOOData = mData;
 	}
-  
+
   return oOOData;
 }
 
@@ -411,7 +411,7 @@ NSData* PNGDataProvider::getSystemData()
 
 /* The AOO 'PCT' filter is not yet good enough to be used
    and there is no flavor defined for exchanging 'PCT' with AOO
-   so we convert 'PCT' to a PNG and provide this to AOO 
+   so we convert 'PCT' to a PNG and provide this to AOO
 */
 Any PNGDataProvider::getOOoData()
 {
@@ -431,7 +431,7 @@ Any PNGDataProvider::getOOoData()
 	{
 		oOOData = mData;
 	}
-  
+
   return oOOData;
 }
 
@@ -480,7 +480,7 @@ Any FileListDataProvider::getOOoData()
 	  Sequence<sal_Int8> oOOFileList(lenSeqRequired);
 	  unichar* pBuffer = reinterpret_cast<unichar*>(oOOFileList.getArray());
 	  rtl_zeroMemory(pBuffer, lenSeqRequired);
-	  
+
 	  for (size_t i = 0; i < length; i++)
 		{
 		  NSString* fname = [mSystemData objectAtIndex: i];
@@ -495,7 +495,7 @@ Any FileListDataProvider::getOOoData()
 	{
 	  oOOData = mData;
 	}
-  
+
   return oOOData;
 }
 
@@ -518,7 +518,7 @@ DataFlavorMapper::~DataFlavorMapper()
     {
         [it->second release];
         it->second = nil;
-    }    
+    }
 }
 
 DataFlavor DataFlavorMapper::systemToOpenOfficeFlavor( const NSString* systemDataFlavor) const
@@ -545,7 +545,7 @@ DataFlavor DataFlavorMapper::systemToOpenOfficeFlavor( const NSString* systemDat
 	    oOOFlavor.HumanPresentableName = rtl::OUString();
 	    oOOFlavor.DataType = CPPUTYPE_SEQINT8;
 	}
-	
+
 	return oOOFlavor;
 }
 
@@ -554,7 +554,7 @@ const NSString* DataFlavorMapper::openOfficeToSystemFlavor( const DataFlavor& oO
     const NSString* sysFlavor = NULL;
     rbInternal = false;
     rbInternal = false;
-    
+
 	for( size_t i = 0; i < SIZE_FLAVOR_MAP; ++i )
 	{
 	    if (oOOFlavor.MimeType.compareToAscii(flavorMap[i].OOoFlavor, strlen(flavorMap[i].OOoFlavor)) == 0)
@@ -593,7 +593,7 @@ DataProviderPtr_t DataFlavorMapper::getDataProvider( const NSString* systemFlavo
 	  DataFlavor oOOFlavor = systemToOpenOfficeFlavor(systemFlavor);
 
 	  Any data = rTransferable->getTransferData(oOOFlavor);
-	  
+
 	  if (isByteSequenceType(data.getValueType()))
 		{
 		  /*
@@ -601,7 +601,7 @@ DataProviderPtr_t DataFlavorMapper::getDataProvider( const NSString* systemFlavo
 		     this is useful for exchange with MS Word (which brings this stuff from Windows)
 		     but annoying for other applications. Since this extension is not a standard datatype
 		     on the Mac, let us not provide but provide normal HTML
-		     
+
 		  if ([systemFlavor caseInsensitiveCompare: NSHTMLPboardType] == NSOrderedSame)
 			{
 			  dp = DataProviderPtr_t(new HTMLFormatDataProvider(data));
@@ -711,7 +711,7 @@ NSArray* DataFlavorMapper::flavorSequenceToTypesArray(const com::sun::star::uno:
   NSMutableArray* array = [[NSMutableArray alloc] initWithCapacity: 1];
 
   bool bNeedDummyInternalFlavor(false);
-  
+
   for (sal_uInt32 i = 0; i < nFlavors; i++)
   {
       if( flavors[i].MimeType.compareToAscii( "image/bmp", 9 ) == 0 )
@@ -722,7 +722,7 @@ NSArray* DataFlavorMapper::flavorSequenceToTypesArray(const com::sun::star::uno:
       else
       {
           const NSString* str = openOfficeToSystemFlavor(flavors[i], bNeedDummyInternalFlavor);
-          
+
           if (str != NULL)
           {
               [str retain];
@@ -733,7 +733,7 @@ NSArray* DataFlavorMapper::flavorSequenceToTypesArray(const com::sun::star::uno:
 
    // #i89462# #i90747#
    // in case no system flavor was found to report
-   // report at least one so D&D between OOo targets works 
+   // report at least one so D&D between AOO targets works
   if( [array count] == 0 || bNeedDummyInternalFlavor)
   {
       [array addObject: PBTYPE_DUMMY_INTERNAL];
