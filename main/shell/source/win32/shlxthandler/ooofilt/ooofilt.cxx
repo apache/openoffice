@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,12 +27,13 @@
 //--------------------------------------------------------------------------
 //  File:       ooofilt.cxx
 //
-//  Contents:   Filter Implementation for OpenOffice.Org Document using 
+//  Contents:   Filter Implementation for OpenOffice Document using
 //              Indexing Service
 //
-//  Summary:    The OpenOffice.org filter reads OpenOffice.org files (with the
-//              extension .sxw .sxi, etc) and extract their content, author,
-//              keywords,subject,comments and title to be filtered.
+//  Summary:    The OpenOffice filter reads OpenOffice.org XML and
+//              OpenDocument (ODF) files and extracts their content,
+//              author, keywords, subject, comments and title to be
+//              filtered.
 //
 //  Platform:   Windows 2000, Windows XP
 //
@@ -53,7 +54,7 @@
 //  filterr.h       FACILITY_ITF error definitions for IFilter
 //  ntquery.h       Indexing Service declarations
 //  assert.h        assertion function.
-//  ooofilt.hxx     OpenOffice.org filter declarations
+//  ooofilt.hxx     OpenOffice filter declarations
 //  propspec.hxx    PROPSPEC
 //
 //--------------------------------------------------------------------------
@@ -64,7 +65,7 @@
 #include <windows.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 #include <string.h>
 #include <filter.h>
 #include <filterr.h>
@@ -85,7 +86,7 @@ using ::std::min;
 //
 //  Class:      COooFilter
 //
-//  Summary:    Implements OpenOffice.org filter class
+//  Summary:    Implements OpenOffice filter class
 //
 //--------------------------------------------------------------------------
 //M-------------------------------------------------------------------------
@@ -100,24 +101,24 @@ using ::std::min;
 //
 //--------------------------------------------------------------------------
 COooFilter::COooFilter() :
-    m_lRefs(1),
-    m_pContentReader(NULL),
-    m_pMetaInfoReader(NULL),
-    m_eState(FilteringContent),
-    m_ulUnicodeBufferLen(0),
-    m_ulUnicodeCharsRead(0),
-    m_ulPropertyNum(0),
-    m_ulCurrentPropertyNum(0),
-    m_ulChunkID(1),
-    m_fContents(FALSE),
-    m_fEof(FALSE),    
-    m_ChunkPosition(0),
-    m_cAttributes(0),
-    m_pAttributes(0),
+	m_lRefs(1),
+	m_pContentReader(NULL),
+	m_pMetaInfoReader(NULL),
+	m_eState(FilteringContent),
+	m_ulUnicodeBufferLen(0),
+	m_ulUnicodeCharsRead(0),
+	m_ulPropertyNum(0),
+	m_ulCurrentPropertyNum(0),
+	m_ulChunkID(1),
+	m_fContents(FALSE),
+	m_fEof(FALSE),
+	m_ChunkPosition(0),
+	m_cAttributes(0),
+	m_pAttributes(0),
 	m_pStream(NULL)
 
 {
-    InterlockedIncrement( &g_lInstances );
+	InterlockedIncrement( &g_lInstances );
 }
 //M-------------------------------------------------------------------------
 //
@@ -132,14 +133,14 @@ COooFilter::COooFilter() :
 //--------------------------------------------------------------------------
 COooFilter::~COooFilter()
 {
-    delete [] m_pAttributes;
+	delete [] m_pAttributes;
 
-    if (m_pContentReader)
-        delete m_pContentReader;
-    if (m_pMetaInfoReader)
-        delete m_pMetaInfoReader;
+	if (m_pContentReader)
+		delete m_pContentReader;
+	if (m_pMetaInfoReader)
+		delete m_pMetaInfoReader;
 
-    InterlockedDecrement( &g_lInstances );
+	InterlockedDecrement( &g_lInstances );
 }
 
 //M-------------------------------------------------------------------------
@@ -160,28 +161,28 @@ COooFilter::~COooFilter()
 //
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::QueryInterface(
-    REFIID riid,
-    void  ** ppvObject)
+	REFIID riid,
+	void  ** ppvObject)
 {
-    IUnknown *pUnkTemp = 0;
-    if ( IID_IFilter == riid )
-        pUnkTemp = (IUnknown *)(IFilter *)this;
-    else if ( IID_IPersistFile == riid )
-        pUnkTemp = (IUnknown *)(IPersistFile *)this;
-    else if ( IID_IPersist == riid )
-        pUnkTemp = (IUnknown *)(IPersist *)(IPersistFile *)this;
+	IUnknown *pUnkTemp = 0;
+	if ( IID_IFilter == riid )
+		pUnkTemp = (IUnknown *)(IFilter *)this;
+	else if ( IID_IPersistFile == riid )
+		pUnkTemp = (IUnknown *)(IPersistFile *)this;
+	else if ( IID_IPersist == riid )
+		pUnkTemp = (IUnknown *)(IPersist *)(IPersistFile *)this;
 	else if (IID_IPersistStream == riid)
 		pUnkTemp = (IUnknown *)(IPersistStream *)this;
-    else if ( IID_IUnknown == riid )
-        pUnkTemp = (IUnknown *)(IPersist *)(IPersistFile *)this;
-    else
-    {
-        *ppvObject = NULL;
-        return E_NOINTERFACE;
-    }
-    *ppvObject = (void  *)pUnkTemp;
-    pUnkTemp->AddRef();
-    return S_OK;
+	else if ( IID_IUnknown == riid )
+		pUnkTemp = (IUnknown *)(IPersist *)(IPersistFile *)this;
+	else
+	{
+		*ppvObject = NULL;
+		return E_NOINTERFACE;
+	}
+	*ppvObject = (void  *)pUnkTemp;
+	pUnkTemp->AddRef();
+	return S_OK;
 }
 //M-------------------------------------------------------------------------
 //
@@ -196,7 +197,7 @@ SCODE STDMETHODCALLTYPE COooFilter::QueryInterface(
 //--------------------------------------------------------------------------
 ULONG STDMETHODCALLTYPE COooFilter::AddRef()
 {
-    return InterlockedIncrement( &m_lRefs );
+	return InterlockedIncrement( &m_lRefs );
 }
 //M-------------------------------------------------------------------------
 //
@@ -211,17 +212,17 @@ ULONG STDMETHODCALLTYPE COooFilter::AddRef()
 //--------------------------------------------------------------------------
 ULONG STDMETHODCALLTYPE COooFilter::Release()
 {
-    ULONG ulTmp = InterlockedDecrement( &m_lRefs );
+	ULONG ulTmp = InterlockedDecrement( &m_lRefs );
 
-    if ( 0 == ulTmp )
-        delete this;
-    return ulTmp;
+	if ( 0 == ulTmp )
+		delete this;
+	return ulTmp;
 }
 //M-------------------------------------------------------------------------
 //
 //  Method:     COooFilter::Init                (IFilter::Init)
 //
-//  Summary:    Initializes OpenOffice.org filter instance
+//  Summary:    Initializes OpenOffice filter instance
 //
 //  Arguments:  grfFlags
 //                  [in] Flags for filter behavior
@@ -247,98 +248,98 @@ ULONG STDMETHODCALLTYPE COooFilter::Release()
 const int COUNT_ATTRIBUTES = 5;
 
 SCODE STDMETHODCALLTYPE COooFilter::Init(
-    ULONG grfFlags,
-    ULONG cAttributes,
-    FULLPROPSPEC const * aAttributes,
-    ULONG * pFlags)
+	ULONG grfFlags,
+	ULONG cAttributes,
+	FULLPROPSPEC const * aAttributes,
+	ULONG * pFlags)
 {
-    // Enumerate OLE properties, since any NTFS file can have them
-    *pFlags = IFILTER_FLAGS_OLE_PROPERTIES;
-    try
-    {
-        m_fContents = FALSE;
-        m_ulPropertyNum = 0;
-        m_ulCurrentPropertyNum = 0;
-        if ( m_cAttributes > 0 )
-        {
-            delete[] m_pAttributes;
-            m_pAttributes = 0;
-            m_cAttributes = 0;
-        }
-        if( 0 < cAttributes )
-        {            
-            // Filter properties specified in aAttributes
-            if ( 0 == aAttributes )
-                return E_INVALIDARG;
-            m_pAttributes = new CFullPropSpec[cAttributes];
-            m_cAttributes = cAttributes;
-            // Is caller want to filter contents?
-            CFullPropSpec *pAttrib = (CFullPropSpec *) aAttributes;
-            ULONG ulNumAttr;
-            for ( ulNumAttr = 0 ; ulNumAttr < cAttributes; ulNumAttr++ )
-            {
-                if ( pAttrib[ulNumAttr].IsPropertyPropid() && 
-                     pAttrib[ulNumAttr].GetPropertyPropid() == PID_STG_CONTENTS && 
-                     pAttrib[ulNumAttr].GetPropSet() == guidStorage )
-                {
-                    m_fContents = TRUE;
-                }
-                // save the requested properties.
-                m_pAttributes[ulNumAttr] = pAttrib[ulNumAttr];
-            }
-        }
-        else if ( grfFlags & IFILTER_INIT_APPLY_INDEX_ATTRIBUTES )
-        {            
-            // Filter contents and all pseudo-properties
-            m_fContents = TRUE;
-            
-            m_pAttributes = new CFullPropSpec[COUNT_ATTRIBUTES];
-            m_cAttributes = COUNT_ATTRIBUTES;
-            m_pAttributes[0].SetPropSet( FMTID_SummaryInformation );
-            m_pAttributes[0].SetProperty( PIDSI_AUTHOR );
-            m_pAttributes[1].SetPropSet( FMTID_SummaryInformation );
-            m_pAttributes[1].SetProperty( PIDSI_TITLE );
-            m_pAttributes[2].SetPropSet( FMTID_SummaryInformation );
-            m_pAttributes[2].SetProperty( PIDSI_SUBJECT );
-            m_pAttributes[3].SetPropSet( FMTID_SummaryInformation );
-            m_pAttributes[3].SetProperty( PIDSI_KEYWORDS );
-            m_pAttributes[4].SetPropSet( FMTID_SummaryInformation );
-            m_pAttributes[4].SetProperty( PIDSI_COMMENTS );
-        }
-        else if ( 0 == grfFlags )
-        {         
-            // Filter only contents
-            m_fContents = TRUE;
-        }
-        else
-            m_fContents = FALSE;
-        // Re-initialize
-        if ( m_fContents )
-        {
-            m_fEof = FALSE;
-            m_eState = FilteringContent;
-            m_ulUnicodeCharsRead = 0;
-            m_ChunkPosition = 0;
-        }
-        else 
-        {
-            m_fEof = TRUE;
-            m_eState = FilteringProperty;
-        }
-        m_ulChunkID = 1;
-    }
-    catch (const std::exception&)
-    {
-        return E_FAIL;
-    }
+	// Enumerate OLE properties, since any NTFS file can have them
+	*pFlags = IFILTER_FLAGS_OLE_PROPERTIES;
+	try
+	{
+		m_fContents = FALSE;
+		m_ulPropertyNum = 0;
+		m_ulCurrentPropertyNum = 0;
+		if ( m_cAttributes > 0 )
+		{
+			delete[] m_pAttributes;
+			m_pAttributes = 0;
+			m_cAttributes = 0;
+		}
+		if( 0 < cAttributes )
+		{
+			// Filter properties specified in aAttributes
+			if ( 0 == aAttributes )
+				return E_INVALIDARG;
+			m_pAttributes = new CFullPropSpec[cAttributes];
+			m_cAttributes = cAttributes;
+			// Is caller want to filter contents?
+			CFullPropSpec *pAttrib = (CFullPropSpec *) aAttributes;
+			ULONG ulNumAttr;
+			for ( ulNumAttr = 0 ; ulNumAttr < cAttributes; ulNumAttr++ )
+			{
+				if ( pAttrib[ulNumAttr].IsPropertyPropid() &&
+					 pAttrib[ulNumAttr].GetPropertyPropid() == PID_STG_CONTENTS &&
+					 pAttrib[ulNumAttr].GetPropSet() == guidStorage )
+				{
+					m_fContents = TRUE;
+				}
+				// save the requested properties.
+				m_pAttributes[ulNumAttr] = pAttrib[ulNumAttr];
+			}
+		}
+		else if ( grfFlags & IFILTER_INIT_APPLY_INDEX_ATTRIBUTES )
+		{
+			// Filter contents and all pseudo-properties
+			m_fContents = TRUE;
 
-    return S_OK;
+			m_pAttributes = new CFullPropSpec[COUNT_ATTRIBUTES];
+			m_cAttributes = COUNT_ATTRIBUTES;
+			m_pAttributes[0].SetPropSet( FMTID_SummaryInformation );
+			m_pAttributes[0].SetProperty( PIDSI_AUTHOR );
+			m_pAttributes[1].SetPropSet( FMTID_SummaryInformation );
+			m_pAttributes[1].SetProperty( PIDSI_TITLE );
+			m_pAttributes[2].SetPropSet( FMTID_SummaryInformation );
+			m_pAttributes[2].SetProperty( PIDSI_SUBJECT );
+			m_pAttributes[3].SetPropSet( FMTID_SummaryInformation );
+			m_pAttributes[3].SetProperty( PIDSI_KEYWORDS );
+			m_pAttributes[4].SetPropSet( FMTID_SummaryInformation );
+			m_pAttributes[4].SetProperty( PIDSI_COMMENTS );
+		}
+		else if ( 0 == grfFlags )
+		{
+			// Filter only contents
+			m_fContents = TRUE;
+		}
+		else
+			m_fContents = FALSE;
+		// Re-initialize
+		if ( m_fContents )
+		{
+			m_fEof = FALSE;
+			m_eState = FilteringContent;
+			m_ulUnicodeCharsRead = 0;
+			m_ChunkPosition = 0;
+		}
+		else
+		{
+			m_fEof = TRUE;
+			m_eState = FilteringProperty;
+		}
+		m_ulChunkID = 1;
+	}
+	catch (const std::exception&)
+	{
+		return E_FAIL;
+	}
+
+	return S_OK;
 }
 //M-------------------------------------------------------------------------
 //
 //  Method:     COooFilter::GetChunk            (IFilter::GetChunk)
 //
-//  Summary:    Gets the next chunk 
+//  Summary:    Gets the next chunk
 //
 //  Arguments:  ppStat
 //                  [out] Pointer to description of current chunk
@@ -360,85 +361,85 @@ SCODE STDMETHODCALLTYPE COooFilter::Init(
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::GetChunk(STAT_CHUNK * pStat)
 {
-    for(;;)
-    {
-        switch ( m_eState )
-        {
-        case FilteringContent:
-        {
-            // Read Unicodes from buffer.
-            if( m_ChunkPosition == m_pContentReader ->getChunkBuffer().size() )
-            {
-                m_ulUnicodeBufferLen=0;
-                m_fEof = TRUE;
-            }
+	for(;;)
+	{
+		switch ( m_eState )
+		{
+		case FilteringContent:
+		{
+			// Read Unicode from buffer.
+			if( m_ChunkPosition == m_pContentReader ->getChunkBuffer().size() )
+			{
+				m_ulUnicodeBufferLen=0;
+				m_fEof = TRUE;
+			}
 
-            if ( !m_fContents || m_fEof )
-            {
-                m_eState = FilteringProperty;
-                continue;
-            }
-            m_pwsBuffer = m_pContentReader -> getChunkBuffer()[m_ChunkPosition].second;
-            m_ulUnicodeBufferLen = m_pwsBuffer.length();
-            DWORD ChunkLCID = LocaleSetToLCID( m_pContentReader -> getChunkBuffer()[m_ChunkPosition].first );
-            // Set chunk description
-            pStat->idChunk   = m_ulChunkID;
-            pStat->breakType = CHUNK_NO_BREAK;
-            pStat->flags     = CHUNK_TEXT;
-            pStat->locale    = ChunkLCID;
-            pStat->attribute.guidPropSet       = guidStorage;
-            pStat->attribute.psProperty.ulKind = PRSPEC_PROPID;
-            pStat->attribute.psProperty.propid = PID_STG_CONTENTS;
-            pStat->idChunkSource  = m_ulChunkID;
-            pStat->cwcStartSource = 0;
-            pStat->cwcLenSource   = 0;
-            m_ulUnicodeCharsRead = 0;
-            m_ulChunkID++;
-            m_ChunkPosition++;
-            return S_OK;
-        }
-        case FilteringProperty:
-        {
-            if ( m_cAttributes ==  0 )
-                return FILTER_E_END_OF_CHUNKS;
-            while(  !( ( m_pAttributes[m_ulPropertyNum].IsPropertyPropid() ) && 
-                       ( m_pAttributes[m_ulPropertyNum].GetPropSet() == FMTID_SummaryInformation ) )||
-                     ( ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_AUTHOR ) &&
-                       ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_TITLE ) &&
-                       ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_SUBJECT ) &&
-                       ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_KEYWORDS ) &&
-                       ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_COMMENTS ) ) )
-            {
-                if ( m_ulPropertyNum <  m_cAttributes )
-                    m_ulPropertyNum++;
-                else
-                    break;
-            }
-            if ( m_ulPropertyNum ==  m_cAttributes)
-                return FILTER_E_END_OF_CHUNKS;
-            else
-            {
-                // Set chunk description
-                pStat->idChunk = m_ulChunkID;
-                pStat->breakType = CHUNK_EOS;
-                pStat->flags = CHUNK_VALUE;
-                pStat->locale = GetSystemDefaultLCID();
-                pStat->attribute.guidPropSet = FMTID_SummaryInformation;
-                pStat->attribute.psProperty.ulKind = PRSPEC_PROPID;
-                pStat->attribute.psProperty.propid = m_pAttributes[m_ulPropertyNum].GetPropertyPropid();
-                pStat->idChunkSource = m_ulChunkID;
-                pStat->cwcStartSource = 0;
-                pStat->cwcLenSource = 0;
-                m_ulCurrentPropertyNum = m_ulPropertyNum;
-                m_ulPropertyNum++;
-                m_ulChunkID++;
-                return S_OK;
-            }
-        }
-        default:
-            return E_FAIL;
-        }//switch(...)
-    }//for(;;)
+			if ( !m_fContents || m_fEof )
+			{
+				m_eState = FilteringProperty;
+				continue;
+			}
+			m_pwsBuffer = m_pContentReader -> getChunkBuffer()[m_ChunkPosition].second;
+			m_ulUnicodeBufferLen = m_pwsBuffer.length();
+			DWORD ChunkLCID = LocaleSetToLCID( m_pContentReader -> getChunkBuffer()[m_ChunkPosition].first );
+			// Set chunk description
+			pStat->idChunk   = m_ulChunkID;
+			pStat->breakType = CHUNK_NO_BREAK;
+			pStat->flags     = CHUNK_TEXT;
+			pStat->locale    = ChunkLCID;
+			pStat->attribute.guidPropSet       = guidStorage;
+			pStat->attribute.psProperty.ulKind = PRSPEC_PROPID;
+			pStat->attribute.psProperty.propid = PID_STG_CONTENTS;
+			pStat->idChunkSource  = m_ulChunkID;
+			pStat->cwcStartSource = 0;
+			pStat->cwcLenSource   = 0;
+			m_ulUnicodeCharsRead = 0;
+			m_ulChunkID++;
+			m_ChunkPosition++;
+			return S_OK;
+		}
+		case FilteringProperty:
+		{
+			if ( m_cAttributes == 0 )
+				return FILTER_E_END_OF_CHUNKS;
+			while(  !( ( m_pAttributes[m_ulPropertyNum].IsPropertyPropid() ) &&
+					   ( m_pAttributes[m_ulPropertyNum].GetPropSet() == FMTID_SummaryInformation ) )||
+					 ( ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_AUTHOR ) &&
+					   ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_TITLE ) &&
+					   ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_SUBJECT ) &&
+					   ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_KEYWORDS ) &&
+					   ( m_pAttributes[m_ulPropertyNum].GetPropertyPropid() != PIDSI_COMMENTS ) ) )
+			{
+				if ( m_ulPropertyNum < m_cAttributes )
+					m_ulPropertyNum++;
+				else
+					break;
+			}
+			if ( m_ulPropertyNum == m_cAttributes)
+				return FILTER_E_END_OF_CHUNKS;
+			else
+			{
+				// Set chunk description
+				pStat->idChunk = m_ulChunkID;
+				pStat->breakType = CHUNK_EOS;
+				pStat->flags = CHUNK_VALUE;
+				pStat->locale = GetSystemDefaultLCID();
+				pStat->attribute.guidPropSet = FMTID_SummaryInformation;
+				pStat->attribute.psProperty.ulKind = PRSPEC_PROPID;
+				pStat->attribute.psProperty.propid = m_pAttributes[m_ulPropertyNum].GetPropertyPropid();
+				pStat->idChunkSource = m_ulChunkID;
+				pStat->cwcStartSource = 0;
+				pStat->cwcLenSource = 0;
+				m_ulCurrentPropertyNum = m_ulPropertyNum;
+				m_ulPropertyNum++;
+				m_ulChunkID++;
+				return S_OK;
+			}
+		}
+		default:
+			return E_FAIL;
+		}//switch(...)
+	}//for(;;)
 }
 //M-------------------------------------------------------------------------
 //
@@ -462,40 +463,40 @@ SCODE STDMETHODCALLTYPE COooFilter::GetChunk(STAT_CHUNK * pStat)
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::GetText(ULONG * pcwcBuffer, WCHAR * awcBuffer)
 {
-    switch ( m_eState )
-    {
-    case FilteringProperty:
-        return FILTER_E_NO_TEXT;
-    case FilteringContent:
-    {
-        if ( !m_fContents || 0 == m_ulUnicodeBufferLen )
-        {
-            *pcwcBuffer = 0;
-            return FILTER_E_NO_MORE_TEXT;
-        }
-        // Copy UNICODE characters in chunk buffer to output UNICODE buffer
-        ULONG ulToCopy = min( *pcwcBuffer, m_ulUnicodeBufferLen - m_ulUnicodeCharsRead );
-        ZeroMemory(awcBuffer, sizeof(awcBuffer));    
-        wmemcpy( awcBuffer, m_pwsBuffer.c_str() + m_ulUnicodeCharsRead, ulToCopy );
-        m_ulUnicodeCharsRead += ulToCopy;
-        *pcwcBuffer = ulToCopy;
-        if ( m_ulUnicodeBufferLen == m_ulUnicodeCharsRead )
-        {
-            m_ulUnicodeCharsRead = 0;
-            m_ulUnicodeBufferLen = 0;
-            return FILTER_S_LAST_TEXT;
-        }
-        return S_OK;
-    }
-    default:
-        return E_FAIL;
-    }
+	switch ( m_eState )
+	{
+	case FilteringProperty:
+		return FILTER_E_NO_TEXT;
+	case FilteringContent:
+	{
+		if ( !m_fContents || 0 == m_ulUnicodeBufferLen )
+		{
+			*pcwcBuffer = 0;
+			return FILTER_E_NO_MORE_TEXT;
+		}
+		// Copy UNICODE characters in chunk buffer to output UNICODE buffer
+		ULONG ulToCopy = min( *pcwcBuffer, m_ulUnicodeBufferLen - m_ulUnicodeCharsRead );
+		ZeroMemory(awcBuffer, sizeof(awcBuffer));
+		wmemcpy( awcBuffer, m_pwsBuffer.c_str() + m_ulUnicodeCharsRead, ulToCopy );
+		m_ulUnicodeCharsRead += ulToCopy;
+		*pcwcBuffer = ulToCopy;
+		if ( m_ulUnicodeBufferLen == m_ulUnicodeCharsRead )
+		{
+			m_ulUnicodeCharsRead = 0;
+			m_ulUnicodeBufferLen = 0;
+			return FILTER_S_LAST_TEXT;
+		}
+		return S_OK;
+	}
+	default:
+		return E_FAIL;
+	}
 }
 //M-------------------------------------------------------------------------
 //
 //  Method:     GetMetaInfoNameFromPropertyId
 //
-//  Summary:    helper function to convert PropertyID into respective 
+//  Summary:    helper function to convert PropertyID into respective
 //              MetaInfo names.
 //
 //  Arguments:  ulPropID
@@ -507,21 +508,21 @@ SCODE STDMETHODCALLTYPE COooFilter::GetText(ULONG * pcwcBuffer, WCHAR * awcBuffe
 
 ::std::wstring GetMetaInfoNameFromPropertyId( ULONG ulPropID )
 {
-    switch ( ulPropID )
-    {
-        case PIDSI_AUTHOR:   return META_INFO_AUTHOR;
-        case PIDSI_TITLE:    return META_INFO_TITLE;
-        case PIDSI_SUBJECT:  return META_INFO_SUBJECT;
-        case PIDSI_KEYWORDS: return META_INFO_KEYWORDS;
-        case PIDSI_COMMENTS: return META_INFO_DESCRIPTION;
-        default:             return EMPTY_STRING;
-    }
+	switch ( ulPropID )
+	{
+		case PIDSI_AUTHOR:   return META_INFO_AUTHOR;
+		case PIDSI_TITLE:    return META_INFO_TITLE;
+		case PIDSI_SUBJECT:  return META_INFO_SUBJECT;
+		case PIDSI_KEYWORDS: return META_INFO_KEYWORDS;
+		case PIDSI_COMMENTS: return META_INFO_DESCRIPTION;
+		default:             return EMPTY_STRING;
+	}
 }
 //M-------------------------------------------------------------------------
 //
 //  Method:     COooFilter::GetValue            (IFilter::GetValue)
 //
-//  Summary:    Retrieves properites for index
+//  Summary:    Retrieves properties for index
 //
 //  Arguments:  ppPropValue
 //                  [out] Address that receives pointer to property value
@@ -535,18 +536,18 @@ SCODE STDMETHODCALLTYPE COooFilter::GetText(ULONG * pcwcBuffer, WCHAR * awcBuffe
 
 SCODE STDMETHODCALLTYPE COooFilter::GetValue(PROPVARIANT ** ppPropValue)
 {
-    if (m_eState == FilteringContent)
-        return FILTER_E_NO_VALUES;
-    else if (m_eState == FilteringProperty)
-    {
-        if ( m_cAttributes == 0 || ( m_ulCurrentPropertyNum == m_ulPropertyNum ) )
-            return FILTER_E_NO_MORE_VALUES;
-        PROPVARIANT *pPropVar = (PROPVARIANT *) CoTaskMemAlloc( sizeof (PROPVARIANT) );
-        if ( pPropVar == 0 )
-            return E_OUTOFMEMORY;
-        ::std::wstring wsTagName= GetMetaInfoNameFromPropertyId( m_pAttributes[m_ulCurrentPropertyNum].GetPropertyPropid() );
-        if ( wsTagName == EMPTY_STRING )
-            return FILTER_E_NO_VALUES;
+	if (m_eState == FilteringContent)
+		return FILTER_E_NO_VALUES;
+	else if (m_eState == FilteringProperty)
+	{
+		if ( m_cAttributes == 0 || ( m_ulCurrentPropertyNum == m_ulPropertyNum ) )
+			return FILTER_E_NO_MORE_VALUES;
+		PROPVARIANT *pPropVar = (PROPVARIANT *) CoTaskMemAlloc( sizeof (PROPVARIANT) );
+		if ( pPropVar == 0 )
+			return E_OUTOFMEMORY;
+		::std::wstring wsTagName= GetMetaInfoNameFromPropertyId( m_pAttributes[m_ulCurrentPropertyNum].GetPropertyPropid() );
+		if ( wsTagName == EMPTY_STRING )
+			return FILTER_E_NO_VALUES;
 		::std::wstring wsTagData = m_pMetaInfoReader->getTagData(wsTagName);
 		pPropVar->vt = VT_LPWSTR;
 		size_t cw = wsTagData.length() + 1; // reserve one for the '\0'
@@ -557,12 +558,12 @@ SCODE STDMETHODCALLTYPE COooFilter::GetValue(PROPVARIANT ** ppPropValue)
 			return E_OUTOFMEMORY;
 		}
 		wmemcpy(pPropVar->pwszVal, wsTagData.c_str(), cw);
-        *ppPropValue = pPropVar;
-        m_ulCurrentPropertyNum = m_ulPropertyNum;
-        return S_OK;
-    }
-    else
-        return E_FAIL;
+		*ppPropValue = pPropVar;
+		m_ulCurrentPropertyNum = m_ulPropertyNum;
+		return S_OK;
+	}
+	else
+		return E_FAIL;
 }
 //M-------------------------------------------------------------------------
 //
@@ -585,12 +586,12 @@ SCODE STDMETHODCALLTYPE COooFilter::GetValue(PROPVARIANT ** ppPropValue)
 //--------------------------------------------------------------------------
 
 SCODE STDMETHODCALLTYPE COooFilter::BindRegion(
-    FILTERREGION /*origPos*/,
-    REFIID /*riid*/,
-    void ** /*ppunk*/)
+	FILTERREGION /*origPos*/,
+	REFIID /*riid*/,
+	void ** /*ppunk*/)
 {
-    // BindRegion is currently reserved for future use
-    return E_NOTIMPL;
+	// BindRegion is currently reserved for future use
+	return E_NOTIMPL;
 }
 //M-------------------------------------------------------------------------
 //
@@ -608,8 +609,8 @@ SCODE STDMETHODCALLTYPE COooFilter::BindRegion(
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::GetClassID(CLSID * pClassID)
 {
-    *pClassID = CLSID_COooFilter;
-    return S_OK;
+	*pClassID = CLSID_COooFilter;
+	return S_OK;
 }
 //M-------------------------------------------------------------------------
 //
@@ -627,8 +628,8 @@ SCODE STDMETHODCALLTYPE COooFilter::GetClassID(CLSID * pClassID)
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::IsDirty()
 {
-    // File is opened read-only and never changes
-    return S_FALSE;
+	// File is opened read-only and never changes
+	return S_FALSE;
 }
 //M-------------------------------------------------------------------------
 //
@@ -652,25 +653,25 @@ SCODE STDMETHODCALLTYPE COooFilter::IsDirty()
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::Load(LPCWSTR pszFileName, DWORD /*dwMode*/)
 {
-    // Load just sets the filename for GetChunk to read and ignores the mode
-    m_pwszFileName = getShortPathName( pszFileName );
+	// Load just sets the filename for GetChunk to read and ignores the mode
+	m_pwszFileName = getShortPathName( pszFileName );
 
-    // Open the file previously specified in call to IPersistFile::Load and get content.
+	// Open the file previously specified in call to IPersistFile::Load and get content.
 	try
-    {
-        if (m_pMetaInfoReader)
-            delete m_pMetaInfoReader;             
+	{
+		if (m_pMetaInfoReader)
+			delete m_pMetaInfoReader;
 		m_pMetaInfoReader = new CMetaInfoReader(WStringToString(m_pwszFileName));
-		
+
 		if (m_pContentReader)
-		    delete m_pContentReader;
+	delete m_pContentReader;
 		m_pContentReader = new CContentReader(WStringToString(m_pwszFileName), m_pMetaInfoReader->getDefaultLocale());
-    }
-    catch (const std::exception&)
-    {
-        return E_FAIL;
-    }
-    return S_OK;
+	}
+	catch (const std::exception&)
+	{
+		return E_FAIL;
+	}
+	return S_OK;
 }
 //M-------------------------------------------------------------------------
 //
@@ -692,8 +693,8 @@ SCODE STDMETHODCALLTYPE COooFilter::Load(LPCWSTR pszFileName, DWORD /*dwMode*/)
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::Save(LPCWSTR /*pszFileName*/, BOOL /*fRemember*/)
 {
-    // File is opened read-only; saving it is an error
-    return E_FAIL;
+	// File is opened read-only; saving it is an error
+	return E_FAIL;
 }
 //M-------------------------------------------------------------------------
 //
@@ -711,8 +712,8 @@ SCODE STDMETHODCALLTYPE COooFilter::Save(LPCWSTR /*pszFileName*/, BOOL /*fRememb
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::SaveCompleted(LPCWSTR /*pszFileName*/)
 {
-    // File is opened read-only, so "save" is always finished
-    return S_OK;
+	// File is opened read-only, so "save" is always finished
+	return S_OK;
 }
 
 //M-------------------------------------------------------------------------
@@ -723,54 +724,54 @@ SCODE STDMETHODCALLTYPE COooFilter::SaveCompleted(LPCWSTR /*pszFileName*/)
 //
 //  Arguments:  pStm
 //                  [in] Pointer to stream from which object should be loaded
-//                    
+//
 //
 //  Returns:    S_OK
-//				E_OUTOFMEMORY
-//				E_FAIL
-//                 
+//              E_OUTOFMEMORY
+//              E_FAIL
+//
 //
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::Load(IStream *pStm)
 {
 	zlib_filefunc_def z_filefunc;
 
-    m_pStream = PrepareIStream( pStm, z_filefunc );
-  
+	m_pStream = PrepareIStream( pStm, z_filefunc );
+
 	try
-    {
-        if (m_pMetaInfoReader)
-            delete m_pMetaInfoReader;             
+	{
+		if (m_pMetaInfoReader)
+			delete m_pMetaInfoReader;
 		m_pMetaInfoReader = new CMetaInfoReader((void*)m_pStream, &z_filefunc);
-		
+
 		if (m_pContentReader)
-		    delete m_pContentReader;
+			delete m_pContentReader;
 		m_pContentReader = new CContentReader((void*)m_pStream, m_pMetaInfoReader->getDefaultLocale(), &z_filefunc);
-    }
-    catch (const std::exception&)
-    {
-        return E_FAIL;
-    }
-    return S_OK;
+	}
+	catch (const std::exception&)
+	{
+		return E_FAIL;
+	}
+	return S_OK;
 }
 
 //M-------------------------------------------------------------------------
 //
 //  Method:     COooFilter::GetSizeMax      (IPersistStream::GetSizeMax)
 //
-//  Summary:    Returns the size in bytes of the stream neede to save the object.
+//  Summary:    Returns the size in bytes of the stream needed to save the object.
 //
 //  Arguments:  pcbSize
-//                  [out] Pointer to a 64 bit unsigned int indicating the size needed 
+//                  [out] Pointer to a 64 bit unsigned int indicating the size needed
 //
 //  Returns:    E_NOTIMPL
-//                  
+//
 //
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::GetSizeMax(ULARGE_INTEGER * /*pcbSize*/)
 {
-    // 
-    return E_NOTIMPL;
+	//
+	return E_NOTIMPL;
 }
 
 //M-------------------------------------------------------------------------
@@ -783,16 +784,16 @@ SCODE STDMETHODCALLTYPE COooFilter::GetSizeMax(ULARGE_INTEGER * /*pcbSize*/)
 //                  [in] Pointer to stream
 //
 //              fClearDirty
-//					[in] Indicates whether to clear dirty flag
-//				
+//                  [in] Indicates whether to clear dirty flag
+//
 //  Returns:    E_NOTIMPL
-//                 
+//
 //
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::Save(IStream * /*pStm*/, BOOL )
 {
-    // 
-    return E_NOTIMPL;
+	//
+	return E_NOTIMPL;
 }
 
 //M-------------------------------------------------------------------------
@@ -818,11 +819,11 @@ SCODE STDMETHODCALLTYPE COooFilter::Save(IStream * /*pStm*/, BOOL )
 //-------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilter::GetCurFile(LPWSTR * ppszFileName)
 {
-    if ( EMPTY_STRING == m_pwszFileName )
-        return E_FAIL;
-    else
-        *ppszFileName = (LPWSTR)m_pwszFileName.c_str();
-    return S_OK;
+	if ( EMPTY_STRING == m_pwszFileName )
+		return E_FAIL;
+	else
+		*ppszFileName = (LPWSTR)m_pwszFileName.c_str();
+	return S_OK;
 }
 
 //M-------------------------------------------------------------------------
@@ -837,9 +838,9 @@ SCODE STDMETHODCALLTYPE COooFilter::GetCurFile(LPWSTR * ppszFileName)
 //
 //--------------------------------------------------------------------------
 COooFilterCF::COooFilterCF() :
-    m_lRefs(1)
+	m_lRefs(1)
 {
-    InterlockedIncrement( &g_lInstances );
+	InterlockedIncrement( &g_lInstances );
 }
 //M-------------------------------------------------------------------------
 //
@@ -854,7 +855,7 @@ COooFilterCF::COooFilterCF() :
 //--------------------------------------------------------------------------
 COooFilterCF::~COooFilterCF()
 {
-   InterlockedDecrement( &g_lInstances );
+	InterlockedDecrement( &g_lInstances );
 }
 //M-------------------------------------------------------------------------
 //
@@ -875,24 +876,24 @@ COooFilterCF::~COooFilterCF()
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilterCF::QueryInterface(REFIID riid, void  ** ppvObject)
 {
-    IUnknown *pUnkTemp;
+	IUnknown *pUnkTemp;
 
-    if ( IID_IClassFactory == riid )
-        pUnkTemp = (IUnknown *)(IClassFactory *)this;
-    else if ( IID_IUnknown == riid )
-        pUnkTemp = (IUnknown *)this;
-    else
-    {
-        *ppvObject = NULL;
-        return E_NOINTERFACE;
-    }
-    *ppvObject = (void  *)pUnkTemp;
-    pUnkTemp->AddRef();
-    return S_OK;
+	if ( IID_IClassFactory == riid )
+		pUnkTemp = (IUnknown *)(IClassFactory *)this;
+	else if ( IID_IUnknown == riid )
+		pUnkTemp = (IUnknown *)this;
+	else
+	{
+		*ppvObject = NULL;
+		return E_NOINTERFACE;
+	}
+	*ppvObject = (void  *)pUnkTemp;
+	pUnkTemp->AddRef();
+	return S_OK;
 }
 //M-------------------------------------------------------------------------
 //
-//  Method:     COooFilterCF::AddRef            (IUknown::AddRef)
+//  Method:     COooFilterCF::AddRef            (IUnknown::AddRef)
 //
 //  Summary:    Increments interface refcount
 //
@@ -903,7 +904,7 @@ SCODE STDMETHODCALLTYPE COooFilterCF::QueryInterface(REFIID riid, void  ** ppvOb
 //-------------------------------------------------------------------------
 ULONG STDMETHODCALLTYPE COooFilterCF::AddRef()
 {
-   return InterlockedIncrement( &m_lRefs );
+	return InterlockedIncrement( &m_lRefs );
 }
 //M-------------------------------------------------------------------------
 //
@@ -918,17 +919,17 @@ ULONG STDMETHODCALLTYPE COooFilterCF::AddRef()
 //--------------------------------------------------------------------------
 ULONG STDMETHODCALLTYPE COooFilterCF::Release()
 {
-    ULONG ulTmp = InterlockedDecrement( &m_lRefs );
-    
-    if ( 0 == ulTmp )
-        delete this;
-    return ulTmp;
+	ULONG ulTmp = InterlockedDecrement( &m_lRefs );
+
+	if ( 0 == ulTmp )
+		delete this;
+	return ulTmp;
 }
 //M-------------------------------------------------------------------------
 //
 //  Method:     COooFilterCF::CreateInstance (IClassFactory::CreateInstance)
 //
-//  Summary:    Creates new OpenOffice.org filter object
+//  Summary:    Creates new OpenOffice filter object
 //
 //  Arguments:  pUnkOuter
 //                  [in] Pointer to IUnknown interface of aggregating object
@@ -938,43 +939,43 @@ ULONG STDMETHODCALLTYPE COooFilterCF::Release()
 //                  [out] Address that receives requested interface pointer
 //
 //  Returns:    S_OK
-//                  OpenOffice.org filter object was successfully created
+//                  OpenOffice filter object was successfully created
 //              CLASS_E_NOAGGREGATION
 //                  pUnkOuter parameter was non-NULL
 //              E_NOINTERFACE
 //                  (not implemented)
 //              E_OUTOFMEMORY
-//                  OpenOffice.org filter object could not be created
+//                  OpenOffice filter object could not be created
 //                  due to insufficient memory
 //              E_UNEXPECTED
 //                  Unsuccessful due to an unexpected condition
 //
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilterCF::CreateInstance(
-    IUnknown * pUnkOuter,
-    REFIID riid,
-    void  * * ppvObject)
+	IUnknown * pUnkOuter,
+	REFIID riid,
+	void  * * ppvObject)
 {
-    COooFilter *pIUnk = 0;
-    if ( 0 != pUnkOuter )
-        return CLASS_E_NOAGGREGATION;
-    pIUnk = new COooFilter();
-    if ( 0 != pIUnk )
-    {
-        if ( SUCCEEDED( pIUnk->QueryInterface( riid , ppvObject ) ) )
-        {
-            // Release extra refcount from QueryInterface
-            pIUnk->Release();
-        }
-        else
-        {
-            delete pIUnk;
-            return E_UNEXPECTED;
-        }
-    }
-    else
-        return E_OUTOFMEMORY;
-    return S_OK;
+	COooFilter *pIUnk = 0;
+	if ( 0 != pUnkOuter )
+		return CLASS_E_NOAGGREGATION;
+	pIUnk = new COooFilter();
+	if ( 0 != pIUnk )
+	{
+		if ( SUCCEEDED( pIUnk->QueryInterface( riid , ppvObject ) ) )
+		{
+			// Release extra refcount from QueryInterface
+			pIUnk->Release();
+		}
+		else
+		{
+			delete pIUnk;
+			return E_UNEXPECTED;
+		}
+	}
+	else
+		return E_OUTOFMEMORY;
+	return S_OK;
 }
 
 //M-------------------------------------------------------------------------
@@ -998,17 +999,17 @@ SCODE STDMETHODCALLTYPE COooFilterCF::CreateInstance(
 //--------------------------------------------------------------------------
 SCODE STDMETHODCALLTYPE COooFilterCF::LockServer(BOOL fLock)
 {
-    if( fLock )
-        InterlockedIncrement( &g_lInstances );
-    else
-        InterlockedDecrement( &g_lInstances );
-    return S_OK;
+	if( fLock )
+		InterlockedIncrement( &g_lInstances );
+	else
+		InterlockedDecrement( &g_lInstances );
+	return S_OK;
 }
 //+-------------------------------------------------------------------------
 //
 //  DLL:        ooofilt.dll
 //
-//  Summary:    Implements Dynamic Link Library functions for OpenOffice.org filter
+//  Summary:    Implements Dynamic Link Library functions for OpenOffice filter
 //
 //--------------------------------------------------------------------------
 //F-------------------------------------------------------------------------
@@ -1029,20 +1030,20 @@ SCODE STDMETHODCALLTYPE COooFilterCF::LockServer(BOOL fLock)
 //
 //--------------------------------------------------------------------------
 extern "C" BOOL WINAPI DllMain(
-    HINSTANCE hInstance,
-    DWORD     fdwReason,
-    LPVOID    /*lpvReserved*/
+	HINSTANCE hInstance,
+	DWORD     fdwReason,
+	LPVOID    /*lpvReserved*/
 )
 {
-   if ( DLL_PROCESS_ATTACH == fdwReason )
-        DisableThreadLibraryCalls( hInstance );
-    return TRUE;
+	if ( DLL_PROCESS_ATTACH == fdwReason )
+		DisableThreadLibraryCalls( hInstance );
+	return TRUE;
 }
 //F-------------------------------------------------------------------------
 //
 //  Function:   DllGetClassObject
 //
-//  Summary:    Create OpenOffice.org filter class factory object
+//  Summary:    Create OpenOffice filter class factory object
 //
 //  Arguments:  cid
 //                  [in] Class ID of class that class factory creates
@@ -1052,9 +1053,9 @@ extern "C" BOOL WINAPI DllMain(
 //                  [out] Address that receives requested interface pointer
 //
 //  Returns:    S_OK
-//                  Class factory object was created successfully 
+//                  Class factory object was created successfully
 //              CLASS_E_CLASSNOTAVAILABLE
-//                  DLL does not support the requested class 
+//                  DLL does not support the requested class
 //              E_INVALIDARG
 //                  (not implemented
 //              E_OUTOFMEMORY
@@ -1064,31 +1065,31 @@ extern "C" BOOL WINAPI DllMain(
 //
 //-------------------------------------------------------------------------
 extern "C" SCODE STDMETHODCALLTYPE DllGetClassObject(
-    REFCLSID   cid,
-    REFIID     iid,
-    void **    ppvObj
+	REFCLSID   cid,
+	REFIID     iid,
+	void **    ppvObj
 )
 {
-    IUnknown *pResult = 0;
+	IUnknown *pResult = 0;
 
-    if ( CLSID_COooFilter == cid )
-        pResult = (IUnknown *) new COooFilterCF;
-    else
-        return CLASS_E_CLASSNOTAVAILABLE;
-    if ( 0 != pResult )
-    {
-        if( SUCCEEDED( pResult->QueryInterface( iid, ppvObj ) ) )
-            // Release extra refcount from QueryInterface
-            pResult->Release();
-        else
-        {
-            delete pResult;
-            return E_UNEXPECTED;
-        }
-    }
-    else
-        return E_OUTOFMEMORY;
-    return S_OK;
+	if ( CLSID_COooFilter == cid )
+		pResult = (IUnknown *) new COooFilterCF;
+	else
+		return CLASS_E_CLASSNOTAVAILABLE;
+	if ( 0 != pResult )
+	{
+		if( SUCCEEDED( pResult->QueryInterface( iid, ppvObj ) ) )
+			// Release extra refcount from QueryInterface
+			pResult->Release();
+		else
+		{
+			delete pResult;
+			return E_UNEXPECTED;
+		}
+	}
+	else
+		return E_OUTOFMEMORY;
+	return S_OK;
 }
 //F-------------------------------------------------------------------------
 //
@@ -1101,15 +1102,15 @@ extern "C" SCODE STDMETHODCALLTYPE DllGetClassObject(
 //  Returns:    S_OK
 //                  DLL can be unloaded now
 //              S_FALSE
-//                  DLL must remain loaded 
+//                  DLL must remain loaded
 //
 //--------------------------------------------------------------------------
 extern "C" SCODE STDMETHODCALLTYPE DllCanUnloadNow()
 {
-    if ( 0 >= g_lInstances )
-        return S_OK;
-    else
-        return S_FALSE;
+	if ( 0 >= g_lInstances )
+		return S_OK;
+	else
+		return S_FALSE;
 }
 //F-------------------------------------------------------------------------
 //
@@ -1168,126 +1169,127 @@ namespace /* private */
 
 	const char* INDEXING_FILTER_DLLSTOREGISTER      = "SYSTEM\\CurrentControlSet\\Control\\ContentIndex";
 
-    //---------------------------
-    // "String Placeholder" -> 
-    // "String Replacement"
-    //---------------------------
-    
-    void SubstitutePlaceholder(std::string& String, const std::string& Placeholder, const std::string& Replacement)
-    {
-        std::string::size_type idx = String.find(Placeholder);		
-        std::string::size_type len = Placeholder.length();
-    
-        while (std::string::npos != idx)
-        {
-            String.replace(idx, len, Replacement);
-            idx = String.find(Placeholder);
-        }	
-    }
-    
-    //----------------------------------------------
-    // Make the registry entry and set Filter Handler
-    // HKCR\CLSID\{7BC0E710-5703-45be-A29D-5D46D8B39262} = OpenOffice.org Filter
-    //		             InProcServer32	 (Default)       = Path\ooofilt.dll
-    //			                         ThreadingModel  = Both
-    //----------------------------------------------
-    
-    HRESULT RegisterFilterHandler(const char* FilePath, const CLSID& FilterGuid)
-    {
-        std::string ClsidEntry = CLSID_GUID_ENTRY;
-        SubstitutePlaceholder(ClsidEntry, GUID_PLACEHOLDER, ClsidToString(FilterGuid));
-    
-		if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry.c_str(), "", "OpenOffice.org XML Filter"))
-            return E_FAIL;	
-        
-        ClsidEntry = CLSID_GUID_INPROC_ENTRY;
-        SubstitutePlaceholder(ClsidEntry, GUID_PLACEHOLDER, ClsidToString(FilterGuid));
-    
-        if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry.c_str(), "", FilePath))
-            return E_FAIL;	
+	//---------------------------
+	// "String Placeholder" ->
+	// "String Replacement"
+	//---------------------------
 
-        if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry.c_str(), "ThreadingModel", "Both"))
-            return E_FAIL;
-    
-        return S_OK;
-    }
+	void SubstitutePlaceholder(std::string& String, const std::string& Placeholder, const std::string& Replacement)
+	{
+		std::string::size_type idx = String.find(Placeholder);
+		std::string::size_type len = Placeholder.length();
 
-    //----------------------------------------------
-    // Make the registry entry and set Persistent Handler
-    // HKCR\CLSID\{7BC0E713-5703-45be-A29D-5D46D8B39262}  = OpenOffice.org Persistent Handler
-    //		PersistentAddinsRegistered	 
-    //			{89BCB740-6119-101A-BCB7-00DD010655AF} = {7BC0E710-5703-45be-A29D-5D46D8B39262}
-    //----------------------------------------------
-    
-    HRESULT RegisterPersistentHandler(const CLSID& FilterGuid, const CLSID& PersistentGuid)
-    {
-        std::string ClsidEntry_Persist = CLSID_GUID_ENTRY;
-        SubstitutePlaceholder(ClsidEntry_Persist, GUID_PLACEHOLDER, ClsidToString(PersistentGuid));
-    
-		
-		if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry_Persist.c_str(), "", "OpenOffice Persistent Handler"))
-            return E_FAIL;	
+		while (std::string::npos != idx)
+		{
+			String.replace(idx, len, Replacement);
+			idx = String.find(Placeholder);
+		}
+	}
 
-		// Add missing entry 
+	//----------------------------------------------
+	// Make the registry entry and set Filter Handler
+	// HKCR\CLSID\{7BC0E710-5703-45be-A29D-5D46D8B39262} = OpenDocument Format Filter
+	//                              InProcServer32 (x86) = Path\ooofilt.dll
+	//                              InProcServer32 (x64) = Path\ooofilt_x64.dll
+	//                                    ThreadingModel = Both
+	//----------------------------------------------
+
+	HRESULT RegisterFilterHandler(const char* FilePath, const CLSID& FilterGuid)
+	{
+		std::string ClsidEntry = CLSID_GUID_ENTRY;
+		SubstitutePlaceholder(ClsidEntry, GUID_PLACEHOLDER, ClsidToString(FilterGuid));
+
+		if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry.c_str(), "", "OpenDocument Format Filter"))
+			return E_FAIL;
+
+		ClsidEntry = CLSID_GUID_INPROC_ENTRY;
+		SubstitutePlaceholder(ClsidEntry, GUID_PLACEHOLDER, ClsidToString(FilterGuid));
+
+		if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry.c_str(), "", FilePath))
+			return E_FAIL;
+
+		if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry.c_str(), "ThreadingModel", "Both"))
+			return E_FAIL;
+
+		return S_OK;
+	}
+
+	//----------------------------------------------
+	// Make the registry entry and set Persistent Handler
+	// HKCR\CLSID\{7BC0E713-5703-45be-A29D-5D46D8B39262} = OpenDocument Format Persistent Handler
+	//      PersistentAddinsRegistered
+	//            {89BCB740-6119-101A-BCB7-00DD010655AF} = {7BC0E710-5703-45be-A29D-5D46D8B39262}
+	//----------------------------------------------
+
+	HRESULT RegisterPersistentHandler(const CLSID& FilterGuid, const CLSID& PersistentGuid)
+	{
+		std::string ClsidEntry_Persist = CLSID_GUID_ENTRY;
+		SubstitutePlaceholder(ClsidEntry_Persist, GUID_PLACEHOLDER, ClsidToString(PersistentGuid));
+
+
+		if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry_Persist.c_str(), "", "OpenDocument Format Persistent Handler"))
+			return E_FAIL;
+
+		// Add missing entry
 		std::string ClsidEntry_Persist_Entry = CLSID_PERSIST_ENTRY;
-        SubstitutePlaceholder(ClsidEntry_Persist_Entry, 
-			                  GUID_PLACEHOLDER, 
-							  ClsidToString(PersistentGuid));		
+		SubstitutePlaceholder(ClsidEntry_Persist_Entry,
+							  GUID_PLACEHOLDER,
+							  ClsidToString(PersistentGuid));
 
 		if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry_Persist_Entry.c_str(), "", ClsidToString(PersistentGuid).c_str()))
 			return E_FAIL;
-        
-        std::string ClsidEntry_Persist_Addin = CLSID_GUID_PERSIST_ADDIN_ENTRY;
-        SubstitutePlaceholder(ClsidEntry_Persist_Addin, 
-			                  GUID_PLACEHOLDER, 
+
+		std::string ClsidEntry_Persist_Addin = CLSID_GUID_PERSIST_ADDIN_ENTRY;
+		SubstitutePlaceholder(ClsidEntry_Persist_Addin,
+							  GUID_PLACEHOLDER,
 							  ClsidToString(PersistentGuid));
-		SubstitutePlaceholder(ClsidEntry_Persist_Addin, 
-			                  GUID_PERSIST_PLACEHOLDER, 
+		SubstitutePlaceholder(ClsidEntry_Persist_Addin,
+							  GUID_PERSIST_PLACEHOLDER,
 							  ClsidToString(CLSID_PERSISTENT_HANDLER_ADDIN));
-    
-        if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry_Persist_Addin.c_str(), "", ClsidToString(FilterGuid).c_str() ))
-            return E_FAIL;
-    
-        return S_OK;
-    }
 
-    //---------------------------
-    // Unregister Filter Handler or persistent handler
-    //---------------------------
-    
-    HRESULT UnregisterHandler(const CLSID& Guid)
-    {
-        std::string tmp = "CLSID\\";
-        tmp += ClsidToString(Guid);
-        return DeleteRegistryKey(HKEY_CLASSES_ROOT, tmp.c_str()) ? S_OK : E_FAIL;
-    }
+		if (!SetRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry_Persist_Addin.c_str(), "", ClsidToString(FilterGuid).c_str() ))
+			return E_FAIL;
 
-    //---------------------------
-    // Register Indexing Service ext and class.
+		return S_OK;
+	}
+
+	//---------------------------
+	// Unregister Filter Handler or persistent handler
+	//---------------------------
+
+	HRESULT UnregisterHandler(const CLSID& Guid)
+	{
+		std::string tmp = "CLSID\\";
+		tmp += ClsidToString(Guid);
+		return DeleteRegistryKey(HKEY_CLASSES_ROOT, tmp.c_str()) ? S_OK : E_FAIL;
+	}
+
+	//---------------------------
+	// Register Indexing Service ext and class.
 	// HKCR\{EXT}\PersistentHandler = {7BC0E713-5703-45be-A29D-5D46D8B39262}
-    // HKCR\{GUID\PersistentHandler = {7BC0E713-5703-45be-A29D-5D46D8B39262}
-    //---------------------------
-    
-    HRESULT RegisterSearchHandler(const char* ModuleFileName)
-    {
-        if (FAILED(RegisterFilterHandler(ModuleFileName, CLSID_FILTER_HANDLER)))
-            return E_FAIL;
-    
-        if (FAILED(RegisterPersistentHandler(CLSID_FILTER_HANDLER, CLSID_PERSISTENT_HANDLER )))
-            return E_FAIL;
+	// HKCR\{GUID\PersistentHandler = {7BC0E713-5703-45be-A29D-5D46D8B39262}
+	//---------------------------
 
-        std::string sExtPersistEntry;
-    
-        for(size_t i = 0; i < OOFileExtensionTableSize; i++)
-        {
+	HRESULT RegisterSearchHandler(const char* ModuleFileName)
+	{
+		if (FAILED(RegisterFilterHandler(ModuleFileName, CLSID_FILTER_HANDLER)))
+			return E_FAIL;
+
+		if (FAILED(RegisterPersistentHandler(CLSID_FILTER_HANDLER, CLSID_PERSISTENT_HANDLER )))
+			return E_FAIL;
+
+		std::string sExtPersistEntry;
+
+		for(size_t i = 0; i < OOFileExtensionTableSize; i++)
+		{
 			// first, register extension.
-            sExtPersistEntry = EXT_PERSIST_ENTRY;
-            SubstitutePlaceholder(sExtPersistEntry, EXTENSION_PLACEHOLDER, OOFileExtensionTable[i].ExtensionAnsi);
-            if (!SetRegistryKey(HKEY_CLASSES_ROOT, 
-								sExtPersistEntry.c_str(), 
-								"", 
+			sExtPersistEntry = EXT_PERSIST_ENTRY;
+			SubstitutePlaceholder(sExtPersistEntry, EXTENSION_PLACEHOLDER, OOFileExtensionTable[i].ExtensionAnsi);
+			if (!SetRegistryKey(HKEY_CLASSES_ROOT,
+								sExtPersistEntry.c_str(),
+								"",
 								ClsidToString(CLSID_PERSISTENT_HANDLER).c_str()))
-                return E_FAIL;
+				return E_FAIL;
 
 			// second, register class.
 			char extClassName[MAX_PATH];
@@ -1300,35 +1302,35 @@ namespace /* private */
 				if (QueryRegistryKey( HKEY_CLASSES_ROOT, extCLSIDName.c_str(), "", extCLSID, MAX_PATH))
 				{
 					std::string ClsidEntry_CLSID_Persist = CLSID_PERSIST_ENTRY;
-					SubstitutePlaceholder(ClsidEntry_CLSID_Persist, 
-										GUID_PLACEHOLDER, 
+					SubstitutePlaceholder(ClsidEntry_CLSID_Persist,
+										GUID_PLACEHOLDER,
 										extCLSID);
-		    
-					if (!SetRegistryKey(HKEY_CLASSES_ROOT, 
-										ClsidEntry_CLSID_Persist.c_str(), 
-										"", 
+
+					if (!SetRegistryKey(HKEY_CLASSES_ROOT,
+										ClsidEntry_CLSID_Persist.c_str(),
+										"",
 										ClsidToString(CLSID_PERSISTENT_HANDLER).c_str() ))
 						return E_FAIL;
 				}
 			}
-        }
-    
-        return S_OK;
-    }
-      
-    // Register Indexing Service ext and class.        
-    HRESULT UnregisterSearchHandler()
-    {
-        std::string sExtPersistEntry;
-    
-        for (size_t i = 0; i < OOFileExtensionTableSize; i++)
-        {
-			// first, unregister extension 
-            sExtPersistEntry = EXT_PERSIST_ENTRY;
-            SubstitutePlaceholder(sExtPersistEntry, EXTENSION_PLACEHOLDER, OOFileExtensionTable[i].ExtensionAnsi);
-            DeleteRegistryKey(HKEY_CLASSES_ROOT, sExtPersistEntry.c_str());
+		}
 
-			// second, unregister class 
+		return S_OK;
+	}
+
+	// Register Indexing Service ext and class.
+	HRESULT UnregisterSearchHandler()
+	{
+		std::string sExtPersistEntry;
+
+		for (size_t i = 0; i < OOFileExtensionTableSize; i++)
+		{
+			// first, unregister extension
+			sExtPersistEntry = EXT_PERSIST_ENTRY;
+			SubstitutePlaceholder(sExtPersistEntry, EXTENSION_PLACEHOLDER, OOFileExtensionTable[i].ExtensionAnsi);
+			DeleteRegistryKey(HKEY_CLASSES_ROOT, sExtPersistEntry.c_str());
+
+			// second, unregister class
 			char extClassName[MAX_PATH];
 			if (QueryRegistryKey(HKEY_CLASSES_ROOT, OOFileExtensionTable[i].ExtensionAnsi, "", extClassName,MAX_PATH))
 			{
@@ -1339,28 +1341,28 @@ namespace /* private */
 				if (QueryRegistryKey( HKEY_CLASSES_ROOT, extCLSIDName.c_str(), "", extCLSID, MAX_PATH))
 				{
 					std::string ClsidEntry_CLSID_Persist = CLSID_PERSIST_ENTRY;
-					SubstitutePlaceholder(ClsidEntry_CLSID_Persist, 
-										GUID_PLACEHOLDER, 
+					SubstitutePlaceholder(ClsidEntry_CLSID_Persist,
+										GUID_PLACEHOLDER,
 										extCLSID);
-		    
+
 					DeleteRegistryKey(HKEY_CLASSES_ROOT, ClsidEntry_CLSID_Persist.c_str());
 				}
 			}
 		}
-    
-		return ((UnregisterHandler(CLSID_FILTER_HANDLER)==S_OK) && (UnregisterHandler(CLSID_PERSISTENT_HANDLER)==S_OK))?S_OK:E_FAIL;
-    }
 
-    //---------------------------
-    //    add or remove an entry to DllsToRegister entry of Indexing  
-	//    Filter to let Indexing Service register our filter automatically  
-	//	  each time.
-    //---------------------------
-	HRESULT AddOrRemoveDllsToRegisterList( const ::std::string & DllPath, bool isAdd ) 
+		return ((UnregisterHandler(CLSID_FILTER_HANDLER)==S_OK) && (UnregisterHandler(CLSID_PERSISTENT_HANDLER)==S_OK))?S_OK:E_FAIL;
+	}
+
+	//---------------------------
+	//    add or remove an entry to DllsToRegister entry of Indexing
+	//    Filter to let Indexing Service register our filter automatically
+	//    each time.
+	//---------------------------
+	HRESULT AddOrRemoveDllsToRegisterList( const ::std::string & DllPath, bool isAdd )
 	{
 		char DllsToRegisterList[4096];
-		if (QueryRegistryKey(HKEY_LOCAL_MACHINE, 
-			                 INDEXING_FILTER_DLLSTOREGISTER, 
+		if (QueryRegistryKey(HKEY_LOCAL_MACHINE,
+							 INDEXING_FILTER_DLLSTOREGISTER,
 							 "DLLsToRegister",
 							 DllsToRegisterList,
 							 4096))
@@ -1371,13 +1373,13 @@ namespace /* private */
 					*pChar = ';';
 			*pChar = ';';
 			*(pChar+1) = '\0';
-			
+
 			::std::string DllList(DllsToRegisterList);
 			if ( ( isAdd )&&( DllList.find( DllPath ) == ::std::string::npos ) )
 				DllList.append( DllPath );
 			else if ( ( !isAdd )&&( DllList.find( DllPath ) != ::std::string::npos ) )
 				DllList.erase( DllList.find( DllPath )-1, DllPath.length()+1 );
-			else 
+			else
 				return S_OK;
 
 			pChar = DllsToRegisterList;
@@ -1391,23 +1393,23 @@ namespace /* private */
 			*pChar = *( pChar+1 ) ='\0';
 
 			HKEY hSubKey;
-			int rc = RegCreateKeyExA(HKEY_LOCAL_MACHINE, 
-									INDEXING_FILTER_DLLSTOREGISTER, 
-									0, 
-									"", 
-									REG_OPTION_NON_VOLATILE, 
-									KEY_WRITE, 
-									0, 
-									&hSubKey, 
+			int rc = RegCreateKeyExA(HKEY_LOCAL_MACHINE,
+									INDEXING_FILTER_DLLSTOREGISTER,
+									0,
+									"",
+									REG_OPTION_NON_VOLATILE,
+									KEY_WRITE,
+									0,
+									&hSubKey,
 									0);
-			
+
 			if (ERROR_SUCCESS == rc)
 			{
-				rc = RegSetValueExA( hSubKey, 
-									"DLLsToRegister", 
-									0, 
-									REG_MULTI_SZ, 
-									reinterpret_cast<const BYTE*>(DllsToRegisterList), 
+				rc = RegSetValueExA( hSubKey,
+									"DLLsToRegister",
+									0,
+									REG_MULTI_SZ,
+									reinterpret_cast<const BYTE*>(DllsToRegisterList),
 									DllList.length() + 2);
 
 				RegCloseKey(hSubKey);
@@ -1418,35 +1420,35 @@ namespace /* private */
 
 		return S_OK;
 	}
-    
+
 } // namespace /* private */
 
 STDAPI DllRegisterServer()
-{	
-    /*
+{
+	/*
 	TCHAR ModuleFileName[MAX_PATH];
 
 	GetModuleFileName(
 		GetModuleHandle(MODULE_NAME_FILTER),
 		ModuleFileName,
 		sizeof(ModuleFileName));
-	
+
 	HRESULT hr = S_OK;
 
 
-// register search handler	
-#ifdef UNICODE	
+// register search handler
+#ifdef UNICODE
 	if (FAILED(RegisterSearchHandler(WStringToString(ModuleFileName).c_str())))
 		hr = E_FAIL;
 	if (FAILED(AddOrRemoveDllsToRegisterList(WStringToString(ModuleFileName).c_str(), true)))
 		hr = E_FAIL;
 #else
-    if (FAILED(RegisterSearchHandler(ModuleFileName)))
+	if (FAILED(RegisterSearchHandler(ModuleFileName)))
 		hr = E_FAIL;
 	if (FAILED(AddOrRemoveDllsToRegisterList(ModuleFileName, true)))
 		hr = E_FAIL;
 #endif
-    
+
 
 	return hr;
 	*/
@@ -1459,21 +1461,21 @@ STDAPI DllRegisterServer()
 
 STDAPI DllUnregisterServer()
 {
-    /*
+	/*
 	TCHAR ModuleFileName[MAX_PATH];
 
 	GetModuleFileName(
 		GetModuleHandle(MODULE_NAME_FILTER),
 		ModuleFileName,
 		sizeof(ModuleFileName));
-	
+
 	HRESULT hr = S_OK;
 
-	// unregister search handler	
+	// unregister search handler
 	if (FAILED(UnregisterSearchHandler()))
 		hr = E_FAIL;
 
-#ifdef UNICODE	
+#ifdef UNICODE
 	if (FAILED(AddOrRemoveDllsToRegisterList(WStringToString(ModuleFileName).c_str(),false)))
 		hr = E_FAIL;
 #else
@@ -1485,3 +1487,5 @@ STDAPI DllUnregisterServer()
 	*/
 	return S_OK;
 }
+
+/* vim: set noet sw=4 ts=4: */

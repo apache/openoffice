@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@
 #include <filter.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 
 #include "propspec.hxx"
 
@@ -51,7 +51,7 @@
 //refer to ms-help://MS.VSCC/MS.MSDNVS.2052/com/stgasstg_7agk.htm
 //FMTID_SummaryInformation
 //
-//GUID CLSID_SummaryInforation = {         
+//GUID CLSID_SummaryInformation = {
 //    0xF29F85E0,
 //    0x4FF9,
 //    0x1068,
@@ -79,11 +79,11 @@ CFullPropSpec::CFullPropSpec()
 //
 //  Synopsis:   Construct propid based propspec
 //
-//  Arguments:  [guidPropSet]  -- Property set
+//  Arguments:  [guidPropSet] -- Property set
 //              [pidProperty] -- Property
 //
 //--------------------------------------------------------------------------
-CFullPropSpec::CFullPropSpec( GUID const & guidPropSet, PROPID pidProperty ) : 
+CFullPropSpec::CFullPropSpec( GUID const & guidPropSet, PROPID pidProperty ) :
     _guidPropSet( guidPropSet )
 {
     _psProperty.ulKind = PRSPEC_PROPID;
@@ -100,7 +100,7 @@ CFullPropSpec::CFullPropSpec( GUID const & guidPropSet, PROPID pidProperty ) :
 //
 //--------------------------------------------------------------------------
 CFullPropSpec::CFullPropSpec( GUID const & guidPropSet,
-                              WCHAR const * wcsProperty ) : 
+                              WCHAR const * wcsProperty ) :
     _guidPropSet( guidPropSet )
 {
     _psProperty.ulKind = PRSPEC_PROPID;
@@ -115,7 +115,7 @@ CFullPropSpec::CFullPropSpec( GUID const & guidPropSet,
 //  Arguments:  [src] -- Source property spec
 //
 //--------------------------------------------------------------------------
-CFullPropSpec::CFullPropSpec( CFullPropSpec const & src ) : 
+CFullPropSpec::CFullPropSpec( CFullPropSpec const & src ) :
     _guidPropSet( src._guidPropSet )
 {
     _psProperty.ulKind = src._psProperty.ulKind;
@@ -153,7 +153,7 @@ CFullPropSpec & CFullPropSpec::operator=( CFullPropSpec const & Property )
     this->CFullPropSpec::~CFullPropSpec();
 
 #ifdef _MSC_VER
-#pragma warning( disable : 4291 )           // unmatched operator new
+#pragma warning( disable : 4291 ) // unmatched operator new
 #endif
     new (this) CFullPropSpec( Property );
 #ifdef _MSC_VER
@@ -231,4 +231,3 @@ int CFullPropSpec::operator!=( CFullPropSpec const & prop ) const
     else
         return( 1 );
 }
-
