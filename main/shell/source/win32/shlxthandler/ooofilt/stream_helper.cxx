@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 #include <windows.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 
 #include <stdio.h>
 #include <objidl.h>
@@ -64,38 +64,38 @@ extern "C" {
 //-----------------------------
 IStream* PrepareIStream( IStream* pStream, zlib_filefunc_def &zFileFunc )
 {
-    // These next few lines work around the "Seek pointer" bug found on Vista.
-    char cBuf[20];
-    unsigned long nCount;
-    HRESULT hr;
-    ULARGE_INTEGER nNewPosition;
-    LARGE_INTEGER nMove;	
-    nMove.QuadPart = 0;	
-    hr = pStream->Seek( nMove, STREAM_SEEK_SET, &nNewPosition );	
-    hr = pStream->Read( cBuf, 20, &nCount );
+	// These next few lines work around the "Seek pointer" bug found on Vista.
+	char cBuf[20];
+	unsigned long nCount;
+	HRESULT hr;
+	ULARGE_INTEGER nNewPosition;
+	LARGE_INTEGER nMove;
+	nMove.QuadPart = 0;
+	hr = pStream->Seek( nMove, STREAM_SEEK_SET, &nNewPosition );
+	hr = pStream->Read( cBuf, 20, &nCount );
 
-    fill_stream_filefunc( &zFileFunc );
-    zFileFunc.opaque = (void*)pStream;
+	fill_stream_filefunc( &zFileFunc );
+	zFileFunc.opaque = (void*)pStream;
 
-    return pStream;
+	return pStream;
 }
 
 extern "C" {
 
 	// IStream callback
-	voidpf ZCALLBACK cb_sopen (voidpf opaque, const char* /*filename*/, int /*mode*/) {		
+	voidpf ZCALLBACK cb_sopen (voidpf opaque, const char* /*filename*/, int /*mode*/) {
 		return opaque;
 	}
 
 	uLong ZCALLBACK cb_sread (voidpf /*opaque*/, voidpf stream, void* buf, uLong size) {
 		unsigned long newsize;
 		HRESULT hr;
-	
+
 		hr = ((IStream *)stream)->Read (buf, size, &newsize);
 		if (hr == S_OK){
 			return (unsigned long)newsize;
 		}
-		else {			
+		else {
 			return (uLong)0;
 		}
 	}
@@ -104,8 +104,8 @@ extern "C" {
 		// IStream::Seek parameters
 		HRESULT hr;
 		LARGE_INTEGER Move;
-		DWORD dwOrigin;		
-		Move.QuadPart = (__int64)offset;	
+		DWORD dwOrigin;
+		Move.QuadPart = (__int64)offset;
 
 		switch (origin) {
 			case SEEK_CUR:
@@ -120,12 +120,12 @@ extern "C" {
 			default:
 				return -1;
 		}
-	
+
 		hr = ((IStream*)stream)->Seek (Move, dwOrigin, NULL);
-		if (hr == S_OK){	
+		if (hr == S_OK){
 			return 0;
 		}
-		else {			
+		else {
 			return -1;
 		}
 	}
@@ -137,9 +137,9 @@ extern "C" {
 		ULARGE_INTEGER NewPosition;
 		Move.QuadPart = 0;
 		NewPosition.QuadPart = 0;
-		
+
 		hr = ((IStream*)stream)->Seek (Move, STREAM_SEEK_CUR, &NewPosition);
-		if (hr == S_OK){			
+		if (hr == S_OK){
 			return (long) NewPosition.QuadPart;
 		}
 		else {
@@ -152,7 +152,7 @@ extern "C" {
 	}
 
 	int ZCALLBACK cb_serror (voidpf /*opaque*/, voidpf /*stream*/) {
-		return 0;  //RJK - for now
+		return 0; // RJK - for now
 	}
 
 	uLong ZCALLBACK cb_swrite (voidpf /*opaque*/, voidpf stream, const void* buf, uLong size) {
@@ -172,6 +172,8 @@ extern "C" {
 		pzlib_filefunc_def->ztell_file = cb_stell;
 		pzlib_filefunc_def->zseek_file = cb_sseek;
 		pzlib_filefunc_def->zclose_file = cb_sclose;
-		pzlib_filefunc_def->zerror_file = cb_serror;		
+		pzlib_filefunc_def->zerror_file = cb_serror;
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */
