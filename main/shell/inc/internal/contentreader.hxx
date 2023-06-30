@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,12 +41,12 @@ public:
 
 	/** Get the chunkbuffer.
 
-		@return 
+		@return
 		the chunkbuffer of the document.
 	*/
 	inline ChunkBuffer_t const & getChunkBuffer( ) const{ return m_ChunkBuffer; };
 
-protected: // protected because its only an implementation relevant class
+protected: // protected because it's only an implementation relevant class
 
 	/** start_element occurs when a tag is start.
 
@@ -58,8 +58,8 @@ protected: // protected because its only an implementation relevant class
 		attribute structure.
 	*/
 	virtual void start_element(
-		const std::wstring& raw_name, 
-		const std::wstring& local_name, 
+		const std::wstring& raw_name,
+		const std::wstring& local_name,
 		const XmlTagAttributes_t& attributes);
 
 	/** end_element occurs when a tag is closed
@@ -79,7 +79,7 @@ protected: // protected because its only an implementation relevant class
 	*/
 	virtual void characters(const std::wstring& character);
 
-protected: 
+protected:
 	/** choose an appropriate tag reader to handle the tag.
 
 		@param tag_name
@@ -87,13 +87,13 @@ protected:
 		@param XmlAttributes
 		attribute structure of the tag to save in.
 	*/
-	ITag* chooseTagReader( 
+	ITag* chooseTagReader(
 		const std::wstring& tag_name, const XmlTagAttributes_t& XmlAttributes );
 
 	/** Get the list of style locale pair.
 
-		@return 
-		the Style-Locale map 
+		@return
+		the Style-Locale map
 	*/
 	inline StyleLocaleMap_t const & getStyleMap( ) const{ return m_StyleMap; };
 
@@ -112,11 +112,13 @@ protected:
 	LocaleSet_t const & getLocale( const StyleName_t Style );
 
 private:
-    std::stack<ITag*> m_TagBuilderStack;
+	std::stack<ITag*> m_TagBuilderStack;
 
 	ChunkBuffer_t   m_ChunkBuffer;
 	StyleLocaleMap_t      m_StyleMap;
 	LocaleSet_t m_DefaultLocale;
-}; 
+};
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

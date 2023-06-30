@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,12 +35,12 @@ class Test : public ::testing::Test
 		public:
 				Test();
 				void SetUp() {}
-				void TearDown() {} 
+				void TearDown() {}
 };
 
 Test::Test() :
 		documentName("simpledocument.odt")
-{	
+{
 }
 
 //------------------------------------------------
@@ -64,11 +64,13 @@ TEST_F(Test, test_getContent)
 {
 		TestZipImpl testImpl(documentName.c_str());
 		bool isPassed = testImpl.test_getContent();
-		ASSERT_TRUE(isPassed) << "Couldn't receive content buffer form zipfile.";
+		ASSERT_TRUE(isPassed) << "Couldn't receive content buffer from zipfile.";
 }
 
 int main(int argc, char **argv)
 {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 }
+
+/* vim: set noet sw=4 ts=4: */
