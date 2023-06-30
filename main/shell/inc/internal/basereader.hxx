@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #ifndef BASEREADER_HXX_INCLUDED
 #define BASEREADER_HXX_INCLUDED
 
@@ -40,18 +40,18 @@ class CBaseReader : public i_xml_parser_event_handler
 public:
 	virtual ~CBaseReader();
 
-protected: // protected because its only an implementation relevant class
+protected: // protected because it's only an implementation relevant class
 	CBaseReader( const std::string& DocumentName );
 
 	CBaseReader( void* stream, zlib_filefunc_def* fa );
 
 	virtual void start_document();
-	
+
 	virtual void end_document();
 
 	virtual void start_element(
-		const std::wstring& raw_name, 
-		const std::wstring& local_name, 
+		const std::wstring& raw_name,
+		const std::wstring& local_name,
 		const XmlTagAttributes_t& attributes) = 0;
 
 	virtual void end_element(
@@ -71,6 +71,8 @@ protected: // protected because its only an implementation relevant class
 private:
 	ZipFile        m_ZipFile;
 	ZipFile::ZipContentBuffer_t m_ZipContent;
-}; 
+};
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
