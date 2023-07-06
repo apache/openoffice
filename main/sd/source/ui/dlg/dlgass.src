@@ -28,7 +28,7 @@ ModalDialog DLG_ASS
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
 	Size = MAP_APPFONT ( 272, 190 ) ;
-	Text[ en-US ] = "Presentation Wizard" ;
+	Text [ en-US ] = "Presentation Wizard" ;
 
 	HelpId = HID_SD_AUTOPILOT_PAGE1 ;
 	Moveable = TRUE ;
@@ -65,7 +65,7 @@ ModalDialog DLG_ASS
 	{
 		OutputSize = TRUE ;
 		Scale = TRUE ;
-		Border = TRUE;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 6, 4 ) ;
 		Size = MAP_APPFONT ( 258, 29 ) ;
 		Fixed = Bitmap { File = "dlgass1.png" ; } ;
@@ -201,7 +201,7 @@ ModalDialog DLG_ASS
 		OutputSize = TRUE ;
 		Pos = MAP_APPFONT ( 75, 121 ) ;
 		Size = MAP_APPFONT ( 59, 10 ) ;
-		Text [ en-US ] = "Sc~reen" ;
+		Text [ en-US ] = "Sc~reen (4:3)" ;
 	};
 
 	RadioButton RB_PAGE2_MEDIUM2
@@ -239,7 +239,7 @@ ModalDialog DLG_ASS
 	{
 		OutputSize = TRUE ;
 		Scale = TRUE ;
-		Border = TRUE;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 6, 4 ) ;
 		Size = MAP_APPFONT ( 258, 29 ) ;
 		Fixed = Bitmap { File = "dlgass3.png" ; } ;
@@ -400,7 +400,7 @@ ModalDialog DLG_ASS
 	{
 		OutputSize = TRUE ;
 		Scale = TRUE ;
-		Border = TRUE;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 6, 4 ) ;
 		Size = MAP_APPFONT ( 258, 29 ) ;
 		Fixed = Bitmap { File = "dlgass4.png" ; } ;
@@ -471,7 +471,7 @@ ModalDialog DLG_ASS
 	{
 		OutputSize = TRUE ;
 		Scale = TRUE ;
-		Border = TRUE;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 6, 4 ) ;
 		Size = MAP_APPFONT ( 258, 29 ) ;
 		Fixed = Bitmap { File = "dlgass5.png" ; } ;
