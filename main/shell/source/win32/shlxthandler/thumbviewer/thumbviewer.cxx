@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@
 #include <shellapi.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 #include <memory>
 
 extern HINSTANCE g_hModule;
@@ -62,8 +62,8 @@ namespace internal
     {        
         HRSRC hrc = FindResource(g_hModule, TEXT("#2000"), RT_RCDATA);
         DWORD size = SizeofResource(g_hModule, hrc);
-        HGLOBAL hglob = LoadResource(g_hModule, hrc);    
-        char* data = reinterpret_cast<char*>(LockResource(hglob));    
+        HGLOBAL hglob = LoadResource(g_hModule, hrc);
+        char* data = reinterpret_cast<char*>(LockResource(hglob));
         buffer = ZipFile::ZipContentBuffer_t(data, data + size);
     }
             
@@ -71,29 +71,29 @@ namespace internal
     {
         return zipfile->HasContent("META-INF/documentsignatures.xml");
     }
-    
+
     bool IsWindowsXP()
     {
         OSVERSIONINFO osvi;
-        ZeroMemory(&osvi, sizeof(osvi));                
-        osvi.dwOSVersionInfoSize = sizeof(osvi);        
-        GetVersionEx(&osvi);        
-        
+        ZeroMemory(&osvi, sizeof(osvi));
+        osvi.dwOSVersionInfoSize = sizeof(osvi);
+        GetVersionEx(&osvi);
+
         return ((osvi.dwPlatformId == VER_PLATFORM_WIN32_NT) &&
                 ((osvi.dwMajorVersion >= 5) && (osvi.dwMinorVersion >= 1)));
     }
-    
-    /* Calculate where to position the signet image. 
+
+    /* Calculate where to position the signet image.
        On Windows ME we need to shift the signet a
-       little bit to the left because Windows ME 
-       puts an overlay icon to the lower right 
+       little bit to the left because Windows ME
+       puts an overlay icon to the lower right
        corner of a thumbnail image so that our signet
        we be hidden. */
     Gdiplus::Point CalcSignetPosition(
         const Gdiplus::Rect& canvas, const Gdiplus::Rect& thumbnail_border, const Gdiplus::Rect& signet)
     {
         int x = 0;
-        int y = 0;         
+        int y = 0;
         int hoffset = canvas.GetRight() - thumbnail_border.GetRight();                                                   
         int voffset = canvas.GetBottom() - thumbnail_border.GetBottom();
         
@@ -119,12 +119,12 @@ class StreamOnZipBuffer : public IStream
 {
 public:
     StreamOnZipBuffer(const ZipFile::ZipContentBuffer_t& zip_buffer);        
-    
+
     // IUnknown
     virtual ULONG STDMETHODCALLTYPE AddRef();
     virtual ULONG STDMETHODCALLTYPE Release( void);
     virtual HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void __RPC_FAR *__RPC_FAR *ppvObject);
-    
+
     // IStream
     virtual HRESULT STDMETHODCALLTYPE Read(void *pv, ULONG cb, ULONG *pcbRead);
     virtual HRESULT STDMETHODCALLTYPE Write(void const *pv, ULONG cb, ULONG *pcbWritten);
@@ -137,7 +137,7 @@ public:
     virtual HRESULT STDMETHODCALLTYPE UnlockRegion(ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType);
     virtual HRESULT STDMETHODCALLTYPE Stat(STATSTG *pstatstg, DWORD grfStatFlag);
     virtual HRESULT STDMETHODCALLTYPE Clone(IStream **ppstm);
-    
+
 private:
     LONG ref_count_;    
     const ZipFile::ZipContentBuffer_t& ref_zip_buffer_;    
@@ -342,7 +342,7 @@ ULONG STDMETHODCALLTYPE CThumbviewer::AddRef(void)
 {
     return InterlockedIncrement(&ref_count_);
 }
-       
+
 ULONG STDMETHODCALLTYPE CThumbviewer::Release( void)
 {
     long refcnt = InterlockedDecrement(&ref_count_);
@@ -358,30 +358,30 @@ ULONG STDMETHODCALLTYPE CThumbviewer::Release( void)
 const std::string THUMBNAIL_CONTENT = "Thumbnails/thumbnail.png";
 
 HRESULT STDMETHODCALLTYPE CThumbviewer::Extract(HBITMAP *phBmpImage)
-{    	
+{
     HRESULT hr = E_FAIL;
-     
+
     try
     {
         std::wstring fname = getShortPathName( filename_ );
-        std::auto_ptr<ZipFile> zipfile( new ZipFile( WStringToString( fname ) ) );        
-        
+        std::auto_ptr<ZipFile> zipfile( new ZipFile( WStringToString( fname ) ) );
+
         if (zipfile->HasContent(THUMBNAIL_CONTENT))
-        {                                                             
-            ZipFile::ZipContentBuffer_t thumbnail;            
-            zipfile->GetUncompressedContent(THUMBNAIL_CONTENT, thumbnail);                      
+        {
+            ZipFile::ZipContentBuffer_t thumbnail;
+            zipfile->GetUncompressedContent(THUMBNAIL_CONTENT, thumbnail);
             IStream* stream = new StreamOnZipBuffer(thumbnail);
                 
-            Gdiplus::Bitmap thumbnail_png(stream, TRUE);		 
-            
+            Gdiplus::Bitmap thumbnail_png(stream, TRUE);
+
             if ((thumbnail_png.GetHeight() == 0) || (thumbnail_png.GetWidth() == 0))
             {
                 stream->Release();
                 return E_FAIL;
             }
-                                            		
+
     		HWND hwnd = GetDesktopWindow();
-    		HDC hdc = GetDC(hwnd);    		    		    		
+    		HDC hdc = GetDC(hwnd);
             HDC memDC = CreateCompatibleDC(hdc);				        
             
             if (memDC)
@@ -415,14 +415,14 @@ HRESULT STDMETHODCALLTYPE CThumbviewer::Extract(HBITMAP *phBmpImage)
                 Gdiplus::Graphics graphics(memDC);            
                 Gdiplus::Pen blackPen(Gdiplus::Color(255, 0, 0, 0), 1);                
 
-                Gdiplus::SolidBrush whiteBrush(Gdiplus::Color(255, 255, 255, 255));   
+                Gdiplus::SolidBrush whiteBrush(Gdiplus::Color(255, 255, 255, 255));
                 graphics.FillRectangle(&whiteBrush, canvas);
                                                                     
                 scaledRect.X = (canvas.Width - scaledRect.Width) / 2;
                 scaledRect.Y = (canvas.Height - scaledRect.Height) / 2;
                 
-                Gdiplus::Rect border_rect(scaledRect.X, scaledRect.Y, scaledRect.Width, scaledRect.Height);                                		
-                graphics.DrawRectangle(&blackPen, border_rect);    		
+                Gdiplus::Rect border_rect(scaledRect.X, scaledRect.Y, scaledRect.Width, scaledRect.Height);
+                graphics.DrawRectangle(&blackPen, border_rect);
                 
                 scaledRect.X += 1;
                 scaledRect.Y += 1;
@@ -448,82 +448,83 @@ HRESULT STDMETHODCALLTYPE CThumbviewer::Extract(HBITMAP *phBmpImage)
                         0, 0, signet_->GetWidth(), signet_->GetHeight(),
                         Gdiplus::UnitPixel);                                        
                 }
-                
+
                 if (stat == Gdiplus::Ok)
                 {
-                    *phBmpImage = hMemBmp;            
+                    *phBmpImage = hMemBmp;
                     hr = NOERROR;
-                }                   
-                
+                }
+
                 SelectObject(memDC, hOldObj);
-                DeleteDC(memDC);                
-            }
-                        
-            ReleaseDC(hwnd, hdc);                                                    
-            stream->Release();                        
-        }
-    }
-    catch(std::exception&)
-    {
-        OutputDebugStringFormat( "CThumbviewer Extract ERROR!\n" );
-        hr = E_FAIL;
-    }
-    return hr; 
+                DeleteDC(memDC);
+			}
+
+			ReleaseDC(hwnd, hdc);
+			stream->Release();
+		}
+	}
+	catch(std::exception&)
+	{
+		OutputDebugStringFormat( "CThumbviewer Extract ERROR!\n" );
+		hr = E_FAIL;
+	}
+	return hr;
 }
 
 HRESULT STDMETHODCALLTYPE CThumbviewer::GetLocation(
-    LPWSTR pszPathBuffer, DWORD cchMax, DWORD *pdwPriority, const SIZE *prgSize, DWORD dwRecClrDepth, DWORD *pdwFlags)
+	LPWSTR pszPathBuffer, DWORD cchMax, DWORD *pdwPriority, const SIZE *prgSize, DWORD dwRecClrDepth, DWORD *pdwFlags)
 {
-    if ((prgSize == NULL) || (pdwFlags == NULL) || ((*pdwFlags & IEIFLAG_ASYNC) && (pdwPriority == NULL)))
-        return E_INVALIDARG;
-    
-    thumbnail_size_ = *prgSize;
-    color_depth_ = dwRecClrDepth;
-    
-    *pdwFlags = IEIFLAG_CACHE; // we don't cache the image
-    
-    wcsncpy(pszPathBuffer, filename_.c_str(), cchMax);
-    
-    return NOERROR;
+	if ((prgSize == NULL) || (pdwFlags == NULL) || ((*pdwFlags & IEIFLAG_ASYNC) && (pdwPriority == NULL)))
+		return E_INVALIDARG;
+
+	thumbnail_size_ = *prgSize;
+	color_depth_ = dwRecClrDepth;
+
+	*pdwFlags = IEIFLAG_CACHE; // we don't cache the image
+
+	wcsncpy(pszPathBuffer, filename_.c_str(), cchMax);
+
+	return NOERROR;
 }
-    
+
 // IPersist methods
 
 HRESULT STDMETHODCALLTYPE CThumbviewer::GetClassID(CLSID* pClassID)
 {
-    pClassID = const_cast<CLSID*>(&CLSID_THUMBVIEWER_HANDLER);
-    return S_OK;
+	pClassID = const_cast<CLSID*>(&CLSID_THUMBVIEWER_HANDLER);
+	return S_OK;
 }
 
 // IPersistFile methods
 
 HRESULT STDMETHODCALLTYPE CThumbviewer::Load(LPCOLESTR pszFileName, DWORD)
-{  
-    filename_ = pszFileName; 
-    return S_OK;
+{
+	filename_ = pszFileName;
+	return S_OK;
 }
 
 HRESULT STDMETHODCALLTYPE CThumbviewer::IsDirty()
 { return E_NOTIMPL; }
-               
+
 HRESULT STDMETHODCALLTYPE CThumbviewer::Save(LPCOLESTR, BOOL)
 { return E_NOTIMPL; }
-        
+
 HRESULT STDMETHODCALLTYPE CThumbviewer::SaveCompleted(LPCOLESTR)
 { return E_NOTIMPL; }
-       
+
 HRESULT STDMETHODCALLTYPE CThumbviewer::GetCurFile(LPOLESTR __RPC_FAR*)
 { return E_NOTIMPL; }
 
 
 Gdiplus::Rect CThumbviewer::CalcScaledAspectRatio(Gdiplus::Rect src, Gdiplus::Rect dest)
 {
-    Gdiplus::Rect result;
-    if (src.Width >= src.Height)
-        result = Gdiplus::Rect(0, 0, dest.Width, src.Height * dest.Width / src.Width);
-    else
-        result = Gdiplus::Rect(0, 0, src.Width * dest.Height / src.Height, dest.Height);
+	Gdiplus::Rect result;
+	if (src.Width >= src.Height)
+		result = Gdiplus::Rect(0, 0, dest.Width, src.Height * dest.Width / src.Width);
+	else
+		result = Gdiplus::Rect(0, 0, src.Width * dest.Height / src.Height, dest.Height);
 
-    return result;        
+	return result;
 }
 
+/* vim: set noet sw=4 ts=4: */

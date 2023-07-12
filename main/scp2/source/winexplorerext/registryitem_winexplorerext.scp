@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,8 +77,8 @@ RegistryItem gid_Regitem_Folder_shellex_ColumnHandlers_C52AF81D_F7A0_4AAB_8E87_F
     ModuleID = gid_Module_Optional_Winexplorerext;
     Styles = (X64);
     Subkey = "Folder\shellex\ColumnHandlers\{C52AF81D-F7A0-4AAB-8E87-F80A60CCD396}";
-    Value = "OpenOffice Column Handler";
-    Val64 = "OpenOffice Column Handler";
+    Value = "%PRODUCTNAME Column Handler";
+    Val64 = "%PRODUCTNAME Column Handler";
 End
 
 RegistryItem gid_Regitem_Clsid_C52AF81D_F7A0_4AAB_8E87_F80A60CCD396_InProcServer32
@@ -89,7 +89,7 @@ RegistryItem gid_Regitem_Clsid_C52AF81D_F7A0_4AAB_8E87_F80A60CCD396_InProcServer
     Value = "[INSTALLLOCATION]program\shlxthdl\shlxthdl.dll";
     Val64 = "[INSTALLLOCATION]program\shlxthdl\shlxthdl_x64.dll";
 End
-    
+
 RegistryItem gid_Regitem_Clsid_C52AF81D_F7A0_4AAB_8E87_F80A60CCD396_InProcServer32_ThreadingModel
     ParentID = PREDEFINED_HKEY_CLASSES_ROOT;
     ModuleID = gid_Module_Optional_Winexplorerext;
@@ -99,7 +99,7 @@ RegistryItem gid_Regitem_Clsid_C52AF81D_F7A0_4AAB_8E87_F80A60CCD396_InProcServer
     Value = "Apartment";
     Val64 = "Apartment";
 End
-    
+
 // End registry items for the Column handler
 
 // Begin registry items for the MS Indexing server filter component
@@ -108,7 +108,7 @@ RegistryItem gid_Regitem_Clsid_7BC0E710_5703_45BE_A29D_5D46D8B39262
     ParentID = PREDEFINED_HKEY_CLASSES_ROOT;
     ModuleID = gid_Module_Root;
     Subkey = "CLSID\{7BC0E710-5703-45BE-A29D-5D46D8B39262}";
-	Styles = (X64_ONLY); // Values: X64
+    Styles = (X64_ONLY); // Values: X64
     Value = "OpenDocument Format Filter";
     Val64 = "OpenDocument Format Filter";
 End
@@ -136,7 +136,7 @@ RegistryItem gid_Regitem_Clsid_7BC0E713_5703_45BE_A29D_5D46D8B39262
     ParentID = PREDEFINED_HKEY_CLASSES_ROOT;
     ModuleID = gid_Module_Root;
     Subkey = "CLSID\{7BC0E713-5703-45BE-A29D-5D46D8B39262}";
-	Styles = (X64); // Values: X64
+    Styles = (X64); // Values: X64
     Value = "OpenDocument Format Persistent Handler";
     Val64 = "OpenDocument Format Persistent Handler";
 End
