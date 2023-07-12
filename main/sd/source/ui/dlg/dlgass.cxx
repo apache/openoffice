@@ -322,6 +322,7 @@ public:
 	RadioButton*		mpPage2Medium3RB;
 	RadioButton*		mpPage2Medium4RB;
 	RadioButton*		mpPage2Medium5RB;
+	RadioButton*		mpPage2Medium6RB;
 
 	// Page 3
 	FixedBitmap*		mpPage3FB;
@@ -488,6 +489,8 @@ AssistentDlgImpl::AssistentDlgImpl( ::Window* pWindow, const Link& rFinishLink, 
 		mpPage2Medium1RB = new RadioButton( pWindow, SdResId(RB_PAGE2_MEDIUM1) ));
 	maAssistentFunc.InsertControl(2,
 		mpPage2Medium2RB = new RadioButton( pWindow, SdResId(RB_PAGE2_MEDIUM2) ));
+	maAssistentFunc.InsertControl(2,
+		mpPage2Medium6RB = new RadioButton( pWindow, SdResId(RB_PAGE2_MEDIUM6) ));
 	mpPage2Medium5RB->Check();
 
 	mpPage2RegionLB->SetSelectHdl(LINK(this,AssistentDlgImpl,SelectRegionHdl));
@@ -710,6 +713,7 @@ AssistentDlgImpl::~AssistentDlgImpl()
 	delete mpPage2Medium3RB;
 	delete mpPage2Medium4RB;
 	delete mpPage2Medium5RB;
+	delete mpPage2Medium6RB;
 
 	// Page 3
 	delete mpPage3FB;
@@ -1929,9 +1933,11 @@ SfxObjectShellLock AssistentDlg::GetDocument()
 OutputType AssistentDlg::GetOutputMedium() const
 {
 	if(mpImpl->mpPage2Medium1RB->IsChecked())
-		return OUTPUT_PRESENTATION_4_BY_3;
+		return OUTPUT_SCREEN_4_BY_3;
 	else if(mpImpl->mpPage2Medium2RB->IsChecked())
-		return OUTPUT_SLIDE;
+		return OUTPUT_SCREEN_16_BY_9;
+	else if(mpImpl->mpPage2Medium6RB->IsChecked())
+		return OUTPUT_SCREEN_16_BY_10;
 	else if(mpImpl->mpPage2Medium3RB->IsChecked())
 		return OUTPUT_OVERHEAD;
 	else if(mpImpl->mpPage2Medium4RB->IsChecked())
