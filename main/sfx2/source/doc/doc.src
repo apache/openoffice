@@ -124,7 +124,7 @@ String STR_TEMPLATE_FILTER
 };
 String STR_ERROR_COPY_TEMPLATE
 {
-	Text [ en-US ] = "Error copying template \"$1\". \nA template with this name may already exist." ;
+	Text [ en-US ] = "Error copying template \"$1\".\nA template with this name may already exist." ;
 };
 String STR_ERROR_DELETE_TEMPLATE
 {
@@ -476,7 +476,7 @@ String STR_SHARED
 
 String STR_XMLSEC_ODF12_EXPECTED
 {
-	Text [ en-US ] = "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)." ;
+	Text [ en-US ] = "The document format version is set to ODF 1.1 in Tools - Options - Load/Save - General. Signing documents requires ODF 1.2." ;
 };
 
 QueryBox MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN
