@@ -74,13 +74,13 @@ class SvxCSS1PropertyInfo;
 #define HTML_DFLT_IMG_WIDTH (MM50*4)
 #define HTML_DFLT_IMG_HEIGHT (MM50*2)
 
-// ein par Sachen, die man oefter mal braucht
+// a few things that are needed from time to time
 extern HTMLOptionEnum __FAR_DATA aHTMLPAlignTable[];
 extern HTMLOptionEnum __FAR_DATA aHTMLImgHAlignTable[];
 extern HTMLOptionEnum __FAR_DATA aHTMLImgVAlignTable[];
 
 
-// der Attribut Stack:
+// the attribute stack:
 
 class _HTMLAttr;
 typedef _HTMLAttr *_HTMLAttrPtr;
@@ -94,28 +94,25 @@ class _HTMLAttr
 	SwNodeIndex nSttPara, nEndPara;
 	xub_StrLen nSttCntnt, nEndCntnt;
 	sal_Bool bInsAtStart : 1;
-	sal_Bool bLikePara : 1; // Attribut ueber dem gesamten Absatz setzen
-	sal_Bool bValid : 1;	// ist das Attribut gueltig?
+	sal_Bool bLikePara : 1;// Set attribute over the entire paragraph
+	sal_Bool bValid : 1;// is the attribute valid?
 
 	SfxPoolItem* pItem;
-	sal_uInt16 nCount;		// Anzahl noch zu schliessender Attrs mit einem Wert
-	_HTMLAttr *pNext;	// noch zu schliessene Attrs mit unterschiedl. Werten
-	_HTMLAttr *pPrev;	// bereits geschlossene aber noch nicht gesetze Attrs
-	_HTMLAttr **ppHead;	// der Listenkopf
+	sal_uInt16 nCount;// open attrs, with different values
+	_HTMLAttr *pNext;// Attrs with different values still to be closed. Values
+	_HTMLAttr *pPrev;// Attrs already closed but not yet legislated
+	_HTMLAttr **ppHead;// the list header
 
-	_HTMLAttr( const SwPosition& rPos, const SfxPoolItem& rItem,
-			   _HTMLAttr **pHd=0 );
+	_HTMLAttr( const SwPosition& rPos, const SfxPoolItem& rItem, _HTMLAttr **pHd=0 );
 
-	_HTMLAttr( const _HTMLAttr &rAttr, const SwNodeIndex &rEndPara,
-			   xub_StrLen nEndCnt, _HTMLAttr **pHd );
+	_HTMLAttr( const _HTMLAttr &rAttr, const SwNodeIndex &rEndPara, xub_StrLen nEndCnt, _HTMLAttr **pHd );
 
 public:
 
 	~_HTMLAttr();
 
 	_HTMLAttr *Clone( const SwNodeIndex& rEndPara, xub_StrLen nEndCnt ) const;
-	void Reset( const SwNodeIndex& rSttPara, xub_StrLen nSttCnt,
-			    _HTMLAttr **pHd );
+	void Reset( const SwNodeIndex& rSttPara, xub_StrLen nSttCnt, _HTMLAttr **pHd );
 	inline void SetStart( const SwPosition& rPos );
 
 	sal_uInt32 GetSttParaIdx() const { return nSttPara.GetIndex(); }
@@ -142,27 +139,27 @@ public:
 
 	void SetHead( _HTMLAttr **ppHd ) { ppHead = ppHd; }
 
-	// Beim Setzen von Attributen aus Vorlagen kann es passieren,
-	// dass Attribute doch nicht mehr gesetzt werden sollen. Die zu loeschen
-	// waere sehr aufwendig, da man nicht so genau weiss, wo sie eingekettet
-	// sind. Sie werden deshalb einfach invalidiert und erst beim naechsten
-	// _SetAttr() geloescht.
+	// When setting attributes from templates, it can happen,
+	// that attributes should not be set after all. To delete them
+	// would be very time-consuming, because you don't know exactly
+	// where they are chained. Therefore, they are simply invalidated
+	// and deleted with next _SetAttr().
 	void Invalidate() { bValid = sal_False; }
 	sal_Bool IsValid() const { return bValid; }
 };
 
-// Tabelle der Attribute: Hier ist die Reihenfolge wichtig: Die Attribute
-// vorne in der Tabelle werden in EndAllAttrs auch zuerst gesetzt.
+// Table of attributes: Here the order is important: the attributes
+// at the front of the table are also set first in EndAllAttrs.
 struct _HTMLAttrTable
 {
 	_HTMLAttr
-				*pKeep,			// ::com::sun::star::frame::Frame-Attribure
+				*pKeep,// ::com::sun::star::frame::Frame-Attribute
 				*pBox,
 				*pBrush,
 				*pBreak,
 				*pPageDesc,
 
-				*pLRSpace,		// Absatz-Attribute
+				*pLRSpace,// paragraph-attributes
 				*pULSpace,
 				*pLineSpacing,
 				*pAdjust,
@@ -172,10 +169,10 @@ struct _HTMLAttrTable
 				*pOrphans,
 				*pDirection,
 
-				*pCharFmts,		// Text-Attribute
+				*pCharFmts,// text-attributes
 				*pINetFmt,
 
-				*pBold,			// Zeichen-Attribute
+				*pBold,// character-attributes
 				*pBoldCJK,
 				*pBoldCTL,
 				*pItalic,
@@ -193,8 +190,8 @@ struct _HTMLAttrTable
 				*pFontColor,
 				*pEscapement,
 				*pCaseMap,
-				*pKerning,		// (nur fuer SPACER)
-				*pCharBrush,	// Zeichen-Hintergrund
+				*pKerning,// (only for SPACER)
+				*pCharBrush,// Character background
 				*pLanguage,
 				*pLanguageCJK,
 				*pLanguageCTL
@@ -204,40 +201,40 @@ struct _HTMLAttrTable
 class _HTMLAttrContext_SaveDoc;
 
 enum SwHTMLAppendMode {
-	 AM_NORMAL, 		// keine Absatz-Abstand-Behandlung
-	 AM_NOSPACE, 		// Abstand hart auf 0cm setzen
-	 AM_SPACE, 			// Abstand hart auf 0.5cm setzen
-	 AM_SOFTNOSPACE, 	// Abstand nicht setzen aber 0cm merken
-	 AM_NONE			// gar kein Append
+	 AM_NORMAL,// no paragraph spacing treatment
+	 AM_NOSPACE,// Force 0cm spacing
+	 AM_SPACE,// Force 0.5 cm spacing
+	 AM_SOFTNOSPACE,// Do not set distance but remember 0cm
+	 AM_NONE// no append at all
 };
 
 class _HTMLAttrContext
 {
-	_HTMLAttrs aAttrs;		// die in dem Kontext gestarteten Attribute
+	_HTMLAttrs aAttrs;// the attributes started in the context
 
-	String aClass;			// die Klasse des Kontexts
+	String aClass;// the class of the context
 
 	_HTMLAttrContext_SaveDoc *pSaveDocContext;
 	SfxItemSet *pFrmItemSet;
 
-	sal_uInt16 	nToken;			// das Token, zu dem der Kontext gehoehrt
+	sal_uInt16 	nToken;// the token to which the context belongs
 
-	sal_uInt16 	nTxtFmtColl;	// eine in dem Kontext begonnene Vorlage oder 0
+	sal_uInt16 	nTxtFmtColl;// a template started in the context or 0
 
-	sal_uInt16 	nLeftMargin;		// ein veraenderter linker Rand
-	sal_uInt16 	nRightMargin;		// ein veraenderter rechter Rand
-	sal_uInt16	nFirstLineIndent;	// ein veraenderter Erstzeilen-Einzug
+	sal_uInt16 	nLeftMargin;// a changed left edge
+	sal_uInt16 	nRightMargin;// a changed right edge
+	sal_uInt16	nFirstLineIndent;// a changed first line indent
 
 	sal_uInt16	nUpperSpace;
 	sal_uInt16	nLowerSpace;
 
 	SwHTMLAppendMode eAppend;
 
-	sal_Bool	bLRSpaceChanged : 1;// linker/rechtr Rand, Einzug veraendert?
-	sal_Bool	bULSpaceChanged : 1;// oberer/unterer Rand veraendert?
-	sal_Bool	bDfltTxtFmtColl : 1;// nTxtFmtColl ist nur ein default
-	sal_Bool	bSpansSection : 1; 	// Der Kontext spannt eine SwSection auf
-	sal_Bool	bPopStack : 1; 		// Oberhalb liegende Stack-Elemente entf.
+	sal_Bool	bLRSpaceChanged : 1;// left/right edge, indent changed?
+	sal_Bool	bULSpaceChanged : 1;// upper/lower edge changed?
+	sal_Bool	bDfltTxtFmtColl : 1;// nTxtFmtColl is only a default
+	sal_Bool	bSpansSection : 1;// The context spans a SwSection
+	sal_Bool	bPopStack : 1;// Delete the element above in the stack
 	sal_Bool	bFinishPREListingXMP : 1;
 	sal_Bool	bRestartPRE : 1;
 	sal_Bool	bRestartXMP : 1;
@@ -366,7 +363,7 @@ SV_DECL_PTRARR( SwHTMLFrmFmts, SwFrmFmtPtr, 2, 2 )
 	(HTML_CNTXT_PROTECT_STACK | \
 	 HTML_CNTXT_STRIP_PARA)
 
-#define HTML_FF_BOX		 			0x0001
+#define HTML_FF_BOX		 		0x0001
 #define HTML_FF_BACKGROUND			0x0002
 #define HTML_FF_PADDING				0x0004
 #define HTML_FF_DIRECTION			0x0008
@@ -382,120 +379,119 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	String		sSaveBaseURL;
 	String		aBasicLib;
 	String		aBasicModule;
-	String		aScriptSource;	// Inhalt des aktuellen Script-Blocks
-	String		aScriptType;	// Type des gelesenen Scripts (StarBasic/VB/JAVA)
-	String		aScriptURL;		// URL eines Scripts
-	String		aStyleSource;	// Inhalt des aktuellen Style-Sheets
-	String		aContents;		// Text des akteullen Marquee, Feldes etc.
+	String		aScriptSource;// Content of the current script block
+	String		aScriptType;// Type of the loaded script (StarBasic/VB/JAVA)
+	String		aScriptURL;// URL of a script
+	String		aStyleSource;// Contents of the current style sheet
+	String		aContents;// Text of the actual marquee, field, etc.
 	String		sTitle;
-	String		aUnknownToken;	// ein gestartetes unbekanntes Token
+	String		aUnknownToken;// a started unknown token
 	String		aBulletGrfs[MAXLEVEL];
 	String		sJmpMark;
 
-	SvUShorts	aBaseFontStack; // Stack fuer <BASEFONT>
-								// Bit 0-2: Fontgroesse (1-7)
-	SvUShorts	aFontStack; 	// Stack fuer <FONT>, <BIG>, <SMALL>
-								// Bit 0-2: Fontgroesse (1-7)
-								// Bit 15: Fontfarbe wurde gesetzt
+	SvUShorts	aBaseFontStack;// Stack for <BASEFONT>
+                                       // Bit 0-2: Font size (1-7)
+	SvUShorts	aFontStack;// Stack for <FONT>, <BIG>, <SMALL>
+				   // Bit 0-2: Font size (1-7)
+				   // Bit 15: Font color was set
 
-	_HTMLAttrs		aSetAttrTab;// "geschlossene", noch nicht gesetzte Attr.
-	_HTMLAttrs		aParaAttrs;	// vorlauefige Absatz-Attribute
-	_HTMLAttrTable	aAttrTab;	// "offene" Attribute
-	_HTMLAttrContexts aContexts;// der aktuelle Attribut/Token-Kontext
-	SwHTMLFrmFmts	aMoveFlyFrms;// Fly-Frames, the anchor is moved
+	_HTMLAttrs		aSetAttrTab;// "closed" attribute, not set yet
+	_HTMLAttrs		aParaAttrs;// leading paragraph attributes
+	_HTMLAttrTable	aAttrTab;// "open" attributes
+	_HTMLAttrContexts aContexts;// the current attribute/token context
+	SwHTMLFrmFmts	aMoveFlyFrms;// Fly-Frames, der Anker wird verschoben
 	SvXub_StrLens	aMoveFlyCnts;// and the Content-Positions
 
-	SwApplet_Impl *pAppletImpl;	// das aktuelle Applet
+	SwApplet_Impl *pAppletImpl;// the current applet
 
-	SwCSS1Parser 	*pCSS1Parser;	// der Style-Sheet-Parser
+	SwCSS1Parser 	*pCSS1Parser;// the style sheet parser
 	SwHTMLNumRuleInfo *pNumRuleInfo;
 	SwPendingStack	*pPendStack;
 
 	SwDoc			*pDoc;
-	SwPaM			*pPam;		// SwPosition duerfte doch reichen, oder ??
-	ViewShell		*pActionViewShell;	// ViewShell, an der das StartAction
-										// gerufen wurde.
+	SwPaM			*pPam;// SwPosition should be enough, right?
+	ViewShell		*pActionViewShell;// ViewShell, at which the StartAction
+										// was called.
 	SwNodeIndex		*pSttNdIdx;
 
-	HTMLTable		*pTable;	// die aktuelle "auesserste" Tabelle
-	SwHTMLForm_Impl *pFormImpl;// die aktuelle Form
-	SdrObject		*pMarquee;	// aktuelles Marquee
-	SwField			*pField;	// aktuelles Feld
-	ImageMap		*pImageMap;	// aktuelle Image-Map
-	ImageMaps		*pImageMaps;// alle gelesenen Image-Maps
+	HTMLTable		*pTable;// the current "outermost" table
+	SwHTMLForm_Impl *pFormImpl;// the current form
+	SdrObject		*pMarquee;// current marquee
+	SwField			*pField;// current field
+	ImageMap		*pImageMap;// current image map
+	ImageMaps		*pImageMaps;// all image maps read so far
 	SwHTMLFootEndNote_Impl *pFootEndNoteImpl;
 
-	Size 	aHTMLPageSize;	 	// die Seitengroesse der HTML-Vorlage
+	Size 	aHTMLPageSize;// the page size of the HTML template
 
-	sal_uInt32 	aFontHeights[7];	// die Font-Hoehen 1-7
-	sal_uInt32	nScriptStartLineNr;	// Zeilennummer eines Script-Blocks
+	sal_uInt32 	aFontHeights[7];// the font heights 1-7
+	sal_uInt32	nScriptStartLineNr;// Line number of a script block
 	sal_uLong		nEventId;
 
-	sal_uInt16	nBaseFontStMin;		//
-	sal_uInt16	nFontStMin; 		//
-	sal_uInt16	nDefListDeep;       //
-	sal_uInt16	nFontStHeadStart;	// Elemente im Font-Stack bei <Hn>
-	sal_uInt16	nSBModuleCnt;		// Zaehler fuer Basic-Module
-	sal_uInt16	nMissingImgMaps;	// Wie viele Image-Maps fehlen noch?
+	sal_uInt16	nBaseFontStMin;
+	sal_uInt16	nFontStMin; 
+	sal_uInt16	nDefListDeep;
+	sal_uInt16	nFontStHeadStart;// Elements in the font stack at <Hn>.
+	sal_uInt16	nSBModuleCnt;// Counter for Basic modules
+	sal_uInt16	nMissingImgMaps;// How many image maps are missing?
 	sal_uInt16 	nParaCnt;
-	sal_uInt16	nContextStMin;		// Untergrenze fuer PopContext
-	sal_uInt16	nContextStAttrMin;	// Untergrenze fuer Attributierung
-	sal_uInt16	nSelectEntryCnt;	// Anzahl der Eintraege der akt. Listbox
-	sal_uInt16	nOpenParaToken;		// ein geoeffnetes Absatz-Element
+	sal_uInt16	nContextStMin;// Lower limit for PopContext
+	sal_uInt16	nContextStAttrMin;// Lower limit for attribution
+	sal_uInt16	nSelectEntryCnt;// Number of entries in the current list box
+	sal_uInt16	nOpenParaToken;// an opened paragraph element
 
 	enum JumpToMarks { JUMPTO_NONE, JUMPTO_MARK, JUMPTO_TABLE, JUMPTO_FRAME,
 						JUMPTO_REGION, JUMPTO_GRAPHIC } eJumpTo;
 
 #ifdef DBG_UTIL
-	sal_uInt16	nContinue;			// Tiefe der Continue-Aufrufe
+	sal_uInt16	nContinue;// Depth of Continue calls
 #endif
 
-	SvxAdjust	eParaAdjust;	// Ausrichtung des aktuellen Absatz
-	HTMLScriptLanguage eScriptLang; // die aktuelle Script-Language
+	SvxAdjust	eParaAdjust;// Alignment of the current paragraph
+	HTMLScriptLanguage eScriptLang;// the current script language
 
-	sal_Bool bOldIsHTMLMode : 1;	// War's mal ein HTML-Dokument?
+	sal_Bool bOldIsHTMLMode : 1;// Was it once an HTML document?
 
-	sal_Bool bDocInitialized : 1;	// Dokument bzw. Shell wurden initialisiert
-								// Flag um doppeltes init durch Rekursion
-								// zu verhindern.
-	sal_Bool bViewCreated : 1;		// die View wurde schon erzeugt (asynchron)
-	sal_Bool bSetCrsr : 1;			// Crsr wieder auf den Anfang setzen
+	sal_Bool bDocInitialized : 1;// Document or shell were initialized
+                                     // Flag used to avoid double initialization due to recursion
+	sal_Bool bViewCreated : 1;// the view was already created (asynchronous)
+	sal_Bool bSetCrsr : 1;// Set Crsr back to the beginning
 	sal_Bool bSetModEnabled : 1;
 
-	sal_Bool bInFloatingFrame : 1;	// Wir sind in einen Floating ::com::sun::star::frame::Frame
+	sal_Bool bInFloatingFrame : 1;// We are in a floating ::com::sun::star::frame::Frame
 	sal_Bool bInField : 1;
-	sal_Bool bKeepUnknown : 1;		// unbekannte/nicht unterstuetze Tokens beh.
+	sal_Bool bKeepUnknown : 1;// unknown/unsupported tokens treatment
 	// 8
-	sal_Bool bCallNextToken : 1;	// In Tabellen: NextToken in jedem Fall rufen
-	sal_Bool bIgnoreRawData : 1;	// Inhalt eines Scripts/Styles ignorieren.
-	sal_Bool bLBEntrySelected : 1;	// Ist der aktuelle Listbox-Eintrag selekt.
-	sal_Bool bTAIgnoreNewPara : 1;	// naechstes LF in TextArea ignorieren?
-	sal_Bool bFixMarqueeWidth : 1;	// Groesse einer Laufschrift anpassen?
+	sal_Bool bCallNextToken : 1;// In tables: Call NextToken in any case
+	sal_Bool bIgnoreRawData : 1;// Ignore content of a script/style.
+	sal_Bool bLBEntrySelected : 1;// Is the current listbox entry selected.
+	sal_Bool bTAIgnoreNewPara : 1;// ignore next LF in TextArea?
+	sal_Bool bFixMarqueeWidth : 1;// Adjust the size of a ticker?
 	sal_Bool bFixMarqueeHeight : 1;
 
-	sal_Bool bUpperSpace : 1;		// obererer Absatz-Abstand wird benoetigt
+	sal_Bool bUpperSpace : 1;// upper paragraph spacing is required
 	sal_Bool bNoParSpace : 1;
 	// 16
 
-	sal_Bool bAnyStarBasic : 1;		// gibt es ueberhaupt ein StarBasic-Modul
-	sal_Bool bInNoEmbed : 1;		// Wir sind in einem NOEMBED-Bereich
+	sal_Bool bAnyStarBasic : 1;// there is a StarBasic module at all
+	sal_Bool bInNoEmbed : 1;// We are in a NOEMBED area
 
-	sal_Bool bInTitle : 1;			// Wir sind im Titel
+	sal_Bool bInTitle : 1;// We are in the title
 
-	sal_Bool bChkJumpMark : 1;		// springe ggfs. zu einem vorgegebenem Mark
+	sal_Bool bChkJumpMark : 1;// jump to a given marker if necessary
 	sal_Bool bUpdateDocStat : 1;
-	sal_Bool bFixSelectWidth : 1;	// Breite eines Selects neu setzen?
-	sal_Bool bFixSelectHeight : 1;	// Breite eines Selects neu setzen?
+	sal_Bool bFixSelectWidth : 1;// Reset the width of a select?
+	sal_Bool bFixSelectHeight : 1;// Reset the height of a select?
 	sal_Bool bTextArea : 1;
 	// 24
 	sal_Bool bSelect : 1;
 	sal_Bool bInFootEndNoteAnchor : 1;
 	sal_Bool bInFootEndNoteSymbol : 1;
-    sal_Bool bIgnoreHTMLComments : 1;
-    sal_Bool bRemoveHidden : 1; // the filter implementation might set the hidden flag
+        sal_Bool bIgnoreHTMLComments : 1;
+        sal_Bool bRemoveHidden : 1;// the filter implementation might set the hidden flag
 
-    /// the names corresponding to the DOCINFO field subtypes INFO[1-4]
-    ::rtl::OUString m_InfoNames[4];
+        // the names corresponding to the DOCINFO field subtypes INFO[1-4]
+        ::rtl::OUString m_InfoNames[4];
 
 	SfxViewFrame* pTempViewFrame;
 
@@ -521,13 +517,13 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 
 	_HTMLAttr **GetAttrTabEntry( sal_uInt16 nWhich );
 
-	// Einen neuen Textknoten an PaM-Position anlegen
+	// Create a new text node at PaM position
 	sal_Bool AppendTxtNode( SwHTMLAppendMode eMode=AM_NORMAL, sal_Bool bUpdateNum=sal_True );
 	void AddParSpace();
 
-	// Ein Attribut beginnen/beenden
-	// ppDepAttr gibt einen Attribut-Tabellen-Eintrag an, dessen Attribute
-	// gesetzt sein muessen, bevor das Attribut beendet werden darf
+	// Start/end an attribute
+	// ppDepAttr specifies an attribute table entry whose attributes  
+	// must be set before the attribute can be terminated.
 	void NewAttr( _HTMLAttr **ppAttr, const SfxPoolItem& rItem );
 	void EndAttr( _HTMLAttr *pAttr, _HTMLAttr **ppDepAttr=0,
 				  sal_Bool bChkEmpty=sal_True );
@@ -566,26 +562,26 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	SwTwips GetCurrentBrowseWidth();
 
 	SwHTMLNumRuleInfo& GetNumInfo() { return *pNumRuleInfo; }
-    // --> OD 2008-04-02 #refactorlists#
-    // add parameter <bCountedInList>
-    void SetNodeNum( sal_uInt8 nLevel, bool bCountedInList );
-    // <--
+        // --> OD 2008-04-02 #refactorlists#
+        // add parameter <bCountedInList>
+        void SetNodeNum( sal_uInt8 nLevel, bool bCountedInList );
+        // <--
 
-	// Verwalten von Absatz-Vorlagen
+	// Manage paragraph templates
 
-	// die Vorlagen auf dem Stack bzw. deren Attribute setzen
+	// set the templates on the stack or their attributes.
 	void SetTxtCollAttrs( _HTMLAttrContext *pContext = 0 );
 
 	void InsertParaAttrs( const SfxItemSet& rItemSet );
 
-	// Verwalten des Attribut-Kontexts
+	// Manage the attribute context
 
-	// aktuellen Kontext merken
+	// remember current context
 	inline void PushContext( _HTMLAttrContext *pCntxt );
 
-	// den obersten/spezifizierten Kontext holen, aber nicht ausserhalb
-	// des Kontexts mit Token nLimit suchen. Wenn bRemove gesetzt ist,
-	// wird er entfernt
+	// get the topmost/specified context, but do not search outside
+	// of the context with token nLimit. If bRemove is set,
+	// it is removed
 	_HTMLAttrContext *PopContext( sal_uInt16 nToken=0, sal_uInt16 nLimit=0,
 								  sal_Bool bRemove=sal_True );
 	inline const _HTMLAttrContext *GetTopContext() const;
@@ -599,23 +595,23 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 
 	void MovePageDescAttrs( SwNode *pSrcNd, sal_uLong nDestIdx, sal_Bool bFmtBreak );
 
-	// Behandlung von Tags auf Absatz-Ebene
+	// Handling tags at paragraph level
 
-	// <P> und <H1> bis <H6>
+	// <P> and <H1> to <H6>
 	void NewPara();
 	void EndPara( sal_Bool bReal = sal_False );
 	void NewHeading( int nToken );
 	void EndHeading();
 
-	// <ADDRESS>, <BLOCKQUOTE> und <PRE>
+	// <ADDRESS>, <BLOCKQUOTE> and <PRE>
 	void NewTxtFmtColl( int nToken, sal_uInt16 nPoolId );
 	void EndTxtFmtColl( int nToken );
 
-	// <DIV> und <CENTER>
+	// <DIV> and <CENTER>
 	void NewDivision( int nToken );
 	void EndDivision( int nToken );
 
-	// Fly-Frames einfuegen/verlassen
+	// Insert/exit fly frames
 	void InsertFlyFrame( const SfxItemSet& rItemSet, _HTMLAttrContext *pCntxt,
 						 const String& rId, sal_uInt16 nFlags );
 
@@ -623,7 +619,7 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 					   const SwPosition *pNewPos );
 	void RestoreDocContext( _HTMLAttrContext *pCntxt );
 
-	// alle durch <DIV> aufgespannten Bereiche verlassen
+	// leave all areas spanned by <DIV>.
 	sal_Bool EndSections( sal_Bool bLFStripped );
 
 	// <MULTICOL>
@@ -635,16 +631,16 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	void EndMarquee();
 	void InsertMarqueeText();
 
-	// Behandluung von Listen
+	// List handling
 
-	// Numerierungs <OL> und Aufzaehlungs-Listen <UL> mit <LI>
+	// Numbering <OL> and Enumeration Lists <UL> with <LI>
 	void NewNumBulList( int nToken );
 	void EndNumBulList( int nToken=0 );
 	void NewNumBulListItem( int nToken );
 	void EndNumBulListItem( int nToken=0, sal_Bool bSetColl=sal_True,
 							sal_Bool bLastPara=sal_False );
 
-	// Definitions-Listen <DL> mit <DD>, <DT>
+	// Definition lists <DL> with <DD>, <DT>
 	void NewDefList();
 	void EndDefList();
 	void NewDefListItem( int nToken );
@@ -652,10 +648,10 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 						 sal_Bool bLastPara=sal_False );
 
 
-	// Behandlung von Tags auf Zeichen-Ebene
+	// Handling tags at character level
 
-	// Tags wie <B>, <I> etc behandeln, die ein bestimmtes Attribut
-	// an und ausschalten, oder die wie SPAN nur Attribute aus Styles holen
+	// handle tags like <B>, <I> etc that turn a specific attribute
+	// on and off, or which like SPAN only fetch attributes from styles.
 	void NewStdAttr( int nToken );
 	void NewStdAttr( int nToken,
 					 _HTMLAttr **ppAttr, const SfxPoolItem & rItem,
@@ -663,55 +659,55 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 					 _HTMLAttr **ppAttr3=0, const SfxPoolItem *pItem3=0 );
 	void EndTag( int nToken );
 
-	// Font-Attribute behandeln
-	void NewBasefontAttr(); 			// fuer <BASEFONT>
+	// Handle font attributes
+	void NewBasefontAttr(); 			// for <BASEFONT>
 	void EndBasefontAttr();
-	void NewFontAttr( int nToken );	// fuer <FONT>, <BIG> und <SMALL>
+	void NewFontAttr( int nToken );	// for <FONT>, <BIG> and <SMALL>
 	void EndFontAttr( int nToken );
 
-	// Tags, die durch Zeichenvorlagen realisiert werden
+	// Tags realized by character templates
 	void NewCharFmt( int nToken );
 
 	// <SDFIELD>
 public:
 	static sal_uInt16 GetNumType( const String& rStr, sal_uInt16 eDfltType );
-private:
-	void NewField();
+private: 
+        void NewField();
 	void EndField();
 	void InsertFieldText();
 
 	// <SPACER>
 	void InsertSpacer();
 
-	// Einfuegen von Grafiken, Plugins und Applets
+	// Inserting graphics, plugins and applets
 
-	// Image-Maps suchen und mit Grafik-Nodes verbinden
+	// Search image maps and connect them with graphic nodes
 	ImageMap *FindImageMap( const String& rURL ) const;
 	void ConnectImageMaps();
 
-	// Verankerung eines Fly-Frames bestimmen und entsprechende Attribute
-	// in den Attrset setzen (htmlgrin.cxx)
-    void SetAnchorAndAdjustment( sal_Int16 eVertOri,
-                                 sal_Int16 eHoriOri,
-								 const SfxItemSet &rItemSet,
-								 const SvxCSS1PropertyInfo &rPropInfo,
-								 SfxItemSet& rFrmSet );
-    void SetAnchorAndAdjustment( sal_Int16 eVertOri,
-                                 sal_Int16 eHoriOri,
-								 SfxItemSet& rFrmSet,
-								 sal_Bool bDontAppend=sal_False );
+        // Determine anchoring of a fly frame and set corresponding attributes 
+        // set in the attrset (htmlgrin.cxx)
+        void SetAnchorAndAdjustment( sal_Int16 eVertOri,
+                                     sal_Int16 eHoriOri,
+                                     const SfxItemSet &rItemSet,
+                                     const SvxCSS1PropertyInfo &rPropInfo,
+                                     SfxItemSet& rFrmSet );
+        void SetAnchorAndAdjustment( sal_Int16 eVertOri,
+                                     sal_Int16 eHoriOri,
+                                     SfxItemSet& rFrmSet,
+                                     sal_Bool bDontAppend=sal_False );
 	void SetAnchorAndAdjustment( const SfxItemSet &rItemSet,
-								 const SvxCSS1PropertyInfo &rPropInfo,
-								 SfxItemSet &rFrmItemSet );
+                                     const SvxCSS1PropertyInfo &rPropInfo,
+                                     SfxItemSet &rFrmItemSet );
 
 	void SetFrmFmtAttrs( SfxItemSet &rItemSet, SvxCSS1PropertyInfo &rPropInfo,
 						 sal_uInt16 nFlags, SfxItemSet &rFrmItemSet );
 
-	// Frames anlegen und Auto-gebundene Rahmen registrieren
+	// Create frames and register auto-bound frames
 	void RegisterFlyFrm( SwFrmFmt *pFlyFrm );
 
-	// Die Groesse des Fly-Frames an die Vorgaben und Gegebenheiten anpassen
-	// (nicht fuer Grafiken, deshalb htmlplug.cxx)
+	// Adapt the size of the fly-frame to the specifications and conditions.
+	// (not for graphics, therefore htmlplug.cxx)
 	void SetFixSize( const Size& rPixSize, const Size& rTwipDfltSize,
 					 sal_Bool bPrcWidth, sal_Bool bPrcHeight,
 					 SfxItemSet &rItemSet, SvxCSS1PropertyInfo &rPropInfo,
@@ -727,112 +723,109 @@ private:
 	void GetDefaultScriptType( ScriptType& rType,
 							   String& rTypeStr ) const;
 
-	// die eigentlichen Einfuege-Methoden fuer <IMG>, <EMBED> und <APPLET>
-	// und <PARAM>
-	void InsertImage();		// htmlgrin.cxx
-	void InsertEmbed();		// htmlplug.cxx
+	// the actual insert methods for <IMG>, <EMBED>, and <APPLET>
+	// and <PARAM>
+	void InsertImage();// htmlgrin.cxx
+	void InsertEmbed();// htmlplug.cxx
 
 #ifdef SOLAR_JAVA
-	void NewObject();	// htmlplug.cxx
+	void NewObject();// htmlplug.cxx
 #endif
-	void EndObject();		// CommandLine mit Applet verkn. (htmlplug.cxx)
+	void EndObject();// CommandLine with Applet link. (htmlplug.cxx)
 #ifdef SOLAR_JAVA
-	void InsertApplet();	// htmlplug.cxx
+	void InsertApplet();// htmlplug.cxx
 #endif
-	void EndApplet();		// CommandLine mit Applet verkn. (htmlplug.cxx)
-	void InsertParam();		// htmlplug.cxx
+	void EndApplet();// CommandLine with Applet link. (htmlplug.cxx)
+	void InsertParam();// htmlplug.cxx
 
 	void InsertFloatingFrame();
 	void EndFloatingFrame() { bInFloatingFrame = sal_False; }
 
-	// <BODY>-Tag auswerten: Hintergrund-Grafiken und -Farben setzen (htmlgrin.cxx)
+	// <BODY> tag evaluate: set background graphics and colors (htmlgrin.cxx)
 	void InsertBodyOptions();
 
 
-	// Einfuegen von Links und ::com::sun::star::text::Bookmarks (htmlgrin.cxx)
+	// Inserting links and ::com::sun::star::text::Bookmarks (htmlgrin.cxx)
 
-	// <A>-Tag auswerten: einen Link bzw. eine ::com::sun::star::text::Bookmark einfuegen
+	// Evaluate <A> tag: insert a link or ::com::sun::star::text::bookmark.
 	void NewAnchor();
 	void EndAnchor();
 
-	// eine ::com::sun::star::text::Bookmark einfuegen
+	// insert a ::com::sun::star::text::bookmark
 	void InsertBookmark( const String& rName );
 
 
 	void InsertCommentText( const sal_Char *pTag = 0 );
 	void InsertComment( const String& rName, const sal_Char *pTag = 0 );
 
-	// sind im aktuellen Absatz ::com::sun::star::text::Bookmarks vorhanden?
+	// are there any ::com::sun::star::text::bookmarks in the current paragraph?
 	sal_Bool HasCurrentParaBookmarks( sal_Bool bIgnoreStack=sal_False ) const;
 
 
-	// Einfuegen von Script/Basic-Elementen
+	// Inserting Script/Basic elements
 
-	// das zueletzt gelsene Basic-Modul parsen (htmlbas.cxx)
+	// parse the last Basic module (htmlbas.cxx) that was loaded
 	void NewScript();
 	void EndScript();
 
 	void AddScriptSource();
 
-	// ein Event in die SFX-Konfiguation eintragen (htmlbas.cxx)
+	// add an event to the SFX configuration (htmlbas.cxx)
 	void InsertBasicDocEvent( rtl::OUString aEventName, const String& rName,
 							  ScriptType eScrType, const String& rScrType );
 
-	// ein Event an ein VC-Control anhaengen (htmlform.cxx)
+	// attach an event to a VC control (htmlform.cxx)
 	void InsertBasicCtrlEvent( sal_uInt16 nEvent, const String& rName );
 
-	// Einfuegen von Styles
+	// Inserting styles
 
 	// <STYLE>
 	void NewStyle();
 	void EndStyle();
 
-	inline sal_Bool HasStyleOptions( const String &rStyle, const String &rId,
-								 const String &rClass, const String *pLang=0,
-		   						 const String *pDir=0 );
+	inline sal_Bool HasStyleOptions( const String &rStyle, const String &rId,const String &rClass, const String *pLang=0,const String *pDir=0 );
 	sal_Bool ParseStyleOptions( const String &rStyle, const String &rId,
 							const String &rClass, SfxItemSet &rItemSet,
 							SvxCSS1PropertyInfo &rPropInfo,
 							 const String *pLang=0, const String *pDir=0 );
 
 
-	// Einfuegen von Controls und ::com::sun::star::form::Forms (htmlform.cxx)
+	// Inserting controls and ::com::sun::star::form::Forms (htmlform.cxx)
 
-	// Ein Draw-Objekt in das Dokuement eintragen
+	// Add a Draw object to the docuement
 	void InsertDrawObject( SdrObject* pNewDrawObj, const Size& rSpace,
-                           sal_Int16 eVertOri,
-                           sal_Int16 eHoriOri,
-						   SfxItemSet& rCSS1ItemSet,
-						   SvxCSS1PropertyInfo& rCSS1PropInfo,
-						   sal_Bool bHidden=sal_False );
-						::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >  InsertControl( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormComponent > & rFormComp,
-						const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rFCompPropSet,
-						const Size& rSize,
-                        sal_Int16 eVertOri,
-                        sal_Int16 eHoriOri,
-						SfxItemSet& rCSS1ItemSet,
-						SvxCSS1PropertyInfo& rCSS1PropInfo,
-						const SvxMacroTableDtor& rMacroTbl,
-						const SvStringsDtor& rUnoMacroTbl,
-						const SvStringsDtor& rUnoMacroParamTbl,
-						sal_Bool bSetPropSet = sal_True,
-						sal_Bool bHidden = sal_False );
-	void SetControlSize( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rShape, const Size& rTextSz,
-						 sal_Bool bMinWidth, sal_Bool bMinHeight, int nToken );
+                               sal_Int16 eVertOri,
+                               sal_Int16 eHoriOri,
+                               SfxItemSet& rCSS1ItemSet,
+                               SvxCSS1PropertyInfo& rCSS1PropInfo,
+                               sal_Bool bHidden=sal_False );
+        ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >  InsertControl( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormComponent > & rFormComp,
+                                                                                              const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rFCompPropSet,
+                                                                                              const Size& rSize,
+                                                                                              sal_Int16 eVertOri,
+                                                                                              sal_Int16 eHoriOri,
+	                                                                                      SfxItemSet& rCSS1ItemSet,
+                                                                                              SvxCSS1PropertyInfo& rCSS1PropInfo,
+	                                                                                      const SvxMacroTableDtor& rMacroTbl,
+	                                                                                      const SvStringsDtor& rUnoMacroTbl,
+	                                                                                      const SvStringsDtor& rUnoMacroParamTbl,
+                                                                                              sal_Bool bSetPropSet = sal_True,
+                                                                                              sal_Bool bHidden = sal_False );
+											      
+	void SetControlSize( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rShape, const Size& rTextSz,sal_Bool bMinWidth, sal_Bool bMinHeight, int nToken );
 	void SetPendingControlSize( int nToken );
 
 public:
 	void ResizeDrawObject( SdrObject* pObj, SwTwips nWidth );
 private:
-	void RegisterDrawObjectToTable( HTMLTable *pCurTable, SdrObject* pObj,
-									sal_uInt8 nWidth );
+	void RegisterDrawObjectToTable( HTMLTable *pCurTable, SdrObject* pObj, sal_uInt8 nWidth );
 
 
-	// eine neue Form beginnen
+	// start a new form
 	void NewForm( sal_Bool bAppend=sal_True );
 	void EndForm( sal_Bool bAppend=sal_True );
 
-	// die Einfuege-Methoden fuer <INPUT>, <TEXTAREA> und <SELECT>
+	// the insertion methods for <INPUT>, <TEXTAREA> and <SELECT>
 	void InsertInput();
 
 	void NewTextArea();
@@ -844,40 +837,33 @@ private:
 	void InsertSelectText();
 	void EndSelect();
 
-	// Einfuegen von Tabellen (htmltab.cxx)
+	// Insert tables (htmltab.cxx)
 
-public:			// wird in Tabellen benoetigt
+public:// is needed in tables
 
-	// einen Boxen-Inhalt hinter dem angegebenen Node einfuegen
+	// insert a box content after the specified node
 	const SwStartNode *InsertTableSection( const SwStartNode *pPrevStNd );
 
-	// Einen Boxen-Inhalt am Ende der Tabelle einfuegen, in der der PaM
-	// steht un den PaM in die Zelle schieben
+	// Insert a box content at the end of the table containing the PaM
+	// and move the PaM into the cell
 	const SwStartNode *InsertTableSection( sal_uInt16 nPoolId );
 
-	// Einfeuge-Methoden fuer die diversen Tabellen-Tags
+	// Insert methods for the various table tags
 	HTMLTableCnts *InsertTableContents( sal_Bool bHead );
 
 private:
-	// Eine Section fuer die voruebergende Aufnahme der Tabellen-Ueberschrift
-	// anlegen
+	// Create a section for the temporary setting of the table heading
 	SwStartNode *InsertTempTableCaptionSection();
 
 	void BuildTableCell( HTMLTable *pTable, sal_Bool bReadOptions, sal_Bool bHead );
-	void BuildTableRow( HTMLTable *pTable, sal_Bool bReadOptions,
-                        SvxAdjust eGrpAdjust, sal_Int16 eVertOri );
+	void BuildTableRow( HTMLTable *pTable, sal_Bool bReadOptions,SvxAdjust eGrpAdjust, sal_Int16 eVertOri );
 	void BuildTableSection( HTMLTable *pTable, sal_Bool bReadOptions, sal_Bool bHead );
 	void BuildTableColGroup( HTMLTable *pTable, sal_Bool bReadOptions );
 	void BuildTableCaption( HTMLTable *pTable );
-	HTMLTable *BuildTable( SvxAdjust eCellAdjust,
-						   sal_Bool bIsParentHead = sal_False,
-						   sal_Bool bHasParentSection=sal_True,
-						   sal_Bool bIsInMulticol = sal_False,
-						   sal_Bool bHasToFlow = sal_False );
+	HTMLTable *BuildTable( SvxAdjust eCellAdjust, sal_Bool bIsParentHead = sal_False, sal_Bool bHasParentSection=sal_True, sal_Bool bIsInMulticol = sal_False, sal_Bool bHasToFlow = sal_False );
 
 
-	// sonstiges ...
-
+// miscellaneous ...
 	void ParseMoreMetaOptions();
 
 	sal_Bool FileDownload( const String& rURL, String& rStr );
@@ -895,31 +881,31 @@ private:
 	SwNodeIndex *GetFootEndNoteSection( const String& rName );
 	void DeleteFootEndNoteImpl();
 
-	// Line-Break am Ende eines Absatzes entfernen
+	// Remove line break at the end of a paragraph
 	xub_StrLen StripTrailingLF();
 
-	// Einen leeren Absatz an der PaM-Position entfernen
+
+	// Remove an empty paragraph at the PaM position.
 	void StripTrailingPara();
+	
+	// Are there any visible Fly-Frames in the current paragraph?
+	sal_Bool HasCurrentParaFlys( sal_Bool bNoSurroundOnly = sal_False, sal_Bool bSurroundOnly = sal_False ) const;
 
-	// sind im aktuellen Absatz Fly-Frames vorhanden?
-	sal_Bool HasCurrentParaFlys( sal_Bool bNoSurroundOnly = sal_False,
-							 sal_Bool bSurroundOnly = sal_False ) const;
+public:// is needed in tables
 
-public:			// wird in Tabellen benoetigt
-
-	// generieren eines BrushItems (mit new) oder 0
+	// generate a BrushItem (with new) or 0
 	SvxBrushItem* CreateBrushItem( const Color *pColor,
-								   const String &rImageURL,
-								   const String &rStyle,
-								   const String &rId,
-								   const String &rClass );
+                                       const String &rImageURL,
+                                       const String &rStyle,
+                                       const String &rId,
+                                       const String &rClass );
 
 protected:
-	// wird fuer jedes Token gerufen, das in CallParser erkannt wird
+	// is called for every token that is recognized in CallParser
 	virtual void NextToken( int nToken );
 	virtual ~SwHTMLParser();
 
-	// wird das Dok geloescht, ist auch der Parser zu loeschen
+	// if the doc is deleted, the parser has to be deleted as well
 	virtual void Modify( const SfxPoolItem* pOld, const SfxPoolItem *pNew );
 
     virtual void AddMetaUserDefined( ::rtl::OUString const & i_rMetaName );
@@ -930,20 +916,18 @@ public:
                     const String& rFileName,
                     const String& rBaseURL,
                     int bReadNewDoc = sal_True,
-					SfxMedium* pMed = 0, sal_Bool bReadUTF8 = sal_False,
+                    SfxMedium* pMed = 0, sal_Bool bReadUTF8 = sal_False,
                     sal_Bool bIgnoreHTMLComments = sal_False );
 
-	virtual SvParserState CallParser();   // Aufruf des Parsers
+	virtual SvParserState CallParser();// Call the parser
 
 
 	sal_uInt16 ToTwips( sal_uInt16 nPixel ) const;
 
-	// fuers asynchrone lesen aus dem SvStream
+	// for asynchronous reading from the SvStream
 	virtual void Continue( int nToken );
 
-    virtual bool ParseMetaOptions( const ::com::sun::star::uno::Reference<
-                ::com::sun::star::document::XDocumentProperties>&,
-            SvKeyValueIterator* );
+    virtual bool ParseMetaOptions( const ::com::sun::star::uno::Reference<::com::sun::star::document::XDocumentProperties>&, SvKeyValueIterator* );
 };
 
 
@@ -971,8 +955,7 @@ inline void _HTMLAttr::SetStart( const SwPosition& rPos )
 	nEndCntnt = nSttCntnt;
 }
 
-inline void _HTMLAttrContext::SetMargins( sal_uInt16 nLeft, sal_uInt16 nRight,
-										  short nIndent )
+inline void _HTMLAttrContext::SetMargins( sal_uInt16 nLeft, sal_uInt16 nRight, short nIndent )
 {
 	nLeftMargin = nLeft;
 	nRightMargin = nRight;
@@ -981,8 +964,8 @@ inline void _HTMLAttrContext::SetMargins( sal_uInt16 nLeft, sal_uInt16 nRight,
 }
 
 inline void _HTMLAttrContext::GetMargins( sal_uInt16& nLeft,
-										  sal_uInt16& nRight,
-										  short& nIndent ) const
+                                          sal_uInt16& nRight,
+                                          short& nIndent ) const
 {
 	if( bLRSpaceChanged )
 	{
@@ -1010,10 +993,10 @@ inline void _HTMLAttrContext::GetULSpace( sal_uInt16& rUpper,
 }
 
 inline sal_Bool SwHTMLParser::HasStyleOptions( const String &rStyle,
-											const String &rId,
-											const String &rClass,
-											const String *pLang,
-	   										const String *pDir )
+                                               const String &rId,
+                                               const String &rClass,
+                                               const String *pLang,
+                                               const String *pDir )
 {
 	return rStyle.Len() || rId.Len() || rClass.Len() ||
 		   (pLang && pLang->Len()) || (pDir && pDir->Len());
