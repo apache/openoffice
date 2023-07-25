@@ -413,7 +413,7 @@ HRESULT STDMETHODCALLTYPE CThumbviewer::Extract(HBITMAP *phBmpImage)
 				HGDIOBJ hOldObj = SelectObject(memDC, hMemBmp);
 
 				Gdiplus::Graphics graphics(memDC);
-				Gdiplus::Pen darkPen(Gdiplus::Color(255, 64, 64, 64), 1);
+				Gdiplus::Pen darkPen(Gdiplus::Color(255, 85, 85, 85), 1);
 
 				Gdiplus::SolidBrush whiteBrush(Gdiplus::Color(255, 255, 255, 255));
 				graphics.FillRectangle(&whiteBrush, canvas);
