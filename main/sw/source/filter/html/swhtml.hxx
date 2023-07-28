@@ -927,7 +927,7 @@ public:
 	// for asynchronous reading from the SvStream
 	virtual void Continue( int nToken );
 
-    virtual bool ParseMetaOptions( const ::com::sun::star::uno::Reference<::com::sun::star::document::XDocumentProperties>&, SvKeyValueIterator* );
+    virtual bool ParseMetaOptions( const ::com::sun::star::uno::Reference < ::com::sun::star::document::XDocumentProperties>&, SvKeyValueIterator* );
 };
 
 
