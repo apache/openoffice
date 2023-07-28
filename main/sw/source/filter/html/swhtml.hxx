@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef _SWHTML_HXX
@@ -429,7 +430,7 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	sal_uLong		nEventId;
 
 	sal_uInt16	nBaseFontStMin;
-	sal_uInt16	nFontStMin; 
+	sal_uInt16	nFontStMin;
 	sal_uInt16	nDefListDeep;
 	sal_uInt16	nFontStHeadStart;// Elements in the font stack at <Hn>.
 	sal_uInt16	nSBModuleCnt;// Counter for Basic modules
@@ -522,7 +523,7 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	void AddParSpace();
 
 	// Start/end an attribute
-	// ppDepAttr specifies an attribute table entry whose attributes  
+	// ppDepAttr specifies an attribute table entry whose attributes
 	// must be set before the attribute can be terminated.
 	void NewAttr( _HTMLAttr **ppAttr, const SfxPoolItem& rItem );
 	void EndAttr( _HTMLAttr *pAttr, _HTMLAttr **ppDepAttr=0,
@@ -671,7 +672,7 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	// <SDFIELD>
 public:
 	static sal_uInt16 GetNumType( const String& rStr, sal_uInt16 eDfltType );
-private: 
+private:
         void NewField();
 	void EndField();
 	void InsertFieldText();
@@ -685,7 +686,7 @@ private:
 	ImageMap *FindImageMap( const String& rURL ) const;
 	void ConnectImageMaps();
 
-        // Determine anchoring of a fly frame and set corresponding attributes 
+        // Determine anchoring of a fly frame and set corresponding attributes
         // set in the attrset (htmlgrin.cxx)
         void SetAnchorAndAdjustment( sal_Int16 eVertOri,
                                      sal_Int16 eHoriOri,
@@ -792,7 +793,7 @@ private:
 
 	// Inserting controls and ::com::sun::star::form::Forms (htmlform.cxx)
 
-	// Add a Draw object to the docuement
+	// Add a Draw object to the document
 	void InsertDrawObject( SdrObject* pNewDrawObj, const Size& rSpace,
                                sal_Int16 eVertOri,
                                sal_Int16 eHoriOri,
@@ -811,7 +812,7 @@ private:
 	                                                                                      const SvStringsDtor& rUnoMacroParamTbl,
                                                                                               sal_Bool bSetPropSet = sal_True,
                                                                                               sal_Bool bHidden = sal_False );
-											      
+
 	void SetControlSize( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rShape, const Size& rTextSz,sal_Bool bMinWidth, sal_Bool bMinHeight, int nToken );
 	void SetPendingControlSize( int nToken );
 
@@ -887,7 +888,7 @@ private:
 
 	// Remove an empty paragraph at the PaM position.
 	void StripTrailingPara();
-	
+
 	// Are there any visible Fly-Frames in the current paragraph?
 	sal_Bool HasCurrentParaFlys( sal_Bool bNoSurroundOnly = sal_False, sal_Bool bSurroundOnly = sal_False ) const;
 
