@@ -389,7 +389,7 @@ HRESULT STDMETHODCALLTYPE CThumbviewer::Extract(HBITMAP *phBmpImage)
 				UINT offset = 1; // reserve a little border space
 
 				Gdiplus::Rect canvas(0, 0, thumbnail_size_.cx, thumbnail_size_.cy);
-				Gdiplus::Rect canvas_thumbnail(offset, offset, thumbnail_size_.cx - (2 * offset) - 0.5, thumbnail_size_.cy - (2 * offset) - 0.5);
+				Gdiplus::Rect canvas_thumbnail(offset, offset, thumbnail_size_.cx - (2 * offset) - 1, thumbnail_size_.cy - (2 * offset) - 1);
 
 				Gdiplus::Rect scaledRect = CalcScaledAspectRatio(
 					Gdiplus::Rect(0, 0, thumbnail_png.GetWidth(), thumbnail_png.GetHeight()), canvas_thumbnail);
@@ -413,7 +413,7 @@ HRESULT STDMETHODCALLTYPE CThumbviewer::Extract(HBITMAP *phBmpImage)
 				HGDIOBJ hOldObj = SelectObject(memDC, hMemBmp);
 
 				Gdiplus::Graphics graphics(memDC);
-				Gdiplus::Pen darkPen(Gdiplus::Color(255, 85, 85, 85), 1);
+				Gdiplus::Pen grayPen(Gdiplus::Color(255, 127, 127, 127), 1);
 
 				Gdiplus::SolidBrush whiteBrush(Gdiplus::Color(255, 255, 255, 255));
 				graphics.FillRectangle(&whiteBrush, canvas);
@@ -422,7 +422,7 @@ HRESULT STDMETHODCALLTYPE CThumbviewer::Extract(HBITMAP *phBmpImage)
 				scaledRect.Y = (canvas.Height - scaledRect.Height) / 2;
 
 				Gdiplus::Rect border_rect(scaledRect.X, scaledRect.Y, scaledRect.Width, scaledRect.Height);
-				graphics.DrawRectangle(&darkPen, border_rect);
+				graphics.DrawRectangle(&grayPen, border_rect);
 
 				scaledRect.X += 1;
 				scaledRect.Y += 1;
