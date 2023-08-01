@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,15 +60,15 @@ private:
 	sal_Bool				mbFormat;
 	Link				maClickHdl;
 
-    SAL_DLLPRIVATE void				ImplInitButtonDialogData();
+	SAL_DLLPRIVATE void				ImplInitButtonDialogData();
 	SAL_DLLPRIVATE PushButton* 		ImplCreatePushButton( sal_uInt16 nBtnFlags );
 	SAL_DLLPRIVATE ImplBtnDlgItem* 	ImplGetItem( sal_uInt16 nId ) const;
-	DECL_DLLPRIVATE_LINK(           ImplClickHdl, PushButton* pBtn );
+	DECL_DLLPRIVATE_LINK(			ImplClickHdl, PushButton* pBtn );
 	SAL_DLLPRIVATE void				ImplPosControls();
 
-    // Copy assignment is forbidden and not implemented.
-	SAL_DLLPRIVATE      ButtonDialog( const ButtonDialog & );
-	SAL_DLLPRIVATE      ButtonDialog& operator=( const ButtonDialog& );
+	// Copy assignment is forbidden and not implemented.
+	SAL_DLLPRIVATE		ButtonDialog( const ButtonDialog & );
+	SAL_DLLPRIVATE		ButtonDialog& operator=( const ButtonDialog& );
 protected:
 						ButtonDialog( WindowType nType );
 	SAL_DLLPRIVATE long ImplGetButtonSize();
@@ -101,7 +101,7 @@ public:
 	void				SetButtonHelpText( sal_uInt16 nId, const XubString& rText );
 	XubString			GetButtonHelpText( sal_uInt16 nId ) const;
 	void				SetButtonHelpId( sal_uInt16 nId, const rtl::OString& rHelpId );
-	rtl::OString        GetButtonHelpId( sal_uInt16 nId ) const;
+	rtl::OString		GetButtonHelpId( sal_uInt16 nId ) const;
 
 	void				SetFocusButton( sal_uInt16 nId = BUTTONDIALOG_BUTTON_NOTFOUND ) { mnFocusButtonId = nId; }
 	sal_uInt16				GetFocusButton() const { return mnFocusButtonId; }
@@ -111,3 +111,5 @@ public:
 };
 
 #endif	// _SV_BTNDLG_HXX
+
+/* vim: set noet sw=4 ts=4: */
