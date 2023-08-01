@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ typedef policy<
 #define BMP_SCALE_BOX                   0x00000007UL
 
 // new default assigns for having slots for best quality and
-// an alternative with a good compromize between speed and quality.
+// an alternative with a good compromise between speed and quality.
 // Currently BMP_SCALE_BESTQUALITY maps to BMP_SCALE_LANCZOS and
 // BMP_SCALE_FASTESTINTERPOLATE to BMP_SCALE_SUPER
 #define BMP_SCALE_BESTQUALITY           0x000000feUL
@@ -258,10 +258,10 @@ public:
     Lanczos3Kernel( void) {}
 
     virtual double GetWidth() const
-    { 
-        return 3.0; 
+    {
+        return 3.0;
     }
-    
+
     virtual double Calculate(double x) const
     {
         return (-3.0 <= x && 3.0 > x) ? SincFilter(x) * SincFilter( x / 3.0 ) : 0.0;
@@ -279,16 +279,16 @@ public:
     }
 };
 
-class BicubicKernel : public Kernel 
+class BicubicKernel : public Kernel
 {
 public:
     BicubicKernel( void) {}
 
     virtual double GetWidth() const
-    { 
-        return 2.0; 
+    {
+        return 2.0;
     }
-    
+
     virtual double Calculate(double x) const
     {
         if(0.0 > x)
@@ -309,14 +309,14 @@ public:
     }
 };
 
-class BilinearKernel : public Kernel 
+class BilinearKernel : public Kernel
 {
 public:
     BilinearKernel( void) {}
 
     virtual double GetWidth() const
-    { 
-        return 1.0; 
+    {
+        return 1.0;
     }
 
     virtual double Calculate(double x) const
@@ -330,19 +330,19 @@ public:
         {
             return 1.0 - x;
         }
-        
+
         return 0.0;
     }
 };
 
-class BoxKernel : public Kernel 
+class BoxKernel : public Kernel
 {
 public:
     BoxKernel( void) {}
 
     virtual double GetWidth() const
-    { 
-        return 0.5; 
+    {
+        return 0.5;
     }
 
     virtual double Calculate(double x) const
@@ -420,10 +420,10 @@ public:
 	SAL_DLLPRIVATE sal_Bool					ImplReduceSimple( sal_uInt16 nColorCount );
 	SAL_DLLPRIVATE sal_Bool					ImplReducePopular( sal_uInt16 nColorCount );
 	SAL_DLLPRIVATE sal_Bool					ImplReduceMedian( sal_uInt16 nColorCount );
-	SAL_DLLPRIVATE void					ImplMedianCut( sal_uLong* pColBuf, BitmapPalette& rPal, 
+	SAL_DLLPRIVATE void					ImplMedianCut( sal_uLong* pColBuf, BitmapPalette& rPal,
 										   long nR1, long nR2, long nG1, long nG2, long nB1, long nB2,
 										   long nColors, long nPixels, long& rIndex );
-	SAL_DLLPRIVATE sal_Bool					ImplConvolute3( const long* pMatrix, long nDivisor, 
+	SAL_DLLPRIVATE sal_Bool					ImplConvolute3( const long* pMatrix, long nDivisor,
 											const BmpFilterParam* pFilterParam, const Link* pProgress );
 	SAL_DLLPRIVATE sal_Bool					ImplMedianFilter( const BmpFilterParam* pFilterParam, const Link* pProgress );
 	SAL_DLLPRIVATE sal_Bool					ImplSobelGrey( const BmpFilterParam* pFilterParam, const Link* pProgress );
@@ -478,10 +478,10 @@ public:
     inline sal_uLong            GetSizeBytes() const;
 	sal_Bool					HasGreyPalette() const;
     /** get system dependent bitmap data
-    
+
         @param rData
         The system dependent BitmapSystemData structure to be filled
-        
+
         @return sal_True if the bitmap has a valid system object (e.g. not empty)
     */
     bool                    GetSystemData( BitmapSystemData& rData ) const;
@@ -517,7 +517,7 @@ public:
 
         @return sal_True, if the color reduction operation was completed successfully.
      */
-	sal_Bool					ReduceColors( sal_uInt16 nNewColorCount, 
+	sal_Bool					ReduceColors( sal_uInt16 nNewColorCount,
 										  BmpReduce eReduce = BMP_REDUCE_SIMPLE );
 
     /** Apply a dither algorithm to the bitmap
@@ -552,7 +552,7 @@ public:
 
     /** Expand the bitmap by pixel padding
 
-    	@param nDX 
+    	@param nDX
         Number of pixel to pad at the right border of the bitmap
 
     	@param nDY
@@ -565,7 +565,7 @@ public:
         not only returned when the operation failed, but also if
         nothing had to be done, e.g. because nDX and nDY were zero.
      */
-    sal_Bool                    Expand( sal_uLong nDX, sal_uLong nDY, 
+    sal_Bool                    Expand( sal_uLong nDX, sal_uLong nDY,
 									const Color* pInitColor = NULL );
 
     /** Copy a rectangular area from another bitmap
@@ -598,7 +598,7 @@ public:
 
     	@param rMask
         The mask bitmap in the selected combine operation
-        
+
         @param eCombine
         The combine operation to perform on the bitmap
 
@@ -623,7 +623,7 @@ public:
 
         @return sal_True, if blending was successful, sal_False otherwise
      */
-    sal_Bool 					Blend( const AlphaMask& rAlpha, 
+    sal_Bool 					Blend( const AlphaMask& rAlpha,
                                    const Color& 	rBackgroundColor );
 
     /** Fill the entire bitmap with the given color
@@ -640,13 +640,13 @@ public:
         @return sal_True, if the operation was completed successfully.
      */
     sal_Bool                    Invert();
-    
+
     /** Mirror the bitmap
 
     	@param nMirrorFlags
         About which axis (horizontal, vertical, or both) to mirror
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool                    Mirror( sal_uLong nMirrorFlags );
 
@@ -658,7 +658,7 @@ public:
         @param nScaleFlag
         The algorithm to be used for scaling
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool                    Scale( const Size& rNewSize, sal_uInt32 nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
 
@@ -670,11 +670,11 @@ public:
     	@param rScaleY
         The scale factor in y direction.
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool                    Scale( const double& rScaleX, const double& rScaleY, sal_uInt32 nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
 
-    // Adapt the BitCount of rNew to BitCount of lolal, including grey or color paltette
+    // Adapt the BitCount of rNew to BitCount of total, including gray or color palette
     // Can be used to create alpha/mask bitmaps after their processing in 24bit
     void AdaptBitCount(Bitmap& rNew) const;
 
@@ -689,7 +689,7 @@ public:
         in. The empty spaces around that rotated original bitmap are
         then filled with this color.
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool                    Rotate( long nAngle10, const Color& rFillColor );
 
@@ -728,11 +728,11 @@ public:
 
     	@param rMask
         Mask specifying which pixel should be replaced
-        
+
         @param rReplaceColor
         Color to be placed in all changed pixel
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool                    Replace( const Bitmap& rMask, const Color& rReplaceColor );
 
@@ -740,11 +740,11 @@ public:
 
     	@param rAlpha
         Alpha mask specifying the amount of background color to merge in
-        
+
         @param rMergeColor
         Background color to be used for merging
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool                    Replace( const AlphaMask& rAlpha, const Color& rMergeColor );
 
@@ -752,7 +752,7 @@ public:
 
     	@param rSearchColor
         Color specifying which pixel should be replaced
-        
+
         @param rReplaceColor
         Color to be placed in all changed pixel
 
@@ -761,7 +761,7 @@ public:
         rSearchColor and the individual pixel values, such that the
         corresponding pixel is still regarded a match.
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool                    Replace( const Color& rSearchColor, const Color& rReplaceColor, sal_uLong nTol = 0 );
 
@@ -769,7 +769,7 @@ public:
 
     	@param pSearchColor
         Array of colors specifying which pixel should be replaced
-        
+
         @param pReplaceColor
         Array of colors to be placed in all changed pixel
 
@@ -781,12 +781,12 @@ public:
         pSearchColor colors and the individual pixel values, such that
         the corresponding pixel is still regarded a match.
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
-    sal_Bool                    Replace( const Color* pSearchColors, const Color* rReplaceColors, 
+    sal_Bool                    Replace( const Color* pSearchColors, const Color* rReplaceColors,
 									 sal_uLong nColorCount, sal_uLong* pTols = NULL );
 
-    /** Convert the bitmap to a PolyPolygon    	
+    /** Convert the bitmap to a PolyPolygon
 
     	This works by putting continuous areas of the same color into
     	a polygon, by tracing its bounding line.
@@ -801,9 +801,9 @@ public:
         @param pProgress
         A callback for showing the progress of the vectorization
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
-	sal_Bool					Vectorize( PolyPolygon& rPolyPoly, 
+	sal_Bool					Vectorize( PolyPolygon& rPolyPoly,
 									   sal_uLong nFlags = BMP_VECTORIZE_OUTER,
 									   const Link* pProgress = NULL );
 
@@ -826,7 +826,7 @@ public:
         @param pProgress
         A callback for showing the progress of the vectorization
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
 	sal_Bool					Vectorize( GDIMetaFile& rMtf, sal_uInt8 cReduce = 0,
 									   sal_uLong nFlags = BMP_VECTORIZE_INNER,
@@ -857,12 +857,12 @@ public:
         @param bInvert
         If sal_True, invert the channel values with the logical 'not' operator
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
 	sal_Bool					Adjust( short nLuminancePercent = 0,
 									short nContrastPercent = 0,
-									short nChannelRPercent = 0, 
-									short nChannelGPercent = 0, 
+									short nChannelRPercent = 0,
+									short nChannelGPercent = 0,
 									short nChannelBPercent = 0,
 									double fGamma = 1.0,
 									sal_Bool bInvert = sal_False );
@@ -877,10 +877,10 @@ public:
 
         @param pProgress
         A callback for showing the progress of the vectorization
-        
-        @return sal_True, if the operation was completed successfully.        
+
+        @return sal_True, if the operation was completed successfully.
      */
-	sal_Bool					Filter( BmpFilter eFilter, 
+	sal_Bool					Filter( BmpFilter eFilter,
 									const BmpFilterParam* pFilterParam = NULL,
 									const Link* pProgress = NULL );
 
@@ -970,3 +970,5 @@ inline sal_uLong Bitmap::GetSizeBytes() const
 }
 
 #endif // _SV_BITMAP_HXX
+
+/* vim: set noet sw=4 ts=4: */
