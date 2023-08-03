@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -197,11 +197,11 @@ namespace drawinglayer
 
                 aLine.append(basegfx::B2DPoint(0.0, fOffset));
                 aLine.append(basegfx::B2DPoint(getWidth(), fOffset));
-				
+
                 const basegfx::B2DHomMatrix aUnscaledTransform(
                     basegfx::tools::createShearXRotateTranslateB2DHomMatrix(
     					fShearX, fRotate, aTranslate));
-                
+
                 aLine.transform(aUnscaledTransform);
 
                 if(bWaveLine)
@@ -233,7 +233,7 @@ namespace drawinglayer
                     // double line, create 2nd primitive with offset using TransformPrimitive based on
                     // already created NewPrimitive
                     double fLineDist(2.3 * fHeight);
-                    
+
                     if(bWaveLine)
                     {
                         fLineDist = 6.3 * fHeight;
@@ -253,7 +253,7 @@ namespace drawinglayer
 
                     // add transform primitive
                     const Primitive2DSequence aContent(&aNewPrimitive, 1);
-                    appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, 
+                    appendPrimitive2DReferenceToPrimitive2DSequence(xRetval,
                         Primitive2DReference(new TransformPrimitive2D(aTransform, aContent)));
                 }
             }
@@ -301,5 +301,4 @@ namespace drawinglayer
     } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */
