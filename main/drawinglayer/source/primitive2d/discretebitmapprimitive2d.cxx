@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,8 +36,8 @@ namespace drawinglayer
 	{
 		Primitive2DSequence DiscreteBitmapPrimitive2D::create2DDecomposition(const geometry::ViewInformation2D& /*rViewInformation*/) const
 		{
-			// use getViewTransformation() and getObjectTransformation() from 
-			// ObjectAndViewTransformationDependentPrimitive2D to create a BitmapPrimitive2D 
+			// use getViewTransformation() and getObjectTransformation() from
+			// ObjectAndViewTransformationDependentPrimitive2D to create a BitmapPrimitive2D
 			// with the correct mapping
 			Primitive2DSequence xRetval;
 
@@ -81,7 +81,7 @@ namespace drawinglayer
 		}
 
 		DiscreteBitmapPrimitive2D::DiscreteBitmapPrimitive2D(
-			const BitmapEx& rBitmapEx, 
+			const BitmapEx& rBitmapEx,
 			const basegfx::B2DPoint& rTopLeft)
 		:	ObjectAndViewTransformationDependentPrimitive2D(),
 			maBitmapEx(rBitmapEx),
@@ -108,5 +108,4 @@ namespace drawinglayer
 	} // end of namespace primitive2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

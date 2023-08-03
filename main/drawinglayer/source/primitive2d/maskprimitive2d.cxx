@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ namespace drawinglayer
 	namespace primitive2d
 	{
 		MaskPrimitive2D::MaskPrimitive2D(
-			const basegfx::B2DPolyPolygon& rMask, 
+			const basegfx::B2DPolyPolygon& rMask,
 			const Primitive2DSequence& rChildren)
 		:	GroupPrimitive2D(rChildren),
 			maMask(rMask)
@@ -62,11 +62,10 @@ namespace drawinglayer
 			return getMask().getB2DRange();
 		}
 
-        // provide unique ID
+		// provide unique ID
 		ImplPrimitrive2DIDBlock(MaskPrimitive2D, PRIMITIVE2D_ID_MASKPRIMITIVE2D)
 
 	} // end of namespace primitive2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */
