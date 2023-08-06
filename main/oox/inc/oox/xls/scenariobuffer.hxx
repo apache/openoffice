@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,11 +48,11 @@ struct ScenarioCellModel
 
 struct ScenarioModel
 {
-    ::rtl::OUString     maName;             /// Name of the scenario.
-    ::rtl::OUString     maComment;          /// Comment.
-    ::rtl::OUString     maUser;             /// Name of user created the scenario.
-    bool                mbLocked;           /// True = input cell values locked.
-    bool                mbHidden;           /// True = scenario is hidden.
+    ::rtl::OUString     maName;             // Name of the scenario.
+    ::rtl::OUString     maComment;          // Comment.
+    ::rtl::OUString     maUser;             // Name of user created the scenario.
+    bool                mbLocked;           // True = input cell values locked.
+    bool                mbHidden;           // True = scenario is hidden.
 
     explicit            ScenarioModel();
 };
@@ -83,17 +83,17 @@ public:
 private:
     typedef ::std::vector< ScenarioCellModel > ScenarioCellVector;
 
-    ScenarioCellVector  maCells;            /// Scenario cells.
-    ScenarioModel       maModel;            /// Scenario model data.
-    sal_Int16           mnSheet;            /// Index of the sheet this scenario is based on.
+    ScenarioCellVector  maCells;            // Scenario cells.
+    ScenarioModel       maModel;            // Scenario model data.
+    sal_Int16           mnSheet;            // Index of the sheet this scenario is based on.
 };
 
 // ============================================================================
 
 struct SheetScenariosModel
 {
-    sal_Int32           mnCurrent;          /// Selected scenario.
-    sal_Int32           mnShown;            /// Visible scenario.
+    sal_Int32           mnCurrent;          // Selected scenario.
+    sal_Int32           mnShown;            // Visible scenario.
 
     explicit            SheetScenariosModel();
 };
@@ -135,7 +135,7 @@ public:
     /** Creates and returns a scenario collection for the passed sheet. */
     SheetScenarios&     createSheetScenarios( sal_Int16 nSheet );
 
-    /** Creates all scenarios in the Calc dcument. */
+    /** Creates all scenarios in the Calc document. */
     void                finalizeImport();
 
 private:
@@ -149,3 +149,5 @@ private:
 } // namespace oox
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
