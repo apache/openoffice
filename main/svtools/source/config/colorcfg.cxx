@@ -449,7 +449,7 @@ Color ColorConfig::GetDefaultColor(ColorConfigEntry eEntry)
         0x808080, // APPBACKGROUND
         0xc0c0c0, // OBJECTBOUNDARIES
         0xc0c0c0, // TABLEBOUNDARIES
-        0, // FONTCOLOR
+        COL_BLACK, // FONTCOLOR
         0xcc, // LINKS
         0x80, // LINKSVISITED
         0, // ANCHOR
@@ -517,10 +517,6 @@ Color ColorConfig::GetDefaultColor(ColorConfigEntry eEntry)
                 aRet = /*rStyleSettings.GetHighContrastMode() ?
 					rStyleSettings.OutlineMode??? : */	aAutoColors[eEntry];
         break;
-
-		case FONTCOLOR :
-            aRet = Application::GetSettings().GetStyleSettings().GetWindowTextColor();
-			break;
 
 		case LINKS :
             aRet = Application::GetSettings().GetStyleSettings().GetLinkColor();
