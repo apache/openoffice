@@ -232,7 +232,7 @@ Point InsertionIndicatorOverlay::PaintRepresentatives (
 		const Size aSuperSampleSize(
 			aPreviewSize.Width()*gnSuperScaleFactor,
 			aPreviewSize.Height()*gnSuperScaleFactor);
-		aPreview.Scale(aPreviewSize, BMP_SCALE_INTERPOLATE);
+		aPreview.Scale(aPreviewSize, BMP_SCALE_FASTESTINTERPOLATE);
 		rContent.DrawBitmapEx(aPageOffset, aPreview);
 
 		// When the page is marked as excluded from the slide show then
@@ -274,8 +274,8 @@ Point InsertionIndicatorOverlay::PaintRepresentatives (
 		rContent.SetFillColor();
 		rContent.DrawRect(aBorderBox);
 
-		// Draw shadow around preview.
-		mpShadowPainter->PaintFrame(rContent, aBorderBox);
+		// Draw shadow around preview (removed now).
+		//mpShadowPainter->PaintFrame(rContent, aBorderBox);
 	}
 
 	return aPageOffset;
@@ -445,3 +445,5 @@ Size InsertionIndicatorOverlay::GetSize (void) const
 
 
 } } } // end of namespace ::sd::slidesorter::view
+
+/* vim: set noet sw=4 ts=4: */
