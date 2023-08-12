@@ -212,15 +212,15 @@ Point InsertionIndicatorOverlay::PaintRepresentatives (
 		{
 			case 0 :
 				aPageOffset = Point(0, nOffset);
-				nTransparency = 0.85;
+				nTransparency = 0.95;
 				break;
 			case 1:
 				aPageOffset = Point(nOffset, 0);
-				nTransparency = 0.75;
+				nTransparency = 0.85;
 				break;
 			case 2:
 				aPageOffset = Point(2*nOffset, 2*nOffset);
-				nTransparency = 0.65;
+				nTransparency = 0.75;
 				break;
 		}
 		aPageOffset += aOffset;
@@ -274,8 +274,8 @@ Point InsertionIndicatorOverlay::PaintRepresentatives (
 		rContent.SetFillColor();
 		rContent.DrawRect(aBorderBox);
 
-		// Draw shadow around preview (removed now).
-		//mpShadowPainter->PaintFrame(rContent, aBorderBox);
+		// Draw shadow around preview.
+		mpShadowPainter->PaintFrame(rContent, aBorderBox);
 	}
 
 	return aPageOffset;
