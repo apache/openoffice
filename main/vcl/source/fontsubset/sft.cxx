@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ struct PSPathElement
     int x1, y1;
     int x2, y2;
     int x3, y3;
-    
+
     PSPathElement( PathSegmentType i_eType ) : type( i_eType ),
                                    x1( 0 ), y1( 0 ),
                                    x2( 0 ), y2( 0 ),
@@ -98,17 +98,17 @@ struct PSPathElement
     }
 };
 
-/*- In horisontal writing mode right sidebearing is calculated using this formula
+/*- In horizontal writing mode right sidebearing is calculated using this formula
  *- rsb = aw - (lsb + xMax - xMin) -*/
 typedef struct {
     sal_Int16  xMin;
     sal_Int16  yMin;
     sal_Int16  xMax;
     sal_Int16  yMax;
-    sal_uInt16 aw;                /*- Advance Width (horisontal writing mode)    */
-    sal_Int16  lsb;               /*- Left sidebearing (horisontal writing mode) */
-    sal_uInt16 ah;                /*- advance height (vertical writing mode)     */
-    sal_Int16  tsb;               /*- top sidebearing (vertical writing mode)    */
+    sal_uInt16 aw;                /*- Advance width (horizontal writing mode)    */
+    sal_Int16  lsb;               /*- Left sidebearing (horizontal writing mode) */
+    sal_uInt16 ah;                /*- Advance height (vertical writing mode)     */
+    sal_Int16  tsb;               /*- Top sidebearing (vertical writing mode)    */
 } TTGlyphMetrics;
 
 #define HFORMAT_LINELEN 64
@@ -799,7 +799,7 @@ static int GetCompoundTTOutline(TrueTypeFont *ttf, sal_uInt32 glyphID, ControlPo
 
     } while (flags & MORE_COMPONENTS);
 
-    // #i123417# some fonts like IFAOGrec have no outline points in some compound glyphs 
+    // #i123417# some fonts like IFAOGrec have no outline points in some compound glyphs
     // so this unlikely but possible scenario should be handled gracefully
     if( myPoints.empty() )
         return 0;
@@ -808,7 +808,7 @@ static int GetCompoundTTOutline(TrueTypeFont *ttf, sal_uInt32 glyphID, ControlPo
 
     pa = (ControlPoint*)calloc(np, sizeof(ControlPoint));
     assert(pa != 0);
-    
+
     memcpy( pa, &myPoints[0], np*sizeof(ControlPoint) );
 
     *pointArray = pa;
@@ -1176,9 +1176,9 @@ static void GetNames(TrueTypeFont *t)
     {
         t->subfamily = strdup("");
     }
-    
+
     /* #i60349# sanity check psname
-     * psname parctically has to be 7bit ascii and should not contains spaces
+     * psname practically has to be 7bit ascii and should not contains spaces
      * there is a class of broken fonts which do not fulfill that at all, so let's try
      * if the family name is 7bit ascii and take it instead if so
      */
@@ -1218,7 +1218,7 @@ enum cmapType {
 #define MISSING_GLYPH_INDEX 0
 
 /*
- * getGlyph[0246]() functions and freinds are implemented by:
+ * getGlyph[0246]() functions and friends are implemented by:
  * @author Manpreet Singh
  * getGlyph12() function and friends by:
  * @author HDU
@@ -1408,7 +1408,7 @@ static void FindCmap(TrueTypeFont *ttf)
     for (i = 0; i < ncmaps; i++) {
         sal_uInt32 offset;
         sal_uInt16 pID, eID;
-        
+
         /* sanity check, cmap entry must lie within table */
         if( i*8+4 > table_size )
             break;
@@ -1416,14 +1416,14 @@ static void FindCmap(TrueTypeFont *ttf)
         pID = GetUInt16(table, 4 + i * 8, 1);
         eID = GetUInt16(table, 6 + i * 8, 1);
         offset = GetUInt32(table, 8 + i * 8, 1);
-        
+
          /* sanity check, cmap must lie within file */
         if( (table - ttf->ptr) + offset > (sal_uInt32)ttf->fsize )
             continue;
 
         /* Unicode tables in Apple fonts */
         if (pID == 0) {
-            AppleUni = offset;	
+            AppleUni = offset;
         }
 
         if (pID == 3) {
@@ -1552,10 +1552,10 @@ static void KernGlyphsPrim1(TrueTypeFont *ttf, sal_uInt16 *glyphs, int nglyphs, 
 {
     (void)ttf; /* avoid warning */
     (void)glyphs; /* avoid warning */
-    (void)nglyphs; /* avoid warning */    
-    (void)wmode; /* avoid warning */    
-    (void)nglyphs; /* avoid warning */    
-    (void)kern; /* avoid warning */    
+    (void)nglyphs; /* avoid warning */
+    (void)wmode; /* avoid warning */
+    (void)nglyphs; /* avoid warning */
+    (void)kern; /* avoid warning */
     fprintf(stderr, "MacOS kerning tables have not been implemented yet!\n");
 }
 
@@ -1648,7 +1648,7 @@ static void allocTrueTypeFont( TrueTypeFont** ttf )
     }
 }
 
-/* forward declariotn for the two entry points to use*/
+/* forward declaration for the two entry points to use*/
 static int doOpenTTFont( sal_uInt32 facenum, TrueTypeFont* t );
 
 #if !defined(WIN32) && !defined(OS2)
@@ -1658,7 +1658,7 @@ int OpenTTFontFile( const char* fname, sal_uInt32 facenum, TrueTypeFont** ttf )
     struct stat st;
 
     if (!fname || !*fname) return SF_BADFILE;
-    
+
     allocTrueTypeFont( ttf );
     if( ! *ttf )
         return SF_MEMORY;
@@ -1698,7 +1698,7 @@ int OpenTTFontFile( const char* fname, sal_uInt32 facenum, TrueTypeFont** ttf )
         goto cleanup;
     }
     close(fd);
-    
+
     return doOpenTTFont( facenum, *ttf );
 
 cleanup:
@@ -1716,12 +1716,12 @@ int OpenTTFontBuffer(void* pBuffer, sal_uInt32 nLen, sal_uInt32 facenum, TrueTyp
     allocTrueTypeFont( ttf );
     if( *ttf == NULL )
         return SF_MEMORY;
-    
+
     (*ttf)->fname = NULL;
     (*ttf)->fsize = nLen;
     (*ttf)->ptr   = (sal_uInt8*)pBuffer;
-    
-    return doOpenTTFont( facenum, *ttf ); 
+
+    return doOpenTTFont( facenum, *ttf );
 }
 
 static int doOpenTTFont( sal_uInt32 facenum, TrueTypeFont* t )
@@ -1810,8 +1810,8 @@ static int doOpenTTFont( sal_uInt32 facenum, TrueTypeFont* t )
         if( !pHead )
             return SF_TTFORMAT;
         /* limit Head candidate to TTC extract's limits */
-        if( pHead > t->ptr + (t->fsize - 54) ) 
-            pHead = t->ptr + (t->fsize - 54); 
+        if( pHead > t->ptr + (t->fsize - 54) )
+            pHead = t->ptr + (t->fsize - 54);
         /* TODO: find better method than searching head table's magic */
         sal_uInt8* p = NULL;
         for( p = pHead + 12; p > t->ptr; --p ) {
@@ -1835,7 +1835,7 @@ static int doOpenTTFont( sal_uInt32 facenum, TrueTypeFont* t )
          * tables, but this would be quite time intensive.
          * Try to fix tables, so we can cope with minor problems.
          */
-        
+
         if( (sal_uInt8*)t->tables[i] < t->ptr )
         {
 #if OSL_DEBUG_LEVEL > 1
@@ -2232,7 +2232,7 @@ int  CreateTTFromTTGlyphs(TrueTypeFont  *ttf,
     for (i = 0; i < nGlyphs; i++) {
         gID[i] = glyfAdd(glyf, GetTTRawGlyphData(ttf, glyphArray[i]), ttf);
     }
-        
+
     /**                       cmap                          **/
     cmap = TrueTypeTableNew_cmap();
 
@@ -2905,7 +2905,7 @@ int main(int ac, char **av)
      * of the glyph in the output file */
     sal_uInt8 encoding[2];
 
-    /* This array is for glyph IDs that  source characters map to */
+    /* This array is for glyph IDs that source characters map to */
     sal_uInt16 g[2];
 
 
@@ -3355,4 +3355,4 @@ int main(int ac, char **av)
 }
 #endif
 
-
+/* vim: set noet sw=4 ts=4: */
