@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,9 +63,9 @@ ShowWindow::ShowWindow( const ::rtl::Reference< SlideshowImpl >& xController, ::
 {
 	SetOutDevViewType( OUTDEV_VIEWTYPE_SLIDESHOW );
 
-    // Do never mirror the preview window.  This explicitly includes right
-    // to left writing environments.
-    EnableRTL (sal_False);
+	// Do never mirror the preview window. This explicitly includes right
+	// to left writing environments.
+	EnableRTL (sal_False);
 
 	MapMode aMap(GetMapMode());
 	aMap.SetMapUnit(MAP_100TH_MM);
@@ -82,7 +82,7 @@ ShowWindow::ShowWindow( const ::rtl::Reference< SlideshowImpl >& xController, ::
 
 	maShowBackground = Wallpaper( Color( COL_BLACK ) );
 //	SetBackground( Wallpaper( Color( COL_BLACK ) ) );
-    SetBackground(); // avoids that VCL paints any background!
+	SetBackground(); // avoids that VCL paints any background!
 	GetParent()->Show();
 	AddEventListener( LINK( this, ShowWindow, EventHdl ) );
 }
@@ -94,9 +94,7 @@ ShowWindow::~ShowWindow(void)
 }
 
 /*************************************************************************
-|*
 |* Keyboard event
-|*
 \************************************************************************/
 
 void ShowWindow::KeyInput(const KeyEvent& rKEvt)
@@ -182,9 +180,7 @@ void ShowWindow::KeyInput(const KeyEvent& rKEvt)
 }
 
 /*************************************************************************
-|*
 |* MouseButtonDown event
-|*
 \************************************************************************/
 
 void ShowWindow::MouseButtonDown(const MouseEvent& /*rMEvt*/)
@@ -200,9 +196,7 @@ void ShowWindow::MouseButtonDown(const MouseEvent& /*rMEvt*/)
 }
 
 /*************************************************************************
-|*
 |* MouseMove event
-|*
 \************************************************************************/
 
 void ShowWindow::MouseMove(const MouseEvent& /*rMEvt*/)
@@ -247,9 +241,7 @@ void ShowWindow::MouseMove(const MouseEvent& /*rMEvt*/)
 }
 
 /*************************************************************************
-|*
 |* MouseButtonUp event
-|*
 \************************************************************************/
 
 void ShowWindow::MouseButtonUp(const MouseEvent& rMEvt)
@@ -265,7 +257,7 @@ void ShowWindow::MouseButtonUp(const MouseEvent& rMEvt)
 	else if( (( SHOWWINDOWMODE_BLANK == meShowWindowMode ) || ( SHOWWINDOWMODE_PAUSE == meShowWindowMode ))
 			 && !rMEvt.IsRight() )
 	{
-        RestartShow();
+		RestartShow();
 	}
 	else
 	{
@@ -275,9 +267,7 @@ void ShowWindow::MouseButtonUp(const MouseEvent& rMEvt)
 }
 
 /*************************************************************************
-|*
 |* Paint-Event: wenn FuSlideShow noch erreichbar ist, weiterleiten
-|*
 \************************************************************************/
 
 void ShowWindow::Paint(const Rectangle& rRect)
@@ -286,7 +276,7 @@ void ShowWindow::Paint(const Rectangle& rRect)
 	{
 /*
 		Region aOldClipRegion( GetClipRegion() );
-			
+
 		Region aClipRegion( rRect );
 		aClipRegion.Exclude( maPresArea );
 		SetClipRegion( aClipRegion );
@@ -324,9 +314,7 @@ void ShowWindow::Paint(const Rectangle& rRect)
 }
 
 /*************************************************************************
-|*
 |* Notify
-|*
 \************************************************************************/
 
 long ShowWindow::Notify(NotifyEvent& rNEvt)
@@ -456,7 +444,7 @@ sal_Bool ShowWindow::SetPauseMode( sal_Int32 nPageIndexToRestart, sal_Int32 nTim
 
 sal_Bool ShowWindow::SetBlankMode( sal_Int32 nPageIndexToRestart, const Color& rBlankColor )
 {
-    if( ( SHOWWINDOWMODE_NORMAL == meShowWindowMode ) && mpViewShell && mpViewShell->GetView() )
+	if( ( SHOWWINDOWMODE_NORMAL == meShowWindowMode ) && mpViewShell && mpViewShell->GetView() )
 	{
 		DeleteWindowFromPaintView();
 		mnRestartPageIndex = nPageIndexToRestart;
@@ -495,7 +483,7 @@ void ShowWindow::TerminateShow()
 	Erase();
 //	SetBackground( maShowBackground );
 	maShowBackground = Wallpaper( Color( COL_BLACK ) );
-    meShowWindowMode = SHOWWINDOWMODE_NORMAL;
+	meShowWindowMode = SHOWWINDOWMODE_NORMAL;
 	mnPauseTimeout = SLIDE_NO_TIMEOUT;
 
 	if( mpViewShell )
@@ -526,7 +514,7 @@ void ShowWindow::RestartShow()
 void ShowWindow::RestartShow( sal_Int32 nPageIndexToRestart )
 
 {
-    ShowWindowMode eOldShowWindowMode = meShowWindowMode;
+	ShowWindowMode eOldShowWindowMode = meShowWindowMode;
 
 	maLogo.Clear();
 	maPauseTimer.Stop();
@@ -539,17 +527,17 @@ void ShowWindow::RestartShow( sal_Int32 nPageIndexToRestart )
 	if( mpViewShell )
 	{
 		rtl::Reference< SlideShow > xSlideShow( SlideShow::GetSlideShow( mpViewShell->GetViewShellBase() ) );
-  
+
  		if( xSlideShow.is() )
 		{
 			AddWindowToPaintView();
-	
-		    if( SHOWWINDOWMODE_BLANK == eOldShowWindowMode )
+
+			if( SHOWWINDOWMODE_BLANK == eOldShowWindowMode )
 			{
 				xSlideShow->pause(false);
 				Invalidate();
 			}
-		    else
+			else
 			{
 				xSlideShow->jumpToPageIndex( nPageIndexToRestart );
 			}
@@ -612,18 +600,18 @@ void ShowWindow::DrawPauseScene( sal_Bool bTimeoutOnly )
 		aVMap.SetOrigin( Point() );
 		aVDev.SetMapMode( aVMap );
 		aVDev.SetBackground( Wallpaper( Color( COL_BLACK ) ) );
-		
+
 		// set font first, to determine real output height
 		aVDev.SetFont( aFont );
-			
+
 		const Size aVDevSize( aOutSize.Width(), aVDev.GetTextHeight() );
 
 		if( aVDev.SetOutputSize( aVDevSize ) )
 		{
 			// Note: if performance gets an issue here, we can use NumberFormatter directly
 			SvtSysLocale				aSysLocale;
-			const LocaleDataWrapper&    aLocaleData = aSysLocale.GetLocaleData();
-			
+			const LocaleDataWrapper&	aLocaleData = aSysLocale.GetLocaleData();
+
 			aText.AppendAscii( RTL_CONSTASCII_STRINGPARAM( " ( " ));
 			aText += aLocaleData.getDuration( Time( 0, 0, mnPauseTimeout ) );
 			aText.AppendAscii( RTL_CONSTASCII_STRINGPARAM( " )" ));
@@ -665,7 +653,7 @@ void ShowWindow::DrawEndScene()
 
 void ShowWindow::DrawBlankScene()
 {
-    // just blank through background color => nothing to be done here
+	// just blank through background color => nothing to be done here
 }
 
 // -----------------------------------------------------------------------------
@@ -688,7 +676,7 @@ IMPL_LINK( ShowWindow, MouseTimeoutHdl, Timer*, EMPTYARG )
 	if( mbMouseCursorHidden )
 	{
 		// not enough mouse movements since first recording so
-		// cancle show mouse pointer for now
+		// cancel show mouse pointer for now
 		mnFirstMouseMove = 0;
 	}
 	else
@@ -723,7 +711,7 @@ void ShowWindow::DeleteWindowFromPaintView()
 	if( mpViewShell->GetView() )
 		mpViewShell->GetView()->DeleteWindowFromPaintView( this );
 
-    sal_uInt16 nChild = GetChildCount();
+	sal_uInt16 nChild = GetChildCount();
 	while( nChild-- )
 		GetChild( nChild )->Show( sal_False );
 }
@@ -733,31 +721,33 @@ void ShowWindow::AddWindowToPaintView()
 	if( mpViewShell->GetView() )
 		mpViewShell->GetView()->AddWindowToPaintView( this );
 
-    sal_uInt16 nChild = GetChildCount();
+	sal_uInt16 nChild = GetChildCount();
 	while( nChild-- )
 		GetChild( nChild )->Show( sal_True );
 }
 
 // Overload the sd::Window's CreateAccessible to create a different accessible object
 ::com::sun::star::uno::Reference<
-    ::com::sun::star::accessibility::XAccessible>
-    ShowWindow::CreateAccessible (void)
+	::com::sun::star::accessibility::XAccessible>
+	ShowWindow::CreateAccessible (void)
 {
 	::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > xAcc = GetAccessible(sal_False);
 	if (xAcc.get())
 	{
 		return xAcc;
 	}
-    if (mpViewShell != NULL)
+	if (mpViewShell != NULL)
 	{
 		xAcc = mpViewShell->CreateAccessibleDocumentView (this);
 		SetAccessible(xAcc);
 		return xAcc;
 	}
-    else
-    {
-        OSL_TRACE ("::sd::Window::CreateAccessible: no view shell");
+	else
+	{
+		OSL_TRACE ("::sd::Window::CreateAccessible: no view shell");
 	return ::Window::CreateAccessible ();
-    }
+	}
 }
 } // end of namespace sd
+
+/* vim: set noet sw=4 ts=4: */
