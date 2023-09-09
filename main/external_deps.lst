@@ -132,6 +132,12 @@ if (SOLAR_JAVA==TRUE && (ENABLE_MEDIAWIKI==YES || ENABLE_REPORTBUILDER==YES))
     URL1 = https://archive.apache.org/dist/commons/logging/source/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
+if (SYSTEM_LIBPNG != YES)
+    MD5 = 3ca98347a5541a2dad55cd6d07ee60a9
+    name = libpng-1.5.26.tar.gz
+    URL1 = https://sourceforge.net/projects/libpng/files/libpng15/older-releases/1.5.26/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
 if (SYSTEM_JPEG != YES)
     MD5 = 52654eb3b2e60c35731ea8fc87f1bd29
     name = jpeg-8d.tar.gz
