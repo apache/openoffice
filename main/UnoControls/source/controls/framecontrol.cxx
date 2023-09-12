@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 
 
@@ -89,13 +88,13 @@ Any SAL_CALL FrameControl::queryInterface( const Type& rType ) throw( RuntimeExc
 	Reference< XInterface > xDel = BaseControl::impl_getDelegator();
 	if ( xDel.is() )
 	{
-		// If an delegator exist, forward question to his queryInterface.
+		// If a delegator exists, forward question to his queryInterface.
 		// Delegator will ask his own queryAggregation!
 		aReturn = xDel->queryInterface( rType );
 	}
 	else
 	{
-		// If an delegator unknown, forward question to own queryAggregation.
+		// If a delegator unknown, forward question to own queryAggregation.
 		aReturn = queryAggregation( rType );
 	}
 
@@ -149,8 +148,8 @@ Sequence< Type > SAL_CALL FrameControl::getTypes() throw( RuntimeException )
 		{
 			// Create a static typecollection ...
 			static OTypeCollection aTypeCollection	(	::getCppuType(( const Reference< XControlModel				>*)NULL )	,
-												  		::getCppuType(( const Reference< XControlContainer			>*)NULL )	,
-												  		::getCppuType(( const Reference< XConnectionPointContainer	>*)NULL )	,
+														::getCppuType(( const Reference< XControlContainer			>*)NULL )	,
+														::getCppuType(( const Reference< XConnectionPointContainer	>*)NULL )	,
 														BaseControl::getTypes()
 													);
 			// ... and set his address to static pointer!
@@ -170,8 +169,8 @@ Any SAL_CALL FrameControl::queryAggregation( const Type& aType ) throw( RuntimeE
 	// Ask for my own supported interfaces ...
 	// Attention: XTypeProvider and XInterface are supported by OComponentHelper!
 	Any aReturn	( ::cppu::queryInterface(	aType												,
-									   		static_cast< XControlModel*				> ( this )	,
-									   		static_cast< XConnectionPointContainer*	> ( this )
+									 		static_cast< XControlModel*				> ( this )	,
+									 		static_cast< XConnectionPointContainer*	> ( this )
 										)
 				);
 
@@ -232,8 +231,8 @@ Reference< XControlModel > SAL_CALL FrameControl::getModel() throw( RuntimeExcep
 
 void SAL_CALL FrameControl::dispose() throw( RuntimeException )
 {
-    impl_deleteFrame();
-    BaseControl::dispose();
+	impl_deleteFrame();
+	BaseControl::dispose();
 }
 
 //____________________________________________________________________________________________________________
@@ -252,7 +251,7 @@ sal_Bool SAL_CALL FrameControl::setGraphics( const Reference< XGraphics >& /*xDe
 
 Reference< XGraphics > SAL_CALL FrameControl::getGraphics() throw( RuntimeException )
 {
-	// when its not posible to set graphics ! then its possible to return null
+	// when it's not possible to set graphics ! then it's possible to return null
 	return Reference< XGraphics >();
 }
 
@@ -305,9 +304,9 @@ void SAL_CALL FrameControl::unadvise(	const	Type&						aType		,
 const Sequence< OUString > FrameControl::impl_getStaticSupportedServiceNames()
 {
 	MutexGuard aGuard( Mutex::getGlobalMutex() );
-    Sequence< OUString > seqServiceNames( 1 );
-    seqServiceNames.getArray() [0] = OUString::createFromAscii( SERVICENAME_FRAMECONTROL );
-    return seqServiceNames ;
+	Sequence< OUString > seqServiceNames( 1 );
+	seqServiceNames.getArray() [0] = OUString::createFromAscii( SERVICENAME_FRAMECONTROL );
+	return seqServiceNames ;
 }
 
 //____________________________________________________________________________________________________________
@@ -356,7 +355,7 @@ sal_Bool FrameControl::convertFastPropertyValue(		Any&		rConvertedValue	,
 
 void FrameControl::setFastPropertyValue_NoBroadcast(			sal_Int32	nHandle	,
 														const	Any&		rValue	)
-                                                        throw ( ::com::sun::star::uno::Exception )
+														throw ( ::com::sun::star::uno::Exception )
 {
 	// this method only set the value
 	MutexGuard	aGuard (m_aMutex) ;
@@ -394,9 +393,9 @@ void FrameControl::getFastPropertyValue(	Any&		rRet	,
 													break ;
 
 		case PROPERTYHANDLE_FRAME			:		rRet <<= m_xFrame ;
-							   						break ;
+							 						break ;
 
-		default	:			                        VOS_ENSHURE ( nHandle == -1, ERRORTEXT_VOSENSHURE ) ;
+		default	:									VOS_ENSHURE ( nHandle == -1, ERRORTEXT_VOSENSHURE ) ;
 	}
 }
 
@@ -561,14 +560,14 @@ void FrameControl::impl_deleteFrame()
 	Reference< XFrame >  xNullFrame;
 
 	{
-        // do not dispose the frame in this guarded section (deadlock?)
-        MutexGuard aGuard( m_aMutex );
-        xOldFrame = m_xFrame;
-        m_xFrame = Reference< XFrame > ();
+		// do not dispose the frame in this guarded section (deadlock?)
+		MutexGuard aGuard( m_aMutex );
+		xOldFrame = m_xFrame;
+		m_xFrame = Reference< XFrame > ();
 	}
 
 	// notify the listeners
-    sal_Int32 nFrameId = PROPERTYHANDLE_FRAME;
+	sal_Int32 nFrameId = PROPERTYHANDLE_FRAME;
 	Any aNewFrame( &xNullFrame, ::getCppuType((const Reference< XFrame >*)0) );
 	Any aOldFrame( &xOldFrame, ::getCppuType((const Reference< XFrame >*)0) );
 	fire( &nFrameId, &aNewFrame, &aOldFrame, 1, sal_False );
@@ -598,3 +597,5 @@ const Sequence< Property > FrameControl::impl_getStaticPropertyDescriptor()
 }
 
 }	// namespace unocontrols
+
+/* vim: set noet sw=4 ts=4: */
