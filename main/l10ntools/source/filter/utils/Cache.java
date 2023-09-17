@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package com.sun.star.filter.config.tools.utils;
@@ -33,7 +34,7 @@ import java.io.*;
 /**
  *  It implements a container for all possible entries which are part of the type
  *  and filter mechanism of an office - means all items of the configuration file
- *  "TypeDetection". How these entries will be readed or written can be switch
+ *  "TypeDetection". How these entries will be read or written can be switch
  *  in different modes. That would make it possible to edit an xml directly or
  *  to contact a running office instance.
  *
@@ -123,19 +124,19 @@ public class Cache
     private static final java.lang.String FILTERSERVICE_NATIVEWARPPER = "com.sun.star.filter.NativeFilterWrapper";
     private static final java.lang.String GENERIC_DETECTSERVICE = "com.sun.star.comp.office.FrameLoader";
 
-    /** its the name of the cfg set, which contains all types. */
+    /** it's the name of the cfg set, which contains all types. */
     private static final java.lang.String CFGNODE_TYPES = "Types";
 
-    /** its the name of the cfg set, which contains all filters. */
+    /** it's the name of the cfg set, which contains all filters. */
     private static final java.lang.String CFGNODE_FILTERS = "Filters";
 
-    /** its the name of the cfg set, which contains all detect services. */
+    /** it's the name of the cfg set, which contains all detect services. */
     private static final java.lang.String CFGNODE_DETECTSERVICES = "DetectServices";
 
-    /** its the name of the cfg set, which contains all frame loaders. */
+    /** it's the name of the cfg set, which contains all frame loaders. */
     private static final java.lang.String CFGNODE_FRAMELOADERS = "FrameLoaders";
 
-    /** its the name of the cfg set, which contains all content handlers. */
+    /** it's the name of the cfg set, which contains all content handlers. */
     private static final java.lang.String CFGNODE_CONTENTHANDLERS = "ContentHandlers";
 
     // names for filter flags
@@ -231,7 +232,7 @@ public class Cache
     private int m_nTypesForFrameLoaders;
     private int m_nTypesForContentHandlers;
 
-    /** can be used to log different informations. */
+    /** can be used to log different information. */
     private Logger m_aDebug;
 
     //___________________________________________
@@ -352,8 +353,8 @@ public class Cache
         // parse it
         javax.xml.parsers.DocumentBuilderFactory aFactory = javax.xml.parsers.DocumentBuilderFactory.newInstance();
         /* Attention:
-         *  This call is important. It force right handling of entities during parsing and(!)
-         *  writing. It let all possible signs for entities or it's quoted representations
+         *  This call is important. It forces right handling of entities during parsing and(!)
+         *  writing. It let all possible signs for entities or its quoted representations
          *  untouched. So this class don't change the original signs of the original file.
          *  Means:
          *      <ul>
@@ -366,7 +367,7 @@ public class Cache
          *          <li>...</li>
          *      </ul>
          */
-         
+
         System.out.println("TODO: must be adapted to java 1.3 :-(");
         System.exit(-1);
 //TODO_JAVA        aFactory.setExpandEntityReferences(false);
@@ -480,7 +481,7 @@ public class Cache
 
     //___________________________________________
 
-    /** create some hml views of the current content of this cache.
+    /** create some html views of the current content of this cache.
      *
      *  The given directory is used to create different html files
      *  there. Every of them show another aspect of this cache.
@@ -1042,15 +1043,15 @@ public class Cache
                 aResultMap.put(PROPNAME_UINAME, aMap.get(PROPNAME_UINAME));
 
                 // generate new property "UIOrder"
-                // Its the moved property "Order" of filters for versions >= 6.y!
+                // It's the moved property "Order" of filters for versions >= 6.y!
                 aResultMap.put(PROPNAME_UIORDER, new java.lang.Integer(0));
 
                 // generate new property "PreferredFilter"
-                // Its a the moved filter flag "Preferred" for versions >= 6.y!
+                // It's a the moved filter flag "Preferred" for versions >= 6.y!
                 aResultMap.put(PROPNAME_PREFERREDFILTER, new java.lang.String());
 
                 // generate new property "DetectService"
-                // Every type know its detector diretcly from now. No search
+                // Every type knows its detector directly from now. No search
                 // will be necessary any longer.
                 aResultMap.put(PROPNAME_DETECTSERVICE, new java.lang.String());
 
@@ -1075,7 +1076,7 @@ public class Cache
                             break;
                         case 2 :
                         {
-                            /*HACK ersetze %20 mit " " ...*/
+                            /*HACK replace %20 with " " ...*/
                             int ni = sToken.indexOf("%20");
                             if (ni!=-1)
                             {
@@ -1210,11 +1211,11 @@ public class Cache
                     ++t;
                 }
 
-                // its an optional property :-)
+                // it's an optional property :-)
                 if (!aResultMap.containsKey(PROPNAME_TEMPLATENAME))
                     aResultMap.put(PROPNAME_TEMPLATENAME, new java.lang.String(""));
 
-                // its an optional property :-)
+                // it's an optional property :-)
                 if (!aResultMap.containsKey(PROPNAME_UICOMPONENT))
                     aResultMap.put(PROPNAME_UICOMPONENT, new java.lang.String(""));
             }
@@ -1550,7 +1551,7 @@ public class Cache
     //___________________________________________
 
     /** get a list of all item names of the specified
-     *  sub coontainer, where items match to given property set.
+     *  sub container, where items match to given property set.
      *
      *  Note: The given property set must exist at all
      *  returned items as minimum and every checked property
@@ -1747,7 +1748,7 @@ public class Cache
     /** split the given string (using the specified delimiter)
      *  and return alist of found string tokens.
      *
-     *  Note: Against the normal behaviour of the StringTokenizer class
+     *  Note: Against the normal behavior of the StringTokenizer class
      *  this method returns empty tokens too.
      *  E.g: "0,,1" will return "0" - "" - "1"
      *
@@ -1755,7 +1756,7 @@ public class Cache
      *          the string value, which should be analyzed.
      *
      *  @param  sDelim
-     *          the delimiter, which will be used to differe between tokens.
+     *          the delimiter, which will be used to differ between tokens.
      *
      *  @return [java.util.Vector]
      *          a list of string tokens. Can be empty - but not null!
@@ -1903,14 +1904,14 @@ public class Cache
      *
      *  It checks if all made registrations are valid;
      *  try to repair some simple problems;
-     *  create missing informations on demand ...
+     *  create missing information on demand ...
      *
      *  @param  nFormat
      *          specify, which configuration format
      *          must be checked.
      *
      *  @throws [java.lang.Exception]
-     *          if an unrecoverable problem occure.
+     *          if an unrecoverable problem occurs.
      */
     public synchronized void validate(int nFormat)
         throws java.lang.Exception
@@ -1928,7 +1929,7 @@ public class Cache
      *          must be checked.
      *
      *  @throws [java.lang.Exception]
-     *          if an unrecoverable problem occure.
+     *          if an unrecoverable problem occurs.
      */
     private void validateTypes(int nFormat)
         throws java.lang.Exception
@@ -2012,7 +2013,7 @@ public class Cache
      *          must be checked.
      *
      *  @throws [java.lang.Exception]
-     *          if an unrecoverable problem occure.
+     *          if an unrecoverable problem occurs.
      */
     public synchronized void validateFilters(int nFormat)
         throws java.lang.Exception
@@ -2088,7 +2089,7 @@ public class Cache
                                              boolean bSetDefaultDetector              )
         throws java.lang.Exception
     {
-        // remove some superflous cache entries ...
+        // remove some superfluous cache entries ...
         // everything related to "load macros"
         // Macros should be dispatched instead of loaded!
         if (m_lTypes.containsKey("macro"))
@@ -2112,7 +2113,7 @@ public class Cache
             java.util.HashMap aFilter  = (java.util.HashMap)m_lFilters.get(sFilter);
 
             // remove the "graphic helper filters" used by draw and impress
-            // They dont have any valid document service name set and can't be handled
+            // They don't have any valid document service name set and can't be handled
             // by our generic FrameLoader!
             // They must be moved to her own configuration ...
 
@@ -2132,7 +2133,7 @@ public class Cache
             java.util.HashMap  lFilterUINames = (java.util.HashMap)aFilter.get(PROPNAME_UINAME);
             java.util.HashMap  lTypeUINames   = (java.util.HashMap)aType.get(PROPNAME_UINAME);
             java.util.HashMap  lPatchUINames  = new java.util.HashMap();
-            
+
             java.util.Iterator pUINames = lTypeUINames.keySet().iterator();
             while(pUINames.hasNext())
             {
@@ -2140,7 +2141,7 @@ public class Cache
                 java.lang.String sValue  = (java.lang.String)lTypeUINames.get(sLocale);
                 lPatchUINames.put(sLocale, sValue);
             }
-            
+
             pUINames = lFilterUINames.keySet().iterator();
             while(pUINames.hasNext())
             {
@@ -2149,7 +2150,7 @@ public class Cache
                 lPatchUINames.put(sFilter+":"+sLocale, sValue);
             }
             aType.put(PROPNAME_UINAME, lPatchUINames);
-            
+
             // set generic filter service wrapper for our own native filters!
             // By the way: The format types of such filters can be detected by our
             // generic detector too.
@@ -2172,19 +2173,19 @@ public class Cache
             /* Attention!
              *
              * Don't remove the preferred flag from any filter! ... not here.
-             * Otherwise next loop can't detect ambigous preferred registrations!
+             * Otherwise next loop can't detect ambiguous preferred registrations!
              * Add filter to a temp. list, which can be used later to remove the preferred
              * flag ...
              */
 
             int     flags1     = ((java.lang.Integer)aFilter.get(PROPNAME_FLAGS)).intValue();
             java.lang.String sDocSrv = (java.lang.String)aFilter.get(PROPNAME_DOCUMENTSERVICE);
-            if (sDocSrv.length()>0)// without a doc service its not a real filter - its a graphic filter!
-            {    
+            if (sDocSrv.length()>0)// without a doc service it's not a real filter - it's a graphic filter!
+            {
                 boolean preferred1 = ((flags1 & FLAGVAL_PREFERRED) == FLAGVAL_PREFERRED);
                 if (preferred1)
                     lPreferredFilters.add(aFilter);
-    
+
                 java.lang.String sAlreadyRegisteredFilter = (java.lang.String)aType.get(PROPNAME_PREFERREDFILTER);
                 // no registration => set this filter as "any possible one"!
                 if (sAlreadyRegisteredFilter.length() < 1)
@@ -2194,7 +2195,7 @@ public class Cache
                     java.util.HashMap aAlreadyRegisteredFilter = (java.util.HashMap)m_lFilters.get(sAlreadyRegisteredFilter);
                     int               flags2                   = ((java.lang.Integer)aAlreadyRegisteredFilter.get(PROPNAME_FLAGS)).intValue();
                     boolean           preferred2               = ((flags2 & FLAGVAL_PREFERRED) == FLAGVAL_PREFERRED);
-    
+
                     // two preferred filters for the same type! => error
                     if (preferred1 && preferred2)
                     {
@@ -2211,7 +2212,7 @@ public class Cache
                         aType.put(PROPNAME_PREFERREDFILTER, sFilter);
                 }
             }
-            
+
             // create the new combined filter flag if required
             if (bCreateCombineFilterFlag)
             {
@@ -2240,7 +2241,7 @@ public class Cache
                 aFilter.put(PROPNAME_FLAGS, new java.lang.Integer(flags1));
             }
 
-            // if its a filter with an UI order ...
+            // if it's a filter with an UI order ...
             // move this information to the registered type.
             // Note: Because more then one filter can be registered for the same type.
             // Handle it as an error ... till we find a better transformation!
@@ -2278,15 +2279,15 @@ public class Cache
             }
         }
 
-        // NOW ... remove all "no real filters" like the graphich helper filters of
-        // draw and impress!
+        // NOW ... remove all "no real filters" like the graphic helper filters of
+        // Draw and Impress!
         aIt2 = lNoRealFilters.elements();
         while (aIt2.hasMoreElements())
             m_lFilters.remove(aIt2.nextElement());
 
         // step over all detect services and move this information directly to
         // the corresponding types
-        // Overwrite possibel default registrations with a real existing one!
+        // Overwrite possible default registrations with a real existing one!
         aIt1 = m_lDetectServices.keySet().iterator();
         while(aIt1.hasNext())
         {
@@ -2309,7 +2310,7 @@ public class Cache
                 if (aAlreadyRegisteredDetector != null && ((java.lang.String)aAlreadyRegisteredDetector).length() > 0)
                 {
                     java.lang.StringBuffer sMsg = new java.lang.StringBuffer(256);
-                    sMsg.append("type \""+sTypeReg+"\" has ambigous registrations of a detect service\n");
+                    sMsg.append("type \""+sTypeReg+"\" has ambiguous registrations of a detect service\n");
                     sMsg.append("\tdetect service[1] = \""+(java.lang.String)aAlreadyRegisteredDetector+"\"\n");
                     sMsg.append("\tdetect service[2] = \""+sDetector+"\"\n");
                     m_aDebug.setWarning(sMsg.toString());
@@ -2325,7 +2326,7 @@ public class Cache
 
         // step over all frame loader and move this information directly to
         // the corresponding types
-        // Overwrite possibel default registrations with a real existing one!
+        // Overwrite possible default registrations with a real existing one!
         aIt1 = m_lFrameLoaders.keySet().iterator();
         while(aIt1.hasNext())
         {
@@ -2341,7 +2342,7 @@ public class Cache
                 if (sAlreadyRegisteredLoader != null && sAlreadyRegisteredLoader.length() > 0)
                 {
                     java.lang.StringBuffer sMsg = new java.lang.StringBuffer(256);
-                    sMsg.append("type \""+sTypeReg+"\" has ambigous registrations of a frame loader\n");
+                    sMsg.append("type \""+sTypeReg+"\" has ambiguous registrations of a frame loader\n");
                     sMsg.append("\tframe loader[1] = \""+sAlreadyRegisteredLoader+"\"\n");
                     sMsg.append("\tframe loader[2] = \""+sLoader+"\"\n");
                     m_aDebug.setWarning(sMsg.toString());
@@ -2355,7 +2356,7 @@ public class Cache
 
         // step over all content handler and move this information directly to
         // the corresponding types
-        // Overwrite possibel default registrations with a real existing one!
+        // Overwrite possible default registrations with a real existing one!
         aIt1 = m_lContentHandlers.keySet().iterator();
         while(aIt1.hasNext())
         {
@@ -2371,7 +2372,7 @@ public class Cache
                 if (sAlreadyRegisteredHandler != null && sAlreadyRegisteredHandler.length() > 0)
                 {
                     java.lang.StringBuffer sMsg = new java.lang.StringBuffer(256);
-                    sMsg.append("type \""+sTypeReg+"\" has ambigous registrations of a content handler\n");
+                    sMsg.append("type \""+sTypeReg+"\" has ambiguous registrations of a content handler\n");
                     sMsg.append("\tcontent handler[1] = \""+sAlreadyRegisteredHandler+"\"\n");
                     sMsg.append("\tcontent handler[2] = \""+sHandler+"\"\n");
                     m_aDebug.setWarning(sMsg.toString());
