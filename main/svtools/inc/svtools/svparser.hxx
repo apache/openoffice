@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #ifndef _SVPARSER_HXX
 #define _SVPARSER_HXX
@@ -53,34 +51,34 @@ class SVT_DLLPUBLIC SvParser : public SvRefBase
 
 protected:
 	SvStream&		rInput;
-	String 	  		aToken;				// gescanntes Token
-	sal_uLong	  		nlLineNr;			// akt. Zeilen Nummer
-	sal_uLong	  		nlLinePos;			// akt. Spalten Nummer
+	String			aToken;				// gescanntes Token
+	sal_uLong			nlLineNr;			// akt. Zeilen Nummer
+	sal_uLong			nlLinePos;			// akt. Spalten Nummer
 
 	SvParser_Impl	*pImplData;			// interne Daten
-	long           	nTokenValue;		// zusaetzlicher Wert (RTF)
-	sal_Bool            bTokenHasValue;     // indicates whether nTokenValue is valid
+	long			nTokenValue;		// zusaetzlicher Wert (RTF)
+	sal_Bool			bTokenHasValue;	// indicates whether nTokenValue is valid
 	SvParserState	eState;				// Status auch in abgl. Klassen
 
 	rtl_TextEncoding	eSrcEnc;		// Source encoding
 
-    sal_uLong nNextChPos;
-	sal_Unicode	nNextCh;    		    // Akt. Zeichen fuer die "lex"
+	sal_uLong nNextChPos;
+	sal_Unicode	nNextCh;				// Akt. Zeichen fuer die "lex"
 
 
 	sal_Bool			bDownloadingFile : 1;// sal_True: Es wird gerade ein externes
 										//		 File geladen. d.h. alle
 										// 		 DataAvailable Links muessen
 										//		 ignoriert werden.
-										// Wenn keibes der folgenden
+										// Wenn keines der folgenden
 										// Flags gesetzt ist, wird der
 										// Stream als ANSI gelesen,
 										// aber als CharSet DONTKNOW
 										// zurueckgegeben.
-	sal_Bool			bUCS2BSrcEnc : 1;	// oder als big-endian UCS2
-	sal_Bool			bSwitchToUCS2 : 1;	// Umschalten des ist erlaubt
+	sal_Bool			bUCS2BSrcEnc : 1; // oder als big-endian UCS2
+	sal_Bool			bSwitchToUCS2 : 1; // Umschalten ist erlaubt
 
-	sal_Bool			bRTF_InTextRead : 1;  // only for RTF-Parser!!!
+	sal_Bool			bRTF_InTextRead : 1; // only for RTF-Parser!!!
 
 	struct TokenStackType
 	{
@@ -133,7 +131,7 @@ public:
 	inline sal_uLong	SetLinePos( sal_uLong nlPos );			// inline unten
 
 	sal_Unicode	GetNextChar();
-    void RereadLookahead();
+	void RereadLookahead();
 
 	inline int 	IsParserWorking() const	{ return SVPAR_WORKING == eState; }
 
@@ -201,9 +199,7 @@ inline sal_uInt16 SvParser::GetCharSize() const
 
 
 /*========================================================================
- *
  * SvKeyValue.
- *
  *======================================================================*/
 
 SV_DECL_REF(SvKeyValueIterator)
@@ -248,34 +244,32 @@ public:
 };
 
 /*========================================================================
- *
  * SvKeyValueIterator.
- *
  *======================================================================*/
 class SvKeyValueList_Impl;
 class SVT_DLLPUBLIC SvKeyValueIterator : public SvRefBase,
-    private boost::noncopyable
+	private boost::noncopyable
 {
-    /** Representation.
-    */
-    SvKeyValueList_Impl* m_pList;
-    sal_uInt16               m_nPos;
+	/** Representation.
+	*/
+	SvKeyValueList_Impl* m_pList;
+	sal_uInt16               m_nPos;
 
 public:
-    /** Construction/Destruction.
-    */
-    SvKeyValueIterator (void);
-    virtual ~SvKeyValueIterator (void);
+	/** Construction/Destruction.
+	*/
+	SvKeyValueIterator (void);
+	virtual ~SvKeyValueIterator (void);
 
-    /** Operation.
-    */
-    virtual sal_Bool GetFirst (SvKeyValue &rKeyVal);
-    virtual sal_Bool GetNext  (SvKeyValue &rKeyVal);
-    virtual void Append   (const SvKeyValue &rKeyVal);
+	/** Operation.
+	*/
+	virtual sal_Bool GetFirst (SvKeyValue &rKeyVal);
+	virtual sal_Bool GetNext  (SvKeyValue &rKeyVal);
+	virtual void Append   (const SvKeyValue &rKeyVal);
 };
 
 SV_IMPL_REF(SvKeyValueIterator);
 
 #endif //_SVPARSER_HXX
 
-/* vi:set tabstop=4 shiftwidth=4 expandtab: */
+/* vim: set noet sw=4 ts=4: */
