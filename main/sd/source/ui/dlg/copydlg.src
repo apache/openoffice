@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ ModalDialog DLG_COPY
 	};
 	NumericField NUM_FLD_COPIES
 	{
-		HelpID = "sd:NumericField:DLG_COPY:NUM_FLD_COPIES";
+		HelpID = "sd:NumericField:DLG_COPY:NUM_FLD_COPIES" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 76, 7 ) ;
 		Size = MAP_APPFONT ( 35, 12 ) ;
@@ -77,7 +77,7 @@ ModalDialog DLG_COPY
 	};
 	ImageButton BTN_SET_VIEWDATA
 	{
-		HelpID = "sd:ImageButton:DLG_COPY:BTN_SET_VIEWDATA";
+		HelpID = "sd:ImageButton:DLG_COPY:BTN_SET_VIEWDATA" ;
 		Pos = MAP_APPFONT ( 122, 6 ) ;
 		Size = MAP_APPFONT ( 14, 14 ) ;
 		ButtonImage = Image
@@ -89,15 +89,15 @@ ModalDialog DLG_COPY
 	};
 	PushButton BTN_SET_DEFAULT
 	{
-		HelpID = "sd:PushButton:DLG_COPY:BTN_SET_DEFAULT";
+		HelpID = "sd:PushButton:DLG_COPY:BTN_SET_DEFAULT" ;
 		Pos = MAP_APPFONT ( 148, 63 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "~Default";
+		Text [ en-US ] = "~Default" ;
 	};
 	MetricField MTR_FLD_ANGLE
 	{
-		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_ANGLE";
+		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_ANGLE" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 76, 69 ) ;
 		Size = MAP_APPFONT ( 45, 12 ) ;
@@ -125,7 +125,7 @@ ModalDialog DLG_COPY
 	};
 	MetricField MTR_FLD_MOVE_X
 	{
-		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_MOVE_X";
+		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_MOVE_X" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 76, 37 ) ;
 		Size = MAP_APPFONT ( 45, 12 ) ;
@@ -143,7 +143,7 @@ ModalDialog DLG_COPY
 	};
 	MetricField MTR_FLD_MOVE_Y
 	{
-		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_MOVE_Y";
+		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_MOVE_Y" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 76, 53 ) ;
 		Size = MAP_APPFONT ( 45, 12 ) ;
@@ -161,7 +161,7 @@ ModalDialog DLG_COPY
 	};
 	MetricField MTR_FLD_WIDTH
 	{
-		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_WIDTH";
+		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_WIDTH" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 76, 98 ) ;
 		Size = MAP_APPFONT ( 45, 12 ) ;
@@ -179,7 +179,7 @@ ModalDialog DLG_COPY
 	};
 	MetricField MTR_FLD_HEIGHT
 	{
-		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_HEIGHT";
+		HelpID = "sd:MetricField:DLG_COPY:MTR_FLD_HEIGHT" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 76, 114 ) ;
 		Size = MAP_APPFONT ( 45, 12 ) ;
@@ -233,7 +233,7 @@ ModalDialog DLG_COPY
 	};
 	ListBox LB_START_COLOR
 	{
-		HelpID = "sd:ListBox:DLG_COPY:LB_START_COLOR";
+		HelpID = "sd:ListBox:DLG_COPY:LB_START_COLOR" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 76, 143 ) ;
 		Size = MAP_APPFONT ( 60, 90 ) ;
@@ -249,7 +249,7 @@ ModalDialog DLG_COPY
 	};
 	ListBox LB_END_COLOR
 	{
-		HelpID = "sd:ListBox:DLG_COPY:LB_END_COLOR";
+		HelpID = "sd:ListBox:DLG_COPY:LB_END_COLOR" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 76, 159 ) ;
 		Size = MAP_APPFONT ( 60, 90 ) ;
@@ -264,3 +264,5 @@ ModalDialog DLG_COPY
 		Text [ en-US ] = "~End" ;
 	};
 };
+
+// ******************************************************************* EOF

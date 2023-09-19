@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -139,13 +139,13 @@ sal_Bool Bitmap::ImplConvolute3( const long* pMatrix, long nDivisor,
 			// create column LUT
 			for( i = 0; i < nWidth2; i++ )
 				pColm[ i ] = ( i > 0 ) ? ( i - 1 ) : 0;
-			
+
 			pColm[ nWidth + 1 ] = pColm[ nWidth ];
 
 			// create row LUT
 			for( i = 0; i < nHeight2; i++ )
 				pRows[ i ] = ( i > 0 ) ? ( i - 1 ) : 0;
-			
+
 			pRows[ nHeight + 1 ] = pRows[ nHeight ];
 
 			// read first three rows of bitmap color
@@ -282,24 +282,24 @@ sal_Bool Bitmap::ImplMedianFilter( const BmpFilterParam* /*pFilterParam*/, const
 			// create column LUT
 			for( i = 0; i < nWidth2; i++ )
 				pColm[ i ] = ( i > 0 ) ? ( i - 1 ) : 0;
-			
+
 			pColm[ nWidth + 1 ] = pColm[ nWidth ];
 
 			// create row LUT
 			for( i = 0; i < nHeight2; i++ )
 				pRows[ i ] = ( i > 0 ) ? ( i - 1 ) : 0;
-			
+
 			pRows[ nHeight + 1 ] = pRows[ nHeight ];
 
 			// read first three rows of bitmap color
 			if (nHeight2 > 2)
 			{
-			    for( i = 0; i < nWidth2; i++ )
-			    {
-				    pColRow1[ i ] = pReadAcc->GetColor( pRows[ 0 ], pColm[ i ] );
-				    pColRow2[ i ] = pReadAcc->GetColor( pRows[ 1 ], pColm[ i ] );
-				    pColRow3[ i ] = pReadAcc->GetColor( pRows[ 2 ], pColm[ i ] );
-			    }
+				for( i = 0; i < nWidth2; i++ )
+				{
+					pColRow1[ i ] = pReadAcc->GetColor( pRows[ 0 ], pColm[ i ] );
+					pColRow2[ i ] = pReadAcc->GetColor( pRows[ 1 ], pColm[ i ] );
+					pColRow3[ i ] = pReadAcc->GetColor( pRows[ 2 ], pColm[ i ] );
+				}
 			}
 
 			// do median filtering
@@ -310,7 +310,7 @@ sal_Bool Bitmap::ImplMedianFilter( const BmpFilterParam* /*pFilterParam*/, const
 					nR1 = ( pColor = pRowTmp1 + nX )->GetRed(), nG1 = pColor->GetGreen(), nB1 = pColor->GetBlue();
 					nR2 = ( ++pColor )->GetRed(), nG2 = pColor->GetGreen(), nB2 = pColor->GetBlue();
 					nR3 = ( ++pColor )->GetRed(), nG3 = pColor->GetGreen(), nB3 = pColor->GetBlue();
-					
+
 					nR4 = ( pColor = pRowTmp2 + nX )->GetRed(), nG4 = pColor->GetGreen(), nB4 = pColor->GetBlue();
 					nR5 = ( ++pColor )->GetRed(), nG5 = pColor->GetGreen(), nB5 = pColor->GetBlue();
 					nR6 = ( ++pColor )->GetRed(), nG6 = pColor->GetGreen(), nB6 = pColor->GetBlue();
@@ -318,22 +318,22 @@ sal_Bool Bitmap::ImplMedianFilter( const BmpFilterParam* /*pFilterParam*/, const
 					nR7 = ( pColor = pRowTmp3 + nX )->GetRed(), nG7 = pColor->GetGreen(), nB7 = pColor->GetBlue();
 					nR8 = ( ++pColor )->GetRed(), nG8 = pColor->GetGreen(), nB8 = pColor->GetBlue();
 					nR9 = ( ++pColor )->GetRed(), nG9 = pColor->GetGreen(), nB9 = pColor->GetBlue();
-    				
+
 					MNMX6( nR1, nR2, nR3, nR4, nR5, nR6 );
-    				MNMX5( nR7, nR2, nR3, nR4, nR5 );
-    				MNMX4( nR8, nR2, nR3, nR4 );
-    				MNMX3( nR9, nR2, nR3 );
+					MNMX5( nR7, nR2, nR3, nR4, nR5 );
+					MNMX4( nR8, nR2, nR3, nR4 );
+					MNMX3( nR9, nR2, nR3 );
 
 					MNMX6( nG1, nG2, nG3, nG4, nG5, nG6 );
-    				MNMX5( nG7, nG2, nG3, nG4, nG5 );
-    				MNMX4( nG8, nG2, nG3, nG4 );
-    				MNMX3( nG9, nG2, nG3 );
+					MNMX5( nG7, nG2, nG3, nG4, nG5 );
+					MNMX4( nG8, nG2, nG3, nG4 );
+					MNMX3( nG9, nG2, nG3 );
 
 					MNMX6( nB1, nB2, nB3, nB4, nB5, nB6 );
-    				MNMX5( nB7, nB2, nB3, nB4, nB5 );
-    				MNMX4( nB8, nB2, nB3, nB4 );
-    				MNMX3( nB9, nB2, nB3 );
-    				
+					MNMX5( nB7, nB2, nB3, nB4, nB5 );
+					MNMX4( nB8, nB2, nB3, nB4 );
+					MNMX3( nB9, nB2, nB3 );
+
 					// set destination color
 					pWriteAcc->SetPixel( nY, nX, BitmapColor( (sal_uInt8) nR2, (sal_uInt8) nG2, (sal_uInt8) nB2 ) );
 				}
@@ -391,7 +391,7 @@ sal_Bool Bitmap::ImplSobelGrey( const BmpFilterParam* /*pFilterParam*/, const Li
 		bRet = sal_False;
 
 		BitmapReadAccess* pReadAcc = AcquireReadAccess();
-		
+
 		if( pReadAcc )
 		{
 			Bitmap				aNewBmp( GetSizePixel(), 8, &pReadAcc->GetPalette() );
@@ -519,7 +519,7 @@ sal_Bool Bitmap::ImplEmbossGrey( const BmpFilterParam* pFilterParam, const Link*
 		bRet = sal_False;
 
 		BitmapReadAccess* pReadAcc = AcquireReadAccess();
-		
+
 		if( pReadAcc )
 		{
 			Bitmap				aNewBmp( GetSizePixel(), 8, &pReadAcc->GetPalette() );
@@ -584,7 +584,7 @@ sal_Bool Bitmap::ImplEmbossGrey( const BmpFilterParam* pFilterParam, const Link*
 							const double fGrey = nDotL / sqrt( (double)(nNx * nNx + nNy * nNy + nZ2) );
 							aGrey.SetIndex( (sal_uInt8) VOS_BOUND( fGrey, 0, 255 ) );
 						}
-						
+
 						pWriteAcc->SetPixel( nY, nX, aGrey );
 
 						if( nX < ( nWidth - 1 ) )
@@ -628,10 +628,10 @@ sal_Bool Bitmap::ImplSolarize( const BmpFilterParam* pFilterParam, const Link* /
 {
 	sal_Bool				bRet = sal_False;
 	BitmapWriteAccess*	pWriteAcc = AcquireWriteAccess();
-		
+
 	if( pWriteAcc )
 	{
-		const sal_uInt8 cThreshold = ( pFilterParam && pFilterParam->meFilter == BMP_FILTER_SOLARIZE ) ? 
+		const sal_uInt8 cThreshold = ( pFilterParam && pFilterParam->meFilter == BMP_FILTER_SOLARIZE ) ?
 								pFilterParam->mcSolarGreyThreshold : 128;
 
 		if( pWriteAcc->HasPalette() )
@@ -658,7 +658,7 @@ sal_Bool Bitmap::ImplSolarize( const BmpFilterParam* pFilterParam, const Link* /
 				for( long nX = 0; nX < nWidth; nX++ )
 				{
 					aCol = pWriteAcc->GetPixel( nY, nX );
-					
+
 					if( aCol.GetLuminance() >= cThreshold )
 						pWriteAcc->SetPixel( nY, nX, aCol.Invert() );
 				}
@@ -678,11 +678,11 @@ sal_Bool Bitmap::ImplSepia( const BmpFilterParam* pFilterParam, const Link* /*pP
 {
 	BitmapReadAccess*	pReadAcc = AcquireReadAccess();
 	sal_Bool				bRet = sal_False;
-		
+
 	if( pReadAcc )
 	{
-		long			nSepiaPercent = ( pFilterParam && pFilterParam->meFilter == BMP_FILTER_SEPIA ) ? 
-									    pFilterParam->mcSolarGreyThreshold : 10;
+		long			nSepiaPercent = ( pFilterParam && pFilterParam->meFilter == BMP_FILTER_SEPIA ) ?
+										  pFilterParam->mcSolarGreyThreshold : 10;
 		const long		nSepia = 10000 - 100 * VOS_BOUND( nSepiaPercent, 0, 100 );
 		BitmapPalette	aSepiaPal( 256 );
 
@@ -763,10 +763,10 @@ sal_Bool Bitmap::ImplSepia( const BmpFilterParam* pFilterParam, const Link* /*pP
 
 sal_Bool Bitmap::ImplMosaic( const BmpFilterParam* pFilterParam, const Link* /*pProgress*/ )
 {
-	sal_uLong				nTileWidth = ( pFilterParam && pFilterParam->meFilter == BMP_FILTER_MOSAIC ) ? 
-								     pFilterParam->maMosaicTileSize.mnTileWidth : 4;
-	sal_uLong				nTileHeight = ( pFilterParam && pFilterParam->meFilter == BMP_FILTER_MOSAIC ) ? 
-									  pFilterParam->maMosaicTileSize.mnTileHeight : 4;
+	sal_uLong				nTileWidth = ( pFilterParam && pFilterParam->meFilter == BMP_FILTER_MOSAIC ) ?
+										   pFilterParam->maMosaicTileSize.mnTileWidth : 4;
+	sal_uLong				nTileHeight = ( pFilterParam && pFilterParam->meFilter == BMP_FILTER_MOSAIC ) ?
+											pFilterParam->maMosaicTileSize.mnTileHeight : 4;
 	sal_Bool				bRet = sal_False;
 
 	if( !nTileWidth )
@@ -792,7 +792,7 @@ sal_Bool Bitmap::ImplMosaic( const BmpFilterParam* pFilterParam, const Link* /*p
 			pReadAcc = AcquireReadAccess();
 			pWriteAcc = pNewBmp->AcquireWriteAccess();
 		}
-			
+
 		if( pReadAcc && pWriteAcc )
 		{
 			BitmapColor	aCol;
@@ -812,7 +812,7 @@ sal_Bool Bitmap::ImplMosaic( const BmpFilterParam* pFilterParam, const Link* /*p
 
 				if( nX2 >= nWidth )
 					nX2 = nWidth - 1;
-				
+
 				fArea_1 = 1.0 / ( ( nX2 - nX1 + 1 ) * ( nY2 - nY1 + 1 ) );
 
 				if( !pNewBmp )
@@ -914,7 +914,7 @@ sal_Bool Bitmap::ImplMosaic( const BmpFilterParam* pFilterParam, const Link* /*p
 	}
 	else
 		bRet = sal_True;
-		
+
 	return bRet;
 }
 
@@ -934,11 +934,11 @@ extern "C" int __LOADONCALLAPI ImplPopArtCmpFnc( const void* p1, const void* p2 
 
 	if( ( (PopArtEntry*) p1 )->mnCount < ( (PopArtEntry*) p2 )->mnCount )
 		nRet = 1;
-	else if( ( (PopArtEntry*) p1 )->mnCount == ( (PopArtEntry*) p2 )->mnCount ) 
+	else if( ( (PopArtEntry*) p1 )->mnCount == ( (PopArtEntry*) p2 )->mnCount )
 		nRet = 0;
 	else
 		nRet = -1;
-	
+
 	return nRet;
 }
 
@@ -976,7 +976,7 @@ sal_Bool Bitmap::ImplPopArt( const BmpFilterParam* /*pFilterParam*/, const Link*
 
 			// sort table
 			qsort( pPopArtTable, nEntryCount, sizeof( PopArtEntry ), ImplPopArtCmpFnc );
-			
+
 			// get last used entry
 			sal_uLong nFirstEntry;
 			sal_uLong nLastEntry = 0;
@@ -989,7 +989,7 @@ sal_Bool Bitmap::ImplPopArt( const BmpFilterParam* /*pFilterParam*/, const Link*
 			const BitmapColor aFirstCol( pWriteAcc->GetPaletteColor( sal::static_int_cast<sal_uInt16>(pPopArtTable[ 0 ].mnIndex) ) );
 			for( nFirstEntry = 0; nFirstEntry < nLastEntry; nFirstEntry++ )
 			{
-				pWriteAcc->SetPaletteColor( sal::static_int_cast<sal_uInt16>(pPopArtTable[ nFirstEntry ].mnIndex), 
+				pWriteAcc->SetPaletteColor( sal::static_int_cast<sal_uInt16>(pPopArtTable[ nFirstEntry ].mnIndex),
 											pWriteAcc->GetPaletteColor( sal::static_int_cast<sal_uInt16>(pPopArtTable[ nFirstEntry + 1 ].mnIndex) ) );
 			}
 			pWriteAcc->SetPaletteColor( sal::static_int_cast<sal_uInt16>(pPopArtTable[ nLastEntry ].mnIndex), aFirstCol );
@@ -1004,5 +1004,4 @@ sal_Bool Bitmap::ImplPopArt( const BmpFilterParam* /*pFilterParam*/, const Link*
 	return bRet;
 }
 
-// -----------------------------------------------------------------------------
-// eof
+/* vim: set noet sw=4 ts=4: */

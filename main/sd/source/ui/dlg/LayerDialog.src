@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 
 DockingWindow FLT_WIN_LAYER_DIALOG
 {
-	HelpID = HID_SD_TABBAR_LAYERS;
+	HelpID = HID_SD_TABBAR_LAYERS ;
 	Border = TRUE ;
 	Hide = TRUE ;
 	SVLook = TRUE ;
@@ -41,15 +41,17 @@ DockingWindow FLT_WIN_LAYER_DIALOG
 	Zoomable = TRUE ;
 	Dockable = TRUE ;
 	EnableResizing = TRUE ;
-	Size = MAP_APPFONT ( WIDTH , TAB_BAR_HEIGHT ) ;
+	Size = MAP_APPFONT ( WIDTH, TAB_BAR_HEIGHT ) ;
 	Window TB_LAYERS
 	{
-		Pos = MAP_APPFONT ( 6 , 6 ) ;
-		Size = MAP_APPFONT ( WIDTH-2*6, TAB_BAR_HEIGHT );
-        HelpId = HID_SD_TABBAR_LAYERS;
-        BORDER = TRUE;
-        SvLook = TRUE;
-        //        Scroll = TRUE ;
-        //        SIZEABLE = TRUE;
+		Pos = MAP_APPFONT ( 6, 6 ) ;
+		Size = MAP_APPFONT ( WIDTH-2*6, TAB_BAR_HEIGHT ) ;
+		HelpId = HID_SD_TABBAR_LAYERS ;
+		BORDER = TRUE ;
+		SvLook = TRUE ;
+		//Scroll = TRUE ;
+		//SIZEABLE = TRUE ;
 	};
 };
+
+// ********************************************************************** EOF

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,32 +26,32 @@
 
 Resource _STR_IMPRESS_PRINT_UI_OPTIONS
 {
-    String _STR_IMPRESS_PRINT_UI_GROUP_NAME
-    {
-        Text [en-US] = "%PRODUCTNAME %s";
-    };
-    String _STR_IMPRESS_PRINT_UI_PRINT_CONTENT
-    {
-        Text [ en-US ] = "Print content";
+	String _STR_IMPRESS_PRINT_UI_GROUP_NAME
+	{
+		Text [en-US] = "%PRODUCTNAME %s" ;
+	};
+	String _STR_IMPRESS_PRINT_UI_PRINT_CONTENT
+	{
+        Text [ en-US ] = "Print content" ;
     };
     String _STR_IMPRESS_PRINT_UI_PRINT_GROUP
     {
-        Text [ en-US ] = "Print";
-    };
-    String _STR_IMPRESS_PRINT_UI_CONTENT
-    {
-        Text [ en-US ] = "Document";
-    };
-    StringArray _STR_IMPRESS_PRINT_UI_CONTENT_CHOICES
-    {
-        ItemList [ en-US ] =
-        {
-			< "Slides" ; > ;
-			< "Handouts" ; > ;
-			< "Notes" ; > ;
-			< "Outline" ; > ;
-		};		
-    };
+        Text [ en-US ] = "Print" ;
+	};
+	String _STR_IMPRESS_PRINT_UI_CONTENT
+	{
+		Text [ en-US ] = "Document" ;
+	};
+	StringArray _STR_IMPRESS_PRINT_UI_CONTENT_CHOICES
+	{
+		ItemList [ en-US ] =
+		{
+			< "Slides" ;	> ;
+			< "Handouts" ;	> ;
+			< "Notes" ;		> ;
+			< "Outline" ;	> ;
+		};
+	};
 	String _STR_IMPRESS_PRINT_UI_SLIDESPERPAGE
 	{
 		Text [ en-US ] = "Slides per page" ;
@@ -60,14 +60,14 @@ Resource _STR_IMPRESS_PRINT_UI_OPTIONS
 	{
 		ItemList [ en-US ] =
 		{
-			< "Default" ; > ;
-			< "1" ; > ;
-			< "2" ; > ;
-			< "3" ; > ;
-			< "4" ; > ;
-			< "6" ; > ;
-			< "9" ; > ;
-		};		
+			< "Default" ;	> ;
+			< "1" ;			> ;
+			< "2" ;			> ;
+			< "3" ;			> ;
+			< "4" ;			> ;
+			< "6" ;			> ;
+			< "9" ;			> ;
+		};
 	};
 	String _STR_IMPRESS_PRINT_UI_ORDER
 	{
@@ -77,122 +77,124 @@ Resource _STR_IMPRESS_PRINT_UI_OPTIONS
 	{
 		ItemList [ en-US ] =
 		{
-			< "Left to right, then down" ; > ;
-			< "Top to bottom, then right" ; > ;
-		};		
+			< "Left to right, then down" ;	> ;
+			< "Top to bottom, then right" ;	> ;
+		};
 	};
     String _STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT
     {
-        Text [ en-US ] = "~Contents";
+        Text [ en-US ] = "~Contents" ;
     };
     String _STR_IMPRESS_PRINT_UI_IS_PRINT_NAME
     {
-        Text [ en-US ] = "~Slide name";
+        Text [ en-US ] = "~Slide name" ;
     };
     String _STR_DRAW_PRINT_UI_IS_PRINT_NAME
     {
-        Text [ en-US ] = "P~age name";
+        Text [ en-US ] = "P~age name" ;
     };
     String _STR_IMPRESS_PRINT_UI_IS_PRINT_DATE
     {
-        Text [ en-US ] = "~Date and time";
+        Text [ en-US ] = "~Date and time" ;
     };
     String _STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN
     {
-        Text [ en-US ] = "Hidden pages";
+        Text [ en-US ] = "Hidden pages" ;
     };
     String _STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP
     {
-        Text [ en-US ] = "Output options";
+        Text [ en-US ] = "Output options" ;
     };
     String _STR_IMPRESS_PRINT_UI_QUALITY
     {
-        Text [ en-US ] = "Color";
+        Text [ en-US ] = "Color" ;
     };
     StringArray _STR_IMPRESS_PRINT_UI_QUALITY_CHOICES
     {
         ItemList [ en-US ] =
         {
-			< "Original colors" ; > ;
-			< "Grayscale" ; > ;
-			< "Black & white" ; > ;
-		};		
+			< "Original colors" ;	> ;
+			< "Grayscale" ;			> ;
+			< "Black & white" ;		> ;
+		};
     };
     String _STR_IMPRESS_PRINT_UI_PAGE_OPTIONS
     {
-        Text [ en-US ] = "~Size";
+        Text [ en-US ] = "~Size" ;
     };
     StringArray _STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES
     {
         ItemList [ en-US ] =
         {
-			< "Original size" ; > ;
-			< "Fit to printable page" ; > ;
-			< "Distribute on multiple sheets of paper" ; > ;
-			< "Tile sheet of paper with repeated slides" ; > ;
-		};		
+			< "Original size" ;								> ;
+			< "Fit to printable page" ;						> ;
+			< "Distribute on multiple sheets of paper" ;	> ;
+			< "Tile sheet of paper with repeated slides" ;	> ;
+		};
     };
     StringArray _STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW
     {
         ItemList [ en-US ] =
         {
-			< "Original size" ; > ;
-			< "Fit to printable page" ; > ;
-			< "Distribute on multiple sheets of paper" ; > ;
-			< "Tile sheet of paper with repeated pages" ; > ;
-		};		
+			< "Original size" ;								> ;
+			< "Fit to printable page" ;						> ;
+			< "Distribute on multiple sheets of paper" ;	> ;
+			< "Tile sheet of paper with repeated pages" ;	> ;
+		};
     };
     String _STR_IMPRESS_PRINT_UI_BROCHURE
     {
-        Text [en-US] = "Brochure";
+        Text [en-US] = "Brochure" ;
     };
     String _STR_IMPRESS_PRINT_UI_PAGE_SIDES
     {
-        Text [ en-US ] = "Page sides";
+        Text [ en-US ] = "Page sides" ;
     };
     String _STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE
     {
-        Text [ en-US ] = "Include";
+        Text [ en-US ] = "Include" ;
     };
     StringArray _STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST
     {
         ItemList [ en-US ] =
         {
-			< "All pages" ; > ;
-			< "Front sides / right pages" ; > ;
-			< "Back sides / left pages" ; > ;
-		};		
-    };
+			< "All pages" ;					> ;
+			< "Front sides / right pages" ;	> ;
+			< "Back sides / left pages" ;	> ;
+		};
+	};
 
-    String _STR_IMPRESS_PRINT_UI_PAPER_TRAY_GROUP
-    {
-        Text [ en-US ] = "Paper tray";
+	String _STR_IMPRESS_PRINT_UI_PAPER_TRAY_GROUP
+	{
+        Text [ en-US ] = "Paper tray" ;
     };
     String _STR_IMPRESS_PRINT_UI_PAPER_TRAY
     {
-        Text [ en-US ] = "~Use only paper tray from printer preferences";
+        Text [ en-US ] = "~Use only paper tray from printer preferences" ;
     };
     String _STR_IMPRESS_PRINT_UI_PAGE_RANGE
     {
-        Text [en-US] = "Print range";
+        Text [en-US] = "Print range" ;
     };
     StringArray _STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE
     {
         ItemList [ en-US ] =
         {
-            < "~All slides"; >;
-            < "~Slides"; >;
-            < "Se~lection"; >;
+            < "~All slides" ;	> ;
+            < "~Slides" ;		> ;
+            < "Se~lection" ;	> ;
         };
-    };
+	};
 
-    StringArray _STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE
-    {
+	StringArray _STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE
+	{
         ItemList [ en-US ] =
         {
-            < "~All pages"; >;
-            < "Pa~ges"; >;
-            < "Se~lection"; >;
-        };
-    };
+            < "~All pages" ;	> ;
+            < "Pa~ges" ;		> ;
+            < "Se~lection" ;	> ;
+		};
+	};
 };
+
+// ********************************************************************** EOF

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ namespace drawinglayer
                         // create tiling matrices
                         ::std::vector< basegfx::B2DHomMatrix > aMatrices;
                         texture::GeoTexSvxTiled aTiling(getReferenceRange());
-                        
+
                         aTiling.appendTransformations(aMatrices);
 
                         // check if content needs to be clipped
@@ -87,11 +87,11 @@ namespace drawinglayer
                                 aContent);
                         }
 
-                        // transform result which is in unit coordinates to mask's object coordiantes
+                        // transform result which is in unit coordinates to mask's object coordinates
                         {
                             const basegfx::B2DHomMatrix aMaskTransform(
                                 basegfx::tools::createScaleTranslateB2DHomMatrix(
-                                    aMaskRange.getRange(), 
+                                    aMaskRange.getRange(),
                                     aMaskRange.getMinimum()));
 
                             const Primitive2DReference xRef(
@@ -155,5 +155,4 @@ namespace drawinglayer
     } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

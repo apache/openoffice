@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,17 +55,17 @@ sal_Bool SAL_CALL IsWin2000( )
 
 	osvi.dwOSVersionInfoSize = sizeof( OSVERSIONINFOEX );
 	bOsVersionInfoEx = GetVersionEx( ( OSVERSIONINFO* )&osvi );
-	if( !bOsVersionInfoEx ) 
+	if( !bOsVersionInfoEx )
 	{
 		// if OSVERSIONINFOEX doesn't work
 		osvi.dwOSVersionInfoSize = sizeof( OSVERSIONINFO );
 		if( !GetVersionEx( ( OSVERSIONINFO* )&osvi ) )
 			return sal_False;
 	}
-	
+
 	if( ( VER_PLATFORM_WIN32_NT == osvi.dwPlatformId ) && ( osvi.dwMajorVersion >= 5 ) )
 		bRet = sal_True;
-	
+
 	return bRet;
 }
 
@@ -75,10 +75,10 @@ sal_Bool SAL_CALL IsWin2000( )
 
 void SAL_CALL ListboxAddString( HWND hwnd, const OUString& aString )
 {
-    LRESULT rc = SendMessageW( 
-        hwnd, CB_ADDSTRING, 0, reinterpret_cast< LPARAM >(aString.getStr( )) );
+	LRESULT rc = SendMessageW(
+		hwnd, CB_ADDSTRING, 0, reinterpret_cast< LPARAM >(aString.getStr( )) );
 
-    OSL_ASSERT( (CB_ERR != rc) && (CB_ERRSPACE != rc) );
+	OSL_ASSERT( (CB_ERR != rc) && (CB_ERRSPACE != rc) );
 }
 
 //------------------------------------------------------------
@@ -87,33 +87,33 @@ void SAL_CALL ListboxAddString( HWND hwnd, const OUString& aString )
 
 OUString SAL_CALL ListboxGetString( HWND hwnd, sal_Int32 aPosition )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
-    
-    OUString aString;
-	
-	LRESULT lItem = 
-        SendMessageW( hwnd, CB_GETLBTEXTLEN, aPosition, 0 );			
+	OSL_ASSERT( IsWindow( hwnd ) );
+
+	OUString aString;
+
+	LRESULT lItem =
+		SendMessageW( hwnd, CB_GETLBTEXTLEN, aPosition, 0 );
 
 	if ( (CB_ERR != lItem) && (lItem > 0) )
 	{
-	    // message returns the len of a combobox item 
+		// message returns the len of a combobox item
 		// without trailing '\0' that's why += 1
 		lItem++;
-            
-        CAutoUnicodeBuffer aBuff( lItem );
 
-		LRESULT lRet = 
-            SendMessageW( 
-                hwnd, CB_GETLBTEXT, aPosition, 
-                reinterpret_cast<LPARAM>(&aBuff) );
+		CAutoUnicodeBuffer aBuff( lItem );
 
-        OSL_ASSERT( lRet != CB_ERR );
+		LRESULT lRet =
+			SendMessageW(
+				hwnd, CB_GETLBTEXT, aPosition,
+				reinterpret_cast<LPARAM>(&aBuff) );
 
-	    if ( CB_ERR != lRet )			
-            aString = OUString( aBuff, lRet );			            
-    } 
+		OSL_ASSERT( lRet != CB_ERR );
 
-    return aString;
+		if ( CB_ERR != lRet )
+			aString = OUString( aBuff, lRet );
+	}
+
+	return aString;
 }
 
 //------------------------------------------------------------
@@ -121,21 +121,21 @@ OUString SAL_CALL ListboxGetString( HWND hwnd, sal_Int32 aPosition )
 //------------------------------------------------------------
 
 void SAL_CALL ListboxAddItem( HWND hwnd, const Any& aItem, const Reference< XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( IllegalArgumentException )
+	throw( IllegalArgumentException )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-    if ( !aItem.hasValue( ) || 
-         aItem.getValueType( ) != getCppuType((OUString*)0) )
-         throw IllegalArgumentException(
-            OUString::createFromAscii( "invalid value type or any has no value" ),
-            rXInterface,
-            aArgPos );
+	if ( !aItem.hasValue( ) ||
+		 aItem.getValueType( ) != getCppuType((OUString*)0) )
+		 throw IllegalArgumentException(
+			OUString::createFromAscii( "invalid value type or any has no value" ),
+			rXInterface,
+			aArgPos );
 
-    OUString cbItem;
-    aItem >>= cbItem;
+	OUString cbItem;
+	aItem >>= cbItem;
 
-    ListboxAddString( hwnd, cbItem );
+	ListboxAddString( hwnd, cbItem );
 }
 
 //------------------------------------------------------------
@@ -143,25 +143,25 @@ void SAL_CALL ListboxAddItem( HWND hwnd, const Any& aItem, const Reference< XInt
 //------------------------------------------------------------
 
 void SAL_CALL ListboxAddItems( HWND hwnd, const Any& aItemList, const Reference< XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( IllegalArgumentException )
+	throw( IllegalArgumentException )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
-    
-    if ( !aItemList.hasValue( ) || 
-         aItemList.getValueType( ) != getCppuType((Sequence<OUString>*)0) )
-         throw IllegalArgumentException(
-            OUString::createFromAscii( "invalid value type or any has no value" ),
-            rXInterface,
-            aArgPos );
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-    Sequence< OUString > aStringList;
-    aItemList >>= aStringList;
+	if ( !aItemList.hasValue( ) ||
+		 aItemList.getValueType( ) != getCppuType((Sequence<OUString>*)0) )
+		 throw IllegalArgumentException(
+			OUString::createFromAscii( "invalid value type or any has no value" ),
+			rXInterface,
+			aArgPos );
 
-    sal_Int32 nItemCount = aStringList.getLength( );
-    for( sal_Int32 i = 0; i < nItemCount; i++ )
-    {
-        ListboxAddString( hwnd, aStringList[i] );
-    }
+	Sequence< OUString > aStringList;
+	aItemList >>= aStringList;
+
+	sal_Int32 nItemCount = aStringList.getLength( );
+	for( sal_Int32 i = 0; i < nItemCount; i++ )
+	{
+		ListboxAddString( hwnd, aStringList[i] );
+	}
 }
 
 //------------------------------------------------------------
@@ -169,31 +169,31 @@ void SAL_CALL ListboxAddItems( HWND hwnd, const Any& aItemList, const Reference<
 //------------------------------------------------------------
 
 void SAL_CALL ListboxDeleteItem( HWND hwnd, const Any& aPosition, const Reference< XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( IllegalArgumentException )
+	throw( IllegalArgumentException )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-    if ( !aPosition.hasValue( ) || 
-         ( (aPosition.getValueType( ) != getCppuType((sal_Int32*)0)) &&
-           (aPosition.getValueType( ) != getCppuType((sal_Int16*)0)) &&
-           (aPosition.getValueType( ) != getCppuType((sal_Int8*)0)) ) )
-         throw IllegalArgumentException(
-            OUString::createFromAscii( "invalid value type or any has no value" ),
-            rXInterface,
-            aArgPos );
+	if ( !aPosition.hasValue( ) ||
+		 ( (aPosition.getValueType( ) != getCppuType((sal_Int32*)0)) &&
+		   (aPosition.getValueType( ) != getCppuType((sal_Int16*)0)) &&
+		   (aPosition.getValueType( ) != getCppuType((sal_Int8*)0)) ) )
+		 throw IllegalArgumentException(
+			OUString::createFromAscii( "invalid value type or any has no value" ),
+			rXInterface,
+			aArgPos );
 
-    sal_Int32 nPos;
-    aPosition >>= nPos;
+	sal_Int32 nPos;
+	aPosition >>= nPos;
 
-    LRESULT lRet = SendMessage( hwnd, CB_DELETESTRING, nPos, 0 );
+	LRESULT lRet = SendMessage( hwnd, CB_DELETESTRING, nPos, 0 );
 
-    // if the return value is CB_ERR the given
-    // index was not correct
-    if ( CB_ERR == lRet )
-        throw IllegalArgumentException(
-            OUString::createFromAscii( "inavlid item position" ),
-            rXInterface,
-            aArgPos );
+	// if the return value is CB_ERR the given
+	// index was not correct
+	if ( CB_ERR == lRet )
+		throw IllegalArgumentException(
+			OUString::createFromAscii( "invalid item position" ),
+			rXInterface,
+			aArgPos );
 }
 
 //------------------------------------------------------------
@@ -201,19 +201,19 @@ void SAL_CALL ListboxDeleteItem( HWND hwnd, const Any& aPosition, const Referenc
 //------------------------------------------------------------
 
 void SAL_CALL ListboxDeleteItems( HWND hwnd, const Any& /*unused*/, const Reference< XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( IllegalArgumentException )
+	throw( IllegalArgumentException )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-    LRESULT lRet = 0;
+	LRESULT lRet = 0;
 
-    do
-    {
-        // the return value on success is the number 
-        // of remaining elements in the listbox 
-        lRet = SendMessageW( hwnd, CB_DELETESTRING, 0, 0 );
-    }
-    while ( (lRet != CB_ERR) && (lRet > 0) );  
+	do
+	{
+		// the return value on success is the number
+		// of remaining elements in the listbox
+		lRet = SendMessageW( hwnd, CB_DELETESTRING, 0, 0 );
+	}
+	while ( (lRet != CB_ERR) && (lRet > 0) );
 }
 
 //------------------------------------------------------------
@@ -221,35 +221,35 @@ void SAL_CALL ListboxDeleteItems( HWND hwnd, const Any& /*unused*/, const Refere
 //------------------------------------------------------------
 
 void SAL_CALL ListboxSetSelectedItem( HWND hwnd, const Any& aPosition, const Reference< XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( IllegalArgumentException )
+	throw( IllegalArgumentException )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-     if ( !aPosition.hasValue( ) || 
-         ( (aPosition.getValueType( ) != getCppuType((sal_Int32*)0)) &&
-           (aPosition.getValueType( ) != getCppuType((sal_Int16*)0)) &&
-           (aPosition.getValueType( ) != getCppuType((sal_Int8*)0)) ) )
-         throw IllegalArgumentException(
-            OUString::createFromAscii( "invalid value type or any has no value" ),
-            rXInterface,
-            aArgPos );
+	if ( !aPosition.hasValue( ) ||
+		 ( (aPosition.getValueType( ) != getCppuType((sal_Int32*)0)) &&
+		   (aPosition.getValueType( ) != getCppuType((sal_Int16*)0)) &&
+		   (aPosition.getValueType( ) != getCppuType((sal_Int8*)0)) ) )
+		 throw IllegalArgumentException(
+			OUString::createFromAscii( "invalid value type or any has no value" ),
+			rXInterface,
+			aArgPos );
 
-    sal_Int32 nPos;
-    aPosition >>= nPos;
+	sal_Int32 nPos;
+	aPosition >>= nPos;
 
-    if ( nPos < -1 )
-        throw IllegalArgumentException(
-            OUString::createFromAscii("invalid index"),
-            rXInterface,
-            aArgPos );
+	if ( nPos < -1 )
+		throw IllegalArgumentException(
+			OUString::createFromAscii("invalid index"),
+			rXInterface,
+			aArgPos );
 
-    LRESULT lRet = SendMessageW( hwnd, CB_SETCURSEL, nPos, 0 );
+	LRESULT lRet = SendMessageW( hwnd, CB_SETCURSEL, nPos, 0 );
 
-    if ( (CB_ERR == lRet) && (-1 != nPos) )
-        throw IllegalArgumentException(
-            OUString::createFromAscii("invalid index"),
-            rXInterface,
-            aArgPos );
+	if ( (CB_ERR == lRet) && (-1 != nPos) )
+		throw IllegalArgumentException(
+			OUString::createFromAscii("invalid index"),
+			rXInterface,
+			aArgPos );
 }
 
 //------------------------------------------------------------
@@ -258,26 +258,26 @@ void SAL_CALL ListboxSetSelectedItem( HWND hwnd, const Any& aPosition, const Ref
 
 Any SAL_CALL ListboxGetItems( HWND hwnd )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-    LRESULT nItemCount = SendMessageW( hwnd, CB_GETCOUNT, 0, 0 );
-    
-    Sequence< OUString > aItemList;
-    
-    if ( CB_ERR != nItemCount )
-    {
-        aItemList.realloc( nItemCount );
+	LRESULT nItemCount = SendMessageW( hwnd, CB_GETCOUNT, 0, 0 );
 
-        for ( sal_Int32 i = 0; i < nItemCount; i++ )
-        {
-            aItemList[i] = ListboxGetString( hwnd, i );
-        }
-    }
+	Sequence< OUString > aItemList;
 
-    Any aAny;
-    aAny <<= aItemList;
+	if ( CB_ERR != nItemCount )
+	{
+		aItemList.realloc( nItemCount );
 
-    return aAny;
+		for ( sal_Int32 i = 0; i < nItemCount; i++ )
+		{
+			aItemList[i] = ListboxGetString( hwnd, i );
+		}
+	}
+
+	Any aAny;
+	aAny <<= aItemList;
+
+	return aAny;
 }
 
 //------------------------------------------------------------
@@ -286,14 +286,14 @@ Any SAL_CALL ListboxGetItems( HWND hwnd )
 
 Any SAL_CALL ListboxGetSelectedItem( HWND hwnd )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-    LRESULT idxItem = SendMessageW( hwnd, CB_GETCURSEL, 0, 0 );
+	LRESULT idxItem = SendMessageW( hwnd, CB_GETCURSEL, 0, 0 );
 
-    Any aAny;
-    aAny <<= ListboxGetString( hwnd, idxItem );
+	Any aAny;
+	aAny <<= ListboxGetString( hwnd, idxItem );
 
-    return aAny;
+	return aAny;
 }
 
 //------------------------------------------------------------
@@ -301,36 +301,36 @@ Any SAL_CALL ListboxGetSelectedItem( HWND hwnd )
 //------------------------------------------------------------
 
 Any SAL_CALL CheckboxGetState( HWND hwnd )
-{    
-    OSL_ASSERT( IsWindow( hwnd ) );
+{
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-    LRESULT lChkState = SendMessageW( hwnd, BM_GETCHECK, 0, 0 );
-    sal_Bool bChkState = (lChkState == BST_CHECKED) ? sal_True : sal_False;
-    Any aAny;
-    aAny.setValue( &bChkState, getCppuType((sal_Bool*)0) );
-    return aAny;
+	LRESULT lChkState = SendMessageW( hwnd, BM_GETCHECK, 0, 0 );
+	sal_Bool bChkState = (lChkState == BST_CHECKED) ? sal_True : sal_False;
+	Any aAny;
+	aAny.setValue( &bChkState, getCppuType((sal_Bool*)0) );
+	return aAny;
 }
 
 //------------------------------------------------------------
 //
 //------------------------------------------------------------
 
-void SAL_CALL CheckboxSetState( 
-    HWND hwnd, const ::com::sun::star::uno::Any& aState, const Reference< XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( IllegalArgumentException )
+void SAL_CALL CheckboxSetState(
+	HWND hwnd, const ::com::sun::star::uno::Any& aState, const Reference< XInterface >& rXInterface, sal_Int16 aArgPos )
+	throw( IllegalArgumentException )
 {
-    OSL_ASSERT( IsWindow( hwnd ) );
+	OSL_ASSERT( IsWindow( hwnd ) );
 
-    if ( !aState.hasValue( ) || 
-         aState.getValueType( ) != getCppuType((sal_Bool*)0) )
-         throw IllegalArgumentException(
-            OUString::createFromAscii( "invalid value type or any has no value" ),
-            rXInterface,
-            aArgPos );
+	if ( !aState.hasValue( ) ||
+		 aState.getValueType( ) != getCppuType((sal_Bool*)0) )
+		 throw IllegalArgumentException(
+			OUString::createFromAscii( "invalid value type or any has no value" ),
+			rXInterface,
+			aArgPos );
 
-    sal_Bool bCheckState = *reinterpret_cast< const sal_Bool* >( aState.getValue( ) );
-    WPARAM wParam = bCheckState ? BST_CHECKED : BST_UNCHECKED;
-    SendMessageW( hwnd, BM_SETCHECK, wParam, 0 );	
+	sal_Bool bCheckState = *reinterpret_cast< const sal_Bool* >( aState.getValue( ) );
+	WPARAM wParam = bCheckState ? BST_CHECKED : BST_UNCHECKED;
+	SendMessageW( hwnd, BM_SETCHECK, wParam, 0 );
 }
 
 //------------------------------------------------------------
@@ -339,16 +339,18 @@ void SAL_CALL CheckboxSetState(
 
 sal_uInt32 SAL_CALL _wcslenex( const sal_Unicode* pStr )
 {
-    if ( !pStr )
-        return 0;
+	if ( !pStr )
+		return 0;
 
-    const sal_Unicode* pTemp = pStr;
-    sal_uInt32 strLen = 0;
-    while( *pTemp || *(pTemp + 1) )
-    {
-        pTemp++;
-        strLen++;
-    }
+	const sal_Unicode* pTemp = pStr;
+	sal_uInt32 strLen = 0;
+	while( *pTemp || *(pTemp + 1) )
+	{
+		pTemp++;
+		strLen++;
+	}
 
-    return strLen;
+	return strLen;
 }
+
+/* vim: set noet sw=4 ts=4: */

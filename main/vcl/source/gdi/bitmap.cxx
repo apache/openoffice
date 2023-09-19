@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,9 +55,9 @@ Bitmap::Bitmap( const ResId& rResId ) :
 	mpImpBmp( NULL )
 {
 	const BitmapEx aBmpEx( rResId );
-	
+
 	if( !aBmpEx.IsEmpty() )
-		*this = aBmpEx.GetBitmap();		
+		*this = aBmpEx.GetBitmap();
 }
 
 // ------------------------------------------------------------------
@@ -76,10 +76,10 @@ Bitmap::Bitmap( const Bitmap& rBitmap ) :
 
 Bitmap::Bitmap( SalBitmap* pSalBitmap )
 {
-    mpImpBmp = new ImpBitmap();
-    mpImpBmp->ImplSetSalBitmap( pSalBitmap );
-    maPrefMapMode = MapMode( MAP_PIXEL );
-    maPrefSize = mpImpBmp->ImplGetSize();
+	mpImpBmp = new ImpBitmap();
+	mpImpBmp->ImplSetSalBitmap( pSalBitmap );
+	maPrefMapMode = MapMode( MAP_PIXEL );
+	maPrefSize = mpImpBmp->ImplGetSize();
 }
 
 // ------------------------------------------------------------------
@@ -236,10 +236,10 @@ bool BitmapPalette::IsGreyPalette() const
 	// see above: only certain entry values will result in a valid call to GetGreyPalette
 	if( nEntryCount == 2 || nEntryCount == 4 || nEntryCount == 16 || nEntryCount == 256 )
 	{
-	    const BitmapPalette& rGreyPalette = Bitmap::GetGreyPalette( nEntryCount );
-	    if( rGreyPalette == *this )
-            return true;
-    }
+		const BitmapPalette& rGreyPalette = Bitmap::GetGreyPalette( nEntryCount );
+		if( rGreyPalette == *this )
+			return true;
+	}
 	// TODO: is it worth to compare the entries?
 	return false;
 }
@@ -291,10 +291,10 @@ Size Bitmap::GetSizePixel() const
 
 void Bitmap::SetSizePixel( const Size& rNewSize, sal_uInt32 nScaleFlag )
 {
-    if(GetSizePixel() != rNewSize)
-    {
-        Scale( rNewSize, nScaleFlag );
-    }
+	if(GetSizePixel() != rNewSize)
+	{
+		Scale( rNewSize, nScaleFlag );
+	}
 }
 
 // ------------------------------------------------------------------
@@ -332,17 +332,17 @@ sal_Bool Bitmap::HasGreyPalette() const
 
 		if( pRAcc )
 		{
-		    const BitmapColor& rCol0( pRAcc->GetPaletteColor( 0 ) );
-		    const BitmapColor& rCol1( pRAcc->GetPaletteColor( 1 ) );
-		    if( rCol0.GetRed() == rCol0.GetGreen() && rCol0.GetRed() == rCol0.GetBlue() &&
-		        rCol1.GetRed() == rCol1.GetGreen() && rCol1.GetRed() == rCol1.GetBlue() )
-		    {
-		        bRet = sal_True;
-		    }
+			const BitmapColor& rCol0( pRAcc->GetPaletteColor( 0 ) );
+			const BitmapColor& rCol1( pRAcc->GetPaletteColor( 1 ) );
+			if( rCol0.GetRed() == rCol0.GetGreen() && rCol0.GetRed() == rCol0.GetBlue() &&
+				rCol1.GetRed() == rCol1.GetGreen() && rCol1.GetRed() == rCol1.GetBlue() )
+			{
+				bRet = sal_True;
+			}
 			 ( (Bitmap*) this )->ReleaseAccess( pRAcc );
 		}
 		else
-		    bRet = sal_True;
+			bRet = sal_True;
 	}
 	else if( 4 == nBitCount || 8 == nBitCount )
 	{
@@ -352,7 +352,7 @@ sal_Bool Bitmap::HasGreyPalette() const
 		{
 			if( pRAcc->HasPalette() && ( (BitmapPalette&) pRAcc->GetPalette() == GetGreyPalette( 1 << nBitCount ) ) )
 				bRet = sal_True;
-			
+
 			 ( (Bitmap*) this )->ReleaseAccess( pRAcc );
 		}
 	}
@@ -398,7 +398,7 @@ sal_uLong Bitmap::GetChecksum() const
 
 				UInt32ToSVBT32( pRAcc->GetColorMask().GetBlueMask(), aBT32 );
 				nCrc = rtl_crc32( nCrc, aBT32, 4 );
-				
+
 				if( pRAcc->HasPalette() )
 				{
 					nCrc = rtl_crc32( nCrc, pRAcc->GetPalette().ImplGetColorBuffer(),
@@ -406,7 +406,7 @@ sal_uLong Bitmap::GetChecksum() const
 				}
 
 				nCrc = rtl_crc32( nCrc, pRAcc->GetBuffer(), pRAcc->GetScanlineSize() * pRAcc->Height() );
-				
+
 				mpImpBmp->ImplSetChecksum( nRet = nCrc );
 			}
 
@@ -532,7 +532,7 @@ sal_Bool Bitmap::Erase( const Color& rFillColor )
 {
 	if( !(*this) )
 		return sal_True;
-	
+
 	BitmapWriteAccess*	pWriteAcc = AcquireWriteAccess();
 	sal_Bool				bRet = sal_False;
 
@@ -1394,17 +1394,17 @@ Region Bitmap::CreateRegion( const Color& rColor, const Rectangle& rRect ) const
 		const long			nBottom = aRect.Bottom();
 		const BitmapColor	aMatch( pReadAcc->GetBestMatchingColor( rColor ) );
 
-        //RectangleVector aRectangles;
+		//RectangleVector aRectangles;
 		//aRegion.ImplBeginAddRect();
-        std::vector< long > aLine;
-        long nYStart(nTop);
-        long nY(nTop);
+		std::vector< long > aLine;
+		long nYStart(nTop);
+		long nY(nTop);
 
 		for( ; nY <= nBottom; nY++ )
 		{
 			//aSubRect.Top() = aSubRect.Bottom() = nY;
-            std::vector< long > aNewLine;
-            long nX(nLeft);
+			std::vector< long > aNewLine;
+			long nX(nLeft);
 
 			for( ; nX <= nRight; )
 			{
@@ -1413,65 +1413,65 @@ Region Bitmap::CreateRegion( const Color& rColor, const Rectangle& rRect ) const
 
 				if( nX <= nRight )
 				{
-                    aNewLine.push_back(nX);
+					aNewLine.push_back(nX);
 					//aSubRect.Left() = nX;
 
 					while( ( nX <= nRight ) && ( aMatch == pReadAcc->GetPixel( nY, nX ) ) )
 						nX++;
 
 					//aSubRect.Right() = nX - 1L;
-                    aNewLine.push_back(nX - 1);
+					aNewLine.push_back(nX - 1);
 
 					//aRegion.ImplAddRect( aSubRect );
-                    //aRectangles.push_back(aSubRect);
-                    //aRegion.Union(aSubRect);
+					//aRectangles.push_back(aSubRect);
+					//aRegion.Union(aSubRect);
 				}
 			}
 
-            if(aNewLine != aLine)
-            {
-                // need to write aLine, it's different from the next line
-                if(aLine.size())
-                {
-                    Rectangle aSubRect;
+			if(aNewLine != aLine)
+			{
+				// need to write aLine, it's different from the next line
+				if(aLine.size())
+				{
+					Rectangle aSubRect;
 
-                    // enter y values and proceed ystart
-                    aSubRect.Top() = nYStart;
-                    aSubRect.Bottom() = nY ? nY - 1 : 0;
+					// enter y values and proceed ystart
+					aSubRect.Top() = nYStart;
+					aSubRect.Bottom() = nY ? nY - 1 : 0;
 
-                    for(sal_uInt32 a(0); a < aLine.size();)
-                    {
-                        aSubRect.Left() = aLine[a++];
-                        aSubRect.Right() = aLine[a++];
-                        aRegion.Union(aSubRect);
-                    }
-                }
+					for(sal_uInt32 a(0); a < aLine.size();)
+					{
+						aSubRect.Left() = aLine[a++];
+						aSubRect.Right() = aLine[a++];
+						aRegion.Union(aSubRect);
+					}
+				}
 
-                // copy line as new line
-                aLine = aNewLine;
-                nYStart = nY;
-            }
+				// copy line as new line
+				aLine = aNewLine;
+				nYStart = nY;
+			}
 		}
 
-        // write last line if used
-        if(aLine.size())
-        {
-            Rectangle aSubRect;
+		// write last line if used
+		if(aLine.size())
+		{
+			Rectangle aSubRect;
 
-            // enter y values
-            aSubRect.Top() = nYStart;
-            aSubRect.Bottom() = nY ? nY - 1 : 0;
+			// enter y values
+			aSubRect.Top() = nYStart;
+			aSubRect.Bottom() = nY ? nY - 1 : 0;
 
-            for(sal_uInt32 a(0); a < aLine.size();)
-            {
-                aSubRect.Left() = aLine[a++];
-                aSubRect.Right() = aLine[a++];
-                aRegion.Union(aSubRect);
-            }
-        }
+			for(sal_uInt32 a(0); a < aLine.size();)
+			{
+				aSubRect.Left() = aLine[a++];
+				aSubRect.Right() = aLine[a++];
+				aRegion.Union(aSubRect);
+			}
+		}
 
 		//aRegion.ImplEndAddRect();
-        //aRegion.SetRegionRectangles(aRectangles);
+		//aRegion.SetRegionRectangles(aRectangles);
 
 		( (Bitmap*) this )->ReleaseAccess( pReadAcc );
 	}
@@ -1504,7 +1504,7 @@ sal_Bool Bitmap::Replace( const Bitmap& rMask, const Color& rReplaceColor )
 			// default to the nearest color
 			aReplace = pAcc->GetBestMatchingColor( rReplaceColor );
 
-			// for paletted images without a matching palette entry 
+			// for paletted images without a matching palette entry
 			// look for an unused palette entry (NOTE: expensive!)
 			if( pAcc->GetPaletteColor( aReplace.GetIndex() ) != BitmapColor( rReplaceColor ) )
 			{
@@ -1548,7 +1548,7 @@ sal_Bool Bitmap::Replace( const Bitmap& rMask, const Color& rReplaceColor )
 				if( pMaskAcc->GetPixel( nY, nX ) == aMaskWhite )
 					pAcc->SetPixel( nY, nX, aReplace );
 
-        bRet = sal_True;
+		bRet = sal_True;
 	}
 
 	( (Bitmap&) rMask ).ReleaseAccess( pMaskAcc );
@@ -1798,23 +1798,23 @@ Bitmap Bitmap::CreateDisplayBitmap( OutputDevice* pDisplay )
 
 Bitmap Bitmap::GetColorTransformedBitmap( BmpColorMode eColorMode ) const
 {
-    Bitmap  aRet;
-	
+	Bitmap  aRet;
+
 	if( BMP_COLOR_HIGHCONTRAST == eColorMode )
 	{
-	    Color*  pSrcColors = NULL;
-    	Color*  pDstColors = NULL;
-    	sal_uLong   nColorCount = 0;
-		
+		Color*  pSrcColors = NULL;
+		Color*  pDstColors = NULL;
+		sal_uLong   nColorCount = 0;
+
 		aRet = *this;
 
-    	Image::GetColorTransformArrays( (ImageColorTransform) eColorMode, pSrcColors, pDstColors, nColorCount );
+		Image::GetColorTransformArrays( (ImageColorTransform) eColorMode, pSrcColors, pDstColors, nColorCount );
 
-    	if( nColorCount && pSrcColors && pDstColors )
-       		aRet.Replace( pSrcColors, pDstColors, nColorCount ); 
+		if( nColorCount && pSrcColors && pDstColors )
+			aRet.Replace( pSrcColors, pDstColors, nColorCount );
 
-    	delete[] pSrcColors;
-    	delete[] pDstColors;
+		delete[] pSrcColors;
+		delete[] pDstColors;
 	}
 	else if( BMP_COLOR_MONOCHROME_BLACK == eColorMode ||
 			 BMP_COLOR_MONOCHROME_WHITE == eColorMode )
@@ -1822,8 +1822,8 @@ Bitmap Bitmap::GetColorTransformedBitmap( BmpColorMode eColorMode ) const
 		aRet = *this;
 		aRet.MakeMono( BMP_COLOR_MONOCHROME_THRESHOLD );
 	}
-			
-    return aRet;
+
+	return aRet;
 }
 
 // ------------------------------------------------------------------
@@ -1956,7 +1956,7 @@ sal_Bool Bitmap::CombineSimple( const Bitmap& rMask, BmpCombine eCombine )
 			break;
 		}
 
-        bRet = sal_True;
+		bRet = sal_True;
 	}
 
 	( (Bitmap&) rMask ).ReleaseAccess( pMaskAcc );
@@ -1969,13 +1969,13 @@ sal_Bool Bitmap::CombineSimple( const Bitmap& rMask, BmpCombine eCombine )
 
 sal_Bool Bitmap::Blend( const AlphaMask& rAlpha, const Color& rBackgroundColor )
 {
-    // TODO: Have a look at OutputDevice::ImplDrawAlpha() for some
-    // optimizations. Might even consolidate the code here and there.
+	// TODO: Have a look at OutputDevice::ImplDrawAlpha() for some
+	// optimizations. Might even consolidate the code here and there.
 
-    // convert to a truecolor bitmap, if we're a paletted one. There's
-    // room for tradeoff decision here, maybe later for an overload (or a flag)
-    if( GetBitCount() <= 8 )
-        Convert( BMP_CONVERSION_24BIT );
+	// convert to a truecolor bitmap, if we're a paletted one. There's
+	// room for tradeoff decision here, maybe later for an overload (or a flag)
+	if( GetBitCount() <= 8 )
+		Convert( BMP_CONVERSION_24BIT );
 
 	BitmapReadAccess*	pAlphaAcc = const_cast<AlphaMask&>(rAlpha).AcquireReadAccess();
 	BitmapWriteAccess*	pAcc = AcquireWriteAccess();
@@ -1988,11 +1988,11 @@ sal_Bool Bitmap::Blend( const AlphaMask& rAlpha, const Color& rBackgroundColor )
 
 		for( long nY = 0L; nY < nHeight; ++nY )
 			for( long nX = 0L; nX < nWidth; ++nX )
-                pAcc->SetPixel( nY, nX, 
-                                pAcc->GetPixel( nY, nX ).Merge( rBackgroundColor, 
-                                                                255 - pAlphaAcc->GetPixelIndex( nY, nX ) ) );
+				pAcc->SetPixel( nY, nX,
+								pAcc->GetPixel( nY, nX ).Merge( rBackgroundColor,
+																255 - pAlphaAcc->GetPixelIndex( nY, nX ) ) );
 
-        bRet = sal_True;
+		bRet = sal_True;
 	}
 
 	const_cast<AlphaMask&>(rAlpha).ReleaseAccess( pAlphaAcc );
@@ -2012,13 +2012,15 @@ sal_Bool Bitmap::MakeMono( sal_uInt8 cThreshold )
 
 bool Bitmap::GetSystemData( BitmapSystemData& rData ) const
 {
-    bool bRet = false;
-    if( mpImpBmp )
-    {
-        SalBitmap* pSalBitmap = mpImpBmp->ImplGetSalBitmap();
-        if( pSalBitmap )
-            bRet = pSalBitmap->GetSystemData( rData );
-    }
-    
-    return bRet;
+	bool bRet = false;
+	if( mpImpBmp )
+	{
+		SalBitmap* pSalBitmap = mpImpBmp->ImplGetSalBitmap();
+		if( pSalBitmap )
+			bRet = pSalBitmap->GetSystemData( rData );
+	}
+
+	return bRet;
 }
+
+/* vim: set noet sw=4 ts=4: */

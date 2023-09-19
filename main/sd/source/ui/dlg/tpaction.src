@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@ TabPage TP_ANIMATION
 	HelpID = CMD_SID_ANIMATION_EFFECTS ;
 	Pos = MAP_APPFONT ( 0 , 0 ) ;
 	Size = MAP_APPFONT ( 260 , 164 ) ;
-	Hide = TRUE;
+	Hide = TRUE ;
 	// always visible ---------------------------------------------------------------------
 #define MA_ACTIONLB_TOP		(RSC_SP_DLG_INNERBORDER_TOP + (2*RSC_CD_PUSHBUTTON_HEIGHT + RSC_SP_CTRL_GROUP_Y - RSC_CD_DROPDOWN_HEIGHT) / 2)
 #define MA_ACTIONLB_LEFT	(103)
@@ -44,7 +44,7 @@ TabPage TP_ANIMATION
 	};
 	ListBox LB_ACTION
 	{
-	    HelpID = "sd:ListBox:TP_ANIMATION:LB_ACTION";
+	    HelpID = "sd:ListBox:TP_ANIMATION:LB_ACTION" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( MA_ACTIONLB_LEFT , MA_ACTIONLB_TOP ) ;
 		Size = MAP_APPFONT ( 150 - RSC_SP_GRP_INNERBORDER_RIGHT , 79 ) ;
@@ -63,19 +63,19 @@ TabPage TP_ANIMATION
 
 	Edit EDT_SOUND
 	{
-	    HelpID = "sd:Edit:TP_ANIMATION:EDT_SOUND";
+		HelpID = "sd:Edit:TP_ANIMATION:EDT_SOUND" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + RSC_SP_CHK_TEXTINDENT , MA_Y4 + RSC_CD_CHECKBOX_HEIGHT + 1 ) ;
 		Size = MAP_APPFONT ( 247 - 65 - 10 - (RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + RSC_SP_CHK_TEXTINDENT) , 12 ) ;
 		TabStop = TRUE ;
 		Hide = TRUE ;
 	};
-		
+
 	 // Es ist schon wichtig, daﬂ Durchsuchen (search) und Suchen (seek/find) unter-
 	 // schiedlich heissen, da sie eben auch eine unterschiedliche Bedeutung haben
 	PushButton BTN_SEARCH
 	{
-	    HelpID = "sd:PushButton:TP_ANIMATION:BTN_SEARCH";
+		HelpID = "sd:PushButton:TP_ANIMATION:BTN_SEARCH" ;
 		Pos = MAP_APPFONT ( 247 - 65, MA_Y4 + RSC_CD_CHECKBOX_HEIGHT ) ;
 		Size = MAP_APPFONT ( 65 , 14 ) ;
 		TabStop = TRUE ;
@@ -111,7 +111,7 @@ TabPage TP_ANIMATION
 	};
 	ListBox LB_OLE_ACTION
 	{
-	    HelpID = "sd:ListBox:TP_ANIMATION:LB_OLE_ACTION";
+		HelpID = "sd:ListBox:TP_ANIMATION:LB_OLE_ACTION" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( MA_ACTIONLB_LEFT, MA_Y0 + 3 ) ;
 		Size = MAP_APPFONT ( 150 - RSC_SP_GRP_INNERBORDER_RIGHT , 77 ) ;
@@ -126,7 +126,7 @@ TabPage TP_ANIMATION
 	};
 	Edit EDT_BOOKMARK
 	{
-	    HelpID = "sd:Edit:TP_ANIMATION:EDT_BOOKMARK";
+		HelpID = "sd:Edit:TP_ANIMATION:EDT_BOOKMARK" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT , MA_Y4 + RSC_CD_CHECKBOX_HEIGHT + 1 ) ;
 		Size = MAP_APPFONT ( 247 - 65 - 10 - (RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT) , 12 ) ;
@@ -135,7 +135,7 @@ TabPage TP_ANIMATION
 	};
 	Edit EDT_DOCUMENT
 	{
-	    HelpID = "sd:Edit:TP_ANIMATION:EDT_DOCUMENT";
+		HelpID = "sd:Edit:TP_ANIMATION:EDT_DOCUMENT" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT , MA_Y4 + RSC_CD_CHECKBOX_HEIGHT + 1 ) ;
 		Size = MAP_APPFONT ( 247 - 65 - 10 - (RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT) , 12 ) ;
@@ -144,7 +144,7 @@ TabPage TP_ANIMATION
 	};
 	Edit EDT_PROGRAM
 	{
-	    HelpID = "sd:Edit:TP_ANIMATION:EDT_PROGRAM";
+		HelpID = "sd:Edit:TP_ANIMATION:EDT_PROGRAM" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT , MA_Y4 + RSC_CD_CHECKBOX_HEIGHT + 1 ) ;
 		Size = MAP_APPFONT ( 247 - 65 - 10 - (RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT) , 12 ) ;
@@ -153,7 +153,7 @@ TabPage TP_ANIMATION
 	};
 	Edit EDT_MACRO
 	{
-	    HelpID = "sd:Edit:TP_ANIMATION:EDT_MACRO";
+		HelpID = "sd:Edit:TP_ANIMATION:EDT_MACRO" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT , MA_Y4 + RSC_CD_CHECKBOX_HEIGHT + 1 ) ;
 		Size = MAP_APPFONT ( 247 - 65 - 10 - (RSC_SP_DLG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT) , 12 ) ;
@@ -162,43 +162,18 @@ TabPage TP_ANIMATION
 	};
 	PushButton BTN_SEEK
 	{
-	    HelpID = "sd:PushButton:TP_ANIMATION:BTN_SEEK";
+		HelpID = "sd:PushButton:TP_ANIMATION:BTN_SEEK" ;
 		Pos = MAP_APPFONT ( 247 - 65, MA_Y4 + RSC_CD_CHECKBOX_HEIGHT ) ;
-		Size = MAP_APPFONT ( 65 , 14 ) ;
+		Size = MAP_APPFONT ( 65, 14 ) ;
 		TabStop = TRUE ;
 		Hide = TRUE ;
 		Text [ en-US ] = "~Find" ;
 	};
 	String STR_PATHNAME
-    { 
-       Text [ en-US ] = "Path Name";
-    };
-	Text [ en-US ] = "Interaction";
+	{
+		Text [ en-US ] = "Path Name" ;
+	};
+	Text [ en-US ] = "Interaction" ;
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF

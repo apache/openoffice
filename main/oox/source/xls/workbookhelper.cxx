@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,7 +107,7 @@ public:
     // filter -----------------------------------------------------------------
 
     /** Returns the base filter object (base class of all filters). */
-    inline FilterBase&  getBaseFilter() const { return mrBaseFilter; }
+    inline FilterBase& getBaseFilter() const { return mrBaseFilter; }
     /** Returns the filter progress bar. */
     inline SegmentProgressBar& getProgressBar() const { return *mxProgressBar; }
     /** Returns the file type of the current filter. */
@@ -162,7 +162,7 @@ public:
     /** Returns the scenarios collection. */
     inline ScenarioBuffer& getScenarios() const { return *mxScenarios; }
     /** Returns the collection of external data connections. */
-    inline ConnectionsBuffer&  getConnections() const { return *mxConnections; }
+    inline ConnectionsBuffer& getConnections() const { return *mxConnections; }
     /** Returns the collection of pivot caches. */
     inline PivotCacheBuffer& getPivotCaches() const { return *mxPivotCaches; }
     /** Returns the collection of pivot tables. */
@@ -235,50 +235,50 @@ private:
     typedef ::std::auto_ptr< PageSettingsConverter >    PageSettConvPtr;
     typedef ::std::auto_ptr< BiffCodecHelper >          BiffCodecHelperPtr;
 
-    OUString            maCellStyles;           /// Style family name for cell styles.
-    OUString            maPageStyles;           /// Style family name for page styles.
-    OUString            maCellStyleServ;        /// Service name for a cell style.
-    OUString            maPageStyleServ;        /// Service name for a page style.
-    Reference< XSpreadsheetDocument > mxDoc;    /// Document model.
-    FilterBase&         mrBaseFilter;           /// Base filter object.
-    ExcelFilterBase&    mrExcelBase;            /// Base object for registration of this structure.
-    FilterType          meFilterType;           /// File type of the filter.
-    ProgressBarPtr      mxProgressBar;          /// The progress bar.
-    StorageRef          mxVbaPrjStrg;           /// Storage containing the VBA project.
-    sal_Int16           mnCurrSheet;            /// Current sheet index in Calc dcument.
-    bool                mbWorkbook;             /// True = multi-sheet file.
+    OUString            maCellStyles;           // Style family name for cell styles.
+    OUString            maPageStyles;           // Style family name for page styles.
+    OUString            maCellStyleServ;        // Service name for a cell style.
+    OUString            maPageStyleServ;        // Service name for a page style.
+    Reference< XSpreadsheetDocument > mxDoc;    // Document model.
+    FilterBase&         mrBaseFilter;           // Base filter object.
+    ExcelFilterBase&    mrExcelBase;            // Base object for registration of this structure.
+    FilterType          meFilterType;           // File type of the filter.
+    ProgressBarPtr      mxProgressBar;          // The progress bar.
+    StorageRef          mxVbaPrjStrg;           // Storage containing the VBA project.
+    sal_Int16           mnCurrSheet;            // Current sheet index in Calc document.
+    bool                mbWorkbook;             // True = multi-sheet file.
 
     // buffers
-    WorkbookSettPtr     mxWorkbookSettings;     /// Global workbook settings.
-    ViewSettingsPtr     mxViewSettings;         /// Workbook and sheet view settings.
-    WorksheetBfrPtr     mxWorksheets;           /// Sheet info buffer.
-    ThemeBfrRef         mxTheme;                /// Formatting theme from theme substream.
-    StylesBfrPtr        mxStyles;               /// All cell style objects from styles substream.
-    SharedStrBfrPtr     mxSharedStrings;        /// All strings from shared strings substream.
-    ExtLinkBfrPtr       mxExtLinks;             /// All external links.
-    DefNamesBfrPtr      mxDefNames;             /// All defined names.
-    TableBfrPtr         mxTables;               /// All tables (database ranges).
-    ScenarioBfrPtr      mxScenarios;            /// All scenarios.
-    ConnectionsBfrPtr   mxConnections;          /// All external data connections.
-    PivotCacheBfrPtr    mxPivotCaches;          /// All pivot caches in the document.
-    PivotTableBfrPtr    mxPivotTables;          /// All pivot tables in the document.
+    WorkbookSettPtr     mxWorkbookSettings;     // Global workbook settings.
+    ViewSettingsPtr     mxViewSettings;         // Workbook and sheet view settings.
+    WorksheetBfrPtr     mxWorksheets;           // Sheet info buffer.
+    ThemeBfrRef         mxTheme;                // Formatting theme from theme substream.
+    StylesBfrPtr        mxStyles;               // All cell style objects from styles substream.
+    SharedStrBfrPtr     mxSharedStrings;        // All strings from shared strings substream.
+    ExtLinkBfrPtr       mxExtLinks;             // All external links.
+    DefNamesBfrPtr      mxDefNames;             // All defined names.
+    TableBfrPtr         mxTables;               // All tables (database ranges).
+    ScenarioBfrPtr      mxScenarios;            // All scenarios.
+    ConnectionsBfrPtr   mxConnections;          // All external data connections.
+    PivotCacheBfrPtr    mxPivotCaches;          // All pivot caches in the document.
+    PivotTableBfrPtr    mxPivotTables;          // All pivot tables in the document.
 
     // converters
-    FormulaParserPtr    mxFmlaParser;           /// Import formula parser.
-    UnitConvPtr         mxUnitConverter;        /// General unit converter.
-    AddressConvPtr      mxAddrConverter;        /// Cell address and cell range address converter.
-    ExcelChartConvPtr   mxChartConverter;       /// Chart object converter.
-    PageSettConvPtr     mxPageSettConverter;    /// Page/print settings converter.
+    FormulaParserPtr    mxFmlaParser;           // Import formula parser.
+    UnitConvPtr         mxUnitConverter;        // General unit converter.
+    AddressConvPtr      mxAddrConverter;        // Cell address and cell range address converter.
+    ExcelChartConvPtr   mxChartConverter;       // Chart object converter.
+    PageSettConvPtr     mxPageSettConverter;    // Page/print settings converter.
 
     // OOXML/BIFF12 specific
-    XmlFilterBase*      mpOoxFilter;            /// Base OOXML/BIFF12 filter object.
+    XmlFilterBase*      mpOoxFilter;            // Base OOXML/BIFF12 filter object.
 
     // BIFF2-BIFF8 specific
-    BinaryFilterBase*   mpBiffFilter;           /// Base BIFF2-BIFF8 filter object.
-    BiffCodecHelperPtr  mxCodecHelper;          /// Encoder/decoder helper.
-    BiffType            meBiff;                 /// BIFF version for BIFF import/export.
-    rtl_TextEncoding    meTextEnc;              /// BIFF byte string text encoding.
-    bool                mbHasCodePage;          /// True = CODEPAGE record exists in imported stream.
+    BinaryFilterBase*   mpBiffFilter;           // Base BIFF2-BIFF8 filter object.
+    BiffCodecHelperPtr  mxCodecHelper;          // Encoder/decoder helper.
+    BiffType            meBiff;                 // BIFF version for BIFF import/export.
+    rtl_TextEncoding    meTextEnc;              // BIFF byte string text encoding.
+    bool                mbHasCodePage;          // True = CODEPAGE record exists in imported stream.
 };
 
 // ----------------------------------------------------------------------------
@@ -913,3 +913,5 @@ BiffCodecHelper& WorkbookHelper::getCodecHelper() const
 
 } // namespace xls
 } // namespace oox
+
+/* vim: set noet sw=4 ts=4: */
