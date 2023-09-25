@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef __com_sun_star_form_component_DataForm_idl__
@@ -129,7 +130,7 @@ published service DataForm
 		(if any). All values which can't be filled are then passed to all listeners, which can
 		fill them by their own choice.</p>
 
-		<p>This is sligtly changed if the form is loaded using the
+		<p>This is slightly changed if the form is loaded using the
 		<member scope="com::sun::star::sdb">XCompletedExecution::connectWithCompletion</member> method. In this case, the parameters
 		are obtained from the interaction handler, not from the listeners</p>
 
@@ -144,10 +145,10 @@ published service DataForm
 
         <p> These columns are typically the foreign key fields of the parent form.
         The values of theses columns are used to identify the data for the subform.
-        Each time the parent form changes it's current row, the subform requeries
-        it's data based on the values of the master fields.</p>
+        Each time the parent form changes it's current row, the subform requires
+        its data based on the values of the master fields.</p>
 
-        <p>If the form is no sub form (e.g. it's parent is not a form itself), this
+        <p>If the form is no sub form (e.g. its parent is not a form itself), this
         property is not evaluated.</p>
 	*/
 	[property] sequence<string> MasterFields;
@@ -157,7 +158,7 @@ published service DataForm
 	    which are related to the master fields of the parent form.
 
         <p>Entries in this sequence can either denote column names in the sub form,
-        or paramater names.<br/>
+        or parameter names.<br/>
         For instance, you could base the form on the SQL statement
         <code>SELECT * FROM invoices WHERE cust_ref = :cid</code>, and add <code>cid</code>
         to the DetailFields property. In this case, the parameter will be filled from
@@ -175,7 +176,7 @@ published service DataForm
         <p>The columns specified herein typically represent a part of the primary key
         fields or their aliases of the detail form.</p>
 
-        <p>If the form is no sub form (e.g. it's parent is not a form itself), this
+        <p>If the form is no sub form (e.g. its parent is not a form itself), this
         property is not evaluated.</p>
 	*/
 	[property] sequence<string> DetailFields;
@@ -192,7 +193,7 @@ published service DataForm
 
 	//-------------------------------------------------------------------------
 	/** determines if insertions into the form's row set are allowed.
-	
+
 		<p>Note that this is a recommendation for user interface components displaying the
 		form. Form implementations may decide to allow for insertions done via the API, even
 		if the property is set to <FALSE/>, but the user interface should respect the property
@@ -202,7 +203,7 @@ published service DataForm
 
 	//-------------------------------------------------------------------------
 	/** determines if modifications of the current record of the form are allowed.
-	
+
 		<p>Note that this is a recommendation for user interface components displaying the
 		form. Form implementations may decide to allow for updates done via the API, even
 		if the property is set to <FALSE/>, but the user interface should respect the property
@@ -212,7 +213,7 @@ published service DataForm
 
 	//-------------------------------------------------------------------------
 	/** determines if deletions of records of the form are allowed.
-	
+
 		<p>Note that this is a recommendation for user interface components displaying the
 		form. Form implementations may decide to allow for deletions done via the API, even
 		if the property is set to <FALSE/>, but the user interface should respect the property
