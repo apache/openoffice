@@ -2,7 +2,7 @@
 <helpdocument version="1.0">
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,16 +10,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -55,7 +55,7 @@
             <paragraph xml-lang="en-US" id="par_id102720080230153" role="paragraph" l10n="NEW">In INDIRECT, the parameter is appended as the second parameter.</paragraph>
             <paragraph xml-lang="en-US" id="par_id102720080230151" role="paragraph" l10n="NEW">In both functions, if the argument is inserted with the value 0, then the R1C1 notation is used. If the argument is not given or has a value other than 0, then the A1 notation is used. </paragraph>
             <paragraph xml-lang="en-US" id="par_id1027200802301556" role="paragraph" l10n="NEW">In case of R1C1 notation, ADDRESS returns address strings using the exclamation mark '!' as the sheet name separator, and INDIRECT expects the exclamation mark as sheet name separator. Both functions still use the dot '.' sheet name separator with A1 notation.</paragraph>
-            <paragraph xml-lang="en-US" id="par_id1027200802301521" role="paragraph" l10n="NEW">When opening documents from ODF 1.0/1.1 format, the ADDRESS functions that show a sheet name as the fourth paramater will shift that sheet name to become the fifth parameter. A new fourth parameter with the value 1 will be inserted.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id1027200802301521" role="paragraph" l10n="NEW">When opening documents from ODF 1.0/1.1 format, the ADDRESS functions that show a sheet name as the fourth parameter will shift that sheet name to become the fifth parameter. A new fourth parameter with the value 1 will be inserted.</paragraph>
             <paragraph xml-lang="en-US" id="par_id1027200802301650" role="paragraph" l10n="NEW">When storing a document in ODF 1.0/1.1 format, if ADDRESS functions have a fourth parameter, that parameter will be removed.</paragraph>
             <paragraph xml-lang="en-US" id="par_id102720080230162" role="note" l10n="NEW">Do not save a spreadsheet in the old ODF 1.0/1.1 format if the ADDRESS function's new fourth parameter was used with a value of 0.</paragraph>
             <paragraph xml-lang="en-US" id="par_id1027200802301756" role="note" l10n="NEW">The INDIRECT function is saved without conversion to ODF 1.0/1.1 format. If the second parameter was present, an older version of Calc will return an error for that function.</paragraph>
