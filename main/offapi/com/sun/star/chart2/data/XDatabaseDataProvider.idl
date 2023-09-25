@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,27 +7,28 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-#ifndef __com_sun_star_report_XDatabaseDataProvider_idl__ 
+
+#ifndef __com_sun_star_report_XDatabaseDataProvider_idl__
 #define __com_sun_star_report_XDatabaseDataProvider_idl__
- 
+
 #ifndef __com_sun_star_container_NoSuchElementException_idl__
 #include <com/sun/star/container/NoSuchElementException.idl>
 #endif
 #include <com/sun/star/beans/XPropertySet.idl>
-#include <com/sun/star/beans/UnknownPropertyException.idl> 
+#include <com/sun/star/beans/UnknownPropertyException.idl>
 #include <com/sun/star/lang/XInitialization.idl>
 #include <com/sun/star/lang/XComponent.idl>
 #include <com/sun/star/sdbc/XConnection.idl>
@@ -36,19 +37,19 @@
 #include <com/sun/star/chart2/data/XDataProvider.idl>
 #include <com/sun/star/chart2/data/XRangeXMLConversion.idl>
 
-//============================================================================= 
- 
- module com {  module sun {  module star {  module chart2 { module data { 
- 
-//============================================================================= 
- 
+//=============================================================================
+
+ module com {  module sun {  module star {  module chart2 { module data {
+
+//=============================================================================
+
 /** identifies a <type>XDataProvider</type> for result sets.
-	
+
 	@see XDataProvider
     @see DataProvider
  */
 interface XDatabaseDataProvider
-{ 
+{
 	/** For accessing data a component provides for being used by
         charts.
      */
@@ -77,18 +78,18 @@ interface XDatabaseDataProvider
     /** is used for subreports and contains the names of columns of the parent report.
 	<p> These columns are typically the foreign key fields of the parent report.
 	The values of theses columns are used to identify the data for the subreport.
-	Each time the parent report changes it's current row, the subreport requeries
-	it's data based on the values of the master fields.</p>
-	<p>If the report is no sub report (e.g. it's parent is not a report itself), this
+	Each time the parent report changes it's current row, the subreport requires
+	its data based on the values of the master fields.</p>
+	<p>If the report is no sub report (e.g. its parent is not a report itself), this
 	property is not evaluated.</p>
-	
+
 	*/
     [attribute,bound] sequence<string> MasterFields;
 
 	/**is used for subreports and contains the names of the columns of the subreport
 	which are related to the master fields of the parent report.
 	<p>Entries in this sequence can either denote column names in the sub report,
-	or paramater names.<br/>
+	or parameter names.<br/>
 	For instance, you could base the report on the SQL statement
 	<code>SELECT * FROM invoices WHERE cust_ref = :cid</code>, and add <code>cid</code>
 	to the DetailFields property. In this case, the parameter will be filled from
@@ -106,7 +107,7 @@ interface XDatabaseDataProvider
 	fields or their aliases of the detail report.</p>
 	<p>If the report is no sub report (e.g. it's parent is not a report itself), this
 	property is not evaluated.</p>
-	* 
+	*
 	*/
     [attribute,bound] sequence<string> DetailFields;
 
@@ -121,8 +122,8 @@ interface XDatabaseDataProvider
 	The default value for <member scope="com::sun::star::sdbc">RowSet::EscapeProcessing</member>
 	is <TRUE/>. By switching it to <FALSE/>, you can pass backend-specific SQL statements,
 	which are not standard SQL, to your database.</p>
-	
-	
+
+
 	@see com::sun::star::sdb::CommandType
 	*/
     [attribute,bound] string Command;
@@ -173,7 +174,7 @@ interface XDatabaseDataProvider
         set raises (com::sun::star::beans::UnknownPropertyException);
     };
 
-	/** is a additional sort order definition for a rowset.
+	/** is a additional sort order definition for a row set.
 	 */
 	[attribute,bound] string Order;
 
@@ -204,13 +205,13 @@ interface XDatabaseDataProvider
 		or the URL of a data access component.
 	 */
 	[attribute,bound] string DataSourceName;
-}; 
- 
-//============================================================================= 
- 
+};
+
+//=============================================================================
+
  }; }; }; };  };
- 
-/*============================================================================= 
- 
-=============================================================================*/ 
+
+/*=============================================================================
+
+=============================================================================*/
 #endif 
