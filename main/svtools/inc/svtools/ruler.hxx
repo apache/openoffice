@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -369,7 +369,7 @@ es folgende Abfrage-Methoden.
         Mit dieser Methode kann man einen HitTest durchfuehren, um
         gegebenenfalls ueber das Abfangen des MouseButtonDown-Handlers
         auch ueber die rechte Maustaste etwas auf ein Item anzuwenden. Als
-        Paramter ueber gibt man die Fensterposition und gegebenenfalls
+        Parameter uebergibt man die Fensterposition und gegebenenfalls
         einen Pointer auf einen sal_uInt16, um die Array-Position eines
         Tabs, Indent oder Borders mitzubekommen. Als Type werden folgende
         Werte zurueckgegeben:
@@ -408,7 +408,7 @@ Um vom Dokument ein Drag auszuloesen, gibt es folgende Methoden:
         und verhaelt sich dann so, wie als wenn direkt in das Lineal geklickt
         wurde. So captured das Lineal die Mouse und uebernimmt auch die
         Steuerung des Cancel (ueber Tastatur, oder wenn die Mouse ueber
-        oder links vom Lineal ruasgeschoben wird). Auch alle Handler werden
+        oder links vom Lineal rausgeschoben wird). Auch alle Handler werden
         gerufen (inkl. des StartDrag-Handlers). Wenn ein MouseEvent mit
         Click-Count 2 uebergeben wird auch der DoubleClick-Handler
         entsprechend gerufen.
@@ -439,7 +439,7 @@ womit man bestimmte Aktionen abfangen kann.
         dargestellt werden soll.
             - ExtraType         Was im Extrafeld dargestellt werden soll
                                 RULER_EXTRA_DONTKNOW        (Nichts)
-                                RULER_EXTRA_NULLOFFSET      (Koordinaaten-Kreuz)
+                                RULER_EXTRA_NULLOFFSET      (Koordinaten-Kreuz)
                                 RULER_EXTRA_TAB             (Tab)
             - sal_uInt16 nStyle     Bitfeld als Style:
                                     RULER_STYLE_HIGHLIGHT   (selektiert)
@@ -474,7 +474,7 @@ Tips zur Benutzung des Lineals:
 - Bei dem Lineal muss weder im Drag-Modus noch sonst das Setzen der Werte
   in SetUpdateMode() geklammert werden. Denn das Lineal sorgt von sich
   aus dafuer, das wenn mehrere Werte gesetzt werden, diese automatisch
-  zusammengefast werden und flackerfrei ausgegeben werden.
+  zusammengefasst werden und flackerfrei ausgegeben werden.
 
 - Initial sollten beim Lineal zuerst die Groessen, Positionen und Werte
   gesetzt werden, bevor es angezeigt wird. Dies ist deshalb wichtig, da
@@ -590,7 +590,7 @@ struct RulerBorder
     long    nPos;
     long    nWidth;
     sal_uInt16  nStyle;
-    //minimum/maximum position, supported for table borders/rows
+    // minimum/maximum position, supported for table borders/rows
     long    nMinPos; 
     long    nMaxPos;
 };
