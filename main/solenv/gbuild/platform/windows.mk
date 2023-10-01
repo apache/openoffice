@@ -32,6 +32,7 @@ gb_AS := ml
 gb_CC := cl
 gb_CXX := cl
 gb_LINK := link
+gb_MT := mt
 gb_AWK := awk
 gb_CLASSPATHSEP := ;
 gb_RC := rc
@@ -448,6 +449,8 @@ gb_LinkTarget_INCLUDE_STL := $(filter %/stl, $(subst -I. , ,$(SOLARINC)))
 
 gb_LinkTarget_get_pdbfile = $(call gb_LinkTarget_get_target,)pdb/$(1).pdb
 
+# Runs the linker command to generate the binary.
+# If a .manifest file is generated, embeds it into the binary.
 define gb_LinkTarget__command
 $(call gb_Output_announce,$(2),$(true),LNK,4)
 $(call gb_Helper_abbreviate_dirs_native,\
@@ -472,7 +475,14 @@ $(call gb_Helper_abbreviate_dirs_native,\
 		$(patsubst %,%.lib,$(EXTERNAL_LIBS)) \
 		$(foreach lib,$(LINKED_STATIC_LIBS),$(call gb_StaticLibrary_get_filename,$(lib))) \
 		$(LIBS) \
-		$(if $(DLLTARGET),-out:$(DLLTARGET) -implib:$(1),-out:$(1)); RC=$$?; rm $${RESPONSEFILE} \
+		$(if $(DLLTARGET),-out:$(DLLTARGET) -implib:$(1),-out:$(1)); \
+	RC=$$?; \
+	if [ -f $(if $(DLLTARGET),$(DLLTARGET),$(1)).manifest ]; then \
+		$(gb_MT) \
+			-manifest $(if $(DLLTARGET),$(DLLTARGET),$(1)).manifest \
+			-outputresource:$(if $(DLLTARGET),$(DLLTARGET),$(1)); \
+	fi; \
+	rm $${RESPONSEFILE} \
 	$(if $(DLLTARGET),; if [ ! -f $(DLLTARGET) ]; then rm -f $(1) && false; fi) ; exit $$RC)
 endef
 
@@ -677,7 +687,6 @@ $(call gb_LinkTarget_set_auxtargets,$(2),\
 
 $(call gb_Executable_get_target,$(1)) \
 $(call gb_Executable_get_clean_target,$(1)) : AUXTARGETS := $(call gb_Executable_get_target,$(1)).manifest
-$(call gb_Deliver_add_deliverable,$(call gb_Executable_get_target,$(1)).manifest,$(call gb_LinkTarget_get_target,$(2)).manifest,$(1))
 
 $(call gb_LinkTarget_get_target,$(2)) \
 $(call gb_LinkTarget_get_headers_target,$(2)) : PDBFILE = $(call gb_LinkTarget_get_pdbfile,$(2))
