@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef __com_sun_star_embed_EmbedStates_idl__
@@ -38,10 +39,10 @@ published constants EmbedStates
 	/** "Loaded" - the persistent representation of the object is loaded in
 		memory.
 
-		<p> 
-		The object is created and assigned with a persistent entry, 
-		and a view representation ( metafile and etc. ) can be retrieved
-		( if there is any ).
+		<p>
+		The object is created and assigned with a persistent entry,
+		and a view representation (metafile, etc.) can be retrieved
+		(if there is any).
 		</p>
 	 */
 	const long LOADED = 0;
@@ -60,7 +61,7 @@ published constants EmbedStates
 
 	//------------------------------------------------------------------------
 	/** "Active" - the object is activated in separate window
-		( outplace activation ).
+		(outplace activation).
 	 */
 	const long ACTIVE = 2;
 
@@ -69,7 +70,7 @@ published constants EmbedStates
 		window.
 
 		<p>
-		The object is activated and has it's own window in the container's
+		The object is activated and has its own window in the container's
 		window that allows object to process mouse events and control own
 		rendering.
 		</p>
@@ -80,7 +81,7 @@ published constants EmbedStates
 	/** "UI active" - the inplace active object that has user interface.
 
 		<p>
-		The object is inplace active, allowed to have menues, toolbars,
+		The object is inplace active, allowed to have menus, toolbars,
 		keyboard accelerators, and has the focus.
 		</p>
 	 */
@@ -92,4 +93,3 @@ published constants EmbedStates
 }; }; }; };
 
 #endif
-
