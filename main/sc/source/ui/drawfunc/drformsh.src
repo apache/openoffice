@@ -25,7 +25,7 @@
 #include "submenu.hrc"
 #include <svx/globlmn.hrc>
 //
-//	Defines -------------------------------------------------------------------------------
+// Defines -------------------------------------------------------------------------------
 //
 #define MN_LAYER\
 	ToolBoxItem\
@@ -170,14 +170,14 @@
 	};
 
 
-//	Popup-Menues ---------------------------------------------------------------------
+// Popup-Menus ----------------------------------------------------------------------
 //
 String RID_POPUP_DRAWFORM
 {
 	Text [ en-US ] = "Popup menu for form objects" ;
 };
 //
-//		Popup-Menu for (Uno-) Controls
+// Popup-Menu for (Uno-) Controls
 //
 Menu RID_POPUP_DRAWFORM
 {
