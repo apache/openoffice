@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -181,14 +181,14 @@ DocumentHolder::DocumentHolder( const uno::Reference< lang::XMultiServiceFactory
 	aArg.Value <<= sal_True;
 	m_aOutplaceFrameProps[0] <<= aArg;
 
-    aArg.Name = ::rtl::OUString::createFromAscii("MakeVisible");
-    aArg.Value <<= sal_False;
-    m_aOutplaceFrameProps[1] <<= aArg;
+	aArg.Name = ::rtl::OUString::createFromAscii("MakeVisible");
+	aArg.Value <<= sal_False;
+	m_aOutplaceFrameProps[1] <<= aArg;
 
 	const ::rtl::OUString aServiceName ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.frame.Desktop" ) );
 	uno::Reference< frame::XDesktop > xDesktop( m_xFactory->createInstance( aServiceName ), uno::UNO_QUERY );
 	if ( xDesktop.is() )
-    {
+	{
         m_refCount++;
         try
         {
@@ -202,7 +202,7 @@ DocumentHolder::DocumentHolder( const uno::Reference< lang::XMultiServiceFactory
 		aArg.Name = ::rtl::OUString::createFromAscii("ParentFrame");
 		aArg.Value <<= xDesktop; //TODO/LATER: should use parent document frame
 		m_aOutplaceFrameProps[2] <<= aArg;
-    }
+	}
 	else
 		m_aOutplaceFrameProps.realloc( 2 );
 }
@@ -215,7 +215,7 @@ DocumentHolder::~DocumentHolder()
 	if( m_xFrame.is() )
 		CloseFrame();
 
-    if ( m_xComponent.is() )
+	if ( m_xComponent.is() )
 	{
 		try {
 			CloseDocument( sal_True, sal_False );
@@ -228,8 +228,8 @@ DocumentHolder::~DocumentHolder()
 		m_pInterceptor->release();
 	}
 
-    if ( !m_bDesktopTerminated )
-        FreeOffice();
+	if ( !m_bDesktopTerminated )
+		FreeOffice();
 }
 
 //---------------------------------------------------------------------------
@@ -269,7 +269,7 @@ void DocumentHolder::FreeOffice()
 	uno::Reference< frame::XDesktop > xDesktop( m_xFactory->createInstance( aServiceName ), uno::UNO_QUERY );
 	if ( xDesktop.is() )
 	{
-        xDesktop->removeTerminateListener( this );
+		xDesktop->removeTerminateListener( this );
 
 		// the following code is commented out since for now there is still no completely correct way to detect
 		// whether the office can be terminated, so it is better to have unnecessary process running than
@@ -295,10 +295,10 @@ void DocumentHolder::FreeOffice()
 //---------------------------------------------------------------------------
 void DocumentHolder::CloseDocument( sal_Bool bDeliverOwnership, sal_Bool bWaitForClose )
 {
-    uno::Reference< util::XCloseBroadcaster > xBroadcaster( m_xComponent, uno::UNO_QUERY );
+	uno::Reference< util::XCloseBroadcaster > xBroadcaster( m_xComponent, uno::UNO_QUERY );
 	if ( xBroadcaster.is() )
 	{
-        uno::Reference< document::XEventBroadcaster > xEventBroadcaster( m_xComponent, uno::UNO_QUERY );
+		uno::Reference< document::XEventBroadcaster > xEventBroadcaster( m_xComponent, uno::UNO_QUERY );
 		if ( xEventBroadcaster.is() )
 			xEventBroadcaster->removeEventListener( ( document::XEventListener* )this );
 		else
@@ -319,7 +319,7 @@ void DocumentHolder::CloseDocument( sal_Bool bDeliverOwnership, sal_Bool bWaitFo
 		}
 	}
 
-    m_xComponent = 0;
+	m_xComponent = 0;
 }
 
 //---------------------------------------------------------------------------
@@ -329,7 +329,7 @@ void DocumentHolder::PlaceFrame( const awt::Rectangle& aNewRect )
                 "The object does not have windows required for inplace mode!" );
 
 	//TODO: may need mutex locking???
-    if ( m_xFrame.is() && m_xOwnWindow.is() )
+	if ( m_xFrame.is() && m_xOwnWindow.is() )
 	{
 		// the frame can be replaced only in inplace mode
 		frame::BorderWidths aOldWidths;
@@ -388,7 +388,7 @@ sal_Bool DocumentHolder::SetFrameLMVisibility( const uno::Reference< frame::XFra
 
 	try
 	{
-    	uno::Reference< ::com::sun::star::frame::XLayoutManager > xLayoutManager;
+		uno::Reference< ::com::sun::star::frame::XLayoutManager > xLayoutManager;
 		uno::Reference< beans::XPropertySet > xPropSet( xFrame, uno::UNO_QUERY_THROW );
 		xPropSet->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "LayoutManager" ))) >>= xLayoutManager;
 		if ( xLayoutManager.is() )
@@ -420,7 +420,7 @@ sal_Bool DocumentHolder::ShowInplace( const uno::Reference< awt::XWindowPeer >& 
 
 	if ( !m_xFrame.is() )
 	{
-        uno::Reference < frame::XModel > xModel( GetComponent(), uno::UNO_QUERY );
+		uno::Reference < frame::XModel > xModel( GetComponent(), uno::UNO_QUERY );
 		awt::Rectangle aHatchRectangle = AddBorderToArea( aRectangleToShow );
 
         awt::Rectangle aOwnRectangle(  HATCH_BORDER_WIDTH,
@@ -430,8 +430,8 @@ sal_Bool DocumentHolder::ShowInplace( const uno::Reference< awt::XWindowPeer >& 
         uno::Reference< awt::XWindow > xHWindow;
         uno::Reference< awt::XWindowPeer > xMyParent( xParent );
 
-        if ( xModel.is() )
-        {
+		if ( xModel.is() )
+		{
 
 			uno::Reference< embed::XHatchWindowFactory > xHatchFactory(
 					m_xFactory->createInstance(
@@ -447,20 +447,20 @@ sal_Bool DocumentHolder::ShowInplace( const uno::Reference< awt::XWindowPeer >& 
 																	  awt::Size( HATCH_BORDER_WIDTH, HATCH_BORDER_WIDTH ) );
 
 			uno::Reference< awt::XWindowPeer > xHatchWinPeer( xHatchWindow, uno::UNO_QUERY );
-            xHWindow = uno::Reference< awt::XWindow >( xHatchWinPeer, uno::UNO_QUERY );
+			xHWindow = uno::Reference< awt::XWindow >( xHatchWinPeer, uno::UNO_QUERY );
 			if ( !xHWindow.is() )
 				throw uno::RuntimeException(); // TODO: can not create own window
 
-            xHatchWindow->setController( uno::Reference< embed::XHatchWindowController >(
+			xHatchWindow->setController( uno::Reference< embed::XHatchWindowController >(
 												static_cast< embed::XHatchWindowController* >( this ) ) );
 
-            xMyParent = xHatchWinPeer;
+			xMyParent = xHatchWinPeer;
 		}
-        else
-        {
+		else
+		{
             aOwnRectangle.X += aHatchRectangle.X;
             aOwnRectangle.Y += aHatchRectangle.Y;
-        }
+		}
 
         awt::WindowDescriptor aOwnWinDescriptor( awt::WindowClass_TOP,
                                                 ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("dockingwindow") ),
@@ -481,7 +481,7 @@ sal_Bool DocumentHolder::ShowInplace( const uno::Reference< awt::XWindowPeer >& 
 			throw uno::RuntimeException(); // TODO: can not create own window
 
 		// create a frame based on the specified window
-        uno::Reference< lang::XSingleServiceFactory > xFrameFact(
+		uno::Reference< lang::XSingleServiceFactory > xFrameFact(
 			m_xFactory->createInstance( ::rtl::OUString::createFromAscii( "com.sun.star.frame.TaskCreator" ) ),
 			uno::UNO_QUERY_THROW );
 
@@ -523,7 +523,7 @@ sal_Bool DocumentHolder::ShowInplace( const uno::Reference< awt::XWindowPeer >& 
 		// TODO: some listeners to the frame and the window ( resize for example )
 	}
 
-    if ( m_xComponent.is() )
+	if ( m_xComponent.is() )
 	{
         if ( !LoadDocToFrame( sal_True ) )
         {
@@ -752,11 +752,11 @@ sal_Bool DocumentHolder::ShowUI( const uno::Reference< ::com::sun::star::frame::
                 // as long as the LM is invisible and locked an empty tool space will be used on resizing
                 xOwnLM->setDockingAreaAcceptor( xDocAreaAcc );
 
-                // try to merge menues; don't do anything else if it fails
+                // try to merge menus; don't do anything else if it fails
 				if ( MergeMenues_Impl( xOwnLM, xContainerLM, xContainerDP, aContModuleName ) )
 				{
                     // make sure that the container LM does not control the size of the containers window anymore
-                    // this must be done after merging menues as we won't get the container menu otherwise
+                    // this must be done after merging menus as we won't get the container menu otherwise
                     xContainerLM->setDockingAreaAcceptor( uno::Reference < ui::XDockingAreaAcceptor >() );
 
                     // prevent further changes at this LM
@@ -776,7 +776,7 @@ sal_Bool DocumentHolder::ShowUI( const uno::Reference< ::com::sun::star::frame::
                		bResult = sal_True;
 
                     // TODO/LATER: The following action should be done only if the window is not hidden
-                    // otherwise the activation must fail, unfortunatelly currently it is not possible
+                    // otherwise the activation must fail, unfortunately currently it is not possible
                     // to detect whether the window is hidden using UNO API
                     m_xOwnWindow->setFocus();
                 }
@@ -964,9 +964,9 @@ uno::Reference< frame::XFrame > DocumentHolder::GetDocFrame()
         }
     }
     catch ( uno::Exception& )
-    {    	
+    {
     }
-    
+
 	return m_xFrame;
 }
 
@@ -982,19 +982,19 @@ void DocumentHolder::SetComponent( const uno::Reference< util::XCloseable >& xDo
 		{}
 	}
 
-    m_xComponent = xDoc;
-    // done outside currently uno::Reference < container::XChild > xChild( m_xComponent, uno::UNO_QUERY );
-    // done outside currently if ( xChild.is() && m_pEmbedObj )
-    // done outside currently 	xChild->setParent( m_pEmbedObj->getParent() );
+	m_xComponent = xDoc;
+	// done outside currently uno::Reference < container::XChild > xChild( m_xComponent, uno::UNO_QUERY );
+	// done outside currently if ( xChild.is() && m_pEmbedObj )
+	// done outside currently 	xChild->setParent( m_pEmbedObj->getParent() );
 
 	m_bReadOnly = bReadOnly;
-    m_bAllowClosing = sal_False;
+	m_bAllowClosing = sal_False;
 
-    uno::Reference< util::XCloseBroadcaster > xBroadcaster( m_xComponent, uno::UNO_QUERY );
+	uno::Reference< util::XCloseBroadcaster > xBroadcaster( m_xComponent, uno::UNO_QUERY );
 	if ( xBroadcaster.is() )
 		xBroadcaster->addCloseListener( ( util::XCloseListener* )this );
 
-    uno::Reference< document::XEventBroadcaster > xEventBroadcaster( m_xComponent, uno::UNO_QUERY );
+	uno::Reference< document::XEventBroadcaster > xEventBroadcaster( m_xComponent, uno::UNO_QUERY );
 	if ( xEventBroadcaster.is() )
 		xEventBroadcaster->addEventListener( ( document::XEventListener* )this );
 	else
@@ -1007,13 +1007,13 @@ void DocumentHolder::SetComponent( const uno::Reference< util::XCloseable >& xDo
 	}
 
 	if ( m_xFrame.is() )
-        LoadDocToFrame(sal_False);
+		LoadDocToFrame(sal_False);
 }
 
 //---------------------------------------------------------------------------
 sal_Bool DocumentHolder::LoadDocToFrame( sal_Bool bInPlace )
 {
-    if ( m_xFrame.is() && m_xComponent.is() )
+	if ( m_xFrame.is() && m_xComponent.is() )
 	{
         uno::Reference < frame::XModel > xDoc( m_xComponent, uno::UNO_QUERY );
         if ( xDoc.is() )
@@ -1029,12 +1029,12 @@ sal_Bool DocumentHolder::LoadDocToFrame( sal_Bool bInPlace )
                 aArgs.put( "PluginMode", sal_Int16(1) );
 			::rtl::OUString sUrl;
 			uno::Reference< lang::XServiceInfo> xServiceInfo(xDoc,uno::UNO_QUERY);
-			if (	xServiceInfo.is() 
+			if (	xServiceInfo.is()
 				&&	xServiceInfo->supportsService(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.report.ReportDefinition"))) )
 			{
 				sUrl = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(".component:DB/ReportDesign"));
 			}
-            else if( xServiceInfo.is() 
+            else if( xServiceInfo.is()
 				&&   xServiceInfo->supportsService( ::rtl::OUString::createFromAscii("com.sun.star.chart2.ChartDocument")) )
 				sUrl = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("private:factory/schart"));
 			else
@@ -1057,7 +1057,7 @@ sal_Bool DocumentHolder::LoadDocToFrame( sal_Bool bInPlace )
         }
 	}
 
-    return sal_True;
+	return sal_True;
 }
 
 //---------------------------------------------------------------------------
@@ -1077,7 +1077,7 @@ void DocumentHolder::Show()
 //---------------------------------------------------------------------------
 sal_Bool DocumentHolder::SetExtent( sal_Int64 nAspect, const awt::Size& aSize )
 {
-    uno::Reference< embed::XVisualObject > xDocVis( m_xComponent, uno::UNO_QUERY );
+	uno::Reference< embed::XVisualObject > xDocVis( m_xComponent, uno::UNO_QUERY );
 	if ( xDocVis.is() )
 	{
 		try
@@ -1097,7 +1097,7 @@ sal_Bool DocumentHolder::SetExtent( sal_Int64 nAspect, const awt::Size& aSize )
 //---------------------------------------------------------------------------
 sal_Bool DocumentHolder::GetExtent( sal_Int64 nAspect, awt::Size *pSize )
 {
-    uno::Reference< embed::XVisualObject > xDocVis( m_xComponent, uno::UNO_QUERY );
+	uno::Reference< embed::XVisualObject > xDocVis( m_xComponent, uno::UNO_QUERY );
 	if ( pSize && xDocVis.is() )
 	{
 		try
@@ -1117,12 +1117,12 @@ sal_Bool DocumentHolder::GetExtent( sal_Int64 nAspect, awt::Size *pSize )
 //---------------------------------------------------------------------------
 sal_Int32 DocumentHolder::GetMapUnit( sal_Int64 nAspect )
 {
-    uno::Reference< embed::XVisualObject > xDocVis( m_xComponent, uno::UNO_QUERY );
+	uno::Reference< embed::XVisualObject > xDocVis( m_xComponent, uno::UNO_QUERY );
 	if ( xDocVis.is() )
 	{
 		try
 		{
-            return xDocVis->getMapUnit( nAspect );
+			return xDocVis->getMapUnit( nAspect );
 		}
 		catch( uno::Exception& )
 		{
@@ -1155,9 +1155,9 @@ awt::Rectangle DocumentHolder::AddBorderToArea( const awt::Rectangle& aRect )
 void SAL_CALL DocumentHolder::disposing( const com::sun::star::lang::EventObject& aSource )
 		throw (uno::RuntimeException)
 {
-    if ( m_xComponent.is() && m_xComponent == aSource.Source )
+	if ( m_xComponent.is() && m_xComponent == aSource.Source )
 	{
-        m_xComponent = 0;
+		m_xComponent = 0;
 		if ( m_bWaitForClose )
 		{
 			m_bWaitForClose = sal_False;
@@ -1178,7 +1178,7 @@ void SAL_CALL DocumentHolder::disposing( const com::sun::star::lang::EventObject
 void SAL_CALL DocumentHolder::queryClosing( const lang::EventObject& aSource, sal_Bool /*bGetsOwnership*/ )
 		throw (util::CloseVetoException, uno::RuntimeException)
 {
-    if ( m_xComponent.is() && m_xComponent == aSource.Source && !m_bAllowClosing )
+	if ( m_xComponent.is() && m_xComponent == aSource.Source && !m_bAllowClosing )
 		throw util::CloseVetoException();
 }
 
@@ -1186,9 +1186,9 @@ void SAL_CALL DocumentHolder::queryClosing( const lang::EventObject& aSource, sa
 void SAL_CALL DocumentHolder::notifyClosing( const lang::EventObject& aSource )
 		throw (uno::RuntimeException)
 {
-    if ( m_xComponent.is() && m_xComponent == aSource.Source )
+	if ( m_xComponent.is() && m_xComponent == aSource.Source )
 	{
-        m_xComponent = 0;
+		m_xComponent = 0;
 		if ( m_bWaitForClose )
 		{
 			m_bWaitForClose = sal_False;
@@ -1216,10 +1216,10 @@ void SAL_CALL DocumentHolder::queryTermination( const lang::EventObject& )
 void SAL_CALL DocumentHolder::notifyTermination( const lang::EventObject& aSource )
 		throw (uno::RuntimeException)
 {
-    OSL_ENSURE( !m_xComponent.is(), "Just a disaster..." );
+	OSL_ENSURE( !m_xComponent.is(), "Just a disaster..." );
 
 	uno::Reference< frame::XDesktop > xDesktop( aSource.Source, uno::UNO_QUERY );
-    m_bDesktopTerminated = sal_True;
+	m_bDesktopTerminated = sal_True;
 	if ( xDesktop.is() )
 		xDesktop->removeTerminateListener( ( frame::XTerminateListener* )this );
 }
@@ -1238,7 +1238,7 @@ void SAL_CALL DocumentHolder::modified( const lang::EventObject& aEvent )
 void SAL_CALL DocumentHolder::notifyEvent( const document::EventObject& Event )
 	throw ( uno::RuntimeException )
 {
-    if( m_pEmbedObj && Event.Source == m_xComponent )
+	if( m_pEmbedObj && Event.Source == m_xComponent )
 	{
 		// for now the ignored events are not forwarded, but sent by the object itself
 		if ( !Event.EventName.equalsAscii( "OnSave" )
@@ -1343,14 +1343,16 @@ void SAL_CALL DocumentHolder::activated(  ) throw (::com::sun::star::uno::Runtim
 
 void DocumentHolder::ResizeHatchWindow()
 {
-    awt::Rectangle aHatchRect = AddBorderToArea( m_aObjRect );
-    ResizeWindows_Impl( aHatchRect );
-    uno::Reference< embed::XHatchWindow > xHatchWindow( m_xHatchWindow, uno::UNO_QUERY );
-    xHatchWindow->setHatchBorderSize( awt::Size( HATCH_BORDER_WIDTH, HATCH_BORDER_WIDTH ) );
+	awt::Rectangle aHatchRect = AddBorderToArea( m_aObjRect );
+	ResizeWindows_Impl( aHatchRect );
+	uno::Reference< embed::XHatchWindow > xHatchWindow( m_xHatchWindow, uno::UNO_QUERY );
+	xHatchWindow->setHatchBorderSize( awt::Size( HATCH_BORDER_WIDTH, HATCH_BORDER_WIDTH ) );
 }
 
 void SAL_CALL DocumentHolder::deactivated(  ) throw (::com::sun::star::uno::RuntimeException)
 {
-    // deactivation is too unspecific to be useful; usually we only trigger code from activation
-    // so UIDeactivation is actively triggered by the container
+	// deactivation is too unspecific to be useful; usually we only trigger code from activation
+	// so UIDeactivation is actively triggered by the container
 }
+
+/* vim: set noet sw=4 ts=4: */
