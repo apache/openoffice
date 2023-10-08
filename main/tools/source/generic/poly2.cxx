@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -219,7 +219,7 @@ void PolyPolygon::Replace( const Polygon& rPoly, sal_uInt16 nPos )
 {
 	DBG_CHKTHIS( PolyPolygon, NULL );
 	DBG_ASSERT( nPos < Count(), "PolyPolygon::Replace(): nPos >= nSize" );
-	if ( nPos >= Count() ) return; // not replaceable	
+	if ( nPos >= Count() ) return; // not replaceable
 
 	if ( mpImplPolyPolygon->mnRefCount > 1 )
 	{
@@ -363,7 +363,7 @@ void PolyPolygon::AdaptiveSubdivide( PolyPolygon& rResult, const double d ) cons
 // -----------------------------------------------------------------------
 
 void PolyPolygon::GetIntersection( const PolyPolygon& rPolyPoly, PolyPolygon& rResult ) const
-{	
+{
 	ImplDoOperation( rPolyPoly, rResult, POLY_CLIP_INT );
 }
 
@@ -391,7 +391,7 @@ void PolyPolygon::GetXOR( const PolyPolygon& rPolyPoly, PolyPolygon& rResult ) c
 // -----------------------------------------------------------------------
 
 void PolyPolygon::ImplDoOperation( const PolyPolygon& rPolyPoly, PolyPolygon& rResult, sal_uIntPtr nOperation ) const
-{ 
+{
 	// Convert to B2DPolyPolygon, temporarily. It might be
 	// advantageous in the future, to have a PolyPolygon adaptor that
 	// just simulates a B2DPolyPolygon here...
@@ -399,7 +399,7 @@ void PolyPolygon::ImplDoOperation( const PolyPolygon& rPolyPoly, PolyPolygon& rR
 	basegfx::B2DPolyPolygon aMergePolyPolygonB( rPolyPoly.getB2DPolyPolygon() );
 
 	// normalize the two polypolygons before. Force properly oriented
-	// polygons. 
+	// polygons.
 	aMergePolyPolygonA = basegfx::tools::prepareForPolygonOperation( aMergePolyPolygonA );
 	aMergePolyPolygonB = basegfx::tools::prepareForPolygonOperation( aMergePolyPolygonB );
 
@@ -871,7 +871,7 @@ PolyPolygon::PolyPolygon(const basegfx::B2DPolyPolygon& rPolyPolygon)
 {
 	DBG_CTOR( PolyPolygon, NULL );
 	const sal_uInt16 nCount(sal_uInt16(rPolyPolygon.count()));
-	DBG_ASSERT(sal_uInt32(nCount) == rPolyPolygon.count(), 
+	DBG_ASSERT(sal_uInt32(nCount) == rPolyPolygon.count(),
 		"PolyPolygon::PolyPolygon: Too many sub-polygons in given basegfx::B2DPolyPolygon (!)");
 
 	if ( nCount )
@@ -890,4 +890,4 @@ PolyPolygon::PolyPolygon(const basegfx::B2DPolyPolygon& rPolyPolygon)
 	}
 }
 
-// eof
+/* vim: set noet sw=4 ts=4: */
