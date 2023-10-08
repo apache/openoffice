@@ -884,7 +884,7 @@ The following structure describes the permissions used in PDF security
 
 	/** Create a new named destination to be used in a link from another PDF document
 
-	@parm sDestName
+	@param sDestName
 	the name (label) of the bookmark, to be used to jump to
 
 	@param rRect
@@ -1242,7 +1242,7 @@ The following structure describes the permissions used in PDF security
 	 */
 	void SetActualText( const String& rText );
 
-	/** set the Alt attribute of a strutural element
+	/** set the Alt attribute of a structural element
 
 	Alt is s replacement text describing the contents of a structural element. This
 	is mainly used by accessibility applications; e.g. a screen reader would read
@@ -1310,7 +1310,7 @@ The following structure describes the permissions used in PDF security
 	the interface to the additional stream
 
 	@param bCompress
-	specifies whether the stream should be flate encoded by PDFWriter or not
+	specifies whether the stream should be flat encoded by PDFWriter or not
 	 */
 	void AddStream( const String& rMimeType, PDFOutputStream* pStream, bool bCompress );
 

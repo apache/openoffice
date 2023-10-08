@@ -577,7 +577,7 @@ public:
     /**
        Handle properties of a certain cell in the current row.
 
-       @paran i        index of the cell in the current row
+       @param i        index of the cell in the current row
        @param pProps   the properties
      */
     virtual void cellPropsByCell(unsigned int i, PropertiesPointer pProps);
@@ -1090,3 +1090,5 @@ void TableManager<T, PropertiesPointer>::ensureOpenCell(PropertiesPointer pProps
 }
 
 #endif // INCLUDED_TABLE_MANAGER_HXX
+
+/* vim: set noet sw=4 ts=4: */

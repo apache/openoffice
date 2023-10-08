@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@
 #ifndef _DBAUI_INDEXCOLLECTION_HXX_
 #include "indexcollection.hxx"
 #endif
-#ifndef _SV_MSGBOX_HXX 
+#ifndef _SV_MSGBOX_HXX
 #include <vcl/msgbox.hxx>
 #endif
 #ifndef _COM_SUN_STAR_SDB_SQLCONTEXT_HPP_
@@ -95,7 +95,7 @@ namespace dbaui
 			return sal_False;
 
 		ConstIndexFieldsIterator aLeft = _rLHS.begin();
-        ConstIndexFieldsIterator aLeftEnd = _rLHS.end();
+		ConstIndexFieldsIterator aLeftEnd = _rLHS.end();
 		ConstIndexFieldsIterator aRight = _rRHS.begin();
 		for	(; aLeft != aLeftEnd; ++aLeft, ++aRight)
 		{
@@ -135,9 +135,9 @@ namespace dbaui
 				::rtl::OUString sNewName(_rNewText);
 				::rtl::OUString sAlias = ::dbtools::convertName2SQLName(sNewName,xMeta->getExtraNameCharacters());
 				if ( ( xMeta->supportsMixedCaseQuotedIdentifiers() )
-						? 
-						sAlias != sNewName 
-						: 
+						?
+						sAlias != sNewName
+						:
 				!sNewName.equalsIgnoreAsciiCase(sAlias))
 					return sal_False;
 			}
@@ -199,8 +199,8 @@ namespace dbaui
 	//==================================================================
 DBG_NAME(DbaIndexDialog)
 //------------------------------------------------------------------
-	DbaIndexDialog::DbaIndexDialog(	Window* _pParent, const Sequence< ::rtl::OUString >& _rFieldNames, 
-									const Reference< XNameAccess >& _rxIndexes, 
+	DbaIndexDialog::DbaIndexDialog(	Window* _pParent, const Sequence< ::rtl::OUString >& _rFieldNames,
+									const Reference< XNameAccess >& _rxIndexes,
 									const Reference< XConnection >& _rxConnection,
 									const Reference< XMultiServiceFactory >& _rxORB,sal_Int32 _nMaxColumnsInIndex)
 		:ModalDialog( _pParent, ModuleRes(DLG_INDEXDESIGN))
@@ -221,7 +221,7 @@ DBG_NAME(DbaIndexDialog)
 		,m_bEditAgain(sal_False)
 		,m_xORB(_rxORB)
 	{
-        DBG_CTOR(DbaIndexDialog,NULL);
+		DBG_CTOR(DbaIndexDialog,NULL);
 
 		FreeResource();
 
@@ -313,7 +313,7 @@ DBG_NAME(DbaIndexDialog)
 
 		SvLBoxEntry* pSelected = m_aIndexes.FirstSelected();
 		sal_Bool bSelectedAnything = NULL != pSelected;
-		
+
 
 		if (pSelected)
 		{
@@ -321,14 +321,14 @@ DBG_NAME(DbaIndexDialog)
 			Indexes::const_iterator aSelectedPos = m_pIndexes->begin() + reinterpret_cast<sal_IntPtr>(pSelected->GetUserData());
 			m_aActions.EnableItem(ID_INDEX_SAVE, aSelectedPos->isModified() || aSelectedPos->isNew());
 			m_aActions.EnableItem(ID_INDEX_RESET, aSelectedPos->isModified() || aSelectedPos->isNew());
-            bSelectedAnything = bSelectedAnything && !aSelectedPos->bPrimaryKey;
+			bSelectedAnything = bSelectedAnything && !aSelectedPos->bPrimaryKey;
 		}
 		else
 		{
 			m_aActions.EnableItem(ID_INDEX_SAVE, sal_False);
 			m_aActions.EnableItem(ID_INDEX_RESET, sal_False);
 		}
-        m_aActions.EnableItem(ID_INDEX_DROP, bSelectedAnything);
+		m_aActions.EnableItem(ID_INDEX_DROP, bSelectedAnything);
 		m_aActions.EnableItem(ID_INDEX_RENAME, bSelectedAnything);
 	}
 
@@ -365,9 +365,9 @@ DBG_NAME(DbaIndexDialog)
 		// save our geometry settings
 //		Point aPos = GetPosPixel();
 //		m_aGeometrySettings.SetPosition(aPos.X(), aPos.Y());
-	
-        DBG_DTOR(DbaIndexDialog,NULL);
-    }
+
+		DBG_DTOR(DbaIndexDialog,NULL);
+	}
 
 	//------------------------------------------------------------------
 	sal_Bool DbaIndexDialog::implCommit(SvLBoxEntry* _pEntry)
@@ -571,7 +571,7 @@ DBG_NAME(DbaIndexDialog)
 			OnDropIndex(sal_False);
 			return;
 		}
-		
+
 		SQLExceptionInfo aExceptionInfo;
 		try
 		{
@@ -638,7 +638,7 @@ DBG_NAME(DbaIndexDialog)
 		{
 			// the descriptor
 			Indexes::const_iterator aSelected = m_pIndexes->begin() + reinterpret_cast<sal_IntPtr>(pSelected->GetUserData());
-			
+
 			if (aSelected->isModified() || aSelected->isNew())
 			{
 				QueryBox aQuestion(this, ModuleRes(QUERY_SAVE_CURRENT_INDEX));
@@ -675,7 +675,7 @@ DBG_NAME(DbaIndexDialog)
 	IMPL_LINK( DbaIndexDialog, OnEntryEdited, SvLBoxEntry*, _pEntry )
 	{
 		Indexes::iterator aPosition = m_pIndexes->begin() + reinterpret_cast<sal_IntPtr>(_pEntry->GetUserData());
-		
+
 		DBG_ASSERT(aPosition >= m_pIndexes->begin() && aPosition < m_pIndexes->end(),
 			"DbaIndexDialog::OnEntryEdited: invalid entry!");
 
@@ -912,7 +912,7 @@ DBG_NAME(DbaIndexDialog)
 	{
 		sal_Int16 nN = IMG_INDEX_DLG_SC;
 		sal_Int16 nH = IMG_INDEX_DLG_SCH;
-		if ( _eBitmapSet == SFX_SYMBOLS_SIZE_LARGE )	 	 
+		if ( _eBitmapSet == SFX_SYMBOLS_SIZE_LARGE )
 		{
 			nN = IMG_INDEX_DLG_LC;
 			nH = IMG_INDEX_DLG_LCH;
@@ -929,14 +929,14 @@ DBG_NAME(DbaIndexDialog)
 			Size aDlgSize = GetSizePixel();
 			// adjust size of dlg
 			SetSizePixel(Size(aDlgSize.Width() + _rDiff.Width(),
-							  aDlgSize.Height() + _rDiff.Height())	
+							  aDlgSize.Height() + _rDiff.Height())
 						);
 			Size aIndexSize = m_aIndexes.GetSizePixel();
 			m_aIndexes.SetPosSizePixel(m_aIndexes.GetPosPixel() + Point(0,_rDiff.Height()),
 									Size(aIndexSize.Width() + _rDiff.Width(),
-									     aIndexSize.Height()));
+										 aIndexSize.Height()));
 
-			//now move the rest to the left side
+			// now move the rest to the left side
 			Point aMove(_rDiff.Width(),_rDiff.Height());
 			m_aIndexDetails.SetPosPixel(m_aIndexDetails.GetPosPixel() + aMove);
 			m_aDescriptionLabel.SetPosPixel(m_aDescriptionLabel.GetPosPixel() + aMove);
@@ -954,5 +954,5 @@ DBG_NAME(DbaIndexDialog)
 
 //......................................................................
 }	// namespace dbaui
-//......................................................................
 
+/* vim: set noet sw=4 ts=4: */
