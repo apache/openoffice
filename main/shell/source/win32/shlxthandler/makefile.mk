@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -35,7 +35,7 @@ USE_STLP_DEBUG=
 
 # --- Settings -----------------------------------------------------
 
-.INCLUDE :  settings.mk
+.INCLUDE :	settings.mk
 
 UWINAPILIB =
 UWINAPILIB_X64 =
@@ -63,29 +63,29 @@ SHL1LIBS=
 .ELSE
 SHL1STDLIBS=
 SHL1LIBS=$(SOLARLIBDIR)$/zlib.lib\
-    $(SOLARLIBDIR)$/expat_xmlparse.lib\
-    $(SOLARLIBDIR)$/expat_xmltok.lib
+	$(SOLARLIBDIR)$/expat_xmlparse.lib\
+	$(SOLARLIBDIR)$/expat_xmltok.lib
 .ENDIF
 SHL1STDLIBS+=\
-    $(OLEAUT32LIB)\
-    $(ADVAPI32LIB)\
-    $(OLE32LIB)\
-    $(UUIDLIB)\
-    $(SHELL32LIB)\
-    $(KERNEL32LIB)\
-    $(GDI32LIB)\
-    $(GDIPLUSLIB)
+	$(OLEAUT32LIB)\
+	$(ADVAPI32LIB)\
+	$(OLE32LIB)\
+	$(UUIDLIB)\
+	$(SHELL32LIB)\
+	$(KERNEL32LIB)\
+	$(GDI32LIB)\
+	$(GDIPLUSLIB)
 
 .IF "$(COM)"!="GCC"
 SHL1STDLIBS+=\
-    msvcprt.lib
+	msvcprt.lib
 .ENDIF
 
 SHL1STDLIBS+=\
-    $(SHLWAPILIB)
+	$(SHLWAPILIB)
 
 SHL1LIBS+=$(SLB)$/util.lib\
-    $(SLB)$/ooofilereader.lib
+	$(SLB)$/ooofilereader.lib
 
 SHL1DEPN=
 
@@ -115,26 +115,26 @@ SLOFILES_X64= \
 
 SHL1TARGET_X64=$(TARGET)
 SHL1LIBS_X64=$(SOLARLIBDIR_X64)$/zlib.lib\
-    $(SOLARLIBDIR_X64)$/expat_xmlparse.lib\
-    $(SOLARLIBDIR_X64)$/expat_xmltok.lib
+	$(SOLARLIBDIR_X64)$/expat_xmlparse.lib\
+	$(SOLARLIBDIR_X64)$/expat_xmltok.lib
 
 SHL1STDLIBS_X64+=\
-    $(OLEAUT32LIB_X64)\
-    $(ADVAPI32LIB_X64)\
-    $(OLE32LIB_X64)\
-    $(UUIDLIB_X64)\
-    $(SHELL32LIB_X64)\
-    $(KERNEL32LIB_X64)\
-    $(GDI32LIB_X64)\
-    $(USER32LIB_X64) \
-    $(GDIPLUSLIB_X64) \
-	$(MSVCRT_X64)   \
-	$(MSVCPRT_X64)  \
+	$(OLEAUT32LIB_X64)\
+	$(ADVAPI32LIB_X64)\
+	$(OLE32LIB_X64)\
+	$(UUIDLIB_X64)\
+	$(SHELL32LIB_X64)\
+	$(KERNEL32LIB_X64)\
+	$(GDI32LIB_X64)\
+	$(USER32LIB_X64) \
+	$(GDIPLUSLIB_X64) \
+	$(MSVCRT_X64) \
+	$(MSVCPRT_X64) \
 	$(OLDNAMESLIB_X64) \
-    msvcprt.lib
+	msvcprt.lib
 
 SHL1LIBS_X64+=$(SLB_X64)$/util.lib\
-    $(SLB_X64)$/ooofilereader.lib
+	$(SLB_X64)$/ooofilereader.lib
 SHL1OBJS_X64=$(SLOFILES_X64)
 SHL1DEF_X64=$(MISC_X64)$/$(SHL1TARGET).def
 SHL1RES_X64=$(RES_X64)$/$(TARGET).res
@@ -151,3 +151,4 @@ INCLUDE!:=$(subst,/stl, $(INCLUDE))
 
 .INCLUDE :	tg_wntx64.mk
 
+# vim: set noet sw=4 ts=4:
