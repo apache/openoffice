@@ -127,9 +127,9 @@ public class InterfaceContainer implements Cloneable
     }
     
     /**
-     * Trims the capacity of this <tt>ArrayList</tt> instance to be the
+     * Trims the capacity of this <kbd>ArrayList</kbd> instance to be the
      * list's current size.  An application can use this operation to minimize
-     * the storage of an <tt>ArrayList</tt> instance.
+     * the storage of an <kbd>ArrayList</kbd> instance.
      */
     synchronized public void trimToSize()
     {
@@ -143,7 +143,7 @@ public class InterfaceContainer implements Cloneable
     }
     
     /**
-     * Increases the capacity of this <tt>ArrayList</tt> instance, if
+     * Increases the capacity of this <kbd>ArrayList</kbd> instance, if
      * necessary, to ensure  that it can hold at least the number of elements
      * specified by the minimum capacity argument.
      *
@@ -167,7 +167,7 @@ public class InterfaceContainer implements Cloneable
      * Appends the specified element to the end of this list.
      *
      * @param o element to be appended to this list.
-     * @return <tt>true</tt> (as per the general contract of Collection.add).
+     * @return <kbd>true</kbd> (as per the general contract of Collection.add).
      */
     synchronized public boolean add(Object o)
     {
@@ -189,7 +189,7 @@ public class InterfaceContainer implements Cloneable
      * @param index index at which the specified element is to be inserted.
      * @param element element to be inserted.
      * @throws    IndexOutOfBoundsException if index is out of range
-     *		  <tt>(index &lt; 0 || index &gt; size())</tt>.
+     *		  <kbd>(index &lt; 0 || index &gt; size())</kbd>.
      */
     synchronized public void add(int index, Object element)
     {
@@ -218,8 +218,8 @@ public class InterfaceContainer implements Cloneable
      * list is nonempty.)
      *
      * @param c the elements to be inserted into this list.
-     * @throws    IndexOutOfBoundsException if index out of range <tt>(index
-     *		  &lt; 0 || index &gt; size())</tt>.
+     * @throws    IndexOutOfBoundsException if index out of range <kbd>(index
+     *		  &lt; 0 || index &gt; size())</kbd>.
      */
     synchronized public boolean addAll(Collection c)
     {
@@ -246,8 +246,8 @@ public class InterfaceContainer implements Cloneable
      * @param index index at which to insert first element
      *		    from the specified collection.
      * @param c elements to be inserted into this list.
-     * @throws    IndexOutOfBoundsException if index out of range <tt>(index
-     *		  &lt; 0 || index &gt; size())</tt>.
+     * @throws    IndexOutOfBoundsException if index out of range <kbd>(index
+     *		  &lt; 0 || index &gt; size())</kbd>.
      */
     synchronized public boolean addAll(int index, Collection c)
     {
@@ -302,7 +302,7 @@ public class InterfaceContainer implements Cloneable
         }
     }
     /**
-     * Returns <tt>true</tt> if this list contains the specified element.
+     * Returns <kbd>true</kbd> if this list contains the specified element.
      *
      * @param elem element whose presence in this List is to be tested.
      */
@@ -334,8 +334,8 @@ public class InterfaceContainer implements Cloneable
      *
      * @param  index index of element to return.
      * @return the element at the specified position in this list.
-     * @throws    IndexOutOfBoundsException if index is out of range <tt>(index
-     * 		  &lt; 0 || index &gt;= size())</tt>.
+     * @throws    IndexOutOfBoundsException if index is out of range <kbd>(index
+     * 		  &lt; 0 || index &gt;= size())</kbd>.
      */
     synchronized public Object get(int index)
     {
@@ -349,11 +349,11 @@ public class InterfaceContainer implements Cloneable
     
     /**
      * Searches for the first occurrence of the given argument, testing
-     * for equality using the <tt>equals</tt> method.
+     * for equality using the <kbd>equals</kbd> method.
      *
      * @param   elem   an object.
      * @return  the index of the first occurrence of the argument in this
-     *          list; returns <tt>-1</tt> if the object is not found.
+     *          list; returns <kbd>-1</kbd> if the object is not found.
      * @see     Object#equals(Object)
      */
     synchronized public int indexOf(Object elem)
@@ -387,8 +387,8 @@ public class InterfaceContainer implements Cloneable
     /**
      * Tests if this list has no elements.
      *
-     * @return  <tt>true</tt> if this list has no elements;
-     *          <tt>false</tt> otherwise.
+     * @return  <kbd>true</kbd> if this list has no elements;
+     *          <kbd>false</kbd> otherwise.
      */
     synchronized public boolean isEmpty()
     {
@@ -441,10 +441,10 @@ public class InterfaceContainer implements Cloneable
     }
     
     /**
-     * Returns a shallow copy of this <tt>ArrayList</tt> instance. The contained 
+     * Returns a shallow copy of this <kbd>ArrayList</kbd> instance. The contained 
      * references are copied but the objects not.
      *
-     * @return  a clone of this <tt>List</tt> instance.
+     * @return  a clone of this <kbd>List</kbd> instance.
      */
     synchronized public Object clone()
     {
@@ -486,8 +486,8 @@ public class InterfaceContainer implements Cloneable
      *
      * @param index the index of the element to removed.
      * @return the element that was removed from the list.
-     * @throws    IndexOutOfBoundsException if index out of range <tt>(index
-     * 		  &lt; 0 || index &gt;= size())</tt>.
+     * @throws    IndexOutOfBoundsException if index out of range <kbd>(index
+     * 		  &lt; 0 || index &gt;= size())</kbd>.
      */
     synchronized public Object remove(int index)
     {
@@ -598,7 +598,7 @@ public class InterfaceContainer implements Cloneable
      * @param element element to be stored at the specified position.
      * @return the element previously at the specified position.
      * @throws    IndexOutOfBoundsException if index out of range
-     *		  <tt>(index &lt; 0 || index &gt;= size())</tt>.
+     *		  <kbd>(index &lt; 0 || index &gt;= size())</kbd>.
      */
     synchronized public Object set(int index, Object element)
     {
@@ -653,9 +653,9 @@ public class InterfaceContainer implements Cloneable
      * If the list fits in the specified array with room to spare (i.e., the
      * array has more elements than the list), the element in the array
      * immediately following the end of the collection is set to
-     * <tt>null</tt>.  This is useful in determining the length of the list
+     * <kbd>null</kbd>.  This is useful in determining the length of the list
      * <i>only</i> if the caller knows that the list does not contain any
-     * <tt>null</tt> elements.
+     * <kbd>null</kbd> elements.
      *
      * @param a the array into which the elements of the list are to
      *		be stored, if it is big enough; otherwise, a new array of the
