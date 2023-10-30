@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -313,10 +313,10 @@ Sequence< sal_Int8 > SAL_CALL SbaTableQueryBrowser::getImplementationId(  ) thro
 void SAL_CALL SbaTableQueryBrowser::disposing()
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
-		// doin' a lot of VCL stuff here -> lock the SolarMutex
+		// doing a lot of VCL stuff here -> lock the SolarMutex
 
 	// kiss our listeners goodbye
-	
+
 	::com::sun::star::lang::EventObject aEvt(*this);
 	m_aSelectionListeners.disposeAndClear(aEvt);
     m_aContextMenuInterceptors.disposeAndClear(aEvt);
@@ -519,9 +519,9 @@ void SbaTableQueryBrowser::impl_sanitizeRowSetClauses_nothrow()
         // That'd be a chance to replace getStructuredFilter with something more reasonable. This method
         // has at least one other problem: For a clause like "<column> != <value>", it will return "<column>"
         // as column name, "NOT_EQUAL" as operator, and "!= <value>" as value, effectively duplicating the
-        // information about the operator, and beding all clients to manually remove the "!=" from the value
+        // information about the operator, and begging all clients to manually remove the "!=" from the value
         // string.
-        // So, what really would be handy, is some 
+        // So, what really would be handy, is some
         //   XNormalizedFilter getNormalizedFilter();
         // with
         //   interface XDisjunctiveFilterExpression
@@ -821,7 +821,7 @@ sal_Bool SbaTableQueryBrowser::InitializeGridModel(const Reference< ::com::sun::
                 aDescription >>= sTemp;
                 if ( !sTemp.getLength() )
                     xColumn->getPropertyValue( PROPERTY_DESCRIPTION ) >>= sTemp;
-                
+
                 aDescription <<= sTemp;
                 aInitialValues.push_back( NamedValue( PROPERTY_HELPTEXT, aDescription ) );
 
@@ -1427,7 +1427,7 @@ void SAL_CALL SbaTableQueryBrowser::disposing( const ::com::sun::star::lang::Eve
 				// maybe update the UI
 				implCheckExternalSlot( nSlotId );
 
-				// continue, the same XDispatch may be resposible for more than one URL
+				// continue, the same XDispatch may be responsible for more than one URL
 				aLoop = aNext;
 			}
 		}
@@ -1444,7 +1444,7 @@ void SAL_CALL SbaTableQueryBrowser::disposing( const ::com::sun::star::lang::Eve
 					DBTreeListUserData* pData = static_cast<DBTreeListUserData*>(pDSLoop->GetUserData());
 					if ( pData && pData->xConnection == xCon )
 					{
-						// we set the conenction to null to avoid a second disposing of the connection
+						// we set the connection to null to avoid a second disposing of the connection
 						pData->xConnection.clear();
 						closeConnection(pDSLoop,sal_False);
 						break;
@@ -1487,7 +1487,7 @@ void SbaTableQueryBrowser::implRemoveStatusListeners()
 sal_Bool SAL_CALL SbaTableQueryBrowser::select( const Any& _rSelection ) throw (IllegalArgumentException, RuntimeException)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
-		// doin' a lot of VCL stuff here -> lock the SolarMutex
+		// doing a lot of VCL stuff here -> lock the SolarMutex
 
 	Sequence< PropertyValue > aDescriptorSequence;
 	if (!(_rSelection >>= aDescriptorSequence))
@@ -1504,7 +1504,7 @@ sal_Bool SAL_CALL SbaTableQueryBrowser::select( const Any& _rSelection ) throw (
 		OSL_ENSURE(sal_False, "SbaTableQueryBrowser::select: could not extract the descriptor!");
 	}
 
-	// check the precense of the props we need
+	// check the presence of the props we need
 	if ( !(aDescriptor.has(daDataSource) || aDescriptor.has(daDatabaseLocation)) || !aDescriptor.has(daCommand) || !aDescriptor.has(daCommandType))
 		throw IllegalArgumentException(::rtl::OUString(), *this, 1);
 		// TODO: error message
@@ -2263,7 +2263,7 @@ IMPL_LINK(SbaTableQueryBrowser, OnExpandEntry, SvLBoxEntry*, _pParent)
 
 				// first insert the views because the tables can also include
 				// views but that time the bitmap is the wrong one
-				// the nameaccess will be overwriten in populateTree
+				// the nameaccess will be overwritten in populateTree
 				Reference<XViewsSupplier> xViewSup(xConnection,UNO_QUERY);
 				if(xViewSup.is())
 					populateTree( xViewSup->getViews(), _pParent, etTableOrView );
@@ -2373,7 +2373,7 @@ sal_Bool SbaTableQueryBrowser::ensureEntryObject( SvLBoxEntry* _pEntry )
                     {
                         DBG_UNHANDLED_EXCEPTION();
                     }
-                    
+
                     bSuccess = pEntryData->xContainer.is();
                 }
                 else
@@ -2611,7 +2611,7 @@ bool SbaTableQueryBrowser::implSelect( SvLBoxEntry* _pEntry )
 	sal_Int32 nOldType = 0;
 	xRowSetProps->getPropertyValue(PROPERTY_COMMAND_TYPE) >>= nOldType;
 	Reference<XConnection> xOldConnection(xRowSetProps->getPropertyValue(PROPERTY_ACTIVE_CONNECTION),UNO_QUERY);
-	
+
 	// the name of the table or query
 	SvLBoxString* pString = (SvLBoxString*)_pEntry->GetFirstItem(SV_ITEM_ID_BOLDLBSTRING);
 	OSL_ENSURE(pString,"There must be a string item!");
@@ -3155,7 +3155,7 @@ namespace
 void SbaTableQueryBrowser::impl_initialize()
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
-		// doin' a lot of VCL stuff here -> lock the SolarMutex
+		// doing a lot of VCL stuff here -> lock the SolarMutex
 
 	// first initialize the parent
 	SbaXDataBrowserController::impl_initialize();
@@ -3452,7 +3452,7 @@ IMPL_LINK( SbaTableQueryBrowser, OnTreeEntryCompare, const SvSortData*, _pSortDa
 
 	if (isContainer(pRHS))
 	{
-		// don't use getEntryType (directly or indirecly) for the LHS:
+		// don't use getEntryType (directly or indirectly) for the LHS:
 		// LHS is currently being inserted, so it is not "completely valid" at the moment
 
 		const EntryType eRight = getEntryType(pRHS);
@@ -3501,7 +3501,7 @@ IMPL_LINK( SbaTableQueryBrowser, OnTreeEntryCompare, const SvSortData*, _pSortDa
 		}
 	}
 	else
-		// default behaviour if we do not have a collator -> do the simple string compare
+		// default behavior if we do not have a collator -> do the simple string compare
 		nCompareResult = sLeftText.CompareTo(sRightText);
 
 	return nCompareResult;
@@ -3648,7 +3648,7 @@ sal_Bool SbaTableQueryBrowser::implGetQuerySignature( ::rtl::OUString& _rCommand
 
 	try
 	{
-		// ontain the dss (data source signature) of the form
+		// contain the dss (data source signature) of the form
 		::rtl::OUString sDataSourceName;
 		::rtl::OUString sCommand;
 		sal_Int32		nCommandType = CommandType::COMMAND;
@@ -3930,4 +3930,4 @@ void SAL_CALL SbaTableQueryBrowser::changedDatabaseLocation( const DatabaseRegis
 }	// namespace dbaui
 // .........................................................................
 
-
+/* vim: set noet sw=4 ts=4: */

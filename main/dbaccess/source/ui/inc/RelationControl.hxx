@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef DBAUI_RELATIONCONTROL_HXX
@@ -38,8 +39,8 @@ namespace dbaui
 	//========================================================================
 	class OTableListBoxControl;
 	class OTableConnectionData;
-	class ORelationTableConnectionData;	
-	class IRelationControlInterface;	
+	class ORelationTableConnectionData;
+	class IRelationControlInterface;
 	class ORelationControl;
 
 	class OTableListBoxControl	: public Window
@@ -68,28 +69,28 @@ namespace dbaui
 		void fillListBoxes();
 
 		/** fillAndDisable fill the listboxes only with one entry and then disable them
-			@param	_pConnectionData 
+			@param	_pConnectionData
 					contains the data which should be filled into the listboxes
 		*/
 		void fillAndDisable(const TTableConnectionData::value_type& _pConnectionData);
 
-        /** enables the relation control
-        *
-        * \param _bEnable when sal_True enables it, otherwise disable it.
-        */
-        void enableRelation(bool _bEnable);
+		/** enables the relation control
+		*
+		* \param _bEnable when sal_True enables it, otherwise disable it.
+		*/
+		void enableRelation(bool _bEnable);
 
-		/** NotifyCellChange notifies the browse control that the conenction data has changed
+		/** NotifyCellChange notifies the browse control that the connection data has changed
 		*/
 		void NotifyCellChange();
 
 		/** Init is a call through to the control inside this one
-			@param	_pConnData	
+			@param	_pConnData
 					the connection data which is used to init the control
 		*/
 		void Init(const TTableConnectionData::value_type& _pConnData);
 		void lateUIInit(Window* _pTableSeparator = NULL);
-        void lateInit();
+		void lateInit();
 
 		sal_Bool SaveModified();
 
@@ -102,3 +103,5 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_RELATIONCONTROL_HXX
+
+/* vim: set noet sw=4 ts=4: */
