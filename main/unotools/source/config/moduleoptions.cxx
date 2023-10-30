@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -146,7 +146,7 @@ struct FactoryInfo
 
         //---------------------------------------------------------------------------------------------------------
         // returns list of properties, which has changed only!
-        // We use given value of sNodeBase to build full qualified pathes ...
+        // We use given value of sNodeBase to build full qualified paths ...
         // Last sign of it must be "/". Because we use it directly, without any additional things!
         css::uno::Sequence< css::beans::PropertyValue > getChangedProperties( const ::rtl::OUString& sNodeBase )
         {
@@ -526,7 +526,7 @@ void SvtModuleOptions_Impl::Notify( const css::uno::Sequence< ::rtl::OUString >&
     @descr      These method writes the changed values into the sub tree
                 and should always called in our destructor to guarantee consistency of config data.
 
-    @attention  We clear complete set in configuration first and write it completly new! So we don't must
+    @attention  We clear complete set in configuration first and write it completely new! So we don't must
                 distinguish between existing, added or removed elements. Our internal cached values
                 are the only and right ones.
 
@@ -579,7 +579,7 @@ void SvtModuleOptions_Impl::Commit()
     @descr      These methods implement easy access to our internal values.
                 You give us right enum value to specify which module interest you ... we return right information.
 
-    @attention  Some poeple use any value as enum ... but we support in header specified values only!
+    @attention  Some people use any value as enum ... but we support in header specified values only!
                 We use it directly as index in our internal list. If enum value isn't right - we crash with an
                 "index out of range"!!! Please use me right - otherwise there is no guarantee.
 
@@ -899,7 +899,7 @@ css::uno::Sequence< ::rtl::OUString > SvtModuleOptions_Impl::impl_ExpandSetNames
     @descr      Every factory has his own long and short name. So we can match right enum value for internal using.
 
     @attention  We change in/out parameter "eFactory" in every case! But you should use it only, if return value is sal_True!
-                Algorithm:  Set out-parameter to propably value ... and check the longname.
+                Algorithm:  Set out-parameter to probably value ... and check the longname.
                             If it match with these factory - break operation and return true AND right set parameter.
                             Otherwise try next one and so on. If no factory was found return false. Out parameter eFactory
                             is set to last tried value but shouldn't be used! Because our return value is false!
@@ -994,7 +994,7 @@ sal_Bool SvtModuleOptions_Impl::ClassifyFactoryByName( const ::rtl::OUString& sN
 *//*-*************************************************************************************************************/
 void SvtModuleOptions_Impl::impl_Read( const css::uno::Sequence< ::rtl::OUString >& lFactories )
 {
-    // Expand every set node name in lFactories to full qualified pathes to his properties
+    // Expand every set node name in lFactories to full qualified paths to his properties
     // and get right values from configuration.
     const css::uno::Sequence< ::rtl::OUString > lProperties = impl_ExpandSetNames( lFactories  );
     const css::uno::Sequence< css::uno::Any >   lValues     = GetProperties( lProperties );
@@ -1405,9 +1405,9 @@ SvtModuleOptions::EFactory SvtModuleOptions::ClassifyFactoryByShortName(const ::
 {
     if (sName.equalsAscii("swriter"))
         return E_WRITER;
-    if (sName.equalsIgnoreAsciiCaseAscii("swriter/Web")) // sometimes they are registerd for swriter/web :-(
+    if (sName.equalsIgnoreAsciiCaseAscii("swriter/Web")) // sometimes they are registered for swriter/web :-(
         return E_WRITERWEB;
-    if (sName.equalsIgnoreAsciiCaseAscii("swriter/GlobalDocument")) // sometimes they are registerd for swriter/globaldocument :-(
+    if (sName.equalsIgnoreAsciiCaseAscii("swriter/GlobalDocument")) // sometimes they are registered for swriter/globaldocument :-(
         return E_WRITERGLOBAL;
     if (sName.equalsAscii("scalc"))
         return E_CALC;
@@ -1591,3 +1591,4 @@ SvtModuleOptions::EFactory SvtModuleOptions::ClassifyFactoryByModel(const css::u
 	return aModule;
 }
 
+/* vim: set noet sw=4 ts=4: */
