@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package com.sun.star.wizards.web;
@@ -54,13 +55,13 @@ import com.sun.star.wizards.common.HelpIds;
 
 /**
  * This is the FTP Dialog. <br/>
- * The Dialog enables the user: 
+ * The Dialog enables the user:
  * (*) entering FTP server and user information.
  * (*) testing the connection.
  * (*) choosing a directory on the server.
  * If a connection was established successfully, the user may
  * press OK, which will change
- * the CGPublish object propertiers according the user's input.
+ * the CGPublish object properties according the user's input.
  * If no connection was established. the OK and Choose-Dir button are disabled.
  * See the method "disconnect()" which disables them.
  *
@@ -73,7 +74,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
 
     /**
      * A Constant used for the setLabel(int) method to change the
-     * status-display. "unknown" is the status when the user first 
+     * status-display. "unknown" is the status when the user first
      * opens the dialog, or changes the servername/username/password.
      */
     private final static int STATUS_UNKONWN = 0;
@@ -121,7 +122,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
      */
     private final static String ICON_UNKNOWN = "ftpunknown.gif";
     /**
-     * The icon url for an icon representing the "connecting" state. 
+     * The icon url for an icon representing the "connecting" state.
      */
     private final static String ICON_CONNECTING = "ftpconnecting.gif";    //GUI Components as Class members.
     //Fixed Line
@@ -174,9 +175,9 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
      * constructor.
      * constructs the UI.
      * @param xmsf
-     * @param p the publishert object that contains the data
+     * @param p the publisher object that contains the data
      * for this dialog
-     * @throws Exception 
+     * @throws Exception
      */
     public FTPDialog(XMultiServiceFactory xmsf, CGPublish p) throws Exception
     {
@@ -397,7 +398,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     /**
      * updates the hostname, username, password and
      * directory text fields.
-     * is called uppon initialization.
+     * is called upon initialization.
      */
     private void updateUI()
     {
@@ -406,8 +407,8 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     }
 
     /**
-     * extract the hostname out of the url used by the 
-     * publisher. This url does not include the username:password string. 
+     * extract the hostname out of the url used by the
+     * publisher. This url does not include the username:password string.
      * @param ftpUrl
      * @return
      */
@@ -564,7 +565,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     }
 
     /**
-     * To try the conenction I do some actions that
+     * To try the connection I do some actions that
      * seem logical to me: <br/>
      * I get a ucb content.
      * I list the files in this content.
@@ -604,7 +605,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     }
 
     /**
-     * @return the ftp subdirecrtory.
+     * @return the ftp subdirectory.
      */
     public String getDir()
     {
@@ -614,7 +615,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     /**
      * changes the status label to disconnected status, and
      * disables the ok and choose-dir buttons.
-     * This method is called also when the hostname, username 
+     * This method is called also when the hostname, username
      * and passwordtext fields change.
      */
     public void disconnect()
@@ -652,7 +653,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     /**
      * changes the status label and icon, according to the
      * given status
-     * @param status one opf the private status-constants.
+     * @param status one of the private status-constants.
      * if this param is not one of them, an "unknown error" status is displayed.
      */
     private void setLabel(int status)
@@ -691,7 +692,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     }
 
     /**
-     * changes the text of the status label and 
+     * changes the text of the status label and
      * (TODO) the status image.
      * @param label
      * @param color
@@ -708,7 +709,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     }
 
     /**
-     * called when the user clicks 
+     * called when the user clicks
      * the choose-dir button. ("...")
      * Opens the pickFolder dialog.
      * checks if the returned folder is an ftp folder.
@@ -736,7 +737,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
 
     /**
      * practical to have such a method...
-     * @param p the publisher obejct that contains the ftp connection info.
+     * @param p the publisher object that contains the ftp connection info.
      * @return the full ftp url with username password and everything one needs.
      */
     public static final String getFullURL(CGPublish p)
