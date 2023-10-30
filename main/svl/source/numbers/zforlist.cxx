@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -157,13 +157,13 @@ void SvNumberFormatterRegistry_Impl::ConfigurationChanged( utl::ConfigurationBro
 
 SvNumberFormatterRegistry_Impl* SvNumberFormatter::pFormatterRegistry = NULL;
 sal_Bool SvNumberFormatter::bCurrencyTableInitialized = sal_False;
-namespace 
+namespace
 {
-    struct theCurrencyTable : 
-        public rtl::Static< NfCurrencyTable, theCurrencyTable > {}; 
+    struct theCurrencyTable :
+        public rtl::Static< NfCurrencyTable, theCurrencyTable > {};
 
-    struct theLegacyOnlyCurrencyTable : 
-        public rtl::Static< NfCurrencyTable, theLegacyOnlyCurrencyTable > {}; 
+    struct theLegacyOnlyCurrencyTable :
+        public rtl::Static< NfCurrencyTable, theLegacyOnlyCurrencyTable > {};
 }
 sal_uInt16 SvNumberFormatter::nSystemCurrencyPosition = 0;
 SV_IMPL_PTRARR( NfCurrencyTable, NfCurrencyEntry* );
@@ -593,13 +593,13 @@ sal_uInt32 SvNumberFormatter::GetIndexPuttingAndConverting( String & rString,
             nKey = nOrig;   // none available, maybe user-defined
         else
             nKey = GetFormatForLanguageIfBuiltIn( nOrig, SvtSysLocale().GetLanguage() );
-         
+
         if (nKey == nOrig)
         {
             // Not a builtin format, convert.
             // The format code string may get modified and adapted to the real
             // language and wouldn't match eSysLnge anymore, do that on a copy.
-            String aTmp( rString);    
+            String aTmp( rString);
             rNewInserted = PutandConvertEntrySystem( aTmp, rCheckPos, rType,
                     nKey, eLnge, SvtSysLocale().GetLanguage());
             if (rCheckPos > 0)
@@ -697,7 +697,7 @@ sal_Bool SvNumberFormatter::Load( SvStream& rStream )
 		sal_Bool bUserDefined = (nOffset > SV_MAX_ANZ_STANDARD_FORMATE);
 		//! HACK! ER 29.07.97 15:15
 		// SaveLang wurde bei SYSTEM nicht gespeichert sondern war auch SYSTEM,
-		// erst ab 364i Unterscheidung moeglich
+		// erst ab 364i Unterscheidung möglich
 		sal_Bool bConversionHack;
 		if ( eLnge == LANGUAGE_SYSTEM )
 		{
@@ -1489,7 +1489,7 @@ void SvNumberFormatter::GetInputLineString(const double& fOutNumber,
 									 || eType == NUMBERFORMAT_SCIENTIFIC
 									 || eType == NUMBERFORMAT_FRACTION)
 	{
-		if (eType != NUMBERFORMAT_PERCENT)	// spaeter Sonderbehandlung %
+		if (eType != NUMBERFORMAT_PERCENT)	// später Sonderbehandlung %
 			eType = NUMBERFORMAT_NUMBER;
         ChangeStandardPrec(INPUTSTRING_PRECISION);
         bPrecChanged = true;
@@ -1724,8 +1724,8 @@ sal_Bool SvNumberFormatter::GetPreviewString( const String& sFormatString,
             GetOutputString( aNonConstPreview, nKey, sOutString, ppColor);
         else
         {
-            // If the format is valid but not a text format and does not 
-            // include a text subformat, an empty string would result. Same as 
+            // If the format is valid but not a text format and does not
+            // include a text subformat, an empty string would result. Same as
             // in SvNumberFormatter::GetOutputString()
             if (p_Entry->IsTextFormat() || p_Entry->HasTextFormat())
                 p_Entry->GetOutputString( aNonConstPreview, sOutString, ppColor);
@@ -2426,7 +2426,7 @@ void SvNumberFormatter::ImpGenerateFormats( sal_uInt32 CLOffset, sal_Bool bLoadi
 		CLOffset + SetIndexTable( NF_DATE_SYS_DMMMYY, ZF_STANDARD_DATE+9 ),
 		SV_NUMBERFORMATTER_VERSION_NEWSTANDARD );
 
-	//! Unfortunally TLOT intended only 10 builtin formats per category, more
+	//! Unfortunately TLOT intended only 10 builtin formats per category, more
 	//! would overwrite the next category (ZF_STANDARD_TIME) :-((
 	//! Therefore they are inserted with nNewExtended++ (which is also limited)
 
@@ -3297,7 +3297,7 @@ inline
 			if ( pFoundEntry )
 				return sal_False;	// break loop
 				// even if there are more matching entries
-				// this one is propably the one we are looking for
+				// this one is probably the one we are looking for
 			else
 				pFoundEntry = pData;
 		}
@@ -3326,7 +3326,7 @@ sal_Bool SvNumberFormatter::GetNewCurrencySymbolString( sal_uInt32 nFormat,
 			if ( ppEntry )
 			{
 				sal_Bool bFoundBank = sal_False;
-				// we definiteley need an entry matching the format code string
+				// we definitely need an entry matching the format code string
 				const NfCurrencyEntry* pFoundEntry = GetCurrencyEntry(
 					bFoundBank, aSymbol, aExtension, pFormat->GetLanguage(),
 					sal_True );
@@ -4385,8 +4385,8 @@ sal_Char NfCurrencyEntry::GetEuroSymbol( rtl_TextEncoding eTextEncoding )
 #elif OS2
 			return '\xD5';
 #elif UNX
-//			return '\xA4';		// #56121# 0xA4 waere korrekt fuer iso-8859-15
-			return '\x80';		// aber Windoze-Code fuer die konvertierten TrueType-Fonts
+//			return '\xA4';		// #56121# 0xA4 wäre korrekt für iso-8859-15
+			return '\x80';		// aber Windows-Code für die konvertierten TrueType-Fonts
 #else
 #error EuroSymbol is what?
 			return '\x80';
@@ -4395,5 +4395,4 @@ sal_Char NfCurrencyEntry::GetEuroSymbol( rtl_TextEncoding eTextEncoding )
 	return '\x80';
 }
 
-
-
+/* vim: set noet sw=4 ts=4: */
