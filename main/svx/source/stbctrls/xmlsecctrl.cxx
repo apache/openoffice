@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,24 +78,24 @@ struct XmlSecStatusBarControl::XmlSecStatusBarControl_Impl
 	Size		maSize;
 	sal_uInt16		mnState;
 	Image		maImage;
-    Image       maImageBroken;
-    Image       maImageNotValidated;
+	Image		maImageBroken;
+	Image		maImageNotValidated;
 };
 
 
-XmlSecStatusBarControl::XmlSecStatusBarControl( sal_uInt16 _nSlotId,  sal_uInt16 _nId, StatusBar& _rStb )
-    :SfxStatusBarControl( _nSlotId, _nId, _rStb )
+XmlSecStatusBarControl::XmlSecStatusBarControl( sal_uInt16 _nSlotId, sal_uInt16 _nId, StatusBar& _rStb )
+	:SfxStatusBarControl( _nSlotId, _nId, _rStb )
 
 	,mpImpl( new XmlSecStatusBarControl_Impl )
 {
 	mpImpl->mnState = (sal_uInt16)SIGNATURESTATE_UNKNOWN;
 
-    sal_Bool bHC = GetStatusBar().GetSettings().GetStyleSettings().GetHighContrastMode();
-    mpImpl->maImage = Image( SVX_RES( bHC ? RID_SVXBMP_SIGNET_H : RID_SVXBMP_SIGNET ) );
-    mpImpl->maImageBroken =
-        Image( SVX_RES( bHC ? RID_SVXBMP_SIGNET_BROKEN_H : RID_SVXBMP_SIGNET_BROKEN ) );
-    mpImpl->maImageNotValidated =
-        Image( SVX_RES( bHC ? RID_SVXBMP_SIGNET_NOTVALIDATED_H : RID_SVXBMP_SIGNET_NOTVALIDATED ) );
+	sal_Bool bHC = GetStatusBar().GetSettings().GetStyleSettings().GetHighContrastMode();
+	mpImpl->maImage = Image( SVX_RES( bHC ? RID_SVXBMP_SIGNET_H : RID_SVXBMP_SIGNET ) );
+	mpImpl->maImageBroken =
+		Image( SVX_RES( bHC ? RID_SVXBMP_SIGNET_BROKEN_H : RID_SVXBMP_SIGNET_BROKEN ) );
+	mpImpl->maImageNotValidated =
+		Image( SVX_RES( bHC ? RID_SVXBMP_SIGNET_NOTVALIDATED_H : RID_SVXBMP_SIGNET_NOTVALIDATED ) );
 }
 
 XmlSecStatusBarControl::~XmlSecStatusBarControl()
@@ -120,22 +120,22 @@ void XmlSecStatusBarControl::StateChanged( sal_uInt16, SfxItemState eState, cons
 		mpImpl->mnState = (sal_uInt16)SIGNATURESTATE_UNKNOWN;
 	}
 
-	if( GetStatusBar().AreItemsVisible() )				// necessary ?
+	if( GetStatusBar().AreItemsVisible() ) // necessary ?
 		GetStatusBar().SetItemData( GetId(), 0 );
 
-    GetStatusBar().SetItemText( GetId(), String() );    // necessary ?
+	GetStatusBar().SetItemText( GetId(), String() ); // necessary ?
 
-    sal_uInt16 nResId = RID_SVXSTR_XMLSEC_NO_SIG;
-    if ( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_OK )
-        nResId = RID_SVXSTR_XMLSEC_SIG_OK;
-    else if ( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_BROKEN )
-        nResId = RID_SVXSTR_XMLSEC_SIG_NOT_OK;
-    else if ( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_NOTVALIDATED )
-        nResId = RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY;
-    else if ( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_PARTIAL_OK )
-        nResId = RID_SVXSTR_XMLSEC_SIG_CERT_OK_PARTIAL_SIG;
+	sal_uInt16 nResId = RID_SVXSTR_XMLSEC_NO_SIG;
+	if ( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_OK )
+		nResId = RID_SVXSTR_XMLSEC_SIG_OK;
+	else if ( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_BROKEN )
+		nResId = RID_SVXSTR_XMLSEC_SIG_NOT_OK;
+	else if ( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_NOTVALIDATED )
+		nResId = RID_SVXSTR_XMLSEC_SIG_OK_NO_VERIFY;
+	else if ( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_PARTIAL_OK )
+		nResId = RID_SVXSTR_XMLSEC_SIG_CERT_OK_PARTIAL_SIG;
 
-    GetStatusBar().SetQuickHelpText( GetId(), SVX_RESSTR( nResId ) );
+	GetStatusBar().SetQuickHelpText( GetId(), SVX_RESSTR( nResId ) );
 }
 
 void XmlSecStatusBarControl::Command( const CommandEvent& rCEvt )
@@ -145,16 +145,16 @@ void XmlSecStatusBarControl::Command( const CommandEvent& rCEvt )
 		PopupMenu aPopupMenu( ResId( RID_SVXMNU_XMLSECSTATBAR, DIALOG_MGR() ) );
 		if( aPopupMenu.Execute( &GetStatusBar(), rCEvt.GetMousePosPixel() ) )
 		{
-            ::com::sun::star::uno::Any a;
-            SfxUInt16Item aState( GetSlotId(), 0 );
-            INetURLObject aObj( m_aCommandURL );
+			::com::sun::star::uno::Any a;
+			SfxUInt16Item aState( GetSlotId(), 0 );
+			INetURLObject aObj( m_aCommandURL );
 
-            ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
-            aArgs[0].Name  = aObj.GetURLPath();
-            aState.QueryValue( a );
-            aArgs[0].Value = a;
+			::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
+			aArgs[0].Name = aObj.GetURLPath();
+			aState.QueryValue( a );
+			aArgs[0].Value = a;
 
-            execute( aArgs );
+			execute( aArgs );
 		}
 	}
 	else
@@ -179,17 +179,17 @@ void XmlSecStatusBarControl::Paint( const UserDrawEvent& rUsrEvt )
 		++aRect.Top();
 		pDev->DrawImage( aRect.TopLeft(), mpImpl->maImage );
 	}
-    else if( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_BROKEN )
-    {
-        ++aRect.Top();
-        pDev->DrawImage( aRect.TopLeft(), mpImpl->maImageBroken );
-    }
-    else if( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_NOTVALIDATED 
-        || mpImpl->mnState == SIGNATURESTATE_SIGNATURES_PARTIAL_OK)
-    {
-        ++aRect.Top();
-        pDev->DrawImage( aRect.TopLeft(), mpImpl->maImageNotValidated );
-    }
+	else if( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_BROKEN )
+	{
+		++aRect.Top();
+		pDev->DrawImage( aRect.TopLeft(), mpImpl->maImageBroken );
+	}
+	else if( mpImpl->mnState == SIGNATURESTATE_SIGNATURES_NOTVALIDATED
+		|| mpImpl->mnState == SIGNATURESTATE_SIGNATURES_PARTIAL_OK)
+	{
+		++aRect.Top();
+		pDev->DrawImage( aRect.TopLeft(), mpImpl->maImageNotValidated );
+	}
 	else
 		pDev->DrawRect( aRect );
 
@@ -202,3 +202,4 @@ long XmlSecStatusBarControl::GetDefItemWidth( StatusBar& )
 	return 16;
 }
 
+/* vim: set noet sw=4 ts=4: */
