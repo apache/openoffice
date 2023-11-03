@@ -39,7 +39,6 @@
 #include <sfx2/dispatch.hxx>
 #include <sfx2/objsh.hxx>
 #include <svl/intitem.hxx>
-#define _SVX_PSZCTRL_CXX
 
 #include "svx/pszctrl.hxx"
 
@@ -187,8 +186,9 @@ SvxPosSizeStatusBarControl::SvxPosSizeStatusBarControl( sal_uInt16 _nSlotId,
 	pImp->bTable = sal_False;
 	pImp->bHasMenu = sal_False;
 	pImp->nFunction = 0;
-	pImp->aPosImage = Image( ResId( RID_SVXBMP_POSITION, DIALOG_MGR() ) );
-	pImp->aSizeImage = Image( ResId( RID_SVXBMP_SIZE, DIALOG_MGR() ) );
+	sal_Bool bHC = GetStatusBar().GetSettings().GetStyleSettings().GetHighContrastMode();
+		pImp->aPosImage = Image( SVX_RES( bHC ? RID_SVXBMP_POSITION_H : RID_SVXBMP_POSITION ) );
+		pImp->aSizeImage = Image( SVX_RES( bHC ? RID_SVXBMP_SIZE_H : RID_SVXBMP_SIZE ) );
 
     addStatusListener( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( STR_POSITION )));         // SID_ATTR_POSITION
     addStatusListener( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( STR_TABLECELL )));   // SID_TABLE_CELL

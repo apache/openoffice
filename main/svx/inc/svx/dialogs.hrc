@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef _SVX_DIALOGS_HRC
@@ -115,11 +116,11 @@
 #define RID_SVX_GRFFILTER_DLG_SOLARIZE		(RID_SVX_START + 333)
 #define RID_SVX_GRFFILTER_DLG_EMBOSS		(RID_SVX_START + 336)
 #define RID_SVXDLG_SEARCHFORMAT             (RID_SVX_START +  21)
-#define RID_SVXDLG_CHARMAP					( RID_SVX_START +  10 )
-#define RID_SVXDLG_POSTIT                   ( RID_SVX_START +   8 )
+#define RID_SVXDLG_CHARMAP					(RID_SVX_START +  10)
+#define RID_SVXDLG_POSTIT                   (RID_SVX_START +   8)
 
 // only needed for layout:
-#define RID_SVXDLG_ZOOM                     ( RID_SVX_START +  0 )
+#define RID_SVXDLG_ZOOM                     (RID_SVX_START +   0)
 
 // IDs of options pages of applications
 #define RID_SW_TP_MAILCONFIG            (RID_OFA_START + 102)
@@ -156,9 +157,9 @@
 #define SID_SD_TP_CONTENTS              (RID_OFA_START + 225)
 #define SID_SD_TP_SNAP                  (RID_OFA_START + 227)
 #define SID_SD_TP_MISC                  (RID_OFA_START + 231)
-#define	RID_OFA_TP_INTERNATIONAL_SD		(RID_OFA_START + 253)	
-#define	RID_OFA_TP_INTERNATIONAL_IMPR	(RID_OFA_START + 254)	
-#define	RID_OFA_TP_INTERNATIONAL		(RID_OFA_START + 252) // calc
+#define	RID_OFA_TP_INTERNATIONAL_SD		(RID_OFA_START + 253)
+#define	RID_OFA_TP_INTERNATIONAL_IMPR	(RID_OFA_START + 254)
+#define	RID_OFA_TP_INTERNATIONAL		(RID_OFA_START + 252) // Calc
 
 //---------------------------------------------------------------------
 // ResId's fuer die Zeichen-TabPages
@@ -175,7 +176,7 @@
 #define RID_SVXPAGE_HEADER                  (RID_SVX_START +  27)
 #define RID_SVXQBX_DELETE_HEADFOOT          (RID_SVX_START +  28)
 
-// ResId's fuer Dialoge aus StarDraw
+// ResId's fuer Dialoge aus Draw
 #define RID_SVXPAGE_POSITION                (RID_SVX_START +  46)
 #define RID_SVXPAGE_SIZE                    (RID_SVX_START +  47)
 #define RID_SVXSW_FRAMEPOSITIONS            (RID_SVX_START + 289)
@@ -224,7 +225,9 @@
 
 // ResId fuer Position- und Size-Bitmap
 #define RID_SVXBMP_POSITION                 (RID_SVX_START +  85)
+#define RID_SVXBMP_POSITION_H               (RID_SVX_START +  94)
 #define RID_SVXBMP_SIZE                     (RID_SVX_START +  86)
+#define RID_SVXBMP_SIZE_H                   (RID_SVX_START +  95)
 
 #define RID_SVXBMP_SIGNET					(RID_SVX_START +  87)
 #define RID_SVXBMP_SIGNET_H					(RID_SVX_START +  88)
@@ -557,7 +560,7 @@
 #define RID_STR_FULLNUMS_6                  (RID_STR_FULLNUMS_START + 5)//?
 #define RID_STR_FULLNUMS_7                  (RID_STR_FULLNUMS_START + 6)//?
 #define RID_STR_FULLNUMS_8                  (RID_STR_FULLNUMS_START + 7)//?
-#define RID_STR_FULLNUMS_7_HTML             (RID_SVX_START + 510)//?	
+#define RID_STR_FULLNUMS_7_HTML             (RID_SVX_START + 510)//?
 
 // RID_SVX_END == (RID_SVX_START + 499) !!!
 // am besten ab 520 frei (RB)
@@ -915,33 +918,33 @@
 #define RID_SVXSTR_STYLEFAMILY_TABLEDESIGN                  (RID_SVX_START + 1168)
     // if you add here, remember to adjust RID_SVXSTR_NEXTFREE
 
-#define RID_SVXSTR_BULLET_DESCRIPTIONS                      (RID_SVX_START + 1138)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTIONS                   (RID_SVX_START + 1146)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTIONS                  (RID_SVX_START + 1154)//?	
-#define RID_SVXSTR_BULLET_DESCRIPTION_0                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 0)//?	
-#define RID_SVXSTR_BULLET_DESCRIPTION_1                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 1)//?	
-#define RID_SVXSTR_BULLET_DESCRIPTION_2                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 2)//?	
-#define RID_SVXSTR_BULLET_DESCRIPTION_3                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 3)//?	
-#define RID_SVXSTR_BULLET_DESCRIPTION_4                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 4)//?	
-#define RID_SVXSTR_BULLET_DESCRIPTION_5                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 5)//?	
-#define RID_SVXSTR_BULLET_DESCRIPTION_6                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 6)//?	
-#define RID_SVXSTR_BULLET_DESCRIPTION_7                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 7)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTION_0                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 0)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTION_1                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 1)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTION_2                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 2)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTION_3                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 3)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTION_4                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 4)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTION_5                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 5)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTION_6                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 6)//?	
-#define RID_SVXSTR_SINGLENUM_DESCRIPTION_7                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 7)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_0                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 0)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_1                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 1)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_2                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 2)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_3                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 3)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_4                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 4)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_5                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 5)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_6                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 6)//?	
-#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_7                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 7)//?	
+#define RID_SVXSTR_BULLET_DESCRIPTIONS                      (RID_SVX_START + 1138)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTIONS                   (RID_SVX_START + 1146)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTIONS                  (RID_SVX_START + 1154)//?
+#define RID_SVXSTR_BULLET_DESCRIPTION_0                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 0)//?
+#define RID_SVXSTR_BULLET_DESCRIPTION_1                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 1)//?
+#define RID_SVXSTR_BULLET_DESCRIPTION_2                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 2)//?
+#define RID_SVXSTR_BULLET_DESCRIPTION_3                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 3)//?
+#define RID_SVXSTR_BULLET_DESCRIPTION_4                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 4)//?
+#define RID_SVXSTR_BULLET_DESCRIPTION_5                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 5)//?
+#define RID_SVXSTR_BULLET_DESCRIPTION_6                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 6)//?
+#define RID_SVXSTR_BULLET_DESCRIPTION_7                     (RID_SVXSTR_BULLET_DESCRIPTIONS + 7)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTION_0                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 0)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTION_1                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 1)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTION_2                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 2)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTION_3                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 3)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTION_4                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 4)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTION_5                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 5)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTION_6                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 6)//?
+#define RID_SVXSTR_SINGLENUM_DESCRIPTION_7                  (RID_SVXSTR_SINGLENUM_DESCRIPTIONS + 7)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_0                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 0)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_1                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 1)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_2                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 2)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_3                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 3)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_4                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 4)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_5                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 5)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_6                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 6)//?
+#define RID_SVXSTR_OUTLINENUM_DESCRIPTION_7                 (RID_SVXSTR_OUTLINENUM_DESCRIPTIONS + 7)//?
 #define RID_SVXSTR_SIDEBAR_BULLET_DESCRIPTIONS                      (RID_SVX_START + 1172)
 #define RID_SVXSTR_SIDEBAR_BULLET_DESCRIPTIONS_0                     (RID_SVXSTR_SIDEBAR_BULLET_DESCRIPTIONS + 0)
 #define RID_SVXSTR_SIDEBAR_BULLET_DESCRIPTIONS_1                     (RID_SVXSTR_SIDEBAR_BULLET_DESCRIPTIONS + 1)
@@ -1049,11 +1052,11 @@
 #define RID_SVX_MDLG_ERR_REP_OPTIONS		( RID_SVX_START +  13 )
 #define RID_SVX_MDLG_ERR_REP_PREVIEW		( RID_SVX_START +  14 )
 
-#define RID_SVX_TABDLG_DOCRECOVERY		    ( RID_SVX_START +   0 )
+#define RID_SVX_TABDLG_DOCRECOVERY			( RID_SVX_START +   0 )
 
 #define RID_SVXPAGE_DOCRECOVERY_SAVE		( RID_SVX_START +   8 )
-#define RID_SVXPAGE_DOCRECOVERY_RECOVER	    ( RID_SVX_START +   9 )
-#define RID_SVXPAGE_ERR_REP_WELCOME		    ( RID_SVX_START +  10 )
+#define RID_SVXPAGE_DOCRECOVERY_RECOVER		( RID_SVX_START +   9 )
+#define RID_SVXPAGE_ERR_REP_WELCOME			( RID_SVX_START +  10 )
 #define RID_SVXPAGE_ERR_REP_SEND			( RID_SVX_START +  11 )
 
 // ----------------------------------------------------------------------------
@@ -1077,7 +1080,7 @@
 #define OFA_TP_APPEARANCE               (RID_OFA_START + 203)
 #define OFA_TP_TABPROPERTIES_GENERAL	(RID_OFA_START + 204)
 
-//die RID_??_TP_*  stehen nochmal im offids.hrc
+//die RID_??_TP_* stehen nochmal im offids.hrc
 
 #define RID_SW_TP_LAYOUT_OPT            (RID_OFA_START + 207)
 #define RID_SW_TP_OPTINSERT_PAGE        (RID_OFA_START + 213)
