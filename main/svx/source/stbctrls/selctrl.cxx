@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,16 +80,16 @@ void SvxSelectionModeControl::Click()
 	if ( nState > 3 )
 		nState = 0;
 
-    ::com::sun::star::uno::Any a;
-    SfxUInt16Item aState( GetSlotId(), nState );    
-    INetURLObject aObj( m_aCommandURL );
-    
-    ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
-    aArgs[0].Name  = aObj.GetURLPath();
-    aState.QueryValue( a );
-    aArgs[0].Value = a;
-    
-    execute( aArgs );
+	::com::sun::star::uno::Any a;
+	SfxUInt16Item aState( GetSlotId(), nState );
+	INetURLObject aObj( m_aCommandURL );
+
+	::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
+	aArgs[0].Name = aObj.GetURLPath();
+	aState.QueryValue( a );
+	aArgs[0].Value = a;
+
+	execute( aArgs );
 }
 
 // -----------------------------------------------------------------------
@@ -130,10 +130,10 @@ void SvxSelectionModeControl::DrawItemText_Impl()
 
 sal_uIntPtr SvxSelectionModeControl::GetDefItemWidth(const StatusBar& rStb)
 {
-	long nWidth1 =  rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_SELMODE_STD));
-	long nWidth2 =  rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_SELMODE_ER));
-	long nWidth3 =  rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_SELMODE_ERG));
-	long nWidth4 =  rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_SELMODE_BLK));
+	long nWidth1 = rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_SELMODE_STD));
+	long nWidth2 = rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_SELMODE_ER));
+	long nWidth3 = rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_SELMODE_ERG));
+	long nWidth4 = rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_SELMODE_BLK));
 
 	if(nWidth1<nWidth2)
 		nWidth1=nWidth2;
@@ -141,10 +141,10 @@ sal_uIntPtr SvxSelectionModeControl::GetDefItemWidth(const StatusBar& rStb)
 	if(nWidth1<nWidth3)
 		nWidth1=nWidth3;
 
-    if(nWidth1<nWidth4)
+	if(nWidth1<nWidth4)
 		nWidth1=nWidth4;
 
 	return nWidth1+PAINT_OFFSET;
 }
 
-
+/* vim: set noet sw=4 ts=4: */
