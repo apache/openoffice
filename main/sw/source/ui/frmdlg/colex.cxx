@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -280,7 +282,7 @@ void SwColExample::DrawPage( const Point& rOrg,
             if(!bAutoWidth)
                 nAutoColWidth = pColMgr->GetColWidth( i );
             aRect.Right() = aRect.Left() + nAutoColWidth;
-            
+
             //UUUU use primitive draw command
             drawFillAttributes(getPageFillAttributes(), aRect, aDefineRect);
 
@@ -310,7 +312,7 @@ void SwColExample::DrawPage( const Point& rOrg,
             }
 
             int nDist;
-            for( i = 0; i < nColumnCount -  1; i++)
+            for( i = 0; i < nColumnCount - 1; i++)
             {
                 int nGutter = pColMgr->GetGutterWidth(i);
                 nDist = pColMgr->GetColWidth( i ) + nGutter;
@@ -344,7 +346,7 @@ SwColumnOnlyExample::SwColumnOnlyExample( Window* pParent, const ResId& rResId) 
 
     SetBorderStyle( WINDOW_BORDER_MONO );
 
-    m_aFrmSize  = SvxPaperInfo::GetPaperSize(PAPER_A4);// DIN A4
+    m_aFrmSize = SvxPaperInfo::GetPaperSize(PAPER_A4); // DIN A4
     ::FitToActualSize(m_aCols, (sal_uInt16)m_aFrmSize.Width());
 
     long nHeight = m_aFrmSize.Height();
@@ -382,10 +384,10 @@ void SwColumnOnlyExample::Paint( const Rectangle& /*rRect*/ )
     Rectangle aRect(aTL, m_aFrmSize);
 
     //draw a shadow rectangle
-    SetFillColor( Color(COL_GRAY) );
-    Rectangle aShadowRect(aRect);
-    aShadowRect.Move(aTL.Y(), aTL.Y());
-    DrawRect(aShadowRect);
+//    SetFillColor( Color(COL_GRAY) );
+//    Rectangle aShadowRect(aRect);
+//    aShadowRect.Move(aTL.Y(), aTL.Y());
+//    DrawRect(aShadowRect);
 
     SetFillColor( rFieldColor );
     DrawRect(aRect);
@@ -627,3 +629,4 @@ void SwPageGridExample::UpdateExample( const SfxItemSet& rSet )
     SwPageExample::UpdateExample(rSet);
 }
 
+/* vim: set noet sw=4 ts=4: */
