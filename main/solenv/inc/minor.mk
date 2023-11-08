@@ -19,7 +19,7 @@
 #
 # *************************************************************
 RSCVERSION=4115
-RSCREVISION=4115m1(Build:9812)
-BUILD=9812
-LAST_MINOR=m1
+RSCREVISION=4115m2(Build:9813)
+BUILD=9813
+LAST_MINOR=m2
 SOURCEVERSION=AOO4115
