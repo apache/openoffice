@@ -115,7 +115,10 @@ public:
 	sal_Bool GetUserAllowsLinkUpdate(Window *pParent);
 	
 	// Automatically ask user about update all links, on first insert
+    // If we already asked the user, we forget about it and will ask again.
 	void SetAutoAskUpdateAllLinks();
+    // Never ask the user: just update all links
+    void SetNeverAskUpdateAllLinks();
 
 	void 		UpdateAllLinks( sal_Bool bAskUpdate = sal_True,
 								sal_Bool bCallErrHdl = sal_True,

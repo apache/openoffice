@@ -255,6 +255,12 @@ sal_Bool SwDocShell::ConvertFrom( SfxMedium& rMedium )
     // Restore the pool default if reading a saved document.
     mpDoc->RemoveAllFmtLanguageDependencies();
 
+    // Trust links on help documents
+    String aFileName( rMedium.GetName() );
+    if (aFileName.SearchAscii("vnd.sun.star.help://") == 0) {
+        mpDoc->GetLinkManager().SetNeverAskUpdateAllLinks();
+    }
+
     sal_uLong nErr = pRdr->Read( *pRead );
 
     // Evtl. ein altes Doc weg
