@@ -398,7 +398,7 @@ is_inner(const char *pstr)
     /*
      * note that a '$' in a classname is not an exact indicator
      * for an inner class. Java identifier may legally contain 
-     * this chararcter, and so may classnames. In the context
+     * this character, and so may classnames. In the context
      * of javadep this doesn't matter since the makefile system
      * can't cope with classfiles with '$'s in the filename 
      * anyway.

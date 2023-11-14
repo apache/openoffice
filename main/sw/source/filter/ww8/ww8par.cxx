@@ -219,8 +219,8 @@ void lclIgnoreString32( SvMemoryStream& rStrm, bool b16Bit )
 String SwWW8ImplReader::ReadRawUniString( SvMemoryStream& rStrm,sal_uInt16 nChars, bool b16Bit )
 {
 	// Fixed-size characters
-	const sal_uInt8 WW8_NUL_C                   = '\x00';       /// NUL chararcter.
-	const sal_uInt16 WW8_NUL                    = WW8_NUL_C;    /// NUL chararcter (unicode).
+	const sal_uInt8 WW8_NUL_C                   = '\x00';       /// NUL character.
+	const sal_uInt16 WW8_NUL                    = WW8_NUL_C;    /// NUL character (unicode).
 	String aRet;
 	sal_Unicode         mcNulSubst = '\0';
 

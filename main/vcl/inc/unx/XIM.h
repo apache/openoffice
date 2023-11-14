@@ -97,14 +97,14 @@ typedef enum {
   XIMKatakana, XIMHanzi
 } XIMUnicodeCharacterSubsetID;
 
-typedef	struct	_XIMUncodeSubset {
+typedef	struct	_XIMUnicodeSubset {
   XIMUnicodeCharacterSubsetID	index;
   XIMUnicodeCharacterSubsetID	subset_id;
   char			*name;
   Bool			is_active;
 } XIMUnicodeCharacterSubset;
 
-typedef	struct	_XIMUncodeSubsets {
+typedef	struct	_XIMUnicodeSubsets {
   unsigned short count_subsets;
   XIMUnicodeCharacterSubset *supported_subsets;
 } XIMUnicodeCharacterSubsets;
@@ -120,7 +120,7 @@ typedef	struct	_XIMSwitchIMNotifyCallbackStruct {
 
 /* XIC attributes for multilingual IM extension */
 
-#define XNUnicodeCharacterSubset "UnicodeChararcterSubset"
+#define XNUnicodeCharacterSubset "UnicodeCharacterSubset"
 
 #define XNSwitchIMNotifyCallback "switchIMNotifyCallback"
 #define XNCommitStringCallback "commitStringCallback"
