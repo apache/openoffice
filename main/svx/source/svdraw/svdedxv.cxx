@@ -153,7 +153,7 @@ void SdrObjEditView::TakeActionRect(Rectangle& rRect) const
 void __EXPORT SdrObjEditView::Notify(SfxBroadcaster& rBC, const SfxHint& rHint)
 {
     SdrGlueEditView::Notify(rBC,rHint);
-    // Printerwechsel waerend des Editierens
+    // Printerwechsel waehrend des Editierens
     SdrHint* pSdrHint=PTR_CAST(SdrHint,&rHint);
     if (pSdrHint!=NULL && pTextEditOutliner!=NULL) {
         SdrHintKind eKind=pSdrHint->GetKind();
@@ -891,7 +891,7 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(sal_Bool bDontDeleteReally)
             }
             else
             {
-                OSL_ENSURE(false, "�Got UndoManager back in SdrEndTextEdit which is NOT the expected document UndoManager (!)");
+                OSL_ENSURE(false, "Got UndoManager back in SdrEndTextEdit which is NOT the expected document UndoManager (!)");
                 delete pOriginal;
             }
         }
