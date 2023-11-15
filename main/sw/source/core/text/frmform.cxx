@@ -1230,7 +1230,7 @@ void SwTxtFrm::FormatAdjust( SwTxtFormatter &rLine,
     // unnecessary formatting of its footnotes and its follow, especially in
     // columned sections, adjust frame height to zero (0) and do not perform
     // the intrinsic format of the follow.
-    // The formating method <SwCntntFrm::MakeAll()> will initiate the move forward.
+    // The formatting method <SwCntntFrm::MakeAll()> will initiate the move forward.
     sal_Bool bForcedNoIntrinsicFollowCalc = sal_False;
     if ( nEnd == 0 &&
          rLine.IsStop() && HasFollow() && nNew == 1

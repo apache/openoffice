@@ -103,7 +103,7 @@ public:
 
     SVX_DLLPRIVATE void merge( sal_Int32 nColumnSpan, sal_Int32 nRowSpan );
     SVX_DLLPRIVATE void mergeContent( const CellRef& xSourceCell );
-    SVX_DLLPRIVATE void replaceContentAndFormating( const CellRef& xSourceCell );
+    SVX_DLLPRIVATE void replaceContentAndFormatting( const CellRef& xSourceCell );
 
     SVX_DLLPRIVATE void setMerged();
 

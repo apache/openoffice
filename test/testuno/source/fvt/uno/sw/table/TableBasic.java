@@ -695,42 +695,42 @@ public class TableBasic {
 		XTextTable xTable_Assert1=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj1);
 		XPropertySet xTableProps1_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert1);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.LEFT_BOTTOM,xTableProps1_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps1_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps1_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps1_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj2=xIndexedTables.getByIndex(1);
 		XTextTable xTable_Assert2=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj2);
 		XPropertySet xTableProps2_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert2);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.LEFT_MIDDLE,xTableProps2_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps2_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps2_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps2_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj3=xIndexedTables.getByIndex(2);
 		XTextTable xTable_Assert3=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj3);
 		XPropertySet xTableProps3_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert3);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.LEFT_TOP,xTableProps3_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps3_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps3_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps3_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj4=xIndexedTables.getByIndex(3);
 		XTextTable xTable_Assert4=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj4);
 		XPropertySet xTableProps4_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert4);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_BOTTOM,xTableProps4_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps4_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps4_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps4_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj5=xIndexedTables.getByIndex(4);
 		XTextTable xTable_Assert5=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj5);
 		XPropertySet xTableProps5_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert5);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_MIDDLE,xTableProps5_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps5_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps5_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps5_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj6=xIndexedTables.getByIndex(5);
 		XTextTable xTable_Assert6=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj6);
 		XPropertySet xTableProps6_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert6);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_TOP,xTableProps6_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps6_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps6_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps6_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj7=xIndexedTables.getByIndex(6);
@@ -742,28 +742,28 @@ public class TableBasic {
 		XTextTable xTable_Assert8=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj8);
 		XPropertySet xTableProps8_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert8);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_BOTTOM,xTableProps8_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps8_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps8_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps8_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj9=xIndexedTables.getByIndex(8);
 		XTextTable xTable_Assert9=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj9);
 		XPropertySet xTableProps9_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert9);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_MIDDLE,xTableProps9_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps9_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps9_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps9_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj10=xIndexedTables.getByIndex(9);
 		XTextTable xTable_Assert10=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj10);
 		XPropertySet xTableProps10_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert10);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_TOP,xTableProps10_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps10_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps10_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps10_assert.getPropertyValue("BackGraphicURL"));
 		
 		Object xTable_obj11=xIndexedTables.getByIndex(10);
 		XTextTable xTable_Assert11=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj11);
 		XPropertySet xTableProps11_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert11);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.AREA,xTableProps11_assert.getPropertyValue("BackGraphicLocation"));
-		assertEquals("verify table backgraphic fileter","draw_jpg_Export",xTableProps11_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps11_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps11_assert.getPropertyValue("BackGraphicURL"));				
 	}	
 }

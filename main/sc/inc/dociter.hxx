@@ -476,7 +476,7 @@ public:
 
 
 //
-//	returns all areas that do not have a Default-Formating (horizontal)
+//	returns all areas that do not have a Default-Formatting (horizontal)
 //
 
 class ScHorizontalAttrIterator
@@ -505,7 +505,7 @@ public:
 };
 
 //
-//	returns all non empty cells and areas with formating (horizontal)
+//	returns all non empty cells and areas with formatting (horizontal)
 //
 
 class SC_DLLPUBLIC ScUsedAreaIterator
