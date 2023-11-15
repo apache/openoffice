@@ -153,7 +153,7 @@ void SdrObjEditView::TakeActionRect(Rectangle& rRect) const
 void __EXPORT SdrObjEditView::Notify(SfxBroadcaster& rBC, const SfxHint& rHint)
 {
     SdrGlueEditView::Notify(rBC,rHint);
-    // Printerwechsel waerend des Editierens
+    // Printerwechsel waehrend des Editierens
     SdrHint* pSdrHint=PTR_CAST(SdrHint,&rHint);
     if (pSdrHint!=NULL && pTextEditOutliner!=NULL) {
         SdrHintKind eKind=pSdrHint->GetKind();
@@ -891,7 +891,7 @@ SdrEndTextEditKind SdrObjEditView::SdrEndTextEdit(sal_Bool bDontDeleteReally)
             }
             else
             {
-                OSL_ENSURE(false, "´Got UndoManager back in SdrEndTextEdit which is NOT the expected document UndoManager (!)");
+                OSL_ENSURE(false, "Got UndoManager back in SdrEndTextEdit which is NOT the expected document UndoManager (!)");
                 delete pOriginal;
             }
         }
@@ -2230,8 +2230,8 @@ void SdrObjEditView::ApplyFormatPaintBrush( SfxItemSet& rFormatSet, bool bNoChar
 	    if( !pOLV )
 	    {
 		    // if not in text edit mode (aka the user selected text or clicked on a word)
-		    // apply formating attributes to selected shape
-		    // All formating items (see ranges above) that are unequal in selected shape and
+		    // apply formatting attributes to selected shape
+		    // All formatting items (see ranges above) that are unequal in selected shape and
 		    // the format paintbrush are hard set on the selected shape.
 
             const sal_uInt16* pRanges = rFormatSet.GetRanges();
@@ -2254,7 +2254,7 @@ void SdrObjEditView::ApplyFormatPaintBrush( SfxItemSet& rFormatSet, bool bNoChar
 			    SetAttrToMarked(aPaintSet, bReplaceAll);
 		    }
 
-		    // now apply character and paragraph formating to text, if the shape has any
+		    // now apply character and paragraph formatting to text, if the shape has any
 		    SdrTextObj* pTextObj = dynamic_cast<SdrTextObj*>(pObj);
 		    if( pTextObj )
 		    {

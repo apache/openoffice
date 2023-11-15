@@ -131,8 +131,8 @@ class SdXMLExport : public SvXMLExport
 	XMLShapeExportPropertyMapper*		mpPropertySetMapper;
 	XMLPageExportPropertyMapper*		mpPresPagePropsMapper;
 
-	SdXMLFormatMap	maUsedDateStyles;			// this is a vector with the used formatings for date fields
-	SdXMLFormatMap	maUsedTimeStyles;			// this is a vector with the used formatings for time fields
+	SdXMLFormatMap	maUsedDateStyles;			// this is a vector with the used formattings for date fields
+	SdXMLFormatMap	maUsedTimeStyles;			// this is a vector with the used formattings for time fields
 
 	sal_Bool					mbIsDraw;
 	sal_Bool					mbFamilyGraphicUsed;
