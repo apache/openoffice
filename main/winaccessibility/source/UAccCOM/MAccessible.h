@@ -254,8 +254,8 @@ private:
     // the following private methods are used to implement accSelect method
     HRESULT SelectChild(XAccessible* pItem);
     HRESULT DeSelectChild(XAccessible* pItem);
-    HRESULT	SelectMutipleChidren( XAccessible** pItem,int size );
-    HRESULT DeSelectMutipleChildren( XAccessible** pItem,int size );
+    HRESULT	SelectMultipleChidren( XAccessible** pItem,int size );
+    HRESULT DeSelectMultipleChildren( XAccessible** pItem,int size );
     XAccessibleContext* GetContextByXAcc( XAccessible* pXAcc );
     Reference< XAccessibleSelection > GetSelection();
     // end accSelect implementation methods

@@ -76,7 +76,7 @@ public class CharacterFromCatalogDlg {
 		mathEditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully",
+		assertEquals("Symbol is not inserted successfully",
 				"%".concat(selectedSymbol).concat(" "), app.getClipboard());
 		// add "%" in the font, add " " in the end
 
@@ -104,7 +104,7 @@ public class CharacterFromCatalogDlg {
 		mathEditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully",
+		assertEquals("Symbol is not inserted successfully",
 				"%".concat(selectedSymbol).concat(" "), app.getClipboard());
 		// add "%" in the font, add " " in the end
 	}
@@ -131,7 +131,7 @@ public class CharacterFromCatalogDlg {
 		mathEditWindow.click(5, 5);
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("Symbol is not inserted succcessfully",
+		assertEquals("Symbol is not inserted successfully",
 				"%".concat(selectedSymbol).concat(" "), app.getClipboard());
 		// add "%" in the font, add " " in the end
 	}
