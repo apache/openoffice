@@ -21,18 +21,12 @@
  *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textshared0224010000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Graphic Filter Bar</title>
 <filename>/text/shared/02/24010000.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-10-25T15:46:20">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="filter">
@@ -54,7 +48,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <!-- removed HID SID_GRAFFILTER_INVERT -->
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterInvert" id="bm_id6161795" localize="false"/>
@@ -73,7 +66,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <!-- removed HID SID_GRAFFILTER_SMOOTH -->
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSmooth" id="bm_id6076636" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSmooth" id="bm_id3149578" localize="false"/>
@@ -91,7 +83,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <!-- removed HID SID_GRAFFILTER_SHARPEN -->
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSharpen" id="bm_id4973428" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSharpen" id="bm_id3155449" localize="false"/>
@@ -109,7 +100,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <!-- removed HID SID_GRAFFILTER_REMOVENOISE -->
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterRemoveNoise" id="bm_id4672819" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterRemoveNoise" id="bm_id3156435" localize="false"/>
@@ -127,7 +117,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSolarize" id="bm_id6035997" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSolarize" id="bm_id3154910" localize="false"/>
 <paragraph role="heading" id="hd_id3144760" xml-lang="en-US" level="2" l10n="C">Solarization</paragraph>
@@ -144,7 +133,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3145785" xml-lang="en-US" level="3" l10n="U" oldref="76">Parameters</paragraph>
 <paragraph role="paragraph" id="par_id3147352" xml-lang="en-US" l10n="U" oldref="77">Specifies the degree and type of solarization.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVX_GRFFILTER_DLG_SOLARIZE:DLG_FILTERSOLARIZE_MTR_THRESHOLD" id="bm_id3151353" localize="false"/>
@@ -169,7 +157,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVX_GRFFILTER_DLG_SEPIA:DLG_FILTERSEPIA_MTR_SEPIA" id="bm_id3151116" localize="false"/>
 <paragraph role="heading" id="hd_id3156443" xml-lang="en-US" level="3" l10n="U" oldref="84">Aging Degree</paragraph>
 <paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U" oldref="85"><ahelp hid="SVX_METRICFIELD_RID_SVX_GRFFILTER_DLG_SEPIA_DLG_FILTERSEPIA_MTR_SEPIA">Defines the intensity of aging, in percent. At 0% you see the gray values of all pixels. At 100% only the red color channel remains.</ahelp><comment>ufi: cannot see any difference between 0% and 100% aging here...</comment></paragraph>
@@ -189,7 +176,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVX_GRFFILTER_DLG_POSTER:DLG_FILTERPOSTER_NUM_POSTER" id="bm_id3148878" localize="false"/>
 <paragraph role="heading" id="hd_id3156736" xml-lang="en-US" level="3" l10n="U" oldref="89">Poster Colors</paragraph>
 <paragraph role="paragraph" id="par_id3151280" xml-lang="en-US" l10n="U" oldref="90"><ahelp hid="SVX_NUMERICFIELD_RID_SVX_GRFFILTER_DLG_POSTER_DLG_FILTERPOSTER_NUM_POSTER">Specifies the number of colors to which the image is to be reduced.</ahelp></paragraph>
@@ -209,7 +195,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSobel" id="bm_id7462566" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterSobel" id="bm_id3154272" localize="false"/>
 <paragraph role="heading" id="hd_id3153003" xml-lang="en-US" level="2" l10n="C">Charcoal Sketch</paragraph>
@@ -243,7 +228,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3166447" xml-lang="en-US" level="3" l10n="U" oldref="101">Light Source</paragraph>
 <paragraph role="paragraph" id="par_id3145295" xml-lang="en-US" l10n="U" oldref="102">Specifies the light source position. A dot represents the light source.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/.uno:GraphicFilterMosaic" id="bm_id4595573" localize="false"/>
@@ -262,7 +246,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3153922" xml-lang="en-US" level="3" l10n="U" oldref="106">Element resolution</paragraph>
 <paragraph role="paragraph" id="par_id3150646" xml-lang="en-US" l10n="U" oldref="107">Determines the number of pixels to be joined into rectangles.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVX_GRFFILTER_DLG_MOSAIC:DLG_FILTERMOSAIC_MTR_WIDTH" id="bm_id3145790" localize="false"/>
