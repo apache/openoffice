@@ -90,12 +90,12 @@ public class SubjectField {
 		String subjectStr = "Test Subject Field";
 		createSubjectFiled(odtDocument);
 	
-		assertTrue("Verify Subject field is created use exsit subject", isContainSubjectField(odtDocument, "UNO API Subject"));
-		assertTrue("Verify Subject field is created use exsit subject, can get text from document", 
+		assertTrue("Verify Subject field is created use exist subject", isContainSubjectField(odtDocument, "UNO API Subject"));
+		assertTrue("Verify Subject field is created use exist subject, can get text from document",
 				isContainSubjectText(odtDocument, "UNO API Subject"));
 		//Set subject 
 		SWUtil.setDocumentProperty(odtDocument, "Subject", subjectStr);
-		//Verfiy after set subject
+		//Verify after set subject
 		assertTrue("Verify Subject field is created, can get text from document", 
 				isContainSubjectText(odtDocument, subjectStr));
 		
