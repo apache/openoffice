@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,23 +10,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
+
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Lang_de" script:language="StarBasic">Option Explicit
 
 Sub LoadGermanLanguage()
 
 	sProductname = GetProductname
-	sOK = &quot;~OK&quot; 
+	sOK = &quot;~OK&quot;
 	sCancel = &quot;Abbrechen&quot;
 	sColumnHeader = &quot;Spaltenkopf&quot;
 	sInsertStockName = &quot;Bitte fügen Sie zunächst einige Aktien in Ihr Depot ein!&quot;
@@ -46,14 +48,14 @@ Sub LoadGermanLanguage()
 	sMsgDeleteAll = &quot;Wollen Sie alle Bewegungen löschen und die Depotübersicht rücksetzen?&quot;
 	cSplit = &quot;Aktiensplitt am &quot;
 	sHistory = &quot;Historie&quot;
-	TransactTitle(1) = 	 &quot;Aktien verkaufen&quot;
+	TransactTitle(1) = &quot;Aktien verkaufen&quot;
 	TransactTitle(2) = &quot;Aktien kaufen&quot;
 	StockRatesTitle(1) = &quot;Dividendenzahlung&quot;
 	StockRatesTitle(2) = &quot;Aktiensplitt&quot;
 	StockRatesTitle(3) = sHistory
-	sDepotCurrency = &quot;Depotwährung&quot;	
+	sDepotCurrency = &quot;Depotwährung&quot;
 	sStockName = &quot;Aktienname&quot;
-	TransactMode = LIFO	&apos; Possible values: &quot;FIFO&quot; and &quot;LIFO&quot;
+	TransactMode = LIFO &apos; Possible values: &quot;FIFO&quot; and &quot;LIFO&quot;
 	DateCellStyle = &quot;Ergebnis Datum&quot;
 	CurrCellStyle = &quot;Ergebnis Euro mit Dezimalen&quot;
 	sStartDate = &quot;Startdatum:&quot;
@@ -84,7 +86,7 @@ Sub LoadGermanLanguage()
 	sMarket(0,8) = &quot;409&quot;
 	sMarket(0,9) = &quot;44&quot;
 	sMarket(0,10) = &quot;1&quot;
-	
+
 	sMarket(1,0) = &quot;Euro&quot;
 	sMarket(1,1) = chr(8364)
 	sMarket(1,2) = &quot;Frankfurt&quot;
@@ -117,14 +119,14 @@ Sub LoadGermanLanguage()
 	sMarket(3,8) = &quot;411&quot;
 	sMarket(3,9) = &quot;&quot;
 	sMarket(3,10) = &quot;&quot;
-	
+
 	sMarket(4,0) = &quot;Hongkong Dollar&quot;
 	sMarket(4,1) = &quot;HK$&quot;
 	sMarket(4,2) = &quot;Hongkong&quot;
 	sMarket(4,3) = &quot;http://hk.finance.yahoo.com/d/quotes.csv?s=&lt;StockID&gt;.HK&amp;f=sl1d1t1c1ohgv&amp;e=.csv&quot;
 	sMarket(4,5) = &quot;Nummer&quot;
 	sMarket(4,6) = &quot;zh&quot;
-	sMarket(4,7) = &quot;HK&quot;	
+	sMarket(4,7) = &quot;HK&quot;
 	sMarket(4,8) = &quot;C04&quot;
 	sMarket(4,9) = &quot;44&quot;
 	sMarket(4,10) = &quot;1&quot;
@@ -157,7 +159,7 @@ Sub LoadGermanLanguage()
 		.cmdGoOn.Label = sOK
 		.cmdCancel.Label = sCancel
 	End With
-	
+
 	With StockRatesModel
 		.optPerShare.Label = &quot;Dividende/Aktie&quot;
 		.optTotal.Label = &quot;Dividende gesamt&quot;
