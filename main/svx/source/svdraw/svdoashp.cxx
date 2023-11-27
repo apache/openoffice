@@ -3464,7 +3464,7 @@ sal_Bool SdrObjCustomShape::TRGetBaseGeometry(basegfx::B2DHomMatrix& rMatrix, ba
 		{
 			case SFX_MAPUNIT_TWIP :
 			{
-				// postion
+				// position
 				aTranslate.setX(ImplTwipsToMM(aTranslate.getX()));
 				aTranslate.setY(ImplTwipsToMM(aTranslate.getY()));
 

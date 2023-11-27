@@ -1309,7 +1309,7 @@ sal_Bool SwTxtFly::GetTop( const SwAnchoredObject* _pAnchoredObj,
             // if wrapping style is considered on object positioning.
             // Thus, text will wrap around negative positioned objects.
             // --> OD 2004-08-25 #i3317# - remove condition on checking,
-            // if wrappings style is considered on object postioning.
+            // if wrappings style is considered on object positioning.
             // Thus, text is wrapping around negative positioned objects.
             // --> OD 2004-10-20 #i35640# - no consideration of negative
             // positioned objects, if wrapping style isn't considered on

@@ -2476,7 +2476,7 @@ bool SwWW8ImplReader::ProcessSpecial(bool &rbReSync, WW8_CP nStartCp)
         if ( pPaM && pPaM->GetPoint() )
             idcur = pPaM->GetPoint()->nNode.GetIndex();
     
-        // Memory first table postion info
+        // Memory first table position info
         if ( !pFirstTablePap && idstart + 1 == idcur )
             pFirstTablePap = pPap;
 

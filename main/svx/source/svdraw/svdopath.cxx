@@ -1038,8 +1038,8 @@ String ImpPathForDragAndCreate::getSpecialDragComment(const SdrDragStat& rDrag) 
 		}
 
 		// dx=0.00 dy=0.00                // Beide Seiten Bezier
-		// dx=0.00 dy=0.00  l=0.00 0.00ø  // Anfang oder Ende oder eine Seite Bezier bzw. Hebel
-		// dx=0.00 dy=0.00  l=0.00 0.00ø / l=0.00 0.00ø   // Mittendrin
+		// dx=0.00 dy=0.00  l=0.00 0.00ï¿½  // Anfang oder Ende oder eine Seite Bezier bzw. Hebel
+		// dx=0.00 dy=0.00  l=0.00 0.00ï¿½ / l=0.00 0.00ï¿½   // Mittendrin
 		XubString aMetr;
 		Point aBeg(rDrag.GetStart());
 		Point aNow(rDrag.GetNow());
@@ -2969,7 +2969,7 @@ sal_Bool SdrPathObj::TRGetBaseGeometry(basegfx::B2DHomMatrix& rMatrix, basegfx::
 		{
 			case SFX_MAPUNIT_TWIP :
 			{
-				// postion
+				// position
 				aTranslate.setX(ImplTwipsToMM(aTranslate.getX()));
 				aTranslate.setY(ImplTwipsToMM(aTranslate.getY()));
 

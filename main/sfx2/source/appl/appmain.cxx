@@ -123,7 +123,7 @@ void SfxApplication::Exit()
 	Diese virtuelle Methode wird vom SFx aus Application::Main() gerufen,
 	nachdem Execute() beendet ist und
 	- die Konfiguration (SfxConfigManager) bereits gespeichert wurde,
-	- die Fensterpostionen etc. in den SfxIniManager geschrieben wurden,
+	- die Fensterpositionen etc. in den SfxIniManager geschrieben wurden,
 	- das Applikationsfenster noch existiert, aber hidden ist
 	- s"amtliche Dokumente und deren Views bereits geschlossen sind.
 	- Dispatcher, Bindings etc. bereits zerst"ort sind
