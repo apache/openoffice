@@ -153,8 +153,8 @@ public class LocationTest {
      */
     public void initialize( Object[] object )
         throws com.sun.star.uno.Exception {
-        /* The component describes what arguments its expected and in which
-         * order!At this point you can read the objects and can initialize
+        /* The component describes what arguments it expects and in which
+         * order! At this point you can read the objects and can initialize
          * your component using these objects.
          */
     }
