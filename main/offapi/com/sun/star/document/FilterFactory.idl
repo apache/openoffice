@@ -107,7 +107,7 @@ published service FilterFactory
 
         <p>
         <strong>Initialization of a filter component</strong><p>
-        Every filter, which was created by this factory can(!) be intialized with it's own configuration data
+        Every filter, which was created by this factory can(!) be initialized with it's own configuration data
         and may given optional arguments of the corresponding createInstanceWithArguments() request. To do so the filter
         instance must support the optional interface <type scope="com::sun::star::lang">XInitialization</type>.
         The arguments parameter will have the following structure:

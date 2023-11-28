@@ -61,7 +61,7 @@ published service ExtendedTypeDetectionFactory
 
         <p>
         A detection component must be specified by it's uno implementation name and will be crated then.
-        Every new created component can be intialized with it's own configuration data
+        Every new created component can be initialized with it's own configuration data
         and may given optional arguments of the corresponding createInstanceWithArguments() request. To do so the
         service must support the optional interface <type scope="com::sun::star::lang">XInitialization</type>.
         The arguments parameter will have the following structure:

@@ -2499,7 +2499,7 @@ void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
 	if( aCGColorSpace == GetSalData()->mxGraySpace )
 		CGContextSetBlendMode( mxMaskContext, kCGBlendModeDifference );
 
-	// intialize the transformation matrix to the drawing target
+	// initialize the transformation matrix to the drawing target
 	const CGAffineTransform aCTM = CGContextGetCTM( xTargetContext );
 	CGContextConcatCTM( mxMaskContext, aCTM );
 	if( mxTempContext )

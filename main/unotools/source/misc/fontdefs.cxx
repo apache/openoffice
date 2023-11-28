@@ -410,7 +410,7 @@ void GetEnglishSearchFontName( String& rName )
     {
         typedef std::hash_map<const String, const char*,FontNameHash> FontNameDictionary;
         static FontNameDictionary aDictionary( sizeof(aImplLocalizedNamesList) / sizeof(*aImplLocalizedNamesList) );
-        // the font name dictionary needs to be intialized once
+        // the font name dictionary needs to be initialized once
         if( aDictionary.empty() )
         {
             // TODO: check if all dictionary entries are already normalized?
