@@ -4448,7 +4448,7 @@ void lcl_PaintLeftRightLine( const sal_Bool         _bLeft,
         SwRect aPaintRect( aRect );
         ::SwAlignRect( aPaintRect, _rFrm.getRootFrm()->GetCurrShell() );
         // if <SwAlignRect> reveals rectangle with no width, adjust rectangle
-        // to the prior left postion with width of one twip.
+        // to the prior left position with width of one twip.
         if ( (aPaintRect.*_rRectFn->fnGetWidth)() == 0 )
         {
             if ( _bLeft )
@@ -4488,7 +4488,7 @@ void lcl_PaintLeftRightLine( const sal_Bool         _bLeft,
             SwRect aPaintRect( aRect );
             ::SwAlignRect( aPaintRect, _rFrm.getRootFrm()->GetCurrShell() );
             // if <SwAlignRect> reveals rectangle with no width, adjust
-            // rectangle to the prior left postion with width of one twip.
+            // rectangle to the prior left position with width of one twip.
             if ( (aPaintRect.*_rRectFn->fnGetWidth)() == 0 )
             {
                 if ( _bLeft )
@@ -4552,7 +4552,7 @@ void lcl_PaintTopBottomLine( const sal_Bool         _bTop,
         SwRect aPaintRect( aRect );
         ::SwAlignRect( aPaintRect, _rFrm.getRootFrm()->GetCurrShell() );
         // if <SwAlignRect> reveals rectangle with no width, adjust rectangle
-        // to the prior top postion with width of one twip.
+        // to the prior top position with width of one twip.
         if ( (aPaintRect.*_rRectFn->fnGetHeight)() == 0 )
         {
             if ( _bTop )
@@ -4591,7 +4591,7 @@ void lcl_PaintTopBottomLine( const sal_Bool         _bTop,
             SwRect aPaintRect( aRect );
             ::SwAlignRect( aPaintRect, _rFrm.getRootFrm()->GetCurrShell() );
             // if <SwAlignRect> reveals rectangle with no width, adjust
-            // rectangle to the prior top postion with width of one twip.
+            // rectangle to the prior top position with width of one twip.
             if ( (aPaintRect.*_rRectFn->fnGetHeight)() == 0 )
             {
                 if ( _bTop )

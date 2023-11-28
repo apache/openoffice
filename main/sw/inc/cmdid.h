@@ -464,14 +464,14 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 #define FN_SET_LANGUAGE 		(FN_FORMAT + 15) /* Sprache */
 #define FN_SET_KERNING			(FN_FORMAT + 16) /* Kerning */
 
-#define FN_INDENT_TO_TABSTOP	(FN_FORMAT + 17) /* Einrueckung auf die naechste Tabpostion */
+#define FN_INDENT_TO_TABSTOP	(FN_FORMAT + 17) /* Einrueckung auf die naechste Tabposition */
 //schon in svxids.hrc
 //#define FN_SET_JUSTIFY_PARA 	(FN_FORMAT + 21) /* Ausrichtung Absatz */
 #define FN_SET_LINE_SPACE		(FN_FORMAT + 27) /* Zeilenabstand parametrisiert */
 #define FN_SET_ADJUST			(FN_FORMAT + 28) /* Ausrichtung parametrisiert */
 #define FN_SET_LRMARGIN 		(FN_FORMAT + 29) /* linker/rechter Rand */
 #define FN_SET_ULMARGIN 		(FN_FORMAT + 30) /* oberer/unterer Rand */
-#define FN_UNINDENT_TO_TABSTOP	(FN_FORMAT + 31) /* Einrueckung auf die vorgige Tabpostion */
+#define FN_UNINDENT_TO_TABSTOP	(FN_FORMAT + 31) /* Einrueckung auf die vorige Tabposition */
 
 #define FN_SET_HYPHEN_ZONE		(FN_FORMAT + 32) /* Silbentrennung */
 #define FN_SET_KEEP_TOGETHER	(FN_FORMAT + 34) /* nicht trennen */
@@ -943,7 +943,7 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 #define FN_SHIFT_BACKSPACE          (FN_SELECTION + 42) /* wie Backspace */
 #define FN_SELECT_WORD				(FN_SELECTION + 43) /* Wort selektieren */
 
-#define FN_GOTO_NEXT_OBJ			(FN_SELECTION + 44)	  /* N�chstes Objekt anspringen */
+#define FN_GOTO_NEXT_OBJ			(FN_SELECTION + 44)	  /* Nächstes Objekt anspringen */
 #define FN_GOTO_PREV_OBJ			(FN_SELECTION + 45)	  /* Vorhergehendes Objekt anspringen */
 
 #define FN_START_TABLE				(FN_SELECTION + 47) /* an den Anfang der Tabelle */
@@ -977,7 +977,7 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 #define FN_PREV_PARA          		(FN_SELECTION + 74)
 #define FN_NEXT_PARA          		(FN_SELECTION + 75)
 
-#define FN_GOTO_NEXT_MARK			(FN_SELECTION + 76)	  /* N�chsten Platzhalter anspringen */
+#define FN_GOTO_NEXT_MARK			(FN_SELECTION + 76)	  /* Nächsten Platzhalter anspringen */
 #define FN_GOTO_PREV_MARK			(FN_SELECTION + 77)	  /* Vorhergehenden Platzhalter anspringen */
 
 // schon im SVX unter der gleichen Id
