@@ -50,7 +50,7 @@ Die einzelnen Gruppen werden ueber eine Map aktiviert, wenn sie mehr als
 ein Element besitzen.
 
 Die Gruppen verwalten intern die FormComponents in zwei Arrays. In dem
-GroupCompArray werden die Components nach TabIndex und Einfuegepostion
+GroupCompArray werden die Components nach TabIndex und Einfuegeposition
 sortiert. Da auf dieses Array ueber die FormComponent zugegriffen
 wird, gibt es noch das GroupCompAccessArray, in dem die FormComponents
 nach ihrer Speicheradresse sortiert sind. Jedes Element des

@@ -1593,7 +1593,7 @@ vos::OGuard aGuard(Application::GetSolarMutex());
     SwPosition aPosition( *pNode, aIndex );
     GetFrm()->GetCharRect( aCoreRect, aPosition, &aMoveState );
 
-	// already get the caret postion
+	// already get the caret position
 
 	/*SwFrm* pTFrm = const_cast<SwFrm*>(GetFrm());
 	com::sun::star::uno::Sequence< ::com::sun::star::style::TabStop > tabs = 
