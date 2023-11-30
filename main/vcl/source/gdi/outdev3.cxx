@@ -3300,7 +3300,7 @@ ImplFontMetricData::ImplFontMetricData( const ImplFontSelectData& rFontSelData )
     mnSlant        = rFontSelData.GetSlant();
     mnOrientation  = sal::static_int_cast<short>(rFontSelData.mnOrientation);
 
-	// intialize the used font name
+	// initialize the used font name
     if( rFontSelData.mpFontData )
     {
         maName     = rFontSelData.mpFontData->maName;
