@@ -69,7 +69,7 @@ On Error Goto ErrHndl
     Test.MethodTested("addActionListener()", bOK)
 
     Test.StartMethod("removeActionListener()")
-    oObj.removeActionListener(oAListner)
+    oObj.removeActionListener(oAListener)
     bOK = True
     Test.MethodTested("removeActionListener()", bOK)
 

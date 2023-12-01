@@ -43,7 +43,7 @@ import org.openoffice.test.common.SystemUtil;
  * | [Force Multi Channel (0xFFFFFFFF)] | Data Length (32 bits) | Check Byte (8 bits) | Header Length (16 bits) | Header Data | Body Data |
  * 
  * To handle the received data, add a communication listener to the manager.
- * The listner will be called back when data package arrives.
+ * The listener will be called back when data package arrives.
  *
  */
 public class CommunicationManager implements Runnable, Constant{
