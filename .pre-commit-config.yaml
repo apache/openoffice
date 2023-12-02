@@ -32,3 +32,4 @@ repos:
         name: run codespell
         description: Check spelling with codespell
         entry: codespell --ignore-words=codespell.txt
+        exclude: ^extras/
