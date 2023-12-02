@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
  *
@@ -22,8 +21,7 @@
  *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0201170000xml" indexer="include">
 <title id="tit" xml-lang="en-US">Form Controls</title>
@@ -163,14 +161,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3154836" xml-lang="en-US" l10n="E">
 <image id="img_id3143277" src="res/commandimagelist/sc_formattedfield.png" width="0.2228in" height="0.2228in"><alt id="alt_id3143277" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3147547" xml-lang="en-US" l10n="U" oldref="125"><ahelp hid=".uno:FormattedField">Creates a formatted field.</ahelp> A formatted field is a text box in which you can define how the inputs and outputs are formatted, and which limiting values apply.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3155346" xml-lang="en-US" l10n="U" oldref="126">A formatted field has <link href="text/shared/02/01170002.xhp" name="special control properties">special control properties</link> (choose <emph>Format - Control</emph>).</paragraph>
 </section>
 <section id="Section21">
@@ -182,7 +179,7 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3145801" xml-lang="en-US" l10n="E">
 <image id="img_id3151073" src="res/commandimagelist/sc_insertpushbutton.png" width="0.2228in" height="0.2228in"><alt id="alt_id3151073" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3147046" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid=".uno:Pushbutton">Creates a push button.</ahelp> This function can be used to execute a command for a defined event, such as a mouse click.</paragraph>
@@ -190,7 +187,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section20">
 <bookmark xml-lang="en-US" branch="hid/.uno:Radiobutton" id="bm_id3862451" localize="false"/>
@@ -201,7 +197,7 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3152971" xml-lang="en-US" l10n="E">
 <image id="img_id3152999" src="res/commandimagelist/sc_radiobutton.png" width="0.2228in" height="0.2228in"><alt id="alt_id3152999" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3149123" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid=".uno:RadioButton">Creates an option button.</ahelp> Option buttons enable the user to choose one of several options. Option buttons with the same functionality are given the same name (<link href="text/shared/02/01170101.xhp" name="Name"><emph>Name</emph></link>
@@ -209,7 +205,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section15">
 <bookmark xml-lang="en-US" branch="hid/.uno:ListBox" id="bm_id7238352" localize="false"/>
@@ -220,14 +215,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3154326" xml-lang="en-US" l10n="E">
 <image id="img_id3154135" src="res/commandimagelist/sc_listbox.png" width="0.2228in" height="0.2228in"><alt id="alt_id3154135" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3166428" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid=".uno:ListBox">Creates a list box.</ahelp> A list box lets users select an entry from a list. If the form is linked to a database and the database connection is active, the <link href="text/shared/02/01170900.xhp" name="List Box Wizard"><emph>List Box Wizard</emph></link> will automatically appear after the list box is inserted in the document. This wizard helps you create the list box.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section14">
 <bookmark xml-lang="en-US" branch="hid/.uno:Combobox" id="bm_id5504530" localize="false"/>
@@ -238,14 +232,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3149981" xml-lang="en-US" l10n="E">
 <image id="img_id3148817" src="res/commandimagelist/sc_combobox.png" width="0.2228in" height="0.2228in"><alt id="alt_id3148817" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3149407" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid=".uno:ComboBox">Creates a combo box.</ahelp> A combo box is a single-line list box with a drop-down list from which users choose an option. You can assign the "read-only" property to the combo box so that users cannot enter other entries than those found in the list. If the form is bound to a database and the database connection is active, the <link href="text/shared/02/01170900.xhp" name="Combo Box Wizard"><emph>Combo Box Wizard</emph></link> will automatically appear after you insert the combo box in the document.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section18">
 <bookmark xml-lang="en-US" branch="hid/.uno:Label" id="bm_id7047484" localize="false"/>
@@ -256,14 +249,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3145295" xml-lang="en-US" l10n="E">
 <image id="img_id3151017" src="res/commandimagelist/sc_insertfixedtext.png" width="0.2228in" height="0.2228in"><alt id="alt_id3151017" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3148534" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid=".uno:Label">Creates a field for displaying text.</ahelp> These labels are only for displaying predefined text. Entries cannot be made in these fields.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <bookmark xml-lang="en-US" branch="hid/.uno:MoreControls" id="bm_id1433643" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:MoreControls" id="bm_id4851832" localize="false"/>
@@ -280,7 +272,7 @@
 <tablecell>
 <paragraph role="paragraph" id="par_idN11B65" xml-lang="en-US" l10n="NEW">
 <image id="img_id6128727" src="res/commandimagelist/sc_usewizards.png" width="0.2228in" height="0.2228in"><alt id="alt_id6128727" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_idN11B76" xml-lang="en-US" l10n="CHG">Turns on and turns off the automatic form controls wizards.</paragraph>
@@ -288,7 +280,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <paragraph role="heading" id="hd_id3149436" xml-lang="en-US" level="2" l10n="U" oldref="134"><link href="text/shared/02/01170001.xhp" name="Context Menu Commands">Context Menu Commands</link></paragraph><comment>end of visible part of FORM CONTROLS file</comment>
 <switch select="sys">
@@ -303,14 +294,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_idN11A64" xml-lang="en-US" l10n="NEW">
 <image id="img_id7816400" src="res/commandimagelist/sc_spinbutton.png" width="0.2228in" height="0.2228in"><alt id="alt_id7816400" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_idN11A75" xml-lang="en-US" l10n="NEW"><ahelp hid=".uno:SpinButton">Creates a spin button.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id710776" xml-lang="en-US" l10n="NEW">If you add a spin button to a Calc spreadsheet, you can use the Data tab page to create a two-way link between the spin button and a cell. As a result, when you change the contents of a cell, the contents of the spin button are updated. Conversely, if you change the value of the spin button, the contents of the cell are updated.<comment>UFI: see spec doc spinbutton_form_control.sxw</comment></paragraph>
 </section>
 <section id="Section23">
@@ -322,14 +312,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_idN11ACA" xml-lang="en-US" l10n="NEW">
 <image id="img_id8203985" src="res/commandimagelist/sc_scrollbar.png" width="0.2228in" height="0.2228in"><alt id="alt_id8203985" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_idN11ADB" xml-lang="en-US" l10n="NEW"><ahelp hid=".uno:ScrollBar">Creates a scrollbar.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_idN11CA3" xml-lang="en-US" l10n="NEW">You can specify the following properties for a scrollbar:</paragraph>
 <table id="">
 <tablerow>
@@ -414,7 +403,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_idN11D63" xml-lang="en-US" l10n="NEW">In a Calc spreadsheet, you can use the Data tab page to create a two-way link between a scrollbar and a cell.<comment>UFI: see spec doc scrollbar_form_control.sxw</comment></paragraph>
 </section>
 <section id="Section13">
@@ -426,14 +414,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3159622" xml-lang="en-US" l10n="E">
 <image id="img_id3154378" src="res/commandimagelist/sc_imagebutton.png" width="0.2228in" height="0.2228in"><alt id="alt_id3154378" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3148601" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid=".uno:Imagebutton">Creates a button displayed as an image.</ahelp> Aside from the graphic representation, an image button has the same properties as a "normal" button.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section12">
 <bookmark xml-lang="en-US" branch="hid/.uno:ImageControl" id="bm_id7383386" localize="false"/>
@@ -444,7 +431,7 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3155869" xml-lang="en-US" l10n="E">
 <image id="img_id3152381" src="res/commandimagelist/sc_imagecontrol.png" width="0.2228in" height="0.2228in"><alt id="alt_id3152381" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3149596" xml-lang="en-US" l10n="U" oldref="50"><ahelp hid=".uno:ImageControl">Creates an image control. It can only be used to add images from a database.</ahelp> In the form document, double-click one of these controls to open the <emph>Insert Graphic</emph> dialog to insert the image. There is also a context menu (not in design mode) with commands for inserting and deleting the image.</paragraph>
@@ -452,7 +439,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section10">
 <bookmark xml-lang="en-US" branch="hid/.uno:DateField" id="bm_id4810502" localize="false"/>
@@ -463,14 +449,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3149423" xml-lang="en-US" l10n="E">
 <image id="img_id3150096" src="res/commandimagelist/sc_adddatefield.png" width="0.2228in" height="0.2228in"><alt id="alt_id3150096" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3151312" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid=".uno:DateField">Creates a date field.</ahelp> If the form is linked to a database, the date values can be adopted from the database.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3151302" xml-lang="en-US" l10n="U" oldref="131">If you assign the "Dropdown" property to the date field, the user can open a calendar to select a date under the date field. This also applies to a date field within a Table Control field.</paragraph>
 <paragraph role="tip" id="par_id3154395" xml-lang="en-US" l10n="U" oldref="63">Date fields can be easily edited by the user with the up arrow and down arrow keys. Depending on the cursor position, the day, month, or the year is can be increased or decreased using the arrow keys.</paragraph>
 <paragraph role="paragraph" id="par_id3153112" xml-lang="en-US" l10n="U" oldref="132"><link href="text/shared/02/01170003.xhp" name="Specific Remarks on Date Fields">Specific Remarks on Date Fields</link>.</paragraph>
@@ -484,14 +469,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3153687" xml-lang="en-US" l10n="E">
 <image id="img_id3155949" src="res/commandimagelist/sc_timefield.png" width="0.2228in" height="0.2228in"><alt id="alt_id3155949" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3155399" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid=".uno:TimeField">Creates a time field.</ahelp> If the form is linked to a database, the time values for the form can be adopted from the database.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="tip" id="par_id3154764" xml-lang="en-US" l10n="U" oldref="64">Time fields can be easily edited by the user with the up and down arrow keys. Depending on the cursor position, the hours, minutes, or the seconds are increased or decreased using the arrow keys.</paragraph>
 </section>
 <section id="Section11">
@@ -503,14 +487,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3150531" xml-lang="en-US" l10n="E">
 <image id="img_id3154344" src="res/commandimagelist/sc_filecontrol.png" width="0.2228in" height="0.2228in"><alt id="alt_id3154344" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3149438" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid=".uno:FileControl">Creates a button that enables file selection.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section8">
 <bookmark xml-lang="en-US" branch="hid/.uno:NumericField" id="bm_id3301501" localize="false"/>
@@ -521,14 +504,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3149396" xml-lang="en-US" l10n="E">
 <image id="img_id3153012" src="res/commandimagelist/sc_insertnumericfield.png" width="0.2228in" height="0.2228in"><alt id="alt_id3153012" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3145601" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid=".uno:NumericField">Creates a numerical field.</ahelp> If the form is linked to a database, the numerical values in the form can be adopted from the database.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section6">
 <bookmark xml-lang="en-US" branch="hid/.uno:CurrencyField" id="bm_id9766539" localize="false"/>
@@ -539,14 +521,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3145324" xml-lang="en-US" l10n="E">
 <image id="img_id3152866" src="res/commandimagelist/sc_currencyfield.png" width="0.2228in" height="0.2228in"><alt id="alt_id3152866" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3145115" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid=".uno:CurrencyField">Creates a currency field.</ahelp> If the form is linked to a database, the currency field contents for in the form can be adopted from the database.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <section id="Section5">
 <bookmark xml-lang="en-US" branch="hid/.uno:PatternField" id="bm_id1317017" localize="false"/>
@@ -557,14 +538,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3149742" xml-lang="en-US" l10n="E">
 <image id="img_id3148924" src="res/commandimagelist/sc_insertpatternfield.png" width="0.2228in" height="0.2228in"><alt id="alt_id3148924" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3150122" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid=".uno:PatternField">Creates a pattern field.</ahelp> Pattern fields consist of an edit mask and a literal mask. The edit mask determines which data can be entered. The literal mask determines the contents of the pattern field when loading the form.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="note" id="par_id3152947" xml-lang="en-US" l10n="U" oldref="67">Please note that pattern fields are not exported into HTML format.</paragraph>
 </section>
 <section id="Section17">
@@ -576,7 +556,7 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3159334" xml-lang="en-US" l10n="E">
 <image id="img_id3153790" src="res/commandimagelist/sc_groupbox.png" width="0.2228in" height="0.2228in"><alt id="alt_id3153790" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3154572" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid=".uno:GroupBox">Creates a frame to visually group several controls.</ahelp> Group boxes allow you to group option buttons in a frame.</paragraph>
@@ -584,7 +564,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3150567" xml-lang="en-US" l10n="U" oldref="65">
 <emph>Note:</emph> When you drag a group box over already existing controls and then want to select a control, you have to first open the context menu of the group box and choose <emph>Arrange - Send to Back</emph>. Then select the control while pressing <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl</defaultinline></switchinline>.</paragraph>
@@ -599,14 +578,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3156402" xml-lang="en-US" l10n="E">
 <image id="img_id3146324" src="res/commandimagelist/sc_grid.png" width="0.2228in" height="0.2228in"><alt id="alt_id3146324" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3154579" xml-lang="en-US" l10n="CHG" oldref="40"><ahelp hid=".">Creates a table control to display a database table.</ahelp> If you create a new table control, the <link href="text/shared/02/01170800.xhp" name="Table Element Wizard">Table Element Wizard</link> appears.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3154697" xml-lang="en-US" l10n="U" oldref="133"><link href="text/shared/02/01170004.xhp" name="Special Information about Table Controls">Special information about Table Controls</link>.</paragraph>
 </section>
 <section id="Section24">
@@ -618,14 +596,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_idN11B2C" xml-lang="en-US" l10n="NEW">
 <image id="img_id5074922" src="res/commandimagelist/sc_navigationbar.png" width="0.2228in" height="0.2228in"><alt id="alt_id5074922" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_idN11B3D" xml-lang="en-US" l10n="NEW"><ahelp hid="SID_FM_NAVIGATIONBAR">Creates a navigation bar.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_idN11DB1" xml-lang="en-US" l10n="NEW">The navigation bar allows you to move through the records of a database or a database form. The controls on this navigation bar work the same way as the controls on the default <link href="text/shared/main0213.xhp">navigation bar</link> in $[officename].</paragraph>
 </section>
 </section><comment>end of MORE CONTROLS bar</comment>
@@ -642,14 +619,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3150261" xml-lang="en-US" l10n="E">
 <image id="img_id3149351" src="res/commandimagelist/sc_autocontrolfocus.png" width="0.2228in" height="0.2228in"><alt id="alt_id3149351" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3109848" xml-lang="en-US" l10n="U" oldref="137"><ahelp hid=".uno:AutoControlFocus">If<emph> Automatic Control Focus </emph>is activated, the first form control will be selected when you open the document. If the button is not activated, the text will be selected after opening. The <link href="text/shared/02/01170300.xhp" name="Tab Order">Tab Order</link> that you have specified determines which is the first form control.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3109848" xml-lang="en-US" l10n="U" oldref="137"><ahelp hid=".uno:AutoControlFocus">If <emph>Automatic Control Focus</emph> is activated, the first form control will be selected when you open the document. If the button is not activated, the text will be selected after opening. The <link href="text/shared/02/01170300.xhp" name="Tab Order">Tab Order</link> that you have specified determines which is the first form control.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section><comment>end of FORM DESIGN bar</comment>
 </case>
 </switch>
