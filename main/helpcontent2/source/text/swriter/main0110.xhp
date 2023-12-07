@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textswritermain0110xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Table</title>
@@ -46,7 +41,6 @@
 <paragraph role="heading" id="par_idN105E5" xml-lang="en-US" level="3" l10n="NEW">Rows</paragraph>
 <paragraph role="paragraph" id="par_idN105E8" xml-lang="en-US" l10n="NEW">Inserts rows.<comment>see also swriter/02/0409</comment></paragraph>
 <paragraph role="heading" id="par_idN105AF" xml-lang="en-US" level="2" l10n="NEW">Delete</paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:DeleteTable" id="bm_id7886898" localize="false"/><paragraph role="heading" id="par_idN1063E" xml-lang="en-US" level="3" l10n="NEW">Table</paragraph>
 <paragraph role="paragraph" id="par_idN1060A" xml-lang="en-US" l10n="NEW"><ahelp hid="20529">Deletes the current table.</ahelp></paragraph>
 <paragraph role="heading" id="par_idN1060D" xml-lang="en-US" level="3" l10n="NEW">Columns</paragraph>
@@ -60,7 +54,6 @@
 <paragraph role="paragraph" id="par_idN1062C" xml-lang="en-US" l10n="NEW">Selects the current column.</paragraph>
 <paragraph role="heading" id="par_idN1062F" xml-lang="en-US" level="3" l10n="NEW">Row</paragraph>
 <paragraph role="paragraph" id="par_idN10632" xml-lang="en-US" l10n="NEW">Selects the current row.</paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:EntireCell" id="bm_id6957914" localize="false"/><paragraph role="heading" id="par_idN10635" xml-lang="en-US" level="3" l10n="NEW">Cell</paragraph>
 <paragraph role="paragraph" id="par_idN10638" xml-lang="en-US" l10n="NEW"><ahelp hid="20530">Selects the current cell.</ahelp></paragraph>
 <paragraph role="heading" id="par_idN105B7" xml-lang="en-US" level="2" l10n="NEW"><link href="text/shared/01/05100100.xhp">Merge Cells</link></paragraph>

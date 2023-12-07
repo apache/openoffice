@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,31 +9,25 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060112xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Add-in for Programming in $[officename] Calc</title>
 <filename>/text/scalc/01/04060112.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-03-31T13:39:47">converted from old format - fpe
-dedr: fixed #i30855#</lastedited>
-</history>
+<comment>fixed #i30855#</comment>
 </meta>
 <body>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3151076"><bookmark_value>programming; add-ins</bookmark_value>
@@ -116,7 +109,6 @@ dedr: fixed #i30855#</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3156396" xml-lang="en-US" level="2" l10n="U" oldref="31"><switchinline select="sys"><caseinline select="UNIX">Shared Library 
 </caseinline><defaultinline>DLL</defaultinline></switchinline> functions</paragraph>
 <paragraph role="paragraph" id="par_id3153019" xml-lang="en-US" l10n="U" oldref="32">Following you will find a description of those functions, which are called at the <switchinline select="sys"><caseinline select="UNIX">Shared Library 
@@ -342,7 +334,6 @@ dedr: fixed #i30855#</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3154935" xml-lang="en-US" level="3" l10n="U" oldref="122">String Array</paragraph>
 <paragraph role="paragraph" id="par_id3153105" xml-lang="en-US" l10n="U" oldref="123">A cell area, which contains values of data type Text and is passed as a string array. A string array in $[officename] Calc is defined as follows:</paragraph>
 <table id="tbl_id3146992">
@@ -518,7 +509,6 @@ dedr: fixed #i30855#</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3159091" xml-lang="en-US" level="3" l10n="U" oldref="169">Cell Array</paragraph>
 <paragraph role="paragraph" id="par_id3156140" xml-lang="en-US" l10n="U" oldref="170">Cell arrays are used to call cell areas containing text as well as numbers. A cell array in $[officename] Calc is defined as follows:</paragraph>
 <table id="tbl_id3150942">
@@ -706,6 +696,5 @@ dedr: fixed #i30855#</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 </body>
 </helpdocument>
