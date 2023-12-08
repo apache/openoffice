@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,30 +9,25 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedmain0213xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Form Navigation Bar</title>
 <filename>/text/shared/main0213.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-12-04T14:57:36">UFI: changed name from Form Toolbar to Navigation bar; dedr: reviewed</lastedited>
-</history>
+<comment>changed name from Form Toolbar to Navigation bar</comment>
 </meta>
 <body>
 <section id="formular">
@@ -64,14 +58,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="E">
 <image id="img_id3150010" src="res/commandimagelist/sc_firstrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150010" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid=".uno:FirstRecord">Takes you to the first record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:PrevRecord" id="bm_id2338439" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:PrevRecord" id="bm_id3153159" localize="false"/>
 <paragraph role="heading" id="hd_id3154792" xml-lang="en-US" level="2" l10n="U" oldref="8">Previous Record</paragraph>
@@ -80,14 +73,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3145647" xml-lang="en-US" l10n="E">
 <image id="img_id3147394" src="res/commandimagelist/sc_prevrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3147394" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3157846" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid=".uno:PrevRecord">Takes you to the previous record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:NextRecord" id="bm_id2894208" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:NextRecord" id="bm_id3146900" localize="false"/>
 <paragraph role="heading" id="hd_id3149121" xml-lang="en-US" level="2" l10n="U" oldref="10">Next Record</paragraph>
@@ -96,14 +88,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3146913" xml-lang="en-US" l10n="E">
 <image id="img_id3150753" src="res/commandimagelist/sc_nextrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150753" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148914" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid=".uno:NextRecord">Takes you to the next record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:LastRecord" id="bm_id8390976" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:LastRecord" id="bm_id3156056" localize="false"/>
 <paragraph role="heading" id="hd_id3148997" xml-lang="en-US" level="2" l10n="U" oldref="12">Last Record</paragraph>
@@ -112,14 +103,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3155337" xml-lang="en-US" l10n="E">
 <image id="img_id3163808" src="res/commandimagelist/sc_lastrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3163808" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3151248" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid=".uno:LastRecord">Takes you to the last record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:RecSave" id="bm_id450354" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:RecSave" id="bm_id3153963" localize="false"/>
 <paragraph role="heading" id="hd_id3145231" xml-lang="en-US" level="2" l10n="U" oldref="14">Save Record</paragraph>
@@ -128,14 +118,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150647" xml-lang="en-US" l10n="E">
 <image id="img_id3150941" src="res/commandimagelist/sc_recsave.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150941" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3146808" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid=".uno:RecSave">Saves a new data entry. The change is registered in the database.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:RecUndo" id="bm_id5478424" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:RecUndo" id="bm_id3148422" localize="false"/>
 <paragraph role="heading" id="hd_id3158446" xml-lang="en-US" level="2" l10n="U" oldref="16">Undo: Data entry</paragraph>
@@ -144,14 +133,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3166423" xml-lang="en-US" l10n="E">
 <image id="img_id3156138" src="res/commandimagelist/sc_recundo.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156138" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3151276" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid=".uno:RecUndo">Allows you to undo a data entry.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:NewRecord" id="bm_id9891476" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:NewRecord" id="bm_id3154589" localize="false"/>
 <paragraph role="heading" id="hd_id3149967" xml-lang="en-US" level="2" l10n="U" oldref="18">New Record</paragraph>
@@ -160,14 +148,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3149735" xml-lang="en-US" l10n="E">
 <image id="img_id3155578" src="res/commandimagelist/sc_newrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3155578" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148460" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid=".uno:NewRecord">Creates a new record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/.uno:DeleteRecord" id="bm_id9404569" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:DeleteRecord" id="bm_id3152994" localize="false"/>
 <paragraph role="heading" id="hd_id3153659" xml-lang="en-US" level="2" l10n="U" oldref="20">Delete Record</paragraph>
@@ -176,7 +163,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3145584" xml-lang="en-US" l10n="E">
 <image id="img_id3166434" src="res/commandimagelist/sc_deleterecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3166434" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148817" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid=".uno:DeleteRecord">Deletes a record. A query needs to be confirmed before deleting.</ahelp></paragraph>
