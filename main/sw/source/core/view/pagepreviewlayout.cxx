@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 #include <pagepreviewlayout.hxx>
@@ -1275,7 +1273,7 @@ void SwPagePreviewLayout::_PaintSelectMarkAtPage(
     Color aLine( pOutputDev->GetLineColor() );
 
     // determine selection mark color
-    Color aSelPgLineColor(COL_LIGHTBLUE);
+    Color aSelPgLineColor(0, 120, 215);
     const StyleSettings& rSettings =
         mrParentViewShell.GetWin()->GetSettings().GetStyleSettings();
     if ( rSettings.GetHighContrastMode() )
@@ -1538,3 +1536,5 @@ sal_uInt16 SwPagePreviewLayout::ConvertRelativeToAbsolutePageNum( sal_uInt16 _nR
 
     return pRet->GetPhyPageNum();
 }
+
+/* vim: set noet sw=4 ts=4: */
