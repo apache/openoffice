@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0000000002xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Glossary of Internet Terms</title>
@@ -56,7 +51,7 @@
 </bookmark>
 <paragraph role="heading" id="hd_id3145609" xml-lang="en-US" level="2" l10n="U" oldref="56">HTML</paragraph>
 <paragraph role="paragraph" id="par_id3161459" xml-lang="en-US" l10n="U" oldref="57">HTML (Hypertext Markup Language) is a document code language, which is used as the file format for WWW documents. It is derived from <link href="text/shared/00/00000002.xhp#sgml" name="SGML">SGML</link> and integrates text, graphics, videos and sound.</paragraph>
-<paragraph role="paragraph" id="par_id3154346" xml-lang="en-US" l10n="CHG" oldref="58">If you want to type HTML commands directly, for example when doing exercises from one of the many available HTML books, remember that HTML pages are pure text files. Save your document under the document type <emph>Text </emph>and give it the file name extension .HTML. Be sure there are no umlauts or other special characters of the extended character set. If you want to re-open this file in $[officename] and edit the HTML code, you must load it with the file type <emph>Text</emph> and not with the file type <emph>Web pages</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3154346" xml-lang="en-US" l10n="CHG" oldref="58">If you want to type HTML commands directly, for example when doing exercises from one of the many available HTML books, remember that HTML pages are pure text files. Save your document under the document type <emph>Text</emph> and give it the file name extension .HTML. Be sure there are no umlauts or other special characters of the extended character set. If you want to re-open this file in $[officename] and edit the HTML code, you must load it with the file type <emph>Text</emph> and not with the file type <emph>Web pages</emph>.</paragraph>
 <paragraph role="paragraph" id="par_id3153960" xml-lang="en-US" l10n="U" oldref="244">There are several references on the Internet providing an introduction to the HTML language.</paragraph>
 </section>
 <section id="http">
@@ -93,7 +88,7 @@
 <paragraph role="listitem" id="par_id3154011" xml-lang="en-US" l10n="U" oldref="73">NCSA HTTP Server (Format type: MAP - NCSA)</paragraph>
 </listitem>
 </list>
-<paragraph role="paragraph" id="par_id3149483" xml-lang="en-US" l10n="CHG" oldref="74">$[officename] creates ImageMaps for both methods. Select the format from the <emph>File type </emph>list in the <emph>Save As </emph>dialog in the <emph>ImageMap Editor</emph>. Separate Map Files are created which you must upload to the server. You will need to ask your provider or network administrator which type of ImageMaps are supported by the server and how to access the evaluation program.</paragraph>
+<paragraph role="paragraph" id="par_id3149483" xml-lang="en-US" l10n="CHG" oldref="74">$[officename] creates ImageMaps for both methods. Select the format from the <emph>File type</emph> list in the <emph>Save As</emph> dialog in the <emph>ImageMap Editor</emph>. Separate Map Files are created which you must upload to the server. You will need to ask your provider or network administrator which type of ImageMaps are supported by the server and how to access the evaluation program.</paragraph>
 </section>
 <section id="cs_imagemaps">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3152418"><bookmark_value>Client Side ImageMap</bookmark_value>
