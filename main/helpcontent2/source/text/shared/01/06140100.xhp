@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0106140100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Menu</title>
@@ -87,7 +82,6 @@
 <paragraph role="paragraph" id="par_id3150838" xml-lang="en-US" l10n="CHG" oldref="39">To rearrange the order of menu entries, select an entry, and then click the up or down arrow button.</paragraph>
 <!-- removed HID SFX2_IMAGEBUTTON_TP_CONFIG_MENU_BTN_MN_UP -->
 <bookmark xml-lang="en-US" branch="hid/cui:ImageButton:MD_MENU_ORGANISER:BTN_MENU_UP" id="bm_id16574620" localize="false"/>
-
 <paragraph role="heading" id="hd_id3147620" xml-lang="en-US" level="2" l10n="U" oldref="63">Arrow Up</paragraph>
 <paragraph role="paragraph" id="par_id3153585" xml-lang="en-US" l10n="U" oldref="64"><ahelp hid="SFX2_IMAGEBUTTON_TP_CONFIG_MENU_BTN_MN_UP">Moves the selected item up one position.</ahelp></paragraph>
 <table id="tbl_id3154897">
@@ -95,7 +89,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150119" xml-lang="en-US" l10n="E">
 <image id="img_id3156192" src="dbaccess/res/sortup.png" width="0.2083inch" height="0.222inch"><alt id="alt_id3156192" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153331" xml-lang="en-US" l10n="U" oldref="65">Arrow Up</paragraph>
@@ -111,7 +105,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148943" xml-lang="en-US" l10n="E">
 <image id="img_id3145609" src="dbaccess/res/sortdown.png" width="0.1563inch" height="0.1665inch"><alt id="alt_id3145609" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3149295" xml-lang="en-US" l10n="U" oldref="68">Arrow Down</paragraph>
@@ -121,12 +115,9 @@
 </section>
 <bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_MENUS:BTN_ADD_COMMANDS" id="bm_id1657460" localize="false"/><paragraph role="heading" id="par_idN107EA" xml-lang="en-US" level="2" l10n="NEW">Add Commands</paragraph>
 <paragraph role="paragraph" id="par_idN107EE" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the Add Commands dialog. Select any command, then click <emph>Add</emph> or drag-and-drop the command into the <emph>Customize</emph> dialog box.</ahelp></paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/CUI_HID_SELECTOR_CATEGORIES" id="bm_id1657465" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/CUI_HID_SELECTOR_COMMANDS" id="bm_id1657467" localize="false"/>
 <paragraph role="paragraph" id="par_idN40723" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select any command, then click <emph>Add</emph> or drag-and-drop the command into the <emph>Customize</emph> dialog box.</ahelp></paragraph>
-
-
 <bookmark xml-lang="en-US" branch="hid/cui:MenuButton:RID_SVXPAGE_MENUS:BTN_CHANGE_ENTRY" id="bm_id8946195" localize="false"/><paragraph role="heading" id="par_idN107F9" xml-lang="en-US" level="2" l10n="NEW">Command</paragraph>
 <paragraph role="paragraph" id="par_idN107FD" xml-lang="en-US" l10n="NEW"><ahelp hid="705507646">Opens a menu that contains additional commands.</ahelp></paragraph>
 <paragraph role="heading" id="par_idN10800" xml-lang="en-US" level="3" l10n="NEW">Add Submenu</paragraph>
