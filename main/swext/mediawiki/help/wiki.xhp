@@ -41,20 +41,20 @@
 <paragraph role="heading" id="hd_id4554582" xml-lang="en-US" level="2" l10n="NEW">System Requirements</paragraph>
 <list type="unordered">
 <listitem>
-<paragraph role="paragraph" id="par_id2597430" xml-lang="en-US" l10n="NEW">StarOffice/StarSuite 9</paragraph>
+<paragraph role="paragraph" id="par_id2597430" xml-lang="en-US" l10n="NEW">OpenOffice.org 3.x</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id8430738" xml-lang="en-US" l10n="NEW">OpenOffice.org 3.0</paragraph>
+<paragraph role="paragraph" id="par_id8430738" xml-lang="en-US" l10n="NEW">Apache OpenOffice 4.x</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id9340495" xml-lang="en-US" l10n="NEW">Java Runtime Environment 1.4</paragraph>
+<paragraph role="paragraph" id="par_id9340495" xml-lang="en-US" l10n="NEW">Java Runtime Environment 1.6</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id7387615" xml-lang="en-US" l10n="NEW">A Wiki account on a supported <link href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</link> server</paragraph>
 </listitem>
 </list>
 <paragraph role="heading" id="hd_id8047120" xml-lang="en-US" level="2" l10n="NEW">Installing @WIKIEXTENSIONPRODUCTNAME@</paragraph>
-<paragraph role="paragraph" id="par_id4277169" xml-lang="en-US" l10n="NEW">Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose <item type="menuitem">Tools - Options - %PRODUCTNAME - Java</item>. Ensure that "Use a Java runtime environment" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME.</paragraph>
+<paragraph role="paragraph" id="par_id4277169" xml-lang="en-US" l10n="NEW">Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose <item type="menuitem">Tools - Options - %PRODUCTNAME - Java</item>. Ensure that "Use a Java runtime environment" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.6 or later and restart %PRODUCTNAME.</paragraph>
 <paragraph role="heading" id="hd_id567339" xml-lang="en-US" level="3" l10n="NEW">To Install the @WIKIEXTENSIONPRODUCTNAME@</paragraph>
 <list type="ordered">
 <listitem>
