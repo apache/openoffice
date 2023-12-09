@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<helpdocument version="1.0">
-	
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0106150000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">XML Filter Settings</title>
@@ -40,7 +36,7 @@
 <bookmark xml-lang="en-US" branch="hid/.uno:OpenXMLFilterSettings" id="bm_id1477589" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:OpenXMLFilterSettings" id="bm_id3149962" localize="false"/>
 <paragraph role="heading" id="hd_id3153272" xml-lang="en-US" level="1" l10n="U" oldref="2"><link href="text/shared/01/06150000.xhp" name="XML Filter Settings">XML Filter Settings</link></paragraph>
-<paragraph role="paragraph" id="par_id3152937" xml-lang="en-US" l10n="CHG" oldref="1"><ahelp hid=".uno:OpenXMLFilterSettings">Opens the <emph>XML Filter Settings </emph>dialog, where you can create, edit, delete, and test filters to import and to export XML files.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3152937" xml-lang="en-US" l10n="CHG" oldref="1"><ahelp hid=".uno:OpenXMLFilterSettings">Opens the <emph>XML Filter Settings</emph> dialog, where you can create, edit, delete, and test filters to import and to export XML files.</ahelp></paragraph>
 </section>
 <section id="howtoget">
 <embed href="text/shared/00/00000406.xhp#xmlfilter"/>
@@ -82,7 +78,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="note" id="par_idN106E7" xml-lang="en-US" l10n="CHG">The XHTML export filter produces valid "XHTML 1.0 Strict" output for Writer, Calc, Draw, and Impress documents.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/FILTER_HID_XML_FILTER_LIST" id="bm_id3166460" localize="false"/>
 <paragraph role="heading" id="hd_id3145382" xml-lang="en-US" level="2" l10n="U" oldref="12">Filter list</paragraph>
