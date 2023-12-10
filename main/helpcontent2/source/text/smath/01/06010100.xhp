@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,30 +9,25 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsmath0106010100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Edit Symbols</title>
 <filename>/text/smath/01/06010100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2005-04-12T13:56:55">UFI: fix to #i28380#</lastedited>
-</history>
+<comment>fix to #i28380#</comment>
 </meta>
 <body>
 <bookmark xml-lang="en-US" branch="hid/starmath:ModalDialog:RID_SYMDEFINEDIALOG" id="bm_id3149379" localize="false"/>
@@ -43,7 +37,7 @@
 <paragraph role="heading" id="hd_id3151075" xml-lang="en-US" level="1" l10n="CHG" oldref="1">Edit Symbols</paragraph>
 <paragraph role="paragraph" id="par_id3154513" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid="STARMATH_MODALDIALOG_RID_SYMDEFINEDIALOG">Use this dialog to add symbols to a symbol set, to edit symbol sets, or to modify symbol notations.</ahelp> You can also define new symbol sets, assign names to symbols, or to modify existing symbol sets.</paragraph>
 <section id="howtoget">
-  <embed href="text/smath/00/00000004.xhp#etssba"/>
+<embed href="text/smath/00/00000004.xhp#etssba"/>
 </section>
 <bookmark xml-lang="en-US" branch="hid/starmath:ComboBox:RID_SYMDEFINEDIALOG:1" id="bm_id3154253" localize="false"/>
 <paragraph role="heading" id="hd_id3146066" xml-lang="en-US" level="2" l10n="CHG" oldref="3">Old Symbol</paragraph>
