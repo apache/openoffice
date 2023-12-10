@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,31 +9,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textscalcguidevalidityxml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Validity of Cell Contents</title>
 <filename>/text/scalc/guide/validity.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-03-07T11:48:35">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3156442"><bookmark_value>values; limiting on input</bookmark_value>
@@ -62,7 +54,7 @@
 <paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="6">Select the cells for which you want to define a new validity rule.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id3148837" xml-lang="en-US" l10n="U" oldref="8">Choose <item type="menuitem">Data - Validity</item>. </paragraph>
+<paragraph role="paragraph" id="par_id3148837" xml-lang="en-US" l10n="U" oldref="8">Choose <item type="menuitem">Data - Validity</item>.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id3156020" xml-lang="en-US" l10n="U" oldref="9">On the <emph>Criteria</emph> tab page, enter the conditions for new values entered into cells. </paragraph>
@@ -90,7 +82,7 @@
 <paragraph role="listitem" id="par_id3149947" xml-lang="en-US" l10n="U" oldref="20">If you select "Macro", then by using the <emph>Browse</emph> button you can specify a macro to be run in the event of an error.</paragraph>
 </listitem>
 </list>
-<paragraph role="paragraph" id="par_id3149011" xml-lang="en-US" l10n="U" oldref="35">To display the error message, select <emph>Show error message when invalid values are entered</emph>. </paragraph>
+<paragraph role="paragraph" id="par_id3149011" xml-lang="en-US" l10n="U" oldref="35">To display the error message, select <emph>Show error message when invalid values are entered</emph>.</paragraph>
 <embed href="text/scalc/01/12120300.xhp#examplemakro"/>
 <paragraph role="note" id="par_id3148586" xml-lang="en-US" l10n="U" oldref="21">After changing the action for a cell on the <emph>Error Alert</emph> tab page and closing the dialog with OK, you must first select another cell before the change takes effect.</paragraph>
 <section id="relatedtopics">
