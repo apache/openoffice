@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,20 +21,12 @@
  *
  ***********************************************************-->
 
-
-
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textswriter0218030500xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Subject</title>
 <filename>/text/swriter/02/18030500.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2005-11-29T15:05:42">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="thema">
@@ -48,7 +39,7 @@
 <paragraph role="paragraph" id="par_id3152892" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:InsertTopicField">Inserts the subject specified in the document properties as a field.</ahelp> This field displays the data entered in the <emph>Subject</emph> field under <emph>File - Properties - Description</emph>.</paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/swriter/00/00000404.xhp#feldbefehlthema"/>
+<embed href="text/swriter/00/00000404.xhp#feldbefehlthema"/>
 </section>
 <paragraph role="paragraph" id="par_id3156380" xml-lang="en-US" l10n="U" oldref="3">If you would like to insert a different document property as a field, select <emph>Insert - Fields - Other</emph> and make the desired settings in the <link href="text/swriter/01/04090000.xhp" name="Fields"><emph>Fields</emph></link> dialog. The <emph>DocInformation</emph> category contains all of the fields shown in the document properties.</paragraph>
 </body>
