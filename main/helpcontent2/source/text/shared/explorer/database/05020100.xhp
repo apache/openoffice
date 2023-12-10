@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,31 +9,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedexplorerdatabase05020100xml" indexer="exclude" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Relations</title>
 <filename>/text/shared/explorer/database/05020100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-02-28T10:38:34">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <bookmark xml-lang="en-US" branch="hid/.uno:DBAddRelation" id="bm_id3155150" localize="false"/>
@@ -45,7 +37,7 @@
 <paragraph role="heading" id="hd_id3150445" xml-lang="en-US" level="1" l10n="U" oldref="1">Relations</paragraph>
 <paragraph role="paragraph" id="par_id3150499" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:DBAddRelation">Allows you to define and edit a relation between two tables.</ahelp></paragraph>
 <section id="howtoget">
-  <embed href="text/shared/00/00000450.xhp#relationen"/>
+<embed href="text/shared/00/00000450.xhp#relationen"/>
 </section>
 <paragraph role="note" id="par_id3155136" xml-lang="en-US" l10n="U" oldref="3">The update and delete options are only available if they are supported by the database used.</paragraph>
 <!-- removed HID DBACCESS_LISTBOX_DLG_REL_PROPERTIES_LB_LEFT_TABLE -->
