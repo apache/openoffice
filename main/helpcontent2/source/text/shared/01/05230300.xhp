@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,18 +9,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-
 
 <helpdocument version="1.0">
 <meta>
@@ -29,10 +27,6 @@
 <title id="tit" xml-lang="en-US">Rotation</title>
 <filename>/text/shared/01/05230300.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2004-05-26T12:04:21">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="drehung">
@@ -41,12 +35,11 @@
 <paragraph role="paragraph" id="par_id3146873" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_TRANS_ANGLE">Rotates the selected object.</ahelp></paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/shared/00/00040502.xhp#drehung"/>
+<embed href="text/shared/00/00040502.xhp#drehung"/>
 </section>
 <paragraph role="heading" id="hd_id3148983" xml-lang="en-US" level="2" l10n="U" oldref="3">Pivot point</paragraph>
 <paragraph role="paragraph" id="par_id3150902" xml-lang="en-US" l10n="U" oldref="4">The selected object is rotated around a pivot point that you specify. The default pivot point is at the center of the object.</paragraph>
 <paragraph role="note" id="par_id3153528" xml-lang="en-US" l10n="U" oldref="17">If you set a pivot point too far outside of the object boundaries, the object could be rotated off of the page.</paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_ANGLE:MTR_FLD_POS_X" id="bm_id3109848" localize="false"/>
 <paragraph role="heading" id="hd_id3145382" xml-lang="en-US" level="3" l10n="U" oldref="5">X Position</paragraph>
 <paragraph role="paragraph" id="par_id3166410" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_ANGLE:MTR_FLD_POS_X">Enter the horizontal distance from the left edge of the page to the pivot point.</ahelp></paragraph>
