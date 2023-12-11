@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidedoc_openxml" indexer="include">
 <title id="tit" xml-lang="en-US">Opening Documents</title>
@@ -65,7 +62,7 @@
 <paragraph role="heading" id="hd_id3149234" xml-lang="en-US" level="3" l10n="CHG" oldref="13">Restrict Files to Display</paragraph>
 <paragraph role="paragraph" id="par_id3150985" xml-lang="en-US" l10n="CHG" oldref="14">To restrict the display of files in the <emph>Open</emph> dialog to a certain type select the corresponding <emph>File type</emph> from the list. Select <emph>All Files (*.*)</emph> to display all files.</paragraph>
 <paragraph role="heading" id="hd_id4651326" xml-lang="en-US" level="3" l10n="NEW">Cursor Position</paragraph>
-<paragraph role="paragraph" id="par_id5509201" xml-lang="en-US" l10n="NEW">In general, all documents open with the cursor at the start of the document. </paragraph>
+<paragraph role="paragraph" id="par_id5509201" xml-lang="en-US" l10n="NEW">In general, all documents open with the cursor at the start of the document.</paragraph>
 <paragraph role="paragraph" id="par_id6594744" xml-lang="en-US" l10n="NEW">One exception appears when the author of a Writer text document saves and reopens a document: The cursor will be at the same position where it has been when the document was saved. This only works when the name of the author was entered in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - User Data</emph>.</paragraph>
 <list type="ordered">
 <listitem>
