@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0101050000xml" indexer="include">
 <title id="tit" xml-lang="en-US">Close</title>
@@ -46,7 +43,6 @@
 </section>
 <paragraph role="paragraph" id="par_id3149095" xml-lang="en-US" l10n="U" oldref="7">The <emph>Close </emph>command closes all of the open windows for the current document.</paragraph>
 <paragraph role="paragraph" id="par_id3148620" xml-lang="en-US" l10n="U" oldref="4">If you have made changes to the current document, you are prompted if you want to <link href="text/shared/01/01060000.xhp" name="save">save</link> your changes.</paragraph><comment>no longer the default
-
 id="par_id3159399" l10n="U" oldref="5"If you open a document for printing, and do not make any changes, you are still prompted to save your changes when you close the document. This is because $[officename] keeps track of when a document is printed.</comment>
 <paragraph role="paragraph" id="par_id3159201" xml-lang="en-US" l10n="CHG" oldref="8">When you close the last open document window, you see the <link href="text/shared/guide/startcenter.xhp">Start Center</link>.</paragraph>
 <section id="relatedtopics">
