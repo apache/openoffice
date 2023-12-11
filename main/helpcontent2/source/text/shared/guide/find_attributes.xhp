@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,30 +9,25 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidefind_attributesxhp" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Searching for Attributes</title>
 <filename>/text/shared/guide/find_attributes.xhp</filename>
 </topic>
-<history>
-<created date="2004-09-03T09:48:11">UFI: Attributes dialog of Find and Replace dialog</created>
-<lastedited date="2006-04-12T10:20:25">checked - yj</lastedited>
-</history>
+<comment>Attributes dialog of Find and Replace dialog</comment>
 </meta>
 <body>
 <switch select="appl">
@@ -49,7 +43,7 @@
 </variable></paragraph>
 <paragraph role="paragraph" id="par_idN10681" xml-lang="en-US" l10n="NEW">You can search for text with attributes that are applied either by direct formatting or by styles. For example, if you search for the <emph>Font</emph> attribute, all instances of text that do not use the default font are found. All text that has a directly coded font attribute, and all text where a style switches the font attribute, are found.</paragraph>
 <paragraph role="tip" id="par_idN10688" xml-lang="en-US" l10n="NEW">If you want to find text with any font by name, click the <emph>Format</emph> button in the <link href="text/shared/01/02100000.xhp">Find &amp; Replace</link> dialog of %PRODUCTNAME Writer.</paragraph>
-<paragraph role="note" id="par_idN1069D" xml-lang="en-US" l10n="NEW">After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options </emph>area of the %PRODUCTNAME Writer <emph>Find &amp; Replace </emph>dialog changes to <emph>Including Styles</emph>.</paragraph>
+<paragraph role="note" id="par_idN1069D" xml-lang="en-US" l10n="NEW">After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options</emph> area of the %PRODUCTNAME Writer <emph>Find &amp; Replace</emph> dialog changes to <emph>Including Styles</emph>.</paragraph>
 <paragraph role="note" id="par_idN106B0" xml-lang="en-US" l10n="NEW">If you want to search for text in which attributes were set by using direct formatting and styles, select the <emph>Including Styles</emph> box.</paragraph>
 <paragraph role="note" id="par_idN106B7" xml-lang="en-US" l10n="NEW">The search criteria for attributes are listed below the <emph>Search for</emph> box.</paragraph>
 <paragraph role="heading" id="par_idN106BE" xml-lang="en-US" level="2" l10n="NEW">To search for all font changes</paragraph>
