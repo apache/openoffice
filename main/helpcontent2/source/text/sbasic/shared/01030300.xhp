@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared01030300xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Debugging a Basic Program</title>
@@ -47,7 +42,7 @@
 <paragraph role="heading" id="hd_id3159224" xml-lang="en-US" level="2" l10n="U" oldref="4">Breakpoints and Single Step Execution</paragraph>
 <paragraph role="paragraph" id="par_id3150682" xml-lang="en-US" l10n="U" oldref="5">You can check each line in your Basic program for errors using single step execution. Errors are easily traced since you can immediately see the result of each step. A pointer in the breakpoint column of the Editor indicates the current line. You can also set a breakpoint if you want to force the program to be interrupted at a specific position.</paragraph>
 <paragraph role="paragraph" id="par_id3147303" xml-lang="en-US" l10n="U" oldref="7">Double-click in the <emph>breakpoint</emph> column at the left of the Editor window to toggle a breakpoint at the corresponding line. When the program reaches a breakpoint, the program execution is interrupted.</paragraph>
-<paragraph role="paragraph" id="par_id3155805" xml-lang="en-US" l10n="U" oldref="8">The <emph>single step </emph>execution using the <emph>Single Step</emph> icon causes the program to branch into procedures and functions.</paragraph>
+<paragraph role="paragraph" id="par_id3155805" xml-lang="en-US" l10n="U" oldref="8">The <emph>single step</emph> execution using the <emph>Single Step</emph> icon causes the program to branch into procedures and functions.</paragraph>
 <paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U" oldref="25">The procedure step execution using the <emph>Procedure Step</emph> icon causes the program to skip over procedures and functions as a single step.</paragraph>
 <paragraph role="heading" id="hd_id3153825" xml-lang="en-US" level="3" l10n="U" oldref="9">Properties of a Breakpoint</paragraph>
 <paragraph role="paragraph" id="par_id3147574" xml-lang="en-US" l10n="U" oldref="26">The properties of a breakpoint are available through its context menu by right-clicking the breakpoint in the breakpoint column.</paragraph>
