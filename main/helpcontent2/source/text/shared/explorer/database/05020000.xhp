@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedexplorerdatabase05020000xml" indexer="include">
 <title id="tit" xml-lang="en-US">Relations</title>
@@ -63,6 +60,6 @@
 <paragraph role="paragraph" id="par_id3149984" xml-lang="en-US" l10n="U" oldref="18">Alternatively, you can also click the <emph>New Relation</emph> icon in the top area of the relation field and define the relation between two tables in the <link href="text/shared/explorer/database/05020100.xhp" name="Relations"><emph>Relations</emph></link> dialog.</paragraph>
 <embed href="text/shared/00/00000450.xhp#SyRelationen"/>
 <paragraph role="warning" id="par_id3153093" xml-lang="en-US" l10n="U" oldref="14">If you use $[officename] as the front-end for a relational database, the creation and deletion of relationships is not placed in an intermediate memory by $[officename], but is forwarded directly to the external database.</paragraph>
-<paragraph role="paragraph" id="par_id3155856" xml-lang="en-US" l10n="U" oldref="15">By double-clicking a connection line, you can assign certain properties to the relation. The <emph>Relations </emph>dialog opens.</paragraph>
+<paragraph role="paragraph" id="par_id3155856" xml-lang="en-US" l10n="U" oldref="15">By double-clicking a connection line, you can assign certain properties to the relation. The <emph>Relations</emph> dialog opens.</paragraph>
 </body>
 </helpdocument>
