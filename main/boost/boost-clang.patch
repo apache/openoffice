@@ -1,7 +1,7 @@
 --- misc/build/boost_1_79_0/boost/config/user.hpp	2023-01-20 06:52:20.006784000 +0200
 +++ misc/build/boost_1_79_0/boost/config/user.hpp	2023-01-20 06:54:54.816087000 +0200
 @@ -131,3 +131,6 @@
-  
+ 
  
  
 +#if defined(__clang__)
