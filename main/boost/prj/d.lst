@@ -42,6 +42,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\asio\ssl\old\detail
 mkdir: %_DEST%\inc%_EXT%\boost\asio\windows
 mkdir: %_DEST%\inc%_EXT%\boost\atomic
 mkdir: %_DEST%\inc%_EXT%\boost\atomic\detail
+mkdir: %_DEST%\inc%_EXT%\boost\assert
 mkdir: %_DEST%\inc%_EXT%\boost\assign
 mkdir: %_DEST%\inc%_EXT%\boost\assign\std
 mkdir: %_DEST%\inc%_EXT%\boost\beast
@@ -939,6 +940,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\asio\ssl\old\* %_DEST%\inc%_EXT%\boost\asio\ssl\old
 ..\%__SRC%\inc\boost\asio\ssl\old\detail/* %_DEST%\inc%_EXT%\boost\asio\ssl\old\detail
 ..\%__SRC%\inc\boost\asio\windows\* %_DEST%\inc%_EXT%\boost\asio\windows
+..\%__SRC%\inc\boost\assert\* %_DEST%\inc%_EXT%\boost\assert
 ..\%__SRC%\inc\boost\assign\* %_DEST%\inc%_EXT%\boost\assign
 ..\%__SRC%\inc\boost\assign\std\* %_DEST%\inc%_EXT%\boost\assign\std
 ..\%__SRC%\inc\boost\atomic\* %_DEST%\inc%_EXT%\boost\atomic
