@@ -614,6 +614,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\seq\detail
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\slot
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\slot\detail
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\tuple
+mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\tuple\detail
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\variadic
 mkdir: %_DEST%\inc%_EXT%\boost\process
 mkdir: %_DEST%\inc%_EXT%\boost\process\detail
@@ -1435,6 +1436,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\preprocessor\slot\* %_DEST%\inc%_EXT%\boost\preprocessor\slot
 ..\%__SRC%\inc\boost\preprocessor\slot\detail\* %_DEST%\inc%_EXT%\boost\preprocessor\slot\detail
 ..\%__SRC%\inc\boost\preprocessor\tuple\* %_DEST%\inc%_EXT%\boost\preprocessor\tuple
+..\%__SRC%\inc\boost\preprocessor\tuple\detail\* %_DEST%\inc%_EXT%\boost\preprocessor\tuple\detail
 ..\%__SRC%\inc\boost\preprocessor\variadic\* %_DEST%\inc%_EXT%\boost\preprocessor\variadic
 ..\%__SRC%\inc\boost\process\* %_DEST%\inc%_EXT%\boost\process
 ..\%__SRC%\inc\boost\progcess\detail\* %_DEST%\inc%_EXT%\boost\process\detail
