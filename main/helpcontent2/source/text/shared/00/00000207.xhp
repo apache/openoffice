@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0000000207xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Export text files</title>
@@ -44,10 +39,8 @@
 <paragraph role="paragraph" id="par_id3150838" xml-lang="en-US" l10n="CHG" oldref="9"><ahelp hid="SC:COMBOBOX:RID_SCDLG_IMPORTOPT:ED_FIELDSEP">Choose or enter the field delimiter, which separates data fields.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:ComboBox:RID_SCDLG_IMPORTOPT:ED_TEXTSEP" id="bm_id3146938" localize="false"/><paragraph role="heading" id="hd_id3154682" xml-lang="en-US" level="3" l10n="U" oldref="4">Text delimiter</paragraph>
 <paragraph role="paragraph" id="par_id3154863" xml-lang="en-US" l10n="CHG" oldref="10"><ahelp hid="SC:COMBOBOX:RID_SCDLG_IMPORTOPT:ED_TEXTSEP">Choose or enter the text delimiter, which encloses every data field.</ahelp></paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_IMPORTOPT:CB_QUOTEALL" id="bm_id314783281" localize="false"/><paragraph role="heading" id="hd_id783149793" xml-lang="en-US" level="3" l10n="NEW">Quote all text cells</paragraph>
 <paragraph role="paragraph" id="par_id3152778363" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Exports all text cells with leading and trailing quote characters as set in the Text delimiter box. If not checked, only those text cells get quoted that contain the Field delimiter character.</ahelp></paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_IMPORTOPT:CB_SAVESHOWN" id="bm_id7735831" localize="false"/><paragraph role="heading" id="hd_id7145298" xml-lang="en-US" level="3" l10n="NEW">Save cell content as shown</paragraph>
 <paragraph role="paragraph" id="par_id5719779" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enabled by default, data will be saved as displayed, including applied number formats. If this checkbox is not marked, raw data content will be saved, as in older versions of the software.</ahelp></paragraph>
 <paragraph role="warning" id="par_id3541062" xml-lang="en-US" l10n="NEW">Depending on the number format, saving cell content as shown may write values that during an import cannot be interpreted as numerical values anymore.</paragraph>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0102220000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">ImageMap Editor</title>
@@ -40,7 +35,7 @@
 <paragraph role="paragraph" id="par_id3159194" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="imagemaptext"><ahelp hid="SVX:FLOATINGWINDOW:RID_SVXDLG_IMAP">Allows you to attach URLs to specific areas, called hotspots, on a graphic or a group of graphics. An image map is a group of one or more hotspots.</ahelp>
 </variable></paragraph>
 <section id="howtoget">
-  <embed href="text/shared/00/00000402.xhp#imagemap"/>
+<embed href="text/shared/00/00000402.xhp#imagemap"/>
 </section>
 <embed href="text/shared/guide/imagemap.xhp#imagemap"/>
 <paragraph role="paragraph" id="par_id3149751" xml-lang="en-US" l10n="U" oldref="3">You can draw three types of hotspots: rectangles, ellipses, and polygons. When you click a hotspot, the URL is opened in the browser window or frame that you specify. You can also specify the text that appears when your mouse rests on the hotspot.</paragraph>
@@ -51,7 +46,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3149811" xml-lang="en-US" l10n="E">
 <image id="img_id3147275" src="svx/res/nu07.png" width="0.222inch" height="0.222inch"><alt id="alt_id3147275" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153321" xml-lang="en-US" l10n="U" oldref="6">Apply</paragraph>
@@ -65,7 +60,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3149795" xml-lang="en-US" l10n="E">
 <image id="img_id3155503" src="res/commandimagelist/sc_open.png" width="0.222inch" height="0.222inch"><alt id="alt_id3155503" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3159158" xml-lang="en-US" l10n="U" oldref="9">Open</paragraph>
@@ -79,7 +74,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3154280" xml-lang="en-US" l10n="E">
 <image id="img_id3154923" src="res/commandimagelist/sc_saveas.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154923" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3152772" xml-lang="en-US" l10n="U" oldref="12">Save</paragraph>
@@ -93,7 +88,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="E">
 <image id="img_id3153192" src="res/commandimagelist/sc_drawselect.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153192" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153351" xml-lang="en-US" l10n="U" oldref="15">Select</paragraph>
@@ -107,7 +102,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="E">
 <image id="img_id3154297" src="res/commandimagelist/sc_rect.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154297" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3157894" xml-lang="en-US" l10n="U" oldref="18">Rectangle</paragraph>
@@ -121,7 +116,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="E">
 <image id="img_id3154011" src="res/commandimagelist/sc_ellipse.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154011" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153212" xml-lang="en-US" l10n="U" oldref="21">Ellipse</paragraph>
@@ -135,7 +130,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148577" xml-lang="en-US" l10n="E">
 <image id="img_id3156005" src="res/commandimagelist/sc_polygon.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156005" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153364" xml-lang="en-US" l10n="U" oldref="24">Polygon</paragraph>
@@ -149,7 +144,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153877" xml-lang="en-US" l10n="E">
 <image id="img_id3148386" src="res/commandimagelist/sc_freeline.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148386" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3159128" xml-lang="en-US" l10n="U" oldref="43">Freeform Polygon</paragraph>
@@ -163,7 +158,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3145801" xml-lang="en-US" l10n="E">
 <image id="img_id3150113" src="res/commandimagelist/sc_toggleobjectbeziermode.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150113" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153416" xml-lang="en-US" l10n="U" oldref="46">Edit points</paragraph>
@@ -177,7 +172,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3146971" xml-lang="en-US" l10n="E">
 <image id="img_id3148570" src="res/commandimagelist/sc_beziermove.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148570" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153839" xml-lang="en-US" l10n="U" oldref="49">Move Points</paragraph>
@@ -191,7 +186,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150749" xml-lang="en-US" l10n="E">
 <image id="img_id3146793" src="res/commandimagelist/sc_bezierinsert.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146793" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148915" xml-lang="en-US" l10n="U" oldref="52">Insert Points</paragraph>
@@ -205,7 +200,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3149021" xml-lang="en-US" l10n="E">
 <image id="img_id3154508" src="res/commandimagelist/sc_bezierdelete.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154508" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3147341" xml-lang="en-US" l10n="U" oldref="55">Delete Points</paragraph>
@@ -219,7 +214,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3155901" xml-lang="en-US" l10n="E">
 <image id="img_id3145232" src="svx/res/id016.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145232" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="27">Active</paragraph>
@@ -233,7 +228,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3145769" xml-lang="en-US" l10n="E">
 <image id="img_id3153922" src="res/commandimagelist/sc_choosemacro.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153922" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3149239" xml-lang="en-US" l10n="U" oldref="39">Macro</paragraph>
@@ -247,7 +242,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3159104" xml-lang="en-US" l10n="E">
 <image id="img_id3149735" src="res/commandimagelist/sc_modifyframe.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149735" xml-lang="en-US">Icon</alt>
-	</image><comment>UFI: see #60783</comment></paragraph>
+</image><comment>UFI: see #60783</comment></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153196" xml-lang="en-US" l10n="U" oldref="58">Properties</paragraph>
