@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedoptionen01090100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Settings</title>
@@ -51,7 +46,7 @@
 <paragraph role="paragraph" id="par_id3145090" xml-lang="en-US" l10n="U" oldref="18"><variable id="einst"><ahelp hid="HID_PRINT_OPTIONS">Defines formula settings that will be valid for all documents.</ahelp>
 </variable></paragraph>
 <section id="howtoget">
-  <embed href="text/shared/00/00000406.xhp#formeinst"/>
+<embed href="text/shared/00/00000406.xhp#formeinst"/>
 </section>
 <paragraph role="heading" id="hd_id3159234" xml-lang="en-US" level="2" l10n="U" oldref="2">Print options</paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_CHECKBOX_RID_PRINTOPTIONPAGE_CB_TITLEROW" id="bm_id3153528" localize="false"/><paragraph role="heading" id="hd_id3156410" xml-lang="en-US" level="3" l10n="U" oldref="4">Title</paragraph>
@@ -71,11 +66,7 @@
 <paragraph role="heading" id="hd_id3147228" xml-lang="en-US" level="2" l10n="U" oldref="19">Other options</paragraph>
 <bookmark xml-lang="en-US" branch="hid/starmath:CheckBox:RID_PRINTOPTIONPAGE:CB_IGNORE_SPACING" id="bm_id3159152" localize="false"/><paragraph role="heading" id="hd_id3149808" xml-lang="en-US" level="3" l10n="CHG" oldref="21">Ignore ~ and ' at the end of the line</paragraph>
 <paragraph role="paragraph" id="par_id3149203" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="STARMATH_CHECKBOX_RID_PRINTOPTIONPAGE_CB_IGNORE_SPACING">Specifies that these space wildcards will be removed if they are at the end of a line.</ahelp> In earlier versions of $[officename], adding such characters at the end of a line prevented the right edge of the formula from being cut off during printing.</paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/tobeannounced" id="bm_id34459152" localize="false"/><paragraph role="heading" id="hd_id31567808" xml-lang="en-US" level="3" l10n="NEW">Embed only used symbols (smaller file size)</paragraph>
 <paragraph role="paragraph" id="par_id3789203" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Saves only those symbols which each formula that are used in that formula.</ahelp> In earlier versions of $[officename], all symbols were saved with each formula.</paragraph>
-
-
-
 </body>
 </helpdocument>
