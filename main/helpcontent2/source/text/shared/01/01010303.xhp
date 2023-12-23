@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0101010303xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Private</title>
@@ -38,7 +33,7 @@
 <paragraph role="heading" id="hd_id3149031" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/01010303.xhp" name="Private">Private</link></paragraph>
 <paragraph role="paragraph" id="par_id3148731" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".">Contains personal contact information for business cards. Business card layouts are selected on the <emph>Business Cards</emph> tab.</ahelp></paragraph><comment>removed switched note about autotext not supplied with OOo</comment></section>
 <section id="howtoget">
-  <embed href="text/shared/00/00000401.xhp#viskartpriv"/>
+<embed href="text/shared/00/00000401.xhp#viskartpriv"/>
 </section>
 <paragraph role="heading" id="hd_id3159201" xml-lang="en-US" level="2" l10n="U" oldref="3">Private data</paragraph>
 <paragraph role="paragraph" id="par_id3147399" xml-lang="en-US" l10n="U" oldref="4">Enter the contact information that you want to include on your business card. You can also modify or update these entries by choosing <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - User Data</emph>.</paragraph>
