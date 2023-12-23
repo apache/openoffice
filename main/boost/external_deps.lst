@@ -1,0 +1,336 @@
+# Format of this file:
+#
+# Comments start with '#' and are ignored. Empty lines (only whitespace) are ignored.
+#
+# All other lines have one of two different formats:
+#
+# if (<logical-expression>)
+#    starts a block that specifies the download site(s) of an external library.
+#
+# <name>=<value>
+#    defines a variable. A definition after an "if" statement is only valid up to the next
+#    "if" statement. Previous definitions are replaced.
+#    <value> can contain references to other variables in the form $(<other-variable>)
+#
+# Some variables have special names:
+#    MD5 defines the MD5 check-sum of a library
+#    URL1 to URL9 define alternative download sites. The first one that provides the library
+#    with matching MD5 wins.
+#    name is the name under which the library tar-ball is stored. It overrides the name of the
+#    downloaded file.
+
+# Wherever possible the external tar-balls are loaded from their original distribution sites.
+# Where that is not possible (version is not archived any longer, project does not exist any
+# longer, server is temporarily not available) a fallback server is used.
+
+# The primary fallback site.
+OOO_EXTRAS=https://sourceforge.net/projects/oooextras.mirror/files/
+
+
+###############################################################################
+# Libraries with category A license
+#
+
+if ( true )
+    MD5 = 0168229624cfac409e766913506961a8
+    name = ucpp-1.3.2.tar.gz
+    URL1 = https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ucpp/ucpp-1.3.2.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_UNIT_TESTS == YES)
+    MD5 = 2d6ec8ccdf5c46b05ba54a9fd1d130d7
+    name = gtest-1.7.0.zip
+    URL1 = https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/googletest/gtest-1.7.0.zip
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if ( true )
+    MD5 = 067201ea8b126597670b5eff72e1f66c
+    name = mythes-1.2.0.tar.gz
+    URL1 = https://sourceforge.net/projects/hunspell/files/MyThes/1.2.0/mythes-1.2.0.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_MDDS != YES)
+    MD5 = 0dd138efff4412c707e239290fb82d4f
+    name = mdds_0.3.1.tar.bz2
+    URL1 = https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/multidimalgorithm/mdds_0.3.1.tar.bz2
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_LIBTEXTCAT != YES)
+    MD5 = 128cfc86ed5953e57fe0f5ae98b62c2e
+    name = libtextcat-2.2.tar.gz
+    URL1 = https://software.wise-guys.nl/download/libtextcat-2.2.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA == TRUE)
+    MD5 = 17410483b5b5f267aa18b7e00b65e6e0
+    name = hsqldb_1_8_0.zip
+    URL1 = https://sourceforge.net/projects/hsqldb/files/hsqldb/hsqldb_1_8_0/hsqldb_1_8_0_10.zip
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if ( true )
+    MD5 = 1756c4fa6c616ae15973c104cd8cb256
+    name = Adobe-Core35_AFMs-314.tar.gz
+    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA==TRUE && SYSTEM_LUCENE!=YES)
+    MD5 = 17960f35b2239654ba608cf1f3e256b3
+    name = lucene-2.9.4-src.tar.gz
+    URL1 = https://archive.apache.org/dist/lucene/java/2.9.4/lucene-2.9.4-src.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_NSS_MODULE!=NO && SYSTEM_NSS!=YES)
+    MD5 = 1f24ab1d39f4a51faf22244c94a6203f
+    name = xmlsec1-1.2.14.tar.gz
+    URL1 = http://xmlsoft.org/sources/xmlsec/releases/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_REDLAND != YES)
+    MD5 = a39f6c07ddb20d7dd2ff1f95fa21e2cd
+    name = raptor2-2.0.15.tar.gz
+    URL1 = http://download.librdf.org/source/raptor2-2.0.15.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_REDLAND != YES)
+    MD5 = e5be03eda13ef68aabab6e42aa67715e
+    name = redland-1.0.17.tar.gz
+    URL1 = http://download.librdf.org/source/redland-1.0.17.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_REDLAND != YES)
+    MD5 = 1f5def51ca0026cd192958ef07228b52
+    name = rasqal-0.9.33.tar.gz
+    URL1 = http://download.librdf.org/source/rasqal-0.9.33.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (GUI!=UNX || SYSTEM_ZLIB!=YES)
+    MD5 = 60373b133d630f74f4a1f94c1185a53f
+    name = zlib-1.3.tar.gz
+    URL1 = https://www.zlib.net/fossils/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
+    MD5 = 2c9b0f83ed5890af02c0df1c1776f39b
+    name = commons-httpclient-3.1-src.tar.gz
+    URL1 = https://archive.apache.org/dist/httpcomponents/commons-httpclient/source/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
+    MD5 = db87f7004cefc9d17f7ac841f86122bd
+    name = commons-codec-1.9-src.tar.gz
+    URL1 = https://archive.apache.org/dist/commons/codec/source/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if ( true )
+    MD5 = 2f6ecca935948f7db92d925d88d0d078
+    name = icu4c-4_0_1-src.tgz
+    URL1 = https://sourceforge.net/projects/icu/files/ICU4C/4.0.1/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA==TRUE && (ENABLE_MEDIAWIKI==YES || ENABLE_REPORTBUILDER==YES))
+    MD5 = e8e197d628436490886d17cffa108fe3
+    name = commons-logging-1.1.3-src.tar.gz
+    URL1 = https://archive.apache.org/dist/commons/logging/source/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_LIBPNG != YES)
+    MD5 = 3ca98347a5541a2dad55cd6d07ee60a9
+    name = libpng-1.5.26.tar.gz
+    URL1 = https://sourceforge.net/projects/libpng/files/libpng15/older-releases/1.5.26/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_JPEG != YES)
+    MD5 = 52654eb3b2e60c35731ea8fc87f1bd29
+    name = jpeg-8d.tar.gz
+    URL1 = https://www.ijg.org/files/jpegsrc.v8d.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA==TRUE)
+    MD5 = 4c8c505cc3cba4c467c479e3e0f09ba4
+    name = commons-lang3-3.3-src.tar.gz
+    URL1 = https://archive.apache.org/dist/commons/lang/source/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
+    MD5 = cdc2638f789ecc2db2c91488265686c1
+    name = openssl-1.0.2u.tar.gz
+    URL1 = https://www.openssl.org/source/old/1.0.2/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_LIBXML != YES)
+    MD5 = 10942a1dc23137a8aa07f0639cbfece5
+    name = libxml2-2.9.10.tar.gz
+    URL1 = http://xmlsoft.org/sources/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_LIBXSLT != YES)
+    MD5 = db8765c8d076f1b6caafd9f2542a304a
+    name = libxslt-1.1.34.tar.gz
+    URL1 = http://xmlsoft.org/sources/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA == TRUE)
+    MD5 = 63574e3ada44f473892a61a2da433a59
+    name = apache-tomcat-5.5.36-src.tar.gz
+    URL1 = https://archive.apache.org/dist/tomcat/tomcat-5/v5.5.36/src/apache-tomcat-5.5.36-src.tar.gz
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA == TRUE)
+    MD5 = 980143f96b3f6ce45d2e4947da21a5e9
+    name = stax-src-1.2.0.zip
+    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+    URL2 = http://maven.ibiblio.org/maven/stax/jars/stax-src-1.2.0.zip
+
+if (ENABLE_MEDIAWIKI == YES)
+    MD5 = a7983f859eafb2677d7ff386a023bc40
+    name = xsltml_2.1.2.zip
+    URL1 = https://sourceforge.net/projects/xsltml/files/xsltml/v.2.1.2/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_PYTHON != YES)
+    MD5 = 38c84292658ed4456157195f1c9bcbe1
+    name = Python-2.7.18.tgz
+    URL1 = https://www.python.org/ftp/python/2.7.18/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_BOOST != YES)
+    MD5 = ce966eccb3c296a27abfef9356fd1dc4
+    name = boost_1_79_0.tar.bz2
+    URL1 = https://sourceforge.net/projects/boost/files/boost/1.79.0/boost_1_79_0.tar.bz2
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_VIGRA != YES)
+    MD5 = d62650a6f908e85643e557a236ea989c
+    name = vigra1.6.0.tar.gz
+    URL1 = https://src.fedoraproject.org/lookaside/extras/vigra/vigra1.6.0.tar.gz/d62650a6f908e85643e557a236ea989c/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_EXPAT != YES)
+    MD5 = 5e9974d422dc4b157f300568ad28ebf6
+    name = expat-2.5.0.tar.bz2
+    URL1 = https://sourceforge.net/projects/expat/files/expat/2.5.0/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_CURL != YES)
+    MD5 = 7422feb126df677d2d33294a1fd079ea
+    name = curl-7.72.0.tar.gz
+    URL1 = https://curl.haxx.se/download/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (WITH_CATA_FONTS == YES)
+    MD5 = d0efec10b9f110a32e9b8f796e21782c
+    name = dejavu-fonts-ttf-2.37.tar.bz2
+    URL1 = https://sourceforge.net/projects/dejavu/files/dejavu/2.37/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (WITH_CATA_FONTS==YES)
+    MD5 = 3c90ac73fd13bd79684d9dc073840328
+    name = croscorefonts-1.31.0.tar.bz2
+    URL1 = https://gsdview.appspot.com/chromeos-localmirror/distfiles/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (WITH_CATA_FONTS==YES)
+    MD5 = 368f114c078f94214a308a74c7e991bc
+    name = crosextrafonts-20130214.tar.gz
+    URL1 = https://gsdview.appspot.com/chromeos-localmirror/distfiles/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if ( true )
+    MD5 = fdb27bfe2dbe2e7b57ae194d9bf36bab
+    name = SampleICC-1.3.2.tar.gz
+    # This seems to be the original host, but the MD5 sum does not match.
+    # URL1 = https://sourceforge.net/projects/sampleicc/files/sampleicc/SampleICC%201.3.2/SampleICC-1.3.2.zip
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (RAT_JAR_HOME==BUILD)
+    MD5 = 0f926196d42577addec7e1aa5b510605
+    name = apache-rat-0.10-bin.tar.bz2
+    URL1 = https://archive.apache.org/dist/creadur/apache-rat-0.10/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SOLAR_JAVA==TRUE && SYSTEM_BSH!=YES)
+    MD5 = 34c726044fc4e2c7c3cf489fc239cdd5
+    name = bsh-2.1.0-src.zip
+    URL1 = https://github.com/beanshell/beanshell/releases/download/2.1.0/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+###############################################################################
+# Libraries with category B license
+#
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_COINMP!=YES)
+    MD5 = 1cce53bf4b40ae29790d2c5c9f8b1129
+    name = CoinMP-1.7.6.tgz
+    URL1 = https://www.coin-or.org/download/source/CoinMP/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (WITH_CATB_FONTS==YES)
+    MD5 = c74b7223abe75949b4af367942d96c7a
+    name = crosextrafonts-carlito-20130920.tar.gz
+    URL1 = https://gsdview.appspot.com/chromeos-localmirror/distfiles/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (WITH_CATB_FONTS == YES)
+    MD5 = 1725634df4bb3dcb1b2c91a6175f8789
+    name = GentiumBasic_1102.zip
+    URL1 = https://software.sil.org/downloads/r/gentium/GentiumBasic_1102.zip
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_HYPH!=YES)
+    MD5 = 48a9f787f43a09c0a9b7b00cd1fddbbf
+    name = hyphen-2.7.1.tar.gz
+    URL1 = https://sourceforge.net/projects/hunspell/files/Hyphen/2.7/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_HUNSPELL!=YES)
+    MD5 = 4967da60b23413604c9e563beacc63b4
+    name = hunspell-1.3.3.tar.gz
+    URL1 = https://sourceforge.net/projects/hunspell/files/Hunspell/1.3.3/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SOLAR_JAVA==TRUE && ENABLE_JAVASCRIPT==YES)
+    MD5 = 99d94103662a8d0b571e247a77432ac5
+    name = rhino1_7R3.zip
+    URL1 = https://ftp.mozilla.org/pub/js/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && ENABLE_NSS_MODULE==YES)
+    MD5 = 8ac77166663de5c33bba6cb3d0066929
+    name = nss-3.39-with-nspr-4.20.tar.gz
+    URL1 = https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_39_RTM/src/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_SAXON!=YES && DISABLE_SAXON!=YES && SOLAR_JAVA==TRUE)
+    MD5 = 24be19595acad0a2cae931af77a0148a
+    name = LICENSE_source-9.0.0.7-bj.html
+    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_SAXON!=YES && DISABLE_SAXON!=YES && SOLAR_JAVA==TRUE)
+    MD5 = 48470d662650c3c074e1c3fabbc67bbd
+    name = README_source-9.0.0.7-bj.txt
+    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_SAXON!=YES && DISABLE_SAXON!=YES && SOLAR_JAVA==TRUE)
+    MD5 = ada24d37d8d638b3d8a9985e80bc2978
+    name = source-9.0.0.7-bj.zip
+    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_GRAPHITE!=YES && ENABLE_GRAPHITE==TRUE)
+    MD5 = 377a60170e5185eb63d3ed2fae98e621
+    name = README_silgraphite-2.3.1.txt
+    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_GRAPHITE!=YES && ENABLE_GRAPHITE==TRUE)
+    MD5 = d35724900f6a4105550293686688bbb3
+    name = silgraphite-2.3.1.tar.gz
+    URL1 = https://sourceforge.net/projects/silgraphite/files/silgraphite/2.3.1/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_CAIRO!=YES && ENABLE_CAIRO==TRUE)
+    MD5 = 4ea70ea87b47e92d318d4e7f5b940f47
+    name = cairo-1.8.0.tar.gz
+    URL1 = https://www.cairographics.org/releases/$(name)
+
+if (ENABLE_CATEGORY_B==YES && SYSTEM_CAIRO!=YES && ENABLE_CAIRO==TRUE)
+    MD5 = 09357cc74975b01714e00c5899ea1881
+    name = pixman-0.12.0.tar.gz
+    URL1 = https://www.cairographics.org/releases/$(name)

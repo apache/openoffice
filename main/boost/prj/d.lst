@@ -503,6 +503,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\numeric\odeint\external\thrust
 mkdir: %_DEST%\inc%_EXT%\boost\numeric\odeint\external\vexcl
 mkdir: %_DEST%\inc%_EXT%\boost\numeric\odeint\external\viennacl
 mkdir: %_DEST%\inc%_EXT%\boost\numeric\odeint\integrate
+mkdir: %_DEST%\inc%_EXT%\boost\numeric\odeint\integrate\detail
 mkdir: %_DEST%\inc%_EXT%\boost\numeric\odeint\iterator
 mkdir: %_DEST%\inc%_EXT%\boost\numeric\odeint\iterator\detail
 mkdir: %_DEST%\inc%_EXT%\boost\numeric\odeint\iterator\impl
@@ -1339,6 +1340,18 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\numeric\interval\* %_DEST%\inc%_EXT%\boost\numeric\interval
 ..\%__SRC%\inc\boost\numeric\interval\detail\* %_DEST%\inc%_EXT%\boost\numeric\interval\detail
 ..\%__SRC%\inc\boost\numeric\interval\ext\* %_DEST%\inc%_EXT%\boost\numeric\interval\ext
+..\%__SRC%\inc\boost\numeric\odeint\* %_DEST%\inc%_EXT%\boost\numeric\odeint
+..\%__SRC%\inc\boost\numeric\odeint\algebra\* %_DEST%\inc%_EXT%\boost\numeric\odeint\algebra
+..\%__SRC%\inc\boost\numeric\odeint\external\* %_DEST%\inc%_EXT%\boost\numeric\odeint\external
+..\%__SRC%\inc\boost\numeric\odeint\external\vesxcl\* %_DEST%\inc%_EXT%\boost\numeric\odeint\external\vexcl
+..\%__SRC%\inc\boost\numeric\odeint\external\viennacl\* %_DEST%\inc%_EXT%\boost\numeric\odeint\external\viennacl
+..\%__SRC%\inc\boost\numeric\odeint\integrate\* %_DEST%\inc%_EXT%\boost\numeric\odeint\integrate
+..\%__SRC%\inc\boost\numeric\odeint\integrate\detail\* %_DEST%\inc%_EXT%\boost\numeric\odeint\integrate\detail
+..\%__SRC%\inc\boost\numeric\odeint\stepper\* %_DEST%\inc%_EXT%\boost\numeric\odeint\stepper
+..\%__SRC%\inc\boost\numeric\odeint\stepper\base\* %_DEST%\inc%_EXT%\boost\numeric\odeint\stepper\base
+..\%__SRC%\inc\boost\numeric\odeint\stepper\detail\* %_DEST%\inc%_EXT%\boost\numeric\odeint\stepper\detail
+..\%__SRC%\inc\boost\numeric\odeint\stepper\generation\* %_DEST%\inc%_EXT%\boost\numeric\odeint\stepper\generation
+..\%__SRC%\inc\boost\numeric\odeint\util\* %_DEST%\inc%_EXT%\boost\numeric\odeint\util
 ..\%__SRC%\inc\boost\numeric\ublas\* %_DEST%\inc%_EXT%\boost\numeric\ublas
 ..\%__SRC%\inc\boost\numeric\ublas\detail\* %_DEST%\inc%_EXT%\boost\numeric\ublas\detail
 ..\%__SRC%\inc\boost\numeric\ublas\experimental\* %_DEST%\inc%_EXT%\boost\numeric\ublas\experimental
