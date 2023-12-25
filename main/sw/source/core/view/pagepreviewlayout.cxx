@@ -1277,12 +1277,11 @@ void SwPagePreviewLayout::_PaintSelectMarkAtPage(
     Color aFill( pOutputDev->GetFillColor() );
     Color aLine( pOutputDev->GetLineColor() );
 
-    // determine selection mark color
-    Color aSelPgLineColor(COL_LIGHTBLUE);
-    const StyleSettings& rSettings =
-        mrParentViewShell.GetWin()->GetSettings().GetStyleSettings();
-    if ( rSettings.GetHighContrastMode() )
-        aSelPgLineColor = rSettings.GetHighlightTextColor();
+	// determine selection mark color
+	const StyleSettings& rSettings = mrParentViewShell.GetWin()->GetSettings().GetStyleSettings();
+	Color aSelPgLineColor( rSettings.GetHighlightColor() );
+	if ( rSettings.GetHighContrastMode() )
+		aSelPgLineColor = rSettings.GetActiveBorderColor();
 
     // set needed mapping mode at output device
     aMapMode.SetOrigin( _aSelectedPrevwPage->aMapOffset );
