@@ -44,8 +44,8 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=boost_1_55_0
-TARFILE_MD5=d6eef4b4cacb2183f2bf265a5a03a354
+TARFILE_NAME=boost_1_64_0
+TARFILE_MD5=93eecce2abed9d2442c9676914709349
 PATCH_FILES= $(TARFILE_NAME).patch boost-clang.patch
 .IF "$(GUI)"=="OS2"
 PATCH_FILES+=boost-os2.patch
@@ -89,6 +89,7 @@ $(PACKAGE_DIR)$/$(NORMALIZE_FLAG_FILE) : $(PACKAGE_DIR)$/$(BUILD_FLAG_FILE)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/chrono $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/circular_buffer $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/compatibility $(INCCOM)$/$(PRJNAME)
+    @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/compute $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/concept $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/concept_check $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/config $(INCCOM)$/$(PRJNAME)
@@ -117,6 +118,7 @@ $(PACKAGE_DIR)$/$(NORMALIZE_FLAG_FILE) : $(PACKAGE_DIR)$/$(BUILD_FLAG_FILE)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/iostreams $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/iterator $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/lambda $(INCCOM)$/$(PRJNAME)
+    @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/lexical_cast $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/logic $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/math $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/move $(INCCOM)$/$(PRJNAME)
@@ -140,6 +142,7 @@ $(PACKAGE_DIR)$/$(NORMALIZE_FLAG_FILE) : $(PACKAGE_DIR)$/$(BUILD_FLAG_FILE)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/property_tree $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/proto $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/ptr_container $(INCCOM)$/$(PRJNAME)
+    @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/qvm $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/random $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/range $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/ratio $(INCCOM)$/$(PRJNAME)
@@ -157,6 +160,7 @@ $(PACKAGE_DIR)$/$(NORMALIZE_FLAG_FILE) : $(PACKAGE_DIR)$/$(BUILD_FLAG_FILE)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/tr1 $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/tuple $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/typeof $(INCCOM)$/$(PRJNAME)
+    @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/type_index $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/type_traits $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/units $(INCCOM)$/$(PRJNAME)
     @$(GNUCOPY) -R $(PACKAGE_DIR)$/$(TARFILE_NAME)$/boost$/unordered $(INCCOM)$/$(PRJNAME)
