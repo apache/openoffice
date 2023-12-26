@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textschart01wiz_data_seriesxhp" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Chart Wizard - Data Series</title>
@@ -42,7 +37,7 @@
 <paragraph role="paragraph" id="par_id9651478" xml-lang="en-US" l10n="CHG">On this page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can change the source range of all data series separately, including their labels. You can also change the range of the categories. You can first select the data range on the Data Range page and then remove unnecessary data series or add data series from other cells here.</paragraph>
 <paragraph role="tip" id="par_id6326487" xml-lang="en-US" l10n="NEW">If there seem to be too many options on this page, just define the data range on the Chart Wizard - Data Range page and skip this page.</paragraph>
 <section id="howtoget">
-  <embed href="text/schart/00/00000004.xhp#wiz_ranges"/>
+<embed href="text/schart/00/00000004.xhp#wiz_ranges"/>
 </section>
 <paragraph role="paragraph" id="par_id686361" xml-lang="en-US" l10n="NEW">This dialog is only available for charts based on a Calc or Writer table.</paragraph>
 <embed href="text/shared/00/00000001.xhp#ShiftF1"/>
@@ -66,11 +61,11 @@
 <list type="ordered">
 <listitem>
 <paragraph role="paragraph" id="par_id1474654" xml-lang="en-US" l10n="NEW">Click an entry in the list to view and edit the properties for that entry.</paragraph>
-<paragraph role="paragraph" id="par_id4855189" xml-lang="en-US" l10n="NEW">In the Data Ranges list box you see the role names and cell ranges of the data series components. </paragraph>
+<paragraph role="paragraph" id="par_id4855189" xml-lang="en-US" l10n="NEW">In the Data Ranges list box you see the role names and cell ranges of the data series components.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id9475081" xml-lang="en-US" l10n="NEW">Click an entry, then edit the contents in the text box below. </paragraph>
-<paragraph role="paragraph" id="par_id4695272" xml-lang="en-US" l10n="NEW">The label next to the text box states the currently selected role. </paragraph>
+<paragraph role="paragraph" id="par_id4695272" xml-lang="en-US" l10n="NEW">The label next to the text box states the currently selected role.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id3931699" xml-lang="en-US" l10n="NEW">Enter the range or click <emph>Select data range</emph> to minimize the dialog and select the range with the mouse.</paragraph>
