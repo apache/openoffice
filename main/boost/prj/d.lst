@@ -126,8 +126,6 @@ mkdir: %_DEST%\inc%_EXT%\boost\exception
 mkdir: %_DEST%\inc%_EXT%\boost\exception\detail
 mkdir: %_DEST%\inc%_EXT%\boost\filesystem
 mkdir: %_DEST%\inc%_EXT%\boost\filesystem\detail
-mkdir: %_DEST%\inc%_EXT%\boost\filesystem\v2
-mkdir: %_DEST%\inc%_EXT%\boost\filesystem\v3
 mkdir: %_DEST%\inc%_EXT%\boost\flyweight
 mkdir: %_DEST%\inc%_EXT%\boost\flyweight\detail
 mkdir: %_DEST%\inc%_EXT%\boost\format
@@ -507,6 +505,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\pool\detail
 mkdir: %_DEST%\inc%_EXT%\boost\predef
 mkdir: %_DEST%\inc%_EXT%\boost\predef\architecture
 mkdir: %_DEST%\inc%_EXT%\boost\predef\architecture\x86
+mkdir: %_DEST%\inc%_EXT%\boost\predef\compiler
 mkdir: %_DEST%\inc%_EXT%\boost\predef\detail
 mkdir: %_DEST%\inc%_EXT%\boost\predef\hardware
 mkdir: %_DEST%\inc%_EXT%\boost\predef\hardware\simd
@@ -517,6 +516,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\predef\library\std
 mkdir: %_DEST%\inc%_EXT%\boost\predef\os
 mkdir: %_DEST%\inc%_EXT%\boost\predef\os\bsd
 mkdir: %_DEST%\inc%_EXT%\boost\predef\other
+mkdir: %_DEST%\inc%_EXT%\boost\predef\platform
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\arithmetic
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\arithmetic\detail
@@ -556,6 +556,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\slot\detail
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\tuple
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\tuple\detail
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\variadic
+mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\variadic\detail
 mkdir: %_DEST%\inc%_EXT%\boost\process
 mkdir: %_DEST%\inc%_EXT%\boost\process\detail
 mkdir: %_DEST%\inc%_EXT%\boost\program_options
@@ -741,6 +742,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\spirit\utility
 mkdir: %_DEST%\inc%_EXT%\boost\statechart
 mkdir: %_DEST%\inc%_EXT%\boost\statechart\detail
 mkdir: %_DEST%\inc%_EXT%\boost\system
+mkdir: %_DEST%\inc%_EXT%\boost\system\detail
 mkdir: %_DEST%\inc%_EXT%\boost\test
 mkdir: %_DEST%\inc%_EXT%\boost\test\detail
 mkdir: %_DEST%\inc%_EXT%\boost\test\impl
@@ -945,8 +947,6 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\exception\detail\* %_DEST%\inc%_EXT%\boost\exception\detail
 ..\%__SRC%\inc\boost\filesystem\* %_DEST%\inc%_EXT%\boost\filesystem
 ..\%__SRC%\inc\boost\filesystem\detail\* %_DEST%\inc%_EXT%\boost\filesystem\detail
-..\%__SRC%\inc\boost\filesystem\v2\* %_DEST%\inc%_EXT%\boost\filesystem\v2
-..\%__SRC%\inc\boost\filesystem\v3\* %_DEST%\inc%_EXT%\boost\filesystem\v3
 ..\%__SRC%\inc\boost\flyweight\* %_DEST%\inc%_EXT%\boost\flyweight
 ..\%__SRC%\inc\boost\flyweight\detail\* %_DEST%\inc%_EXT%\boost\flyweight\detail
 ..\%__SRC%\inc\boost\format\* %_DEST%\inc%_EXT%\boost\format
@@ -1303,6 +1303,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\predef\* %_DEST%\inc%_EXT%\boost\predef
 ..\%__SRC%\inc\boost\predef\architecture\* %_DEST%\inc%_EXT%\boost\predef\architecture
 ..\%__SRC%\inc\boost\predef\architecture\x86\* %_DEST%\inc%_EXT%\boost\predef\architecture\x86
+..\%__SRC%\inc\boost\predef\compiler\* %_DEST%\inc%_EXT%\boost\predef\compiler
 ..\%__SRC%\inc\boost\predef\detail\* %_DEST%\inc%_EXT%\boost\predef\detail
 ..\%__SRC%\inc\boost\predef\hardware\* %_DEST%\inc%_EXT%\boost\predef\hardware
 ..\%__SRC%\inc\boost\predef\hardware\simd\* %_DEST%\inc%_EXT%\boost\predef\hardware\simd
@@ -1313,6 +1314,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\predef\os\* %_DEST%\inc%_EXT%\boost\predef\os
 ..\%__SRC%\inc\boost\predef\os\bsd\* %_DEST%\inc%_EXT%\boost\predef\os\bsd
 ..\%__SRC%\inc\boost\predef\other\* %_DEST%\inc%_EXT%\boost\predef\other
+..\%__SRC%\inc\boost\predef\platform\* %_DEST%\inc%_EXT%\boost\predef\platform
 ..\%__SRC%\inc\boost\preprocessor\arithmetic\* %_DEST%\inc%_EXT%\boost\preprocessor\arithmetic
 ..\%__SRC%\inc\boost\preprocessor\arithmetic\detail\* %_DEST%\inc%_EXT%\boost\preprocessor\arithmetic\detail
 ..\%__SRC%\inc\boost\preprocessor\array\* %_DEST%\inc%_EXT%\boost\preprocessor\array
@@ -1352,6 +1354,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\preprocessor\tuple\* %_DEST%\inc%_EXT%\boost\preprocessor\tuple
 ..\%__SRC%\inc\boost\preprocessor\tuple\detail\* %_DEST%\inc%_EXT%\boost\preprocessor\tuple\detail
 ..\%__SRC%\inc\boost\preprocessor\variadic\* %_DEST%\inc%_EXT%\boost\preprocessor\variadic
+..\%__SRC%\inc\boost\preprocessor\variadic\detail\* %_DEST%\inc%_EXT%\boost\preprocessor\variadic\detail
 ..\%__SRC%\inc\boost\process\* %_DEST%\inc%_EXT%\boost\process
 ..\%__SRC%\inc\boost\process\detail\* %_DEST%\inc%_EXT%\boost\process\detail
 ..\%__SRC%\inc\boost\program_options\* %_DEST%\inc%_EXT%\boost\program_options
@@ -1533,6 +1536,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\statechart\* %_DEST%\inc%_EXT%\boost\statechart
 ..\%__SRC%\inc\boost\statechart\detail\* %_DEST%\inc%_EXT%\boost\statechart\detail
 ..\%__SRC%\inc\boost\system\* %_DEST%\inc%_EXT%\boost\system
+..\%__SRC%\inc\boost\system\detail\* %_DEST%\inc%_EXT%\boost\system\detail
 ..\%__SRC%\inc\boost\test\* %_DEST%\inc%_EXT%\boost\test
 ..\%__SRC%\inc\boost\test\detail\* %_DEST%\inc%_EXT%\boost\test\detail
 ..\%__SRC%\inc\boost\test\impl\* %_DEST%\inc%_EXT%\boost\test\impl
