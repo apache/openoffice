@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
  *
@@ -22,8 +21,7 @@
  *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060104xml" indexer="include">
 <title id="tit" xml-lang="en-US">Information Functions</title>
@@ -31,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147247"><bookmark_value>information functions</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147247">
+<bookmark_value>information functions</bookmark_value>
 <bookmark_value>Function Wizard; information</bookmark_value>
 <bookmark_value>functions; information functions</bookmark_value>
 </bookmark>
@@ -188,7 +187,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <sort order="asc">
 <section id="info">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3691824"><bookmark_value>INFO function</bookmark_value>
@@ -249,7 +247,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="note" id="par_id1161534" xml-lang="en-US" l10n="NEW">Other spreadsheet applications may accept localized values for the <item type="literal">Type</item> parameter, but %PRODUCTNAME Calc will only accept the English values.</paragraph>
 <paragraph role="heading" id="hd_id5459456" xml-lang="en-US" level="3" l10n="NEW">Example</paragraph>
 <paragraph role="paragraph" id="par_id3994567" xml-lang="en-US" l10n="NEW">
@@ -745,7 +742,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3156090" xml-lang="en-US" l10n="U" oldref="159">
 <emph>Reference</emph> (list of options) is the position of the cell to be examined. If <emph>Reference</emph> is a range, the cell moves to the top left of the range. If <emph>Reference</emph> is missing, $[officename] Calc uses the position of the cell in which this formula is located. Microsoft Excel uses the reference of the cell in which the cursor is positioned.</paragraph>
 </section>
