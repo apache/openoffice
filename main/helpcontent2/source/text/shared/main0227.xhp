@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -23,9 +21,6 @@
  *
  ***********************************************************-->
 
-
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedmain0227xml" indexer="include" status="PUBLISH">
@@ -35,7 +30,8 @@
 </meta>
 <body>
 <section id="bezier">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149987"><bookmark_value>lines; editing points</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149987">
+<bookmark_value>lines; editing points</bookmark_value>
 <bookmark_value>curves; editing points</bookmark_value>
 <bookmark_value>Edit Points bar</bookmark_value>
 </bookmark><comment>mw deleted "points;editing"</comment>
@@ -56,7 +52,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3145366" xml-lang="en-US" l10n="E">
 <image id="img_id3153951" src="res/commandimagelist/sc_toggleobjectbeziermode.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153951" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150105" xml-lang="en-US" l10n="U" oldref="44">Edit Points</paragraph>
@@ -72,7 +68,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3154096" xml-lang="en-US" l10n="E">
 <image id="img_id3149377" src="res/commandimagelist/sc_beziermove.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149377" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3147397" xml-lang="en-US" l10n="U" oldref="48">Move Points</paragraph>
@@ -88,7 +84,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153838" xml-lang="en-US" l10n="E">
 <image id="img_id3146969" src="res/commandimagelist/sc_bezierinsert.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146969" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153710" xml-lang="en-US" l10n="U" oldref="54">Insert Points</paragraph>
@@ -104,7 +100,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3147321" xml-lang="en-US" l10n="E">
 <image id="img_id3146920" src="res/commandimagelist/sc_bezierdelete.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146920" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3155961" xml-lang="en-US" l10n="U" oldref="58">Delete Points</paragraph>
@@ -119,7 +115,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153788" xml-lang="en-US" l10n="E">
 <image id="img_id3148489" src="res/commandimagelist/sc_beziercutline.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148489" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3152581" xml-lang="en-US" l10n="U" oldref="61">Split Curve</paragraph>
@@ -135,7 +131,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3158212" xml-lang="en-US" l10n="E">
 <image id="img_id3149036" src="res/commandimagelist/sc_bezierconvert.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149036" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3158445" xml-lang="en-US" l10n="U" oldref="65">Convert To Curve</paragraph>
@@ -150,7 +146,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3154576" xml-lang="en-US" l10n="E">
 <image id="img_id3154201" src="res/commandimagelist/sc_bezieredge.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154201" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3166429" xml-lang="en-US" l10n="U" oldref="25">Corner Point</paragraph>
@@ -165,7 +161,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148813" xml-lang="en-US" l10n="E">
 <image id="img_id3151183" src="res/commandimagelist/sc_beziersmooth.png" width="0.222inch" height="0.222inch"><alt id="alt_id3151183" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3154258" xml-lang="en-US" l10n="U" oldref="28">Smooth Transition</paragraph>
@@ -180,7 +176,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153818" xml-lang="en-US" l10n="E">
 <image id="img_id3159218" src="res/commandimagelist/sc_beziersymmetric.png" width="0.222inch" height="0.222inch"><alt id="alt_id3159218" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3146866" xml-lang="en-US" l10n="U" oldref="31">Symmetric Transition</paragraph>
@@ -195,7 +191,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3154344" xml-lang="en-US" l10n="E">
 <image id="img_id3148607" src="res/commandimagelist/sc_bezierclose.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148607" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3147070" xml-lang="en-US" l10n="U" oldref="34">Close Bézier</paragraph>
@@ -210,7 +206,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148970" xml-lang="en-US" l10n="E">
 <image id="img_id3155385" src="res/commandimagelist/sc_beziereliminatepoints.png" width="0.222inch" height="0.222inch"><alt id="alt_id3155385" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3152869" xml-lang="en-US" l10n="U" oldref="37">Eliminate Points</paragraph>
