@@ -47,7 +47,8 @@
 <paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="CHG" oldref="33">In $[officename] Basic, a <emph>method parameter</emph> or a <emph>property</emph> expecting unit information can be specified either as integer or long integer expression without a unit, or as a character string containing a unit. If no unit is passed to the method the default unit defined for the active document type will be used. If the parameter is passed as a character string containing a measurement unit, the default setting will be ignored. The default measurement unit for a document type can be set under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - (Document Type) - General</emph>.</paragraph>
 </section>
 <section id="twips">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145801"><bookmark_value>twips; definition</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145801">
+<bookmark_value>twips; definition</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3145801" xml-lang="en-US" level="2" oldref="5">Twips</paragraph>
 <paragraph role="paragraph" id="par_id3154731" xml-lang="en-US" l10n="U" oldref="6">A twip is a screen-independent unit which is used to define the uniform position and size of screen elements on all display systems. A twip is 1/1440th of an inch or 1/20 of a printer's point. There are 1440 twips to an inch or about 567 twips to a centimeter.</paragraph>

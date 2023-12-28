@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,30 +9,30 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
-      <topic id="textsharedguidems_import_export_limitationsxml" indexer="include">
-         <title xml-lang="en-US" id="tit">About Converting Microsoft Office Documents</title>
-         <filename>/text/shared/guide/ms_import_export_limitations.xhp</filename>
-      </topic>
-   </meta>
-   <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149760"><bookmark_value>Microsoft Office;document import restrictions</bookmark_value>
-      <bookmark_value>import restrictions for Microsoft Office</bookmark_value>
-      <bookmark_value>Microsoft Office;importing password protected files</bookmark_value>
+<topic id="textsharedguidems_import_export_limitationsxml" indexer="include">
+<title xml-lang="en-US" id="tit">About Converting Microsoft Office Documents</title>
+<filename>/text/shared/guide/ms_import_export_limitations.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149760">
+<bookmark_value>Microsoft Office;document import restrictions</bookmark_value>
+<bookmark_value>import restrictions for Microsoft Office</bookmark_value>
+<bookmark_value>Microsoft Office;importing password protected files</bookmark_value>
 </bookmark><comment>MW moved "Microsoft Office;" from shared/guide/protection.xhp</comment>
 <paragraph role="paragraph" id="par_id3149760" xml-lang="en-US" l10n="E" oldref="32" localize="false"/>
 <paragraph role="heading" id="hd_id3152425" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="about"><link href="text/shared/guide/ms_import_export_limitations.xhp" name="About Converting Microsoft Office Documents">About Converting Microsoft Office Documents</link></variable></paragraph>
@@ -183,10 +182,10 @@
 </tablerow>
 </table>
 <paragraph xml-lang="en-US" id="par_idN10B0D" role="paragraph" l10n="NEW">Starting from OpenOffice.org 3.2 or StarOffice 9.2, Microsoft Office files that are encrypted by AES128 can be opened. Other encryption methods are not supported.</paragraph>
-      <section id="relatedtopics">
-         <embed href="text/shared/guide/ms_user.xhp#ms_user"/>
-         <embed href="text/shared/guide/ms_doctypes.xhp#ms_doctypes"/>
-         <paragraph xml-lang="en-US" id="par_id3147318" role="paragraph" l10n="U" oldref="33"><link href="text/shared/optionen/01010200.xhp" name="Setting the default file format">Setting the default file format</link></paragraph>
-      </section>
-   </body>
+<section id="relatedtopics">
+<embed href="text/shared/guide/ms_user.xhp#ms_user"/>
+<embed href="text/shared/guide/ms_doctypes.xhp#ms_doctypes"/>
+<paragraph xml-lang="en-US" id="par_id3147318" role="paragraph" l10n="U" oldref="33"><link href="text/shared/optionen/01010200.xhp" name="Setting the default file format">Setting the default file format</link></paragraph>
+</section>
+</body>
 </helpdocument>
