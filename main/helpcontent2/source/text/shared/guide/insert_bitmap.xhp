@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedguideinsert_bitmapxml" indexer="include">
 <title id="tit" xml-lang="en-US">Inserting, Editing, Saving Bitmaps</title>
@@ -32,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154136"><bookmark_value>graphics, see also pictures</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154136">
+<bookmark_value>graphics, see also pictures</bookmark_value>
 <bookmark_value>images, see also pictures</bookmark_value>
 <bookmark_value>images; inserting and editing bitmaps</bookmark_value>
 <bookmark_value>illustrations, see pictures</bookmark_value>
@@ -80,8 +78,8 @@
 <paragraph role="heading" id="hd_id187078" xml-lang="en-US" level="3" l10n="NEW">Icons on the Picture bar</paragraph>
 <paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="CHG" oldref="11">When you select the bitmap image, the <emph>Picture</emph> Bar offers you the tools for editing the image. Only a local copy is edited in the document, even if you have inserted an image as a link.</paragraph>
 <paragraph role="note" id="par_id3159413" xml-lang="en-US" l10n="CHG" oldref="12">The <emph>Picture</emph> Bar may look slightly different depending to the module you are using.</paragraph>
-<paragraph role="paragraph" id="par_id3154124" xml-lang="en-US" l10n="CHG" oldref="13">A number of filters are located on the <link href="text/shared/02/24010000.xhp" name="Graphic Filter">Graphic <emph>Filter</emph></link> toolbar, which you can open with the icon on the <emph>Picture</emph> Bar. </paragraph>
-<paragraph role="paragraph" id="par_id7055574" xml-lang="en-US" l10n="NEW">The original picture file will not be changed by the filters. Filters are applied to a picture only inside the document. </paragraph>
+<paragraph role="paragraph" id="par_id3154124" xml-lang="en-US" l10n="CHG" oldref="13">A number of filters are located on the <link href="text/shared/02/24010000.xhp" name="Graphic Filter">Graphic <emph>Filter</emph></link> toolbar, which you can open with the icon on the <emph>Picture</emph> Bar.</paragraph>
+<paragraph role="paragraph" id="par_id7055574" xml-lang="en-US" l10n="NEW">The original picture file will not be changed by the filters. Filters are applied to a picture only inside the document.</paragraph>
 <paragraph role="paragraph" id="par_id3145273" xml-lang="en-US" l10n="CHG" oldref="14">Some of the filters open a dialog, which you can use to select, for example, the intensity of the filter. Most filters can be applied multiple times to increase the filter effect.</paragraph>
 <paragraph role="note" id="par_id3150105" xml-lang="en-US" l10n="CHG" oldref="15">In $[officename] Draw and $[officename] Impress, you can add text and graphics, select these objects together with the bitmap, and export the selection as a new bitmap image.</paragraph>
 <paragraph role="heading" id="hd_id2572405" xml-lang="en-US" level="3" l10n="NEW">The Picture dialog</paragraph>
