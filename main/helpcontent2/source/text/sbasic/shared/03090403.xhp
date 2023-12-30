@@ -30,10 +30,12 @@
 </meta>
 <body>
 <section id="declare">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148473"><bookmark_value>Declare statement</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148473">
+<bookmark_value>Declare statement</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3148473" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090403.xhp" name="Declare Statement [Runtime]">Declare Statement [Runtime]</link></paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145316"><bookmark_value>DLL (Dynamic Link Library)</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145316">
+<bookmark_value>DLL (Dynamic Link Library)</bookmark_value>
 </bookmark>
 <paragraph role="paragraph" id="par_id3145316" xml-lang="en-US" l10n="CHG" oldref="2">Declares and defines a subroutine in a DLL file that you want to execute from $[officename] Basic.</paragraph>
 </section>
@@ -44,7 +46,7 @@
 <paragraph role="paragraph" id="par_id3154140" xml-lang="en-US" l10n="U" oldref="8">
 <emph>Name:</emph> A different name than defined in the DLL, to call the subroutine from $[officename] Basic.</paragraph>
 <paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="9">
-<emph>Aliasname</emph>: Name of the subroutine as defined in the DLL.</paragraph>
+<emph>Aliasname:</emph> Name of the subroutine as defined in the DLL.</paragraph>
 <paragraph role="paragraph" id="par_id3154684" xml-lang="en-US" l10n="U" oldref="10">
 <emph>Libname:</emph> File or system name of the DLL. This library is automatically loaded the first time the function is used.</paragraph>
 <paragraph role="paragraph" id="par_id3148452" xml-lang="en-US" l10n="U" oldref="11">

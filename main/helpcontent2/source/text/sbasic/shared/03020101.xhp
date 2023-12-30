@@ -30,13 +30,14 @@
 </meta>
 <body>
 <section id="close">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157896"><bookmark_value>Close statement</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157896">
+<bookmark_value>Close statement</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3157896" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020101.xhp" name="Close Statement [Runtime]">Close Statement [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U" oldref="2">Closes a specified file that was opened with the Open statement.</paragraph>
 </section>
 <paragraph role="heading" id="hd_id3156344" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3147265" xml-lang="en-US" l10n="U" oldref="4">Close FileNumber As Integer[, FileNumber2 As Integer[,...]] </paragraph>
+<paragraph role="code" id="par_id3147265" xml-lang="en-US" l10n="U" oldref="4">Close FileNumber As Integer[, FileNumber2 As Integer[,...]]</paragraph>
 <paragraph role="heading" id="hd_id3153379" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
 <paragraph role="paragraph" id="par_id3150791" xml-lang="en-US" l10n="U" oldref="6">
 <emph>FileNumber:</emph> Any integer expression that specifies the number of the data channel that was opened with the <emph>Open</emph> statement.</paragraph>
