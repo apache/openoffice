@@ -524,7 +524,8 @@ oldref="129">Multiselection</paragraph>
 <paragraph xml-lang="en-US" id="par_id3143275" role="paragraph" l10n="CHG" oldref="130"><ahelp hid="HID_PROP_MULTISELECTION" visibility="hidden">Allows you to select more than one item in a list box.</ahelp>Allows you to select more than one item in a list box.</paragraph>
 </section>
 <section id="Section33">
-<bookmark xml-lang="en-US" branch="index" id="bm_id4040955"><bookmark_value>rich text control</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id4040955">
+<bookmark_value>rich text control</bookmark_value>
 <bookmark_value>controls;rich text control</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_MULTILINE" id="bm_id3156370" localize="false"/>
@@ -601,7 +602,8 @@ oldref="137">Decimal accuracy</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3151340" role="heading" level="2" l10n="U" oldref="9">Name</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149819" role="paragraph" l10n="U" oldref="10"><ahelp hid="HID_PROP_NAME" visibility="hidden">On the <emph>Properties</emph> tab page, this option specifies the name for the control field. On the <emph>Form Properties</emph> tab page, this option specifies the name for the form.</ahelp>Each control field and each form has a <emph>Name</emph> property through which it can be identified. The name will appear in the <link href="text/shared/02/01170600.xhp" name="Form Navigator">Form Navigator</link> and, using the name, the control field can be referred to from a macro. The default settings already specify a name which is constructed from using the field's label and number.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153025" role="note" l10n="U" oldref="191">If you work with macros, make sure that the names of the controls are unique.</paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3146325"><bookmark_value>controls; grouping</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146325">
+<bookmark_value>controls; grouping</bookmark_value>
 <bookmark_value>groups;of controls</bookmark_value>
 <bookmark_value>forms; grouping controls</bookmark_value>
 </bookmark><comment>mw changed "grouping;" to "groups;"</comment>
@@ -757,7 +759,8 @@ oldref="147">Thousands separator</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3156256" role="heading" level="2" l10n="U" oldref="7">Label</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156432" role="paragraph" l10n="U" oldref="8"><ahelp hid="HID_PROP_LABEL" visibility="hidden">The Label property sets the label of the control field that is displayed in the form.</ahelp> The Label property sets the label of the control field that is displayed in the form. This property determines the visible label or the column header of the data field in table control forms.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154568" role="paragraph" l10n="U" oldref="54">When you create a new control, the description predefined in the <emph>Name</emph> property is used as the default for labeling the control. The label consists of the control field name and an integer numbering the control (for example, CommandButton1). With the <emph>Title</emph> property, you can assign another description to the control so that the label reflects the function of the control. Change this entry in order to assign an expressive label to the control that is visible to the user.</paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3163820"><bookmark_value>multi-line titles in forms</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163820">
+<bookmark_value>multi-line titles in forms</bookmark_value>
 <bookmark_value>names; multi-line titles</bookmark_value>
 <bookmark_value>controls; multi-line titles</bookmark_value>
 </bookmark>
