@@ -214,7 +214,7 @@ oldref="58">Enable regular expressions in formulas</paragraph>
 oldref="55">Automatically find column and row labels</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153818" role="paragraph" l10n="CHG" oldref="56"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_CALC:BTN_LOOKUP">Specifies that you can use the text in any cell as a label for the column below the text or the row to the right of the text. The text must consist of at least one word and must not contain any operators.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="par_id3151242" role="paragraph" l10n="U" oldref="57">
-<emph>Example</emph>: Cell E5 contains the text "Europe". Below, in cell E6, is the value 100 and in cell E7 the value 200. If the <emph>Automatically find column and row labels</emph> box is marked, you can write the following formula in cell A1: =SUM(Europe).</paragraph>
+<emph>Example:</emph> Cell E5 contains the text "Europe". Below, in cell E6, is the value 100 and in cell E7 the value 200. If the <emph>Automatically find column and row labels</emph> box is marked, you can write the following formula in cell A1: =SUM(Europe).</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CALC:BTN_GENERAL_PREC" id="bm_id315342901" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/sc:NumericField:RID_SCPAGE_CALC:ED_PREC" id="bm_id315442901" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id315634199" role="heading" level="2" l10n="NEW">Limit decimals for general number format</paragraph>

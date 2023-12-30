@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
  *
@@ -22,8 +21,7 @@
  *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060106xml" indexer="include">
 <title xml-lang="en-US" id="tit">Mathematical Functions</title>
@@ -31,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147124"><bookmark_value>mathematical functions</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147124">
+<bookmark_value>mathematical functions</bookmark_value>
 <bookmark_value>Function Wizard; mathematical</bookmark_value>
 <bookmark_value>functions; mathematical functions</bookmark_value>
 <bookmark_value>trigonometric functions</bookmark_value>
@@ -41,7 +40,8 @@
 </variable> To open the <emph>Function Wizard</emph>, choose <link href="text/scalc/01/04060000.xhp" name="Insert - Function"><emph>Insert - Function</emph></link>.</paragraph>
 <sort order="asc">
 <section id="Section1">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3146944"><bookmark_value>ABS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146944">
+<bookmark_value>ABS function</bookmark_value>
 <bookmark_value>absolute values</bookmark_value>
 <bookmark_value>values;absolute</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
@@ -63,7 +63,8 @@ oldref="38">Example</paragraph>
 <item type="input">=ABS(0)</item> returns 0.<comment>see also SIGN</comment></paragraph>
 </section>
 <section id="Section62">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150896"><bookmark_value>COUNTBLANK function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150896">
+<bookmark_value>COUNTBLANK function</bookmark_value>
 <bookmark_value>counting;empty cells</bookmark_value>
 <bookmark_value>empty cells;counting</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
@@ -81,7 +82,8 @@ oldref="47">Example</paragraph>
 <item type="input">=COUNTBLANK(A1:B2)</item> returns 4 if cells A1, A2, B1, and B2 are all empty.</paragraph><comment>see also COUNTIF</comment>
 </section>
 <section id="Section61">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153114"><bookmark_value>ACOS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153114">
+<bookmark_value>ACOS function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCCOS" id="bm_id3155952" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153114" role="heading" level="2" l10n="U"
@@ -100,7 +102,8 @@ oldref="55">Example</paragraph>
 <item type="input">=DEGREES(ACOS(0.5))</item> returns 60. The cosine of 60 degrees is 0.5.</paragraph><comment>see also COS, SIN, TAN, COT, ASIN, ATAN, ATAN2, ACOT</comment>
 </section>
 <section id="Section60">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145355"><bookmark_value>ACOSH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145355">
+<bookmark_value>ACOSH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCOSHYP" id="bm_id3148386" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3145355" role="heading" level="2" l10n="U"
@@ -119,7 +122,8 @@ oldref="65">Example</paragraph>
 <item type="input">=ACOSH(COSH(4))</item> returns 4.</paragraph><comment>see also ASINH, ATANH, ACOTH, COSH, SINH, TANH, COTH</comment>
 </section>
 <section id="Section59">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149027"><bookmark_value>ACOT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149027">
+<bookmark_value>ACOT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCCOT" id="bm_id3154634" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3149027" role="heading" level="2" l10n="U"
@@ -138,7 +142,8 @@ oldref="75">Example</paragraph>
 <item type="input">=DEGREES(ACOT(1))</item> returns 45. The tangent of 45 degrees is 1. </paragraph><comment>see also COS, SIN, TAN, COT, ACOS, ASIN, ATAN, ATAN2</comment>
 </section>
 <section id="Section58">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148426"><bookmark_value>ACOTH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148426">
+<bookmark_value>ACOTH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCOTHYP" id="bm_id3149777" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148426" role="heading" level="2" l10n="U"
@@ -155,7 +160,8 @@ oldref="85">Example</paragraph>
 <item type="input">=ACOTH(1.1)</item> returns inverse hyperbolic cotangent of 1.1, approximately 1.52226.</paragraph><comment>see also ACOSH, ASINH, ATANH, COSH, SINH, TANH, COTH</comment>
 </section>
 <section id="Section57">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145084"><bookmark_value>ASIN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145084">
+<bookmark_value>ASIN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCSIN" id="bm_id3149280" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3145084" role="heading" level="2" l10n="U" oldref="90">ASIN</paragraph>
@@ -173,7 +179,8 @@ oldref="85">Example</paragraph>
 <item type="input">=DEGREES(ASIN(0.5))</item> returns 30. The sine of 30 degrees is 0.5.</paragraph><comment>see also COS, SIN, TAN, COT, ACOS, ATAN, ATAN2, ACOT</comment>
 </section>
 <section id="Section56">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151266"><bookmark_value>ASINH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151266">
+<bookmark_value>ASINH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARSINHYP" id="bm_id3145206" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3151266" role="heading" level="2" l10n="U" oldref="100">ASINH</paragraph>
@@ -190,7 +197,8 @@ oldref="105">Example</paragraph>
 <item type="input">=ASINH(SINH(4))</item> returns 4.</paragraph><comment>see also ACOSH, ATANH, ACOTH, COSH, SINH, TANH, COTH</comment>
 </section>
 <section id="Section55">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155996"><bookmark_value>ATAN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155996">
+<bookmark_value>ATAN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCTAN" id="bm_id3154743" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3155996" role="heading" level="2" l10n="U"
@@ -209,7 +217,8 @@ oldref="115">Example</paragraph>
 <item type="input">=DEGREES(ATAN(1))</item> returns 45. The tangent of 45 degrees is 1.</paragraph><comment>see also COS, SIN, TAN, COT, ACOS, ASIN, ATAN2, ACOT</comment>
 </section>
 <section id="Section54">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153983"><bookmark_value>ATAN2 function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153983">
+<bookmark_value>ATAN2 function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCTAN2" id="bm_id3159180" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153983" role="heading" level="2" l10n="U" oldref="120">ATAN2</paragraph>
@@ -228,7 +237,8 @@ oldref="126">Example</paragraph>
 <item type="input">=DEGREES(ATAN2(12.3;12.3))</item> returns 45. The tangent of 45 degrees is 1.</paragraph><comment>see also COS, SIN, TAN, COT, ACOS, ASIN, ATAN, ACOT</comment>
 </section>
 <section id="Section53">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155398"><bookmark_value>ATANH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155398">
+<bookmark_value>ATANH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARTANHYP" id="bm_id3154939" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3155398" role="heading" level="2" l10n="U"
@@ -245,7 +255,8 @@ oldref="135">Example</paragraph>
 <item type="input">=ATANH(0)</item> returns 0.</paragraph><comment>see also ACOSH, ASINH, ACOTH, COSH, SINH, TANH, COTH</comment>
 </section>
 <section id="Section52">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153062"><bookmark_value>COS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153062">
+<bookmark_value>COS function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_COS" id="bm_id3158408" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153062" role="heading" level="2" l10n="U"
@@ -262,7 +273,8 @@ oldref="149">COS</paragraph>
 <item type="input">=COS(RADIANS(60))</item> returns 0.5, the cosine of 60 degrees.</paragraph><comment>see also SIN, TAN, COT, ACOS, ASIN, ATAN, ATAN2, ACOT</comment>
 </section>
 <section id="Section51">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154277"><bookmark_value>COSH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154277">
+<bookmark_value>COSH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_COSHYP" id="bm_id3149158" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154277" role="heading" level="2" l10n="U" oldref="159">COSH</paragraph>
@@ -275,7 +287,8 @@ oldref="149">COS</paragraph>
 <item type="input">=COSH(0)</item> returns 1, the hyperbolic cosine of 0.</paragraph><comment>see also SINH, TANH, COTH, ACOSH, ASINH, ATANH, ACOTH</comment>
 </section>
 <section id="Section50">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152888"><bookmark_value>COT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152888">
+<bookmark_value>COT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_COT" id="bm_id3153392" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152888" role="heading" level="2" l10n="U" oldref="169">COT</paragraph>
@@ -293,7 +306,8 @@ oldref="174">Examples:</paragraph>
 <item type="input">=COT(RADIANS(45))</item> returns 1, the cotangent of 45 degrees.</paragraph><comment>see also COS, SIN, TAN, ACOS, ASIN, ATAN, ATAN2, ACOT</comment>
 </section>
 <section id="Section49">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154337"><bookmark_value>COTH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154337">
+<bookmark_value>COTH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_COTHYP" id="bm_id3148650" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154337" role="heading" level="2" l10n="U" oldref="178">COTH</paragraph>
@@ -308,7 +322,8 @@ oldref="183">Example</paragraph>
 <item type="input">=COTH(1)</item> returns the hyperbolic cotangent of 1, approximately 1.3130.</paragraph><comment>see also COSH, SINH, TANH, ACOSH, ASINH, ATANH, ACOTH</comment>
 </section>
 <section id="Section48">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145314"><bookmark_value>DEGREES function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145314">
+<bookmark_value>DEGREES function</bookmark_value>
 <bookmark_value>converting;radians, into degrees</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DEG" id="bm_id3153946" localize="false"/>
@@ -322,7 +337,8 @@ oldref="183">Example</paragraph>
 <item type="input">=DEGREES(PI())</item> returns 180 degrees.</paragraph><comment>see also RADIANS</comment>
 </section>
 <section id="Section47">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148698"><bookmark_value>EXP function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148698">
+<bookmark_value>EXP function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_EXP" id="bm_id3154625" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148698" role="heading" level="2" l10n="U"
@@ -336,7 +352,8 @@ oldref="198">EXP</paragraph>
 <item type="input">=EXP(1)</item> returns 2.71828182845904, the mathematical constant e to Calc's accuracy.</paragraph><comment>see also POWER, LN</comment>
 </section>
 <section id="Section46">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145781"><bookmark_value>FACT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145781">
+<bookmark_value>FACT function</bookmark_value>
 <bookmark_value>factorials;numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FAKULTAET" id="bm_id3153886" localize="false"/>
@@ -354,7 +371,8 @@ oldref="198">EXP</paragraph>
 <item type="input">=FACT(0)</item> returns 1.</paragraph><comment>see also FACTDOUBLE, MULTINOMIAL, PRODUCT</comment>
 </section>
 <section id="Section45">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3159084"><bookmark_value>INT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159084">
+<bookmark_value>INT function</bookmark_value>
 <bookmark_value>numbers;rounding down to next integer</bookmark_value>
 <bookmark_value>rounding;down to next integer</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
@@ -372,7 +390,8 @@ oldref="198">EXP</paragraph>
 <item type="input">=INT(-1.3)</item> returns -2.</paragraph><comment>see also TRUNC, ROUND, ROUNDDOWN, ROUNDUP, CEILING, FLOOR, EVEN, ODD, MROUND</comment>
 </section>
 <section id="Section44">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150938"><bookmark_value>EVEN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150938">
+<bookmark_value>EVEN function</bookmark_value>
 <bookmark_value>numbers;rounding up/down to even integers</bookmark_value>
 <bookmark_value>rounding;up/down to even integers</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
@@ -393,7 +412,8 @@ oldref="198">EXP</paragraph>
 <item type="input">=EVEN(-0.5)</item> returns -2.</paragraph><comment>see also CEILING, FLOOR, ODD, MROUND, INT, TRUNC, ROUND, ROUNDDOWN, ROUNDUP</comment>
 </section>
 <section id="Section43">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147356"><bookmark_value>GCD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147356">
+<bookmark_value>GCD function</bookmark_value>
 <bookmark_value>greatest common divisor</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GGT" id="bm_id3149737" localize="false"/>
@@ -411,7 +431,8 @@ oldref="237">GCD</paragraph>
 <item type="input">=GCD(B1:B3)</item> where cells B1, B2, B3 contain <item type="input">9</item>, <item type="input">12</item>, <item type="input">9</item> gives 3.</paragraph>
 </section>
 <section id="Section42">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151221"><bookmark_value>GCD_ADD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151221">
+<bookmark_value>GCD_ADD function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_GCD" id="bm_id3147578" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3151221" role="heading" level="2" l10n="E"
@@ -427,7 +448,8 @@ oldref="679">Syntax</paragraph>
 <item type="input">=GCD_ADD(5;15;25)</item> returns 5.</paragraph>
 </section>
 <section id="Section41">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156048"><bookmark_value>ISEVEN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156048">
+<bookmark_value>ISEVEN function</bookmark_value>
 <bookmark_value>even integers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTGERADE" id="bm_id3149430" localize="false"/>
@@ -450,7 +472,8 @@ oldref="679">Syntax</paragraph>
 <item type="input">=ISEVEN(3.999)</item> returns FALSE</paragraph><comment>see also ISODD</comment>
 </section>
 <section id="Section40">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156034"><bookmark_value>ISODD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156034">
+<bookmark_value>ISODD function</bookmark_value>
 <bookmark_value>odd integers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTUNGERADE" id="bm_id3149298" localize="false"/>
@@ -471,7 +494,8 @@ oldref="679">Syntax</paragraph>
 <item type="input">=ISODD(-3.1)</item> returns TRUE</paragraph><comment>see also ISEVEN</comment>
 </section>
 <section id="Section39">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145213"><bookmark_value>LCM function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145213">
+<bookmark_value>LCM function</bookmark_value>
 <bookmark_value>least common multiples</bookmark_value>
 <bookmark_value>lowest common multiples</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
@@ -488,7 +512,8 @@ oldref="270">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154914" role="paragraph" l10n="U" oldref="271">If you enter the numbers <item type="input">512</item>;<item type="input">1024</item> and <item type="input">2000</item> in the Integer 1;2 and 3 text boxes, 128000 will be returned as the result.</paragraph>
 </section>
 <section id="Section38">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154230"><bookmark_value>LCM_ADD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154230">
+<bookmark_value>LCM_ADD function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_LCM" id="bm_id3147222" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154230" role="heading" level="2" l10n="U"
@@ -505,7 +530,8 @@ oldref="689">Example</paragraph>
 <item type="input">=LCM_ADD(5;15;25)</item> returns 75.</paragraph>
 </section>
 <section id="Section37">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155802"><bookmark_value>COMBIN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155802">
+<bookmark_value>COMBIN function</bookmark_value>
 <bookmark_value>number of combinations</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KOMBINATIONEN" id="bm_id3155077" localize="false"/>
@@ -525,7 +551,8 @@ oldref="279">Example</paragraph>
 <item type="input">=COMBIN(3;2)</item> returns 3.</paragraph><comment>see also COMBINA</comment>
 </section>
 <section id="Section36">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150284"><bookmark_value>COMBINA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150284">
+<bookmark_value>COMBINA function</bookmark_value>
 <bookmark_value>number of combinations with repetitions</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KOMBINATIONEN2" id="bm_id3150295" localize="false"/>
@@ -545,7 +572,8 @@ oldref="288">Example</paragraph>
 <item type="input">=COMBINA(3;2)</item> returns 6.</paragraph><comment>see also COMBIN</comment>
 </section>
 <section id="Section35">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156086"><bookmark_value>TRUNC function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156086">
+<bookmark_value>TRUNC function</bookmark_value>
 <bookmark_value>decimal places;cutting off</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KUERZEN" id="bm_id3157849" localize="false"/>
@@ -567,7 +595,8 @@ oldref="297">Example</paragraph>
 <item type="input">=TRUNC(-1.234999;3)</item> returns -1.234. All the 9s are lost.</paragraph><comment>see also INT, ROUND, ROUNDDOWN, ROUNDUP, CEILING, FLOOR, EVEN, ODD, MROUND</comment>
 </section>
 <section id="Section34">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153601"><bookmark_value>LN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153601">
+<bookmark_value>LN function</bookmark_value>
 <bookmark_value>natural logarithm</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_LN" id="bm_id3153613" localize="false"/>
@@ -586,7 +615,8 @@ oldref="306">Example</paragraph>
 <item type="input">=LN(EXP(321))</item> returns 321.</paragraph><comment>see also LOG, LOG10, EXP</comment>
 </section>
 <section id="Section33">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3109813"><bookmark_value>LOG function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3109813">
+<bookmark_value>LOG function</bookmark_value>
 <bookmark_value>logarithms</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_LOG" id="bm_id3109824" localize="false"/>
@@ -606,7 +636,8 @@ oldref="317">Example</paragraph>
 <item type="input">=LOG(7^4;7)</item> returns 4.</paragraph><comment>see also LOG10, LN, POWER</comment>
 </section>
 <section id="Section32">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154187"><bookmark_value>LOG10 function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154187">
+<bookmark_value>LOG10 function</bookmark_value>
 <bookmark_value>base-10 logarithm</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_LOG10" id="bm_id3155460" localize="false"/>
@@ -623,7 +654,8 @@ oldref="327">Example</paragraph>
 <item type="input">=LOG10(5)</item> returns the base-10 logarithm of 5 (approximately 0.69897).</paragraph><comment>see also LOG, LN, POWER</comment>
 </section>
 <section id="Section31">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152518"><bookmark_value>CEILING function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152518">
+<bookmark_value>CEILING function</bookmark_value>
 <bookmark_value>rounding;up to multiples of significance</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_OBERGRENZE" id="bm_id3152530" localize="false"/>
@@ -647,7 +679,8 @@ oldref="338">Example</paragraph>
 <item type="input">=CEILING(-11;-2;1)</item> returns -12</paragraph><comment>see also FLOOR, EVEN, ODD, MROUND, INT, TRUNC, ROUND, ROUNDDOWN, ROUNDUP</comment>
 </section>
 <section id="Section30">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157762"><bookmark_value>PI function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157762">
+<bookmark_value>PI function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_PI" id="bm_id3157774" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3157762" role="heading" level="2" l10n="U"
@@ -662,7 +695,8 @@ oldref="347">Example</paragraph>
 <item type="input">=PI()</item> returns 3.14159265358979.</paragraph>
 </section>
 <section id="Section29">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152418"><bookmark_value>MULTINOMIAL function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152418">
+<bookmark_value>MULTINOMIAL function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_MULTINOMIAL" id="bm_id3152429" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152418" role="heading" level="2" l10n="U"
@@ -678,7 +712,8 @@ oldref="640">Example</paragraph>
 <item type="input">=MULTINOMIAL(F11:H11)</item> returns 1260, if F11 to H11 contain the values <item type="input">2</item>, <item type="input">3</item> and <item type="input">4</item>. This corresponds to the formula =(2+3+4)! / (2!*3!*4!)</paragraph>
 </section>
 <section id="Section28">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155717"><bookmark_value>POWER function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155717">
+<bookmark_value>POWER function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_POTENZ" id="bm_id3155728" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3155717" role="heading" level="2" l10n="U"
@@ -699,7 +734,8 @@ oldref="356">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id1614429" role="paragraph" l10n="NEW">=4^3 also returns 4 to the power of 3.</paragraph><comment>see also EXP, LOG, SQRT</comment>
 </section>
 <section id="Section27">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152651"><bookmark_value>SERIESSUM function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152651">
+<bookmark_value>SERIESSUM function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_SERIESSUM" id="bm_id3152662" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152651" role="heading" level="2" l10n="U"
@@ -715,7 +751,8 @@ oldref="645">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3144370" role="paragraph" l10n="U" oldref="649"><emph>Coefficients</emph> is a series of coefficients. For each coefficient the series sum is extended by one section.</paragraph>
 </section>
 <section id="Section26">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3144386"><bookmark_value>PRODUCT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144386">
+<bookmark_value>PRODUCT function</bookmark_value>
 <bookmark_value>numbers;multiplying</bookmark_value>
 <bookmark_value>multiplying;numbers</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
@@ -734,7 +771,8 @@ oldref="366">Example</paragraph>
 <item type="input">=PRODUCT(2;3;4)</item> returns 24.</paragraph><comment>see also FACT, SUM</comment>
 </section>
 <section id="Section25">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3160340"><bookmark_value>SUMSQ function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3160340">
+<bookmark_value>SUMSQ function</bookmark_value>
 <bookmark_value>square number additions</bookmark_value>
 <bookmark_value>sums;of square numbers</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
@@ -751,7 +789,8 @@ oldref="374">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3160449" role="paragraph" l10n="U" oldref="375">If you enter the numbers <item type="input">2</item>; <item type="input">3</item> and <item type="input">4</item> in the Number 1; 2 and 3 text boxes, 29 is returned as the result.</paragraph>
 </section>
 <section id="Section24">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3158247"><bookmark_value>MOD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158247">
+<bookmark_value>MOD function</bookmark_value>
 <bookmark_value>remainders of divisions</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_REST" id="bm_id3158259" localize="false"/>
@@ -771,7 +810,8 @@ oldref="393">Example</paragraph>
 <item type="input">=MOD(11.25;2.5)</item> returns 1.25.</paragraph><comment>see also QUOTIENT, INT</comment>
 </section>
 <section id="Section23">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3144592"><bookmark_value>QUOTIENT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144592">
+<bookmark_value>QUOTIENT function</bookmark_value>
 <bookmark_value>divisions</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_QUOTIENT" id="bm_id3144603" localize="false"/>
@@ -789,7 +829,8 @@ oldref="656">Example</paragraph>
 <item type="input">=QUOTIENT(11;3)</item> returns 3. The remainder of 2 is lost.</paragraph><comment>see also MOD, INT </comment>
 </section>
 <section id="Section22">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3144702"><bookmark_value>RADIANS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144702">
+<bookmark_value>RADIANS function</bookmark_value>
 <bookmark_value>converting;degrees, into radians</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_RAD" id="bm_id3158008" localize="false"/>
@@ -805,7 +846,8 @@ oldref="379">Syntax</paragraph>
 <item type="input">=RADIANS(90)</item> returns 1.5707963267949, which is PI/2 to Calc's accuracy.</paragraph><comment>see also DEGREES </comment>
 </section>
 <section id="Section21">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3158121"><bookmark_value>ROUND function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158121">
+<bookmark_value>ROUND function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_RUNDEN" id="bm_id3158133" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3158121" role="heading" level="2" l10n="U"
@@ -830,7 +872,8 @@ oldref="404">Example</paragraph>
 <item type="input">=ROUND(987.65;-2)</item> returns 1000.</paragraph><comment>see also INT, TRUNC, ROUNDDOWN, ROUNDUP, CEILING, FLOOR, EVEN, ODD, MROUND</comment>
 </section>
 <section id="Section20">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145991"><bookmark_value>ROUNDDOWN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145991">
+<bookmark_value>ROUNDDOWN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ABRUNDEN" id="bm_id3146003" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3145991" role="heading" level="2" l10n="U"
@@ -853,7 +896,8 @@ oldref="30">Example</paragraph>
 <item type="input">=ROUNDDOWN(987.65;-2)</item> returns 900.</paragraph><comment>see also INT, TRUNC, ROUND, ROUNDUP, CEILING, FLOOR, EVEN, ODD, MROUND</comment>
 </section>
 <section id="Section19">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3163268"><bookmark_value>ROUNDUP function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163268">
+<bookmark_value>ROUNDUP function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_AUFRUNDEN" id="bm_id3163280" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3163268" role="heading" level="2" l10n="U"
@@ -878,7 +922,8 @@ oldref="146">Example</paragraph>
 <item type="input">=ROUNDUP(987.65;-2)</item> returns 1000.</paragraph><comment>see also INT, TRUNC, ROUND, ROUNDDOWN, CEILING, FLOOR, EVEN, ODD, MROUND</comment>
 </section>
 <section id="Section18">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3144877"><bookmark_value>SIN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144877">
+<bookmark_value>SIN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SIN" id="bm_id3144889" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3144877" role="heading" level="2" l10n="U" oldref="408">SIN</paragraph>
@@ -896,7 +941,8 @@ oldref="413">Example</paragraph>
 <item type="input">=SIN(RADIANS(30))</item> returns 0.5, the sine of 30 degrees.</paragraph><comment>see also COS, TAN, COT, ACOS, ASIN, ATAN, ATAN2, ACOT</comment>
 </section>
 <section id="Section17">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3163397"><bookmark_value>SINH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163397">
+<bookmark_value>SINH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SINHYP" id="bm_id3163409" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3163397" role="heading" level="2" l10n="U"
@@ -912,7 +958,8 @@ oldref="423">Example</paragraph>
 <item type="input">=SINH(0)</item> returns 0, the hyperbolic sine of 0.</paragraph><comment>see also COSH, TANH, COTH, ACOSH, ASINH, ATANH, ACOTH</comment>
 </section>
 <section id="Section16">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3163596"><bookmark_value>SUM function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163596">
+<bookmark_value>SUM function</bookmark_value>
 <bookmark_value>adding;numbers in cell ranges</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMME" id="bm_id3163608" localize="false"/>
@@ -939,7 +986,8 @@ oldref="433">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151884" role="paragraph" l10n="CHG" oldref="625">The formula is based on the fact that the result of a comparison is 1 if the criterion is met and 0 if it is not met. The individual comparison results will be treated as an array and used in matrix multiplication, and at the end the individual values will be totaled to give the result matrix.</paragraph>
 </section>
 <section id="Section15">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151957"><bookmark_value>SUMIF function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151957">
+<bookmark_value>SUMIF function</bookmark_value>
 <bookmark_value>adding;specified numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEWENN" id="bm_id3151969" localize="false"/>
@@ -963,7 +1011,8 @@ oldref="443">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id6062196" role="paragraph" l10n="NEW">See COUNTIF() for some more syntax examples that can be used with SUMIF().</paragraph>
 </section>
 <section id="Section64">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151957K"><bookmark_value>SUMIFS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151957K">
+<bookmark_value>SUMIFS function</bookmark_value>
 <bookmark_value>adding;specified numbers</bookmark_value>
 </bookmark><comment>kschenk added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEWNRNG" id="bm_id3151969K" localize="false"/>
@@ -984,7 +1033,8 @@ oldref="443">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id6062196K" role="paragraph" l10n="NEW">See COUNTIFS() for some more syntax examples that can be used with SUMIFS().</paragraph>
 </section>
 <section id="Section14">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152195"><bookmark_value>TAN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152195">
+<bookmark_value>TAN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TAN" id="bm_id3152207" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152195" role="heading" level="2" l10n="U"
@@ -1003,7 +1053,8 @@ oldref="451">Example</paragraph>
 <item type="input">=TAN(RADIANS(45))</item> returns 1, the tangent of 45 degrees.</paragraph><comment>see also COS, SIN, COT, ACOS, ASIN, ATAN, ATAN2, ACOT</comment>
 </section>
 <section id="Section13">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3165434"><bookmark_value>TANH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3165434">
+<bookmark_value>TANH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TANHYP" id="bm_id3165446" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3165434" role="heading" level="2" l10n="U"
@@ -1019,7 +1070,8 @@ oldref="461">Example</paragraph>
 <item type="input">=TANH(0)</item> returns 0, the hyperbolic tangent of 0.</paragraph><comment>see also COSH, SINH, COTH, ACOSH, ASINH, ATANH, ACOTH</comment>
 </section>
 <section id="Section12">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3165633"><bookmark_value>AutoFilter function; subtotals</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3165633">
+<bookmark_value>AutoFilter function; subtotals</bookmark_value>
 <bookmark_value>sums;of filtered data</bookmark_value>
 <bookmark_value>filtered data; sums</bookmark_value>
 <bookmark_value>SUBTOTAL function</bookmark_value>
@@ -1130,7 +1182,6 @@ oldref="495">Syntax</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph xml-lang="en-US" id="par_id3143606" role="paragraph" l10n="U" oldref="498"><emph>Range</emph> is the range whose cells are included.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3143625" role="heading" level="3" l10n="U"
 oldref="499">Example</paragraph>
@@ -1140,7 +1191,8 @@ oldref="499">Example</paragraph>
 </paragraph>
 </section>
 <section id="Section11">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3143672"><bookmark_value>Euro; converting</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143672">
+<bookmark_value>Euro; converting</bookmark_value>
 <bookmark_value>EUROCONVERT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_UMRECHNEN" id="bm_id3143684" localize="false"/>
@@ -1165,7 +1217,8 @@ oldref="570"><emph>Examples</emph>
 <item type="input">=EUROCONVERT(100;"EUR";"DEM")</item> converts 100 Euros into German Marks.</paragraph>
 </section>
 <section id="convert">
-<bookmark xml-lang="en-US" branch="index" id="bm_id0908200902090676"><bookmark_value>CONVERT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0908200902090676">
+<bookmark_value>CONVERT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_UMRECHNEN" id="bm_id0908200902093111" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id0908200902074836" role="heading" level="2" l10n="NEW">CONVERT</paragraph>
@@ -1179,7 +1232,8 @@ oldref="570"><emph>Examples</emph>
 <paragraph xml-lang="en-US" id="par_id0908200902475431" role="paragraph" l10n="NEW">=CONVERT(100;"EUR";"DEM") converts 100 Euros into German Marks. </paragraph>
 </section>
 <section id="Section10">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157177"><bookmark_value>ODD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157177">
+<bookmark_value>ODD function</bookmark_value>
 <bookmark_value>rounding;up/down to nearest odd integer</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_UNGERADE" id="bm_id3157188" localize="false"/>
@@ -1202,7 +1256,8 @@ oldref="507">Example</paragraph>
 <item type="input">=ODD(-3.1)</item> returns -5.</paragraph><comment>see also CEILING, FLOOR, EVEN, MROUND, INT, TRUNC, ROUND, ROUNDDOWN, ROUNDUP</comment>
 </section>
 <section id="Section9">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157404"><bookmark_value>FLOOR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157404">
+<bookmark_value>FLOOR function</bookmark_value>
 <bookmark_value>rounding;down to nearest multiple of significance</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_UNTERGRENZE" id="bm_id3157415" localize="false"/>
@@ -1226,7 +1281,8 @@ oldref="518">Example</paragraph>
 <item type="input">=FLOOR( -11;-2;1)</item> returns -10</paragraph><comment>see also CEILING, EVEN, ODD, MROUND, INT, TRUNC, ROUND, ROUNDDOWN, ROUNDUP</comment>
 </section>
 <section id="Section8">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3164086"><bookmark_value>SIGN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164086">
+<bookmark_value>SIGN function</bookmark_value>
 <bookmark_value>algebraic signs</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VORZEICHEN" id="bm_id3164098" localize="false"/>
@@ -1245,7 +1301,8 @@ oldref="528">Example</paragraph>
 <item type="input">=SIGN(-4.5)</item> returns -1.</paragraph><comment>see also ABS</comment>
 </section>
 <section id="Section7">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3164252"><bookmark_value>MROUND function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164252">
+<bookmark_value>MROUND function</bookmark_value>
 <bookmark_value>nearest multiple</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_MROUND" id="bm_id3164264" localize="false"/>
@@ -1265,7 +1322,8 @@ oldref="662">Example</paragraph>
 <item type="input">=MROUND(1.4;0.5)</item> returns 1.5 (= 0.5*3).</paragraph><comment>see also CEILING, FLOOR, EVEN, ODD, INT, TRUNC, ROUND, ROUNDDOWN, ROUNDUP</comment>
 </section>
 <section id="Section6">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3164375"><bookmark_value>SQRT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164375">
+<bookmark_value>SQRT function</bookmark_value>
 <bookmark_value>square roots;positive numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WURZEL" id="bm_id3164387" localize="false"/>
@@ -1285,7 +1343,8 @@ oldref="537">Example</paragraph>
 <item type="input">=SQRT(-16)</item> returns an <item type="literal">invalid argument</item> error.</paragraph><comment>see also SQRTPI, POWER</comment>
 </section>
 <section id="Section5">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3164560"><bookmark_value>SQRTPI function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164560">
+<bookmark_value>SQRTPI function</bookmark_value>
 <bookmark_value>square roots;products of Pi</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_SQRTPI" id="bm_id3164572" localize="false"/>
@@ -1303,7 +1362,8 @@ oldref="669">Example</paragraph>
 <item type="input">=SQRTPI(2)</item> returns the squareroot of (2PI), approximately 2.506628.</paragraph><comment>see also SQRT</comment>
 </section>
 <section id="Section4">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3164669"><bookmark_value>random numbers; between limits</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164669">
+<bookmark_value>random numbers; between limits</bookmark_value>
 <bookmark_value>RANDBETWEEN function</bookmark_value>
 </bookmark><comment>mw changed "random numbers;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_RANDBETWEEN" id="bm_id3164680" localize="false"/>
@@ -1322,7 +1382,8 @@ oldref="675">Example</paragraph>
 <item type="input">=RANDBETWEEN(20;30)</item> returns an integer of between 20 and 30.</paragraph><comment>see also RAND</comment>
 </section>
 <section id="Section3">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3164800"><bookmark_value>RAND function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164800">
+<bookmark_value>RAND function</bookmark_value>
 <bookmark_value>random numbers;between 0 and 1</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZUFALLSZAHL" id="bm_id3164812" localize="false"/>
@@ -1339,7 +1400,8 @@ oldref="545">Syntax</paragraph>
 <item type="input">=RAND()</item> returns a random number between 0 and 1.</paragraph><comment>see also RANDBETWEEN</comment>
 </section>
 <section id="Section2">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3164897"><bookmark_value>COUNTIF function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164897">
+<bookmark_value>COUNTIF function</bookmark_value>
 <bookmark_value>counting;specified cells</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZAEHLENWENN" id="bm_id3164909" localize="false"/>
@@ -1369,7 +1431,8 @@ oldref="553">Example</paragraph>
 </paragraph>
 </section>
 <section id="Section63">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3164897K"><bookmark_value>COUNTIFS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3164897K">
+<bookmark_value>COUNTIFS function</bookmark_value>
 <bookmark_value>counting;specified cells</bookmark_value>
 </bookmark>
 <comment>kschenk added one entry</comment>
@@ -1380,7 +1443,7 @@ oldref="553">Example</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3164953K" role="heading" level="3" l10n="U">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3164967K" role="code" l10n="U" >COUNTIFS( Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
 <paragraph xml-lang="en-US" id="par_id3164980K" role="paragraph" l10n="U" ><emph>Reference R1</emph> is the range to which the <emph>Criterion C1</emph> applies. <emph>Reference R2</emph> is the range to which the <emph>Criterion C2</emph> applies, and so on.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3165000K" role="paragraph" l10n="CHG">All <emph>Reference </emph> ranges shall have the same dimension and size, else an Error is returned. <emph>Criteria</emph> indicates the criteria in the form of a number, an expression or a character string. These criteria determine which cells are counted. You may also enter a search text in the form of a regular expression, e.g. b.* for all words that begin with b. You may also indicate a cell range that contains the search criterion. If you search for literal text, enclose the text in double quotes.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3165000K" role="paragraph" l10n="CHG">All <emph>Reference</emph> ranges shall have the same dimension and size, else an Error is returned. <emph>Criteria</emph> indicates the criteria in the form of a number, an expression or a character string. These criteria determine which cells are counted. You may also enter a search text in the form of a regular expression, e.g. b.* for all words that begin with b. You may also indicate a cell range that contains the search criterion. If you search for literal text, enclose the text in double quotes.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3165037K" role="heading" level="3" l10n="U"
 oldref="553">Examples:</paragraph>
 <paragraph xml-lang="en-US" id="par_id3166505K" role="paragraph" l10n="CHG">A1:A10 is a cell range containing the numbers <item type="input">2000</item> to <item type="input">2009</item>. B1:B10 is a cell range containing the numbers <item type="input">2007</item> to <item type="input">2016</item>:</paragraph>
