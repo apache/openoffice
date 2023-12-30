@@ -30,7 +30,8 @@
 </meta>
 <body>
 <section id="verbindungen">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154136"><bookmark_value>connections to data sources (Base)</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154136">
+<bookmark_value>connections to data sources (Base)</bookmark_value>
 <bookmark_value>data sources; connection settings (Base)</bookmark_value>
 </bookmark>
 <!-- removed HID OFFMGR_TABPAGE_RID_OFAPAGE_CONNPOOLOPTIONS -->
@@ -38,7 +39,7 @@
 <paragraph role="heading" id="hd_id3154136" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01160100.xhp" name="Connections">Connections</link></paragraph>
 <paragraph role="paragraph" id="par_id3147571" xml-lang="en-US" l10n="U" oldref="2">Defines how the connections to data sources are pooled.</paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3147088" xml-lang="en-US" l10n="U" oldref="3">The<emph> Connections </emph>facility allows you to stipulate that connections that are no longer needed are not deleted immediately, but are kept free<comment>UFI: better: idle ?</comment> for a certain period of time. If a new connection to the data source is needed in that period, the free connection can be used for this purpose.</paragraph>
+<paragraph role="paragraph" id="par_id3147088" xml-lang="en-US" l10n="U" oldref="3">The <emph>Connections</emph> facility allows you to stipulate that connections that are no longer needed are not deleted immediately, but are kept free<comment>UFI: better: idle ?</comment> for a certain period of time. If a new connection to the data source is needed in that period, the free connection can be used for this purpose.</paragraph>
 <section id="howtoget">
 <embed href="text/shared/00/00000406.xhp#verbindungen"/>
 </section>
