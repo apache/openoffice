@@ -29,10 +29,12 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154140"><bookmark_value>module/dialog toggle</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154140">
+<bookmark_value>module/dialog toggle</bookmark_value>
 <bookmark_value>dialogs;using program code to show (example)</bookmark_value>
 <bookmark_value>examples; showing a dialog using program code</bookmark_value>
-</bookmark><comment>mw changed "modules and dialogs;"</comment><paragraph role="heading" id="hd_id3154140" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="show_dialog"><link href="text/sbasic/guide/show_dialog.xhp" name="Opening a Dialog With Program Code">Opening a Dialog With Program Code</link>
+</bookmark><comment>mw changed "modules and dialogs;"</comment>
+<paragraph role="heading" id="hd_id3154140" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="show_dialog"><link href="text/sbasic/guide/show_dialog.xhp" name="Opening a Dialog With Program Code">Opening a Dialog With Program Code</link>
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3145171" xml-lang="en-US" l10n="U" oldref="2">In the <item type="productname">%PRODUCTNAME</item> BASIC window for a dialog that you created, leave the dialog editor by clicking the name tab of the Module that the dialog is assigned to. The name tab is at the bottom of the window.</paragraph>
 <paragraph role="paragraph" id="par_id3153968" xml-lang="en-US" l10n="U" oldref="6">Enter the following code for a subroutine called <emph>Dialog1Show</emph>. In this example, the name of the dialog that you created is "Dialog1":</paragraph>

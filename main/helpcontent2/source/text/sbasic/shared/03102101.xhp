@@ -30,7 +30,8 @@
 </meta>
 <body>
 <section id="redim">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150398"><bookmark_value>ReDim statement</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150398">
+<bookmark_value>ReDim statement</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3150398" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03102101.xhp" name="ReDim Statement [Runtime]">ReDim Statement [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="2">Declares a variable or an array.</paragraph>
@@ -49,7 +50,7 @@
 <paragraph role="paragraph" id="par_id3147317" xml-lang="en-US" l10n="U" oldref="10">
 <emph>Keyword:</emph> Variable type</paragraph>
 <paragraph role="paragraph" id="par_id3153728" xml-lang="en-US" l10n="U" oldref="11">
-<emph>Bool: </emph>Boolean variable (True, False)</paragraph>
+<emph>Bool:</emph> Boolean variable (True, False)</paragraph>
 <paragraph role="paragraph" id="par_id3146121" xml-lang="en-US" l10n="U" oldref="12">
 <emph>Date:</emph> Date variable</paragraph>
 <paragraph role="paragraph" id="par_id3159156" xml-lang="en-US" l10n="U" oldref="13">
@@ -65,7 +66,7 @@
 <paragraph role="paragraph" id="par_id3148458" xml-lang="en-US" l10n="U" oldref="18">
 <emph>String:</emph> String variable containing a maximum of 64,000 ASCII characters.</paragraph>
 <paragraph role="paragraph" id="par_id3149581" xml-lang="en-US" l10n="U" oldref="19">
-<emph>Variant: </emph>Variant variable type (can contain all types and is set by definition).</paragraph>
+<emph>Variant:</emph> Variant variable type (can contain all types and is set by definition).</paragraph>
 <paragraph role="paragraph" id="par_id3155601" xml-lang="en-US" l10n="U" oldref="20">In $[officename] Basic, you do not need to declare variables explicitly. However, you need to declare an array before you can use them. You can declare a variable with the Dim statement, using commas to separate multiple declarations. To declare a variable type, enter a type-declaration character following the name or use a corresponding key word.</paragraph>
 <paragraph role="paragraph" id="par_id3153415" xml-lang="en-US" l10n="U" oldref="21">$[officename] Basic supports single or multi-dimensional arrays that are defined by a specified variable type. Arrays are suitable if the program contains lists or tables that you want to edit. The advantage of arrays is that it is possible to address individual elements according to indexes, which can be formulated as numeric expressions or variables.</paragraph>
 <paragraph role="paragraph" id="par_id3146971" xml-lang="en-US" l10n="U" oldref="22">There are two ways to set the range of indices for arrays declared with the Dim statement:</paragraph>
