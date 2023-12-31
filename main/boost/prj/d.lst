@@ -527,6 +527,10 @@ mkdir: %_DEST%\inc%_EXT%\boost\predef\compiler
 mkdir: %_DEST%\inc%_EXT%\boost\predef\detail
 mkdir: %_DEST%\inc%_EXT%\boost\predef\hardware
 mkdir: %_DEST%\inc%_EXT%\boost\predef\hardware\simd
+mkdir: %_DEST%\inc%_EXT%\boost\predef\hardware\simd\arm
+mkdir: %_DEST%\inc%_EXT%\boost\predef\hardware\simd\ppc
+mkdir: %_DEST%\inc%_EXT%\boost\predef\hardware\simd\x86
+mkdir: %_DEST%\inc%_EXT%\boost\predef\hardware\simd\x86_amd
 mkdir: %_DEST%\inc%_EXT%\boost\predef\language
 mkdir: %_DEST%\inc%_EXT%\boost\predef\library
 mkdir: %_DEST%\inc%_EXT%\boost\predef\library\c
@@ -561,6 +565,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\list\detail\dmc
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\list\detail\edg
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\logical
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\punctuation
+mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\punctuation\detail
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\repetition
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\repetition\detail
 mkdir: %_DEST%\inc%_EXT%\boost\preprocessor\repetition\detail\dmc
@@ -1348,6 +1353,10 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\predef\detail\* %_DEST%\inc%_EXT%\boost\predef\detail
 ..\%__SRC%\inc\boost\predef\hardware\* %_DEST%\inc%_EXT%\boost\predef\hardware
 ..\%__SRC%\inc\boost\predef\hardware\simd\* %_DEST%\inc%_EXT%\boost\predef\hardware\simd
+..\%__SRC%\inc\boost\predef\hardware\simd\arm\* %_DEST%\inc%_EXT%\boost\predef\hardware\simd\arm
+..\%__SRC%\inc\boost\predef\hardware\simd\ppc\* %_DEST%\inc%_EXT%\boost\predef\hardware\simd\ppc
+..\%__SRC%\inc\boost\predef\hardware\simd\x86\* %_DEST%\inc%_EXT%\boost\predef\hardware\simd\x86
+..\%__SRC%\inc\boost\predef\hardware\simd\x86_amd\* %_DEST%\inc%_EXT%\boost\predef\hardware\simd\x86_amd
 ..\%__SRC%\inc\boost\predef\language\* %_DEST%\inc%_EXT%\boost\predef\language
 ..\%__SRC%\inc\boost\predef\library\* %_DEST%\inc%_EXT%\boost\predef\library
 ..\%__SRC%\inc\boost\predef\library\c\* %_DEST%\inc%_EXT%\boost\predef\library\c
@@ -1382,6 +1391,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\preprocessor\list\detail\edg\* %_DEST%\inc%_EXT%\boost\preprocessor\list\detail\edg
 ..\%__SRC%\inc\boost\preprocessor\logical\* %_DEST%\inc%_EXT%\boost\preprocessor\logical
 ..\%__SRC%\inc\boost\preprocessor\punctuation\* %_DEST%\inc%_EXT%\boost\preprocessor\punctuation
+..\%__SRC%\inc\boost\preprocessor\punctuation\detail\* %_DEST%\inc%_EXT%\boost\preprocessor\punctuation\detail
 ..\%__SRC%\inc\boost\preprocessor\repetition\* %_DEST%\inc%_EXT%\boost\preprocessor\repetition
 ..\%__SRC%\inc\boost\preprocessor\repetition\detail\* %_DEST%\inc%_EXT%\boost\preprocessor\repetition\detail
 ..\%__SRC%\inc\boost\preprocessor\repetition\detail\dmc\* %_DEST%\inc%_EXT%\boost\preprocessor\repetition\detail\dmc
