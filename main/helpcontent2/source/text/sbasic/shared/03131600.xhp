@@ -31,7 +31,8 @@
 </meta>
 <body>
 <section id="createunoservice">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150682"><bookmark_value>CreateUnoService function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150682">
+<bookmark_value>CreateUnoService function</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3150682" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03131600.xhp" name="CreateUnoService Function [Runtime]">CreateUnoService Function [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_id3152924" xml-lang="en-US" l10n="U" oldref="2">Instantiates a Uno service with the ProcessServiceManager.</paragraph>
@@ -41,7 +42,8 @@
 <paragraph role="paragraph" id="par_idN1060F" xml-lang="en-US" l10n="NEW">For a list of available services, see the <link href="https://api.openoffice.org/docs/common/ref/com/sun/star/module-ix.html">API reference</link>.</paragraph>
 <paragraph role="heading" id="hd_id3151111" xml-lang="en-US" level="2" l10n="U" oldref="5">Examples:</paragraph>
 <paragraph role="paragraph" id="par_id3154046" xml-lang="en-US" l10n="U" oldref="6">oIntrospection = CreateUnoService( "com.sun.star.beans.Introspection" )</paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id8334604"><bookmark_value>filepicker;API service</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id8334604">
+<bookmark_value>filepicker;API service</bookmark_value>
 </bookmark>
 <paragraph role="paragraph" id="par_idN10625" xml-lang="en-US" l10n="NEW">The following code uses a service to open a file open dialog:</paragraph>
 <paragraph role="code" id="par_idN10628" xml-lang="en-US" l10n="NEW">Sub Main</paragraph>
