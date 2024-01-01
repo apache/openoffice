@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,26 +20,27 @@
  * under the License.
  *
  ***********************************************************-->
+
 <helpdocument version="1.0">
-    <meta>
-        <topic id="sdextPresentationMinimizerInfoBoxxhp" indexer="include">
-            <title xml-lang="en-US" id="tit">Presentation Minimizer - Result</title>
-            <filename>/text/simpress/minimizer/infobox.xhp</filename>
-        </topic>
-    </meta>
-    <body>
-        <section id="infobox">
-            <!-- Result InfoBox  -->
-            <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:InfoBox:Dialog" id="bm_id77665508" localize="false"/>
-            <paragraph xml-lang="en-US" id="par_id77665511" role="heading" level="1" l10n="NEW"><link href="text/simpress/minimizer/infobox.xhp" name="Presentation Minimizer - Result">Presentation Minimizer - Result</link></paragraph>
-            <paragraph xml-lang="en-US" id="par_id77665512" role="paragraph" l10n="NEW"><ahelp hid="hid/sdext:InfoBox:Dialog">Shows the result of the optimization process.</ahelp></paragraph>
-        </section>
-        <!-- Result - Checkbox open new presentation  -->
-        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:InfoBox:CBOpenNew" id="bm_id77665522" localize="false"/>
-        <paragraph xml-lang="en-US" id="hd_id77665501" role="heading" level="2" l10n="NEW"></paragraph>
-        <paragraph xml-lang="en-US" id="par_id77665503s" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:InfoBox:CBOpenNew">Open the copy of this presentation where the changes where applied.</ahelp></paragraph>
-        <paragraph role="paragraph" id="par_id3153087" xml-lang="en-US" l10n="NEW">
-            <link href="text/simpress/minimizer/main.xhp" name="Go to Presentation Minimizer Wizard">Go to Presentation Minimizer Wizard</link>
-        </paragraph>
-    </body>
+<meta>
+<topic id="sdextPresentationMinimizerInfoBoxxhp" indexer="include">
+<title xml-lang="en-US" id="tit">Presentation Minimizer - Result</title>
+<filename>/text/simpress/minimizer/infobox.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="infobox">
+<!-- Result InfoBox  -->
+<bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:InfoBox:Dialog" id="bm_id77665508" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id77665511" role="heading" level="1" l10n="NEW"><link href="text/simpress/minimizer/infobox.xhp" name="Presentation Minimizer - Result">Presentation Minimizer - Result</link></paragraph>
+<paragraph xml-lang="en-US" id="par_id77665512" role="paragraph" l10n="NEW"><ahelp hid="hid/sdext:InfoBox:Dialog">Shows the result of the optimization process.</ahelp></paragraph>
+</section>
+<!-- Result - Checkbox open new presentation  -->
+<bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:InfoBox:CBOpenNew" id="bm_id77665522" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id77665501" role="heading" level="2" l10n="NEW"></paragraph>
+<paragraph xml-lang="en-US" id="par_id77665503s" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:InfoBox:CBOpenNew">Open the copy of this presentation where the changes where applied.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3153087" xml-lang="en-US" l10n="NEW">
+<link href="text/simpress/minimizer/main.xhp" name="Go to Presentation Minimizer Wizard">Go to Presentation Minimizer Wizard</link>
+</paragraph>
+</body>
 </helpdocument>

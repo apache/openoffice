@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textswriter0104090002xml" indexer="include">
 <title id="tit" xml-lang="en-US">Cross-references</title>
@@ -118,7 +115,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="tip" id="par_id3154772" xml-lang="en-US" l10n="U" oldref="18">References are fields. To remove a reference, delete the field. If you set a longer text as a reference and you do not want to reenter it after deleting the reference, select the text and copy it to the clipboard. You can then reinsert it as "unformatted text" at the same position using the command <emph>Edit - Paste special</emph>. The text remains intact while the reference is deleted.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_REF:LB_REFSELECTION" id="bm_id3146957" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/SW_HID_REFSELECTION_TOOLTIP" id="bm_id1661427" localize="false"/>
@@ -229,7 +225,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="note" id="par_id757469" xml-lang="en-US" l10n="NEW">The "Number" format inserts the number of the heading or numbered paragraph. The superior levels are included depending on the context, as necessary. </paragraph>
 <paragraph role="note" id="par_id5189062" xml-lang="en-US" l10n="CHG">For example, when you are in a chapter 1, subchapter 2, subpart 5, this may be numbered as 1.2.5. When you insert here a reference to text in the previous subpart "1.2.4" and you apply the "Number" format, then the reference will be shown as "4". If in this example the numbering is set to show more sublevels, the same reference will be shown as "2.4" or "1.2.4", depending on the setting. If you use the "Number (full context)" format, you will always see "1.2.4", no matter how the numbered paragraph is formatted.</paragraph>
 </section>
@@ -238,7 +233,7 @@
 <paragraph role="heading" id="hd_id3156242" xml-lang="en-US" level="2" l10n="U" oldref="13">Name</paragraph>
 <paragraph role="paragraph" id="par_id3156259" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SW:EDIT:TP_FLD_REF:ED_REFNAME">Type the name of the user-defined field that you want to create.</ahelp> To set a target, click "Set Reference" in the <emph>Type</emph> list, type a name in this box, and then click <emph>Insert</emph>. To reference the new target, click the target name in the <emph>Selection</emph> list.</paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3156032" xml-lang="en-US" l10n="U" oldref="17">In a master document, targets that are in different sub-documents are not displayed in the<emph> Selection</emph> list. If you want to insert a reference to the target, you must type the path and the name in the <emph>Name </emph>box.</paragraph>
+<paragraph role="paragraph" id="par_id3156032" xml-lang="en-US" l10n="U" oldref="17">In a master document, targets that are in different sub-documents are not displayed in the <emph>Selection</emph> list. If you want to insert a reference to the target, you must type the path and the name in the <emph>Name </emph>box.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FLD_REF:ED_REFVALUE" id="bm_id3159204" localize="false"/>
 <paragraph role="paragraph" id="par_id0903200802250745" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the contents that you want to add to a user-defined fields.</ahelp></paragraph>
 <embed href="text/swriter/01/04090001.xhp#wert"/>
