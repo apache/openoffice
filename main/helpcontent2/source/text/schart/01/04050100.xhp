@@ -59,7 +59,7 @@
 <paragraph xml-lang="en-US" id="par_id8962370" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Shows the trend line equation next to the trend line.</ahelp></paragraph><comment>Show correlation coefficient (R2)</comment>
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_TRENDLINE_SHOW_R_SQUARED" id="bm_id9068880" localize="false"/>
 <paragraph xml-lang="en-US" id="par_id6889858" role="paragraph" l10n="CHG"><ahelp hid="." visibility="hidden">Shows the coefficient of determination next to the trend line.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="par_id8398998" role="note" l10n="CHG">If you insert a trend line to a chart type that uses categories, like <emph>Line </emph>or <emph>Column, </emph>then the numbers 1, 2, 3, <emph>…</emph> are used as x-values to calculate the trend line.</paragraph>
+<paragraph xml-lang="en-US" id="par_id8398998" role="note" l10n="CHG">If you insert a trend line to a chart type that uses categories, like <emph>Line</emph> or <emph>Column</emph>, then the numbers 1, 2, 3, <emph>…</emph> are used as x-values to calculate the trend line.</paragraph>
 <list type="ordered">
 <listitem>
 <paragraph xml-lang="en-US" id="par_id5676747" role="paragraph" l10n="CHG">To insert trend lines for all data series, double-click the chart to enter edit mode. Choose <item type="menuitem">Insert - Trend Lines</item>, then select the type of trend line from None, Linear, Logarithmic, Exponential, or Power trend line.</paragraph>
@@ -89,31 +89,31 @@
 <paragraph xml-lang="en-US" id="par_id7735221" role="paragraph" l10n="NEW">You can also calculate the parameters using Calc functions as follows.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id5744193" role="heading" level="2" l10n="NEW">The linear regression equation</paragraph>
 <paragraph xml-lang="en-US" id="par_id9251991" role="paragraph" l10n="NEW">The <emph>linear regression</emph> follows the equation <item type="literal">y=m*x+b</item>.</paragraph>
-<paragraph xml-lang="en-US" id="par_id7951902" role="code" l10n="NEW">m = SLOPE(Data_Y;Data_X) </paragraph>
-<paragraph xml-lang="en-US" id="par_id6637165" role="code" l10n="NEW">b = INTERCEPT(Data_Y ;Data_X) </paragraph>
+<paragraph xml-lang="en-US" id="par_id7951902" role="code" l10n="NEW">m = SLOPE(Data_Y;Data_X)</paragraph>
+<paragraph xml-lang="en-US" id="par_id6637165" role="code" l10n="NEW">b = INTERCEPT(Data_Y ;Data_X)</paragraph>
 <paragraph xml-lang="en-US" id="par_id7879268" role="paragraph" l10n="NEW">Calculate the coefficient of determination by</paragraph>
-<paragraph xml-lang="en-US" id="par_id9244361" role="code" l10n="NEW">r² = RSQ(Data_Y;Data_X) </paragraph>
+<paragraph xml-lang="en-US" id="par_id9244361" role="code" l10n="NEW">r² = RSQ(Data_Y;Data_X)</paragraph>
 <paragraph xml-lang="en-US" id="par_id2083498" role="paragraph" l10n="NEW">Besides m, b and r² the array function <emph>LINEST</emph> provides additional statistics for a regression analysis.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id2538834" role="heading" level="2" l10n="NEW">The logarithm regression equation</paragraph>
 <paragraph xml-lang="en-US" id="par_id394299" role="paragraph" l10n="NEW">The <emph>logarithm regression</emph> follows the equation <item type="literal">y=a*ln(x)+b</item>.</paragraph>
-<paragraph xml-lang="en-US" id="par_id2134159" role="code" l10n="NEW">a = SLOPE(Data_Y;LN(Data_X)) </paragraph>
-<paragraph xml-lang="en-US" id="par_id5946531" role="code" l10n="NEW">b = INTERCEPT(Data_Y ;LN(Data_X)) </paragraph>
-<paragraph xml-lang="en-US" id="par_id5649281" role="code" l10n="NEW">r² = RSQ(Data_Y;LN(Data_X)) </paragraph>
+<paragraph xml-lang="en-US" id="par_id2134159" role="code" l10n="NEW">a = SLOPE(Data_Y;LN(Data_X))</paragraph>
+<paragraph xml-lang="en-US" id="par_id5946531" role="code" l10n="NEW">b = INTERCEPT(Data_Y ;LN(Data_X))</paragraph>
+<paragraph xml-lang="en-US" id="par_id5649281" role="code" l10n="NEW">r² = RSQ(Data_Y;LN(Data_X))</paragraph>
 <paragraph xml-lang="en-US" id="hd_id7874080" role="heading" level="2" l10n="NEW">The exponential regression equation</paragraph>
-<paragraph xml-lang="en-US" id="par_id4679097" role="paragraph" l10n="CHG"> For exponential trend lines a transformation to a linear model takes place. The optimal curve fitting is related to the linear model and the results are interpreted accordingly. </paragraph>
+<paragraph xml-lang="en-US" id="par_id4679097" role="paragraph" l10n="CHG"> For exponential trend lines a transformation to a linear model takes place. The optimal curve fitting is related to the linear model and the results are interpreted accordingly.</paragraph>
 <paragraph xml-lang="en-US" id="par_id9112216" role="paragraph" l10n="NEW">The exponential regression follows the equation <item type="literal">y=b*exp(a*x)</item> or <item type="literal">y=b*m^x</item>, which is transformed to <item type="literal">ln(y)=ln(b)+a*x</item> or <item type="literal">ln(y)=ln(b)+ln(m)*x</item> respectively.</paragraph>
-<paragraph xml-lang="en-US" id="par_id4416638" role="code" l10n="NEW">a = SLOPE(LN(Data_Y);Data_X) </paragraph>
+<paragraph xml-lang="en-US" id="par_id4416638" role="code" l10n="NEW">a = SLOPE(LN(Data_Y);Data_X)</paragraph>
 <paragraph xml-lang="en-US" id="par_id1039155" role="paragraph" l10n="CHG">The variables for the second variation are calculated as follows:</paragraph>
-<paragraph xml-lang="en-US" id="par_id7184057" role="code" l10n="NEW">m = EXP(SLOPE(LN(Data_Y);Data_X)) </paragraph>
-<paragraph xml-lang="en-US" id="par_id786767" role="code" l10n="NEW">b = EXP(INTERCEPT(LN(Data_Y);Data_X)) </paragraph>
+<paragraph xml-lang="en-US" id="par_id7184057" role="code" l10n="NEW">m = EXP(SLOPE(LN(Data_Y);Data_X))</paragraph>
+<paragraph xml-lang="en-US" id="par_id786767" role="code" l10n="NEW">b = EXP(INTERCEPT(LN(Data_Y);Data_X))</paragraph>
 <paragraph xml-lang="en-US" id="par_id7127292" role="paragraph" l10n="NEW">Calculate the coefficient of determination by</paragraph>
-<paragraph xml-lang="en-US" id="par_id5437177" role="code" l10n="NEW">r² = RSQ(LN(Data_Y);Data_X) </paragraph>
+<paragraph xml-lang="en-US" id="par_id5437177" role="code" l10n="NEW">r² = RSQ(LN(Data_Y);Data_X)</paragraph>
 <paragraph xml-lang="en-US" id="par_id6946317" role="paragraph" l10n="NEW">Besides m, b and r² the array function LOGEST provides additional statistics for a regression analysis.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id6349375" role="heading" level="2" l10n="NEW">The power regression equation</paragraph>
 <paragraph xml-lang="en-US" id="par_id1857661" role="paragraph" l10n="NEW"> For <emph>power regression</emph> curves a transformation to a linear model takes place. The power regression follows the equation <item type="literal">y=b*x^a</item> , which is transformed to <item type="literal">ln(y)=ln(b)+a*ln(x)</item>.</paragraph>
-<paragraph xml-lang="en-US" id="par_id8517105" role="code" l10n="NEW">a = SLOPE(LN(Data_Y);LN(Data_X)) </paragraph>
-<paragraph xml-lang="en-US" id="par_id9827265" role="code" l10n="NEW">b = EXP(INTERCEPT(LN(Data_Y);LN(Data_X)) </paragraph>
-<paragraph xml-lang="en-US" id="par_id2357249" role="code" l10n="NEW">r² = RSQ(LN(Data_Y);LN(Data_X)) </paragraph>
+<paragraph xml-lang="en-US" id="par_id8517105" role="code" l10n="NEW">a = SLOPE(LN(Data_Y);LN(Data_X))</paragraph>
+<paragraph xml-lang="en-US" id="par_id9827265" role="code" l10n="NEW">b = EXP(INTERCEPT(LN(Data_Y);LN(Data_X))</paragraph>
+<paragraph xml-lang="en-US" id="par_id2357249" role="code" l10n="NEW">r² = RSQ(LN(Data_Y);LN(Data_X))</paragraph>
 <paragraph xml-lang="en-US" id="hd_id9204077" role="heading" level="2" l10n="NEW">Constraints<comment>UFI: is this still so?</comment></paragraph>
 <paragraph xml-lang="en-US" id="par_id7393719" role="paragraph" l10n="CHG"> The calculation of the trend line considers only data pairs with the following values:</paragraph>
 <list type="ordered">
@@ -129,9 +129,9 @@
 </list>
 <paragraph xml-lang="en-US" id="par_id181279" role="paragraph" l10n="NEW">You should transform your data accordingly; it is best to work on a copy of the original data and transform the copied data.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id7907040" role="heading" level="2" l10n="NEW">The polynomial regression equation</paragraph>
-<paragraph xml-lang="en-US" id="par_id8918729" role="paragraph" l10n="NEW">A <emph>polynomial regression</emph> curve cannot be added automatically. You must calculate this curve manually. </paragraph>
-<paragraph xml-lang="en-US" id="par_id33875" role="paragraph" l10n="NEW">Create a table with the columns x, x², x³, … , xⁿ, y up to the desired degree n. </paragraph>
-<paragraph xml-lang="en-US" id="par_id8720053" role="paragraph" l10n="NEW">Use the formula <item type="literal">=LINEST(Data_Y,Data_X)</item> with the complete range x to xⁿ (without headings) as Data_X. </paragraph>
+<paragraph xml-lang="en-US" id="par_id8918729" role="paragraph" l10n="NEW">A <emph>polynomial regression</emph> curve cannot be added automatically. You must calculate this curve manually.</paragraph>
+<paragraph xml-lang="en-US" id="par_id33875" role="paragraph" l10n="NEW">Create a table with the columns x, x², x³, … , xⁿ, y up to the desired degree n.</paragraph>
+<paragraph xml-lang="en-US" id="par_id8720053" role="paragraph" l10n="NEW">Use the formula <item type="literal">=LINEST(Data_Y,Data_X)</item> with the complete range x to xⁿ (without headings) as Data_X.</paragraph>
 <paragraph xml-lang="en-US" id="par_id5068514" role="paragraph" l10n="NEW">The first row of the LINEST output contains the coefficients of the regression polynomial, with the coefficient of xⁿ at the leftmost position.</paragraph>
 <paragraph xml-lang="en-US" id="par_id8202154" role="paragraph" l10n="NEW">The first element of the third row of the LINEST output is the value of r². See the <link href="text/scalc/01/04060107.xhp#Section8">LINEST</link> function for details on proper use and an explanation of the other output parameters.</paragraph>
 <section id="relatedtopics">
