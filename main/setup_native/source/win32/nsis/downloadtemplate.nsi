@@ -6,7 +6,7 @@
 ; Product Information
 VIAddVersionKey ProductName "Apache PRODUCTNAMEPLACEHOLDER"
 VIAddVersionKey CompanyName "Apache Software Foundation"
-VIAddVersionKey LegalCopyright "(c) 2012-2023 The Apache Software Foundation"
+VIAddVersionKey LegalCopyright "(c) 2012-2024 The Apache Software Foundation"
 VIAddVersionKey FileDescription "Apache PRODUCTNAMEPLACEHOLDER Installer"
 VIAddVersionKey ProductVersion "PRODUCTVERSIONPLACEHOLDER"
 VIProductVersion "4.1.9814.500"
