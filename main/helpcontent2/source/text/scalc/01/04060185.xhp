@@ -55,7 +55,8 @@
 <item type="input">=RANK(A10;A1:A50)</item> returns the ranking of the value in A10 in value range A1:A50. If <item type="literal">Value</item> does not exist within the range an error message is displayed.</paragraph>
 </section>
 <section id="skew">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153556"><bookmark_value>SKEW function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153556">
+<bookmark_value>SKEW function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SCHIEFE" id="bm_id3153801" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153556" role="heading" level="2" l10n="U"
@@ -72,7 +73,8 @@ oldref="17">Example</paragraph>
 <item type="input">=SKEW(A1:A50)</item> calculates the value of skew for the data referenced.</paragraph>
 </section>
 <section id="forecast">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149051"><bookmark_value>regression lines;FORECAST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149051">
+<bookmark_value>regression lines;FORECAST function</bookmark_value>
 <bookmark_value>extrapolations</bookmark_value>
 <bookmark_value>FORECAST function</bookmark_value>
 </bookmark>
@@ -95,7 +97,8 @@ oldref="27">Example</paragraph>
 <item type="input">=FORECAST(50;A1:A50;B1;B50)</item> returns the Y value expected for the X value of 50 if the X and Y values in both references are linked by a linear trend.</paragraph>
 </section>
 <section id="stdev">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149143"><bookmark_value>STDEV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149143">
+<bookmark_value>STDEV function</bookmark_value>
 <bookmark_value>standard deviations in statistics;based on a sample</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STABW" id="bm_id3153121" localize="false"/>
@@ -113,7 +116,8 @@ oldref="35">Example</paragraph>
 <item type="input">=STDEV(A1:A50)</item> returns the estimated standard deviation based on the data referenced.</paragraph>
 </section>
 <section id="stdeva">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3144745"><bookmark_value>STDEVA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144745">
+<bookmark_value>STDEVA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STABWA" id="bm_id3154846" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3144745" role="heading" level="2" l10n="U"
@@ -130,7 +134,8 @@ oldref="191">Example</paragraph>
 <item type="input">=STDEVA(A1:A50)</item> returns the estimated standard deviation based on the data referenced.</paragraph>
 </section>
 <section id="stdevp">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149734"><bookmark_value>STDEVP function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149734">
+<bookmark_value>STDEVP function</bookmark_value>
 <bookmark_value>standard deviations in statistics;based on a population</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STABWN" id="bm_id3146139" localize="false"/>
@@ -148,7 +153,8 @@ oldref="43">Example</paragraph>
 <item type="input">=STDEVP(A1:A50)</item> returns a standard deviation of the data referenced.</paragraph>
 </section>
 <section id="stdevpa">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154522"><bookmark_value>STDEVPA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154522">
+<bookmark_value>STDEVPA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STABWNA" id="bm_id3150902" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154522" role="heading" level="2" l10n="U"
@@ -165,7 +171,8 @@ oldref="199">Example</paragraph>
 <item type="input">=STDEVPA(A1:A50)</item> returns the standard deviation of the data referenced.</paragraph>
 </section>
 <section id="standardize">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155928"><bookmark_value>STANDARDIZE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155928">
+<bookmark_value>STANDARDIZE function</bookmark_value>
 <bookmark_value>converting;random variables, into normalized values</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STANDARDISIERUNG" id="bm_id3148764" localize="false"/>
@@ -187,7 +194,8 @@ oldref="53">Example</paragraph>
 <item type="input">=STANDARDIZE(11;10;1)</item> returns 1. The value 11 in a normal distribution with a mean of 10 and a standard deviation of 1 is as much above the mean of 10, as the value 1 is above the mean of the standard normal distribution.</paragraph>
 </section>
 <section id="normsinv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157986"><bookmark_value>NORMSINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157986">
+<bookmark_value>NORMSINV function</bookmark_value>
 <bookmark_value>normal distribution;inverse of standard</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STANDNORMINV" id="bm_id3148389" localize="false"/>
@@ -205,7 +213,8 @@ oldref="61">Example</paragraph>
 <item type="input">=NORMSINV(0.908789)</item> returns 1.3333.</paragraph>
 </section>
 <section id="normsdist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147538"><bookmark_value>NORMSDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147538">
+<bookmark_value>NORMSDIST function</bookmark_value>
 <bookmark_value>normal distribution;statistics</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STANDNORMVERT" id="bm_id3145269" localize="false"/>
@@ -224,7 +233,8 @@ oldref="69">Example</paragraph>
 <item type="input">=NORMSDIST(1)</item> returns 0.84. The area below the standard normal distribution curve to the left of X value 1 is 84% of the total area.</paragraph>
 </section>
 <section id="slope">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152592"><bookmark_value>SLOPE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152592">
+<bookmark_value>SLOPE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STEIGUNG" id="bm_id3153716" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152592" role="heading" level="2" l10n="U"
@@ -244,7 +254,8 @@ oldref="78">Example</paragraph>
 </paragraph>
 </section>
 <section id="steyx">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155836"><bookmark_value>STEYX function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155836">
+<bookmark_value>STEYX function</bookmark_value>
 <bookmark_value>standard errors;statistical functions</bookmark_value>
 </bookmark><comment>mw changed "standard errors"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_STFEHLERYX" id="bm_id3150964" localize="false"/>
@@ -265,7 +276,8 @@ oldref="87">Example</paragraph>
 </paragraph>
 </section>
 <section id="devsq">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150873"><bookmark_value>DEVSQ function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150873">
+<bookmark_value>DEVSQ function</bookmark_value>
 <bookmark_value>sums;of squares of deviations</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMQUADABW" id="bm_id3156317" localize="false"/>
@@ -284,7 +296,8 @@ oldref="95">Example</paragraph>
 </paragraph>
 </section>
 <section id="tinv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149579"><bookmark_value>TINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149579">
+<bookmark_value>TINV function</bookmark_value>
 <bookmark_value>inverse of t-distribution</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TINV" id="bm_id3153155" localize="false"/>
@@ -304,7 +317,8 @@ oldref="104">Example</paragraph>
 <item type="input">=TINV(0.1;6)</item> returns 1.94</paragraph>
 </section>
 <section id="ttest">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154129"><bookmark_value>TTEST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154129">
+<bookmark_value>TTEST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TTEST" id="bm_id3153981" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154129" role="heading" level="2" l10n="U"
@@ -328,7 +342,8 @@ oldref="115">Example</paragraph>
 </paragraph>
 </section>
 <section id="tdist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154930"><bookmark_value>TDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154930">
+<bookmark_value>TDIST function</bookmark_value>
 <bookmark_value>t-distribution</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TVERT" id="bm_id3153095" localize="false"/>
@@ -351,7 +366,8 @@ oldref="125">Example</paragraph>
 </paragraph>
 </section>
 <section id="var">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153828"><bookmark_value>VAR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153828">
+<bookmark_value>VAR function</bookmark_value>
 <bookmark_value>variances</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VARIANZ" id="bm_id3154898" localize="false"/>
@@ -370,7 +386,8 @@ oldref="133">Example</paragraph>
 </paragraph>
 </section>
 <section id="vara">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151045"><bookmark_value>VARA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151045">
+<bookmark_value>VARA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VARIANZA" id="bm_id3148473" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3151045" role="heading" level="2" l10n="U"
@@ -388,7 +405,8 @@ oldref="207">Example</paragraph>
 </paragraph>
 </section>
 <section id="varp">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3166441"><bookmark_value>VARP function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3166441">
+<bookmark_value>VARP function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VARIANZEN" id="bm_id3152359" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3166441" role="heading" level="2" l10n="U"
@@ -406,7 +424,8 @@ oldref="141">Example</paragraph>
 </paragraph>
 </section>
 <section id="varpa">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153688"><bookmark_value>VARPA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153688">
+<bookmark_value>VARPA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VARIANZENA" id="bm_id3159276" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153688" role="heading" level="2" l10n="U"
@@ -424,7 +443,8 @@ oldref="215">Example</paragraph>
 </paragraph>
 </section>
 <section id="permut">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154599"><bookmark_value>PERMUT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154599">
+<bookmark_value>PERMUT function</bookmark_value>
 <bookmark_value>number of permutations</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VARIATIONEN" id="bm_id3154610" localize="false"/>
@@ -444,7 +464,8 @@ oldref="150">Example</paragraph>
 <item type="input">=PERMUT(6;3)</item> returns 120. There are 120 different possibilities, to pick a sequence of 3 playing cards out of 6 playing cards.</paragraph>
 </section>
 <section id="permutationa">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3143276"><bookmark_value>PERMUTATIONA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143276">
+<bookmark_value>PERMUTATIONA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VARIATIONEN2" id="bm_id3153531" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3143276" role="heading" level="2" l10n="U"
@@ -466,7 +487,8 @@ oldref="159">Example</paragraph>
 <item type="input">=PERMUTATIONA(6;3)</item> returns 216. There are 216 different possibilities to put a sequence of 3 playing cards together out of six playing cards if every card is returned before the next one is drawn.</paragraph>
 </section>
 <section id="prob">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152952"><bookmark_value>PROB function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152952">
+<bookmark_value>PROB function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WAHRSCHBEREICH" id="bm_id3152963" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152952" role="heading" level="2" l10n="U"
@@ -489,7 +511,8 @@ oldref="172">Example</paragraph>
 <item type="input">=PROB(A1:A50;B1:B50;50;60)</item> returns the probability with which a value within the range of A1:A50 is also within the limits between 50 and 60. Every value within the range of A1:A50 has a probability within the range of B1:B50.</paragraph>
 </section>
 <section id="weibull">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150941"><bookmark_value>WEIBULL function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150941">
+<bookmark_value>WEIBULL function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WEIBULL" id="bm_id3150405" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150941" role="heading" level="2" l10n="U"

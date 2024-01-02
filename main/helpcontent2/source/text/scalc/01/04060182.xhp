@@ -53,7 +53,8 @@
 <item type="input">=FINV(0.5;5;10)</item> yields 0.93.</paragraph>
 </section>
 <section id="fisher">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150888"><bookmark_value>FISHER function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150888">
+<bookmark_value>FISHER function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FISHER" id="bm_id3146782" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150888" role="heading" level="2" l10n="U"
@@ -70,7 +71,8 @@ oldref="17">Example</paragraph>
 <item type="input">=FISHER(0.5)</item> yields 0.55.</paragraph>
 </section>
 <section id="fisherinv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155758"><bookmark_value>FISHERINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155758">
+<bookmark_value>FISHERINV function</bookmark_value>
 <bookmark_value>inverse of Fisher transformation</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FISHERINV" id="bm_id3149317" localize="false"/>
@@ -88,7 +90,8 @@ oldref="25">Example</paragraph>
 <item type="input">=FISHERINV(0.5)</item> yields 0.46.</paragraph>
 </section>
 <section id="ftest">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151390"><bookmark_value>FTEST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151390">
+<bookmark_value>FTEST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FTEST" id="bm_id3159263" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3151390" role="heading" level="2" l10n="U"
@@ -107,7 +110,8 @@ oldref="34">Example</paragraph>
 <item type="input">=FTEST(A1:A30;B1:B12)</item> calculates whether the two data sets are different in their variance and returns the probability that both sets could have come from the same total population.</paragraph>
 </section>
 <section id="fdist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150372"><bookmark_value>FDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150372">
+<bookmark_value>FDIST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FVERT" id="bm_id3149722" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150372" role="heading" level="2" l10n="U"
@@ -129,7 +133,8 @@ oldref="44">Example</paragraph>
 </section>
 <section id="gamma">
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMA" id="bm_id0119200903221254" localize="false"/>
-<bookmark xml-lang="en-US" branch="index" id="bm_id0119200903223192"><bookmark_value>GAMMA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0119200903223192">
+<bookmark_value>GAMMA function</bookmark_value>
 </bookmark>
 <paragraph xml-lang="en-US" id="hd_id0119200903205393" role="heading" level="2" l10n="NEW">GAMMA</paragraph>
 <paragraph xml-lang="en-US" id="par_id0119200903205379" role="paragraph" l10n="NEW"><ahelp hid=".">Returns the Gamma function value.</ahelp> Note that GAMMAINV is not the inverse of GAMMA, but of GAMMADIST.</paragraph>
@@ -138,7 +143,8 @@ oldref="44">Example</paragraph>
 <emph>Number</emph> is the number for which the Gamma function value is to be calculated.</paragraph>
 </section>
 <section id="gammainv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154841"><bookmark_value>GAMMAINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154841">
+<bookmark_value>GAMMAINV function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMAINV" id="bm_id3149249" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154841" role="heading" level="2" l10n="U"
@@ -159,7 +165,8 @@ oldref="54">Example</paragraph>
 <item type="input">=GAMMAINV(0.8;1;1)</item> yields 1.61.</paragraph>
 </section>
 <section id="gammaln">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154806"><bookmark_value>GAMMALN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154806">
+<bookmark_value>GAMMALN function</bookmark_value>
 <bookmark_value>natural logarithm of Gamma function</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMALN" id="bm_id3149511" localize="false"/>
@@ -177,7 +184,8 @@ oldref="62">Example</paragraph>
 <item type="input">=GAMMALN(2)</item> yields 0.</paragraph>
 </section>
 <section id="gammadist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150132"><bookmark_value>GAMMADIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150132">
+<bookmark_value>GAMMADIST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMAVERT" id="bm_id3154330" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150132" role="heading" level="2" l10n="U"
@@ -201,7 +209,8 @@ oldref="73">Example</paragraph>
 <item type="input">=GAMMADIST(2;1;1;1)</item> yields 0.86.</paragraph>
 </section>
 <section id="gauss">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150272"><bookmark_value>GAUSS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150272">
+<bookmark_value>GAUSS function</bookmark_value>
 <bookmark_value>normal distribution; standard</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAUSS" id="bm_id3149388" localize="false"/>
@@ -222,7 +231,8 @@ oldref="81">Example</paragraph>
 <item type="input">=GAUSS(0.0375)</item> = 0.01</paragraph>
 </section>
 <section id="geomean">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148425"><bookmark_value>GEOMEAN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148425">
+<bookmark_value>GEOMEAN function</bookmark_value>
 <bookmark_value>means;geometric</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GEOMITTEL" id="bm_id3149777" localize="false"/>
@@ -240,7 +250,8 @@ oldref="90">Example</paragraph>
 <item type="input">=GEOMEAN(23;46;69)</item> = 41.79. The geometric mean value of this random sample is therefore 41.79.</paragraph>
 </section>
 <section id="trimmean">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152966"><bookmark_value>TRIMMEAN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152966">
+<bookmark_value>TRIMMEAN function</bookmark_value>
 <bookmark_value>means;of data set without margin data</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GESTUTZTMITTEL" id="bm_id3145081" localize="false"/>
@@ -260,7 +271,8 @@ oldref="100">Example</paragraph>
 <item type="input">=TRIMMEAN(A1:A50; 0.1)</item> calculates the mean value of numbers in A1:A50, without taking into consideration the 5 percent of the values representing the highest values and the 5 percent of the values representing the lowest ones. The percentage numbers refer to the amount of the untrimmed mean value, not to the number of summands.</paragraph>
 </section>
 <section id="ztest">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153216"><bookmark_value>ZTEST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153216">
+<bookmark_value>ZTEST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GTEST" id="bm_id3147569" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153216" role="heading" level="2" l10n="U"
@@ -278,7 +290,8 @@ oldref="105">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id0305200911372999" role="paragraph" l10n="NEW">See also the <link href="https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_ZTEST_function">Wiki page</link>.</paragraph>
 </section>
 <section id="harmean">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153623"><bookmark_value>HARMEAN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153623">
+<bookmark_value>HARMEAN function</bookmark_value>
 <bookmark_value>means;harmonic</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_HARMITTEL" id="bm_id3154052" localize="false"/>
@@ -296,7 +309,8 @@ oldref="118">Example</paragraph>
 <item type="input">=HARMEAN(23;46;69)</item> = 37.64. The harmonic mean of this random sample is thus 37.64</paragraph>
 </section>
 <section id="hypgeomdist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152801"><bookmark_value>HYPGEOMDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152801">
+<bookmark_value>HYPGEOMDIST function</bookmark_value>
 <bookmark_value>sampling without replacement</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_HYPGEOMVERT" id="bm_id3153910" localize="false"/>

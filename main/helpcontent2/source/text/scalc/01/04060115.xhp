@@ -29,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152871"><bookmark_value>add-ins; analysis functions</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152871">
+<bookmark_value>add-ins; analysis functions</bookmark_value>
 <bookmark_value>analysis functions</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3152871" xml-lang="en-US" level="1" l10n="U" oldref="1">Add-in Functions, List of Analysis Functions Part One</paragraph>
@@ -43,7 +44,8 @@
 </section>
 <sort>
 <section id="besseli">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153074"><bookmark_value>Bessel functions</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153074">
+<bookmark_value>Bessel functions</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_BESSELI" id="bm_id3150435" localize="false"/>
 <paragraph role="heading" id="hd_id3153334" xml-lang="en-US" level="2" oldref="111">BESSELI</paragraph>
@@ -89,7 +91,8 @@
 <emph>N</emph> is the order of the Bessel function</paragraph>
 </section>
 <section id="bin2dec">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153034"><bookmark_value>BIN2DEC function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153034">
+<bookmark_value>BIN2DEC function</bookmark_value>
 <bookmark_value>converting;binary numbers, into decimal numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_BIN2DEC" id="bm_id3151230" localize="false"/>
@@ -104,7 +107,8 @@
 <item type="input">=BIN2DEC(1100100)</item> returns 100.</paragraph>
 </section>
 <section id="bin2hex">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149954"><bookmark_value>BIN2HEX function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149954">
+<bookmark_value>BIN2HEX function</bookmark_value>
 <bookmark_value>converting;binary numbers, into hexadecimal numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_BIN2HEX" id="bm_id3149548" localize="false"/>
@@ -120,7 +124,8 @@
 <item type="input">=BIN2HEX(1100100;6)</item> returns 000064.</paragraph>
 </section>
 <section id="bin2oct">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153332"><bookmark_value>BIN2OCT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153332">
+<bookmark_value>BIN2OCT function</bookmark_value>
 <bookmark_value>converting;binary numbers, into octal numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_BIN2OCT" id="bm_id3146848" localize="false"/>
@@ -137,7 +142,8 @@
 <item type="input">=BIN2OCT(1100100;4)</item> returns 0144.</paragraph>
 </section>
 <section id="delta">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150014"><bookmark_value>DELTA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150014">
+<bookmark_value>DELTA function</bookmark_value>
 <bookmark_value>recognizing;equal numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_DELTA" id="bm_id3149880" localize="false"/>
@@ -150,7 +156,8 @@
 <item type="input">=DELTA(1;2)</item> returns 0.</paragraph>
 </section>
 <section id="dec2bin">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157971"><bookmark_value>DEC2BIN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157971">
+<bookmark_value>DEC2BIN function</bookmark_value>
 <bookmark_value>converting;decimal numbers, into binary numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_DEC2BIN" id="bm_id3148389" localize="false"/>
@@ -167,7 +174,8 @@
 <item type="input">=DEC2BIN(100;8)</item> returns 01100100.</paragraph>
 </section>
 <section id="dec2hex">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149388"><bookmark_value>DEC2HEX function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149388">
+<bookmark_value>DEC2HEX function</bookmark_value>
 <bookmark_value>converting;decimal numbers, into hexadecimal numbers</bookmark_value>
 </bookmark><comment>mw added one entr</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_DEC2HEX" id="bm_id3155513" localize="false"/>
@@ -184,7 +192,8 @@
 <item type="input">=DEC2HEX(100;4)</item> returns 0064.</paragraph>
 </section>
 <section id="dec2oct">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154948"><bookmark_value>DEC2OCT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154948">
+<bookmark_value>DEC2OCT function</bookmark_value>
 <bookmark_value>converting;decimal numbers, into octal numbers</bookmark_value>
 </bookmark><comment>mw added one entr</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_DEC2OCT" id="bm_id3156260" localize="false"/>
@@ -201,7 +210,8 @@
 <item type="input">=DEC2OCT(100;4)</item> returns 0144.</paragraph>
 </section>
 <section id="erf">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3083446"><bookmark_value>ERF function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3083446">
+<bookmark_value>ERF function</bookmark_value>
 <bookmark_value>Gaussian error integral</bookmark_value>
 </bookmark><comment>mw added one entr</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ERF" id="bm_id3149823" localize="false"/>
@@ -218,7 +228,8 @@
 <item type="input">=ERF(0;1)</item> returns 0.842701.</paragraph>
 </section>
 <section id="erfc">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145082"><bookmark_value>ERFC function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145082">
+<bookmark_value>ERFC function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ERFC" id="bm_id3156307" localize="false"/>
 <paragraph role="heading" id="hd_id3145082" xml-lang="en-US" level="2" oldref="143">ERFC</paragraph>
@@ -232,7 +243,8 @@
 <item type="input">=ERFC(1)</item> returns 0.157299.</paragraph>
 </section>
 <section id="gestep">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152927"><bookmark_value>GESTEP function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152927">
+<bookmark_value>GESTEP function</bookmark_value>
 <bookmark_value>numbers;greater than or equal to</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_GESTEP" id="bm_id3151182" localize="false"/>
@@ -245,7 +257,8 @@
 <item type="input">=GESTEP(5;1)</item> returns 1.</paragraph>
 </section>
 <section id="hex2bin">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147276"><bookmark_value>HEX2BIN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147276">
+<bookmark_value>HEX2BIN function</bookmark_value>
 <bookmark_value>converting;hexadecimal numbers, into binary numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_HEX2BIN" id="bm_id3145659" localize="false"/>
@@ -262,7 +275,8 @@
 <item type="input">=HEX2BIN(64;8)</item> returns 01100100.</paragraph>
 </section>
 <section id="hex2dec">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154742"><bookmark_value>HEX2DEC function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154742">
+<bookmark_value>HEX2DEC function</bookmark_value>
 <bookmark_value>converting;hexadecimal numbers, into decimal numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_HEX2DEC" id="bm_id3149978" localize="false"/>
@@ -277,7 +291,8 @@
 <item type="input">=HEX2DEC(64)</item> returns 100.</paragraph>
 </section>
 <section id="hex2oct">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149750"><bookmark_value>HEX2OCT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149750">
+<bookmark_value>HEX2OCT function</bookmark_value>
 <bookmark_value>converting;hexadecimal numbers, into octal numbers</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_HEX2OCT" id="bm_id3147487" localize="false"/>

@@ -29,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153484"><bookmark_value>logical functions</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153484">
+<bookmark_value>logical functions</bookmark_value>
 <bookmark_value>Function Wizard; logical</bookmark_value>
 <bookmark_value>functions; logical functions</bookmark_value>
 </bookmark>
@@ -41,7 +42,8 @@
 </section>
 <sort order="asc">
 <section id="Section6">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147505"><bookmark_value>AND function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147505">
+<bookmark_value>AND function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_UND" id="bm_id3145320" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3147505" role="heading" level="2" l10n="U"
@@ -64,7 +66,8 @@ oldref="34">Example</paragraph>
 <item type="input">=AND (FALSE;TRUE)</item> returns FALSE.</paragraph>
 </section>
 <section id="Section1">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156256"><bookmark_value>TRUE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156256">
+<bookmark_value>TRUE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WAHR" id="bm_id3148426" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3156256" role="heading" level="2" l10n="U"
@@ -84,7 +87,8 @@ oldref="42">Example</paragraph>
 <item type="input">=NOT(AND(A;B))</item> returns TRUE</paragraph>
 </section>
 <section id="Section5">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149015"><bookmark_value>FALSE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149015">
+<bookmark_value>FALSE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FALSCH" id="bm_id3154678" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3149015" role="heading" level="2" l10n="U" oldref="3">FALSE</paragraph>
@@ -98,7 +102,8 @@ oldref="42">Example</paragraph>
 <item type="input">=NOT(FALSE())</item> returns TRUE</paragraph>
 </section>
 <section id="Section4">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150141"><bookmark_value>IF function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150141">
+<bookmark_value>IF function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_WENN" id="bm_id3152789" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150141" role="heading" level="2" l10n="U"
@@ -122,7 +127,8 @@ oldref="55">Examples</paragraph>
 <item type="input">=IF(A1&gt;5;100;"too small")</item> If the value in A1 is higher than 5, the value 100 is entered in the current cell; otherwise, the text “too small” (without quotes) is entered.</paragraph>
 </section>
 <section id="Section3">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155954"><bookmark_value>NOT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155954">
+<bookmark_value>NOT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_NICHT" id="bm_id3145168" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3155954" role="heading" level="2" l10n="U"
@@ -139,7 +145,8 @@ oldref="17">Example</paragraph>
 <item type="input">=NOT(A)</item>. If A=TRUE then NOT(A) will evaluate FALSE.</paragraph>
 </section>
 <section id="Section2">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148394"><bookmark_value>OR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148394">
+<bookmark_value>OR function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ODER" id="bm_id3155620" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148394" role="heading" level="2" l10n="U"
@@ -162,7 +169,8 @@ oldref="25">Examples:</paragraph>
 <item type="input">=OR(FALSE;TRUE)</item> returns TRUE.</paragraph>
 </section>
 <section id="Section7">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148394K"><bookmark_value>XOR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148394K">
+<bookmark_value>XOR function</bookmark_value>
 </bookmark><comment>kschenk added this entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ODER" id="bm_id3155620K" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148394K" role="heading" level="2" l10n="U">XOR</paragraph>
