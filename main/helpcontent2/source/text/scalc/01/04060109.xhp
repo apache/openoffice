@@ -52,7 +52,7 @@
 <paragraph xml-lang="en-US" id="par_id1027200802301348" role="paragraph" l10n="NEW">For interoperability the ADDRESS and INDIRECT functions support an optional parameter to specify whether the R1C1 address notation instead of the usual A1 notation should be used.</paragraph>
 <paragraph xml-lang="en-US" id="par_id1027200802301445" role="paragraph" l10n="NEW">In ADDRESS, the parameter is inserted as the fourth parameter, shifting the optional sheet name parameter to the fifth position.</paragraph>
 <paragraph xml-lang="en-US" id="par_id102720080230153" role="paragraph" l10n="NEW">In INDIRECT, the parameter is appended as the second parameter.</paragraph>
-<paragraph xml-lang="en-US" id="par_id102720080230151" role="paragraph" l10n="NEW">In both functions, if the argument is inserted with the value 0, then the R1C1 notation is used. If the argument is not given or has a value other than 0, then the A1 notation is used. </paragraph>
+<paragraph xml-lang="en-US" id="par_id102720080230151" role="paragraph" l10n="NEW">In both functions, if the argument is inserted with the value 0, then the R1C1 notation is used. If the argument is not given or has a value other than 0, then the A1 notation is used.</paragraph>
 <paragraph xml-lang="en-US" id="par_id1027200802301556" role="paragraph" l10n="NEW">In case of R1C1 notation, ADDRESS returns address strings using the exclamation mark '!' as the sheet name separator, and INDIRECT expects the exclamation mark as sheet name separator. Both functions still use the dot '.' sheet name separator with A1 notation.</paragraph>
 <paragraph xml-lang="en-US" id="par_id1027200802301521" role="paragraph" l10n="NEW">When opening documents from ODF 1.0/1.1 format, the ADDRESS functions that show a sheet name as the fourth parameter will shift that sheet name to become the fifth parameter. A new fourth parameter with the value 1 will be inserted.</paragraph>
 <paragraph xml-lang="en-US" id="par_id1027200802301650" role="paragraph" l10n="NEW">When storing a document in ODF 1.0/1.1 format, if ADDRESS functions have a fourth parameter, that parameter will be removed.</paragraph>
@@ -479,7 +479,7 @@ oldref="135">Syntax</paragraph>
 oldref="140">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151374" role="paragraph" l10n="U" oldref="141">
 <item type="input">=STYLE("Invisible";60;"Default")</item> formats the cell in transparent format for 60 seconds after the document was recalculated or loaded, then the Default format is assigned. Both cell formats have to be defined beforehand.</paragraph>
-<paragraph xml-lang="en-US" id="par_id8056886" role="paragraph" l10n="NEW">Since STYLE() has a numeric return value of zero, this return value gets appended to a string. This can be avoided using T() as in the following example </paragraph>
+<paragraph xml-lang="en-US" id="par_id8056886" role="paragraph" l10n="NEW">Since STYLE() has a numeric return value of zero, this return value gets appended to a string. This can be avoided using T() as in the following example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3668935" role="paragraph" l10n="NEW">
 <item type="input">="Text"&amp;T(STYLE("myStyle"))</item>
 </paragraph>

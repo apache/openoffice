@@ -42,11 +42,11 @@
 <paragraph role="paragraph" id="par_id9527268" xml-lang="en-US" l10n="NEW">When you hold down the <switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> key while releasing the mouse button, you enter the <emph>insert mode</emph>.</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph role="paragraph" id="par_id79653" xml-lang="en-US" l10n="NEW">In insert mode, the existing cells where you drop will be shifted to the right or to the bottom, and the dropped cells are inserted into the now empty positions without overwriting. </paragraph>
+<paragraph role="paragraph" id="par_id79653" xml-lang="en-US" l10n="NEW">In insert mode, the existing cells where you drop will be shifted to the right or to the bottom, and the dropped cells are inserted into the now empty positions without overwriting.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id8676717" xml-lang="en-US" l10n="NEW">The surrounding box of the moved cells looks different in insert mode. </paragraph>
-<paragraph role="paragraph" id="par_id3968932" xml-lang="en-US" l10n="NEW">In overwrite mode you see all four borders around the selected area. In insert mode you see only the left border when target cells will be shifted to the right. You see only the upper border when target cells will be shifted down. </paragraph>
+<paragraph role="paragraph" id="par_id8676717" xml-lang="en-US" l10n="NEW">The surrounding box of the moved cells looks different in insert mode.</paragraph>
+<paragraph role="paragraph" id="par_id3968932" xml-lang="en-US" l10n="NEW">In overwrite mode you see all four borders around the selected area. In insert mode you see only the left border when target cells will be shifted to the right. You see only the upper border when target cells will be shifted down.</paragraph>
 <paragraph role="paragraph" id="par_id7399517" xml-lang="en-US" l10n="NEW">Whether the target area will be shifted to the right or to the bottom depends on the distance between source and target cells, if you move within the same sheet. It depends on the number of horizontal or vertical cells in the moved area, if you move to a different sheet.</paragraph>
 </listitem>
 <listitem>
@@ -92,7 +92,7 @@
 <paragraph role="tablecontent" id="par_id9518723" xml-lang="en-US" l10n="NEW"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline> key</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id2926419" xml-lang="en-US" l10n="NEW">Cells are moved and shift the cells in the target area to the right or to the bottom. Source cells are emptied, except if you move within the same rows on the same sheet. </paragraph>
+<paragraph role="tablecontent" id="par_id2926419" xml-lang="en-US" l10n="NEW">Cells are moved and shift the cells in the target area to the right or to the bottom. Source cells are emptied, except if you move within the same rows on the same sheet.</paragraph>
 <paragraph role="tablecontent" id="par_id4021423" xml-lang="en-US" l10n="NEW">If you move within the same rows on the same sheet, the cells in the target area shift to the right, and then the whole row shifts to fill the source area.</paragraph>
 </tablecell>
 </tablerow>

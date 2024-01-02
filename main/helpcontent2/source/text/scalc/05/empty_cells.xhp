@@ -33,7 +33,7 @@
 <bookmark_value>empty cells;handling of</bookmark_value>
 </bookmark><comment>i86303</comment>
 <paragraph role="heading" id="hd_id1502121" xml-lang="en-US" level="1" l10n="NEW"><variable id="empty_cells"><link href="text/scalc/05/empty_cells.xhp">Handling of Empty Cells</link></variable></paragraph>
-<paragraph role="paragraph" id="par_id8266853" xml-lang="en-US" l10n="NEW">In older versions of the software, empty cells were forced to numeric 0 in some contexts and to empty string in others, except in direct comparison where =A1=0 and =A1="" both resulted in TRUE if A1 was empty. Emptiness now is inherited until used, so both =VLOOKUP(...)=0 and =VLOOKUP(...)="" give TRUE if the lookup resulted in an empty cell being returned. </paragraph>
+<paragraph role="paragraph" id="par_id8266853" xml-lang="en-US" l10n="NEW">In older versions of the software, empty cells were forced to numeric 0 in some contexts and to empty string in others, except in direct comparison where =A1=0 and =A1="" both resulted in TRUE if A1 was empty. Emptiness now is inherited until used, so both =VLOOKUP(...)=0 and =VLOOKUP(...)="" give TRUE if the lookup resulted in an empty cell being returned.</paragraph>
 <paragraph role="paragraph" id="par_id2733542" xml-lang="en-US" l10n="NEW">A simple reference to an empty cell is still displayed as numeric 0 but is not necessarily of type numeric anymore, so also comparisons with the referencing cell work as expected. </paragraph>
 <paragraph role="paragraph" id="par_id4238715" xml-lang="en-US" l10n="NEW">For the following examples, A1 contains a number, B1 is empty, C1 contains the reference to B1:</paragraph>
 <paragraph role="code" id="par_id8277230" xml-lang="en-US" l10n="NEW">A1: 1 B1: &lt;empty&gt; C1: =B1 (displays 0)</paragraph>
