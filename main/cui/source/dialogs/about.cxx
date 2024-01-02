@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cui.hxx"
 
@@ -311,7 +309,7 @@ AboutDialog::AboutDialog( Window* pParent, const ResId & rId ) :
 	sbcopyright.appendAscii("Copyright ");
 	sbcopyright.append((sal_Unicode)0x00a9);
 	sbcopyright.appendAscii(" ");
-	rtl::OUString sYear( RTL_CONSTASCII_USTRINGPARAM("2023") );
+	rtl::OUString sYear( RTL_CONSTASCII_USTRINGPARAM("2024") );
 	if (vendor.EqualsAscii("Apache Software Foundation")) {
 		sbcopyright.append(sYear);
 		sbcopyright.appendAscii(" The Apache Software Foundation.\n\n");
