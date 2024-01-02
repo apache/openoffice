@@ -54,7 +54,8 @@
 <item type="input">=INTERCEPT(D3:D9;C3:C9)</item> = 2.15.</paragraph>
 </section>
 <section id="count">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148437"><bookmark_value>COUNT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148437">
+<bookmark_value>COUNT function</bookmark_value>
 <bookmark_value>numbers;counting</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ANZAHL" id="bm_id3153040" localize="false"/>
@@ -73,7 +74,8 @@ oldref="18">Example</paragraph>
 <item type="input">=COUNT(2;4;6;"eight")</item> = 3. The count of numbers is therefore 3.</paragraph>
 </section>
 <section id="counta">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149729"><bookmark_value>COUNTA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149729">
+<bookmark_value>COUNTA function</bookmark_value>
 <bookmark_value>number of entries</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ANZAHL2" id="bm_id3148738" localize="false"/>
@@ -92,7 +94,8 @@ oldref="27">Example</paragraph>
 <item type="input">=COUNTA(2;4;6;"eight")</item> = 4. The count of values is therefore 4.</paragraph>
 </section>
 <section id="b">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150267"><bookmark_value>B function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150267">
+<bookmark_value>B function</bookmark_value>
 <bookmark_value>probabilities of samples with binomial distribution</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_B" id="bm_id3153044" localize="false"/>
@@ -117,7 +120,8 @@ oldref="39">Example</paragraph>
 <item type="input">=B(10;1/6;2)</item> returns a probability of 29%.</paragraph>
 </section>
 <section id="rsq">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3158416"><bookmark_value>RSQ function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158416">
+<bookmark_value>RSQ function</bookmark_value>
 <bookmark_value>determination coefficients</bookmark_value>
 <bookmark_value>regression analysis</bookmark_value>
 </bookmark><comment>mw added regression analysis</comment>
@@ -138,7 +142,8 @@ oldref="49">Example</paragraph>
 <item type="input">=RSQ(A1:A20;B1:B20)</item> calculates the determination coefficient for both data sets in columns A and B.</paragraph>
 </section>
 <section id="betainv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145620"><bookmark_value>BETAINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145620">
+<bookmark_value>BETAINV function</bookmark_value>
 <bookmark_value>cumulative probability density function;inverse of</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BETAINV" id="bm_id3146154" localize="false"/>
@@ -167,7 +172,8 @@ oldref="61">Example</paragraph>
 <item type="input">=BETAINV(0.5;5;10)</item> returns the value 0.33.</paragraph>
 </section>
 <section id="betadist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156096"><bookmark_value>BETADIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156096">
+<bookmark_value>BETADIST function</bookmark_value>
 <bookmark_value>cumulative probability density function;calculating</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BETAVERT" id="bm_id3153213" localize="false"/>
@@ -198,7 +204,8 @@ oldref="73">Example</paragraph>
 <item type="input">=BETADIST(0.75;3;4)</item> returns the value 0.96</paragraph>
 </section>
 <section id="binomdist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3143228"><bookmark_value>BINOMDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143228">
+<bookmark_value>BINOMDIST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BINOMVERT" id="bm_id3150146" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3143228" role="heading" level="2" l10n="U"
@@ -224,7 +231,8 @@ oldref="84">Example</paragraph>
 </section>
 <section id="chisqinv">
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHISQINV" id="bm_id0119200902430717" localize="false"/>
-<bookmark xml-lang="en-US" branch="index" id="bm_id0119200902432928"><bookmark_value>CHISQINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0119200902432928">
+<bookmark_value>CHISQINV function</bookmark_value>
 </bookmark>
 <paragraph xml-lang="en-US" id="hd_id0119200902421451" role="heading" level="2" l10n="NEW">CHISQINV</paragraph>
 <paragraph xml-lang="en-US" id="par_id0119200902421449" role="paragraph" l10n="NEW"><ahelp hid=".">Returns the inverse of CHISQDIST.</ahelp></paragraph>
@@ -235,7 +243,8 @@ oldref="84">Example</paragraph>
 <emph>Degrees Of Freedom</emph> is the degrees of freedom for the chi-square function.</paragraph>
 </section>
 <section id="chiinv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148835"><bookmark_value>CHIINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148835">
+<bookmark_value>CHIINV function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHIINV" id="bm_id3148823" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148835" role="heading" level="2" l10n="U"
@@ -260,7 +269,8 @@ oldref="94">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3158401" role="paragraph" l10n="U" oldref="134">If the probability of error is 5%, the die is not true. If the probability of error is 2%, there is no reason to believe it is fixed.</paragraph>
 </section>
 <section id="chitest">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154260"><bookmark_value>CHITEST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154260">
+<bookmark_value>CHITEST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHITEST" id="bm_id3155355" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154260" role="heading" level="2" l10n="U"
@@ -382,7 +392,8 @@ oldref="103">Example</paragraph>
 <item type="input">=CHITEST(A1:A6;B1:B6)</item> equals 0.02. This is the probability which suffices the observed data of the theoretical Chi-square distribution.</paragraph>
 </section>
 <section id="chidist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148690"><bookmark_value>CHIDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148690">
+<bookmark_value>CHIDIST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHIVERT" id="bm_id3147521" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148690" role="heading" level="2" l10n="U"
@@ -404,7 +415,8 @@ oldref="112">Example</paragraph>
 </section>
 <section id="chisqdist">
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_CHISQDIST" id="bm_id0119200902213671" localize="false"/>
-<bookmark xml-lang="en-US" branch="index" id="bm_id0119200902231887"><bookmark_value>CHISQDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0119200902231887">
+<bookmark_value>CHISQDIST function</bookmark_value>
 <bookmark_value>chi-square distribution</bookmark_value>
 </bookmark>
 <paragraph xml-lang="en-US" id="hd_id0119200901583452" role="heading" level="2" l10n="NEW">CHISQDIST</paragraph>
@@ -419,7 +431,8 @@ oldref="112">Example</paragraph>
 <emph>Cumulative</emph> (optional): 0 or False calculates the probability density function. Other values or True or omitted calculates the cumulative distribution function.</paragraph>
 </section>
 <section id="expondist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150603"><bookmark_value>EXPONDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150603">
+<bookmark_value>EXPONDIST function</bookmark_value>
 <bookmark_value>exponential distributions</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_EXPONVERT" id="bm_id3152962" localize="false"/>

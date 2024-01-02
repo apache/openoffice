@@ -29,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150870"><bookmark_value>add-ins; functions</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150870">
+<bookmark_value>add-ins; functions</bookmark_value>
 <bookmark_value>functions; add-in functions</bookmark_value>
 <bookmark_value>Function Wizard; add-ins</bookmark_value>
 </bookmark>
@@ -45,7 +46,8 @@
 <paragraph role="paragraph" id="par_id3154703" xml-lang="en-US" l10n="U" oldref="77"><link href="text/scalc/01/04060116.xhp">Analysis Functions Part Two</link></paragraph>
 <sort order="asc">
 <section id="isleapyear">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149566"><bookmark_value>ISLEAPYEAR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149566">
+<bookmark_value>ISLEAPYEAR function</bookmark_value>
 <bookmark_value>leap year determination</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <paragraph role="heading" id="hd_id3149566" xml-lang="en-US" level="2" l10n="U" oldref="14">ISLEAPYEAR</paragraph>
@@ -60,7 +62,8 @@
 <paragraph role="paragraph" id="par_idN107EA" xml-lang="en-US" l10n="CHG">Never use =ISLEAPYEAR(2/29/68), because this would first evaluate 2 divided by 29 divided by 68, and then calculate the ISLEAPYEAR function from this small number as a serial date number.</paragraph>
 </section>
 <section id="years">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154656"><bookmark_value>YEARS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154656">
+<bookmark_value>YEARS function</bookmark_value>
 <bookmark_value>number of years between two dates</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_DAI_FUNC_DIFFYEARS" id="bm_id3150368" localize="false"/>
@@ -76,7 +79,8 @@
 <emph>Type</emph> calculates the type of difference. Possible values are 0 (interval) and 1 (in calendar years).</paragraph>
 </section>
 <section id="months">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152898"><bookmark_value>MONTHS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152898">
+<bookmark_value>MONTHS function</bookmark_value>
 <bookmark_value>number of months between two dates</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_DAI_FUNC_DIFFMONTHS" id="bm_id3148839" localize="false"/>
@@ -92,7 +96,8 @@
 <emph>Type</emph> calculates the type of difference. Possible values include 0 (interval) and 1 (in calendar months).</paragraph>
 </section>
 <section id="rot13">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3159094"><bookmark_value>ROT13 function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159094">
+<bookmark_value>ROT13 function</bookmark_value>
 <bookmark_value>encrypting text</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_DAI_FUNC_ROT13" id="bm_id3153283" localize="false"/>
@@ -104,7 +109,8 @@
 <emph>Text</emph> is the character string to be encrypted. ROT13(ROT13(Text)) decrypts the code.</paragraph>
 </section>
 <section id="daysinyear">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151300"><bookmark_value>DAYSINYEAR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151300">
+<bookmark_value>DAYSINYEAR function</bookmark_value>
 <bookmark_value>number of days; in a specific year</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_DAI_FUNC_DAYSINYEAR" id="bm_id3153972" localize="false"/>
@@ -118,7 +124,8 @@
 <paragraph role="paragraph" id="par_id3153811" xml-lang="en-US" l10n="CHG" oldref="49">=DAYSINYEAR(A1) returns 366 days if A1 contains 1968-02-29, a valid date for the year 1968.</paragraph>
 </section>
 <section id="daysinmonth">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154737"><bookmark_value>DAYSINMONTH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154737">
+<bookmark_value>DAYSINMONTH function</bookmark_value>
 <bookmark_value>number of days;in a specific month of a year</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_DAI_FUNC_DAYSINMONTH" id="bm_id3155593" localize="false"/>
@@ -132,7 +139,8 @@
 <paragraph role="paragraph" id="par_id3155742" xml-lang="en-US" l10n="CHG" oldref="56">=DAYSINMONTH(A1) returns 29 days if A1 contains 1968-02-17, a valid date for February 1968.</paragraph>
 </section>
 <section id="weeks">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149048"><bookmark_value>WEEKS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149048">
+<bookmark_value>WEEKS function</bookmark_value>
 <bookmark_value>number of weeks;between two dates</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_DAI_FUNC_DIFFWEEKS" id="bm_id3150435" localize="false"/>
@@ -148,7 +156,8 @@
 <emph>Type</emph> calculates the type of difference. The possible values are 0 (interval) and 1 (in numbers of weeks).</paragraph>
 </section>
 <section id="weeksinyear">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145237"><bookmark_value>WEEKSINYEAR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145237">
+<bookmark_value>WEEKSINYEAR function</bookmark_value>
 <bookmark_value>number of weeks;in a specific year</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_DAI_FUNC_WEEKSINYEAR" id="bm_id3146883" localize="false"/>

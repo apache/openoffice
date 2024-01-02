@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,8 +21,6 @@
  *
  ***********************************************************-->
 
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidespadminxml" indexer="include" status="PUBLISH">
@@ -33,7 +30,8 @@
 </meta>
 <body>
 <section id="chapter_all">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154422"><bookmark_value>spadmin</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154422">
+<bookmark_value>spadmin</bookmark_value>
 <bookmark_value>printers; adding, UNIX</bookmark_value>
 <bookmark_value>default printer; UNIX</bookmark_value>
 <bookmark_value>standard printer under UNIX</bookmark_value>
@@ -48,7 +46,6 @@
 </variable></paragraph>
 <section id="chapter_body">
 <paragraph role="paragraph" id="par_id3159876" xml-lang="en-US" l10n="NEW">%PRODUCTNAME uses the installed fonts of your system. In a text document you can select from all printable fonts. In an HTML document or in Web layout, only fonts that are visible on screen are offered. In spreadsheets and drawings you can select from all installed fonts.</paragraph>
-
 <paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="2">Under UNIX based platforms, the printer administration program <emph>spadmin</emph> is provided to help you set up printers and faxes for use with the $[officename] software.</paragraph>
 <paragraph role="paragraph" id="par_id3156410" xml-lang="en-US" l10n="U" oldref="117">Call the printer administration program <emph>spadmin</emph> as follows:</paragraph>
 <list type="unordered">
@@ -61,7 +58,6 @@
 </list>
 <paragraph role="paragraph" id="par_id3152349" xml-lang="en-US" l10n="U" oldref="14">After it starts, the window of the printer administration program <emph>spadmin</emph> appears.</paragraph>
 <paragraph role="paragraph" id="par_id3149580" xml-lang="en-US" l10n="U" oldref="10">Following a server installation, the system administrator first logs on as with root privileges, and starts the printer administration program <emph>spadmin</emph>. The administrator then creates a general printer configuration file called {install_path}/share/psprint/psprint.conf for all users. All changes are immediately available to all users.</paragraph>
-
 <paragraph role="heading" id="hd_id3159177" xml-lang="en-US" level="2" l10n="U" oldref="121">Setting up Printers</paragraph>
 <paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="122">Under UNIX based platforms, the $[officename] software only offers direct support for printers using the PostScript technology. Other printers must be set up as described in the section <emph>Printer Drivers in the $[officename] Software</emph>. The $[officename] software automatically provides a printer with the default driver for each system queue. You can add additional printers as needed.</paragraph>
 <paragraph role="heading" id="hd_id3148564" xml-lang="en-US" level="3" l10n="U" oldref="286">Adding a Printer</paragraph>
@@ -216,7 +212,6 @@
 </listitem>
 </list>
 <paragraph role="paragraph" id="par_id3153064" xml-lang="en-US" l10n="U" oldref="313">You can now create PDF documents by printing to the converter that has just been created.</paragraph>
-
 </section>
 </section>
 </body>
