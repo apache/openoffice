@@ -45,7 +45,7 @@
 <paragraph role="paragraph" id="par_id3148664" xml-lang="en-US" l10n="U" oldref="8">
 <emph>Text:</emph> Any string expression that you want to modify.</paragraph>
 <paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="CHG" oldref="9">
-<emph>Start: </emph>Numeric expression that indicates the character position within the string where the string portion that you want to replace or to return begins. The maximum allowed value is 65535.<comment>UFI: see #i17928#</comment></paragraph>
+<emph>Start:</emph> Numeric expression that indicates the character position within the string where the string portion that you want to replace or to return begins. The maximum allowed value is 65535.<comment>UFI: see #i17928#</comment></paragraph>
 <paragraph role="paragraph" id="par_id3148451" xml-lang="en-US" l10n="CHG" oldref="10">
 <emph>Length:</emph> Numeric expression that returns the number of characters that you want to replace or return. The maximum allowed value is 65535.</paragraph>
 <paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U" oldref="11">If the Length parameter in the <emph>Mid function</emph> is omitted, all characters in the string expression from the start position to the end of the string are returned.</paragraph>

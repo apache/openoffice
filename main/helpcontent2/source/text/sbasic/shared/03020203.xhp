@@ -37,7 +37,7 @@
 <paragraph role="paragraph" id="par_id3156280" xml-lang="en-US" l10n="U" oldref="2">Reads strings from a sequential file into a variable.</paragraph>
 </section>
 <paragraph role="heading" id="hd_id3150447" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="4">Line Input #FileNumber As Integer, Var As String </paragraph>
+<paragraph role="code" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="4">Line Input #FileNumber As Integer, Var As String</paragraph>
 <paragraph role="heading" id="hd_id3145173" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
 <paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="CHG" oldref="6">
 <emph>FileNumber:</emph> Number of the file that contains the data that you want to read. The file must have been opened in advance with the Open statement using the key word INPUT.</paragraph>
