@@ -112,7 +112,7 @@ oldref="60">ACOSH</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3145295" role="heading" level="3" l10n="U"
 oldref="62">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151017" role="code" l10n="U" oldref="63">ACOSH(Number)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149000" role="paragraph" l10n="CHG" oldref="64"> This function returns the inverse hyperbolic cosine of <emph>Number</emph>, that is the number whose hyperbolic cosine is Number. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3149000" role="paragraph" l10n="CHG" oldref="64"> This function returns the inverse hyperbolic cosine of <emph>Number</emph>, that is the number whose hyperbolic cosine is Number.</paragraph>
 <paragraph xml-lang="en-US" id="par_id6393932" role="paragraph" l10n="NEW"> Number must be greater than or equal to 1.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3150566" role="heading" level="3" l10n="U"
 oldref="65">Example</paragraph>
@@ -139,7 +139,7 @@ oldref="75">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155375" role="paragraph" l10n="CHG" oldref="76">
 <item type="input">=ACOT(1)</item> returns 0.785398163397448 (PI/4 radians).</paragraph>
 <paragraph xml-lang="en-US" id="par_id8589434" role="paragraph" l10n="NEW">
-<item type="input">=DEGREES(ACOT(1))</item> returns 45. The tangent of 45 degrees is 1. </paragraph><comment>see also COS, SIN, TAN, COT, ACOS, ASIN, ATAN, ATAN2</comment>
+<item type="input">=DEGREES(ACOT(1))</item> returns 45. The tangent of 45 degrees is 1.</paragraph><comment>see also COS, SIN, TAN, COT, ACOS, ASIN, ATAN, ATAN2</comment>
 </section>
 <section id="Section58">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3148426">
@@ -174,7 +174,7 @@ oldref="85">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156100" role="paragraph" l10n="CHG" oldref="96">
 <item type="input">=ASIN(0)</item> returns 0.</paragraph>
 <paragraph xml-lang="en-US" id="par_id6853846" role="paragraph" l10n="NEW">
-<item type="input">=ASIN(1)</item> returns 1.5707963267949 (PI/2 radians). </paragraph>
+<item type="input">=ASIN(1)</item> returns 1.5707963267949 (PI/2 radians).</paragraph>
 <paragraph xml-lang="en-US" id="par_id8772240" role="paragraph" l10n="NEW">
 <item type="input">=DEGREES(ASIN(0.5))</item> returns 30. The sine of 30 degrees is 0.5.</paragraph><comment>see also COS, SIN, TAN, COT, ACOS, ATAN, ATAN2, ACOT</comment>
 </section>
@@ -188,7 +188,7 @@ oldref="85">Example</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3150763" role="heading" level="3" l10n="U"
 oldref="102">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150882" role="code" l10n="U" oldref="103">ASINH(Number)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3147621" role="paragraph" l10n="CHG" oldref="104"> This function returns the inverse hyperbolic sine of <emph>Number</emph>, that is the number whose hyperbolic sine is Number. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3147621" role="paragraph" l10n="CHG" oldref="104"> This function returns the inverse hyperbolic sine of <emph>Number</emph>, that is the number whose hyperbolic sine is Number.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3153212" role="heading" level="3" l10n="U"
 oldref="105">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156120" role="paragraph" l10n="CHG" oldref="106">
@@ -247,7 +247,7 @@ oldref="130">ATANH</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3146997" role="heading" level="3" l10n="U"
 oldref="132">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149912" role="code" l10n="U" oldref="133">ATANH(Number)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150521" role="paragraph" l10n="CHG" oldref="134"> This function returns the inverse hyperbolic tangent of <emph>Number</emph>, that is the number whose hyperbolic tangent is Number. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3150521" role="paragraph" l10n="CHG" oldref="134"> This function returns the inverse hyperbolic tangent of <emph>Number</emph>, that is the number whose hyperbolic tangent is Number.</paragraph>
 <paragraph xml-lang="en-US" id="par_id9357280" role="paragraph" l10n="NEW"> Number must obey the condition -1 &lt; number &lt; 1.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3148450" role="heading" level="3" l10n="U"
 oldref="135">Example</paragraph>
@@ -362,7 +362,7 @@ oldref="198">EXP</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3146902" role="heading" level="3" l10n="U" oldref="210">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154661" role="code" l10n="U" oldref="211">FACT(Number)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152952" role="paragraph" l10n="CHG" oldref="212"> Returns Number!, the factorial of <emph>Number</emph>, calculated as 1*2*3*4* ... * Number.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3834650" role="paragraph" l10n="NEW">=FACT(0) returns 1 by definition. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3834650" role="paragraph" l10n="NEW">=FACT(0) returns 1 by definition.</paragraph>
 <paragraph xml-lang="en-US" id="par_id8429517" role="paragraph" l10n="NEW">The factorial of a negative number returns the "invalid argument" error.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3154569" role="heading" level="3" l10n="U" oldref="213">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154476" role="paragraph" l10n="CHG" oldref="216">
@@ -400,7 +400,7 @@ oldref="198">EXP</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149988" role="paragraph" l10n="CHG" oldref="228"><ahelp hid="HID_FUNC_GERADE">Rounds a positive number up to the next even integer and a negative number down to the next even integer.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3148401" role="heading" level="3" l10n="U" oldref="229">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150830" role="code" l10n="U" oldref="230">EVEN(Number)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153350" role="paragraph" l10n="CHG" oldref="231"> Returns <emph>Number</emph> rounded to the next even integer up, away from zero. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3153350" role="paragraph" l10n="CHG" oldref="231"> Returns <emph>Number</emph> rounded to the next even integer up, away from zero.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3155508" role="heading" level="3" l10n="U" oldref="232">Examples</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154361" role="paragraph" l10n="CHG" oldref="233">
 <item type="input">=EVEN(2.3)</item> returns 4.</paragraph>
@@ -867,7 +867,7 @@ oldref="404">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id1371501" role="paragraph" l10n="NEW">
 <item type="input">=ROUND(2.348;0)</item> returns 2.</paragraph>
 <paragraph xml-lang="en-US" id="par_id4661702" role="paragraph" l10n="NEW">
-<item type="input">=ROUND(2.5)</item> returns 3. </paragraph>
+<item type="input">=ROUND(2.5)</item> returns 3.</paragraph>
 <paragraph xml-lang="en-US" id="par_id7868892" role="paragraph" l10n="NEW">
 <item type="input">=ROUND(987.65;-2)</item> returns 1000.</paragraph><comment>see also INT, TRUNC, ROUNDDOWN, ROUNDUP, CEILING, FLOOR, EVEN, ODD, MROUND</comment>
 </section>
@@ -1022,7 +1022,7 @@ oldref="436">SUMIFS</paragraph>
 <embed href="text/shared/00/00000001.xhp#regulaer"/>
 <paragraph xml-lang="en-US" id="hd_id3152015K" role="heading" level="3" l10n="U">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152028K" role="code" l10n="U">SUMIFS( Reference R ; Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152043K" role="paragraph" l10n="U">Sums the value of cells in range R that meet the Criterion C1 in the reference range R1, and the Criterion C2 in the reference range R2, and so on. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3152043K" role="paragraph" l10n="U">Sums the value of cells in range R that meet the Criterion C1 in the reference range R1, and the Criterion C2 in the reference range R2, and so on.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152062K" role="paragraph" l10n="CHG" >A <emph>Criterion</emph> is a single cell Reference, Number or Text. If the criterion is written into the formula, it has to be surrounded by double quotes.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152083K" role="paragraph" l10n="U">All <emph>Reference</emph> ranges shall have the same dimension and size, else an Error is returned.</paragraph>
 <!--<paragraph xml-lang="en-US" id="par_id8347422K" role="note" l10n="NEW">SUMIFS supports the reference concatenation operator (~) only in the Criteria parameter, and only if the optional SumRange parameter is not given.</paragraph>-->
@@ -1229,7 +1229,7 @@ oldref="570"><emph>Examples</emph>
 <paragraph xml-lang="en-US" id="hd_id0908200902131152" role="heading" level="3" l10n="NEW">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id090820090213112" role="paragraph" l10n="NEW">
 <item type="input">=CONVERT(100;"ATS";"EUR")</item> returns the Euro value of 100 Austrian Schillings.</paragraph>
-<paragraph xml-lang="en-US" id="par_id0908200902475431" role="paragraph" l10n="NEW">=CONVERT(100;"EUR";"DEM") converts 100 Euros into German Marks. </paragraph>
+<paragraph xml-lang="en-US" id="par_id0908200902475431" role="paragraph" l10n="NEW">=CONVERT(100;"EUR";"DEM") converts 100 Euros into German Marks.</paragraph>
 </section>
 <section id="Section10">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3157177">
@@ -1312,7 +1312,7 @@ oldref="658">MROUND</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3164306" role="heading" level="3" l10n="U"
 oldref="660">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3164320" role="code" l10n="U" oldref="661">MROUND(Number; Multiple)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3486434" role="paragraph" l10n="NEW">Returns <emph>Number</emph> rounded to the nearest multiple of <emph>Multiple</emph>. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3486434" role="paragraph" l10n="NEW">Returns <emph>Number</emph> rounded to the nearest multiple of <emph>Multiple</emph>.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3068636" role="paragraph" l10n="NEW">An alternative implementation would be <item type="literal">Multiple * ROUND(Number/Multiple)</item>.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3164333" role="heading" level="3" l10n="U"
 oldref="662">Example</paragraph>
@@ -1426,7 +1426,7 @@ oldref="553">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id2118594" role="paragraph" l10n="NEW">
 <item type="input">=COUNTIF(A1:A10;"&lt;"&amp;B1)</item> - when B1 contains <item type="input">2006</item>, this returns 6</paragraph>
 <paragraph xml-lang="en-US" id="par_id166020" role="paragraph" l10n="NEW">
-<item type="input">=COUNTIF(A1:A10;C2)</item> where cell C2 contains the text <item type="input">&gt;2006</item> counts the number of cells in the range A1:A10 which are &gt;2006 </paragraph>
+<item type="input">=COUNTIF(A1:A10;C2)</item> where cell C2 contains the text <item type="input">&gt;2006</item> counts the number of cells in the range A1:A10 which are &gt;2006</paragraph>
 <paragraph xml-lang="en-US" id="par_id6386913" role="paragraph" l10n="NEW">To count only negative numbers: <item type="input">=COUNTIF(A1:A10;"&lt;0")</item>
 </paragraph>
 </section>

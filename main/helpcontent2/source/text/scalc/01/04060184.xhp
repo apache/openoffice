@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-
 
 <!--***********************************************************
  *
@@ -23,8 +21,7 @@
  *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060184xml" indexer="include">
 <title xml-lang="en-US" id="tit">Statistical Functions Part Four</title>
@@ -45,7 +42,7 @@
 <paragraph xml-lang="en-US" id="par_id9282509" role="paragraph" l10n="NEW">Returns 0 if no numeric value and no error was encountered in the cell range(s) passed as cell reference(s). Text cells are ignored by MIN() and MAX(). The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered. Passing a literal string argument to MIN() or MAX(), e.g. MIN("string"), still results in an error.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3154256" role="heading" level="3" l10n="U" oldref="4">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147340" role="code" l10n="U" oldref="5">MAX(Number1; Number2; ...Number30)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149568" role="paragraph" l10n="CHG" oldref="6"><emph>Number1; Number2;...Number30</emph> are numerical values or ranges. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3149568" role="paragraph" l10n="CHG" oldref="6"><emph>Number1; Number2;...Number30</emph> are numerical values or ranges.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3153963" role="heading" level="3" l10n="U" oldref="7">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147343" role="paragraph" l10n="U" oldref="8">
 <item type="input">=MAX(A1;A2;A3;50;100;200)</item> returns the largest value from the list.</paragraph>

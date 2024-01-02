@@ -48,7 +48,7 @@
 <emph>Data</emph> is the array or range of data in the sample.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150215" role="paragraph" l10n="CHG" oldref="8">
 <emph>Type</emph> (optional) is the sequence order.</paragraph>
-<paragraph xml-lang="en-US" id="par_id9305398" role="paragraph" l10n="NEW">Type = 0 means descending from the last item of the array to the first (this is the default), </paragraph>
+<paragraph xml-lang="en-US" id="par_id9305398" role="paragraph" l10n="NEW">Type = 0 means descending from the last item of the array to the first (this is the default),</paragraph>
 <paragraph xml-lang="en-US" id="par_id9996948" role="paragraph" l10n="NEW">Type = 1 means ascending from the first item of the range to the last.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3143223" role="heading" level="3" l10n="U" oldref="9">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155919" role="paragraph" l10n="U" oldref="10">
@@ -288,7 +288,7 @@ oldref="90">DEVSQ</paragraph>
 oldref="92">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3146790" role="code" l10n="U" oldref="93">DEVSQ(Number1; Number2; ...Number30)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155995" role="paragraph" l10n="CHG" oldref="94">
-<emph>Number1, Number2, ...Number30</emph> numerical values or ranges representing a sample. </paragraph>
+<emph>Number1, Number2, ...Number30</emph> numerical values or ranges representing a sample.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3150254" role="heading" level="3" l10n="U"
 oldref="95">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149136" role="paragraph" l10n="U" oldref="96">
@@ -504,7 +504,7 @@ oldref="166">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151107" role="paragraph" l10n="U" oldref="170">
 <emph>Start</emph> is the start value of the interval whose probabilities are to be summed.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153694" role="paragraph" l10n="U" oldref="171">
-<emph>End</emph> (optional) is the end value of the interval whose probabilities are to be summed. If this parameter is missing, the probability for the <emph>Start </emph>value is calculated.</paragraph>
+<emph>End</emph> (optional) is the end value of the interval whose probabilities are to be summed. If this parameter is missing, the probability for the <emph>Start</emph> value is calculated.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3147574" role="heading" level="3" l10n="U"
 oldref="172">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153666" role="paragraph" l10n="U" oldref="173">
@@ -518,7 +518,7 @@ oldref="172">Example</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3150941" role="heading" level="2" l10n="U"
 oldref="175">WEIBULL</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154916" role="paragraph" l10n="U" oldref="176"><ahelp hid="HID_FUNC_WEIBULL">Returns the values of the Weibull distribution.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="par_id0305200911372767" role="paragraph" l10n="NEW">The Weibull distribution is a continuous probability distribution, with parameters Alpha &gt; 0 (shape) and Beta &gt; 0 (scale). </paragraph>
+<paragraph xml-lang="en-US" id="par_id0305200911372767" role="paragraph" l10n="NEW">The Weibull distribution is a continuous probability distribution, with parameters Alpha &gt; 0 (shape) and Beta &gt; 0 (scale).</paragraph>
 <paragraph xml-lang="en-US" id="par_id0305200911372777" role="paragraph" l10n="NEW">If C is 0, WEIBULL calculates the probability density function.</paragraph>
 <paragraph xml-lang="en-US" id="par_id0305200911372743" role="paragraph" l10n="NEW">If C is 1, WEIBULL calculates the cumulative distribution function.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3159393" role="heading" level="3" l10n="U"
@@ -527,7 +527,7 @@ oldref="177">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151317" role="paragraph" l10n="U" oldref="179">
 <emph>Number</emph> is the value at which to calculate the Weibull distribution.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3158436" role="paragraph" l10n="U" oldref="180">
-<emph>Alpha </emph>is the shape parameter of the Weibull distribution.</paragraph>
+<emph>Alpha</emph> is the shape parameter of the Weibull distribution.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154668" role="paragraph" l10n="U" oldref="181">
 <emph>Beta</emph> is the scale parameter of the Weibull distribution.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154825" role="paragraph" l10n="CHG" oldref="182">
