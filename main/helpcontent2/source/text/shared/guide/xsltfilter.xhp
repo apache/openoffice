@@ -29,10 +29,13 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id7007583"><bookmark_value>saving;to XML</bookmark_value> <bookmark_value>loading;XML files</bookmark_value> <bookmark_value>importing;from XML</bookmark_value> <bookmark_value>exporting;to XML</bookmark_value> <bookmark_value>file filters;XML</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id7007583">
+<bookmark_value>saving;to XML</bookmark_value> <bookmark_value>loading;XML files</bookmark_value>
+<bookmark_value>importing;from XML</bookmark_value>
+<bookmark_value>exporting;to XML</bookmark_value>
+<bookmark_value>file filters;XML</bookmark_value>
 <bookmark_value>XSLT filters, see also XML filters</bookmark_value>
-</bookmark>
-<comment>mw moved 2 index entries to the new file xsltfilter_distribute.xhp and 2 entries to new file xsltfilter_create.xhp</comment>
+</bookmark><comment>mw moved 2 index entries to the new file xsltfilter_distribute.xhp and 2 entries to new file xsltfilter_create.xhp</comment>
 <paragraph xml-lang="en-US" id="par_idN10923" role="heading" level="1" l10n="NEW"><variable id="xsltfilter"><link href="text/shared/guide/xsltfilter.xhp">About XML Filters</link> 
 </variable></paragraph>
 <paragraph xml-lang="en-US" id="par_idN10927" role="paragraph" l10n="CHG">%PRODUCTNAME <link href="text/shared/00/00000021.xhp">stores documents in XML format</link>. You can create customized filters that convert the native OpenDocument XML file format used by %PRODUCTNAME into another format. These filters can be integrated into %PRODUCTNAME seamlessly so that you can save or load these formats transparently.</paragraph>

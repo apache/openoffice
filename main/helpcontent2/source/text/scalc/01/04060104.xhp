@@ -189,7 +189,8 @@
 </table>
 <sort order="asc">
 <section id="info">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3691824"><bookmark_value>INFO function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3691824">
+<bookmark_value>INFO function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_INFO" id="bm_id5369426" localize="false"/>
 <paragraph role="heading" id="hd_id5787224" xml-lang="en-US" level="2" l10n="NEW">INFO</paragraph>
@@ -255,7 +256,8 @@
 <item type="input">=INFO(D5)</item> with cell <item type="literal">D5</item> containing a text string <item type="literal">system</item> returns the operating system type.<comment>Do not translate the hlp_literal system</comment></paragraph>
 </section>
 <section id="current">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155625"><bookmark_value>CURRENT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155625">
+<bookmark_value>CURRENT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_AKTUELL" id="bm_id3145295" localize="false"/>
 <paragraph role="heading" id="hd_id3155625" xml-lang="en-US" level="2" l10n="U" oldref="30">CURRENT</paragraph>
@@ -277,7 +279,8 @@
 <paragraph role="paragraph" id="par_id6019165" xml-lang="en-US" l10n="NEW">The example returns choochoo.</paragraph>
 </section>
 <section id="formula">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150688"><bookmark_value>FORMULA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150688">
+<bookmark_value>FORMULA function</bookmark_value>
 <bookmark_value>formula cells;displaying formulas in other cells</bookmark_value>
 <bookmark_value>displaying;formulas at any position</bookmark_value>
 </bookmark><comment>mw added "formula cells;" and "displaying;"</comment>
@@ -295,7 +298,8 @@
 <item type="input">=FORMULA(A8)</item> returns the text =SUM(1;2;3).</paragraph>
 </section>
 <section id="isref">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155409"><bookmark_value>ISREF function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155409">
+<bookmark_value>ISREF function</bookmark_value>
 <bookmark_value>references;testing cell contents</bookmark_value>
 <bookmark_value>cell contents;testing for references</bookmark_value>
 </bookmark><comment>mw added "references;" and "cell contents;"</comment>
@@ -320,7 +324,8 @@
 <item type="input">=ISREF(ADDRESS(1; 1; 2;"Sheet2"))</item> returns FALSE, because ADDRESS is a function that returns a text, although it looks like a reference.</paragraph>
 </section>
 <section id="iserr">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154812"><bookmark_value>ISERR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154812">
+<bookmark_value>ISERR function</bookmark_value>
 <bookmark_value>error codes;controlling</bookmark_value>
 </bookmark><comment>mw added "error codes,"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTFEHL" id="bm_id3145081" localize="false"/>
@@ -338,7 +343,8 @@
 <item type="input">=ISERR(C9)</item> where cell C9 contains <item type="input">=NA()</item> returns FALSE, because ISERR() ignores the #N/A error.</paragraph>
 </section>
 <section id="iserror">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147081"><bookmark_value>ISERROR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147081">
+<bookmark_value>ISERROR function</bookmark_value>
 <bookmark_value>recognizing;general errors</bookmark_value>
 </bookmark><comment>mw added "recognizing;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTFEHLER" id="bm_id3145206" localize="false"/>
@@ -356,7 +362,8 @@
 <item type="input">=ISERROR(C9)</item> where cell C9 contains <item type="input">=NA()</item> returns TRUE.</paragraph>
 </section>
 <section id="isformula">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153618"><bookmark_value>ISFORMULA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153618">
+<bookmark_value>ISFORMULA function</bookmark_value>
 <bookmark_value>recognizing formula cells</bookmark_value>
 <bookmark_value>formula cells;recognizing</bookmark_value>
 </bookmark><comment>mw inserted "recognizing..." and "formula cells;"</comment>
@@ -373,7 +380,8 @@
 <item type="input">=ISFORMULA(C4)</item> returns FALSE if the cell C4 contains the number <item type="input">5</item>.</paragraph>
 </section>
 <section id="iseven_add">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149760"><bookmark_value>ISEVEN_ADD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149760">
+<bookmark_value>ISEVEN_ADD function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ISEVEN" id="bm_id3146094" localize="false"/>
 <paragraph role="heading" id="hd_id3149760" xml-lang="en-US" level="2" oldref="229">ISEVEN_ADD</paragraph>
@@ -390,7 +398,8 @@
 <item type="input">=ISEVEN_ADD(A1)</item> returns 1 if cell A1 contains the number <item type="input">2</item>.</paragraph>
 </section>
 <section id="isnontext">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154692"><bookmark_value>ISNONTEXT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154692">
+<bookmark_value>ISNONTEXT function</bookmark_value>
 <bookmark_value>cell contents;no text</bookmark_value>
 </bookmark><comment>mw added "cell contents;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTKTEXT" id="bm_id3159342" localize="false"/>
@@ -408,7 +417,8 @@
 <item type="input">=ISNONTEXT(D9)</item> returns TRUE if cell D9 contains the number <item type="input">8</item>.</paragraph>
 </section>
 <section id="isblank">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3159148"><bookmark_value>ISBLANK function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159148">
+<bookmark_value>ISBLANK function</bookmark_value>
 <bookmark_value>blank cell contents</bookmark_value>
 <bookmark_value>empty cells; recognizing</bookmark_value>
 </bookmark><comment>mw added "blank..." and "empty cells;"</comment>
@@ -425,7 +435,8 @@
 <item type="input">=ISBLANK(D2)</item> returns FALSE as a result.</paragraph>
 </section>
 <section id="islogical">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155356"><bookmark_value>ISLOGICAL function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155356">
+<bookmark_value>ISLOGICAL function</bookmark_value>
 <bookmark_value>number formats;logical</bookmark_value>
 <bookmark_value>logical number formats</bookmark_value>
 </bookmark><comment>mw added "number formats;" and "logical..."</comment>
@@ -443,7 +454,8 @@
 <item type="input">=ISLOGICAL(ISNA(D4))</item> returns TRUE whatever the contents of cell D4, because ISNA() returns a logical value.</paragraph>
 </section>
 <section id="isna">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153685"><bookmark_value>ISNA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153685">
+<bookmark_value>ISNA function</bookmark_value>
 <bookmark_value>#N/A error;recognizing</bookmark_value>
 </bookmark><comment>mw added "#N/A ..."</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTNV" id="bm_id3159273" localize="false"/>
@@ -459,7 +471,8 @@
 <item type="input">=ISNA(D3)</item> returns FALSE as a result.</paragraph>
 </section>
 <section id="istext">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149426"><bookmark_value>ISTEXT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149426">
+<bookmark_value>ISTEXT function</bookmark_value>
 <bookmark_value>cell contents;text</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTTEXT" id="bm_id3148468" localize="false"/>
@@ -477,7 +490,8 @@
 <item type="input">=ISTEXT(C3)</item> returns FALSE if cell C3 contains the number <item type="input">3</item>.</paragraph>
 </section>
 <section id="isodd_add">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153939"><bookmark_value>ISODD_ADD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153939">
+<bookmark_value>ISODD_ADD function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ISODD" id="bm_id3149927" localize="false"/>
 <paragraph role="heading" id="hd_id3153939" xml-lang="en-US" level="2" oldref="236">ISODD_ADD</paragraph>
@@ -492,7 +506,8 @@
 <item type="input">=ISODD_ADD(5)</item> returns 1.</paragraph>
 </section>
 <section id="isnumber">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148688"><bookmark_value>ISNUMBER function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148688">
+<bookmark_value>ISNUMBER function</bookmark_value>
 <bookmark_value>cell contents;numbers</bookmark_value>
 </bookmark><comment>mw added "cell contents;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISTZAHL" id="bm_id3149587" localize="false"/>
@@ -510,7 +525,8 @@
 <item type="input">=ISNUMBER(C2)</item> returns FALSE if the cell C2 contains the text <item type="input">abcdef</item>.</paragraph>
 </section>
 <section id="n">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153694"><bookmark_value>N function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153694">
+<bookmark_value>N function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_N" id="bm_id3153786" localize="false"/>
 <paragraph role="heading" id="hd_id3153694" xml-lang="en-US" level="2" l10n="U" oldref="119">N</paragraph>
@@ -532,7 +548,8 @@
 <paragraph role="paragraph" id="par_id3519089" xml-lang="en-US" l10n="NEW">=N(1/0) returns #DIV/0!</paragraph>
 </section>
 <section id="na">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156275"><bookmark_value>NA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156275">
+<bookmark_value>NA function</bookmark_value>
 <bookmark_value>#N/A error;assigning to a cell</bookmark_value>
 </bookmark><comment>mw added "#N/A error;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_NV" id="bm_id3154569" localize="false"/>
@@ -545,7 +562,8 @@
 <item type="input">=NA()</item> converts the contents of the cell into #N/A.</paragraph>
 </section>
 <section id="type">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151255"><bookmark_value>TYPE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151255">
+<bookmark_value>TYPE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TYP" id="bm_id3146127" localize="false"/>
 <paragraph role="heading" id="hd_id3151255" xml-lang="en-US" level="2" l10n="U" oldref="136">TYPE</paragraph>
@@ -562,7 +580,8 @@
 <item type="input">=TYPE(D9)</item> returns 1 as a result.</paragraph>
 </section>
 <section id="cell">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155509"><bookmark_value>CELL function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155509">
+<bookmark_value>CELL function</bookmark_value>
 <bookmark_value>cell information</bookmark_value>
 <bookmark_value>information on cells</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
