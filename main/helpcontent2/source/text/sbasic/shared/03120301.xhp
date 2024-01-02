@@ -50,7 +50,7 @@
 <paragraph role="paragraph" id="par_id3153380" xml-lang="en-US" l10n="U" oldref="12">
 <emph>0:</emph> If <emph>Number</emph> has a digit at the position of the 0 in the format code, the digit is displayed, otherwise a zero is displayed.</paragraph>
 <paragraph role="paragraph" id="par_id3151210" xml-lang="en-US" l10n="U" oldref="13">If <emph>Number</emph> has fewer digits than the number of zeros in the format code, (on either side of the decimal), leading or trailing zeros are displayed. If the number has more digits to the left of the decimal separator than the amount of zeros in the format code, the additional digits are displayed without formatting.</paragraph>
-<paragraph role="paragraph" id="par_id3151176" xml-lang="en-US" l10n="U" oldref="14">Decimal places in the number are rounded according to the number of zeros that appear after the decimal separator in the <emph>Format </emph>code.</paragraph>
+<paragraph role="paragraph" id="par_id3151176" xml-lang="en-US" l10n="U" oldref="14">Decimal places in the number are rounded according to the number of zeros that appear after the decimal separator in the <emph>Format</emph> code.</paragraph>
 <paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U" oldref="15">
 <emph>#:</emph> If <emph>Number</emph> contains a digit at the position of the # placeholder in the <emph>Format</emph> code, the digit is displayed, otherwise nothing is displayed at this position.</paragraph>
 <paragraph role="paragraph" id="par_id3148452" xml-lang="en-US" l10n="U" oldref="16">This symbol works like the 0, except that leading or trailing zeroes are not displayed if there are more # characters in the format code than digits in the number. Only the relevant digits of the number are displayed.</paragraph>

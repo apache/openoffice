@@ -44,7 +44,7 @@
 <paragraph role="paragraph" id="par_id3161831" xml-lang="en-US" l10n="U" oldref="8">
 <emph>Text:</emph> Any string expression that specifies the search path, directory or file. This argument can only be specified the first time that you call the Dir function. If you want, you can enter the path in <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
 <paragraph role="paragraph" id="par_id3146974" xml-lang="en-US" l10n="U" oldref="9">
-<emph>Attrib: </emph>Any integer expression that specifies bitwise file attributes. The Dir function only returns files or directories that match the specified attributes. You can combine several attributes by adding the attribute values:</paragraph>
+<emph>Attrib:</emph> Any integer expression that specifies bitwise file attributes. The Dir function only returns files or directories that match the specified attributes. You can combine several attributes by adding the attribute values:</paragraph>
 <paragraph role="paragraph" id="par_id3149666" xml-lang="en-US" l10n="U" oldref="11">0 : Normal files.</paragraph>
 <paragraph role="paragraph" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="15">16 : Returns the name of the directory only.</paragraph>
 <paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="U" oldref="16">Use this attribute to check if a file or directory exists, or to determine all files and folders in a specific directory.</paragraph>

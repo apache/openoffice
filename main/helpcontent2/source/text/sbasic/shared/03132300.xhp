@@ -34,7 +34,7 @@
 <bookmark_value>CreateUnoValue function</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3150682" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03132300.xhp" name="CreateUnoValue Function [Runtime]">CreateUnoValue Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3147291" xml-lang="en-US" l10n="U" oldref="2">Returns an object that represents a strictly typed value referring to the Uno type system. </paragraph>
+<paragraph role="paragraph" id="par_id3147291" xml-lang="en-US" l10n="U" oldref="2">Returns an object that represents a strictly typed value referring to the Uno type system.</paragraph>
 </section>
 <paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="U" oldref="3">This object is automatically converted to an Any of the corresponding type when passed to Uno. The type must be specified by its fully qualified Uno type name.</paragraph>
 <paragraph role="note" id="par_id3153626" xml-lang="en-US" l10n="U" oldref="4">The $[officename] API frequently uses the Any type. It is the counterpart of the Variant type known from other environments. The Any type holds one arbitrary Uno type and is used in generic Uno interfaces.</paragraph>
