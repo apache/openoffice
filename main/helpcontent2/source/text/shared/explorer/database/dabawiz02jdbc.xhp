@@ -47,7 +47,7 @@
 <paragraph role="paragraph" id="par_idN1064E" xml-lang="en-US" l10n="NEW">http://otn.oracle.com/tech/java/sqlj_jdbc/content.html</paragraph>
 </case>
 </switch>
-<paragraph role="paragraph" id="par_idN10661" xml-lang="en-US" l10n="NEW">In the <emph>Data source URL</emph> box, enter the location of the Oracle database server. The syntax of the URL depends on the database type. See the documentation that came with the JDBC driver for more information. </paragraph>
+<paragraph role="paragraph" id="par_idN10661" xml-lang="en-US" l10n="NEW">In the <emph>Data source URL</emph> box, enter the location of the Oracle database server. The syntax of the URL depends on the database type. See the documentation that came with the JDBC driver for more information.</paragraph>
 <paragraph role="paragraph" id="par_idN10668" xml-lang="en-US" l10n="NEW">For an Oracle database, the syntax of the URL is:</paragraph>
 <paragraph role="example" id="par_idN1066B" xml-lang="en-US" l10n="NEW">oracle:thin:@hostname:port:database_name</paragraph>
 <list type="unordered">

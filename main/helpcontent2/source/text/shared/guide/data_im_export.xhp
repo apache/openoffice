@@ -59,19 +59,19 @@
 </list>
 <paragraph role="paragraph" id="par_id130619" xml-lang="en-US" l10n="NEW">Now you can save or export the data to many file types.</paragraph>
 <paragraph role="heading" id="hd_id9999694" xml-lang="en-US" level="2" l10n="NEW">Importing data to Base</paragraph>
-<paragraph role="note" id="par_id8494521" xml-lang="en-US" l10n="NEW">You can import text files, spreadsheet files, and your system address book in read-only mode only. </paragraph>
+<paragraph role="note" id="par_id8494521" xml-lang="en-US" l10n="NEW">You can import text files, spreadsheet files, and your system address book in read-only mode only.</paragraph>
 <paragraph role="note" id="par_id9579760" xml-lang="en-US" l10n="NEW">When you import from a text or spreadsheet file, the file must have a first row of header information. The second row of the file is the first valid data row. The format of every field in the second row determines the format for the entire column. Any format information from a spreadsheet file gets lost when importing to Base.</paragraph>
-<paragraph role="note" id="par_id325632" xml-lang="en-US" l10n="NEW">For example, to ensure the first column has a text format, you must make sure that the first field of the first valid data row contains text. If a field in the first valid data row contains a number, the whole column is set to number format, and only numbers, no text, will be shown in that column. </paragraph>
+<paragraph role="note" id="par_id325632" xml-lang="en-US" l10n="NEW">For example, to ensure the first column has a text format, you must make sure that the first field of the first valid data row contains text. If a field in the first valid data row contains a number, the whole column is set to number format, and only numbers, no text, will be shown in that column.</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph role="paragraph" id="par_id2216559" xml-lang="en-US" l10n="NEW">Open a Base file of the database type that you want. </paragraph>
+<paragraph role="paragraph" id="par_id2216559" xml-lang="en-US" l10n="NEW">Open a Base file of the database type that you want.</paragraph>
 <paragraph role="paragraph" id="par_id7869502" xml-lang="en-US" l10n="NEW">Either create a new Base file using the <link href="text/shared/explorer/database/dabawiz00.xhp">Database Wizard</link>, or open any existing Base file that is not read-only.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id9852900" xml-lang="en-US" l10n="NEW">Open the Calc file that contains the data to be imported to Base. You can open a *.dbf dBASE file or many other file types. </paragraph>
+<paragraph role="paragraph" id="par_id9852900" xml-lang="en-US" l10n="NEW">Open the Calc file that contains the data to be imported to Base. You can open a *.dbf dBASE file or many other file types.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id3791924" xml-lang="en-US" l10n="NEW">Select the data to be copied to Base. </paragraph>
+<paragraph role="paragraph" id="par_id3791924" xml-lang="en-US" l10n="NEW">Select the data to be copied to Base.</paragraph>
 <paragraph role="paragraph" id="par_id6173894" xml-lang="en-US" l10n="NEW">You can enter a range reference like A1:X500 in the Name Box if you don't want to scroll.</paragraph>
 <paragraph role="paragraph" id="par_id533768" xml-lang="en-US" l10n="NEW">If you copy a dBASE sheet, include the top row that contains the header data.</paragraph>
 </listitem>
