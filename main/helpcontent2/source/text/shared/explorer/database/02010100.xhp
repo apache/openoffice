@@ -152,7 +152,7 @@
 <paragraph role="paragraph" id="par_id3154585" xml-lang="en-US" l10n="U" oldref="36">Here you can enter one additional criterion for filtering in each line. Multiple criteria in one column will be connected by an OR link.</paragraph>
 <paragraph role="paragraph" id="par_id3148800" xml-lang="en-US" l10n="U" oldref="150">You can also use the context menu of the line headers in the lower area of the query design to insert another line for functions:</paragraph>
 <bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_FUNCTION" id="bm_id3153275" localize="false"/><paragraph role="heading" id="hd_id3148419" xml-lang="en-US" level="3" l10n="U" oldref="151">Functions</paragraph>
-<paragraph role="paragraph" id="par_id3153233" xml-lang="en-US" l10n="CHG" oldref="152"><ahelp hid="HID_QRYDGN_ROW_FUNCTION" visibility="hidden">Select a function to run in the query here.</ahelp> The functions you can run here depend on the database. </paragraph>
+<paragraph role="paragraph" id="par_id3153233" xml-lang="en-US" l10n="CHG" oldref="152"><ahelp hid="HID_QRYDGN_ROW_FUNCTION" visibility="hidden">Select a function to run in the query here.</ahelp> The functions you can run here depend on the database.</paragraph>
 <paragraph role="paragraph" id="par_id8760818" xml-lang="en-US" l10n="CHG">If you are working with the HSQL database, the list box in the <emph>Function</emph> row offers you the following options:</paragraph>
 <table id="tbl_id3148461">
 <tablerow>
@@ -672,10 +672,10 @@
 <paragraph role="paragraph" id="par_id31559472" xml-lang="en-US" l10n="U" oldref="258">{D'HH:MM:SS'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31559473" xml-lang="en-US" l10n="U" oldref="264">{t 'HH:MI:SS[.SS]'} </paragraph>
+<paragraph role="paragraph" id="par_id31559473" xml-lang="en-US" l10n="U" oldref="264">{t 'HH:MI:SS[.SS]'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31559474" xml-lang="en-US" l10n="U" oldref="264">'HH:MI:SS[.SS]' </paragraph>
+<paragraph role="paragraph" id="par_id31559474" xml-lang="en-US" l10n="U" oldref="264">'HH:MI:SS[.SS]'</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -686,15 +686,15 @@
 <paragraph role="paragraph" id="par_id31509642" xml-lang="en-US" l10n="U" oldref="258">{D'YYYY-MM-DD HH:MM:SS'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31509643" xml-lang="en-US" l10n="U" oldref="264">{ts 'YYYY-MM-DD HH:MI:SS[.SS]'} </paragraph>
+<paragraph role="paragraph" id="par_id31509643" xml-lang="en-US" l10n="U" oldref="264">{ts 'YYYY-MM-DD HH:MI:SS[.SS]'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31509644" xml-lang="en-US" l10n="U" oldref="264">'YYYY-MM-DD HH:MI:SS[.SS]' </paragraph>
+<paragraph role="paragraph" id="par_id31509644" xml-lang="en-US" l10n="U" oldref="264">'YYYY-MM-DD HH:MI:SS[.SS]'</paragraph>
 </tablecell>
 </tablerow>
 </table>
 <paragraph role="paragraph" id="par_id3149539" xml-lang="en-US" l10n="U" oldref="267">Example: select {d '1999-12-31'} from world.years</paragraph>
-<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31' </paragraph>
+<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31'</paragraph>
 <paragraph role="paragraph" id="par_id3150510" xml-lang="en-US" l10n="U" oldref="112">All date expressions (literals) must be enclosed with single quotation marks. (Consult the reference for the particular database and connector you are using for more details.)</paragraph>
 <!--//kls end moved -->
 <paragraph role="heading" id="hd_id3150427" xml-lang="en-US" level="3" l10n="U" oldref="228">Querying Yes/No fields</paragraph>

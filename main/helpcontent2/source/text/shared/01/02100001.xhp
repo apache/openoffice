@@ -325,10 +325,10 @@ oldref="203"><variable id="02100001"><link href="text/shared/01/02100001.xhp">Li
 <paragraph xml-lang="en-US" id="par_id9568773" role="paragraph" l10n="NEW">You can combine the search terms to form complex searches.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id71413" role="heading" level="3" l10n="NEW">To find three-digit numbers alone in a paragraph</paragraph>
 <paragraph xml-lang="en-US" id="par_id2924283" role="code" l10n="NEW">^[:digit:]{3}$</paragraph>
-<paragraph xml-lang="en-US" id="par_id5781731" role="paragraph" l10n="NEW">^ means the match has to be at the start of a paragraph, </paragraph>
-<paragraph xml-lang="en-US" id="par_id6942045" role="paragraph" l10n="NEW">[:digit:] matches any decimal digit, </paragraph>
-<paragraph xml-lang="en-US" id="par_id4721823" role="paragraph" l10n="NEW">{3} means there must be exactly 3 copies of "digit", </paragraph>
-<paragraph xml-lang="en-US" id="par_id5806756" role="paragraph" l10n="NEW">$ means the match must end a paragraph. </paragraph>
+<paragraph xml-lang="en-US" id="par_id5781731" role="paragraph" l10n="NEW">^ means the match has to be at the start of a paragraph,</paragraph>
+<paragraph xml-lang="en-US" id="par_id6942045" role="paragraph" l10n="NEW">[:digit:] matches any decimal digit,</paragraph>
+<paragraph xml-lang="en-US" id="par_id4721823" role="paragraph" l10n="NEW">{3} means there must be exactly 3 copies of "digit",</paragraph>
+<paragraph xml-lang="en-US" id="par_id5806756" role="paragraph" l10n="NEW">$ means the match must end a paragraph.</paragraph>
 <section id="relatedtopics">
 <embed href="text/shared/01/02100000.xhp#02100000"/>
 <switch select="appl">
