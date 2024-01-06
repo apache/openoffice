@@ -90,7 +90,8 @@
 <paragraph role="code" id="par_id3150886" xml-lang="en-US" l10n="U" oldref="64">DIM VarName As TYPENAME</paragraph>
 <paragraph role="paragraph" id="par_id3150368" xml-lang="en-US" l10n="U" oldref="65">The variable is only valid in this module.</paragraph>
 <paragraph role="heading" id="hd_id5097506" xml-lang="en-US" level="3" l10n="NEW">Example for private variables</paragraph>
-<paragraph role="paragraph" id="par_id8738975" xml-lang="en-US" l10n="NEW">Enforce private variables to be private across modules by setting CompatibilityMode(true).</paragraph><comment>from i17948, see i54894</comment><paragraph role="code" id="par_id146488" xml-lang="en-US" l10n="NEW">REM ***** Module1 *****</paragraph>
+<paragraph role="paragraph" id="par_id8738975" xml-lang="en-US" l10n="NEW">Enforce private variables to be private across modules by setting CompatibilityMode(true).</paragraph><comment>from i17948, see i54894</comment>
+<paragraph role="code" id="par_id146488" xml-lang="en-US" l10n="NEW">REM ***** Module1 *****</paragraph>
 <paragraph role="code" id="par_id2042298" xml-lang="en-US" l10n="NEW">Private myText As String</paragraph>
 <paragraph role="code" id="par_id2969756" xml-lang="en-US" l10n="NEW">Sub initMyText</paragraph>
 <paragraph role="code" id="par_id9475997" xml-lang="en-US" l10n="NEW">myText = "Hello"</paragraph>

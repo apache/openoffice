@@ -55,13 +55,13 @@
 <paragraph xml-lang="en-US" id="hd_id3152425" role="heading" level="2" l10n="U" oldref="3">Search For</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155805" role="paragraph" l10n="U" oldref="4"><ahelp hid="SVX:LISTBOX:RID_SVXDLG_SEARCH:LB_SEARCH">Enter the text that you want to search for, or select a previous search from the list.</ahelp></paragraph>
 <!-- removed HID SVX:MULTILINEEDIT:RID_SVXDLG_SEARCH:ED_SEARCH_FORMATS -->
-<paragraph xml-lang="en-US" id="par_id3153683" role="paragraph" l10n="U" oldref="189"><ahelp hid="SVX:MULTILINEEDIT:RID_SVXDLG_SEARCH:ED_SEARCH_FORMATS">Search options are listed in the <emph>Options </emph>area of the dialog</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_id3153683" role="paragraph" l10n="U" oldref="189"><ahelp hid="SVX:MULTILINEEDIT:RID_SVXDLG_SEARCH:ED_SEARCH_FORMATS">Search options are listed in the <emph>Options</emph> area of the dialog</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svx:ComboBox:RID_SVXDLG_SEARCH:ED_REPLACE" id="bm_id3148621" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/svx:ListBox:RID_SVXDLG_SEARCH:LB_REPLACE" id="bm_id3149096" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152551" role="heading" level="2" l10n="U" oldref="5">Replace With</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156426" role="paragraph" l10n="U" oldref="6"><ahelp hid="SVX:LISTBOX:RID_SVXDLG_SEARCH:LB_REPLACE">Enter the replacement text, or select a recent replacement text or style from the list.</ahelp></paragraph>
 <!-- removed HID SVX:MULTILINEEDIT:RID_SVXDLG_SEARCH:ED_REPLACE_FORMATS -->
-<paragraph xml-lang="en-US" id="par_id3150506" role="paragraph" l10n="U" oldref="190"><ahelp hid="SVX:MULTILINEEDIT:RID_SVXDLG_SEARCH:ED_REPLACE_FORMATS">Replacement options are listed in the <emph>Options </emph>area of the dialog.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_id3150506" role="paragraph" l10n="U" oldref="190"><ahelp hid="SVX:MULTILINEEDIT:RID_SVXDLG_SEARCH:ED_REPLACE_FORMATS">Replacement options are listed in the <emph>Options</emph> area of the dialog.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3166410" role="heading" level="2" l10n="U" oldref="8">Options</paragraph>
 <!-- removed HID SVX:CHECKBOX:RID_SVXDLG_SEARCH:BTN_CELLS -->
 <bookmark xml-lang="en-US" branch="hid/svx:CheckBox:RID_SVXDLG_SEARCH:CB_WHOLE_WORDS" id="bm_id7736442" localize="false"/>
@@ -123,8 +123,8 @@ oldref="47">Current selection only</paragraph>
 <bookmark xml-lang="en-US" branch="hid/svx:CheckBox:RID_SVXDLG_SEARCH:CB_LAYOUTS" id="bm_id6146427" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153524" role="heading" level="2" l10n="CHG"
 oldref="49">Search for Styles / Including Styles</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155103" role="paragraph" l10n="CHG" oldref="50"><ahelp hid="SVX:CHECKBOX:RID_SVXDLG_SEARCH:BTN_LAYOUTS">Searches for text formatted with the style that you specify. Select this checkbox, and then select a style from the <emph>Search for </emph>list. To specify a replacement style, select a style from the <emph>Replace with</emph> list.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="par_idN109CC" role="note" l10n="NEW">After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options </emph>area of the %PRODUCTNAME Writer <emph>Find &amp; Replace </emph>dialog changes to <emph>Including Styles</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155103" role="paragraph" l10n="CHG" oldref="50"><ahelp hid="SVX:CHECKBOX:RID_SVXDLG_SEARCH:BTN_LAYOUTS">Searches for text formatted with the style that you specify. Select this checkbox, and then select a style from the <emph>Search for</emph> list. To specify a replacement style, select a style from the <emph>Replace with</emph> list.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_idN109CC" role="note" l10n="NEW">After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options</emph> area of the %PRODUCTNAME Writer <emph>Find &amp; Replace</emph> dialog changes to <emph>Including Styles</emph>.</paragraph>
 <paragraph xml-lang="en-US" id="par_idN109DF" role="note" l10n="NEW">If you want to search for text in which attributes were set by using direct formatting and styles, select the <emph>Including Styles</emph> box.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/svx:CheckBox:RID_SVXDLG_SEARCH:CB_NOTES" id="bm_id0302200901445934" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id0302200901464169" role="heading" level="3" l10n="NEW">Comments</paragraph>
@@ -196,12 +196,12 @@ oldref="193"><switchinline select="appl"><caseinline select="WRITER"><link href=
 <paragraph xml-lang="en-US" id="hd_id3154188" role="heading" level="2" l10n="U"
 oldref="135"><switchinline select="appl"><caseinline select="WRITER">No Format
 </caseinline></switchinline></paragraph>
-<paragraph xml-lang="en-US" id="par_id3159155" role="paragraph" l10n="CHG" oldref="136"><switchinline select="appl"><caseinline select="WRITER">Click in the <emph>Search for </emph>or the <emph>Replace with </emph>box, and then click this button to remove the search criteria based on formats.
+<paragraph xml-lang="en-US" id="par_id3159155" role="paragraph" l10n="CHG" oldref="136"><switchinline select="appl"><caseinline select="WRITER">Click in the <emph>Search for</emph> or the <emph>Replace with</emph> box, and then click this button to remove the search criteria based on formats.
 </caseinline></switchinline></paragraph>
 <paragraph xml-lang="en-US" id="par_id1334269" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Click in the Search for or the Replace with box, and then click this button to remove the search criteria based on formats.</ahelp></paragraph>
 <switch select="appl">
 <case select="WRITER">
-<paragraph xml-lang="en-US" id="par_id3150337" role="note" l10n="U" oldref="137">The search criteria for formatting attributes are displayed under the <emph>Search for </emph>or the <emph>Replace with </emph>box.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150337" role="note" l10n="U" oldref="137">The search criteria for formatting attributes are displayed under the <emph>Search for</emph> or the <emph>Replace with</emph> box.</paragraph>
 </case>
 </switch>
 <bookmark xml-lang="en-US" branch="hid/svx:MoreButton:RID_SVXDLG_SEARCH:BTN_MORE" id="bm_id7809076" localize="false"/><comment>More Options / Less Options / Fewer Options - name subject to change</comment>

@@ -38,7 +38,8 @@
 <bookmark_value>error codes in Basic</bookmark_value>
 <bookmark_value>breakpoints</bookmark_value>
 <bookmark_value>Call Stack window</bookmark_value>
-</bookmark><comment>mw deleted "Basic;"</comment><paragraph role="heading" id="hd_id3153344" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/01030300.xhp">Debugging a Basic Program</link></paragraph>
+</bookmark><comment>mw deleted "Basic;"</comment>
+<paragraph role="heading" id="hd_id3153344" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/01030300.xhp">Debugging a Basic Program</link></paragraph>
 </section>
 <paragraph role="heading" id="hd_id3159224" xml-lang="en-US" level="2" l10n="U" oldref="4">Breakpoints and Single Step Execution</paragraph>
 <paragraph role="paragraph" id="par_id3150682" xml-lang="en-US" l10n="U" oldref="5">You can check each line in your Basic program for errors using single step execution. Errors are easily traced since you can immediately see the result of each step. A pointer in the breakpoint column of the Editor indicates the current line. You can also set a breakpoint if you want to force the program to be interrupted at a specific position.</paragraph>
@@ -56,7 +57,8 @@
 <paragraph role="paragraph" id="par_id3153368" xml-lang="en-US" l10n="U" oldref="15">You can monitor the values of a variable by adding it to the <emph>Watch</emph> window. To add a variable to the list of watched variables, type the variable name in the <emph>Watch</emph> text box and press Enter.</paragraph>
 <paragraph role="paragraph" id="par_id3146986" xml-lang="en-US" l10n="U" oldref="16">The values of variables are only displayed if they are in scope. Variables that are not defined at the current source code location display ("Out of Scope") instead of a value.</paragraph>
 <paragraph role="paragraph" id="par_id3145272" xml-lang="en-US" l10n="U" oldref="17">You can also include arrays in the Watch window. If you enter the name of an array variable without an index value in the Watch text box, the content of the entire array is displayed.</paragraph>
-<paragraph role="tip" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="19">If you rest the mouse over a predefined variable in the Editor at run-time, the content of the variable is displayed in a pop-up box.</paragraph><comment>UFI: removed help id</comment><paragraph role="heading" id="hd_id3148618" xml-lang="en-US" level="2" l10n="U" oldref="20">The Call Stack Window</paragraph>
+<paragraph role="tip" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="19">If you rest the mouse over a predefined variable in the Editor at run-time, the content of the variable is displayed in a pop-up box.</paragraph><comment>UFI: removed help id</comment>
+<paragraph role="heading" id="hd_id3148618" xml-lang="en-US" level="2" l10n="U" oldref="20">The Call Stack Window</paragraph>
 <paragraph role="paragraph" id="par_id3154491" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="HID_BASICIDE_STACKWINDOW_LIST">Provides an overview of the call hierarchy of procedures and functions.</ahelp> You can determine which procedures and functions called which other procedures and functions at the current point in the source code.</paragraph>
 <paragraph role="heading" id="hd_id3150594" xml-lang="en-US" level="2" l10n="CHG" oldref="24">List of Run-Time Errors</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#allerrors"/>
