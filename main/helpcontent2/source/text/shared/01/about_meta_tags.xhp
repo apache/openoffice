@@ -29,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154380"><bookmark_value>importing; HTML with META tags</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154380">
+<bookmark_value>importing; HTML with META tags</bookmark_value>
 <bookmark_value>exporting; to HTML</bookmark_value>
 <bookmark_value>HTML; importing META tags</bookmark_value>
 <bookmark_value>HTML documents; META tags in</bookmark_value>
@@ -81,7 +82,7 @@
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="note" id="par_id3155855" xml-lang="en-US" l10n="U" oldref="22">When you import an HTML containing these META tags, the contents of the tags are added to the corresponding $[officename] file property box. </paragraph>
+<paragraph role="note" id="par_id3155855" xml-lang="en-US" l10n="U" oldref="22">When you import an HTML containing these META tags, the contents of the tags are added to the corresponding $[officename] file property box.</paragraph>
 <paragraph role="tip" id="par_id0926200812164481" xml-lang="en-US" l10n="NEW">Keywords must be separated by commas. A keyword can contain white space characters or semicolons.</paragraph>
 <paragraph role="heading" id="hd_id3163822" xml-lang="en-US" level="3" l10n="U" oldref="12">Import Tips</paragraph>
 <paragraph role="paragraph" id="par_id3155307" xml-lang="en-US" l10n="U" oldref="13">When you import an HTML document, following META tags are automatically converted to $[officename] fields: &lt;META HTTP-EQUIV="REFRESH"...&gt; and &lt;META NAME="..." ...&gt; , where NAME equals to AUTHOR, CREATED, CHANGED, CHANGEDBY, DESCRIPTION, KEYWORDS or CLASSIFICATION.</paragraph>

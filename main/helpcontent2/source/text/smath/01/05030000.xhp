@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-
-
-
-
 
 <helpdocument version="1.0">
 <meta>
@@ -34,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154658"><bookmark_value>spacing; formula elements</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154658">
+<bookmark_value>spacing; formula elements</bookmark_value>
 <bookmark_value>formulas;element spacing</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:ChangeDistance" id="bm_id3150346" localize="false"/>
@@ -42,7 +38,7 @@
 <paragraph role="paragraph" id="par_id3153818" xml-lang="en-US" l10n="U" oldref="2"><variable id="abstaendetext"><ahelp hid="SID_DISTANCE">Use this dialog to determine the spacing between formula elements. The spacing is specified as a percentage in relation to the base size defined under <emph>Format - Font Size</emph>.</ahelp>
 </variable></paragraph>
 <section id="howtoget">
-  <embed href="text/smath/00/00000004.xhp#fmtabs"/>
+<embed href="text/smath/00/00000004.xhp#fmtabs"/>
 </section>
 <paragraph role="paragraph" id="par_id3143228" xml-lang="en-US" l10n="U" oldref="3">Use the <emph>Category</emph> button to determine the formula element for which you would like to specify the spacing. The appearance of the dialog depends on the selected category. A preview window shows you which spacing is modified through the respective boxes.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/starmath:MenuButton:RID_DISTANCEDIALOG:1" id="bm_id3153811" localize="false"/>

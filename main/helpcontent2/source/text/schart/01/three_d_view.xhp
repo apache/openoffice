@@ -42,10 +42,10 @@
 <embed href="text/schart/00/00000004.xhp#wiz"/>
 </section>
 <embed href="text/shared/00/00000001.xhp#ShiftF1"/>
-<paragraph xml-lang="en-US" id="par_id6942045" role="paragraph" l10n="NEW">The chart preview responds to the new settings that you enter in the dialog. </paragraph>
+<paragraph xml-lang="en-US" id="par_id6942045" role="paragraph" l10n="NEW">The chart preview responds to the new settings that you enter in the dialog.</paragraph>
 <list type="unordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3806878" role="paragraph" l10n="NEW">When you leave the dialog with OK, the settings are applied permanently. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3806878" role="paragraph" l10n="NEW">When you leave the dialog with OK, the settings are applied permanently.</paragraph>
 </listitem>
 <listitem>
 <paragraph xml-lang="en-US" id="par_id130619" role="paragraph" l10n="NEW">When you leave the dialog with Cancel or Escape, the chart returns to the state when you opened the dialog.</paragraph>
@@ -64,7 +64,7 @@
 <paragraph xml-lang="en-US" id="par_id7869502" role="paragraph" l10n="NEW">The rotations are applied in the order first x, then y, last z.</paragraph>
 <paragraph xml-lang="en-US" id="par_id9852900" role="paragraph" l10n="NEW">When shading is enabled and you rotate a chart, the lights are rotated as if they are fixed to the chart.</paragraph>
 <paragraph xml-lang="en-US" id="par_id2578203" role="note" l10n="NEW">The rotation axes always relate to the page, not to the chart's axes. This is different from some other chart programs.</paragraph>
-<paragraph xml-lang="en-US" id="par_id4923245" role="paragraph" l10n="NEW">Select the Perspective check box to view the chart in central perspective as through a camera lens instead of using a parallel projection. </paragraph>
+<paragraph xml-lang="en-US" id="par_id4923245" role="paragraph" l10n="NEW">Select the Perspective check box to view the chart in central perspective as through a camera lens instead of using a parallel projection.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3416547" role="paragraph" l10n="NEW">Set the focus length with the spin button. 100% gives a perspective view where a far edge in the chart looks approximately half as big as a near edge.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3791924" role="note" l10n="NEW">Older versions of %PRODUCTNAME cannot display the percentage of perspective the same way as the current version.</paragraph><comment>Right-angled axes</comment>
 <bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_3D_SCENEGEOMETRY:CBX_RIGHT_ANGLED_AXES" id="bm_id5293740" localize="false"/>
@@ -90,8 +90,8 @@
 <paragraph xml-lang="en-US" id="par_id7141026" role="paragraph" l10n="NEW">If you mark or unmark a combination of check boxes that is not given by the Realistic or Simple scheme, you create a Custom scheme.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id1579027" role="paragraph" l10n="NEW">Mark <emph>Shading</emph> to use the Gouraud method for rendering the surface, otherwise a flat method is used. </paragraph>
-<paragraph xml-lang="en-US" id="par_id5624561" role="paragraph" l10n="NEW">The flat method sets a single color and brightness for each polygon. The edges are visible, soft gradients and spot lights are not possible. </paragraph>
+<paragraph xml-lang="en-US" id="par_id1579027" role="paragraph" l10n="NEW">Mark <emph>Shading</emph> to use the Gouraud method for rendering the surface, otherwise a flat method is used.</paragraph>
+<paragraph xml-lang="en-US" id="par_id5624561" role="paragraph" l10n="NEW">The flat method sets a single color and brightness for each polygon. The edges are visible, soft gradients and spot lights are not possible.</paragraph>
 <paragraph xml-lang="en-US" id="par_id5901058" role="paragraph" l10n="NEW">The Gouraud method applies gradients for a smoother, more realistic look.<comment>Regina: Need an external article on web, which describes the 3D engine in detail. Till that, the user should get some information on Gouraud and Flat.</comment></paragraph>
 </listitem>
 </list>

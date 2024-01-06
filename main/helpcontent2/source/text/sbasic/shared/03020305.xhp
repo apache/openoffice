@@ -41,9 +41,9 @@
 <paragraph role="code" id="par_id3145273" xml-lang="en-US" l10n="CHG" oldref="7">Seek[#FileNumber], Position (As Long)</paragraph>
 <paragraph role="heading" id="hd_id3154321" xml-lang="en-US" level="2" l10n="U" oldref="8">Parameters:</paragraph>
 <paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="CHG" oldref="9">
-<emph>FileNumber: </emph>The data channel number used in the Open statement.</paragraph>
+<emph>FileNumber:</emph> The data channel number used in the Open statement.</paragraph>
 <paragraph role="paragraph" id="par_id3145366" xml-lang="en-US" l10n="U" oldref="10">
-<emph>Position: </emph>Position for the next writing or reading. Position can be a number between 1 and 2,147,483,647. According to the file type, the position indicates the number of the record (files in the Random mode) or the byte position (files in the Binary, Output, Append or Input mode). The first byte in a file is position 1, the second byte is position 2, and so on.</paragraph>
+<emph>Position:</emph> Position for the next writing or reading. Position can be a number between 1 and 2,147,483,647. According to the file type, the position indicates the number of the record (files in the Random mode) or the byte position (files in the Binary, Output, Append or Input mode). The first byte in a file is position 1, the second byte is position 2, and so on.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
 <embed href="text/sbasic/shared/00000003.xhp#err52"/>

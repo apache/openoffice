@@ -29,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147834"><bookmark_value>opening; documents</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147834">
+<bookmark_value>opening; documents</bookmark_value>
 <bookmark_value>documents; opening</bookmark_value>
 <bookmark_value>files; opening</bookmark_value>
 <bookmark_value>loading; documents</bookmark_value>
@@ -52,7 +53,7 @@
 <paragraph role="listitem" id="par_idN107A9" xml-lang="en-US" l10n="NEW">Choose <item type="menuitem">File - Open</item>
 </paragraph>
 <paragraph role="listitem" id="par_idN107AF" xml-lang="en-US" l10n="NEW">Click the <emph>Open</emph> icon on the Standard toolbar</paragraph>
-<paragraph role="listitem" id="par_idN107B2" xml-lang="en-US" l10n="NEW">Press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+O </paragraph>
+<paragraph role="listitem" id="par_idN107B2" xml-lang="en-US" l10n="NEW">Press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+O</paragraph>
 <paragraph role="listitem" id="par_id3150275" xml-lang="en-US" l10n="U" oldref="3">The <link href="text/shared/01/01020000.xhp" name="Open">Open</link> dialog appears.</paragraph>
 </listitem>
 <listitem>
@@ -81,7 +82,7 @@
 </list>
 <paragraph role="paragraph" id="par_id0820200803501449" xml-lang="en-US" l10n="NEW">The %PRODUCTNAME dialogs support file download and upload using secure https connections.</paragraph>
 <paragraph role="heading" id="hd_id0820200803501453" xml-lang="en-US" level="2" l10n="NEW">Opening Files from a Web Server</paragraph>
-<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="CHG" oldref="9">You can enter a URL in the <emph>File name</emph> box of the <emph>Open</emph> dialogs. The URL must start with file:/// or ftp:// or http://. </paragraph>
+<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="CHG" oldref="9">You can enter a URL in the <emph>File name</emph> box of the <emph>Open</emph> dialogs. The URL must start with file:/// or ftp:// or http://.</paragraph>
 <paragraph role="paragraph" id="par_id0820200803501548" xml-lang="en-US" l10n="NEW">If you use the %PRODUCTNAME dialog, you can use the https:// prefix for a secure connection, and you can save a document on the web server.</paragraph>
 <switch select="sys">
 <case select="WIN">

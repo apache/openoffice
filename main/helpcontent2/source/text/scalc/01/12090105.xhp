@@ -30,7 +30,8 @@
 </meta>
 <body>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_PIVOTSUBT" id="bm_id3153194" localize="false"/>
-<bookmark xml-lang="en-US" branch="index" id="bm_id7292397"><bookmark_value>calculating;pivot table</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id7292397">
+<bookmark_value>calculating;pivot table</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3150871" xml-lang="en-US" level="1" l10n="U" oldref="1">Data field</paragraph>
 <paragraph role="paragraph" id="par_id3154124" xml-lang="en-US" l10n="U" oldref="16">The contents of this dialog is different for data fields in the <emph>Data</emph> area, and data fields in the <emph>Row</emph> or <emph>Column</emph> area of the <link href="text/scalc/01/12090102.xhp" name="Pivot table">Pivot Table</link> dialog.</paragraph>
@@ -104,7 +105,7 @@
 <paragraph role="tablecontent" id="par_idN1075B" xml-lang="en-US" l10n="NEW">% Of</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_idN10761" xml-lang="en-US" l10n="NEW">Each result is divided by its reference value. The reference value is determined in the same way as for "Difference from". Totals outside of the base field are shown as empty results. </paragraph>
+<paragraph role="tablecontent" id="par_idN10761" xml-lang="en-US" l10n="NEW">Each result is divided by its reference value. The reference value is determined in the same way as for "Difference from". Totals outside of the base field are shown as empty results.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -129,7 +130,7 @@
 <paragraph role="tablecontent" id="par_idN10787" xml-lang="en-US" l10n="NEW">% of row</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_idN1078D" xml-lang="en-US" l10n="NEW">Each result is divided by the total result for its row in the pivot table. If there are several data fields, the total for the result's data field is used. If there are subtotals with manually selected summary functions, the total with the data field's summary function is still used. </paragraph>
+<paragraph role="tablecontent" id="par_idN1078D" xml-lang="en-US" l10n="NEW">Each result is divided by the total result for its row in the pivot table. If there are several data fields, the total for the result's data field is used. If there are subtotals with manually selected summary functions, the total with the data field's summary function is still used.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>

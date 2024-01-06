@@ -30,7 +30,8 @@
 </meta>
 <body>
 <section id="findobject">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145136"><bookmark_value>FindObject function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145136">
+<bookmark_value>FindObject function</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3145136" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03103800.xhp" name="FindObject Function [Runtime]">FindObject Function [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_id3155341" xml-lang="en-US" l10n="U" oldref="2">Enables an object to be addressed at run-time as a string parameter through the object name.</paragraph>
@@ -52,7 +53,7 @@
 <paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U" oldref="17">FindObject( ObjName As String )</paragraph>
 <paragraph role="heading" id="hd_id3159254" xml-lang="en-US" level="2" l10n="U" oldref="18">Parameters:</paragraph>
 <paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="19">
-<emph>ObjName: </emph>String that specifies the name of the object that you want to address at run-time.</paragraph>
+<emph>ObjName:</emph> String that specifies the name of the object that you want to address at run-time.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
 <embed href="text/sbasic/shared/00000003.xhp#err12"/>

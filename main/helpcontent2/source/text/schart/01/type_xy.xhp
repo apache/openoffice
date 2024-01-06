@@ -29,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id84231"><bookmark_value>scatter charts</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id84231">
+<bookmark_value>scatter charts</bookmark_value>
 <bookmark_value>XY charts</bookmark_value>
 <bookmark_value>chart types;XY (scatter)</bookmark_value>
 <bookmark_value>error indicators in charts</bookmark_value>
@@ -41,7 +42,7 @@
 </bookmark><comment>mw changed xy to XY (2x)</comment>
 <paragraph role="heading" id="hd_id9346598" xml-lang="en-US" level="1" l10n="NEW"><variable id="type_xy"><link href="text/schart/01/type_xy.xhp">Chart Type XY (Scatter)</link>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id2003845" xml-lang="en-US" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type. </paragraph>
+<paragraph role="paragraph" id="par_id2003845" xml-lang="en-US" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type.</paragraph>
 <section id="howtoget">
 <embed href="text/schart/00/00000004.xhp#wiz"/>
 </section>
@@ -70,9 +71,9 @@
 <paragraph role="paragraph" id="par_id0805200810492449" xml-lang="en-US" l10n="NEW">For 2D charts, you can choose <item type="menuitem">Insert - Y Error Bars</item> to enable the display of error bars.</paragraph>
 <paragraph role="paragraph" id="par_id6221198" xml-lang="en-US" l10n="NEW">You can enable the display of mean value lines and trend lines using commands on the Insert menu.</paragraph>
 <paragraph role="heading" id="hd_id1393475" xml-lang="en-US" level="3" l10n="NEW">Points only</paragraph>
-<paragraph role="paragraph" id="par_id6571550" xml-lang="en-US" l10n="NEW">Each data point is shown by an icon. %PRODUCTNAME uses default icons with different forms and colors for each data series. The default colors are set in <item type="menuitem"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Charts - Default Colors</item>. </paragraph>
+<paragraph role="paragraph" id="par_id6571550" xml-lang="en-US" l10n="NEW">Each data point is shown by an icon. %PRODUCTNAME uses default icons with different forms and colors for each data series. The default colors are set in <item type="menuitem"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Charts - Default Colors</item>.</paragraph>
 <paragraph role="heading" id="hd_id5376140" xml-lang="en-US" level="3" l10n="NEW">Lines Only</paragraph>
-<paragraph role="paragraph" id="par_id4408093" xml-lang="en-US" l10n="NEW">This variant draws straight lines from one data point to the next. The data points are not shown by icons. </paragraph>
+<paragraph role="paragraph" id="par_id4408093" xml-lang="en-US" l10n="NEW">This variant draws straight lines from one data point to the next. The data points are not shown by icons.</paragraph>
 <paragraph role="paragraph" id="par_id7261268" xml-lang="en-US" l10n="NEW">The drawing order is the same as the order in the data series. Mark <emph>Sort by X Values</emph> to draw the lines in the order of the x values. This sorting applies only to the chart, not to the data in the table.</paragraph>
 <paragraph role="heading" id="hd_id6949369" xml-lang="en-US" level="3" l10n="NEW">Points and Lines</paragraph>
 <paragraph role="paragraph" id="par_id9611499" xml-lang="en-US" l10n="NEW">This variant shows points and lines at the same time.</paragraph>
@@ -82,7 +83,7 @@
 <paragraph role="paragraph" id="par_id7957396" xml-lang="en-US" l10n="CHG">Mark <emph>Smooth Lines</emph> to draw curves instead of straight line segments.<comment>i80587</comment></paragraph>
 <paragraph role="paragraph" id="par_id1202124" xml-lang="en-US" l10n="NEW">Click <emph>Properties</emph> to set details for the curves.</paragraph>
 <paragraph role="paragraph" id="par_id5989562" xml-lang="en-US" l10n="NEW">
-<emph>Cubic Spline</emph> interpolates your data points with polynomials of degree 3. The transitions between the polynomial pieces are smooth, having the same slope and curvature. </paragraph>
+<emph>Cubic Spline</emph> interpolates your data points with polynomials of degree 3. The transitions between the polynomial pieces are smooth, having the same slope and curvature.</paragraph>
 <paragraph role="paragraph" id="par_id6128421" xml-lang="en-US" l10n="NEW">The <emph>Resolution</emph> determines how many line segments are calculated to draw a piece of polynomial between two data points. You can see the intermediate points if you click any data point.</paragraph>
 <paragraph role="paragraph" id="par_id9280373" xml-lang="en-US" l10n="NEW">
 <emph>B-Spline</emph> uses the data points as control points to form a B-spline curve. Those curves are built piecewise from polynomials. The <emph>Data points order</emph> sets the degree k of these polynomials. <comment>Besides the first and last point the curve doesn't go through the data points but lays inside the convex hull of each k+1 adjacent data points. Having Resolution r and n+1 data points, r times n uniform line segments are used to draw the whole curve.</comment></paragraph><comment>Regina: watch issue 72218, which would bring a change to UI</comment>

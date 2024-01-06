@@ -30,7 +30,8 @@
 </meta>
 <body>
 <section id="formatierungen">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153150"><bookmark_value>formatting;in $[officename] Math</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153150">
+<bookmark_value>formatting;in $[officename] Math</bookmark_value>
 <bookmark_value>$[officename] Math; formatting</bookmark_value>
 <bookmark_value>superscripts</bookmark_value>
 <bookmark_value>binomials</bookmark_value>
@@ -55,7 +56,8 @@
 <bookmark_value>aligning formulas</bookmark_value>
 </bookmark><comment>mw added two index entries about formula alignement and made "formatting.." a two level entry</comment>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_FORMAT_TBX" id="bm_id3149290" localize="false"/>
-<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_FORMAT_CAT" id="bm_id3149294" localize="false"/><paragraph role="heading" id="hd_id3153150" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03090700.xhp" name="Format">Format</link></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_FORMAT_CAT" id="bm_id3149294" localize="false"/>
+<paragraph role="heading" id="hd_id3153150" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03090700.xhp" name="Format">Format</link></paragraph>
 <paragraph role="paragraph" id="par_id3147262" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SMA_FORMAT_CAT">You can choose among various options for formatting a $[officename] Math formula. The format options are displayed in the lower half of the Formula Elements window.</ahelp> These options are also listed in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window.</paragraph>
 </section>
 <section id="howtoget">
@@ -259,7 +261,7 @@
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="paragraph" id="par_id3155394" xml-lang="en-US" l10n="U" oldref="48">For alignment, the <emph>alignl, alignc</emph> and <emph>alignr</emph> commands are especially effective, if you are </paragraph>
+<paragraph role="paragraph" id="par_id3155394" xml-lang="en-US" l10n="U" oldref="48">For alignment, the <emph>alignl, alignc</emph> and <emph>alignr</emph> commands are especially effective, if you are</paragraph>
 <list type="unordered">
 <listitem>
 <paragraph role="paragraph" id="par_id3151009" xml-lang="en-US" l10n="CHG" oldref="49">aligning numerators and denominators, for example <emph>{alignl a}over{b+c}</emph>

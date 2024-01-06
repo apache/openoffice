@@ -29,9 +29,11 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3726920"><bookmark_value>JDBC; databases (Base)</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3726920">
+<bookmark_value>JDBC; databases (Base)</bookmark_value>
 <bookmark_value>databases; JDBC (Base)</bookmark_value>
-</bookmark><comment>mw copied 2 index entries from shared/explorer/database/11110000.xhp</comment><paragraph role="heading" id="par_idN105FC" xml-lang="en-US" level="1" l10n="NEW"><variable id="jdbc"><link href="text/shared/explorer/database/dabawiz02jdbc.xhp">JDBC Connection</link>
+</bookmark><comment>mw copied 2 index entries from shared/explorer/database/11110000.xhp</comment>
+<paragraph role="heading" id="par_idN105FC" xml-lang="en-US" level="1" l10n="NEW"><variable id="jdbc"><link href="text/shared/explorer/database/dabawiz02jdbc.xhp">JDBC Connection</link>
 </variable></paragraph>
 <paragraph role="paragraph" id="par_idN10600" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the options to access a <link href="text/shared/00/00000005.xhp#jdbc" name="JDBC">JDBC</link> database.</ahelp><comment>copied text from shared\explorer\database\11110000</comment></paragraph>
 <paragraph role="heading" id="par_idN10623" xml-lang="en-US" level="2" l10n="NEW">JDBC Examples</paragraph>
@@ -45,7 +47,7 @@
 <paragraph role="paragraph" id="par_idN1064E" xml-lang="en-US" l10n="NEW">http://otn.oracle.com/tech/java/sqlj_jdbc/content.html</paragraph>
 </case>
 </switch>
-<paragraph role="paragraph" id="par_idN10661" xml-lang="en-US" l10n="NEW">In the <emph>Data source URL</emph> box, enter the location of the Oracle database server. The syntax of the URL depends on the database type. See the documentation that came with the JDBC driver for more information. </paragraph>
+<paragraph role="paragraph" id="par_idN10661" xml-lang="en-US" l10n="NEW">In the <emph>Data source URL</emph> box, enter the location of the Oracle database server. The syntax of the URL depends on the database type. See the documentation that came with the JDBC driver for more information.</paragraph>
 <paragraph role="paragraph" id="par_idN10668" xml-lang="en-US" l10n="NEW">For an Oracle database, the syntax of the URL is:</paragraph>
 <paragraph role="example" id="par_idN1066B" xml-lang="en-US" l10n="NEW">oracle:thin:@hostname:port:database_name</paragraph>
 <list type="unordered">

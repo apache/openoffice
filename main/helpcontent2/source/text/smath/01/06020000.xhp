@@ -30,8 +30,12 @@
 </meta>
 <body>
 <section id="importfile">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154659"><bookmark_value>importing; %PRODUCTNAME Math formulas</bookmark_value></bookmark>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154660"><bookmark_value>MathML; import from file</bookmark_value></bookmark>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154659">
+<bookmark_value>importing; %PRODUCTNAME Math formulas</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154660">
+<bookmark_value>MathML; import from file</bookmark_value>
+</bookmark>
 <bookmark branch="hid/.uno:ImportFormula" xml-lang="en-US" id="bm_id3150346"/>
 <paragraph role="heading" level="1" id="hd_id3154659" xml-lang="en-US">Import Formula from File</paragraph>
 <paragraph role="paragraph" id="par_id3150251" xml-lang="en-US"><variable id="formelimportierentext"><ahelp hid=".uno:ImportFormula" visibility="visible">This command opens a dialog for importing a formula.</ahelp></variable></paragraph>
@@ -42,8 +46,12 @@
 </section>
 </section>
 <section id="importclipboard">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154661"><bookmark_value>MathML; import via clipboard</bookmark_value></bookmark>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154662"><bookmark_value>importing; MathML</bookmark_value></bookmark>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154661">
+<bookmark_value>MathML; import via clipboard</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154662">
+<bookmark_value>importing; MathML</bookmark_value>
+</bookmark>
 <bookmark branch="hid/.uno:ImportMathMLClipboard" xml-lang="en-US" id="bm_id3150347"/>
 <paragraph role="heading" level="1" id="hd_id3154661" xml-lang="en-US">Import MathML from Clipboard</paragraph>
 <paragraph role="paragraph" id="par_id3150252" xml-lang="en-US"><variable id="mathmlimportierentext"><ahelp hid=".uno:ImportMathMLClipboard" visibility="visible">This command transforms MathML clipboard content to StarMath and inserts it at the current cursor position.</ahelp></variable></paragraph>

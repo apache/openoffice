@@ -111,10 +111,10 @@
 <paragraph role="listitem" id="par_id3149456" xml-lang="en-US" l10n="CHG" oldref="23">Some functions/formulas (see below)</paragraph>
 </listitem>
 </list>
-<paragraph role="paragraph" id="par_id0811200801491971" xml-lang="en-US" l10n="NEW">One example of differences between Calc and Excel is the handling of boolean values. Enter TRUE to cells A1 and A2. </paragraph>
+<paragraph role="paragraph" id="par_id0811200801491971" xml-lang="en-US" l10n="NEW">One example of differences between Calc and Excel is the handling of boolean values. Enter TRUE to cells A1 and A2.</paragraph>
 <list type="unordered">
 <listitem>
-<paragraph role="paragraph" id="par_id0811200801491973" xml-lang="en-US" l10n="NEW">In Calc, the formula =A1+A2 returns the value 2, and the formula =SUM(A1;A2) returns 2. </paragraph>
+<paragraph role="paragraph" id="par_id0811200801491973" xml-lang="en-US" l10n="NEW">In Calc, the formula =A1+A2 returns the value 2, and the formula =SUM(A1;A2) returns 2.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id0811200801491972" xml-lang="en-US" l10n="NEW">In Excel, the formula =A1+A2 returns 2, but the formula =SUM(A1,A2) returns 0.<comment>in SUM(A1&lt;limiter&gt;A2), use the Excel limiter comma , in English and semicolon ; in German</comment></paragraph>

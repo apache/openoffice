@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-
 
 <!--***********************************************************
  *
@@ -23,8 +21,7 @@
  *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060184xml" indexer="include">
 <title xml-lang="en-US" id="tit">Statistical Functions Part Four</title>
@@ -36,7 +33,8 @@
 </variable></paragraph>
 <sort order="asc">
 <section id="max">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154511"><bookmark_value>MAX function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154511">
+<bookmark_value>MAX function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MAX" id="bm_id3146972" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154511" role="heading" level="2" l10n="U" oldref="2">MAX</paragraph>
@@ -44,7 +42,7 @@
 <paragraph xml-lang="en-US" id="par_id9282509" role="paragraph" l10n="NEW">Returns 0 if no numeric value and no error was encountered in the cell range(s) passed as cell reference(s). Text cells are ignored by MIN() and MAX(). The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered. Passing a literal string argument to MIN() or MAX(), e.g. MIN("string"), still results in an error.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3154256" role="heading" level="3" l10n="U" oldref="4">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147340" role="code" l10n="U" oldref="5">MAX(Number1; Number2; ...Number30)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149568" role="paragraph" l10n="CHG" oldref="6"><emph>Number1; Number2;...Number30</emph> are numerical values or ranges. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3149568" role="paragraph" l10n="CHG" oldref="6"><emph>Number1; Number2;...Number30</emph> are numerical values or ranges.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3153963" role="heading" level="3" l10n="U" oldref="7">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147343" role="paragraph" l10n="U" oldref="8">
 <item type="input">=MAX(A1;A2;A3;50;100;200)</item> returns the largest value from the list.</paragraph>
@@ -52,7 +50,8 @@
 <item type="input">=MAX(A1:B100)</item> returns the largest value from the list.</paragraph>
 </section>
 <section id="maxa">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3166426"><bookmark_value>MAXA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3166426">
+<bookmark_value>MAXA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MAXA" id="bm_id3150304" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3166426" role="heading" level="2" l10n="U"
@@ -71,7 +70,8 @@ oldref="144">Example</paragraph>
 <item type="input">=MAXA(A1:B100)</item> returns the largest value from the list.</paragraph>
 </section>
 <section id="median">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153820"><bookmark_value>MEDIAN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153820">
+<bookmark_value>MEDIAN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MEDIAN" id="bm_id3153069" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153820" role="heading" level="2" l10n="U"
@@ -87,7 +87,8 @@ oldref="16">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149126" role="paragraph" l10n="U" oldref="165">for an even number: <item type="input">=MEDIAN(1;5;9;20)</item> returns the average of the two middle values 5 and 9, thus 7.</paragraph>
 </section>
 <section id="min">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154541"><bookmark_value>MIN function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154541">
+<bookmark_value>MIN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MIN" id="bm_id3159226" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154541" role="heading" level="2" l10n="U"
@@ -104,7 +105,8 @@ oldref="24">Example</paragraph>
 <item type="input">=MIN(A1:B100)</item> returns the smallest value in the list.</paragraph>
 </section>
 <section id="mina">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147504"><bookmark_value>MINA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147504">
+<bookmark_value>MINA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MINA" id="bm_id3155752" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3147504" role="heading" level="2" l10n="U"
@@ -123,7 +125,8 @@ oldref="153">Example</paragraph>
 <item type="input">=MINA(A1:B100)</item> returns the smallest value in the list.</paragraph>
 </section>
 <section id="avedev">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3166465"><bookmark_value>AVEDEV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3166465">
+<bookmark_value>AVEDEV function</bookmark_value>
 <bookmark_value>averages;statistical functions</bookmark_value>
 </bookmark><comment>mw added "averages;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELABW" id="bm_id3156396" localize="false"/>
@@ -138,7 +141,8 @@ oldref="153">Example</paragraph>
 </paragraph>
 </section>
 <section id="average">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145824"><bookmark_value>AVERAGE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145824">
+<bookmark_value>AVERAGE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELWERT" id="bm_id3146878" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3145824" role="heading" level="2" l10n="U"
@@ -155,7 +159,8 @@ oldref="40">Example</paragraph>
 </paragraph>
 </section>
 <section id="averagea">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148754"><bookmark_value>AVERAGEA function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148754">
+<bookmark_value>AVERAGEA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELWERTA" id="bm_id3149690" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148754" role="heading" level="2" l10n="U"
@@ -172,7 +177,8 @@ oldref="162">Example</paragraph>
 </paragraph>
 </section>
 <section id="averageif">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148754K1"><bookmark_value>AVERAGEIF function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148754K1">
+<bookmark_value>AVERAGEIF function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELWERTB" id="bm_id3149690K1" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148754K1" role="heading" level="2" l10n="U"
@@ -190,7 +196,8 @@ oldref="162">Examples</paragraph>
 </paragraph>
 </section>
 <section id="averageifs">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148754K2"><bookmark_value>AVERAGEIFS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148754K2">
+<bookmark_value>AVERAGEIFS function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELWERTC" id="bm_id3149690K2" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148754K2" role="heading" level="2" l10n="U"
@@ -208,7 +215,8 @@ oldref="162">Example</paragraph>
 </paragraph>
 </section>
 <section id="mode">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153933"><bookmark_value>MODE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153933">
+<bookmark_value>MODE function</bookmark_value>
 <bookmark_value>most common value</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MODALWERT" id="bm_id3149253" localize="false"/>
@@ -226,7 +234,8 @@ oldref="48">Example</paragraph>
 </paragraph>
 </section>
 <section id="negbinomdist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149879"><bookmark_value>NEGBINOMDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149879">
+<bookmark_value>NEGBINOMDIST function</bookmark_value>
 <bookmark_value>negative binomial distribution</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_NEGBINOMVERT" id="bm_id3159135" localize="false"/>
@@ -245,7 +254,8 @@ oldref="58">Example</paragraph>
 <item type="input">=NEGBINOMDIST(1;1;0.5)</item> returns 0.25.</paragraph>
 </section>
 <section id="norminv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155516"><bookmark_value>NORMINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155516">
+<bookmark_value>NORMINV function</bookmark_value>
 <bookmark_value>normal distribution;inverse of</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_NORMINV" id="bm_id3149396" localize="false"/>
@@ -264,7 +274,8 @@ oldref="68">Example</paragraph>
 <item type="input">=NORMINV(0.9;63;5)</item> returns 69.41. If the average egg weighs 63 grams with a standard deviation of 5, then there will be 90% probability that the egg will not be heavier than 69.41 grams.</paragraph>
 </section>
 <section id="normdist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153722"><bookmark_value>NORMDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153722">
+<bookmark_value>NORMDIST function</bookmark_value>
 <bookmark_value>density function</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_NORMVERT" id="bm_id3147484" localize="false"/>
@@ -286,7 +297,8 @@ oldref="79">Example</paragraph>
 <item type="input">=NORMDIST(70;63;5;1)</item> returns 0.92.</paragraph>
 </section>
 <section id="pearson">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152934"><bookmark_value>PEARSON function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152934">
+<bookmark_value>PEARSON function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_PEARSON" id="bm_id3156103" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152934" role="heading" level="2" l10n="U"
@@ -303,7 +315,8 @@ oldref="89">Example</paragraph>
 <item type="input">=PEARSON(A1:A30;B1:B30)</item> returns the Pearson correlation coefficient of both data sets.</paragraph>
 </section>
 <section id="phi">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152806"><bookmark_value>PHI function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152806">
+<bookmark_value>PHI function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_PHI" id="bm_id3153757" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152806" role="heading" level="2" l10n="U"
@@ -323,7 +336,8 @@ oldref="97">Example</paragraph>
 <item type="input">=PHI(0)</item> = 0.4</paragraph>
 </section>
 <section id="poisson">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153985"><bookmark_value>POISSON function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153985">
+<bookmark_value>POISSON function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_POISSON" id="bm_id3156011" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153985" role="heading" level="2" oldref="102">POISSON</paragraph>
@@ -340,7 +354,8 @@ oldref="109">Example</paragraph>
 <item type="input">=POISSON(60;50;1)</item> returns 0.93.</paragraph>
 </section>
 <section id="percentile">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153100"><bookmark_value>PERCENTILE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153100">
+<bookmark_value>PERCENTILE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_QUANTIL" id="bm_id3155394" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153100" role="heading" level="2" l10n="U"
@@ -357,7 +372,8 @@ oldref="118">Example</paragraph>
 <item type="input">=PERCENTILE(A1:A50;0.1)</item> represents the value in the data set, which equals 10% of the total data scale in A1:A50.</paragraph>
 </section>
 <section id="percentrank">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148807"><bookmark_value>PERCENTRANK function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148807">
+<bookmark_value>PERCENTRANK function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_QUANTILSRANG" id="bm_id3154902" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148807" role="heading" level="2" l10n="U"
@@ -374,7 +390,8 @@ oldref="127">Example</paragraph>
 <item type="input">=PERCENTRANK(A1:A50;50)</item> returns the percentage rank of the value 50 from the total range of all values found in A1:A50. If 50 falls outside the total range, an error message will appear.</paragraph>
 </section>
 <section id="quartile">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3166442"><bookmark_value>QUARTILE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3166442">
+<bookmark_value>QUARTILE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_QUARTILE" id="bm_id3150709" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3166442" role="heading" level="2" l10n="U"

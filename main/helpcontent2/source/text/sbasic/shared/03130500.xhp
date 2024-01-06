@@ -30,13 +30,14 @@
 </meta>
 <body>
 <section id="shell">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150040"><bookmark_value>Shell function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150040">
+<bookmark_value>Shell function</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3150040" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03130500.xhp" name="Shell Function [Runtime]">Shell Function [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="U" oldref="2">Starts another application and defines the respective window style, if necessary.</paragraph>
 </section>
 <paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax</paragraph>
-<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="5">Shell (Pathname As String[, Windowstyle As Integer][, Param As String][, bSync]) </paragraph>
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="5">Shell (Pathname As String[, Windowstyle As Integer][, Param As String][, bSync])</paragraph>
 <paragraph role="heading" id="hd_id3149235" xml-lang="en-US" level="2" l10n="U" oldref="6">Parameter</paragraph>
 <paragraph role="heading" id="hd_id3154306" xml-lang="en-US" level="3" l10n="U" oldref="23">Pathname</paragraph>
 <paragraph role="paragraph" id="par_id3155419" xml-lang="en-US" l10n="U" oldref="7">Complete path and program name of the program that you want to start.</paragraph>

@@ -37,7 +37,7 @@
 <paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="CHG" oldref="2">Outputs the specified strings or numeric expressions to a dialog or to a file.</paragraph>
 </section>
 <paragraph role="heading" id="hd_id3145785" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3153188" xml-lang="en-US" l10n="CHG" oldref="4">Print [#FileName,] Expression1[{;|,} [Spc(Number As Integer);] [Tab(pos As Integer);] [Expression2[...]] </paragraph>
+<paragraph role="code" id="par_id3153188" xml-lang="en-US" l10n="CHG" oldref="4">Print [#FileName,] Expression1[{;|,} [Spc(Number As Integer);] [Tab(pos As Integer);] [Expression2[...]]</paragraph>
 <paragraph role="heading" id="hd_id3147348" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameter:</paragraph>
 <paragraph role="paragraph" id="par_id2508621" xml-lang="en-US" l10n="NEW">
 <emph>FileName:</emph> Any numeric expression that contains the file number that was set by the Open statement for the respective file.<comment>ufi: copied this para from Write statement, see i61758</comment></paragraph>

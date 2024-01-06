@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,8 +21,6 @@
  *
  ***********************************************************-->
 
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedexplorerdatabase02010100xml" indexer="include" status="PUBLISH">
@@ -32,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153323"><bookmark_value>views; creating database views (Base)</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153323">
+<bookmark_value>views; creating database views (Base)</bookmark_value>
 <bookmark_value>queries; creating in design view (Base)</bookmark_value>
 <bookmark_value>designing; queries (Base)</bookmark_value>
 <bookmark_value>design view; queries/views (Base)</bookmark_value>
@@ -154,7 +152,7 @@
 <paragraph role="paragraph" id="par_id3154585" xml-lang="en-US" l10n="U" oldref="36">Here you can enter one additional criterion for filtering in each line. Multiple criteria in one column will be connected by an OR link.</paragraph>
 <paragraph role="paragraph" id="par_id3148800" xml-lang="en-US" l10n="U" oldref="150">You can also use the context menu of the line headers in the lower area of the query design to insert another line for functions:</paragraph>
 <bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_FUNCTION" id="bm_id3153275" localize="false"/><paragraph role="heading" id="hd_id3148419" xml-lang="en-US" level="3" l10n="U" oldref="151">Functions</paragraph>
-<paragraph role="paragraph" id="par_id3153233" xml-lang="en-US" l10n="CHG" oldref="152"><ahelp hid="HID_QRYDGN_ROW_FUNCTION" visibility="hidden">Select a function to run in the query here.</ahelp> The functions you can run here depend on the database. </paragraph>
+<paragraph role="paragraph" id="par_id3153233" xml-lang="en-US" l10n="CHG" oldref="152"><ahelp hid="HID_QRYDGN_ROW_FUNCTION" visibility="hidden">Select a function to run in the query here.</ahelp> The functions you can run here depend on the database.</paragraph>
 <paragraph role="paragraph" id="par_id8760818" xml-lang="en-US" l10n="CHG">If you are working with the HSQL database, the list box in the <emph>Function</emph> row offers you the following options:</paragraph>
 <table id="tbl_id3148461">
 <tablerow>
@@ -313,13 +311,12 @@
 <paragraph role="paragraph" id="par_id3155754" xml-lang="en-US" l10n="U" oldref="156"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">Shows or hides the row for the alias name.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3153298" xml-lang="en-US" level="3" l10n="U" oldref="157">Distinct Values</paragraph>
 <paragraph role="paragraph" id="par_id3147500" xml-lang="en-US" l10n="U" oldref="158"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">Applies only distinct values to the query.</ahelp> This applies to records containing data that appears several times in the selected fields. If the <emph>Distinct Values</emph> command is active, you will see only one record in the query (DISTINCT). Otherwise, you will see all records corresponding to the query criteria (ALL).</paragraph>
-<paragraph role="paragraph" id="par_id3150436" xml-lang="en-US" l10n="U" oldref="159">For example, if the name "Smith" occurs several times in your address database, you can choose the<emph> Distinct Values</emph> command to specify in the query that the name "Smith" will occur only once.</paragraph>
-<paragraph role="paragraph" id="par_id3152352" xml-lang="en-US" l10n="U" oldref="160">For a query involving several fields, the combination of values from all fields must be unique so that the result can be formed from a specific record. For example, you have "Smith in Chicago" once in your address book and "Smith in London" twice. With the<emph> Distinct Values</emph> command, the query will use the two fields "last name" and "city" and return the query result "Smith in Chicago" once and "Smith in London" once.</paragraph>
+<paragraph role="paragraph" id="par_id3150436" xml-lang="en-US" l10n="U" oldref="159">For example, if the name "Smith" occurs several times in your address database, you can choose the <emph>Distinct Values</emph> command to specify in the query that the name "Smith" will occur only once.</paragraph>
+<paragraph role="paragraph" id="par_id3152352" xml-lang="en-US" l10n="U" oldref="160">For a query involving several fields, the combination of values from all fields must be unique so that the result can be formed from a specific record. For example, you have "Smith in Chicago" once in your address book and "Smith in London" twice. With the <emph>Distinct Values</emph> command, the query will use the two fields "last name" and "city" and return the query result "Smith in Chicago" once and "Smith in London" once.</paragraph>
 <paragraph role="paragraph" id="par_id3149825" xml-lang="en-US" l10n="U" oldref="161">In SQL, this command corresponds to the DISTINCT predicate.</paragraph>
 <paragraph role="heading" id="hd_id3148926" xml-lang="en-US" level="3" l10n="U" oldref="37">Formulating filter conditions</paragraph>
 <section id="abfragekriterien">
 <paragraph role="paragraph" id="par_id3153162" xml-lang="en-US" l10n="U" oldref="38">When formulating filter conditions, various operators and commands are available to you. Apart from the relational operators, there are SQL-specific commands that query the content of database fields. If you use these commands in the $[officename] syntax, $[officename] automatically converts these into the corresponding SQL syntax. You can also enter the SQL command directly. The following tables give an overview of the operators and commands:</paragraph>
-
 <table id="tbl_id3152803">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -400,7 +397,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3153376">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -452,7 +448,8 @@
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3148623" xml-lang="en-US" l10n="U" oldref="75">LIKE</paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157985"><bookmark_value>placeholders; in SQL queries</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157985">
+<bookmark_value>placeholders; in SQL queries</bookmark_value>
 </bookmark>
 <paragraph role="tablecontent" id="par_id3157985" xml-lang="en-US" l10n="U" oldref="76">(% placeholder for any number of characters</paragraph>
 <paragraph role="tablecontent" id="par_id3147422" xml-lang="en-US" l10n="U" oldref="77">Placeholder _ for exactly one character)</paragraph>
@@ -575,7 +572,6 @@
 <paragraph role="paragraph" id="par_id3150948" xml-lang="en-US" l10n="U" oldref="119">returns field names with the field content "Ms."</paragraph>
 </tablecell>
 </tablerow>
-
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id315379A" xml-lang="en-US" l10n="U" oldref="118">&lt;'2001-01-10'</paragraph>
@@ -626,7 +622,6 @@
 </tablerow>
 </table>
 </section>
-
 <paragraph role="paragraph" id="par_id3146073" xml-lang="en-US" l10n="U" oldref="268">
 <emph>Like </emph>Escape Sequence: {escape 'escape-character'}</paragraph>
 <paragraph role="paragraph" id="par_id3150661" xml-lang="en-US" l10n="U" oldref="269">Example: select * from Item where ItemName like 'The *%' {escape '*'}</paragraph>
@@ -636,12 +631,10 @@
 <paragraph role="paragraph" id="par_id3156052" xml-lang="en-US" l10n="U" oldref="272">Example: select Article.* from {oj item LEFT OUTER JOIN orders ON item.no=orders.ANR}</paragraph>
 <paragraph role="heading" id="hd_id3153674" xml-lang="en-US" level="3" l10n="U" oldref="109">Querying text fields</paragraph>
 <paragraph role="paragraph" id="par_id3149134" xml-lang="en-US" l10n="U" oldref="110">To query the content of a text field, you must put the expression between single quotes. The distinction between uppercase and lowercase letters depends on the database in use. LIKE, by definition, is case-sensitive (though some databases don't see it that strict).</paragraph>
-
 <paragraph role="heading" id="hd_id3149302" xml-lang="en-US" level="3" l10n="U" oldref="111">Querying date fields</paragraph>
 <!--//kls begin edits -->
 <paragraph role="paragraph" id="par_id3157998" xml-lang="en-US" l10n="U" oldref="252">
 <emph>Date fields</emph> are represented as #Date# to clearly identify them as dates. Date, time and date/time constants (literals) used in conditions can be of either the SQL Escape Syntax type, or default SQL2 syntax.</paragraph>
-
 <table id="tbl_id3156186">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -657,7 +650,6 @@
 <paragraph role="tablehead" id="par_id31537344" xml-lang="en-US" l10n="U" oldref="253">SQL2 syntax</paragraph>
 </tablecell>
 </tablerow>
-
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id315913111" xml-lang="en-US" l10n="U" oldref="254">Date</paragraph>
@@ -680,10 +672,10 @@
 <paragraph role="paragraph" id="par_id31559472" xml-lang="en-US" l10n="U" oldref="258">{D'HH:MM:SS'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31559473" xml-lang="en-US" l10n="U" oldref="264">{t 'HH:MI:SS[.SS]'} </paragraph>
+<paragraph role="paragraph" id="par_id31559473" xml-lang="en-US" l10n="U" oldref="264">{t 'HH:MI:SS[.SS]'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31559474" xml-lang="en-US" l10n="U" oldref="264">'HH:MI:SS[.SS]' </paragraph>
+<paragraph role="paragraph" id="par_id31559474" xml-lang="en-US" l10n="U" oldref="264">'HH:MI:SS[.SS]'</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -694,15 +686,15 @@
 <paragraph role="paragraph" id="par_id31509642" xml-lang="en-US" l10n="U" oldref="258">{D'YYYY-MM-DD HH:MM:SS'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31509643" xml-lang="en-US" l10n="U" oldref="264">{ts 'YYYY-MM-DD HH:MI:SS[.SS]'} </paragraph>
+<paragraph role="paragraph" id="par_id31509643" xml-lang="en-US" l10n="U" oldref="264">{ts 'YYYY-MM-DD HH:MI:SS[.SS]'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31509644" xml-lang="en-US" l10n="U" oldref="264">'YYYY-MM-DD HH:MI:SS[.SS]' </paragraph>
+<paragraph role="paragraph" id="par_id31509644" xml-lang="en-US" l10n="U" oldref="264">'YYYY-MM-DD HH:MI:SS[.SS]'</paragraph>
 </tablecell>
 </tablerow>
 </table>
 <paragraph role="paragraph" id="par_id3149539" xml-lang="en-US" l10n="U" oldref="267">Example: select {d '1999-12-31'} from world.years</paragraph>
-<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31' </paragraph>
+<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31'</paragraph>
 <paragraph role="paragraph" id="par_id3150510" xml-lang="en-US" l10n="U" oldref="112">All date expressions (literals) must be enclosed with single quotation marks. (Consult the reference for the particular database and connector you are using for more details.)</paragraph>
 <!--//kls end moved -->
 <paragraph role="heading" id="hd_id3150427" xml-lang="en-US" level="3" l10n="U" oldref="228">Querying Yes/No fields</paragraph>

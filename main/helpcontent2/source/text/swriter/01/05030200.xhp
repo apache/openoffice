@@ -30,7 +30,8 @@
 </meta>
 <body>
 <section id="textfluss">
-<bookmark xml-lang="en-US" branch="index" id="bm_id2502212"><bookmark_value>text flow;at breaks</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id2502212">
+<bookmark_value>text flow;at breaks</bookmark_value>
 <bookmark_value>paragraphs;keeping together at breaks</bookmark_value>
 <bookmark_value>protecting;text flow</bookmark_value>
 <bookmark_value>widows</bookmark_value>
@@ -89,11 +90,11 @@
 <bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:BTN_ORPHANS" id="bm_id3153356" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_EXT_PARAGRAPH:ED_ORPHANS" id="bm_id3153361" localize="false"/>
 <paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="3" l10n="U" oldref="33">Orphan control</paragraph>
-<paragraph role="paragraph" id="par_id3156279" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_ORPHANS">Specifies the minimum number of lines in a paragraph before a page break. Select this check box, and then enter a number in the <emph>Lines </emph>box.</ahelp> If the number of lines at the end of the page is less than the amount specified in the <emph>Lines </emph>box, the paragraph is shifted to the next page.</paragraph>
+<paragraph role="paragraph" id="par_id3156279" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_ORPHANS">Specifies the minimum number of lines in a paragraph before a page break. Select this check box, and then enter a number in the <emph>Lines</emph> box.</ahelp> If the number of lines at the end of the page is less than the amount specified in the <emph>Lines</emph> box, the paragraph is shifted to the next page.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_EXT_PARAGRAPH:BTN_WIDOWS" id="bm_id3145780" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_EXT_PARAGRAPH:ED_WIDOWS" id="bm_id3145784" localize="false"/>
 <paragraph role="heading" id="hd_id3149180" xml-lang="en-US" level="3" l10n="U" oldref="35">Widow control</paragraph>
-<paragraph role="paragraph" id="par_id3155918" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_WIDOWS">Specifies the minimum number of lines in a paragraph in the first page after the break. Select this check box, and then enter a number in the <emph>Lines </emph>box.</ahelp> If the number of lines at the top of the page is less than the amount specified in the <emph>Lines </emph>box, the position of the break is adjusted.</paragraph>
+<paragraph role="paragraph" id="par_id3155918" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SVX:NUMERICFIELD:RID_SVXPAGE_EXT_PARAGRAPH:ED_WIDOWS">Specifies the minimum number of lines in a paragraph in the first page after the break. Select this check box, and then enter a number in the <emph>Lines</emph> box.</ahelp> If the number of lines at the top of the page is less than the amount specified in the <emph>Lines</emph> box, the position of the break is adjusted.</paragraph>
 <embed href="text/shared/00/00000004.xhp#related"/>
 <paragraph role="paragraph" id="par_id3155860" xml-lang="en-US" l10n="U" oldref="45"><link href="text/shared/00/00000005.xhp#schuster" name="Orphans">Orphans</link>.</paragraph>
 </body>

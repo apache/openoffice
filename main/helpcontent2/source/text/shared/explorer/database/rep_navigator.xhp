@@ -29,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id5823847"><bookmark_value>formulas in reports;editing</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id5823847">
+<bookmark_value>formulas in reports;editing</bookmark_value>
 <bookmark_value>functions in reports;editing</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:ReportNavigator" id="bm_id8798791" localize="false"/><paragraph role="heading" id="hd_id1821955" xml-lang="en-US" level="1" l10n="NEW"><variable id="rep_navigator"><link href="text/shared/explorer/database/rep_navigator.xhp">Report Navigator</link>
@@ -47,12 +48,12 @@
 <paragraph role="paragraph" id="par_id3948789" xml-lang="en-US" l10n="NEW">Open the Report Navigator.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id5391399" xml-lang="en-US" l10n="NEW">Open the Groups entry and the group where you want to calculate the cost. </paragraph>
-<paragraph role="paragraph" id="par_id6989654" xml-lang="en-US" l10n="NEW">The group has a sub entry called functions. </paragraph>
+<paragraph role="paragraph" id="par_id5391399" xml-lang="en-US" l10n="NEW">Open the Groups entry and the group where you want to calculate the cost.</paragraph>
+<paragraph role="paragraph" id="par_id6989654" xml-lang="en-US" l10n="NEW">The group has a sub entry called functions.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id1803643" xml-lang="en-US" l10n="NEW">Open the context menu (right click) on the functions entry, choose to create a new function, and select it.</paragraph>
-<paragraph role="paragraph" id="par_id868251" xml-lang="en-US" l10n="NEW">In the property browser you see the function. </paragraph>
+<paragraph role="paragraph" id="par_id868251" xml-lang="en-US" l10n="NEW">In the property browser you see the function.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id6247749" xml-lang="en-US" l10n="NEW">Change the name to e.g. CostCalc and the formula to [CostCalc] + [enter your cost column name].</paragraph>

@@ -44,8 +44,8 @@
 <paragraph role="paragraph" id="par_id3148673" xml-lang="en-US" l10n="U" oldref="7">
 <emph>NumExpression:</emph> Any numeric expression between 0 and 255 that determines which of the lines the program branches to. If NumExpression is 0, the statement is not executed. If NumExpression is greater than 0, the program jumps to the label that has a position number that corresponds to the expression (1 = First label; 2 = Second label)</paragraph>
 <paragraph role="paragraph" id="par_id3153194" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Label:</emph> Target line according to<emph> GoTo </emph>or <emph>GoSub</emph> structure.</paragraph>
-<paragraph role="note" id="par_id3156442" xml-lang="en-US" l10n="U" oldref="9">The <emph>GoTo</emph> or <emph>GoSub </emph>conventions are valid.</paragraph>
+<emph>Label:</emph> Target line according to <emph>GoTo</emph> or <emph>GoSub</emph> structure.</paragraph>
+<paragraph role="note" id="par_id3156442" xml-lang="en-US" l10n="U" oldref="9">The <emph>GoTo</emph> or <emph>GoSub</emph> conventions are valid.</paragraph>
 <paragraph role="heading" id="hd_id3148645" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
 <paragraph role="paragraph" id="par_id3154014" xml-lang="en-US" l10n="U" oldref="12">Sub ExampleOnGosub</paragraph>
 <paragraph role="paragraph" id="par_id3153158" xml-lang="en-US" l10n="U" oldref="13">Dim iVar As Integer</paragraph>

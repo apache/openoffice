@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><helpdocument version="1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,20 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared01extensionupdatexml" indexer="include" status="PUBLISH">
 <title xml-lang="en-US" id="tit">Extension Update</title>
@@ -40,7 +40,7 @@
 <paragraph id="par_id5841242" role="paragraph" xml-lang="en-US"><ahelp hid=".">While checking for updates, you see a progress indicator. Wait for some messages to show up in the dialog, or click Cancel to abort the update check.</ahelp></paragraph>
 <paragraph id="par_id6794030" role="paragraph" xml-lang="en-US">If no updates are available, the message in the dialog tells you there are no updates. Close the dialog.</paragraph>
 <paragraph id="par_id7096774" role="paragraph" xml-lang="en-US">If updates are available, the updates can either be installed automatically, or you must respond with some action:</paragraph>
-<paragraph id="par_id6420484" role="paragraph" xml-lang="en-US">The Extension Update dialog may contain entries which are not selectable and hence no automatic update can be performed. </paragraph>
+<paragraph id="par_id6420484" role="paragraph" xml-lang="en-US">The Extension Update dialog may contain entries which are not selectable and hence no automatic update can be performed.</paragraph>
 <list type="unordered">
 <listitem>
 <paragraph id="par_id6986602" role="paragraph" xml-lang="en-US">Dependencies are not fulfilled (the update needs some more or newer files to be installed).</paragraph>

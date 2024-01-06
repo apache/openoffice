@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,8 +21,6 @@
  *
  ***********************************************************-->
 
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidespadminxml" indexer="include" status="PUBLISH">
@@ -33,7 +30,8 @@
 </meta>
 <body>
 <section id="chapter_all">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154422"><bookmark_value>spadmin</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154422">
+<bookmark_value>spadmin</bookmark_value>
 <bookmark_value>printers; adding, UNIX</bookmark_value>
 <bookmark_value>default printer; UNIX</bookmark_value>
 <bookmark_value>standard printer under UNIX</bookmark_value>
@@ -48,7 +46,6 @@
 </variable></paragraph>
 <section id="chapter_body">
 <paragraph role="paragraph" id="par_id3159876" xml-lang="en-US" l10n="NEW">%PRODUCTNAME uses the installed fonts of your system. In a text document you can select from all printable fonts. In an HTML document or in Web layout, only fonts that are visible on screen are offered. In spreadsheets and drawings you can select from all installed fonts.</paragraph>
-
 <paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="2">Under UNIX based platforms, the printer administration program <emph>spadmin</emph> is provided to help you set up printers and faxes for use with the $[officename] software.</paragraph>
 <paragraph role="paragraph" id="par_id3156410" xml-lang="en-US" l10n="U" oldref="117">Call the printer administration program <emph>spadmin</emph> as follows:</paragraph>
 <list type="unordered">
@@ -61,7 +58,6 @@
 </list>
 <paragraph role="paragraph" id="par_id3152349" xml-lang="en-US" l10n="U" oldref="14">After it starts, the window of the printer administration program <emph>spadmin</emph> appears.</paragraph>
 <paragraph role="paragraph" id="par_id3149580" xml-lang="en-US" l10n="U" oldref="10">Following a server installation, the system administrator first logs on as with root privileges, and starts the printer administration program <emph>spadmin</emph>. The administrator then creates a general printer configuration file called {install_path}/share/psprint/psprint.conf for all users. All changes are immediately available to all users.</paragraph>
-
 <paragraph role="heading" id="hd_id3159177" xml-lang="en-US" level="2" l10n="U" oldref="121">Setting up Printers</paragraph>
 <paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="122">Under UNIX based platforms, the $[officename] software only offers direct support for printers using the PostScript technology. Other printers must be set up as described in the section <emph>Printer Drivers in the $[officename] Software</emph>. The $[officename] software automatically provides a printer with the default driver for each system queue. You can add additional printers as needed.</paragraph>
 <paragraph role="heading" id="hd_id3148564" xml-lang="en-US" level="3" l10n="U" oldref="286">Adding a Printer</paragraph>
@@ -95,14 +91,14 @@
 <paragraph role="paragraph" id="par_id3147428" xml-lang="en-US" l10n="U" oldref="124">When installing a non-PostScript printer, you must set your system so that PostScript can be converted into the language of the printer. We recommend using current PostScript conversion software such as Ghostscript (http://www.cs.wisc.edu/~ghost/).</paragraph>
 <paragraph role="paragraph" id="par_id3154639" xml-lang="en-US" l10n="U" oldref="125">You should set up the <emph>Generic Printer</emph> in that case. Also make sure that the page margins are set correctly.</paragraph>
 <paragraph role="paragraph" id="par_id3159153" xml-lang="en-US" l10n="U" oldref="127">If you are using a printer using the PostScript technology, you should install a description file for the printer (PostScript Printer Definition - PPD) so that you can utilize the specific printer features like paper tray selection, duplex print function and all built-in fonts. You can also use the generic printer driver since it contains the most important data and is suitable for most printers. In that case, you will have to do without the paper tray selection and must correctly set the page margins.</paragraph>
-<paragraph role="paragraph" id="par_id3146976" xml-lang="en-US" l10n="U" oldref="128">Some PPD files are installed as default files. If there is no matching PPD file for your printer, you will find various PPD files at http://www.adobe.com/products/printerdrivers/. You can also ask the manufacturer of your printer for PPD files. </paragraph>
+<paragraph role="paragraph" id="par_id3146976" xml-lang="en-US" l10n="U" oldref="128">Some PPD files are installed as default files. If there is no matching PPD file for your printer, you will find various PPD files at http://www.adobe.com/products/printerdrivers/. You can also ask the manufacturer of your printer for PPD files.</paragraph>
 <paragraph role="heading" id="hd_id3147435" xml-lang="en-US" level="4" l10n="U" oldref="346">Importing Drivers When Creating a New Printer</paragraph>
 <list type="ordered">
 <listitem>
 <paragraph role="listitem" id="par_id3149484" xml-lang="en-US" l10n="U" oldref="129">Click <emph>Import</emph> in the driver selection dialog.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3149260" xml-lang="en-US" l10n="U" oldref="347">Click <emph>Browse</emph> to select the directory where you unpacked the PPD files. </paragraph>
+<paragraph role="listitem" id="par_id3149260" xml-lang="en-US" l10n="U" oldref="347">Click <emph>Browse</emph> to select the directory where you unpacked the PPD files.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3147443" xml-lang="en-US" l10n="U" oldref="348">In the <emph>Selection of drivers</emph> list box, select the printer driver you want to install.</paragraph>
@@ -216,7 +212,6 @@
 </listitem>
 </list>
 <paragraph role="paragraph" id="par_id3153064" xml-lang="en-US" l10n="U" oldref="313">You can now create PDF documents by printing to the converter that has just been created.</paragraph>
-
 </section>
 </section>
 </body>
