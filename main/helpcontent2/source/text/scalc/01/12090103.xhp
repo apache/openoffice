@@ -33,11 +33,14 @@
 <paragraph role="paragraph" id="par_id3150448" l10n="U" xml-lang="en-US" oldref="2">Set the filtering options for the data.</paragraph>
 <paragraph role="heading" level="2" id="hd_id3151043" l10n="U" xml-lang="en-US" oldref="3">Filter Criteria</paragraph>
 <paragraph role="paragraph" id="par_id3150440" l10n="U" xml-lang="en-US" oldref="4">You can define a default filter for the data by filtering, for example, field names, using a combination of logical expressions arguments.</paragraph>
-<bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_OP1" xml-lang="en-US" id="bm_id3153142"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_OP2" xml-lang="en-US" id="bm_id3155412"/><paragraph role="heading" level="3" id="hd_id3159153" l10n="U" xml-lang="en-US" oldref="5">Operator</paragraph>
+<bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_OP1" xml-lang="en-US" id="bm_id3153142"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_OP2" xml-lang="en-US" id="bm_id3155412"/>
+<paragraph role="heading" level="3" id="hd_id3159153" l10n="U" xml-lang="en-US" oldref="5">Operator</paragraph>
 <paragraph l10n="U" role="paragraph" id="par_id3153093" xml-lang="en-US" oldref="6"><ahelp hid="SC:LISTBOX:RID_SCDLG_PIVOTFILTER:LB_OP2" visibility="visible">Select a logical operator for the filter.</ahelp></paragraph>
-<bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_FIELD1" xml-lang="en-US" id="bm_id3147317"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_FIELD2" xml-lang="en-US" id="bm_id3148646"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_FIELD3" xml-lang="en-US" id="bm_id3149667"/><paragraph role="heading" level="3" id="hd_id3152462" l10n="U" xml-lang="en-US" oldref="7">Field name</paragraph>
+<bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_FIELD1" xml-lang="en-US" id="bm_id3147317"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_FIELD2" xml-lang="en-US" id="bm_id3148646"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_FIELD3" xml-lang="en-US" id="bm_id3149667"/>
+<paragraph role="heading" level="3" id="hd_id3152462" l10n="U" xml-lang="en-US" oldref="7">Field name</paragraph>
 <paragraph l10n="U" role="paragraph" id="par_id3155306" xml-lang="en-US" oldref="8"><ahelp hid="SC:LISTBOX:RID_SCDLG_PIVOTFILTER:LB_FIELD3" visibility="visible">Select the field that you want to use in the filter. If field names are not available, the column labels are listed.</ahelp></paragraph>
-<bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_COND1" xml-lang="en-US" id="bm_id3147348"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_COND2" xml-lang="en-US" id="bm_id3155855"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_COND3" xml-lang="en-US" id="bm_id3156444"/><paragraph role="heading" level="3" id="hd_id3148575" l10n="U" xml-lang="en-US" oldref="9">Condition</paragraph>
+<bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_COND1" xml-lang="en-US" id="bm_id3147348"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_COND2" xml-lang="en-US" id="bm_id3155855"/><bookmark branch="hid/sc:ListBox:RID_SCDLG_PIVOTFILTER:LB_COND3" xml-lang="en-US" id="bm_id3156444"/>
+<paragraph role="heading" level="3" id="hd_id3148575" l10n="U" xml-lang="en-US" oldref="9">Condition</paragraph>
 <paragraph l10n="U" role="paragraph" id="par_id3147394" xml-lang="en-US" oldref="10"><ahelp visibility="visible" hid="SC:LISTBOX:RID_SCDLG_PIVOTFILTER:LB_COND3">Select an operator to compare the <emph>Field name</emph> and <emph>Value</emph> entries.</ahelp></paragraph>
 <paragraph role="paragraph" id="par_id3144764" l10n="U" xml-lang="en-US" oldref="11">The following operators are available:</paragraph>
 <table id="tbl_id3149379">
@@ -97,9 +100,11 @@
 </tablecell>
 </tablerow>
 </table>
-<bookmark branch="hid/sc:ComboBox:RID_SCDLG_PIVOTFILTER:ED_VAL1" xml-lang="en-US" id="bm_id3152990"/><bookmark branch="hid/sc:ComboBox:RID_SCDLG_PIVOTFILTER:ED_VAL2" xml-lang="en-US" id="bm_id3152994"/><bookmark branch="hid/sc:ComboBox:RID_SCDLG_PIVOTFILTER:ED_VAL3" xml-lang="en-US" id="bm_id3150370"/><paragraph role="heading" level="3" id="hd_id3150886" l10n="U" xml-lang="en-US" oldref="25">Value</paragraph>
+<bookmark branch="hid/sc:ComboBox:RID_SCDLG_PIVOTFILTER:ED_VAL1" xml-lang="en-US" id="bm_id3152990"/><bookmark branch="hid/sc:ComboBox:RID_SCDLG_PIVOTFILTER:ED_VAL2" xml-lang="en-US" id="bm_id3152994"/><bookmark branch="hid/sc:ComboBox:RID_SCDLG_PIVOTFILTER:ED_VAL3" xml-lang="en-US" id="bm_id3150370"/>
+<paragraph role="heading" level="3" id="hd_id3150886" l10n="U" xml-lang="en-US" oldref="25">Value</paragraph>
 <paragraph l10n="U" role="paragraph" id="par_id3155506" xml-lang="en-US" oldref="26"><ahelp hid="SC:COMBOBOX:RID_SCDLG_PIVOTFILTER:ED_VAL3" visibility="visible">Select the value that you want to compare to the selected field.</ahelp></paragraph>
-<bookmark branch="hid/sc:MoreButton:RID_SCDLG_PIVOTFILTER:BTN_MORE" xml-lang="en-US" id="bm_id3152987"/><paragraph id="hd_id3146980" role="heading" level="2" oldref="27" l10n="U" xml-lang="en-US"><link href="text/scalc/01/12090104.xhp" name="More&gt;&gt;">More&gt;&gt;</link></paragraph>
+<bookmark branch="hid/sc:MoreButton:RID_SCDLG_PIVOTFILTER:BTN_MORE" xml-lang="en-US" id="bm_id3152987"/>
+<paragraph id="hd_id3146980" role="heading" level="2" oldref="27" l10n="U" xml-lang="en-US"><link href="text/scalc/01/12090104.xhp" name="More&gt;&gt;">More&gt;&gt;</link></paragraph>
 <embed href="text/scalc/01/12090104.xhp#zusaetzetext"/>
 </body>
 </helpdocument>

@@ -30,13 +30,17 @@
 </meta>
 <body>
 <paragraph role="heading" level="1" id="hd_id3154760" l10n="U" xml-lang="en-US" oldref="1">Options</paragraph>
-<bookmark branch="hid/sc:CheckBox:RID_SCDLG_DBNAMES:BTN_HEADER" xml-lang="en-US" id="bm_id3150399"/><paragraph role="heading" level="3" id="hd_id3153379" l10n="U" xml-lang="en-US" oldref="3">Contains column labels</paragraph>
+<bookmark branch="hid/sc:CheckBox:RID_SCDLG_DBNAMES:BTN_HEADER" xml-lang="en-US" id="bm_id3150399"/>
+<paragraph role="heading" level="3" id="hd_id3153379" l10n="U" xml-lang="en-US" oldref="3">Contains column labels</paragraph>
 <paragraph l10n="U" role="paragraph" id="par_id3148798" xml-lang="en-US" oldref="4"><ahelp hid="SC:CHECKBOX:RID_SCDLG_DBNAMES:BTN_HEADER" visibility="visible">Selected cell ranges contains labels.</ahelp></paragraph>
-<bookmark branch="hid/sc:CheckBox:RID_SCDLG_DBNAMES:BTN_SIZE" xml-lang="en-US" id="bm_id3156422"/><paragraph role="heading" level="3" id="hd_id3153970" l10n="U" xml-lang="en-US" oldref="5">Insert or delete cells</paragraph>
+<bookmark branch="hid/sc:CheckBox:RID_SCDLG_DBNAMES:BTN_SIZE" xml-lang="en-US" id="bm_id3156422"/>
+<paragraph role="heading" level="3" id="hd_id3153970" l10n="U" xml-lang="en-US" oldref="5">Insert or delete cells</paragraph>
 <paragraph l10n="U" xml-lang="en-US" oldref="6" role="paragraph" id="par_id3154684"><ahelp hid="SC:CHECKBOX:RID_SCDLG_DBNAMES:BTN_SIZE" visibility="visible">Automatically inserts new rows and columns into the database range in your document when new records are added to the database.</ahelp> To manually update the database range, choose <emph>Data - Refresh</emph> <emph>Range</emph>.</paragraph>
-<bookmark branch="hid/sc:CheckBox:RID_SCDLG_DBNAMES:BTN_FORMAT" xml-lang="en-US" id="bm_id3151117"/><paragraph role="heading" level="3" id="hd_id3153768" l10n="U" xml-lang="en-US" oldref="7">Keep formatting</paragraph>
+<bookmark branch="hid/sc:CheckBox:RID_SCDLG_DBNAMES:BTN_FORMAT" xml-lang="en-US" id="bm_id3151117"/>
+<paragraph role="heading" level="3" id="hd_id3153768" l10n="U" xml-lang="en-US" oldref="7">Keep formatting</paragraph>
 <paragraph l10n="U" role="paragraph" id="par_id3147435" xml-lang="en-US" oldref="8"><ahelp hid="SC:CHECKBOX:RID_SCDLG_DBNAMES:BTN_FORMAT" visibility="visible">Applies the existing cell format of headers and first data row to the whole database range.</ahelp></paragraph>
-<bookmark branch="hid/sc:CheckBox:RID_SCDLG_DBNAMES:BTN_STRIPDATA" xml-lang="en-US" id="bm_id3145748"/><paragraph role="heading" level="3" id="hd_id3155856" l10n="U" xml-lang="en-US" oldref="9">Don't save imported data</paragraph>
+<bookmark branch="hid/sc:CheckBox:RID_SCDLG_DBNAMES:BTN_STRIPDATA" xml-lang="en-US" id="bm_id3145748"/>
+<paragraph role="heading" level="3" id="hd_id3155856" l10n="U" xml-lang="en-US" oldref="9">Don't save imported data</paragraph>
 <paragraph l10n="U" role="paragraph" id="par_id3153363" xml-lang="en-US" oldref="10"><ahelp hid="SC:CHECKBOX:RID_SCDLG_DBNAMES:BTN_STRIPDATA" visibility="visible">Only saves a reference to the database, and not the contents of the cells.</ahelp></paragraph>
 <paragraph role="heading" level="3" id="hd_id3147428" l10n="U" xml-lang="en-US" oldref="11">Source:</paragraph>
 <paragraph role="paragraph" id="par_id3148576" l10n="U" xml-lang="en-US" oldref="12">Displays information about the current database source and any existing operators.</paragraph>
