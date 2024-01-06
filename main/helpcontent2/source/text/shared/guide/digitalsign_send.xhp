@@ -48,7 +48,7 @@
 <paragraph xml-lang="en-US" id="par_idN10720" role="tip" l10n="NEW">If you have created different profiles in Thunderbird, Mozilla, or Firefox, and you want %PRODUCTNAME to use one specified profile for certificates, then you can set the environment variable MOZILLA_CERTIFICATE_FOLDER to point to the folder of that specified profile.</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id944242" role="paragraph" l10n="NEW">Open your Web browser's preferences dialog, select the Privacy &amp; Security tab page, click on Certificates - Manage Certificates. </paragraph>
+<paragraph xml-lang="en-US" id="par_id944242" role="paragraph" l10n="NEW">Open your Web browser's preferences dialog, select the Privacy &amp; Security tab page, click on Certificates - Manage Certificates.</paragraph>
 </listitem>
 <listitem>
 <paragraph xml-lang="en-US" id="par_id6452223" role="paragraph" l10n="NEW">Import your new root certificate, then select and edit the certificate. Enable the root certificate to be trusted at least for web and email access. This ensures that the certificate can sign your documents. You may edit any intermediate certificate in the same way, but it is not mandatory for signing documents.</paragraph>
@@ -71,7 +71,7 @@
 <paragraph xml-lang="en-US" id="par_idN10698" role="paragraph" l10n="NEW">After saving, you see the <link href="text/shared/01/digitalsignatures.xhp">Digital Signatures</link> dialog. Click <emph>Add</emph> to add a public key to the document.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_idN106AE" role="paragraph" l10n="NEW">In the <link href="text/shared/01/selectcertificate.xhp">Select Certificate</link> dialog, select your certificate and click OK. </paragraph>
+<paragraph xml-lang="en-US" id="par_idN106AE" role="paragraph" l10n="NEW">In the <link href="text/shared/01/selectcertificate.xhp">Select Certificate</link> dialog, select your certificate and click OK.</paragraph>
 </listitem>
 <listitem>
 <paragraph xml-lang="en-US" id="par_idN106C0" role="paragraph" l10n="NEW">You see again the Digital Signatures dialog, where you can add more certificates if you want. Click OK to add the public key to the saved file.</paragraph>

@@ -74,7 +74,7 @@
 <!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL -->
 <paragraph role="heading" id="hd_id3154146" xml-lang="en-US" level="3" l10n="U" oldref="20">Delete cascade</paragraph>
 <paragraph role="paragraph" id="par_id3155309" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL">Specifies that all external key fields will be deleted if you delete the corresponding primary key field.</ahelp></paragraph>
-<paragraph role="warning" id="par_id3153140" xml-lang="en-US" l10n="U" oldref="22">When you delete a primary key field with the<emph> Delete cascade </emph>option, all records from other tables that have this key as their foreign key are also deleted. Use this option with great care; it is possible that a major portion of the database can be deleted.</paragraph>
+<paragraph role="warning" id="par_id3153140" xml-lang="en-US" l10n="U" oldref="22">When you delete a primary key field with the <emph>Delete cascade</emph> option, all records from other tables that have this key as their foreign key are also deleted. Use this option with great care; it is possible that a major portion of the database can be deleted.</paragraph>
 <!-- removed HID DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL_NULL -->
 <paragraph role="heading" id="hd_id3152596" xml-lang="en-US" level="3" l10n="U" oldref="23">Set null</paragraph>
 <paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="DBACCESS_RADIOBUTTON_DLG_REL_PROPERTIES_RB_CASC_DEL_NULL">If you delete the corresponding primary key, the "IS NULL" value will be assigned to all external key fields.</ahelp></paragraph>

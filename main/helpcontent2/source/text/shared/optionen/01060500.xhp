@@ -65,7 +65,7 @@
 <paragraph xml-lang="en-US" id="par_id3156155" role="listitem" l10n="U" oldref="8">Type the text 'Selling price' in cell A5, the text 'Net' in cell A6, and the text 'Value-added tax' in cell A7.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3147530" role="listitem" l10n="U" oldref="61">Now type a selling price (for example, 100) in cell B5. The net price should be shown in cell B6 and the value-added tax should be shown in cell B7. </paragraph>
+<paragraph xml-lang="en-US" id="par_id3147530" role="listitem" l10n="U" oldref="61">Now type a selling price (for example, 100) in cell B5. The net price should be shown in cell B6 and the value-added tax should be shown in cell B7.</paragraph>
 </listitem>
 <listitem>
 <paragraph xml-lang="en-US" id="par_id3153061" role="listitem" l10n="CHG" oldref="62">You know that the value-added tax is calculated as 'net price times 15%' and that you arrive at the net price by deducting the value-added tax from the selling price. Type the formula <item type="literal">=B5-B7</item> in B6 to calculate the net price, and type the formula <item type="literal">=B6*0.15</item> in cell B7 to calculate the value-added tax.</paragraph>
