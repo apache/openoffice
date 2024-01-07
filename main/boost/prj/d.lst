@@ -127,6 +127,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\date_time\local_time
 mkdir: %_DEST%\inc%_EXT%\boost\date_time\posix_time
 mkdir: %_DEST%\inc%_EXT%\boost\detail
 mkdir: %_DEST%\inc%_EXT%\boost\detail\winapi
+mkdir: %_DEST%\inc%_EXT%\boost\detail\winapi\detail
 mkdir: %_DEST%\inc%_EXT%\boost\dynamic_bitset
 mkdir: %_DEST%\inc%_EXT%\boost\exception
 mkdir: %_DEST%\inc%_EXT%\boost\exception\detail
@@ -976,6 +977,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\date_time\posix_time\* %_DEST%\inc%_EXT%\boost\date_time\posix_time
 ..\%__SRC%\inc\boost\detail\* %_DEST%\inc%_EXT%\boost\detail
 ..\%__SRC%\inc\boost\detail\winapi\* %_DEST%\inc%_EXT%\boost\detail\winapi
+..\%__SRC%\inc\boost\detail\winapi\detail\* %_DEST%\inc%_EXT%\boost\detail\winapi\detail
 ..\%__SRC%\inc\boost\dynamic_bitset\* %_DEST%\inc%_EXT%\boost\dynamic_bitset
 ..\%__SRC%\inc\boost\exception\* %_DEST%\inc%_EXT%\boost\exception
 ..\%__SRC%\inc\boost\exception\detail\* %_DEST%\inc%_EXT%\boost\exception\detail
