@@ -30,7 +30,8 @@
 </meta>
 <body>
 <switch select="appl">
-<case select="WRITER"><comment>UFI: why is this switched? would look very poor for other contexts</comment><comment>mw transferred all 6 index entries to Writer guide "finding.xhp"</comment><paragraph role="heading" id="hd_id3154840" xml-lang="en-US" level="1" l10n="U" oldref="130">Text Format (Search)</paragraph>
+<case select="WRITER"><comment>UFI: why is this switched? would look very poor for other contexts</comment><comment>mw transferred all 6 index entries to Writer guide "finding.xhp"</comment>
+<paragraph role="heading" id="hd_id3154840" xml-lang="en-US" level="1" l10n="U" oldref="130">Text Format (Search)</paragraph>
 <paragraph role="paragraph" id="par_id3150355" xml-lang="en-US" l10n="U" oldref="131"><variable id="formattext"><ahelp hid="SVX:PUSHBUTTON:RID_SVXDLG_SEARCH:BTN_FORMAT">Finds specific text formatting features, such as font types, font effects, and text flow characteristics.</ahelp>
 </variable></paragraph>
 <section id="howtoget">
@@ -53,7 +54,8 @@
 </case>
 </switch><comment>had to copy extended help to outside of switch construct - see issue 72448</comment>
 <bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_SEARCH:BTN_FORMAT" id="bm_id3151100" localize="false"/>
-<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_SEARCH:BTN_FORMAT" id="bm_id6877651" localize="false"/><paragraph role="paragraph" id="par_id3062837" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Finds specific text formatting features, such as font types, font effects, and text flow characteristics.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_SEARCH:BTN_FORMAT" id="bm_id6877651" localize="false"/>
+<paragraph role="paragraph" id="par_id3062837" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Finds specific text formatting features, such as font types, font effects, and text flow characteristics.</ahelp></paragraph>
 <section id="relatedtopics">
 <paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="C"><link href="text/shared/01/02100200.xhp" name="Attributes">Attributes</link></paragraph>
 </section>
