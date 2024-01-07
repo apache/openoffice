@@ -49,7 +49,7 @@
 <bookmark_value>native SQL (Base)</bookmark_value>
 </bookmark><comment>mw added "(Base)" to all entries</comment><paragraph role="paragraph" id="par_id3153323" xml-lang="en-US" l10n="E" oldref="2" localize="false"/>
 <paragraph role="heading" id="hd_id3153394" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/explorer/database/02010100.xhp" name="Query Design">Query Design</link></paragraph>
-<paragraph role="paragraph" id="par_id3156411" xml-lang="en-US" l10n="U" oldref="288"><ahelp hid=".">The <emph>Query Design View </emph>allows you to create and edit a database query.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3156411" xml-lang="en-US" l10n="U" oldref="288"><ahelp hid=".">The <emph>Query Design View</emph> allows you to create and edit a database query.</ahelp></paragraph>
 <section id="howtoget">
 <embed href="text/shared/00/00000450.xhp#entwab"/>
 </section>
@@ -117,7 +117,7 @@
 <bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QUERY_EDIT_JOINCONNECTION" id="bm_id3145253" localize="false"/><paragraph role="paragraph" id="par_id3150094" xml-lang="en-US" l10n="CHG" oldref="285"><ahelp hid="HID_QUERY_EDIT_JOINCONNECTION" visibility="hidden">Edit Join Properties.</ahelp>Alternatively, press Tab until the line is selected, then press Shift+F10 to display the context menu and there choose the command <emph>Edit</emph>. Some databases support only a subset of the possible join types.</paragraph>
 <paragraph role="heading" id="hd_id3155851" xml-lang="en-US" level="3" l10n="U" oldref="145">Deleting relations</paragraph>
 <paragraph role="paragraph" id="par_id3156178" xml-lang="en-US" l10n="U" oldref="146">To delete a relation between two tables, click the connection line and then press the Delete key.</paragraph>
-<paragraph role="paragraph" id="par_id3150715" xml-lang="en-US" l10n="U" oldref="284">Alternatively, delete the respective entries in <emph>Fields involved </emph>in the <emph>Relations</emph> dialog. Or press Tab until the connecting vector is displayed highlighted, then press Shift+F10 to open the context menu and select <emph>Delete </emph>command.</paragraph>
+<paragraph role="paragraph" id="par_id3150715" xml-lang="en-US" l10n="U" oldref="284">Alternatively, delete the respective entries in <emph>Fields involved</emph> in the <emph>Relations</emph> dialog. Or press Tab until the connecting vector is displayed highlighted, then press Shift+F10 to open the context menu and select <emph>Delete</emph> command.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_CTL_QRYDGNCRIT" id="bm_id3152972" localize="false"/><paragraph role="heading" id="hd_id3151208" xml-lang="en-US" level="2" l10n="U" oldref="17">Define query</paragraph>
 <paragraph role="paragraph" id="par_id3158416" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="HID_CTL_QRYDGNCRIT">Select conditions to define the query.</ahelp> Each column of the design table accepts a data field for the query. The conditions in one row are linked with a Boolean AND.</paragraph>
 <paragraph role="heading" id="hd_id3154161" xml-lang="en-US" level="3" l10n="U" oldref="19">Specify field name</paragraph>
@@ -623,7 +623,7 @@
 </table>
 </section>
 <paragraph role="paragraph" id="par_id3146073" xml-lang="en-US" l10n="U" oldref="268">
-<emph>Like </emph>Escape Sequence: {escape 'escape-character'}</paragraph>
+<emph>Like</emph> Escape Sequence: {escape 'escape-character'}</paragraph>
 <paragraph role="paragraph" id="par_id3150661" xml-lang="en-US" l10n="U" oldref="269">Example: select * from Item where ItemName like 'The *%' {escape '*'}</paragraph>
 <paragraph role="paragraph" id="par_id3148541" xml-lang="en-US" l10n="U" oldref="270">The example will give you all of the entries where the item name begins with 'The *'. This means that you can also search for characters that would otherwise be interpreted as placeholders, such as *, ?, _, % or the period.</paragraph>
 <paragraph role="paragraph" id="par_id3150572" xml-lang="en-US" l10n="U" oldref="271">
@@ -758,7 +758,7 @@
 <paragraph role="paragraph" id="par_id3156731" xml-lang="en-US" l10n="U" oldref="275">select * from 'addresses' where 'name' = :placeholder</paragraph>
 <paragraph role="heading" id="hd_id3145181" xml-lang="en-US" level="2" l10n="U" oldref="135">SQL Mode</paragraph>
 <paragraph role="paragraph" id="par_id3147013" xml-lang="en-US" l10n="U" oldref="220">SQL stands for "Structured Query Language" and describes instructions for updating and administering relational databases.</paragraph>
-<paragraph role="paragraph" id="par_id3152570" xml-lang="en-US" l10n="U" oldref="136">In $[officename] you do not need any knowledge of SQL for most queries, since you do not have to enter the SQL code. If you create a query in the query design, $[officename] automatically converts your instructions into the corresponding SQL syntax. If, with the help of the <emph>Switch Design View On/Off </emph>button, you change to the SQL view, you can see the SQL commands for a query that has been created previously.</paragraph>
+<paragraph role="paragraph" id="par_id3152570" xml-lang="en-US" l10n="U" oldref="136">In $[officename] you do not need any knowledge of SQL for most queries, since you do not have to enter the SQL code. If you create a query in the query design, $[officename] automatically converts your instructions into the corresponding SQL syntax. If, with the help of the <emph>Switch Design View On/Off</emph> button, you change to the SQL view, you can see the SQL commands for a query that has been created previously.</paragraph>
 <paragraph role="paragraph" id="par_id3152412" xml-lang="en-US" l10n="CHG" oldref="226">You can formulate your query directly in the SQL code. Note, however, that the special syntax is dependent upon the database system that you use.</paragraph>
 <paragraph role="paragraph" id="par_id3146842" xml-lang="en-US" l10n="U" oldref="227">If you enter the SQL code manually, you can create SQL-specific queries that are not supported by the graphical interface in <emph>Query design</emph>. These queries must be executed in native SQL mode.</paragraph>
 <paragraph role="paragraph" id="par_id3149632" xml-lang="en-US" l10n="U" oldref="223">By clicking the <link href="text/shared/02/14030000.xhp" name="Run SQL command directly"><emph>Run SQL command directly</emph></link> icon in the SQL view, you can formulate a query that is not processed by $[officename].</paragraph>
