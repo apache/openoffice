@@ -856,8 +856,8 @@ sal_Bool SfxObjectShell::DoLoad( SfxMedium *pMed )
                 if ( sVersion.getLength() )
                 {
                     double nVersion = sVersion.toDouble();
-                    if ( nVersion > 1.20001  && SfxObjectShell_Impl::NeedsOfficeUpdateDialog() )
-                        // ODF version greater than 1.2 - added some decimal places to be safe against floating point conversion errors (hack)
+                    if ( nVersion > 1.30001  && SfxObjectShell_Impl::NeedsOfficeUpdateDialog() )
+                        // ODF version greater than 1.3 - added some decimal places to be safe against floating point conversion errors (hack)
                     {
                         ::rtl::OUString sDocumentURL( pMedium->GetOrigURL() );
                         ::rtl::OUString aSystemFileURL;
