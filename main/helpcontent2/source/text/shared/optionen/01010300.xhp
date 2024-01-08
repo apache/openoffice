@@ -36,17 +36,21 @@
 <bookmark_value>directories;directory structure</bookmark_value>
 <bookmark_value>files and folders in $[officename]</bookmark_value>
 </bookmark>
-<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTIONS_PATH" id="bm_id3159399" localize="false"/><paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010300.xhp" name="Paths">Paths</link></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTIONS_PATH" id="bm_id3159399" localize="false"/>
+<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010300.xhp" name="Paths">Paths</link></paragraph>
 <paragraph role="paragraph" id="par_id3151384" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_OPTIONS_PATH">This section contains the default paths to important folders in $[officename]. These paths can be edited by the user.</ahelp></paragraph>
 </section>
 <section id="howtoget">
 <embed href="text/shared/00/00000406.xhp#pfade"/>
 </section>
-<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTPATH_CTL_PATH" id="bm_id3146795" localize="false"/><paragraph role="heading" id="hd_id3149810" xml-lang="en-US" level="2" l10n="CHG" oldref="13">Paths used by %PRODUCTNAME</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTPATH_CTL_PATH" id="bm_id3146795" localize="false"/>
+<paragraph role="heading" id="hd_id3149810" xml-lang="en-US" level="2" l10n="CHG" oldref="13">Paths used by %PRODUCTNAME</paragraph>
 <paragraph role="paragraph" id="par_id3154923" xml-lang="en-US" l10n="CHG" oldref="5"><ahelp hid="HID_OPTPATH_CTL_PATH">To modify an entry in this list, click the entry and click <emph>Edit</emph>. You can also double click the entry.</ahelp></paragraph>
-<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SFXPAGE_PATH:BTN_STANDARD" id="bm_id3154216" localize="false"/><paragraph role="heading" id="hd_id3151210" xml-lang="en-US" level="2" l10n="U" oldref="160">Default</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SFXPAGE_PATH:BTN_STANDARD" id="bm_id3154216" localize="false"/>
+<paragraph role="heading" id="hd_id3151210" xml-lang="en-US" level="2" l10n="U" oldref="160">Default</paragraph>
 <paragraph role="paragraph" id="par_id3153968" xml-lang="en-US" l10n="U" oldref="161"><ahelp hid="SVX:PUSHBUTTON:RID_SFXPAGE_PATH:BTN_STANDARD">The <emph>Default</emph> button resets the predefined paths for all selected entries.</ahelp></paragraph>
-<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SFXPAGE_PATH:BTN_PATH" id="bm_id3150448" localize="false"/><paragraph role="heading" id="hd_id3147229" xml-lang="en-US" level="2" l10n="U" oldref="6">Edit</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SFXPAGE_PATH:BTN_PATH" id="bm_id3150448" localize="false"/>
+<paragraph role="heading" id="hd_id3147229" xml-lang="en-US" level="2" l10n="U" oldref="6">Edit</paragraph>
 <paragraph role="paragraph" id="par_id3151177" xml-lang="en-US" l10n="CHG" oldref="7"><ahelp hid="SVX:PUSHBUTTON:RID_SFXPAGE_PATH:BTN_PATH">Click to display the <emph>Select Path</emph> or <emph>Edit Paths</emph> dialog.</ahelp></paragraph>
 <paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="162">You can change the sequence of entries by clicking the bar in the <emph>Type</emph> column. The column width can be changed by moving the separator between the columns with the mouse.</paragraph>
 <paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="CHG" oldref="190">In the following list of paths, the paths for the shared folders in the directory where %PRODUCTNAME is installed, are not shown. The user data for each user is stored in the {user} directory, which is located in the user's <switchinline select="sys"><caseinline select="UNIX">home
