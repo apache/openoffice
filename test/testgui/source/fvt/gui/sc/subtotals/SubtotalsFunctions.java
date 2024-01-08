@@ -236,10 +236,10 @@ public class SubtotalsFunctions {
 		scSubTotalsOptionsTabPage.select();
 		assertFalse("Wrong default value of InsertPageBreak checkbox",scSubtotalsInsertPageBreakCheckBox.isChecked());
 		assertFalse("Wrong default value of CaseSensitive checkbox",scSubtotalsCaseSensitiveCheckBox.isChecked());
-		assertTrue("Worng default value of PreSortToGroup checkbox",scSubtotalsPreSortToGroupCheckBox.isChecked());
+		assertTrue("Wrong default value of PreSortToGroup checkbox",scSubtotalsPreSortToGroupCheckBox.isChecked());
 		assertTrue("Wrong default value of SortAscending Radio button",scSubtotalSortAscendingRadioButton.isChecked());
 		assertFalse("Wrong default value of SortDescending Radio button",scSubtotalSortDescendingRadioButton.isChecked());
-		assertFalse("Wrong default value of InludeFormat checkbox",scSubtotalsIncludeFormatsCheckBox.isChecked());
+		assertFalse("Wrong default value of IncludeFormat checkbox",scSubtotalsIncludeFormatsCheckBox.isChecked());
 		assertFalse("Wrong default value of CustomSortOrder checkbox",scSubtotalsCustomSortOrderCheckBox.isChecked());
 		assertFalse("Wrong default value of CustomSort listbox",scSubtotalsCustomSortListBox.isEnabled());
 		scSubTotalsOptionsTabPage.ok();

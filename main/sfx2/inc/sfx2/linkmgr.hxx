@@ -59,7 +59,6 @@ class SFX2_DLLPUBLIC LinkManager
 	sal_Bool mUpdateAsked;
 	sal_Bool mAllowUpdate;
 
-	sal_Bool GetUserAllowsLinkUpdate(Window *pParent);
 	void SetUserAllowsLinkUpdate(SvBaseLink *pLink, sal_Bool allows);
 protected:
 	sal_Bool 		InsertLink( SvBaseLink* pLink, sal_uInt16 nObjType, sal_uInt16 nUpdateType,
@@ -111,9 +110,14 @@ public:
 
     SvLinkSourceRef CreateObj( SvBaseLink* );
 
+    /// Ask (once) to allow updating links
+	sal_Bool GetUserAllowsLinkUpdate(Window *pParent);
 	
 	// Automatically ask user about update all links, on first insert
+    // If we already asked the user, we forget about it and will ask again.
 	void SetAutoAskUpdateAllLinks();
+    // Never ask the user: just update all links
+    void SetNeverAskUpdateAllLinks();
 
 	void 		UpdateAllLinks( sal_Bool bAskUpdate = sal_True,
 								sal_Bool bCallErrHdl = sal_True,

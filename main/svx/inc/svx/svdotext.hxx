@@ -481,7 +481,7 @@ public:
 	virtual void NbcReformatText();
 	virtual void ReformatText();
 
-	virtual FASTBOOL CalcFieldValue(const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos,
+	virtual FASTBOOL CalcFieldValue(const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos,
 		FASTBOOL bEdit, Color*& rpTxtColor, Color*& rpFldColor, String& rRet) const;
 
 	virtual SdrObject* DoConvertToPolyObj(sal_Bool bBezier, bool bAddText) const;

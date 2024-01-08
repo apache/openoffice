@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 #ifndef _SD_ENUMDEF_HXX
 #define _SD_ENUMDEF_HXX
 
-enum OutputType { OUTPUT_PAGE, OUTPUT_OVERHEAD, OUTPUT_SLIDE, OUTPUT_PRESENTATION, OUTPUT_ORIGINAL };
+enum OutputType { OUTPUT_PAGE, OUTPUT_OVERHEAD, OUTPUT_SLIDE, OUTPUT_PRESENTATION_4_BY_3, OUTPUT_PRESENTATION_16_BY_9, OUTPUT_PRESENTATION_16_BY_10, OUTPUT_ORIGINAL };
 enum StartType { ST_EMPTY, ST_TEMPLATE, ST_OPEN };
 
 #define RET_SNAP_DELETE 111
@@ -32,3 +32,4 @@ enum SnapKind { SK_HORIZONTAL, SK_VERTICAL, SK_POINT };
 
 #endif
 
+/* vim: set noet sw=4 ts=4: */

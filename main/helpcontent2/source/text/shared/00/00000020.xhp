@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0000000020xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">About Import and Export Filters</title>
@@ -34,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152952"><bookmark_value>import filters</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152952">
+<bookmark_value>import filters</bookmark_value>
 <bookmark_value>export filters</bookmark_value>
 <bookmark_value>filters; for import and export</bookmark_value>
 <bookmark_value>files; filters and formats</bookmark_value>
@@ -75,7 +71,7 @@
 </caseinline><caseinline select="IMPRESS">
 </caseinline><defaultinline>It is also possible to import and export <link href="text/shared/00/00000005.xhp#rtf" name="RTF">RTF</link> files. This file format can be used to exchange formatted texts across various applications and platforms. In this way, many formats read by most programs will be transferred without a problem. The clipboard uses RTF format when you insert part of a spreadsheet from $[officename] Calc through <link href="text/shared/00/00000005.xhp" name="DDE">DDE</link> into $[officename] Writer.</defaultinline></switchinline></paragraph>
 <paragraph role="tip" id="par_id3151378" xml-lang="en-US" l10n="U" oldref="237">The filter <emph>Text Encoded</emph> helps you open and save text documents with another encoding font. The filter opens a dialog that enables you to select character set, default fonts, language and paragraph break.</paragraph>
-<paragraph role="heading" id="hd_id3149763" xml-lang="en-US" level="3" l10n="U" oldref="11">Importing and Exporting in HTML Format </paragraph>
+<paragraph role="heading" id="hd_id3149763" xml-lang="en-US" level="3" l10n="U" oldref="11">Importing and Exporting in HTML Format</paragraph>
 <paragraph role="paragraph" id="par_id3150244" xml-lang="en-US" l10n="U" oldref="198">With $[officename] Writer, you can insert footnotes and endnotes in your HTML document. They are exported as meta tags. The footnote and endnote characters are exported as hyperlinks.</paragraph>
 <paragraph role="paragraph" id="par_id3149800" xml-lang="en-US" l10n="U" oldref="199">Comments are used to include unknown characters in an HTML document. Every note that begins with "HTML:..." and ends with "&gt;" is treated as an HTML code, but is exported without these designations. Several tags around text can be included after "HTML:..." Accented characters are converted into the ANSI character set. Comments are created during import (for example, for meta tags that have no room in the file properties or unknown tags).</paragraph>
 <paragraph role="paragraph" id="par_id3149734" xml-lang="en-US" l10n="U" oldref="201">The HTML import of $[officename] Writer is able to read files that have UTF-8 or UCS2 character coding. All characters that are contained in the ANSI character set or in the system's character set can be displayed.</paragraph>

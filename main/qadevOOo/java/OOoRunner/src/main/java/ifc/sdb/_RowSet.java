@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ public class _RowSet extends MultiPropertyTest {
     }
 
     /**
-     * Overriden method which tests all the properties
+     * Overridden method which tests all the properties
      * with <code>SafeTester</code>.
      *
      * @see SafeTester
@@ -115,15 +115,15 @@ public class _RowSet extends MultiPropertyTest {
         boolean result = false;
         try {
             XConnection the_connection = null;
-            
+
             try {
                 the_connection = (XConnection) AnyConverter.toObject(
                                     new Type(XConnection.class),
                                     oObj.getPropertyValue("ActiveConnection"));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't convert Any",iae);
-            }            
-            
+            }
+
             result = (the_connection != null);
         } catch (com.sun.star.beans.UnknownPropertyException e) {
             log.println("the property is unknown");
@@ -142,4 +142,3 @@ public class _RowSet extends MultiPropertyTest {
     }
 
 } // EOF DatasourceAdministrationDialog
-

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,33 +9,28 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104070200xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Insert Name</title>
 <filename>/text/scalc/01/04070200.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2004-07-13T15:25:01">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153195"><bookmark_value>cell ranges; inserting named ranges</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153195">
+<bookmark_value>cell ranges; inserting named ranges</bookmark_value>
 <bookmark_value>inserting; cell ranges</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:InsertName" id="bm_id4122121" localize="false"/><!-- HID added by script -->
@@ -46,7 +40,7 @@
 </variable></paragraph>
 <paragraph role="note" id="par_id3149412" xml-lang="en-US" l10n="U" oldref="7">You can only insert a cell area after having defined a name for the area.</paragraph>
 <section id="howtoget">
-  <embed href="text/scalc/00/00000404.xhp#einaei"/>
+<embed href="text/scalc/00/00000404.xhp#einaei"/>
 </section>
 <bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_NAMES_PASTE:LB_ENTRYLIST" id="bm_id3155415" localize="false"/>
 <paragraph role="heading" id="hd_id3153160" xml-lang="en-US" level="2" l10n="U" oldref="3">Insert name <comment>Changed in #102078#</comment></paragraph>

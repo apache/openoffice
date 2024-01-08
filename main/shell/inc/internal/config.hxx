@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@
 #define COLUMN_HANDLER_DESCRIPTIVE_NAME    TEXT("OpenOffice Column Handler")
 #define INFOTIP_HANDLER_DESCRIPTIVE_NAME   TEXT("OpenOffice Infotip Handler")
 #define PROPSHEET_HANDLER_DESCRIPTIVE_NAME TEXT("OpenOffice Property Sheet Handler")
-#define THUMBVIEWER_HANDLER_DESCRIPTIVAE_NAME TEXT("OpenOffice Thumbnail Viewer")
+#define THUMBVIEWER_HANDLER_DESCRIPTIVE_NAME TEXT("OpenOffice Thumbnail Viewer")
 
 #define META_CONTENT_NAME               "meta.xml"
 #define DOC_CONTENT_NAME                "content.xml"
@@ -91,10 +91,12 @@
 #define CONTENT_STYLE_STYLE                      L"style"
 #define CONTENT_STYLE_STYLE_NAME                 L"name"
 #define CONTENT_STYLE_PROPERTIES                 L"properties"
-#define CONTENT_TEXT_STYLE_PROPERTIES            L"text-properties"        // added for OASIS Open Office XML format.
+#define CONTENT_TEXT_STYLE_PROPERTIES            L"text-properties" // added for OASIS Open Office XML format.
 #define CONTENT_STYLE_PROPERTIES_LANGUAGE        L"language"
 #define CONTENT_STYLE_PROPERTIES_COUNTRY         L"country"
 #define CONTENT_STYLE_PROPERTIES_LANGUAGEASIAN   L"language-asian"
 #define CONTENT_STYLE_PROPERTIES_COUNTRYASIAN    L"country-asian"
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

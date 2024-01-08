@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0105020301xml" indexer="include">
 <title id="tit" xml-lang="en-US">Number Format Codes</title>
@@ -32,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153514"><bookmark_value>format codes; numbers</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153514">
+<bookmark_value>format codes; numbers</bookmark_value>
 <bookmark_value>conditions; in number formats</bookmark_value>
 <bookmark_value>number formats; codes</bookmark_value>
 <bookmark_value>currency formats</bookmark_value>
@@ -88,7 +86,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="par_idN1087E" xml-lang="en-US" level="3" l10n="NEW">Examples</paragraph>
 <table id="tbl_id3153577">
 <tablerow>
@@ -140,7 +137,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3149276" xml-lang="en-US" level="3" l10n="U" oldref="230">Thousands Separator</paragraph>
 <paragraph role="paragraph" id="par_id3154380" xml-lang="en-US" l10n="U" oldref="21">Depending on your language setting, you can use a comma or a period as a thousands separator. You can also use the separator to reduce the size of the number that is displayed by a multiple of 1000.</paragraph>
 <table id="tbl_id3150244">
@@ -169,7 +165,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3154836" xml-lang="en-US" level="2" l10n="U" oldref="79">Including Text in Number Format Codes</paragraph>
 <paragraph role="heading" id="hd_id3150398" xml-lang="en-US" level="3" l10n="U" oldref="231">Text and Numbers</paragraph>
 <paragraph role="paragraph" id="par_id3154224" xml-lang="en-US" l10n="U" oldref="80">To include text in a number format that is applied to a cell containing numbers, place a double quotation mark (") in front of and behind the text, or a backslash (\) before a single character. For example, enter <emph>#.# "meters"</emph> to display "3.5 meters" or <emph>#.# \m</emph> to display "3.5 m".</paragraph>
@@ -213,7 +208,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3147435" xml-lang="en-US" level="2" l10n="U" oldref="111">Conditions</paragraph>
 <paragraph role="heading" id="hd_id3148575" xml-lang="en-US" level="3" l10n="U" oldref="235">Conditional Brackets</paragraph>
 <paragraph role="paragraph" id="par_id3155312" xml-lang="en-US" l10n="U" oldref="112">You can define a number format so that it only applies when the condition that you specify is met. Conditions are enclosed by square brackets [ ].</paragraph>
@@ -235,7 +229,7 @@
 <embed href="text/shared/01/05020300.xhp#waehrungtext"/>
 <paragraph role="heading" id="hd_id3157309" xml-lang="en-US" level="2" l10n="U" oldref="238">Date and Time Formats</paragraph>
 <paragraph role="heading" id="hd_id3153740" xml-lang="en-US" level="3" l10n="U" oldref="37">Date Formats</paragraph>
-<paragraph role="paragraph" id="par_id3152791" xml-lang="en-US" l10n="U" oldref="38">To display days, months and years, use the following number format codes. </paragraph>
+<paragraph role="paragraph" id="par_id3152791" xml-lang="en-US" l10n="U" oldref="38">To display days, months and years, use the following number format codes.</paragraph>
 <paragraph role="warning" id="par_id610980" xml-lang="en-US" l10n="NEW">Not all format codes give meaningful results for all languages.</paragraph>
 <table id="tbl_id3147426">
 <tablerow>
@@ -415,8 +409,7 @@
 </tablecell>
 </tablerow>
 </table>
-
-<paragraph role="paragraph" id="par_id1002200811423518" xml-lang="en-US" l10n="NEW">The above listed formatting codes work with your language version of %PRODUCTNAME. However, when you need to switch the locale of %PRODUCTNAME to another locale, you will need to know the formatting codes used in that other locale. </paragraph>
+<paragraph role="paragraph" id="par_id1002200811423518" xml-lang="en-US" l10n="NEW">The above listed formatting codes work with your language version of %PRODUCTNAME. However, when you need to switch the locale of %PRODUCTNAME to another locale, you will need to know the formatting codes used in that other locale.</paragraph>
 <paragraph role="paragraph" id="par_id1002200811423556" xml-lang="en-US" l10n="NEW">For example, if your software is set to an English locale, and you want to format a year with four digits, you enter YYYY as a formatting code. When you switch to a German locale, you must use JJJJ instead. The following table lists only the localized differences.</paragraph>
 <table id="tbl_id1002200811465915">
 <tablerow>
@@ -659,7 +652,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="heading" id="hd_id3149929" xml-lang="en-US" level="3" l10n="U" oldref="227">Entering Dates</paragraph>
 <paragraph role="paragraph" id="par_id3148397" xml-lang="en-US" l10n="U" oldref="228">To enter a date in a cell, use the Gregorian calendar format. For example, in an English locale, enter 1/2/2002 for Jan 2, 2002.</paragraph>
 <paragraph role="paragraph" id="par_id3153274" xml-lang="en-US" l10n="U" oldref="137">All date formats are dependent on the locale that is set in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language settings - Languages</emph>. For example, if your locale is set to 'Japanese', then the Gengou calendar is used. The default date format in <item type="productname">%PRODUCTNAME</item> uses the Gregorian Calendar.</paragraph>
@@ -730,9 +722,7 @@
 </tablecell>
 </tablerow>
 </table>
-
-<paragraph role="paragraph" id="par_id3152419" xml-lang="en-US" l10n="U" oldref="140"><switchinline select="appl"><caseinline select="CALC">If you perform a calculation that involves one or more cells using a date format, the result is formatted according to the following mappings: 
-</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3152419" xml-lang="en-US" l10n="U" oldref="140"><switchinline select="appl"><caseinline select="CALC">If you perform a calculation that involves one or more cells using a date format, the result is formatted according to the following mappings:</caseinline></switchinline></paragraph>
 <switch select="appl">
 <case select="CALC">
 <table id="tbl_id3150490">
@@ -825,11 +815,9 @@
 </tablecell>
 </tablerow>
 </table>
-
 </case>
 </switch>
-<paragraph role="paragraph" id="par_id3149174" xml-lang="en-US" l10n="U" oldref="163"><switchinline select="appl"><caseinline select="CALC">The Date&amp;Time format displays the date and time that an entry was made to a cell with this format. 
-</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3149174" xml-lang="en-US" l10n="U" oldref="163"><switchinline select="appl"><caseinline select="CALC">The Date&amp;Time format displays the date and time that an entry was made to a cell with this format.</caseinline></switchinline></paragraph>
 <switch select="appl">
 <case select="CALC"><embed href="text/shared/optionen/01010600.xhp#jahreszahlen"/>
 <paragraph role="note" id="par_id3143225" xml-lang="en-US" l10n="U" oldref="164">In <item type="productname">%PRODUCTNAME</item>, a date with the value "0" corresponds to Dec 30, 1899.</paragraph>
@@ -895,7 +883,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="note" id="par_id3156039" xml-lang="en-US" l10n="U" oldref="77">To display seconds as fractions, add the decimal delimiter to your number format code. For example, enter <emph>hh:mm:ss.00</emph> to display the time as "01:02:03.45".<comment>Translators: use the decimal delimiter of your language (period or comma) for all number format codes in Calc.</comment></paragraph>
 <paragraph role="paragraph" id="par_id3148649" xml-lang="en-US" l10n="U" oldref="102">If a time is entered in the form 02:03.45 or 01:02:03.45 or 25:01:02, the following formats are assigned if no other time format has been specified: MM:SS.00 or [HH]:MM:SS.00 or [HH]:MM:SS<comment>Translators: use the decimal delimiter of your language (period or comma) for all number format codes in Calc.</comment></paragraph>
 <paragraph role="heading" id="hd_id3158404" xml-lang="en-US" level="2" l10n="U" oldref="169">Displaying Numbers Using Native Characters</paragraph>
@@ -1102,6 +1089,5 @@
 </tablecell>
 </tablerow>
 </table>
-
 </body>
 </helpdocument>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,35 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidetabsxml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Inserting and Editing Tab Stops</title>
 <filename>/text/shared/guide/tabs.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2007-01-16T15:01:20">UFI: edited link in par_id3151059 and text in 3146972 to fix #i21542#
-added intro text to give info about scope
-FPE: Deleted screenshot.</lastedited>
-</history>
+<comment>edited link in par_id3151059 and text in 3146972 to fix #i21542#, added intro text to give info about scope, deleted screenshot</comment>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3144436"><bookmark_value>tab stops; inserting and editing</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144436">
+<bookmark_value>tab stops; inserting and editing</bookmark_value>
 <bookmark_value>paragraphs; tab stops</bookmark_value>
 <bookmark_value>defaults;tab stops in text</bookmark_value>
 <bookmark_value>editing; tab stops</bookmark_value>
@@ -69,7 +62,7 @@ FPE: Deleted screenshot.</lastedited>
 </listitem>
 </list>
 <paragraph role="paragraph" id="par_id6178167" xml-lang="en-US" l10n="NEW">In the following, you find instructions for all above mentioned tasks.</paragraph>
-<paragraph role="paragraph" id="par_id3147008" xml-lang="en-US" l10n="U" oldref="27">You can set a tab stop by clicking on the ruler or by selecting <emph>Format - Paragraph - Tabs.</emph> Both methods affect the current paragraph or all selected paragraphs.</paragraph>
+<paragraph role="paragraph" id="par_id3147008" xml-lang="en-US" l10n="U" oldref="27">You can set a tab stop by clicking on the ruler or by selecting <emph>Format - Paragraph - Tabs</emph>. Both methods affect the current paragraph or all selected paragraphs.</paragraph>
 <paragraph role="paragraph" id="par_id3155136" xml-lang="en-US" l10n="U" oldref="5">Click the ruler once to set a left-justified tab. Right-click a tab icon on the ruler to see the context menu in which you can change the tab type.</paragraph>
 <paragraph role="paragraph" id="par_id3153561" xml-lang="en-US" l10n="U" oldref="29">To set several decimal tabs one after the other, keep clicking the icon to the left of the ruler until the desired tab type is shown, then click on the ruler.</paragraph>
 <table id="tbl_id3154860">
@@ -85,7 +78,7 @@ FPE: Deleted screenshot.</lastedited>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3151245" xml-lang="en-US" l10n="E">
 <image id="img_id3145609" src="res/helpimg/swh00177.png" width="0.2228inch" height="0.2228inch"><alt id="alt_id3145609" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3154760" xml-lang="en-US" l10n="U" oldref="7">Setting left tabs</paragraph>
@@ -95,7 +88,7 @@ FPE: Deleted screenshot.</lastedited>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3150358" xml-lang="en-US" l10n="E">
 <image id="img_id3150541" src="res/helpimg/swh00178.png" width="0.2228inch" height="0.2228inch"><alt id="alt_id3150541" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3145419" xml-lang="en-US" l10n="U" oldref="8">Setting right tabs</paragraph>
@@ -105,7 +98,7 @@ FPE: Deleted screenshot.</lastedited>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3152933" xml-lang="en-US" l10n="E">
 <image id="img_id3153192" src="res/helpimg/swh00179.png" width="0.2228inch" height="0.2228inch"><alt id="alt_id3153192" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3151043" xml-lang="en-US" l10n="U" oldref="9">Setting decimal tabs</paragraph>
@@ -115,14 +108,13 @@ FPE: Deleted screenshot.</lastedited>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3150440" xml-lang="en-US" l10n="E">
 <image id="img_id3149560" src="res/helpimg/swh00180.png" width="0.2228inch" height="0.2228inch"><alt id="alt_id3149560" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3153091" xml-lang="en-US" l10n="U" oldref="10">Setting centered tabs</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3154150" xml-lang="en-US" l10n="U" oldref="11">Double-click the ruler to open the <link href="text/shared/01/05030300.xhp" name="Paragraph"><emph>Paragraph</emph></link> dialog.</paragraph>
 <paragraph role="paragraph" id="par_id3154145" xml-lang="en-US" l10n="U" oldref="12">Double-click the white area of the ruler to set one tab. The <emph>Paragraph</emph> dialog appears with the <emph>Tabs</emph> tab page open.</paragraph>
 <paragraph role="heading" id="hd_id3145748" xml-lang="en-US" level="3" l10n="U" oldref="21">Moving Tabs on the Ruler</paragraph>

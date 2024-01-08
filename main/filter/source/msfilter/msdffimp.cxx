@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 #include <limits.h>
 #include <vector>
 #include <osl/endian.h>
-#include <tools/solar.h>               // UINTXX
+#include <tools/solar.h> // UINTXX
 #include <rtl/math.hxx>
 
 #include <sot/clsids.hxx>
@@ -159,7 +159,7 @@ static sal_uInt32 nMSOleObjCntr = 0;
 void Impl_OlePres::Write( SvStream & rStm )
 {
 	WriteClipboardFormat( rStm, FORMAT_GDIMETAFILE );
-	rStm << (sal_Int32)(nJobLen +4);       // immer leeres TargetDevice
+	rStm << (sal_Int32)(nJobLen +4); // immer leeres TargetDevice
 	if( nJobLen )
 		rStm.Write( pJob, nJobLen );
 	rStm << (sal_uInt32)nAspect;
@@ -800,7 +800,7 @@ static basegfx::B2DPolygon GetLineArrow( const sal_Int32 nLineWidth, const MSO_L
 {
 	basegfx::B2DPolygon aRetval;
 	// 70 100mm = 2pt = 40 twip. In MS, line width less than 2pt has the same size arrow as 2pt
-	//If the unit is twip. Make all use this unit especailly the critical value 70/40. 
+	//If the unit is twip. Make all use this unit especially the critical value 70/40.
 	sal_Int32 	nLineWidthCritical = bScaleArrow ? 40 : 70;
 	double		fLineWidth = nLineWidth < nLineWidthCritical ? nLineWidthCritical : nLineWidth;;
 	double		fLenghtMul, fWidthMul;
@@ -1102,7 +1102,7 @@ struct ShadeColor
 	Color		aColor;
 	double		fDist;
 
-	ShadeColor( const Color& rC, double fR ) : aColor( rC ), fDist( fR ) {}; 
+	ShadeColor( const Color& rC, double fR ) : aColor( rC ), fDist( fR ) {};
 };
 
 void GetShadeColors( const SvxMSDffManager& rManager, const DffPropertyReader& rProperties, SvStream& rIn, std::vector< ShadeColor >& rShadeColors )
@@ -1164,7 +1164,7 @@ void ApplyRectangularGradientAsBitmap( const SvxMSDffManager& rManager, SvStream
 				{
 					double fX = static_cast< double >( nX ) / aBitmapSizePixel.Width();
 					double fY = static_cast< double >( nY ) / aBitmapSizePixel.Height();
-										
+
 					double fD, fDist;
 					if ( fX < fFocusX )
 					{
@@ -1202,7 +1202,7 @@ void ApplyRectangularGradientAsBitmap( const SvxMSDffManager& rManager, SvStream
 					}
 					if ( fD != 0.0 )
 						fDist /= fD;
-					
+
 					std::vector< ShadeColor >::const_iterator aIter( rShadeColors.begin() );
 					double fA = 0.0;
 					Color aColorA = aIter->aColor;
@@ -1227,7 +1227,7 @@ void ApplyRectangularGradientAsBitmap( const SvxMSDffManager& rManager, SvStream
 							}
 						}
 						aIter++;
-					}			
+					}
 					double fRed = aColorA.GetRed(), fGreen = aColorA.GetGreen(), fBlue = aColorA.GetBlue();
 					double fD1 = fB - fA;
 					if ( fD1 != 0.0 )
@@ -1260,7 +1260,7 @@ void ApplyRectangularGradientAsBitmap( const SvxMSDffManager& rManager, SvStream
 						aQuantErrNextScan[ nX - 1 ].fBlue += 3.0 * fErr / 16.0;
 					aQuantErrNextScan[ nX ].fBlue += 5.0 * fErr / 16.0;
 					aQuantErrNextScan[ nX + 1 ].fBlue += 1.0 * fErr / 16.0;
-*/					
+*/
 					if ( nRed < 0 )
 						nRed = 0;
 					if ( nRed > 255 )
@@ -1304,7 +1304,7 @@ void ApplyRectangularGradientAsBitmap( const SvxMSDffManager& rManager, SvStream
 				if ( bRotateWithShape )
 				{
 					aBitmap.Rotate( nFix16Angle / 10, rShadeColors[ 0 ].aColor );
-		
+
 					sal_uLong nMirrorFlags = BMP_MIRROR_NONE;
 					if ( rObjData.nSpFlags & SP_FFLIPV )
 						nMirrorFlags |= BMP_MIRROR_VERT;
@@ -1373,7 +1373,7 @@ void DffPropertyReader::ApplyFillAttributes( SvStream& rIn, SfxItemSet& rSet, co
 		double dBackTrans = 1.0;
 		if (IsProperty(DFF_Prop_fillOpacity))
 		{
-			dTrans = GetPropertyValue(DFF_Prop_fillOpacity) / 65536.0;			
+			dTrans = GetPropertyValue(DFF_Prop_fillOpacity) / 65536.0;
 			if ( eXFill != XFILL_GRADIENT )
 			{
 				dTrans = dTrans * 100;
@@ -1408,10 +1408,10 @@ void DffPropertyReader::ApplyFillAttributes( SvStream& rIn, SfxItemSet& rSet, co
 					if ( eMSO_FillType == mso_fillPattern )
 					{
 						Color aCol1( COL_WHITE ), aCol2( COL_WHITE );
-						
+
                         if ( IsProperty( DFF_Prop_fillColor ) )
 							aCol1 = rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillColor ), DFF_Prop_fillColor );
-						
+
                         if ( IsProperty( DFF_Prop_fillBackColor ) )
 							aCol2 = rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillBackColor ), DFF_Prop_fillBackColor );
 
@@ -2335,7 +2335,7 @@ void DffPropertyReader::ApplyCustomShapeGeometryAttributes( SvStream& rIn, SfxIt
 								case 0x0:
 								{
 									//It is msopathEscapeExtension which is transformed into LINETO.
-									//If issue happens, I think this part can be comment so that it will be taken as unknow command.
+									//If issue happens, I think this part can be comment so that it will be taken as unknown command.
 									//When export, origin data will be export without any change.
 									nCommand = EnhancedCustomShapeSegmentCommand::LINETO;
 									if ( !nCnt )
@@ -2713,7 +2713,7 @@ void DffPropertyReader::ApplyAttributes( SvStream& rIn, SfxItemSet& rSet, DffObj
 
         // #124477# Found no reason not to set shadow, esp. since it is applied to evtl. existing text
         // and will lead to an error of in PPT someone used text and added the object shadow to the
-        // object carryintg that text. I found no cases where this leads to problems (the old bugtracker 
+        // object carrying that text. I found no cases where this leads to problems (the old bugtracker
         // task #160376# from sj is unfortunately no longer available). Keeping the code for now
         // to allow easy fallback when this shows problems in the future
         if(bCheckShadow)
@@ -2744,7 +2744,7 @@ void DffPropertyReader::ApplyAttributes( SvStream& rIn, SfxItemSet& rSet, DffObj
                     break;
                     // case mso_fillBackground :
                     default:
-                        nFillFlags &=~0x10;			// no fillstyle used	
+                        nFillFlags &=~0x10;			// no fillstyle used
                     break;
                 }
             }
@@ -2896,8 +2896,8 @@ void DffPropertyReader::ImportGradientColor( SfxItemSet& aSet,MSO_FillType eMSO_
 	while ( nAngle < 0 ) nAngle += 3600;
 
 	XGradientStyle eGrad = XGRAD_LINEAR;
-	
-	sal_Int32 nFocus = GetPropertyValue( DFF_Prop_fillFocus, 0 );	
+
+	sal_Int32 nFocus = GetPropertyValue( DFF_Prop_fillFocus, 0 );
 	if ( !nFocus )
 		nChgColors ^= 1;
 	else if ( nFocus < 0 )//If it is a negative focus, the color will be swapped
@@ -2905,7 +2905,7 @@ void DffPropertyReader::ImportGradientColor( SfxItemSet& aSet,MSO_FillType eMSO_
 		nFocus = -nFocus;
 		nChgColors ^= 1;
 	}
-	
+
 	if( nFocus > 40 && nFocus < 60 )
 	{
 		eGrad = XGRAD_AXIAL;//A axial gradient other than linear
@@ -2915,7 +2915,7 @@ void DffPropertyReader::ImportGradientColor( SfxItemSet& aSet,MSO_FillType eMSO_
 	//Core function does no need them. They serves for rect gradient(CenterXY).
 	sal_uInt16 nFocusX = (sal_uInt16)nFocus;
 	sal_uInt16 nFocusY = (sal_uInt16)nFocus;
-	
+
 	switch( eMSO_FillType )
 	{
 	case mso_fillShadeShape :
@@ -2928,10 +2928,10 @@ void DffPropertyReader::ImportGradientColor( SfxItemSet& aSet,MSO_FillType eMSO_
 	case mso_fillShadeCenter :
 		{
 			eGrad = XGRAD_RECT;
-			//A MS fillTo prop specifies the relative position of the left boundary 
+			//A MS fillTo prop specifies the relative position of the left boundary
 			//of the center rectangle in a concentric shaded fill. Use 100 or 0 to keep fidelity
 			nFocusX=(GetPropertyValue( DFF_Prop_fillToRight, 0 )==0x10000) ? 100 : 0;
-			nFocusY=(GetPropertyValue( DFF_Prop_fillToBottom,0 )==0x10000) ? 100 : 0;			
+			nFocusY=(GetPropertyValue( DFF_Prop_fillToBottom,0 )==0x10000) ? 100 : 0;
 			nChgColors ^= 1;
 		}
 		break;
@@ -2939,7 +2939,7 @@ void DffPropertyReader::ImportGradientColor( SfxItemSet& aSet,MSO_FillType eMSO_
 	}
 
 	Color aCol1( rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillColor, COL_WHITE ), DFF_Prop_fillColor ) );
-	Color aCol2( rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillBackColor, COL_WHITE ), DFF_Prop_fillBackColor ) );	
+	Color aCol2( rManager.MSO_CLR_ToColor( GetPropertyValue( DFF_Prop_fillBackColor, COL_WHITE ), DFF_Prop_fillBackColor ) );
 	if ( nChgColors )
 	{
 		//Swap start and end color
@@ -2951,21 +2951,21 @@ void DffPropertyReader::ImportGradientColor( SfxItemSet& aSet,MSO_FillType eMSO_
 		dTrans = dBackTrans;
 		dBackTrans = dTemp;
 	}
-	
+
 	//Construct gradient item
 	XGradient aGrad( aCol2, aCol1, eGrad, nAngle, nFocusX, nFocusY );
 	//Intensity has been merged into color. So here just set is as 100
 	aGrad.SetStartIntens( 100 );
 	aGrad.SetEndIntens( 100 );
 	aSet.Put( XFillGradientItem( String(), aGrad ) );
-	//Construct tranparency item. This item can coodinate with both solid and gradient.
+	//Construct transparency item. This item can coordinate with both solid and gradient.
 	if ( dTrans < 1.0 || dBackTrans < 1.0 )
 	{
 		sal_uInt8 nStartCol = (sal_uInt8)( (1 - dTrans )* 255 );
 		sal_uInt8 nEndCol = (sal_uInt8)( ( 1- dBackTrans ) * 255 );
 		aCol1 = Color(nStartCol, nStartCol, nStartCol);
 		aCol2 = Color(nEndCol, nEndCol, nEndCol);
-		
+
 		XGradient aGrad2( aCol2 ,  aCol1 , eGrad, nAngle, nFocusX, nFocusY );
 		aSet.Put( XFillFloatTransparenceItem( String(), aGrad2 ) );
 	}
@@ -3360,13 +3360,13 @@ FASTBOOL SvxMSDffManager::SeekToRec( SvStream& rSt, sal_uInt16 nRecId, sal_uLong
 		rSt >> aHd;
 
         // check potential error reading and if seeking to the end of record is possible at all.
-        // It is probably cheaper instead of doing the file seek operation 
+        // It is probably cheaper instead of doing the file seek operation
         if ( rSt.GetError() || ( aHd.GetRecEndFilePos() >  nMaxFilePos ) )
         {
             bRet= sal_False;
             break;
         }
-        
+
 		if ( aHd.nRecType == nRecId )
 		{
 			if ( nSkipCount )
@@ -3430,10 +3430,10 @@ FASTBOOL SvxMSDffManager::GetColorFromPalette( sal_uInt16 /* nNum */, Color& rCo
 
 // sj: the documentation is not complete, especially in ppt the normal rgb for text
 // color is written as 0xfeRRGGBB, this can't be explained by the documentation, nearly
-// every bit in the upper code is set -> so there seems to be a special handling for 
+// every bit in the upper code is set -> so there seems to be a special handling for
 // ppt text colors, i decided not to fix this in MSO_CLR_ToColor because of possible
-// side effects, instead MSO_TEXT_CLR_ToColor is called for PPT text colors, to map 
-// the color code to something that behaves like the other standard color codes used by 
+// side effects, instead MSO_TEXT_CLR_ToColor is called for PPT text colors, to map
+// the color code to something that behaves like the other standard color codes used by
 // fill and line color
 Color SvxMSDffManager::MSO_TEXT_CLR_ToColor( sal_uInt32 nColorCode ) const
 {
@@ -3457,11 +3457,11 @@ Color SvxMSDffManager::MSO_CLR_ToColor( sal_uInt32 nColorCode, sal_uInt16 nConte
 	Color aColor( mnDefaultColor );
 
 	// Fuer Textfarben: Header ist 0xfeRRGGBB
-	if ( ( nColorCode & 0xfe000000 ) == 0xfe000000 )	// sj: it needs to be checked if 0xfe is used in 
+	if ( ( nColorCode & 0xfe000000 ) == 0xfe000000 )	// sj: it needs to be checked if 0xfe is used in
 		nColorCode &= 0x00ffffff;						// other cases than ppt text -> if not this code can be removed
 
 	sal_uInt8 nUpper = (sal_uInt8)( nColorCode >> 24 );
-    
+
 	// sj: below change from 0x1b to 0x19 was done because of i84812 (0x02 -> rgb color),
 	// now I have some problems to fix i104685 (there the color value is 0x02000000 whichs requires
 	// a 0x2 scheme color to be displayed properly), the color docu seems to be incomplete
@@ -3670,7 +3670,7 @@ Color SvxMSDffManager::MSO_CLR_ToColor( sal_uInt32 nColorCode, sal_uInt16 nConte
 		}
 	}
 	else if ( ( nUpper & 4 ) && ( ( nColorCode & 0xfffff8 ) == 0 ) )
-	{	// case of nUpper == 4 powerpoint takes this as agrument for a colorschemecolor
+	{	// case of nUpper == 4 powerpoint takes this as argument for a colorschemecolor
 		GetColorFromPalette( nUpper, aColor );
 	}
 	else	// hart attributiert, eventuell mit Hinweis auf SYSTEMRGB
@@ -3693,7 +3693,7 @@ void SvxMSDffManager::ReadObjText( const String& rText, SdrObject* pObj ) const
 		rOutliner.SetUpdateMode( sal_False );
 		rOutliner.SetVertical( pText->IsVerticalWriting() );
 
-		sal_uInt16 nParaIndex = 0;
+		sal_uInt32 nParaIndex = 0;
 		sal_uInt32 nParaSize;
 		const sal_Unicode* pCurrent, *pBuf = rText.GetBuffer();
 		const sal_Unicode* pEnd = rText.GetBuffer() + rText.Len();
@@ -3969,7 +3969,7 @@ SdrObject* SvxMSDffManager::ImportGraphic( SvStream& rSt, SfxItemSet& rSet, cons
 		}
 		if ( bGrfRead )
 		{
-			// the writer is doing it's own cropping, so this part affects only impress and calc
+			// the writer is doing its own cropping, so this part affects only Impress and Calc
 			if ( GetSvxMSDffSettings() & SVXMSDFF_SETTINGS_CROP_BITMAPS )
 				lcl_ApplyCropping( *this, ( rObjData.nSpFlags & SP_FOLESHAPE ) == 0 ? &rSet : NULL, aGraf );
 
@@ -4312,10 +4312,10 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 			rSt >> nPID;
 			if ( rSt.GetError() != 0 )
 				break;
-			rSt >> nUDData;						
+			rSt >> nUDData;
 			if ( rSt.GetError() != 0 )
 				break;
-			if ( nPID == 447 ) // 
+			if ( nPID == 447 )
 			{
 				mbRotateGranientFillWithAngle = nUDData & 0x20;
 				break;
@@ -4352,7 +4352,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 	aObjData.bOpt = maShapeRecords.SeekToContent( rSt, DFF_msofbtOPT, SEEK_FROM_CURRENT_AND_RESTART );
 	if ( aObjData.bOpt )
 	{
-        maShapeRecords.Current()->SeekToBegOfRecord( rSt );
+		maShapeRecords.Current()->SeekToBegOfRecord( rSt );
 #ifdef DBG_AUTOSHAPE
 		ReadPropSet( rSt, pClientData, (sal_uInt32)aObjData.eShapeType );
 #else
@@ -4375,13 +4375,13 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 	aObjData.bChildAnchor = maShapeRecords.SeekToContent( rSt, DFF_msofbtChildAnchor, SEEK_FROM_CURRENT_AND_RESTART );
 	if ( aObjData.bChildAnchor )
 	{
-        sal_Int32 l, o, r, u;
-        rSt >> l >> o >> r >> u;
-        Scale( l );
-        Scale( o );
-        Scale( r );
-        Scale( u );
-        aObjData.aChildAnchor = Rectangle( l, o, r, u );
+		sal_Int32 l, o, r, u;
+		rSt >> l >> o >> r >> u;
+		Scale( l );
+		Scale( o );
+		Scale( r );
+		Scale( u );
+		aObjData.aChildAnchor = Rectangle( l, o, r, u );
 		if ( !rGlobalChildRect.IsEmpty() && !rClientRect.IsEmpty() && rGlobalChildRect.GetWidth() && rGlobalChildRect.GetHeight() )
 		{
 			double fl = l;
@@ -4409,7 +4409,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 		aObjData.aBoundRect = Rectangle( Point(), Size( 1, 1 ) );
 
 	Rectangle aTextRect;
-    if ( !aObjData.aBoundRect.IsEmpty() )
+	if ( !aObjData.aBoundRect.IsEmpty() )
 	{	// Rotation auf BoundingBox anwenden, BEVOR ien Objekt generiert wurde
 		if( mnFix16Angle )
 		{
@@ -4548,7 +4548,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 						}
 						if ( GetPropertyValue( DFF_Prop_gtextFStrikethrough, 0 ) & 0x1000 )	// SJ: Font Kerning On ?
 							aSet.Put( SvxKerningItem( 1, EE_CHAR_KERNING ) );
-						
+
                         // #119496# the resize autoshape to fit text attr of word art in MS PPT is always false
 						aSet.Put( SdrTextAutoGrowHeightItem( sal_False ) );
 						aSet.Put( SdrTextAutoGrowWidthItem( sal_False ) );
@@ -4581,9 +4581,9 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 									sal_Bool bIsRTL = aVirDev.GetTextIsRTL( rOutliner.GetText( rOutliner.GetParagraph( i ) ), 0, STRING_LEN );
 									if ( bIsRTL )
 									{
-										SfxItemSet aSet2( rOutliner.GetParaAttribs( (sal_uInt16)i ) );
+										SfxItemSet aSet2( rOutliner.GetParaAttribs( i ) );
 										aSet2.Put( SvxFrameDirectionItem( FRMDIR_HORI_RIGHT_TOP, EE_PARA_WRITINGDIR ) );
-										rOutliner.SetParaAttribs( (sal_uInt16)i, aSet2 );
+										rOutliner.SetParaAttribs( i, aSet2 );
 										bCreateNewParaObject = sal_True;
 									}
 								}
@@ -4602,7 +4602,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 					// mso_sptArc special treating:
 					// sj: since we actually can't render the arc because of its weird SnapRect settings,
 					// we will create a new CustomShape, that can be saved/loaded without problems.
-					// We will change the shape type, so this code applys only if importing arcs from msoffice.
+					// We will change the shape type, so this code applies only if importing arcs from msoffice.
 					if ( aObjData.eShapeType == mso_sptArc )
 					{
 						const rtl::OUString	sAdjustmentValues( RTL_CONSTASCII_USTRINGPARAM ( "AdjustmentValues" ) );
@@ -4638,7 +4638,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 							aPolyBoundRect = Rectangle( aXP.GetBoundRect() );
 							if ( nNumElemVert >= 3 )
 							{ // arc first command is always wr -- clockwise arc
-								// the parameters are : (left,top),(right,bottom),start(x,y),end(x,y) 
+								// the parameters are : (left,top),(right,bottom),start(x,y),end(x,y)
 								aStartPt = aXP[2];
 							}
 						}
@@ -4965,7 +4965,7 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 		MSDFFReadZString( rSt, aAltText, GetPropertyValue( DFF_Prop_wzDescription ), sal_True );
 		pRet->SetDescription( aAltText );
 	}
-    
+
 	return pRet;
 }
 
@@ -5008,7 +5008,7 @@ Rectangle SvxMSDffManager::GetGlobalChildAnchor( const DffRecordHeader& rHd, SvS
 						Scale( t );
 						Scale( r );
 						Scale( b );
-						if ( bIsClientRectRead ) 
+						if ( bIsClientRectRead )
 						{
 							Rectangle aChild( l, t, r, b );
 							aChildAnchor.Union( aChild );
@@ -6071,11 +6071,11 @@ void SvxMSDffManager::GetDrawingGroupContainerData( SvStream& rSt, sal_uLong nLe
                 rSt >> nBLIPLen;
 
                 // #125187# do not simply skip these four bytes, but read them. This value
-                // is zero when the BLIP is embedded to the FBSE directly following in the 
+                // is zero when the BLIP is embedded to the FBSE directly following in the
                 // stream, else 1. Use this as hint to be more reliable (see below)
                 rSt >> nBLIPPos;
 
-                // #125476# Taking back this change - see issue. It probably was a wrong assumtion
+                // #125476# Taking back this change - see issue. It probably was a wrong assumption
                 // if(0 == nBLIPPos)
                 // {
                 //     bBLIPIsDirectlyEmbedded = true;
@@ -6089,20 +6089,20 @@ void SvxMSDffManager::GetDrawingGroupContainerData( SvStream& rSt, sal_uLong nLe
 
 			if( bOk )
 			{
-                // #125187# the original check to test if the BLIP is following embeded in the FBSE was
+                // #125187# the original check to test if the BLIP is following embedded in the FBSE was
                 // was (!nBLIPPos && nBLIPLen < nLenFBSE), but there are ppt documents
                 // where this is not sufficient (what means that for BLIPs in the picture
                 // stream the same conditions can be true sometimes). I experimented with various
                 // ppt files and detected that the four bytes before reading the nBLIPPos
                 // contain a flag which describes that embedding more reliable, thus I will
                 // use it here now in the form of the bBLIPIsDirectlyEmbedded variable (see above).
-                // This modification works with all ppt files I found which use directly embedded 
+                // This modification works with all ppt files I found which use directly embedded
                 // BLIPs and with the file which showed the error. More work may be needed when
                 // exceptions to this more strict schema may show up, though.
                 //
                 // #125476# back to original - see task. Keeping the change in the code as hint
                 // if this comes up again for someone who tries to fix it. This would show that
-                // indeed the information that the blip is embedded needs to be extracted somwhere
+                // indeed the information that the blip is embedded needs to be extracted somewhere
                 // and would need to be re-evaluated.
                 if(0 == nBLIPPos && nBLIPLen < nLenFBSE ) // #125476# && bBLIPIsDirectlyEmbedded)
                 {
@@ -7676,12 +7676,12 @@ SvxMSDffImportRec::SvxMSDffImportRec(const SvxMSDffImportRec& rCopy)
 
 SvxMSDffImportRec::~SvxMSDffImportRec()
 {
-    if (pClientAnchorBuffer)
-        delete[] pClientAnchorBuffer;
-    if (pClientDataBuffer)
-        delete[] pClientDataBuffer;
-    if (pWrapPolygon)
-        delete pWrapPolygon;
+	if (pClientAnchorBuffer)
+		delete[] pClientAnchorBuffer;
+	if (pClientDataBuffer)
+		delete[] pClientDataBuffer;
+	if (pWrapPolygon)
+		delete pWrapPolygon;
 }
 
 /* vi:set tabstop=4 shiftwidth=4 expandtab: */
@@ -7711,3 +7711,5 @@ SdrObject* SvxMSDffManager::getShapeForId( sal_Int32 nShapeId )
 	SvxMSDffShapeIdContainer::iterator aIter( maShapeIdContainer.find(nShapeId) );
 	return aIter != maShapeIdContainer.end() ? (*aIter).second : 0;
 }
+
+/* vim: set noet sw=4 ts=4: */

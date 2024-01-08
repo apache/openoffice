@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ class ErrorEntry;
 
 class BASIC_DLLPUBLIC BasicError {
 	AppBasEd* pWin;
-	sal_uInt16  nLine, nCol1, nCol2;
+	sal_uInt16 nLine, nCol1, nCol2;
 	String aText;
 public:
 	BasicError( AppBasEd*, sal_uInt16, const String&, sal_uInt16, sal_uInt16, sal_uInt16 );
@@ -47,7 +47,7 @@ DECLARE_LIST( ErrorList, BasicError* )
 
 class BASIC_DLLPUBLIC MyBasic : public StarBASIC
 {
-    SbError nError;
+	SbError nError;
 	virtual sal_Bool ErrorHdl();
 	virtual sal_uInt16 BreakHdl();
 
@@ -55,7 +55,7 @@ protected:
 	Link GenLogHdl();
 	Link GenWinInfoHdl();
 	Link GenModuleWinExistsHdl();
-    Link GenWriteStringHdl();
+	Link GenWriteStringHdl();
 
 	virtual void StartListeningTT( SfxBroadcaster &rBroadcaster );
 
@@ -71,14 +71,14 @@ public:
 	void Reset();
 	SbError GetErrors() { return nError; }
 
-        // Do not use #ifdefs here because this header file is both used for testtool and basic
-	SbxObject *pTestObject; // for Testool; otherwise NULL
+		// Do not use #ifdefs here because this header file is both used for testtool and basic
+	SbxObject *pTestObject; // for Testtool; otherwise NULL
 
 	virtual void LoadIniFile();
 
-    // Determines the extended symbol type for syntax highlighting	
-    virtual SbTextType GetSymbolType( const String &Symbol, sal_Bool bWasTTControl );
-	virtual const String GetSpechialErrorText();
+	// Determines the extended symbol type for syntax highlighting
+	virtual SbTextType GetSymbolType( const String &Symbol, sal_Bool bWasTTControl );
+	virtual const String GetSpecialErrorText();
 	virtual void ReportRuntimeError( AppBasEd *pEditWin );
 	virtual void DebugFindNoErrors( sal_Bool bDebugFindNoErrors );
 
@@ -89,3 +89,5 @@ public:
 SV_DECL_IMPL_REF(MyBasic)
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

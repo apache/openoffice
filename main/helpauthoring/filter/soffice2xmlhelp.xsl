@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding="UTF-8"?>
 
-<!-- 
-  FILTER FOR OPENOFFICE.ORG 2+ 
-  v2.0BETA7 - Sep 07 2009
+<!--
+FILTER FOR OPENOFFICE 2+
 -->
 
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="1.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
 		xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
@@ -29,10 +28,10 @@
 		xmlns:dom="http://www.w3.org/2001/xml-events"
 		xmlns:xforms="http://www.w3.org/2002/xforms"
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" office:version="1.0" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" office:version="1.0"
 		exclude-result-prefixes="office meta table number dc fo xlink chart math script xsl draw svg dr3d form text style xsi xsd xforms dom oooc ooow ooo">
 
-<xsl:output method="xml" indent="no" omit-xml-declaration="no"  />
+<xsl:output method="xml" indent="no" omit-xml-declaration="no"/>
 <!--
 <xsl:output doctype-public="-//OpenOffice.org//Help Document//EN" />
 <xsl:output doctype-system="http://documentation.openoffice.org/xmlhelp.dtd" />
@@ -42,18 +41,14 @@
 
 <!--
 #############################################################################
- 
-	StarOffice Help Format Output Filter Stylesheet - Jan 26, 2006
-	==================================================================
-	(c) 2004, Sun Microsystems, Inc. - FPE
-
+OpenOffice Help Format Output Filter Stylesheet
 #############################################################################
 -->
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 META DATA
-###################################################### 
+######################################################
 -->
 <xsl:variable name="title" select="/office:document/office:meta/dc:title"/>
 <xsl:variable name="filename" select="/office:document/office:meta/dc:subject" />
@@ -85,19 +80,21 @@ META DATA
 <xsl:variable name="history_lastedited_date" select="/office:document/office:meta/dc:date"/>
 //-->
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 DOCUMENT SKELETON
-###################################################### 
+######################################################
 -->
 <xsl:template match="/">
-	
-	<helpdocument version="1.0">
+
+
 	<xsl:call-template name="lf"/>
 	<xsl:call-template name="licheader"/> <!-- inserts the license header -->
 	<xsl:call-template name="lf"/>
+	<helpdocument version="1.0">
+	<xsl:call-template name="lf"/>
 	<meta>
-	<xsl:call-template name="lf"/>		
+	<xsl:call-template name="lf"/>
 			<topic id="{$topic_id}">
 				<xsl:if test="not($topic_indexer = '')">
 					<xsl:attribute name="indexer"><xsl:value-of select="$topic_indexer"/></xsl:attribute>
@@ -129,12 +126,12 @@ DOCUMENT SKELETON
 </xsl:template>
 
 
-<!-- 
-###################################################### 
-AHELP 
-	 hid CDATA #REQUIRED
-   visibility (hidden | visible) #IMPLIED
-###################################################### 
+<!--
+######################################################
+AHELP
+	hid CDATA #REQUIRED
+  visibility (hidden | visible) #IMPLIED
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='AHID_']">
@@ -160,20 +157,20 @@ AHELP
 </xsl:template>
 
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 ALT, SEE IMAGE
   xml-lang CDATA #REQUIRED (is always en-US for the source)
   id CDATA #REQUIRED
-  localize CDATA #IMPLIED 
-###################################################### 
+  localize CDATA #IMPLIED
+######################################################
 -->
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 BODY, SEE HEADER
   # localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="office:body">
 	<xsl:apply-templates />
@@ -184,14 +181,14 @@ BODY, SEE HEADER
 </xsl:template>
 
 
-<!-- 
+<!--
 ######################################################
 BOOKMARK
   branch CDATA #REQUIRED
   xml-lang CDATA #REQUIRED (is always en-US for the source)
   id CDATA #REQUIRED
-  localize CDATA #IMPLIED 
-###################################################### 
+  localize CDATA #IMPLIED
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='BOOKMARK_']">
@@ -230,20 +227,20 @@ BOOKMARK
 &lt;/bookmark&gt;</xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
-BOOKMARK_VALUE 
-###################################################### 
+<!--
+######################################################
+BOOKMARK_VALUE
+######################################################
 -->
 <xsl:template match="text:variable-set[@text:name='BOOKMARKVALUE']">
 	<xsl:call-template name="lf" />
 	<bookmark_value><xsl:apply-templates />	</bookmark_value>
 </xsl:template>
 
-<!-- 
-###################################################### 
-BR 
-###################################################### 
+<!--
+######################################################
+BR
+######################################################
 -->
 <xsl:template match="text:line-break">
 	<xsl:variable name="style">
@@ -260,13 +257,13 @@ BR
 	</xsl:if>
 </xsl:template>
 
-<!-- 
-###################################################### 
-CAPTION 
+<!--
+######################################################
+CAPTION
   o xml-lang CDATA #REQUIRED (is always en-US for the source)
-  + id CDATA #REQUIRED   (in parent elements)
+  + id CDATA #REQUIRED (in parent elements)
   + localize CDATA #IMPLIED (in parent elements)
-###################################################### 
+######################################################
 -->
 
 <!-- distinguish between table and image caption -->
@@ -288,11 +285,11 @@ CAPTION
 	<xsl:text disable-output-escaping="yes">&lt;/caption&gt;</xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 CASE
   select CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='CASE_']">
@@ -309,11 +306,11 @@ CASE
 </xsl:template>
 
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 CASEINLINE
-  select CDATA #REQUIRED 
-###################################################### 
+  select CDATA #REQUIRED
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='CASEINLINE_']">
@@ -328,10 +325,10 @@ CASEINLINE
 &lt;/caseinline&gt;</xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
-COMMENT 
-###################################################### 
+<!--
+######################################################
+COMMENT
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='COMMENT_']">
@@ -346,17 +343,17 @@ COMMENT
 <xsl:text disable-output-escaping="yes">&lt;/comment&gt;</xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
-CREATED,  SEE HEADER
-###################################################### 
+<!--
+######################################################
+CREATED, SEE HEADER
+######################################################
 -->
 
 
-<!-- 
-###################################################### 
-DEFAULT 
-###################################################### 
+<!--
+######################################################
+DEFAULT
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='DEFAULT_']">
@@ -369,10 +366,10 @@ DEFAULT
 &lt;/default&gt;</xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
-DEFAULTINLINE 
-###################################################### 
+<!--
+######################################################
+DEFAULTINLINE
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='DEFAULTINLINE_']">
@@ -383,13 +380,13 @@ DEFAULTINLINE
 <xsl:text disable-output-escaping="yes">&lt;/defaultinline&gt;</xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 EMBED
 	href CDATA #REQUIRED
   role CDATA #IMPLIED
   level CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='EMBED']">
@@ -403,12 +400,12 @@ EMBED
 	</embed>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 EMBEDVAR
  href CDATA #REQUIRED
  markup (keep | ignore) #IMPLIED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='EMBEDVAR']">
@@ -420,39 +417,39 @@ EMBEDVAR
 	</embedvar>
 </xsl:template>
 
-<!-- 
-###################################################### 
-EMPH -> SEE TEXT:SPAN 
-###################################################### 
+<!--
+######################################################
+EMPH, SEE TEXT:SPAN
+######################################################
 -->
 
-<!-- 
-###################################################### 
-FILENAME,  SEE HEADER
-###################################################### 
+<!--
+######################################################
+FILENAME, SEE HEADER
+######################################################
 -->
 
-<!-- 
-###################################################### 
-HELPDOCUMENT,  SEE HEADER
+<!--
+######################################################
+HELPDOCUMENT, SEE HEADER
   + version CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 
-<!-- 
-###################################################### 
-HISTORY,  SEE HEADER
-###################################################### 
+<!--
+######################################################
+HISTORY, SEE HEADER
+######################################################
 -->
 
-<!-- 
-###################################################### 
-IMAGE 
+<!--
+######################################################
+IMAGE
   src CDATA #REQUIRED
   width CDATA #IMPLIED
   height CDATA #IMPLIED
   id CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='IMG_']">
@@ -466,11 +463,11 @@ IMAGE
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
-	
+
 	<xsl:variable name="width"><xsl:value-of select="following::draw:frame/@svg:width"/></xsl:variable>
 	<xsl:variable name="height"><xsl:value-of select="following::draw:frame/@svg:height"/></xsl:variable>
-	
-	
+
+
 	<xsl:variable name="localize">
 		<xsl:choose>
 			<xsl:when test="contains(following::draw:frame/@draw:name,' localize')">
@@ -481,7 +478,7 @@ IMAGE
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
-	
+
 	<xsl:variable name="src">
 		<xsl:choose>
 			<xsl:when test="contains(following::draw:frame/draw:image/@xlink:href,$imgroot)">
@@ -492,8 +489,8 @@ IMAGE
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
-	
-	
+
+
 	<xsl:text disable-output-escaping="yes">&lt;image id=&quot;</xsl:text><xsl:value-of select="$id"/><xsl:text disable-output-escaping="yes">&quot; src=&quot;</xsl:text><xsl:value-of select="$src"/>
 	<!--
 	<xsl:text disable-output-escaping="yes">&quot; width=&quot;</xsl:text>
@@ -508,8 +505,8 @@ IMAGE
 
 	<xsl:variable name="altid"><xsl:value-of select="concat('alt_',substring-after($id,'img_'))"/></xsl:variable>
 		<xsl:choose>
-			<xsl:when test="following::draw:frame/svg:title">  <!-- fixed, changed svg:desc to svg:title -->
-			
+			<xsl:when test="following::draw:frame/svg:title"><!-- fixed, changed svg:desc to svg:title -->
+
 				<alt xml-lang="en-US" id="{$altid}">
 					<xsl:choose>
 						<xsl:when test="starts-with(following::draw:frame/svg:title,'LOCALIZE=')">
@@ -523,7 +520,7 @@ IMAGE
 						</xsl:otherwise>
 					</xsl:choose>
 				</alt>
-				
+
 			</xsl:when>
 			<xsl:otherwise>
 				<alt xml-lang="en-US" id="{$altid}">
@@ -537,48 +534,48 @@ IMAGE
 <xsl:template match="text:variable-set[@text:name='_IMG']">
 	<xsl:text disable-output-escaping="yes">&lt;/image&gt;</xsl:text>
 </xsl:template>
-<!-- 
-###################################################### 
-ITEM -> SEE TEXT:SPAN
+<!--
+######################################################
+ITEM, SEE TEXT:SPAN
   + type CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 
-<!-- 
-###################################################### 
-LASTEDITED,  SEE HEADER
+<!--
+######################################################
+LASTEDITED, SEE HEADER
   + date CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 LINK
   + href CDATA #REQUIRED
   + name CDATA #REQUIRED
   + type CDATA #IMPLIED
   + target CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='LINK_']">
-	
+
 	<xsl:variable name="href">
 		<xsl:value-of select="substring-before(substring-after(.,'href=&quot;'),'&quot;')"/>
 	</xsl:variable>
-	
+
 	<xsl:variable name="type">
 		<xsl:value-of select="substring-before(substring-after(.,'type=&quot;'),'&quot;')"/>
 	</xsl:variable>
-	
+
 	<xsl:variable name="target">
 		<xsl:value-of select="substring-before(substring-after(.,'target=&quot;'),'&quot;')"/>
 	</xsl:variable>
-	
+
 	<xsl:variable name="name">
 		<xsl:value-of select="substring-before(substring-after(.,'name=&quot;'),'&quot;')"/>
 	</xsl:variable>
-	
+
 	<xsl:text disable-output-escaping="yes">&lt;link</xsl:text>
 	<xsl:value-of select="concat(' href=&quot;',$href,'&quot;')"/>
 	<xsl:if test="not($name = '')">
@@ -598,8 +595,8 @@ LINK
 </xsl:template>
 
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 LIST
   + type CDATA #REQUIRED
   + startwith CDATA #IMPLIED
@@ -607,36 +604,36 @@ LIST
   # bullet (disc | circle | square) #IMPLIED
   # localize CDATA #IMPLIED
   # sorted (asc | desc) #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="text:list">
 <xsl:param name="stylename"><xsl:value-of select="@text:style-name"/></xsl:param>
 
 	<xsl:choose>
 	<!-- ORDERED LISTS -->
-	<xsl:when test="//text:list-style[@style:name=$stylename]/text:list-level-style-number[@text:level='1']"> <!-- fixed list bug --> 
+	<xsl:when test="//text:list-style[@style:name=$stylename]/text:list-level-style-number[@text:level='1']"> <!-- fixed list bug -->
 	<xsl:text>
 </xsl:text>
 	<list type="ordered">
-	
+
 		<xsl:variable name="liststyle">
 			<xsl:call-template name="getdisplayname">
 				<xsl:with-param name="style" select="@text:style-name"/>
 			</xsl:call-template>
 		</xsl:variable>
-	
+
 		<xsl:variable name="startvalue">
-	
+
 			<xsl:choose>
-			
+
 				<xsl:when test="text:list-item[1]/@text:start-value">
 					<xsl:value-of select="text:list-item[1]/@text:start-value"/>
 				</xsl:when>
-			
+
 				<xsl:when test="//text:list-style[@style:name=$liststyle]">
 					<xsl:value-of select="//text:list-style[@style:name=$liststyle]/text:list-level-style-number[@text:level='1']/@text:start-value"/>
 				</xsl:when>
-				
+
 				<xsl:when test="@text:continue-numbering='true'">
 					<xsl:call-template name="getprevol">
 						<xsl:with-param name="node" select="."/>
@@ -644,28 +641,28 @@ LIST
 						<xsl:with-param name="ct" select="1"/>
 					</xsl:call-template>
 				</xsl:when>
-				
+
 				<xsl:otherwise>
 					<xsl:value-of select="'1'"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		
+
 	<xsl:if test="not($startvalue='1') and not($startvalue='')">
 			<xsl:attribute name="startwith">
 				<xsl:value-of select="$startvalue"/>
 			</xsl:attribute>
 		</xsl:if>
-		
+
 		<xsl:apply-templates />
 	<xsl:text>
 </xsl:text>
 	</list>
-	
-	</xsl:when>	
-	
+
+	</xsl:when>
+
 	<!-- UNORDERED LISTS -->
-	<xsl:when test="//text:list-style[@style:name=$stylename]/text:list-level-style-bullet[@text:level='1']"> <!-- fixed list bug --> 
+	<xsl:when test="//text:list-style[@style:name=$stylename]/text:list-level-style-bullet[@text:level='1']"> <!-- fixed list bug -->
 
 	<xsl:call-template name="lf"/>
 	<list type="unordered">
@@ -676,27 +673,27 @@ LIST
 		</xsl:variable>
 		<xsl:apply-templates />
 	</list>
-	
+
 	</xsl:when>
 	<xsl:otherwise>
 	<list type="UNKNOWN TYPE">
 		<xsl:apply-templates />
 	</list>
-	
+
 	</xsl:otherwise>
 	</xsl:choose>
 
 </xsl:template>
-	
-	
-<!-- 
-###################################################### 
-LISTITEM 
+
+
+<!--
+######################################################
+LISTITEM
   # format (1 | i | I | a | A) #IMPLIED
   # bullet (disc | circle | square) #IMPLIED
   # localize CDATA #IMPLIED
   # class CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="text:list-item">
 	<xsl:text>
@@ -708,21 +705,21 @@ LISTITEM
 	</listitem>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 META, SEE HEADER
-###################################################### 
+######################################################
 -->
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 OBJECT
   + type CDATA #REQUIRED
   + id CDATA #REQUIRED
   + data CDATA #REQUIRED
   + height CDATA #IMPLIED
   + width CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='OBJECT']">
@@ -746,13 +743,13 @@ OBJECT
 		<xsl:if test="not($height = '')"><xsl:attribute name="height"><xsl:value-of select="$height" /></xsl:attribute></xsl:if>
 		<xsl:if test="not($width = '')"><xsl:attribute name="width"><xsl:value-of select="$width" /></xsl:attribute></xsl:if>
 	</object>
-	
+
 </xsl:template>
 
 
-<!-- 
-###################################################### 
-PARAGRAPH 
+<!--
+######################################################
+PARAGRAPH
   + role CDATA #REQUIRED
   + level CDATA #IMPLIED
   + id CDATA #REQUIRED
@@ -760,7 +757,7 @@ PARAGRAPH
   o xml-lang CDATA #REQUIRED (is always en-US for the source)
   + oldref CDATA #IMPLIED
   + localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:h | text:p">
@@ -786,7 +783,7 @@ PARAGRAPH
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
-	
+
 	<xsl:variable name="level">
 		<xsl:choose>
 			<xsl:when test="name(.)='text:h'">
@@ -801,8 +798,8 @@ PARAGRAPH
 	<xsl:choose>
 	<xsl:when test="not(starts-with($masterstyle,'hlp_'))"/>
 	<xsl:when test="not(starts-with($masterstyle,'hlp_aux_') or ancestor::office:annotation or . = '')">
-	
-	
+
+
 		<xsl:variable name="id">
 			<xsl:choose>
 				<xsl:when test="(descendant::text:variable-set[@text:name='ID']/@text:display='none')">
@@ -814,7 +811,7 @@ PARAGRAPH
 			</xsl:choose>
 		</xsl:variable>
 
-			
+
 		<xsl:variable name="localize">
 			<xsl:choose>
 				<xsl:when test="substring($id,string-length($id)-6)='_NOL10N'">
@@ -822,19 +819,19 @@ PARAGRAPH
 				<xsl:otherwise><xsl:value-of select="'TRUE'"/></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		
+
 		<xsl:variable name="real_id">
 			<xsl:choose>
 				<xsl:when test="$localize='TRUE'"><xsl:value-of select="$id"/></xsl:when>
 				<xsl:otherwise><xsl:value-of select="substring-before($id,'_NOL10N')"/></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		
-		
+
+
 		<!-- testing only, basic would need to be adjusted and also @xml:id is not visible in the UI
 		<xsl:variable name="id" select="@xml:id"/>
 		//-->
-		
+
 		<!-- remove these, these are no longer needed. no l10n paragraphs should rather get no @xml:lang
 		<xsl:variable name="l10n">
 			<xsl:choose>
@@ -846,7 +843,7 @@ PARAGRAPH
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
-			
+
 		<xsl:variable name="oldref">
 			<xsl:choose>
 				<xsl:when test="contains(descendant::text:variable-set[@text:name='ID'],'oldref')">
@@ -854,9 +851,9 @@ PARAGRAPH
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
-		
-	//-->		
-		
+
+	//-->
+
 		<xsl:text>
 </xsl:text>
 		<paragraph id="{$real_id}" role="{$role}" xml-lang="en-US"><xsl:if test="$localize='FALSE'">
@@ -868,16 +865,16 @@ PARAGRAPH
 	<xsl:otherwise>
 		<xsl:apply-templates select="child::*"/>
 	</xsl:otherwise>
-	</xsl:choose>  
+	</xsl:choose>
 </xsl:template>
 
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 SECTION
   + id CDATA #REQUIRED
-  + localize CDATA #IMPLIED 
-###################################################### 
+  + localize CDATA #IMPLIED
+######################################################
 -->
 <xsl:template match="text:section">
 	<xsl:variable name="id">
@@ -907,15 +904,15 @@ SECTION
 		<xsl:text>
 </xsl:text>
 	</section>
-	
+
 </xsl:template>
 
 
-<!-- 
-###################################################### 
-SORT 
+<!--
+######################################################
+SORT
   + order (asc | desc) #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="text:variable-set[@text:name='SORT_']">
 	<xsl:variable name="order">
@@ -933,13 +930,13 @@ SORT
 	<xsl:text disable-output-escaping="yes">
 &lt;/sort&gt;</xsl:text>
 </xsl:template>
-	
-<!-- 
-###################################################### 
+
+<!--
+######################################################
 SWITCH
   + select (sys | appl | distrib | target | lang | ver) #REQUIRED
   + localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='SWITCH_']">
@@ -962,11 +959,11 @@ SWITCH
 &lt;/switch&gt;</xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 SWITCHINLINE
   + select (sys | appl | distrib | target | ver | lang) #REQUIRED
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:variable-set[@text:name='SWITCHINLINE_']">
@@ -980,8 +977,8 @@ SWITCHINLINE
 <xsl:text disable-output-escaping="yes">&lt;/switchinline&gt;</xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 TABLE
   + name CDATA #IMPLIED
   + width CDATA #IMPLIED
@@ -990,7 +987,7 @@ TABLE
   + class CDATA #IMPLIED
   + id CDATA #REQUIRED
   + localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="table:table">
 	<xsl:variable name="id">
@@ -1011,20 +1008,20 @@ TABLE
 			<xsl:variable name="caplocalize">
 				<xsl:value-of select="substring-before(substring-after($capattr,'LOCALIZE=&quot;'),'&quot;')"/>
 			</xsl:variable>
-			
+
 		</xsl:if>
 
 		<xsl:apply-templates />
 	<xsl:text>
 </xsl:text>
 	</table>
-	
+
 	<xsl:text>
 </xsl:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 TABLECELL
   + colspan CDATA #IMPLIED
   + rowspan CDATA #IMPLIED
@@ -1032,7 +1029,7 @@ TABLECELL
   # class CDATA #IMPLIED
   # unit CDATA #IMPLIED
   # localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="table:table-cell">
 	<xsl:variable name="colspan"><xsl:value-of select="@table:number-columns-spanned"/></xsl:variable>
@@ -1048,14 +1045,14 @@ TABLECELL
 	</tablecell>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 TABLEROW
   # height CDATA #IMPLIED
   # class CDATA #IMPLIED
   # unit CDATA #IMPLIED
   # localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="table:table-row">
 	<xsl:text>
@@ -1063,33 +1060,33 @@ TABLEROW
 	<tablerow>
 		<xsl:apply-templates />
 	<xsl:text>
-</xsl:text>		
+</xsl:text>
 	</tablerow>
 </xsl:template>
 
-<!-- 
-###################################################### 
-TITLE,  SEE HEADER
+<!--
+######################################################
+TITLE, SEE HEADER
   o xml-lang CDATA #REQUIRED (is always en-US for the source)
   o id CDATA #REQUIRED (is always tit for the title)
   # localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 
-<!-- 
-###################################################### 
-TOPIC,  SEE HEADER
+<!--
+######################################################
+TOPIC, SEE HEADER
   + id CDATA #REQUIRED
-  + indexer (exclude | include) #IMPLIED 
-###################################################### 
+  + indexer (exclude | include) #IMPLIED
+######################################################
 -->
 
-<!-- 
-###################################################### 
-VARIABLE 
+<!--
+######################################################
+VARIABLE
   + id CDATA #REQUIRED
   + visibility (hidden | visible) #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="text:variable-set[@text:name='VAR_']">
 	<xsl:variable name="id">
@@ -1098,7 +1095,7 @@ VARIABLE
 	<xsl:variable name="visibility">
 		<xsl:value-of select="substring-before(substring-after(.,'VISIBILITY=&quot;'),'&quot;')"/>
 	</xsl:variable>
-	
+
 	<xsl:text disable-output-escaping="yes">&lt;variable id=&quot;</xsl:text><xsl:value-of select="$id"/>
 <xsl:text disable-output-escaping="yes">&quot;</xsl:text>
 <xsl:if test="not($visibility='')">
@@ -1112,10 +1109,10 @@ VARIABLE
 <xsl:template match="text:variable-set[@text:name='_VAR']">
 <xsl:text disable-output-escaping="yes">&lt;/variable&gt;</xsl:text></xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 text:span, covers EMPH and ITEM
-###################################################### 
+######################################################
 -->
 
 <xsl:template match="text:span">
@@ -1126,7 +1123,7 @@ text:span, covers EMPH and ITEM
 			<xsl:apply-templates />
 		</xsl:when>
 		<xsl:otherwise>
-		
+
 		<xsl:variable name="masterstyle">	<!-- this is to resolve automatic styles by the writer -->
 			<xsl:call-template name="getmasterstyle">
 				<xsl:with-param name="style">
@@ -1150,23 +1147,24 @@ text:span, covers EMPH and ITEM
 		</xsl:otherwise>
 	</xsl:choose>
 
-	
+
 </xsl:template>
 
 
 
-<!-- the rest is removed --> 
+<!-- the rest is removed -->
 <xsl:template match="*" />
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 LICENSE HEADER
-###################################################### 
+######################################################
 -->
 
 <xsl:template name="licheader">
-<xsl:text disable-output-escaping="yes">&lt;!--***********************************************************
- * 
+<xsl:text disable-output-escaping="yes">
+&lt;!--***********************************************************
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -1174,18 +1172,18 @@ LICENSE HEADER
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************--&gt;
- </xsl:text>
+</xsl:text>
 
 	</xsl:template>
 
@@ -1238,7 +1236,7 @@ LICENSE HEADER
 		</xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
-	
+
 <xsl:template name="string-replace">
 	<xsl:param name="string"/>
 	<xsl:param name="from"/>
@@ -1307,9 +1305,9 @@ LICENSE HEADER
 			<xsl:value-of select="$style"/>
 		</xsl:otherwise>
 	</xsl:choose>
-	
+
 </xsl:template>
-	
+
 <xsl:template name="lf">
 <xsl:text disable-output-escaping="yes">
 </xsl:text>

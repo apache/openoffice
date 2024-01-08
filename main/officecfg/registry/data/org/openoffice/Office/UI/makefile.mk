@@ -20,6 +20,7 @@
 #**************************************************************
 
 
+
 PRJ=..$/..$/..$/..$/..$/..
 
 PRJNAME=officecfg
@@ -73,4 +74,4 @@ XCUFILES= \
 
 .INCLUDE : target.mk
 
-# vim: set noet ts=4 sw=4:
+# vim: set noet sw=4 ts=4:

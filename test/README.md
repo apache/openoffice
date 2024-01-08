@@ -1,17 +1,16 @@
 # Apache OpenOffice<sup>®</sup> Test
-Apache OpenOffice contains automated test suites that can be ran against the office. The test framework is written in **Java** 
-and based on **JUnit 4**. 
+Apache OpenOffice contains automated test suites that can be ran against the office. The test framework is written in **Java** and based on **JUnit 4**. 
 
-Currently, the test suite in **trunk** and other main branches like **AOO41X** and **AOO42X** can be ran against a normal installation 
-of the office or a just built "installed" office.
+This **trunk** branch is now the primary test suite for the **AOO41X** and **AOO42X** branches as well and those branches may not contain the latest tests or modifications.  
 
-This currently requires the user running the tests to have previously built the office from source as some required dependencies 
-for compiling the tests are used from the office build artifacts located in `main/solver`.
-Primarily these dependencies are things the Java UNO jars like juh, jurt, ridl, and unoil and tools like javamaker, regmerge, 
-and idlc.
+The test suite in main branches **AOO41X** and **AOO42X** can be ran against a normal installation of the office or a just built "installed" office.
 
-This README is documentation for using the test suites without requiring an office build environment or having built the 
-office from source in this **standalone-test** branch.
+This currently requires the user running the tests to have previously built the office from source as some required dependencies for compiling the tests are used from the office build artifacts located in `main/solver`.
+Primarily these dependencies are things the Java UNO jars like juh, jurt, ridl, and unoil and tools like javamaker, regmerge, and idlc.
+
+This **trunk** branch has been updated to allow it to run "standalone" of an office build. The test suites in this branch do not require the user to have previously built the office. This **test** directory can also be copied to another location and used to test a builds of **trunk**, **AOO41X**, or **AOO42X**.
+
+This README is documentation for using the test suites without requiring an office build environment or having built the office from source in any branch.
 
 ## Prerequisites
 

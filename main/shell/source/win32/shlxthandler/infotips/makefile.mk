@@ -54,3 +54,5 @@ SLOFILES_X64=$(SLO_X64)$/$(TARGET).obj
 INCLUDE!:=$(subst,/stl, $(INCLUDE))
 
 .INCLUDE :	tg_wntx64.mk
+
+# vim: set noet sw=4 ts=4:

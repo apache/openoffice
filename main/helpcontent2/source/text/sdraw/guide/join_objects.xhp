@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsdrawguidejoin_objectsxml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Connecting Lines</title>
 <filename>/text/sdraw/guide/join_objects.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2004-08-17T14:22:48">FPE: Cleaned.
-dedr: fixed #i30765#</lastedited>
-</history>
+<comment>fixed #i30765#</comment>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145799"><bookmark_value>draw objects; connecting lines to</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145799">
+<bookmark_value>draw objects; connecting lines to</bookmark_value>
 <bookmark_value>connecting; lines</bookmark_value>
 <bookmark_value>lines; connecting objects</bookmark_value>
 <bookmark_value>areas; from connected lines</bookmark_value>
@@ -55,7 +49,7 @@ dedr: fixed #i30765#</lastedited>
 </listitem>
 </list>
 <paragraph role="paragraph" id="par_id3149257" xml-lang="en-US" l10n="U" oldref="11">To create a closed object, right-click a line and choose <emph>Close Object</emph>.</paragraph>
-<paragraph role="note" id="par_id3150363" xml-lang="en-US" l10n="U" oldref="9">You can only use the <emph>Close Object</emph> command on connected lines, <emph>Freeform Lines </emph>and unfilled <emph>Curves</emph>.</paragraph>
+<paragraph role="note" id="par_id3150363" xml-lang="en-US" l10n="U" oldref="9">You can only use the <emph>Close Object</emph> command on connected lines, <emph>Freeform Lines</emph> and unfilled <emph>Curves</emph>.</paragraph>
 <section id="relatedtopics">
 <embed href="text/sdraw/guide/groups.xhp#groups"/>
 <embed href="text/sdraw/guide/join_objects3d.xhp#join_objects3d"/>

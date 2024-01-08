@@ -176,7 +176,7 @@ namespace sdr
 						const basegfx::BColor aRGBFrontColor(0.0, 0.0, 1.0); // COL_LIGHTBLUE
 						const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::MarkerArrayPrimitive2D(
 							aGluepointVector,
-							drawinglayer::primitive2d::createDefaultGluepoint_7x7(aBackPen, aRGBFrontColor)));
+							drawinglayer::primitive2d::createDefaultGluepoint_9x9(aBackPen, aRGBFrontColor)));
 						xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
 					}
 				}

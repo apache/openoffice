@@ -71,13 +71,12 @@
 #include <drawinglayer/primitive2d/unifiedtransparenceprimitive2d.hxx>
 #include <drawinglayer/primitive2d/polygonprimitive2d.hxx>
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 // #i15222#
-// Due to the ressource problems in Win95/98 with bitmap ressources i
-// will change this handle bitmap provinging class. Old version was splitting
+// Due to the resource problems in Win95/98 with bitmap resources I
+// will change this handle bitmap providing class. Old version was splitting
 // and preparing all small handle bitmaps in device bitmap format, now this will
-// be done on the fly. Thus, tehre is only the one big bitmap remembered. With
-// three source bitmaps, this will be 3 system bitmap ressources instead of hundreds.
+// be done on the fly. Thus, there is only the one big bitmap remembered. With
+// three source bitmaps, this will be 3 system bitmap resources instead of hundreds.
 // The price for that needs to be evaluated. Maybe we will need another change here
 // if this is too expensive.
 class SdrHdlBitmapSet
@@ -98,14 +97,14 @@ public:
 	const BitmapEx& GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal_uInt16 nInd=0);
 };
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 #define KIND_COUNT			(14)
 #define INDEX_COUNT			(6)
-#define INDIVIDUAL_COUNT	(4)
+#define INDIVIDUAL_COUNT	(6)
 
 SdrHdlBitmapSet::SdrHdlBitmapSet(sal_uInt16 nResId)
 :	maMarkersBitmap(ResId(nResId, *ImpGetResMgr())), // just use resource with alpha channel
-	// 14 kinds (BitmapMarkerKind) use index [0..5], 4 extra
+	// 14 kinds (BitmapMarkerKind) use index [0..5], 6 extra
 	maRealMarkers((KIND_COUNT * INDEX_COUNT) + INDIVIDUAL_COUNT)
 {
 }
@@ -243,25 +242,35 @@ const BitmapEx& SdrHdlBitmapSet::GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal
 
 		case Crosshair:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 0, Rectangle(Point(0, 68), Size(15, 15)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 0, Rectangle(Point(0, 66), Size(13, 13)));
+		}
+
+		case Crosshair_Unselected:
+		{
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 1, Rectangle(Point(0, 79), Size(13, 13)));
 		}
 
 		case Glue:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 1, Rectangle(Point(15, 74), Size(9, 9)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 2, Rectangle(Point(13, 70), Size(11, 11)));
+		}
+
+		case Glue_Unselected:
+		{
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 3, Rectangle(Point(13, 81), Size(11, 11)));
 		}
 
 		case Anchor: // #101688# AnchorTR for SW
 		case AnchorTR:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 2, Rectangle(Point(24, 68), Size(24, 24)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 4, Rectangle(Point(24, 68), Size(24, 24)));
 		}
 
 		// #98388# add AnchorPressed to be able to animate anchor control
 		case AnchorPressed:
 		case AnchorPressedTR:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 3, Rectangle(Point(48, 68), Size(24, 24)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 5, Rectangle(Point(48, 68), Size(24, 24)));
 		}
 	}
 
@@ -269,7 +278,6 @@ const BitmapEx& SdrHdlBitmapSet::GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal
 	return maRealMarkers[0];
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdlBitmapSet& getSimpleSet()
 {
@@ -289,7 +297,6 @@ SdrHdlBitmapSet& getHighContrastSet()
 	return *aHighContrastSet.get();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdl::SdrHdl():
 	pObj(NULL),
@@ -443,7 +450,7 @@ void SdrHdl::CreateB2dIAObject()
 			eColIndex = (bSelect) ? Cyan : LightCyan;
 		if(bRot)
 		{
-			// Drehhandles in Rot
+			// Rotation handles in red
 			if(pObj && bSelect)
 				eColIndex = Red;
 			else
@@ -462,7 +469,7 @@ void SdrHdl::CreateB2dIAObject()
 			case HDL_LWLFT:
 			case HDL_LWRGT:
 			{
-				// corner handles
+				// Corner handles
 				if(bRot)
 				{
 					eKindOfMarker = Circ_7x7;
@@ -529,9 +536,18 @@ void SdrHdl::CreateB2dIAObject()
 				eKindOfMarker = Crosshair;
 				break;
 			}
+			{
+				eKindOfMarker = Crosshair_Unselected;
+				break;
+			}
 			case HDL_GLUE:
 			{
 				eKindOfMarker = Glue;
+				break;
+			}
+			case HDL_GLUE_UNSEL:
+			{
+				eKindOfMarker = Glue_Unselected;
 				break;
 			}
 			case HDL_ANCHOR:
@@ -749,11 +765,11 @@ BitmapEx SdrHdl::ImpGetBitmapEx(BitmapMarkerKind eKindOfMarker, sal_uInt16 nInd,
 				case RectPlus_11x11:	eNextBigger = Rect_13x13;	break;
 
 				case Crosshair:
-					eNextBigger = Glue;
+					eNextBigger = Crosshair_Unselected;
 					break;
 
 				case Glue:
-					eNextBigger = Crosshair;
+					eNextBigger = Glue_Unselected;
 					break;
 				default:
 					break;
@@ -906,6 +922,7 @@ Pointer SdrHdl::GetPointer() const
 				case HDL_REF2 : ePtr=POINTER_REFHAND;	break;
 				case HDL_BWGT : ePtr=POINTER_MOVEBEZIERWEIGHT;	break;
 				case HDL_GLUE : ePtr=POINTER_MOVEPOINT;	break;
+				case HDL_GLUE_UNSEL : ePtr=POINTER_MOVEPOINT;	break;
 				case HDL_CUSTOMSHAPE1 : ePtr=POINTER_HAND;	break;
 				default:
 					break;
@@ -929,7 +946,7 @@ sal_Bool SdrHdl::IsFocusHdl() const
 		case HDL_LOWER:		// bottom
 		case HDL_LWRGT:		// bottom right
 		{
-			// if it's a activated TextEdit, it's moved to extended points
+			// if it's an activated TextEdit, it's moved to extended points
 			if(pHdlList && pHdlList->IsMoveOutside())
 				return sal_False;
 			else
@@ -943,7 +960,8 @@ sal_Bool SdrHdl::IsFocusHdl() const
 		case HDL_REF1:		// Referenzpunkt 1, z.B. Rotationsmitte
 		case HDL_REF2:		// Referenzpunkt 2, z.B. Endpunkt der Spiegelachse
 		//case HDL_MIRX:		// Die Spiegelachse selbst
-		case HDL_GLUE:		// GluePoint
+		case HDL_GLUE:		// glue point
+		case HDL_GLUE_UNSEL: // glue point unselected
 
 		// #98388# do NOT activate here, let SW implement their own SdrHdl and
 		// overload IsFocusHdl() there to make the anchor accessible
@@ -983,7 +1001,7 @@ bool SdrHdl::isMouseOver() const
 	return mbMouseOver;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // class SdrHdlColor
 
 SdrHdlColor::SdrHdlColor(const Point& rRef, Color aCol, const Size& rSize, sal_Bool bLum)
@@ -1142,7 +1160,7 @@ void SdrHdlColor::SetSize(const Size& rNew)
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // class SdrHdlGradient
 
 SdrHdlGradient::SdrHdlGradient(const Point& rRef1, const Point& rRef2, sal_Bool bGrad)
@@ -1325,7 +1343,6 @@ void SdrHdlGradient::FromIAOToItem(SdrObject* _pObj, sal_Bool bSetItemOnObject, 
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdlLine::~SdrHdlLine() {}
 
@@ -1384,7 +1401,6 @@ Pointer SdrHdlLine::GetPointer() const
 	return Pointer(POINTER_REFHAND);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdlBezWgt::~SdrHdlBezWgt() {}
 
@@ -1445,7 +1461,6 @@ void SdrHdlBezWgt::CreateB2dIAObject()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 E3dVolumeMarker::E3dVolumeMarker(const basegfx::B2DPolyPolygon& rWireframePoly)
 {
@@ -1494,7 +1509,6 @@ void E3dVolumeMarker::CreateB2dIAObject()
 		}
 	}
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ImpEdgeHdl::~ImpEdgeHdl()
 {
@@ -1617,7 +1631,6 @@ sal_Bool ImpEdgeHdl::IsHorzDrag() const
 	return sal_False;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ImpMeasureHdl::~ImpMeasureHdl()
 {
@@ -1686,12 +1699,11 @@ Pointer ImpMeasureHdl::GetPointer() const
 	{
 		case 0: case 1: return Pointer(POINTER_HAND);
 		case 2: case 3: return Pointer(POINTER_MOVEPOINT);
-		case 4: case 5: return SdrHdl::GetPointer(); // wird dann entsprechend gedreht
+		case 4: case 5: return SdrHdl::GetPointer(); // will be rotated accordingly
 	} // switch
 	return Pointer(POINTER_NOTALLOWED);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ImpTextframeHdl::ImpTextframeHdl(const Rectangle& rRect) :
 	SdrHdl(rRect.TopLeft(),HDL_MOVE),
@@ -1755,7 +1767,6 @@ void ImpTextframeHdl::CreateB2dIAObject()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 class ImpSdrHdlListSorter: public ContainerSorter {
 public:
@@ -1773,11 +1784,11 @@ int ImpSdrHdlListSorter::Compare(const void* pElem1, const void* pElem2) const
 	if (eKind1!=eKind2)
 	{
 		if (eKind1==HDL_REF1 || eKind1==HDL_REF2 || eKind1==HDL_MIRX) n1=5;
-		else if (eKind1==HDL_GLUE) n1=2;
+		else if (eKind1==HDL_GLUE || eKind1==HDL_GLUE_UNSEL) n1=2;
 		else if (eKind1==HDL_USER) n1=3;
 		else if (eKind1==HDL_SMARTTAG) n1=0;
 		if (eKind2==HDL_REF1 || eKind2==HDL_REF2 || eKind2==HDL_MIRX) n2=5;
-		else if (eKind2==HDL_GLUE) n2=2;
+		else if (eKind2==HDL_GLUE || eKind1==HDL_GLUE_UNSEL) n2=2;
 		else if (eKind2==HDL_USER) n2=3;
 		else if (eKind2==HDL_SMARTTAG) n2=0;
 	}
@@ -1910,7 +1921,7 @@ extern "C" int __LOADONCALLAPI ImplSortHdlFunc( const void* pVoid1, const void* 
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // #97016# II
 
 void SdrHdlList::TravelFocusHdl(sal_Bool bForward)
@@ -2104,7 +2115,6 @@ void SdrHdlList::ResetFocusHdl()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdlList::SdrHdlList(SdrMarkView* pV)
 :	mnFocusIndex(CONTAINER_ENTRY_NOTFOUND),
@@ -2348,12 +2358,12 @@ BitmapEx SdrCropHdl::GetBitmapForHandle( const BitmapEx& rBitmap, int nSize )
 	else if( nSize <=4 )
 	{
 		nPixelSize = 17;
-		nOffset = 36;
+		nOffset = 39;
 	}
 	else
 	{
 		nPixelSize = 21;
-		nOffset = 84;
+		nOffset = 90;
 	}
 
 	switch( eKind )
@@ -2369,7 +2379,7 @@ BitmapEx SdrCropHdl::GetBitmapForHandle( const BitmapEx& rBitmap, int nSize )
 		default: break;
 	}
 
-	Rectangle aSourceRect( Point( nX * (nPixelSize-1) + nOffset, nY * (nPixelSize-1)), Size(nPixelSize, nPixelSize) );
+	Rectangle aSourceRect( Point( nX * (nPixelSize) + nOffset, nY * (nPixelSize)), Size(nPixelSize, nPixelSize) );
 
 	BitmapEx aRetval(rBitmap);
 	aRetval.Crop(aSourceRect);
@@ -2458,7 +2468,6 @@ void SdrCropHdl::CreateB2dIAObject()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 // with the correction of crop handling I could get rid of the extra mirroring flag, adapted stuff
 // accordingly
 
@@ -2664,5 +2673,4 @@ void SdrCropViewHdl::CreateB2dIAObject()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

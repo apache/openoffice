@@ -34,7 +34,7 @@ ModalDialog RID_SVXDLG_POSTIT
 	OutputSize = TRUE ;
 	SvLook = TRUE ;
 	Size = MAP_APPFONT ( 228, 120 ) ;
-	Text [ en-US ] = "Comment" ;
+	Text [ en-US ] = "Comments" ;
 	Moveable = TRUE ;
 	FixedText FT_LASTEDITLABEL
 	{
@@ -103,6 +103,7 @@ ModalDialog RID_SVXDLG_POSTIT
 		Size = MAP_APPFONT ( 24, 14 ) ;
 		Symbol = IMAGEBUTTON_ARROW_RIGHT ;
 	};
+// TODO: cleanup code for these unused elements
 //	FixedText FT_AUTHOR
 //	{
 //		Pos = MAP_APPFONT ( 12, 116 ) ;

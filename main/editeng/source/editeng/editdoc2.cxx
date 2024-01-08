@@ -321,21 +321,21 @@ void ParaPortion::CorrectValuesBehindLastFormattedLine( sal_uInt16 nLastFormatte
 
 // Shared reverse lookup acceleration pieces ...
 
-static sal_uInt16 FastGetPos( const VoidPtr *pPtrArray, sal_uInt16 nPtrArrayLen,
-						  VoidPtr pPtr, sal_uInt16 &rLastPos )
+static sal_uInt32 FastGetPos( const VoidPtr *pPtrArray, sal_uInt32 nPtrArrayLen,
+						  VoidPtr pPtr, sal_uInt32 &rLastPos )
 {
   // Through certain filter code-paths we do a lot of appends, which in
   // turn call GetPos - creating some N^2 nightmares. If we have a
   // non-trivially large list, do a few checks from the end first.
   if( rLastPos > 16 )
     {
-      sal_uInt16 nEnd;
-      if (rLastPos > nPtrArrayLen - 2)
+      sal_uInt32 nEnd;
+      if (rLastPos + 2 > nPtrArrayLen)
 		nEnd = nPtrArrayLen;
       else
 		nEnd = rLastPos + 2;
 
-      for( sal_uInt16 nIdx = rLastPos - 2; nIdx < nEnd; nIdx++ )
+      for( sal_uInt32 nIdx = rLastPos - 2; nIdx < nEnd; nIdx++ )
 		{
 		  if( pPtrArray[ nIdx ] == pPtr )
 			{
@@ -345,10 +345,10 @@ static sal_uInt16 FastGetPos( const VoidPtr *pPtrArray, sal_uInt16 nPtrArrayLen,
 		}
     }
   // The world's lamest linear search from svarray ...
-  for( sal_uInt16 nIdx = 0; nIdx < nPtrArrayLen; nIdx++ )
+  for( sal_uInt32 nIdx = 0; nIdx < nPtrArrayLen; nIdx++ )
 	if (pPtrArray[ nIdx ] == pPtr )
 	  return rLastPos = nIdx;
-  return USHRT_MAX;
+  return EE_PARA_NOT_FOUND;
 }
 
 // -------------------------------------------------------------------------
@@ -363,14 +363,14 @@ ParaPortionList::~ParaPortionList()
 	Reset();
 }
 
-sal_uInt16 ParaPortionList::GetPos( const ParaPortionPtr &rPtr ) const
+sal_uInt32 ParaPortionList::GetPos( const ParaPortionPtr &rPtr ) const
 {
 	return FastGetPos( reinterpret_cast<const VoidPtr *>( GetData() ),
 					   Count(), static_cast<VoidPtr>( rPtr ),
 					   ((ParaPortionList *)this)->nLastCache );
 }
 
-sal_uInt16 ContentList::GetPos( const ContentNodePtr &rPtr ) const
+sal_uInt32 ContentList::GetPos( const ContentNodePtr &rPtr ) const
 {
     return FastGetPos( reinterpret_cast<const VoidPtr *>( GetData() ),
 					   Count(), static_cast<VoidPtr>( rPtr ),
@@ -379,7 +379,7 @@ sal_uInt16 ContentList::GetPos( const ContentNodePtr &rPtr ) const
 
 void ParaPortionList::Reset()
 {
-	for ( sal_uInt16 nPortion = 0; nPortion < Count(); nPortion++ )
+	for ( sal_uInt32 nPortion = 0; nPortion < Count(); nPortion++ )
 		delete GetObject( nPortion );
 	Remove( 0, Count() );
 }
@@ -387,7 +387,7 @@ void ParaPortionList::Reset()
 long ParaPortionList::GetYOffset( ParaPortion* pPPortion )
 {
 	long nHeight = 0;
-	for ( sal_uInt16 nPortion = 0; nPortion < Count(); nPortion++ )
+	for ( sal_uInt32 nPortion = 0; nPortion < Count(); nPortion++ )
 	{
 		ParaPortion* pTmpPortion = GetObject(nPortion);
 		if ( pTmpPortion == pPPortion )
@@ -398,16 +398,16 @@ long ParaPortionList::GetYOffset( ParaPortion* pPPortion )
 	return nHeight;
 }
 
-sal_uInt16 ParaPortionList::FindParagraph( long nYOffset )
+sal_uInt32 ParaPortionList::FindParagraph( long nYOffset )
 {
 	long nY = 0;
-	for ( sal_uInt16 nPortion = 0; nPortion < Count(); nPortion++ )
+	for ( sal_uInt32 nPortion = 0; nPortion < Count(); nPortion++ )
 	{
 		nY += GetObject(nPortion)->GetHeight(); // sollte auch bei !bVisible richtig sein!
 		if ( nY > nYOffset )
 			return nPortion;
 	}
-	return 0xFFFF;	// solte mal ueber EE_PARA_NOT_FOUND erreicht werden!
+	return EE_PARA_NOT_FOUND;
 }
 
 void ParaPortionList::DbgCheck( EditDoc&
@@ -418,7 +418,7 @@ void ParaPortionList::DbgCheck( EditDoc&
 {
 #ifdef DBG_UTIL
 	DBG_ASSERT( Count() == rDoc.Count(), "ParaPortionList::DbgCheck() - Count() ungleich!" );
-	for ( sal_uInt16 i = 0; i < Count(); i++ )
+	for ( sal_uInt32 i = 0; i < Count(); i++ )
 	{
 		DBG_ASSERT( SaveGetObject(i), "ParaPortionList::DbgCheck() - Null-Pointer in Liste!" );
 		DBG_ASSERT( GetObject(i)->GetNode(), "ParaPortionList::DbgCheck() - Null-Pointer in Liste(2)!" );

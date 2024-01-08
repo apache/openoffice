@@ -25,8 +25,6 @@
 #include "precompiled_scui.hxx"
 
 
-
-
 //------------------------------------------------------------------
 
 #include "scitems.hxx"
@@ -65,7 +63,6 @@ ScTpContentOptions::ScTpContentOptions( Window*			pParent,
 	aColorLB( this, 		ScResId(LB_COLOR			)),
 	aBreakCB( this,			ScResId(CB_PAGEBREAKS		)),
 	aGuideLineCB( this, 	ScResId(CB_GUIDELINE		)),
-	aHandleCB( this,	 	ScResId(CB_HANDLES		)),
 	aBigHandleCB( this,	 	ScResId(CB_BIGHANDLES		)),
 
     aSeparator1FL    (this, ScResId(FL_SEPARATOR1 )),
@@ -121,7 +118,6 @@ ScTpContentOptions::ScTpContentOptions( Window*			pParent,
     aOutlineCB  .SetClickHdl(aCBHdl);
     aBreakCB    .SetClickHdl(aCBHdl);
     aGuideLineCB.SetClickHdl(aCBHdl);
-    aHandleCB   .SetClickHdl(aCBHdl);
     aBigHandleCB.SetClickHdl(aCBHdl);
     aRowColHeaderCB.SetClickHdl(aCBHdl);
 
@@ -168,7 +164,6 @@ sal_Bool	ScTpContentOptions::FillItemSet( SfxItemSet& rCoreSet )
 		aColorLB        .GetSavedValue() != aColorLB       .GetSelectEntryPos() ||
 		aBreakCB		.GetSavedValue() != aBreakCB	   .IsChecked() ||
 		aGuideLineCB    .GetSavedValue() != aGuideLineCB   .IsChecked() ||
-		aHandleCB		.GetSavedValue() != aHandleCB	   .IsChecked() ||
         aBigHandleCB    .GetSavedValue() != aBigHandleCB   .IsChecked())
 	{
         pLocalOptions->SetGridColor( aColorLB.GetSelectEntryColor(),
@@ -223,7 +218,6 @@ void	ScTpContentOptions::Reset( const SfxItemSet& rCoreSet )
 
 	aBreakCB.Check( pLocalOptions->GetOption(VOPT_PAGEBREAKS) );
 	aGuideLineCB.Check( pLocalOptions->GetOption(VOPT_HELPLINES) );
-	aHandleCB.Check( !pLocalOptions->GetOption(VOPT_SOLIDHANDLES) );	// inverted
 	aBigHandleCB.Check( pLocalOptions->GetOption(VOPT_BIGHANDLES) );
 
     if(SFX_ITEM_SET == rCoreSet.GetItemState(SID_SC_INPUT_RANGEFINDER, sal_False, &pItem))
@@ -252,7 +246,6 @@ void	ScTpContentOptions::Reset( const SfxItemSet& rCoreSet )
 	aColorLB        .SaveValue();
 	aBreakCB		.SaveValue();
 	aGuideLineCB    .SaveValue();
-	aHandleCB		.SaveValue();
 	aBigHandleCB	.SaveValue();
 }
 /*-----------------11.01.97 12.45-------------------
@@ -316,16 +309,10 @@ IMPL_LINK( ScTpContentOptions, CBHdl, CheckBox*, pBtn )
 	else if ( &aOutlineCB 		== pBtn )	eOption = VOPT_OUTLINER;
 	else if ( &aBreakCB			== pBtn )	eOption = VOPT_PAGEBREAKS;
 	else if ( &aGuideLineCB 	== pBtn )	eOption = VOPT_HELPLINES;
-	else if ( &aHandleCB	 	== pBtn )	eOption = VOPT_SOLIDHANDLES;
 	else if ( &aBigHandleCB	 	== pBtn )	eOption = VOPT_BIGHANDLES;
 	else if ( &aRowColHeaderCB 	== pBtn )	eOption = VOPT_HEADER;
 
-	//	VOPT_SOLIDHANDLES is inverted (CheckBox is "simple handles")
-	if ( eOption == VOPT_SOLIDHANDLES )
-		pLocalOptions->SetOption( eOption, !bChecked );
-	else
-		pLocalOptions->SetOption( eOption, bChecked );
-
+	pLocalOptions->SetOption( eOption, bChecked );
 
 	return 0;
 }
@@ -736,5 +723,3 @@ IMPL_LINK( ScTpLayoutOptions, AlignHdl, CheckBox*, pBox )
 	aAlignLB.Enable(pBox->IsChecked());
 	return 0;
 }
-
-

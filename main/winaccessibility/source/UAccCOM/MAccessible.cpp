@@ -2223,7 +2223,7 @@ HRESULT CMAccessible::DeSelectChild(XAccessible* pItem)
 * @param	size, the size of the items.
 * @return  S_OK if successful.
 */
-HRESULT	CMAccessible::SelectMutipleChidren( XAccessible** pItem,int size )
+HRESULT	CMAccessible::SelectMultipleChidren( XAccessible** pItem,int size )
 {
 
 	ENTER_PROTECTED_BLOCK
@@ -2248,7 +2248,7 @@ HRESULT	CMAccessible::SelectMutipleChidren( XAccessible** pItem,int size )
 * @param	size, the size of the items.
 * @return  S_OK if successful.
 */
-HRESULT CMAccessible::DeSelectMutipleChildren( XAccessible** pItem,int size )
+HRESULT CMAccessible::DeSelectMultipleChildren( XAccessible** pItem,int size )
 {
 
 	ENTER_PROTECTED_BLOCK

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
  *
@@ -22,8 +21,7 @@
  *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060107xml" indexer="include">
 <title id="tit" xml-lang="en-US">Array Functions</title>
@@ -31,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147273"><bookmark_value>matrices; functions</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147273">
+<bookmark_value>matrices; functions</bookmark_value>
 <bookmark_value>Function Wizard; arrays</bookmark_value>
 <bookmark_value>array formulas</bookmark_value>
 <bookmark_value>inline array constants</bookmark_value>
@@ -127,7 +126,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3153583" xml-lang="en-US" l10n="U" oldref="277">The smallest possible array is a 1 x 2 or 2 x 1 array with two adjacent cells.</paragraph>
 <paragraph role="heading" id="hd_id3148474" xml-lang="en-US" level="2" l10n="U" oldref="275">What is an array formula?</paragraph>
 <paragraph role="paragraph" id="par_id3155355" xml-lang="en-US" l10n="U" oldref="276">A formula in which the individual values in a cell range are evaluated is referred to as an array formula. The difference between an array formula and other formulas is that the array formula deals with several values simultaneously instead of just one.</paragraph>
@@ -148,8 +146,8 @@
 </section>
 <paragraph role="paragraph" id="par_id3154342" xml-lang="en-US" l10n="U" oldref="5">The cells in a results array are automatically protected against changes. However, you can edit or copy the array formula by selecting the entire array cell range.</paragraph>
 <paragraph role="heading" id="hd_id8834803" xml-lang="en-US" level="3" l10n="NEW">Using Inline Array Constants in Formulas</paragraph>
-<paragraph role="paragraph" id="par_id985747" xml-lang="en-US" l10n="NEW">Calc supports inline matrix/array constants in formulas. An inline array is surrounded by curly braces '{' and '}'. Elements can be each a number (including negatives), a logical constant (TRUE, FALSE), or a literal string. Non-constant expressions are not allowed. Arrays can be entered with one or more rows, and one or more columns. All rows must consist of the same number of elements, all columns must consist of the same number of elements. </paragraph>
-<paragraph role="paragraph" id="par_id936613" xml-lang="en-US" l10n="NEW">The column separator (separating elements in one row) is the ';' semicolon. The row separator is a '|' pipe symbol. The separators are not language and locale dependent. </paragraph>
+<paragraph role="paragraph" id="par_id985747" xml-lang="en-US" l10n="NEW">Calc supports inline matrix/array constants in formulas. An inline array is surrounded by curly braces '{' and '}'. Elements can be each a number (including negatives), a logical constant (TRUE, FALSE), or a literal string. Non-constant expressions are not allowed. Arrays can be entered with one or more rows, and one or more columns. All rows must consist of the same number of elements, all columns must consist of the same number of elements.</paragraph>
+<paragraph role="paragraph" id="par_id936613" xml-lang="en-US" l10n="NEW">The column separator (separating elements in one row) is the ';' semicolon. The row separator is a '|' pipe symbol. The separators are not language and locale dependent.</paragraph>
 <paragraph role="paragraph" id="par_id1877498" xml-lang="en-US" l10n="NEW">Arrays can not be nested.</paragraph>
 <paragraph role="paragraph" id="par_id4262520" xml-lang="en-US" l10n="NEW">
 <emph>Examples:</emph>
@@ -266,7 +264,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_idN10DD0" xml-lang="en-US" l10n="NEW">The following functions provide forced array handling: CORREL, COVAR, FORECAST, FTEST, INTERCEPT, MDETERM, MINVERSE, MMULT, MODE, PEARSON, PROB, RSQ, SLOPE, STEYX, SUMPRODUCT, SUMX2MY2, SUMX2PY2, SUMXMY2, TTEST. If you use area references as arguments when you call one of these functions, the functions behave as array functions. The following table provides an example of forced array handling:</paragraph>
 <table id="tbl_id7380291">
 <tablerow>
@@ -348,10 +345,10 @@
 </tablecell>
 </tablerow>
 </table>
-
 <sort>
 <section id="Section14">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3158446"><bookmark_value>MUNIT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158446">
+<bookmark_value>MUNIT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_EINHEITSMATRIX" id="bm_id3151317" localize="false"/>
 <paragraph role="heading" id="hd_id3158446" xml-lang="en-US" level="2" l10n="U" oldref="12">MUNIT</paragraph>
@@ -371,7 +368,8 @@
 </paragraph>
 </section>
 <section id="Section13">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3159084"><bookmark_value>FREQUENCY function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159084">
+<bookmark_value>FREQUENCY function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_HAEUFIGKEIT" id="bm_id3153883" localize="false"/>
 <paragraph role="heading" id="hd_id3159084" xml-lang="en-US" level="2" l10n="U" oldref="22">FREQUENCY</paragraph>
@@ -572,14 +570,14 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3150312" xml-lang="en-US" l10n="CHG" oldref="29">Select a single column range in which to enter the frequency according to the class limits. You must select one field more than the class ceiling. In this example, select the range C1:C6. Call up the FREQUENCY function in the <emph>Function Wizard</emph>. Select the <emph>Data</emph> range in (A1:A11), and then the <emph>Classes</emph> range in which you entered the class limits (B1:B6). Select the <emph>Array</emph> check box and click <emph>OK</emph>. You will see the frequency count in the range C1:C6.</paragraph>
 <paragraph role="paragraph" id="par_idN11269" xml-lang="en-US" l10n="NEW">
 <embedvar href="text/scalc/00/00000004.xhp#moreontop"/>
 </paragraph>
 </section>
 <section id="Section12">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151030"><bookmark_value>MDETERM function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151030">
+<bookmark_value>MDETERM function</bookmark_value>
 <bookmark_value>determinants</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MDET" id="bm_id3154057" localize="false"/>
@@ -595,7 +593,8 @@
 </paragraph>
 </section>
 <section id="Section11">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151348"><bookmark_value>MINVERSE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151348">
+<bookmark_value>MINVERSE function</bookmark_value>
 <bookmark_value>inverse arrays</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MINV" id="bm_id3151360" localize="false"/>
@@ -612,7 +611,8 @@
 <paragraph role="paragraph" id="par_id3149638" xml-lang="en-US" l10n="U" oldref="45">Select a square range and select MINVERSE. Select the output array, select the <emph>Array</emph> field and click <emph>OK</emph>.</paragraph>
 </section>
 <section id="Section10">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148546"><bookmark_value>MMULT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148546">
+<bookmark_value>MMULT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MMULT" id="bm_id3148501" localize="false"/>
 <paragraph role="heading" id="hd_id3148546" xml-lang="en-US" level="2" l10n="U" oldref="47">MMULT</paragraph>
@@ -630,7 +630,8 @@
 <paragraph role="paragraph" id="par_id3146826" xml-lang="en-US" l10n="U" oldref="54">Select a square range. Choose the MMULT function. Select the first <emph>Array</emph>, then select the second <emph>Array</emph>. Using <emph>Function Wizard</emph>, mark the <emph>Array</emph> check box. Click <emph>OK</emph>. The output array will appear in the first selected range.</paragraph>
 </section>
 <section id="Section9">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154970"><bookmark_value>TRANSPOSE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154970">
+<bookmark_value>TRANSPOSE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MTRANS" id="bm_id3154982" localize="false"/>
 <paragraph role="heading" id="hd_id3154970" xml-lang="en-US" level="2" l10n="U" oldref="56">TRANSPOSE</paragraph>
@@ -646,7 +647,8 @@
 <paragraph role="paragraph" id="par_id3159366" xml-lang="en-US" l10n="U" oldref="62">In the spreadsheet, select the range in which the transposed array can appear. If the original array has n rows and m columns, your selected range must have at least m rows and n columns. Then enter the formula directly, select the original array and press <switchinline select="sys"><caseinline select="MAC">Shift+Command+Enter</caseinline><defaultinline>Shift+Ctrl+Enter</defaultinline></switchinline>. Or, if you are using the <emph>Function Wizard</emph>, mark the <emph>Array</emph> check box. The transposed array appears in the selected target range and is protected automatically against changes.</paragraph>
 </section>
 <section id="Section8">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3109846"><bookmark_value>LINEST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3109846">
+<bookmark_value>LINEST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_RGP" id="bm_id3144716" localize="false"/>
 <paragraph role="heading" id="hd_id3109846" xml-lang="en-US" level="2" l10n="U" oldref="64">LINEST</paragraph>
@@ -987,7 +989,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3144687" xml-lang="en-US" l10n="U" oldref="132">Column A contains several X1 values, column B several X2 values and column C the Y values. You have already entered these values in your spreadsheet. You have now set up E2:G6 in the spreadsheet and activated the <emph>Function Wizard</emph>. For the LINEST function to work, you must have marked the <emph>Array</emph> check box in the <emph>Function Wizard</emph>. Next, select the following values in the spreadsheet (or enter them using the keyboard):</paragraph>
 <paragraph role="paragraph" id="par_id3158020" xml-lang="en-US" l10n="U" oldref="133">
 <emph>data_Y</emph> is C2:C8</paragraph>
@@ -1001,16 +1002,19 @@
 <paragraph role="paragraph" id="par_id3158128" xml-lang="en-US" l10n="U" oldref="138">
 <emph>This represents the calculated LINEST values:</emph>
 </paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3158146"><bookmark_value>slopes, see also regression lines</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158146">
+<bookmark_value>slopes, see also regression lines</bookmark_value>
 <bookmark_value>regression lines;LINEST function</bookmark_value>
 </bookmark><comment>mw made "regression lines" a two level entry</comment>
 <paragraph role="paragraph" id="par_id3158146" xml-lang="en-US" l10n="U" oldref="139">E2 and F2: Slope m of the regression line y=b+m*x for the x1 and x2 values. The values are given in reverse order; that is, the slope for x2 in E2 and the slope for x1 in F2.</paragraph>
 <paragraph role="paragraph" id="par_id3158184" xml-lang="en-US" l10n="U" oldref="140">G2: Intersection b with the y axis.</paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3158204"><bookmark_value>standard errors;array functions</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158204">
+<bookmark_value>standard errors;array functions</bookmark_value>
 </bookmark><comment>MW changed "standard errors"</comment>
 <paragraph role="paragraph" id="par_id3158204" xml-lang="en-US" l10n="U" oldref="141">E3 and F3: The standard error of the slope value.</paragraph>
 <paragraph role="paragraph" id="par_id3145845" xml-lang="en-US" l10n="U" oldref="142">G3: The standard error of the intercept</paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145859"><bookmark_value>RSQ calculations</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145859">
+<bookmark_value>RSQ calculations</bookmark_value>
 </bookmark>
 <paragraph role="paragraph" id="par_id3145859" xml-lang="en-US" l10n="U" oldref="143">E4: RSQ</paragraph>
 <paragraph role="paragraph" id="par_id3145880" xml-lang="en-US" l10n="U" oldref="144">F4: The standard error of the regression calculated for the Y value.</paragraph>
@@ -1023,7 +1027,8 @@
 </paragraph>
 </section>
 <section id="Section7">
-<bookmark xml-lang="en-US" branch="index" id="bm_id1596728"><bookmark_value>LOGEST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id1596728">
+<bookmark_value>LOGEST function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_RKP" id="bm_id3146020" localize="false"/>
 <paragraph role="heading" id="hd_id3146009" xml-lang="en-US" level="2" l10n="U" oldref="150">LOGEST</paragraph>
@@ -1049,7 +1054,8 @@ for bug #i31051#</comment></paragraph>
 <paragraph role="paragraph" id="par_id3163230" xml-lang="en-US" l10n="CHG" oldref="159">See LINEST. However, no square sum will be returned.</paragraph>
 </section>
 <section id="Section6">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3163286"><bookmark_value>SUMPRODUCT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163286">
+<bookmark_value>SUMPRODUCT function</bookmark_value>
 <bookmark_value>scalar products</bookmark_value>
 <bookmark_value>dot products</bookmark_value>
 <bookmark_value>inner products</bookmark_value>
@@ -1156,7 +1162,6 @@ for bug #i31051#</comment></paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_idN11BA1" xml-lang="en-US" l10n="NEW">
 <item type="input">=SUMPRODUCT(A1:B3;C1:D3)</item> returns 397.</paragraph>
 <paragraph role="paragraph" id="par_idN11BA4" xml-lang="en-US" l10n="NEW">Calculation: A1*C1 + B1*D1 + A2*C2 + B2*D2 + A3*C3 + B3*D3</paragraph>
@@ -1167,7 +1172,8 @@ for bug #i31051#</comment></paragraph>
 </paragraph>
 </section>
 <section id="Section5">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3144842"><bookmark_value>SUMX2MY2 function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144842">
+<bookmark_value>SUMX2MY2 function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEX2MY2" id="bm_id3144854" localize="false"/>
 <paragraph role="heading" id="hd_id3144842" xml-lang="en-US" level="2" l10n="U" oldref="169">SUMX2MY2</paragraph>
@@ -1183,7 +1189,8 @@ for bug #i31051#</comment></paragraph>
 </paragraph>
 </section>
 <section id="Section4">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145026"><bookmark_value>SUMX2PY2 function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145026">
+<bookmark_value>SUMX2PY2 function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEX2PY2" id="bm_id3145038" localize="false"/>
 <paragraph role="heading" id="hd_id3145026" xml-lang="en-US" level="2" l10n="U" oldref="178">SUMX2PY2</paragraph>
@@ -1199,7 +1206,8 @@ for bug #i31051#</comment></paragraph>
 </paragraph>
 </section>
 <section id="Section3">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3163527"><bookmark_value>SUMXMY2 function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3163527">
+<bookmark_value>SUMXMY2 function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEXMY2" id="bm_id3163539" localize="false"/>
 <paragraph role="heading" id="hd_id3163527" xml-lang="en-US" level="2" l10n="U" oldref="187">SUMXMY2</paragraph>
@@ -1215,7 +1223,8 @@ for bug #i31051#</comment></paragraph>
 </paragraph>
 </section>
 <section id="Section2">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3166062"><bookmark_value>TREND function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3166062">
+<bookmark_value>TREND function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TREND" id="bm_id3166074" localize="false"/>
 <paragraph role="heading" id="hd_id3166062" xml-lang="en-US" level="2" l10n="U" oldref="196">TREND</paragraph>
@@ -1240,7 +1249,8 @@ for bug #i31051#</comment></paragraph>
 <paragraph role="paragraph" id="par_id3166245" xml-lang="en-US" l10n="U" oldref="205">Select a spreadsheet range in which the trend data will appear. Select the function. Enter the output data or select it with the mouse. Mark the <emph>Array</emph> field. click <emph>OK</emph>. The trend data calculated from the output data is displayed.</paragraph>
 </section>
 <section id="Section1">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3166317"><bookmark_value>GROWTH function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3166317">
+<bookmark_value>GROWTH function</bookmark_value>
 <bookmark_value>exponential trends in arrays</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_VARIATION" id="bm_id3166329" localize="false"/>

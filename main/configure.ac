@@ -2977,10 +2977,14 @@ fi
 
 if test "$_os" = "WINNT"; then
    if test -z "$with_jdk_home"; then
+      AC_MSG_CHECKING([for JDK home])
       _jdk_home=`$OOWINTOOL --jdk-home`
-       if test -d "$_jdk_home"; then
+      AC_MSG_RESULT([$_jdk_home])
+      if test -d "$_jdk_home"; then
           with_jdk_home="$_jdk_home"
-       fi
+      else
+          AC_MSG_WARN([$_jdk_home is not a JDK home directory, ignoring it])
+      fi
    else
       with_jdk_home=`cygpath -u "$with_jdk_home"`
    fi
@@ -3126,7 +3130,7 @@ if test "$SOLAR_JAVA" != ""; then
     else
         javacompiler="javac"
     fi
-    if test "$_os" = "OS2"; then
+    if test "$_os" = "WNT" -o "$_os" = "OS2"; then
       if test x`echo "$javacompiler" | $GREP -i '\.exe$'` = x; then
           javacompiler="${javacompiler}.exe"
       fi
@@ -3185,7 +3189,7 @@ if test "$SOLAR_JAVA" != ""; then
         AC_PATH_PROG(JAVADOC, javadoc)
     else
         _javadoc_path="$with_jdk_home/bin/javadoc"
-        if test "$_os" = "OS2"; then
+        if test "$_os" = "WNT" -o "$_os" = "OS2"; then
           if test x`echo "$_javadoc_path" | $GREP -i '\.exe$'` = x; then
               _javadoc_path="${_javadoc_path}.exe"
           fi

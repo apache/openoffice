@@ -714,7 +714,7 @@ void FuInsertFile::InsTextOrRTFinOlMode(SfxMedium* pMedium)
 		while (pSourcePara)
 		{
 			sal_uLong nPos = pOutliner->GetAbsPos( pSourcePara );
-			sal_Int16 nDepth = pOutliner->GetDepth( (sal_uInt16) nPos );
+			sal_Int16 nDepth = pOutliner->GetDepth( nPos );
 
 			// den letzte Absatz nur uebernehmen, wenn er gefuellt ist
 			if (nSourcePos < nParaCount - 1 ||

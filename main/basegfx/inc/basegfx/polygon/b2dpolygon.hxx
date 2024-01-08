@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ namespace basegfx
 	class B2DPoint;
 	class B2DVector;
 	class B2DHomMatrix;
-    class B2DCubicBezier;
+	class B2DCubicBezier;
 } // end of namespace basegfx
 
 //////////////////////////////////////////////////////////////////////////////
@@ -49,12 +49,12 @@ namespace basegfx
 {
 	class BASEGFX_DLLPUBLIC B2DPolygon
 	{
-    public:
-        typedef o3tl::cow_wrapper< ImplB2DPolygon > ImplType;
+	public:
+		typedef o3tl::cow_wrapper< ImplB2DPolygon > ImplType;
 
 	private:
 		// internal data.
-        ImplType                                    mpPolygon;
+		ImplType									mpPolygon;
 
 	public:
 		/// diverse constructors
@@ -66,8 +66,8 @@ namespace basegfx
 		/// assignment operator
 		B2DPolygon& operator=(const B2DPolygon& rPolygon);
 
-        /// unshare this polygon with all internally shared instances
-        void makeUnique();
+		/// unshare this polygon with all internally shared instances
+		void makeUnique();
 
 		/// compare operators
 		bool operator==(const B2DPolygon& rPolygon) const;
@@ -77,7 +77,7 @@ namespace basegfx
 		sal_uInt32 count() const;
 
 		/// Coordinate interface
-        basegfx::B2DPoint getB2DPoint(sal_uInt32 nIndex) const;
+		basegfx::B2DPoint getB2DPoint(sal_uInt32 nIndex) const;
 		void setB2DPoint(sal_uInt32 nIndex, const basegfx::B2DPoint& rValue);
 
 		/// Coordinate insert/append
@@ -108,36 +108,36 @@ namespace basegfx
 		bool isNextControlPointUsed(sal_uInt32 nIndex) const;
 		B2VectorContinuity getContinuityInPoint(sal_uInt32 nIndex) const;
 
-        /** check edge for being a bezier segment
-            
-            This test the existence of control vectors, but do not apply 
-            testAndSolveTrivialBezier() to the bezier segment, so it is still useful 
-            to do so.
-            Since it can use internal data representations, it is faster 
-            than using getBezierSegment() and applying isBezier() on it.
+		/** check edge for being a bezier segment
 
-            @param nIndex
-            Index of the addressed edge's start point
+			This test the existence of control vectors, but do not apply
+			testAndSolveTrivialBezier() to the bezier segment, so it is still useful
+			to do so.
+			Since it can use internal data representations, it is faster
+			than using getBezierSegment() and applying isBezier() on it.
 
-            @return
-            true if edge exists and at least one control vector is used
-        */
-        bool isBezierSegment(sal_uInt32 nIndex) const;
-        
-        /** bezier segment access
-            
-            This method also works when it is no bezier segment at all and will fill
-            the given B2DCubicBezier as needed.
-            In any case, the given B2DCubicBezier will be filled, if necessary with
-            the single start point (if no valid edge exists).
-            
-            @param nIndex
-            Index of the addressed edge's start point
+			@param nIndex
+			Index of the addressed edge's start point
 
-            @param rTarget
-            The B2DCubicBezier to be filled. It's data WILL be changed.
-        */
-        void getBezierSegment(sal_uInt32 nIndex, B2DCubicBezier& rTarget) const;
+			@return
+			true if edge exists and at least one control vector is used
+		*/
+		bool isBezierSegment(sal_uInt32 nIndex) const;
+
+		/** bezier segment access
+
+			This method also works when it is no bezier segment at all and will fill
+			the given B2DCubicBezier as needed.
+			In any case, the given B2DCubicBezier will be filled, if necessary with
+			the single start point (if no valid edge exists).
+
+			@param nIndex
+			Index of the addressed edge's start point
+
+			@param rTarget
+			The B2DCubicBezier to be filled. It's data WILL be changed.
+		*/
+		void getBezierSegment(sal_uInt32 nIndex, B2DCubicBezier& rTarget) const;
 
 		/** Default adaptive subdivision access
 
@@ -168,27 +168,27 @@ namespace basegfx
 			be this polygon itself when it has no bezier segments. It is guaranteed
 			to have no more bezier segments
 		*/
-        B2DPolygon getDefaultAdaptiveSubdivision() const;
+		B2DPolygon getDefaultAdaptiveSubdivision() const;
 
-        /** Get the B2DRange (Rectangle dimensions) of this B2DPolygon
+		/** Get the B2DRange (Rectangle dimensions) of this B2DPolygon
 
 			A polygon may have up to three ranges:
 
 			(a) the range of the polygon points
 			(b) the range of the polygon points and control points
 			(c) the outer range of the subdivided bezier curve
-			
-			Ranges (a) and (c) are produced by tools::getRange(); resp. this 
-            getB2DRange(). tools::getRangeWithControlPoints handles case (b).
-			
-			To get range (c) a simple solution would be to subdivide the polygon 
-			and use getRange() on it. Since subdivision is expensive and decreases 
+
+			Ranges (a) and (c) are produced by tools::getRange(); resp. this
+			getB2DRange(). tools::getRangeWithControlPoints handles case (b).
+
+			To get range (c) a simple solution would be to subdivide the polygon
+			and use getRange() on it. Since subdivision is expensive and decreases
 			the polygon quality, i added this new method. It will use a
 			methodology suggested by HDU. First, it gets the range (a).
 			Then it iterates over the bezier segments and for each it
 			first tests if the outer range of the bezier segment is already
 			contained in the result range.
-			
+
 			The subdivision itself uses getAllExtremumPositions() to only
 			calculate extremum points and to expand the result accordingly.
 			Thus it calculates maximal four extremum points on the bezier
@@ -196,8 +196,8 @@ namespace basegfx
 
 			@return
 			The outer range of the bezier curve/polygon
-        */
-        B2DRange getB2DRange() const;
+		*/
+		B2DRange getB2DRange() const;
 
 		/** insert other 2D polygons
 
@@ -232,7 +232,7 @@ namespace basegfx
 
 			@param nCount
 			The number of points to append from rPoly, starting
-			from nIndex. If zero, as much as possibel is appended
+			from nIndex. If zero, as much as possible is appended
 		*/
 		void append(const B2DPolygon& rPoly, sal_uInt32 nIndex = 0, sal_uInt32 nCount = 0);
 
@@ -258,18 +258,20 @@ namespace basegfx
 		/// apply transformation given in matrix form
 		void transform(const basegfx::B2DHomMatrix& rMatrix);
 
-        // point iterators (same iterator validity conditions as for vector)
-        const B2DPoint* begin() const;
-        const B2DPoint* end() const;
-        B2DPoint* begin();
-        B2DPoint* end();
+		// point iterators (same iterator validity conditions as for vector)
+		const B2DPoint* begin() const;
+		const B2DPoint* end() const;
+		B2DPoint* begin();
+		B2DPoint* end();
 	};
 
-    // typedef for a vector of B2DPolygons
-    typedef ::std::vector< B2DPolygon > B2DPolygonVector;
+	// typedef for a vector of B2DPolygons
+	typedef ::std::vector< B2DPolygon > B2DPolygonVector;
 
 } // end of namespace basegfx
 
 //////////////////////////////////////////////////////////////////////////////
 
 #endif /* _BGFX_POLYGON_B2DPOLYGON_HXX */
+
+/* vim: set noet sw=4 ts=4: */

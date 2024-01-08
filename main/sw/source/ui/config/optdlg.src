@@ -55,17 +55,18 @@ TabPage TP_CONTENT_OPT
 		Size = MAP_APPFONT ( 118, 10 ) ;
 		Text [ en-US ] = "Guides ~while moving" ;
 	};
-	CheckBox CB_HANDLE
-	{
-		HelpID = "sw:CheckBox:TP_CONTENT_OPT:CB_HANDLE" ;
-		Pos = MAP_APPFONT ( 12, 27 ) ;
-		Size = MAP_APPFONT ( 118, 10 ) ;
-		Text [ en-US ] = "Sim~ple handles" ;
-	};
+// TODO: Remove code for unused handles
+//	CheckBox CB_HANDLE
+//	{
+//		HelpID = "sw:CheckBox:TP_CONTENT_OPT:CB_HANDLE" ;
+//		Pos = MAP_APPFONT ( 12, 27 ) ;
+//		Size = MAP_APPFONT ( 118, 10 ) ;
+//		Text [ en-US ] = "Sim~ple handles" ;
+//	};
 	CheckBox CB_BIGHANDLE
 	{
 		HelpID = "sw:CheckBox:TP_CONTENT_OPT:CB_BIGHANDLE" ;
-		Pos = MAP_APPFONT ( 12, 40 ) ;
+		Pos = MAP_APPFONT ( 12, 27 ) ;
 		Size = MAP_APPFONT ( 118, 10 ) ;
 		Text [ en-US ] = "Large handles" ;
 	};

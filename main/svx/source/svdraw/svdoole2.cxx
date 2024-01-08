@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -242,7 +242,7 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::notifyEvent( const document::EventObj
 
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
-	// the code currently makes sence only in case there is no other client
+	// the code currently makes sense only in case there is no other client
 	if ( mpObj && mpObj->GetAspect() != embed::Aspects::MSOLE_ICON && aEvent.EventName.equalsAscii("OnVisAreaChanged")
 	  && mpObj->GetObjRef().is() && mpObj->GetObjRef()->getClientSite() == uno::Reference< embed::XEmbeddedClient >( this ) )
 	{
@@ -893,15 +893,15 @@ void SdrOle2Obj::SetAspect( sal_Int64 nAspect )
 }
 
 // -----------------------------------------------------------------------------
-bool SdrOle2Obj::isInplaceActive() const 
-{ 
-    return xObjRef.is() && embed::EmbedStates::INPLACE_ACTIVE == xObjRef->getCurrentState(); 
+bool SdrOle2Obj::isInplaceActive() const
+{
+    return xObjRef.is() && embed::EmbedStates::INPLACE_ACTIVE == xObjRef->getCurrentState();
 }
 
 // -----------------------------------------------------------------------------
-bool SdrOle2Obj::isUiActive() const 
-{ 
-    return xObjRef.is() && embed::EmbedStates::UI_ACTIVE == xObjRef->getCurrentState(); 
+bool SdrOle2Obj::isUiActive() const
+{
+    return xObjRef.is() && embed::EmbedStates::UI_ACTIVE == xObjRef->getCurrentState();
 }
 
 // -----------------------------------------------------------------------------
@@ -1292,7 +1292,7 @@ void SdrOle2Obj::Disconnect_Impl()
 				// remove the object from the container, even if the DrawingObject itself is not destroyed (unfortunately this
 				// There is no real need to do the following removing of the object from the container
 				// in case the model has correct persistence, but in case of problems such a removing
-				// would make the behaviour of the office more stable
+				// would make the behavior of the office more stable
 
 				comphelper::EmbeddedObjectContainer* pContainer = xObjRef.GetContainer();
 				if ( pContainer )
@@ -1369,7 +1369,7 @@ void SdrOle2Obj::Disconnect_Impl()
 SdrObject* SdrOle2Obj::createSdrGrafObjReplacement(bool bAddText, bool bUseHCGraphic) const
 {
     Graphic* pOLEGraphic = GetGraphic();
-    
+
     if(bUseHCGraphic && Application::GetSettings().GetStyleSettings().GetHighContrastMode())
     {
         pOLEGraphic = getEmbeddedObjectRef().GetHCGraphic();
@@ -1380,7 +1380,7 @@ SdrObject* SdrOle2Obj::createSdrGrafObjReplacement(bool bAddText, bool bUseHCGra
         // #i118485# allow creating a SdrGrafObj representation
         SdrGrafObj* pClone = new SdrGrafObj(*pOLEGraphic);
         pClone->SetModel(GetModel());
-        
+
         // copy transformation
         basegfx::B2DHomMatrix aMatrix;
         basegfx::B2DPolyPolygon aPolyPolygon;
@@ -1396,7 +1396,7 @@ SdrObject* SdrOle2Obj::createSdrGrafObjReplacement(bool bAddText, bool bUseHCGra
         {
             // #i118485# copy text (Caution! Model needed, as guaranteed in aw080)
             OutlinerParaObject* pOPO = GetOutlinerParaObject();
-        
+
             if(pOPO && GetModel())
             {
                 pClone->NbcSetOutlinerParaObject(new OutlinerParaObject(*pOPO));
@@ -1407,7 +1407,7 @@ SdrObject* SdrOle2Obj::createSdrGrafObjReplacement(bool bAddText, bool bUseHCGra
     }
     else
     {
-        // #i100710# pOLEGraphic may be zero (no visualisation available),
+        // #i100710# pOLEGraphic may be zero (no visualization available),
         // so we need to use the OLE replacement graphic
         SdrRectObj* pClone = new SdrRectObj(GetSnapRect());
         pClone->SetModel(GetModel());
@@ -1420,7 +1420,7 @@ SdrObject* SdrOle2Obj::createSdrGrafObjReplacement(bool bAddText, bool bUseHCGra
 
         // bitmap fill
         pClone->SetMergedItem(XFillStyleItem(XFILL_BITMAP));
-        pClone->SetMergedItem(XFillBitmapItem(String(), Graphic(GetEmtyOLEReplacementBitmap())));
+        pClone->SetMergedItem(XFillBitmapItem(String(), Graphic(GetEmptyOLEReplacementBitmap())));
         pClone->SetMergedItem(XFillBmpTileItem(false));
         pClone->SetMergedItem(XFillBmpStretchItem(false));
 
@@ -1506,7 +1506,7 @@ void SdrOle2Obj::SetModel(SdrModel* pNewModel)
 	SdrRectObj::SetModel( pNewModel );
 
     // #i43086#
-    // #i85304 redo the change for charts for the above bugfix, as #i43086# does not ocur anymore
+    // #i85304 redo the change for charts for the above bugfix, as #i43086# does not occur anymore
     //so maybe the ImpSetVisAreaSize call can be removed here completely
     //Nevertheless I leave it in for other objects as I am not sure about the side effects when removing now
     if( pModel && !pModel->isLocked() && !IsChart() )
@@ -1569,7 +1569,7 @@ void SdrOle2Obj::SetObjRef( const com::sun::star::uno::Reference < com::sun::sta
 		return;
 
     // MBA: the caller of the method is responsible to control the old object, it will not be closed here
-    // Otherwise WW8 import crashes because it tranfers control to OLENode by this method
+    // Otherwise WW8 import crashes because it transfers control to OLENode by this method
     if ( xObjRef.GetObject().is() )
         xObjRef.Lock( sal_False );
 
@@ -1616,7 +1616,7 @@ SdrObject* SdrOle2Obj::getFullDragClone() const
     // special handling for OLE. The default handling works, but is too
     // slow when the whole OLE needs to be cloned. Get the Metafile and
     // create a graphic object with it
-    
+
     // #i118485# use central replacement generator
     return createSdrGrafObjReplacement(false, true);
 }
@@ -1777,7 +1777,7 @@ void SdrOle2Obj::operator=(const SdrObject& rObj)
 					catch( uno::Exception& e )
 					{
 						(void)e;
-						DBG_ERROR( "SdrOle2Obj::operator=(), unexcpected exception caught!" );
+						DBG_ERROR( "SdrOle2Obj::operator=(), unexpected exception caught!" );
 					}
                 }                                                                            */
             }
@@ -1873,9 +1873,9 @@ void SdrOle2Obj::ImpSetVisAreaSize()
 
                 // we need a new replacement image as the object has resized itself
 
-                //#i79578# don't request a new replacement image for charts to often
-                //a chart sends a modified call to the framework if it was changed
-                //thus the replacement update is already handled there
+                // #i79578# don't request a new replacement image for charts to often
+                // a chart sends a modified call to the framework if it was changed
+                // thus the replacement update is already handled there
                 if( !IsChart() )
                     xObjRef.UpdateReplacement();
 			}
@@ -1903,8 +1903,8 @@ void SdrOle2Obj::ImpSetVisAreaSize()
         else if( (nMiscStatus & embed::EmbedMisc::MS_EMBED_RECOMPOSEONRESIZE) &&
             svt::EmbeddedObjectRef::TryRunningState( xObjRef.GetObject() ) )
         {
-            //also handle not sfx based ole objects e.g. charts
-            //#i83860# resizing charts in impress distorts fonts
+            // also handle not sfx based ole objects e.g. charts
+            // #i83860# resizing charts in Impress distorts fonts
             uno::Reference< embed::XVisualObject > xVisualObject( this->getXModel(), uno::UNO_QUERY );
             if( xVisualObject.is() )
             {
@@ -1947,7 +1947,7 @@ void SdrOle2Obj::NbcResize(const Point& rRef, const Fraction& xFact, const Fract
 void SdrOle2Obj::SetGeoData(const SdrObjGeoData& rGeo)
 {
 	SdrRectObj::SetGeoData(rGeo);
-	
+
     if( pModel && !pModel->isLocked() )
 		ImpSetVisAreaSize();
 }
@@ -1963,7 +1963,7 @@ void SdrOle2Obj::NbcSetSnapRect(const Rectangle& rRect)
 
     if ( xObjRef.is() && IsChart() )
     {
-        //#i103460# charts do not necessaryly have an own size within ODF files,
+        //#i103460# charts do not necessarily have an own size within ODF files,
         //for this case they need to use the size settings from the surrounding frame,
         //which is made available with this method as there is no other way
         xObjRef.SetDefaultSizeForChart( Size( rRect.GetWidth(), rRect.GetHeight() ) );
@@ -1975,7 +1975,7 @@ void SdrOle2Obj::NbcSetSnapRect(const Rectangle& rRect)
 void SdrOle2Obj::NbcSetLogicRect(const Rectangle& rRect)
 {
 	SdrRectObj::NbcSetLogicRect(rRect);
-	
+
     if( pModel && !pModel->isLocked() )
 		ImpSetVisAreaSize();
 }
@@ -2309,14 +2309,14 @@ sal_Bool SdrOle2Obj::AddOwnLightClient()
 	    }
 
     	return sal_False;
-    }   
+    }
 
    	return sal_True;
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
-Bitmap SdrOle2Obj::GetEmtyOLEReplacementBitmap()
+Bitmap SdrOle2Obj::GetEmptyOLEReplacementBitmap()
 {
 	return Bitmap(ResId(BMP_SVXOLEOBJ, *ImpGetResMgr()));
 }
@@ -2331,5 +2331,4 @@ void SdrOle2Obj::SetWindow(const com::sun::star::uno::Reference < com::sun::star
     }
 }
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

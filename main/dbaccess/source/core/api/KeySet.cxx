@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -294,7 +294,7 @@ void OKeySet::construct(const Reference< XResultSet>& _xDriverSet,const ::rtl::O
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OKeySet::construct" );
 	OCacheSet::construct(_xDriverSet,i_sRowSetFilter);
     initColumns();
-	
+
 	Reference<XNameAccess> xKeyColumns	= getKeyColumns();
     Reference<XDatabaseMetaData> xMeta = m_xConnection->getMetaData();
     Reference<XColumnsSupplier> xQueryColSup(m_xComposer,UNO_QUERY);
@@ -302,7 +302,7 @@ void OKeySet::construct(const Reference< XResultSet>& _xDriverSet,const ::rtl::O
     findTableColumnsMatching_throw(makeAny(m_xTable),m_sUpdateTableName,xMeta,xQueryColumns,m_pKeyColumnNames);
 
 	// the first row is empty because it's now easier for us to distinguish	when we are beforefirst or first
-	// without extra varaible to be set
+	// without extra variable to be set
     m_aKeyMap.insert(OKeySetMatrix::value_type(0,OKeySetValue(NULL,::std::pair<sal_Int32,Reference<XRow> >(0,NULL))));
 	m_aKeyIter = m_aKeyMap.begin();
 
@@ -330,14 +330,14 @@ void OKeySet::construct(const Reference< XResultSet>& _xDriverSet,const ::rtl::O
                 connectivity::OSQLTable xSelColSup(xSelectTables->getByName(*pIter),uno::UNO_QUERY);
                 Reference<XPropertySet> xProp(xSelColSup,uno::UNO_QUERY);
 			    ::rtl::OUString sSelectTableName = ::dbtools::composeTableName( xMeta, xProp, ::dbtools::eInDataManipulation, false, false, false );
-				
-				::dbaccess::getColumnPositions(xQueryColumns,xSelColSup->getColumns()->getElementNames(),sSelectTableName,(*m_pForeignColumnNames));				
-				
+
+				::dbaccess::getColumnPositions(xQueryColumns,xSelColSup->getColumns()->getElementNames(),sSelectTableName,(*m_pForeignColumnNames));
+
 				SelectColumnsMetaData::iterator aPosEnd = (*m_pForeignColumnNames).end();
 	            for(SelectColumnsMetaData::iterator aPosIter = (*m_pForeignColumnNames).begin();aPosIter != aPosEnd;++aPosIter)
 				{
 					// look for columns not in the source columns to use them as filter as well
-					// if ( !xSourceColumns->hasByName(aPosIter->first) ) 
+					// if ( !xSourceColumns->hasByName(aPosIter->first) )
 					{
                         if ( aFilter.getLength() )
                             aFilter.append(aAnd);
@@ -450,14 +450,14 @@ Sequence< sal_Int32 > SAL_CALL OKeySet::deleteRows( const Sequence< Any >& rows 
 	aSql.append(m_aComposedTableName);
 	aSql.append(::rtl::OUString::createFromAscii(" WHERE "));
 
-	// list all cloumns that should be set
+	// list all columns that should be set
 	const ::rtl::OUString aQuote	= getIdentifierQuoteString();
 	static ::rtl::OUString aAnd		= ::rtl::OUString::createFromAscii(" AND ");
 	static ::rtl::OUString aOr		= ::rtl::OUString::createFromAscii(" OR ");
 	static ::rtl::OUString aEqual	= ::rtl::OUString::createFromAscii(" = ?");
 
 
-	// use keys and indexes for excat postioning
+	// use keys and indexes for exact positioning
 	// first the keys
 	Reference<XNameAccess> xKeyColumns = getKeyColumns();
 
@@ -537,14 +537,14 @@ void SAL_CALL OKeySet::updateRow(const ORowSetRow& _rInsertRow ,const ORowSetRow
 	::rtl::OUStringBuffer aSql = ::rtl::OUString::createFromAscii("UPDATE ");
 	aSql.append(m_aComposedTableName);
 	aSql.append(::rtl::OUString::createFromAscii(" SET "));
-	// list all cloumns that should be set
+	// list all columns that should be set
 	static ::rtl::OUString aPara	= ::rtl::OUString::createFromAscii(" = ?,");
 	::rtl::OUString aQuote	= getIdentifierQuoteString();
 	static ::rtl::OUString aAnd		= ::rtl::OUString::createFromAscii(" AND ");
     ::rtl::OUString sIsNull(RTL_CONSTASCII_USTRINGPARAM(" IS NULL"));
     ::rtl::OUString sParam(RTL_CONSTASCII_USTRINGPARAM(" = ?"));
 
-	// use keys and indexes for excat postioning
+	// use keys and indexes for exact positioning
 	// first the keys
 	Reference<XNameAccess> xKeyColumns = getKeyColumns();
 
@@ -636,7 +636,7 @@ void SAL_CALL OKeySet::updateRow(const ORowSetRow& _rInsertRow ,const ORowSetRow
         ::dbtools::throwSQLException( DBACORE_RESSTRING( RID_STR_NO_CONDITION_FOR_PK ), SQL_GENERAL_ERROR, m_xConnection );
 
 	// now create end execute the prepared statement
-    
+
     ::rtl::OUString sEmpty;
     executeUpdate(_rInsertRow ,_rOrginalRow,aSql.makeStringAndClear(),sEmpty,aIndexColumnPositions);
 }
@@ -888,7 +888,7 @@ void OKeySet::executeInsert( const ORowSetRow& _rInsertRow,const ::rtl::OUString
 		--aKeyIter;
 		ORowSetRow aKeyRow = new connectivity::ORowVector< ORowSetValue >(m_pKeyColumnNames->size());
         copyRowValue(_rInsertRow,aKeyRow,aKeyIter->first + 1);
-		
+
         m_aKeyIter = m_aKeyMap.insert(OKeySetMatrix::value_type(aKeyIter->first + 1,OKeySetValue(aKeyRow,::std::pair<sal_Int32,Reference<XRow> >(1,NULL)))).first;
 		// now we set the bookmark for this row
 		(_rInsertRow->get())[0] = makeAny((sal_Int32)m_aKeyIter->first);
@@ -911,7 +911,7 @@ void OKeySet::tryRefetch(const ORowSetRow& _rInsertRow,bool bRefetch)
             connectivity::ORowVector< ORowSetValue >::Vector::const_iterator aParaEnd;
             OUpdatedParameter::iterator aUpdateFind = m_aUpdatedParameter.find(m_aKeyIter->first);
             if ( aUpdateFind == m_aUpdatedParameter.end() )
-            {	
+            {
                 aParaIter = m_aParameterValueForCache.get().begin();
                 aParaEnd = m_aParameterValueForCache.get().end();
             }
@@ -920,7 +920,7 @@ void OKeySet::tryRefetch(const ORowSetRow& _rInsertRow,bool bRefetch)
                 aParaIter = aUpdateFind->second.get().begin();
                 aParaEnd = aUpdateFind->second.get().end();
             }
-            
+
             for(++aParaIter;aParaIter != aParaEnd;++aParaIter,++nPos)
             {
                 ::dbtools::setObjectWithInfo( xParameter, nPos, aParaIter->makeAny(), aParaIter->getTypeKind() );
@@ -985,7 +985,7 @@ void OKeySet::copyRowValue(const ORowSetRow& _rInsertRow,ORowSetRow& _rKeyRow,sa
 	for(;aPosIter != aPosEnd;++aPosIter,++aIter)
     {
         impl_convertValue_throw(_rInsertRow,aPosIter->second);
-        *aIter = (_rInsertRow->get())[aPosIter->second.nPosition];        
+        *aIter = (_rInsertRow->get())[aPosIter->second.nPosition];
         aIter->setTypeKind(aPosIter->second.nType);
     }
 }
@@ -1000,11 +1000,11 @@ void SAL_CALL OKeySet::deleteRow(const ORowSetRow& _rDeleteRow,const connectivit
 	aSql.append(m_aComposedTableName);
 	aSql.append(::rtl::OUString::createFromAscii(" WHERE "));
 
-	// list all cloumns that should be set
+	// list all columns that should be set
 	::rtl::OUString aQuote	= getIdentifierQuoteString();
 	static ::rtl::OUString aAnd		= ::rtl::OUString::createFromAscii(" AND ");
 
-	// use keys and indexes for excat postioning
+	// use keys and indexes for exact positioning
 	Reference<XNameAccess> xKeyColumns = getKeyColumns();
 	// second the indexes
 	Reference<XIndexesSupplier> xIndexSup(_xTable,UNO_QUERY);
@@ -1115,9 +1115,9 @@ void SAL_CALL OKeySet::moveToCurrentRow(  ) throw(SQLException, RuntimeException
 Reference<XNameAccess> OKeySet::getKeyColumns() const
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OKeySet::getKeyColumns" );
-	// use keys and indexes for excat postioning
+	// use keys and indexes for exact positioning
 	// first the keys
-	
+
 	Reference<XIndexAccess> xKeys = m_xTableKeys;
     if ( !xKeys.is() )
     {
@@ -1361,7 +1361,7 @@ void SAL_CALL OKeySet::refreshRow() throw(SQLException, RuntimeException)
         m_xRow = m_aKeyIter->second.second.second;
         return;
     }
-	// we just areassign the base members
+	// we just reassign the base members
 	Reference< XParameters > xParameter(m_xStatement,UNO_QUERY);
 	OSL_ENSURE(xParameter.is(),"No Parameter interface!");
 	xParameter->clearParameters();
@@ -1371,7 +1371,7 @@ void SAL_CALL OKeySet::refreshRow() throw(SQLException, RuntimeException)
     connectivity::ORowVector< ORowSetValue >::Vector::const_iterator aParaEnd;
     OUpdatedParameter::iterator aUpdateFind = m_aUpdatedParameter.find(m_aKeyIter->first);
     if ( aUpdateFind == m_aUpdatedParameter.end() )
-    {	
+    {
         aParaIter = m_aParameterValueForCache.get().begin();
         aParaEnd = m_aParameterValueForCache.get().end();
     }
@@ -1380,7 +1380,7 @@ void SAL_CALL OKeySet::refreshRow() throw(SQLException, RuntimeException)
         aParaIter = aUpdateFind->second.get().begin();
         aParaEnd = aUpdateFind->second.get().end();
     }
-    
+
     for(++aParaIter;aParaIter != aParaEnd;++aParaIter,++nPos)
     {
         ::dbtools::setObjectWithInfo( xParameter, nPos, aParaIter->makeAny(), aParaIter->getTypeKind() );
@@ -1695,7 +1695,7 @@ void getColumnPositions(const Reference<XNameAccess>& _rxQueryColumns,
 
                     sal_Int32 nNullable = ColumnValue::NULLABLE_UNKNOWN;
                     OSL_VERIFY( xQueryColumnProp->getPropertyValue( PROPERTY_ISNULLABLE ) >>= nNullable );
-                    
+
                     if ( i_bAppendTableName )
                     {
                         ::rtl::OUStringBuffer sName;
@@ -1705,11 +1705,11 @@ void getColumnPositions(const Reference<XNameAccess>& _rxQueryColumns,
                         SelectColumnDescription aColDesc( nPos, nType,nScale,nNullable != sdbc::ColumnValue::NO_NULLS, sColumnDefault );
                         aColDesc.sRealName = sRealName;
                         aColDesc.sTableName = sTableName;
-                        o_rColumnNames[sName.makeStringAndClear()] = aColDesc;                        
+                        o_rColumnNames[sName.makeStringAndClear()] = aColDesc;
                     }
                     else
                         o_rColumnNames[sRealName] = SelectColumnDescription( nPos, nType,nScale,nNullable != sdbc::ColumnValue::NO_NULLS, sColumnDefault );
-                    
+
 					break;
 				}
 			}
@@ -1738,5 +1738,5 @@ void OKeySet::impl_convertValue_throw(const ORowSetRow& _rInsertRow,const Select
             break;
     }
 }
-// -----------------------------------------------------------------------------
 
+/* vim: set noet sw=4 ts=4: */

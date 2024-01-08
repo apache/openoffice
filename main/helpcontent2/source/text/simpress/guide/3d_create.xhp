@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,19 +9,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-
-
 
 <helpdocument version="1.0">
 <meta>
@@ -32,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150207"><bookmark_value>3D rotation objects; generating</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150207">
+<bookmark_value>3D rotation objects; generating</bookmark_value>
 <bookmark_value>3D objects; generating</bookmark_value>
 <bookmark_value>3D scenes; creating</bookmark_value>
 <bookmark_value>converting; to curves, polygons, 3D</bookmark_value>
@@ -55,7 +53,6 @@
 <paragraph role="listitem" id="par_id3149873" xml-lang="en-US" l10n="U" oldref="52">3D rotation object with shading and a light source</paragraph>
 </listitem>
 </list>
-
 <paragraph role="heading" id="hd_id31490481" xml-lang="en-US" level="3" l10n="NEW">Two types of 3D objects</paragraph>
 <list type="unordered">
 <listitem>
@@ -65,8 +62,6 @@
 <paragraph role="listitem" id="par_id31506541" xml-lang="en-US" l10n="NEW">The Status bar displays "Shape selected". The Custom Shapes can be viewed in a 2D mode or in a 3D mode. At any time, you can switch the view between the two modes. You use the Basic Shapes, Symbol Shapes, and the following icons on the Drawing toolbar to create Custom Shapes. The Custom Shapes can be changed using the 3D Settings toolbar. They do not form a 3D scene, they cannot be illuminated by more than one light source, they show no reflections, and there are some more limitations. You can convert them to a 3D scene, but then they are no longer Custom Shapes. Custom Shapes in 2D or 3D mode can be exported to and imported from Microsoft Office formats.</paragraph>
 </listitem>
 </list>
-
-
 <paragraph role="heading" id="hd_id3149048" xml-lang="en-US" level="3" l10n="U" oldref="34">To convert an object to a curved shape:</paragraph>
 <list type="ordered">
 <listitem>
@@ -78,7 +73,7 @@
 </list>
 <paragraph role="paragraph" id="par_id3145828" xml-lang="en-US" l10n="CHG" oldref="55">To modify the shape of the object, click the <emph>Points</emph> icon
 <image id="img_id1027558" src="svx/res/cd015.png" width="0.222inch" height="0.222inch"><alt id="alt_id1027558" xml-lang="en-US">Icon</alt>
-	</image> on the <emph>Drawing</emph> toolbar, and drag the handles of the object. You can also drag the control points of a handle to modify the shape of the curve.</paragraph>
+</image> on the <emph>Drawing</emph> toolbar, and drag the handles of the object. You can also drag the control points of a handle to modify the shape of the curve.</paragraph>
 <paragraph role="heading" id="hd_id3153738" xml-lang="en-US" level="3" l10n="U" oldref="56">To convert a 2D object to a polygon:</paragraph>
 <list type="ordered">
 <listitem>
@@ -91,7 +86,7 @@
 </list>
 <paragraph role="paragraph" id="par_id3155368" xml-lang="en-US" l10n="U" oldref="39">To modify the shape of the object, click the <emph>Points</emph> icon
 <image id="img_id7219458" src="svx/res/cd015.png" width="0.2201inch" height="0.2201inch"><alt id="alt_id7219458" xml-lang="en-US">Icon</alt>
-	</image> on the <emph>Drawing</emph> toolbar, and drag the handles of the object.</paragraph>
+</image> on the <emph>Drawing</emph> toolbar, and drag the handles of the object.</paragraph>
 <paragraph role="heading" id="hd_id3153919" xml-lang="en-US" level="3" l10n="U" oldref="60">To convert a 2D object to a 3D object:</paragraph>
 <list type="ordered">
 <listitem>
@@ -100,13 +95,13 @@
 <listitem>
 <paragraph role="listitem" id="par_idN1088B" xml-lang="en-US" l10n="NEW">Click the <emph>Extrusion On/Off</emph> icon
 <image id="img_id2490920" src="res/commandimagelist/sc_extrusiontoggle.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id2490920" xml-lang="en-US">Icon</alt>
-	</image> on the <emph>Drawing</emph> bar, or right-click the object and choose <emph>Convert - To 3D</emph>.</paragraph>
+</image> on the <emph>Drawing</emph> bar, or right-click the object and choose <emph>Convert - To 3D</emph>.</paragraph>
 </listitem>
 </list>
 <paragraph role="paragraph" id="par_id3148828" xml-lang="en-US" l10n="CHG" oldref="41">To edit the properties of the 3D object, use the <emph>Line and Filling</emph> toolbar and the <emph>3D Settings</emph> toolbar.</paragraph>
 <paragraph role="tip" id="par_idN108C5" xml-lang="en-US" l10n="NEW">To convert a text object to 3D, use the <emph>Fontwork</emph> icon
 <image id="img_id3821222" src="res/commandimagelist/sc_fontworkgalleryfloater.png" width="0.1665inch" height="0.1665inch"><alt id="alt_id3821222" xml-lang="en-US">Icon</alt>
-	</image> on the <emph>Drawing</emph> toolbar.</paragraph>
+</image> on the <emph>Drawing</emph> toolbar.</paragraph>
 <paragraph role="heading" id="hd_id3145410" xml-lang="en-US" level="3" l10n="U" oldref="65">To convert a 2D object to a 3D rotation object:</paragraph>
 <paragraph role="paragraph" id="par_id3154260" xml-lang="en-US" l10n="U" oldref="66">A 3D rotation object is created by rotating the selected object around its vertical axis.</paragraph>
 <list type="ordered">

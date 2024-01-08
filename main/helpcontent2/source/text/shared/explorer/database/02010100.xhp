@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,8 +21,6 @@
  *
  ***********************************************************-->
 
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedexplorerdatabase02010100xml" indexer="include" status="PUBLISH">
@@ -32,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153323"><bookmark_value>views; creating database views (Base)</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153323">
+<bookmark_value>views; creating database views (Base)</bookmark_value>
 <bookmark_value>queries; creating in design view (Base)</bookmark_value>
 <bookmark_value>designing; queries (Base)</bookmark_value>
 <bookmark_value>design view; queries/views (Base)</bookmark_value>
@@ -49,9 +47,10 @@
 <bookmark_value>queries; parameter queries (Base)</bookmark_value>
 <bookmark_value>SQL; queries (Base)</bookmark_value>
 <bookmark_value>native SQL (Base)</bookmark_value>
-</bookmark><comment>mw added "(Base)" to all entries</comment><paragraph role="paragraph" id="par_id3153323" xml-lang="en-US" l10n="E" oldref="2" localize="false"/>
+</bookmark><comment>mw added "(Base)" to all entries</comment>
+<paragraph role="paragraph" id="par_id3153323" xml-lang="en-US" l10n="E" oldref="2" localize="false"/>
 <paragraph role="heading" id="hd_id3153394" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/explorer/database/02010100.xhp" name="Query Design">Query Design</link></paragraph>
-<paragraph role="paragraph" id="par_id3156411" xml-lang="en-US" l10n="U" oldref="288"><ahelp hid=".">The <emph>Query Design View </emph>allows you to create and edit a database query.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3156411" xml-lang="en-US" l10n="U" oldref="288"><ahelp hid=".">The <emph>Query Design View</emph> allows you to create and edit a database query.</ahelp></paragraph>
 <section id="howtoget">
 <embed href="text/shared/00/00000450.xhp#entwab"/>
 </section>
@@ -100,7 +99,8 @@
 </table>
 <paragraph role="heading" id="hd_id3154939" xml-lang="en-US" level="2" l10n="U" oldref="7">Browse</paragraph>
 <paragraph role="paragraph" id="par_id3148799" xml-lang="en-US" l10n="U" oldref="8">When you open the query design for the first time, in order to create a new query, you can click <link href="text/shared/02/14020100.xhp" name="Add Tables"><emph>Add Tables</emph></link>. You then see a dialog in which you must first select the table that will be the basis for the query.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_CTL_QRYDGNTAB" id="bm_id3150767" localize="false"/><paragraph role="paragraph" id="par_id3144762" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_CTL_QRYDGNTAB">Double-click fields to add them to the query. Drag-and-drop to define relations.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_CTL_QRYDGNTAB" id="bm_id3150767" localize="false"/>
+<paragraph role="paragraph" id="par_id3144762" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_CTL_QRYDGNTAB">Double-click fields to add them to the query. Drag-and-drop to define relations.</ahelp></paragraph>
 <paragraph role="note" id="par_id3157894" xml-lang="en-US" l10n="U" oldref="141">While designing a query, you cannot modify the selected tables.</paragraph>
 <paragraph role="heading" id="hd_id3149562" xml-lang="en-US" level="3" l10n="U" oldref="11">Remove tables</paragraph>
 <paragraph role="paragraph" id="par_id3150685" xml-lang="en-US" l10n="U" oldref="12">To remove the table from Design View, click the upper border of the table window and display the context menu. You can use the <emph>Delete</emph> command to remove the table from the Design View. Another option is to press the Delete key.</paragraph>
@@ -116,11 +116,13 @@
 <paragraph role="note" id="par_id3145646" xml-lang="en-US" l10n="U" oldref="246">You cannot access tables from different databases in a query. Queries involving multiple tables can only be created within one database.</paragraph>
 <paragraph role="heading" id="hd_id3153279" xml-lang="en-US" level="3" l10n="U" oldref="224">Specifying link type</paragraph>
 <paragraph role="paragraph" id="par_id3154791" xml-lang="en-US" l10n="U" oldref="225">If you double-click the line connecting two linked fields or call the menu command <emph>Insert - New Relation</emph>, you can specify the type of link in the <link href="text/shared/explorer/database/02010101.xhp" name="Relations"><emph>Relations</emph></link> dialog.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QUERY_EDIT_JOINCONNECTION" id="bm_id3145253" localize="false"/><paragraph role="paragraph" id="par_id3150094" xml-lang="en-US" l10n="CHG" oldref="285"><ahelp hid="HID_QUERY_EDIT_JOINCONNECTION" visibility="hidden">Edit Join Properties.</ahelp>Alternatively, press Tab until the line is selected, then press Shift+F10 to display the context menu and there choose the command <emph>Edit</emph>. Some databases support only a subset of the possible join types.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QUERY_EDIT_JOINCONNECTION" id="bm_id3145253" localize="false"/>
+<paragraph role="paragraph" id="par_id3150094" xml-lang="en-US" l10n="CHG" oldref="285"><ahelp hid="HID_QUERY_EDIT_JOINCONNECTION" visibility="hidden">Edit Join Properties.</ahelp>Alternatively, press Tab until the line is selected, then press Shift+F10 to display the context menu and there choose the command <emph>Edit</emph>. Some databases support only a subset of the possible join types.</paragraph>
 <paragraph role="heading" id="hd_id3155851" xml-lang="en-US" level="3" l10n="U" oldref="145">Deleting relations</paragraph>
 <paragraph role="paragraph" id="par_id3156178" xml-lang="en-US" l10n="U" oldref="146">To delete a relation between two tables, click the connection line and then press the Delete key.</paragraph>
-<paragraph role="paragraph" id="par_id3150715" xml-lang="en-US" l10n="U" oldref="284">Alternatively, delete the respective entries in <emph>Fields involved </emph>in the <emph>Relations</emph> dialog. Or press Tab until the connecting vector is displayed highlighted, then press Shift+F10 to open the context menu and select <emph>Delete </emph>command.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_CTL_QRYDGNCRIT" id="bm_id3152972" localize="false"/><paragraph role="heading" id="hd_id3151208" xml-lang="en-US" level="2" l10n="U" oldref="17">Define query</paragraph>
+<paragraph role="paragraph" id="par_id3150715" xml-lang="en-US" l10n="U" oldref="284">Alternatively, delete the respective entries in <emph>Fields involved</emph> in the <emph>Relations</emph> dialog. Or press Tab until the connecting vector is displayed highlighted, then press Shift+F10 to open the context menu and select <emph>Delete</emph> command.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_CTL_QRYDGNCRIT" id="bm_id3152972" localize="false"/>
+<paragraph role="heading" id="hd_id3151208" xml-lang="en-US" level="2" l10n="U" oldref="17">Define query</paragraph>
 <paragraph role="paragraph" id="par_id3158416" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="HID_CTL_QRYDGNCRIT">Select conditions to define the query.</ahelp> Each column of the design table accepts a data field for the query. The conditions in one row are linked with a Boolean AND.</paragraph>
 <paragraph role="heading" id="hd_id3154161" xml-lang="en-US" level="3" l10n="U" oldref="19">Specify field name</paragraph>
 <paragraph role="paragraph" id="par_id3146791" xml-lang="en-US" l10n="U" oldref="20">First, select all field names from the tables that you want to add to the query. You can do this either with drag-and-drop or by double-clicking a field name in the table window. With the drag-and-drop method, use the mouse to drag a field name from the table window into the lower area of the query design. As you do this, you can decide which column you want to add the field to. Select a field name by double-clicking. It will then be added to the next free column.</paragraph>
@@ -128,33 +130,42 @@
 <paragraph role="paragraph" id="par_id3154479" xml-lang="en-US" l10n="U" oldref="22">To remove a field name from the query, click the column header of the field and choose the <emph>Delete</emph> command on the context menu for the column.</paragraph>
 <paragraph role="heading" id="hd_id3155764" xml-lang="en-US" level="3" l10n="U" oldref="277">Save query</paragraph>
 <paragraph role="paragraph" id="par_id3148481" xml-lang="en-US" l10n="U" oldref="278">Use the <emph>Save</emph> icon on the Standard Bar to save the query. You see a dialog that asks you to enter a name for the query. If the database supports schemas, you can also enter a schema.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/dbaccess:ComboBox:DLG_SAVE_AS:ET_SCHEMA" id="bm_id3156378" localize="false"/><paragraph role="heading" id="hd_id3154362" xml-lang="en-US" level="4" l10n="U" oldref="279">Schema</paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:ComboBox:DLG_SAVE_AS:ET_SCHEMA" id="bm_id3156378" localize="false"/>
+<paragraph role="heading" id="hd_id3154362" xml-lang="en-US" level="4" l10n="U" oldref="279">Schema</paragraph>
 <paragraph role="paragraph" id="par_id3154754" xml-lang="en-US" l10n="U" oldref="280"><ahelp hid="DBACCESS_COMBOBOX_DLG_SAVE_AS_ET_SCHEMA">Enter the name of the schema that is assigned to the query or table view.</ahelp></paragraph>
-<bookmark xml-lang="en-US" branch="hid/dbaccess:Edit:DLG_SAVE_AS:ET_TITLE" id="bm_id3147340" localize="false"/><paragraph role="heading" id="hd_id3156717" xml-lang="en-US" level="4" l10n="U" oldref="281">Query name or table view name</paragraph>
+<bookmark xml-lang="en-US" branch="hid/dbaccess:Edit:DLG_SAVE_AS:ET_TITLE" id="bm_id3147340" localize="false"/>
+<paragraph role="heading" id="hd_id3156717" xml-lang="en-US" level="4" l10n="U" oldref="281">Query name or table view name</paragraph>
 <paragraph role="paragraph" id="par_id3154253" xml-lang="en-US" l10n="U" oldref="282"><ahelp hid="DBACCESS_EDIT_DLG_SAVE_AS_ET_TITLE">Enter the name of the query or table view.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3163805" xml-lang="en-US" level="3" l10n="U" oldref="23">Filtering data</paragraph>
 <paragraph role="paragraph" id="par_id3154964" xml-lang="en-US" l10n="U" oldref="24">To filter data for the query, set the desired preferences in the lower area of the Design View. The following lines are available:</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_FIELD" id="bm_id3148536" localize="false"/><paragraph role="heading" id="hd_id3146916" xml-lang="en-US" level="4" l10n="U" oldref="25">Field</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_FIELD" id="bm_id3148536" localize="false"/>
+<paragraph role="heading" id="hd_id3146916" xml-lang="en-US" level="4" l10n="U" oldref="25">Field</paragraph>
 <paragraph role="paragraph" id="par_id3156372" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="HID_QRYDGN_ROW_FIELD">Enter the name of the data field that you referred to in the Query. All settings made in the lower rows refer to this field.</ahelp> If you activate a cell with a mouse click you'll see an arrow button, which enables you to select a field. The "Table name.*" option selects all data fields and the criteria is valid for all table fields.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_ALIAS" id="bm_id3154702" localize="false"/><paragraph role="heading" id="hd_id3145150" xml-lang="en-US" level="4" l10n="U" oldref="148">Alias</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_ALIAS" id="bm_id3154702" localize="false"/>
+<paragraph role="heading" id="hd_id3145150" xml-lang="en-US" level="4" l10n="U" oldref="148">Alias</paragraph>
 <paragraph role="paragraph" id="par_id3146315" xml-lang="en-US" l10n="U" oldref="149"><ahelp hid="HID_QRYDGN_ROW_ALIAS">Specifies an alias. This alias will be listed in a query instead of the field name. This makes it possible to use user-defined column labels.</ahelp> For example, if the data field has the name PtNo and, instead of that name, you would like to have PartNum appear in the query, enter PartNum as alias.</paragraph>
 <paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="193">In an SQL statement, aliases are defined as following:</paragraph>
 <paragraph role="paragraph" id="par_id3149922" xml-lang="en-US" l10n="U" oldref="194">SELECT column AS alias FROM table.</paragraph>
 <paragraph role="paragraph" id="par_id3159335" xml-lang="en-US" l10n="U" oldref="195">For example:</paragraph>
 <paragraph role="paragraph" id="par_id3148478" xml-lang="en-US" l10n="U" oldref="196">SELECT "PtNo" AS "PartNum" FROM "Parts"</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_TABLE" id="bm_id3154665" localize="false"/><paragraph role="heading" id="hd_id3148485" xml-lang="en-US" level="4" l10n="U" oldref="27">Table</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_TABLE" id="bm_id3154665" localize="false"/>
+<paragraph role="heading" id="hd_id3148485" xml-lang="en-US" level="4" l10n="U" oldref="27">Table</paragraph>
 <paragraph role="paragraph" id="par_id3163665" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="HID_QRYDGN_ROW_TABLE">The corresponding database table of the selected data field is listed here.</ahelp> If you activate the a cell with a mouse click, an arrow will appear which enables you to select another table of the current query.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_ORDER" id="bm_id3154202" localize="false"/><paragraph role="heading" id="hd_id3154207" xml-lang="en-US" level="4" l10n="U" oldref="29">Sort</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_ORDER" id="bm_id3154202" localize="false"/>
+<paragraph role="heading" id="hd_id3154207" xml-lang="en-US" level="4" l10n="U" oldref="29">Sort</paragraph>
 <paragraph role="paragraph" id="par_id3150979" xml-lang="en-US" l10n="CHG" oldref="30"><ahelp hid="HID_QRYDGN_ROW_ORDER">If you click the cell, you can select among the sorting options: ascending, descending and not sorted.</ahelp> Text fields will be sorted alphabetically and numerical fields numerically. For most databases, administrators can set the sorting options.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_VISIBLE" id="bm_id3149334" localize="false"/><paragraph role="heading" id="hd_id3150384" xml-lang="en-US" level="4" l10n="U" oldref="31">Visible</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_VISIBLE" id="bm_id3149334" localize="false"/>
+<paragraph role="heading" id="hd_id3150384" xml-lang="en-US" level="4" l10n="U" oldref="31">Visible</paragraph>
 <paragraph role="paragraph" id="par_id3146133" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="HID_QRYDGN_ROW_VISIBLE">If you mark the <emph>Visible</emph> property for a data field, that field will be visible in the query.</ahelp> If you only use a data field to formulate a condition, you do not necessarily need to show it.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_CRIT" id="bm_id3147130" localize="false"/><paragraph role="heading" id="hd_id3154714" xml-lang="en-US" level="4" l10n="U" oldref="33">Criteria</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_CRIT" id="bm_id3147130" localize="false"/>
+<paragraph role="heading" id="hd_id3154714" xml-lang="en-US" level="4" l10n="U" oldref="33">Criteria</paragraph>
 <paragraph role="paragraph" id="par_id3145134" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="HID_QRYDGN_ROW_CRIT">Specifies the <link href="text/shared/explorer/database/02010100.xhp" name="criteria ">criteria</link> by which the content of the data field should be filtered.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3152477" xml-lang="en-US" level="4" l10n="U" oldref="35">or</paragraph>
 <paragraph role="paragraph" id="par_id3154585" xml-lang="en-US" l10n="U" oldref="36">Here you can enter one additional criterion for filtering in each line. Multiple criteria in one column will be connected by an OR link.</paragraph>
 <paragraph role="paragraph" id="par_id3148800" xml-lang="en-US" l10n="U" oldref="150">You can also use the context menu of the line headers in the lower area of the query design to insert another line for functions:</paragraph>
-<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_FUNCTION" id="bm_id3153275" localize="false"/><paragraph role="heading" id="hd_id3148419" xml-lang="en-US" level="3" l10n="U" oldref="151">Functions</paragraph>
-<paragraph role="paragraph" id="par_id3153233" xml-lang="en-US" l10n="CHG" oldref="152"><ahelp hid="HID_QRYDGN_ROW_FUNCTION" visibility="hidden">Select a function to run in the query here.</ahelp> The functions you can run here depend on the database. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_FUNCTION" id="bm_id3153275" localize="false"/>
+<paragraph role="heading" id="hd_id3148419" xml-lang="en-US" level="3" l10n="U" oldref="151">Functions</paragraph>
+<paragraph role="paragraph" id="par_id3153233" xml-lang="en-US" l10n="CHG" oldref="152"><ahelp hid="HID_QRYDGN_ROW_FUNCTION" visibility="hidden">Select a function to run in the query here.</ahelp> The functions you can run here depend on the database.</paragraph>
 <paragraph role="paragraph" id="par_id8760818" xml-lang="en-US" l10n="CHG">If you are working with the HSQL database, the list box in the <emph>Function</emph> row offers you the following options:</paragraph>
 <table id="tbl_id3148461">
 <tablerow>
@@ -313,13 +324,12 @@
 <paragraph role="paragraph" id="par_id3155754" xml-lang="en-US" l10n="U" oldref="156"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">Shows or hides the row for the alias name.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3153298" xml-lang="en-US" level="3" l10n="U" oldref="157">Distinct Values</paragraph>
 <paragraph role="paragraph" id="par_id3147500" xml-lang="en-US" l10n="U" oldref="158"><ahelp hid="HID_QRYDGN_ROW_FUNCTION">Applies only distinct values to the query.</ahelp> This applies to records containing data that appears several times in the selected fields. If the <emph>Distinct Values</emph> command is active, you will see only one record in the query (DISTINCT). Otherwise, you will see all records corresponding to the query criteria (ALL).</paragraph>
-<paragraph role="paragraph" id="par_id3150436" xml-lang="en-US" l10n="U" oldref="159">For example, if the name "Smith" occurs several times in your address database, you can choose the<emph> Distinct Values</emph> command to specify in the query that the name "Smith" will occur only once.</paragraph>
-<paragraph role="paragraph" id="par_id3152352" xml-lang="en-US" l10n="U" oldref="160">For a query involving several fields, the combination of values from all fields must be unique so that the result can be formed from a specific record. For example, you have "Smith in Chicago" once in your address book and "Smith in London" twice. With the<emph> Distinct Values</emph> command, the query will use the two fields "last name" and "city" and return the query result "Smith in Chicago" once and "Smith in London" once.</paragraph>
+<paragraph role="paragraph" id="par_id3150436" xml-lang="en-US" l10n="U" oldref="159">For example, if the name "Smith" occurs several times in your address database, you can choose the <emph>Distinct Values</emph> command to specify in the query that the name "Smith" will occur only once.</paragraph>
+<paragraph role="paragraph" id="par_id3152352" xml-lang="en-US" l10n="U" oldref="160">For a query involving several fields, the combination of values from all fields must be unique so that the result can be formed from a specific record. For example, you have "Smith in Chicago" once in your address book and "Smith in London" twice. With the <emph>Distinct Values</emph> command, the query will use the two fields "last name" and "city" and return the query result "Smith in Chicago" once and "Smith in London" once.</paragraph>
 <paragraph role="paragraph" id="par_id3149825" xml-lang="en-US" l10n="U" oldref="161">In SQL, this command corresponds to the DISTINCT predicate.</paragraph>
 <paragraph role="heading" id="hd_id3148926" xml-lang="en-US" level="3" l10n="U" oldref="37">Formulating filter conditions</paragraph>
 <section id="abfragekriterien">
 <paragraph role="paragraph" id="par_id3153162" xml-lang="en-US" l10n="U" oldref="38">When formulating filter conditions, various operators and commands are available to you. Apart from the relational operators, there are SQL-specific commands that query the content of database fields. If you use these commands in the $[officename] syntax, $[officename] automatically converts these into the corresponding SQL syntax. You can also enter the SQL command directly. The following tables give an overview of the operators and commands:</paragraph>
-
 <table id="tbl_id3152803">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -400,7 +410,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3153376">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -452,7 +461,8 @@
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3148623" xml-lang="en-US" l10n="U" oldref="75">LIKE</paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157985"><bookmark_value>placeholders; in SQL queries</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157985">
+<bookmark_value>placeholders; in SQL queries</bookmark_value>
 </bookmark>
 <paragraph role="tablecontent" id="par_id3157985" xml-lang="en-US" l10n="U" oldref="76">(% placeholder for any number of characters</paragraph>
 <paragraph role="tablecontent" id="par_id3147422" xml-lang="en-US" l10n="U" oldref="77">Placeholder _ for exactly one character)</paragraph>
@@ -575,7 +585,6 @@
 <paragraph role="paragraph" id="par_id3150948" xml-lang="en-US" l10n="U" oldref="119">returns field names with the field content "Ms."</paragraph>
 </tablecell>
 </tablerow>
-
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id315379A" xml-lang="en-US" l10n="U" oldref="118">&lt;'2001-01-10'</paragraph>
@@ -626,9 +635,8 @@
 </tablerow>
 </table>
 </section>
-
 <paragraph role="paragraph" id="par_id3146073" xml-lang="en-US" l10n="U" oldref="268">
-<emph>Like </emph>Escape Sequence: {escape 'escape-character'}</paragraph>
+<emph>Like</emph> Escape Sequence: {escape 'escape-character'}</paragraph>
 <paragraph role="paragraph" id="par_id3150661" xml-lang="en-US" l10n="U" oldref="269">Example: select * from Item where ItemName like 'The *%' {escape '*'}</paragraph>
 <paragraph role="paragraph" id="par_id3148541" xml-lang="en-US" l10n="U" oldref="270">The example will give you all of the entries where the item name begins with 'The *'. This means that you can also search for characters that would otherwise be interpreted as placeholders, such as *, ?, _, % or the period.</paragraph>
 <paragraph role="paragraph" id="par_id3150572" xml-lang="en-US" l10n="U" oldref="271">
@@ -636,12 +644,10 @@
 <paragraph role="paragraph" id="par_id3156052" xml-lang="en-US" l10n="U" oldref="272">Example: select Article.* from {oj item LEFT OUTER JOIN orders ON item.no=orders.ANR}</paragraph>
 <paragraph role="heading" id="hd_id3153674" xml-lang="en-US" level="3" l10n="U" oldref="109">Querying text fields</paragraph>
 <paragraph role="paragraph" id="par_id3149134" xml-lang="en-US" l10n="U" oldref="110">To query the content of a text field, you must put the expression between single quotes. The distinction between uppercase and lowercase letters depends on the database in use. LIKE, by definition, is case-sensitive (though some databases don't see it that strict).</paragraph>
-
 <paragraph role="heading" id="hd_id3149302" xml-lang="en-US" level="3" l10n="U" oldref="111">Querying date fields</paragraph>
 <!--//kls begin edits -->
 <paragraph role="paragraph" id="par_id3157998" xml-lang="en-US" l10n="U" oldref="252">
 <emph>Date fields</emph> are represented as #Date# to clearly identify them as dates. Date, time and date/time constants (literals) used in conditions can be of either the SQL Escape Syntax type, or default SQL2 syntax.</paragraph>
-
 <table id="tbl_id3156186">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -657,7 +663,6 @@
 <paragraph role="tablehead" id="par_id31537344" xml-lang="en-US" l10n="U" oldref="253">SQL2 syntax</paragraph>
 </tablecell>
 </tablerow>
-
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id315913111" xml-lang="en-US" l10n="U" oldref="254">Date</paragraph>
@@ -680,10 +685,10 @@
 <paragraph role="paragraph" id="par_id31559472" xml-lang="en-US" l10n="U" oldref="258">{D'HH:MM:SS'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31559473" xml-lang="en-US" l10n="U" oldref="264">{t 'HH:MI:SS[.SS]'} </paragraph>
+<paragraph role="paragraph" id="par_id31559473" xml-lang="en-US" l10n="U" oldref="264">{t 'HH:MI:SS[.SS]'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31559474" xml-lang="en-US" l10n="U" oldref="264">'HH:MI:SS[.SS]' </paragraph>
+<paragraph role="paragraph" id="par_id31559474" xml-lang="en-US" l10n="U" oldref="264">'HH:MI:SS[.SS]'</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -694,15 +699,15 @@
 <paragraph role="paragraph" id="par_id31509642" xml-lang="en-US" l10n="U" oldref="258">{D'YYYY-MM-DD HH:MM:SS'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31509643" xml-lang="en-US" l10n="U" oldref="264">{ts 'YYYY-MM-DD HH:MI:SS[.SS]'} </paragraph>
+<paragraph role="paragraph" id="par_id31509643" xml-lang="en-US" l10n="U" oldref="264">{ts 'YYYY-MM-DD HH:MI:SS[.SS]'}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id31509644" xml-lang="en-US" l10n="U" oldref="264">'YYYY-MM-DD HH:MI:SS[.SS]' </paragraph>
+<paragraph role="paragraph" id="par_id31509644" xml-lang="en-US" l10n="U" oldref="264">'YYYY-MM-DD HH:MI:SS[.SS]'</paragraph>
 </tablecell>
 </tablerow>
 </table>
 <paragraph role="paragraph" id="par_id3149539" xml-lang="en-US" l10n="U" oldref="267">Example: select {d '1999-12-31'} from world.years</paragraph>
-<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31' </paragraph>
+<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31'</paragraph>
 <paragraph role="paragraph" id="par_id3150510" xml-lang="en-US" l10n="U" oldref="112">All date expressions (literals) must be enclosed with single quotation marks. (Consult the reference for the particular database and connector you are using for more details.)</paragraph>
 <!--//kls end moved -->
 <paragraph role="heading" id="hd_id3150427" xml-lang="en-US" level="3" l10n="U" oldref="228">Querying Yes/No fields</paragraph>
@@ -766,7 +771,7 @@
 <paragraph role="paragraph" id="par_id3156731" xml-lang="en-US" l10n="U" oldref="275">select * from 'addresses' where 'name' = :placeholder</paragraph>
 <paragraph role="heading" id="hd_id3145181" xml-lang="en-US" level="2" l10n="U" oldref="135">SQL Mode</paragraph>
 <paragraph role="paragraph" id="par_id3147013" xml-lang="en-US" l10n="U" oldref="220">SQL stands for "Structured Query Language" and describes instructions for updating and administering relational databases.</paragraph>
-<paragraph role="paragraph" id="par_id3152570" xml-lang="en-US" l10n="U" oldref="136">In $[officename] you do not need any knowledge of SQL for most queries, since you do not have to enter the SQL code. If you create a query in the query design, $[officename] automatically converts your instructions into the corresponding SQL syntax. If, with the help of the <emph>Switch Design View On/Off </emph>button, you change to the SQL view, you can see the SQL commands for a query that has been created previously.</paragraph>
+<paragraph role="paragraph" id="par_id3152570" xml-lang="en-US" l10n="U" oldref="136">In $[officename] you do not need any knowledge of SQL for most queries, since you do not have to enter the SQL code. If you create a query in the query design, $[officename] automatically converts your instructions into the corresponding SQL syntax. If, with the help of the <emph>Switch Design View On/Off</emph> button, you change to the SQL view, you can see the SQL commands for a query that has been created previously.</paragraph>
 <paragraph role="paragraph" id="par_id3152412" xml-lang="en-US" l10n="CHG" oldref="226">You can formulate your query directly in the SQL code. Note, however, that the special syntax is dependent upon the database system that you use.</paragraph>
 <paragraph role="paragraph" id="par_id3146842" xml-lang="en-US" l10n="U" oldref="227">If you enter the SQL code manually, you can create SQL-specific queries that are not supported by the graphical interface in <emph>Query design</emph>. These queries must be executed in native SQL mode.</paragraph>
 <paragraph role="paragraph" id="par_id3149632" xml-lang="en-US" l10n="U" oldref="223">By clicking the <link href="text/shared/02/14030000.xhp" name="Run SQL command directly"><emph>Run SQL command directly</emph></link> icon in the SQL view, you can formulate a query that is not processed by $[officename].</paragraph>

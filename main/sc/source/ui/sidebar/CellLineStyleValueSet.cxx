@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #include "precompiled_sc.hxx"
 
@@ -27,18 +29,18 @@
 namespace sc { namespace sidebar {
 
 CellLineStyleValueSet::CellLineStyleValueSet( Window* pParent, const ResId& rResId)
-:   ValueSet( pParent, rResId ),
-    pVDev(NULL),
-    nSelItem(0),
-    bCusEnable(false)
+:	ValueSet( pParent, rResId ),
+	pVDev(NULL),
+	nSelItem(0),
+	bCusEnable(false)
 {
 	strUnit = new XubString[9];
 	SetColCount( 1 );
-    SetLineCount( 9);
+	SetLineCount( 9);
 }
 
 CellLineStyleValueSet::~CellLineStyleValueSet()
-{	
+{
 	delete pVDev;
 	delete[] strUnit;
 }
@@ -61,7 +63,7 @@ void CellLineStyleValueSet::SetSelItem(sal_uInt16 nSel)
 	}
 	else
 	{
-		SelectItem(nSelItem);	
+		SelectItem(nSelItem);
 		GrabFocus();
 	}
 }
@@ -84,28 +86,28 @@ void CellLineStyleValueSet::SetCusEnable(bool bEnable)
 void CellLineStyleValueSet::UserDraw( const UserDrawEvent& rUDEvt )
 {
 	Rectangle aRect = rUDEvt.GetRect();
-	OutputDevice*  pDev = rUDEvt.GetDevice();
+	OutputDevice* pDev = rUDEvt.GetDevice();
 	sal_uInt16	nItemId = rUDEvt.GetItemId();
-	
+
 	long nRectHeight = aRect.GetHeight();
-	long nRectWidth = aRect.GetWidth();	
-	Point aBLPos = aRect.TopLeft();	
+	long nRectWidth = aRect.GetWidth();
+	Point aBLPos = aRect.TopLeft();
 
 	Font aOldFont = pDev->GetFont();
 	Color aOldColor = pDev->GetLineColor();
-	Color aOldFillColor = pDev->GetFillColor();	
+	Color aOldFillColor = pDev->GetFillColor();
 
 	Font aFont(OutputDevice::GetDefaultFont(DEFAULTFONT_UI_SANS, MsLangId::getSystemLanguage(), DEFAULTFONT_FLAGS_ONLYONE));
-	Size aSize = aFont.GetSize();	
-	aSize.Height() = nRectHeight*3/5;
+	Size aSize = aFont.GetSize();
+	aSize.Height() = nRectHeight * 3 / 5;
 	aFont.SetSize( aSize );
 
-	Point aLineStart(aBLPos.X() + 5,			aBLPos.Y() + ( nRectHeight - nItemId )/2);
-	Point aLineEnd(aBLPos.X() + nRectWidth * 7 / 9 - 15, aBLPos.Y() + ( nRectHeight - nItemId )/2);
-	long  nTLX = aBLPos.X() + 5,  nTLY = aBLPos.Y() + ( nRectHeight - nItemId )/2;
-	long  nTRX = aBLPos.X() + nRectWidth * 7 / 9 - 15, nTRY = aBLPos.Y() + ( nRectHeight - nItemId )/2;
+	Point aLineStart(aBLPos.X() + 5, aBLPos.Y() + ( nRectHeight - nItemId ) / 2);
+	Point aLineEnd(aBLPos.X() + nRectWidth * 7 / 9 - 15, aBLPos.Y() + ( nRectHeight - nItemId ) / 2);
+	long nTLX = aBLPos.X() + 5, nTLY = aBLPos.Y() + ( nRectHeight - nItemId )/2;
+	long nTRX = aBLPos.X() + nRectWidth * 7 / 9 - 15, nTRY = aBLPos.Y() + ( nRectHeight - nItemId ) / 2;
 
-	if( nSelItem ==  nItemId )
+	if( nSelItem == nItemId )
 	{
 		Color aBackColor(50,107,197);
 		Rectangle aBackRect = aRect;
@@ -120,29 +122,29 @@ void CellLineStyleValueSet::UserDraw( const UserDrawEvent& rUDEvt )
 		pDev->DrawRect(aRect);
 	}
 
-	//draw text	
-	if(nSelItem ==  nItemId )
+	// draw text
+	if(nSelItem == nItemId )
 		aFont.SetColor(COL_WHITE);
 	else
-		aFont.SetColor(GetSettings().GetStyleSettings().GetFieldTextColor()); //high contrast
+		aFont.SetColor(GetSettings().GetStyleSettings().GetFieldTextColor()); // high contrast
 
-	pDev->SetFont(aFont);		
-	Point aStart(aBLPos.X() + nRectWidth * 7 / 9 - 5 , aBLPos.Y() + nRectHeight/6);
-	pDev->DrawText(aStart, strUnit[ nItemId - 1 ]); //can't set TEXT_DRAW_ENDELLIPSIS here, or the text will disapear
+	pDev->SetFont(aFont);
+	Point aStart(aBLPos.X() + nRectWidth * 7 / 9 - 5 , aBLPos.Y() + nRectHeight / 6);
+	pDev->DrawText(aStart, strUnit[ nItemId - 1 ]); // can't set TEXT_DRAW_ENDELLIPSIS here, or the text will disappear
 
-	//draw line
-	if( nSelItem ==  nItemId )
+	// draw line
+	if( nSelItem == nItemId )
 	{
 		pDev->SetFillColor(COL_WHITE);
 		pDev->SetLineColor(COL_WHITE);
 	}
 	else
 	{
-		pDev->SetFillColor(GetSettings().GetStyleSettings().GetFieldTextColor());	//high contrast
-		pDev->SetLineColor(GetSettings().GetStyleSettings().GetFieldTextColor());	//high contrast 
+		pDev->SetFillColor(GetSettings().GetStyleSettings().GetFieldTextColor()); // high contrast
+		pDev->SetLineColor(GetSettings().GetStyleSettings().GetFieldTextColor()); // high contrast
 	}
 
-    switch( nItemId )
+	switch( nItemId )
 	{
 		case 1:
 		case 2:
@@ -176,9 +178,9 @@ void CellLineStyleValueSet::UserDraw( const UserDrawEvent& rUDEvt )
 	pDev->SetLineColor(aOldColor);
 	pDev->SetFillColor(aOldFillColor);
 	pDev->SetFont(aOldFont);
-	
+
 }
 
 } } // end of namespace svx::sidebar
 
-// eof
+/* vim: set noet sw=4 ts=4: */

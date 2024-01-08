@@ -41,6 +41,24 @@ $(eval $(call gb_Library_add_linked_libs,slideshow,\
 	$(gb_STDLIBS) \
 ))
 
+# Necessary for building slideshowimpl
+$(eval $(call gb_Library_set_include,slideshow,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/slideshow/source/inc \
+	-I$(SRCDIR)/slideshow/inc/pch \
+))
+
+# Necessary for building slideshowimpl
+$(eval $(call gb_Library_add_defs,sildeshow,\
+	-DBOOST_SPIRIT_USE_OLD_NAMESPACE \
+))
+
+# Necessary for building slideshowimpl
+$(eval $(call gb_Library_add_api,slideshow,\
+	offapi \
+	udkapi \
+))
+
 $(eval $(call gb_Library_add_linked_static_libs,slideshow,\
 	sldshw_s \
 ))

@@ -104,7 +104,7 @@ int SAL_CALL main( int argc, char **argv )
 	PR_Init( PR_SYSTEM_THREAD, PR_PRIORITY_NORMAL, 1 ) ;
 	PK11_SetPasswordFunc( PriPK11PasswordFunc ) ;
 	if( NSS_Init( argv[1] ) != SECSuccess ) {
-		fprintf( stderr , "### cannot intialize NSS!\n" ) ;
+		fprintf( stderr , "### cannot initialize NSS!\n" ) ;
 		goto done ;
 	}
 

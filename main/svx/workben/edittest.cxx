@@ -192,12 +192,12 @@ class MyEditEngine : public EditEngine
 {
 public:
 	MyEditEngine( SfxItemPool* pPool ) : EditEngine( pPool ) { ; }
-	virtual String	CalcFieldValue( const SvxFieldItem& rField, USHORT nPara, USHORT nPos, Color*& rTxtColor, Color*& rFldColor );
-	virtual void	FieldClicked( const SvxFieldItem& rField, USHORT nPara, USHORT nPos );
+	virtual String	CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, USHORT nPos, Color*& rTxtColor, Color*& rFldColor );
+	virtual void	FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, USHORT nPos );
 	virtual void	FieldSelected( const SvxFieldItem& rField, USHORT nPara, USHORT nPos );
 };
 
-XubString __EXPORT MyEditEngine::CalcFieldValue( const SvxFieldItem& rField, USHORT nPara, USHORT nPos, Color*& rpTxtColor, Color*& rpFldColor )
+XubString __EXPORT MyEditEngine::CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, USHORT nPos, Color*& rpTxtColor, Color*& rpFldColor )
 {
 	const SvxFieldData* pField = rField.GetField();
 	if ( !pField )
@@ -227,7 +227,7 @@ XubString __EXPORT MyEditEngine::CalcFieldValue( const SvxFieldItem& rField, USH
 	return String( RTL_CONSTASCII_USTRINGPARAM( "???" ) );
 }
 
-void __EXPORT MyEditEngine::FieldClicked( const SvxFieldItem& rField, USHORT nPara, USHORT nPos )
+void __EXPORT MyEditEngine::FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, USHORT nPos )
 {
 	EditEngine::FieldClicked( rField, nPara, nPos );	// Falls URL
 	const SvxFieldData* pField = rField.GetField();
@@ -968,7 +968,7 @@ IMPL_LINK( EditMainWindow, TBSelect, ToolBox *, p )
 		case TB_PARATTR1:
 		{
 			pEditEngine->SetUpdateMode( FALSE );
-			USHORT nPara = 0;
+			sal_uInt32 nPara = 0;
 			SfxItemSet aSet( pEditEngine->GetEmptyItemSet() );
 			aSet.Put( SvxFontItem( FAMILY_DECORATIVE, String( RTL_CONSTASCII_USTRINGPARAM( "StarBats" ) ), String(),PITCH_DONTKNOW, RTL_TEXTENCODING_MS_1252, EE_CHAR_FONTINFO ) );
 			aSet.Put( SvxColorItem( Color(COL_MAGENTA), EE_CHAR_COLOR ) );
@@ -1534,7 +1534,7 @@ void __EXPORT EditViewWindow::KeyInput( const KeyEvent& rKEvt )
 	USHORT nCode = rKEvt.GetKeyCode().GetCode();
 	// Auswertung fuer besondere Einstellungen....
 	if ( ( nCode == KEY_A) && rKEvt.GetKeyCode().IsMod1() )
-		pEditView->SetSelection( ESelection( 0, 0, 0xFFFF, 0xFFFF ) );
+		pEditView->SetSelection( ESelection( 0, 0, EE_PARA_MAX, EE_INDEX_MAX ) );
 	else if ( ( nCode == KEY_R ) && rKEvt.GetKeyCode().IsMod2() )
 		Invalidate();
 	else if ( ( nCode == KEY_L ) && rKEvt.GetKeyCode().IsMod2() )

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,28 +9,28 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalcguidecsv_filesxml" indexer="include">
-<title xml-lang="en-US" id="tit"> Importing and Exporting CSV Files </title>
+<title xml-lang="en-US" id="tit">Importing and Exporting CSV Files</title>
 <filename>/text/scalc/guide/csv_files.xhp</filename>
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id892361"><bookmark_value>number series import</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id892361">
+<bookmark_value>number series import</bookmark_value>
 <bookmark_value>data series import</bookmark_value>
 <bookmark_value>exporting; tables as text</bookmark_value>
 <bookmark_value>importing; tables as text</bookmark_value>
@@ -64,7 +63,7 @@
 </listitem>
 <listitem>
 <paragraph xml-lang="en-US" id="par_idN108B1" role="listitem" l10n="NEW">Specify the options to divide the text in the file into columns.</paragraph>
-<paragraph xml-lang="en-US" id="par_idN108BB" role="listitem" l10n="NEW">You can preview the layout of the imported data at the bottom of the <item type="menuitem">Text Import</item> dialog. </paragraph>
+<paragraph xml-lang="en-US" id="par_idN108BB" role="listitem" l10n="NEW">You can preview the layout of the imported data at the bottom of the <item type="menuitem">Text Import</item> dialog.</paragraph>
 <paragraph xml-lang="en-US" id="par_id8444166" role="listitem" l10n="NEW">Right-click a column in the preview to set the format or to hide the column.</paragraph>
 <paragraph xml-lang="en-US" id="par_idN108E2" role="tip" l10n="CHG">Check the text delimiter box that matches the character used as text delimiter in the file. In case of an unlisted delimiter, type the character into the input box.</paragraph>
 </listitem>

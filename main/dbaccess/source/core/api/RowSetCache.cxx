@@ -1064,7 +1064,7 @@ sal_Bool ORowSetCache::first(  )
 {
 	// first move to the first row
 	// then check if the cache window is at the beginning
-	// when not postionize the window and fill it with data
+	// when not, position the window and fill it with data
 	// smart moving of the window -> clear only the rows whom are out of range
 	sal_Bool bRet = m_pCacheSet->first();
 	if(bRet)
@@ -1513,7 +1513,7 @@ sal_Bool ORowSetCache::checkInnerJoin(const ::connectivity::OSQLParseNode *pNode
 	else if ((SQL_ISRULE(pNode,search_condition) || SQL_ISRULE(pNode,boolean_term))	&&			// AND/OR-Verknuepfung:
 				pNode->count() == 3)
 	{
-		// nur AND Verknüpfung zulassen
+		// nur AND VerknÃ¼pfung zulassen
 		if ( SQL_ISTOKEN(pNode->getChild(1),AND) )
             bOk = checkInnerJoin(pNode->getChild(0),_xConnection,_sUpdateTableName)
                 && checkInnerJoin(pNode->getChild(2),_xConnection,_sUpdateTableName);

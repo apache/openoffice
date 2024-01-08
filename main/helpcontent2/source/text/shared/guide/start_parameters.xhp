@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,20 +9,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidestart_parametersxml" indexer="include" status="PUBLISH">
@@ -33,7 +30,8 @@
 </meta>
 <body>
 <section id="start_parameters">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156410"><bookmark_value>start parameters</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156410">
+<bookmark_value>start parameters</bookmark_value>
 <bookmark_value>command line parameters</bookmark_value>
 <bookmark_value>parameters;command line</bookmark_value>
 <bookmark_value>arguments in command line</bookmark_value>
@@ -47,7 +45,7 @@
 <paragraph role="listitem" id="par_id3156152" xml-lang="en-US" l10n="U" oldref="5">Under Windows, select <emph>Run</emph> from the Windows Start menu, or open a Shell under UNIX® based platforms.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3152472" xml-lang="en-US" l10n="U" oldref="6">Under Windows, type the following text in the <emph>Open </emph>text field and click <emph>OK</emph>. </paragraph>
+<paragraph role="listitem" id="par_id3152472" xml-lang="en-US" l10n="U" oldref="6">Under Windows, type the following text in the <emph>Open</emph> text field and click <emph>OK</emph>.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3149669" xml-lang="en-US" l10n="U" oldref="53">Under UNIX based systems, type the following line of text, then press <emph>Return</emph>:</paragraph>
@@ -163,8 +161,8 @@
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3154756" xml-lang="en-US" l10n="U" oldref="16">Starts in invisible mode.</paragraph>
-<paragraph role="tablecontent" id="par_id3148914" xml-lang="en-US" l10n="U" oldref="17">Neither the start-up logo nor the initial program window will be visible. However, the $[officename] software can be controlled and documents and dialogs opened via the <link href="https://api.openoffice.org" name="API">API</link>. </paragraph>
-<paragraph role="tablecontent" id="par_id3147341" xml-lang="en-US" l10n="U" oldref="18">When the $[officename] software has been started with this parameter, it can only be ended using the taskmanager (Windows) or the <emph>kill </emph>command (UNIX based systems).</paragraph>
+<paragraph role="tablecontent" id="par_id3148914" xml-lang="en-US" l10n="U" oldref="17">Neither the start-up logo nor the initial program window will be visible. However, the $[officename] software can be controlled and documents and dialogs opened via the <link href="https://api.openoffice.org" name="API">API</link>.</paragraph>
+<paragraph role="tablecontent" id="par_id3147341" xml-lang="en-US" l10n="U" oldref="18">When the $[officename] software has been started with this parameter, it can only be ended using the taskmanager (Windows) or the <emph>kill</emph> command (UNIX based systems).</paragraph>
 <paragraph role="tablecontent" id="par_id3150388" xml-lang="en-US" l10n="U" oldref="48">It cannot be used in conjunction with <emph>-quickstart</emph>.</paragraph>
 <paragraph role="tablecontent" id="par_id3145147" xml-lang="en-US" l10n="U" oldref="19">More information is found in the <emph>$[officename] Developer's Guide</emph>.</paragraph>
 </tablecell>
@@ -291,7 +289,7 @@
 <paragraph role="tablecontent" id="par_id3153915" xml-lang="en-US" l10n="U" oldref="45">-display {display}</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3146786" xml-lang="en-US" l10n="U" oldref="46">Sets the <emph>DISPLAY </emph>environment variable on UNIX based platforms to the value <emph>{display}</emph>. This parameter is only supported by the start script for the $[officename] software on UNIX based platforms.</paragraph>
+<paragraph role="tablecontent" id="par_id3146786" xml-lang="en-US" l10n="U" oldref="46">Sets the <emph>DISPLAY</emph> environment variable on UNIX based platforms to the value <emph>{display}</emph>. This parameter is only supported by the start script for the $[officename] software on UNIX based platforms.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>

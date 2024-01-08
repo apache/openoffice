@@ -341,13 +341,13 @@ void View::DoPaste (::Window* pWindow)
 					pOutliner->SetUpdateMode( sal_False );
 
 					const EditEngine& rEdit = pOutliner->GetEditEngine();
-					const int nParaCount = rEdit.GetParagraphCount();
+					const sal_uInt32 nParaCount = rEdit.GetParagraphCount();
 
-					for( int nPara = nParaCount - 2; nPara >= 0; nPara-- )
+					for( sal_Int64 nPara = nParaCount - 2; nPara >= 0; nPara-- )
 					{
-						const sal_uInt16 nParaLen = (sal_uInt16)rEdit.GetTextLen( (sal_uInt16)nPara );
-						pOutliner->QuickDelete( ESelection( (sal_uInt16)nPara, nParaLen, (sal_uInt16)nPara+1, 0 ) );
-						pOutliner->QuickInsertLineBreak( ESelection( (sal_uInt16)nPara, nParaLen, (sal_uInt16)nPara, nParaLen ) );
+						const sal_uInt16 nParaLen = (sal_uInt16)rEdit.GetTextLen( nPara );
+						pOutliner->QuickDelete( ESelection( (sal_uInt32)nPara, nParaLen, (sal_uInt32)nPara+1, 0 ) );
+						pOutliner->QuickInsertLineBreak( ESelection( (sal_uInt32)nPara, nParaLen, (sal_uInt32)nPara, nParaLen ) );
 					}
 
 					DBG_ASSERT( rEdit.GetParagraphCount() <= 1, "Titelobjekt contains hard line breaks" );

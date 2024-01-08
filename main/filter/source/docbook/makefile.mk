@@ -40,8 +40,8 @@ $(OUT)$/bin$/sofftodocbookheadings.xsl: sofftodocbookheadings.xsl
 	$(COPY) sofftodocbookheadings.xsl $(OUT)$/bin$/sofftodocbookheadings.xsl
 
 $(OUT)$/bin$/DocBookTemplate.stw: DocBookTemplate.stw
-         $(COPY) DocBookTemplate.stw $(OUT)$/bin$/DocBookTemplate.stw
+	$(COPY) DocBookTemplate.stw $(OUT)$/bin$/DocBookTemplate.stw
 
 .INCLUDE: target.mk
 
-# vim: set noet ts=4 sw=4:
+# vim: set noet sw=4 ts=4:

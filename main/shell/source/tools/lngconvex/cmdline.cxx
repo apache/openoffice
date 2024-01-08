@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 
 
@@ -104,7 +103,7 @@ StringListPtr_t CommandLine::get_arg_names() const
 /** Returns an argument by name. If there are
 	duplicate argument names in the command line,
 	the first one wins.
-	Argument name an the argument value must be separated
+	Argument name and the argument value must be separated
 	by spaces. If the argument value starts with an
 	argument prefix use quotes else the return value is
 	an empty string because the value will be interpreted
@@ -169,3 +168,5 @@ bool CommandLine::is_arg_name(const std::string& Argument) const
 {
 	return (0 == Argument.compare(0, m_argprefix.length(), m_argprefix));
 }
+
+/* vim: set noet sw=4 ts=4: */

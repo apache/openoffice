@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,8 +21,6 @@
  *
  ***********************************************************-->
 
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedoptionen01030500xml" indexer="include" status="PUBLISH">
@@ -33,7 +30,8 @@
 </meta>
 <body>
 <section id="html">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155132"><bookmark_value>$[officename] Basic scripts in HTML documents</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155132">
+<bookmark_value>$[officename] Basic scripts in HTML documents</bookmark_value>
 <bookmark_value>HTML;compatibility settings</bookmark_value>
 </bookmark>
 <!-- removed HID OFFMGR:TABPAGE:RID_OFAPAGE_HTMLOPT -->
@@ -72,7 +70,7 @@
 <!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_IGNORE_FONTNAMES -->
 <bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_HTMLOPT:CB_IGNORE_FONTNAMES" id="bm_id5614185" localize="false"/>
 <paragraph role="heading" id="hd_id3148797" xml-lang="en-US" level="3" l10n="U" oldref="43">Ignore font settings</paragraph>
-<paragraph role="paragraph" id="par_id3149202" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_IGNORE_FONTNAMES">Mark this check box to ignore all font settings when importing. The fonts that were defined in the HTML Page Style will be the fonts that will be used. </ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3149202" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_IGNORE_FONTNAMES">Mark this check box to ignore all font settings when importing. The fonts that were defined in the HTML Page Style will be the fonts that will be used.</ahelp></paragraph>
 <!-- removed HID OFFMGR:LISTBOX:RID_OFAPAGE_HTMLOPT:LB_EXPORT -->
 <bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_OFAPAGE_HTMLOPT:LB_EXPORT" id="bm_id1028473" localize="false"/>
 <paragraph role="heading" id="hd_id3151177" xml-lang="en-US" level="2" l10n="U" oldref="9">Export</paragraph>

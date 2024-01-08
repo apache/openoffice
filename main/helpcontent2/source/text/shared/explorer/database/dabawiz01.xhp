@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
  *
@@ -22,8 +21,7 @@
  *
  ***********************************************************-->
 
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedexplorerdatabasedabawiz01xml" indexer="include">
 <title id="tit" xml-lang="en-US">Database Selection</title>
@@ -32,7 +30,8 @@
 </meta>
 <body>
 <section id="dabaselection">
-<bookmark xml-lang="en-US" branch="index" id="bm_id2082583"><bookmark_value>databases; connecting (Base)</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id2082583">
+<bookmark_value>databases; connecting (Base)</bookmark_value>
 </bookmark><comment>mw moved databases;formats (base) to shared/explorer/database/dabawiz00.xhp</comment>
 <paragraph role="heading" id="par_idN1054D" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/explorer/database/dabawiz01.xhp">Database Selection</link></paragraph>
 <paragraph role="paragraph" id="par_idN1055D" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Creates a new database, opens a database file, or connects to an existing database.</ahelp></paragraph>

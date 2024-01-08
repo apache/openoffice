@@ -1988,7 +1988,7 @@ EditTextObject* ScFormulaCell::CreateURLObject()
     SvxURLField aUrlField( aURL, aCellText, SVXURLFORMAT_APPDEFAULT);
     EditEngine& rEE = pDocument->GetEditEngine();
     rEE.SetText( EMPTY_STRING );
-    rEE.QuickInsertField( SvxFieldItem( aUrlField, EE_FEATURE_FIELD ), ESelection( 0xFFFF, 0xFFFF ) );
+    rEE.QuickInsertField( SvxFieldItem( aUrlField, EE_FEATURE_FIELD ), ESelection( EE_PARA_MAX, EE_INDEX_MAX ) );
 
     return rEE.CreateTextObject();
 }

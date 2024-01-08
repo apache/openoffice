@@ -52,7 +52,7 @@ ENABLE_DOWNLOADSETS=TRUE
 .IF "$(OS)"=="LINUX"
 DONT_REMOVE_PACKAGE:=TRUE
 .EXPORT: DONT_REMOVE_PACKAGE
-.ENDIF          # "$(OS)"=="LINUX"
+.ENDIF			# "$(OS)"=="LINUX"
 
 .INCLUDE .IGNORE: $(SRC_ROOT)$/cwsname.mk
 
@@ -87,13 +87,13 @@ help .PHONY :
 	@echo "    sdkoobeta              like sdkoo but with 'Beta' appended to the product name"
 	@echo "    sdkoodev               builds the developer snapshot of the SDK"
 	@echo "    openofficebeta         like openoffice but with 'Beta' appended to product name"
-	@echo 
+	@echo
 	@echo "experimental targets:"
 	@echo "    patch-create           create a patch for updating an installed office (Windows only)"
 	@echo "    patch-apply            apply a previously created patch"
 	@echo "    patch-update-releases-xml"
 	@echo "    patch-check            check if patch can be created (part of patch-create)"
-	@echo 
+	@echo
 	@echo "Most targets (all except aoo_srcrelease and updatepack) accept suffixes"
 	@echo "    append _<language> to build a target for one language only"
 	@echo "        the default set of languages is alllangiso=$(alllangiso)"
@@ -596,4 +596,4 @@ $(MSISDKOOTEMPLATEDIR) $(MSISDKOOTEMPLATEDIR)$/Binary :
 $(MSISDKOOTEMPLATEDIR)/% : $(MSISDKOOTEMPLATESOURCE)$/%
 	$(GNUCOPY) $< $@
 
-# vim: set noet ts=4 sw=4:
+# vim: set noet sw=4 ts=4:

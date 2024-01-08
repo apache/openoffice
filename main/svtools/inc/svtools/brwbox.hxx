@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef _SVX_BRWBOX_HXX
@@ -69,15 +70,15 @@ typedef sal_uLong BrowserMode;
 #define BROWSER_MULTISELECTION       0x0002
 #define BROWSER_THUMBDRAGGING        0x0004
 #define BROWSER_KEEPHIGHLIGHT        0x0008
-#define BROWSER_KEEPSELECTION        BROWSER_KEEPHIGHLIGHT	// old, dont use!
+#define BROWSER_KEEPSELECTION        BROWSER_KEEPHIGHLIGHT	// old, don't use!
 #define BROWSER_HLINES               0x0010
 #define BROWSER_VLINES               0x0020
-#define BROWSER_HLINESFULL           BROWSER_HLINES // old, dont use!
-#define BROWSER_VLINESFULL           BROWSER_VLINES // old, dont use!
-#define BROWSER_HLINESDOTS           0x0000 // old => dont use!
-#define BROWSER_VLINESDOTS           0x0000 // old => dont use!
+#define BROWSER_HLINESFULL           BROWSER_HLINES // old, don't use!
+#define BROWSER_VLINESFULL           BROWSER_VLINES // old, don't use!
+#define BROWSER_HLINESDOTS           0x0000 // old => don't use!
+#define BROWSER_VLINESDOTS           0x0000 // old => don't use!
 
-#define BROWSER_HIDESELECT           0x0100	// old => dont use!
+#define BROWSER_HIDESELECT           0x0100	// old => don't use!
 #define BROWSER_HIDECURSOR           0x0200
 
 #define BROWSER_NO_HSCROLL           0x0400
@@ -91,7 +92,7 @@ typedef sal_uLong BrowserMode;
 #define BROWSER_NO_VSCROLL           0x8000
 
 #define BROWSER_HIGHLIGHT_NONE       0x0100 // == BROWSER_HIDESELECT
-#define BROWSER_HIGHLIGHT_TOGGLE 0x00000000 // old default => NULL, dont use!
+#define BROWSER_HIGHLIGHT_TOGGLE 0x00000000 // old default => NULL, don't use!
 
 #define BROWSER_HEADERBAR_NEW	 0x00040000
 #define BROWSER_AUTOSIZE_LASTCOL 0x00080000
@@ -250,7 +251,7 @@ class SVT_DLLPUBLIC BrowseBox
 
 	long            nDataRowHeight; // height of a single data-row
 	sal_uInt16          nTitleLines;    // number of lines in title row
-	sal_uLong           nControlAreaWidth; // width of fixed area beneeth hscroll
+	sal_uLong           nControlAreaWidth; // width of fixed area beneath hscroll
 	sal_Bool            bThumbDragging; // handle thumb dragging
 	sal_Bool            bColumnCursor;  // single columns and fields selectable
 	sal_Bool            bMultiSelection;// allow multiple selected rows
@@ -260,7 +261,7 @@ class SVT_DLLPUBLIC BrowseBox
 	sal_Bool            bVLines;        // draw lines between columns
 	sal_Bool            bHDots;         // draw lines between rows dotted
 	sal_Bool            bVDots;         // draw lines between columns dotted
-	Color			aGridLineColor;		// color for lines, default dark grey
+	Color			aGridLineColor;		// color for lines, default dark gray
 	sal_Bool            bBootstrapped;  // child windows resized etc.
 	long            nTopRow;        // no. of first visible row (0...)
 	long            nCurRow;        // no. of row with cursor
@@ -423,7 +424,7 @@ protected:
 private:
 	void*			implGetDataFlavors() const;
 		// with this we can make GetDataFlavors() inline, which is strongly needed as SVTOOLS does not export
-		// any sysbols containing an "_STL", so a non-inlined method would not be exported ....
+		// any symbols containing an "_STL", so a non-inlined method would not be exported ....
 
 protected:
     // callbacks for the data window
@@ -622,7 +623,7 @@ public:
 
     /** suggests a default width for a column containing a given text
 
-        The width is calculated so that the text fits completely, plus som margin.
+        The width is calculated so that the text fits completely, plus some margin.
     */
     sal_uLong           GetDefaultColumnWidth( const String& _rText ) const;
 
@@ -680,7 +681,7 @@ public:
             sal_Bool _bColumnHeaderBar
          );
 
-    /** returns the Rectangle for either the column header bar ot the row header bar
+    /** returns the Rectangle for either the column header bar or the row header bar
 		@param	_bIsColumnBar
 			<TRUE/> when column header bar is used
 		@param	_bOnScreen
@@ -756,8 +757,8 @@ public:
     // Conversions ------------------------------------------------------------
 
     /** Converts a point relative to the data window origin to a cell address.
-        @param rnRow  Out-paramater that takes the row index.
-        @param rnColumnId  Out-paramater that takes the column ID.
+        @param rnRow  Out-parameter that takes the row index.
+        @param rnColumnId  Out-parameter that takes the column ID.
         @param rPoint  The position in pixels relative to the data window.
         @return <TRUE/>, if the point could be converted to a valid address. */
     virtual sal_Bool ConvertPointToCellAddress(
@@ -765,21 +766,21 @@ public:
 
     /** Converts a point relative to the row header bar origin to a row header
         index.
-        @param rnRow  Out-paramater that takes the row index.
+        @param rnRow  Out-parameter that takes the row index.
         @param rPoint  The position in pixels relative to the header bar.
         @return <TRUE/>, if the point could be converted to a valid index. */
     virtual sal_Bool ConvertPointToRowHeader( sal_Int32& rnRow, const Point& rPoint );
 
     /** Converts a point relative to the column header bar origin to a column
         header index.
-        @param rnColumnId  Out-paramater that takes the column ID.
+        @param rnColumnId  Out-parameter that takes the column ID.
         @param rPoint  The position in pixels relative to the header bar.
         @return <TRUE/>, if the point could be converted to a valid index. */
     virtual sal_Bool ConvertPointToColumnHeader( sal_uInt16& rnColumnPos, const Point& rPoint );
 
     /** Converts a point relative to the BrowseBox origin to the index of an
         existing control.
-        @param rnRow  Out-paramater that takes the 0-based control index.
+        @param rnRow  Out-parameter that takes the 0-based control index.
         @param rPoint  The position in pixels relative to the BrowseBox.
         @return <TRUE/>, if the point could be converted to a valid index. */
     virtual sal_Bool ConvertPointToControlIndex( sal_Int32& rnIndex, const Point& rPoint );
@@ -871,3 +872,4 @@ inline const DataFlavorExVector& BrowseBox::GetDataFlavors() const
 
 #endif
 
+/* vim: set noet sw=4 ts=4: */

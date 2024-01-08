@@ -31,7 +31,7 @@
   <dlg:text dlg:id="lbTopicTitle" dlg:tab-index="8" dlg:left="6" dlg:top="6" dlg:width="31" dlg:height="10" dlg:value="Topic Title" dlg:tabstop="false"/>
   <dlg:text dlg:id="lbIndexer" dlg:tab-index="7" dlg:left="6" dlg:top="23" dlg:width="31" dlg:height="10" dlg:value="Indexing" dlg:tabstop="false"/>
   <dlg:radiogroup>
-   <dlg:radio dlg:id="opIndexInclude" dlg:tab-index="2" dlg:left="41" dlg:top="22" dlg:width="55" dlg:height="10" dlg:help-text="Includes the file in the full text index. This is the default setting." dlg:tabstop="true" dlg:value="include (default)" dlg:checked="true"/>
+   <dlg:radio dlg:id="opIndexInclude" dlg:tab-index="2" dlg:left="41" dlg:top="22" dlg:width="60" dlg:height="10" dlg:help-text="Includes the file in the full text index. This is the default setting." dlg:tabstop="true" dlg:value="include (default)" dlg:checked="true"/>
   </dlg:radiogroup>
   <dlg:button dlg:id="butOk" dlg:tab-index="5" dlg:left="161" dlg:top="62" dlg:width="33" dlg:height="14" dlg:help-text="Applies the changes and closes the dialog" dlg:tabstop="true" dlg:default="true" dlg:value="Ok" dlg:button-type="ok"/>
   <dlg:button dlg:id="butCancel" dlg:tab-index="4" dlg:left="124" dlg:top="62" dlg:width="33" dlg:height="14" dlg:help-text="Closes the dialog without applying the changes" dlg:tabstop="true" dlg:default="true" dlg:value="Cancel" dlg:button-type="cancel"/>
@@ -39,7 +39,7 @@
    <script:event script:event-name="on-blur" script:location="application" script:macro-name="HelpAuthoring.Meta.NormalizeMeta" script:language="StarBasic"/>
   </dlg:textfield>
   <dlg:radiogroup>
-   <dlg:radio dlg:id="opIndexExclude" dlg:tab-index="3" dlg:left="100" dlg:top="22" dlg:width="92" dlg:height="10" dlg:help-text="Excludes the file from the full text index. The file contents will not be found via the full text help search." dlg:tabstop="true" dlg:value="exclude"/>
+   <dlg:radio dlg:id="opIndexExclude" dlg:tab-index="3" dlg:left="105" dlg:top="22" dlg:width="92" dlg:height="10" dlg:help-text="Excludes the file from the full text index. The file contents will not be found via the full text help search." dlg:tabstop="true" dlg:value="exclude"/>
   </dlg:radiogroup>
   <dlg:text dlg:id="Label1" dlg:tab-index="9" dlg:left="6" dlg:top="41" dlg:width="31" dlg:height="10" dlg:value="Comments" dlg:tabstop="false"/>
   <dlg:textfield dlg:style-id="0" dlg:id="txtComment" dlg:tab-index="6" dlg:left="41" dlg:top="38" dlg:width="152" dlg:height="12" dlg:help-text="Comment on file creation (read-only)." dlg:tabstop="false"/>

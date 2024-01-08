@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 [OOO_ERROR_1]
@@ -92,7 +92,7 @@ en-US = "{[ProductName] }Setup completed successfully."
 en-US = "{[ProductName] }Setup failed."
 
 [OOO_ERROR_25]
-en-US = "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
+en-US = "Error reading from file: [2]. {{ System error [3].}} Verify that the file exists and that you can access it."
 
 [OOO_ERROR_26]
 en-US = "Cannot create the file [3]. A directory with this name already exists. Cancel the installation and try installing to a different location."
@@ -101,7 +101,7 @@ en-US = "Cannot create the file [3]. A directory with this name already exists. 
 en-US = "Please insert the disk: [2]"
 
 [OOO_ERROR_28]
-en-US = "The installer has insufficient privileges to access this directory: [2]. The installation cannot continue.  Log on as an administrator or contact your system administrator."
+en-US = "The installer has insufficient privileges to access this directory: [2]. The installation cannot continue. Log on as an administrator or contact your system administrator."
 
 [OOO_ERROR_29]
 en-US = "Error writing to file [2]. Verify that you have access to that directory."
@@ -176,7 +176,7 @@ en-US = "Error getting file security: [3] GetLastError: [2]"
 en-US = "Invalid Drive: [2]"
 
 [OOO_ERROR_53]
-en-US = "Error applying patch to file [2]. It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor. {{System Error: [3]}}"
+en-US = "Error applying patch to file [2]. It has probably been updated by other means, and can no longer be modified by this patch. For more information contact your patch vendor. {{System Error: [3]}}"
 
 [OOO_ERROR_54]
 en-US = "Could not create key [2]. {{ System error [3].}} Verify that you have sufficient access to that key, or contact your support personnel."
@@ -254,7 +254,7 @@ en-US = "The installer must restart your system before configuration of [2] can 
 en-US = "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
 
 [OOO_ERROR_79]
-en-US = "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue. Do you want to undo those changes?"
+en-US = "An installation for [2] is currently suspended. You must undo the changes made by that installation to continue. Do you want to undo those changes?"
 
 [OOO_ERROR_80]
 en-US = "A previous installation for this product is in progress. You must undo the changes made by that installation to continue. Do you want to undo those changes?"
@@ -284,7 +284,7 @@ en-US = "One or more of the files required to restore your computer to its previ
 en-US = "[2] cannot install one of its required products. Contact your technical support group. {{System Error: [3].}}"
 
 [OOO_ERROR_89]
-en-US = "The older version of [2] cannot be removed.  Contact your technical support group. {{System Error [3].}}"
+en-US = "The older version of [2] cannot be removed. Contact your technical support group. {{System Error [3].}}"
 
 [OOO_ERROR_90]
 en-US = "The path [2] is not valid. Please specify a valid path."
@@ -408,5 +408,3 @@ en-US = "This setup requires Internet Information Server 4.0 or higher for confi
 
 [OOO_ERROR_130]
 en-US = "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-
-

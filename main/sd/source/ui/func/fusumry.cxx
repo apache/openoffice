@@ -210,7 +210,7 @@ void FuSummaryPage::DoExecute( SfxRequest& )
 		SfxItemSet aEmptyEEAttr(mpDoc->GetPool(), EE_ITEMS_START, EE_ITEMS_END);
 		sal_uLong nParaCount = pOutl->GetParagraphCount();
 
-		for (sal_uInt16 nPara = 0; nPara < nParaCount; nPara++)
+		for (sal_uInt32 nPara = 0; nPara < nParaCount; nPara++)
 		{
 			pOutl->SetStyleSheet( nPara, pStyle );
 			pOutl->QuickRemoveCharAttribs(nPara);

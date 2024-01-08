@@ -153,7 +153,7 @@ void SdPageListControl::Fill( SdDrawDocument* pDoc )
 					for (sal_uLong nPara = 0; nPara < nCount; nPara++)
 					{
 						pPara = pOutliner->GetParagraph(nPara);
-						if(pPara && pOutliner->GetDepth( (sal_uInt16) nPara ) == 0 )
+						if(pPara && pOutliner->GetDepth( nPara ) == 0 )
 						{
 							String aParaText = pOutliner->GetText(pPara);
 							if(aParaText.Len() != 0)

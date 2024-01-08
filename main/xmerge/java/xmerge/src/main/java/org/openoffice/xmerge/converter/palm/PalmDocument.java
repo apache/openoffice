@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,8 +33,8 @@ import java.io.UnsupportedEncodingException;
 import org.openoffice.xmerge.Document;
 
 /**
- *  <p> A <code>PalmDocument</code> is palm implementaion of the
- *  <code>Docuemnt</code> interface.</p>
+ *  <p> A <code>PalmDocument</code> is palm implementation of the
+ *  <code>Document</code> interface.</p>
  *
  *  <p>This implementation allows the Palm device format to be
  *  read via an <code>InputStream</code> and written via an
@@ -43,7 +43,7 @@ import org.openoffice.xmerge.Document;
  *  @author  Martin Maher
  */
 
-public class PalmDocument 
+public class PalmDocument
     implements Document {
 
     /**
@@ -84,7 +84,7 @@ public class PalmDocument
      *  @throws  NullPointerException  If <code>recs</code> is null.
      */
     public PalmDocument(String name, int creatorID, int typeID, int version,
-        short attribute, Record[] recs) 
+        short attribute, Record[] recs)
         throws UnsupportedEncodingException {
         pdb = new PalmDB(name, creatorID, typeID, version, attribute, recs);
         fileName = pdb.getPDBNameString();
@@ -98,7 +98,7 @@ public class PalmDocument
      *
      *  @throws  IOException  If any I/O error occurs.
      */
-   
+
     public void read(InputStream is) throws IOException {
         PdbDecoder decoder = new PdbDecoder();
 	ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -111,7 +111,7 @@ public class PalmDocument
         pdb = decoder.parse(bytearr);
         fileName = pdb.getPDBNameString();
     }
-    
+
 
     /**
      *  Writes the <code>PalmDocument</code> to an <code>OutputStream</code>.
@@ -132,7 +132,7 @@ public class PalmDocument
      *  @return  The <code>PalmDB</code>.
      */
     public PalmDB getPdb() {
-        return pdb;    
+        return pdb;
     }
 
 
@@ -143,21 +143,21 @@ public class PalmDocument
      *  @param  pdb  The new <code>PalmDB</code> value.
      */
     public void setPdb(PalmDB pdb) {
-        this.pdb = pdb;    
+        this.pdb = pdb;
 
         String name = pdb.getPDBNameString();
         fileName = name;
     }
-                          
+
 
     /**
      *  Returns the name of the file.
-     *  
+     *
      *  @return  The name of the file represented in the
      *           <code>PalmDocument</code>.
      */
     public String getFileName() {
-        return fileName + ".pdb";    
+        return fileName + ".pdb";
     }
 
 
@@ -170,4 +170,3 @@ public class PalmDocument
         return fileName;
     }
 }
-

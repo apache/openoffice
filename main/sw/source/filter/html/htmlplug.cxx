@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -244,7 +244,7 @@ void SwHTMLParser::SetSpace( const Size& rPixSpace,
 	}
 	if( nLeftSpace > 0 || nRightSpace > 0 )
 	{
-        SvxLRSpaceItem aLRItem( RES_LR_SPACE );
+		SvxLRSpaceItem aLRItem( RES_LR_SPACE );
 		aLRItem.SetLeft( nLeftSpace > 0 ? nLeftSpace : 0 );
 		aLRItem.SetRight( nRightSpace > 0 ? nRightSpace : 0 );
 		rFlyItemSet.Put( aLRItem );
@@ -252,7 +252,7 @@ void SwHTMLParser::SetSpace( const Size& rPixSpace,
 		{
 			const SwFmtHoriOrient& rHoriOri =
 				(const SwFmtHoriOrient&)rFlyItemSet.Get( RES_HORI_ORIENT );
-            if( text::HoriOrientation::NONE == rHoriOri.GetHoriOrient() )
+			if( text::HoriOrientation::NONE == rHoriOri.GetHoriOrient() )
 			{
 				SwFmtHoriOrient aHoriOri( rHoriOri );
 				aHoriOri.SetPos( aHoriOri.GetPos() + nLeftSpace );
@@ -280,7 +280,7 @@ void SwHTMLParser::SetSpace( const Size& rPixSpace,
 	}
 	if( nUpperSpace || nLowerSpace )
 	{
-        SvxULSpaceItem aULItem( RES_UL_SPACE );
+		SvxULSpaceItem aULItem( RES_UL_SPACE );
 		aULItem.SetUpper( nUpperSpace );
 		aULItem.SetLower( nLowerSpace );
 		rFlyItemSet.Put( aULItem );
@@ -288,7 +288,7 @@ void SwHTMLParser::SetSpace( const Size& rPixSpace,
 		{
 			const SwFmtVertOrient& rVertOri =
 				(const SwFmtVertOrient&)rFlyItemSet.Get( RES_VERT_ORIENT );
-            if( text::VertOrientation::NONE == rVertOri.GetVertOrient() )
+			if( text::VertOrientation::NONE == rVertOri.GetVertOrient() )
 			{
 				SwFmtVertOrient aVertOri( rVertOri );
 				aVertOri.SetPos( aVertOri.GetPos() + nUpperSpace );
@@ -306,8 +306,8 @@ void SwHTMLParser::InsertEmbed()
 	Size aSize( USHRT_MAX, USHRT_MAX );
 	Size aSpace( USHRT_MAX, USHRT_MAX );
 	sal_Bool bPrcWidth = sal_False, bPrcHeight = sal_False, bHidden = sal_False;
-    sal_Int16 eVertOri = text::VertOrientation::NONE;
-    sal_Int16 eHoriOri = text::HoriOrientation::NONE;
+	sal_Int16 eVertOri = text::VertOrientation::NONE;
+	sal_Int16 eHoriOri = text::HoriOrientation::NONE;
 	SvCommandList aCmdLst;
 	const HTMLOptions *pHTMLOptions = GetOptions();
 
@@ -344,10 +344,10 @@ void SwHTMLParser::InsertEmbed()
 				aType = pOption->GetString();
 			break;
 		case HTML_O_ALIGN:
-            if( eVertOri==text::VertOrientation::NONE && eHoriOri==text::HoriOrientation::NONE )
+			if( eVertOri==text::VertOrientation::NONE && eHoriOri==text::HoriOrientation::NONE )
 			{
-                eVertOri = pOption->GetEnum( aHTMLImgVAlignTable, eVertOri );
-                eHoriOri = pOption->GetEnum( aHTMLImgHAlignTable, eHoriOri );
+				eVertOri = pOption->GetEnum( aHTMLImgVAlignTable, eVertOri );
+				eHoriOri = pOption->GetEnum( aHTMLImgHAlignTable, eHoriOri );
 			}
 			break;
 		case HTML_O_WIDTH:
@@ -390,8 +390,8 @@ void SwHTMLParser::InsertEmbed()
 
 	// Die Default-Werte umsetzen (ausser Hoehe/Breite, das macht schon
 	// SetFrmSize() fuer uns)
-    if( eVertOri==text::VertOrientation::NONE && eHoriOri==text::HoriOrientation::NONE )
-        eVertOri = text::VertOrientation::TOP;
+	if( eVertOri==text::VertOrientation::NONE && eHoriOri==text::HoriOrientation::NONE )
+		eVertOri = text::VertOrientation::TOP;
 	if( USHRT_MAX==aSpace.Width() )
 		aSpace.Width() = 0;
 	if( USHRT_MAX==aSpace.Height() )
@@ -454,12 +454,12 @@ void SwHTMLParser::InsertEmbed()
 	}
 	else
 	{
-        SwFmtAnchor aAnchor( FLY_AT_PARA );
+		SwFmtAnchor aAnchor( FLY_AT_PARA );
 		aAnchor.SetAnchor( pPam->GetPoint() );
 		aFrmSet.Put( aAnchor );
-        aFrmSet.Put( SwFmtHoriOrient( 0, text::HoriOrientation::LEFT, text::RelOrientation::FRAME) );
+		aFrmSet.Put( SwFmtHoriOrient( 0, text::HoriOrientation::LEFT, text::RelOrientation::FRAME) );
 		aFrmSet.Put( SwFmtSurround( SURROUND_THROUGHT ) );
-        aFrmSet.Put( SwFmtVertOrient( 0, text::VertOrientation::TOP, text::RelOrientation::PRINT_AREA ) );
+		aFrmSet.Put( SwFmtVertOrient( 0, text::VertOrientation::TOP, text::RelOrientation::PRINT_AREA ) );
 	}
 
 	// und noch die Groesse des Rahmens
@@ -469,8 +469,8 @@ void SwHTMLParser::InsertEmbed()
 	SetSpace( aSpace, aItemSet, aPropInfo, aFrmSet );
 
 	// und in das Dok einfuegen
-    SwFrmFmt* pFlyFmt =
-        pDoc->Insert( *pPam, ::svt::EmbeddedObjectRef( xObj, embed::Aspects::MSOLE_CONTENT ), &aFrmSet, NULL, NULL );
+	SwFrmFmt* pFlyFmt =
+		pDoc->Insert( *pPam, ::svt::EmbeddedObjectRef( xObj, embed::Aspects::MSOLE_CONTENT ), &aFrmSet, NULL, NULL );
 
 	// Namen am FrmFmt setzen
 	if( aName.Len() )
@@ -480,7 +480,7 @@ void SwHTMLParser::InsertEmbed()
 	SwNoTxtNode *pNoTxtNd =
 		pDoc->GetNodes()[ pFlyFmt->GetCntnt().GetCntntIdx()
 						  ->GetIndex()+1 ]->GetNoTxtNode();
-    pNoTxtNd->SetTitle( aAlt );
+	pNoTxtNd->SetTitle( aAlt );
 
 	// Ggf Frames anlegen und auto-geb. Rahmen registrieren
 	if( !bHidden )
@@ -500,8 +500,8 @@ void SwHTMLParser::NewObject()
 	String aClassID, aName, aStandBy, aId, aStyle, aClass;
 	Size aSize( USHRT_MAX, USHRT_MAX );
 	Size aSpace( 0, 0 );
-    sal_Int16 eVertOri = text::VertOrientation::TOP;
-    sal_Int16 eHoriOri = text::HoriOrientation::NONE;
+	sal_Int16 eVertOri = text::VertOrientation::TOP;
+	sal_Int16 eHoriOri = text::HoriOrientation::NONE;
 
 	sal_Bool bPrcWidth = sal_False, bPrcHeight = sal_False,
 			 bDeclare = sal_False;
@@ -555,8 +555,8 @@ void SwHTMLParser::NewObject()
 			aSize.Height() = (long)pOption->GetNumber();
 			break;
 		case HTML_O_ALIGN:
-            eVertOri = pOption->GetEnum( aHTMLImgVAlignTable, eVertOri );
-            eHoriOri = pOption->GetEnum( aHTMLImgHAlignTable, eHoriOri );
+			eVertOri = pOption->GetEnum( aHTMLImgVAlignTable, eVertOri );
+			eHoriOri = pOption->GetEnum( aHTMLImgHAlignTable, eHoriOri );
 			break;
 		case HTML_O_USEMAP:
 			break;
@@ -638,14 +638,14 @@ void SwHTMLParser::EndObject()
 #ifdef SOLAR_JAVA
 	if( !pAppletImpl )
 		return;
-    if( pAppletImpl->CreateApplet( sBaseURL ) )
+	if( pAppletImpl->CreateApplet( sBaseURL ) )
 	{
 		pAppletImpl->FinishApplet();
 
 		// und in das Dok einfuegen
 		SwFrmFmt* pFlyFmt =
 			pDoc->Insert( *pPam,
-                    ::svt::EmbeddedObjectRef( pAppletImpl->GetApplet(), embed::Aspects::MSOLE_CONTENT ),
+					::svt::EmbeddedObjectRef( pAppletImpl->GetApplet(), embed::Aspects::MSOLE_CONTENT ),
 					&pAppletImpl->GetItemSet(),
 					NULL,
 					NULL );
@@ -654,7 +654,7 @@ void SwHTMLParser::EndObject()
 		SwNoTxtNode *pNoTxtNd =
 			pDoc->GetNodes()[ pFlyFmt->GetCntnt().GetCntntIdx()
 							  ->GetIndex()+1 ]->GetNoTxtNode();
-        pNoTxtNd->SetTitle( pAppletImpl->GetAltText() );
+		pNoTxtNd->SetTitle( pAppletImpl->GetAltText() );
 
 		// Ggf Frames anlegen und auto-geb. Rahmen registrieren
 		RegisterFlyFrm( pFlyFmt );
@@ -672,8 +672,8 @@ void SwHTMLParser::InsertApplet()
 	Size aSize( USHRT_MAX, USHRT_MAX );
 	Size aSpace( 0, 0 );
 	sal_Bool bPrcWidth = sal_False, bPrcHeight = sal_False, bMayScript = sal_False;
-    sal_Int16 eVertOri = text::VertOrientation::TOP;
-    sal_Int16 eHoriOri = text::HoriOrientation::NONE;
+	sal_Int16 eVertOri = text::VertOrientation::TOP;
+	sal_Int16 eHoriOri = text::HoriOrientation::NONE;
 
 	// Eine neue Command-List anlegen
 	if( pAppletImpl )
@@ -708,8 +708,8 @@ void SwHTMLParser::InsertApplet()
 			aAlt = pOption->GetString();
 			break;
 		case HTML_O_ALIGN:
-            eVertOri = pOption->GetEnum( aHTMLImgVAlignTable, eVertOri );
-            eHoriOri = pOption->GetEnum( aHTMLImgHAlignTable, eHoriOri );
+			eVertOri = pOption->GetEnum( aHTMLImgVAlignTable, eVertOri );
+			eHoriOri = pOption->GetEnum( aHTMLImgHAlignTable, eHoriOri );
 			break;
 		case HTML_O_WIDTH:
 			bPrcWidth = (pOption->GetString().Search('%') != STRING_NOTFOUND);
@@ -742,9 +742,9 @@ void SwHTMLParser::InsertApplet()
 		return;
 	}
 
-    if ( aCodeBase.Len() )
-        aCodeBase = INetURLObject::GetAbsURL( sBaseURL, aCodeBase );
-    pAppletImpl->CreateApplet( aCode, aName, bMayScript, aCodeBase, sBaseURL );//, aAlt );
+	if ( aCodeBase.Len() )
+		aCodeBase = INetURLObject::GetAbsURL( sBaseURL, aCodeBase );
+	pAppletImpl->CreateApplet( aCode, aName, bMayScript, aCodeBase, sBaseURL );//, aAlt );
 	pAppletImpl->SetAltText( aAlt );
 
 	SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -778,7 +778,7 @@ void SwHTMLParser::EndApplet()
 	// und in das Dok einfuegen
 	SwFrmFmt* pFlyFmt =
 		pDoc->Insert( *pPam,
-                    ::svt::EmbeddedObjectRef( pAppletImpl->GetApplet(), embed::Aspects::MSOLE_CONTENT ),
+					::svt::EmbeddedObjectRef( pAppletImpl->GetApplet(), embed::Aspects::MSOLE_CONTENT ),
 					&pAppletImpl->GetItemSet(),
 					NULL,
 					NULL );
@@ -787,7 +787,7 @@ void SwHTMLParser::EndApplet()
 	SwNoTxtNode *pNoTxtNd =
 		pDoc->GetNodes()[ pFlyFmt->GetCntnt().GetCntntIdx()
 						  ->GetIndex()+1 ]->GetNoTxtNode();
-    pNoTxtNd->SetTitle( pAppletImpl->GetAltText() );
+	pNoTxtNd->SetTitle( pAppletImpl->GetAltText() );
 
 	// Ggf Frames anlegen und auto-geb. Rahmen registrieren
 	RegisterFlyFrm( pFlyFmt );
@@ -836,8 +836,8 @@ void SwHTMLParser::InsertFloatingFrame()
 	Size aSize( USHRT_MAX, USHRT_MAX );
 	Size aSpace( 0, 0 );
 	sal_Bool bPrcWidth = sal_False, bPrcHeight = sal_False;
-    sal_Int16 eVertOri = text::VertOrientation::TOP;
-    sal_Int16 eHoriOri = text::HoriOrientation::NONE;
+	sal_Int16 eVertOri = text::VertOrientation::TOP;
+	sal_Int16 eHoriOri = text::HoriOrientation::NONE;
 
 	const HTMLOptions *pHTMLOptions = GetOptions();
 
@@ -861,8 +861,8 @@ void SwHTMLParser::InsertFloatingFrame()
 			aAlt = pOption->GetString();
 			break;
 		case HTML_O_ALIGN:
-            eVertOri = pOption->GetEnum( aHTMLImgVAlignTable, eVertOri );
-            eHoriOri = pOption->GetEnum( aHTMLImgHAlignTable, eHoriOri );
+			eVertOri = pOption->GetEnum( aHTMLImgVAlignTable, eVertOri );
+			eHoriOri = pOption->GetEnum( aHTMLImgHAlignTable, eHoriOri );
 			break;
 		case HTML_O_WIDTH:
 			bPrcWidth = (pOption->GetString().Search('%') != STRING_NOTFOUND);
@@ -882,17 +882,17 @@ void SwHTMLParser::InsertFloatingFrame()
 	}
 
 	// und jetzt die fuer den SfxFrame
-    SfxFrameDescriptor aFrameDesc;
+	SfxFrameDescriptor aFrameDesc;
 
-    SfxFrameHTMLParser::ParseFrameOptions( &aFrameDesc, pHTMLOptions, sBaseURL );
+	SfxFrameHTMLParser::ParseFrameOptions( &aFrameDesc, pHTMLOptions, sBaseURL );
 
 	// den Floating-Frame anlegen
-    comphelper::EmbeddedObjectContainer aCnt;
-    ::rtl::OUString aObjName;
-    uno::Reference < embed::XEmbeddedObject > xObj = aCnt.CreateEmbeddedObject( SvGlobalName( SO3_IFRAME_CLASSID ).GetByteSequence(), aObjName );
+	comphelper::EmbeddedObjectContainer aCnt;
+	::rtl::OUString aObjName;
+	uno::Reference < embed::XEmbeddedObject > xObj = aCnt.CreateEmbeddedObject( SvGlobalName( SO3_IFRAME_CLASSID ).GetByteSequence(), aObjName );
 
-    //pFrame->EnableSetModified( sal_False );
-    try
+	//pFrame->EnableSetModified( sal_False );
+	try
     {
         // TODO/MBA: testing
     	if ( svt::EmbeddedObjectRef::TryRunningState( xObj ) )
@@ -929,12 +929,12 @@ void SwHTMLParser::InsertFloatingFrame()
             		uno::makeAny( sal_Int32( aMargin.Height() ) ) );
 			}
 		}
-    }
-    catch ( uno::Exception& )
-    {
-    }
+	}
+	catch ( uno::Exception& )
+	{
+	}
 
-    //pFrame->EnableSetModified( sal_True );
+	//pFrame->EnableSetModified( sal_True );
 
 	SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
 	SvxCSS1PropertyInfo aPropInfo;
@@ -957,14 +957,14 @@ void SwHTMLParser::InsertFloatingFrame()
 	SetSpace( aSpace, aItemSet, aPropInfo, aFrmSet );
 
 	// und in das Dok einfuegen
-    SwFrmFmt* pFlyFmt =
-        pDoc->Insert( *pPam, ::svt::EmbeddedObjectRef( xObj, embed::Aspects::MSOLE_CONTENT ), &aFrmSet, NULL, NULL );
+	SwFrmFmt* pFlyFmt =
+		pDoc->Insert( *pPam, ::svt::EmbeddedObjectRef( xObj, embed::Aspects::MSOLE_CONTENT ), &aFrmSet, NULL, NULL );
 
 	// den alternativen Namen setzen
 	SwNoTxtNode *pNoTxtNd =
 		pDoc->GetNodes()[ pFlyFmt->GetCntnt().GetCntntIdx()
 						  ->GetIndex()+1 ]->GetNoTxtNode();
-    pNoTxtNd->SetTitle( aAlt );
+	pNoTxtNd->SetTitle( aAlt );
 
 	// Ggf Frames anlegen und auto-geb. Rahmen registrieren
 	RegisterFlyFrm( pFlyFmt );
@@ -1308,7 +1308,7 @@ Writer& OutHTML_FrmFmtOLENode( Writer& rWrt, const SwFrmFmt& rFrmFmt,
 	else
     if( aGlobName == SvGlobalName( SO3_PLUGIN_CLASSID ) )
 	{
-		// fuer Plugins die Paramater als Optionen schreiben
+		// fuer Plugins die Parameter als Optionen schreiben
 
         uno::Sequence < beans::PropertyValue > aProps;
         aAny = xSet->getPropertyValue( ::rtl::OUString::createFromAscii("PluginCommands" ) );
@@ -1394,4 +1394,4 @@ Writer& OutHTML_FrmFmtOLENodeGrf( Writer& rWrt, const SwFrmFmt& rFrmFmt,
 	return rWrt;
 }
 
-
+/* vim: set noet sw=4 ts=4: */

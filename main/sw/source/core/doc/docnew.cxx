@@ -358,6 +358,7 @@ SwDoc::SwDoc()
     mbPurgeOLE =
                             true;
 
+    pLinkMgr->SetAutoAskUpdateAllLinks();
     //
     // COMPATIBILITY FLAGS START
     //

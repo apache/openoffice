@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE module-description PUBLIC "-//StarOffice//DTD ComponentDescription 1.0//EN" "module-description.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -30,7 +30,7 @@
         <description>
 Specifies a factory object to create proxy objects.
 These proxy object represent a given target object and can be
-be aggregated. The proxy objects act UNO conform and do NOT provide
+aggregated. The proxy objects act UNO conform and do NOT provide
 original target interfaces on queryInterface() calls.
 </description>
         <loader-name>	com.sun.star.loader.SharedLibrary	</loader-name>
@@ -63,7 +63,7 @@ original target interfaces on queryInterface() calls.
         <supported-service>com.sun.star.migration.Basic</supported-service>
         <service-dependency>...</service-dependency>
         <type>com.sun.star.beans.NamedValue</type>
-        <type>com.sun.star.lang.IllegalArgumentException</type>        
+        <type>com.sun.star.lang.IllegalArgumentException</type>
         <type>com.sun.star.lang.XInitialization</type>
         <type>com.sun.star.task.XJob</type>
         <type>com.sun.star.lang.XServiceInfo</type>
@@ -80,7 +80,7 @@ original target interfaces on queryInterface() calls.
         <supported-service>com.sun.star.migration.Autocorrection</supported-service>
         <service-dependency>...</service-dependency>
         <type>com.sun.star.beans.NamedValue</type>
-        <type>com.sun.star.lang.IllegalArgumentException</type>        
+        <type>com.sun.star.lang.IllegalArgumentException</type>
         <type>com.sun.star.lang.XInitialization</type>
         <type>com.sun.star.task.XJob</type>
         <type>com.sun.star.lang.XServiceInfo</type>

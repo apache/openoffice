@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,7 +81,7 @@ TTBasic::TTBasic() : MyBasic()
 	pTTO->SetWriteStringHdl( GenWriteStringHdl() );
 	pTTO->SetCErrorHdl( LINK( this, TTBasic, CErrorImpl ) );
 
-    StartListeningTT( pTTO->GetTTBroadcaster() );
+	StartListeningTT( pTTO->GetTTBroadcaster() );
 
 	pTestObject = pTTO;
 	pTestObject->SetFlag( SBX_EXTSEARCH );
@@ -125,7 +125,7 @@ sal_Bool TTBasic::Compile( SbModule* p )
 	return MyBasic::Compile( p );
 }
 
-const String TTBasic::GetSpechialErrorText()
+const String TTBasic::GetSpecialErrorText()
 {
 	String nErrorText;
 	if ( pTestObject && IS_ERROR() && GetErrorCode() == GET_ERROR()->nError )
@@ -144,9 +144,9 @@ const String TTBasic::GetSpechialErrorText()
 void TTBasic::ReportRuntimeError( AppBasEd *pEditWin )
 {
 	SbxVariableRef aDummy = new SbxVariable;
-	aDummy->SetUserData( 24 );  // ID_MaybeAddErr
+	aDummy->SetUserData( 24 ); // ID_MaybeAddErr
 	((TestToolObj*)pTestObject)->Notify( pTestObject->GetBroadcaster(), SbxHint( SBX_HINT_DATAWANTED, aDummy ) );
-	aDummy->SetUserData( 18 );  // ID_ExceptLog
+	aDummy->SetUserData( 18 ); // ID_ExceptLog
 	((TestToolObj*)pTestObject)->Notify( pTestObject->GetBroadcaster(), SbxHint( SBX_HINT_DATAWANTED, aDummy ) );
 	MyBasic::ReportRuntimeError( pEditWin );
 }
@@ -155,3 +155,5 @@ void TTBasic::DebugFindNoErrors( sal_Bool bDebugFindNoErrors )
 {
 	((TestToolObj*)pTestObject)->DebugFindNoErrors( bDebugFindNoErrors );
 }
+
+/* vim: set noet sw=4 ts=4: */

@@ -193,7 +193,7 @@ namespace accessibility
                    "AccessibleEditableTextPara::getLocale: paragraph index value overflow");
 
         // return locale of first character in the paragraph
-        return SvxLanguageToLocale(aLocale, GetTextForwarder().GetLanguage( static_cast< sal_uInt16 >( GetParagraphIndex() ), 0 ));
+        return SvxLanguageToLocale(aLocale, GetTextForwarder().GetLanguage( GetParagraphIndex(), 0 ));
     }
 
     void AccessibleEditableTextPara::implGetSelection( sal_Int32& nStartIndex, sal_Int32& nEndIndex )
@@ -237,13 +237,13 @@ namespace accessibility
         DBG_ASSERT(nParaIndex >= 0 && nParaIndex <= USHRT_MAX,
                    "AccessibleEditableTextPara::implGetLineBoundary: paragraph index value overflow");
 
-        const sal_Int32 nTextLen = rCacheTF.GetTextLen( static_cast< sal_uInt16 >( nParaIndex ) );
+        const sal_Int32 nTextLen = rCacheTF.GetTextLen( nParaIndex );
 
         CheckPosition(nIndex);
 
         rBoundary.startPos = rBoundary.endPos = -1;
 
-        const sal_uInt16 nLineCount=rCacheTF.GetLineCount( static_cast< sal_uInt16 >( nParaIndex ) );
+        const sal_uInt16 nLineCount=rCacheTF.GetLineCount( nParaIndex );
 
         if( nIndex == nTextLen )
         {
@@ -251,7 +251,7 @@ namespace accessibility
             if( nLineCount <= 1 )
                 rBoundary.startPos = 0;
             else
-                rBoundary.startPos = nTextLen - rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ),
+                rBoundary.startPos = nTextLen - rCacheTF.GetLineLen( nParaIndex,
                                                                      nLineCount-1 );
 
             rBoundary.endPos = nTextLen;
@@ -263,11 +263,11 @@ namespace accessibility
             sal_Int32 nCurIndex;
             for( nLine=0, nCurIndex=0; nLine<nLineCount; ++nLine )
             {
-                nCurIndex += rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                nCurIndex += rCacheTF.GetLineLen(nParaIndex, nLine);
 
                 if( nCurIndex > nIndex )
                 {
-                    rBoundary.startPos = nCurIndex - rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                    rBoundary.startPos = nCurIndex - rCacheTF.GetLineLen(nParaIndex, nLine);
                     rBoundary.endPos = nCurIndex;
                     break;
                 }
@@ -401,7 +401,7 @@ namespace accessibility
                    GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
                    "AccessibleEditableTextPara::MakeSelection: index value overflow");
 
-		sal_uInt16 nParaIndex = static_cast< sal_uInt16 >( GetParagraphIndex() );
+		sal_uInt32 nParaIndex = GetParagraphIndex();
         return ESelection( nParaIndex, static_cast< sal_uInt16 >( nStartEEIndex ),
                            nParaIndex, static_cast< sal_uInt16 >( nEndEEIndex ) );
     }
@@ -453,7 +453,7 @@ namespace accessibility
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
 
         ESelection aSelection;
-        sal_uInt16 nPara = static_cast< sal_uInt16 > ( GetParagraphIndex() );
+        sal_uInt32 nPara = GetParagraphIndex();
         if( !GetEditViewForwarder().GetSelection( aSelection ) )
             return sal_False;
 
@@ -511,7 +511,7 @@ namespace accessibility
     {
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
 
-        return GetTextForwarder().GetTextLen( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+        return GetTextForwarder().GetTextLen( GetParagraphIndex() );
     }
 
     sal_Bool AccessibleEditableTextPara::IsVisible() const
@@ -662,7 +662,7 @@ namespace accessibility
         DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
                    "AccessibleEditableTextPara::HaveChildren: paragraph index value overflow");
 
-        return GetTextForwarder().HaveImageBullet( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+        return GetTextForwarder().HaveImageBullet( GetParagraphIndex() );
     }
 
     sal_Bool AccessibleEditableTextPara::IsActive() const SAL_THROW((uno::RuntimeException))
@@ -797,12 +797,12 @@ namespace accessibility
         DBG_ASSERT(nIndex >= 0 && nIndex <= USHRT_MAX,
                    "AccessibleEditableTextPara::GetAttributeRun: index value overflow");
 
-        DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
+        DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= EE_PARA_MAX,
                    "AccessibleEditableTextPara::getLocale: paragraph index value overflow");
 
         return GetTextForwarder().GetAttributeRun( nStartIndex,
                                                    nEndIndex,
-                                                   static_cast< sal_uInt16 >(GetParagraphIndex()),
+                                                   GetParagraphIndex(),
                                                    static_cast< sal_uInt16 >(nIndex) );
     }
 
@@ -1115,7 +1115,7 @@ namespace accessibility
             SvxTextForwarder& rCacheTF = GetTextForwarder();
             Point aLogPoint( GetViewForwarder().PixelToLogic( aPoint, rCacheTF.GetMapMode() ) );
 
-            EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 > (GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
 
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND &&
                 aBulletInfo.bVisible &&
@@ -1142,7 +1142,7 @@ namespace accessibility
                    "AccessibleEditableTextPara::getBounds: index value overflow");
 
         SvxTextForwarder& rCacheTF = GetTextForwarder();
-        Rectangle aRect = rCacheTF.GetParaBounds( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+        Rectangle aRect = rCacheTF.GetParaBounds( GetParagraphIndex() );
 
         // convert to screen coordinates
         Rectangle aScreenRect = AccessibleEditableTextPara::LogicToPixel( aRect,
@@ -1273,7 +1273,7 @@ namespace accessibility
             GetParagraphIndex() == aSelection.nEndPara )
         {
             // caret is always nEndPara,nEndPos
-			EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+			EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
 			if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND &&
 				aBulletInfo.bVisible && 
 				aBulletInfo.nType != SVX_NUM_BITMAP )
@@ -1364,13 +1364,13 @@ namespace accessibility
 		//For field object info
 		sal_Int32 nParaIndex = GetParagraphIndex();
 		sal_Int32 nAllFieldLen = 0;
-		sal_Int32 nField = rCacheTF.GetFieldCount(sal_uInt16(nParaIndex)), nFoundFieldIndex = -1;
+		sal_Int32 nField = rCacheTF.GetFieldCount(nParaIndex), nFoundFieldIndex = -1;
 		EFieldInfo ree;
 		sal_Int32  reeBegin, reeEnd;
 		sal_Int32 nFieldType = -1;
 		for(sal_uInt16 j = 0; j < nField; j++)
 		{
-			ree = rCacheTF.GetFieldInfo(sal_uInt16(nParaIndex), j);
+			ree = rCacheTF.GetFieldInfo(nParaIndex, j);
 			reeBegin  = ree.aPosition.nIndex + nAllFieldLen;
 			reeEnd = reeBegin + ree.aCurrentText.Len();
 			nAllFieldLen += (ree.aCurrentText.Len() - 1);
@@ -1448,7 +1448,7 @@ namespace accessibility
 	
 		//Skip the bullet range to ingnore the bullet text 
 		SvxTextForwarder& rCacheTF = GetTextForwarder();
-		EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+		EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
 		if (aBulletInfo.bVisible)
 			nIndex += aBulletInfo.aText.Len();
 		if (nIndex != 0 && nIndex >= getCharacterCount())
@@ -1582,7 +1582,7 @@ namespace accessibility
         CheckPosition( nIndex );
 
         SvxTextForwarder& rCacheTF = GetTextForwarder();
-        Rectangle aRect = rCacheTF.GetCharBounds( static_cast< sal_uInt16 >( GetParagraphIndex() ), static_cast< sal_uInt16 >( nIndex ) );
+        Rectangle aRect = rCacheTF.GetCharBounds( GetParagraphIndex(), static_cast< sal_uInt16 >( nIndex ) );
 
         // convert to screen
         Rectangle aScreenRect = AccessibleEditableTextPara::LogicToPixel( aRect,
@@ -1622,7 +1622,8 @@ namespace accessibility
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ((rPoint.X <= 0) && (rPoint.Y <= 0))
 		return 0;
-        sal_uInt16 nPara, nIndex;
+        sal_uInt32 nPara;
+        sal_uInt16 nIndex;
 
         // offset from surrounding cell/shape
         Point aOffset( GetEEOffset() );
@@ -1633,7 +1634,7 @@ namespace accessibility
         Point aLogPoint( GetViewForwarder().PixelToLogic( aPoint, rCacheTF.GetMapMode() ) );
 
         // re-offset to parent (paragraph)
-        Rectangle aParaRect = rCacheTF.GetParaBounds( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+        Rectangle aParaRect = rCacheTF.GetParaBounds( GetParagraphIndex() );
         aLogPoint.Move( aParaRect.Left(), aParaRect.Top() );
 
         if( rCacheTF.GetIndexAtPoint( aLogPoint, nPara, nIndex ) &&
@@ -1878,7 +1879,7 @@ namespace accessibility
 			// NumberingLevel
 			if(rRes.Name.compareTo(::rtl::OUString::createFromAscii("NumberingLevel"))==0)
 			{				
-				const SvxNumBulletItem& rNumBullet = ( SvxNumBulletItem& )rCacheTF.GetParaAttribs(static_cast< sal_uInt16 >(GetParagraphIndex())).Get(EE_PARA_NUMBULLET);
+				const SvxNumBulletItem& rNumBullet = ( SvxNumBulletItem& )rCacheTF.GetParaAttribs(GetParagraphIndex()).Get(EE_PARA_NUMBULLET);
 				if(rNumBullet.GetNumRule()->GetLevelCount()==0)
 				{
 					rRes.Value <<= (sal_Int16)-1;
@@ -1902,7 +1903,7 @@ namespace accessibility
 			// NumberingRules	
 			if(rRes.Name.compareTo(::rtl::OUString::createFromAscii("NumberingRules"))==0)
 			{
-				SfxItemSet aAttribs = rCacheTF.GetParaAttribs( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+				SfxItemSet aAttribs = rCacheTF.GetParaAttribs( GetParagraphIndex() );
 				sal_Bool bVis = ((const SfxUInt16Item&)aAttribs.Get( EE_PARA_BULLETSTATE )).GetValue() ? sal_True : sal_False;
 				if(bVis)
 				{
@@ -1928,12 +1929,12 @@ namespace accessibility
 		sal_Int32 nParaIndex = GetParagraphIndex();
 		SvxAccessibleTextAdapter& rCacheTF = GetTextForwarder();
 		sal_Int32 nAllFieldLen = 0;
-		sal_Int32 nField = rCacheTF.GetFieldCount(sal_uInt16(nParaIndex)), nFoundFieldIndex = -1;
+		sal_Int32 nField = rCacheTF.GetFieldCount(nParaIndex), nFoundFieldIndex = -1;
 		EFieldInfo ree;
 		sal_Int32  reeBegin=0, reeEnd=0;
 		for(sal_uInt16 j = 0; j < nField; j++)
 		{
-			ree = rCacheTF.GetFieldInfo(sal_uInt16(nParaIndex), j);
+			ree = rCacheTF.GetFieldInfo(nParaIndex, j);
 			reeBegin  = ree.aPosition.nIndex + nAllFieldLen;
 			reeEnd = reeBegin + ree.aCurrentText.Len();
 			nAllFieldLen += (ree.aCurrentText.Len() - 1);
@@ -1964,12 +1965,12 @@ namespace accessibility
 		sal_Int32 nParaIndex = GetParagraphIndex();
 		SvxAccessibleTextAdapter& rCacheTF = GetTextForwarder();
 		sal_Int32 nAllFieldLen = 0;
-		sal_Int32 nField = rCacheTF.GetFieldCount(sal_uInt16(nParaIndex)), nFoundFieldIndex = -1;
+		sal_Int32 nField = rCacheTF.GetFieldCount(nParaIndex), nFoundFieldIndex = -1;
 		EFieldInfo ree;
 		sal_Int32  reeBegin=0, reeEnd=0;
 		for(sal_uInt16 j = 0; j < nField; j++)
 		{
-			ree = rCacheTF.GetFieldInfo(sal_uInt16(nParaIndex), j);
+			ree = rCacheTF.GetFieldInfo(nParaIndex, j);
 			reeBegin  = ree.aPosition.nIndex + nAllFieldLen;
 			reeEnd = reeBegin + ree.aCurrentText.Len();
 			nAllFieldLen += (ree.aCurrentText.Len() - 1);
@@ -2003,7 +2004,7 @@ namespace accessibility
 			if( bExtend )
 			{				
 				//If there is a bullet before the field, should add the bullet length into the segment.
-				EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo(sal_uInt16(nParaIndex));
+				EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo(nParaIndex);
 				int nBulletLen = aBulletInfo.aText.Len();
 				if (nBulletLen > 0)
 				{
@@ -2048,7 +2049,7 @@ namespace accessibility
             // implGetAttributeRunBoundary() method there
             case AccessibleTextType::ATTRIBUTE_RUN:
             {
-                const sal_Int32 nTextLen = GetTextForwarder().GetTextLen( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+                const sal_Int32 nTextLen = GetTextForwarder().GetTextLen( GetParagraphIndex() );
 
                 if( nIndex == nTextLen )
                 {
@@ -2061,7 +2062,7 @@ namespace accessibility
 					//For the bullet paragraph, the bullet string is ingnored for IAText::attributes() function.
 					SvxTextForwarder&	rCacheTF = GetTextForwarder();
 					// MT IA2: Not used? sal_Int32 nBulletLen = 0;
-					EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+					EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
 					if (aBulletInfo.bVisible)
 						nIndex += aBulletInfo.aText.Len();
 					if (nIndex != 0  && nIndex >= getCharacterCount())
@@ -2085,11 +2086,11 @@ namespace accessibility
             {
                 SvxTextForwarder&	rCacheTF = GetTextForwarder();
                 sal_Int32			nParaIndex = GetParagraphIndex();
-                // MT IA2: Not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( static_cast< sal_uInt16 >( nParaIndex ) );
+                // MT IA2: Not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( nParaIndex );
                 CheckPosition(nIndex);
 		if (nIndex != 0  && nIndex == getCharacterCount())
 			--nIndex;
-                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( static_cast< sal_uInt16 >( nParaIndex ) ); 
+                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex ); 
                 sal_Int32 nCurIndex;
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
@@ -2099,15 +2100,15 @@ namespace accessibility
                 {
                     if (nLine == 0)
                     {
-                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(nParaIndex) );
+                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( nParaIndex );
                         if (aBulletInfo.bVisible)
                         {
                             //in bullet or numbering;
                             nBulletLen = aBulletInfo.aText.Len();
                         }
                     }
-                    //nCurIndex += rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ), nLine);
-                    sal_Int32 nLineLen = rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                    //nCurIndex += rCacheTF.GetLineLen(nParaIndex, nLine);
+                    sal_Int32 nLineLen = rCacheTF.GetLineLen(nParaIndex, nLine);
                     if (nLine == 0)
                         nCurIndex += nLineLen - nBulletLen;
                     else 
@@ -2116,7 +2117,7 @@ namespace accessibility
                     {
                         if (nLine ==0)
                         {
-                            //aResult.SegmentStart = nCurIndex - rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                            //aResult.SegmentStart = nCurIndex - rCacheTF.GetLineLen(nParaIndex, nLine);
                             aResult.SegmentStart = 0;
                             aResult.SegmentEnd = nCurIndex;
                             //aResult.SegmentText = GetTextRange( aResult.SegmentStart, aResult.SegmentEnd );
@@ -2125,7 +2126,7 @@ namespace accessibility
                         }
                         else
                         {
-                            //aResult.SegmentStart = nCurIndex - rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                            //aResult.SegmentStart = nCurIndex - rCacheTF.GetLineLen(nParaIndex, nLine);
                             aResult.SegmentStart = nCurIndex - nLineLen;
                             aResult.SegmentEnd = nCurIndex;
                             //aResult.SegmentText = GetTextRange( aResult.SegmentStart, aResult.SegmentEnd );
@@ -2163,7 +2164,7 @@ namespace accessibility
             // implGetAttributeRunBoundary() method there
             case AccessibleTextType::ATTRIBUTE_RUN:
             {
-                const sal_Int32 nTextLen = GetTextForwarder().GetTextLen( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+                const sal_Int32 nTextLen = GetTextForwarder().GetTextLen( GetParagraphIndex() );
                 sal_uInt16 nStartIndex, nEndIndex;
 
                 if( nIndex == nTextLen )
@@ -2198,11 +2199,11 @@ namespace accessibility
             {
                 SvxTextForwarder&	rCacheTF = GetTextForwarder();
                 sal_Int32			nParaIndex = GetParagraphIndex();
-                // MT IA2 not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( static_cast< sal_uInt16 >( nParaIndex ) );
+                // MT IA2 not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( nParaIndex );
 
                 CheckPosition(nIndex);
 
-                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( static_cast< sal_uInt16 >( nParaIndex ) ); 
+                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex ); 
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
                 //by the IAText::attributes(). So here must do special support for bullet line.
@@ -2214,7 +2215,7 @@ namespace accessibility
                     nLastIndex = nCurIndex;
                     if (nLine == 0)
                     {
-                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(nParaIndex) );
+                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( nParaIndex );
                         if (aBulletInfo.bVisible)
                         {
                             //in bullet or numbering;
@@ -2225,7 +2226,7 @@ namespace accessibility
                         nLastLineLen = nCurLineLen - nBulletLen;
                     else
                         nLastLineLen = nCurLineLen;
-                    nCurLineLen = rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                    nCurLineLen = rCacheTF.GetLineLen(nParaIndex, nLine);
                     //nCurIndex += nCurLineLen;
                     if (nLine == 0)
                         nCurIndex += nCurLineLen - nBulletLen;
@@ -2351,11 +2352,11 @@ namespace accessibility
             {
                 SvxTextForwarder&	rCacheTF = GetTextForwarder();
                 sal_Int32			nParaIndex = GetParagraphIndex();
-                // MT IA2 not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( static_cast< sal_uInt16 >( nParaIndex ) );
+                // MT IA2 not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( nParaIndex );
 
                 CheckPosition(nIndex);
 
-                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( static_cast< sal_uInt16 >( nParaIndex ) ); 
+                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex );
                 sal_Int32 nCurIndex; 
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
@@ -2366,15 +2367,15 @@ namespace accessibility
                 {
                     if (nLine == 0)
                     {
-                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(nParaIndex) );
+                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( nParaIndex );
                         if (aBulletInfo.bVisible)
                         {
                             //in bullet or numbering;
                             nBulletLen = aBulletInfo.aText.Len();
                         }
                     }
-                    //nCurIndex += rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
-                    sal_Int32 nLineLen = rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                    //nCurIndex += rCacheTF.GetLineLen(nParaIndex, nLine);
+                    sal_Int32 nLineLen = rCacheTF.GetLineLen(nParaIndex, nLine);
                     
                     if (nLine == 0)
                         nCurIndex += nLineLen - nBulletLen;
@@ -2385,7 +2386,7 @@ namespace accessibility
                         nLine < nLineCount-1 )
                     {
                         aResult.SegmentStart = nCurIndex;
-                        aResult.SegmentEnd = nCurIndex + rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine+1);
+                        aResult.SegmentEnd = nCurIndex + rCacheTF.GetLineLen(nParaIndex, nLine+1);
                         aResult.SegmentText = GetTextRange( aResult.SegmentStart + nBulletLen, aResult.SegmentEnd + nBulletLen);
                         break;
                     }                
@@ -2465,7 +2466,7 @@ namespace accessibility
 
             //Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             // save current selection
@@ -2504,7 +2505,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             ESelection aSelection = MakeSelection (nStartIndex + nBulletLen, nEndIndex + nBulletLen);
@@ -2541,7 +2542,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             //if( !rCacheTF.IsEditable( MakeSelection(nIndex) ) )
@@ -2580,7 +2581,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             ESelection aSelection = MakeSelection (nStartIndex + nBulletLen, nEndIndex + nBulletLen);
@@ -2622,7 +2623,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
 
@@ -2665,7 +2666,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             ESelection aSelection = MakeSelection (nStartIndex + nBulletLen, nEndIndex + nBulletLen);
@@ -2701,7 +2702,7 @@ namespace accessibility
             // AccessibleEmptyEditSource relies on this behaviour
             GetEditViewForwarder( sal_True );
             SvxAccessibleTextAdapter& rCacheTF = GetTextForwarder();	// MUST be after GetEditViewForwarder(), see method docs
-            sal_uInt16 nPara = static_cast< sal_uInt16 >( GetParagraphIndex() );
+            sal_uInt32 nPara = GetParagraphIndex();
 
             DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
                        "AccessibleEditableTextPara::setAttributes: index value overflow");
@@ -3039,8 +3040,8 @@ namespace accessibility
         if (bValidPara)
         {
             // we explicitly allow for the index to point at the character right behind the text
-            if (0 <= nIndex && nIndex <= rCacheTF.GetTextLen( static_cast< sal_uInt16 >(nPara) ))
-                nRes = rCacheTF.GetLineNumberAtIndex( static_cast< sal_uInt16 >(nPara), static_cast< sal_uInt16 >(nIndex) );
+            if (0 <= nIndex && nIndex <= rCacheTF.GetTextLen( nPara ))
+                nRes = rCacheTF.GetLineNumberAtIndex( nPara, static_cast< sal_uInt16 >(nIndex) );
             else
                 throw lang::IndexOutOfBoundsException();
         }
@@ -3059,10 +3060,10 @@ namespace accessibility
         DBG_ASSERT( bValidPara, "getTextAtLineNumber: current paragraph index out of range" );
         if (bValidPara)
         {
-            if (0 <= nLineNo && nLineNo < rCacheTF.GetLineCount( static_cast< sal_uInt16 >(nPara) ))
+            if (0 <= nLineNo && nLineNo < rCacheTF.GetLineCount( nPara ))
             {
                 sal_uInt16 nStart = 0, nEnd = 0;
-                rCacheTF.GetLineBoundaries( nStart, nEnd, static_cast< sal_uInt16 >(nPara), static_cast< sal_uInt16 >(nLineNo) );
+                rCacheTF.GetLineBoundaries( nStart, nEnd, nPara, static_cast< sal_uInt16 >(nLineNo) );
                 if (nStart != 0xFFFF && nEnd != 0xFFFF)
                 {
                     try

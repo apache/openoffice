@@ -40,10 +40,10 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=zlib-1.2.13
-TARFILE_MD5=9b8aa094c4e5765dabf4da391f00d15c
+TARFILE_NAME=zlib-1.3
+TARFILE_MD5=60373b133d630f74f4a1f94c1185a53f
 
-PATCH_FILES=zlib-1.2.13.patch
+PATCH_FILES=zlib-1.3.patch
 ADDITIONAL_FILES=makefile.mk
 
 #relative to CONFIGURE_DIR

@@ -1010,7 +1010,7 @@ OutlinerParaObject* SdrTextObj::GetEditOutlinerParaObject() const
 	OutlinerParaObject* pPara=NULL;
 	if( HasTextImpl( pEdtOutl ) )
 	{
-		sal_uInt16 nParaAnz = static_cast< sal_uInt16 >( pEdtOutl->GetParagraphCount() );
+		sal_uInt32 nParaAnz = pEdtOutl->GetParagraphCount();
 		pPara = pEdtOutl->CreateParaObject(0, nParaAnz);
 	}
 	return pPara;
@@ -1730,7 +1730,7 @@ sal_Bool SdrTextObj::TRGetBaseGeometry(basegfx::B2DHomMatrix& rMatrix, basegfx::
 		{
 			case SFX_MAPUNIT_TWIP :
 			{
-				// postion
+				// position
 				aTranslate.setX(ImplTwipsToMM(aTranslate.getX()));
 				aTranslate.setY(ImplTwipsToMM(aTranslate.getY()));
 

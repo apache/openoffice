@@ -349,7 +349,7 @@ Sequence < Reference < ::com::sun::star::linguistic2::XMeaning > > SAL_CALL Thes
     {
         if (rLocale == aTLocs[i])
         {
-            // open up and intialize this thesaurus if need be
+            // open up and initialize this thesaurus if need be
             if (!aThes[i])
             {
                 OUString datpath = aTNames[i] + A2OU(".dat");

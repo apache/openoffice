@@ -313,7 +313,7 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 
 					while (pPara)
 					{
-						sal_Int16 nDepth = pOutl->GetDepth( (sal_uInt16) pOutl->GetAbsPos( pPara ) );
+						sal_Int16 nDepth = pOutl->GetDepth( pOutl->GetAbsPos( pPara ) );
 
 						if (nDepth > 0 || (bOutlineViewSh && (nDepth <= 0) && !pOutl->HasParaFlag( pPara, PARAFLAG_ISPAGE )) )
 						{
@@ -473,7 +473,7 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 			long nUpper = 0L;
 			for( sal_uLong nPara = nStartPara; nPara <= nEndPara; nPara++ )
 			{
-				const SfxItemSet& rItems = pOLV->GetOutliner()->GetParaAttribs( (sal_uInt16)nPara );
+				const SfxItemSet& rItems = pOLV->GetOutliner()->GetParaAttribs( nPara );
                 const SvxULSpaceItem& rItem = (const SvxULSpaceItem&) rItems.Get( EE_PARA_ULSPACE );
 				nUpper = Max( nUpper, (long)rItem.GetUpper() );
 			}

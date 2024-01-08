@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 //+-------------------------------------------------------------------------
@@ -36,13 +37,13 @@
 #include <ntquery.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 //+-------------------------------------------------------------------------
 //
 //  Declare:    CLSID_SummaryInforation, GUID
 //              CLSID_Storage, GUID
 //
-//  Contents:   Definitions of OpenOffice.org Document properties
+//  Contents:   Definitions of OpenOffice Document properties
 //
 //--------------------------------------------------------------------------
 
@@ -66,13 +67,13 @@
 
 class CFullPropSpec
 {
-public:        
+public:
     CFullPropSpec();
     CFullPropSpec( GUID const & guidPropSet, PROPID pidProperty );
     CFullPropSpec( GUID const & guidPropSet, WCHAR const * wcsProperty );
     // Validity check
     inline BOOL IsValid() const;
-    
+
     // Copy constructors/assignment/clone
     CFullPropSpec( CFullPropSpec const & Property );
     CFullPropSpec & operator=( CFullPropSpec const & Property );
@@ -89,7 +90,7 @@ public:
     // Member variable access
     inline void SetPropSet( GUID const & guidPropSet );
     inline GUID const & GetPropSet() const;
-    
+
     void SetProperty( PROPID pidProperty );
     BOOL SetProperty( WCHAR const * wcsProperty );
     inline WCHAR const * GetPropertyName() const;
@@ -149,7 +150,3 @@ inline BOOL CFullPropSpec::IsPropertyPropid() const
 {
     return( _psProperty.ulKind == PRSPEC_PROPID );
 }
-
-
-
-

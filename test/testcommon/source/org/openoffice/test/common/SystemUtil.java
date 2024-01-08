@@ -122,7 +122,7 @@ public class SystemUtil {
 		// if (OS.get() == OS.MACOSX) {
 		// // workaround MAC OS X has a bug. After setting a text into
 		// clipboard, the java program will not
-		// // receive the data written by other apllications.
+		// // receive the data written by other applications.
 		// File file = null;
 		// try {
 		// file = File.createTempFile("SystemUtil", "SystemUtil");

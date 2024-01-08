@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textshared0201170100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Control Properties</title>
 <filename>/text/shared/02/01170100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-02-22T15:52:42">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="control">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147102"><bookmark_value>controls; properties of form controls</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147102">
+<bookmark_value>controls; properties of form controls</bookmark_value>
 <bookmark_value>properties; form controls</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:ControlProperties" id="bm_id9308186" localize="false"/>
@@ -48,9 +42,9 @@
 </variable></paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/shared/00/00040501.xhp#controleigenschaften"/>
+<embed href="text/shared/00/00040501.xhp#controleigenschaften"/>
 </section>
-<paragraph role="note" id="par_id3157910" xml-lang="en-US" l10n="U" oldref="17"><variable id="hinweis">You can only call the<emph> Properties</emph> dialog when in the Design mode with a control selected. 
+<paragraph role="note" id="par_id3157910" xml-lang="en-US" l10n="U" oldref="17"><variable id="hinweis">You can only call the <emph>Properties</emph> dialog when in the Design mode with a control selected. 
 </variable></paragraph>
 <section id="spezialfelder">
 <paragraph role="paragraph" id="par_id3153760" xml-lang="en-US" l10n="U" oldref="3">If you enter data in the <emph>Properties</emph> dialog, note that multiline input is possible for certain drop-down combo boxes. This concerns all fields in which an SQL statement can be entered, as well as the properties of text boxes or label fields. You can open these fields and enter text in the opened list. The following shortcut keys are valid:</paragraph>
@@ -112,7 +106,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="U" oldref="16">As with list boxes or combo boxes, you can open or close the list with a mouse click at the arrow on the right end of the field. However, the input here can be entered either in the opened list or in the top text field. An exception is the properties that expect a list representation, for example, the property <emph>List Entries</emph>, which can be set for the control fields <emph>List Box</emph> and <emph>Combo Box</emph>. Here, you can only edit the entries when the field is opened.</paragraph>
 </section>
 <embed href="text/shared/02/01170101.xhp#allgemein"/>

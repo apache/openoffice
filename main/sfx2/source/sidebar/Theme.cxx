@@ -230,7 +230,7 @@ void Theme::UpdateTheme (void)
 			Any(sal_Int32(3)));
 		setPropertyValue(
 			maPropertyIdToNameMap[Color_DeckTitleFont],
-			Any(sal_Int32(rStyle.GetFontColor().GetRGBColor())));
+			Any(sal_Int32(mbIsHighContrastMode ? 0xffffff : 0x262626)));
 		setPropertyValue(
 			maPropertyIdToNameMap[Int_DeckTitleBarHeight],
 			Any(sal_Int32(Alternatives(
@@ -1116,3 +1116,5 @@ void Theme::ProcessNewValue (
 }
 
 } } // end of namespace sfx2::sidebar
+
+/* vim: set noet sw=4 ts=4: */

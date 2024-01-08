@@ -100,7 +100,7 @@ ModelessDialog DLG_INSERT_CHART
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		Disable = TRUE ;
-		Text [ en-US ] = "<< ~Back" ;
+		Text [ en-US ] = "< ~Back" ;
 	};
 	PushButton BT_NEXT
 	{
@@ -109,7 +109,7 @@ ModelessDialog DLG_INSERT_CHART
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		Disable = TRUE ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "~Next >>" ;
+		Text [ en-US ] = "~Next >" ;
 	};
 	PushButton BT_FINISH
 	{

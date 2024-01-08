@@ -399,3 +399,5 @@ HRESULT STDMETHODCALLTYPE CInfoTip::GetCurFile(LPOLESTR __RPC_FAR * /*ppszFileNa
 {
 	return E_NOTIMPL;
 }
+
+/* vim: set noet sw=4 ts=4: */

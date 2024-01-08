@@ -128,7 +128,7 @@ TYPEINIT1( SvxEditSourceHintEndPara , SvxEditSourceHint );
 
     return ::std::auto_ptr<SfxHint>( new SfxHint() );
 }
-sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, const EditEngine& rEE, sal_uInt16 nPara, sal_uInt16 nIndex, sal_Bool bInCell )
+sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, const EditEngine& rEE, sal_uInt32 nPara, sal_uInt16 nIndex, sal_Bool bInCell )
 {
 	// IA2 CWS introduced bInCell, but also did many other changes here.
 	// Need to verify implementation with AT (IA2 and ATK)
@@ -221,15 +221,15 @@ sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt
 			SfxItemSet aCrrntSet = rEE.GetAttribs( nPara, 0, 1, GETATTRIBS_CHARATTRIBS );
 			for ( sal_Int32 nParaIdx = nPara-1; nParaIdx >= 0; nParaIdx-- )
 			{
-				sal_uInt32 nLen = rEE.GetTextLen( sal_uInt16(nParaIdx) );
+				sal_uInt32 nLen = rEE.GetTextLen( nParaIdx );
 				if ( nLen )
 				{
 					sal_uInt16 nStartIdx, nEndIdx;
-					GetAttributeRun( nStartIdx, nEndIdx, rEE, sal_uInt16(nParaIdx), sal_uInt16(nLen), sal_False );
-					SfxItemSet aSet = rEE.GetAttribs( sal_uInt16(nParaIdx), sal_uInt16(nLen-1), sal_uInt16(nLen), GETATTRIBS_CHARATTRIBS );
+					GetAttributeRun( nStartIdx, nEndIdx, rEE, nParaIdx, sal_uInt16(nLen), sal_False );
+					SfxItemSet aSet = rEE.GetAttribs( nParaIdx, sal_uInt16(nLen-1), sal_uInt16(nLen), GETATTRIBS_CHARATTRIBS );
 					if ( aSet == aCrrntSet )
 					{
-						aStartPos.nPara = sal_uInt16(nParaIdx);
+						aStartPos.nPara = nParaIdx;
 						aStartPos.nIndex = nStartIdx;
 						if ( aStartPos.nIndex != 0 )
 						{
@@ -245,15 +245,15 @@ sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt
 			SfxItemSet aCrrntSet = rEE.GetAttribs( nPara, sal_uInt16(nCrrntParaLen-1), sal_uInt16(nCrrntParaLen), GETATTRIBS_CHARATTRIBS );
 			for ( sal_uInt32 nParaIdx = nPara+1; nParaIdx < nParaCount; nParaIdx++ )
 			{
-				sal_uInt32 nLen = rEE.GetTextLen( sal_uInt16(nParaIdx) );
+				sal_uInt32 nLen = rEE.GetTextLen( nParaIdx );
 				if ( nLen )
 				{
 					sal_uInt16 nStartIdx, nEndIdx;
-					GetAttributeRun( nStartIdx, nEndIdx, rEE, sal_uInt16(nParaIdx), 0, sal_False );
-					SfxItemSet aSet = rEE.GetAttribs( sal_uInt16(nParaIdx), 0, 1, GETATTRIBS_CHARATTRIBS );
+					GetAttributeRun( nStartIdx, nEndIdx, rEE, nParaIdx, 0, sal_False );
+					SfxItemSet aSet = rEE.GetAttribs( nParaIdx, 0, 1, GETATTRIBS_CHARATTRIBS );
 					if ( aSet == aCrrntSet )
 					{
-						aEndPos.nPara = sal_uInt16(nParaIdx);
+						aEndPos.nPara = nParaIdx;
 						aEndPos.nIndex = nEndIdx;
 						if ( aEndPos.nIndex != nLen )
 						{
@@ -266,7 +266,7 @@ sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt
 		nStartIndex = 0;
 		if ( aStartPos.nPara > 0 )
 		{
-			for ( sal_uInt16 i = 0; i < aStartPos.nPara; i++ )
+			for ( sal_uInt32 i = 0; i < aStartPos.nPara; i++ )
 			{
 				nStartIndex += rEE.GetTextLen(i)+1;
 			}
@@ -275,7 +275,7 @@ sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt
 		nEndIndex = 0;
 		if ( aEndPos.nPara > 0 )
 		{
-			for ( sal_uInt16 i = 0; i < aEndPos.nPara; i++ )
+			for ( sal_uInt32 i = 0; i < aEndPos.nPara; i++ )
 			{
 				nEndIndex += rEE.GetTextLen(i)+1;
 			}

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared03101000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">CStr Function [Runtime]</title>
 <filename>/text/sbasic/shared/03101000.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2004-08-24T11:14:19">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="cstr">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3146958"><bookmark_value>CStr function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146958">
+<bookmark_value>CStr function</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3146958" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03101000.xhp" name="CStr Function [Runtime]">CStr Function [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_id3147574" xml-lang="en-US" l10n="U" oldref="2">Converts any numeric expression to a string expression.</paragraph>
@@ -92,7 +86,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3155738" xml-lang="en-US" l10n="U" oldref="20">Zeros at the end of a floating-point number are not included in the returned string.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>

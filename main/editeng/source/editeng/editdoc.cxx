@@ -250,8 +250,6 @@ sal_uInt16 aV5Map[] = {
 	4035, 4036, 4037, 4038
 };
 
-SV_IMPL_PTRARR( DummyContentList, ContentNode* );
-
 int SAL_CALL CompareStart( const void* pFirst, const void* pSecond )
 {
 	if ( (*((EditCharAttrib**)pFirst))->GetStart() < (*((EditCharAttrib**)pSecond))->GetStart() )
@@ -649,8 +647,8 @@ sal_Bool EditSelection::Adjust( const ContentList& rNodes )
 	ContentNode* pStartNode = aStartPaM.GetNode();
 	ContentNode* pEndNode = aEndPaM.GetNode();
 
-	sal_uInt16 nStartNode = rNodes.GetPos( pStartNode );
-	sal_uInt16 nEndNode = rNodes.GetPos( pEndNode );
+	sal_uInt32 nStartNode = rNodes.GetPos( pStartNode );
+	sal_uInt32 nEndNode = rNodes.GetPos( pEndNode );
 
 	DBG_ASSERT( nStartNode != USHRT_MAX, "Node im Wald in Adjust(1)" );
 	DBG_ASSERT( nEndNode != USHRT_MAX, "Node im Wald in Adjust(2)" );
@@ -1238,7 +1236,7 @@ EditDoc::~EditDoc()
 
 void EditDoc::ImplDestroyContents()
 {
-	for ( sal_uInt16 nNode = Count(); nNode; )
+	for ( sal_uInt32 nNode = Count(); nNode; )
 		RemoveItemsFromPool( GetObject( --nNode ) );
 	DeleteAndDestroy( 0, Count() );
 }
@@ -1332,7 +1330,7 @@ void EditDoc::CreateDefFont( sal_Bool bUseStyles )
 	aDefFont.SetVertical( IsVertical() );
 	aDefFont.SetOrientation( IsVertical() ? 2700 : 0 );
 
-	for ( sal_uInt16 nNode = 0; nNode < Count(); nNode++ )
+	for ( sal_uInt32 nNode = 0; nNode < Count(); nNode++ )
 	{
 		ContentNode* pNode = GetObject( nNode );
 		pNode->GetCharAttribs().GetDefFont() = aDefFont;
@@ -1360,7 +1358,7 @@ XubString EditDoc::GetSepStr( LineEnd eEnd )
 XubString EditDoc::GetText( LineEnd eEnd ) const
 {
 	sal_uLong nLen = GetTextLen();
-	sal_uInt16 nNodes = Count();
+	sal_uInt32 nNodes = Count();
 
 	String aSep = EditDoc::GetSepStr( eEnd );
 	sal_uInt16 nSepSize = aSep.Len();
@@ -1374,8 +1372,8 @@ XubString EditDoc::GetText( LineEnd eEnd ) const
 	}
 	xub_Unicode* pStr = new xub_Unicode[nLen+1];
 	xub_Unicode* pCur = pStr;
-	sal_uInt16 nLastNode = nNodes-1;
-	for ( sal_uInt16 nNode = 0; nNode < nNodes; nNode++ )
+	sal_uInt32 nLastNode = nNodes-1;
+	for ( sal_uInt32 nNode = 0; nNode < nNodes; nNode++ )
 	{
 		XubString aTmp( GetParaAsString( GetObject(nNode) ) );
 		memcpy( pCur, aTmp.GetBuffer(), aTmp.Len()*sizeof(sal_Unicode) );
@@ -1392,7 +1390,7 @@ XubString EditDoc::GetText( LineEnd eEnd ) const
 	return aASCIIText;
 }
 
-XubString EditDoc::GetParaAsString( sal_uInt16 nNode ) const
+XubString EditDoc::GetParaAsString( sal_uInt32 nNode ) const
 {
 	return GetParaAsString( SaveGetObject( nNode ) );
 }
@@ -1444,7 +1442,7 @@ XubString EditDoc::GetParaAsString( ContentNode* pNode, sal_uInt16 nStartPos, sa
 sal_uLong EditDoc::GetTextLen() const
 {
 	sal_uLong nLen = 0;
-	for ( sal_uInt16 nNode = 0; nNode < Count(); nNode++ )
+	for ( sal_uInt32 nNode = 0; nNode < Count(); nNode++ )
 	{
 		ContentNode* pNode = GetObject( nNode );
 		nLen += pNode->Len();
@@ -1545,7 +1543,7 @@ EditPaM EditDoc::InsertParaBreak( EditPaM aPaM, sal_Bool bKeepEndingAttribs )
 {
 	DBG_ASSERT( aPaM.GetNode(), "Blinder PaM in EditDoc::InsertParaBreak" );
 	ContentNode* pCurNode = aPaM.GetNode();
-	sal_uInt16 nPos = GetPos( pCurNode );
+	sal_uInt32 nPos = GetPos( pCurNode );
 	XubString aStr = aPaM.GetNode()->Copy( aPaM.GetIndex() );
 	aPaM.GetNode()->Erase( aPaM.GetIndex() );
 
@@ -1612,7 +1610,7 @@ EditPaM EditDoc::ConnectParagraphs( ContentNode* pLeft, ContentNode* pRight )
 
 	// der rechte verschwindet.
 	RemoveItemsFromPool( pRight );
-	sal_uInt16 nRight = GetPos( pRight );
+	sal_uInt32 nRight = GetPos( pRight );
 	Remove( nRight );
 	delete pRight;
 

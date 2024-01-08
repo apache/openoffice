@@ -2751,7 +2751,7 @@ sal_Int32 SAL_CALL SwXTextDocument::getRendererCount(
                 pSwView->RecheckBrowseMode();
             }
 
-            // reformating the document for printing will show the changes in the view
+            // reformatting the document for printing will show the changes in the view
             // which is likely to produce many unwanted and not nice to view actions.
             // We don't want that! Thus we disable updating of the view. 
             pViewShell->StartAction();
@@ -3427,7 +3427,7 @@ uno::Sequence< lang::Locale > SAL_CALL SwXTextDocument::getDocumentLanguages(
 			{
 				//every paragraph
 				SvUShorts aPortions;
-				rEditEng.GetPortions( (sal_uInt16)nPar, aPortions );
+				rEditEng.GetPortions( nPar, aPortions );
 
 				for ( sal_uInt16 nPos = aPortions.Count(); nPos; )
 				{
@@ -3435,7 +3435,7 @@ uno::Sequence< lang::Locale > SAL_CALL SwXTextDocument::getDocumentLanguages(
 					--nPos;
 					sal_uInt16 nEnd = aPortions.GetObject( nPos );
 					sal_uInt16 nStart = nPos ? aPortions.GetObject( nPos - 1 ) : 0;
-					ESelection aSelection( (sal_uInt16)nPar, nStart, (sal_uInt16)nPar, nEnd );
+					ESelection aSelection( nPar, nStart, nPar, nEnd );
 					SfxItemSet aAttr = rEditEng.GetAttribs( aSelection );
 
 					LanguageType nLang = LANGUAGE_DONTKNOW;

@@ -359,6 +359,18 @@ diff -ur misc/boost_1_55_0/boost/config/compiler/gcc.hpp misc/build/boost_1_55_0
  #    define BOOST_HAS_VARIADIC_TMPL
  #  else
  #    define BOOST_NO_CXX11_VARIADIC_TEMPLATES
+diff -ur misc/boost_1_55_0/boost/config/stdlib/libcpp.hpp misc/build/boost_1_55_0/boost/config/stdlib/libcpp.hpp
+--- misc/boost_1_55_0/boost/config/stdlib/libcpp.hpp	2012-05-15 04:57:21.000000000 -0700
++++ misc/build/boost_1_55_0/boost/config/stdlib/libcpp.hpp
+@@ -19,7 +19,7 @@
+ 
+ #define BOOST_HAS_THREADS
+ 
+-#ifdef _LIBCPP_HAS_NO_VARIADICS
++#if defined(_LIBCPP_HAS_NO_VARIADICS) || (__cplusplus < 201103)
+ #    define BOOST_NO_CXX11_HDR_TUPLE
+ #endif
+ 
 --- misc/boost_1_55_0/boost/tr1/detail/config_all.hpp	2020-11-21 14:07:48.895886290 +0100
 +++ misc/build/boost_1_55_0/boost/tr1/detail/config_all.hpp	2020-11-21 14:10:16.895419939 +0100
 @@ -95,6 +95,11 @@

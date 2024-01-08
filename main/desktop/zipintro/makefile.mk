@@ -104,4 +104,4 @@ $(MISC)$/%.png : $(SOLARSRC)$/%.png
 	@@-$(MKDIRHIER) $(@:d)
 	$(COPY) $< $@
 
-# vim: set noet ts=4 sw=4:
+# vim: set noet sw=4 ts=4:

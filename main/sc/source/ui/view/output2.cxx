@@ -1965,8 +1965,8 @@ void lcl_ScaleFonts( EditEngine& rEngine, long nPercent )
     if ( bUpdateMode )
         rEngine.SetUpdateMode( sal_False );
 
-    sal_uInt16 nParCount = rEngine.GetParagraphCount();
-    for (sal_uInt16 nPar=0; nPar<nParCount; nPar++)
+    sal_uInt32 nParCount = rEngine.GetParagraphCount();
+    for (sal_uInt32 nPar=0; nPar<nParCount; nPar++)
     {
         SvUShorts aPortions;
         rEngine.GetPortions( nPar, aPortions );

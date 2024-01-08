@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,19 +21,13 @@
  *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedautopi01050100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Presentation Wizard Page 1</title>
 <filename>/text/shared/autopi/01050100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2005-06-03T10:32:42">converted from old format - fpe
-dedr: fixed #i31165#</lastedited>
-</history>
+<comment>fixed #i31165#</comment>
 </meta>
 <body>
 <section id="autopilotseite1">
@@ -43,7 +36,7 @@ dedr: fixed #i31165#</lastedited>
 <paragraph role="paragraph" id="par_id3152594" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="HID_SD_AUTOPILOT_PAGE1">Specifies the presentation type and allows you to select a template.</ahelp></paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/shared/00/00000401.xhp#dtapse"/>
+<embed href="text/shared/00/00000401.xhp#dtapse"/>
 </section>
 <paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="2" l10n="U" oldref="15">Type</paragraph>
 <paragraph role="paragraph" id="par_id3153684" xml-lang="en-US" l10n="U" oldref="23">You can determine the presentation type in this area.</paragraph>

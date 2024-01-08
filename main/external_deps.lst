@@ -103,8 +103,8 @@ if (SYSTEM_REDLAND != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (GUI!=UNX || SYSTEM_ZLIB!=YES)
-    MD5 = 9b8aa094c4e5765dabf4da391f00d15c
-    name = zlib-1.2.13.tar.gz
+    MD5 = 60373b133d630f74f4a1f94c1185a53f
+    name = zlib-1.3.tar.gz
     URL1 = https://www.zlib.net/fossils/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
@@ -130,6 +130,12 @@ if (SOLAR_JAVA==TRUE && (ENABLE_MEDIAWIKI==YES || ENABLE_REPORTBUILDER==YES))
     MD5 = e8e197d628436490886d17cffa108fe3
     name = commons-logging-1.1.3-src.tar.gz
     URL1 = https://archive.apache.org/dist/commons/logging/source/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (SYSTEM_LIBPNG != YES)
+    MD5 = 3ca98347a5541a2dad55cd6d07ee60a9
+    name = libpng-1.5.26.tar.gz
+    URL1 = https://sourceforge.net/projects/libpng/files/libpng15/older-releases/1.5.26/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_JPEG != YES)
@@ -199,9 +205,9 @@ if (SYSTEM_VIGRA != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_EXPAT != YES)
-    MD5 = 9d60de01cc0126dfd11121b04838e154
-    name = expat-2.2.10.tar.bz2
-    URL1 = https://sourceforge.net/projects/expat/files/expat/2.2.10/$(name)
+    MD5 = 5e9974d422dc4b157f300568ad28ebf6
+    name = expat-2.5.0.tar.bz2
+    URL1 = https://sourceforge.net/projects/expat/files/expat/2.5.0/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_CURL != YES)

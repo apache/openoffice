@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -33,14 +33,14 @@ use installer::systemactions;
 use strict;
 
 =head2 read_openoffice_lst_file (#loggingdir)
-    Read the settings and variables from the settings file (typically 'openoffice.lst').
+	Read the settings and variables from the settings file (typically 'openoffice.lst').
 =cut
 sub read_openoffice_lst_file ($$;$)
 {
-    my ($filename, $product_name, $loggingdir) = @_;
+	my ($filename, $product_name, $loggingdir) = @_;
 
-    # Read all lines from the settings file.
-    my $ziplistref = installer::files::read_file($filename);
+	# Read all lines from the settings file.
+	my $ziplistref = installer::files::read_file($filename);
 
     # Extract the lines of the settings block for the current product.
     my ($productblockref, $parent) = installer::ziplist::getproductblock(
@@ -51,7 +51,7 @@ sub read_openoffice_lst_file ($$;$)
     # Split into settings and variables.
     my $allsettingsarrayref = installer::ziplist::get_settings_from_ziplist($settingsblockref);
     my $allvariablesarrayref = installer::ziplist::get_variables_from_ziplist($settingsblockref);
-    
+
     # global product block from zip.lst
     my ($globalproductblockref, undef) = installer::ziplist::getproductblock(
         $ziplistref, $installer::globals::globalblock, 0);
@@ -109,7 +109,7 @@ sub read_openoffice_lst_file ($$;$)
             installer::files::save_file($loggingdir . "allglobalsettings1.log", $allglobalsettingsarrayref);
             installer::files::save_file($loggingdir . "allglobalvariables1.log", $allglobalvariablesarrayref);
         }
-        
+
         if (scalar @$allglobalsettingsarrayref > 0)
         {
             $allsettingsarrayref = installer::converter::combine_arrays_from_references_first_win(
@@ -134,15 +134,15 @@ sub read_openoffice_lst_file ($$;$)
     installer::ziplist::set_default_productversion_if_required($allvariableshashref);
     installer::ziplist::add_variables_to_allvariableshashref($allvariableshashref);
     installer::ziplist::overwrite_ooovendor($allvariableshashref);
-    
+
     if ($installer::globals::globallogging && defined $loggingdir)
     {
         installer::files::save_file($loggingdir . "allsettings2.log" ,$allsettingsarrayref);
         installer::files::save_file($loggingdir . "allvariables2.log" ,$allvariablesarrayref);
     }
 
-    # Eventually we should fix this so that we don't have to return the raw arrays, only the resulting hashes.
-    return ($allvariableshashref, $allsettingsarrayref);
+	# Eventually we should fix this so that we don't have to return the raw arrays, only the resulting hashes.
+	return ($allvariableshashref, $allsettingsarrayref);
 }
 
 
@@ -159,35 +159,35 @@ sub getproductblock
 	my $record = 0;
 	my $count = 0;
 	my $line;
-    my $inh = $inheritance ? '(?::\s*(\S+)\s*)?' : "";
-    my $parent;
+	my $inh = $inheritance ? '(?::\s*(\S+)\s*)?' : "";
+	my $parent;
 
 	for ( my $i = 0; $i <= $#{$fileref}; $i++ )
 	{
 		$line = ${$fileref}[$i];
-	
-		if ( $line =~ /^\s*\Q$search\E\s*$inh$/i )		# case insensitive 
+
+		if ( $line =~ /^\s*\Q$search\E\s*$inh$/i )		# case insensitive
 		{
 			$record = 1;
 			$searchexists = 1;
-            $parent = $1 if $inheritance;
+			$parent = $1 if $inheritance;
 		}
 
 		if ($record)
 		{
 			push(@searchblock, $line);
 		}
-	
+
 		if ( ($record) && ($line =~ /\{/) )
 		{
 			$count++;
-		} 
-		
+		}
+
 		if ( ($record) && ($line =~ /\}/) )
 		{
 			$count--;
-		} 
-	
+		}
+
 		if ( ($record) && ($line =~ /\}/) && ( $count == 0 ) )
 		{
 			$record = 0;
@@ -229,7 +229,7 @@ sub analyze_settings_block
 	# Allowed values in settings block:
 	# "Settings", "Variables", "unix" (for destination path and logfile)
 	# Furthermore allowed values are $installer::globals::build (srx645) and $installer::globals::compiler (pro and nonpro (unxsols4.pro))
-	
+
 	# Comment line in settings block begin with "#" or ";"
 
 	if ( $installer::globals::pro )
@@ -245,17 +245,17 @@ sub analyze_settings_block
 	{
 		my $line = ${$blockref}[$i];
 		my $nextline = "";
-		
+
 		if ( ${$blockref}[$i+1] ) { $nextline = ${$blockref}[$i+1]; }
 
 		# removing comment lines
 
-		if (($line =~ /^\s*\#/) || ($line =~ /^\s*\;/)) 
+		if (($line =~ /^\s*\#/) || ($line =~ /^\s*\;/))
 		{
-			next;	
+			next;
 		}
-		
-		# complete blocks of unknows strings are not recorded
+
+		# complete blocks of unknown strings are not recorded
 
 		if ((!($line =~ /^\s*\Q$compilerstring\E\s*$/i)) &&
 			(!($line =~ /^\s*\Q$installer::globals::build\E\s*$/i)) &&
@@ -272,14 +272,14 @@ sub analyze_settings_block
 		{
 			if ($line =~ /^\s*\{\s*$/i)
 			{
-				$counter++;	
+				$counter++;
 			}
 
 			if ($line =~ /^\s*\}\s*$/i)
 			{
-				$counter--;	
+				$counter--;
 			}
-			
+
 			if ($counter == 0)
 			{
 				$record = 1;
@@ -291,7 +291,7 @@ sub analyze_settings_block
 		{
 			push(@newsettingsblock, $line);
 		}
-	}	
+	}
 
 	return \@newsettingsblock;
 }
@@ -311,7 +311,7 @@ sub get_settings_from_ziplist
 
 	# Take all settings from the settings block
 	# Do not take the variables from the settings block
-	# If a setting is defined more than once, take the 
+	# If a setting is defined more than once, take the
 	# setting with the largest counter (open brackets)
 
 	for ( my $i = 0; $i <= $#{$blockref}; $i++ )
@@ -321,8 +321,8 @@ sub get_settings_from_ziplist
 
 		if ( ${$blockref}[$i+1] ) { $nextline = ${$blockref}[$i+1]; }
 
-		if (($line =~ /^\s*\S+\s*$/i) && 
-			($nextline =~ /^\s*\{\s*$/i) && 
+		if (($line =~ /^\s*\S+\s*$/i) &&
+			($nextline =~ /^\s*\{\s*$/i) &&
 			(!($line =~ /^\s*Variables\s*$/i)))
 		{
 			next;
@@ -331,7 +331,7 @@ sub get_settings_from_ziplist
 		if ($line =~ /^\s*Variables\s*$/i)
 		{
 			# This is a block of variables
-			
+
 			$isvariables = 1;
 			next;
 		}
@@ -345,7 +345,7 @@ sub get_settings_from_ziplist
 			else
 			{
 				$counter++;
-			}	
+			}
 
 			next;
 		}
@@ -355,7 +355,7 @@ sub get_settings_from_ziplist
 			if ($isvariables)
 			{
 				$variablescounter--;
-				
+
 				if ($variablescounter == 0)
 				{
 					$isvariables = 0;
@@ -364,24 +364,24 @@ sub get_settings_from_ziplist
 			else
 			{
 				$counter--;
-			}	
+			}
 
-			next;	
+			next;
 		}
-		
+
 		if ($isvariables)
 		{
 			next;
 		}
 
 		installer::remover::remove_leading_and_ending_whitespaces(\$line);
-		
+
 		$line .= "\t##$counter##\n";
-		
+
 		push(@allsettings, $line);
 	}
 
-	return \@allsettings;	
+	return \@allsettings;
 }
 
 #######################################
@@ -397,10 +397,10 @@ sub get_variables_from_ziplist
 	my $counter = 0;
 	my $variablescounter = 0;
 	my $countersum = 0;
-	
+
 	# Take all variables from the settings block
 	# Do not take the other settings from the settings block
-	# If a variable is defined more than once, take the 
+	# If a variable is defined more than once, take the
 	# variable with the largest counter (open brackets)
 
 	for ( my $i = 0; $i <= $#{$blockref}; $i++ )
@@ -411,7 +411,7 @@ sub get_variables_from_ziplist
 		if ($line =~ /^\s*Variables\s*$/i)
 		{
 			# This is a block of variables
-			
+
 			$isvariables = 1;
 			next;
 		}
@@ -425,7 +425,7 @@ sub get_variables_from_ziplist
 			else
 			{
 				$counter++;
-			}	
+			}
 
 			next;
 		}
@@ -435,7 +435,7 @@ sub get_variables_from_ziplist
 			if ($isvariables)
 			{
 				$variablescounter--;
-				
+
 				if ($variablescounter == 0)
 				{
 					$isvariables = 0;
@@ -444,11 +444,11 @@ sub get_variables_from_ziplist
 			else
 			{
 				$counter--;
-			}	
+			}
 
-			next;	
+			next;
 		}
-		
+
 		if (!($isvariables))
 		{
 			next;
@@ -457,13 +457,13 @@ sub get_variables_from_ziplist
 		$countersum = $counter + $variablescounter;
 
 		installer::remover::remove_leading_and_ending_whitespaces(\$line);
-		
+
 		$line .= "\t##$countersum##\n";
-		
+
 		push(@allvariables, $line);
 	}
 
-	return \@allvariables;	
+	return \@allvariables;
 }
 
 #######################################################################
@@ -484,7 +484,7 @@ sub remove_multiples_from_ziplist
 	my ($line, $itemname, $itemnumber);
 
 	# first collecting all variables and settings names
-	
+
 	for ( my $i = 0; $i <= $#{$blockref}; $i++ )
 	{
 		$line = ${$blockref}[$i];
@@ -493,13 +493,13 @@ sub remove_multiples_from_ziplist
 		{
 			$itemname = $1;
 		}
-		
+
 		if (! installer::existence::exists_in_array($itemname, \@itemarray))
 		{
 			push(@itemarray, $itemname);
 		}
 	}
-	
+
 	# and now all $items can be selected with the highest number
 
 	for ( my $i = 0; $i <= $#itemarray; $i++ )
@@ -510,7 +510,7 @@ sub remove_multiples_from_ziplist
 		my $printline = "";
 
 		for ( my $j = 0; $j <= $#{$blockref}; $j++ )
-		{			
+		{
 			$line = ${$blockref}[$j];
 
 			if ($line =~ /^\s*\Q$itemname\E\s+.*\#\#(\d+)\#\#\s*$/)
@@ -524,16 +524,16 @@ sub remove_multiples_from_ziplist
 				}
 			}
 		}
-		
+
 		# removing the ending number from the printline
 		# and putting it into the array
-	
+
 		$printline =~ s/\#\#\d+\#\#//;
 		installer::remover::remove_leading_and_ending_whitespaces(\$line);
-		push(@newarray, $printline); 
+		push(@newarray, $printline);
 	}
 
-	return \@newarray;	
+	return \@newarray;
 }
 
 #########################################################
@@ -550,14 +550,14 @@ sub getinfofromziplist
 	for ( my $i = 0; $i <= $#{$blockref}; $i++ )
 	{
 		$line = ${$blockref}[$i];
-		
+
 		if ( $line =~ /^\s*\Q$variable\E\s+(.+?)\s*$/ )	# "?" for minimal matching
 		{
 			$searchstring = $1;
 			last;
-		}		
+		}
 	}
-	
+
 	return \$searchstring;
 }
 
@@ -568,7 +568,7 @@ sub getinfofromziplist
 sub replace_all_variables_in_pathes
 {
 	my ( $patharrayref, $variableshashref ) = @_;
-		
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		my $line = ${$patharrayref}[$i];
@@ -578,12 +578,12 @@ sub replace_all_variables_in_pathes
 		foreach $key (keys %{$variableshashref})
 		{
 			my $value = $variableshashref->{$key};
-			
+
 			if (( $line =~ /\{$key\}/ ) && ( $value eq "" )) { $line = ".\n"; }
-			
-			$line =~ s/\{\Q$key\E\}/$value/g;			
+
+			$line =~ s/\{\Q$key\E\}/$value/g;
 		}
-		
+
 		${$patharrayref}[$i] = $line;
 	}
 }
@@ -595,7 +595,7 @@ sub replace_all_variables_in_pathes
 sub replace_minor_in_pathes
 {
 	my ( $patharrayref ) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		my $line = ${$patharrayref}[$i];
@@ -603,16 +603,16 @@ sub replace_minor_in_pathes
 		if ( ! defined $ENV{CWS_WORK_STAMP} and defined $ENV{UPDMINOR} )
 #		if ( $installer::globals::minor )
 		{
-			$line =~ s/\{minor\}/$installer::globals::minor/g;			
+			$line =~ s/\{minor\}/$installer::globals::minor/g;
 			# no difference for minor and minornonpre (ToDo ?)
 			$line =~ s/\{minornonpre\}/$installer::globals::minor/g;
 		}
 		else	# building without a minor
 		{
-			$line =~ s/\.\{minor\}//g;			
-			$line =~ s/\.\{minornonpre\}//g;			
+			$line =~ s/\.\{minor\}//g;
+			$line =~ s/\.\{minornonpre\}//g;
 		}
-		
+
 		${$patharrayref}[$i] = $line;
 	}
 }
@@ -624,16 +624,16 @@ sub replace_minor_in_pathes
 sub replace_packagetype_in_pathes
 {
 	my ( $patharrayref ) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		my $line = ${$patharrayref}[$i];
 
 		if (( $installer::globals::installertypedir ) && ( $line =~ /\{pkgtype\}/ ))
 		{
-			$line =~ s/\{pkgtype\}/$installer::globals::installertypedir/g;			
+			$line =~ s/\{pkgtype\}/$installer::globals::installertypedir/g;
 		}
-		
+
 		${$patharrayref}[$i] = $line;
 	}
 }
@@ -645,16 +645,16 @@ sub replace_packagetype_in_pathes
 sub remove_ending_separator
 {
 	my ( $patharrayref ) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		my $line = ${$patharrayref}[$i];
-		
+
 		installer::remover::remove_ending_pathseparator(\$line);
-		
+
 		$line =~ s/\s*$//;
 		$line = $line . "\n";
-		
+
 		${$patharrayref}[$i] = $line;
 	}
 }
@@ -668,10 +668,10 @@ sub replace_languages_in_pathes
 	my ( $patharrayref, $languagesref ) = @_;
 
 	installer::logger::include_header_into_logfile("Replacing languages in include paths:");
-	
+
 	my @patharray = ();
 	my $infoline = "";
-	
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		my $line = ${$patharrayref}[$i];
@@ -680,7 +680,7 @@ sub replace_languages_in_pathes
 		{
 			my $originalline = $line;
 			my $newline = "";
-			
+
 			for ( my $j = 0; $j <= $#{$languagesref}; $j++ )
 			{
 				my $language = ${$languagesref}[$j];
@@ -688,7 +688,7 @@ sub replace_languages_in_pathes
 				push(@patharray ,$line);
 				my $newdir = $line;
 				$line = $originalline;
-				
+
 				installer::remover::remove_leading_and_ending_whitespaces(\$newline);
 
 				# Is it necessary to refresh the global array, containing all files of all include paths?
@@ -698,28 +698,28 @@ sub replace_languages_in_pathes
 					if ( ! installer::systemactions::is_empty_dir($newdir) )
 					{
 						$installer::globals::refresh_includepathes = 1;
-						$infoline = "Directory $newdir exists and is not empty. Refreshing global file array is required.\n"; 
+						$infoline = "Directory $newdir exists and is not empty. Refreshing global file array is required.\n";
 						$installer::logger::Lang->print($infoline);
 					}
 					else
 					{
-						$infoline = "Directory $newdir is empty. No refresh of global file array required.\n"; 
-						$installer::logger::Lang->print($infoline);				
+						$infoline = "Directory $newdir is empty. No refresh of global file array required.\n";
+						$installer::logger::Lang->print($infoline);
 					}
 				}
 				else
 				{
-					$infoline = "Directory $newdir does not exist. No refresh of global file array required.\n"; 
-					$installer::logger::Lang->print($infoline);			
+					$infoline = "Directory $newdir does not exist. No refresh of global file array required.\n";
+					$installer::logger::Lang->print($infoline);
 				}
-			}			
-		}			
+			}
+		}
 		else		# not language dependent include path
 		{
 			push(@patharray ,$line);
 		}
 	}
-	
+
 	return \@patharray;
 }
 
@@ -730,9 +730,9 @@ sub replace_languages_in_pathes
 sub list_all_files_from_include_path
 {
 	my ( $patharrayref) = @_;
-	
+
 	installer::logger::include_header_into_logfile("Include paths:");
-	
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		my $path = ${$patharrayref}[$i];
@@ -741,7 +741,7 @@ sub list_all_files_from_include_path
 		$installer::logger::Lang->print($infoline);
 	}
 
-    $installer::logger::Lang->print("\n");
+	$installer::logger::Lang->print("\n");
 }
 
 #####################################################
@@ -751,11 +751,11 @@ sub list_all_files_from_include_path
 sub set_manufacturer
 {
 	my ($allvariables) = @_;
-	
+
 	my $openofficeproductname = "OpenOffice";
 	my $sunname = "";
-	
-	
+
+
 	if ( $allvariables->{'OPENSOURCE'} && $allvariables->{'OPENSOURCE'} == 1 )
 	{
 		$installer::globals::isopensourceproduct = 1;
@@ -770,7 +770,7 @@ sub set_manufacturer
 		$installer::globals::manufacturer = $sunname;
 		$installer::globals::longmanufacturer = $sunname;
 	}
-	
+
 	$allvariables->{'MANUFACTURER'} = $installer::globals::manufacturer;
 }
 
@@ -798,18 +798,18 @@ sub simplify_path
 	my ( $pathref ) = @_;
 
 	my $oldpath = $$pathref;
-	
+
 	my $change = 0;
-	
+
 	while ( $oldpath =~ /(^.*)(\Q$installer::globals::separator\E.*\w+?)(\Q$installer::globals::separator\E\.\.)(\Q$installer::globals::separator\E.*$)/ )
 	{
 		my $part1 = $1;
 		my $part2 = $4;
-		$oldpath = $part1 . $part2;		
+		$oldpath = $part1 . $part2;
 		$change = 1;
 	}
-	
-	if ( $change ) { $$pathref = $oldpath . "\n"; } 
+
+	if ( $change ) { $$pathref = $oldpath . "\n"; }
 }
 
 ####################################################
@@ -819,7 +819,7 @@ sub simplify_path
 sub resolve_relative_pathes
 {
 	my ( $patharrayref ) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		installer::parameter::make_path_absolute(\${$patharrayref}[$i]);
@@ -843,7 +843,7 @@ sub replace_variables_in_ziplist_variables
 
 	my $localminor = $installer::globals::lastminor;
 	if ( $installer::globals::minor ) { $localminor = $installer::globals::minor; }
-	
+
 	my $buildidstringcws = $installer::globals::build . $localminor . "(Build:" . $installer::globals::buildid . ")";
 
 	# the environment variable CWS_WORK_STAMP is set only in CWS
@@ -869,8 +869,8 @@ sub replace_variables_in_ziplist_variables
 
 sub overwrite_ooovendor
 {
-    my ($variableshashref) = @_;
-    $variableshashref->{'OOOVENDOR'} = $ENV{'OOO_VENDOR'} , if( defined $ENV{'OOO_VENDOR'}  && $ENV{'OOO_VENDOR'} ne "" );
+	my ($variableshashref) = @_;
+	$variableshashref->{'OOOVENDOR'} = $ENV{'OOO_VENDOR'} , if( defined $ENV{'OOO_VENDOR'}  && $ENV{'OOO_VENDOR'} ne "" );
 }
 
 ###########################################################
@@ -890,21 +890,21 @@ sub add_variables_to_allvariableshashref
 	}
 	else
 	{
-		$variableshashref->{'LCPRODUCTEXTENSION'} = "";		
+		$variableshashref->{'LCPRODUCTEXTENSION'} = "";
 	}
 
 	if ($installer::globals::patch)
-    {
-        $variableshashref->{'PRODUCTADDON'} = $installer::globals::patchaddon;
-    }
+	{
+		$variableshashref->{'PRODUCTADDON'} = $installer::globals::patchaddon;
+	}
 	elsif ($installer::globals::languagepack)
-    {
-        $variableshashref->{'PRODUCTADDON'} = $installer::globals::languagepackaddon;
-    }
+	{
+		$variableshashref->{'PRODUCTADDON'} = $installer::globals::languagepackaddon;
+	}
 	else
-    {
-        $variableshashref->{'PRODUCTADDON'} = "";
-    }
+	{
+		$variableshashref->{'PRODUCTADDON'} = "";
+	}
 
 	my $localbuild = $installer::globals::build;
 	if ( $localbuild =~ /^\s*(\w+?)(\d+)\s*$/ ) { $localbuild = $2; }	# using "680" instead of "src680"

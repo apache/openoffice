@@ -216,7 +216,7 @@ void SdTransformOOo2xDocument::transformTextShape( SdrTextObj& rTextShape )
 
             bool bChange = false;
 
-			for(sal_uInt16 nPara = 0; nPara < nCount; nPara++)
+			for(sal_uInt32 nPara = 0; nPara < nCount; nPara++)
 			{
 				SfxItemSet aParaSet( mrOutliner.GetParaAttribs( nPara ) );
 

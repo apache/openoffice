@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -514,7 +514,7 @@ IMPL_LINK( SwMailMergeWizardExecutor, EndDialogHdl, AbstractMailMergeWizard*, EM
 				m_pView2Close = pTargetView;
                 pTargetView->GetViewFrame()->GetTopViewFrame()->GetWindow().Hide();
 				pSourceView->GetViewFrame()->GetFrame().AppearWithUpdate();
-				// the current view has be be set when the target is destroyed
+				// the current view has to be set when the target is destroyed
                 m_pView = pSourceView;
                 m_pMMConfig->SetTargetView(0);
 
@@ -974,3 +974,5 @@ void NewXForms( SfxRequest& rReq )
     // set return value
     rReq.SetReturnValue( SfxVoidItem( rReq.GetSlot() ) );
 }
+
+/* vim: set noet sw=4 ts=4: */

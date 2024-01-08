@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared03020404xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Dir Function [Runtime]</title>
 <filename>/text/sbasic/shared/03020404.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2005-09-27T17:09:01">converted from old format - fpe; bug fix: i29276</lastedited>
-</history>
 </meta>
 <body>
 <section id="dir">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154347"><bookmark_value>Dir function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154347">
+<bookmark_value>Dir function</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3154347" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020404.xhp" name="Dir Function [Runtime]">Dir Function [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_id3153381" xml-lang="en-US" l10n="U" oldref="2">Returns the name of a file, a directory, or all of the files and the directories on a drive or in a directory that match the specified search path.</paragraph>
@@ -50,7 +44,7 @@
 <paragraph role="paragraph" id="par_id3161831" xml-lang="en-US" l10n="U" oldref="8">
 <emph>Text:</emph> Any string expression that specifies the search path, directory or file. This argument can only be specified the first time that you call the Dir function. If you want, you can enter the path in <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
 <paragraph role="paragraph" id="par_id3146974" xml-lang="en-US" l10n="U" oldref="9">
-<emph>Attrib: </emph>Any integer expression that specifies bitwise file attributes. The Dir function only returns files or directories that match the specified attributes. You can combine several attributes by adding the attribute values:</paragraph>
+<emph>Attrib:</emph> Any integer expression that specifies bitwise file attributes. The Dir function only returns files or directories that match the specified attributes. You can combine several attributes by adding the attribute values:</paragraph>
 <paragraph role="paragraph" id="par_id3149666" xml-lang="en-US" l10n="U" oldref="11">0 : Normal files.</paragraph>
 <paragraph role="paragraph" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="15">16 : Returns the name of the directory only.</paragraph>
 <paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="U" oldref="16">Use this attribute to check if a file or directory exists, or to determine all files and folders in a specific directory.</paragraph>

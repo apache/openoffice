@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
@@ -43,7 +45,7 @@ namespace drawinglayer
     {
         CropPrimitive2D::CropPrimitive2D(
             const Primitive2DSequence& rChildren,
-            const basegfx::B2DHomMatrix& rTransformation, 
+            const basegfx::B2DHomMatrix& rTransformation,
             double fCropLeft,
             double fCropTop,
             double fCropRight,
@@ -95,7 +97,7 @@ namespace drawinglayer
                     const double fRight(getCropRight() * fBackScaleX);
                     const double fBottom(getCropBottom() * fBackScaleY);
 
-                    // calc new unit range for comparisons; the original range is the unit range
+                    // calculate new unit range for comparisons; the original range is the unit range
                     const basegfx::B2DRange aUnitRange(0.0, 0.0, 1.0, 1.0);
                     const basegfx::B2DRange aNewRange(
                         -fLeft,
@@ -109,7 +111,7 @@ namespace drawinglayer
                     {
                         // create new transform; first take out old transform to get
                         // to unit coordinates by inverting. Inverting should be flawless
-                        // since we already cheched that object size is not zero in X or Y
+                        // since we already checked that object size is not zero in X or Y
                         basegfx::B2DHomMatrix aNewTransform(getTransformation());
 
                         aNewTransform.invert();
@@ -128,7 +130,7 @@ namespace drawinglayer
                         // prepare TransformPrimitive2D with xPrimitive
                         const Primitive2DReference xTransformPrimitive(
                             new TransformPrimitive2D(
-                                aNewTransform, 
+                                aNewTransform,
                                 getChildren()));
 
                         if(aUnitRange.isInside(aNewRange))
@@ -146,7 +148,7 @@ namespace drawinglayer
                             // create maskPrimitive with aMaskPolyPolygon and aMaskContentVector
                             const Primitive2DReference xMask(
                                 new MaskPrimitive2D(
-                                    aMaskPolyPolygon, 
+                                    aMaskPolyPolygon,
                                     Primitive2DSequence(&xTransformPrimitive, 1)));
 
                             xRetval = Primitive2DSequence(&xMask, 1);
@@ -164,5 +166,4 @@ namespace drawinglayer
     } // end of namespace primitive2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

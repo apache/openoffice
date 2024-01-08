@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,35 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textswriter0105130000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Styles in Writer</title>
 <filename>/text/swriter/01/05130000.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2007-01-09T09:56:36">UFI: fixed #i21144#
-UFI: may be removed, see Format Menu spec
-DEDR: Reviewed</lastedited>
-</history>
+<comment>fixed #i21144#, may be removed, see Format Menu spec</comment>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id4005249"><bookmark_value>styles;categories</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id4005249">
+<bookmark_value>styles;categories</bookmark_value>
 <bookmark_value>character styles;style categories</bookmark_value>
 <bookmark_value>paragraph styles;style categories</bookmark_value>
 <bookmark_value>frames; styles</bookmark_value>
@@ -65,7 +58,7 @@ DEDR: Reviewed</lastedited>
 </tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3151172" xml-lang="en-US" l10n="U" oldref="6">Character Styles </paragraph>
+<paragraph role="tablecontent" id="par_id3151172" xml-lang="en-US" l10n="U" oldref="6">Character Styles</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3147512" xml-lang="en-US" l10n="U" oldref="7">Use Character Styles to format single characters, or entire words and phrases. If you want, you can nest Character Styles.</paragraph>
@@ -73,7 +66,7 @@ DEDR: Reviewed</lastedited>
 </tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3150713" xml-lang="en-US" l10n="U" oldref="8">Paragraph Styles </paragraph>
+<paragraph role="tablecontent" id="par_id3150713" xml-lang="en-US" l10n="U" oldref="8">Paragraph Styles</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3149810" xml-lang="en-US" l10n="U" oldref="9">Use Paragraph Styles to format paragraphs, including the font type and size. You can also select the paragraph style to apply to the next paragraph.</paragraph>
@@ -89,7 +82,7 @@ DEDR: Reviewed</lastedited>
 </tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3152960" xml-lang="en-US" l10n="U" oldref="12">Page Styles </paragraph>
+<paragraph role="tablecontent" id="par_id3152960" xml-lang="en-US" l10n="U" oldref="12">Page Styles</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3155897" xml-lang="en-US" l10n="U" oldref="13">Use Page Styles to organize the structure of the document, and to add page numbers. You can also specify the page style to apply to the first page that follows after a page break.</paragraph>
@@ -104,7 +97,6 @@ DEDR: Reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <section id="vorlagenbereich">
 <paragraph role="heading" id="hd_id3149821" xml-lang="en-US" level="2" l10n="CHG" oldref="61">Style Groups</paragraph>
 <paragraph role="paragraph" id="par_id3154828" xml-lang="en-US" l10n="U" oldref="18">These are the style groups that you can display in the Styles and Formatting window.</paragraph>
@@ -138,7 +130,7 @@ DEDR: Reviewed</lastedited>
 <paragraph role="tablecontent" id="par_id3150590" xml-lang="en-US" l10n="U" oldref="23">Applied Styles</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3149168" xml-lang="en-US" l10n="CHG" oldref="24">Displays the styles (of selected category) applied in the current document. </paragraph>
+<paragraph role="tablecontent" id="par_id3149168" xml-lang="en-US" l10n="CHG" oldref="24">Displays the styles (of selected category) applied in the current document.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -214,7 +206,6 @@ DEDR: Reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <paragraph role="heading" id="hd_id3155580" xml-lang="en-US" level="2" l10n="CHG" oldref="56">Template Management</paragraph>
 <paragraph role="paragraph" id="par_id3145622" xml-lang="en-US" l10n="CHG" oldref="57">Use the <link href="text/shared/01/01110100.xhp" name="Template Management"><emph>Template Management</emph></link> dialog to copy styles from one document to another.</paragraph>

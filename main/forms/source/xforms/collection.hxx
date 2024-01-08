@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -125,12 +125,12 @@ public:
 
     bool isValidIndex( sal_Int32 n ) const
     {
-        return n >= 0  &&  n < static_cast<sal_Int32>( maItems.size() );
+        return n >= 0 && n < static_cast<sal_Int32>( maItems.size() );
     }
 
 
-    // the following method may be overriden by sub-classes for
-    // customized behaviour
+    // the following method may be overridden by sub-classes for
+    // customized behavior
 
     /// called before insertion to determine whether item is valid
     virtual bool isValid( const T& ) const { return true; }
@@ -138,8 +138,8 @@ public:
 
 protected:
 
-    // the following methods may be overriden by sub-classes for
-    // customized behaviour
+    // the following methods may be overridden by sub-classes for
+    // customized behavior
 
     /// called after item has been inserted into the collection
     virtual void _insert( const T& ) { }
@@ -161,28 +161,28 @@ public:
 
 
     // XElementAccess
-    virtual Type_t SAL_CALL getElementType() 
+    virtual Type_t SAL_CALL getElementType()
         throw( RuntimeException_t )
     {
         return getCppuType( static_cast<T*>( NULL ) );
     }
 
-    virtual sal_Bool SAL_CALL hasElements() 
+    virtual sal_Bool SAL_CALL hasElements()
         throw( RuntimeException_t )
     {
         return hasItems();
     }
 
     // XIndexAccess : XElementAccess
-    virtual sal_Int32 SAL_CALL getCount() 
+    virtual sal_Int32 SAL_CALL getCount()
         throw( RuntimeException_t )
     {
         return countItems();
     }
 
-    virtual Any_t SAL_CALL getByIndex( sal_Int32 nIndex ) 
-        throw( IndexOutOfBoundsException_t, 
-               WrappedTargetException_t, 
+    virtual Any_t SAL_CALL getByIndex( sal_Int32 nIndex )
+        throw( IndexOutOfBoundsException_t,
+               WrappedTargetException_t,
                RuntimeException_t)
     {
         if( isValidIndex( nIndex ) )
@@ -192,16 +192,16 @@ public:
     }
 
     // XIndexReplace : XIndexAccess
-    virtual void SAL_CALL replaceByIndex( sal_Int32 nIndex, 
-                                          const Any_t& aElement ) 
-        throw( IllegalArgumentException_t, 
-               IndexOutOfBoundsException_t, 
-               WrappedTargetException_t, 
+    virtual void SAL_CALL replaceByIndex( sal_Int32 nIndex,
+                                          const Any_t& aElement )
+        throw( IllegalArgumentException_t,
+               IndexOutOfBoundsException_t,
+               WrappedTargetException_t,
                RuntimeException_t)
     {
         T t;
         if( isValidIndex( nIndex) )
-            if( ( aElement >>= t )  &&  isValid( t ) )
+            if( ( aElement >>= t ) && isValid( t ) )
                 setItem( nIndex, t );
             else
                 throw IllegalArgumentException_t();
@@ -216,22 +216,22 @@ public:
         return new Enumeration( this );
     }
 
-    
+
     // XSet : XEnumerationAccess
-    virtual sal_Bool SAL_CALL has( const Any_t& aElement ) 
+    virtual sal_Bool SAL_CALL has( const Any_t& aElement )
         throw( RuntimeException_t )
     {
         T t;
         return ( aElement >>= t ) ? hasItem( t ) : sal_False;
     }
-  
+
     virtual void SAL_CALL insert( const Any_t& aElement )
         throw( IllegalArgumentException_t,
-               ElementExistException_t, 
+               ElementExistException_t,
                RuntimeException_t )
     {
         T t;
-        if( ( aElement >>= t )  &&  isValid( t ) )
+        if( ( aElement >>= t ) && isValid( t ) )
             if( ! hasItem( t ) )
                 addItem( t );
             else
@@ -257,7 +257,7 @@ public:
 
 
     // XContainer
-    virtual void SAL_CALL addContainerListener( 
+    virtual void SAL_CALL addContainerListener(
         const XContainerListener_t& xListener )
         throw( RuntimeException_t )
     {
@@ -272,7 +272,7 @@ public:
         throw( RuntimeException_t )
     {
         OSL_ENSURE( xListener.is(), "need listener!" );
-        Listeners_t::iterator aIter = 
+        Listeners_t::iterator aIter =
             std::find( maListeners.begin(), maListeners.end(), xListener );
         if( aIter != maListeners.end() )
             maListeners.erase( aIter );
@@ -284,7 +284,7 @@ protected:
     void _elementInserted( sal_Int32 nPos )
     {
         OSL_ENSURE( isValidIndex(nPos), "invalid index" );
-        com::sun::star::container::ContainerEvent aEvent( 
+        com::sun::star::container::ContainerEvent aEvent(
             static_cast<com::sun::star::container::XIndexReplace*>( this ),
             com::sun::star::uno::makeAny( nPos ),
             com::sun::star::uno::makeAny( getItem( nPos ) ),
@@ -299,7 +299,7 @@ protected:
 
     void _elementRemoved( const T& aOld )
     {
-        com::sun::star::container::ContainerEvent aEvent( 
+        com::sun::star::container::ContainerEvent aEvent(
             static_cast<com::sun::star::container::XIndexReplace*>( this ),
             com::sun::star::uno::Any(),
             com::sun::star::uno::makeAny( aOld ),
@@ -315,7 +315,7 @@ protected:
     void _elementReplaced( const sal_Int32 nPos, const T& aNew )
     {
         OSL_ENSURE( isValidIndex(nPos), "invalid index" );
-        com::sun::star::container::ContainerEvent aEvent( 
+        com::sun::star::container::ContainerEvent aEvent(
             static_cast<com::sun::star::container::XIndexReplace*>( this ),
             com::sun::star::uno::makeAny( nPos ),
             com::sun::star::uno::makeAny( getItem( nPos ) ),

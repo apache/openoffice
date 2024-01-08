@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,22 +80,22 @@ namespace comphelper
         ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
         ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
         ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-		
+
     public:
-    
+
         /** Helper method, that detects the difference between
             two strings and returns the deleted selection and
             the inserted selection if available.
-            
+
             @returns true if there are differences between the
             two strings and false if both are equal
-            
+
             @see ::com::sun::star::accessibility::AccessibleEventId
                  ::com::sun::star::accessibility::TextSegment
         */
         static bool implInitTextChangedEvent(
-            const rtl::OUString& rOldString, 
-            const rtl::OUString& rNewString, 		
+            const rtl::OUString& rOldString,
+            const rtl::OUString& rNewString,
             /*out*/ ::com::sun::star::uno::Any& rDeleted,
             /*out*/ ::com::sun::star::uno::Any& rInserted); // throw()
 	};
@@ -119,7 +119,7 @@ namespace comphelper
 		OAccessibleTextHelper();
 		// see the respective base class ctor for an extensive comment on this, please
 		OAccessibleTextHelper( IMutex* _pExternalLock );
-								  
+
 	public:
 		// XInterface
 		DECLARE_XINTERFACE( )
@@ -149,7 +149,7 @@ namespace comphelper
 
 // -----------------------------------------------------------------------------
 //
-//	OAccessibleTextHelper is a helper class for implementing the 
+//	OAccessibleTextHelper is a helper class for implementing the
 //  XAccessibleText interface.
 //
 //	The following methods have a default implementation:
@@ -165,7 +165,7 @@ namespace comphelper
 //		getTextBeforeIndex
 //		getTextBehindIndex
 //
-//	The following methods must be overriden by derived classes:
+//	The following methods must be overridden by derived classes:
 //
 //		implGetText
 //		implGetLocale
@@ -177,5 +177,5 @@ namespace comphelper
 //		getIndexAtPoint
 //		setSelection
 //		copyText
-//	
+//
 // -----------------------------------------------------------------------------

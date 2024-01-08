@@ -577,7 +577,7 @@ basegfx::B2DPolyPolygon SdrMeasureObj::ImpCalcXPoly(const ImpMeasurePoly& rPol) 
 	return aRetval;
 }
 
-FASTBOOL SdrMeasureObj::CalcFieldValue(const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos,
+FASTBOOL SdrMeasureObj::CalcFieldValue(const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos,
 	FASTBOOL bEdit,
 	Color*& rpTxtColor, Color*& rpFldColor, XubString& rRet) const
 {
@@ -1410,7 +1410,7 @@ sal_Bool SdrMeasureObj::TRGetBaseGeometry(basegfx::B2DHomMatrix& rMatrix, basegf
 		{
 			case SFX_MAPUNIT_TWIP :
 			{
-				// postion
+				// position
 				aTranslate.setX(ImplTwipsToMM(aTranslate.getX()));
 				aTranslate.setY(ImplTwipsToMM(aTranslate.getY()));
 

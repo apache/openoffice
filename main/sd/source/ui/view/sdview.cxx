@@ -684,7 +684,7 @@ void View::SelectAll()
 	{
 		OutlinerView* pOLV = GetTextEditOutlinerView();
 		const ::Outliner* pOutliner = GetTextEditOutliner();
-		pOLV->SelectRange( 0, (sal_uInt16) pOutliner->GetParagraphCount() );
+		pOLV->SelectRange( 0, pOutliner->GetParagraphCount() );
 	}
 	else
 	{
@@ -1305,7 +1305,7 @@ void View::OnEndPasteOrDrop( PasteOrDropInfos* pInfos )
 			// new paragraph, depending on the paragraph depth
 			SfxStyleSheetBasePool* pStylePool = GetDoc()->GetStyleSheetPool();
 
-			for ( sal_uInt16 nPara = pInfos->nStartPara; nPara <= pInfos->nEndPara; nPara++ )
+			for ( sal_uInt32 nPara = pInfos->nStartPara; nPara <= pInfos->nEndPara; nPara++ )
 			{
 				sal_Int16 nDepth = pOutliner->GetDepth( nPara );
 
@@ -1471,7 +1471,7 @@ void View::ChangeMarkedObjectsBulletsNumbering(
                         pOutlinerView->ApplyBulletsNumbering( bHandleBullets, pNumRule, bToggle );
                     }
 					sal_uInt32 nParaCount = pOutliner->GetParagraphCount();
-					pText->SetOutlinerParaObject(pOutliner->CreateParaObject(0, (sal_uInt16)nParaCount));
+					pText->SetOutlinerParaObject(pOutliner->CreateParaObject(0, nParaCount));
 					pOutliner->Clear();
 				}
 			}
@@ -1502,7 +1502,7 @@ void View::ChangeMarkedObjectsBulletsNumbering(
                 pOutlinerView->ApplyBulletsNumbering( bHandleBullets, pNumRule, bToggle );
             }
 			sal_uInt32 nParaCount = pOutliner->GetParagraphCount();
-			pTextObj->SetOutlinerParaObject(pOutliner->CreateParaObject(0, (sal_uInt16)nParaCount));
+			pTextObj->SetOutlinerParaObject(pOutliner->CreateParaObject(0, nParaCount));
 			pOutliner->Clear();
 		}
 	}

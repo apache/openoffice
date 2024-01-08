@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -128,7 +128,7 @@ using namespace ::com::sun::star::container;
 using namespace ::com::sun::star::accessibility;
 
 //------------------------------------------------------------------------------
-namespace 
+namespace
 {
 	// -----------------------------------------------------------------------------
 	sal_Bool isColumnInKeyType(const Reference<XIndexAccess>& _rxKeys,const ::rtl::OUString& _rColumnName,sal_Int32 _nKeyType)
@@ -138,7 +138,7 @@ namespace
 		{
 			Reference<XColumnsSupplier> xColumnsSupplier;
 			// search the one and only primary key
-            const sal_Int32 nCount = _rxKeys->getCount();
+			const sal_Int32 nCount = _rxKeys->getCount();
 			for(sal_Int32 i=0;i< nCount;++i)
 			{
 				Reference<XPropertySet> xProp(_rxKeys->getByIndex(i),UNO_QUERY);
@@ -188,7 +188,7 @@ namespace
 
 		@return	true when OK was pressed otherwise false
 	*/
-    sal_Bool openJoinDialog(OQueryTableView* _pView,const TTableConnectionData::value_type& _pConnectionData,sal_Bool _bSelectableTables)
+	sal_Bool openJoinDialog(OQueryTableView* _pView,const TTableConnectionData::value_type& _pConnectionData,sal_Bool _bSelectableTables)
 	{
 		OQueryTableConnectionData* pData = static_cast< OQueryTableConnectionData*>(_pConnectionData.get());
 
@@ -237,7 +237,7 @@ namespace
             // nothing to do if one of both denotes a query
             return;
 
-		// we found a table in our view where we can insert some connections 
+		// we found a table in our view where we can insert some connections
 		// the key columns have a property called RelatedColumn
 		// OQueryTableConnectionData aufbauen
         OQueryTableConnectionData* pNewConnData = new OQueryTableConnectionData( _rSource.GetData(), _rDest.GetData() );
@@ -271,7 +271,7 @@ namespace
 				else
 					OSL_ENSURE(0,"Column not found!");
 			}
-			// get the position inside the tabe 
+			// get the position inside the table
 			Reference<XNameAccess> xRefColumns = _rDest.GetOriginalColumns();
 			if(xRefColumns.is())
 			{
@@ -350,7 +350,7 @@ void OQueryTableView::ReSync()
 
 	TTableWindowData::reverse_iterator aIter = pTabWinDataList->rbegin();
 	// Fenster kreieren und einfuegen
-	
+
 	for(;aIter != pTabWinDataList->rend();++aIter)
 	{
 		OQueryTableWindowData* pData = static_cast<OQueryTableWindowData*>(aIter->get());
@@ -382,7 +382,7 @@ void OQueryTableView::ReSync()
 	// Verbindungen einfuegen
 	TTableConnectionData* pTabConnDataList = m_pView->getController().getTableConnectionData();
 	TTableConnectionData::reverse_iterator aConIter = pTabConnDataList->rbegin();
-	
+
 	for(;aConIter != pTabConnDataList->rend();++aConIter)
 	{
 		OQueryTableConnectionData* pTabConnData =  static_cast<OQueryTableConnectionData*>(aConIter->get());
@@ -399,7 +399,7 @@ void OQueryTableView::ReSync()
 			continue;
 		}
 
-		// adds a new connection to join view and notifies our accessible and invaldates the controller
+		// adds a new connection to join view and notifies our accessible and invalidates the controller
 		addConnection(new OQueryTableConnection(this, *aConIter));
 	}
 }
@@ -427,7 +427,7 @@ void OQueryTableView::NotifyTabConnection(const OQueryTableConnection& rNewConn,
 	// erst mal schauen, ob ich diese Connection schon habe
 	OQueryTableConnection* pTabConn = NULL;
 	const ::std::vector<OTableConnection*>*	pConnections = getTableConnections();
-    ::std::vector<OTableConnection*>::const_iterator aEnd = pConnections->end();
+	::std::vector<OTableConnection*>::const_iterator aEnd = pConnections->end();
 	::std::vector<OTableConnection*>::const_iterator aIter = ::std::find(	pConnections->begin(),
 													aEnd,
 													static_cast<const OTableConnection*>(&rNewConn)
@@ -452,7 +452,7 @@ void OQueryTableView::NotifyTabConnection(const OQueryTableConnection& rNewConn,
 		// die neuen Daten ...
 		OQueryTableConnectionData* pNewData = static_cast< OQueryTableConnectionData*>(rNewConn.GetData()->NewInstance());
 		pNewData->CopyFrom(*rNewConn.GetData());
-        TTableConnectionData::value_type aData(pNewData);
+		TTableConnectionData::value_type aData(pNewData);
 		OQueryTableConnection* pNewConn = new OQueryTableConnection(this, aData);
 		GetConnection(pNewConn);
 
@@ -484,8 +484,8 @@ void OQueryTableView::AddTabWin(const ::rtl::OUString& _rTableName, const ::rtl:
 		::rtl::OUString sCatalog, sSchema, sTable;
 		::dbtools::qualifiedNameComponents(xMetaData,
 									_rTableName,
-									sCatalog, 
-									sSchema, 
+									sCatalog,
+									sSchema,
 									sTable,
 									::dbtools::eInDataManipulation);
 		::rtl::OUString sRealName(sSchema);
@@ -501,7 +501,7 @@ void OQueryTableView::AddTabWin(const ::rtl::OUString& _rTableName, const ::rtl:
 	}
 }
 // -----------------------------------------------------------------------------
-// find the table which has a foreign key with this referencedTable name 
+// find the table which has a foreign key with this referencedTable name
 Reference<XPropertySet> getKeyReferencedTo(const Reference<XIndexAccess>& _rxKeys,const ::rtl::OUString& _rReferencedTable)
 {
 	if(!_rxKeys.is())
@@ -510,7 +510,7 @@ Reference<XPropertySet> getKeyReferencedTo(const Reference<XIndexAccess>& _rxKey
 	if ( !_rxKeys.is() )
 		return Reference<XPropertySet>();
 	// search the one and only primary key
-    const sal_Int32 nCount = _rxKeys->getCount();
+	const sal_Int32 nCount = _rxKeys->getCount();
 	for(sal_Int32 i=0;i<nCount ;++i)
 	{
 		Reference<XPropertySet> xKey(_rxKeys->getByIndex(i),UNO_QUERY);
@@ -538,20 +538,20 @@ void OQueryTableView::AddTabWin(const ::rtl::OUString& _rComposedName, const ::r
 		// wenn der Tabellenname nicht gesetzt ist, steht das fuer ein Dummy-Fenster, das braucht aber wenigstens einen Alias-Namen
 
 	// neue Datenstruktur erzeugen
-	// first check if this already hav it's data
+	// first check if this already have its data
 	sal_Bool bAppend = bNewTable;
 	TTableWindowData::value_type pNewTabWinData;
 	TTableWindowData* pWindowData = getDesignView()->getController().getTableWindowData();
 	TTableWindowData::iterator aWinIter = pWindowData->begin();
-    TTableWindowData::iterator aWinEnd = pWindowData->end();
+	TTableWindowData::iterator aWinEnd = pWindowData->end();
 	for(;aWinIter != aWinEnd;++aWinIter)
 	{
 		pNewTabWinData = *aWinIter;
 		if (pNewTabWinData && pNewTabWinData->GetWinName() == strAlias && pNewTabWinData->GetComposedName() == _rComposedName && pNewTabWinData->GetTableName() == _rTableName)
 			break;
 	}
-    if ( !bAppend )
-        bAppend = ( aWinIter == aWinEnd );
+	if ( !bAppend )
+		bAppend = ( aWinIter == aWinEnd );
 	if ( bAppend )
 		pNewTabWinData = createTableWindowData(_rComposedName, _rTableName, strAlias);
 		// die TabWinData brauche ich nicht in die entsprechende Liste der DocShell eintragen, das macht ShowTabWin
@@ -567,7 +567,7 @@ void OQueryTableView::AddTabWin(const ::rtl::OUString& _rComposedName, const ::r
 	if(!bSuccess)
 	{
 		// reset table window
-		pUndoAction->SetTabWin(NULL); 
+		pUndoAction->SetTabWin(NULL);
 		pUndoAction->SetOwnership(sal_False);
 
 		delete pUndoAction;
@@ -757,7 +757,7 @@ void OQueryTableView::ConnDoubleClicked(OTableConnection* pConnection)
 // -----------------------------------------------------------------------------
 void OQueryTableView::createNewConnection()
 {
-    TTableConnectionData::value_type pData(new OQueryTableConnectionData());
+	TTableConnectionData::value_type pData(new OQueryTableConnectionData());
 	if( openJoinDialog(this,pData,sal_True) )
 	{
 		OTableWindowMap* pMap = GetTabWinMap();
@@ -773,7 +773,7 @@ void OQueryTableView::createNewConnection()
 		}
 		else
 		{
-			// create a new conenction and append it
+			// create a new connection and append it
 			OQueryTableConnection* pQConn = new OQueryTableConnection(this, pData);
 			GetConnection(pQConn);
 			pConn = pQConn;
@@ -824,7 +824,7 @@ sal_Bool OQueryTableView::FindTableFromField(const String& rFieldName, OTableFie
 	DBG_CHKTHIS(OQueryTableView,NULL);
 	rCnt = 0;
 	OTableWindowMap::const_iterator aIter = GetTabWinMap()->begin();
-    OTableWindowMap::const_iterator aEnd  = GetTabWinMap()->end();
+	OTableWindowMap::const_iterator aEnd  = GetTabWinMap()->end();
 	for(;aIter != aEnd;++aIter)
 	{
 		if(static_cast<OQueryTableWindow*>(aIter->second)->ExistsField(rFieldName, rInfo))
@@ -891,16 +891,16 @@ void OQueryTableView::RemoveTabWin(OTableWindow* pTabWin)
 	    if ( m_pAccessible )
 		    m_pAccessible->notifyAccessibleEvent(	AccessibleEventId::CHILD,
 												    makeAny(pTabWin->GetAccessible()),
-												    Any()												
+												    Any()
 												    );
-    }
+	}
 }
 
 //------------------------------------------------------------------------
 void OQueryTableView::EnsureVisible(const OTableWindow* pWin)
 {
 	DBG_CHKTHIS(OQueryTableView,NULL);
-	
+
 	Invalidate(INVALIDATE_NOCHILDREN);
 	OJoinTableView::EnsureVisible(pWin);
 }
@@ -910,7 +910,7 @@ void OQueryTableView::GetConnection(OQueryTableConnection* pConn)
 {
 	DBG_CHKTHIS(OQueryTableView,NULL);
 	// bei mir und dem Dokument einfuegen
-	
+
 	addConnection( pConn );
 	// invalidieren (damit es neu gezeichnet wird)
 	//	pConn->Invalidate();
@@ -1038,7 +1038,7 @@ sal_Bool OQueryTableView::ShowTabWin( OQueryTableWindow* pTabWin, OQueryTabWinUn
 			// die Connections
 			::std::vector<OTableConnection*>* pTableCon = pUndoAction->GetTabConnList();
 			::std::vector<OTableConnection*>::iterator aIter = pTableCon->begin();
-            ::std::vector<OTableConnection*>::iterator aEnd = pTableCon->end();
+			::std::vector<OTableConnection*>::iterator aEnd = pTableCon->end();
 
 			for(;aIter != aEnd;++aIter)
 				addConnection(*aIter); // add all connections from the undo action
@@ -1072,7 +1072,7 @@ sal_Bool OQueryTableView::ShowTabWin( OQueryTableWindow* pTabWin, OQueryTabWinUn
 	// damit habe ich das Doc natuerlich modifiziert
 	if(!m_pView->getController().isReadOnly())
 		m_pView->getController().setModified( sal_True );
-	
+
 	m_pView->getController().InvalidateFeature(SID_BROWSER_CLEAR_QUERY);
 
 	return bSuccess;
@@ -1092,7 +1092,7 @@ sal_Bool OQueryTableView::ExistsAVisitedConn(const OQueryTableWindow* pFrom) con
 	if (pList)
 	{
 		::std::vector<OTableConnection*>::const_iterator aIter = pList->begin();
-        ::std::vector<OTableConnection*>::const_iterator aEnd = pList->end();
+		::std::vector<OTableConnection*>::const_iterator aEnd = pList->end();
 		for(;aIter != aEnd;++aIter)
 		{
 			OQueryTableConnection* pTemp = static_cast<OQueryTableConnection*>(*aIter);
@@ -1107,13 +1107,15 @@ sal_Bool OQueryTableView::ExistsAVisitedConn(const OQueryTableWindow* pFrom) con
 // -----------------------------------------------------------------------------
 void OQueryTableView::onNoColumns_throw()
 {
-    String sError( ModuleRes( STR_STATEMENT_WITHOUT_RESULT_SET ) );
-    ::dbtools::throwSQLException( sError, ::dbtools::SQL_GENERAL_ERROR, NULL );
+	String sError( ModuleRes( STR_STATEMENT_WITHOUT_RESULT_SET ) );
+	::dbtools::throwSQLException( sError, ::dbtools::SQL_GENERAL_ERROR, NULL );
 }
 //------------------------------------------------------------------------------
 bool OQueryTableView::supressCrossNaturalJoin(const TTableConnectionData::value_type& _pData) const
 {
-    OQueryTableConnectionData* pQueryData = static_cast<OQueryTableConnectionData*>(_pData.get());
-    return pQueryData && (pQueryData->GetJoinType() == CROSS_JOIN);
+	OQueryTableConnectionData* pQueryData = static_cast<OQueryTableConnectionData*>(_pData.get());
+	return pQueryData && (pQueryData->GetJoinType() == CROSS_JOIN);
 }
 // -----------------------------------------------------------------------------
+
+/* vim: set noet sw=4 ts=4: */

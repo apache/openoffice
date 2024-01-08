@@ -54,8 +54,8 @@ extern "C" UINT __stdcall RebuildShellIconCache(MSIHANDLE)
 	}
 
 	HKEY	hKey;
-	DWORD	dwDispostion;
-	LONG	lError = RegCreateKeyEx( HKEY_CURRENT_USER, TEXT("Control Panel\\Desktop\\WindowMetrics"), 0, NULL, REG_OPTION_VOLATILE, KEY_SET_VALUE | KEY_QUERY_VALUE, NULL, &hKey, &dwDispostion );
+	DWORD	dwDisposition;
+	LONG	lError = RegCreateKeyEx( HKEY_CURRENT_USER, TEXT("Control Panel\\Desktop\\WindowMetrics"), 0, NULL, REG_OPTION_VOLATILE, KEY_SET_VALUE | KEY_QUERY_VALUE, NULL, &hKey, &dwDisposition );
 
 	if ( ERROR_SUCCESS == lError )
 	{

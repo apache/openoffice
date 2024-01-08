@@ -2113,7 +2113,7 @@ void SdrTableObj::EndTextEdit(SdrOutliner& rOutl)
 			if(nParaAnz != 0)
 			{
 				// create new text object
-				pNewText = rOutl.CreateParaObject( 0, (sal_uInt16)nParaAnz );
+				pNewText = rOutl.CreateParaObject( 0, nParaAnz );
 			}
 		}
 		SetOutlinerParaObject(pNewText);

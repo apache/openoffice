@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,19 +9,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-
-
 
 <helpdocument version="1.0">
 <meta>
@@ -30,15 +27,12 @@
 <title id="tit" xml-lang="en-US">Brackets</title>
 <filename>/text/smath/01/03090500.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2005-07-12T16:31:20">UFI: added text to fix #i29948#
-dedr: reviewed</lastedited>
-</history>
+<comment>added text to fix #i29948#</comment>
 </meta>
 <body>
 <section id="klammern">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153153"><bookmark_value>brackets; in $[officename] Math</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153153">
+<bookmark_value>brackets; in $[officename] Math</bookmark_value>
 <bookmark_value>brackets; round (Math)</bookmark_value>
 <bookmark_value>parentheses (Math)</bookmark_value>
 <bookmark_value>brackets; square (Math)</bookmark_value>
@@ -75,7 +69,7 @@ dedr: reviewed</lastedited>
 <paragraph role="paragraph" id="par_id3147258" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SMA_BRACKETS_CAT">You can choose among various bracket types to structure a <emph>$[officename] Math</emph> formula. Bracket types are displayed in the lower part of the Elements window.</ahelp> These brackets are also listed in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window. All brackets that are not contained in the Elements window or in the context menu can be typed manually in the <emph>Commands</emph> window.</paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/smath/00/00000004.xhp#astofm"/>
+<embed href="text/smath/00/00000004.xhp#astofm"/>
 </section>
 <paragraph role="paragraph" id="par_id3154264" xml-lang="en-US" l10n="U" oldref="3">The following is a complete list of all available bracket types. The icon next to the bracket type indicates that it can be accessed through the Elements window (menu View - Elements) or through the context menu of the <emph>Commands</emph> window.</paragraph>
 <paragraph role="heading" id="hd_id3154277" xml-lang="en-US" level="3" l10n="U" oldref="4">Bracket types</paragraph>
@@ -84,7 +78,7 @@ dedr: reviewed</lastedited>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN10084" xml-lang="en-US" l10n="F">
 <image id="img_id3149801" src="starmath/res/al21801.png" width="0.25inch" height="0.25inch"><alt id="alt_id3149801" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRPARENTX" id="bm_id3153536" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -93,13 +87,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3150971">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN100BF" xml-lang="en-US" l10n="F">
 <image id="img_id3158440" src="starmath/res/al21802.png" width="0.25inch" height="0.25inch"><alt id="alt_id3158440" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRBRACKETX" id="bm_id3151309" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -108,13 +101,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3149696">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN100F8" xml-lang="en-US" l10n="F">
 <image id="img_id3146923" src="starmath/res/al21823.png" width="0.25inch" height="0.25inch"><alt id="alt_id3146923" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRDBRACKETX" id="bm_id3151331" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -123,13 +115,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3149095">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN10131" xml-lang="en-US" l10n="F">
 <image id="img_id3149815" src="starmath/res/al21804.png" width="0.25inch" height="0.25inch"><alt id="alt_id3149815" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRBRACEX" id="bm_id3149790" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -138,13 +129,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3149035">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN1016C" xml-lang="en-US" l10n="F">
 <image id="img_id3148736" src="starmath/res/al21805.png" width="0.25inch" height="0.25inch"><alt id="alt_id3148736" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRLINEX" id="bm_id3147327" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -153,13 +143,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3147130">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN101A5" xml-lang="en-US" l10n="F">
 <image id="img_id3153350" src="starmath/res/al21806.png" width="0.25inch" height="0.25inch"><alt id="alt_id3153350" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRDLINEX" id="bm_id3151029" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -168,13 +157,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3148755">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN101DE" xml-lang="en-US" l10n="F">
 <image id="img_id3155118" src="starmath/res/al21803.png" width="0.25inch" height="0.25inch"><alt id="alt_id3155118" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRANGLEX" id="bm_id3147305" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -183,13 +171,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3151385">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN10217" xml-lang="en-US" l10n="F">
 <image id="img_id3155867" src="starmath/res/al21821.png" width="0.25inch" height="0.25inch"><alt id="alt_id3155867" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LMRANGLEXY" id="bm_id3150696" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -198,13 +185,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3147503">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN10253" xml-lang="en-US" l10n="F">
 <image id="img_id3149561" src="starmath/res/al21808.png" width="0.25inch" height="0.25inch"><alt id="alt_id3149561" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRGROUPX" id="bm_id3146911" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -213,13 +199,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3156223">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN1028E" xml-lang="en-US" l10n="F">
 <image id="img_id3147733" src="starmath/res/al21809.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3147733" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SLRPARENTX" id="bm_id3147120" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -228,13 +213,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3147465">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN102CC" xml-lang="en-US" l10n="F">
 <image id="img_id3148852" src="starmath/res/al21810.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3148852" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SLRBRACKETX" id="bm_id3155560" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -243,13 +227,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3154787">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN10307" xml-lang="en-US" l10n="F">
 <image id="img_id3153794" src="starmath/res/al21824.png" width="0.25inch" height="0.25inch"><alt id="alt_id3153794" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SLRDBRACKETX" id="bm_id3154579" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -258,13 +241,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3153304">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN10342" xml-lang="en-US" l10n="F">
 <image id="img_id3153972" src="starmath/res/al21812.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3153972" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SLRBRACEX" id="bm_id3145343" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -273,13 +255,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3150454">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN1037E" xml-lang="en-US" l10n="F">
 <image id="img_id3155598" src="starmath/res/al21813.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3155598" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SLRLINEX" id="bm_id3150915" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -288,13 +269,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3155085">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN103B7" xml-lang="en-US" l10n="F">
 <image id="img_id3153223" src="starmath/res/al21814.png" width="0.25inch" height="0.25inch"><alt id="alt_id3153223" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SLRDLINEX" id="bm_id3154338" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -303,13 +283,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3148793">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN103F0" xml-lang="en-US" l10n="F">
 <image id="img_id3150026" src="starmath/res/al21811.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3150026" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SLRANGLEX" id="bm_id3155108" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -318,13 +297,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3147244">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN10429" xml-lang="en-US" l10n="F">
 <image id="img_id3154235" src="starmath/res/al21822.png" width="0.25inch" height="0.25inch"><alt id="alt_id3154235" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SLMRANGLEXY" id="bm_id3153130" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -333,13 +311,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3148818">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN10464" xml-lang="en-US" l10n="F">
 <image id="img_id3154349" src="starmath/res/al21825.png" width="0.25inch" height="0.25inch"><alt id="alt_id3154349" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XOVERBRACEY" id="bm_id3155945" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -348,13 +325,12 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <table id="tbl_id3147389">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_idN104A0" xml-lang="en-US" l10n="F">
 <image id="img_id3149646" src="starmath/res/al21826.png" width="0.25inch" height="0.25inch"><alt id="alt_id3149646" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XUNDERBRACEY" id="bm_id3150664" localize="false"/>
 </tablecell>
 <tablecell colspan="" rowspan="">
@@ -363,7 +339,6 @@ dedr: reviewed</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRFLOORX" id="bm_id3149965" localize="false"/>
 <paragraph role="paragraph" id="par_id3149954" xml-lang="en-US" l10n="U" oldref="27"><ahelp hid="HID_SMA_LRFLOORX">To insert floor brackets, type <emph>lfloor&lt;?&gt;rfloor</emph> directly in the <emph>Commands</emph> window.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LRCEILX" id="bm_id3150604" localize="false"/>

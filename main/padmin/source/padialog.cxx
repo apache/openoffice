@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,9 +86,9 @@ PADialog::PADialog( Window* pParent, sal_Bool /*bAdmin*/ ) :
 		m_aCommand( this, PaResId( RID_PA_TXT_COMMAND_STRING ) ),
 		m_aCommentTxt( this, PaResId( RID_PA_TXT_COMMENT ) ),
 		m_aComment( this, PaResId( RID_PA_TXT_COMMENT_STRING ) ),
-        m_aCUPSFL( this, PaResId( RID_PA_FL_CUPSUSAGE ) ),
-        m_aCUPSCB( this, PaResId( RID_PA_CB_CUPSUSAGE ) ),
-        m_aSepButtonFL( this, PaResId( RID_PA_FL_SEPBUTTON ) ),
+		m_aCUPSFL( this, PaResId( RID_PA_FL_CUPSUSAGE ) ),
+		m_aCUPSCB( this, PaResId( RID_PA_CB_CUPSUSAGE ) ),
+		m_aSepButtonFL( this, PaResId( RID_PA_FL_SEPBUTTON ) ),
 		m_aAddPB( this, PaResId( RID_PA_BTN_ADD ) ),
 		m_aFontsPB( this, PaResId( RID_PA_BTN_FONTS ) ),
 		m_aCancelButton( this, PaResId( RID_PA_BTN_CANCEL ) ),
@@ -97,32 +97,32 @@ PADialog::PADialog( Window* pParent, sal_Bool /*bAdmin*/ ) :
 		m_rPIManager( PrinterInfoManager::get() )
 {
 	FreeResource();
-    updateSettings();
+	updateSettings();
 	Init();
 }
 
 void PADialog::updateSettings()
 {
-    if( ! GetSettings().GetStyleSettings().GetHighContrastMode() )
-    {
-        m_aPrinterImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_PRINTER ) ) );
-        m_aFaxImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_FAX ) ) );
-        m_aPdfImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_PDF ) ) );
-    }
-    else
-    {
-        m_aPrinterImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_PRINTER_HC ) ) );
-        m_aFaxImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_FAX_HC ) ) );
-        m_aPdfImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_PDF_HC ) ) );
-    }
+	if( ! GetSettings().GetStyleSettings().GetHighContrastMode() )
+	{
+		m_aPrinterImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_PRINTER ) ) );
+		m_aFaxImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_FAX ) ) );
+		m_aPdfImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_PDF ) ) );
+	}
+	else
+	{
+		m_aPrinterImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_PRINTER_HC ) ) );
+		m_aFaxImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_FAX_HC ) ) );
+		m_aPdfImg = Image( BitmapEx( PaResId( RID_BMP_SMALL_PDF_HC ) ) );
+	}
 }
 
 void PADialog::Init()
 {
-    // #i79787# initially ensure printer discovery has ended
-    m_rPIManager.checkPrintersChanged( true );
-    m_aCUPSCB.Check( m_rPIManager.isCUPSDisabled() );
-    
+	// #i79787# initially ensure printer discovery has ended
+	m_rPIManager.checkPrintersChanged( true );
+	m_aCUPSCB.Check( m_rPIManager.isCUPSDisabled() );
+
 	UpdateDevice();
 	UpdateText();
 
@@ -138,30 +138,30 @@ void PADialog::Init()
 	m_aFontsPB.SetClickHdl( LINK( this, PADialog, ClickBtnHdl ) );
 	m_aAddPB.SetClickHdl( LINK( this, PADialog, ClickBtnHdl ) );
 	m_aDevicesLB.setDelPressedLink( LINK( this, PADialog, DelPressedHdl ) );
-    m_aCUPSCB.SetClickHdl( LINK( this, PADialog, ClickBtnHdl ) );
+	m_aCUPSCB.SetClickHdl( LINK( this, PADialog, ClickBtnHdl ) );
 
 	::psp::PrintFontManager& rFontManager( ::psp::PrintFontManager::get() );
 	if( ! rFontManager.checkImportPossible() )
 		m_aFontsPB.Enable( sal_False );
-    if( rFontManager.hasFontconfig() )
-    {
-        m_aFontsPB.Enable( sal_False );
-        m_aFontsPB.Show( sal_False );
-    }
-    
-    // at this point no actual changes will be  written
-    // but the write will have checked whether any writeable config exists
-    if( ! m_rPIManager.writePrinterConfig() )
-    {
-        m_aAddPB.Enable( sal_False );
-        m_aRemPB.Enable( sal_False );
-        m_aConfPB.Enable( sal_False );
-        m_aRenamePB.Enable( sal_False );
-        m_aStdPB.Enable( sal_False );
-        m_aCUPSCB.Enable( sal_False );
-        ErrorBox aBox( GetParent(), WB_OK | WB_DEF_OK, String( PaResId( RID_ERR_NOWRITE ) ) );
-        aBox.Execute();
-    }
+	if( rFontManager.hasFontconfig() )
+	{
+		m_aFontsPB.Enable( sal_False );
+		m_aFontsPB.Show( sal_False );
+	}
+
+	// at this point no actual changes will be written
+	// but the write will have checked whether any writable config exists
+	if( ! m_rPIManager.writePrinterConfig() )
+	{
+		m_aAddPB.Enable( sal_False );
+		m_aRemPB.Enable( sal_False );
+		m_aConfPB.Enable( sal_False );
+		m_aRenamePB.Enable( sal_False );
+		m_aStdPB.Enable( sal_False );
+		m_aCUPSCB.Enable( sal_False );
+		ErrorBox aBox( GetParent(), WB_OK | WB_DEF_OK, String( PaResId( RID_ERR_NOWRITE ) ) );
+		aBox.Execute();
+	}
 }
 
 PADialog::~PADialog()
@@ -172,31 +172,31 @@ PADialog::~PADialog()
 
 long PADialog::Notify( NotifyEvent& rEv )
 {
-    if( IsVisible() &&
-        (rEv.GetType() == EVENT_GETFOCUS || rEv.GetType() == EVENT_LOSEFOCUS )
-      )
-    {
-        if( m_rPIManager.checkPrintersChanged( true ) )
-        {
-            String aSelectEntry = m_aDevicesLB.GetSelectEntry();
-            UpdateDevice();
-            UpdateText();
-            m_aDevicesLB.SelectEntry( aSelectEntry );
-        }
-    }
-    return ModalDialog::Notify( rEv );
+	if( IsVisible() &&
+		(rEv.GetType() == EVENT_GETFOCUS || rEv.GetType() == EVENT_LOSEFOCUS )
+	  )
+	{
+		if( m_rPIManager.checkPrintersChanged( true ) )
+		{
+			String aSelectEntry = m_aDevicesLB.GetSelectEntry();
+			UpdateDevice();
+			UpdateText();
+			m_aDevicesLB.SelectEntry( aSelectEntry );
+		}
+	}
+	return ModalDialog::Notify( rEv );
 }
 
 void PADialog::DataChanged( const DataChangedEvent& rEv )
 {
-    ModalDialog::DataChanged( rEv );
-    if( (rEv.GetType() == DATACHANGED_SETTINGS) &&
-        (rEv.GetFlags() & SETTINGS_STYLE) )
-    {
-        updateSettings();
-        // push the new images into the listbox
-        UpdateDevice();
-    }
+	ModalDialog::DataChanged( rEv );
+	if( (rEv.GetType() == DATACHANGED_SETTINGS) &&
+		(rEv.GetFlags() & SETTINGS_STYLE) )
+	{
+		updateSettings();
+		// push the new images into the listbox
+		UpdateDevice();
+	}
 }
 
 String PADialog::getSelectedDevice()
@@ -232,12 +232,12 @@ IMPL_LINK( PADialog, ClickBtnHdl, PushButton*, pButton )
 		FontNameDlg aDialog( this );
 		aDialog.Execute();
 	}
-    else if( static_cast<Button*>(pButton) == &m_aCUPSCB )
-    {
-        m_rPIManager.setCUPSDisabled( m_aCUPSCB.IsChecked() );
-            UpdateDevice();
-            UpdateText();
-    }
+	else if( static_cast<Button*>(pButton) == &m_aCUPSCB )
+	{
+		m_rPIManager.setCUPSDisabled( m_aCUPSCB.IsChecked() );
+			UpdateDevice();
+			UpdateText();
+	}
 
 	return 0;
 }
@@ -266,39 +266,39 @@ IMPL_LINK( PADialog, SelectHdl, ListBox*, pListBox )
 
 void PADialog::UpdateDefPrt()
 {
-    m_rPIManager.setDefaultPrinter( getSelectedDevice() );
+	m_rPIManager.setDefaultPrinter( getSelectedDevice() );
 
-    UpdateDevice();
-    UpdateText();
+	UpdateDevice();
+	UpdateText();
 
-    if( m_aRemPB.HasFocus() )
-        m_aDevicesLB.GetFocus();
-    m_aRemPB.Enable( sal_False );
+	if( m_aRemPB.HasFocus() )
+		m_aDevicesLB.GetFocus();
+	m_aRemPB.Enable( sal_False );
 }
 
 void PADialog::UpdateText()
 {
-    OUString aDev( getSelectedDevice() );
-    if( aDev.getLength() )
-    {
-        const PrinterInfo& rInfo = m_rPIManager.getPrinterInfo( aDev );
-        String aDriver( rInfo.m_aPrinterName );
-        aDriver.AppendAscii( " (" );
-        aDriver += String( rInfo.m_aDriverName );
-        aDriver.Append( ')' );
-        m_aDriver.SetText( aDriver );
-        m_aCommand.SetText( rInfo.m_aCommand );
-        m_aComment.SetText( rInfo.m_aComment );
-        m_aLocation.SetText( rInfo.m_aLocation );
-    }
-    else // nothing selected
-    {
-        String aEmpty;
-        m_aDriver.SetText( aEmpty );
-        m_aCommand.SetText( aEmpty );
-        m_aComment.SetText( aEmpty );
-        m_aLocation.SetText( aEmpty );
-    }
+	OUString aDev( getSelectedDevice() );
+	if( aDev.getLength() )
+	{
+		const PrinterInfo& rInfo = m_rPIManager.getPrinterInfo( aDev );
+		String aDriver( rInfo.m_aPrinterName );
+		aDriver.AppendAscii( " (" );
+		aDriver += String( rInfo.m_aDriverName );
+		aDriver.Append( ')' );
+		m_aDriver.SetText( aDriver );
+		m_aCommand.SetText( rInfo.m_aCommand );
+		m_aComment.SetText( rInfo.m_aComment );
+		m_aLocation.SetText( rInfo.m_aLocation );
+	}
+	else // nothing selected
+	{
+		String aEmpty;
+		m_aDriver.SetText( aEmpty );
+		m_aCommand.SetText( aEmpty );
+		m_aComment.SetText( aEmpty );
+		m_aLocation.SetText( aEmpty );
+	}
 }
 
 static Point project( const Point& rPoint )
@@ -376,38 +376,38 @@ static Color approachColor( const Color& rFrom, const Color& rTo )
 class SpaPrinterController : public vcl::PrinterController
 {
 public:
-    SpaPrinterController( const boost::shared_ptr<Printer>& i_pPrinter )
-    : vcl::PrinterController( i_pPrinter )
-    {}
-    virtual ~SpaPrinterController()
-    {}
-    
-    virtual int getPageCount() const { return 1; }
-    virtual Sequence< PropertyValue > getPageParameters( int i_nPage ) const;
-    virtual void printPage( int i_nPage ) const;
-    virtual void jobFinished( com::sun::star::view::PrintableState );
+	SpaPrinterController( const boost::shared_ptr<Printer>& i_pPrinter )
+	: vcl::PrinterController( i_pPrinter )
+	{}
+	virtual ~SpaPrinterController()
+	{}
+
+	virtual int getPageCount() const { return 1; }
+	virtual Sequence< PropertyValue > getPageParameters( int i_nPage ) const;
+	virtual void printPage( int i_nPage ) const;
+	virtual void jobFinished( com::sun::star::view::PrintableState );
 };
 
 Sequence< PropertyValue > SpaPrinterController::getPageParameters( int ) const
 {
-    Sequence< PropertyValue > aRet( 1 );
-    
-    Size aPageSize( getPrinter()->GetPaperSizePixel() );
-    aPageSize = getPrinter()->PixelToLogic( aPageSize, MapMode( MAP_100TH_MM ) );
-    
-    awt::Size aSize;
-    aSize.Width = aPageSize.Width();
-    aSize.Height = aPageSize.Height();
-    aRet[0].Value = makeAny(aSize);
-    
-    return aRet;
+	Sequence< PropertyValue > aRet( 1 );
+
+	Size aPageSize( getPrinter()->GetPaperSizePixel() );
+	aPageSize = getPrinter()->PixelToLogic( aPageSize, MapMode( MAP_100TH_MM ) );
+
+	awt::Size aSize;
+	aSize.Width = aPageSize.Width();
+	aSize.Height = aPageSize.Height();
+	aRet[0].Value = makeAny(aSize);
+
+	return aRet;
 }
 
 void SpaPrinterController::printPage( int ) const
 {
-    const double DELTA = 5.0;
-    
-    boost::shared_ptr<Printer> pPrinter( getPrinter() );
+	const double DELTA = 5.0;
+
+	boost::shared_ptr<Printer> pPrinter( getPrinter() );
 
 	PrinterInfo aInfo( psp::PrinterInfoManager::get().getPrinterInfo( pPrinter->GetName() ) );
 	const PPDParser* pPrintParser = aInfo.m_pParser;
@@ -418,9 +418,9 @@ void SpaPrinterController::printPage( int ) const
 
 	pPrinter->SetMapMode( aMapMode );
 
-    Any aRet = utl::ConfigManager::GetDirectConfigProperty( utl::ConfigManager::PRODUCTNAME );
-    OUString aJobName;
-    aRet >>= aJobName;
+	Any aRet = utl::ConfigManager::GetDirectConfigProperty( utl::ConfigManager::PRODUCTNAME );
+	OUString aJobName;
+	aRet >>= aJobName;
 
 	aJobName = aJobName + OUString( RTL_CONSTASCII_USTRINGPARAM( " Testpage" ) );
 
@@ -449,49 +449,49 @@ void SpaPrinterController::printPage( int ) const
 	long nWidth = 0, nMaxWidth = 0;
 	String aToken;
 
-    static const struct
-    {
-            const char* const pDirect;
-            sal_uInt16 nResId;
-    } aResIds[] =
-        {
-            { NULL, RID_TXT_TESTPAGE_NAME },
-            { NULL, RID_TXT_TESTPAGE_MODEL },
-            { "PPD", 0 },
-            { NULL, RID_TXT_TESTPAGE_QUEUE },
-            { NULL, RID_TXT_TESTPAGE_COMMENT },
-            { NULL, RID_TXT_TESTPAGE_DATE },
-            { NULL, RID_TXT_TESTPAGE_TIME }
-        };
+	static const struct
+	{
+			const char* const pDirect;
+			sal_uInt16 nResId;
+	} aResIds[] =
+		{
+			{ NULL, RID_TXT_TESTPAGE_NAME },
+			{ NULL, RID_TXT_TESTPAGE_MODEL },
+			{ "PPD", 0 },
+			{ NULL, RID_TXT_TESTPAGE_QUEUE },
+			{ NULL, RID_TXT_TESTPAGE_COMMENT },
+			{ NULL, RID_TXT_TESTPAGE_DATE },
+			{ NULL, RID_TXT_TESTPAGE_TIME }
+		};
 
-    for( unsigned int i = 0; i < sizeof(aResIds)/sizeof(aResIds[0]); i++ )
-    {
-        if( aResIds[i].pDirect )
-            aToken = String::CreateFromAscii( aResIds[i].pDirect );
-        else
-            aToken = String( PaResId( aResIds[i].nResId ) );
-        nMaxWidth = ( nWidth = pPrinter->GetTextWidth( aToken ) ) > nMaxWidth ? nWidth : nMaxWidth;
-        aPrintText.append( aToken );
-        aPrintText.append( (sal_Unicode)'\n' );
-    };
+	for( unsigned int i = 0; i < sizeof(aResIds)/sizeof(aResIds[0]); i++ )
+	{
+		if( aResIds[i].pDirect )
+			aToken = String::CreateFromAscii( aResIds[i].pDirect );
+		else
+			aToken = String( PaResId( aResIds[i].nResId ) );
+		nMaxWidth = ( nWidth = pPrinter->GetTextWidth( aToken ) ) > nMaxWidth ? nWidth : nMaxWidth;
+		aPrintText.append( aToken );
+		aPrintText.append( (sal_Unicode)'\n' );
+	};
 
 	pPrinter->DrawText( Rectangle( Point( 1000, 1000 ),
 									Size( aPaperSize.Width() - 2000,
 										  aPaperSize.Height() - 4000 ) ),
-                          aPrintText.makeStringAndClear(),
-                          TEXT_DRAW_MULTILINE );
+						aPrintText.makeStringAndClear(),
+						TEXT_DRAW_MULTILINE );
 
-    AllSettings aSettings( Application::GetSettings() );
-    const LocaleDataWrapper& rLocaleWrapper( aSettings.GetLocaleDataWrapper() );
+	AllSettings aSettings( Application::GetSettings() );
+	const LocaleDataWrapper& rLocaleWrapper( aSettings.GetLocaleDataWrapper() );
 
 	aPrintText.appendAscii( ": " );
 	aPrintText.append( pPrinter->GetName() );
 	aPrintText.appendAscii( "\n: " );
-    if( pPrintParser )
-        aPrintText.append( pPrintParser->getPrinterName() );
+	if( pPrintParser )
+		aPrintText.append( pPrintParser->getPrinterName() );
 	aPrintText.appendAscii( "\n: " );
 	INetURLObject aDriverPath( pPrintParser ? pPrintParser->getFilename() : String( RTL_CONSTASCII_USTRINGPARAM( "<undef>" ) ),
-                               INET_PROT_FILE, INetURLObject::ENCODE_ALL );
+							   INET_PROT_FILE, INetURLObject::ENCODE_ALL );
 	aPrintText.append( aDriverPath.GetName() );
 	aPrintText.appendAscii( "\n: " );
 	aPrintText.append( aInfo.m_aCommand );
@@ -598,7 +598,7 @@ void PADialog::PrintTestPage()
 {
 	String sPrinter( getSelectedDevice() );
 
-    boost::shared_ptr<Printer> pPrinter( new Printer( sPrinter ) );
+	boost::shared_ptr<Printer> pPrinter( new Printer( sPrinter ) );
 
 	if( pPrinter->GetName() != sPrinter )
 	{
@@ -611,11 +611,11 @@ void PADialog::PrintTestPage()
 		return;
 	}
 
-    boost::shared_ptr<vcl::PrinterController> pController( new SpaPrinterController( pPrinter ) );
-    JobSetup aJobSetup( pPrinter->GetJobSetup() );
-    aJobSetup.SetValue( String( RTL_CONSTASCII_USTRINGPARAM( "IsQuickJob" ) ),
-                        String( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
-    Printer::PrintJob( pController, aJobSetup );
+	boost::shared_ptr<vcl::PrinterController> pController( new SpaPrinterController( pPrinter ) );
+	JobSetup aJobSetup( pPrinter->GetJobSetup() );
+	aJobSetup.SetValue( String( RTL_CONSTASCII_USTRINGPARAM( "IsQuickJob" ) ),
+						String( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
+	Printer::PrintJob( pController, aJobSetup );
 }
 
 void PADialog::AddDevice()
@@ -685,7 +685,7 @@ void PADialog::RenameDevice()
 	if( ! aPrinter.Len() )
 		return;
 
-    String aTmpString( PaResId( RID_QRY_PRTNAME ) );
+	String aTmpString( PaResId( RID_QRY_PRTNAME ) );
 	QueryString aQuery( this,
 						aTmpString,
 						aPrinter );
@@ -698,7 +698,7 @@ void PADialog::RenameDevice()
 		aInfo.m_aPrinterName = aPrinter;
 		if( m_rPIManager.addPrinter( aPrinter, aInfo.m_aDriverName ) )
 		{
-            bool bWasDefault = m_rPIManager.getDefaultPrinter() == aOldPrinter;
+			bool bWasDefault = m_rPIManager.getDefaultPrinter() == aOldPrinter;
 			m_aPrinters.push_back( aPrinter );
 			if( m_rPIManager.removePrinter( aOldPrinter ) )
 				m_aPrinters.remove( aOldPrinter );
@@ -716,31 +716,31 @@ void PADialog::RenameDevice()
 void PADialog::UpdateDevice()
 {
 	m_aDevicesLB.Clear();
-    
+
 	m_rPIManager.listPrinters( m_aPrinters );
 	::std::list< OUString >::iterator it;
 	for( it = m_aPrinters.begin(); it != m_aPrinters.end(); ++it )
 	{
-        const PrinterInfo& rInfo( m_rPIManager.getPrinterInfo( *it ) );
-        sal_Int32 nIndex = 0;
-        bool bAutoQueue = false;
-        bool bFax = false;
-        bool bPdf = false;
-        while( nIndex != -1 && ! bAutoQueue )
-        {
-            OUString aToken( rInfo.m_aFeatures.getToken( 0, ',', nIndex ) );
-            if( aToken.getLength() )
-            {
-                if( aToken.compareToAscii( "autoqueue" ) == 0 )
-                    bAutoQueue = true;
-                else if( aToken.compareToAscii( "pdf=", 4 ) == 0 )
-                    bPdf = true;
-                else if( aToken.compareToAscii( "fax", 3 ) == 0 )
-                    bFax = true;
-            }
-        }
-        if( bAutoQueue )
-            continue;
+		const PrinterInfo& rInfo( m_rPIManager.getPrinterInfo( *it ) );
+		sal_Int32 nIndex = 0;
+		bool bAutoQueue = false;
+		bool bFax = false;
+		bool bPdf = false;
+		while( nIndex != -1 && ! bAutoQueue )
+		{
+			OUString aToken( rInfo.m_aFeatures.getToken( 0, ',', nIndex ) );
+			if( aToken.getLength() )
+			{
+				if( aToken.compareToAscii( "autoqueue" ) == 0 )
+					bAutoQueue = true;
+				else if( aToken.compareToAscii( "pdf=", 4 ) == 0 )
+					bPdf = true;
+				else if( aToken.compareToAscii( "fax", 3 ) == 0 )
+					bFax = true;
+			}
+		}
+		if( bAutoQueue )
+			continue;
 
 		String aEntry( *it );
 		if( *it == m_rPIManager.getDefaultPrinter() )
@@ -750,10 +750,10 @@ void PADialog::UpdateDevice()
 			aEntry.AppendAscii( ")" );
 		}
 		int nPos =
-            m_aDevicesLB.InsertEntry( aEntry,
-                                      bFax ? m_aFaxImg :
-                                      bPdf ? m_aPdfImg : m_aPrinterImg
-                                      );
+			m_aDevicesLB.InsertEntry( aEntry,
+									  bFax ? m_aFaxImg :
+									  bPdf ? m_aPdfImg : m_aPrinterImg
+									);
 		m_aDevicesLB.SetEntryData( nPos, (void*)it->getLength() );
 		if( *it == m_rPIManager.getDefaultPrinter() )
 		{
@@ -763,3 +763,4 @@ void PADialog::UpdateDevice()
 	}
 }
 
+/* vim: set noet sw=4 ts=4: */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,14 +28,13 @@
 #include <math.h>
 
 #include <svx/svdundo.hxx>
-#include "svx/svdstr.hrc"   // Namen aus der Resource
-#include "svx/svdglob.hxx"  // StringCache
+#include "svx/svdstr.hrc" // Namen aus der Ressource
+#include "svx/svdglob.hxx" // StringCache
 #include <svx/svdpagv.hxx>
 #include <svx/svdglue.hxx>
 #include <svx/svdtrans.hxx>
 #include <svx/svdobj.hxx>
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void SdrGlueEditView::ImpClearVars()
 {
@@ -51,7 +50,6 @@ SdrGlueEditView::~SdrGlueEditView()
 {
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void SdrGlueEditView::ImpDoMarkedGluePoints(PGlueDoFunc pDoFunc, sal_Bool bConst, const void* p1, const void* p2, const void* p3, const void* p4, const void* p5)
 {
@@ -84,7 +82,7 @@ void SdrGlueEditView::ImpDoMarkedGluePoints(PGlueDoFunc pDoFunc, sal_Bool bConst
 						(*pDoFunc)(rGP,pObj,p1,p2,p3,p4,p5);
 					}
 				}
-				if (!bConst) 
+				if (!bConst)
 				{
 					pObj->SetChanged();
 					pObj->BroadcastObjectChange();
@@ -95,7 +93,6 @@ void SdrGlueEditView::ImpDoMarkedGluePoints(PGlueDoFunc pDoFunc, sal_Bool bConst
 	if (!bConst && nMarkAnz!=0) pMod->SetChanged();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 static void ImpGetEscDir(SdrGluePoint& rGP, const SdrObject* /*pObj*/, const void* pbFirst, const void* pnThisEsc, const void* pnRet, const void*, const void*)
 {
@@ -134,7 +131,6 @@ void SdrGlueEditView::SetMarkedGluePointsEscDir(sal_uInt16 nThisEsc, sal_Bool bO
 	EndUndo();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 static void ImpGetPercent(SdrGluePoint& rGP, const SdrObject* /*pObj*/, const void* pbFirst, const void* pnRet, const void*, const void*, const void*)
 {
@@ -171,7 +167,6 @@ void SdrGlueEditView::SetMarkedGluePointsPercent(sal_Bool bOn)
 	EndUndo();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 static void ImpGetAlign(SdrGluePoint& rGP, const SdrObject* /*pObj*/, const void* pbFirst, const void* pbDontCare, const void* pbVert, const void* pnRet, const void*)
 {
@@ -227,7 +222,6 @@ void SdrGlueEditView::SetMarkedGluePointsAlign(sal_Bool bVert, sal_uInt16 nAlign
 	EndUndo();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 sal_Bool SdrGlueEditView::IsDeleteMarkedGluePointsPossible() const
 {
@@ -278,7 +272,6 @@ void SdrGlueEditView::DeleteMarkedGluePoints()
 		pMod->SetChanged();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void SdrGlueEditView::ImpCopyMarkedGluePoints()
 {
@@ -306,10 +299,10 @@ void SdrGlueEditView::ImpCopyMarkedGluePoints()
 				sal_uInt16 nGlueIdx=pGPL->FindGluePoint(nPtId);
 				if (nGlueIdx!=SDRGLUEPOINT_NOTFOUND)
 				{
-					SdrGluePoint aNewGP((*pGPL)[nGlueIdx]);  // GluePoint klonen
-					sal_uInt16 nNewIdx=pGPL->Insert(aNewGP);     // und einfuegen
-					sal_uInt16 nNewId=(*pGPL)[nNewIdx].GetId();  // Id des neuen GluePoints ermitteln
-					pPts->Replace(nNewId,nPtNum);            // und diesen markieren (anstelle des alten)
+					SdrGluePoint aNewGP((*pGPL)[nGlueIdx]); // Clone GluePoint
+					sal_uInt16 nNewIdx=pGPL->Insert(aNewGP); // and insert
+					sal_uInt16 nNewId=(*pGPL)[nNewIdx].GetId(); // Id des neuen GluePoints ermitteln
+					pPts->Replace(nNewId,nPtNum); // und diesen markieren (anstelle des alten)
 				}
 			}
 		}
@@ -321,7 +314,6 @@ void SdrGlueEditView::ImpCopyMarkedGluePoints()
 		pMod->SetChanged();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void SdrGlueEditView::ImpTransformMarkedGluePoints(PGlueTrFunc pTrFunc, const void* p1, const void* p2, const void* p3, const void* p4, const void* p5)
 {
@@ -356,7 +348,6 @@ void SdrGlueEditView::ImpTransformMarkedGluePoints(PGlueTrFunc pTrFunc, const vo
 	if (nMarkAnz!=0) pMod->SetChanged();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 static void ImpMove(Point& rPt, const void* p1, const void* /*p2*/, const void* /*p3*/, const void* /*p4*/, const void* /*p5*/)
 {
@@ -376,7 +367,6 @@ void SdrGlueEditView::MoveMarkedGluePoints(const Size& rSiz, bool bCopy)
 	AdjustMarkHdl();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 static void ImpResize(Point& rPt, const void* p1, const void* p2, const void* p3, const void* /*p4*/, const void* /*p5*/)
 {
@@ -395,7 +385,6 @@ void SdrGlueEditView::ResizeMarkedGluePoints(const Point& rRef, const Fraction& 
 	AdjustMarkHdl();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 static void ImpRotate(Point& rPt, const void* p1, const void* /*p2*/, const void* p3, const void* p4, const void* /*p5*/)
 {
@@ -416,3 +405,4 @@ void SdrGlueEditView::RotateMarkedGluePoints(const Point& rRef, long nWink, bool
 	AdjustMarkHdl();
 }
 
+/* vim: set noet sw=4 ts=4: */

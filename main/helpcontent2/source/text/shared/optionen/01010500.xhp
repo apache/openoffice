@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedoptionen01010500xml" indexer="include">
 <title id="tit" xml-lang="en-US">Colors</title>
@@ -34,7 +31,8 @@
 <body>
 <section id="farben">
 <bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTIONS_COLOR" id="bm_id3151211" localize="false"/>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155132"><bookmark_value>colors; models</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155132">
+<bookmark_value>colors; models</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3150543" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010500.xhp" name="Colors">Colors</link></paragraph>
 <paragraph role="paragraph" id="par_id3153104" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_OPTIONS_COLOR">Allows you to select a color from a color table, edit an existing color, or define new colors.</ahelp></paragraph>
@@ -83,7 +81,6 @@
 <bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_COLOR:BTN_WORK_ON" id="bm_id3153767" localize="false"/>
 <paragraph role="heading" id="hd_id3154754" xml-lang="en-US" level="2" l10n="U" oldref="31"><link href="text/shared/optionen/01010501.xhp" name="Edit">Edit</link></paragraph>
 <paragraph role="paragraph" id="par_id3141111" xml-lang="en-US" l10n="N"><ahelp hid=".">Opens the Color Picker. First highlight a color in the Color table. Then click Edit to open the Color Picker. Select a color in the Color Picker and click OK. The selected color replaces the color that is highlighted in the Color table.</ahelp></paragraph>
-
 <embed href="text/shared/00/00000001.xhp#loeschen"/>
 <bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_COLOR:BTN_LOAD" id="bm_id3145148" localize="false"/>
 <paragraph role="heading" id="hd_id3159267" xml-lang="en-US" level="2" l10n="U" oldref="33">Load Color List</paragraph>
@@ -93,6 +90,6 @@
 <paragraph role="heading" id="hd_id3147344" xml-lang="en-US" level="2" l10n="U" oldref="36">Save Color List</paragraph>
 <paragraph role="paragraph" id="par_id3163808" xml-lang="en-US" l10n="CHG" oldref="37"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_COLOR:BTN_SAVE">Opens the <emph>Save As</emph> dialog, which enables you to save the current color table under a specified name.</ahelp> If you do not choose this command, the current color table will be automatically saved as default and re-loaded the next time you start $[officename].</paragraph>
 <embed href="text/shared/00/00000004.xhp#sysichern"/>
-<paragraph role="note" id="par_id3154572" xml-lang="en-US" l10n="U" oldref="38">The <emph>Load color list</emph> and <emph>Save color list </emph>icons are visible only if you select the <emph>Colors</emph> tab with the <emph>Format - Area</emph> command.</paragraph>
+<paragraph role="note" id="par_id3154572" xml-lang="en-US" l10n="U" oldref="38">The <emph>Load color list</emph> and <emph>Save color list</emph> icons are visible only if you select the <emph>Colors</emph> tab with the <emph>Format - Area</emph> command.</paragraph>
 </body>
 </helpdocument>
