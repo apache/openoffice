@@ -33,7 +33,8 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id1441999">
 <bookmark_value>guides;display options (Impress/Draw)</bookmark_value>
 </bookmark>
-<bookmark xml-lang="en-US" branch="hid/.uno:SnapLinesMenu" id="bm_id2510147" localize="false"/><paragraph role="heading" id="par_idN10562" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/01/guides.xhp">Guides</link></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:SnapLinesMenu" id="bm_id2510147" localize="false"/>
+<paragraph role="heading" id="par_idN10562" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/01/guides.xhp">Guides</link></paragraph>
 <paragraph role="paragraph" id="par_id3146313" xml-lang="en-US" l10n="CHG" oldref="7"><ahelp hid=".">Specifies the display options for guides.</ahelp></paragraph>
 </section>
 <section id="howtoget">
@@ -42,7 +43,9 @@
 <paragraph role="heading" id="par_idN1057B" xml-lang="en-US" level="2" l10n="NEW">Display Guides</paragraph>
 <paragraph role="paragraph" id="par_idN1057F" xml-lang="en-US" l10n="NEW">Displays or hides guides that you can use to align objects on a page.</paragraph>
 <paragraph role="heading" id="par_idN10582" xml-lang="en-US" level="2" l10n="NEW">Snap to Guides</paragraph>
-<comment>changed in BetterDefaults_Gridhandling issue 112000</comment><paragraph role="paragraph" id="par_idN10586" xml-lang="en-US" l10n="CHG">Automatically aligns objects to vertical and horizontal guides. To override this feature, hold down the <switchinline select="sys"><caseinline select="MAC">Option key</caseinline><defaultinline>Alt key </defaultinline></switchinline>when you drag an object.<comment>UFI: test it! copied from shared\01\grid.xhp</comment></paragraph><comment>UFI: removed double help id</comment><paragraph role="heading" id="par_idN105C6" xml-lang="en-US" level="2" l10n="NEW">Guides to Front</paragraph>
+<comment>changed in BetterDefaults_Gridhandling issue 112000</comment>
+<paragraph role="paragraph" id="par_idN10586" xml-lang="en-US" l10n="CHG">Automatically aligns objects to vertical and horizontal guides. To override this feature, hold down the <switchinline select="sys"><caseinline select="MAC">Option key</caseinline><defaultinline>Alt key </defaultinline></switchinline>when you drag an object.<comment>UFI: test it! copied from shared\01\grid.xhp</comment></paragraph><comment>UFI: removed double help id</comment>
+<paragraph role="heading" id="par_idN105C6" xml-lang="en-US" level="2" l10n="NEW">Guides to Front</paragraph>
 <paragraph role="paragraph" id="par_idN105CA" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Displays the guides in front of the objects on the slide or page.</ahelp></paragraph>
 </body>
 </helpdocument>

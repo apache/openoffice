@@ -39,23 +39,31 @@
 <paragraph role="paragraph" id="par_id3152372" xml-lang="en-US" l10n="U" oldref="62">The following fields are possible in a table control: text, date, time and currency field, numeric field, pattern field, check box and combo box. In the case of combined date/time fields, two columns are created automatically.</paragraph>
 <paragraph role="paragraph" id="par_id3159194" xml-lang="en-US" l10n="U" oldref="125">The number of selected lines, if any are selected, is in parentheses after the total number of records.</paragraph>
 <paragraph role="paragraph" id="par_id3155616" xml-lang="en-US" l10n="U" oldref="52">To insert columns into the table control, click in the column heads and bring up the context menu. The following commands are available:</paragraph>
-<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_INSERTCOL" id="bm_id3147571" localize="false"/><paragraph role="heading" id="hd_id3150789" xml-lang="en-US" level="2" l10n="U" oldref="53">Insert Column</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_INSERTCOL" id="bm_id3147571" localize="false"/>
+<paragraph role="heading" id="hd_id3150789" xml-lang="en-US" level="2" l10n="U" oldref="53">Insert Column</paragraph>
 <paragraph role="paragraph" id="par_id3153750" xml-lang="en-US" l10n="U" oldref="54"><ahelp hid="SID_FM_INSERTCOL">Calls a submenu to select a data field to adopt it in the table control.</ahelp></paragraph>
 <paragraph role="paragraph" id="par_id3155552" xml-lang="en-US" l10n="U" oldref="59">Configure the table control using drag and drop: Open the data source browser and drag the desired fields out of the data source browser and on to the column heads of the table control. A pre-configured column is created.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_CHANGECOL" id="bm_id3145211" localize="false"/><paragraph role="heading" id="hd_id3149827" xml-lang="en-US" level="2" l10n="U" oldref="55">Replace with</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_CHANGECOL" id="bm_id3145211" localize="false"/>
+<paragraph role="heading" id="hd_id3149827" xml-lang="en-US" level="2" l10n="U" oldref="55">Replace with</paragraph>
 <paragraph role="paragraph" id="par_id3153345" xml-lang="en-US" l10n="U" oldref="56"><ahelp hid="SID_FM_CHANGECOL">Opens a submenu to select a data field to replace the data field selected in the table control.</ahelp></paragraph>
-<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_DELETECOL" id="bm_id3149095" localize="false"/><paragraph role="heading" id="hd_id3143267" xml-lang="en-US" level="2" l10n="U" oldref="57">Delete Column</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_DELETECOL" id="bm_id3149095" localize="false"/>
+<paragraph role="heading" id="hd_id3143267" xml-lang="en-US" level="2" l10n="U" oldref="57">Delete Column</paragraph>
 <paragraph role="paragraph" id="par_id3157958" xml-lang="en-US" l10n="U" oldref="58"><ahelp hid="SID_FM_DELETECOL">Deletes the currently selected column.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3147275" xml-lang="en-US" level="2" l10n="U" oldref="73">Column</paragraph>
 <paragraph role="paragraph" id="par_id3152996" xml-lang="en-US" l10n="U" oldref="74">Opens the properties dialog of the selected column.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_HIDECOL" id="bm_id3163802" localize="false"/><paragraph role="heading" id="hd_id3148539" xml-lang="en-US" level="2" l10n="U" oldref="79">Hide Columns</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_HIDECOL" id="bm_id3163802" localize="false"/>
+<paragraph role="heading" id="hd_id3148539" xml-lang="en-US" level="2" l10n="U" oldref="79">Hide Columns</paragraph>
 <paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="80"><ahelp hid="SID_FM_HIDECOL">Hides the selected column.</ahelp> Its properties are not changed.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_SHOWCOLS" id="bm_id3155135" localize="false"/><paragraph role="heading" id="hd_id3150771" xml-lang="en-US" level="2" l10n="U" oldref="81">Show columns</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_SHOWCOLS" id="bm_id3155135" localize="false"/>
+<paragraph role="heading" id="hd_id3150771" xml-lang="en-US" level="2" l10n="U" oldref="81">Show columns</paragraph>
 <paragraph role="paragraph" id="par_id3159400" xml-lang="en-US" l10n="U" oldref="82"><ahelp hid="SID_FM_SHOWCOLS">Calls a submenu where you can select the columns to show again.</ahelp> To show only one column, click the column name. You see only the first 16 hidden columns. If there are more hidden columns, choose the <emph>More</emph> command to call the <emph>Show Columns</emph> dialog.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_SHOWCOLS_MORE" id="bm_id3150669" localize="false"/><paragraph role="heading" id="hd_id3156193" xml-lang="en-US" level="3" l10n="U" oldref="83">More</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_SHOWCOLS_MORE" id="bm_id3150669" localize="false"/>
+<paragraph role="heading" id="hd_id3156193" xml-lang="en-US" level="3" l10n="U" oldref="83">More</paragraph>
 <paragraph role="paragraph" id="par_id3159269" xml-lang="en-US" l10n="U" oldref="84"><ahelp hid="SID_FM_SHOWCOLS_MORE">Calls the <emph>Show Columns</emph> dialog.</ahelp></paragraph>
-<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVX_DLG_SHOWGRIDCOLUMNS:1" id="bm_id3159148" localize="false"/><paragraph role="paragraph" id="par_id3149763" xml-lang="en-US" l10n="U" oldref="85"><ahelp hid="SVX:LISTBOX:RID_SVX_DLG_SHOWGRIDCOLUMNS:1">In the <emph>Show Columns</emph> dialog you can select the columns to be shown. Hold down the Shift or Ctrl (Mac: Command) key to select multiple entries.</ahelp></paragraph>
-<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_SHOWALLCOLS" id="bm_id3145119" localize="false"/><paragraph role="heading" id="hd_id3153561" xml-lang="en-US" level="3" l10n="U" oldref="86">All</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVX_DLG_SHOWGRIDCOLUMNS:1" id="bm_id3159148" localize="false"/>
+<paragraph role="paragraph" id="par_id3149763" xml-lang="en-US" l10n="U" oldref="85"><ahelp hid="SVX:LISTBOX:RID_SVX_DLG_SHOWGRIDCOLUMNS:1">In the <emph>Show Columns</emph> dialog you can select the columns to be shown. Hold down the Shift or Ctrl (Mac: Command) key to select multiple entries.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_FM_SHOWALLCOLS" id="bm_id3145119" localize="false"/>
+<paragraph role="heading" id="hd_id3153561" xml-lang="en-US" level="3" l10n="U" oldref="86">All</paragraph>
 <paragraph role="paragraph" id="par_id3150504" xml-lang="en-US" l10n="U" oldref="87"><ahelp hid="SID_FM_SHOWALLCOLS">Click <emph>All</emph> if you want to show all columns.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3153349" xml-lang="en-US" level="2" l10n="U" oldref="127">Keyboard-only control of Table Controls</paragraph>
 <paragraph role="paragraph" id="par_id3149416" xml-lang="en-US" l10n="U" oldref="126">If you use the keyboard only to travel through controls in your document, you will find one difference to the other types of controls: the Tab key does not move the cursor to the next control, but moves to the next column inside the table control. Press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Tab to move to the next control, or press Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Tab to move to the previous control.</paragraph>
