@@ -42,7 +42,8 @@
 <bookmark xml-lang="en-US" branch="hid/.uno:SetDefault" id="bm_id3154840" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:StandardTextAttributes" id="bm_id2575480" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:StandardTextAttributes" id="bm_id3150008" localize="false"/>
-<bookmark xml-lang="en-US" branch="hid/.uno:ResetAttributes" id="bm_id6007568" localize="false"/><paragraph role="heading" id="hd_id3153391" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/shared/01/05010000.xhp" name="Default Formatting">Default Formatting</link></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ResetAttributes" id="bm_id6007568" localize="false"/>
+<paragraph role="heading" id="hd_id3153391" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/shared/01/05010000.xhp" name="Default Formatting">Default Formatting</link></paragraph>
 <paragraph role="paragraph" id="par_id3145829" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".uno:StandardTextAttributes">Removes direct formatting and formatting by character styles from the selection.</ahelp></paragraph>
 </section>
 <paragraph role="paragraph" id="par_id3147261" xml-lang="en-US" l10n="U" oldref="5"><switchinline select="appl"><caseinline select="CHART">
@@ -51,7 +52,8 @@
 <embed href="text/shared/00/00040500.xhp#standard"/>
 </section>
 <switch select="appl">
-<case select="WRITER"><paragraph role="tip" id="par_id3157959" xml-lang="en-US" l10n="U" oldref="3">To stop applying a direct format, such as underlining, while you type new text at the end of a line, press the right arrow key.</paragraph>
+<case select="WRITER">
+<paragraph role="tip" id="par_id3157959" xml-lang="en-US" l10n="U" oldref="3">To stop applying a direct format, such as underlining, while you type new text at the end of a line, press the right arrow key.</paragraph>
 </case>
 </switch>
 <paragraph role="tip" id="par_id3146797" xml-lang="en-US" l10n="U" oldref="4">You can change all hyperlinks in the selected text back to normal text by choosing <emph>Format - Default Formatting.</emph>

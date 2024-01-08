@@ -34,12 +34,14 @@
 <bookmark_value>displaying; sheets</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:Show" id="bm_id8296013" localize="false"/><!-- HID added by script -->
-<bookmark branch="hid/.uno:Show" xml-lang="en-US" id="bm_id3150542"/><paragraph role="heading" level="1" id="hd_id3148946" l10n="U" xml-lang="en-US" oldref="1">Show Sheet</paragraph>
+<bookmark branch="hid/.uno:Show" xml-lang="en-US" id="bm_id3150542"/>
+<paragraph role="heading" level="1" id="hd_id3148946" l10n="U" xml-lang="en-US" oldref="1">Show Sheet</paragraph>
 <paragraph l10n="U" xml-lang="en-US" role="paragraph" id="par_id3148799" oldref="2"><variable id="tabeintext"><ahelp visibility="visible" hid=".uno:Show">Displays sheets that were previously hidden with the <emph>Hide</emph> command.</ahelp></variable> Select one sheet only to call the command. The current sheet is always selected. If a sheet other than the current sheet is selected, you can deselect it by pressing <switchinline select="sys"> <caseinline select="MAC">Command</caseinline> <defaultinline>Ctrl</defaultinline> </switchinline> while clicking the corresponding sheet tab at the bottom of the window.</paragraph>
 <section id="howtoget">
 <embed href="text/scalc/00/00000405.xhp#fotenb"/>
 </section>
-<bookmark branch="hid/sc:MultiListBox:RID_SCDLG_SHOW_TAB:LB_ENTRYLIST" xml-lang="en-US" id="bm_id3149260"/><paragraph role="heading" level="2" id="hd_id3151112" l10n="U" xml-lang="en-US" oldref="3">Hidden sheets</paragraph>
+<bookmark branch="hid/sc:MultiListBox:RID_SCDLG_SHOW_TAB:LB_ENTRYLIST" xml-lang="en-US" id="bm_id3149260"/>
+<paragraph role="heading" level="2" id="hd_id3151112" l10n="U" xml-lang="en-US" oldref="3">Hidden sheets</paragraph>
 <paragraph l10n="U" role="paragraph" id="par_id3145273" xml-lang="en-US" oldref="4"><ahelp hid="SC:MULTILISTBOX:RID_SCDLG_SHOW_TAB:LB_ENTRYLIST" visibility="visible">Displays a list of all hidden sheets in your spreadsheet document.</ahelp> To show a certain sheet, click the corresponding entry on the list and confirm with OK.</paragraph>
 </body>
 </helpdocument>
