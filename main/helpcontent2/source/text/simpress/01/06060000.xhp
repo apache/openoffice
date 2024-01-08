@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,35 +9,30 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsimpress0106060000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Custom Animation Pane</title>
 <filename>/text/simpress/01/06060000.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-12-11T09:47:34">UFI: renewed according to spec "presentationengine.sxw"
-YJ: checked</lastedited>
-</history>
+<comment>renewed according to spec "presentationengine.sxw"</comment>
 </meta>
 <body>
 <section id="effekt">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148837"><bookmark_value>sounds; for effects</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148837">
+<bookmark_value>sounds; for effects</bookmark_value>
 <bookmark_value>effects; sounds</bookmark_value>
 <bookmark_value>sounds; formats</bookmark_value>
 <bookmark_value>presentations; ordering of effects</bookmark_value>
@@ -52,10 +46,10 @@ YJ: checked</lastedited>
 </variable></paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/simpress/00/00000407.xhp#effekt"/>
+<embed href="text/simpress/00/00000407.xhp#effekt"/>
 </section>
 <paragraph role="heading" id="par_idN1078E" xml-lang="en-US" level="2" l10n="NEW">Animation List</paragraph>
-<paragraph role="paragraph" id="par_idN10792" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The animation list displays all animations for the current slide. </ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN10792" xml-lang="en-US" l10n="NEW"><ahelp hid=".">The animation list displays all animations for the current slide.</ahelp></paragraph>
 <list type="unordered">
 <listitem>
 <paragraph role="paragraph" id="par_idN10798" xml-lang="en-US" l10n="NEW">Each slide has one main animation that runs when the slide is shown.</paragraph>

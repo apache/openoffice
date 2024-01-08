@@ -66,8 +66,8 @@ SV_IMPL_PTRARR( SvBaseLinks, SvBaseLinkRefPtr )
 
 LinkManager::LinkManager(SfxObjectShell* p)
 	: pPersist(p),
-	mUpdateAsked(sal_False),
-	mAutoAskUpdateAllLinks(sal_False)
+	mAutoAskUpdateAllLinks(sal_False),
+	mUpdateAsked(sal_False)
 {
 }
 
@@ -283,6 +283,14 @@ sal_Bool LinkManager::GetDisplayNames( const SvBaseLink * pLink,
 void LinkManager::SetAutoAskUpdateAllLinks()
 {
 	mAutoAskUpdateAllLinks = sal_True;
+    mUpdateAsked = sal_False;
+}
+
+void LinkManager::SetNeverAskUpdateAllLinks()
+{
+    mAutoAskUpdateAllLinks = sal_False;
+    mAllowUpdate = sal_True;
+    mUpdateAsked = sal_True;
 }
 
 sal_Bool LinkManager::GetUserAllowsLinkUpdate(Window *pParentWin)

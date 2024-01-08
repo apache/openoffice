@@ -45,7 +45,7 @@ public:
 	~Interceptor();
 
 	void DisconnectDocHolder();
-	// overwritten to release the statuslistner.
+	// overwritten to release the statuslistener.
 
 	// XComponent
 	virtual void SAL_CALL

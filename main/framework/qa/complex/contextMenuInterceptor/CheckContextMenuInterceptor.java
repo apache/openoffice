@@ -134,7 +134,7 @@ public class CheckContextMenuInterceptor
 
         try
         {
-            // intialize the test document
+            // initialize the test document
             xDrawDoc = DrawTools.createDrawDoc(xMSF);
 
             SOfficeFactory SOF = SOfficeFactory.getFactory(xMSF);

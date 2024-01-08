@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0000000450xml" indexer="exclude" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Database</title>
@@ -68,12 +63,11 @@
 <paragraph role="paragraph" id="par_id3153880" xml-lang="en-US" l10n="CHG" oldref="62"><variable id="Tabellen">In a database file window, click the <emph>Tables</emph> icon
 </variable></paragraph>
 <section id="tabellehinzu">
-<paragraph role="paragraph" id="par_id3153760" xml-lang="en-US" l10n="CHG" oldref="64"><variable id="tabellenentwurf">In a database file window, click the Tables icon. Choose Insert -<emph> Table Design</emph> or <emph>Edit - Edit</emph>
+<paragraph role="paragraph" id="par_id3153760" xml-lang="en-US" l10n="CHG" oldref="64"><variable id="tabellenentwurf">In a database file window, click the Tables icon. Choose Insert - <emph>Table Design</emph> or <emph>Edit - Edit</emph>
 </variable></paragraph>
 </section>
 <paragraph role="paragraph" id="par_id3156329" xml-lang="en-US" l10n="U" oldref="65"><variable id="indexentwurf">In a database file window, click the Tables icon. Choose <emph>Insert - Table Design</emph> or <emph>Edit - Edit</emph>
-</variable><comment>UFI: was: "... , then Tools - Index Design or Index Design button"
- (don't know where that is now)</comment></paragraph>
+</variable><comment>UFI: was: "... , then Tools - Index Design or Index Design button" (don't know where that is now)</comment></paragraph>
 <paragraph role="paragraph" id="par_id3154047" xml-lang="en-US" l10n="CHG" oldref="23"><variable id="AbfrageNeu">In a database file window, choose <emph>Insert - Query (Design view)</emph>
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3149579" xml-lang="en-US" l10n="CHG" oldref="24"><variable id="entwab">In a database file window, click the <emph>Queries</emph> icon, then choose <emph>Edit - Edit</emph>
@@ -88,7 +82,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3151245" xml-lang="en-US" l10n="E">
 <image id="img_id3153063" src="res/commandimagelist/sc_addtable.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153063" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153896" xml-lang="en-US" l10n="U" oldref="41">Insert Tables</paragraph>
@@ -102,7 +96,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="E">
 <image id="img_id3147282" src="res/commandimagelist/sc_dbaddrelation.png" width="0.222inch" height="0.222inch"><alt id="alt_id3147282" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3159085" xml-lang="en-US" l10n="U" oldref="43">New Relation</paragraph>
@@ -119,7 +113,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3157962" xml-lang="en-US" l10n="E">
 <image id="img_id3145419" src="res/commandimagelist/sc_recsearch.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145419" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3157322" xml-lang="en-US" l10n="U" oldref="48">Find Record</paragraph>
@@ -137,7 +131,7 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150393" xml-lang="en-US" l10n="E">
 <image id="img_id3145606" src="res/commandimagelist/sc_tablesort.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145606" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3145745" xml-lang="en-US" l10n="U" oldref="50">Sort Order</paragraph>
@@ -150,7 +144,7 @@
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="CHG" oldref="63"><variable id="tabellecopy">Drag and drop a table or a query into the table part of another database file window
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3148560" xml-lang="en-US" l10n="CHG" oldref="66"><variable id="formularneu">In a database file window, choose<emph> Insert - Form</emph>
+<paragraph role="paragraph" id="par_id3148560" xml-lang="en-US" l10n="CHG" oldref="66"><variable id="formularneu">In a database file window, choose <emph>Insert - Form</emph>
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3155430" xml-lang="en-US" l10n="CHG" oldref="67"><variable id="benutzereinstellungen">In a database file window, choose <emph>Edit - Database - Properties</emph>
 </variable></paragraph>

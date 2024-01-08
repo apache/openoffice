@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,30 +9,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedoptionen01150100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Asian Layout</title>
 <filename>/text/shared/optionen/01150100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-10-13T11:28:51">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="asialayout">
@@ -42,9 +35,10 @@
 <embed href="text/shared/00/00000007.xhp#asiahinweis"/>
 </section>
 <section id="howtoget">
-  <embed href="text/shared/00/00000406.xhp#asialayout"/>
+<embed href="text/shared/00/00000406.xhp#asialayout"/>
 </section>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3143268"><bookmark_value>kerning;Asian texts</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143268">
+<bookmark_value>kerning;Asian texts</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3143268" xml-lang="en-US" level="2" l10n="U" oldref="3">Kerning</paragraph>
 <paragraph role="paragraph" id="par_id3155535" xml-lang="en-US" l10n="U" oldref="4">Defines the default settings for kerning between individual characters.</paragraph>
@@ -72,12 +66,12 @@
 <paragraph role="paragraph" id="par_id3151210" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_ASIAN_LAYOUT_LB_LANGUAGE">Specifies the language for which you want to define first and last characters.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ASIAN_LAYOUT:CB_STANDARD" id="bm_id3150767" localize="false"/>
 <paragraph role="heading" id="hd_id3145606" xml-lang="en-US" level="3" l10n="U" oldref="21">Default</paragraph>
-<paragraph role="paragraph" id="par_id3148920" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ASIAN_LAYOUT_CB_STANDARD">When you mark<emph> Default</emph>, the following two text boxes are filled with the default characters for the selected language:</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3148920" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_ASIAN_LAYOUT_CB_STANDARD">When you mark <emph>Default</emph>, the following two text boxes are filled with the default characters for the selected language:</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_ASIAN_LAYOUT:ED_START" id="bm_id3154216" localize="false"/>
 <paragraph role="heading" id="hd_id3144761" xml-lang="en-US" level="3" l10n="U" oldref="23">Not at start of line:</paragraph>
 <paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SVX_EDIT_RID_SVXPAGE_ASIAN_LAYOUT_ED_START">Specifies the characters that should not appear alone at the beginning of a line.</ahelp> If a character typed here is positioned at the beginning of a line after a line break, it is automatically moved to the end of the previous line. For example, an exclamation point at the end of a sentence never appears at the start of a line if it is part of the <emph>Not at start of line</emph> list.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_ASIAN_LAYOUT:ED_END" id="bm_id3149560" localize="false"/>
 <paragraph role="heading" id="hd_id3154908" xml-lang="en-US" level="3" l10n="U" oldref="25">Not at end of line:</paragraph>
-<paragraph role="paragraph" id="par_id3153367" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SVX_EDIT_RID_SVXPAGE_ASIAN_LAYOUT_ED_END">Specifies the characters that should not appear alone at the end of a line.</ahelp> If a character typed here is positioned at the end of a line due to a line break, it is automatically moved to the beginning of the next line. For example, a currency symbol that appears in front of an amount never appears at the end of a line if it is part of the<emph> Not at end of line</emph> list.</paragraph>
+<paragraph role="paragraph" id="par_id3153367" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SVX_EDIT_RID_SVXPAGE_ASIAN_LAYOUT_ED_END">Specifies the characters that should not appear alone at the end of a line.</ahelp> If a character typed here is positioned at the end of a line due to a line break, it is automatically moved to the beginning of the next line. For example, a currency symbol that appears in front of an amount never appears at the end of a line if it is part of the <emph>Not at end of line</emph> list.</paragraph>
 </body>
 </helpdocument>

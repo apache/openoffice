@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,8 +31,8 @@
 #include <svl/lstner.hxx>
 #include <vcl/timer.hxx>
 #include <svx/svdsob.hxx>
-#include <svx/svdtypes.hxx> // fuer SdrLayerID
-#include <svx/svdglue.hxx> // Klebepunkte
+#include <svx/svdtypes.hxx> // for SdrLayerID
+#include <svx/svdglue.hxx> // gluepoints
 #include <svx/xdash.hxx>
 #include <svx/xpoly.hxx>
 #include <svx/xenum.hxx>
@@ -43,7 +43,7 @@
 #include <svl/poolitem.hxx>
 
 //************************************************************
-//   Vorausdeklarationen
+// Vorausdeklarationen
 //************************************************************
 
 class SfxBroadcaster;
@@ -92,11 +92,11 @@ namespace sdr
 
 namespace svx
 {
-    class PropertyChangeNotifier;
+	class PropertyChangeNotifier;
 }
 
 //************************************************************
-//   Defines
+// Defines
 //************************************************************
 
 enum SdrObjKind {OBJ_NONE       = 0,  // Abstraktes Objekt (SdrObject)
@@ -156,7 +156,7 @@ enum SdrUserCallType {SDRUSERCALL_MOVEONLY,       	// Nur verschoben, Groesse un
 // #define nLayerID nLayerId
 
 //************************************************************
-//   Hilfsklasse SdrObjUserCall
+// Hilfsklasse SdrObjUserCall
 //************************************************************
 
 class SVX_DLLPUBLIC SdrObjUserCall
@@ -168,7 +168,7 @@ public:
 };
 
 //************************************************************
-//   Hilfsklasse SdrObjMacroHitRec
+// Hilfsklasse SdrObjMacroHitRec
 //************************************************************
 
 class SdrObjMacroHitRec
@@ -193,7 +193,7 @@ public:
 };
 
 //************************************************************
-//   Hilfsklasse SdrObjUserData
+// Hilfsklasse SdrObjUserData
 //
 // Anwenderdaten an einem Zeichenobjekt, z.B. applikationsspezifische Daten.
 // Jedes Zeichenobjekt kann beliebig viele dieser Records haben (SV-Liste).
@@ -210,9 +210,9 @@ protected:
 	sal_uInt16						nVersion;
 
 private:
-	SVX_DLLPRIVATE void operator=(const SdrObjUserData& rData);        // nicht implementiert
-	SVX_DLLPRIVATE sal_Bool operator==(const SdrObjUserData& rData) const; // nicht implementiert
-	SVX_DLLPRIVATE sal_Bool operator!=(const SdrObjUserData& rData) const; // nicht implementiert
+	SVX_DLLPRIVATE void operator=(const SdrObjUserData& rData); // not implemented
+	SVX_DLLPRIVATE sal_Bool operator==(const SdrObjUserData& rData) const; // not implemented
+	SVX_DLLPRIVATE sal_Bool operator!=(const SdrObjUserData& rData) const; // not implemented
 
 public:
 	TYPEINFO();
@@ -242,7 +242,7 @@ public:
 };
 
 //************************************************************
-//   Hilfsklasse SdrObjUserDataList
+// Hilfsklasse SdrObjUserDataList
 //************************************************************
 
 class SdrObjUserDataList
@@ -264,9 +264,9 @@ public:
 };
 
 //************************************************************
-//   Hilfsklasse SdrObjGeoData
+// Hilfsklasse SdrObjGeoData
 //
-// Alle geometrischen Daten eines beliebigen Objektes zur Übergabe an's Undo/Redo
+// Alle geometrischen Daten eines beliebigen Objektes zur Ãœbergabe an Undo/Redo
 //
 //************************************************************
 
@@ -289,7 +289,7 @@ public:
 };
 
 //************************************************************
-//   Hilfsklasse SdrObjPlusData
+// Hilfsklasse SdrObjPlusData
 //
 // Bitsack fuer DrawObjekte
 //
@@ -301,7 +301,7 @@ class SdrObjPlusData
 
 public:
 	SfxBroadcaster*				pBroadcast;    // Broadcaster, falls dieses Obj referenziert wird (bVirtObj=sal_True). Auch fuer Konnektoren etc.
-	SdrObjUserDataList*			pUserDataList; // applikationsspeziefische Daten
+	SdrObjUserDataList*			pUserDataList; // applikationsspezifische Daten
 	SdrGluePointList*			pGluePoints;   // Klebepunkte zum Ankleben von Objektverbindern
 	AutoTimer*					pAutoTimer;
 
@@ -322,7 +322,7 @@ public:
 };
 
 //************************************************************
-//   Hilfsklasse SdrObjTransformInfoRec
+// Hilfsklasse SdrObjTransformInfoRec
 //
 // gibt Auskunft ueber verschiedene Eigenschaften eines ZObjects
 //
@@ -341,7 +341,7 @@ public:
 	unsigned					bMirror45Allowed : 1;   // sal_False=Obj kann nichtmal ueber Achse im 45deg Raster gespiegelt werden
 	unsigned					bMirror90Allowed : 1;   // sal_False=Obj kann ebenfalls nicht ueber Achse im 90deg Raster gespiegelt werden
 	unsigned					bTransparenceAllowed : 1; // sal_False=Obj does not have an interactive transparence control
-	unsigned					bGradientAllowed : 1; // sal_False=Obj dooes not have an interactive gradient control
+	unsigned					bGradientAllowed : 1; // sal_False=Obj does not have an interactive gradient control
 	unsigned					bShearAllowed : 1;      // sal_False=Obj kann nicht verzerrt werden
 	unsigned					bEdgeRadiusAllowed : 1;
 	unsigned					bNoOrthoDesired : 1;    // sal_True bei Rect; ... sal_False bei BMP,MTF;
@@ -395,14 +395,6 @@ typedef ::std::vector< SdrObjectUser* > ObjectUserVector;
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//   @@@@  @@@@@  @@@@@@ @@@@@  @@@@  @@@@@@
-//  @@  @@ @@  @@     @@ @@    @@  @@   @@
-//  @@  @@ @@  @@     @@ @@    @@       @@
-//  @@  @@ @@@@@      @@ @@@@  @@       @@
-//  @@  @@ @@  @@     @@ @@    @@       @@
-//  @@  @@ @@  @@ @@  @@ @@    @@  @@   @@
-//   @@@@  @@@@@   @@@@  @@@@@  @@@@    @@
-//
 // Abstraktes DrawObject
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -454,16 +446,16 @@ protected:
 
 	sal_uInt32					nOrdNum;      // Rangnummer des Obj in der Liste
 
-    /** Position in the navigation order.  SAL_MAX_UINT32 when not used.
-    */
-    sal_uInt32                  mnNavigationPosition;
+	/** Position in the navigation order.  SAL_MAX_UINT32 when not used.
+	*/
+	sal_uInt32					mnNavigationPosition;
 	SdrLayerID					mnLayerID;
 
 	// Objekt zeigt nur auf ein Anderes
 	unsigned					bVirtObj : 1;
 	unsigned					bSnapRectDirty : 1;
 	unsigned					bNetLock : 1;   // ni
-	unsigned					bInserted : 1;  // nur wenn sal_True gibt's RepaintBroadcast & SetModify
+	unsigned					bInserted : 1;  // nur wenn sal_True gibt es RepaintBroadcast & SetModify
 	unsigned					bGrouped : 1;   // Member eines GroupObjektes?
 
 	// Die folgende Flags werden gestreamt
@@ -477,7 +469,7 @@ protected:
 	// uebernimmt die Applikation. Im Zuweisungsoperator sowie
 	// beim Clone wird das Flag nicht mitkopiert!
 	// Das Flag ist persistent.
-	unsigned					bEmptyPresObj : 1;     // Leeres Praesentationsobjekt (Draw)
+	unsigned					bEmptyPresObj : 1; // Leeres Praesentationsobjekt (Draw)
 
 	// sal_True=Objekt ist als Objekt der MasterPage nicht sichtbar
 	unsigned					bNotVisibleAsMaster : 1;
@@ -487,7 +479,7 @@ protected:
 
 	unsigned					bIsEdge : 1;
 	unsigned					bIs3DObj : 1;
-	unsigned					bMarkProt : 1;  // Markieren verboten. Persistent
+	unsigned					bMarkProt : 1; // Markieren verboten. Persistent
 	unsigned					bIsUnoObj : 1;
 	unsigned					bNotMasterCachable : 1;
 
@@ -501,7 +493,7 @@ protected:
 	// in this case the following member is initialized as nonempty rectangle
 	Rectangle					maBLIPSizeRectangle;
 
-	// global static ItemPool for not-yet-insetred items
+	// global static ItemPool for not-yet-inserted items
 private:
 	static SdrItemPool*			mpGlobalItemPool;
 public:
@@ -523,7 +515,7 @@ protected:
 	String GetMetrStr(long nVal, MapUnit eWantMap=MAP_MM, FASTBOOL bNoUnitChars=sal_False) const;
 
 	// bNotMyself=sal_True bedeutet: Nur die ObjList auf Dirty setzen, nicht mich.
-	// Wird z.B. benoetigt fuer NbcMove, denn da movt man SnapRect und aOutRect
+	// Wird z.B. benoetigt fuer NbcMove, denn da moved man SnapRect und aOutRect
 	// i.d.R. gleich mit um die Neuberechnung zu sparen.
 public:
 	virtual void SetRectsDirty(sal_Bool bNotMyself = sal_False);
@@ -548,7 +540,7 @@ public:
 	TYPEINFO();
 	SdrObject();
 
-    /** fres the SdrObject pointed to by the argument
+    /** frees the SdrObject pointed to by the argument
 
         In case the object has an SvxShape, which has the ownership of the object, it
         is actually *not* deleted.
@@ -625,7 +617,7 @@ public:
 	// werden die Ordnungsnummer aller Objekte der Liste neu bestimmt.
 	sal_uInt32 GetOrdNum() const;
 
-	// Diese Methode sollte nur verwendet werden, wenn man ganz  genau weiss,
+	// Diese Methode sollte nur verwendet werden, wenn man ganz genau weiss,
 	// was man macht:
 	sal_uInt32 GetOrdNumDirect() const { return nOrdNum; }
 
@@ -635,13 +627,13 @@ public:
 
     /** Return the position in the navigation order for the called object.
         Note that this method may update the navigation position of the
-        called and of other SdrObjects.  Therefore this method can not be
+        called and of other SdrObjects. Therefore this method can not be
         const.
         @return
             If no navigation position has been explicitly defined then the
             result of GetOrdNum() is returned.
     */
-    sal_uInt32 GetNavigationPosition (void);
+	sal_uInt32 GetNavigationPosition (void);
 
     /** Set the position in the navigation position to the given value.
         This method is typically used only by the model after a change to
@@ -650,8 +642,8 @@ public:
         objects.
         Use SdrObjList::SetObjectNavigationPosition() instead.
     */
-    void SetNavigationPosition (const sal_uInt32 nPosition);
-    
+	void SetNavigationPosition (const sal_uInt32 nPosition);
+
 	const AutoTimer* GetAutoTimer() const { return pPlusData!=NULL ? pPlusData->pAutoTimer : NULL; }
 	AutoTimer* GetAutoTimer() { return pPlusData!=NULL ? pPlusData->pAutoTimer : NULL; }
 	AutoTimer* ForceAutoTimer();
@@ -700,7 +692,7 @@ public:
 
 	// Ueber GetHdlCount gibt ein Objekt die Anzahl seiner Handles preis.
 	// Im Normalfall werden dies 8 sein, bei einer Strecke 2. Bei Polygonobjekten
-	// (Polygon,Spline,Bezier) kann die Handleanzahl wesentlich groesser werden.
+	// (Polygon, Spline, Bezier) kann die Handleanzahl wesentlich groesser werden.
 	// Polygonobjekten wird ausserdem die Moeglichkeit eingeraeumt einen Punkt
 	// eines selektierten Objekts zu selektieren. Das Handle dieses Punktes wird
 	// dann durch einen Satz neuer Handles ausgetauscht (PlusHdl). Bei einem
@@ -717,13 +709,13 @@ public:
 
 	// Die Standardtransformationen (Move,Resize,Rotate,Mirror,Shear) werden von der
 	// View uebernommen (TakeXorPoly(),...).
-	// Objektspeziefisches draggen wie z.B. Eckenradius bei Rechtecken,
+	// Objektspezifisches draggen wie z.B. Eckenradius bei Rechtecken,
 	// Stuetzstellen bei Splines, Gewichte bei Bezierkurven und Pointer von
 	// Labelobjekten muss vom Objekt selbst gehandled werden. Um das Model
 	// Statusfrei zu halten werden die Statusdaten an der View gehalten und dem
-	// Objekt dann uebergeben. EndDrag liefrt im Normalfall sal_True fuer Erfolg.
+	// Objekt dann uebergeben. EndDrag liefert im Normalfall sal_True fuer Erfolg.
 	// sal_False kann zurueckgegeben werden, wenn das Dragging das Objekt nicht
-	// veraendert hat, wobei dir evtl. Tatsache das die Maus nicht bewegt wurde
+	// veraendert hat, wobei die evtl. Tatsache, dass die Maus nicht bewegt wurde
 	// bereits von der View abgefangen wird.
 	virtual bool hasSpecialDrag() const;
 	virtual bool beginSpecialDrag(SdrDragStat& rDrag) const;
@@ -753,7 +745,7 @@ public:
 	// enthaelt die Anzahl der Mausklicks (so die App diese durchreicht).
 	// BckCreate() -> Letztes EndCreate() rueckgaengig machen (z.B. letzten
 	// Polygonpunkt wieder loeschen).
-	// RetrunCode: sal_True=Weiter gehts, sal_False=Create dadurch abgebrochen.
+	// ReturnCode: sal_True=Weiter geht's, sal_False=Create dadurch abgebrochen.
 	virtual FASTBOOL BegCreate(SdrDragStat& rStat);
 	virtual FASTBOOL MovCreate(SdrDragStat& rStat); // sal_True=Xor muss repainted werden
 	virtual FASTBOOL EndCreate(SdrDragStat& rStat, SdrCreateCmd eCmd);
@@ -784,7 +776,7 @@ public:
 	virtual void Shear (const Point& rRef, long nWink, double tn, FASTBOOL bVShear);
 
 	// Die relative Position eines Zeichenobjektes ist die Entfernung der
-	// linken oberen Eche des logisch umschliessenden Rechtecks (SnapRect)
+	// linken oberen Ecke des logisch umschliessenden Rechtecks (SnapRect)
 	// zum Anker.
 	virtual void NbcSetRelativePos(const Point& rPnt);
 	virtual void SetRelativePos(const Point& rPnt);
@@ -808,10 +800,10 @@ public:
 	virtual void SetLogicRect(const Rectangle& rRect);
 	virtual void NbcSetLogicRect(const Rectangle& rRect);
 
-	/** the defaul is to set the logic rect to the given rectangle rMaxRect. If the shape
+	/** the default is to set the logic rect to the given rectangle rMaxRect. If the shape
 		has an intrinsic aspect ratio it may set the logic rect so the aspect
 		ratio is kept but still inside the rectangle rMaxRect.
-		
+
 		If bShrinkOnly is set to true, the size of the current logic rect will not
 		be changed if it is smaller than the given rectangle rMaxRect. */
 	virtual void AdjustToMaxRect( const Rectangle& rMaxRect, bool bShrinkOnly = false );
@@ -856,8 +848,8 @@ protected:
 	void SetObjectItemSet(const SfxItemSet& rSet);
 	const SfxPoolItem& GetObjectItem(const sal_uInt16 nWhich) const;
 
-    // get SfxMapUnit the object is using
-    SfxMapUnit GetObjectMapUnit() const;
+	// get SfxMapUnit the object is using
+	SfxMapUnit GetObjectMapUnit() const;
 
 public:
 	// syntactical sugar for ItemSet accesses
@@ -959,7 +951,7 @@ public:
         Objects which support different writing modes, and whose own mode is set to css.text.WritingMode2.CONTEXT,
         will use the given writing mode to calculate their "effective writing mode".
 
-        The behaviour of this method is undefined if you pass css.text.WritingMode2.CONTEXT.
+        The behavior of this method is undefined if you pass css.text.WritingMode2.CONTEXT.
 
         @param _nContextWritingMode
             the effective writing mode of the context of the object
@@ -1066,12 +1058,12 @@ public:
 
 	// setting the UNO representation is allowed for the UNO representation itself only!
 	void setUnoShape(
-		    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape,
-		    GrantXShapeAccess /*aGrant*/
-	    )
-    {
-        impl_setUnoShape( _rxUnoShape );
-    }
+			const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape,
+			GrantXShapeAccess /*aGrant*/
+		)
+	{
+		impl_setUnoShape( _rxUnoShape );
+	}
 
     /** retrieves the instance responsible for notifying changes in the properties of the shape associated with
         the SdrObject
@@ -1120,16 +1112,16 @@ public:
 
 	// on import of OLE object from MS documents the BLIP size might be retrieved,
 	// the following methods are used to control it;
-	// usually this data makes no sence after the import is finished, since the object
+	// usually this data makes no sense after the import is finished, since the object
 	// might be resized
 	Rectangle GetBLIPSizeRectangle() const;
 	void SetBLIPSizeRectangle( const Rectangle& aRect );
 
-    // #121917#
-    virtual bool HasText() const;
+	// #121917#
+	virtual bool HasText() const;
 
 protected:
-    void    impl_setUnoShape( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape );
+	void    impl_setUnoShape( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxUnoShape );
 
 private:
 	/** only for internal use!
@@ -1143,7 +1135,7 @@ private:
 };
 
 //************************************************************
-//   SdrDummyObj
+// SdrDummyObj
 //
 // Wer sich eigene Objekte schafft muss einen Link in der Klasse
 // SdrObjFactory setzen. Der Handler hat folgendes aussehen:
@@ -1161,12 +1153,12 @@ public:
 	sal_uInt32						nInventor;
 	sal_uInt16						nIdentifier;
 
-	// fuer MakeNewObj():
+	// for MakeNewObj():
 	SdrPage*					pPage;
 	SdrModel*					pModel;
 	SdrObject*					pNewObj;
 
-	// fuer MakeNewObjUserData():
+	// for MakeNewObjUserData():
 	SdrObject*					pObj;
 	SdrObjUserData*				pNewData;
 
@@ -1187,3 +1179,4 @@ typedef tools::WeakReference< SdrObject > SdrObjectWeakRef;
 
 #endif //_SVDOBJ_HXX
 
+/* vim: set noet sw=4 ts=4: */

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0000000402xml" indexer="exclude">
 <title id="tit" xml-lang="en-US">Edit Menu</title>
@@ -44,14 +41,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3155449" xml-lang="en-US" l10n="E">
 <image id="img_id3155577" src="res/commandimagelist/sc_undo.png" width="0.2228in" height="0.2228in"><alt id="alt_id3155577" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3148563" xml-lang="en-US" l10n="U" oldref="4">Undo</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 </section>
 <section id="redo">
@@ -64,14 +60,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3154938" xml-lang="en-US" l10n="E">
 <image id="img_id3150358" src="res/commandimagelist/sc_redo.png" width="0.2228in" height="0.2228in"><alt id="alt_id3150358" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="U" oldref="7">Redo</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 </section>
 <paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U" oldref="8"><variable id="letzter">Choose <emph>Edit - Repeat</emph>
@@ -87,14 +82,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3145173" xml-lang="en-US" l10n="E">
 <image id="img_id3145744" src="res/commandimagelist/sc_helpmenu.png" width="0.2228in" height="0.2228in"><alt id="alt_id3145744" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3154153" xml-lang="en-US" l10n="U" oldref="11">Cut</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 </section>
 <section id="copy">
@@ -108,14 +102,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3154985" xml-lang="en-US" l10n="E">
 <image id="img_id3156441" src="res/commandimagelist/sc_copy.png" width="0.2228in" height="0.2228in"><alt id="alt_id3156441" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3150685" xml-lang="en-US" l10n="U" oldref="14">Copy</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 </section>
 <section id="insert">
@@ -129,14 +122,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3156106" xml-lang="en-US" l10n="E">
 <image id="img_id3159196" src="res/commandimagelist/sc_paste.png" width="0.2228in" height="0.2228in"><alt id="alt_id3159196" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3154471" xml-lang="en-US" l10n="U" oldref="17">Paste</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 </section>
 <paragraph role="paragraph" id="par_id3152791" xml-lang="en-US" l10n="U" oldref="532"><variable id="inhalte">Choose <emph>Edit - Paste Special</emph>
@@ -151,14 +143,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3145748" xml-lang="en-US" l10n="E">
 <image id="img_id3153095" src="res/commandimagelist/sc_selectall.png" width="0.2228in" height="0.2228in"><alt id="alt_id3153095" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3153139" xml-lang="en-US" l10n="U" oldref="575">Select All</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 </section>
 <paragraph role="paragraph" id="par_id3145251" xml-lang="en-US" l10n="U" oldref="555"><variable id="aenderungen">Choose <emph>Edit - Changes</emph>
@@ -175,7 +166,7 @@
 <paragraph role="paragraph" id="par_id3148587" xml-lang="en-US" l10n="U" oldref="559">Choose <emph>Edit - Changes - Accept or Reject - List</emph> tab</paragraph>
 <paragraph role="paragraph" id="par_id3150396" xml-lang="en-US" l10n="U" oldref="574">Choose <emph>Format - AutoCorrect - Apply and Edit Changes.</emph> AutoCorrect dialog appears, click <emph>Edit Changes</emph> button, see <emph>List</emph> tab page</paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3153878" xml-lang="en-US" l10n="U" oldref="560"><variable id="rotliniefilter">Choose <emph>Edit - Changes - Accept or Reject - Filter</emph> tab 
+<paragraph role="paragraph" id="par_id3153878" xml-lang="en-US" l10n="U" oldref="560"><variable id="rotliniefilter">Choose <emph>Edit - Changes - Accept or Reject - Filter</emph> tab
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3151281" xml-lang="en-US" l10n="U" oldref="561"><variable id="einfuegen">Choose <emph>Edit - Changes - Merge Document</emph>
 </variable></paragraph>
@@ -198,19 +189,18 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3150020" xml-lang="en-US" l10n="E">
 <image id="img_id3149121" src="res/commandimagelist/sc_recsearch.png" width="0.2228in" height="0.2228in"><alt id="alt_id3149121" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3144748" xml-lang="en-US" l10n="U" oldref="50">Find &amp; Replace</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 </section>
 <paragraph role="paragraph" id="par_id3156357" xml-lang="en-US" l10n="U" oldref="552"><variable id="suchenattribute">Choose <emph>Edit - Find &amp; Replace - Attributes</emph>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3153840" xml-lang="en-US" l10n="U" oldref="553"><variable id="suchenformat">Choose <emph>Edit - Find &amp; Replace - Format</emph> button 
+<paragraph role="paragraph" id="par_id3153840" xml-lang="en-US" l10n="U" oldref="553"><variable id="suchenformat">Choose <emph>Edit - Find &amp; Replace - Format</emph> button
 </variable></paragraph>
 <section id="suchenaehnlichkeit">
 <paragraph role="paragraph" id="par_id3146971" xml-lang="en-US" l10n="U" oldref="554">Choose <emph>Edit - Find &amp; Replace - Similarity search</emph> check box and <emph>...</emph> button.</paragraph>
@@ -226,20 +216,19 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3159183" xml-lang="en-US" l10n="E">
 <image id="img_id3154508" src="res/commandimagelist/sc_navigator.png" width="0.2228in" height="0.2228in"><alt id="alt_id3154508" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3147359" xml-lang="en-US" l10n="U" oldref="536">Navigator On/Off</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <paragraph role="paragraph" id="par_id3147338" xml-lang="en-US" l10n="U" oldref="576"><variable id="litdat">Choose <emph>Tools - Bibliography Database</emph>
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3149281" xml-lang="en-US" l10n="U" oldref="538"><variable id="link">Choose <emph>Edit - Links</emph>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3159339" xml-lang="en-US" l10n="U" oldref="551"><variable id="linkae">Choose <emph>Edit - Links - Modify Link</emph> (DDE links only) 
+<paragraph role="paragraph" id="par_id3159339" xml-lang="en-US" l10n="U" oldref="551"><variable id="linkae">Choose <emph>Edit - Links - Modify Link</emph> (DDE links only)
 </variable></paragraph>
 <section id="rahmeneigenschaften">
 <paragraph role="paragraph" id="par_id3148927" xml-lang="en-US" l10n="U" oldref="543">Select a frame, then choose <emph>Edit - Object - Properties</emph>
@@ -249,13 +238,13 @@
 </section>
 <paragraph role="paragraph" id="par_id3151251" xml-lang="en-US" l10n="U" oldref="545"><variable id="plugin">Choose <emph>Edit - Plug-in</emph>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3156091" xml-lang="en-US" l10n="U" oldref="546"><variable id="imagemap">Choose <emph>Edit - ImageMap</emph> (also in context menu of selected object) 
+<paragraph role="paragraph" id="par_id3156091" xml-lang="en-US" l10n="U" oldref="546"><variable id="imagemap">Choose <emph>Edit - ImageMap</emph> (also in context menu of selected object)
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3155936" xml-lang="en-US" l10n="U" oldref="550"><variable id="imapeigbea">Choose <emph>Edit - ImageMap</emph>, then select a section of the ImageMap and click <emph>Properties - Description</emph>
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3149259" xml-lang="en-US" l10n="U" oldref="547"><variable id="edit1">Choose <emph>Edit - Object</emph>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3154966" xml-lang="en-US" l10n="U" oldref="548"><variable id="edit2">Choose <emph>Edit - Object - Edit</emph>, also in the context menu of selected object 
+<paragraph role="paragraph" id="par_id3154966" xml-lang="en-US" l10n="U" oldref="548"><variable id="edit2">Choose <emph>Edit - Object - Edit</emph>, also in the context menu of selected object
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3149565" xml-lang="en-US" l10n="U" oldref="549"><variable id="edit3">Choose <emph>Edit - Object - Open</emph>
 </variable></paragraph>

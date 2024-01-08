@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidedoc_openxml" indexer="include">
 <title id="tit" xml-lang="en-US">Opening Documents</title>
@@ -32,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147834"><bookmark_value>opening; documents</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147834">
+<bookmark_value>opening; documents</bookmark_value>
 <bookmark_value>documents; opening</bookmark_value>
 <bookmark_value>files; opening</bookmark_value>
 <bookmark_value>loading; documents</bookmark_value>
@@ -55,7 +53,7 @@
 <paragraph role="listitem" id="par_idN107A9" xml-lang="en-US" l10n="NEW">Choose <item type="menuitem">File - Open</item>
 </paragraph>
 <paragraph role="listitem" id="par_idN107AF" xml-lang="en-US" l10n="NEW">Click the <emph>Open</emph> icon on the Standard toolbar</paragraph>
-<paragraph role="listitem" id="par_idN107B2" xml-lang="en-US" l10n="NEW">Press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+O </paragraph>
+<paragraph role="listitem" id="par_idN107B2" xml-lang="en-US" l10n="NEW">Press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+O</paragraph>
 <paragraph role="listitem" id="par_id3150275" xml-lang="en-US" l10n="U" oldref="3">The <link href="text/shared/01/01020000.xhp" name="Open">Open</link> dialog appears.</paragraph>
 </listitem>
 <listitem>
@@ -65,7 +63,7 @@
 <paragraph role="heading" id="hd_id3149234" xml-lang="en-US" level="3" l10n="CHG" oldref="13">Restrict Files to Display</paragraph>
 <paragraph role="paragraph" id="par_id3150985" xml-lang="en-US" l10n="CHG" oldref="14">To restrict the display of files in the <emph>Open</emph> dialog to a certain type select the corresponding <emph>File type</emph> from the list. Select <emph>All Files (*.*)</emph> to display all files.</paragraph>
 <paragraph role="heading" id="hd_id4651326" xml-lang="en-US" level="3" l10n="NEW">Cursor Position</paragraph>
-<paragraph role="paragraph" id="par_id5509201" xml-lang="en-US" l10n="NEW">In general, all documents open with the cursor at the start of the document. </paragraph>
+<paragraph role="paragraph" id="par_id5509201" xml-lang="en-US" l10n="NEW">In general, all documents open with the cursor at the start of the document.</paragraph>
 <paragraph role="paragraph" id="par_id6594744" xml-lang="en-US" l10n="NEW">One exception appears when the author of a Writer text document saves and reopens a document: The cursor will be at the same position where it has been when the document was saved. This only works when the name of the author was entered in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - User Data</emph>.</paragraph>
 <list type="ordered">
 <listitem>
@@ -84,7 +82,7 @@
 </list>
 <paragraph role="paragraph" id="par_id0820200803501449" xml-lang="en-US" l10n="NEW">The %PRODUCTNAME dialogs support file download and upload using secure https connections.</paragraph>
 <paragraph role="heading" id="hd_id0820200803501453" xml-lang="en-US" level="2" l10n="NEW">Opening Files from a Web Server</paragraph>
-<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="CHG" oldref="9">You can enter a URL in the <emph>File name</emph> box of the <emph>Open</emph> dialogs. The URL must start with file:/// or ftp:// or http://. </paragraph>
+<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="CHG" oldref="9">You can enter a URL in the <emph>File name</emph> box of the <emph>Open</emph> dialogs. The URL must start with file:/// or ftp:// or http://.</paragraph>
 <paragraph role="paragraph" id="par_id0820200803501548" xml-lang="en-US" l10n="NEW">If you use the %PRODUCTNAME dialog, you can use the https:// prefix for a secure connection, and you can save a document on the web server.</paragraph>
 <switch select="sys">
 <case select="WIN">

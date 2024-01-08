@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,47 +29,47 @@ Window WIN_HELPINDEX
 {
 	Hide = TRUE ;
 	Size = MAP_APPFONT ( 120, 200 ) ;
-	DialogControl = TRUE;
+	DialogControl = TRUE ;
 	ListBox LB_ACTIVE
 	{
-		HelpId = HID_HELP_LISTBOX;
+		HelpId = HID_HELP_LISTBOX ;
 		Border = TRUE ;
-		DropDown = TRUE;
+		DropDown = TRUE ;
 		Pos = MAP_APPFONT ( 3, 3 ) ;
 		Size = MAP_APPFONT ( 114, 40 ) ;
 	};
 	FixedLine FL_ACTIVE
 	{
-		Hide = True;
+		Hide = TRUE ;
 		Pos = MAP_APPFONT ( 2, 19 ) ;
 		Size = MAP_APPFONT ( 118, 1 ) ;
 	};
 	TabControl TC_INDEX
 	{
-		HelpId = HID_HELP_TABCONTROL;
+		HelpId = HID_HELP_TABCONTROL ;
 		Pos = MAP_APPFONT ( 3, 19 ) ;
-		TabStop = TRUE;
+		TabStop = TRUE ;
 		PageList =
 		{
 			PageItem
 			{
 				Identifier = HELP_INDEX_PAGE_CONTENTS ;
-				Text [ en-US ] = "Contents";
+				Text [ en-US ] = "Contents" ;
 			};
 			PageItem
 			{
 				Identifier = HELP_INDEX_PAGE_INDEX ;
-				Text [ en-US ] = "Index";
+				Text [ en-US ] = "Index" ;
 			};
 			PageItem
 			{
 				Identifier = HELP_INDEX_PAGE_SEARCH ;
-				Text [ en-US ] = "Find";
+				Text [ en-US ] = "Find" ;
 			};
 			PageItem
 			{
 				Identifier = HELP_INDEX_PAGE_BOOKMARKS ;
-				Text [ en-US ] = "Bookmarks";
+				Text [ en-US ] = "Bookmarks" ;
 			};
 		};
 	};
@@ -77,9 +77,9 @@ Window WIN_HELPINDEX
 
 TabPage TP_HELP_INDEX
 {
-	HelpId = HID_HELP_TABPAGE_INDEX;
+	HelpId = HID_HELP_TABPAGE_INDEX ;
 	Hide = TRUE ;
-	DialogControl = TRUE;
+	DialogControl = TRUE ;
 	Size = MAP_APPFONT ( 120, 200 ) ;
 	FixedText FT_EXPRESSION
 	{
@@ -89,14 +89,14 @@ TabPage TP_HELP_INDEX
 	};
 	ComboBox CB_INDEX
 	{
-		HelpID = "sfx2:ComboBox:TP_HELP_INDEX:CB_INDEX";
+		HelpID = "sfx2:ComboBox:TP_HELP_INDEX:CB_INDEX" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 6, 17 ) ;
 		Size = MAP_APPFONT ( 108, 97 ) ;
 	};
 	PushButton PB_OPEN_INDEX
 	{
-		HelpID = "sfx2:PushButton:TP_HELP_INDEX:PB_OPEN_INDEX";
+		HelpID = "sfx2:PushButton:TP_HELP_INDEX:PB_OPEN_INDEX" ;
 		Pos = MAP_APPFONT ( 64, 115 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Display" ;
@@ -105,9 +105,9 @@ TabPage TP_HELP_INDEX
 
 TabPage TP_HELP_SEARCH
 {
-	HelpId = HID_HELP_TABPAGE_SEARCH;
+	HelpId = HID_HELP_TABPAGE_SEARCH ;
 	Hide = TRUE ;
-	DialogControl = TRUE;
+	DialogControl = TRUE ;
 	Size = MAP_APPFONT ( 140, 122 ) ;
 	FixedText FT_SEARCH
 	{
@@ -117,43 +117,43 @@ TabPage TP_HELP_SEARCH
 	};
 	ComboBox ED_SEARCH
 	{
-		HelpID = "sfx2:ComboBox:TP_HELP_SEARCH:ED_SEARCH";
+		HelpID = "sfx2:ComboBox:TP_HELP_SEARCH:ED_SEARCH" ;
 		Border = TRUE ;
-		DropDown = TRUE;
+		DropDown = TRUE ;
 		Pos = MAP_APPFONT ( 6, 17 ) ;
 		Size = MAP_APPFONT ( 92, 40 ) ;
 	};
 	PushButton PB_SEARCH
 	{
-		HelpID = "sfx2:PushButton:TP_HELP_SEARCH:PB_SEARCH";
+		HelpID = "sfx2:PushButton:TP_HELP_SEARCH:PB_SEARCH" ;
 		Pos = MAP_APPFONT ( 101, 17 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
-		Text [ en-US ] = "~Find";
+		Text [ en-US ] = "~Find" ;
 	};
 	CheckBox CB_FULLWORDS
 	{
-		HelpID = "sfx2:CheckBox:TP_HELP_SEARCH:CB_FULLWORDS";
+		HelpID = "sfx2:CheckBox:TP_HELP_SEARCH:CB_FULLWORDS" ;
 		Pos = MAP_APPFONT ( 6, 34 ) ;
 		Size = MAP_APPFONT ( 128, 10 ) ;
-		Text [ en-US ] = "~Complete words only";
+		Text [ en-US ] = "~Complete words only" ;
 	};
 	CheckBox CB_SCOPE
 	{
-		HelpID = "sfx2:CheckBox:TP_HELP_SEARCH:CB_SCOPE";
+		HelpID = "sfx2:CheckBox:TP_HELP_SEARCH:CB_SCOPE" ;
 		Pos = MAP_APPFONT ( 6, 47 ) ;
 		Size = MAP_APPFONT ( 128, 10 ) ;
-		Text [ en-US ] = "Find in ~headings only";
+		Text [ en-US ] = "Find in ~headings only" ;
 	};
 	ListBox LB_RESULT
 	{
-		HelpID = "sfx2:ListBox:TP_HELP_SEARCH:LB_RESULT";
+		HelpID = "sfx2:ListBox:TP_HELP_SEARCH:LB_RESULT" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 6, 60 ) ;
 		Size = MAP_APPFONT ( 128, 30 ) ;
 	};
 	PushButton PB_OPEN_SEARCH
 	{
-		HelpID = "sfx2:PushButton:TP_HELP_SEARCH:PB_OPEN_SEARCH";
+		HelpID = "sfx2:PushButton:TP_HELP_SEARCH:PB_OPEN_SEARCH" ;
 		Pos = MAP_APPFONT ( 84, 182 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Display" ;
@@ -162,9 +162,9 @@ TabPage TP_HELP_SEARCH
 
 TabPage TP_HELP_BOOKMARKS
 {
-	HelpId = HID_HELP_TABPAGE_BOOKMARKS;
+	HelpId = HID_HELP_TABPAGE_BOOKMARKS ;
 	Hide = TRUE ;
-	DialogControl = TRUE;
+	DialogControl = TRUE ;
 	Size = MAP_APPFONT ( 120, 200 ) ;
 	FixedText FT_BOOKMARKS
 	{
@@ -174,15 +174,15 @@ TabPage TP_HELP_BOOKMARKS
 	};
 	ListBox LB_BOOKMARKS
 	{
-		HelpID = "sfx2:ListBox:TP_HELP_BOOKMARKS:LB_BOOKMARKS";
+		HelpID = "sfx2:ListBox:TP_HELP_BOOKMARKS:LB_BOOKMARKS" ;
 		Border = TRUE ;
-		Sort = TRUE;
+		Sort = TRUE ;
 		Pos = MAP_APPFONT ( 6, 19 ) ;
 		Size = MAP_APPFONT ( 108, 97 ) ;
 	};
 	PushButton PB_BOOKMARKS
 	{
-		HelpID = "sfx2:PushButton:TP_HELP_BOOKMARKS:PB_BOOKMARKS";
+		HelpID = "sfx2:PushButton:TP_HELP_BOOKMARKS:PB_BOOKMARKS" ;
 		Pos = MAP_APPFONT ( 64, 119 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Display" ;
@@ -191,15 +191,15 @@ TabPage TP_HELP_BOOKMARKS
 
 TabPage TP_HELP_CONTENT
 {
-	HelpId = HID_HELP_TABPAGE_CONTENTS;
+	HelpId = HID_HELP_TABPAGE_CONTENTS ;
 	Hide = TRUE ;
-	DialogControl = TRUE;
+	DialogControl = TRUE ;
 	Size = MAP_APPFONT ( 120, 200 ) ;
 	Control LB_CONTENTS
 	{
 		HelpId = HID_HELP_TREELISTBOX_CONTENTS ;
 		Border = TRUE ;
-		TabStop = TRUE;
+		TabStop = TRUE ;
 		Pos = MAP_APPFONT ( 6, 6 ) ;
 		Size = MAP_APPFONT ( 108, 188 ) ;
 	};
@@ -268,56 +268,56 @@ Image IMG_HELP_CONTENT_DOC_HC
 
 String STR_HELP_WINDOW_TITLE
 {
-	Text [ en-US ] = "%PRODUCTNAME Help";
+	Text [ en-US ] = "%PRODUCTNAME Help" ;
 };
 String STR_HELP_BUTTON_INDEX_ON
 {
-	Text [ en-US ] = "Show Navigation Pane";
+	Text [ en-US ] = "Show Navigation Pane" ;
 };
 String STR_HELP_BUTTON_INDEX_OFF
 {
-	Text [ en-US ] = "Hide Navigation Pane";
+	Text [ en-US ] = "Hide Navigation Pane" ;
 };
 String STR_HELP_BUTTON_START
 {
-	Text [ en-US ] = "First Page";
+	Text [ en-US ] = "First Page" ;
 };
 String STR_HELP_BUTTON_PREV
 {
-	Text [ en-US ] = "Previous Page";
+	Text [ en-US ] = "Previous Page" ;
 };
 String STR_HELP_BUTTON_NEXT
 {
-	Text [ en-US ] = "Next Page";
+	Text [ en-US ] = "Next Page" ;
 };
 String STR_HELP_BUTTON_PRINT
 {
-	Text [ en-US ] = "Print...";
+	Text [ en-US ] = "Print..." ;
 };
 String STR_HELP_BUTTON_ADDBOOKMARK
 {
-	Text [ en-US ] = "Add to Bookmarks...";
+	Text [ en-US ] = "Add to Bookmarks..." ;
 };
 String STR_HELP_BUTTON_SEARCHDIALOG
 {
-	Text [ en-US ] = "Find on this Page...";
+	Text [ en-US ] = "Find on this Page..." ;
 };
 String STR_HELP_BUTTON_SOURCEVIEW
 {
-	Text [ en-US ] = "HTML Source";
+	Text [ en-US ] = "HTML Source" ;
 };
 
 String STR_HELP_FIRST_MESSAGE
 {
-	Text [ en-US ] = "The Help is being started...";
+	Text [ en-US ] = "The Help is being started..." ;
 };
 String STR_HELP_FIRST_HTML
 {
-	Text = "<html></head><body><center><br></br><br></br><p><tt>%1</tt></center></body></html>";
+	Text = "<html></head><body><center><br></br><br></br><p><tt>%1</tt></center></body></html>" ;
 };
 String STR_HELP_MENU_TEXT_SELECTION_MODE
 {
-	Text [ en-US ] = "Select Text";
+	Text [ en-US ] = "Select Text" ;
 };
 String STR_HELP_MENU_TEXT_COPY
 {
@@ -325,9 +325,9 @@ String STR_HELP_MENU_TEXT_COPY
 };
 ModalDialog DLG_HELP_ADDBOOKMARK
 {
-	HelpID = "sfx2:ModalDialog:DLG_HELP_ADDBOOKMARK";
+	HelpID = "sfx2:ModalDialog:DLG_HELP_ADDBOOKMARK" ;
 	Size = MAP_APPFONT ( 208, 43 ) ;
-	Text [ en-US ] = "Add to Bookmarks";
+	Text [ en-US ] = "Add to Bookmarks" ;
 	MOVEABLE = TRUE ;
 	CLOSEABLE = TRUE ;
 	OUTPUTSIZE = TRUE ;
@@ -342,7 +342,7 @@ ModalDialog DLG_HELP_ADDBOOKMARK
 	};
 	Edit ED_BOOKMARK_TITLE
 	{
-		HelpID = "sfx2:Edit:DLG_HELP_ADDBOOKMARK:ED_BOOKMARK_TITLE";
+		HelpID = "sfx2:Edit:DLG_HELP_ADDBOOKMARK:ED_BOOKMARK_TITLE" ;
 		PosSize = MAP_APPFONT ( 6, 19, 140, 12 ) ;
 		TABSTOP = TRUE ;
 		BORDER = TRUE ;
@@ -367,11 +367,11 @@ ModalDialog DLG_HELP_ADDBOOKMARK
 		PosSize = MAP_APPFONT ( 152, 43, 50, 14 ) ;
 		TABSTOP = TRUE ;
 		GROUP = TRUE ;
-		Hide = TRUE;
+		Hide = TRUE ;
 	};
 	String STR_BOOKMARK_RENAME
 	{
-		Text [ en-US ] = "Rename Bookmark";
+		Text [ en-US ] = "Rename Bookmark" ;
 	};
 };
 
@@ -382,8 +382,8 @@ Menu MENU_HELP_BOOKMARKS
 		MenuItem
 		{
 			Identifier = MID_OPEN ;
-			HelpId = HID_HELP_BOOKMARKS_OPEN;
-			Text [ en-US ] = "Display";
+			HelpId = HID_HELP_BOOKMARKS_OPEN ;
+			Text [ en-US ] = "Display" ;
 		};
 		MenuItem
 		{
@@ -392,14 +392,14 @@ Menu MENU_HELP_BOOKMARKS
 		MenuItem
 		{
 			Identifier = MID_RENAME ;
-			HelpId = HID_HELP_BOOKMARKS_RENAME;
-			Text [ en-US ] = "Rename...";
+			HelpId = HID_HELP_BOOKMARKS_RENAME ;
+			Text [ en-US ] = "Rename..." ;
 		};
 		MenuItem
 		{
 			Identifier = MID_DELETE ;
-			HelpId = HID_HELP_BOOKMARKS_DELETE;
-			Text [ en-US ] = "Delete";
+			HelpId = HID_HELP_BOOKMARKS_DELETE ;
+			Text [ en-US ] = "Delete" ;
 		};
 	};
 };
@@ -408,14 +408,14 @@ InfoBox RID_INFO_NOSEARCHRESULTS
 {
 	BUTTONS = WB_OK ;
 	DEFBUTTON = WB_DEF_OK ;
-	Message [ en-US ] = "No topics found.";
+	Message [ en-US ] = "No topics found." ;
 };
 
 InfoBox RID_INFO_NOSEARCHTEXTFOUND
 {
 	BUTTONS = WB_OK ;
 	DEFBUTTON = WB_DEF_OK ;
-	Message [ en-US ] = "The text you entered was not found.";
+	Message [ en-US ] = "The text you entered was not found." ;
 };
 
 Image IMG_HELP_TOOLBOX_HC_INDEX_ON
@@ -531,12 +531,14 @@ Image IMG_HELP_TOOLBOX_HCL_COPY
 
 CheckBox RID_HELP_ONSTARTUP_BOX
 {
-	HelpId = HID_HELP_ONSTARTUP_BOX;
-	Hide = TRUE;
-	TabStop = TRUE;
+	HelpId = HID_HELP_ONSTARTUP_BOX ;
+	Hide = TRUE ;
+	TabStop = TRUE ;
 	Size = MAP_APPFONT ( 200, 10 ) ;
 };
 String RID_HELP_ONSTARTUP_TEXT
 {
-	Text [ en-US ] = "~Display %PRODUCTNAME %MODULENAME Help at Startup";
+	Text [ en-US ] = "~Display %PRODUCTNAME %MODULENAME Help at Startup" ;
 };
+
+// ********************************************************************** EOF

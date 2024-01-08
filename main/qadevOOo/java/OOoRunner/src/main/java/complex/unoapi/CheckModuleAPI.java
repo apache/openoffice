@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 /** complex tests to check the UNO-API
@@ -46,7 +47,7 @@ import util.utils;
 
 /**
  * This Complex Test will test the UNO-API by calling dmake in <B>$MODULE</B>/qa/unoapi<p>
- * This test depends on some requirments:
+ * This test depends on some requirements:
  * The <B>TestJob</B> is <b>-o complex.unoapi.CheckModuleAPI::module(<CODE>MODULE</CODE>)</b><p> where <CODE>MODULE</CODE>
  * could be the following:<p>
  * <ul>
@@ -72,12 +73,12 @@ public class CheckModuleAPI extends ComplexTestCase
 
     /**
      * Initialize the test environment.
-     * This method checks for all neccesarry parameter and exit if not all parameter are set.
-     * 
-     * Further this method starts an office instance and gets the office some more time to start. This is because 
-     * some freshly installed offices don not have such a user tree. The office will create it on its first start, 
+     * This method checks for all necessary parameter and exit if not all parameter are set.
+     *
+     * Further this method starts an office instance and gets the office some more time to start. This is because
+     * some freshly installed offices don not have such a user tree. The office will create it on its first start,
      * but this will take some time.
-     * Note: This funktionality is only reasonable with parameter <CODE>-noOffice true</CODE>
+     * Note: This functionality is only reasonable with parameter <CODE>-noOffice true</CODE>
      */
     public void before()
     {
@@ -411,9 +412,9 @@ public class CheckModuleAPI extends ComplexTestCase
     }
 
     /**
-    Some modules contains more the one project. This methods translates given project paramater to the 
-     *  correspind module name.
-     * 
+    Some modules contain more than one project. This method translates given project parameter to the
+     *  corresponding module name.
+     *
      * fwk -> framework
      * fwl -> framework
      * sch -> chart2
@@ -435,7 +436,7 @@ public class CheckModuleAPI extends ComplexTestCase
         aModuleHashMap.put("sfx", "sfx2");
         aModuleHashMap.put("sm", "starmath");
 
-        // it could the that the parameter looks like "fwk,fwl". This results in double "famework,framework".
+        // it could the that the parameter looks like "fwk,fwl". This results in double "framework,framework".
         // The following loop correct this to only one "framework"
 
         final Set keys = aModuleHashMap.keySet();
@@ -525,8 +526,8 @@ public class CheckModuleAPI extends ComplexTestCase
     /**
      * This function generates a list of modules to test and call <CODE>checkModule</CODE> for every module.
      * <p>
-     * 
-     * @param module names to test. This could be 
+     *
+     * @param module names to test. This could be
      * <ul>
      * <li>a comma separated list of modules like 'sw,sc,sd'</li>
      * <li>'all' to test all modules </li>
@@ -541,7 +542,7 @@ public class CheckModuleAPI extends ComplexTestCase
         DescEntry entry = null;
         module = module.trim();
 
-        /* 
+        /*
         all: check all modules which contains a qa/unoapi folder
         auto: check all modules which contains a qa/unoapi folder except the module is not added
          */

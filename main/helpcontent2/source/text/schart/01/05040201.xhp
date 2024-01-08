@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textschart0105040201xml" indexer="include">
 <title id="tit" xml-lang="en-US">Scale</title>
@@ -33,7 +30,8 @@
 </meta>
 <body>
 <section id="skalierung">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150868"><bookmark_value>scaling; axes</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150868">
+<bookmark_value>scaling; axes</bookmark_value>
 <bookmark_value>logarithmic scaling along axes</bookmark_value>
 <bookmark_value>charts;scaling axes</bookmark_value>
 <bookmark_value>X axes;scaling</bookmark_value>
@@ -96,10 +94,8 @@
 <bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_SCALE:CBX_REVERSE:Category" id="bm_id4007080" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_SCALE:CBX_REVERSE:ValueAxis" id="bm_id1024200803164240" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_SCALE:CBX_REVERSE_MayBeDateAxis" id="bm_id109575190759" localize="false"/>
-
 <paragraph role="heading" id="hd_id9941404" xml-lang="en-US" level="3" l10n="NEW">Reverse direction</paragraph>
 <paragraph role="paragraph" id="par_id5581835" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Defines where the lower and where the higher values are displayed at the axis. The unchecked state is the mathematical direction.</ahelp> That means for Cartesian coordinate systems that the x-axis shows the lower values on the left and the y-axis shows the lower values at the bottom. For polar coordinate systems the mathematical angle axis direction is counterclockwise and the radial axis is from inner to outer.</paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/chart2:ListBox:TP_SCALE:LB_AXIS_TYPE" id="bm_id10022759" localize="false"/>
 <paragraph role="heading" id="hd_id922204" xml-lang="en-US" level="3" l10n="NEW">Type</paragraph>
 <paragraph role="paragraph" id="par_id59225" xml-lang="en-US" l10n="NEW"><ahelp hid=".">For some types of axes, you can select to format an axis as text or date, or to detect the type automatically.</ahelp> For the axis type "Date" you can set the following options.</paragraph>
@@ -109,9 +105,7 @@
 <bookmark xml-lang="en-US" branch="hid/chart2:MetricField:TP_SCALE:MT_MAIN_DATE_STEP" id="bm_id2210022759" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/chart2:ListBox:TP_SCALE:LB_MAIN_TIME_UNIT" id="bm_id1033022759" localize="false"/>
 <paragraph role="paragraph" id="par_id3359225" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Major interval can be set to show a certain number of days, months, or years.</ahelp></paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/chart2:ListBox:TP_SCALE:LB_HELP_TIME_UNIT" id="bm_id1472759" localize="false"/>
 <paragraph role="paragraph" id="par_id4459225" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Minor interval can be set to show a certain number of days, months, or years.</ahelp></paragraph>
-
 </body>
 </helpdocument>

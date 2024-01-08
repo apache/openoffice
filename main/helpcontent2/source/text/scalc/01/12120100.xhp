@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,42 +9,37 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textscalc0112120100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Criteria</title>
 <filename>/text/scalc/01/12120100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2007-04-10T15:02:52">UFI: sc.features: List and range validity in spreadsheet cells. 
-YJ: checked</lastedited>
-</history>
+<comment>sc.features: List and range validity in spreadsheet cells</comment>
 </meta>
 <body>
 <section id="werte">
-<bookmark xml-lang="en-US" branch="index" id="bm_id1464278"><bookmark_value>selection lists;validity</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id1464278">
+<bookmark_value>selection lists;validity</bookmark_value>
 </bookmark><comment>UFI added index entry for new list feature. Guide needed. MW changed index entry</comment>
 <bookmark xml-lang="en-US" branch="hid/sc:TabPage:TP_VALIDATION_VALUES" id="bm_id3145673" localize="false"/>
 <paragraph role="heading" id="hd_id3153032" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/12120100.xhp" name="Criteria">Criteria</link></paragraph>
 <paragraph role="paragraph" id="par_id3156327" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="SC:TABPAGE:TP_VALIDATION_VALUES">Specify the validation rules for the selected cell(s).</ahelp></paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/scalc/00/00000412.xhp#datengueltigwerte"/>
+<embed href="text/scalc/00/00000412.xhp#datengueltigwerte"/>
 </section>
 <paragraph role="paragraph" id="par_id3155923" xml-lang="en-US" l10n="U" oldref="4">For example, you can define criteria such as: "Numbers between 1 and 10" or "Texts that are no more than 20 characters".</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:ListBox:TP_VALIDATION_VALUES:LB_ALLOW" id="bm_id3148663" localize="false"/>
@@ -126,7 +120,6 @@ YJ: checked</lastedited>
 </tablecell>
 </tablerow>
 </table>
-
 <!-- removed HID SC:TRISTATEBOX:TP_VALIDATION_VALUES:TSB_ALLOW_BLANKS -->
 <bookmark xml-lang="en-US" branch="hid/sc:CheckBox:TP_VALIDATION_VALUES:TSB_ALLOW_BLANKS" id="bm_id263985" localize="false"/>
 <paragraph role="heading" id="hd_id3154704" xml-lang="en-US" level="2" l10n="CHG" oldref="7">Allow empty cells</paragraph>
@@ -144,14 +137,14 @@ YJ: checked</lastedited>
 <paragraph role="paragraph" id="par_idN1075E" xml-lang="en-US" l10n="NEW"><ahelp hid="sc:MultiLineEdit:TP_VALIDATION_VALUES:EDT_LIST">Enter the entries that will be valid values or text strings.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:ListBox:TP_VALIDATION_VALUES:LB_VALUE" id="bm_id3147344" localize="false"/>
 <paragraph role="heading" id="hd_id3163807" xml-lang="en-US" level="2" l10n="U" oldref="9">Data</paragraph>
-<paragraph role="paragraph" id="par_id3144502" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SC:LISTBOX:TP_VALIDATION_VALUES:LB_VALUE">Select the comparative operator that you want to use.</ahelp> The available operators depend on what you selected in the <emph>Allow </emph>box. If you select "between" or "not between", the <emph>Minimum</emph> and <emph>Maximum</emph> input boxes appear. Otherwise, only the <emph>Minimum</emph>, the <emph>Maximum, or the Value</emph> input boxes appear.</paragraph>
+<paragraph role="paragraph" id="par_id3144502" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SC:LISTBOX:TP_VALIDATION_VALUES:LB_VALUE">Select the comparative operator that you want to use.</ahelp> The available operators depend on what you selected in the <emph>Allow</emph> box. If you select "between" or "not between", the <emph>Minimum</emph> and <emph>Maximum</emph> input boxes appear. Otherwise, only the <emph>Minimum</emph>, the <emph>Maximum, or the Value</emph> input boxes appear.</paragraph>
 <paragraph role="heading" id="hd_id3153782" xml-lang="en-US" level="2" l10n="U" oldref="11">Value</paragraph>
-<paragraph role="paragraph" id="par_id3153266" xml-lang="en-US" l10n="CHG" oldref="12">Enter the value for the data validation option that you selected in the <emph>Allow </emph>box.</paragraph>
+<paragraph role="paragraph" id="par_id3153266" xml-lang="en-US" l10n="CHG" oldref="12">Enter the value for the data validation option that you selected in the <emph>Allow</emph> box.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:Edit:TP_VALIDATION_VALUES:EDT_MIN" id="bm_id3149528" localize="false"/>
 <paragraph role="heading" id="hd_id3149814" xml-lang="en-US" level="2" l10n="U" oldref="13">Minimum</paragraph>
-<paragraph role="paragraph" id="par_id3153199" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SC:EDIT:TP_VALIDATION_VALUES:EDT_MIN">Enter the minimum value for the data validation option that you selected in the <emph>Allow </emph>box.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3153199" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SC:EDIT:TP_VALIDATION_VALUES:EDT_MIN">Enter the minimum value for the data validation option that you selected in the <emph>Allow</emph> box.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:Edit:TP_VALIDATION_VALUES:EDT_MAX" id="bm_id3150206" localize="false"/>
 <paragraph role="heading" id="hd_id3149035" xml-lang="en-US" level="2" l10n="U" oldref="15">Maximum</paragraph>
-<paragraph role="paragraph" id="par_id3150089" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SC:EDIT:TP_VALIDATION_VALUES:EDT_MAX">Enter the maximum value for the data validation option that you selected in the <emph>Allow </emph>box.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150089" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SC:EDIT:TP_VALIDATION_VALUES:EDT_MAX">Enter the maximum value for the data validation option that you selected in the <emph>Allow</emph> box.</ahelp></paragraph>
 </body>
 </helpdocument>

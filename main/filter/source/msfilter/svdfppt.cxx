@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -172,18 +172,18 @@
 #define FIXED_PITCH				0x01
 #define VARIABLE_PITCH			0x02
 
-using namespace ::com::sun::star    ;
-using namespace uno		            ;
-using namespace beans		        ;
-using namespace drawing	            ;
-using namespace container	        ;
-using namespace table		        ;
+using namespace ::com::sun::star	;
+using namespace uno					;
+using namespace beans				;
+using namespace drawing				;
+using namespace container			;
+using namespace table				;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 PowerPointImportParam::PowerPointImportParam( SvStream& rDocStrm, sal_uInt32 nFlags, MSFilterTracer* pT ) :
-    rDocStream      ( rDocStrm ),
-    nImportFlags    ( nFlags ),
+	rDocStream		( rDocStrm ),
+	nImportFlags	( nFlags ),
 	pTracer			( pT )
 {
 }
@@ -192,8 +192,8 @@ PowerPointImportParam::PowerPointImportParam( SvStream& rDocStrm, sal_uInt32 nFl
 
 SvStream& operator>>( SvStream& rIn, PptCurrentUserAtom& rAtom )
 {
-    DffRecordHeader aHd;
-    rIn >> aHd;
+	DffRecordHeader aHd;
+	rIn >> aHd;
 	if ( aHd.nRecType == PPT_PST_CurrentUserAtom )
 	{
 		sal_uInt32 nLen;
@@ -209,36 +209,36 @@ SvStream& operator>>( SvStream& rIn, PptCurrentUserAtom& rAtom )
 		SvxMSDffManager::MSDFFReadZString( rIn, rAtom.aCurrentUser, nUserNameLen, sal_True );
 	}
 	aHd.SeekToEndOfRecord( rIn );
-    return rIn;
+	return rIn;
 }
 
 void PptSlidePersistAtom::Clear()
 {
-    nReserved = nPsrReference = nFlags = nNumberTexts = nSlideId = 0;
+	nReserved = nPsrReference = nFlags = nNumberTexts = nSlideId = 0;
 }
 
 SvStream& operator>>( SvStream& rIn, PptSlidePersistAtom& rAtom )
 {
-    DffRecordHeader aHd;
-    rIn >> aHd
+	DffRecordHeader aHd;
+	rIn >> aHd
 		>> rAtom.nPsrReference
 		>> rAtom.nFlags
 		>> rAtom.nNumberTexts
 		>> rAtom.nSlideId;
 //		>> rAtom.nReserved;
-    aHd.SeekToEndOfRecord( rIn );
-    return rIn;
+	aHd.SeekToEndOfRecord( rIn );
+	return rIn;
 }
 
 SV_IMPL_PTRARR(_PptSlidePersistList,PptSlidePersistEntry*);
 
 sal_uInt16 PptSlidePersistList::FindPage(sal_uInt32 nId) const
 {
-    for ( sal_uInt16 i=0; i < Count(); i++ )
+	for ( sal_uInt16 i=0; i < Count(); i++ )
 	{
-        if (operator[](i)->GetSlideId()==nId) return i;
-    }
-    return PPTSLIDEPERSIST_ENTRY_NOTFOUND;
+		if (operator[](i)->GetSlideId()==nId) return i;
+	}
+	return PPTSLIDEPERSIST_ENTRY_NOTFOUND;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -255,7 +255,7 @@ SvStream& operator>>( SvStream& rIn, PptInteractiveInfoAtom& rAtom )
 		>> rAtom.nUnknown1
 		>> rAtom.nUnknown2
 		>> rAtom.nUnknown3;
-    return rIn;
+	return rIn;
 }
 
 SvStream& operator>>( SvStream& rIn, PptExOleObjAtom& rAtom )
@@ -273,36 +273,36 @@ Size PptDocumentAtom::GetPageSize(const Size& rSiz) const
 {
 	return rSiz;
 /*
-    Size aRet;
-    switch ( eSlidesPageFormat )
+	Size aRet;
+	switch ( eSlidesPageFormat )
 	{
-        // Wenn man in PowerPoint als Seitenformat "Bildschirmgroesse"
-        // einstellt, dann zeigt dieser Dialog zwar 24x18cm an, die
-        // angezeigte Seite ist aber anders. Das sieht man, wenn man
-        // ein Rechteck seitenfuellend aufzieht und sich dessen Groesse
-        // ansieht. Die importierten Abmessungen sind auf jeden Fall
-        // die, die auch im Ppt-File stehen. Ich denke, das es sich
-        // hier eher um ein Bug in PowerPoint handelt, das im
-        // Seitenformat-Dialog bei "Bildschirmgroesse" falsche Masse
-        // angezeigt werden (vielleicht ja auch bildschirmabhaengig?).
-//      case PPTPF_SCREEN  : aRet.Width()=4082; aRet.Height()=5443; break;
+		// Wenn man in PowerPoint als Seitenformat "Bildschirmgroesse"
+		// einstellt, dann zeigt dieser Dialog zwar 24x18cm an, die
+		// angezeigte Seite ist aber anders. Das sieht man, wenn man
+		// ein Rechteck seitenfuellend aufzieht und sich dessen Groesse
+		// ansieht. Die importierten Abmessungen sind auf jeden Fall
+		// die, die auch im Ppt-File stehen. Ich denke, das es sich
+		// hier eher um ein Bug in PowerPoint handelt, das im
+		// Seitenformat-Dialog bei "Bildschirmgroesse" falsche Masse
+		// angezeigt werden (vielleicht ja auch bildschirmabhaengig?).
+//		case PPTPF_SCREEN  : aRet.Width()=4082; aRet.Height()=5443; break;
 		case PPTPF_USLETTER: aRet.Width()=4896; aRet.Height()=6336; break;
 		case PPTPF_A4      : aRet.Width()=4762; aRet.Height()=6735; break;
-//      case PPTPF_35MMDIA : aRet.Width()=4082; aRet.Height()=6123; break;
-//      case PPTPF_OVERHEAD: aRet.Width()=4082; aRet.Height()=5443; break;
-    }
-    if ( aRet.Width() )
+//		case PPTPF_35MMDIA : aRet.Width()=4082; aRet.Height()=6123; break;
+//		case PPTPF_OVERHEAD: aRet.Width()=4082; aRet.Height()=5443; break;
+	}
+	if ( aRet.Width() )
 	{
-        if ( rSiz.Width() > rSiz.Height() )
+		if ( rSiz.Width() > rSiz.Height() )
 		{	// Querformat
-            long nMerk = aRet.Width();
-            aRet.Width() = aRet.Height();
-            aRet.Height() = nMerk;
-        }
-    }
+			long nMerk = aRet.Width();
+			aRet.Width() = aRet.Height();
+			aRet.Height() = nMerk;
+		}
+	}
 	else	// CustomFormat oder Unbekannt oder Screen,Dia,Overhead
-        aRet = rSiz;
-    return aRet;
+		aRet = rSiz;
+	return aRet;
 */
 }
 
@@ -321,12 +321,12 @@ SvStream& operator>>(SvStream& rIn, PptDocumentAtom& rAtom)
 //  38 bRightToLeft      1
 //  39 bShowComments     1
 
-    DffRecordHeader aHd;
-    sal_Int32	nSlideX,nSlideY, nNoticeX, nNoticeY, nDummy;
-    sal_uInt16	nSlidePageFormat;
-    sal_Int8	nEmbeddedTrueType, nTitlePlaceHoldersOmitted, nRightToLeft, nShowComments;
+	DffRecordHeader aHd;
+	sal_Int32	nSlideX,nSlideY, nNoticeX, nNoticeY, nDummy;
+	sal_uInt16	nSlidePageFormat;
+	sal_Int8	nEmbeddedTrueType, nTitlePlaceHoldersOmitted, nRightToLeft, nShowComments;
 
-    rIn >> aHd
+	rIn >> aHd
 		>> nSlideX >> nSlideY
 		>> nNoticeX >> nNoticeY
 		>> nDummy >> nDummy				// ZoomRation ueberspringen
@@ -344,111 +344,111 @@ SvStream& operator>>(SvStream& rIn, PptDocumentAtom& rAtom)
 	rAtom.aNotesPageSize.Height() = nNoticeY;
 	rAtom.eSlidesPageFormat = (PptPageFormat)nSlidePageFormat;
 	rAtom.bEmbeddedTrueType = nEmbeddedTrueType;
-    rAtom.bTitlePlaceholdersOmitted = nTitlePlaceHoldersOmitted;
-    rAtom.bRightToLeft = nRightToLeft;
-    rAtom.bShowComments = nShowComments;
-    aHd.SeekToEndOfRecord( rIn );
-    return rIn;
+	rAtom.bTitlePlaceholdersOmitted = nTitlePlaceHoldersOmitted;
+	rAtom.bRightToLeft = nRightToLeft;
+	rAtom.bShowComments = nShowComments;
+	aHd.SeekToEndOfRecord( rIn );
+	return rIn;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void PptSlideLayoutAtom::Clear()
 {
-    eLayout = 0;
-    for ( sal_uInt16 i = 0; i < 8; i++ )
+	eLayout = 0;
+	for ( sal_uInt16 i = 0; i < 8; i++ )
 	{
-        aPlaceholderId[ i ] = 0;
-        aPlacementId[ i ] = 0;
-    }
+		aPlaceholderId[ i ] = 0;
+		aPlacementId[ i ] = 0;
+	}
 }
 
 SvStream& operator>>( SvStream& rIn, PptSlideLayoutAtom& rAtom )
 {
-    rIn >> rAtom.eLayout;
-    rIn.Read( rAtom.aPlaceholderId, 8 );
-    return rIn;
+	rIn >> rAtom.eLayout;
+	rIn.Read( rAtom.aPlaceholderId, 8 );
+	return rIn;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SvStream& operator>>( SvStream& rIn, PptSlideAtom& rAtom )
 {
-    DffRecordHeader aHd;
-    rIn	>> aHd
+	DffRecordHeader aHd;
+	rIn	>> aHd
 		>> rAtom.aLayout
 		>> rAtom.nMasterId
 		>> rAtom.nNotesId
 		>> rAtom.nFlags;
-    aHd.SeekToEndOfRecord( rIn );
-    return rIn;
+	aHd.SeekToEndOfRecord( rIn );
+	return rIn;
 }
 
 void PptSlideAtom::Clear()
 {
-    nMasterId = nNotesId = 0;
-    nFlags = 0;
+	nMasterId = nNotesId = 0;
+	nFlags = 0;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SvStream& operator>>( SvStream& rIn, PptNotesAtom& rAtom )
 {
-    DffRecordHeader aHd;
-    rIn >> aHd
+	DffRecordHeader aHd;
+	rIn >> aHd
 		>> rAtom.nSlideId
 		>> rAtom.nFlags;
-    aHd.SeekToEndOfRecord( rIn );
-    return rIn;
+	aHd.SeekToEndOfRecord( rIn );
+	return rIn;
 }
 
 void PptNotesAtom::Clear()
 {
-    nSlideId = 0;
-    nFlags = 0;
+	nSlideId = 0;
+	nFlags = 0;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void PptColorSchemeAtom::Clear()
 {
-    memset(&aData[0], 0, 32);
+	memset(&aData[0], 0, 32);
 }
 
 Color PptColorSchemeAtom::GetColor( sal_uInt16 nNum ) const
 {
 	Color aRetval;
-    if ( nNum < 8 )
+	if ( nNum < 8 )
 	{
-        nNum <<= 2;
-        aRetval.SetRed( aData[ nNum++ ] );
-        aRetval.SetGreen( aData[ nNum++ ] );
-        aRetval.SetBlue( aData[ nNum++ ] );
-    }
+		nNum <<= 2;
+		aRetval.SetRed( aData[ nNum++ ] );
+		aRetval.SetGreen( aData[ nNum++ ] );
+		aRetval.SetBlue( aData[ nNum++ ] );
+	}
 	return aRetval;
 }
 
 SvStream& operator>>( SvStream& rIn, PptColorSchemeAtom& rAtom )
 {
-    DffRecordHeader aHd;
-    rIn >> aHd;
-    rIn.Read( rAtom.aData, 32 );
-    aHd.SeekToEndOfRecord( rIn );
-    return rIn;
+	DffRecordHeader aHd;
+	rIn >> aHd;
+	rIn.Read( rAtom.aData, 32 );
+	aHd.SeekToEndOfRecord( rIn );
+	return rIn;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SvStream& operator>>( SvStream& rIn, PptFontEntityAtom& rAtom )
 {
-    DffRecordHeader aHd;
-    rIn >> aHd;
-    sal_Unicode	nTemp, cData[ 32 ];
-    rIn.Read( cData, 64 );
+	DffRecordHeader aHd;
+	rIn >> aHd;
+	sal_Unicode	nTemp, cData[ 32 ];
+	rIn.Read( cData, 64 );
 
 	sal_uInt8	lfCharset, lfPitchAndFamily;
 
-    rIn >> lfCharset
+	rIn >> lfCharset
 		>> rAtom.lfClipPrecision
 		>> rAtom.lfQuality
 		>> lfPitchAndFamily;
@@ -522,8 +522,8 @@ SvStream& operator>>( SvStream& rIn, PptFontEntityAtom& rAtom )
 	rAtom.aName = String( cData, i );
 	OutputDevice* pDev = (OutputDevice*)Application::GetDefaultDevice();
 	rAtom.bAvailable = pDev->IsFontAvailable( rAtom.aName );
-    aHd.SeekToEndOfRecord( rIn );
-    return rIn;
+	aHd.SeekToEndOfRecord( rIn );
+	return rIn;
 }
 
 SV_DECL_PTRARR_DEL( PptFontEntityAtomList, PptFontEntityAtom*, 16, 16 )
@@ -536,7 +536,7 @@ class PptFontCollection: public PptFontEntityAtomList {
 
 SvStream& operator>>( SvStream& rIn, PptUserEditAtom& rAtom )
 {
-    rIn >> rAtom.aHd
+	rIn >> rAtom.aHd
 		>> rAtom.nLastSlideID
 		>> rAtom.nVersion
 		>> rAtom.nOffsetLastEdit
@@ -544,8 +544,8 @@ SvStream& operator>>( SvStream& rIn, PptUserEditAtom& rAtom )
 		>> rAtom.nDocumentRef
 		>> rAtom.nMaxPersistWritten
 		>> rAtom.eLastViewType;
-    rAtom.aHd.SeekToEndOfRecord(rIn);
-    return rIn;
+	rAtom.aHd.SeekToEndOfRecord(rIn);
+	return rIn;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -553,21 +553,21 @@ SvStream& operator>>( SvStream& rIn, PptUserEditAtom& rAtom )
 void PptOEPlaceholderAtom::Clear()
 {
 	nPlacementId = 0;
-    nPlaceholderSize = nPlaceholderId = 0;
+	nPlaceholderSize = nPlaceholderId = 0;
 }
 
 SvStream& operator>>( SvStream& rIn, PptOEPlaceholderAtom& rAtom )
 {
-    rIn	>> rAtom.nPlacementId
+	rIn	>> rAtom.nPlacementId
 		>> rAtom.nPlaceholderId
 		>> rAtom.nPlaceholderSize;
-    return rIn;
+	return rIn;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 PptSlidePersistEntry::PptSlidePersistEntry() :
-    pStyleSheet				( NULL ),
+	pStyleSheet				( NULL ),
 	pHeaderFooterEntry		( NULL ),
 	pSolverContainer		( NULL ),
 	nSlidePersistStartOffset( 0 ),
@@ -599,18 +599,18 @@ PptSlidePersistEntry::~PptSlidePersistEntry()
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrEscherImport::SdrEscherImport( PowerPointImportParam& rParam, const String& rBaseURL ) :
-	SvxMSDffManager         ( rParam.rDocStream, rBaseURL, rParam.pTracer ),
-    pFonts					( NULL ),
-    nStreamLen				( 0 ),
+	SvxMSDffManager			( rParam.rDocStream, rBaseURL, rParam.pTracer ),
+	pFonts					( NULL ),
+	nStreamLen				( 0 ),
 	nTextStylesIndex		( 0xffff ),
 	eCharSetSystem			( gsl_getSystemTextEncoding() ),
 	bWingdingsChecked		( sal_False ),
-    bWingdingsAvailable		( sal_False ),
+	bWingdingsAvailable		( sal_False ),
 	bMonotypeSortsChecked	( sal_False ),
-    bMonotypeSortsAvailable	( sal_False ),
-    bTimesNewRomanChecked	( sal_False ),
-    bTimesNewRomanAvailable	( sal_False ),
-    rImportParam            ( rParam )
+	bMonotypeSortsAvailable	( sal_False ),
+	bTimesNewRomanChecked	( sal_False ),
+	bTimesNewRomanAvailable	( sal_False ),
+	rImportParam			( rParam )
 {
 }
 
@@ -619,39 +619,39 @@ SdrEscherImport::~SdrEscherImport()
 	void* pPtr;
 	for ( pPtr = aOleObjectList.First(); pPtr; pPtr = aOleObjectList.Next() )
 		delete (PPTOleEntry*)pPtr;
-    delete pFonts;
+	delete pFonts;
 }
 
 const PptSlideLayoutAtom* SdrEscherImport::GetSlideLayoutAtom() const
 {
-    return NULL;
+	return NULL;
 }
 
 sal_Bool SdrEscherImport::ReadString( String& rStr ) const
 {
-    sal_Bool bRet = sal_False;
-    DffRecordHeader aStrHd;
-    rStCtrl >> aStrHd;
-    if (aStrHd.nRecType == PPT_PST_TextBytesAtom
+	sal_Bool bRet = sal_False;
+	DffRecordHeader aStrHd;
+	rStCtrl >> aStrHd;
+	if (aStrHd.nRecType == PPT_PST_TextBytesAtom
 		|| aStrHd.nRecType == PPT_PST_TextCharsAtom
 		|| aStrHd.nRecType == PPT_PST_CString)
 	{
-        sal_Bool bUniCode =
+		sal_Bool bUniCode =
 			(aStrHd.nRecType == PPT_PST_TextCharsAtom
 			|| aStrHd.nRecType == PPT_PST_CString);
-        bRet=sal_True;
-        sal_uLong nBytes = aStrHd.nRecLen;
-        MSDFFReadZString( rStCtrl, rStr, nBytes, bUniCode );
-        aStrHd.SeekToEndOfRecord( rStCtrl );
-    }
+		bRet=sal_True;
+		sal_uLong nBytes = aStrHd.nRecLen;
+		MSDFFReadZString( rStCtrl, rStr, nBytes, bUniCode );
+		aStrHd.SeekToEndOfRecord( rStCtrl );
+	}
 	else
-        aStrHd.SeekToBegOfRecord( rStCtrl );
-    return bRet;
+		aStrHd.SeekToBegOfRecord( rStCtrl );
+	return bRet;
 }
 
 FASTBOOL SdrEscherImport::GetColorFromPalette(sal_uInt16 /*nNum*/, Color& /*rColor*/) const
 {
-    return sal_False;
+	return sal_False;
 }
 
 sal_Bool SdrEscherImport::SeekToShape( SvStream& /*rSt*/, void* /*pClientData*/, sal_uInt32 /*nId*/) const
@@ -662,30 +662,30 @@ sal_Bool SdrEscherImport::SeekToShape( SvStream& /*rSt*/, void* /*pClientData*/,
 PptFontEntityAtom* SdrEscherImport::GetFontEnityAtom( sal_uInt32 nNum ) const
 {
 	PptFontEntityAtom* pRetValue = NULL;
-    if ( pFonts && ( nNum < pFonts->Count() ) )
-        pRetValue = (*pFonts)[ (sal_uInt16)nNum ];
-    return pRetValue;
+	if ( pFonts && ( nNum < pFonts->Count() ) )
+		pRetValue = (*pFonts)[ (sal_uInt16)nNum ];
+	return pRetValue;
 }
 
 CharSet SdrEscherImport::GetCharSet( sal_uInt32 nNum ) const
 {
 	CharSet eRetValue( eCharSetSystem );
-    if ( pFonts && ( nNum < pFonts->Count() ) )
-        eRetValue = (*pFonts)[ (sal_uInt16)nNum ]->eCharSet;
-    return eRetValue;
+	if ( pFonts && ( nNum < pFonts->Count() ) )
+		eRetValue = (*pFonts)[ (sal_uInt16)nNum ]->eCharSet;
+	return eRetValue;
 }
 
 sal_Bool SdrEscherImport::IsFontAvailable( sal_uInt32 nNum ) const
 {
 	sal_Bool bRetValue = sal_False;
-    if ( pFonts && ( nNum < pFonts->Count() ) )
-        bRetValue = (*pFonts)[ (sal_uInt16)nNum ]->bAvailable;
+	if ( pFonts && ( nNum < pFonts->Count() ) )
+		bRetValue = (*pFonts)[ (sal_uInt16)nNum ]->bAvailable;
 	return bRetValue;
 }
 
 SdrObject* SdrEscherImport::ReadObjText( PPTTextObj* /*pTextObj*/, SdrObject* pObj, SdPage* /*pPage*/) const
 {
-    return pObj;
+	return pObj;
 }
 
 void SdrEscherImport::ProcessClientAnchor2( SvStream& rSt, DffRecordHeader& rHd, void* /*pData*/, DffObjData& rObj )
@@ -816,7 +816,7 @@ void SdrEscherImport::RecolorGraphic( SvStream& rSt, sal_uInt32 nRecLen, Graphic
 	}
 }
 
-/* ProcessObject is called from ImplSdPPTImport::ProcessObj to hanlde all application specific things,
+/* ProcessObject is called from ImplSdPPTImport::ProcessObj to handle all application specific things,
    such as the import of text, animation effects, header footer and placeholder.
 
    The parameter pOriginalObj is the object as it was imported by our general escher import, it must either
@@ -886,7 +886,7 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 				nPageNum--;
 
 			// replacing the object which we will return with a SdrPageObj
-            SdrObject::Free( pRet );
+			SdrObject::Free( pRet );
 			pRet = new SdrPageObj( rObjData.aBoundRect, pSdrModel->GetPage( nPageNum - 1 ) );
 		}
 		else
@@ -963,8 +963,8 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 
 				if ( bVerticalText )
 				{
-    				eTVA = SDRTEXTVERTADJUST_BLOCK;
-	    			eTHA = SDRTEXTHORZADJUST_CENTER;
+					eTVA = SDRTEXTVERTADJUST_BLOCK;
+					eTHA = SDRTEXTHORZADJUST_CENTER;
 
 					// Textverankerung lesen
 					MSO_Anchor eTextAnchor = (MSO_Anchor)GetPropertyValue( DFF_Prop_anchorText, mso_anchorTop );
@@ -1001,7 +1001,7 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 						{
 							// check if it is sensible to use the centered alignment
 							sal_uInt32 nMask = PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT;
-							if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left and also right aligned pararagraphs
+							if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left and also right aligned paragraphs
 								eTVA = SDRTEXTVERTADJUST_CENTER;    // the text has to be displayed using the full width;
 						}
 						break;
@@ -1057,7 +1057,7 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 						{
 							// check if it is sensible to use the centered alignment
 							sal_uInt32 nMask = PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT;
-							if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left and also right aligned pararagraphs
+							if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left and also right aligned paragraphs
 								eTHA = SDRTEXTHORZADJUST_CENTER;    // the text has to be displayed using the full width;
 						}
 						break;
@@ -1177,9 +1177,9 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 					{
 						bAutoGrowWidth = sal_False;
 
-                        // #119885# re-activationg bFitShapeToText here, could not find deeper explanations
-                        // for it (it was from 2005). Keeping the old commeht here for reference
-                        // old comment: // bFitShapeToText;	can't be used, because we cut the text if it is too height,
+						// #119885# re-activationg bFitShapeToText here, could not find deeper explanations
+						// for it (it was from 2005). Keeping the old comment here for reference
+						// old comment: // bFitShapeToText;	can't be used, because we cut the text if it is too height,
 						bAutoGrowHeight = bFitShapeToText;
 					}
 				}
@@ -1342,10 +1342,10 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 			for ( SvxMSDffConnectorRule* pPtr = (SvxMSDffConnectorRule*)rPersistEntry.pSolverContainer->aCList.First();
 				pPtr; pPtr = (SvxMSDffConnectorRule*)rPersistEntry.pSolverContainer->aCList.Next() )
 			{
-                if ( rObjData.nShapeId == pPtr->nShapeC )
+				if ( rObjData.nShapeId == pPtr->nShapeC )
 					pPtr->pCObj = pRet;
-                else
-                {
+				else
+				{
 					SdrObject* pConnectObj = pRet;
 					if ( pOriginalObj && pRet->ISA( SdrObjGroup ) )
 					{	/* check if the original object from the escherimport is part of the group object,
@@ -1361,17 +1361,17 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 							}
 						}
 					}
-				    if ( rObjData.nShapeId == pPtr->nShapeA )
-                    {
-					    pPtr->pAObj = pConnectObj;
-                        pPtr->nSpFlagsA = rObjData.nSpFlags;
-                    }
-				    if ( rObjData.nShapeId == pPtr->nShapeB )
-                    {
-					    pPtr->pBObj = pConnectObj;
-                        pPtr->nSpFlagsB = rObjData.nSpFlags;
-                    }
-                }
+					if ( rObjData.nShapeId == pPtr->nShapeA )
+					{
+						pPtr->pAObj = pConnectObj;
+						pPtr->nSpFlagsA = rObjData.nSpFlags;
+					}
+					if ( rObjData.nShapeId == pPtr->nShapeB )
+					{
+						pPtr->pBObj = pConnectObj;
+						pPtr->nSpFlagsB = rObjData.nSpFlags;
+					}
+				}
 			}
 		}
 		if ( rPersistEntry.ePageKind == PPT_MASTERPAGE )
@@ -1401,23 +1401,23 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 
 void SdrEscherImport::CheckWingdings() const
 {
-    OutputDevice* pDev = (OutputDevice*)Application::GetDefaultDevice();
-    ((SdrEscherImport*)this)->bWingdingsAvailable = pDev->IsFontAvailable( String( RTL_CONSTASCII_USTRINGPARAM( "WINGDINGS" ) ) );
-    ((SdrEscherImport*)this)->bWingdingsChecked = sal_True;
+	OutputDevice* pDev = (OutputDevice*)Application::GetDefaultDevice();
+	((SdrEscherImport*)this)->bWingdingsAvailable = pDev->IsFontAvailable( String( RTL_CONSTASCII_USTRINGPARAM( "WINGDINGS" ) ) );
+	((SdrEscherImport*)this)->bWingdingsChecked = sal_True;
 }
 
 void SdrEscherImport::CheckMonotypeSorts() const
 {
-    OutputDevice* pDev = (OutputDevice*)Application::GetDefaultDevice();
-    ((SdrEscherImport*)this)->bMonotypeSortsAvailable = pDev->IsFontAvailable( String( RTL_CONSTASCII_USTRINGPARAM( "MONOTYPE SORTS" ) ) );
-    ((SdrEscherImport*)this)->bMonotypeSortsChecked = sal_True;
+	OutputDevice* pDev = (OutputDevice*)Application::GetDefaultDevice();
+	((SdrEscherImport*)this)->bMonotypeSortsAvailable = pDev->IsFontAvailable( String( RTL_CONSTASCII_USTRINGPARAM( "MONOTYPE SORTS" ) ) );
+	((SdrEscherImport*)this)->bMonotypeSortsChecked = sal_True;
 }
 
 void SdrEscherImport::CheckTimesNewRoman() const
 {
-    OutputDevice* pDev = (OutputDevice*)Application::GetDefaultDevice();
-    ((SdrEscherImport*)this)->bTimesNewRomanAvailable = pDev->IsFontAvailable( String( RTL_CONSTASCII_USTRINGPARAM( "TIMES NEW ROMAN" ) ) );
-    ((SdrEscherImport*)this)->bTimesNewRomanChecked = sal_True;
+	OutputDevice* pDev = (OutputDevice*)Application::GetDefaultDevice();
+	((SdrEscherImport*)this)->bTimesNewRomanAvailable = pDev->IsFontAvailable( String( RTL_CONSTASCII_USTRINGPARAM( "TIMES NEW ROMAN" ) ) );
+	((SdrEscherImport*)this)->bTimesNewRomanChecked = sal_True;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1425,25 +1425,25 @@ void SdrEscherImport::CheckTimesNewRoman() const
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrPowerPointImport::SdrPowerPointImport( PowerPointImportParam& rParam, const String& rBaseURL ) :
-	SdrEscherImport     ( rParam, rBaseURL ),
+	SdrEscherImport		( rParam, rBaseURL ),
 	bOk					( rStCtrl.GetErrorCode() == SVSTREAM_OK ),
-    pPersistPtr			( NULL ),
-    nPersistPtrAnz		( 0 ),
-    pDefaultSheet       ( NULL ),
-    pMasterPages		( NULL ),
-    pSlidePages			( NULL ),
-    pNotePages			( NULL ),
-    nAktPageNum			( 0 ),
-    nDocStreamPos		( 0 ),
-    nPageColorsNum		( 0xFFFF ),
-    ePageColorsKind		( PPT_MASTERPAGE ),
-    eAktPageKind		( PPT_MASTERPAGE )
+	pPersistPtr			( NULL ),
+	nPersistPtrAnz		( 0 ),
+	pDefaultSheet		( NULL ),
+	pMasterPages		( NULL ),
+	pSlidePages			( NULL ),
+	pNotePages			( NULL ),
+	nAktPageNum			( 0 ),
+	nDocStreamPos		( 0 ),
+	nPageColorsNum		( 0xFFFF ),
+	ePageColorsKind		( PPT_MASTERPAGE ),
+	eAktPageKind		( PPT_MASTERPAGE )
 {
 	DffRecordHeader* pHd;
-    if ( bOk )
+	if ( bOk )
 	{
-        rStCtrl.Seek( STREAM_SEEK_TO_END );
-        nStreamLen = rStCtrl.Tell();
+		rStCtrl.Seek( STREAM_SEEK_TO_END );
+		nStreamLen = rStCtrl.Tell();
 
 		// try to allocate the UserEditAtom via CurrentUserAtom
 		sal_uInt32 nCurrentUserEdit = rParam.aCurrentUserAtom.nCurrentUserEdit;
@@ -1470,13 +1470,13 @@ SdrPowerPointImport::SdrPowerPointImport( PowerPointImportParam& rParam, const S
 			if ( !pHd )
 				bOk = sal_False;
 		}
-    }
-    if ( rStCtrl.GetError() != 0 )
+	}
+	if ( rStCtrl.GetError() != 0 )
 		bOk = sal_False;
 
 	if ( bOk )
 	{
-        nPersistPtrAnz = aUserEditAtom.nMaxPersistWritten + 1;
+		nPersistPtrAnz = aUserEditAtom.nMaxPersistWritten + 1;
 		if ( ( nPersistPtrAnz >> 2 ) > nStreamLen )		// sj: at least nPersistPtrAnz is not allowed to be greater than filesize
 			bOk = sal_False;								// (it should not be greater than the PPT_PST_PersistPtrIncrementalBlock, but
 														// we are reading this block later, so we do not have access yet)
@@ -1542,46 +1542,46 @@ SdrPowerPointImport::SdrPowerPointImport( PowerPointImportParam& rParam, const S
 				}
 			}
 		}
-    }
-    if ( rStCtrl.GetError() != 0 )
+	}
+	if ( rStCtrl.GetError() != 0 )
 		bOk = sal_False;
-    if ( bOk )
+	if ( bOk )
 	{	// Document PersistEntry checken
-        nDocStreamPos = aUserEditAtom.nDocumentRef;
-        if ( nDocStreamPos > nPersistPtrAnz )
+		nDocStreamPos = aUserEditAtom.nDocumentRef;
+		if ( nDocStreamPos > nPersistPtrAnz )
 		{
-            DBG_ERROR("SdrPowerPointImport::Ctor(): aUserEditAtom.nDocumentRef ungueltig!");
-            bOk = sal_False;
-        }
-    }
-    if ( bOk )
+			DBG_ERROR("SdrPowerPointImport::Ctor(): aUserEditAtom.nDocumentRef ungueltig!");
+			bOk = sal_False;
+		}
+	}
+	if ( bOk )
 	{	// Document FilePos checken
-        nDocStreamPos = pPersistPtr[ nDocStreamPos ];
-        if ( nDocStreamPos >= nStreamLen )
+		nDocStreamPos = pPersistPtr[ nDocStreamPos ];
+		if ( nDocStreamPos >= nStreamLen )
 		{
-            DBG_ERROR("SdrPowerPointImport::Ctor(): nDocStreamPos >= nStreamLen!");
-            bOk = sal_False;
-        }
-    }
-    if ( bOk )
+			DBG_ERROR("SdrPowerPointImport::Ctor(): nDocStreamPos >= nStreamLen!");
+			bOk = sal_False;
+		}
+	}
+	if ( bOk )
 	{
-        rStCtrl.Seek( nDocStreamPos );
+		rStCtrl.Seek( nDocStreamPos );
 		aDocRecManager.Consume( rStCtrl );
 
-        DffRecordHeader aDocHd;
-        rStCtrl >> aDocHd;
+		DffRecordHeader aDocHd;
+		rStCtrl >> aDocHd;
 		// DocumentAtom lesen
-        DffRecordHeader aDocAtomHd;
-        rStCtrl >> aDocAtomHd;
-        if ( aDocHd.nRecType == PPT_PST_Document && aDocAtomHd.nRecType == PPT_PST_DocumentAtom )
+		DffRecordHeader aDocAtomHd;
+		rStCtrl >> aDocAtomHd;
+		if ( aDocHd.nRecType == PPT_PST_Document && aDocAtomHd.nRecType == PPT_PST_DocumentAtom )
 		{
-            aDocAtomHd.SeekToBegOfRecord( rStCtrl );
-            rStCtrl >> aDocAtom;
-        }
+			aDocAtomHd.SeekToBegOfRecord( rStCtrl );
+			rStCtrl >> aDocAtom;
+		}
 		else
 			bOk = sal_False;
 
-        if ( bOk )
+		if ( bOk )
 		{
 			if ( !pFonts )
 				ReadFontCollection();
@@ -1768,11 +1768,11 @@ SdrPowerPointImport::SdrPowerPointImport( PowerPointImportParam& rParam, const S
 						(*pMasterPages)[ i ]->pHeaderFooterEntry = new HeaderFooterEntry( aNormalMaster );
 				}
 			}
-        }
-    }
-    if ( ( rStCtrl.GetError() != 0 ) || ( pDefaultSheet == NULL ) )
+		}
+	}
+	if ( ( rStCtrl.GetError() != 0 ) || ( pDefaultSheet == NULL ) )
 		bOk = sal_False;
-    pPPTStyleSheet = pDefaultSheet;
+	pPPTStyleSheet = pDefaultSheet;
 	rStCtrl.Seek( 0 );
 }
 
@@ -1780,10 +1780,10 @@ SdrPowerPointImport::~SdrPowerPointImport()
 {
 	for ( void* pPtr = aHyperList.First(); pPtr; pPtr = aHyperList.Next() )
 		delete (SdHyperlinkEntry*)pPtr;
-    delete pMasterPages;
-    delete pSlidePages;
-    delete pNotePages;
-    delete[] pPersistPtr;
+	delete pMasterPages;
+	delete pSlidePages;
+	delete pNotePages;
+	delete[] pPersistPtr;
 }
 
 sal_Bool PPTConvertOCXControls::InsertControl(
@@ -1912,7 +1912,7 @@ SdrObject* SdrPowerPointImport::ImportOLE( long nOLEId,
 
 	if ( ((SdrPowerPointImport*)this)->maShapeRecords.SeekToContent( rStCtrl, DFF_msofbtClientData, SEEK_FROM_CURRENT_AND_RESTART ) )
 	{
-        DffRecordHeader aPlaceHd;
+		DffRecordHeader aPlaceHd;
 		while ( ( rStCtrl.GetError() == 0 )
 			&& ( rStCtrl.Tell() < ((SdrPowerPointImport*)this)->maShapeRecords.Current()->GetRecEndFilePos() ) )
 		{
@@ -1946,7 +1946,7 @@ SdrObject* SdrPowerPointImport::ImportOLE( long nOLEId,
 
 			rStCtrl.SeekRel( 4 );
 
-            ::utl::TempFile aTmpFile;
+			::utl::TempFile aTmpFile;
 			aTmpFile.EnableKillingFile( sal_True );
 
 			if ( aTmpFile.IsValid() )
@@ -2259,18 +2259,18 @@ void SdrPowerPointImport::SeekOle( SfxObjectShell* pShell, sal_uInt32 nFilterOpt
 
 sal_Bool SdrPowerPointImport::ReadFontCollection()
 {
-    sal_Bool bRet = sal_False;
+	sal_Bool bRet = sal_False;
 	DffRecordHeader* pEnvHd = aDocRecManager.GetRecordHeader( PPT_PST_Environment );
 	if ( pEnvHd )
 	{
 		sal_uLong nFPosMerk = rStCtrl.Tell(); // FilePos merken fuer spaetere Restauration
 		pEnvHd->SeekToContent( rStCtrl );
-        DffRecordHeader aListHd;
-        if ( SeekToRec( rStCtrl, PPT_PST_FontCollection, pEnvHd->GetRecEndFilePos(), &aListHd ) )
+		DffRecordHeader aListHd;
+		if ( SeekToRec( rStCtrl, PPT_PST_FontCollection, pEnvHd->GetRecEndFilePos(), &aListHd ) )
 		{
 			sal_uInt16 nCount2 = 0;
-		    VirtualDevice* pVDev = NULL;
-            while ( SeekToRec( rStCtrl, PPT_PST_FontEntityAtom, aListHd.GetRecEndFilePos() ) )
+			VirtualDevice* pVDev = NULL;
+			while ( SeekToRec( rStCtrl, PPT_PST_FontEntityAtom, aListHd.GetRecEndFilePos() ) )
 			{
                 bRet = sal_True;
                 if ( !pFonts )
@@ -2362,21 +2362,21 @@ sal_Bool SdrPowerPointImport::ReadFontCollection()
                 pFonts->C40_INSERT( PptFontEntityAtom, pFont, nCount2++ );
             }
             delete pVDev;
-        }
+		}
 		rStCtrl.Seek( nFPosMerk ); // FilePos restaurieren
-    }
-    return bRet;
+	}
+	return bRet;
 }
 
 PptSlidePersistList* SdrPowerPointImport::GetPageList(PptPageKind ePageKind) const
 {
-    if ( ePageKind == PPT_MASTERPAGE )
+	if ( ePageKind == PPT_MASTERPAGE )
 		return pMasterPages;
-    if ( ePageKind == PPT_SLIDEPAGE )
+	if ( ePageKind == PPT_SLIDEPAGE )
 		return pSlidePages;
-    if ( ePageKind == PPT_NOTEPAGE )
+	if ( ePageKind == PPT_NOTEPAGE )
 		return pNotePages;
-    return NULL;
+	return NULL;
 }
 
 SdrOutliner* SdrPowerPointImport::GetDrawOutliner( SdrTextObj* pSdrText ) const
@@ -2528,7 +2528,7 @@ SdrObject* SdrPowerPointImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* 
 			}
 		}
 		OutlinerParaObject* pNewText = rOutliner.CreateParaObject();
-        rOutliner.Clear();
+		rOutliner.Clear();
 		rOutliner.SetUpdateMode( bOldUpdateMode );
 		pText->SetOutlinerParaObject( pNewText );
 	}
@@ -2537,46 +2537,46 @@ SdrObject* SdrPowerPointImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* 
 
 sal_Bool SdrPowerPointImport::SeekToDocument( DffRecordHeader* pRecHd ) const
 {
-    sal_Bool bRet;
-    sal_uLong nFPosMerk = rStCtrl.Tell(); // FilePos merken fuer ggf. spaetere Restauration
-    rStCtrl.Seek( nDocStreamPos );
-    DffRecordHeader aDocHd;
-    rStCtrl >> aDocHd;
-    bRet = aDocHd.nRecType == PPT_PST_Document;
-    if ( bRet )
+	sal_Bool bRet;
+	sal_uLong nFPosMerk = rStCtrl.Tell(); // FilePos merken fuer ggf. spaetere Restauration
+	rStCtrl.Seek( nDocStreamPos );
+	DffRecordHeader aDocHd;
+	rStCtrl >> aDocHd;
+	bRet = aDocHd.nRecType == PPT_PST_Document;
+	if ( bRet )
 	{
-        if ( pRecHd )
+		if ( pRecHd )
 			*pRecHd = aDocHd;
-        else
+		else
 			aDocHd.SeekToBegOfRecord( rStCtrl );
-    }
-    if ( !bRet )
+	}
+	if ( !bRet )
 		rStCtrl.Seek( nFPosMerk ); // FilePos restaurieren
-    return bRet;
+	return bRet;
 }
 
 sal_Bool SdrPowerPointImport::SeekToContentOfProgTag( sal_Int32 nVersion, SvStream& rSt,
-                                const DffRecordHeader& rSourceHd, DffRecordHeader& rContentHd )
+								const DffRecordHeader& rSourceHd, DffRecordHeader& rContentHd )
 {
 	sal_Bool    bRetValue = sal_False;
 	sal_uInt32  nOldPos = rSt.Tell();
 
-    DffRecordHeader aProgTagsHd, aProgTagBinaryDataHd;
+	DffRecordHeader aProgTagsHd, aProgTagBinaryDataHd;
 	rSourceHd.SeekToContent( rSt );
-    sal_Bool bFound = rSourceHd.nRecType == PPT_PST_ProgTags;
-    if ( !bFound )	
+	sal_Bool bFound = rSourceHd.nRecType == PPT_PST_ProgTags;
+	if ( !bFound )
 		bFound = SeekToRec( rSt, PPT_PST_ProgTags, rSourceHd.GetRecEndFilePos(), &aProgTagsHd );
 	if ( bFound )
-    {
-        while( SeekToRec( rSt, PPT_PST_ProgBinaryTag, aProgTagsHd.GetRecEndFilePos(), &aProgTagBinaryDataHd ) )
-        {
-	        rSt >> rContentHd;
-	        if ( rContentHd.nRecType == PPT_PST_CString )
-	        {
-		        sal_uInt16	n = 6;
-                sal_uInt32  i = rContentHd.nRecLen >> 1;
-                if ( i > n )
-                {
+	{
+		while( SeekToRec( rSt, PPT_PST_ProgBinaryTag, aProgTagsHd.GetRecEndFilePos(), &aProgTagBinaryDataHd ) )
+		{
+			rSt >> rContentHd;
+			if ( rContentHd.nRecType == PPT_PST_CString )
+			{
+				sal_uInt16	n = 6;
+				sal_uInt32  i = rContentHd.nRecLen >> 1;
+				if ( i > n )
+				{
 		            String aPre, aSuf;
 		            sal_Unicode	*pTmp = aPre.AllocBuffer( n );
 		            while ( n-- )
@@ -2599,8 +2599,8 @@ sal_Bool SdrPowerPointImport::SeekToContentOfProgTag( sal_Int32 nVersion, SvStre
                 }
 	        }
             aProgTagBinaryDataHd.SeekToEndOfRecord( rSt );
-        }
-    }
+		}
+	}
 	if ( !bRetValue )
 		rSt.Seek( nOldPos );
 	return bRetValue;
@@ -2608,114 +2608,114 @@ sal_Bool SdrPowerPointImport::SeekToContentOfProgTag( sal_Int32 nVersion, SvStre
 
 sal_uInt32 SdrPowerPointImport::GetAktPageId()
 {
-    PptSlidePersistList* pList = GetPageList( eAktPageKind );
-    if ( pList && nAktPageNum < pList->Count() )
-        return (*pList)[ (sal_uInt16)nAktPageNum ]->aPersistAtom.nSlideId;
+	PptSlidePersistList* pList = GetPageList( eAktPageKind );
+	if ( pList && nAktPageNum < pList->Count() )
+		return (*pList)[ (sal_uInt16)nAktPageNum ]->aPersistAtom.nSlideId;
 	return 0;
 }
 
 sal_Bool SdrPowerPointImport::SeekToAktPage( DffRecordHeader* pRecHd ) const
 {
-    sal_Bool bRet = sal_False;
-    PptSlidePersistList* pList = GetPageList( eAktPageKind );
-    if ( pList && ( nAktPageNum < pList->Count() ) )
+	sal_Bool bRet = sal_False;
+	PptSlidePersistList* pList = GetPageList( eAktPageKind );
+	if ( pList && ( nAktPageNum < pList->Count() ) )
 	{
-        sal_uLong nPersist = (*pList)[ (sal_uInt16)nAktPageNum ]->aPersistAtom.nPsrReference;
-        if ( nPersist > 0 && nPersist < nPersistPtrAnz )
+		sal_uLong nPersist = (*pList)[ (sal_uInt16)nAktPageNum ]->aPersistAtom.nPsrReference;
+		if ( nPersist > 0 && nPersist < nPersistPtrAnz )
 		{
-            sal_uLong nFPos = 0;
-            nFPos = pPersistPtr[ nPersist ];
-            if ( nFPos < nStreamLen )
+			sal_uLong nFPos = 0;
+			nFPos = pPersistPtr[ nPersist ];
+			if ( nFPos < nStreamLen )
 			{
-                rStCtrl.Seek( nFPos );
-                if ( pRecHd )
-                    rStCtrl >> *pRecHd;
-                bRet = sal_True;
-            }
-        }
-    }
-    return bRet;
+				rStCtrl.Seek( nFPos );
+				if ( pRecHd )
+					rStCtrl >> *pRecHd;
+				bRet = sal_True;
+			}
+		}
+	}
+	return bRet;
 }
 
 sal_uInt16 SdrPowerPointImport::GetPageCount( PptPageKind ePageKind ) const
 {
-    PptSlidePersistList* pList = GetPageList( ePageKind );
-    if ( pList )
+	PptSlidePersistList* pList = GetPageList( ePageKind );
+	if ( pList )
 		return pList->Count();
-    return 0;
+	return 0;
 }
 
 void SdrPowerPointImport::SetPageNum( sal_uInt16 nPageNum, PptPageKind eKind )
 {
-    eAktPageKind = eKind;
-    nAktPageNum = nPageNum;
+	eAktPageKind = eKind;
+	nAktPageNum = nPageNum;
 
-    pPPTStyleSheet = NULL;
+	pPPTStyleSheet = NULL;
 
-    sal_Bool bHasMasterPage = sal_True;
-    sal_uInt16 nMasterIndex = 0;
+	sal_Bool bHasMasterPage = sal_True;
+	sal_uInt16 nMasterIndex = 0;
 
-    if ( eKind == PPT_MASTERPAGE )
-        nMasterIndex = nPageNum;
-    else
-    {
-	    if ( HasMasterPage( nPageNum, eKind ) )
-		    nMasterIndex = GetMasterPageIndex( nPageNum, eKind );
-        else
-            bHasMasterPage = sal_False;
-    }
-    if ( bHasMasterPage )
-    {
-	    PptSlidePersistList* pPageList = GetPageList( PPT_MASTERPAGE );
-        if ( pPageList && nMasterIndex < pPageList->Count() )
-        {
-            PptSlidePersistEntry* pMasterPersist = (*pPageList)[ nMasterIndex ];
-            if ( ( pMasterPersist->pStyleSheet == NULL ) && pMasterPersist->aSlideAtom.nMasterId )
-            {
-                nMasterIndex = pMasterPages->FindPage( pMasterPersist->aSlideAtom.nMasterId );
-                if ( nMasterIndex != PPTSLIDEPERSIST_ENTRY_NOTFOUND )
-                    pMasterPersist = (*pPageList)[ nMasterIndex ];
-            }
-            pPPTStyleSheet = pMasterPersist->pStyleSheet;
-         }
-    }
-    if ( !pPPTStyleSheet )
-        pPPTStyleSheet = pDefaultSheet;
+	if ( eKind == PPT_MASTERPAGE )
+		nMasterIndex = nPageNum;
+	else
+	{
+		if ( HasMasterPage( nPageNum, eKind ) )
+			nMasterIndex = GetMasterPageIndex( nPageNum, eKind );
+		else
+			bHasMasterPage = sal_False;
+	}
+	if ( bHasMasterPage )
+	{
+		PptSlidePersistList* pPageList = GetPageList( PPT_MASTERPAGE );
+		if ( pPageList && nMasterIndex < pPageList->Count() )
+		{
+			PptSlidePersistEntry* pMasterPersist = (*pPageList)[ nMasterIndex ];
+			if ( ( pMasterPersist->pStyleSheet == NULL ) && pMasterPersist->aSlideAtom.nMasterId )
+			{
+				nMasterIndex = pMasterPages->FindPage( pMasterPersist->aSlideAtom.nMasterId );
+				if ( nMasterIndex != PPTSLIDEPERSIST_ENTRY_NOTFOUND )
+					pMasterPersist = (*pPageList)[ nMasterIndex ];
+			}
+			pPPTStyleSheet = pMasterPersist->pStyleSheet;
+		}
+	}
+	if ( !pPPTStyleSheet )
+		pPPTStyleSheet = pDefaultSheet;
 }
 
 Size SdrPowerPointImport::GetPageSize() const
 {
-    Size aRet( IsNoteOrHandout( nAktPageNum, eAktPageKind ) ? aDocAtom.GetNotesPageSize() : aDocAtom.GetSlidesPageSize() );
-    Scale( aRet );
-    // PPT arbeitet nur mit Einheiten zu 576DPI. Um Ungenauigkeiten zu
-    // vermeiden runde ich die letzte Nachkommastelle metrisch weg.
-    if ( nMapMul > 2 * nMapDiv )
+	Size aRet( IsNoteOrHandout( nAktPageNum, eAktPageKind ) ? aDocAtom.GetNotesPageSize() : aDocAtom.GetSlidesPageSize() );
+	Scale( aRet );
+	// PPT arbeitet nur mit Einheiten zu 576DPI. Um Ungenauigkeiten zu
+	// vermeiden runde ich die letzte Nachkommastelle metrisch weg.
+	if ( nMapMul > 2 * nMapDiv )
 	{
-        MapUnit eMap = pSdrModel->GetScaleUnit();
-        bool bInch = IsInch( eMap );
-        long nInchMul = 1, nInchDiv = 1;
-        if ( bInch )
+		MapUnit eMap = pSdrModel->GetScaleUnit();
+		bool bInch = IsInch( eMap );
+		long nInchMul = 1, nInchDiv = 1;
+		if ( bInch )
 		{	// Size temporaer (zum runden) in nach metric konvertieren
-            Fraction aFact(GetMapFactor(eMap,MAP_100TH_MM).X());
-            nInchMul = aFact.GetNumerator();
-            nInchDiv = aFact.GetDenominator();
-            aRet.Width() = BigMulDiv( aRet.Width(), nInchMul, nInchDiv );
-            aRet.Height() = BigMulDiv( aRet.Height(), nInchMul, nInchDiv );
-        }
-        aRet.Width() += 5; aRet.Width() /= 10; aRet.Width()*=10;
-        aRet.Height() += 5; aRet.Height() /= 10; aRet.Height()*=10;
-        if ( bInch )
+			Fraction aFact(GetMapFactor(eMap,MAP_100TH_MM).X());
+			nInchMul = aFact.GetNumerator();
+			nInchDiv = aFact.GetDenominator();
+			aRet.Width() = BigMulDiv( aRet.Width(), nInchMul, nInchDiv );
+			aRet.Height() = BigMulDiv( aRet.Height(), nInchMul, nInchDiv );
+		}
+		aRet.Width() += 5; aRet.Width() /= 10; aRet.Width()*=10;
+		aRet.Height() += 5; aRet.Height() /= 10; aRet.Height()*=10;
+		if ( bInch )
 		{
-            aRet.Width() = BigMulDiv( aRet.Width(), nInchDiv, nInchMul );
-            aRet.Height() = BigMulDiv( aRet.Height(), nInchDiv, nInchMul );
-        }
-    }
-    return aRet;
+			aRet.Width() = BigMulDiv( aRet.Width(), nInchDiv, nInchMul );
+			aRet.Height() = BigMulDiv( aRet.Height(), nInchDiv, nInchMul );
+		}
+	}
+	return aRet;
 }
 
 FASTBOOL SdrPowerPointImport::GetColorFromPalette( sal_uInt16 nNum, Color& rColor ) const
 {
-    if ( nPageColorsNum != nAktPageNum || ePageColorsKind != eAktPageKind )
+	if ( nPageColorsNum != nAktPageNum || ePageColorsKind != eAktPageKind )
 	{
 		sal_uInt16 nSlideFlags = 0;
 		PptSlidePersistList* pPageList = GetPageList( eAktPageKind );
@@ -2727,44 +2727,44 @@ FASTBOOL SdrPowerPointImport::GetColorFromPalette( sal_uInt16 nNum, Color& rColo
 			if ( ! ( nSlideFlags & 2 ) )
 				((SdrPowerPointImport*)this)->aPageColors = pE->aColorScheme;
 		}
-		if ( nSlideFlags & 2 )      // follow master colorscheme ?
+		if ( nSlideFlags & 2 ) // follow master colorscheme?
 		{
-            PptSlidePersistList* pPageList2 = GetPageList( PPT_MASTERPAGE );
-            if ( pPageList2 )
-            {
-                PptSlidePersistEntry* pMasterPersist = NULL;
-                if ( eAktPageKind == PPT_MASTERPAGE )
-				    pMasterPersist = (*pPageList2)[ nAktPageNum ];
-                else
-                {
-    			    if ( HasMasterPage( nAktPageNum, eAktPageKind ) )
-			        {
-				        sal_uInt16 nMasterNum = GetMasterPageIndex( nAktPageNum, eAktPageKind );
-				        if ( nMasterNum < pPageList2->Count() )
-					        pMasterPersist = (*pPageList2)[ nMasterNum ];
-			        }
-                }
+			PptSlidePersistList* pPageList2 = GetPageList( PPT_MASTERPAGE );
+			if ( pPageList2 )
+			{
+				PptSlidePersistEntry* pMasterPersist = NULL;
+				if ( eAktPageKind == PPT_MASTERPAGE )
+					pMasterPersist = (*pPageList2)[ nAktPageNum ];
+				else
+				{
+					if ( HasMasterPage( nAktPageNum, eAktPageKind ) )
+					{
+						sal_uInt16 nMasterNum = GetMasterPageIndex( nAktPageNum, eAktPageKind );
+						if ( nMasterNum < pPageList2->Count() )
+							pMasterPersist = (*pPageList2)[ nMasterNum ];
+					}
+				}
 				if ( pMasterPersist )
-                {
-                    while( ( pMasterPersist && pMasterPersist->aSlideAtom.nFlags & 2 )  // it is possible that a masterpage
-                        && pMasterPersist->aSlideAtom.nMasterId )                       // itself is following a master colorscheme
-                    {
-                        sal_uInt16 nNextMaster = pMasterPages->FindPage( pMasterPersist->aSlideAtom.nMasterId );
-                        if ( nNextMaster == PPTSLIDEPERSIST_ENTRY_NOTFOUND )
-                            break;
-                        else
-    						pMasterPersist = (*pPageList2)[ nNextMaster ];
-                    }
+				{
+					while( ( pMasterPersist && pMasterPersist->aSlideAtom.nFlags & 2 ) // it is possible that a masterpage
+						&& pMasterPersist->aSlideAtom.nMasterId ) // itself is following a master colorscheme
+					{
+						sal_uInt16 nNextMaster = pMasterPages->FindPage( pMasterPersist->aSlideAtom.nMasterId );
+						if ( nNextMaster == PPTSLIDEPERSIST_ENTRY_NOTFOUND )
+							break;
+						else
+							pMasterPersist = (*pPageList2)[ nNextMaster ];
+					}
 					((SdrPowerPointImport*)this)->aPageColors = pMasterPersist->aColorScheme;
-                }
-            }
+				}
+			}
 		}
 		// momentanes Farbschema eintragen
-        ((SdrPowerPointImport*)this)->nPageColorsNum = nAktPageNum;
-        ((SdrPowerPointImport*)this)->ePageColorsKind = eAktPageKind;
-    }
-    rColor = aPageColors.GetColor( nNum );
-    return sal_True;
+		((SdrPowerPointImport*)this)->nPageColorsNum = nAktPageNum;
+		((SdrPowerPointImport*)this)->ePageColorsKind = eAktPageKind;
+	}
+	rColor = aPageColors.GetColor( nNum );
+	return sal_True;
 }
 
 sal_Bool SdrPowerPointImport::SeekToShape( SvStream& rSt, void* pClientData, sal_uInt32 nId ) const
@@ -2782,11 +2782,11 @@ sal_Bool SdrPowerPointImport::SeekToShape( SvStream& rSt, void* pClientData, sal
 				PptSlidePersistList* pPageList = GetPageList( PPT_MASTERPAGE );
 				if ( pPageList && ( nMasterNum < pPageList->Count() ) )
 				{
-					PptSlidePersistEntry* pPersist = (*pPageList)[ nMasterNum ];	// get the masterpage's persistentry
+					PptSlidePersistEntry* pPersist = (*pPageList)[ nMasterNum ]; // get the masterpage's persistentry
 					if ( pPersist && pPersist->pPresentationObjects )
 					{
 						sal_uInt32 nCurrent(0L);
-						DffRecordList* pCList = maShapeRecords.pCList;				// we got a backup of the current position
+						DffRecordList* pCList = maShapeRecords.pCList; // we got a backup of the current position
 						if ( pCList )
 							nCurrent = pCList->nCurrent;
 						if ( ((SdrEscherImport*)this )->maShapeRecords.SeekToContent( rSt, DFF_msofbtClientData, SEEK_FROM_CURRENT_AND_RESTART ) )
@@ -2836,29 +2836,29 @@ sal_Bool SdrPowerPointImport::SeekToShape( SvStream& rSt, void* pClientData, sal
 
 SdrPage* SdrPowerPointImport::MakeBlancPage( sal_Bool bMaster ) const
 {
-    SdrPage* pRet = pSdrModel->AllocPage( bMaster );
-    pRet->SetSize( GetPageSize() );
+	SdrPage* pRet = pSdrModel->AllocPage( bMaster );
+	pRet->SetSize( GetPageSize() );
 
 /*
 	SJ (21.08.00) : since bug #77576# i decided not to set a border size.
 
-    Size aPageSize( aDocAtom.GetSlidesPageSize() ); // PageSize in 576DPI-Units
-    long nHMarg = aPageSize.Width() - aDocAtom.aSlidesPageSize.Width();
-    long nVMarg = aPageSize.Height() - aDocAtom.aSlidesPageSize.Height();
-    if ( nHMarg > 0 )
+	Size aPageSize( aDocAtom.GetSlidesPageSize() ); // PageSize in 576DPI-Units
+	long nHMarg = aPageSize.Width() - aDocAtom.aSlidesPageSize.Width();
+	long nVMarg = aPageSize.Height() - aDocAtom.aSlidesPageSize.Height();
+	if ( nHMarg > 0 )
 	{
-        Scale( nHMarg );
-        pRet->SetLftBorder( nHMarg / 2 );
-        pRet->SetRgtBorder( nHMarg - nHMarg / 2 );
-    }
-    if ( nVMarg > 0 )
+		Scale( nHMarg );
+		pRet->SetLftBorder( nHMarg / 2 );
+		pRet->SetRgtBorder( nHMarg - nHMarg / 2 );
+	}
+	if ( nVMarg > 0 )
 	{
-        Scale( nVMarg );
-        pRet->SetUppBorder( nVMarg / 2 );
-        pRet->SetLwrBorder( nVMarg - nVMarg / 2 );
-    }
+		Scale( nVMarg );
+		pRet->SetUppBorder( nVMarg / 2 );
+		pRet->SetLwrBorder( nVMarg - nVMarg / 2 );
+	}
 */
-    return pRet;
+	return pRet;
 }
 
 void ImportComment10( SvxMSDffManager& rMan, SvStream& rStCtrl, SdrPage* pPage, DffRecordHeader& rComment10Hd )
@@ -2896,7 +2896,7 @@ void ImportComment10( SvxMSDffManager& rMan, SvStream& rStCtrl, SdrPage* pPage, 
 				rStCtrl >> nIndex
 						>> aDateTime.Year
 						>> aDateTime.Month
-						>> aDateTime.Day	// DayOfWeek
+						>> aDateTime.Day // DayOfWeek
 						>> aDateTime.Day
 						>> aDateTime.Hours
 						>> aDateTime.Minutes
@@ -2932,19 +2932,18 @@ void ImportComment10( SvxMSDffManager& rMan, SvStream& rStCtrl, SdrPage* pPage, 
 
 
 // be sure not to import masterpages with this method
-// be sure not to import masterpages with this method
 void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry* pMasterPersist )
 {
 	sal_uInt32 nMerk = rStCtrl.Tell();
-    PptSlidePersistList* pList = GetPageList( eAktPageKind );
+	PptSlidePersistList* pList = GetPageList( eAktPageKind );
 	if ( ( !pList ) || ( pList->Count() <= nAktPageNum ) )
 		return;
 	PptSlidePersistEntry& rSlidePersist = *(*pList)[ nAktPageNum ];
-    if ( rSlidePersist.bStarDrawFiller )
+	if ( rSlidePersist.bStarDrawFiller )
 		return;
 
 	DffRecordHeader aPageHd;
-    if ( SeekToAktPage( &aPageHd ) )
+	if ( SeekToAktPage( &aPageHd ) )
 	{
 		if ( mbTracing )
 			mpTracer->AddAttribute( eAktPageKind == PPT_SLIDEPAGE
@@ -2954,10 +2953,10 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 
 		rSlidePersist.pHeaderFooterEntry = new HeaderFooterEntry( pMasterPersist );
 		ProcessData aProcessData( rSlidePersist, (SdPage*)pRet );
-        sal_Size nLastPosition;
+		sal_Size nLastPosition;
 		while ( ( rStCtrl.GetError() == 0 ) && ( rStCtrl.Tell() < aPageHd.GetRecEndFilePos() ) )
 		{
-            nLastPosition = rStCtrl.Tell();
+			nLastPosition = rStCtrl.Tell();
 			DffRecordHeader aHd;
 			rStCtrl >> aHd;
 			switch ( aHd.nRecType )
@@ -2971,7 +2970,7 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 				case PPT_PST_ProgTags :
 				{
 					DffRecordHeader aContentDataHd;
-			        if ( SeekToContentOfProgTag( 10, rStCtrl, aHd, aContentDataHd ) )
+					if ( SeekToContentOfProgTag( 10, rStCtrl, aHd, aContentDataHd ) )
 					{
 						DffRecordHeader aComment10Hd;
 						while( ( rStCtrl.GetError() == 0 ) && SeekToRec( rStCtrl, PPT_PST_Comment10, aContentDataHd.GetRecEndFilePos(), &aComment10Hd ) )
@@ -3000,21 +2999,21 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 								case DFF_msofbtSpContainer :
 								{
 									Rectangle aPageSize( Point(), pRet->GetSize() );
-									if ( rSlidePersist.aSlideAtom.nFlags & 4 )			// follow master background ?
+									if ( rSlidePersist.aSlideAtom.nFlags & 4 ) // follow master background ?
 									{
-                                        if ( HasMasterPage( nAktPageNum, eAktPageKind ) )
-                                        {
-                                            sal_uInt16 nMasterNum = GetMasterPageIndex( nAktPageNum, eAktPageKind );
+										if ( HasMasterPage( nAktPageNum, eAktPageKind ) )
+										{
+											sal_uInt16 nMasterNum = GetMasterPageIndex( nAktPageNum, eAktPageKind );
 											PptSlidePersistList* pPageList = GetPageList( PPT_MASTERPAGE );
 											PptSlidePersistEntry* pE = (*pPageList)[ nMasterNum ];
-                                            while( ( pE->aSlideAtom.nFlags & 4 ) && pE->aSlideAtom.nMasterId )
-                                            {
-                                                sal_uInt16 nNextMaster = pMasterPages->FindPage( pE->aSlideAtom.nMasterId );
-                                                if ( nNextMaster == PPTSLIDEPERSIST_ENTRY_NOTFOUND )
-                                                    break;
-                                                else
-    											    pE = (*pPageList)[ nNextMaster ];
-                                            }
+											while( ( pE->aSlideAtom.nFlags & 4 ) && pE->aSlideAtom.nMasterId )
+											{
+												sal_uInt16 nNextMaster = pMasterPages->FindPage( pE->aSlideAtom.nMasterId );
+												if ( nNextMaster == PPTSLIDEPERSIST_ENTRY_NOTFOUND )
+													break;
+												else
+													pE = (*pPageList)[ nNextMaster ];
+											}
 											if ( pE->nBackgroundOffset )
 											{
 												// do not follow master colorscheme ?
@@ -3025,7 +3024,7 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 												rSlidePersist.bBObjIsTemporary = bTemporary;
 												rStCtrl.Seek( nPos );
 											}
-                                        }
+										}
 									}
 									else
 									{
@@ -3064,11 +3063,11 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 									DffRecordHeader aShapeHd;
 									if ( SeekToRec( rStCtrl, DFF_msofbtSpContainer, aEscherObjListHd.GetRecEndFilePos(), &aShapeHd ) )
 									{
-                                        sal_Size nShapeLastPosition;
+										sal_Size nShapeLastPosition;
 										aShapeHd.SeekToEndOfRecord( rStCtrl );
 										while ( ( rStCtrl.GetError() == 0 ) && ( rStCtrl.Tell() < aEscherObjListHd.GetRecEndFilePos() ) )
 										{
-                                            nShapeLastPosition = rStCtrl.Tell();
+											nShapeLastPosition = rStCtrl.Tell();
 											rStCtrl >> aShapeHd;
 											if ( ( aShapeHd.nRecType == DFF_msofbtSpContainer ) || ( aShapeHd.nRecType == DFF_msofbtSpgrContainer ) )
 											{
@@ -3089,10 +3088,10 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 												}
 											}
 											aShapeHd.SeekToEndOfRecord( rStCtrl );
-                                            if (rStCtrl.Tell() == nShapeLastPosition) {
-                                                // We are inside an endless loop
-                                                break;
-                                            }
+											if (rStCtrl.Tell() == nShapeLastPosition) {
+												// We are inside an endless loop
+												break;
+											}
 										}
 									}
 								}
@@ -3133,11 +3132,11 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 						}
 						if ( rSlidePersist.pBObj )
 						{
-                            // #i99386# transfer the attributes from the temporary BackgroundObject 
-                            // to the Page and delete it. Maybe rSlidePersist.bBObjIsTemporary is 
-                            // obsolete here, too.
-                            pRet->getSdrPageProperties().ClearItem();
-                            pRet->getSdrPageProperties().PutItemSet(rSlidePersist.pBObj->GetMergedItemSet());
+							// #i99386# transfer the attributes from the temporary BackgroundObject
+							// to the Page and delete it. Maybe rSlidePersist.bBObjIsTemporary is
+							// obsolete here, too.
+							pRet->getSdrPageProperties().ClearItem();
+							pRet->getSdrPageProperties().PutItemSet(rSlidePersist.pBObj->GetMergedItemSet());
 							SdrObject::Free( rSlidePersist.pBObj );
 						}
 					}
@@ -3145,13 +3144,13 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 				break;
 			}
 			aHd.SeekToEndOfRecord( rStCtrl );
-            if (rStCtrl.Tell() == nLastPosition) {
-                // We are inside an endless loop
-                break;
-            }
+			if (rStCtrl.Tell() == nLastPosition) {
+				// We are inside an endless loop
+				break;
+			}
 		}
 		if ( rSlidePersist.pSolverContainer )
-            SolveSolver( *rSlidePersist.pSolverContainer );
+			SolveSolver( *rSlidePersist.pSolverContainer );
 		if ( mbTracing )
 			mpTracer->RemoveAttribute( eAktPageKind == PPT_SLIDEPAGE
 										? rtl::OUString::createFromAscii( "Page" )
@@ -3162,14 +3161,14 @@ void SdrPowerPointImport::ImportPage( SdrPage* pRet, const PptSlidePersistEntry*
 
 const PptSlideLayoutAtom* SdrPowerPointImport::GetSlideLayoutAtom() const
 {
-    PptSlidePersistList* pPageList = GetPageList( eAktPageKind );
-    if ( pPageList && nAktPageNum < pPageList->Count() )
+	PptSlidePersistList* pPageList = GetPageList( eAktPageKind );
+	if ( pPageList && nAktPageNum < pPageList->Count() )
 	{
-        PptSlidePersistEntry* pE = (*pPageList)[ nAktPageNum ];
-        if ( pE )
-            return &pE->aSlideAtom.aLayout;
-    }
-    return NULL;
+		PptSlidePersistEntry* pE = (*pPageList)[ nAktPageNum ];
+		if ( pE )
+			return &pE->aSlideAtom.aLayout;
+	}
+	return NULL;
 }
 
 sal_Bool SdrPowerPointImport::IsNoteOrHandout( sal_uInt16 nPageNum, PptPageKind /*ePageKind*/) const
@@ -3857,7 +3856,7 @@ sal_Bool PPTNumberFormatCreator::ImplGetExtNumberFormat( SdrPowerPointImport& rM
 			{
 				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH );
 			}
-			break;			
+			break;
 			case 17: // Simplified Chinese with single-byte period.
 			{
 				rNumberFormat.SetNumberingType( SVX_NUM_NUMBER_UPPER_ZH );
@@ -3914,7 +3913,7 @@ sal_Bool PPTNumberFormatCreator::ImplGetExtNumberFormat( SdrPowerPointImport& rM
 		rStartNumbering = boost::optional< sal_Int16 >( nAnmScheme >> 16 );
 		sal_Int16 nBuStart = *rStartNumbering;
 		//The Seventh bit of nBuFlags that specifies whether fBulletHasAutoNumber exists,
-		//and fBulletHasAutoNumber that specifies whether this paragraph has an automatic numbering scheme.  
+		//and fBulletHasAutoNumber that specifies whether this paragraph has an automatic numbering scheme.
 		if ( ( nBuFlags & 0x02000000 ) && ( nBuStart != 1 ))
 		{
 			rNumberFormat.SetStart( static_cast<sal_uInt16>(nBuStart) );
@@ -4347,7 +4346,7 @@ void PPTParaSheet::UpdateBulletRelSize(  sal_uInt32 nLevel, sal_uInt16 nFontHeig
 		sal_Int16  nBulletRelSize = ( sal_Int16 )maParaLevel[ nLevel ].mnBulletHeight;
 		nBulletRelSize = nFontHeight ? ((-nBulletRelSize) * 100 ) / nFontHeight : 100;
 		if ( nBulletRelSize < 0 ) //bullet size over flow
-			nBulletRelSize = 100; 
+			nBulletRelSize = 100;
 		maParaLevel[ nLevel ].mnBulletHeight = nBulletRelSize;
 	}
 }
@@ -5146,7 +5145,7 @@ void StyleTextProp9::Read( SvStream& rIn )
 		rIn >> mnBuBlip;
 	if ( mnExtParagraphMask & 0x2000000 )
 		rIn >> mnHasAnm;
-	if ( mnExtParagraphMask & 0x1000000 )	
+	if ( mnExtParagraphMask & 0x1000000 )
 		rIn >> mnAnmScheme;
 	if ( mnExtParagraphMask & 0x4000000 )
 		rIn >> mpfPP10Ext;
@@ -5167,7 +5166,7 @@ PPTStyleTextPropReader::PPTStyleTextPropReader( SvStream& rIn, SdrPowerPointImpo
 }
 
 void PPTStyleTextPropReader::ReadParaProps( SvStream& rIn, SdrPowerPointImport& rMan, const DffRecordHeader& rTextHeader,
-                                            const String& aString, PPTTextRulerInterpreter& rRuler, 
+                                            const String& aString, PPTTextRulerInterpreter& rRuler,
                                             sal_uInt32& nCharCount, sal_Bool& bTextPropAtom )
 {
     sal_uInt32  nMask = 0; //TODO: nMask initialized here to suppress warning for now, see corresponding TODO below
@@ -5316,11 +5315,11 @@ void PPTStyleTextPropReader::ReadParaProps( SvStream& rIn, SdrPowerPointImport& 
     }
 }
 
-void PPTStyleTextPropReader::ReadCharProps( SvStream& rIn, PPTCharPropSet& aCharPropSet, const String& aString, 
+void PPTStyleTextPropReader::ReadCharProps( SvStream& rIn, PPTCharPropSet& aCharPropSet, const String& aString,
                                             sal_uInt32& nCharCount, sal_uInt32 nCharAnzRead,
-                                            sal_Bool& bTextPropAtom, sal_uInt32 nExtParaPos, 
-                                            const std::vector< StyleTextProp9 >& aStyleTextProp9, 
-                                            sal_uInt32& nExtParaFlags, sal_uInt16& nBuBlip, 
+                                            sal_Bool& bTextPropAtom, sal_uInt32 nExtParaPos,
+                                            const std::vector< StyleTextProp9 >& aStyleTextProp9,
+                                            sal_uInt32& nExtParaFlags, sal_uInt16& nBuBlip,
                                             sal_uInt16& nHasAnm, sal_uInt32& nAnmScheme )
 {
     sal_uInt32  nMask = 0; //TODO: nMask initialized here to suppress warning for now, see corresponding TODO below
@@ -5400,7 +5399,7 @@ void PPTStyleTextPropReader::ReadCharProps( SvStream& rIn, PPTCharPropSet& aChar
         {
             if ( nExtParaNibble && ( ( nExtBuInd + nExtParaNibble ) < aStyleTextProp9.size() ) )
                 nExtBuInd += nExtParaNibble;
-							
+
             nExtParaFlags = aStyleTextProp9[ nExtBuInd ].mnExtParagraphMask;
             nBuBlip = aStyleTextProp9[ nExtBuInd ].mnBuBlip;
             nHasAnm = aStyleTextProp9[ nExtBuInd ].mnHasAnm;
@@ -5516,10 +5515,10 @@ void PPTStyleTextPropReader::Init( SvStream& rIn, SdrPowerPointImport& rMan, con
 			sal_uInt32 nExtParaFlags = 0, nAnmScheme = 0;
 			sal_uInt16 nBuBlip = 0xffff, nHasAnm = 0;
             ReadCharProps( rIn, aCharPropSet, aString, nCharCount, nCharAnzRead,
-                           bTextPropAtom, nExtParaPos, aStyleTextProp9, nExtParaFlags, 
+                           bTextPropAtom, nExtParaPos, aStyleTextProp9, nExtParaFlags,
                            nBuBlip, nHasAnm, nAnmScheme );
-            
-            aCharPropList.Insert( 
+
+            aCharPropList.Insert(
                 new PPTCharPropSet( aCharPropSet, 0 ), LIST_APPEND );
         }
     }
@@ -5545,7 +5544,7 @@ void PPTStyleTextPropReader::Init( SvStream& rIn, SdrPowerPointImport& rMan, con
 			PPTCharPropSet aCharPropSet( nCurrentPara );
 			if ( bTextPropAtom )
                 ReadCharProps( rIn, aCharPropSet, aString, nCharCount, nCharAnzRead,
-                               bTextPropAtom, nExtParaPos, aStyleTextProp9, nExtParaFlags, 
+                               bTextPropAtom, nExtParaPos, aStyleTextProp9, nExtParaFlags,
                                nBuBlip, nHasAnm, nAnmScheme );
 			else
 				nCharCount = nStringLen;
@@ -5867,7 +5866,7 @@ void PPTPortionObj::ApplyTo(  SfxItemSet& rSet, SdrPowerPointImport& rManager, s
 			{
 				rSet.Put( SvxFontItem( pFontEnityAtom->eFamily, pFontEnityAtom->aName, String(), pFontEnityAtom->ePitch, pFontEnityAtom->eCharSet, EE_CHAR_FONTINFO_CJK ) );
 				rSet.Put( SvxFontItem( pFontEnityAtom->eFamily, pFontEnityAtom->aName, String(), pFontEnityAtom->ePitch, pFontEnityAtom->eCharSet, EE_CHAR_FONTINFO_CTL ) );
-			}		
+			}
 		}
 	}
 	if ( GetAttrib( PPT_CharAttr_FontHeight, nVal, nDestinationInstance ) )	// Schriftgrad in Point
@@ -5879,7 +5878,7 @@ void PPTPortionObj::ApplyTo(  SfxItemSet& rSet, SdrPowerPointImport& rManager, s
 	}
 
 	if ( GetAttrib( PPT_CharAttr_Embossed, nVal, nDestinationInstance ) )
-        rSet.Put( SvxCharReliefItem( nVal != 0 ? RELIEF_EMBOSSED : RELIEF_NONE, EE_CHAR_RELIEF ) );
+		rSet.Put( SvxCharReliefItem( nVal != 0 ? RELIEF_EMBOSSED : RELIEF_NONE, EE_CHAR_RELIEF ) );
 	if ( nVal )	/* if Embossed is set, the font color depends to the fillstyle/color of the object,
 				   if the object has no fillstyle, the font color depends to fillstyle of the background */
 	{
@@ -6516,7 +6515,7 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
 		if ( nVal2 <= 0 )
 		{
 			aItem.SetLineHeight( (sal_uInt16)( rManager.ScalePoint( -nVal2 ) / 8 ) );
-			aItem.GetLineSpaceRule() = SVX_LINE_SPACE_FIX;  
+			aItem.GetLineSpaceRule() = SVX_LINE_SPACE_FIX;
 		}
 		else
 		{
@@ -6576,7 +6575,7 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
         SvxTabStopItem aTabItem( 0, 0, SVX_TAB_ADJUST_DEFAULT, EE_PARA_TABS );
 		if ( GetTabCount() )
 		{
-			//paragraph offset = MIN(first_line_offset, hanging_offset)
+			// paragraph offset = MIN(first_line_offset, hanging_offset)
 			sal_uInt32 nParaOffset = Min( nTextOfs2, nTab );
 			for ( i = 0; i < GetTabCount(); i++ )
 			{
@@ -6589,7 +6588,7 @@ void PPTParagraphObj::ApplyTo( SfxItemSet& rSet,  boost::optional< sal_Int16 >& 
 					case 3 :	eTabAdjust = SVX_TAB_ADJUST_DECIMAL; break;
 					default :	eTabAdjust = SVX_TAB_ADJUST_LEFT;
 				}
-				if ( nTab > nParaOffset )//If tab stop greater than paragraph offset
+				if ( nTab > nParaOffset ) // If tab stop greater than paragraph offset
 					aTabItem.Insert( SvxTabStop( ( ( (long( nTab - nTextOfs2 )) * 2540 ) / 576 ), eTabAdjust ) );
 			}
 			nLatestManTab = nTab;
@@ -6913,11 +6912,11 @@ PPTTextObj::PPTTextObj( SvStream& rIn, SdrPowerPointImport& rSdrPowerPointImport
 					mpImplTextObj->mnInstance = nInstance;
 
 					sal_uInt32 nFilePos = rIn.Tell();
-					if ( rSdrPowerPointImport.SeekToRec2( PPT_PST_TextBytesAtom, 
-                                                          PPT_PST_TextCharsAtom, 
-                                                          aClientTextBoxHd.GetRecEndFilePos() ) 
+					if ( rSdrPowerPointImport.SeekToRec2( PPT_PST_TextBytesAtom,
+                                                          PPT_PST_TextCharsAtom,
+                                                          aClientTextBoxHd.GetRecEndFilePos() )
                          || rSdrPowerPointImport.SeekToRec( rIn,
-                                                            PPT_PST_StyleTextPropAtom, 
+                                                            PPT_PST_StyleTextPropAtom,
                                                             aClientTextBoxHd.GetRecEndFilePos() ) )
 					{
 						PPTTextRulerInterpreter aTextRulerInterpreter( nTextRulerAtomOfs, rSdrPowerPointImport,
@@ -6944,7 +6943,7 @@ PPTTextObj::PPTTextObj( SvStream& rIn, SdrPowerPointImport& rSdrPowerPointImport
 									{
 										sal_uInt32 nCharIdx = pSpecInfo->nCharIdx;
 
-										// portions and text have to been splitted in some cases
+										// portions and text have to been split in some cases
 										for ( ; nI < aStyleTextPropReader.aCharPropList.Count(); )
 										{
 											PPTCharPropSet* pSet = (PPTCharPropSet*)aStyleTextPropReader.aCharPropList.GetObject( nI );
@@ -6953,7 +6952,7 @@ PPTTextObj::PPTTextObj( SvStream& rIn, SdrPowerPointImport& rSdrPowerPointImport
 												pSet->mnLanguage[ 0 ] = pSpecInfo->nLanguage[ 0 ];
 												pSet->mnLanguage[ 1 ] = pSpecInfo->nLanguage[ 1 ];
 												pSet->mnLanguage[ 2 ] = pSpecInfo->nLanguage[ 2 ];
-												// test if the current portion needs to be splitted
+												// test if the current portion needs to be split
 												if ( pSet->maString.Len() > 1 )
 												{
 													sal_Int32 nIndexOfNextPortion = pSet->maString.Len() + pSet->mnOriginalTextPos;
@@ -7060,7 +7059,7 @@ PPTTextObj::PPTTextObj( SvStream& rIn, SdrPowerPointImport& rSdrPowerPointImport
 
 												case PPT_PST_RTFDateTimeMCAtom:
 												{
-													// Rude workaround for one specal case reported
+													// Rude workaround for one special case reported
 													// by a customer. (#i75203#)
 
 													// Don't even attempt to handle the general use
@@ -7236,7 +7235,7 @@ PPTTextObj::PPTTextObj( SvStream& rIn, SdrPowerPointImport& rSdrPowerPointImport
 											}
 											else
 											{
-												if ( pFE->nTextRangeEnd )	// text range hyperlink
+												if ( pFE->nTextRangeEnd ) // text range hyperlink
 												{
 													sal_uInt32 nHyperLen = pFE->nTextRangeEnd - nPos;
 													if ( nHyperLen )
@@ -7582,7 +7581,7 @@ void CreateTableRows( Reference< XTableRows > xTableRows, const std::set< sal_In
 	Reference< XIndexAccess > xIndexAccess( xTableRows, UNO_QUERY_THROW );
 	for ( sal_Int32 n = 0; n < xIndexAccess->getCount(); n++ )
 	{
-		sal_Int32 nHeight; 
+		sal_Int32 nHeight;
 		if ( ++aIter != rRows.end() )
 		{
 			nHeight = *aIter - nLastPosition;
@@ -7608,7 +7607,7 @@ void CreateTableColumns( Reference< XTableColumns > xTableColumns, const std::se
 	for ( sal_Int32 n = 0; n < xIndexAccess->getCount(); n++ )
 	{
 		sal_Int32 nWidth;
-		if ( ++aIter != rColumns.end() ) 
+		if ( ++aIter != rColumns.end() )
 		{
 			nWidth = *aIter - nLastPosition;
 			nLastPosition = *aIter;
@@ -7624,22 +7623,22 @@ void CreateTableColumns( Reference< XTableColumns > xTableColumns, const std::se
 
 void MergeCells( const Reference< XTable >& xTable, sal_Int32 nCol, sal_Int32 nRow, sal_Int32 nColSpan, sal_Int32 nRowSpan )
 {
-   DBG_ASSERT( (nColSpan > 1) || (nRowSpan > 1), "nonsense parameter!!" );
-   DBG_ASSERT( (nCol >= 0) && (nCol < xTable->getColumnCount()) && (nRow >= 0) && (nRow < xTable->getRowCount()), "die celle gibts nicht!!" );
-   DBG_ASSERT( (nColSpan >= 1) && ((nCol  + nColSpan - 1) < xTable->getColumnCount()), "nColSpan murks!" );
-   DBG_ASSERT(  (nRowSpan >= 1) && ((nRow  + nRowSpan - 1) < xTable->getRowCount()), "nRowSpan murks!" );
+	DBG_ASSERT( (nColSpan > 1) || (nRowSpan > 1), "nonsense parameter!!" );
+	DBG_ASSERT( (nCol >= 0) && (nCol < xTable->getColumnCount()) && (nRow >= 0) && (nRow < xTable->getRowCount()), "die zelle gibt es nicht!!" );
+	DBG_ASSERT( (nColSpan >= 1) && ((nCol  + nColSpan - 1) < xTable->getColumnCount()), "nColSpan murks!" );
+	DBG_ASSERT(  (nRowSpan >= 1) && ((nRow  + nRowSpan - 1) < xTable->getRowCount()), "nRowSpan murks!" );
 
-   if( xTable.is() ) try
-   {
-       Reference< XMergeableCellRange > xRange( xTable->createCursorByRange( xTable->getCellRangeByPosition( nCol, nRow,nCol + nColSpan - 1, nRow + nRowSpan - 1 ) ), UNO_QUERY_THROW );
-       if( xRange->isMergeable() )
-               xRange->merge();
-   }
-   catch( Exception& )
-   {
-       DBG_ASSERT( false, "exception caught!" );
-   }
-} 
+	if( xTable.is() ) try
+	{
+		Reference< XMergeableCellRange > xRange( xTable->createCursorByRange( xTable->getCellRangeByPosition( nCol, nRow,nCol + nColSpan - 1, nRow + nRowSpan - 1 ) ), UNO_QUERY_THROW );
+		if( xRange->isMergeable() )
+			xRange->merge();
+	}
+	catch( Exception& )
+	{
+		DBG_ASSERT( false, "exception caught!" );
+	}
+}
 
 void ApplyCellAttributes( const SdrObject* pObj, Reference< XCell >& xCell )
 {
@@ -7773,8 +7772,8 @@ void ApplyCellLineAttributes( const SdrObject* pLine, Reference< XTable >& xTabl
 					Color aLineColor( ((XLineColorItem&)pLine->GetMergedItem( XATTR_LINECOLOR )).GetColorValue() );
 					aBorderLine.Color = aLineColor.GetColor();
 					// Avoid width = 0, the min value should be 1.
-					aBorderLine.OuterLineWidth = std::max( static_cast< sal_Int16 >( 1 ), static_cast< sal_Int16 >( ((const XLineWidthItem&)(pLine->GetMergedItem(XATTR_LINEWIDTH))).GetValue() / 4) );		
-					aBorderLine.InnerLineWidth = std::max( static_cast< sal_Int16 >( 1 ), static_cast< sal_Int16 >( ((const XLineWidthItem&)(pLine->GetMergedItem(XATTR_LINEWIDTH))).GetValue() / 4) );							     
+					aBorderLine.OuterLineWidth = std::max( static_cast< sal_Int16 >( 1 ), static_cast< sal_Int16 >( ((const XLineWidthItem&)(pLine->GetMergedItem(XATTR_LINEWIDTH))).GetValue() / 4) );
+					aBorderLine.InnerLineWidth = std::max( static_cast< sal_Int16 >( 1 ), static_cast< sal_Int16 >( ((const XLineWidthItem&)(pLine->GetMergedItem(XATTR_LINEWIDTH))).GetValue() / 4) );
 					aBorderLine.LineDistance = 0;
 				}
 				break;
@@ -7793,7 +7792,7 @@ void ApplyCellLineAttributes( const SdrObject* pLine, Reference< XTable >& xTabl
 			static const rtl::OUString sTopBorder( String( RTL_CONSTASCII_USTRINGPARAM( "TopBorder" ) ) );
 			static const rtl::OUString sBottomBorder( String( RTL_CONSTASCII_USTRINGPARAM( "BottomBorder" ) ) );
 			static const rtl::OUString sLeftBorder( String( RTL_CONSTASCII_USTRINGPARAM( "LeftBorder" ) ) );
-			static const rtl::OUString sRightBorder( String( RTL_CONSTASCII_USTRINGPARAM( "RightBorder" ) ) );	
+			static const rtl::OUString sRightBorder( String( RTL_CONSTASCII_USTRINGPARAM( "RightBorder" ) ) );
 			static const rtl::OUString	sDiagonalTLBR( RTL_CONSTASCII_USTRINGPARAM ( "DiagonalTLBR" ) );
 			static const rtl::OUString	sDiagonalBLTR( RTL_CONSTASCII_USTRINGPARAM ( "DiagonalBLTR" ) );
 
@@ -7804,7 +7803,7 @@ void ApplyCellLineAttributes( const SdrObject* pLine, Reference< XTable >& xTabl
 			Reference< XCell > xCell( xCellRange->getCellByPosition( nColumn, nRow ) );
 			Reference< XPropertySet > xPropSet( xCell, UNO_QUERY_THROW );
 
-			if ( nFlags & LinePositionLeft ) 
+			if ( nFlags & LinePositionLeft )
 				xPropSet->setPropertyValue( sLeftBorder, Any( aBorderLine ) );
 			if ( nFlags & LinePositionTop )
 				xPropSet->setPropertyValue( sTopBorder, Any( aBorderLine ) );
@@ -7817,7 +7816,7 @@ void ApplyCellLineAttributes( const SdrObject* pLine, Reference< XTable >& xTabl
 			if ( nFlags & LinePositionBLTR )
 				xPropSet->setPropertyValue( sDiagonalBLTR, Any( sal_True ) );
 			aIter++;
-		}	
+		}
 	}
 	catch( Exception& )
 	{
@@ -7856,7 +7855,7 @@ SdrObject* SdrPowerPointImport::CreateTable( SdrObject* pGroup, sal_uInt32* pTab
 
 				CreateTableRows( xColumnRowRange->getRows(), aRows, pGroup->GetSnapRect().Bottom() );
 				CreateTableColumns( xColumnRowRange->getColumns(), aColumns, pGroup->GetSnapRect().Right() );
-				
+
 				sal_Int32 nCellCount = aRows.size() * aColumns.size();
 				sal_Int32 *pMergedCellIndexTable = new sal_Int32[ nCellCount ];
 				for ( sal_Int32 i = 0; i < nCellCount; i++ )
@@ -7892,7 +7891,7 @@ SdrObject* SdrPowerPointImport::CreateTable( SdrObject* pGroup, sal_uInt32* pTab
 									}
 								}
 							}
-		
+
 							// applying text
 							OutlinerParaObject* pParaObject = pObj->GetOutlinerParaObject();
 							if ( pParaObject )
@@ -7912,21 +7911,21 @@ SdrObject* SdrPowerPointImport::CreateTable( SdrObject* pGroup, sal_uInt32* pTab
 					{
 						std::vector< sal_Int32 > vPositions;	// containing cell indexes + cell position
 						GetLinePositions( pObj, aRows, aColumns, vPositions, pGroup->GetSnapRect() );
-						
+
 						// correcting merged cell position
 						std::vector< sal_Int32 >::iterator aIter( vPositions.begin() );
 						while( aIter != vPositions.end() )
 						{
 							sal_Int32 nOldPosition = *aIter & 0xffff;
-							sal_Int32 nOldFlags = *aIter & 0xffff0000;					
+							sal_Int32 nOldFlags = *aIter & 0xffff0000;
 							sal_Int32 nNewPosition = pMergedCellIndexTable[ nOldPosition ] | nOldFlags;
-							*aIter++ = nNewPosition; 
+							*aIter++ = nNewPosition;
 						}
 						ApplyCellLineAttributes( pObj, xTable, vPositions, aColumns.size() );
 					}
 				}
 				delete[] pMergedCellIndexTable;
-				
+
 				// we are replacing the whole group object by a single table object, so
 				// possibly connections to the group object have to be removed.
 				if ( pSolverContainer )
@@ -7943,9 +7942,9 @@ SdrObject* SdrPowerPointImport::CreateTable( SdrObject* pGroup, sal_uInt32* pTab
 							if ( pPtr->pBObj == pPartObj )
 								pPtr->pBObj = NULL;
 						}
-						//In MS, the one_row_one_col table is made up of five shape,the connector is connected to some part of a table. 
-						//but in AOO, the connector is connected to the whole group table,so the connector obj is a group table when export by AOO.
-						//should process this situation when import.
+						//I n MS, the one_row_one_col table is made up of five shape,the connector is connected to some part of a table.
+						// but in AOO, the connector is connected to the whole group table,so the connector obj is a group table when export by AOO.
+						// should process this situation when import.
 						if ( pPtr->pAObj == pGroup )
 							pPtr->pAObj = pTable;
 						if ( pPtr->pBObj == pGroup )
@@ -7956,7 +7955,7 @@ SdrObject* SdrPowerPointImport::CreateTable( SdrObject* pGroup, sal_uInt32* pTab
 				pTable->SetSnapRect( pGroup->GetSnapRect() );
 				pRet = pTable;
 
-				//Remove Objects from shape map
+				// Remove Objects from shape map
 				SdrObjListIter aIter( *pGroup, IM_DEEPWITHGROUPS );
 				while( aIter.IsMore() )
 				{
@@ -7987,7 +7986,7 @@ sal_Bool SdrPowerPointImport::IsVerticalText() const
 		MSO_TextFlow eTextFlow = (MSO_TextFlow)( GetPropertyValue( DFF_Prop_txflTextFlow ) & 0xFFFF );
 		switch( eTextFlow )
 		{
-		case mso_txflTtoBA :		            // Top to Bottom @-font, above -> below
+		case mso_txflTtoBA :					// Top to Bottom @-font, above -> below
 		case mso_txflTtoBN :					// Top to Bottom non-@, above -> below
 		case mso_txflVertN :					// Vertical, non-@, above -> below
 			bVerticalText = !bVerticalText;
@@ -7995,7 +7994,7 @@ sal_Bool SdrPowerPointImport::IsVerticalText() const
 		default: break;
 		}
 	}
-	
+
 	return bVerticalText;
 }
 
@@ -8003,12 +8002,12 @@ void	SdrPowerPointImport::ApplyTextAnchorAttributes( PPTTextObj& rTextObj, SfxIt
 {
 	SdrTextVertAdjust eTVA;
 	SdrTextHorzAdjust eTHA;
-	
+
 	sal_uInt32 nTextFlags = rTextObj.GetTextFlags();
 
 	nTextFlags &= PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT   | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT
 		| PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_CENTER | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_BLOCK;
-	
+
 	if ( IsVerticalText() )
 	{
 		eTVA = SDRTEXTVERTADJUST_BLOCK;
@@ -8034,8 +8033,8 @@ void	SdrPowerPointImport::ApplyTextAnchorAttributes( PPTTextObj& rTextObj, SfxIt
 			eTHA = SDRTEXTHORZADJUST_LEFT;
 			break;
 
-        default:
-            break;
+		default:
+			break;
 		}
 		// if there is a 100% use of following attributes, the textbox can been aligned also in vertical direction
 		switch ( eTextAnchor )
@@ -8046,7 +8045,7 @@ void	SdrPowerPointImport::ApplyTextAnchorAttributes( PPTTextObj& rTextObj, SfxIt
 			{
 				// check if it is sensible to use the centered alignment
 				sal_uInt32 nMask = PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT;
-				if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left or also right aligned pararagraphs
+				if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left or also right aligned paragraphs
 					eTVA = SDRTEXTVERTADJUST_CENTER;    // the text has to be displayed using the full width;
 			}
 			break;
@@ -8086,8 +8085,8 @@ void	SdrPowerPointImport::ApplyTextAnchorAttributes( PPTTextObj& rTextObj, SfxIt
 			eTVA = SDRTEXTVERTADJUST_BOTTOM;
 			break;
 
-        default:
-            break;
+		default:
+			break;
 		}
 		// if there is a 100% usage of following attributes, the textbox can be aligned also in horizontal direction
 		switch ( eTextAnchor )
@@ -8098,7 +8097,7 @@ void	SdrPowerPointImport::ApplyTextAnchorAttributes( PPTTextObj& rTextObj, SfxIt
 			{
 				// check if it is sensible to use the centered alignment
 				sal_uInt32 nMask = PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_LEFT | PPT_TEXTOBJ_FLAGS_PARA_ALIGNMENT_USED_RIGHT;
-				if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left or also right aligned pararagraphs
+				if ( ( nTextFlags & nMask ) != nMask )  // if the textobject has left or also right aligned paragraphs
 					eTHA = SDRTEXTHORZADJUST_CENTER;    // the text has to be displayed using the full width;
 			}
 			break;
@@ -8116,3 +8115,5 @@ void	SdrPowerPointImport::ApplyTextAnchorAttributes( PPTTextObj& rTextObj, SfxIt
 	rSet.Put( SdrTextVertAdjustItem( eTVA ) );
 	rSet.Put( SdrTextHorzAdjustItem( eTHA ) );
 }
+
+/* vim: set noet sw=4 ts=4: */

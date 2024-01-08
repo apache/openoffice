@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@
 
 enum TransparentType
 {
-	TRANSPARENT_NONE, 
+	TRANSPARENT_NONE,
 	TRANSPARENT_COLOR,
 	TRANSPARENT_BITMAP
 };
@@ -84,11 +84,11 @@ public:
 	void				SetEmpty();
 	void				Clear();
 
-	void				Draw( OutputDevice* pOutDev, 
+	void				Draw( OutputDevice* pOutDev,
 							  const Point& rDestPt ) const;
-	void				Draw( OutputDevice* pOutDev, 
+	void				Draw( OutputDevice* pOutDev,
 							  const Point& rDestPt, const Size& rDestSize ) const;
-	void				Draw( OutputDevice* pOutDev, 
+	void				Draw( OutputDevice* pOutDev,
 							  const Point& rDestPt, const Size& rDestSize,
 							  const Point& rSrcPtPixel, const Size& rSrcSizePixel ) const;
 
@@ -140,7 +140,7 @@ public:
 
         @return sal_True, if the color reduction operation was completed successfully.
      */
-	sal_Bool				ReduceColors( sal_uInt16 nNewColorCount, 
+	sal_Bool				ReduceColors( sal_uInt16 nNewColorCount,
 									  BmpReduce eReduce = BMP_REDUCE_SIMPLE );
 
     /** Apply a dither algorithm to the bitmap
@@ -172,7 +172,7 @@ public:
 
     /** Expand the bitmap by pixel padding
 
-    	@param nDX 
+    	@param nDX
         Number of pixel to pad at the right border of the bitmap
 
     	@param nDY
@@ -185,8 +185,8 @@ public:
         not only returned when the operation failed, but also if
         nothing had to be done, e.g. because nDX and nDY were zero.
      */
-    sal_Bool				Expand( sal_uLong nDX, sal_uLong nDY, 
-								const Color* pInitColor = NULL, 
+    sal_Bool				Expand( sal_uLong nDX, sal_uLong nDY,
+								const Color* pInitColor = NULL,
 								sal_Bool bExpandTransparent = sal_False );
 
     /** Copy a rectangular area from another bitmap
@@ -236,7 +236,7 @@ public:
     	@param nMirrorFlags
         About which axis (horizontal, vertical, or both) to mirror
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool				Mirror( sal_uLong nMirrorFlags );
 
@@ -248,7 +248,7 @@ public:
         @param nScaleFlag
         The algorithm to be used for scaling
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
 	sal_Bool				Scale( const Size& rNewSize, sal_uInt32 nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
 
@@ -260,7 +260,7 @@ public:
     	@param rScaleY
         The scale factor in y direction.
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool				Scale( const double& rScaleX, const double& rScaleY, sal_uInt32 nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE );
 
@@ -275,7 +275,7 @@ public:
         in. The empty spaces around that rotated original bitmap are
         then filled with this color.
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool				Rotate( long nAngle10, const Color& rFillColor );
 
@@ -283,7 +283,7 @@ public:
 
     	@param rSearchColor
         Color specifying which pixel should be replaced
-        
+
         @param rReplaceColor
         Color to be placed in all changed pixel
 
@@ -292,7 +292,7 @@ public:
         rSearchColor and the individual pixel values, such that the
         corresponding pixel is still regarded a match.
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
     sal_Bool				Replace( const Color& rSearchColor, const Color& rReplaceColor, sal_uLong nTol = 0 );
 
@@ -300,7 +300,7 @@ public:
 
     	@param pSearchColor
         Array of colors specifying which pixel should be replaced
-        
+
         @param pReplaceColor
         Array of colors to be placed in all changed pixel
 
@@ -312,9 +312,9 @@ public:
         pSearchColor colors and the individual pixel values, such that
         the corresponding pixel is still regarded a match.
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
-    sal_Bool				Replace( const Color* pSearchColors, const Color* pReplaceColors, 
+    sal_Bool				Replace( const Color* pSearchColors, const Color* pReplaceColors,
 								 sal_uLong nColorCount, const sal_uLong* pTols = NULL );
 
     /** Change various global color characteristics
@@ -342,12 +342,12 @@ public:
         @param bInvert
         If sal_True, invert the channel values with the logical 'not' operator
 
-        @return sal_True, if the operation was completed successfully.        
+        @return sal_True, if the operation was completed successfully.
      */
 	sal_Bool				Adjust( short nLuminancePercent = 0,
 								short nContrastPercent = 0,
-								short nChannelRPercent = 0, 
-								short nChannelGPercent = 0, 
+								short nChannelRPercent = 0,
+								short nChannelGPercent = 0,
 								short nChannelBPercent = 0,
 								double fGamma = 1.0,
 								sal_Bool bInvert = sal_False );
@@ -362,10 +362,10 @@ public:
 
         @param pProgress
         A callback for showing the progress of the vectorization
-        
-        @return sal_True, if the operation was completed successfully.        
+
+        @return sal_True, if the operation was completed successfully.
      */
-	sal_Bool				Filter( BmpFilter eFilter, 
+	sal_Bool				Filter( BmpFilter eFilter,
 								const BmpFilterParam* pFilterParam = NULL,
 								const Link* pProgress = NULL );
 
@@ -383,7 +383,7 @@ public:
     sal_uInt8 GetTransparency(sal_Int32 nX, sal_Int32 nY) const;
 
     /** Create transformed Bitmap
-        
+
         @param fWidth
         The target width in pixels
 
@@ -392,10 +392,10 @@ public:
 
         @param rTransformation
         The back transformation for each pixel in (0 .. fWidth),(0 .. fHeight) to
-        local pixel coordiantes
+        local pixel coordinates
 
         @param bSmooth
-        Defines if pixel interpolation is to be used to create the result 
+        Defines if pixel interpolation is to be used to create the result
     */
     BitmapEx TransformBitmapEx(
         double fWidth,
@@ -416,16 +416,16 @@ public:
         A limitation for the maximum size of pixels to use for the result
 
         @param bSmooth
-        Defines if pixel interpolation is to be used to create the result 
+        Defines if pixel interpolation is to be used to create the result
 
-        The traget size of the result bitmap is defined by transforming the given
+        The target size of the result bitmap is defined by transforming the given
         rTargetRange with the given rTransformation; the area of the result is
         linearly scaled to not exceed the given fMaximumArea
 
         @return The transformed bitmap
     */
     BitmapEx getTransformed(
-        const basegfx::B2DHomMatrix& rTransformation, 
+        const basegfx::B2DHomMatrix& rTransformation,
         const basegfx::B2DRange& rVisibleRange,
         double fMaximumArea = 500000.0,
         bool bSmooth = true) const;
@@ -455,19 +455,21 @@ public:
     */
 
 BitmapEx VCL_DLLPUBLIC createBlendFrame(
-    const Size& rSize, 
+    const Size& rSize,
     sal_uInt8 nAlpha,
-    Color aColorTopLeft, 
+    Color aColorTopLeft,
     Color aColorBottomRight);
 
 BitmapEx VCL_DLLPUBLIC createBlendFrame(
-    const Size& rSize, 
+    const Size& rSize,
     sal_uInt8 nAlpha,
-    Color aColorTopLeft, 
-    Color aColorTopRight, 
-    Color aColorBottomRight, 
+    Color aColorTopLeft,
+    Color aColorTopRight,
+    Color aColorBottomRight,
     Color aColorBottomLeft);
 
 // ------------------------------------------------------------------
 
 #endif // _SV_BITMAPEX_HXX
+
+/* vim: set noet sw=4 ts=4: */

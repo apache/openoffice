@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -339,7 +339,7 @@ protected:
 	inline void				SetStateRect( const Rectangle& _rStateRect )	{ maStateRect = _rStateRect; }
 	inline const Rectangle&	GetStateRect( ) const							{ return maStateRect; }
 
-	// draws the radio button (the knob image), in it's current state (pressed/checked)
+	// draws the radio button (the knob image), in its current state (pressed/checked)
 	// at the usual location, which can be overridden with SetStateRect
     void			DrawRadioButtonState( );
 
@@ -385,17 +385,17 @@ public:
 
     void            SetToggleHdl( const Link& rLink ) { maToggleHdl = rLink; }
     const Link&     GetToggleHdl() const { return maToggleHdl; }
-    
+
     /** GetRadioButtonGroup returns a list of pointers to <code>RadioButton</code>s in the same group.
-    
+
     The pointers in the returned list are valid at the time call returns. However rescheduling
     or giving up the SolarMutex may mean events get executed that lead to the pointers getting
     invalid.
-    
+
     @param io_rGroup
     gets cleared on entering the function. on return contains the <code>RadioButton</code>s
     in the same group as this <code>RadioButton</code>.
-    
+
     @param bIncludeThis
     defines whether <code>this</code> is contained in the returned list
     */
@@ -445,7 +445,7 @@ protected:
     SAL_DLLPRIVATE const Rectangle& GetStateRect() const { return maStateRect; }
 	SAL_DLLPRIVATE const Rectangle&	GetMouseRect() const { return maMouseRect; }
 public:
-    SAL_DLLPRIVATE void         ImplCheck();    
+    SAL_DLLPRIVATE void         ImplCheck();
     SAL_DLLPRIVATE void         ImplSetMinimumNWFSize();
 public:
     explicit        CheckBox( Window* pParent, WinBits nStyle = 0 );
@@ -498,7 +498,7 @@ inline sal_Bool CheckBox::IsChecked() const
 }
 
 // ---------------------------------
-// - Control-Layer fuer alten Code -
+// - Control layer for old code -
 // ---------------------------------
 
 class VCL_DLLPUBLIC ImageButton : public PushButton
@@ -558,3 +558,4 @@ public:
 
 #endif  // _SV_BUTTON_HXX
 
+/* vim: set noet sw=4 ts=4: */

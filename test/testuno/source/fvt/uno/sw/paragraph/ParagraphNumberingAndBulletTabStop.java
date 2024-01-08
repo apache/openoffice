@@ -67,7 +67,7 @@ public class ParagraphNumberingAndBulletTabStop {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);

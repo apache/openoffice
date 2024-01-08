@@ -3221,7 +3221,7 @@ long TextEngine::ImpGetPortionXOffset( sal_uLong nPara, TextLine* pLine, sal_uIn
 /*
     if ( IsRightToLeft() )
     {
-        // Switch X postions...
+        // Switch X positions...
         DBG_ASSERT( GetMaxTextWidth(), "GetPortionXOffset - max text width?!" );
         DBG_ASSERT( nX <= (long)GetMaxTextWidth(), "GetPortionXOffset - position out of paper size!" );
         nX = GetMaxTextWidth() - nX;

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textshared0101100500xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Internet</title>
 <filename>/text/shared/01/01100500.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-02-24T11:57:17">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="internet">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145669"><bookmark_value>auto reloading HTML documents</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145669">
+<bookmark_value>auto reloading HTML documents</bookmark_value>
 <bookmark_value>reloading; HTML documents, automatically</bookmark_value>
 <bookmark_value>loading; HTML documents, automatically</bookmark_value>
 <bookmark_value>HTML documents; auto reloading</bookmark_value>
@@ -47,7 +41,7 @@
 <paragraph role="paragraph" id="par_id3148731" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_DOCINFORELOAD">Sets the refresh and redirect options for an HTML page.</ahelp></paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/shared/00/00000401.xhp#info6"/>
+<embed href="text/shared/00/00000401.xhp#info6"/>
 </section>
 <bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_DOCINFORELOAD:RB_NOAUTOUPDATE" id="bm_id3149798" localize="false"/>
 <paragraph role="heading" id="hd_id3156027" xml-lang="en-US" level="2" l10n="U" oldref="26">Do not refresh automatically</paragraph>
@@ -60,7 +54,7 @@
 <paragraph role="paragraph" id="par_id3157958" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SFX2:NUMERICFIELD:TP_DOCINFORELOAD:ED_SECONDS">Enter the number of seconds to wait before the page is reloaded.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sfx2:RadioButton:TP_DOCINFORELOAD:RB_FORWARDUPDATE" id="bm_id3147210" localize="false"/>
 <paragraph role="heading" id="hd_id3148538" xml-lang="en-US" level="2" l10n="U" oldref="28">Redirect from this document</paragraph>
-<paragraph role="paragraph" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SFX2_RADIOBUTTON_TP_DOCINFORELOAD_RB_FORWARDUPDATE">Loads a page that you specify after the number of seconds that you enter in the <emph>seconds </emph>box.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SFX2_RADIOBUTTON_TP_DOCINFORELOAD_RB_FORWARDUPDATE">Loads a page that you specify after the number of seconds that you enter in the <emph>seconds</emph> box.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sfx2:NumericField:TP_DOCINFORELOAD:ED_FORWARD" id="bm_id7947935" localize="false"/>
 <paragraph role="heading" id="hd_id3147335" xml-lang="en-US" level="3" l10n="U" oldref="30">after ... seconds</paragraph>
 <paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="SFX2_RADIOBUTTON_TP_DOCINFORELOAD_RB_FORWARDUPDATE">Enter the number of seconds to wait before redirecting the browser to a different file.</ahelp></paragraph>
@@ -125,7 +119,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 </body>
 </helpdocument>

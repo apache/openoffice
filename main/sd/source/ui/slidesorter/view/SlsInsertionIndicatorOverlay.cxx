@@ -212,15 +212,15 @@ Point InsertionIndicatorOverlay::PaintRepresentatives (
 		{
 			case 0 :
 				aPageOffset = Point(0, nOffset);
-				nTransparency = 0.85;
+				nTransparency = 0.95;
 				break;
 			case 1:
 				aPageOffset = Point(nOffset, 0);
-				nTransparency = 0.75;
+				nTransparency = 0.85;
 				break;
 			case 2:
 				aPageOffset = Point(2*nOffset, 2*nOffset);
-				nTransparency = 0.65;
+				nTransparency = 0.75;
 				break;
 		}
 		aPageOffset += aOffset;
@@ -232,7 +232,7 @@ Point InsertionIndicatorOverlay::PaintRepresentatives (
 		const Size aSuperSampleSize(
 			aPreviewSize.Width()*gnSuperScaleFactor,
 			aPreviewSize.Height()*gnSuperScaleFactor);
-		aPreview.Scale(aPreviewSize, BMP_SCALE_INTERPOLATE);
+		aPreview.Scale(aPreviewSize, BMP_SCALE_FASTESTINTERPOLATE);
 		rContent.DrawBitmapEx(aPageOffset, aPreview);
 
 		// When the page is marked as excluded from the slide show then
@@ -445,3 +445,5 @@ Size InsertionIndicatorOverlay::GetSize (void) const
 
 
 } } } // end of namespace ::sd::slidesorter::view
+
+/* vim: set noet sw=4 ts=4: */

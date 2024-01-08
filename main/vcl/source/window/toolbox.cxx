@@ -4236,7 +4236,7 @@ void ToolBox::MouseMove( const MouseEvent& rMEvt )
             ++it;
         }
 
-        // was a new entery selected ?
+        // was a new entry selected ?
 		// don't change selection if keyboard selection is active and
         // mouse leaves the toolbox
         if ( nNewPos != mnCurPos && !( HasFocus() && nNewPos == TOOLBOX_ITEM_NOTFOUND ) )

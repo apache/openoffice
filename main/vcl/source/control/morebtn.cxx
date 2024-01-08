@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 #include <vcl/morebtn.hxx>
@@ -270,3 +268,4 @@ XubString MoreButton::GetLessText() const
 		return PushButton::GetText();
 }
 
+/* vim: set noet sw=4 ts=4: */

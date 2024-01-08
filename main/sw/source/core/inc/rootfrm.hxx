@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef SW_ROOTFRM_HXX
 #define SW_ROOTFRM_HXX
@@ -80,7 +79,7 @@ class SwRootFrm: public SwLayoutFrm
     bool    mbSidebarChanged;       // the notes sidebar state has changed
     // <--
 
-    bool    mbNeedGrammarCheck;     // true when sth needs to be checked (not necessarily started yet!)
+    bool    mbNeedGrammarCheck;     // true when something needs to be checked (not necessarily started yet!)
 
 	static SwLayVout	 *pVout;
 	static sal_Bool			  bInPaint;		//Schutz gegen doppelte Paints.
@@ -99,7 +98,7 @@ class SwRootFrm: public SwLayoutFrm
 									//siehe dcontact.cxx, ::Changed()
 
     //Fuer den BrowseMode. nBrowseWidth ist die Aeussere Kante des am weitesten
-	//rechts stehenden Objectes. Die rechte Kante der Seiten soll im BrowseMode
+	//rechts stehenden Objektes. Die rechte Kante der Seiten soll im BrowseMode
 	//nicht kleiner werden als dieser Wert.
 	long    nBrowseWidth;
 
@@ -127,10 +126,10 @@ class SwRootFrm: public SwLayoutFrm
 	//waehrend noch ein CurrShell-Objekt "aktiv" ist. Dieses wird dann in
 	//pWaitingCurrShell eingetragen und vom letzten DTor der CurrShell
 	//"aktiviert".
-	//Ein weiteres Problem ist dass Zerstoeren einer Shell waehrend sie aktiv
+	//Ein weiteres Problem ist das Zerstoeren einer Shell waehrend sie aktiv
 	//ist. Der Pointer pCurrShell wird dann auf eine beliebige andere Shell
 	//umgesetzt.
-	//Wenn zum Zeitpunkt der zerstoerung einer Shell diese noch in irgendwelchen
+	//Wenn zum Zeitpunkt der Zerstoerung einer Shell diese noch in irgendwelchen
 	//CurrShell-Objekten referenziert wird, so wird auch dies aufgeklart.
 	friend class CurrShell;
 	friend void SetShell( ViewShell *pSh );
@@ -144,8 +143,8 @@ class SwRootFrm: public SwLayoutFrm
 
 	SwDestroyList* pDestroy;
 
-	sal_uInt16	nPhyPageNums;			//Anzahl der Seiten.
-    sal_uInt16 nAccessibleShells;   // Number of accessible shells
+	sal_uInt16	nPhyPageNums; // Number of pages
+    sal_uInt16 nAccessibleShells; // Number of accessible shells
 
 	void ImplCalcBrowseWidth();
 	void ImplInvalidateBrowseWidth();
@@ -179,9 +178,9 @@ public:
 	ViewShell *GetCurrShell() const { return pCurrShell; }
 	void DeRegisterShell( ViewShell *pSh );
 
-	//Start-/EndAction fuer alle Shells auf moeglichst hoeher
+	//Start-/EndAction fuer alle Shells auf moeglichst hoher
 	//(Shell-Ableitungs-)Ebene aufsetzen. Fuer die StarONE Anbindung, die
-	//die Shells nicht dirkt kennt.
+	//die Shells nicht direkt kennt.
 	//Der ChangeLinkd der CrsrShell (UI-Benachrichtigung) wird im EndAllAction
 	//automatisch gecallt.
 	void StartAllAction();
@@ -264,7 +263,7 @@ public:
     // Point rPt: The point that should be used to find the page
     // Size pSize: If given, we return the (first) page that overlaps with the
     // rectangle defined by rPt and pSize
-    // bool bExtend: Extend each page to the left/right/top/botton up to the
+    // bool bExtend: Extend each page to the left/right/top/bottom up to the
     // next page border
     const SwPageFrm* GetPageAtPos( const Point& rPt, const Size* pSize = 0, bool bExtend = false ) const;
 
@@ -326,7 +325,7 @@ public:
 	void AddAccessibleShell() { ++nAccessibleShells; }
 	void RemoveAccessibleShell() { --nAccessibleShells; }
 
-    /** get page frame by phyiscal page number
+    /** get page frame by physical page number
 
         OD 14.01.2003 #103492#
         looping through the lowers, which are page frame, in order to find the
@@ -370,3 +369,4 @@ inline	void SwRootFrm::SetVirtPageNum( const sal_Bool bOf) const
 
 #endif  // SW_ROOTFRM_HXX
 
+/* vim: set noet sw=4 ts=4: */

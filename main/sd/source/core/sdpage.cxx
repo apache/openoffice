@@ -2562,7 +2562,7 @@ const String& SdPage::GetName() const
 			aCreatedPageName += sal_Unicode( ' ' );
 			if( GetModel()->GetPageNumType() == SVX_NUMBER_NONE )
 			{
-				// if the document has number none as a formating
+				// if the document has number none as a formatting
 				// for page numbers we still default to Arabic numbering
 				// to keep the default page names unique
 				aCreatedPageName += String::CreateFromInt32( (sal_Int32)nNum );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -720,14 +720,14 @@ void ViewShellBase::Execute (SfxRequest& rRequest)
                 framework::FrameworkHelper::msLeftDrawPaneURL,
                 framework::FrameworkHelper::msSlideSorterURL);
             break;
-            
+
         case SID_LEFT_PANE_IMPRESS:
             mpImpl->SetPaneVisibility(
                 rRequest,
                 framework::FrameworkHelper::msLeftImpressPaneURL,
                 framework::FrameworkHelper::msSlideSorterURL);
             break;
-            
+
         case SID_NORMAL_MULTI_PANE_GUI:
         case SID_SLIDE_SORTER_MULTI_PANE_GUI:
         case SID_DRAWINGMODE:
@@ -967,7 +967,7 @@ void ViewShellBase::UpdateBorder ( bool bForce /* = false */ )
         bool bOuterResize ( ! GetDocShell()->IsInPlaceActive());
         SvBorder aBorder (GetBorder(bOuterResize));
         aBorder += pMainViewShell->GetBorder(bOuterResize);
-    
+
         if (bForce || (aBorder != aCurrentBorder))
         {
             SetBorderPixel (aBorder);
@@ -1043,7 +1043,7 @@ OUString ViewShellBase::GetInitialViewShellType (void)
                         break;
 
                     default:
-                        // The page kind is invalid.  This is propably an
+                        // The page kind is invalid.  This is probably an
                         // error by the caller.  We use the standard type to
                         // keep things going.
                         DBG_ASSERT(sal_False, "ViewShellBase::GetInitialViewShellType: invalid page kind");
@@ -1097,7 +1097,7 @@ const Rectangle& ViewShellBase::getClientRectangle (void) const
 {
     OSL_ASSERT(mpImpl.get()!=NULL);
     OSL_ASSERT(mpImpl->mpUpdateLockManager.get()!=NULL);
-    
+
     return mpImpl->mpUpdateLockManager;
 }
 
@@ -1108,7 +1108,7 @@ const Rectangle& ViewShellBase::getClientRectangle (void) const
 {
     OSL_ASSERT(mpImpl.get()!=NULL);
     OSL_ASSERT(mpImpl->mpToolBarManager.get()!=NULL);
-    
+
     return mpImpl->mpToolBarManager;
 }
 
@@ -1295,7 +1295,7 @@ void ViewShellBase::Implementation::ResizePixel (
 	// Forward the call to both the base class and the main stacked sub
     // shell only when main sub shell exists.
     ViewShell* pMainViewShell = mrBase.GetMainViewShell().get();
-    
+
     // Set the ViewTabBar temporarily to full size so that, when asked
     // later, it can return its true height.
     mrBase.SetWindow (mpViewWindow.get());
@@ -1318,7 +1318,7 @@ void ViewShellBase::Implementation::ResizePixel (
         mpViewTabBar->GetTabControl()->SetPosSizePixel(
             rOrigin, Size(rSize.Width(),aBaseBorder.Top()));
     }
-    
+
     // The view window gets the remaining space.
     Point aViewWindowPosition (
         rOrigin.X()+aBaseBorder.Left(),
@@ -1327,7 +1327,7 @@ void ViewShellBase::Implementation::ResizePixel (
         rSize.Width() - aBaseBorder.Left() - aBaseBorder.Right(),
         rSize.Height() - aBaseBorder.Top() - aBaseBorder.Bottom());
     mpViewWindow->SetPosSizePixel(aViewWindowPosition, aViewWindowSize);
-    
+
     maClientArea = Rectangle(Point(0,0), aViewWindowSize);
 }
 
@@ -1349,7 +1349,7 @@ void ViewShellBase::Implementation::SetPaneVisibility (
             xContext, rsPaneURL));
         Reference<XResourceId> xViewId (ResourceId::createWithAnchorURL(
             xContext, rsViewURL, rsPaneURL));
-        
+
         // Determine the new visibility state.
         const SfxItemSet* pArguments = rRequest.GetArgs();
         sal_Bool bShowChildWindow;
@@ -1367,10 +1367,10 @@ void ViewShellBase::Implementation::SetPaneVisibility (
                 xConfigurationController->getRequestedConfiguration());
             if ( ! xConfiguration.is())
                 throw RuntimeException();
-            
+
             bShowChildWindow = ! xConfiguration->hasResource(xPaneId);
         }
-    
+
         // Set the desired visibility state at the current configuration
         // and update it accordingly.
         Reference<XConfigurationController> xConfigurationController (
@@ -1431,7 +1431,7 @@ void ViewShellBase::Implementation::GetSlotState (SfxItemSet& rSet)
                         xResourceId = ResourceId::create(
                             xContext, FrameworkHelper::msLeftImpressPaneURL);
                         break;
-                        
+
                     case SID_LEFT_PANE_DRAW:
                         xResourceId = ResourceId::create(
                             xContext, FrameworkHelper::msLeftDrawPaneURL);
@@ -1508,13 +1508,13 @@ void ViewShellBase::Implementation::GetSlotState (SfxItemSet& rSet)
                     bState &= !bMasterPageMode;
                     break;
                 }
-                    
+
                 case SID_HANDOUTMODE:
                     // There is only the master page mode for the handout
                     // view so ignore the master page flag.
                     break;
             }
-            
+
             // And finally set the state.
             rSet.Put(SfxBoolItem(nItemId, bState));
 
@@ -1664,3 +1664,5 @@ void FocusForwardingWindow::Command (const CommandEvent& rEvent)
 } // end of anonymouse namespace
 
 } // end of namespace sd
+
+/* vim: set noet sw=4 ts=4: */

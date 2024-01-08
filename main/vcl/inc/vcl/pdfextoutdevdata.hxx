@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -79,18 +79,18 @@ class VCL_DLLPUBLIC PDFExtOutDevData : public ExtOutDevData
 
 	const OutputDevice& mrOutDev;
 
-    sal_Bool                        mbTaggedPDF;
+	sal_Bool                        mbTaggedPDF;
 	sal_Bool				    	mbExportNotes;
 	sal_Bool						mbExportNotesPages;
 	sal_Bool					    mbTransitionEffects;
 	sal_Bool					    mbUseLosslessCompression;
 	sal_Bool					    mbReduceImageResolution;
-    sal_Bool                        mbExportFormFields;
-    sal_Bool                        mbExportBookmarks;
-    sal_Bool                        mbExportNDests; //i56629
-    sal_Int32                       mnFormsFormat;
+	sal_Bool                        mbExportFormFields;
+	sal_Bool                        mbExportBookmarks;
+	sal_Bool                        mbExportNDests; //i56629
+	sal_Int32                       mnFormsFormat;
 	sal_Int32					    mnPage;
-    com::sun::star::lang::Locale    maDocLocale;
+	com::sun::star::lang::Locale    maDocLocale;
 
 	PageSyncData*				mpPageSyncData;
 	GlobalSyncData*				mpGlobalSyncData;
@@ -122,17 +122,17 @@ public :
 	sal_Bool	GetIsExportTransitionEffects() const;
 	void		SetIsExportTransitionEffects( const sal_Bool bTransitionalEffects );
 
-    sal_Bool    GetIsExportFormFields() const;
-    void        SetIsExportFormFields( const sal_Bool bExportFormFields );
+	sal_Bool    GetIsExportFormFields() const;
+	void        SetIsExportFormFields( const sal_Bool bExportFormFields );
 
 	sal_Int32	GetFormsFormat() const;
 	void		SetFormsFormat( const sal_Int32 nFormsFormat );
 
-    sal_Bool    GetIsExportBookmarks() const;
-    void        SetIsExportBookmarks( const sal_Bool bExportBookmarks );
+	sal_Bool    GetIsExportBookmarks() const;
+	void        SetIsExportBookmarks( const sal_Bool bExportBookmarks );
 
-    sal_Bool    GetIsExportNamedDestinations() const; //i56629
-    void        SetIsExportNamedDestinations( const sal_Bool bExportNDests ); //i56629
+	sal_Bool    GetIsExportNamedDestinations() const; //i56629
+	void        SetIsExportNamedDestinations( const sal_Bool bExportNDests ); //i56629
 
 	// PageNumber, Compression is being set by the PDFExport
 	sal_Int32	GetCurrentPageNumber() const;
@@ -144,7 +144,7 @@ public :
 	sal_Bool	GetIsReduceImageResolution() const;
 	void		SetIsReduceImageResolution( const sal_Bool bReduceImageResolution );
 
-    const com::sun::star::lang::Locale& GetDocumentLocale() const;
+	const com::sun::star::lang::Locale& GetDocumentLocale() const;
     void        SetDocumentLocale( const com::sun::star::lang::Locale& rLoc );
 
 	std::vector< PDFExtOutDevBookmarkEntry >& GetBookmarks();
@@ -192,13 +192,13 @@ public :
 //--->i56629
     /** Create a new named destination to be used in a link to this document from another PDF document
  (see PDF spec 1.4, 8.2.1)
- 
-    @parm sDestName
+
+    @param sDestName
     the name this destination will be addressed with from others PDF document
 
     @param rRect
     target rectangle on page to be displayed if dest is jumped to
-    
+
     @param nPageNr
     number of page the dest is on (as returned by NewPage)
     or -1 in which case the current page is used
@@ -212,7 +212,7 @@ public :
     */
 	sal_Int32 CreateNamedDest( const String& sDestName,  const Rectangle& rRect, sal_Int32 nPageNr = -1, PDFWriter::DestAreaType eType = PDFWriter::XYZ );
 
-    /** registers a destination for which a destinatin ID needs to be known immediately, instead of later on setting it via
+    /** registers a destination for which a destination ID needs to be known immediately, instead of later on setting it via
         SetLinkDest.
 
         This is used in contexts where a destination is referenced by means other than a link.
@@ -235,7 +235,7 @@ public :
 
     @param rRect
     target rectangle on page to be displayed if dest is jumped to
-    
+
     @param nPageNr
     number of page the dest is on (as returned by NewPage)
     or -1 in which case the current page is used
@@ -281,14 +281,14 @@ public :
         <p>will change a dest type link to an URL type link if necessary</p>
         @param nLinkId
         the link to be changed
-       
+
         @param rURL
         the URL the link shall point to.
         there will be no error checking or any kind of
-        conversion done to this parameter execept this:
+        conversion done to this parameter except this:
         it will be output as 7bit Ascii. The URL
         will appear literally in the PDF file produced
-        
+
         @returns
         0 for success
         -1 in case the link id does not exist
@@ -340,7 +340,7 @@ public :
     -1 if the item does not exist
     */
     sal_Int32 SetOutlineItemText( sal_Int32 nItem, const rtl::OUString& rText );
-    
+
     /** Set an outline item's destination
 
     @param nItem
@@ -407,7 +407,7 @@ public :
      */
      sal_Int32 BeginStructureElement( PDFWriter::StructElement eType, const rtl::OUString& rAlias = rtl::OUString() );
     /** end a logical structure element
-        
+
     @see BeginStructureElement
      */
     void EndStructureElement();
@@ -415,9 +415,9 @@ public :
 
     <p>
     For different purposes it may be useful to paint a structure element's
-    content discontinously. In that case an already existing structure element
+    content discontinuously. In that case an already existing structure element
     can be appended to by using <code>SetCurrentStructureElement</code>. The
-    refenrenced structure element becomes the current structure element with
+    referenced structure element becomes the current structure element with
     all consequences: all following structure elements are appended as children
     of the current element.
     </p>
@@ -432,14 +432,14 @@ public :
      */
     bool SetCurrentStructureElement( sal_Int32 nElement );
     /** get the current structure element id
-        
+
     @returns
     the id of the current structure element
     */
     sal_Int32 GetCurrentStructureElement();
 
     /** set a structure attribute on the current structural element
-        
+
     SetStructureAttribute sets an attribute of the current structural element to a
     new value. A consistency check is performed before actually setting the value;
     if the check fails, the function returns <FALSE/> and the attribute remains
@@ -457,7 +457,7 @@ public :
      */
     bool SetStructureAttribute( PDFWriter::StructAttribute eAttr, PDFWriter::StructAttributeValue eVal );
     /** set a structure attribute on the current structural element
-        
+
     SetStructureAttributeNumerical sets an attribute of the current structural element
     to a new numerical value. A consistency check is performed before actually setting
     the value; if the check fails, the function returns <FALSE/> and the attribute
@@ -498,7 +498,7 @@ public :
      */
     void SetActualText( const String& rText );
 
-    /** set the Alt attribute of a strutural element
+    /** set the Alt attribute of a structural element
 
     Alt is s replacement text describing the contents of a structural element. This
     is mainly used by accessibility applications; e.g. a screen reader would read
@@ -542,7 +542,7 @@ public :
     will be cast to the type described by the type member.
 
     @param rControlType
-    a descendant of <code>AnyWidget</code> determing the control's properties
+    a descendant of <code>AnyWidget</code> determining the control's properties
      */
     void    CreateControl( const PDFWriter::AnyWidget& rControlType, sal_Int32 nPageNr = -1 );
 };
@@ -550,3 +550,5 @@ public :
 }
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

@@ -172,7 +172,7 @@ public class StandardFilterOption {
 				assertFalse("Expect should be false", (Boolean) PropSet.getPropertyValue("IsVisible"));
 		}
 
-		// Change to CaseSenstive
+		// Change to CaseSensitive
 		xFilterProp.setPropertyValue("IsCaseSensitive", true);
 		xFilter.filter(xFilterDesc);
 
@@ -418,7 +418,7 @@ public class StandardFilterOption {
 				assertTrue("Verify row is invisible.", (Boolean) PropSet.getPropertyValue("IsVisible"));
 		}
 
-		// Change to skip Dulicates
+		// Change to skip Duplicates
 		xFilterProp.setPropertyValue("SkipDuplicates", new Boolean(false));
 		xFilter.filter(xFilterDesc);
 

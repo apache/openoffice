@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,35 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsdrawguidedraw_sectorxml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Drawing Sectors and Segments</title>
 <filename>/text/sdraw/guide/draw_sector.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2005-10-24T14:18:47">FPE: Reformat, removed screenshot</lastedited>
-</history>
+<comment>Reformat, removed screenshot</comment>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3146974"><bookmark_value>sectors of circles/ellipses</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146974">
+<bookmark_value>sectors of circles/ellipses</bookmark_value>
 <bookmark_value>segments of circles/ellipses</bookmark_value>
 <bookmark_value>circle segments</bookmark_value>
 <bookmark_value>ellipses; segments</bookmark_value>
@@ -52,7 +45,7 @@
 <listitem>
 <paragraph role="paragraph" id="par_id3155335" xml-lang="en-US" l10n="U" oldref="33">Open the <emph>Ellipses</emph> toolbar and click one of the <emph>Circle Pie</emph> or <emph>Ellipse Pie</emph> icons 
 <image id="img_id3155768" src="res/commandimagelist/sc_circlepie_unfilled.png" width="5.64mm" height="5.64mm"><alt id="alt_id3155768" xml-lang="en-US">Icon</alt>
-	</image>. The mouse pointer changes to a cross hair with a small icon of a sector.</paragraph>
+</image>. The mouse pointer changes to a cross hair with a small icon of a sector.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id3150199" xml-lang="en-US" l10n="U" oldref="34">Position the pointer at the edge of the circle you want to draw and drag to create the circle.</paragraph>

@@ -68,7 +68,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -137,7 +137,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -206,7 +206,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -275,7 +275,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -344,7 +344,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -413,7 +413,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -482,7 +482,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -551,7 +551,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -620,7 +620,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -689,7 +689,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -758,7 +758,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -827,7 +827,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -896,7 +896,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -965,7 +965,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1034,7 +1034,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1046,7 +1046,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Main index entery";	
+		propsRule[1].Value = "Main index entry";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
 		xReplaceRule.replaceByIndex(0, propsRule);  
 		//set paragraph numbering and bullet character
@@ -1081,7 +1081,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		PropertyValue[] propsRule_assert_odt=(PropertyValue[]) UnoRuntime.queryInterface(PropertyValue[].class,xReplaceRule_assert_odt.getByIndex(0));
 		//verify paragraph numbering and bullet alignment
 		assertEquals("assert numbering and bullet","CharStyleName",propsRule_assert_odt[4].Name);
-		assertEquals("assert numbering and bullet","Main index entery",propsRule_assert_odt[4].Value);
+		assertEquals("assert numbering and bullet","Main index entry",propsRule_assert_odt[4].Value);
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
@@ -1103,7 +1103,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1172,7 +1172,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1241,7 +1241,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1310,7 +1310,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1379,7 +1379,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1448,7 +1448,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1517,7 +1517,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1585,7 +1585,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1654,7 +1654,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1723,7 +1723,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
@@ -1792,7 +1792,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
-		//create cursor to select paragraph and formating paragraph
+		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();    
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);

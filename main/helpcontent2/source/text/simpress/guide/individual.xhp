@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,21 +21,17 @@
  *
  ***********************************************************-->
 
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textsimpressguideindividualxml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Creating a Custom Slide Show</title>
 <filename>/text/simpress/guide/individual.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-09-26T14:26:54">FPE: Deleted screenshot. Cleaned.</lastedited>
-</history>
+<comment>Deleted screenshot. Cleaned.</comment>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3146119"><bookmark_value>slide shows; custom</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146119">
+<bookmark_value>slide shows; custom</bookmark_value>
 <bookmark_value>custom slide shows</bookmark_value>
 <bookmark_value>starting; always with the current slide</bookmark_value>
 <bookmark_value>starting;custom slide shows</bookmark_value>
@@ -53,7 +48,7 @@
 <paragraph role="listitem" id="par_id3153712" xml-lang="en-US" l10n="CHG" oldref="61">Choose <emph>Slide Show - Custom Slide Shows</emph>.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3153966" xml-lang="en-US" l10n="U" oldref="62">Click <emph>New</emph> and enter a name for your slide show in the <emph>Name </emph>box.</paragraph>
+<paragraph role="listitem" id="par_id3153966" xml-lang="en-US" l10n="U" oldref="62">Click <emph>New</emph> and enter a name for your slide show in the <emph>Name</emph> box.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3150249" xml-lang="en-US" l10n="U" oldref="73">Under <emph>Existing Slides</emph>, select the slides you want to add to your slide show, and click the <emph>&gt;</emph> button. Hold down Shift to select a range of slides, or Ctrl to select multiple slides.</paragraph>
@@ -72,7 +67,7 @@
 <paragraph role="listitem" id="par_id3149943" xml-lang="en-US" l10n="U" oldref="77">Click <emph>Start</emph>.</paragraph>
 </listitem>
 </list>
-<paragraph role="tip" id="par_id3145593" xml-lang="en-US" l10n="CHG" oldref="56">If you want the selected custom slide show to start when you click the <emph>Slide Show</emph> icon on the<emph> Presentation</emph> toolbar, or when you press F5, select <emph>Use Custom Slide Show</emph>.</paragraph>
+<paragraph role="tip" id="par_id3145593" xml-lang="en-US" l10n="CHG" oldref="56">If you want the selected custom slide show to start when you click the <emph>Slide Show</emph> icon on the <emph>Presentation</emph> toolbar, or when you press F5, select <emph>Use Custom Slide Show</emph>.</paragraph>
 <paragraph role="heading" id="hd_id3145169" xml-lang="en-US" level="2" l10n="U" oldref="78">Options for Running a Slide Show</paragraph>
 <paragraph role="heading" id="hd_id3150335" xml-lang="en-US" level="3" l10n="U" oldref="65">To always start a slide show from the current slide:</paragraph>
 <list type="ordered">

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,8 +44,8 @@ namespace drawinglayer
 	namespace primitive2d
 	{
 		ShadowPrimitive2D::ShadowPrimitive2D(
-			const basegfx::B2DHomMatrix& rShadowTransform, 
-			const basegfx::BColor& rShadowColor, 
+			const basegfx::B2DHomMatrix& rShadowTransform,
+			const basegfx::BColor& rShadowColor,
 			const Primitive2DSequence& rChildren)
 		:	GroupPrimitive2D(rChildren),
 			maShadowTransform(rShadowTransform),
@@ -58,8 +58,8 @@ namespace drawinglayer
 			if(BasePrimitive2D::operator==(rPrimitive))
 			{
 				const ShadowPrimitive2D& rCompare = static_cast< const ShadowPrimitive2D& >(rPrimitive);
-				
-				return (getShadowTransform() == rCompare.getShadowTransform() 
+
+				return (getShadowTransform() == rCompare.getShadowTransform()
 					&& getShadowColor() == rCompare.getShadowColor());
 			}
 
@@ -77,22 +77,22 @@ namespace drawinglayer
 		{
 			Primitive2DSequence aRetval;
 
-            if(getChildren().hasElements())
-            {
-                // create a modifiedColorPrimitive containing the shadow color and the content
-                const basegfx::BColorModifierSharedPtr aBColorModifier(
-                    new basegfx::BColorModifier_replace(
-                        getShadowColor()));
-                const Primitive2DReference xRefA(
-                    new ModifiedColorPrimitive2D(
-                        getChildren(), 
-                        aBColorModifier));
-                const Primitive2DSequence aSequenceB(&xRefA, 1L);
+			if(getChildren().hasElements())
+			{
+				// create a modifiedColorPrimitive containing the shadow color and the content
+				const basegfx::BColorModifierSharedPtr aBColorModifier(
+					new basegfx::BColorModifier_replace(
+						getShadowColor()));
+				const Primitive2DReference xRefA(
+					new ModifiedColorPrimitive2D(
+						getChildren(),
+						aBColorModifier));
+				const Primitive2DSequence aSequenceB(&xRefA, 1L);
 
-                // build transformed primitiveVector with shadow offset and add to target
-                const Primitive2DReference xRefB(new TransformPrimitive2D(getShadowTransform(), aSequenceB));
-                aRetval = Primitive2DSequence(&xRefB, 1L);
-            }
+				// build transformed primitiveVector with shadow offset and add to target
+				const Primitive2DReference xRefB(new TransformPrimitive2D(getShadowTransform(), aSequenceB));
+				aRetval = Primitive2DSequence(&xRefB, 1L);
+			}
 
 			return aRetval;
 		}
@@ -103,5 +103,4 @@ namespace drawinglayer
 	} // end of namespace primitive2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

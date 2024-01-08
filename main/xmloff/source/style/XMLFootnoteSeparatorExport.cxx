@@ -64,7 +64,7 @@ void XMLFootnoteSeparatorExport::exportXML(
 {
 	DBG_ASSERT(NULL != pProperties, "Need property states");
 
-	// intialize values
+	// initialize values
 	sal_Int16 eLineAdjust = text::HorizontalAdjust_LEFT;
 	sal_Int32 nLineColor = 0;
 	sal_Int32 nLineDistance = 0;

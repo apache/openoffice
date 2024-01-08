@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared03102000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">DefVar Statement [Runtime]</title>
 <filename>/text/sbasic/shared/03102000.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2004-08-24T11:27:06">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="defvar">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3143267"><bookmark_value>DefVar statement</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143267">
+<bookmark_value>DefVar statement</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3143267" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03102000.xhp" name="DefVar Statement [Runtime]">DefVar Statement [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_id3153825" xml-lang="en-US" l10n="U" oldref="2">Sets the default variable type, according to a letter range, if no type-declaration character or keyword is specified.</paragraph>
@@ -50,7 +44,7 @@
 <paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="7">
 <emph>xxx:</emph> Keyword that defines the default variable type:</paragraph>
 <paragraph role="paragraph" id="par_id3153524" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Keyword: </emph>Default variable type</paragraph>
+<emph>Keyword:</emph> Default variable type</paragraph>
 <paragraph role="paragraph" id="par_id3150767" xml-lang="en-US" l10n="U" oldref="9">
 <emph>DefVar:</emph> Variant</paragraph>
 <paragraph role="heading" id="hd_id3151041" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>

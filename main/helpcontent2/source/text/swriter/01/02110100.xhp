@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,18 +21,13 @@
  *
  ***********************************************************-->
 
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textswriter0102110100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Navigation</title>
 <filename>/text/swriter/01/02110100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-01-20T11:19:16">UFI: fixed #i39357#</lastedited>
-</history>
+<comment>fixed #i39357#</comment>
 </meta>
 <body>
 <bookmark xml-lang="en-US" branch="hid/SW_HID_SCRL_NAVI" id="bm_id3149832" localize="false"/>
@@ -51,7 +45,8 @@
 <bookmark xml-lang="en-US" branch="hid/SW_HID_NAVI_VS" id="bm_id3154622" localize="false"/>
 <paragraph role="paragraph" id="par_id3153141" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="HID_NAVI_VS">Click the icon for the type of objects you want to browse through. Then click one of the "Previous Object" or "Next Object" arrow buttons. The names of these buttons indicate the type of object you have selected. The text cursor is placed on whichever object you have selected.</ahelp></paragraph>
 <paragraph role="tip" id="par_id3149968" xml-lang="en-US" l10n="CHG" oldref="11">You can configure $[officename] according to your specific preferences for navigating within a document. To do this, choose <link href="text/shared/01/06140000.xhp" name="Tools - Customize"><emph>Tools - Customize</emph></link>. The various tables for adapting <link href="text/shared/01/06140100.xhp" name="menus">menus</link>, <link href="text/shared/01/06140200.xhp" name="keyboard input">keyboard input</link> or toolbars contain various functions for navigation within the document under the "Navigate" area. In this way you can jump to the index tags in the document with the "To Next/Previous Index Tag" functions.</paragraph>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155338"><bookmark_value>searching; repeating a search</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155338">
+<bookmark_value>searching; repeating a search</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3155338" xml-lang="en-US" level="2" l10n="U" oldref="8">Repeat Search</paragraph>
 <paragraph role="paragraph" id="par_id3155361" xml-lang="en-US" l10n="U" oldref="9">With the <emph>Repeat search</emph> icon on the <emph>Navigation</emph> toolbar you can repeat a search you started with the <emph>Search and Replace</emph> dialog. To do this, click the icon. The blue arrow buttons on the vertical scrollbar now take on the functions <emph>Continue search forwards</emph> and <emph>Continue search backwards</emph>. If you now click one of the arrow surfaces, the search will be continued for the term entered in the Search and Replace dialog.</paragraph>

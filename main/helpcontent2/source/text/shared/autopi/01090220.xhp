@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,30 +9,25 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedautopi01090220xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Form Wizard - Get Joined Fields</title>
 <filename>/text/shared/autopi/01090220.xhp</filename>
 </topic>
-<history>
-<created date="2004-07-02T12:35:53">UFI: new Form Wizard page 4</created>
-<lastedited date="2005-02-15T14:54:28">YJ: checked</lastedited>
-</history>
+<comment>new Form Wizard page 4</comment>
 </meta>
 <body>
 <section id="getjoinedfields">
@@ -41,7 +35,7 @@
 <paragraph role="paragraph" id="par_idN10553" xml-lang="en-US" l10n="NEW">If you chose in step 2 to set up a subform based on manual selection of fields, you can select the joined fields on this wizard page.</paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/shared/00/00000401.xhp#autopilotformular"/>
+<embed href="text/shared/00/00000401.xhp#autopilotformular"/>
 </section>
 <bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_DLGFORM_LINKER_LSTSLAVELINK1" id="bm_id1117587" localize="false"/>
 <paragraph role="heading" id="par_idN10556" xml-lang="en-US" level="2" l10n="NEW">First joined subform field</paragraph>

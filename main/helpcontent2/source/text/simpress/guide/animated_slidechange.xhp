@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsimpressguideanimated_slidechangexml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Animating Slide Transitions</title>
@@ -34,13 +29,15 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153820"><bookmark_value>cross-fading; slides</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153820">
+<bookmark_value>cross-fading; slides</bookmark_value>
 <bookmark_value>slide transitions; applying effects</bookmark_value>
 <bookmark_value>animated slide transitions</bookmark_value>
 <bookmark_value>transition effects</bookmark_value>
 <bookmark_value>deleting; slide transition effects</bookmark_value>
 <bookmark_value>effects;animated slide transitions</bookmark_value>
-</bookmark><comment>MW changed "removing;..." to "deleting;..."</comment><paragraph role="heading" id="hd_id3153820" xml-lang="en-US" level="1" l10n="U" oldref="46"><variable id="animated_slidechange"><link href="text/simpress/guide/animated_slidechange.xhp" name="Animating Slide Transitions">Animating Slide Transitions</link>
+</bookmark><comment>MW changed "removing;..." to "deleting;..."</comment>
+<paragraph role="heading" id="hd_id3153820" xml-lang="en-US" level="1" l10n="U" oldref="46"><variable id="animated_slidechange"><link href="text/simpress/guide/animated_slidechange.xhp" name="Animating Slide Transitions">Animating Slide Transitions</link>
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3150049" xml-lang="en-US" l10n="U" oldref="67">You can apply a special effect that plays when you display a slide.</paragraph>
 <paragraph role="heading" id="hd_id3153811" xml-lang="en-US" level="3" l10n="U" oldref="68">To apply a transition effect to a slide</paragraph>
@@ -62,7 +59,7 @@
 <paragraph role="paragraph" id="par_id3150263" xml-lang="en-US" l10n="CHG" oldref="48">In <emph>Slide Sorter</emph> view, select the slides that you want to add the transition effect to.</paragraph>
 <paragraph role="paragraph" id="par_id3148826" xml-lang="en-US" l10n="U" oldref="49">If you want, you can use the <emph>Zoom</emph> toolbar 
 <image id="img_id3151172" src="res/commandimagelist/sc_zoom.png" width="0.222inch" height="0.222inch"><alt id="alt_id3151172" xml-lang="en-US">Icon</alt>
-	</image> to change the view magnification for the slides.</paragraph>
+</image> to change the view magnification for the slides.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id3154269" xml-lang="en-US" l10n="CHG" oldref="78">On the Tasks pane, click Slide Transition.</paragraph>
@@ -78,7 +75,7 @@
 <paragraph role="listitem" id="par_id3151287" xml-lang="en-US" l10n="CHG" oldref="84">In <emph>Slide Sorter</emph> View, select the slides that you want to remove the transition effect from.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3146930" xml-lang="en-US" l10n="CHG" oldref="85">Choose <emph>No Transition </emph>in the listbox on the <emph>Tasks</emph> pane.</paragraph>
+<paragraph role="listitem" id="par_id3146930" xml-lang="en-US" l10n="CHG" oldref="85">Choose <emph>No Transition</emph> in the listbox on the <emph>Tasks</emph> pane.</paragraph>
 </listitem>
 </list>
 <section id="relatedtopics">

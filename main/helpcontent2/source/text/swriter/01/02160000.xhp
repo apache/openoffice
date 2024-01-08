@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,18 +21,12 @@
  *
  ***********************************************************-->
 
-
-
 <helpdocument version="1.0">
 <meta>
 <topic id="textswriter0102160000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Edit Index Entry</title>
 <filename>/text/swriter/01/02160000.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2004-09-22T14:43:58">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <bookmark xml-lang="en-US" branch="hid/.uno:IndexEntryDialog" id="bm_id5051951" localize="false"/><!-- HID added by script -->
@@ -43,7 +36,7 @@
 </variable></paragraph>
 <paragraph role="paragraph" id="par_id3155896" xml-lang="en-US" l10n="U" oldref="30">To insert an index entry, select a word in the document, and then choose <link href="text/swriter/01/04120100.xhp" name="Insert - Indexes and Tables - Entry"><emph>Insert - Indexes and Tables - Entry</emph></link>.</paragraph>
 <section id="howtoget">
-  <embed href="text/swriter/00/00000402.xhp#verzeichniseintrag"/>
+<embed href="text/swriter/00/00000402.xhp#verzeichniseintrag"/>
 </section>
 <paragraph role="heading" id="hd_id3159193" xml-lang="en-US" level="2" l10n="U" oldref="3">Selection</paragraph>
 <paragraph role="paragraph" id="par_id3149486" xml-lang="en-US" l10n="U" oldref="4">Edits the selected index entry.</paragraph>
@@ -70,14 +63,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3147420" xml-lang="en-US" l10n="E">
 <image id="img_id3149551" src="res/commandimagelist/sc_firstrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149551" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150550" xml-lang="en-US" l10n="U" oldref="26">End arrow to left</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_IDX_MRK_NEXT_SAME" id="bm_id3147747" localize="false"/>
 <paragraph role="heading" id="hd_id3147736" xml-lang="en-US" level="2" l10n="U" oldref="20">End arrow to right</paragraph>
 <paragraph role="paragraph" id="par_id3149829" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="HID_INSERT_IDX_MRK_NEXT_SAME">Jumps to the last index entry of the same type in the document.</ahelp></paragraph>
@@ -86,14 +78,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153298" xml-lang="en-US" l10n="E">
 <image id="img_id3153309" src="res/commandimagelist/sc_lastrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153309" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3156108" xml-lang="en-US" l10n="U" oldref="27">End arrow to right</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_IDX_MRK_PREV" id="bm_id3155091" localize="false"/>
 <paragraph role="heading" id="hd_id3155080" xml-lang="en-US" level="2" l10n="U" oldref="22">Arrow to left</paragraph>
 <paragraph role="paragraph" id="par_id3154327" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="HID_INSERT_IDX_MRK_PREV">Jumps to the previous index entry of the same type in the document.</ahelp></paragraph>
@@ -102,14 +93,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3148785" xml-lang="en-US" l10n="E">
 <image id="img_id3148791" src="res/commandimagelist/sc_prevrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148791" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3153129" xml-lang="en-US" l10n="U" oldref="28">Left Arrow</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_IDX_MRK_NEXT" id="bm_id3154628" localize="false"/>
 <paragraph role="heading" id="hd_id3154617" xml-lang="en-US" level="2" l10n="U" oldref="24">Arrow to right</paragraph>
 <paragraph role="paragraph" id="par_id3154633" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="HID_INSERT_IDX_MRK_NEXT">Jumps to the next index entry of the same type in the document.</ahelp></paragraph>
@@ -118,14 +108,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150677" xml-lang="en-US" l10n="E">
 <image id="img_id3154020" src="res/commandimagelist/sc_nextrecord.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154020" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3149965" xml-lang="en-US" l10n="U" oldref="29">Right Arrow</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="tip" id="par_id3155539" xml-lang="en-US" l10n="U" oldref="32">You can jump quickly to index entries with the <link href="text/swriter/01/02110100.xhp" name="Navigation Bar">Navigation Bar</link>.</paragraph>
 </body>
 </helpdocument>

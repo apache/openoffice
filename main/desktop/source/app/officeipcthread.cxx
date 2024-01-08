@@ -500,7 +500,7 @@ OfficeIPCThread::Status OfficeIPCThread::EnableOfficeIPCThread()
 		if( pThread->maPipe.create( pThread->maPipeIdent.getStr(), OPipe::TOption_Open, rSecurity )) 
 		{
 			// #119950# Test if launched in a new terminal session for same user. On Windows platform, normally a user is restricted
-			// to have only one terminal session. But if mutiple terminal session for one user is allowed, crash will happen if launched
+			// to have only one terminal session. But if multiple terminal session for one user is allowed, crash will happen if launched
 			// OpenOffice from more than one terminal session. So need to detect and prevent this happen.
 
 			// Will try to create a same name pipe. If creation is successfully, means current instance is launched in a new session.

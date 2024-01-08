@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textsimpressguidetable_insertxml" indexer="include">
 <title id="tit" xml-lang="en-US">Including Spreadsheets in Slides</title>
@@ -32,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154022"><bookmark_value>spreadsheets;in presentations</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154022">
+<bookmark_value>spreadsheets;in presentations</bookmark_value>
 <bookmark_value>presentations;inserting spreadsheets</bookmark_value>
 <bookmark_value>including spreadsheets</bookmark_value>
 </bookmark>
@@ -97,7 +95,7 @@
 <paragraph role="paragraph" id="par_id248115" xml-lang="en-US" l10n="NEW">Choose <item type="menuitem">Insert - Table</item> or use the Table icon on the Standard toolbar to insert a table.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id2748496" xml-lang="en-US" l10n="NEW">Double-click the table and enter or paste the data into the cells. </paragraph>
+<paragraph role="paragraph" id="par_id2748496" xml-lang="en-US" l10n="NEW">Double-click the table and enter or paste the data into the cells.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id8270210" xml-lang="en-US" l10n="NEW">Select some cell contents and right-click to open the context menu. Choose commands to change the cell's contents, like font size and line spacing.</paragraph>
@@ -106,8 +104,8 @@
 <paragraph role="paragraph" id="par_id6820276" xml-lang="en-US" l10n="NEW">Right-click the table border to open the table's context menu. Use the table's context menu to enter a name and description for the table, or to distribute the rows or columns equally, among other commands.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id0916200803551725" xml-lang="en-US" l10n="NEW">Select some cells and right-click to open a context menu, where you can insert or delete rows and columns, among other commands. </paragraph>
-<paragraph role="paragraph" id="par_id091620080355171" xml-lang="en-US" l10n="NEW">To select a rectangular area of cells, point to a cell in one corner of the rectangle, hold down the mouse button, and drag the mouse to the opposite corner of the rectangle, then release the mouse button. </paragraph>
+<paragraph role="paragraph" id="par_id0916200803551725" xml-lang="en-US" l10n="NEW">Select some cells and right-click to open a context menu, where you can insert or delete rows and columns, among other commands.</paragraph>
+<paragraph role="paragraph" id="par_id091620080355171" xml-lang="en-US" l10n="NEW">To select a rectangular area of cells, point to a cell in one corner of the rectangle, hold down the mouse button, and drag the mouse to the opposite corner of the rectangle, then release the mouse button.</paragraph>
 <paragraph role="paragraph" id="par_id0916200803551880" xml-lang="en-US" l10n="NEW">To select one cell, point to that cell, hold down the mouse button, and drag the mouse to the next cell and back, then release the mouse button.</paragraph>
 </listitem>
 </list>
@@ -118,7 +116,7 @@
 <paragraph role="listitem" id="par_id3150749" xml-lang="en-US" l10n="U" oldref="3">Go to the slide where you want to insert the spreadsheet.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3146313" xml-lang="en-US" l10n="U" oldref="18">Choose <emph>Insert - OLE- Object</emph>. Click <emph>Create new</emph> and select the %PRODUCTNAME Spreadsheet. Click OK. Click in the spreadsheet to enter your data. </paragraph>
+<paragraph role="listitem" id="par_id3146313" xml-lang="en-US" l10n="U" oldref="18">Choose <emph>Insert - OLE- Object</emph>. Click <emph>Create new</emph> and select the %PRODUCTNAME Spreadsheet. Click OK. Click in the spreadsheet to enter your data.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id2466505" xml-lang="en-US" l10n="NEW">Click outside the spreadsheet to view the slide.</paragraph>
@@ -138,7 +136,7 @@
 <paragraph role="listitem" id="par_id3150391" xml-lang="en-US" l10n="CHG" oldref="14">Select <emph>Create from file</emph>, and click <emph>Search</emph>.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3150537" xml-lang="en-US" l10n="U" oldref="20">Locate the file you want to insert, and then click<emph> OK</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3150537" xml-lang="en-US" l10n="U" oldref="20">Locate the file you want to insert, and then click <emph>OK</emph>.</paragraph>
 <paragraph role="listitem" id="par_id1616565" xml-lang="en-US" l10n="NEW">Enable the <emph>Link to file</emph> checkbox to insert the file as a live link.</paragraph>
 </listitem>
 </list>

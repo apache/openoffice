@@ -486,7 +486,7 @@ void showError(const SQLExceptionInfo& _rInfo,Window* _pParent,const Reference< 
 ::std::vector< Reference<XNameAccess> > getKeyColumns(const Reference<XIndexAccess >& _rxKeys,
 													  sal_Int32 _nKeyType)
 {
-	// use keys and indexes for excat postioning
+	// use keys and indexes for exact positioning
 	// first the keys
 	::std::vector< Reference<XNameAccess> > vRet;
 	if(_rxKeys.is())

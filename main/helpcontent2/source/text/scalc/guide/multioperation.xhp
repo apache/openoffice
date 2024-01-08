@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<helpdocument version="1.0">
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalcguidemultioperationxml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Applying Multiple Operations</title>
@@ -33,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147559"><bookmark_value>multiple operations</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147559">
+<bookmark_value>multiple operations</bookmark_value>
 <bookmark_value>what if operations;two variables</bookmark_value>
 <bookmark_value>tables; multiple operations in</bookmark_value>
 <bookmark_value>data tables; multiple operations in</bookmark_value>
@@ -48,7 +45,7 @@
 <paragraph role="paragraph" id="par_id3153189" xml-lang="en-US" l10n="U" oldref="8">You produce toys which you sell for $10 each. Each toy costs $2 to make, in addition to which you have fixed costs of $10,000 per year. How much profit will you make in a year if you sell a particular number of toys?</paragraph>
 <paragraph role="paragraph" id="par_id6478774" xml-lang="en-US" l10n="NEW">
 <image id="img_id1621753" src="res/helpimg/what-if.png" width="0.2228in" height="0.2228in"><alt id="alt_id1621753" xml-lang="en-US">what-if sheet area</alt>
-	</image></paragraph>
+</image></paragraph>
 <paragraph role="heading" id="hd_id3145239" xml-lang="en-US" level="3" l10n="U" oldref="41">Calculating With One Formula and One Variable</paragraph>
 <list type="ordered">
 <listitem>
@@ -64,7 +61,7 @@
 <paragraph role="listitem" id="par_id3149723" xml-lang="en-US" l10n="U" oldref="45">Choose <emph>Data - Multiple operations</emph>.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3149149" xml-lang="en-US" l10n="U" oldref="46">With the cursor in the <emph>Formulas </emph>field, click cell B5.</paragraph>
+<paragraph role="listitem" id="par_id3149149" xml-lang="en-US" l10n="U" oldref="46">With the cursor in the <emph>Formulas</emph> field, click cell B5.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3149355" xml-lang="en-US" l10n="CHG" oldref="47">Set the cursor in the <emph>Column input cell</emph> field and click cell B4. This means that B4, the quantity, is the variable in the formula, which is replaced by the selected column values.</paragraph>

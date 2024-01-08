@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,19 +9,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-
-
 
 <helpdocument version="1.0">
 <meta>
@@ -30,10 +27,6 @@
 <title id="tit" xml-lang="en-US">Error Alert</title>
 <filename>/text/scalc/01/12120300.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2004-07-20T14:17:15">FPE: Adjusted sample macro</lastedited>
-</history>
 </meta>
 <body>
 <section id="fehlermeldung">
@@ -43,12 +36,12 @@
 </section>
 <paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="25">You can also start a macro with an error message. A sample macro is provided at the end of this page.</paragraph>
 <section id="howtoget">
-  <embed href="text/scalc/00/00000412.xhp#datengueltigfehler"/>
+<embed href="text/scalc/00/00000412.xhp#datengueltigfehler"/>
 </section>
 <bookmark xml-lang="en-US" branch="hid/sc:TriStateBox:TP_VALIDATION_ERROR:TSB_SHOW" id="bm_id3154908" localize="false"/>
 <paragraph role="heading" id="hd_id3156280" xml-lang="en-US" level="2" l10n="U" oldref="3">Show error message when invalid values are entered.</paragraph>
 <paragraph role="paragraph" id="par_id3150768" xml-lang="en-US" l10n="CHG" oldref="4"><ahelp hid=".">Displays the error message that you enter in the <emph>Contents</emph> area when invalid data is entered in a cell.</ahelp> If enabled, the message is displayed to prevent an invalid entry.</paragraph>
-<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="5">In both cases, if you select "Stop", the invalid entry is deleted and the previous value is reentered in the cell. The same applies if you close the "Warning" and "Information" dialogs by clicking the <emph>Cancel </emph>button. If you close the dialogs with the <emph>OK</emph> button, the invalid entry is not deleted.</paragraph>
+<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="5">In both cases, if you select "Stop", the invalid entry is deleted and the previous value is reentered in the cell. The same applies if you close the "Warning" and "Information" dialogs by clicking the <emph>Cancel</emph> button. If you close the dialogs with the <emph>OK</emph> button, the invalid entry is not deleted.</paragraph>
 <paragraph role="heading" id="hd_id3152460" xml-lang="en-US" level="2" l10n="U" oldref="6">Contents</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:ListBox:TP_VALIDATION_ERROR:LB_ACTION" id="bm_id3154014" localize="false"/>
 <paragraph role="heading" id="hd_id3148646" xml-lang="en-US" level="3" l10n="U" oldref="8">Action</paragraph>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,38 +9,36 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textschart01type_column_linexhp" indexer="include" status="PUBLISH">
-<title id="tit" xml-lang="en-US">Chart Type Column and Line </title>
+<title id="tit" xml-lang="en-US">Chart Type Column and Line</title>
 <filename>/text/schart/01/type_column_line.xhp</filename>
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id5976744"><bookmark_value>column and line charts</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id5976744">
+<bookmark_value>column and line charts</bookmark_value>
 <bookmark_value>chart types;column and line</bookmark_value>
 <bookmark_value>combination charts</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id8596453" xml-lang="en-US" level="1" l10n="CHG"><variable id="type_column_line"><link href="text/schart/01/type_column_line.xhp">Chart Type Column and Line</link>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id4818567" xml-lang="en-US" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type. </paragraph>
+<paragraph role="paragraph" id="par_id4818567" xml-lang="en-US" l10n="NEW">On the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can choose a chart type.</paragraph>
 <section id="howtoget">
-  <embed href="text/schart/00/00000004.xhp#wiz"/>
+<embed href="text/schart/00/00000004.xhp#wiz"/>
 </section>
 <paragraph role="heading" id="hd_id2451551" xml-lang="en-US" level="2" l10n="CHG">Column and Line</paragraph>
 <paragraph role="paragraph" id="par_id3101901" xml-lang="en-US" l10n="CHG">A Column and Line chart is a combination of a <link href="text/schart/01/type_column_bar.xhp">Column chart</link> with a <link href="text/schart/01/type_line.xhp">Line chart</link>.</paragraph>
@@ -90,11 +86,11 @@
 <list type="ordered">
 <listitem>
 <paragraph role="paragraph" id="par_id6768700" xml-lang="en-US" l10n="NEW">Click an entry in the list to view and edit the properties for that entry.</paragraph>
-<paragraph role="paragraph" id="par_id1924497" xml-lang="en-US" l10n="NEW">In the Data Ranges list box you see the role names and cell ranges of the data series components. </paragraph>
+<paragraph role="paragraph" id="par_id1924497" xml-lang="en-US" l10n="NEW">In the Data Ranges list box you see the role names and cell ranges of the data series components.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id5081942" xml-lang="en-US" l10n="NEW">Click an entry, then edit the contents in the text box below. </paragraph>
-<paragraph role="paragraph" id="par_id2958464" xml-lang="en-US" l10n="NEW">The label next to the text box states the currently selected role. </paragraph>
+<paragraph role="paragraph" id="par_id5081942" xml-lang="en-US" l10n="NEW">Click an entry, then edit the contents in the text box below.</paragraph>
+<paragraph role="paragraph" id="par_id2958464" xml-lang="en-US" l10n="NEW">The label next to the text box states the currently selected role.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_id883816" xml-lang="en-US" l10n="NEW">Enter the range or click <emph>Select data range</emph> to minimize the dialog and select the range with the mouse.</paragraph>
@@ -104,7 +100,7 @@
 <paragraph role="heading" id="hd_id974456" xml-lang="en-US" level="2" l10n="NEW">Editing categories or data labels</paragraph>
 <list type="unordered">
 <listitem>
-<paragraph role="paragraph" id="par_id2767113" xml-lang="en-US" l10n="NEW">Enter or select a cell range that will be used as text for categories or data labels. </paragraph>
+<paragraph role="paragraph" id="par_id2767113" xml-lang="en-US" l10n="NEW">Enter or select a cell range that will be used as text for categories or data labels.</paragraph>
 </listitem>
 </list>
 <paragraph role="paragraph" id="par_id301828" xml-lang="en-US" l10n="NEW">The values in the Categories range will be shown as labels on the x axis.</paragraph>

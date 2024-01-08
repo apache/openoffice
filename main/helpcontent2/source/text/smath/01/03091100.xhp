@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsmath0103091100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Brackets and Grouping</title>
@@ -34,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147341"><bookmark_value>brackets and grouping in $[officename] Math</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147341">
+<bookmark_value>brackets and grouping in $[officename] Math</bookmark_value>
 <bookmark_value>grouping and brackets in $[officename] Math</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3147341" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03091100.xhp" name="Brackets and Grouping">Brackets and Grouping</link></paragraph>
@@ -137,7 +133,8 @@
 <paragraph role="note" id="par_id3149297" xml-lang="en-US" l10n="U" oldref="43">"font sans ( a + font serif b)"</paragraph>
 <paragraph role="note" id="par_id3155174" xml-lang="en-US" l10n="U" oldref="44">"size *2 ( a + size /2 b )"</paragraph><comment>UFI: no more StarSymbol font. Removed the following paras</comment><comment>id="par_id3151327" l10n="U" oldref="45"For the StarSymbol Unicode font there are 2 exceptions to these rules:
 id="par_id3148998" l10n="U" oldref="46"It ignores "font" commands. Otherwise, there would often be different characters from the ones desired, for example, "font sans (a oplus b)" would then neither have brackets nor an "oplus".
-id="par_id3143281" l10n="U" oldref="47"The "ital" command is ignored, for example, "ital (a + b)". This happens because italicized mathematical symbols are uncommon, even in combination with text in italics.</comment><paragraph role="tip" id="par_id3154906" xml-lang="en-US" l10n="U" oldref="50">To change the size of a formula, use "size +" or -,*,/. Do not use "size n". These can easily be used in any context. This enables you to copy to other areas by using Copy and Paste, and the result remains the same. Furthermore, such expressions survive a change of base size in the menu better than when using "size n". If you use only "size *" and "size /" (for example, "size *1.24 a or size /0.86 a") the proportions remain intact.</paragraph>
+id="par_id3143281" l10n="U" oldref="47"The "ital" command is ignored, for example, "ital (a + b)". This happens because italicized mathematical symbols are uncommon, even in combination with text in italics.</comment>
+<paragraph role="tip" id="par_id3154906" xml-lang="en-US" l10n="U" oldref="50">To change the size of a formula, use "size +" or -,*,/. Do not use "size n". These can easily be used in any context. This enables you to copy to other areas by using Copy and Paste, and the result remains the same. Furthermore, such expressions survive a change of base size in the menu better than when using "size n". If you use only "size *" and "size /" (for example, "size *1.24 a or size /0.86 a") the proportions remain intact.</paragraph>
 <paragraph role="tip" id="par_id3147587" xml-lang="en-US" l10n="U" oldref="51">Examples (with a base size of 12 and 50% for indexes):</paragraph>
 <paragraph role="tip" id="par_id3148734" xml-lang="en-US" l10n="U" oldref="52">Exactly identical proportions with "size 18 a_n" and "size *1.5 a_n".</paragraph>
 <paragraph role="tip" id="par_id3152766" xml-lang="en-US" l10n="U" oldref="53">This differs in different contexts: "x^{size 18 a_n}" and "x^{size *1.5 a_n}"</paragraph>

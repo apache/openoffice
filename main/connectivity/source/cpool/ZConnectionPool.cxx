@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ namespace
 		static ::rtl::OUString s_sNodeName = ::rtl::OUString::createFromAscii("Timeout");
 		return s_sNodeName;
 	}
-	
+
 }
 //==========================================================================
 //= OConnectionPool
@@ -93,7 +93,7 @@ OConnectionPool::OConnectionPool(const Reference< XDriver >& _xDriver,
 
 	OPoolCollection::getNodeValue(getTimeoutNodeName(),m_xDriverNode) >>= m_nALiveCount;
 	calculateTimeOuts();
-	
+
 	m_xInvalidator = new OPoolTimer(this,::vos::TTimeValue(m_nTimeOut,0));
 	m_xInvalidator->start();
 }
@@ -109,7 +109,7 @@ struct TRemoveEventListenerFunctor : ::std::unary_function<TPooledConnections::v
 	OConnectionPool* m_pConnectionPool;
 	sal_Bool m_bDispose;
 
-	TRemoveEventListenerFunctor(OConnectionPool* _pConnectionPool,sal_Bool _bDispose = sal_False) 
+	TRemoveEventListenerFunctor(OConnectionPool* _pConnectionPool,sal_Bool _bDispose = sal_False)
 		: m_pConnectionPool(_pConnectionPool)
 		,m_bDispose(_bDispose)
 	{
@@ -143,7 +143,7 @@ struct TConnectionPoolFunctor : ::std::unary_function<TConnectionMap::value_type
 {
 	OConnectionPool* m_pConnectionPool;
 
-	TConnectionPoolFunctor(OConnectionPool* _pConnectionPool) 
+	TConnectionPoolFunctor(OConnectionPool* _pConnectionPool)
 		: m_pConnectionPool(_pConnectionPool)
 	{
 		OSL_ENSURE(m_pConnectionPool,"No connection pool!");
@@ -195,7 +195,7 @@ Reference< XConnection > SAL_CALL OConnectionPool::getConnectionWithInfo( const 
 
 	if ( !xConnection.is() )
 		xConnection = createNewConnection(_rURL,_rInfo);
-	
+
 	return xConnection;
 }
 //--------------------------------------------------------------------------
@@ -206,7 +206,7 @@ void SAL_CALL OConnectionPool::disposing( const ::com::sun::star::lang::EventObj
 	{
 		MutexGuard aGuard(m_aMutex);
 		TActiveConnectionMap::iterator aIter = m_aActiveConnections.find(xConnection);
-		OSL_ENSURE(aIter != m_aActiveConnections.end(),"OConnectionPool::disposing: Conenction wasn't in pool");
+		OSL_ENSURE(aIter != m_aActiveConnections.end(),"OConnectionPool::disposing: Connection wasn't in pool");
 		if(aIter != m_aActiveConnections.end())
 		{ // move the pooled connection back to the pool
 			aIter->second.aPos->second.nALiveCount = m_nALiveCount;
@@ -222,7 +222,7 @@ void SAL_CALL OConnectionPool::disposing( const ::com::sun::star::lang::EventObj
 // -----------------------------------------------------------------------------
 Reference< XConnection> OConnectionPool::createNewConnection(const ::rtl::OUString& _rURL,const Sequence< PropertyValue >& _rInfo)
 {
-	// create new pooled conenction
+	// create new pooled connection
 	Reference< XPooledConnection > xPooledConnection = new ::connectivity::OPooledConnection(m_xDriver->connect(_rURL,_rInfo),m_xProxyFactory);
 	// get the new connection from the pooled connection
 	Reference<XConnection> xConnection = xPooledConnection->getConnection();
@@ -238,7 +238,7 @@ Reference< XConnection> OConnectionPool::createNewConnection(const ::rtl::OUStri
 		TConnectionMap::key_type nId;
 		OConnectionWrapper::createUniqueId(_rURL,aInfo,nId.m_pBuffer);
 		TConnectionPool aPack;
-		
+
 		// insert the new connection and struct into the active connection map
 		aPack.nALiveCount				= m_nALiveCount;
 		TActiveConnectionInfo aActiveInfo;
@@ -259,7 +259,7 @@ void OConnectionPool::invalidatePooledConnections()
 	TConnectionMap::iterator aIter = m_aPool.begin();
 	for (; aIter != m_aPool.end(); )
 	{
-		if(!(--(aIter->second.nALiveCount))) // connections are invalid 
+		if(!(--(aIter->second.nALiveCount))) // connections are invalid
 		{
 			::std::for_each(aIter->second.aConnections.begin(),aIter->second.aConnections.end(),TRemoveEventListenerFunctor(this,sal_True));
 
@@ -302,7 +302,7 @@ Reference< XConnection> OConnectionPool::getPooledConnection(TConnectionMap::ite
 		Reference< XComponent >  xComponent(xConnection, UNO_QUERY);
 		if (xComponent.is())
 			xComponent->addEventListener(this);
-		
+
 		TActiveConnectionInfo aActiveInfo;
 		aActiveInfo.aPos = _rIter;
 		aActiveInfo.xPooledConnection = xPooledConnection;
@@ -330,3 +330,5 @@ void OConnectionPool::calculateTimeOuts()
 	m_nALiveCount	= m_nALiveCount / m_nTimeOut;
 }
 // -----------------------------------------------------------------------------
+
+/* vim: set noet sw=4 ts=4: */

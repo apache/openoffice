@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,8 +20,6 @@
  * under the License.
  *
  ***********************************************************-->
-
-
 
 <helpdocument version="1.0">
 <meta>
@@ -54,15 +51,12 @@
 <listitem>
 <paragraph role="listitem" id="par_id3150017" xml-lang="en-US" l10n="U" oldref="38">To reject the hyphenation of the displayed word, click <emph>Skip</emph>. This word will not be hyphenated.</paragraph>
 </listitem>
-
 <listitem>
 <paragraph role="listitem" id="par_id3150018" xml-lang="en-US" l10n="U" oldref="38">To automatically hyphenate the remaining part of the selection or the document, click <emph>Hyphenate All</emph> and answer "Yes" to the following question.</paragraph>
 </listitem>
-
 <listitem>
 <paragraph role="listitem" id="par_id3150019" xml-lang="en-US" l10n="U" oldref="38">To end hyphenation, click <emph>Close</emph>. The hyphenation that is applied already will not be reverted. You can use <emph>Edit - Undo</emph> to undo all hyphenation that was applied while the Hyphenation dialog was open.</paragraph>
 </listitem>
-
 </list>
 <paragraph role="tip" id="par_id3147562" xml-lang="en-US" l10n="U" oldref="19">To exclude paragraphs from the automatic hyphenation, select the paragraphs, choose <emph>Format - Paragraph</emph>, click the Text Flow tab, and then clear the <emph>Automatically</emph> check box in the Hyphenation area.</paragraph>
 <paragraph role="note" id="par_id3154276" xml-lang="en-US" l10n="U" oldref="18">To disable the Hyphenation dialog and always hyphenate automatically, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010400.xhp" name="Language Settings - Writing Aids">Language Settings - Writing Aids</link></emph>, and select the <emph>Hyphenate without inquiry</emph> check box.</paragraph>
@@ -78,7 +72,6 @@
 <bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXDLG_HYPHENATE:BTN_LEFT" id="bm_id3159192" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/svx:ImageButton:RID_SVXDLG_HYPHENATE:BTN_RIGHT" id="bm_id3159196" localize="false"/>
 <paragraph role="heading" id="hd_id3154195" xml-lang="en-US" level="3" l10n="U" oldref="23">Left / Right Arrow</paragraph>
-
 <paragraph role="paragraph" id="par_id3155174" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXDLG_HYPHENATE:BTN_RIGHT">Set the position of the hyphen. This option is only available if more than one hyphenation suggestion is displayed.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_HYPHENATE:BTN_HYPH_CONTINUE" id="bm_id3149299" localize="false"/>
 <paragraph role="heading" id="hd_id3151327" xml-lang="en-US" level="2" l10n="U" oldref="25">Next</paragraph>

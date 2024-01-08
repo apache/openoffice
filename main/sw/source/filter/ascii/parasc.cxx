@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
-
 
 #include <tools/stream.hxx>
 #include <hintids.hxx>
@@ -45,9 +43,9 @@
 #include <breakit.hxx>
 #include <swerror.h>
 #ifndef _STATSTR_HRC
-#include <statstr.hrc>          // ResId fuer Statusleiste
+#include <statstr.hrc> // ResId fuer Statusleiste
 #endif
-#include <mdiexp.hxx>           // ...Percent()
+#include <mdiexp.hxx> // ...Percent()
 #include <poolfmt.hxx>
 
 #include "vcl/metric.hxx"
@@ -104,7 +102,7 @@ sal_uLong AsciiReader::Read( SwDoc &rDoc, const String&, SwPaM &rPam, const Stri
 }
 
 SwASCIIParser::SwASCIIParser(SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
-    int bReadNewDoc, const SwAsciiOptions& rOpts)
+	int bReadNewDoc, const SwAsciiOptions& rOpts)
 	: pDoc(pD), rInput(rIn), rOpt(rOpts), nScript(0), bNewDoc(bReadNewDoc)
 {
 	pPam = new SwPaM( *rCrsr.GetPoint() );
@@ -128,10 +126,10 @@ SwASCIIParser::SwASCIIParser(SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
 	if( rOpt.GetFontName().Len() )
 	{
 		Font aTextFont( rOpt.GetFontName(), Size( 0, 10 ) );
-        if( pDoc->getPrinter( false ) )
-            aTextFont = pDoc->getPrinter( false )->GetFontMetric( aTextFont );
+		if( pDoc->getPrinter( false ) )
+			aTextFont = pDoc->getPrinter( false )->GetFontMetric( aTextFont );
 		SvxFontItem aFont( aTextFont.GetFamily(), aTextFont.GetName(),
-                           aEmptyStr, aTextFont.GetPitch(), aTextFont.GetCharSet(), RES_CHRATR_FONT );
+						   aEmptyStr, aTextFont.GetPitch(), aTextFont.GetCharSet(), RES_CHRATR_FONT );
 		pItemSet->Put( aFont );
 		pItemSet->Put( aFont, RES_CHRATR_CJK_FONT );
 		pItemSet->Put( aFont, RES_CHRATR_CTL_FONT );
@@ -167,16 +165,16 @@ sal_uLong SwASCIIParser::CallParser()
 		nSttCntnt = pPam->GetPoint()->nContent.GetIndex();
 	}
 
-    SwTxtFmtColl *pColl = 0;
+	SwTxtFmtColl *pColl = 0;
 
-    if (bNewDoc)
-    {
-        pColl = pDoc->GetTxtCollFromPool(RES_POOLCOLL_HTML_PRE, false);
-        if (!pColl)
-            pColl = pDoc->GetTxtCollFromPool(RES_POOLCOLL_STANDARD,false);
-        if (pColl)
-            pDoc->SetTxtFmtColl(*pPam, pColl);
-    }
+	if (bNewDoc)
+	{
+		pColl = pDoc->GetTxtCollFromPool(RES_POOLCOLL_HTML_PRE, false);
+		if (!pColl)
+			pColl = pDoc->GetTxtCollFromPool(RES_POOLCOLL_STANDARD,false);
+		if (pColl)
+			pDoc->SetTxtFmtColl(*pPam, pColl);
+	}
 
 	sal_uLong nError = ReadChars();
 
@@ -202,37 +200,37 @@ sal_uLong SwASCIIParser::CallParser()
 		{
 			if( bNewDoc )
 			{
-                if (pColl)
-                {
-				    // Using the pool defaults for the font causes significant
-				    // trouble for the HTML filter, because it is not able
-				    // to export the pool defaults (or to be more precise:
-				    // the HTML filter is not able to detect whether a pool
-				    // default has changed or not. Even a comparison with the
-				    // HTMLi template does not work, because the defaults are
-				    // not copied when a new doc is created. The result of
-				    // comparing pool defaults therfor would be that the
-				    // defaults are exported always if the have changed for
-				    // text documents in general. That's not sensible, as well
-				    // as it is not sensible to export them always.
-				    sal_uInt16 aWhichIds[4] =
-                    {
-                        RES_CHRATR_FONT, RES_CHRATR_CJK_FONT,
-                        RES_CHRATR_CTL_FONT, 0
-                    };
-				    sal_uInt16 *pWhichIds = aWhichIds;
-				    while (*pWhichIds)
-				    {
-				        const SfxPoolItem *pItem;
-					    if (SFX_ITEM_SET == pItemSet->GetItemState(*pWhichIds,
-                            false, &pItem))
-					    {
-                            pColl->SetFmtAttr( *pItem );
-						    pItemSet->ClearItem( *pWhichIds );
-					    }
-					    ++pWhichIds;
-				    }
-                }
+				if (pColl)
+				{
+					// Using the pool defaults for the font causes significant
+					// trouble for the HTML filter, because it is not able
+					// to export the pool defaults (or to be more precise:
+					// the HTML filter is not able to detect whether a pool
+					// default has changed or not. Even a comparison with the
+					// HTMLi template does not work, because the defaults are
+					// not copied when a new doc is created. The result of
+					// comparing pool defaults therefor would be that the
+					// defaults are exported always if the have changed for
+					// text documents in general. That's not sensible, as well
+					// as it is not sensible to export them always.
+					sal_uInt16 aWhichIds[4] =
+					{
+						RES_CHRATR_FONT, RES_CHRATR_CJK_FONT,
+						RES_CHRATR_CTL_FONT, 0
+					};
+					sal_uInt16 *pWhichIds = aWhichIds;
+					while (*pWhichIds)
+					{
+						const SfxPoolItem *pItem;
+						if (SFX_ITEM_SET == pItemSet->GetItemState(*pWhichIds,
+							false, &pItem))
+						{
+							pColl->SetFmtAttr( *pItem );
+							pItemSet->ClearItem( *pWhichIds );
+						}
+						++pWhichIds;
+					}
+				}
 				if (pItemSet->Count())
 					pDoc->SetDefault(*pItemSet);
 			}
@@ -246,7 +244,7 @@ sal_uLong SwASCIIParser::CallParser()
 
 				// !!!!!
 				ASSERT( sal_False, "Have to change - hard attr. to para. style" );
-                pDoc->InsertItemSet( *pInsPam, *pItemSet, 0 );
+				pDoc->InsertItemSet( *pInsPam, *pItemSet, 0 );
 			}
 		}
 		delete pItemSet, pItemSet = 0;
@@ -264,31 +262,31 @@ sal_uLong SwASCIIParser::ReadChars()
 	sal_Unicode *pStt = 0, *pEnd = 0, *pLastStt = 0;
 	long nReadCnt = 0, nLineLen = 0;
 	sal_Unicode cLastCR = 0;
-    bool bSwapUnicode = false;
+	bool bSwapUnicode = false;
 
-    const SwAsciiOptions *pUseMe=&rOpt;
-    SwAsciiOptions aEmpty;
-    if (nFileSize >= 2 &&
-        aEmpty.GetFontName() == rOpt.GetFontName() &&
-        aEmpty.GetCharSet() == rOpt.GetCharSet() &&
-        aEmpty.GetLanguage() == rOpt.GetLanguage() &&
-        aEmpty.GetParaFlags() == rOpt.GetParaFlags())
-    {
-        sal_uLong nLen, nOrig;
-        nOrig = nLen = rInput.Read(pArr, ASC_BUFFLEN);
-        CharSet eCharSet;
-        bool bRet = SwIoSystem::IsDetectableText(pArr, nLen, &eCharSet, &bSwapUnicode);
-        ASSERT(bRet, "Autodetect of text import without nag dialog must "
-            "have failed");
-        if (bRet && eCharSet != RTL_TEXTENCODING_DONTKNOW)
-        {
-            aEmpty.SetCharSet(eCharSet);
-            rInput.SeekRel(-(long(nLen)));
-        }
-        else
-            rInput.SeekRel(-(long(nOrig)));
-        pUseMe=&aEmpty;
-    }
+	const SwAsciiOptions *pUseMe=&rOpt;
+	SwAsciiOptions aEmpty;
+	if (nFileSize >= 2 &&
+		aEmpty.GetFontName() == rOpt.GetFontName() &&
+		aEmpty.GetCharSet() == rOpt.GetCharSet() &&
+		aEmpty.GetLanguage() == rOpt.GetLanguage() &&
+		aEmpty.GetParaFlags() == rOpt.GetParaFlags())
+	{
+		sal_uLong nLen, nOrig;
+		nOrig = nLen = rInput.Read(pArr, ASC_BUFFLEN);
+		CharSet eCharSet;
+		bool bRet = SwIoSystem::IsDetectableText(pArr, nLen, &eCharSet, &bSwapUnicode);
+		ASSERT(bRet, "Autodetect of text import without nag dialog must "
+			"have failed");
+		if (bRet && eCharSet != RTL_TEXTENCODING_DONTKNOW)
+		{
+			aEmpty.SetCharSet(eCharSet);
+			rInput.SeekRel(-(long(nLen)));
+		}
+		else
+			rInput.SeekRel(-(long(nOrig)));
+		pUseMe=&aEmpty;
+	}
 
 	rtl_TextToUnicodeConverter hConverter=0;
 	rtl_TextToUnicodeContext hContext=0;
@@ -296,15 +294,15 @@ sal_uLong SwASCIIParser::ReadChars()
 	if (RTL_TEXTENCODING_UCS2 != currentCharSet)
 	{
 		if( currentCharSet == RTL_TEXTENCODING_DONTKNOW )
-	            currentCharSet = RTL_TEXTENCODING_ASCII_US;
+				currentCharSet = RTL_TEXTENCODING_ASCII_US;
 		hConverter = rtl_createTextToUnicodeConverter( currentCharSet );
 		ASSERT( hConverter, "no string convert available" );
 		if (!hConverter)
-            return ERROR_SW_READ_BASE;
+			return ERROR_SW_READ_BASE;
 		bSwapUnicode = false;
 		hContext = rtl_createTextToUnicodeContext( hConverter );
 	}
-	else if (pUseMe != &aEmpty)  //Already successfully figured out type
+	else if (pUseMe != &aEmpty) // Already successfully figured out type
 	{
 		rInput.StartReadingUnicodeText( currentCharSet );
 		bSwapUnicode = rInput.IsEndianSwap();
@@ -326,20 +324,20 @@ sal_uLong SwASCIIParser::ReadChars()
 									 ASC_BUFFLEN - nArrOffset )))
 				break;		// aus der WHILE-Schleife heraus
 
-            /*
-            #98380#
-            If there was some unconverted bytes on the last cycle then they
-            were put at the beginning of the array, so total bytes available
-            to convert this cycle includes them. If we found 0 following bytes
-            then we ignore the previous partial character.
-            */
-            lGCount+=nArrOffset;
+			/*
+			#98380#
+			If there was some unconverted bytes on the last cycle then they
+			were put at the beginning of the array, so total bytes available
+			to convert this cycle includes them. If we found 0 following bytes
+			then we ignore the previous partial character.
+			*/
+			lGCount+=nArrOffset;
 
 			if( hConverter )
 			{
 				sal_uInt32 nInfo;
 				sal_Size nNewLen = lGCount, nCntBytes;
-                sal_Unicode* pBuf = sWork.AllocBuffer( static_cast< xub_StrLen >(nNewLen) );
+				sal_Unicode* pBuf = sWork.AllocBuffer( static_cast< xub_StrLen >(nNewLen) );
 
 				nNewLen = rtl_convertTextToUnicode( hConverter, hContext,
 								pArr, lGCount, pBuf, nNewLen,
@@ -347,13 +345,13 @@ sal_uLong SwASCIIParser::ReadChars()
 								RTL_TEXTTOUNICODE_FLAGS_UNDEFINED_DEFAULT |
 								RTL_TEXTTOUNICODE_FLAGS_MBUNDEFINED_DEFAULT |
 								RTL_TEXTTOUNICODE_FLAGS_INVALID_DEFAULT |
-                                RTL_TEXTTOUNICODE_FLAGS_GLOBAL_SIGNATURE
+								RTL_TEXTTOUNICODE_FLAGS_GLOBAL_SIGNATURE
 								),
 								&nInfo,
 								&nCntBytes );
 				if( 0 != ( nArrOffset = lGCount - nCntBytes ) )
 					memmove( pArr, pArr + nCntBytes, nArrOffset );
-                sWork.ReleaseBufferAccess( static_cast< xub_StrLen >(nNewLen) );
+				sWork.ReleaseBufferAccess( static_cast< xub_StrLen >(nNewLen) );
 
 				pStt = pLastStt = sWork.GetBufferAccess();
 				pEnd = pStt + nNewLen;
@@ -386,7 +384,7 @@ sal_uLong SwASCIIParser::ReadChars()
 					pLastStt = ++pStt;
 				cLastCR = 0;
 				nLineLen = 0;
-				// JP 03.04.96: das letze am Ende nehmen wir nicht
+				// JP 03.04.96: das letzte am Ende nehmen wir nicht
 				if( !rInput.IsEof() || !(pEnd == pStt ||
 					( !*pEnd && pEnd == pStt+1 ) ) )
 					pDoc->SplitNode( *pPam->GetPoint(), false );
@@ -409,7 +407,7 @@ sal_uLong SwASCIIParser::ReadChars()
 						*pStt = 0;
 						++pStt;
 
-						// JP 03.04.96: das letze am Ende nehmen wir nicht
+						// JP 03.04.96: das letzte am Ende nehmen wir nicht
 						if( !rInput.IsEof() || pEnd != pStt )
 							bSplitNode = true;
 					}
@@ -435,7 +433,7 @@ sal_uLong SwASCIIParser::ReadChars()
 						else
 							bChkSplit = true;
 
-							// JP 03.04.96: das letze am Ende nehmen wir nicht
+							// JP 03.04.96: das letzte am Ende nehmen wir nicht
 						if( bChkSplit && ( !rInput.IsEof() || pEnd != pStt ))
 							bSplitNode = true;
 					}
@@ -452,8 +450,8 @@ sal_uLong SwASCIIParser::ReadChars()
 							InsertText( String( pLastStt ));
 						}
 						pDoc->SplitNode( *pPam->GetPoint(), false );
-                        pDoc->InsertPoolItem(
-                            *pPam, SvxFmtBreakItem( SVX_BREAK_PAGE_BEFORE, RES_BREAK ), 0);
+						pDoc->InsertPoolItem(
+							*pPam, SvxFmtBreakItem( SVX_BREAK_PAGE_BEFORE, RES_BREAK ), 0);
 						pLastStt = pStt;
 						nLineLen = 0;
 						bIns = false;
@@ -464,7 +462,7 @@ sal_uLong SwASCIIParser::ReadChars()
 					if( nReadCnt == nFileSize && pStt+1 == pEnd )
 						*pStt = 0;
 					else
-						*pStt = '#';        // Ersatzdarstellung
+						*pStt = '#'; // Ersatzdarstellung
 					break;
 
 		case '\t':	break;
@@ -513,11 +511,11 @@ sal_uLong SwASCIIParser::ReadChars()
 
 void SwASCIIParser::InsertText( const String& rStr )
 {
-    pDoc->InsertString( *pPam, rStr );
+	pDoc->InsertString( *pPam, rStr );
 	if( pItemSet && pBreakIt && nScript != ( SCRIPTTYPE_LATIN |
 											 SCRIPTTYPE_ASIAN |
 											 SCRIPTTYPE_COMPLEX ) )
 		nScript |= pBreakIt->GetAllScriptsOfText( rStr );
 }
 
-/* vi:set tabstop=4 shiftwidth=4 expandtab: */
+/* vim: set noet sw=4 ts=4: */

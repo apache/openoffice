@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 
 
@@ -48,66 +47,66 @@ using ::com::sun::star::lang::DisposedException;
 namespace sd {
 
 PaneHider::PaneHider (const ViewShell& rViewShell, SlideshowImpl* pSlideShow)
-    : mrViewShell(rViewShell),
-      mbWindowVisibilitySaved(false),
-      mbOriginalLeftPaneWindowVisibility(false),
-      mbOriginalRightPaneWindowVisibility(false)
+	: mrViewShell(rViewShell),
+	  mbWindowVisibilitySaved(false),
+	  mbOriginalLeftPaneWindowVisibility(false),
+	  mbOriginalRightPaneWindowVisibility(false)
 {
-     // Hide the left and right pane windows when a slideshow exists and is
-    // not full screen.
-    if (pSlideShow!=NULL && !pSlideShow->isFullScreen()) try
-    {
-        Reference<XControllerManager> xControllerManager (
-            mrViewShell.GetViewShellBase().GetController(), UNO_QUERY_THROW);
-        mxConfigurationController = xControllerManager->getConfigurationController();
-        if (mxConfigurationController.is())
-        {
-            // Get and save the current configuration.
-            mxConfiguration = mxConfigurationController->getRequestedConfiguration();
-            if (mxConfiguration.is())
-            {
-                // Iterate over the resources and deactivate the panes.
-                Sequence<Reference<XResourceId> > aResources (
-                    mxConfiguration->getResources(
-                        NULL,
-                        framework::FrameworkHelper::msPaneURLPrefix,
-                        AnchorBindingMode_DIRECT));
-                for (sal_Int32 nIndex=0; nIndex<aResources.getLength(); ++nIndex)
-                {
-                    Reference<XResourceId> xPaneId (aResources[nIndex]);
-                    if ( ! xPaneId->getResourceURL().equals(FrameworkHelper::msCenterPaneURL))
-                    {
-                        mxConfigurationController->requestResourceDeactivation(xPaneId);
-                    }
-                }
-            }
-        }
-        FrameworkHelper::Instance(mrViewShell.GetViewShellBase())->WaitForUpdate();
-    }
-    catch (RuntimeException&)
-    {
-        DBG_UNHANDLED_EXCEPTION();
-    }
+	// Hide the left and right pane windows when a slideshow exists and is
+	// not full screen.
+	if (pSlideShow!=NULL && !pSlideShow->isFullScreen()) try
+	{
+		Reference<XControllerManager> xControllerManager (
+			mrViewShell.GetViewShellBase().GetController(), UNO_QUERY_THROW);
+		mxConfigurationController = xControllerManager->getConfigurationController();
+		if (mxConfigurationController.is())
+		{
+			// Get and save the current configuration.
+			mxConfiguration = mxConfigurationController->getRequestedConfiguration();
+			if (mxConfiguration.is())
+			{
+				// Iterate over the resources and deactivate the panes.
+				Sequence<Reference<XResourceId> > aResources (
+					mxConfiguration->getResources(
+						NULL,
+						framework::FrameworkHelper::msPaneURLPrefix,
+						AnchorBindingMode_DIRECT));
+				for (sal_Int32 nIndex=0; nIndex<aResources.getLength(); ++nIndex)
+				{
+					Reference<XResourceId> xPaneId (aResources[nIndex]);
+					if ( ! xPaneId->getResourceURL().equals(FrameworkHelper::msCenterPaneURL))
+					{
+						mxConfigurationController->requestResourceDeactivation(xPaneId);
+					}
+				}
+			}
+		}
+		FrameworkHelper::Instance(mrViewShell.GetViewShellBase())->WaitForUpdate();
+	}
+	catch (RuntimeException&)
+	{
+		DBG_UNHANDLED_EXCEPTION();
+	}
 }
-
-
 
 
 PaneHider::~PaneHider (void)
 {
-    if (mxConfiguration.is() && mxConfigurationController.is())
-    {
-        try
-        {
-            mxConfigurationController->restoreConfiguration(mxConfiguration);
-        }
-        catch (DisposedException&)
-        {
-            // When the configuration controller is already disposed then
-            // there is no point in restoring the configuration.
-        }
-    }
+	if (mxConfiguration.is() && mxConfigurationController.is())
+	{
+		try
+		{
+			mxConfigurationController->restoreConfiguration(mxConfiguration);
+		}
+		catch (DisposedException&)
+		{
+			// When the configuration controller is already disposed then
+			// there is no point in restoring the configuration.
+		}
+	}
 }
 
 
 } // end of namespace sd
+
+/* vim: set noet sw=4 ts=4: */

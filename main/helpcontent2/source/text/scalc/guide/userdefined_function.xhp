@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textscalcguideuserdefined_functionxml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">User-Defined Functions</title>
 <filename>/text/scalc/guide/userdefined_function.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-02-07T11:28:53">FPE: Deleted Screenshot and cleaned up
-yj - checked</lastedited>
-</history>
+<comment>Deleted Screenshot and cleaned up</comment>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155411"><bookmark_value>functions; user-defined</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155411">
+<bookmark_value>functions; user-defined</bookmark_value>
 <bookmark_value>user-defined functions</bookmark_value>
 <bookmark_value>Basic IDE for user-defined functions</bookmark_value>
 <bookmark_value>IDE; Basic IDE</bookmark_value>
@@ -72,7 +66,7 @@ yj - checked</lastedited>
 </listitem>
 </list>
 <paragraph role="heading" id="hd_id3147340" xml-lang="en-US" level="2" l10n="U" oldref="18">Copying a Function To a Document</paragraph>
-<paragraph role="paragraph" id="par_id3145232" xml-lang="en-US" l10n="CHG" oldref="19">In stage 2 of "Defining A Function Using %PRODUCTNAME Basic", in the <emph>Macro</emph> dialog you clicked on <emph>Edit </emph>. As the default, in the <emph>Macro from</emph> field the <emph>My Macros - Standard - Module1</emph> module is selected. The <emph>Standard</emph> library resides locally in your user directory.</paragraph>
+<paragraph role="paragraph" id="par_id3145232" xml-lang="en-US" l10n="CHG" oldref="19">In stage 2 of "Defining A Function Using %PRODUCTNAME Basic", in the <emph>Macro</emph> dialog you clicked on <emph>Edit</emph>. As the default, in the <emph>Macro from</emph> field the <emph>My Macros - Standard - Module1</emph> module is selected. The <emph>Standard</emph> library resides locally in your user directory.</paragraph>
 <paragraph role="paragraph" id="par_id3154022" xml-lang="en-US" l10n="U" oldref="20">If you want to copy the user-defined function to a Calc document:</paragraph>
 <list type="ordered">
 <listitem>

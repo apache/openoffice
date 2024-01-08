@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060183xml" indexer="include">
 <title id="tit" xml-lang="en-US">Statistical Functions Part Three</title>
@@ -36,7 +33,8 @@
 </variable></paragraph>
 <sort order="asc">
 <section id="large">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149530"><bookmark_value>LARGE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149530">
+<bookmark_value>LARGE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KGROESSTE" id="bm_id3150883" localize="false"/>
 <paragraph role="heading" id="hd_id3149530" xml-lang="en-US" level="2" l10n="U" oldref="2">LARGE</paragraph>
@@ -52,7 +50,8 @@
 <item type="input">=LARGE(A1:C50;2)</item> gives the second largest value in A1:C50.</paragraph>
 </section>
 <section id="small">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154532"><bookmark_value>SMALL function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154532">
+<bookmark_value>SMALL function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KKLEINSTE" id="bm_id3148609" localize="false"/>
 <paragraph role="heading" id="hd_id3154532" xml-lang="en-US" level="2" l10n="U" oldref="11">SMALL</paragraph>
@@ -68,7 +67,8 @@
 <item type="input">=SMALL(A1:C50;2)</item> gives the second smallest value in A1:C50.</paragraph>
 </section>
 <section id="confidence">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153559"><bookmark_value>CONFIDENCE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153559">
+<bookmark_value>CONFIDENCE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KONFIDENZ" id="bm_id3153803" localize="false"/>
 <paragraph role="heading" id="hd_id3153559" xml-lang="en-US" level="2" l10n="U" oldref="20">CONFIDENCE</paragraph>
@@ -86,7 +86,8 @@
 <item type="input">=CONFIDENCE(0.05;1.5;100)</item> gives 0.29.</paragraph>
 </section>
 <section id="correl">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148746"><bookmark_value>CORREL function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148746">
+<bookmark_value>CORREL function</bookmark_value>
 <bookmark_value>coefficient of correlation</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KORREL" id="bm_id3147403" localize="false"/>
@@ -103,7 +104,8 @@
 <item type="input">=CORREL(A1:A50;B1:B50)</item> calculates the correlation coefficient as a measure of the linear correlation of the two data sets.</paragraph>
 </section>
 <section id="covar">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150652"><bookmark_value>COVAR function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150652">
+<bookmark_value>COVAR function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KOVAR" id="bm_id3152983" localize="false"/>
 <paragraph role="heading" id="hd_id3150652" xml-lang="en-US" level="2" l10n="U" oldref="39">COVAR</paragraph>
@@ -120,7 +122,8 @@
 </paragraph>
 </section>
 <section id="critbinom">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147472"><bookmark_value>CRITBINOM function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147472">
+<bookmark_value>CRITBINOM function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KRITBINOM" id="bm_id3154848" localize="false"/>
 <paragraph role="heading" id="hd_id3147472" xml-lang="en-US" level="2" l10n="U" oldref="48">CRITBINOM</paragraph>
@@ -138,7 +141,8 @@
 <item type="input">=CRITBINOM(100;0.5;0.1)</item> yields 44.</paragraph>
 </section>
 <section id="kurt">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155956"><bookmark_value>KURT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155956">
+<bookmark_value>KURT function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_KURT" id="bm_id3146847" localize="false"/>
 <paragraph role="heading" id="hd_id3155956" xml-lang="en-US" level="2" l10n="U" oldref="58">KURT</paragraph>
@@ -153,7 +157,8 @@
 </paragraph>
 </section>
 <section id="loginv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150928"><bookmark_value>LOGINV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150928">
+<bookmark_value>LOGINV function</bookmark_value>
 <bookmark_value>inverse of lognormal distribution</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_LOGINV" id="bm_id3156062" localize="false"/>
@@ -172,7 +177,8 @@
 <item type="input">=LOGINV(0.05;0;1)</item> returns 0.19.</paragraph>
 </section>
 <section id="lognormdist">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3158417"><bookmark_value>LOGNORMDIST function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3158417">
+<bookmark_value>LOGNORMDIST function</bookmark_value>
 <bookmark_value>cumulative lognormal distribution</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_LOGNORMVERT" id="bm_id3155366" localize="false"/>

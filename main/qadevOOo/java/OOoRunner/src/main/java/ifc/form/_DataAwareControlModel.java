@@ -46,7 +46,7 @@ import com.sun.star.uno.XInterface;
 *    documentation). </li>
 *  <li> <code>'DataAwareControlModel.NewFieldName'</code> :
 *   <b>optional</b> <code>String</code> relation which is used
-*   for new value of DataFiled proeprty.</li>
+*   for new value of DataFiled property.</li>
 * <ul> <p>
 * Test is <b> NOT </b> multithread compilant. <p>
 * After test completion object environment has to be recreated.
@@ -100,7 +100,7 @@ public class _DataAwareControlModel extends MultiPropertyTest {
     * if it was properly set. If <code>'DataAwareControlModel.NewFieldName'
     * </code> relation is not found, then new property value is
     * 'Address'. <p>
-    * Has <b> OK </b> status if the proeprty was properly set
+    * Has <b> OK </b> status if the property was properly set
     * and no exceptions were thrown. If old and new values are equal
     * the test is OK if no exceptions occurred and the value remains
     * the same.<p>
