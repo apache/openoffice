@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "formdlgs.hrc"
 #include "ForResId.hrc"
 #include "helpids.hrc"
@@ -299,7 +297,7 @@ ModalDialog RID_FORMULADLG_FORMULA_MODAL
 	};
 	String STR_TITLE2
 	{
-		Text [ en-US ] = "Function Wizard  -" ;
+		Text [ en-US ] = "Function Wizard -" ;
 	};
 	String STR_END
 	{
@@ -466,7 +464,7 @@ ModelessDialog RID_FORMULADLG_FORMULA
 	};
 	String STR_TITLE2
 	{
-		Text [ en-US ] = "Function Wizard  -" ;
+		Text [ en-US ] = "Function Wizard -" ;
 	};
 	String STR_END
 	{
