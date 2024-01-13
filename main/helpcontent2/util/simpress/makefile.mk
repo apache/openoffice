@@ -187,7 +187,7 @@ LINKLINKFILES= \
    text$/simpress$/01$/effectoptionstext.xhp \
    text$/simpress$/01$/effectoptionstiming.xhp \
    text$/simpress$/01$/slidesorter.xhp \
-   text$/simpress$/01$/taskpanel.xhp \
+   text$/simpress$/01$/sidebar.xhp \
    text$/simpress$/02$/04010000.xhp \
    text$/simpress$/02$/04020000.xhp \
    text$/simpress$/02$/04030000.xhp \
@@ -1238,8 +1238,7 @@ LINKLINKFILES= \
    text$/schart$/04$/01020000.xhp \
    text$/schart$/main0000.xhp \
    text$/schart$/main0202.xhp \
-   text$/schart$/main0503.xhp \
-
+   text$/schart$/main0503.xhp
 
 # --- Targets ------------------------------------------------------
 
