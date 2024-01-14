@@ -37,6 +37,11 @@
 
 #include <boost/math/special_functions/sinc.hpp>
 
+using namespace boost::math::policies;
+typedef policy<
+	promote_double<false>
+> SincPolicy;
+
 // -----------
 // - Defines -
 // -----------
@@ -270,7 +275,7 @@ public:
         }
 
         x *= M_PI;
-        return boost::math::sinc_pi(x);
+        return boost::math::sinc_pi(x, SincPolicy());
     }
 };
 
