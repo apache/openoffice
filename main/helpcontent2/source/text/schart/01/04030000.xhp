@@ -38,9 +38,9 @@
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:InsertMenuDataLabels" id="bm_id3144510" localize="false"/>
 <section id="datalabels">
-<paragraph xml-lang="en-US" id="hd_id3150275" role="heading" level="1" l10n="U" oldref="1"><variable id="datenbeschriftung"><link href="text/schart/01/04030000.xhp" name="Data labels">Data Labels</link>
+<paragraph xml-lang="en-US" id="hd_id3150275" role="heading" level="1" l10n="U"><variable id="datenbeschriftung"><link href="text/schart/01/04030000.xhp" name="Data labels">Data Labels</link>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="par_id3154684" role="paragraph" l10n="U" oldref="2"><variable id="besch"><ahelp hid=".uno:InsertMenuDataLabels">Opens the <emph>Data Labels</emph> dialog, which enables you to set the data labels.</ahelp>
+<paragraph xml-lang="en-US" id="par_id3154684" role="paragraph" l10n="U"><variable id="besch"><ahelp hid=".uno:InsertMenuDataLabels">Opens the <emph>Data Labels</emph> dialog, which enables you to set the data labels.</ahelp>
 </variable></paragraph>
 </section>
 <section id="context">
@@ -53,33 +53,29 @@
 <!-- removed HID SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_NUMBER -->
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_DATALABEL_NUMBER" id="bm_id901516" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_DATALABEL_VALUE" id="bm_id8825342" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3149401" role="heading" level="2" l10n="CHG"
-oldref="17">Show value as number</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150751" role="paragraph" l10n="U" oldref="18"><ahelp hid="SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_NUMBER">Displays the absolute values of the data points.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149401" role="heading" level="2" l10n="CHG">Show value as number</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150751" role="paragraph" l10n="U"><ahelp hid="SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_NUMBER">Displays the absolute values of the data points.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_PB_NUMBERFORMAT" id="bm_id1717276" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id5077059" role="heading" level="2" l10n="NEW">Number format</paragraph>
 <paragraph xml-lang="en-US" id="par_id9794610" role="paragraph" l10n="NEW"><ahelp hid=".">Opens a dialog to select the number format.</ahelp></paragraph>
 <!-- removed HID SCH_RADIOBUTTON_TP_DATA_DESCR_RB_PERCENT -->
 <!-- removed HID SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_PERCENT -->
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_DATALABEL_PERCENT" id="bm_id9111911" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145643" role="heading" level="2" l10n="CHG"
-oldref="9">Show value as percentage</paragraph>
-<paragraph xml-lang="en-US" id="par_id3156382" role="paragraph" l10n="U" oldref="10"><ahelp hid="SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_PERCENT">Displays the percentage of the data points in each column.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145643" role="heading" level="2" l10n="CHG">Show value as percentage</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156382" role="paragraph" l10n="U"><ahelp hid="SCH_RADIOBUTTON_DLG_DATA_DESCR_RB_PERCENT">Displays the percentage of the data points in each column.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_PB_PERCENT_NUMBERFORMAT" id="bm_id381481" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id1316873" role="heading" level="2" l10n="NEW">Percentage format</paragraph>
 <paragraph xml-lang="en-US" id="par_id5476241" role="paragraph" l10n="NEW"><ahelp hid=".">Opens a dialog to select the percentage format.</ahelp></paragraph>
 <!-- removed HID SCH_CHECKBOX_DLG_DATA_DESCR_CB_TEXT -->
 <!-- removed HID SCH_CHECKBOX_TP_DATA_DESCR_CB_TEXT -->
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_DATALABEL_TEXT" id="bm_id3015533" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145228" role="heading" level="2" l10n="CHG"
-oldref="11">Show category</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154702" role="paragraph" l10n="U" oldref="12"><ahelp hid="SCH_CHECKBOX_TP_DATA_DESCR_CB_TEXT">Shows the data point text labels.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145228" role="heading" level="2" l10n="CHG">Show category</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154702" role="paragraph" l10n="U"><ahelp hid="SCH_CHECKBOX_TP_DATA_DESCR_CB_TEXT">Shows the data point text labels.</ahelp></paragraph>
 <!-- removed HID SCH_CHECKBOX_DLG_DATA_DESCR_CB_SYMBOL -->
 <!-- removed HID SCH_CHECKBOX_TP_DATA_DESCR_CB_SYMBOL -->
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_DATALABEL_SYMBOL" id="bm_id2496108" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3150298" role="heading" level="2" l10n="CHG"
-oldref="15">Show legend key</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150205" role="paragraph" l10n="U" oldref="16"><ahelp hid="SCH_CHECKBOX_TP_DATA_DESCR_CB_SYMBOL">Displays the legend icons next to each data point label.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150298" role="heading" level="2" l10n="CHG">Show legend key</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150205" role="paragraph" l10n="U"><ahelp hid="SCH_CHECKBOX_TP_DATA_DESCR_CB_SYMBOL">Displays the legend icons next to each data point label.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_DATALABEL_SEPARATOR" id="bm_id6416821" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3836787" role="heading" level="2" l10n="NEW">Separator</paragraph>
 <paragraph xml-lang="en-US" id="par_id6668904" role="paragraph" l10n="NEW"><ahelp hid=".">Selects the separator between multiple text strings for the same object.</ahelp></paragraph>
