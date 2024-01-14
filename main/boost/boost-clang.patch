@@ -1,6 +1,98 @@
---- misc/build/boost_1_55_0/boost/config/user.hpp	2023-01-20 06:52:20.006784000 +0200
-+++ misc/build/boost_1_55_0/boost/config/user.hpp	2023-01-20 06:54:54.816087000 +0200
-@@ -122,3 +122,6 @@
+--- misc/boost_1_64_0/tools/build/src/tools/clang-linux.jam.orig	2017-04-17 02:22:26 UTC
++++ misc/build/boost_1_64_0/tools/build/src/tools/clang-linux.jam
+@@ -31,7 +31,7 @@ generators.override clang-linux.compile.c.pch   : pch.
+ generators.override clang-linux.compile.c++.pch : pch.default-cpp-pch-generator ;
+  
+ type.set-generated-target-suffix PCH
+-  : <toolset>clang <toolset-clang:platform>linux : pth ;
++  : <toolset>clang <toolset-clang:platform>linux : pch ;
+ 
+ toolset.inherit-rules clang-linux : gcc ;
+ toolset.inherit-flags clang-linux : gcc 
+@@ -96,24 +96,24 @@ rule compile.c++ ( targets * : sources * : properties 
+   gcc.setup-fpic $(targets) : $(sources) : $(properties) ;
+   gcc.setup-address-model $(targets) : $(sources) : $(properties) ;
+ 
+-  local pth-file = [ on $(<) return $(PCH_FILE) ] ;
++  local pch-file = [ on $(<) return $(PCH_FILE) ] ;
+ 
+-  if $(pth-file) {
+-    DEPENDS $(<) : $(pth-file) ;
++  if $(pch-file) {
++    DEPENDS $(<) : $(pch-file) ;
+     clang-linux.compile.c++.with-pch $(targets) : $(sources) ;
+   }
+   else {
+-    clang-linux.compile.c++.without-pth $(targets) : $(sources) ;
++    clang-linux.compile.c++.without-pch $(targets) : $(sources) ;
+   }
+ }
+ 
+-actions compile.c++.without-pth {
++actions compile.c++.without-pch {
+   "$(CONFIG_COMMAND)" -c -x c++ $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -o "$(<)" "$(>)"
+ }
+ 
+ actions compile.c++.with-pch bind PCH_FILE
+ {
+-  "$(CONFIG_COMMAND)" -c -x c++ $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -Xclang -include-pth -Xclang "$(PCH_FILE)" -o "$(<)" "$(>)"
++  "$(CONFIG_COMMAND)" -c -x c++ $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -Xclang -include-pch -Xclang "$(PCH_FILE)" -o "$(<)" "$(>)"
+ }
+ 
+ rule compile.c ( targets * : sources * : properties * )
+@@ -122,25 +122,25 @@ rule compile.c ( targets * : sources * : properties * 
+   gcc.setup-fpic $(targets) : $(sources) : $(properties) ;
+   gcc.setup-address-model $(targets) : $(sources) : $(properties) ;    
+ 
+-  local pth-file = [ on $(<) return $(PCH_FILE) ] ;
++  local pch-file = [ on $(<) return $(PCH_FILE) ] ;
+ 
+-  if $(pth-file) {
+-    DEPENDS $(<) : $(pth-file) ;
++  if $(pch-file) {
++    DEPENDS $(<) : $(pch-file) ;
+     clang-linux.compile.c.with-pch $(targets) : $(sources) ;
+   }
+   else {
+-    clang-linux.compile.c.without-pth $(targets) : $(sources) ;
++    clang-linux.compile.c.without-pch $(targets) : $(sources) ;
+   }
+ }
+ 
+-actions compile.c.without-pth
++actions compile.c.without-pch
+ {
+   "$(CONFIG_COMMAND)" -c -x c $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -c -o "$(<)" "$(>)"
+ }
+ 
+ actions compile.c.with-pch bind PCH_FILE
+ {
+-  "$(CONFIG_COMMAND)" -c -x c $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -Xclang -include-pth -Xclang "$(PCH_FILE)" -c -o "$(<)" "$(>)"
++  "$(CONFIG_COMMAND)" -c -x c $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -Xclang -include-pch -Xclang "$(PCH_FILE)" -c -o "$(<)" "$(>)"
+ }
+ 
+ ###############################################################################
+@@ -153,7 +153,7 @@ rule compile.c++.pch ( targets * : sources * : propert
+ }
+ 
+ actions compile.c++.pch {
+-  rm -f "$(<)" && "$(CONFIG_COMMAND)" -c -x c++-header $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -Xclang -emit-pth -o "$(<)" "$(>)"
++  rm -f "$(<)" && "$(CONFIG_COMMAND)" -c -x c++-header $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -Xclang -emit-pch -o "$(<)" "$(>)"
+ }
+ 
+ rule compile.c.pch ( targets * : sources * : properties * ) {
+@@ -164,7 +164,7 @@ rule compile.c.pch ( targets * : sources * : propertie
+ 
+ actions compile.c.pch
+ {
+-  rm -f "$(<)" && "$(CONFIG_COMMAND)" -c -x c-header $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -Xclang -emit-pth -o "$(<)" "$(>)"
++  rm -f "$(<)" && "$(CONFIG_COMMAND)" -c -x c-header $(OPTIONS) $(USER_OPTIONS) -D$(DEFINES) -I"$(INCLUDES)" -Xclang -emit-pch -o "$(<)" "$(>)"
+ }
+ 
+ ###############################################################################
+--- misc/boost_1_64_0/boost/config/user.hpp	2023-01-20 06:52:20.006784000 +0200
++++ misc/build/boost_1_64_0/boost/config/user.hpp	2023-01-20 06:54:54.816087000 +0200
+@@ -131,3 +131,6 @@
   
  
  
