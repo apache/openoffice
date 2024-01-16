@@ -19,28 +19,26 @@
  *
  *************************************************************/
 
-
-
 #include <sfx2/sfx.hrc>
 #include "sfxlocal.hrc"
 
 String STR_SFX_DOCK
 {
-	Text [ en-US ] = "Dock" ;
+	Text = "Dock" ;
 };
 
 String STR_SFX_UNDOCK
 {
-	Text [ en-US ] = "Undock" ;
+	Text = "Undock" ;
 };
 
 String STR_SFX_TASK_PANE_VIEW
 {
-	Text [ en-US ] = "View" ;
+	Text = "View" ;
 };
 String STR_SFX_TASKS
 {
-	Text [ en-US ] = "Tasks" ;
+	Text = "Tasks" ;
 };
 
 // ******************************************************************* EOF
