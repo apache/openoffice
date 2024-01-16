@@ -81,7 +81,7 @@ double SAL_CALL AnalysisAddIn::getAccrintm( constREFXPS& xOpt,
 double SAL_CALL AnalysisAddIn::getReceived( constREFXPS& xOpt,
 	sal_Int32 nSettle, sal_Int32 nMat, double fInvest, double fDisc, const ANY& rOB ) THROWDEF_RTE_IAE
 {
-	if( fInvest <= 0.0 || fDisc <= 0.0 )
+	if( fInvest <= 0.0 || fDisc <= 0.0 || nSettle >= nMat )
 		THROW_IAE;
 
     double fRet = fInvest / ( 1.0 - ( fDisc * GetYearDiff( GetNullDate( xOpt ), nSettle, nMat, getDateMode( xOpt, rOB ) ) ) );
