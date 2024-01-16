@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "svx/fmresids.hrc"
 /* Strings for translation */
 String RID_ERR_CONTEXT_ADDFORM
@@ -251,7 +249,7 @@ String RID_STR_PROPTITLE_PATTERNFIELD
 };
 String RID_STR_PROPTITLE_DBGRID
 {
-	Text [ en-US ] = "Table Control " ;
+	Text [ en-US ] = "Table Control" ;
 };
 String RID_STR_PROPTITLE_SCROLLBAR
 {
