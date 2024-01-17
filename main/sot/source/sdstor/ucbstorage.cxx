@@ -1876,7 +1876,8 @@ void UCBStorage_Impl::Init()
                         if ( !pStream->GetError() )
                         {
                             ::utl::OInputStreamWrapper* pHelper = new ::utl::OInputStreamWrapper( *pStream );
-                            com::sun::star::uno::Reference < ::com::sun::star::io::XInputStream > xInputStream( pHelper );
+                            com::sun::star::uno::Reference < ::com::sun::star::io::XInputStream > xInputStream;
+                            xInputStream = pHelper;
 
                             // create a manifest reader object that will read in the manifest from the stream
                             Reference < ::com::sun::star::packages::manifest::XManifestReader > xReader =

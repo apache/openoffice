@@ -2337,7 +2337,9 @@ sal_Bool SfxObjectShell::InsertFrom( SfxMedium& rMedium )
         {
             aArgs.realloc ( ++nEnd );
             aArgs[nEnd-1].Name = sInputStream;
-            aArgs[nEnd-1].Value <<= com::sun::star::uno::Reference < com::sun::star::io::XInputStream > ( new utl::OSeekableInputStreamWrapper ( *rMedium.GetInStream() ) );
+            com::sun::star::uno::Reference < com::sun::star::io::XInputStream > temp;
+            temp = new utl::OSeekableInputStreamWrapper ( *rMedium.GetInStream() );
+            aArgs[nEnd-1].Value <<= temp;
         }
 
         if ( !bHasBaseURL )

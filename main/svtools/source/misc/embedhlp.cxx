@@ -651,7 +651,8 @@ void EmbeddedObjectRef::SetGraphicStream( const uno::Reference< io::XInputStream
 		if ( mpImp->pContainer )
 		{
 			pGraphicStream->Seek( 0 );
-			uno::Reference< io::XInputStream > xInSeekGrStream = new ::utl::OSeekableInputStreamWrapper( pGraphicStream );
+			uno::Reference< io::XInputStream > xInSeekGrStream;
+            xInSeekGrStream = new ::utl::OSeekableInputStreamWrapper( pGraphicStream );
 
     		mpImp->pContainer->InsertGraphicStream( xInSeekGrStream, mpImp->aPersistName, rMediaType );
 		}
