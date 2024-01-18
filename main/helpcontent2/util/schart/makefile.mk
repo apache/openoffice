@@ -80,7 +80,6 @@ LINKLINKFILES= \
    text$/shared$/00$/00000404.xhp \
    text$/shared$/00$/00000406.xhp \
    text$/shared$/00$/00000407.xhp \
-   text$/shared$/00$/00000408.xhp \
    text$/shared$/00$/00000409.xhp \
    text$/shared$/00$/00000450.xhp \
    text$/shared$/00$/00040500.xhp \
@@ -999,8 +998,7 @@ LINKLINKFILES= \
    text$/schart$/04$/01020000.xhp \
    text$/schart$/main0000.xhp \
    text$/schart$/main0202.xhp \
-   text$/schart$/main0503.xhp \
-
+   text$/schart$/main0503.xhp
 
 # --- Targets ------------------------------------------------------
 
