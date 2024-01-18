@@ -376,7 +376,6 @@ LINKLINKFILES= \
    text$/shared$/00$/00000404.xhp \
    text$/shared$/00$/00000406.xhp \
    text$/shared$/00$/00000407.xhp \
-   text$/shared$/00$/00000408.xhp \
    text$/shared$/00$/00000409.xhp \
    text$/shared$/00$/00000450.xhp \
    text$/shared$/00$/00040500.xhp \
@@ -1241,7 +1240,6 @@ LINKLINKFILES= \
    text$/shared$/optionen$/viewcertificate_d.xhp \
    text$/shared$/optionen$/viewcertificate_g.xhp \
    text$/shared$/tree_strings.xhp
-
 
 # --- Targets ------------------------------------------------------
 
