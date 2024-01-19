@@ -1919,38 +1919,38 @@ sal_Unicode* lcl_UnicodeStrNCpy( sal_Unicode* pDst, const sal_Unicode* pSrc, xub
 //---------------------------------------------------------------------------
 // NextSymbol
 //---------------------------------------------------------------------------
-// Zerlegt die Formel in einzelne Symbole fuer die weitere
-// Verarbeitung (Turing-Maschine).
+// Breaks down the Formula into individual Symbols for further processing
+// (Turing-Machine).
 //---------------------------------------------------------------------------
-// Ausgangs Zustand = GetChar
-//---------------+-------------------+-----------------------+---------------
-// Alter Zustand | gelesenes Zeichen | Aktion                | Neuer Zustand
-//---------------+-------------------+-----------------------+---------------
-// GetChar       | ;()+-*/^=&        | Symbol=Zeichen        | Stop
-//               | <>                | Symbol=Zeichen        | GetBool
-//               | $ Buchstabe       | Symbol=Zeichen        | GetWord
-//               | Ziffer            | Symbol=Zeichen        | GetValue
-//               | "                 | Keine                 | GetString
-//               | Sonst             | Keine                 | GetChar
-//---------------+-------------------+-----------------------+---------------
-// GetBool       | =>                | Symbol=Symbol+Zeichen | Stop
-//               | Sonst             | Dec(CharPos)          | Stop
-//---------------+-------------------+-----------------------+---------------
-// GetWord       | SepSymbol         | Dec(CharPos)          | Stop
-//               | ()+-*/^=<>&~      |                       |
-//               | Leerzeichen       | Dec(CharPos)          | Stop
-//               | $_:.              |                       |
-//               | Buchstabe,Ziffer  | Symbol=Symbol+Zeichen | GetWord
-//               | Sonst             | Fehler                | Stop
-//---------------|-------------------+-----------------------+---------------
-// GetValue      | ;()*/^=<>&        |                       |
-//               | Leerzeichen       | Dec(CharPos)          | Stop
-//               | Ziffer E+-%,.     | Symbol=Symbol+Zeichen | GetValue
-//               | Sonst             | Fehler                | Stop
-//---------------+-------------------+-----------------------+---------------
-// GetString     | "                 | Keine                 | Stop
-//               | Sonst             | Symbol=Symbol+Zeichen | GetString
-//---------------+-------------------+-----------------------+---------------
+// Initial State = GetChar
+//---------------+-------------------+-------------------------+-------------
+// Former State  | read Character    | Action                  | New State
+//---------------+-------------------+-------------------------+-------------
+// GetChar       | ;()+-*/^=&        | Symbol=Character        | Stop
+//               | <>                | Symbol=Character        | GetBool
+//               | $ Letter          | Symbol=Character        | GetWord
+//               | Digit             | Symbol=Character        | GetValue
+//               | "                 | None                    | GetString
+//               | Otherwise         | None                    | GetChar
+//---------------+-------------------+-------------------------+-------------
+// GetBool       | =>                | Symbol=Symbol+Character | Stop
+//               | Otherwise         | Dec(CharPos)            | Stop
+//---------------+-------------------+-------------------------+-------------
+// GetWord       | SepSymbol         | Dec(CharPos)            | Stop
+//               | ()+-*/^=<>&~      |                         |
+//               | Space             | Dec(CharPos)            | Stop
+//               | $_:.              |                         |
+//               | Letter,Digit      | Symbol=Symbol+Character | GetWord
+//               | Otherwise         | Error                   | Stop
+//---------------|-------------------+-------------------------+-------------
+// GetValue      | ;()*/^=<>&        |                         |
+//               | Space             | Dec(CharPos)            | Stop
+//               | Digit E+-%,.      | Symbol=Symbol+Character | GetValue
+//               | Otherwise         | Error                   | Stop
+//---------------+-------------------+-------------------------+-------------
+// GetString     | "                 | None                    | Stop
+//               | Otherwise         | Symbol=Symbol+Character | GetString
+//---------------+-------------------+-------------------------+-------------
 
 xub_StrLen ScCompiler::NextSymbol(bool bInArray)
 {
