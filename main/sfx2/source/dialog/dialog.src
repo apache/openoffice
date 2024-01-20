@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // include ---------------------------------------------------------------
 #include <sfx2/sfx.hrc>
 #include "dialog.hrc"
@@ -101,7 +99,7 @@ String SID_NAVIGATOR
 };
 String SID_TASKPANE
 {
-	Text [ en-US ] = "Task Pane" ;
+	Text = "Task Pane" ;
 };
 String SID_SIDEBAR
 {
