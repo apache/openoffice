@@ -51,7 +51,7 @@
 <section id="Section62">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_BUTTONTYPE" id="bm_id3156152" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153147" role="heading" level="2" l10n="CHG">Action<comment>UFI: renamed from Button type to Action, see dba.features: Form navigation functionality for command buttons</comment></paragraph>
-<paragraph xml-lang="en-US" id="par_id3149415" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_BUTTONTYPE" visibility="hidden">The Action property determines the action that occurs when you activate a button.</ahelp>You can use navigation actions to design your own database navigation buttons.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149415" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_BUTTONTYPE" visibility="hidden">The Action property determines the action that occurs when you activate a button.</ahelp> You can use navigation actions to design your own database navigation buttons.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152474" role="paragraph" l10n="U">The following table describes the actions that you can assign to a button.</paragraph>
 <table id="tbl_id3148943">
 <tablerow>
@@ -181,7 +181,7 @@ oldref="19">Dropdown</paragraph>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_IMAGEPOSITION" id="bm_id2524491" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153140" role="heading" level="2" l10n="CHG"
 oldref="11">Alignment / Graphics alignment</paragraph>
-<paragraph xml-lang="en-US" id="par_id3151281" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_ALIGN" visibility="hidden">Specifies the alignment option for text or graphics that are used on a control.</ahelp>The alignment options are left-aligned, right-aligned, and centered. These options are available for the following elements:</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151281" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_ALIGN" visibility="hidden">Specifies the alignment option for text or graphics that are used on a control.</ahelp> The alignment options are left-aligned, right-aligned, and centered. These options are available for the following elements:</paragraph>
 <list type="ordered">
 <listitem>
 <paragraph xml-lang="en-US" id="par_idN109DD" role="paragraph" l10n="NEW">Title of Label fields</paragraph>
@@ -207,7 +207,7 @@ oldref="11">Alignment / Graphics alignment</paragraph>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_AUTOCOMPLETE" id="bm_id3154790" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3151073" role="heading" level="2" l10n="CHG"
 oldref="76">AutoFill</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152375" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_AUTOCOMPLETE" visibility="hidden">Assigns the AutoFill function to a combo box.</ahelp>The AutoFill function displays a list of previous entries after you start to type an entry.<comment>UFI: changed AutoComplete to AutoFill (got changed by error in the UI, so we stay with it now, according to FS)</comment></paragraph>
+<paragraph xml-lang="en-US" id="par_id3152375" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_AUTOCOMPLETE" visibility="hidden">Assigns the AutoFill function to a combo box.</ahelp> The AutoFill function displays a list of previous entries after you start to type an entry.<comment>UFI: changed AutoComplete to AutoFill (got changed by error in the UI, so we stay with it now, according to FS)</comment></paragraph>
 </section>
 <section id="Section58">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CONTROLLABEL" id="bm_id3151053" localize="false"/>
@@ -224,7 +224,7 @@ oldref="216">Label field</paragraph>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_WIDTH" id="bm_id3156356" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148834" role="heading" level="2" l10n="U"
 oldref="142">Width</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148566" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_WIDTH" visibility="hidden">Sets the column width in the table control field.</ahelp>Sets the column width in the table control field in the units that are specified in the %PRODUCTNAME module options. If you want, you can enter a value followed by a valid measurement unit, for example, 2 cm.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148566" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_WIDTH" visibility="hidden">Sets the column width in the table control field.</ahelp> Sets the column width in the table control field in the units that are specified in the %PRODUCTNAME module options. If you want, you can enter a value followed by a valid measurement unit, for example, 2 cm.</paragraph>
 </section>
 <section id="Section56">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_REPEAT" id="bm_id2982573" localize="false"/>
@@ -246,7 +246,7 @@ oldref="214">Record marker</paragraph>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DATEFORMAT" id="bm_id3158419" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3151019" role="heading" level="2" l10n="U"
 oldref="82">Date format</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152971" role="paragraph" l10n="U"><ahelp hid="HID_PROP_DATEFORMAT" visibility="hidden">Here, you can determine the format you want for the date readout.</ahelp>With date fields you can determine the format for the date readout.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152971" role="paragraph" l10n="U"><ahelp hid="HID_PROP_DATEFORMAT" visibility="hidden">Here, you can determine the format you want for the date readout.</ahelp> With date fields you can determine the format for the date readout.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151356" role="note" l10n="U"><variable id="hinweis">All format fields (date, time, currency, numeric) are formatted automatically in the selected format as soon as you leave them regardless of how you entered the input.
 </variable></paragraph>
 </section>
@@ -254,7 +254,7 @@ oldref="82">Date format</paragraph>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SPIN" id="bm_id3145642" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3156054" role="heading" level="2" l10n="U"
 oldref="87">Spin Button</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154360" role="paragraph" l10n="U"><ahelp hid="HID_PROP_SPIN" visibility="hidden">The "Yes" option transforms the control field into a spin button, where corresponding arrow buttons are added.</ahelp>Numerical fields, currency fields, date and time fields can be introduced as spin buttons in the form.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154360" role="paragraph" l10n="U"><ahelp hid="HID_PROP_SPIN" visibility="hidden">The "Yes" option transforms the control field into a spin button, where corresponding arrow buttons are added.</ahelp> Numerical fields, currency fields, date and time fields can be introduced as spin buttons in the form.</paragraph>
 </section>
 <section id="Section51">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TRISTATE" id="bm_id3150386" localize="false"/>
@@ -384,7 +384,7 @@ oldref="91">Edit mask</paragraph>
 <section id="targetframe">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TARGET_FRAME" id="bm_id3149491" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3147167" role="heading" level="2" l10n="CHG">Frame</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154991" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_TARGET_FRAME" visibility="hidden">Specifies the target frame to display the document that is opened by the "Open document / web page" action.</ahelp>You can also specify the target frame to display a <emph>URL</emph> that you open when you click a button that has been assigned the Open document or web page action).</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154991" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_TARGET_FRAME" visibility="hidden">Specifies the target frame to display the document that is opened by the "Open document / web page" action.</ahelp> You can also specify the target frame to display a <emph>URL</emph> that you open when you click a button that has been assigned the Open document or web page action).</paragraph>
 <section id="fuerformulareigenschaft">
 <paragraph xml-lang="en-US" id="par_id3150521" role="paragraph" l10n="U">If you click the field, you can select an option from the list that specifies into which frame the next document should be loaded. The following possibilities exist:</paragraph>
 <table id="">
@@ -473,7 +473,7 @@ oldref="40">Scrollbar</paragraph>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_VALUESTEP" id="bm_id3150624" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3146779" role="heading" level="2" l10n="U"
 oldref="85">Value step</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155096" role="paragraph" l10n="CHG" oldref="86"><ahelp hid="HID_PROP_VALUESTEP" visibility="hidden">Determines spin button intervals.</ahelp>You can preset the value intervals for numerical and currency spin buttons. Use the up and down arrows of the spin button to increase or decrease the value.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155096" role="paragraph" l10n="CHG" oldref="86"><ahelp hid="HID_PROP_VALUESTEP" visibility="hidden">Determines spin button intervals.</ahelp> You can preset the value intervals for numerical and currency spin buttons. Use the up and down arrows of the spin button to increase or decrease the value.</paragraph>
 </section>
 <section id="Section39">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_STRINGITEMLIST" id="bm_id3153975" localize="false"/>
@@ -586,7 +586,7 @@ oldref="21">Text type<comment>UFI: now renamed to Text Type, see #i24386#</comme
 <section id="Section29">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DECIMAL_ACCURACY" id="bm_id3154402" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3155746" role="heading" level="2" l10n="U">Decimal accuracy</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146096" role="paragraph" l10n="U" oldref="138"><ahelp hid="HID_PROP_DECIMAL_ACCURACY" visibility="hidden">Determines the number of digits displayed to the right of the decimal point.</ahelp>With numerical and currency fields you can determine the number of digits displayed to the right of the decimal point.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146096" role="paragraph" l10n="U" oldref="138"><ahelp hid="HID_PROP_DECIMAL_ACCURACY" visibility="hidden">Determines the number of digits displayed to the right of the decimal point.</ahelp> With numerical and currency fields you can determine the number of digits displayed to the right of the decimal point.</paragraph>
 </section>
 <section id="Section28">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_NAME" id="bm_id3152469" localize="false"/>
@@ -603,17 +603,17 @@ oldref="21">Text type<comment>UFI: now renamed to Text Type, see #i24386#</comme
 <section id="Section27">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_NAVIGATIONBAR" id="bm_id3153020" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3149720" role="heading" level="2" l10n="U">Navigation bar</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149918" role="paragraph" l10n="U" oldref="198"><ahelp hid="HID_PROP_NAVIGATIONBAR" visibility="hidden">Specifies whether to display the navigation bar on the lower border of the table control.</ahelp>Specifies whether to display the navigation bar on the lower border of table controls.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149918" role="paragraph" l10n="U" oldref="198"><ahelp hid="HID_PROP_NAVIGATIONBAR" visibility="hidden">Specifies whether to display the navigation bar on the lower border of the table control.</ahelp> Specifies whether to display the navigation bar on the lower border of table controls.</paragraph>
 </section>
 <section id="Section26">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_READONLY" id="bm_id3151173" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3158426" role="heading" level="2" l10n="U">Read-only</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153215" role="paragraph" l10n="U" oldref="43"><ahelp hid="HID_PROP_READONLY" visibility="hidden">Determines if the control is read-only (Yes) or if it can be edited (No).</ahelp>The <emph>Read-only</emph> property can be assigned to all controls in which the user can enter text. If you assign the read-only property to an image field which uses graphics from a database, the user will not be able to insert new graphics into the database.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153215" role="paragraph" l10n="U" oldref="43"><ahelp hid="HID_PROP_READONLY" visibility="hidden">Determines if the control is read-only (Yes) or if it can be edited (No).</ahelp> The <emph>Read-only</emph> property can be assigned to all controls in which the user can enter text. If you assign the read-only property to an image field which uses graphics from a database, the user will not be able to insert new graphics into the database.</paragraph>
 </section>
 <section id="Section25">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_BORDER" id="bm_id3154414" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148912" role="heading" level="2" l10n="U">Border</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145637" role="paragraph" l10n="U" oldref="140"><ahelp hid="HID_PROP_BORDER" visibility="hidden">Determines if the field's border should be displayed "Without frame", with a "3-D look" or "Flat".</ahelp>With control fields that have a frame, you can determine the border display on the form using the <emph>Border</emph> property. You can select among the "Without frame", "3-D look" or "Flat" options.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145637" role="paragraph" l10n="U" oldref="140"><ahelp hid="HID_PROP_BORDER" visibility="hidden">Determines if the field's border should be displayed "Without frame", with a "3-D look" or "Flat".</ahelp> With control fields that have a frame, you can determine the border display on the form using the <emph>Border</emph> property. You can select among the "Without frame", "3-D look" or "Flat" options.</paragraph>
 </section>
 <section id="Section24">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TABINDEX" id="bm_id3157872" localize="false"/>
@@ -638,7 +638,7 @@ oldref="21">Text type<comment>UFI: now renamed to Text Type, see #i24386#</comme
 <section id="Section21">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DEFAULT_SELECT_SEQ" id="bm_id3147220" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3156150" role="heading" level="2" l10n="U">Default selection</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148730" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_DEFAULT_SELECT_SEQ" visibility="hidden">Specifies the list box entry to mark as the default entry.</ahelp>Specifies the list box entry to mark as the default entry.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148730" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_DEFAULT_SELECT_SEQ" visibility="hidden">Specifies the list box entry to mark as the default entry.</ahelp> Specifies the list box entry to mark as the default entry.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150028" role="paragraph" l10n="U">For a Reset type button, the <emph>Default selection</emph> entry defines the status of the list box if the reset button is activated by the user.</paragraph>
 <paragraph xml-lang="en-US" id="par_id919217" role="paragraph" l10n="NEW">For a List box that contains a value list, you can click the <emph>...</emph> button to open the <emph>Default selection</emph> dialog.</paragraph>
 <paragraph xml-lang="en-US" id="par_id50050" role="paragraph" l10n="NEW">In the <emph>Default selection</emph> dialog, select the entries that you want to mark as selected when you open the form that contains the list box.</paragraph>
