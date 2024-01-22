@@ -6521,7 +6521,8 @@ ScDBQueryParamBase* ScInterpreter::GetDBParams( sal_Bool& rMissingField )
         bAllowMissingField = sal_True;
         rMissingField = sal_False;
     }
-    if ( GetByte() == 3 )
+    sal_uInt8 nParamCount = GetByte();
+    if ( (bAllowMissingField && nParamCount == 2) || nParamCount == 3 )
     {
         // First, get the query criteria range.
         ::std::auto_ptr<ScDBRangeBase> pQueryRef( PopDoubleRef() );
@@ -6533,54 +6534,59 @@ ScDBQueryParamBase* ScInterpreter::GetDBParams( sal_Bool& rMissingField )
         String  aStr;
         ScRange aMissingRange;
         sal_Bool bRangeFake = sal_False;
-        switch (GetStackType())
+        if (nParamCount == 3)
         {
-            case svDouble :
-                nVal = ::rtl::math::approxFloor( GetDouble() );
-                if ( bAllowMissingField && nVal == 0.0 )
-                    rMissingField = sal_True;   // fake missing parameter
-                break;
-            case svString :
-                bByVal = sal_False;
-                aStr = GetString();
-                break;
-            case svSingleRef :
-                {
-                    ScAddress aAdr;
-                    PopSingleRef( aAdr );
-                    ScBaseCell* pCell = GetCell( aAdr );
-                    if (HasCellValueData(pCell))
-                        nVal = GetCellValue( aAdr, pCell );
+            switch (GetStackType())
+            {
+                case svDouble :
+                    nVal = ::rtl::math::approxFloor( GetDouble() );
+                    if ( bAllowMissingField && nVal == 0.0 )
+                        rMissingField = sal_True;   // fake missing parameter
+                    break;
+                case svString :
+                    bByVal = sal_False;
+                    aStr = GetString();
+                    break;
+                case svSingleRef :
+                    {
+                        ScAddress aAdr;
+                        PopSingleRef( aAdr );
+                        ScBaseCell* pCell = GetCell( aAdr );
+                        if (HasCellValueData(pCell))
+                            nVal = GetCellValue( aAdr, pCell );
+                        else
+                        {
+                            bByVal = sal_False;
+                            GetCellString(aStr, pCell);
+                        }
+                    }
+                    break;
+                case svDoubleRef :
+                    if ( bAllowMissingField )
+                    {   // fake missing parameter for old SO compatibility
+                        bRangeFake = sal_True;
+                        PopDoubleRef( aMissingRange );
+                    }
                     else
                     {
-                        bByVal = sal_False;
-                        GetCellString(aStr, pCell);
+                        PopError();
+                        SetError( errIllegalParameter );
                     }
-                }
-                break;
-            case svDoubleRef :
-                if ( bAllowMissingField )
-                {   // fake missing parameter for old SO compatibility
-                    bRangeFake = sal_True;
-                    PopDoubleRef( aMissingRange );
-                }
-                else
-                {
+                    break;
+                case svMissing :
+                    PopError();
+                    if ( bAllowMissingField )
+                        rMissingField = sal_True;
+                    else
+                        SetError( errIllegalParameter );
+                    break;
+                default:
                     PopError();
                     SetError( errIllegalParameter );
-                }
-                break;
-            case svMissing :
-                PopError();
-                if ( bAllowMissingField )
-                    rMissingField = sal_True;
-                else
-                    SetError( errIllegalParameter );
-                break;
-            default:
-                PopError();
-                SetError( errIllegalParameter );
+            }
         }
+        else
+            rMissingField = sal_True;
 
         auto_ptr<ScDBRangeBase> pDBRef( PopDoubleRef() );
 

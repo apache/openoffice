@@ -505,7 +505,7 @@ oldref="88">DCOUNT</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3156099" role="heading" level="3" l10n="U"
 oldref="90">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153218" role="code" l10n="U" oldref="91">DCOUNT(Database; DatabaseField; SearchCriteria)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153273" role="paragraph" l10n="U" oldref="187">For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href="text/scalc/01/04060101.xhp#quotes"/>
+<paragraph xml-lang="en-US" id="par_id3153273" role="paragraph" l10n="U" oldref="187">If the DatabaseField parameter is present, it should specify the column in which to count the numerical values. If it is absent or set to the number 0, it doesn't count any column's values, and just returns the number of rows matching the criteria. <embedvar href="text/scalc/01/04060101.xhp#quotes"/>
 </paragraph>
 <paragraph xml-lang="en-US" id="hd_id3154743" role="heading" level="3" l10n="U"
 oldref="92">Example</paragraph>
@@ -528,10 +528,11 @@ oldref="97">DCOUNTA</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3143228" role="heading" level="3" l10n="U"
 oldref="99">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3146893" role="code" l10n="U" oldref="100">DCOUNTA(Database; DatabaseField; SearchCriteria)</paragraph>
-<embed href="text/scalc/01/04060101.xhp#quotes"/>
+<paragraph xml-lang="en-US" id="par_id3156112" role="paragraph" l10n="U" oldref="101">If the DatabaseField parameter is present, it should specify the column in which to count the alphanumerical values. If it is absent or set to the number 0, it doesn't count any column's values, and just returns the number of rows matching the criteria. <embedvar href="text/scalc/01/04060101.xhp#quotes"/>
+</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3149751" role="heading" level="3" l10n="U"
-oldref="101">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153982" role="paragraph" l10n="CHG" oldref="102">In the example above (scroll up, please), you can search for the number of children whose name starts with an E or a subsequent letter. Edit the formula in B16 to read <item type="input">=DCOUNTA(A1:E10;"Name";A13:E14)</item>. Delete the old search criteria and enter <item type="input">&gt;=E</item> under Name in field A14. The result is 5. If you now delete all number values for Greta in row 8, the result changes to 4. Row 8 is no longer included in the count because it does not contain any values. The name Greta is text, not a value. Note that the DatabaseField parameter must point to a column that can contain values.<comment>see i25407</comment></paragraph>
+oldref="102">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153982" role="paragraph" l10n="CHG" oldref="103">In the example above (scroll up, please), you can search for the number of children whose name starts with an E or a subsequent letter. Edit the formula in B16 to read <item type="input">=DCOUNTA(A1:E10;"Name";A13:E14)</item>. Delete the old search criteria and enter <item type="input">&gt;=E</item> under Name in field A14. The result is 5. If you now delete all number values for Greta in row 8, the result changes to 4. Row 8 is no longer included in the count because it does not contain any values. The name Greta is text, not a value. Note that the DatabaseField parameter must point to a column that can contain values.<comment>see i25407</comment></paragraph>
 </section>
 <section id="Section3">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3147256">
