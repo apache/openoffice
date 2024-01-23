@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 PRJ=.
 
 PRJNAME=zlib
@@ -40,10 +38,10 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=zlib-1.3
-TARFILE_MD5=60373b133d630f74f4a1f94c1185a53f
+TARFILE_NAME=zlib-1.3.1
+TARFILE_MD5=9855b6d802d7fe5b7bd5b196a2271655
 
-PATCH_FILES=zlib-1.3.patch
+PATCH_FILES=zlib-1.3.1.patch
 ADDITIONAL_FILES=makefile.mk
 
 #relative to CONFIGURE_DIR
@@ -69,3 +67,5 @@ ALLTAR: $(PATCHED_HEADERS)
 
 $(PATCHED_HEADERS) : $(PACKAGE_DIR)$/$(PREDELIVER_FLAG_FILE)
 	@$(PERL) make_patched_header.pl $@ $(PRJNAME)
+
+# vim: set noet sw=4 ts=4:
