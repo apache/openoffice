@@ -29,7 +29,7 @@
 </topic>
 </meta>
 <body>
-<paragraph xml-lang="en-US" id="hd_id3153415" role="heading" level="1" l10n="U" oldref="1"><variable id="mq"><link href="text/scalc/01/04060184.xhp" name="Statistical Functions Part Four">Statistical Functions Part Four</link>
+<paragraph xml-lang="en-US" id="hd_id3153415" role="heading" level="1" l10n="U"><variable id="mq"><link href="text/scalc/01/04060184.xhp" name="Statistical Functions Part Four">Statistical Functions Part Four</link>
 </variable></paragraph>
 <sort order="asc">
 <section id="max">
@@ -37,46 +37,38 @@
 <bookmark_value>MAX function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MAX" id="bm_id3146972" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154511" role="heading" level="2" l10n="U" oldref="2">MAX</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153709" role="paragraph" l10n="U" oldref="3"><ahelp hid="HID_FUNC_MAX">Returns the maximum value in a list of arguments.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154511" role="heading" level="2" l10n="U">MAX</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153709" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MAX">Returns the maximum value in a list of arguments.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="par_id9282509" role="paragraph" l10n="NEW">Returns 0 if no numeric value and no error was encountered in the cell range(s) passed as cell reference(s). Text cells are ignored by MIN() and MAX(). The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered. Passing a literal string argument to MIN() or MAX(), e.g. MIN("string"), still results in an error.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3154256" role="heading" level="3" l10n="U" oldref="4">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3147340" role="code" l10n="U" oldref="5">MAX(Number1; Number2; ...Number30)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149568" role="paragraph" l10n="CHG" oldref="6"><emph>Number1; Number2;...Number30</emph> are numerical values or ranges.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3153963" role="heading" level="3" l10n="U" oldref="7">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3147343" role="paragraph" l10n="U" oldref="8">
-<item type="input">=MAX(A1;A2;A3;50;100;200)</item> returns the largest value from the list.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148485" role="paragraph" l10n="U" oldref="9">
-<item type="input">=MAX(A1:B100)</item> returns the largest value from the list.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154256" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147340" role="code" l10n="U">MAX(Number1; Number2; ...Number30)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149568" role="paragraph" l10n="CHG"><emph>Number1; Number2;...Number30</emph> are numerical values or ranges.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153963" role="heading" level="3" l10n="U">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147343" role="paragraph" l10n="U"><item type="input">=MAX(A1;A2;A3;50;100;200)</item> returns the largest value from the list.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148485" role="paragraph" l10n="U"><item type="input">=MAX(A1:B100)</item> returns the largest value from the list.</paragraph>
 </section>
 <section id="maxa">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3166426">
 <bookmark_value>MAXA function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MAXA" id="bm_id3150304" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3166426" role="heading" level="2" l10n="U"
-oldref="139">MAXA</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150363" role="paragraph" l10n="U" oldref="140"><ahelp hid="HID_FUNC_MAXA">Returns the maximum value in a list of arguments. In opposite to MAX, here you can enter text. The value of the text is 0.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3166426" role="heading" level="2" l10n="U">MAXA</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150363" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MAXA">Returns the maximum value in a list of arguments. In opposite to MAX, here you can enter text. The value of the text is 0.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="par_id7689443" role="paragraph" l10n="NEW">The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3150516" role="heading" level="3" l10n="U"
-oldref="141">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3166431" role="code" l10n="U" oldref="142">MAXA(Value1; Value2; ... Value30)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150202" role="paragraph" l10n="CHG" oldref="143"><emph>Value1; Value2;...Value30</emph> are values or ranges. Text has the value of 0.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3156290" role="heading" level="3" l10n="U"
-oldref="144">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3156446" role="paragraph" l10n="CHG" oldref="145">
-<item type="input">=MAXA(A1;A2;A3;50;100;200;"Text")</item> returns the largest value from the list.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149404" role="paragraph" l10n="U" oldref="146">
-<item type="input">=MAXA(A1:B100)</item> returns the largest value from the list.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150516" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3166431" role="code" l10n="U">MAXA(Value1; Value2; ... Value30)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150202" role="paragraph" l10n="CHG"><emph>Value1; Value2;...Value30</emph> are values or ranges. Text has the value of 0.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156290" role="heading" level="3" l10n="U">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156446" role="paragraph" l10n="CHG"><item type="input">=MAXA(A1;A2;A3;50;100;200;"Text")</item> returns the largest value from the list.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149404" role="paragraph" l10n="U"><item type="input">=MAXA(A1:B100)</item> returns the largest value from the list.</paragraph>
 </section>
 <section id="median">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153820">
 <bookmark_value>MEDIAN function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MEDIAN" id="bm_id3153069" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3153820" role="heading" level="2" l10n="U"
-oldref="11">MEDIAN</paragraph>
-<paragraph xml-lang="en-US" id="par_id3151241" role="paragraph" l10n="U" oldref="12"><ahelp hid="HID_FUNC_MEDIAN">Returns the median of a set of numbers. In a set containing an uneven number of values, the median will be the number in the middle of the set and in a set containing an even number of values, it will be the mean of the two values in the middle of the set.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153820" role="heading" level="2" l10n="U">MEDIAN</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151241" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MEDIAN">Returns the median of a set of numbers. In a set containing an uneven number of values, the median will be the number in the middle of the set and in a set containing an even number of values, it will be the mean of the two values in the middle of the set.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3148871" role="heading" level="3" l10n="U"
 oldref="13">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155264" role="code" l10n="U" oldref="14">MEDIAN(Number1; Number2; ...Number30)</paragraph>
@@ -186,9 +178,9 @@ oldref="157">AVERAGEIF</paragraph><comment>kschenk added this entry </comment>
 <paragraph xml-lang="en-US" id="par_id3145138K1" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MITTELWERTB">Average the values of cells in a range that meet a criteria.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3153326K1" role="heading" level="3" l10n="U"
 oldref="159">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149734K1" role="code" l10n="U" >AVERAGEIF( Reference R ; Criterion C [ ; Reference A ] )</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155260K1" role="paragraph" l10n="CHG" > If reference A is omitted, averages the values of cells in the reference range R that meet the Criterion C. If reference A is given, averages the values of cells of a range that is constructed using the top left cell of reference A and applying the dimensions, shape and size, of reference R. Does not accept constant values as reference parameters.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145139K1" role="paragraph" l10n="U" >If no cell in range R matches the Criterion C, an Error is returned. If no Numbers are in the range to be averaged, an Error is returned.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149734K1" role="code" l10n="U">AVERAGEIF( Reference R ; Criterion C [ ; Reference A ] )</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155260K1" role="paragraph" l10n="CHG"> If reference A is omitted, averages the values of cells in the reference range R that meet the Criterion C. If reference A is given, averages the values of cells of a range that is constructed using the top left cell of reference A and applying the dimensions, shape and size, of reference R. Does not accept constant values as reference parameters.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145139K1" role="paragraph" l10n="U">If no cell in range R matches the Criterion C, an Error is returned. If no Numbers are in the range to be averaged, an Error is returned.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3149504K1" role="heading" level="3" l10n="U"
 oldref="162">Examples</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150864K1" role="paragraph" l10n="U">
@@ -205,9 +197,9 @@ oldref="157">AVERAGEIFS</paragraph><comment>kschenk added this entry </comment>
 <paragraph xml-lang="en-US" id="par_id3145138K2" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MITTELWERTC">Average the values of cells that meet multiple criteria in multiple ranges.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3153326K2" role="heading" level="3" l10n="U"
 oldref="159">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149734K2" role="code" l10n="U" >AVERAGEIFS( Reference A ; Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155260K2" role="paragraph" l10n="CHG" >Averages the values of cells in the reference range A that meet the Criterion C1 in the reference range R1 and the Criterion C2 in the reference range R2, and so on.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145139K2" role="paragraph" l10n="U" >All reference ranges shall have the same dimension and size, else an Error is returned. A logical AND is applied between each array result of each selection; a cell of reference range A is evaluated only if the same position in each array is the result of a Criterion match. If no numbers are in the result set to be averaged, an Error is returned.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149734K2" role="code" l10n="U">AVERAGEIFS( Reference A ; Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155260K2" role="paragraph" l10n="CHG">Averages the values of cells in the reference range A that meet the Criterion C1 in the reference range R1 and the Criterion C2 in the reference range R2, and so on.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145139K2" role="paragraph" l10n="U">All reference ranges shall have the same dimension and size, else an Error is returned. A logical AND is applied between each array result of each selection; a cell of reference range A is evaluated only if the same position in each array is the result of a Criterion match. If no numbers are in the result set to be averaged, an Error is returned.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3149504K2" role="heading" level="3" l10n="U"
 oldref="162">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150864K2" role="paragraph" l10n="U">

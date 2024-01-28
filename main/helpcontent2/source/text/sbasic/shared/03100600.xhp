@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -33,24 +33,23 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153311">
 <bookmark_value>CLng function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03100600.xhp" name="CLng Function [Runtime]">CLng Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3148686" xml-lang="en-US" l10n="U" oldref="2">Converts any string or numeric expression to a long integer.</paragraph>
+<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03100600.xhp" name="CLng Function [Runtime]">CLng Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148686" xml-lang="en-US" l10n="U">Converts any string or numeric expression to a long integer.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U" oldref="4">CLng (Expression)</paragraph>
-<paragraph role="heading" id="hd_id3145610" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U" oldref="6">Long</paragraph>
-<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Expression:</emph> Any numerical expression that you want to convert. If the <emph>Expression</emph> lies outside the valid long integer range between -2.147.483.648 and 2.147.483.647, $[officename] Basic returns an overflow error. To convert a string expression, the number must be entered as normal text ("123.5") using the default number format of your operating system.</paragraph>
-<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="9">This function always rounds the fractional part of a number to the nearest integer.</paragraph>
+<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U">CLng (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3145610" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U">Long</paragraph>
+<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U"><emph>Expression:</emph> Any numerical expression that you want to convert. If the <emph>Expression</emph> lies outside the valid long integer range between -2.147.483.648 and 2.147.483.647, $[officename] Basic returns an overflow error. To convert a string expression, the number must be entered as normal text ("123.5") using the default number format of your operating system.</paragraph>
+<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U">This function always rounds the fractional part of a number to the nearest integer.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3154216" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleCountryConvert</paragraph>
-<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="12">Msgbox CDbl(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U" oldref="13">Msgbox CInt(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3154909" xml-lang="en-US" l10n="U" oldref="14">Msgbox CLng(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3153770" xml-lang="en-US" l10n="U" oldref="15">end sub</paragraph>
+<paragraph role="heading" id="hd_id3154216" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U">Sub ExampleCountryConvert</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U">Msgbox CDbl(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U">Msgbox CInt(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3154909" xml-lang="en-US" l10n="U">Msgbox CLng(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3153770" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>
