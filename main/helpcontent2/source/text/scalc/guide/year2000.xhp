@@ -33,16 +33,16 @@
 <bookmark_value>years; 2-digits</bookmark_value>
 <bookmark_value>dates; 19xx/20xx</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3150439" xml-lang="en-US" level="1" l10n="U" oldref="18"><variable id="year2000"><link href="text/scalc/guide/year2000.xhp" name="19xx/20xx Years">19xx/20xx Years</link>
+<paragraph role="heading" id="hd_id3150439" xml-lang="en-US" level="1" l10n="U"><variable id="year2000"><link href="text/scalc/guide/year2000.xhp" name="19xx/20xx Years">19xx/20xx Years</link>
 </variable></paragraph>
 <section id="text">
-<paragraph role="paragraph" id="par_id3151116" xml-lang="en-US" l10n="U" oldref="17">The year in a date entry is often entered as two digits. Internally, the year is managed by $[officename] as four digits, so that in the calculation of the difference from 1/1/99 to 1/1/01, the result will correctly be two years.</paragraph>
+<paragraph role="paragraph" id="par_id3151116" xml-lang="en-US" l10n="U">The year in a date entry is often entered as two digits. Internally, the year is managed by $[officename] as four digits, so that in the calculation of the difference from 1/1/99 to 1/1/01, the result will correctly be two years.</paragraph>
 <list type="unordered">
 <listitem>
-<paragraph role="listitem" id="par_id3154011" xml-lang="en-US" l10n="U" oldref="19">Under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - General</emph> you can define the century that is used when you enter a year with only two digits. The default is 1930 to 2029.</paragraph>
+<paragraph role="listitem" id="par_id3154011" xml-lang="en-US" l10n="U">Under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - General</emph> you can define the century that is used when you enter a year with only two digits. The default is 1930 to 2029.</paragraph>
 </listitem>
 </list>
-<paragraph role="paragraph" id="par_id3150010" xml-lang="en-US" l10n="U" oldref="20">This means that if you enter a date of 1/1/30 or higher, it will be treated internally as 1/1/1930 or higher. All lower two-digit years apply to the 20xx century. So, for example, 1/1/20 is converted into 1/1/2020.</paragraph>
+<paragraph role="paragraph" id="par_id3150010" xml-lang="en-US" l10n="U">This means that if you enter a date of 1/1/30 or higher, it will be treated internally as 1/1/1930 or higher. All lower two-digit years apply to the 20xx century. So, for example, 1/1/20 is converted into 1/1/2020.</paragraph>
 </section>
 <section id="relatedtopics">
 <embed href="text/scalc/guide/calc_date.xhp#calc_date"/>
