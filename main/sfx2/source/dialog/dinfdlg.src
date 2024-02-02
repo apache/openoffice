@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // include ---------------------------------------------------------------
 
 #include "sfx2/sfx.hrc"
@@ -551,7 +549,7 @@ TabPage TP_CUSTOMPROPERTIES
 		};
 		String STR_HEADER_ACTION
 		{
-			Text [ en-US ] = "" ;
+			Text = "" ;
 		};
 	};
 	PushButton BTN_ADD
@@ -613,7 +611,7 @@ ListBox SFX_LB_PROPERTY_TYPE
 	Size = MAP_APPFONT ( 60, 80 ) ;
 	DropDown = TRUE ;
 	Border = TRUE ;
-	CurPos = 0;
+	CurPos = 0 ;
 	StringList [ en-US ] =
 	{
 		< "Text"		; CUSTOM_TYPE_TEXT ;		> ;
