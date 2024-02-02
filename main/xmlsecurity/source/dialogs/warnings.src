@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "dialogs.hrc"
 #include "helpids.hrc"
 
@@ -40,7 +38,7 @@ ModalDialog RID_XMLSECTP_MACROWARN
 		Pos = MAP_APPFONT ( MW_COL_1, MW_ROW_0 ) ;
 		Size = MAP_APPFONT ( MW_COL_4-MW_COL_1, 3*RSC_CD_FIXEDTEXT_HEIGHT ) ;
 		Wordbreak = TRUE ;
-		Text [ en-US ] = "" ;
+		Text = "" ;
 	};
 	FixedText FI_DESCR1A
 	{
