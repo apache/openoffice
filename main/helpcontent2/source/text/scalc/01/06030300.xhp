@@ -35,13 +35,13 @@
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:ShowDependents" id="bm_id6672482" localize="false"/><!-- HID added by script -->
 <bookmark branch="hid/.uno:ShowDependents" xml-lang="en-US" id="bm_id3143267"/>
-<paragraph id="hd_id3153252" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/scalc/01/06030300.xhp" name="Trace Dependents">Trace Dependents</link></paragraph>
-<paragraph l10n="U" role="paragraph" id="par_id3156024" xml-lang="en-US" oldref="2"><ahelp hid=".uno:ShowDependents" visibility="visible">Draws tracer arrows to the active cell from formulas that depend on values in the active cell.</ahelp></paragraph>
+<paragraph id="hd_id3153252" role="heading" level="1" l10n="U" xml-lang="en-US"><link href="text/scalc/01/06030300.xhp" name="Trace Dependents">Trace Dependents</link></paragraph>
+<paragraph l10n="U" role="paragraph" id="par_id3156024" xml-lang="en-US"><ahelp hid=".uno:ShowDependents" visibility="visible">Draws tracer arrows to the active cell from formulas that depend on values in the active cell.</ahelp></paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3148948" l10n="U" xml-lang="en-US" oldref="4">The area of all cells that are used together with the active cell in a formula is highlighted by a blue frame.</paragraph>
+<paragraph role="paragraph" id="par_id3148948" l10n="U" xml-lang="en-US">The area of all cells that are used together with the active cell in a formula is highlighted by a blue frame.</paragraph>
 <section id="howtoget">
 <embed href="text/scalc/00/00000406.xhp#exdsznf"/>
 </section>
-<paragraph xml-lang="en-US" role="note" id="par_id3151112" l10n="U" oldref="3">This function works per level. For instance, if one level of traces has already been activated to show the precedents (or dependents), then you would see the next dependency level by activating the <emph>Trace</emph> function again.</paragraph>
+<paragraph xml-lang="en-US" role="note" id="par_id3151112" l10n="U">This function works per level. For instance, if one level of traces has already been activated to show the precedents (or dependents), then you would see the next dependency level by activating the <emph>Trace</emph> function again.</paragraph>
 </body>
 </helpdocument>

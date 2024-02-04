@@ -33,14 +33,14 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150499">
 <bookmark_value>CreateUnoStruct function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3150499" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03131500.xhp" name="CreateUnoStruct Function [Runtime]">CreateUnoStruct Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3150713" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".">Creates an instance of a Uno structure type.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150499" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03131500.xhp" name="CreateUnoStruct Function [Runtime]">CreateUnoStruct Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150713" xml-lang="en-US" l10n="U"><ahelp hid=".">Creates an instance of a Uno structure type.</ahelp></paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3147226" xml-lang="en-US" l10n="U" oldref="3">Use the following structure for your statement:</paragraph>
-<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="4">Dim oStruct as new com.sun.star.beans.Property</paragraph>
-<paragraph role="heading" id="hd_id3156153" xml-lang="en-US" level="2" l10n="U" oldref="5">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3155341" xml-lang="en-US" l10n="U" oldref="6">oStruct = CreateUnoStruct( Uno type name )</paragraph>
-<paragraph role="heading" id="hd_id3145316" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3149762" xml-lang="en-US" l10n="U" oldref="8">oStruct = CreateUnoStruct( "com.sun.star.beans.Property" )</paragraph>
+<paragraph role="paragraph" id="par_id3147226" xml-lang="en-US" l10n="U">Use the following structure for your statement:</paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U">Dim oStruct as new com.sun.star.beans.Property</paragraph>
+<paragraph role="heading" id="hd_id3156153" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3155341" xml-lang="en-US" l10n="U">oStruct = CreateUnoStruct( Uno type name )</paragraph>
+<paragraph role="heading" id="hd_id3145316" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3149762" xml-lang="en-US" l10n="U">oStruct = CreateUnoStruct( "com.sun.star.beans.Property" )</paragraph>
 </body>
 </helpdocument>

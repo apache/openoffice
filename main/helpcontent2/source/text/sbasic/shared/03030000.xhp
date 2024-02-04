@@ -30,11 +30,11 @@
 </meta>
 <body>
 <section id="datumzeit">
-<paragraph id="hd_id3150502" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/sbasic/shared/03030000.xhp" name="Date and Time Functions">Date and Time Functions</link></paragraph>
-<paragraph role="paragraph" id="par_id3153255" l10n="U" xml-lang="en-US" oldref="2">Use the statements and functions described here to perform date and time calculations.</paragraph>
+<paragraph id="hd_id3150502" role="heading" level="1" l10n="U" xml-lang="en-US"><link href="text/sbasic/shared/03030000.xhp" name="Date and Time Functions">Date and Time Functions</link></paragraph>
+<paragraph role="paragraph" id="par_id3153255" l10n="U" xml-lang="en-US">Use the statements and functions described here to perform date and time calculations.</paragraph>
 </section>
-<paragraph l10n="U" role="paragraph" id="par_id3152363" xml-lang="en-US" oldref="3"><item type="productname">%PRODUCTNAME</item> Basic lets you calculate time or date differences by converting the time and date values to continuous numeric values. After the difference is calculated, special functions are used to reconvert the values to the standard time or date formats.</paragraph>
-<paragraph xml-lang="en-US" role="tip" id="par_id3151054" l10n="U" oldref="4">You can combine date and time values into a single floating-decimal number. Dates are converted to integers, and times to decimal values. <item type="productname">%PRODUCTNAME</item> Basic also supports the variable type Date, which can contain a time specification consisting of both a date and time.</paragraph>
+<paragraph l10n="U" role="paragraph" id="par_id3152363" xml-lang="en-US"><item type="productname">%PRODUCTNAME</item> Basic lets you calculate time or date differences by converting the time and date values to continuous numeric values. After the difference is calculated, special functions are used to reconvert the values to the standard time or date formats.</paragraph>
+<paragraph xml-lang="en-US" role="tip" id="par_id3151054" l10n="U">You can combine date and time values into a single floating-decimal number. Dates are converted to integers, and times to decimal values. <item type="productname">%PRODUCTNAME</item> Basic also supports the variable type Date, which can contain a time specification consisting of both a date and time.</paragraph>
 <embed href="text/sbasic/shared/03030100.xhp#datumswerte"/>
 <embed href="text/sbasic/shared/03030200.xhp#uhrzeiten"/>
 <embed href="text/sbasic/shared/03030300.xhp#ermitteln"/>
