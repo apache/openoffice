@@ -33,16 +33,15 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149346">
 <bookmark_value>IsObject function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3149346" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03102800.xhp" name="IsObject Function [Runtime]">IsObject Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3148538" xml-lang="en-US" l10n="U" oldref="2">Tests if an object variable is an OLE object. The function returns True if the variable is an OLE object, otherwise it returns False.</paragraph>
+<paragraph role="heading" id="hd_id3149346" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03102800.xhp" name="IsObject Function [Runtime]">IsObject Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148538" xml-lang="en-US" l10n="U">Tests if an object variable is an OLE object. The function returns True if the variable is an OLE object, otherwise it returns False.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3149234" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3154285" xml-lang="en-US" l10n="U" oldref="4">IsObject (ObjectVar)</paragraph>
-<paragraph role="heading" id="hd_id3148685" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U" oldref="6">Bool</paragraph>
-<paragraph role="heading" id="hd_id3148947" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="8">
-<emph>ObjectVar:</emph> Any variable that you want to test. If the Object variable contains an OLE object, the function returns True.</paragraph>
+<paragraph role="heading" id="hd_id3149234" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3154285" xml-lang="en-US" l10n="U">IsObject (ObjectVar)</paragraph>
+<paragraph role="heading" id="hd_id3148685" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U">Bool</paragraph>
+<paragraph role="heading" id="hd_id3148947" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U"><emph>ObjectVar:</emph> Any variable that you want to test. If the Object variable contains an OLE object, the function returns True.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
 </body>
