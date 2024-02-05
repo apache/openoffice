@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,26 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-
 #include <svx/svdobj.hxx>
-
 
 #include "view.hxx"
 #include "edtwin.hxx"
@@ -34,15 +30,9 @@
 #include "drawbase.hxx"
 #include "conarc.hxx"
 
-
-
 /*************************************************************************
-|*
-|* Konstruktor
-|*
+|* C'Tor
 \************************************************************************/
-
-
 
 ConstArc::ConstArc(SwWrtShell* pWrtShell, SwEditWin* pEditWin, SwView* pSwView)
 	: SwDrawBase(pWrtShell, pEditWin, pSwView),	nAnzButUp(0)
@@ -50,12 +40,8 @@ ConstArc::ConstArc(SwWrtShell* pWrtShell, SwEditWin* pEditWin, SwView* pSwView)
 }
 
 /*************************************************************************
-|*
 |* MouseButtonDown-event
-|*
 \************************************************************************/
-
-
 
 sal_Bool ConstArc::MouseButtonDown( const MouseEvent& rMEvt )
 {
@@ -64,26 +50,22 @@ sal_Bool ConstArc::MouseButtonDown( const MouseEvent& rMEvt )
 	if ((bReturn = SwDrawBase::MouseButtonDown(rMEvt)) == sal_True)
 	{
 		if (!nAnzButUp)
-            aStartPnt = m_pWin->PixelToLogic(rMEvt.GetPosPixel());
+			aStartPnt = m_pWin->PixelToLogic(rMEvt.GetPosPixel());
 	}
 	return (bReturn);
 }
 
 /*************************************************************************
-|*
 |* MouseButtonUp-event
-|*
 \************************************************************************/
-
-
 
 sal_Bool ConstArc::MouseButtonUp( const MouseEvent& rMEvt )
 {
 	sal_Bool bReturn = sal_False;
 
-    if ((m_pSh->IsDrawCreate() || m_pWin->IsDrawAction()) && rMEvt.IsLeft())
+	if ((m_pSh->IsDrawCreate() || m_pWin->IsDrawAction()) && rMEvt.IsLeft())
 	{
-        Point aPnt(m_pWin->PixelToLogic(rMEvt.GetPosPixel()));
+		Point aPnt(m_pWin->PixelToLogic(rMEvt.GetPosPixel()));
 		if (!nAnzButUp && aPnt == aStartPnt)
 		{
 			SwDrawBase::MouseButtonUp(rMEvt);
@@ -92,14 +74,14 @@ sal_Bool ConstArc::MouseButtonUp( const MouseEvent& rMEvt )
 		else
 		{	nAnzButUp++;
 
-			if (nAnzButUp == 3)		// Kreisbogenerzeugung beendet
+			if (nAnzButUp == 3) // Arc generation completed
 			{
 				SwDrawBase::MouseButtonUp(rMEvt);
 				nAnzButUp = 0;
 				bReturn = sal_True;
 			}
 			else
-                m_pSh->EndCreate(SDRCREATE_NEXTPOINT);
+				m_pSh->EndCreate(SDRCREATE_NEXTPOINT);
 		}
 	}
 /*	else if ( pView->IsCreateObj() && rMEvt.IsRight() )
@@ -112,28 +94,24 @@ sal_Bool ConstArc::MouseButtonUp( const MouseEvent& rMEvt )
 }
 
 /*************************************************************************
-|*
-|* Function aktivieren
-|*
+|* activate function
 \************************************************************************/
-
-
 
 void ConstArc::Activate(const sal_uInt16 nSlotId)
 {
 	switch (nSlotId)
 	{
 		case SID_DRAW_ARC:
-            m_pWin->SetSdrDrawMode(OBJ_CARC);
+			m_pWin->SetSdrDrawMode(OBJ_CARC);
 			break;
 		case SID_DRAW_PIE:
-            m_pWin->SetSdrDrawMode(OBJ_SECT);
+			m_pWin->SetSdrDrawMode(OBJ_SECT);
 			break;
 		case SID_DRAW_CIRCLECUT:
-            m_pWin->SetSdrDrawMode(OBJ_CCUT);
+			m_pWin->SetSdrDrawMode(OBJ_CCUT);
 			break;
 		default:
-            m_pWin->SetSdrDrawMode(OBJ_NONE);
+			m_pWin->SetSdrDrawMode(OBJ_NONE);
 			break;
 	}
 
@@ -141,9 +119,7 @@ void ConstArc::Activate(const sal_uInt16 nSlotId)
 }
 
 /*************************************************************************
-|*
-|* Funktion deaktivieren
-|*
+|* deactivate function
 \************************************************************************/
 
 void ConstArc::Deactivate()
@@ -153,5 +129,4 @@ void ConstArc::Deactivate()
 	SwDrawBase::Deactivate();
 }
 
-
-
+/* vim: set noet sw=4 ts=4: */

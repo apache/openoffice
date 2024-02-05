@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include <sfx2/bindings.hxx>
 #include <svx/htmlmode.hxx>
@@ -62,9 +59,7 @@
 #include <math.h>
 
 /*************************************************************************
-|*
 |* C'Tor
-|*
 \************************************************************************/
 ConstCustomShape::ConstCustomShape( SwWrtShell* pWrtShell, SwEditWin* pEditWin, SwView* pSwView, SfxRequest& rReq )
 	: SwDrawBase( pWrtShell, pEditWin, pSwView )
@@ -78,26 +73,24 @@ ConstCustomShape::ConstCustomShape( SwWrtShell* pWrtShell, SwEditWin* pEditWin, 
 
 rtl::OUString ConstCustomShape::GetShapeType() const
 {
-    return aCustomShape;
+	return aCustomShape;
 }
 
-//static
+// static
 rtl::OUString ConstCustomShape::GetShapeTypeFromRequest( SfxRequest& rReq )
 {
-    rtl::OUString aRet;
-    const SfxItemSet* pArgs = rReq.GetArgs();
+	rtl::OUString aRet;
+	const SfxItemSet* pArgs = rReq.GetArgs();
 	if ( pArgs )
 	{
 		const SfxStringItem& rItm = (const SfxStringItem&)pArgs->Get( rReq.GetSlot() );
 		aRet = rItm.GetValue();
 	}
-    return aRet;
+	return aRet;
 }
 
 /*************************************************************************
-|*
 |* MouseButtonDown-event
-|*
 \************************************************************************/
 
 sal_Bool ConstCustomShape::MouseButtonDown(const MouseEvent& rMEvt)
@@ -105,7 +98,7 @@ sal_Bool ConstCustomShape::MouseButtonDown(const MouseEvent& rMEvt)
 	sal_Bool bReturn = SwDrawBase::MouseButtonDown(rMEvt);
 	if ( bReturn )
 	{
-        SdrView *pSdrView = m_pSh->GetDrawView();
+		SdrView *pSdrView = m_pSh->GetDrawView();
 		if ( pSdrView )
 		{
 			SdrObject* pObj = pSdrView->GetCreateObj();
@@ -120,7 +113,7 @@ sal_Bool ConstCustomShape::MouseButtonDown(const MouseEvent& rMEvt)
 					bForceNoFillStyle = sal_True;
 				}
 
-                SfxItemSet aAttr( m_pView->GetPool() );
+				SfxItemSet aAttr( m_pView->GetPool() );
 				if ( bForceNoFillStyle )
 					aAttr.Put( XFillStyleItem( XFILL_NONE ) );
 				pObj->SetMergedItemSet(aAttr);
@@ -131,9 +124,7 @@ sal_Bool ConstCustomShape::MouseButtonDown(const MouseEvent& rMEvt)
 }
 
 /*************************************************************************
-|*
 |* MouseButtonUp-event
-|*
 \************************************************************************/
 
 sal_Bool ConstCustomShape::MouseButtonUp(const MouseEvent& rMEvt)
@@ -142,22 +133,18 @@ sal_Bool ConstCustomShape::MouseButtonUp(const MouseEvent& rMEvt)
 }
 
 /*************************************************************************
-|*
 |* activate function
-|*
 \************************************************************************/
 
 void ConstCustomShape::Activate(const sal_uInt16 nSlotId)
 {
-    m_pWin->SetSdrDrawMode( OBJ_CUSTOMSHAPE );
+	m_pWin->SetSdrDrawMode( OBJ_CUSTOMSHAPE );
 
 	SwDrawBase::Activate(nSlotId);
 }
 
 /*************************************************************************
-|*
 |* applying attributes
-|*
 \************************************************************************/
 
 void ConstCustomShape::SetAttributes( SdrObject* pObj )
@@ -183,7 +170,7 @@ void ConstCustomShape::SetAttributes( SdrObject* pObj )
 						if( pSourceObj )
 						{
 							const SfxItemSet& rSource = pSourceObj->GetMergedItemSet();
-							SfxItemSet aDest( pObj->GetModel()->GetItemPool(), 				// ranges from SdrAttrObj
+							SfxItemSet aDest( pObj->GetModel()->GetItemPool(), // ranges from SdrAttrObj
 							SDRATTR_START, SDRATTR_SHADOW_LAST,
 							SDRATTR_MISC_FIRST, SDRATTR_MISC_LAST,
 							SDRATTR_TEXTDIRECTION, SDRATTR_TEXTDIRECTION,
@@ -215,7 +202,7 @@ void ConstCustomShape::SetAttributes( SdrObject* pObj )
 	}
 	if ( !bAttributesAppliedFromGallery )
 	{
-        pObj->SetMergedItem( SvxAdjustItem( SVX_ADJUST_CENTER, RES_PARATR_ADJUST ) );
+		pObj->SetMergedItem( SvxAdjustItem( SVX_ADJUST_CENTER, RES_PARATR_ADJUST ) );
 		pObj->SetMergedItem( SdrTextVertAdjustItem( SDRTEXTVERTADJUST_CENTER ) );
 		pObj->SetMergedItem( SdrTextHorzAdjustItem( SDRTEXTHORZADJUST_BLOCK ) );
 		pObj->SetMergedItem( SdrTextAutoGrowHeightItem( sal_False ) );
@@ -226,16 +213,16 @@ void ConstCustomShape::SetAttributes( SdrObject* pObj )
 void ConstCustomShape::CreateDefaultObject()
 {
 	SwDrawBase::CreateDefaultObject();
-    SdrView *pSdrView = m_pSh->GetDrawView();
+	SdrView *pSdrView = m_pSh->GetDrawView();
 	if ( pSdrView )
 	{
-        const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
-        if ( rMarkList.GetMarkCount() == 1 )
-        {
+		const SdrMarkList& rMarkList = pSdrView->GetMarkedObjectList();
+		if ( rMarkList.GetMarkCount() == 1 )
+		{
 			SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 			if ( pObj && pObj->ISA( SdrObjCustomShape ) )
 				SetAttributes( pObj );
-        }
+		}
 	}
 }
 
@@ -245,4 +232,4 @@ bool ConstCustomShape::doConstructOrthogonal() const
 	return SdrObjCustomShape::doConstructOrthogonal(aCustomShape);
 }
 
-// eof
+/* vim: set noet sw=4 ts=4: */
