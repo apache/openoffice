@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include <sfx2/sfx.hrc>
 #include "doc.hrc"
 #define __RSC
@@ -302,7 +300,7 @@ String STR_TEMPL_MOVED
 };
 String STR_TEMPL_RESET
 {
-	Text [ en-US ] = "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?" ;
+	Text [ en-US ] = "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened?" ;
 };
 String STR_AUTOMATICVERSION
 {
