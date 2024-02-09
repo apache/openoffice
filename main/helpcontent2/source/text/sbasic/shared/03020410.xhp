@@ -33,20 +33,19 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153360">
 <bookmark_value>Kill statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153360" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020410.xhp" name="Kill Statement [Runtime]">Kill Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="U" oldref="2">Deletes a file from a disk.</paragraph>
+<paragraph role="heading" id="hd_id3153360" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03020410.xhp" name="Kill Statement [Runtime]">Kill Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="U">Deletes a file from a disk.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3150767" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="4">Kill File As String</paragraph>
-<paragraph role="heading" id="hd_id3153194" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3150440" xml-lang="en-US" l10n="U" oldref="6">
-<emph>File:</emph> Any string expression that contains an unambiguous file specification. You can also use <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
+<paragraph role="heading" id="hd_id3150767" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="code" id="par_id3154685" xml-lang="en-US" l10n="U">Kill File As String</paragraph>
+<paragraph role="heading" id="hd_id3153194" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150440" xml-lang="en-US" l10n="U"><emph>File:</emph> Any string expression that contains an unambiguous file specification. You can also use <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
 <embed href="text/sbasic/shared/00000003.xhp#err76"/>
-<paragraph role="heading" id="hd_id3148645" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
-<paragraph role="code" id="par_id3154320" xml-lang="en-US" l10n="U" oldref="8">sub ExampleKill</paragraph>
-<paragraph role="code" id="par_id3163710" xml-lang="en-US" l10n="U" oldref="9">Kill "C:\datafile.dat" REM File must be created in advance</paragraph>
-<paragraph role="code" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="10">end sub</paragraph>
+<paragraph role="heading" id="hd_id3148645" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="code" id="par_id3154320" xml-lang="en-US" l10n="U">sub ExampleKill</paragraph>
+<paragraph role="code" id="par_id3163710" xml-lang="en-US" l10n="U">Kill "C:\datafile.dat" REM File must be created in advance</paragraph>
+<paragraph role="code" id="par_id3145749" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

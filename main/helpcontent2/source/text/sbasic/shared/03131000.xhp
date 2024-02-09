@@ -33,18 +33,18 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3157898">
 <bookmark_value>GetSolarVersion function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3157898" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03131000.xhp" name="GetSolarVersion Function [Runtime]">GetSolarVersion Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3152801" xml-lang="en-US" l10n="U" oldref="2">Returns the internal number of the current $[officename] version.</paragraph>
+<paragraph role="heading" id="hd_id3157898" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03131000.xhp" name="GetSolarVersion Function [Runtime]">GetSolarVersion Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3152801" xml-lang="en-US" l10n="U">Returns the internal number of the current $[officename] version.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3155388" xml-lang="en-US" l10n="U" oldref="4">s = GetSolarVersion</paragraph>
-<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3148685" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
-<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="8">Sub ExampleGetSolarVersion</paragraph>
-<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U" oldref="9">Dim sSep As String</paragraph>
-<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="10">sSep = GetSolarVersion</paragraph>
-<paragraph role="paragraph" id="par_id3148947" xml-lang="en-US" l10n="U" oldref="11">MsgBox sSep,64,"Version number of the solar technology"</paragraph>
-<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U" oldref="12">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3155388" xml-lang="en-US" l10n="U">s = GetSolarVersion</paragraph>
+<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3148685" xml-lang="en-US" l10n="U">String</paragraph>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U">Sub ExampleGetSolarVersion</paragraph>
+<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U">Dim sSep As String</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U">sSep = GetSolarVersion</paragraph>
+<paragraph role="paragraph" id="par_id3148947" xml-lang="en-US" l10n="U">MsgBox sSep,64,"Version number of the solar technology"</paragraph>
+<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>
