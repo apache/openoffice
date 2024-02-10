@@ -306,13 +306,11 @@ $(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
 	codemaker \
 	commoncpp \
 	commonjava \
-	cosv \
 	ooopathutils \
 	salcpprt \
 	sample \
 	sldshw_s \
 	vclmain \
-	udm \
 	ulingu \
 ))
 
