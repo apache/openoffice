@@ -33,18 +33,17 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3148663">
 <bookmark_value>Loc function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3148663" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020302.xhp" name="Loc Function [Runtime]">Loc Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="2">Returns the current position in an open file.</paragraph>
+<paragraph role="heading" id="hd_id3148663" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03020302.xhp" name="Loc Function [Runtime]">Loc Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U">Returns the current position in an open file.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3156422" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3150768" xml-lang="en-US" l10n="U" oldref="4">Loc(FileNumber)</paragraph>
-<paragraph role="heading" id="hd_id3150440" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3152578" xml-lang="en-US" l10n="U" oldref="6">Long</paragraph>
-<paragraph role="heading" id="hd_id3152462" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="8">
-<emph>FileNumber:</emph> Any numeric expression that contains the file number that is set by the Open statement for the respective file.</paragraph>
-<paragraph role="paragraph" id="par_id3154320" xml-lang="en-US" l10n="U" oldref="9">If the Loc function is used for an open random access file, it returns the number of the last record that was last read or written.</paragraph>
-<paragraph role="paragraph" id="par_id3151115" xml-lang="en-US" l10n="U" oldref="10">For a sequential file, the Loc function returns the position in a file divided by 128. For binary files, the position of the last read or written byte is returned.</paragraph>
+<paragraph role="heading" id="hd_id3156422" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="code" id="par_id3150768" xml-lang="en-US" l10n="U">Loc(FileNumber)</paragraph>
+<paragraph role="heading" id="hd_id3150440" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3152578" xml-lang="en-US" l10n="U">Long</paragraph>
+<paragraph role="heading" id="hd_id3152462" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U"><emph>FileNumber:</emph> Any numeric expression that contains the file number that is set by the Open statement for the respective file.</paragraph>
+<paragraph role="paragraph" id="par_id3154320" xml-lang="en-US" l10n="U">If the Loc function is used for an open random access file, it returns the number of the last record that was last read or written.</paragraph>
+<paragraph role="paragraph" id="par_id3151115" xml-lang="en-US" l10n="U">For a sequential file, the Loc function returns the position in a file divided by 128. For binary files, the position of the last read or written byte is returned.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
 <embed href="text/sbasic/shared/00000003.xhp#err52"/>
