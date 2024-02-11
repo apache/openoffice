@@ -33,23 +33,20 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3147226">
 <bookmark_value>Sub statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3147226" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090409.xhp" name="Sub Statement [Runtime]">Sub Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3153311" xml-lang="en-US" l10n="U" oldref="2">Defines a subroutine.</paragraph>
+<paragraph role="heading" id="hd_id3147226" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03090409.xhp" name="Sub Statement [Runtime]">Sub Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153311" xml-lang="en-US" l10n="U">Defines a subroutine.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3149416" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax</paragraph>
+<paragraph role="heading" id="hd_id3149416" xml-lang="en-US" level="2" l10n="U">Syntax</paragraph>
 <paragraph role="code" id="par_idN105E7" xml-lang="en-US" l10n="NEW">Sub Name[(VarName1 [As Type][, VarName2 [As Type][,...]])]</paragraph>
-<paragraph role="code" id="par_id3147530" xml-lang="en-US" l10n="U" oldref="5">statement block</paragraph>
-<paragraph role="code" id="par_id3146795" xml-lang="en-US" l10n="U" oldref="8">End Sub</paragraph>
-<paragraph role="heading" id="hd_id3153525" xml-lang="en-US" level="2" l10n="U" oldref="9">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U" oldref="10">
-<emph>Name:</emph> Name of the subroutine.</paragraph>
-<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="11">
-<emph>VarName:</emph> Parameter that you want to pass to the subroutine.</paragraph>
-<paragraph role="paragraph" id="par_id3154908" xml-lang="en-US" l10n="U" oldref="12">
-<emph>Type:</emph> Type-declaration key word.</paragraph>
-<paragraph role="heading" id="hd_id3153770" xml-lang="en-US" level="2" l10n="U" oldref="16">Example:</paragraph>
-<paragraph role="code" id="par_id3151113" xml-lang="en-US" l10n="U" oldref="17">Sub Example</paragraph>
+<paragraph role="code" id="par_id3147530" xml-lang="en-US" l10n="U">statement block</paragraph>
+<paragraph role="code" id="par_id3146795" xml-lang="en-US" l10n="U">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3153525" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U"><emph>Name:</emph> Name of the subroutine.</paragraph>
+<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U"><emph>VarName:</emph> Parameter that you want to pass to the subroutine.</paragraph>
+<paragraph role="paragraph" id="par_id3154908" xml-lang="en-US" l10n="U"><emph>Type:</emph> Type-declaration key word.</paragraph>
+<paragraph role="heading" id="hd_id3153770" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="code" id="par_id3151113" xml-lang="en-US" l10n="U">Sub Example</paragraph>
 <paragraph role="code" id="par_idN1063F" xml-lang="en-US" l10n="NEW">REM some statements</paragraph>
-<paragraph role="code" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="19">end sub</paragraph>
+<paragraph role="code" id="par_id3154319" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>
