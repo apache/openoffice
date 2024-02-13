@@ -438,6 +438,36 @@ Any SAL_CALL TransferableHelper::getTransferData( const DataFlavor& rFlavor ) th
 				    }
 			    }
             }
+            else if( SotExchange::GetFormatDataFlavor( SOT_FORMATSTR_ID_SVG, aSubstFlavor ) &&
+                     TransferableDataHelper::IsEqual( aSubstFlavor, rFlavor ) &&
+                     SotExchange::GetFormatDataFlavor( FORMAT_GDIMETAFILE, aSubstFlavor ) )
+            {
+                GetData( aSubstFlavor );
+
+                if( maAny.hasValue() )
+                {
+                    Sequence< sal_Int8 > aSeq;
+
+                    if( maAny >>= aSeq )
+                    {
+                        SvMemoryStream* pSrcStm = new SvMemoryStream( (char*) aSeq.getConstArray(), aSeq.getLength(), STREAM_WRITE | STREAM_TRUNC );
+                        GDIMetaFile     aMtf;
+
+                        *pSrcStm >> aMtf;
+                        delete pSrcStm;
+
+                        Graphic         aGraphic( aMtf );
+                        SvMemoryStream  aDstStm( 65535, 65535 );
+
+                        if( GraphicConverter::Export( aDstStm, aGraphic, CVT_SVG ) == ERRCODE_NONE )
+                        {
+                            maAny <<= ( aSeq = Sequence< sal_Int8 >( reinterpret_cast< const sal_Int8* >( aDstStm.GetData() ),
+                                                                     aDstStm.Seek( STREAM_SEEK_TO_END ) ) );
+                            bDone = sal_True;
+                        }
+                    }
+                }
+            }
 
             // reset Any if substitute doesn't work
             if( !bDone && maAny.hasValue() )
@@ -705,6 +735,7 @@ void TransferableHelper::AddFormat( const DataFlavor& rFlavor )
 		{
 			AddFormat( SOT_FORMATSTR_ID_EMF );
 			AddFormat( SOT_FORMATSTR_ID_WMF );
+			AddFormat( SOT_FORMATSTR_ID_SVG );
 		}
     }
 }
@@ -1476,7 +1507,7 @@ void TransferableDataHelper::FillDataFlavorExVector( const Sequence< DataFlavor 
 				    rDataFlavorExVector.push_back( aFlavorEx );
 			    }
 		    }
-            else if( SOT_FORMATSTR_ID_WMF == aFlavorEx.mnSotId || SOT_FORMATSTR_ID_EMF == aFlavorEx.mnSotId )
+            else if( SOT_FORMATSTR_ID_WMF == aFlavorEx.mnSotId || SOT_FORMATSTR_ID_EMF == aFlavorEx.mnSotId || SOT_FORMATSTR_ID_SVG == aFlavorEx.mnSotId )
 		    {
 			    if( SotExchange::GetFormatDataFlavor( SOT_FORMAT_GDIMETAFILE, aFlavorEx ) )
 			    {

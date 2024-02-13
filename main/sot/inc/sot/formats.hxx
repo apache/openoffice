@@ -183,7 +183,8 @@
 #define SOT_FORMATSTR_ID_HC_GDIMETAFILE         ((sal_uLong)140)
 #define SOT_FORMATSTR_ID_PNG                    ((sal_uLong)141)
 #define SOT_FORMATSTR_ID_MATHML                 ((sal_uLong)142)
-#define SOT_FORMATSTR_ID_USER_END               SOT_FORMATSTR_ID_MATHML
+#define SOT_FORMATSTR_ID_SVG                    ((sal_uLong)143)
+#define SOT_FORMATSTR_ID_USER_END               SOT_FORMATSTR_ID_SVG
 
 #endif // _SOT_FORMATS_HXX
 
