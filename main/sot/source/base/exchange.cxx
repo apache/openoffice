@@ -209,6 +209,7 @@ namespace
             /*140 SOT_FORMAT_GDIMETAFILE*/					{ "application/x-openoffice-highcontrast-gdimetafile;windows_formatname=\"GDIMetaFile\"", "High Contrast GDIMetaFile", &::getCppuType( (const Sequence< sal_Int8 >*) 0 ) },
             /*141 SOT_FORMATSTR_ID_PNG*/                    { "image/png", "PNG Bitmap", &::getCppuType( (const Sequence< sal_Int8 >*) 0 ) },
             /*142 SOT_FORMATSTR_ID_MATHML*/                 { "application/mathml+xml", "MathML", &::getCppuType( (const Sequence< sal_Int8 >*) 0 ) },
+            /*143 SOT_FORMATSTR_ID_SVG*/                    { "image/svg+xml;windows_formatname=\"image/svg+xml\"", "SVG", &::getCppuType( (const Sequence< sal_Int8 >*) 0 ) },
             };
 	    return &aInstance[0];
         }
