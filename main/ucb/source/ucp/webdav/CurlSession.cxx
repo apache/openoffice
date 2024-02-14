@@ -113,6 +113,17 @@ CurlSession::CurlSession(
     curl_easy_setopt( m_pCurl, CURLOPT_SSL_CTX_FUNCTION, Curl_SSLContextCallback );
     curl_easy_setopt( m_pCurl, CURLOPT_SSL_CTX_DATA, this );
 
+    // If a certificate's commmon name / alt name doesn't match the hostname we are
+    // connecting to, Curl will refuse to connect. Disable this, as we do that check
+    // ourselves, and give the user the option of connecting anyway.
+    //
+    // Note also, how "man CURLOPT_SSL_VERIFYHOST" tells us that setting 0 here
+    // disables SNI, which is bad news, some servers require SNI. However reading Curl
+    // 8.6.0's Curl_ssl_peer_init() in file lib/vtls/vtls.c shows that SNI is sent
+    // regardless, as long as we are connecting to a domain name, NOT an IP address.
+    // Tests confirm this. For OpenSSL anyway - other Curl crypto providers are stricter...
+    curl_easy_setopt( m_pCurl, CURLOPT_SSL_VERIFYHOST, 0 );
+
     if ( m_aLogger.getLogLevel() == LogLevel::FINEST )
     {
         curl_easy_setopt( m_pCurl, CURLOPT_DEBUGFUNCTION, Curl_DebugCallback );

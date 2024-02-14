@@ -35,13 +35,13 @@
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:InsertObjectFloatingFrame" id="bm_id9760166" localize="false"/><!-- HID added by script -->
 <bookmark xml-lang="en-US" branch="hid/.uno:InsertObjectFloatingFrame" id="bm_id3153136" localize="false"/>
-<paragraph role="heading" id="hd_id3149783" xml-lang="en-US" level="1" l10n="U" oldref="1">Insert Floating Frame</paragraph>
-<paragraph role="paragraph" id="par_id3148410" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="frameeinfuegentext"><ahelp hid=".">Inserts a floating frame into the current document. Floating frames are used in HTML documents to display the contents of another file.</ahelp>
+<paragraph role="heading" id="hd_id3149783" xml-lang="en-US" level="1" l10n="U">Insert Floating Frame</paragraph>
+<paragraph role="paragraph" id="par_id3148410" xml-lang="en-US" l10n="CHG"><variable id="frameeinfuegentext"><ahelp hid=".">Inserts a floating frame into the current document. Floating frames are used in HTML documents to display the contents of another file.</ahelp>
 </variable></paragraph>
 <section id="howtoget">
 <embed href="text/shared/00/00000404.xhp#eiobframe"/>
 </section>
-<paragraph role="note" id="par_id3151100" xml-lang="en-US" l10n="U" oldref="6">If you want to create HTML pages that use floating frames, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML compatibility</emph>, and then select the "MS Internet Explorer" option. The floating frame is bounded by &lt;IFRAME&gt; and &lt;/IFRAME&gt; tags.</paragraph>
+<paragraph role="note" id="par_id3151100" xml-lang="en-US" l10n="U">If you want to create HTML pages that use floating frames, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML compatibility</emph>, and then select the "MS Internet Explorer" option. The floating frame is bounded by &lt;IFRAME&gt; and &lt;/IFRAME&gt; tags.</paragraph>
 <section id="relatedtopics">
 <paragraph role="paragraph" id="par_id3151330" xml-lang="en-US" l10n="C"><link href="text/shared/01/02210101.xhp" name="Floating frame properties">Floating frame properties</link></paragraph>
 </section>

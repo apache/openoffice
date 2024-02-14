@@ -33,17 +33,16 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3159413">
 <bookmark_value>Error function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3159413" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03050300.xhp" name="Error Function [Runtime]">Error Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3148663" xml-lang="en-US" l10n="U" oldref="2">Returns the error message that corresponds to a given error code.</paragraph>
+<paragraph role="heading" id="hd_id3159413" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03050300.xhp" name="Error Function [Runtime]">Error Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148663" xml-lang="en-US" l10n="U">Returns the error message that corresponds to a given error code.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3153379" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3154366" xml-lang="en-US" l10n="U" oldref="4">Error (Expression)</paragraph>
-<paragraph role="heading" id="hd_id3145173" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3154125" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
-<paragraph role="heading" id="hd_id3150869" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Expression:</emph> Any numeric expression that contains the error code of the error message that you want to return.</paragraph>
-<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U" oldref="9">If no parameters are passed, the Error function returns the error message of the most recent error that occurred during program execution.</paragraph>
+<paragraph role="heading" id="hd_id3153379" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3154366" xml-lang="en-US" l10n="U">Error (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3145173" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3154125" xml-lang="en-US" l10n="U">String</paragraph>
+<paragraph role="heading" id="hd_id3150869" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U"><emph>Expression:</emph> Any numeric expression that contains the error code of the error message that you want to return.</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U">If no parameters are passed, the Error function returns the error message of the most recent error that occurred during program execution.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#allerrors"/><comment>fixed i60953</comment>
 </body>

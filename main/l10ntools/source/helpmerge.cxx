@@ -303,6 +303,11 @@ bool HelpParser::Merge( const ByteString &rSDFFile, const ByteString &rDestinati
     DirEntry aFile( sXmlFile );
  
 	XMLFile* xmlfile = ( aParser.Execute( aFile.GetFull() , sOUHelpFile, new XMLFile( '0' ) ) );
+    if (xmlfile == NULL) {
+        printf("%s\n",ByteString(aParser.GetError().sMessage,
+                                 RTL_TEXTENCODING_ASCII_US).GetBuffer());
+        exit(-1);
+    }
 	printf("Dest file %s\n",rDestinationFile.GetBuffer());
 	hasNoError = MergeSingleFile( xmlfile , aMergeDataFile , sLanguage , rDestinationFile );
 	delete xmlfile;
@@ -388,7 +393,6 @@ bool HelpParser::Merge(
     DirEntry aFile( sXmlFile );
 
 	XMLFile* xmlfile = ( aParser.Execute( aFile.GetFull() , sOUHelpFile, new XMLFile( '0' ) ) );
-	xmlfile->Extract();
 
 	if( xmlfile == NULL)
 	{
@@ -396,6 +400,7 @@ bool HelpParser::Merge(
 		exit(-1);
 		//return false;
 	}
+	xmlfile->Extract();
 
 
     ByteString sCur;

@@ -33,16 +33,16 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153311">
 <bookmark_value>Public statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03103400.xhp" name="Public Statement [Runtime]">Public Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="2">Dimensions a variable or an array at the module level (that is, not within a subroutine or function), so that the variable and the array are valid in all libraries and modules.</paragraph>
+<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03103400.xhp" name="Public Statement [Runtime]">Public Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U">Dimensions a variable or an array at the module level (that is, not within a subroutine or function), so that the variable and the array are valid in all libraries and modules.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3150772" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3155341" xml-lang="en-US" l10n="U" oldref="4">Public VarName[(start To end)] [As VarType][, VarName2[(start To end)] [As VarType][,...]]</paragraph>
-<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U" oldref="5">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U" oldref="6">Public iPublicVar As Integer</paragraph>
-<paragraph role="paragraph" id="par_id3153896" xml-lang="en-US" l10n="U" oldref="8">Sub ExamplePublic</paragraph>
-<paragraph role="paragraph" id="par_id3149656" xml-lang="en-US" l10n="U" oldref="9">iPublicVar = iPublicVar + 1</paragraph>
-<paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="U" oldref="10">MsgBox iPublicVar</paragraph>
-<paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U" oldref="11">End sub</paragraph>
+<paragraph role="heading" id="hd_id3150772" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3155341" xml-lang="en-US" l10n="U">Public VarName[(start To end)] [As VarType][, VarName2[(start To end)] [As VarType][,...]]</paragraph>
+<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3156024" xml-lang="en-US" l10n="U">Public iPublicVar As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3153896" xml-lang="en-US" l10n="U">Sub ExamplePublic</paragraph>
+<paragraph role="paragraph" id="par_id3149656" xml-lang="en-US" l10n="U">iPublicVar = iPublicVar + 1</paragraph>
+<paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="U">MsgBox iPublicVar</paragraph>
+<paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U">End sub</paragraph>
 </body>
 </helpdocument>
