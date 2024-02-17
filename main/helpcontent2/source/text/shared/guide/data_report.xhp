@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,30 +9,28 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidedata_reportxml" indexer="include" status="PUBLISH">
-<title id="tit" xml-lang="en-US">Using and Editing Database Reports </title>
+<title id="tit" xml-lang="en-US">Using and Editing Database Reports</title>
 <filename>/text/shared/guide/data_report.xhp</filename>
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147834"><bookmark_value>database reports</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147834">
+<bookmark_value>database reports</bookmark_value>
 <bookmark_value>data sources;reports</bookmark_value>
 <bookmark_value>reports;opening and editing</bookmark_value>
 <bookmark_value>editing;reports</bookmark_value>
@@ -65,7 +61,7 @@
 <paragraph role="paragraph" id="par_id7510910" xml-lang="en-US" l10n="NEW">Right-click the name of a report in the database file window, then choose Edit.</paragraph>
 </listitem>
 </list>
-<paragraph role="paragraph" id="par_id8138065" xml-lang="en-US" l10n="NEW">The Report Builder window opens with the report's information loaded. </paragraph>
+<paragraph role="paragraph" id="par_id8138065" xml-lang="en-US" l10n="NEW">The Report Builder window opens with the report's information loaded.</paragraph>
 <paragraph role="paragraph" id="par_id5086825" xml-lang="en-US" l10n="NEW">Use the toolbars and menu commands and drag-and-drop to edit the report as stated in the <link href="text/shared/explorer/database/rep_main.xhp">Report Builder</link> guide.</paragraph>
 <paragraph role="paragraph" id="par_id4747154" xml-lang="en-US" l10n="NEW">Execute the report to see the resulting report document.</paragraph>
 <paragraph role="heading" id="hd_id3153104" xml-lang="en-US" level="2" l10n="CHG" oldref="19">Editing a Report Created by the Report Wizard</paragraph>

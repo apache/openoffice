@@ -28,9 +28,11 @@ $(eval $(call gb_Executable_set_include,autodoc,\
 	-I$(SRCDIR)/autodoc/inc/ \
 	-I$(SRCDIR)/autodoc/source/inc/ \
 	-I$(SRCDIR)/autodoc/source/ary/inc/ \
+	-I$(SRCDIR)/autodoc/source/cosv/inc/ \
 	-I$(SRCDIR)/autodoc/source/display/inc/ \
 	-I$(SRCDIR)/autodoc/source/parser/inc/ \
 	-I$(SRCDIR)/autodoc/source/parser_i/inc/ \
+	-I$(SRCDIR)/autodoc/source/udm/inc/ \
 ))
 
 #$(eval $(call gb_Executable_add_defs,autodoc,\
@@ -40,11 +42,6 @@ $(eval $(call gb_Executable_set_include,autodoc,\
 $(eval $(call gb_Executable_add_linked_libs,autodoc,\
 	stl \
     $(gb_STDLIBS) \
-))
-
-$(eval $(call gb_Executable_add_linked_static_libs,autodoc,\
-	cosv \
-	udm \
 ))
 
 # See <http://porting.openoffice.org/servlets/ReadMsg?list=mac&msgNo=6911>
@@ -139,6 +136,22 @@ $(eval $(call gb_Executable_add_exception_objects,autodoc,\
 	autodoc/source/ary_i/kernel/ci_atag2 \
 	autodoc/source/ary_i/kernel/ci_text2 \
 	autodoc/source/ary_i/kernel/d_token \
+	autodoc/source/cosv/service/comdline \
+	autodoc/source/cosv/service/comfunc \
+	autodoc/source/cosv/service/csv_ostream \
+	autodoc/source/cosv/service/datetime \
+	autodoc/source/cosv/service/std_outp \
+	autodoc/source/cosv/storage/dirchain \
+	autodoc/source/cosv/storage/file \
+	autodoc/source/cosv/storage/mbstream \
+	autodoc/source/cosv/storage/persist \
+	autodoc/source/cosv/storage/ploc \
+	autodoc/source/cosv/storage/ploc_dir \
+	autodoc/source/cosv/storage/plocroot \
+	autodoc/source/cosv/strings/str_types \
+	autodoc/source/cosv/strings/streamstr \
+	autodoc/source/cosv/strings/string \
+	autodoc/source/cosv/comphelp/badcast \
 	autodoc/source/display/html/aryattrs \
 	autodoc/source/display/html/cfrstd \
 	autodoc/source/display/html/chd_udk2 \
@@ -293,6 +306,8 @@ $(eval $(call gb_Executable_add_exception_objects,autodoc,\
 	autodoc/source/parser_i/tokens/x_parse2 \
 	autodoc/source/tools/filecoll \
 	autodoc/source/tools/tkpchars \
+        autodoc/source/udm/html/htmlitem \
+        autodoc/source/udm/xml/xmlitem \
 	autodoc/source/exes/adc_uni/adc_cl \
 	autodoc/source/exes/adc_uni/adc_cmd_parse \
 	autodoc/source/exes/adc_uni/adc_cmds \

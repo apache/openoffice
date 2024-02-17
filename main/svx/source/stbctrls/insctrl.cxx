@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ SFX_IMPL_STATUSBAR_CONTROL(SvxInsertStatusBarControl, SfxBoolItem);
 // class SvxInsertStatusBarControl ---------------------------------------
 
 SvxInsertStatusBarControl::SvxInsertStatusBarControl( sal_uInt16 _nSlotId,
-                                                      sal_uInt16 _nId,
+													  sal_uInt16 _nId,
 													  StatusBar& rStb ) :
 
 	SfxStatusBarControl( _nSlotId, _nId, rStb ),
@@ -85,14 +85,14 @@ void SvxInsertStatusBarControl::Click()
 		return;
 	bInsert = !bInsert;
 	SfxBoolItem aIns( GetSlotId(), bInsert );
-    
-    ::com::sun::star::uno::Any a;
-    ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
-    aArgs[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "InsertMode" ));
-    aIns.QueryValue( a );
-    aArgs[0].Value = a;
-    
-    execute( aArgs );
+
+	::com::sun::star::uno::Any a;
+	::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
+	aArgs[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "InsertMode" ));
+	aIns.QueryValue( a );
+	aArgs[0].Value = a;
+
+	execute( aArgs );
 }
 
 // -----------------------------------------------------------------------
@@ -115,8 +115,8 @@ void SvxInsertStatusBarControl::DrawItemText_Impl()
 
 sal_uIntPtr SvxInsertStatusBarControl::GetDefItemWidth(const StatusBar& rStb)
 {
-	long nWidth1 =  rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_OVERWRITE_TEXT));
-	long nWidth2 =  rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_INSERT_TEXT));
+	long nWidth1 = rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_OVERWRITE_TEXT));
+	long nWidth2 = rStb.GetTextWidth(SVX_RESSTR(RID_SVXSTR_INSERT_TEXT));
 
 	if(nWidth1<nWidth2)
 		nWidth1=nWidth2;
@@ -124,4 +124,4 @@ sal_uIntPtr SvxInsertStatusBarControl::GetDefItemWidth(const StatusBar& rStb)
 	return nWidth1+PAINT_OFFSET;
 }
 
-
+/* vim: set noet sw=4 ts=4: */

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,37 +9,36 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
+<helpdocument version="1.0">
 <meta>
-      <topic id="textsharedoptionen01041000xml" indexer="include">
-         <title xml-lang="en-US" id="tit">Compatibility</title>
-         <filename>/text/shared/optionen/01041000.xhp</filename>
-      </topic>
-   </meta>
-   <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3577990"><bookmark_value>Word documents;compatibility</bookmark_value>
-      <bookmark_value>importing;compatibility settings for text import</bookmark_value>
-      <bookmark_value>options;compatibility (Writer)</bookmark_value>
-      <bookmark_value>compatibility settings for MS Word import</bookmark_value>
-      <bookmark_value>Microsoft Office;importing Word documents</bookmark_value>
-      <bookmark_value>layout;importing Word documents</bookmark_value>
-      <bookmark_value>formatting;printer metrics (Writer)</bookmark_value>
-      <bookmark_value>metrics;document formatting (Writer)</bookmark_value>
-      <bookmark_value>printer metrics for document formatting (Writer)</bookmark_value>
+<topic id="textsharedoptionen01041000xml" indexer="include">
+<title xml-lang="en-US" id="tit">Compatibility</title>
+<filename>/text/shared/optionen/01041000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3577990">
+<bookmark_value>Word documents;compatibility</bookmark_value>
+<bookmark_value>importing;compatibility settings for text import</bookmark_value>
+<bookmark_value>options;compatibility (Writer)</bookmark_value>
+<bookmark_value>compatibility settings for MS Word import</bookmark_value>
+<bookmark_value>Microsoft Office;importing Word documents</bookmark_value>
+<bookmark_value>layout;importing Word documents</bookmark_value>
+<bookmark_value>formatting;printer metrics (Writer)</bookmark_value>
+<bookmark_value>metrics;document formatting (Writer)</bookmark_value>
+<bookmark_value>printer metrics for document formatting (Writer)</bookmark_value>
 </bookmark>
 <section id="compatibility">
 <bookmark xml-lang="en-US" branch="hid/SW_HID_OPTCOMPATIBILITY_PAGE" id="bm_id2023987" localize="false"/>
@@ -82,13 +80,13 @@
 <paragraph role="paragraph" id="par_idN10849" xml-lang="en-US" l10n="NEW">If the option is off, table cells will be formatted as in Writer versions prior to StarOffice 8 or OpenOffice.org 2.0. If the option is on, an alternative method of formatting table cells will be applied. The option is on by default for new documents created with %PRODUCTNAME %PRODUCTVERSION and for documents imported from Microsoft Word format.</paragraph>
 <paragraph role="heading" id="par_idN1084C" xml-lang="en-US" level="3" l10n="NEW">Use %WRITERCOMPATIBILITYVERSIONOOO11 object positioning<comment>UFI: spec spec-adjust-object-positioning</comment></paragraph>
 <paragraph role="paragraph" id="par_idN10864" xml-lang="en-US" l10n="NEW">Specifies how to calculate the position of floating objects anchored to a character or paragraph with respect to the top and bottom paragraph spacing.</paragraph>
-<paragraph role="paragraph" id="par_idN10867" xml-lang="en-US" l10n="NEW">If the option is on, the floating objects are positioned as in Writer versions prior to StarOffice 8 or OpenOffice.org 2.0. If the option is off, the floating objects are positioned using an alternative method that is similar to the method used by Microsoft Word. </paragraph>
+<paragraph role="paragraph" id="par_idN10867" xml-lang="en-US" l10n="NEW">If the option is on, the floating objects are positioned as in Writer versions prior to StarOffice 8 or OpenOffice.org 2.0. If the option is off, the floating objects are positioned using an alternative method that is similar to the method used by Microsoft Word.</paragraph>
 <paragraph role="paragraph" id="par_idN1086A" xml-lang="en-US" l10n="NEW">The option will be set to off for new documents. For Writer documents created by a version prior to %PRODUCTNAME %PRODUCTVERSION the option is on.</paragraph>
 <paragraph role="heading" id="par_idN10821" xml-lang="en-US" level="3" l10n="NEW">Use %WRITERCOMPATIBILITYVERSIONOOO11 text wrapping around objects<comment>UFI: spec doc adjust-text-wrapping.sxw</comment></paragraph>
 <paragraph role="paragraph" id="par_id4016541" xml-lang="en-US" l10n="NEW">MS Word and Writer have different approaches on wrapping text around floating screen objects. Floating screen object are Writer frames and drawing objects, and the objects 'text box', 'graphic', 'frame', 'picture' etc. in MS Word.</paragraph>
-<paragraph role="paragraph" id="par_id7280190" xml-lang="en-US" l10n="NEW">In MS Word and in current versions of Writer, page header/footer content and footnote/endnote content does not wrap around floating screen objects. Text body content wraps around floating screen objects which are anchored in the page header. </paragraph>
+<paragraph role="paragraph" id="par_id7280190" xml-lang="en-US" l10n="NEW">In MS Word and in current versions of Writer, page header/footer content and footnote/endnote content does not wrap around floating screen objects. Text body content wraps around floating screen objects which are anchored in the page header.</paragraph>
 <paragraph role="paragraph" id="par_id2782982" xml-lang="en-US" l10n="NEW">In Writer versions prior to StarOffice 8 or OpenOffice.org 2.0, the opposite was true.</paragraph>
-<paragraph role="paragraph" id="par_idN10892" xml-lang="en-US" l10n="NEW">If the option is off, which is the default setting, the new text wrapping will be applied. If the option is on, the former text wrapping will be applied. </paragraph>
+<paragraph role="paragraph" id="par_idN10892" xml-lang="en-US" l10n="NEW">If the option is off, which is the default setting, the new text wrapping will be applied. If the option is on, the former text wrapping will be applied.</paragraph>
 <paragraph role="heading" id="par_idN1092A" xml-lang="en-US" level="3" l10n="NEW">Consider wrapping style when positioning objects<comment>UFI: spec obj-pos-without-wrapping</comment></paragraph>
 <paragraph role="paragraph" id="par_idN10837" xml-lang="en-US" l10n="CHG">Specifies how the complex process of positioning floating objects that are anchored to a character or paragraph should work. In Writer versions prior to StarOffice 8 or OpenOffice.org 2.0, an iterative process was used, while in current versions a straightforward process is used, which is similar to the same process in Microsoft Word.</paragraph>
 <paragraph role="paragraph" id="par_idN10943" xml-lang="en-US" l10n="NEW">If the option is off, the old %PRODUCTNAME iterative process of object positioning is used. If the option is on, the new straightforward process is used to ensure compatibility with Microsoft Word documents.</paragraph>

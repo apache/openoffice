@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,18 +9,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-
 
 <helpdocument version="1.0">
 <meta>
@@ -29,10 +27,6 @@
 <title id="tit" xml-lang="en-US">Options</title>
 <filename>/text/swriter/01/05060900.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2004-04-28T14:00:21">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="zusaetze">
@@ -41,7 +35,7 @@
 <paragraph role="paragraph" id="par_id3149708" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_FRM_ADD">Specifies properties for the selected object, graphic or frame.</ahelp></paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/swriter/00/00000405.xhp#grazusaetze"/>
+<embed href="text/swriter/00/00000405.xhp#grazusaetze"/>
 </section>
 <paragraph role="heading" id="hd_id3151183" xml-lang="en-US" level="2" l10n="U" oldref="3">Name</paragraph>
 <paragraph role="paragraph" id="par_id3147568" xml-lang="en-US" l10n="U" oldref="4">Specifies the name of the selected item, and associated links.</paragraph>
@@ -49,7 +43,6 @@
 <paragraph role="heading" id="hd_id3151178" xml-lang="en-US" level="3" l10n="U" oldref="5">Name</paragraph>
 <paragraph role="paragraph" id="par_id3147510" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SW:EDIT:TP_FRM_ADD:ED_NAME">Enter a name for the selected item.</ahelp></paragraph>
 <paragraph role="tip" id="par_id3154565" xml-lang="en-US" l10n="U" oldref="7">Assign an object, graphic or frame a meaningful name, so that you can quickly locate it afterwards in long documents.</paragraph>
-
 <bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FRM_ADD:ED_ALT_NAME" id="bm_id3150352" localize="false"/>
 <paragraph role="heading" id="hd_id3153674" xml-lang="en-US" level="3" l10n="U" oldref="15">Alternative text (floating frames, graphics, and objects only)</paragraph>
 <paragraph role="paragraph" id="par_id3150977" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SW:EDIT:TP_FRM_ADD:ED_ALT_NAME">Enter the text to display in a web browser when the selected item is unavailable. Alternate text is also used to assist people with disabilities.</ahelp></paragraph>
@@ -83,7 +76,7 @@
 <paragraph role="paragraph" id="par_id3151028" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SW:CHECKBOX:TP_FRM_ADD:CB_PRINT_FRAME">Includes the selected item when you print the document.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FRM_ADD:LB_TEXTFLOW" id="bm_id3145787" localize="false"/>
 <paragraph role="heading" id="hd_id3145776" xml-lang="en-US" level="3" l10n="U" oldref="33">Text flow</paragraph>
-<paragraph role="paragraph" id="par_id3151374" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SW_LISTBOX_TP_FRM_ADD_LB_TEXTFLOW">Specifies the preferred text flow direction in a frame. To use the default text flow settings for the page, select <emph>Use superordinate object settings </emph>from the list.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3151374" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SW_LISTBOX_TP_FRM_ADD_LB_TEXTFLOW">Specifies the preferred text flow direction in a frame. To use the default text flow settings for the page, select <emph>Use superordinate object settings</emph> from the list.</ahelp></paragraph>
 <embed href="text/shared/00/00000004.xhp#related"/>
 <paragraph role="paragraph" id="par_id3150689" xml-lang="en-US" l10n="U" oldref="34"><link href="text/shared/01/05040200.xhp" name="Text direction">Text direction</link>.</paragraph>
 </body>

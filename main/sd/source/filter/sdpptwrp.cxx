@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,12 +48,12 @@ using namespace ::com::sun::star::task;
 using namespace ::com::sun::star::frame;
 
 typedef sal_Bool ( __LOADONCALLAPI *ExportPPT )( const std::vector< com::sun::star::beans::PropertyValue >&, SvStorageRef&,
-											 Reference< XModel > &,
-											 Reference< XStatusIndicator > &,
-											 SvMemoryStream*, sal_uInt32 nCnvrtFlags );
+												 Reference< XModel > &,
+												 Reference< XStatusIndicator > &,
+												 SvMemoryStream*, sal_uInt32 nCnvrtFlags );
 
 typedef sal_Bool ( SAL_CALL *ImportPPT )( const ::rtl::OUString&, Sequence< PropertyValue >*,
-                                          SdDrawDocument*, SvStream&, SvStorage&, SfxMedium& );
+										  SdDrawDocument*, SvStream&, SvStorage&, SfxMedium& );
 
 typedef sal_Bool ( __LOADONCALLAPI *SaveVBA )( SfxObjectShell&, SvMemoryStream*& );
 
@@ -71,7 +71,7 @@ SdPPTFilter::SdPPTFilter( SfxMedium& rMedium, ::sd::DrawDocShell& rDocShell, sal
 
 SdPPTFilter::~SdPPTFilter()
 {
-	delete pBas;	// deleting the compressed basic storage
+	delete pBas; // deleting the compressed basic storage
 }
 
 // -----------------------------------------------------------------------------
@@ -83,15 +83,15 @@ sal_Bool SdPPTFilter::Import()
 	if( !pStorage->GetError() )
 	{
 		/* check if there is a dualstorage, then the
-		document is propably a PPT95 containing PPT97 */
+		document is probably a PPT95 containing PPT97 */
 		SvStorageRef xDualStorage;
 		String sDualStorage( RTL_CONSTASCII_USTRINGPARAM( "PP97_DUALSTORAGE" ) );
 		if ( pStorage->IsContained( sDualStorage ) )
 		{
-            xDualStorage = pStorage->OpenSotStorage( sDualStorage, STREAM_STD_READ );
+			xDualStorage = pStorage->OpenSotStorage( sDualStorage, STREAM_STD_READ );
 			pStorage = xDualStorage;
 		}
-        SvStream* pDocStream = pStorage->OpenSotStream( String( RTL_CONSTASCII_USTRINGPARAM("PowerPoint Document") ), STREAM_STD_READ );
+		SvStream* pDocStream = pStorage->OpenSotStream( String( RTL_CONSTASCII_USTRINGPARAM("PowerPoint Document") ), STREAM_STD_READ );
 		if( pDocStream )
 		{
 			pDocStream->SetVersion( pStorage->GetVersion() );
@@ -139,14 +139,14 @@ sal_Bool SdPPTFilter::Export()
 	{
 		if( mxModel.is() )
 		{
-            SotStorageRef    xStorRef = new SotStorage( mrMedium.GetOutStream(), sal_False );
+			SotStorageRef	xStorRef = new SotStorage( mrMedium.GetOutStream(), sal_False );
 			ExportPPT		PPTExport = reinterpret_cast<ExportPPT>(pLibrary->getFunctionSymbol( ::rtl::OUString::createFromAscii("ExportPPT") ));
 
 			/* !!!
 			if ( pViewShell && pViewShell->GetView() )
 				pViewShell->GetView()->SdrEndTextEdit();
 			*/
-            if( PPTExport && xStorRef.Is() )
+			if( PPTExport && xStorRef.Is() )
 			{
 				sal_uInt32			nCnvrtFlags = 0;
 				SvtFilterOptions* pFilterOptions = SvtFilterOptions::Get();
@@ -177,7 +177,7 @@ sal_Bool SdPPTFilter::Export()
 				aProperties.push_back( aProperty );
 
 				bRet = PPTExport( aProperties, xStorRef, mxModel, mxStatusIndicator, pBas, nCnvrtFlags );
-                xStorRef->Commit();
+				xStorRef->Commit();
 			}
 		}
 		delete pLibrary;
@@ -194,7 +194,7 @@ void SdPPTFilter::PreSaveBasic()
 		if( pLibrary )
 		{
 			SaveVBA pSaveVBA= reinterpret_cast<SaveVBA>(pLibrary->getFunctionSymbol( ::rtl::OUString::createFromAscii("SaveVBA") ));
-            if( pSaveVBA )
+			if( pSaveVBA )
 			{
 				pSaveVBA( (SfxObjectShell&) mrDocShell, pBas );
 			}
@@ -202,3 +202,5 @@ void SdPPTFilter::PreSaveBasic()
 		}
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */

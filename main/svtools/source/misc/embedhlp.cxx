@@ -709,7 +709,7 @@ SvStream* EmbeddedObjectRef::GetGraphicStream( sal_Bool bUpdate ) const
     if ( !xStream.is() )
     {
 		RTL_LOGFILE_CONTEXT_TRACE( aLog, "getting stream from object" );
-        bool bUserAllowsLinkUpdate(false);
+        bool bUserAllowsLinkUpdate(true);
         const comphelper::EmbeddedObjectContainer* pContainer = GetContainer();
 
         if(pContainer)

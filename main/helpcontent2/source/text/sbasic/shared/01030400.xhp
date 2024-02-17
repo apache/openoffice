@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared01030400xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Organizing Libraries and Modules</title>
@@ -35,7 +30,8 @@
 </meta>
 <body>
 <section id="anlegenverwalten">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148797"><bookmark_value>libraries;organizing</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148797">
+<bookmark_value>libraries;organizing</bookmark_value>
 <bookmark_value>modules;organizing</bookmark_value>
 <bookmark_value>copying;modules</bookmark_value>
 <bookmark_value>adding libraries</bookmark_value>
@@ -44,23 +40,24 @@
 <bookmark_value>moving;modules</bookmark_value>
 <bookmark_value>organizing;modules/libraries/dialogs</bookmark_value>
 <bookmark_value>renaming modules and dialogs</bookmark_value>
-</bookmark><comment>mw changed"organizing;",  "dialogs;" and "renaming modules"</comment><paragraph role="heading" id="hd_id3148797" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="01030400"><link href="text/sbasic/shared/01030400.xhp">Organizing Libraries and Modules</link>
+</bookmark><comment>mw changed"organizing;", "dialogs;" and "renaming modules"</comment>
+<paragraph role="heading" id="hd_id3148797" xml-lang="en-US" level="1" l10n="U"><variable id="01030400"><link href="text/sbasic/shared/01030400.xhp">Organizing Libraries and Modules</link>
 </variable></paragraph>
 </section>
-<paragraph role="heading" id="hd_id3150868" xml-lang="en-US" level="2" l10n="U" oldref="4">Organizing Libraries</paragraph>
-<paragraph role="heading" id="hd_id3125864" xml-lang="en-US" level="3" l10n="U" oldref="5">Creating a New Library</paragraph>
+<paragraph role="heading" id="hd_id3150868" xml-lang="en-US" level="2" l10n="U">Organizing Libraries</paragraph>
+<paragraph role="heading" id="hd_id3125864" xml-lang="en-US" level="3" l10n="U">Creating a New Library</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph role="listitem" id="par_id3152576" xml-lang="en-US" l10n="CHG" oldref="6">Choose <emph>Tools - Macros - Organize Macros - %PRODUCTNAME Basic</emph> and click <emph>Organizer</emph> or click the <emph>Select Module</emph> icon in the Basic IDE to open the <emph>Macro Organizer</emph> dialog.</paragraph>
+<paragraph role="listitem" id="par_id3152576" xml-lang="en-US" l10n="CHG">Choose <emph>Tools - Macros - Organize Macros - %PRODUCTNAME Basic</emph> and click <emph>Organizer</emph> or click the <emph>Select Module</emph> icon in the Basic IDE to open the <emph>Macro Organizer</emph> dialog.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3153726" xml-lang="en-US" l10n="U" oldref="8">Click the <emph>Libraries</emph> tab.</paragraph>
+<paragraph role="listitem" id="par_id3153726" xml-lang="en-US" l10n="U">Click the <emph>Libraries</emph> tab.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3149664" xml-lang="en-US" l10n="CHG" oldref="9">Select to where you want to attach the library in the <emph>Location</emph> list. If you select %PRODUCTNAME Macros &amp; Dialogs, the library will belong to the $[officename] application and will be available for all documents. If you select a document the library will be attached to this document and only available from there.</paragraph>
+<paragraph role="listitem" id="par_id3149664" xml-lang="en-US" l10n="CHG">Select to where you want to attach the library in the <emph>Location</emph> list. If you select %PRODUCTNAME Macros &amp; Dialogs, the library will belong to the $[officename] application and will be available for all documents. If you select a document the library will be attached to this document and only available from there.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3153365" xml-lang="en-US" l10n="U" oldref="10">Click <emph>New</emph> and insert a name to create a new library.</paragraph>
+<paragraph role="listitem" id="par_id3153365" xml-lang="en-US" l10n="U">Click <emph>New</emph> and insert a name to create a new library.</paragraph>
 </listitem>
 </list>
 <paragraph role="heading" id="hd_id3147394" xml-lang="en-US" level="3" l10n="U" oldref="48">Appending a Library</paragraph>

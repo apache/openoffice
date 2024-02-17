@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0401020000xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Shortcut Keys for Spreadsheets</title>
@@ -34,11 +29,13 @@
 </topic>
 </meta>
 <body>
-<section id="starcalctasten">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145801"><bookmark_value>spreadsheets; shortcut keys in</bookmark_value>
+<section id="scalctastaturbefehle">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145801">
+<bookmark_value>spreadsheets; shortcut keys in</bookmark_value>
 <bookmark_value>shortcut keys; spreadsheets</bookmark_value>
 <bookmark_value>sheet ranges; filling</bookmark_value>
-</bookmark><comment>mw deleted "matrices;..."</comment><paragraph role="heading" id="hd_id3145801" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="calc_keys"><link href="text/scalc/04/01020000.xhp" name="Shortcut Keys for Spreadsheets">Shortcut Keys for Spreadsheets</link>
+</bookmark><comment>mw deleted "matrices;..."</comment>
+<paragraph role="heading" id="hd_id3145801" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="calc_keys"><link href="text/scalc/04/01020000.xhp" name="Shortcut Keys for Spreadsheets">Shortcut Keys for Spreadsheets</link>
 </variable></paragraph>
 <embed href="text/shared/00/00000099.xhp#keys"/>
 </section>
@@ -265,7 +262,7 @@
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablecontent" id="par_id3148568" xml-lang="en-US" l10n="U" oldref="10">Switches to Edit mode and places the cursor at the end of the contents of the current cell. Press again to exit Edit mode.</paragraph>
-<paragraph role="tablecontent" id="par_id3153108" xml-lang="en-US" l10n="U" oldref="179">If the cursor is in an input box in a dialog that has a <emph>Minimize </emph>button, the dialog is hidden and the input box remains visible. Press F2 again to show the whole dialog.</paragraph>
+<paragraph role="tablecontent" id="par_id3153108" xml-lang="en-US" l10n="U" oldref="179">If the cursor is in an input box in a dialog that has a <emph>Minimize</emph> button, the dialog is hidden and the input box remains visible. Press F2 again to show the whole dialog.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -337,7 +334,7 @@
 <paragraph role="tablecontent" id="hd_id3150568" xml-lang="en-US" l10n="U" oldref="135">Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F5</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3153551" xml-lang="en-US" l10n="U" oldref="134">Moves the cursor from the <emph>Input line </emph>to the <emph>Sheet area</emph> box.</paragraph>
+<paragraph role="tablecontent" id="par_id3153551" xml-lang="en-US" l10n="U" oldref="134">Moves the cursor from the <emph>Input line</emph> to the <emph>Sheet area</emph> box.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>

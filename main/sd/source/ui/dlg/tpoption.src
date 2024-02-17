@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "tpoption.hrc"
 #include "helpids.h"
 
@@ -144,7 +142,7 @@ TabPage TP_OPTIONS_MISC
 		Pos = MAP_APPFONT ( 12, 106 ) ;
 		Size = MAP_APPFONT ( 242, 10 ) ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "Objects always moveable" ;
+		Text [ en-US ] = "Objects always movable" ;
 	};
 	CheckBox CBX_CROOK_NO_CONTORTION
 	{

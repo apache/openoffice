@@ -266,7 +266,7 @@ void OCacheSet::fillParameters( const ORowSetRow& _rRow
 										,::std::list< sal_Int32>& _rOrgValues)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OCacheSet::fillParameters" );
-	// use keys and indexes for excat postioning
+	// use keys and indexes for exact positioning
 	// first the keys
     Reference<XPropertySet> xSet(_xTable,UNO_QUERY);
     const Reference<XNameAccess> xPrimaryKeyColumns = getPrimaryKeyColumns_throw(xSet);
@@ -407,7 +407,7 @@ void SAL_CALL OCacheSet::deleteRow(const ORowSetRow& _rDeleteRow ,const connecti
 	::rtl::OUString aQuote	= getIdentifierQuoteString();
 	static ::rtl::OUString aAnd		= ::rtl::OUString::createFromAscii(" AND ");
 
-	// use keys and indexes for excat postioning
+	// use keys and indexes for exact positioning
 	// first the keys
     const Reference<XNameAccess> xPrimaryKeyColumns = getPrimaryKeyColumns_throw(xSet);
 	// second the indexes

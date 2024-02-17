@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0102110000xml" indexer="include">
 <title id="tit" xml-lang="en-US">Navigator</title>
@@ -33,7 +30,8 @@
 </meta>
 <body>
 <section id="navigator">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150791"><bookmark_value>Navigator;for sheets</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150791">
+<bookmark_value>Navigator;for sheets</bookmark_value>
 <bookmark_value>navigating;in spreadsheets</bookmark_value>
 <bookmark_value>displaying; scenario names</bookmark_value>
 <bookmark_value>scenarios;displaying names</bookmark_value>
@@ -62,14 +60,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3159264" xml-lang="en-US" l10n="E">
 <image id="img_id3147338" src="sc/res/imglst/navipi/na03.png" width="0.2228in" height="0.2228in"><alt id="alt_id3147338" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3146919" xml-lang="en-US" l10n="U" oldref="9">Data Range</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_NAVIPI_UP" id="bm_id3155111" localize="false"/>
 <paragraph role="heading" id="hd_id3148488" xml-lang="en-US" level="2" l10n="U" oldref="14">Start</paragraph>
 <paragraph role="paragraph" id="par_id3150086" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_SC_NAVIPI_UP">Moves to the cell at the beginning of the current data range, which you can highlight using the <emph>Data Range</emph> button.</ahelp></paragraph>
@@ -78,14 +75,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3152994" xml-lang="en-US" l10n="E">
 <image id="img_id3150515" src="sc/res/imglst/navipi/na05.png" width="0.2228in" height="0.2228in"><alt id="alt_id3150515" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3154372" xml-lang="en-US" l10n="U" oldref="15">Start</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_NAVIPI_DOWN" id="bm_id3156449" localize="false"/>
 <paragraph role="heading" id="hd_id3146982" xml-lang="en-US" level="2" l10n="U" oldref="17">End</paragraph>
 <paragraph role="paragraph" id="par_id3152985" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="HID_SC_NAVIPI_DOWN">Moves to the cell at the end of the current data range, which you can highlight using the <emph>Data Range</emph> button.</ahelp></paragraph>
@@ -94,14 +90,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3159170" xml-lang="en-US" l10n="E">
 <image id="img_id3148871" src="sc/res/imglst/navipi/na06.png" width="0.2228in" height="0.2228in"><alt id="alt_id3148871" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3147072" xml-lang="en-US" l10n="U" oldref="18">End</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_NAVIPI_ROOT" id="bm_id3155269" localize="false"/>
 <paragraph role="heading" id="hd_id3150107" xml-lang="en-US" level="2" l10n="U" oldref="20">Content View</paragraph>
 <paragraph role="paragraph" id="par_id3159098" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="HID_SC_NAVIPI_ROOT">Switches to content view. Only the selected Navigator element and its subelements are displayed.</ahelp> Click the icon again to restore all elements for viewing.</paragraph>
@@ -110,14 +105,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3152869" xml-lang="en-US" l10n="E">
 <image id="img_id3149126" src="sc/res/imglst/navipi/na010.png" width="0.2228in" height="0.2228in"><alt id="alt_id3149126" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3159229" xml-lang="en-US" l10n="U" oldref="21">Switch Content View</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_NAVIPI_ZOOM" id="bm_id3154654" localize="false"/>
 <paragraph role="heading" id="hd_id3149381" xml-lang="en-US" level="2" l10n="U" oldref="11">Contents</paragraph>
 <paragraph role="paragraph" id="par_id3150051" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="HID_SC_NAVIPI_ZOOM">Allows you to hide/show the contents.</ahelp></paragraph>
@@ -126,14 +120,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3155597" xml-lang="en-US" l10n="E">
 <image id="img_id3154738" src="sc/res/imglst/navipi/na011.png" width="0.2228in" height="0.2228in"><alt id="alt_id3154738" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3150955" xml-lang="en-US" l10n="U" oldref="12">Contents</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_NAVIPI_SCEN" id="bm_id3145115" localize="false"/>
 <paragraph role="heading" id="hd_id3147244" xml-lang="en-US" level="2" l10n="U" oldref="23">Scenarios</paragraph>
 <paragraph role="paragraph" id="par_id3153955" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="HID_SC_NAVIPI_SCEN">Displays all available scenarios. Double-click a name to apply that scenario.</ahelp> The result is shown in the sheet. For more information, choose <link href="text/scalc/01/06050000.xhp" name="Tools - Scenarios"><emph>Tools - Scenarios</emph></link>.</paragraph>
@@ -142,14 +135,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3148745" xml-lang="en-US" l10n="E">
 <image id="img_id3159256" src="sc/res/imglst/navipi/na07.png" width="0.2228in" height="0.2228in"><alt id="alt_id3159256" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3166466" xml-lang="en-US" l10n="U" oldref="24">Scenarios</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_idN10A6C" xml-lang="en-US" l10n="NEW">If the Navigator displays scenarios, you can access the following commands when you right-click a scenario entry:</paragraph>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_SCENARIO_DELETE" id="bm_id1900997" localize="false"/>
 <paragraph role="heading" id="par_idN10A77" xml-lang="en-US" level="3" l10n="NEW">Delete</paragraph>
@@ -165,17 +157,16 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3149947" xml-lang="en-US" l10n="E">
 <image id="img_id3159119" src="res/commandimagelist/sc_chainframes.png" width="0.2228in" height="0.2228in"><alt id="alt_id3159119" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3150656" xml-lang="en-US" l10n="U" oldref="27">Drag Mode</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_DROPMODE_URL" id="bm_id3146876" localize="false"/>
 <paragraph role="heading" id="hd_id3149009" xml-lang="en-US" level="3" l10n="U" oldref="29">Insert as Hyperlink</paragraph>
-<paragraph role="paragraph" id="par_id3146938" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="HID_SC_DROPMODE_URL">Inserts a hyperlink when you drag-and-drop an object from the Navigator into a document.</ahelp> You can later click the created hyperlink to set the cursor and the view to the respective object. </paragraph>
+<paragraph role="paragraph" id="par_id3146938" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="HID_SC_DROPMODE_URL">Inserts a hyperlink when you drag-and-drop an object from the Navigator into a document.</ahelp> You can later click the created hyperlink to set the cursor and the view to the respective object.</paragraph>
 <paragraph role="note" id="par_id3880733" xml-lang="en-US" l10n="NEW">If you insert a hyperlink that links to an open document, you need to save the document before you can use the hyperlink.<comment>UFI: fixes bugtraq 5009354</comment></paragraph>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SC_DROPMODE_LINK" id="bm_id3150740" localize="false"/>
 <paragraph role="heading" id="hd_id3154682" xml-lang="en-US" level="3" l10n="U" oldref="31">Insert as Link</paragraph>

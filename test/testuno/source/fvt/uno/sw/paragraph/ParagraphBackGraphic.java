@@ -98,7 +98,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_BOTTOM,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -106,7 +106,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_BOTTOM,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -158,7 +158,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_MIDDLE,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -166,7 +166,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_MIDDLE,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -218,7 +218,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_TOP,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -226,7 +226,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_TOP,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -278,7 +278,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_BOTTOM,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -286,7 +286,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_BOTTOM,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -338,7 +338,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_MIDDLE,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -346,7 +346,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_MIDDLE,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -399,7 +399,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_TOP,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -407,7 +407,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_TOP,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -459,7 +459,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_BOTTOM,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -467,7 +467,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_BOTTOM,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -519,7 +519,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_MIDDLE,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -527,7 +527,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_MIDDLE,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -579,7 +579,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_TOP,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -587,7 +587,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_TOP,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -639,7 +639,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.AREA,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -647,7 +647,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.AREA,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*
@@ -699,7 +699,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.TILED,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/sw/paragraphtable/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 		
 		//reopen the document 
@@ -707,7 +707,7 @@ public class ParagraphBackGraphic {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.TILED,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
-		assertEquals("verify paragraph backgraphic fileter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
+		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicURL"));
 	}
 	/*

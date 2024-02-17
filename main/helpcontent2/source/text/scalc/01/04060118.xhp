@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060118xml" indexer="include">
 <title id="tit" xml-lang="en-US">Financial Functions Part Three</title>
@@ -32,37 +29,31 @@
 </topic>
 </meta>
 <body>
-<paragraph role="heading" id="hd_id3146780" xml-lang="en-US" level="1" l10n="U" oldref="1">Financial Functions Part Three</paragraph>
+<paragraph role="heading" id="hd_id3146780" xml-lang="en-US" level="1" l10n="U">Financial Functions Part Three</paragraph>
 <sort>
 <section id="oddfprice">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145112"><bookmark_value>ODDFPRICE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145112">
+<bookmark_value>ODDFPRICE function</bookmark_value>
 <bookmark_value>prices;securities with irregular first interest date</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDFPRICE" id="bm_id3146107" localize="false"/>
-<paragraph role="heading" id="hd_id3145112" xml-lang="en-US" level="2" oldref="71">ODDFPRICE</paragraph>
-<paragraph role="paragraph" id="par_id3147250" xml-lang="en-US" l10n="U" oldref="72"><ahelp hid="HID_AAI_FUNC_ODDFPRICE">Calculates the price per 100 currency units par value of a security, if the first interest date falls irregularly.</ahelp></paragraph>
-<paragraph role="heading" id="hd_id3153074" xml-lang="en-US" level="3" l10n="U" oldref="73">Syntax</paragraph>
-<paragraph role="code" id="par_id3146098" xml-lang="en-US" l10n="U" oldref="74">ODDFPRICE(Settlement; Maturity; Issue; FirstCoupon; Rate; Yield; Redemption; Frequency; Basis)</paragraph>
-<paragraph role="paragraph" id="par_id3153337" xml-lang="en-US" l10n="U" oldref="75">
-<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
-<paragraph role="paragraph" id="par_id3149051" xml-lang="en-US" l10n="U" oldref="76">
-<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
-<paragraph role="paragraph" id="par_id3147297" xml-lang="en-US" l10n="U" oldref="77">
-<emph>Issue</emph> is the date of issue of the security.</paragraph>
-<paragraph role="paragraph" id="par_id3150393" xml-lang="en-US" l10n="U" oldref="78">
-<emph>FirstCoupon</emph> is the first interest date of the security.</paragraph>
-<paragraph role="paragraph" id="par_id3147402" xml-lang="en-US" l10n="U" oldref="79">
-<emph>Rate</emph> is the annual rate of interest.</paragraph>
-<paragraph role="paragraph" id="par_id3151387" xml-lang="en-US" l10n="U" oldref="80">
-<emph>Yield</emph> is the annual yield of the security.</paragraph>
-<paragraph role="paragraph" id="par_id3153023" xml-lang="en-US" l10n="U" oldref="81">
-<emph>Redemption</emph> is the redemption value per 100 currency units of par value.</paragraph>
-<paragraph role="paragraph" id="par_id3150539" xml-lang="en-US" l10n="U" oldref="82">
-<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
+<paragraph role="heading" id="hd_id3145112" xml-lang="en-US" level="2">ODDFPRICE</paragraph>
+<paragraph role="paragraph" id="par_id3147250" xml-lang="en-US" l10n="U"><ahelp hid="HID_AAI_FUNC_ODDFPRICE">Calculates the price per 100 currency units par value of a security, if the first interest date falls irregularly.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153074" xml-lang="en-US" level="3" l10n="U">Syntax</paragraph>
+<paragraph role="code" id="par_id3146098" xml-lang="en-US" l10n="U">ODDFPRICE(Settlement; Maturity; Issue; FirstCoupon; Rate; Yield; Redemption; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3153337" xml-lang="en-US" l10n="U"><emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3149051" xml-lang="en-US" l10n="U"><emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3147297" xml-lang="en-US" l10n="U"><emph>Issue</emph> is the date of issue of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3150393" xml-lang="en-US" l10n="U"><emph>FirstCoupon</emph> is the first interest date of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3147402" xml-lang="en-US" l10n="U"><emph>Rate</emph> is the annual rate of interest.</paragraph>
+<paragraph role="paragraph" id="par_id3151387" xml-lang="en-US" l10n="U"><emph>Yield</emph> is the annual yield of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3153023" xml-lang="en-US" l10n="U"><emph>Redemption</emph> is the redemption value per 100 currency units of par value.</paragraph>
+<paragraph role="paragraph" id="par_id3150539" xml-lang="en-US" l10n="U"><emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
 <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
 </section>
 <section id="oddfyield">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3157871"><bookmark_value>ODDFYIELD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157871">
+<bookmark_value>ODDFYIELD function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDFYIELD" id="bm_id3149723" localize="false"/>
 <paragraph role="heading" id="hd_id3157871" xml-lang="en-US" level="2" oldref="87">ODDFYIELD</paragraph>
@@ -88,7 +79,8 @@
 <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
 </section>
 <section id="oddlprice">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153933"><bookmark_value>ODDLPRICE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153933">
+<bookmark_value>ODDLPRICE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDLPRICE" id="bm_id3145596" localize="false"/>
 <paragraph role="heading" id="hd_id3153933" xml-lang="en-US" level="2" oldref="103">ODDLPRICE</paragraph>
@@ -116,7 +108,8 @@
 <paragraph role="paragraph" id="par_id3150332" xml-lang="en-US" l10n="CHG" oldref="117">=ODDLPRICE("1999-02-07";"1999-06-15";"1998-10-15"; 0.0375; 0.0405;100;2;0) returns 99.87829.</paragraph>
 </section>
 <section id="oddlyield">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153564"><bookmark_value>ODDLYIELD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153564">
+<bookmark_value>ODDLYIELD function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDLYIELD" id="bm_id3153732" localize="false"/>
 <paragraph role="heading" id="hd_id3153564" xml-lang="en-US" level="2" oldref="118">ODDLYIELD</paragraph>
@@ -144,7 +137,8 @@
 <paragraph role="paragraph" id="par_id3150572" xml-lang="en-US" l10n="CHG" oldref="132">=ODDLYIELD("1999-04-20";"1999-06-15"; "1998-10-15"; 0.0375; 99.875; 100;2;0) returns 0.044873 or 4.4873%.</paragraph>
 </section>
 <section id="vdb">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148768"><bookmark_value>calculating;variable declining depreciations</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148768">
+<bookmark_value>calculating;variable declining depreciations</bookmark_value>
 <bookmark_value>depreciations;variable declining</bookmark_value>
 <bookmark_value>VDB function</bookmark_value>
 </bookmark>
@@ -166,7 +160,7 @@
 <paragraph role="paragraph" id="par_id3147536" xml-lang="en-US" l10n="CHG" oldref="231">
 <emph>Factor</emph> (optional) is the depreciation factor. Factor = 2 is double rate depreciation.</paragraph>
 <paragraph role="paragraph" id="par_id3154865" xml-lang="en-US" l10n="CHG" oldref="232">
-<emph>Type </emph>is an optional parameter. Type = 1 means a switch to linear depreciation. In Type = 0 no switch is made.</paragraph>
+<emph>Type</emph> is an optional parameter. Type = 1 means a switch to linear depreciation. In Type = 0 no switch is made.</paragraph>
 <paragraph role="paragraph" id="par_idN10A0D" xml-lang="en-US" l10n="NEW">
 <embedvar href="text/scalc/00/00000004.xhp#optional"/>
 </paragraph>
@@ -176,7 +170,8 @@
 <item type="input">=VDB(35000;7500;36;10;20;2)</item> = 8603.80 currency units. The depreciation during the period between the 10th and the 20th period is 8,603.80 currency units.</paragraph>
 </section>
 <section id="xirr">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147485"><bookmark_value>calculating;internal rates of return, irregular payments</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147485">
+<bookmark_value>calculating;internal rates of return, irregular payments</bookmark_value>
 <bookmark_value>internal rates of return;irregular payments</bookmark_value>
 <bookmark_value>XIRR function</bookmark_value>
 </bookmark><comment>mw changed "calculating;..." and "internal rates of return"</comment>
@@ -281,11 +276,11 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_id3152793" xml-lang="en-US" l10n="U" oldref="212">=XIRR(B1:B5; A1:A5; 0.1) returns 0.1828.</paragraph>
 </section>
 <section id="xnpv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149198"><bookmark_value>XNPV function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149198">
+<bookmark_value>XNPV function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_XNPV" id="bm_id3151172" localize="false"/>
 <paragraph role="heading" id="hd_id3149198" xml-lang="en-US" level="2" oldref="213">XNPV</paragraph>
@@ -303,7 +298,8 @@
 <item type="input">=XNPV(0.06;B1:B5;A1:A5)</item> returns 323.02.</paragraph>
 </section>
 <section id="rri">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148822"><bookmark_value>calculating;rates of return</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148822">
+<bookmark_value>calculating;rates of return</bookmark_value>
 <bookmark_value>RRI function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZGZ" id="bm_id3146996" localize="false"/>
@@ -320,11 +316,12 @@
 <paragraph role="heading" id="hd_id3148941" xml-lang="en-US" level="3" l10n="U" oldref="244">Example</paragraph>
 <paragraph role="paragraph" id="par_id3154212" xml-lang="en-US" l10n="U" oldref="245">For four periods (years) and a cash value of 7,500 currency units, the interest rate of the return is to be calculated if the future value is 10,000 currency units.</paragraph>
 <paragraph role="paragraph" id="par_id3150775" xml-lang="en-US" l10n="U" oldref="246">
-<item type="input">=RRI(4;7500;10000)</item> = 7.46 %</paragraph>
-<paragraph role="paragraph" id="par_id3145413" xml-lang="en-US" l10n="U" oldref="247">The interest rate must be 7.46 % so that 7,500 currency units will become 10,000 currency units.</paragraph>
+<item type="input">=RRI(4;7500;10000)</item> = 7.46%</paragraph>
+<paragraph role="paragraph" id="par_id3145413" xml-lang="en-US" l10n="U" oldref="247">The interest rate must be 7.46% so that 7,500 currency units will become 10,000 currency units.</paragraph>
 </section>
 <section id="rate">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154267"><bookmark_value>calculating;constant interest rates</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154267">
+<bookmark_value>calculating;constant interest rates</bookmark_value>
 <bookmark_value>constant interest rates</bookmark_value>
 <bookmark_value>RATE function</bookmark_value>
 </bookmark>
@@ -354,7 +351,8 @@
 <item type="input">=RATE(3;10;900)</item> = -121% The interest rate is therefore 121%.</paragraph>
 </section>
 <section id="intrate">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149106"><bookmark_value>INTRATE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149106">
+<bookmark_value>INTRATE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_INTRATE" id="bm_id3152944" localize="false"/>
 <paragraph role="heading" id="hd_id3149106" xml-lang="en-US" level="2" oldref="60">INTRATE</paragraph>
@@ -375,7 +373,8 @@
 <paragraph role="paragraph" id="par_id3151125" xml-lang="en-US" l10n="CHG" oldref="70">=INTRATE("1990-01-15"; "2002-05-05"; 1000000; 2000000; 3) returns 8.12%.</paragraph>
 </section>
 <section id="coupncd">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148654"><bookmark_value>COUPNCD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148654">
+<bookmark_value>COUPNCD function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPNCD" id="bm_id3148413" localize="false"/>
 <paragraph role="heading" id="hd_id3148654" xml-lang="en-US" level="2" oldref="163">COUPNCD</paragraph>
@@ -394,7 +393,8 @@
 <paragraph role="paragraph" id="par_id3159251" xml-lang="en-US" l10n="CHG" oldref="172">=COUPNCD("2001-01-25"; "2001-11-15"; 2; 3) returns 2001-05-15.</paragraph>
 </section>
 <section id="coupdays">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3143281"><bookmark_value>COUPDAYS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143281">
+<bookmark_value>COUPDAYS function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPDAYS" id="bm_id3144759" localize="false"/>
 <paragraph role="heading" id="hd_id3143281" xml-lang="en-US" level="2" oldref="143">COUPDAYS</paragraph>
@@ -413,7 +413,8 @@
 <paragraph role="paragraph" id="par_id3156338" xml-lang="en-US" l10n="CHG" oldref="152">=COUPDAYS("2001-01-25"; "2001-11-15"; 2; 3) returns 181.</paragraph>
 </section>
 <section id="coupdaysnc">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154832"><bookmark_value>COUPDAYSNC function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154832">
+<bookmark_value>COUPDAYSNC function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPDAYSNC" id="bm_id3150941" localize="false"/>
 <paragraph role="heading" id="hd_id3154832" xml-lang="en-US" level="2" oldref="153">COUPDAYSNC</paragraph>
@@ -425,14 +426,15 @@
 <paragraph role="paragraph" id="par_id3146075" xml-lang="en-US" l10n="U" oldref="158">
 <emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
 <paragraph role="paragraph" id="par_id3154620" xml-lang="en-US" l10n="U" oldref="159">
-<emph>Frequency </emph>is number of interest payments per year (1, 2 or 4).</paragraph>
+<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
 <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
 <paragraph role="heading" id="hd_id3155604" xml-lang="en-US" level="3" l10n="U" oldref="160">Example</paragraph>
 <paragraph role="paragraph" id="par_id3148671" xml-lang="en-US" l10n="CHG" oldref="161">A security is purchased on 2001-01-25; the date of maturity is 2001-11-15. Interest is paid half-yearly (frequency is 2). Using daily balance interest calculation (basis 3) how many days are there until the next interest payment?</paragraph>
 <paragraph role="paragraph" id="par_id3156158" xml-lang="en-US" l10n="CHG" oldref="162">=COUPDAYSNC("2001-01-25"; "2001-11-15"; 2; 3) returns 110.</paragraph>
 </section>
 <section id="coupdaybs">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150408"><bookmark_value>COUPDAYBS function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150408">
+<bookmark_value>COUPDAYBS function</bookmark_value>
 <bookmark_value>durations;first interest payment until settlement date</bookmark_value>
 <bookmark_value>securities;first interest payment until settlement date</bookmark_value>
 </bookmark><comment>mw added "durations;" and "securities;"</comment>
@@ -453,7 +455,8 @@
 <paragraph role="paragraph" id="par_id3151103" xml-lang="en-US" l10n="CHG" oldref="142">=COUPDAYBS("2001-01-25"; "2001-11-15"; 2; 3) returns 71.</paragraph>
 </section>
 <section id="couppcd">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3152957"><bookmark_value>COUPPCD function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3152957">
+<bookmark_value>COUPPCD function</bookmark_value>
 <bookmark_value>dates;interest date prior to settlement date</bookmark_value>
 </bookmark><comment>mw added "dates;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPPCD" id="bm_id3149553" localize="false"/>
@@ -473,7 +476,8 @@
 <paragraph role="paragraph" id="par_id3149992" xml-lang="en-US" l10n="CHG" oldref="192">=COUPPCD("2001-01-25"; "2001-11-15"; 2; 3) returns 2000-15-11.</paragraph>
 </section>
 <section id="coupnum">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150673"><bookmark_value>COUPNUM function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150673">
+<bookmark_value>COUPNUM function</bookmark_value>
 <bookmark_value>number of coupons</bookmark_value>
 </bookmark><comment>mw added "number..."</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_COUPNUM" id="bm_id3153348" localize="false"/>
@@ -493,7 +497,8 @@
 <paragraph role="paragraph" id="par_id3150640" xml-lang="en-US" l10n="CHG" oldref="182">=COUPNUM("2001-01-25"; "2001-11-15"; 2; 3) returns 2.</paragraph>
 </section>
 <section id="ipmt">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149339"><bookmark_value>IPMT function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149339">
+<bookmark_value>IPMT function</bookmark_value>
 <bookmark_value>periodic amortizement rates</bookmark_value>
 </bookmark><comment>mw added "periodic..."</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZINSZ" id="bm_id3149737" localize="false"/>
@@ -519,7 +524,8 @@
 <item type="input">=IPMT(5%;5;7;15000)</item> = -352.97 currency units. The compound interest during the fifth period (year) is 352.97 currency units.</paragraph>
 </section>
 <section id="fv">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3151205"><bookmark_value>calculating;future values</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151205">
+<bookmark_value>calculating;future values</bookmark_value>
 <bookmark_value>future values;constant interest rates</bookmark_value>
 <bookmark_value>FV function</bookmark_value>
 </bookmark><comment>mw made "future values..." a two level entry</comment>
@@ -547,7 +553,8 @@
 <item type="input">=FV(4%;2;750;2500) </item>= -4234.00 currency units. The value at the end of the investment is 4234.00 currency units.</paragraph>
 </section>
 <section id="fvschedule">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155912"><bookmark_value>FVSCHEDULE function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155912">
+<bookmark_value>FVSCHEDULE function</bookmark_value>
 <bookmark_value>future values;varying interest rates</bookmark_value>
 </bookmark><comment>mw added "future values"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_FVSCHEDULE" id="bm_id3155341" localize="false"/>
@@ -565,7 +572,8 @@
 <item type="input">=FVSCHEDULE(1000;{0.03;0.04;0.05})</item> returns 1124.76.</paragraph>
 </section>
 <section id="nper">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156435"><bookmark_value>calculating;number of payment periods</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156435">
+<bookmark_value>calculating;number of payment periods</bookmark_value>
 <bookmark_value>payment periods;number of</bookmark_value>
 <bookmark_value>number of payment periods</bookmark_value>
 <bookmark_value>NPER function</bookmark_value>

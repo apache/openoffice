@@ -104,7 +104,7 @@ public class SortDialogSetting {
 	 * 
 	 * @throws Exception
 	 */
-	@Ignore("Bug #119035 - Redo is not work when sort result to other postion")
+	@Ignore("Bug #119035 - Redo is not work when sort result to other position")
 	public void testSortOptionsCopyResultTo() throws Exception {
 
 		String[][] expectedSortedResult = new String[][] { { "1", "AB" }, { "2", "BC" }, { "3", "D" }, { "4", "E" }, { "5", "FLK" }, { "6", "GE" }, };

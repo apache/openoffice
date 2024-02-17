@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedguidedoc_savexml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Saving Documents</title>
@@ -34,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147226"><bookmark_value>documents; saving</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147226">
+<bookmark_value>documents; saving</bookmark_value>
 <bookmark_value>saving; documents</bookmark_value>
 <bookmark_value>backups; documents</bookmark_value>
 <bookmark_value>files; saving</bookmark_value>
@@ -43,7 +39,8 @@
 <bookmark_value>drawings; saving</bookmark_value>
 <bookmark_value>presentations; saving</bookmark_value>
 <bookmark_value>FTP; saving documents</bookmark_value>
-</bookmark><comment>mw changed "tables;..." to "spreadsheets;..."</comment><comment>mw changed "text;" to "text documents;"</comment><paragraph role="heading" id="hd_id3147226" xml-lang="en-US" level="1" l10n="U" oldref="4"><variable id="doc_save"><link href="text/shared/guide/doc_save.xhp" name="Saving Documents">Saving Documents</link>
+</bookmark><comment>mw changed "tables;..." to "spreadsheets;..."</comment><comment>mw changed "text;" to "text documents;"</comment>
+<paragraph role="heading" id="hd_id3147226" xml-lang="en-US" level="1" l10n="U" oldref="4"><variable id="doc_save"><link href="text/shared/guide/doc_save.xhp" name="Saving Documents">Saving Documents</link>
 </variable></paragraph>
 <list type="unordered">
 <listitem>
@@ -64,7 +61,7 @@
 <paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U" oldref="2">When you save a new file for the first time, the <link href="text/shared/01/01070000.xhp" name="Save As">Save As</link> dialog opens, in which you can enter a name, folder and drive or volume for the file. To open this dialog, choose <emph>File - Save As</emph>.</paragraph>
 <paragraph role="note" id="par_id3152472" xml-lang="en-US" l10n="CHG" oldref="3">You can set the automatic creation of a backup copy under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010200.xhp" name="Load/Save - General">Load/Save - General</link></emph>.</paragraph>
 <paragraph role="heading" id="hd_id7146824" xml-lang="en-US" level="2" l10n="NEW">Automatic extension to the file name</paragraph>
-<paragraph role="paragraph" id="par_id9359111" xml-lang="en-US" l10n="NEW">When saving a file, %PRODUCTNAME always appends an extension to the file name, except when the file name already has an extension that matches the file type. See the list of <link href="text/shared/00/00000021.xhp">ODF extensions</link>. </paragraph>
+<paragraph role="paragraph" id="par_id9359111" xml-lang="en-US" l10n="NEW">When saving a file, %PRODUCTNAME always appends an extension to the file name, except when the file name already has an extension that matches the file type. See the list of <link href="text/shared/00/00000021.xhp">ODF extensions</link>.</paragraph>
 <paragraph role="paragraph" id="par_id6709494" xml-lang="en-US" l10n="NEW">Some examples for the automatic extensions are listed in the following table:</paragraph>
 <table id="tbl_id9627979">
 <tablerow>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,30 +9,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared01050100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Watch Window</title>
 <filename>/text/sbasic/shared/01050100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2005-02-16T10:16:35">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="beobachter">
@@ -51,14 +44,13 @@
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3147426" xml-lang="en-US" l10n="E">
 <image id="img_id3152460" src="res/baswatr.png" width="0.25inch" height="0.222inch"><alt id="alt_id3152460" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3154012" xml-lang="en-US" l10n="U" oldref="8">Remove Watch</paragraph>
 </tablecell>
 </tablerow>
 </table>
-
 <bookmark xml-lang="en-US" branch="hid/BASCTL_HID_BASICIDE_WATCHWINDOW_LIST" id="bm_id3154944" localize="false"/>
 <paragraph role="heading" id="hd_id3154491" xml-lang="en-US" level="2" l10n="U" oldref="10">Editing the Value of a Watched Variable</paragraph>
 <paragraph role="paragraph" id="par_id3156283" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="HID_BASICIDE_WATCHWINDOW_LIST">Displays the list of watched variables. Click twice with a short pause in between on an entry to edit its value.</ahelp> The new value will be taken as the variable's value for the program.</paragraph>

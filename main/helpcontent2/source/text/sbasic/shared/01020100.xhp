@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared01020100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Using Variables</title>
@@ -35,7 +30,8 @@
 </meta>
 <body>
 <section id="variable">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149346"><bookmark_value>names of variables</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149346">
+<bookmark_value>names of variables</bookmark_value>
 <bookmark_value>variables; using</bookmark_value>
 <bookmark_value>types of variables</bookmark_value>
 <bookmark_value>declaring variables</bookmark_value>
@@ -117,7 +113,7 @@
 </tablerow>
 </table>
 <paragraph role="heading" id="hd_id3146317" xml-lang="en-US" level="2" l10n="U" oldref="17">Declaring Variables</paragraph>
-<paragraph role="paragraph" id="par_id3150299" xml-lang="en-US" l10n="U" oldref="18">In $[officename] Basic you don't need to declare variables explicitly. A variable declaration can be performed with the <emph>Dim</emph> statement. You can declare more than one variable at a time by separating the names with a comma. To define the variable type, use either a type-declaration sign after the name, or the appropriate key word. </paragraph>
+<paragraph role="paragraph" id="par_id3150299" xml-lang="en-US" l10n="U" oldref="18">In $[officename] Basic you don't need to declare variables explicitly. A variable declaration can be performed with the <emph>Dim</emph> statement. You can declare more than one variable at a time by separating the names with a comma. To define the variable type, use either a type-declaration sign after the name, or the appropriate key word.</paragraph>
 <paragraph role="paragraph" id="par_id3154118" xml-lang="en-US" l10n="U" oldref="140">Examples for variable declarations:</paragraph>
 <table id="tbl_id3154658">
 <tablerow>
@@ -182,7 +178,7 @@
 <list type="unordered">
 <listitem>
 <paragraph role="listitem" id="par_id3153972" xml-lang="en-US" l10n="U" oldref="36">
-<emph>Numeric</emph> variables can contain number values. Some variables are used to store large or small numbers, and others are used for floating-point or fractional numbers. </paragraph>
+<emph>Numeric</emph> variables can contain number values. Some variables are used to store large or small numbers, and others are used for floating-point or fractional numbers.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3159226" xml-lang="en-US" l10n="U" oldref="37">
@@ -206,7 +202,8 @@
 <paragraph role="code" id="par_id3154708" xml-lang="en-US" l10n="U" oldref="48">Dim Variable&amp;</paragraph>
 <paragraph role="code" id="par_id3156365" xml-lang="en-US" l10n="U" oldref="49">Dim Variable as Long</paragraph>
 <paragraph role="heading" id="hd_id7596972" xml-lang="en-US" level="3" l10n="NEW">Decimal Variables<comment>see i64349</comment></paragraph>
-<paragraph role="paragraph" id="par_id2649311" xml-lang="en-US" l10n="NEW">Decimal variables can take positive or negative numbers or zero. Accuracy is up to 29 digits.</paragraph><comment>i85284</comment><paragraph role="paragraph" id="par_id7617114" xml-lang="en-US" l10n="NEW">You can use plus (+) or minus (-) signs as prefixes for decimal numbers (with or without spaces).</paragraph>
+<paragraph role="paragraph" id="par_id2649311" xml-lang="en-US" l10n="NEW">Decimal variables can take positive or negative numbers or zero. Accuracy is up to 29 digits.</paragraph><comment>i85284</comment>
+<paragraph role="paragraph" id="par_id7617114" xml-lang="en-US" l10n="NEW">You can use plus (+) or minus (-) signs as prefixes for decimal numbers (with or without spaces).</paragraph>
 <paragraph role="paragraph" id="par_id1593676" xml-lang="en-US" l10n="NEW">If a decimal number is assigned to an integer variable, %PRODUCTNAME Basic rounds the figure up or down.<comment>this is the only information from "Programming Guide
 for BASIC" about decimal variables</comment></paragraph>
 <paragraph role="heading" id="hd_id3147500" xml-lang="en-US" level="3" l10n="U" oldref="50">Single Variables</paragraph>

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,53 +51,53 @@ using namespace rtl;
 
 class SVInputStream : public cppu::WeakImplHelper1< XInputStream >
 {
-    SvStream* pStream;
+	SvStream* pStream;
 public:
-    SVInputStream( SvStream* pSt ):pStream( pSt ){};
-    ~SVInputStream(){ delete pStream; pStream=NULL; }
+	SVInputStream( SvStream* pSt ):pStream( pSt ){};
+	~SVInputStream(){ delete pStream; pStream=NULL; }
 
-    // Methods XInputStream
-    virtual sal_Int32 SAL_CALL readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL available(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL closeInput(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	// Methods XInputStream
+	virtual sal_Int32 SAL_CALL readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL available(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL closeInput(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
 };
 
 
 sal_Int32 SAL_CALL SVInputStream::readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
-    aData.realloc( nBytesToRead  );
-    sal_Int32 nRead = pStream->Read( aData.getArray(), nBytesToRead );
-    aData.realloc( nRead );
-    return nRead;
+	aData.realloc( nBytesToRead  );
+	sal_Int32 nRead = pStream->Read( aData.getArray(), nBytesToRead );
+	aData.realloc( nRead );
+	return nRead;
 }
 
 sal_Int32 SAL_CALL SVInputStream::readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
-    return readBytes( aData, nMaxBytesToRead );
+	return readBytes( aData, nMaxBytesToRead );
 }
 
 void SAL_CALL SVInputStream::skipBytes( sal_Int32 nBytesToSkip ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
-    if ( nBytesToSkip > 0 )
-        pStream->SeekRel( nBytesToSkip );
+	if ( nBytesToSkip > 0 )
+		pStream->SeekRel( nBytesToSkip );
 }
 
 sal_Int32 SAL_CALL SVInputStream::available(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
-    sal_uLong nCurrent = pStream->Tell();
-    sal_uLong nSize = pStream->Seek( STREAM_SEEK_TO_END );
-    sal_uLong nAvailable = nSize - nCurrent;
-    pStream->Seek( nCurrent );
-    return nAvailable;
+	sal_uLong nCurrent = pStream->Tell();
+	sal_uLong nSize = pStream->Seek( STREAM_SEEK_TO_END );
+	sal_uLong nAvailable = nSize - nCurrent;
+	pStream->Seek( nCurrent );
+	return nAvailable;
 }
 
 void SAL_CALL SVInputStream::closeInput(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
-//  pStream->Close(); // automatically done in destructor
-    delete pStream;
-    pStream = NULL;
+//	pStream->Close(); // automatically done in destructor
+	delete pStream;
+	pStream = NULL;
 }
 
 class Node;
@@ -109,17 +109,17 @@ enum NodeType { NODE_CHARACTER = CONST_NodeTypeCharacter,
 
 class Node : public SvRefBase
 {
-    NodeType aNodeType;
-    Node* pParent;  // Use pointer to prevent cyclic references resulting in undeleted objects
+	NodeType aNodeType;
+	Node* pParent; // Use pointer to prevent cyclic references resulting in undeleted objects
 
 protected:
-    Node( NodeType aType ): aNodeType( aType ), pParent( NULL ){};
-    virtual ~Node();
+	Node( NodeType aType ): aNodeType( aType ), pParent( NULL ){};
+	virtual ~Node();
 
 public:
-    NodeType GetNodeType() { return aNodeType; }
-    void SetParent( NodeRef xNewParent );
-    NodeRef GetParent();
+	NodeType GetNodeType() { return aNodeType; }
+	void SetParent( NodeRef xNewParent );
+	NodeRef GetParent();
 };
 
 SV_IMPL_REF(Node)
@@ -132,61 +132,61 @@ Node::~Node()
 
 void Node::SetParent( NodeRef xNewParent )
 {
-    pParent = &xNewParent;
+	pParent = &xNewParent;
 }
 
 NodeRef Node::GetParent()
 {
-    return NodeRef( pParent );
+	return NodeRef( pParent );
 }
 
 class CharacterNode : public Node
 {
-    String aCharacters;
+	String aCharacters;
 public:
-    CharacterNode( const String& aChars ): Node( NODE_CHARACTER ), aCharacters( aChars ){};
+	CharacterNode( const String& aChars ): Node( NODE_CHARACTER ), aCharacters( aChars ){};
 
-    String GetCharacters() { return aCharacters; }
+	String GetCharacters() { return aCharacters; }
 };
 
 class ElementNode : public Node
 {
-    String aNodeName;
-    Reference < XAttributeList > xAttributeList;
-    NodeRefMemberList aDocumentNodeList;
+	String aNodeName;
+	Reference < XAttributeList > xAttributeList;
+	NodeRefMemberList aDocumentNodeList;
 public:
-    ElementNode( const String& aName, Reference < XAttributeList > xAttributes );
-    void AppendNode( NodeRef xNewNode );
-    sal_uLong GetChildCount(){ return aDocumentNodeList.Count(); }
-    NodeRef GetChild( sal_uInt16 nIndex ){ return aDocumentNodeList.GetObject( nIndex ); }
-    Reference < XAttributeList > GetAttributes(){ return xAttributeList; }
+	ElementNode( const String& aName, Reference < XAttributeList > xAttributes );
+	void AppendNode( NodeRef xNewNode );
+	sal_uLong GetChildCount(){ return aDocumentNodeList.Count(); }
+	NodeRef GetChild( sal_uInt16 nIndex ){ return aDocumentNodeList.GetObject( nIndex ); }
+	Reference < XAttributeList > GetAttributes(){ return xAttributeList; }
 
-    String GetNodeName() { return aNodeName; }
+	String GetNodeName() { return aNodeName; }
 };
 
 ElementNode::ElementNode( const String& aName, Reference < XAttributeList > xAttributes )
 : Node( NODE_ELEMENT )
 , aNodeName( aName )
 {
-    if ( xAttributes.is() )
-    {
-        Reference < XCloneable > xAttributeCloner( xAttributes, UNO_QUERY );
-        if ( xAttributeCloner.is() )
-            xAttributeList = Reference < XAttributeList > ( xAttributeCloner->createClone() , UNO_QUERY );
-        else
-        {
-            DBG_ERROR("Unable to clone AttributeList");
-        }
-    }
+	if ( xAttributes.is() )
+	{
+		Reference < XCloneable > xAttributeCloner( xAttributes, UNO_QUERY );
+		if ( xAttributeCloner.is() )
+			xAttributeList = Reference < XAttributeList > ( xAttributeCloner->createClone() , UNO_QUERY );
+		else
+		{
+			DBG_ERROR("Unable to clone AttributeList");
+		}
+	}
 };
 
 void ElementNode::AppendNode( NodeRef xNewNode )
 {
-    aDocumentNodeList.Insert ( xNewNode, LIST_APPEND );
-    xNewNode->SetParent( this );
+	aDocumentNodeList.Insert ( xNewNode, LIST_APPEND );
+	xNewNode->SetParent( this );
 }
 
-//    XIndexAccess
+// XIndexAccess
 
 
 
@@ -196,149 +196,149 @@ enum ParseAction { COLLECT_DATA, COLLECT_DATA_IGNORE_WHITESPACE, PARSE_ONLY };
 
 class SAXParser : public cppu::WeakImplHelper2< XErrorHandler, XDocumentHandler >
 {
-    String aFilename;
-    Reference < XParser > xParser;
+	String aFilename;
+	Reference < XParser > xParser;
 
-    // XErrorHandler
-    void AddToList( const sal_Char* cuType, const ::com::sun::star::uno::Any& aSAXParseException );
-    String aErrors;
+	// XErrorHandler
+	void AddToList( const sal_Char* cuType, const ::com::sun::star::uno::Any& aSAXParseException );
+	String aErrors;
 
-    NodeRef xTreeRoot;
-    NodeRef xCurrentNode;
-    sal_uLong nTimestamp;
-    ParseAction aAction;
+	NodeRef xTreeRoot;
+	NodeRef xCurrentNode;
+	sal_uLong nTimestamp;
+	ParseAction aAction;
 
 public:
-    SAXParser( const String &rFilename );
-    ~SAXParser();
+	SAXParser( const String &rFilename );
+	~SAXParser();
 
-    // Access Methods
-    NodeRef GetCurrentNode(){ return xCurrentNode; }
-    void SetCurrentNode( NodeRef xCurrent ){ xCurrentNode = xCurrent; }
-    NodeRef GetRootNode(){ return xTreeRoot; }
-    sal_uLong GetTimestamp(){ return nTimestamp; }
-    void Touch(){ nTimestamp = Time::GetSystemTicks(); }
+	// Access Methods
+	NodeRef GetCurrentNode(){ return xCurrentNode; }
+	void SetCurrentNode( NodeRef xCurrent ){ xCurrentNode = xCurrent; }
+	NodeRef GetRootNode(){ return xTreeRoot; }
+	sal_uLong GetTimestamp(){ return nTimestamp; }
+	void Touch(){ nTimestamp = Time::GetSystemTicks(); }
 
-    // Methods SAXParser
-    sal_Bool Parse( ParseAction aAct );
-    String GetErrors(){ return aErrors; }
+	// Methods SAXParser
+	sal_Bool Parse( ParseAction aAct );
+	String GetErrors(){ return aErrors; }
 
-    // Methods XErrorHandler
-    virtual void SAL_CALL error( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL fatalError( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL warning( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	// Methods XErrorHandler
+	virtual void SAL_CALL error( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL fatalError( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL warning( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
 
-    // Methods XDocumentHandler
-    virtual void SAL_CALL startDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL endDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL endElement( const ::rtl::OUString& aName ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL characters( const ::rtl::OUString& aChars ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& aWhitespaces ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	// Methods XDocumentHandler
+	virtual void SAL_CALL startDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL endDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL endElement( const ::rtl::OUString& aName ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL characters( const ::rtl::OUString& aChars ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& aWhitespaces ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
 };
 
 
 SAXParser::SAXParser( const String &rFilename )
 : aFilename( rFilename )
 {
-    Touch();
+	Touch();
 }
 
 SAXParser::~SAXParser()
 {
-    xParser.clear();
+	xParser.clear();
 }
 
 sal_Bool SAXParser::Parse( ParseAction aAct )
 {
-    aAction = aAct;
-    Touch();
-    SvStream* pStream = new SvFileStream( aFilename, STREAM_STD_READ );
-    if ( pStream->GetError() )
-        return sal_False;
+	aAction = aAct;
+	Touch();
+	SvStream* pStream = new SvFileStream( aFilename, STREAM_STD_READ );
+	if ( pStream->GetError() )
+		return sal_False;
 
-    InputSource sSource;
-    sSource.aInputStream = new SVInputStream( pStream );    // is refcounted and hence deletet appropriately
-    sSource.sPublicId = OUString( aFilename );
+	InputSource sSource;
+	sSource.aInputStream = new SVInputStream( pStream ); // is refcounted and hence deleted appropriately
+	sSource.sPublicId = OUString( aFilename );
 
-    xParser = Reference < XParser > ( ::comphelper::getProcessServiceFactory()->createInstance( CUniString("com.sun.star.xml.sax.Parser") ), UNO_QUERY );
-    if ( xParser.is() )
-    {
-        xParser->setErrorHandler( ( XErrorHandler*) this );
-        if ( aAction == COLLECT_DATA || aAction == COLLECT_DATA_IGNORE_WHITESPACE )
-            xParser->setDocumentHandler( ( XDocumentHandler*) this );
+	xParser = Reference < XParser > ( ::comphelper::getProcessServiceFactory()->createInstance( CUniString("com.sun.star.xml.sax.Parser") ), UNO_QUERY );
+	if ( xParser.is() )
+	{
+		xParser->setErrorHandler( ( XErrorHandler*) this );
+		if ( aAction == COLLECT_DATA || aAction == COLLECT_DATA_IGNORE_WHITESPACE )
+			xParser->setDocumentHandler( ( XDocumentHandler*) this );
 
-        try
-        {
-            xParser->parseStream ( sSource );
-	    }
-	    catch( class SAXParseException & rPEx)
-	    {
+		try
+		{
+			xParser->parseStream ( sSource );
+		}
+		catch( class SAXParseException & rPEx)
+		{
 #ifdef DBG_ERROR
-            String aMemo( rPEx.Message );
-            aMemo = String( aMemo );
+			String aMemo( rPEx.Message );
+			aMemo = String( aMemo );
 #endif
-	    }
-	    catch( class Exception & rEx)
-	    {
+		}
+		catch( class Exception & rEx)
+		{
 #ifdef DBG_ERROR
-            String aMemo( rEx.Message );
-            aMemo = String( aMemo );
+			String aMemo( rEx.Message );
+			aMemo = String( aMemo );
 #endif
-	    }
-        xParser->setErrorHandler( NULL );   // otherwile Object holds itself
-        if ( aAction == COLLECT_DATA || aAction == COLLECT_DATA_IGNORE_WHITESPACE )
-            xParser->setDocumentHandler( NULL );    // otherwile Object holds itself
-    }
-    else
-        return sal_False;
-    return sal_True;
+		}
+		xParser->setErrorHandler( NULL );   // otherwise Object holds itself
+		if ( aAction == COLLECT_DATA || aAction == COLLECT_DATA_IGNORE_WHITESPACE )
+			xParser->setDocumentHandler( NULL ); // otherwise Object holds itself
+	}
+	else
+		return sal_False;
+	return sal_True;
 }
 
 
 // Helper Methods XErrorHandler
 void SAXParser::AddToList( const sal_Char* cuType, const ::com::sun::star::uno::Any& aSAXParseException )
 {
-    SAXParseException aException;
-    aSAXParseException >>= aException;
+	SAXParseException aException;
+	aSAXParseException >>= aException;
 
-    aErrors.Append( String( aException.PublicId ) );
-    aErrors.AppendAscii( "(" );
-    aErrors.Append( String::CreateFromInt64( aException.LineNumber ) );
-    aErrors.AppendAscii( ":" );
-    aErrors.Append( String::CreateFromInt64( aException.ColumnNumber ) );
-    aErrors.AppendAscii( ") : " );
-    aErrors.AppendAscii( cuType );
-    aErrors.AppendAscii( ": " );
-    aErrors.Append( String( aException.Message ) );
-    aErrors.AppendAscii( "\n" );
+	aErrors.Append( String( aException.PublicId ) );
+	aErrors.AppendAscii( "(" );
+	aErrors.Append( String::CreateFromInt64( aException.LineNumber ) );
+	aErrors.AppendAscii( ":" );
+	aErrors.Append( String::CreateFromInt64( aException.ColumnNumber ) );
+	aErrors.AppendAscii( ") : " );
+	aErrors.AppendAscii( cuType );
+	aErrors.AppendAscii( ": " );
+	aErrors.Append( String( aException.Message ) );
+	aErrors.AppendAscii( "\n" );
 }
 
 // Methods XErrorHandler
 void SAL_CALL SAXParser::error( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    AddToList( "error", aSAXParseException );
+	AddToList( "error", aSAXParseException );
 }
 
 void SAL_CALL SAXParser::fatalError( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    AddToList( "fatal error", aSAXParseException );
+	AddToList( "fatal error", aSAXParseException );
 }
 
 void SAL_CALL SAXParser::warning( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    AddToList( "warning", aSAXParseException );
+	AddToList( "warning", aSAXParseException );
 }
 
 
 // Methods XDocumentHandler
 void SAXParser::startDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    xTreeRoot = new ElementNode( CUniString("/"), Reference < XAttributeList > (NULL) );
-    xCurrentNode = xTreeRoot;
-    Touch();
+	xTreeRoot = new ElementNode( CUniString("/"), Reference < XAttributeList > (NULL) );
+	xCurrentNode = xTreeRoot;
+	Touch();
 }
 
 void SAXParser::endDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
@@ -347,23 +347,23 @@ void SAXParser::endDocument(  ) throw (::com::sun::star::xml::sax::SAXException,
 
 void SAXParser::startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    NodeRef xNewNode = new ElementNode ( String(aName), xAttribs );
-    ((ElementNode*)(&xCurrentNode))->AppendNode( xNewNode );
-    xCurrentNode = xNewNode;
+	NodeRef xNewNode = new ElementNode ( String(aName), xAttribs );
+	((ElementNode*)(&xCurrentNode))->AppendNode( xNewNode );
+	xCurrentNode = xNewNode;
 }
 
 void SAXParser::endElement( const ::rtl::OUString& aName ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    (void) aName; /* avoid warning about unused parameter */ 
-    xCurrentNode = xCurrentNode->GetParent();
+	(void) aName; /* avoid warning about unused parameter */
+	xCurrentNode = xCurrentNode->GetParent();
 }
 
 void SAXParser::characters( const ::rtl::OUString& aChars ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    if ( aAction == COLLECT_DATA_IGNORE_WHITESPACE )
-    {   // check for whitespace
-        sal_Bool bAllWhitespace = sal_True;
-        for ( int i = 0 ; bAllWhitespace && i < aChars.getLength() ; i++ )
+	if ( aAction == COLLECT_DATA_IGNORE_WHITESPACE )
+	{   // check for whitespace
+		sal_Bool bAllWhitespace = sal_True;
+		for ( int i = 0 ; bAllWhitespace && i < aChars.getLength() ; i++ )
             if ( aChars[i] != 10 // LF
               && aChars[i] != 13 // CR
               && aChars[i] != ' ' // Blank
@@ -371,29 +371,29 @@ void SAXParser::characters( const ::rtl::OUString& aChars ) throw (::com::sun::s
                 bAllWhitespace = sal_False;
         if ( bAllWhitespace )
             return;
-    }
-    NodeRef xNewNode = new CharacterNode ( String(aChars) );
-    ((ElementNode*)(&xCurrentNode))->AppendNode( xNewNode );
+	}
+	NodeRef xNewNode = new CharacterNode ( String(aChars) );
+	((ElementNode*)(&xCurrentNode))->AppendNode( xNewNode );
 }
 
 void SAXParser::ignorableWhitespace( const ::rtl::OUString& aWhitespaces ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    (void) aWhitespaces; /* avoid warning about unused parameter */ 
+	(void) aWhitespaces; /* avoid warning about unused parameter */
 }
 
 void SAXParser::processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    (void) aTarget; /* avoid warning about unused parameter */ 
-    (void) aData; /* avoid warning about unused parameter */ 
+	(void) aTarget; /* avoid warning about unused parameter */
+	(void) aData; /* avoid warning about unused parameter */
 }
 
 void SAXParser::setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
-    (void) xLocator; /* avoid warning about unused parameter */ 
+	(void) xLocator; /* avoid warning about unused parameter */
 #if OSL_DEBUG_LEVEL > 1
-    ::rtl::OUString aTester;
-    aTester = xLocator->getPublicId();
-    aTester = xLocator->getSystemId();
+	::rtl::OUString aTester;
+	aTester = xLocator->getPublicId();
+	aTester = xLocator->getSystemId();
 #endif
 }
 
@@ -402,15 +402,15 @@ void SAXParser::setDocumentLocator( const ::com::sun::star::uno::Reference< ::co
 
 void StatementCommand::HandleSAXParser()
 {
-    static Reference < XReference > xParserKeepaliveReference;  // this is to keep the Object alive only
-    static SAXParser* pSAXParser;
+	static Reference < XReference > xParserKeepaliveReference; // this is to keep the Object alive only
+	static SAXParser* pSAXParser;
 
-    // We need spechial prerequisites for these!
+	// We need special prerequisites for these!
 
-    ElementNode* pElementNode = NULL;
+	ElementNode* pElementNode = NULL;
 	switch ( nMethodId )
 	{
-        case RC_SAXGetNodeType:
+		case RC_SAXGetNodeType:
 		case RC_SAXGetAttributeCount:
 		case RC_SAXGetAttributeName:
 		case RC_SAXGetAttributeValue:
@@ -418,7 +418,7 @@ void StatementCommand::HandleSAXParser()
 		case RC_SAXGetElementName:
 		case RC_SAXGetChars:
 
-        case RC_SAXSeekElement:
+		case RC_SAXSeekElement:
 		case RC_SAXHasElement:
 		case RC_SAXGetElementPath:
             {
@@ -686,6 +686,7 @@ void StatementCommand::HandleSAXParser()
 			break;
 		default:
 			ReportError( GEN_RES_STR1( S_INTERNAL_ERROR, RcString( nMethodId ) ) );
-    }
+	}
 }
 
+/* vim: set noet sw=4 ts=4: */

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,33 +9,28 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textswriter0104180400xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Exchange Database</title>
 <filename>/text/swriter/01/04180400.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-02-24T12:09:53">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3145799"><bookmark_value>databases; exchanging</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145799">
+<bookmark_value>databases; exchanging</bookmark_value>
 <bookmark_value>address books; exchanging</bookmark_value>
 <bookmark_value>exchanging databases</bookmark_value>
 <bookmark_value>replacing;databases</bookmark_value>
@@ -47,7 +41,7 @@
 <paragraph role="paragraph" id="par_id3156384" xml-lang="en-US" l10n="U" oldref="2"><variable id="datenbankaustext"><ahelp hid=".uno:ChangeDatabaseField">Change the data sources for the current document.</ahelp> To correctly display the contents of inserted fields, the replacement database must contain identical field names. 
 </variable></paragraph>
 <section id="howtoget">
-  <embed href="text/swriter/00/00000402.xhp#datenaust"/>
+<embed href="text/swriter/00/00000402.xhp#datenaust"/>
 </section>
 <paragraph role="paragraph" id="par_id3153818" xml-lang="en-US" l10n="U" oldref="8">For example, if you inserting address fields in a form letter from an address database, you can then exchange the database with another address database to insert different addresses.</paragraph>
 <paragraph role="heading" id="hd_id3149130" xml-lang="en-US" level="2" l10n="U" oldref="3">Exchanging Databases</paragraph>
@@ -61,7 +55,7 @@
 <paragraph role="heading" id="par_idN106DB" xml-lang="en-US" level="2" l10n="NEW">Browse</paragraph>
 <paragraph role="paragraph" id="par_idN106DF" xml-lang="en-US" l10n="NEW"><ahelp hid="1419596301">Opens a file open dialog to select a database file (*.odb). The selected file is added to the Available Databases list.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3149349" xml-lang="en-US" level="2" l10n="U" oldref="7">Define</paragraph>
-<paragraph role="paragraph" id="par_id3145827" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SW_MODALDIALOG_DLG_CHANGE_DB">Replaces the current data source with the data source that you selected in the <emph>Available Databases </emph>list.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3145827" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SW_MODALDIALOG_DLG_CHANGE_DB">Replaces the current data source with the data source that you selected in the <emph>Available Databases</emph> list.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3154506" xml-lang="en-US" level="2" l10n="U" oldref="12">To exchange a database:</paragraph>
 <paragraph role="paragraph" id="par_id3149881" xml-lang="en-US" l10n="U" oldref="13">Ensure that both databases contain matching field names and field types.</paragraph>
 <list type="ordered">

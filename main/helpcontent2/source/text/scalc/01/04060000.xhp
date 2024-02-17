@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textscalc0104060000xml" indexer="include">
 <title id="tit" xml-lang="en-US">Function Wizard</title>
@@ -33,7 +30,8 @@
 </meta>
 <body>
 <section id="funktionsautopilot">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147426"><bookmark_value>inserting functions; Function Wizard</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147426">
+<bookmark_value>inserting functions; Function Wizard</bookmark_value>
 <bookmark_value>functions;Function Wizard</bookmark_value>
 <bookmark_value>wizards; functions</bookmark_value>
 </bookmark>
@@ -60,7 +58,7 @@
 <paragraph role="paragraph" id="par_id3155445" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SC:LISTBOX:RID_SCTAB_FUNCTION:LB_FUNCTION">Displays the functions found under the selected category. Double-click to select a function.</ahelp> A single-click displays a short function description.</paragraph>
 <!-- removed HID SC:CHECKBOX:RID_SCDLG_FORMULA:BTN_MATRIX -->
 <paragraph role="heading" id="hd_id3159264" xml-lang="en-US" level="3" l10n="U" oldref="8">Array</paragraph>
-<paragraph role="paragraph" id="par_id3149566" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SC:CHECKBOX:RID_SCDLG_FORMULA:BTN_MATRIX">Specifies that the selected function is inserted into the selected cell range as an array formula. </ahelp> Array formulas operate on multiple cells. Each cell in the array contains the formula, not as a copy but as a common formula shared by all matrix cells.</paragraph>
+<paragraph role="paragraph" id="par_id3149566" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SC:CHECKBOX:RID_SCDLG_FORMULA:BTN_MATRIX">Specifies that the selected function is inserted into the selected cell range as an array formula.</ahelp> Array formulas operate on multiple cells. Each cell in the array contains the formula, not as a copy but as a common formula shared by all matrix cells.</paragraph>
 <paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="61">The <emph>Array</emph> option is identical to the <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Enter command, which is used to enter and confirm formulas in the sheet. The formula is inserted as a matrix formula indicated by two braces { }.</paragraph>
 <paragraph role="note" id="par_id3152993" xml-lang="en-US" l10n="U" oldref="40">The maximum size of an array range is 128 by 128 cells.</paragraph>
 <paragraph role="heading" id="hd_id3150367" xml-lang="en-US" level="3" l10n="U" oldref="41">Argument Input Fields</paragraph>
@@ -89,7 +87,7 @@
 <paragraph role="tip" id="par_id3146966" xml-lang="en-US" l10n="U" oldref="56">To select a single function from a complex formula consisting of several functions, double-click the function in the formula window.</paragraph>
 <!-- removed HID SC:PUSHBUTTON:RID_SCDLG_FORMULA:BTN_FORWARD -->
 <paragraph role="heading" id="hd_id3155762" xml-lang="en-US" level="3" l10n="U" oldref="54">Next</paragraph>
-<paragraph role="paragraph" id="par_id3149316" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="SC:PUSHBUTTON:RID_SCDLG_FORMULA:BTN_FORWARD">Moves forward through the formula components in the formula window.</ahelp> This button can also be used to assign functions to the formula. If you select a function and click the <emph>Next </emph>button, the selection appears in the formula window.</paragraph>
+<paragraph role="paragraph" id="par_id3149316" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="SC:PUSHBUTTON:RID_SCDLG_FORMULA:BTN_FORWARD">Moves forward through the formula components in the formula window.</ahelp> This button can also be used to assign functions to the formula. If you select a function and click the <emph>Next</emph> button, the selection appears in the formula window.</paragraph>
 <paragraph role="tip" id="par_id3159262" xml-lang="en-US" l10n="U" oldref="57">Double-click a function in the selection window to transfer it to the formula window.</paragraph>
 <paragraph role="heading" id="hd_id3148745" xml-lang="en-US" level="3" l10n="U" oldref="58">Cancel</paragraph>
 <paragraph role="paragraph" id="par_id3147402" xml-lang="en-US" l10n="U" oldref="59">Closes the dialog without implementing the formula.</paragraph>

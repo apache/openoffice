@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -288,7 +288,7 @@ public:
 
     /**
         Create a socket address either from a dotted decimal address
-        (e.g. 141.99.128.50) or a hostname (e.g. www.stardiv.de).
+        (e.g. 141.99.128.50) or a hostname (e.g. www.openoffice.org).
     */
     OInetSocketAddr(const ::rtl::OUString& strAddrOrHostName, sal_Int32 Port);
 
@@ -444,7 +444,7 @@ protected:
 public:
 
     /** Does not create a socket. Use assignment operator to
-        make this a useable socket.
+        make this a usable socket.
     */
     OSocket();
 
@@ -570,7 +570,7 @@ public:
         will NOT block; False if it would block or if an error occurred.
 
         @param pTimeout if 0, the operation will block without a timeout. Otherwise
-        the specified amout of time.
+        the specified amount of time.
     */
     sal_Bool    SAL_CALL isRecvReady(const TimeValue* pTimeout = 0) const;
 
@@ -581,7 +581,7 @@ public:
         will NOT block; False if it would block or if an error occurred.
 
         @param pTimeout if 0, the operation will block without a timeout. Otherwise
-        the specified amout of time.
+        the specified amount of time.
     */
     sal_Bool    SAL_CALL isSendReady(const TimeValue* pTimeout = 0) const;
 
@@ -593,7 +593,7 @@ public:
         on the Socket will NOT block; False if it would block or if an error occurred.
 
         @param pTimeout if 0, the operation will block without a timeout. Otherwise
-        the specified amout of time.
+        the specified amount of time.
     */
     sal_Bool    SAL_CALL isExceptionPending(const TimeValue* pTimeout = 0) const;
 
@@ -689,7 +689,7 @@ public:
 
     /** Enables/disables non-blocking mode of the socket.
         @param On If True, non-blocking mode will be switched on, if False
-        socket will become a blocking socket, which is the default behaviour of a
+        socket will become a blocking socket, which is the default behavior of a
         socket.
         @return True if mode could be set.
     */
@@ -796,7 +796,7 @@ public:
     void SAL_CALL getError(::rtl::OUString& strError) const;
 
     /** Delivers a constant describing the last error for the socket system.
-        @return ENONE if no error occurred, invalid_SocketError if
+        @return NONE if no error occurred, invalid_SocketError if
         an unknown (unmapped) error occurred, otherwise an enum describing the
         error.
     */
@@ -1009,7 +1009,7 @@ public:
 };
 
 
-/** A socket to initiate a conenction.
+/** A socket to initiate a connection.
 */
 class VOS_DLLPUBLIC OConnectorSocket : public vos::OStreamSocket
 {
@@ -1071,7 +1071,7 @@ public:
     /** Tries to receives BufferSize data from the socket, if no error occurs.
 
         @param pSenderAddr [out] You must provide pointer to a SocketAddr.
-        It will be  filled with the address of the datagrams sender.
+        It will be filled with the address of the datagrams sender.
         If pSenderAddr is 0, it is ignored.
         @param pBuffer [out] Points to a buffer that will be filled with the received
         datagram.
@@ -1093,7 +1093,7 @@ public:
                      TSocketMsgFlag Flag= TMsg_Normal);
 
     /** Tries to send one datagram with BytesToSend data to the given ReceiverAddr.
-        Since we only send one packet, we don't need to concern ourselfes here with
+        Since we only send one packet, we don't need to concern ourselves here with
         incomplete sends due to packet boundaries.
 
         @param ReceiverAddr [in] A SocketAddr that contains
@@ -1125,3 +1125,4 @@ public:
 
 #endif // _VOS_SOCKET_HXX_
 
+/* vim: set noet sw=4 ts=4: */

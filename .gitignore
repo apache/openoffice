@@ -68,16 +68,18 @@ TAGS
 /main/external/vcredist/*
 
 # $INPATH output directories
+/*/*/unxfbsd?
+/*/*/unxfbsd?.pro
 /*/*/unxlng??
 /*/*/unxlng??.pro
+/*/*/unxmac??
+/*/*/unxmac??.pro
+/*/*/unxso???
+/*/*/unxso???.pro
 /*/*/wntmsc???
 /*/*/wntmsc???.pro
 /*/*/wntgcc?
 /*/*/wntgcc?.pro
-/*/*/unxso???
-/*/*/unxso???.pro
-/*/*/unxmac??
-/*/*/unxmac??.pro
 
 # Windows Accessibility Bridge
 main/winaccessibility/source/UAccCOMIDL/dlldata.c

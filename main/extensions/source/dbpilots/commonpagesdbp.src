@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _EXTENSIONS_DBP_DBPRESID_HRC_
 #include "dbpresid.hrc"
 #endif
@@ -69,7 +67,7 @@ TabPage RID_PAGE_TABLESELECTION
 		HelpID = "extensions:PushButton:RID_PAGE_TABLESELECTION:PB_FORMDATASOURCE" ;
 		Pos = MAP_APPFONT ( WINDOW_HALF_SIZE_X + 3 + WINDOW_HALF_SIZE_X - 24, 25 ) ;
 		Size = MAP_APPFONT ( 14, 14 ) ;
-		Text [ en-US ] = "~..." ;
+		Text = "~..." ;
 	};
 
 	FixedText FT_TABLE

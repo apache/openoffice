@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,6 +20,7 @@
  * under the License.
  *
  ***********************************************************-->
+
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedguideversion_numberxml" indexer="include" status="PUBLISH">
@@ -27,13 +29,14 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3144436"><bookmark_value>versions; $[officename]</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144436">
+<bookmark_value>versions; $[officename]</bookmark_value>
 <bookmark_value>build numbers of $[officename]</bookmark_value>
 <bookmark_value>copyright for $[officename]</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3144436" xml-lang="en-US" level="1" l10n="U" oldref="4"><variable id="version_number"><link href="text/shared/guide/version_number.xhp" name="Versions and Build Numbers">Versions and Build Numbers</link>
+<paragraph role="heading" id="hd_id3144436" xml-lang="en-US" level="1" l10n="U"><variable id="version_number"><link href="text/shared/guide/version_number.xhp" name="Versions and Build Numbers">Versions and Build Numbers</link>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3149346" xml-lang="en-US" l10n="CHG" oldref="5">Choose <emph>Help - About $[officename]</emph>. This opens a dialog containing information about the program, like the version and build number.</paragraph>
+<paragraph role="paragraph" id="par_id3149346" xml-lang="en-US" l10n="CHG">Choose <emph>Help - About $[officename]</emph>. This opens a dialog containing information about the program, like the version and build number.</paragraph>
 <embed href="text/shared/00/00000004.xhp#related"/>
 <embed href="text/shared/05/00000110.xhp#00000110"/>
 </body>

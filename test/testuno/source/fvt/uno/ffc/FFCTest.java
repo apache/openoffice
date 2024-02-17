@@ -53,7 +53,7 @@ import com.sun.star.lang.IllegalArgumentException;
 import com.sun.star.lang.XComponent;
 import com.sun.star.uno.UnoRuntime;
 /**
- * Pls place a suite file in directory "suite" which is same level with test uno. like bewlow
+ * Pls place a suite file in directory "suite" which is same level with test uno. like below
  * -suite
  * -testuno
  * The suite file content is like this format
@@ -232,7 +232,7 @@ public class FFCTest {
 		// close this document
 		app.closeDocument(xComponent);
 		File pdfFile = new File(saveAsFilePath);
-		Assert.assertTrue("Verify sampe file " + testFilePath + " exprot to pdf!", pdfFile.exists());
+		Assert.assertTrue("Verify sample file " + testFilePath + " export to pdf!", pdfFile.exists());
 	}
 	
 	public static void initMap() {

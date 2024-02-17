@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsharedoptionen01010100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">User Data</title>
 <filename>/text/shared/optionen/01010100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2006-02-23T15:07:13">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="allgemeines">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155805"><bookmark_value>data; user data</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155805">
+<bookmark_value>data; user data</bookmark_value>
 <bookmark_value>user data; input</bookmark_value>
 <bookmark_value>personal data input</bookmark_value>
 </bookmark>
@@ -46,7 +40,7 @@
 <paragraph role="paragraph" id="par_id3156410" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_OPTIONS_GENERAL">Use this tab page to enter or edit user data.</ahelp> Some of the data may have already been entered by the user when installing $[officename].</paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/shared/00/00000406.xhp#benutzerdaten"/>
+<embed href="text/shared/00/00000406.xhp#benutzerdaten"/>
 </section>
 <paragraph role="paragraph" id="par_id3153748" xml-lang="en-US" l10n="U" oldref="27">User data is used by templates and Wizards in $[officename]. For example, the "First name" and "Last name" data fields are used to automatically insert your name as the author of a new document. You can see this under <emph>File - Properties</emph>.</paragraph>
 <paragraph role="paragraph" id="par_id3153031" xml-lang="en-US" l10n="U" oldref="28">Some of the user data is included automatically in an internal dictionary so that it is recognized by the spellchecker. If typing errors are made, the program can use this data to suggest replacements. Note that changes to data take effect only after $[officename] is restarted.</paragraph>

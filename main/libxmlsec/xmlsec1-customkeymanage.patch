@@ -3097,7 +3097,7 @@
 +				xmlSecErrorsSafeString( xmlSecTransformGetName( transform ) ) ,
 +				NULL ,
 +				XMLSEC_ERRORS_R_INVALID_STATUS ,
-+				"No enough data to intialize transform" ) ;
++				"No enough data to initialize transform" ) ;
 +			return(-1);
 +		}
 +

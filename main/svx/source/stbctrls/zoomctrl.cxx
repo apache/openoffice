@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -108,7 +108,7 @@ void ZoomPopup_Impl::Select()
 // class SvxZoomStatusBarControl ------------------------------------------
 
 SvxZoomStatusBarControl::SvxZoomStatusBarControl( sal_uInt16 _nSlotId,
-                                                  sal_uInt16 _nId,
+												  sal_uInt16 _nId,
 												  StatusBar& rStb ) :
 
 	SfxStatusBarControl( _nSlotId, _nId, rStb ),
@@ -132,7 +132,7 @@ void SvxZoomStatusBarControl::StateChanged( sal_uInt16, SfxItemState eState,
 		const SfxUInt16Item* pItem = (const SfxUInt16Item*)pState;
 		nZoom = pItem->GetValue();
 		String aStr( String::CreateFromInt32(nZoom) );
-        aStr.AppendAscii( " %" );
+		aStr.AppendAscii( " %" );
 		GetStatusBar().SetItemText( GetId(), aStr );
 
 		if ( pState->ISA(SvxZoomItem) )
@@ -168,7 +168,7 @@ void SvxZoomStatusBarControl::StateChanged( sal_uInt16, SfxItemState eState,
 void SvxZoomStatusBarControl::Paint( const UserDrawEvent& )
 {
 	String aStr( String::CreateFromInt32( nZoom ));
-    aStr.AppendAscii( " %" );
+	aStr.AppendAscii( " %" );
 	GetStatusBar().SetItemText( GetId(), aStr );
 }
 
@@ -194,15 +194,15 @@ void SvxZoomStatusBarControl::Command( const CommandEvent& rCEvt )
 			case ZOOM_WHOLE_PAGE:	aZoom.SetType( SVX_ZOOM_WHOLEPAGE ); break;
 			}
 
-            ::com::sun::star::uno::Any a;
-            INetURLObject aObj( m_aCommandURL );
-            
-            ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
-            aArgs[0].Name  = aObj.GetURLPath();
-            aZoom.QueryValue( a );
-            aArgs[0].Value = a;
-            
-            execute( aArgs );
+			::com::sun::star::uno::Any a;
+			INetURLObject aObj( m_aCommandURL );
+
+			::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
+			aArgs[0].Name = aObj.GetURLPath();
+			aZoom.QueryValue( a );
+			aArgs[0].Value = a;
+
+			execute( aArgs );
 		}
 		ReleaseMouse();
 	}
@@ -212,8 +212,8 @@ void SvxZoomStatusBarControl::Command( const CommandEvent& rCEvt )
 
 sal_uIntPtr SvxZoomStatusBarControl::GetDefItemWidth(const StatusBar& rStb)
 {
-	long nWidth1 =  rStb.GetTextWidth(String::CreateFromAscii("XXXXX %"));
+	long nWidth1 = rStb.GetTextWidth(String::CreateFromAscii("XXXXX %"));
 	return nWidth1;
 }
 
-
+/* vim: set noet sw=4 ts=4: */

@@ -91,12 +91,12 @@ public class TitleField {
 		String titleStr = "Title Test";
 		createTitleFiled(odtDocument);
 	
-		assertTrue("Verify Title field is created use exsit Title", isContainTitleField(odtDocument, titleStr));
-		assertTrue("Verify Title field is created use exsit Title, can get text from document", 
+		assertTrue("Verify Title field is created use exist Title", isContainTitleField(odtDocument, titleStr));
+		assertTrue("Verify Title field is created use exist Title, can get text from document",
 				isContainTitleText(odtDocument, titleStr));
 		//Set Title 
 		SWUtil.setDocumentProperty(odtDocument, "Title", titleStr);
-		//Verfiy after set Title
+		//Verify after set Title
 		assertTrue("Verify Title field is created, can get text from document", 
 				isContainTitleText(odtDocument, titleStr));
 		

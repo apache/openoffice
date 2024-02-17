@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,34 +9,30 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared03030120xhp" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">DateDiff Function [Runtime]</title>
 <filename>/text/sbasic/shared/03030120.xhp</filename>
 </topic>
-<history>
-<created date="2005-04-25T13:20:42">DateDiff</created>
-<lastedited date="2005-04-26T10:55:34">checked</lastedited>
-</history>
+<comment>DateDiff</comment>
 </meta>
 <body>
 <section id="datediff">
-<bookmark xml-lang="en-US" branch="index" id="bm_id6134830"><bookmark_value>DateDiff function</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id6134830">
+<bookmark_value>DateDiff function</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="par_idN10542" xml-lang="en-US" level="1" l10n="NEW"><link href="text/sbasic/shared/03030120.xhp">DateDiff Function [Runtime]</link></paragraph>
 <paragraph role="paragraph" id="par_idN10546" xml-lang="en-US" l10n="NEW">Returns the number of date intervals between two given date values.</paragraph>
@@ -54,7 +49,7 @@
 <emph>Date1, Date2</emph> - The two date values to be compared.</paragraph>
 <section id="weekyear">
 <paragraph role="paragraph" id="par_idN1066A" xml-lang="en-US" l10n="NEW">
-<emph>Week_start</emph> - An optional parameter that specifies the starting day of a week. </paragraph>
+<emph>Week_start</emph> - An optional parameter that specifies the starting day of a week.</paragraph>
 <table id="tbl_id8356883">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -129,9 +124,8 @@
 </tablecell>
 </tablerow>
 </table>
-
 <paragraph role="paragraph" id="par_idN106EB" xml-lang="en-US" l10n="NEW">
-<emph>Year_start</emph> - An optional parameter that specifies the starting week of a year. </paragraph>
+<emph>Year_start</emph> - An optional parameter that specifies the starting week of a year.</paragraph>
 <table id="tbl_id1173436">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -174,7 +168,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 </section>
 <paragraph role="heading" id="par_idN10738" xml-lang="en-US" level="2" l10n="NEW">Example:</paragraph>
 <paragraph role="code" id="par_idN1073C" xml-lang="en-US" l10n="NEW">Sub example_datediff</paragraph>

@@ -61,7 +61,7 @@ static bool	GbTraceOn = true;
 static bool	GbIncludePCodes = false;
 
 // GbInitOnlyAtOfficeStart:
-// true = Tracing is only intialized onces after Office start when
+// true = Tracing is only initialized once after Office start when
 // Basic runs the first time. Further calls to Basic, e.g. via events
 // use the same output file. The trace ini file is not read again.
 static bool	GbInitOnlyAtOfficeStart = false;

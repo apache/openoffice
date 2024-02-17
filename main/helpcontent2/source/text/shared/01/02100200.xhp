@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0102100200xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Attributes</title>
@@ -34,12 +29,14 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_SEARCH:BTN_ATTRIBUTE" id="bm_id3149205" localize="false"/><paragraph role="heading" id="hd_id3154422" xml-lang="en-US" level="1" l10n="U" oldref="1">Attributes</paragraph>
-<paragraph role="paragraph" id="par_id3153331" xml-lang="en-US" l10n="U" oldref="2"><variable id="attributetext"><ahelp hid="SVX:PUSHBUTTON:RID_SVXDLG_SEARCH:BTN_ATTRIBUTE">Choose the text attributes that you want to search for. For example, if you search for the <emph>Font</emph> attribute, all instances of text that do not use the default font are found. All text that has a directly coded font attribute, and all text where a style switches the font attribute, are found. </ahelp>
+<bookmark xml-lang="en-US" branch="hid/svx:PushButton:RID_SVXDLG_SEARCH:BTN_ATTRIBUTE" id="bm_id3149205" localize="false"/>
+<paragraph role="heading" id="hd_id3154422" xml-lang="en-US" level="1" l10n="U" oldref="1">Attributes</paragraph>
+<paragraph role="paragraph" id="par_id3153331" xml-lang="en-US" l10n="U" oldref="2"><variable id="attributetext"><ahelp hid="SVX:PUSHBUTTON:RID_SVXDLG_SEARCH:BTN_ATTRIBUTE">Choose the text attributes that you want to search for. For example, if you search for the <emph>Font</emph> attribute, all instances of text that do not use the default font are found. All text that has a directly coded font attribute, and all text where a style switches the font attribute, are found.</ahelp>
 </variable></paragraph>
 <embed href="text/shared/guide/find_attributes.xhp#find_attributes"/>
 <bookmark xml-lang="en-US" branch="hid/CUI_HID_SEARCHATTR" id="bm_id3152474" localize="false"/>
-<bookmark xml-lang="en-US" branch="hid/CUI_HID_SEARCHATTR_CTL_ATTR" id="bm_id3147530" localize="false"/><paragraph role="heading" id="hd_id3150944" xml-lang="en-US" level="2" l10n="U" oldref="6">Options</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SEARCHATTR_CTL_ATTR" id="bm_id3147530" localize="false"/>
+<paragraph role="heading" id="hd_id3150944" xml-lang="en-US" level="2" l10n="U" oldref="6">Options</paragraph>
 <paragraph role="paragraph" id="par_id3151384" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="HID_SEARCHATTR_CTL_ATTR">Select the attributes that you want to search for.</ahelp></paragraph>
 <sort order="asc"><section id="Section1">
 <paragraph role="heading" id="hd_id3149245" xml-lang="en-US" level="3" l10n="U" oldref="56">Keep with Next Paragraph</paragraph>
@@ -59,7 +56,7 @@
 </section>
 <section id="Section5">
 <paragraph role="heading" id="hd_id3145171" xml-lang="en-US" level="3" l10n="U" oldref="8">Effects</paragraph>
-<paragraph role="paragraph" id="par_id3149203" xml-lang="en-US" l10n="U" oldref="9">Finds characters that use the <emph>Capital, Lowercase, Small capitals, </emph>and <emph>Title </emph>character attributes.</paragraph>
+<paragraph role="paragraph" id="par_id3149203" xml-lang="en-US" l10n="U" oldref="9">Finds characters that use the <emph>Capital</emph>, <emph>Lowercase</emph>, <emph>Small capitals</emph>, and <emph>Title</emph> character attributes.</paragraph>
 </section>
 <section id="Section6">
 <paragraph role="heading" id="hd_id3148676" xml-lang="en-US" level="3" l10n="U" oldref="60">Blinking</paragraph>
@@ -87,7 +84,7 @@
 </section>
 <section id="Section12">
 <paragraph role="heading" id="hd_id3148575" xml-lang="en-US" level="3" l10n="U" oldref="16">Position</paragraph>
-<paragraph role="paragraph" id="par_id3146922" xml-lang="en-US" l10n="U" oldref="17">Finds characters using the <emph>Normal, Superscript</emph> or <emph>Subscript </emph>attributes.</paragraph>
+<paragraph role="paragraph" id="par_id3146922" xml-lang="en-US" l10n="U" oldref="17">Finds characters using the <emph>Normal, Superscript</emph> or <emph>Subscript</emph> attributes.</paragraph>
 </section>
 <section id="Section13">
 <paragraph role="heading" id="hd_id3156062" xml-lang="en-US" level="3" l10n="U" oldref="62">Register-true</paragraph>
@@ -95,7 +92,7 @@
 </section>
 <section id="Section14">
 <paragraph role="heading" id="hd_id3159196" xml-lang="en-US" level="3" l10n="U" oldref="64">Relief</paragraph>
-<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="65">Finds the <emph>Relief </emph>attribute.</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="65">Finds the <emph>Relief</emph> attribute.</paragraph>
 </section>
 <section id="Section15">
 <paragraph role="heading" id="hd_id3154014" xml-lang="en-US" level="3" l10n="U" oldref="66">Rotation</paragraph>
@@ -139,7 +136,7 @@
 </section>
 <section id="Section25">
 <paragraph role="heading" id="hd_id3148773" xml-lang="en-US" level="3" l10n="U" oldref="68">Scale</paragraph>
-<paragraph role="paragraph" id="par_id3147396" xml-lang="en-US" l10n="U" oldref="69">Finds the <emph>Scale </emph>attribute.</paragraph>
+<paragraph role="paragraph" id="par_id3147396" xml-lang="en-US" l10n="U" oldref="69">Finds the <emph>Scale</emph> attribute.</paragraph>
 </section>
 <section id="Section26">
 <paragraph role="heading" id="hd_id3148455" xml-lang="en-US" level="3" l10n="U" oldref="24">Language</paragraph>
@@ -155,7 +152,7 @@
 </section>
 <section id="Section29">
 <paragraph role="heading" id="hd_id3153099" xml-lang="en-US" level="3" l10n="U" oldref="70">Vertical text alignment</paragraph>
-<paragraph role="paragraph" id="par_id3145650" xml-lang="en-US" l10n="U" oldref="71">Finds the <emph>Vertical text alignment </emph>attribute.</paragraph>
+<paragraph role="paragraph" id="par_id3145650" xml-lang="en-US" l10n="U" oldref="71">Finds the <emph>Vertical text alignment</emph> attribute.</paragraph>
 </section>
 <section id="Section30">
 <paragraph role="heading" id="hd_id3147259" xml-lang="en-US" level="3" l10n="U" oldref="34">Individual Words</paragraph>

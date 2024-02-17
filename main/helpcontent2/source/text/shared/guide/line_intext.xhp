@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
- 
-	
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedguideline_intextxml" indexer="include">
 <title id="tit" xml-lang="en-US">Drawing Lines in Text</title>
@@ -32,7 +29,8 @@
 </topic>
 </meta>
 <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3143206"><bookmark_value>arrows; drawing in text</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143206">
+<bookmark_value>arrows; drawing in text</bookmark_value>
 <bookmark_value>indicator lines in text</bookmark_value>
 <bookmark_value>lines; drawing in text</bookmark_value>
 <bookmark_value>lines; removing automatic lines</bookmark_value>
@@ -49,16 +47,16 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3156113" xml-lang="en-US" l10n="E">
 <image id="img_id3166410" src="res/commandimagelist/sc_insertdraw.png" width="0.2228in" height="0.2228in"><alt id="alt_id3166410" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 <paragraph role="paragraph" id="par_id3152780" xml-lang="en-US" l10n="E">
 <image id="img_id3154285" src="res/commandimagelist/sc_line.png" width="0.2228in" height="0.2228in"><alt id="alt_id3154285" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3153254" xml-lang="en-US" l10n="U" oldref="66">1.</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3159400" xml-lang="en-US" l10n="CHG" oldref="41">On the Standard bar, click the <emph>Show Draw Functions </emph>icon to open the <emph>Drawing </emph>toolbar, and click the <emph>Line</emph> icon. The mouse pointer changes to a cross-hair symbol with a line beside it.</paragraph>
+<paragraph role="paragraph" id="par_id3159400" xml-lang="en-US" l10n="CHG" oldref="41">On the Standard bar, click the <emph>Show Draw Functions</emph> icon to open the <emph>Drawing</emph> toolbar, and click the <emph>Line</emph> icon. The mouse pointer changes to a cross-hair symbol with a line beside it.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -75,13 +73,13 @@
 <tablecell>
 <paragraph role="paragraph" id="par_id3149294" xml-lang="en-US" l10n="E">
 <image id="img_id3159413" src="res/commandimagelist/sc_drawselect.png" width="0.2228in" height="0.2228in"><alt id="alt_id3159413" xml-lang="en-US">Icon</alt>
-	</image></paragraph>
+</image></paragraph>
 </tablecell>
 <tablecell>
 <paragraph role="paragraph" id="par_id3151056" xml-lang="en-US" l10n="U" oldref="68">3.</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="CHG" oldref="43">Release the mouse button once the line has the desired direction and length. You can then draw more lines. End this function by pressing the Esc key or by clicking the <emph>Select</emph> icon from the <emph>Drawing </emph>bar.</paragraph>
+<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="CHG" oldref="43">Release the mouse button once the line has the desired direction and length. You can then draw more lines. End this function by pressing the Esc key or by clicking the <emph>Select</emph> icon from the <emph>Drawing</emph> bar.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -95,7 +93,6 @@
 </tablecell>
 </tablerow>
 </table>
-
 <list type="ordered">
 <listitem>
 <paragraph role="listitem" id="par_id3153049" xml-lang="en-US" l10n="CHG" oldref="38">Create a horizontal line by applying the preset Paragraph Style <emph>Horizontal Line</emph>. Click into an empty paragraph, and double-click the <emph>Horizontal Line</emph> Style in the <emph>Styles and Formatting</emph> window. If the entry for horizontal lines is not visible in the list of Paragraph Styles, select "All Styles" in the lower listbox.</paragraph>

@@ -2175,6 +2175,30 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 			else
                 throw datatransfer::UnsupportedFlavorException();
 		}
+        else if ( aFlavor.MimeType.equalsAscii( "image/svg+xml" ) )
+        {
+            if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
+            {
+                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                    m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
+
+                if ( pMetaFile )
+                {
+                    ::boost::shared_ptr<SvMemoryStream> pStream(
+                        GraphicHelper::getFormatStrFromGDI_Impl(
+                            pMetaFile.get(), CVT_SVG ) );
+
+                    if ( pStream )
+                    {
+                        pStream->SetVersion( SOFFICE_FILEFORMAT_CURRENT );
+                        aAny <<= Sequence< sal_Int8 >( reinterpret_cast< const sal_Int8* >( pStream->GetData() ),
+                                                       pStream->Seek( STREAM_SEEK_TO_END ) );
+                    }
+                }
+            }
+            else
+                throw datatransfer::UnsupportedFlavorException();
+        }
         else if ( aFlavor.MimeType.equalsAscii( "application/x-openoffice-bitmap;windows_formatname=\"Bitmap\"" ) )
 		{
 			if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
@@ -2240,7 +2264,7 @@ uno::Sequence< DATAFLAVOR > SAL_CALL SfxBaseModel::getTransferDataFlavors()
 {
     SfxModelGuard aGuard( *this );
 
-    sal_Int32 nSuppFlavors = GraphicHelper::supportsMetaFileHandle_Impl() ? 10 : 8;
+    sal_Int32 nSuppFlavors = GraphicHelper::supportsMetaFileHandle_Impl() ? 11 : 9;
     uno::Sequence< DATAFLAVOR > aFlavorSeq( nSuppFlavors );
 
 	aFlavorSeq[0].MimeType =
@@ -2283,17 +2307,22 @@ uno::Sequence< DATAFLAVOR > SAL_CALL SfxBaseModel::getTransferDataFlavors()
     aFlavorSeq[7].HumanPresentableName = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "PNG" ) );
     aFlavorSeq[7].DataType = getCppuType( (const Sequence< sal_Int8 >*) 0 );
 
-    if ( nSuppFlavors == 10 )
-	{
-        aFlavorSeq[8].MimeType =
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "application/x-openoffice-emf;windows_formatname=\"Image EMF\"" ) );
-        aFlavorSeq[8].HumanPresentableName = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Enhanced Windows MetaFile" ) );
-        aFlavorSeq[8].DataType = getCppuType( (const sal_uInt64*) 0 );
+    aFlavorSeq[8].MimeType =
+        ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "image/svg+xml" ) );
+    aFlavorSeq[8].HumanPresentableName = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SVG" ) );
+    aFlavorSeq[8].DataType = getCppuType( (const Sequence< sal_Int8 >*) 0 );
 
+    if ( nSuppFlavors == 11 )
+	{
         aFlavorSeq[9].MimeType =
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "application/x-openoffice-wmf;windows_formatname=\"Image WMF\"" ) );
-        aFlavorSeq[9].HumanPresentableName = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Windows MetaFile" ) );
+            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "application/x-openoffice-emf;windows_formatname=\"Image EMF\"" ) );
+        aFlavorSeq[9].HumanPresentableName = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Enhanced Windows MetaFile" ) );
         aFlavorSeq[9].DataType = getCppuType( (const sal_uInt64*) 0 );
+
+        aFlavorSeq[10].MimeType =
+            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "application/x-openoffice-wmf;windows_formatname=\"Image WMF\"" ) );
+        aFlavorSeq[10].HumanPresentableName = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Windows MetaFile" ) );
+        aFlavorSeq[10].DataType = getCppuType( (const sal_uInt64*) 0 );
 	}
 
 	return aFlavorSeq;
@@ -2335,6 +2364,11 @@ sal_Bool SAL_CALL SfxBaseModel::isDataFlavorSupported( const DATAFLAVOR& aFlavor
 		  && aFlavor.DataType == getCppuType( (const sal_uInt64*) 0 ) )
 			return sal_True;
 	}
+    else if ( aFlavor.MimeType.equalsAscii( "image/svg+xml" ) )
+    {
+        if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
+            return sal_True;
+    }
     else if ( aFlavor.MimeType.equalsAscii( "application/x-openoffice-objectdescriptor-xml;windows_formatname=\"Star Object Descriptor (XML)\"" ) )
     {
         if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )

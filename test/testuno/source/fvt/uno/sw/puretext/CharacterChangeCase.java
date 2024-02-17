@@ -236,7 +236,7 @@ public class CharacterChangeCase {
 		//reopen the document and assert row height setting
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
-		//verify set property,when save to doc and reopen,the proeprty value change to default,but display is normally
+		//verify set property,when save to doc and reopen,the property value change to default,but display is normally
 		assertEquals("assert character casemap",com.sun.star.style.CaseMap.NONE,xCursorProps_assert_doc.getPropertyValue("CharCaseMap"));
 	}
 	@Test

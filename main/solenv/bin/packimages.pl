@@ -398,7 +398,7 @@ sub usage
     print STDERR "    -m m_path          path to module images directory\n";
     print STDERR "    -c c_path          path to custom images directory\n";
     print STDERR "    -s sort_file       path to image sort order file\n";
-    print STDERR "    -l imagelist_path  path to directory containing image lists (may appear mutiple times)\n";
+    print STDERR "    -l imagelist_path  path to directory containing image lists (may appear multiple times)\n";
     print STDERR "    -v                 verbose\n";
     print STDERR "    -vv                very verbose\n";
 }

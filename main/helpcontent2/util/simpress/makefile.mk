@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 # edit to match directory level
 PRJ		= ..$/..
 # same for all makefiles in "helpcontent2"
@@ -189,7 +187,7 @@ LINKLINKFILES= \
    text$/simpress$/01$/effectoptionstext.xhp \
    text$/simpress$/01$/effectoptionstiming.xhp \
    text$/simpress$/01$/slidesorter.xhp \
-   text$/simpress$/01$/taskpanel.xhp \
+   text$/simpress$/01$/sidebar.xhp \
    text$/simpress$/02$/04010000.xhp \
    text$/simpress$/02$/04020000.xhp \
    text$/simpress$/02$/04030000.xhp \
@@ -321,7 +319,6 @@ LINKLINKFILES= \
    text$/shared$/00$/00000404.xhp \
    text$/shared$/00$/00000406.xhp \
    text$/shared$/00$/00000407.xhp \
-   text$/shared$/00$/00000408.xhp \
    text$/shared$/00$/00000409.xhp \
    text$/shared$/00$/00000450.xhp \
    text$/shared$/00$/00040500.xhp \
@@ -862,7 +859,6 @@ LINKLINKFILES= \
    text$/shared$/autopi$/01170300.xhp \
    text$/shared$/autopi$/01170400.xhp \
    text$/shared$/autopi$/01170500.xhp \
-   text$/shared$/autopi$/purchase.xhp \
    text$/shared$/autopi$/startup.xhp \
    text$/shared$/autopi$/webwizard00.xhp \
    text$/shared$/autopi$/webwizard01.xhp \
@@ -1241,8 +1237,7 @@ LINKLINKFILES= \
    text$/schart$/04$/01020000.xhp \
    text$/schart$/main0000.xhp \
    text$/schart$/main0202.xhp \
-   text$/schart$/main0503.xhp \
-
+   text$/schart$/main0503.xhp
 
 # --- Targets ------------------------------------------------------
 

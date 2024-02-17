@@ -330,7 +330,7 @@ static sal_uInt32 FastGetPos( const VoidPtr *pPtrArray, sal_uInt32 nPtrArrayLen,
   if( rLastPos > 16 )
     {
       sal_uInt32 nEnd;
-      if (rLastPos > nPtrArrayLen - 2)
+      if (rLastPos + 2 > nPtrArrayLen)
 		nEnd = nPtrArrayLen;
       else
 		nEnd = rLastPos + 2;

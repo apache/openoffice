@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,36 +9,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
-	
 <helpdocument version="1.0">
 <meta>
 <topic id="textshared0105020100xml" indexer="include" status="PUBLISH">
-<title id="tit" xml-lang="en-US">Font </title>
+<title id="tit" xml-lang="en-US">Font</title>
 <filename>/text/shared/01/05020100.xhp</filename>
 </topic>
-<history>
-<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
-<lastedited date="2005-12-20T15:39:40">converted from old format - fpe</lastedited>
-</history>
 </meta>
 <body>
 <section id="zeichen">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154812"><bookmark_value>formats; fonts</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154812">
+<bookmark_value>formats; fonts</bookmark_value>
 <bookmark_value>characters;fonts and formats</bookmark_value>
 <bookmark_value>fonts; formats</bookmark_value>
 <bookmark_value>text; fonts and formats</bookmark_value>
@@ -55,7 +47,7 @@
 <paragraph role="paragraph" id="par_id3158405" xml-lang="en-US" l10n="U" oldref="2"><variable id="zn"><ahelp hid="HID_SVXPAGE_CHAR_NAME">Specify the formatting and the font that you want to apply.</ahelp>
 </variable></paragraph>
 <section id="howtoget">
-  <embed href="text/shared/00/00040500.xhp#schrift"/>
+<embed href="text/shared/00/00040500.xhp#schrift"/>
 </section>
 <section id="hinweis">
 <paragraph role="paragraph" id="par_id3155616" xml-lang="en-US" l10n="U" oldref="3">The changes are applied to the current selection, to the entire word that contains the cursor, or to the new text that you type.</paragraph>
@@ -72,7 +64,7 @@
 <paragraph role="listitem" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="57">Complex text layout font - right-to-left text direction</paragraph>
 </listitem>
 </list>
-<paragraph role="note" id="par_id3153663" xml-lang="en-US" l10n="U" oldref="58">To enable support for complex text layout and Asian character sets, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Languages</emph>, and then select the <emph>Enabled </emph>box in the corresponding area.</paragraph>
+<paragraph role="note" id="par_id3153663" xml-lang="en-US" l10n="U" oldref="58">To enable support for complex text layout and Asian character sets, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Languages</emph>, and then select the <emph>Enabled</emph> box in the corresponding area.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:ComboBox:RID_SVXPAGE_CHAR_NAME:LB_WEST_NAME" id="bm_id3149796" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/cui:ComboBox:RID_SVXPAGE_CHAR_NAME:LB_EAST_NAME" id="bm_id3159158" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/cui:ComboBox:RID_SVXPAGE_CHAR_NAME:LB_WEST_NAME_NOCJK" id="bm_id3149795" localize="false"/>
@@ -108,7 +100,7 @@
 <paragraph role="paragraph" id="par_id3157961" xml-lang="en-US" l10n="U" oldref="39"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_CHAR_NAME_LB_CTL_LANG">Sets the language that the spellchecker uses for the selected text or the text that you type. Available language modules have a check mark in front of them.</ahelp></paragraph>
 <switch select="appl">
 <case select="CALC">
-<paragraph role="note" id="par_id3153770" xml-lang="en-US" l10n="U" oldref="59">You can only change the language setting for cells (choose <emph>Format - Cells – Numbers</emph>).</paragraph>
+<paragraph role="note" id="par_id3153770" xml-lang="en-US" l10n="U" oldref="59">You can only change the language setting for cells (choose <emph>Format - Cells - Numbers</emph>).</paragraph>
 </case>
 </switch>
 <embed href="text/shared/optionen/01140000.xhp#sprachmodul"/>
