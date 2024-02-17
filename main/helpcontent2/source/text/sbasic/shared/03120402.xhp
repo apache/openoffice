@@ -33,23 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154136">
 <bookmark_value>Len function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3154136" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120402.xhp" name="Len Function [Runtime]">Len Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="2">Returns the number of characters in a string.</paragraph>
+<paragraph role="heading" id="hd_id3154136" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03120402.xhp" name="Len Function [Runtime]">Len Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U">Returns the number of characters in a string.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3159177" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="4">Len (Text As String)</paragraph>
-<paragraph role="heading" id="hd_id3148473" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3143270" xml-lang="en-US" l10n="U" oldref="6">Long</paragraph>
-<paragraph role="heading" id="hd_id3147531" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3147265" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Text:</emph> Any string expression.</paragraph>
+<paragraph role="heading" id="hd_id3159177" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U">Len (Text As String)</paragraph>
+<paragraph role="heading" id="hd_id3148473" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3143270" xml-lang="en-US" l10n="U">Long</paragraph>
+<paragraph role="heading" id="hd_id3147531" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3147265" xml-lang="en-US" l10n="U"><emph>Text:</emph> Any string expression.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3153360" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleLen</paragraph>
-<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="U" oldref="11">Dim sText as String</paragraph>
-<paragraph role="paragraph" id="par_id3154125" xml-lang="en-US" l10n="U" oldref="12">sText = "Las Vegas"</paragraph>
-<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="13">MsgBox Len(sText) REM Returns 9</paragraph>
-<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U" oldref="14">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3153360" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U">Sub ExampleLen</paragraph>
+<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="U">Dim sText as String</paragraph>
+<paragraph role="paragraph" id="par_id3154125" xml-lang="en-US" l10n="U">sText = "Las Vegas"</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U">MsgBox Len(sText) REM Returns 9</paragraph>
+<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>
