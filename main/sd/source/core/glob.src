@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #define __RSC
 
 #include "misc.hxx"
@@ -161,7 +159,7 @@ String STR_OUTLINEVIEWSHELL
 };
 String STR_DRAWVIEWSHELL
 {
-	Text [ en-US ] = "Drawing View" ;
+	Text [ en-US ] = "Normal View" ;
 };
 String STR_PRESVIEWSHELL
 {
