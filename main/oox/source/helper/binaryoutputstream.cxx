@@ -58,6 +58,18 @@ BinaryXOutputStream::~BinaryXOutputStream()
     close();
 }
 
+void BinaryXOutputStream::flush()
+{
+    if( mxOutStrm.is() ) try
+    {
+        mxOutStrm->flush();
+    }
+    catch( Exception& )
+    {
+        OSL_ENSURE( false, "BinaryXOutputStream::flush - flushing stream failed" );
+    }
+}
+
 void BinaryXOutputStream::close()
 {
     OSL_ENSURE( !mbAutoClose || mxOutStrm.is(), "BinaryXOutputStream::close - invalid call" );
