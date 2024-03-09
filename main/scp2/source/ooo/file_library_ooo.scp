@@ -1626,16 +1626,22 @@ STD_LIB_FILE( gid_File_Lib_Freebl3, freebl3)
 #ifdef LINUX
 STD_LIB_FILE( gid_File_Lib_Freeblpriv3, freeblpriv3)
 #endif
-STD_LIB_FILE( gid_File_Lib_Nspr4, libnspr4)
 STD_LIB_FILE( gid_File_Lib_Nss3, nss3)
 STD_LIB_FILE( gid_File_Lib_Nsckbi, nssckbi)
 STD_LIB_FILE( gid_File_Lib_Nssdbm3, nssdbm3)
 STD_LIB_FILE( gid_File_Lib_Nssutil3, nssutil3)
-STD_LIB_FILE( gid_File_Lib_Plc4, libplc4)
-STD_LIB_FILE( gid_File_Lib_Plds4, libplds4)
 STD_LIB_FILE( gid_File_Lib_Smime3, smime3)
 STD_LIB_FILE( gid_File_Lib_Softokn3, softokn3)
 STD_LIB_FILE( gid_File_Lib_Ssl3, ssl3)
+#ifdef WNT
+STD_LIB_FILE( gid_File_Lib_Nspr4, libnspr4)
+STD_LIB_FILE( gid_File_Lib_Plc4, libplc4)
+STD_LIB_FILE( gid_File_Lib_Plds4, libplds4)
+#else
+STD_LIB_FILE( gid_File_Lib_Nspr4, nspr4)
+STD_LIB_FILE( gid_File_Lib_Plc4, plc4)
+STD_LIB_FILE( gid_File_Lib_Plds4, plds4)
+#endif
 
 #ifndef MACOSX // #i108575# use system sqlite3 on MacOSX
 STD_LIB_FILE( gid_File_Lib_Sqlite3, sqlite3)
