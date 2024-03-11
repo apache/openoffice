@@ -45,7 +45,7 @@ all:
 TARFILE_NAME=CoinMP-1.7.6
 TARFILE_MD5=1cce53bf4b40ae29790d2c5c9f8b1129
 
-PATCH_FILES=coinmp-1.7.6.patch coinmp-1.7.6-clang.patch
+PATCH_FILES=coinmp-1.7.6.patch coinmp-1.7.6-clang.patch coinmp-1.7.6-nopedantic.patch
 .IF "$(OS)"=="OS2"
 PATCH_FILES+=coinmp-1.6.0-os2.patch
 .ENDIF

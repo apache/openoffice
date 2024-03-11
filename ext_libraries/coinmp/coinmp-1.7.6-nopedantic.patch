@@ -1,0 +1,133 @@
+diff -ru misc/CoinMP-1.7.6/BuildTools/coin.m4 misc/build/CoinMP-1.7.6/BuildTools/coin.m4
+--- misc/CoinMP-1.7.6/BuildTools/coin.m4	2013-12-04 01:55:24.000000000 +0100
++++ misc/build/CoinMP-1.7.6/BuildTools/coin.m4	2024-01-14 21:07:37.956268347 +0100
+@@ -407,7 +407,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cxxflags="-pedantic-errors $coin_warn_cxxflags"
+             ;;
+         esac
+     esac
+@@ -813,7 +812,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cflags="-pedantic-errors $coin_warn_cflags"
+             ;;
+         esac
+     esac
+diff -ru misc/CoinMP-1.7.6/Cbc/configure misc/build/CoinMP-1.7.6/Cbc/configure
+--- misc/CoinMP-1.7.6/Cbc/configure	2024-01-14 21:06:04.060145560 +0100
++++ misc/build/CoinMP-1.7.6/Cbc/configure	2024-01-14 21:06:52.980202550 +0100
+@@ -2898,7 +2898,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cflags="-pedantic-errors $coin_warn_cflags"
+             ;;
+         esac
+     esac
+@@ -3780,7 +3779,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cxxflags="-pedantic-errors $coin_warn_cxxflags"
+             ;;
+         esac
+     esac
+diff -ru misc/CoinMP-1.7.6/Cgl/configure misc/build/CoinMP-1.7.6/Cgl/configure
+--- misc/CoinMP-1.7.6/Cgl/configure	2024-01-14 21:06:04.068145568 +0100
++++ misc/build/CoinMP-1.7.6/Cgl/configure	2024-01-14 21:07:21.892243444 +0100
+@@ -2868,7 +2868,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cflags="-pedantic-errors $coin_warn_cflags"
+             ;;
+         esac
+     esac
+@@ -3750,7 +3749,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cxxflags="-pedantic-errors $coin_warn_cxxflags"
+             ;;
+         esac
+     esac
+diff -ru misc/CoinMP-1.7.6/Clp/configure misc/build/CoinMP-1.7.6/Clp/configure
+--- misc/CoinMP-1.7.6/Clp/configure	2024-01-14 21:06:04.072145571 +0100
++++ misc/build/CoinMP-1.7.6/Clp/configure	2024-01-14 21:08:12.220326395 +0100
+@@ -2895,7 +2895,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cflags="-pedantic-errors $coin_warn_cflags"
+             ;;
+         esac
+     esac
+@@ -3777,7 +3776,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cxxflags="-pedantic-errors $coin_warn_cxxflags"
+             ;;
+         esac
+     esac
+diff -ru misc/CoinMP-1.7.6/CoinMP/configure misc/build/CoinMP-1.7.6/CoinMP/configure
+--- misc/CoinMP-1.7.6/CoinMP/configure	2024-01-14 21:06:04.076145576 +0100
++++ misc/build/CoinMP-1.7.6/CoinMP/configure	2024-01-14 21:08:41.532381126 +0100
+@@ -2837,7 +2837,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cflags="-pedantic-errors $coin_warn_cflags"
+             ;;
+         esac
+     esac
+@@ -3719,7 +3718,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cxxflags="-pedantic-errors $coin_warn_cxxflags"
+             ;;
+         esac
+     esac
+diff -ru misc/CoinMP-1.7.6/CoinUtils/configure misc/build/CoinMP-1.7.6/CoinUtils/configure
+--- misc/CoinMP-1.7.6/CoinUtils/configure	2024-01-14 21:06:04.080145580 +0100
++++ misc/build/CoinMP-1.7.6/CoinUtils/configure	2024-01-14 21:09:04.552427204 +0100
+@@ -2894,7 +2894,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cflags="-pedantic-errors $coin_warn_cflags"
+             ;;
+         esac
+     esac
+@@ -3776,7 +3775,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cxxflags="-pedantic-errors $coin_warn_cxxflags"
+             ;;
+         esac
+     esac
+diff -ru misc/CoinMP-1.7.6/Osi/configure misc/build/CoinMP-1.7.6/Osi/configure
+--- misc/CoinMP-1.7.6/Osi/configure	2024-01-14 21:06:04.084145583 +0100
++++ misc/build/CoinMP-1.7.6/Osi/configure	2024-01-14 21:10:01.032550992 +0100
+@@ -2866,7 +2866,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cflags="-pedantic-errors $coin_warn_cflags"
+             ;;
+         esac
+     esac
+@@ -3748,7 +3747,6 @@
+           *-darwin*)
+             ;;
+           *)
+-            coin_warn_cxxflags="-pedantic-errors $coin_warn_cxxflags"
+             ;;
+         esac
+     esac
