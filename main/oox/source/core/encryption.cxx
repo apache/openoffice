@@ -207,14 +207,14 @@ Sequence< NamedValue > StandardEncryptionInfo::verifyPassword( const OUString& r
     rtl_digest_destroy( aDigest );
 
     vector< sal_uInt8 > key( mnKeySize / 8 );
-    deriveKey( pnHash, RTL_DIGEST_LENGTH_SHA1, key.data(), key.size() );
+    deriveKey( pnHash, RTL_DIGEST_LENGTH_SHA1, &key[ 0 ], key.size() );
     delete[] pnHash;
 
     Sequence< NamedValue > aResult;
-    if( checkEncryptionData( key.data(), key.size(), mpnEncrVerifier, sizeof( mpnEncrVerifier ), mpnEncrVerifierHash, sizeof( mpnEncrVerifierHash ) ) )
+    if( checkEncryptionData( &key[ 0 ], key.size(), mpnEncrVerifier, sizeof( mpnEncrVerifier ), mpnEncrVerifierHash, sizeof( mpnEncrVerifierHash ) ) )
     {
         SequenceAsHashMap aEncryptionData;
-        aEncryptionData[ CREATE_OUSTRING( "AES128EncryptionKey" ) ] <<= Sequence< sal_Int8 >( reinterpret_cast< const sal_Int8* >( key.data() ), key.size() );
+        aEncryptionData[ CREATE_OUSTRING( "AES128EncryptionKey" ) ] <<= Sequence< sal_Int8 >( reinterpret_cast< const sal_Int8* >( &key[ 0 ] ), key.size() );
         aEncryptionData[ CREATE_OUSTRING( "AES128EncryptionSalt" ) ] <<= Sequence< sal_Int8 >( reinterpret_cast< const sal_Int8* >( mpnSalt ), mnSaltSize );
         aEncryptionData[ CREATE_OUSTRING( "AES128EncryptionVerifier" ) ] <<= Sequence< sal_Int8 >( reinterpret_cast< const sal_Int8* >( mpnEncrVerifier ), sizeof( mpnEncrVerifier ) );
         aEncryptionData[ CREATE_OUSTRING( "AES128EncryptionVerifierHash" ) ] <<= Sequence< sal_Int8 >( reinterpret_cast< const sal_Int8* >( mpnEncrVerifierHash ), sizeof( mpnEncrVerifierHash ) );
@@ -296,7 +296,7 @@ void StandardEncryptionInfo::decryptStream( BinaryXInputStream &aEncryptedPackag
     aes_ctx = EVP_CIPHER_CTX_new();
     if ( aes_ctx == NULL )
         throw Exception();
-    EVP_DecryptInit_ex( aes_ctx, EVP_aes_128_ecb(), 0, encryptionKey.data(), 0 );
+    EVP_DecryptInit_ex( aes_ctx, EVP_aes_128_ecb(), 0, &encryptionKey[ 0 ], 0 );
     EVP_CIPHER_CTX_set_padding( aes_ctx, 0 );
 
     sal_uInt8 pnInBuffer[ 1024 ];
@@ -359,7 +359,7 @@ static bool decodeBase64( OUString& base64, vector< sal_uInt8 >& bytes )
     ::rtl::OString base64Ascii = ::rtl::OUStringToOString( base64, RTL_TEXTENCODING_UTF8 );
     const sal_uInt32 len = base64Ascii.getLength();
     bytes.resize( (len + 3) / 4 * 3 );
-    int decodedSize = EVP_DecodeBlock( bytes.data(), reinterpret_cast< sal_uInt8 const * >( base64Ascii.getStr() ), len );
+    int decodedSize = EVP_DecodeBlock( &bytes[ 0 ], reinterpret_cast< sal_uInt8 const * >( base64Ascii.getStr() ), len );
     if ( decodedSize < 0 )
         return false;
     if ( len >= 2 && base64Ascii[ len-1 ] == '=' && base64Ascii[ len-2 ] == '=' )
@@ -697,9 +697,9 @@ static vector< sal_uInt8 > hashPassword( const OUString& password, const EVP_MD 
         ByteOrderConverter::writeLittleEndian( &passwordLE[ 2 * i ], static_cast< sal_uInt16 >( password[ i ] ) );
 
     vector< sal_uInt8> digestBuffer( digestSize );
-    digest.update( salt.data(), salt.size() );
-    digest.update( passwordLE.data(), passwordLE.size() );
-    digest.final( digestBuffer.data(), NULL );
+    digest.update( &salt[ 0 ], salt.size() );
+    digest.update( &passwordLE[ 0 ], passwordLE.size() );
+    digest.final( &digestBuffer[ 0 ], NULL );
 
     char iteratorBuffer[ 4 ];
     for (sal_uInt32 i = 0; i < spinCount; i++)
@@ -707,8 +707,8 @@ static vector< sal_uInt8 > hashPassword( const OUString& password, const EVP_MD 
         digest.initialize( digestAlgorithm );
         ByteOrderConverter::writeLittleEndian( &iteratorBuffer, i );
         digest.update( iteratorBuffer, sizeof( iteratorBuffer ) );
-        digest.update( digestBuffer.data(), digestSize );
-        digest.final( digestBuffer.data(), NULL );
+        digest.update( &digestBuffer[ 0 ], digestSize );
+        digest.final( &digestBuffer[ 0 ], NULL );
     }
     return digestBuffer;
 }
@@ -750,10 +750,10 @@ static vector< sal_uInt8 > generateKey( const vector< sal_uInt8 >& passwordHash,
 {
     OpenSSLDigest digest;
     digest.initialize( digestAlgorithm );
-    digest.update( passwordHash.data(), passwordHash.size() );
-    digest.update( blockKey.data(), blockKey.size() );
+    digest.update( &passwordHash[ 0 ], passwordHash.size() );
+    digest.update( &blockKey[ 0 ], blockKey.size() );
     vector< sal_uInt8> key( digest.digestSize() );
-    digest.final( key.data(), NULL );
+    digest.final( &key[ 0 ], NULL );
     toBlock36( key, keySize );
     return key;
 }
@@ -777,10 +777,10 @@ static vector< sal_uInt8> generateIv( const EVP_MD *digestAlgorithm,
 {
     OpenSSLDigest digest;
     digest.initialize( digestAlgorithm );
-    digest.update( salt.data(), salt.size() );
-    digest.update( blockKey.data(), blockKey.size() );
+    digest.update( &salt[ 0 ], salt.size() );
+    digest.update( &blockKey[ 0 ], blockKey.size() );
     vector< sal_uInt8> iv( digest.digestSize() );
-    digest.final( iv.data(), NULL );
+    digest.final( &iv[ 0 ], NULL );
     toBlock36( iv, blockSize );
     return iv;
 }
@@ -806,7 +806,7 @@ static vector< sal_uInt8 > decryptAll( const EVP_CIPHER* cipherAlgorithm,
     vector< sal_uInt8 > decryptedData( encryptedDataLength + 2*blockSize );
 
     int decryptedDataLength;
-    cipher.update( encryptedData, encryptedDataLength, decryptedData.data(), &decryptedDataLength );
+    cipher.update( encryptedData, encryptedDataLength, &decryptedData[ 0 ], &decryptedDataLength );
     int finalDataLength;
     cipher.final( &decryptedData[ decryptedDataLength ], &finalDataLength );
     decryptedDataLength += finalDataLength;
@@ -830,7 +830,7 @@ static vector< sal_uInt8 > hashInput( const vector< sal_uInt8 >& passwordHash,
     vector< sal_uInt8 > zeroedInput( inputKey.size() );
     zeroedInput = inputKey;
     toBlock0( zeroedInput, getNextBlockSize( zeroedInput.size(), blockSize ) );
-    return decryptAll( decryptionAlgorithm, iv.data(), intermediateKey.data(), zeroedInput.data(), zeroedInput.size() );
+    return decryptAll( decryptionAlgorithm, &iv[ 0 ], &intermediateKey[ 0 ], &zeroedInput[ 0 ], zeroedInput.size() );
 }
 
 // Ported from Apache POI's org.apache.poi.poifs.crypt.agile.AgileDecryptor.verifyPassword().
@@ -849,9 +849,9 @@ Sequence< NamedValue > AgileEncryptionInfo::verifyPassword( const OUString& pass
     const EVP_MD *verifierDigestAlgorithm = toOpenSSLDigestAlgorithm( keyData.hashAlgorithm );
     OpenSSLDigest verifierDigest;
     verifierDigest.initialize( verifierDigestAlgorithm );
-    verifierDigest.update( encryptedVerifierHash.data(), encryptedVerifierHash.size() );
+    verifierDigest.update( &encryptedVerifierHash[ 0 ], encryptedVerifierHash.size() );
     encryptedVerifierHash.resize( verifierDigest.digestSize() );
-    verifierDigest.final( encryptedVerifierHash.data(), NULL );
+    verifierDigest.final( &encryptedVerifierHash[ 0 ], NULL );
 
     static const sal_uInt8 verifierHashBlockData[] = { 0xd7, 0xaa, 0x0f, 0x6d, 0x30, 0x61, 0x34, 0x4e };
     vector< sal_uInt8 > verifierHashBlock( &verifierHashBlockData[ 0 ], &verifierHashBlockData[ sizeof( verifierHashBlockData ) ] );
@@ -879,13 +879,13 @@ Sequence< NamedValue > AgileEncryptionInfo::verifyPassword( const OUString& pass
         static const sal_uInt8 integrityKeyBlockData[] = { 0x5f, 0xb2, 0xad, 0x01, 0x0c, 0xb9, 0xe1, 0xf6 };
         vector< sal_uInt8 > integrityKeyBlock( &integrityKeyBlockData[ 0 ], &integrityKeyBlockData[ sizeof( integrityKeyBlockData ) ] );
         vector< sal_uInt8 > integrityKeyIv = generateIv( keyDataDigestAlgorithm, keyData.saltValue, integrityKeyBlock, keyData.blockSize );
-        hmacKey = decryptAll( keyDataCipher, integrityKeyIv.data(), encryptionKey.data(), dataIntegrity.encryptedHmacKey.data(), dataIntegrity.encryptedHmacKey.size() );
+        hmacKey = decryptAll( keyDataCipher, &integrityKeyIv[ 0 ], &encryptionKey[ 0 ], &dataIntegrity.encryptedHmacKey[ 0 ], dataIntegrity.encryptedHmacKey.size() );
         toBlock0( hmacKey, OpenSSLDigest::digestSize( keyDataDigestAlgorithm ) );
 
         static const sal_uInt8 integrityValueBlockData[] = { 0xa0, 0x67, 0x7f, 0x02, 0xb2, 0x2c, 0x84, 0x33 };
         vector< sal_uInt8 > integrityValueBlock( &integrityValueBlockData[ 0 ], &integrityValueBlockData[ sizeof( integrityValueBlockData ) ] );
         vector< sal_uInt8 > integrityValueIv = generateIv( keyDataDigestAlgorithm, keyData.saltValue, integrityValueBlock, keyData.blockSize );
-        hmacValue = decryptAll( keyDataCipher, integrityValueIv.data(), encryptionKey.data(), dataIntegrity.encryptedHmacValue.data(), dataIntegrity.encryptedHmacValue.size() );
+        hmacValue = decryptAll( keyDataCipher, &integrityValueIv[ 0 ], &encryptionKey[ 0 ], &dataIntegrity.encryptedHmacValue[ 0 ], dataIntegrity.encryptedHmacValue.size() );
         toBlock0( hmacValue, OpenSSLDigest::digestSize( keyDataDigestAlgorithm ) );
     }
 
@@ -927,15 +927,15 @@ void AgileEncryptionInfo::decryptStream( BinaryXInputStream &aEncryptedPackage, 
     bool done = false;
     for ( sal_uInt32 block = 0; !done; block++ )
     {
-        ByteOrderConverter::writeLittleEndian( blockBytes.data(), block );
+        ByteOrderConverter::writeLittleEndian( &blockBytes[ 0 ], block );
         vector< sal_uInt8 > iv = generateIv( digestAlgorithm, keyData.saltValue, blockBytes, keyData.blockSize );
-        cipher.initialize( cipherAlgorithm, encryptionKey.data(), iv.data(), 0 );
+        cipher.initialize( cipherAlgorithm, &encryptionKey[ 0 ], &iv[ 0 ], 0 );
         cipher.setPadding( 0 );
 
         bytesIn = aEncryptedPackage.readMemory( inputBuffer, sizeof( inputBuffer ) );
         if( bytesIn > 0 )
         {
-            cipher.update( inputBuffer, bytesIn, outputBuffer.data(), &bytesOut );
+            cipher.update( inputBuffer, bytesIn, &outputBuffer[ 0 ], &bytesOut );
             cipher.final( &outputBuffer[ bytesOut ], &finalBytesOut );
             bytesOut += finalBytesOut;
             if( decryptedSize < (totalBytesWritten + bytesOut) )
@@ -943,7 +943,7 @@ void AgileEncryptionInfo::decryptStream( BinaryXInputStream &aEncryptedPackage, 
                 bytesOut = decryptedSize % sizeof( inputBuffer );
                 done = true;
             }
-            aDecryptedPackage.writeMemory( outputBuffer.data(), bytesOut );
+            aDecryptedPackage.writeMemory( &outputBuffer[ 0 ], bytesOut );
             totalBytesWritten += bytesOut;
         } else
             done = true;
