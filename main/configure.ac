@@ -3620,19 +3620,6 @@ fi
 AC_SUBST(GPERF)
 
 dnl ===================================================================
-dnl Check for building stax
-dnl ===================================================================
-AC_MSG_CHECKING([whether to build the stax])
-if test -f "./stax/download/stax-1.2.0.jar"; then
-   BUILD_STAX=NO
-   AC_MSG_RESULT([no, will use the prebuilt stax/download/stax-1.2.0.jar])
-else
-   BUILD_STAX=YES
-   AC_MSG_RESULT([yes])
-fi
-AC_SUBST(BUILD_STAX)
-
-dnl ===================================================================
 dnl Check for building ODK
 dnl ===================================================================
 AC_MSG_CHECKING([whether to build the ODK])
