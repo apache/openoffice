@@ -97,7 +97,7 @@ StandardEncryptionInfo::StandardEncryptionInfo( BinaryInputStream& rStrm ) throw
 {
     char msg[ 1024 ];
     rStrm >> mnFlags;
-    if( getFlag( mnFlags, ENCRYPTINFO_EXTERNAL ) )
+    if( getFlag( mnFlags, (sal_uInt32) ENCRYPTINFO_EXTERNAL ) )
         throw Exception( OUString::createFromAscii( "EncryptionInfo::readEncryptionInfo() error: \"Extensible encryption\" is not currently supported, please report" ), Reference< XInterface >() );
 
     sal_uInt32 nHeaderSize, nRepeatedFlags;
@@ -130,8 +130,8 @@ StandardEncryptionInfo::StandardEncryptionInfo( BinaryInputStream& rStrm ) throw
 
 bool StandardEncryptionInfo::isImplemented()
 {
-    return getFlag( mnFlags, ENCRYPTINFO_CRYPTOAPI ) &&
-        getFlag( mnFlags, ENCRYPTINFO_AES ) &&
+    return getFlag( mnFlags, (sal_uInt32) ENCRYPTINFO_CRYPTOAPI ) &&
+        getFlag( mnFlags, (sal_uInt32) ENCRYPTINFO_AES ) &&
         // algorithm ID 0 defaults to AES128 too, if ENCRYPTINFO_AES flag is set
        ( ( mnAlgorithmId == 0 ) || ( mnAlgorithmId == ENCRYPT_ALGO_AES128 ) ) &&
        // hash algorithm ID 0 defaults to SHA-1 too
