@@ -142,11 +142,6 @@ public:
             throwOpenSSLException( "EVP_CipherFinal failed" );
     }
 
-    int blockSize()
-    {
-        return blockSize( cipher );
-    }
-
     static int blockSize( const EVP_CIPHER *cipherAlgorithm )
     {
         return EVP_CIPHER_block_size( cipherAlgorithm );

@@ -802,7 +802,7 @@ static vector< sal_uInt8 > decryptAll( const EVP_CIPHER* cipherAlgorithm,
     OpenSSLCipher cipher;
     cipher.initialize( cipherAlgorithm, key, iv, 0 );
     cipher.setPadding( 0 );
-    const int blockSize = cipher.blockSize();
+    const int blockSize = OpenSSLCipher::blockSize( cipherAlgorithm );
     vector< sal_uInt8 > decryptedData( encryptedDataLength + 2*blockSize );
 
     int decryptedDataLength;
@@ -917,7 +917,7 @@ void AgileEncryptionInfo::decryptStream( BinaryXInputStream &aEncryptedPackage, 
     const sal_uInt64 decryptedSize = aEncryptedPackage.readuInt64();
 
     sal_uInt8 inputBuffer[ 4096 ];
-    vector< sal_uInt8 > outputBuffer( 4096 + 2*cipher.blockSize() );
+    vector< sal_uInt8 > outputBuffer( 4096 + 2*OpenSSLCipher::blockSize( cipherAlgorithm ) );
     sal_Int32 bytesIn;
     int bytesOut;
     int finalBytesOut;
