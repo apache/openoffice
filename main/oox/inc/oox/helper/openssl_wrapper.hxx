@@ -28,6 +28,7 @@
 #include "com/sun/star/uno/Exception.hpp"
 
 #include <openssl/evp.h>
+#include <openssl/opensslv.h>
 
 namespace oox {
 
@@ -41,14 +42,22 @@ class OpenSSLDigest
 public:
     OpenSSLDigest() throw ( ::com::sun::star::uno::Exception )
     {
+#if OPENSSL_VERSION_NUMBER >= 0x10100000
         digest_ctx = EVP_MD_CTX_new();
+#else
+        digest_ctx = EVP_MD_CTX_create();
+#endif
         if( digest_ctx == NULL )
             throwOpenSSLException( "Failed to create digest context" );
     }
 
     ~OpenSSLDigest()
     {
+#if OPENSSL_VERSION_NUMBER >= 0x10100000
         EVP_MD_CTX_free( digest_ctx );
+#else
+        EVP_MD_CTX_destroy( digest_ctx );
+#endif
     }
 
     void initialize( const EVP_MD* aDigest ) throw ( ::com::sun::star::uno::Exception )
