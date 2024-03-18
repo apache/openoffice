@@ -1,0 +1,10 @@
+--- misc/build/openssl-3.0.13/Configurations/00-base-templates.conf	2024-01-30 15:28:16.000000000 +0200
++++ misc/build/openssl-3.0.13/Configurations/00-base-templates.conf	2024-03-18 02:55:09.593025000 +0200
+@@ -67,6 +67,7 @@
+ 
+         AR              => "ar",
+         ARFLAGS         => "qc",
++        ASFLAGS          => "-Wa,--noexecstack",
+         CC              => "cc",
+         lflags          =>
+             sub { $withargs{zlib_lib} ? "-L".$withargs{zlib_lib} : () },
