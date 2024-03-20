@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="ConvertRun" script:language="StarBasic">Option Explicit
 
@@ -131,7 +131,7 @@ Dim bCurrIsSelected as Boolean
 Dim bObjectIsSelected as Boolean
 Dim bConvertWholeDoc as Boolean
 Dim bDoEnableFrame as Boolean
-	bConvertWholeDoc  = DialogModel.chkComplete.State = 1
+	bConvertWholeDoc = DialogModel.chkComplete.State = 1
 	bDoEnableFrame = bFrameEnabled And (NOT bConvertWholeDoc)
 
 	&apos; Controls around the Selection Listbox
@@ -150,7 +150,7 @@ Dim bDoEnableFrame as Boolean
 	If bButtonsEnabled Then
 		bCurrIsSelected = Ubound(DialogModel.lstCurrencies.SelectedItems()) &lt;&gt; -1
 		&apos; Enable GoOnButton only when Currency is selected
-		DialogModel.cmdGoOn.Enabled =  bCurrIsSelected
+		DialogModel.cmdGoOn.Enabled = bCurrIsSelected
 		DialogModel.chkComplete.Enabled = bCurrIsSelected
 		If bDoEnableFrame AND DialogModel.cmdGoOn.Enabled Then
 			&apos; If FrameControls are enabled, check if Listbox is Empty
@@ -181,7 +181,7 @@ Dim oSheetRanges as Object
 		If DialogModel.optSelRange.State = 1 Then
 			SelectListItem()
 		End If
-		SelList() =  DialogConvert.GetControl(&quot;lstSelection&quot;).SelectedItems()
+		SelList() = DialogConvert.GetControl(&quot;lstSelection&quot;).SelectedItems()
 		If DialogModel.optCellTemplates.State = 1 Then
 			&apos; Option &apos;Soft&apos; Formatation is selected
 			AssignRangestoStyle(DialogModel.lstSelection.StringItemList(), SelList())
@@ -257,13 +257,13 @@ Dim OldCurrSymbolList(2) as String
 Dim OldCurrIndex as Integer
 Dim OldCurExtension(2) as String
 	oPreSelRange = AddSelectedRangeToSelRangesEnum()
-	
+
 	DialogModel.chkComplete.State = Abs(Not(bPreSelected))
 	If bPreSelected Then
 		DialogModel.optSelRange.State = 1
 		AddRangeToListbox(oPreSelRange)
 	Else
-		DialogModel.optCellTemplates.State  = 1
+		DialogModel.optCellTemplates.State = 1
 		CreateStyleEnumeration()
 	End If
 	EnableStep1DialogControls(True, bPreSelected, True)
@@ -283,7 +283,7 @@ End Sub
 Sub CheckRangeSelection(Optional oEvent)
 	EmptySelection()
 	AddRangeToListbox(oPreSelRange)
-	oPreSelRange = AddSelectedRangeToSelRangesEnum()	
+	oPreSelRange = AddSelectedRangeToSelRangesEnum()
 End Sub
 
 
@@ -291,9 +291,9 @@ End Sub
 &apos; Returns &apos;True&apos; or &apos;False&apos;
 Function FieldinList(LocList(), MaxIndex as integer, ByVal LocField ) As Boolean
 Dim i as integer
-	LocField = Ucase(LocField)
+	LocField = UCase(LocField)
 	For i = Lbound(LocList()) to MaxIndex
-		If Ucase(LocList(i)) = LocField  then
+		If UCase(LocList(i)) = LocField then
 			FieldInList = True
 			Exit Function
 		End if

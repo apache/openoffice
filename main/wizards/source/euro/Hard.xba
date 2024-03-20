@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,18 +9,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Hard" script:language="StarBasic">REM  *****  BASIC  *****
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Hard" script:language="StarBasic">REM ***** BASIC *****
 Option Explicit
 
 
@@ -88,8 +88,8 @@ Dim sStatustext as String
 	End If
 	Rangeindex = MaxIndex
 End Sub
-	
-	
+
+
 Function AddSheetRanges(oRanges as Object, r as Integer, oSheet as Object, bAutopilot)
 Dim RangeName as String
 Dim AddtoList as Boolean
@@ -168,7 +168,7 @@ Dim oSelListbox as Object
 			If bRemove Then
 				If oSelRanges.HasbyName(RangeName) Then
 					oSelRanges.RemovebyName(RangeName)
-					oDocument.CurrentController.Select(oSelRanges)	
+					oDocument.CurrentController.Select(oSelRanges)
 				End If
 			End If
 			If SwitchFormat Then
@@ -194,7 +194,7 @@ Sub ConvertCellCurrencies(oRange as Object)
 Dim oValues as Object
 Dim oCells as Object
 Dim oCell as Object
-  	oValues = oRange.queryContentCells(com.sun.star.sheet.CellFlags.VALUE)
+	oValues = oRange.queryContentCells(com.sun.star.sheet.CellFlags.VALUE)
 	If (oValues.Count &gt; 0) Then
 		oCells = oValues.Cells.createEnumeration
 		While oCells.hasMoreElements
@@ -217,7 +217,7 @@ Dim oFormatofObject() as Object
 	&apos; Retrieve the Format of the Object
 	On Local Error GoTo NOKEY
 	oFormatofObject() = oFormats.getByKey(FormatObject.NumberFormat)
-	On Local Error GoTo 0			
+	On Local Error GoTo 0
 	CheckIfRangeIsCurrency = INT(oFormatofObject.Type) AND com.sun.star.util.NumberFormat.CURRENCY
 	Exit Function
 NOKEY:
