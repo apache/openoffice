@@ -33,17 +33,16 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3145090">
 <bookmark_value>Time statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03030302.xhp">Time Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U" oldref="2">This function returns the current system time as a string in the format "HH:MM:SS".</paragraph>
+<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03030302.xhp">Time Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U">This function returns the current system time as a string in the format "HH:MM:SS".</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3154346" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="4">Time</paragraph>
-<paragraph role="heading" id="hd_id3150792" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3149656" xml-lang="en-US" l10n="U" oldref="6">
-<emph>Text:</emph> Any string expression that specifies the new time in the format "HH:MM:SS".</paragraph>
-<paragraph role="heading" id="hd_id3145173" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="8">Sub ExampleTime</paragraph>
-<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="9">MsgBox Time,0,"The time is"</paragraph>
-<paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U" oldref="10">end sub</paragraph>
+<paragraph role="heading" id="hd_id3154346" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U">Time</paragraph>
+<paragraph role="heading" id="hd_id3150792" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149656" xml-lang="en-US" l10n="U"><emph>Text:</emph> Any string expression that specifies the new time in the format "HH:MM:SS".</paragraph>
+<paragraph role="heading" id="hd_id3145173" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U">Sub ExampleTime</paragraph>
+<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U">MsgBox Time,0,"The time is"</paragraph>
+<paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

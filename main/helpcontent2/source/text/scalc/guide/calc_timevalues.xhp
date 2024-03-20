@@ -33,12 +33,12 @@
 <bookmark_value>calculating;time differences</bookmark_value>
 <bookmark_value>time differences</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3150769" xml-lang="en-US" level="1" l10n="U" oldref="53"><variable id="calc_timevalues"><link href="text/scalc/guide/calc_timevalues.xhp" name="Calculating Time Differences">Calculating Time Differences</link>
+<paragraph role="heading" id="hd_id3150769" xml-lang="en-US" level="1" l10n="U"><variable id="calc_timevalues"><link href="text/scalc/guide/calc_timevalues.xhp" name="Calculating Time Differences">Calculating Time Differences</link>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3149263" xml-lang="en-US" l10n="U" oldref="54">If you want to calculate time differences, for example, the time between 23:30 and 01:10 in the same night, use the following formula:</paragraph>
-<paragraph role="paragraph" id="par_id3159153" xml-lang="en-US" l10n="U" oldref="55">=(B2&lt;A2)+B2-A2</paragraph>
-<paragraph role="paragraph" id="par_id3152598" xml-lang="en-US" l10n="U" oldref="56">The later time is B2 and the earlier time is A2. The result of the example is 01:40 or 1 hour and 40 minutes.</paragraph>
-<paragraph role="paragraph" id="par_id3145271" xml-lang="en-US" l10n="U" oldref="57">In the formula, an entire 24-hour day has a value of 1 and one hour has a value of 1/24. The logical value in parentheses is 0 or 1, corresponding to 0 or 24 hours. The result returned by the formula is automatically issued in time format due to the sequence of the operands.</paragraph>
+<paragraph role="paragraph" id="par_id3149263" xml-lang="en-US" l10n="U">If you want to calculate time differences, for example, the time between 23:30 and 01:10 in the same night, use the following formula:</paragraph>
+<paragraph role="paragraph" id="par_id3159153" xml-lang="en-US" l10n="U">=(B2&lt;A2)+B2-A2</paragraph>
+<paragraph role="paragraph" id="par_id3152598" xml-lang="en-US" l10n="U">The later time is B2 and the earlier time is A2. The result of the example is 01:40 or 1 hour and 40 minutes.</paragraph>
+<paragraph role="paragraph" id="par_id3145271" xml-lang="en-US" l10n="U">In the formula, an entire 24-hour day has a value of 1 and one hour has a value of 1/24. The logical value in parentheses is 0 or 1, corresponding to 0 or 24 hours. The result returned by the formula is automatically issued in time format due to the sequence of the operands.</paragraph>
 <section id="relatedtopics">
 <embed href="text/scalc/guide/calc_date.xhp#calc_date"/>
 </section>

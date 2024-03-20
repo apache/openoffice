@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "CustomAnimationPane.hrc"
 #include "CustomAnimation.hrc"
 #include "helpids.h"
@@ -128,7 +126,7 @@ Control DLG_CUSTOMANIMATIONPANE
 		TabStop = TRUE ;
 		Size = MAP_APPFONT ( 16, 14 ) ;
 
-		Text [ en-US ] = "~..." ;
+		Text = "~..." ;
 
 		QuickHelpText [en-US ] = "Effect Options" ;
 	};

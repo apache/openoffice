@@ -34,16 +34,16 @@
 <bookmark_value>GetProcessServiceManager function</bookmark_value>
 <bookmark_value>ProcessServiceManager</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153255" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03131700.xhp" name="GetProcessServiceManager Function [Runtime]">GetProcessServiceManager Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3156414" xml-lang="en-US" l10n="U" oldref="2">Returns the ProcessServiceManager (central Uno ServiceManager).</paragraph>
+<paragraph role="heading" id="hd_id3153255" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03131700.xhp" name="GetProcessServiceManager Function [Runtime]">GetProcessServiceManager Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3156414" xml-lang="en-US" l10n="U">Returns the ProcessServiceManager (central Uno ServiceManager).</paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3145136" xml-lang="en-US" l10n="U" oldref="3">This function is required when you want to instantiate a service using CreateInstanceWithArguments.</paragraph>
-<paragraph role="heading" id="hd_id3153681" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U" oldref="5">oServiceManager = GetProcessServiceManager()</paragraph>
-<paragraph role="heading" id="hd_id3149516" xml-lang="en-US" level="2" l10n="U" oldref="6">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3143270" xml-lang="en-US" l10n="U" oldref="7">oServiceManager = GetProcessServiceManager()</paragraph>
-<paragraph role="paragraph" id="par_id3153825" xml-lang="en-US" l10n="U" oldref="8">oIntrospection = oServiceManager.createInstance("com.sun.star.beans.Introspection");</paragraph>
-<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="9">this is the same as the following statement:</paragraph>
-<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U" oldref="10">oIntrospection = CreateUnoService("com.sun.star.beans.Introspection")</paragraph>
+<paragraph role="paragraph" id="par_id3145136" xml-lang="en-US" l10n="U">This function is required when you want to instantiate a service using CreateInstanceWithArguments.</paragraph>
+<paragraph role="heading" id="hd_id3153681" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U">oServiceManager = GetProcessServiceManager()</paragraph>
+<paragraph role="heading" id="hd_id3149516" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3143270" xml-lang="en-US" l10n="U">oServiceManager = GetProcessServiceManager()</paragraph>
+<paragraph role="paragraph" id="par_id3153825" xml-lang="en-US" l10n="U">oIntrospection = oServiceManager.createInstance("com.sun.star.beans.Introspection");</paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U">this is the same as the following statement:</paragraph>
+<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U">oIntrospection = CreateUnoService("com.sun.star.beans.Introspection")</paragraph>
 </body>
 </helpdocument>

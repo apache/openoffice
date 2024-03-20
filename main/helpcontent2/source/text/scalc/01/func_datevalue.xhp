@@ -33,20 +33,15 @@
 <bookmark_value>DATEVALUE function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DATWERT" id="bm_id3163820" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145621" role="heading" level="2" l10n="U"
-oldref="18"><variable id="datevalue"><link href="text/scalc/01/func_datevalue.xhp">DATEVALUE</link>
+<paragraph xml-lang="en-US" id="hd_id3145621" role="heading" level="2" l10n="U"><variable id="datevalue"><link href="text/scalc/01/func_datevalue.xhp">DATEVALUE</link>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="par_id3145087" role="paragraph" l10n="U" oldref="19"><ahelp hid="HID_FUNC_DATWERT">Returns the internal date number for text in quotes.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="par_id3149281" role="paragraph" l10n="CHG" oldref="20">The internal date number is returned as a number. The number is determined by the date system that is used by $[officename] to calculate dates.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145087" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_DATWERT">Returns the internal date number for text in quotes.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_id3149281" role="paragraph" l10n="CHG">The internal date number is returned as a number. The number is determined by the date system that is used by $[officename] to calculate dates.</paragraph>
 <paragraph xml-lang="en-US" id="par_id0119200903491982" role="paragraph" l10n="NEW">If the text string also includes a time value, DATEVALUE only returns the integer part of the conversion.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3156294" role="heading" level="3" l10n="U"
-oldref="21">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149268" role="code" l10n="U" oldref="22">DATEVALUE("Text")</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154819" role="paragraph" l10n="U" oldref="23">
-<emph>Text</emph> is a valid date expression and must be entered with quotation marks.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3156309" role="heading" level="3" l10n="U"
-oldref="24">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155841" role="paragraph" l10n="CHG" oldref="25">
-<emph>=DATEVALUE("1954-07-20")</emph> yields 19925.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156294" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149268" role="code" l10n="U">DATEVALUE("Text")</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154819" role="paragraph" l10n="U"><emph>Text</emph> is a valid date expression and must be entered with quotation marks.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156309" role="heading" level="3" l10n="U">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155841" role="paragraph" l10n="CHG"><emph>=DATEVALUE("1954-07-20")</emph> yields 19925.</paragraph>
 </body>
 </helpdocument>

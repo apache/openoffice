@@ -33,21 +33,21 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3145090">
 <bookmark_value>Option Explicit statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03103300.xhp" name="Option Explicit Statement [Runtime]">Option Explicit Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3148538" xml-lang="en-US" l10n="U" oldref="2">Specifies that every variable in the program code must be explicitly declared with the Dim statement.</paragraph>
+<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03103300.xhp" name="Option Explicit Statement [Runtime]">Option Explicit Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148538" xml-lang="en-US" l10n="U">Specifies that every variable in the program code must be explicitly declared with the Dim statement.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3149763" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3149514" xml-lang="en-US" l10n="U" oldref="4">Option Explicit</paragraph>
-<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="warning" id="par_id3145172" xml-lang="en-US" l10n="U" oldref="6">This statement must be added before the executable program code in a module.</paragraph>
-<paragraph role="heading" id="hd_id3125864" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U" oldref="8">Option Explicit</paragraph>
-<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="9">Sub ExampleExplicit</paragraph>
-<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="10">Dim sVar As String</paragraph>
-<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="U" oldref="11">sVar = "Las Vegas"</paragraph>
-<paragraph role="paragraph" id="par_id3145787" xml-lang="en-US" l10n="U" oldref="12">For i% = 1 to 10 REM This results in a run-time error</paragraph>
-<paragraph role="paragraph" id="par_id3152598" xml-lang="en-US" l10n="U" oldref="13">REM</paragraph>
-<paragraph role="paragraph" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="14">Next i%</paragraph>
-<paragraph role="paragraph" id="par_id3150010" xml-lang="en-US" l10n="U" oldref="15">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3149763" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3149514" xml-lang="en-US" l10n="U">Option Explicit</paragraph>
+<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="warning" id="par_id3145172" xml-lang="en-US" l10n="U">This statement must be added before the executable program code in a module.</paragraph>
+<paragraph role="heading" id="hd_id3125864" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U">Option Explicit</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U">Sub ExampleExplicit</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U">Dim sVar As String</paragraph>
+<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="U">sVar = "Las Vegas"</paragraph>
+<paragraph role="paragraph" id="par_id3145787" xml-lang="en-US" l10n="U">For i% = 1 to 10 REM This results in a run-time error</paragraph>
+<paragraph role="paragraph" id="par_id3152598" xml-lang="en-US" l10n="U">REM</paragraph>
+<paragraph role="paragraph" id="par_id3145749" xml-lang="en-US" l10n="U">Next i%</paragraph>
+<paragraph role="paragraph" id="par_id3150010" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>

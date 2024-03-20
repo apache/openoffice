@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "frmui.hrc"
 #include "frmpage.hrc"
 #include "globals.hrc"
@@ -624,7 +622,7 @@ TabPage TP_GRF_EXT
 		Size = MAP_APPFONT ( 12, 12 ) ;
 		Disable = TRUE ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "~..." ;
+		Text = "~..." ;
 	};
 	CheckBox CB_VERT
 	{

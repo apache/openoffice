@@ -1,5 +1,5 @@
---- misc/zlib-1.3/makefile.mk	Fri Mar 14 10:17:06 2008
-+++ misc/build/zlib-1.3/makefile.mk	Fri Mar 14 10:16:56 2008
+--- misc/zlib-1.3.1/makefile.mk	Fri Mar 14 10:17:06 2008
++++ misc/build/zlib-1.3.1/makefile.mk	Fri Mar 14 10:16:56 2008
 @@ -1 +1,82 @@
 -dummy
 +#*************************************************************************
@@ -11,9 +11,9 @@
 +#  to you under the Apache License, Version 2.0 (the
 +#  "License"); you may not use this file except in compliance
 +#  with the License.  You may obtain a copy of the License at
-+#  
++#
 +#    http://www.apache.org/licenses/LICENSE-2.0
-+#  
++#
 +#  Unless required by applicable law or agreed to in writing,
 +#  software distributed under the License is distributed on an
 +#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -46,7 +46,7 @@
 +			$(SLO)$/inflate.obj		\
 +			$(SLO)$/inftrees.obj	\
 +			$(SLO)$/trees.obj		\
-+			$(SLO)$/zutil.obj       \
++			$(SLO)$/zutil.obj		\
 +			$(SLO)$/unzip.obj		\
 +			$(SLO)$/ioapi.obj
 +
@@ -56,7 +56,7 @@
 +LIB1OBJFILES=$(SLOFILES)
 +
 +.IF "$(BUILD_X64)"!=""
-+SLOFILES_X64=	$(SLO_X64)$/adler32.obj		\
++SLOFILES_X64=	$(SLO_X64)$/adler32.obj	\
 +			$(SLO_X64)$/compress.obj	\
 +			$(SLO_X64)$/deflate.obj		\
 +			$(SLO_X64)$/crc32.obj		\
@@ -64,7 +64,7 @@
 +			$(SLO_X64)$/inflate.obj		\
 +			$(SLO_X64)$/inftrees.obj	\
 +			$(SLO_X64)$/trees.obj		\
-+			$(SLO_X64)$/zutil.obj       \
++			$(SLO_X64)$/zutil.obj		\
 +			$(SLO_X64)$/unzip.obj		\
 +			$(SLO_X64)$/ioapi.obj
 +
@@ -78,7 +78,7 @@
 +$(MISC)$/%.c : contrib$/minizip$/%.c
 +	@echo ------------------------------
 +	@echo Making: $@
-+    @$(COPY) $< $@
++	@$(COPY) $< $@
 +
 +.INCLUDE :  set_wntx64.mk
 +.INCLUDE :  target.mk
