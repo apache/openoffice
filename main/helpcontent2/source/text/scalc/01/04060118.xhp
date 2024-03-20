@@ -29,7 +29,7 @@
 </topic>
 </meta>
 <body>
-<paragraph role="heading" id="hd_id3146780" xml-lang="en-US" level="1" l10n="U" oldref="1">Financial Functions Part Three</paragraph>
+<paragraph role="heading" id="hd_id3146780" xml-lang="en-US" level="1" l10n="U">Financial Functions Part Three</paragraph>
 <sort>
 <section id="oddfprice">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3145112">
@@ -37,26 +37,18 @@
 <bookmark_value>prices;securities with irregular first interest date</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_ODDFPRICE" id="bm_id3146107" localize="false"/>
-<paragraph role="heading" id="hd_id3145112" xml-lang="en-US" level="2" oldref="71">ODDFPRICE</paragraph>
-<paragraph role="paragraph" id="par_id3147250" xml-lang="en-US" l10n="U" oldref="72"><ahelp hid="HID_AAI_FUNC_ODDFPRICE">Calculates the price per 100 currency units par value of a security, if the first interest date falls irregularly.</ahelp></paragraph>
-<paragraph role="heading" id="hd_id3153074" xml-lang="en-US" level="3" l10n="U" oldref="73">Syntax</paragraph>
-<paragraph role="code" id="par_id3146098" xml-lang="en-US" l10n="U" oldref="74">ODDFPRICE(Settlement; Maturity; Issue; FirstCoupon; Rate; Yield; Redemption; Frequency; Basis)</paragraph>
-<paragraph role="paragraph" id="par_id3153337" xml-lang="en-US" l10n="U" oldref="75">
-<emph>Settlement</emph> is the date of purchase of the security.</paragraph>
-<paragraph role="paragraph" id="par_id3149051" xml-lang="en-US" l10n="U" oldref="76">
-<emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
-<paragraph role="paragraph" id="par_id3147297" xml-lang="en-US" l10n="U" oldref="77">
-<emph>Issue</emph> is the date of issue of the security.</paragraph>
-<paragraph role="paragraph" id="par_id3150393" xml-lang="en-US" l10n="U" oldref="78">
-<emph>FirstCoupon</emph> is the first interest date of the security.</paragraph>
-<paragraph role="paragraph" id="par_id3147402" xml-lang="en-US" l10n="U" oldref="79">
-<emph>Rate</emph> is the annual rate of interest.</paragraph>
-<paragraph role="paragraph" id="par_id3151387" xml-lang="en-US" l10n="U" oldref="80">
-<emph>Yield</emph> is the annual yield of the security.</paragraph>
-<paragraph role="paragraph" id="par_id3153023" xml-lang="en-US" l10n="U" oldref="81">
-<emph>Redemption</emph> is the redemption value per 100 currency units of par value.</paragraph>
-<paragraph role="paragraph" id="par_id3150539" xml-lang="en-US" l10n="U" oldref="82">
-<emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
+<paragraph role="heading" id="hd_id3145112" xml-lang="en-US" level="2">ODDFPRICE</paragraph>
+<paragraph role="paragraph" id="par_id3147250" xml-lang="en-US" l10n="U"><ahelp hid="HID_AAI_FUNC_ODDFPRICE">Calculates the price per 100 currency units par value of a security, if the first interest date falls irregularly.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153074" xml-lang="en-US" level="3" l10n="U">Syntax</paragraph>
+<paragraph role="code" id="par_id3146098" xml-lang="en-US" l10n="U">ODDFPRICE(Settlement; Maturity; Issue; FirstCoupon; Rate; Yield; Redemption; Frequency; Basis)</paragraph>
+<paragraph role="paragraph" id="par_id3153337" xml-lang="en-US" l10n="U"><emph>Settlement</emph> is the date of purchase of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3149051" xml-lang="en-US" l10n="U"><emph>Maturity</emph> is the date on which the security matures (expires).</paragraph>
+<paragraph role="paragraph" id="par_id3147297" xml-lang="en-US" l10n="U"><emph>Issue</emph> is the date of issue of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3150393" xml-lang="en-US" l10n="U"><emph>FirstCoupon</emph> is the first interest date of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3147402" xml-lang="en-US" l10n="U"><emph>Rate</emph> is the annual rate of interest.</paragraph>
+<paragraph role="paragraph" id="par_id3151387" xml-lang="en-US" l10n="U"><emph>Yield</emph> is the annual yield of the security.</paragraph>
+<paragraph role="paragraph" id="par_id3153023" xml-lang="en-US" l10n="U"><emph>Redemption</emph> is the redemption value per 100 currency units of par value.</paragraph>
+<paragraph role="paragraph" id="par_id3150539" xml-lang="en-US" l10n="U"><emph>Frequency</emph> is number of interest payments per year (1, 2 or 4).</paragraph>
 <embed href="text/scalc/01/func_yearfrac.xhp#basis"/>
 </section>
 <section id="oddfyield">
@@ -324,8 +316,8 @@
 <paragraph role="heading" id="hd_id3148941" xml-lang="en-US" level="3" l10n="U" oldref="244">Example</paragraph>
 <paragraph role="paragraph" id="par_id3154212" xml-lang="en-US" l10n="U" oldref="245">For four periods (years) and a cash value of 7,500 currency units, the interest rate of the return is to be calculated if the future value is 10,000 currency units.</paragraph>
 <paragraph role="paragraph" id="par_id3150775" xml-lang="en-US" l10n="U" oldref="246">
-<item type="input">=RRI(4;7500;10000)</item> = 7.46 %</paragraph>
-<paragraph role="paragraph" id="par_id3145413" xml-lang="en-US" l10n="U" oldref="247">The interest rate must be 7.46 % so that 7,500 currency units will become 10,000 currency units.</paragraph>
+<item type="input">=RRI(4;7500;10000)</item> = 7.46%</paragraph>
+<paragraph role="paragraph" id="par_id3145413" xml-lang="en-US" l10n="U" oldref="247">The interest rate must be 7.46% so that 7,500 currency units will become 10,000 currency units.</paragraph>
 </section>
 <section id="rate">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154267">

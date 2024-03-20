@@ -111,6 +111,9 @@ public:
 
     virtual             ~BinaryXOutputStream();
 
+    /** Flushes the output stream. */
+    void                flush();
+
     /** Flushes and closes the output stream. Does also close the wrapped UNO
         output stream if bAutoClose has been set to true in the constructor. */
     void                close();

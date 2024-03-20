@@ -47,14 +47,13 @@ http://www.mozilla.org/projects/security/pki/nss/tech-notes/tn6.html
 
 Windows builds of nss
 ---------------------
-To build mozilla on windows you'll need the mozilla build tools
+To build nss on Windows you need the MozillaBuild tools.
 
-Build requirements containing the link to the build tools:
-https://developer.mozilla.org/en/Windows_Build_Prerequisites#ss2.2
+Wiki page containing the link to the build tools:
+https://wiki.mozilla.org/MozillaBuild#Overview
 
-The direct link:
-
-http://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-2.2.0.exe
+The direct link (latest supported version):
+https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-3.4.exe
 
 libsqlite3
 ----------

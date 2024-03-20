@@ -33,14 +33,14 @@
 <bookmark_value>aligning; characters in %PRODUCTNAME Math</bookmark_value>
 <bookmark_value>formula parts; manually aligning</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3156384" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="align"><link href="text/smath/guide/align.xhp" name="Manually Aligning Formula Parts">Manually Aligning Formula Parts</link>
+<paragraph role="heading" id="hd_id3156384" xml-lang="en-US" level="1" l10n="U"><variable id="align"><link href="text/smath/guide/align.xhp" name="Manually Aligning Formula Parts">Manually Aligning Formula Parts</link>
 </variable></paragraph>
-<paragraph role="heading" id="hd_id3154657" xml-lang="en-US" level="3" l10n="U" oldref="2">How do you align characters in $[officename] Math quickly and easily?</paragraph>
-<paragraph role="paragraph" id="par_id3150249" xml-lang="en-US" l10n="U" oldref="3">To accomplish this, you must define empty groups and character strings. They do not require any space, but carry information that helps in the alignment process.</paragraph>
-<paragraph role="paragraph" id="par_id3153912" xml-lang="en-US" l10n="U" oldref="4">To create empty groups, enter curly brackets <emph>{}</emph> in the Commands window. In the following example, the goal is to achieve a line break so that the plus signs are beneath one another, even though one less character is entered in the upper line:</paragraph>
-<paragraph role="code" id="par_id3153246" xml-lang="en-US" l10n="U" oldref="7">a+a+a+{} newline {}{}{}{}{}a+a+a+a</paragraph>
-<paragraph role="paragraph" id="par_id3143229" xml-lang="en-US" l10n="U" oldref="5">Empty character strings are a simple way to ensure that texts and formulas are left-aligned. They are defined using double inverted commas "" . Make sure you do not use any typographic inverted commas. Example:</paragraph>
-<paragraph role="code" id="par_id3153809" xml-lang="en-US" l10n="U" oldref="6">"A further example." newline a+b newline ""c-d</paragraph>
+<paragraph role="heading" id="hd_id3154657" xml-lang="en-US" level="3" l10n="U">How do you align characters in $[officename] Math quickly and easily?</paragraph>
+<paragraph role="paragraph" id="par_id3150249" xml-lang="en-US" l10n="U">To accomplish this, you must define empty groups and character strings. They do not require any space, but carry information that helps in the alignment process.</paragraph>
+<paragraph role="paragraph" id="par_id3153912" xml-lang="en-US" l10n="U">To create empty groups, enter curly brackets <emph>{}</emph> in the Commands window. In the following example, the goal is to achieve a line break so that the plus signs are beneath one another, even though one less character is entered in the upper line:</paragraph>
+<paragraph role="code" id="par_id3153246" xml-lang="en-US" l10n="U">a+a+a+{} newline {}{}{}{}{}a+a+a+a</paragraph>
+<paragraph role="paragraph" id="par_id3143229" xml-lang="en-US" l10n="U">Empty character strings are a simple way to ensure that texts and formulas are left-aligned. They are defined using double inverted commas "" . Make sure you do not use any typographic inverted commas. Example:</paragraph>
+<paragraph role="code" id="par_id3153809" xml-lang="en-US" l10n="U">"A further example." newline a+b newline ""c-d</paragraph>
 <embed href="text/shared/00/00000004.xhp#related"/>
 <embed href="text/smath/guide/brackets.xhp#brackets"/>
 </body>

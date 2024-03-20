@@ -37,27 +37,27 @@
 <bookmark_value>table cells;calculating sums</bookmark_value>
 <bookmark_value>sums of table cell series</bookmark_value>
 </bookmark><comment>mw deleted "text tables;"</comment>
-<paragraph xml-lang="en-US" id="hd_id3147400" role="heading" level="1" l10n="U" oldref="3"><variable id="calculate_intable"><link href="text/swriter/guide/calculate_intable.xhp" name="Calculating Cell Totals in Tables">Calculating the Sum of a Series of Table Cells</link>
+<paragraph xml-lang="en-US" id="hd_id3147400" role="heading" level="1" l10n="U"><variable id="calculate_intable"><link href="text/swriter/guide/calculate_intable.xhp" name="Calculating Cell Totals in Tables">Calculating the Sum of a Series of Table Cells</link>
 </variable></paragraph>
 <list type="ordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3154243" role="listitem" l10n="U" oldref="4">Choose <emph>Insert - Table</emph>, and insert a table with one column and more than one row into a text document.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154243" role="listitem" l10n="U">Choose <emph>Insert - Table</emph>, and insert a table with one column and more than one row into a text document.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3154203" role="listitem" l10n="U" oldref="5">Type a number in each cell of the column, but leave the last cell in the column empty.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154203" role="listitem" l10n="U">Type a number in each cell of the column, but leave the last cell in the column empty.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3154222" role="listitem" l10n="U" oldref="6">Place the cursor in the last cell of the column, and then click the <item type="menuitem">Sum</item> icon on the <item type="menuitem">Table Bar</item>.<br/>The <item type="menuitem">Formula Bar</item> appears with the entry "=sum".</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154222" role="listitem" l10n="U">Place the cursor in the last cell of the column, and then click the <item type="menuitem">Sum</item> icon on the <item type="menuitem">Table Bar</item>.<br/>The <item type="menuitem">Formula Bar</item> appears with the entry "=sum".</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3147775" role="listitem" l10n="U" oldref="15">Click in the first cell of the series you want to sum up, drag to the final cell, and then release.<br/>$[officename] inserts a formula for calculating the sum of the values in the current column.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147775" role="listitem" l10n="U">Click in the first cell of the series you want to sum up, drag to the final cell, and then release.<br/>$[officename] inserts a formula for calculating the sum of the values in the current column.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3150507" role="listitem" l10n="U" oldref="8">Press Enter, or click <emph>Apply</emph> in the Formula bar. <br/>The sum of the values in the current column is entered in the cell.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150507" role="listitem" l10n="U">Press Enter, or click <emph>Apply</emph> in the Formula bar.<br/>The sum of the values in the current column is entered in the cell.</paragraph>
 </listitem>
 </list>
-<paragraph xml-lang="en-US" id="par_id3150533" role="paragraph" l10n="U" oldref="10">If you enter a different number anywhere in the column, the sum is updated as soon as you click in the last column cell.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155533" role="paragraph" l10n="U" oldref="11">Similarly, you can also quickly calculate the sum of a row of numbers.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150533" role="paragraph" l10n="U">If you enter a different number anywhere in the column, the sum is updated as soon as you click in the last column cell.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155533" role="paragraph" l10n="U">Similarly, you can also quickly calculate the sum of a row of numbers.</paragraph>
 <embed href="text/shared/00/00000004.xhp#related"/>
 <embed href="text/swriter/main0214.xhp#releistename"/>
 <embed href="text/swriter/guide/calculate.xhp#calculate"/>

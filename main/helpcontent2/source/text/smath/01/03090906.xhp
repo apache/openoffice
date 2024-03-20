@@ -30,12 +30,12 @@
 </meta>
 <body>
 <section id="matrix3">
-<paragraph role="heading" id="hd_id3154704" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03090906.xhp" name="Matrix in Bold Font">Matrix in Bold Font</link></paragraph>
-<paragraph role="paragraph" id="par_id3150342" xml-lang="en-US" l10n="U" oldref="2">Here is an example of how to create a bold font matrix in <emph>$[officename] Math</emph>. You can copy this example to the <emph>Commands</emph> window using the clipboard and use it in your own formula.</paragraph>
+<paragraph role="heading" id="hd_id3154704" xml-lang="en-US" level="1" l10n="U"><link href="text/smath/01/03090906.xhp" name="Matrix in Bold Font">Matrix in Bold Font</link></paragraph>
+<paragraph role="paragraph" id="par_id3150342" xml-lang="en-US" l10n="U">Here is an example of how to create a bold font matrix in <emph>$[officename] Math</emph>. You can copy this example to the <emph>Commands</emph> window using the clipboard and use it in your own formula.</paragraph>
 </section>
 <paragraph role="paragraph" id="par_id3148866" xml-lang="en-US" l10n="E">
 <image id="img_id3150210" src="res/helpimg/smzb6.png" width="9.511cm" height="7.99cm"><alt id="alt_id3150210" xml-lang="en-US">Icon</alt>
 </image></paragraph>
-<paragraph role="code" id="par_id3154763" xml-lang="en-US" l10n="U" oldref="4">bold { f(x", "y) = left [ stack { x + y over z + left lbrace matrix { 2 # 3 # 4 ## 4 # 5 # 6 ## 6 # 7 # 8} right rbrace # {y + sin (x)} over %alpha # z + y over g } right ]}</paragraph>
+<paragraph role="code" id="par_id3154763" xml-lang="en-US" l10n="U">bold { f(x", "y) = left [ stack { x + y over z + left lbrace matrix { 2 # 3 # 4 ## 4 # 5 # 6 ## 6 # 7 # 8} right rbrace # {y + sin (x)} over %alpha # z + y over g } right ]}</paragraph>
 </body>
 </helpdocument>

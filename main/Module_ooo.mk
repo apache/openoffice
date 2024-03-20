@@ -43,7 +43,6 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	codemaker \
 	comphelper \
 	configmgr \
-	cosv \
 	cppcanvas \
 	cppuhelper \
 	cpputools \
@@ -108,7 +107,6 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	ucb \
 	ucbhelper \
 	udkapi \
-	udm \
 	unixODBC \
 	unodevtools \
 	unotools \

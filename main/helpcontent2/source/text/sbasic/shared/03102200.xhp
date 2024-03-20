@@ -33,22 +33,21 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154346">
 <bookmark_value>IsArray function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3154346" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03102200.xhp" name="IsArray Function [Runtime]">IsArray Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3159413" xml-lang="en-US" l10n="U" oldref="2">Determines if a variable is a data field in an array.</paragraph>
+<paragraph role="heading" id="hd_id3154346" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03102200.xhp" name="IsArray Function [Runtime]">IsArray Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3159413" xml-lang="en-US" l10n="U">Determines if a variable is a data field in an array.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3150792" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3153379" xml-lang="en-US" l10n="U" oldref="4">IsArray (Var)</paragraph>
-<paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="6">Bool</paragraph>
-<paragraph role="heading" id="hd_id3153969" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Var:</emph> Any variable that you want to test if it is declared as an array. If the variable is an array, then the function returns <emph>True</emph>, otherwise <emph>False</emph> is returned.</paragraph>
+<paragraph role="heading" id="hd_id3150792" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3153379" xml-lang="en-US" l10n="U">IsArray (Var)</paragraph>
+<paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3154685" xml-lang="en-US" l10n="U">Bool</paragraph>
+<paragraph role="heading" id="hd_id3153969" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U"><emph>Var:</emph> Any variable that you want to test if it is declared as an array. If the variable is an array, then the function returns <emph>True</emph>, otherwise <emph>False</emph> is returned.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3155131" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3153365" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleIsArray</paragraph>
-<paragraph role="paragraph" id="par_id3150487" xml-lang="en-US" l10n="U" oldref="11">Dim sDatf(10) as String</paragraph>
-<paragraph role="paragraph" id="par_id3155414" xml-lang="en-US" l10n="U" oldref="12">print isarray(sdatf())</paragraph>
-<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U" oldref="13">end Sub</paragraph>
+<paragraph role="heading" id="hd_id3155131" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153365" xml-lang="en-US" l10n="U">Sub ExampleIsArray</paragraph>
+<paragraph role="paragraph" id="par_id3150487" xml-lang="en-US" l10n="U">Dim sDatf(10) as String</paragraph>
+<paragraph role="paragraph" id="par_id3155414" xml-lang="en-US" l10n="U">print isarray(sdatf())</paragraph>
+<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U">end Sub</paragraph>
 </body>
 </helpdocument>

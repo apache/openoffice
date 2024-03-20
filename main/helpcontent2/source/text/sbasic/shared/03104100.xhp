@@ -33,15 +33,15 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149205">
 <bookmark_value>Optional function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3149205" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03104100.xhp" name="Optional (in Function Statement) [Runtime]">Optional (in Function Statement) [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="U" oldref="2">Allows you to define parameters that are passed to a function as optional.</paragraph>
+<paragraph role="heading" id="hd_id3149205" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03104100.xhp" name="Optional (in Function Statement) [Runtime]">Optional (in Function Statement) [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="U">Allows you to define parameters that are passed to a function as optional.</paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3155419" xml-lang="en-US" l10n="U" oldref="3">See also: <link href="text/sbasic/shared/03104000.xhp" name="IsMissing">IsMissing</link></paragraph>
-<paragraph role="heading" id="hd_id3153824" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="5">Function MyFunction(Text1 As String, Optional Arg2, Optional Arg3)</paragraph>
-<paragraph role="heading" id="hd_id3145610" xml-lang="en-US" level="2" l10n="U" oldref="7">Examples:</paragraph>
-<paragraph role="paragraph" id="par_id3154347" xml-lang="en-US" l10n="U" oldref="8">Result = MyFunction("Here", 1, "There") ' all arguments are passed.</paragraph>
-<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U" oldref="9">Result = MyFunction("Test", ,1) ' second argument is missing.</paragraph>
-<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U" oldref="10">See also <link href="text/sbasic/guide/sample_code.xhp" name="Examples">Examples</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3155419" xml-lang="en-US" l10n="U">See also: <link href="text/sbasic/shared/03104000.xhp" name="IsMissing">IsMissing</link></paragraph>
+<paragraph role="heading" id="hd_id3153824" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U">Function MyFunction(Text1 As String, Optional Arg2, Optional Arg3)</paragraph>
+<paragraph role="heading" id="hd_id3145610" xml-lang="en-US" level="2" l10n="U">Examples:</paragraph>
+<paragraph role="paragraph" id="par_id3154347" xml-lang="en-US" l10n="U">Result = MyFunction("Here", 1, "There") ' all arguments are passed.</paragraph>
+<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U">Result = MyFunction("Test", ,1) ' second argument is missing.</paragraph>
+<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U">See also <link href="text/sbasic/guide/sample_code.xhp" name="Examples">Examples</link>.</paragraph>
 </body>
 </helpdocument>

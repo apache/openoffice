@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,19 +7,17 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
-
-
 
 PRJ=.
 
@@ -67,9 +65,9 @@ OUT2LIB=dist$/*.OBJ$/lib$/*$(DLLPOST)
 
 BUILD_DIR=nss
 BUILD_ACTION= $(GNUMAKE) nss_build_all
-#See #i105566# && moz#513024#
+# See #i105566# && moz#513024#
 .IF "$(OS)"=="LINUX"
-BUILD_ACTION+=FREEBL_NO_DEPEND=1 FREEBL_LOWHASH=1 NSS_DISABLE_GTESTS=1
+BUILD_ACTION+=FREEBL_NO_DEPEND=1 FREEBL_LOWHASH=1 NSS_DISABLE_GTESTS=1 NSS_ENABLE_WERROR=0
 PATCH_FILES+=nss_linux.patch
 .ENDIF
 
@@ -101,7 +99,7 @@ nss_LIBS+=$(MINGW_SHARED_LIBSTDCPP)
 
 
 BUILD_DIR=nss
-BUILD_ACTION= NSS_DISABLE_GTESTS=1 NS_USE_GCC=1 CC="$(nss_CC)" CXX="$(nss_CXX)" OS_LIBS="$(nss_LIBS)" OS_TARGET=WIN95 _WIN32_IE=0x500 PATH="$(PATH)" DEFINES=-D_WIN32_IE=0x500 $(GNUMAKE) nss_build_all
+BUILD_ACTION= NSS_DISABLE_GTESTS=1 NS_USE_GCC=1 CC="$(nss_CC)" CXX="$(nss_CXX)" OS_LIBS="$(nss_LIBS)" OS_TARGET=WINNT _WIN32_IE=0x500 PATH="$(PATH)" DEFINES=-D_WIN32_IE=0x500 $(GNUMAKE) nss_build_all
 
 OUT2LIB= \
 	dist$/*.OBJ$/lib$/libnspr4.a \
@@ -115,17 +113,17 @@ OUT2LIB= \
 	dist$/*.OBJ$/lib$/libsqlite3.a \
 	dist$/*.OBJ$/lib$/libssl3.a
 
-.ELSE			# "$(COM)"=="GCC"
+.ELSE # "$(COM)"=="GCC"
 MOZ_MSVCVERSION= 9
 .EXPORT : MOZ_MSVCVERSION
 PATCH_FILES+=nss_win.patch
 moz_build:=$(shell cygpath -p $(MOZILLABUILD))
 
-#Using WINNT will cause at least that nspr4.dll, plc4.dll, plds4.dll 
-#become libnspr4.dll, libplc4.dll, libplds4.dll
-#WINNT causes the use of Microsoft fibers (specific to Windows NT and Windows 2000). 
-#OS_TARGET= WINNT
-OS_TARGET=WIN95
+# Using WINNT will cause at least that nspr4.dll, plc4.dll, plds4.dll
+# become libnspr4.dll, libplc4.dll, libplds4.dll
+# WINNT causes the use of Microsoft fibers (specific to Windows NT and Windows 2000).
+OS_TARGET=WINNT
+#OS_TARGET=WIN95
 .EXPORT : OS_TARGET
 
 # make use of stlport headerfiles
@@ -137,29 +135,31 @@ BUILD_ACTION= PATH="$(PATH):$(moz_build)/msys/bin:$(moz_build)/bin:$(moz_build)/
 	-c "cd $(NSS_BUILD_DIR) && make nss_build_all NSS_DISABLE_GTESTS=1"
 
 OUT2LIB= \
-	dist$/WIN954.0_OPT.OBJ$/lib$/nspr4.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/nss3.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/nssdbm3.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/nssutil3.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/plc4.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/plds4.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/smime3.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/softokn3.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/sqlite3.lib \
-	dist$/WIN954.0_OPT.OBJ$/lib$/ssl3.lib
+	dist$/*.OBJ$/lib$/libnspr4.lib \
+	dist$/*.OBJ$/lib$/nss3.lib \
+	dist$/*.OBJ$/lib$/nssdbm3.lib \
+	dist$/*.OBJ$/lib$/nssutil3.lib \
+	dist$/*.OBJ$/lib$/libplc4.lib \
+	dist$/*.OBJ$/lib$/libplds4.lib \
+	dist$/*.OBJ$/lib$/smime3.lib \
+	dist$/*.OBJ$/lib$/softokn3.lib \
+	dist$/*.OBJ$/lib$/sqlite3.lib \
+	dist$/*.OBJ$/lib$/ssl3.lib
 
-.ENDIF			# "$(COM)"=="GCC"
+.ENDIF # "$(COM)"=="GCC"
 
-OUT2BIN=dist$/WIN954.0_OPT.OBJ$/lib$/*$(DLLPOST)
-.ENDIF			# "$(GUI)"=="WNT"
+OUT2BIN=dist$/*.OBJ$/lib$/*$(DLLPOST)
+.ENDIF # "$(GUI)"=="WNT"
 
 
 OUTDIR2INC=dist$/public$/nss dist$/*.OBJ$/include
 
 # --- Targets ------------------------------------------------------
 
-.INCLUDE : set_ext.mk
+.INCLUDE :	set_ext.mk
 .INCLUDE :	target.mk
 .INCLUDE :	tg_ext.mk
 
 .ENDIF
+
+# vim: set noet sw=4 ts=4:

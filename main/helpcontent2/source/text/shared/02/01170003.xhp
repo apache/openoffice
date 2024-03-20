@@ -32,9 +32,9 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150445">
 <bookmark_value>date fields; properties</bookmark_value>
 </bookmark>
-<paragraph role="heading" level="1" id="hd_id3150445" l10n="U" xml-lang="en-US" oldref="77">Special Tips for Date Fields</paragraph>
-<paragraph xml-lang="en-US" role="paragraph" id="par_id3154230" l10n="U" oldref="75">When you enter a year using two digits, the corresponding four digit value is determined by a setting in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - General</emph>. For example, if 1935 is set as the lower limiting value and you enter 34 as a date value, then the result is 2034 instead of 1934.</paragraph>
-<paragraph role="paragraph" id="par_id3149205" l10n="U" xml-lang="en-US" oldref="76">The pre-set limit value will be saved for each document.</paragraph>
+<paragraph role="heading" level="1" id="hd_id3150445" l10n="U" xml-lang="en-US">Special Tips for Date Fields</paragraph>
+<paragraph xml-lang="en-US" role="paragraph" id="par_id3154230" l10n="U">When you enter a year using two digits, the corresponding four digit value is determined by a setting in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - General</emph>. For example, if 1935 is set as the lower limiting value and you enter 34 as a date value, then the result is 2034 instead of 1934.</paragraph>
+<paragraph role="paragraph" id="par_id3149205" l10n="U" xml-lang="en-US">The pre-set limit value will be saved for each document.</paragraph>
 <embed href="text/shared/optionen/01010600.xhp#jahreszahlen"/>
 </body>
 </helpdocument>

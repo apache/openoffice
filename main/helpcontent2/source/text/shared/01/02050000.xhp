@@ -36,17 +36,16 @@
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/.uno:Copy" id="bm_id8789832" localize="false"/><!-- HID added by script -->
 <bookmark xml-lang="en-US" branch="hid/.uno:Copy" id="bm_id3152414" localize="false"/>
-<paragraph role="heading" id="hd_id3152876" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/02050000.xhp" name="Copy">Copy</link></paragraph>
-<paragraph role="paragraph" id="par_id3154682" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:Copy">Copies the selection to the clipboard.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3152876" xml-lang="en-US" level="1" l10n="U"><link href="text/shared/01/02050000.xhp" name="Copy">Copy</link></paragraph>
+<paragraph role="paragraph" id="par_id3154682" xml-lang="en-US" l10n="U"><ahelp hid=".uno:Copy">Copies the selection to the clipboard.</ahelp></paragraph>
 </section>
-<paragraph role="note" id="par_id3155552" xml-lang="en-US" l10n="U" oldref="4">Each time you copy, the existing content of the clipboard is overwritten.</paragraph>
+<paragraph role="note" id="par_id3155552" xml-lang="en-US" l10n="U">Each time you copy, the existing content of the clipboard is overwritten.</paragraph>
 <section id="howtoget">
 <embed href="text/shared/00/00000402.xhp#copy"/>
 </section>
-<paragraph role="paragraph" id="par_id3154824" xml-lang="en-US" l10n="U" oldref="3"><switchinline select="sys">
+<paragraph role="paragraph" id="par_id3154824" xml-lang="en-US" l10n="U"><switchinline select="sys">
 <caseinline select="UNIX">
-<variable id="unixkopieren">$[officename] also supports the clipboard under Unix; however, you must use the $[officename] commands, such as Ctrl+C.
-</variable>
+<variable id="unixkopieren">$[officename] also supports the clipboard under Unix; however, you must use the $[officename] commands, such as Ctrl+C.</variable>
 </caseinline></switchinline></paragraph>
 </body>
 </helpdocument>

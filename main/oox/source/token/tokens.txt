@@ -15,8 +15,6 @@
 3TrafficLights2
 3cd4
 3cd8
-5cd8
-7cd8
 3dDkShadow
 3dLight
 4Arrows
@@ -30,6 +28,8 @@
 5ArrowsGray
 5Quarters
 5Rating
+5cd8
+7cd8
 A1
 A3
 A4
@@ -870,6 +870,7 @@ blob
 block
 blockArc
 blockQuote
+blockSize
 blue
 blueMod
 blueOff
@@ -1152,6 +1153,8 @@ chosung
 chr
 christmasTree
 chromakey
+cipherAlgorithm
+cipherChaining
 circle
 circleNumDbPlain
 circleNumWdBlackPlain
@@ -1524,9 +1527,6 @@ cyan
 cycle
 cylinder
 d
-dc
-dcmitype
-dcterms
 dLbl
 dLblPos
 dLbls
@@ -1580,6 +1580,7 @@ dataDxfId
 dataExtractLoad
 dataField
 dataFields
+dataIntegrity
 dataModel
 dataOnRows
 dataOnly
@@ -1618,6 +1619,9 @@ dbColumn
 dbPr
 dbl
 dblStrike
+dc
+dcmitype
+dcterms
 ddList
 ddeItem
 ddeItems
@@ -2002,6 +2006,13 @@ enableRefresh
 enableWizard
 enabled
 encoding
+encryptedHmacKey
+encryptedHmacValue
+encryptedKey
+encryptedKeyValue
+encryptedVerifierHashInput
+encryptedVerifierHashValue
+encryption
 end
 endA
 endAngle
@@ -2519,7 +2530,9 @@ hardEdge
 harsh
 hasCustomPrompt
 hash
+hashAlgorithm
 hashData
+hashSize
 hc
 hd2
 hd4
@@ -2842,6 +2855,10 @@ keepNext
 kern
 key
 keyAttribute
+keyBits
+keyData
+keyEncryptor
+keyEncryptors
 keywords
 khaki
 kinsoku
@@ -4309,6 +4326,8 @@ saka
 salmon
 salt
 saltData
+saltSize
+saltValue
 sameClick
 sameDir
 sampData

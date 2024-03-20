@@ -33,16 +33,16 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3159201">
 <bookmark_value>Global statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3159201" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03103450.xhp" name="Global Statement [Runtime]">Global Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="2">Dimensions a variable or an array at the global level (that is, not within a subroutine or function), so that the variable and the array are valid in all libraries and modules for the current session.</paragraph>
+<paragraph role="heading" id="hd_id3159201" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03103450.xhp" name="Global Statement [Runtime]">Global Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U">Dimensions a variable or an array at the global level (that is, not within a subroutine or function), so that the variable and the array are valid in all libraries and modules for the current session.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U" oldref="4">Global VarName[(start To end)] [As VarType][, VarName2[(start To end)] [As VarType][,...]]</paragraph>
-<paragraph role="heading" id="hd_id3156152" xml-lang="en-US" level="2" l10n="U" oldref="5">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U" oldref="6">Global iGlobalVar As Integer</paragraph>
-<paragraph role="paragraph" id="par_id3147531" xml-lang="en-US" l10n="U" oldref="7">Sub ExampleGlobal</paragraph>
-<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="8">iGlobalVar = iGlobalVar + 1</paragraph>
-<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U" oldref="9">MsgBox iGlobalVar</paragraph>
-<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U" oldref="10">End sub</paragraph>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U">Global VarName[(start To end)] [As VarType][, VarName2[(start To end)] [As VarType][,...]]</paragraph>
+<paragraph role="heading" id="hd_id3156152" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U">Global iGlobalVar As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3147531" xml-lang="en-US" l10n="U">Sub ExampleGlobal</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U">iGlobalVar = iGlobalVar + 1</paragraph>
+<paragraph role="paragraph" id="par_id3148552" xml-lang="en-US" l10n="U">MsgBox iGlobalVar</paragraph>
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U">End sub</paragraph>
 </body>
 </helpdocument>

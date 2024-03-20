@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 /* Resource file for the function wizard / autopilot.
  *
  * All descriptions of functions are collected within the resources
@@ -91,11 +89,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBANZAHL );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -131,11 +129,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBANZAHL2 );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -171,11 +169,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBMITTELWERT );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -211,11 +209,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBAUSZUG );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -251,11 +249,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBMAX );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -291,11 +289,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBMIN );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -331,11 +329,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBPRODUKT );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -371,11 +369,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBSTDABW );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -411,11 +409,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBSTDABWN );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -451,11 +449,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBSUMME );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -491,11 +489,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBVARIANZ );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -531,11 +529,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATABASE;
 			U2S( HID_FUNC_DBVARIANZEN );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -571,11 +569,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_DATUM );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -611,11 +609,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_DATWERT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -635,11 +633,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_TAG );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -659,11 +657,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_TAGE360 );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -699,11 +697,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_STUNDE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -723,11 +721,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_MINUTE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -747,11 +745,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_MONAT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -771,11 +769,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_JETZT );
 			0;
-            0;
+			0;
 		};
 	};
 	// -=*# Resource for function SEKUNDE #*=-
@@ -787,11 +785,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_SEKUNDE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -811,11 +809,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_ZEIT );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -851,11 +849,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_ZEITWERT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -875,11 +873,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_HEUTE );
 			0;
-            0;
+			0;
 		};
 	};
 	// -=*# Resource for function WOCHENTAG #*=-
@@ -891,11 +889,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_WOCHENTAG );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -923,11 +921,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_JAHR );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -947,11 +945,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_TAGE );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -979,11 +977,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_KALENDERWOCHE );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1011,11 +1009,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_OSTERSONNTAG );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1035,11 +1033,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_BW );
 			5;	0;	0;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1091,11 +1089,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_ZW );
 			5;	0;	0;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1147,11 +1145,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_ZZR );
 			5;	0;	0;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1203,11 +1201,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_RMZ );
 			5;	0;	0;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1259,11 +1257,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_ZINS );
 			6;	0;	0;	0;	1;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1323,11 +1321,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_ZINSZ );
 			6;	0;	0;	0;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1387,11 +1385,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_KAPZ );
 			6;	0;	0;	0;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1451,11 +1449,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_KUMKAPITAL );
 			6;	0;	0;	0;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1515,11 +1513,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_KUMZINSZ );
 			6;	0;	0;	0;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1579,11 +1577,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_DIA );
 			4;	0;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1627,11 +1625,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_LIA );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1667,11 +1665,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_GDA );
 			5;	0;	0;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1723,11 +1721,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_GDA2 );
 			5;	0;	0;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1779,11 +1777,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_VDB );
 			7;	0;	0;	0;	0;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1851,11 +1849,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_EFFEKTIV );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1883,11 +1881,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_NOMINAL );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1915,11 +1913,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_NBW );
 			VAR_ARGS+1;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1947,11 +1945,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_IKV );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -1979,11 +1977,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_QIKV );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2019,11 +2017,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_ISPMT );
 			4;	0;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2067,11 +2065,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_LAUFZEIT );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2107,11 +2105,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_FINANZ;
 			U2S( HID_FUNC_ZGZ );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2147,11 +2145,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTBEZUG );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2171,11 +2169,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTFEHL );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2195,11 +2193,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTFEHLER );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2219,11 +2217,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTLEER );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2243,11 +2241,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTLOG );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2267,11 +2265,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTNV );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2291,11 +2289,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTKTEXT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2315,11 +2313,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTTEXT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2339,11 +2337,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTZAHL );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2363,11 +2361,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ISTFORMEL );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2387,11 +2385,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_FORMEL );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2411,11 +2409,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_N );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2435,11 +2433,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_NV );
 			0;
-            0;
+			0;
 		};
 	};
 	// -=*# Resource for function TYP #*=-
@@ -2451,11 +2449,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_TYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2475,11 +2473,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_ZELLE );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2507,11 +2505,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_INFO;
 			U2S( HID_FUNC_AKTUELL );
 			0;
-            0;
+			0;
 		};
 	};
 	// -=*# Resource for function FALSCH #*=-
@@ -2523,11 +2521,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_LOGIC;
 			U2S( HID_FUNC_FALSCH );
 			0;
-            0;
+			0;
 		};
 	};
 	// -=*# Resource for function NICHT #*=-
@@ -2539,11 +2537,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_LOGIC;
 			U2S( HID_FUNC_NICHT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2563,11 +2561,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_LOGIC;
 			U2S( HID_FUNC_WAHR );
 			0;
-            0;
+			0;
 		};
 	};
 	// -=*# Resource for function WENN #*=-
@@ -2579,11 +2577,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_LOGIC;
 			U2S( HID_FUNC_WENN );
 			3;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2619,11 +2617,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_LOGIC;
 			U2S( HID_FUNC_ODER );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2643,11 +2641,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_LOGIC;
 			U2S( HID_FUNC_UND );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2668,11 +2666,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_LOGIC;
 			U2S( HID_FUNC_XOR );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2692,11 +2690,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ABS );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2716,11 +2714,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_POTENZ );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2748,11 +2746,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ANZAHLLEEREZELLEN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2772,11 +2770,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_PI );
 			0;
-            0;
+			0;
 		};
 	};
 	// -=*# Resource for function SUMME #*=-
@@ -2788,11 +2786,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_SUMME );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2812,11 +2810,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_QUADRATESUMME );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2836,11 +2834,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_PRODUKT );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2860,11 +2858,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_SUMMEWENN );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2901,11 +2899,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_AVERAGEIF );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2941,11 +2939,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_SUMIFS );
 			PAIRED_VAR_ARGS+1;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -2982,11 +2980,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_AVERAGEIFS );
 			PAIRED_VAR_ARGS+1;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3023,11 +3021,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_COUNTIFS );
 			PAIRED_VAR_ARGS;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3056,11 +3054,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ZAEHLENWENN );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3088,11 +3086,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_WURZEL );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3112,11 +3110,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ZUFALLSZAHL );
 			0;
-            0;
+			0;
 		};
 	};
 	// -=*# Resource for function ISTGERADE #*=-
@@ -3128,11 +3126,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ISTGERADE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3152,11 +3150,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ISTUNGERADE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3176,11 +3174,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_KOMBINATIONEN );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3208,11 +3206,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_KOMBINATIONEN2 );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3240,11 +3238,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARCCOS );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3264,11 +3262,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARCSIN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3288,11 +3286,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARCOSHYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3312,11 +3310,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARSINHYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3336,11 +3334,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARCCOT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3360,11 +3358,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARCTAN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3384,11 +3382,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARCOTHYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3408,11 +3406,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARTANHYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3432,11 +3430,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_COS );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3456,11 +3454,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_SIN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3480,11 +3478,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_COT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3504,11 +3502,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_TAN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3528,11 +3526,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_COSHYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3552,11 +3550,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_SINHYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3576,11 +3574,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_COTHYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3600,11 +3598,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_TANHYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3624,11 +3622,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ARCTAN2 );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3648,101 +3646,101 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 	};
 	// -=*# Resource for function CSC #*=-
-    Resource SC_OPCODE_COSECANT
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Return the cosecant of an angle. CSC(x)=1/SIN(x)" ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_MATH;
-            U2S( HID_FUNC_COSECANT );
-            1; 0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Angle" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The angle in radians for which the cosecant is to be calculated." ;
-        };
-    };
+	Resource SC_OPCODE_COSECANT
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Return the cosecant of an angle. CSC(x)=1/SIN(x)" ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_MATH;
+			U2S( HID_FUNC_COSECANT );
+			1; 0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Angle" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The angle in radians for which the cosecant is to be calculated." ;
+		};
+	};
 	// -=*# Resource for function SEC #*=-
-    Resource SC_OPCODE_SECANT
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Return the secant of an angle. SEC(x)=1/COS(x)" ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_MATH;
-            U2S( HID_FUNC_SECANT );
-            1; 0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Angle" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The angle in radians for which the secant is to be calculated." ;
-        };
-    };
+	Resource SC_OPCODE_SECANT
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Return the secant of an angle. SEC(x)=1/COS(x)" ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_MATH;
+			U2S( HID_FUNC_SECANT );
+			1; 0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Angle" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The angle in radians for which the secant is to be calculated." ;
+		};
+	};
 	// -=*# Resource for function CSCH #*=-
-    Resource SC_OPCODE_COSECANT_HYP
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)" ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_MATH;
-            U2S( HID_FUNC_COSECANTHYP );
-            1; 0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Angle" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated." ;
-        };
-    };
+	Resource SC_OPCODE_COSECANT_HYP
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)" ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_MATH;
+			U2S( HID_FUNC_COSECANTHYP );
+			1; 0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Angle" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated." ;
+		};
+	};
 	// -=*# Resource for function SECH #*=-
-    Resource SC_OPCODE_SECANT_HYP
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)" ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_MATH;
-            U2S( HID_FUNC_SECANTHYP );
-            1; 0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Angle" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated." ;
-        };
-    };
+	Resource SC_OPCODE_SECANT_HYP
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)" ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_MATH;
+			U2S( HID_FUNC_SECANTHYP );
+			1; 0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Angle" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated." ;
+		};
+	};
 	// -=*# Resource for function DEG #*=-
 	Resource SC_OPCODE_DEG
 	{
@@ -3752,11 +3750,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_DEG );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3776,11 +3774,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_RAD );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3800,11 +3798,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_EXP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3824,11 +3822,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_LOG );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3856,11 +3854,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_LN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3880,11 +3878,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_LOG10 );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3904,11 +3902,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_FAKULTAET );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3928,11 +3926,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_REST );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3960,11 +3958,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_VORZEICHEN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -3984,11 +3982,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_TEILERGEBNIS );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4016,11 +4014,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_GANZZAHL );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4040,11 +4038,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_KUERZEN );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4072,11 +4070,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_RUNDEN );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4104,11 +4102,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_AUFRUNDEN );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4136,11 +4134,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_ABRUNDEN );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4164,15 +4162,15 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 	{
 		String 1 // Description
 		{
-            Text [ en-US ] = "Rounds a positive number up and negative number down to the nearest even integer." ;
+			Text [ en-US ] = "Rounds a positive number up and negative number down to the nearest even integer." ;
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_GERADE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4188,15 +4186,15 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 	{
 		String 1 // Description
 		{
-            Text [ en-US ] = "Rounds a positive number up and negative number down to the nearest odd integer." ;
+			Text [ en-US ] = "Rounds a positive number up and negative number down to the nearest odd integer." ;
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_UNGERADE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4216,11 +4214,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_OBERGRENZE );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4256,11 +4254,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_UNTERGRENZE );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4296,11 +4294,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_GGT );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4320,11 +4318,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_KGV );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4344,11 +4342,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_MTRANS );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4368,11 +4366,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_MMULT );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4400,11 +4398,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_MDET );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4424,11 +4422,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_MINV );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4448,11 +4446,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_EINHEITSMATRIX );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4472,11 +4470,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_SUMMENPRODUKT );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4496,11 +4494,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_SUMMEX2MY2 );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4528,11 +4526,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_SUMMEX2PY2 );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4560,11 +4558,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_SUMMEXMY2 );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4596,11 +4594,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_HAEUFIGKEIT );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4628,11 +4626,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_RGP );
 			4;	0;	1;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4676,11 +4674,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_RKP );
 			4;	0;	1;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4724,11 +4722,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_TREND );
 			4;	0;	1;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4772,11 +4770,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATRIX;
 			U2S( HID_FUNC_VARIATION );
 			4;	0;	1;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4820,11 +4818,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_ANZAHL );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4844,11 +4842,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_ANZAHL2 );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4868,11 +4866,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MAX );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4892,11 +4890,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MAXA );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4904,7 +4902,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "Value 1, value 2,    are 1 to 30 arguments whose largest value is to be determined." ;
+			Text [ en-US ] = "Value 1, value 2, ... are 1 to 30 arguments whose largest value is to be determined." ;
 		};
 	};
 	// -=*# Resource for function MIN #*=-
@@ -4916,11 +4914,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MIN );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4940,11 +4938,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MINA );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4964,11 +4962,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_VARIANZ );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -4988,11 +4986,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_VARIANZA );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5012,11 +5010,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_VARIANZEN );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5036,11 +5034,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_VARIANZENA );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5060,11 +5058,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STABW );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5084,11 +5082,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STABWA );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5108,11 +5106,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STABWN );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5132,11 +5130,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STABWNA );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5156,11 +5154,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MITTELWERT );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5180,11 +5178,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MITTELWERTA );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5204,11 +5202,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_SUMQUADABW );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5228,11 +5226,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MITTELABW );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5252,11 +5250,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_SCHIEFE );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5276,11 +5274,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_KURT );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5300,11 +5298,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_GEOMITTEL );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5324,11 +5322,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_HARMITTEL );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5348,11 +5346,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MODALWERT );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5372,11 +5370,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_MEDIAN );
 			VAR_ARGS;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5396,11 +5394,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_QUANTIL );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5428,11 +5426,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_QUARTILE );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5448,7 +5446,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "The type of the quartile (0 = MIN, 1 = 25 %, 2 = 50 %, 3 = 75 %, 4 = MAX)." ;
+			Text [ en-US ] = "The type of the quartile (0 = MIN, 1 = 25%, 2 = 50%, 3 = 75%, 4 = MAX)." ;
 		};
 	};
 	// -=*# Resource for function KGRÖSSTE #*=-
@@ -5460,11 +5458,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_KGROESSTE );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5492,11 +5490,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_KKLEINSTE );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5524,11 +5522,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_QUANTILSRANG );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5556,11 +5554,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_RANG );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5596,11 +5594,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_GESTUTZTMITTEL );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5628,11 +5626,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_WAHRSCHBEREICH );
 			4;	0;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5676,11 +5674,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_B );
 			4;	0;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5724,11 +5722,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_PHI );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5748,11 +5746,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_GAUSS );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5772,11 +5770,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_FISHER );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5796,11 +5794,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_FISHERINV );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5820,11 +5818,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_BINOMVERT );
 			4;	0;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5868,11 +5866,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_NEGBINOMVERT );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5908,11 +5906,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_KRITBINOM );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5948,11 +5946,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_POISSON );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -5972,7 +5970,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 6 // Name of Parameter 3
 		{
-            Text [ en-US ] = "Cumulative" ;
+			Text [ en-US ] = "Cumulative" ;
 		};
 		String 7 // Description of Parameter 3
 		{
@@ -5988,11 +5986,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_NORMVERT );
 			4;	0;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6036,11 +6034,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_NORMINV );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6076,11 +6074,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STANDNORMVERT );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6100,11 +6098,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STANDNORMINV );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6124,11 +6122,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_LOGNORMVERT );
-			4;	0;	1;	1;  1;
-            0;
+			4;	0;	1;	1;	1;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6154,14 +6152,14 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		{
 			Text [ en-US ] = "The standard deviation of the log normal distribution. It is set to 1 if omitted." ;
 		};
-        String 8 // Name of Parameter 4
-        {
-            Text [ en-US] = "Cumulative" ;
-        };
-        String 9 // Description of Parameter 4
-        {
-            Text [ en-US] = "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function." ;
-        };
+		String 8 // Name of Parameter 4
+		{
+			Text [ en-US] = "Cumulative" ;
+		};
+		String 9 // Description of Parameter 4
+		{
+			Text [ en-US] = "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function." ;
+		};
 	};
 	// -=*# Resource for function LOGINV #*=-
 	Resource SC_OPCODE_LOG_INV
@@ -6172,11 +6170,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_LOGINV );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6212,11 +6210,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_EXPONVERT );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6252,11 +6250,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_GAMMAVERT );
 			4;	0;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6300,11 +6298,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_GAMMAINV );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6340,11 +6338,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_GAMMALN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6357,29 +6355,29 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	};
 
 	// -=*# Resource for function GAMMA #*=-
-    Resource SC_OPCODE_GAMMA
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Returns the value of the Gamma function." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_STATISTIC;
-            U2S( HID_FUNC_GAMMA );
-            1;  0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Number" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The value for which the Gamma function is to be calculated." ;
-        };
-    };
+	Resource SC_OPCODE_GAMMA
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Returns the value of the Gamma function." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_STATISTIC;
+			U2S( HID_FUNC_GAMMA );
+			1;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Number" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The value for which the Gamma function is to be calculated." ;
+		};
+	};
 
 	// -=*# Resource for function BETAVERT #*=-
 	Resource SC_OPCODE_BETA_DIST
@@ -6393,7 +6391,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_BETAVERT );
-			6;  0;  0;  0;  1;  1;  1;
+			6;	0;	0;	0;	1;	1;	1;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -6785,43 +6783,43 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	// -=*# Resource for function CHISQDIST #*=-
 	Resource SC_OPCODE_CHISQ_DIST
 	{
-        String 1 // Description
-        {
-            Text [ en-US ] = "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_STATISTIC;
-            U2S( HID_FUNC_CHISQDIST );
-            3;  0;  0;  1;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Number" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The value for which the probability density function or cumulative distribution function is to be calculated." ;
-        };
-        String 4 // Name of Parameter 2
-        {
-            Text [ en-US ] = "Degrees of Freedom" ;
-        };
-        String 5 // Description of Parameter 2
-        {
-            Text [ en-US ] = "The degrees of freedom of the chi-square distribution." ;
-        };
-        String 6 // Name of Parameter 3
-        {
-            Text [ en-US ] = "Cumulative" ;
-        };
-        String 7 // Description of Parameter 3
-        {
-            Text [ en-US ] = "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function." ;
-        };
-    };
+		String 1 // Description
+		{
+			Text [ en-US ] = "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_STATISTIC;
+			U2S( HID_FUNC_CHISQDIST );
+			3;	0;	0;	1;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Number" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The value for which the probability density function or cumulative distribution function is to be calculated." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Degrees of Freedom" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The degrees of freedom of the chi-square distribution." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "Cumulative" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function." ;
+		};
+	};
 
 
 	// -=*# Resource for function CHIINV #*=-
@@ -6860,35 +6858,35 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	// -=*# Resource for function CHISQINV #*=-
 	Resource SC_OPCODE_CHISQ_INV
 	{
-        String 1 // Description
-        {
-            Text [ en-US ] = "Values of the inverse of CHISQDIST(x;DegreesOfFreedom;TRUE())." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_STATISTIC;
-            U2S( HID_FUNC_CHISQINV );
-            2;  0;  0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Probability" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The probability value for which the inverse of the chi square distribution is to be calculated." ;
-        };
-        String 4 // Name of Parameter 2
-        {
-            Text [ en-US ] = "Degrees of Freedom" ;
-        };
-        String 5 // Description of Parameter 2
-        {
-            Text [ en-US ] = "The degrees of freedom of the chi square distribution." ;
-        };
-    };
+		String 1 // Description
+		{
+			Text [ en-US ] = "Values of the inverse of CHISQDIST(x;DegreesOfFreedom;TRUE())." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_STATISTIC;
+			U2S( HID_FUNC_CHISQINV );
+			2;	0;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Probability" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The probability value for which the inverse of the chi square distribution is to be calculated." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Degrees of Freedom" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The degrees of freedom of the chi square distribution." ;
+		};
+	};
 
 	// -=*# Resource for function STANDARDISIERUNG #*=-
 	Resource SC_OPCODE_STANDARD
@@ -6899,11 +6897,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STANDARDISIERUNG );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6939,11 +6937,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_VARIATIONEN );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -6971,11 +6969,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_VARIATIONEN2 );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7003,11 +7001,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_KONFIDENZ );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7043,11 +7041,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_GTEST );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7083,11 +7081,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_CHITEST );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7115,11 +7113,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_FTEST );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7147,11 +7145,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_TTEST );
 			4;	0;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7195,11 +7193,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_BESTIMMTHEITSMASS );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7227,11 +7225,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_ACHSENABSCHNITT );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7259,11 +7257,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STEIGUNG );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7291,11 +7289,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_STFEHLERYX );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7323,11 +7321,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_PEARSON );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7355,11 +7353,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_KORREL );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7387,11 +7385,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_KOVAR );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7419,11 +7417,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_SCHAETZER );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7459,11 +7457,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_ADRESSE );
-			5;	0;	0;	1;  1;	1;
-            0;
+			5;	0;	0;	1;	1;	1;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7515,11 +7513,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_BEREICHE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7539,11 +7537,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_WAHL );
 			VAR_ARGS+1;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7571,11 +7569,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_SPALTE );
 			1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7595,11 +7593,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_ZEILE );
 			1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7619,11 +7617,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_TABELLE );
 			1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7643,11 +7641,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_SPALTEN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7667,11 +7665,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_ZEILEN );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7691,11 +7689,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_TABELLEN );
 			1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7715,11 +7713,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_WVERWEIS );
 			4;	0;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7763,11 +7761,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_SVERWEIS );
 			4;	0;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7811,11 +7809,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_INDEX );
 			4;	0;	1;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7859,11 +7857,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_INDIREKT );
-			2;	0;  1;
-            0;
+			2;	0;	1;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7891,11 +7889,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_VERWEIS );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7931,11 +7929,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_VERGLEICH );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -7971,11 +7969,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_VERSCHIEBUNG );
 			5;	0;	0;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8027,11 +8025,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_FEHLERTYP );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8051,11 +8049,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_VORLAGE );
 			3;	0;	1;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8094,7 +8092,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			0;
 			ID_FUNCTION_GRP_TABLE;
 			U2S( HID_FUNC_DDE );
-			4;	0;	0;	0;  1;
+			4;	0;	0;	0;	1;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -8165,115 +8163,115 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	// -=*# Resource for function GETPIVOTDATA #*=-
 	Resource SC_OPCODE_GET_PIVOT_DATA
 	{
-        String 1 // Description
-        {
-            Text [ en-US ] = "Extracts value(s) from a pivot table." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_TABLE;
-            U2S( HID_FUNC_GETPIVOTDATA );
-            VAR_ARGS+2;      0; 0;  1;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Data Field" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The name of the pivot table field to extract." ;
-        };
-        String 4 // Name of Parameter 2
-        {
-            Text [ en-US ] = "Pivot Table" ;
-        };
-        String 5 // Description of Parameter 2
-        {
-            Text [ en-US ] = "A reference to a cell or range in the pivot table." ;
-        };
-        String 6 // Name of Parameter 3
-        {
-            Text [ en-US ] = "Field Name / Item" ;
-        };
-        String 7 // Description of Parameter 3
-        {
-            Text [ en-US ] = "Field name/value pair to filter the target data." ;
-        };
-    };
+		String 1 // Description
+		{
+			Text [ en-US ] = "Extracts value(s) from a pivot table." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TABLE;
+			U2S( HID_FUNC_GETPIVOTDATA );
+			VAR_ARGS+2;	0;	0;	1;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Data Field" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The name of the pivot table field to extract." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Pivot Table" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "A reference to a cell or range in the pivot table." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "Field Name / Item" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "Field name/value pair to filter the target data." ;
+		};
+	};
 	// -=*# Resource for function BAHTTEXT #*=-
-    Resource SC_OPCODE_BAHTTEXT
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Converts a number to text (Baht)." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_TEXT;
-            U2S( HID_FUNC_BAHTTEXT );
-            1;  0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Number" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The number to convert." ;
-        };
-    };
+	Resource SC_OPCODE_BAHTTEXT
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Converts a number to text (Baht)." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TEXT;
+			U2S( HID_FUNC_BAHTTEXT );
+			1;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Number" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The number to convert." ;
+		};
+	};
 	// -=*# Resource for function JIS #*=-
-    Resource SC_OPCODE_JIS
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Converts half-width ASCII and katakana characters to full-width." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_TEXT;
-            U2S( HID_FUNC_JIS );
-            1;  0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "text" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The text to convert." ;
-        };
-    };
+	Resource SC_OPCODE_JIS
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Converts half-width ASCII and katakana characters to full-width." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TEXT;
+			U2S( HID_FUNC_JIS );
+			1;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "text" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The text to convert." ;
+		};
+	};
 	// -=*# Resource for function ASC #*=-
-    Resource SC_OPCODE_ASC
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Converts full-width ASCII and katakana characters to half-width." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_TEXT;
-            U2S( HID_FUNC_ASC );
-            1;  0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "text" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The text to convert." ;
-        };
-    };
+	Resource SC_OPCODE_ASC
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Converts full-width ASCII and katakana characters to half-width." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TEXT;
+			U2S( HID_FUNC_ASC );
+			1;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "text" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The text to convert." ;
+		};
+	};
 	// -=*# Resource for function CODE #*=-
 	Resource SC_OPCODE_CODE
 	{
@@ -8675,11 +8673,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_T );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8699,11 +8697,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_ERSETZEN );
 			4;	0;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8747,11 +8745,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_FEST );
 			3;	0;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8771,11 +8769,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 6 // Name of Parameter 3
 		{
-            Text [ en-US ] = "No thousands separators" ;
+			Text [ en-US ] = "No thousands separators" ;
 		};
 		String 7 // Description of Parameter 3
 		{
-            Text [ en-US ] = "No thousands separator. True value, if existing and TRUE (unequal to 0), no thousands separators are set." ;
+			Text [ en-US ] = "No thousands separator. True value, if existing and TRUE (unequal to 0), no thousands separators are set." ;
 		};
 	};
 	// -=*# Resource for function LÄNGE #*=-
@@ -8787,11 +8785,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_LAENGE );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8807,15 +8805,15 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	{
 		String 1 // Description
 		{
-            Text [ en-US ] = "Returns the first character or characters of a text." ;
+			Text [ en-US ] = "Returns the first character or characters of a text." ;
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_LINKS );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8839,15 +8837,15 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	{
 		String 1 // Description
 		{
-            Text [ en-US ] = "Returns the last character or characters of a text." ;
+			Text [ en-US ] = "Returns the last character or characters of a text." ;
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_RECHTS );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -8875,11 +8873,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_TEIL );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -9234,7 +9232,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			0; // DOING
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_EUROCONVERT );
-			5;	0;	0;	0;  1;  1;
+			5;	0;	0;	0;	1;	1;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -9289,7 +9287,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			1; // TODO: implementation and unsuppress
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_NUMBERVALUE );
-			2;	0;  0;
+			2;	0;	0;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -9317,11 +9315,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_LENB );
 			1;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -9336,15 +9334,15 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	{
 		String 1 // Description
 		{
-            Text [ en-US ] = "Returns the last character or characters of a text, with DBCS" ;
+			Text [ en-US ] = "Returns the last character or characters of a text, with DBCS" ;
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_RIGHTB );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -9367,15 +9365,15 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	{
 		String 1 // Description
 		{
-            Text [ en-US ] = "Returns the first character or characters of a text, with DBCS" ;
+			Text [ en-US ] = "Returns the first character or characters of a text, with DBCS" ;
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_LEFTB );
 			2;	0;	1;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -9402,11 +9400,11 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_MIDB );
 			3;	0;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
 		{
@@ -9443,28 +9441,28 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_BITAND );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Number1" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "Positive integer less than 2^48." ;
-        };
-        String 4 // Name of Parameter 2
-        {
-            Text [ en-US ] = "Number2" ;
-        };
-        String 5 // Description of Parameter 2
-        {
-            Text [ en-US ] = "Positive integer less than 2^48." ;
-        };
+		{
+			Text [ en-US ] = "Number1" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "Positive integer less than 2^48." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Number2" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "Positive integer less than 2^48." ;
+		};
 	};
 
 	// -=*# Resource for function BITOR #*=-
@@ -9476,28 +9474,28 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_BITOR );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Number1" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "Positive integer less than 2^48." ;
-        };
-        String 4 // Name of Parameter 2
-        {
-            Text [ en-US ] = "Number2" ;
-        };
-        String 5 // Description of Parameter 2
-        {
-            Text [ en-US ] = "Positive integer less than 2^48." ;
-        };
+		{
+			Text [ en-US ] = "Number1" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "Positive integer less than 2^48." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Number2" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "Positive integer less than 2^48." ;
+		};
 	};
 
 	// -=*# Resource for function BITXOR #*=-
@@ -9509,96 +9507,98 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-            0;
+			0;
 			ID_FUNCTION_GRP_MATH;
 			U2S( HID_FUNC_BITXOR );
 			2;	0;	0;
-            0;
+			0;
 		};
 		String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Number1" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "Positive integer less than 2^48." ;
-        };
-        String 4 // Name of Parameter 2
-        {
-            Text [ en-US ] = "Number2" ;
-        };
-        String 5 // Description of Parameter 2
-        {
-            Text [ en-US ] = "Positive integer less than 2^48." ;
-        };
+		{
+			Text [ en-US ] = "Number1" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "Positive integer less than 2^48." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Number2" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "Positive integer less than 2^48." ;
+		};
 	};
 
 	Resource SC_OPCODE_BITLSHIFT
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Bitwise left shift of an integer value." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_MATH;
-            U2S( HID_FUNC_BITLSHIFT );
-            2;  0;  0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Number" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The value to be shifted. Positive integer." ;
-        };
-        String 4 // Name of Parameter 2
-        {
-            Text [ en-US ] = "Shift" ;
-        };
-        String 5 // Description of Parameter 2
-        {
-            Text [ en-US ] = "The number of bits the first argument is to be shifted by." ;
-        };
-    };
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Bitwise left shift of an integer value." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_MATH;
+			U2S( HID_FUNC_BITLSHIFT );
+			2;	0;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Number" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The value to be shifted. Positive integer." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Shift" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The number of bits the first argument is to be shifted by." ;
+		};
+	};
 
-    Resource SC_OPCODE_BITRSHIFT
-    {
-        String 1 // Description
-        {
-            Text [ en-US ] = "Bitwise right shift of an integer value." ;
-        };
-        ExtraData =
-        {
-            0;
-            ID_FUNCTION_GRP_MATH;
-            U2S( HID_FUNC_BITRSHIFT );
-            2;  0;  0;
-            0;
-        };
-        String 2 // Name of Parameter 1
-        {
-            Text [ en-US ] = "Number" ;
-        };
-        String 3 // Description of Parameter 1
-        {
-            Text [ en-US ] = "The value to be shifted. Positive integer." ;
-        };
-        String 4 // Name of Parameter 2
-        {
-            Text [ en-US ] = "Shift" ;
-        };
-        String 5 // Description of Parameter 2
-        {
-            Text [ en-US ] = "The number of bits the first argument is to be shifted by." ;
-        };
-    };
+	Resource SC_OPCODE_BITRSHIFT
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Bitwise right shift of an integer value." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_MATH;
+			U2S( HID_FUNC_BITRSHIFT );
+			2;	0;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Number" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The value to be shifted. Positive integer." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Shift" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The number of bits the first argument is to be shifted by." ;
+		};
+	};
 
 };
 
 #if defined(U2S)
 #undef U2S
 #endif
+
+// ********************************************************************** EOF

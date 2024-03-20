@@ -66,6 +66,7 @@ $(eval $(call gb_Library_add_exception_objects,oox,\
 	oox/source/core/binaryfilterbase \
 	oox/source/core/contexthandler \
 	oox/source/core/contexthandler2 \
+	oox/source/core/encryption \
 	oox/source/core/fastparser \
 	oox/source/core/fasttokenhandler \
 	oox/source/core/filterbase \
@@ -186,6 +187,7 @@ $(eval $(call gb_Library_add_exception_objects,oox,\
 	oox/source/helper/datetimehelper \
 	oox/source/helper/graphichelper \
 	oox/source/helper/modelobjecthelper \
+	oox/source/helper/openssl_wrapper \
 	oox/source/helper/progressbar \
 	oox/source/helper/propertymap \
 	oox/source/helper/propertyset \

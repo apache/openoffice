@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "datanavi.hrc"
 #include "globlmn.hrc"
 #include "svx/fmresids.hrc"
@@ -371,7 +369,7 @@ ModalDialog RID_SVXDLG_ADD_DATAITEM
 		Size = MAP_APPFONT ( 14, 14 ) ;
 		TabStop = TRUE ;
 		Hide = TRUE ;
-		Text = "..." ;
+		Text = "~..." ;
 	};
 	FixedLine FL_SETTINGS
 	{

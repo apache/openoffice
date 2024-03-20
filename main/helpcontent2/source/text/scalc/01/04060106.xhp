@@ -35,8 +35,8 @@
 <bookmark_value>functions; mathematical functions</bookmark_value>
 <bookmark_value>trigonometric functions</bookmark_value>
 </bookmark>
-<paragraph xml-lang="en-US" id="hd_id3147124" role="heading" level="1" l10n="U" oldref="1">Mathematical Functions</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154943" role="paragraph" l10n="CHG" oldref="2"><variable id="mathematiktext">This category contains the <emph>Mathematical</emph> functions for Calc.
+<paragraph xml-lang="en-US" id="hd_id3147124" role="heading" level="1" l10n="U">Mathematical Functions</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154943" role="paragraph" l10n="CHG"><variable id="mathematiktext">This category contains the <emph>Mathematical</emph> functions for Calc.
 </variable> To open the <emph>Function Wizard</emph>, choose <link href="text/scalc/01/04060000.xhp" name="Insert - Function"><emph>Insert - Function</emph></link>.</paragraph>
 <sort order="asc">
 <section id="Section1">
@@ -46,19 +46,14 @@
 <bookmark_value>values;absolute</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ABS" id="bm_id3150695" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3146944" role="heading" level="2" l10n="U"
-oldref="33">ABS</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154546" role="paragraph" l10n="U" oldref="34"><ahelp hid="HID_FUNC_ABS">Returns the absolute value of a number.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3154843" role="heading" level="3" l10n="U"
-oldref="35">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3147475" role="code" l10n="U" oldref="36">ABS(Number)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148438" role="paragraph" l10n="CHG" oldref="37"><emph>Number</emph> is the number whose absolute value is to be calculated. The absolute value of a number is its value without the +/- sign.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3155823" role="heading" level="3" l10n="U"
-oldref="38">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152787" role="paragraph" l10n="CHG" oldref="39">
-<item type="input">=ABS(-56)</item> returns 56.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148752" role="paragraph" l10n="CHG" oldref="40">
-<item type="input">=ABS(12)</item> returns 12.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146944" role="heading" level="2" l10n="U">ABS</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154546" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_ABS">Returns the absolute value of a number.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154843" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147475" role="code" l10n="U">ABS(Number)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148438" role="paragraph" l10n="CHG"><emph>Number</emph> is the number whose absolute value is to be calculated. The absolute value of a number is its value without the +/- sign.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3155823" role="heading" level="3" l10n="U">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152787" role="paragraph" l10n="CHG"><item type="input">=ABS(-56)</item> returns 56.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148752" role="paragraph" l10n="CHG"><item type="input">=ABS(12)</item> returns 12.</paragraph>
 <paragraph xml-lang="en-US" id="par_id320139" role="paragraph" l10n="NEW">
 <item type="input">=ABS(0)</item> returns 0.<comment>see also SIGN</comment></paragraph>
 </section>
@@ -69,16 +64,13 @@ oldref="38">Example</paragraph>
 <bookmark_value>empty cells;counting</bookmark_value>
 </bookmark><comment>mw added two entries</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ANZAHLLEEREZELLEN" id="bm_id3149730" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3150896" role="heading" level="2" l10n="U"
-oldref="42">COUNTBLANK</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155260" role="paragraph" l10n="CHG" oldref="43"><ahelp hid="HID_FUNC_ANZAHLLEEREZELLEN">Returns the number of empty cells.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3145144" role="heading" level="3" l10n="U"
-oldref="44">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153931" role="code" l10n="U" oldref="45">COUNTBLANK(Range)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149512" role="paragraph" l10n="CHG" oldref="46"> Returns the number of empty cells in the cell range <emph>Range</emph>.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3146139" role="heading" level="3" l10n="U"
-oldref="47">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148586" role="paragraph" l10n="CHG" oldref="48">
+<paragraph xml-lang="en-US" id="hd_id3150896" role="heading" level="2" l10n="U">COUNTBLANK</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155260" role="paragraph" l10n="CHG"><ahelp hid="HID_FUNC_ANZAHLLEEREZELLEN">Returns the number of empty cells.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145144" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153931" role="code" l10n="U">COUNTBLANK(Range)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149512" role="paragraph" l10n="CHG"> Returns the number of empty cells in the cell range <emph>Range</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146139" role="heading" level="3" l10n="U">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148586" role="paragraph" l10n="CHG">
 <item type="input">=COUNTBLANK(A1:B2)</item> returns 4 if cells A1, A2, B1, and B2 are all empty.</paragraph><comment>see also COUNTIF</comment>
 </section>
 <section id="Section61">
@@ -86,18 +78,14 @@ oldref="47">Example</paragraph>
 <bookmark_value>ACOS function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCCOS" id="bm_id3155952" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3153114" role="heading" level="2" l10n="U"
-oldref="50">ACOS</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145163" role="paragraph" l10n="CHG" oldref="51"><ahelp hid="HID_FUNC_ARCCOS">Returns the inverse trigonometric cosine of a number.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3153565" role="heading" level="3" l10n="U"
-oldref="52">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150020" role="code" l10n="U" oldref="53">ACOS(Number)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3159134" role="paragraph" l10n="CHG" oldref="54"> This function returns the inverse trigonometric cosine of <emph>Number</emph>, that is the angle (in radians) whose cosine is Number. The angle returned is between 0 and PI.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153114" role="heading" level="2" l10n="U">ACOS</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145163" role="paragraph" l10n="CHG"><ahelp hid="HID_FUNC_ARCCOS">Returns the inverse trigonometric cosine of a number.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153565" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150020" role="code" l10n="U">ACOS(Number)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3159134" role="paragraph" l10n="CHG"> This function returns the inverse trigonometric cosine of <emph>Number</emph>, that is the angle (in radians) whose cosine is Number. The angle returned is between 0 and PI.</paragraph>
 <paragraph xml-lang="en-US" id="par_id679647" role="paragraph" l10n="NEW">To return the angle in degrees, use the DEGREES function.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3149882" role="heading" level="3" l10n="U"
-oldref="55">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150128" role="paragraph" l10n="CHG" oldref="56">
-<item type="input">=ACOS(-1)</item> returns 3.14159265358979 (PI radians)</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149882" role="heading" level="3" l10n="U">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150128" role="paragraph" l10n="CHG"><item type="input">=ACOS(-1)</item> returns 3.14159265358979 (PI radians)</paragraph>
 <paragraph xml-lang="en-US" id="par_id8792382" role="paragraph" l10n="NEW">
 <item type="input">=DEGREES(ACOS(0.5))</item> returns 60. The cosine of 60 degrees is 0.5.</paragraph><comment>see also COS, SIN, TAN, COT, ASIN, ATAN, ATAN2, ACOT</comment>
 </section>
@@ -106,18 +94,14 @@ oldref="55">Example</paragraph>
 <bookmark_value>ACOSH function</bookmark_value>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ARCOSHYP" id="bm_id3148386" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145355" role="heading" level="2" l10n="U"
-oldref="60">ACOSH</paragraph>
-<paragraph xml-lang="en-US" id="par_id3157993" role="paragraph" l10n="U" oldref="61"><ahelp hid="HID_FUNC_ARCOSHYP">Returns the inverse hyperbolic cosine of a number.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3145295" role="heading" level="3" l10n="U"
-oldref="62">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3151017" role="code" l10n="U" oldref="63">ACOSH(Number)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149000" role="paragraph" l10n="CHG" oldref="64"> This function returns the inverse hyperbolic cosine of <emph>Number</emph>, that is the number whose hyperbolic cosine is Number.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145355" role="heading" level="2" l10n="U">ACOSH</paragraph>
+<paragraph xml-lang="en-US" id="par_id3157993" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_ARCOSHYP">Returns the inverse hyperbolic cosine of a number.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145295" role="heading" level="3" l10n="U">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151017" role="code" l10n="U">ACOSH(Number)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149000" role="paragraph" l10n="CHG"> This function returns the inverse hyperbolic cosine of <emph>Number</emph>, that is the number whose hyperbolic cosine is Number.</paragraph>
 <paragraph xml-lang="en-US" id="par_id6393932" role="paragraph" l10n="NEW"> Number must be greater than or equal to 1.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3150566" role="heading" level="3" l10n="U"
-oldref="65">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145629" role="paragraph" l10n="CHG" oldref="66">
-<item type="input">=ACOSH(1)</item> returns 0.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150566" role="heading" level="3" l10n="U">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145629" role="paragraph" l10n="CHG"><item type="input">=ACOSH(1)</item> returns 0.</paragraph>
 <paragraph xml-lang="en-US" id="par_id951567" role="paragraph" l10n="NEW">
 <item type="input">=ACOSH(COSH(4))</item> returns 4.</paragraph><comment>see also ASINH, ATANH, ACOTH, COSH, SINH, TANH, COTH</comment>
 </section>
@@ -1018,12 +1002,12 @@ oldref="443">Example</paragraph>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_SUMMEWNRNG" id="bm_id3151969K" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3151957K" role="heading" level="2" l10n="U"
 oldref="436">SUMIFS</paragraph>
-<paragraph xml-lang="en-US" id="par_id3151986K" role="paragraph" l10n="U" ><ahelp hid="HID_FUNC_SUMMEWNRNG">Sum the values of cells in a range that meet multiple criteria in multiple ranges.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_id3151986K" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_SUMMEWNRNG">Sum the values of cells in a range that meet multiple criteria in multiple ranges.</ahelp></paragraph>
 <embed href="text/shared/00/00000001.xhp#regulaer"/>
 <paragraph xml-lang="en-US" id="hd_id3152015K" role="heading" level="3" l10n="U">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152028K" role="code" l10n="U">SUMIFS( Reference R ; Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152043K" role="paragraph" l10n="U">Sums the value of cells in range R that meet the Criterion C1 in the reference range R1, and the Criterion C2 in the reference range R2, and so on.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152062K" role="paragraph" l10n="CHG" >A <emph>Criterion</emph> is a single cell Reference, Number or Text. If the criterion is written into the formula, it has to be surrounded by double quotes.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152062K" role="paragraph" l10n="CHG">A <emph>Criterion</emph> is a single cell Reference, Number or Text. If the criterion is written into the formula, it has to be surrounded by double quotes.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152083K" role="paragraph" l10n="U">All <emph>Reference</emph> ranges shall have the same dimension and size, else an Error is returned.</paragraph>
 <!--<paragraph xml-lang="en-US" id="par_id8347422K" role="note" l10n="NEW">SUMIFS supports the reference concatenation operator (~) only in the Criteria parameter, and only if the optional SumRange parameter is not given.</paragraph>-->
 <paragraph xml-lang="en-US" id="hd_id3152110K" role="heading" level="3" l10n="U"
@@ -1441,11 +1425,10 @@ oldref="553">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3164926K" role="paragraph" l10n="CHG"><ahelp hid="HID_FUNC_ZAEHLENWNRNG">Count the number of cells that meet multiple criteria in multiple ranges.</ahelp></paragraph>
 <embed href="text/shared/00/00000001.xhp#regulaer"/>
 <paragraph xml-lang="en-US" id="hd_id3164953K" role="heading" level="3" l10n="U">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3164967K" role="code" l10n="U" >COUNTIFS( Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
-<paragraph xml-lang="en-US" id="par_id3164980K" role="paragraph" l10n="U" ><emph>Reference R1</emph> is the range to which the <emph>Criterion C1</emph> applies. <emph>Reference R2</emph> is the range to which the <emph>Criterion C2</emph> applies, and so on.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3164967K" role="code" l10n="U">COUNTIFS( Reference R1 ; Criterion C1 [ ; Reference R2 ; Criterion C2 ]... )</paragraph>
+<paragraph xml-lang="en-US" id="par_id3164980K" role="paragraph" l10n="U"><emph>Reference R1</emph> is the range to which the <emph>Criterion C1</emph> applies. <emph>Reference R2</emph> is the range to which the <emph>Criterion C2</emph> applies, and so on.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3165000K" role="paragraph" l10n="CHG">All <emph>Reference</emph> ranges shall have the same dimension and size, else an Error is returned. <emph>Criteria</emph> indicates the criteria in the form of a number, an expression or a character string. These criteria determine which cells are counted. You may also enter a search text in the form of a regular expression, e.g. b.* for all words that begin with b. You may also indicate a cell range that contains the search criterion. If you search for literal text, enclose the text in double quotes.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3165037K" role="heading" level="3" l10n="U"
-oldref="553">Examples:</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3165037K" role="heading" level="3" l10n="U">Examples:</paragraph>
 <paragraph xml-lang="en-US" id="par_id3166505K" role="paragraph" l10n="CHG">A1:A10 is a cell range containing the numbers <item type="input">2000</item> to <item type="input">2009</item>. B1:B10 is a cell range containing the numbers <item type="input">2007</item> to <item type="input">2016</item>:</paragraph>
 <paragraph xml-lang="en-US" id="par_id3581652K" role="paragraph" l10n="NEW">
 <item type="input">=COUNTIFS(A1:A10;2006;B1:B10;2014)</item> - this returns 2</paragraph>

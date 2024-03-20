@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 LIBSMKREV!:="$$Revision$$"
@@ -318,8 +318,6 @@ APP3RDLIB=-lapp
 SAMPLE3RDLIB=-lsample
 HNJLIB*=-lhyphen
 MYSPELLLIB=-lmyspell
-COSVLIB=-lcosv
-UDMLIB=-ludm
 ULINGULIB=-lulingu
 .IF "$(SYSTEM_HUNSPELL)" == "YES"
 HUNSPELLLIB=$(HUNSPELL_LIBS)
@@ -385,7 +383,7 @@ REGLIB=ireg.lib
 EXTLIB=iext.lib
 SOTLIB=isot.lib
 MOZBASELIBST=nspr4_s.lib xpcombase_s.lib
-MOZBASELIB=nspr4.lib xpcom.lib
+MOZBASELIB=libnspr4.lib xpcom.lib
 LDAPSDKLIB=nsldap32v50.lib
 PAPILIB=ipap.lib
 SFX2LIB=sfx.lib
@@ -402,7 +400,7 @@ XMLSECLIB-MS=libxmlsec-mscrypto.lib
 XMLSECLIB-NSS=libxmlsec-nss.lib
 LIBXML2LIB=libxml2.lib
 NSS3LIB=nss3.lib
-NSPR4LIB=nspr4.lib
+NSPR4LIB=libnspr4.lib
 PLC4LIB=plc4.lib
 NSSCRYPTOLIBS=$(XMLSECLIB-NSS) $(XMLSECLIB) $(LIBXML2LIB) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
 MSCRYPTOLIBS=$(XMLSECLIB-MS) $(XMLSECLIB) $(LIBXML2LIB) crypt32.lib advapi32.lib
@@ -482,8 +480,6 @@ APP3RDLIB= $(LIBPRE) app.lib
 SAMPLE3RDLIB= $(LIBPRE) sample.lib
 HNJLIB*=libhnj.lib
 MYSPELLLIB= $(LIBPRE) myspell.lib
-COSVLIB= $(LIBPRE) cosv.lib
-UDMLIB= $(LIBPRE) udm.lib
 ULINGULIB=$(LIBPRE) libulingu.lib
 .IF "$(SYSTEM_HUNSPELL)" == "YES"
 HUNSPELLLIB=$(HUNSPELL_LIBS)

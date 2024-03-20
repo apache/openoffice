@@ -35,37 +35,36 @@
 <bookmark_value>charts; aligning</bookmark_value>
 <bookmark_value>pie charts;options</bookmark_value>
 </bookmark>
-<paragraph xml-lang="en-US" id="hd_id3149400" role="heading" level="1" l10n="U" oldref="1"><link href="text/schart/01/04060000.xhp" name="Options">Options</link></paragraph>
-<paragraph xml-lang="en-US" id="par_id3155067" role="paragraph" l10n="CHG" oldref="2">Use this dialog to define some options that are available for specific chart types. The contents of the Options dialog vary with the chart type.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149400" role="heading" level="1" l10n="U"><link href="text/schart/01/04060000.xhp" name="Options">Options</link></paragraph>
+<paragraph xml-lang="en-US" id="par_id3155067" role="paragraph" l10n="CHG">Use this dialog to define some options that are available for specific chart types. The contents of the Options dialog vary with the chart type.</paragraph>
 </section>
 <section id="howtoget">
 <embed href="text/schart/00/00000004.xhp#optionen"/>
 </section>
-<paragraph xml-lang="en-US" id="hd_id3150043" role="heading" level="2" l10n="U" oldref="9">Align data series to:</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145228" role="paragraph" l10n="U" oldref="10">In this area you can choose between two Y axis scaling modes. The axes can only be scaled and given properties separately.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150043" role="heading" level="2" l10n="U">Align data series to:</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145228" role="paragraph" l10n="U">In this area you can choose between two Y axis scaling modes. The axes can only be scaled and given properties separately.</paragraph>
 <!-- removed HID SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_1 -->
 <bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_OPTIONS:RBT_OPT_AXIS_1" id="bm_id8064516" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3147346" role="heading" level="2" l10n="U" oldref="4">Primary Y axis</paragraph>
-<paragraph xml-lang="en-US" id="par_id3147005" role="paragraph" l10n="U" oldref="15"><ahelp hid="SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_1">This option is active as default. All data series are aligned to the primary Y axis.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3147346" role="heading" level="2" l10n="U">Primary Y axis</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147005" role="paragraph" l10n="U"><ahelp hid="SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_1">This option is active as default. All data series are aligned to the primary Y axis.</ahelp></paragraph>
 <!-- removed HID SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_2 -->
 <bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_OPTIONS:RBT_OPT_AXIS_2" id="bm_id9959715" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3143221" role="heading" level="2" l10n="U" oldref="5">Secondary Y axis</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154656" role="paragraph" l10n="U" oldref="11"><ahelp hid="SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_2">Changes the scaling of the Y axis. This axis is only visible when at least one data series is assigned to it and the axis view is active.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3166423" role="heading" level="2" l10n="U" oldref="6">Settings</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150365" role="paragraph" l10n="U" oldref="12">Define the settings for a bar chart in this area. Any changes apply to all data series of the chart, not to the selected data only.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3143221" role="heading" level="2" l10n="U">Secondary Y axis</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154656" role="paragraph" l10n="U"><ahelp hid="SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_2">Changes the scaling of the Y axis. This axis is only visible when at least one data series is assigned to it and the axis view is active.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3166423" role="heading" level="2" l10n="U">Settings</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150365" role="paragraph" l10n="U">Define the settings for a bar chart in this area. Any changes apply to all data series of the chart, not to the selected data only.</paragraph>
 <!-- removed HID SCH:METRICFIELD:TP_OPTIONS:MT_GAP -->
 <bookmark xml-lang="en-US" branch="hid/chart2:MetricField:TP_OPTIONS:MT_GAP" id="bm_id6286812" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145584" role="heading" level="2" l10n="U" oldref="7">Spacing</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155376" role="paragraph" l10n="U" oldref="13"><ahelp hid="SCH:METRICFIELD:TP_OPTIONS:MT_GAP">Defines the spacing between the columns in percent.</ahelp> The maximal spacing is 600%.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145584" role="heading" level="2" l10n="U">Spacing</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155376" role="paragraph" l10n="U"><ahelp hid="SCH:METRICFIELD:TP_OPTIONS:MT_GAP">Defines the spacing between the columns in percent.</ahelp> The maximal spacing is 600%.</paragraph>
 <!-- removed HID SCH:METRICFIELD:TP_OPTIONS:MT_OVERLAP -->
 <bookmark xml-lang="en-US" branch="hid/chart2:MetricField:TP_OPTIONS:MT_OVERLAP" id="bm_id119022" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145384" role="heading" level="2" l10n="U" oldref="8">Overlap</paragraph>
-<paragraph xml-lang="en-US" id="par_id3156447" role="paragraph" l10n="U" oldref="14"><ahelp hid="SCH:METRICFIELD:TP_OPTIONS:MT_OVERLAP">Defines the necessary settings for overlapping data series.</ahelp> You can choose between -100% and +100%.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145384" role="heading" level="2" l10n="U">Overlap</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156447" role="paragraph" l10n="U"><ahelp hid="SCH:METRICFIELD:TP_OPTIONS:MT_OVERLAP">Defines the necessary settings for overlapping data series.</ahelp> You can choose between -100% and +100%.</paragraph>
 <!-- removed HID SCH:CHECKBOX:TP_OPTIONS:CB_CONNECTOR -->
 <bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_OPTIONS:CB_CONNECTOR" id="bm_id5567491" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3153305" role="heading" level="2" l10n="U"
-oldref="16">Connection Lines</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148868" role="paragraph" l10n="U" oldref="17"><ahelp hid="SCH:CHECKBOX:TP_OPTIONS:CB_CONNECTOR">For "stacked" and "percent" column (vertical bar) charts, mark this check box to connect the column layers that belong together with lines.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153305" role="heading" level="2" l10n="U">Connection Lines</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148868" role="paragraph" l10n="U"><ahelp hid="SCH:CHECKBOX:TP_OPTIONS:CB_CONNECTOR">For "stacked" and "percent" column (vertical bar) charts, mark this check box to connect the column layers that belong together with lines.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_OPTIONS:CB_BARS_SIDE_BY_SIDE" id="bm_id8464003" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id9842219" role="heading" level="2" l10n="NEW">Show bars side by side</paragraph>
 <paragraph xml-lang="en-US" id="par_id9800103" role="paragraph" l10n="NEW">If two axes are shown in a bar chart, and some data series are attached to the first axis, while some other data series are attached to the second axis, then both sets of data series are shown independently, overlapping each other.</paragraph>
