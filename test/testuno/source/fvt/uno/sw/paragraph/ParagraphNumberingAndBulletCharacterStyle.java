@@ -1028,7 +1028,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_doc[11].Value);
 	}
 	@Test
-	public void testNumberingBulletCharacterStyle_MainIndexEntery() throws Exception {
+	public void testNumberingBulletCharacterStyle_MainIndexEntry() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
@@ -1579,7 +1579,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_doc[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_doc[11].Value);
 	}	@Test
-	public void testNumberingBulletCharacterStyle_UserEntery() throws Exception {
+	public void testNumberingBulletCharacterStyle_UserEntry() throws Exception {
 
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
@@ -1597,7 +1597,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "User Entery";	
+		propsRule[1].Value = "User Entry";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
 		xReplaceRule.replaceByIndex(0, propsRule);  
 		//set paragraph numbering and bullet character
@@ -1632,7 +1632,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		PropertyValue[] propsRule_assert_odt=(PropertyValue[]) UnoRuntime.queryInterface(PropertyValue[].class,xReplaceRule_assert_odt.getByIndex(0));
 		//verify paragraph numbering and bullet alignment
 		assertEquals("assert numbering and bullet","CharStyleName",propsRule_assert_odt[4].Name);
-		assertEquals("assert numbering and bullet","User Entery",propsRule_assert_odt[4].Value);
+		assertEquals("assert numbering and bullet","User Entry",propsRule_assert_odt[4].Value);
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
