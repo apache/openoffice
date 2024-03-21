@@ -5527,23 +5527,23 @@ const sal_Int8 SwPageFrm::mnBorderPxWidth = 1;
                                             ViewShell*    _pViewShell,
                                             bool bRightSidebar )
 {
-    // --> FME 2004-06-24 #i16816# tagged pdf support
-    SwTaggedPDFHelper aTaggedPDFHelper( 0, 0, 0, *_pViewShell->GetOut() );
-    // <--
+	// --> FME 2004-06-24 #i16816# tagged pdf support
+	SwTaggedPDFHelper aTaggedPDFHelper( 0, 0, 0, *_pViewShell->GetOut() );
+	// <--
 
-    // get color for page border
-    const Color& rColor = SwViewOption::GetFontColor();
+	// save current fill and line color of output device
+	Color aFill( _pViewShell->GetOut()->GetFillColor() );
+	Color aLine( _pViewShell->GetOut()->GetLineColor() );
 
-    // save current fill and line color of output device
-    Color aFill( _pViewShell->GetOut()->GetFillColor() );
-    Color aLine( _pViewShell->GetOut()->GetLineColor() );
-
-    // paint page border
-    _pViewShell->GetOut()->SetFillColor(); // OD 20.02.2003 #107369# - no fill color
-    _pViewShell->GetOut()->SetLineColor( rColor );
-    SwRect aPaintRect;
-    SwPageFrm::GetBorderRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-    _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
+	// paint page border
+	_pViewShell->GetOut()->SetFillColor(); // OD 20.02.2003 #107369# - no fill color
+	if (Application::GetSettings().GetStyleSettings().GetHighContrastMode() )
+		_pViewShell->GetOut()->SetLineColor(COL_WHITE);
+	else
+		_pViewShell->GetOut()->SetLineColor(COL_BLACK);
+	SwRect aPaintRect;
+	SwPageFrm::GetBorderRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
+	_pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
 }
 
 //mod #i6193# paint sidebar for notes
@@ -6985,4 +6985,4 @@ Graphic SwDrawFrmFmt::MakeGraphic( ImageMap* )
 	return aRet;
 }
 
-//eof
+/* vim: set noet sw=4 ts=4: */
