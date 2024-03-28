@@ -145,7 +145,7 @@ public:
 public:
 	AnimationSlideController( Reference< XIndexAccess > xSlides, Mode eMode );
 
-	void setStartSlideNumber( sal_Int32 nSlideNumber ) { mnStartSlideNumber = nSlideNumber; }
+	void setStartSlideNumber( sal_Int32 nSlideNumber );
 	sal_Int32 getStartSlideIndex() const;
 
 	sal_Int32 getCurrentSlideNumber() const;
@@ -234,6 +234,17 @@ AnimationSlideController::AnimationSlideController( Reference< XIndexAccess > xS
 {
 	if( mxSlides.is() )
 		mnSlideCount = xSlides->getCount();
+}
+
+void AnimationSlideController::setStartSlideNumber( sal_Int32 nSlideNumber )
+{
+	while( ( !maSlideVisible[nSlideNumber] ) 
+			|| ( nSlideNumber > maSlideVisible.size() ) ) nSlideNumber++;
+
+	if(nSlideNumber > maSlideVisible.size())
+		mnStartSlideNumber = 0;
+	else
+		mnStartSlideNumber = nSlideNumber;
 }
 
 sal_Int32 AnimationSlideController::getStartSlideIndex() const
