@@ -390,6 +390,11 @@ $(call gb_LinkTarget_add_libs,$(1),\
 	-lsocket \
 )
 endif
+ifeq ($(OS),LINUX)
+$(call gb_LinkTarget_add_linked_libs,$(1),\
+	pthread \
+)
+endif
 endif
 endef
 
