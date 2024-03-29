@@ -238,13 +238,23 @@ AnimationSlideController::AnimationSlideController( Reference< XIndexAccess > xS
 
 void AnimationSlideController::setStartSlideNumber( sal_Int32 nSlideNumber )
 {
-	while( ( !maSlideVisible[nSlideNumber] ) 
-			|| ( nSlideNumber > maSlideVisible.size() ) ) nSlideNumber++;
-
-	if(nSlideNumber > maSlideVisible.size())
-		mnStartSlideNumber = 0;
-	else
-		mnStartSlideNumber = nSlideNumber;
+    mnStartSlideNumber = nSlideNumber;
+    if ( maSlideVisible[mnStartSlideNumber] )
+        return;
+    // Search forward for the first visible slide
+    for ( ; ( (size_t)mnStartSlideNumber < maSlideVisible.size() ) ;
+          mnStartSlideNumber++ ) {
+        if ( maSlideVisible[mnStartSlideNumber] )
+            return;
+    }
+    // Search backward for the first visible slide
+    for (mnStartSlideNumber = nSlideNumber ;
+         ( mnStartSlideNumber >= 0 ) ; mnStartSlideNumber-- ) {
+        if ( maSlideVisible[mnStartSlideNumber] )
+            return;
+    }
+    // No visible slides! Surrender to the request
+    mnStartSlideNumber = nSlideNumber;
 }
 
 sal_Int32 AnimationSlideController::getStartSlideIndex() const
