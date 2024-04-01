@@ -663,7 +663,7 @@ sal_uInt16 SwAccessiblePortionData::FillSpecialPos(
              sAccessibleString.getStr()[nPos]) )
         {
             // case 1: a one-character, non-text portion
-            // reference position is the first accessibilty for our
+            // reference position is the first accessibility for our
             // core portion
             nRefPos = aAccessiblePositions[ nCorePortionNo ];
             nExtend = SP_EXTEND_RANGE_NONE;
