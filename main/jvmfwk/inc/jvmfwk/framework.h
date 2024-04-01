@@ -363,7 +363,7 @@ JVMFWK_DLLPUBLIC javaFrameworkError SAL_CALL jfw_isVMRunning(sal_Bool *bRunning)
     be put into the javavendors.xml file.<br/>
     The function uses the plug-in libraries to obtain information about JRE
     installation and checks if they there is one among them that supports
-    a set of features (currently only accessibilty is possible). If none was
+    a set of features (currently only accessibility is possible). If none was
     found then it also uses a list of paths, which have been registered
     by <code>jfw_addJRELocation</code> or <code>jfw_setJRELocations</code>
     to find JREs. Found JREs are examined in the same way.</p>

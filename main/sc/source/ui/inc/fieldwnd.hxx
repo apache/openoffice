@@ -209,7 +209,7 @@ private:
     /** Draws the insertion cursor. */
     void                DrawInsertionCursor( OutputDevice& rDev );
 
-    /** Returns a reference to the accessiblity object, if still alive. */
+    /** Returns a reference to the accessibility object, if still alive. */
     ::rtl::Reference< ScAccessibleDataPilotControl > GetAccessibleControl();
 
 	DECL_LINK( ScrollHdl, ScrollBar* );
