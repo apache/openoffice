@@ -355,7 +355,7 @@ namespace frm
 		if (m_xAggregate.is())
 		{	// this is to be called after convertFormatKeyPropertyValue, where
 			// we translated the format key into a enum value.
-			// So now we can simply forward this enum value to our aggreate
+			// So now we can simply forward this enum value to our aggregate
 			m_xAggregate->setFastPropertyValue(m_nFormatEnumPropertyHandle, _rNewValue);
 		}
 	}

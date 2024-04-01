@@ -358,7 +358,7 @@ Reference< XInputStream > FilterDetect::extractUnencryptedPackage( MediaDescript
         // read the encryption info stream
         ::boost::shared_ptr< EncryptionInfo > encryptionInfo( EncryptionInfo::readEncryptionInfo( mxContext, xEncryptionInfo ) );
 
-        // check flags and agorithm IDs, requiered are AES128 and SHA-1
+        // check flags and algorithm IDs, required are AES128 and SHA-1
         bool bImplemented = encryptionInfo->isImplemented();
         if( bImplemented )
         {

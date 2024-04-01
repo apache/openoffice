@@ -166,7 +166,7 @@ rtlBootstrapHandle SAL_CALL rtl_bootstrap_args_open(rtl_uString * pIniName)
     SAL_THROW_EXTERN_C();
 
 /** 
-   Closes a boostrap agument container.
+   Closes a boostrap argument container.
    @param handle [in]     The handle got by <code>rtl_bootstrap_args_open()</code>
 */
 void SAL_CALL rtl_bootstrap_args_close(rtlBootstrapHandle handle)
