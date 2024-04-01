@@ -982,7 +982,7 @@ Window*	VCLXToolkit::ImplCreateWindow( VCLXWindow** ppNewComp,
 								::com::sun::star::uno::Any anyHandle = xSystemDepParent->getWindowHandle(processIdSeq, SYSTEM_DEPENDENT_TYPE);
 
                                 // use sal_Int64 here to accommodate all int types
-                                // uno::Any shift operator whill upcast if necessary
+                                // uno::Any shift operator will upcast if necessary
                                 sal_Int64 nWindowHandle = 0;
                                 sal_Bool bXEmbed = sal_False;
 
@@ -1194,7 +1194,7 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 	if ( nSystemType == SYSTEM_DEPENDENT_TYPE )
 	{
         // use sal_Int64 here to accommodate all int types
-        // uno::Any shift operator whill upcast if necessary
+        // uno::Any shift operator will upcast if necessary
         sal_Int64 nWindowHandle = 0;
         sal_Bool bXEmbed = sal_False;
 
