@@ -221,7 +221,7 @@ StringSequence	OImageControlModel::getSupportedServiceNames() throw()
 //------------------------------------------------------------------------------
 Any SAL_CALL OImageControlModel::queryAggregation(const Type& _rType) throw (RuntimeException)
 {
-    // oder matters: we want to "override" the XImageProducer interface of the aggregate with out
+    // order matters: we want to "override" the XImageProducer interface of the aggregate with out
     // own XImageProducer interface, thus we need to query OImageControlModel_Base first
     Any aReturn = OImageControlModel_Base::queryInterface( _rType );
 
