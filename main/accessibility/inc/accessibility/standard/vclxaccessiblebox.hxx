@@ -47,7 +47,7 @@ typedef ::cppu::ImplHelper3<
 
 /** Base class for list- and combo boxes.  This class manages the box'
     children.  The classed derived from this one have only to implement the
-    <member>IsValid</member> method and return the corrent implementation name.
+    <member>IsValid</member> method and return the current implementation name.
 */
 class VCLXAccessibleBox
     : public VCLXAccessibleComponent,
@@ -56,7 +56,7 @@ class VCLXAccessibleBox
 public:
     enum BoxType {COMBOBOX, LISTBOX};
 
-    /** The constructor is initialized with the box type whitch may be
+    /** The constructor is initialized with the box type which may be
         either <const>COMBOBOX</const> or <const>LISTBOX</const> and a flag
         indicating whether the box is a drop down box.
     */
