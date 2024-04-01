@@ -119,7 +119,7 @@ namespace dbaui
         // ---------------------------------------------------------------
         /** erase the data in the data vector
 			@param	_pData
-					the data whioch should be erased
+					the data which should be erased
 		*/
 		void    removeConnectionData(const TTableConnectionData::value_type& _pData);
 
@@ -161,7 +161,7 @@ namespace dbaui
 		TTableWindowData::value_type createTableWindowData(const ::rtl::OUString& _sComposedName,const ::rtl::OUString& _sTableName,const ::rtl::OUString& _sWindowName);
 		// ask the user if the design should be saved when it is modified
 		virtual short saveModified() = 0;
-		// called when the orignal state should be reseted (first time load)
+		// called when the original state should be reseted (first time load)
 		virtual void reset()		 = 0;
 		virtual void describeSupportedFeatures();
 
