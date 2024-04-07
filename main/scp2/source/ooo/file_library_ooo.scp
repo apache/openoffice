@@ -1777,7 +1777,7 @@ File gid_File_Lib_Openssl
   #ifdef WNT
     Name = "libssl-3.dll";
   #else
-    Name = "libssl.so";
+    Name = SCP2_URE_DL_VER("ssl", "3");
   #endif
 End
 #endif
@@ -1790,7 +1790,7 @@ File gid_File_Lib_Crypto
   #ifdef WNT
     Name = "libcrypto-3.dll";
   #else
-    Name = "libcrypto.so";
+    Name = SCP2_URE_DL_VER("crypto", "3");
   #endif
 End
 #endif

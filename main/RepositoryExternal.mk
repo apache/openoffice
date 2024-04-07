@@ -361,26 +361,13 @@ endef
 
 else # !SYSTEM_OPENSSL
 
-ifeq ($(OS),WNT)
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_OOO, \
 	crypto \
 	ssl \
 ))
-else
-$(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
-	crypto \
-	ssl \
-))
-endif
 
 define gb_LinkTarget__use_openssl
-ifeq ($(OS),WNT)
 $(call gb_LinkTarget_add_linked_libs,$(1),\
-	crypto \
-	ssl \
-)
-else
-$(call gb_LinkTarget_add_linked_static_libs,$(1),\
 	crypto \
 	ssl \
 )
@@ -391,10 +378,9 @@ $(call gb_LinkTarget_add_libs,$(1),\
 )
 endif
 ifeq ($(OS),LINUX)
-$(call gb_LinkTarget_add_linked_libs,$(1),\
-	pthread \
+$(call gb_LinkTarget_add_libs,$(1),\
+	-lpthread \
 )
-endif
 endif
 endef
 
