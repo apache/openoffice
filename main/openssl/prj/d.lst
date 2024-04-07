@@ -1,6 +1,9 @@
 mkdir: %_DEST%\inc%_EXT%\external
 mkdir: %_DEST%\inc%_EXT%\external\openssl
 ..\%__SRC%\inc\*.h %_DEST%\inc%_EXT%\external\openssl
-..\%__SRC%\lib\libcrypto.* %_DEST%\lib%_EXT%\libcrypto.*
-..\%__SRC%\lib\libssl.* %_DEST%\lib%_EXT%\libssl.*
+..\%__SRC%\lib\libcrypto.*.* %_DEST%\lib%_EXT%\*
+..\%__SRC%\lib\libssl.*.* %_DEST%\lib%_EXT%\*
 ..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+
+linklib: libcrypto.*.*
+linklib: libssl.*.*

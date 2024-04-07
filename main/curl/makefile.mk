@@ -59,6 +59,8 @@ curl_LDFLAGS+:=$(ARCH_FLAGS)
 ssl_param=--with-ssl
 .ELSE
 ssl_param=--with-ssl=$(OUTDIR)
+curl_CFLAGS+=-I$(SOLARINCDIR)$/external
+curl_LDFLAGS+=-L$(SOLARLIBDIR) -Wl,-z,origin -Wl,-rpath,\\\$$\$$ORIGIN
 PATCH_FILES+= curl-bundled_openssl.patch
 .ENDIF
 
