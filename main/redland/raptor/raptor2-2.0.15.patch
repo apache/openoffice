@@ -1,0 +1,65 @@
+diff -Nur misc/build/raptor2-2.0.15/src/raptor_libxml.c misc/build/raptor2-2.0.15/src/raptor_libxml.c
+--- misc/build/raptor2-2.0.15/src/raptor_libxml.c	2024-04-14 16:02:17.001795000 +0200
++++ misc/build/raptor2-2.0.15/src/raptor_libxml.c	2024-04-14 17:33:11.733451000 +0200
+@@ -246,10 +246,10 @@
+     
+     ret->owner = 1;
+ 
+-#if LIBXML_VERSION >= 20627
++#if LIBXML_VERSION >= 20627 && LIBXML_VERSION < 21100
+     /* Checked field was released in 2.6.27 on 2006-10-25
+      * http://git.gnome.org/browse/libxml2/commit/?id=a37a6ad91a61d168ecc4b29263def3363fff4da6
+-     *
++     * and removed in version 2.11.0...
+      */
+ 
+     /* Mark this entity as having been checked - never do this again */
+diff -Nur misc/build/raptor2-2.0.15/src/raptor_parse.c misc/build/raptor2-2.0.15/src/raptor_parse.c
+--- misc/build/raptor2-2.0.15/src/raptor_parse.c	2024-04-14 16:02:17.005682000 +0200
++++ misc/build/raptor2-2.0.15/src/raptor_parse.c	2024-04-14 16:01:17.838736000 +0200
+@@ -257,7 +257,7 @@
+ int
+ raptor_world_get_parsers_count(raptor_world* world)
+ {
+-  RAPTOR_ASSERT_OBJECT_POINTER_RETURN_VALUE(world, raptor_world, NULL);
++  RAPTOR_ASSERT_OBJECT_POINTER_RETURN_VALUE(world, raptor_world, (int)NULL);
+ 
+   raptor_world_open(world);
+ 
+diff -Nur misc/build/raptor2-2.0.15/src/raptor_serialize.c misc/build/raptor2-2.0.15/src/raptor_serialize.c
+--- misc/build/raptor2-2.0.15/src/raptor_serialize.c	2024-04-14 16:02:17.000076000 +0200
++++ misc/build/raptor2-2.0.15/src/raptor_serialize.c	2024-04-14 16:03:45.447050000 +0200
+@@ -240,7 +240,7 @@
+ int
+ raptor_world_get_serializers_count(raptor_world* world)
+ {
+-  RAPTOR_ASSERT_OBJECT_POINTER_RETURN_VALUE(world, raptor_world, NULL);
++  RAPTOR_ASSERT_OBJECT_POINTER_RETURN_VALUE(world, raptor_world, (int)NULL);
+ 
+   raptor_world_open(world);
+ 
+diff -Nur misc/build/raptor2-2.0.15/src/sort_r.h misc/build/raptor2-2.0.15/src/sort_r.h
+--- misc/build/raptor2-2.0.15/src/sort_r.h	2024-04-14 16:02:17.006876000 +0200
++++ misc/build/raptor2-2.0.15/src/sort_r.h	2024-04-14 17:12:40.890101000 +0200
+@@ -24,10 +24,10 @@
+      defined OpenBSD3_1 || defined OpenBSD3_9 || defined __OpenBSD__ || \
+      defined __NetBSD__ || \
+      defined __DragonFly__ || \
+-     defined AMIGA)
++     defined AMIGA) && !defined(qsort_r)
+ #  define _SORT_R_BSD
+ #elif (defined _GNU_SOURCE || defined __gnu_hurd__ || defined __GNU__ || \
+-       defined __linux__ || defined __MINGW32__ || defined __GLIBC__)
++       defined __linux__ || defined __MINGW32__ || defined __GLIBC__ || defined(qsort_r))
+ #  define _SORT_R_LINUX
+ #elif (defined _WIN32 || defined _WIN64 || defined __WINDOWS__)
+ #  define _SORT_R_WINDOWS
+@@ -82,7 +82,7 @@
+   #elif defined _SORT_R_LINUX
+ 
+     typedef int(* __compar_d_fn_t)(const void *, const void *, void *);
+-    extern void qsort_r(void *base, size_t nel, size_t width,
++    extern void (qsort_r)(void *base, size_t nel, size_t width,
+                         __compar_d_fn_t __compar, void *arg)
+       __attribute__((nonnull (1, 4)));
+ 
