@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef _SFXSTATCACH_HXX
 #define _SFXSTATCACH_HXX
@@ -55,13 +54,13 @@ friend class SfxStateCache;
 	::com::sun::star::util::URL						aURL;
 	::com::sun::star::frame::FeatureStateEvent		aStatus;
 	SfxStateCache*			pCache;
-    const SfxSlot*          pSlot;
+	const SfxSlot*			pSlot;
 
 public:
 							BindDispatch_Impl(
 								const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > & rDisp,
 								const ::com::sun::star::util::URL& rURL,
-                                SfxStateCache* pStateCache, const SfxSlot* pSlot );
+								SfxStateCache* pStateCache, const SfxSlot* pSlot );
 
 	SFX_DECL_XINTERFACE_XTYPEPROVIDER
 
@@ -70,24 +69,24 @@ public:
 
 	void					Release();
 	const ::com::sun::star::frame::FeatureStateEvent& GetStatus() const;
-	void                    Dispatch( com::sun::star::uno::Sequence < com::sun::star::beans::PropertyValue > aProps, sal_Bool bForceSynchron = sal_False );
+	void					Dispatch( com::sun::star::uno::Sequence < com::sun::star::beans::PropertyValue > aProps, sal_Bool bForceSynchron = sal_False );
 };
 
 class SfxStateCache
 {
 friend class BindDispatch_Impl;
 	BindDispatch_Impl*		pDispatch;
-	sal_uInt16				nId;		   // Slot-Id
-    SfxControllerItem*      pInternalController;
-    com::sun::star::uno::Reference < com::sun::star::frame::XDispatch > xMyDispatch;
-	SfxControllerItem*		pController;   // Ptr auf 1. gebundenen Controller (untereinander verkettet)
-	SfxSlotServer			aSlotServ;	   // SlotServer, SlotPtr = 0 -> Nicht auf Stack
-	SfxPoolItem*			pLastItem;	   // zuletzt verschicktes Item, nie -1
-	SfxItemState			eLastState;    // zuletzt verschickter State
-	sal_Bool				bCtrlDirty:1;  // Controller aktualisiert?
-	sal_Bool				bSlotDirty:1;  // Funktion gfs. vorhanden, muss aktualisiert werden
-    sal_Bool                bItemVisible:1;// item visibility
-	sal_Bool			    bItemDirty;    // G"ultigkeit von pLastItem
+	sal_uInt16				nId;			// Slot-Id
+	SfxControllerItem*		pInternalController;
+	com::sun::star::uno::Reference < com::sun::star::frame::XDispatch > xMyDispatch;
+	SfxControllerItem*		pController;	// Ptr auf 1. gebundenen Controller (untereinander verkettet)
+	SfxSlotServer			aSlotServ;		// SlotServer, SlotPtr = 0 -> Nicht auf Stack
+	SfxPoolItem*			pLastItem;		// zuletzt verschicktes Item, nie -1
+	SfxItemState			eLastState;		// zuletzt verschickter State
+	sal_Bool				bCtrlDirty:1;	// Controller aktualisiert?
+	sal_Bool				bSlotDirty:1;	// Funktion ggfs. vorhanden, muss aktualisiert werden
+	sal_Bool				bItemVisible:1;	// item visibility
+	sal_Bool				bItemDirty;		// Gültigkeit von pLastItem
 
 private:
 							SfxStateCache( const SfxStateCache& rOrig ); // n.i.
@@ -99,11 +98,11 @@ public:
 
 	sal_uInt16					GetId() const;
 
-    const SfxSlotServer*    GetSlotServer( SfxDispatcher &rDispat, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > & xProv );
-    const SfxSlotServer*    GetSlotServer( SfxDispatcher &rDispat )
-                            { return GetSlotServer( rDispat, ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > () ); }
+	const SfxSlotServer*	GetSlotServer( SfxDispatcher &rDispat, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > & xProv );
+	const SfxSlotServer*	GetSlotServer( SfxDispatcher &rDispat )
+							{ return GetSlotServer( rDispat, ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > () ); }
 	::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > 			GetDispatch() const;
-    void                    Dispatch( const SfxItemSet* pSet, sal_Bool bForceSynchron = sal_False );
+	void					Dispatch( const SfxItemSet* pSet, sal_Bool bForceSynchron = sal_False );
 	sal_Bool					IsControllerDirty() const
 							{ return bCtrlDirty ? sal_True : sal_False; }
 	SfxPoolItem*			GetItem() const { return pLastItem; }
@@ -113,24 +112,24 @@ public:
 	void					SetCachedState(sal_Bool bAlways = sal_False);
 	void					DeleteFloatingWindows();
 	void					Invalidate( sal_Bool bWithSlot );
-    void                    SetVisibleState( sal_Bool bShow=sal_True );
+	void					SetVisibleState( sal_Bool bShow=sal_True );
 
 	SfxControllerItem*		ChangeItemLink( SfxControllerItem* pNewBinding );
 	SfxControllerItem*		GetItemLink() const;
-    void                    SetInternalController( SfxControllerItem* pCtrl )
-                            { DBG_ASSERT( !pInternalController, "Only one internal controller allowed!" ); pInternalController = pCtrl; }
-    void                    ReleaseInternalController() { pInternalController = 0; }
-    SfxControllerItem*      GetInternalController() const { return pInternalController; }
-    com::sun::star::uno::Reference < com::sun::star::frame::XDispatch >
-                            GetInternalDispatch() const
-                            { return xMyDispatch; }
-    void                    SetInternalDispatch( const com::sun::star::uno::Reference < com::sun::star::frame::XDispatch >& rDisp )
-                            { xMyDispatch = rDisp; }
+	void					SetInternalController( SfxControllerItem* pCtrl )
+							{ DBG_ASSERT( !pInternalController, "Only one internal controller allowed!" ); pInternalController = pCtrl; }
+	void					ReleaseInternalController() { pInternalController = 0; }
+	SfxControllerItem*		GetInternalController() const { return pInternalController; }
+	com::sun::star::uno::Reference < com::sun::star::frame::XDispatch >
+							GetInternalDispatch() const
+							{ return xMyDispatch; }
+	void					SetInternalDispatch( const com::sun::star::uno::Reference < com::sun::star::frame::XDispatch >& rDisp )
+							{ xMyDispatch = rDisp; }
 };
 
 //--------------------------------------------------------------------
 
-// checks wheather this function is in the stack of active SfxObjectInterface
+// checks whether this function is in the stack of active SfxObjectInterface
 
 //inline sal_Bool SfxStateCache::IsCallable( SfxDispatcher &rDispat )
 //{
@@ -147,7 +146,7 @@ inline void SfxStateCache::ClearCache()
 
 //--------------------------------------------------------------------
 
-// registeres a item representing this function
+// registers an item representing this function
 
 inline SfxControllerItem* SfxStateCache::ChangeItemLink( SfxControllerItem* pNewBinding )
 {
@@ -176,3 +175,5 @@ inline sal_uInt16 SfxStateCache::GetId() const
 }
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
