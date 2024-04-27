@@ -1,0 +1,17 @@
+--- misc/build/openssl-3.0.13/Configurations/00-base-templates.conf	2024-04-14 20:51:59.953276000 +0200
++++ misc/build/openssl-3.0.13/Configurations/00-base-templates.conf	2024-04-15 04:41:41.558374000 +0200
+@@ -67,9 +67,13 @@
+ 
+         AR              => "ar",
+         ARFLAGS         => "qc",
++        ASFLAGS         => "-Wa,--noexecstack",
+         CC              => "cc",
+         lflags          =>
+-            sub { $withargs{zlib_lib} ? "-L".$withargs{zlib_lib} : () },
++            sub {
++                my $s = '-Wl,-z,origin -Wl,-rpath,\$$ORIGIN';
++                return $withargs{zlib_lib} ? $s." -L".$withargs{zlib_lib} : $s;
++            },
+         ex_libs         =>
+             sub { !defined($disabled{zlib})
+                   && defined($disabled{"zlib-dynamic"})

@@ -43,8 +43,8 @@
                         <xsl:otherwise>none</xsl:otherwise>
                     </xsl:choose>
                 </xsl:variable>
-                <!-- MS word and SO wirter borders Mapping
-				MS word Borders                         SO borders
+                <!-- MS Word and AOO Writer borders mapping
+				MS Word borders                         AOO borders
 				w:val="single" w:sz="0"             		0.05pt(0.002cm);solid
 				w:val="single" w:sz="12"             		1.00pt(0.035cm);solid
 				w:val="single" w:sz="18"  					2.50pt(0.088cm);solid

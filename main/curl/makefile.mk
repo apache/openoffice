@@ -37,8 +37,8 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=curl-7.72.0
-TARFILE_MD5=7422feb126df677d2d33294a1fd079ea
+TARFILE_NAME=curl-8.7.1
+TARFILE_MD5=92f7a11836678b725e2cb59fef10c273
 PATCH_FILES=curl-wnt.patch
 
 #ADDITIONAL_FILES= lib$/config-os2.h lib$/Makefile.os2
@@ -59,6 +59,8 @@ curl_LDFLAGS+:=$(ARCH_FLAGS)
 ssl_param=--with-ssl
 .ELSE
 ssl_param=--with-ssl=$(OUTDIR)
+curl_CFLAGS+=-I$(SOLARINCDIR)$/external
+curl_LDFLAGS+=-L$(SOLARLIBDIR) -Wl,-z,origin -Wl,-rpath,\\\$$\$$ORIGIN
 PATCH_FILES+= curl-bundled_openssl.patch
 .ENDIF
 
@@ -144,15 +146,18 @@ OUT2LIB=$(BUILD_DIR)$/libcurl.lib
 .ENDIF			# "$(GUI)"=="OS2"
 
 OUT2INC= \
-	include$/curl$/easy.h  			\
-	include$/curl$/multi.h  		\
 	include$/curl$/curl.h  			\
 	include$/curl$/curlver.h  		\
-	include$/curl$/typecheck-gcc.h  	\
-	include$/curl$/stdcheaders.h  	\
+	include$/curl$/easy.h  			\
+	include$/curl$/header.h			\
 	include$/curl$/mprintf.h	    \
+	include$/curl$/multi.h  		\
+	include$/curl$/options.h		\
+	include$/curl$/stdcheaders.h  	\
 	include$/curl$/system.h			\
-	include$/curl$/urlapi.h
+	include$/curl$/typecheck-gcc.h  	\
+	include$/curl$/urlapi.h			\
+	include$/curl$/websockets.h
 
 
 # --- Targets ------------------------------------------------------

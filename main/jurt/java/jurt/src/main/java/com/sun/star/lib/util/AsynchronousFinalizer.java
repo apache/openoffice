@@ -37,7 +37,7 @@ import java.util.LinkedList;
    in both cases finalizers lead to synchronous UNO release calls).
 
    If JVMs are getting more mature and should no longer have problems with
-   long-running finalize mehtods, this class could be removed again.
+   long-running finalize methods, this class could be removed again.
 */
 public final class AsynchronousFinalizer {
     /**
