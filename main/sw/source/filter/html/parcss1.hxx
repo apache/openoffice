@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _PARCSS1_HXX
 #define _PARCSS1_HXX
@@ -27,8 +25,6 @@
 #include <tools/string.hxx>
 
 class Color;
-
-/*  */
 
 // Die Tokens des CSS1-Parsers
 enum CSS1Token
@@ -40,8 +36,8 @@ enum CSS1Token
 	CSS1_STRING,
 	CSS1_NUMBER,
 	CSS1_PERCENTAGE,
-	CSS1_LENGTH,			// eine absolute Groesse in 1/100 MM
-	CSS1_PIXLENGTH,			// eine Pixel-Groesse
+	CSS1_LENGTH,			// eine absolute Größe in 1/100 mm
+	CSS1_PIXLENGTH,			// eine Pixel-Größe
 	CSS1_EMS,
 	CSS1_EMX,
 	CSS1_HEXCOLOR,
@@ -70,7 +66,7 @@ enum CSS1Token
 };
 
 
-// die Zustaende des Parsers
+// die Zustände des Parsers
 enum CSS1ParserState
 {
 	CSS1_PAR_ACCEPTED = 0,
@@ -78,8 +74,6 @@ enum CSS1ParserState
 	CSS1_PAR_ERROR
 };
 
-
-/*  */
 
 enum CSS1SelectorType
 {
@@ -94,7 +88,7 @@ enum CSS1SelectorType
 
 };
 
-// Die folegende Klasse beschreibt einen Simple-Selector, also
+// Die folgende Klasse beschreibt einen Simple-Selector, also
 // - einen HTML-Element-Namen
 // - einen HTML-Element-Namen mit Klasse (durch '.' getrennt)
 // - eine Klasse (ohne Punkt)
@@ -102,13 +96,13 @@ enum CSS1SelectorType
 // oder
 // - ein Pseudo-Element
 //
-// Die Simple-Sektoren werden in einer Liste zu vollstaendigen
+// Die Simple-Sektoren werden in einer Liste zu vollständigen
 // Selektoren verkettet
 class CSS1Selector
 {
 	CSS1SelectorType eType;		// Art des Selektors
 	String aSelector;			// der Selektor selbst
-	CSS1Selector *pNext;		// die naechste Komponente
+	CSS1Selector *pNext;		// die nächste Komponente
 
 public:
 
@@ -126,24 +120,22 @@ public:
 };
 
 
-/*  */
-
-// Die folegende Klasse beschreibt einen Teil-Ausdruck einer
+// Die folgende Klasse beschreibt einen Teil-Ausdruck einer
 // CSS1-Deklaration sie besteht aus
 //
 // - dem Typ des Ausdrucks (entspricht dem Token)
 // - dem eigentlichen Wert als String und ggf. double
-//   der double-Wert enthaelt das Vorzeichen fuer NUMBER und LENGTH
-// - und dem Operator, mit dem er mit dem *Vorganger*-Ausdruck
-//   verknuepft ist.
+//   der double-Wert enthält das Vorzeichen für NUMBER und LENGTH
+// - und dem Operator, mit dem er mit dem *Vorgänger*-Ausdruck
+//   verknüpft ist.
 //
 struct CSS1Expression
 {
-	sal_Unicode cOp;		// Art der Verkuepfung mit dem Vorgaenger
+	sal_Unicode cOp;		// Art der Verknüpfung mit dem Vorgänger
 	CSS1Token eType;		// der Typ des Wertes
 	String aValue;			// und sein Wert als String
-	double nValue;			// und als Zahl (TWIPs fuer LENGTH)
-	CSS1Expression *pNext;	// die naechste Komponente
+	double nValue;			// und als Zahl (TWIPs für LENGTH)
+	CSS1Expression *pNext;	// die nächste Komponente
 
 public:
 
@@ -188,13 +180,11 @@ inline sal_Int32 CSS1Expression::GetSLength() const
 	return (sal_Int32)(nValue + (nValue < 0. ? -.5 : .5 ));
 }
 
-/*  */
-
 // Diese Klasse parst den Inhalt eines Style-Elements oder eine Style-Option
 // und bereitet ihn ein wenig auf.
 //
-// Das Ergebnis des Parsers wird durch die Mehtoden SelectorParsed()
-// und DeclarationParsed() an abgeleitete Parser uebergeben. Bsp:
+// Das Ergebnis des Parsers wird durch die Methoden SelectorParsed()
+// und DeclarationParsed() an abgeleitete Parser übergeben. Bsp:
 //
 // H1, H2 { font-weight: bold; text-align: right }
 //  |  |				    | 				   |
@@ -208,16 +198,16 @@ class CSS1Parser
 	sal_Bool bWhiteSpace : 1;			// White-Space gelesen?
 	sal_Bool bEOF : 1;					// Ende des "Files" ?
 
-	sal_Unicode cNextCh;				// naechstes Zeichen
+	sal_Unicode cNextCh;				// nächstes Zeichen
 
 	xub_StrLen nInPos;					// aktuelle Position im Input-String
 
-	sal_uInt32 nlLineNr;					// akt. Zeilen Nummer
+	sal_uInt32 nlLineNr;				// akt. Zeilen Nummer
 	sal_uInt32 nlLinePos;				// akt. Spalten Nummer
 
 	double nValue;					// der Wert des Tokens als Zahl
 
-	CSS1ParserState eState;			// der akteulle Zustand der Parsers
+	CSS1ParserState eState;			// der aktuelle Zustand der Parsers
 	CSS1Token nToken;				// das aktuelle Token
 
 	String aIn;						// der zu parsende String
@@ -226,10 +216,10 @@ class CSS1Parser
 	// Parsen vorbereiten
 	void InitRead( const String& rIn );
 
-	// das naechste Zeichen holen
+	// das nächste Zeichen holen
 	sal_Unicode GetNextChar();
 
-	// das naechste Token holen
+	// das nächste Token holen
 	CSS1Token GetNextToken();
 
 	// arbeitet der Parser noch?
@@ -252,25 +242,25 @@ protected:
 	void ParseStyleSheet();
 
 	// Den Inhalt eines HTML-Style-Elements parsen.
-	// Fuer jeden Selektor und jede Deklaration wird
+	// Für jeden Selektor und jede Deklaration wird
 	// SelectorParsed() bzw. DeclarationParsed() aufgerufen.
 	sal_Bool ParseStyleSheet( const String& rIn );
 
 	// Den Inhalt einer HTML-Style-Option parsen.
-	// F�r jede Deklaration wird DeclarationParsed() aufgerufen.
+	// Für jede Deklaration wird DeclarationParsed() aufgerufen.
 	sal_Bool ParseStyleOption( const String& rIn );
 
 	// Diese Methode wird aufgerufen, wenn ein Selektor geparsed wurde
 	// Wenn 'bFirst' gesetzt ist, beginnt mit dem Selektor eine neue
-	// Deklaration. Wird sal_True zurueckgegeben, wird der Selektor
-	// geloscht, sonst nicht.
-	// Die Implementierung dieser Methode gibt nur sal_True zuruck.
+	// Deklaration. Wird sal_True zurückgegeben, wird der Selektor
+	// gelöscht, sonst nicht.
+	// Die Implementierung dieser Methode gibt nur sal_True zurück.
 	virtual sal_Bool SelectorParsed( const CSS1Selector *pSelector,
 								 sal_Bool bFirst );
 
-	// Diese Methode wird fuer jede geparsete Property aufgerufen. Wird
-	// sal_True zurueckgegeben wird der Selektor geloscht, sonst nicht.
-	// Die Implementierung dieser Methode gibt nur sal_True zuruck.
+	// Diese Methode wird für jede geparste Property aufgerufen. Wird
+	// sal_True zurückgegeben wird der Selektor gelöscht, sonst nicht.
+	// Die Implementierung dieser Methode gibt nur sal_True zurück.
 	virtual sal_Bool DeclarationParsed( const String& rProperty,
 									const CSS1Expression *pExpr );
 
@@ -300,4 +290,4 @@ inline sal_uInt32 CSS1Parser::SetLinePos( sal_uInt32 nlPos )
 
 #endif
 
-
+/* vim: set noet sw=4 ts=4: */

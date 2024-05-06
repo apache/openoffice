@@ -1028,7 +1028,7 @@ static bool	setup_version()
 }
 
 #if 0
-// Use gconftool-2 to determine if gnome accessiblity is enabled
+// Use gconftool-2 to determine if gnome accessibility is enabled
 // unused
 static bool get_accessibility_state()
 {
@@ -1054,7 +1054,7 @@ int main( int argc, char** argv )
 
 	setup_program_dir( argv[0] );
 
-	// Don't start if accessiblity is enabled or report server is not given
+	// Don't start if accessibility is enabled or report server is not given
 
 	if ( setup_version() )
 	{

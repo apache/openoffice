@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include "hintids.hxx"
 #include <svl/whiter.hxx>
@@ -55,38 +52,38 @@
 using namespace ::com::sun::star;
 
 /*************************************************************************
- *						SwAttrIter::CtorInitAttrIter()
+ * SwAttrIter::CtorInitAttrIter()
  *************************************************************************/
 void SwAttrIter::CtorInitAttrIter( SwTxtNode& rTxtNode, SwScriptInfo& rScrInf, SwTxtFrm* pFrm )
 {
 	// Beim HTML-Import kann es vorkommen, dass kein Layout existiert.
-    SwRootFrm* pRootFrm = rTxtNode.getIDocumentLayoutAccess()->GetCurrentLayout();
-    pShell = pRootFrm ? pRootFrm->GetCurrShell() : 0;	//swmod 080218
+	SwRootFrm* pRootFrm = rTxtNode.getIDocumentLayoutAccess()->GetCurrentLayout();
+	pShell = pRootFrm ? pRootFrm->GetCurrShell() : 0;	//swmod 080218
 
-    pScriptInfo = &rScrInf;
+	pScriptInfo = &rScrInf;
 
-    // attributes set at the whole paragraph
+	// attributes set at the whole paragraph
 	pAttrSet = rTxtNode.GetpSwAttrSet();
-    // attribute array
-    pHints = rTxtNode.GetpSwpHints();
+	// attribute array
+	pHints = rTxtNode.GetpSwpHints();
 
-    // Build a font matching the default paragraph style:
-    SwFontAccess aFontAccess( &rTxtNode.GetAnyFmtColl(), pShell );
-    delete pFnt;
-    pFnt = new SwFont( *aFontAccess.Get()->GetFont() );
+	// Build a font matching the default paragraph style:
+	SwFontAccess aFontAccess( &rTxtNode.GetAnyFmtColl(), pShell );
+	delete pFnt;
+	pFnt = new SwFont( *aFontAccess.Get()->GetFont() );
 
-    // set font to vertical if frame layout is vertical
-    sal_Bool bVertLayout = sal_False;
-    sal_Bool bRTL = sal_False;
-    if ( pFrm )
-    {
-        if ( pFrm->IsVertical() )
-        {
-            bVertLayout = sal_True;
-            pFnt->SetVertical( pFnt->GetOrientation(), sal_True );
-        }
-        bRTL = pFrm->IsRightToLeft();
-    }
+	// set font to vertical if frame layout is vertical
+	sal_Bool bVertLayout = sal_False;
+	sal_Bool bRTL = sal_False;
+	if ( pFrm )
+	{
+		if ( pFrm->IsVertical() )
+		{
+			bVertLayout = sal_True;
+			pFnt->SetVertical( pFnt->GetOrientation(), sal_True );
+		}
+		bRTL = pFrm->IsRightToLeft();
+	}
 
     // Initialize the default attribute of the attribute handler
     // based on the attribute array cached together with the font.
@@ -100,20 +97,20 @@ void SwAttrIter::CtorInitAttrIter( SwTxtNode& rTxtNode, SwScriptInfo& rScrInf, S
 
 	// determine script changes if not already done for current paragraph
 	ASSERT( pScriptInfo, "No script info available");
-    if ( pScriptInfo->GetInvalidity() != STRING_LEN )
-         pScriptInfo->InitScriptInfo( rTxtNode, bRTL );
+	if ( pScriptInfo->GetInvalidity() != STRING_LEN )
+		 pScriptInfo->InitScriptInfo( rTxtNode, bRTL );
 
 	if ( pBreakIt->GetBreakIter().is() )
 	{
-        pFnt->SetActual( SwScriptInfo::WhichFont( 0, 0, pScriptInfo ) );
+		pFnt->SetActual( SwScriptInfo::WhichFont( 0, 0, pScriptInfo ) );
 
-        xub_StrLen nChg = 0;
+		xub_StrLen nChg = 0;
 		sal_uInt16 nCnt = 0;
 
-        do
+		do
 		{
 			nChg = pScriptInfo->GetScriptChg( nCnt );
-            sal_uInt16 nScript = pScriptInfo->GetScriptType( nCnt++ );
+			sal_uInt16 nScript = pScriptInfo->GetScriptType( nCnt++ );
 			sal_uInt8 nTmp = 4;
 			switch ( nScript ) {
 				case i18n::ScriptType::ASIAN :
@@ -136,16 +133,16 @@ void SwAttrIter::CtorInitAttrIter( SwTxtNode& rTxtNode, SwScriptInfo& rScrInf, S
 		pFnt->GetMagic( aMagicNo[ SW_LATIN ], aFntIdx[ SW_LATIN ], SW_LATIN );
 	}
 
-    nStartIndex = nEndIndex = nPos = nChgCnt = 0;
+	nStartIndex = nEndIndex = nPos = nChgCnt = 0;
 	nPropFont = 0;
 	SwDoc* pDoc = rTxtNode.GetDoc();
-    const IDocumentRedlineAccess* pIDRA = rTxtNode.getIDocumentRedlineAccess();
+	const IDocumentRedlineAccess* pIDRA = rTxtNode.getIDocumentRedlineAccess();
 
 	const SwExtTextInput* pExtInp = pDoc->GetExtTextInput( rTxtNode );
-    const bool bShow = IDocumentRedlineAccess::IsShowChanges( pIDRA->GetRedlineMode() );
-    if( pExtInp || bShow )
+	const bool bShow = IDocumentRedlineAccess::IsShowChanges( pIDRA->GetRedlineMode() );
+	if( pExtInp || bShow )
 	{
-        MSHORT nRedlPos = pIDRA->GetRedlinePos( rTxtNode, USHRT_MAX );
+		MSHORT nRedlPos = pIDRA->GetRedlinePos( rTxtNode, USHRT_MAX );
 		if( pExtInp || MSHRT_MAX != nRedlPos )
 		{
 			const SvUShorts* pArr = 0;
@@ -169,11 +166,11 @@ void SwAttrIter::CtorInitAttrIter( SwTxtNode& rTxtNode, SwScriptInfo& rScrInf, S
 /*************************************************************************
  * SwRedlineItr - Der Redline-Iterator
  *
- * Folgende Informationen/Zustaende gibt es im RedlineIterator:
+ * Folgende Informationen/Zustände gibt es im RedlineIterator:
  *
- * nFirst ist der erste Index der RedlineTbl, der mit dem Absatz ueberlappt.
+ * nFirst ist der erste Index der RedlineTbl, der mit dem Absatz überlappt.
  *
- * nAct ist der zur Zeit aktive ( wenn bOn gesetzt ist ) oder der naechste
+ * nAct ist der zur Zeit aktive ( wenn bOn gesetzt ist ) oder der nächste
  * in Frage kommende Index.
  * nStart und nEnd geben die Grenzen des Objekts innerhalb des Absatzes an.
  *
@@ -205,14 +202,14 @@ SwRedlineItr::~SwRedlineItr()
 }
 
 // Der Return-Wert von SwRedlineItr::Seek gibt an, ob der aktuelle Font
-// veraendert wurde durch Verlassen (-1) oder Betreten eines Bereichs (+1)
+// verändert wurde durch Verlassen (-1) oder Betreten eines Bereichs (+1)
 
 short SwRedlineItr::_Seek( SwFont& rFnt, xub_StrLen nNew, xub_StrLen nOld )
 {
 	short nRet = 0;
 	if( ExtOn() )
-        return 0; // Abkuerzung: wenn wir innerhalb eines ExtendTextInputs sind
-			// kann es keine anderen Attributwechsel (auch nicht durch Redlining) geben
+        return 0; // Abkürzung: wenn wir innerhalb eines ExtendTextInputs sind
+				  // kann es keine anderen Attributwechsel (auch nicht durch Redlining) geben
 	if( bShow )
 	{
 		if( bOn )
@@ -221,14 +218,14 @@ short SwRedlineItr::_Seek( SwFont& rFnt, xub_StrLen nNew, xub_StrLen nOld )
 			{
 				--nRet;
 				_Clear( &rFnt );	// Wir gehen hinter den aktuellen Bereich
-				++nAct;		   		// und pruefen gleich den naechsten
+				++nAct;		   		// und prüfen gleich den nächsten
 			}
 			else if( nNew < nStart )
 			{
 				--nRet;
 				_Clear( &rFnt );	// Wir gehen vor den aktuellen Bereich
 				if( nAct > nFirst )
-					nAct = nFirst;	// Die Pruefung muss von vorne beginnen
+					nAct = nFirst;	// Die Prüfung muss von vorne beginnen
 				else
 					return nRet + EnterExtend( rFnt, nNew ); // Es gibt keinen vor uns.
 			}
@@ -243,11 +240,11 @@ short SwRedlineItr::_Seek( SwFont& rFnt, xub_StrLen nNew, xub_StrLen nOld )
 
 		for( ; nAct < rDoc.GetRedlineTbl().Count() ; ++nAct )
 		{
-            rDoc.GetRedlineTbl()[ nAct ]->CalcStartEnd( nNdIdx, nStart, nEnd );
+			rDoc.GetRedlineTbl()[ nAct ]->CalcStartEnd( nNdIdx, nStart, nEnd );
 
-            if( nNew < nEnd )
+			if( nNew < nEnd )
 			{
-				if( nNew >= nStart ) // der einzig moegliche Kandidat
+				if( nNew >= nStart ) // der einzig mögliche Kandidat
 				{
 					bOn = sal_True;
 					const SwRedline *pRed = rDoc.GetRedlineTbl()[ nAct ];
@@ -362,7 +359,7 @@ xub_StrLen SwRedlineItr::_GetNextRedln( xub_StrLen nNext )
 	if( MSHRT_MAX == nAct )
 	{
 		nAct = nFirst;
-        rDoc.GetRedlineTbl()[ nAct ]->CalcStartEnd( nNdIdx, nStart, nEnd );
+		rDoc.GetRedlineTbl()[ nAct ]->CalcStartEnd( nNdIdx, nStart, nEnd );
 	}
 	if( bOn || !nStart )
 	{
@@ -376,12 +373,12 @@ xub_StrLen SwRedlineItr::_GetNextRedln( xub_StrLen nNext )
 
 sal_Bool SwRedlineItr::_ChkSpecialUnderline() const
 {
-	// Wenn die Unterstreichung oder das Escapement vom Redling kommt,
+	// Wenn die Unterstreichung oder das Escapement vom Redlining kommt,
 	// wenden wir immer das SpecialUnderlining, d.h. die Unterstreichung
 	// unter der Grundlinie an.
 	for( MSHORT i = 0; i < aHints.Count(); ++i )
 	{
-        MSHORT nWhich = aHints[i]->Which();
+		MSHORT nWhich = aHints[i]->Which();
 		if( RES_CHRATR_UNDERLINE == nWhich ||
 			RES_CHRATR_ESCAPEMENT == nWhich )
 			return sal_True;
@@ -402,7 +399,7 @@ sal_Bool SwRedlineItr::CheckLine( xub_StrLen nChkStart, xub_StrLen nChkEnd )
 
 	for( nAct = nFirst; nAct < rDoc.GetRedlineTbl().Count() ; ++nAct )
 	{
-        rDoc.GetRedlineTbl()[ nAct ]->CalcStartEnd( nNdIdx, nStart, nEnd );
+		rDoc.GetRedlineTbl()[ nAct ]->CalcStartEnd( nNdIdx, nStart, nEnd );
 		if( nChkEnd < nStart )
 			break;
 		if( nChkStart <= nEnd && ( nChkEnd > nStart || STRING_LEN == nEnd ) )
@@ -436,7 +433,7 @@ void SwExtend::ActualizeFont( SwFont &rFnt, MSHORT nAttr )
 	{
 		const StyleSettings& rStyleSettings = GetpApp()->GetSettings().GetStyleSettings();
 		rFnt.SetColor( rStyleSettings.GetHighlightTextColor() );
-        rFnt.SetBackColor( new Color( rStyleSettings.GetHighlightColor() ) );
+		rFnt.SetBackColor( new Color( rStyleSettings.GetHighlightColor() ) );
 	}
 	if ( nAttr & EXTTEXTINPUT_ATTR_GRAYWAVELINE )
 		rFnt.SetGreyWave( sal_True );
@@ -450,7 +447,7 @@ short SwExtend::Enter( SwFont& rFnt, xub_StrLen nNew )
 	if( Inside() )
 	{
 		pFnt = new SwFont( rFnt );
-        ActualizeFont( rFnt, rArr[ nPos - nStart ] );
+		ActualizeFont( rFnt, rArr[ nPos - nStart ] );
 		return 1;
 	}
 	return 0;
@@ -466,13 +463,13 @@ sal_Bool SwExtend::_Leave( SwFont& rFnt, xub_StrLen nNew )
 		MSHORT nAttr = rArr[ nPos - nStart ];
 		if( nOldAttr != nAttr ) // Gibt es einen (inneren) Attributwechsel?
 		{
-            rFnt = *pFnt;
-            ActualizeFont( rFnt, nAttr );
+			rFnt = *pFnt;
+			ActualizeFont( rFnt, nAttr );
 		}
 	}
 	else
 	{
-        rFnt = *pFnt;
+		rFnt = *pFnt;
 		delete pFnt;
 		pFnt = NULL;
 		return sal_True;
@@ -492,10 +489,12 @@ xub_StrLen SwExtend::Next( xub_StrLen nNext )
 		MSHORT nIdx = nPos - nStart;
 		MSHORT nAttr = rArr[ nIdx ];
 		while( ++nIdx < rArr.Count() && nAttr == rArr[ nIdx ] )
-			; //nothing
+			; // nothing
 		nIdx = nIdx + nStart;
 		if( nNext > nIdx )
 			nNext = nIdx;
 	}
 	return nNext;
 }
+
+/* vim: set noet sw=4 ts=4: */

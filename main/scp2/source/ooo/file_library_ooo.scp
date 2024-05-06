@@ -1775,9 +1775,9 @@ File gid_File_Lib_Openssl
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef WNT
-    Name = "ssleay32.dll";
+    Name = "libssl-3.dll";
   #else
-    Name = "libssl.so";
+    Name = SCP2_URE_DL_VER("ssl", "3");
   #endif
 End
 #endif
@@ -1788,9 +1788,9 @@ File gid_File_Lib_Crypto
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef WNT
-    Name = "libeay32.dll";
+    Name = "libcrypto-3.dll";
   #else
-    Name = "libcrypto.so";
+    Name = SCP2_URE_DL_VER("crypto", "3");
   #endif
 End
 #endif

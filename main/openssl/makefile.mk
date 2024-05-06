@@ -37,15 +37,11 @@ TARGET=openssl
 	@echo "Using system openssl...."
 .ENDIF
 
-.IF "$(DISABLE_OPENSSL)" == "TRUE"
-@all:
-	@echo "openssl disabled...."
-.ENDIF
 
-OPENSSL_NAME=openssl-1.0.2u
+OPENSSL_NAME=openssl-3.0.13
 
 TARFILE_NAME=$(OPENSSL_NAME)
-TARFILE_MD5=cdc2638f789ecc2db2c91488265686c1
+TARFILE_MD5=c15e53a62711002901d3515ac8b30b86
 
 CONFIGURE_DIR=.
 CONFIGURE_ACTION=config
@@ -67,7 +63,7 @@ UNAME=$(shell uname)
 .ENDIF
 
 .IF "$(OS)" == "LINUX" || "$(OS)" == "FREEBSD"
-	PATCH_FILES=openssllnx.patch
+	PATCH_FILES=opensslunx.patch
 	.IF "$(CPU)" == "I"
 		.IF "$(UNAME)" == "GNU/kFreeBSD"
 			CONFIGURE_ACTION=Configure debian-kfreebsd-i386 no-dso no-shared $(NO_ASM)
@@ -117,6 +113,7 @@ UNAME=$(shell uname)
 .IF "$(OS)" == "WNT"
 
 .IF "$(COM)"=="GCC"
+
 PATCH_FILES=opensslmingw.patch
 .IF "$(USE_MINGW)" == "cygwin"
 CONFIGURE_ACTION=$(PERL) configure
@@ -128,7 +125,7 @@ OUT2LIB += libcrypto.*
 OUT2LIB += libssl.*
 OUT2BIN = ssleay32.dll
 OUT2BIN += libeay32.dll
-.ELSE
+.ELSE # "$(USE_MINGW)" == "cygwin"
 CONFIGURE_ACTION=
 BUILD_ACTION=cmd /c "ms\mingw32"
 OUT2LIB = out/libcrypto_static.*
@@ -137,47 +134,56 @@ OUT2LIB += out/libcrypto.*
 OUT2LIB += out/libssl.*
 OUT2BIN = out/ssleay32.dll
 OUT2BIN += out/libeay32.dll
-.ENDIF
-.ELSE
+.ENDIF # "$(USE_MINGW)" == "cygwin"
 
-		PATCH_FILES=openssl.patch
-		.IF "$(MAKETARGETS)" == ""
-			# The env. vars CC and PERL are used by nmake, and nmake insists on '\'s
-			# If WRAPCMD is set it is prepended before the compiler, don't touch that.
-			.IF "$(WRAPCMD)"==""
-				CC!:=$(subst,/,\ $(normpath,1 $(CC)))
-				.EXPORT : CC
-			.ENDIF
-			PERL_bak:=$(PERL)
-			PERL!:=$(subst,/,\ $(normpath,1 $(PERL)))
-			.EXPORT : PERL
-			PERL!:=$(PERL_bak)
-		.ENDIF
+.ELSE # "$(COM)"=="GCC"
 
-		#CONFIGURE_ACTION=cmd /c $(PERL:s!\!/!) configure
-		.IF "$(CPUNAME)"=="INTEL"
-			CONFIGURE_ACTION=$(PERL) configure $(NO_ASM)
-			CONFIGURE_FLAGS=VC-WIN32
-			.IF "$(NASM_PATH)"=="NO_NASM_HOME"
-			  BUILD_ACTION=cmd /c "ms$(EMQ)\do_ms.bat $(subst,/,\ $(normpath,1 $(PERL)))" && nmake -f ms/ntdll.mak
-			.ELSE
-			  BUILD_ACTION=cmd /c "ms$(EMQ)\do_nasm.bat $(subst,/,\ $(normpath,1 $(PERL)))" && nmake -f ms/ntdll.mak
-			.ENDIF
-		.ELIF "$(CPUNAME)"=="X86_64"
-			CONFIGURE_ACTION=$(PERL) configure $(NO_ASM)
-			CONFIGURE_FLAGS=VC-WIN64A
-			BUILD_ACTION=cmd /c "ms$(EMQ)\do_win64a.bat $(subst,/,\ $(normpath,1 $(PERL)))" && cmd /c "nmake -f ms/ntdll.mak"
-		.ENDIF
+	PATCH_FILES=openssl.patch
 
-		OUT2LIB = out32dll$/ssleay32.lib
-		OUT2LIB += out32dll$/libeay32.lib
-		OUT2BIN = out32dll$/ssleay32.dll
-		OUT2BIN += out32dll$/libeay32.dll
-		OUT2INC = inc32$/openssl$/*
+	# Extract Strawberry Perl and use CONFIGURE_ACTION to insert it, and NASM which it needs, into the PATH.
+	# Also define:
+	# - certain constants absent in the old MSVC we use (INT64_MAX, INT64_MIN, UINT64_MAX).
+	# - the minimum Windows version to support (_WIN32_WINDOWS=0x0400 for Windows 95, _WIN32_WINNT=0x0400 for Windows NT 4.0).
+	# - OPENSSL_NO_ASYNC=1 to stop using async functions that require old Windows versions.
+	STRAWBERRY_PERL_DIR=$(shell cygpath -u $(SOLARSRC)/openssl/$(INPATH)/misc/build/strawberry-perl)
+	.IF "$(NASM_PATH)"=="NASM_IN_PATH"
+		CONFIGURE_PATH=$(STRAWBERRY_PERL_DIR)/perl/bin:$(PATH)
+	.ELSE
+		NASM_PATH_NIX=$(shell cygpath -u $(NASM_PATH))
+		CONFIGURE_PATH=$(STRAWBERRY_PERL_DIR)/perl/bin:$(NASM_PATH_NIX):$(PATH)
 	.ENDIF
-.ENDIF
+	CONFIGURE_ACTION=\
+		if test -d "$(STRAWBERRY_PERL_DIR)"; \
+		then echo Found Strawberry Perl; \
+		else mkdir "$(STRAWBERRY_PERL_DIR)" && unzip -d $(STRAWBERRY_PERL_DIR) $(SOLARSRC)/../ext_sources/93fdfe261588bc82ab3a0bd4f5945b60-strawberry-perl-5.32.1.1-32bit-portable.zip ; \
+		fi && \
+		PATH="$(CONFIGURE_PATH)" \
+		PERL= \
+		CPPFLAGS="$(SOLARINC) \
+			-DOPENSSL_NO_ASYNC=1 \
+			-DWINVER=0x0400 \
+			-D_WIN32_WINNT=0x0400 \
+			-D_WIN32_WINDOWS=0x0400 \
+			-DINT64_MAX=9223372036854775807i64 \
+			-DINT64_MIN=(-9223372036854775807i64-1) \
+			-DUINT64_MAX=0xffffffffffffffffui64" \
+		RCFLAGS="$(SOLARINC)" \
+		perl configure $(NO_ASM)
+	.IF "$(CPUNAME)"=="INTEL"
+		CONFIGURE_FLAGS=VC-WIN32
+	.ELIF "$(CPUNAME)"=="X86_64"
+		CONFIGURE_FLAGS=VC-WIN64A
+	.ENDIF
+	BUILD_ACTION=LIB="$(ILIB)" nmake
 
-#set INCLUDE=D:\sol_temp\n\msvc7net3\PlatformSDK\include;D:\sol_temp\n\msvc7net3\include\ && set path=%path%;D:\sol_temp\r\btw\SRC680\perl\bin &&
+	OUT2BIN = libcrypto-3.dll
+	OUT2BIN += libssl-3.dll
+	OUT2INC = include$/openssl$/*
+
+.ENDIF # "$(COM)"=="GCC"
+
+.ENDIF # "$(OS)" == "WNT"
+
 
 # --- Targets ------------------------------------------------------
 

@@ -125,7 +125,7 @@ class XMLSecurityContext_MSCryptImpl : public ::cppu::WeakImplHelper3<
 		static XMLSecurityContext_MSCryptImpl* getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > xObj ) ;
 #endif
 
-		//Native mehtods
+		//Native methods
 		//virtual xmlSecKeysMngrPtr keysManager() throw( ::com::sun::star::uno::Exception , ::com::sun::star::uno::RuntimeException ) ;
 } ;
 
