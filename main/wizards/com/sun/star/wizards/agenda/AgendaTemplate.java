@@ -88,14 +88,14 @@ import com.sun.star.wizards.ui.event.DataAware;
  * 2.b. design is arbitrary.<br/>
  * As result the following limitations:<br/>
  * No column merge is allowed.<br/>
- * One compolsary Heading row.<br/>
+ * One compulsory Heading row.<br/>
  * <br/><br/>
  * To let the template be flexible, we use a kind of "detection": we look where
- * the items are read the design of each table, reaplying it after writing the
+ * the items are read the design of each table, reapplying it after writing the
  * table.
  * <br/><br/>
  * A note about threads:<br/>
- * Many methods here are synchronized, in order to avoid colission made by
+ * Many methods here are synchronized, in order to avoid collision made by
  * events fired too often.
  * @author rpiterman
  *  
@@ -110,11 +110,11 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     /**
      * data model. This keeps the status of the agenda document, and
      * every redraw is done according to this data.
-     * Exception: topic data is written programatically, event-oriented.
+     * Exception: topic data is written programmatically, event-oriented.
      */
     CGAgenda agenda;
     /**
-     * the UNO Text Document serrvice
+     * the UNO Text Document service
      */
     Object document;
     /**
@@ -125,7 +125,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
      * The template-filename of the current template.
      * Since we often re-link section and the break the link,
      * inorder to restore them, we need a template to link to.
-     * This is practically an identicall copy of the current template. 
+     * This is practically an identical copy of the current template.
      */
     String template;
     /** 
@@ -152,7 +152,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     /**
      * This map is used to find which tables contains a certain Item, so
      * the keys are the different Items, the Objects are the ItemTable controllers.
-     * When an Item must be redrawn (because the user checked or uncheced it),
+     * When an Item must be redrawn (because the user checked or unchecked it),
      * the controller is retrieved from this Map, and a redraw is issued on this controller.
      */
     Map itemsMap = new Hashtable(11);
@@ -173,7 +173,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     int dateFormat, timeFormat;
     XNumberFormatter dateFormatter, timeFormatter;
     /**
-     * used to transfare time from VCL to UNO.
+     * used to transfer time from VCL to UNO.
      */
     long docNullTime;
     Calendar calendar;
@@ -424,7 +424,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
      * document-specific).<br/>
      * Initializes the Items Cache map.
      * Analyses the document:<br/>
-     * -find all "fille-ins" (apear as &gt;xxx&lt; in the document).
+     * -find all "fille-ins" (appear as &gt;xxx&lt; in the document).
      * -analyze all items sections (and the tables in them).
      * -locate the titles and actualize them
      * -analyze the topics table
@@ -710,7 +710,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     /** 
      * hidden sections exist when an item's section is hidden because the
      * user specified not to display any items which it contains.
-     * When finishing the wizard removes this sections entireley from the document.
+     * When finishing the wizard removes this sections entirely from the document.
      */
     private void deleteHiddenSections()
     {
@@ -738,7 +738,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     /**
      * create the minutes for the given topics or remove the minutes section from the document.
      * If no topics are supplied, or the user 
-     * specified not to create minuts, the minutes section will be removed, 
+     * specified not to create minutes, the minutes section will be removed,
      * @param topicsData supplies PropertyValue arrays containing the values for the topics. 
      */
     public synchronized void createMinutes(List topicsData)
@@ -1079,7 +1079,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
                 int rowIndex = getRowIndex(cursor);
                 int rowsCount = getRowCount(UnoRuntime.queryInterface(XTextTable.class, table));
 
-                /* now before deleteing i move the cursor up so it 
+                /* now before deleting I move the cursor up so it
                  * does not disappear, because it will crash office.
                  */
                 cursor.gotoStart(false);
@@ -1103,13 +1103,13 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
      * This class handles the preview of the topics table.
      * You can call it the controller of the topics table.
      * It differs from ItemsTable in that it has no data model - 
-     * the update is done programttically.<br/>
+     * the update is done programmatically.<br/>
      * <br/>
      * The decision to make this class a class by its own
      * was done out of logic reasons and not design/functionality reasons,
      * since there is anyway only one instance of this class at runtime
      * it could have also be implemented in the AgendaTemplate class
-     * but for clarity and separation I decided to make a sub class for it.
+     * but for clarity and separation I decided to make a subclass for it.
      * 
      * @author rp143992
      */
@@ -1173,7 +1173,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
          * We hold the format of the last row, because one might wish to give it
          * a special format, other than the one on the bottom of each topic.
          * The left and right borders of the whole table are, on the other side,
-         * part of the topics rows format, and need not be preserved seperateley.
+         * part of the topics rows format, and need not be preserved separately.
          */
         public Topics()
         {
@@ -1360,12 +1360,12 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
          * preview document, in response to a change in the gui (by the user).
          * Since the structure of the topics table is flexible, we don't reference a cell
          * number. Rather, we use "what" argument to specify which cell should be redrawn.
-         * The Topics object, which analyzed the structure of the topics table appon 
-         * initialization, refreshes the approperiate cell.
+         * The Topics object, which analyzed the structure of the topics table upon
+         * initialization, refreshes the appropriate cell.
          * @param topic index of the topic (0 based).
          * @param what 0 for num, 1 for topic, 2 for responsible, 3 for duration
          * @param data the row's data.
-         * @throws Exception if something goes wrong (thow nothing should)
+         * @throws Exception if something goes wrong (though nothing should)
          */
         public void writeCell(int topic, int what, PropertyValue[] data) throws Exception
         {
@@ -1472,11 +1472,11 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
          * topics table to the given number of topics.
          * Note this method does only reducing - if
          * the number of topics given is greater than the
-         * number of actuall topics it does *not* add
+         * number of actual topics it does *not* add
          * new rows !
          * Note also that the first topic will never be removed.
          * If the table contains no topics, the whole section will 
-         * be removed uppon finishing.
+         * be removed upon finishing.
          * The reason for that is a "table-design" one: the first topic is
          * maintained in order to be able to add rows with a design of this topic, 
          * and not of the header row.
@@ -1513,7 +1513,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
         }
 
         /**
-         * reaply the format of the last row.
+         * reapply the format of the last row.
          */
         private void formatLastRow()
         {
@@ -1592,7 +1592,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     }
 
     /**
-     * Convenience method, costs the given object to an XNamed, and returnes its name.
+     * Convenience method, costs the given object to an XNamed, and returns its name.
      * @param obj an XNamed object.
      * @return the name of the given object.
      */
@@ -1662,7 +1662,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
 /*
  * ===========================================================================================
  * 
- *                  End of AgendaTempalte class
+ *                  End of AgendaTemplate class
  *  
  * ===========================================================================================
  * 
