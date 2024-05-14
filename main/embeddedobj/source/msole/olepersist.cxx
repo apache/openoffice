@@ -443,7 +443,7 @@ void OleEmbeddedObject::InsertVisualCache_Impl( const uno::Reference< io::XStrea
 												const uno::Reference< io::XStream >& xCachedVisualRepresentation )
 		throw ( uno::Exception )
 {
-	OSL_ENSURE( xTargetStream.is() && xCachedVisualRepresentation.is(), "Invalid argumants!\n" );
+	OSL_ENSURE( xTargetStream.is() && xCachedVisualRepresentation.is(), "Invalid arguments!\n" );
 
 	if ( !xTargetStream.is() || !xCachedVisualRepresentation.is() )
 		throw uno::RuntimeException();
@@ -594,7 +594,7 @@ void OleEmbeddedObject::InsertVisualCache_Impl( const uno::Reference< io::XStrea
 void OleEmbeddedObject::RemoveVisualCache_Impl( const uno::Reference< io::XStream >& xTargetStream )
 		throw ( uno::Exception )
 {
-	OSL_ENSURE( xTargetStream.is(), "Invalid argumant!\n" );
+	OSL_ENSURE( xTargetStream.is(), "Invalid argument!\n" );
 	if ( !xTargetStream.is() )
 		throw uno::RuntimeException();
 
@@ -641,7 +641,7 @@ sal_Bool OleEmbeddedObject::HasVisReplInStream()
 			SetVisReplInStream( sal_True );
 		else
 		{
-			RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OleEmbeddedObject::HasVisualReplInStream, analizing" );
+			RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OleEmbeddedObject::HasVisualReplInStream, analyzing" );
 
 			uno::Reference< io::XInputStream > xStream;
 			
@@ -818,7 +818,7 @@ uno::Reference< io::XStream > OleEmbeddedObject::TryToRetrieveCachedVisualRepres
 									try
 									{
 										CreateOleComponentAndLoad_Impl( NULL );
-										m_aClassID = m_pOleComponent->GetCLSID(); // was not set during consruction
+										m_aClassID = m_pOleComponent->GetCLSID(); // was not set during construction
 									}
 									catch( uno::Exception& )
 									{
@@ -1466,9 +1466,9 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 		if ( m_bFromClipboard )
 		{
 			// the object should be initialized from clipboard
-			// inpossibility to initialize the object means error here
+			// impossibility to initialize the object means error here
 			CreateOleComponentFromClipboard_Impl( NULL );
-			m_aClassID = m_pOleComponent->GetCLSID(); // was not set during consruction
+			m_aClassID = m_pOleComponent->GetCLSID(); // was not set during construction
 			m_pOleComponent->RunObject();
 			m_nObjectState = embed::EmbedStates::RUNNING;
 		}
@@ -1480,7 +1480,7 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 			try
 			{
 				CreateOleComponentAndLoad_Impl( NULL );
-				m_aClassID = m_pOleComponent->GetCLSID(); // was not set during consruction
+				m_aClassID = m_pOleComponent->GetCLSID(); // was not set during construction
 			}
 			catch( uno::Exception& )
 			{
@@ -1543,7 +1543,7 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 				m_pOleComponent->CreateLinkFromFile( aURL );
 
 			m_pOleComponent->RunObject();
-			m_aClassID = m_pOleComponent->GetCLSID(); // was not set during consruction
+			m_aClassID = m_pOleComponent->GetCLSID(); // was not set during construction
 
 			m_nObjectState = embed::EmbedStates::RUNNING;
 		}
@@ -1557,7 +1557,7 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 										3 );
 	}
 #else
-	// On unix the ole object can not do anything except storing itself somewere
+	// On unix the ole object can not do anything except storing itself somewhere
 	if ( nEntryConnectionMode == embed::EntryInitModes::DEFAULT_INIT && bElExists )
 	{
 		// TODO/LATER: detect classID of the object
@@ -1875,7 +1875,7 @@ void SAL_CALL OleEmbeddedObject::storeOwn()
 		if ( m_bIsLink )
 		{
 			// just let the link store itself
-			// in case visual repersentation must be stored also
+			// in case visual representation must be stored also
 			// the procedure should be the same as for embedded objects
 
 			uno::Reference< io::XOutputStream > xOutStream = GetStreamForSaving();
