@@ -124,7 +124,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     /**
      * The template-filename of the current template.
      * Since we often re-link section and the break the link,
-     * inorder to restore them, we need a template to link to.
+     * in order to restore them, we need a template to link to.
      * This is practically an identical copy of the current template.
      */
     String template;
@@ -146,7 +146,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
      */
     Topics topics;
     /**
-     *  Stores reusable OOo Placeholder TextFields to insert to the document.
+     *  Stores reusable AOO Placeholder TextFields to insert to the document.
      */
     Map itemsCache;
     /**
@@ -878,7 +878,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     /**
      * given a text range and a text, fills the given
      * text range with the given text.
-     * If the given text is empty, uses a placeholder with the giveb placeholder text.
+     * If the given text is empty, uses a placeholder with the given placeholder text.
      * @param range text range to fill
      * @param text the text to fill to the text range object.
      * @param placeholder the placeholder text to use, if the text argument is empty (null or PropertyNames.EMPTY_STRING)
