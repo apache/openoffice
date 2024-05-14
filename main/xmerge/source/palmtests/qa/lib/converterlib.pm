@@ -802,7 +802,7 @@ sub tap_applications
 # x           - x-location to enter string
 # y           - y-location to enter string
 # in_string   - string to enter
-# application - appliation (QUICKWORD or MINICALC)
+# application - application (QUICKWORD or MINICALC)
 #
 # Enters a string at the specified x,y position.
 #
