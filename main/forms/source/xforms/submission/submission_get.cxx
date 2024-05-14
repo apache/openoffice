@@ -53,7 +53,7 @@ CSubmissionGet::CSubmissionGet(const rtl::OUString& aURL, const CSS::uno::Refere
 
 CSubmission::SubmissionResult CSubmissionGet::submit(const CSS::uno::Reference< CSS::task::XInteractionHandler >& aInteractionHandler)
 {    
-    // GET always uses apllicatin/x-www-formurlencoded
+    // GET always uses application/x-www-formurlencoded
     auto_ptr< CSerialization > apSerialization(new CSerializationURLEncoded());
     apSerialization->setSource(m_aFragment);
     apSerialization->serialize();
@@ -67,7 +67,7 @@ CSubmission::SubmissionResult CSubmissionGet::submit(const CSS::uno::Reference< 
     else
         pHelper->m_aInteractionHandler = CSS::uno::Reference< XInteractionHandler >(m_aFactory->createInstance(
             OUString::createFromAscii("com.sun.star.task.InteractionHandler")), UNO_QUERY);
-    OSL_ENSURE(pHelper->m_aInteractionHandler.is(), "failed to create IntreractionHandler");
+    OSL_ENSURE(pHelper->m_aInteractionHandler.is(), "failed to create InteractionHandler");
     CProgressHandlerHelper *pProgressHelper = new CProgressHandlerHelper;
     pHelper->m_aProgressHandler = CSS::uno::Reference< XProgressHandler >(pProgressHelper);
 
@@ -104,7 +104,7 @@ CSubmission::SubmissionResult CSubmissionGet::submit(const CSS::uno::Reference< 
     } catch (Exception&)
     {
         // XXX
-        OSL_ENSURE(sal_False, "Exception during UCB operatration.");
+        OSL_ENSURE(sal_False, "Exception during UCB operation.");
         return UNKNOWN_ERROR;
     }
 

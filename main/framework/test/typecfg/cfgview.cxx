@@ -67,7 +67,7 @@
 #define RDBFILE                                     DECLARE_ASCII("typecfg.rdb" )
 #define ARGUMENT_DIRNAME                            DECLARE_ASCII("-dir="       )           // argument for output directory
 #define ARGUMENT_VERSION                            DECLARE_ASCII("-ver="       )           // argument for file version to read    [1|2|3]
-#define ARGUMENTLENGTH                              5                                       // same length for all arguemnts make it easier to detect it :-)
+#define ARGUMENTLENGTH                              5                                       // same length for all arguments make it easier to detect it :-)
 #define ARGUMENTFOUND                               0                                       // OUString::compareTo returns 0 if searched string match given one
 
 #define MENU_HTML                                   "menu.html"
