@@ -83,7 +83,7 @@ public:
 	sal_Bool Commit();
 	sal_Bool Revert();
 
-	void  OpenStream( StgIo&, sal_Bool=sal_False );		// set up an approbiate stream
+	void  OpenStream( StgIo&, sal_Bool=sal_False );		// set up an appropriate stream
 	void  Close();
 	sal_Int32 GetSize();
 	sal_Bool  SetSize( sal_Int32 );
