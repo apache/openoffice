@@ -443,7 +443,7 @@ void OleEmbeddedObject::InsertVisualCache_Impl( const uno::Reference< io::XStrea
 												const uno::Reference< io::XStream >& xCachedVisualRepresentation )
 		throw ( uno::Exception )
 {
-	OSL_ENSURE( xTargetStream.is() && xCachedVisualRepresentation.is(), "Invalid argumants!\n" );
+	OSL_ENSURE( xTargetStream.is() && xCachedVisualRepresentation.is(), "Invalid arguments!\n" );
 
 	if ( !xTargetStream.is() || !xCachedVisualRepresentation.is() )
 		throw uno::RuntimeException();
@@ -594,7 +594,7 @@ void OleEmbeddedObject::InsertVisualCache_Impl( const uno::Reference< io::XStrea
 void OleEmbeddedObject::RemoveVisualCache_Impl( const uno::Reference< io::XStream >& xTargetStream )
 		throw ( uno::Exception )
 {
-	OSL_ENSURE( xTargetStream.is(), "Invalid argumant!\n" );
+	OSL_ENSURE( xTargetStream.is(), "Invalid argument!\n" );
 	if ( !xTargetStream.is() )
 		throw uno::RuntimeException();
 
@@ -641,7 +641,7 @@ sal_Bool OleEmbeddedObject::HasVisReplInStream()
 			SetVisReplInStream( sal_True );
 		else
 		{
-			RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OleEmbeddedObject::HasVisualReplInStream, analizing" );
+			RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OleEmbeddedObject::HasVisualReplInStream, analyzing" );
 
 			uno::Reference< io::XInputStream > xStream;
 			
@@ -818,7 +818,7 @@ uno::Reference< io::XStream > OleEmbeddedObject::TryToRetrieveCachedVisualRepres
 									try
 									{
 										CreateOleComponentAndLoad_Impl( NULL );
-										m_aClassID = m_pOleComponent->GetCLSID(); // was not set during consruction
+										m_aClassID = m_pOleComponent->GetCLSID(); // was not set during construction
 									}
 									catch( uno::Exception& )
 									{
@@ -1385,7 +1385,7 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         xWrappedObject->setPersistentEntry( xStorage, sEntName, nEntryConnectionMode, lArguments, lObjArgs );
         return;
     }
@@ -1466,9 +1466,9 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 		if ( m_bFromClipboard )
 		{
 			// the object should be initialized from clipboard
-			// inpossibility to initialize the object means error here
+			// impossibility to initialize the object means error here
 			CreateOleComponentFromClipboard_Impl( NULL );
-			m_aClassID = m_pOleComponent->GetCLSID(); // was not set during consruction
+			m_aClassID = m_pOleComponent->GetCLSID(); // was not set during construction
 			m_pOleComponent->RunObject();
 			m_nObjectState = embed::EmbedStates::RUNNING;
 		}
@@ -1480,7 +1480,7 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 			try
 			{
 				CreateOleComponentAndLoad_Impl( NULL );
-				m_aClassID = m_pOleComponent->GetCLSID(); // was not set during consruction
+				m_aClassID = m_pOleComponent->GetCLSID(); // was not set during construction
 			}
 			catch( uno::Exception& )
 			{
@@ -1543,7 +1543,7 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 				m_pOleComponent->CreateLinkFromFile( aURL );
 
 			m_pOleComponent->RunObject();
-			m_aClassID = m_pOleComponent->GetCLSID(); // was not set during consruction
+			m_aClassID = m_pOleComponent->GetCLSID(); // was not set during construction
 
 			m_nObjectState = embed::EmbedStates::RUNNING;
 		}
@@ -1557,7 +1557,7 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 										3 );
 	}
 #else
-	// On unix the ole object can not do anything except storing itself somewere
+	// On unix the ole object can not do anything except storing itself somewhere
 	if ( nEntryConnectionMode == embed::EntryInitModes::DEFAULT_INIT && bElExists )
 	{
 		// TODO/LATER: detect classID of the object
@@ -1567,7 +1567,7 @@ void SAL_CALL OleEmbeddedObject::setPersistentEntry(
 	}
 	else if ( nEntryConnectionMode == embed::EntryInitModes::NO_INIT )
 	{
-		// do nothing, the object has already switched it's persistence
+		// do nothing, the object has already switched its persistence
 	}
 	else
 		throw lang::IllegalArgumentException( ::rtl::OUString::createFromAscii( "Wrong connection mode is provided!\n" ),
@@ -1594,7 +1594,7 @@ void SAL_CALL OleEmbeddedObject::storeToEntry( const uno::Reference< embed::XSto
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         xWrappedObject->storeToEntry( xStorage, sEntName, lArguments, lObjArgs );
         return;
     }
@@ -1628,7 +1628,7 @@ void SAL_CALL OleEmbeddedObject::storeAsEntry( const uno::Reference< embed::XSto
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         xWrappedObject->storeAsEntry( xStorage, sEntName, lArguments, lObjArgs );
         return;
     }
@@ -1657,7 +1657,7 @@ void SAL_CALL OleEmbeddedObject::saveCompleted( sal_Bool bUseNew )
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         xWrappedObject->saveCompleted( bUseNew );
         return;
     }
@@ -1755,7 +1755,7 @@ sal_Bool SAL_CALL OleEmbeddedObject::hasEntry()
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         return xWrappedObject->hasEntry();
     }
     // end wrapping related part ====================
@@ -1784,7 +1784,7 @@ sal_Bool SAL_CALL OleEmbeddedObject::hasEntry()
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         return xWrappedObject->getEntryName();
     }
     // end wrapping related part ====================
@@ -1822,7 +1822,7 @@ void SAL_CALL OleEmbeddedObject::storeOwn()
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         xWrappedObject->storeOwn();
         return;
     }
@@ -1875,7 +1875,7 @@ void SAL_CALL OleEmbeddedObject::storeOwn()
 		if ( m_bIsLink )
 		{
 			// just let the link store itself
-			// in case visual repersentation must be stored also
+			// in case visual representation must be stored also
 			// the procedure should be the same as for embedded objects
 
 			uno::Reference< io::XOutputStream > xOutStream = GetStreamForSaving();
@@ -1952,7 +1952,7 @@ sal_Bool SAL_CALL OleEmbeddedObject::isReadonly()
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         return xWrappedObject->isReadonly();
     }
     // end wrapping related part ====================
@@ -1990,7 +1990,7 @@ void SAL_CALL OleEmbeddedObject::reload(
     uno::Reference< embed::XEmbedPersist > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         xWrappedObject->reload( lArguments, lObjArgs );
         return;
     }
@@ -2033,7 +2033,7 @@ void SAL_CALL OleEmbeddedObject::breakLink( const uno::Reference< embed::XStorag
     uno::Reference< embed::XLinkageSupport > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         xWrappedObject->breakLink( xStorage, sEntName );
         return;
     }
@@ -2149,7 +2149,7 @@ sal_Bool SAL_CALL  OleEmbeddedObject::isLink()
     uno::Reference< embed::XLinkageSupport > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         return xWrappedObject->isLink();
     }
     // end wrapping related part ====================
@@ -2171,7 +2171,7 @@ sal_Bool SAL_CALL  OleEmbeddedObject::isLink()
     uno::Reference< embed::XLinkageSupport > xWrappedObject( m_xWrappedObject, uno::UNO_QUERY );
     if ( xWrappedObject.is() )
     {
-        // the object was converted to OOo embedded object, the current implementation is now only a wrapper
+        // the object was converted to AOO embedded object, the current implementation is now only a wrapper
         return xWrappedObject->getLinkURL();
     }
     // end wrapping related part ====================
