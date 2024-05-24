@@ -725,6 +725,7 @@ void StyleSettings::Set3DColors( const Color& rColor )
 		case STYLE_SYMBOLS_HICONTRAST: return ::rtl::OUString::createFromAscii( "hicontrast" );
 		case STYLE_SYMBOLS_INDUSTRIAL: return ::rtl::OUString::createFromAscii( "industrial" );
 		case STYLE_SYMBOLS_CLASSIC:    return ::rtl::OUString::createFromAscii( "classic" );
+		case STYLE_SYMBOLS_REMIXDARK:  return ::rtl::OUString::createFromAscii( "remixdark" );
 	}
 
 	return ::rtl::OUString::createFromAscii( "auto" );
@@ -742,6 +743,8 @@ sal_uLong StyleSettings::ImplNameToSymbolsStyle( const ::rtl::OUString &rName ) 
 		return STYLE_SYMBOLS_INDUSTRIAL;
 	else if ( rName == ::rtl::OUString::createFromAscii( "classic" ) )
 		return STYLE_SYMBOLS_CLASSIC;
+	else if ( rName == ::rtl::OUString::createFromAscii( "remixdark" ) )
+		return STYLE_SYMBOLS_REMIXDARK;
 
 	return STYLE_SYMBOLS_AUTO;
 }
@@ -820,7 +823,7 @@ sal_uLong StyleSettings::GetAutoSymbolsStyle() const
     {
     }
 
-    // falback to any existing style
+    // fallback to any existing style
     if ( ! CheckSymbolStyle (nRet) )
     {
         for ( sal_uLong n = 0 ; n <= STYLE_SYMBOLS_THEMES_MAX  ; n++ )
@@ -869,7 +872,7 @@ void StyleSettings::SetStandardStyles()
 Color StyleSettings::GetFaceGradientColor() const
 {
     // compute a brighter face color that can be used in gradients
-    // for a convex look (eg toolbars)
+    // for a convex look (e.g. toolbars)
 
     sal_uInt16 h, s, b;
     GetFaceColor().RGBtoHSB( h, s, b );
