@@ -52,11 +52,11 @@ import com.sun.star.wizards.ui.ImageList.Counter;
  * <BR/>
  * two buttons: "other" and "none" which are there
  * to enable choosing images that are not in the list and
- * "no image" respectivley, are optional, with default to true,
+ * "no image" respectively, are optional, with default to true,
  * so dialogs which do not need those, should set the corresponding
  * members showDeselectButton and/or showOtherButton to false.
  * <br/>
- * the consturctor should receive, among others, an Array of String resources - see 
+ * the constructor should receive, among others, an Array of String resources - see
  * constructor documentation for details.
  * 
  * @author rpiterman
@@ -260,7 +260,7 @@ public abstract class ImageListDialog extends UnoDialog2 implements UIConsts
         String template;
 
         /**
-         * @param aTempalte a template for this renderer.
+         * @param aTemplate a template for this renderer.
          * The strings %START, %END ,%TOTAL will be replaced
          * with the actual values.
          */

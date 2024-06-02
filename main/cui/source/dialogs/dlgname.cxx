@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cui.hxx"
@@ -40,9 +38,7 @@
 #define MAX_DESCRIPTION_LINES   ((long)5)
 
 /*************************************************************************
-|*
 |* Dialog zum Editieren eines Namens
-|*
 \************************************************************************/
 
 SvxNameDialog::SvxNameDialog( Window* pWindow, const String& rName, const String& rDesc ) :
@@ -57,23 +53,23 @@ SvxNameDialog::SvxNameDialog( Window* pWindow, const String& rName, const String
 
 	aFtDescription.SetText( rDesc );
 	aEdtName.SetText( rName );
-    aEdtName.SetSelection(Selection(SELECTION_MIN, SELECTION_MAX));
-    ModifyHdl(&aEdtName);
-    aEdtName.SetModifyHdl(LINK(this, SvxNameDialog, ModifyHdl));
+	aEdtName.SetSelection(Selection(SELECTION_MIN, SELECTION_MAX));
+	ModifyHdl(&aEdtName);
+	aEdtName.SetModifyHdl(LINK(this, SvxNameDialog, ModifyHdl));
 
-    // dynamic height of the description field
-    Size aSize = aFtDescription.GetSizePixel();
-    long nTxtWidth = aFtDescription.GetCtrlTextWidth( rDesc );
-    if ( nTxtWidth > aSize.Width() )
-    {
-        long nLines = Min( ( nTxtWidth / aSize.Width() + 1 ), MAX_DESCRIPTION_LINES );
-        long nHeight = aSize.Height();
-        aSize.Height() = nHeight * nLines;
-        aFtDescription.SetSizePixel( aSize );
-        Point aPnt = aEdtName.GetPosPixel();
-        aPnt.Y() += ( aSize.Height() - nHeight );
-        aEdtName.SetPosPixel( aPnt );
-    }
+	// dynamic height of the description field
+	Size aSize = aFtDescription.GetSizePixel();
+	long nTxtWidth = aFtDescription.GetCtrlTextWidth( rDesc );
+	if ( nTxtWidth > aSize.Width() )
+	{
+		long nLines = Min( ( nTxtWidth / aSize.Width() + 1 ), MAX_DESCRIPTION_LINES );
+		long nHeight = aSize.Height();
+		aSize.Height() = nHeight * nLines;
+		aFtDescription.SetSizePixel( aSize );
+		Point aPnt = aEdtName.GetPosPixel();
+		aPnt.Y() += ( aSize.Height() - nHeight );
+		aEdtName.SetPosPixel( aPnt );
+	}
 }
 
 /* -----------------------------27.02.2002 15:22------------------------------
@@ -81,18 +77,17 @@ SvxNameDialog::SvxNameDialog( Window* pWindow, const String& rName, const String
  ---------------------------------------------------------------------------*/
 IMPL_LINK(SvxNameDialog, ModifyHdl, Edit*, EMPTYARG)
 {
-    if(aCheckNameHdl.IsSet())
-        aBtnOK.Enable(aCheckNameHdl.Call(this) > 0);
-    return 0;
+	if(aCheckNameHdl.IsSet())
+		aBtnOK.Enable(aCheckNameHdl.Call(this) > 0);
+	return 0;
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////
 // #i68101#
 // Dialog for editing Object Name
 // plus uniqueness-callback-linkHandler
 
-SvxObjectNameDialog::SvxObjectNameDialog( 
-	Window* pWindow, 
+SvxObjectNameDialog::SvxObjectNameDialog(
+	Window* pWindow,
 	const String& rName)
 :	ModalDialog(pWindow, CUI_RES(RID_SVXDLG_OBJECT_NAME)),
 	aFtName(this, CUI_RES(NTD_FT_NAME)),
@@ -108,28 +103,27 @@ SvxObjectNameDialog::SvxObjectNameDialog(
 	aEdtName.SetText(rName);
 
 	// activate name
-    aEdtName.SetSelection(Selection(SELECTION_MIN, SELECTION_MAX));
-    ModifyHdl(&aEdtName);
-    aEdtName.SetModifyHdl(LINK(this, SvxObjectNameDialog, ModifyHdl));
+	aEdtName.SetSelection(Selection(SELECTION_MIN, SELECTION_MAX));
+	ModifyHdl(&aEdtName);
+	aEdtName.SetModifyHdl(LINK(this, SvxObjectNameDialog, ModifyHdl));
 }
 
 IMPL_LINK(SvxObjectNameDialog, ModifyHdl, Edit*, EMPTYARG)
 {
-    if(aCheckNameHdl.IsSet())
+	if(aCheckNameHdl.IsSet())
 	{
-        aBtnOK.Enable(aCheckNameHdl.Call(this) > 0);
+		aBtnOK.Enable(aCheckNameHdl.Call(this) > 0);
 	}
 
-    return 0;
+	return 0;
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////
 // #i68101#
 // Dialog for editing Object Title and Description
 
-SvxObjectTitleDescDialog::SvxObjectTitleDescDialog( 
-	Window* pWindow, 
-	const String& rTitle, 
+SvxObjectTitleDescDialog::SvxObjectTitleDescDialog(
+	Window* pWindow,
+	const String& rTitle,
 	const String& rDescription)
 :	ModalDialog(pWindow, CUI_RES(RID_SVXDLG_OBJECT_TITLE_DESC)),
 	aFtTitle(this, CUI_RES(NTD_FT_TITLE)),
@@ -148,15 +142,11 @@ SvxObjectTitleDescDialog::SvxObjectTitleDescDialog(
 	aEdtDescription.SetText(rDescription);
 
 	// activate title
-    aEdtTitle.SetSelection(Selection(SELECTION_MIN, SELECTION_MAX));
+	aEdtTitle.SetSelection(Selection(SELECTION_MIN, SELECTION_MAX));
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////
-
 /*************************************************************************
-|*
-|* Dialog zum Abbrechen, Speichern oder Hinzufuegen
-|*
+|* Dialog zum Abbrechen, Speichern oder Hinzufügen
 \************************************************************************/
 
 SvxMessDialog::SvxMessDialog( Window* pWindow, const String& rText, const String& rDesc, Image* pImg ) :
@@ -175,7 +165,7 @@ SvxMessDialog::SvxMessDialog( Window* pWindow, const String& rText, const String
 		aFtImage.SetImage( *pImage );
 		aFtImage.SetStyle( ( aFtImage.GetStyle()/* | WB_NOTABSTOP */) & ~WB_3DLOOK );
 		aFtImage.SetPosSizePixel( LogicToPixel( Point( 3, 6 ), MAP_APPFONT ),
-			                      aFtImage.GetImage().GetSizePixel() );
+								  aFtImage.GetImage().GetSizePixel() );
 		aFtImage.Show();
 	}
 
@@ -225,8 +215,8 @@ void SvxMessDialog::SetButtonText( sal_uInt16 nBtnId, const String& rNewTxt )
 			break;
 
 		default:
-			DBG_ERROR( "Falsche Button-Nummer!!!" );
+			DBG_ERROR( "Wrong button number!" );
 	}
 }
 
-
+/* vim: set noet sw=4 ts=4: */
