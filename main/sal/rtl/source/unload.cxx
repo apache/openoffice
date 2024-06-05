@@ -250,7 +250,7 @@ extern "C" void SAL_CALL rtl_unloadUnusedModules( TimeValue* libUnused)
 	// notify all listeners
 	rtl_notifyUnloadingListeners();
 
-	// prepare default TimeValue if argumetn is NULL
+	// prepare default TimeValue if argument is NULL
 	TimeValue nullTime={0,0};
 	TimeValue* pLibUnused= libUnused? libUnused : &nullTime;
 
