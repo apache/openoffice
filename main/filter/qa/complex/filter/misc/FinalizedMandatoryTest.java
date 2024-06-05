@@ -52,7 +52,7 @@ import static org.junit.Assert.*;
  * the services <CODE>com.sun.star.document.FilterFactory</CODE> and
  * <CODE>com.sun.star.document.TypeDetection</CODE>.
  *
- * Each of theses services represent a container of <CODE>PropertyValue[]</CODE>.
+ * Each of these services represent a container of <CODE>PropertyValue[]</CODE>.
  * The <CODE>PropertyValue[]</CODE> contains among others the properties called 
  * <CODE>Finalized</CODE> and <CODE>Mandatory</CODE>. If the property
  * <CODE>Finalized</CODE> is set to <CODE>true</CODE>, a filter can be removed
@@ -67,9 +67,9 @@ import static org.junit.Assert.*;
  * will be changed and the service will be flushed. The test checks for expected exceptions: 
  * If the property <CODE>Finalized</CODE> equals
  * <CODE>true</CODE> the tests check if an <CODE>Exception</CODE> must be thrown.
- * The next step of the test is the removal of the filter was removed, than the service 
+ * The next step of the test is the removal of the filter was removed, then the service
  * will be flushed. The test checks for expected exceptions: If the property
- * <CODE>Madantory</CODE> equals <CODE>true</CODE>, an <CODE>Exception</CODE> must
+ * <CODE>Mandatory</CODE> equals <CODE>true</CODE>, an <CODE>Exception</CODE> must
  * be thrown.
  * This test results <CODE>false</CODE> state if there is no filter available with:
  * <CODE>Finalized=true</CODE>
@@ -107,7 +107,7 @@ public class FinalizedMandatoryTest
     /**
      * Creates an instance for the given <CODE>serviceName</CODE>
      * @param serviceName the name of the service which should be created
-     * @throws Exception was thrown if creataion failes
+     * @throws Exception was thrown if creation fails
      * @return <CODE>XInterface</CODE> of service
      */
     private XInterface getTestObject(String serviceName) throws Exception
@@ -115,7 +115,7 @@ public class FinalizedMandatoryTest
 
         Object oInterface = xMSF.createInstance(serviceName);
 
-        assertNotNull("Service wan't created", oInterface);
+        assertNotNull("Service wasn't created", oInterface);
 //        if (oInterface == null) {
 //            failed("Service wasn't created") ;
 //            throw new Exception("could not create service '"+serviceName+"'");
@@ -143,7 +143,7 @@ public class FinalizedMandatoryTest
 
     /**
      * test the given service <CODE>serviceName</CODE>.
-     * For every filter a new instace was created and the tests started.
+     * For every filter a new instance was created and the tests started.
      * @param serviceName the name of the service to test
      */
     private void checkReadonlySupport(String serviceName)
@@ -232,8 +232,8 @@ public class FinalizedMandatoryTest
                     fail("could not replace filter properties ('" + filterName + "')");
                 }
 
-                // 1b.) try to wirte the changed filter to the configuration.
-                // This must result in a exception if the filter is finalized.
+                // 1b.) try to write the changed filter to the configuration.
+                // This must result in an exception if the filter is finalized.
                 boolean flushError = false;
                 try
                 {
@@ -242,9 +242,9 @@ public class FinalizedMandatoryTest
                 catch (WrappedTargetRuntimeException e)
                 {
                     flushError = true;
-                    assertTrue("Unexpected exception wihle flushing changed filter '" + filterName + "'", isFinalized);
+                    assertTrue("Unexpected exception while flushing changed filter '" + filterName + "'", isFinalized);
                 }
-                assertTrue("Expected exception was not thorwn while flushing changed filter '" + filterName + "' Finalized:" + isFinalized,
+                assertTrue("Expected exception was not thrown while flushing changed filter '" + filterName + "' Finalized:" + isFinalized,
                         !(flushError ^ isFinalized));
 
 
@@ -258,8 +258,8 @@ public class FinalizedMandatoryTest
                 {
                     fail("could not remove filter from container ('" + filterName + "')");
                 }
-                // 1b.) try to wirte the changed filter to the configuration.
-                // This must result in a exception if the filter is mandatory
+                // 1b.) try to write the changed filter to the configuration.
+                // This must result in an exception if the filter is mandatory
                 flushError = false;
                 try
                 {
@@ -268,9 +268,9 @@ public class FinalizedMandatoryTest
                 catch (WrappedTargetRuntimeException e)
                 {
                     flushError = true;
-                    assertTrue("Unexpected exception wihle flushing removed filter '" + filterName + "'", isMandatory);
+                    assertTrue("Unexpected exception while flushing removed filter '" + filterName + "'", isMandatory);
                 }
-                assertTrue("Expected exception was not thorwn while flushing removed filter '" + filterName + "' Mandatory:" + isMandatory,
+                assertTrue("Expected exception was not thrown while flushing removed filter '" + filterName + "' Mandatory:" + isMandatory,
                         !(flushError ^ isMandatory));
 
             }
@@ -292,10 +292,10 @@ public class FinalizedMandatoryTest
     }
 
     /**
-     * print all propeties with its values to <CODE>logger</CODE>. For debug purposes.
+     * print all properties with its values to <CODE>logger</CODE>. For debug purposes.
      * @see stats.SimpleLogWriter
      * @see com.sun.star.beans.PropertyValue
-     * @param props Sequenze of PropertyValue
+     * @param props Sequence of PropertyValue
      */
     protected void printPropertyValues(PropertyValue[] props)
     {
@@ -312,9 +312,9 @@ public class FinalizedMandatoryTest
     }
 
     /**
-     * returns the value of the specified (<CODE>pName</CODE>) property from a sequenze of <CODE>PropertyValue</CODE>
-     * @param props a sequenze of <CODE>PropertyVlaue</CODE>
-     * @param pName the name of the property the value shoud be returned
+     * returns the value of the specified (<CODE>pName</CODE>) property from a sequence of <CODE>PropertyValue</CODE>
+     * @param props a sequence of <CODE>PropertyValue</CODE>
+     * @param pName the name of the property the value should be returned
      * @return the value of the property
      */
     protected Object getPropertyValueValue(PropertyValue[] props, String pName)
@@ -328,8 +328,8 @@ public class FinalizedMandatoryTest
     }
 
     /**
-     * set a value of the specified (<CODE>pName</CODE>) property inside a sequenze of <CODE>PropertyValue</CODE>
-     * @param props sequenze of <CODE>PropertyValue</CODE>
+     * set a value of the specified (<CODE>pName</CODE>) property inside a sequence of <CODE>PropertyValue</CODE>
+     * @param props sequence of <CODE>PropertyValue</CODE>
      * @param pName name of the property which should be changed
      * @param pValue the value the property should be assigned
      */
