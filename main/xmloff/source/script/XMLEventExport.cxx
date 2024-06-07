@@ -182,7 +182,7 @@ void XMLEventExport::ExportExt( Reference<XNameAccess> & rAccess,
     bExtNamespace = false;          // reset for future Export calls
 }
 
-/// export a singular event and wirte <office:events> container
+/// export a singular event and write <office:events> container
 void XMLEventExport::ExportSingleEvent(
     Sequence<PropertyValue>& rEventValues,
     const OUString& rApiEventName,
@@ -239,7 +239,7 @@ void XMLEventExport::ExportEvent(
             {
                 if (! rExported)
                 {
-                    // OK, we have't yet exported the enclosing
+                    // OK, we haven't yet exported the enclosing
                     // element. So we do that now.
                     rExported = sal_True;
                     StartElement(bUseWhitespace);
