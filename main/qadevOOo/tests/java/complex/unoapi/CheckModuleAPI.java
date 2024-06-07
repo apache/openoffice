@@ -76,7 +76,7 @@ public class CheckModuleAPI extends ComplexTestCase
      * This method checks for all necessary parameter and exit if not all parameter are set.
      *
      * Further this method starts an office instance and gets the office some more time to start. This is because
-     * some freshly installed offices don not have such a user tree. The office will create it on its first start,
+     * some freshly installed offices do not have such a user tree. The office will create it on its first start,
      * but this will take some time.
      * Note: This functionality is only reasonable with parameter <CODE>-noOffice true</CODE>
      */
@@ -120,7 +120,7 @@ public class CheckModuleAPI extends ComplexTestCase
 
         log.println(utils.getDateTime() + "Receiving the ServiceManager of the Office ");
         final XMultiServiceFactory msf = (XMultiServiceFactory) officeProvider.getManager(param);
-        assure("couldnot get ServiceFarcotry", msf != null, mContinue);
+        assure("could not get ServiceFactory", msf != null, mContinue);
         param.put("ServiceFactory", msf);
 
         final String sep = System.getProperty("file.separator");
@@ -474,7 +474,7 @@ public class CheckModuleAPI extends ComplexTestCase
             final String line = outs[i];
             if (line.matches("[0-9]+? of [0-9]+? tests failed"))
             {
-                log.println("mached line: " + line);
+                log.println("matched line: " + line);
                 if (line.matches("0 of [0-9]+? tests failed"))
                 {
                     ok = true;
@@ -499,7 +499,7 @@ public class CheckModuleAPI extends ComplexTestCase
     {
         log.println("**** run module tests over all modules ****");
 
-        log.println("search for qa/unoapi foldres in all modules based in ");
+        log.println("search for qa/unoapi folders in all modules based in ");
         log.println("'" + mSRC_ROOT + "'");
 
         final ArrayList moduleNames = new ArrayList();
@@ -604,7 +604,7 @@ public class CheckModuleAPI extends ComplexTestCase
                 }
                 catch (ParameterNotFoundException ex)
                 {
-                    log.println("ERROR: could not wirte status to EIS database: " + ex.toString());
+                    log.println("ERROR: could not write status to EIS database: " + ex.toString());
                 }
             }
         }
