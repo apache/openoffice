@@ -217,24 +217,24 @@ double ImpSvNumberInputScan::StringToDouble( const String& rStr, sal_Bool bForce
 //---------------------------------------------------------------------------
 //       NextNumberStringSymbol
 //
-// Zerlegt die Eingabe in Zahlen und Strings fuer die weitere
-// Verarbeitung (Turing-Maschine).
+// Splits the input into numbers and strings for further processing
+// (Turing-Machine).
 //---------------------------------------------------------------------------
-// Ausgangs Zustand = GetChar
-//---------------+-------------------+-----------------------+---------------
-// Alter Zustand | gelesenes Zeichen | Aktion                | Neuer Zustand
-//---------------+-------------------+-----------------------+---------------
-// GetChar       | Ziffer            | Symbol=Zeichen        | GetValue
-//               | Sonst             | Symbol=Zeichen        | GetString
-//---------------|-------------------+-----------------------+---------------
-// GetValue      | Ziffer            | Symbol=Symbol+Zeichen | GetValue
-//               | Sonst             | Dec(CharPos)          | Stop
-//---------------+-------------------+-----------------------+---------------
-// GetString     | Ziffer            | Dec(CharPos)          | Stop
-//               | Sonst             | Symbol=Symbol+Zeichen | GetString
-//---------------+-------------------+-----------------------+---------------
+// Initial State = GetChar
+//---------------+-------------------+-------------------------+-------------
+// Former State  | Read Character    | Action                  | New State
+//---------------+-------------------+-------------------------+-------------
+// GetChar       | Digit             | Symbol=Character        | GetValue
+//               | Else              | Symbol=Character        | GetString
+//---------------|-------------------+-------------------------+-------------
+// GetValue      | Digit             | Symbol=Symbol+Character | GetValue
+//               | Else              | Dec(CharPos)            | Stop
+//---------------+-------------------+-------------------------+-------------
+// GetString     | Digit             | Dec(CharPos)            | Stop
+//               | Else              | Symbol=Symbol+Character | GetString
+//---------------+-------------------+-------------------------+-------------
 
-enum ScanState              // States der Turing-Maschine
+enum ScanState              // States of the Turing-Maschine
 {
     SsStop      = 0,
     SsStart     = 1,
@@ -637,9 +637,9 @@ int ImpSvNumberInputScan::GetDayOfWeek( const String& rString, xub_StrLen& nPos 
 //---------------------------------------------------------------------------
 //      GetCurrency
 //
-// Lesen eines Waehrungssysmbols
+// Reading a currency symbol
 // '$'   => sal_True
-// sonst => sal_False
+// else  => sal_False
 
 sal_Bool ImpSvNumberInputScan::GetCurrency( const String& rString, xub_StrLen& nPos,
             const SvNumberformat* pFormat )
@@ -1458,9 +1458,9 @@ input for the following reasons:
 //---------------------------------------------------------------------------
 //      ScanStartString
 //
-// ersten String analysieren
-// Alles weg => sal_True
-// sonst     => sal_False
+// Analyze the beginning of the string
+// Everything gone => sal_True
+// else            => sal_False
 
 sal_Bool ImpSvNumberInputScan::ScanStartString( const String& rString,
         const SvNumberformat* pFormat )
@@ -1561,9 +1561,9 @@ sal_Bool ImpSvNumberInputScan::ScanStartString( const String& rString,
 //---------------------------------------------------------------------------
 //      ScanMidString
 //
-// String in der Mitte analysieren
-// Alles weg => sal_True
-// sonst     => sal_False
+// Analyze the middle of the string
+// Everything gone => sal_True
+// else            => sal_False
 
 sal_Bool ImpSvNumberInputScan::ScanMidString( const String& rString,
         sal_uInt16 nStringPos, const SvNumberformat* pFormat )
@@ -1806,9 +1806,9 @@ sal_Bool ImpSvNumberInputScan::ScanMidString( const String& rString,
 //---------------------------------------------------------------------------
 //      ScanEndString
 //
-// Schlussteil analysieren
-// Alles weg => sal_True
-// sonst     => sal_False
+// Analyze the conclusion
+// Everything gone => sal_True
+// else            => sal_False
 
 sal_Bool ImpSvNumberInputScan::ScanEndString( const String& rString,
         const SvNumberformat* pFormat )
