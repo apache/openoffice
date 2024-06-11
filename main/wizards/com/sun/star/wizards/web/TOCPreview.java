@@ -89,7 +89,7 @@ public class TOCPreview
 
     /**
      * generates a TOC, copies the layout-specific files, and
-     * calles a browser to show "index.html".
+     * calls a browser to show "index.html".
      * @param settings
      * @throws Exception
      */
