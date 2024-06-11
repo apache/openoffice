@@ -151,7 +151,7 @@ inline sal_Bool ifFileExist( const ::rtl::OUString & str )
 	}
 }
 
-/** detete a temp test file using OUString name.
+/** delete a temp test file using OUString name.
 */
 inline void deleteTestFile( const ::rtl::OUString filename )
 {
