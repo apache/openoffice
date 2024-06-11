@@ -139,7 +139,7 @@ namespace comphelper
 			return xValue;
 		}
 
-		// do we have this child in the cahce?
+		// do we have this child in the cache?
 		AccessibleMap::const_iterator aPos = m_aChildrenMap.find( _rxKey );
 		if ( m_aChildrenMap.end() != aPos )
 		{
@@ -277,7 +277,7 @@ namespace comphelper
         {
        		OSL_ENSURE( sal_False,
 	    		"OWrappedAccessibleChildrenManager::disposing: where did this come from?" );
-            // helper for dignostics
+            // helper for diagnostics
             Reference< XAccessible > xOwningAccessible( m_aOwningAccessible );
             Reference< XAccessibleContext > xContext;
             try
