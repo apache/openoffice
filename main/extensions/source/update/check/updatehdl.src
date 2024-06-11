@@ -33,7 +33,7 @@ String RID_UPDATE_STR_CHECKING_ERR
 
 String RID_UPDATE_STR_NO_UPD_FOUND
 {
-	Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION is up to date." ;
+	Text [ en-US ] = "There is currently no update available for %PRODUCTNAME %PRODUCTVERSION or a newer version wasn't released to the wider public yet." ;
 };
 
 String RID_UPDATE_STR_UPD_FOUND
@@ -48,7 +48,7 @@ String RID_UPDATE_STR_DLG_TITLE
 
 String RID_UPDATE_STR_DOWNLOAD_PAUSE
 {
-	Text [ en-US ] = "Downloading %PRODUCTNAME %NEXTVERSION paused at..." ;
+	Text [ en-US ] = "Downloading %PRODUCTNAME %NEXTVERSION paused at" ;
 };
 
 String RID_UPDATE_STR_DOWNLOAD_ERR
@@ -58,7 +58,7 @@ String RID_UPDATE_STR_DOWNLOAD_ERR
 
 String RID_UPDATE_STR_DOWNLOAD_WARN
 {
-	Text [ en-US ] = "The download location is: %DOWNLOAD_PATH.\n\nUnder 'Tools - Options... - %PRODUCTNAME - Online Update' you can change the download location." ;
+	Text [ en-US ] = "The download location is: %DOWNLOAD_PATH.\n\nUnder 'Tools - Options - %PRODUCTNAME - Online Update' you can change the download location." ;
 };
 
 String RID_UPDATE_STR_DOWNLOAD_DESCR
@@ -68,7 +68,7 @@ String RID_UPDATE_STR_DOWNLOAD_DESCR
 
 String RID_UPDATE_STR_DOWNLOAD_UNAVAIL
 {
-	Text [ en-US ] = "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site." ;
+	Text [ en-US ] = "The automatic download of the update is currently not available.\n\nClick 'Download' to download %PRODUCTNAME %NEXTVERSION manually from the web site." ;
 };
 
 String RID_UPDATE_STR_DOWNLOADING
