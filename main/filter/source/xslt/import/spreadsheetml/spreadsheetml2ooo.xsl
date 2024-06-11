@@ -496,7 +496,7 @@
 			<!-- applying to ss:Data (but *, as also ss:Data nested in ss:Comments -->
 			<xsl:apply-templates select="/ss:Workbook/ss:Worksheet/ss:Table/ss:Row/ss:Cell/*[descendant-or-self::*[namespace-uri()='http://www.w3.org/TR/REC-html40']]"/>
 			<xsl:apply-templates select="/ss:Workbook/ss:Worksheet/x:WorksheetOptions/x:PageSetup//@x:Data"/>
-			<!-- if ConditionalFormatting exists,transforing the styles -->
+			<!-- if ConditionalFormatting exists, transforming the styles -->
 			<xsl:if test="/ss:Workbook/ss:Worksheet/x:ConditionalFormatting">
 				<xsl:call-template name="CondFormat_automatic_style"/>
 			</xsl:if>
@@ -1136,7 +1136,7 @@
 							</xsl:choose>
 						</xsl:element>
 					</xsl:if>
-					<!-- the type of condition-pos:1,the former third part of General; 2, the last General. the methods handling diffirent -->
+					<!-- the type of condition-pos:1,the former third part of General; 2, the last General. the methods handling different -->
 					<xsl:call-template name="create-number-format-content">
 						<xsl:with-param name="style-type-name" select="$style-type-name"/>
 						<xsl:with-param name="number-format-unit" select="$current-number-format-unit"/>
@@ -1155,7 +1155,7 @@
 							</xsl:choose>
 						</xsl:with-param>
 					</xsl:call-template>
-					<!-- creat style:map for other sub number formats -->
+					<!-- create style:map for other sub number formats -->
 					<xsl:if test="$current-unit = 0 and $total-unit &gt; 1">
 						<xsl:variable name="style-condition1">
 							<xsl:call-template name="get-number-format-condition">
@@ -2712,7 +2712,7 @@
 							<xsl:with-param name="condition-pos" select="$condition-pos"/>
 							<xsl:with-param name="isNumberTextElementOpened" select="$isNumberTextElementOpened"/>
 							<xsl:with-param name="posed-number-format-unit" select="substring($number-format-unit,$unit-pos + 2)"/>
-							<!-- place '*' temparily here, because now StarCalc doesn't support variable filling character definition -->
+							<!-- place '*' temporarily here, because now StarCalc doesn't support variable filling character definition -->
 							<xsl:with-param name="numberTextValue" select="substring($posed-number-format-unit,2,1)"/>
 							<xsl:with-param name="finished" select="$finished"/>
 						</xsl:call-template>
@@ -5988,7 +5988,7 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:if test="@ss:Index - $expandedRowCountIndex &gt; 0">
-			<!-- create the precding missing rows -->
+			<!-- create the preceding missing rows -->
 			<xsl:element name="table:table-row">
 				<!-- fill the preceding gap with rows without a cell -->
 				<xsl:attribute name="table:number-rows-repeated">
