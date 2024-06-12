@@ -56,7 +56,7 @@ namespace dbaui
 		/** gets the child window.
 			
 			@return
-				The child winodw.
+				The child window.
 		*/
 		inline Window* getChildWindow() const { return m_pChild; }
 
