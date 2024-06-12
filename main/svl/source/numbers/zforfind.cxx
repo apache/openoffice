@@ -1502,6 +1502,11 @@ sal_Bool ImpSvNumberInputScan::ScanStartString( const String& rString,
             if ( nSign )   // DM -1
                 SkipBlanks(rString, nPos);
         }
+        if ( GetDecSep(rString, nPos) )
+        {
+            nDecPos = 1;
+            SkipBlanks(rString, nPos);
+        }
     }
     else
     {
