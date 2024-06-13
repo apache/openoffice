@@ -39,6 +39,8 @@ inline sal_Int32 getNamespace( sal_Int32 nToken ) { return nToken & NMSP_MASK; }
 #define C_TOKEN( token )        OOX_TOKEN( dmlChart, token )
 #define CDR_TOKEN( token )      OOX_TOKEN( dmlChartDr, token )
 #define DGM_TOKEN( token )      OOX_TOKEN( dmlDiagram, token )
+#define ENCRYPTION_TOKEN( token) OOX_TOKEN( encryption, token )
+#define KEY_ENCRYPTOR_PASSWORD_TOKEN( token ) OOX_TOKEN( keyEncryptorPassword, token )
 #define O_TOKEN( token )        OOX_TOKEN( vmlOffice, token )
 #define PC_TOKEN( token )       OOX_TOKEN( packageContentTypes, token )
 #define PPT_TOKEN( token )      OOX_TOKEN( ppt, token )

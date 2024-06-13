@@ -30,6 +30,7 @@
 #include <com/sun/star/xml/sax/XFastDocumentHandler.hpp>
 #include <cppuhelper/implbase1.hxx>
 #include <cppuhelper/implbase2.hxx>
+#include <comphelper/logging.hxx>
 #include "oox/dllapi.h"
 
 namespace com { namespace sun { namespace star {
@@ -153,6 +154,7 @@ public:
 
 private:
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;
+    ::comphelper::EventLogger logger;
 };
 
 // ============================================================================

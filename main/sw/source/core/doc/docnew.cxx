@@ -315,7 +315,7 @@ SwDoc::SwDoc()
     // It is also hard to find all places where the initial ItemSets for Writer (including
     // style hierarchies) are created and to always set (but only at the root) the FillStyle
     // to NONE fixed; that will add that attribute to the file format. It will be hard to reset
-    // attribbute sets (which is done at import and using UI). Also not a good solution.
+    // attribute sets (which is done at import and using UI). Also not a good solution.
     // Luckily Writer uses pDfltTxtFmtColl as default parent for all paragraphs and similar, thus
     // it is possible to set this attribute here. It will be not reset when importing.
     pDfltTxtFmtColl->SetFmtAttr(XFillStyleItem(XFILL_NONE));

@@ -151,7 +151,7 @@ class SecurityEnvironment_MSCryptImpl : public ::cppu::WeakImplHelper4<
 		static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId() ;
 		static SecurityEnvironment_MSCryptImpl* getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > xObj ) ;
 
-		//Native mehtods
+		//Native methods
 		virtual HCRYPTPROV getCryptoProvider() throw( ::com::sun::star::uno::Exception , ::com::sun::star::uno::RuntimeException ) ;
 
 		virtual void setCryptoProvider( HCRYPTPROV aProv ) throw( ::com::sun::star::uno::Exception , ::com::sun::star::uno::RuntimeException ) ;
@@ -190,7 +190,7 @@ class SecurityEnvironment_MSCryptImpl : public ::cppu::WeakImplHelper4<
 
 		virtual sal_Bool defaultEnabled() throw( ::com::sun::star::uno::Exception , ::com::sun::star::uno::RuntimeException ) ;
 
-		//Native mehtods
+		//Native methods
 		virtual xmlSecKeysMngrPtr createKeysManager() throw( ::com::sun::star::uno::Exception , ::com::sun::star::uno::RuntimeException ) ;
 
 		virtual void destroyKeysManager(xmlSecKeysMngrPtr pKeysMngr) throw( ::com::sun::star::uno::Exception , ::com::sun::star::uno::RuntimeException ) ;

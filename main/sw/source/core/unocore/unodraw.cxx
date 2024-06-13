@@ -1077,12 +1077,12 @@ uno::Sequence< sal_Int8 > SwXShape::getImplementationId(  ) throw(uno::RuntimeEx
         if( xAggShape.is() )
 		{
             const rtl::OUString aShapeType( xAggShape->getShapeType() );
-            // did we already compute an implementation id for the agregated shape type?
+            // did we already compute an implementation id for the aggregated shape type?
             SwShapeImplementationIdMap::iterator aIter( aImplementationIdMap.find(aShapeType ) );
 			if( aIter == aImplementationIdMap.end() )
 			{
 				// we need to create a new implementation id for this
-				// note: this memory is not free'd until application exists
+				// note: this memory is not freed until application exists
 				//		 but since we have a fixed set of shapetypes and the
 				//		 memory will be reused this is ok.
                 pImplementationId = new uno::Sequence< sal_Int8 >( 16 );

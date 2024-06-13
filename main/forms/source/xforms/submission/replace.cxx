@@ -127,7 +127,7 @@ CSubmission::SubmissionResult CSubmission::replace(const ::rtl::OUString& aRepla
     else
         pHelper->m_aInteractionHandler = CSS::uno::Reference< XInteractionHandler >(m_aFactory->createInstance(
         ::rtl::OUString::createFromAscii("com.sun.star.task.InteractionHandler")), UNO_QUERY);
-    OSL_ENSURE(pHelper->m_aInteractionHandler.is(), "failed to create IntreractionHandler");
+    OSL_ENSURE(pHelper->m_aInteractionHandler.is(), "failed to create InteractionHandler");
 
     CProgressHandlerHelper *pProgressHelper = new CProgressHandlerHelper;
     pHelper->m_aProgressHandler = Reference< XProgressHandler >(pProgressHelper);

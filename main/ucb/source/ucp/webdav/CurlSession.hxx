@@ -37,6 +37,10 @@
 #include "CurlUri.hxx"
 #include "CurlInputStream.hxx"
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
+#include <com/sun/star/security/CertificateContainer.hpp>
+#include <com/sun/star/security/XCertificateContainer.hpp>
+#include <com/sun/star/xml/crypto/XSecurityEnvironment.hpp>
+#include <com/sun/star/xml/crypto/XXMLSecurityContext.hpp>
 #include <curl/curl.h>
 #include <openssl/ssl.h>
 
@@ -75,6 +79,10 @@ private:
 
     static CurlLockStore m_aCurlLockStore;
 
+    ::com::sun::star::uno::Reference< ::com::sun::star::security::XCertificateContainer > m_xCertificateContainer;
+    ::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XXMLSecurityContext > m_xSecurityContext;
+    ::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XSecurityEnvironment > m_xSecurityEnv;
+
     bool isSSLNeeded();
 
 
@@ -89,10 +97,8 @@ private:
     static CURLcode         Curl_SSLContextCallback( CURL *curl,
                                                      void *ssl_ctx,
                                                      void *userptr );
-    static int              OPENSSL_ValidateServerCertificate( int preverify_ok,
-                                                               X509_STORE_CTX *x509_ctx );
-    int                     validateServerX509Certificate( X509_STORE_CTX *x509StoreContext,
-                                                           int preverifyOk );
+    static int              OPENSSL_VerifyCertificate( X509_STORE_CTX *x509_ctx, void *arg );
+    int                     verifyServerX509Certificate( X509_STORE_CTX *x509StoreContext );
     int                     verifyCertificateChain (
                                 std::vector< uno::Sequence< sal_Int8 > > &asn1DerCertificates );
 

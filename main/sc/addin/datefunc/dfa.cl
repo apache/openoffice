@@ -51,9 +51,9 @@ void CALLTYPE SetLanguage( USHORT* nLanguage )
  * Null Date, initialized in GetFunctionCount
  *
  * StarCalc uses a BaseDate 12/30/1899
- * If not specified otherwise in the Settings for the Spreedsheet Document.
+ * If not specified otherwise in the Settings for the Spreadsheet Document.
  *
- * There's no way to get the Spreadsheet settings from whithin a simple addin,
+ * There's no way to get the Spreadsheet settings from within a simple addin,
  * so this Addin can only be used by documents using the default BaseDate setting.
  *
  * The functions in this Addin use a BaseDate 01/01/0001
@@ -492,7 +492,7 @@ void CALLTYPE ScDate_DaysInYear(double *r, double *d)
  * executed and is also used to initialize the NullDate here.
  *
  * StarCalc uses a Date Base 12/30/1899
- * If not specified otherwise in the Options for the Spreedsheet Document
+ * If not specified otherwise in the Options for the Spreadsheet Document
  *
  *
  * @param *nCount - returns the number of functions which are exported to StarCalc

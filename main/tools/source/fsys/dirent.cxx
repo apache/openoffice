@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_tools.hxx"
-
 
 #if !defined UNX
 #include <io.h>
@@ -158,16 +155,16 @@ void FSysRedirector::DoRedirect( String &rPath )
         if ( !IsRedirectable_Impl( ByteString( aURL, osl_getThreadTextEncoding() ) ) )
                 return;
 
-        // Redirection is acessible only by one thread per time
-        // dont move the guard behind the bInRedirection check!!!
+        // Redirection is accessible only by one thread per time
+        // don't move the guard behind the bInRedirection check!!!
         // think of nested calls (when called from callback)
         vos:: OGuard  aGuard( pRedirectMutex );
 
-        // if already in redirection, dont redirect
+        // if already in redirection, don't redirect
         if ( bInRedirection )
                 return;
 
-        // dont redirect on nested calls
+        // don't redirect on nested calls
         bInRedirection = sal_True;
 
         // convert to URL
@@ -1463,7 +1460,7 @@ sal_Bool DirEntry::operator==( const DirEntry& rEntry ) const
 {
     DBG_CHKTHIS( DirEntry, ImpCheckDirEntry );
 
-    // test wheather the contents are textual the same
+    // test whether the contents are textual the same
 
     if ( nError && ( nError == rEntry.nError ) )
         return sal_True;
@@ -3207,3 +3204,4 @@ void FSysTest()
 
 #endif
 
+/* vim: set noet sw=4 ts=4: */

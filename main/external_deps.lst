@@ -150,10 +150,17 @@ if (SOLAR_JAVA==TRUE)
     URL1 = https://archive.apache.org/dist/commons/lang/source/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
-if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
-    MD5 = cdc2638f789ecc2db2c91488265686c1
-    name = openssl-1.0.2u.tar.gz
-    URL1 = https://www.openssl.org/source/old/1.0.2/$(name)
+if (SYSTEM_OPENSSL!=YES)
+    MD5 = c15e53a62711002901d3515ac8b30b86
+    name = openssl-3.0.13.tar.gz
+    URL1 = https://www.openssl.org/source/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+# On Windows, we need Strawberry Perl to build OpenSSL 3:
+if (SYSTEM_OPENSSL!=YES && GUI==WNT)
+    MD5 = 93fdfe261588bc82ab3a0bd4f5945b60
+    name = strawberry-perl-5.32.1.1-32bit-portable.zip
+    URL1 = https://strawberryperl.com/download/5.32.1.1/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_LIBXML != YES)
@@ -211,8 +218,8 @@ if (SYSTEM_EXPAT != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_CURL != YES)
-    MD5 = 7422feb126df677d2d33294a1fd079ea
-    name = curl-7.72.0.tar.gz
+    MD5 = 92f7a11836678b725e2cb59fef10c273
+    name = curl-8.7.1.tar.gz
     URL1 = https://curl.haxx.se/download/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 

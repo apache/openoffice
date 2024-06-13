@@ -63,6 +63,11 @@ vmlOffice               urn:schemas-microsoft-com:office:office
 vmlPowerpoint           urn:schemas-microsoft-com:office:powerpoint
 vmlWord                 urn:schemas-microsoft-com:office:word
 
+# MS Office 2010 encryption (MS-OFFCRYPTO) ------------------------------------
+
+encryption              http://schemas.microsoft.com/office/2006/encryption
+keyEncryptorPassword    http://schemas.microsoft.com/office/2006/keyEncryptor/password
+
 # other -----------------------------------------------------------------------
 
 ax                      http://schemas.microsoft.com/office/2006/activeX
