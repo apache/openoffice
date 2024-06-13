@@ -19,13 +19,10 @@
  *
  *************************************************************/
 
-
-
 #include "globals.hrc"
 #include "utlui.hrc"
 #include "helpid.h"
 #include "comcore.hrc"
-
 
 Resource RID_SHELLRES_AUTOFMTSTRS
 {
@@ -119,7 +116,6 @@ Resource RID_SHELLRES_AUTOFMTSTRS
 	{
 		Text [ en-US ] = "Add non breaking space" ;
 	};
-
 };
 
 /*---------------------------------------------------------------------
@@ -395,47 +391,47 @@ Image IMG_VIEWLAYOUT_SINGLECOLUMN
 };
 Image IMG_VIEWLAYOUT_SINGLECOLUMN_ACTIVE
 {
-    ImageBitmap = Bitmap
-    {
-        File = "emptypage_a_11x15.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "emptypage_a_11x15.png" ;
+	};
 };
 
 Image IMG_VIEWLAYOUT_AUTOMATIC_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "twopages_11x25_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "twopages_11x25_h.png" ;
+	};
 };
 Image IMG_VIEWLAYOUT_AUTOMATIC_ACTIVE_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "twopages_a_11x25_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "twopages_a_11x25_h.png" ;
+	};
 };
 
 Image IMG_VIEWLAYOUT_BOOKMODE_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "doublepage_11x23_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "doublepage_11x23_h.png" ;
+	};
 };
 Image IMG_VIEWLAYOUT_BOOKMODE_ACTIVE_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "doublepage_a_11x23_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "doublepage_a_11x23_h.png" ;
+	};
 };
 Image IMG_VIEWLAYOUT_SINGLECOLUMN_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "emptypage_11x15_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "emptypage_11x15_h.png" ;
+	};
 };
 Image IMG_VIEWLAYOUT_SINGLECOLUMN_ACTIVE_HC
 {
@@ -446,14 +442,13 @@ Image IMG_VIEWLAYOUT_SINGLECOLUMN_ACTIVE_HC
 };
 
 
-
 String STR_HYPERCTRL_SEL
 {
-	Text [ en-US ] = "SEL";
+	Text [ en-US ] = "SEL" ;
 };
 String STR_HYPERCTRL_HYP
 {
-	Text [ en-US ] = "HYP";
+	Text [ en-US ] = "HYP" ;
 };
 
 // ********************************************************************** EOF

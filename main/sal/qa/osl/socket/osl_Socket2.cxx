@@ -251,7 +251,7 @@ namespace osl_Socket
 
 	/**  test writer's comment:
 
-	    the assignment operator does not support direct assinment like:
+	    the assignment operator does not support direct assignment like:
 	    ::osl::Socket sSocket = sHandle.
 	*/
     TEST_F(operators, operators_assignment_handle)
