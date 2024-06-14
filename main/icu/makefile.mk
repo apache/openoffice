@@ -35,15 +35,16 @@ TARGET=so_icu
 
 .IF "$(ICU_MICRO)"!="0"
 TARFILE_NAME=icu4c-$(ICU_MAJOR)_$(ICU_MINOR)_$(ICU_MICRO)-src
-TARFILE_MD5=2f6ecca935948f7db92d925d88d0d078
+TARFILE_MD5=e3738abd0d3ce1870dc1fd1f22bba5b1
 .ELSE
 TARFILE_NAME=icu4c-$(ICU_MAJOR)_$(ICU_MINOR)-src
 TARFILE_MD5=
 .ENDIF
 TARFILE_ROOTDIR=icu
 
-PATCH_FILES=${TARFILE_NAME}.patch icu-mp.patch icu-win-layoutex.patch \
-	icu-format-security.patch
+# TODO file icu-mp.patch does not seem to be required
+PATCH_FILES=${TARFILE_NAME}.patch icu-win-layout.patch \
+	icu-format-security.patch icu-win-icutu-dll-version.patch
 
 # ADDITIONAL_FILES=
 
