@@ -1,0 +1,40 @@
+diff -ru misc/icu/source/tools/toolutil/toolutil.vcproj misc/build/icu/source/tools/toolutil/toolutil.vcproj
+--- misc/icu/source/tools/toolutil/toolutil.vcproj	2024-08-27 22:18:58.482995900 +0200
++++ misc/build/icu/source/tools/toolutil/toolutil.vcproj	2024-08-27 22:19:50.449784700 +0200
+@@ -78,7 +78,7 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				OutputFile="..\..\..\bin\icutu41.dll"
++				OutputFile="..\..\..\bin\icutu42.dll"
+ 				LinkIncremental="1"
+ 				SuppressStartupBanner="true"
+ 				AdditionalLibraryDirectories="..\..\..\lib"
+@@ -174,7 +174,7 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				OutputFile="..\..\..\bin\icutu41d.dll"
++				OutputFile="..\..\..\bin\icutu42d.dll"
+ 				LinkIncremental="2"
+ 				SuppressStartupBanner="true"
+ 				AdditionalLibraryDirectories="..\..\..\lib"
+@@ -269,7 +269,7 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				OutputFile="..\..\..\bin64\icutu41.dll"
++				OutputFile="..\..\..\bin64\icutu42.dll"
+ 				LinkIncremental="1"
+ 				SuppressStartupBanner="true"
+ 				AdditionalLibraryDirectories="..\..\..\lib64"
+@@ -367,7 +367,7 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				OutputFile="..\..\..\bin64\icutu41d.dll"
++				OutputFile="..\..\..\bin64\icutu42d.dll"
+ 				LinkIncremental="2"
+ 				SuppressStartupBanner="true"
+ 				AdditionalLibraryDirectories="..\..\..\lib64"
+Only in misc/build/icu/source/tools/toolutil: toolutil.vcproj~
