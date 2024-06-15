@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,36 +17,31 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
 
-$(eval $(call gb_Module_Module,sc))
+$(eval $(call gb_JunitTest_JunitTest,sc_unoapi,SRCDIR))
 
-$(eval $(call gb_Module_add_targets,sc,\
-	AllLangResTarget_sc \
-	Library_sc \
-	Library_scd \
-	Library_scfilt \
-	Library_scui \
-	Library_vbaobj \
-	Package_uiconfig \
-	Package_xml \
+$(eval $(call gb_JunitTest_set_defs,sc_unoapi,\
+	$$(DEFS) \
+	-Dorg.openoffice.test.arg.sce=$(SRCDIR)/sc/qa/unoapi/sc.sce \
+	-Dorg.openoffice.test.arg.xcl=$(SRCDIR)/sc/qa/unoapi/knownissues.xcl \
+	-Dorg.openoffice.test.arg.tdoc=$(SRCDIR)/sc/qa/unoapi/testdocuments \
 ))
 
-ifeq ($(ENABLE_UNIT_TESTS),YES)
-$(eval $(call gb_Module_add_targets,sc,\
-	GoogleTest_sc \
+$(eval $(call gb_JunitTest_add_jars,sc_unoapi,\
+	$(OUTDIR)/bin/OOoRunner.jar \
+	$(OUTDIR)/bin/ridl.jar \
+	$(OUTDIR)/bin/test.jar \
 ))
-endif
 
-ifneq ($(OOO_JUNIT_JAR),)
-$(eval $(call gb_Module_add_subsequentcheck_targets,sc,\
-	JunitTest_sc_complex \
-	JunitTest_sc_complex_cellRanges \
-	JunitTest_sc_unoapi \
+$(eval $(call gb_JunitTest_add_sourcefiles,sc_unoapi,\
+	sc/qa/unoapi/Test \
 ))
-endif
 
+$(eval $(call gb_JunitTest_add_classes,sc_unoapi,\
+	org.openoffice.sc.qa.unoapi.Test \
+))
 
 # vim: set noet sw=4 ts=4:
