@@ -62,15 +62,12 @@ installationtest_instpath = `cat $(MISC)/$(TARGET)/installation.flag`
 installationtest_instpath = $(SOLARVERSION)/$(INPATH)/installation$(UPDMINOREXT)
 .END
 
-.IF "$(OS)" == "MACOSX"
+.IF "$(OS)" == "WNT"
 my_sofficepath = \
-    $(installationtest_instpath)/opt/OpenOffice.org.app/Contents/MacOS/soffice
-.ELIF "$(OS)" == "WNT"
-my_sofficepath = \
-    $(installationtest_instpath)'/opt/OpenOffice.org 3/program/soffice.exe'
+    $(SOLARSRC)'instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/Openoffice 4/program/soffice.exe'
 .ELSE
 my_sofficepath = \
-    $(installationtest_instpath)/opt/openoffice.org3/program/soffice
+    $(SOLARSRC)/instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/openoffice4/program/soffice
 .END
 
 .IF "$(OOO_TEST_SOFFICE)" == ""
