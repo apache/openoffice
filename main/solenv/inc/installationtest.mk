@@ -103,6 +103,18 @@ $(MISC)/$(TARGET)/installation.flag : $(shell \
 .END
 
 .IF "$(SOLAR_JAVA)" == "TRUE" && "$(OOO_JUNIT_JAR)" != ""
+.IF "$(HAMCREST_CORE_JAR)" != ""
+javatest_% .PHONY : $(JAVATARGET)
+    $(COMMAND_ECHO)$(RM) -r $(MISC)/$(TARGET)/user
+    $(COMMAND_ECHO)$(MKDIRHIER) $(MISC)/$(TARGET)/user
+    $(COMMAND_ECHO)$(JAVAI) $(JAVAIFLAGS) $(JAVACPS) \
+        '$(OOO_JUNIT_JAR)$(PATH_SEPERATOR)$(HAMCREST_CORE_JAR)$(PATH_SEPERATOR)$(CLASSPATH)' \
+        -Dorg.openoffice.test.arg.soffice=$(my_soffice) \
+        -Dorg.openoffice.test.arg.user=$(my_file)$(PWD)/$(MISC)/$(TARGET)/user \
+        $(my_javaenv) $(TEST_ARGUMENTS:^"-Dorg.openoffice.test.arg.testarg.") \
+        org.junit.runner.JUnitCore \
+        $(subst,/,. $(PACKAGE)).$(@:s/javatest_//)
+.ELSE
 javatest_% .PHONY : $(JAVATARGET)
     $(COMMAND_ECHO)$(RM) -r $(MISC)/$(TARGET)/user
     $(COMMAND_ECHO)$(MKDIRHIER) $(MISC)/$(TARGET)/user
@@ -113,6 +125,7 @@ javatest_% .PHONY : $(JAVATARGET)
         $(my_javaenv) $(TEST_ARGUMENTS:^"-Dorg.openoffice.test.arg.testarg.") \
         org.junit.runner.JUnitCore \
         $(subst,/,. $(PACKAGE)).$(@:s/javatest_//)
+.END
     $(RM) -r $(MISC)/$(TARGET)/user
 .IF "$(OS)" == "WNT" && "$(OOO_TEST_SOFFICE)" == ""
     $(RM) -r $(installationtest_instpath) $(MISC)/$(TARGET)/installation.flag
@@ -121,6 +134,15 @@ javatest : $(MISC)/$(TARGET)/installation.flag
 javatest .PHONY : $(JAVATARGET)
     $(COMMAND_ECHO)$(RM) -r $(MISC)/$(TARGET)/user
     $(COMMAND_ECHO)$(MKDIRHIER) $(MISC)/$(TARGET)/user
+.IF "$(HAMCREST_CORE_JAR)" != ""
+    $(COMMAND_ECHO)$(JAVAI) $(JAVAIFLAGS) $(JAVACPS) \
+        '$(OOO_JUNIT_JAR)$(PATH_SEPERATOR)$(HAMCREST_CORE_JAR)$(PATH_SEPERATOR)$(CLASSPATH)' \
+        -Dorg.openoffice.test.arg.soffice=$(my_soffice) \
+        -Dorg.openoffice.test.arg.user=$(my_file)$(PWD)/$(MISC)/$(TARGET)/user \
+        $(my_javaenv) $(TEST_ARGUMENTS:^"-Dorg.openoffice.test.arg.testarg.") \
+        org.junit.runner.JUnitCore \
+        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(i:s/.java//))
+.ELSE
     $(COMMAND_ECHO)$(JAVAI) $(JAVAIFLAGS) $(JAVACPS) \
         '$(OOO_JUNIT_JAR)$(PATH_SEPERATOR)$(CLASSPATH)' \
         -Dorg.openoffice.test.arg.soffice=$(my_soffice) \
@@ -128,6 +150,7 @@ javatest .PHONY : $(JAVATARGET)
         $(my_javaenv) $(TEST_ARGUMENTS:^"-Dorg.openoffice.test.arg.testarg.") \
         org.junit.runner.JUnitCore \
         $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(i:s/.java//))
+.END
     $(RM) -r $(MISC)/$(TARGET)/user
 .IF "$(OS)" == "WNT" && "$(OOO_TEST_SOFFICE)" == ""
     $(RM) -r $(installationtest_instpath) $(MISC)/$(TARGET)/installation.flag
