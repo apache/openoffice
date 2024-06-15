@@ -24,6 +24,7 @@
 package org.openoffice.configmgr.qa.unoapi;
 
 import org.openoffice.Runner;
+import org.openoffice.test.Argument;
 import org.openoffice.test.OfficeConnection;
 import static org.junit.Assert.*;
 
@@ -41,7 +42,7 @@ public final class Test {
     @org.junit.Test public void test() {
         assertTrue(
             Runner.run(
-                "-sce", "module.sce", "-cs", connection.getDescription()));
+                "-sce", Argument.get("sce"), "-cs", connection.getDescription()));
     }
 
     private final OfficeConnection connection = new OfficeConnection();
