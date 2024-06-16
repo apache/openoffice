@@ -29,7 +29,6 @@ $(eval $(call gb_JunitTest_add_sourcefiles,comphelper_complex,\
 ))
 
 $(eval $(call gb_JunitTest_add_jars,comphelper_complex,\
-	$(OUTDIR)/bin/OOoRunner.jar \
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
