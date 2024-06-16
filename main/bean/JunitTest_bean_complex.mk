@@ -21,28 +21,24 @@
 
 
 
-$(eval $(call gb_Module_Module,bean))
+$(eval $(call gb_JunitTest_JunitTest,bean_complex,SRCDIR))
 
-$(eval $(call gb_Module_add_targets,bean,\
+$(eval $(call gb_JunitTest_add_jars,bean_complex,\
+	$(OUTDIR)/bin/ridl.jar \
+	$(OUTDIR)/bin/test.jar \
+	$(OUTDIR)/bin/unoil.jar \
+	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/officebean.jar \
 ))
 
-ifeq ($(OS),WNT)
-$(eval $(call gb_Module_add_targets,bean,\
-	Ant_officebean \
-	Library_officebean \
+$(eval $(call gb_JunitTest_add_sourcefiles,bean_complex,\
+	bean/qa/complex/bean/OOoBeanTest \
+	bean/qa/complex/bean/ScreenComparer \
+	bean/qa/complex/bean/WriterFrame \
 ))
-else ifeq ($(GUIBASE),unx)
-$(eval $(call gb_Module_add_targets,bean,\
-	Ant_officebean \
-        Library_officebean \
-))
-endif
 
-ifneq ($(OOO_JUNIT_JAR),)
-$(eval $(call gb_Module_add_subsequentcheck_targets,bean,\
-	JunitTest_bean_complex \
+$(eval $(call gb_JunitTest_add_classes,bean_complex,\
+	complex.bean.OOoBeanTest \
 ))
-endif
-
 
 # vim: set noet sw=4 ts=4:
