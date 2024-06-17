@@ -28,14 +28,13 @@ import org.openoffice.test.OfficeFileUrl;
 
 final class TestDocument
 {
-    final static String sPathname = "testdocuments";
-    public static String getUrl(String name) 
+    public static String getUrl(String pathName, String fileName)
     {
-        return OfficeFileUrl.getAbsolute(new File(sPathname, name));
+        return OfficeFileUrl.getAbsolute(new File(pathName, fileName));
     }
-    public static String getUrl()
+
+    public static String getUrl(String pathName)
     {
-        return OfficeFileUrl.getAbsolute(new File(sPathname));
+        return OfficeFileUrl.getAbsolute(new File(pathName));
     }
-    private TestDocument() {}
 }
