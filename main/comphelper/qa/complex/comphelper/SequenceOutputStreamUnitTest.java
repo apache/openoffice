@@ -22,7 +22,6 @@
 
 package complex.comphelper;
 
-// import complexlib.ComplexTestCase;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
 
@@ -62,19 +61,10 @@ class TestHelper
     }
 }
 
-public class SequenceOutputStreamUnitTest /* extends ComplexTestCase*/ {
+public class SequenceOutputStreamUnitTest {
     private XMultiServiceFactory m_xMSF = null;
 
     TestHelper m_aTestHelper = null;
-    
-//    public String[] getTestMethodNames() {
-//        return new String[] {
-//            "ExecuteTest01"};
-//    }
-    
-//    public String getTestObjectName () {
-//        return "SequenceOutputStreamUnitTest";
-//    }
     
 //    public static String getShortTestDescription() {
 //        return "tests the SequenceOutput/InputStream implementations";
