@@ -29,4 +29,11 @@ $(eval $(call gb_Module_add_targets,package,\
 	Package_dtd \
 ))
 
+ifneq ($(OOO_JUNIT_JAR),)
+$(eval $(call gb_Module_add_subsequentcheck_targets,package,\
+	JunitTest_package_complex_ofopxmlstorages \
+	JunitTest_package_complex_storages  \
+))
+endif
+
 # vim: set noet sw=4 ts=4:
