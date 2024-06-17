@@ -28,7 +28,6 @@ $(eval $(call gb_JunitTest_set_defs,unotools_complex,\
 ))
 
 $(eval $(call gb_JunitTest_add_jars,unotools_complex,\
-	$(OUTDIR)/bin/OOoRunner.jar \
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/test-tools.jar \
