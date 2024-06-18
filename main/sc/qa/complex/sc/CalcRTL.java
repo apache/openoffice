@@ -47,8 +47,6 @@ import com.sun.star.uno.Type;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.util.XCloseable;
 
-// import complexlib.ComplexTestCase;
-
 // import java.io.PrintWriter;
 
 import util.DrawTools;
@@ -64,27 +62,9 @@ import org.openoffice.test.OfficeConnection;
 import static org.junit.Assert.*;
 
 
-public class CalcRTL /* extends ComplexTestCase */
+public class CalcRTL
 {
     XSpreadsheetDocument xSheetDoc = null;
-
-    /*
-     * This testcase checks the calcrtl feature added to cws_calcrtl in three steps
-     * <br>
-     * (<b>REMARK: </b> the testcases expects the TableLayout to be LR_TB)
-     * <br>
-     * 1. A calc document is opened and the properties in css.sheet.Spreadsheet are checked
-     * <br>
-     * 2. A calc document is opened and a shape inserted, afterwards the properties in css.sheet.Shape are checked
-     * <br>
-     * 3. A calc document is opened and a shape inserted, afterwards the effect of changing the TableLayout to the shape is checked
-     */
-//     public String[] getTestMethodNames() {
-//         return new String[] {
-//             "checkSpreadsheetProperties", "checkShapeProperties", 
-//             "checkInfluenceOfSpreadsheetChange"
-//         };
-//     }
 
     /*
      * In this method a spreadsheet document is opened<br>

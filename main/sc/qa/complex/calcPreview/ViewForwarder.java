@@ -23,8 +23,6 @@
 
 package complex.calcPreview;
 
-// import complexlib.ComplexTestCase;
-
 import com.sun.star.awt.XWindow;
 import com.sun.star.container.XIndexAccess;
 import com.sun.star.frame.XController;
@@ -90,17 +88,6 @@ public class ViewForwarder {
 
     /** The MultiServiceFactory **/
     private XMultiServiceFactory mXMSF = null;
-
-    /** Get all test methods.
-     * @return The test methods.
-     */
-//    public String[] getTestMethodNames() {
-//        return new String[]{"checkPositiveViewForwarder",
-//                            "checkNegativeViewForwarder",
-//                            "checkPreviewHeaderCells",
-//                            "checkPreviewShape"
-//                            };
-//    }
 
     /**
      * Get a MultiServiceFactory from the Office before the test.
