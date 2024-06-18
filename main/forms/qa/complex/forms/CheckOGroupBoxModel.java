@@ -32,7 +32,6 @@ import com.sun.star.drawing.XControlShape;
 import com.sun.star.lang.XComponent;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
-// import complexlib.ComplexTestCase;
 import com.sun.star.util.CloseVetoException;
 import com.sun.star.util.XCloseable;
 import java.util.Vector;
@@ -58,9 +57,6 @@ public class CheckOGroupBoxModel
     private XMultiPropertySet m_xPropSet;
     private XComponent m_xDrawDoc;
 
-//    public String[] getTestMethodNames() {
-//        return new String[] {"setPropertyValues"};
-//    }
     @Before public void before()
     {
         // XComponent xDrawDoc = null;
