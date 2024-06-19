@@ -21,16 +21,45 @@
 
 
 
-PRJ = ..
-PRJNAME = test
-TARGET = inc
+$(eval $(call gb_Library_Library,test))
 
-ENABLE_EXCEPTIONS = TRUE
-VISIBILITY_HIDDEN = TRUE
+$(eval $(call gb_Library_add_package_headers,test,test_inc))
 
-.INCLUDE: settings.mk
-.INCLUDE: target.mk
+$(eval $(call gb_Library_add_precompiled_header,test,$(SRCDIR)/test/inc/pch/precompiled_test))
 
-.IF "$(ENABLE_PCH)" != ""
-ALLTAR: $(SLO)/precompiled.pch $(SLO)/precompiled_ex.pch
-.ENDIF
+$(eval $(call gb_Library_set_include,test,\
+	$$(INCLUDE) \
+	-I$(SRCDIR)/test/inc \
+	-I$(SRCDIR)/test/inc/pch \
+	-I$(SRCDIR)/test/source/cpp \
+	-I$(OUTDIR)/inc \
+))
+
+$(eval $(call gb_Library_add_api,test, \
+	offapi \
+        udkapi \
+))
+
+$(eval $(call gb_Library_add_defs,test,\
+	-DOOO_DLLIMPLEMENTATION_TEST \
+))
+
+$(eval $(call gb_Library_add_linked_libs,test,\
+	cppu \
+	cppuhelper \
+	gtest \
+	sal \
+	stl \
+	$(gb_STDLIBS) \
+))
+
+$(eval $(call gb_Library_add_exception_objects,test,\
+	test/source/cpp/getargument \
+	test/source/cpp/gettestargument \
+	test/source/cpp/officeconnection \
+	test/source/cpp/toabsolutefileurl \
+	test/source/cpp/uniquepipename \
+))
+
+# vim: set noet sw=4 ts=4:
+

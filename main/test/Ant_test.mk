@@ -21,33 +21,7 @@
 
 
 
-PRJ = ../../../../..
-PRJNAME = test
-TARGET = test
+$(eval $(call gb_Ant_Ant,test,$(SRCDIR)/test/java/test/build.xml))
 
-.IF "$(OOO_JUNIT_JAR)" != ""
+# vim: set noet sw=4 ts=4:
 
-PACKAGE = org/openoffice/test
-JAVAFILES = \
-    Argument.java \
-    FileHelper.java \
-    OfficeConnection.java \
-    OfficeFileUrl.java \
-    TestArgument.java
-JARFILES = juh.jar ridl.jar unoil.jar
-EXTRAJARFILES = $(OOO_JUNIT_JAR)
-
-JARTARGET        = $(TARGET).jar
-JARCLASSDIRS     = $(PACKAGE)
-JARCLASSEXCLUDES = $(PACKAGE)/tools/*
-JARCLASSPATH     = $(JARFILES)
- # expect $(OOO_JUNIT_JAR) to be on CLASSPATH wherever test.jar is used (also,
- # on Windows, $(OOO_JUNIT_JAR) could be an absolute pathname with drive letter
- # like X:/path and some JVMs would refuse to load test.jar if its MANIFEST.MF
- # Class-Path contained such a pathname that looks like an unknown URL with
- # scheme X)
-
-.END
-
-.INCLUDE: settings.mk
-.INCLUDE: target.mk

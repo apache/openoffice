@@ -21,27 +21,24 @@
 
 
 
-PRJ = ../../../../../..
-PRJNAME = test
-TARGET = test-tools
+PRJ=..
+TARGET=prj
 
-PACKAGE = org/openoffice/test/tools
+.INCLUDE : settings.mk
 
-.INCLUDE: settings.mk
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-JARFILES = juh.jar ridl.jar unoil.jar
-JAVAFILES = \
-    OfficeDocument.java \
-    OfficeDocumentView.java \
-    DocumentType.java \
-    SpreadsheetDocument.java \
-    SpreadsheetView.java \
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-JARTARGET = $(TARGET).jar
-JARCLASSDIRS = $(PACKAGE)
-JARCLASSPATH = $(JARFILES)
-
-.INCLUDE: target.mk
-
-test:
-    echo $(JAVACLASSFILES)
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

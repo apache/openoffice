@@ -100,6 +100,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	svtools \
 	svx \
 	sw \
+	test \
 	testgraphical \
 	toolkit \
 	tools \
