@@ -26,6 +26,7 @@ package complex.filter.detection.typeDetection;
 import com.sun.star.beans.PropertyValue;
 import com.sun.star.io.NotConnectedException;
 import com.sun.star.io.XInputStream;
+import com.sun.star.lang.XMultiServiceFactory;
 
 import helper.StreamSimulator;
 import java.io.*;
@@ -39,7 +40,7 @@ import lib.TestParameters;
 import share.LogWriter;
 import util.utils;
 
-
+import org.openoffice.test.Argument;
 
 /** Helper class for "TypeDetection"
  * This class do file hanlding.
@@ -47,15 +48,12 @@ import util.utils;
 public class Helper {
 
     /** The runner log writer
-     * @member m_log            for log purposes
      * @member m_sTestDocPath   directory for searching files to load
      * @member m_vFiles         list of all files described in "files.csv"
      * @member m_hFileURLs      contains the position of a file name in the m_vFiles Vector
      * @member m_hFileTypes     contains the position of a file type in the m_vFiles Vector
      * @member m_param          the test parameters
      */
-
-    LogWriter m_log = null;
 
     String m_sTestDocPath = null;
 
@@ -66,6 +64,7 @@ public class Helper {
     Hashtable m_hFileTypes = new Hashtable();
 
     TestParameters m_param = null;
+    XMultiServiceFactory m_xMSF;
 
     /**
      * construct a new instance of this class
@@ -77,17 +76,15 @@ public class Helper {
      * @param   log the log writer
      */
 
-    public Helper(TestParameters param, LogWriter log) {
+    public Helper(XMultiServiceFactory xMSF) {
 
-        m_param = param;
-        m_log = log;
-
+        m_xMSF = xMSF;
 
         // get all files from the given directory
-        m_sTestDocPath = (String)param.get("TestDocumentPath");
+        m_sTestDocPath = Argument.get("tdoc");
 
         // get all files from "files.csv"
-        m_vFiles = getToDoList((String)m_param.get("csv.files"));
+        m_vFiles = getToDoList(Argument.get("files.csv"));
 
         createFilesList();
     }
@@ -186,7 +183,7 @@ public class Helper {
             Vector content = new Vector();
             BufferedReader br;
             String line;
-            if ( m_param.DebugIsActive ) {
+            if ( Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")) ) {
                 System.out.println("Looking for "+csvFileName);
             }
 
@@ -224,7 +221,7 @@ public class Helper {
      */
     public XInputStream getFileStream( String filePath )
                                                 throws NotConnectedException {
-        return new StreamSimulator(filePath, true, m_param);
+        return new StreamSimulator(filePath, true, m_xMSF);
     }
 
     /** replaces place holder in preselectedFilter.
@@ -273,7 +270,7 @@ public class Helper {
                                 newLine.substring(startPos + holder.length());
 
                     } catch (java.lang.IndexOutOfBoundsException e){
-                        m_log.println("ERROR: problems while creating placeholder" +
+                        System.out.println("ERROR: problems while creating placeholder" +
                                     " replaced list: "+ e);
                     }
                 }

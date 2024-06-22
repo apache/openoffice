@@ -19,11 +19,6 @@
 #  
 # *************************************************************
 
-# UNIX:
-#TestDocumentPath=file:///net/margritte/usr/qaapi/dev/cws/filtercfg/docTypes
-# WINDOWS
-TestDocumentPath=//margritte/qaapi/dev/cws/filtercfg/docTypes
-
 csv.files=files.csv
 csv.preselectedFilter=preselectedFilter.csv
 csv.preselectedType=preselectedType.csv
