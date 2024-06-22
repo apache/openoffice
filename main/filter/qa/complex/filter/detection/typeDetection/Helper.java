@@ -392,17 +392,6 @@ public class Helper {
         dummy[0] = PropVal;
         return dummy;
     }
-
-    public URL getClassURL(String fileName){
-        String PackagePath = this.getClass().getPackage().getName().replace('.','/');
-        return this.getClass().getResource("/" + PackagePath +"/" + fileName);
-    }
-
-    public String getClassURLString(String fileName){
-        return getClassURL(fileName).toString().replaceAll("file:","");
-    }
-
-
 }
 
 /** This exception should be thrown if a method seeks for an invalid alias name */

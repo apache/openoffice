@@ -496,8 +496,8 @@ public class TypeDetection {
             System.out.println("### checkStreamLoader() ###");
             String[] urls = new String[2];
             
-            urls[0] = helper.getClassURLString("TypeDetection.props");
-            urls[1] = helper.getClassURLString("files.csv");
+            urls[0] = Argument.get("properties");
+            urls[1] = Argument.get("files.csv");
             
             for (int j=0; j<urls.length; j++){
                 String fileURL  = urls[j];
