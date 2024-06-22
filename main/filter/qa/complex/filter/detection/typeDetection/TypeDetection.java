@@ -30,6 +30,7 @@ import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XInterface;
 import java.io.File;
+import java.io.IOException;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -197,26 +198,10 @@ public class TypeDetection {
     static Helper helper = null;
 
     @BeforeClass
-    public static void setUpConnection()
+    public static void before()
         throws Exception
     {
         connection.setUp();
-    }
-
-    @AfterClass
-    public static void tearDownConnection()
-        throws InterruptedException, com.sun.star.uno.Exception
-    {
-        connection.tearDown();
-    }
-
-    /** Create the environment for following tests.
-     * Use either a component loader from desktop or
-     * from frame
-     * @throws Exception Exception
-     */
-
-    public void before() throws Exception {
 
         // create TypeDetection
         XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
@@ -236,13 +221,13 @@ public class TypeDetection {
                 UnoRuntime.queryInterface(XTypeDetection.class, oInterface);
         // create instrace of helper class
         helper = new Helper(xMSF);
-        
     }
 
-    /**
-     * close the environment
-     */
-    public void after() {
+    @AfterClass
+    public static void tearDownConnection()
+        throws InterruptedException, com.sun.star.uno.Exception
+    {
+        connection.tearDown();
     }
 
     /**
@@ -255,7 +240,7 @@ public class TypeDetection {
      *
      */
     @Test
-    public void checkByURLonly() {
+    public void checkByURLonly() throws IOException {
         try{
             System.out.println("### checkByURLonly() ###");
             Vector CSVData =  helper.getToDoList(Argument.get("files.csv"));
@@ -356,7 +341,7 @@ public class TypeDetection {
      *
      */
     @Test
-    public void checkPreselectedType() {
+    public void checkPreselectedType() throws IOException {
         try{
             System.out.println("### checkPreselectedType() ###");
             
@@ -405,7 +390,7 @@ public class TypeDetection {
      * of the given directory.
      */
     @Test
-    public void checkPreselectedFilter() {
+    public void checkPreselectedFilter() throws IOException {
         try{
             System.out.println("### checkPreselectedFilter() ###");
             
@@ -458,7 +443,7 @@ public class TypeDetection {
      * is used as source for several encodings.
      */
      @Test
-     public void checkPreselectedDocService() {
+     public void checkPreselectedDocService() throws IOException {
         try{
             System.out.println("### checkPreselectedDocService() ###");
 

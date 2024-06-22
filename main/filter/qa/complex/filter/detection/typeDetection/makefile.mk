@@ -43,12 +43,12 @@ JARFILES        = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar test.jar OOoR
 EXTRAJARFILES = $(OOO_JUNIT_JAR)
 
 JAVAIFLAGS=\
-    -Dorg.openoffice.test.arg.tdoc=$(SRCDIR)/qa/complex/filter/detection/typeDetection/documents \
-    -Dorg.openoffice.test.arg.properties=$(SRCDIR)/qa/complex/filter/detection/typeDetection/TypeDetection.props \
-    -Dorg.openoffice.test.arg.files.csv=$(SRCDIR)/qa/complex/filter/detection/typeDetection/files.csv \
-    -Dorg.openoffice.test.arg.preselectedFilter.csv=$(SRCDIR)/qa/complex/filter/detection/typeDetection/preselectedFilter.csv \
-    -Dorg.openoffice.test.arg.preselectedType.csv=$(SRCDIR)/qa/complex/filter/detection/typeDetection/preselectedType.csv \
-    -Dorg.openoffice.test.arg.serviceName.csv=$(SRCDIR)/qa/complex/filter/detection/typeDetection/serviceName.csv
+    -Dorg.openoffice.test.arg.tdoc=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/documents \
+    -Dorg.openoffice.test.arg.properties=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/TypeDetection.props \
+    -Dorg.openoffice.test.arg.files.csv=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/files.csv \
+    -Dorg.openoffice.test.arg.preselectedFilter.csv=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/preselectedFilter.csv \
+    -Dorg.openoffice.test.arg.preselectedType.csv=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/preselectedType.csv \
+    -Dorg.openoffice.test.arg.serviceName.csv=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/serviceName.csv
 # Sample how to debug
 # JAVAIFLAGS+=-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9003,suspend=y
 

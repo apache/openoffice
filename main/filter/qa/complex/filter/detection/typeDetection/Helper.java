@@ -36,6 +36,7 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
 import java.util.Vector;
+import java.util.Properties;
 import lib.TestParameters;
 import share.LogWriter;
 import util.utils;
@@ -52,7 +53,6 @@ public class Helper {
      * @member m_vFiles         list of all files described in "files.csv"
      * @member m_hFileURLs      contains the position of a file name in the m_vFiles Vector
      * @member m_hFileTypes     contains the position of a file type in the m_vFiles Vector
-     * @member m_param          the test parameters
      */
 
     String m_sTestDocPath = null;
@@ -63,7 +63,6 @@ public class Helper {
 
     Hashtable m_hFileTypes = new Hashtable();
 
-    TestParameters m_param = null;
     XMultiServiceFactory m_xMSF;
 
     /**
@@ -76,7 +75,7 @@ public class Helper {
      * @param   log the log writer
      */
 
-    public Helper(XMultiServiceFactory xMSF) {
+    public Helper(XMultiServiceFactory xMSF) throws IOException {
 
         m_xMSF = xMSF;
 
@@ -98,7 +97,7 @@ public class Helper {
       * @param csvFileName the name of the csv file
       * @return Vector filled with Vector filled with data of a row
       */
-     public Vector getToDoList(String csvFileName){
+     public Vector getToDoList(String csvFileName) throws IOException {
 
        try {
 
@@ -171,46 +170,23 @@ public class Helper {
      }
 
      /** The csv files "files", "preselectedFilter", "preselectedType" and
-      * "serviceName" are delivered beside this class. This function seeks for
+      * "serviceName" are read with this class. This function seeks for
       * the csv files and read them.
       * @param csvFileName the name of the csv file
-      * @return a Vector containing the content of the file. <null/> if the file
-      * cannot be read
+      * @return a Vector containing the content of the file.
       */
-
-    public Vector getCSVFileContent(String csvFileName) {
-        try {
-            Vector content = new Vector();
-            BufferedReader br;
-            String line;
-            if ( Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")) ) {
-                System.out.println("Looking for "+csvFileName);
-            }
-
-            URL url = getClassURL(csvFileName);
-
-            if (url != null) {
-                URLConnection connection = url.openConnection();
-                InputStream in = connection.getInputStream();
-
-                br = new BufferedReader(new InputStreamReader(in));
-                try {
-                    while( ( line = br.readLine() ) != null ) {
-                            content.addElement( line );
-                    }
-                } catch (IOException e) {
-                    br.close();
-                    return null;
-                }
-                br.close();
-                return content;
-            }
-
-        }catch (IOException e) {
-        }catch(java.lang.NullPointerException e) {
-            return null;
+    public Vector getCSVFileContent(String csvFileName) throws IOException {
+        Vector content = new Vector();
+        if ( Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")) ) {
+            System.out.println("Looking for "+csvFileName);
         }
-        return null;
+        String line;
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(csvFileName), "UTF-8"))) {
+            while ( ( line = reader.readLine() ) != null ) {
+                content.addElement( line );
+            }
+            return content;
+        }
     }
 
     /** returns a XInputStream of given file
@@ -232,17 +208,21 @@ public class Helper {
      * @param content the content of a csv file
      * @return changed file content
      */
-    private Vector replacePlaceHolder(Vector content){
+    private Vector replacePlaceHolder(Vector content) throws IOException {
 
         Vector vReturn = new Vector();
 
         Vector placeHolders = new Vector();
-        Enumeration m_params = m_param.keys();
-        String placeHolder = (String)m_param.get("placeHolder");
+        Properties properties = new Properties();
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(Argument.get("properties")), "UTF-8"))) {
+            properties.load(reader);
+        }
+        Enumeration keys = properties.keys();
+        String placeHolder = properties.getProperty("placeHolder");
 
         // get all placeholders from typeDetection.csv
-        while (m_params.hasMoreElements()){
-                String holderKey = (String) m_params.nextElement();
+        while (keys.hasMoreElements()){
+                String holderKey = (String) keys.nextElement();
                 if (holderKey.startsWith(placeHolder)){
                     placeHolders.add(holderKey);
                 }
@@ -264,7 +244,7 @@ public class Helper {
 
                 if (startPos > -1){
                     try{
-                        String holderValue = (String) m_param.get(holder);
+                        String holderValue = properties.getProperty(holder);
 
                         newLine = newLine.substring(0,startPos) + holderValue +
                                 newLine.substring(startPos + holder.length());
