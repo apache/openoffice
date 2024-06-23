@@ -32,6 +32,7 @@ import helper.StreamSimulator;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
@@ -105,7 +106,7 @@ public class Helper {
              Vector vFields = new Vector();
 
              // get content of file
-             Vector content = getCSVFileContent(csvFileName);
+             ArrayList<String> content = getCSVFileContent(csvFileName);
 
              // remove superfluous content like "#" started lines
              content = removeSuperfluousContent(content);
@@ -113,13 +114,10 @@ public class Helper {
              // replace all place holders in file
              content = replacePlaceHolder(content);
 
-             // create Enumeration
-             Enumeration contentEnum = content.elements();
-
              // the first line contains field names of the columns
              // split line by ";"
              StringTokenizer fields = new StringTokenizer(
-                 contentEnum.nextElement().toString(),";");
+                 content.get(0), ";");
              int fieldCount = 0;
              while (fields.hasMoreElements()){
                  vFields.add(fields.nextElement());
@@ -127,39 +125,16 @@ public class Helper {
              }
 
              // fill vData with data of CSV-row
-             while (contentEnum.hasMoreElements()){
+             for (int row = 1; row < content.size(); row++){
                  Vector vData = new Vector();
-
-                 StringTokenizer data = new StringTokenizer(
-                     contentEnum.nextElement().toString(),";", true);
-
-                 // example: data = "firstData;secondData;;forthData"
-                 // => three tokens => missing one data because the imagined
-                 // "thirdData" was not received by data.nextToken()
-                 // Therefore here comes a special handling for empty data
-                 boolean nextIsData = false;
-                 int dataCount = 0;
-                 while (data.hasMoreTokens()) {
-                     Object myToken = data.nextToken();
-                     // if the "thirdData" will be received, myToken=";" but
-                     // vData must add an empty String
-                     if (myToken.equals(";")){
-                         if (nextIsData ) {
-                             vData.add("");
-                             dataCount++;
-                             nextIsData = false;
-                         }
-                         nextIsData = true;
-                     } else {
-                         vData.add(myToken.toString());
-                         dataCount++;
-                         nextIsData = false;
-                     }
+                 String[] tokens = content.get(row).split(";");
+                 for (String token : tokens) {
+                     vData.add(token);
                  }
-                 for (int i=dataCount; i < fieldCount; i++) vData.add("");
+                 for (int i = tokens.length; i < fieldCount; i++)
+                     vData.add("");
                  vAll.add(vData);
              }
-
 
              return vAll;
 
@@ -173,17 +148,17 @@ public class Helper {
       * "serviceName" are read with this class. This function seeks for
       * the csv files and read them.
       * @param csvFileName the name of the csv file
-      * @return a Vector containing the content of the file.
+      * @return an ArrayList<String> containing the content of the file.
       */
-    private static Vector getCSVFileContent(String csvFileName) throws IOException {
-        Vector content = new Vector();
+    private static ArrayList<String> getCSVFileContent(String csvFileName) throws IOException {
+        ArrayList<String> content = new ArrayList<>();
         if ( Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")) ) {
             System.out.println("Looking for "+csvFileName);
         }
         String line;
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(csvFileName), "UTF-8"))) {
             while ( ( line = reader.readLine() ) != null ) {
-                content.addElement( line );
+                content.add( line );
             }
             return content;
         }
@@ -208,11 +183,11 @@ public class Helper {
      * @param content the content of a csv file
      * @return changed file content
      */
-    private Vector replacePlaceHolder(Vector content) throws IOException {
+    private ArrayList<String> replacePlaceHolder(ArrayList<String> content) throws IOException {
 
-        Vector vReturn = new Vector();
+        ArrayList<String> vReturn = new ArrayList<>();
 
-        Vector placeHolders = new Vector();
+        ArrayList<String> placeHolders = new ArrayList<>();
         Properties properties = new Properties();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(Argument.get("properties")), "UTF-8"))) {
             properties.load(reader);
@@ -229,17 +204,12 @@ public class Helper {
         }
 
         // replace all occurrences of placeholders in 'CSVData'
-        Enumeration cont = content.elements();
+        for( String line : content ) {
 
-        while( cont.hasMoreElements() ) {
-
-            String line = (String) cont.nextElement();
             String newLine = line;
-            Enumeration holders = placeHolders.elements();
 
-            while( holders.hasMoreElements() ) {
+            for( String holder : placeHolders ) {
 
-                String holder = (String) holders.nextElement();
                 int startPos = line.indexOf(holder);
 
                 if (startPos > -1){
@@ -263,16 +233,14 @@ public class Helper {
     /** Removes lines of an ascii file content which starts with "#"
      * or are empty
      * @param content content of a csv file
-     * @return a stripped Vector
+     * @return a stripped ArrayList<String>
      */
-    private static Vector removeSuperfluousContent(Vector content){
+    private static ArrayList<String> removeSuperfluousContent(ArrayList<String> content){
         try{
-            Vector newContent = new Vector();
-            Enumeration cont = content.elements();
-            while( cont.hasMoreElements() ) {
-                String line = (String) cont.nextElement();
+            ArrayList<String> newContent = new ArrayList<>();
+            for( String line : content ) {
                 if (( ! line.startsWith( "#" ))&& ( line.length() != 0 )) {
-                    newContent.addElement( line );
+                    newContent.add( line );
                 }
             }
             return newContent;
