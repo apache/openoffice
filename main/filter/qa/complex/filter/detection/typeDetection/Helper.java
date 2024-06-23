@@ -175,7 +175,7 @@ public class Helper {
       * @param csvFileName the name of the csv file
       * @return a Vector containing the content of the file.
       */
-    public Vector getCSVFileContent(String csvFileName) throws IOException {
+    private static Vector getCSVFileContent(String csvFileName) throws IOException {
         Vector content = new Vector();
         if ( Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")) ) {
             System.out.println("Looking for "+csvFileName);
@@ -265,7 +265,7 @@ public class Helper {
      * @param content content of a csv file
      * @return a stripped Vector
      */
-    public Vector removeSuperfluousContent(Vector content){
+    private static Vector removeSuperfluousContent(Vector content){
         try{
             Vector newContent = new Vector();
             Enumeration cont = content.elements();
@@ -289,7 +289,7 @@ public class Helper {
      * @see com.sun.star.beans.PropertyValue
      * @see com.sun.star.document.MediaDescriptor
      */
-    public PropertyValue[] createMediaDescriptor(String[] propNames, Object[] values) {
+    public static PropertyValue[] createMediaDescriptor(String[] propNames, Object[] values) {
         PropertyValue[] props = new PropertyValue[propNames.length] ;
 
         for (int i = 0; i < props.length; i++) {
@@ -307,7 +307,7 @@ public class Helper {
      * @param s the system path
      * @return system path with ending system file separator
      */
-    public String ensureEndingFileSep(String s){
+    public static String ensureEndingFileSep(String s){
 	    if(s != null && !s.equals("") && !s.endsWith(File.separator)){
             	s = s.trim() + File.separator;
         }else if(s == null)
@@ -352,7 +352,7 @@ public class Helper {
      *  type name. This informations are extracted from "files.csv"
      *  This is for faster access to get fileURL and fileType of fileAlias
      */
-    public void createFilesList(){
+    private void createFilesList(){
         for (int i = 0; i < m_vFiles.size();i++){
             Vector toDo = (Vector) m_vFiles.get(i);
                 m_hFileURLs.put((String) toDo.get(0).toString(),
@@ -369,7 +369,7 @@ public class Helper {
      * @param fileTypes all possible file types
      * @return true if valid
      */
-    public boolean checkFileType(String currentFileType, String fileTypes){
+    public static boolean checkFileType(String currentFileType, String fileTypes){
 
         StringTokenizer data = new StringTokenizer(fileTypes,":", true);
 
@@ -387,7 +387,7 @@ public class Helper {
      * @return PropertyValue[][]
      * @param PropVal a PropertyValue
      */
-    public PropertyValue[][] createInOutPropertyValue(PropertyValue[] PropVal){
+    public static PropertyValue[][] createInOutPropertyValue(PropertyValue[] PropVal){
         PropertyValue[][] dummy = new PropertyValue[1][];
         dummy[0] = PropVal;
         return dummy;

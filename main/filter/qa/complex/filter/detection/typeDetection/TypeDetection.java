@@ -254,7 +254,7 @@ public class TypeDetection {
                 String URLfileType = (String) toDo.get(2);
                 String StreamfileType = (String) toDo.get(3);
                 
-                fileURL =  utils.getFullURL(helper.ensureEndingFileSep(
+                fileURL =  utils.getFullURL(Helper.ensureEndingFileSep(
                               Argument.get("tdoc")) + fileURL);
                 
                 System.out.println("actual '"+ fileAlias + 
@@ -280,15 +280,15 @@ public class TypeDetection {
     private void checkMediaDescriptorURL(
                             String fileAlias, String fileURL, String fileType){
                                 
-        PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
+        PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
             new String[] {"URL"},
             new Object[] {fileURL});
             System.out.println("check only by URL...");
                 
             String type = m_xDetection.queryTypeByDescriptor(
-                               helper.createInOutPropertyValue(MediaDescriptor), true);
+                               Helper.createInOutPropertyValue(MediaDescriptor), true);
             
-            boolean fileTypeOK = helper.checkFileType(type, fileType);
+            boolean fileTypeOK = Helper.checkFileType(type, fileType);
             
             assertTrue("\nURL-test         : " + fileAlias + ":\n\treturned type: '" + type +
                    "'\n\texpected type: '" + fileType + "'",fileTypeOK);
@@ -316,15 +316,15 @@ public class TypeDetection {
             return;
         }
             
-        PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
+        PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
             new String[] {"InputStream"},
             new Object[] {xStream});
             System.out.println("check only by XInputStream...");
                 
             String type = m_xDetection.queryTypeByDescriptor(
-                               helper.createInOutPropertyValue(MediaDescriptor), true);
+                               Helper.createInOutPropertyValue(MediaDescriptor), true);
             
-            boolean fileTypeOK = helper.checkFileType(type, fileType);
+            boolean fileTypeOK = Helper.checkFileType(type, fileType);
             
             assertTrue("\nXInputStream-test: " + fileAlias + ":\n\treturned type: '" + type +
                    "'\n\texpected type: '" + fileType + "'", fileTypeOK);
@@ -357,16 +357,16 @@ public class TypeDetection {
                     String preselectFileType = (String) toDo.get(1);
                     String expectedFileType = (String) toDo.get(2);
                     
-                    PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
+                    PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
                         new String[] {"URL", "MediaType"},
                         new Object[] {fileURL, preselectFileType});
                     System.out.println("check '" + fileAlias + "' with MediaType: '" + 
                                 preselectFileType + "'");
 
                     String type = m_xDetection.queryTypeByDescriptor(
-                                   helper.createInOutPropertyValue(MediaDescriptor), true);
+                                   Helper.createInOutPropertyValue(MediaDescriptor), true);
 
-                    boolean fileTypeOK = helper.checkFileType(type, expectedFileType);
+                    boolean fileTypeOK = Helper.checkFileType(type, expectedFileType);
                     
                     assertTrue("\n" + fileAlias + ":\n\treturned type: '" + type +
                                     "'\n\texpected type: '" + expectedFileType + "'",
@@ -409,7 +409,7 @@ public class TypeDetection {
                     String filterData = (String) toDo.get(3);
                     String expectedType = (String) toDo.get(4);
 
-                    PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
+                    PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
                         new String[] {"URL","FilterName",
                                                   "FilterOptions","FilterData"},
                         new Object[] {fileURL, filterName, 
@@ -419,9 +419,9 @@ public class TypeDetection {
                                 filterName + "'");
 
                     String type = m_xDetection.queryTypeByDescriptor(
-                               helper.createInOutPropertyValue(MediaDescriptor), true);
+                               Helper.createInOutPropertyValue(MediaDescriptor), true);
 
-                    boolean fileTypeOK = helper.checkFileType(type, expectedType);
+                    boolean fileTypeOK = Helper.checkFileType(type, expectedType);
                     
                     assertTrue("\n" + fileAlias + ":\n\treturned type: '" + type +
                                     "'\n\texpected type: '" + expectedType + "'",
@@ -459,15 +459,15 @@ public class TypeDetection {
                     String serviceName = (String) toDo.get(1);
                     String fileType = helper.getTypeforfileAlias(fileAlias);
                 
-                    PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
+                    PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
                         new String[] {"URL", "DocumentSerivce"},
                         new Object[] {fileURL, serviceName});
                     System.out.println("check " + fileAlias);
 
                     String type = m_xDetection.queryTypeByDescriptor(
-                                   helper.createInOutPropertyValue(MediaDescriptor), true);
+                                   Helper.createInOutPropertyValue(MediaDescriptor), true);
 
-                    boolean fileTypeOK = helper.checkFileType(type, fileType);
+                    boolean fileTypeOK = Helper.checkFileType(type, fileType);
                     
                     assertTrue("\n" + fileAlias + ":\n\treturned type: '" + type +
                                     "'\t\nexpected type: '" + fileType + "'",
@@ -504,14 +504,14 @@ public class TypeDetection {
                 File file = new File(fileURL);
                 fileURL =  utils.getFullURL(fileURL);
                 
-                PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
+                PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
                                                         new String[] {"URL"},
                                                         new Object[] {fileURL});
                                                         
                 if (file.canWrite()) System.out.println("check writable file...");
                 else System.out.println("check readonly file...");
                 
-                PropertyValue[][] inOut = helper.createInOutPropertyValue(MediaDescriptor);
+                PropertyValue[][] inOut = Helper.createInOutPropertyValue(MediaDescriptor);
                 PropertyValue[] in = inOut[0];
                 System.out.println("in-Parameter:");
                 for (int i=0; i < in.length; i++){
