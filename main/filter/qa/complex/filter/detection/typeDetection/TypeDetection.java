@@ -347,9 +347,9 @@ public class TypeDetection {
             String expectedFileType = toDo.get(2);
 
             PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
-                new String[] {"URL", "MediaType"},
+                new String[] {"URL", "TypeName"}, // FIXME: "TypeName" was "MediaType", but "MediaType" doesn't work.
                 new Object[] {fileURL, preselectFileType});
-            System.out.println("check '" + fileAlias + "' with MediaType: '" + 
+            System.out.println("check '" + fileAlias + "' with TypeName: '" +
                                preselectFileType + "'");
 
             String type = m_xDetection.queryTypeByDescriptor(
