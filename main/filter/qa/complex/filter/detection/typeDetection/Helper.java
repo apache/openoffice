@@ -99,73 +99,73 @@ public class Helper {
       */
      public Vector getToDoList(String csvFileName) throws IOException {
 
-       try {
+         try {
 
-         Vector vAll = new Vector();
-         Vector vFields = new Vector();
+             Vector vAll = new Vector();
+             Vector vFields = new Vector();
 
-         // get content of file
-         Vector content = getCSVFileContent(csvFileName);
+             // get content of file
+             Vector content = getCSVFileContent(csvFileName);
 
-         // remove superfluous content like "#" started lines
-         content = removeSuperfluousContent(content);
+             // remove superfluous content like "#" started lines
+             content = removeSuperfluousContent(content);
 
-         // replace all place holders in file
-         content = replacePlaceHolder(content);
+             // replace all place holders in file
+             content = replacePlaceHolder(content);
 
-         // create Enumeration
-         Enumeration contentEnum = content.elements();
+             // create Enumeration
+             Enumeration contentEnum = content.elements();
 
-         // the first line contains field names of the columns
-         // split line by ";"
-         StringTokenizer fields = new StringTokenizer(
-                                      contentEnum.nextElement().toString(),";");
-         int fieldCount = 0;
-         while (fields.hasMoreElements()){
-             vFields.add(fields.nextElement());
-             fieldCount++;
-         }
+             // the first line contains field names of the columns
+             // split line by ";"
+             StringTokenizer fields = new StringTokenizer(
+                 contentEnum.nextElement().toString(),";");
+             int fieldCount = 0;
+             while (fields.hasMoreElements()){
+                 vFields.add(fields.nextElement());
+                 fieldCount++;
+             }
 
-         // fill vData with data of CSV-row
-         while (contentEnum.hasMoreElements()){
-             Vector vData = new Vector();
+             // fill vData with data of CSV-row
+             while (contentEnum.hasMoreElements()){
+                 Vector vData = new Vector();
 
-             StringTokenizer data = new StringTokenizer(
-                                      contentEnum.nextElement().toString(),";", true);
+                 StringTokenizer data = new StringTokenizer(
+                     contentEnum.nextElement().toString(),";", true);
 
-             // example: data = "firstData;secondData;;forthData"
-             // => three tokens => missing one data because the imagined
-             // "thirdData" was not received by data.nextToken()
-             // Therefore here comes a special handling for empty data
-             boolean nextIsData = false;
-             int dataCount = 0;
-             while (data.hasMoreTokens()) {
-                 Object myToken = data.nextToken();
-                 // if the "thirdData" will be received, myToken=";" but
-                 // vData must add an empty String
-                 if (myToken.equals(";")){
-                     if (nextIsData ) {
-                         vData.add("");
+                 // example: data = "firstData;secondData;;forthData"
+                 // => three tokens => missing one data because the imagined
+                 // "thirdData" was not received by data.nextToken()
+                 // Therefore here comes a special handling for empty data
+                 boolean nextIsData = false;
+                 int dataCount = 0;
+                 while (data.hasMoreTokens()) {
+                     Object myToken = data.nextToken();
+                     // if the "thirdData" will be received, myToken=";" but
+                     // vData must add an empty String
+                     if (myToken.equals(";")){
+                         if (nextIsData ) {
+                             vData.add("");
+                             dataCount++;
+                             nextIsData = false;
+                         }
+                         nextIsData = true;
+                     } else {
+                         vData.add(myToken.toString());
                          dataCount++;
                          nextIsData = false;
                      }
-                     nextIsData = true;
-                 } else {
-                     vData.add(myToken.toString());
-                     dataCount++;
-                     nextIsData = false;
                  }
+                 for (int i=dataCount; i < fieldCount; i++) vData.add("");
+                 vAll.add(vData);
              }
-             for (int i=dataCount; i < fieldCount; i++) vData.add("");
-             vAll.add(vData);
-         }
 
 
-         return vAll;
+             return vAll;
 
-       } catch(ClassCastException e) {
+         } catch(ClassCastException e) {
              e.printStackTrace();
-       }
+         }
          return null;
      }
 
@@ -222,10 +222,10 @@ public class Helper {
 
         // get all placeholders from typeDetection.csv
         while (keys.hasMoreElements()){
-                String holderKey = (String) keys.nextElement();
-                if (holderKey.startsWith(placeHolder)){
-                    placeHolders.add(holderKey);
-                }
+            String holderKey = (String) keys.nextElement();
+            if (holderKey.startsWith(placeHolder)){
+                placeHolders.add(holderKey);
+            }
         }
 
         // replace all occurrences of placeholders in 'CSVData'
@@ -271,9 +271,9 @@ public class Helper {
             Enumeration cont = content.elements();
             while( cont.hasMoreElements() ) {
                 String line = (String) cont.nextElement();
-                    if (( ! line.startsWith( "#" ))&& ( line.length() != 0 )) {
-                        newContent.addElement( line );
-                    }
+                if (( ! line.startsWith( "#" ))&& ( line.length() != 0 )) {
+                    newContent.addElement( line );
+                }
             }
             return newContent;
         } catch (ClassCastException e){
@@ -308,12 +308,12 @@ public class Helper {
      * @return system path with ending system file separator
      */
     public static String ensureEndingFileSep(String s){
-	    if(s != null && !s.equals("") && !s.endsWith(File.separator)){
-            	s = s.trim() + File.separator;
+        if(s != null && !s.equals("") && !s.endsWith(File.separator)){
+            s = s.trim() + File.separator;
         }else if(s == null)
             s = "";
-	    return s;
-	}
+        return s;
+    }
 
     /** Returns the file URL for the given file name assembled by
      * "TestDocumentPath" of typeDetection.props and "fileURL" of files.csv
@@ -328,8 +328,7 @@ public class Helper {
             return utils.getFullURL(ensureEndingFileSep(m_sTestDocPath) + fileURL);
         } catch (java.lang.NullPointerException e){
             throw new FileAliasNotFoundException(fileAlias);
-       }
-
+        }
     }
 
     /** Returns the file type for the given file name containing in files.csv

@@ -282,15 +282,16 @@ public class TypeDetection {
                                 
         PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
             new String[] {"URL"},
-            new Object[] {fileURL});
-            System.out.println("check only by URL...");
-                
-            String type = m_xDetection.queryTypeByDescriptor(
-                               Helper.createInOutPropertyValue(MediaDescriptor), true);
-            
-            boolean fileTypeOK = Helper.checkFileType(type, fileType);
-            
-            assertTrue("\nURL-test         : " + fileAlias + ":\n\treturned type: '" + type +
+            new Object[] {fileURL}
+        );
+        System.out.println("check only by URL...");
+
+        String type = m_xDetection.queryTypeByDescriptor(
+                            Helper.createInOutPropertyValue(MediaDescriptor), true);
+
+        boolean fileTypeOK = Helper.checkFileType(type, fileType);
+
+        assertTrue("\nURL-test         : " + fileAlias + ":\n\treturned type: '" + type +
                    "'\n\texpected type: '" + fileType + "'",fileTypeOK);
     }
 
@@ -318,15 +319,16 @@ public class TypeDetection {
             
         PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
             new String[] {"InputStream"},
-            new Object[] {xStream});
-            System.out.println("check only by XInputStream...");
-                
-            String type = m_xDetection.queryTypeByDescriptor(
-                               Helper.createInOutPropertyValue(MediaDescriptor), true);
-            
-            boolean fileTypeOK = Helper.checkFileType(type, fileType);
-            
-            assertTrue("\nXInputStream-test: " + fileAlias + ":\n\treturned type: '" + type +
+            new Object[] {xStream}
+        );
+        System.out.println("check only by XInputStream...");
+
+        String type = m_xDetection.queryTypeByDescriptor(
+                           Helper.createInOutPropertyValue(MediaDescriptor), true);
+
+        boolean fileTypeOK = Helper.checkFileType(type, fileType);
+
+        assertTrue("\nXInputStream-test: " + fileAlias + ":\n\treturned type: '" + type +
                    "'\n\texpected type: '" + fileType + "'", fileTypeOK);
             
     }
@@ -372,9 +374,9 @@ public class TypeDetection {
                                     "'\n\texpected type: '" + expectedFileType + "'",
                                     fileTypeOK);
 
-                    } catch (FileAliasNotFoundException e){
-                        fail(e.toString());
-                    }
+                } catch (FileAliasNotFoundException e){
+                    fail(e.toString());
+                }
                 
             }
             
