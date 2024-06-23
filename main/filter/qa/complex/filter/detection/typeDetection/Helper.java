@@ -99,48 +99,41 @@ public class Helper {
       */
      public ArrayList<ArrayList<String>> getToDoList(String csvFileName) throws IOException {
 
-         try {
+         ArrayList<ArrayList<String>> vAll = new ArrayList<>();
+         ArrayList<String> vFields = new ArrayList<>();
 
-             ArrayList<ArrayList<String>> vAll = new ArrayList<>();
-             ArrayList<String> vFields = new ArrayList<>();
+         // get content of file
+         ArrayList<String> content = getCSVFileContent(csvFileName);
 
-             // get content of file
-             ArrayList<String> content = getCSVFileContent(csvFileName);
+         // remove superfluous content like "#" started lines
+         content = removeSuperfluousContent(content);
 
-             // remove superfluous content like "#" started lines
-             content = removeSuperfluousContent(content);
+         // replace all place holders in file
+         content = replacePlaceHolder(content);
 
-             // replace all place holders in file
-             content = replacePlaceHolder(content);
-
-             // the first line contains field names of the columns
-             // split line by ";"
-             StringTokenizer fields = new StringTokenizer(
-                 content.get(0), ";");
-             int fieldCount = 0;
-             while (fields.hasMoreElements()){
-                 vFields.add((String)fields.nextElement());
-                 fieldCount++;
-             }
-
-             // fill vData with data of CSV-row
-             for (int row = 1; row < content.size(); row++){
-                 ArrayList<String> vData = new ArrayList<>();
-                 String[] tokens = content.get(row).split(";");
-                 for (String token : tokens) {
-                     vData.add(token);
-                 }
-                 for (int i = tokens.length; i < fieldCount; i++)
-                     vData.add("");
-                 vAll.add(vData);
-             }
-
-             return vAll;
-
-         } catch(ClassCastException e) {
-             e.printStackTrace();
+         // the first line contains field names of the columns
+         // split line by ";"
+         StringTokenizer fields = new StringTokenizer(
+             content.get(0), ";");
+         int fieldCount = 0;
+         while (fields.hasMoreElements()){
+             vFields.add((String)fields.nextElement());
+             fieldCount++;
          }
-         return null;
+
+         // fill vData with data of CSV-row
+         for (int row = 1; row < content.size(); row++){
+             ArrayList<String> vData = new ArrayList<>();
+             String[] tokens = content.get(row).split(";");
+             for (String token : tokens) {
+                 vData.add(token);
+             }
+             for (int i = tokens.length; i < fieldCount; i++)
+                  vData.add("");
+             vAll.add(vData);
+         }
+
+         return vAll;
      }
 
      /** The csv files "files", "preselectedFilter", "preselectedType" and
@@ -235,17 +228,13 @@ public class Helper {
      * @return a stripped ArrayList<String>
      */
     private static ArrayList<String> removeSuperfluousContent(ArrayList<String> content){
-        try{
-            ArrayList<String> newContent = new ArrayList<>();
-            for( String line : content ) {
-                if (( ! line.startsWith( "#" ))&& ( line.length() != 0 )) {
-                    newContent.add( line );
-                }
+        ArrayList<String> newContent = new ArrayList<>();
+        for( String line : content ) {
+            if (( ! line.startsWith( "#" ))&& ( line.length() != 0 )) {
+                newContent.add( line );
             }
-            return newContent;
-        } catch (ClassCastException e){
-            return null;
         }
+        return newContent;
     }
 
     /** returns a <code>MediaDescriptor</code> filled with given properties and
