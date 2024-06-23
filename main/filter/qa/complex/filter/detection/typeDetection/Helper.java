@@ -36,7 +36,6 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
-import java.util.Vector;
 import java.util.Properties;
 import lib.TestParameters;
 import share.LogWriter;
@@ -52,13 +51,13 @@ public class Helper {
     /** The runner log writer
      * @member m_sTestDocPath   directory for searching files to load
      * @member m_vFiles         list of all files described in "files.csv"
-     * @member m_hFileURLs      contains the position of a file name in the m_vFiles Vector
-     * @member m_hFileTypes     contains the position of a file type in the m_vFiles Vector
+     * @member m_hFileURLs      contains the position of a file name in the m_vFiles ArrayList
+     * @member m_hFileTypes     contains the position of a file type in the m_vFiles ArrayList
      */
 
     String m_sTestDocPath = null;
 
-    Vector m_vFiles = null;
+    ArrayList<ArrayList<String>> m_vFiles = null;
 
     Hashtable m_hFileURLs = new Hashtable();
 
@@ -91,19 +90,19 @@ public class Helper {
 
 
      /** Reads a comma separated file (CSV). Every line of the file is
-      * represented by an <code>Vector</code> entry. Every data entry of a row is
-      * also stored in a <code>Vector</code>. So the returned value is a
-      * <code>Vector[][]</code> where the first dimension represents a row
+      * represented by an <code>ArrayList</code> entry. Every data entry of a row is
+      * also stored in a <code>ArrayList</code>. So the returned value is a
+      * <code>ArrayList<ArrayList<>></code> where the first dimension represents a row
       * and the second dimension includes the data values.
       * @param csvFileName the name of the csv file
-      * @return Vector filled with Vector filled with data of a row
+      * @return ArrayList filled with ArrayList filled with data of a row
       */
-     public Vector getToDoList(String csvFileName) throws IOException {
+     public ArrayList<ArrayList<String>> getToDoList(String csvFileName) throws IOException {
 
          try {
 
-             Vector vAll = new Vector();
-             Vector vFields = new Vector();
+             ArrayList<ArrayList<String>> vAll = new ArrayList<>();
+             ArrayList<String> vFields = new ArrayList<>();
 
              // get content of file
              ArrayList<String> content = getCSVFileContent(csvFileName);
@@ -120,13 +119,13 @@ public class Helper {
                  content.get(0), ";");
              int fieldCount = 0;
              while (fields.hasMoreElements()){
-                 vFields.add(fields.nextElement());
+                 vFields.add((String)fields.nextElement());
                  fieldCount++;
              }
 
              // fill vData with data of CSV-row
              for (int row = 1; row < content.size(); row++){
-                 Vector vData = new Vector();
+                 ArrayList<String> vData = new ArrayList<>();
                  String[] tokens = content.get(row).split(";");
                  for (String token : tokens) {
                      vData.add(token);
@@ -183,7 +182,7 @@ public class Helper {
      * @param content the content of a csv file
      * @return changed file content
      */
-    private ArrayList<String> replacePlaceHolder(ArrayList<String> content) throws IOException {
+    private static ArrayList<String> replacePlaceHolder(ArrayList<String> content) throws IOException {
 
         ArrayList<String> vReturn = new ArrayList<>();
 
@@ -321,11 +320,9 @@ public class Helper {
      */
     private void createFilesList(){
         for (int i = 0; i < m_vFiles.size();i++){
-            Vector toDo = (Vector) m_vFiles.get(i);
-                m_hFileURLs.put((String) toDo.get(0).toString(),
-                                               (String) toDo.get(1).toString());
-                m_hFileTypes.put((String) toDo.get(0).toString(),
-                                               (String) toDo.get(2).toString());
+            ArrayList<String> toDo = m_vFiles.get(i);
+            m_hFileURLs.put(toDo.get(0), toDo.get(1));
+            m_hFileTypes.put(toDo.get(0), toDo.get(2));
         }
     }
 

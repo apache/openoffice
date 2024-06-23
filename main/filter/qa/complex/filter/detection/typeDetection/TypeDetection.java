@@ -32,9 +32,9 @@ import com.sun.star.uno.XInterface;
 import java.io.File;
 import java.io.IOException;
 
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Vector;
 import util.utils;
 
 import org.junit.After;
@@ -243,16 +243,13 @@ public class TypeDetection {
     public void checkByURLonly() throws IOException {
         try{
             System.out.println("### checkByURLonly() ###");
-            Vector CSVData =  helper.getToDoList(Argument.get("files.csv"));
-            Enumeration allToDos = CSVData.elements();
+            ArrayList<ArrayList<String>> CSVData =  helper.getToDoList(Argument.get("files.csv"));
             
-            while (allToDos.hasMoreElements()){
-                Vector toDo = (Vector) allToDos.nextElement();
-
-                String fileAlias = (String) toDo.get(0);
-                String fileURL  = (String) toDo.get(1);
-                String URLfileType = (String) toDo.get(2);
-                String StreamfileType = (String) toDo.get(3);
+            for (ArrayList<String> toDo : CSVData){
+                String fileAlias = toDo.get(0);
+                String fileURL  = toDo.get(1);
+                String URLfileType = toDo.get(2);
+                String StreamfileType = toDo.get(3);
                 
                 fileURL =  utils.getFullURL(Helper.ensureEndingFileSep(
                               Argument.get("tdoc")) + fileURL);
@@ -347,17 +344,14 @@ public class TypeDetection {
         try{
             System.out.println("### checkPreselectedType() ###");
             
-            Vector CSVData =  helper.getToDoList(Argument.get("preselectedType.csv"));
-            Enumeration allToDos = CSVData.elements();
+            ArrayList<ArrayList<String>> CSVData =  helper.getToDoList(Argument.get("preselectedType.csv"));
             
-            while (allToDos.hasMoreElements()){
+            for (ArrayList<String> toDo : CSVData){
                 try{
-                    Vector toDo = (Vector) allToDos.nextElement();
-                
-                    String fileAlias = (String) toDo.get(0);
+                    String fileAlias = toDo.get(0);
                     String fileURL  = helper.getURLforfileAlias(fileAlias);
-                    String preselectFileType = (String) toDo.get(1);
-                    String expectedFileType = (String) toDo.get(2);
+                    String preselectFileType = toDo.get(1);
+                    String expectedFileType = toDo.get(2);
                     
                     PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
                         new String[] {"URL", "MediaType"},
@@ -396,20 +390,16 @@ public class TypeDetection {
         try{
             System.out.println("### checkPreselectedFilter() ###");
             
-            Vector CSVData =  helper.getToDoList(Argument.get("preselectedFilter.csv"));
+            ArrayList<ArrayList<String>> CSVData =  helper.getToDoList(Argument.get("preselectedFilter.csv"));
 
-            Enumeration allToDos = CSVData.elements();
-            
-            while (allToDos.hasMoreElements()){
+            for (ArrayList<String> toDo : CSVData){
                 try{
-                    Vector toDo = (Vector) allToDos.nextElement();
-
-                    String fileAlias = (String) toDo.get(0);
+                    String fileAlias = toDo.get(0);
                     String fileURL  = helper.getURLforfileAlias(fileAlias);
-                    String filterName = (String) toDo.get(1);
-                    String filterOptions = (String) toDo.get(2);
-                    String filterData = (String) toDo.get(3);
-                    String expectedType = (String) toDo.get(4);
+                    String filterName = toDo.get(1);
+                    String filterOptions = toDo.get(2);
+                    String filterData = toDo.get(3);
+                    String expectedType = toDo.get(4);
 
                     PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
                         new String[] {"URL","FilterName",
@@ -449,16 +439,13 @@ public class TypeDetection {
         try{
             System.out.println("### checkPreselectedDocService() ###");
 
-            Vector CSVData =  helper.getToDoList(Argument.get("serviceName.csv"));
-            Enumeration allToDos = CSVData.elements();
+            ArrayList<ArrayList<String>> CSVData =  helper.getToDoList(Argument.get("serviceName.csv"));
             
-            while (allToDos.hasMoreElements()){
+            for (ArrayList<String> toDo : CSVData){
                 try{
-                    Vector toDo = (Vector) allToDos.nextElement();
-
-                    String fileAlias = (String) toDo.get(0);
+                    String fileAlias = toDo.get(0);
                     String fileURL  = helper.getURLforfileAlias(fileAlias);
-                    String serviceName = (String) toDo.get(1);
+                    String serviceName = toDo.get(1);
                     String fileType = helper.getTypeforfileAlias(fileAlias);
                 
                     PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
