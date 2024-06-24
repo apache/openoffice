@@ -37,13 +37,18 @@ import com.sun.star.container.*;
 import com.sun.star.beans.*;
 import com.sun.star.lang.*;
 
-import complexlib.ComplexTestCase;
-
 import complex.embedding.*;
 
-import util.utils;
 import java.util.*;
 import java.io.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
 
 /* This unit test for storage objects is designed to
  * test most important statements from storage service
@@ -52,36 +57,29 @@ import java.io.*;
  * Regression tests are added to extend the tested
  * functionalities.
  */
-public class EmbeddingUnitTest  extends ComplexTestCase
+public class EmbeddingUnitTest
 {
-	private XMultiServiceFactory m_xMSF = null;
+    private static final OfficeConnection connection = new OfficeConnection();
 
-    public String[] getTestMethodNames()
-	{
-        return new String[] {
-								"ExecuteTest01" };
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+        connection.setUp();
     }
 
-    public String getTestObjectName()
-	{
-        return "EmbeddingUnitTest";
+    @AfterClass
+    public static void afterClass() throws Exception
+    {
+        connection.tearDown();
     }
 
-    public void before()
-	{
-        m_xMSF = (XMultiServiceFactory)param.getMSF();
-		if ( m_xMSF == null )
-		{
-			failed( "Can't create service factory!" );
-			return;
-		}
+    @Test
+    public void ExecuteTest01()
+    {
+        XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
+        Test01 aTest = new Test01( xMSF );
+        assertTrue( "Test01 failed!", aTest.test() );
     }
-
-	public void ExecuteTest01()
-	{
-		EmbeddingTest aTest = new Test01( m_xMSF, log );
-		assure( "Test01 failed!", aTest.test() );
-	}
 
 }
 
