@@ -20,10 +20,10 @@
  *************************************************************/
 
 // package name: as default, start with complex
-package qa;
+package complex.chart2;
 
 // imports
-import complexlib.ComplexTestCase;
+import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.XInterface;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.Type;
@@ -45,72 +45,48 @@ import com.sun.star.util.CloseVetoException;
 import com.sun.star.uno.AnyConverter;
 import com.sun.star.comp.helper.ComponentContext;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openoffice.test.OfficeConnection;
+import static org.junit.Assert.*;
+
 /**
  * The following Complex Test will test the
  * com.sun.star.document.IndexedPropertyValues
  * service
  */
 
-public class TestCaseOldAPI extends ComplexTestCase {
+public class TestCaseOldAPI {
 
-    // The name of the tested service
-    private final String testedServiceName =
-          "com.sun.star.chart.ChartDocument";
+    private static final OfficeConnection officeConnection = new OfficeConnection();
+    private XMultiServiceFactory xMSF = null;
+    private XModel                    mxChartModel;
+    private XChartDocument            mxOldDoc;
+    private boolean                   mbCreateView;
 
-    // The first of the mandatory functions:
-    /**
-     * Return the name of the test.
-     * In this case it is the actual name of the service.
-     * @return The tested service.
-     */
-    public String getTestObjectName() {
-        return testedServiceName;
+
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+        officeConnection.setUp();
     }
 
-    // The second of the mandatory functions: return all test methods as an
-    // array. There is only one test function in this example.
-    /**
-     * Return all test methods.
-     * @return The test methods.
-     */
-    public String[] getTestMethodNames() {
-        // For some tests a view needs to be created. Accessing the model via
-        // this program and the view may lead to problems
-        boolean bAvoidViewCreation = false;
-
-        if( bAvoidViewCreation )
-            return new String[] {
-                "testData",
-                "testChartType",
-                "testArea",
-                "testAggregation",
-                "testFactory",
-                "testDataSeriesAndPoints",
-                "testStatistics",
-                "testStockProperties"
-            };
-
-        return new String[] {
-            "testData",
-            "testChartType",
-            "testTitle",
-            "testSubTitle",
-            "testDiagram",
-            "testAxis",
-            "testLegend",
-            "testArea",
-            "testAggregation",
-            "testFactory",
-            "testDataSeriesAndPoints",
-            "testStatistics",
-            "testStockProperties"
-        };
+    @AfterClass
+    public static void afterClass() throws Exception
+    {
+        officeConnection.tearDown();
     }
 
     // ____________
 
+    @Before
     public void before()
     {
+        xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
+
         // set to "true" to get a view
         mbCreateView = true;
 
@@ -129,7 +105,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
     {
         XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(
             XCloseable.class, mxChartModel );
-        assure( "document is no XCloseable", xCloseable != null );
+        assertTrue( "document is no XCloseable", xCloseable != null );
 
         // do not close document if there exists a view
         if( ! mbCreateView )
@@ -140,23 +116,23 @@ public class TestCaseOldAPI extends ComplexTestCase {
             }
             catch( CloseVetoException ex )
             {
-                failed( ex.getMessage() );
-                ex.printStackTrace( (PrintWriter)log );
+                fail( ex.getMessage() );
+                ex.printStackTrace( System.err );
             }
         }
     }
 
     // ____________
-
+    @Test
     public void testTitle()
     {
         try
         {
             XPropertySet xDocProp = (XPropertySet) UnoRuntime.queryInterface(
                 XPropertySet.class, mxOldDoc );
-            assure( "Chart Document is no XPropertySet", xDocProp != null );
+            assertTrue( "Chart Document is no XPropertySet", xDocProp != null );
             xDocProp.setPropertyValue( "HasMainTitle", new Boolean( true ));
-            assure( "Property HasMainTitle", AnyConverter.toBoolean(
+            assertTrue( "Property HasMainTitle", AnyConverter.toBoolean(
                         xDocProp.getPropertyValue( "HasMainTitle" )));
 
             XShape xTitleShape = mxOldDoc.getTitle();
@@ -173,10 +149,10 @@ public class TestCaseOldAPI extends ComplexTestCase {
                 xTitleProp.setPropertyValue( "CharHeight", new Float( fHeight ) );
 
                 float fNewHeight = AnyConverter.toFloat( xTitleProp.getPropertyValue( "CharHeight" ) );
-                assure( "Changing CharHeight via old API failed", fNewHeight == fHeight );
+                assertTrue( "Changing CharHeight via old API failed", fNewHeight == fHeight );
 
                 String aNewTitle = AnyConverter.toString( xTitleProp.getPropertyValue( "String" ) );
-                assure( "Property \"String\" failed", aNewTitle.equals( aTitle ));
+                assertTrue( "Property \"String\" failed", aNewTitle.equals( aTitle ));
             }
 
             // move title
@@ -186,27 +162,27 @@ public class TestCaseOldAPI extends ComplexTestCase {
             xTitleShape.setPosition( aSetPos );
 
             Point aNewPos = xTitleShape.getPosition();
-            assure( "Title Position X", approxEqual( aNewPos.X, aSetPos.X, 1 ));
-            assure( "Title Position Y", approxEqual( aNewPos.Y, aSetPos.Y, 1 ));
+            assertTrue( "Title Position X", approxEqual( aNewPos.X, aSetPos.X, 1 ));
+            assertTrue( "Title Position Y", approxEqual( aNewPos.Y, aSetPos.Y, 1 ));
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ____________
-
+    @Test
     public void testSubTitle()
     {
         try
         {
             XPropertySet xDocProp = (XPropertySet) UnoRuntime.queryInterface(
                 XPropertySet.class, mxOldDoc );
-            assure( "Chart Document is no XPropertySet", xDocProp != null );
+            assertTrue( "Chart Document is no XPropertySet", xDocProp != null );
             xDocProp.setPropertyValue( "HasSubTitle", new Boolean( true ));
-            assure( "Property HasSubTitle", AnyConverter.toBoolean(
+            assertTrue( "Property HasSubTitle", AnyConverter.toBoolean(
                         xDocProp.getPropertyValue( "HasSubTitle" )));
 
             XShape xTitleShape = mxOldDoc.getSubTitle();
@@ -225,24 +201,24 @@ public class TestCaseOldAPI extends ComplexTestCase {
                 xTitleProp.setPropertyValue( "CharHeight", new Float( fHeight ) );
 
                 int nNewColor = AnyConverter.toInt( xTitleProp.getPropertyValue( "CharColor" ) );
-                assure( "Changing CharColor via old API failed", nNewColor == nColor );
+                assertTrue( "Changing CharColor via old API failed", nNewColor == nColor );
 
                 float fNewWeight = AnyConverter.toFloat( xTitleProp.getPropertyValue( "CharWeight" ) );
-                assure( "Changing CharWeight via old API failed", fNewWeight == fWeight );
+                assertTrue( "Changing CharWeight via old API failed", fNewWeight == fWeight );
 
                 float fNewHeight = AnyConverter.toFloat( xTitleProp.getPropertyValue( "CharHeight" ) );
-                assure( "Changing CharHeight via old API failed", fNewHeight == fHeight );
+                assertTrue( "Changing CharHeight via old API failed", fNewHeight == fHeight );
             }
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testDiagram()
     {
         try
@@ -253,7 +229,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
             {
                 X3DDisplay xDisp = (X3DDisplay) UnoRuntime.queryInterface(
                     X3DDisplay.class, xDia );
-                assure( "X3DDisplay not supported", xDisp != null );
+                assertTrue( "X3DDisplay not supported", xDisp != null );
 
                 // Wall
                 XPropertySet xProp = xDisp.getWall();
@@ -262,36 +238,36 @@ public class TestCaseOldAPI extends ComplexTestCase {
                     int nColor = 0xffe1ff; // thistle1
                     xProp.setPropertyValue( "FillColor", new Integer( nColor ) );
                     int nNewColor = AnyConverter.toInt( xProp.getPropertyValue( "FillColor" ) );
-                    assure( "Changing FillColor via old API failed", nNewColor == nColor );
+                    assertTrue( "Changing FillColor via old API failed", nNewColor == nColor );
                 }
 
-                assure( "Wrong Diagram Type", xDia.getDiagramType().equals(
+                assertTrue( "Wrong Diagram Type", xDia.getDiagramType().equals(
                             "com.sun.star.chart.BarDiagram" ));
 
                 // Diagram properties
                 xProp = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xDia );
-                assure( "Diagram is no property set", xProp != null );
+                assertTrue( "Diagram is no property set", xProp != null );
 
                 // y-axis
                 boolean bFirstYAxisText = false;
                 xProp.setPropertyValue( "HasYAxisDescription", new Boolean( bFirstYAxisText ));
                 boolean bNewFirstYAxisText = AnyConverter.toBoolean(
                     xProp.getPropertyValue( "HasYAxisDescription" ));
-                assure( "Removing description of first y-axis", bNewFirstYAxisText == bFirstYAxisText );
+                assertTrue( "Removing description of first y-axis", bNewFirstYAxisText == bFirstYAxisText );
 
 //                 boolean bYAxisTitle = true;
 //                 xProp.setPropertyValue( "HasYAxisTitle", new Boolean( bYAxisTitle ));
 //                 boolean bNewYAxisTitle = AnyConverter.toBoolean(
 //                     xProp.getPropertyValue( "HasYAxisTitle" ));
-//                 assure( "Adding y-axis title", bNewYAxisTitle == bYAxisTitle );
+//                 assertTrue( "Adding y-axis title", bNewYAxisTitle == bYAxisTitle );
 
                 // set title text
 //                 XAxisYSupplier xYAxisSuppl = (XAxisYSupplier) UnoRuntime.queryInterface(
 //                     XAxisYSupplier.class, mxOldDoc.getDiagram() );
-//                 assure( "Diagram is no y-axis supplier", xYAxisSuppl != null );
+//                 assertTrue( "Diagram is no y-axis supplier", xYAxisSuppl != null );
 //                 XPropertySet xAxisTitleProp = (XPropertySet) UnoRuntime.queryInterface(
 //                     XPropertySet.class, xYAxisSuppl.getYAxisTitle() );
-//                 assure( "Y-Axis Title is no XPropertySet", xAxisTitleProp != null );
+//                 assertTrue( "Y-Axis Title is no XPropertySet", xAxisTitleProp != null );
 //                 xAxisTitleProp.setPropertyValue( "String", "New y axis title" );
 
                 // second y-axis
@@ -299,12 +275,12 @@ public class TestCaseOldAPI extends ComplexTestCase {
                 xProp.setPropertyValue( "HasSecondaryYAxis", new Boolean( bSecondaryYAxis ));
                 boolean bNewSecYAxisValue = AnyConverter.toBoolean(
                     xProp.getPropertyValue( "HasSecondaryYAxis" ));
-                assure( "Adding a second y-axis does not work", bNewSecYAxisValue == bSecondaryYAxis );
+                assertTrue( "Adding a second y-axis does not work", bNewSecYAxisValue == bSecondaryYAxis );
 
                 XTwoAxisYSupplier xSecYAxisSuppl = (XTwoAxisYSupplier) UnoRuntime.queryInterface(
                     XTwoAxisYSupplier.class, xDia );
-                assure( "XTwoAxisYSupplier not implemented", xSecYAxisSuppl != null );
-                assure( "No second y-axis found", xSecYAxisSuppl.getSecondaryYAxis() != null );
+                assertTrue( "XTwoAxisYSupplier not implemented", xSecYAxisSuppl != null );
+                assertTrue( "No second y-axis found", xSecYAxisSuppl.getSecondaryYAxis() != null );
             }
 
             // move diagram
@@ -323,8 +299,8 @@ public class TestCaseOldAPI extends ComplexTestCase {
                 Point aNewPos = xDiagramShape.getPosition();
                 //System.out.println( "set X = " + aSetPos.X + ", new X = " + aNewPos.X );
                 //System.out.println( "set Y = " + aSetPos.Y + ", new Y = " + aNewPos.Y );
-                assure( "Diagram Position X", approxEqual( aNewPos.X, aSetPos.X, 1 ));
-                assure( "Diagram Position Y", approxEqual( aNewPos.Y, aSetPos.Y, 1 ));
+                assertTrue( "Diagram Position X", approxEqual( aNewPos.X, aSetPos.X, 1 ));
+                assertTrue( "Diagram Position Y", approxEqual( aNewPos.Y, aSetPos.Y, 1 ));
             }
 
             // size diagram
@@ -343,93 +319,93 @@ public class TestCaseOldAPI extends ComplexTestCase {
                 Size aNewSize = xDiagramShape.getSize();
                 //System.out.println( "set width = " + aSetSize.Width + ", new width = " + aNewSize.Width );
                 //System.out.println( "set height = " + aSetSize.Height + ", new height = " + aNewSize.Height );
-                assure( "Diagram Width", approxEqual( aNewSize.Width, aSetSize.Width, 2 ));
-                assure( "Diagram Height", approxEqual( aNewSize.Height, aSetSize.Height, 2 ));
+                assertTrue( "Diagram Width", approxEqual( aNewSize.Width, aSetSize.Width, 2 ));
+                assertTrue( "Diagram Height", approxEqual( aNewSize.Height, aSetSize.Height, 2 ));
             }
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testAxis()
     {
         try
         {
             XAxisYSupplier xYAxisSuppl = (XAxisYSupplier) UnoRuntime.queryInterface(
                 XAxisYSupplier.class, mxOldDoc.getDiagram() );
-            assure( "Diagram is no y-axis supplier", xYAxisSuppl != null );
+            assertTrue( "Diagram is no y-axis supplier", xYAxisSuppl != null );
 
             XPropertySet xProp = xYAxisSuppl.getYAxis();
-            assure( "No y-axis found", xProp != null );
+            assertTrue( "No y-axis found", xProp != null );
 
             double fMax1, fMax2;
             Object oMax = xProp.getPropertyValue( "Max" );
-            assure( "No Maximum set", AnyConverter.isDouble( oMax ));
+            assertTrue( "No Maximum set", AnyConverter.isDouble( oMax ));
             fMax1 = AnyConverter.toDouble( oMax );
-            log.println( "Maximum retrieved: " + fMax1 );
+            System.out.println( "Maximum retrieved: " + fMax1 );
             //todo: the view has to be built before there is an explicit value
-//             assure( "Max is 0.0", fMax1 > 0.0 );
+//             assertTrue( "Max is 0.0", fMax1 > 0.0 );
             xProp.setPropertyValue( "AutoMax", new Boolean( false ));
             oMax = xProp.getPropertyValue( "Max" );
-            assure( "No Maximum set", AnyConverter.isDouble( oMax ));
+            assertTrue( "No Maximum set", AnyConverter.isDouble( oMax ));
             fMax2 = AnyConverter.toDouble( oMax );
-            log.println( "Maximum with AutoMax off: " + fMax2 );
-            assure( "maxima differ", fMax1 == fMax2 );
+            System.out.println( "Maximum with AutoMax off: " + fMax2 );
+            assertTrue( "maxima differ", fMax1 == fMax2 );
 
             double nNewMax = 12.3;
             double nNewOrigin = 2.7;
 
             xProp.setPropertyValue( "Max", new Double( nNewMax ));
-            assure( "AutoMax is on", ! AnyConverter.toBoolean( xProp.getPropertyValue( "AutoMax" )) );
+            assertTrue( "AutoMax is on", ! AnyConverter.toBoolean( xProp.getPropertyValue( "AutoMax" )) );
 
-            assure( "Maximum value invalid",
+            assertTrue( "Maximum value invalid",
                     approxEqual(
                         AnyConverter.toDouble( xProp.getPropertyValue( "Max" )),
                         nNewMax ));
 
             xProp.setPropertyValue( "AutoMin", new Boolean( true ));
-            assure( "AutoMin is off", AnyConverter.toBoolean( xProp.getPropertyValue( "AutoMin" )) );
+            assertTrue( "AutoMin is off", AnyConverter.toBoolean( xProp.getPropertyValue( "AutoMin" )) );
 
             xProp.setPropertyValue( "Origin", new Double( nNewOrigin ));
-            assure( "Origin invalid",
+            assertTrue( "Origin invalid",
                     approxEqual(
                         AnyConverter.toDouble( xProp.getPropertyValue( "Origin" )),
                         nNewOrigin ));
             xProp.setPropertyValue( "AutoOrigin", new Boolean( true ));
-            assure( "AutoOrigin is off", AnyConverter.toBoolean( xProp.getPropertyValue( "AutoOrigin" )) );
+            assertTrue( "AutoOrigin is off", AnyConverter.toBoolean( xProp.getPropertyValue( "AutoOrigin" )) );
             Object oOrigin = xProp.getPropertyValue( "Origin" );
-            assure( "No Origin set", AnyConverter.isDouble( oOrigin ));
-            log.println( "Origin retrieved: " + AnyConverter.toDouble( oOrigin ));
+            assertTrue( "No Origin set", AnyConverter.isDouble( oOrigin ));
+            System.out.println( "Origin retrieved: " + AnyConverter.toDouble( oOrigin ));
 
             xProp.setPropertyValue( "Logarithmic", new Boolean( true ));
-            assure( "Scaling is not logarithmic",
+            assertTrue( "Scaling is not logarithmic",
                     AnyConverter.toBoolean( xProp.getPropertyValue( "Logarithmic" )) );
             xProp.setPropertyValue( "Logarithmic", new Boolean( false ));
-            assure( "Scaling is not logarithmic",
+            assertTrue( "Scaling is not logarithmic",
                     ! AnyConverter.toBoolean( xProp.getPropertyValue( "Logarithmic" )) );
 
             int nNewColor =  0xcd853f; // peru
             xProp.setPropertyValue( "LineColor", new Integer( nNewColor ));
-            assure( "Property LineColor",
+            assertTrue( "Property LineColor",
                     AnyConverter.toInt( xProp.getPropertyValue( "LineColor" )) == nNewColor );
             float fNewCharHeight = (float)(16.0);
             xProp.setPropertyValue( "CharHeight", new Float( fNewCharHeight ));
-            assure( "Property CharHeight",
+            assertTrue( "Property CharHeight",
                     AnyConverter.toFloat( xProp.getPropertyValue( "CharHeight" )) == fNewCharHeight );
 
             int nNewTextRotation = 700; // in 1/100 degrees
             xProp.setPropertyValue( "TextRotation", new Integer( nNewTextRotation ));
-            assure( "Property TextRotation",
+            assertTrue( "Property TextRotation",
                     AnyConverter.toInt( xProp.getPropertyValue( "TextRotation" )) == nNewTextRotation );
 
             double fStepMain = 10.0;
             xProp.setPropertyValue( "StepMain", new Double( fStepMain ));
-            assure( "Property StepMain",
+            assertTrue( "Property StepMain",
                     AnyConverter.toDouble( xProp.getPropertyValue( "StepMain" )) == fStepMain );
 
             // note: fStepHelp must be a divider of fStepMain, because
@@ -437,43 +413,43 @@ public class TestCaseOldAPI extends ComplexTestCase {
             // substeps
             double fStepHelp = 5.0;
             xProp.setPropertyValue( "StepHelp", new Double( fStepHelp ));
-            assure( "Property StepHelp",
+            assertTrue( "Property StepHelp",
                     AnyConverter.toDouble( xProp.getPropertyValue( "StepHelp" )) == fStepHelp );
 
             xProp.setPropertyValue( "DisplayLabels", new Boolean( false ));
-            assure( "Property DisplayLabels", ! AnyConverter.toBoolean(
+            assertTrue( "Property DisplayLabels", ! AnyConverter.toBoolean(
                         xProp.getPropertyValue( "DisplayLabels" )));
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testLegend()
     {
         XShape xLegend = mxOldDoc.getLegend();
-        assure( "No Legend returned", xLegend != null );
+        assertTrue( "No Legend returned", xLegend != null );
 
         XPropertySet xLegendProp = (XPropertySet) UnoRuntime.queryInterface(
             XPropertySet.class, xLegend );
-        assure( "Legend is no property set", xLegendProp != null );
+        assertTrue( "Legend is no property set", xLegendProp != null );
 
         try
         {
             ChartLegendPosition eNewPos = ChartLegendPosition.BOTTOM;
             xLegendProp.setPropertyValue( "Alignment", eNewPos );
-            assure( "Property Alignment",
+            assertTrue( "Property Alignment",
                     AnyConverter.toObject(
                         new Type( ChartLegendPosition.class ),
                         xLegendProp.getPropertyValue( "Alignment" )) == eNewPos );
 
             float fNewCharHeight = (float)(11.0);
             xLegendProp.setPropertyValue( "CharHeight", new Float( fNewCharHeight ));
-            assure( "Property CharHeight",
+            assertTrue( "Property CharHeight",
                     AnyConverter.toFloat( xLegendProp.getPropertyValue( "CharHeight" )) == fNewCharHeight );
 
             // move legend
@@ -487,23 +463,23 @@ public class TestCaseOldAPI extends ComplexTestCase {
                 xLegend.setPosition( aSetPos );
 
                 Point aNewPos = xLegend.getPosition();
-                assure( "Legend Position X", approxEqual( aNewPos.X, aSetPos.X, 1 ));
-                assure( "Legend Position Y", approxEqual( aNewPos.Y, aSetPos.Y, 1 ));
+                assertTrue( "Legend Position X", approxEqual( aNewPos.X, aSetPos.X, 1 ));
+                assertTrue( "Legend Position Y", approxEqual( aNewPos.Y, aSetPos.Y, 1 ));
             }
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testArea()
     {
         XPropertySet xArea = mxOldDoc.getArea();
-        assure( "No Area", xArea != null );
+        assertTrue( "No Area", xArea != null );
 
         try
         {
@@ -511,7 +487,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
             xArea.setPropertyValue( "FillColor", new Integer( nColor ) );
             xArea.setPropertyValue( "FillStyle", FillStyle.SOLID );
 //             XPropertySetInfo xInfo = xArea.getPropertySetInfo();
-//             assure( "Area does not support ChartUserDefinedAttributes",
+//             assertTrue( "Area does not support ChartUserDefinedAttributes",
 //                     xInfo.hasPropertyByName( "ChartUserDefinedAttributes" ));
 
 //             String aTestAttributeName = "test:foo";
@@ -521,26 +497,26 @@ public class TestCaseOldAPI extends ComplexTestCase {
 //             xUserDefAttributes.insertByName( aTestAttributeName, aTestAttributeValue );
 
 //             String aContent = AnyConverter.toString( xUserDefAttributes.getByName( aTestAttributeName ));
-//             assure( "Wrong content in UserDefinedAttributes container",
+//             assertTrue( "Wrong content in UserDefinedAttributes container",
 //                     aContent.equals( aTestAttributeValue ));
 
             int nNewColor = AnyConverter.toInt( xArea.getPropertyValue( "FillColor" ) );
-            assure( "Changing FillColor of Area failed", nNewColor == nColor );
+            assertTrue( "Changing FillColor of Area failed", nNewColor == nColor );
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testChartType()
     {
         XMultiServiceFactory xFact = (XMultiServiceFactory) UnoRuntime.queryInterface(
             XMultiServiceFactory.class, mxOldDoc );
-        assure( "document is no factory", xFact != null );
+        assertTrue( "document is no factory", xFact != null );
 
         try
         {
@@ -555,32 +531,32 @@ public class TestCaseOldAPI extends ComplexTestCase {
                     break;
                 }
             }
-            assure( "getAvailableServiceNames did not return " + aMyServiceName, bServiceFound );
+            assertTrue( "getAvailableServiceNames did not return " + aMyServiceName, bServiceFound );
 
             if( bServiceFound )
             {
                 XDiagram xDia = (XDiagram) UnoRuntime.queryInterface(
                     XDiagram.class, xFact.createInstance( aMyServiceName ));
-                assure( aMyServiceName + " could not be created", xDia != null );
+                assertTrue( aMyServiceName + " could not be created", xDia != null );
 
                 mxOldDoc.setDiagram( xDia );
 
                 XPropertySet xDiaProp = (XPropertySet) UnoRuntime.queryInterface(
                     XPropertySet.class, xDia );
-                assure( "Diagram is no XPropertySet", xDiaProp != null );
+                assertTrue( "Diagram is no XPropertySet", xDiaProp != null );
 
                 xDiaProp.setPropertyValue( "Stacked", new Boolean( true ));
-                assure( "StackMode could not be set correctly",
+                assertTrue( "StackMode could not be set correctly",
                         AnyConverter.toBoolean(
                             xDiaProp.getPropertyValue( "Stacked" )));
 
                 xDiaProp.setPropertyValue( "Dim3D", new Boolean( false ));
-                assure( "Dim3D could not be set correctly",
+                assertTrue( "Dim3D could not be set correctly",
                         ! AnyConverter.toBoolean(
                             xDiaProp.getPropertyValue( "Dim3D" )));
 
                 xDiaProp.setPropertyValue( "Vertical", new Boolean( true ));
-                assure( "Vertical could not be set correctly",
+                assertTrue( "Vertical could not be set correctly",
                         AnyConverter.toBoolean(
                             xDiaProp.getPropertyValue( "Vertical" )));
             }
@@ -589,59 +565,59 @@ public class TestCaseOldAPI extends ComplexTestCase {
 //             aMyServiceName = new String( "com.sun.star.chart.BarDiagram" );
 //             XDiagram xDia = (XDiagram) UnoRuntime.queryInterface(
 //                 XDiagram.class, xFact.createInstance( aMyServiceName ));
-//             assure( aMyServiceName + " could not be created", xDia != null );
+//             assertTrue( aMyServiceName + " could not be created", xDia != null );
 
 //             mxOldDoc.setDiagram( xDia );
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testAggregation()
     {
         // query to new type
         XChartDocument xDiaProv = (XChartDocument) UnoRuntime.queryInterface(
             XChartDocument.class, mxOldDoc );
-        assure( "query to new interface failed", xDiaProv != null );
+        assertTrue( "query to new interface failed", xDiaProv != null );
 
         com.sun.star.chart.XChartDocument xDoc = (com.sun.star.chart.XChartDocument) UnoRuntime.queryInterface(
             com.sun.star.chart.XChartDocument.class, xDiaProv );
-        assure( "querying back to old interface failed", xDoc != null );
+        assertTrue( "querying back to old interface failed", xDoc != null );
     }
 
     // ------------
-
+    @Test
     public void testDataSeriesAndPoints()
     {
         try
         {
             XDiagram xDia = mxOldDoc.getDiagram();
-            assure( "Invalid Diagram", xDia != null );
+            assertTrue( "Invalid Diagram", xDia != null );
             XMultiServiceFactory xFact = (XMultiServiceFactory) UnoRuntime.queryInterface(
                 XMultiServiceFactory.class, mxOldDoc );
-            assure( "document is no factory", xFact != null );
+            assertTrue( "document is no factory", xFact != null );
 
             // FillColor
             XPropertySet xProp = xDia.getDataRowProperties( 0 );
             int nColor = 0xffd700; // gold
             xProp.setPropertyValue( "FillColor", new Integer( nColor ));
             int nNewColor = AnyConverter.toInt( xProp.getPropertyValue( "FillColor" ) );
-            assure( "Changing FillColor of Data Series failed", nNewColor == nColor );
+            assertTrue( "Changing FillColor of Data Series failed", nNewColor == nColor );
 
             // Gradient
-            assure( "No DataRowProperties for series 0", xProp != null );
+            assertTrue( "No DataRowProperties for series 0", xProp != null );
 
             // note: the FillGradient property is optional, however it was
             // supported in the old chart's API
             XNameContainer xGradientTable = (XNameContainer) UnoRuntime.queryInterface(
                 XNameContainer.class,
                 xFact.createInstance( "com.sun.star.drawing.GradientTable" ));
-            assure( "no gradient table", xGradientTable != null );
+            assertTrue( "no gradient table", xGradientTable != null );
             String aGradientName = "NewAPITestGradient";
             Gradient aGradient = new Gradient();
             aGradient.Style = GradientStyle.LINEAR;
@@ -659,31 +635,31 @@ public class TestCaseOldAPI extends ComplexTestCase {
             xProp.setPropertyValue( "FillStyle", FillStyle.GRADIENT );
             xProp.setPropertyValue( "FillGradientName", aGradientName );
             String aNewGradientName = AnyConverter.toString( xProp.getPropertyValue( "FillGradientName" ));
-            assure( "GradientName", aNewGradientName.equals( aGradientName ));
+            assertTrue( "GradientName", aNewGradientName.equals( aGradientName ));
             Gradient aNewGradient = (Gradient) AnyConverter.toObject(
                 new Type( Gradient.class ),
                 xGradientTable.getByName( aNewGradientName ));
-            assure( "Gradient Style", aNewGradient.Style == aGradient.Style );
-            assure( "Gradient StartColor", aNewGradient.StartColor == aGradient.StartColor );
-            assure( "Gradient EndColor", aNewGradient.EndColor == aGradient.EndColor );
-            assure( "Gradient Angle", aNewGradient.Angle == aGradient.Angle );
-            assure( "Gradient Border", aNewGradient.Border == aGradient.Border );
-            assure( "Gradient XOffset", aNewGradient.XOffset == aGradient.XOffset );
-            assure( "Gradient YOffset", aNewGradient.YOffset == aGradient.YOffset );
-            assure( "Gradient StartIntensity", aNewGradient.StartIntensity == aGradient.StartIntensity );
-            assure( "Gradient EndIntensity", aNewGradient.EndIntensity == aGradient.EndIntensity );
-            assure( "Gradient StepCount", aNewGradient.StepCount == aGradient.StepCount );
+            assertTrue( "Gradient Style", aNewGradient.Style == aGradient.Style );
+            assertTrue( "Gradient StartColor", aNewGradient.StartColor == aGradient.StartColor );
+            assertTrue( "Gradient EndColor", aNewGradient.EndColor == aGradient.EndColor );
+            assertTrue( "Gradient Angle", aNewGradient.Angle == aGradient.Angle );
+            assertTrue( "Gradient Border", aNewGradient.Border == aGradient.Border );
+            assertTrue( "Gradient XOffset", aNewGradient.XOffset == aGradient.XOffset );
+            assertTrue( "Gradient YOffset", aNewGradient.YOffset == aGradient.YOffset );
+            assertTrue( "Gradient StartIntensity", aNewGradient.StartIntensity == aGradient.StartIntensity );
+            assertTrue( "Gradient EndIntensity", aNewGradient.EndIntensity == aGradient.EndIntensity );
+            assertTrue( "Gradient StepCount", aNewGradient.StepCount == aGradient.StepCount );
 
             // Hatch
             xProp = xDia.getDataPointProperties( 1, 0 );
-            assure( "No DataPointProperties for (1,0)", xProp != null );
+            assertTrue( "No DataPointProperties for (1,0)", xProp != null );
 
             // note: the FillHatch property is optional, however it was
             // supported in the old chart's API
             XNameContainer xHatchTable = (XNameContainer) UnoRuntime.queryInterface(
                 XNameContainer.class,
                 xFact.createInstance( "com.sun.star.drawing.HatchTable" ));
-            assure( "no hatch table", xHatchTable != null );
+            assertTrue( "no hatch table", xHatchTable != null );
             String aHatchName = "NewAPITestHatch";
             Hatch aHatch = new Hatch();
             aHatch.Style = HatchStyle.DOUBLE;
@@ -696,42 +672,42 @@ public class TestCaseOldAPI extends ComplexTestCase {
             xProp.setPropertyValue( "FillStyle", FillStyle.HATCH );
             xProp.setPropertyValue( "FillBackground", new Boolean( true ));
             String aNewHatchName = AnyConverter.toString( xProp.getPropertyValue( "FillHatchName" ));
-            assure( "HatchName", aNewHatchName.equals( aHatchName ));
+            assertTrue( "HatchName", aNewHatchName.equals( aHatchName ));
             Hatch aNewHatch = (Hatch) AnyConverter.toObject(
                 new Type( Hatch.class ),
                 xHatchTable.getByName( aNewHatchName ));
-            assure( "Hatch Style", aNewHatch.Style == aHatch.Style );
-            assure( "Hatch Color", aNewHatch.Color == aHatch.Color );
-            assure( "Hatch Distance", aNewHatch.Distance == aHatch.Distance );
-            assure( "Hatch Angle", aNewHatch.Angle == aHatch.Angle );
-            assure( "FillBackground", AnyConverter.toBoolean( xProp.getPropertyValue( "FillBackground" )) );
+            assertTrue( "Hatch Style", aNewHatch.Style == aHatch.Style );
+            assertTrue( "Hatch Color", aNewHatch.Color == aHatch.Color );
+            assertTrue( "Hatch Distance", aNewHatch.Distance == aHatch.Distance );
+            assertTrue( "Hatch Angle", aNewHatch.Angle == aHatch.Angle );
+            assertTrue( "FillBackground", AnyConverter.toBoolean( xProp.getPropertyValue( "FillBackground" )) );
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testStatistics()
     {
         try
         {
             XDiagram xDia = mxOldDoc.getDiagram();
-            assure( "Invalid Diagram", xDia != null );
+            assertTrue( "Invalid Diagram", xDia != null );
 
             XPropertySet xProp = xDia.getDataRowProperties( 0 );
-            assure( "No DataRowProperties for first series", xProp != null );
+            assertTrue( "No DataRowProperties for first series", xProp != null );
 
             xProp.setPropertyValue( "MeanValue", new Boolean( true ));
-            assure( "No MeanValue", AnyConverter.toBoolean( xProp.getPropertyValue( "MeanValue" )) );
+            assertTrue( "No MeanValue", AnyConverter.toBoolean( xProp.getPropertyValue( "MeanValue" )) );
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
@@ -746,7 +722,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
 
             ChartDataRowSource eNewSource = ChartDataRowSource.ROWS;
             xDiaProp.setPropertyValue( "DataRowSource", eNewSource );
-            assure( "Couldn't set \"DataRowSource\" property at Diagram",
+            assertTrue( "Couldn't set \"DataRowSource\" property at Diagram",
                     AnyConverter.toObject(
                         new Type( ChartDataRowSource.class ),
                         xDiaProp.getPropertyValue( "DataRowSource" )) == eNewSource );
@@ -774,7 +750,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
             XChartData xData = mxOldDoc.getData();
             XChartDataArray xDataArray = (XChartDataArray) UnoRuntime.queryInterface(
                 XChartDataArray.class, xData );
-            assure( "document has no XChartDataArray", xDataArray != null );
+            assertTrue( "document has no XChartDataArray", xDataArray != null );
 
             xDataArray.setData( aData );
             xDataArray.setRowDescriptions( aRowDescriptions );
@@ -784,13 +760,13 @@ public class TestCaseOldAPI extends ComplexTestCase {
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testStockProperties()
     {
         try
@@ -799,66 +775,66 @@ public class TestCaseOldAPI extends ComplexTestCase {
 
             XMultiServiceFactory xFact = (XMultiServiceFactory) UnoRuntime.queryInterface(
                 XMultiServiceFactory.class, mxOldDoc );
-            assure( "document is no factory", xFact != null );
+            assertTrue( "document is no factory", xFact != null );
 
             String aMyServiceName = new String( "com.sun.star.chart.StockDiagram" );
             XDiagram xDia = (XDiagram) UnoRuntime.queryInterface(
                 XDiagram.class, xFact.createInstance( aMyServiceName ));
-            assure( aMyServiceName + " could not be created", xDia != null );
+            assertTrue( aMyServiceName + " could not be created", xDia != null );
 
             mxOldDoc.setDiagram( xDia );
 
             XPropertySet xDiaProp = (XPropertySet) UnoRuntime.queryInterface(
                 XPropertySet.class, xDia );
-            assure( "Diagram is no XPropertySet", xDiaProp != null );
+            assertTrue( "Diagram is no XPropertySet", xDiaProp != null );
 
             xDiaProp.setPropertyValue( "Volume", new Boolean( true ));
-            assure( "Has Volume", AnyConverter.toBoolean( xDiaProp.getPropertyValue( "Volume" )));
+            assertTrue( "Has Volume", AnyConverter.toBoolean( xDiaProp.getPropertyValue( "Volume" )));
 
             xDiaProp.setPropertyValue( "UpDown", new Boolean( true ));
-            assure( "Has UpDown", AnyConverter.toBoolean( xDiaProp.getPropertyValue( "UpDown" )));
+            assertTrue( "Has UpDown", AnyConverter.toBoolean( xDiaProp.getPropertyValue( "UpDown" )));
 
             // MinMaxLine
             XStatisticDisplay xMinMaxProvider = (XStatisticDisplay) UnoRuntime.queryInterface(
                 XStatisticDisplay.class, xDia );
-            assure( "Diagram is no XStatisticDisplay", xMinMaxProvider != null );
+            assertTrue( "Diagram is no XStatisticDisplay", xMinMaxProvider != null );
             XPropertySet xMinMaxProp = xMinMaxProvider.getMinMaxLine();
-            assure( "No MinMaxLine", xMinMaxProp != null );
+            assertTrue( "No MinMaxLine", xMinMaxProp != null );
 
             int nLineColor = 0x458b00; // chartreuse4
             xMinMaxProp.setPropertyValue( "LineColor", new Integer( nLineColor ));
             int nNewColor = AnyConverter.toInt( xMinMaxProp.getPropertyValue( "LineColor" ) );
-            assure( "Changing LineColor of MinMax Line", nNewColor == nLineColor );
+            assertTrue( "Changing LineColor of MinMax Line", nNewColor == nLineColor );
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testFactory()
     {
         try
         {
             XMultiServiceFactory xFact = (XMultiServiceFactory) UnoRuntime.queryInterface(
                 XMultiServiceFactory.class, mxOldDoc );
-            assure( "document is no factory", xFact != null );
+            assertTrue( "document is no factory", xFact != null );
 
             Object aTestTable = xFact.createInstance( "com.sun.star.drawing.GradientTable" );
-            assure( "Couldn't create gradient table via factory", aTestTable != null );
+            assertTrue( "Couldn't create gradient table via factory", aTestTable != null );
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ------------
-
+    @Test
     public void testData()
     {
         try
@@ -883,7 +859,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
                     XPropertySet.class, mxOldDoc.getDiagram() );
             ChartDataRowSource eNewSource = ChartDataRowSource.ROWS;
             xDiaProp.setPropertyValue( "DataRowSource", eNewSource );
-            assure( "Couldn't set \"DataRowSource\" property at Diagram",
+            assertTrue( "Couldn't set \"DataRowSource\" property at Diagram",
                     AnyConverter.toObject(
                         new Type( ChartDataRowSource.class ),
                         xDiaProp.getPropertyValue( "DataRowSource" )) == eNewSource );
@@ -891,7 +867,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
             XChartData xData = mxOldDoc.getData();
             XChartDataArray xDataArray = (XChartDataArray) UnoRuntime.queryInterface(
                 XChartDataArray.class, xData );
-            assure( "document has no XChartDataArray", xDataArray != null );
+            assertTrue( "document has no XChartDataArray", xDataArray != null );
 
             xDataArray.setData( aData );
             xDataArray.setRowDescriptions( aRowDescriptions );
@@ -908,41 +884,37 @@ public class TestCaseOldAPI extends ComplexTestCase {
             xData = mxOldDoc.getData();
             xDataArray = (XChartDataArray) UnoRuntime.queryInterface(
                 XChartDataArray.class, xData );
-            assure( "document has no XChartDataArray", xDataArray != null );
+            assertTrue( "document has no XChartDataArray", xDataArray != null );
 
             aReadData = xDataArray.getData();
             aReadRowDescriptions = xDataArray.getRowDescriptions();
             aReadColumnDescriptions = xDataArray.getColumnDescriptions();
 
             // compare to values set before
-            assure( "Data size differs", aData.length == aReadData.length );
+            assertTrue( "Data size differs", aData.length == aReadData.length );
             for( int i=0; i<aReadData.length; ++i )
             {
-                assure( "Data size differs", aData[i].length == aReadData[i].length );
+                assertTrue( "Data size differs", aData[i].length == aReadData[i].length );
                 for( int j=0; j<aReadData[i].length; ++j )
-                    assure( "Data differs", aData[i][j] == aReadData[i][j] );
+                    assertTrue( "Data differs", aData[i][j] == aReadData[i][j] );
             }
 
-            assure( "Column Description size differs", aColumnDescriptions.length == aReadColumnDescriptions.length );
+            assertTrue( "Column Description size differs", aColumnDescriptions.length == aReadColumnDescriptions.length );
             for( int i=0; i<aReadColumnDescriptions.length; ++i )
-                assure( "Column Descriptions differ", aColumnDescriptions[i].equals( aReadColumnDescriptions[i] ));
+                assertTrue( "Column Descriptions differ", aColumnDescriptions[i].equals( aReadColumnDescriptions[i] ));
 
-            assure( "Row Description size differs", aRowDescriptions.length == aReadRowDescriptions.length );
+            assertTrue( "Row Description size differs", aRowDescriptions.length == aReadRowDescriptions.length );
             for( int i=0; i<aReadRowDescriptions.length; ++i )
-                assure( "Row Descriptions differ", aRowDescriptions[i].equals( aReadRowDescriptions[i] ));
+                assertTrue( "Row Descriptions differ", aRowDescriptions[i].equals( aReadRowDescriptions[i] ));
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
     }
 
     // ================================================================================
-
-    private XModel                    mxChartModel;
-    private XChartDocument            mxOldDoc;
-    private boolean                   mbCreateView;
 
     // --------------------------------------------------------------------------------
 
@@ -953,7 +925,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
         {
             XComponentLoader aLoader = (XComponentLoader) UnoRuntime.queryInterface(
                 XComponentLoader.class,
-                ((XMultiServiceFactory)param.getMSF()).createInstance( "com.sun.star.frame.Desktop" ) );
+                xMSF.createInstance( "com.sun.star.frame.Desktop" ) );
 
             aResult = (XModel) UnoRuntime.queryInterface(
                 XModel.class,
@@ -964,8 +936,8 @@ public class TestCaseOldAPI extends ComplexTestCase {
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
 
         return aResult;
@@ -980,12 +952,12 @@ public class TestCaseOldAPI extends ComplexTestCase {
         {
             aResult = (XModel) UnoRuntime.queryInterface(
                 XModel.class,
-                ((XMultiServiceFactory)param.getMSF()).createInstance( "com.sun.star.comp.chart2.ChartModel" ) );
+                xMSF.createInstance( "com.sun.star.comp.chart2.ChartModel" ) );
         }
         catch( Exception ex )
         {
-            failed( ex.getMessage() );
-            ex.printStackTrace( (PrintWriter)log );
+            fail( ex.getMessage() );
+            ex.printStackTrace( System.err );
         }
 
         return aResult;
@@ -1009,8 +981,8 @@ public class TestCaseOldAPI extends ComplexTestCase {
             }
             catch( Exception ex )
             {
-                failed( ex.getMessage() );
-                ex.printStackTrace( (PrintWriter)log );
+                fail( ex.getMessage() );
+                ex.printStackTrace( System.err );
             }
 
         return xResult;
@@ -1020,9 +992,9 @@ public class TestCaseOldAPI extends ComplexTestCase {
 
     private void printInterfacesAndServices( Object oObj )
     {
-        log.println( "Services:" );
+        System.out.println( "Services:" );
         util.dbg.getSuppServices( oObj );
-        log.println( "Interfaces:" );
+        System.out.println( "Interfaces:" );
         util.dbg.printInterfaces( (XInterface)oObj, true );
     }
 
@@ -1047,7 +1019,7 @@ public class TestCaseOldAPI extends ComplexTestCase {
     private boolean approxEqual( int a, int b, int tolerance )
     {
         if( a != b )
-            log.println( "Integer values differ by " + java.lang.Math.abs( a-b ));
+            System.out.println( "Integer values differ by " + java.lang.Math.abs( a-b ));
         return ( ( a - tolerance <= b ) ||
                  ( a + tolerance >= b ));
     }
