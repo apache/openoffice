@@ -30,24 +30,18 @@
  * @author  oj93728
  */
 package complex.connectivity.hsqldb;
-import complex.connectivity.HsqlDriverTest;
 import java.sql.*;
 import java.lang.reflect.Method;
 
+import static org.junit.Assert.*;
 
 public class DatabaseMetaData {
     
     private java.sql.DatabaseMetaData m_xMD;
-    private HsqlDriverTest m_TestCase;
     
     /** Creates a new instance of DatabaseMetaData */
-    public DatabaseMetaData(HsqlDriverTest _testCase,java.sql.DatabaseMetaData _xmd) {
-        m_TestCase = _testCase;
+    public DatabaseMetaData(java.sql.DatabaseMetaData _xmd) {
         m_xMD = _xmd;
-    }
-    
-    protected void assure(String _sText,boolean btest){
-        m_TestCase.assurePublic(_sText,btest);
     }
     
     protected void testMethod(String sName,Class[] params,Object[] objParams,int nCount){
@@ -59,18 +53,18 @@ public class DatabaseMetaData {
                 ResultSet rs = (ResultSet)aGet.invoke(m_xMD, objParams);
                 ResultSetMetaData rsMD = rs.getMetaData();            
 
-                assure( sName + " returns wrong column count" , rsMD.getColumnCount() == nCount);
+                assertTrue( sName + " returns wrong column count" , rsMD.getColumnCount() == nCount);
             }
             else
-                assure( sName + " returns wrong column count" , false);
+                fail( sName + " returns wrong column count");
         } catch( java.lang.NoSuchMethodException ex ) {
-            assure("Method " + sName + " could not be found!",false);
+            fail("Method " + sName + " could not be found!");
         } catch( java.lang.IllegalAccessException ex ) {
-            assure("IllegalAccessException!",false);
+            fail("IllegalAccessException!");
         } catch( SQLException ex ) {
-            assure("SQLException occurred: " + ex.getMessage() ,false);
+            fail("SQLException occurred: " + ex.getMessage());
         } catch( java.lang.reflect.InvocationTargetException ex ) {
-            assure("IllegalAccessException!",false);
+            fail("IllegalAccessException!");
         } finally {
             
         }
@@ -149,7 +143,7 @@ public class DatabaseMetaData {
             // testMethod("getCrossReference", a3,o3,14);
   
         } catch( java.lang.ClassNotFoundException ex) {
-            assure("ClassNotFoundException: " + ex.getMessage() ,false);
+            fail("ClassNotFoundException: " + ex.getMessage());
         }
  */
     }
