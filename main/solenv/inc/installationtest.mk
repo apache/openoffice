@@ -64,7 +64,7 @@ installationtest_instpath = $(SOLARVERSION)/$(INPATH)/installation$(UPDMINOREXT)
 
 .IF "$(OS)" == "WNT"
 my_sofficepath = \
-    $(SOLARSRC)'instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/Openoffice 4/program/soffice.exe'
+    $(SOLARSRC)'/instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/Openoffice 4/program/soffice.exe'
 .ELSE
 my_sofficepath = \
     $(SOLARSRC)/instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/openoffice4/program/soffice
