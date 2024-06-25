@@ -2762,7 +2762,7 @@ namespace osl_FileStatus
             		nError1 = pDir->getNextItem( m_aItem_2 );
 			ASSERT_TRUE(::osl::FileBase::E_None == nError1) << "get second item failed!";
 			pDir->close();
-			//mindy: failed on my RH9,so removed temporally
+			//mindy: failed on my RH9,so removed temporarily
 			//nError1 = ::osl::DirectoryItem::get( aVolURL2, m_aVolumeItem );
 			//ASSERT_TRUE(::osl::FileBase::E_None == nError1) << "get volume item failed!";
 
