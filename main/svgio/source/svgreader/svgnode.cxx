@@ -178,7 +178,7 @@ namespace svgio
             OSL_ENSURE(!mbCssStyleVectorBuilt, "OOps, fillCssStyleVector called double ?!?");
             mbCssStyleVectorBuilt = true;
 
-            // #125293# If we have CssStyles we need to buuild a linked list of SvgStyleAttributes
+            // #125293# If we have CssStyles we need to build a linked list of SvgStyleAttributes
             // which represent this for the current object. There are various methods to
             // specify CssStyles which need to be taken into account in a given order:
             // - local CssStyle (independent from global CssStyles at SvgDocument)
@@ -222,7 +222,7 @@ namespace svgio
 
             if(maCssStyleVector.empty())
             {
-                // return given original if no CssStlyes found
+                // return given original if no CssStyles found
                 return &rOriginal;
             }
             else
@@ -241,7 +241,7 @@ namespace svgio
                 // only changing some pointers.
                 // The alternative would be to create the style hierarchy for every element (or even 
                 // for the element containing the hierarchy) in a vector of pointers and to use that.
-                // Resetting the CssStyleParent on rOriginal is probably not needeed 
+                // Resetting the CssStyleParent on rOriginal is probably not needed
                 // but simply safer to do.
                 const_cast< SvgStyleAttributes& >(rOriginal).setCssStyleParent(0);
 
@@ -542,7 +542,7 @@ namespace svgio
                     // in a defs node (which gets not decomposed by itself), but you never
                     // know
 
-                    // also not directly used are Markers and Patterns, only indirecty used
+                    // also not directly used are Markers and Patterns, only indirectly used
                     // by reference
 
                     // #121656# also do not decompose nodes which have display="none" set

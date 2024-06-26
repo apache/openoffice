@@ -407,12 +407,12 @@ protected:
 	}
 
 public:
-	// public to check if data transmition is OK
+	// public to check if data transmission is OK
 	sal_Char pReadBuffer[30];
 	ServerSocketThread( )
 	{
 		m_id = getIdentifier( );
-		//printf("# successfully creat this server thread %d!\n",  m_id );
+		//printf("# successfully create this server thread %d!\n",  m_id );
 	}
 
 	~ServerSocketThread( )
@@ -601,11 +601,11 @@ protected:
 	}
 
 public:
-	// public to check if data transmition is OK
+	// public to check if data transmission is OK
 	WriteSocketThread(sal_Int32 _nBufferSize, int _nValue )
 	{
 		m_id = getIdentifier( );
-		//printf("# successfully creat this server thread %d!\n",  m_id );
+		//printf("# successfully create this server thread %d!\n",  m_id );
 
         m_aValues.createBuffer(_nBufferSize, _nValue);
 	}
@@ -1448,7 +1448,7 @@ namespace osl_Socket
 
 	/**  test writer's comment:
 
-	    the assignment operator does not support direct assinment like:
+	    the assignment operator does not support direct assignment like:
 	    ::osl::Socket sSocket = sHandle.
 	*/
 	TEST_F(operators, operators_assignment_handle)

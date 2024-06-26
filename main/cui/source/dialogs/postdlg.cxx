@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cui.hxx"
 
@@ -256,3 +254,5 @@ IMPL_LINK( SvxPostItDialog, OKHdl, Button *, EMPTYARG )
 	EndDialog( RET_OK );
 	return 0;
 }
+
+/* vim: set noet sw=4 ts=4: */
