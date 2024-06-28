@@ -20,70 +20,59 @@
 #**************************************************************
 
 
-
-
-# Builds the SpreadSheet examples of the Developers Guide.
+.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
+nothing .PHONY:
+.ELSE
 
 PRJ = ..$/..
 PRJNAME = cli_ure
 TARGET := qa_test_climaker
+
+.IF "$(OOO_JUNIT_JAR)" != ""
 PACKAGE = cliversion
 
-.INCLUDE: settings.mk
+# here store only Files which contain a @Test
+JAVATESTFILES = \
+    VersionTestCase.java
 
-#----- compile .java files -----------------------------------------
+# put here all other files
+JAVAFILES = $(JAVATESTFILES)
 
 JARFILES = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar OOoRunner.jar
-JAVAFILES = VersionTestCase.java
-JAVACLASSFILES	= $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
+EXTRAJARFILES = $(OOO_JUNIT_JAR)
 
-#----- make a jar from compiled files ------------------------------
-
-MAXLINELENGTH = 100000
-
-JARCLASSDIRS    = $(PACKAGE)
-JARTARGET       = $(TARGET).jar
-JARCOMPRESS 	= TRUE
+JAVAIFLAGS =\
+    -DSystemRoot=$(SystemRoot) \
+    -Dcli_test_program=$(BIN)$/runtests.exe \
+    -Dpath="$(office)"\OpenOffice.org\URE\bin
 
 
+# Sample how to debug
+# JAVAIFLAGS+=-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9003,suspend=y
+
+.END
+
+.IF "$(office)" != ""
+
+.INCLUDE: settings.mk
 .INCLUDE: target.mk
+.INCLUDE: installationtest.mk
 
-ALLTAR : \
-	echo
+ALLTAR : javatest
 
-echo :
-    @echo .
-    @echo ###########################   N O T E  ######################################
-    @echo . 
-    @echo To run the test you have to provide the path to the  office location. It must
-    @echo contain the ure (d:\myOffice\OpenOffice.org\URE).
-    @echo Also an office must be installed with full system integration.
-    @echo Example:
-    @echo dmake run office="d:\myOffice"
-    @echo .
-    @echo To build a test library with a particular name run. The names must start with "version". 
-    @echo For example:
-    @echo "dmake name=version_10_10_10.dll"	
-    @echo ###########################   N O T E  ######################################
-    @echo .
-    @echo .	
+.ELSE
+ALLTAR :
+	@echo .
+	@echo ###########################   N O T E  ######################################
+	@echo . 
+	@echo To run the test you have to provide the path to the  office location. It must
+	@echo "contain the ure (d:\myOffice\OpenOffice.org\URE)."
+	@echo Also an office must be installed with full system integration.
+	@echo Example:
+	@echo "dmake office="d:\myOffice""
+	@echo .
+	@echo ###########################   N O T E  ######################################
+	exit 1
+.ENDIF
 
-# --- Parameters for the test --------------------------------------
-
-# test base is java complex
-CT_TESTBASE = -TestBase java_complex
-
-# test looks something like the.full.package.TestName
-CT_TEST     = -o $(PACKAGE:s\$/\.\).$(JAVAFILES:b)
-
-# start the runner application
-CT_APP      = org.openoffice.Runner
-
-CT_NOOFFICE = -NoOffice
-# --- Targets ------------------------------------------------------
-
-RUN: $(MISC)$/copyassemblies.done
-    java -cp $(CLASSPATH) -DSystemRoot=$(SystemRoot) -Dcli_test_program=$(BIN)$/runtests.exe -Dpath="$(office)"\OpenOffice.org\URE\bin $(CT_APP) $(CT_NOOFFICE) $(CT_TESTBASE) $(CT_TEST)
-
-run: RUN
-
+.END

@@ -23,56 +23,41 @@
 package cliversion;
 
 
-import complexlib.ComplexTestCase;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 
-public class VersionTestCase extends ComplexTestCase
+public class VersionTestCase
 {
-    public String[] getTestMethodNames()
-    {
-        return new String[]
-        {
-            "checkVersion"
-        };
-    }
-
-    public void checkVersion()
+    @Test
+    public void checkVersion() throws Exception
     {
         int retVal = 0;
-        try
-        {
-            String testProgram = System.getProperty("cli_test_program");
-            if (testProgram == null || testProgram.length() == 0)
-                failed("Check the make file. Java must be called with -Dcli_ure_test=pathtoexe");
-            String unoPath = System.getProperty("path");
-            if (unoPath == null || unoPath.length() == 0)
-                failed("Check the make file. Java must be called with -Duno_path=path_to_ure_bin_folder");
-            String sSystemRoot = System.getProperty("SystemRoot");
-            if (sSystemRoot == null || sSystemRoot.length() == 0)
-                failed("Check the make file. Java  must be called with -DSystemRoot=%SystemRoot%.");
+        String testProgram = System.getProperty("cli_test_program");
+        if (testProgram == null || testProgram.length() == 0)
+            fail("Check the make file. Java must be called with -Dcli_ure_test=pathtoexe");
+        String unoPath = System.getProperty("path");
+        if (unoPath == null || unoPath.length() == 0)
+            fail("Check the make file. Java must be called with -Duno_path=path_to_ure_bin_folder");
+        String sSystemRoot = System.getProperty("SystemRoot");
+        if (sSystemRoot == null || sSystemRoot.length() == 0)
+            fail("Check the make file. Java  must be called with -DSystemRoot=%SystemRoot%.");
 
-//            System.out.println("UNO_PATH="+unoPath);
-            //We need to set the PATH because otherwise it appears that runtests inherits the PATH
-            //from build environment. Then the bootstrapping fails because the libraries
-            //are not used from the office.
-            //.NET 2 requires SystemRoot being set.
-            String[] arEnv = new String[] {
-                    "PATH=" + unoPath, "SystemRoot=" + sSystemRoot};
-            Process proc = null;
+//        System.out.println("UNO_PATH="+unoPath);
+        //We need to set the PATH because otherwise it appears that runtests inherits the PATH
+        //from build environment. Then the bootstrapping fails because the libraries
+        //are not used from the office.
+        //.NET 2 requires SystemRoot being set.
+        String[] arEnv = new String[] {
+                "PATH=" + unoPath, "SystemRoot=" + sSystemRoot};
+        Process proc = null;
 
-            proc = Runtime.getRuntime().exec(testProgram, arEnv);
-            Reader outReader = new Reader(proc.getInputStream());
-            Reader errReader = new Reader(proc.getErrorStream());
-            proc.waitFor();
-            retVal = proc.exitValue();
-        } catch(Exception e)
-        {
-            e.printStackTrace();
-            System.out.println(e.getMessage());
-            failed("Unexpected exception.");
-        }
-        if (retVal != 0)
-            failed("Tests for library versioning failed.");
+        proc = Runtime.getRuntime().exec(testProgram, arEnv);
+        Reader outReader = new Reader(proc.getInputStream());
+        Reader errReader = new Reader(proc.getErrorStream());
+        proc.waitFor();
+        retVal = proc.exitValue();
+        assertTrue("Tests for library versioning failed.", retVal == 0);
     }
 }
 
