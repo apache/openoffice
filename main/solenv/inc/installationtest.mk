@@ -138,7 +138,7 @@ javatest .PHONY : $(JAVATARGET)
         -Dorg.openoffice.test.arg.user=$(my_file)$(PWD)/$(MISC)/$(TARGET)/user \
         $(my_javaenv) $(TEST_ARGUMENTS:^"-Dorg.openoffice.test.arg.testarg.") \
         org.junit.runner.JUnitCore \
-        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(i:s/.java//))
+        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(subst,/,. $(i:s/.java//)))
 .ELSE
     $(COMMAND_ECHO)$(JAVAI) $(JAVAIFLAGS) $(JAVACPS) \
         '$(OOO_JUNIT_JAR)$(PATH_SEPERATOR)$(CLASSPATH)' \
@@ -146,7 +146,7 @@ javatest .PHONY : $(JAVATARGET)
         -Dorg.openoffice.test.arg.user=$(my_file)$(PWD)/$(MISC)/$(TARGET)/user \
         $(my_javaenv) $(TEST_ARGUMENTS:^"-Dorg.openoffice.test.arg.testarg.") \
         org.junit.runner.JUnitCore \
-        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(i:s/.java//))
+        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(subst,/,. $(i:s/.java//)))
 .END
     $(RM) -r $(MISC)/$(TARGET)/user
 .IF "$(OS)" == "WNT" && "$(OOO_TEST_SOFFICE)" == ""
