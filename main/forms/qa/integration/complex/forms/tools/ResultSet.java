@@ -24,7 +24,7 @@
  * and open the template in the editor.
  */
 
-package org.openoffice.complex.forms.tools;
+package integration.complex.forms.tools;
 
 import com.sun.star.container.XNameAccess;
 import com.sun.star.io.XInputStream;

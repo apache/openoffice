@@ -24,7 +24,7 @@
  * and open the template in the editor.
  */
 
-package org.openoffice.xforms;
+package integration.xforms;
 
 import com.sun.star.xml.dom.DOMException;
 import com.sun.star.xml.dom.XDocument;
