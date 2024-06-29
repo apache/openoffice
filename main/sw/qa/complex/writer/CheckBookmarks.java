@@ -37,7 +37,6 @@ import com.sun.star.text.XTextCursor;
 import com.sun.star.text.XTextDocument;
 import com.sun.star.text.XTextRange;
 import com.sun.star.uno.UnoRuntime;
-import complexlib.ComplexTestCase;
 import java.math.BigInteger;
 import org.junit.After;
 import org.junit.AfterClass;
