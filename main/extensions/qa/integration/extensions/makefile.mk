@@ -20,60 +20,42 @@
 #**************************************************************
 
 
+.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
+nothing .PHONY:
+.ELSE
 
 PRJ = ..$/..$/..
-TARGET  = ExtensionsIntegrationTests
 PRJNAME = extensions
+TARGET  = ExtensionsIntegrationTests
+
+.IF "$(OOO_JUNIT_JAR)" != ""
 PACKAGE = integration$/$(PRJNAME)
 
-# --- Settings -----------------------------------------------------
+# here store only Files which contain a @Test
+JAVATESTFILES = \
+    ObjectInspector.java
+
+# put here all other files
+JAVAFILES = $(JAVATESTFILES) \
+    ConsoleWait.java \
+    MethodHandler.java \
+    Frame.java \
+    ComponentFactory.java \
+    ServicesHandler.java \
+    HelpTextProvider.java
+
+JARFILES        = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar test.jar
+EXTRAJARFILES = $(OOO_JUNIT_JAR)
+
+# Sample how to debug
+# JAVAIFLAGS+=-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9003,suspend=y
+
+.END
+
 .INCLUDE: settings.mk
+.INCLUDE: target.mk
+.INCLUDE: installationtest.mk
 
+ALLTAR : javatest
 
-#----- compile .java files -----------------------------------------
-
-JARFILES        = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar OOoRunner.jar
-JAVAFILES       := $(shell @$(FIND) .$/*.java)
-JAVACLASSFILES	:= $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-#----- make a jar from compiled files ------------------------------
-
-MAXLINELENGTH = 100000
-
-JARCLASSDIRS    = $(PACKAGE)
-JARTARGET       = $(TARGET).jar
-JARCOMPRESS 	= TRUE
-
-# --- Runner Settings ----------------------------------------------
-
-# create connection string for OOoRunner
-.IF "$(RUNNER_CONNECTION_STRING)" == ""
-    .IF "$(OOO_RUNNER_PORT)" == ""
-        OOO_RUNNER_PORT=8100
-    .ENDIF
-    .IF "$(OOO_RUNNER_HOST)" == ""
-        OOO_RUNNER_HOST=localhost
-    .ENDIF
-    RUNNER_CONNECTION_STRING=socket,host=$(OOO_RUNNER_HOST),port=$(OOO_RUNNER_PORT)
-.ENDIF
-
-# classpath and argument list
-RUNNER_CLASSPATH = -cp $(CLASSPATH)$(PATH_SEPERATOR)$(SOLARBINDIR)$/OOoRunner.jar$(PATH_SEPERATOR)$(CLASSPATH)$(PATH_SEPERATOR)$(SOLARBINDIR)$/ConnectivityTools.jar
-RUNNER_ARGS = org.openoffice.Runner -TestBase java_complex -cs $(RUNNER_CONNECTION_STRING)
-
-# --- Targets ------------------------------------------------------
-
-.IF "$(depend)" == ""
-ALL :   ALLTAR
-.ELSE
-ALL: 	ALLDEP
-.ENDIF
-
-.INCLUDE :  target.mk
-
-run:
-    +java $(RUNNER_CLASSPATH) $(RUNNER_ARGS) -sce extensions_complex.sce
-
-run_%:
-    +java $(RUNNER_CLASSPATH) $(RUNNER_ARGS) -o integration.$(PRJNAME).$(@:s/run_//)
-
+.END
