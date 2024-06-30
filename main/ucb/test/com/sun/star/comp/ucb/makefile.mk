@@ -20,37 +20,36 @@
 #**************************************************************
 
 
+.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
+nothing .PHONY:
+.ELSE
 
 PRJ := ..$/..$/..$/..$/..$/..
 PRJNAME := ucb
-PACKAGE := com$/sun$/star$/comp$/ucb
 TARGET := test_com_sun_star_comp_ucb
 
-.INCLUDE : settings.mk
+.IF "$(OOO_JUNIT_JAR)" != ""
+PACKAGE := com$/sun$/star$/comp$/ucb
 
-JAVAFILES = $(subst,$(CLASSDIR)$/$(PACKAGE)$/, $(subst,.class,.java $(JAVACLASSFILES)))
+# here store only Files which contain a @Test
+JAVATESTFILES = \
+    GlobalTransfer_Test.java
 
-CLASSDIR !:= $(CLASSDIR)$/test
+# put here all other files
+JAVAFILES = $(JAVATESTFILES)
 
-JARFILES = OOoRunner.jar \
-           ridl.jar \
-           unoil.jar \
-           juh.jar \
-           jurt.jar
+JARFILES = ridl.jar unoil.jar juh.jar jurt.jar test.jar
+EXTRAJARFILES = $(OOO_JUNIT_JAR)
 
-JAVACLASSFILES = $(CLASSDIR)$/$(PACKAGE)$/GlobalTransfer_Test.class
+# Sample how to debug
+# JAVAIFLAGS+=-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9003,suspend=y
 
+.END
+
+.INCLUDE: settings.mk
 .INCLUDE: target.mk
+.INCLUDE: installationtest.mk
 
-$(JAVAFILES): $(MISC)$/$(TARGET).createdclassdir
+ALLTAR : javatest
 
-$(MISC)$/$(TARGET).createdclassdir:
-    - $(MKDIR) $(CLASSDIR)
-    $(TOUCH) $@
-
-#ALLTAR .PHONY:
-runtest:
-    java -classpath $(CLASSPATH) org.openoffice.Runner -TestBase java_complex \
-        -AppExecutionCommand "c:\staroffice8.m13\program\soffice -accept=socket,host=localhost,port=8100;urp;" \
-        -o $(subst,$/,. $(PACKAGE)$/GlobalTransfer_Test)
-
+.END
