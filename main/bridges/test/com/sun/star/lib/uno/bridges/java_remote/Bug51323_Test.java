@@ -31,8 +31,10 @@ import com.sun.star.lib.TestBed;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
 import util.WaitUnreachable;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * Test case for bug #i51323#.
@@ -41,13 +43,10 @@ import util.WaitUnreachable;
  * Make sure that multiple calls to BridgeFactory.getBridge with empty names
  * create different bridges.</p>
  */
-public final class Bug51323_Test extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+public final class Bug51323_Test {
+    @Test
     public void test() throws Exception {
-        assure(
+        assertTrue(
             "test",
             new TestBed().execute(new Provider(), false, Client.class, 0));
     }

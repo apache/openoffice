@@ -30,7 +30,9 @@ import com.sun.star.lib.uno.typeinfo.TypeInfo;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * Test case for bug #111153#.
@@ -40,13 +42,10 @@ import complexlib.ComplexTestCase;
  * then mapping it back in with type XBase produces a proxy, instead of
  * short-cutting to the local object.</P>
  */
-public final class Bug111153_Test extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+public final class Bug111153_Test {
+    @Test
     public void test() throws Exception {
-        assure("test", new TestBed().execute(new Provider(), false,
+        assertTrue("test", new TestBed().execute(new Provider(), false,
                                              Client.class, 0));
     }
 
