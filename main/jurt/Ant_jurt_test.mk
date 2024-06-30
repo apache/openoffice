@@ -21,12 +21,7 @@
 
 
 
-PRJ := ..$/..$/..$/..$/..$/..
-PRJNAME := jurt
-TARGET := test_com_sun_star_comp_bridgefactory
+$(eval $(call gb_Ant_Ant,jurt-test,$(SRCDIR)/jurt/java/jurt-test/build.xml))
 
-PACKAGE := com$/sun$/star$/comp$/bridgefactory
-JAVATESTFILES := BridgeFactory_Test.java
-JARFILES := ridl.jar
+# vim: set noet sw=4 ts=4:
 
-.INCLUDE: javaunittest.mk

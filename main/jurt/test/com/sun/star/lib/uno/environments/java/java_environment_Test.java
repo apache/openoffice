@@ -25,17 +25,12 @@ package com.sun.star.lib.uno.environments.java;
 
 import com.sun.star.uno.Type;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
 
-public final class java_environment_Test extends ComplexTestCase {
-    public String getTestObjectName() {
-        return getClass().getName();
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+public final class java_environment_Test {
+    @Test
     public void test() {
 		java_environment env = new java_environment(null);
 		
@@ -46,16 +41,16 @@ public final class java_environment_Test extends ComplexTestCase {
                                             new Type(XInterface.class));
 		Object obj3 = env.registerInterface(obj, oid,
                                             new Type(XInterface.class));
-		assure("register ordinary interface twice",
+		assertTrue("register ordinary interface twice",
                obj2 == obj && obj3 == obj);
 
-		assure("ask for registered interface",
+		assertTrue("ask for registered interface",
                env.getRegisteredInterface(oid[0], new Type(XInterface.class))
                == obj);
 
 		env.revokeInterface(oid[0], new Type(XInterface.class));
 		env.revokeInterface(oid[0], new Type(XInterface.class));
-		assure("revoke interface",
+		assertTrue("revoke interface",
                env.getRegisteredInterface(oid[0], new Type(XInterface.class))
                == null);
 	}
