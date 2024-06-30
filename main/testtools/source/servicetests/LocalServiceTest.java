@@ -29,7 +29,14 @@ import com.sun.star.lang.XMultiComponentFactory;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 
+import org.junit.Test;
+
 public final class LocalServiceTest extends TestBase {
+    @Test
+    public void test() throws Exception {
+        super.runTest();
+    }
+
     protected TestServiceFactory getTestServiceFactory() throws Exception {
         return new TestServiceFactory() {
                 public Object get() throws Exception {
