@@ -23,45 +23,44 @@
 
 package com.sun.star.lib.util;
 
-import complexlib.ComplexTestCase;
 import util.WaitUnreachable;
 
-public final class WeakMap_Test extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
+public final class WeakMap_Test {
+    @Test
     public void test() {
         WeakMap m = new WeakMap();
-        assure("", m.size() == 0);
-        assure("", m.isEmpty());
-        assure("", !m.containsKey("key1"));
-        assure("", !m.containsValue(null));
+        assertTrue("", m.size() == 0);
+        assertTrue("", m.isEmpty());
+        assertTrue("", !m.containsKey("key1"));
+        assertTrue("", !m.containsValue(null));
         WaitUnreachable u1 = new WaitUnreachable(new Object());
         m.put("key1", u1.get());
         WaitUnreachable u2 = new WaitUnreachable(new Disposable());
         m.put("key2", u2.get());
-        assure("", m.size() == 2);
-        assure("", !m.isEmpty());
-        assure("", m.containsKey("key1"));
-        assure("", m.containsKey("key2"));
-        assure("", !m.containsKey("key3"));
-        assure("", m.containsValue(m.get("key1")));
-        assure("", m.containsValue(m.get("key2")));
-        assure("", WeakMap.getValue(m.get("key1")).equals(u1.get()));
-        assure("", WeakMap.getValue(m.get("key2")).equals(u2.get()));
-        assure("", m.values().size() == 2);
-        assure("", m.values().contains(m.get("key1")));
-        assure("", m.values().contains(m.get("key2")));
+        assertTrue("", m.size() == 2);
+        assertTrue("", !m.isEmpty());
+        assertTrue("", m.containsKey("key1"));
+        assertTrue("", m.containsKey("key2"));
+        assertTrue("", !m.containsKey("key3"));
+        assertTrue("", m.containsValue(m.get("key1")));
+        assertTrue("", m.containsValue(m.get("key2")));
+        assertTrue("", WeakMap.getValue(m.get("key1")).equals(u1.get()));
+        assertTrue("", WeakMap.getValue(m.get("key2")).equals(u2.get()));
+        assertTrue("", m.values().size() == 2);
+        assertTrue("", m.values().contains(m.get("key1")));
+        assertTrue("", m.values().contains(m.get("key2")));
         u1.waitUnreachable();
-        assure("", WeakMap.getValue(m.get("key1")) == null);
+        assertTrue("", WeakMap.getValue(m.get("key1")) == null);
         ((Disposable) u2.get()).dispose();
-        assure("", WeakMap.getValue(m.get("key2")) == null);
+        assertTrue("", WeakMap.getValue(m.get("key2")) == null);
         m.clear();
         u2.waitUnreachable();
-        assure("", m.size() == 0);
+        assertTrue("", m.size() == 0);
         m.put("key2", new Object());
-        assure("", m.size() == 1);
+        assertTrue("", m.size() == 1);
     }
 
     // This simple class (single listener, no synchronization) exploits

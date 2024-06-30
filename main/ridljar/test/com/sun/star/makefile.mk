@@ -20,13 +20,41 @@
 #**************************************************************
 
 
+.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
+nothing .PHONY:
+.ELSE
 
-PRJ := ..$/..$/..$/..$/..$/..
-PRJNAME := ridljar
-TARGET := test_com_sun_star_lib_util
+PRJ = ..$/..$/..$/..
+PRJNAME = ridljar
+TARGET  = ridljar_test
 
-PACKAGE := com$/sun$/star$/lib$/util
-JAVATESTFILES := \
-    WeakMap_Test.java
+.IF "$(OOO_JUNIT_JAR)" != ""
+PACKAGE = com$/sun$/star
 
-.INCLUDE: javaunittest.mk
+# here store only Files which contain a @Test
+JAVATESTFILES = \
+    uno/Type_Test.java \
+    uno/UnoRuntime_Test.java \
+    uno/Any_Test.java \
+    lib/util/WeakMap_Test.java \
+    lib/uno/typedesc/TypeDescription_Test.java
+
+# put here all other files
+JAVAFILES = $(JAVATESTFILES)
+
+JARFILES        = ridl.jar OOoRunner.jar
+EXTRAJARFILES = $(OOO_JUNIT_JAR)
+
+# Sample how to debug
+# JAVAIFLAGS+=-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9003,suspend=y
+
+.END
+
+.INCLUDE: settings.mk
+.INCLUDE: target.mk
+.INCLUDE: installationtest.mk
+
+ALLTAR : javatest
+
+.END
+
