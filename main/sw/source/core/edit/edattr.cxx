@@ -493,7 +493,7 @@ sal_Bool lcl_IsNoEndTxtAttrAtPos( const SwTxtNode& rTNd, xub_StrLen nPos,
 }
 
 
-// returns the scripttpye of the selection
+// returns the scripttype of the selection
 sal_uInt16 SwEditShell::GetScriptType() const
 {
 	sal_uInt16 nRet = 0;
