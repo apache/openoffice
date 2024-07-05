@@ -85,7 +85,7 @@ namespace pcr
         ::com::sun::star::beans::PropertyState
                 getCurrentTargetURLState( ) const SAL_THROW(());
 
-        /** determines whether the current button tpye is FormButtonType_URL
+        /** determines whether the current button type is FormButtonType_URL
         */
         bool    currentButtonTypeIsOpenURL() const;
 

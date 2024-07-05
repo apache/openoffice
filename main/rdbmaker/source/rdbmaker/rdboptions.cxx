@@ -334,7 +334,7 @@ OString	RdbOptions::prepareHelp()
     help += " 1. using the internal UNO type description manager -> use -R<regname>\n"
             "    where regname specifies the type library used by the UNO type description manager\n"
             "    after UNO is bootstrapped. This option disables the use of any other type libraries.\n"
-            "    The tpye library must be a valid product type library which means that all types are\n"
+            "    The type library must be a valid product type library which means that all types are\n"
             "    stored under the global base node UCR (Uno Core Reflection data).\n";
     help += " 2. using one or more type library files -> use file_1 ... file_n\n"
             "    file_1 .. file_n specifies one or more valid type library files which are used to\n"
