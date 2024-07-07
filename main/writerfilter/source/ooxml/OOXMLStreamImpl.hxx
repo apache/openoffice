@@ -36,7 +36,7 @@ using namespace com::sun::star;
 
 class OOXMLStreamImpl : public OOXMLStream
 {
-    void init();
+    void init() throw (uno::Exception);
 
     uno::Reference<uno::XComponentContext> mxContext;
     uno::Reference<io::XInputStream> mxStorageStream;
@@ -61,12 +61,17 @@ public:
     typedef boost::shared_ptr<OOXMLStreamImpl> Pointer_t;
 
     OOXMLStreamImpl
-    (OOXMLStreamImpl & rStream, StreamType_t nType);
+    (OOXMLStreamImpl & rStream, StreamType_t nType)
+    throw (uno::Exception);
+
     OOXMLStreamImpl
     (uno::Reference<uno::XComponentContext> xContext,
      uno::Reference<io::XInputStream> xStorageStream, 
-     StreamType_t nType);
-    OOXMLStreamImpl(OOXMLStreamImpl & rStream, const rtl::OUString & rId);
+     StreamType_t nType)
+    throw (uno::Exception);
+
+    OOXMLStreamImpl(OOXMLStreamImpl & rStream, const rtl::OUString & rId)
+    throw (uno::Exception);
 
     virtual ~OOXMLStreamImpl();
 
