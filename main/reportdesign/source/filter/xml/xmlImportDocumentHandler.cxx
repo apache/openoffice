@@ -336,7 +336,7 @@ void SAL_CALL ImportDocumentHandler::initialize( const uno::Sequence< uno::Any >
     m_xDelegatee = aArgs.getUnpackedValueOrDefault(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("DocumentHandler")),m_xDelegatee);
     m_xModel = aArgs.getUnpackedValueOrDefault(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Model")),m_xModel);
 
-    OSL_ENSURE(m_xDelegatee.is(),"No document handler avialable!");
+    OSL_ENSURE(m_xDelegatee.is(),"No document handler available!");
     if ( !m_xDelegatee.is() || !m_xModel.is() )
         throw uno::Exception();
 

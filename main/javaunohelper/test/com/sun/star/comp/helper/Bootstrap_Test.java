@@ -61,7 +61,7 @@ public class Bootstrap_Test {
 			System.out.println("Available services are:");
 			System.err.println();
 			if (services.length == 0)
-				System.out.println("No services avialable!");
+				System.out.println("No services available!");
 
 			else 			
 				for ( int i=0; i<services.length; i++ )
