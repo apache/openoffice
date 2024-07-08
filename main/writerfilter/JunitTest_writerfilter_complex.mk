@@ -33,7 +33,7 @@ $(eval $(call gb_JunitTest_add_jars,writerfilter_complex,\
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
-	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,writerfilter_complex,\
