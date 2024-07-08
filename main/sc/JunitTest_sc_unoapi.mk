@@ -34,6 +34,7 @@ $(eval $(call gb_JunitTest_add_jars,sc_unoapi,\
 	$(OUTDIR)/bin/OOoRunner.jar \
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,sc_unoapi,\
