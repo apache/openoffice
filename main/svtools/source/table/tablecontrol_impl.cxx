@@ -1092,7 +1092,7 @@ namespace svt { namespace table
                             continue;
 
                         OSL_ENSURE( o_newColWidthsPixel[i] <= effectiveColumnLimits[i].second,
-                            "TableControl_Impl::impl_ni_calculateColumnWidths: inconsitency!" );
+                            "TableControl_Impl::impl_ni_calculateColumnWidths: inconsistency!" );
                         if ( o_newColWidthsPixel[i] >= effectiveColumnLimits[i].first )
                         {
                             columnFlexibilities[i] = 0;
@@ -1167,7 +1167,7 @@ namespace svt { namespace table
                             continue;
 
                         OSL_ENSURE( o_newColWidthsPixel[i] >= effectiveColumnLimits[i].first,
-                            "TableControl_Impl::impl_ni_calculateColumnWidths: inconsitency!" );
+                            "TableControl_Impl::impl_ni_calculateColumnWidths: inconsistency!" );
                         if ( o_newColWidthsPixel[i] <= effectiveColumnLimits[i].first )
                         {
                             columnFlexibilities[i] = 0;
@@ -2361,7 +2361,7 @@ namespace svt { namespace table
                 m_pVScroll->SetThumbPos( m_nTopRow );
         }
 
-        // The scroll bar availaility might change when we scrolled.
+        // The scroll bar availability might change when we scrolled.
         // For instance, imagine a view with 10 rows, if which 5 fit into the window, numbered 1 to 10.
         // Now let
         // - the user scroll to row number 6, so the last 5 rows are visible
@@ -2441,7 +2441,7 @@ namespace svt { namespace table
                 m_pHScroll->SetThumbPos( m_nLeftColumn );
         }
 
-        // The scroll bar availaility might change when we scrolled. This is because we do not hide
+        // The scroll bar availability might change when we scrolled. This is because we do not hide
         // the scrollbar when it is, in theory, unnecessary, but currently at a position > 0. In this case, it will
         // be auto-hidden when it's scrolled back to pos 0.
         if ( m_nLeftColumn == 0 )
