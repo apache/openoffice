@@ -28,6 +28,7 @@ $(eval $(call gb_JunitTest_add_jars,bean_complex,\
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
 	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 	$(OUTDIR)/bin/officebean.jar \
 ))
 
