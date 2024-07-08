@@ -32,7 +32,7 @@ $(eval $(call gb_JunitTest_add_jars,unotools_complex,\
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/test-tools.jar \
 	$(OUTDIR)/bin/unoil.jar \
-	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,unotools_complex,\
