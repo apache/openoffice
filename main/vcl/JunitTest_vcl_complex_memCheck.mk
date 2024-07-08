@@ -34,7 +34,7 @@ $(eval $(call gb_JunitTest_add_jars,vcl_complex_memCheck,\
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
-	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,vcl_complex_memCheck,\
