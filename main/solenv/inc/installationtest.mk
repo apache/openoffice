@@ -56,11 +56,7 @@ installationtest_instset = \
     $(SOLARSRC)/instsetoo_native/$(INPATH)/Apache_OpenOffice/archive/install/$(defaultlangiso)
 .END
 
-.IF "$(OS)" == "WNT"
-installationtest_instpath = `cat $(MISC)/$(TARGET)/installation.flag`
-.ELSE
 installationtest_instpath = $(SOLARVERSION)/$(INPATH)/installation$(UPDMINOREXT)
-.END
 
 .IF "$(OS)" == "WNT"
 my_sofficepath = \
@@ -81,22 +77,6 @@ my_cppenv = \
     -env:arg-env=$(OOO_LIBRARY_PATH_VAR)"$${{$(OOO_LIBRARY_PATH_VAR)+=$$$(OOO_LIBRARY_PATH_VAR)}}"
 my_javaenv = \
     -Dorg.openoffice.test.arg.env=$(OOO_LIBRARY_PATH_VAR)"$${{$(OOO_LIBRARY_PATH_VAR)+=$$$(OOO_LIBRARY_PATH_VAR)}}"
-.END
-
-# Work around Windows problems with long pathnames (see issue 50885) by
-# installing into the temp directory instead of the module output tree (in which
-# case $(TARGET).installation.flag contains the path to the temp installation,
-# which is removed after smoketest); can be removed once issue 50885 is fixed;
-# on other platforms, a single installation to solver is created in
-# smoketestoo_native:
-.IF "$(OS)" == "WNT" && "$(OOO_TEST_SOFFICE)" == ""
-OOO_EXTRACT_TO:=$(shell cygpath -m `mktemp -dt ooosmoke.XXXXXX`)
-$(MISC)/$(TARGET)/installation.flag : $(shell \
-        ls $(installationtest_instset)/Apache_OpenOffice_*_install-arc_$(defaultlangiso).zip)
-    $(COMMAND_ECHO)$(MKDIRHIER) $(@:d)
-    $(COMMAND_ECHO)unzip -q $(installationtest_instset)/Apache_OpenOffice_*_install-arc_$(defaultlangiso).zip -d "$(OOO_EXTRACT_TO)"
-    $(COMMAND_ECHO)mv "$(OOO_EXTRACT_TO)"/Apache_OpenOffice_*_install-arc_$(defaultlangiso) "$(OOO_EXTRACT_TO)"/opt
-    $(COMMAND_ECHO)echo "$(OOO_EXTRACT_TO)" > $@
 .END
 
 .IF "$(SOLAR_JAVA)" == "TRUE" && "$(OOO_JUNIT_JAR)" != ""
@@ -124,10 +104,6 @@ javatest_% .PHONY : $(JAVATARGET)
         $(subst,/,. $(PACKAGE)).$(@:s/javatest_//)
 .END
     $(RM) -r $(MISC)/$(TARGET)/user
-.IF "$(OS)" == "WNT" && "$(OOO_TEST_SOFFICE)" == ""
-    $(RM) -r $(installationtest_instpath) $(MISC)/$(TARGET)/installation.flag
-javatest : $(MISC)/$(TARGET)/installation.flag
-.END
 javatest .PHONY : $(JAVATARGET)
     $(COMMAND_ECHO)$(RM) -r $(MISC)/$(TARGET)/user
     $(COMMAND_ECHO)$(MKDIRHIER) $(MISC)/$(TARGET)/user
@@ -149,10 +125,6 @@ javatest .PHONY : $(JAVATARGET)
         $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(subst,/,. $(i:s/.java//)))
 .END
     $(RM) -r $(MISC)/$(TARGET)/user
-.IF "$(OS)" == "WNT" && "$(OOO_TEST_SOFFICE)" == ""
-    $(RM) -r $(installationtest_instpath) $(MISC)/$(TARGET)/installation.flag
-javatest : $(MISC)/$(TARGET)/installation.flag
-.END
 .ELSE
 javatest .PHONY :
     @echo 'javatest needs SOLAR_JAVA=TRUE and OOO_JUNIT_JAR'
