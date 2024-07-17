@@ -299,7 +299,7 @@ void XMLEmbeddedObjectImportContext::StartElement(
 	if( xHandler.is() )
 	{
 		xHandler->startDocument();
-		// #i34042: copy namepspace declarations
+		// #i34042: copy namespace declarations
 		SvXMLAttributeList *pAttrList = new SvXMLAttributeList( rAttrList );
 		Reference< XAttributeList > xAttrList( pAttrList );
 		const SvXMLNamespaceMap& rNamespaceMap = GetImport().GetNamespaceMap();
@@ -364,7 +364,7 @@ void XMLEmbeddedObjectImportContext::EndElement()
 
 
 //		// reset modifies state for the object since it has been imported
-//		// completly and therfor hasn't been modified.
+//		// completely and therefor hasn't been modified.
 //		Reference < XModifiable > xModifiable( xComp, UNO_QUERY );
 //		if( xModifiable.is() )
 //		{

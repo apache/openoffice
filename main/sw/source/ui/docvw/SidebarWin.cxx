@@ -1432,7 +1432,7 @@ void SwRedComment::ActivatePostIt()
 
     // do we want the redline selected?
     // otherwise, SwRedComment::ActivatePostIt() as well as SwRedComment::DeactivatePostIt()
-    // can be thrown out completly
+    // can be thrown out completely
     DocView()->GetDocShell()->GetWrtShell()->GotoRedline(
         DocView()->GetDocShell()->GetWrtShell()->FindRedlineOfData(pRedline->GetRedlineData()),true);
 }

@@ -148,7 +148,7 @@ class UNOTOOLS_DLLPUBLIC SvtHistoryOptions: public utl::detail::Options
 		void		SetSize( EHistoryType eHistory, sal_uInt32 nSize	)		;
 
 		/*-****************************************************************************************************//**
-			@short		clear complete sepcified list
+			@short		clear complete specified list
 			@descr		Call this methods to clear the whole list. After that GetItemCount() will return 0 ...
 						but GetSize() will return the old value!
 
@@ -163,8 +163,8 @@ class UNOTOOLS_DLLPUBLIC SvtHistoryOptions: public utl::detail::Options
 		void Clear( EHistoryType eHistory );
 
 		/*-****************************************************************************************************//**
-			@short		return complete sepcified list
-			@descr		If you will show the whole list call this method to get it completly.
+			@short		return complete specified list
+			@descr		If you will show the whole list call this method to get it completely.
 
 			@seealso	-
 
@@ -181,7 +181,7 @@ class UNOTOOLS_DLLPUBLIC SvtHistoryOptions: public utl::detail::Options
 			@descr		You can append items to a list only - removing isn't allowed for a special item!
 						The oldest entry is deleted automatically if max size arrived or you can call Clear() ...
 						It exist two different overload methods to do this.
-						One for user which have an complete history item and another one for uncompletly data sets!
+						One for user which have an complete history item and another one for incompletely data sets!
 
 			@seealso	method SetSize()
 			@seealso	method Clear()
