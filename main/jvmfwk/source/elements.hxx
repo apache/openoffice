@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #if !defined INCLUDED_JVMFWK_ELEMENTS_HXX
 #define INCLUDED_JVMFWK_ELEMENTS_HXX
@@ -94,7 +93,7 @@ public:
         an no further elements are read.
      */
     void loadFromNode(xmlDoc * pDoc,xmlNode * pJavaInfo);
-    /** The attribut nil will be set to false. The function gets the value
+    /** The attribute nil will be set to false. The function gets the value
         javaSettings/updated from the javavendors.xml and writes it to
         javaInfo@vendorUpdate in javasettings.xml
      */
@@ -132,7 +131,7 @@ private:
         (UNO_JAVA_JFW_USER_DATA, UNO_JAVA_JFW_SHARED_DATA,
         UNO_JAVA_JFW_INSTALL_DATA) and m_layer, unless the file already exists
         (see createSettingsDocument).
-        
+
         @return
         JFW_E_CONFIG_READWRITE
     */
@@ -141,7 +140,7 @@ private:
     /** helper function for prepareSettingsDocument.
     */
     void createSettingsDocument() const;
-    
+
     /** returns the system path to the data file which is to be used. The value
         depends on the member m_layer and the bootstrap parameters UNO_JAVA_JFW_USER_DATA,
         UNO_JAVA_JFW_SHARED_DATA and UNO_JAVA_JFW_INSTALL_DATA which this may be.
@@ -149,7 +148,7 @@ private:
     ::rtl::OString getSettingsPath() const;
 
     /** returns the file URL to the data file which is to be used. See getSettingsPath.
-    */  
+    */
     ::rtl::OUString getSettingsURL() const;
 
     /** Verifies if the respective settings file exist. In case UNO_JAVA_JFW_INSTALL_DATA
@@ -157,7 +156,7 @@ private:
         exist and wipe its contents. Then still FILE_DOES_NOT_EXIST is returned.
      */
     jfw::FileStatus checkSettingsFileStatus() const;
-    
+
     /** Determines the layer for which the instance the loads and writes the
         data.
     */
@@ -205,7 +204,7 @@ private:
         JFW_E_NO_SELECT. So it looped. (see issue i114509)
 
         NFS server and NFS client should have the same time. It is common
-        practise to enforce this in networks. We actually should not work
+        practice to enforce this in networks. We actually should not work
         around a malconfigured network. We must however, make sure that we do
         not loop. Maybe a better approach is, that:
         - assume that mtime and system time are reliable
@@ -287,8 +286,8 @@ public:
 };
 
 /** merges the settings for shared, user and installation during construction.
-    The class uses a simple merge mechanism for the javasettings.xml files in share and 
-    user. The following elements completly overwrite the corresponding elements 
+    The class uses a simple merge mechanism for the javasettings.xml files in share and
+    user. The following elements completely overwrite the corresponding elements
     from share:
     /java/enabled
     /java/userClassPath
@@ -322,7 +321,7 @@ private:
     ::std::vector< ::rtl::OUString> m_vmParams;
 
     ::std::vector< ::rtl::OUString> m_JRELocations;
-    
+
     CNodeJavaInfo m_javaInfo;
 
 public:
@@ -380,7 +379,7 @@ public:
     ~VersionInfo();
 
     void addExcludeVersion(const ::rtl::OUString& sVersion);
-    
+
     ::rtl::OUString sMinVersion;
     ::rtl::OUString sMaxVersion;
 
@@ -388,7 +387,7 @@ public:
         does not need to release the strings.
         The array exists as long as this object exists.
     */
-    
+
     rtl_uString** getExcludeVersions();
     sal_Int32 getExcludeVersionSize();
 };
