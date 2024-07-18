@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -123,7 +121,7 @@ SwPostItMgr::SwPostItMgr(SwView* pView)
 	SwNoteProps aProps;
     mbIsShowAnchor = aProps.IsShowAnchor();
 
-	//make sure we get the colour yellow always, even if not the first one of comments or redlining
+	//make sure we get the color yellow always, even if not the first one of comments or redlining
 	SW_MOD()->GetRedlineAuthor();
 
 	// collect all PostIts and redline comments that exist after loading the document
@@ -502,7 +500,7 @@ bool SwPostItMgr::CalcRects()
         }
 
         // show notes in right order in navigator
-        //prevent Anchors during layout to overlap, e.g. when moving a frame
+        // prevent Anchors during layout to overlap, e.g. when moving a frame
         Sort(SORT_POS);
 
         // sort the items into the right page vector, so layout can be done by page
@@ -718,7 +716,7 @@ void SwPostItMgr::LayoutPostIts()
 						}
 						else
 						{
-							//when we changed our zoom level, the offset value can be to big, so lets check for the largest possible zoom value
+							// when we changed our zoom level, the offset value can be to big, so lets check for the largest possible zoom value
 							long aAvailableHeight = mpEditWin->LogicToPixel(Size(0,mPages[n]->mPageRect.Height())).Height() - 2 * GetSidebarScrollerHeight();
 							long lOffset = -1 * GetScrollSize() * (aVisiblePostItList.size() - aAvailableHeight / GetScrollSize());
 							if (mPages[n]->lOffset < lOffset)
@@ -730,7 +728,7 @@ void SwPostItMgr::LayoutPostIts()
                        					TODO
                        					- enlarge all notes till GetNextBorder(), as we resized to average value before
                        					*/
-						//lets hide the ones which overlap the page
+						// let's hide the ones which overlap the page
                         for(SwSidebarWin_iterator i = aVisiblePostItList.begin(); i!= aVisiblePostItList.end() ; i++)
 						{
 							if (mPages[n]->lOffset != 0)
@@ -928,7 +926,7 @@ void SwPostItMgr::MakeVisible(const SwSidebarWin* pPostIt,long aPage )
 {
 	if (aPage == -1)
 	{
-		// we dont know the page yet, lets find it ourselves
+		// we don't know the page yet, let's find it ourselves
 		for (unsigned long n=0;n<mPages.size();n++)
 		{
 			if (mPages[n]->mList->size()>0)
@@ -1025,7 +1023,7 @@ bool SwPostItMgr::LayoutByPage(std::list<SwSidebarWin*> &aVisiblePostItList,cons
 		}
 	}
 
-	//start the real layout so nothing overlaps anymore
+	// start the real layout so nothing overlaps anymore
 	if (aVisiblePostItList.size()>1)
 	{
 		// if no window is moved anymore we are finished
@@ -1411,7 +1409,7 @@ SwSidebarWin* SwPostItMgr::GetNextPostIt( sal_uInt16 aDirection,
 						return NULL;
 					}
 				}
-				// lets quit, we are back at the beginng
+				// let's quit, we are back at the beginning
 				if ( (*iNextPostIt)->pPostIt==aPostIt)
 					return NULL;
 				return (*iNextPostIt)->pPostIt;
@@ -1512,7 +1510,7 @@ void SwPostItMgr::PrepareView(bool bIgnoreCount)
 	if (!HasNotes() || bIgnoreCount)
 	{
 		mpWrtShell->StartAllAction();
-		//mpEditWin->Invalidate(); // really not needed anymore??
+		//mpEditWin->Invalidate(); // really not needed anymore?
 		SwRootFrm* pLayout = mpWrtShell->GetLayout();
         if ( pLayout )
             SwPostItHelper::setSidebarChanged( pLayout,
@@ -1547,7 +1545,7 @@ bool SwPostItMgr::IsHit(const Point &aPointPixel)
 			if (aRect.IsInside(aPoint))
 			{
 				// we hit the note's sidebar
-				// lets now test for the arrow area
+				// let's now test for the arrow area
 				if (mPages[nPageNum-1]->bScrollbar)
 					return ScrollbarHit(nPageNum,aPoint);
 				else
@@ -1634,13 +1632,13 @@ void SwPostItMgr::CorrectPositions()
 
     // yeah, I know,    if this is a left page it could be wrong, but finding the page and the note is probably not even faster than just doing it
     // --> OD 2010-06-03 #i111964# - check, if anchor overlay object exists.
-    const long aAnchorX = pFirstPostIt->Anchor() 
+    const long aAnchorX = pFirstPostIt->Anchor()
                           ? mpEditWin->LogicToPixel( Point((long)(pFirstPostIt->Anchor()->GetSixthPosition().getX()),0)).X()
                           : 0;
-    const long aAnchorY = pFirstPostIt->Anchor() 
+    const long aAnchorY = pFirstPostIt->Anchor()
                           ? mpEditWin->LogicToPixel( Point(0,(long)(pFirstPostIt->Anchor()->GetSixthPosition().getY()))).Y() + 1
                           : 0;
-    // <-- 
+    // <--
     if (Point(aAnchorX,aAnchorY) != pFirstPostIt->GetPosPixel())
     {
         long aAnchorPosX = 0;
@@ -1730,12 +1728,12 @@ Color SwPostItMgr::GetColorAnchor(sal_uInt16 aAuthorIndex)
 {
 	if (!Application::GetSettings().GetStyleSettings().GetHighContrastMode())
 	{
-        static const Color aArrayAnchor[] = {
+		static const Color aArrayAnchor[] = {
 			COL_AUTHOR1_DARK,		COL_AUTHOR2_DARK,		COL_AUTHOR3_DARK,
 			COL_AUTHOR4_DARK,		COL_AUTHOR5_DARK,		COL_AUTHOR6_DARK,
 			COL_AUTHOR7_DARK,		COL_AUTHOR8_DARK,		COL_AUTHOR9_DARK };
 
-        return Color( aArrayAnchor[  aAuthorIndex % (sizeof( aArrayAnchor )  / sizeof( aArrayAnchor[0] ))]);
+		return Color( aArrayAnchor[  aAuthorIndex % (sizeof( aArrayAnchor )  / sizeof( aArrayAnchor[0] ))]);
 	}
 	else
 		return Color(COL_WHITE);
@@ -1748,7 +1746,7 @@ void SwPostItMgr::SetActiveSidebarWin( SwSidebarWin* p)
 		// we need the temp variable so we can set mpActivePostIt before we call DeactivatePostIt
 		// therefore we get a new layout in DOCCHANGED when switching from postit to document,
 		// otherwise, GetActivePostIt() would still hold our old postit
-        SwSidebarWin* pActive = mpActivePostIt;
+		SwSidebarWin* pActive = mpActivePostIt;
 		mpActivePostIt = p;
 		if (pActive)
 		{
@@ -1785,7 +1783,7 @@ IMPL_LINK( SwPostItMgr, CalcHdl, void*, /* pVoid*/  )
 
 void SwPostItMgr::Rescale()
 {
-    for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
+	for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
 		if ( (*i)->pPostIt )
 			(*i)->pPostIt->Rescale();
 }
@@ -1793,7 +1791,7 @@ void SwPostItMgr::Rescale()
 sal_Int32 SwPostItMgr::GetInitialAnchorDistance() const
 {
 	const Fraction& f( mpEditWin->GetMapMode().GetScaleY() );
-    return POSTIT_INITIAL_ANCHOR_DISTANCE * f.GetNumerator() / f.GetDenominator();
+	return POSTIT_INITIAL_ANCHOR_DISTANCE * f.GetNumerator() / f.GetDenominator();
 }
 
 sal_Int32 SwPostItMgr::GetSpaceBetween() const
@@ -1822,14 +1820,14 @@ sal_Int32 SwPostItMgr::GetSidebarScrollerHeight() const
 
 void SwPostItMgr::SetSpellChecking()
 {
-    for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
+	for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
 		if ( (*i)->pPostIt )
 			(*i)->pPostIt->SetSpellChecking();
 }
 
 void SwPostItMgr::SetReadOnlyState()
 {
-    for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
+	for(std::list<SwSidebarItem*>::iterator i = mvPostItFlds.begin(); i!= mvPostItFlds.end() ; i++)
 		if ( (*i)->pPostIt )
 			(*i)->pPostIt->SetReadonly( mbReadOnly );
 }

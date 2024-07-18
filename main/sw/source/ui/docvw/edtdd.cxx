@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,26 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-
 #include <hintids.hxx>
-
 
 #include <svx/svdview.hxx>
 #include <editeng/outliner.hxx>
@@ -117,7 +113,7 @@ void SwEditWin::StartDrag( sal_Int8 /*nAction*/, const Point& rPosPixel )
 				OBJCNT_NONE != rSh.GetObjCntType( aDocPos, pObj ))
 		{
 			rSh.LockPaint();
-            if( rSh.SelectObj( aDocPos, 0, pObj ))
+			if( rSh.SelectObj( aDocPos, 0, pObj ))
 				bStart = bDelSelect = sal_True;
 			else
 				rSh.UnlockPaint();
@@ -157,8 +153,8 @@ void SwEditWin::StartExecuteDrag()
 	bIsInDrag = sal_True;
 
 	SwTransferable* pTransfer = new SwTransferable( rView.GetWrtShell() );
-    uno::Reference<
-        datatransfer::XTransferable > xRef( pTransfer );
+	uno::Reference<
+		datatransfer::XTransferable > xRef( pTransfer );
 
 	pTransfer->StartDrag( this, aMovePos );
 }
@@ -173,7 +169,7 @@ void SwEditWin::DragFinished()
 
 void SwEditWin::DropCleanup()
 {
-	SwWrtShell &rSh =  rView.GetWrtShell();
+	SwWrtShell &rSh = rView.GetWrtShell();
 
 	// Stati zuruecksetzen
 	bNoInterrupt = sal_False;
@@ -245,12 +241,12 @@ sal_Int8 SwEditWin::ExecuteDrop( const ExecuteDropEvent& rEvt )
 	sal_uInt16 nEventAction;
 	sal_Int8 nUserOpt = rEvt.mbDefault ? EXCHG_IN_ACTION_DEFAULT
 									   : rEvt.mnAction;
-    m_nDropAction = SotExchange::GetExchangeAction(
+	m_nDropAction = SotExchange::GetExchangeAction(
 								GetDataFlavorExVector(),
-                                m_nDropDestination,
+								m_nDropDestination,
 								rEvt.mnAction,
 //!!								rEvt.GetSourceOptions(),
-                                nUserOpt, m_nDropFormat, nEventAction, 0,
+								nUserOpt, m_nDropFormat, nEventAction, 0,
 								&rEvt.maDropEvent.Transferable );
 
 
@@ -261,7 +257,7 @@ sal_Int8 SwEditWin::ExecuteDrop( const ExecuteDropEvent& rEvt )
 //!!    nRet = SFX_APP()->ExecuteDrop( rEvt );
 		nRet = DND_ACTION_NONE;
 	else if ( SW_MOD()->pDragDrop )
-		//Bei internem D&D nicht mehr aufraeumen!
+		//Bei internem D&D nicht mehr aufräumen!
 		SW_MOD()->pDragDrop->SetCleanUp( sal_False );
 
 	return nRet;
@@ -270,15 +266,15 @@ sal_Int8 SwEditWin::ExecuteDrop( const ExecuteDropEvent& rEvt )
 
 sal_uInt16 SwEditWin::GetDropDestination( const Point& rPixPnt, SdrObject ** ppObj )
 {
-    SwWrtShell &rSh = rView.GetWrtShell();
-    const Point aDocPt( PixelToLogic( rPixPnt ) );
-    if( rSh.ChgCurrPam( aDocPt )
-        || rSh.IsOverReadOnlyPos( aDocPt )
-        || rSh.DocPtInsideInputFld( aDocPt ) )
-        return 0;
+	SwWrtShell &rSh = rView.GetWrtShell();
+	const Point aDocPt( PixelToLogic( rPixPnt ) );
+	if( rSh.ChgCurrPam( aDocPt )
+		|| rSh.IsOverReadOnlyPos( aDocPt )
+		|| rSh.DocPtInsideInputFld( aDocPt ) )
+		return 0;
 
-    SdrObject *pObj = NULL;
-    const ObjCntType eType = rSh.GetObjCntType( aDocPt, pObj );
+	SdrObject *pObj = NULL;
+	const ObjCntType eType = rSh.GetObjCntType( aDocPt, pObj );
 
 	//Drop auf OutlinerView (TextEdit im Drawing) soll diese selbst entscheiden!
 	if( pObj )
@@ -396,22 +392,22 @@ sal_Int8 SwEditWin::AcceptDrop( const AcceptDropEvent& rEvt )
 	}
 
 	SdrObject *pObj = NULL;
-    m_nDropDestination = GetDropDestination( aPixPt, &pObj );
-    if( !m_nDropDestination )
+	m_nDropDestination = GetDropDestination( aPixPt, &pObj );
+	if( !m_nDropDestination )
 		return DND_ACTION_NONE;
 
 	sal_uInt16 nEventAction;
 	sal_Int8 nUserOpt = rEvt.mbDefault ? EXCHG_IN_ACTION_DEFAULT
 									   : rEvt.mnAction;
 
-    m_nDropAction = SotExchange::GetExchangeAction(
+	m_nDropAction = SotExchange::GetExchangeAction(
 								GetDataFlavorExVector(),
-                                m_nDropDestination,
+								m_nDropDestination,
 								rEvt.mnAction,
 //!!								rEvt.GetSourceOptions(),
-                                nUserOpt, m_nDropFormat, nEventAction );
+								nUserOpt, m_nDropFormat, nEventAction );
 
-    if( EXCHG_INOUT_ACTION_NONE != m_nDropAction )
+	if( EXCHG_INOUT_ACTION_NONE != m_nDropAction )
 	{
 		const Point aDocPt( PixelToLogic( aPixPt ) );
 
@@ -438,7 +434,7 @@ sal_Int8 SwEditWin::AcceptDrop( const AcceptDropEvent& rEvt )
 			else if( rEvt.mbDefault )
 			{
 				// JP 13.08.98: internes Drag&Drop: bei gleichem Doc ein Move
-				//				ansonten ein Copy - Task 54974
+				//				ansonsten ein Copy - Task 54974
 				nEventAction = pSrcSh->GetDoc() == rSh.GetDoc()
 									? DND_ACTION_MOVE
 									: DND_ACTION_COPY;
@@ -459,7 +455,7 @@ sal_Int8 SwEditWin::AcceptDrop( const AcceptDropEvent& rEvt )
 
             if( (SOT_FORMATSTR_ID_SBA_FIELDDATAEXCHANGE == m_nDropFormat &&
                  EXCHG_IN_ACTION_LINK == m_nDropAction) ||
-                 SOT_FORMATSTR_ID_SBA_CTRLDATAEXCHANGE == m_nDropFormat  )
+                 SOT_FORMATSTR_ID_SBA_CTRLDATAEXCHANGE == m_nDropFormat )
 			{
 				SdrMarkView* pMView = PTR_CAST( SdrMarkView, rSh.GetDrawView() );
 				if( pMView && !pMView->IsDesignMode() )
@@ -521,5 +517,4 @@ IMPL_LINK( SwEditWin, DDHandler, Timer *, EMPTYARG )
 	return 0;
 }
 
-
-
+/* vim: set noet sw=4 ts=4: */

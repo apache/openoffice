@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 package complex.memCheck;
 
@@ -55,12 +54,12 @@ import org.openoffice.test.OfficeConnection;
 import static org.junit.Assert.*;
 
 /**
- * Documents are opened and exported with StarOffice. The memory usage of 
- * StarOffice is monitored and if the usage exceeds the allowed kilobytes,
- * the test is failed. Used for monitoring the StarOffice process is the 
+ * Documents are opened and exported with OpenOffice. The memory usage of
+ * OpenOffice is monitored and if the usage exceeds the allowed kilobytes,
+ * the test is failed. Used for monitoring the OpenOffice process is the
  * command line tool 'pmap', available on Solaris or Linux. This test will not
- * run on Windows.<br>Test procedure: every given document type is searched in 
- * the source directory 
+ * run on Windows.<br>Test procedure: every given document type is searched in
+ * the source directory
  * Needed parameters:
  * <ul>
  *   <li>"AllowMemoryIncrease" (optional) - the allowed memory increase measured in kByte per exported document. The default is 10 kByte.</li>
@@ -113,7 +112,7 @@ public class CheckMemoryUsage
     private int iExportDocCount = 25;
 
     /**
-     * Collect all documnets to load and all filters used for export.
+     * Collect all documents to load and all filters used for export.
      */
     @Before
     public void before() throws Exception
@@ -166,7 +165,7 @@ public class CheckMemoryUsage
             v.add(sCalcDoc);
             v.add(sImpressDoc);
         }
-        // store a file extension 
+        // store a file extension
         sDocTypeExportFilter = new String[v.size()][2];
         for (int i = 0; i < v.size(); i++)
         {
@@ -229,7 +228,7 @@ public class CheckMemoryUsage
         int nRunThrough = 0;
 
         // At first:
-        // we load the document, there will be some post work in office like late initialisations
+        // we load the document, there will be some post work in office like late initialization
         // we store exact one time the document
         // so the memory footprint should be right
 
@@ -292,9 +291,9 @@ public class CheckMemoryUsage
     }
 
     /**
-     * Checks how much memory should consum
+     * Checks how much memory should consume
      * @param storageBefore
-     * @return 1 if consum is ok, else 0
+     * @return 1 if consume is ok, else 0
      */
     private int checkMemory(int nConsumMore)
     {
@@ -410,7 +409,7 @@ public class CheckMemoryUsage
         {
             // short wait for the office to 'calm down' and free some memory
             shortWait(20000);
-            // wait util memory is not freed anymore.
+            // wait until memory is not freed anymore.
             int storageAfter = getOfficeMemoryUsage(createModeName("stop", 0));
             int mem = 0;
             int count = 0;
