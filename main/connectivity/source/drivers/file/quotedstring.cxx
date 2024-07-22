@@ -25,6 +25,7 @@
 #include "precompiled_connectivity.hxx"
 #include "file/quotedstring.hxx"
 #include <rtl/logfile.hxx>
+#include <rtl/ustrbuf.hxx>
 
 namespace connectivity
 {
@@ -32,21 +33,21 @@ namespace connectivity
     //= QuotedTokenizedString
     //==================================================================
     //------------------------------------------------------------------
-    xub_StrLen QuotedTokenizedString::GetTokenCount( sal_Unicode cTok, sal_Unicode cStrDel ) const
+    sal_Int32 QuotedTokenizedString::GetTokenCount( sal_Unicode cTok, sal_Unicode cStrDel ) const
     {
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "QuotedTokenizedString::GetTokenCount" );
-        const xub_StrLen nLen = m_sString.Len();
+        const sal_Int32 nLen = m_sString.getLength();
 	    if ( !nLen )
 		    return 0;
 
-	    xub_StrLen nTokCount = 1;
+	    sal_Int32 nTokCount = 1;
 	    sal_Bool bStart = sal_True;		// Stehen wir auf dem ersten Zeichen im Token?
 	    sal_Bool bInString = sal_False;	// Befinden wir uns INNERHALB eines (cStrDel delimited) String?
 
 	    // Suche bis Stringende nach dem ersten nicht uebereinstimmenden Zeichen
-	    for( xub_StrLen i = 0; i < nLen; ++i )
+	    for( sal_Int32 i = 0; i < nLen; ++i )
 	    {
-            const sal_Unicode cChar = m_sString.GetChar(i);
+            const sal_Unicode cChar = m_sString[ i ];
 		    if (bStart)
 		    {
 			    bStart = sal_False;
@@ -63,7 +64,7 @@ namespace connectivity
 			    // Wenn jetzt das String-Delimiter-Zeichen auftritt ...
 			    if ( cChar == cStrDel )
 			    {
-				    if ((i+1 < nLen) && (m_sString.GetChar(i+1) == cStrDel))
+				    if ((i+1 < nLen) && (m_sString[ i+1 ] == cStrDel))
 				    {
 					    // Verdoppeltes String-Delimiter-Zeichen:
 					    ++i;	// kein String-Ende, naechstes Zeichen ueberlesen.
@@ -91,49 +92,47 @@ namespace connectivity
     }
 
     //------------------------------------------------------------------
-    void QuotedTokenizedString::GetTokenSpecial( String& _rStr,xub_StrLen& nStartPos, sal_Unicode cTok, sal_Unicode cStrDel ) const
+    void QuotedTokenizedString::GetTokenSpecial( ::rtl::OUString* _rStr,sal_Int32& nStartPos, sal_Unicode cTok, sal_Unicode cStrDel ) const
     {
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "QuotedTokenizedString::GetTokenCount" );
-	    _rStr.Erase();
-	    const xub_StrLen nLen = m_sString.Len();
+	    *_rStr = ::rtl::OUString();
+	    const sal_Int32 nLen = m_sString.getLength();
 	    if ( nLen )
 	    {
-		    sal_Bool bInString = (nStartPos < nLen) && (m_sString.GetChar(nStartPos) == cStrDel);	// Befinden wir uns INNERHALB eines (cStrDel delimited) String?
+		    sal_Bool bInString = (nStartPos < nLen) && (m_sString[ nStartPos ] == cStrDel);	// Are we inside a (cStrDel delimited) String?
 
-		    // Erstes Zeichen ein String-Delimiter?
+		    // Is the first character a string delimiter?
 		    if (bInString )
-			    ++nStartPos;			// dieses Zeichen ueberlesen!
+			    ++nStartPos;			// ignore this character!
             if ( nStartPos >= nLen )
                 return;
 
-            sal_Unicode* pData = _rStr.AllocBuffer( nLen - nStartPos + 1 );
-            const sal_Unicode* pStart = pData;
-		    // Suche bis Stringende nach dem ersten nicht uebereinstimmenden Zeichen
-		    for( xub_StrLen i = nStartPos; i < nLen; ++i )
+            ::rtl::OUStringBuffer buffer( nLen - nStartPos);
+		    // Search until the end of string for the first non-matching character
+		    for( sal_Int32 i = nStartPos; i < nLen; ++i )
 		    {
-                const sal_Unicode cChar = m_sString.GetChar(i);
+                const sal_Unicode cChar = m_sString[ i ];
 			    if (bInString)
 			    {
 				    // Wenn jetzt das String-Delimiter-Zeichen auftritt ...
 				    if ( cChar == cStrDel )
 				    {
-					    if ((i+1 < nLen) && (m_sString.GetChar(i+1) == cStrDel))
+					    if ((i+1 < nLen) && (m_sString[ i+1 ] == cStrDel))
 					    {
 						    // Verdoppeltes String-Delimiter-Zeichen:
 						    // kein String-Ende, naechstes Zeichen ueberlesen.
                             ++i;
-						    *pData++ = m_sString.GetChar(i);	// Zeichen gehoert zum Resultat-String
+						    buffer.append( m_sString[ i ] );	// Zeichen gehoert zum Resultat-String
 					    }
 					    else
 					    {
 						    // String-Ende
 						    bInString = sal_False;
-                            *pData = 0;
 					    }
 				    }
 				    else
 				    {
-					    *pData++ = cChar;	// Zeichen gehoert zum Resultat-String
+					    buffer.append( cChar );	// Zeichen gehoert zum Resultat-String
 				    }
 
 			    }
@@ -149,12 +148,11 @@ namespace connectivity
 				    }
 				    else
 				    {
-					    *pData++ = cChar;	// Zeichen gehoert zum Resultat-String
+					    buffer.append( cChar );	// Zeichen gehoert zum Resultat-String
 				    }
 			    }
-		    } // for( xub_StrLen i = nStartPos; i < nLen; ++i )
-            *pData = 0;
-            _rStr.ReleaseBufferAccess(xub_StrLen(pData - pStart));
+		    } // for( sal_Int32 i = nStartPos; i < nLen; ++i )
+            *_rStr = buffer.makeStringAndClear();
 	    }
     }
 }
