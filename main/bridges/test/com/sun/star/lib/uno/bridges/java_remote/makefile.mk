@@ -26,6 +26,7 @@ PRJNAME := bridges
 TARGET := test_com_sun_star_lib_uno_bridges_javaremote
 
 PACKAGE := com$/sun$/star$/lib$/uno$/bridges$/javaremote
+
 JAVATESTFILES := \
     Bug51323_Test.java \
     Bug92174_Test.java \
@@ -42,6 +43,6 @@ JAVATESTFILES := \
 IDLTESTFILES := \
     Bug98508_Test.idl \
     PolyStructTest.idl
-JARFILES := juh.jar jurt.jar ridl.jar
+JARFILES := juh.jar jurt.jar ridl.jar OOoRunner.jar
 
 .INCLUDE: javaunittest.mk

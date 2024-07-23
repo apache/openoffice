@@ -24,18 +24,13 @@
 package com.sun.star.uno;
 
 import com.sun.star.comp.connections.PipedConnection;
-import complexlib.ComplexTestCase;
 import util.WaitUnreachable;
 
-public final class UnoRuntime_EnvironmentTest extends ComplexTestCase {
-    public String getTestObjectName() {
-        return getClass().getName();
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    public String[] getTestMethodNames() {
-        return new String[] { "test_getEnvironment", "test_getBridge" };
-    }
-
+public final class UnoRuntime_EnvironmentTest {
+    @Test
     public void test_getEnvironment() throws java.lang.Exception {
         Object o1 = new Object();
         Object o2 = new Object();
@@ -47,13 +42,13 @@ public final class UnoRuntime_EnvironmentTest extends ComplexTestCase {
             UnoRuntime.getEnvironment("java", o2));
 
         // ensure that the environments are different
-        assure("", java_environment1.get() != java_environment2.get());
+        assertTrue("", java_environment1.get() != java_environment2.get());
 
         // test if we get the same environment when we reget it
-        assure("",
+        assertTrue("",
                UnoRuntime.areSame(java_environment1.get(),
                                   UnoRuntime.getEnvironment("java", o1)));
-        assure("",
+        assertTrue("",
                UnoRuntime.areSame(java_environment2.get(),
                                   UnoRuntime.getEnvironment("java", o2)));
 
@@ -62,6 +57,7 @@ public final class UnoRuntime_EnvironmentTest extends ComplexTestCase {
         java_environment2.waitUnreachable();
     }
 
+    @Test
     public void test_getBridge() throws java.lang.Exception {
         PipedConnection conn = new PipedConnection(new Object[0]);
         new PipedConnection(new Object[] { conn });
@@ -75,7 +71,7 @@ public final class UnoRuntime_EnvironmentTest extends ComplexTestCase {
         IBridge iBridge_tmp = UnoRuntime.getBridgeByName(
             "java", null, "remote", "testname",
             new Object[] { "urp", conn, null });
-        assure("", UnoRuntime.areSame(iBridge_tmp, iBridge));
+        assertTrue("", UnoRuntime.areSame(iBridge_tmp, iBridge));
 
         // dispose the bridge, this removes the entry from the runtime
         iBridge.dispose();
@@ -87,6 +83,6 @@ public final class UnoRuntime_EnvironmentTest extends ComplexTestCase {
         iBridge_tmp = UnoRuntime.getBridgeByName(
             "java", null, "remote", "testname",
             new Object[]{ "urp", conn, null });
-        assure("", !UnoRuntime.areSame(iBridge_tmp, iBridge));
+        assertTrue("", !UnoRuntime.areSame(iBridge_tmp, iBridge));
     }
 }

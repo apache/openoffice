@@ -22,18 +22,13 @@
 
 package complex.tempfile;
 
-// import complexlib.ComplexTestCase;
-
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.ucb.XSimpleFileAccess;
 import com.sun.star.io.*;
 import com.sun.star.uno.UnoRuntime;
 import java.util.Random;
 
-import share.LogWriter;
-
 public class Test01 implements TempFileTest {
-    LogWriter m_aLogWriter;
     XMultiServiceFactory m_xMSF = null;
     XSimpleFileAccess m_xSFA = null;
     TestHelper m_aTestHelper = null;

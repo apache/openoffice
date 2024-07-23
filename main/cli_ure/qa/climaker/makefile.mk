@@ -20,32 +20,45 @@
 #**************************************************************
 
 
+.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
+nothing .PHONY:
+.ELSE
 
 PRJ := ..$/..
 PRJNAME := cli_ure
 TARGET := test_climaker
+
+.IF "$(OOO_JUNIT_JAR)" != ""
 PACKAGE = climaker
+
+# here store only Files which contain a @Test
+JAVATESTFILES = \
+    ClimakerTestCase.java
+
+# put here all other files
+JAVAFILES = $(JAVATESTFILES)
+
+JARFILES = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar
+EXTRAJARFILES = $(OOO_JUNIT_JAR)
+
+JAVAIFLAGS =\
+    -Dcli_ure_test=$(EXETARGET)
+
+# Sample how to debug
+# JAVAIFLAGS+=-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9003,suspend=y
+
+.END
+
+.INCLUDE: settings.mk
+.INCLUDE: target.mk
+.INCLUDE: installationtest.mk
+
+ALLTAR : javatest
+
+#------ Specific to this test: -----
 
 #we use the climaker which is build by this project
 CLIMAKER*=$(WRAPCMD) $(BIN)$/climaker
-.INCLUDE: settings.mk
-
-
-#----- compile .java files -----------------------------------------
-
-JARFILES = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar OOoRunner.jar
-JAVAFILES       = ClimakerTestCase.java
-JAVACLASSFILES	= $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-#----- make a jar from compiled files ------------------------------
-
-MAXLINELENGTH = 100000
-
-JARCLASSDIRS    = $(PACKAGE)
-JARTARGET       = $(TARGET).jar
-JARCOMPRESS 	= TRUE
-
-
 
 CSCFLAGS = -incr
 .IF "$(debug)" != ""
@@ -54,14 +67,12 @@ CSCFLAGS += -checked+ -define:DEBUG -define:TRACE -debug+
 CSCFLAGS += -optimize+
 .ENDIF
 
-
 OUTDIR=$(BIN)$/qa$/climaker
 EXETARGET=$(OUTDIR)$/test_climaker.exe
 
-ALLTAR: $(EXETARGET)
+javatest: $(EXETARGET)
 
 CSFILES = climaker.cs testobjects.cs
-
 
 $(EXETARGET): $(CSFILES) $(OUTDIR)$/cli_test_types.dll
 	$(GNUCOPY) -p $(BIN)$/cli_cppuhelper.dll $(OUTDIR)$/cli_cppuhelper.dll
@@ -76,16 +87,10 @@ $(EXETARGET): $(CSFILES) $(OUTDIR)$/cli_test_types.dll
 		-reference:$(OUTDIR)$/cli_test_types.dll \
 		$(CSFILES)
 
-
-
-#-----------------------------------------------------------------------------
 CLIMAKERFLAGS =
 .IF "$(debug)" != ""
 CLIMAKERFLAGS += --verbose
 .ENDIF
-
-
-
 
 $(OUTDIR)$/types.urd: types.idl
     - $(MKDIR) $(OUTDIR)
@@ -102,30 +107,7 @@ $(OUTDIR)$/cli_test_types.dll: $(OUTDIR)$/types.rdb $(BIN)$/climaker.exe $(BIN)$
 		$(OUTDIR)$/types.rdb
 
 
+#-----------------------------------
 
-.IF "$(depend)" == ""
-ALL: ALLTAR
-.ELSE
-ALL: ALLDEP
-.ENDIF
 
-.INCLUDE: target.mk
-
-# --- Parameters for the test --------------------------------------
-
-# test base is java complex
-CT_TESTBASE = -TestBase java_complex
-
-# test looks something like the.full.package.TestName
-CT_TEST     = -o $(PACKAGE:s\$/\.\).$(JAVAFILES:b)
-
-# start the runner application
-CT_APP      = org.openoffice.Runner
-
-CT_NOOFFICE = -NoOffice
-# --- Targets ------------------------------------------------------
-
-RUN:
-    java -cp $(CLASSPATH) -Dcli_ure_test=$(EXETARGET) $(CT_APP) $(CT_NOOFFICE) $(CT_TESTBASE) $(CT_TEST)
-
-run: RUN
+.END

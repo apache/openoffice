@@ -63,7 +63,7 @@ namespace uui
     @seealso    method SetURL()
 
     @param      "pParentWindow"  , parent window for dialog
-    @param      "pResMgr"        , ressource manager
+    @param      "pResMgr"        , resource manager
     @return     -
 
     @onerror    -
@@ -115,7 +115,7 @@ void FilterDialog::SetURL( const String& sURL )
     @param      "pFilterNames", pointer to list of filter names, which should be used for later operations.
     @return     -
 
-    @onerror    We clear list box and forget our currently set filter informations completly!
+    @onerror    We clear list box and forget our currently set filter informations completely!
     @threadsafe no
 *//*-*************************************************************************************************************/
 void FilterDialog::ChangeFilters( const FilterNameList* pFilterNames )

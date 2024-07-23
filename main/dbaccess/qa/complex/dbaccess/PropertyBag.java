@@ -23,8 +23,6 @@
 
 package complex.dbaccess;
 
-// import complexlib.ComplexTestCase;
-
 import com.sun.star.beans.NamedValue;
 import com.sun.star.beans.PropertyState;
 import com.sun.star.beans.PropertyValue;
@@ -49,11 +47,6 @@ public class PropertyBag extends TestCase
     private XPropertySet            m_set;
     private XPropertyAccess         m_access;
     private XMultiServiceFactory    m_orb = null;
-
-    public String getTestObjectName()
-    {
-        return "PropertyBag";
-    }
 
     @Before
     @Override

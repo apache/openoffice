@@ -23,13 +23,11 @@
 
 package com.sun.star.uno;
 
-import complexlib.ComplexTestCase;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-public final class Any_Test extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "testAnyAny", "testComplete" };
-    }
-
+public final class Any_Test {
+    @Test
     public void testAnyAny() {
         boolean caught = false;
         try {
@@ -37,18 +35,19 @@ public final class Any_Test extends ComplexTestCase {
         } catch (IllegalArgumentException e) {
             caught = true;
         }
-        assure(caught);
+        assertTrue(caught);
     }
 
+    @Test
     public void testComplete() {
-        assure(Any.complete(Any.VOID) == Any.VOID);
-        assure(
+        assertTrue(Any.complete(Any.VOID) == Any.VOID);
+        assertTrue(
             Any.complete(new Integer(10)).equals(
                 new Any(Type.LONG, new Integer(10))));
-        assure(
+        assertTrue(
             Any.complete(null).equals(
                 new Any(new Type(XInterface.class), null)));
         XInterface x = new XInterface() {};
-        assure(Any.complete(x).equals(new Any(new Type(XInterface.class), x)));
+        assertTrue(Any.complete(x).equals(new Any(new Type(XInterface.class), x)));
     }
 }

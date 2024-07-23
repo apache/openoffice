@@ -33,7 +33,7 @@ $(eval $(call gb_JunitTest_add_jars,writerfilter_complex,\
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
-	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,writerfilter_complex,\
@@ -41,11 +41,8 @@ $(eval $(call gb_JunitTest_add_sourcefiles,writerfilter_complex,\
 	writerfilter/qa/complex/ooxml/LoadDocuments \
 ))
 
-# #i113098# currently fails in non-pro
-ifeq ($(gb_PRODUCT),$(true))
 $(eval $(call gb_JunitTest_add_classes,writerfilter_complex,\
 	complex.ooxml.LoadDocuments \
 ))
-endif
 
 # vim: set noet sw=4 ts=4:

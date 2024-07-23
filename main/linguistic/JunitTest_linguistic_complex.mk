@@ -29,7 +29,6 @@ $(eval $(call gb_JunitTest_set_defs,linguistic_complex,\
 ))
 
 $(eval $(call gb_JunitTest_add_jars,linguistic_complex,\
-	$(OUTDIR)/bin/OOoRunner.jar \
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/test-tools.jar \

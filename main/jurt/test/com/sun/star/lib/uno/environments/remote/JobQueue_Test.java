@@ -25,30 +25,18 @@ package com.sun.star.lib.uno.environments.remote;
 
 import com.sun.star.lib.uno.typedesc.MethodDescription;
 import com.sun.star.lib.uno.typedesc.TypeDescription;
-import complexlib.ComplexTestCase;
 
-public final class JobQueue_Test extends ComplexTestCase {
-    public String getTestObjectName() {
-        return getClass().getName();
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    public String[] getTestMethodNames() {
-        return new String[] { "testThreadLeavesJobQueueOnDispose0",
-                              "testThreadLeavesJobQueueOnDispose5000",
-                              "testThreadLeavesJobQueueOnReply0",
-                              "testThreadLeavesJobQueueOnReply5000",
-                              "testStaticThreadExecutesJobs0",
-                              "testStaticThreadExecutesJobs5000",
-                              "testDynamicThreadExecutesJob",
-                              "testStaticThreadExecutesAsyncs",
-                              "testDynamicThreadExecutesAsyncs" };
-    }
-
+public final class JobQueue_Test {
+    @Test
     public void testThreadLeavesJobQueueOnDispose0() throws InterruptedException
     {
         testThreadLeavesJobQueueOnDispose(0);
     }
 
+    @Test
     public void testThreadLeavesJobQueueOnDispose5000()
         throws InterruptedException
     {
@@ -63,13 +51,15 @@ public final class JobQueue_Test extends ComplexTestCase {
         String msg = "xcxxxxxxxx";
         t._jobQueue.dispose(t._disposeId, new RuntimeException (msg));
         t.waitToTerminate();
-        assure("", t._message.equals(msg));
+        assertTrue("", t._message.equals(msg));
     }
 
+    @Test
     public void testThreadLeavesJobQueueOnReply0() throws InterruptedException {
         testThreadLeavesJobQueueOnReply(0);
     }
 
+    @Test
     public void testThreadLeavesJobQueueOnReply5000()
         throws InterruptedException
     {
@@ -89,13 +79,15 @@ public final class JobQueue_Test extends ComplexTestCase {
                         false, null, null)),
             null);
         t.waitToTerminate();
-        assure("", true); // TODO! ???
+        assertTrue("", true); // TODO! ???
     }
 
+    @Test
     public void testStaticThreadExecutesJobs0() throws InterruptedException {
         testStaticThreadExecutesJobs(0);
     }
 
+    @Test
     public void testStaticThreadExecutesJobs5000() throws InterruptedException {
         testStaticThreadExecutesJobs(5000);
     }
@@ -111,37 +103,40 @@ public final class JobQueue_Test extends ComplexTestCase {
         t.waitToTerminate();
     }
 
+    @Test
     public void testDynamicThreadExecutesJob() throws InterruptedException {
         testExecuteJobs(
             new JobQueue(
                 __javaThreadPoolFactory, ThreadId.createFresh(), true));
     }
 
+    @Test
     public void testStaticThreadExecutesAsyncs() throws InterruptedException {
         TestThread t = new TestThread();
         JobQueue async_jobQueue = new JobQueue(__javaThreadPoolFactory,
                                                t._threadId);
-        assure("", async_jobQueue._ref_count == 1);
+        assertTrue("", async_jobQueue._ref_count == 1);
         t._jobQueue = __javaThreadPoolFactory.getJobQueue(t._threadId);
-        assure("", t._jobQueue._ref_count == 1);
+        assertTrue("", t._jobQueue._ref_count == 1);
         t.waitToStart();
         TestWorkAt workAt = new TestWorkAt();
         testAsyncJobQueue(workAt, async_jobQueue, t._threadId);
         t._jobQueue.dispose(t._disposeId,
                             new RuntimeException("xxxxxxxxxxxxx"));
         t.waitToTerminate();
-        assure("", workAt._async_counter == TestWorkAt.MESSAGES);
-        assure("", workAt._sync_counter == TestWorkAt.MESSAGES);
+        assertTrue("", workAt._async_counter == TestWorkAt.MESSAGES);
+        assertTrue("", workAt._sync_counter == TestWorkAt.MESSAGES);
     }
 
+    @Test
     public void testDynamicThreadExecutesAsyncs() throws InterruptedException {
         ThreadId threadId = ThreadId.createFresh();
         JobQueue async_jobQueue = new JobQueue(__javaThreadPoolFactory,
                                                threadId);
         TestWorkAt workAt = new TestWorkAt();
         testAsyncJobQueue(workAt, async_jobQueue, threadId);
-        assure("", workAt._async_counter == TestWorkAt.MESSAGES);
-        assure("", workAt._sync_counter == TestWorkAt.MESSAGES);
+        assertTrue("", workAt._async_counter == TestWorkAt.MESSAGES);
+        assertTrue("", workAt._sync_counter == TestWorkAt.MESSAGES);
     }
 
     private void testExecuteJobs(JobQueue jobQueue) throws InterruptedException
@@ -161,7 +156,7 @@ public final class JobQueue_Test extends ComplexTestCase {
                 workAt.wait();
             }
         }
-        assure("", workAt._counter == TestWorkAt.MESSAGES);
+        assertTrue("", workAt._counter == TestWorkAt.MESSAGES);
     }
 
     private void testAsyncJobQueue(TestWorkAt workAt, JobQueue async_jobQueue,
@@ -185,7 +180,7 @@ public final class JobQueue_Test extends ComplexTestCase {
                 workAt.wait();
             }
         }
-        assure("", workAt.passedAsyncTest());
+        assertTrue("", workAt.passedAsyncTest());
     }
 
     private void testSendRequests(TestWorkAt workAt, String operation,

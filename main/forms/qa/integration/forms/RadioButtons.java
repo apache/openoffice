@@ -38,17 +38,39 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
 /**
  *
  * @author  fs@openoffice.org
  */
-public class RadioButtons extends complexlib.ComplexTestCase
+public class RadioButtons
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
     private DocumentHelper          m_document;         /// our current test document
     private FormLayer               m_formLayer;        /// quick access to the form layer
     private XMultiServiceFactory    m_orb;              /// our service factory
     private XPropertySet            m_primaryForm;      /// the primary form, to be used in text documents and in the first page of spreadsheets
     private XPropertySet            m_secondaryForm;    /// the secondary form, to be used in the second page of spreadsheets
+
+
+    @BeforeClass
+    public static void beforeClass() throws java.lang.Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws java.lang.Exception
+    {
+        officeConnection.tearDown();
+    }
 
     /* ------------------------------------------------------------------ */
     public RadioButtons()
@@ -56,26 +78,10 @@ public class RadioButtons extends complexlib.ComplexTestCase
     }
 
     /* ------------------------------------------------------------------ */
-    public String[] getTestMethodNames()
-    {
-        return new String[] {
-            "checkSingleButtons",
-            "checkThreeGroups",
-            "checkMultipleForms",
-            "checkCalcPageSwitch"
-        };
-    }
-
-    /* ------------------------------------------------------------------ */
-    public String getTestObjectName()
-    {
-        return "Form Radio Buttons Test";
-    }
-
-    /* ------------------------------------------------------------------ */
+    @Before
     public void before() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        m_orb = (XMultiServiceFactory)param.getMSF();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
     }
 
     /* ------------------------------------------------------------------ */
@@ -103,6 +109,7 @@ public class RadioButtons extends complexlib.ComplexTestCase
     /** this checks whether n groups of radio buttons, consisting of only one button each,
      *  behave properly
      */
+    @Test
     public void checkSingleButtons() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         prepareTestStep( false );
@@ -133,6 +140,7 @@ public class RadioButtons extends complexlib.ComplexTestCase
     /* ------------------------------------------------------------------ */
     /** creates three groups of radio buttons in a sample document, and checks whether they're working
      */
+    @Test
     public void checkThreeGroups( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         prepareTestStep( false );
@@ -178,6 +186,7 @@ public class RadioButtons extends complexlib.ComplexTestCase
     /* ------------------------------------------------------------------ */
     /** tests whether radio buttons which belong to different forms behave properly
      */
+    @Test
     public void checkMultipleForms( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         prepareTestStep( false );
@@ -219,6 +228,7 @@ public class RadioButtons extends complexlib.ComplexTestCase
     /** tests for a special bug which we once had, where radio buttons lost their state after
      *  switching spreadsheet pages
      */
+    @Test
     public void checkCalcPageSwitch( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         prepareTestStep( true );
@@ -254,6 +264,7 @@ public class RadioButtons extends complexlib.ComplexTestCase
     }
 
     /* ------------------------------------------------------------------ */
+    @After
     public void after()
     {
         closeDocument();
@@ -353,7 +364,7 @@ public class RadioButtons extends complexlib.ComplexTestCase
         {
 			if ( actualStates[i] != expectedStates[i] )
 			{
-				failed( errorMessage + " (expected: " + stateString( expectedStates ) + ", found: " + stateString( actualStates ) + ")" );
+				fail( errorMessage + " (expected: " + stateString( expectedStates ) + ", found: " + stateString( actualStates ) + ")" );
 				return false;
 			}
 		}

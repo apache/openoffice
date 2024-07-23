@@ -1471,7 +1471,7 @@ sal_Bool AquaSalGraphics::drawEPS( long nX, long nY, long nWidth, long nHeight,
 	
 	// create new context
 	NSGraphicsContext* pDrawNSCtx = [NSGraphicsContext graphicsContextWithGraphicsPort: mrContext flipped: IsFlipped()];
-	// set it, setCurrentContext also releases the prviously set one
+	// set it, setCurrentContext also releases the previously set one
 	[NSGraphicsContext setCurrentContext: pDrawNSCtx];
 	
 	// draw the EPS
@@ -2494,7 +2494,7 @@ void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
 	CGContextSetStrokeColorSpace( mxMaskContext, aCGColorSpace );
 	CGContextSetShouldAntialias( mxMaskContext, false );
 
-	// improve the XorMask's XOR emulation a litte
+	// improve the XorMask's XOR emulation a little
 	// NOTE: currently only enabled for monochrome contexts
 	if( aCGColorSpace == GetSalData()->mxGraySpace )
 		CGContextSetBlendMode( mxMaskContext, kCGBlendModeDifference );

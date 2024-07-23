@@ -23,7 +23,6 @@
 
 package com.sun.star.comp.ucb;
 
-import complexlib.ComplexTestCase;
 import com.sun.star.lang.IllegalArgumentException;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.task.XInteractionAbort;
@@ -44,7 +43,14 @@ import com.sun.star.uno.AnyConverter;
 import com.sun.star.uno.UnoRuntime;
 import java.io.PrintWriter;
 
-public final class GlobalTransfer_Test extends ComplexTestCase {
+import org.junit.Test;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
+public final class GlobalTransfer_Test {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
 
     static private final String fileName
         = "testcase-do-not-remove.sxw";
@@ -57,32 +63,37 @@ public final class GlobalTransfer_Test extends ComplexTestCase {
     static private final String fileTargetDir
         = "file:///d:/temp/";
 
-    public String getTestObjectName() {
-        return getClass().getName();
+    @BeforeClass
+    public static void beforeClass() throws java.lang.Exception
+    {
+        officeConnection.setUp();
     }
 
-    public String[] getTestMethodNames() {
-        return new String[] { "testNameClashASK" };
+    @AfterClass
+    public static void afterClass() throws java.lang.Exception
+    {
+        officeConnection.tearDown();
     }
 
+    @Test
     public void testNameClashASK() throws Exception {
         Object oObj = null;
         try {
-           XMultiServiceFactory xMSF = (XMultiServiceFactory)param.getMSF();
+           XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
            oObj
             = xMSF.createInstance( "com.sun.star.ucb.UniversalContentBroker" );
         }
         catch(com.sun.star.uno.Exception e) {
-            e.printStackTrace((PrintWriter)log);
+            e.printStackTrace();
 
             // After this exception the test has failed and cannot continue.
-            failed( "Cannot create service instance: com.sun.star.ucb." +
+            fail( "Cannot create service instance: com.sun.star.ucb." +
                     "UniversalContentBroker. message:" + e.getMessage() );
             return;
         }
 
         if ( oObj == null ) {
-            failed( "Cannot create service instance: com.sun.star.ucb." +
+            fail( "Cannot create service instance: com.sun.star.ucb." +
                     "UniversalContentBroker");
             return;
         }
@@ -90,7 +101,7 @@ public final class GlobalTransfer_Test extends ComplexTestCase {
         XCommandProcessor xCmdProc
             = (XCommandProcessor)UnoRuntime.queryInterface(
                                                XCommandProcessor.class, oObj );
-        assure( "UCB does not implement mandatory interface XCommandProcessor!",
+        assertTrue( "UCB does not implement mandatory interface XCommandProcessor!",
                 xCmdProc != null);
 
         ResourceCopier cp = new ResourceCopier( xCmdProc );
@@ -99,10 +110,10 @@ public final class GlobalTransfer_Test extends ComplexTestCase {
             cp.copyResource( httpSourceDir, fileTargetDir, fileName );
         }
         catch(com.sun.star.uno.Exception e) {
-            e.printStackTrace((PrintWriter)log);
+            e.printStackTrace();
 
             // After this exception the test has failed and cannot continue.
-            failed( "Could not copy resource:" + e.getMessage() );
+            fail( "Could not copy resource:" + e.getMessage() );
         }
     }
 
@@ -150,14 +161,14 @@ public final class GlobalTransfer_Test extends ComplexTestCase {
     private final class InteractionHadler implements XInteractionHandler {
         public void handle( /*IN*/XInteractionRequest Request ) {
 
-            log.println( "Interaction Handler called." );
+            System.out.println( "Interaction Handler called." );
 
             try {
                 NameClashResolveRequest req = (NameClashResolveRequest)
                     AnyConverter.toObject(
                         NameClashResolveRequest.class, Request.getRequest() );
 
-                log.println( "Interaction Handler: NameClashResolveRequest: "
+                System.out.println( "Interaction Handler: NameClashResolveRequest: "
                              + req.ClashingName );
 
                 XInteractionContinuation[] continuations
@@ -168,7 +179,7 @@ public final class GlobalTransfer_Test extends ComplexTestCase {
                         = (XInteractionAbort)UnoRuntime.queryInterface(
                             XInteractionAbort.class, continuations[ i ] );
                     if ( xAbort != null ) {
-                        log.println( "Interaction Handler selects: ABORT" );
+                        System.out.println( "Interaction Handler selects: ABORT" );
                         xAbort.select();
                         return;
                     }
@@ -180,7 +191,7 @@ public final class GlobalTransfer_Test extends ComplexTestCase {
                                 XInteractionReplaceExistingData.class,
                                 continuations[ i ] );
                     if ( xReplace != null ) {
-                        log.println( "Interaction Handler selects: REPLACE" );
+                        System.out.println( "Interaction Handler selects: REPLACE" );
                         xReplace.select();
                         return;
                     }
@@ -192,7 +203,7 @@ public final class GlobalTransfer_Test extends ComplexTestCase {
                                 continuations[ i ] );
                     if ( xSupplyName != null ) {
                         String newname = "renamed_" + req.ClashingName;
-                        log.println( "Interaction Handler selects: NEW NAME: "
+                        System.out.println( "Interaction Handler selects: NEW NAME: "
                                      + newname );
                         xSupplyName.setName( newname );
                         xSupplyName.select();

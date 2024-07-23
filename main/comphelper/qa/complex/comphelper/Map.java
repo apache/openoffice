@@ -61,20 +61,8 @@ import static org.junit.Assert.*;
  *
  * @author frank.schoenheit@sun.com
  */
-public class Map /* extends complexlib.ComplexTestCase */
+public class Map
 {
-//    @Override
-//    public String[] getTestMethodNames()
-//    {
-//        return new String[] {
-//            "testSimpleKeyTypes",
-//            "testComplexKeyTypes",
-//            "testValueTypes",
-//            "testEnumerations",
-//            "testSpecialValues"
-//        };
-//    }
-
 //    public static String getShortTestDescription()
 //    {
 //        return "tests the css.container.Map implementation from comphelper/source/misc/map.cxx";

@@ -43,34 +43,10 @@ import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XInterface;
 import com.sun.star.util.XCloseable;
 
-// import util.BasicMacroTools;
-// import util.DesktopTools;
-// import util.dbg;
-// import complexlib.ComplexTestCase;
-// import util.utils;
 import helper.OfficeProvider;
 import helper.URLHelper;
-// import helper.OfficeWatcher;
 
 import convwatch.DB;
-
-// import java.util.Date;
-// import java.text.SimpleDateFormat;
-// import java.text.ParsePosition;
-// import java.sql.Time;
-// 
-// import java.io.BufferedReader;
-// import java.io.File;
-// import java.io.FileReader;
-// import java.io.IOException;
-// import java.io.FilenameFilter;
-// 
-// import java.util.Vector;
-// 
-// import helper.AppProvider;
-// import java.text.DecimalFormat;
-// import util.DynamicClassLoader;
-// import java.util.StringTokenizer;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -158,11 +134,6 @@ public class ReportDesignerTest
 {
 	
     String mTestDocumentPath;
-
-//    public String[] getTestMethodNames()
-//        {
-//            return new String[] {"firsttest"};
-//        }
 
     @Before public void before()
     {

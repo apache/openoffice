@@ -268,7 +268,7 @@ public:
     void ResetAttr( const SvUShortsSort* pAttrs = 0 );
 	void GCAttr();
 
-	// returns the scripttpye of the selection
+	// returns the scripttype of the selection
     sal_uInt16 GetScriptType() const;
 
 	// returns the language at current cursor position

@@ -31,7 +31,9 @@ import com.sun.star.lib.uno.typeinfo.TypeInfo;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * Test case for bug #97697#.
@@ -45,18 +47,11 @@ import complexlib.ComplexTestCase;
  * which can not be done reliably.  As an approximation, it waits for 10 sec and
  * considers the process hanging if it has not completed by then.</p>
  */
-public final class Bug97697_Test extends ComplexTestCase {
-    public String getTestObjectName() {
-        return getClass().getName();
-    }
-
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+public final class Bug97697_Test {
+    @Test
     public void test() throws Exception {
         TestBed t = new TestBed();
-        assure("test", t.execute(new Provider(t), true, Client.class, 10000));
+        assertTrue("test", t.execute(new Provider(t), true, Client.class, 10000));
     }
 
     public static final class Client extends TestBed.Client {

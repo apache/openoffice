@@ -28,6 +28,7 @@ $(eval $(call gb_JunitTest_add_jars,sc_complex_cellRanges,\
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,sc_complex_cellRanges,\

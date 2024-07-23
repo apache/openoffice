@@ -24,102 +24,99 @@
 package testtools.servicetests;
 
 import com.sun.star.uno.UnoRuntime;
-import complexlib.ComplexTestCase;
 import util.WaitUnreachable;
 
-public abstract class TestBase extends ComplexTestCase {
-    public final String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
+import static org.junit.Assert.*;
 
-    public final void test() throws Exception {
+public abstract class TestBase {
+    public final void runTest() throws Exception {
         TestServiceFactory factory = getTestServiceFactory();
         TestService2 t = UnoRuntime.queryInterface(
             TestService2.class, factory.get());
-        assure(t != null);
-        assure(UnoRuntime.queryInterface(TestService1.class, t) == t);
-        assure(UnoRuntime.queryInterface(XTestService1.class, t) == t);
-        assure(UnoRuntime.queryInterface(XTestService2.class, t) == t);
-        assure(t.fn1() == 1);
-        assure(t.getProp1() == 1);
+        assertTrue(t != null);
+        assertTrue(UnoRuntime.queryInterface(TestService1.class, t) == t);
+        assertTrue(UnoRuntime.queryInterface(XTestService1.class, t) == t);
+        assertTrue(UnoRuntime.queryInterface(XTestService2.class, t) == t);
+        assertTrue(t.fn1() == 1);
+        assertTrue(t.getProp1() == 1);
         t.setProp1(0);
-        assure(t.getProp1() == 0);
-        assure(t.getProp2() == 2);
+        assertTrue(t.getProp1() == 0);
+        assertTrue(t.getProp2() == 2);
         /*try {
             t.getProp3Void();
-            failed();
+            fail();
         } catch (VoidPropertyException e) {
         }*/
-        assure(t.getProp3Long() == 3);
+        assertTrue(t.getProp3Long() == 3);
         /*try {
             t.getProp4None();
-            failed();
+            fail();
         } catch (OptionalPropertyException e) {
         }*/
-        assure(t.getProp4Long() == 4);
+        assertTrue(t.getProp4Long() == 4);
         /*try {
             t.getProp5None();
-            failed();
+            fail();
         } catch (OptionalPropertyException e) {
         }
         try {
             t.getProp5Void();
-            failed();
+            fail();
         } catch (VoidPropertyException e) {
         }*/
-        assure(t.getProp5Long() == 5);
-        assure(t.getProp6() == 6);
+        assertTrue(t.getProp5Long() == 5);
+        assertTrue(t.getProp6() == 6);
         /*t.clearProp6();
         try {
             t.getProp6();
-            failed();
+            fail();
         } catch (VoidPropertyException e) {
         }*/
         t.setProp6(0);
-        assure(t.getProp6() == 0);
+        assertTrue(t.getProp6() == 0);
         /*try {
             t.getProp7None();
-            failed();
+            fail();
         } catch (OptionalPropertyException e) {
         }
         try {
             t.setProp7None(0);
-            failed();
+            fail();
         } catch (OptionalPropertyException e) {
         }
         try {
             t.clearProp7None();
-            failed();
+            fail();
         } catch (OptionalPropertyException e) {
         }*/
-        assure(t.getProp7() == 7);
+        assertTrue(t.getProp7() == 7);
         /*t.clearProp7();
         try {
             t.getProp7();
-            failed();
+            fail();
         } catch (VoidPropertyException e) {
         }*/
         t.setProp7(0);
-        assure(t.getProp7() == 0);
+        assertTrue(t.getProp7() == 0);
         /*try {
             t.getProp8None();
-            failed();
+            fail();
         } catch (OptionalPropertyException e) {
         }
         try {
             t.setProp8None(0);
-            failed();
+            fail();
         } catch (OptionalPropertyException e) {
         }*/
-        assure(t.getProp8Long() == 8);
+        assertTrue(t.getProp8Long() == 8);
         t.setProp8Long(0);
-        assure(t.getProp8Long() == 0);
-        assure(t.fn2() == 2);
+        assertTrue(t.getProp8Long() == 0);
+        assertTrue(t.fn2() == 2);
         XTestService3 t3 = UnoRuntime.queryInterface(XTestService3.class, t);
-        assure(t3 != null);
-        assure(t3.fn3() == 3);
+        assertTrue(t3 != null);
+        assertTrue(t3.fn3() == 3);
         XTestService4 t4 = UnoRuntime.queryInterface(XTestService4.class, t);
-        assure(t4 == null);
+        assertTrue(t4 == null);
         WaitUnreachable u = new WaitUnreachable(t);
         t = null;
         WaitUnreachable.ensureFinalization(t3);

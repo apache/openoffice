@@ -35,15 +35,14 @@ import com.sun.star.uno.TypeClass;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
 
-public final class PolyStructTest extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
+public final class PolyStructTest {
+    @Test
     public void test() throws Exception {
-        assure(
+        assertTrue(
             "test",
             new TestBed().execute(new Provider(), false, Client.class, 0));
     }

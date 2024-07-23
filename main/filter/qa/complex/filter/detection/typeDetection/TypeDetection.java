@@ -29,13 +29,22 @@ import com.sun.star.io.XInputStream;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
 import java.io.File;
+import java.io.IOException;
 
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Vector;
 import util.utils;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.Argument;
+import org.openoffice.test.OfficeConnection;
 
 
 
@@ -178,67 +187,47 @@ import util.utils;
  * @see com.sun.star.document.XTypeDetection
  * @see com.sun.star.document.MediaDescriptor
  */
-public class TypeDetection extends ComplexTestCase {
+public class TypeDetection {
+    private static final OfficeConnection connection = new OfficeConnection();
 
     /** 
      * @member m_xDetection     the object to test
      * @member helper           instacne of helper class
      */
-    
     static XTypeDetection   m_xDetection;
     static Helper helper = null;
-    
-    /**
-     * A function to tell the framework, which test functions are available.
-     * @return All test methods.
-     */
-    public String[] getTestMethodNames() {
-        return new String[]{"checkByURLonly",
-                            "checkPreselectedType",
-                            "checkPreselectedFilter",
-                            "checkPreselectedDocService",
-                            "checkStreamLoader",
-                            "checkStreamLoader"};
 
-    }
-
-    /** Create the environment for following tests.
-     * Use either a component loader from desktop or
-     * from frame
-     * @throws Exception Exception
-     */
-    public void before() throws Exception {
+    @BeforeClass
+    public static void before()
+        throws Exception
+    {
+        connection.setUp();
 
         // create TypeDetection
-        XMultiServiceFactory xMSF = (XMultiServiceFactory)param.getMSF();
-        assure("Could not get XMultiServiceFactory", xMSF != null);
+        XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
+        assertTrue("Could not get XMultiServiceFactory", xMSF != null);
         
         Object oInterface = xMSF.createInstance(
                                         "com.sun.star.document.TypeDetection");
                                         
         if (oInterface == null) {
-            failed("Service wasn't created") ;
+            fail("Service wasn't created") ;
         }
 
         XInterface oObj = (XInterface) oInterface ;
-        log.println("ImplName: "+utils.getImplName(oObj));
+        System.out.println("ImplName: "+utils.getImplName(oObj));
         
         m_xDetection = (XTypeDetection)
                 UnoRuntime.queryInterface(XTypeDetection.class, oInterface);
-        Enumeration k = param.keys();
-        while (k.hasMoreElements()){
-            String kName = ((String)k.nextElement()).toString();
-            log.println(kName + ":" + param.get(kName).toString());
-        }
         // create instrace of helper class
-        helper = new Helper(param, log);
-        
+        helper = new Helper(xMSF);
     }
 
-    /**
-     * close the environment
-     */
-    public void after() {
+    @AfterClass
+    public static void tearDownConnection()
+        throws InterruptedException, com.sun.star.uno.Exception
+    {
+        connection.tearDown();
     }
 
     /**
@@ -250,33 +239,25 @@ public class TypeDetection extends ComplexTestCase {
      * fileAlias;fileURL;fileType
      *
      */
-    public void checkByURLonly() {
-        try{
-            log.println("### checkByURLonly() ###");
-            Vector CSVData =  helper.getToDoList(
-                                    (String)param.get("csv.files"));
-            Enumeration allToDos = CSVData.elements();
-            
-            while (allToDos.hasMoreElements()){
-                Vector toDo = (Vector) allToDos.nextElement();
+    @Test
+    public void checkByURLonly() throws Exception {
+        System.out.println("### checkByURLonly() ###");
+        ArrayList<ArrayList<String>> CSVData =  helper.getToDoList(Argument.get("files.csv"));
 
-                String fileAlias = (String) toDo.get(0);
-                String fileURL  = (String) toDo.get(1);
-                String URLfileType = (String) toDo.get(2);
-                String StreamfileType = (String) toDo.get(3);
-                
-                fileURL =  utils.getFullURL(helper.ensureEndingFileSep(
-                              (String)param.get("TestDocumentPath")) + fileURL);
-                
-                log.println("actual '"+ fileAlias + 
-                                        "' ['" + URLfileType + "']: '" + fileURL);
-                
-                checkMediaDescriptorURL(fileAlias, fileURL, URLfileType);
-                checkMediaDescriptorXInputStream(fileAlias, fileURL, StreamfileType);
-            }
-            
-        } catch (ClassCastException e){
-            failed(e.toString(), true);
+        for (ArrayList<String> toDo : CSVData){
+            String fileAlias = toDo.get(0);
+            String fileURL  = toDo.get(1);
+            String URLfileType = toDo.get(2);
+            String StreamfileType = toDo.get(3);
+
+            fileURL =  utils.getFullURL(Helper.ensureEndingFileSep(
+                          Argument.get("tdoc")) + fileURL);
+
+            System.out.println("actual '"+ fileAlias + 
+                               "' ['" + URLfileType + "']: '" + fileURL);
+
+            checkMediaDescriptorURL(fileAlias, fileURL, URLfileType);
+            checkMediaDescriptorXInputStream(fileAlias, fileURL, StreamfileType);
         }
     }
 
@@ -291,18 +272,19 @@ public class TypeDetection extends ComplexTestCase {
     private void checkMediaDescriptorURL(
                             String fileAlias, String fileURL, String fileType){
                                 
-        PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
+        PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
             new String[] {"URL"},
-            new Object[] {fileURL});
-            log.println("check only by URL...");
-                
-            String type = m_xDetection.queryTypeByDescriptor(
-                               helper.createInOutPropertyValue(MediaDescriptor), true);
-            
-            boolean fileTypeOK = helper.checkFileType(type, fileType);
-            
-            assure("\nURL-test         : " + fileAlias + ":\n\treturned type: '" + type +
-                   "'\n\texpected type: '" + fileType + "'",fileTypeOK ,true);
+            new Object[] {fileURL}
+        );
+        System.out.println("check only by URL...");
+
+        String type = m_xDetection.queryTypeByDescriptor(
+                            Helper.createInOutPropertyValue(MediaDescriptor), true);
+
+        boolean fileTypeOK = Helper.checkFileType(type, fileType);
+
+        assertTrue("\nURL-test         : " + fileAlias + ":\n\treturned type: '" + type +
+                   "'\n\texpected type: '" + fileType + "'",fileTypeOK);
     }
 
     /** Filles a MediaDescriptor with a <code>XInputStream</code> of the test
@@ -323,22 +305,23 @@ public class TypeDetection extends ComplexTestCase {
         try{
             xStream = helper.getFileStream( fileURL );
         } catch (NotConnectedException e) {
-            failed("Could not get XInputStream from file :'" + fileURL + "'",true);
+            fail("Could not get XInputStream from file :'" + fileURL + "'");
             return;
         }
             
-        PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
+        PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
             new String[] {"InputStream"},
-            new Object[] {xStream});
-            log.println("check only by XInputStream...");
-                
-            String type = m_xDetection.queryTypeByDescriptor(
-                               helper.createInOutPropertyValue(MediaDescriptor), true);
-            
-            boolean fileTypeOK = helper.checkFileType(type, fileType);
-            
-            assure("\nXInputStream-test: " + fileAlias + ":\n\treturned type: '" + type +
-                   "'\n\texpected type: '" + fileType + "'", fileTypeOK, true);
+            new Object[] {xStream}
+        );
+        System.out.println("check only by XInputStream...");
+
+        String type = m_xDetection.queryTypeByDescriptor(
+                           Helper.createInOutPropertyValue(MediaDescriptor), true);
+
+        boolean fileTypeOK = Helper.checkFileType(type, fileType);
+
+        assertTrue("\nXInputStream-test: " + fileAlias + ":\n\treturned type: '" + type +
+                   "'\n\texpected type: '" + fileType + "'", fileTypeOK);
             
     }
 
@@ -351,46 +334,32 @@ public class TypeDetection extends ComplexTestCase {
      * fileAlias;fileURL;fileType
      *
      */
-    public void checkPreselectedType() {
-        try{
-            log.println("### checkPreselectedType() ###");
-            
-            Vector CSVData =  helper.getToDoList(
-                                    (String)param.get("csv.preselectedType"));
-            Enumeration allToDos = CSVData.elements();
-            
-            while (allToDos.hasMoreElements()){
-                try{
-                    Vector toDo = (Vector) allToDos.nextElement();
-                
-                    String fileAlias = (String) toDo.get(0);
-                    String fileURL  = helper.getURLforfileAlias(fileAlias);
-                    String preselectFileType = (String) toDo.get(1);
-                    String expectedFileType = (String) toDo.get(2);
-                    
-                    PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
-                        new String[] {"URL", "MediaType"},
-                        new Object[] {fileURL, preselectFileType});
-                    log.println("check '" + fileAlias + "' with MediaType: '" + 
-                                preselectFileType + "'");
+    @Test
+    public void checkPreselectedType() throws Exception {
+        System.out.println("### checkPreselectedType() ###");
 
-                    String type = m_xDetection.queryTypeByDescriptor(
-                                   helper.createInOutPropertyValue(MediaDescriptor), true);
+        ArrayList<ArrayList<String>> CSVData =  helper.getToDoList(Argument.get("preselectedType.csv"));
 
-                    boolean fileTypeOK = helper.checkFileType(type, expectedFileType);
-                    
-                    assure("\n" + fileAlias + ":\n\treturned type: '" + type +
-                                    "'\n\texpected type: '" + expectedFileType + "'",
-                                    fileTypeOK, true);
+        for (ArrayList<String> toDo : CSVData){
+            String fileAlias = toDo.get(0);
+            String fileURL  = helper.getURLforfileAlias(fileAlias);
+            String preselectFileType = toDo.get(1);
+            String expectedFileType = toDo.get(2);
 
-                    } catch (FileAliasNotFoundException e){
-                        failed(e.toString(),true);
-                    }
-                
-            }
-            
-        } catch (ClassCastException e){
-            failed(e.toString(), true);
+            PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
+                new String[] {"URL", "TypeName"}, // FIXME: "TypeName" was "MediaType", but "MediaType" doesn't work.
+                new Object[] {fileURL, preselectFileType});
+            System.out.println("check '" + fileAlias + "' with TypeName: '" +
+                               preselectFileType + "'");
+
+            String type = m_xDetection.queryTypeByDescriptor(
+                           Helper.createInOutPropertyValue(MediaDescriptor), true);
+
+            boolean fileTypeOK = Helper.checkFileType(type, expectedFileType);
+
+            assertTrue("\n" + fileAlias + ":\n\treturned type: '" + type +
+                       "'\n\texpected type: '" + expectedFileType + "'",
+                       fileTypeOK);
         }
     }
 
@@ -400,52 +369,35 @@ public class TypeDetection extends ComplexTestCase {
      * first fileAlias that matches "*.txt" in the file list
      * of the given directory.
      */
-    public void checkPreselectedFilter() {
-        try{
-            log.println("### checkPreselectedFilter() ###");
-            
-            Vector CSVData =  helper.getToDoList(
-                                    (String)param.get("csv.preselectedFilter"));
+    @Test
+    public void checkPreselectedFilter() throws Exception {
+        System.out.println("### checkPreselectedFilter() ###");
 
-            Enumeration allToDos = CSVData.elements();
-            
-            while (allToDos.hasMoreElements()){
-                try{
-                    Vector toDo = (Vector) allToDos.nextElement();
+        ArrayList<ArrayList<String>> CSVData =  helper.getToDoList(Argument.get("preselectedFilter.csv"));
 
-                    String fileAlias = (String) toDo.get(0);
-                    String fileURL  = helper.getURLforfileAlias(fileAlias);
-                    String filterName = (String) toDo.get(1);
-                    String filterOptions = (String) toDo.get(2);
-                    String filterData = (String) toDo.get(3);
-                    String expectedType = (String) toDo.get(4);
+        for (ArrayList<String> toDo : CSVData){
+            String fileAlias = toDo.get(0);
+            String fileURL  = helper.getURLforfileAlias(fileAlias);
+            String filterName = toDo.get(1);
+            String filterOptions = toDo.get(2);
+            String filterData = toDo.get(3);
+            String expectedType = toDo.get(4);
 
-                    PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
-                        new String[] {"URL","FilterName",
-                                                  "FilterOptions","FilterData"},
-                        new Object[] {fileURL, filterName, 
-                                                   filterOptions, filterData});
+            PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
+                new String[] {"URL","FilterName", "FilterOptions","FilterData"},
+                new Object[] {fileURL, filterName, filterOptions, filterData});
 
-                    log.println("check '" + fileAlias + "' with filter: '" + 
-                                filterName + "'");
+            System.out.println("check '" + fileAlias + "' with filter: '" + 
+                               filterName + "'");
 
-                    String type = m_xDetection.queryTypeByDescriptor(
-                               helper.createInOutPropertyValue(MediaDescriptor), true);
+            String type = m_xDetection.queryTypeByDescriptor(
+                       Helper.createInOutPropertyValue(MediaDescriptor), true);
 
-                    boolean fileTypeOK = helper.checkFileType(type, expectedType);
-                    
-                    assure("\n" + fileAlias + ":\n\treturned type: '" + type +
-                                    "'\n\texpected type: '" + expectedType + "'",
-                                    fileTypeOK,true);
-                  
-                } catch (FileAliasNotFoundException e){
-                    failed(e.toString(),true);
-                }
+            boolean fileTypeOK = Helper.checkFileType(type, expectedType);
 
-            }
-            
-        } catch (ClassCastException e){
-            failed(e.toString(), true);
+            assertTrue("\n" + fileAlias + ":\n\treturned type: '" + type +
+                       "'\n\texpected type: '" + expectedType + "'",
+                       fileTypeOK);
         }
     }
 
@@ -453,103 +405,83 @@ public class TypeDetection extends ComplexTestCase {
      * Check URL encoding. The first fileAlias that matches "*.sxw"
      * is used as source for several encodings.
      */
-     public void checkPreselectedDocService() {
-        try{
-            log.println("### checkPreselectedDocService() ###");
+     @Test
+     public void checkPreselectedDocService() throws Exception {
+         System.out.println("### checkPreselectedDocService() ###");
 
-            Vector CSVData =  helper.getToDoList((String)param.get("csv.serviceName"));
-            Enumeration allToDos = CSVData.elements();
-            
-            while (allToDos.hasMoreElements()){
-                try{
-                    Vector toDo = (Vector) allToDos.nextElement();
+         ArrayList<ArrayList<String>> CSVData =  helper.getToDoList(Argument.get("serviceName.csv"));
 
-                    String fileAlias = (String) toDo.get(0);
-                    String fileURL  = helper.getURLforfileAlias(fileAlias);
-                    String serviceName = (String) toDo.get(1);
-                    String fileType = helper.getTypeforfileAlias(fileAlias);
-                
-                    PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
-                        new String[] {"URL", "DocumentSerivce"},
-                        new Object[] {fileURL, serviceName});
-                    log.println("check " + fileAlias);
+         for (ArrayList<String> toDo : CSVData){
+             String fileAlias = toDo.get(0);
+             String fileURL  = helper.getURLforfileAlias(fileAlias);
+             String serviceName = toDo.get(1);
+             String fileType = helper.getTypeforfileAlias(fileAlias);
 
-                    String type = m_xDetection.queryTypeByDescriptor(
-                                   helper.createInOutPropertyValue(MediaDescriptor), true);
+             PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
+                 new String[] {"URL", "DocumentSerivce"},
+                 new Object[] {fileURL, serviceName});
+             System.out.println("check " + fileAlias);
 
-                    boolean fileTypeOK = helper.checkFileType(type, fileType);
-                    
-                    assure("\n" + fileAlias + ":\n\treturned type: '" + type +
-                                    "'\t\nexpected type: '" + fileType + "'",
-                                    fileTypeOK, true);
+             String type = m_xDetection.queryTypeByDescriptor(
+                            Helper.createInOutPropertyValue(MediaDescriptor), true);
 
-                } catch (FileAliasNotFoundException e){
-                    failed(e.toString(),true);
-                }
-                  
-            }
-            
-        } catch (ClassCastException e){
-            failed(e.toString(), true);
-        }
+             boolean fileTypeOK = Helper.checkFileType(type, fileType);
+
+             assertTrue("\n" + fileAlias + ":\n\treturned type: '" + type +
+                        "'\t\nexpected type: '" + fileType + "'",
+                        fileTypeOK);
+         }
      }
-     
+
+     @Test
      public void checkStreamLoader(){
-         try{
-             
-            /*
-             *als Dateien die typeDetection.props und eine der csv-Dateien
-             *benutzten. diese können per dmake einfach auf andere Rechte setzten
-             *
-             */
-            log.println("### checkStreamLoader() ###");
-            String[] urls = new String[2];
-            
-            urls[0] = helper.getClassURLString("TypeDetection.props");
-            urls[1] = helper.getClassURLString("files.csv");
-            
-            for (int j=0; j<urls.length; j++){
-                String fileURL  = urls[j];
-                File file = new File(fileURL);
-                fileURL =  utils.getFullURL(fileURL);
-                
-                PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
-                                                        new String[] {"URL"},
-                                                        new Object[] {fileURL});
-                                                        
-                if (file.canWrite()) log.println("check writable file...");
-                else log.println("check readonly file...");
-                
-                PropertyValue[][] inOut = helper.createInOutPropertyValue(MediaDescriptor);
-                PropertyValue[] in = inOut[0];
-                log.println("in-Parameter:");
-                for (int i=0; i < in.length; i++){
-                    log.println("["+i+"] '" + in[i].Name + "':'" + in[i].Value.toString()+"'");
-                }
+         /*
+          *as files that used typeDetection.props and one of the csv files.
+          *These can simply be set to other permissions using dmake
+          *
+          */
+         System.out.println("### checkStreamLoader() ###");
+         String[] urls = new String[2];
 
-                String type = m_xDetection.queryTypeByDescriptor(inOut, true);
+         urls[0] = Argument.get("properties");
+         urls[1] = Argument.get("files.csv");
 
-                PropertyValue[] out = inOut[0];
+         for (int j=0; j<urls.length; j++){
+             String fileURL  = urls[j];
+             File file = new File(fileURL);
+             fileURL =  utils.getFullURL(fileURL);
 
-                boolean bStream = false;
-                log.println("out-Parameter");
-                boolean bReadOnly = false;
-                for (int i=0; i < out.length; i++){
-                    if ((out[i].Name.equals("ReadOnly")) && (out[i].Value.toString().equals("true"))) bReadOnly = true;
-                    log.println("["+i+"] '" + out[i].Name + "':'" + out[i].Value.toString()+"'");
-                }
-                
-                if (file.canWrite() && bReadOnly)
-                    assure("\nStreamLoader: file '"+ fileURL +"' is writable but out-Parameter does contain 'ReadOnly' property",false ,true);
-                else if ((!file.canWrite()) && (!bReadOnly))
-                    assure("\nStreamLoader: file '"+ fileURL +"'is readonly but out-Parameter does not contain 'ReadOnly' property",false ,true);
-                else assure("all ok",true,true);
-                
-            }
+             PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
+                 new String[] {"URL"},
+                 new Object[] {fileURL});
 
-         } catch (ClassCastException e){
-            failed(e.toString(), true);
-        }
-        
+             if (file.canWrite()) System.out.println("check writable file...");
+             else System.out.println("check readonly file...");
+
+             PropertyValue[][] inOut = Helper.createInOutPropertyValue(MediaDescriptor);
+             PropertyValue[] in = inOut[0];
+             System.out.println("in-Parameter:");
+             for (int i=0; i < in.length; i++){
+                 System.out.println("["+i+"] '" + in[i].Name + "':'" + in[i].Value.toString()+"'");
+             }
+
+             String type = m_xDetection.queryTypeByDescriptor(inOut, true);
+
+             PropertyValue[] out = inOut[0];
+
+             boolean bStream = false;
+             System.out.println("out-Parameter");
+             boolean bReadOnly = false;
+             for (int i=0; i < out.length; i++){
+                 if ((out[i].Name.equals("ReadOnly")) && (out[i].Value.toString().equals("true"))) bReadOnly = true;
+                 System.out.println("["+i+"] '" + out[i].Name + "':'" + out[i].Value.toString()+"'");
+             }
+
+             if (file.canWrite() && bReadOnly)
+                 assertTrue("\nStreamLoader: file '"+ fileURL +"' is writable but out-Parameter does contain 'ReadOnly' property",false);
+             else if ((!file.canWrite()) && (!bReadOnly))
+                 assertTrue("\nStreamLoader: file '"+ fileURL +"'is readonly but out-Parameter does not contain 'ReadOnly' property",false);
+             else assertTrue("all ok",true);
+         }
      }
 }

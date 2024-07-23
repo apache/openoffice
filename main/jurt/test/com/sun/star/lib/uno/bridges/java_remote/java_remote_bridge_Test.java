@@ -34,18 +34,13 @@ import com.sun.star.uno.IQueryInterface;
 import com.sun.star.uno.Type;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
 import util.WaitUnreachable;
 
-public final class java_remote_bridge_Test extends ComplexTestCase {
-    public String getTestObjectName() {
-        return getClass().getName();
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+public final class java_remote_bridge_Test {
+    @Test
     public void test() throws Exception {
         String protocol = "urp";
 
@@ -64,14 +59,14 @@ public final class java_remote_bridge_Test extends ComplexTestCase {
     }
 
     private void testGetInstance(XBridge bridgeA, XBridge bridgeB) {
-        assure("return null",
+        assertTrue("return null",
                bridgeB.getInstance(TestInstanceProvider.NAME_NULL) == null);
 
         try {
             bridgeB.getInstance(TestInstanceProvider.NAME_RUNTIME_EXCEPTION);
-            failed("throw RuntimeException");
+            fail("throw RuntimeException");
         } catch (com.sun.star.uno.RuntimeException e) {
-            assure("throw RuntimeException",
+            assertTrue("throw RuntimeException",
                    e.getMessage().indexOf(
                        TestInstanceProvider.NAME_RUNTIME_EXCEPTION) != -1);
         }
@@ -79,9 +74,9 @@ public final class java_remote_bridge_Test extends ComplexTestCase {
         try {
             bridgeB.getInstance(
                 TestInstanceProvider.NAME_NO_SUCH_ELEMENT_EXCEPTION);
-            failed("throw NoSuchElementException");
+            fail("throw NoSuchElementException");
         } catch (com.sun.star.uno.RuntimeException e) {
-            assure("throw NoSuchElementException",
+            assertTrue("throw NoSuchElementException",
                    e.getMessage().indexOf(
                        TestInstanceProvider.NAME_NO_SUCH_ELEMENT_EXCEPTION)
                    != -1);
@@ -89,9 +84,9 @@ public final class java_remote_bridge_Test extends ComplexTestCase {
 
         try {
             bridgeA.getInstance(TestInstanceProvider.NAME_ANYTHING);
-            failed("no instance provider");
+            fail("no instance provider");
         } catch (com.sun.star.uno.RuntimeException e) {
-            assure("no instance provider",
+            assertTrue("no instance provider",
                    e.getMessage().startsWith("unknown OID "));
         }
     }
@@ -140,15 +135,15 @@ public final class java_remote_bridge_Test extends ComplexTestCase {
             remapped.function();
         }
 
-        assure("calls of object method", TestProxy.getCount() == 3 * COUNT);
+        assertTrue("calls of object method", TestProxy.getCount() == 3 * COUNT);
 
         // The following checks rely on the implementation detail that mapping
         // different facets of a UNO object (XInterface and TestInterface) leads
         // to different proxies:
 
-        assure("bridge A life count", bridgeA.getLifeCount() == 2 * COUNT);
-        assure("bridge B life count", bridgeB.getLifeCount() == 2 * COUNT);
-        assure("proxy count", ProxyFactory.getDebugCount() == 2 * COUNT);
+        assertTrue("bridge A life count", bridgeA.getLifeCount() == 2 * COUNT);
+        assertTrue("bridge B life count", bridgeB.getLifeCount() == 2 * COUNT);
+        assertTrue("proxy count", ProxyFactory.getDebugCount() == 2 * COUNT);
 
         System.out.println("waiting for proxies to become unreachable:");
         for (int i = 0; i < COUNT; ++i) {
@@ -164,16 +159,16 @@ public final class java_remote_bridge_Test extends ComplexTestCase {
         // before the following assure is executed:
         Thread.sleep(1000);
 
-        assure("proxy count", ProxyFactory.getDebugCount() == 0);
+        assertTrue("proxy count", ProxyFactory.getDebugCount() == 0);
 
         System.out.println("waiting for pending messages to be done");
         while (bridgeA.getLifeCount() != 0 || bridgeB.getLifeCount() != 0) {
             Thread.sleep(100);
         }
 
-        assure("Zero bridge A life count", bridgeA.getLifeCount() == 0);
-        assure("Zero bridge B life count", bridgeB.getLifeCount() == 0);
-        assure("Zero proxy count", ProxyFactory.getDebugCount() == 0);
+        assertTrue("Zero bridge A life count", bridgeA.getLifeCount() == 0);
+        assertTrue("Zero bridge B life count", bridgeB.getLifeCount() == 0);
+        assertTrue("Zero proxy count", ProxyFactory.getDebugCount() == 0);
     }
 
     public interface TestInterface extends XInterface {

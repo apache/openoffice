@@ -27,48 +27,46 @@ import complex.connectivity.dbase.DBaseStringFunctions;
 import complex.connectivity.dbase.DBaseSqlTests;
 import complex.connectivity.dbase.DBaseNumericFunctions;
 import com.sun.star.lang.XMultiServiceFactory;
-import complexlib.ComplexTestCase;
-import share.LogWriter;
+import com.sun.star.uno.UnoRuntime;
 
-public class DBaseDriverTest extends ComplexTestCase implements TestCase
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.Argument;
+import org.openoffice.test.OfficeConnection;
+
+public class DBaseDriverTest
 {
-    public String[] getTestMethodNames()
-    {
-        return new String[]
-                {
-                    "Functions"
-                };
+    private static final OfficeConnection connection = new OfficeConnection();
+
+    @BeforeClass
+    public static void beforeClass() throws Exception {
+        connection.setUp();
     }
 
-    @Override
-    public String getTestObjectName()
-    {
-        return "DBaseDriverTest";
+    @AfterClass
+    public static void afterClass() throws Exception {
+        connection.tearDown();
     }
 
-    @Override
-    public void assure( final String i_message, final boolean i_condition )
-    {
-        super.assure( i_message, i_condition );
-    }
-
-    public LogWriter getLog()
-    {
-        return ComplexTestCase.log;
-    }
-
+    @Test
     public void Functions() throws com.sun.star.uno.Exception, com.sun.star.beans.UnknownPropertyException
     {
-        DBaseStringFunctions aStringTest = new DBaseStringFunctions(((XMultiServiceFactory) param.getMSF()), this);
+        XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
+
+        DBaseStringFunctions aStringTest = new DBaseStringFunctions(xMSF);
         aStringTest.testFunctions();
 
-        DBaseNumericFunctions aNumericTest = new DBaseNumericFunctions(((XMultiServiceFactory) param.getMSF()), this);
+        DBaseNumericFunctions aNumericTest = new DBaseNumericFunctions(xMSF);
         aNumericTest.testFunctions();
 
-        DBaseDateFunctions aDateTest = new DBaseDateFunctions(((XMultiServiceFactory) param.getMSF()), this);
+        DBaseDateFunctions aDateTest = new DBaseDateFunctions(xMSF);
         aDateTest.testFunctions();
 
-        DBaseSqlTests aSqlTest = new DBaseSqlTests(((XMultiServiceFactory) param.getMSF()), this);
+        DBaseSqlTests aSqlTest = new DBaseSqlTests(xMSF);
         aSqlTest.testFunctions();
     }
 }

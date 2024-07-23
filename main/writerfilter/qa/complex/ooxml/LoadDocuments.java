@@ -25,7 +25,6 @@ package complex.ooxml;
 import com.sun.star.lang.XComponent;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
-import complexlib.ComplexTestCase;
 import java.io.File;
 import org.junit.After;
 import org.junit.AfterClass;
