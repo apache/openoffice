@@ -37,7 +37,7 @@ JAVATESTFILES = \
 
 JAVAFILES = $(JAVATESTFILES)
 
-JARFILES = OOoRunner.jar ridl.jar test.jar unoil.jar jurt.jar
+JARFILES = OOoRunner.jar ridl.jar test.jar unoil.jar jurt.jar juh.jar
 EXTRAJARFILES = $(OOO_JUNIT_JAR)
 .END
 

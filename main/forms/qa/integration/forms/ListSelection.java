@@ -34,6 +34,7 @@ import com.sun.star.drawing.XDrawPageSupplier;
 import com.sun.star.awt.XControl;
 import com.sun.star.awt.XControlModel;
 import com.sun.star.awt.XListBox;
+import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.script.XLibraryContainer;
 import com.sun.star.script.XEventAttacherManager;
 import com.sun.star.script.ScriptEventDescriptor;
@@ -42,32 +43,59 @@ import com.sun.star.accessibility.XAccessibleContext;
 import com.sun.star.accessibility.XAccessibleSelection;
 import com.sun.star.frame.XStorable;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.Argument;
+import org.openoffice.test.OfficeConnection;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+
 public class ListSelection extends integration.forms.TestCase
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
+    private XMultiServiceFactory m_orb = null;
+    private Properties properties;
+
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception
+    {
+        officeConnection.tearDown();
+    }
+
     /** Creates a new instance of ListSelection */
-    public ListSelection()
+    public ListSelection() throws Exception
     {
         super( DocumentType.CALC );
+        properties = new Properties();
+        try (InputStreamReader reader = new InputStreamReader(new FileInputStream(Argument.get("properties")), "UTF-8")) {
+            properties.load(reader);
+        }
     }
 
-    /* ------------------------------------------------------------------ */
-    public String[] getTestMethodNames()
+    @Before
+    public void before() throws Exception
     {
-        return new String[] {
-            "checkUserListSelection"
-        };
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
     }
 
     /* ------------------------------------------------------------------ */
-    public String getTestObjectName()
-    {
-        return "Form Control List Selection Test";
-    }
-
-    /* ------------------------------------------------------------------ */
+    @Test
     public void checkUserListSelection() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        boolean interactiveTest = param.getBool( "Interactive" );
+        boolean interactiveTest = Boolean.parseBoolean( properties.getProperty("Interactive") );
 
         if ( interactiveTest )
         {
@@ -77,13 +105,13 @@ public class ListSelection extends integration.forms.TestCase
         }
         else
         {
-            int runs = param.getInt( "Runs" );
+            int runs = Integer.parseInt( properties.getProperty("Runs") );
             if ( runs == 0 )
                 runs = 10;
 
             for ( int i = 0; i < runs; ++i )
             {
-                log.println( "Round " + ( i + 1 ) + " of " + runs );
+                System.out.println( "Round " + ( i + 1 ) + " of " + runs );
                 prepareDocument();
                 impl_clickListBox();
                 synchronized( this ) { this.wait( 1000 ); }
@@ -127,13 +155,13 @@ public class ListSelection extends integration.forms.TestCase
                 catch( java.lang.InterruptedException e ) { }
 
                 XNamed sheetName = (XNamed)UnoRuntime.queryInterface( XNamed.class, view.getActiveSheet() );
-                assure( "sheet was not selected as expected!", sheetName.getName().equals( selectSheetName ) );
+                assertTrue( "sheet was not selected as expected!", sheetName.getName().equals( selectSheetName ) );
             }
         }
         catch( com.sun.star.uno.Exception e )
         {
             e.printStackTrace( System.err );
-            failed( "caught an exception: " + e.toString() );
+            fail( "caught an exception: " + e.toString() );
         }
     }
 
@@ -179,7 +207,7 @@ public class ListSelection extends integration.forms.TestCase
         catch( com.sun.star.uno.Exception e )
         {
             e.printStackTrace( System.err );
-            failed( "caught an exception: " + e.toString() );
+            fail( "caught an exception: " + e.toString() );
         }
     }
 
@@ -214,14 +242,14 @@ public class ListSelection extends integration.forms.TestCase
         catch( com.sun.star.uno.Exception e )
         {
             e.printStackTrace( System.err );
-            failed( "caught an exception: " + e.toString() );
+            fail( "caught an exception: " + e.toString() );
         }
     }
 
     /* ------------------------------------------------------------------ */
     protected void prepareDocument() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        super.prepareDocument();
+        super.prepareDocument(m_orb);
         impl_setupListenerScript();
 
         SpreadsheetDocument document = (SpreadsheetDocument)m_document;
@@ -273,7 +301,7 @@ public class ListSelection extends integration.forms.TestCase
         catch( java.lang.Throwable e )
         {
             e.printStackTrace();
-            failed( "caught an exception: " + e.toString() );
+            fail( "caught an exception: " + e.toString() );
         }
     }
 

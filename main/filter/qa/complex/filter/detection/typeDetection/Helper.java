@@ -26,20 +26,22 @@ package complex.filter.detection.typeDetection;
 import com.sun.star.beans.PropertyValue;
 import com.sun.star.io.NotConnectedException;
 import com.sun.star.io.XInputStream;
+import com.sun.star.lang.XMultiServiceFactory;
 
 import helper.StreamSimulator;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
-import java.util.Vector;
+import java.util.Properties;
 import lib.TestParameters;
 import share.LogWriter;
 import util.utils;
 
-
+import org.openoffice.test.Argument;
 
 /** Helper class for "TypeDetection"
  * This class do file hanlding.
@@ -47,25 +49,21 @@ import util.utils;
 public class Helper {
 
     /** The runner log writer
-     * @member m_log            for log purposes
      * @member m_sTestDocPath   directory for searching files to load
      * @member m_vFiles         list of all files described in "files.csv"
-     * @member m_hFileURLs      contains the position of a file name in the m_vFiles Vector
-     * @member m_hFileTypes     contains the position of a file type in the m_vFiles Vector
-     * @member m_param          the test parameters
+     * @member m_hFileURLs      contains the position of a file name in the m_vFiles ArrayList
+     * @member m_hFileTypes     contains the position of a file type in the m_vFiles ArrayList
      */
-
-    LogWriter m_log = null;
 
     String m_sTestDocPath = null;
 
-    Vector m_vFiles = null;
+    ArrayList<ArrayList<String>> m_vFiles = null;
 
     Hashtable m_hFileURLs = new Hashtable();
 
     Hashtable m_hFileTypes = new Hashtable();
 
-    TestParameters m_param = null;
+    XMultiServiceFactory m_xMSF;
 
     /**
      * construct a new instance of this class
@@ -77,39 +75,35 @@ public class Helper {
      * @param   log the log writer
      */
 
-    public Helper(TestParameters param, LogWriter log) {
+    public Helper(XMultiServiceFactory xMSF) throws IOException {
 
-        m_param = param;
-        m_log = log;
-
+        m_xMSF = xMSF;
 
         // get all files from the given directory
-        m_sTestDocPath = (String)param.get("TestDocumentPath");
+        m_sTestDocPath = Argument.get("tdoc");
 
         // get all files from "files.csv"
-        m_vFiles = getToDoList((String)m_param.get("csv.files"));
+        m_vFiles = getToDoList(Argument.get("files.csv"));
 
         createFilesList();
     }
 
 
      /** Reads a comma separated file (CSV). Every line of the file is
-      * represented by an <code>Vector</code> entry. Every data entry of a row is
-      * also stored in a <code>Vector</code>. So the returned value is a
-      * <code>Vector[][]</code> where the first dimension represents a row
+      * represented by an <code>ArrayList</code> entry. Every data entry of a row is
+      * also stored in a <code>ArrayList</code>. So the returned value is a
+      * <code>ArrayList<ArrayList<>></code> where the first dimension represents a row
       * and the second dimension includes the data values.
       * @param csvFileName the name of the csv file
-      * @return Vector filled with Vector filled with data of a row
+      * @return ArrayList filled with ArrayList filled with data of a row
       */
-     public Vector getToDoList(String csvFileName){
+     public ArrayList<ArrayList<String>> getToDoList(String csvFileName) throws IOException {
 
-       try {
-
-         Vector vAll = new Vector();
-         Vector vFields = new Vector();
+         ArrayList<ArrayList<String>> vAll = new ArrayList<>();
+         ArrayList<String> vFields = new ArrayList<>();
 
          // get content of file
-         Vector content = getCSVFileContent(csvFileName);
+         ArrayList<String> content = getCSVFileContent(csvFileName);
 
          // remove superfluous content like "#" started lines
          content = removeSuperfluousContent(content);
@@ -117,103 +111,49 @@ public class Helper {
          // replace all place holders in file
          content = replacePlaceHolder(content);
 
-         // create Enumeration
-         Enumeration contentEnum = content.elements();
-
          // the first line contains field names of the columns
          // split line by ";"
          StringTokenizer fields = new StringTokenizer(
-                                      contentEnum.nextElement().toString(),";");
+             content.get(0), ";");
          int fieldCount = 0;
          while (fields.hasMoreElements()){
-             vFields.add(fields.nextElement());
+             vFields.add((String)fields.nextElement());
              fieldCount++;
          }
 
          // fill vData with data of CSV-row
-         while (contentEnum.hasMoreElements()){
-             Vector vData = new Vector();
-
-             StringTokenizer data = new StringTokenizer(
-                                      contentEnum.nextElement().toString(),";", true);
-
-             // example: data = "firstData;secondData;;forthData"
-             // => three tokens => missing one data because the imagined
-             // "thirdData" was not received by data.nextToken()
-             // Therefore here comes a special handling for empty data
-             boolean nextIsData = false;
-             int dataCount = 0;
-             while (data.hasMoreTokens()) {
-                 Object myToken = data.nextToken();
-                 // if the "thirdData" will be received, myToken=";" but
-                 // vData must add an empty String
-                 if (myToken.equals(";")){
-                     if (nextIsData ) {
-                         vData.add("");
-                         dataCount++;
-                         nextIsData = false;
-                     }
-                     nextIsData = true;
-                 } else {
-                     vData.add(myToken.toString());
-                     dataCount++;
-                     nextIsData = false;
-                 }
+         for (int row = 1; row < content.size(); row++){
+             ArrayList<String> vData = new ArrayList<>();
+             String[] tokens = content.get(row).split(";");
+             for (String token : tokens) {
+                 vData.add(token);
              }
-             for (int i=dataCount; i < fieldCount; i++) vData.add("");
+             for (int i = tokens.length; i < fieldCount; i++)
+                  vData.add("");
              vAll.add(vData);
          }
 
-
          return vAll;
-
-       } catch(ClassCastException e) {
-             e.printStackTrace();
-       }
-         return null;
      }
 
      /** The csv files "files", "preselectedFilter", "preselectedType" and
-      * "serviceName" are delivered beside this class. This function seeks for
+      * "serviceName" are read with this class. This function seeks for
       * the csv files and read them.
       * @param csvFileName the name of the csv file
-      * @return a Vector containing the content of the file. <null/> if the file
-      * cannot be read
+      * @return an ArrayList<String> containing the content of the file.
       */
-
-    public Vector getCSVFileContent(String csvFileName) {
-        try {
-            Vector content = new Vector();
-            BufferedReader br;
-            String line;
-            if ( m_param.DebugIsActive ) {
-                System.out.println("Looking for "+csvFileName);
-            }
-
-            URL url = getClassURL(csvFileName);
-
-            if (url != null) {
-                URLConnection connection = url.openConnection();
-                InputStream in = connection.getInputStream();
-
-                br = new BufferedReader(new InputStreamReader(in));
-                try {
-                    while( ( line = br.readLine() ) != null ) {
-                            content.addElement( line );
-                    }
-                } catch (IOException e) {
-                    br.close();
-                    return null;
-                }
-                br.close();
-                return content;
-            }
-
-        }catch (IOException e) {
-        }catch(java.lang.NullPointerException e) {
-            return null;
+    private static ArrayList<String> getCSVFileContent(String csvFileName) throws IOException {
+        ArrayList<String> content = new ArrayList<>();
+        if ( Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")) ) {
+            System.out.println("Looking for "+csvFileName);
         }
-        return null;
+        String line;
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(csvFileName), "UTF-8"))) {
+            while ( ( line = reader.readLine() ) != null ) {
+                content.add( line );
+            }
+            return content;
+        }
     }
 
     /** returns a XInputStream of given file
@@ -224,7 +164,7 @@ public class Helper {
      */
     public XInputStream getFileStream( String filePath )
                                                 throws NotConnectedException {
-        return new StreamSimulator(filePath, true, m_param);
+        return new StreamSimulator(filePath, true, m_xMSF);
     }
 
     /** replaces place holder in preselectedFilter.
@@ -235,45 +175,44 @@ public class Helper {
      * @param content the content of a csv file
      * @return changed file content
      */
-    private Vector replacePlaceHolder(Vector content){
+    private static ArrayList<String> replacePlaceHolder(ArrayList<String> content) throws IOException {
 
-        Vector vReturn = new Vector();
+        ArrayList<String> vReturn = new ArrayList<>();
 
-        Vector placeHolders = new Vector();
-        Enumeration m_params = m_param.keys();
-        String placeHolder = (String)m_param.get("placeHolder");
+        ArrayList<String> placeHolders = new ArrayList<>();
+        Properties properties = new Properties();
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(Argument.get("properties")), "UTF-8"))) {
+            properties.load(reader);
+        }
+        Enumeration keys = properties.keys();
+        String placeHolder = properties.getProperty("placeHolder");
 
         // get all placeholders from typeDetection.csv
-        while (m_params.hasMoreElements()){
-                String holderKey = (String) m_params.nextElement();
-                if (holderKey.startsWith(placeHolder)){
-                    placeHolders.add(holderKey);
-                }
+        while (keys.hasMoreElements()){
+            String holderKey = (String) keys.nextElement();
+            if (holderKey.startsWith(placeHolder)){
+                placeHolders.add(holderKey);
+            }
         }
 
         // replace all occurrences of placeholders in 'CSVData'
-        Enumeration cont = content.elements();
+        for( String line : content ) {
 
-        while( cont.hasMoreElements() ) {
-
-            String line = (String) cont.nextElement();
             String newLine = line;
-            Enumeration holders = placeHolders.elements();
 
-            while( holders.hasMoreElements() ) {
+            for( String holder : placeHolders ) {
 
-                String holder = (String) holders.nextElement();
                 int startPos = line.indexOf(holder);
 
                 if (startPos > -1){
                     try{
-                        String holderValue = (String) m_param.get(holder);
+                        String holderValue = properties.getProperty(holder);
 
                         newLine = newLine.substring(0,startPos) + holderValue +
                                 newLine.substring(startPos + holder.length());
 
                     } catch (java.lang.IndexOutOfBoundsException e){
-                        m_log.println("ERROR: problems while creating placeholder" +
+                        System.out.println("ERROR: problems while creating placeholder" +
                                     " replaced list: "+ e);
                     }
                 }
@@ -286,22 +225,16 @@ public class Helper {
     /** Removes lines of an ascii file content which starts with "#"
      * or are empty
      * @param content content of a csv file
-     * @return a stripped Vector
+     * @return a stripped ArrayList<String>
      */
-    public Vector removeSuperfluousContent(Vector content){
-        try{
-            Vector newContent = new Vector();
-            Enumeration cont = content.elements();
-            while( cont.hasMoreElements() ) {
-                String line = (String) cont.nextElement();
-                    if (( ! line.startsWith( "#" ))&& ( line.length() != 0 )) {
-                        newContent.addElement( line );
-                    }
+    private static ArrayList<String> removeSuperfluousContent(ArrayList<String> content){
+        ArrayList<String> newContent = new ArrayList<>();
+        for( String line : content ) {
+            if (( ! line.startsWith( "#" ))&& ( line.length() != 0 )) {
+                newContent.add( line );
             }
-            return newContent;
-        } catch (ClassCastException e){
-            return null;
         }
+        return newContent;
     }
 
     /** returns a <code>MediaDescriptor</code> filled with given properties and
@@ -312,7 +245,7 @@ public class Helper {
      * @see com.sun.star.beans.PropertyValue
      * @see com.sun.star.document.MediaDescriptor
      */
-    public PropertyValue[] createMediaDescriptor(String[] propNames, Object[] values) {
+    public static PropertyValue[] createMediaDescriptor(String[] propNames, Object[] values) {
         PropertyValue[] props = new PropertyValue[propNames.length] ;
 
         for (int i = 0; i < props.length; i++) {
@@ -330,13 +263,13 @@ public class Helper {
      * @param s the system path
      * @return system path with ending system file separator
      */
-    public String ensureEndingFileSep(String s){
-	    if(s != null && !s.equals("") && !s.endsWith(File.separator)){
-            	s = s.trim() + File.separator;
+    public static String ensureEndingFileSep(String s){
+        if(s != null && !s.equals("") && !s.endsWith(File.separator)){
+            s = s.trim() + File.separator;
         }else if(s == null)
             s = "";
-	    return s;
-	}
+        return s;
+    }
 
     /** Returns the file URL for the given file name assembled by
      * "TestDocumentPath" of typeDetection.props and "fileURL" of files.csv
@@ -351,8 +284,7 @@ public class Helper {
             return utils.getFullURL(ensureEndingFileSep(m_sTestDocPath) + fileURL);
         } catch (java.lang.NullPointerException e){
             throw new FileAliasNotFoundException(fileAlias);
-       }
-
+        }
     }
 
     /** Returns the file type for the given file name containing in files.csv
@@ -375,13 +307,11 @@ public class Helper {
      *  type name. This informations are extracted from "files.csv"
      *  This is for faster access to get fileURL and fileType of fileAlias
      */
-    public void createFilesList(){
+    private void createFilesList(){
         for (int i = 0; i < m_vFiles.size();i++){
-            Vector toDo = (Vector) m_vFiles.get(i);
-                m_hFileURLs.put((String) toDo.get(0).toString(),
-                                               (String) toDo.get(1).toString());
-                m_hFileTypes.put((String) toDo.get(0).toString(),
-                                               (String) toDo.get(2).toString());
+            ArrayList<String> toDo = m_vFiles.get(i);
+            m_hFileURLs.put(toDo.get(0), toDo.get(1));
+            m_hFileTypes.put(toDo.get(0), toDo.get(2));
         }
     }
 
@@ -392,7 +322,7 @@ public class Helper {
      * @param fileTypes all possible file types
      * @return true if valid
      */
-    public boolean checkFileType(String currentFileType, String fileTypes){
+    public static boolean checkFileType(String currentFileType, String fileTypes){
 
         StringTokenizer data = new StringTokenizer(fileTypes,":", true);
 
@@ -410,22 +340,11 @@ public class Helper {
      * @return PropertyValue[][]
      * @param PropVal a PropertyValue
      */
-    public PropertyValue[][] createInOutPropertyValue(PropertyValue[] PropVal){
+    public static PropertyValue[][] createInOutPropertyValue(PropertyValue[] PropVal){
         PropertyValue[][] dummy = new PropertyValue[1][];
         dummy[0] = PropVal;
         return dummy;
     }
-
-    public URL getClassURL(String fileName){
-        String PackagePath = this.getClass().getPackage().getName().replace('.','/');
-        return this.getClass().getResource("/" + PackagePath +"/" + fileName);
-    }
-
-    public String getClassURLString(String fileName){
-        return getClassURL(fileName).toString().replaceAll("file:","");
-    }
-
-
 }
 
 /** This exception should be thrown if a method seeks for an invalid alias name */

@@ -23,7 +23,7 @@
 
 #include "sal/config.h"
 
-#include "cppunit/TestAssert.h"
+#include "gtest/gtest.h"
 #include "osl/process.h"
 #include "rtl/ustring.h"
 #include "rtl/ustring.hxx"
@@ -35,7 +35,7 @@ namespace test {
 rtl::OUString uniquePipeName(rtl::OUString const & name) {
     oslProcessInfo info;
     info.Size = sizeof info;
-    CPPUNIT_ASSERT_EQUAL(
+    EXPECT_EQ(
         osl_Process_E_None,
         osl_getProcessInfo(0, osl_Process_IDENTIFIER, &info));
     return name + rtl::OUString::valueOf(static_cast< sal_Int64 >(info.Ident));

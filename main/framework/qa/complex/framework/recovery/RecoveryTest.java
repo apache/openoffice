@@ -65,15 +65,14 @@ import com.sun.star.uno.Type;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XInterface;
 import com.sun.star.view.XSelectionSupplier;
-import complexlib.ComplexTestCase;
 import helper.OfficeProvider;
-import helper.OfficeWatcher;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.io.PrintWriter;
 import java.util.Hashtable;
 import java.util.Random;
+import stats.SimpleLogWriter;
 import util.DesktopTools;
 import util.PropertyName;
 import util.SOfficeFactory;
@@ -86,12 +85,13 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openoffice.test.Argument;
 import org.openoffice.test.OfficeConnection;
 import static org.junit.Assert.*;
 // ------------------------------------------
 
-public class RecoveryTest extends ComplexTestCase {
-
+public class RecoveryTest {
+    private static OfficeConnection officeConnection = new OfficeConnection();
     static XMultiServiceFactory xMSF;
     static SOfficeFactory SOF;
     static RecoveryTools rt;
@@ -115,28 +115,20 @@ public class RecoveryTest extends ComplexTestCase {
      */
     private Hashtable windowsPosSize = new Hashtable();
 
-    /**
-     * A function to tell the framework, which test functions are available.
-     * @return All test methods.
-     *
-     * @todo: hidden documents
-     * @todo: running presentation
-     * @todo: modular dialogs like Hyperlink-Dialog
-     * @todo: second view of a document
-     * @todo: remove recovery data before start test
-     * @todo: after a second start after the crash there should no documents recovered anymore
-     * @todo: enable remove of recovery files
-     * @todo: modify makefile to check for parameters
-     */
-    public String[] getTestMethodNames() {
-        return new String[]{"testCrash"};
-    }
-
     /** Create the environment for following tests.
      * Use either a component loader from desktop or
      * from frame
      * @throws Exception Exception
      */
+    @BeforeClass
+    public static void beforeClass() throws Exception {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception {
+        officeConnection.tearDown();
+    }
 
     public void normalCrash(){
         cleanRecoveryData();
@@ -151,6 +143,7 @@ public class RecoveryTest extends ComplexTestCase {
         checkDocumentCount(expectedDocumentCount);
     }
 
+    @Test
     public void testCrash(){
         cleanRecoveryData();
         restoreBackupRecoveryData();
@@ -162,6 +155,7 @@ public class RecoveryTest extends ComplexTestCase {
         //checkDocumentCount(expectedDocumentCount);
     }
 
+    @Before
     public void before() throws Exception {
 
         String msg ="\n\n\tPATH TO OFFICE BINARY MISSING!\n";
@@ -173,19 +167,19 @@ public class RecoveryTest extends ComplexTestCase {
         msg +="-AppExecutionCommand=/office/soffice \"-accept=socket,host=localhost,port=8101;urp;\"\n\n";
         msg+="NOTE: on UNIX be sure to have the connection string inside quotation mark!\n";
 
-        assure(msg, param.get("AppExecutionCommand") != null && ! param.get("AppExecutionCommand").equals(""));
-        System.out.println("HALLO" + param.get("AppExecutionCommand"));
+//        assertTrue(msg, param.get("AppExecutionCommand") != null && ! param.get("AppExecutionCommand").equals(""));
+//        System.out.println("HALLO" + param.get("AppExecutionCommand"));
         msg = "\n\nONE PARAMETER IS MISSING!\n";
         msg += "Please append to your command the following parameter:\n\n";
         msg += "\t-NoOffice=true";
-        assure(msg, param.getBool("NoOffice"));
+//        assertTrue(msg, param.getBool("NoOffice"));
 
-
-        rt = new RecoveryTools(param ,log);
+        xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
+        rt = new RecoveryTools(xMSF);
 
         rt.removeParametersFromAppExecutionCommand();
 
-        log.println("start the office to test recovery feature...");
+        System.out.println("start the office to test recovery feature...");
 
         // make window ranges
         makeWindowPositionRage();
@@ -205,8 +199,7 @@ public class RecoveryTest extends ComplexTestCase {
     }
 
     private void startOffice(){
-        assure("Could not connect to office", connect());
-        log.setWatcher(param.get("Watcher"));
+        assertTrue("Could not connect to office", connect());
     }
 
 
@@ -227,7 +220,7 @@ public class RecoveryTest extends ComplexTestCase {
         msg += "\texpected:\t" + expectedDocumentCount + "\n";
         msg += "\tto recover:\t" + documentCount;
 
-        assure(msg, expectedDocumentCount == documentCount);
+        assertTrue(msg, expectedDocumentCount == documentCount);
     }
 
     /**
@@ -237,16 +230,13 @@ public class RecoveryTest extends ComplexTestCase {
     private boolean connect(){
         try {
 
-            OfficeProvider oProvider = new OfficeProvider();
-            xMSF = (XMultiServiceFactory)oProvider.getManager(param);
-
             SOF = SOfficeFactory.getFactory(xMSF);
 
         }
         catch (java.lang.Exception e) {
-            log.println(e.getClass().getName());
-            log.println("Message: " + e.getMessage());
-            failed("Cannot connect the office.");
+            System.out.println(e.getClass().getName());
+            System.out.println("Message: " + e.getMessage());
+            fail("Cannot connect the office.");
             return false;
         }
         return true;
@@ -298,7 +288,7 @@ public class RecoveryTest extends ComplexTestCase {
                         msg += "Width : " + oldRect.Width + " -> " + newRect.Width + "\n";
                     }
 
-                    assure(msg, ok, CONTINUE);
+                    assertTrue(msg, ok);
 
                 }
             } catch (com.sun.star.container.NoSuchElementException e) {
@@ -316,7 +306,7 @@ public class RecoveryTest extends ComplexTestCase {
 
         // get one of them for dispatching
         XComponent xDoc = (XComponent) allDocs[0];
-        log.println("make the crash in second thread");
+        System.out.println("make the crash in second thread");
 
         CrashThread crash = new CrashThread(xDoc, xMSF);
         crash.start();
@@ -334,10 +324,10 @@ public class RecoveryTest extends ComplexTestCase {
             // if the office crashes, the recovery feature needs some time
             // to save all docs. Therefore the recovery dialog could need some
             // time to pop up.
-            log.println("waiting for recovery dialog...");
+            System.out.println("waiting for recovery dialog...");
 
             int counter = 0;
-            int maximum = param.getInt(PropertyName.THREAD_TIME_OUT) / param.getInt(PropertyName.SHORT_WAIT);
+            int maximum = Integer.parseInt(Argument.get("THREAD_TIME_OUT")) / Integer.parseInt(Argument.get("SHORT_WAIT"));
 
             XDialog oDialog = rt.getActiveDialog(xMSF);
 
@@ -348,80 +338,80 @@ public class RecoveryTest extends ComplexTestCase {
                 counter ++;
             }
 
-            assure("could not get Recovery Window",(oDialog != null));
+            assertTrue("could not get Recovery Window",(oDialog != null));
 
             XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, oDialog);
 
             UITools oUITools = new UITools(xMSF, xWindow);
 
-            oUITools.printAccessibleTree((PrintWriter) log, param.getBool(PropertyName.DEBUG_IS_ACTIVE));
+            oUITools.printAccessibleTree((PrintWriter) new SimpleLogWriter(), Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")));
 
             String[] documents = oUITools.getListBoxItems("The following files will be recovered");
-            log.println("there are " + documents.length + " documents to save");
+            System.out.println("there are " + documents.length + " documents to save");
 
             String msg ="The amount of documents to recover is different form the expected amount:\n";
             msg += "\texpected:\t" + expectedDocumentCount + "\n";
             msg += "\tto recover:\t" + documents.length;
 
-            assure(msg, expectedDocumentCount == documents.length);
+            assertTrue(msg, expectedDocumentCount == documents.length);
 
-            log.println("disable automatically launch of Office");
+            System.out.println("disable automatically launch of Office");
             oUITools.setCheckBoxValue("Launch OpenOffice automatically", new Integer(0));
 
-            log.println("start saving...");
+            System.out.println("start saving...");
             oUITools.clickButton("OK");
 
             rt.waitForClosedOffice();
 
         } catch (Exception e){
             e.printStackTrace();
-            failed("Could not handle crash-dialog: " + e.toString());
+            fail("Could not handle crash-dialog: " + e.toString());
         }
     }
 
      private void handleCrashReporterDialog(boolean cancel, boolean YesNo){
         try{
 
-            log.println("try to get Crash Reporter Dialog...");
+            System.out.println("try to get Crash Reporter Dialog...");
 
             XDialog oDialog = rt.getActiveDialog(xMSF);
-            assure("could not get CrashReporter Dialog", oDialog != null);
+            assertTrue("could not get CrashReporter Dialog", oDialog != null);
 
             XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, oDialog);
 
-            log.println(oDialog.getTitle());
+            System.out.println(oDialog.getTitle());
 
             UITools oUITools = new UITools(xMSF, xWindow);
 
             if (cancel) {
-                log.println("clicking 'Cancel' button...");
+                System.out.println("clicking 'Cancel' button...");
 
                 try{
                     rt.clickThreadButton(xMSF, xWindow, "Cancel");
                 } catch (com.sun.star.accessibility.IllegalAccessibleComponentStateException e){
-                    failed("Could not click 'Cancel' at CrashReporter Dialog");
+                    fail("Could not click 'Cancel' at CrashReporter Dialog");
                 }
 
             }
             else {
-                log.println("clicking 'Next' button...");
+                System.out.println("clicking 'Next' button...");
                 oUITools.clickButton("Next >");
             }
 
         } catch (Exception e){
-            failed("Could not handle CrashReporter Dialog: " + e.toString());
+            fail("Could not handle CrashReporter Dialog: " + e.toString());
         }
     }
 
     private void handleRecoveryDialog_QuickExit(int expectedDocumentCount){
-        log.println("handle Recovery Dialog at restart: quick exit");
+        System.out.println("handle Recovery Dialog at restart: quick exit");
         handleRecoveryDialogAtRestart(expectedDocumentCount, false, true);
         handleAreYouSureDialog(true);
         handleSaveDocumentsDialog(false);
 
     }
     private void handleRecoveryDialog_QuickExitAndSave(int expectedDocumentCount){
-        log.println("handle Recovery Dialog at restart: quick exit");
+        System.out.println("handle Recovery Dialog at restart: quick exit");
         handleRecoveryDialogAtRestart(expectedDocumentCount, false, true);
         handleAreYouSureDialog(true);
         handleSaveDocumentsDialog(true);
@@ -445,47 +435,47 @@ public class RecoveryTest extends ComplexTestCase {
     private void handleRecoveryDialogAtRestart(int expectedDocumentCount, boolean recover, boolean cancel){
         try{
 
-            log.println("try to get Recovery Dialog...");
+            System.out.println("try to get Recovery Dialog...");
 
             XDialog oDialog = null;
             oDialog = rt.getActiveDialogAfterStartup(xMSF);
 
-            assure("could not get Recovery Dialog at start of office", (oDialog != null), CONTINUE);
+            assertTrue("could not get Recovery Dialog at start of office", (oDialog != null));
 
             XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, oDialog);
-            log.println("got the following dialog: '" +oDialog.getTitle() + "'");
+            System.out.println("got the following dialog: '" +oDialog.getTitle() + "'");
 
             UITools oUITools = new UITools(xMSF, xWindow);
 
             String listBoxName = "Status of recovered documents";
             String[] documents = oUITools.getListBoxItems(listBoxName);
-            log.println("there are " + documents.length + " documents to recover");
-            log.println("The following files will be recovered:");
+            System.out.println("there are " + documents.length + " documents to recover");
+            System.out.println("The following files will be recovered:");
             for (int i=0;i<documents.length;i++){
-                log.println(documents[i]);
+                System.out.println(documents[i]);
             }
 
             String msg ="The amount of documents to recover is different form the expected amount:\n";
             msg += "\texpected:\t" + expectedDocumentCount + "\n";
             msg += "\tto recover:\t" + documents.length;
 
-            assure(msg, expectedDocumentCount ==documents.length);
+            assertTrue(msg, expectedDocumentCount ==documents.length);
 
             if (recover){
 
-                log.println("clicking 'Start Recovery' button...");
+                System.out.println("clicking 'Start Recovery' button...");
                 oUITools.clickButton("Start Recovery >");
 
                 rt.pause();
 
                 //XAccessibleContext oButton = oUITools.getButton("Start Recovery >");
                 int counter = 0;
-                int maximum = param.getInt(PropertyName.THREAD_TIME_OUT) / param.getInt(PropertyName.SHORT_WAIT);
+                int maximum = Integer.parseInt(Argument.get("THREAD_TIME_OUT")) / Integer.parseInt(Argument.get("SHORT_WAIT"));
                 //boolean enabeld = oButton.getAccessibleStateSet().contains(com.sun.star.accessibility.AccessibleStateType.ENABLED);
 
                 XAccessibleContext oButton = null;
                 while ((oButton == null) && (counter < maximum)){
-                    log.println("recovering...");
+                    System.out.println("recovering...");
 
                     try{
                        oButton = oUITools.getButton("Next >");
@@ -498,34 +488,34 @@ public class RecoveryTest extends ComplexTestCase {
                 }
 
                 if (cancel) {
-                    log.println("clicking 'Cancel' button...");
+                    System.out.println("clicking 'Cancel' button...");
 
                     try{
                         rt.clickThreadButton(xMSF, xWindow, "Cancel");
                     } catch (com.sun.star.accessibility.IllegalAccessibleComponentStateException e){
-                        failed("Could not click 'Cancel' at recovery-dialog.");
+                        fail("Could not click 'Cancel' at recovery-dialog.");
                     }
 
                 }
                 else {
-                    log.println("clicking 'Next' button...");
+                    System.out.println("clicking 'Next' button...");
                     oUITools.clickButton("Next >");
                 }
 
                 rt.pause();
 
             } else {
-                    log.println("do not recover: clicking 'Cancel' button...");
+                    System.out.println("do not recover: clicking 'Cancel' button...");
 
                     try{
                         rt.clickThreadButton(xMSF, xWindow, "Cancel");
                     } catch (com.sun.star.accessibility.IllegalAccessibleComponentStateException e){
-                        failed("Could not click 'Cancel' at recovery-dialog");
+                        fail("Could not click 'Cancel' at recovery-dialog");
                     }
             }
 
         } catch (Exception e){
-            failed("Could not handle recovery-dialog at restart: " + e.toString());
+            fail("Could not handle recovery-dialog at restart: " + e.toString());
         }
 
     }
@@ -545,7 +535,7 @@ public class RecoveryTest extends ComplexTestCase {
                 rt.handleModalDialog(xMSF, "Cancel");
             }
         } catch (com.sun.star.accessibility.IllegalAccessibleComponentStateException e){
-            failed("Could not handle 'Are you sure' dialog.");
+            fail("Could not handle 'Are you sure' dialog.");
         }
     }
 
@@ -564,40 +554,40 @@ public class RecoveryTest extends ComplexTestCase {
                 XWindow oDialog = null;
                 oDialog = rt.getActiveWindow(xMSF);
 
-                assure("could not get 'Save Documents' Dialog: ", (oDialog != null), CONTINUE);
+                assertTrue("could not get 'Save Documents' Dialog: ", (oDialog != null));
 
                 UITools oUITools = new UITools(xMSF, oDialog);
 
-                oUITools.printAccessibleTree((PrintWriter) log, param.getBool(PropertyName.DEBUG_IS_ACTIVE));
+                oUITools.printAccessibleTree((PrintWriter) new SimpleLogWriter(), Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")));
 
                 String listBoxName = "Documents";
                 String[] documents = null;
                 try{
                     documents = oUITools.getListBoxItems(listBoxName);
                 } catch (java.lang.Exception e){
-                    failed("could not get the document names from the 'Save Documents' dialog", CONTINUE);
+                    fail("could not get the document names from the 'Save Documents' dialog");
                 }
-                log.println("there are " + documents.length + " documents to save");
-                log.println("The following documents will be saved:");
+                System.out.println("there are " + documents.length + " documents to save");
+                System.out.println("The following documents will be saved:");
                 for (int i=0;i<documents.length;i++){
-                    log.println(documents[i]);
+                    System.out.println(documents[i]);
                 }
                 String tempURL = utils.getOfficeTempDir(xMSF);
 
-                log.println("the destination for saving is: " + tempURL);
+                System.out.println("the destination for saving is: " + tempURL);
                 try{
                     oUITools.setTextEditFiledText("Save to", tempURL);
                 } catch (java.lang.Exception e){
-                    failed("could not set target directory for saving documents at 'Save Documents' dialog", CONTINUE);
+                    fail("could not set target directory for saving documents at 'Save Documents' dialog");
                 }
                 try{
                     oUITools.clickButton("OK");
                 } catch (java.lang.Exception e){
-                    failed("could not click 'OK' at 'Save Documents' dialog", CONTINUE);
+                    fail("could not click 'OK' at 'Save Documents' dialog");
                 }
             }
         } catch (com.sun.star.accessibility.IllegalAccessibleComponentStateException e){
-            failed("Could not handle 'Are you sure' dialog.");
+            fail("Could not handle 'Are you sure' dialog.");
         }
     }
 
@@ -646,12 +636,12 @@ public class RecoveryTest extends ComplexTestCase {
         makeWriterDoc("WriterDocEmpty", false);
 //        makeImpressDoc("ImpressDocEmpty", false);
 
-        log.println("Test object successfully created.");
+        System.out.println("Test object successfully created.");
 
     }
 
     private void makeImpressDoc(String frameName, boolean withContent){
-        log.println("creating Impress document '" + frameName + "'");
+        System.out.println("creating Impress document '" + frameName + "'");
         XComponent xImpressDoc = createNewImpressDoc(frameName);
         if (withContent) fillImpressDocWithContent(xImpressDoc);
         positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
@@ -659,7 +649,7 @@ public class RecoveryTest extends ComplexTestCase {
     }
 
     private void makeDrawDoc(String frameName, boolean withContent){
-        log.println("creating Draw document '" + frameName + "'");
+        System.out.println("creating Draw document '" + frameName + "'");
         XComponent xDrawDoc = createNewDrawDoc(frameName);
         if (withContent) fillDrawDocWithContent(xDrawDoc);
         positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
@@ -667,7 +657,7 @@ public class RecoveryTest extends ComplexTestCase {
     }
 
     private void makeCalcDoc(String frameName, boolean withContent){
-        log.println("creating Calc document '" + frameName + "'");
+        System.out.println("creating Calc document '" + frameName + "'");
         XSpreadsheetDocument xSpreadsheetDoc = createNewCalcDoc(frameName);
         if (withContent) fillCalcDocWithContent(xSpreadsheetDoc);
         positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
@@ -688,7 +678,7 @@ public class RecoveryTest extends ComplexTestCase {
         xWindow.setPosSize(posSize.X, posSize.Y, posSize.Width, posSize.Height,
                            com.sun.star.awt.PosSize.POSSIZE);
         Rectangle test = xWindow.getPosSize();
-        log.println("x: "+test.X+" y:"+test.Y+" width:"+test.Width+" height:"+test.Height);
+        System.out.println("x: "+test.X+" y:"+test.Y+" width:"+test.Width+" height:"+test.Height);
     }
 
     private Rectangle makePosZize(){
@@ -713,7 +703,7 @@ public class RecoveryTest extends ComplexTestCase {
     }
 
     private void makeMathDoc(String frameName, boolean withContent){
-        log.println("creating Math document '" + frameName + "'");
+        System.out.println("creating Math document '" + frameName + "'");
         XComponent xMathDoc = createNewMathDoc(frameName);
         if (withContent) fillMathDocWithContent(xMathDoc);
         positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
@@ -725,8 +715,8 @@ public class RecoveryTest extends ComplexTestCase {
         try{
             xMathDoc = SOF.createMathDoc(frameName);
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Exception occurred while creating Math document '"+frameName+"':");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while creating Math document '"+frameName+"':");
+            fail("Couldn't create test environment");
         }
         return xMathDoc;
     }
@@ -739,17 +729,17 @@ public class RecoveryTest extends ComplexTestCase {
         try {
             xPS.setPropertyValue("Formula", expFormula);
         } catch(com.sun.star.lang.WrappedTargetException e) {
-            log.println("Exception occurred while filling Math document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Math document with content.");
+            fail("Couldn't create test environment");
         } catch(com.sun.star.lang.IllegalArgumentException e) {
-            log.println("Exception occurred while filling Math document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Math document with content.");
+            fail("Couldn't create test environment");
         } catch(com.sun.star.beans.PropertyVetoException e) {
-            log.println("Exception occurred while filling Math document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Math document with content.");
+            fail("Couldn't create test environment");
         } catch(com.sun.star.beans.UnknownPropertyException e) {
-            log.println("Exception occurred while filling Math document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Math document with content.");
+            fail("Couldn't create test environment");
         }
     }
 
@@ -758,8 +748,8 @@ public class RecoveryTest extends ComplexTestCase {
         try{
             xImpressDoc = SOF.createImpressDoc(frameName);
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Exception occurred while creating Impress document '"+frameName+"':");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while creating Impress document '"+frameName+"':");
+            fail("Couldn't create test environment");
         }
         return xImpressDoc;
     }
@@ -767,12 +757,12 @@ public class RecoveryTest extends ComplexTestCase {
 
     private void fillImpressDocWithContent(XComponent xImpressDoc){
 
-        log.println( "get presentation" );
+        System.out.println( "get presentation" );
         XPresentationSupplier oPS = (XPresentationSupplier)
             UnoRuntime.queryInterface(XPresentationSupplier.class, xImpressDoc);
         XInterface oObj = oPS.getPresentation();
 
-        log.println( "get custom presentation" );
+        System.out.println( "get custom presentation" );
         XCustomPresentationSupplier oCPS = (XCustomPresentationSupplier)
             UnoRuntime.queryInterface(
                 XCustomPresentationSupplier.class, xImpressDoc);
@@ -786,21 +776,21 @@ public class RecoveryTest extends ComplexTestCase {
         try{
             oInstance = (XInterface) oSingleMSF.createInstance();
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Could not create custom presentation while filling Impress document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Could not create custom presentation while filling Impress document with content.");
+            fail("Couldn't create test environment");
         }
 
         try {
             xCP.insertByName("FirstPresentation",oInstance);
         } catch (com.sun.star.lang.WrappedTargetException e) {
-            log.println("Could not insert custom presentation while filling Impress document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Could not insert custom presentation while filling Impress document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.container.ElementExistException e) {
-            log.println("Could not insert custom presentation while filling Impress document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Could not insert custom presentation while filling Impress document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            log.println("Could not insert custom presentation while filling Impress document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Could not insert custom presentation while filling Impress document with content.");
+            fail("Couldn't create test environment");
         }
     }
 
@@ -809,8 +799,8 @@ public class RecoveryTest extends ComplexTestCase {
         try{
             xDrawDoc = SOF.createDrawDoc(frameName);
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Exception occurred while creating Draw document '"+frameName+"':");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while creating Draw document '"+frameName+"':");
+            fail("Couldn't create test environment");
         }
         return xDrawDoc;
     }
@@ -826,18 +816,18 @@ public class RecoveryTest extends ComplexTestCase {
             oDP = (XDrawPage) AnyConverter.toObject(
                         new Type(XDrawPage.class),oDPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
-            log.println("Could not get Draw pages while filling Draw document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Could not get Draw pages while filling Draw document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
-            log.println("Could not get Draw pages while filling Draw document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Could not get Draw pages while filling Draw document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            log.println("Could not get Draw pages while filling Draw document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Could not get Draw pages while filling Draw document with content.");
+            fail("Couldn't create test environment");
         }
 
         // get a Shape
-        log.println( "getting Shape" );
+        System.out.println( "getting Shape" );
         XShapes oShapes = (XShapes) UnoRuntime.queryInterface
             (XShapes.class, oDP);
         XInterface oObj = SOF.createShape
@@ -861,22 +851,22 @@ public class RecoveryTest extends ComplexTestCase {
                 new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
             oShapeProps.setPropertyValue("ZOrder", new Integer(1));
         } catch (com.sun.star.lang.WrappedTargetException e) {
-            log.println("Exception occurred while setting or getting property value while filling Draw document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while setting or getting property value while filling Draw document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.beans.UnknownPropertyException e) {
-            log.println("Exception occurred while setting or getting property value while filling Draw document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while setting or getting property value while filling Draw document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            log.println("Exception occurred while setting or getting property value while filling Draw document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while setting or getting property value while filling Draw document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.beans.PropertyVetoException e) {
-            log.println("Exception occurred while setting or getting property value while filling Draw document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while setting or getting property value while filling Draw document with content.");
+            fail("Couldn't create test environment");
         }
     }
 
     private void makeWriterDoc(String frameName, boolean withContent){
-        log.println("creating Writer document '" + frameName + "'");
+        System.out.println("creating Writer document '" + frameName + "'");
         XTextDocument xTextDoc = createNewWriterDoc(frameName);
         if (withContent) fillWriterDocWithContent(xTextDoc);
         positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
@@ -888,15 +878,15 @@ public class RecoveryTest extends ComplexTestCase {
         try {
             xTextDoc = SOF.createTextDoc(frameName);
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Exception occurred while creating text document '"+frameName+"':");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while creating text document '"+frameName+"':");
+            fail("Couldn't create test environment");
         }
         return xTextDoc;
     }
 
     private void fillWriterDocWithContent(XTextDocument xTextDoc){
         try{
-            log.println( "inserting some lines" );
+            System.out.println( "inserting some lines" );
             XText oText = xTextDoc.getText();
             XTextCursor oCursor = oText.createTextCursor();
             for (int i=0; i<5; i++){
@@ -915,11 +905,11 @@ public class RecoveryTest extends ComplexTestCase {
                 oCursor, ControlCharacter.LINE_BREAK, false );
             }
         } catch ( com.sun.star.lang.IllegalArgumentException e ){
-            log.println("Exception occurred while filling text document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling text document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Exception occurred while filling text document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling text document with content.");
+            fail("Couldn't create test environment");
         }
     }
 
@@ -930,8 +920,8 @@ public class RecoveryTest extends ComplexTestCase {
         try {
             xSheetDoc = SOF.createCalcDoc(frameName);
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Exception occurred while creating Calc document '"+frameName+"':");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while creating Calc document '"+frameName+"':");
+            fail("Couldn't create test environment");
         }
         return xSheetDoc;
     }
@@ -956,20 +946,20 @@ public class RecoveryTest extends ComplexTestCase {
             oSheet.getCellByPosition(3, 2).setFormula("xTextDoc");
             oSheet.getCellByPosition(3, 3).setFormula("xTextDoc");
         } catch (com.sun.star.lang.WrappedTargetException e) {
-            log.println("Exception occurred while filling Calc document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Calc document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.container.NoSuchElementException e) {
-            log.println("Exception occurred while filling Calc document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Calc document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
-            log.println("Exception occurred while filling Calc document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Calc document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            log.println("Exception occurred while filling Calc document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Calc document with content.");
+            fail("Couldn't create test environment");
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Exception occurred while filling Calc document with content.");
-            failed("Couldn't create test environment");
+            System.out.println("Exception occurred while filling Calc document with content.");
+            fail("Couldn't create test environment");
         }
     }
 
@@ -979,13 +969,13 @@ public class RecoveryTest extends ComplexTestCase {
      */
     private void backupRecoveryData()
     {
-        log.println("backup recovery data...");
+        System.out.println("backup recovery data...");
         try{
             rt.copyRecoveryData(true);
         }catch (com.sun.star.io.IOException e){
-            failed("could not copy recovery data: " + e.toString());
+            fail("could not copy recovery data: " + e.toString());
         }catch (java.io.IOException e){
-            failed("could not copy recovery data: " + e.toString());
+            fail("could not copy recovery data: " + e.toString());
         }
     }
 
@@ -995,24 +985,24 @@ public class RecoveryTest extends ComplexTestCase {
      */
     private void restoreBackupRecoveryData()
     {
-        log.println("restore backup recovery data...");
+        System.out.println("restore backup recovery data...");
         try{
             rt.copyRecoveryData(false);
         }catch (com.sun.star.io.IOException e){
-            failed("could not copy recovery data: " + e.toString());
+            fail("could not copy recovery data: " + e.toString());
         }catch (java.io.IOException e){
-            failed("could not copy recovery data: " + e.toString());
+            fail("could not copy recovery data: " + e.toString());
         }
     }
 
     private void cleanRecoveryData(){
         try{
-            log.println("bootstrapping the office to get user path to remove old recovery data...");
+            System.out.println("bootstrapping the office to get user path to remove old recovery data...");
 
             rt.cleanRecoveryData();
 
         } catch (com.sun.star.io.IOException e){
-            failed("could not clean recovery data: " + e.toString());
+            fail("could not clean recovery data: " + e.toString());
         }
     }
 }

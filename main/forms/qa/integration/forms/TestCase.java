@@ -27,9 +27,9 @@ import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.util.XCloseable;
 import com.sun.star.util.XModifiable;
 
-public abstract class TestCase extends complexlib.ComplexTestCase implements com.sun.star.lang.XEventListener
+
+public abstract class TestCase implements com.sun.star.lang.XEventListener
 {
-    protected XMultiServiceFactory    m_orb;              /// our service factory
     protected DocumentType            m_documentType;     /// the type of our document
     protected DocumentHelper          m_document;         /// our current test document
     protected FormLayer               m_formLayer;
@@ -44,17 +44,6 @@ public abstract class TestCase extends complexlib.ComplexTestCase implements com
     public String getTestObjectName()
     {
         return this.getClass().getName();
-    }
-
-    /* ------------------------------------------------------------------ */
-    public void before() throws com.sun.star.uno.Exception, java.lang.Exception
-    {
-        m_orb = (XMultiServiceFactory)param.getMSF();
-    }
-
-    /* ------------------------------------------------------------------ */
-    public void after() throws com.sun.star.uno.Exception, java.lang.Exception
-    {
     }
 
     /* ------------------------------------------------------------------ */
@@ -105,9 +94,9 @@ public abstract class TestCase extends complexlib.ComplexTestCase implements com
     /* ------------------------------------------------------------------ */
     /** prepares a new document to work with
      */
-    protected void prepareDocument() throws com.sun.star.uno.Exception, java.lang.Exception
+    protected void prepareDocument(XMultiServiceFactory orb) throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        m_document = DocumentHelper.blankDocument( m_orb, m_documentType );
+        m_document = DocumentHelper.blankDocument( orb, m_documentType );
         m_document.getDocument( ).addEventListener( this );
         m_formLayer = new FormLayer( m_document );
     }

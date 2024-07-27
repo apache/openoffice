@@ -36,6 +36,7 @@ $(eval $(call gb_JunitTest_add_jars,svtools_unoapi,\
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
 	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,svtools_unoapi,\

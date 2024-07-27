@@ -29,17 +29,12 @@ import com.sun.star.comp.connections.PipedConnection;
 import com.sun.star.connection.XConnection;
 import com.sun.star.lang.XComponent;
 import com.sun.star.uno.UnoRuntime;
-import complexlib.ComplexTestCase;
 
-public final class BridgeFactory_Test extends ComplexTestCase {
-    public String getTestObjectName() {
-        return getClass().getName();
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+public final class BridgeFactory_Test {
+    @Test
     public void test() throws Exception {
         PipedConnection rightSide = new PipedConnection(new Object[0]);
         PipedConnection leftSide = new PipedConnection(new Object[]{rightSide});
@@ -50,14 +45,14 @@ public final class BridgeFactory_Test extends ComplexTestCase {
         XBridge xBridge = bridgeFactory.createBridge("testbridge", "urp", (XConnection)leftSide, null);
 
         // test that we get the same bridge
-        assure("", UnoRuntime.areSame(xBridge,
+        assertTrue("", UnoRuntime.areSame(xBridge,
                                       bridgeFactory.getBridge("testbridge")));
 
         // test that we can not create another bridge with same name
         try {
             XBridge dummy = bridgeFactory.createBridge("testbridge", "urp", (XConnection)leftSide, null);
 
-            failed("");
+            fail("");
         }
         catch(BridgeExistsException bridgeExistsException) {
         }
@@ -65,7 +60,7 @@ public final class BridgeFactory_Test extends ComplexTestCase {
 
         // test getExistingBridges
         XBridge xBridges[] = bridgeFactory.getExistingBridges();
-        assure("", UnoRuntime.areSame(xBridge, xBridges[0]));
+        assertTrue("", UnoRuntime.areSame(xBridge, xBridges[0]));
 
         // dispose the bridge
         XComponent xComponent = UnoRuntime.queryInterface(XComponent.class, xBridge);
@@ -73,7 +68,7 @@ public final class BridgeFactory_Test extends ComplexTestCase {
 
 
         // test that the bridge has been removed
-        assure("", bridgeFactory.getBridge("testbridge") == null);
+        assertTrue("", bridgeFactory.getBridge("testbridge") == null);
 
 
 
@@ -83,7 +78,7 @@ public final class BridgeFactory_Test extends ComplexTestCase {
 
         // test that we really get a new bridge
         XBridge xBridge_new = bridgeFactory.createBridge("testbridge", "urp", (XConnection)leftSide, null);
-        assure("", !UnoRuntime.areSame(xBridge, xBridge_new));
+        assertTrue("", !UnoRuntime.areSame(xBridge, xBridge_new));
 
         for(int i = 0; i <10000; ++ i) {
             Object x[] = new Object[100];
@@ -91,7 +86,7 @@ public final class BridgeFactory_Test extends ComplexTestCase {
 
         // test getExistingBridges
         xBridges = bridgeFactory.getExistingBridges();
-        assure("",
+        assertTrue("",
                xBridges.length == 1
                && UnoRuntime.areSame(xBridge_new, xBridges[0]));
 

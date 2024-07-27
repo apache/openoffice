@@ -346,7 +346,7 @@ OUString SvXMLAutoStylePoolP_Impl::FindAndRemoveCached( sal_Int32 nFamily ) cons
 		DBG_ASSERT( pFamily->pCache, "family doesn't have a cache" );
 
 		// The cache may be empty already. This happens if it was filled
-		// completly.
+		// completely.
 		if( pFamily->pCache && pFamily->pCache->Count() )
 		{
 			OUString *pName = pFamily->pCache->Remove( 0UL );

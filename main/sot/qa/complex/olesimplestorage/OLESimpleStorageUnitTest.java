@@ -37,19 +37,10 @@ import static org.junit.Assert.*;
 /* Document.
  */
 
-public class OLESimpleStorageUnitTest /* extends ComplexTestCase */
+public class OLESimpleStorageUnitTest
 {
     private XMultiServiceFactory m_xMSF = null;
     
-//    public String[] getTestMethodNames() {
-//        return new String[] {
-//            "ExecuteTest01"};
-//    }
-//
-//    public String getTestObjectName() {
-//        return "OLESimpleStorageUnitTest";
-//    }
-
     @Before public void before () {
         System.out.println("before()");
         try {

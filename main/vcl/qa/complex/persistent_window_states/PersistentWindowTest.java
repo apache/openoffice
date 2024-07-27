@@ -57,19 +57,6 @@ public class PersistentWindowTest
 //    private OfficeProvider oProvider;
     private int iOfficeCloseTime = 0;
 
-    /**
-     * A frunction to tell the framework, which test functions are available.
-     * Right now, it's only 'checkPersistentWindowState'.
-     * @return All test methods.
-     */
-//    public String[] getTestMethodNames()
-//    {
-//        return new String[]
-//                {
-//                    "checkPersistentWindowState"
-//                };
-//    }
-
    /**
      * The test parameters
      */

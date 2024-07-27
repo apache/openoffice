@@ -84,7 +84,7 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
      *              They are necessary. Otherwise this simulator can't really work.
      */
     public StreamSimulator( String  sFileName , boolean bInput , 
-        lib.TestParameters param   ) throws com.sun.star.io.NotConnectedException
+        XMultiServiceFactory xMSF   ) throws com.sun.star.io.NotConnectedException
     {
         ////m_aProtocol = new ComplexTestEnvironment();
         m_sFileName     = sFileName ;
@@ -95,7 +95,7 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             XSimpleFileAccess xHelper = (XSimpleFileAccess) 
                 UnoRuntime.queryInterface(XSimpleFileAccess.class, 
-                    ((XMultiServiceFactory)param.getMSF()).createInstance("com.sun.star.ucb.SimpleFileAccess"));
+                    xMSF.createInstance("com.sun.star.ucb.SimpleFileAccess"));
 /*            com.sun.star.ucb.XSimpleFileAccess xHelper = (com.sun.star.ucb.XSimpleFileAccess)OfficeConnect.createRemoteInstance(
                 com.sun.star.ucb.XSimpleFileAccess.class,
                 "com.sun.star.ucb.SimpleFileAccess");*/
@@ -123,6 +123,12 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
             ////m_aProtocol.log("\tstream not open. throw NotConnectedException\n\n\tfailed\n}\n");
             throw new com.sun.star.io.NotConnectedException("Could not open the file.");
         }
+    }
+
+    public StreamSimulator( String sFileName, boolean bInput, lib.TestParameters param)
+        throws com.sun.star.io.NotConnectedException
+    {
+        this(sFileName, bInput, (XMultiServiceFactory)param.getMSF());
     }
 
 /*    public void finalize()

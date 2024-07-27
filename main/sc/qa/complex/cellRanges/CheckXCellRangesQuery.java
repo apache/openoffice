@@ -24,7 +24,6 @@
 package complex.cellRanges;
 
 import com.sun.star.container.XIndexAccess;
-// import complexlib.ComplexTestCase;
 import com.sun.star.lang.XMultiServiceFactory;
 // import com.sun.star.sheet.CellFlags;
 import com.sun.star.sheet.XCellRangesQuery;
@@ -56,18 +55,10 @@ import static org.junit.Assert.*;
  * Check the XCellRangesQuery interface on the SheetCell service. test was 
  * created for bug i20044.
  */
-public class CheckXCellRangesQuery /* extends ComplexTestCase */ {
+public class CheckXCellRangesQuery {
     XSpreadsheetDocument m_xSheetDoc = null;
     XCellRangesQuery m_xCell = null;
     XSpreadsheet m_xSpreadSheet = null;
-
-    /**
-     * Get all test methods.
-     * @return The test methods.
-     */
-//     public String[] getTestMethodNames() {
-//         return new String[] {"checkEmptyCell", "checkFilledCell"};
-//     }
 
     /**
     * Creates Spreadsheet document and the test object, 

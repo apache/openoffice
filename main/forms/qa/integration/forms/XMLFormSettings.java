@@ -41,8 +41,18 @@ import org.openoffice.xforms.Instance;
 import org.openoffice.xforms.Model;
 import org.openoffice.xforms.XMLDocument;
 
-public class XMLFormSettings extends complexlib.ComplexTestCase
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
+
+public class XMLFormSettings
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
     private XMultiServiceFactory    m_orb;
     private XMLDocument             m_document;
     private Model                   m_defaultModel;
@@ -51,30 +61,29 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
     private XPropertySet            m_booleanBinding;
     private XPropertySet            m_dateBinding;
 
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception
+    {
+        officeConnection.tearDown();
+    }
+
     /** Creates a new instance of XMLFormSettings */
     public XMLFormSettings()
     {
     }
     
     /* ------------------------------------------------------------------ */
-    public String[] getTestMethodNames()
-    {
-        return new String[] {
-            "checkExternalData"
-        };
-    }
-    
-    /* ------------------------------------------------------------------ */
-    public String getTestObjectName()
-    {
-        return "Form Control Spreadsheet Cell Binding Test";
-    }
-
-    /* ------------------------------------------------------------------ */
+    @Before
     public void before() throws java.lang.Exception
     {
         // create the document and assign related members
-        m_orb = (XMultiServiceFactory)param.getMSF();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
         m_document = new XMLDocument( m_orb );
         m_formLayer = new FormLayer( m_document );
 
@@ -89,9 +98,9 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
         XNode booleanAttrib = defaultInstance.createAttribute( stringElement, "booleanAttribute", "true" );
         XNode dateAttrib = defaultInstance.createAttribute( stringElement, "dateAttribute" );
 
-        assure( "booleanAttrib's parent is wrong",
+        assertTrue( "booleanAttrib's parent is wrong",
             UnoRuntime.areSame( stringElement, booleanAttrib.getParentNode() ) );
-        assure( "dateAttrib's parent is wrong",
+        assertTrue( "dateAttrib's parent is wrong",
             UnoRuntime.areSame( stringElement, dateAttrib.getParentNode() ) );
 
         // also create bindings for the element and its attributes, of the proper type
@@ -109,10 +118,11 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
         XStorable store = (XStorable)UnoRuntime.queryInterface( XStorable.class,
             m_document.getDocument() );
         store.storeAsURL( fileURL, new PropertyValue[] {} );
-        assure( "document still modified after saving it", !m_document.isModified() );
+        assertTrue( "document still modified after saving it", !m_document.isModified() );
     }
 
     /* ------------------------------------------------------------------ */
+    @After
     public void after() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         impl_closeDocument();
@@ -142,6 +152,7 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
     /* ------------------------------------------------------------------ */
     /** checks if master-detail relationships including multiple keys work
      */
+    @Test
     public void checkExternalData() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // some controls
@@ -163,7 +174,7 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
 
         // ensure the model is set up as containing "document-internal" data
         m_defaultModel.setIsDocumentInternalData( true );
-        assure( "setting up the document to contain 'internal data' failed",
+        assertTrue( "setting up the document to contain 'internal data' failed",
             m_defaultModel.getIsDocumentInternalData() );
         impl_storeDocument();
 
@@ -172,21 +183,21 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
         // so that any changes to any controls bound to any data in this model actually marks
         // the containing document as modified
         m_formLayer.userTextInput( stringControl, "don't break this test" );
-        assure( "model data changed, but document is not modified",
+        assertTrue( "model data changed, but document is not modified",
             m_document.isModified() );
 
         // TODO: do this with the other control/binding types, too
 
         // no the other way round: set up the model to contain "document-external" data
         m_defaultModel.setIsDocumentInternalData( false );
-        assure( "setting up the document to contain 'internal data' failed",
+        assertTrue( "setting up the document to contain 'internal data' failed",
             !m_defaultModel.getIsDocumentInternalData() );
         impl_storeDocument();
 
         // and check that now, changes in the controls / model data are not reflected in
         // document's modified state
         m_formLayer.userTextInput( stringControl, "(or any other test, that is)" );
-        assure( "model data changed, but document is modified",
+        assertTrue( "model data changed, but document is modified",
             !m_document.isModified() );
 
         // .................................................................
@@ -202,9 +213,9 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
         internalDataModel = m_document.getXFormModel( "internalData" );
         externalDataModel = m_document.getXFormModel( "externalData" );
 
-        assure( "setting up a model to contain 'internal data' did not survive reloading",
+        assertTrue( "setting up a model to contain 'internal data' did not survive reloading",
             internalDataModel.getIsDocumentInternalData() );
-        assure( "setting up a model to contain 'external data' did not survive reloading",
+        assertTrue( "setting up a model to contain 'external data' did not survive reloading",
             !externalDataModel.getIsDocumentInternalData() );
     }
 
@@ -217,6 +228,6 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
         XStorable store = (XStorable)UnoRuntime.queryInterface( XStorable.class,
             m_document.getDocument() );
         store.store();
-        assure( "document still modified after saving it", !m_document.isModified() );
+        assertTrue( "document still modified after saving it", !m_document.isModified() );
     }
 }

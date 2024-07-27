@@ -23,16 +23,14 @@
 
 package com.sun.star.lib.uno.environments.remote;
 
-import complexlib.ComplexTestCase;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-public final class JavaThreadPoolFactory_Test extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+public final class JavaThreadPoolFactory_Test {
+    @Test
     public void test() throws InterruptedException {
         ThreadId i1 = JavaThreadPoolFactory.getThreadId();
-        assure(i1.equals(JavaThreadPoolFactory.getThreadId()));
+        assertTrue(i1.equals(JavaThreadPoolFactory.getThreadId()));
         final ThreadId[] i2 = new ThreadId[1];
         new Thread() {
             public void run() {
@@ -47,6 +45,6 @@ public final class JavaThreadPoolFactory_Test extends ComplexTestCase {
                 i2.wait();
             }
         }
-        assure(!i1.equals(i2[0]));
+        assertTrue(!i1.equals(i2[0]));
     }
 }

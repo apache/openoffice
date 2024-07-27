@@ -74,4 +74,11 @@ $(eval $(call gb_Module_add_targets,vcl,\
 ))
 endif
 
+ifneq ($(OOO_JUNIT_JAR),)
+$(eval $(call gb_Module_add_subsequentcheck_targets,vcl,\
+	JunitTest_vcl_complex_memCheck \
+	JunitTest_vcl_complex_persistentWindowStates \
+))
+endif
+
 # vim: set noet sw=4 ts=4:

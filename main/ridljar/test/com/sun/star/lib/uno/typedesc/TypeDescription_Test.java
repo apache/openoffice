@@ -33,18 +33,12 @@ import com.sun.star.uno.Type;
 import com.sun.star.uno.TypeClass;
 import com.sun.star.uno.XInterface;
 import com.sun.star.uno.XNamingService;
-import complexlib.ComplexTestCase;
 
-public final class TypeDescription_Test extends ComplexTestCase {
-    public String getTestObjectName() {
-        return getClass().getName();
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    public String[] getTestMethodNames() {
-        return new String[] { "test", "testUnsigned",
-                              "testGetMethodDescription", "testSequence" };
-    }
-
+public final class TypeDescription_Test {
+    @Test
     public void test() throws Exception {
         ITypeDescription voidTD = TypeDescription.getTypeDescription(
             void.class);
@@ -137,19 +131,22 @@ public final class TypeDescription_Test extends ComplexTestCase {
                                       "com.sun.star.uno.XNamingService"));
     }
 
+    @Test
     public void testUnsigned() throws ClassNotFoundException {
-        assure("TypeDescription for UNSIGNED LONG",
+        assertTrue("TypeDescription for UNSIGNED LONG",
                TypeDescription.getTypeDescription(Type.UNSIGNED_LONG).
                getTypeName().equals("unsigned long"));
     }
 
+    @Test
     public void testGetMethodDescription() {
         TypeDescription td = TypeDescription.getTypeDescription(XDerived.class);
         td.getMethodDescription("fn");
     }
 
+    @Test
     public void testSequence() throws ClassNotFoundException {
-        assure(
+        assertTrue(
             TypeDescription.getTypeDescription("[]unsigned short").
             getComponentType().getTypeName().equals("unsigned short"));
     }
@@ -178,26 +175,26 @@ public final class TypeDescription_Test extends ComplexTestCase {
 
         public void test(String prefix, int index,
                          IMethodDescription description) {
-            assure(prefix + "; getIndex", description.getIndex() == index);
-            assure(prefix + "; getMethod",
+            assertTrue(prefix + "; getIndex", description.getIndex() == index);
+            assertTrue(prefix + "; getMethod",
                    (description.getMethod() == null) == buildIn);
-            assure(prefix + "; isOneway", description.isOneway() == oneWay);
+            assertTrue(prefix + "; isOneway", description.isOneway() == oneWay);
             ITypeDescription[] in = description.getInSignature();
-            assure(prefix + "; getInSignature",
+            assertTrue(prefix + "; getInSignature",
                    in.length == inParameters.length);
             for (int i = 0; i < in.length; ++i) {
-                assure(prefix + "; getInSignature " + i,
+                assertTrue(prefix + "; getInSignature " + i,
                        in[i].equals(inParameters[i]));
             }
             ITypeDescription[] out = description.getOutSignature();
-            assure(prefix + "; getOutSignature",
+            assertTrue(prefix + "; getOutSignature",
                    out.length == outParameters.length);
             for (int i = 0; i < out.length; ++i) {
-                assure(prefix + "; getOutSignature " + i,
+                assertTrue(prefix + "; getOutSignature " + i,
                        out[i] == null ? outParameters[i] == null
                        : out[i].equals(outParameters[i]));
             }
-            assure(prefix + "; getReturnSignature",
+            assertTrue(prefix + "; getReturnSignature",
                    description.getReturnSignature().equals(returnValue));
         }
 
@@ -226,21 +223,21 @@ public final class TypeDescription_Test extends ComplexTestCase {
 
         public void test(String prefix, Object[] data,
                          ITypeDescription description) throws Exception {
-            assure(prefix + "; getTypeName",
+            assertTrue(prefix + "; getTypeName",
                    description.getTypeName().equals(data[0]));
-            assure(prefix + "; equals",
+            assertTrue(prefix + "; equals",
                    description.equals(TypeDescription.getTypeDescription(
                                           (String)data[0])));
-            assure(prefix + "; getArrayTypeName",
+            assertTrue(prefix + "; getArrayTypeName",
                    description.getArrayTypeName().equals(data[1]));
-            assure(prefix + "; getZClass", description.getZClass() == data[2]);
-            assure(prefix + "; getTypeClass",
+            assertTrue(prefix + "; getZClass", description.getZClass() == data[2]);
+            assertTrue(prefix + "; getTypeClass",
                    description.getTypeClass() == data[3]);
-            assure(prefix + "; getComponentType",
+            assertTrue(prefix + "; getComponentType",
                    description.getComponentType() == null);
 
             IMethodDescription[] mds = description.getMethodDescriptions();
-            assure(
+            assertTrue(
                 prefix + "; getMethodDescriptions",
                 mds == null
                     ? methodSignatures == null
@@ -255,7 +252,7 @@ public final class TypeDescription_Test extends ComplexTestCase {
             for (int i = 0; i < methodNames.length; ++i) {
                 IMethodDescription md = description.getMethodDescription(
                     i + methodOffset);
-                assure(prefix + "; getMethodDescription " + (i + methodOffset),
+                assertTrue(prefix + "; getMethodDescription " + (i + methodOffset),
                        md != null);
                 methodSignatures[i].test(
                     prefix + "; getMethodDescription " + (i + methodOffset),
@@ -264,7 +261,7 @@ public final class TypeDescription_Test extends ComplexTestCase {
             for (int i = 0; i < methodNames.length; ++i) {
                 IMethodDescription md = description.getMethodDescription(
                     methodNames[i]);
-                assure(prefix + "; getMethodDescription " + methodNames[i],
+                assertTrue(prefix + "; getMethodDescription " + methodNames[i],
                        md != null);
                 methodSignatures[i].test(
                     prefix + "; getMethodDescription " + methodNames[i],
@@ -272,7 +269,7 @@ public final class TypeDescription_Test extends ComplexTestCase {
             }
 
             IFieldDescription[] fds = description.getFieldDescriptions();
-            assure(
+            assertTrue(
                 prefix + "; getFieldDescriptions",
                 fds == null
                     ? fieldSignatures == null
@@ -287,7 +284,7 @@ public final class TypeDescription_Test extends ComplexTestCase {
             }
 
             ITypeDescription supert = description.getSuperType();
-            assure(prefix + "; getSuperType",
+            assertTrue(prefix + "; getSuperType",
                    (supert == null) == (data.length < 6));
             if (supert != null && data[5] != null) {
                 _superType.test(prefix + "; getSuperType", (Object[]) data[5],

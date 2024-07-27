@@ -38,35 +38,40 @@ import integration.forms.BooleanValidator;
 import integration.forms.ListSelectionValidator;
 import integration.forms.SingleControlValidation;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
+
 /**
  *
  * @author  fs@openoffice.org
  */
-public class ControlValidation extends complexlib.ComplexTestCase implements com.sun.star.lang.XEventListener
+public class ControlValidation implements com.sun.star.lang.XEventListener
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
     private DocumentHelper          m_document;         /// our current test document
     private XMultiServiceFactory    m_orb;              /// our service factory
+
+    @BeforeClass
+    public static void beforeClass() throws java.lang.Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws java.lang.Exception
+    {
+        officeConnection.tearDown();
+    }
 
     /** Creates a new instance of ControlValidation */
     public ControlValidation()
     {
-    }
-
-    public String[] getTestMethodNames()
-    {
-        return new String[] {
-            "interactiveValidation"
-        };
-    }
-
-    public String getTestObjectName()
-    {
-        return "Form Control Validation Test";
-    }
-
-    public static boolean isInteractiveTest()
-    {
-        return true;
     }
 
     /* ------------------------------------------------------------------ */
@@ -74,7 +79,7 @@ public class ControlValidation extends complexlib.ComplexTestCase implements com
     /* ------------------------------------------------------------------ */
     public void before() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        m_orb = (XMultiServiceFactory)param.getMSF();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
     }
 
     /* ------------------------------------------------------------------ */
@@ -114,6 +119,7 @@ public class ControlValidation extends complexlib.ComplexTestCase implements com
     /* ------------------------------------------------------------------ */
     /* public test methods                                                */
     /* ------------------------------------------------------------------ */
+    @Test
     public void interactiveValidation() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         prepareTestStep();

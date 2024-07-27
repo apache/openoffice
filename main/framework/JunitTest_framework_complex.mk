@@ -26,6 +26,9 @@ $(eval $(call gb_JunitTest_JunitTest,framework_complex,SRCDIR))
 $(eval $(call gb_JunitTest_set_defs,framework_complex,\
 	$$(DEFS) \
 	-Dorg.openoffice.test.arg.tdoc=$(SRCDIR)/framework/qa/complex/broken_document/test_documents \
+	-Dorg.openoffice.test.arg.DEBUG_IS_ACTIVE=false \
+	-Dorg.openoffice.test.arg.THREAD_TIME_OUT=3000000 \
+	-Dorg.openoffice.test.arg.SHORT_WAIT=500 \
 ))
 
 $(eval $(call gb_JunitTest_add_jars,framework_complex,\
@@ -34,6 +37,7 @@ $(eval $(call gb_JunitTest_add_jars,framework_complex,\
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
 	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,framework_complex,\

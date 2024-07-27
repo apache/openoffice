@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef _SV_SVIDS_HRC
@@ -33,7 +33,7 @@
 #define SV_RESID_BITMAP_RADIO				1010
 
 #define SV_RESID_BITMAP_MSGBOX				1020
-#define SV_RESID_BITMAP_MSGBOX_HC           1021
+#define SV_RESID_BITMAP_MSGBOX_HC			1021
 
 #define SV_RESID_BITMAP_PIN 				1030
 
@@ -47,12 +47,12 @@
 #define SV_RESID_BITMAP_CLOSEDOC			1052
 #define SV_RESID_BITMAP_CLOSEDOCHC			1053
 
-#define SV_DISCLOSURE_PLUS                  1060
-#define SV_DISCLOSURE_MINUS                 1061
-#define SV_DISCLOSURE_PLUS_HC               1062
-#define SV_DISCLOSURE_MINUS_HC              1063
+#define SV_DISCLOSURE_PLUS					1060
+#define SV_DISCLOSURE_MINUS					1061
+#define SV_DISCLOSURE_PLUS_HC				1062
+#define SV_DISCLOSURE_MINUS_HC				1063
 
-#define RID_STR_PAPERNAMES                  1070
+#define RID_STR_PAPERNAMES					1070
 
 #define SV_RESID_MENU_EDIT					2000
 #define SV_MENU_EDIT_UNDO					1
@@ -181,7 +181,7 @@
 #define SV_BUTTONTEXT_CLOSE 				SV_HELPTEXT_CLOSE
 #define SV_BUTTONTEXT_MORE					10107
 #define SV_BUTTONTEXT_IGNORE				10108
-#define SV_BUTTONTEXT_ABORT				10109
+#define SV_BUTTONTEXT_ABORT					10109
 #define SV_BUTTONTEXT_LESS					10110
 
 #define SV_STDTEXT_FIRST					SV_STDTEXT_SERVICENOTAVAILABLE
@@ -252,7 +252,7 @@
 #define SV_ICON_ID_PRINTERADMIN               501
 
 #define SV_RESID_BITMAP_THROBBER_START       3000
-#define SV_RESID_BITMAP_THROBBER_END         3060
+#define SV_RESID_BITMAP_THROBBER_END         3072
 
 #define HID_PRINTDLG                        HID_VCL_START
 

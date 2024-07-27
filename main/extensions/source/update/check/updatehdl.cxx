@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_extensions.hxx"
 
@@ -145,11 +143,11 @@ void UpdateHandler::enableControls( short nCtrlState )
 //--------------------------------------------------------------------
 void UpdateHandler::setDownloadBtnLabel( bool bAppendDots )
 {
-    osl::MutexGuard aGuard( maMutex );
+	osl::MutexGuard aGuard( maMutex );
 
-    if ( mbDownloadBtnHasDots != bAppendDots )
-    {
-        rtl::OUString aLabel( msDownload );
+	if ( mbDownloadBtnHasDots != bAppendDots )
+	{
+		rtl::OUString aLabel( msDownload );
 
         if ( bAppendDots )
             aLabel += UNISTRING( "..." );
@@ -983,22 +981,22 @@ bool UpdateHandler::showWarning( const rtl::OUString &rWarningText,
                                  const rtl::OUString &rBtnText_1,
                                  const rtl::OUString &rBtnText_2 ) const
 {
-    bool bRet = false;
+	bool bRet = false;
 
-    uno::Reference< awt::XControl > xControl( mxUpdDlg, uno::UNO_QUERY );
-    if ( !xControl.is() ) return bRet;
+	uno::Reference< awt::XControl > xControl( mxUpdDlg, uno::UNO_QUERY );
+	if ( !xControl.is() ) return bRet;
 
-    uno::Reference< awt::XWindowPeer > xPeer = xControl->getPeer();
-    if ( !xPeer.is() ) return bRet;
+	uno::Reference< awt::XWindowPeer > xPeer = xControl->getPeer();
+	if ( !xPeer.is() ) return bRet;
 
-    uno::Reference< awt::XToolkit > xToolkit = xPeer->getToolkit();
-    if ( !xToolkit.is() ) return bRet;
+	uno::Reference< awt::XToolkit > xToolkit = xPeer->getToolkit();
+	if ( !xToolkit.is() ) return bRet;
 
-    awt::WindowDescriptor aDescriptor;
+	awt::WindowDescriptor aDescriptor;
 
-    sal_Int32 nWindowAttributes = awt::WindowAttribute::BORDER | awt::WindowAttribute::MOVEABLE | awt::WindowAttribute::CLOSEABLE;
-    nWindowAttributes |= awt::VclWindowPeerAttribute::YES_NO;
-    nWindowAttributes |= awt::VclWindowPeerAttribute::DEF_NO;
+	sal_Int32 nWindowAttributes = awt::WindowAttribute::BORDER | awt::WindowAttribute::MOVEABLE | awt::WindowAttribute::CLOSEABLE;
+	nWindowAttributes |= awt::VclWindowPeerAttribute::YES_NO;
+	nWindowAttributes |= awt::VclWindowPeerAttribute::DEF_NO;
 
     aDescriptor.Type              = awt::WindowClass_MODALTOP;
     aDescriptor.WindowServiceName = UNISTRING( "warningbox" );
@@ -1039,29 +1037,29 @@ bool UpdateHandler::showWarning( const rtl::OUString &rWarningText,
         if ( nRet == 2 ) // RET_YES == 2
             bRet = true;
 
-        mbShowsMessageBox = false;
-    }
+		mbShowsMessageBox = false;
+	}
 
-    uno::Reference< lang::XComponent > xComponent( xMsgBox, uno::UNO_QUERY );
-    if ( xComponent.is() )
-        xComponent->dispose();
+	uno::Reference< lang::XComponent > xComponent( xMsgBox, uno::UNO_QUERY );
+	if ( xComponent.is() )
+		xComponent->dispose();
 
-    return bRet;
+	return bRet;
 }
 
 //--------------------------------------------------------------------
 bool UpdateHandler::showOverwriteWarning( const rtl::OUString& rFileName ) const
 {
-    rtl::OUString aMsg( msReloadWarning );
-    searchAndReplaceAll( aMsg, UNISTRING( "%FILENAME" ), rFileName );
-    searchAndReplaceAll( aMsg, UNISTRING( "%DOWNLOAD_PATH" ), msDownloadPath );
-    return showWarning( aMsg, msReloadContinue, msReloadReload );
+	rtl::OUString aMsg( msReloadWarning );
+	searchAndReplaceAll( aMsg, UNISTRING( "%FILENAME" ), rFileName );
+	searchAndReplaceAll( aMsg, UNISTRING( "%DOWNLOAD_PATH" ), msDownloadPath );
+	return showWarning( aMsg, msReloadContinue, msReloadReload );
 }
 
 //--------------------------------------------------------------------
 bool UpdateHandler::showOverwriteWarning() const
 {
-    return showWarning( msOverwriteWarning );
+	return showWarning( msOverwriteWarning );
 }
 
 //--------------------------------------------------------------------
@@ -1075,14 +1073,14 @@ bool UpdateHandler::showOverwriteWarning() const
 #define DIALOG_BORDER        5
 #define INNER_BORDER         3
 #define TEXT_OFFSET          1
-#define BOX_HEIGHT1          ( LABEL_HEIGHT + 3*BUTTON_HEIGHT + 2*BUTTON_Y_OFFSET + 2*INNER_BORDER )
+#define BOX_HEIGHT1          ( LABEL_HEIGHT + 3 * BUTTON_HEIGHT + 2 * BUTTON_Y_OFFSET + 2 * INNER_BORDER )
 #define BOX_HEIGHT2         50
 #define EDIT_WIDTH          ( DIALOG_WIDTH - 2 * DIALOG_BORDER )
 #define BOX1_BTN_X          ( DIALOG_BORDER + EDIT_WIDTH - BUTTON_WIDTH - INNER_BORDER )
 #define BOX1_BTN_Y          ( DIALOG_BORDER + LABEL_HEIGHT + INNER_BORDER)
-#define THROBBER_WIDTH      16
-#define THROBBER_HEIGHT     16
-#define THROBBER_X_POS      ( DIALOG_BORDER + 8 )
+#define THROBBER_WIDTH      32
+#define THROBBER_HEIGHT     32
+#define THROBBER_X_POS      ( DIALOG_BORDER + 3 )
 #define THROBBER_Y_POS      ( DIALOG_BORDER + 23 )
 #define BUTTON_BAR_HEIGHT   24
 #define LABEL_OFFSET        ( LABEL_HEIGHT + 4 )
@@ -1097,50 +1095,50 @@ bool UpdateHandler::showOverwriteWarning() const
 #define PROGRESS_WIDTH      80
 #define PROGRESS_HEIGHT     10
 #define PROGRESS_X_POS      ( DIALOG_BORDER + 8 )
-#define PROGRESS_Y_POS      ( DIALOG_BORDER + 2*LABEL_OFFSET )
+#define PROGRESS_Y_POS      ( DIALOG_BORDER + 2 * LABEL_OFFSET )
 
 //--------------------------------------------------------------------
 void UpdateHandler::showControls( short nControls )
 {
-    // The buttons from CANCEL_BUTTON to RESUME_BUTTON will be shown or
-    // hidden on demand
-    short nShiftMe;
-    for ( int i = 0; i <= (int)RESUME_BUTTON; i++ )
-    {
-        nShiftMe = (short)(nControls >> i);
-        showControl( msButtonIDs[i], (bool)(nShiftMe & 0x01) );
-    }
+	// The buttons from CANCEL_BUTTON to RESUME_BUTTON will be shown or
+	// hidden on demand
+	short nShiftMe;
+	for ( int i = 0; i <= (int)RESUME_BUTTON; i++ )
+	{
+		nShiftMe = (short)(nControls >> i);
+		showControl( msButtonIDs[i], (bool)(nShiftMe & 0x01) );
+	}
 
-    nShiftMe = (short)(nControls >> THROBBER_CTRL);
-    startThrobber( (bool)(nShiftMe & 0x01) );
+	nShiftMe = (short)(nControls >> THROBBER_CTRL);
+	startThrobber( (bool)(nShiftMe & 0x01) );
 
-    nShiftMe = (short)(nControls >> PROGRESS_CTRL);
-    showControl( CTRL_PROGRESS, (bool)(nShiftMe & 0x01) );
-    showControl( TEXT_PERCENT, (bool)(nShiftMe & 0x01) );
+	nShiftMe = (short)(nControls >> PROGRESS_CTRL);
+	showControl( CTRL_PROGRESS, (bool)(nShiftMe & 0x01) );
+	showControl( TEXT_PERCENT, (bool)(nShiftMe & 0x01) );
 
-    // Status text needs to be smaller, when there are buttons at the right side of the dialog
-    if ( ( nControls & ( (1<<CANCEL_BUTTON) + (1<<PAUSE_BUTTON) + (1<<RESUME_BUTTON) ) ) != 0 )
-        setControlProperty( TEXT_STATUS, UNISTRING("Width"), uno::Any( sal_Int32(EDIT_WIDTH - BUTTON_WIDTH - 2*INNER_BORDER - TEXT_OFFSET ) ) );
-    else
-        setControlProperty( TEXT_STATUS, UNISTRING("Width"), uno::Any( sal_Int32(EDIT_WIDTH - 2*TEXT_OFFSET ) ) );
+	// Status text needs to be smaller, when there are buttons at the right side of the dialog
+	if ( ( nControls & ( (1<<CANCEL_BUTTON) + (1<<PAUSE_BUTTON) + (1<<RESUME_BUTTON) ) ) != 0 )
+		setControlProperty( TEXT_STATUS, UNISTRING("Width"), uno::Any( sal_Int32(EDIT_WIDTH - BUTTON_WIDTH - 2 * INNER_BORDER - TEXT_OFFSET ) ) );
+	else
+		setControlProperty( TEXT_STATUS, UNISTRING("Width"), uno::Any( sal_Int32(EDIT_WIDTH - 2 * TEXT_OFFSET ) ) );
 
-    // Status text needs to be taller, when we show the progress bar
-    if ( ( nControls & ( 1<<PROGRESS_CTRL ) ) != 0 )
-        setControlProperty( TEXT_STATUS, UNISTRING("Height"), uno::Any( sal_Int32(LABEL_HEIGHT) ) );
-    else
-        setControlProperty( TEXT_STATUS, UNISTRING("Height"), uno::Any( sal_Int32(BOX_HEIGHT1 - 4*TEXT_OFFSET - LABEL_HEIGHT ) ) );
+	// Status text needs to be taller, when we show the progress bar
+	if ( ( nControls & ( 1<<PROGRESS_CTRL ) ) != 0 )
+		setControlProperty( TEXT_STATUS, UNISTRING("Height"), uno::Any( sal_Int32(LABEL_HEIGHT) ) );
+	else
+		setControlProperty( TEXT_STATUS, UNISTRING("Height"), uno::Any( sal_Int32(BOX_HEIGHT1 - 4 * TEXT_OFFSET - LABEL_HEIGHT ) ) );
 }
 
 //--------------------------------------------------------------------
 void UpdateHandler::createDialog()
 {
-    if ( !mxContext.is() )
-    {
-        OSL_ASSERT( false );
-        return;
-    }
+	if ( !mxContext.is() )
+	{
+		OSL_ASSERT( false );
+		return;
+	}
 
-    uno::Reference< lang::XMultiComponentFactory > xServiceManager( mxContext->getServiceManager() );
+	uno::Reference< lang::XMultiComponentFactory > xServiceManager( mxContext->getServiceManager() );
 
     if( xServiceManager.is() )
     {
@@ -1262,7 +1260,7 @@ void UpdateHandler::createDialog()
 
         insertControlModel ( xControlModel, BUTTON_MODEL, msButtonIDs[CANCEL_BUTTON],
                              awt::Rectangle( BOX1_BTN_X,
-                                             BOX1_BTN_Y + (2*(BUTTON_HEIGHT+BUTTON_Y_OFFSET)),
+                                             BOX1_BTN_Y + (2 * (BUTTON_HEIGHT+BUTTON_Y_OFFSET)),
                                              BUTTON_WIDTH,
                                              BUTTON_HEIGHT ),
                              aProps );
@@ -1384,18 +1382,18 @@ void UpdateHandler::createDialog()
                             aProps);
     }
 
-    uno::Reference< awt::XControl > xControl(
-        xFactory->createInstanceWithContext( UNISTRING("com.sun.star.awt.UnoControlDialog"), mxContext),
-        uno::UNO_QUERY_THROW );
-    xControl->setModel( xControlModel );
+	uno::Reference< awt::XControl > xControl(
+		xFactory->createInstanceWithContext( UNISTRING("com.sun.star.awt.UnoControlDialog"), mxContext),
+		uno::UNO_QUERY_THROW );
+	xControl->setModel( xControlModel );
 
-    if ( mbVisible == false )
-    {
-        uno::Reference< awt::XWindow > xWindow( xControl, uno::UNO_QUERY );
+	if ( mbVisible == false )
+	{
+		uno::Reference< awt::XWindow > xWindow( xControl, uno::UNO_QUERY );
 
-        if ( xWindow.is() )
-            xWindow->setVisible( false );
-    }
+		if ( xWindow.is() )
+			xWindow->setVisible( false );
+	}
 
     xControl->createPeer( NULL, NULL );
     {
@@ -1409,9 +1407,10 @@ void UpdateHandler::createDialog()
                 xButton->addActionListener( this );
             }
         }
-    }
+	}
 
 	mxUpdDlg.set( xControl, uno::UNO_QUERY_THROW );
 	mnLastCtrlState = -1;
 }
 
+/* vim: set noet sw=4 ts=4: */

@@ -25,8 +25,8 @@ import com.sun.star.beans.XPropertySet;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.sdb.CommandType;
 import com.sun.star.sdbc.SQLException;
+import com.sun.star.uno.UnoRuntime;
 import com.sun.star.util.Date;
-import complexlib.ComplexTestCase;
 import connectivity.tools.CsvDatabase;
 import connectivity.tools.RowSet;
 import java.io.File;
@@ -35,32 +35,38 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlatFileAccess extends ComplexTestCase
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.Argument;
+import org.openoffice.test.OfficeConnection;
+
+public class FlatFileAccess
 {
     public FlatFileAccess()
     {
-        super();
     }
 
-    @Override
-    public String[] getTestMethodNames()
+    @BeforeClass
+    public static void beforeClass() throws Exception
     {
-        return new String[] {
-            "testBasicAccess",
-            "testCalendarFunctions",
-            "testSortingByFunction"
-        };
+        connection.setUp();
     }
 
-    @Override
-    public String getTestObjectName()
+    @AfterClass
+    public static void afterClass() throws Exception
     {
-        return "FlatFileAccess";
+        connection.tearDown();
     }
 
+    @Before
     public void before() throws Exception
     {
-        m_database = new CsvDatabase( (XMultiServiceFactory)param.getMSF() );
+        XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
+        m_database = new CsvDatabase( xMSF );
 
         // proper settings
         final XPropertySet dataSourceSettings = m_database.getDataSource().geSettings();
@@ -77,10 +83,6 @@ public class FlatFileAccess extends ComplexTestCase
         tableWriter.println( "2 2012-02-02" );
         tableWriter.println( "3 2011-03-03" );
         tableWriter.close();
-    }
-
-    public void after()
-    {
     }
 
     private class EqualityDate extends Date
@@ -109,6 +111,7 @@ public class FlatFileAccess extends ComplexTestCase
     /**
      * ensures simple SELECTs from our table(s) work, and deliver the expected results
      */
+    @Test
     public void testBasicAccess()
     {
         testRowSetResults(
@@ -145,6 +148,7 @@ public class FlatFileAccess extends ComplexTestCase
      * ensures the basic functionality for selecting calendar functions from a CSV table - this is a prerequisite for
      * later tests.
      */
+    @Test
     public void testCalendarFunctions()
     {
         // simple check for proper results of the calendar functions (DATE/MONTH)
@@ -167,6 +171,7 @@ public class FlatFileAccess extends ComplexTestCase
     /**
      * ensures that sorting by a function column works
      */
+    @Test
     public void testSortingByFunction()
     {
         // most simple case: select a function, and sort by it
@@ -241,11 +246,11 @@ public class FlatFileAccess extends ComplexTestCase
             {
                 values.add( (T)i_getter.getValue( rowSet ) );
             }
-            assureEquals( i_context + ": " + i_failureDesc, i_expectedValues, values.toArray(), true );
+            assertEquals( i_context + ": " + i_failureDesc, i_expectedValues, values.toArray() );
         }
         catch( final SQLException e )
         {
-            failed( i_context + ": caught an exception: " + e.toString(), false );
+            fail( i_context + ": caught an exception: " + e.toString());
         }
         finally
         {
@@ -254,5 +259,6 @@ public class FlatFileAccess extends ComplexTestCase
         }
     }
 
+    private static final OfficeConnection connection = new OfficeConnection();
     private CsvDatabase m_database = null;
 }

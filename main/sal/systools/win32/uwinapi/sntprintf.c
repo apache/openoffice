@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #define _SNPRINTF_DLLIMPORT __declspec( dllexport )
@@ -58,7 +58,7 @@ static int __cdecl _vsctprintf( const _TXCHAR *format, va_list ap )
 
 /*	This function retrieves the pointer to the last character of a buffer.
 	That is the pointer to the last character of the buffer that fits
-	completly into that	buffer or the position of the terminating zero.
+	completely into that buffer or the position of the terminating zero.
 
 	buffer	Pointer to a _TXCHAR buffer to be examined
 	count	size of the buffer to be examined
