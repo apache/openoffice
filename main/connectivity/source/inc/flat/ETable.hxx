@@ -65,7 +65,7 @@ namespace connectivity
 			sal_Bool CreateFile(const INetURLObject& aFile, sal_Bool& bCreateMemo);
             sal_Bool readLine(sal_Int32& _rnCurrentPos);
             sal_Bool readLine(QuotedTokenizedString& line, sal_Int32& _rnCurrentPos);
-            void impl_fillColumnInfo_nothrow(QuotedTokenizedString& aFirstLine,xub_StrLen& nStartPosFirstLine,xub_StrLen& nStartPosFirstLine2
+            void impl_fillColumnInfo_nothrow(QuotedTokenizedString& aFirstLine,sal_Int32& nStartPosFirstLine,sal_Int32& nStartPosFirstLine2
                                              ,sal_Int32& io_nType,sal_Int32& io_nPrecisions,sal_Int32& io_nScales,String& o_sTypeName
                                              ,const sal_Unicode cDecimalDelimiter,const sal_Unicode cThousandDelimiter,const CharClass& aCharClass);
 		public:

@@ -28,7 +28,6 @@ import com.sun.star.frame.XStorable;
 
 import com.sun.star.lang.*;
 import com.sun.star.document.XDocumentSubStorageSupplier;
-import complexlib.ComplexTestCase;
 
  
 import org.hsqldb.lib.StopWatch;
@@ -40,27 +39,34 @@ import com.sun.star.sdbc.XDataSource;
 import com.sun.star.sdbc.XDriver;
 import connectivity.tools.HsqlDatabase;
 
-public class HsqlDriverTest extends ComplexTestCase {
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
 
+public class HsqlDriverTest {
+    private static final OfficeConnection connection = new OfficeConnection();
+
+    @BeforeClass
+    public static void beforeClass() throws Exception {
+        connection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception {
+        connection.tearDown();
+    }
 	
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
-    @Override
-    public String getTestObjectName() {
-        return "DriverTest";
-    }
-    
-    public void assurePublic(String sMessage,boolean check){
-        super.assure(sMessage,check);
-    }
-
+    @Test
     public void test(){
         XDataSource ds = null;
         System.gc();
+        XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
         try {
-            HsqlDatabase database = new HsqlDatabase( (XMultiServiceFactory)param.getMSF() );
+            HsqlDatabase database = new HsqlDatabase( xMSF );
             ds = database.getDataSource().getXDataSource();
         } catch(Exception ex) {
             throw new RuntimeException("factory: unable to construct data source" );
@@ -102,10 +108,10 @@ public class HsqlDriverTest extends ComplexTestCase {
                 new com.sun.star.beans.PropertyValue("Storage",0,stor,PropertyState.DIRECT_VALUE)
                 ,new com.sun.star.beans.PropertyValue("URL",0,mod.getURL(),PropertyState.DIRECT_VALUE)
             };        
-            drv = (XDriver)UnoRuntime.queryInterface(XDriver.class,((XMultiServiceFactory)param.getMSF()).createInstance("com.sun.star.sdbcx.comp.hsqldb.Driver"));
+            drv = (XDriver)UnoRuntime.queryInterface(XDriver.class, xMSF.createInstance("com.sun.star.sdbcx.comp.hsqldb.Driver"));
         
 
-            TestCacheSize test = new TestCacheSize(((XMultiServiceFactory)param.getMSF()),info,drv);
+            TestCacheSize test = new TestCacheSize(xMSF,info,drv);
 
             StopWatch     sw   = new StopWatch();      
 
@@ -128,13 +134,14 @@ public class HsqlDriverTest extends ComplexTestCase {
        
         com.sun.star.beans.PropertyValue[] info = null;
         XDriver drv = null;
+        XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
         try{
             info = new com.sun.star.beans.PropertyValue[]{
                 new com.sun.star.beans.PropertyValue("JavaDriverClass",0,"org.hsqldb.jdbcDriver",PropertyState.DIRECT_VALUE)
                 ,new com.sun.star.beans.PropertyValue("ParameterNameSubstitution",0, false,PropertyState.DIRECT_VALUE)
             };        
-            drv = (XDriver)UnoRuntime.queryInterface(XDriver.class,((XMultiServiceFactory)param.getMSF()).createInstance("com.sun.star.comp.sdbc.JDBCDriver"));
-            TestCacheSize test = new TestCacheSize(((XMultiServiceFactory)param.getMSF()),info,drv);
+            drv = (XDriver)UnoRuntime.queryInterface(XDriver.class,xMSF.createInstance("com.sun.star.comp.sdbc.JDBCDriver"));
+            TestCacheSize test = new TestCacheSize(xMSF,info,drv);
             test.setURL("jdbc:hsqldb:g:\\hsql\\db");
 
 

@@ -25,24 +25,12 @@ package com.sun.star.lib.uno.environments.remote;
 
 import com.sun.star.lib.uno.typedesc.MethodDescription;
 import com.sun.star.lib.uno.typedesc.TypeDescription;
-import complexlib.ComplexTestCase;
 
-public class ThreadPool_Test extends ComplexTestCase {
-    public String getTestObjectName() {
-        return getClass().getName();
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    public String[] getTestMethodNames() {
-        return new String[] { "testDispose",
-                              "testThreadAsync",
-                              "testDynamicThreadSync",
-                              "testStaticThreadSync",
-                              "testDynamicThreadAsyncSyncOrder",
-                              "testStaticThreadAsyncSyncOrder",
-                              "testStress",
-                              "testAsyncSync" };
-    }
-
+public class ThreadPool_Test {
+    @Test
     public void testDispose() throws InterruptedException {
         IThreadPool iThreadPool = ThreadPoolManager.create();
         TestThread testThread = new TestThread(iThreadPool);
@@ -73,9 +61,10 @@ public class ThreadPool_Test extends ComplexTestCase {
 
         testThread.join();
 
-        assure("", testThread._message.equals(message));
+        assertTrue("", testThread._message.equals(message));
     }
 
+    @Test
     public void testThreadAsync() throws InterruptedException {
         TestWorkAt workAt = new TestWorkAt();
 
@@ -94,9 +83,10 @@ public class ThreadPool_Test extends ComplexTestCase {
                 workAt.wait();
         }
 
-        assure("", workAt._counter == TestWorkAt.MESSAGES);
+        assertTrue("", workAt._counter == TestWorkAt.MESSAGES);
     }
 
+    @Test
     public void testDynamicThreadSync() throws InterruptedException {
         TestWorkAt workAt = new TestWorkAt();
 
@@ -115,9 +105,10 @@ public class ThreadPool_Test extends ComplexTestCase {
                 workAt.wait();
         }
 
-        assure("", workAt._counter == TestWorkAt.MESSAGES);
+        assertTrue("", workAt._counter == TestWorkAt.MESSAGES);
     }
 
+    @Test
     public void testStaticThreadSync() throws InterruptedException {
         TestWorkAt workAt = new TestWorkAt();
 
@@ -153,9 +144,10 @@ public class ThreadPool_Test extends ComplexTestCase {
 
         testThread.join();
 
-        assure("", workAt._counter == TestWorkAt.MESSAGES);
+        assertTrue("", workAt._counter == TestWorkAt.MESSAGES);
     }
 
+    @Test
     public void testDynamicThreadAsyncSyncOrder() throws InterruptedException {
         TestWorkAt workAt = new TestWorkAt();
 
@@ -180,9 +172,10 @@ public class ThreadPool_Test extends ComplexTestCase {
                 workAt.wait();
         }
 
-        assure("", workAt.passedAsyncTest());
+        assertTrue("", workAt.passedAsyncTest());
     }
 
+    @Test
     public void testStaticThreadAsyncSyncOrder() throws InterruptedException {
         TestWorkAt workAt = new TestWorkAt();
 
@@ -224,9 +217,10 @@ public class ThreadPool_Test extends ComplexTestCase {
 
         testThread.join();
 
-        assure("", workAt.passedAsyncTest());
+        assertTrue("", workAt.passedAsyncTest());
     }
 
+    @Test
     public void testStress() throws InterruptedException {
         TestWorkAt workAt = new TestWorkAt();
         for (int i = 0; i < TestWorkAt.MESSAGES; ++i) {
@@ -311,6 +305,7 @@ public class ThreadPool_Test extends ComplexTestCase {
         stress6.join();
     }
 
+    @Test
     public void testAsyncSync() throws InterruptedException {
         TestWorkAt workAt = new TestWorkAt();
         ThreadId threadId = ThreadId.createFresh();
@@ -332,7 +327,7 @@ public class ThreadPool_Test extends ComplexTestCase {
                 workAt.wait();
         }
 
-        assure("",
+        assertTrue("",
                workAt._async_counter == TestWorkAt.MESSAGES
                && myWorkAt._success);
     }

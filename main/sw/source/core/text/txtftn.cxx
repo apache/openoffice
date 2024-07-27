@@ -298,7 +298,7 @@ SwTwips SwTxtFrm::GetFtnLine( const SwTxtFtn *pFtn ) const
 
 	if( !HasPara() )
 	{
-        // #109071# GetFormatted() does not work here, bacause most probably
+        // #109071# GetFormatted() does not work here, because most probably
         // the frame is currently locked. We return the previous value.
         return pThis->mnFtnLine > 0 ?
                pThis->mnFtnLine :

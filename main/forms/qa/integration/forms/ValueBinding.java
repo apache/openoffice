@@ -36,41 +36,48 @@ import com.sun.star.form.binding.XBindableValue;
 import integration.forms.DocumentHelper;
 import integration.forms.TableCellTextBinding;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
+
 public class ValueBinding extends integration.forms.TestCase
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
+    private XMultiServiceFactory    m_orb = null;
+
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception
+    {
+        officeConnection.tearDown();
+    }
+
     /** Creates a new instance of ValueBinding */
     public ValueBinding()
     {
         super( DocumentType.WRITER );
     }
 
-    public static boolean isInteractiveTest()
-    {
-        return true;
-    }
-
     /* ------------------------------------------------------------------ */
-    public String[] getTestMethodNames()
-    {
-        return new String[] {
-            "checkBindingProperties"
-        };
-    }
-
-    /* ------------------------------------------------------------------ */
-    public String getTestObjectName()
-    {
-        return "Form Control Value Binding Test";
-    }
-
-    /* ------------------------------------------------------------------ */
+    @Before
     public void before() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        super.before();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
         prepareDocument();
     }
 
     /* ------------------------------------------------------------------ */
+    @After
     public void after() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         super.waitForUserInput();
@@ -78,6 +85,7 @@ public class ValueBinding extends integration.forms.TestCase
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkBindingProperties() throws com.sun.star.uno.Exception, java.lang.Exception
     {
     }
@@ -85,7 +93,7 @@ public class ValueBinding extends integration.forms.TestCase
     /* ------------------------------------------------------------------ */
     protected void prepareDocument() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        super.prepareDocument();
+        super.prepareDocument(m_orb);
 
         // insert a table with exactly one cell. The content of this table will be synced with
         // the content of a form control

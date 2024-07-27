@@ -1125,7 +1125,7 @@ uno::Sequence< beans::PropertyValue > SAL_CALL SwChartDataProvider::detectArgume
     sal_Int32 nLabelSeqLen  = -1;   // used to see if labels are always used or not and have
                                     // the expected size of 1 (i.e. if FirstCellAsLabel can
                                     // be determined)
-                                    // -1: don't know yet, 0: not used, 1: always a single labe cell, ...
+                                    // -1: don't know yet, 0: not used, 1: always a single label cell, ...
 									// -2: neither/failed
 //     sal_Int32 nValuesSeqLen = -1;   // used to see if all value sequences have the same size
     for (sal_Int32 nDS1 = 0;  nDS1 < nNumDS_LDS;  ++nDS1)
@@ -1198,7 +1198,7 @@ uno::Sequence< beans::PropertyValue > SAL_CALL SwChartDataProvider::detectArgume
                     "trying to determine 'DataRowSource': something's fishy... should have been a single cell");
             nDirection = 0;     // default direction for a single cell should be 'columns'
         }
-        else    // more than one cell is availabale (in values and label together!)
+        else    // more than one cell is available (in values and label together!)
         {
             if (nFirstCol == nLastCol && nFirstRow != nLastRow)
                 nDirection = 1;
@@ -1733,7 +1733,7 @@ void SwChartDataProvider::DisposeAllDataSequences( const SwTable *pTable )
 // SwChartDataProvider::AddRowCols tries to notify charts of added columns
 // or rows and extends the value sequence respectively (if possible).
 // If those can be added to the end of existing value data-sequences those
-// sequences get mofdified accordingly and will send a modification
+// sequences get modified accordingly and will send a modification
 // notification (calling 'setModified').
 //
 // Since this function is a work-around for non existent Writer core functionality
@@ -1853,7 +1853,7 @@ rtl::OUString SAL_CALL SwChartDataProvider::convertRangeToXML( const rtl::OUStri
     String aRes;
     String aRangeRepresentation( rRangeRepresentation );
 
-    // multiple ranges are delimeted by a ';' like in
+    // multiple ranges are delimited by a ';' like in
     // "Table1.A1:A4;Table1.C2:C5" the same table must be used in all ranges!
     xub_StrLen nNumRanges = aRangeRepresentation.GetTokenCount( ';' );
     SwTable* pFirstFoundTable = 0;  // to check that only one table will be used
@@ -1908,7 +1908,7 @@ rtl::OUString SAL_CALL SwChartDataProvider::convertRangeToXML( const rtl::OUStri
             aCellRange.aLowerRight.bIsEmpty  = false;
         }
         String aTmp( XMLRangeHelper::getXMLStringFromCellRange( aCellRange ) );
-        if (aRes.Len()) // in case of multiple ranges add delimeter
+        if (aRes.Len()) // in case of multiple ranges add delimiter
             aRes.AppendAscii( " " );
         aRes += aTmp;
     }
@@ -1926,7 +1926,7 @@ rtl::OUString SAL_CALL SwChartDataProvider::convertRangeFromXML( const rtl::OUSt
     String aRes;
     String aXMLRange( rXMLRange );
 
-    // multiple ranges are delimeted by a ' ' like in
+    // multiple ranges are delimited by a ' ' like in
     // "Table1.$A$1:.$A$4 Table1.$C$2:.$C$5" the same table must be used in all ranges!
     xub_StrLen nNumRanges = aXMLRange.GetTokenCount( ' ' );
     rtl::OUString aFirstFoundTable; // to check that only one table will be used
@@ -1956,7 +1956,7 @@ rtl::OUString SAL_CALL SwChartDataProvider::convertRangeFromXML( const rtl::OUSt
                                      aCellRange.aLowerRight.nRow );
         }
 
-        if (aRes.Len()) // in case of multiple ranges add delimeter
+        if (aRes.Len()) // in case of multiple ranges add delimiter
             aRes.AppendAscii( ";" );
         aRes += String(aTmp);
     }
@@ -2220,7 +2220,7 @@ uno::Sequence< OUString > SAL_CALL SwChartDataSequence::generateLabel(
             String aCellRange( GetCellRangeName( *pTblFmt, *pTblCrsr ) );
             DBG_ASSERT( aCellRange.Len() != 0, "failed to get cell range" );
             bOk = FillRangeDescriptor( aDesc, aCellRange );
-            DBG_ASSERT( bOk, "falied to get SwRangeDescriptor" );
+            DBG_ASSERT( bOk, "failed to get SwRangeDescriptor" );
         }
         if (bOk)
         {
@@ -2720,8 +2720,8 @@ sal_Bool SwChartDataSequence::DeleteBox( const SwTableBox &rBox )
 
         if (pNewBox)    // set new position (cell range) to use
         {
-            // So erhält man den ersten Inhaltsnode in einer gegebenen Zelle:
-            // Zunächst einen SwNodeIndex auf den Node hinter dem SwStartNode der Box...
+            // So erhÃ¤lt man den ersten Inhaltsnode in einer gegebenen Zelle:
+            // ZunÃ¤chst einen SwNodeIndex auf den Node hinter dem SwStartNode der Box...
             SwNodeIndex aIdx( *pNewBox->GetSttNd(), +1 );
             // Dies kann ein SwCntntNode sein, kann aber auch ein Tabellen oder Sectionnode sein,
             // deshalb das GoNext;

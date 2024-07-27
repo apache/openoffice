@@ -37,7 +37,6 @@ import com.sun.star.ucb.XContentIdentifierFactory;
 import com.sun.star.ucb.XContentProvider;
 import com.sun.star.ucb.XDynamicResultSet;
 import com.sun.star.uno.UnoRuntime;
-// import complexlib.ComplexTestCase;
 import util.WriterTools;
 
 import org.junit.After;
@@ -57,10 +56,6 @@ public class CheckTransientDocumentsContentProvider {
     private final int countDocs = testDocuments.length;
     private XMultiServiceFactory xMSF = null;
     private XTextDocument[] xTextDoc = null;
-    
-    public String[] getTestMethodNames() {
-        return new String[]{"checkTransientDocumentsContentProvider"};
-    }
     
     @Before public void before() {
         xMSF = getMSF();

@@ -40,13 +40,35 @@ import com.sun.star.lang.XMultiServiceFactory;
 
 import com.sun.star.util.XCloseable;
 
-public class FormPropertyBags extends complexlib.ComplexTestCase implements XPropertyChangeListener
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
+
+public class FormPropertyBags implements XPropertyChangeListener
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
     private DocumentHelper          m_document;
     private FormLayer               m_formLayer;
     private XMultiServiceFactory    m_orb;
 
     private PropertyChangeEvent     m_propertyChangeEvent;
+
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception
+    {
+        officeConnection.tearDown();
+    }
 
     /** Creates a new instance of FormPropertyBags */
     public FormPropertyBags()
@@ -55,23 +77,10 @@ public class FormPropertyBags extends complexlib.ComplexTestCase implements XPro
     }
 
     /* ------------------------------------------------------------------ */
-    public String[] getTestMethodNames()
-    {
-        return new String[] {
-            "checkSomething"
-        };
-    }
-
-    /* ------------------------------------------------------------------ */
-    public String getTestObjectName()
-    {
-        return "Form Component Property Bag Test";
-    }
-
-    /* ------------------------------------------------------------------ */
+    @Before
     public void before() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        m_orb = (XMultiServiceFactory)param.getMSF();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
         m_document = DocumentHelper.blankTextDocument( m_orb );
         m_formLayer = new FormLayer( m_document );
     }
@@ -87,12 +96,14 @@ public class FormPropertyBags extends complexlib.ComplexTestCase implements XPro
     }
 
     /* ------------------------------------------------------------------ */
+    @After
     public void after() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         impl_closeDoc();
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkSomething() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         XPropertySet textFieldModel = m_formLayer.createControlAndShape( "DatabaseTextField", 10, 10, 25, 6 );
@@ -100,7 +111,7 @@ public class FormPropertyBags extends complexlib.ComplexTestCase implements XPro
         // check whether adding new properties is successful
         XPropertyContainer propContainer = UnoRuntime.queryInterface(
             XPropertyContainer.class, textFieldModel );
-        assure("XPropertyContainer not supported!", propContainer != null );
+        assertTrue("XPropertyContainer not supported!", propContainer != null );
 
         propContainer.addProperty( "SomeBoundText", PropertyAttribute.BOUND, "InitialBoundText" );
         propContainer.addProperty( "SomeTransientText", PropertyAttribute.TRANSIENT, "InitialTransientProperty" );
@@ -108,7 +119,7 @@ public class FormPropertyBags extends complexlib.ComplexTestCase implements XPro
         propContainer.addProperty( "SomeNumericValue", PropertyAttribute.BOUND, new Integer( 42 ) );
 
         XPropertySetInfo propertyInfo = textFieldModel.getPropertySetInfo();
-        assure( "Per service definition, dynamic properties are expected to be forced to be removeable",
+        assertTrue( "Per service definition, dynamic properties are expected to be forced to be removeable",
             ( propertyInfo.getPropertyByName("SomeBoundText").Attributes & PropertyAttribute.REMOVEABLE ) != 0 );
 
         // a second addition of a property with an existent name should be rejected
@@ -116,7 +127,7 @@ public class FormPropertyBags extends complexlib.ComplexTestCase implements XPro
         try { propContainer.addProperty( "SomeBoundText", PropertyAttribute.BOUND, "InitialBoundText" ); }
         catch( PropertyExistException e ) { caughtExpected = true; }
         catch( Exception e ) { }
-        assure( "repeated additions of a property with the same name should be rejected",
+        assertTrue( "repeated additions of a property with the same name should be rejected",
             caughtExpected );
 
         // check whether the properties are bound as expected
@@ -132,21 +143,21 @@ public class FormPropertyBags extends complexlib.ComplexTestCase implements XPro
         _controlModel.addPropertyChangeListener( "", this );
 
         _controlModel.setPropertyValue( "SomeBoundText", "ChangedBoundText" );
-        assure( "changes in the bound property are not properly notified",
+        assertTrue( "changes in the bound property are not properly notified",
                 m_propertyChangeEvent.PropertyName.equals( "SomeBoundText" )
             &&  m_propertyChangeEvent.OldValue.equals( "InitialBoundText" )
             &&  m_propertyChangeEvent.NewValue.equals( "ChangedBoundText" ) );
 
         m_propertyChangeEvent = null;
         _controlModel.setPropertyValue( "SomeTransientText", "ChangedTransientText" );
-        assure( "changes in non-bound properties should not be notified",
+        assertTrue( "changes in non-bound properties should not be notified",
             m_propertyChangeEvent == null );
 
         boolean caughtExpected = false;
         try { _controlModel.setPropertyValue( "SomeReadonlyText", "ChangedReadonlyText" ); }
         catch( PropertyVetoException e ) { caughtExpected = true; }
         catch( Exception e ) { }
-        assure( "trying to write a read-only property did not give the expected result",
+        assertTrue( "trying to write a read-only property did not give the expected result",
             caughtExpected );
 
         _controlModel.removePropertyChangeListener( "", this );
@@ -172,16 +183,16 @@ public class FormPropertyBags extends complexlib.ComplexTestCase implements XPro
         XPropertySet textFieldModel = m_formLayer.getControlModel( new int[] { 0, 0 } );
 
         // all persistent properties should have the expected values
-        assure( "persistent properties did not survive reload (1)!", ((String)textFieldModel.getPropertyValue( "SomeBoundText" )).equals( "ChangedBoundText" ) );
-        assure( "persistent properties did not survive reload (2)!", ((String)textFieldModel.getPropertyValue( "SomeReadonlyText" )).equals( "InitialReadonlyText" ) );
-//        assure( "persistent properties did not survive reload (3)!", ((Integer)textFieldModel.getPropertyValue( "SomeNumericValue" )).equals( new Integer( 42 ) ) );
+        assertTrue( "persistent properties did not survive reload (1)!", ((String)textFieldModel.getPropertyValue( "SomeBoundText" )).equals( "ChangedBoundText" ) );
+        assertTrue( "persistent properties did not survive reload (2)!", ((String)textFieldModel.getPropertyValue( "SomeReadonlyText" )).equals( "InitialReadonlyText" ) );
+//        assertTrue( "persistent properties did not survive reload (3)!", ((Integer)textFieldModel.getPropertyValue( "SomeNumericValue" )).equals( new Integer( 42 ) ) );
             // cannot check this until the types really survice - at the moment, integers are converted to doubles ...
 
         // the transient property should not have survived
         boolean caughtExpected = false;
         try { textFieldModel.getPropertyValue( "SomeTransientText" ); }
         catch( UnknownPropertyException e ) { caughtExpected = true; }
-        assure( "transient property did survive reload!", caughtExpected );
+        assertTrue( "transient property did survive reload!", caughtExpected );
 
         // There would be more things to check.
         // For instance, it would be desirable of the property attributes would have survived

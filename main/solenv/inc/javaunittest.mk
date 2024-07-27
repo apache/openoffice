@@ -79,15 +79,15 @@ ALLTAR : test
 .IF "$(HAMCREST_CORE_JAR)" != ""
 test .PHONY : $(JAVATARGET)
     $(JAVAI) $(JAVAIFLAGS) $(JAVACPS) \
-        '$(OOO_JUNIT_JAR)$(PATH_SEPERATOR)$(HAMCREST_CORE_JAR)$(PATH_SEPARATOR)$(CLASSPATH)' \
+        '$(OOO_JUNIT_JAR)$(PATH_SEPERATOR)$(HAMCREST_CORE_JAR)$(PATH_SEPERATOR)$(CLASSPATH)' \
         org.junit.runner.JUnitCore \
-        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(i:s/.java//))
+        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(subst,/,. $(i:s/.java//)))
 .ELSE
 test .PHONY : $(JAVATARGET)
     $(JAVAI) $(JAVAIFLAGS) $(JAVACPS) \
         '$(OOO_JUNIT_JAR)$(PATH_SEPERATOR)$(CLASSPATH)' \
         org.junit.runner.JUnitCore \
-        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(i:s/.java//))
+        $(foreach,i,$(JAVATESTFILES) $(subst,/,. $(PACKAGE)).$(subst,/,. $(i:s/.java//)))
 .END
 .ELSE
 test .PHONY :

@@ -44,6 +44,7 @@ ifneq ($(OOO_JUNIT_JAR),)
 $(eval $(call gb_Module_add_subsequentcheck_targets,sc,\
 	JunitTest_sc_complex \
 	JunitTest_sc_complex_cellRanges \
+	JunitTest_sc_unoapi \
 ))
 endif
 

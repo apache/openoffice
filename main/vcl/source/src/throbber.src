@@ -19,15 +19,13 @@
  *
  *************************************************************/
 
-
-
 #define _SV_THROBBER_SRC
 
 #include <svids.hrc>
 
 #define THROBBER_16		SV_RESID_BITMAP_THROBBER_START
-#define THROBBER_16_HC	THROBBER_16		+ 6
-#define THROBBER_32		THROBBER_16_HC	+ 6
+#define THROBBER_16_HC	THROBBER_16		+ 12
+#define THROBBER_32		THROBBER_16_HC	+ 12
 #define THROBBER_32_HC	THROBBER_32		+ 12
 #define THROBBER_64		THROBBER_32_HC	+ 12
 #define THROBBER_64_HC	THROBBER_64		+ 12
@@ -36,7 +34,6 @@
 // referring them in resource files. The below resources are never loaded
 // at runtime, instead, the images in images.zip are accessed via
 // private:graphicrepository/* URLs.
-
 
 Bitmap (THROBBER_16 + 1)
 {
@@ -68,6 +65,35 @@ Bitmap (THROBBER_16 + 6)
 	file = "spinner-16-06.png" ;
 };
 
+Bitmap (THROBBER_16 + 7)
+{
+	file = "spinner-16-07.png" ;
+};
+
+Bitmap (THROBBER_16 + 8)
+{
+	file = "spinner-16-08.png" ;
+};
+
+Bitmap (THROBBER_16 + 9)
+{
+	file = "spinner-16-09.png" ;
+};
+
+Bitmap (THROBBER_16 + 10)
+{
+	file = "spinner-16-10.png" ;
+};
+
+Bitmap (THROBBER_16 + 11)
+{
+	file = "spinner-16-11.png" ;
+};
+
+Bitmap (THROBBER_16 + 12)
+{
+	file = "spinner-16-12.png" ;
+};
 
 
 Bitmap (THROBBER_16_HC + 1)
@@ -100,6 +126,35 @@ Bitmap (THROBBER_16_HC + 6)
 	file = "spinner-16-06_h.png" ;
 };
 
+Bitmap (THROBBER_16_HC + 7)
+{
+	file = "spinner-16-07_h.png" ;
+};
+
+Bitmap (THROBBER_16_HC + 8)
+{
+	file = "spinner-16-08_h.png" ;
+};
+
+Bitmap (THROBBER_16_HC + 9)
+{
+	file = "spinner-16-09_h.png" ;
+};
+
+Bitmap (THROBBER_16_HC + 10)
+{
+	file = "spinner-16-10_h.png" ;
+};
+
+Bitmap (THROBBER_16_HC + 11)
+{
+	file = "spinner-16-11_h.png" ;
+};
+
+Bitmap (THROBBER_16_HC + 12)
+{
+	file = "spinner-16-12_h.png" ;
+};
 
 
 Bitmap (THROBBER_32 + 1)
@@ -163,7 +218,6 @@ Bitmap (THROBBER_32 + 12)
 };
 
 
-
 Bitmap (THROBBER_32_HC + 1)
 {
 	file = "spinner-32-01_h.png" ;
@@ -225,7 +279,6 @@ Bitmap (THROBBER_32_HC + 12)
 };
 
 
-
 Bitmap (THROBBER_64 + 1)
 {
 	file = "spinner-64-01.png" ;
@@ -285,7 +338,6 @@ Bitmap (THROBBER_64 + 12)
 {
 	file = "spinner-64-12.png" ;
 };
-
 
 
 Bitmap (THROBBER_64_HC + 1)

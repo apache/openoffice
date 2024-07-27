@@ -125,7 +125,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 
 		/*-****************************************************************************************************//**
 			@short		last chance to release all references and free memory
-			@descr		This method is called, if the enumeration is used completly and has no more elements.
+			@descr		This method is called, if the enumeration is used completely and has no more elements.
 						Then we must destroy our list and release all references to other objects.
 
 			@seealso	interface XEventListener
@@ -145,7 +145,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 		/*-****************************************************************************************************//**
 			@short		check count of accessible elements of enumeration
 			@descr		You can call this method to get information about accessible elements in future.
-						Elements you have already getted are not accessible!
+						Elements you already got are not accessible!
 
 			@seealso	interface XEnumeration
 
@@ -154,7 +154,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 						sal_False = other way
 
 			@onerror	sal_False<BR>
-						(List is emtpy and there no accessible elements ...)
+						(List is empty and there are no accessible elements ...)
 		*//*-*****************************************************************************************************/
 
     	virtual sal_Bool SAL_CALL hasMoreElements() throw( css::uno::RuntimeException );
@@ -166,7 +166,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 			@seealso	interface XEnumeration
 
 			@param		-
-			@return		A Reference to a task, safed in an Any-structure.
+			@return		A Reference to a task, saved in an Any-structure.
 
 			@onerror	If end of enumeration is arrived or there are no elements in list => a NoSuchElementException is thrown.
 		*//*-*****************************************************************************************************/
@@ -229,7 +229,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 	//-------------------------------------------------------------------------------------------------------------
 
 		/*-****************************************************************************************************//**
-			@short		debug-method to check incoming parameter of some other mehods of this class
+			@short		debug-method to check incoming parameter of some other methods of this class
 			@descr		The following methods are used to check parameters for other methods
 						of this class. The return value is used directly for an ASSERT(...).
 

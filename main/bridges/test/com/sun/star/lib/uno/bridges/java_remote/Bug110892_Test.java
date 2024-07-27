@@ -30,8 +30,11 @@ import com.sun.star.lib.uno.typeinfo.TypeInfo;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
 import util.WaitUnreachable;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 
 /**
  * Test case for bug #110892#.
@@ -47,13 +50,10 @@ import util.WaitUnreachable;
  * approximation, it waits for 10 sec and considers the process failing if it
  * has not garbage-collected the object by then.</p>
  */
-public final class Bug110892_Test extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+public final class Bug110892_Test {
+    @Test
     public void test() throws Exception {
-        assure("test",
+        assertTrue("test",
                new TestBed().execute(new Provider(), false, Client.class,
                                      10000));
     }

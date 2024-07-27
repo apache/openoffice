@@ -34,8 +34,6 @@ import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XInterface;
 import com.sun.star.util.XFlushable;
-// import complexlib.ComplexTestCase;
-// import util.utils;
 
 // ---------- junit imports -----------------
 import org.junit.After;
@@ -82,14 +80,6 @@ public class FinalizedMandatoryTest
 
     static XMultiServiceFactory xMSF;
 
-    /**
-     * A function to tell the framework, which test functions are available.
-     * @return All test methods.
-     */
-//    public String[] getTestMethodNames() {
-//        return new String[]{"checkReadonlySupportFilterFactory",
-//                            "checkReadonlySupportTypeDetection"};
-//    }
     /** Create the environment for following tests.
      * Use either a component loader from desktop or
      * from frame

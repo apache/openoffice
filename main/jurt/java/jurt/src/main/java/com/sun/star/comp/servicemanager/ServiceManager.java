@@ -338,7 +338,7 @@ public class ServiceManager implements XMultiServiceFactory,
 	}
 
 	/**
-	 * Supplies a list of all avialable services names.
+	 * Supplies a list of all available services names.
 	 * <p>
 	 * @return 	list of Strings of all service names
 	 * @see 	com.sun.star.container.XContentEnumerationAccess
@@ -634,9 +634,9 @@ public class ServiceManager implements XMultiServiceFactory,
 	}
 
     /**
-     * Provides an enumeration of all registred services.
+     * Provides an enumeration of all registered services.
      * <p>
-     * @return 	an enumeration of all avialable services.
+     * @return 	an enumeration of all available services.
      * @see 	com.sun.star.conatiner.XEnumerationAccess
      */
     public XEnumeration createEnumeration()	

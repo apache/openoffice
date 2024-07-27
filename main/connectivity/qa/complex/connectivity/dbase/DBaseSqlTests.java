@@ -26,16 +26,13 @@ import com.sun.star.uno.UnoRuntime;
 import com.sun.star.sdbc.*;
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.lang.XMultiServiceFactory;
-import complex.connectivity.TestCase;
-import complex.connectivity.SubTestCase;
 
-public class DBaseSqlTests extends SubTestCase
+public class DBaseSqlTests
 {
     private final XMultiServiceFactory m_xORB;
 
-    public DBaseSqlTests(final XMultiServiceFactory _xORB,final TestCase i_testCase)
+    public DBaseSqlTests(final XMultiServiceFactory _xORB)
     {
-        super( i_testCase );
         m_xORB = _xORB;
     }
 
@@ -44,7 +41,7 @@ public class DBaseSqlTests extends SubTestCase
         final XRowSet xRowRes = (XRowSet) UnoRuntime.queryInterface(XRowSet.class,
                 m_xORB.createInstance("com.sun.star.sdb.RowSet"));
 
-        getLog().println("starting SQL test");
+        System.out.println("starting SQL test");
         // set the properties needed to connect to a database
         final XPropertySet xProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xRowRes);
         xProp.setPropertyValue("DataSourceName", "Bibliography");
@@ -80,7 +77,7 @@ public class DBaseSqlTests extends SubTestCase
         }
         catch(SQLException e)
         {
-            getLog().println(sql + " Error: " + e.getMessage());
+            System.err.println(sql + " Error: " + e.getMessage());
         }
     }
 

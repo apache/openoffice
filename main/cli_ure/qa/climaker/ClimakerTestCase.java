@@ -22,49 +22,25 @@
 
 package climaker;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-import complexlib.ComplexTestCase;
 
-
-public class ClimakerTestCase extends ComplexTestCase
+public class ClimakerTestCase
 {
-    public String[] getTestMethodNames()
+    @Test
+    public void checkGeneratedCLITypes() throws Exception
     {
-        // TODO think about trigger of sub-tests from outside
-        return new String[]
-        {
-            "checkGeneratedCLITypes"
-        };
-    }
-
-    public void checkGeneratedCLITypes()
-    {
-        try
-        {
-            String testProgram = System.getProperty("cli_ure_test");
-            if (testProgram == null || testProgram.length() == 0)
-                failed("Check the make file. Java must be called with -Dcli_ure_test=pathtoexe");
-            Process proc = null;
-            try{
-                
-             proc = Runtime.getRuntime().exec(testProgram);
-             Reader outReader = new Reader(proc.getInputStream());
-             Reader errReader = new Reader(proc.getErrorStream());
-
-            } catch(Exception e)
-            {
-                System.out.println("\n ###" +  e.getMessage() + "\n");
-
-            }
-            proc.waitFor();
-            int retVal = proc.exitValue();
-            if (retVal != 0)
-                failed("Tests for generated CLI code failed.");
-        } catch( java.lang.Exception e)
-        {
-            failed("Unexpected exception.");
-        }
-        
+        String testProgram = System.getProperty("cli_ure_test");
+        if (testProgram == null || testProgram.length() == 0)
+            fail("Check the make file. Java must be called with -Dcli_ure_test=pathtoexe");
+        Process proc = null;
+        proc = Runtime.getRuntime().exec(testProgram);
+        Reader outReader = new Reader(proc.getInputStream());
+        Reader errReader = new Reader(proc.getErrorStream());
+        proc.waitFor();
+        int retVal = proc.exitValue();
+        assertTrue("Tests for generated CLI code failed.", retVal == 0);
     }
 }
 

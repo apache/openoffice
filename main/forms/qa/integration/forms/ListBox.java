@@ -31,6 +31,7 @@ import com.sun.star.form.ListSourceType;
 import com.sun.star.form.runtime.FormFeature;
 import com.sun.star.form.runtime.XFormController;
 import com.sun.star.form.runtime.XFormOperations;
+import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.sdb.CommandType;
 import com.sun.star.sdbc.SQLException;
 import com.sun.star.sdbc.XParameters;
@@ -45,10 +46,33 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
+
 public class ListBox extends TestCase
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
+    private XMultiServiceFactory    m_orb = null;
     HsqlDatabase    m_database = null;
     private final String    m_foreignKeyTableName = "foreign_keys";
+
+    @BeforeClass
+    public static void beforeClass() throws java.lang.Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws java.lang.Exception
+    {
+        officeConnection.tearDown();
+    }
 
     public ListBox()
     {
@@ -56,14 +80,7 @@ public class ListBox extends TestCase
     }
 
     /* ------------------------------------------------------------------ */
-    public String[] getTestMethodNames()
-    {
-        return new String[] {
-            "checkForeignKeys"
-        };
-    }
-
-    /* ------------------------------------------------------------------ */
+    @Test
     public void checkForeignKeys() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         try
@@ -102,7 +119,7 @@ public class ListBox extends TestCase
                         failedFieldTypes.append( fieldTypes[i] );
                     }
                 }
-                /*assure( "The following field types do not work when used as bound list box fields: " + failedFieldTypes.toString() +
+                /*assertTrue( "The following field types do not work when used as bound list box fields: " + failedFieldTypes.toString() +
                         " (row " + row + ")", failedFieldTypes.length() == 0 );*/
 
                 formOperations.execute( FormFeature.MoveToNext );
@@ -116,16 +133,17 @@ public class ListBox extends TestCase
     }
 
     /* ------------------------------------------------------------------ */
+    @Before
     public void before() throws Exception, java.lang.Exception
     {
-        super.before();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
         impl_createDatabase();
     }
 
     /* ------------------------------------------------------------------ */
     protected void prepareDocument() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        super.prepareDocument();
+        super.prepareDocument(m_orb);
         impl_createForm();
     }
 

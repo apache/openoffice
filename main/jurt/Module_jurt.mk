@@ -35,6 +35,7 @@ endif
 
 $(eval $(call gb_Module_add_targets,jurt,\
 	Ant_jurt \
+	Ant_jurt_test \
 	Library_jpipe \
 	Zip_jurt-src \
 ))

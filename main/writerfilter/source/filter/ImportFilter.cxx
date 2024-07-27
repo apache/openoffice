@@ -97,44 +97,52 @@ sal_Bool WriterFilter::filter( const uno::Sequence< beans::PropertyValue >& aDes
         dmapperLogger->startDocument();
 #endif
 
-    writerfilter::dmapper::SourceDocumentType eType =
-        (m_sFilterName.equalsAsciiL ( RTL_CONSTASCII_STRINGPARAM ( "writer_MS_Word_2007" ) ) ||
-         m_sFilterName.equalsAsciiL ( RTL_CONSTASCII_STRINGPARAM ( "writer_MS_Word_2007_Template" ) )) ?
-                writerfilter::dmapper::DOCUMENT_OOXML : writerfilter::dmapper::DOCUMENT_DOC;
-    writerfilter::Stream::Pointer_t pStream(new writerfilter::dmapper::DomainMapper(m_xContext, xInputStream, m_xDstDoc, eType));
-    //create the tokenizer and domain mapper
-    if( eType == writerfilter::dmapper::DOCUMENT_OOXML )
-    {
-        writerfilter::ooxml::OOXMLStream::Pointer_t pDocStream = writerfilter::ooxml::OOXMLDocumentFactory::createStream(m_xContext, xInputStream);
-        writerfilter::ooxml::OOXMLDocument::Pointer_t pDocument(writerfilter::ooxml::OOXMLDocumentFactory::createDocument(pDocStream));
+        writerfilter::dmapper::SourceDocumentType eType =
+            (m_sFilterName.equalsAsciiL ( RTL_CONSTASCII_STRINGPARAM ( "writer_MS_Word_2007" ) ) ||
+             m_sFilterName.equalsAsciiL ( RTL_CONSTASCII_STRINGPARAM ( "writer_MS_Word_2007_Template" ) )) ?
+                    writerfilter::dmapper::DOCUMENT_OOXML : writerfilter::dmapper::DOCUMENT_DOC;
+        writerfilter::Stream::Pointer_t pStream(new writerfilter::dmapper::DomainMapper(m_xContext, xInputStream, m_xDstDoc, eType));
+        //create the tokenizer and domain mapper
+        if( eType == writerfilter::dmapper::DOCUMENT_OOXML )
+        {
+            writerfilter::ooxml::OOXMLStream::Pointer_t pDocStream;
+            try
+            {
+                pDocStream = writerfilter::ooxml::OOXMLDocumentFactory::createStream(m_xContext, xInputStream);
+            }
+            catch (uno::Exception &e)
+            {
+                throw uno::RuntimeException(e.Message, uno::Reference< uno::XInterface >());
+            }
+            writerfilter::ooxml::OOXMLDocument::Pointer_t pDocument(writerfilter::ooxml::OOXMLDocumentFactory::createDocument(pDocStream));
 
-        uno::Reference<frame::XModel> xModel(m_xDstDoc, uno::UNO_QUERY_THROW);
-        pDocument->setModel(xModel);
+            uno::Reference<frame::XModel> xModel(m_xDstDoc, uno::UNO_QUERY_THROW);
+            pDocument->setModel(xModel);
 
-        uno::Reference<drawing::XDrawPageSupplier> xDrawings
-            (m_xDstDoc, uno::UNO_QUERY_THROW);
-        uno::Reference<drawing::XDrawPage> xDrawPage
-            (xDrawings->getDrawPage(), uno::UNO_SET_THROW);
-        pDocument->setDrawPage(xDrawPage);
+            uno::Reference<drawing::XDrawPageSupplier> xDrawings
+                (m_xDstDoc, uno::UNO_QUERY_THROW);
+            uno::Reference<drawing::XDrawPage> xDrawPage
+                (xDrawings->getDrawPage(), uno::UNO_SET_THROW);
+            pDocument->setDrawPage(xDrawPage);
 
-        pDocument->resolve(*pStream);
-    }
-    else
-    {
-        writerfilter::doctok::WW8Stream::Pointer_t pDocStream = writerfilter::doctok::WW8DocumentFactory::createStream(m_xContext, xInputStream);
-        writerfilter::doctok::WW8Document::Pointer_t pDocument(writerfilter::doctok::WW8DocumentFactory::createDocument(pDocStream));
+            pDocument->resolve(*pStream);
+        }
+        else
+        {
+            writerfilter::doctok::WW8Stream::Pointer_t pDocStream = writerfilter::doctok::WW8DocumentFactory::createStream(m_xContext, xInputStream);
+            writerfilter::doctok::WW8Document::Pointer_t pDocument(writerfilter::doctok::WW8DocumentFactory::createDocument(pDocStream));
 
-        pDocument->resolve(*pStream);
-    }
+            pDocument->resolve(*pStream);
+        }
 
 #ifdef DEBUG_IMPORT
-    writerfilter::TagLogger::dump("DOMAINMAPPER");
-    dmapperLogger->endDocument();
-    writerfilter::TagLogger::dump("DEBUG");
-    debugLogger->endDocument();
+        writerfilter::TagLogger::dump("DOMAINMAPPER");
+        dmapperLogger->endDocument();
+        writerfilter::TagLogger::dump("DEBUG");
+        debugLogger->endDocument();
 #endif
 
-    return sal_True;
+        return sal_True;
     }
     return sal_False;
 }

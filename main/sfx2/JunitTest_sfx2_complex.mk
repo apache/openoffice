@@ -35,6 +35,7 @@ $(eval $(call gb_JunitTest_add_jars,sfx2_complex,\
 	$(OUTDIR)/bin/test-tools.jar \
 	$(OUTDIR)/bin/unoil.jar \
 	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,sfx2_complex,\
