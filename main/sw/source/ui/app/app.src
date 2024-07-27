@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
-
-
 
 #include <svl/style.hrc>
 #include <sfx2/sfx.hrc>
@@ -38,7 +34,7 @@
 
 String RID_SW_NAME
 {
-	Text = "StarWriter" ;
+	Text = "Writer" ;
 };
 
 String STR_PRINT_MERGE_MACRO
@@ -56,45 +52,45 @@ String STR_PAGE_COUNT_MACRO
  // folder in default_images. This list is now only used for special toolboxes that are
  // used in floating windows.
 
-#define IMAGELIST_AND_COUNT 			\
-	IdList = { 							\
-		FN_FORMULA_CALC 				;\
-		FN_FORMULA_CANCEL 				;\
- 		FN_FORMULA_APPLY  				;\
-		};								\
-	IdCount = { 						\
-        3;                              \
+#define IMAGELIST_AND_COUNT 	\
+	IdList = { 					\
+		FN_FORMULA_CALC;		\
+		FN_FORMULA_CANCEL; 		\
+		FN_FORMULA_APPLY;		\
+		};						\
+	IdCount = { 				\
+		3;						\
 	};
 
 ImageList RID_DEFAULTIMAGELIST_SC
 {
-    Prefix = "sc";
-    MaskColor = IMAGE_MASK_COLOR ;
+	Prefix = "sc" ;
+	MaskColor = IMAGE_MASK_COLOR ;
 	IMAGELIST_AND_COUNT
 };
 ImageList RID_DEFAULTIMAGELIST_LC
 {
-    Prefix = "lc";
-    MaskColor = IMAGE_MASK_COLOR ;
+	Prefix = "lc" ;
+	MaskColor = IMAGE_MASK_COLOR ;
 	IMAGELIST_AND_COUNT
 };
 
 ImageList RID_DEFAULTIMAGELIST_SCH
 {
-    Prefix = "sch";
-    MaskColor = IMAGE_MASK_COLOR ;
-    IMAGELIST_AND_COUNT
+	Prefix = "sch" ;
+	MaskColor = IMAGE_MASK_COLOR ;
+	IMAGELIST_AND_COUNT
 };
 ImageList RID_DEFAULTIMAGELIST_LCH
 {
-    Prefix = "lch";
-    MaskColor = IMAGE_MASK_COLOR ;
-    IMAGELIST_AND_COUNT
+	Prefix = "lch" ;
+	MaskColor = IMAGE_MASK_COLOR ;
+	IMAGELIST_AND_COUNT
 };
 
 // Vorlagen
 #define STYLE_IMAGE_LISTEF \
-    MaskColor = IMAGE_MASK_COLOR ; \
+	MaskColor = IMAGE_MASK_COLOR ; \
 	IdList = \
 	{ \
 		1; 2; 3; 4; 5; \
@@ -107,21 +103,21 @@ SfxStyleFamilies DLG_STYLE_DESIGNER
 	{
 		SfxStyleFamilyItem
 		{
-            StyleFamily = SFX_STYLE_FAMILY_PARA ;
+			StyleFamily = SFX_STYLE_FAMILY_PARA ;
 			Text [ en-US ] = "Paragraph Styles" ;
-    	FilterList [ en-US ] =
+		FilterList [ en-US ] =
 		{
-		 < "All Styles" ; SFXSTYLEBIT_ALL ; > ;
-			< "Applied Styles" ; SFXSTYLEBIT_USED ; > ;
-			< "Custom Styles" ; SFXSTYLEBIT_USERDEF ; > ;
-			< "Automatic" ; SFXSTYLEBIT_AUTO ; > ;
-			< "Text Styles" ; SWSTYLEBIT_TEXT ; > ;
-			< "Chapter Styles" ; SWSTYLEBIT_CHAPTER ; > ;
-			< "List Styles" ; SWSTYLEBIT_LIST ; > ;
-			< "Index Styles" ; SWSTYLEBIT_IDX ; > ;
-			< "Special Styles" ; SWSTYLEBIT_EXTRA ; > ;
-			< "HTML Styles" ; SWSTYLEBIT_HTML ; > ;
-			< "Conditional Styles" ; SWSTYLEBIT_CONDCOLL ; > ;
+		 < "All Styles" ; SFXSTYLEBIT_ALL ;					> ;
+			< "Applied Styles" ; SFXSTYLEBIT_USED ;			> ;
+			< "Custom Styles" ; SFXSTYLEBIT_USERDEF ;		> ;
+			< "Automatic" ; SFXSTYLEBIT_AUTO ;				> ;
+			< "Text Styles" ; SWSTYLEBIT_TEXT ;				> ;
+			< "Chapter Styles" ; SWSTYLEBIT_CHAPTER ;		> ;
+			< "List Styles" ; SWSTYLEBIT_LIST ;				> ;
+			< "Index Styles" ; SWSTYLEBIT_IDX ;				> ;
+			< "Special Styles" ; SWSTYLEBIT_EXTRA ;			> ;
+			< "HTML Styles" ; SWSTYLEBIT_HTML ;				> ;
+			< "Conditional Styles" ; SWSTYLEBIT_CONDCOLL ;	> ;
 		};
 	};
 		SfxStyleFamilyItem
@@ -130,9 +126,9 @@ SfxStyleFamilies DLG_STYLE_DESIGNER
 			Text [ en-US ] = "Character Styles" ;
 			FilterList [ en-US ] =
 			{
-				< "All" ; SFXSTYLEBIT_ALL ; > ;
-				< "Applied Styles" ; SFXSTYLEBIT_USED ; > ;
-				< "Custom Styles" ; SFXSTYLEBIT_USERDEF ; > ;
+				< "All" ; SFXSTYLEBIT_ALL ;					> ;
+				< "Applied Styles" ; SFXSTYLEBIT_USED ;		> ;
+				< "Custom Styles" ; SFXSTYLEBIT_USERDEF ;	> ;
 			};
 	};
 		SfxStyleFamilyItem
@@ -141,9 +137,9 @@ SfxStyleFamilies DLG_STYLE_DESIGNER
 			Text [ en-US ] = "Frame Styles" ;
 			FilterList [ en-US ] =
 			{
-				< "All" ; SFXSTYLEBIT_ALL ; > ;
-				< "Applied Styles" ; SFXSTYLEBIT_USED ; > ;
-				< "Custom Styles" ; SFXSTYLEBIT_USERDEF ; > ;
+				< "All" ; SFXSTYLEBIT_ALL ;					> ;
+				< "Applied Styles" ; SFXSTYLEBIT_USED ;		> ;
+				< "Custom Styles" ; SFXSTYLEBIT_USERDEF ;	> ;
 			};
 	};
 		SfxStyleFamilyItem
@@ -152,9 +148,9 @@ SfxStyleFamilies DLG_STYLE_DESIGNER
 			Text [ en-US ] = "Page Styles" ;
 			FilterList [ en-US ] =
 			{
-				< "All" ; SFXSTYLEBIT_ALL ; > ;
-				< "Applied Styles" ; SFXSTYLEBIT_USED ; > ;
-				< "Custom Styles" ; SFXSTYLEBIT_USERDEF ; > ;
+				< "All" ; SFXSTYLEBIT_ALL ;					> ;
+				< "Applied Styles" ; SFXSTYLEBIT_USED ;		> ;
+				< "Custom Styles" ; SFXSTYLEBIT_USERDEF ;	> ;
 			};
 	};
 		SfxStyleFamilyItem
@@ -163,28 +159,28 @@ SfxStyleFamilies DLG_STYLE_DESIGNER
 			Text [ en-US ] = "List Styles" ;
 			FilterList [ en-US ] =
 			{
-				< "All" ; SFXSTYLEBIT_ALL ; > ;
-				< "Applied Styles" ; SFXSTYLEBIT_USED ; > ;
-				< "Custom Styles" ; SFXSTYLEBIT_USERDEF ; > ;
+				< "All" ; SFXSTYLEBIT_ALL ;					> ;
+				< "Applied Styles" ; SFXSTYLEBIT_USED ;		> ;
+				< "Custom Styles" ; SFXSTYLEBIT_USERDEF ;	> ;
 			};
 	};
 	};
 
 	ImageList 1	// == BMP_COLOR_NORMAL + 1
 	{
-        Prefix = "sf";
+		Prefix = "sf" ;
 		STYLE_IMAGE_LISTEF
 	};
 	ImageList 2	// == BMP_COLOR_HIGHCONTRAST + 1
 	{
-        Prefix = "sfh";
+		Prefix = "sfh" ;
 		STYLE_IMAGE_LISTEF
 	};
 };
 
 
 
- // Default Bitmap fuer Toolbox
+ // Default Bitmap for toolbox
 BITMAP BMP_FEHLT { FILE = "x.png" ; };
  // Bitmap fuer die NumerierungsVorlagen im Organizer
 Bitmap BMP_STYLES_FAMILY_NUM { File = "styfamnu.png" ; };
@@ -208,7 +204,7 @@ String STR_HUMAN_SWDOC_NAME
 
 String STR_WRITER_DOCUMENT_FULLTYPE
 {
-    Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION Text Document";
+	Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION Text Document" ;
 };
 
 
@@ -219,7 +215,7 @@ String STR_CANTOPEN
 
 String STR_CANTCREATE
 {
-	Text [ en-US ] = "Can't create document.";
+	Text [ en-US ] = "Can't create document." ;
 };
 String STR_DLLNOTFOUND
 {
@@ -257,17 +253,17 @@ InfoBox MSG_ERROR_PASSWD
 };
 
 /*
- * auskommentiert, da die Toolbox z. Zt. nicht aus der Resource
+ * auskommentiert, da die Toolbox z. Zt. nicht aus der Ressource
  * geladen werden kann
 Window WIN_TOOLBOX {
-	   "Bearbeitung von Text, Rahmen, Grafik, Tabellen oder "
-	   "Numerierungen.";
+		"Bearbeitung von Text, Rahmen, Grafik, Tabellen oder "
+		"Numerierungen." ;
 HelpText [ en-US ] = "The objectbar contains, depending on your current "
 			"working context, buttons for the editing of text, "
-			"frames, graphics, tables or numberings.";
-	OUTPUTSIZE = TRUE;
-	BORDER = TRUE;
-	Size = (28,27);
+			"frames, graphics, tables or numberings." ;
+	OUTPUTSIZE = TRUE ;
+	BORDER = TRUE ;
+	Size = (28, 27) ;
 };
  */
 
@@ -372,7 +368,7 @@ String STR_STATSTR_SUMMARY
 
 String STR_STATSTR_SWGPRTOLENOTIFY
 {
-	Text [ en-US ] = "Adapt Objects...";
+	Text [ en-US ] = "Adapt Objects..." ;
 };
 
 
@@ -410,7 +406,7 @@ String STR_TABLE_DEFNAME
 
 String STR_GRAPHIC_DEFNAME
 {
-	Text[ en-US ] = "graphics" ;
+	Text [ en-US ] = "graphics" ;
 };
 
 String STR_OBJECT_DEFNAME
@@ -446,13 +442,13 @@ QueryBox MSG_SAVE_HTML_QUERY
 {
 	BUTTONS = WB_YES_NO_CANCEL ;
 	DEFBUTTON = WB_DEF_YES ;
-	Message [ en-US ] = "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?" ;
+	Message [ en-US ] = "Conversion into HTML format\nmay cause information loss.\nDo you want to save the document?" ;
 };
 QueryBox MSG_SAVEAS_HTML_QUERY
 {
-    BUTTONS = WB_YES_NO;
-    DEFBUTTON = WB_DEF_NO ;
-	Message [ en-US ] = "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?";
+	BUTTONS = WB_YES_NO;
+	DEFBUTTON = WB_DEF_NO ;
+	Message [ en-US ] = "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?" ;
 };
 String STR_ABSTRACT_TITLE
 {
@@ -466,18 +462,18 @@ String STR_FDLG_TEMPLATE_BUTTON
 
 String STR_FDLG_TEMPLATE_NAME
 {
-    //Text [ en-US ] = "Styles: " ;			//#outline level,removed by zhaojianwei
-    Text [ en-US ] = "separated by: " ;	//<-end,add by zhaojianwei
+	//Text [ en-US ] = "Styles: " ; //#outline level,removed by zhaojianwei
+	Text [ en-US ] = "separated by: " ; //<-end,add by zhaojianwei
 };
 //#outline level,add by zhaojianwei
 String STR_FDLG_OUTLINE_LEVEL
 {
-    Text [ en-US ] = "Outline: Level ";
+	Text [ en-US ] = "Outline: Level " ;
 };
 
 String STR_FDLG_STYLE
 {
-    Text [ en-US ] = "Style: "; 
+	Text [ en-US ] = "Style: " ;
 };
 //<-end
 
@@ -492,75 +488,75 @@ String STR_PAGEBREAK
 };
 String STR_WESTERN_FONT
 {
-	Text [ en-US ] = "Western text: ";
+	Text [ en-US ] = "Western text: " ;
 };
 String STR_CJK_FONT
 {
-	Text [ en-US ] = "Asian text: ";
+	Text [ en-US ] = "Asian text: " ;
 };
 String STR_REDLINE_UNKNOWN_AUTHOR
 {
-	Text [ en-US ] = "Unknown Author";
+	Text [ en-US ] = "Unknown Author" ;
 };
 
 WarningBox MSG_DISABLE_UNDO_QUESTION
 {
-	BUTTONS = WB_YES_NO_CANCEL;
+	BUTTONS = WB_YES_NO_CANCEL ;
 	DEFBUTTON = WB_DEF_YES ;
-	Message [ en-US ] = "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?";
+	Message [ en-US ] = "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?" ;
 };
 /*QueryBox MSG_INS_MERGE_FIELDS
 {
-    HelpId = HID_MAIL_MERGE_INSERT_FIELDS;
-    Buttons = WB_OK_CANCEL ;
-    DefButton = WB_DEF_YES ;
-    Message [ en-US ] = "Do you want to use names and addresses from a database?";
+	HelpId = HID_MAIL_MERGE_INSERT_FIELDS;
+	Buttons = WB_OK_CANCEL ;
+	DefButton = WB_DEF_YES ;
+	Message [ en-US ] = "Do you want to use names and addresses from a database?" ;
 };
 */
 QueryBox MSG_PRINT_AS_MERGE
 {
-    HelpId = HID_PRINT_AS_MERGE;
-    Buttons = WB_YES_NO ;
-    DefButton = WB_DEF_YES ;
-    Message [ en-US ] = "Your document contains address database fields. Do you want to print a form letter?";
+	HelpId = HID_PRINT_AS_MERGE ;
+	Buttons = WB_YES_NO ;
+	DefButton = WB_DEF_YES ;
+	Message [ en-US ] = "Your document contains address database fields. Do you want to print a form letter?" ;
 };
 ModalDialog DLG_MERGE_SOURCE_UNAVAILABLE
 {
-    HelpId = HID_MERGE_SOURCE_UNAVAILABLE;
-    OutputSize = TRUE ;
-    SVLook = TRUE ;
-    Size = MAP_APPFONT ( 202 , 72 ) ;
-    Moveable = TRUE ;
+	HelpId = HID_MERGE_SOURCE_UNAVAILABLE ;
+	OutputSize = TRUE ;
+	SVLook = TRUE ;
+	Size = MAP_APPFONT ( 202, 72 ) ;
+	Moveable = TRUE ;
 
-    FixedImage IMG_MERGE
-    {
-        Pos = MAP_APPFONT ( 12 , 14 ) ;
-        Size = MAP_APPFONT ( 103 , 32 ) ;
+	FixedImage IMG_MERGE
+	{
+        Pos = MAP_APPFONT ( 12, 14 ) ;
+        Size = MAP_APPFONT ( 103, 32 ) ;
     };
     FixedText ST_MERGE_SOURCE_UNAVAILABLE
     {
-        Pos = MAP_APPFONT ( 12 , 6 ) ;
-        Size = MAP_APPFONT ( 178 , 40 ) ;
-        WordBreak = TRUE;
-        Text [ en-US ] = "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings.";
+        Pos = MAP_APPFONT ( 12, 6 ) ;
+        Size = MAP_APPFONT ( 178, 40 ) ;
+        WordBreak = TRUE ;
+        Text [ en-US ] = "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings." ;
     };
     OKButton PB_MERGE_OK
     {
-        Pos = MAP_APPFONT ( 12 , 52 ) ;
-        Size = MAP_APPFONT ( 125 , 14 ) ;
-        Text [ en-US ] = "Check Connection Settings...";
+        Pos = MAP_APPFONT ( 12, 52 ) ;
+        Size = MAP_APPFONT ( 125, 14 ) ;
+        Text [ en-US ] = "Check Connection Settings..." ;
     };
     CancelButton PB_MERGE_CANCEL
     {
-        Pos = MAP_APPFONT ( 140 , 52 ) ;
-        Size = MAP_APPFONT ( 50 , 14 ) ;
+        Pos = MAP_APPFONT ( 140, 52 ) ;
+        Size = MAP_APPFONT ( 50, 14 ) ;
     };
 };
 WarningBox MSG_DATA_SOURCES_UNAVAILABLE
 {
-    HelpId = HID_DATA_SOURCES_UNAVAILABLE;
-    Buttons = WB_OK_CANCEL;
-    Message [ en-US ] = "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields.";
+    HelpId = HID_DATA_SOURCES_UNAVAILABLE ;
+    Buttons = WB_OK_CANCEL ;
+    Message [ en-US ] = "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields." ;
 };
 
 String RID_MODULE_TOOLBOX
@@ -574,7 +570,7 @@ String  STR_DONT_ASK_AGAIN
 // --> OD 2008-04-14 #outlinelevel#
 String STR_OUTLINE_NUMBERING
 {
-    Text [ en-US ] = "Outline Numbering";
+    Text [ en-US ] = "Outline Numbering" ;
 };
 ToolBox RID_MODULE_TOOLBOX
 {
@@ -655,7 +651,9 @@ ToolBox RID_MODULE_TOOLBOX
 
 WarningBox MSG_DISABLE_READLINE_QUESTION
 {
-	BUTTONS = WB_YES_NO;
+	BUTTONS = WB_YES_NO ;
 	DEFBUTTON = WB_DEF_YES ;
-	Message [ en-US ] = "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?";
+	Message [ en-US ] = "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?" ;
 };
+
+// ********************************************************************** EOF
