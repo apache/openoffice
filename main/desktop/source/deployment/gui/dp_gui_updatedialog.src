@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include "svtools/controldims.hrc"
 
@@ -52,7 +50,7 @@ ModalDialog RID_DLG_UPDATE {
             (LOCAL_WIDTH - LOCAL_WIDTH * 2 / 3 - RSC_SP_CTRL_DESC_X -
              RSC_CD_FIXEDTEXT_HEIGHT),
             RSC_CD_FIXEDTEXT_HEIGHT);
-        Text[en-US] = "Checking...";
+        Text[en-US] = "Checking... ";
         Right = TRUE;
         NoLabel = TRUE;
     };
@@ -274,3 +272,4 @@ WarningBox RID_WARNINGBOX_UPDATE_SHARED_EXTENSION
     "Click \'Cancel\' to stop updating the extensions.";
 };
 
+// ******************************************************************* EOF
