@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "svtools/controldims.hrc"
 #include "dp_gui.hrc"
 
@@ -289,7 +287,6 @@ ModalDialog RID_DLG_LICENSE
 		Text [ en-US ] = "Decline" ;
 		TabStop = TRUE ;
 	};
-
 };
 
 ModalDialog RID_DLG_SHOW_LICENSE
@@ -320,7 +317,6 @@ ModalDialog RID_DLG_SHOW_LICENSE
 		Size = MAP_APPFONT ( RSC_CD_PUSHBUTTON_WIDTH, RSC_CD_PUSHBUTTON_HEIGHT ) ;
 	};
 };
-
 
 
 WarningBox RID_WARNINGBOX_INSTALL_EXTENSION {
