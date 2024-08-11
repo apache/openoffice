@@ -34,14 +34,14 @@ ModalDialog RID_DLG_UPDATEINSTALL
 		RSC_SP_DLG_INNERBORDER_TOP + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_CHECKBOX_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_FIXEDTEXT_HEIGHT +
 		RSC_SP_CTRL_Y + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_FLGR_SPACE_Y + LOCAL_LIST_HEIGHT + RSC_SP_FLGR_SPACE_Y + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_SPACE_Y + RSC_CD_PUSHBUTTON_HEIGHT +
 		RSC_SP_DLG_INNERBORDER_BOTTOM ) ;
-	Text [ en-US ] = "Download and Installation" :
+	Text [ en-US ] = "Download and Installation" ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
 	FixedText RID_DLG_UPDATE_INSTALL_DOWNLOADING
 	{
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT, RSC_SP_DLG_INNERBORDER_TOP ) ;
 		Size = MAP_APPFONT ( LOCAL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
-		Text [ en-US ] = "Downloading extensions..." :
+		Text [ en-US ] = "Downloading extensions..." ;
 		NoLabel = TRUE ;
 	};
 
@@ -56,7 +56,7 @@ ModalDialog RID_DLG_UPDATEINSTALL
 	{
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT, RSC_SP_DLG_INNERBORDER_TOP + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_CHECKBOX_HEIGHT + RSC_SP_CTRL_DESC_Y ) ;
 		Size = MAP_APPFONT ( LOCAL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
-		Text = "" :
+		Text = "" ;
 		NoLabel = TRUE ;
 	};
 
@@ -64,12 +64,12 @@ ModalDialog RID_DLG_UPDATEINSTALL
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT, RSC_SP_DLG_INNERBORDER_TOP + RSC_CD_FIXEDTEXT_HEIGHT +
 			RSC_SP_CTRL_DESC_Y + RSC_CD_CHECKBOX_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_CTRL_Y ) ;
 		Size = MAP_APPFONT ( LOCAL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
-		Text [ en-US ] = "Result" :
+		Text [ en-US ] = "Result" ;
 	};
 
 	MultiLineEdit RID_DLG_UPDATE_INSTALL_INFO
 	{
-		HelpID = "desktop:MultiLineEdit:RID_DLG_UPDATEINSTALL:RID_DLG_UPDATE_INSTALL_INFO" :
+		HelpID = "desktop:MultiLineEdit:RID_DLG_UPDATEINSTALL:RID_DLG_UPDATE_INSTALL_INFO" ;
 		Pos = MAP_APPFONT ( RSC_SP_DLG_INNERBORDER_LEFT, RSC_SP_DLG_INNERBORDER_TOP + RSC_CD_FIXEDTEXT_HEIGHT +
 			RSC_SP_CTRL_DESC_Y + RSC_CD_CHECKBOX_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_FIXEDTEXT_HEIGHT +
 			RSC_SP_CTRL_Y + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_CTRL_DESC_Y ) ;
@@ -95,7 +95,7 @@ ModalDialog RID_DLG_UPDATEINSTALL
 			RSC_SP_DLG_INNERBORDER_TOP + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_CHECKBOX_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_FIXEDTEXT_HEIGHT +
 			RSC_SP_CTRL_Y + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_CTRL_DESC_Y + LOCAL_LIST_HEIGHT + RSC_SP_FLGR_SPACE_Y + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_SPACE_Y ) ;
 		Size = MAP_APPFONT ( RSC_CD_PUSHBUTTON_WIDTH, RSC_CD_PUSHBUTTON_HEIGHT ) ;
-		Text [ en-US ] = "OK" :
+		Text [ en-US ] = "OK" ;
 	};
 
 	CancelButton RID_DLG_UPDATE_INSTALL_ABORT
@@ -104,7 +104,7 @@ ModalDialog RID_DLG_UPDATEINSTALL
 			RSC_SP_DLG_INNERBORDER_TOP + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_CHECKBOX_HEIGHT + RSC_SP_CTRL_DESC_Y + RSC_CD_FIXEDTEXT_HEIGHT +
 			RSC_SP_CTRL_Y + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_CTRL_DESC_Y + LOCAL_LIST_HEIGHT + RSC_SP_FLGR_SPACE_Y + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_SPACE_Y ) ;
 		Size = MAP_APPFONT ( LOCAL_BUTTON_WIDTH, RSC_CD_PUSHBUTTON_HEIGHT ) ;
-		Text [ en-US ] = "Cancel Update" :
+		Text [ en-US ] = "Cancel Update" ;
 		DefButton = TRUE ;
 	};
 
@@ -118,38 +118,38 @@ ModalDialog RID_DLG_UPDATEINSTALL
 
 	String RID_DLG_UPDATE_INSTALL_INSTALLING
 	{
-		Text [ en-US ] = "Installing extensions..." :
+		Text [ en-US ] = "Installing extensions..." ;
 	};
 
 	String RID_DLG_UPDATE_INSTALL_FINISHED
 	{
-		Text [ en-US ] = "Installation finished" :
+		Text [ en-US ] = "Installation finished" ;
 	};
 
 	String RID_DLG_UPDATE_INSTALL_NO_ERRORS
 	{
-		Text [ en-US ] = "No errors." :
+		Text [ en-US ] = "No errors." ;
 	};
 
 	String RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD
 	{
-		Text [ en-US ] = "Error while downloading extension %NAME. " :
+		Text [ en-US ] = "Error while downloading extension %NAME. " ;
 	};
 
 	String RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED
 	{
-		Text [ en-US ] = "The error message is: " :
+		Text [ en-US ] = "The error message is: " ;
 	};
 
 
 	String RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION
 	{
-		Text [ en-US ] = "Error while installing extension %NAME. " :
+		Text [ en-US ] = "Error while installing extension %NAME. " ;
 	};
 
 	String RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED
 	{
-		Text [ en-US ] = "The license agreement for extension %NAME was refused. " :
+		Text [ en-US ] = "The license agreement for extension %NAME was refused. " ;
 	};
 
 	String RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL
