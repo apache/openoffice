@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -150,7 +148,7 @@ void lcl_InvalidateZoomSlots(SfxBindings& rBindings)
 /*--------------------------------------------------------------------
 	Beschreibung:
  --------------------------------------------------------------------*/
-    
+
 // erstmal der Zoom-Dialog
 
 class SwPreViewZoomDlg : public SvxStandardDialog
@@ -184,7 +182,7 @@ SwPreViewZoomDlg::SwPreViewZoomDlg( SwPagePreViewWin& rParent ) :
 	aColEdit(this,SW_RES(ED_COL)),
 	aOkBtn(this,SW_RES(BT_OK)),
 	aCancelBtn(this,SW_RES(BT_CANCEL)),
-    aHelpBtn(this,SW_RES(BT_HELP))
+	aHelpBtn(this,SW_RES(BT_HELP))
 {
 	FreeResource();
 
@@ -1016,8 +1014,8 @@ MOVEPAGE:
 			bNormalPrint = sal_True;
 			SfxViewShell::ExecuteSlot( rReq, SfxViewShell::GetInterface() );
 			return;
-        case FN_CLOSE_PAGEPREVIEW:
-        case SID_PRINTPREVIEW:
+		case FN_CLOSE_PAGEPREVIEW:
+		case SID_PRINTPREVIEW:
 			//	print preview is now always in the same frame as the tab view
 			//	-> always switch this frame back to normal view
 			//	(ScTabViewShell ctor reads stored view data)
@@ -1058,7 +1056,7 @@ void  SwPagePreView::GetState( SfxItemSet& rSet )
     ASSERT(nWhich, leeres Set);
     SwPagePreviewLayout* pPagePrevwLay = GetViewShell()->PagePreviewLayout();
     //#106746# zoom has to be disabled if Accessibility support is switched on
-    // MT 2010/01, see #110498# 
+    // MT 2010/01, see #110498#
     sal_Bool bZoomEnabled = sal_True; // !Application::GetSettings().GetMiscSettings().GetEnableATToolSupport();
 
 	while(nWhich)
@@ -1358,14 +1356,14 @@ SwPagePreView::SwPagePreView(SfxViewFrame *pViewFrame, SfxViewShell* pOldSh):
         mbFormDesignModeToReset = pVS->GetDrawView()->IsDesignMode();
     }
 
-    if( pVS )
+	if( pVS )
 		pNew = new ViewShell( *pVS, pViewWin, 0, VSHELLFLAG_ISPREVIEW );
 	else
 		pNew = new ViewShell(
 				*((SwDocShell*)pViewFrame->GetObjectShell())->GetDoc(),
 				pViewWin, 0, 0, VSHELLFLAG_ISPREVIEW );
 
-    pViewWin->SetViewShell( pNew );
+	pViewWin->SetViewShell( pNew );
 	pNew->SetSfxViewShell( this );
 	Init();
 }
@@ -1528,7 +1526,7 @@ void SwPagePreView::CalcAndSetBorderPixel( SvBorder &rToFill, sal_Bool /*bInner*
 //	const long nAdd = bInner ? 0 : ScrollBar::GetWindowOverlapPixel();
 	const StyleSettings &rSet = pViewWin->GetSettings().GetStyleSettings();
 	const long nTmp = rSet.GetScrollBarSize();// - nAdd;
-    if ( pVScrollbar->IsVisible( sal_False ))
+	if ( pVScrollbar->IsVisible( sal_False ))
 		rToFill.Right()  = nTmp;
 	if ( pHScrollbar->IsVisible( sal_False ) )
 		rToFill.Bottom() = nTmp;
@@ -1578,7 +1576,7 @@ void  SwPagePreView::OuterResizePixel( const Point &rOfst, const Size &rSize )
 	//Aufruf der DocSzChgd-Methode der Scrollbars ist noetig, da vom maximalen
 	//Scrollrange immer die halbe Hoehe der VisArea abgezogen wird.
 	if ( pVScrollbar &&
-             aTmpSize.Width() > 0 && aTmpSize.Height() > 0 ) 
+             aTmpSize.Width() > 0 && aTmpSize.Height() > 0 )
         {
             ScrollDocSzChg();
         }
@@ -1626,14 +1624,14 @@ void SwPagePreView::SetVisArea( const Rectangle &rRect, sal_Bool bUpdateScrollba
 	//Vorsichtshalber tun wir das nur wenn an der Shell eine Action laeuft,
 	//denn dann wir nicht wirklich gepaintet sondern die Rechtecke werden
 	//lediglich (in Dokumentkoordinaten) vorgemerkt.
-    if( GetViewShell()->ActionPend() )
+	if( GetViewShell()->ActionPend() )
 		pViewWin->Update();
 
 	// setze am View-Win die aktuelle Size
 	aVisArea = aLR;
 	pViewWin->SetWinSize( aLR.GetSize() );
-    // OD 18.12.2002 #103492# - use new mode
-    ChgPage( SwPagePreViewWin::MV_NEWWINSIZE, bUpdateScrollbar );
+	// OD 18.12.2002 #103492# - use new mode
+	ChgPage( SwPagePreViewWin::MV_NEWWINSIZE, bUpdateScrollbar );
 
 	pViewWin->Invalidate();
 }
@@ -2140,14 +2138,14 @@ uno::Reference< ::com::sun::star::accessibility::XAccessible >
 		return xAcc;
 	}
 	if (mpViewShell)
-	{	    
+	{
 		::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > xAccPreview = mpViewShell->CreateAccessiblePreview();
 		SetAccessible(xAccPreview);
 	}
 	return GetAccessible( sal_False );
 }
 // MT: Removed Windows::SwitchView() introduced with IA2 CWS.
-// There are other notifications for this when the active view has chnaged, so please update the code to use that event mechanism
+// There are other notifications for this when the active view has changed, so please update the code to use that event mechanism
 void SwPagePreViewWin::SwitchView()
 {
 #ifdef ACCESSIBLE_LAYOUT
@@ -2222,3 +2220,5 @@ void SwPagePreView::SetVScrollbarThumbPos( const sal_uInt16 _nNewThumbPos )
         pVScrollbar->SetThumbPos( _nNewThumbPos );
     }
 }
+
+/* vim: set noet sw=4 ts=4: */

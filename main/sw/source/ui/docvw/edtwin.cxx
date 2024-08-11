@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -184,10 +182,10 @@ class SwAnchorMarker
     Point aLastPos;
     bool bTopRightHandle;
 public:
-    SwAnchorMarker( SdrHdl* pH ) 
+    SwAnchorMarker( SdrHdl* pH )
         : pHdl( pH )
         , aHdlPos( pH->GetPos() )
-        , aLastPos( pH->GetPos() ) 
+        , aLastPos( pH->GetPos() )
         , bTopRightHandle( pH->GetKind() == HDL_ANCHOR_TR )
     {}
     const Point& GetLastPos() const { return aLastPos; }
@@ -196,8 +194,8 @@ public:
     const Point& GetPos() { return pHdl->GetPos(); }
     const Point& GetHdlPos() { return aHdlPos; }
     SdrHdl* GetHdl() const { return pHdl; }
-    void ChgHdl( SdrHdl* pNew ) 
-    { 
+    void ChgHdl( SdrHdl* pNew )
+    {
         pHdl = pNew;
         if ( pHdl )
         {
@@ -215,9 +213,9 @@ public:
         else
         {
             aHitTestPos += Point( 1, 1 );
-        }             
+        }
         aHitTestPos = rOut.PixelToLogic( aHitTestPos );
-        
+
         return aHitTestPos;
     }
 };
@@ -1015,28 +1013,28 @@ void SwEditWin::ChangeFly( sal_uInt8 nDir, sal_Bool bWeb )
         {
             case MOVE_LEFT_BIG:
             case MOVE_LEFT_HUGE:
-            case MOVE_LEFT_SMALL: aTmp.Left( aTmp.Left() - nLeft ); 
-                break;
-            
-            case MOVE_UP_BIG:
-            case MOVE_UP_HUGE:
-            case MOVE_UP_SMALL: aTmp.Top( aTmp.Top() - nUp ); 
-                break;
-            
-            case MOVE_RIGHT_SMALL: 
-                if( aTmp.Width() < aSnap.Width() + MINFLY ) 
-                    break;
-                nRight = aSnap.Width(); // kein break
-            case MOVE_RIGHT_HUGE: 
-            case MOVE_RIGHT_BIG: aTmp.Left( aTmp.Left() + nRight ); 
+            case MOVE_LEFT_SMALL: aTmp.Left( aTmp.Left() - nLeft );
                 break;
 
-            case MOVE_DOWN_SMALL: 
-                if( aTmp.Height() < aSnap.Height() + MINFLY ) 
+            case MOVE_UP_BIG:
+            case MOVE_UP_HUGE:
+            case MOVE_UP_SMALL: aTmp.Top( aTmp.Top() - nUp );
+                break;
+
+            case MOVE_RIGHT_SMALL:
+                if( aTmp.Width() < aSnap.Width() + MINFLY )
                     break;
-                nDown = aSnap.Height(); // kein break
-            case MOVE_DOWN_HUGE: 
-            case MOVE_DOWN_BIG: aTmp.Top( aTmp.Top() + nDown ); 
+                nRight = aSnap.Width(); // kein break
+            case MOVE_RIGHT_HUGE:
+            case MOVE_RIGHT_BIG: aTmp.Left( aTmp.Left() + nRight );
+                break;
+
+            case MOVE_DOWN_SMALL:
+                if( aTmp.Height() < aSnap.Height() + MINFLY )
+                    break;
+                nDown = aSnap.Height(); // no break
+            case MOVE_DOWN_HUGE:
+            case MOVE_DOWN_BIG: aTmp.Top( aTmp.Top() + nDown );
                 break;
 
             default: ASSERT( sal_True, "ChangeFly: Unknown direction." );
@@ -1144,14 +1142,14 @@ void SwEditWin::ChangeDrawing( sal_uInt8 nDir )
     long nX = 0;
     long nY = 0;
     const sal_Bool bOnePixel(
-        MOVE_LEFT_SMALL == nDir || 
-        MOVE_UP_SMALL == nDir || 
-        MOVE_RIGHT_SMALL == nDir || 
+        MOVE_LEFT_SMALL == nDir ||
+        MOVE_UP_SMALL == nDir ||
+        MOVE_RIGHT_SMALL == nDir ||
         MOVE_DOWN_SMALL == nDir);
     const sal_Bool bHuge(
-        MOVE_LEFT_HUGE == nDir || 
-        MOVE_UP_HUGE == nDir || 
-        MOVE_RIGHT_HUGE == nDir || 
+        MOVE_LEFT_HUGE == nDir ||
+        MOVE_UP_HUGE == nDir ||
+        MOVE_RIGHT_HUGE == nDir ||
         MOVE_DOWN_HUGE == nDir);
     sal_uInt16 nAnchorDir = SW_MOVE_UP;
     switch(nDir)
@@ -2779,7 +2777,7 @@ void SwEditWin::MouseButtonDown(const MouseEvent& _rMEvt)
         }
         else
         {
-            // Make sure the pointer is set to 0, otherwise it may point to 
+            // Make sure the pointer is set to 0, otherwise it may point to
             // nowhere after deleting the corresponding text node.
             rView.SetNumRuleNodeFromDoc( NULL );
             return;
@@ -4330,7 +4328,7 @@ void SwEditWin::MouseButtonUp(const MouseEvent& rMEvt)
         SwFormatClipboard* pFormatClipboard = pApplyTempl->pFormatClipboard;
         if( pFormatClipboard )//apply format paintbrush
         {
-            //get some parameters
+            // get some parameters
             SwWrtShell& rWrtShell = rView.GetWrtShell();
             SfxStyleSheetBasePool* pPool=0;
             bool bNoCharacterFormats = false;
@@ -4344,7 +4342,7 @@ void SwEditWin::MouseButtonUp(const MouseEvent& rMEvt)
                 else if( rMEvt.GetModifier() & KEY_MOD1 )
                     bNoParagraphFormats = true;
             }
-            //execute paste
+            // execute paste
             pFormatClipboard->Paste( rWrtShell, pPool, bNoCharacterFormats, bNoParagraphFormats );
 
             //if the clipboard is empty after paste remove the ApplyTemplate
@@ -4983,7 +4981,7 @@ void SwEditWin::Command( const CommandEvent& rCEvt )
                 if ( sRecord.Len() )
                 {
                     // #102812# convert quotes in IME text
-                    // works on the last input character, this is escpecially in Korean text often done
+                    // works on the last input character, this is especially in Korean text often done
                     // quotes that are inside of the string are not replaced!
                     const sal_Unicode aCh = sRecord.GetChar(sRecord.Len() - 1);
                     SvxAutoCorrCfg* pACfg = SvxAutoCorrCfg::Get();
@@ -5239,7 +5237,7 @@ sal_Bool SwEditWin::SelectMenuPosition(SwWrtShell& rSh, const Point& rMousePos )
     SdrView *pSdrView = rSh.GetDrawView();
     if ( pSdrView )
     {
-        // no close of insert_draw and reset of draw mode, 
+        // no close of insert_draw and reset of draw mode,
         // if context menu position is inside a selected object.
         if ( !bIsInsideSelectedObj && rView.GetDrawFuncPtr() )
         {
@@ -5792,7 +5790,7 @@ Selection SwEditWin::GetSurroundingTextSelection() const
     }
 }
 // MT: Removed Windows::SwitchView() introduced with IA2 CWS.
-// There are other notifications for this when the active view has chnaged, so please update the code to use that event mechanism
+// There are other notifications for this when the active view has changed, so please update the code to use that event mechanism
 void SwEditWin::SwitchView()
 {
 #ifdef ACCESSIBLE_LAYOUT
@@ -5803,3 +5801,5 @@ void SwEditWin::SwitchView()
 	rView.GetWrtShell().InvalidateAccessibleFocus();
 #endif
 }
+
+/* vim: set noet sw=4 ts=4: */
