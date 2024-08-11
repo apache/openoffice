@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -296,7 +294,7 @@ SwGetExpField::SwGetExpField(SwGetExpFieldType* pTyp, const String& rFormel,
 							sal_uInt16 nSub, sal_uLong nFmt)
 	: SwFormulaField( pTyp, nFmt, 0.0 ),
 	bIsInBodyTxt( sal_True ),
-    nSubType(nSub),
+	nSubType(nSub),
 	bLateInitialization( false )
 {
 	SetFormula( rFormel );
@@ -329,7 +327,7 @@ SwField* SwGetExpField::Copy() const
 	pTmp->SwValueField::SetValue(GetValue());
 	pTmp->sExpand 		= sExpand;
 	pTmp->bIsInBodyTxt 	= bIsInBodyTxt;
-    pTmp->SetAutomaticLanguage(IsAutomaticLanguage());
+	pTmp->SetAutomaticLanguage(IsAutomaticLanguage());
 	if( bLateInitialization )
 		pTmp->SetLateInitialization();
 
@@ -352,13 +350,13 @@ void SwGetExpField::ChangeExpansion( const SwFrm& rFrm, const SwTxtFld& rFld )
 	pTxtNode = GetBodyTxtNode( rDoc, aPos, rFrm );
 
 	// Wenn kein Layout vorhanden, kommt es in Kopf und Fusszeilen dazu
-	// das ChnageExpansion uebers Layout-Formatieren aufgerufen wird
+	// das ChangeExpansion uebers Layout-Formatieren aufgerufen wird
 	// aber kein TxtNode vorhanden ist
 	//
 	if(!pTxtNode)
 		return;
-	// #i82544# 
-    if( bLateInitialization )
+	// #i82544#
+	if( bLateInitialization )
 	{
 		SwFieldType* pSetExpFld = rDoc.GetFldType(RES_SETEXPFLD, GetFormula(), sal_False);
 		if( pSetExpFld )
@@ -369,7 +367,7 @@ void SwGetExpField::ChangeExpansion( const SwFrm& rFrm, const SwTxtFld& rFld )
 			SetSubType( nsSwGetSetExpType::GSE_STRING );
 		}
 	}
-	
+
 	_SetGetExpFld aEndFld( aPos.nNode, &rFld, &aPos.nContent );
 	if(GetSubType() & nsSwGetSetExpType::GSE_STRING)
 	{
@@ -424,7 +422,7 @@ void SwGetExpField::SetLanguage(sal_uInt16 nLng)
 
 sal_Bool SwGetExpField::QueryValue( uno::Any& rAny, sal_uInt16 nWhichId ) const
 {
-    switch( nWhichId )
+	switch( nWhichId )
 	{
 	case FIELD_PROP_DOUBLE:
 		rAny <<= GetValue();
@@ -454,8 +452,8 @@ sal_Bool SwGetExpField::QueryValue( uno::Any& rAny, sal_uInt16 nWhichId ) const
 		rAny <<= rtl::OUString(GetExpStr());
 		break;
 	default:
-        return SwField::QueryValue(rAny, nWhichId);
-    }
+		return SwField::QueryValue(rAny, nWhichId);
+	}
 	return sal_True;
 }
 
@@ -463,7 +461,7 @@ sal_Bool SwGetExpField::PutValue( const uno::Any& rAny, sal_uInt16 nWhichId )
 {
 	sal_Int32 nTmp = 0;
 	String sTmp;
-    switch( nWhichId )
+	switch( nWhichId )
 	{
 	case FIELD_PROP_DOUBLE:
 		SwValueField::SetValue(*(double*) rAny.getValue());
@@ -494,8 +492,8 @@ sal_Bool SwGetExpField::PutValue( const uno::Any& rAny, sal_uInt16 nWhichId )
 		ChgExpStr(::GetString( rAny, sTmp ));
 		break;
 	default:
-        return SwField::PutValue(rAny, nWhichId);
-    }
+		return SwField::PutValue(rAny, nWhichId);
+	}
 	return sal_True;
 }
 
@@ -631,7 +629,7 @@ void SwSetExpFieldType::SetChapter( SwSetExpField& rFld, const SwNode& rNd )
                 String sNumber( pRule->MakeNumString(aNum, sal_False ));
 
                 if( sNumber.Len() )
-                    rFld.ChgExpStr(  ( sNumber += sDelim ) += rFld.GetExpStr() );
+                    rFld.ChgExpStr( ( sNumber += sDelim ) += rFld.GetExpStr() );
             }
             else
             {
@@ -644,7 +642,7 @@ void SwSetExpFieldType::SetChapter( SwSetExpField& rFld, const SwNode& rNd )
 
 sal_Bool SwSetExpFieldType::QueryValue( uno::Any& rAny, sal_uInt16 nWhichId ) const
 {
-    switch( nWhichId )
+	switch( nWhichId )
 	{
 	case FIELD_PROP_SUBTYPE:
 		{
@@ -669,7 +667,7 @@ sal_Bool SwSetExpFieldType::QueryValue( uno::Any& rAny, sal_uInt16 nWhichId ) co
 
 sal_Bool SwSetExpFieldType::PutValue( const uno::Any& rAny, sal_uInt16 nWhichId )
 {
-    switch( nWhichId )
+	switch( nWhichId )
 	{
 	case FIELD_PROP_SUBTYPE:
 		{
@@ -851,8 +849,8 @@ SwField* SwSetExpField::Copy() const
 											GetFormula(), GetFormat());
 	pTmp->SwValueField::SetValue(GetValue());
 	pTmp->sExpand   	= sExpand;
-    pTmp->SetAutomaticLanguage(IsAutomaticLanguage());
-    pTmp->SetLanguage(GetLanguage());
+	pTmp->SetAutomaticLanguage(IsAutomaticLanguage());
+	pTmp->SetLanguage(GetLanguage());
 	pTmp->aPText		= aPText;
 	pTmp->bInput		= bInput;
 	pTmp->nSeqNo		= nSeqNo;
@@ -906,7 +904,7 @@ xub_StrLen SwGetExpField::GetReferenceTextPos( const SwFmtFld& rFmt, SwDoc& rDoc
 	sNodeText.Erase(0, nRet);
 	if(sNodeText.Len())
 	{
-		//now check if sNodeText starts with a non-alphanumeric character plus a blank
+		// now check if sNodeText starts with a non-alphanumeric character plus a blank
 		sal_uInt16 nSrcpt = pBreakIt->GetRealScriptOfText( sNodeText, 0 );
 
 		static sal_uInt16 nIds[] =
@@ -982,7 +980,7 @@ sal_Bool SwSetExpField::PutValue( const uno::Any& rAny, sal_uInt16 nWhichId )
 	sal_Int32 nTmp32 = 0;
 	sal_Int16 nTmp16 = 0;
 	String sTmp;
-    switch( nWhichId )
+	switch( nWhichId )
 	{
 	case FIELD_PROP_BOOL2:
 		if(*(sal_Bool*)rAny.getValue())
@@ -1336,12 +1334,12 @@ sal_Bool SwInputField::PutValue( const uno::Any& rAny, sal_uInt16 nWhichId )
 
 void SwInputField::SetPar1(const String& rStr)
 {
-    aContent = rStr;
+	aContent = rStr;
 }
 
 const String& SwInputField::GetPar1() const
 {
-    return getContent();
+	return getContent();
 }
 
 
@@ -1357,22 +1355,22 @@ String SwInputField::GetPar2() const
 
 void SwInputField::SetHelp(const String & rStr)
 {
-    aHelp = rStr;
+	aHelp = rStr;
 }
 
 String SwInputField::GetHelp() const
 {
-    return aHelp;
+	return aHelp;
 }
 
 void SwInputField::SetToolTip(const String & rStr)
 {
-    aToolTip = rStr;
+	aToolTip = rStr;
 }
 
 String SwInputField::GetToolTip() const
 {
-    return aToolTip;
+	return aToolTip;
 }
 
 sal_uInt16 SwInputField::GetSubType() const
@@ -1385,3 +1383,4 @@ void SwInputField::SetSubType(sal_uInt16 nSub)
 	nSubType = nSub;
 }
 
+/* vim: set noet sw=4 ts=4: */
