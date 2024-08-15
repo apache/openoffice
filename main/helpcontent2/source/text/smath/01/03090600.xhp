@@ -65,8 +65,7 @@
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_ATTRIBUTES_CAT" id="bm_id3147434" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154011" role="heading" level="1" l10n="U"><variable id="attributes"><link href="text/smath/01/03090600.xhp" name="Attributes">Attributes</link>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="par_id3145802" role="paragraph" l10n="U"><ahelp hid="HID_SMA_ATTRIBUTES_CAT">You can choose from various attributes for <emph>%PRODUCTNAME</emph>
-<emph>Math</emph> formulas. Some attributes are displayed in the lower part of the Elements window.</ahelp> These attributes are also listed in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window. All attributes not contained in the Elements window or in the context menu must be typed manually in the <emph>Commands</emph> window.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145802" role="paragraph" l10n="U"><ahelp hid="HID_SMA_ATTRIBUTES_CAT">You can choose from various attributes for <emph>%PRODUCTNAME Math</emph> formulas. Some attributes are displayed in the lower part of the Elements window.</ahelp> These attributes are also listed in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window. All attributes not contained in the Elements window or in the context menu must be typed manually in the <emph>Commands</emph> window.</paragraph>
 </section>
 <section id="howtoget">
 <embed href="text/smath/00/00000004.xhp#astatb"/>
@@ -402,8 +401,7 @@
 <paragraph xml-lang="en-US" id="par_id3150612" role="note" l10n="U">The <link href="text/smath/01/03091300.xhp" name="attributes">attributes</link> "acute", "bar", "breve", "check", "circle", "dot", "ddot", "dddot", "grave", "hat", "tilde" and "vec" have fixed sizes. Their width or length cannot be adjusted when positioned over a long symbol.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3155621" role="paragraph" l10n="U">For size changes you can use <emph>size n</emph>, <emph>+n</emph>, <emph>-n</emph>, <emph>*n</emph> and <emph>/n</emph>, where <emph>n</emph> is a placeholder. This method is useful when the base size of the formula is subject to change. The commands <emph>size +n</emph> and <emph>size -n</emph> change point size, and <emph>size *n</emph> and <emph>size /n</emph> change the size by a percentage. For example, the command <emph>size *1.17</emph> increases the size of a character by exactly 17%.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3148695" role="warning" l10n="U">Note that some entries require spaces for the correct structure. This is especially true when you specify attributes with fixed values instead of placeholders.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145230" role="paragraph" l10n="U">For more information about formatting in <emph>%PRODUCTNAME</emph>
-<emph>Math</emph>, see <link href="text/smath/01/03091100.xhp" name="Brackets and Grouping">Brackets and Grouping</link>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145230" role="paragraph" l10n="U">For more information about formatting in <emph>%PRODUCTNAME Math</emph>, see <link href="text/smath/01/03091100.xhp" name="Brackets and Grouping">Brackets and Grouping</link>.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154221" role="paragraph" l10n="U">Information on <link href="text/smath/01/03091300.xhp" name="attributes">attributes</link>, <link href="text/smath/01/03091200.xhp" name="indexes and exponents">indexes and exponents</link>, and <link href="text/smath/01/03091400.xhp" name="scaling">scaling</link> can help you structure your documents more efficiently.</paragraph>
 </body>
 </helpdocument>
