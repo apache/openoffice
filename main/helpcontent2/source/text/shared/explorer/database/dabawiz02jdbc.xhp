@@ -88,8 +88,7 @@
 <paragraph role="heading" id="par_idN106BB" xml-lang="en-US" level="2" l10n="NEW">JDBC Driver Class</paragraph>
 <paragraph role="paragraph" id="par_idN106BF" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_DRIVERCLASS">Enter the name of the JDBC driver.</ahelp></paragraph>
 <section id="classpath">
-<paragraph role="warning" id="par_id7953733" xml-lang="en-US" l10n="NEW">Before you can use a JDBC driver, you need to add its class path. Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME</emph>
-<emph>- Java</emph>, and click the <emph>Class Path</emph> button. After you add the path information, restart <item type="productname">%PRODUCTNAME</item>.</paragraph>
+<paragraph role="warning" id="par_id7953733" xml-lang="en-US" l10n="NEW">Before you can use a JDBC driver, you need to add its class path. Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - Java</emph>, and click the <emph>Class Path</emph> button. After you add the path information, restart <item type="productname">%PRODUCTNAME</item>.</paragraph>
 </section>
 <!-- removed HID 852251216 -->
 <paragraph role="heading" id="par_idN106CE" xml-lang="en-US" level="2" l10n="NEW">Test Class<comment>UFI: may be Test Connection - both strings are in spec</comment></paragraph>
