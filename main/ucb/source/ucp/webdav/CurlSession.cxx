@@ -567,7 +567,7 @@ int CurlSession::verifyCertificateChain (
         else
         {
             // For all other we have to ask the user.
-            m_aLogger.log( LogLevel::FINE, "Promping user to validate the certificate" );
+            m_aLogger.log( LogLevel::FINE, "Prompting user to validate the certificate" );
         }
     }
 
