@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,19 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Soft" script:language="StarBasic">Option Explicit
-REM  *****  BASIC  *****
+REM ***** BASIC *****
 
 
 Sub CreateStyleEnumeration()
@@ -45,7 +45,7 @@ Dim Stylename as String
 		If CheckFormatType(oStyle) Then
 			If Not bAddToListBox Then
 				AddSingleItemToListbox(DialogModel.lstSelection, Stylename)
-			Else 
+			Else
 				SwitchNumberFormat(ostyle, oFormats, sEuroSign)
 			End If
 			StyleIndex = StyleIndex + 1
@@ -117,7 +117,7 @@ Dim CellCountString as String
 		oRanges = osheet.CellFormatRanges.CreateEnumeration
 		While oRanges.hasMoreElements
 			oRange = oRanges.NextElement
-			If oRange.getPropertyState(&quot;NumberFormat&quot;) = 1 Then	
+			If oRange.getPropertyState(&quot;NumberFormat&quot;) = 1 Then
 				If oRange.CellStyle = CurStyleName Then
 					oRangeAddress = oRange.RangeAddress
 					RangeName = RetrieveRangeNamefromAddress(oRange)
@@ -128,7 +128,7 @@ Dim CellCountString as String
 		Wend
 	Next i
 	If StyleCellCount &gt; 0 Then
-		TotCellCount = TotCellCount + StyleCellCount	
+		TotCellCount = TotCellCount + StyleCellCount
 		RangeString = RTrimStr(RangeString,&quot;,&quot;)
 		RangeString = RangeString &amp; &quot;&lt;/RANGES&gt;&quot;
 		CellCountString = &quot;&lt;CELLCOUNT&gt;&quot; &amp; StyleCellCount &amp; &quot;&lt;/CELLCOUNT&quot;
@@ -137,7 +137,7 @@ Dim CellCountString as String
 	End If
 	AssignString = ReplaceString(AssignString, &quot;&lt;DEFINED&gt;TRUE&lt;/DEFINED&gt;&quot;, &quot;&lt;DEFINED&gt;FALSE&lt;/DEFINED&gt;&quot;)
 	StyleRangeAssignmentList(n)	= AssignString
-End Sub				
+End Sub
 
 
 &apos; deletes a styletemplate from the Collection that selects the ranges
@@ -156,12 +156,12 @@ Dim MaxIndex as Integer
 	For i = 0 To MaxIndex
 		RangeName = StyleRangeList(i)
 		If oSelRanges.HasbyName(RangeName) Then
-			oSelRanges.RemovebyName(RangeName)										
+			oSelRanges.RemovebyName(RangeName)
 		End If
 	Next i
 	AssignString = ReplaceString(AssignString, &quot;&lt;SELECTED&gt;FALSE&lt;/SELECTED&gt;&quot;, &quot;&lt;SELECTED&gt;TRUE&lt;/SELECTED&gt;&quot;)
 	StyleRangeAssignmentList(n) = AssignString
-End Sub		
+End Sub
 
 
 Function RetrieveRangeNamefromAddress(oRange as Object) as String
@@ -169,7 +169,7 @@ Dim Rangename as String
 Dim oAddressRanges as Object
 	oAddressRanges = oDocument.createInstance(&quot;com.sun.star.sheet.SheetCellRanges&quot;)
 	oAddressRanges.InsertbyName(&quot;&quot;,oRange)
-	Rangename = oAddressRanges.RangeAddressesasString	
+	Rangename = oAddressRanges.RangeAddressesasString
 &apos;	Msgbox &quot;Adresse: &quot; &amp; oRangeAddress.StartColumn &amp; &quot; ; &quot; &amp; oRangeAddress.EndColumn &amp; &quot; ; &quot; &amp; oRangeAddress.StartRow &amp; &quot; ; &quot; &amp; oRangeAddress.EndRow &amp; chr(13) &amp; RangeName
 &apos;	oAddressRanges.RemovebyName(RangeName)
 	RetrieveRangeNamefromAddress = Rangename
@@ -177,7 +177,7 @@ End Function
 
 
 &apos; creates a sheet object from an according sectionname
-Function RetrieveSheetoutofRangeName(TableText as String)			
+Function RetrieveSheetoutofRangeName(TableText as String)
 Dim DescriptionList() as String
 Dim SheetName as String
 Dim MaxIndex as integer
@@ -191,7 +191,7 @@ End Function
 
 
 &apos; creates a rangeobject from an according rangename
-Function RetrieveRangeoutofRangeName(TableText as String) 
+Function RetrieveRangeoutofRangeName(TableText as String)
 	oSheet = RetrieveSheetoutofRangeName(TableText)
 	oRange = oSheet.GetCellRangebyName(TableText)
 	RetrieveRangeoutofRangeName = oRange
@@ -238,7 +238,7 @@ Dim MaxIndex as Integer
 		SwitchNumberFormat(ostyle, oFormats, sEuroSign)
 		StyleRangeAssignmentList(n) = &quot;&quot;
 		l = GetItemPos(oSelListBox.Model, CurStyleName)
-		oSelListbox.RemoveItems(l,1)			
+		oSelListbox.RemoveItems(l,1)
 	Next
 End Sub
 
