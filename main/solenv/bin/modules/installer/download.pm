@@ -1078,7 +1078,7 @@ sub put_windows_productversion_into_template
 }
 
 ##################################################################
-# Windows: Including the product version into nsi template
+# Windows: Including the product path into nsi template
 ##################################################################
 
 sub put_windows_productpath_into_template
