@@ -33,23 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154136">
 <bookmark_value>Wait statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3154136" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03130600.xhp" name="Wait Statement [Runtime]">Wait Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3149236" xml-lang="en-US" l10n="U" oldref="2">Interrupts the program execution for the amount of time that you specify in milliseconds.</paragraph>
+<paragraph role="heading" id="hd_id3154136" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03130600.xhp" name="Wait Statement [Runtime]">Wait Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149236" xml-lang="en-US" l10n="U">Interrupts the program execution for the amount of time that you specify in milliseconds.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3143229" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="4">Wait millisec</paragraph>
-<paragraph role="heading" id="hd_id3148943" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3154924" xml-lang="en-US" l10n="U" oldref="6">
-<emph>millisec:</emph> Numeric expression that contains the amount of time (in milliseconds) to wait before the program is executed.</paragraph>
+<paragraph role="heading" id="hd_id3143229" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U">Wait millisec</paragraph>
+<paragraph role="heading" id="hd_id3148943" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3154924" xml-lang="en-US" l10n="U"><emph>millisec:</emph> Numeric expression that contains the amount of time (in milliseconds) to wait before the program is executed.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3150541" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="8">Sub ExampleWait</paragraph>
-<paragraph role="paragraph" id="par_id3154367" xml-lang="en-US" l10n="U" oldref="9">Dim lTick As Long</paragraph>
-<paragraph role="paragraph" id="par_id3154909" xml-lang="en-US" l10n="U" oldref="10">lTick = GetSystemTicks()</paragraph>
-<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U" oldref="11">wait 2000</paragraph>
-<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U" oldref="12">lTick = (GetSystemTicks() - lTick)</paragraph>
-<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="13">MsgBox "" &amp; lTick &amp; " Ticks" ,0,"The pause lasted"</paragraph>
-<paragraph role="paragraph" id="par_id3148922" xml-lang="en-US" l10n="U" oldref="14">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3150541" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U">Sub ExampleWait</paragraph>
+<paragraph role="paragraph" id="par_id3154367" xml-lang="en-US" l10n="U">Dim lTick As Long</paragraph>
+<paragraph role="paragraph" id="par_id3154909" xml-lang="en-US" l10n="U">lTick = GetSystemTicks()</paragraph>
+<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U">wait 2000</paragraph>
+<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U">lTick = (GetSystemTicks() - lTick)</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U">MsgBox "" &amp; lTick &amp; " Ticks" ,0,"The pause lasted"</paragraph>
+<paragraph role="paragraph" id="par_id3148922" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>
