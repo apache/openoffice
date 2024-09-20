@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,19 +7,17 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
-
-
 
 $(eval $(call gb_AllLangResTarget_AllLangResTarget,sw))
 
@@ -103,8 +101,8 @@ $(eval $(call gb_SrsTarget_add_files,sw/res,\
 	sw/source/ui/dialog/wordcountdialog.src \
 	sw/source/ui/dochdl/dochdl.src \
 	sw/source/ui/dochdl/selglos.src \
-    sw/source/ui/docvw/annotation.src \
-    sw/source/ui/docvw/access.src \
+	sw/source/ui/docvw/annotation.src \
+	sw/source/ui/docvw/access.src \
 	sw/source/ui/docvw/docvw.src \
 	sw/source/ui/envelp/envelp.src \
 	sw/source/ui/envelp/envfmt.src \
@@ -181,3 +179,5 @@ $(eval $(call gb_SrsTarget_add_files,sw/res,\
 	sw/source/ui/web/web.src \
 	sw/source/ui/wrtsh/wrtsh.src \
 ))
+
+# vim: set noet sw=4 ts=4:

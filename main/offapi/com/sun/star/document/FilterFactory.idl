@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef __com_sun_star_document_FilterFactory_idl__
 #define __com_sun_star_document_FilterFactory_idl__
@@ -65,7 +64,7 @@ published service FilterFactory
     /** factory interface to create and initialize filter components.
 
         <p>
-        <strong>Current behaviour</strong><p>
+        <strong>Current behavior</strong><p>
         The methods createInstance() or createInstanceWithArguments() of this interface must be
         called with an internal type name!. This name is used internally to search a suitable
         (mostly the default) filter for this type then. The found filter will be created, initialized
@@ -91,7 +90,7 @@ published service FilterFactory
         </p>
 
         <p>
-        <strong>Proposed behaviour</strong><p>
+        <strong>Proposed behavior</strong><p>
         Searching of a suitable filter for a given internal type name, must be done by the new interface
         <type scope="com::sun::star::container">XContainerQuery</type>, available on this factory too.
         The factory interface can be used to create filter components by its internal filter name only.
@@ -99,7 +98,7 @@ published service FilterFactory
 
         <p>
         <strong>How it can be distinguished?</strong><p>
-        The new prosposed implementation will throw an <type scope="com::sun::star::container">NoSuchElementException</type>
+        The new proposed implementation will throw an <type scope="com::sun::star::container">NoSuchElementException</type>
         if the first parameter of createInstance() or createInstanceWithArguments() does not match to a valid container (means
         filter) item. Further it will throw an <type scope="com::sun::star::lang">IllegalArgumentException</type> if the optional
         parameter "FilterName" could not be detected inside the argument list of call createInstanceWithArguments().
@@ -130,7 +129,7 @@ published service FilterFactory
         Every container item is specified as a set of properties and will be
         represented by a sequence< <type scope="com::sun::star::beans">PropertyValue</type> > structure.
         Follow properties are supported:
-        (But note: not all of them must be present everytimes!)
+        (But note: not all of them must be present every time!)
         </p>
         <table border=1>
             <tr>
@@ -160,7 +159,7 @@ published service FilterFactory
                 <td><em>Type</em></td>
                 <td>[string]</td>
                 <td>Every filter is registered for a type. This value contains the internal name of it.
-                    (see service <type>TypeDetection</type> for further informations)</td>
+                    (see service <type>TypeDetection</type> for further information)</td>
             </tr>
             <tr>
                 <td><em>DocumentService</em></td>
@@ -203,7 +202,7 @@ published service FilterFactory
         <p>
         Note:<br>
         All elements of this container will be addressed by its internal name,
-        and it must be an unambigous value.
+        and it must be an unambiguous value.
         </p>
      */
     interface com::sun::star::container::XNameAccess;
@@ -227,13 +226,13 @@ published service FilterFactory
     /** can be used to perform container changes.
 
         <p>
-        Because the complexness of such configuration set can be very high,
+        Because the complexity of such configuration set can be very high,
         it does not seem very useful to update the underlying configuration layer
         on every container change request immediately. Another strategy can be to
         make all changes (adding/changing/removing of items) and call flush at the end.
         That will validate the whole container and reject inconsistent data sets.
         Only in case all made changes was correct, they will be written back to the
-        configuration. Further this interface provides the possibelity, that interested
+        configuration. Further this interface provides the possibility, that interested
         changes listener can be registered too.
         </p>
      */

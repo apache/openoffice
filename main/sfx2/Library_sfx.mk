@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,19 +7,17 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
-
-
 
 $(eval $(call gb_Library_Library,sfx))
 
@@ -275,7 +273,7 @@ $(eval $(call gb_Library_add_exception_objects,sfx,\
 	sfx2/source/view/viewsh \
 ))
 
-# i116803: crash in impress when
+# i116803: crash in Impress when
 # "opening stylist, select graphic style, select modify from context menu, cancel dialog, close stylist"
 # only on unxlngi6 and unxlngi6.pro platform
 ifeq ($(OS),LINUX)
@@ -308,12 +306,12 @@ endif
 
 ifeq ($(OS),OS2)
 $(eval $(call gb_Library_add_exception_objects,sfx,\
-    sfx2/source/appl/shutdowniconOs2 \
+	sfx2/source/appl/shutdowniconOs2 \
 ))
 endif
 ifeq ($(OS),MACOSX)
 $(eval $(call gb_Library_add_objcxxobjects,sfx,\
-    sfx2/source/appl/shutdowniconaqua \
+	sfx2/source/appl/shutdowniconaqua \
 ))
 $(eval $(call gb_Library_add_linked_libs,sfx,\
 	objc \
@@ -350,5 +348,5 @@ $(eval $(call gb_Library_add_cxxobjects,sfx,\
 ))
 
 endif
-# vim: set noet sw=4 ts=4:
 
+# vim: set noet sw=4 ts=4:
