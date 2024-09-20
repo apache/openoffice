@@ -23,61 +23,39 @@
 package clitest;
 
 
-import complexlib.ComplexTestCase;
 import java.io.*;
 
-public class CLITest extends ComplexTestCase
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+
+public class CLITest
 {
-    public String[] getTestMethodNames()
+    @Test
+    public void runCLITests() throws Exception
     {
-        // TODO think about trigger of sub-tests from outside
-        return new String[]
-        {
-            "runCLITests"
-        };
-    }
+        String testProgram = System.getProperty("cli_test", "");
+        if (testProgram.length() == 0)
+            fail("Check the make file. Java must be called with -Dcli_test=pathtoexe");
 
-    public void runCLITests()
-    {
-        try
-        {
-            String testProgram = System.getProperty("cli_test", "");
-            if (testProgram.length() == 0)
-                failed("Check the make file. Java must be called with -Dcli_test=pathtoexe");
+        String arg1 = System.getProperty("cli_test_arg", "");
+        if (arg1.length() == 0)
+            fail("Check the make file. Java must be called with " +
+                 "-Dcli_test_arg=path_to_bootstrap_ini");
+        String[] cmdarray = new String[] {testProgram, arg1}; 
 
-            String arg1 = System.getProperty("cli_test_arg", "");
-            if (arg1.length() == 0)
-                failed("Check the make file. Java must be called with " +
-                       "-Dcli_test_arg=path_to_bootstrap_ini");
-            String[] cmdarray = new String[] {testProgram, arg1}; 
+        Process proc = null;
+        Reader outReader;
+        Reader errReader;
 
-            Process proc = null;
-            Reader outReader;
-            Reader errReader;
-            try{
-                
-                proc = Runtime.getRuntime().exec(cmdarray);
-                outReader = new Reader(proc.getInputStream());
-                errReader = new Reader(proc.getErrorStream());
-                
-                
-            }
-            catch(Exception e)
-            {
-                System.out.println("\n ###" +  e.getMessage() + "\n");
-
-            }
-//           System.out.println("### waiting for " + testProgram);
-            proc.waitFor();
-//            System.out.println("### " + testProgram + " finished");
-            int retVal = proc.exitValue();
-            if (retVal != 0)
-                failed("CLI test failed.");
-        } catch( java.lang.Exception e)
-        {
-            failed("Unexpected exception.");
-        }
-        
+        proc = Runtime.getRuntime().exec(cmdarray);
+        outReader = new Reader(proc.getInputStream());
+        errReader = new Reader(proc.getErrorStream());
+//       System.out.println("### waiting for " + testProgram);
+        proc.waitFor();
+        int retVal = proc.exitValue();
+        System.out.println("### " + testProgram + " finished with exit code " + retVal);
+        assertTrue("CLI test failed.", retVal == 0);
     }
 }
 

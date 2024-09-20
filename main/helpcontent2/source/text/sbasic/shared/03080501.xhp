@@ -33,23 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3159201">
 <bookmark_value>Fix function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3159201" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03080501.xhp" name="Fix Function [Runtime]">Fix Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3149346" xml-lang="en-US" l10n="U" oldref="2">Returns the integer value of a numeric expression by removing the fractional part of the number.</paragraph>
+<paragraph role="heading" id="hd_id3159201" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03080501.xhp" name="Fix Function [Runtime]">Fix Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149346" xml-lang="en-US" l10n="U">Returns the integer value of a numeric expression by removing the fractional part of the number.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3155419" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3156152" xml-lang="en-US" l10n="U" oldref="4">Fix (Expression)</paragraph>
-<paragraph role="heading" id="hd_id3154923" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3148947" xml-lang="en-US" l10n="U" oldref="6">Double</paragraph>
-<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Expression:</emph> Numeric expression that you want to return the integer value for.</paragraph>
+<paragraph role="heading" id="hd_id3155419" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3156152" xml-lang="en-US" l10n="U">Fix (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3154923" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3148947" xml-lang="en-US" l10n="U">Double</paragraph>
+<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U"><emph>Expression:</emph> Numeric expression that you want to return the integer value for.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3150447" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="10">sub ExampleFix</paragraph>
-<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="11">Print Fix(3.14159) REM returns 3.</paragraph>
-<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U" oldref="12">Print Fix(0) REM returns 0.</paragraph>
-<paragraph role="paragraph" id="par_id3145786" xml-lang="en-US" l10n="CHG" oldref="13">Print Fix(-3.14159) REM returns -3.</paragraph>
-<paragraph role="paragraph" id="par_id3153188" xml-lang="en-US" l10n="U" oldref="14">end sub</paragraph>
+<paragraph role="heading" id="hd_id3150447" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U">sub ExampleFix</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U">Print Fix(3.14159) REM returns 3.</paragraph>
+<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U">Print Fix(0) REM returns 0.</paragraph>
+<paragraph role="paragraph" id="par_id3145786" xml-lang="en-US" l10n="CHG">Print Fix(-3.14159) REM returns -3.</paragraph>
+<paragraph role="paragraph" id="par_id3153188" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

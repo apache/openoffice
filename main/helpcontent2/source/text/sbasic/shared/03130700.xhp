@@ -33,22 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3147143">
 <bookmark_value>GetSystemTicks function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3147143" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03130700.xhp" name="GetSystemTicks Function [Runtime]">GetSystemTicks Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3153750" xml-lang="en-US" l10n="U" oldref="2">Returns the number of system ticks provided by the operating system. You can use this function to optimize certain processes.</paragraph>
+<paragraph role="heading" id="hd_id3147143" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03130700.xhp" name="GetSystemTicks Function [Runtime]">GetSystemTicks Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153750" xml-lang="en-US" l10n="U">Returns the number of system ticks provided by the operating system. You can use this function to optimize certain processes.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3147242" xml-lang="en-US" l10n="U" oldref="4">GetSystemTicks()</paragraph>
-<paragraph role="heading" id="hd_id3149233" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3149762" xml-lang="en-US" l10n="U" oldref="6">Long</paragraph>
+<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3147242" xml-lang="en-US" l10n="U">GetSystemTicks()</paragraph>
+<paragraph role="heading" id="hd_id3149233" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3149762" xml-lang="en-US" l10n="U">Long</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3156152" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3148943" xml-lang="en-US" l10n="U" oldref="8">Sub ExampleWait</paragraph>
-<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U" oldref="9">Dim lTick As Long</paragraph>
-<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U" oldref="10">lTick = GetSystemTicks()</paragraph>
-<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="11">wait 2000</paragraph>
-<paragraph role="paragraph" id="par_id3149655" xml-lang="en-US" l10n="U" oldref="12">lTick = (GetSystemTicks() - lTick)</paragraph>
-<paragraph role="paragraph" id="par_id3154938" xml-lang="en-US" l10n="U" oldref="13">MsgBox "" &amp; lTick &amp; " Ticks" ,0,"The pause lasted"</paragraph>
-<paragraph role="paragraph" id="par_id3150542" xml-lang="en-US" l10n="U" oldref="14">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3156152" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3148943" xml-lang="en-US" l10n="U">Sub ExampleWait</paragraph>
+<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U">Dim lTick As Long</paragraph>
+<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U">lTick = GetSystemTicks()</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U">wait 2000</paragraph>
+<paragraph role="paragraph" id="par_id3149655" xml-lang="en-US" l10n="U">lTick = (GetSystemTicks() - lTick)</paragraph>
+<paragraph role="paragraph" id="par_id3154938" xml-lang="en-US" l10n="U">MsgBox "" &amp; lTick &amp; " Ticks" ,0,"The pause lasted"</paragraph>
+<paragraph role="paragraph" id="par_id3150542" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>

@@ -33,23 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153894">
 <bookmark_value>ConvertFromURL function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153894" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120313.xhp" name="ConvertFromURL Function [Runtime]">ConvertFromURL Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3147226" xml-lang="en-US" l10n="U" oldref="2">Converts a file URL to a system file name.</paragraph>
+<paragraph role="heading" id="hd_id3153894" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03120313.xhp" name="ConvertFromURL Function [Runtime]">ConvertFromURL Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3147226" xml-lang="en-US" l10n="U">Converts a file URL to a system file name.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3143267" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3154142" xml-lang="en-US" l10n="U" oldref="4">ConvertFromURL(filename)</paragraph>
-<paragraph role="heading" id="hd_id3159157" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
-<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3156023" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Filename:</emph> A file name as a string.</paragraph>
+<paragraph role="heading" id="hd_id3143267" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3154142" xml-lang="en-US" l10n="U">ConvertFromURL(filename)</paragraph>
+<paragraph role="heading" id="hd_id3159157" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U">String</paragraph>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3156023" xml-lang="en-US" l10n="U"><emph>Filename:</emph> A file name as a string.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3148664" xml-lang="en-US" l10n="U" oldref="10">systemFile$ = "c:\folder\mytext.txt"</paragraph>
-<paragraph role="paragraph" id="par_id3150541" xml-lang="en-US" l10n="U" oldref="11">url$ = ConvertToURL( systemFile$ )</paragraph>
-<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U" oldref="12">print url$</paragraph>
-<paragraph role="paragraph" id="par_id3154367" xml-lang="en-US" l10n="U" oldref="13">systemFileAgain$ = ConvertFromURL( url$ )</paragraph>
-<paragraph role="paragraph" id="par_id3153194" xml-lang="en-US" l10n="U" oldref="14">print systemFileAgain$</paragraph>
+<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3148664" xml-lang="en-US" l10n="U">systemFile$ = "c:\folder\mytext.txt"</paragraph>
+<paragraph role="paragraph" id="par_id3150541" xml-lang="en-US" l10n="U">url$ = ConvertToURL( systemFile$ )</paragraph>
+<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U">print url$</paragraph>
+<paragraph role="paragraph" id="par_id3154367" xml-lang="en-US" l10n="U">systemFileAgain$ = ConvertFromURL( url$ )</paragraph>
+<paragraph role="paragraph" id="par_id3153194" xml-lang="en-US" l10n="U">print systemFileAgain$</paragraph>
 </body>
 </helpdocument>

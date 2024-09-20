@@ -676,6 +676,16 @@ void SvStream::ResetError()
 |*
 *************************************************************************/
 
+sal_Bool SvStream::ReadByteStringLine( ::rtl::OUString& rStr, rtl_TextEncoding eSrcCharSet )
+{
+    sal_Bool bRet;
+    ::rtl::OStringBuffer stringBuffer;
+
+    bRet = ReadLine( stringBuffer );
+    rStr = ::rtl::OStringToOUString( stringBuffer.makeStringAndClear(), eSrcCharSet );
+    return bRet;
+}
+
 sal_Bool SvStream::ReadByteStringLine( String& rStr, rtl_TextEncoding eSrcCharSet )
 {
     sal_Bool bRet;
@@ -684,6 +694,79 @@ sal_Bool SvStream::ReadByteStringLine( String& rStr, rtl_TextEncoding eSrcCharSe
     bRet = ReadLine(aStr);
     rStr = UniString( aStr, eSrcCharSet );
     return bRet;
+}
+
+sal_Bool SvStream::ReadLine( ::rtl::OStringBuffer& rStr )
+{
+    sal_Char    buf[256+1];
+    sal_Bool    bEnd = sal_False;
+    sal_Size    nOldFilePos = Tell();
+    sal_Char    c = 0;
+    sal_Size    nTotalLen = 0;
+
+    rStr.setLength( 0 );
+    while( !bEnd && !GetError() )   // !!! do not test for EOF,
+                                    // !!! because we read in blocks
+    {
+        sal_uInt16 nLen = (sal_uInt16)Read( buf, sizeof(buf)-1 );
+        if ( !nLen )
+        {
+            if ( rStr.getLength() == 0 )
+            {
+                // the very first block read failed -> abort
+                bIsEof = sal_True;
+                return sal_False;
+            }
+            else
+                break;
+        }
+
+        sal_uInt16 j, n;
+        for( j = n = 0; j < nLen ; ++j )
+        {
+            c = buf[j];
+            if ( c == '\n' || c == '\r' )
+            {
+                bEnd = sal_True;
+                break;
+            }
+            // erAck 26.02.01: Old behavior was no special treatment of '\0'
+            // character here, but a following rStr+=c did ignore it. Is this
+            // really intended? Or should a '\0' better terminate a line?
+            // The nOldFilePos stuff wasn't correct then anyways.
+            if ( c )
+            {
+                if ( n < j )
+                    buf[n] = c;
+                ++n;
+            }
+        }
+        if ( n )
+            rStr.append( buf, n );
+        nTotalLen += j;
+    }
+
+    if ( !bEnd && !GetError() && rStr.getLength() )
+        bEnd = sal_True;
+
+    nOldFilePos += nTotalLen;
+    if( Tell() > nOldFilePos )
+        nOldFilePos++;
+    Seek( nOldFilePos );  // seek because of the above BlockRead!
+
+    if ( bEnd && (c=='\r' || c=='\n') )  // Special treatment of DOS files
+    {
+        char cTemp;
+        sal_Size nLen = Read((char*)&cTemp , sizeof(cTemp) );
+        if ( nLen ) {
+            if( cTemp == c || (cTemp != '\n' && cTemp != '\r') )
+                Seek( nOldFilePos );
+        }
+    }
+
+    if ( bEnd )
+        bIsEof = sal_False;
+    return bEnd;
 }
 
 sal_Bool SvStream::ReadLine( ByteString& rStr )

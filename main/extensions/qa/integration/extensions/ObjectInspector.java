@@ -33,13 +33,34 @@ import com.sun.star.beans.*;
 
 import integration.extensions.Frame;
 
-public class ObjectInspector extends complexlib.ComplexTestCase
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
+public class ObjectInspector
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
     private XComponentContext       m_context;
     private XMultiServiceFactory    m_orb;
     private Frame                   m_desktop;
 
     final private String    m_inspectorFrameName = new String( "ObjectInspector" );
+
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception
+    {
+        officeConnection.tearDown();
+    }
 
     /** Creates a new instance of ValueBinding */
     public ObjectInspector()
@@ -47,35 +68,24 @@ public class ObjectInspector extends complexlib.ComplexTestCase
     }
 
     /* ------------------------------------------------------------------ */
-    public String[] getTestMethodNames()
-    {
-        return new String[] {
-            "interactiveObjectInspector"
-        };
-    }
-
-    /* ------------------------------------------------------------------ */
-    public String getTestObjectName()
-    {
-        return "Test Skeleton";
-    }
-
-    /* ------------------------------------------------------------------ */
+    @Before
     public void before() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        m_orb = (XMultiServiceFactory)param.getMSF();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
         m_context = (XComponentContext)UnoRuntime.queryInterface( XComponentContext.class,
                 ((XPropertySet)UnoRuntime.queryInterface( XPropertySet.class, m_orb )).getPropertyValue( "DefaultContext" ) );
         m_desktop = new Frame( m_orb.createInstance( "com.sun.star.frame.Desktop" ) );
     }
 
     /* ------------------------------------------------------------------ */
+    @After
     public void after() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         closeExistentInspector();
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void interactiveObjectInspector() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         closeExistentInspector();
@@ -142,7 +152,7 @@ public class ObjectInspector extends complexlib.ComplexTestCase
             }
             catch( com.sun.star.util.CloseVetoException e )
             {
-                failed( "could not close the existent inspector frame" );
+                fail( "could not close the existent inspector frame" );
             }
         }
     }

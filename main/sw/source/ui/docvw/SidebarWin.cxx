@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include "precompiled_sw.hxx"
 
@@ -572,7 +570,7 @@ void SwSidebarWin::SetPosAndSize()
             }
             SwSidebarWin* pWin = GetTopReplyNote();
             if ( pWin && pWin->Anchor() )
-            {        
+            {
                 pWin->Anchor()->SetAnchorState(AS_END);
             }
         }
@@ -834,7 +832,7 @@ void SwSidebarWin::SetColor(Color aColorDark,Color aColorLight, Color aColorAnch
         AllSettings aSettings2 = mpVScrollbar->GetSettings();
         StyleSettings aStyleSettings2 = aSettings2.GetStyleSettings();
         aStyleSettings2.SetButtonTextColor(Color(0,0,0));
-        aStyleSettings2.SetCheckedColor(mColorLight); //hintergund
+        aStyleSettings2.SetCheckedColor(mColorLight); // background
         aStyleSettings2.SetShadowColor(mColorAnchor);
         aStyleSettings2.SetFaceColor(mColorDark);
         aSettings2.SetStyleSettings(aStyleSettings2);
@@ -978,11 +976,11 @@ void SwSidebarWin::ToggleInsMode()
 {
     if (!mrView.GetWrtShell().IsRedlineOn())
     {
-        //change outliner
+        // change outliner
         mpOutlinerView->GetEditView().SetInsertMode(!mpOutlinerView->GetEditView().IsInsertMode());
-        //change documnet
+        // change document
         mrView.GetWrtShell().ToggleInsMode();
-        //update statusbar
+        // update statusbar
         SfxBindings &rBnd = mrView.GetViewFrame()->GetBindings();
         rBnd.Invalidate(SID_ATTR_INSERT);
         rBnd.Update(SID_ATTR_INSERT);
@@ -1214,8 +1212,8 @@ void SwSidebarWin::SetViewState(ViewState bViewState)
                 SwSidebarWin* pWin = GetTopReplyNote();
                 // --> OD 2010-06-03 #i111964#
                 if ( pWin && pWin->Anchor() )
-                // <--                        
-                {        
+                // <--
+                {
                     pWin->Anchor()->SetAnchorState(AS_END);
                 }
                 mpAnchor->setLineSolid(true);
@@ -1276,7 +1274,7 @@ void SwSidebarWin::SetViewState(ViewState bViewState)
                 }
             }
             if ( mpShadow )
-            {        
+            {
                 mpShadow->SetShadowState(SS_NORMAL);
             }
             break;
@@ -1432,7 +1430,7 @@ void SwRedComment::ActivatePostIt()
 
     // do we want the redline selected?
     // otherwise, SwRedComment::ActivatePostIt() as well as SwRedComment::DeactivatePostIt()
-    // can be thrown out completly
+    // can be thrown out completely
     DocView()->GetDocShell()->GetWrtShell()->GotoRedline(
         DocView()->GetDocShell()->GetWrtShell()->FindRedlineOfData(pRedline->GetRedlineData()),true);
 }
@@ -1483,3 +1481,5 @@ bool SwRedComment::IsProtected()
     return SwSidebarWin::IsProtected() || pRedline->Start()->nNode.GetNode().GetTxtNode()->IsInProtectSect();
 }
 */
+
+/* vim: set noet sw=4 ts=4: */

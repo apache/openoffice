@@ -269,7 +269,7 @@ public class Merger
 
         // Attention!
         // If the package seem to be empty, it make no sense to generate a corresponding
-        // xml file. We should suppress writing of this file on disk completly ...
+        // xml file. We should suppress writing of this file on disk completely ...
         if (nItemCount < 1)
         {
             m_aLog.setWarning("Package is empty and will not result into a xml file on disk!? Please check configuration file.");
@@ -278,7 +278,7 @@ public class Merger
         m_aLog.setGlobalInfo("package contains "+nItemCount+" items");
 
         java.io.File aPackage = new File(sPackage);
-        m_aLog.setGlobalInfo("write temp package \""+aPackage.getPath()); // TODO encoding must be readed from the configuration
+        m_aLog.setGlobalInfo("write temp package \""+aPackage.getPath()); // TODO encoding must be read from the configuration
         FileHelper.writeEncodedBufferToFile(aPackage, "UTF-8", false, sBuffer); // check for success is done inside this method!
     }
 
@@ -308,7 +308,7 @@ public class Merger
         // special mode for generating language packs.
         // In such case we must live with some missing fragment files.
         // Reason behind; Not all filters are really localized.
-        // But we dont use a different fragment list. We try to locate
+        // But we don't use a different fragment list. We try to locate
         // any fragment file in its language-pack version ...
         boolean bHandleLanguagePacks = m_aCfg.getBoolean(PROP_LANGUAGEPACK, false);
         boolean bDebug               = m_aCfg.getBoolean(PROP_DEBUG       , false);

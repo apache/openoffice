@@ -817,7 +817,7 @@ void TableModel::removeColumns( sal_Int32 nIndex, sal_Int32 nCount )
 		{
 			TableModelNotifyGuard aGuard( this );
 
-			// clip removed columns to columns actually avalaible
+			// clip removed columns to columns actually available
 			if( (nIndex + nCount) > nColCount )
 				nCount = nColCount - nIndex;
 
@@ -885,7 +885,7 @@ void TableModel::removeColumns( sal_Int32 nIndex, sal_Int32 nCount )
 					}
 					else if( nColSpan > (nIndex - nCol) )
 					{
-						// current cells spans inside the removed columns, so adjust					
+						// current cells spans inside the removed columns, so adjust
 						const sal_Int32 nRemove = ::std::min( nCount, nCol + nColSpan - nIndex );
 						if( bUndo )
 							xCell->AddUndo();
@@ -993,7 +993,7 @@ void TableModel::removeRows( sal_Int32 nIndex, sal_Int32 nCount )
 		{
 			TableModelNotifyGuard aGuard( this );
 
-			// clip removed rows to rows actually avalaible
+			// clip removed rows to rows actually available
 			if( (nIndex + nCount) > nRowCount )
 				nCount = nRowCount - nIndex;
 
@@ -1046,7 +1046,7 @@ void TableModel::removeRows( sal_Int32 nIndex, sal_Int32 nCount )
 					}
 					else if( nRowSpan > (nIndex - nRow) )
 					{
-						// current cells spans inside the removed rows, so adjust					
+						// current cells spans inside the removed rows, so adjust
 						const sal_Int32 nRemove = ::std::min( nCount, nRow + nRowSpan - nIndex );
 						if( bUndo )
 							xCell->AddUndo();
@@ -1096,7 +1096,7 @@ TableColumnRef TableModel::getColumn( sal_Int32 nColumn ) const throw (IndexOutO
 
 // -----------------------------------------------------------------------------
 
-/** deletes rows and columns that are completly merged. Must be called between BegUndo/EndUndo! */
+/** deletes rows and columns that are completely merged. Must be called between BegUndo/EndUndo! */
 void TableModel::optimize()
 {
 	TableModelNotifyGuard aGuard( this );

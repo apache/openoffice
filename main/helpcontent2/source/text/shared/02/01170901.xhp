@@ -30,17 +30,17 @@
 </meta>
 <body>
 <section id="seite1">
-<paragraph role="heading" id="hd_id3154228" xml-lang="en-US" level="1" l10n="U" oldref="4"><link href="text/shared/02/01170901.xhp" name="Combo Box / List Box Wizard: Table Selection">Combo Box / List Box Wizard: Table Selection</link></paragraph>
-<paragraph role="paragraph" id="par_id3149716" xml-lang="en-US" l10n="U" oldref="5">Specifies a table from the available database tables that contains the data field whose content should be displayed as a list entry.</paragraph>
+<paragraph role="heading" id="hd_id3154228" xml-lang="en-US" level="1" l10n="U"><link href="text/shared/02/01170901.xhp" name="Combo Box / List Box Wizard: Table Selection">Combo Box / List Box Wizard: Table Selection</link></paragraph>
+<paragraph role="paragraph" id="par_id3149716" xml-lang="en-US" l10n="U">Specifies a table from the available database tables that contains the data field whose content should be displayed as a list entry.</paragraph>
 </section>
 <section id="howtoget">
 <embed href="text/shared/00/00040501.xhp#aupikomli1"/>
 </section>
-<paragraph role="paragraph" id="par_id3153114" xml-lang="en-US" l10n="U" oldref="8">For list boxes, a table that can be linked with the current form table is indicated. The link table must have at least one field in common with the table of the current form. This makes it possible to establish an unambiguous reference.</paragraph>
-<paragraph role="paragraph" id="par_id3155555" xml-lang="en-US" l10n="U" oldref="9">For combo boxes, there must be a relationship between the form table and the table containing the data to be displayed in the combo box.</paragraph>
+<paragraph role="paragraph" id="par_id3153114" xml-lang="en-US" l10n="U">For list boxes, a table that can be linked with the current form table is indicated. The link table must have at least one field in common with the table of the current form. This makes it possible to establish an unambiguous reference.</paragraph>
+<paragraph role="paragraph" id="par_id3155555" xml-lang="en-US" l10n="U">For combo boxes, there must be a relationship between the form table and the table containing the data to be displayed in the combo box.</paragraph>
 <!-- removed HID DBP_LISTBOX_RID_PAGE_LCW_CONTENTSELECTION_TABLE_LB_SELECTTABLE -->
-<paragraph role="heading" id="hd_id3147226" xml-lang="en-US" level="2" l10n="U" oldref="6">Table</paragraph>
-<paragraph role="paragraph" id="par_id3155338" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="DBP_LISTBOX_RID_PAGE_LCW_CONTENTSELECTION_TABLE_LB_SELECTTABLE">In the <emph>Table</emph> field, select the table containing the data field whose content should be displayed in the control field.</ahelp></paragraph>
-<paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U" oldref="10">The table given here appears in the <link href="text/shared/02/01170102.xhp" name="Control properties">Control properties</link> as an element of an SQL statement in the <emph>List Contents</emph> field.</paragraph>
+<paragraph role="heading" id="hd_id3147226" xml-lang="en-US" level="2" l10n="U">Table</paragraph>
+<paragraph role="paragraph" id="par_id3155338" xml-lang="en-US" l10n="U"><ahelp hid="DBP_LISTBOX_RID_PAGE_LCW_CONTENTSELECTION_TABLE_LB_SELECTTABLE">In the <emph>Table</emph> field, select the table containing the data field whose content should be displayed in the control field.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3159233" xml-lang="en-US" l10n="U">The table given here appears in the <link href="text/shared/02/01170102.xhp" name="Control properties">Control properties</link> as an element of an SQL statement in the <emph>List Contents</emph> field.</paragraph>
 </body>
 </helpdocument>

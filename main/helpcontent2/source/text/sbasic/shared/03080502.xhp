@@ -33,23 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153345">
 <bookmark_value>Int function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03080502.xhp" name="Int Function [Runtime]">Int Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3155420" xml-lang="en-US" l10n="U" oldref="2">Returns the integer portion of a number.</paragraph>
+<paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03080502.xhp" name="Int Function [Runtime]">Int Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3155420" xml-lang="en-US" l10n="U">Returns the integer portion of a number.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3147559" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U" oldref="4">Int (Number)</paragraph>
-<paragraph role="heading" id="hd_id3149670" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U" oldref="6">Double</paragraph>
-<paragraph role="heading" id="hd_id3149656" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3148797" xml-lang="en-US" l10n="CHG" oldref="8">
-<emph>Number:</emph> Any valid numeric expression.</paragraph>
+<paragraph role="heading" id="hd_id3147559" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3146795" xml-lang="en-US" l10n="U">Int (Number)</paragraph>
+<paragraph role="heading" id="hd_id3149670" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U">Double</paragraph>
+<paragraph role="heading" id="hd_id3149656" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148797" xml-lang="en-US" l10n="CHG"><emph>Number:</emph> Any valid numeric expression.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3148672" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="10">sub ExampleINT</paragraph>
-<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="CHG" oldref="11">Print Int(3.99) REM returns the value 3</paragraph>
-<paragraph role="paragraph" id="par_id3145787" xml-lang="en-US" l10n="CHG" oldref="12">Print Int(0) REM returns the value 0</paragraph>
-<paragraph role="paragraph" id="par_id3153143" xml-lang="en-US" l10n="CHG" oldref="13">Print Int(-3.14159) REM returns the value -4</paragraph>
-<paragraph role="paragraph" id="par_id3152578" xml-lang="en-US" l10n="U" oldref="14">end sub</paragraph>
+<paragraph role="heading" id="hd_id3148672" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U">sub ExampleINT</paragraph>
+<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="CHG">Print Int(3.99) REM returns the value 3</paragraph>
+<paragraph role="paragraph" id="par_id3145787" xml-lang="en-US" l10n="CHG">Print Int(0) REM returns the value 0</paragraph>
+<paragraph role="paragraph" id="par_id3153143" xml-lang="en-US" l10n="CHG">Print Int(-3.14159) REM returns the value -4</paragraph>
+<paragraph role="paragraph" id="par_id3152578" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

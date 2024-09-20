@@ -467,7 +467,7 @@ class VolumeInfo
 
 	VolumeInfo( VolumeInfo& );
 	
-	/** Assginment operator.
+	/** Assignment operator.
 	*/
 	
 	VolumeInfo& operator = ( VolumeInfo& );
@@ -910,7 +910,7 @@ class File: public FileBase
 
 	File( File& );
 	
-	/** Assginment operator.
+	/** Assignment operator.
 	*/
 	
 	File& operator = ( File& );

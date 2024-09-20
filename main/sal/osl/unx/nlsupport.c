@@ -250,8 +250,8 @@ static rtl_Locale * _parse_locale( const char * locale )
 /*
  * _nl_language_list[] is an array list of supported encodings. Because
  * we are using a binary search, the list has to be in ascending order.
- * We are comparing the encodings case insensitiv, so the list has
- * to be completly upper- , or lowercase.
+ * We are comparing the encodings case insensitive, so the list has
+ * to be completely upper- , or lowercase.
  */
 
 #if defined(SOLARIS)
@@ -801,7 +801,7 @@ rtl_TextEncoding osl_getTextEncodingFromLocale( rtl_Locale * pLocale )
         {
             const unsigned int members = sizeof( _iso_language_list ) / sizeof( _pair );
 
-            /* iso lang codes have 2 charaters */
+            /* iso lang codes have 2 characters */
             locale_buf[2] = '\0';
 
             language = _pair_search( locale_buf, _iso_language_list, members);

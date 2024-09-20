@@ -47,13 +47,10 @@
 #include "webdavprovider.hxx"
 
 
-#include <com/sun/star/xml/crypto/XSecurityEnvironment.hpp>
 #include <com/sun/star/logging/LogLevel.hpp>
 #include <com/sun/star/security/XCertificate.hpp>
 #include <com/sun/star/security/CertificateValidity.hpp>
 #include <com/sun/star/security/CertificateContainerStatus.hpp>
-#include <com/sun/star/security/CertificateContainer.hpp>
-#include <com/sun/star/security/XCertificateContainer.hpp>
 #include <com/sun/star/security/CertAltNameEntry.hpp>
 #include <com/sun/star/security/XSanExtension.hpp>
 #include <com/sun/star/ucb/Lock.hpp>
@@ -113,7 +110,7 @@ CurlSession::CurlSession(
     curl_easy_setopt( m_pCurl, CURLOPT_SSL_CTX_FUNCTION, Curl_SSLContextCallback );
     curl_easy_setopt( m_pCurl, CURLOPT_SSL_CTX_DATA, this );
 
-    // If a certificate's commmon name / alt name doesn't match the hostname we are
+    // If a certificate's common name / alt name doesn't match the hostname we are
     // connecting to, Curl will refuse to connect. Disable this, as we do that check
     // ourselves, and give the user the option of connecting anyway.
     //
@@ -130,6 +127,48 @@ CurlSession::CurlSession(
         curl_easy_setopt( m_pCurl, CURLOPT_DEBUGDATA, this );
         curl_easy_setopt( m_pCurl, CURLOPT_VERBOSE, 1L);
     }
+
+    // Create a certificate container.
+    if( !m_aContext.createComponent( "com.sun.star.security.CertificateContainer", m_xCertificateContainer ) )
+        throw DAVException( DAVException::DAV_SESSION_CREATE, rtl::OUString::createFromAscii( "Failed to create com.sun.star.security.CertificateContainer" ) );
+    uno::Reference< xml::crypto::XSEInitializer > xSEInitializer;
+    if( !m_aContext.createComponent( "com.sun.star.xml.crypto.SEInitializer", xSEInitializer ) )
+        throw DAVException( DAVException::DAV_SESSION_CREATE, rtl::OUString::createFromAscii( "Failed to create com.sun.star.xml.crypto.SEInitializer" ) );
+    m_xSecurityContext = xSEInitializer->createSecurityContext( rtl::OUString() );
+    if( m_xSecurityContext.is() )
+        m_xSecurityEnv = m_xSecurityContext->getSecurityEnvironment();
+    if ( ! m_xSecurityContext.is() || ! m_xSecurityEnv.is())
+        throw DAVException( DAVException::DAV_SESSION_CREATE, rtl::OUString::createFromAscii( "Failure creating security services for certificate verification" ) );
+
+    // Populate one nonsense certificate, which we won't ever really use, just to get Curl to initialize:
+    struct curl_blob blob;
+    blob.data = (void*)
+        "-----BEGIN CERTIFICATE-----\n"
+        "MIIC/zCCAeegAwIBAgIUQYFHL3Bv7alQBtXQWy9SXGusm5YwDQYJKoZIhvcNAQEL\n"
+        "BQAwDzENMAsGA1UEAwwEVEVTVDAeFw0yNDA0MjExNzU3MzdaFw0yNDA0MjIxNzU3\n"
+        "MzdaMA8xDTALBgNVBAMMBFRFU1QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\n"
+        "AoIBAQCZSXla2TE7GU6xOfie5uilpRf7KQflWcQRgwTCFhk0yzbsSPJYdqbuUqfx\n"
+        "k0pV9Sx8GIkvc7jKQBwS79T15qn6dAZOF40x/k2jEMq150oc/80+dqeNP2jWvxv7\n"
+        "FjgBKSiuGUaHldy6XU3NhrA9G1Ys2/yHQRXER1NTeknEzPiPlobRUk1sNR2Prc5r\n"
+        "0u6cdUWGhbDOKDV9jjvA/14jmaAK+vUqrzzAdiOHVrkglA5oyBKX0BUokRCa8jID\n"
+        "34tH9zeuvozA3xXCi8l9to+HOgT/n7LAGeOSnNPeSHC/xkwumt/rJ05tL9DXg6Ud\n"
+        "3Pjf8KZM+FWJsjoJkcwBR0P2Qh3FAgMBAAGjUzBRMB0GA1UdDgQWBBR7pCl5msAz\n"
+        "rGApirAQ+/tFuHl5kDAfBgNVHSMEGDAWgBR7pCl5msAzrGApirAQ+/tFuHl5kDAP\n"
+        "BgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBDJ1S51MKlafDAfFbU\n"
+        "DJcxw3JNHn+VxQuaQQpeeqLIn3rgKHRBV9eOTYHf8AMoCYdQfPs1z45vqBmcyrDw\n"
+        "LoXL6vlUbSLUuYFyfCaFup3bbh2lLozsLcD6bcvV07amX6V3u0ZOKpwqhg+k/IJd\n"
+        "cPVM8jYAnNZZYD6rMHWnW5ZgMFSzSj3Jyyaov/3zwixvFZdViBG+R2RmJZVgMiFP\n"
+        "PNxY3USKiHqdwZIszf3G63Ku0EYtFf3KN8YpoqSMDCDfjL0NhJOtkBUs5HL+4XfK\n"
+        "hToBqJojDMLFRdVIhPQX1LoPd92CUwhueIrYTikScAqY2TIwXpPH0kBjfrVDus8s\n"
+        "vPAk\n"
+        "-----END CERTIFICATE-----";
+    blob.len = strlen( (char*) blob.data ) + 1;
+    blob.flags = CURL_BLOB_COPY;
+    CURLcode rc;
+    rc = curl_easy_setopt( m_pCurl, CURLOPT_CAINFO_BLOB, &blob );
+    if( rc != CURLE_OK )
+        throw DAVException( DAVException::DAV_SESSION_CREATE, rtl::OUString::createFromAscii("Error initializing Curl certificate" ) );
+
     m_aLogger.log( LogLevel::INFO, "CurlSession::CurlSession with URL $1$",
         rtl::OUStringToOString( inUri, RTL_TEXTENCODING_UTF8 ).getStr() );
 }
@@ -333,29 +372,17 @@ CURLcode CurlSession::Curl_SSLContextCallback( CURL *, void *ssl_ctx, void *user
     CurlSession *session = static_cast<CurlSession*>( userptr );
     SSL_CTX *context = static_cast<SSL_CTX*>( ssl_ctx );
     SSL_CTX_set_app_data( context, session );
-    SSL_CTX_set_verify( context, SSL_VERIFY_PEER, OPENSSL_ValidateServerCertificate );
+    SSL_CTX_set_cert_verify_callback( context, OPENSSL_VerifyCertificate, session );
     return CURLE_OK;
 }
 
-int CurlSession::OPENSSL_ValidateServerCertificate( int preverify_ok, X509_STORE_CTX *x509_ctx )
+int CurlSession::OPENSSL_VerifyCertificate( X509_STORE_CTX *x509_ctx, void *arg )
 {
-    SSL *ssl = static_cast<SSL*> (
-        X509_STORE_CTX_get_ex_data( x509_ctx, SSL_get_ex_data_X509_STORE_CTX_idx() ) );
-    SSL_CTX *ssl_ctx = SSL_get_SSL_CTX( ssl );
-    CurlSession *session = static_cast<CurlSession*>( SSL_CTX_get_app_data( ssl_ctx ) );
-    int verifyOk = session->validateServerX509Certificate( x509_ctx, preverify_ok );
-    // When a certificate's verification fails within OpenSSL, yet passes from the
-    // SSL_CTX_set_verify() callback (ie. this function) (by returning 1),
-    // OpenSSL allows the connection to proceed, yet stores that last verification
-    // error and allows it to be retrieved using SSL_get_verify_result(3).
-    //
-    // Unfortunately, Curl calls SSL_get_verify_result(3) internally, and treats
-    // errors as terminal, disconnecting with an error even when we return 1 here.
-    // Therefore, to approve a certificate that OpenSSL would reject, we have to
-    // both return 1, and overwrite the X509_STORE_CTX's last error with X509_V_OK:
-    if ( verifyOk )
-        X509_STORE_CTX_set_error( x509_ctx, X509_V_OK );
-    return verifyOk;
+    CurlSession *session = static_cast<CurlSession*>( arg );
+    int verifyResult = session->verifyServerX509Certificate( x509_ctx );
+    // We have to both return 1 or 0, and set the X509_V_* error code with X509_STORE_CTX_set_error():
+    X509_STORE_CTX_set_error( x509_ctx, verifyResult );
+    return verifyResult == X509_V_OK ? 1 : 0;
 }
 
 static uno::Sequence< sal_Int8 > convertCertificateToAsn1Der( X509 *certificate )
@@ -373,94 +400,56 @@ static uno::Sequence< sal_Int8 > convertCertificateToAsn1Der( X509 *certificate 
         return uno::Sequence< sal_Int8 >();
 }
 
-int CurlSession::validateServerX509Certificate( X509_STORE_CTX *x509StoreContext, int verifyOk )
+int CurlSession::verifyServerX509Certificate( X509_STORE_CTX *x509StoreContext )
 {
-    X509 *serverCertificate = X509_STORE_CTX_get_current_cert( x509StoreContext );
-    int depth = X509_STORE_CTX_get_error_depth( x509StoreContext );
-    STACK_OF(X509) *chain =
-#if OPENSSL_VERSION_NUMBER >= 0x10100000L
-         X509_STORE_CTX_get0_chain( x509StoreContext );
-#else
-         X509_STORE_CTX_get_chain( x509StoreContext );
-#endif
+    X509 *serverCertificate = X509_STORE_CTX_get0_cert( x509StoreContext );
+    STACK_OF(X509) *chain = X509_STORE_CTX_get0_untrusted( x509StoreContext );
     
     std::vector< uno::Sequence< sal_Int8 > > asn1DerCertificates;
+    int verifyResult = X509_V_OK;
     if ( chain != NULL ) {
         int nCertificates = sk_X509_num( chain );
-        for ( int i = 0; i < nCertificates; i++ ) {
+        for ( int i = 0; i < nCertificates && verifyResult == X509_V_OK; i++ ) {
             X509 *certificate = sk_X509_value( chain, i );
             uno::Sequence< sal_Int8 > asn1DerCertificate = convertCertificateToAsn1Der( certificate );
-            if ( asn1DerCertificate.getLength() == 0 )
-                return 0;
-            asn1DerCertificates.push_back( asn1DerCertificate );
+            if( asn1DerCertificate.getLength() > 0 )
+                asn1DerCertificates.push_back( asn1DerCertificate );
+            else
+                verifyResult = X509_V_ERR_UNSPECIFIED;
         }
     } else {
         uno::Sequence< sal_Int8 > asn1DerCertificate = convertCertificateToAsn1Der( serverCertificate );
-        if ( asn1DerCertificate.getLength() == 0 )
-            return 0;
-        asn1DerCertificates.push_back( asn1DerCertificate );
+        if( asn1DerCertificate.getLength() > 0 )
+            asn1DerCertificates.push_back( asn1DerCertificate );
+        else
+            verifyResult = X509_V_ERR_UNSPECIFIED;
     }
-    verifyOk = verifyCertificateChain( asn1DerCertificates );
+    if( verifyResult == X509_V_OK )
+        verifyResult = verifyCertificateChain( asn1DerCertificates );
 
-    m_aLogger.log( LogLevel::FINE, "validateServerX509Certificate() returning $1$ at depth $2$",
-        (sal_Int32)verifyOk, (sal_Int32)depth );
-    return verifyOk;
+    rtl::OUString verifyErrorString = rtl::OUString::createFromAscii( X509_verify_cert_error_string( verifyResult ) );
+    m_aLogger.log( LogLevel::FINE, "validateServerX509Certificate() verifyResult=$1$ ($2$)",
+        (sal_Int32)verifyResult, verifyErrorString );
+    return verifyResult;
 }
 
 int CurlSession::verifyCertificateChain (
     std::vector< uno::Sequence< sal_Int8 > > &asn1DerCertificates )
 {
     // Check arguments.
-    if (asn1DerCertificates.size()<=0)
+    if( asn1DerCertificates.size() <= 0 )
     {
-        OSL_ASSERT(asn1DerCertificates.size()>0);
-        return 0;
-    }
-
-    // Create some crypto objects to decode and handle the base64
-    // encoded certificate chain.
-    uno::Reference< xml::crypto::XSEInitializer > xSEInitializer;
-    uno::Reference< security::XCertificateContainer > xCertificateContainer;
-    uno::Reference< xml::crypto::XXMLSecurityContext > xSecurityContext;
-    uno::Reference< xml::crypto::XSecurityEnvironment > xSecurityEnv;
-    try
-    {
-        // Create a certificate container.
-        xCertificateContainer = uno::Reference< security::XCertificateContainer >(
-            getMSF()->createInstance(
-                rtl::OUString::createFromAscii(
-                    "com.sun.star.security.CertificateContainer" ) ),
-            uno::UNO_QUERY_THROW);
-
-        xSEInitializer = uno::Reference< xml::crypto::XSEInitializer >(
-            getMSF()->createInstance(
-                rtl::OUString::createFromAscii( "com.sun.star.xml.crypto.SEInitializer" ) ),
-            uno::UNO_QUERY_THROW);
-
-        xSecurityContext = xSEInitializer->createSecurityContext( rtl::OUString() );
-        if (xSecurityContext.is())
-            xSecurityEnv = xSecurityContext->getSecurityEnvironment();
-
-        if ( ! xSecurityContext.is() || ! xSecurityEnv.is())
-        {
-            // Do we have to dispose xSEInitializer or xCertificateContainer?
-            m_aLogger.log( LogLevel::WARNING, "Failure creating security services for certificate verification" );
-            return 0;
-        }
-    }
-    catch ( uno::Exception const &e)
-    {
-        m_aLogger.log( LogLevel::WARNING, "Error creating security services: $1$", e.Message );
-        return 0;
+        m_aLogger.log( LogLevel::WARNING, "No certificates to verify - failing!" );
+        return X509_V_ERR_UNSPECIFIED;
     }
 
     // Decode the server certificate.
     uno::Reference< security::XCertificate > xServerCertificate(
-        xSecurityEnv->createCertificateFromRaw( asn1DerCertificates[0] ) );
+        m_xSecurityEnv->createCertificateFromRaw( asn1DerCertificates[0] ) );
     if ( ! xServerCertificate.is())
     {
         m_aLogger.log( LogLevel::WARNING, "Failed to create XCertificate" );
-        return 0;
+        return X509_V_ERR_UNSPECIFIED;
     }
 
     // Get the subject from the server certificate.
@@ -485,15 +474,15 @@ int CurlSession::verifyCertificateChain (
     // entry for the server then we do not have to authenticate any
     // certificate.
     const security::CertificateContainerStatus eStatus (
-        xCertificateContainer->hasCertificate(
+        m_xCertificateContainer->hasCertificate(
             getHostName(), sServerCertificateSubject ) );
     if (eStatus != security::CertificateContainerStatus_NOCERT)
     {
         m_aLogger.log( LogLevel::FINER, "Cached certificate found with status=$1$",
                 eStatus == security::CertificateContainerStatus_TRUSTED ? "trusted" : "untrusted" );
         return eStatus == security::CertificateContainerStatus_TRUSTED
-               ? 1
-               : 0;
+               ? X509_V_OK
+               : X509_V_ERR_CERT_UNTRUSTED;
     }
 
     // The shortcut failed, so try to verify the whole chain. This is
@@ -503,15 +492,15 @@ int CurlSession::verifyCertificateChain (
     for (nIndex=0; nIndex < asn1DerCertificates.size(); ++nIndex)
     {
         uno::Reference< security::XCertificate > xCertificate(
-            xSecurityEnv->createCertificateFromRaw( asn1DerCertificates[ nIndex ] ) );
+            m_xSecurityEnv->createCertificateFromRaw( asn1DerCertificates[ nIndex ] ) );
         if ( ! xCertificate.is())
         {
-            m_aLogger.log( LogLevel::FINE, "Failed to create XCertificate $1$", nIndex );
-            return 0;
+            m_aLogger.log( LogLevel::WARNING, "Failed to create XCertificate $1$", nIndex );
+            return X509_V_ERR_UNSPECIFIED;
         }
         aChain.push_back(xCertificate);
     }
-    const sal_Int64 nVerificationResult (xSecurityEnv->verifyCertificate(
+    const sal_Int64 nVerificationResult (m_xSecurityEnv->verifyCertificate(
             xServerCertificate,
             ::comphelper::containerToSequence(aChain)));
 
@@ -557,8 +546,8 @@ int CurlSession::verifyCertificateChain (
         if (nVerificationResult == 0)
         {
             m_aLogger.log( LogLevel::FINE, "Certificate (chain) is valid" );
-            xCertificateContainer->addCertificate(getHostName(), sServerCertificateSubject, sal_True);
-            return 1;
+            m_xCertificateContainer->addCertificate(getHostName(), sServerCertificateSubject, sal_True);
+            return X509_V_OK;
         }
         else if ((nVerificationResult & security::CertificateValidity::CHAIN_INCOMPLETE) != 0)
         {
@@ -566,19 +555,19 @@ int CurlSession::verifyCertificateChain (
             // neither automatically (as we just discovered) nor
             // manually (so there is no point in showing any dialog.)
             m_aLogger.log( LogLevel::WARNING, "Certificate (chain) is incomplete" );
-            return 0;
+            return X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT;
         }
         else if ((nVerificationResult & security::CertificateValidity::REVOKED) != 0)
         {
             // Certificate (chain) is invalid.
             m_aLogger.log( LogLevel::WARNING, "Certificate (chain) is revoked" );
-            xCertificateContainer->addCertificate(getHostName(), sServerCertificateSubject,  sal_False);
-            return 0;
+            m_xCertificateContainer->addCertificate(getHostName(), sServerCertificateSubject,  sal_False);
+            return X509_V_ERR_CERT_REVOKED;
         }
         else
         {
             // For all other we have to ask the user.
-            m_aLogger.log( LogLevel::FINE, "Promping user to validate the certificate" );
+            m_aLogger.log( LogLevel::FINE, "Prompting user to validate the certificate" );
         }
     }
 
@@ -604,15 +593,15 @@ int CurlSession::verifyCertificateChain (
                 if ( xApprove.is() )
                 {
                     m_aLogger.log( LogLevel::FINE, "The user approved the certificate" );
-                    xCertificateContainer->addCertificate( getHostName(), sServerCertificateSubject, sal_True );
-                    return 1;
+                    m_xCertificateContainer->addCertificate( getHostName(), sServerCertificateSubject, sal_True );
+                    return X509_V_OK;
                 }
                 else
                 {
                     // Don't trust cert
-                    m_aLogger.log( LogLevel::FINE, "The user REJECTED the certificate" );
-                    xCertificateContainer->addCertificate( getHostName(), sServerCertificateSubject, sal_False );
-                    return 0;
+                    m_aLogger.log( LogLevel::WARNING, "The user REJECTED the certificate" );
+                    m_xCertificateContainer->addCertificate( getHostName(), sServerCertificateSubject, sal_False );
+                    return X509_V_ERR_CERT_REJECTED;
                 }
             }
         }
@@ -620,13 +609,13 @@ int CurlSession::verifyCertificateChain (
         {
             // Don't trust cert
             m_aLogger.log( LogLevel::WARNING, "Couldn't create the interaction handler for user feedback, rejecting the certificate" );
-            xCertificateContainer->addCertificate( getHostName(), sServerCertificateSubject, sal_False );
-            return 0;
+            m_xCertificateContainer->addCertificate( getHostName(), sServerCertificateSubject, sal_False );
+            return X509_V_ERR_CERT_REJECTED;
         }
     }
     m_aLogger.log( LogLevel::WARNING, "No XCommandEnvironment, rejecting the certificate" );
 
-    return 0;
+    return X509_V_ERR_CERT_REJECTED;
 }
 
 bool CurlSession::Curl_ProvideCredentials( long statusCode, void *userdata ) throw (DAVException)

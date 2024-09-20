@@ -23,16 +23,15 @@
 
 package com.sun.star.lib.util;
 
-import complexlib.ComplexTestCase;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public final class NativeLibraryLoader_Test extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "testEncoded", "testUnencoded" };
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
+public final class NativeLibraryLoader_Test {
+    @Test
     public void testEncoded() throws MalformedURLException {
         File dir = new File(System.getProperty("user.dir"));
         File subdir = new File(dir, "with space");
@@ -52,9 +51,10 @@ public final class NativeLibraryLoader_Test extends ComplexTestCase {
                 }
             },
             "dummy");
-        assure("Files are equal", file2.equals(file1));
+        assertTrue("Files are equal", file2.equals(file1));
     }
 
+    @Test
     public void testUnencoded() throws MalformedURLException {
         File dir = new File(System.getProperty("user.dir"));
         File subdir = new File(dir, "with space");
@@ -74,6 +74,6 @@ public final class NativeLibraryLoader_Test extends ComplexTestCase {
                 }
             },
             "dummy");
-        assure("Files are equal", file2.equals(file1));
+        assertTrue("Files are equal", file2.equals(file1));
     }
 }

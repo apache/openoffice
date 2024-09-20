@@ -1,6 +1,6 @@
-diff -urp misc/Python-2.7.18/PC/VS9.0/_bsddb.vcproj misc/build/Python-2.7.18/PC/VS9.0/_bsddb.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_bsddb.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_bsddb.vcproj	2017-10-21 17:56:40.218589000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_bsddb.vcproj misc/build/Python-2.7.18/PC/VS9.0/_bsddb.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_bsddb.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_bsddb.vcproj
 @@ -56,6 +56,7 @@
  			/>
  			<Tool
@@ -65,9 +65,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_bsddb.vcproj misc/build/Python-2.7.18/PC/
  				AdditionalDependencies="$(bsddbDepLibs)"
  				BaseAddress="0x1e180000"
  				TargetMachine="17"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_ctypes.vcproj misc/build/Python-2.7.18/PC/VS9.0/_ctypes.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_ctypes.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_ctypes.vcproj	2017-10-21 17:56:40.219465000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_ctypes.vcproj misc/build/Python-2.7.18/PC/VS9.0/_ctypes.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_ctypes.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_ctypes.vcproj
 @@ -177,7 +177,7 @@
  			/>
  			<Tool
@@ -122,9 +122,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_ctypes.vcproj misc/build/Python-2.7.18/PC
  				SubSystem="0"
  				BaseAddress="0x1D1A0000"
  				TargetMachine="17"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj misc/build/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj	2017-10-21 17:56:40.220226000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj misc/build/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj
 @@ -54,6 +54,7 @@
  			/>
  			<Tool
@@ -189,9 +189,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_ctypes_test.vcproj misc/build/Python-2.7.
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_elementtree.vcproj misc/build/Python-2.7.18/PC/VS9.0/_elementtree.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_elementtree.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_elementtree.vcproj	2017-10-21 17:56:40.221003000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_elementtree.vcproj misc/build/Python-2.7.18/PC/VS9.0/_elementtree.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_elementtree.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_elementtree.vcproj
 @@ -57,6 +57,7 @@
  			<Tool
  				Name="VCLinkerTool"
@@ -256,13 +256,15 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_elementtree.vcproj misc/build/Python-2.7.
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_hashlib.vcproj misc/build/Python-2.7.18/PC/VS9.0/_hashlib.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_hashlib.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_hashlib.vcproj	2017-10-21 17:56:40.222221000 -0500
-@@ -58,6 +58,7 @@
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_hashlib.vcproj misc/build/Python-2.7.18/PC/VS9.0/_hashlib.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_hashlib.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_hashlib.vcproj
+@@ -57,7 +57,8 @@
+ 			/>
  			<Tool
  				Name="VCLinkerTool"
- 				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
+-				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libcrypto.lib $(opensslDir)\out32\libssl.lib"
 +				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
  			/>
  			<Tool
@@ -275,10 +277,12 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_hashlib.vcproj misc/build/Python-2.7.18/P
  			/>
  			<Tool
  				Name="VCALinkTool"
-@@ -184,6 +186,7 @@
+@@ -183,7 +185,8 @@
+ 			/>
  			<Tool
  				Name="VCLinkerTool"
- 				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
+-				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libcrypto.lib $(opensslDir)\out32\libssl.lib"
 +				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
  			/>
  			<Tool
@@ -291,10 +295,12 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_hashlib.vcproj misc/build/Python-2.7.18/P
  			/>
  			<Tool
  				Name="VCALinkTool"
-@@ -311,6 +315,7 @@
+@@ -310,7 +314,8 @@
+ 			/>
  			<Tool
  				Name="VCLinkerTool"
- 				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
+-				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libcrypto.lib $(opensslDir)\out32\libssl.lib"
 +				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
  			/>
  			<Tool
@@ -307,10 +313,12 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_hashlib.vcproj misc/build/Python-2.7.18/P
  			/>
  			<Tool
  				Name="VCALinkTool"
-@@ -439,6 +445,7 @@
+@@ -438,7 +444,8 @@
+ 			/>
  			<Tool
  				Name="VCLinkerTool"
- 				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
+-				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib $(opensslDir)\out32\libcrypto.lib $(opensslDir)\out32\libssl.lib"
 +				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
  			/>
  			<Tool
@@ -323,9 +331,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_hashlib.vcproj misc/build/Python-2.7.18/P
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_msi.vcproj misc/build/Python-2.7.18/PC/VS9.0/_msi.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_msi.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_msi.vcproj	2017-10-21 17:56:40.223291000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_msi.vcproj misc/build/Python-2.7.18/PC/VS9.0/_msi.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_msi.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_msi.vcproj
 @@ -56,6 +56,7 @@
  				Name="VCLinkerTool"
  				AdditionalDependencies="fci.lib msi.lib rpcrt4.lib"
@@ -390,9 +398,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_msi.vcproj misc/build/Python-2.7.18/PC/VS
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj misc/build/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj	2017-10-21 17:56:40.224316000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj misc/build/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj
 @@ -56,6 +56,7 @@
  				Name="VCLinkerTool"
  				AdditionalDependencies="ws2_32.lib"
@@ -457,9 +465,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_multiprocessing.vcproj misc/build/Python-
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_socket.vcproj misc/build/Python-2.7.18/PC/VS9.0/_socket.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_socket.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_socket.vcproj	2017-10-21 17:56:40.225407000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_socket.vcproj misc/build/Python-2.7.18/PC/VS9.0/_socket.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_socket.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_socket.vcproj
 @@ -56,6 +56,7 @@
  				Name="VCLinkerTool"
  				AdditionalDependencies="ws2_32.lib"
@@ -524,9 +532,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_socket.vcproj misc/build/Python-2.7.18/PC
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_sqlite3.vcproj misc/build/Python-2.7.18/PC/VS9.0/_sqlite3.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_sqlite3.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_sqlite3.vcproj	2017-10-21 17:56:40.226403000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_sqlite3.vcproj misc/build/Python-2.7.18/PC/VS9.0/_sqlite3.vcproj
+--- misc/build/Python-2.7.18PC/VS9.0/_sqlite3.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_sqlite3.vcproj
 @@ -57,6 +57,7 @@
  			<Tool
  				Name="VCLinkerTool"
@@ -591,9 +599,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_sqlite3.vcproj misc/build/Python-2.7.18/P
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_ssl.vcproj misc/build/Python-2.7.18/PC/VS9.0/_ssl.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_ssl.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_ssl.vcproj	2017-10-21 17:56:40.227504000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_ssl.vcproj misc/build/Python-2.7.18/PC/VS9.0/_ssl.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_ssl.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_ssl.vcproj
 @@ -43,7 +43,7 @@
  			/>
  			<Tool
@@ -609,7 +617,7 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_ssl.vcproj misc/build/Python-2.7.18/PC/VS
  				Name="VCLinkerTool"
 -				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
 +				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
-+				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libssl.lib"
  			/>
  			<Tool
  				Name="VCALinkTool"
@@ -647,7 +655,7 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_ssl.vcproj misc/build/Python-2.7.18/PC/VS
  				Name="VCLinkerTool"
 -				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
 +				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
-+				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libcrypto.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libssl.lib"
  			/>
  			<Tool
  				Name="VCALinkTool"
@@ -665,7 +673,7 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_ssl.vcproj misc/build/Python-2.7.18/PC/VS
  			<Tool
  				Name="VCLinkerTool"
 -				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out64\libeay32.lib $(opensslDir)\out64\ssleay32.lib"
-+				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
++				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
 +				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\ssleay32.lib"
  			/>
  			<Tool
@@ -685,13 +693,22 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_ssl.vcproj misc/build/Python-2.7.18/PC/VS
  				Name="VCLinkerTool"
 -				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
 +				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
-+				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libssl.lib"
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_testcapi.vcproj misc/build/Python-2.7.18/PC/VS9.0/_testcapi.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_testcapi.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_testcapi.vcproj	2017-10-21 17:56:40.228516000 -0500
+@@ -438,7 +443,7 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out32\libcrypto.lib $(opensslDir)\out32\libssl.lib"
+ 			/>
+ 			<Tool
+ 				Name="VCALinkTool"
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_testcapi.vcproj misc/build/Python-2.7.18/PC/VS9.0/_testcapi.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/_testcapi.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_testcapi.vcproj
 @@ -55,6 +55,7 @@
  			<Tool
  				Name="VCLinkerTool"
@@ -756,9 +773,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_testcapi.vcproj misc/build/Python-2.7.18/
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/_tkinter.vcproj misc/build/Python-2.7.18/PC/VS9.0/_tkinter.vcproj
---- misc/Python-2.7.18/PC/VS9.0/_tkinter.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/_tkinter.vcproj	2017-10-21 17:56:40.229664000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/_tkinter.vcproj misc/build/Python-2.7.18/PC/VS9.0/_tkinter.vcproj
+--- misc/build/Python-2.7.18PC/VS9.0/_tkinter.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/_tkinter.vcproj
 @@ -57,6 +57,7 @@
  			<Tool
  				Name="VCLinkerTool"
@@ -823,9 +840,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/_tkinter.vcproj misc/build/Python-2.7.18/P
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj misc/build/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj
---- misc/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj	2017-10-21 17:56:40.230806000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj misc/build/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj
 @@ -81,8 +81,7 @@
  				IgnoreDefaultLibraryNames="LIBC"
  				ProgramDatabaseFile="..\..\lib\distutils\command\wininst-9.0.pdb"
@@ -846,9 +863,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/bdist_wininst.vcproj misc/build/Python-2.7
  				TargetMachine="17"
  			/>
  			<Tool
-diff -urp misc/Python-2.7.18/PC/VS9.0/bz2.vcproj misc/build/Python-2.7.18/PC/VS9.0/bz2.vcproj
---- misc/Python-2.7.18/PC/VS9.0/bz2.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/bz2.vcproj	2017-10-21 17:56:40.232092000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/bz2.vcproj misc/build/Python-2.7.18/PC/VS9.0/bz2.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/bz2.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/bz2.vcproj
 @@ -57,6 +57,7 @@
  			<Tool
  				Name="VCLinkerTool"
@@ -913,9 +930,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/bz2.vcproj misc/build/Python-2.7.18/PC/VS9
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/kill_python.vcproj misc/build/Python-2.7.18/PC/VS9.0/kill_python.vcproj
---- misc/Python-2.7.18/PC/VS9.0/kill_python.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/kill_python.vcproj	2017-10-21 17:56:40.233109000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/kill_python.vcproj misc/build/Python-2.7.18/PC/VS9.0/kill_python.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/kill_python.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/kill_python.vcproj
 @@ -56,6 +56,7 @@
  				Name="VCLinkerTool"
  				OutputFile="$(OutDir)\$(ProjectName)_d.exe"
@@ -948,9 +965,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/kill_python.vcproj misc/build/Python-2.7.1
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj misc/build/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj
---- misc/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj	2017-10-21 17:56:40.233689000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj misc/build/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj
 @@ -61,6 +61,7 @@
  				OutputFile="$(OutDir)/make_buildinfo.exe"
  				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
@@ -967,9 +984,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/make_buildinfo.vcproj misc/build/Python-2.
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj misc/build/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj
---- misc/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj	2017-10-21 17:56:40.234324000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj misc/build/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj
 @@ -71,6 +71,7 @@
  				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
  				SubSystem="1"
@@ -1002,10 +1019,10 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/make_versioninfo.vcproj misc/build/Python-
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/pcbuild.sln misc/build/Python-2.7.18/PC/VS9.0/pcbuild.sln
---- misc/Python-2.7.18/PC/VS9.0/pcbuild.sln	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/pcbuild.sln	2017-10-21 17:56:40.235608000 -0500
-@@ -38,12 +38,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C9
+diff --git misc/build/Python-2.7.18/PC/VS9.0/pcbuild.sln misc/build/Python-2.7.18/PC/VS9.0/pcbuild.sln
+--- misc/build/Python-2.7.18/PC/VS9.0/pcbuild.sln
++++ misc/build/Python-2.7.18/PC/VS9.0/pcbuild.sln
+@@ -38,12 +38,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winsound", "winsound.vcproj
  		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
  	EndProjectSection
  EndProject
@@ -1024,7 +1041,7 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/pcbuild.sln misc/build/Python-2.7.18/PC/VS
  Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_ctypes", "_ctypes.vcproj", "{0E9791DB-593A-465F-98BC-681011311618}"
  	ProjectSection(ProjectDependencies) = postProject
  		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
-@@ -69,12 +69,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C9
+@@ -69,12 +69,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_socket", "_socket.vcproj",
  		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
  	EndProjectSection
  EndProject
@@ -1043,7 +1060,7 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/pcbuild.sln misc/build/Python-2.7.18/PC/VS
  Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_ssl", "_ssl.vcproj", "{C6E20F84-3247-4AD6-B051-B073268F73BA}"
  	ProjectSection(ProjectDependencies) = postProject
  		{B11D750F-CD1F-4A96-85CE-E69A5C5259F9} = {B11D750F-CD1F-4A96-85CE-E69A5C5259F9}
-@@ -87,16 +87,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C9
+@@ -87,16 +87,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_testcapi", "_testcapi.vcpr
  		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
  	EndProjectSection
  EndProject
@@ -1070,7 +1087,7 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/pcbuild.sln misc/build/Python-2.7.18/PC/VS
  Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "select", "select.vcproj", "{18CAE28C-B454-46C1-87A0-493D91D97F03}"
  	ProjectSection(ProjectDependencies) = postProject
  		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
-@@ -114,17 +114,17 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C9
+@@ -114,17 +114,17 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pyexpat", "pyexpat.vcproj",
  EndProject
  Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bdist_wininst", "bdist_wininst.vcproj", "{EB1C19C1-1F18-421E-9735-CAEE69DC6A3C}"
  EndProject
@@ -1099,9 +1116,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/pcbuild.sln misc/build/Python-2.7.18/PC/VS
  Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_multiprocessing", "_multiprocessing.vcproj", "{9E48B300-37D1-11DD-8C41-005056C00008}"
  	ProjectSection(ProjectDependencies) = postProject
  		{CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26} = {CF7AC3D1-E2DF-41D2-BEA6-1E2556CDEA26}
-diff -urp misc/Python-2.7.18/PC/VS9.0/pyexpat.vcproj misc/build/Python-2.7.18/PC/VS9.0/pyexpat.vcproj
---- misc/Python-2.7.18/PC/VS9.0/pyexpat.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/pyexpat.vcproj	2017-10-21 17:56:40.236395000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/pyexpat.vcproj misc/build/Python-2.7.18/PC/VS9.0/pyexpat.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/pyexpat.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/pyexpat.vcproj
 @@ -56,6 +56,7 @@
  			/>
  			<Tool
@@ -1166,9 +1183,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/pyexpat.vcproj misc/build/Python-2.7.18/PC
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/python.vcproj misc/build/Python-2.7.18/PC/VS9.0/python.vcproj
---- misc/Python-2.7.18/PC/VS9.0/python.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/python.vcproj	2017-10-21 17:56:40.237211000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/python.vcproj misc/build/Python-2.7.18/PC/VS9.0/python.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/python.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/python.vcproj
 @@ -66,6 +66,7 @@
  				SubSystem="1"
  				StackReserveSize="2000000"
@@ -1233,9 +1250,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/python.vcproj misc/build/Python-2.7.18/PC/
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/pythoncore.vcproj misc/build/Python-2.7.18/PC/VS9.0/pythoncore.vcproj
---- misc/Python-2.7.18/PC/VS9.0/pythoncore.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/pythoncore.vcproj	2017-10-21 17:56:40.238551000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/pythoncore.vcproj misc/build/Python-2.7.18/PC/VS9.0/pythoncore.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/pythoncore.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/pythoncore.vcproj
 @@ -69,6 +69,7 @@
  				ProgramDatabaseFile="$(OutDir)$(PyDllName).pdb"
  				BaseAddress="0x1e000000"
@@ -1300,9 +1317,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/pythoncore.vcproj misc/build/Python-2.7.18
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/pythonw.vcproj misc/build/Python-2.7.18/PC/VS9.0/pythonw.vcproj
---- misc/Python-2.7.18/PC/VS9.0/pythonw.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/pythonw.vcproj	2017-10-21 17:56:40.239382000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/pythonw.vcproj misc/build/Python-2.7.18/PC/VS9.0/pythonw.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/pythonw.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/pythonw.vcproj
 @@ -66,6 +66,7 @@
  				StackReserveSize="2000000"
  				BaseAddress="0x1d000000"
@@ -1367,9 +1384,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/pythonw.vcproj misc/build/Python-2.7.18/PC
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/select.vcproj misc/build/Python-2.7.18/PC/VS9.0/select.vcproj
---- misc/Python-2.7.18/PC/VS9.0/select.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/select.vcproj	2017-10-21 17:56:40.240210000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/select.vcproj misc/build/Python-2.7.18/PC/VS9.0/select.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/select.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/select.vcproj
 @@ -57,6 +57,7 @@
  				AdditionalDependencies="ws2_32.lib"
  				IgnoreDefaultLibraryNames="libc"
@@ -1434,9 +1451,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/select.vcproj misc/build/Python-2.7.18/PC/
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/sqlite3.vcproj misc/build/Python-2.7.18/PC/VS9.0/sqlite3.vcproj
---- misc/Python-2.7.18/PC/VS9.0/sqlite3.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/sqlite3.vcproj	2017-10-21 17:56:40.241775000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/sqlite3.vcproj misc/build/Python-2.7.18/PC/VS9.0/sqlite3.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/sqlite3.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/sqlite3.vcproj
 @@ -56,6 +56,7 @@
  			<Tool
  				Name="VCLinkerTool"
@@ -1501,9 +1518,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/sqlite3.vcproj misc/build/Python-2.7.18/PC
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/unicodedata.vcproj misc/build/Python-2.7.18/PC/VS9.0/unicodedata.vcproj
---- misc/Python-2.7.18/PC/VS9.0/unicodedata.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/unicodedata.vcproj	2017-10-21 17:56:40.242820000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/unicodedata.vcproj misc/build/Python-2.7.18/PC/VS9.0/unicodedata.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/unicodedata.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/unicodedata.vcproj
 @@ -55,6 +55,7 @@
  			<Tool
  				Name="VCLinkerTool"
@@ -1568,9 +1585,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/unicodedata.vcproj misc/build/Python-2.7.1
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj misc/build/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj
---- misc/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj	2017-10-21 17:56:40.243805000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj misc/build/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj
 @@ -59,6 +59,7 @@
  			<Tool
  				Name="VCLinkerTool"
@@ -1635,9 +1652,9 @@ diff -urp misc/Python-2.7.18/PC/VS9.0/w9xpopen.vcproj misc/build/Python-2.7.18/P
  			/>
  			<Tool
  				Name="VCALinkTool"
-diff -urp misc/Python-2.7.18/PC/VS9.0/winsound.vcproj misc/build/Python-2.7.18/PC/VS9.0/winsound.vcproj
---- misc/Python-2.7.18/PC/VS9.0/winsound.vcproj	2017-09-16 12:38:35.000000000 -0500
-+++ misc/build/Python-2.7.18/PC/VS9.0/winsound.vcproj	2017-10-21 17:56:40.244677000 -0500
+diff --git misc/build/Python-2.7.18/PC/VS9.0/winsound.vcproj misc/build/Python-2.7.18/PC/VS9.0/winsound.vcproj
+--- misc/build/Python-2.7.18/PC/VS9.0/winsound.vcproj
++++ misc/build/Python-2.7.18/PC/VS9.0/winsound.vcproj
 @@ -55,6 +55,7 @@
  			<Tool
  				Name="VCLinkerTool"

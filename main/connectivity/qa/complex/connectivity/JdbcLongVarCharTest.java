@@ -34,25 +34,32 @@ import com.sun.star.sdbc.XResultSetMetaData;
 import com.sun.star.sdbc.XResultSetMetaDataSupplier;
 import com.sun.star.sdbc.XRow;
 import com.sun.star.uno.UnoRuntime;
-import complexlib.ComplexTestCase;
+import org.openoffice.test.OfficeConnection;
 
-public class JdbcLongVarCharTest extends ComplexTestCase
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class JdbcLongVarCharTest
 {
+    private static final OfficeConnection connection = new OfficeConnection();
 
-    public String[] getTestMethodNames()
+    @BeforeClass
+    public static void beforeClass() throws Exception
     {
-        return new String[]
-                {
-                    "testLongVarChar"
-                };
+        connection.setUp();
     }
 
-    @Override
-    public String getTestObjectName()
+    @AfterClass
+    public static void afterClass() throws Exception
     {
-        return "LongVarCharTest";
+        connection.tearDown();
     }
 
+    @Test
     public void testLongVarChar() throws com.sun.star.uno.Exception, com.sun.star.beans.UnknownPropertyException
     {
 
@@ -68,7 +75,7 @@ public class JdbcLongVarCharTest extends ComplexTestCase
             //prop[0] = new PropertyValue("JavaDriverClass", 0, "com.ingres.jdbc.IngresDriver", PropertyState.DIRECT_VALUE);
 
             // get the remote office component context
-            XMultiServiceFactory xServiceManager = (XMultiServiceFactory) param.getMSF();
+            XMultiServiceFactory xServiceManager = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
             Object x = xServiceManager.createInstance("com.sun.star.sdbc.DriverManager");
             com.sun.star.sdbc.XDriverAccess xDriverAccess = (XDriverAccess) UnoRuntime.queryInterface(XDriverAccess.class, x);
             com.sun.star.sdbc.XDriver xDriver = xDriverAccess.getDriverByURL(url);

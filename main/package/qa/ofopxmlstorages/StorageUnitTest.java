@@ -37,13 +37,20 @@ import com.sun.star.container.*;
 import com.sun.star.beans.*;
 import com.sun.star.lang.*;
 
-import complexlib.ComplexTestCase;
-
 import complex.ofopxmlstorages.*;
+import share.LogWriter;
+import stats.SimpleLogWriter;
 
 import util.utils;
 import java.util.*;
 import java.io.*;
+
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openoffice.test.OfficeConnection;
+import static org.junit.Assert.*;
 
 /* This unit test for storage objects is designed to
  * test most important statements from storage service
@@ -52,36 +59,35 @@ import java.io.*;
  * Regression tests are added to extend the tested
  * functionalities.
  */
-public class StorageUnitTest  extends ComplexTestCase
+public class StorageUnitTest
 {
+    private static final OfficeConnection connection = new OfficeConnection();
+    private static final LogWriter log = new SimpleLogWriter();
 	private XMultiServiceFactory m_xMSF = null;
 	private XSingleServiceFactory m_xStorageFactory = null;
 
-    public String[] getTestMethodNames()
-	{
-        return new String[] {
-								"ExecuteTest01",
-								"ExecuteTest02",
-								"ExecuteTest03",
-								"ExecuteTest04",
-								"ExecuteTest05",
-								"ExecuteTest06",
-								"ExecuteTest07",
-								"ExecuteTest08"
-							};
+    @BeforeClass
+    public static void setUpConnection()
+        throws Exception
+    {
+        connection.setUp();
+        log.initialize(null, true);
     }
 
-    public String getTestObjectName()
-	{
-        return "StorageUnitTest";
+    @AfterClass
+    public static void tearDownConnection()
+        throws InterruptedException, com.sun.star.uno.Exception
+    {
+        connection.tearDown();
     }
 
+    @Before
     public void before()
 	{
-        m_xMSF = (XMultiServiceFactory)param.getMSF();
+        m_xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
 		if ( m_xMSF == null )
 		{
-			failed( "Can't create service factory!" );
+			fail( "Can't create service factory!" );
 			return;
 		}
 
@@ -92,63 +98,72 @@ public class StorageUnitTest  extends ComplexTestCase
 		}
 		catch( Exception e )
 		{
-			failed( "Can't create storage factory!" );
+			fail( "Can't create storage factory!" );
 			return;
 		}
 
 		if ( m_xStorageFactory == null )
 		{
-			failed( "Can't create service factory!" );
+			fail( "Can't create service factory!" );
 			return;
 		}
     }
 
+
+    @Test
 	public void ExecuteTest01()
 	{
 		StorageTest aTest = new Test01( m_xMSF, m_xStorageFactory, log );
-		assure( "Test01 failed!", aTest.test() );
+		assertTrue( "Test01 failed!", aTest.test() );
 	}
 
+    @Test
 	public void ExecuteTest02()
 	{
 		StorageTest aTest = new Test02( m_xMSF, m_xStorageFactory, log );
-		assure( "Test02 failed!", aTest.test() );
+		assertTrue( "Test02 failed!", aTest.test() );
 	}
 
+    @Test
 	public void ExecuteTest03()
 	{
 		StorageTest aTest = new Test03( m_xMSF, m_xStorageFactory, log );
-		assure( "Test03 failed!", aTest.test() );
+		assertTrue( "Test03 failed!", aTest.test() );
 	}
 
+    @Test
 	public void ExecuteTest04()
 	{
 		StorageTest aTest = new Test04( m_xMSF, m_xStorageFactory, log );
-		assure( "Test04 failed!", aTest.test() );
+		assertTrue( "Test04 failed!", aTest.test() );
 	}
 
+    @Test
 	public void ExecuteTest05()
 	{
 		StorageTest aTest = new Test05( m_xMSF, m_xStorageFactory, log );
-		assure( "Test05 failed!", aTest.test() );
+		assertTrue( "Test05 failed!", aTest.test() );
 	}
 
+    @Test
 	public void ExecuteTest06()
 	{
 		StorageTest aTest = new Test06( m_xMSF, m_xStorageFactory, log );
-		assure( "Test06 failed!", aTest.test() );
+		assertTrue( "Test06 failed!", aTest.test() );
 	}
 
+    @Test
 	public void ExecuteTest07()
 	{
 		StorageTest aTest = new Test07( m_xMSF, m_xStorageFactory, log );
-		assure( "Test07 failed!", aTest.test() );
+		assertTrue( "Test07 failed!", aTest.test() );
 	}
 
+    @Test
 	public void ExecuteTest08()
 	{
 		StorageTest aTest = new Test08( m_xMSF, m_xStorageFactory, log );
-		assure( "Test08 failed!", aTest.test() );
+		assertTrue( "Test08 failed!", aTest.test() );
 	}
 }
 

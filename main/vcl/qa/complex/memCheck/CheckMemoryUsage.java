@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 package complex.memCheck;
 
@@ -28,17 +27,20 @@ import com.sun.star.lang.XComponent;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.util.XCloseable;
-// import complexlib.ComplexTestCase;
+import helper.OSHelper;
 import helper.ProcessHandler;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 // import java.io.FilePermission;
 import java.io.FileWriter;
 import java.io.FilenameFilter;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Enumeration;
+import java.util.Properties;
 import java.util.StringTokenizer;
 import java.util.Vector;
-import lib.*;
 import util.DesktopTools;
 // import util.WriterTools;
 
@@ -47,19 +49,19 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openoffice.test.Argument;
 import org.openoffice.test.OfficeConnection;
 import static org.junit.Assert.*;
 
 /**
- * Documents are opened and exported with StarOffice. The memory usage of 
- * StarOffice is monitored and if the usage exceeds the allowed kilobytes,
- * the test is failed. Used for monitoring the StarOffice process is the 
+ * Documents are opened and exported with OpenOffice. The memory usage of
+ * OpenOffice is monitored and if the usage exceeds the allowed kilobytes,
+ * the test is failed. Used for monitoring the OpenOffice process is the
  * command line tool 'pmap', available on Solaris or Linux. This test will not
- * run on Windows.<br>Test procedure: every given document type is searched in 
- * the source directory 
+ * run on Windows.<br>Test procedure: every given document type is searched in
+ * the source directory
  * Needed parameters:
  * <ul>
- *   <li>"TestDocumentPath" - the path where test documents are located.</li>
  *   <li>"AllowMemoryIncrease" (optional) - the allowed memory increase measured in kByte per exported document. The default is 10 kByte.</li>
  *   <li>"ExportDocCount" (optional) - the amount of exports for each document that is loaded. Is defaulted to 25.
  *   <li>"FileExportFilter" (optional) - a relation between loaded document type and used export filter. Is defaulted to
@@ -92,8 +94,7 @@ class TempDir
     }
 }
 
-public class CheckMemoryUsage /* extends ComplexTestCase */
-
+public class CheckMemoryUsage
 {
 
     private final String sWriterDoc = "sxw,writer_pdf_Export";
@@ -109,33 +110,18 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
     private String[][] sDocuments;
     private int iAllowMemoryIncrease = 10;
     private int iExportDocCount = 25;
-    /**
-     * The test parameters
-     */
-    private static TestParameters param = null;
 
     /**
-     * Get all test methods
-     * @return The test methods.
-    //     */
-//    public String[] getTestMethodNames() {
-//        return new String[] {"loadAndSaveDocuments"};
-//    }
-    /**
-     * Collect all documnets to load and all filters used for export.
+     * Collect all documents to load and all filters used for export.
      */
     @Before
-    public void before()
+    public void before() throws Exception
     {
 
         final XMultiServiceFactory xMsf = getMSF();
 
-        // some Tests need the qadevOOo TestParameters, it is like a Hashmap for Properties.
-        param = new TestParameters();
-        param.put("ServiceFactory", xMsf); // some qadevOOo functions need the ServiceFactory
-
         // test does definitely not run on Windows.
-        if (param.get("OperatingSystem").equals("wntmsci"))
+        if (OSHelper.isWindows())
         {
             System.out.println("Test can only reasonably be executed with a tool that "
                     + "displays the memory usage of StarOffice.");
@@ -145,9 +131,13 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
             System.exit(0);
         }
 
+        Properties properties = new Properties();
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(Argument.get("properties")), "UTF-8"))) {
+            properties.load(reader);
+        }
 
         // how many times is every document exported.
-        int count = param.getInt("ExportDocCount");
+        int count = Integer.parseInt(properties.getProperty("ExportDocCount", "0"));
         if (count != 0)
         {
             iExportDocCount = count;
@@ -158,14 +148,14 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
         m_aTempDir = new TempDir(util.utils.getOfficeTemp/*Dir*/(xMsf));
 
         // get the file extension, export filter connection
-        Enumeration keys = param.keys();
+        Enumeration keys = properties.keys();
         Vector<String> v = new Vector<String>();
         while (keys.hasMoreElements())
         {
             String key = (String) keys.nextElement();
             if (key.startsWith("FileExportFilter"))
             {
-                v.add((String) param.get(key));
+                v.add((String) properties.get(key));
             }
         }
         // if no param given, set defaults.
@@ -175,7 +165,7 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
             v.add(sCalcDoc);
             v.add(sImpressDoc);
         }
-        // store a file extension 
+        // store a file extension
         sDocTypeExportFilter = new String[v.size()][2];
         for (int i = 0; i < v.size(); i++)
         {
@@ -189,11 +179,8 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
         }
 
         // get files to load and export
-//        sDocumentPath = (String) param.get("TestDocumentPath");
-        String sDocumentPath = TestDocument.getUrl();
+        String sDocumentPath = Argument.get("tdoc");
         File f = new File(FileHelper.getJavaCompatibleFilename(sDocumentPath));
-        // sDocumentPath = f.getAbsolutePath();
-        // String sFS = System.getProperty("file.separator");
         sDocuments = new String[sDocTypeExportFilter.length][];
         for (int j = 0; j < sDocTypeExportFilter.length; j++)
         {
@@ -204,7 +191,7 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
             {
                 // final String sDocument = FileHelper.appendPath(sDocumentPath, doc[i]);
                 // sDocuments[j][i] = utils.getFullURL(sDocuments[j][i]);
-                sDocuments[j][i] = TestDocument.getUrl(doc[i]);
+                sDocuments[j][i] = TestDocument.getUrl(sDocumentPath, doc[i]);
             }
         }
     }
@@ -241,7 +228,7 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
         int nRunThrough = 0;
 
         // At first:
-        // we load the document, there will be some post work in office like late initialisations
+        // we load the document, there will be some post work in office like late initialization
         // we store exact one time the document
         // so the memory footprint should be right
 
@@ -304,9 +291,9 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
     }
 
     /**
-     * Checks how much memory should consum
+     * Checks how much memory should consume
      * @param storageBefore
-     * @return 1 if consum is ok, else 0
+     * @return 1 if consume is ok, else 0
      */
     private int checkMemory(int nConsumMore)
     {
@@ -422,7 +409,7 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
         {
             // short wait for the office to 'calm down' and free some memory
             shortWait(20000);
-            // wait util memory is not freed anymore.
+            // wait until memory is not freed anymore.
             int storageAfter = getOfficeMemoryUsage(createModeName("stop", 0));
             int mem = 0;
             int count = 0;

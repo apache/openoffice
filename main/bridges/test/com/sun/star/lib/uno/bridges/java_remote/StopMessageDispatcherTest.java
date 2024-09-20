@@ -31,21 +31,20 @@ import com.sun.star.lib.uno.typeinfo.TypeInfo;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /* This test has to detect whether the spawned client process hangs, which can
  * not be done reliably.  As an approximation, it waits for 10 sec and considers
  * the process hanging if it has not terminated by then.
  */
-public final class StopMessageDispatcherTest extends ComplexTestCase {
+public final class StopMessageDispatcherTest {
     public StopMessageDispatcherTest() {}
 
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
-
+    @Test
     public void test() throws Exception {
-        assure(
+        assertTrue(
             "test",
             new TestBed().execute(new Provider(), false, Client.class, 10000));
     }

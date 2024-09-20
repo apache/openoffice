@@ -62,12 +62,6 @@ public class ApplicationController extends TestCase
     }
 
     // --------------------------------------------------------------------------------------------------------
-    public String getTestObjectName()
-    {
-        return getClass().getName();
-    }
-
-    // --------------------------------------------------------------------------------------------------------
     private void impl_closeDocument()
     {
         if (m_database != null)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #include "macros.inc"
 
@@ -1627,16 +1626,22 @@ STD_LIB_FILE( gid_File_Lib_Freebl3, freebl3)
 #ifdef LINUX
 STD_LIB_FILE( gid_File_Lib_Freeblpriv3, freeblpriv3)
 #endif
-STD_LIB_FILE( gid_File_Lib_Nspr4, nspr4)
 STD_LIB_FILE( gid_File_Lib_Nss3, nss3)
 STD_LIB_FILE( gid_File_Lib_Nsckbi, nssckbi)
 STD_LIB_FILE( gid_File_Lib_Nssdbm3, nssdbm3)
 STD_LIB_FILE( gid_File_Lib_Nssutil3, nssutil3)
-STD_LIB_FILE( gid_File_Lib_Plc4, plc4)
-STD_LIB_FILE( gid_File_Lib_Plds4, plds4)
 STD_LIB_FILE( gid_File_Lib_Smime3, smime3)
 STD_LIB_FILE( gid_File_Lib_Softokn3, softokn3)
 STD_LIB_FILE( gid_File_Lib_Ssl3, ssl3)
+#ifdef WNT
+STD_LIB_FILE( gid_File_Lib_Nspr4, libnspr4)
+STD_LIB_FILE( gid_File_Lib_Plc4, libplc4)
+STD_LIB_FILE( gid_File_Lib_Plds4, libplds4)
+#else
+STD_LIB_FILE( gid_File_Lib_Nspr4, nspr4)
+STD_LIB_FILE( gid_File_Lib_Plc4, plc4)
+STD_LIB_FILE( gid_File_Lib_Plds4, plds4)
+#endif
 
 #ifndef MACOSX // #i108575# use system sqlite3 on MacOSX
 STD_LIB_FILE( gid_File_Lib_Sqlite3, sqlite3)
@@ -1770,9 +1775,9 @@ File gid_File_Lib_Openssl
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef WNT
-    Name = "ssleay32.dll";
+    Name = "libssl-3.dll";
   #else
-    Name = "libssl.so";
+    Name = SCP2_URE_DL_VER("ssl", "3");
   #endif
 End
 #endif
@@ -1783,9 +1788,9 @@ File gid_File_Lib_Crypto
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef WNT
-    Name = "libeay32.dll";
+    Name = "libcrypto-3.dll";
   #else
-    Name = "libcrypto.so";
+    Name = SCP2_URE_DL_VER("crypto", "3");
   #endif
 End
 #endif

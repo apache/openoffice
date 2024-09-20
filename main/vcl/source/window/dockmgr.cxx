@@ -580,12 +580,12 @@ ImplPopupFloatWin::~ImplPopupFloatWin()
 
 ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > ImplPopupFloatWin::CreateAccessible()
 {
-    // switch off direct accessibilty support for this window
+    // switch off direct accessibility support for this window
 
     // this is to avoid appearance of this window as standalone window in the accessibility hierarchy
     // as this window is only used as a helper for subtoolbars that are not teared-off, the parent toolbar
     // has to provide accessibility support (as implemented in the toolkit) 
-    // so the contained toolbar should appear as child of the correponsing toolbar item of the parent toolbar
+    // so the contained toolbar should appear as child of the corresponding toolbar item of the parent toolbar
     return ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >();
 }
 

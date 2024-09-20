@@ -23,16 +23,17 @@
 
 $(eval $(call gb_JunitTest_JunitTest,qadevOOo_unoapi,SRCDIR))
 
-#$(eval $(call gb_JunitTest_set_defs,sm_unoapi,\
-#	$$(DEFS) \
-#	-Dorg.openoffice.test.arg.sce=$(SRCDIR)/starmath/qa/unoapi/sm.sce \
-#	-Dorg.openoffice.test.arg.xcl=$(SRCDIR)/starmath/qa/unoapi/knownissues.xcl \
-#))
+$(eval $(call gb_JunitTest_set_defs,qadevOOo_unoapi,\
+	$$(DEFS) \
+	-Dorg.openoffice.test.arg.sce=$(SRCDIR)/qadevOOo/qa/unoapi/qadevOOo.sce \
+	-Dorg.openoffice.test.arg.xcl=$(SRCDIR)/qadevOOo/qa/unoapi/knownissues.xcl \
+))
 
 $(eval $(call gb_JunitTest_add_jars,qadevOOo_unoapi,\
 	$(OUTDIR)/bin/OOoRunner.jar \
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
+	$(OUTDIR)/bin/juh.jar \
 ))
 
 $(eval $(call gb_JunitTest_add_sourcefiles,qadevOOo_unoapi,\

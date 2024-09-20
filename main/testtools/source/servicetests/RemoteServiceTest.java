@@ -33,13 +33,19 @@ import com.sun.star.container.XSet;
 import com.sun.star.lang.XMultiComponentFactory;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
-import complexlib.ComplexTestCase;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 
+import org.junit.Test;
+
 public final class RemoteServiceTest extends TestBase {
+    @Test
+    public void test() throws Exception {
+        super.runTest();
+    }
+
     protected TestServiceFactory getTestServiceFactory() throws Exception {
         final Process p = Runtime.getRuntime().exec(new String[] {
             "java", "-classpath", System.getProperty("java.class.path"),

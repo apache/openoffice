@@ -1970,6 +1970,20 @@ sal_Bool TransferableDataHelper::GetGDIMetaFile( const DataFlavor& rFlavor, GDIM
 		}
 	}
 
+	if( !bRet &&
+		HasFormat( SOT_FORMATSTR_ID_SVG ) &&
+		SotExchange::GetFormatDataFlavor( SOT_FORMATSTR_ID_SVG, aSubstFlavor ) &&
+		GetSotStorageStream( aSubstFlavor, xStm ) )
+	{
+		Graphic aGraphic;
+
+		if( GraphicConverter::Import( *xStm, aGraphic ) == ERRCODE_NONE )
+		{
+			rMtf = aGraphic.GetGDIMetaFile();
+			bRet = sal_True;
+		}
+	}
+
 	return bRet;
 }
 

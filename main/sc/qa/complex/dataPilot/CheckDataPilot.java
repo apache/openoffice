@@ -47,7 +47,6 @@ import complex.dataPilot._XPropertySet;
 import complex.dataPilot._XNamed;
 import complex.dataPilot._XDataPilotDescriptor;
 import complex.dataPilot._XDataPilotTable;
-// import complexlib.ComplexTestCase;
 import lib.StatusException;
 import lib.TestParameters;
 import util.SOfficeFactory;
@@ -83,15 +82,6 @@ public class CheckDataPilot {
      * The test parameters
      */
     private static TestParameters param = null;
-
-    /**
-     * Get all test methods
-     * @return The test methods
-     */
-    public String[] getTestMethodNames() {
-        return new String[]{"testDataPilotTableObject",
-                            "testDataPilotFieldObject"};
-    }
 
     /**
      * Test the data pilot field object:
@@ -170,7 +160,6 @@ public class CheckDataPilot {
     @Before public void before() {
 //        Object oInterface = null;
 
-        // SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)param.getMSF() );
         final XMultiServiceFactory xMsf = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
         SOfficeFactory SOF = SOfficeFactory.getFactory(xMsf);
 

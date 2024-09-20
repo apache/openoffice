@@ -30,15 +30,14 @@ import com.sun.star.lib.uno.typeinfo.TypeInfo;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 import com.sun.star.uno.XInterface;
-import complexlib.ComplexTestCase;
 
-public final class Bug92174_Test extends ComplexTestCase {
-    public String[] getTestMethodNames() {
-        return new String[] { "test" };
-    }
+import org.junit.Test;
+import static org.junit.Assert.*;
 
+public final class Bug92174_Test {
+    @Test
     public void test() throws Exception {
-        assure("test",
+        assertTrue("test",
                new TestBed().execute(new Provider(), false, Client.class, 0));
     }
 

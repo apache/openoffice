@@ -29,11 +29,11 @@ $(eval $(call gb_JunitTest_set_defs,svl_complex,\
 ))
 
 $(eval $(call gb_JunitTest_add_jars,svl_complex,\
-	$(OUTDIR)/bin/OOoRunner.jar \
 	$(OUTDIR)/bin/ridl.jar \
 	$(OUTDIR)/bin/test.jar \
 	$(OUTDIR)/bin/unoil.jar \
 	$(OUTDIR)/bin/jurt.jar \
+	$(OUTDIR)/bin/juh.jar \
 	$(OUTDIR)/bin/ConnectivityTools.jar \
 ))
 
@@ -46,10 +46,12 @@ $(eval $(call gb_JunitTest_add_sourcefiles,svl_complex,\
 	svl/qa/complex/passwordcontainer/Test01 \
 	svl/qa/complex/passwordcontainer/PasswordContainerTest \
 	svl/qa/complex/passwordcontainer/MasterPasswdHandler \
+	svl/qa/complex/numberformatter/NumberFormatterUnitTest \
 ))
 
 $(eval $(call gb_JunitTest_add_classes,svl_complex,\
 	complex.passwordcontainer.PasswordContainerUnitTest \
+	complex.numberformatter.NumberFormatterUnitTest \
 ))
 
 # vim: set noet sw=4 ts=4:

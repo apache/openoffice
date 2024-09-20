@@ -95,7 +95,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
         /** @short  this handler can provide different
                     types of configuration.
                     
-            @descr  Means: a global or a module dependend
+            @descr  Means: a global or a module dependent
                     or ... configuration.
          */                    
         enum EConfigType
@@ -160,7 +160,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
         
         //---------------------------------------
         /** @short  specify the application module for a module
-                    dependend configuration.
+                    dependent configuration.
                     
             @descr  Will be used only, if m_sResourceType is set to
                     "module". Further it must be a valid module identifier
@@ -185,7 +185,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     where the current configuration set exists.
          
             @descr  Note: If this preset handler works in document mode
-                    this member is meaned relative to the document root ...
+                    this member is meant relative to the document root ...
                     not to the share layer root!
                     
                     Further is defined, that m_xWorkingStorageUser
@@ -313,13 +313,13 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     work on a new type of configuration sets.
 
             @param  eConfigType
-                    differ between global or module dependend configuration.
+                    differ between global or module dependent configuration.
                     
             @param  sResourceType
                     differ between menubar/toolbar/accelerator/... configuration.
 
             @param  sModule
-                    if sResourceType is set to a module dependend configuration,
+                    if sResourceType is set to a module dependent configuration,
                     it address the current application module.
                     
             @param  xDocumentRoot
@@ -332,7 +332,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     in case this configuration supports localized entries,
                     the current locale must be set.
                     
-                    Localzation will be represented as directory structure
+                    Localization will be represented as directory structure
                     of provided presets. Means: you call us with a preset name "default";
                     and we use e.g. "/en-US/default.xml" internally.
                     
@@ -355,7 +355,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     specified target.
                     
             @descr  Means: copy share/.../<preset>.xml user/.../<target>.xml
-                    Note: The target will be overwritten completly or
+                    Note: The target will be overwritten completely or
                     created as new by this operation!
 
             @param  sPreset
@@ -378,7 +378,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     and return it.
         
             @descr  Note: Because presets resist inside the share
-                    layer, they will be opened readonly everytimes.
+                    layer, they will be opened readonly every time.
 
             @param  sPreset
                     the ALIAS name of an existing preset.
@@ -405,7 +405,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     
             @param  bCreateIfMissing
                     create target file, if it does not still exist.
-                    Note: That does not means reseting of an existing file!
+                    Note: That does not means resetting of an existing file!
                     
             @return The opened target stream ... or NULL if the target does not exists
                     or couldn't be created as new one.
@@ -419,7 +419,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     
             @descr  We have to call commit on all cached sub storages on the
                     path from the root storage upside down to the working storage
-                    (which are not really used, but required to be holded alive!).
+                    (which are not really used, but required to be held alive!).
          */
         void commitUserChanges();
         

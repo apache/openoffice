@@ -279,7 +279,7 @@ IMPL_LINK( ImpPathDialog, SelectHdl, ListBox *, p )
 	if( p == pDirList )
 	{
 		// isolate the pure name of the entry
-		// removing trainling stuff and leading spaces
+		// removing trailing stuff and leading spaces
 		UniString aEntry( pDirList->GetSelectEntry() );
 
 		aEntry.EraseLeadingChars( ' ' );
@@ -372,7 +372,7 @@ IMPL_LINK( ImpPathDialog, ClickHdl, Button*, pBtn )
 IMPL_LINK( ImpPathDialog, DblClickHdl, ListBox*, pBox )
 {
 	// isolate the pure name of the entry
-	// removing trainling stuff and leading spaces
+	// removing trailing stuff and leading spaces
 	UniString aEntry( pBox->GetSelectEntry() );
 
 	aEntry.EraseLeadingChars( ' ' );

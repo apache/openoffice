@@ -116,7 +116,7 @@ long ReadAlign(SvStorageStream *pS, long nPos, int nAmount)
 // or embedded in the document.
 
 // [out]location     path to the stream to where the image is to be stored,
-//               if same name exists in folder then this function calcuates a new name
+//               if same name exists in folder then this function calculates a new name
 // [in] data     raw bytes of image to be stored.
 // [in] dataLen  no. byte to be stored
 //

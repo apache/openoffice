@@ -22,7 +22,6 @@
 
 package complex.tempfile;
 
-// import complexlib.ComplexTestCase;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.ucb.XSimpleFileAccess;
 import com.sun.star.uno.UnoRuntime;
@@ -38,19 +37,9 @@ import static org.junit.Assert.*;
 /* Document.
  */
 
-public class TempFileUnitTest /* extends ComplexTestCase */ {
+public class TempFileUnitTest {
     private XMultiServiceFactory m_xMSF = null;
     private XSimpleFileAccess m_xSFA = null;
-    
-//    public String[] getTestMethodNames() {
-//        return new String[] {
-//            "ExecuteTest01",
-//            "ExecuteTest02"};
-//    }
-//
-//    public String getTestObjectName() {
-//        return "TempFileUnitTest";
-//    }
     
     @Before public void before() {
         m_xMSF = getMSF();

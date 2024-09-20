@@ -30,21 +30,21 @@
 namespace connectivity
 {
     //==================================================================
-	// Ableitung von String mit ueberladenen GetToken/GetTokenCount-Methoden
-	// Speziell fuer FLAT FILE-Format: Strings koennen gequotet sein
+	// Derivation of string with overloaded GetToken/GetTokenCount methods
+	// Especially for FLAT FILE format: Strings can be quoted
 	//==================================================================
 	class OOO_DLLPUBLIC_FILE QuotedTokenizedString
 	{
-        String m_sString;
+        ::rtl::OUString m_sString;
 	public:
         QuotedTokenizedString() {}
-        QuotedTokenizedString(const String& _sString) : m_sString(_sString){}
+        QuotedTokenizedString(const ::rtl::OUString& _sString) : m_sString(_sString){}
 
-		xub_StrLen	GetTokenCount( sal_Unicode cTok , sal_Unicode cStrDel ) const;
-		void		GetTokenSpecial( String& _rStr,xub_StrLen& nStartPos, sal_Unicode cTok = ';', sal_Unicode cStrDel = '\0' ) const;
-        inline String& GetString() { return m_sString; }
-        inline xub_StrLen Len() const { return m_sString.Len(); }
-        inline operator String&() { return m_sString; }
+        sal_Int32 GetTokenCount( sal_Unicode cTok , sal_Unicode cStrDel ) const;
+		void GetTokenSpecial( ::rtl::OUString* _rStr, sal_Int32& nStartPos, sal_Unicode cTok = ';', sal_Unicode cStrDel = '\0' ) const;
+        inline ::rtl::OUString& GetString() { return m_sString; }
+        inline sal_Int32 Len() const { return m_sString.getLength(); }
+        inline operator ::rtl::OUString&() { return m_sString; }
 	};
 }
 

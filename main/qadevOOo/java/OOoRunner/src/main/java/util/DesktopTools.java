@@ -273,7 +273,7 @@ public class DesktopTools
         }
         catch (com.sun.star.uno.Exception e)
         {
-            throw new IllegalArgumentException("Document could not be loaded");
+            throw new IllegalArgumentException("Document could not be loaded" + (e.getMessage() != null ? (": " + e.getMessage()) : ""));
         }
 
         bringWindowToFront(oDoc);

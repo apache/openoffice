@@ -48,9 +48,18 @@ import connectivity.tools.HsqlDatabase;
 import connectivity.tools.sdb.Connection;
 import java.io.FileOutputStream;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
 
-public class FormControlTest extends complexlib.ComplexTestCase implements XSQLErrorListener
+
+public class FormControlTest implements XSQLErrorListener
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
     private static String s_tableName        = "CTC_form_controls";
 
     private HsqlDatabase            m_databaseDocument;
@@ -67,33 +76,28 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
     private final String            m_dataSourceName = "integration.forms.FormControlTest";
 
     /* ------------------------------------------------------------------ */
-    public String[] getTestMethodNames()
+
+    @BeforeClass
+    public static void beforeClass() throws Exception
     {
-        return new String[] {
-            "checkFirstRow",
-            "checkInsertRow",
-            "checkImageControl",
-            "checkCrossUpdates_checkBox",
-            "checkCrossUpdates_radioButton",
-            "checkRowUpdates",
-            "checkEmptyIsNull"
-        };
+        officeConnection.setUp();
     }
 
-    /* ------------------------------------------------------------------ */
-    public String getTestObjectName()
+    @AfterClass
+    public static void afterClass() throws Exception
     {
-        return "Database Form Controls Test";
+        officeConnection.tearDown();
     }
 
     /* ------------------------------------------------------------------ */
     /// pre-test initialization
+    @Before
     public void before() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // ensure that we have a data source to work with, and the required tables
         if ( !ensureDataSource() || !ensureTables() )
         {
-            failed( "could not access the required data source or table therein." );
+            fail( "could not access the required data source or table therein." );
             return;
         }
 
@@ -104,6 +108,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkFirstRow() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         moveToFirst();
@@ -121,12 +126,13 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             || !checkShortValue ( (short)1,     "f_tinyint",        "State"          )
             )
         {
-            failed( "checking the content of one or more controls on the first row failed (see the log for details)" );
+            fail( "checking the content of one or more controls on the first row failed (see the log for details)" );
             return;
         }
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkInsertRow() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // move the cursor to the insert row
@@ -135,20 +141,21 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         // and check the content of the various controls
         if  ( !verifyCleanInsertRow() )
         {
-            failed( "checking the content of one or more controls on the insert row failed (see the log for details)" );
+            fail( "checking the content of one or more controls on the insert row failed (see the log for details)" );
             return;
         }
     }
 
     /* ------------------------------------------------------------------ */
     /// some tests with the image control
+    @Test
     public void checkImageControl() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // since we did not yet insert any image, the control should not display one ...
         moveToFirst();
         if ( !verifyReferenceImage( new byte[0] ) )
         {
-            failed( "image control failed to display empty image" );
+            fail( "image control failed to display empty image" );
             return;
         }
 
@@ -159,7 +166,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
 
         if ( !verifyReferenceImage( getSamplePictureBytes() ) )
         {
-            failed( "image control does not display the sample image as required" );
+            fail( "image control does not display the sample image as required" );
             return;
         }
 
@@ -169,7 +176,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         // still needs to be the sample image
         if ( !verifyReferenceImage( getSamplePictureBytes() ) )
         {
-            failed( "image control does not, after saving the record, display the sample image as required" );
+            fail( "image control does not, after saving the record, display the sample image as required" );
             return;
         }
 
@@ -177,7 +184,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         moveToNext();
         if ( !verifyReferenceImage( new byte[0] ) )
         {
-            failed( "image control failed to display empty image, after coming from a non-empty image" );
+            fail( "image control failed to display empty image, after coming from a non-empty image" );
             return;
         }
 
@@ -185,7 +192,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         moveToFirst();
         if ( !verifyReferenceImage( getSamplePictureBytes() ) )
         {
-            failed( "image control does not, after coming back to the record, display the sample image as required" );
+            fail( "image control does not, after coming back to the record, display the sample image as required" );
             return;
         }
 
@@ -193,14 +200,14 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         xImageModel.setPropertyValue( "ImageURL", new String() );
         if ( !verifyReferenceImage( new byte[0] ) )
         {
-            failed( "image control failed to remove the image" );
+            fail( "image control failed to remove the image" );
             return;
         }
         nextRecordByUI();
         previousRecordByUI();
         if ( !verifyReferenceImage( new byte[0] ) )
         {
-            failed( "image still there after coming back, though we just removed it" );
+            fail( "image still there after coming back, though we just removed it" );
             return;
         }
     }
@@ -211,6 +218,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
      *  boxes and radio buttons: They must commit their content to the underlying column as soon
      *  as the change is made, *not* only upon explicit commit
      */
+    @Test
     public void checkCrossUpdates_checkBox() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // move to the first record
@@ -219,7 +227,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             || !checkDoubleValue( 1, "f_tinyint_format", "EffectiveValue" )
             )
         {
-            failed( "huh? inconsistence in the test!" );
+            fail( "huh? inconsistence in the test!" );
             // we created the sample data in a way that the f_tinyint field should contain a "1" at the first
             // record. We already asserted the proper function of the check box in checkFirstRow, so if this
             // fails here, the script became inconsistent
@@ -232,7 +240,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         // setting the state of the check box needs to be reflected in the formatted field immediately
         if ( !checkDoubleValue( 0, "f_tinyint_format", "EffectiveValue" ) )
         {
-            failed( "cross-update failed: updating the check box should result in updating the same-bound formatted field (1)!" );
+            fail( "cross-update failed: updating the check box should result in updating the same-bound formatted field (1)!" );
             return;
         }
 
@@ -240,7 +248,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         checkModel.setPropertyValue( "State", new Short( (short)2 ) );
         if ( !checkNullValue( "f_tinyint_format", "EffectiveValue" ) )
         {
-            failed( "cross-update failed: updating the check box should result in updating the same-bound formatted field (2)!" );
+            fail( "cross-update failed: updating the check box should result in updating the same-bound formatted field (2)!" );
             return;
         }
 
@@ -251,7 +259,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             || !checkDoubleValue( 1, "f_tinyint_format", "EffectiveValue" )
             )
         {
-            failed( "either the check box or the formatted field failed to recognize the UNDO!" );
+            fail( "either the check box or the formatted field failed to recognize the UNDO!" );
             return;
         }
 
@@ -263,7 +271,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         if  (  !checkShortValue ( (short)1, "f_tinyint", "State" )
             )
         {
-            failed( "the check box should not be updated here! (did the formatted model commit immediately?)" );
+            fail( "the check box should not be updated here! (did the formatted model commit immediately?)" );
             return;
         }
 
@@ -273,7 +281,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         if  (  !checkShortValue ( (short)0, "f_tinyint", "State" )
             )
         {
-            failed( "formatted field did not commit (or check box did not update)" );
+            fail( "formatted field did not commit (or check box did not update)" );
             return;
         }
 
@@ -285,6 +293,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
     /** very similar to checkCrossUpdates_checkBox - does nearly the same for the radio buttons. See there for more
      *  explanations.
      */
+    @Test
     public void checkCrossUpdates_radioButton() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // move to the first record
@@ -293,7 +302,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             || !checkStringValue( "none", "f_text_enum_text", "Text" )
             )
         {
-            failed( "huh? inconsistence in the test!" );
+            fail( "huh? inconsistence in the test!" );
             return;
         }
 
@@ -303,7 +312,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         // setting the state of the radio button needs to be reflected in the formatted field immediately
         if ( !checkStringValue( "normal", "f_text_enum_text", "Text" ) )
         {
-            failed( "cross-update failed: updating the radio button should result in updating the same-bound text field (1)!" );
+            fail( "cross-update failed: updating the radio button should result in updating the same-bound text field (1)!" );
             return;
         }
 
@@ -311,7 +320,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         getRadioModel( "radio_group", "important" ).setPropertyValue( "State", new Short( (short)1 ) );
         if ( !checkStringValue( "important", "f_text_enum_text", "Text" ) )
         {
-            failed( "cross-update failed: updating the radio button should result in updating the same-bound text field (2)!" );
+            fail( "cross-update failed: updating the radio button should result in updating the same-bound text field (2)!" );
             return;
         }
 
@@ -322,7 +331,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             || !checkStringValue( "none", "f_text_enum_text", "Text" )
             )
         {
-            failed( "either the radio button or the text field failed to recognize the UNDO!" );
+            fail( "either the radio button or the text field failed to recognize the UNDO!" );
             return;
         }
 
@@ -334,7 +343,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         if  (  !checkRadios( (short)1, (short)0, (short)0 )
             )
         {
-            failed( "the radio buttons should not be updated here! (did the formatted model commit immediately?)" );
+            fail( "the radio buttons should not be updated here! (did the formatted model commit immediately?)" );
             return;
         }
 
@@ -344,7 +353,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         if  (  !checkRadios( (short)0, (short)1, (short)0 )
             )
         {
-            failed( "text field did not commit (or radio button did not update)" );
+            fail( "text field did not commit (or radio button did not update)" );
             return;
         }
 
@@ -355,11 +364,12 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
     /* ------------------------------------------------------------------ */
     /** some tests with updating the table via our controls
      */
+    @Test
     public void checkRowUpdates() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // start with inserting a new record
         moveToInsertRow();
-        assure( "insert row not in expected clean state", verifyCleanInsertRow() );
+        assertTrue( "insert row not in expected clean state", verifyCleanInsertRow() );
 
         userTextInput( "ID", "3", true );
         userTextInput( "f_integer", "729", true );
@@ -381,7 +391,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             || !checkIntValue   ( 23595900, "f_time",    "Time" )
             )
         {
-            failed( "the changes we made on the insert row have not been committed" );
+            fail( "the changes we made on the insert row have not been committed" );
             return;
         }
 
@@ -407,7 +417,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             || !checkIntValue   ( 17050000, "f_time",    "Time" )
             )
         {
-            failed( "the changes we made on the insert row have not been committed" );
+            fail( "the changes we made on the insert row have not been committed" );
             return;
         }
 
@@ -418,11 +428,12 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
     /** checks the "ConvertEmptyToNull" property behavior of an edit control
      *
      */
+    @Test
     public void checkEmptyIsNull() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // start with inserting a new record
         moveToInsertRow();
-        assure( "insert row not in expected clean state", verifyCleanInsertRow() );
+        assertTrue( "insert row not in expected clean state", verifyCleanInsertRow() );
 
         // make an input in any field, but leave the edit control which is bound to a required field
         // empty
@@ -436,7 +447,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         // (#i92471#)
         m_mostRecentErrorEvent = null;
         nextRecordByUI();
-        assure( "updating an incomplete record did not work as expected", m_mostRecentErrorEvent == null );
+        assertTrue( "updating an incomplete record did not work as expected", m_mostRecentErrorEvent == null );
     }
 
     /* ------------------------------------------------------------------ */
@@ -454,6 +465,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
 
     /* ------------------------------------------------------------------ */
     /// post-test cleanup
+    @After
     public void after() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // close our document
@@ -469,7 +481,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
     /* ------------------------------------------------------------------ */
     private boolean ensureDataSource() throws Exception
     {
-        m_orb = (XMultiServiceFactory)param.getMSF();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
 
         XNameAccess databaseContext = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class,
             m_orb.createInstance( "com.sun.star.sdb.DatabaseContext" ) );
@@ -604,14 +616,14 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
     private boolean ensureTables() throws com.sun.star.uno.Exception,  java.lang.Exception
     {
         Connection connection = new Connection( m_dataSource.getConnection( "", "" ) );
-        assure( "could not connect to the data source", connection != null );
+        assertTrue( "could not connect to the data source", connection != null );
 
         // drop the table, if it already exists
         if  (  !implExecuteStatement( "DROP TABLE \"" + s_tableName + "\" IF EXISTS" )
             || !implExecuteStatement( getCreateTableStatement() )
             )
         {
-            failed( "could not create the required sample table!" );
+            fail( "could not create the required sample table!" );
             return false;
         }
 
@@ -620,7 +632,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         for ( int i=0; i<aValues.length; ++i )
             if ( !implExecuteStatement( sInsertionPrefix + aValues[ i ] + ")" ) )
             {
-                failed( "could not create the required sample data" );
+                fail( "could not create the required sample data" );
                 return false;
             }
 
@@ -638,15 +650,15 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
     {
         if ( ((Short)getRadioModel( "radio_group", "none" ).getPropertyValue( "State" )).shortValue() != stateNone )
         {
-            failed( "wrong value of the 'none' radio button!" );
+            fail( "wrong value of the 'none' radio button!" );
         }
         else if ( ((Short)getRadioModel( "radio_group", "normal" ).getPropertyValue( "State" )).shortValue() != stateNormal )
         {
-            failed( "wrong value of the 'normal' radio button!" );
+            fail( "wrong value of the 'normal' radio button!" );
         }
         else if ( ((Short)getRadioModel( "radio_group", "important" ).getPropertyValue( "State" )).shortValue() != stateImportant )
         {
-            failed( "wrong value of the 'important' radio button!" );
+            fail( "wrong value of the 'important' radio button!" );
         }
         else
             return true;
@@ -660,9 +672,9 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         Object value = getControlModel( fieldName ).getPropertyValue( propertyName );
         if ( !util.utils.isVoid( value ) )
         {
-            log.println( "wrong value of the " + fieldName + " field!" );
-            log.println( "  expected: <null/>" );
-            log.println( "  found   : " + value.toString() );
+            System.out.println( "wrong value of the " + fieldName + " field!" );
+            System.out.println( "  expected: <null/>" );
+            System.out.println( "  found   : " + value.toString() );
         }
         else
             return true;
@@ -682,16 +694,16 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             int currentValue = ((Integer)getControlModel( fieldName ).getPropertyValue( propertyName )).intValue();
             if ( currentValue != requiredValue )
             {
-                log.println( "wrong value of the " + fieldName + " field!" );
-                log.println( "  expected: " + String.valueOf( requiredValue ) );
-                log.println( "  found   : " + String.valueOf( currentValue ) );
+                System.out.println( "wrong value of the " + fieldName + " field!" );
+                System.out.println( "  expected: " + String.valueOf( requiredValue ) );
+                System.out.println( "  found   : " + String.valueOf( currentValue ) );
             }
             else
                 return true;
         }
         catch( com.sun.star.uno.Exception e )
         {
-            log.println( "caught an exception while retrieving property value '" + propertyName + "' of control model '" + fieldName + "'" );
+            System.err.println( "caught an exception while retrieving property value '" + propertyName + "' of control model '" + fieldName + "'" );
             throw e;
         }
 
@@ -706,16 +718,16 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
             short currentValue = ((Short)getControlModel( fieldName ).getPropertyValue( propertyName )).shortValue();
             if ( currentValue != requiredValue )
             {
-                log.println( "wrong value of the " + fieldName + " field!" );
-                log.println( "  expected: " + String.valueOf( requiredValue ) );
-                log.println( "  found   : " + String.valueOf( currentValue ) );
+                System.out.println( "wrong value of the " + fieldName + " field!" );
+                System.out.println( "  expected: " + String.valueOf( requiredValue ) );
+                System.out.println( "  found   : " + String.valueOf( currentValue ) );
             }
             else
                 return true;
         }
         catch( com.sun.star.uno.Exception e )
         {
-            log.println( "caught an exception while retrieving property value '" + propertyName + "' of control model '" + fieldName + "'" );
+            System.err.println( "caught an exception while retrieving property value '" + propertyName + "' of control model '" + fieldName + "'" );
             throw e;
         }
 
@@ -728,9 +740,9 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         double currentValue = ((Double)getControlModel( fieldName ).getPropertyValue( propertyName )).doubleValue();
         if ( currentValue != requiredValue )
         {
-            log.println( "wrong value of the " + fieldName + " field!" );
-            log.println( "  expected: " + String.valueOf( requiredValue ) );
-            log.println( "  found   : " + String.valueOf( currentValue ) );
+            System.out.println( "wrong value of the " + fieldName + " field!" );
+            System.out.println( "  expected: " + String.valueOf( requiredValue ) );
+            System.out.println( "  found   : " + String.valueOf( currentValue ) );
         }
         else
             return true;
@@ -744,9 +756,9 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         String currentValue = (String)getControlModel( fieldName ).getPropertyValue( propertyName );
         if ( !currentValue.equals( requiredValue ) )
         {
-            log.println( "wrong value of the " + fieldName + " field!" );
-            log.println( "  expected: " + requiredValue );
-            log.println( "  found   : " + currentValue );
+            System.out.println( "wrong value of the " + fieldName + " field!" );
+            System.out.println( "  expected: " + requiredValue );
+            System.out.println( "  found   : " + currentValue );
         }
         else
             return true;
@@ -874,7 +886,7 @@ public class FormControlTest extends complexlib.ComplexTestCase implements XSQLE
         FileOutputStream aFile = new FileOutputStream( m_sImageURL );
         aFile.write( getSamplePicture() );
         aFile.close();
-        log.println( "created temporary image file: " + m_sImageURL );
+        System.out.println( "created temporary image file: " + m_sImageURL );
 
         // for later setting the url at the imaghe control, we need a real URL, no system path
         m_sImageURL = util.utils.getOfficeTemp( m_orb ) + "image.gif";

@@ -14,6 +14,6 @@ fm	forms\source\resource					nmake	-	all	fm_resource fm_inc NULL
 fm  forms\source\richtext                   nmake   -   all fm_richtext fm_inc NULL
 fm  forms\source\runtime                    nmake   -   all frm_runtime NULL
 fm  forms\util                              nmake   -   all fm_util fm_component fm_solar_component fm_solar_control fm_helper fm_misc fm_resource fm_richtext frm_runtime fm_xforms NULL
-fm  forms\qa                                nmake   -   all fm_qa NULL
+fm  forms\qa\integration                                nmake   -   all fm_qa NULL
 fm forms\qa\unoapi nmake - all fm_qa_unoapi NULL
 fm forms\qa\complex\forms nmake - all fm_qa_complex NULL

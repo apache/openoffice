@@ -84,7 +84,7 @@ public:
 	virtual ~AccessibleContextBase (void);
 
 
-	/** Call all accessiblity event listeners to inform them about the
+	/** Call all accessibility event listeners to inform them about the
         specified event.
         @param aEventId
             Id of the event type.

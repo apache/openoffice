@@ -20,95 +20,45 @@
 #**************************************************************
 
 
+.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
+nothing .PHONY:
+.ELSE
+
 PRJ = ..$/..$/..$/..$/..
 PRJNAME = filter
 TARGET  = TypeDetection
+
+.IF "$(OOO_JUNIT_JAR)" != ""
 PACKAGE = complex$/filter$/detection$/typeDetection
 
-# --- Settings -----------------------------------------------------
+# here store only Files which contain a @Test
+JAVATESTFILES = \
+    TypeDetection.java
+
+# put here all other files
+JAVAFILES = $(JAVATESTFILES) \
+    Helper.java
+
+JARFILES        = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar test.jar OOoRunner.jar
+EXTRAJARFILES = $(OOO_JUNIT_JAR)
+
+JAVAIFLAGS=\
+    -Dorg.openoffice.test.arg.tdoc=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/documents \
+    -Dorg.openoffice.test.arg.properties=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/TypeDetection.props \
+    -Dorg.openoffice.test.arg.files.csv=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/files.csv \
+    -Dorg.openoffice.test.arg.preselectedFilter.csv=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/preselectedFilter.csv \
+    -Dorg.openoffice.test.arg.preselectedType.csv=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/preselectedType.csv \
+    -Dorg.openoffice.test.arg.serviceName.csv=$(SRC_ROOT)/filter/qa/complex/filter/detection/typeDetection/serviceName.csv
+# Sample how to debug
+# JAVAIFLAGS+=-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9003,suspend=y
+
+.END
+
 .INCLUDE: settings.mk
+.INCLUDE: target.mk
+.INCLUDE: installationtest.mk
 
+ALLTAR : javatest
 
-#----- compile .java files -----------------------------------------
-
-JARFILES        = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar OOoRunner.jar
-JAVAFILES       = TypeDetection.java Helper.java
-JAVACLASSFILES	= $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-#----- make a jar from compiled files ------------------------------
-
-MAXLINELENGTH = 100000
-
-JARCLASSDIRS    = $(PACKAGE)
-JARTARGET       = $(TARGET).jar
-JARCOMPRESS 	= TRUE
-
-# --- Parameters for the test --------------------------------------
-
-# start an office if the parameter is set for the makefile
-.IF "$(OFFICE)" == ""
-CT_APPEXECCOMMAND =
-.ELSE
-CT_APPEXECCOMMAND = -AppExecutionCommand "$(OFFICE)$/soffice -accept=socket,host=localhost,port=8100;urp;"
-.ENDIF
-
-# test base is java complex
-CT_TESTBASE = -TestBase java_complex
-
-# test looks something like the.full.package.TestName
-CT_TEST     = -o $(PACKAGE:s\$/\.\).TypeDetection
-
-# start the runner application
-CT_APP      = org.openoffice.Runner
-
-# --- Targets ------------------------------------------------------
-
-.IF "$(depend)" == ""
-        CHMOD $(CLASSDIR)$/$(PACKAGE)$/TypeDetection.props \
-        $(CLASSDIR)$/$(PACKAGE)$/preselectedFilter.csv \
-        $(CLASSDIR)$/$(PACKAGE)$/preselectedType.csv \
-        $(CLASSDIR)$/$(PACKAGE)$/serviceName.csv \
-        $(CLASSDIR)$/$(PACKAGE)$/files.csv : ALLTAR
-.ELSE
-        CHMOD $(CLASSDIR)$/$(PACKAGE)$/TypeDetection.props \
-        $(CLASSDIR)$/$(PACKAGE)$/preselectedFilter.csv \
-        $(CLASSDIR)$/$(PACKAGE)$/preselectedType.csv \
-        $(CLASSDIR)$/$(PACKAGE)$/serviceName.csv \
-        $(CLASSDIR)$/$(PACKAGE)$/files.csv : ALLDEP
-.ENDIF
-
-.INCLUDE :  target.mk
-
-$(CLASSDIR)$/$(PACKAGE)$/preselectedFilter.csv : preselectedFilter.csv
-    cp preselectedFilter.csv $(CLASSDIR)$/$(PACKAGE)$/preselectedFilter.csv
-    jar uf $(CLASSDIR)$/$(JARTARGET) -C $(CLASSDIR) $(PACKAGE)$/preselectedFilter.csv
-
-$(CLASSDIR)$/$(PACKAGE)$/preselectedType.csv : preselectedType.csv
-    cp preselectedType.csv $(CLASSDIR)$/$(PACKAGE)$/preselectedType.csv
-    jar uf $(CLASSDIR)$/$(JARTARGET) -C $(CLASSDIR) $(PACKAGE)$/preselectedType.csv
-
-$(CLASSDIR)$/$(PACKAGE)$/serviceName.csv : serviceName.csv
-    cp serviceName.csv $(CLASSDIR)$/$(PACKAGE)$/serviceName.csv
-    jar uf $(CLASSDIR)$/$(JARTARGET) -C $(CLASSDIR) $(PACKAGE)$/serviceName.csv
-
-$(CLASSDIR)$/$(PACKAGE)$/files.csv : files.csv
-    cp files.csv $(CLASSDIR)$/$(PACKAGE)$/files.csv  
-    jar uf $(CLASSDIR)$/$(JARTARGET) -C $(CLASSDIR) $(PACKAGE)$/files.csv
-
-$(CLASSDIR)$/$(PACKAGE)$/TypeDetection.props : TypeDetection.props
-    cp TypeDetection.props $(CLASSDIR)$/$(PACKAGE)$/TypeDetection.props
-    jar uf $(CLASSDIR)$/$(JARTARGET) -C $(CLASSDIR) $(PACKAGE)$/TypeDetection.props
-
-# --- chmod --------------------------------------------------------
-
-CHMOD :
-	chmod 444 $(CLASSDIR)$/$(PACKAGE)$/*.csv 
-	chmod 666 $(CLASSDIR)$/$(PACKAGE)$/*.props 
-
-RUN: run
-
-run:
-    java -cp $(CLASSPATH) $(CT_APP) $(CT_TESTBASE) $(CT_APPEXECCOMMAND) $(CT_TEST)
-
-
+.END
 

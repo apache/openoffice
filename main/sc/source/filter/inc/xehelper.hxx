@@ -35,7 +35,7 @@ class ScfProgressBar;
 /** The main progress bar for the export filter.
 
     This class encapsulates creation and initialization of sub progress
-    segments. The Activate***Segment() functions activate a specific segement
+    segments. The Activate***Segment() functions activate a specific segment
     of the main progress bar. The implementation of these functions contain the
     calculation of the needed size of the segment. Following calls of the
     Progress() function increase the currently activated sub segment.
@@ -150,7 +150,7 @@ public:
 //UNUSED2008-05      @param bWarn  true = Sets the internal flag that produces a warning box
 //UNUSED2008-05          after loading/saving the file, if the cell range list contains at
 //UNUSED2008-05          least one invalid range.
-//UNUSED2008-05      @return  true = Cell range list in rScRanges is completly valid. */
+//UNUSED2008-05      @return  true = Cell range list in rScRanges is completely valid. */
 //UNUSED2008-05  bool                CheckRangeList( const ScRangeList& rScRanges, bool bWarn );
 
     /** Checks and eventually crops the cell ranges to valid dimensions.
@@ -349,7 +349,7 @@ class EditEngine;
 /** Converts edit engine text objects to an Excel header/footer string.
     @descr  Header/footer content is divided into three parts: Left, center and
     right portion. All formatting information will be encoded in the Excel string
-    using special character seuences. A control sequence starts with the ampersand
+    using special character sequences. A control sequence starts with the ampersand
     character.
 
     Supported control sequences:

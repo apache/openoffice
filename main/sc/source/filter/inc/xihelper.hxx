@@ -98,7 +98,7 @@ public:
 //UNUSED2009-05     @param bWarn  true = Sets the internal flag that produces a warning box
 //UNUSED2009-05         after loading/saving the file, if the cell range list contains at
 //UNUSED2009-05         least one invalid range.
-//UNUSED2009-05     @return  true = Cell range list in rScRanges is completly valid. */
+//UNUSED2009-05     @return  true = Cell range list in rScRanges is completely valid. */
 //UNUSED2009-05 bool                CheckRangeList( const XclRangeList& rXclRanges, bool bWarn );
 
     /** Converts the passed Excel cell range list to a Calc cell range list.
@@ -157,7 +157,7 @@ struct XclFontData;
 /** Converts an Excel header/footer string into three edit engine text objects.
     @descr  Header/footer content is divided into three parts: Left, center and
     right portion. All formatting information is encoded in the Excel string
-    using special character seuences. A control sequence starts with the ampersand
+    using special character sequences. A control sequence starts with the ampersand
     character.
 
     Supported control sequences:

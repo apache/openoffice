@@ -400,7 +400,7 @@ inline void createTestFile( const ::rtl::OUString basename, const ::rtl::OUStrin
 	createTestFile( aBaseURL );
 }
 
-/** detete a temp test file using OUString name.
+/** delete a temp test file using OUString name.
 */
 inline void deleteTestFile( const ::rtl::OUString filename )
 {
@@ -891,7 +891,7 @@ namespace osl_FileBase
 #endif
     }
 
-    //use ".." in relartive path, the BasePath must exist on the file system
+    //use ".." in relative path, the BasePath must exist on the file system
     TEST_F(getAbsoluteFileURL, getAbsoluteFileURL_004_1)
     {
         //create two level directories under $Temp/PID/
@@ -1403,7 +1403,7 @@ namespace osl_FileBase
 		checkUNXBehaviour_getFileURLFromSystemPath(sSysPath, osl::FileBase::E_INVAL, "");
 		checkWNTBehaviour_getFileURLFromSystemPath(sSysPath, osl::FileBase::E_INVAL, "");
      }
-     	// start with "~user", not impletment
+     	// start with "~user", not implement
 	//      void SystemPath_FileURL::getFileURLFromSystemPath_006()
 
 
@@ -2762,7 +2762,7 @@ namespace osl_FileStatus
             		nError1 = pDir->getNextItem( m_aItem_2 );
 			ASSERT_TRUE(::osl::FileBase::E_None == nError1) << "get second item failed!";
 			pDir->close();
-			//mindy: failed on my RH9,so removed temporaly
+			//mindy: failed on my RH9,so removed temporarily
 			//nError1 = ::osl::DirectoryItem::get( aVolURL2, m_aVolumeItem );
 			//ASSERT_TRUE(::osl::FileBase::E_None == nError1) << "get volume item failed!";
 
@@ -4784,12 +4784,12 @@ namespace osl_DirectoryItem
         ASSERT_TRUE( FileBase::E_None == nError1 );
 
         ::osl::DirectoryItem    copyItem;
-        copyItem = rItem;               //assinment operator
+        copyItem = rItem;               //assignment operator
             ::osl::FileStatus   rFileStatus( FileStatusMask_FileName );
         nError1 = copyItem.getFileStatus( rFileStatus );
         ASSERT_TRUE( nError1 == FileBase::E_None );
 
-        ASSERT_TRUE(( sal_True == compareFileName( rFileStatus.getFileName( ), aTmpName2 ) )) << "test for copy_assin_Ctors function: test assinment operator here since it is same as copy constructor in test way.";
+        ASSERT_TRUE(( sal_True == compareFileName( rFileStatus.getFileName( ), aTmpName2 ) )) << "test for copy_assin_Ctors function: test assignment operator here since it is same as copy constructor in test way.";
     }
 
 	//---------------------------------------------------------------------

@@ -91,6 +91,11 @@ main/helpauthoring/pkg-desc/pkg-description.en-US
 
 # GitHub Readme
 README.md
+main/sc/README.md
+main/sd/README.md
+main/starmath/README.md
+main/sw/README.md
+main/swext/README.md
 test/README.md
 
 # own license files
@@ -1254,7 +1259,10 @@ main/extensions/source/macosx/spotlight/mdimporter/en.lproj/schema.strings
 
 main/desktop/test/deployment/update/defect/update/info1.update.xml
 main/desktop/test/deployment/update/defect/update/info2.update.xml
-
+test/smoketestdoc/manifest.empty
+test/testuno/data/uno/sc/fvt/Bug100989MergeAcross0AddsExtraEmptyCell.xml
+test/testuno/data/uno/sc/fvt/Bug128554FractionalSecondsIgnored.xml
+test/testuno/data/uno/sc/fvt/Bug81233ColumnZReference.xml
 
 ##############################################################################
 #

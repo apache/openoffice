@@ -51,9 +51,18 @@ import connectivity.tools.HsqlDatabase;
 import connectivity.tools.HsqlTableDescriptor;
 import org.openoffice.complex.forms.tools.ResultSet;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
 
-public class MasterDetailForms extends complexlib.ComplexTestCase implements com.sun.star.form.XLoadListener
+
+public class MasterDetailForms implements com.sun.star.form.XLoadListener
 {
+    private static final OfficeConnection officeConnection = new OfficeConnection();
     private XMultiServiceFactory    m_orb;
 
     private XPropertySet            m_masterForm;
@@ -63,6 +72,19 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
 
     final private Object            m_waitForLoad = new Object();
     private boolean                 m_loaded = false;
+
+    @BeforeClass
+    public static void beforeClass() throws Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception
+    {
+        officeConnection.tearDown();
+    }
+
 
     /** Creates a new instance of MasterDetailForms */
     public MasterDetailForms()
@@ -79,9 +101,10 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
     }
 
     /* ------------------------------------------------------------------ */
+    @Before
     public void before()
     {
-        m_orb = (XMultiServiceFactory)param.getMSF();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
     }
 
     /* ------------------------------------------------------------------ */
@@ -142,6 +165,7 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
     /* ------------------------------------------------------------------ */
     /** checks if master-detail relationships including multiple keys work
      */
+    @Test
     public void checkMultipleKeys() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         HsqlDatabase databaseDocument = null;
@@ -162,9 +186,9 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
             operateMasterAndWaitForDetailForm( loadMaster.getClass().getMethod( "load", new Class[] {} ), loadMaster, new Object[] { } );
 
             // okay, now the master form should be on the first record
-            assure( "wrong form state after loading (ID1)", m_masterResult.getInt(1) == 1 );
-            assure( "wrong form state after loading (ID2)", m_masterResult.getInt(2) == 1 );
-            assure( "wrong form state after loading (value)", m_masterResult.getString(3).equals( "First Record" ) );
+            assertTrue( "wrong form state after loading (ID1)", m_masterResult.getInt(1) == 1 );
+            assertTrue( "wrong form state after loading (ID2)", m_masterResult.getInt(2) == 1 );
+            assertTrue( "wrong form state after loading (value)", m_masterResult.getString(3).equals( "First Record" ) );
 
             // the "XResultSet.next" method
             Method methodNext = m_masterResult.getClass().getMethod( "next" , new Class[] {} );
@@ -178,13 +202,13 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
 
                 m_detailResult.last();
                 int masterPos = m_masterResult.getRow();
-                assure( "wrong number of records in detail form, for master form at pos " + masterPos,
+                assertTrue( "wrong number of records in detail form, for master form at pos " + masterPos,
                         ((Integer)m_detailForm.getPropertyValue( "RowCount" )).intValue() == expectedDetailRowCounts[ masterPos - 1 ] );
 
                 operateMasterAndWaitForDetailForm( methodNext, m_masterResult, new Object[] {} );
             }
             while ( !m_masterResult.isAfterLast() );
-            assure( "wrong number of records in master form", 2 == ((Integer)m_masterForm.getPropertyValue( "RowCount" )).intValue() );
+            assertTrue( "wrong number of records in master form", 2 == ((Integer)m_masterForm.getPropertyValue( "RowCount" )).intValue() );
         }
         finally
         {
@@ -209,6 +233,7 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
      *
      * Effectively, this test case verifies the issues #i106574# and #i105235# did not creep back in.
      */
+    @Test
     public void checkDetailFormDefaults() throws Exception
     {
         CRMDatabase database = null;
@@ -286,17 +311,17 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
             m_masterResult.absolute( 2 );
             impl_waitForLoadedEvent();
             // ... which should result in an empty sub form ...
-            assure( "test precondition not met: The second master form record is expected to have no detail records, " +
+            assertTrue( "test precondition not met: The second master form record is expected to have no detail records, " +
                 "else the test becomes meaningless", impl_isNewRecord( m_detailForm ) );
             // ... and in the "Name" column having the proper text
             String actualValue = (String)nameColumn.getPropertyValue( "Text" );
-            assureEquals( "#i105235#: default value in sub form not working (not propagated to column model)", defaultValue, actualValue );
+            assertEquals( "#i105235#: default value in sub form not working (not propagated to column model)", defaultValue, actualValue );
             // However, checking the column model's value alone is not enough - we need to ensure it is properly
             // propagated to the control.
             XGridFieldDataSupplier gridData = (XGridFieldDataSupplier)subDocument.getCurrentView().getControl(
                 gridControlModel, XGridFieldDataSupplier.class );
             actualValue = (String)(gridData.queryFieldData( 0, Type.STRING )[1]);
-            assureEquals( "#i105235#: default value in sub form not working (not propagated to column)", defaultValue, actualValue );
+            assertEquals( "#i105235#: default value in sub form not working (not propagated to column)", defaultValue, actualValue );
         }
         finally
         {
@@ -327,7 +352,7 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
         }
         catch ( Exception ex )
         {
-            failed( "obtaining the IsNew property failed" );
+            fail( "obtaining the IsNew property failed" );
         }
         return isNew;
     }
@@ -390,7 +415,7 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
         int masterValue = m_masterResult.getInt( locateMasterCols.findColumn( masterColName ) );
         int detailValue = m_detailResult.getInt( locateDetailCols.findColumn( detailColName ) );
 
-        assure( "values in linked column pair " + detailColName + "->" + masterColName + " (" + 
+        assertTrue( "values in linked column pair " + detailColName + "->" + masterColName + " (" + 
             detailValue + "->" + masterValue + ") do not match (master position: " + m_masterResult.getRow()  + ")!",
             masterValue == detailValue );
     }

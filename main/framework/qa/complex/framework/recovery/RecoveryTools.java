@@ -46,10 +46,12 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import lib.TestParameters;
-import share.LogWriter;
+import stats.SimpleLogWriter;
 import util.PropertyName;
 import util.UITools;
 import util.utils;
+import org.openoffice.test.Argument;
+
 
 /**
  * this class supports the <CODE>RecoverTest</CODE>. You will find here some helper
@@ -57,18 +59,14 @@ import util.utils;
  */
 public class RecoveryTools {
     
-    private final TestParameters param;
-    private final LogWriter log;
+    private final XMultiServiceFactory xMSF;
     
     /**
-     * Creates new OfficeWatcher
-     * @param param the test parameter
-     * @param log a log writer
+     * Creates new RecoveryTools
+     * @param xMSF the XMultiServiceFactory
      */
-    public RecoveryTools(TestParameters param, LogWriter log) {
-        this.param = param;
-        this.log = log;
-        
+    public RecoveryTools(XMultiServiceFactory xMSF) {
+        this.xMSF = xMSF;
     }
     
     /**
@@ -109,14 +107,14 @@ public class RecoveryTools {
         // This could consumes more time then the TimeOut allow.
         int counter = 0;
         int multi = 5;
-        int pause = param.getInt(PropertyName.SHORT_WAIT)*10;
-        int timeOut = param.getInt(PropertyName.THREAD_TIME_OUT)*5;
+        int pause = Integer.parseInt(Argument.get("SHORT_WAIT"))*10;
+        int timeOut = Integer.parseInt(Argument.get("THREAD_TIME_OUT"))*5;
         int maximum = (timeOut / pause) * multi;
         
         XDialog oDialog = getActiveDialog(xMSF);
         
         while (oDialog == null && (counter < maximum)){
-            log.println("waiting until the office has recoverd... remaining " + (timeOut * multi - pause * counter)/1000 + " seconds");
+            System.out.println("waiting until the office has recoverd... remaining " + (timeOut * multi - pause * counter)/1000 + " seconds");
             pause(pause);
             oDialog = getActiveDialog(xMSF);
             counter ++;
@@ -128,7 +126,7 @@ public class RecoveryTools {
      * halt the thread for some time
      */    
     public void pause(){
-       pause(param.getInt(PropertyName.SHORT_WAIT));
+       pause(Integer.parseInt(Argument.get("SHORT_WAIT")));
     }
     
     /**
@@ -158,19 +156,19 @@ public class RecoveryTools {
             String recoveryFolder = (String) recFiles.get("recoveryFolder");
             String recoveryXCU = (String) recFiles.get("recoveryXCU");
 
-            log.println("try to remove content of '" + recoveryFolder + "'");
+            System.out.println("try to remove content of '" + recoveryFolder + "'");
             
             File rf = new File(recoveryFolder);
             
             boolean success = FileTools.cleanDir(rf);
-            log.println("removed " + recoveryFolder + ": " + success);
+            System.out.println("removed " + recoveryFolder + ": " + success);
             
-            log.println("try to remove '" + recoveryXCU + "'");
+            System.out.println("try to remove '" + recoveryXCU + "'");
             
             File xcu = new File(recoveryXCU);
             if (xcu.isFile()){
                 success = xcu.delete();
-                log.println("removed " + recoveryXCU + " : " + success);
+                System.out.println("removed " + recoveryXCU + " : " + success);
             }
             
         } catch (Exception e){
@@ -182,9 +180,8 @@ public class RecoveryTools {
         throws com.sun.star.io.IOException
     {
         try{
-            log.println("try to get UnoProvider...");
+            System.out.println("try to get UnoProvider...");
             UnoProvider unoProv = new UnoProvider();
-            XMultiServiceFactory xMSF = (XMultiServiceFactory) unoProv.getManager(param);
             
             String userPath = utils.expandMacro(xMSF, "${$ORIGIN/bootstraprc:UserInstallation}");
             System.out.println("userPath:'" + userPath + "'");
@@ -223,7 +220,7 @@ public class RecoveryTools {
             xMSF = null;
             
             desk.terminate();
-            log.println("Waiting until ProcessHandler loose the office...");
+            System.out.println("Waiting until ProcessHandler loose the office...");
             
         }
         catch (java.lang.Exception e) {
@@ -240,13 +237,13 @@ public class RecoveryTools {
      */    
     public void waitForClosedOffice(){
         // check for the office process
-        helper.ProcessHandler ph = (helper.ProcessHandler) param.get("AppProvider");
+        helper.ProcessHandler ph = null;//(helper.ProcessHandler) param.get("AppProvider");
 
-        int timeOut = param.getInt(PropertyName.THREAD_TIME_OUT)*5;
-        int pause = param.getInt(PropertyName.SHORT_WAIT)*20;
+        int timeOut = Integer.parseInt(Argument.get("THREAD_TIME_OUT"))*5;
+        int pause = Integer.parseInt(Argument.get("SHORT_WAIT"))*20;
         int multi = 0;
         while ((ph != null) && (ph.getExitCode()<0) && (pause*multi < timeOut)) {
-            log.println("waiting until the office is closed... remaining " + (timeOut - pause * multi)/1000 + " seconds");
+            System.out.println("waiting until the office is closed... remaining " + (timeOut - pause * multi)/1000 + " seconds");
             pause(pause);
             multi ++;
         }
@@ -256,8 +253,9 @@ public class RecoveryTools {
     }
     
     public void killOffice(){
-        helper.ProcessHandler ph = (helper.ProcessHandler) param.get("AppProvider");
-        ph.kill();
+// FIXME:
+//        helper.ProcessHandler ph = (helper.ProcessHandler) param.get("AppProvider");
+//        ph.kill();
     }
 
     /**
@@ -268,19 +266,19 @@ public class RecoveryTools {
     public void removeParametersFromAppExecutionCommand(){
                                     
         //remove some params to start office
-        String office = (String) param.get("AppExecutionCommand");
-        String[] params = {"-norestore", "-nocrashreport"};
+//        String office = (String) param.get("AppExecutionCommand");
+//        String[] params = {"-norestore", "-nocrashreport"};
 
-        for (int i = 0; i < params.length; i++){
-            int index = office.indexOf(params[i]);
-            int length = params[i].length();
-            if (index != -1){
-                office = office.substring(0, index) + office.substring(index + length);
-                log.println("removed '" + params[i] + "' from AppExecutionCommand: " + office);
-            }
-        }
-        param.put("AppExecutionCommand", office);
-        log.println("connect: " + (String) param.get("AppExecutionCommand"));
+//        for (int i = 0; i < params.length; i++){
+//            int index = office.indexOf(params[i]);
+//            int length = params[i].length();
+//            if (index != -1){
+//                office = office.substring(0, index) + office.substring(index + length);
+//                System.out.println("removed '" + params[i] + "' from AppExecutionCommand: " + office);
+//            }
+//        }
+//        param.put("AppExecutionCommand", office);
+//        System.out.println("connect: " + (String) param.get("AppExecutionCommand"));
         
     }
  
@@ -294,7 +292,7 @@ public class RecoveryTools {
                 throws com.sun.star.accessibility.IllegalAccessibleComponentStateException
     {                
     
-        log.println("try to get modal Dialog...");
+        System.out.println("try to get modal Dialog...");
 
         pause();
 
@@ -304,10 +302,10 @@ public class RecoveryTools {
 
 
         UITools oUITools = new UITools(xMSF, oDialog);
-        oUITools.printAccessibleTree((PrintWriter) log, param.getBool(PropertyName.DEBUG_IS_ACTIVE));
+        oUITools.printAccessibleTree((PrintWriter) new SimpleLogWriter(), Boolean.parseBoolean(Argument.get("DEBUG_IS_ACTIVE")));
 
         try{
-            log.println("click ' " + buttonName + "' button..");
+            System.out.println("click ' " + buttonName + "' button..");
             oUITools.clickButton(buttonName);
         } catch ( java.lang.Exception e){
             throw new com.sun.star.accessibility.IllegalAccessibleComponentStateException("Could not klick '"+buttonName +"' at modal dialog: " + e.toString());
@@ -320,7 +318,7 @@ public class RecoveryTools {
     {
         KlickButtonThread kbt = new KlickButtonThread(xMSF, xWindow, buttonName);
         kbt.start();
-        pause(param.getInt(PropertyName.SHORT_WAIT) * 10);
+        pause(Integer.parseInt(Argument.get("SHORT_WAIT")) * 10);
     }
  
     public void copyRecoveryData(boolean backup)

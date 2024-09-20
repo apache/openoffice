@@ -31,6 +31,8 @@
 #endif
 #include <tools/ref.hxx>
 #include <tools/rtti.hxx>
+#include <rtl/strbuf.hxx>
+#include <rtl/ustring.hxx>
 
 class FileCopier;
 class StreamData;
@@ -443,10 +445,12 @@ public:
 	sal_Bool 		ReadCString( String& rStr, rtl_TextEncoding eToEncode );
 	sal_Bool 		ReadCString( String& rStr ) { return ReadCString( rStr, GetStreamCharSet()); }
 
+	sal_Bool		ReadLine( ::rtl::OStringBuffer& rStr );
 	sal_Bool		ReadLine( ByteString& rStr );
 	sal_Bool		WriteLine( const ByteString& rStr );
 	sal_Bool		WriteLines( const ByteString& rStr );
 
+	sal_Bool		ReadByteStringLine( ::rtl::OUString& rStr, rtl_TextEncoding eSrcCharSet );
 	sal_Bool		ReadByteStringLine( String& rStr, rtl_TextEncoding eSrcCharSet );
 	sal_Bool		ReadByteStringLine( String& rStr ) { return ReadByteStringLine( rStr, GetStreamCharSet()); }
 	sal_Bool		WriteByteStringLine( const String& rStr, rtl_TextEncoding eDestCharSet );

@@ -20,59 +20,45 @@
 #**************************************************************
 
 
+.IF "$(OOO_SUBSEQUENT_TESTS)" == ""
+nothing .PHONY:
+.ELSE
 
 PRJ := ..$/..
 PRJNAME := testtools
 TARGET := test_cli
+
+.IF "$(OOO_JUNIT_JAR)" != ""
 PACKAGE = clitest
 
-.INCLUDE: settings.mk
+# here store only Files which contain a @Test
+JAVATESTFILES = \
+    CLITest.java
 
-#----- compile .java files -----------------------------------------
+# put here all other files
+JAVAFILES = $(JAVATESTFILES)
 
 JARFILES = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar OOoRunner.jar
-JAVAFILES       = CLITest.java
-JAVACLASSFILES	= $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-#----- make a jar from compiled files ------------------------------
-
-MAXLINELENGTH = 100000
-
-JARCLASSDIRS    = $(PACKAGE)
-JARTARGET       = $(TARGET).jar
-JARCOMPRESS 	= TRUE
-
-ALLTAR:
+EXTRAJARFILES = $(OOO_JUNIT_JAR)
 
 EXETARGET = $(BIN)$/cli_bridgetest_inprocess.exe
 EXEARG_WIN= $(BIN)$/cli_bridgetest_inprocess.ini
+EXEARG= $(strip $(subst,$/,/ $(EXEARG_WIN)))
 
-EXEARG= $(strip $(subst,$/,/ $(EXEARG_WIN))) 
+JAVAIFLAGS =\
+    -Dcli_test=$(EXETARGET) \
+    -Dcli_test_arg=$(EXEARG)
 
-.IF "$(depend)" == ""
-ALL: ALLTAR
-.ELSE
-ALL: ALLDEP
-.ENDIF
+# Sample how to debug
+# JAVAIFLAGS+=-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9003,suspend=y
 
+.END
+
+.INCLUDE: settings.mk
 .INCLUDE: target.mk
+.INCLUDE: installationtest.mk
 
-# --- Parameters for the test --------------------------------------
+ALLTAR : javatest
 
-# test base is java complex
-CT_TESTBASE = -TestBase java_complex
+.END
 
-# test looks something like the.full.package.TestName
-CT_TEST     = -o $(PACKAGE:s\$/\.\).$(JAVAFILES:b)
-
-# start the runner application
-CT_APP      = org.openoffice.Runner
-
-CT_NOOFFICE = -NoOffice
-# --- Targets ------------------------------------------------------
-
-RUN:
-.IF "$(GUI)"=="WNT" 
-    java -cp $(CLASSPATH) -Dcli_test=$(EXETARGET) -Dcli_test_arg=$(EXEARG) $(CT_APP) $(CT_NOOFFICE) $(CT_TESTBASE) $(CT_TEST) 	
-.ENDIF
-run: RUN
