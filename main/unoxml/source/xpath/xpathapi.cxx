@@ -267,7 +267,7 @@ namespace XPath
         return selectSingleNode(contextNode, expr);
     }
 
-    static OUString make_error_message(xmlErrorPtr pError)
+    static OUString make_error_message(const xmlErrorPtr pError)
     {
         ::rtl::OUStringBuffer buf;
         if (pError->message) {
@@ -312,7 +312,7 @@ namespace XPath
             OSL_ENSURE(sal_False, msg.getStr());
         }
 
-        static void structured_error_func(void * userData, xmlErrorPtr error)
+        static void structured_error_func(void * userData, const xmlErrorPtr error)
         {
             (void) userData;
             ::rtl::OUStringBuffer buf(
