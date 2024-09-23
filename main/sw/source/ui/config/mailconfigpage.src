@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include <mailconfigpage.hrc>
 #include <config.hrc>
 #include <helpid.h>
@@ -32,19 +30,19 @@ TabPage TP_MAILCONFIG
 	HelpID = HID_TP_MAILCONFIG ;
 	Size = MAP_APPFONT ( 260, 185 ) ;
 	Hide = TRUE ;
-	Text[ en-US ] = "Mail Merge E-mail" ;
+	Text [ en-US ] = "Mail Merge E-mail" ;
 
 	FixedLine FL_IDENTITY
 	{
 		Pos = MAP_APPFONT ( 6, 3 ) ;
 		Size = MAP_APPFONT ( 248, 8 ) ;
-		Text[ en-US ] = "User information" ;
+		Text [ en-US ] = "User information" ;
 	};
 	FixedText FT_DISPLAYNAME
 	{
 		Pos = MAP_APPFONT ( 12, 16 ) ;
 		Size = MAP_APPFONT ( 74, 8 ) ;
-		Text[ en-US ] = "~Your name" ;
+		Text [ en-US ] = "~Your name" ;
 	};
 	Edit ED_DISPLAYNAME
 	{
@@ -57,60 +55,60 @@ TabPage TP_MAILCONFIG
 	{
 		Pos = MAP_APPFONT ( 12, 31 ) ;
 		Size = MAP_APPFONT ( 74, 8 ) ;
-		Text[ en-US ] = "~E-Mail address" ;
+		Text [ en-US ] = "~E-Mail address" ;
 	};
 	Edit ED_ADDRESS
 	{
 		HelpID = "sw:Edit:TP_MAILCONFIG:ED_ADDRESS" ;
 		Pos = MAP_APPFONT ( 88, 29 ) ;
 		Size = MAP_APPFONT ( 160, 12 ) ;
-		Border = TRUE;
+		Border = TRUE ;
 	};
 	CheckBox CB_REPLYTO
 	{
 		HelpID = "sw:CheckBox:TP_MAILCONFIG:CB_REPLYTO" ;
 		Pos = MAP_APPFONT ( 12, 45 ) ;
 		Size = MAP_APPFONT ( 242, 10 ) ;
-		Text[ en-US ] = "Send replies to ~different e-mail address" ;
+		Text [ en-US ] = "Send replies to ~different e-mail address" ;
 	};
 	FixedText FT_REPLYTO
 	{
 		Pos = MAP_APPFONT ( 18, 60 ) ;
 		Size = MAP_APPFONT ( 68, 8 ) ;
-		Text[ en-US ] = "~Reply address" ;
+		Text [ en-US ] = "~Reply address" ;
 	};
 	Edit ED_REPLYTO
 	{
 		HelpID = "sw:Edit:TP_MAILCONFIG:ED_REPLYTO" ;
 		Pos = MAP_APPFONT ( 88, 58 ) ;
 		Size = MAP_APPFONT ( 160, 12 ) ;
-		Border = TRUE;
+		Border = TRUE ;
 	};
 	FixedLine FL_SMTP
 	{
 		Pos = MAP_APPFONT ( 6, 76 ) ;
 		Size = MAP_APPFONT ( 248, 8 ) ;
-		Text[ en-US ] = "Outgoing server (SMTP) Settings" ;
+		Text [ en-US ] = "Outgoing server (SMTP) Settings" ;
 	};
 	FixedText FT_SERVER
 	{
 		Pos = MAP_APPFONT ( 12, 89 ) ;
 		Size = MAP_APPFONT ( 74, 8 ) ;
-		Text[ en-US ] = "~Server name" ;
+		Text [ en-US ] = "~Server name" ;
 	};
 	Edit ED_SERVER
 	{
 		HelpID = "sw:Edit:TP_MAILCONFIG:ED_SERVER" ;
 		Pos = MAP_APPFONT ( 88, 87 ) ;
 		Size = MAP_APPFONT ( 105, 12 ) ;
-		Border = TRUE;
+		Border = TRUE ;
 	};
 	FixedText FT_PORT
 	{
 		Pos = MAP_APPFONT ( 197, 89 ) ;
 		Size = MAP_APPFONT ( 24, 8 ) ;
 		Right = TRUE ;
-		Text[ en-US ] = "~Port" ;
+		Text [ en-US ] = "~Port" ;
 	};
 	NumericField NF_PORT
 	{
@@ -131,14 +129,14 @@ TabPage TP_MAILCONFIG
 		HelpID = "sw:CheckBox:TP_MAILCONFIG:CB_SECURE" ;
 		Pos = MAP_APPFONT ( 12, 104 ) ;
 		Size = MAP_APPFONT ( 242, 10 ) ;
-		Text[ en-US ] = "~Use secure connection (SSL)" ;
+		Text [ en-US ] = "~Use secure connection (SSL)" ;
 	};
 	PushButton PB_AUTHENTICATION
 	{
 		HelpID = "sw:PushButton:TP_MAILCONFIG:PB_AUTHENTICATION" ;
 		Pos = MAP_APPFONT ( 88, 118 ) ;
 		Size = MAP_APPFONT ( 105, 14 ) ;
-		Text[ en-US ] = "Server Au~thentication" ;
+		Text [ en-US ] = "Server Au~thentication" ;
 	};
 	FixedLine FL_SEPARATOR
 	{
@@ -150,7 +148,7 @@ TabPage TP_MAILCONFIG
 		HelpID = "sw:PushButton:TP_MAILCONFIG:PB_TEST" ;
 		Pos = MAP_APPFONT ( 88, 164 ) ;
 		Size = MAP_APPFONT ( 105, 14 ) ;
-		Text[ en-US ] = "Test S~ettings..." ;
+		Text [ en-US ] = "Test S~ettings..." ;
 	};
 };
 ModalDialog DLG_MM_TESTACCOUNTSETTINGS
@@ -161,33 +159,33 @@ ModalDialog DLG_MM_TESTACCOUNTSETTINGS
 	Size = MAP_APPFONT ( 250, 176 ) ;
 	Moveable = TRUE ;
 
-	Text[ en-US ] = "Test Account Settings";
+	Text [ en-US ] = "Test Account Settings" ;
 
 	FixedText FI_INFO
 	{
 		Pos = MAP_APPFONT ( 6, 3 ) ;
 		Size = MAP_APPFONT ( 238, 8 ) ;
-		Text[ en-US ] = "%PRODUCTNAME is testing the e-mail account settings..." ;
+		Text [ en-US ] = "%PRODUCTNAME is testing the e-mail account settings..." ;
 	};
 	Control LB_STATUS
 	{
 		Pos = MAP_APPFONT ( 6, 14 ) ;
 		Size = MAP_APPFONT ( 238, 50 ) ;
-		Border = TRUE;
+		Border = TRUE ;
 	};
 	FixedText FI_ERROR
 	{
 		Pos = MAP_APPFONT ( 6, 68 ) ;
 		Size = MAP_APPFONT ( 238, 8 ) ;
-		Text[ en-US ] = "Errors" ;
+		Text [ en-US ] = "Errors" ;
 	};
 	MultiLineEdit ED_ERROR
 	{
 		HelpID = "sw:MultiLineEdit:DLG_MM_TESTACCOUNTSETTINGS:ED_ERROR" ;
 		Pos = MAP_APPFONT ( 6, 79 ) ;
 		Size = MAP_APPFONT ( 238, 60 ) ;
-		Border = TRUE;
-		Readonly = TRUE;
+		Border = TRUE ;
+		Readonly = TRUE ;
 	};
 	FixedLine FL_SEPAPARATOR
 	{
@@ -199,7 +197,7 @@ ModalDialog DLG_MM_TESTACCOUNTSETTINGS
 		HelpID = "sw:PushButton:DLG_MM_TESTACCOUNTSETTINGS:PB_STOP" ;
 		Pos = MAP_APPFONT ( 85, 156 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
-		Text[ en-US ] = "~Stop" ;
+		Text [ en-US ] = "~Stop" ;
 	};
 	CancelButton PB_CANCEL
 	{
@@ -232,31 +230,31 @@ ModalDialog DLG_MM_TESTACCOUNTSETTINGS
 	};
 	String ST_TASK
 	{
-		Text[ en-US ] = "Task" ;
+		Text [ en-US ] = "Task" ;
 	};
 	String ST_STATUS
 	{
-		Text[ en-US ] = "Status" ;
+		Text [ en-US ] = "Status" ;
 	};
 	String ST_ESTABLISH
 	{
-		Text[ en-US ] = "Establish network connection" ;
+		Text [ en-US ] = "Establish network connection" ;
 	};
 	String ST_FINDSERVER
 	{
-		Text[ en-US ] = "Find outgoing mail server" ;
+		Text [ en-US ] = "Find outgoing mail server" ;
 	};
 	String ST_COMPLETED
 	{
-		Text[ en-US ] = "Successful" ;
+		Text [ en-US ] = "Successful" ;
 	};
 	String ST_FAILED
 	{
-		Text[ en-US ] = "Failed" ;
+		Text [ en-US ] = "Failed" ;
 	};
 	String ST_ERROR_SERVER
 	{
-		Text[ en-US ] = "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings" ;
+		Text [ en-US ] = "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings" ;
 	};
 };
 ModalDialog DLG_MM_SERVERAUTHENTICATION
@@ -266,46 +264,46 @@ ModalDialog DLG_MM_SERVERAUTHENTICATION
 	HelpID = HID_MM_SERVERAUTHENTICATION ;
 	Size = MAP_APPFONT ( 250, 211 ) ;
 	Moveable = TRUE ;
-	Text[ en-US ] = "Server Authentication" ;
+	Text [ en-US ] = "Server Authentication" ;
 
 	CheckBox CB_AUTHENTICATION
 	{
 		HelpID = "sw:CheckBox:DLG_MM_SERVERAUTHENTICATION:CB_AUTHENTICATION" ;
 		Pos = MAP_APPFONT ( 6, 3 ) ;
 		Size = MAP_APPFONT ( 238, 10 ) ;
-		Text[ en-US ] = "The outgoing mail server (SMTP) requires au~thentication" ;
+		Text [ en-US ] = "The outgoing mail server (SMTP) requires au~thentication" ;
 	};
 	RadioButton RB_SEP_AUTHENTICATION
 	{
 		HelpID = "sw:RadioButton:DLG_MM_SERVERAUTHENTICATION:RB_SEP_AUTHENTICATION" ;
 		Pos = MAP_APPFONT ( 12, 17 ) ;
 		Size = MAP_APPFONT ( 232, 10 ) ;
-		Text[ en-US ] = "The outgoing mail server (SMTP) requires ~separate authentication" ;
+		Text [ en-US ] = "The outgoing mail server (SMTP) requires ~separate authentication" ;
 	};
 	FixedText FT_OUTGOINGSERVER
 	{
 		Pos = MAP_APPFONT ( 18, 31 ) ;
 		Size = MAP_APPFONT ( 200, 8 ) ;
-		Text[ en-US ] = "Outgoing mail server:" ;
+		Text [ en-US ] = "Outgoing mail server:" ;
 	};
 	FixedText FT_USERNAME
 	{
 		Pos = MAP_APPFONT ( 18, 44 ) ;
 		Size = MAP_APPFONT ( 53, 8 ) ;
-		Text[ en-US ] = "~User name" ;
+		Text [ en-US ] = "~User name" ;
 	};
 	Edit ED_USERNAME
 	{
 		HelpID = "sw:Edit:DLG_MM_SERVERAUTHENTICATION:ED_USERNAME" ;
 		Pos = MAP_APPFONT ( 78, 42 ) ;
 		Size = MAP_APPFONT ( 115, 12 ) ;
-		Border = TRUE;
+		Border = TRUE ;
 	};
 	FixedText FT_OUTPASSWORD
 	{
 		Pos = MAP_APPFONT ( 18, 59 ) ;
 		Size = MAP_APPFONT ( 53, 8 ) ;
-		Text[ en-US ] = "~Password" ;
+		Text [ en-US ] = "~Password" ;
 	};
 	Edit ED_OUTPASSWORD
 	{
@@ -321,19 +319,19 @@ ModalDialog DLG_MM_SERVERAUTHENTICATION
 		Pos = MAP_APPFONT ( 12, 73 ) ;
 		Size = MAP_APPFONT ( 232, 20 ) ;
 		WordBreak = TRUE ;
-		Text[ en-US ] = "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server." ;
+		Text [ en-US ] = "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server." ;
 	};
 	FixedText FT_INCOMINGSERVER
 	{
 		Pos = MAP_APPFONT ( 18, 97 ) ;
 		Size = MAP_APPFONT ( 230, 8 ) ;
-		Text[ en-US ] = "Incoming mail server:" ;
+		Text [ en-US ] = "Incoming mail server:" ;
 	};
 	FixedText FT_SERVER
 	{
 		Pos = MAP_APPFONT ( 18, 110 ) ;
 		Size = MAP_APPFONT ( 53, 8 ) ;
-		Text[ en-US ] = "Server ~name" ;
+		Text [ en-US ] = "Server ~name" ;
 	};
 	Edit ED_SERVER
 	{
@@ -347,7 +345,7 @@ ModalDialog DLG_MM_SERVERAUTHENTICATION
 		Pos = MAP_APPFONT ( 195, 110 ) ;
 		Size = MAP_APPFONT ( 20, 10 ) ;
 		Right = TRUE ;
-		Text[ en-US ] = "P~ort" ;
+		Text [ en-US ] = "P~ort" ;
 	};
 	NumericField NF_PORT
 	{
@@ -367,27 +365,27 @@ ModalDialog DLG_MM_SERVERAUTHENTICATION
 	{
 		Pos = MAP_APPFONT ( 18, 126 ) ;
 		Size = MAP_APPFONT ( 53, 8 ) ;
-		Text[ en-US ] = "Type" ;
+		Text [ en-US ] = "Type" ;
 	};
 	RadioButton RB_POP3
 	{
 		HelpID = "sw:RadioButton:DLG_MM_SERVERAUTHENTICATION:RB_POP3" ;
 		Pos = MAP_APPFONT ( 78, 125 ) ;
 		Size = MAP_APPFONT ( 115, 10 ) ;
-		Text[ en-US ] = "~POP3" ;
+		Text [ en-US ] = "~POP3" ;
 	};
 	RadioButton RB_IMAP
 	{
 		HelpID = "sw:RadioButton:DLG_MM_SERVERAUTHENTICATION:RB_IMAP" ;
 		Pos = MAP_APPFONT ( 78, 138 ) ;
 		Size = MAP_APPFONT ( 115, 10 ) ;
-		Text[ en-US ] = "~IMAP" ;
+		Text [ en-US ] = "~IMAP" ;
 	};
 	FixedText FT_INUSERNAME
 	{
 		Pos = MAP_APPFONT ( 18, 152 ) ;
 		Size = MAP_APPFONT ( 53, 8 ) ;
-		Text[ en-US ] = "Us~er name" ;
+		Text [ en-US ] = "Us~er name" ;
 	};
 	Edit ED_INUSERNAME
 	{
@@ -400,7 +398,7 @@ ModalDialog DLG_MM_SERVERAUTHENTICATION
 	{
 		Pos = MAP_APPFONT ( 18, 167 ) ;
 		Size = MAP_APPFONT ( 53, 8 ) ;
-		Text[ en-US ] = "Pass~word" ;
+		Text [ en-US ] = "Pass~word" ;
 	};
 	Edit ED_INPASSWORD
 	{
