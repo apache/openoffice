@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "misc.hrc"
 #include "glossary.hrc"
 #include "cmdid.h"
@@ -121,7 +119,7 @@ ModalDialog DLG_GLOSSARY
 	{
 		Pos = MAP_APPFONT ( 231, 14 ) ;
 		Size = MAP_APPFONT ( 82, 124 ) ;
-		Border = TRUE;
+		Border = TRUE ;
 	};
 	CheckBox CB_SHOW_EXAMPLE
 	{
@@ -373,7 +371,7 @@ ModalDialog DLG_RENAME_GLOS
 };
 String STR_SAVE_GLOSSARY
 {
-	Text[ en-US ] = "Save AutoText" ;
+	Text [ en-US ] = "Save AutoText" ;
 };
 InfoBox MSG_NO_GLOSSARIES
 {
