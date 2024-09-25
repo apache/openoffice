@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -83,7 +83,7 @@ static void lcl_DefaultPageFmt( sal_uInt16 nPoolFmtId,
     // --> FME 2005-01-21 #i41075# Printer on demand
     // This function does not require a printer anymore.
     // The default page size is obtained from the application
-    //locale
+    // locale
     // <--
 
     SwFmtFrmSize aFrmSize( ATT_FIX_SIZE );
@@ -107,7 +107,7 @@ static void lcl_DefaultPageFmt( sal_uInt16 nPoolFmtId,
     }
     else if( MEASURE_METRIC == SvtSysLocale().GetLocaleData().getMeasurementSystemEnum() )
     {
-        nMinTop = nMinBottom = nMinLeft = nMinRight = 1134; //2 centimeters
+        nMinTop = nMinBottom = nMinLeft = nMinRight = 1134; // 2 centimeters
     }
     else
     {
@@ -250,7 +250,7 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 		::lcl_DescSetAttr( ((SwPageDesc&)rChged).GetMaster(),
 					   ((SwPageDesc&)rChged).GetLeft() );
 
-    // take over NumType.
+	// take over NumType.
 	if( rChged.GetNumType().GetNumberingType() != pDesc->GetNumType().GetNumberingType() )
 	{
 		pDesc->SetNumType( rChged.GetNumType() );
@@ -288,11 +288,11 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
             ( rHead.IsActive() != rOldHead.IsActive() ||
               rChged.IsHeaderShared() != pDesc->IsHeaderShared() );
 	}
-    pDesc->GetMaster().SetFmtAttr( rHead );
+	pDesc->GetMaster().SetFmtAttr( rHead );
 	if ( rChged.IsHeaderShared() || !rHead.IsActive() )
 	{
 		// Left is sharing the Header with the Master
-        pDesc->GetLeft().SetFmtAttr( pDesc->GetMaster().GetHeader() );
+		pDesc->GetLeft().SetFmtAttr( pDesc->GetMaster().GetHeader() );
 	}
 	else if ( rHead.IsActive() )
 	{	// Left get an own Header, when the Format hasn't one already.
@@ -341,9 +341,9 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 
 	// align footer
 	const SwFmtFooter &rFoot = rChged.GetMaster().GetFooter();
-    if (undoGuard.UndoWasEnabled())
-    {
-        // #i46909# no undo if header or footer changed
+	if (undoGuard.UndoWasEnabled())
+	{
+		// #i46909# no undo if header or footer changed
 		// are there changes in the Nodes?
         const SwFmtFooter &rOldFoot = pDesc->GetMaster().GetFooter();
         bHeaderFooterChanged |=
@@ -361,8 +361,8 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 		const SwFmtFooter &rLeftFoot = pDesc->GetLeft().GetFooter();
 		if ( !rLeftFoot.IsActive() )
 		{
-            SwFmtFooter aFoot( MakeLayoutFmt( RND_STD_FOOTER, 0 ) );
-            pDesc->GetLeft().SetFmtAttr( aFoot );
+			SwFmtFooter aFoot( MakeLayoutFmt( RND_STD_FOOTER, 0 ) );
+			pDesc->GetLeft().SetFmtAttr( aFoot );
 			// take over further attributes (margins, borders ...)
 			::lcl_DescSetAttr( *rFoot.GetFooterFmt(), *aFoot.GetFooterFmt(), sal_False);
 		}
@@ -425,7 +425,7 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 
 	if ( (bUseOn || bFollow) && pTmpRoot)
 		// notify Layot!
-	{				
+	{
 		std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
 		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::AllCheckPageDescs));//swmod 080304
 	}
@@ -454,7 +454,7 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
         GetIDocumentUndoRedo().DelAllUndoObj();
     }
 
-    SfxBindings* pBindings = 
+    SfxBindings* pBindings =
         ( GetDocShell() && GetDocShell()->GetDispatcher() ) ? GetDocShell()->GetDispatcher()->GetBindings() : 0;
     if ( pBindings )
     {
@@ -473,7 +473,7 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 |*
 |* 	Description		All descriptors have to be adapted whose Follow
 |*				refers to the one that has to be deleted.
-|*		
+|*
 |*	Created			MA 25. Jan. 93
 |*	Last change		JP 04.09.95
 |*
@@ -482,16 +482,16 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 // #i7983#
 void SwDoc::PreDelPageDesc(SwPageDesc * pDel)
 {
-    if (0 == pDel)
-        return;
+	if (0 == pDel)
+		return;
 
-    // mba: test iteration as clients are removed while iteration
-    SwPageDescHint aHint( aPageDescs[0] );
-    pDel->CallSwClientNotify( aHint );
- 
-    bool bHasLayout = HasLayout();
-    if ( pFtnInfo->DependsOn( pDel ) )
-    {
+	// mba: test iteration as clients are removed while iteration
+	SwPageDescHint aHint( aPageDescs[0] );
+	pDel->CallSwClientNotify( aHint );
+
+	bool bHasLayout = HasLayout();
+	if ( pFtnInfo->DependsOn( pDel ) )
+	{
         pFtnInfo->ChgPageDesc( aPageDescs[0] );
         if ( bHasLayout )
         {
@@ -507,7 +507,7 @@ void SwDoc::PreDelPageDesc(SwPageDesc * pDel)
             std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
             std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::CheckFtnPageDescs), true));
         }
-    }    
+    }
 
     for ( sal_uInt16 j = 0; j < aPageDescs.Count(); ++j )
     {
@@ -527,19 +527,19 @@ void SwDoc::PreDelPageDesc(SwPageDesc * pDel)
 void SwDoc::BroadcastStyleOperation(String rName, SfxStyleFamily eFamily,
                                     sal_uInt16 nOp)
 {
-    if (pDocShell)
-    {
-        SfxStyleSheetBasePool * pPool = pDocShell->GetStyleSheetPool();
+	if (pDocShell)
+	{
+		SfxStyleSheetBasePool * pPool = pDocShell->GetStyleSheetPool();
 
-        if (pPool)
-        {
+		if (pPool)
+		{
             pPool->SetSearchMask(eFamily, SFXSTYLEBIT_ALL );
             SfxStyleSheetBase * pBase = pPool->Find(rName);
 
             if (pBase != NULL)
                 pPool->Broadcast(SfxStyleSheetHint( nOp, *pBase ));
-        }
-    }
+		}
+	}
 }
 
 void SwDoc::DelPageDesc( sal_uInt16 i, sal_Bool bBroadcast )
@@ -551,19 +551,19 @@ void SwDoc::DelPageDesc( sal_uInt16 i, sal_Bool bBroadcast )
 
 	SwPageDesc *pDel = aPageDescs[i];
 
-    // -> #116530#
-    if (bBroadcast)
-        BroadcastStyleOperation(pDel->GetName(), SFX_STYLE_FAMILY_PAGE,
+	// -> #116530#
+	if (bBroadcast)
+		BroadcastStyleOperation(pDel->GetName(), SFX_STYLE_FAMILY_PAGE,
                                 SFX_STYLESHEET_ERASED);
-    // <- #116530#
+	// <- #116530#
 
-    if (GetIDocumentUndoRedo().DoesUndo())
-    {
-        SwUndo *const pUndo(new SwUndoPageDescDelete(*pDel, this));
-        GetIDocumentUndoRedo().AppendUndo(pUndo);
-    }
+	if (GetIDocumentUndoRedo().DoesUndo())
+	{
+		SwUndo *const pUndo(new SwUndoPageDescDelete(*pDel, this));
+		GetIDocumentUndoRedo().AppendUndo(pUndo);
+	}
 
-    PreDelPageDesc(pDel); // #i7983#
+	PreDelPageDesc(pDel); // #i7983#
 
 	aPageDescs.Remove( i );
 	delete pDel;
@@ -600,8 +600,8 @@ sal_uInt16 SwDoc::MakePageDesc( const String &rName, const SwPageDesc *pCpy,
 	{
 		pNew = new SwPageDesc( rName, GetDfltFrmFmt(), this );
 		// set default page format
-        lcl_DefaultPageFmt( USHRT_MAX, pNew->GetMaster(), pNew->GetLeft() );
-		
+		lcl_DefaultPageFmt( USHRT_MAX, pNew->GetMaster(), pNew->GetLeft() );
+
 		SvxFrameDirection aFrameDirection = bRegardLanguage ?
             GetDefaultFrameDirection(GetAppLanguage())
             : FRMDIR_HORI_LEFT_TOP;
@@ -654,10 +654,10 @@ void SwDoc::PrtDataChanged()
 {
 //!!!!!!!! In case of changes please look after InJobSetup in Sw3io if necessary
 
-    // --> FME 2005-01-21 #i41075#
-    ASSERT( get(IDocumentSettingAccess::USE_VIRTUAL_DEVICE) ||
+	// --> FME 2005-01-21 #i41075#
+	ASSERT( get(IDocumentSettingAccess::USE_VIRTUAL_DEVICE) ||
             0 != getPrinter( sal_False ), "PrtDataChanged will be called recursive!" )
-    // <--
+	// <--
 	SwRootFrm* pTmpRoot = GetCurrentLayout();//swmod 080219
 	SwWait *pWait = 0;
 	sal_Bool bEndAction = sal_False;
@@ -669,7 +669,7 @@ void SwDoc::PrtDataChanged()
 	if ( pTmpRoot )
 	{
 		ViewShell *pSh = GetCurrentViewShell();
-        if( !pSh->GetViewOptions()->getBrowseMode() ||
+		if( !pSh->GetViewOptions()->getBrowseMode() ||
             pSh->GetViewOptions()->IsPrtFormat() )
 		{
 			if ( GetDocShell() )
@@ -686,7 +686,7 @@ void SwDoc::PrtDataChanged()
             }
 
 			pFntCache->Flush();
-			
+
 			std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
 			std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_SIZE));//swmod 080304
 
@@ -702,8 +702,8 @@ void SwDoc::PrtDataChanged()
 
 		}
 	}	//swmod 080218
-    if ( bDraw && pDrawModel )
-    {
+	if ( bDraw && pDrawModel )
+	{
         const sal_Bool bTmpAddExtLeading = get(IDocumentSettingAccess::ADD_EXT_LEADING);
         if ( bTmpAddExtLeading != pDrawModel->IsAddExtLeading() )
             pDrawModel->SetAddExtLeading( bTmpAddExtLeading );
@@ -711,7 +711,7 @@ void SwDoc::PrtDataChanged()
         OutputDevice* pOutDev = getReferenceDevice( false );
         if ( pOutDev != pDrawModel->GetRefDevice() )
             pDrawModel->SetRefDevice( pOutDev );
-    }
+	}
 
 	PrtOLENotify( sal_True );
 
@@ -747,7 +747,7 @@ void SwDoc::PrtOLENotify( sal_Bool bAll )
 		// This doesn't make sense without Shell and therefore without Client because
 		// communication relating to change in size is implemented only in this way.
 		// As there is no Shell, note this unfavorable status in the Document, this
-		// will be catched up when creating the first Shell.
+		// will be caught up when creating the first Shell.
 		mbOLEPrtNotifyPending = sal_True;
 		if ( bAll )
 			mbAllOLENotify = sal_True;
@@ -980,3 +980,5 @@ sal_Bool SwDoc::IsSquaredPageMode() const
 						(const SwTextGridItem&)GetDefault( RES_TEXTGRID );
 	return rGrid.IsSquaredMode();
 }
+
+/* vim: set noet sw=4 ts=4: */

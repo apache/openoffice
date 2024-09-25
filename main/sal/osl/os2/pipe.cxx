@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 //#define INCL_DOSERRORS
 #include "system.h"
@@ -46,7 +44,7 @@ typedef enum {
 
 struct oslPipeImpl {
 	oslInterlockedCount m_Reference;
-    HPIPE  				hPipe;
+	HPIPE  				hPipe;
 	HMTX				m_NamedObject;
     APIRET 				nLastError;
     //oslSecurity  		m_Security;
@@ -100,37 +98,37 @@ void __osl_destroyPipeImpl(oslPipe pPipe)
 /*****************************************************************************/
 /* osl_createPipe  */
 /*****************************************************************************/
-oslPipe SAL_CALL osl_createPipe(rtl_uString *ustrPipeName, oslPipeOptions Options, 
+oslPipe SAL_CALL osl_createPipe(rtl_uString *ustrPipeName, oslPipeOptions Options,
 					   oslSecurity Security)
 {
-    oslPipe pPipe;
-    
-    ULONG  ulAction;
-    CHAR   strPipeNameBuffer [CCHMAXPATHCOMP];
+	oslPipe pPipe;
+
+	ULONG  ulAction;
+	CHAR   strPipeNameBuffer [CCHMAXPATHCOMP];
 	rtl_String* strPipeName=0;
 	sal_Char* pszPipeName=0;
 
-    /* check parameters */
-    OSL_ASSERT( ustrPipeName );
-    //YD 17/04/06 OSL_ASSERT( Security == 0 );
+	/* check parameters */
+	OSL_ASSERT( ustrPipeName );
+	//YD 17/04/06 OSL_ASSERT( Security == 0 );
 
-    /* allocate impl-structure */
-    pPipe = __osl_createPipeImpl();
-    if (!pPipe)
-    {
-        OSL_TRACE( "osl_createPipe failed allocating memory.\n" );
-        return NULL;
-    }
+	/* allocate impl-structure */
+	pPipe = __osl_createPipeImpl();
+	if (!pPipe)
+	{
+		OSL_TRACE( "osl_createPipe failed allocating memory.\n" );
+		return NULL;
+	}
 
-    /* create pipe name */
-    OString sPipe = OUStringToOString(ustrPipeName, RTL_TEXTENCODING_ASCII_US);
+	/* create pipe name */
+	OString sPipe = OUStringToOString(ustrPipeName, RTL_TEXTENCODING_ASCII_US);
 #if OSL_DEBUG_LEVEL>0
-    debug_printf("osl_createPipe options 0x%x\n", Options);
+	debug_printf("osl_createPipe options 0x%x\n", Options);
 #endif
 
-    switch( Options )
-    {
-    case osl_Pipe_OPEN:
+	switch( Options )
+	{
+	case osl_Pipe_OPEN:
 		{
 			APIRET	fPipeAvailable;
 
@@ -156,15 +154,15 @@ oslPipe SAL_CALL osl_createPipe(rtl_uString *ustrPipeName, oslPipeOptions Option
 						ngLastError = NO_ERROR;
 						break;
 					}
-					// Pipe instance maybe catched by another client -> try again
+					// Pipe instance maybe caught by another client -> try again
 					printf("osl_createPipe wait for Pipe available\n");
 				} while ( fPipeAvailable );
 		}
-        break;
-    case osl_Pipe_CREATE:
+		break;
+	case osl_Pipe_CREATE:
 		{
 			sprintf (strPipeNameBuffer, "\\SEM32\\OSL_SEM_%s", sPipe.getStr());
-			// check if semaphore exists (pipe create must fail for existig pipes)
+			// check if semaphore exists (pipe create must fail for existing pipes)
 			ngLastError = DosCreateMutexSem( (PCSZ)strPipeNameBuffer, &(pPipe->m_NamedObject), 0, TRUE );
 			if (ngLastError)
 				break;
@@ -213,7 +211,7 @@ oslPipe SAL_CALL osl_copyPipe(oslPipe pPipe)
     //oslPipe* pPipe = (oslPipe*) Pipe;
     oslPipe pNewPipe;
 
-    
+
     /* check parameter */
     OSL_ASSERT (pPipe);
 
@@ -234,7 +232,7 @@ oslPipe SAL_CALL osl_copyPipe(oslPipe pPipe)
         return NULL;
     }
 
-    pNewPipe->nLastError = NO_ERROR;
+	pNewPipe->nLastError = NO_ERROR;
 	return (oslPipe)pNewPipe;
 }
 
@@ -246,15 +244,15 @@ void SAL_CALL osl_acquirePipe( oslPipe pPipe )
 void SAL_CALL osl_releasePipe( oslPipe pPipe )
 {
 //  	OSL_ASSERT( pPipe );
-	
+
 	if( 0 == pPipe )
 		return;
-	
+
 	if( 0 == osl_decrementInterlockedCount( &(pPipe->m_Reference) ) )
 	{
 		if( ! pPipe->m_bClosed )
 			osl_closePipe( pPipe );
-		
+
 		__osl_destroyPipeImpl( pPipe );
 	}
 }
@@ -264,9 +262,9 @@ void SAL_CALL osl_releasePipe( oslPipe pPipe )
 /*************close****************************************************************/
 void SAL_CALL osl_closePipe(oslPipe pPipe)
 {
-    //oslPipe* pPipe = (oslPipe*) Pipe;
-    /* check parameter */
-    OSL_ASSERT (pPipe);
+	//oslPipe* pPipe = (oslPipe*) Pipe;
+	/* check parameter */
+	OSL_ASSERT (pPipe);
 
 	if( pPipe && ! pPipe->m_bClosed )
 	{
@@ -276,7 +274,7 @@ void SAL_CALL osl_closePipe(oslPipe pPipe)
 		{
 			/* disconnect client */
 			DosDisConnectNPipe (pPipe->hPipe);
-			
+
 			/* close the pipe */
 			DosClose (pPipe->hPipe);
 		}
@@ -288,9 +286,9 @@ void SAL_CALL osl_closePipe(oslPipe pPipe)
 /*****************************************************************************/
 oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
 {
-    
+
 #define PINFO ((PIPEINFO *) &PipeInfoBuffer)
-    
+
     ///oslPipe* pPipe = (oslPipe*) Pipe;
     oslPipe pNewPipe;
     BYTE     PipeInfoBuffer[sizeof(PIPEINFO) + CCHMAXPATHCOMP];
@@ -303,7 +301,7 @@ oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
                                          1,
                                          (PVOID) &PipeInfoBuffer,
                                          sizeof(PipeInfoBuffer));
-    
+
     if (pPipe->nLastError)
     {
         OSL_TRACE( "osl_acceptPipe failed for requesting pipe information.\n",
@@ -316,7 +314,7 @@ oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
         PINFO->cbMaxInst > PINFO->cbCurInst)
     {
         HPIPE hPipe;
-        
+
         pNewPipe = __osl_createPipeImpl();
 
         if (!pNewPipe)
@@ -327,7 +325,7 @@ oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
         }
 
         //pNewPipe->m_Security = pPipe->m_Security;
-        
+
         pNewPipe->nLastError =
             DosCreateNPipe( (PCSZ)PINFO->szName,
                             &(pNewPipe->hPipe),
@@ -337,7 +335,7 @@ oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
                             ulBufSize,           /* input buffer size */
                             0L                   /* use default time-out time */
                           );
-        
+
         if (pNewPipe->nLastError)
         {
             OSL_TRACE( "osl_acceptPipe failed creating new named pipe, Error-Code: %d.\n",
@@ -345,21 +343,21 @@ oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
             free(pNewPipe);
             return NULL;
         }
-        
+
         /* switch pipe handles */
         hPipe = pPipe->hPipe;
         pPipe->hPipe  = pNewPipe->hPipe;
         pNewPipe->hPipe = hPipe;
-        
+
         /* connect new handle to client */
         pNewPipe->nLastError = DosConnectNPipe( pNewPipe->hPipe );
-    
+
         /* if failed, release allocated memory */
         if (pNewPipe->nLastError)
         {
             OSL_TRACE( "osl_acceptPipe failed connecting pipe to client, Error-Code: %d.\n",
                        pNewPipe->nLastError );
-            
+
             osl_closePipe((oslPipe)pNewPipe);
             return NULL;
         }
@@ -369,14 +367,14 @@ oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
     {
         /* connect original handle to client */
         pPipe->nLastError = DosConnectNPipe( pPipe->hPipe );
-    
+
         if (pPipe->nLastError)
         {
             OSL_TRACE( "osl_acceptPipe failed connecting pipe to client, Error-Code: %d.\n",
                        pPipe->nLastError );
             return NULL;
         }
-    
+
         return (oslPipe)pPipe;
     }
 }
@@ -390,7 +388,7 @@ sal_Int32 SAL_CALL osl_receivePipe(oslPipe pPipe,
 {
     //oslPipe* pPipe = (oslPipe*) Pipe;
     ULONG  ulActual;
-    
+
     /* check parameter */
     OSL_ASSERT (pPipe);
 
@@ -418,7 +416,7 @@ sal_Int32 SAL_CALL osl_sendPipe(oslPipe pPipe,
 {
     //oslPipe* pPipe = (oslPipe*) Pipe;
     ULONG  ulActual;
-    
+
     /* check parameter */
     OSL_ASSERT (pPipe);
 
@@ -453,7 +451,7 @@ oslPipeError SAL_CALL osl_getLastPipeError(oslPipe pPipe)
 		pPipe->nLastError = NO_ERROR;
     } else
         rc = ngLastError;
-    
+
     /* map OS/2 error values */
     switch (rc)
     {
@@ -529,7 +527,7 @@ sal_Int32 SAL_CALL osl_readPipe( oslPipe pPipe, void *pBuffer , sal_Int32 n )
 /**********************************************
  osl_sendResourcePipe
  *********************************************/
- 
+
 sal_Bool osl_sendResourcePipe(oslPipe pPipe, oslSocket pSocket)
 {
     sal_Bool bRet = sal_False;
@@ -540,7 +538,7 @@ sal_Bool osl_sendResourcePipe(oslPipe pPipe, oslSocket pSocket)
 /**********************************************
  osl_receiveResourcePipe
  *********************************************/
- 
+
 oslSocket osl_receiveResourcePipe(oslPipe pPipe)
 {
     oslSocket pSocket=0;
@@ -548,4 +546,4 @@ oslSocket osl_receiveResourcePipe(oslPipe pPipe)
     return (oslSocket) pSocket;
 }
 
-
+/* vim: set noet sw=4 ts=4: */
