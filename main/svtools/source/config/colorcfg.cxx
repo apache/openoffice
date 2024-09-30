@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,10 +59,10 @@ namespace svtools
 static const sal_Char cColor[] = "/Color";
 static const sal_Char cColorSchemes[] = "ColorSchemes/";
 sal_Int32            nColorRefCount_Impl = 0;
-namespace 
+namespace
 {
-    struct ColorMutex_Impl 
-        : public rtl::Static< ::osl::Mutex, ColorMutex_Impl > {}; 
+    struct ColorMutex_Impl
+        : public rtl::Static< ::osl::Mutex, ColorMutex_Impl > {};
 }
 
 ColorConfig_Impl*    ColorConfig::m_pImpl = NULL;
@@ -449,27 +449,27 @@ Color ColorConfig::GetDefaultColor(ColorConfigEntry eEntry)
         0x808080, // APPBACKGROUND
         0xc0c0c0, // OBJECTBOUNDARIES
         0xc0c0c0, // TABLEBOUNDARIES
-        0, // FONTCOLOR
+        COL_BLACK, // FONTCOLOR
         0xcc, // LINKS
         0x80, // LINKSVISITED
         0, // ANCHOR
         0xff0000, // SPELL
-        COL_LIGHTMAGENTA,// SMARTTAGS
+        COL_LIGHTMAGENTA, // SMARTTAGS
         0xc0c0c0, // WRITERTEXTGRID
         0xc0c0c0, // WRITERFIELDSHADIN
         0xc0c0c0, // WRITERIDXSHADINGS
         0, // WRITERDIRECTCURSOR
-        COL_GREEN,  //WRITERSCRIPTINDICATOR
-        0xc0c0c0, //WRITERSECTIONBOUNDARIES
-        COL_BLUE, //WRITERPAGEBREAKS,
+        COL_GREEN, // WRITERSCRIPTINDICATOR
+        0xc0c0c0, // WRITERSECTIONBOUNDARIES
+        COL_BLUE, // WRITERPAGEBREAKS,
         COL_LIGHTBLUE, // HTMLSGML
         COL_LIGHTGREEN, // HTMLCOMMENT
         COL_LIGHTRED, // HTMLKEYWORD
         COL_GRAY, // HTMLUNKNOWN
         COL_LIGHTGRAY, // CALCGRID
-        COL_BLUE, //CALCPAGEBREAK
-        0x2300dc, //CALCPAGEBREAKMANUAL
-        COL_GRAY, //CALCPAGEBREAKAUTOMATIC
+        COL_BLUE, // CALCPAGEBREAK
+        0x2300dc, // CALCPAGEBREAKMANUAL
+        COL_GRAY, // CALCPAGEBREAKAUTOMATIC
         COL_LIGHTBLUE, // CALCDETECTIVE
         COL_LIGHTRED, // CALCDETECTIVEERROR
         COL_LIGHTRED, // CALCREFERENCE
@@ -477,20 +477,20 @@ Color ColorConfig::GetDefaultColor(ColorConfigEntry eEntry)
         0xc0c0c0, // DRAWGRID
         0, // DRAWDRAWING
         0xb8ff, // DRAWFILL
-        COL_GREEN, // BASICIDENTIFIER,
-        COL_GRAY,// BASICCOMMENT   ,
-        COL_LIGHTRED,// BASICNUMBER    ,
-        COL_LIGHTRED,// BASICSTRING    ,
-        COL_BLUE, // BASICOPERATOR  ,
-        COL_BLUE, // BASICKEYWORD   ,
-        COL_RED, //BASICERROR
+        COL_GREEN, // BASICIDENTIFIER
+        COL_GRAY, // BASICCOMMENT
+        COL_LIGHTRED, // BASICNUMBER
+        COL_LIGHTRED, // BASICSTRING
+        COL_BLUE, // BASICOPERATOR
+        COL_BLUE, // BASICKEYWORD
+        COL_RED, // BASICERROR
 		0x009900, // SQLIDENTIFIER
 		0x000000, // SQLNUMBER
 		0xCE7B00, // SQLSTRING
 		0x000000, // SQLOPERATOR
 		0x0000E6, // SQLKEYWORD
 		0x259D9D, // SQLPARAMTER
-		0x969696,// SQLCOMMENT 
+		0x969696, // SQLCOMMENT
     };
     Color aRet;
     switch(eEntry)
@@ -505,7 +505,7 @@ Color ColorConfig::GetDefaultColor(ColorConfigEntry eEntry)
 
         case SPELL :
         case DRAWDRAWING :
-        case SMARTTAGS :            
+        case SMARTTAGS :
         {
             const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
                 aRet = rStyleSettings.GetHighContrastMode() ?
@@ -517,10 +517,6 @@ Color ColorConfig::GetDefaultColor(ColorConfigEntry eEntry)
                 aRet = /*rStyleSettings.GetHighContrastMode() ?
 					rStyleSettings.OutlineMode??? : */	aAutoColors[eEntry];
         break;
-
-		case FONTCOLOR :
-            aRet = Application::GetSettings().GetStyleSettings().GetWindowTextColor();
-			break;
 
 		case LINKS :
             aRet = Application::GetSettings().GetStyleSettings().GetLinkColor();
@@ -680,3 +676,5 @@ void EditableColorConfig::EnableBroadcast()
 // -----------------------------------------------------------------------------
 
 }//namespace svtools
+
+/* vim: set noet sw=4 ts=4: */
