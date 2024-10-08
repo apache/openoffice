@@ -396,6 +396,7 @@
 #define HID_DAI_FUNC_DIFFWEEKS                                  "SC_HID_DAI_FUNC_DIFFWEEKS"
 #define HID_DAI_FUNC_DIFFYEARS                                  "SC_HID_DAI_FUNC_DIFFYEARS"
 #define HID_DAI_FUNC_ROT13                                      "SC_HID_DAI_FUNC_ROT13"
+#define HID_FUNC_DATEDIF                                        "SC_HID_FUNC_DATEDIF"
 
 #define HID_SCPAGE_OPREDLINBE_FT_CONTENT                        "SC_HID_SCPAGE_OPREDLINBE_FT_CONTENT"
 #define HID_MN_FORMAT_STYLE                                     "SC_HID_MN_FORMAT_STYLE"
