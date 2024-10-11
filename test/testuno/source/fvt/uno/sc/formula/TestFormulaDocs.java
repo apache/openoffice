@@ -172,7 +172,7 @@ public class TestFormulaDocs {
 			}
 		}
 
-		assertTrue( (""+nFailCount+" of "+nTestCount+" tests failed for " + type), nFailCount==0);
+		assertTrue( (nFailCount+" of "+nTestCount+" tests failed for " + type), nFailCount==0);
 
 		XModifiable modified = (XModifiable)UnoRuntime.queryInterface( XModifiable.class, scDoc);
 		modified.setModified( false);
