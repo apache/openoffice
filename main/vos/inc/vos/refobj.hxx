@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
-
 
 #ifndef _VOS_REFOBJ_HXX_
 #define _VOS_REFOBJ_HXX_
@@ -28,7 +25,7 @@
 /**
 	ORefObj<T>
 
-	template type to implement handle/body behaviour
+	template type to implement handle/body behavior
 	with reference-counting.
 */
 
@@ -45,7 +42,7 @@ class ORefObj : public IReference
 {
 public:
 	ORefObj(const T& Obj);
-	
+
 	inline ~ORefObj();
 
 	virtual RefCount SAL_CALL acquire()
@@ -67,7 +64,7 @@ public:
 	T& SAL_CALL getObj();
 
 protected:
-	T	      m_Obj;
+	T         m_Obj;
 	ORefCount m_RefCount;
 
 private:
@@ -80,6 +77,6 @@ private:
 
 }
 
-
 #endif // _VOS_REF_HXX_
 
+/* vim: set noet sw=4 ts=4: */
