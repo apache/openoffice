@@ -1,0 +1,205 @@
+diff -ru misc/icu/source/common/putil.c misc/build/icu/source/common/putil.c
+--- misc/icu/source/common/putil.c	2009-07-01 20:50:38.000000000 +0200
++++ misc/build/icu/source/common/putil.c	2024-06-14 21:17:04.184218726 +0200
+@@ -52,7 +52,7 @@
+ Poorly upgraded Solaris machines can't have this defined.
+ Cleanly installed Solaris can use this #define.
+ */
+-#if !defined(_XOPEN_SOURCE_EXTENDED) && (!defined(__STDC_VERSION__) || __STDC_VERSION__ >= 199901L)
++#if !defined(_XOPEN_SOURCE_EXTENDED) && (!defined(__STDC_VERSION__) || __STDC_VERSION__ < 199901L)
+ #define _XOPEN_SOURCE_EXTENDED 1
+ #endif
+ 
+diff -ru misc/icu/source/common/uloc.c misc/build/icu/source/common/uloc.c
+--- misc/icu/source/common/uloc.c	2009-07-01 20:50:38.000000000 +0200
++++ misc/build/icu/source/common/uloc.c	2024-06-14 21:25:59.612644465 +0200
+@@ -1736,7 +1736,7 @@
+                 int32_t variantLen = _deleteVariant(variant, uprv_min(variantSize, (nameCapacity-len)), variantToCompare, n);
+                 len -= variantLen;
+                 if (variantLen > 0) {
+-                    if (name[len-1] == '_') { /* delete trailing '_' */
++                    if (len > 0 && name[len-1] == '_') { /* delete trailing '_' */
+                         --len;
+                     }
+                     addKeyword = VARIANT_MAP[j].keyword;
+@@ -1744,7 +1744,7 @@
+                     break;
+                 }
+             }
+-            if (name[len-1] == '_') { /* delete trailing '_' */
++            if (len > 0 && name[len-1] == '_') { /* delete trailing '_' */
+                 --len;
+             }
+         }
+diff -ru misc/icu/source/config/mh-bsd-gcc misc/build/icu/source/config/mh-bsd-gcc
+--- misc/icu/source/config/mh-bsd-gcc	2009-07-01 20:50:48.000000000 +0200
++++ misc/build/icu/source/config/mh-bsd-gcc	2024-06-14 21:16:18.187059931 +0200
+@@ -18,8 +18,12 @@
+ 
+ ## Compiler switch to embed a runtime search path
+ LD_RPATH=	
+-LD_RPATH_PRE=	-Wl,-rpath,
++LD_RPATH_PRE=	-Wl,-z,origin -Wl,-rpath,
+ 
++## Force RPATH=$ORIGIN to locate own dependencies w/o need for LD_LIBRARY_PATH
++## (incl. the C++ runtime libs potentially found in the URE lib dir):
++ENABLE_RPATH=YES
++RPATHLDFLAGS=${LD_RPATH_PRE}'$$ORIGIN:$$ORIGIN/../ure-link/lib'
+ ## Compiler switch to embed a library name
+ LD_SONAME = -Wl,-soname -Wl,$(notdir $(MIDDLE_SO_TARGET))
+ 
+diff -ru misc/icu/source/config/mh-darwin misc/build/icu/source/config/mh-darwin
+--- misc/icu/source/config/mh-darwin	2009-07-01 20:50:48.000000000 +0200
++++ misc/build/icu/source/config/mh-darwin	2024-06-14 21:19:02.155170814 +0200
+@@ -25,7 +25,7 @@
+ SHLIB.cc=	$(CXX) -dynamiclib -dynamic $(CXXFLAGS) $(LDFLAGS)
+ 
+ ## Compiler switches to embed a library name and version information
+-LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name $(notdir $(MIDDLE_SO_TARGET))
++LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name @executable_path/$(notdir $(FINAL_SO_TARGET))
+ 
+ ## Compiler switch to embed a runtime search path
+ LD_RPATH=
+@@ -41,10 +41,6 @@
+ ## Non-shared intermediate object suffix
+ STATIC_O = ao
+ 
+-## Override Versioned target for a shared library.
+-FINAL_SO_TARGET=  $(basename $(SO_TARGET)).$(SO_TARGET_VERSION).$(SO)
+-MIDDLE_SO_TARGET= $(basename $(SO_TARGET)).$(SO_TARGET_VERSION_MAJOR).$(SO)
+-
+ ## Compilation rules
+ %.$(STATIC_O): $(srcdir)/%.c
+ 	$(COMPILE.c) $(STATICCPPFLAGS) $(STATICCFLAGS) -o $@ $<
+@@ -76,15 +72,9 @@
+ 
+ ## Versioned libraries rules
+ 
+-%.$(SO_TARGET_VERSION_MAJOR).$(SO): %.$(SO_TARGET_VERSION).$(SO)
++%.$(SO).$(SO_TARGET_VERSION_MAJOR): %.$(SO).$(SO_TARGET_VERSION)
+ 	$(RM) $@ && ln -s ${<F} $@
+-%.$(SO): %.$(SO_TARGET_VERSION_MAJOR).$(SO)
+-	$(RM) $@ && ln -s ${*F}.$(SO_TARGET_VERSION).$(SO) $@
+-
+-# tzcode option
+-TZORIG_EXTRA_CFLAGS=-DSTD_INSPIRED
+-
+-# genren opts
+-GENREN_PL_OPTS=-x Mach-O -n '-g' -p '| c++filt'
++%.$(SO): %.$(SO).$(SO_TARGET_VERSION_MAJOR)
++	$(RM) $@ && ln -s ${*F}.$(SO).$(SO_TARGET_VERSION) $@
+ 
+ ## End Darwin-specific setup
+diff -ru misc/icu/source/config/mh-linux misc/build/icu/source/config/mh-linux
+--- misc/icu/source/config/mh-linux	2009-07-01 20:50:48.000000000 +0200
++++ misc/build/icu/source/config/mh-linux	2024-06-14 21:19:31.827909846 +0200
+@@ -20,6 +20,11 @@
+ LD_RPATH=
+ LD_RPATH_PRE = -Wl,-rpath,
+ 
++## Force RPATH=$ORIGIN to locate own dependencies w/o need for LD_LIBRARY_PATH
++## (incl. the C++ runtime libs potentially found in the URE lib dir):
++ENABLE_RPATH=YES
++RPATHLDFLAGS=${LD_RPATH_PRE}'$$ORIGIN:$$ORIGIN/../ure-link/lib'
++
+ ## These are the library specific LDFLAGS
+ LDFLAGSICUDT=-nodefaultlibs -nostdlib
+ 
+diff -ru misc/icu/source/config/mh-mingw misc/build/icu/source/config/mh-mingw
+--- misc/icu/source/config/mh-mingw	2009-07-01 20:50:48.000000000 +0200
++++ misc/build/icu/source/config/mh-mingw	2024-06-14 21:20:44.741721341 +0200
+@@ -76,6 +76,8 @@
+ # Current full path directory for use in source code in a -D compiler option.
+ #CURR_SRCCODE_FULL_DIR=$(subst /,\\\\,$(shell pwd -W))#M# for MSYS
+ CURR_SRCCODE_FULL_DIR=$(subst \,/,$(shell cmd /c cd))#M# for Cygwin shell
++SRCDIR_DEPEND=$(shell cd $(SRCDIR) && pwd)
++DATAFILEPATHS_DEPEND=$(foreach p,$(DATAFILEPATHS),$(shell cd $(dir $(p)) && pwd)/$(notdir $(p)))
+ 
+ ## Compilation rules
+ %.$(STATIC_O): $(srcdir)/%.c
+diff -ru misc/icu/source/config/mh-solaris misc/build/icu/source/config/mh-solaris
+--- misc/icu/source/config/mh-solaris	2009-07-01 20:50:48.000000000 +0200
++++ misc/build/icu/source/config/mh-solaris	2024-06-14 21:22:01.599625394 +0200
+@@ -18,17 +18,21 @@
+ 
+ ## Commands to link
+ ## For Sun Workshop, use CC to link to bring in C++ runtime
+-LINK.c=		$(CXX) $(CXXFLAGS) $(LDFLAGS)
+-LINK.cc=	$(CXX) $(CXXFLAGS) $(LDFLAGS)
++LINK.c=		$(CXX) $(CXXFLAGS) $(LDFLAGS) -norunpath
++LINK.cc=	$(CXX) $(CXXFLAGS) $(LDFLAGS) -norunpath
+ 
+ ## Commands to make a shared library
+ SHLIB.c=	$(CC) $(CFLAGS) $(LDFLAGS) -G
+-SHLIB.cc=	$(CXX) $(CXXFLAGS) $(LDFLAGS) -G
++SHLIB.cc=	$(CXX) $(CXXFLAGS) $(LDFLAGS) -G -norunpath
+ 
+ ## Compiler switch to embed a runtime search path
+ LD_RPATH=	-R
+ LD_RPATH_PRE=	
+ 
++## Force RPATH=$ORIGIN to locate own dependencies w/o need for LD_LIBRARY_PATH
++ENABLE_RPATH=YES
++RPATHLDFLAGS=${LD_RPATH}'$$ORIGIN'
++
+ #LIBRARY_PATH_PREFIX=/usr/lib/lwp:
+ 
+ ## Compiler switch to embed a library name
+diff -ru misc/icu/source/layout/ArabicShaping.cpp misc/build/icu/source/layout/ArabicShaping.cpp
+--- misc/icu/source/layout/ArabicShaping.cpp	2009-07-01 20:51:24.000000000 +0200
++++ misc/build/icu/source/layout/ArabicShaping.cpp	2024-06-14 21:23:05.557119301 +0200
+@@ -79,7 +79,6 @@
+ #define markFeatureMask 0x00040000UL
+ #define mkmkFeatureMask 0x00020000UL
+ 
+-#define NO_FEATURES   0
+ #define ISOL_FEATURES (isolFeatureMask | ligaFeatureMask | msetFeatureMask | markFeatureMask | ccmpFeatureMask | rligFeatureMask | caltFeatureMask | dligFeatureMask | cswhFeatureMask | cursFeatureMask | kernFeatureMask | mkmkFeatureMask)
+ 
+ #define SHAPE_MASK 0xF0000000UL
+@@ -174,11 +173,7 @@
+         LEUnicode c = chars[in];
+         ShapeType t = getShapeType(c);
+ 
+-        if (t == ST_NOSHAPE_NONE) {
+-            glyphStorage.setAuxData(out, NO_FEATURES, success);
+-        } else {
+-            glyphStorage.setAuxData(out, ISOL_FEATURES, success);
+-        }
++        glyphStorage.setAuxData(out, ISOL_FEATURES, success);
+ 
+         if ((t & MASK_TRANSPARENT) != 0) {
+             continue;
+diff -ru misc/icu/source/tools/genuca/genuca.cpp misc/build/icu/source/tools/genuca/genuca.cpp
+--- misc/icu/source/tools/genuca/genuca.cpp	2009-07-01 20:50:40.000000000 +0200
++++ misc/build/icu/source/tools/genuca/genuca.cpp	2024-06-14 21:27:57.031211233 +0200
+@@ -395,7 +395,7 @@
+                        copyright, status);
+ 
+     if(U_FAILURE(*status)) {
+-        fprintf(stderr, "Error: unable to create %s"INVC_DATA_NAME", error %s\n", outputDir, u_errorName(*status));
++        fprintf(stderr, "Error: unable to create %s" INVC_DATA_NAME ", error %s\n", outputDir, u_errorName(*status));
+         return;
+     }
+ 
+@@ -757,7 +757,7 @@
+                        copyright, status);
+ 
+     if(U_FAILURE(*status)) {
+-        fprintf(stderr, "Error: unable to create %s"UCA_DATA_NAME", error %s\n", outputDir, u_errorName(*status));
++        fprintf(stderr, "Error: unable to create %s" UCA_DATA_NAME ", error %s\n", outputDir, u_errorName(*status));
+         return;
+     }
+ 
+@@ -904,9 +904,9 @@
+       {0x20000, 0x2A6D6, UCOL_SPECIAL_FLAG | (CJK_IMPLICIT_TAG << 24)  },  //6 CJK_IMPLICIT_TAG,   /* 0x20000-0x2A6D6*/
+       {0x2F800, 0x2FA1D, UCOL_SPECIAL_FLAG | (CJK_IMPLICIT_TAG << 24)  },  //7 CJK_IMPLICIT_TAG,   /* 0x2F800-0x2FA1D*/
+ #endif
+-      {0xAC00, 0xD7B0, UCOL_SPECIAL_FLAG | (HANGUL_SYLLABLE_TAG << 24) },  //0 HANGUL_SYLLABLE_TAG,/* AC00-D7AF*/
++      {0xAC00, 0xD7B0, static_cast<int32_t>(UCOL_SPECIAL_FLAG | (HANGUL_SYLLABLE_TAG << 24)) },  //0 HANGUL_SYLLABLE_TAG,/* AC00-D7AF*/
+       //{0xD800, 0xDC00, UCOL_SPECIAL_FLAG | (LEAD_SURROGATE_TAG << 24)  },  //1 LEAD_SURROGATE_TAG,  /* D800-DBFF*/
+-      {0xDC00, 0xE000, UCOL_SPECIAL_FLAG | (TRAIL_SURROGATE_TAG << 24) },  //2 TRAIL_SURROGATE DC00-DFFF
++      {0xDC00, 0xE000, static_cast<int32_t>(UCOL_SPECIAL_FLAG | (TRAIL_SURROGATE_TAG << 24)) },  //2 TRAIL_SURROGATE DC00-DFFF
+       // Now directly handled in the collation code by the swapCJK function. 
+       //{0x3400, 0x4DB6, UCOL_SPECIAL_FLAG | (CJK_IMPLICIT_TAG << 24)    },  //3 CJK_IMPLICIT_TAG,   /* 0x3400-0x4DB5*/
+       //{0x4E00, 0x9FA6, UCOL_SPECIAL_FLAG | (CJK_IMPLICIT_TAG << 24)    },  //4 CJK_IMPLICIT_TAG,   /* 0x4E00-0x9FA5*/
+
