@@ -27,7 +27,8 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 use XML::Parser;
 # ------------------------------------------------------------------------
 # Other global stuff
-$is_debug=0;
+$is_debug = exists $ENV{'debug'};
+$enable_symbols = exists $ENV{'ENABLE_SYMBOLS'};
 my $path = $ENV{'INPATH'} . "/";
 my $quot = '"';
 my %template_hash=();
@@ -571,6 +572,9 @@ sub print_all_target        #26.06.2008 13:27
     my @target = ();
     if ( exists $template_hash{$targetkey}  ) {
         @target = @{$template_hash{$targetkey}};
+        print "target: @target from cfg key $targetkey\n" if ($is_debug);
+    } else {
+        print "No cfg key for target $targetkey\n" if ($is_debug);
     }
     my $additional_target="";
     foreach $additional_target(@target)
@@ -676,6 +680,8 @@ sub print_rsc_template      #04.11.2008 14:48
 	{
         $line =~ s/<FILE>/$resourcefile/;
         $line =~ s/<FILEOUT>/$resfile/;
+        $line =~ s/\/d \"NDEBUG\"/\/d \"DEBUG\"/ if ($enable_symbols ||
+						     $is_debug);
 		print MAKFILE $line;
 	}
 }   ##print_rsc_template
@@ -696,6 +702,7 @@ sub print_flags		#18.04.2008 14:19
     handle_CFlags() if ($flag eq "CFlags");  # get and print Preprocessor defines
     $switch .= "\." . $extra_mak if ( $extra_mak ne "" ) ;
     if ( exists $template_hash{$switch} ) {
+        print "Reading switches from cfg section $switch\n" if ($is_debug);
         @template = @{$template_hash{$switch}};
         foreach $line(@template)
         {
@@ -707,6 +714,8 @@ sub print_flags		#18.04.2008 14:19
             }
             print MAKFILE $line;
         }
+    } else {
+        print "No cfg section $switch -> no switches\n" if ($is_debug);
     }
 }	##print_flags
 
@@ -728,6 +737,7 @@ sub handle_CFlags       #28.01.2009 11:20
 	{
         $line =~ s/<AddIncDirs>/$ppinc/;
         $line =~ s/<PreProcDefs>/$ppdefs/;
+        $line =~ s/-DNDEBUG/\-Zi/ if ($enable_symbols || $is_debug);
 		print MAKFILE $line;
 	}
 }   ##handle_CFlags
