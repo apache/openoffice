@@ -809,7 +809,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 
 				if (aSize.Height() > aSize.Width())
 				{
-					 // Always Landscape
+					 // Always use Landscape
 					 aNewSize.Width()  = aSize.Height();
 					 aNewSize.Height() = aSize.Width();
 				}
@@ -840,17 +840,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 		}
 		break;
 
-		case OUTPUT_SLIDE:
-		{
-			aNewSize = Size(27000, 18000);
-			nLeft =0;
-			nRight=0;
-			nUpper=0;
-			nLower=0;
-		}
-		break;
-
-		case OUTPUT_PRESENTATION_4_BY_3:
+		case OUTPUT_SCREEN_4_BY_3:
 		{
 			aNewSize = Size(28000, 21000);
 			nLeft =0;
@@ -860,7 +850,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 		}
 		break;
 
-		case OUTPUT_PRESENTATION_16_BY_9: // not used yet
+		case OUTPUT_SCREEN_16_BY_9:
 		{
 			aNewSize = Size(28000, 15750);
 			nLeft =0;
@@ -870,7 +860,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 		}
 		break;
 
-		case OUTPUT_PRESENTATION_16_BY_10: // not used yet
+		case OUTPUT_SCREEN_16_BY_10:
 		{
 			aNewSize = Size(28000, 17500);
 			nLeft =0;
