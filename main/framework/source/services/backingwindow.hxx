@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef FRAMEWORK_BACKINGWINDOW_HXX
 #define FRAMEWORK_BACKINGWINDOW_HXX
@@ -59,25 +57,25 @@ class MnemonicGenerator;
 
 namespace framework
 {
-        // To get the transparent mouse-over look, the closer is actually a toolbox
-    // overload DataChange to handle style changes correctly
-    class DecoToolBox : public ToolBox
-    {
-        Size maMinSize;
+	// To get the transparent mouse-over look, the closer is actually a toolbox
+	// overload DataChange to handle style changes correctly
+	class DecoToolBox : public ToolBox
+	{
+		Size maMinSize;
 
-        using Window::ImplInit;
-    public:
+		using Window::ImplInit;
+	public:
                 DecoToolBox( Window* pParent, WinBits nStyle = 0 );
                 DecoToolBox( Window* pParent, const ResId& rResId );
 
-        void    DataChanged( const DataChangedEvent& rDCEvt );
+		void    DataChanged( const DataChangedEvent& rDCEvt );
 
-        void    calcMinSize();
-        Size    getMinSize();
-    };
+		void    calcMinSize();
+		Size    getMinSize();
+	};
 
-    class BackingWindow : public Window
-    {
+	class BackingWindow : public Window
+	{
 
         com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >         mxContext;
         com::sun::star::uno::Reference<com::sun::star::frame::XDesktop>                  mxDesktop;
@@ -128,16 +126,16 @@ namespace framework
         long                            mnBtnPos;
         long                            mnBtnTop;
 
-        static const int nItemId_Extensions = 1;
-        static const int nItemId_Reg = 2;
-        static const int nItemId_Info = 3;
-        static const int nItemId_TplRep = 4;
-        static const int nShadowTop = 32;
-        static const int nShadowLeft = 35;
-        static const int nShadowRight = 45;
-        static const int nShadowBottom = 50;
+		static const int nItemId_Extensions = 1;
+//		static const int nItemId_Reg = 2;
+		static const int nItemId_Info = 3;
+		static const int nItemId_TplRep = 4;
+		static const int nShadowTop = 32;
+		static const int nShadowLeft = 36;
+		static const int nShadowRight = 46;
+		static const int nShadowBottom = 50;
 
-        void loadImage( const ResId& i_rId, PushButton& i_rButton );
+		void loadImage( const ResId& i_rId, PushButton& i_rButton );
 
         void layoutButton( const char* i_pURL, int nColumn, const std::set<rtl::OUString>& i_rURLS,
                            SvtModuleOptions& i_rOpt, SvtModuleOptions::EModule i_eMod,
@@ -176,3 +174,4 @@ namespace framework
 
 #endif
 
+/* vim: set noet sw=4 ts=4: */
