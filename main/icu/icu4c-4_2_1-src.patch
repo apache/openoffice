@@ -203,3 +203,28 @@ diff -ru misc/icu/source/tools/genuca/genuca.cpp misc/build/icu/source/tools/gen
        //{0x3400, 0x4DB6, UCOL_SPECIAL_FLAG | (CJK_IMPLICIT_TAG << 24)    },  //3 CJK_IMPLICIT_TAG,   /* 0x3400-0x4DB5*/
        //{0x4E00, 0x9FA6, UCOL_SPECIAL_FLAG | (CJK_IMPLICIT_TAG << 24)    },  //4 CJK_IMPLICIT_TAG,   /* 0x4E00-0x9FA5*/
 
+--- misc/icu/source/configure	2009-07-01 14:51:26.000000000 -0400
++++ misc/build/icu/source/configure	2024-10-19 16:35:02.000000000 -0400
+@@ -7061,8 +7061,10 @@
+ 	# Check for potential -arch flags.  It is not universal unless
+ 	# there are some -arch flags.  Note that *ppc* also matches
+ 	# ppc64.  This check is also rather less than ideal.
++	echo "${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS}"
+ 	case "${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS}" in  #(
+-	  *-arch*ppc*|*-arch*i386*|*-arch*x86_64*) ac_cv_c_bigendian=universal;;
++	  *-arch*i386*|*-arch*x86_64*) ac_cv_c_bigendian=no;;
++	  *-arch*ppc*) ac_cv_c_bigendian=yes;;
+ 	esac
+ else
+   $as_echo "$as_me: failed program was:" >&5
+--- misc/icu/source/i18n/uspoof.cpp	2009-07-01 14:50:10.000000000 -0400
++++ misc/build/icu/source/i18n/uspoof.cpp	2024-10-19 16:36:44.000000000 -0400
+@@ -366,7 +366,7 @@
+         // u_strToUTF8() in preflight mode is an easy way to do it.
+         U_ASSERT(position16 <= len16);
+         u_strToUTF8(NULL, 0, position, text16, position16, status);
+-        if (position > 0) {
++        if (position) {
+             // position is the required buffer length from u_strToUTF8, which includes
+             // space for a terminating NULL, which we don't want, hence the -1.
+             *position -= 1;

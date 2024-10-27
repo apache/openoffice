@@ -46,6 +46,10 @@ TARFILE_ROOTDIR=icu
 PATCH_FILES=${TARFILE_NAME}.patch icu-win-layout.patch \
 	icu-format-security.patch icu-win-icutu-dll-version.patch
 
+.IF "$(OS)"=="MACOSX"
+PATCH_FILES+=icu-darwin.patch
+.ENDIF
+
 # ADDITIONAL_FILES=
 
 .IF "$(GUI)"=="UNX"
