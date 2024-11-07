@@ -33,24 +33,24 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3156027">
 <bookmark_value>Sqr function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3156027" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03080401.xhp" name="Sqr Function [Runtime]">Sqr Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3147226" xml-lang="en-US" l10n="U" oldref="2">Calculates the square root of a numeric expression.</paragraph>
+<paragraph role="heading" id="hd_id3156027" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03080401.xhp" name="Sqr Function [Runtime]">Sqr Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3147226" xml-lang="en-US" l10n="U">Calculates the square root of a numeric expression.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3143267" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3149415" xml-lang="en-US" l10n="U" oldref="4">Sqr (Number)</paragraph>
-<paragraph role="heading" id="hd_id3156023" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="U" oldref="6">Double</paragraph>
-<paragraph role="heading" id="hd_id3147265" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U" oldref="8">
+<paragraph role="heading" id="hd_id3143267" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3149415" xml-lang="en-US" l10n="U">Sqr (Number)</paragraph>
+<paragraph role="heading" id="hd_id3156023" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="U">Double</paragraph>
+<paragraph role="heading" id="hd_id3147265" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U">
 <emph>Number:</emph> Any numeric expression that you want to calculate the square root for.</paragraph>
-<paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U" oldref="9">A square root is the number that you multiply by itself to produce another number, for example, the square root of 36 is 6.</paragraph>
+<paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U">A square root is the number that you multiply by itself to produce another number, for example, the square root of 36 is 6.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3153192" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleSqr</paragraph>
-<paragraph role="paragraph" id="par_id3156423" xml-lang="en-US" l10n="U" oldref="12">Dim iVar As Single</paragraph>
-<paragraph role="paragraph" id="par_id3147288" xml-lang="en-US" l10n="U" oldref="13">iVar = 36</paragraph>
-<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U" oldref="14">Msgbox Sqr(iVar)</paragraph>
-<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U" oldref="15">end sub</paragraph>
+<paragraph role="heading" id="hd_id3153192" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U">Sub ExampleSqr</paragraph>
+<paragraph role="paragraph" id="par_id3156423" xml-lang="en-US" l10n="U">Dim iVar As Single</paragraph>
+<paragraph role="paragraph" id="par_id3147288" xml-lang="en-US" l10n="U">iVar = 36</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U">Msgbox Sqr(iVar)</paragraph>
+<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>
