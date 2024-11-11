@@ -27,10 +27,12 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 use XML::Parser;
 # ------------------------------------------------------------------------
 # Other global stuff
-$is_debug=0;
+$is_debug = exists $ENV{'debug'};
+$enable_symbols = exists $ENV{'ENABLE_SYMBOLS'};
 my $path = $ENV{'INPATH'} . "/";
 my $quot = '"';
 my %template_hash=();
+my $architecture = "x86";
 my %vcproj_hash=();
 # ------------------------------------------------------------------------
 # Global stuff for parsing the *.vcproj files (XML::Parser)
@@ -72,6 +74,10 @@ $sep = "\\\\";
 my @builddeps = prepare_allinone_all_mak(\%project_by_id,\%project_by_name,\%project_dependencies,$sourcePath);
 
 fillTemplateHash($configfile);
+# The architecture is indicated in the configuration file
+$architecture=${$template_hash{"Architecture"}}[0];
+chomp $architecture;
+print "Architecture: $architecture\n" if ($is_debug);
 
 create_allinone_all_mak(\@builddeps,\%project_by_id,$sourcePath);
 my @dirs = ();
@@ -558,7 +564,7 @@ sub print_all_target        #26.06.2008 13:27
     {
         if ( $target =~ /\.exe/ ) {
             my $out = $target;
-            $out =~ s/.\\Release/\.\.\\\.\.\\\.\.\\bin/;
+            $out =~ s/\.\\((x64|x86)\\)?Release/\.\.\\\.\.\\\.\.\\$1bin/;
             $out =~ s/\$\(OutDir\)/\.\.\\\.\.\\\.\.\\bin/;
             $out =~ s/\//\\/; # convert / to \
             $target = $out;
@@ -571,6 +577,9 @@ sub print_all_target        #26.06.2008 13:27
     my @target = ();
     if ( exists $template_hash{$targetkey}  ) {
         @target = @{$template_hash{$targetkey}};
+        print "target: @target from cfg key $targetkey\n" if ($is_debug);
+    } else {
+        print "No cfg key for target $targetkey\n" if ($is_debug);
     }
     my $additional_target="";
     foreach $additional_target(@target)
@@ -637,18 +646,24 @@ sub print_link_template       #18.04.2008 13:39
 
     # for *.exe files an additional
     # copy section is required to get
-    # the stuff into the global bin directory
+    # the stuff into the per-arch bin directory
     my %dummy = ();
     my @mak = ();
+    my $arch = "";
+    if ( $out =~ /x64/ ) {
+	$arch = "x64\\";
+    } elsif ( $out =~ /x86/ ) {
+	$arch = "x86\\";
+    }
     if( $manifest ==1 )
     {
         # source,inputpath,target,action
         my $out = $outfile;
-        $out =~ s/.\\.*Release/\.\.\\\.\.\\\.\.\\bin/;
+        $out =~ s/\.\\((x64|x86)\\)?Release/\.\.\\\.\.\\\.\.\\$1bin/;
         $out =~ s/\$\(OutDir\)/\.\.\\\.\.\\\.\.\\bin/;
         $out =~ s/\//\\/;       # subst / with \
         $outfile =~ s/\//\\/;   # subst / with \
-        createCopySection($outfile,$outfile,$out,"copy \"\$(InputPath)\" .\\..\\..\\..\\bin",\@mak,\%dummy);
+        createCopySection($outfile,$outfile,$out,"copy \"\$(InputPath)\" .\\..\\..\\..\\${arch}bin",\@mak,\%dummy);
         foreach $line(@mak)
         {
             print MAKFILE $line;
@@ -676,6 +691,8 @@ sub print_rsc_template      #04.11.2008 14:48
 	{
         $line =~ s/<FILE>/$resourcefile/;
         $line =~ s/<FILEOUT>/$resfile/;
+        $line =~ s/\/d \"NDEBUG\"/\/d \"DEBUG\"/ if ($enable_symbols ||
+						     $is_debug);
 		print MAKFILE $line;
 	}
 }   ##print_rsc_template
@@ -696,6 +713,7 @@ sub print_flags		#18.04.2008 14:19
     handle_CFlags() if ($flag eq "CFlags");  # get and print Preprocessor defines
     $switch .= "\." . $extra_mak if ( $extra_mak ne "" ) ;
     if ( exists $template_hash{$switch} ) {
+        print "Reading switches from cfg section $switch\n" if ($is_debug);
         @template = @{$template_hash{$switch}};
         foreach $line(@template)
         {
@@ -707,6 +725,8 @@ sub print_flags		#18.04.2008 14:19
             }
             print MAKFILE $line;
         }
+    } else {
+        print "No cfg section $switch -> no switches\n" if ($is_debug);
     }
 }	##print_flags
 
@@ -728,6 +748,7 @@ sub handle_CFlags       #28.01.2009 11:20
 	{
         $line =~ s/<AddIncDirs>/$ppinc/;
         $line =~ s/<PreProcDefs>/$ppdefs/;
+        $line =~ s/-DNDEBUG/\-Zi/ if ($enable_symbols || $is_debug);
 		print MAKFILE $line;
 	}
 }   ##handle_CFlags
@@ -965,7 +986,7 @@ sub create_allinone_all_mak     #09.02.2009 09:22
             #special code snippet
             print ALLMAK "makedata : \n";
             print ALLMAK "     cd \"..\\data\"\n";
-            print ALLMAK "     nmake /f makedata.mak icumake=\$(MAKEDIR)\\..\\data cfg=Release\n";
+            print ALLMAK "     nmake /f makedata.mak icumake=\$(MAKEDIR)\\..\\data cfg=$architecture/Release\n";
             print ALLMAK "     cd \"..\\allinone\"\n\n";
         }
     }
@@ -1007,12 +1028,44 @@ sub start_handler
             $special_file="";
         }
         if ( $ConfigSection && $att eq "Name" && $val eq "Release|Win32" ) {
-            $Release = 1;
-            $config = "Release";                                                             # Release
+	    if ( $architecture eq "x86" ) {
+		$Release = 1;
+		$config = "Release";                                                             # Release
+	    } else {
+		print "Ignoring Configuration $val\n" if ($is_debug);
+		$Release = 2;
+		$config = "Ignored";
+	    }
         }
         if ( $ConfigSection && $att eq "Name" && $val eq "Debug|Win32" ) {
-            $Release = 0;                                                             # Debug
-            $config = "Debug";
+	    if ( $architecture eq "x86" ) {
+		$Release = 0;                                                                    # Debug
+		$config = "Debug";
+	    } else {
+                print "Ignoring Configuration $val\n" if ($is_debug);
+		$Release = 2;
+		$config = "Ignored";
+	    }
+        }
+        if ( $ConfigSection && $att eq "Name" && $val eq "Release|x64" ) {
+	    if ( $architecture eq "x64" ) {
+		$Release = 1;
+		$config = "Release";                                                             # Release
+	    } else {
+                print "Ignoring Configuration $val\n" if ($is_debug);
+		$Release = 2;
+		$config = "Ignored";
+	    }
+        }
+        if ( $ConfigSection && $att eq "Name" && $val eq "Debug|x64" ) {
+	    if ( $architecture eq "x64" ) {
+		$Release = 0;                                                             # Debug
+		$config = "Debug";
+	    } else {
+                print "Ignoring Configuration $val\n" if ($is_debug);
+		$Release = 2;
+		$config = "Ignored";
+	    }
         }
         if ( $att eq "Name" && $val eq "VCCLCompilerTool" ) {
             $CompilerSection = 1;
@@ -1055,6 +1108,10 @@ sub start_handler
            $configelements{$config}{$att} = $val;
         }
         if ( $att eq "OutputFile" && $LinkerSection ) {
+           if ($architecture eq "x64") {
+              # We want the /bin/ subdirectory on all architectures
+              $val =~ s/\\bin64\\/\\bin\\/;
+           }
            $configelements{$config}{$att} = $val;
         }
         if ( $att eq "ProgramDatabaseFile" ) {

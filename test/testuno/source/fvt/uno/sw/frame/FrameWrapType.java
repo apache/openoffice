@@ -100,7 +100,7 @@ public class FrameWrapType {
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
 		XTextFrame xTextFrame_Assert1=(XTextFrame) UnoRuntime.queryInterface(XTextFrame.class, xTextFrames_odt.getByName("Frame1"));
 		XPropertySet xTextFrameProps_assert1 = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextFrame_Assert1);
-		WrapTextMode surrond=(WrapTextMode)UnoRuntime.queryInterface(WrapTextMode.class,xTextFrameProps_assert1.getPropertyValue("Surround"));
-		assertEquals("assert frame wrap type",FrameWrapType,surrond.getValue());
+		WrapTextMode surround=(WrapTextMode)UnoRuntime.queryInterface(WrapTextMode.class,xTextFrameProps_assert1.getPropertyValue("Surround"));
+		assertEquals("assert frame wrap type",FrameWrapType,surround.getValue());
 	}
 }

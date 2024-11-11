@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #include "precompiled_rptxml.hxx"
 #include "xmlCondPrtExpr.hxx"
@@ -50,13 +49,13 @@ OXMLCondPrtExpr::OXMLCondPrtExpr( ORptFilter& _rImport,
 	SvXMLImportContext( _rImport, nPrfx, rLName )
 ,m_xComponent(_xComponent)
 {
-    DBG_CTOR( rpt_OXMLCondPrtExpr,NULL);
+	DBG_CTOR( rpt_OXMLCondPrtExpr,NULL);
 
 	OSL_ENSURE(m_xComponent.is(),"Component is NULL!");
-    const SvXMLNamespaceMap& rMap = _rImport.GetNamespaceMap();
+	const SvXMLNamespaceMap& rMap = _rImport.GetNamespaceMap();
 	const SvXMLTokenMap& rTokenMap = _rImport.GetFunctionElemTokenMap();
-    const sal_Int16 nLength = (_xAttrList.is()) ? _xAttrList->getLength() : 0;
-    try
+	const sal_Int16 nLength = (_xAttrList.is()) ? _xAttrList->getLength() : 0;
+	try
 	{
 	    for(sal_Int16 i = 0; i < nLength; ++i)
 	    {
@@ -67,18 +66,18 @@ OXMLCondPrtExpr::OXMLCondPrtExpr( ORptFilter& _rImport,
 
 			switch( rTokenMap.Get( nPrefix, sLocalName ) )
 			{
-                case XML_TOK_FUNCTION_FORMULA: 
+                case XML_TOK_FUNCTION_FORMULA:
                     m_xComponent->setPropertyValue(PROPERTY_CONDITIONALPRINTEXPRESSION,uno::makeAny(ORptFilter::convertFormula(sValue)));
 					break;
                 default:
                     break;
-            }
-		
-	    }
-    }
+			}
+
+		}
+	}
 	catch(const Exception&)
 	{
-		OSL_ENSURE(0,"Exception catched while putting Function props!");
+		OSL_ENSURE(0,"Exception caught while putting Function props!");
 	}
 }
 // -----------------------------------------------------------------------------
@@ -86,7 +85,7 @@ OXMLCondPrtExpr::OXMLCondPrtExpr( ORptFilter& _rImport,
 OXMLCondPrtExpr::~OXMLCondPrtExpr()
 {
 
-    DBG_DTOR( rpt_OXMLCondPrtExpr,NULL);
+	DBG_DTOR( rpt_OXMLCondPrtExpr,NULL);
 }
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------

@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "helpid.hrc"
 
 #ifndef __FRAMEWORK_CLASSES_RESOURCE_HRC_
@@ -62,13 +60,13 @@ Menu POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION
 			SubMenu = Menu
 			{
 			};
-			Text[ en-US ] = "Visible ~Buttons" ;
+			Text [ en-US ] = "Visible ~Buttons" ;
 		};
 		MenuItem
 		{
 			Identifier = MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR ;
 			Command = ".uno:ConfigureToolboxVisible" ;
-			Text[ en-US ] = "~Customize Toolbar..." ;
+			Text [ en-US ] = "~Customize Toolbar..." ;
 		};
 		MenuItem
 		{
@@ -77,12 +75,12 @@ Menu POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION
 		MenuItem
 		{
 			Identifier = MENUITEM_TOOLBAR_DOCKTOOLBAR ;
-			Text[ en-US ] = "~Dock Toolbar" ;
+			Text [ en-US ] = "~Dock Toolbar" ;
 		};
 		MenuItem
 		{
 			Identifier = MENUITEM_TOOLBAR_DOCKALLTOOLBAR ;
-			Text[ en-US ] = "Dock ~All Toolbars" ;
+			Text [ en-US ] = "Dock ~All Toolbars" ;
 		};
 		MenuItem
 		{
@@ -91,12 +89,12 @@ Menu POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION
 		MenuItem
 		{
 			Identifier = MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION ;
-			Text[ en-US ] = "~Lock Toolbar Position" ;
+			Text [ en-US ] = "~Lock Toolbar Position" ;
 		};
 		MenuItem
 		{
 			Identifier = MENUITEM_TOOLBAR_CLOSE ;
-			Text[ en-US ] = "Close ~Toolbar" ;
+			Text [ en-US ] = "Close ~Toolbar" ;
 		};
 	};
 };
@@ -214,7 +212,7 @@ ModalDialog DLG_LICENSE
 	{
 		WordBreak = TRUE ;
 		Pos = MAP_APPFONT ( LICENSE_COL_3, LICENSE_ROW_3 ) ;
-		Size = MAP_APPFONT ( COL3_WIDTH, 3*FT_HEIGHT ) ;
+		Size = MAP_APPFONT ( COL3_WIDTH, 3 * FT_HEIGHT ) ;
 		Text [ en-US ] = "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text." ;
 	};
 

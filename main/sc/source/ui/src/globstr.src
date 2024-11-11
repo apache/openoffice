@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "globstr.hrc"
 #include "sc.hrc"
 
@@ -1608,12 +1606,12 @@ Resource RID_GLOBSTR
 
 	String STR_CHANGED_MOVE_REJECTION_WARNING
 	{
-		Text[ en-US ] = "WARNING: This action may have resulted in unintended changes to cell references in formulas." ;
+		Text [ en-US ] = "WARNING: This action may have resulted in unintended changes to cell references in formulas." ;
 	};
 
 	String STR_CHANGED_DELETE_REJECTION_WARNING
 	{
-		Text[ en-US ] = "WARNING: This action may have resulted in references to the deleted area not being restored." ;
+		Text [ en-US ] = "WARNING: This action may have resulted in references to the deleted area not being restored." ;
 	};
 
 	String STR_HF_NONE_IN_BRACKETS
@@ -1658,7 +1656,7 @@ Resource RID_GLOBSTR
 
 	String STR_ERR_DATAPILOT_INPUT
 	{
-		Text[ en-US ] = "You cannot change this part of the pivot table." ;
+		Text [ en-US ] = "You cannot change this part of the pivot table." ;
 	};
 
 	String STR_RECALC_MANUAL

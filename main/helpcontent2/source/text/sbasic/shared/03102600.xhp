@@ -34,24 +34,22 @@
 <bookmark_value>IsNull function</bookmark_value>
 <bookmark_value>Null value</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3155555" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03102600.xhp" name="IsNull Function [Runtime]">IsNull Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3146957" xml-lang="en-US" l10n="U" oldref="2">Tests if a Variant contains the special Null value, indicating that the variable does not contain data.</paragraph>
+<paragraph role="heading" id="hd_id3155555" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03102600.xhp" name="IsNull Function [Runtime]">IsNull Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3146957" xml-lang="en-US" l10n="U">Tests if a Variant contains the special Null value, indicating that the variable does not contain data.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3150670" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U" oldref="4">IsNull (Var)</paragraph>
-<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U" oldref="6">Bool</paragraph>
-<paragraph role="heading" id="hd_id3149669" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Var:</emph> Any variable that you want to test. This function returns True if the Variant contains the Null value, or False if the Variant does not contain the Null value.</paragraph>
-<paragraph role="paragraph" id="par_idN1062A" xml-lang="en-US" l10n="NEW">
-<emph>Null</emph> - This value is used for a variant data sub type without valid contents.</paragraph>
+<paragraph role="heading" id="hd_id3150670" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U">IsNull (Var)</paragraph>
+<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U">Bool</paragraph>
+<paragraph role="heading" id="hd_id3149669" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U"><emph>Var:</emph> Any variable that you want to test. This function returns True if the Variant contains the Null value, or False if the Variant does not contain the Null value.</paragraph>
+<paragraph role="paragraph" id="par_idN1062A" xml-lang="en-US" l10n="NEW"><emph>Null</emph> - This value is used for a variant data sub type without valid contents.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3153381" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3154140" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleIsNull</paragraph>
-<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U" oldref="11">Dim vVar As Variant</paragraph>
-<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U" oldref="12">msgbox IsNull(vVar)</paragraph>
-<paragraph role="paragraph" id="par_id3153970" xml-lang="en-US" l10n="U" oldref="13">end sub</paragraph>
+<paragraph role="heading" id="hd_id3153381" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154140" xml-lang="en-US" l10n="U">Sub ExampleIsNull</paragraph>
+<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U">Dim vVar As Variant</paragraph>
+<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U">msgbox IsNull(vVar)</paragraph>
+<paragraph role="paragraph" id="par_id3153970" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

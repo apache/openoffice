@@ -33,23 +33,23 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153750">
 <bookmark_value>CDbl function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153750" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03100400.xhp" name="CDbl Function [Runtime]">CDbl Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3149233" xml-lang="en-US" l10n="U" oldref="2">Converts any numerical expression or string expression to a double type.</paragraph>
+<paragraph role="heading" id="hd_id3153750" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03100400.xhp" name="CDbl Function [Runtime]">CDbl Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149233" xml-lang="en-US" l10n="U">Converts any numerical expression or string expression to a double type.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3149516" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax</paragraph>
-<paragraph role="paragraph" id="par_id3156152" xml-lang="en-US" l10n="U" oldref="4">CDbl (Expression)</paragraph>
-<paragraph role="heading" id="hd_id3153061" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value</paragraph>
-<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="6">Double</paragraph>
-<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U" oldref="8">
+<paragraph role="heading" id="hd_id3149516" xml-lang="en-US" level="2" l10n="U">Syntax</paragraph>
+<paragraph role="paragraph" id="par_id3156152" xml-lang="en-US" l10n="U">CDbl (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3153061" xml-lang="en-US" level="2" l10n="U">Return value</paragraph>
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U">Double</paragraph>
+<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U">
 <emph>Expression:</emph> Any string or numeric expression that you want to convert. To convert a string expression, the number must be entered as normal text ("123.5") using the default number format of your operating system.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3148797" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleCountryConvert</paragraph>
-<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="11">Msgbox CDbl(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U" oldref="12">Msgbox CInt(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3150616" xml-lang="en-US" l10n="U" oldref="13">Msgbox CLng(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U" oldref="14">end sub</paragraph>
+<paragraph role="heading" id="hd_id3148797" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U">Sub ExampleCountryConvert</paragraph>
+<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U">Msgbox CDbl(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U">Msgbox CInt(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3150616" xml-lang="en-US" l10n="U">Msgbox CLng(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

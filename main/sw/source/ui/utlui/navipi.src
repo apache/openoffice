@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "cmdid.h"
 #include "utlui.hrc"
 #include "navipi.hrc"
@@ -145,7 +143,6 @@ Window DLG_NAVIGATION_PI
 				//					ItemBitmap = Bitmap { File = "navchup.png" ; };
 				HelpID = HID_NAVI_TBX5 ;
 				Text [ en-US ] = "Promote Chapter" ;
-				//HelpText[english_us-wrong] = "Move chapter down" ;//"Move chapter up"
 			};
 			ToolBoxItem
 			{

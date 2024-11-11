@@ -33,22 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153126">
 <bookmark_value>FileLen function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153126" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020408.xhp" name="FileLen-Function [Runtime]">FileLen Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="2">Returns the length of a file in bytes.</paragraph>
+<paragraph role="heading" id="hd_id3153126" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03020408.xhp" name="FileLen-Function [Runtime]">FileLen Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U">Returns the length of a file in bytes.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3159414" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3149656" xml-lang="en-US" l10n="U" oldref="4">FileLen (Text As String)</paragraph>
-<paragraph role="heading" id="hd_id3148798" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3156282" xml-lang="en-US" l10n="U" oldref="6">Long</paragraph>
-<paragraph role="heading" id="hd_id3150768" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="8">
+<paragraph role="heading" id="hd_id3159414" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="code" id="par_id3149656" xml-lang="en-US" l10n="U">FileLen (Text As String)</paragraph>
+<paragraph role="heading" id="hd_id3148798" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156282" xml-lang="en-US" l10n="U">Long</paragraph>
+<paragraph role="heading" id="hd_id3150768" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U">
 <emph>Text:</emph> Any string expression that contains an unambiguous file specification. You can also use <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
-<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="9">This function determines the length of a file. If the FileLen function is called for an open file, it returns the file length before it was opened. To determine the current file length of an open file, use the Lof function.</paragraph>
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U">This function determines the length of a file. If the FileLen function is called for an open file, it returns the file length before it was opened. To determine the current file length of an open file, use the Lof function.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3163710" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="code" id="par_id3159154" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleFileLen</paragraph>
-<paragraph role="code" id="par_id3145271" xml-lang="en-US" l10n="U" oldref="12">msgbox FileLen("C:\autoexec.bat")</paragraph>
-<paragraph role="code" id="par_id3145749" xml-lang="en-US" l10n="U" oldref="13">end sub</paragraph>
+<paragraph role="heading" id="hd_id3163710" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="code" id="par_id3159154" xml-lang="en-US" l10n="U">Sub ExampleFileLen</paragraph>
+<paragraph role="code" id="par_id3145271" xml-lang="en-US" l10n="U">msgbox FileLen("C:\autoexec.bat")</paragraph>
+<paragraph role="code" id="par_id3145749" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>
