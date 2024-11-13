@@ -34,23 +34,23 @@
 <bookmark_value>UNO components;integrating new</bookmark_value>
 <bookmark_value>installing;UNO components</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3149760" xml-lang="en-US" level="1" l10n="U" oldref="7"><variable id="integratinguno"><link href="text/shared/guide/integratinguno.xhp" name="Integrating new UNO components">Integrating new UNO components</link>
+<paragraph role="heading" id="hd_id3149760" xml-lang="en-US" level="1" l10n="U"><variable id="integratinguno"><link href="text/shared/guide/integratinguno.xhp" name="Integrating new UNO components">Integrating new UNO components</link>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3147571" xml-lang="en-US" l10n="U" oldref="1">Programmers can write and integrate their own UNO (Universal Network Objects) components to $[officename]. Those new components can be added to the $[officename] menus and toolbars; we call them "Add-Ons".</paragraph>
-<paragraph role="paragraph" id="par_id3154751" xml-lang="en-US" l10n="U" oldref="2">The integration of new components is supported by some tools and services. Details can be found in the $[officename] Developer's Guide. The three main steps are as follows:</paragraph>
+<paragraph role="paragraph" id="par_id3147571" xml-lang="en-US" l10n="U">Programmers can write and integrate their own UNO (Universal Network Objects) components to $[officename]. Those new components can be added to the $[officename] menus and toolbars; we call them "Add-Ons".</paragraph>
+<paragraph role="paragraph" id="par_id3154751" xml-lang="en-US" l10n="U">The integration of new components is supported by some tools and services. Details can be found in the $[officename] Developer's Guide. The three main steps are as follows:</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph role="listitem" id="par_id3153748" xml-lang="en-US" l10n="CHG" oldref="3">Register the new components within $[officename]. This can be accomplished using the tool <item type="literal">unopkg</item>, which can be found in {installpath}<switchinline select="sys"><caseinline select="UNIX">/ 
+<paragraph role="listitem" id="par_id3153748" xml-lang="en-US" l10n="CHG">Register the new components within $[officename]. This can be accomplished using the tool <item type="literal">unopkg</item>, which can be found in {installpath}<switchinline select="sys"><caseinline select="UNIX">/ 
 </caseinline><defaultinline>\</defaultinline></switchinline>program.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3153345" xml-lang="en-US" l10n="U" oldref="4">Integrate the new components as services. The ProtocolHandler and JobDispatch services assist you; more information can be found in the $[officename] Developer's Guide.</paragraph>
+<paragraph role="listitem" id="par_id3153345" xml-lang="en-US" l10n="U">Integrate the new components as services. The ProtocolHandler and JobDispatch services assist you; more information can be found in the $[officename] Developer's Guide.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3166460" xml-lang="en-US" l10n="U" oldref="5">Change the user interface (menus or toolbars). This can be done almost automatically by writing an XML text file that describes the changes. More information can be found in the $[officename] Developer's Guide.</paragraph>
+<paragraph role="listitem" id="par_id3166460" xml-lang="en-US" l10n="U">Change the user interface (menus or toolbars). This can be done almost automatically by writing an XML text file that describes the changes. More information can be found in the $[officename] Developer's Guide.</paragraph>
 </listitem>
 </list>
-<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U" oldref="6">The Add-Ons can extend the functionality of $[officename]. They are not related to the <switchinline select="appl"><caseinline select="CALC"><link href="text/scalc/01/04060112.xhp" name="Add-Ins">Add-Ins</link>
+<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U">The Add-Ons can extend the functionality of $[officename]. They are not related to the <switchinline select="appl"><caseinline select="CALC"><link href="text/scalc/01/04060112.xhp" name="Add-Ins">Add-Ins</link>
 </caseinline><defaultinline>Add-Ins</defaultinline></switchinline> that provide new functions for $[officename] Calc.</paragraph>
 </body>
 </helpdocument>
