@@ -736,7 +736,7 @@
  	xmlSecError(XMLSEC_ERRORS_HERE, 
  		    xmlSecErrorsSafeString(cipherName),
  		    "PK11_CipherOp",
-@@ -363,300 +595,169 @@
+@@ -363,300 +595,170 @@
  		    XMLSEC_ERRORS_NO_MESSAGE);
  	return(-1);
      }
@@ -971,6 +971,7 @@
 + *
 + * Returns 0 on success or a negative value otherwise.
 + */
++static int
 +xmlSecNssBlockCipherExecute(
 +    xmlSecTransformPtr transform ,
 +    int last ,
