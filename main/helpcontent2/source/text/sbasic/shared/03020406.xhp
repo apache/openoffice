@@ -33,23 +33,21 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154840">
 <bookmark_value>FileCopy statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3154840" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020406.xhp" name="FileCopy Statement [Runtime]">FileCopy Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3149497" xml-lang="en-US" l10n="U" oldref="2">Copies a file.</paragraph>
+<paragraph role="heading" id="hd_id3154840" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03020406.xhp" name="FileCopy Statement [Runtime]">FileCopy Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149497" xml-lang="en-US" l10n="U">Copies a file.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3147443" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3146957" xml-lang="en-US" l10n="U" oldref="4">FileCopy TextFrom As String, TextTo As String</paragraph>
-<paragraph role="heading" id="hd_id3153825" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3155390" xml-lang="en-US" l10n="U" oldref="6">
-<emph>TextFrom:</emph> Any string expression that specifies the name of the file that you want to copy. The expression can contain optional path and drive information. If you want, you can enter a path in <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
-<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="7">
-<emph>TextTo:</emph> Any string expression that specifies where you want to copy the source file to. The expression can contain the destination drive, the path, and file name, or the path in URL notation.</paragraph>
-<paragraph role="note" id="par_id3150791" xml-lang="en-US" l10n="U" oldref="8">You can only use the FileCopy statement to copy files that are not opened.</paragraph>
+<paragraph role="heading" id="hd_id3147443" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="code" id="par_id3146957" xml-lang="en-US" l10n="U">FileCopy TextFrom As String, TextTo As String</paragraph>
+<paragraph role="heading" id="hd_id3153825" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3155390" xml-lang="en-US" l10n="U"><emph>TextFrom:</emph> Any string expression that specifies the name of the file that you want to copy. The expression can contain optional path and drive information. If you want, you can enter a path in <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U"><emph>TextTo:</emph> Any string expression that specifies where you want to copy the source file to. The expression can contain the destination drive, the path, and file name, or the path in URL notation.</paragraph>
+<paragraph role="note" id="par_id3150791" xml-lang="en-US" l10n="U">You can only use the FileCopy statement to copy files that are not opened.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
 <embed href="text/sbasic/shared/00000003.xhp#err76"/>
-<paragraph role="heading" id="hd_id3125863" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="code" id="par_id3150869" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleFilecopy</paragraph>
-<paragraph role="code" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="11">Filecopy "c:\autoexec.bat", "c:\Temp\Autoexec.sav"</paragraph>
-<paragraph role="code" id="par_id3154123" xml-lang="en-US" l10n="U" oldref="12">end sub</paragraph>
+<paragraph role="heading" id="hd_id3125863" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="code" id="par_id3150869" xml-lang="en-US" l10n="U">Sub ExampleFilecopy</paragraph>
+<paragraph role="code" id="par_id3154685" xml-lang="en-US" l10n="U">Filecopy "c:\autoexec.bat", "c:\Temp\Autoexec.sav"</paragraph>
+<paragraph role="code" id="par_id3154123" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

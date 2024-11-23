@@ -33,25 +33,24 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3148947">
 <bookmark_value>RmDir statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3148947" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020413.xhp" name="RmDir Statement [Runtime]">RmDir Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U" oldref="2">Deletes an existing directory from a data medium.</paragraph>
+<paragraph role="heading" id="hd_id3148947" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03020413.xhp" name="RmDir Statement [Runtime]">RmDir Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U">Deletes an existing directory from a data medium.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3153361" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3154367" xml-lang="en-US" l10n="U" oldref="4">RmDir Text As String</paragraph>
-<paragraph role="heading" id="hd_id3156281" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U" oldref="6">
-<emph>Text:</emph> Any string expression that specifies the name and path of the directory that you want to delete. You can also use <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
-<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="7">If the path is not determined, the <emph>RmDir Statement</emph> searches for the directory that you want to delete in the current path. If it is not found there, an error message appears.</paragraph>
+<paragraph role="heading" id="hd_id3153361" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="code" id="par_id3154367" xml-lang="en-US" l10n="U">RmDir Text As String</paragraph>
+<paragraph role="heading" id="hd_id3156281" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U"><emph>Text:</emph> Any string expression that specifies the name and path of the directory that you want to delete. You can also use <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U">If the path is not determined, the <emph>RmDir Statement</emph> searches for the directory that you want to delete in the current path. If it is not found there, an error message appears.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
 <embed href="text/sbasic/shared/00000003.xhp#err76"/>
-<paragraph role="heading" id="hd_id3145271" xml-lang="en-US" level="2" l10n="U" oldref="8">Example:</paragraph>
-<paragraph role="code" id="par_id3156442" xml-lang="en-US" l10n="U" oldref="9">Sub ExampleRmDir</paragraph>
-<paragraph role="code" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="10">MkDir "C:\Test2"</paragraph>
-<paragraph role="code" id="par_id3159154" xml-lang="en-US" l10n="U" oldref="11">ChDir "C:\test2"</paragraph>
-<paragraph role="code" id="par_id3151112" xml-lang="en-US" l10n="U" oldref="12">msgbox Curdir</paragraph>
-<paragraph role="code" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="13">ChDir "\"</paragraph>
-<paragraph role="code" id="par_id3153188" xml-lang="en-US" l10n="U" oldref="14">RmDir "C:\test2"</paragraph>
-<paragraph role="code" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="15">end sub</paragraph>
+<paragraph role="heading" id="hd_id3145271" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="code" id="par_id3156442" xml-lang="en-US" l10n="U">Sub ExampleRmDir</paragraph>
+<paragraph role="code" id="par_id3154319" xml-lang="en-US" l10n="U">MkDir "C:\Test2"</paragraph>
+<paragraph role="code" id="par_id3159154" xml-lang="en-US" l10n="U">ChDir "C:\test2"</paragraph>
+<paragraph role="code" id="par_id3151112" xml-lang="en-US" l10n="U">msgbox Curdir</paragraph>
+<paragraph role="code" id="par_id3147427" xml-lang="en-US" l10n="U">ChDir "\"</paragraph>
+<paragraph role="code" id="par_id3153188" xml-lang="en-US" l10n="U">RmDir "C:\test2"</paragraph>
+<paragraph role="code" id="par_id3146120" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

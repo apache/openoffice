@@ -21,6 +21,7 @@
 
 
 
+#include <math.h>
 #include "system.h"
 
 #ifdef NO_PTHREAD_RTL

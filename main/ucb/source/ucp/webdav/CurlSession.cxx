@@ -110,7 +110,7 @@ CurlSession::CurlSession(
     curl_easy_setopt( m_pCurl, CURLOPT_SSL_CTX_FUNCTION, Curl_SSLContextCallback );
     curl_easy_setopt( m_pCurl, CURLOPT_SSL_CTX_DATA, this );
 
-    // If a certificate's commmon name / alt name doesn't match the hostname we are
+    // If a certificate's common name / alt name doesn't match the hostname we are
     // connecting to, Curl will refuse to connect. Disable this, as we do that check
     // ourselves, and give the user the option of connecting anyway.
     //
@@ -567,7 +567,7 @@ int CurlSession::verifyCertificateChain (
         else
         {
             // For all other we have to ask the user.
-            m_aLogger.log( LogLevel::FINE, "Promping user to validate the certificate" );
+            m_aLogger.log( LogLevel::FINE, "Prompting user to validate the certificate" );
         }
     }
 

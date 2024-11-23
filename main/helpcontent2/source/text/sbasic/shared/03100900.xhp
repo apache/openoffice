@@ -33,24 +33,23 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153753">
 <bookmark_value>CSng function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153753" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03100900.xhp" name="CSng Function[Runtime]">CSng Function[Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3149748" xml-lang="en-US" l10n="U" oldref="2">Converts any string or numeric expression to data type Single.</paragraph>
+<paragraph role="heading" id="hd_id3153753" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03100900.xhp" name="CSng Function[Runtime]">CSng Function[Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149748" xml-lang="en-US" l10n="U">Converts any string or numeric expression to data type Single.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3153255" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3148983" xml-lang="en-US" l10n="U" oldref="4">CSng (Expression)</paragraph>
-<paragraph role="heading" id="hd_id3152347" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3153750" xml-lang="en-US" l10n="U" oldref="6">Single</paragraph>
-<paragraph role="heading" id="hd_id3146957" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153345" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Expression:</emph> Any string or numeric expression that you want to convert. To convert a string expression, the number must be entered as normal text ("123.5") using the default number format of your operating system.</paragraph>
+<paragraph role="heading" id="hd_id3153255" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3148983" xml-lang="en-US" l10n="U">CSng (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3152347" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3153750" xml-lang="en-US" l10n="U">Single</paragraph>
+<paragraph role="heading" id="hd_id3146957" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153345" xml-lang="en-US" l10n="U"><emph>Expression:</emph> Any string or numeric expression that you want to convert. To convert a string expression, the number must be entered as normal text ("123.5") using the default number format of your operating system.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3154142" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleCSNG</paragraph>
-<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U" oldref="11">Msgbox CDbl(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3150772" xml-lang="en-US" l10n="U" oldref="12">Msgbox CInt(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3147531" xml-lang="en-US" l10n="U" oldref="13">Msgbox CLng(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3147265" xml-lang="en-US" l10n="U" oldref="14">Msgbox CSng(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="15">end sub</paragraph>
+<paragraph role="heading" id="hd_id3149514" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154142" xml-lang="en-US" l10n="U">Sub ExampleCSNG</paragraph>
+<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U">Msgbox CDbl(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3150772" xml-lang="en-US" l10n="U">Msgbox CInt(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3147531" xml-lang="en-US" l10n="U">Msgbox CLng(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3147265" xml-lang="en-US" l10n="U">Msgbox CSng(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

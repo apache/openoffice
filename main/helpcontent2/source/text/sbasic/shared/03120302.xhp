@@ -33,25 +33,24 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3152363">
 <bookmark_value>LCase function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3152363" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120302.xhp" name="LCase Function [Runtime]">LCase Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U" oldref="2">Converts all uppercase letters in a string to lowercase.</paragraph>
+<paragraph role="heading" id="hd_id3152363" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03120302.xhp" name="LCase Function [Runtime]">LCase Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U">Converts all uppercase letters in a string to lowercase.</paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3154347" xml-lang="en-US" l10n="U" oldref="3">See also: <link href="text/sbasic/shared/03120310.xhp" name="UCase">UCase</link> Function</paragraph>
-<paragraph role="heading" id="hd_id3149456" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150791" xml-lang="en-US" l10n="U" oldref="5">LCase (Text As String)</paragraph>
-<paragraph role="heading" id="hd_id3154940" xml-lang="en-US" level="2" l10n="U" oldref="6">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U" oldref="7">String</paragraph>
-<paragraph role="heading" id="hd_id3151043" xml-lang="en-US" level="2" l10n="U" oldref="8">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="9">
-<emph>Text:</emph> Any string expression that you want to convert.</paragraph>
+<paragraph role="paragraph" id="par_id3154347" xml-lang="en-US" l10n="U">See also: <link href="text/sbasic/shared/03120310.xhp" name="UCase">UCase</link> Function</paragraph>
+<paragraph role="heading" id="hd_id3149456" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150791" xml-lang="en-US" l10n="U">LCase (Text As String)</paragraph>
+<paragraph role="heading" id="hd_id3154940" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U">String</paragraph>
+<paragraph role="heading" id="hd_id3151043" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U"><emph>Text:</emph> Any string expression that you want to convert.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3148451" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3149203" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleLUCase</paragraph>
-<paragraph role="paragraph" id="par_id3150440" xml-lang="en-US" l10n="U" oldref="12">Dim sVar As String</paragraph>
-<paragraph role="paragraph" id="par_id3153367" xml-lang="en-US" l10n="U" oldref="13">sVar = "Las Vegas"</paragraph>
-<paragraph role="paragraph" id="par_id3146121" xml-lang="en-US" l10n="U" oldref="14">Print LCase(sVar) REM Returns "las vegas"</paragraph>
-<paragraph role="paragraph" id="par_id3146986" xml-lang="en-US" l10n="U" oldref="15">Print UCase(sVar) REM Returns "LAS VEGAS"</paragraph>
-<paragraph role="paragraph" id="par_id3153575" xml-lang="en-US" l10n="U" oldref="16">end Sub</paragraph>
+<paragraph role="heading" id="hd_id3148451" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3149203" xml-lang="en-US" l10n="U">Sub ExampleLUCase</paragraph>
+<paragraph role="paragraph" id="par_id3150440" xml-lang="en-US" l10n="U">Dim sVar As String</paragraph>
+<paragraph role="paragraph" id="par_id3153367" xml-lang="en-US" l10n="U">sVar = "Las Vegas"</paragraph>
+<paragraph role="paragraph" id="par_id3146121" xml-lang="en-US" l10n="U">Print LCase(sVar) REM Returns "las vegas"</paragraph>
+<paragraph role="paragraph" id="par_id3146986" xml-lang="en-US" l10n="U">Print UCase(sVar) REM Returns "LAS VEGAS"</paragraph>
+<paragraph role="paragraph" id="par_id3153575" xml-lang="en-US" l10n="U">end Sub</paragraph>
 </body>
 </helpdocument>

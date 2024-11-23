@@ -1,0 +1,14 @@
+diff -ru misc/icu/source/data/pkgdataMakefile.in misc/build/icu/source/data/pkgdataMakefile.in
+--- misc/icu/source/data/pkgdataMakefile.in	2024-10-21 16:00:26.000000000 -0400
++++ misc/build/icu/source/data/pkgdataMakefile.in	2024-10-21 16:00:35.000000000 -0400
+@@ -14,6 +14,10 @@
+ 
+ OUTPUTFILE=icupkg.inc
+ MIDDLE_SO_TARGET=
++# LD_SONAME must end with a path, but on Darwin this does not happen, because
++# file source/config/mh-darwin makes it end with FINAL_SO_TARGET, instead of
++# MIDDLE_SO_TARGET like other Unixes.
++LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name @executable_path/
+ 
+ all : clean 
+ 	@echo GENCCODE_ASSEMBLY_TYPE=$(GENCCODE_ASSEMBLY) >> $(OUTPUTFILE)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef FRAMEWORK_BACKINGWINDOW_HXX
 #define FRAMEWORK_BACKINGWINDOW_HXX
@@ -59,120 +57,121 @@ class MnemonicGenerator;
 
 namespace framework
 {
-        // To get the transparent mouse-over look, the closer is actually a toolbox
-    // overload DataChange to handle style changes correctly
-    class DecoToolBox : public ToolBox
-    {
-        Size maMinSize;
+	// To get the transparent mouse-over look, the closer is actually a toolbox
+	// overload DataChange to handle style changes correctly
+	class DecoToolBox : public ToolBox
+	{
+		Size maMinSize;
 
-        using Window::ImplInit;
-    public:
-                DecoToolBox( Window* pParent, WinBits nStyle = 0 );
-                DecoToolBox( Window* pParent, const ResId& rResId );
+		using Window::ImplInit;
+	public:
+				DecoToolBox( Window* pParent, WinBits nStyle = 0 );
+				DecoToolBox( Window* pParent, const ResId& rResId );
 
-        void    DataChanged( const DataChangedEvent& rDCEvt );
+		void	DataChanged( const DataChangedEvent& rDCEvt );
 
-        void    calcMinSize();
-        Size    getMinSize();
-    };
+		void	calcMinSize();
+		Size	getMinSize();
+	};
 
-    class BackingWindow : public Window
-    {
+	class BackingWindow : public Window
+	{
 
-        com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >         mxContext;
-        com::sun::star::uno::Reference<com::sun::star::frame::XDesktop>                  mxDesktop;
-        com::sun::star::uno::Reference<com::sun::star::frame::XDispatchProvider >        mxDesktopDispatchProvider;
-        com::sun::star::uno::Reference<com::sun::star::frame::XFrame>                    mxFrame;
-        com::sun::star::uno::Reference< com::sun::star::frame::XUIControllerFactory >    mxPopupMenuFactory;
-        com::sun::star::uno::Reference< com::sun::star::frame::XPopupMenuController >    mxPopupMenuController;
-        com::sun::star::uno::Reference< com::sun::star::awt::XPopupMenu >                mxPopupMenu;
+		com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >		mxContext;
+		com::sun::star::uno::Reference<com::sun::star::frame::XDesktop>					mxDesktop;
+		com::sun::star::uno::Reference<com::sun::star::frame::XDispatchProvider >		mxDesktopDispatchProvider;
+		com::sun::star::uno::Reference<com::sun::star::frame::XFrame>					mxFrame;
+		com::sun::star::uno::Reference< com::sun::star::frame::XUIControllerFactory >	mxPopupMenuFactory;
+		com::sun::star::uno::Reference< com::sun::star::frame::XPopupMenuController >	mxPopupMenuController;
+		com::sun::star::uno::Reference< com::sun::star::awt::XPopupMenu >				mxPopupMenu;
 
-        FixedText                       maWelcome;
-        Size                            maWelcomeSize;
-        FixedText                       maProduct;
-        Size                            maProductSize;
-        ImageButton                     maWriterButton;
-        ImageButton                     maCalcButton;
-        ImageButton                     maImpressButton;
-        MenuButton                      maOpenButton;
-        ImageButton                     maDrawButton;
-        ImageButton                     maDBButton;
-        ImageButton                     maMathButton;
-        ImageButton                     maTemplateButton;
+		FixedText						maWelcome;
+		Size							maWelcomeSize;
+		FixedText						maProduct;
+		Size							maProductSize;
+		ImageButton						maWriterButton;
+		ImageButton						maCalcButton;
+		ImageButton						maImpressButton;
+		MenuButton						maOpenButton;
+		ImageButton						maDrawButton;
+		ImageButton						maDBButton;
+		ImageButton						maMathButton;
+		ImageButton						maTemplateButton;
 
-        DecoToolBox                     maToolbox;
+		DecoToolBox						maToolbox;
 
-        BitmapEx                        maBackgroundLeft;
-        BitmapEx                        maBackgroundMiddle;
-        BitmapEx                        maBackgroundRight;
+		BitmapEx						maBackgroundLeft;
+		BitmapEx						maBackgroundMiddle;
+		BitmapEx						maBackgroundRight;
 
-        String                          maWelcomeString;
-        String                          maProductString;
-        String                          maCreateString;
-        String                          maOpenString;
-        String                          maTemplateString;
+		String							maWelcomeString;
+		String							maProductString;
+		String							maCreateString;
+		String							maOpenString;
+		String							maTemplateString;
 
-        Font                            maTextFont;
-        Rectangle                       maControlRect;
+		Font							maTextFont;
+		Rectangle						maControlRect;
 
-        long                            mnColumnWidth[2];
-        long                            mnTextColumnWidth[2];
-        Color                           maLabelTextColor;
-        Color                           maWelcomeTextColor;
+		long							mnColumnWidth[2];
+		long							mnTextColumnWidth[2];
+		Color							maLabelTextColor;
+		Color							maWelcomeTextColor;
 
-        Size                            maButtonImageSize;
+		Size							maButtonImageSize;
 
-        bool                            mbInitControls;
-        sal_Int32                       mnLayoutStyle;
-        svt::AcceleratorExecute*        mpAccExec;
-        long                            mnBtnPos;
-        long                            mnBtnTop;
+		bool							mbInitControls;
+		sal_Int32						mnLayoutStyle;
+		svt::AcceleratorExecute*		mpAccExec;
+		long							mnBtnPos;
+		long							mnBtnTop;
 
-        static const int nItemId_Extensions = 1;
-        static const int nItemId_Reg = 2;
-        static const int nItemId_Info = 3;
-        static const int nItemId_TplRep = 4;
-        static const int nShadowTop = 32;
-        static const int nShadowLeft = 35;
-        static const int nShadowRight = 45;
-        static const int nShadowBottom = 50;
+		static const int nItemId_Extensions = 1;
+//		static const int nItemId_Reg = 2;
+		static const int nItemId_Info = 3;
+		static const int nItemId_TplRep = 4;
+		static const int nShadowTop = 32;
+		static const int nShadowLeft = 32;
+		static const int nShadowRight = 32;
+		static const int nShadowBottom = 32;
 
-        void loadImage( const ResId& i_rId, PushButton& i_rButton );
+		void loadImage( const ResId& i_rId, PushButton& i_rButton );
 
-        void layoutButton( const char* i_pURL, int nColumn, const std::set<rtl::OUString>& i_rURLS,
-                           SvtModuleOptions& i_rOpt, SvtModuleOptions::EModule i_eMod,
-                           PushButton& i_rBtn,
-                           MnemonicGenerator& i_rMnemonicGen,
-                           const String& i_rStr = String()
-                           );
+		void layoutButton( const char* i_pURL, int nColumn, const std::set<rtl::OUString>& i_rURLS,
+						   SvtModuleOptions& i_rOpt, SvtModuleOptions::EModule i_eMod,
+						   PushButton& i_rBtn,
+						   MnemonicGenerator& i_rMnemonicGen,
+						   const String& i_rStr = String()
+						   );
 
-        void dispatchURL( const rtl::OUString& i_rURL,
-                          const rtl::OUString& i_rTarget = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "_default" ) ),
-                          const com::sun::star::uno::Reference< com::sun::star::frame::XDispatchProvider >& i_xProv = com::sun::star::uno::Reference< com::sun::star::frame::XDispatchProvider >(),
-                          const com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& = com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >()
-                          );
+		void dispatchURL( const rtl::OUString& i_rURL,
+						  const rtl::OUString& i_rTarget = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "_default" ) ),
+						  const com::sun::star::uno::Reference< com::sun::star::frame::XDispatchProvider >& i_xProv = com::sun::star::uno::Reference< com::sun::star::frame::XDispatchProvider >(),
+						  const com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& = com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >()
+						  );
 
-        DECL_LINK( ClickHdl, Button* );
-        DECL_LINK( ActivateHdl, Button* );
-        DECL_LINK( ToolboxHdl, void* );
+		DECL_LINK( ClickHdl, Button* );
+		DECL_LINK( ActivateHdl, Button* );
+		DECL_LINK( ToolboxHdl, void* );
 
-        void initControls();
-        void initBackground();
-        void prepareRecentFileMenu();
-        public:
-        BackingWindow( Window* pParent );
-        ~BackingWindow();
+		void initControls();
+		void initBackground();
+		void prepareRecentFileMenu();
+		public:
+		BackingWindow( Window* pParent );
+		~BackingWindow();
 
-        virtual void        Paint( const Rectangle& rRect );
-        virtual void        Resize();
-        virtual long        Notify( NotifyEvent& rNEvt );
-        virtual void        DataChanged( const DataChangedEvent& rDCEvt );
-        virtual void        GetFocus();
+		virtual void		Paint( const Rectangle& rRect );
+		virtual void		Resize();
+		virtual long		Notify( NotifyEvent& rNEvt );
+		virtual void		DataChanged( const DataChangedEvent& rDCEvt );
+		virtual void		GetFocus();
 
-        void setOwningFrame( const com::sun::star::uno::Reference< com::sun::star::frame::XFrame >& xFrame );
-    };
+		void setOwningFrame( const com::sun::star::uno::Reference< com::sun::star::frame::XFrame >& xFrame );
+	};
 
 }
 
 #endif
 
+/* vim: set noet sw=4 ts=4: */

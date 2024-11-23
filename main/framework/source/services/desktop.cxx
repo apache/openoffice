@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_framework.hxx"
@@ -168,7 +166,7 @@ DEFINE_INIT_SERVICE                     (   Desktop,
                                                 /*Attention
                                                     I think we don't need any mutex or lock here ... because we are called by our own static method impl_createInstance()
                                                     to create a new instance of this class by our own supported service factory.
-                                                    see macro DEFINE_XSERVICEINFO_MULTISERVICE and "impl_initService()" for further informations!
+                                                    see macro DEFINE_XSERVICEINFO_MULTISERVICE and "impl_initService()" for further information!
                                                 */
 
                                                 //-------------------------------------------------------------------------------------------------------------
@@ -190,7 +188,7 @@ DEFINE_INIT_SERVICE                     (   Desktop,
                                                 // Initialize a new interception helper object to handle dispatches and implement an interceptor mechanism.
                                                 // Set created dispatch provider as slowest slave of it.
                                                 // Hold interception helper by reference only - not by pointer!
-                                                // So it's easiear to destroy it.
+                                                // So it's easier to destroy it.
                                                 InterceptionHelper* pInterceptionHelper = new InterceptionHelper( this, xDispatchProvider );
                                                 m_xDispatchHelper = css::uno::Reference< css::frame::XDispatchProvider >( static_cast< ::cppu::OWeakObject* >(pInterceptionHelper), css::uno::UNO_QUERY );
 
@@ -223,7 +221,7 @@ DEFINE_INIT_SERVICE                     (   Desktop,
                     will get over this. (e.g. using of your reference as parameter to initialize some member)
                     Do such things in DEFINE_INIT_SERVICE() method, which is called automatically after your ctor!!!
                 b)  Baseclass OBroadcastHelper is a typedef in namespace cppu!
-                    The microsoft compiler has some problems to handle it right BY using namespace explicitly ::cppu::OBroadcastHelper.
+                    The Microsoft compiler has some problems to handle it right BY using namespace explicitly ::cppu::OBroadcastHelper.
                     If we write it without a namespace or expand the typedef to OBrodcastHelperVar<...> -> it will be OK!?
                     I don't know why! (other compiler not tested .. but it works!)
 
@@ -275,7 +273,7 @@ Desktop::Desktop( const css::uno::Reference< css::lang::XMultiServiceFactory >& 
 
 /*-************************************************************************************************************//**
 	@short		standard destructor
-	@descr		This one do NOTHING! Use dispose() instaed of this.
+	@descr		This one do NOTHING! Use dispose() instead of this.
 
 	@seealso	method dispose()
 
@@ -298,15 +296,15 @@ sal_Bool SAL_CALL Desktop::terminate()
 
     SYNCHRONIZED_START
         ReadGuard aReadLock( m_aLock );
-    
+
         css::uno::Reference< css::frame::XTerminateListener > xPipeTerminator    = m_xPipeTerminator;
         css::uno::Reference< css::frame::XTerminateListener > xQuickLauncher     = m_xQuickLauncher;
         css::uno::Reference< css::frame::XTerminateListener > xSWThreadManager   = m_xSWThreadManager;
         css::uno::Reference< css::frame::XTerminateListener > xSfxTerminator     = m_xSfxTerminator;
-    
+
         css::lang::EventObject                                aEvent             ( static_cast< ::cppu::OWeakObject* >(this) );
         ::sal_Bool											  bAskQuickStart     = !m_bSuspendQuickstartVeto                  ;
-    
+
         aReadLock.unlock();
     SYNCHRONIZED_END
 
@@ -347,7 +345,7 @@ sal_Bool SAL_CALL Desktop::terminate()
     // Order of alled listener is important !
     // some of them are harmless .-)
     // But some of them can be dangerous. E.g. it would be dangerous if we close our pipe
-    // and dont terminate in real because another listener throws a veto exception .-)
+    // and don't terminate in real because another listener throws a veto exception .-)
 
     ::sal_Bool bTerminate = sal_False;
     try
@@ -360,25 +358,25 @@ sal_Bool SAL_CALL Desktop::terminate()
             xQuickLauncher->queryTermination( aEvent );
             lCalledTerminationListener.push_back( xQuickLauncher );
         }
-    
+
         if ( xSWThreadManager.is() )
         {
             xSWThreadManager->queryTermination( aEvent );
             lCalledTerminationListener.push_back( xSWThreadManager );
         }
-        
+
         if ( xPipeTerminator.is() )
         {
             xPipeTerminator->queryTermination( aEvent );
             lCalledTerminationListener.push_back( xPipeTerminator );
         }
-    
+
         if ( xSfxTerminator.is() )
         {
             xSfxTerminator->queryTermination( aEvent );
             lCalledTerminationListener.push_back( xSfxTerminator );
         }
-    
+
         bTerminate = sal_True;
     }
     catch(const css::frame::TerminationVetoException&)
@@ -392,16 +390,16 @@ sal_Bool SAL_CALL Desktop::terminate()
     {
         #ifdef ENABLE_ASSERTIONS
             // "Protect" us against dispose before terminate calls!
-            // see dispose() for further informations.
+            // see dispose() for further information.
             /* SAFE AREA --------------------------------------------------------------------------------------- */
             WriteGuard aWriteLock( m_aLock );
             m_bIsTerminated = sal_True;
             aWriteLock.unlock();
             /* UNSAFE AREA ------------------------------------------------------------------------------------- */
         #endif
-    
+
         impl_sendNotifyTerminationEvent();
-    
+
         if(
             ( bAskQuickStart      ) &&
             ( xQuickLauncher.is() )
@@ -409,19 +407,19 @@ sal_Bool SAL_CALL Desktop::terminate()
         {
             xQuickLauncher->notifyTermination( aEvent );
         }
-    
+
         if ( xSWThreadManager.is() )
             xSWThreadManager->notifyTermination( aEvent );
-        
+
         if ( xPipeTerminator.is() )
             xPipeTerminator->notifyTermination( aEvent );
-        
+
         // Must be really the last listener to be called.
         // Because it shutdown the whole process asynchronous !
         if ( xSfxTerminator.is() )
             xSfxTerminator->notifyTermination( aEvent );
     }
-    
+
     return bTerminate;
 }
 
@@ -436,10 +434,10 @@ void SAL_CALL Desktop::addTerminateListener( const css::uno::Reference< css::fra
     if ( xInfo.is() )
     {
         ::rtl::OUString sImplementationName = xInfo->getImplementationName();
-    
+
         // SYCNHRONIZED ->
         WriteGuard aWriteLock( m_aLock );
-    
+
         if( sImplementationName.equals(IMPLEMENTATIONNAME_SFXTERMINATOR) )
         {
             m_xSfxTerminator = xListener;
@@ -460,7 +458,7 @@ void SAL_CALL Desktop::addTerminateListener( const css::uno::Reference< css::fra
             m_xSWThreadManager = xListener;
             return;
         }
-    
+
         aWriteLock.unlock();
         // <- SYCNHRONIZED
     }
@@ -479,34 +477,34 @@ void SAL_CALL Desktop::removeTerminateListener( const css::uno::Reference< css::
     if ( xInfo.is() )
     {
         ::rtl::OUString sImplementationName = xInfo->getImplementationName();
-    
+
         // SYCNHRONIZED ->
         WriteGuard aWriteLock( m_aLock );
-    
+
         if( sImplementationName.equals(IMPLEMENTATIONNAME_SFXTERMINATOR) )
         {
             m_xSfxTerminator.clear();
             return;
         }
-    
+
         if( sImplementationName.equals(IMPLEMENTATIONNAME_PIPETERMINATOR) )
         {
             m_xPipeTerminator.clear();
             return;
         }
-    
+
         if( sImplementationName.equals(IMPLEMENTATIONNAME_QUICKLAUNCHER) )
         {
             m_xQuickLauncher.clear();
             return;
         }
-    
+
         if( sImplementationName.equals(IMPLEMENTATIONNAME_SWTHREADMANAGER) )
         {
             m_xSWThreadManager.clear();
             return;
         }
-    
+
         aWriteLock.unlock();
         // <- SYCNHRONIZED
     }
@@ -618,13 +616,13 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Desktop::getCurrentFrame() th
 /*-************************************************************************************************************//**
     @interface  XComponentLoader
     @short      try to load given URL into a task
-    @descr      You can give us some informations about the content, which you will load into a frame.
+    @descr      You can give us some information about the content, which you will load into a frame.
                 We search or create this target for you, make a type detection of given URL and try to load it.
                 As result of this operation we return the new created component or nothing, if loading failed.
 
     @seealso    -
 
-    @param      "sURL"              , URL, which represant the content
+    @param      "sURL"              , URL, which represents the content
     @param      "sTargetFrameName"  , name of target frame or special value like "_self", "_blank" ...
     @param      "nSearchFlags"      , optional arguments for frame search, if target isn't a special one
     @param      "lArguments"        , optional arguments for loading
@@ -942,7 +940,7 @@ sal_Bool SAL_CALL Desktop::isTop() throw( css::uno::RuntimeException )
 //*****************************************************************************************************************
 void SAL_CALL Desktop::activate() throw( css::uno::RuntimeException )
 {
-    // Desktop is activae always ... but sometimes our frames try to activate
+    // Desktop is active always ... but sometimes our frames try to activate
     // the complete path from bottom to top ... And our desktop is the topest frame :-(
     // So - please don't show any assertions here. Do nothing!
 }
@@ -1002,7 +1000,7 @@ void SAL_CALL Desktop::removeFrameActionListener( const css::uno::Reference< css
     @short      try to find a frame with special parameters
     @descr      This method searches for a frame with the specified name.
                 Frames may contain other frames (e.g. a frameset) and may
-                be contained in other frames. This hierarchie ist searched by
+                be contained in other frames. This hierarchie is searched by
                 this method.
                 First some special names are taken into account, i.e. "",
                 "_self", "_top", "_parent" etc. The FrameSearchFlags are ignored
@@ -1129,7 +1127,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Desktop::findFrame( const ::r
         // II.II) TASKS
         //  This is a special flag. Normally it regulates search inside tasks and forbid access to parent trees.
         //  But the desktop exists outside such task trees. They are our sub trees. So the desktop implement
-        //  a special feature: We use it to start search on our direct childrens only. That means we suppress
+        //  a special feature: We use it to start search on our direct children only. That means we suppress
         //  search on ALL child frames. May that can be useful to get access on opened document tasks
         //  only without filter out all non really required sub frames ...
         //  Used helper method on our container doesn't create any frame - its a search only.
@@ -1185,11 +1183,11 @@ void SAL_CALL Desktop::dispose()
 
     SYNCHRONIZED_START
         WriteGuard aWriteLock( m_aLock );
-    
+
         // Look for multiple calls of this method!
         // If somewhere call dispose() twice - he will be stopped here really!!!
         TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
-    
+
         // Now - we are alone and its the first call of this method ...
         // otherwise call before had thrown a DisposedException / hopefully .-)
         // But we dont use the transaction object created before ... we reset it immediately ...
@@ -1199,12 +1197,12 @@ void SAL_CALL Desktop::dispose()
         // are running within the same thread!) So we would block ourself there if aTransaction
         // will stay registered .-)
         aTransaction.stop();
-    
+
         // Disable this instance for further work.
         // This will wait for all current running transactions ...
         // and reject all new incoming requests!
         m_aTransactionManager.setWorkingMode( E_BEFORECLOSE );
-    
+
         aWriteLock.unlock();
     SYNCHRONIZED_END
 
@@ -1248,11 +1246,11 @@ void SAL_CALL Desktop::dispose()
 /*-************************************************************************************************************//**
     @interface  XComponent
     @short      add/remove listener for dispose events
-    @descr      Add an event listener to this object, if you whish to get informations
+    @descr      Add an event listener to this object, if you wish to get information
                 about our dying!
-                You must releas ethis listener reference during your own disposing() method.
+                You must release this listener reference during your own disposing() method.
 
-    @attention  Our container is threadsafe himeslf. So we doesn't need any lock here.
+    @attention  Our container is threadsafe himself. So we doesn't need any lock here.
 
     @seealso    -
 
@@ -1375,12 +1373,12 @@ void SAL_CALL Desktop::handle( const css::uno::Reference< css::task::XInteractio
 
     // Don't check incoming request!
     // If somewhere starts interaction without right parameter - he made something wrong.
-    // loadComponentFromURL() waits for thjese event - otherwise it yield for ever!
+    // loadComponentFromURL() waits for these event - otherwise it yield for ever!
 
     // get packed request and work on it first
     // Attention: Don't set it on internal member BEFORE interaction is finished - because
     // "loadComponentFromURL()" yield tills this member is changed. If we do it before
-    // interaction finish we can't guarantee right functionality. May be we cancel load process to erliear ...
+    // interaction finish we can't guarantee right functionality. May be we cancel load process to early...
     css::uno::Any aRequest = xRequest->getRequest();
 
     // extract continuations from request
@@ -1404,7 +1402,7 @@ void SAL_CALL Desktop::handle( const css::uno::Reference< css::task::XInteractio
     }
 
     // differ between abortable interactions (error, unknown filter ...)
-    // and other ones (ambigous but not unknown filter ...)
+    // and other ones (ambiguous but not unknown filter ...)
     css::task::ErrorCodeRequest          aErrorCodeRequest     ;
     css::document::AmbigousFilterRequest aAmbigousFilterRequest;
     if( aRequest >>= aAmbigousFilterRequest )
@@ -1457,7 +1455,7 @@ void SAL_CALL Desktop::handle( const css::uno::Reference< css::task::XInteractio
     TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
     return m_xTitleNumberGenerator->leaseNumber (xComponent);
 }
-    
+
 //-----------------------------------------------------------------------------
 void SAL_CALL Desktop::releaseNumber( ::sal_Int32 nNumber )
     throw (css::lang::IllegalArgumentException,
@@ -1503,7 +1501,7 @@ void SAL_CALL Desktop::releaseNumberForComponent( const css::uno::Reference< css
     @param      "aOldValue"         old value of property
     @param      "nHandle"           handle of property
     @param      "aValue"            new value of property
-    @return     sal_True if value will be changed, sal_FALSE otherway
+    @return     sal_True if value will be changed, sal_FALSE otherwise
 
     @onerror    IllegalArgumentException, if you call this with an invalid argument
     @threadsafe yes
@@ -1815,9 +1813,9 @@ void Desktop::impl_sendQueryTerminationEvent(Desktop::TTerminateListenerList& lC
     ::cppu::OInterfaceContainerHelper* pContainer = m_aListenerContainer.getContainer( ::getCppuType( ( const css::uno::Reference< css::frame::XTerminateListener >*) NULL ) );
 	if ( ! pContainer )
         return;
-    
+
     css::lang::EventObject aEvent( static_cast< ::cppu::OWeakObject* >(this) );
-    
+
     ::cppu::OInterfaceIteratorHelper aIterator( *pContainer );
     while ( aIterator.hasMoreElements() )
     {
@@ -1878,9 +1876,9 @@ void Desktop::impl_sendNotifyTerminationEvent()
     ::cppu::OInterfaceContainerHelper* pContainer = m_aListenerContainer.getContainer( ::getCppuType( ( const css::uno::Reference< css::frame::XTerminateListener >*) NULL ) );
 	if ( ! pContainer )
         return;
-    
+
     css::lang::EventObject aEvent( static_cast< ::cppu::OWeakObject* >(this) );
-    
+
     ::cppu::OInterfaceIteratorHelper aIterator( *pContainer );
     while ( aIterator.hasMoreElements() )
     {
@@ -1952,7 +1950,7 @@ void Desktop::impl_sendNotifyTerminationEvent()
                     // Any internal process of this frame disagree with our request.
                     // Safe this state but dont break these loop. Other frames has to be closed!
                     ++nNonClosedFrames;
-                
+
                     // Reactivate controller.
                     // It can happen that XController.suspend() returned true ... but a registered close listener
                     // throwed these veto exception. Then the controller has to be reactivated. Otherwise
@@ -1963,18 +1961,18 @@ void Desktop::impl_sendNotifyTerminationEvent()
                        )
                         xController->suspend(sal_False);
                 }
-            
+
                 // If interface XClosable interface exists and was used ...
                 // it's not allowed to use XComponent->dispose() also !
                 continue;
             }
-        
+
             // XClosable not supported ?
             // Then we have to dispose these frame hardly.
             css::uno::Reference< css::lang::XComponent > xDispose( xFrame, css::uno::UNO_QUERY );
             if ( xDispose.is() )
                 xDispose->dispose();
-        
+
             // Don't remove these frame from our child container!
             // A frame do it by itself inside close()/dispose() method.
         }
@@ -2003,7 +2001,7 @@ void Desktop::impl_sendNotifyTerminationEvent()
 //	We work with valid servicemanager only.
 sal_Bool Desktop::implcp_ctor( const css::uno::Reference< css::lang::XMultiServiceFactory >& xFactory )
 {
-    return(
+	return(
 			( &xFactory		==	NULL		)	||
 			( xFactory.is()	==	sal_False	)
           );
@@ -2013,7 +2011,7 @@ sal_Bool Desktop::implcp_ctor( const css::uno::Reference< css::lang::XMultiServi
 //	We work with valid listener only.
 sal_Bool Desktop::implcp_addEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener )
 {
-    return(
+	return(
 			( &xListener		==	NULL		)	||
 			( xListener.is()	==	sal_False	)
           );
@@ -2023,7 +2021,7 @@ sal_Bool Desktop::implcp_addEventListener( const css::uno::Reference< css::lang:
 //	We work with valid listener only.
 sal_Bool Desktop::implcp_removeEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener )
 {
-    return(
+	return(
 			( &xListener		==	NULL		)	||
 			( xListener.is()	==	sal_False	)
           );
@@ -2032,3 +2030,5 @@ sal_Bool Desktop::implcp_removeEventListener( const css::uno::Reference< css::la
 #endif	// #ifdef ENABLE_ASSERTIONS
 
 }	// namespace framework
+
+/* vim: set noet sw=4 ts=4: */

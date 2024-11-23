@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -179,7 +179,7 @@ struct BLENDFUNCTION{
 
 SvStream& operator>>( SvStream& rIn, BLENDFUNCTION& rBlendFun )
 {
-	rIn >> rBlendFun.aBlendOperation >> rBlendFun.aBlendFlags >> 
+	rIn >> rBlendFun.aBlendOperation >> rBlendFun.aBlendFlags >>
 		     rBlendFun.aSrcConstantAlpha >> rBlendFun.aAlphaFormat;
     return rIn;
 }
@@ -194,7 +194,7 @@ SvStream& operator>>( SvStream& rIn, XForm& rXForm )
 	{
 #ifdef OSL_BIGENDIAN
 	rXForm.eM11 = GetSwapFloat( rIn );
-	rXForm.eM12 = GetSwapFloat( rIn ); 
+	rXForm.eM12 = GetSwapFloat( rIn );
 	rXForm.eM21 = GetSwapFloat( rIn );
 	rXForm.eM22 = GetSwapFloat( rIn );
 	rXForm.eDx = GetSwapFloat( rIn );
@@ -389,7 +389,7 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 					{
         				sal_uInt32 i(0);
 						sal_uInt16*	pnPoints = new sal_uInt16[ nPoly ];
-		
+
 						for ( i = 0; i < nPoly && !pWMF->IsEof(); i++ )
 						{
 							*pWMF >> nPoints;
@@ -642,7 +642,7 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
                 sal_Int32   elpHatch;
                 sal_uInt32  offBmi, cbBmi, offBits, cbBits, nStyle, nWidth, nBrushStyle, elpNumEntries;
                 Color       aColorRef;
-                            
+
                 *pWMF >> nIndex;
                 if ( ( nIndex & ENHMETA_STOCK_OBJECT ) == 0 )
                 {
@@ -830,8 +830,8 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
             break;
 			case EMR_ALPHABLEND:
 			{
-			   sal_Int32	xDest, yDest, cxDest, cyDest; 
-			      
+			   sal_Int32	xDest, yDest, cxDest, cyDest;
+
 			   BLENDFUNCTION aFunc;
 			   sal_Int32  xSrc, ySrc;
 			   XForm	xformSrc;
@@ -871,9 +871,9 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 						pWMF->Read( pBuf + 14 + cbBmiSrc, cbBitsSrc );
 						aTmp.Seek( 0 );
 						ReadDIB(aBitmap, aTmp, true);
-						
+
                         // test if it is sensible to crop
-						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) && 
+						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) &&
 							( xSrc >= 0 ) && ( ySrc >= 0 ) &&
                                 ( xSrc + static_cast< sal_Int32 >(cxSrc) <= static_cast< sal_Int32 >(aBitmap.GetSizePixel().Width()) ) &&
                                     ( ySrc + static_cast< sal_Int32 >(cySrc) <= static_cast< sal_Int32 >(aBitmap.GetSizePixel().Height()) ) )
@@ -935,7 +935,7 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 						ReadDIB(aBitmap, aTmp, true);
 
 						// test if it is sensible to crop
-						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) && 
+						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) &&
 							( xSrc >= 0 ) && ( ySrc >= 0 ) &&
 								( xSrc + cxSrc <= aBitmap.GetSizePixel().Width() ) &&
 									( ySrc + cySrc <= aBitmap.GetSizePixel().Height() ) )
@@ -989,7 +989,7 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 						ReadDIB(aBitmap, aTmp, true);
 
 						// test if it is sensible to crop
-						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) && 
+						if ( ( cxSrc > 0 ) && ( cySrc > 0 ) &&
 							( xSrc >= 0 ) && ( ySrc >= 0 ) &&
 								( xSrc + cxSrc <= aBitmap.GetSizePixel().Width() ) &&
 									( ySrc + cySrc <= aBitmap.GetSizePixel().Height() ) )
@@ -1024,11 +1024,11 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 					aLogFont.alfFaceName = UniString( lfFaceName );
 
                     // #123216# Not used in the test case of #121382# (always identity in XForm), also
-                    // no hints in ms docu if FontSize should be scaled with WT. Using with the example 
+                    // no hints in ms docu if FontSize should be scaled with WT. Using with the example
                     // from #123216# creates errors, so removing.
                     //
                     // // #121382# Need to apply WorldTransform to FontHeight/Width; this should be completely
-                    // // chnaged to basegfx::B2DHomMatrix instead of 'struct XForm', but not now due to time
+                    // // changed to basegfx::B2DHomMatrix instead of 'struct XForm', but not now due to time
                     // // constraints and dangers
                     // const XForm& rXF = pOut->GetWorldTransform();
                     // const basegfx::B2DHomMatrix aWT(rXF.eM11, rXF.eM21, rXF.eDx, rXF.eM12, rXF.eM22, rXF.eDy);
@@ -1233,20 +1233,20 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 				// Anzahl der Polygone:
 				*pWMF >> nPoly >> nGesPoints;
                 sal_uInt32 nReadPoints(0);
-				
+
                 if ( ( nGesPoints < SAL_MAX_UINT32 / sizeof(Point) ) && ( nPoly < SAL_MAX_UINT32 / sizeof(sal_uInt16) )  && !pWMF->IsEof() )
 				{
 					if ( ( static_cast< sal_uInt32 >( nPoly ) * sizeof( sal_uInt16 ) ) <= ( nEndPos - pWMF->Tell() ) )
 					{
                         sal_uInt32 i(0);
 						sal_uInt16*	pnPoints = new sal_uInt16[ nPoly ];
-						
+
                         for ( i = 0; i < nPoly && !pWMF->IsEof(); i++ )
 						{
 							*pWMF >> nPoints;
 							pnPoints[ i ] = (sal_uInt16)nPoints;
 						}
-						
+
                         if ( ( nGesPoints * (sizeof(sal_uInt16)+sizeof(sal_uInt16)) ) <= ( nEndPos - pWMF->Tell() )  && !pWMF->IsEof() )
 						{
                             PolyPolygon aPolyPoly(nPoly, nPoly);
@@ -1262,15 +1262,15 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 								    pPtAry[b] = Point( nX16, nY16 );
                                     nReadPoints++;
                                 }
-                                
+
                                 aPolyPoly.Insert(Polygon(nPointCount, pPtAry));
                                 delete[] pPtAry;
                             }
-			
+
 							// create PolyPolygon actions
 							pOut->DrawPolyPolygon( aPolyPoly, bRecordPath );
 						}
-						
+
                         delete[] pnPoints;
 					}
 				}
@@ -1319,8 +1319,8 @@ sal_Bool EnhWMFReader::ReadEnhWMF()
 					{
 						for ( sal_Int32 x = 0; x < pBmp->Width(); x++ )
 						{
-							const BitmapColor aColor( pBmp->GetColor( y, x ) );						
-							
+							const BitmapColor aColor( pBmp->GetColor( y, x ) );
+
 							nRed += aColor.GetRed();
 							nGreen += aColor.GetGreen();
 							nBlue += aColor.GetBlue();
@@ -1481,3 +1481,5 @@ EnhWMFReader::~EnhWMFReader()
 {
 
 };
+
+/* vim: set noet sw=4 ts=4: */

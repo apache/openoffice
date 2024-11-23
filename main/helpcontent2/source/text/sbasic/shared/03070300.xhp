@@ -33,26 +33,24 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3145316">
 <bookmark_value>"+" operator (mathematical)</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3145316" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03070300.xhp">"+" Operator [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="2">Adds or combines two expressions.</paragraph>
+<paragraph role="heading" id="hd_id3145316" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03070300.xhp">"+" Operator [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="U">Adds or combines two expressions.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3144500" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="4">Result = Expression1 + Expression2</paragraph>
-<paragraph role="heading" id="hd_id3150400" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U" oldref="6">
-<emph>Result:</emph> Any numerical expression that contains the result of the addition.</paragraph>
-<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="7">
-<emph>Expression1, Expression2:</emph> Any numerical expressions that you want to combine or to add.</paragraph>
-<paragraph role="heading" id="hd_id3153969" xml-lang="en-US" level="2" l10n="U" oldref="8">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3150440" xml-lang="en-US" l10n="U" oldref="9">Sub ExampleAddition1</paragraph>
-<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U" oldref="10">Print 5 + 5</paragraph>
-<paragraph role="paragraph" id="par_id3152460" xml-lang="en-US" l10n="U" oldref="11">End sub</paragraph>
-<paragraph role="paragraph" id="par_id3153191" xml-lang="en-US" l10n="U" oldref="13">Sub ExampleAddition2</paragraph>
-<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="14">Dim iValue1 as Integer</paragraph>
-<paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U" oldref="15">Dim iValue2 as Integer</paragraph>
-<paragraph role="paragraph" id="par_id3147435" xml-lang="en-US" l10n="U" oldref="16">iValue1 = 5</paragraph>
-<paragraph role="paragraph" id="par_id3163710" xml-lang="en-US" l10n="U" oldref="17">iValue2 = 10</paragraph>
-<paragraph role="paragraph" id="par_id3151118" xml-lang="en-US" l10n="U" oldref="18">Print iValue1 + iValue2</paragraph>
-<paragraph role="paragraph" id="par_id3146974" xml-lang="en-US" l10n="U" oldref="19">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3144500" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U">Result = Expression1 + Expression2</paragraph>
+<paragraph role="heading" id="hd_id3150400" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U"><emph>Result:</emph> Any numerical expression that contains the result of the addition.</paragraph>
+<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U"><emph>Expression1, Expression2:</emph> Any numerical expressions that you want to combine or to add.</paragraph>
+<paragraph role="heading" id="hd_id3153969" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150440" xml-lang="en-US" l10n="U">Sub ExampleAddition1</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U">Print 5 + 5</paragraph>
+<paragraph role="paragraph" id="par_id3152460" xml-lang="en-US" l10n="U">End sub</paragraph>
+<paragraph role="paragraph" id="par_id3153191" xml-lang="en-US" l10n="U">Sub ExampleAddition2</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U">Dim iValue1 as Integer</paragraph>
+<paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U">Dim iValue2 as Integer</paragraph>
+<paragraph role="paragraph" id="par_id3147435" xml-lang="en-US" l10n="U">iValue1 = 5</paragraph>
+<paragraph role="paragraph" id="par_id3163710" xml-lang="en-US" l10n="U">iValue2 = 10</paragraph>
+<paragraph role="paragraph" id="par_id3151118" xml-lang="en-US" l10n="U">Print iValue1 + iValue2</paragraph>
+<paragraph role="paragraph" id="par_id3146974" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>

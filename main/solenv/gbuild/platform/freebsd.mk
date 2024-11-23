@@ -153,16 +153,22 @@ ifeq ($(gb_DEBUGLEVEL),2)
 gb_COMPILEROPTFLAGS := -O0
 gb_COMPILEROPT1FLAGS := -O0
 else
-# Clang versions 3.6.x and 3.7.x generate bad DWARF CFI for stack unwinding
-# on 32-bit Intel when compiling with -Os optimization.  See
-# <https://llvm.org/bugs/show_bug.cgi?id=24792>
-# Work around this by using "-O2 -fno-unroll-loops" instead.
-ifeq ($(COM)$(CPUNAME)$(shell expr $(CCNUMVER) '>=' 000300060000 '&' $(CCNUMVER) '<' 000300080000),CLANGINTEL1)
-gb_COMPILEROPTFLAGS := -O2 -fno-unroll-loops
+# Clang -Os seems to be buggy
+# Reduce code size on i386
+ifeq ($(CPUNAME),INTEL)
+ifeq ($(COM),CLANG)
+gb_COMPILEROPTFLAGS := -O2 -fno-unroll-loops -fno-inline
+gb_COMPILEROPT1FLAGS := -O1 -fno-unroll-loops -fno-inline
 else
-gb_COMPILEROPTFLAGS := -Os
+# gcc
+gb_COMPILEROPTFLAGS := -O2 -fno-unroll-loops -finline-limit=0 -fno-inline -fno-default-inline
+gb_COMPILEROPT1FLAGS := -O1 -fno-unroll-loops -finline-limit=0 -fno-inline -fno-default-inline
 endif
+else
+# X86_X4
+gb_COMPILEROPTFLAGS := -O2
 gb_COMPILEROPT1FLAGS := -O1
+endif
 endif
 
 gb_COMPILERNOOPTFLAGS := -O0
@@ -266,15 +272,15 @@ endif
 
 ifeq ($(COM),CLANG)
 ifeq ($(ENABLE_SYMBOLS),SMALL)
-gb_DEBUG_CFLAGS := -ggdb1 -fno-inline
+gb_DEBUG_CFLAGS := -ggdb1
 else
-gb_DEBUG_CFLAGS := -ggdb3 -fno-inline
+gb_DEBUG_CFLAGS := -ggdb3
 endif
 else
 ifeq ($(ENABLE_SYMBOLS),SMALL)
-gb_DEBUG_CFLAGS := -ggdb1 -finline-limit=0 -fno-inline -fno-default-inline
+gb_DEBUG_CFLAGS := -ggdb1
 else
-gb_DEBUG_CFLAGS := -ggdb3 -finline-limit=0 -fno-inline -fno-default-inline
+gb_DEBUG_CFLAGS := -ggdb3
 endif
 endif
 

@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #include "mailmergechildwindow.hrc"
 #include "dbui.hrc"
 #include "helpid.h"
@@ -233,7 +232,7 @@ ModalDialog DLG_MM_SENDWARNING
 	Size = MAP_APPFONT ( 240, 137 ) ;
 	Moveable = TRUE ;
 
-	Text[en-US] = "E-Mails could not be sent" ;
+	Text [en-US] = "E-Mails could not be sent" ;
 	FixedImage IM_WARNING
 	{
 		Pos = MAP_APPFONT ( 6, 3 ) ;

@@ -33,22 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3148946">
 <bookmark_value>FileExists function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3148946" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020415.xhp" name="FileExists Function [Runtime]">FileExists Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="U" oldref="2">Determines if a file or a directory is available on the data medium.</paragraph>
+<paragraph role="heading" id="hd_id3148946" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03020415.xhp" name="FileExists Function [Runtime]">FileExists Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="U">Determines if a file or a directory is available on the data medium.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3150447" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="4">FileExists(FileName As String | DirectoryName As String)</paragraph>
-<paragraph role="heading" id="hd_id3154126" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="U" oldref="6">Bool</paragraph>
-<paragraph role="heading" id="hd_id3153770" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3147349" xml-lang="en-US" l10n="U" oldref="8">FileName | DirectoryName: Any string expression that contains an unambiguous file specification. You can also use <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
+<paragraph role="heading" id="hd_id3150447" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="code" id="par_id3154685" xml-lang="en-US" l10n="U">FileExists(FileName As String | DirectoryName As String)</paragraph>
+<paragraph role="heading" id="hd_id3154126" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="U">Bool</paragraph>
+<paragraph role="heading" id="hd_id3153770" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3147349" xml-lang="en-US" l10n="U">FileName | DirectoryName: Any string expression that contains an unambiguous file specification. You can also use <link href="text/sbasic/shared/00000002.xhp" name="URL notation">URL notation</link>.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3149664" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="code" id="par_id3145272" xml-lang="en-US" l10n="U" oldref="10">sub ExampleFileExists</paragraph>
-<paragraph role="code" id="par_id3147317" xml-lang="en-US" l10n="U" oldref="12">msgbox FileExists("C:\autoexec.bat")</paragraph>
-<paragraph role="code" id="par_id3153190" xml-lang="en-US" l10n="U" oldref="13">msgbox FileExists("file:///d|/bookmark.htm")</paragraph>
-<paragraph role="code" id="par_id3148645" xml-lang="en-US" l10n="U" oldref="14">msgbox FileExists("file:///d|/private")</paragraph>
-<paragraph role="code" id="par_id3149262" xml-lang="en-US" l10n="U" oldref="15">end sub</paragraph>
+<paragraph role="heading" id="hd_id3149664" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="code" id="par_id3145272" xml-lang="en-US" l10n="U">sub ExampleFileExists</paragraph>
+<paragraph role="code" id="par_id3147317" xml-lang="en-US" l10n="U">msgbox FileExists("C:\autoexec.bat")</paragraph>
+<paragraph role="code" id="par_id3153190" xml-lang="en-US" l10n="U">msgbox FileExists("file:///d|/bookmark.htm")</paragraph>
+<paragraph role="code" id="par_id3148645" xml-lang="en-US" l10n="U">msgbox FileExists("file:///d|/private")</paragraph>
+<paragraph role="code" id="par_id3149262" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

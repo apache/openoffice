@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
-
 
 
 // INCLUDE ---------------------------------------------------------------
@@ -57,7 +54,7 @@
 #include "drwlayer.hxx"
 #include "scmod.hxx"
 #include "globstr.hrc"
-#include "sc.hrc"			// fuer ShellInvalidate
+#include "sc.hrc"			// for ShellInvalidate
 #include "AccessibleDocumentPagePreview.hxx"
 #include <vcl/lineinfo.hxx>
 #include <svx/algitem.hxx>
@@ -1487,7 +1484,7 @@ com::sun::star::uno::Reference<com::sun::star::accessibility::XAccessible> ScPre
 	return xAcc;
 }
 // MT: Removed Windows::SwitchView() introduced with IA2 CWS.
-// There are other notifications for this when the active view has chnaged, so please update the code to use that event mechanism
+// There are other notifications for this when the active view has changed, so please update the code to use that event mechanism
 void ScPreview::SwitchView()
 {
 	if (!Application::IsAccessibilityEnabled())
@@ -1498,7 +1495,7 @@ void ScPreview::SwitchView()
 	if (pAccDoc)
 	{
 		pAccDoc->SwitchViewFireFocus();
-	}		
+	}
 }
 //Issue51656 Add resizeable margin on page preview from maoyg
 void ScPreview::DragMove( long nDragMovePos, sal_uInt16 nFlags )
@@ -1544,3 +1541,5 @@ void ScPreview::DrawInvert( long nDragPos, sal_uInt16 nFlags )
     }
 }
 //Issue51656 Add resizeable margin on page preview from maoyg
+
+/* vim: set noet sw=4 ts=4: */

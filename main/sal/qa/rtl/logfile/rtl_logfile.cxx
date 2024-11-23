@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sal.hxx"
@@ -28,8 +25,6 @@
 // this file is converted to use with testshl2
 // original was placed in sal/test/textenc.cxx
 
-
-// -----------------------------------------------------------------------------
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -45,7 +40,7 @@
 // #include <osl/module.hxx>
 // #endif
 #include <osl/file.hxx>
-#if ( defined WNT )                     // Windows
+#if ( defined WNT ) // Windows
 #include <tchar.h>
 #endif
 
@@ -69,11 +64,11 @@ inline void printUString( const ::rtl::OUString & str, const sal_Char * msg = ""
 inline ::rtl::OUString getTempPath( void )
 {
 #ifdef UNX
-    rtl::OUString suDirURL(rtl::OUString::createFromAscii("file:///tmp/"));
+	rtl::OUString suDirURL(rtl::OUString::createFromAscii("file:///tmp/"));
 #else /* Windows */
-    rtl::OUString suDirURL(rtl::OUString::createFromAscii("file:///c:/temp/"));
+	rtl::OUString suDirURL(rtl::OUString::createFromAscii("file:///c:/temp/"));
 #endif
-    return suDirURL;
+	return suDirURL;
 }
 
 /** if the file exist
@@ -109,7 +104,7 @@ inline ::rtl::OUString getCurrentPID(  )
 /*
  * LLA:
  * check if logfile is create
- * be careful with relative logfiles they will create near the source, maybe it's no write access to it.
+ * be careful with relative logfiles they will create near the source, maybe it has no write access to it.
  * use absolute path to logfile instead.
  */
 namespace rtl_logfile
@@ -196,7 +191,7 @@ namespace rtl_logfile
         RTL_LOGFILE_CONTEXT_TRACE2 ( foo , "trace %d %d" , 1 , 2 );
         RTL_LOGFILE_CONTEXT_TRACE3 ( foo , "trace %d %d %d" , 1 , 2 , 3);
 // TODO: assertion test!
-    }
+	}
 
 } // namespace rtl_logfile
 
@@ -220,7 +215,7 @@ public:
                 ::osl::FileBase::RC nError1;
                 nError1 = osl::File::remove( suFilePath );
 #ifdef WNT
-                printf("Please remove logfile* manully! Error is Permision denied!");
+                printf("Please remove logfile* manually! Error is: Permission denied!");
 #endif
             }
             catch (...)
@@ -234,6 +229,8 @@ GlobalObject theGlobalObject;
 
 int main(int argc, char **argv)
 {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 }
+
+/* vim: set noet sw=4 ts=4: */

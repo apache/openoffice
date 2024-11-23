@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // autogen include statement, do not remove
 #include "precompiled_framework.hxx"
@@ -88,32 +86,32 @@ DecoToolBox::DecoToolBox( Window* pParent, WinBits nStyle ) :
 
 void DecoToolBox::DataChanged( const DataChangedEvent& rDCEvt )
 {
-    Window::DataChanged( rDCEvt );
+	Window::DataChanged( rDCEvt );
 
-    if ( rDCEvt.GetFlags() & SETTINGS_STYLE )
-    {
-        calcMinSize();
-        SetBackground();
-        SetPaintTransparent( sal_True );
-    }
+	if ( rDCEvt.GetFlags() & SETTINGS_STYLE )
+	{
+		calcMinSize();
+		SetBackground();
+		SetPaintTransparent( sal_True );
+	}
 }
 
 void DecoToolBox::calcMinSize()
 {
-    ToolBox aTbx( GetParent() );
-    sal_uInt16 nItems = GetItemCount();
-    for( sal_uInt16 i = 0; i < nItems; i++ )
-    {
-        sal_uInt16 nId = GetItemId( i );
-        aTbx.InsertItem( nId, GetItemImage( nId ) );
-    }
-    aTbx.SetOutStyle( TOOLBOX_STYLE_FLAT );
-    maMinSize = aTbx.CalcWindowSizePixel();
+	ToolBox aTbx( GetParent() );
+	sal_uInt16 nItems = GetItemCount();
+	for( sal_uInt16 i = 0; i < nItems; i++ )
+	{
+		sal_uInt16 nId = GetItemId( i );
+		aTbx.InsertItem( nId, GetItemImage( nId ) );
+	}
+	aTbx.SetOutStyle( TOOLBOX_STYLE_FLAT );
+	maMinSize = aTbx.CalcWindowSizePixel();
 }
 
 Size DecoToolBox::getMinSize()
 {
-    return maMinSize;
+	return maMinSize;
 }
 
 class RecentFilesStringLength : public ::cppu::WeakImplHelper1< ::com::sun::star::util::XStringWidth >
@@ -186,44 +184,44 @@ BackingWindow::BackingWindow( Window* i_pParent ) :
 
         mxPopupMenuFactory.set(
             frame::PopupMenuControllerFactory::create( mxContext ) );
-        // TODO If there is no PopupMenuController, the button should be a nomral one not a MenuButton
+        // TODO If there is no PopupMenuController, the button should be a normal one not a MenuButton
         if ( mxPopupMenuFactory->hasController(
             DECLARE_ASCII( RECENT_FILE_LIST ) , SERVICENAME_STARTMODULE ) )
         {
             mxPopupMenu.set( mxContext->getServiceManager()->createInstanceWithContext(
                 DECLARE_ASCII( "com.sun.star.awt.PopupMenu" ), mxContext ), uno::UNO_QUERY_THROW );
-        }
-    }
-    catch (const Exception& e)
-    {
-        OSL_TRACE( "BackingWindow - caught an exception! %s",
-                   rtl::OUStringToOString( e.Message, RTL_TEXTENCODING_UTF8 ).getStr() );
-        (void) e;
-    }
+		}
+	}
+	catch (const Exception& e)
+	{
+		OSL_TRACE( "BackingWindow - caught an exception! %s",
+					rtl::OUStringToOString( e.Message, RTL_TEXTENCODING_UTF8 ).getStr() );
+		(void) e;
+	}
 
-    String aExtHelpText( FwkResId( STR_BACKING_EXTHELP ) );
-    String aRegHelpText( FwkResId( STR_BACKING_REGHELP ) );
-    String aInfoHelpText( FwkResId( STR_BACKING_INFOHELP ) );
-    String aTplRepHelpText( FwkResId( STR_BACKING_TPLREP ) );
+	String aExtHelpText( FwkResId( STR_BACKING_EXTHELP ) );
+//	String aRegHelpText( FwkResId( STR_BACKING_REGHELP ) );
+	String aInfoHelpText( FwkResId( STR_BACKING_INFOHELP ) );
+	String aTplRepHelpText( FwkResId( STR_BACKING_TPLREP ) );
 
-    // clean up resource stack
-    FreeResource();
+	// clean up resource stack
+	FreeResource();
 
-    maWelcome.SetPaintTransparent( sal_True );
-    maProduct.SetPaintTransparent( sal_True );
-    EnableChildTransparentMode();
+	maWelcome.SetPaintTransparent( sal_True );
+	maProduct.SetPaintTransparent( sal_True );
+	EnableChildTransparentMode();
 
-    SetStyle( GetStyle() | WB_DIALOGCONTROL );
+	SetStyle( GetStyle() | WB_DIALOGCONTROL );
 
-    // force tab cycling in toolbox
-    maToolbox.SetStyle( maToolbox.GetStyle() | WB_FORCETABCYCLE );
+	// force tab cycling in toolbox
+	maToolbox.SetStyle( maToolbox.GetStyle() | WB_FORCETABCYCLE );
 
-    // insert toolbox items
-    maToolbox.InsertItem( nItemId_TplRep, Image() );
-    maToolbox.SetItemText( nItemId_TplRep, aTplRepHelpText );
-    maToolbox.SetQuickHelpText( nItemId_TplRep, aTplRepHelpText );
-    maToolbox.SetItemCommand( nItemId_TplRep, String( RTL_CONSTASCII_USTRINGPARAM( ".HelpId:StartCenter:TemplateRepository" ) ) );
-    maToolbox.ShowItem( nItemId_TplRep );
+	// insert toolbox items
+	maToolbox.InsertItem( nItemId_TplRep, Image() );
+	maToolbox.SetItemText( nItemId_TplRep, aTplRepHelpText );
+	maToolbox.SetQuickHelpText( nItemId_TplRep, aTplRepHelpText );
+	maToolbox.SetItemCommand( nItemId_TplRep, String( RTL_CONSTASCII_USTRINGPARAM( ".HelpId:StartCenter:TemplateRepository" ) ) );
+	maToolbox.ShowItem( nItemId_TplRep );
 
     maToolbox.InsertItem( nItemId_Extensions, Image() );
     maToolbox.SetQuickHelpText( nItemId_Extensions, aExtHelpText );
@@ -237,28 +235,28 @@ BackingWindow::BackingWindow( Window* i_pParent ) :
     maToolbox.SetItemCommand( nItemId_Info, String( RTL_CONSTASCII_USTRINGPARAM( ".HelpId:StartCenter:Info" ) ) );
     maToolbox.ShowItem( nItemId_Info );
 
-    // get dispatch provider
-    mxDesktop = Reference<XDesktop>( comphelper::getProcessServiceFactory()->createInstance(SERVICENAME_DESKTOP ),UNO_QUERY );
-    if( mxDesktop.is() )
-        mxDesktopDispatchProvider = Reference< XDispatchProvider >( mxDesktop, UNO_QUERY );
+	// get dispatch provider
+	mxDesktop = Reference<XDesktop>( comphelper::getProcessServiceFactory()->createInstance(SERVICENAME_DESKTOP ),UNO_QUERY );
+	if( mxDesktop.is() )
+		mxDesktopDispatchProvider = Reference< XDispatchProvider >( mxDesktop, UNO_QUERY );
 
-    maWriterButton.SetHelpId( ".HelpId:StartCenter:WriterButton" );
-    maCalcButton.SetHelpId( ".HelpId:StartCenter:CalcButton" );
-    maImpressButton.SetHelpId( ".HelpId:StartCenter:ImpressButton" );
-    maDrawButton.SetHelpId( ".HelpId:StartCenter:DrawButton" );
-    maDBButton.SetHelpId( ".HelpId:StartCenter:DBButton" );
-    maMathButton.SetHelpId( ".HelpId:StartCenter:MathButton" );
-    maTemplateButton.SetHelpId( ".HelpId:StartCenter:TemplateButton" );
-    maOpenButton.SetHelpId( ".HelpId:StartCenter:OpenButton" );
-    maToolbox.SetHelpId( ".HelpId:StartCenter:Toolbox" );
+	maWriterButton.SetHelpId( ".HelpId:StartCenter:WriterButton" );
+	maCalcButton.SetHelpId( ".HelpId:StartCenter:CalcButton" );
+	maImpressButton.SetHelpId( ".HelpId:StartCenter:ImpressButton" );
+	maDrawButton.SetHelpId( ".HelpId:StartCenter:DrawButton" );
+	maDBButton.SetHelpId( ".HelpId:StartCenter:DBButton" );
+	maMathButton.SetHelpId( ".HelpId:StartCenter:MathButton" );
+	maTemplateButton.SetHelpId( ".HelpId:StartCenter:TemplateButton" );
+	maOpenButton.SetHelpId( ".HelpId:StartCenter:OpenButton" );
+	maToolbox.SetHelpId( ".HelpId:StartCenter:Toolbox" );
 
-    // init background
-    initBackground();
+	// init background
+	initBackground();
 
-    // add some breathing space for the images
-    maButtonImageSize.Width() += 12;
-    maButtonImageSize.Height() += 12;
-    
+	// add some breathing space for the images
+	maButtonImageSize.Width() += 12;
+	maButtonImageSize.Height() += 12;
+
 }
 
 
@@ -358,9 +356,9 @@ void BackingWindow::initBackground()
         maWelcomeTextColor = maLabelTextColor = Color( COL_WHITE );
     else if( mnLayoutStyle == 1 )
         maWelcomeTextColor = maLabelTextColor = Color( COL_BLACK );
-    else 
+    else
         maWelcomeTextColor = maLabelTextColor = Color( 0x26, 0x35, 0x42 );
-    
+
     Color aTextBGColor( bDark ? COL_BLACK : COL_WHITE );
 
     // select image set
@@ -388,7 +386,7 @@ void BackingWindow::initBackground()
         maBackgroundRight = BitmapEx( FwkResId( BMP_BACKING_BACKGROUND_RIGHT ) );
     }
     maToolbox.SetItemImage( nItemId_Extensions, BitmapEx( FwkResId( BMP_BACKING_EXT ) ) );
-//###    maToolbox.SetItemImage( nItemId_Reg, BitmapEx( FwkResId( BMP_BACKING_REG ) ) );
+//	maToolbox.SetItemImage( nItemId_Reg, BitmapEx( FwkResId( BMP_BACKING_REG ) ) );
     maToolbox.SetItemImage( nItemId_Info, BitmapEx( FwkResId( BMP_BACKING_INFO ) ) );
     maToolbox.SetItemImage( nItemId_TplRep, BitmapEx( FwkResId( BMP_BACKING_TPLREP ) ) );
 
@@ -414,7 +412,7 @@ void BackingWindow::initBackground()
     loadImage( FwkResId( BMP_BACKING_FORMULA ), maMathButton );
     loadImage( FwkResId( BMP_BACKING_OPENFILE ), maOpenButton );
     loadImage( FwkResId( BMP_BACKING_OPENTEMPLATE ), maTemplateButton );
-    
+
     maOpenButton.SetMenuMode( MENUBUTTON_MENUMODE_TIMED );
     maOpenButton.SetActivateHdl( LINK( this, BackingWindow, ActivateHdl ) );
 }
@@ -476,7 +474,7 @@ void BackingWindow::initControls()
 
     if( mnLayoutStyle == 1 )
     {
-        maWelcome.Show();        
+        maWelcome.Show();
         maProduct.Show();
     }
 
@@ -546,20 +544,20 @@ void BackingWindow::initControls()
                   aModuleOptions, SvtModuleOptions::E_SMATH,
                   maMathButton, aMnemns );
 
-    nYPos += 3*maButtonImageSize.Height() / 2;
-    
+    nYPos += 3 * maButtonImageSize.Height() / 2;
+
     layoutButton( NULL, 0, aFileNewAppsAvailable,
                   aModuleOptions, SvtModuleOptions::E_SWRITER,
                   maOpenButton, aMnemns, maOpenString );
     layoutButton( NULL, 1, aFileNewAppsAvailable,
                   aModuleOptions, SvtModuleOptions::E_SWRITER,
-                  maTemplateButton, aMnemns, maTemplateString );    
+                  maTemplateButton, aMnemns, maTemplateString );
     nYPos += 10;
 
     DBG_ASSERT( nYPos < maControlRect.GetHeight(), "misformatting !" );
     if( mnColumnWidth[0] + mnColumnWidth[1] + mnBtnPos + 20 > maControlRect.GetWidth() )
         maControlRect.Right() = maControlRect.Left() + mnColumnWidth[0] + mnColumnWidth[1] + mnBtnPos + 20;
-    
+
     mnTextColumnWidth[0] = mnColumnWidth[0];
     mnTextColumnWidth[1] = mnColumnWidth[1];
 
@@ -601,7 +599,7 @@ void BackingWindow::initControls()
         maBackgroundMiddle = BitmapEx();
 
     Resize();
-    
+
     maWriterButton.GrabFocus();
 }
 
@@ -640,7 +638,7 @@ void BackingWindow::layoutButton(
     String aText( i_rStr.Len() ? i_rStr : SvFileInformationManager::GetDescription( INetURLObject( aURL ) ) );
     i_rMnemns.CreateMnemonic( aText );
     i_rBtn.SetText( aText );
-    
+
     long nTextWidth = i_rBtn.GetTextWidth( i_rBtn.GetText() );
 
     nTextWidth += maButtonImageSize.Width() + 8; // add some fuzz to be on the safe side
@@ -648,17 +646,17 @@ void BackingWindow::layoutButton(
     {
         if( nTextWidth > mnColumnWidth[nColumn] )
             mnColumnWidth[nColumn] = nTextWidth;
-    }
+	}
 
-    i_rBtn.SetImageAlign( IMAGEALIGN_LEFT );
-    // show the controls
-    i_rBtn.Show();
+	i_rBtn.SetImageAlign( IMAGEALIGN_LEFT );
+	// show the controls
+	i_rBtn.Show();
 }
 
 void BackingWindow::Paint( const Rectangle& )
 {
 	Resize();
-	
+
     Wallpaper aBack( GetSettings().GetStyleSettings().GetWorkspaceGradient() );
     Region aClip( Rectangle( Point( 0, 0 ), GetOutputSizePixel() ) );
     Rectangle aBmpRect(maControlRect);
@@ -671,7 +669,7 @@ void BackingWindow::Paint( const Rectangle& )
     IntersectClipRegion( aClip );
     DrawWallpaper( Rectangle( Point( 0, 0 ), GetOutputSizePixel() ), aBack );
     Pop();
-    
+
     VirtualDevice aDev( *this );
     aDev.EnableRTL( IsRTLEnabled() );
     aDev.SetOutputSizePixel( aBmpRect.GetSize() );
@@ -688,7 +686,7 @@ void BackingWindow::Paint( const Rectangle& )
         aTL.X() += maBackgroundMiddle.GetSizePixel().Width();
     }
     aDev.DrawBitmapEx( aTL, maBackgroundRight );
-    
+
     DrawOutDev( aBmpRect.TopLeft(), aBmpRect.GetSize(),
                 Point( 0, 0 ), aBmpRect.GetSize(),
                 aDev );
@@ -768,7 +766,7 @@ long BackingWindow::Notify( NotifyEvent& rNEvt )
                 else if( maDBButton.HasFocus() )
                     maMathButton.GrabFocus();
                 else if( maMathButton.HasFocus() )
-                    maTemplateButton.GrabFocus();                
+                    maTemplateButton.GrabFocus();
                 return 1;
             }
         }
@@ -830,7 +828,7 @@ void BackingWindow::Resize()
     nYPos += nPDelta - nDiff;
 
     nYPos += nWDelta/2 - nDiff;
-    
+
     if( mnLayoutStyle != 1 )
         nYPos = maControlRect.Top() + mnBtnTop;
 
@@ -894,7 +892,7 @@ IMPL_LINK( BackingWindow, ToolboxHdl, void*, EMPTYARG )
                     //throws css::container::NoSuchElementException, css::lang::WrappedTargetException
                     Any value( xNameAccess->getByName(rtl::OUString::createFromAscii(pNode)) );
                     sURL = value.get<rtl::OUString> ();
-                    
+
                     // extend the URLs with Office locale argument
                     INetURLObject aURLObj( sURL );
 
@@ -909,7 +907,7 @@ IMPL_LINK( BackingWindow, ToolboxHdl, void*, EMPTYARG )
                     ::rtl::OUString sPackage = ::rtl::OUString::createFromAscii("org.openoffice.Setup");
                     ::rtl::OUString sRelPath = ::rtl::OUString::createFromAscii("L10N");
                     ::rtl::OUString sKey     = ::rtl::OUString::createFromAscii("ooLocale");
-                    
+
                     try
                     {
                         ::comphelper::ConfigurationHelper::readDirectKey(comphelper::getProcessServiceFactory(),
@@ -926,7 +924,7 @@ IMPL_LINK( BackingWindow, ToolboxHdl, void*, EMPTYARG )
                     aURLBuf.append(sLocale);
 
                     sParam = aURLBuf.makeStringAndClear();
-                    
+
                     aURLObj.SetParam( sParam );
                     sURL = aURLObj.GetMainURL( INetURLObject::NO_DECODE );
 
@@ -1013,19 +1011,19 @@ struct ImplDelayedDispatch
 
 static long implDispatchDelayed( void*, void* pArg )
 {
-    struct ImplDelayedDispatch* pDispatch = reinterpret_cast<ImplDelayedDispatch*>(pArg);
-    try
-    {
-        pDispatch->xDispatch->dispatch( pDispatch->aDispatchURL, pDispatch->aArgs );
-    }
-    catch( Exception )
-    {
-    }
+	struct ImplDelayedDispatch* pDispatch = reinterpret_cast<ImplDelayedDispatch*>(pArg);
+	try
+	{
+		pDispatch->xDispatch->dispatch( pDispatch->aDispatchURL, pDispatch->aArgs );
+	}
+	catch( Exception )
+	{
+	}
 
-    // clean up
-    delete pDispatch;
+	// clean up
+	delete pDispatch;
 
-    return 0;
+	return 0;
 }
 
 void BackingWindow::dispatchURL( const rtl::OUString& i_rURL,
@@ -1033,24 +1031,24 @@ void BackingWindow::dispatchURL( const rtl::OUString& i_rURL,
                                  const Reference< XDispatchProvider >& i_xProv,
                                  const Sequence< PropertyValue >& i_rArgs )
 {
-    // if no special dispatch provider is given, get the desktop
-    Reference< XDispatchProvider > xProvider( i_xProv.is() ? i_xProv : mxDesktopDispatchProvider );
+	// if no special dispatch provider is given, get the desktop
+	Reference< XDispatchProvider > xProvider( i_xProv.is() ? i_xProv : mxDesktopDispatchProvider );
 
-    // check for dispatch provider
-    if( !xProvider.is())
-        return;
+	// check for dispatch provider
+	if( !xProvider.is())
+		return;
 
-    // get an URL transformer to clean up the URL
-    com::sun::star::util::URL aDispatchURL;
-    aDispatchURL.Complete = i_rURL;
+	// get an URL transformer to clean up the URL
+	com::sun::star::util::URL aDispatchURL;
+	aDispatchURL.Complete = i_rURL;
 
-    Reference < com::sun::star::util::XURLTransformer > xURLTransformer(
-        comphelper::getProcessServiceFactory()->createInstance( rtl::OUString::createFromAscii("com.sun.star.util.URLTransformer") ),
-        com::sun::star::uno::UNO_QUERY );
-    if ( xURLTransformer.is() )
-    {
-        try
-        {
+	Reference < com::sun::star::util::XURLTransformer > xURLTransformer(
+		comphelper::getProcessServiceFactory()->createInstance( rtl::OUString::createFromAscii("com.sun.star.util.URLTransformer") ),
+		com::sun::star::uno::UNO_QUERY );
+	if ( xURLTransformer.is() )
+	{
+		try
+		{
             // clean up the URL
             xURLTransformer->parseStrict( aDispatchURL );
             // get a Dispatch for the URL and target
@@ -1064,15 +1062,16 @@ void BackingWindow::dispatchURL( const rtl::OUString& i_rURL,
                 sal_uLong nEventId = 0;
                 if( ! Application::PostUserEvent( nEventId, Link( NULL, implDispatchDelayed ), pDisp ) )
                     delete pDisp; // event could not be posted for unknown reason, at least don't leak
-            }
-        }
-        catch ( com::sun::star::uno::RuntimeException& )
-        {
-            throw;
-        }
-        catch ( com::sun::star::uno::Exception& )
-        {
-        }
-    }
+			}
+		}
+		catch ( com::sun::star::uno::RuntimeException& )
+		{
+			throw;
+		}
+		catch ( com::sun::star::uno::Exception& )
+		{
+		}
+	}
 }
 
+/* vim: set noet sw=4 ts=4: */

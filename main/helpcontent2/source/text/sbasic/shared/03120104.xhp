@@ -33,23 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149205">
 <bookmark_value>Val function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3149205" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120104.xhp" name="Val Function [Runtime]">Val Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3153345" xml-lang="en-US" l10n="U" oldref="2">Converts a string to a numeric expression.</paragraph>
+<paragraph role="heading" id="hd_id3149205" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03120104.xhp" name="Val Function [Runtime]">Val Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153345" xml-lang="en-US" l10n="U">Converts a string to a numeric expression.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3159157" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3149514" xml-lang="en-US" l10n="U" oldref="4">Val (Text As String)</paragraph>
-<paragraph role="heading" id="hd_id3150669" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3143228" xml-lang="en-US" l10n="U" oldref="6">Double</paragraph>
-<paragraph role="heading" id="hd_id3156024" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3154348" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Text:</emph> String that represents a number.</paragraph>
-<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="9">Using the Val function, you can convert a string that represents numbers into numeric expressions. This is the inverse of the <emph>Str</emph> function. If only part of the string contains numbers, only the first appropriate characters of the string are converted. If the string does not contain any numbers, the <emph>Val</emph> function returns the value 0.</paragraph>
+<paragraph role="heading" id="hd_id3159157" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3149514" xml-lang="en-US" l10n="U">Val (Text As String)</paragraph>
+<paragraph role="heading" id="hd_id3150669" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3143228" xml-lang="en-US" l10n="U">Double</paragraph>
+<paragraph role="heading" id="hd_id3156024" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3154348" xml-lang="en-US" l10n="U"><emph>Text:</emph> String that represents a number.</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U">Using the Val function, you can convert a string that represents numbers into numeric expressions. This is the inverse of the <emph>Str</emph> function. If only part of the string contains numbers, only the first appropriate characters of the string are converted. If the string does not contain any numbers, the <emph>Val</emph> function returns the value 0.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3151177" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleVal</paragraph>
-<paragraph role="paragraph" id="par_id3159150" xml-lang="en-US" l10n="U" oldref="12">msgbox Val("123.123")</paragraph>
-<paragraph role="paragraph" id="par_id3154126" xml-lang="en-US" l10n="U" oldref="13">msgbox Val("A123.123")</paragraph>
-<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="14">end Sub</paragraph>
+<paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3151177" xml-lang="en-US" l10n="U">Sub ExampleVal</paragraph>
+<paragraph role="paragraph" id="par_id3159150" xml-lang="en-US" l10n="U">msgbox Val("123.123")</paragraph>
+<paragraph role="paragraph" id="par_id3154126" xml-lang="en-US" l10n="U">msgbox Val("A123.123")</paragraph>
+<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U">end Sub</paragraph>
 </body>
 </helpdocument>

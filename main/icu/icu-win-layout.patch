@@ -1,0 +1,11 @@
+diff -ru misc/icu/source/allinone/allinone.sln misc/build/icu/source/allinone/allinone.sln
+--- misc/icu/source/allinone/allinone.sln	2024-09-01 18:02:01.258473600 +0200
++++ misc/build/icu/source/allinone/allinone.sln	2024-09-01 18:02:11.274816100 +0200
+@@ -122,6 +122,7 @@
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "layout", "..\layout\layout.vcproj", "{C920062A-0647-4553-A3B2-37C58065664B}"
+ 	ProjectSection(ProjectDependencies) = postProject
+ 		{73C0A65B-D1F2-4DE1-B3A6-15DAD2C23F3D} = {73C0A65B-D1F2-4DE1-B3A6-15DAD2C23F3D}
++		{0178B127-6269-407D-B112-93877BB62776} = {0178B127-6269-407D-B112-93877BB62776}
+ 	EndProjectSection
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "layoutex", "..\layoutex\layoutex.vcproj", "{37FC2C7F-1904-4811-8955-2F478830EAD1}"

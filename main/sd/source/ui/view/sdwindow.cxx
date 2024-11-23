@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
@@ -176,7 +174,7 @@ void Window::CalcMinZoom()
 			else
                 nFact = Max(nX, nY);
 
-            // The factor is tansfomed according to the current zoom factor.
+            // The factor is transformed according to the current zoom factor.
 			nFact = nFact * nZoom / ZOOM_MULTIPLICATOR;
 			mnMinZoom = Max((sal_uInt16) MIN_ZOOM, (sal_uInt16) nFact);
 		}
@@ -547,7 +545,7 @@ long Window::GetZoomForRect( const Rectangle& rZoomRect )
 			nRetZoom = GetZoom();
 		}
 		else
-		{    
+		{
             // Clip the zoom factor to the valid range marked by nMinZoom as
             // previously calculated by <member>CalcMinZoom()</member> and the
             // MAX_ZOOM constant.
@@ -717,7 +715,7 @@ void Window::UpdateMapMode (void)
     {
         Size aViewSizePixel = LogicToPixel(maViewSize);
         Size aWinSizePixel = LogicToPixel(aWinSize);
-        
+
         // Seite soll nicht am Fensterrand "kleben"
         if (aPix.Width() == 0)
         {
@@ -734,13 +732,13 @@ void Window::UpdateMapMode (void)
             aPix.Height() -= 8;
         }
     }
-    
+
     aPix = PixelToLogic(aPix);
     maWinPos.X() = aPix.Width();
     maWinPos.Y() = aPix.Height();
 	Point aNewOrigin (-maWinPos.X(), -maWinPos.Y());
     maWinPos += maViewOrigin;
-    
+
 	MapMode aMap(GetMapMode());
     aMap.SetOrigin(aNewOrigin);
     SetMapMode(aMap);
@@ -1036,7 +1034,7 @@ void Window::DataChanged( const DataChangedEvent& rDCEvt )
 			// Wie hier die Behandlung aussehen soll, weiss ich leider
 			// selbst noch nicht. Evtl. mal einen Printer loeschen und
 			// schauen was gemacht werden muss. Evtl. muesste ich in
-			// VCL dafuer noch etwas einbauen, wenn der benutze Printer
+			// VCL dafuer noch etwas einbauen, wenn der benutzte Printer
 			// geloescht wird. Ansonsten wuerde ich hier evtl. die
 			// Formatierung neu berechnen, wenn der aktuelle Drucker
 			// zerstoert wurde.
@@ -1148,9 +1146,9 @@ void Window::DropScroll(const Point& rMousePos)
 
 	if ( (nDx || nDy) && (rMousePos.X()!=0 || rMousePos.Y()!=0 ) )
 	{
-        if (mnTicks > 20) 
+        if (mnTicks > 20)
             mpViewShell->ScrollLines(nDx, nDy);
-		else 
+		else
             mnTicks ++;
 	}
 }
@@ -1162,7 +1160,7 @@ void Window::DropScroll(const Point& rMousePos)
     ::com::sun::star::accessibility::XAccessible>
     Window::CreateAccessible (void)
 {
-	// If current viewshell is PresentationViewShell, just return empty because the correct ShowWin will be created later. 
+	// If current viewshell is PresentationViewShell, just return empty because the correct ShowWin will be created later.
 	if (mpViewShell && mpViewShell->ISA(PresentationViewShell))
 	{
 		return ::Window::CreateAccessible ();
@@ -1186,7 +1184,7 @@ void Window::DropScroll(const Point& rMousePos)
 }
 
 // MT: Removed Windows::SwitchView() introduced with IA2 CWS.
-// There are other notifications for this when the active view has chnaged, so please update the code to use that event mechanism
+// There are other notifications for this when the active view has changed, so please update the code to use that event mechanism
 void Window::SwitchView()
 {
 	if (!Application::IsAccessibilityEnabled())
@@ -1234,3 +1232,5 @@ Selection Window::GetSurroundingTextSelection() const
 }
 
 } // end of namespace sd
+
+/* vim: set noet sw=4 ts=4: */

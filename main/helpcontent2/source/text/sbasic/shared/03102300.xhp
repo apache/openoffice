@@ -33,25 +33,24 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3145090">
 <bookmark_value>IsDate function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03102300.xhp" name="IsDate Function [Runtime]">IsDate Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3153311" xml-lang="en-US" l10n="U" oldref="2">Tests if a numeric or string expression can be converted to a <emph>Date</emph> variable.</paragraph>
+<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03102300.xhp" name="IsDate Function [Runtime]">IsDate Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153311" xml-lang="en-US" l10n="U">Tests if a numeric or string expression can be converted to a <emph>Date</emph> variable.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3153824" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U" oldref="4">IsDate (Expression)</paragraph>
-<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="6">Bool</paragraph>
-<paragraph role="heading" id="hd_id3148947" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Expression:</emph> Any numeric or string expression that you want to test. If the expression can be converted to a date, the function returns <emph>True</emph>, otherwise the function returns <emph>False</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3153824" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U">IsDate (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U">Bool</paragraph>
+<paragraph role="heading" id="hd_id3148947" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U"><emph>Expression:</emph> Any numeric or string expression that you want to test. If the expression can be converted to a date, the function returns <emph>True</emph>, otherwise the function returns <emph>False</emph>.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3150447" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleIsDate</paragraph>
-<paragraph role="paragraph" id="par_id3153970" xml-lang="en-US" l10n="U" oldref="11">Dim sDateVar as String</paragraph>
-<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="12">sDateVar = "12.12.1997"</paragraph>
-<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="U" oldref="13">print IsDate(sDateVar) REM Returns True</paragraph>
-<paragraph role="paragraph" id="par_id3148453" xml-lang="en-US" l10n="U" oldref="14">sDateVar = "12121997"</paragraph>
-<paragraph role="paragraph" id="par_id3147288" xml-lang="en-US" l10n="U" oldref="15">print IsDate(sDateVar) REM Returns False</paragraph>
-<paragraph role="paragraph" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="16">end sub</paragraph>
+<paragraph role="heading" id="hd_id3150447" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U">Sub ExampleIsDate</paragraph>
+<paragraph role="paragraph" id="par_id3153970" xml-lang="en-US" l10n="U">Dim sDateVar as String</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U">sDateVar = "12.12.1997"</paragraph>
+<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="U">print IsDate(sDateVar) REM Returns True</paragraph>
+<paragraph role="paragraph" id="par_id3148453" xml-lang="en-US" l10n="U">sDateVar = "12121997"</paragraph>
+<paragraph role="paragraph" id="par_id3147288" xml-lang="en-US" l10n="U">print IsDate(sDateVar) REM Returns False</paragraph>
+<paragraph role="paragraph" id="par_id3155132" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>
