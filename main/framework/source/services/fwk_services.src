@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "framework.hrc"
 
 Window DLG_BACKING
@@ -53,10 +51,10 @@ Window DLG_BACKING
 	{
 		Text [ en-US ] = "Add new features to %PRODUCTNAME" ;
 	};
-	String STR_BACKING_REGHELP
-	{
-		Text [ en-US ] = "Register your %PRODUCTNAME" ;
-	};
+//	String STR_BACKING_REGHELP
+//	{
+//		Text [ en-US ] = "Register your %PRODUCTNAME" ;
+//	};
 	String STR_BACKING_INFOHELP
 	{
 		Text [ en-US ] = "Get more information about %PRODUCTNAME" ;
@@ -93,10 +91,10 @@ Resource RES_BACKING_IMAGES
 	{
 		File = "extension_32.png" ;
 	};
-	Bitmap BMP_BACKING_REG
-	{
-		File = "register_32.png" ;
-	};
+//	Bitmap BMP_BACKING_REG
+//	{
+//		File = "register_32.png" ;
+//	};
 	Bitmap BMP_BACKING_INFO
 	{
 		File = "info_32.png" ;
@@ -165,10 +163,10 @@ Resource RES_BACKING_IMAGES_HC
 	{
 		File = "extension_32_hc.png" ;
 	};
-	Bitmap BMP_BACKING_REG
-	{
-		File = "register_32_hc.png" ;
-	};
+//	Bitmap BMP_BACKING_REG
+//	{
+//		File = "register_32_hc.png" ;
+//	};
 	Bitmap BMP_BACKING_INFO
 	{
 		File = "info_32_hc.png" ;
