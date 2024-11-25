@@ -31,7 +31,7 @@
 		<group oor:name="Type">
             <info><desc>Lists the types that represent common content formats in Office.</desc></info>
 			<prop oor:name="UIOrder" oor:type="xs:int">
-                <info><desc>Used to sort types inside dialogs. Only values &gt;0 are recognized. Types with an order value &lt;1 will be sorted alphabeticly.</desc></info>
+                <info><desc>Used to sort types inside dialogs. Only values &gt;0 are recognized. Types with an order value &lt;1 will be sorted alphabetically.</desc></info>
 				<value>0</value>
 			</prop>
             <prop oor:name="URLPattern" oor:type="oor:string-list">
