@@ -613,7 +613,7 @@ OUStringList FilterFactory::impl_getSortedFilterListForModule(const ::rtl::OUStr
     aLock.clear();    
     // <- SAFE ----------------------
 
-    // bring "other" filters in an alphabeticly order
+    // bring "other" filters in an alphabetical order
     // It's needed below.
     ::std::sort(lOtherFilters.begin(), lOtherFilters.end());
     

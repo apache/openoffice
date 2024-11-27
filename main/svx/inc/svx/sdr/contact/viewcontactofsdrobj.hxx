@@ -76,7 +76,7 @@ namespace sdr
 			// React on changes of the object of this ViewContact
 			virtual void ActionChanged();
 
-			// overload for acessing the SdrObject
+			// overload for accessing the SdrObject
 			virtual SdrObject* TryToGetSdrObject() const;
 
 			//////////////////////////////////////////////////////////////////////////////
