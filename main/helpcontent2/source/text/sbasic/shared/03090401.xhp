@@ -33,25 +33,23 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154422">
 <bookmark_value>Call statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3154422" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090401.xhp" name="Call Statement [Runtime]">Call Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="U" oldref="2">Transfers the control of the program to a subroutine, a function, or a DLL procedure.</paragraph>
+<paragraph role="heading" id="hd_id3154422" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03090401.xhp" name="Call Statement [Runtime]">Call Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="U">Transfers the control of the program to a subroutine, a function, or a DLL procedure.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U" oldref="4">[Call] Name [Parameter]</paragraph>
-<paragraph role="heading" id="hd_id3150771" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U" oldref="6">
-<emph>Name:</emph> Name of the subroutine, the function, or the DLL that you want to call</paragraph>
-<paragraph role="paragraph" id="par_id3148946" xml-lang="en-US" l10n="U" oldref="7">
-<emph>Parameter:</emph> Parameters to pass to the procedure. The type and number of parameters is dependent on the routine that is executing.</paragraph>
-<paragraph role="note" id="par_id3154216" xml-lang="en-US" l10n="U" oldref="8">A keyword is optional when you call a procedure. If a function is executed as an expression, the parameters must be enclosed by brackets in the statement. If a DLL is called, it must first be specified in the <emph>Declare-Statement</emph>.</paragraph>
-<paragraph role="heading" id="hd_id3125865" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U" oldref="12">Sub ExampleCall</paragraph>
-<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U" oldref="13">Dim sVar As String</paragraph>
-<paragraph role="paragraph" id="par_id3147317" xml-lang="en-US" l10n="U" oldref="14">sVar = "Office"</paragraph>
-<paragraph role="paragraph" id="par_id3145273" xml-lang="en-US" l10n="U" oldref="15">Call f_callFun sVar</paragraph>
-<paragraph role="paragraph" id="par_id3147435" xml-lang="en-US" l10n="U" oldref="16">end Sub</paragraph>
-<paragraph role="paragraph" id="par_id3155414" xml-lang="en-US" l10n="U" oldref="18">Sub f_callFun (sText as String)</paragraph>
-<paragraph role="paragraph" id="par_id3151112" xml-lang="en-US" l10n="U" oldref="19">Msgbox sText</paragraph>
-<paragraph role="paragraph" id="par_id3148646" xml-lang="en-US" l10n="U" oldref="20">end sub</paragraph>
+<paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U">[Call] Name [Parameter]</paragraph>
+<paragraph role="heading" id="hd_id3150771" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148473" xml-lang="en-US" l10n="U"><emph>Name:</emph> Name of the subroutine, the function, or the DLL that you want to call</paragraph>
+<paragraph role="paragraph" id="par_id3148946" xml-lang="en-US" l10n="U"><emph>Parameter:</emph> Parameters to pass to the procedure. The type and number of parameters is dependent on the routine that is executing.</paragraph>
+<paragraph role="note" id="par_id3154216" xml-lang="en-US" l10n="U">A keyword is optional when you call a procedure. If a function is executed as an expression, the parameters must be enclosed by brackets in the statement. If a DLL is called, it must first be specified in the <emph>Declare-Statement</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3125865" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U">Sub ExampleCall</paragraph>
+<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U">Dim sVar As String</paragraph>
+<paragraph role="paragraph" id="par_id3147317" xml-lang="en-US" l10n="U">sVar = "Office"</paragraph>
+<paragraph role="paragraph" id="par_id3145273" xml-lang="en-US" l10n="U">Call f_callFun sVar</paragraph>
+<paragraph role="paragraph" id="par_id3147435" xml-lang="en-US" l10n="U">end Sub</paragraph>
+<paragraph role="paragraph" id="par_id3155414" xml-lang="en-US" l10n="U">Sub f_callFun (sText as String)</paragraph>
+<paragraph role="paragraph" id="par_id3151112" xml-lang="en-US" l10n="U">Msgbox sText</paragraph>
+<paragraph role="paragraph" id="par_id3148646" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

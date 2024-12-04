@@ -33,24 +33,23 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149346">
 <bookmark_value>CInt function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3149346" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03100500.xhp" name="CInt Function [Runtime]">CInt Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3155419" xml-lang="en-US" l10n="U" oldref="2">Converts any string or numeric expression to an integer.</paragraph>
+<paragraph role="heading" id="hd_id3149346" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03100500.xhp" name="CInt Function [Runtime]">CInt Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3155419" xml-lang="en-US" l10n="U">Converts any string or numeric expression to an integer.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3147573" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3154142" xml-lang="en-US" l10n="U" oldref="4">CInt (Expression)</paragraph>
-<paragraph role="heading" id="hd_id3147531" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="6">Integer</paragraph>
-<paragraph role="heading" id="hd_id3145069" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Expression:</emph> Any numeric expression that you want to convert. If the <emph>Expression</emph> exceeds the value range between -32768 and 32767, $[officename] Basic reports an overflow error. To convert a string expression, the number must be entered as normal text ("123.5") using the default number format of your operating system.</paragraph>
-<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="9">This function always rounds the fractional part of a number to the nearest integer.</paragraph>
+<paragraph role="heading" id="hd_id3147573" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3154142" xml-lang="en-US" l10n="U">CInt (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3147531" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U">Integer</paragraph>
+<paragraph role="heading" id="hd_id3145069" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U"><emph>Expression:</emph> Any numeric expression that you want to convert. If the <emph>Expression</emph> exceeds the value range between -32768 and 32767, $[officename] Basic reports an overflow error. To convert a string expression, the number must be entered as normal text ("123.5") using the default number format of your operating system.</paragraph>
+<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U">This function always rounds the fractional part of a number to the nearest integer.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3145419" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3150448" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleCountryConvert</paragraph>
-<paragraph role="paragraph" id="par_id3156423" xml-lang="en-US" l10n="U" oldref="12">Msgbox CDbl(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="U" oldref="13">Msgbox CInt(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3153768" xml-lang="en-US" l10n="U" oldref="14">Msgbox CLng(1234.5678)</paragraph>
-<paragraph role="paragraph" id="par_id3145786" xml-lang="en-US" l10n="U" oldref="15">end sub</paragraph>
+<paragraph role="heading" id="hd_id3145419" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150448" xml-lang="en-US" l10n="U">Sub ExampleCountryConvert</paragraph>
+<paragraph role="paragraph" id="par_id3156423" xml-lang="en-US" l10n="U">Msgbox CDbl(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="U">Msgbox CInt(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3153768" xml-lang="en-US" l10n="U">Msgbox CLng(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3145786" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

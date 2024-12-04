@@ -33,26 +33,24 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150669">
 <bookmark_value>MOD operator (mathematical)</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3150669" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03070600.xhp" name="Mod-Operator [Runtime]">Mod Operator [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3148686" xml-lang="en-US" l10n="U" oldref="2">Returns the integer remainder of a division.</paragraph>
+<paragraph role="heading" id="hd_id3150669" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03070600.xhp" name="Mod-Operator [Runtime]">Mod Operator [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3148686" xml-lang="en-US" l10n="U">Returns the integer remainder of a division.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3146795" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="4">Result = Expression1 MOD Expression2</paragraph>
-<paragraph role="heading" id="hd_id3149657" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3153380" xml-lang="en-US" l10n="U" oldref="6">Integer</paragraph>
-<paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Result:</emph> Any numeric variable that contains the result of the MOD operation.</paragraph>
-<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U" oldref="9">
-<emph>Expression1, Expression2:</emph> Any numeric expressions that you want to divide.</paragraph>
-<paragraph role="heading" id="hd_id3147287" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3153770" xml-lang="en-US" l10n="U" oldref="11">sub ExampleMod</paragraph>
-<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U" oldref="12">print 10 mod 2.5 REM returns 0</paragraph>
-<paragraph role="paragraph" id="par_id3146922" xml-lang="en-US" l10n="U" oldref="13">print 10 / 2.5 REM returns 4</paragraph>
-<paragraph role="paragraph" id="par_id3145273" xml-lang="en-US" l10n="U" oldref="14">print 10 mod 5 REM returns 0</paragraph>
-<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="15">print 10 / 5 REM returns 2</paragraph>
-<paragraph role="paragraph" id="par_id3149483" xml-lang="en-US" l10n="U" oldref="16">print 5 mod 10 REM returns 5</paragraph>
-<paragraph role="paragraph" id="par_id3151114" xml-lang="en-US" l10n="U" oldref="17">print 5 / 10 REM returns 0.5</paragraph>
-<paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="U" oldref="18">end sub</paragraph>
+<paragraph role="heading" id="hd_id3146795" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U">Result = Expression1 MOD Expression2</paragraph>
+<paragraph role="heading" id="hd_id3149657" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3153380" xml-lang="en-US" l10n="U">Integer</paragraph>
+<paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3145172" xml-lang="en-US" l10n="U"><emph>Result:</emph> Any numeric variable that contains the result of the MOD operation.</paragraph>
+<paragraph role="paragraph" id="par_id3151042" xml-lang="en-US" l10n="U"><emph>Expression1, Expression2:</emph> Any numeric expressions that you want to divide.</paragraph>
+<paragraph role="heading" id="hd_id3147287" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153770" xml-lang="en-US" l10n="U">sub ExampleMod</paragraph>
+<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U">print 10 mod 2.5 REM returns 0</paragraph>
+<paragraph role="paragraph" id="par_id3146922" xml-lang="en-US" l10n="U">print 10 / 2.5 REM returns 4</paragraph>
+<paragraph role="paragraph" id="par_id3145273" xml-lang="en-US" l10n="U">print 10 mod 5 REM returns 0</paragraph>
+<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U">print 10 / 5 REM returns 2</paragraph>
+<paragraph role="paragraph" id="par_id3149483" xml-lang="en-US" l10n="U">print 5 mod 10 REM returns 5</paragraph>
+<paragraph role="paragraph" id="par_id3151114" xml-lang="en-US" l10n="U">print 5 / 10 REM returns 0.5</paragraph>
+<paragraph role="paragraph" id="par_id3154013" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

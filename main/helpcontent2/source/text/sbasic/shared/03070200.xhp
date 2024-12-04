@@ -33,26 +33,24 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3147573">
 <bookmark_value>"*" operator (mathematical)</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3147573" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03070200.xhp">"*" Operator [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3154347" xml-lang="en-US" l10n="U" oldref="2">Multiplies two values.</paragraph>
+<paragraph role="heading" id="hd_id3147573" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03070200.xhp">"*" Operator [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3154347" xml-lang="en-US" l10n="U">Multiplies two values.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3148946" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U" oldref="4">Result = Expression1 * Expression2</paragraph>
-<paragraph role="heading" id="hd_id3150400" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U" oldref="6">
-<emph>Result:</emph> Any numeric expression that records the result of a multiplication.</paragraph>
-<paragraph role="paragraph" id="par_id3154685" xml-lang="en-US" l10n="U" oldref="7">
-<emph>Expression1, Expression2:</emph> Any numeric expressions that you want to multiply.</paragraph>
-<paragraph role="heading" id="hd_id3153968" xml-lang="en-US" level="2" l10n="U" oldref="8">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="9">Sub ExampleMultiplication1</paragraph>
-<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U" oldref="10">Print 5 * 5</paragraph>
-<paragraph role="paragraph" id="par_id3153091" xml-lang="en-US" l10n="U" oldref="11">End sub</paragraph>
-<paragraph role="paragraph" id="par_id3149667" xml-lang="en-US" l10n="U" oldref="13">Sub ExampleMultiplication2</paragraph>
-<paragraph role="paragraph" id="par_id3151113" xml-lang="en-US" l10n="U" oldref="14">Dim iValue1 as Integer</paragraph>
-<paragraph role="paragraph" id="par_id3147434" xml-lang="en-US" l10n="U" oldref="15">Dim iValue2 as Integer</paragraph>
-<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U" oldref="16">iValue1 = 5</paragraph>
-<paragraph role="paragraph" id="par_id3147348" xml-lang="en-US" l10n="U" oldref="17">iValue2 = 10</paragraph>
-<paragraph role="paragraph" id="par_id3149261" xml-lang="en-US" l10n="U" oldref="18">Print iValue1 * iValue2</paragraph>
-<paragraph role="paragraph" id="par_id3148646" xml-lang="en-US" l10n="U" oldref="19">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3148946" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U">Result = Expression1 * Expression2</paragraph>
+<paragraph role="heading" id="hd_id3150400" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U"><emph>Result:</emph> Any numeric expression that records the result of a multiplication.</paragraph>
+<paragraph role="paragraph" id="par_id3154685" xml-lang="en-US" l10n="U"><emph>Expression1, Expression2:</emph> Any numeric expressions that you want to multiply.</paragraph>
+<paragraph role="heading" id="hd_id3153968" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3155132" xml-lang="en-US" l10n="U">Sub ExampleMultiplication1</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U">Print 5 * 5</paragraph>
+<paragraph role="paragraph" id="par_id3153091" xml-lang="en-US" l10n="U">End sub</paragraph>
+<paragraph role="paragraph" id="par_id3149667" xml-lang="en-US" l10n="U">Sub ExampleMultiplication2</paragraph>
+<paragraph role="paragraph" id="par_id3151113" xml-lang="en-US" l10n="U">Dim iValue1 as Integer</paragraph>
+<paragraph role="paragraph" id="par_id3147434" xml-lang="en-US" l10n="U">Dim iValue2 as Integer</paragraph>
+<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U">iValue1 = 5</paragraph>
+<paragraph role="paragraph" id="par_id3147348" xml-lang="en-US" l10n="U">iValue2 = 10</paragraph>
+<paragraph role="paragraph" id="par_id3149261" xml-lang="en-US" l10n="U">Print iValue1 * iValue2</paragraph>
+<paragraph role="paragraph" id="par_id3148646" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>
