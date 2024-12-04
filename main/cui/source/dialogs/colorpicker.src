@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "colorpicker.hrc"
 
 #define DLG_WIDTH 295
@@ -104,7 +102,7 @@ ModalDialog RID_CUI_DIALOG_COLORPICKER
 		HelpID = "cui:Control:ColorPicker:ColorPreview" ;
 		Pos = MAP_APPFONT ( 6, 6 + CHOOSER_SIZE + 3 ) ;
 		Size = MAP_APPFONT ( CHOOSER_SIZE, PREVIEW_HEIGHT ) ;
-		Border = FALSE;
+		Border = FALSE ;
 	};
 
 	Control CT_PREVIOUS
@@ -134,7 +132,7 @@ ModalDialog RID_CUI_DIALOG_COLORPICKER
 	{
 		HelpID = "cui:ImageButton:ColorPicker:Picker" ;
 		Pos = MAP_APPFONT ( CONTROL_AREA_X - 2 - SLIDER_WIDTH + 4, 6 + CHOOSER_SIZE + 3 ) ;
-		Size = MAP_APPFONT( SLIDER_WIDTH - 8, PREVIEW_HEIGHT ) ;
+		Size = MAP_APPFONT ( SLIDER_WIDTH - 8, PREVIEW_HEIGHT ) ;
 		TabStop = TRUE ;
 		QuickHelpText [ en-US ] = "Pick a color from the document" ;
 		ButtonImage = Image
@@ -156,7 +154,7 @@ ModalDialog RID_CUI_DIALOG_COLORPICKER
 		HelpID = "cui:RadioButton:ColorPicker:Red" ;
 		Pos = MAP_APPFONT ( CONTROL_AREA_X_RADIO, RGB_Y1+2 ) ;
 		Size = MAP_APPFONT ( RADIO_WIDTH, RADIO_HEIGHT ) ;
-		Group = TRUE;
+		Group = TRUE ;
 	};
 
 	RadioButton CT_GREEN

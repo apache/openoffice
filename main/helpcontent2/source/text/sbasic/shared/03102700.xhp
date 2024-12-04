@@ -33,25 +33,24 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3145136">
 <bookmark_value>IsNumeric function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3145136" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03102700.xhp" name="IsNumeric Function [Runtime]">IsNumeric Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="2">Tests if an expression is a number. If the expression is a <link href="text/sbasic/shared/00000002.xhp#dezimal" name="number">number</link>, the function returns True, otherwise the function returns False.</paragraph>
+<paragraph role="heading" id="hd_id3145136" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03102700.xhp" name="IsNumeric Function [Runtime]">IsNumeric Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U">Tests if an expression is a number. If the expression is a <link href="text/sbasic/shared/00000002.xhp#dezimal" name="number">number</link>, the function returns True, otherwise the function returns False.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3149415" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U" oldref="4">IsNumeric (Var)</paragraph>
-<paragraph role="heading" id="hd_id3148685" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3148944" xml-lang="en-US" l10n="U" oldref="6">Bool</paragraph>
-<paragraph role="heading" id="hd_id3148947" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3154760" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Var:</emph> Any expression that you want to test.</paragraph>
+<paragraph role="heading" id="hd_id3149415" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U">IsNumeric (Var)</paragraph>
+<paragraph role="heading" id="hd_id3148685" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3148944" xml-lang="en-US" l10n="U">Bool</paragraph>
+<paragraph role="heading" id="hd_id3148947" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3154760" xml-lang="en-US" l10n="U"><emph>Var:</emph> Any expression that you want to test.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3149656" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3154367" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleIsNumeric</paragraph>
-<paragraph role="paragraph" id="par_id3156423" xml-lang="en-US" l10n="U" oldref="11">Dim vVar as variant</paragraph>
-<paragraph role="paragraph" id="par_id3154125" xml-lang="en-US" l10n="U" oldref="12">vVar = "ABC"</paragraph>
-<paragraph role="paragraph" id="par_id3147230" xml-lang="en-US" l10n="CHG" oldref="13">Print IsNumeric(vVar) REM Returns False</paragraph>
-<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="14">vVar = "123"</paragraph>
-<paragraph role="paragraph" id="par_id3154910" xml-lang="en-US" l10n="CHG" oldref="15">Print IsNumeric(vVar) REM Returns True</paragraph>
-<paragraph role="paragraph" id="par_id3147289" xml-lang="en-US" l10n="U" oldref="16">end sub</paragraph>
+<paragraph role="heading" id="hd_id3149656" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154367" xml-lang="en-US" l10n="U">Sub ExampleIsNumeric</paragraph>
+<paragraph role="paragraph" id="par_id3156423" xml-lang="en-US" l10n="U">Dim vVar as variant</paragraph>
+<paragraph role="paragraph" id="par_id3154125" xml-lang="en-US" l10n="U">vVar = "ABC"</paragraph>
+<paragraph role="paragraph" id="par_id3147230" xml-lang="en-US" l10n="CHG">Print IsNumeric(vVar) REM Returns False</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U">vVar = "123"</paragraph>
+<paragraph role="paragraph" id="par_id3154910" xml-lang="en-US" l10n="CHG">Print IsNumeric(vVar) REM Returns True</paragraph>
+<paragraph role="paragraph" id="par_id3147289" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

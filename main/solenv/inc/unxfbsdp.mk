@@ -21,28 +21,11 @@
 
 
 
-#
-# FreeBSD/i386 specific defines
-#
- 
-CDEFS+=-DX86
+# mk file for Unix FreeBSD 64Bit PowerPC using GCC, inherit from
+# ppc and add some flags
 
-# architecture dependent flags for the C and C++ compiler that can be changed by
-# exporting the variable ARCH_FLAGS="..." in the shell, which is used to start build
-ARCH_FLAGS*=-mtune=pentiumpro
+.INCLUDE : unxfbsdppc.mk
 
-# Compiler flags for enabling optimizations
-.IF "$(PRODUCT)"!=""
-# Clang -Os optimization seems to be buggy, use -O2
-.IF "$(COM)"=="CLANG"
-CFLAGSOPT=-O2 -fno-unroll-loops -fno-inline -fno-strict-aliasing	# optimizing for products
-.ELSE
-CFLAGSOPT=-O2 -fno-unroll-loops -finline-limit=0 -fno-inline -fno-default-inline -fno-strict-aliasing		# optimizing for products
-.ENDIF
-.ELSE 	# "$(PRODUCT)"!=""
-CFLAGSOPT= 					# no optimizing for non products
-.ENDIF	# "$(PRODUCT)"!=""
-
-# platform specific identifier for shared libs
-DLLPOST=.so
-DLLPOSTFIX=
+CDEFS+=-DPOWERPC64
+CFLAGSCXX+=-mminimal-toc
+BUILD64=1

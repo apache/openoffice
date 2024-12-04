@@ -44,6 +44,13 @@
 #define STACKTYPE "Linux"
 #endif
 
+#ifdef FREEBSD
+#include <execinfo.h>
+#include <link.h>
+#define INCLUDE_BACKTRACE
+#define STACKTYPE "FreeBSD"
+#endif
+
 #ifdef SOLARIS
 
 #include "backtrace.h"

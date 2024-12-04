@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_framework.hxx"
@@ -28,7 +26,6 @@
 
 #include "backingwindow.hxx"
 
-//_______________________________________________
 // own includes
 #include <threadhelp/readguard.hxx>
 #include <threadhelp/writeguard.hxx>
@@ -42,7 +39,6 @@
 #include <helpid.hrc>
 #endif
 
-//_______________________________________________
 // interface includes
 #include <com/sun/star/beans/NamedValue.hpp>
 #include <com/sun/star/util/XURLTransformer.hpp>
@@ -54,7 +50,6 @@
 #include <com/sun/star/awt/KeyModifier.hpp>
 #include <com/sun/star/frame/XLayoutManager.hpp>
 
-//_______________________________________________
 // other includes
 #include <cppuhelper/typeprovider.hxx>
 #include <cppuhelper/factory.hxx>
@@ -103,7 +98,7 @@ BackingComp::~BackingComp()
     Some interfaces are supported by his class directly, but some other ones are
     used by aggregation. An instance of this class must provide some window interfaces.
     But it must represent a VCL window behind such interfaces too! So we use an internal
-    saved window member to ask it for it's interfaces and return it. But we must be aware then,
+    saved window member to ask it for its interfaces and return it. But we must be aware then,
     that it can be destroyed from outside too ...
 
     @param  aType
@@ -192,7 +187,7 @@ css::uno::Sequence< css::uno::Type > SAL_CALL BackingComp::getTypes()
     {
         /* GLOBAL SAFE { */
         ::osl::MutexGuard aGlobalLock(::osl::Mutex::getGlobalMutex());
-        // Control these pointer again ... it can be, that another instance will be faster then this one!
+        // Control these pointer again ... it can be, that another instance will be faster than this one!
         if (!pTypeCollection)
         {
             /* LOCAL SAFE { */
@@ -239,7 +234,7 @@ css::uno::Sequence< sal_Int8 > SAL_CALL BackingComp::getImplementationId()
     {
         /* GLOBAL SAFE { */
         ::osl::MutexGuard aLock(::osl::Mutex::getGlobalMutex());
-        // Control these pointer again ... it can be, that another instance will be faster then this one!
+        // Control these pointer again ... it can be, that another instance will be faster than this one!
         if (!pID)
         {
             static ::cppu::OImplementationId aID(sal_False);
@@ -376,7 +371,7 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL BackingComp::impl_createIns
 /** returns a new factory instance for instances of this class.
 
     It uses a helper class of the cppuhelper project as factory.
-    It will be initialized with all necessary informations and
+    It will be initialized with all necessary information and
     will be able afterwards to create instance of this class.
     This factory call us back inside our method impl_createInstance().
     So we can create and initialize ourself. Only filtering of creation
@@ -406,7 +401,7 @@ css::uno::Reference< css::lang::XSingleServiceFactory > BackingComp::impl_create
 
     We has to use the container window of this frame as parent window of our own component window.
     But it's not allowed to work with it really. May another component used it too.
-    Currently we need it only to create our child component window and support it's
+    Currently we need it only to create our child component window and support its
     interfaces inside our queryInterface() method. The user of us must have e.g. the
     XWindow interface of it to be able to call setComponent(xWindow,xController) at the
     frame!
@@ -424,7 +419,7 @@ css::uno::Reference< css::lang::XSingleServiceFactory > BackingComp::impl_create
             xBackingComp);
 
         // attach controller to the frame
-        // We will use it's container window, to create
+        // We will use its container window, to create
         // the component window. From now we offer the window interfaces!
         xBackingComp.attachFrame(xFrame);
 
@@ -476,7 +471,7 @@ void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::f
                 ::rtl::OUString::createFromAscii("instance seems to be not or wrong initialized"),
                 static_cast< ::cppu::OWeakObject* >(this));
 
-    // safe the frame reference
+    // save the frame reference
     m_xFrame = xFrame;
 
     // establish drag&drop mode
@@ -494,7 +489,7 @@ void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::f
         }
     }
 
-    // initialize the component and it's parent window
+    // initialize the component and its parent window
     css::uno::Reference< css::awt::XWindow > xParentWindow = xFrame->getContainerWindow();
     WorkWindow* pParent = (WorkWindow*)VCLUnoHelper::GetWindow(xParentWindow);
     Window*     pWindow = VCLUnoHelper::GetWindow(m_xWindow);
@@ -509,7 +504,7 @@ void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::f
     // create the menu bar for the backing component
     css::uno::Reference< css::beans::XPropertySet > xPropSet(m_xFrame, css::uno::UNO_QUERY_THROW);
     css::uno::Reference< css::frame::XLayoutManager > xLayoutManager;
-    xPropSet->getPropertyValue(FRAME_PROPNAME_LAYOUTMANAGER) >>= xLayoutManager; 
+    xPropSet->getPropertyValue(FRAME_PROPNAME_LAYOUTMANAGER) >>= xLayoutManager;
     if (xLayoutManager.is())
     {
         xLayoutManager->lock();
@@ -521,11 +516,11 @@ void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::f
         xLayoutManager->showElement  ( DECLARE_ASCII( "private:resource/statusbar/statusbar" ));
         */
         xLayoutManager->unlock();
-    }        
+    }
 
     // set help ID for our canvas
     pWindow->SetHelpId(HID_BACKINGWINDOW);
-    
+
     // inform BackingWindow about frame
     BackingWindow* pBack = dynamic_cast<BackingWindow*>(pWindow );
     if( pBack )
@@ -540,7 +535,7 @@ void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::f
 /** not supported.
 
     This component does not know any model. It will be represented by a window and
-    it's controller only.
+    its controller only.
 
     return  <FALSE/> every time.
  */
@@ -556,7 +551,7 @@ sal_Bool SAL_CALL BackingComp::attachModel( /*IN*/ const css::uno::Reference< cs
 /** not supported.
 
     This component does not know any model. It will be represented by a window and
-    it's controller only.
+    its controller only.
 
     return  An empty reference every time.
  */
@@ -614,9 +609,9 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL BackingComp::getFrame()
 
 //_______________________________________________
 
-/** ask controller for it's current working state.
+/** ask controller for its current working state.
 
-    If somehwere whish to close this component, it must suspend the controller before.
+    If somehwere wishes to close this component, it must suspend the controller before.
     That will be a chance for it to disagree with that AND show any UI for a possible
     UI user.
 
@@ -656,7 +651,7 @@ void SAL_CALL BackingComp::disposing( /*IN*/ const css::lang::EventObject& aEven
 {
     // Attention: dont free m_pAccExec here! see comments inside dtor and
     // keyPressed() for further details.
-    
+
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
 
@@ -676,8 +671,8 @@ void SAL_CALL BackingComp::disposing( /*IN*/ const css::lang::EventObject& aEven
 /** kill this instance.
 
     It can be called from our owner frame only. But there is no possibility to check the calli.
-    We have to release all our internal used ressources and die. From this point we can throw
-    DisposedExceptions for every further interface request ... but current implementation doesn`t do so ...
+    We have to release all our internal used resources and die. From this point we can throw
+    DisposedExceptions for every further interface request ... but current implementation doesn't do so ...
 
 */
 
@@ -748,7 +743,7 @@ void SAL_CALL BackingComp::dispose()
                 not used.
 
     @throw  ::com::sun::star::uno::RuntimeException
-                because the listener expect to be holded alive by this container.
+                because the listener expect to be held alive by this container.
                 We must inform it about this unsupported feature.
  */
 
@@ -778,20 +773,20 @@ void SAL_CALL BackingComp::removeEventListener( /*IN*/ const css::uno::Reference
 //_______________________________________________
 
 /**
-    force initialiation for this component.
+    force initialization for this component.
 
     Inside attachFrame() we created our component window. But it was not allowed there, to
-    initialitze it. E.g. the menu must be set at the container window of the frame, which
+    initialize it. E.g. the menu must be set at the container window of the frame, which
     is our parent window. But may at that time another component used it.
     That's why our creator has to inform us, when it's time to initialize us really.
-    Currently only calling of this method must be done. But further implementatoins
+    Currently only calling of this method must be done. But further implementations
     can use special in parameter to configure this initialization ...
 
     @param  lArgs
                 currently not used
 
     @throw  com::sun::star::uno::RuntimeException
-                if some ressources are missing
+                if some resources are missing
                 Means if may be attachedFrame() wasn't called before.
  */
 
@@ -835,7 +830,7 @@ void SAL_CALL BackingComp::initialize( /*IN*/ const css::uno::Sequence< css::uno
         xBroadcaster->addEventListener(static_cast< css::lang::XEventListener* >(this));
 
     m_xWindow->setVisible(sal_True);
-    
+
     aWriteLock.unlock();
     /* } SAFE */
 }
@@ -862,9 +857,11 @@ void SAL_CALL BackingComp::keyReleased( /*IN*/ const css::awt::KeyEvent& )
         Please use keyPressed() instead of this method. Otherwise it would be possible, that
         - a key input may be first switch to the backing mode
         - and this component register itself as key listener too
-        - and its first event will be a keyRealeased() for the already well known event, which switched to the backing mode!
+        - and its first event will be a keyReleased() for the already well known event, which switched to the backing mode!
         So it will be handled twice! document => backing mode => exit app ...
      */
 }
 
 } // namespace framework
+
+/* vim: set noet sw=4 ts=4: */

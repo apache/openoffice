@@ -125,7 +125,7 @@ public class GSIReader extends DataReader {
      * Read the next GSIBlock and return the data
      * 
      * @return A Map containing the data of the read GSIBlock the keys for the language depending data are the language id (numeric) the 
-     * single language  are acessible with the keys "BlockNr", "resType", "languageNr", "status","content".
+     * single language are accessible with the keys "BlockNr", "resType", "languageNr", "status", "content".
      * 
      * @throws IOException
      */

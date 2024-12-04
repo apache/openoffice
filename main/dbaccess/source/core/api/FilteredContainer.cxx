@@ -58,7 +58,7 @@ namespace dbaccess
 sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std::vector< WildCard >& _rOut)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "api", "Ocke.Janssen@sun.com", "OFilteredContainer::createWildCardVector" );	
-	// for wildcard search : remove all table filters which are a wildcard expression and build a WilCard
+	// for wildcard search : remove all table filters which are a wildcard expression and build a WildCard
 	// for them
 	::rtl::OUString* pTableFilters = _rTableFilter.getArray();
 	::rtl::OUString* pEnd		   = pTableFilters + _rTableFilter.getLength();
@@ -190,7 +190,7 @@ sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std
         }
         else
 		{
-			// for wildcard search : remove all table filters which are a wildcard expression and build a WilCard
+			// for wildcard search : remove all table filters which are a wildcard expression and build a WildCard
 			// for them
 			::std::vector< WildCard > aWildCardTableFilter;
 			Sequence< ::rtl::OUString > aNonWildCardTableFilter = _tableFilter;
@@ -314,7 +314,7 @@ sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std
 		Sequence< ::rtl::OUString > aTableFilter(_rTableFilter);
 		sal_Int32	nTableFilterLen = aTableFilter.getLength();
 
-	    // for wildcard search : remove all table filters which are a wildcard expression and build a WilCard
+	    // for wildcard search : remove all table filters which are a wildcard expression and build a WildCard
 	    // for them
 	    ::std::vector< WildCard > aWCSearch;
 	    nTableFilterLen = createWildCardVector(aTableFilter,aWCSearch);
