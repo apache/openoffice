@@ -33,23 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3146958">
 <bookmark_value>Const statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3146958" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03100700.xhp" name="Const Statement [Runtime]">Const Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3154143" xml-lang="en-US" l10n="U" oldref="2">Defines a string as a constant.</paragraph>
+<paragraph role="heading" id="hd_id3146958" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03100700.xhp" name="Const Statement [Runtime]">Const Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3154143" xml-lang="en-US" l10n="U">Defines a string as a constant.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3150670" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U" oldref="4">Const Text = Expression</paragraph>
-<paragraph role="heading" id="hd_id3147530" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U" oldref="6">
-<emph>Text:</emph> Any constant name that follows the standard variable naming conventions.</paragraph>
-<paragraph role="paragraph" id="par_id3147264" xml-lang="en-US" l10n="U" oldref="7">A constant is a variable that helps to improve the readability of a program. Constants are not defined as a specific type of variable, but rather are used as placeholders in the code. You can only define a constant once and it cannot be modified. Use the following statement to define a constant:</paragraph>
-<paragraph role="paragraph" id="par_id3150542" xml-lang="en-US" l10n="U" oldref="8">CONST ConstName=Expression</paragraph>
-<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U" oldref="9">The type of expression is irrelevant. If a program is started, $[officename] Basic converts the program code internally so that each time a constant is used, the defined expression replaces it.</paragraph>
-<paragraph role="heading" id="hd_id3154366" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3145420" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleConst</paragraph>
-<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U" oldref="12">Const iVar = 1964</paragraph>
-<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="13">Msgbox iVar</paragraph>
-<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U" oldref="14">Const sVar = "Program", dVar As Double = 1.00</paragraph>
-<paragraph role="paragraph" id="par_id3149560" xml-lang="en-US" l10n="U" oldref="15">Msgbox sVar &amp; " " &amp; dVar</paragraph>
-<paragraph role="paragraph" id="par_id3153368" xml-lang="en-US" l10n="U" oldref="16">end sub</paragraph>
+<paragraph role="heading" id="hd_id3150670" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U">Const Text = Expression</paragraph>
+<paragraph role="heading" id="hd_id3147530" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U"><emph>Text:</emph> Any constant name that follows the standard variable naming conventions.</paragraph>
+<paragraph role="paragraph" id="par_id3147264" xml-lang="en-US" l10n="U">A constant is a variable that helps to improve the readability of a program. Constants are not defined as a specific type of variable, but rather are used as placeholders in the code. You can only define a constant once and it cannot be modified. Use the following statement to define a constant:</paragraph>
+<paragraph role="paragraph" id="par_id3150542" xml-lang="en-US" l10n="U">CONST ConstName=Expression</paragraph>
+<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U">The type of expression is irrelevant. If a program is started, $[officename] Basic converts the program code internally so that each time a constant is used, the defined expression replaces it.</paragraph>
+<paragraph role="heading" id="hd_id3154366" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3145420" xml-lang="en-US" l10n="U">Sub ExampleConst</paragraph>
+<paragraph role="paragraph" id="par_id3154217" xml-lang="en-US" l10n="U">Const iVar = 1964</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U">Msgbox iVar</paragraph>
+<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U">Const sVar = "Program", dVar As Double = 1.00</paragraph>
+<paragraph role="paragraph" id="par_id3149560" xml-lang="en-US" l10n="U">Msgbox sVar &amp; " " &amp; dVar</paragraph>
+<paragraph role="paragraph" id="par_id3153368" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>
