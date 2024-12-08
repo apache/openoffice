@@ -122,7 +122,7 @@ void SdModule::Execute(SfxRequest& rReq)
 
 		case SID_AUTOSPELL_CHECK:
 		{
-			// automatische Rechtschreibpruefung
+			// automatische Rechtschreibprüfung
 			const SfxPoolItem* pItem;
 			if( pSet && SFX_ITEM_SET == pSet->GetItemState(
 						SID_AUTOSPELL_CHECK, sal_False, &pItem ) )
@@ -303,7 +303,7 @@ void SdModule::OutlineToImpress (SfxRequest& rRequest)
 
 				if (pViewSh)
 				{
-					// AutoLayouts muessen fertig sein
+					// AutoLayouts müssen fertig sein
 					pDoc->StopWorkStartupDelay();
 
 					SfxViewFrame* pViewFrame = pViewSh->GetViewFrame();
@@ -346,7 +346,7 @@ static bool bOnce = false;
 
 void SdModule::GetState(SfxItemSet& rItemSet)
 {
-	// Autopilot waehrend der Praesentation disablen
+	// Autopilot während der Präsentation disablen
 	if (rItemSet.GetItemState(SID_SD_AUTOPILOT) != SFX_ITEM_UNKNOWN)
 	{
 		if (!SvtModuleOptions().IsImpress())
@@ -797,7 +797,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 			if( pPrinter && pPrinter->IsValid())
 			{
 				// Der Printer gibt leider kein exaktes
-				// Format (z.B. A4) zurueck
+				// Format (z.B. A4) zurück
 				Size aSize(pPrinter->GetPaperSize());
 				Paper ePaper = SvxPaperInfo::GetSvxPaper( aSize, MAP_100TH_MM, sal_True);
 
