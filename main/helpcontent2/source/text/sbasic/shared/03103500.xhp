@@ -33,30 +33,30 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149798">
 <bookmark_value>Static statement</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3149798" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03103500.xhp" name="Static Statement [Runtime]">Static Statement [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3153311" xml-lang="en-US" l10n="U" oldref="2">Declares a variable or an array at the procedure level within a subroutine or a function, so that the values of the variable or the array are retained after exiting the subroutine or function. Dim statement conventions are also valid.</paragraph>
+<paragraph role="heading" id="hd_id3149798" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03103500.xhp" name="Static Statement [Runtime]">Static Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153311" xml-lang="en-US" l10n="U">Declares a variable or an array at the procedure level within a subroutine or a function, so that the values of the variable or the array are retained after exiting the subroutine or function. Dim statement conventions are also valid.</paragraph>
 </section>
-<paragraph role="warning" id="par_id3147264" xml-lang="en-US" l10n="U" oldref="3">The <emph>Static statement</emph> cannot be used to define variable arrays. Arrays must be specified according to a fixed size.</paragraph>
-<paragraph role="heading" id="hd_id3149657" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U" oldref="5">Static VarName[(start To end)] [As VarType], VarName2[(start To end)] [As VarType], ...</paragraph>
-<paragraph role="heading" id="hd_id3148452" xml-lang="en-US" level="2" l10n="U" oldref="6">Example:</paragraph>
-<paragraph role="code" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="7">Sub ExampleStatic</paragraph>
+<paragraph role="warning" id="par_id3147264" xml-lang="en-US" l10n="U">The <emph>Static statement</emph> cannot be used to define variable arrays. Arrays must be specified according to a fixed size.</paragraph>
+<paragraph role="heading" id="hd_id3149657" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U">Static VarName[(start To end)] [As VarType], VarName2[(start To end)] [As VarType], ...</paragraph>
+<paragraph role="heading" id="hd_id3148452" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="code" id="par_id3156214" xml-lang="en-US" l10n="U">Sub ExampleStatic</paragraph>
 <paragraph role="code" id="par_id1940061" xml-lang="en-US" l10n="NEW">Dim iCount as Integer, iResult as Integer</paragraph>
 <paragraph role="code" id="par_id878627" xml-lang="en-US" l10n="NEW">For iCount = 0 to 2</paragraph>
 <paragraph role="code" id="par_id7914059" xml-lang="en-US" l10n="NEW">iResult = InitVar()</paragraph>
 <paragraph role="code" id="par_id299691" xml-lang="en-US" l10n="NEW">Next iCount</paragraph>
-<paragraph role="code" id="par_id3150870" xml-lang="en-US" l10n="CHG" oldref="11">MsgBox iResult,0,"The answer is"</paragraph>
-<paragraph role="code" id="par_id3153771" xml-lang="en-US" l10n="U" oldref="13">End Sub</paragraph>
-<paragraph role="code" id="par_id3151115" xml-lang="en-US" l10n="U" oldref="15">REM Function for initialization of the static variable</paragraph>
-<paragraph role="code" id="par_id3148618" xml-lang="en-US" l10n="U" oldref="16">Function InitVar() As Integer</paragraph>
-<paragraph role="code" id="par_id3154217" xml-lang="en-US" l10n="U" oldref="8">Static iInit As Integer</paragraph>
+<paragraph role="code" id="par_id3150870" xml-lang="en-US" l10n="CHG">MsgBox iResult,0,"The answer is"</paragraph>
+<paragraph role="code" id="par_id3153771" xml-lang="en-US" l10n="U">End Sub</paragraph>
+<paragraph role="code" id="par_id3151115" xml-lang="en-US" l10n="U">REM Function for initialization of the static variable</paragraph>
+<paragraph role="code" id="par_id3148618" xml-lang="en-US" l10n="U">Function InitVar() As Integer</paragraph>
+<paragraph role="code" id="par_id3154217" xml-lang="en-US" l10n="U">Static iInit As Integer</paragraph>
 <paragraph role="code" id="par_id1057161" xml-lang="en-US" l10n="NEW">Const iMinimum as Integer = 40 REM minimum return value of this function</paragraph>
 <paragraph role="code" id="par_id580462" xml-lang="en-US" l10n="NEW">if iInit = 0 then REM check if initialized</paragraph>
 <paragraph role="code" id="par_id7382732" xml-lang="en-US" l10n="NEW">iInit = iMinimum</paragraph>
 <paragraph role="code" id="par_id5779900" xml-lang="en-US" l10n="NEW">else</paragraph>
-<paragraph role="code" id="par_id3151041" xml-lang="en-US" l10n="U" oldref="10">iInit = iInit + 1</paragraph>
+<paragraph role="code" id="par_id3151041" xml-lang="en-US" l10n="U">iInit = iInit + 1</paragraph>
 <paragraph role="code" id="par_id5754264" xml-lang="en-US" l10n="NEW">end if</paragraph>
 <paragraph role="code" id="par_id6529435" xml-lang="en-US" l10n="NEW">InitVar = iInit</paragraph>
-<paragraph role="code" id="par_id3150487" xml-lang="en-US" l10n="U" oldref="18">End Function</paragraph>
+<paragraph role="code" id="par_id3150487" xml-lang="en-US" l10n="U">End Function</paragraph>
 </body>
 </helpdocument>
