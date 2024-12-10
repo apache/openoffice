@@ -45,7 +45,7 @@ published interface XInteractionSupplyAuthentication2 : XInteractionSupplyAuthen
 {
     //-------------------------------------------------------------------------
     /** Specifies if 'system credentials' can be obtained and used by the issuer
-        of the authentiction request.
+        of the authentication request.
 
         @param Default
         Returns the default behavior for system credentials handling (to be
