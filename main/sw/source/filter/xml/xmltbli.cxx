@@ -2376,7 +2376,7 @@ SwTableLine *SwXMLTableContext::MakeTableLine( SwTableBox *pUpper,
                 {
                     // If the table resulting table fragment could be divided
                     // into lines if splitting behind the current column, but
-                    // this doesn't apply for thr next column, we split begind
+                    // this doesn't apply for thr next column, we split behind
                     // the current column. This applies for the last column,
                     // too.
                     // If the resulting box cannot be splitted into rows,
