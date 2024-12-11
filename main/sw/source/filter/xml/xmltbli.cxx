@@ -2375,7 +2375,7 @@ SwTableLine *SwXMLTableContext::MakeTableLine( SwTableBox *pUpper,
                 else if ( bHasSubTables )
                 {
                     // If the table resulting table fragment could be divided
-                    // into lines if spllitting behind the current column, but
+                    // into lines if splitting behind the current column, but
                     // this doesn't apply for thr next column, we split begind
                     // the current column. This applies for the last column,
                     // too.
@@ -2754,9 +2754,9 @@ void SwXMLTableContext::MakeTable()
             // #78246#: For text::HoriOrientation::NONE we would prefere to use the sum
 			// of the relative column widths as reference width.
 			// Unfortunately this works only if this sum interpreted as
-			// twip value is larger than the space that is avaialable.
+			// twip value is larger than the space that is available.
 			// We don't know that space, so we have to use USHRT_MAX, too.
-			// Even if a size is speczified, it will be ignored!
+			// Even if a size is specified, it will be ignored!
 			nWidth = USHRT_MAX;
 			break;
 		default:
