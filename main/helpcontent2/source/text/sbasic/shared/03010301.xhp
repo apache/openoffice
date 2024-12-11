@@ -33,26 +33,25 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149180">
 <bookmark_value>Blue function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3149180" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03010301.xhp" name="Blue Function [Runtime]">Blue Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="U" oldref="2">Returns the blue component of the specified color code.</paragraph>
+<paragraph role="heading" id="hd_id3149180" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03010301.xhp" name="Blue Function [Runtime]">Blue Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="U">Returns the blue component of the specified color code.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3149670" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="code" id="par_id3149457" xml-lang="en-US" l10n="U" oldref="4">Blue (Color As Long)</paragraph>
-<paragraph role="heading" id="hd_id3149656" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U" oldref="6">Integer</paragraph>
-<paragraph role="heading" id="hd_id3156423" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameter:</paragraph>
-<paragraph role="paragraph" id="par_id3150448" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Color value</emph>: Long integer expression that specifies any <link href="text/sbasic/shared/00000003.xhp#farbcodes" name="color code">color code</link> for which to return the blue component.</paragraph>
+<paragraph role="heading" id="hd_id3149670" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="code" id="par_id3149457" xml-lang="en-US" l10n="U">Blue (Color As Long)</paragraph>
+<paragraph role="heading" id="hd_id3149656" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3154365" xml-lang="en-US" l10n="U">Integer</paragraph>
+<paragraph role="heading" id="hd_id3156423" xml-lang="en-US" level="2" l10n="U">Parameter:</paragraph>
+<paragraph role="paragraph" id="par_id3150448" xml-lang="en-US" l10n="U"><emph>Color value</emph>: Long integer expression that specifies any <link href="text/sbasic/shared/00000003.xhp#farbcodes" name="color code">color code</link> for which to return the blue component.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3153091" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="code" id="par_id3153143" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleColor</paragraph>
-<paragraph role="code" id="par_id3149664" xml-lang="en-US" l10n="U" oldref="11">Dim lVar As Long</paragraph>
-<paragraph role="code" id="par_id3148576" xml-lang="en-US" l10n="U" oldref="12">lVar = rgb(128,0,200)</paragraph>
-<paragraph role="code" id="par_id3154012" xml-lang="en-US" l10n="U" oldref="13">MsgBox "The color " &amp; lVar &amp; " consists of:" &amp; Chr(13) &amp;_</paragraph>
-<paragraph role="code" id="par_id3148645" xml-lang="en-US" l10n="U" oldref="14">"red= " &amp; Red(lVar) &amp; Chr(13)&amp;_</paragraph>
-<paragraph role="code" id="par_id3159155" xml-lang="en-US" l10n="U" oldref="15">"green= " &amp; Green(lVar) &amp; Chr(13)&amp;_</paragraph>
-<paragraph role="code" id="par_id3147319" xml-lang="en-US" l10n="U" oldref="16">"blue= " &amp; Blue(lVar) &amp; Chr(13) , 64,"colors"</paragraph>
-<paragraph role="code" id="par_id3147434" xml-lang="en-US" l10n="U" oldref="17">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3153091" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="code" id="par_id3153143" xml-lang="en-US" l10n="U">Sub ExampleColor</paragraph>
+<paragraph role="code" id="par_id3149664" xml-lang="en-US" l10n="U">Dim lVar As Long</paragraph>
+<paragraph role="code" id="par_id3148576" xml-lang="en-US" l10n="U">lVar = rgb(128,0,200)</paragraph>
+<paragraph role="code" id="par_id3154012" xml-lang="en-US" l10n="U">MsgBox "The color " &amp; lVar &amp; " consists of:" &amp; Chr(13) &amp;_</paragraph>
+<paragraph role="code" id="par_id3148645" xml-lang="en-US" l10n="U">"red= " &amp; Red(lVar) &amp; Chr(13)&amp;_</paragraph>
+<paragraph role="code" id="par_id3159155" xml-lang="en-US" l10n="U">"green= " &amp; Green(lVar) &amp; Chr(13)&amp;_</paragraph>
+<paragraph role="code" id="par_id3147319" xml-lang="en-US" l10n="U">"blue= " &amp; Blue(lVar) &amp; Chr(13) , 64,"colors"</paragraph>
+<paragraph role="code" id="par_id3147434" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>

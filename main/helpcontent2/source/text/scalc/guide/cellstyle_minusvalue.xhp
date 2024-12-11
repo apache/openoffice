@@ -36,19 +36,18 @@
 <bookmark_value>colors;negative numbers</bookmark_value>
 <bookmark_value>number formats;colors for negative numbers</bookmark_value>
 </bookmark><comment>MW made "negative numbers;" a one level entry</comment><comment>MW changed "numbers formats;" and "colors;"</comment>
-<paragraph xml-lang="en-US" id="hd_id3147434" role="heading" level="1" l10n="U"
-oldref="31"><variable id="cellstyle_minusvalue"><link href="text/scalc/guide/cellstyle_minusvalue.xhp" name="Highlighting Negative Numbers">Highlighting Negative Numbers</link>
+<paragraph xml-lang="en-US" id="hd_id3147434" role="heading" level="1" l10n="U"><variable id="cellstyle_minusvalue"><link href="text/scalc/guide/cellstyle_minusvalue.xhp" name="Highlighting Negative Numbers">Highlighting Negative Numbers</link>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="par_id3153878" role="paragraph" l10n="U" oldref="33">You can format cells with a number format that highlights negative numbers in red. Alternatively, you can define your own number format in which negative numbers are highlighted in other colors.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153878" role="paragraph" l10n="U">You can format cells with a number format that highlights negative numbers in red. Alternatively, you can define your own number format in which negative numbers are highlighted in other colors.</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3155600" role="listitem" l10n="U" oldref="34">Select the cells and choose <emph>Format - Cells</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155600" role="listitem" l10n="U">Select the cells and choose <emph>Format - Cells</emph>.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3146969" role="listitem" l10n="U" oldref="35">On the <emph>Numbers</emph> tab, select a number format and mark <emph>Negative numbers red</emph> check box. Click <emph>OK</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146969" role="listitem" l10n="U">On the <emph>Numbers</emph> tab, select a number format and mark <emph>Negative numbers red</emph> check box. Click <emph>OK</emph>.</paragraph>
 </listitem>
 </list>
-<paragraph xml-lang="en-US" id="par_id3145640" role="paragraph" l10n="U" oldref="36">The cell number format is defined in two parts. The format for positive numbers and zero is defined in front of the semicolon; after the semicolon the formula for negative numbers is defined. You can change the code (RED) under <item type="menuitem">Format code</item>. For example, instead of RED, enter <item type="literal">YELLOW</item>. If the new code appears in the list after clicking the <item type="menuitem">Add</item> icon, this is a valid entry.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145640" role="paragraph" l10n="U">The cell number format is defined in two parts. The format for positive numbers and zero is defined in front of the semicolon; after the semicolon the formula for negative numbers is defined. You can change the code (RED) under <item type="menuitem">Format code</item>. For example, instead of RED, enter <item type="literal">YELLOW</item>. If the new code appears in the list after clicking the <item type="menuitem">Add</item> icon, this is a valid entry.</paragraph>
 <section id="relatedtopics">
 <embed href="text/scalc/guide/cellstyle_conditional.xhp#cellstyle_conditional"/>
 <embed href="text/scalc/guide/cellstyle_by_formula.xhp#cellstyle_by_formula"/>

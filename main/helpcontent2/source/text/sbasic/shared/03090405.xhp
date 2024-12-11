@@ -33,24 +33,23 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3143270">
 <bookmark_value>FreeLibrary function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090405.xhp" name="FreeLibrary Function [Runtime]">FreeLibrary Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3147559" xml-lang="en-US" l10n="U" oldref="2">Releases DLLs that were loaded by a Declare statement. A released DLL is automatically reloaded if one of its functions is called. See also: <link href="text/sbasic/shared/03090403.xhp" name="Declare">Declare</link></paragraph>
+<paragraph role="heading" id="hd_id3143270" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03090405.xhp" name="FreeLibrary Function [Runtime]">FreeLibrary Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3147559" xml-lang="en-US" l10n="U">Releases DLLs that were loaded by a Declare statement. A released DLL is automatically reloaded if one of its functions is called. See also: <link href="text/sbasic/shared/03090403.xhp" name="Declare">Declare</link></paragraph>
 </section>
-<paragraph role="heading" id="hd_id3148550" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="U" oldref="4">FreeLibrary (LibName As String)</paragraph>
-<paragraph role="heading" id="hd_id3153380" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="6">
-<emph>LibName:</emph> String expression that specifies the name of the DLL.</paragraph>
-<paragraph role="note" id="par_id3146923" xml-lang="en-US" l10n="U" oldref="7">FreeLibrary can only release DLLs that are loaded during Basic runtime.</paragraph>
+<paragraph role="heading" id="hd_id3148550" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3153361" xml-lang="en-US" l10n="U">FreeLibrary (LibName As String)</paragraph>
+<paragraph role="heading" id="hd_id3153380" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3154138" xml-lang="en-US" l10n="U"><emph>LibName:</emph> String expression that specifies the name of the DLL.</paragraph>
+<paragraph role="note" id="par_id3146923" xml-lang="en-US" l10n="U">FreeLibrary can only release DLLs that are loaded during Basic runtime.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3153363" xml-lang="en-US" level="2" l10n="U" oldref="8">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3155855" xml-lang="en-US" l10n="U" oldref="9">Declare Sub MyMessageBeep Lib "user32.dll" Alias "MessageBeep" ( long )</paragraph>
-<paragraph role="paragraph" id="par_id3149664" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleDeclare</paragraph>
-<paragraph role="paragraph" id="par_id3148618" xml-lang="en-US" l10n="U" oldref="12">Dim lValue As Long</paragraph>
-<paragraph role="paragraph" id="par_id3147350" xml-lang="en-US" l10n="U" oldref="13">lValue = 5000</paragraph>
-<paragraph role="paragraph" id="par_id3148648" xml-lang="en-US" l10n="U" oldref="14">MyMessageBeep( lValue )</paragraph>
-<paragraph role="paragraph" id="par_id3145750" xml-lang="en-US" l10n="U" oldref="15">FreeLibrary("user32.dll" )</paragraph>
-<paragraph role="paragraph" id="par_id3149412" xml-lang="en-US" l10n="U" oldref="16">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3153363" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3155855" xml-lang="en-US" l10n="U">Declare Sub MyMessageBeep Lib "user32.dll" Alias "MessageBeep" ( long )</paragraph>
+<paragraph role="paragraph" id="par_id3149664" xml-lang="en-US" l10n="U">Sub ExampleDeclare</paragraph>
+<paragraph role="paragraph" id="par_id3148618" xml-lang="en-US" l10n="U">Dim lValue As Long</paragraph>
+<paragraph role="paragraph" id="par_id3147350" xml-lang="en-US" l10n="U">lValue = 5000</paragraph>
+<paragraph role="paragraph" id="par_id3148648" xml-lang="en-US" l10n="U">MyMessageBeep( lValue )</paragraph>
+<paragraph role="paragraph" id="par_id3145750" xml-lang="en-US" l10n="U">FreeLibrary("user32.dll" )</paragraph>
+<paragraph role="paragraph" id="par_id3149412" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>

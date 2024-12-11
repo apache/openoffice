@@ -33,33 +33,31 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153311">
 <bookmark_value>Right function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120307.xhp" name="Right Function [Runtime]">Right Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U" oldref="2">Returns the rightmost "n" characters of a string expression.</paragraph>
+<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03120307.xhp" name="Right Function [Runtime]">Right Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U">Returns the rightmost "n" characters of a string expression.</paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3149763" xml-lang="en-US" l10n="U" oldref="3">See also: <link href="text/sbasic/shared/03120303.xhp" name="Left Function">Left Function</link>.</paragraph>
-<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3153061" xml-lang="en-US" l10n="CHG" oldref="5">Right (Text As String, n As Long)</paragraph>
-<paragraph role="heading" id="hd_id3145068" xml-lang="en-US" level="2" l10n="U" oldref="6">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U" oldref="7">String</paragraph>
-<paragraph role="heading" id="hd_id3146795" xml-lang="en-US" level="2" l10n="U" oldref="8">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153526" xml-lang="en-US" l10n="U" oldref="9">
-<emph>Text:</emph> Any string expression that you want to return the rightmost characters of.</paragraph>
-<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="CHG" oldref="10">
-<emph>n:</emph> Numeric expression that defines the number of characters that you want to return. If <emph>n</emph> = 0, a zero-length string is returned. The maximum allowed value is 65535.</paragraph>
-<paragraph role="paragraph" id="par_id3158410" xml-lang="en-US" l10n="U" oldref="11">The following example converts a date in YYYY-MM-DD format to the US date format (MM/DD/YYYY).</paragraph>
+<paragraph role="paragraph" id="par_id3149763" xml-lang="en-US" l10n="U">See also: <link href="text/sbasic/shared/03120303.xhp" name="Left Function">Left Function</link>.</paragraph>
+<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3153061" xml-lang="en-US" l10n="CHG">Right (Text As String, n As Long)</paragraph>
+<paragraph role="heading" id="hd_id3145068" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U">String</paragraph>
+<paragraph role="heading" id="hd_id3146795" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153526" xml-lang="en-US" l10n="U"><emph>Text:</emph> Any string expression that you want to return the rightmost characters of.</paragraph>
+<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="CHG"><emph>n:</emph> Numeric expression that defines the number of characters that you want to return. If <emph>n</emph> = 0, a zero-length string is returned. The maximum allowed value is 65535.</paragraph>
+<paragraph role="paragraph" id="par_id3158410" xml-lang="en-US" l10n="U">The following example converts a date in YYYY-MM-DD format to the US date format (MM/DD/YYYY).</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3156212" xml-lang="en-US" level="2" l10n="U" oldref="12">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="U" oldref="13">Sub ExampleUSDate</paragraph>
-<paragraph role="paragraph" id="par_id3153105" xml-lang="en-US" l10n="U" oldref="14">Dim sInput As String</paragraph>
-<paragraph role="paragraph" id="par_id3154124" xml-lang="en-US" l10n="U" oldref="15">Dim sUS_date As String</paragraph>
-<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="U" oldref="16">sInput = InputBox("Please input a date in the international format 'YYYY-MM-DD'")</paragraph>
-<paragraph role="paragraph" id="par_id3149561" xml-lang="en-US" l10n="U" oldref="17">sUS_date = Mid(sInput, 6, 2)</paragraph>
-<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="18">sUS_date = sUS_date &amp; "/"</paragraph>
-<paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="U" oldref="19">sUS_date = sUS_date &amp; Right(sInput, 2)</paragraph>
-<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U" oldref="20">sUS_date = sUS_date &amp; "/"</paragraph>
-<paragraph role="paragraph" id="par_id3145365" xml-lang="en-US" l10n="U" oldref="21">sUS_date = sUS_date &amp; Left(sInput, 4)</paragraph>
-<paragraph role="paragraph" id="par_id3152940" xml-lang="en-US" l10n="U" oldref="22">MsgBox sUS_date</paragraph>
-<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="23">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3156212" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="U">Sub ExampleUSDate</paragraph>
+<paragraph role="paragraph" id="par_id3153105" xml-lang="en-US" l10n="U">Dim sInput As String</paragraph>
+<paragraph role="paragraph" id="par_id3154124" xml-lang="en-US" l10n="U">Dim sUS_date As String</paragraph>
+<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="U">sInput = InputBox("Please input a date in the international format 'YYYY-MM-DD'")</paragraph>
+<paragraph role="paragraph" id="par_id3149561" xml-lang="en-US" l10n="U">sUS_date = Mid(sInput, 6, 2)</paragraph>
+<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U">sUS_date = sUS_date &amp; "/"</paragraph>
+<paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="U">sUS_date = sUS_date &amp; Right(sInput, 2)</paragraph>
+<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U">sUS_date = sUS_date &amp; "/"</paragraph>
+<paragraph role="paragraph" id="par_id3145365" xml-lang="en-US" l10n="U">sUS_date = sUS_date &amp; Left(sInput, 4)</paragraph>
+<paragraph role="paragraph" id="par_id3152940" xml-lang="en-US" l10n="U">MsgBox sUS_date</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>
