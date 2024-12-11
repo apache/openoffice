@@ -41,7 +41,7 @@ public class GraphicalDisplay
     extends JPanel
     implements IAccessibleObjectDisplay
 {
-    /** Create a new graphical widget the displays some of the geometrical
+    /** Create a new graphical widget that displays some of the geometrical
         information available from accessible objects.
     */
     public GraphicalDisplay ()
