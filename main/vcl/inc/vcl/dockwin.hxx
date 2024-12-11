@@ -236,7 +236,7 @@ public:
 	void	EndPopupMode( const Window *pWin );
 
     // required because those methods are not virtual in Window (!!!) and must
-    // be availbale from the toolkit
+    // be available from the toolkit
 	void	    SetPosSizePixel( Window *pWin, long nX, long nY,
 	                            long nWidth, long nHeight,
 							    sal_uInt16 nFlags = WINDOW_POSSIZE_ALL );
