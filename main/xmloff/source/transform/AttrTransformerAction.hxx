@@ -101,10 +101,10 @@ enum XMLAttrTransformerAction
 	XML_ATACTION_MACRO_LOCATION,
 	XML_ATACTION_DLG_BORDER,
 	XML_ATACTION_URI_OOO,				 // an URI in OOo notation
-										 // - param1: pacakage URI are supported
+										 // - param1: package URI are supported
 	XML_ATACTION_URI_OASIS,				 // an URI in OASIS notation
-										 // - param1: pacakage URI are supported
-    XML_ATACTION_RENAME_ATTRIBUTE,       // rename up to 3 different possible values of an attrbiute
+										 // - param1: package URI are supported
+    XML_ATACTION_RENAME_ATTRIBUTE,       // rename up to 3 different possible values of an attribute
                                          // - param1: token of old attribute value (lower 16 bit)
                                          //           + token of new attribute value (upper 16 bit)
                                          // - param2: token of old attribute value
