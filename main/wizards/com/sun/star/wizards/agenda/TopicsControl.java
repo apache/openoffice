@@ -57,20 +57,20 @@ import com.sun.star.wizards.ui.event.MethodInvocation;
  * rather understood as topicstextbox and timetextbox.
  * <br/>
  * <br/>
- * Important behaiviour of this control is that there is always a 
+ * Important behaviour of this control is that there is always a
  * blank row at the end, in which the user can enter data.<br/>
  * Once the row is not blank (thus, the user entered data...),
  * a new blank row is added.<br/>
- * Once the user removes the last *unempty* row, by deleteing its data, it becomes
+ * Once the user removes the last *unempty* row, by deleting its data, it becomes
  * the *last empty row* and the one after is being automatically removed.<br/>
  * <br/>
- * The contorl shows 5 rows at a time.<br/>
- * If, for example, only 2 rows exist (from which the 2ed one is empty...)
+ * The control shows 5 rows at a time.<br/>
+ * If, for example, only 2 rows exist (from which the 2nd one is empty...)
  * then the other three rows, which do not exist in the data model, are disabled.
  * <br/> 
  * The following other functionality is implemented:
  * <br/>
- * 0. synchroniting data between controls, data model and live preview.
+ * 0. synchronizing data between controls, data model and live preview.
  * 1. Tab scrolling.<br/>
  * 2. Keyboard scrolling.<br/>
  * 3. Removing rows and adding new rows.<br/>
@@ -80,7 +80,7 @@ import com.sun.star.wizards.ui.event.MethodInvocation;
  * Data model:<br/>
  * 1. It uses a vector, whos members are arrays of PropertyValue.<br/>
  * 2. Each array represents a row.<br/>
- * (Note: the Name and Value memebrs of the PropertyValue object are being used...)
+ * (Note: the Name and Value members of the PropertyValue object are being used...)
  * 3. Each property Value represents a value for a single control with the following rules:<br/>
  * 3. a. the Value of the property is used for as value of the controls (usually text).<br/>
  * 3. b. the Name of the property is used to map values to UI controls in the following manner:<br/>
@@ -312,11 +312,11 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     }
 
     /**
-     * Sometimes I set the focus programatically to a control 
+     * Sometimes I set the focus programmatically to a control
      * (for example when moving a row up or down, the focus should move
      * with it).
      * In such cases, no VCL event is being triggered so it must
-     * be called programtically.
+     * be called programmatically.
      * This is done by this method.
      * @param control
      */
@@ -881,7 +881,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
      * After moving row X to X+/-1, the selection (or cursor position) of the
      * last focused control should be restored.
      * The control's row is the given guiRow.
-     * The control's column is detecte4d according to the given event.
+     * The control's column is detected according to the given event.
      * This method is called as subsequent to different events,
      * thus it is comfortable to use the event here to detect the column,
      * rather than in the different event methods.
@@ -1007,7 +1007,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     }
 
     /**
-     * when removeing rows, this method updates
+     * when removing rows, this method updates
      * the preview document to show the number of rows
      * according to the data model.
      */
@@ -1024,7 +1024,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     }
 
     /**
-     * needed to make this data poblic.
+     * needed to make this data public.
      * @return the List containing the topics data. 
      */
     public List getTopicsData()
@@ -1057,7 +1057,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     /**
      * 
      * @author rp143992
-     * A class represting a single GUI row.
+     * A class representing a single GUI row.
      * Note that the instance methods of this class
      * are being called and handle controls of
      * a single row.
@@ -1147,7 +1147,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
         }
 
         /**
-         * constructor. Create the row in the given dialog given cordinates,
+         * constructor. Create the row in the given dialog given coordinates,
          * with the given offset (row number) and tabindex.
          * Note that since I use this specifically for the agenda wizard,
          * the step and all control coordinates inside the
@@ -1210,7 +1210,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
          */
         public void setVisible(boolean visible)
         {
-            //  Helper.setUnoPropertyValue(UnoDialog2.getModel(button),"Visible", visible ? Boolean.TRUE : Boolean.FASLE);
+            //  Helper.setUnoPropertyValue(UnoDialog2.getModel(button),"Visible", visible ? Boolean.TRUE : Boolean.FALSE);
         }
 
         /**
@@ -1227,9 +1227,9 @@ public class TopicsControl extends ControlScroller implements XFocusListener
         }
 
         /**
-         * Impelementation of XKeyListener.
+         * Implementation of XKeyListener.
          * Optionally performs the one of the following:
-         * cursor up, or down, row up or down 
+         * cursor up or down, row up or down
          */
         public void keyPressed(KeyEvent event)
         {
