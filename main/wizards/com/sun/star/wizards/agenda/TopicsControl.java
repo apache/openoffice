@@ -65,7 +65,7 @@ import com.sun.star.wizards.ui.event.MethodInvocation;
  * the *last empty row* and the one after is being automatically removed.<br/>
  * <br/>
  * The control shows 5 rows at a time.<br/>
- * If, for example, only 2 rows exist (from which the 2ed one is empty...)
+ * If, for example, only 2 rows exist (from which the 2nd one is empty...)
  * then the other three rows, which do not exist in the data model, are disabled.
  * <br/> 
  * The following other functionality is implemented:
