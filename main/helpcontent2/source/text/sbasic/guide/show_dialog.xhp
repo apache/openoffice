@@ -34,22 +34,22 @@
 <bookmark_value>dialogs;using program code to show (example)</bookmark_value>
 <bookmark_value>examples; showing a dialog using program code</bookmark_value>
 </bookmark><comment>mw changed "modules and dialogs;"</comment>
-<paragraph role="heading" id="hd_id3154140" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="show_dialog"><link href="text/sbasic/guide/show_dialog.xhp" name="Opening a Dialog With Program Code">Opening a Dialog With Program Code</link>
+<paragraph role="heading" id="hd_id3154140" xml-lang="en-US" level="1" l10n="U"><variable id="show_dialog"><link href="text/sbasic/guide/show_dialog.xhp" name="Opening a Dialog With Program Code">Opening a Dialog With Program Code</link>
 </variable></paragraph>
-<paragraph role="paragraph" id="par_id3145171" xml-lang="en-US" l10n="U" oldref="2">In the <item type="productname">%PRODUCTNAME</item> BASIC window for a dialog that you created, leave the dialog editor by clicking the name tab of the Module that the dialog is assigned to. The name tab is at the bottom of the window.</paragraph>
-<paragraph role="paragraph" id="par_id3153968" xml-lang="en-US" l10n="U" oldref="6">Enter the following code for a subroutine called <emph>Dialog1Show</emph>. In this example, the name of the dialog that you created is "Dialog1":</paragraph>
-<paragraph role="code" id="par_id3156443" xml-lang="en-US" l10n="U" oldref="7">Sub Dialog1Show</paragraph>
-<paragraph role="code" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="24">BasicLibraries.LoadLibrary("Tools")</paragraph>
-<paragraph role="code" id="par_id3152463" xml-lang="en-US" l10n="U" oldref="8">oDialog1 = <link href="text/sbasic/guide/sample_code.xhp" name="LoadDialog">LoadDialog</link>("Standard", "Dialog1")</paragraph>
-<paragraph role="code" id="par_id3148646" xml-lang="en-US" l10n="U" oldref="14">oDialog1.Execute()</paragraph>
-<paragraph role="code" id="par_id3147349" xml-lang="en-US" l10n="U" oldref="15">End Sub</paragraph>
-<paragraph role="paragraph" id="par_id3152596" xml-lang="en-US" l10n="U" oldref="18">Without using "LoadDialog" you can call the code as follows:</paragraph>
-<paragraph role="code" id="par_id3163710" xml-lang="en-US" l10n="U" oldref="19">Sub Dialog1Show</paragraph>
-<paragraph role="code" id="par_id3146985" xml-lang="en-US" l10n="U" oldref="20">DialogLibraries.LoadLibrary( "Standard" )</paragraph>
-<paragraph role="code" id="par_id3155418" xml-lang="en-US" l10n="U" oldref="21">oDialog1 = CreateUnoDialog( DialogLibraries.Standard.Dialog1 )</paragraph>
-<paragraph role="code" id="par_id3154944" xml-lang="en-US" l10n="U" oldref="22">oDialog1.Execute()</paragraph>
-<paragraph role="code" id="par_id3145800" xml-lang="en-US" l10n="U" oldref="23">End Sub</paragraph>
-<paragraph role="paragraph" id="par_id3153157" xml-lang="en-US" l10n="U" oldref="16">When you execute this code, "Dialog1" opens. To close the dialog, click the close button (x) on its title bar.</paragraph>
+<paragraph role="paragraph" id="par_id3145171" xml-lang="en-US" l10n="U">In the <item type="productname">%PRODUCTNAME</item> BASIC window for a dialog that you created, leave the dialog editor by clicking the name tab of the Module that the dialog is assigned to. The name tab is at the bottom of the window.</paragraph>
+<paragraph role="paragraph" id="par_id3153968" xml-lang="en-US" l10n="U">Enter the following code for a subroutine called <emph>Dialog1Show</emph>. In this example, the name of the dialog that you created is "Dialog1":</paragraph>
+<paragraph role="code" id="par_id3156443" xml-lang="en-US" l10n="U">Sub Dialog1Show</paragraph>
+<paragraph role="code" id="par_id3148575" xml-lang="en-US" l10n="U">BasicLibraries.LoadLibrary("Tools")</paragraph>
+<paragraph role="code" id="par_id3152463" xml-lang="en-US" l10n="U">oDialog1 = <link href="text/sbasic/guide/sample_code.xhp" name="LoadDialog">LoadDialog</link>("Standard", "Dialog1")</paragraph>
+<paragraph role="code" id="par_id3148646" xml-lang="en-US" l10n="U">oDialog1.Execute()</paragraph>
+<paragraph role="code" id="par_id3147349" xml-lang="en-US" l10n="U">End Sub</paragraph>
+<paragraph role="paragraph" id="par_id3152596" xml-lang="en-US" l10n="U">Without using "LoadDialog" you can call the code as follows:</paragraph>
+<paragraph role="code" id="par_id3163710" xml-lang="en-US" l10n="U">Sub Dialog1Show</paragraph>
+<paragraph role="code" id="par_id3146985" xml-lang="en-US" l10n="U">DialogLibraries.LoadLibrary( "Standard" )</paragraph>
+<paragraph role="code" id="par_id3155418" xml-lang="en-US" l10n="U">oDialog1 = CreateUnoDialog( DialogLibraries.Standard.Dialog1 )</paragraph>
+<paragraph role="code" id="par_id3154944" xml-lang="en-US" l10n="U">oDialog1.Execute()</paragraph>
+<paragraph role="code" id="par_id3145800" xml-lang="en-US" l10n="U">End Sub</paragraph>
+<paragraph role="paragraph" id="par_id3153157" xml-lang="en-US" l10n="U">When you execute this code, "Dialog1" opens. To close the dialog, click the close button (x) on its title bar.</paragraph>
 <section id="relatedtopics">
 <embed href="text/sbasic/guide/control_properties.xhp#control_properties"/>
 <embed href="text/sbasic/guide/create_dialog.xhp#create_dialog"/>
