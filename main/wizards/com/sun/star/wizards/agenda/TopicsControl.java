@@ -1229,7 +1229,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
         /**
          * Implementation of XKeyListener.
          * Optionally performs the one of the following:
-         * cursor up, or down, row up or down 
+         * cursor up or down, row up or down
          */
         public void keyPressed(KeyEvent event)
         {
