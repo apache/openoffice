@@ -31,33 +31,28 @@
 <body>
 <bookmark xml-lang="en-US" branch="hid/.uno:NewGlobalDoc" id="bm_id7444055" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:NewGlobalDoc" id="bm_id9144566" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3152790" role="heading" level="1" l10n="CHG"
-oldref="1">Create Master Document</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148668" role="paragraph" l10n="U" oldref="2"><variable id="globtext"><ahelp hid="HID_SEND_MASTER_CTRL_PUSHBUTTON_CANCEL">Creates a master document from the current Writer document. A new sub-document is created at each occurrence of a chosen paragraph style or outline level in the source document.</ahelp>
+<paragraph xml-lang="en-US" id="hd_id3152790" role="heading" level="1" l10n="CHG">Create Master Document</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148668" role="paragraph" l10n="U"><variable id="globtext"><ahelp hid="HID_SEND_MASTER_CTRL_PUSHBUTTON_CANCEL">Creates a master document from the current Writer document. A new sub-document is created at each occurrence of a chosen paragraph style or outline level in the source document.</ahelp>
 </variable></paragraph>
 <section id="howtoget">
 <embed href="text/shared/00/00000401.xhp#glo"/>
 </section>
-<paragraph xml-lang="en-US" id="par_id3149999" role="paragraph" l10n="U" oldref="4">The <link href="text/shared/01/02110000.xhp" name="Navigator"><emph>Navigator</emph></link> appears after you create a master document. To edit a sub-document, double-click the name of a sub-document in the <emph>Navigator</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149999" role="paragraph" l10n="U">The <link href="text/shared/01/02110000.xhp" name="Navigator"><emph>Navigator</emph></link> appears after you create a master document. To edit a sub-document, double-click the name of a sub-document in the <emph>Navigator</emph>.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_CONTROL_FILEVIEW" id="bm_id3154673" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3152924" role="heading" level="2" l10n="U" oldref="9">Display area</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3152924" role="heading" level="2" l10n="U">Display area</paragraph>
 <embed href="text/shared/01/01070000.xhp#fileview"/>
 <bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_EDIT_FILEURL" id="bm_id3154751" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3152425" role="heading" level="2" l10n="U"
-oldref="10">File name</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3152425" role="heading" level="2" l10n="U">File name</paragraph>
 <embed href="text/shared/01/01070000.xhp#filename"/>
 <bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_LISTBOX_TEMPLATE" id="bm_id3155392" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/SVT_HID_FILESAVE_TEMPLATE" id="bm_id3145072" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3147291" role="heading" level="2" l10n="CHG"
-oldref="8">separated by</paragraph>
-<paragraph xml-lang="en-US" id="par_id3156426" role="paragraph" l10n="U" oldref="7"><ahelp hid="HID_FILESAVE_TEMPLATE">Select the paragraph style or outline level that you want to use to separate the source document into sub-documents.</ahelp> By default a new document is created for every outline level 1.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3147291" role="heading" level="2" l10n="CHG">separated by</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156426" role="paragraph" l10n="U"><ahelp hid="HID_FILESAVE_TEMPLATE">Select the paragraph style or outline level that you want to use to separate the source document into sub-documents.</ahelp> By default a new document is created for every outline level 1.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_LISTBOX_FILTER" id="bm_id3153527" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3153311" role="heading" level="2" l10n="U"
-oldref="11">File type</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153311" role="heading" level="2" l10n="U">File type</paragraph>
 <embed href="text/shared/01/01070000.xhp#filetype"/>
 <bookmark xml-lang="en-US" branch="hid/SW_HID_SEND_MASTER_CTRL_PUSHBUTTON_OK" id="bm_id3150693" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145313" role="heading" level="2" l10n="U"
-oldref="12">Save</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145313" role="heading" level="2" l10n="U">Save</paragraph>
 <embed href="text/shared/01/01070000.xhp#save"/><comment>removed autoextension</comment>
 <switch select="appl">
 <case select="WRITER">

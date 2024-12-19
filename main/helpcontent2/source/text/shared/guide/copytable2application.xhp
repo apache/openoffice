@@ -37,23 +37,23 @@
 <bookmark_value>text documents;inserting spreadsheet cells</bookmark_value>
 <bookmark_value>tables in spreadsheets;copying data to other applications</bookmark_value>
 </bookmark><comment>mw deleted "tables;" and added "charts;" and "tables in spreadsheets;"</comment>
-<paragraph role="heading" id="hd_id3154186" xml-lang="en-US" level="1" l10n="U" oldref="9"><variable id="copytable2application"><link href="text/shared/guide/copytable2application.xhp" name="Inserting Data From Spreadsheets">Inserting Data From Spreadsheets</link>
+<paragraph role="heading" id="hd_id3154186" xml-lang="en-US" level="1" l10n="U"><variable id="copytable2application"><link href="text/shared/guide/copytable2application.xhp" name="Inserting Data From Spreadsheets">Inserting Data From Spreadsheets</link>
 </variable></paragraph>
 <list type="unordered">
 <listitem>
-<paragraph role="listitem" id="par_id3147088" xml-lang="en-US" l10n="U" oldref="10">Use the clipboard to copy the contents of a single cell. You can also copy a formula from a cell into the clipboard (for example, from the input line of the formula bar) so that the formula can be inserted into a text.</paragraph>
+<paragraph role="listitem" id="par_id3147088" xml-lang="en-US" l10n="U">Use the clipboard to copy the contents of a single cell. You can also copy a formula from a cell into the clipboard (for example, from the input line of the formula bar) so that the formula can be inserted into a text.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3145345" xml-lang="en-US" l10n="U" oldref="11">To copy a cell range into a text document, select the cell range in the sheet and then use either the clipboard or drag-and-drop to insert the cells into the text document. You will then find an OLE object in the text document, which you can edit further.</paragraph>
+<paragraph role="listitem" id="par_id3145345" xml-lang="en-US" l10n="U">To copy a cell range into a text document, select the cell range in the sheet and then use either the clipboard or drag-and-drop to insert the cells into the text document. You will then find an OLE object in the text document, which you can edit further.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3146957" xml-lang="en-US" l10n="CHG" oldref="12">If you drag cells to the normal view of a presentation document, the cells will be inserted there as an OLE object. If you drag cells into the outline view, each cell will form a line of the outline view.</paragraph>
+<paragraph role="listitem" id="par_id3146957" xml-lang="en-US" l10n="CHG">If you drag cells to the normal view of a presentation document, the cells will be inserted there as an OLE object. If you drag cells into the outline view, each cell will form a line of the outline view.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3148538" xml-lang="en-US" l10n="CHG" oldref="13">When you copy a cell range from $[officename] Calc to the clipboard, the drawing objects, OLE objects and charts within this range are also copied.</paragraph>
+<paragraph role="listitem" id="par_id3148538" xml-lang="en-US" l10n="CHG">When you copy a cell range from $[officename] Calc to the clipboard, the drawing objects, OLE objects and charts within this range are also copied.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3153031" xml-lang="en-US" l10n="U" oldref="14">If you insert a cell range with an enclosed chart, the chart will keep its link to the source cell range only if you copied the chart and the source cell range together.</paragraph>
+<paragraph role="listitem" id="par_id3153031" xml-lang="en-US" l10n="U">If you insert a cell range with an enclosed chart, the chart will keep its link to the source cell range only if you copied the chart and the source cell range together.</paragraph>
 </listitem>
 </list>
 <embed href="text/shared/00/00000004.xhp#related"/>

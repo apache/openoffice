@@ -575,7 +575,7 @@ SvxBmpMask::~SvxBmpMask()
 /** is called by a MaskSet when it is selected */
 void SvxBmpMask::onSelect( MaskSet* pSet )
 {
-	// automaticaly set focus to the corresponding listbox
+	// automatically set focus to the corresponding listbox
 /*
 	if( pSet == pQSet1 )
 		aLbColor1.GrabFocus();

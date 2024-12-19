@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
@@ -160,75 +158,75 @@ void SwViewImp::UnlockPaint()
 // outliner of the draw view for painting layers <hell> and <heaven>.
 // OD 25.06.2003 #108784# - correct type of 1st parameter
 void SwViewImp::PaintLayer( const SdrLayerID _nLayerID,
-                            SwPrintData const*const pPrintData,
-                            const SwRect& ,
-                            const Color* _pPageBackgrdColor,
-                            const bool _bIsPageRightToLeft,
-                            sdr::contact::ViewObjectContactRedirector* pRedirector ) const
+							SwPrintData const*const pPrintData,
+							const SwRect& ,
+							const Color* _pPageBackgrdColor,
+							const bool _bIsPageRightToLeft,
+							sdr::contact::ViewObjectContactRedirector* pRedirector ) const
 {
-    if ( HasDrawView() )
+	if ( HasDrawView() )
 	{
-        //change the draw mode in high contrast mode
-        OutputDevice* pOutDev = GetShell()->GetOut();
-        sal_uLong nOldDrawMode = pOutDev->GetDrawMode();
-        if( GetShell()->GetWin() &&
-            Application::GetSettings().GetStyleSettings().GetHighContrastMode() &&
-            (!GetShell()->IsPreView()||SW_MOD()->GetAccessibilityOptions().GetIsForPagePreviews()))
-        {
-            pOutDev->SetDrawMode( nOldDrawMode | DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL |
-                                DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT );
-        }
+		// change the draw mode in high contrast mode
+		OutputDevice* pOutDev = GetShell()->GetOut();
+		sal_uLong nOldDrawMode = pOutDev->GetDrawMode();
+		if( GetShell()->GetWin() &&
+			Application::GetSettings().GetStyleSettings().GetHighContrastMode() &&
+			(!GetShell()->IsPreView()||SW_MOD()->GetAccessibilityOptions().GetIsForPagePreviews()))
+		{
+			pOutDev->SetDrawMode( nOldDrawMode | DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL |
+								  DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT );
+		}
 
-        // OD 29.08.2002 #102450#
-        // For correct handling of accessibility, high contrast, the page background
-        // color is set as the background color at the outliner of the draw view.
-        // Only necessary for the layers hell and heaven
-        Color aOldOutlinerBackgrdColor;
-        // OD 09.12.2002 #103045# - set default horizontal text direction on
-        // painting <hell> or <heaven>.
-        EEHorizontalTextDirection aOldEEHoriTextDir = EE_HTEXTDIR_L2R;
-        const IDocumentDrawModelAccess* pIDDMA = GetShell()->getIDocumentDrawModelAccess();
-        if ( (_nLayerID == pIDDMA->GetHellId()) ||
-             (_nLayerID == pIDDMA->GetHeavenId()) )
-        {
-            ASSERT( _pPageBackgrdColor,
-                    "incorrect usage of SwViewImp::PaintLayer: pPageBackgrdColor have to be set for painting layer <hell> or <heaven>");
-            if ( _pPageBackgrdColor )
-            {
-                aOldOutlinerBackgrdColor =
-                        GetDrawView()->GetModel()->GetDrawOutliner().GetBackgroundColor();
-                GetDrawView()->GetModel()->GetDrawOutliner().SetBackgroundColor( *_pPageBackgrdColor );
-            }
+		// OD 29.08.2002 #102450#
+		// For correct handling of accessibility, high contrast, the page background
+		// color is set as the background color at the outliner of the draw view.
+		// Only necessary for the layers hell and heaven
+		Color aOldOutlinerBackgrdColor;
+		// OD 09.12.2002 #103045# - set default horizontal text direction on
+		// painting <hell> or <heaven>.
+		EEHorizontalTextDirection aOldEEHoriTextDir = EE_HTEXTDIR_L2R;
+		const IDocumentDrawModelAccess* pIDDMA = GetShell()->getIDocumentDrawModelAccess();
+		if ( (_nLayerID == pIDDMA->GetHellId()) ||
+			 (_nLayerID == pIDDMA->GetHeavenId()) )
+		{
+			ASSERT( _pPageBackgrdColor,
+					"incorrect usage of SwViewImp::PaintLayer: pPageBackgrdColor have to be set for painting layer <hell> or <heaven>");
+			if ( _pPageBackgrdColor )
+			{
+				aOldOutlinerBackgrdColor =
+						GetDrawView()->GetModel()->GetDrawOutliner().GetBackgroundColor();
+				GetDrawView()->GetModel()->GetDrawOutliner().SetBackgroundColor( *_pPageBackgrdColor );
+			}
 
-            aOldEEHoriTextDir =
-                GetDrawView()->GetModel()->GetDrawOutliner().GetDefaultHorizontalTextDirection();
-            EEHorizontalTextDirection aEEHoriTextDirOfPage =
-                _bIsPageRightToLeft ? EE_HTEXTDIR_R2L : EE_HTEXTDIR_L2R;
-            GetDrawView()->GetModel()->GetDrawOutliner().SetDefaultHorizontalTextDirection( aEEHoriTextDirOfPage );
-        }
+			aOldEEHoriTextDir =
+				GetDrawView()->GetModel()->GetDrawOutliner().GetDefaultHorizontalTextDirection();
+			EEHorizontalTextDirection aEEHoriTextDirOfPage =
+				_bIsPageRightToLeft ? EE_HTEXTDIR_R2L : EE_HTEXTDIR_L2R;
+			GetDrawView()->GetModel()->GetDrawOutliner().SetDefaultHorizontalTextDirection( aEEHoriTextDirOfPage );
+		}
 
 		pOutDev->Push( PUSH_LINECOLOR ); // #114231#
-        if (pPrintData)
-        {
-            // hide drawings but not form controls (form controls are handled elsewhere)
-            SdrView &rSdrView = const_cast< SdrView & >(GetPageView()->GetView());
-            rSdrView.setHideDraw( !pPrintData->IsPrintDraw() );
-        }
-        GetPageView()->DrawLayer( _nLayerID, pOutDev, pRedirector );
+		if (pPrintData)
+		{
+			// hide drawings but not form controls (form controls are handled elsewhere)
+			SdrView &rSdrView = const_cast< SdrView & >(GetPageView()->GetView());
+			rSdrView.setHideDraw( !pPrintData->IsPrintDraw() );
+		}
+		GetPageView()->DrawLayer( _nLayerID, pOutDev, pRedirector );
 		pOutDev->Pop();
 
-        // OD 29.08.2002 #102450#
-        // reset background color of the outliner
-        // OD 09.12.2002 #103045# - reset default horizontal text direction
-        if ( (_nLayerID == pIDDMA->GetHellId()) ||
-             (_nLayerID == pIDDMA->GetHeavenId()) )
-        {
-            GetDrawView()->GetModel()->GetDrawOutliner().SetBackgroundColor( aOldOutlinerBackgrdColor );
-            GetDrawView()->GetModel()->GetDrawOutliner().SetDefaultHorizontalTextDirection( aOldEEHoriTextDir );
-        }
+		// OD 29.08.2002 #102450#
+		// reset background color of the outliner
+		// OD 09.12.2002 #103045# - reset default horizontal text direction
+		if ( (_nLayerID == pIDDMA->GetHellId()) ||
+			 (_nLayerID == pIDDMA->GetHeavenId()) )
+		{
+			GetDrawView()->GetModel()->GetDrawOutliner().SetBackgroundColor( aOldOutlinerBackgrdColor );
+			GetDrawView()->GetModel()->GetDrawOutliner().SetDefaultHorizontalTextDirection( aOldEEHoriTextDir );
+		}
 
-        pOutDev->SetDrawMode( nOldDrawMode );
-    }
+		pOutDev->SetDrawMode( nOldDrawMode );
+	}
 }
 
 /*************************************************************************
@@ -261,9 +259,9 @@ sal_Bool SwViewImp::IsDragPossible( const Point &rPoint )
 	else
 		aRect = GetShell()->GetLayout()->Frm();
 
-	aRect.Top(	  aRect.Top()	 - WIEDUWILLST );
+	aRect.Top(    aRect.Top()    - WIEDUWILLST );
 	aRect.Bottom( aRect.Bottom() + WIEDUWILLST );
-	aRect.Left(   aRect.Left()	 - WIEDUWILLST );
+	aRect.Left(   aRect.Left()   - WIEDUWILLST );
 	aRect.Right(  aRect.Right()  + WIEDUWILLST );
 	return aRect.IsInside( rPoint );
 }
@@ -306,27 +304,27 @@ void SwViewImp::NotifySizeChg( const Size &rNewSz )
 		{
 			//Teilfix(26793): Objekte, die in Rahmen verankert sind, brauchen
 			//nicht angepasst werden.
-            const SwContact *pCont = (SwContact*)GetUserCall(pObj);
+			const SwContact *pCont = (SwContact*)GetUserCall(pObj);
 			//JP - 16.3.00 Bug 73920: this function might be called by the
 			//				InsertDocument, when a PageDesc-Attribute is
 			//				set on a node. Then the SdrObject must not have
 			//				an UserCall.
-            if( !pCont || !pCont->ISA(SwDrawContact) )
+			if( !pCont || !pCont->ISA(SwDrawContact) )
 				continue;
 
-            const SwFrm *pAnchor = ((SwDrawContact*)pCont)->GetAnchorFrm();
+			const SwFrm *pAnchor = ((SwDrawContact*)pCont)->GetAnchorFrm();
 			if ( !pAnchor || pAnchor->IsInFly() || !pAnchor->IsValid() ||
-                 !pAnchor->GetUpper() || !pAnchor->FindPageFrm() ||
-                 (FLY_AS_CHAR == pCont->GetFmt()->GetAnchor().GetAnchorId()) )
-            {
+				 !pAnchor->GetUpper() || !pAnchor->FindPageFrm() ||
+				 (FLY_AS_CHAR == pCont->GetFmt()->GetAnchor().GetAnchorId()) )
+			{
 				continue;
-            }
+			}
 
-            // OD 19.06.2003 #108784# - no move for drawing objects in header/footer
-            if ( pAnchor->FindFooterOrHeader() )
-            {
-                continue;
-            }
+			// OD 19.06.2003 #108784# - no move for drawing objects in header/footer
+			if ( pAnchor->FindFooterOrHeader() )
+			{
+				continue;
+			}
 
 			const Rectangle aBound( pObj->GetCurrentBoundRect() );
 			if ( !aRect.IsInside( aBound ) )
@@ -351,3 +349,5 @@ void SwViewImp::NotifySizeChg( const Size &rNewSz )
 		}
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */

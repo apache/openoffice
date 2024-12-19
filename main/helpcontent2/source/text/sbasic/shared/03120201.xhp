@@ -33,28 +33,27 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150499">
 <bookmark_value>Space function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3150499" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120201.xhp" name="Space Function [Runtime]">Space Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3154927" xml-lang="en-US" l10n="U" oldref="2">Returns a string that consists of a specified amount of spaces.</paragraph>
+<paragraph role="heading" id="hd_id3150499" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03120201.xhp" name="Space Function [Runtime]">Space Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3154927" xml-lang="en-US" l10n="U">Returns a string that consists of a specified amount of spaces.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3153394" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="CHG" oldref="4">Space (n As Long)</paragraph>
-<paragraph role="heading" id="hd_id3147242" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3149233" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
-<paragraph role="heading" id="hd_id3156152" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3143228" xml-lang="en-US" l10n="U" oldref="8">
-<emph>n:</emph> Numeric expression that defines the number of spaces in the string. The maximum allowed value of n is 65535.</paragraph>
+<paragraph role="heading" id="hd_id3153394" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="CHG">Space (n As Long)</paragraph>
+<paragraph role="heading" id="hd_id3147242" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3149233" xml-lang="en-US" l10n="U">String</paragraph>
+<paragraph role="heading" id="hd_id3156152" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3143228" xml-lang="en-US" l10n="U"><emph>n:</emph> Numeric expression that defines the number of spaces in the string. The maximum allowed value of n is 65535.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U" oldref="10">Sub ExampleSpace</paragraph>
-<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="11">Dim sText As String,sOut As String</paragraph>
-<paragraph role="paragraph" id="par_id3154938" xml-lang="en-US" l10n="U" oldref="12">DIm iLen As Integer</paragraph>
-<paragraph role="paragraph" id="par_id3153525" xml-lang="en-US" l10n="U" oldref="13">iLen = 10</paragraph>
-<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="U" oldref="14">sText = "Las Vegas"</paragraph>
-<paragraph role="paragraph" id="par_id3156282" xml-lang="en-US" l10n="U" oldref="15">sOut = sText &amp; Space(iLen) &amp; sText &amp; Chr(13) &amp;_</paragraph>
-<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U" oldref="16">sText &amp; Space(iLen*2) &amp; sText &amp; Chr(13) &amp;_</paragraph>
-<paragraph role="paragraph" id="par_id3159149" xml-lang="en-US" l10n="U" oldref="17">sText &amp; Space(iLen*4) &amp; sText &amp; Chr(13)</paragraph>
-<paragraph role="paragraph" id="par_id3154216" xml-lang="en-US" l10n="U" oldref="18">msgBox sOut,0,"Info:"</paragraph>
-<paragraph role="paragraph" id="par_id3158409" xml-lang="en-US" l10n="U" oldref="19">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3147560" xml-lang="en-US" l10n="U">Sub ExampleSpace</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U">Dim sText As String,sOut As String</paragraph>
+<paragraph role="paragraph" id="par_id3154938" xml-lang="en-US" l10n="U">DIm iLen As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3153525" xml-lang="en-US" l10n="U">iLen = 10</paragraph>
+<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="U">sText = "Las Vegas"</paragraph>
+<paragraph role="paragraph" id="par_id3156282" xml-lang="en-US" l10n="U">sOut = sText &amp; Space(iLen) &amp; sText &amp; Chr(13) &amp;_</paragraph>
+<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U">sText &amp; Space(iLen*2) &amp; sText &amp; Chr(13) &amp;_</paragraph>
+<paragraph role="paragraph" id="par_id3159149" xml-lang="en-US" l10n="U">sText &amp; Space(iLen*4) &amp; sText &amp; Chr(13)</paragraph>
+<paragraph role="paragraph" id="par_id3154216" xml-lang="en-US" l10n="U">msgBox sOut,0,"Info:"</paragraph>
+<paragraph role="paragraph" id="par_id3158409" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>

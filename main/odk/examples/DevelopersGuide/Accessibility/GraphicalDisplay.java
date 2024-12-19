@@ -41,8 +41,8 @@ public class GraphicalDisplay
     extends JPanel
     implements IAccessibleObjectDisplay
 {
-    /** Create a new graphical widget the displays some of the geometrical
-        information availbable from accessible objects.
+    /** Create a new graphical widget that displays some of the geometrical
+        information available from accessible objects.
     */
     public GraphicalDisplay ()
     {
@@ -51,7 +51,7 @@ public class GraphicalDisplay
 
 
     /** Paint some or all of the area of this widget with the outlines of
-        the currently focues object and its ancestors.
+        the currently focused object and its ancestors.
      */
     public synchronized void paintComponent (Graphics g)
     {
