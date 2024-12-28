@@ -37,62 +37,61 @@
 <bookmark_value>pictures;anchoring options</bookmark_value>
 <bookmark_value>centering;images on HTML pages</bookmark_value>
 </bookmark>
-<paragraph xml-lang="en-US" id="hd_id3147828" role="heading" level="1" l10n="U"
-oldref="45"><variable id="anchor_object"><link href="text/swriter/guide/anchor_object.xhp" name="Positioning Objects">Positioning Objects</link>
+<paragraph xml-lang="en-US" id="hd_id3147828" role="heading" level="1" l10n="U"><variable id="anchor_object"><link href="text/swriter/guide/anchor_object.xhp" name="Positioning Objects">Positioning Objects</link>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="par_id3147251" role="paragraph" l10n="U" oldref="46">You can use anchors to position an object, graphic, or frame in a document. An anchored item remains in place, or moves when you modify the document. The following anchoring options are available:</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147251" role="paragraph" l10n="U">You can use anchors to position an object, graphic, or frame in a document. An anchored item remains in place, or moves when you modify the document. The following anchoring options are available:</paragraph>
 <table id="tbl_id3147268">
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3145599" role="tablehead" l10n="U" oldref="47">Anchoring</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145599" role="tablehead" l10n="U">Anchoring</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3145622" role="tablehead" l10n="U" oldref="48">Effect</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145622" role="tablehead" l10n="U">Effect</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3145650" role="tablecontent" l10n="U" oldref="49">As character</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145650" role="tablecontent" l10n="U">As character</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3151181" role="tablecontent" l10n="U" oldref="50">Anchors the selected item as a character in the current text. If the height of the selected item is greater than the current font size, the height of the line containing the item is increased.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151181" role="tablecontent" l10n="U">Anchors the selected item as a character in the current text. If the height of the selected item is greater than the current font size, the height of the line containing the item is increased.</paragraph>
 <paragraph xml-lang="en-US" id="par_idN10674" role="tablecontent" l10n="NEW">To center an image on an HTML page, insert the image, anchor it "as character", then center the paragraph.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3151212" role="tablecontent" l10n="U" oldref="51">To character</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151212" role="tablecontent" l10n="U">To character</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3151235" role="tablecontent" l10n="U" oldref="52">Anchors the selected item to a character.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
-<paragraph xml-lang="en-US" id="par_id3155071" role="tablecontent" l10n="U" oldref="53">To paragraph</paragraph>
-</tablecell>
-<tablecell>
-<paragraph xml-lang="en-US" id="par_id3155094" role="tablecontent" l10n="U" oldref="54">Anchors the selected item to the current paragraph.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151235" role="tablecontent" l10n="U">Anchors the selected item to a character.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3155122" role="tablecontent" l10n="U" oldref="55">To page</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155071" role="tablecontent" l10n="U">To paragraph</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3155144" role="tablecontent" l10n="U" oldref="56">Anchors the selected item to the current page.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155094" role="tablecontent" l10n="U">Anchors the selected item to the current paragraph.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3145674" role="tablecontent" l10n="U" oldref="57">To frame</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155122" role="tablecontent" l10n="U">To page</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3145697" role="tablecontent" l10n="U" oldref="58">Anchors the selected item to the surrounding frame.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155144" role="tablecontent" l10n="U">Anchors the selected item to the current page.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id3145674" role="tablecontent" l10n="U">To frame</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id3145697" role="tablecontent" l10n="U">Anchors the selected item to the surrounding frame.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph xml-lang="en-US" id="par_id3145715" role="paragraph" l10n="U" oldref="59">When you insert an object, graphic, or frame, an anchor icon appears where the item is anchored. You can position an anchored item by dragging the item to another location. To change the anchoring options of an item, right-click the item, and then choose an option from the <item type="menuitem">Anchor</item> submenu.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145715" role="paragraph" l10n="U">When you insert an object, graphic, or frame, an anchor icon appears where the item is anchored. You can position an anchored item by dragging the item to another location. To change the anchoring options of an item, right-click the item, and then choose an option from the <item type="menuitem">Anchor</item> submenu.</paragraph>
 <section id="relatedtopics">
 <embed href="text/swriter/guide/text_frame.xhp#text_frame"/>
 </section>
