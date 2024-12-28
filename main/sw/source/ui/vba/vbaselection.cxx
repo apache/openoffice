@@ -545,7 +545,7 @@ uno::Any SAL_CALL SwVbaSelection::Information( sal_Int32 _type ) throw (uno::Run
         default:
             throw uno::RuntimeException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Not implemented") ), uno::Reference< uno::XInterface >() );
     }
-    // This method fails to restore the previouse selection
+    // This method fails to restore the previous selection
     //xSel->select( aSelectedObject );
     return result;
 }
