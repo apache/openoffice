@@ -63,14 +63,14 @@ public class _XPropertyContainer extends MultiMethodTest {
     public void before() {
         propertyNotRemovable = (String) tEnv.getObjRelation("XPropertyContainer.propertyNotRemovable");
         if (propertyNotRemovable == null) {
-            throw new StatusException(Status.failed("Object raltion 'XPropertyAccess.propertyNotRemovable' is null"));
+            throw new StatusException(Status.failed("Object relation 'XPropertyAccess.propertyNotRemovable' is null"));
         }
     }
     
     
     
     /**
-     * Test calls the method and checks if the returned sequence contanis a propterty which is named
+     * Test calls the method and checks if the returned sequence contains a property which is named
      * in the object relation <code>XPropertyAccess.propertyNotRemovable</code>.
      */
     public void _addProperty() {
@@ -219,7 +219,7 @@ public class _XPropertyContainer extends MultiMethodTest {
     }
     
     /**
-     * Test calls the method and checks if the returned sequence contanis a propterty which is named
+     * Test calls the method and checks if the returned sequence contains a property which is named
      * in the object relation <code>XPropertyAccess.propertyNotRemovable</code>.
      */
     public void _removeProperty() {

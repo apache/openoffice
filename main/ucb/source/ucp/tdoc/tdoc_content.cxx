@@ -906,7 +906,7 @@ sal_Bool Content::exchangeIdentity(
         return sal_False;
     }
 
-    // Exchange own identitity.
+    // Exchange own identity.
 
     // Fail, if a content with given id already exists.
     if ( !hasData( Uri( xNewId->getContentIdentifier() ) ) )
@@ -918,7 +918,7 @@ sal_Bool Content::exchangeIdentity(
         {
             if ( eType == FOLDER )
             {
-                // Process instanciated children...
+                // Process instantiated children...
 
                 ContentRefList aChildren;
                 queryChildren( aChildren );
@@ -2166,7 +2166,7 @@ void Content::transfer(
                 uno::makeAny( lang::IllegalArgumentException(
                                     rtl::OUString::createFromAscii(
                                         "Invalid source URI! "
-                                        "Unabale to determine source type!" ),
+                                        "Unable to determine source type!" ),
                                     static_cast< cppu::OWeakObject * >( this ),
                                     -1 ) ),
                 xEnv );

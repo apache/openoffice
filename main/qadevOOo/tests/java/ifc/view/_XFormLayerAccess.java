@@ -41,7 +41,7 @@ import lib.StatusException;
  *  <li><code> setFormDesignMode()</code></li>
  * </ul> <p>
  *
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.view.XFormLayerAccess
  */
 public class _XFormLayerAccess extends MultiMethodTest {
@@ -59,12 +59,12 @@ public class _XFormLayerAccess extends MultiMethodTest {
     public void before() {
         xForm = (XForm) tEnv.getObjRelation("XFormLayerAccess.XForm");
         if (xForm == null) {
-            throw new StatusException(Status.failed("Object raltion 'XFormLayerAccess.XForm' is null"));
+            throw new StatusException(Status.failed("Object relation 'XFormLayerAccess.XForm' is null"));
         }
     }
     
     /**
-     * Test disables the FormDesignMode and calls the mthod. <p>
+     * Test disables the FormDesignMode and calls the method. <p>
      * Has <b> OK </b> status if the method returns
      * a not empty object of kind of com.sun.star.form.XFormController<P>
      * The following method tests are to be completed successfully before :
@@ -87,9 +87,9 @@ public class _XFormLayerAccess extends MultiMethodTest {
         XFormController xFormCont = oObj.getFormController(xForm);
         
         if (xFormCont == null)
-            log.println("ERROR: Could not get FromContoller");
+            log.println("ERROR: Could not get FromController");
         
-        log.println("set back DesignMode to previouse state");
+        log.println("set back DesignMode to previous state");
         oObj.setFormDesignMode(currentMode);
         
         tRes.tested("getFromController()", xFormCont != null );
