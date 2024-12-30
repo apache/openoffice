@@ -83,7 +83,7 @@ typedef hash_map<sal_uInt32, WeakReference<XInterface> >::const_iterator CIT_Com
 // InterfaceOleWrapper_Impl). It is the responsibility of the wrapper to remove the entry when
 // it is being destroyed. It is used to ensure the identity of objects. That is, an UNO interface
 // is mapped to IDispatch which is kept alive in the COM environment. If the same
-// UNO interface is mapped again to COM then the IDispach of the first mapped instance
+// UNO interface is mapped again to COM then the IDispatch of the first mapped instance
 // must be returned.
 extern hash_map<sal_uInt32, WeakReference<XInterface> > UnoObjToWrapperMap;
 typedef hash_map<sal_uInt32, WeakReference<XInterface> >::iterator IT_Uno;
@@ -367,7 +367,7 @@ void UnoConversionUtilities<T>::variantToAny( const VARIANTARG* pArg, Any& rAny,
                 // 1: JScript, VARTYPE: VT_DISPATCH
                 // 2. VBScript simple arraysVT_VARIANT|VT_BYREF the referenced VARIANT contains
                 //		a VT_ARRAY|  <type>
-                // 3. VBSrcript multi dimensional arrays: VT_ARRAY|VT_BYREF
+                // 3. VBScript multi dimensional arrays: VT_ARRAY|VT_BYREF
                 if( pArg->vt == VT_DISPATCH)
                 {
                     dispatchExObject2Sequence( pArg, rAny, ptype);
@@ -582,7 +582,7 @@ void UnoConversionUtilities<T>::variantToAny( const VARIANTARG* pArg, Any& rAny,
             throw IllegalArgumentException(
                 OUSTR("[automation bridge]UnoConversionUtilities<T>:variantToAny\n"
                       "The provided VARIANT of type\" ") + OUString::valueOf((sal_Int32) var.vt) +
-                OUSTR("\" is unappropriate for conversion!"), Reference<XInterface>(), -1);
+                OUSTR("\" is inappropriate for conversion!"), Reference<XInterface>(), -1);
     }
     catch (CannotConvertException &)
     {
@@ -995,7 +995,7 @@ void UnoConversionUtilities<T>::anyToVariant(VARIANT* pVariant, const Any& rAny)
             throw IllegalArgumentException(
                 OUSTR("[automation bridge]UnoConversionUtilities<T>::anyToVariant\n"
                       "The provided any of type\" ") + rAny.getValueType().getTypeName() +
-                OUSTR("\" is unappropriate for conversion!"), Reference<XInterface>(), -1);             
+                OUSTR("\" is inappropriate for conversion!"), Reference<XInterface>(), -1);
             
         }
     }
