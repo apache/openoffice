@@ -586,7 +586,7 @@ IMPL_LINK( MacroRecorder, EventListener, VclSimpleEvent*, pEvent )
 					if ( pTB->GetUniqueOrHelpId() != nUId )	// Also Button auf der ToolBox gefunden
 					{
 						if ( nParams == PARAM_NONE )
-						{			// Wir fälschen einen Parameter
+						{			// Wir fï¿½lschen einen Parameter
 							nParams = PARAM_USHORT_1;
 							nNr1 = nUId;
 						}
@@ -871,18 +871,6 @@ IMPL_LINK( MacroRecorder, EventListener, VclSimpleEvent*, pEvent )
 				}
 				break;*/
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 			case C_WorkWin:
 				switch( nEventID )
@@ -911,18 +899,6 @@ IMPL_LINK( MacroRecorder, EventListener, VclSimpleEvent*, pEvent )
 				{
 				}
 				break;*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 			case C_MessBox:
