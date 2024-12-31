@@ -1598,7 +1598,7 @@ void SAL_CALL Frame::removeFrameActionListener( const css::uno::Reference< css::
     LOG_ASSERT2( implcp_removeFrameActionListener( xListener ), "Frame::removeFrameActionListener()", "Invalid parameter detected." )
 	// Listener container is threadsafe by himself ... but we must look for rejected calls after disposing!
     // But we must work with E_SOFTEXCEPTIONS ... because sometimes we are called from our listeners
-    // during dispose! Our work mode is E_BEFORECLOSE then ... and E_HARDEXCEPTIONS whould throw a DisposedException.
+    // during dispose! Our work mode is E_BEFORECLOSE then ... and E_HARDEXCEPTIONS would throw a DisposedException.
     TransactionGuard aTransaction( m_aTransactionManager, E_SOFTEXCEPTIONS );
 
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */

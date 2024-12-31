@@ -340,7 +340,7 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
          *  FIXME:
          *  finally the clipboard and XDND service is back in the module it belongs
          *  now cleanup and sharing of resources with the normal vcl event loop
-         *  needs to be added. The display used whould be that of the normal event loop
+         *  needs to be added. The display used would be that of the normal event loop
          *  and synchronization should be done via the SolarMutex.
 		 */
 		if( arguments.getLength() > 0 )
