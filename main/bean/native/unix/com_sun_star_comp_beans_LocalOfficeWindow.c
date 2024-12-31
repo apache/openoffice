@@ -133,11 +133,3 @@ JNIEXPORT jlong JNICALL Java_com_sun_star_comp_beans_LocalOfficeWindow_getNative
 
 
 
-
-
-
-
-
-
-
-

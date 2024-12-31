@@ -203,11 +203,3 @@ static LRESULT APIENTRY OpenOfficeWndProc(
 }
 
 
-
-
-
-
-
-
-
-
