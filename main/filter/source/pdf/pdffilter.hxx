@@ -118,13 +118,3 @@ SAL_CALL PDFFilter_createInstance( const Reference< XMultiServiceFactory > & rSM
 	throw ( Exception );
 
 #endif // PDFFILTER_HXX
-
-
-
-
-
-
-
-
-
-
