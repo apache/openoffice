@@ -586,7 +586,7 @@ IMPL_LINK( MacroRecorder, EventListener, VclSimpleEvent*, pEvent )
 					if ( pTB->GetUniqueOrHelpId() != nUId )	// Also Button auf der ToolBox gefunden
 					{
 						if ( nParams == PARAM_NONE )
-						{			// Wir f�lschen einen Parameter
+						{			// Wir fälschen einen Parameter
 							nParams = PARAM_USHORT_1;
 							nNr1 = nUId;
 						}
