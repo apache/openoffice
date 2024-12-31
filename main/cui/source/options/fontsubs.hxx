@@ -116,15 +116,3 @@ public:
 
 
 #endif // _SVX_FONT_SUBSTITUTION_HXX
-
-
-
-
-
-
-
-
-
-
-
-
