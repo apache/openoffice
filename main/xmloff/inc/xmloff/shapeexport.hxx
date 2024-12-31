@@ -174,7 +174,7 @@ private:
 	ImplXMLShapeExportInfoVector::iterator		maCurrentInfo;
 	rtl::OUString								msPresentationStylePrefix;
 
-	// #88546# possibility to swich progress bar handling on/off
+	// #88546# possibility to switch progress bar handling on/off
 	sal_Bool									mbHandleProgressBar;
 
 	rtl::Reference< XMLTableExport >			mxShapeTableExport;

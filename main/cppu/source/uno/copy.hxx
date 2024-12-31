@@ -724,7 +724,7 @@ inline uno_Sequence * icopyConstructSequence(
 				break;
 			}
 			default:
-                OSL_ENSURE( 0, "### unexepcted sequence element type!" );
+                OSL_ENSURE( 0, "### unexpected sequence element type!" );
                 pDest = 0;
 				break;
 			}

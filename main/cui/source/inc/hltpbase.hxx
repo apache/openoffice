@@ -56,7 +56,7 @@
 
 /*************************************************************************
 |*
-|* ComboBox-Control, wich is filled with all current framenames
+|* ComboBox-Control, which is filled with all current framenames
 |*
 \************************************************************************/
 
