@@ -88,11 +88,3 @@ JNIEXPORT jlong JNICALL Java_com_sun_star_beans_LocalOfficeWindow_getNativeWindo
 }
 
 
-
-
-
-
-
-
-
-
