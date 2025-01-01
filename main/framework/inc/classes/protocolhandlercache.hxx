@@ -165,7 +165,7 @@ class FWI_DLLPUBLIC HandlerCache
                     We set a data container pointer for filling or reading ... this class use it temp.
                     After successfully calling of read(), we can use filled container directly or merge it with an existing one.
                     After successfully calling of write() all values of given data container are flushed to our configuration -
-                    but current implementation doesn't support writeing really.
+                    but current implementation doesn't support writing really.
 
     @base           ::utl::ConfigItem
                     base mechanism for configuration access
