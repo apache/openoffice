@@ -322,7 +322,7 @@ SvXMLStylesContext_Impl::~SvXMLStylesContext_Impl()
 	while( aStyles.Count() )
 	{
 		SvXMLStyleContext *pStyle = aStyles.GetObject(0);
-		aStyles.Remove( 0UL );
+		aStyles.Remove( (sal_uIntPtr)0UL );
 		pStyle->ReleaseRef();
 	}
 }
@@ -342,7 +342,7 @@ void SvXMLStylesContext_Impl::Clear()
 	while( aStyles.Count() )
 	{
 		SvXMLStyleContext *pStyle = aStyles.GetObject(0);
-		aStyles.Remove( 0UL );
+		aStyles.Remove( (sal_uIntPtr)0UL );
 		pStyle->ReleaseRef();
 	}
 }

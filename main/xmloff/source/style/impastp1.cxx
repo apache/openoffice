@@ -61,7 +61,7 @@ XMLFamilyData_Impl::~XMLFamilyData_Impl()
 	if( pCache )
 	{
 		while( pCache->Count() )
-			delete pCache->Remove( 0UL );
+			delete pCache->Remove( (sal_uIntPtr)0UL );
 	}
 }
 
@@ -75,7 +75,7 @@ void XMLFamilyData_Impl::ClearEntries()
 	if( pCache )
 	{
 		while( pCache->Count() )
-			delete pCache->Remove( 0UL );
+			delete pCache->Remove( (sal_uIntPtr)0UL );
 	}
 }
 

@@ -349,7 +349,7 @@ OUString SvXMLAutoStylePoolP_Impl::FindAndRemoveCached( sal_Int32 nFamily ) cons
 		// completely.
 		if( pFamily->pCache && pFamily->pCache->Count() )
 		{
-			OUString *pName = pFamily->pCache->Remove( 0UL );
+			OUString *pName = pFamily->pCache->Remove( (sal_uIntPtr)0UL );
 			sName = *pName;
 			delete pName;
 		}
