@@ -181,4 +181,3 @@ private:
 
 
 #endif // SC_TPSORT_HXX
-

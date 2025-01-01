@@ -40,4 +40,3 @@ public:
 
 
 #endif // _UNOTOOLS_DOCINFOHELPER_HXX_
-

@@ -164,4 +164,3 @@ public:
 
 
 #endif // SC_PARAWIN_HXX
-

@@ -91,4 +91,3 @@ protected:
 };
 	
 #endif // _CODEMAKER_OPTIONS_HXX_
-

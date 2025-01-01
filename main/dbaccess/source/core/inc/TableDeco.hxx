@@ -212,5 +212,3 @@ namespace dbaccess
 	};
 }
 #endif // _DBA_CORE_TABLEDECORATOR_HXX_
-
-

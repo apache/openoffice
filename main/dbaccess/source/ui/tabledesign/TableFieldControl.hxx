@@ -64,5 +64,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEFIELDCONTROL_HXX
-
-

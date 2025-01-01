@@ -68,4 +68,3 @@ public:
 };
 
 #endif /* SC_VBA_CHARACTER_HXX */
-

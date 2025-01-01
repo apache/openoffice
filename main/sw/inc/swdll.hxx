@@ -62,4 +62,3 @@ public:
 #define SW_DLL() ( *(SwModule**) GetAppData(SHL_WRITER) )
 
 #endif
-

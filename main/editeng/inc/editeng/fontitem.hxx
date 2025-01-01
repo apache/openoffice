@@ -103,5 +103,3 @@ EDITENG_DLLPUBLIC void GetDefaultFonts( SvxFontItem& rLatin, SvxFontItem& rAsian
 						SvxFontItem& rComplex );
 
 #endif // #ifndef _SVX_FONTITEM_HXX
-
-

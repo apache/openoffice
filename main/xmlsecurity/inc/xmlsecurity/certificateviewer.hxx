@@ -158,4 +158,3 @@ public:
 
 
 #endif // _XMLSECURITY_CERTIFICATEVIEWER_HXX
-

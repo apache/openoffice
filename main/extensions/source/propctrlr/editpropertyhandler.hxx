@@ -75,4 +75,3 @@ namespace pcr
 //........................................................................
 
 #endif // EXTENSIONS_SOURCE_PROPCTRLR_EDITPROPERTYHANDLER_HXX
-

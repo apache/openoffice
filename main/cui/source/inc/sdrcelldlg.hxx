@@ -59,5 +59,3 @@ public:
 };
 
 #endif // _SVX_FORMAT_CELLS_DLG_HXX
-
-

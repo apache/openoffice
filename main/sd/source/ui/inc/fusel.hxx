@@ -113,4 +113,3 @@ private:
 } // end of namespace sd
 
 #endif		// _SD_FUSEL_HXX
-

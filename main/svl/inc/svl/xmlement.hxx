@@ -36,4 +36,3 @@ struct SvXMLEnumMapEntry
 
 
 #endif	//  _SVTOOLS_XMLEMENT_HXX
-

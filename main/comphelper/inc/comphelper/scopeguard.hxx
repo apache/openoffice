@@ -66,4 +66,3 @@ private:
 } // namespace comphelper
 
 #endif // ! defined(INCLUDED_COMPHELPER_SCOPEGUARD_HXX)
-

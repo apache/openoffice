@@ -129,4 +129,3 @@ namespace toolkit
 //........................................................................
 
 #endif // TOOLKIT_ACCESSIBLE_CONTROL_CONTEXT_HXX
-

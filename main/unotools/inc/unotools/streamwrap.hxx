@@ -169,4 +169,3 @@ public:
 // namespace utl
 
 #endif // _UTL_STREAM_WRAPPER_HXX_
-

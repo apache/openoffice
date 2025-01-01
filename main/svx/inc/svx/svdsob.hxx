@@ -126,4 +126,3 @@ inline SvStream& operator>>(SvStream& rIn, SetOfByte& rSet)
 }
 
 #endif // _SVDSOB_HXX
-

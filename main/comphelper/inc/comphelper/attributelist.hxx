@@ -70,4 +70,3 @@ public:
 } // namespace comphelper
 
 #endif // _COMPHELPER_ATTRIBUTE_LIST_HXX
-

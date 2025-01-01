@@ -64,4 +64,3 @@ void SetMappingForVirtDev(  const Point&    _rNewOrigin,
 
 
 #endif
-

@@ -55,5 +55,3 @@ class Token : public TextToken
 }   // namespace cpp
 
 #endif
-
-

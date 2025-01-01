@@ -64,4 +64,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_SDBCX_KEYCOLUMN_HXX_
-

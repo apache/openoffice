@@ -61,4 +61,3 @@ namespace connectivity
 //........................................................................
 
 #endif // CONNECTIVITY_DBTOOLS_CHARSET_S_HXX
-

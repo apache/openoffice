@@ -85,4 +85,3 @@ namespace rptui
 }	// namespace rptui
 //........................................................................
 #endif // RPTUI_PROPERTYSETFORWARD_HXX
-

@@ -101,5 +101,3 @@ private:
 };
 
 #endif // SC_SOLVRDLG_HXX
-
-

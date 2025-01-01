@@ -46,4 +46,3 @@ enum SvxDistributeVertical
 };
 
 #endif // _SVX_DSTRIBUT_ENUM_HXX
-

@@ -69,4 +69,3 @@ class Named_Type : public Type
 
 
 #endif
-

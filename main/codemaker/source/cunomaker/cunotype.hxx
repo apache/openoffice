@@ -302,4 +302,3 @@ sal_Bool produceType(const ::rtl::OString& typeName,
 
 
 #endif // INCLUDED_CODEMAKER_SOURCE_CUNOMAKER_CUNOTYPE_HXX
-

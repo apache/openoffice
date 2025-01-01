@@ -62,4 +62,3 @@ class SwChartLockController_Helper;
  };
 
  #endif // IDOCUMENTCHARTDATAPROVIDER_HXX_INCLUDED
-

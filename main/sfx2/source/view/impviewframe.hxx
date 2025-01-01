@@ -93,4 +93,3 @@ public:
 };
 
 #endif // SFX2_IMPVIEWFRAME_HXX
-

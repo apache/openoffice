@@ -35,4 +35,3 @@ namespace comphelper
 }
 
 #endif // _COMPHELPER_NAMECONTAINER_HXX_
-

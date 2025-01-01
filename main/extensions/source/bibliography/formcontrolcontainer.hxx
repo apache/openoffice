@@ -77,4 +77,3 @@ namespace bib
 //.........................................................................
 
 #endif // EXTENSIONS_BIB_FORMCONTROLCONTAINER_HXX
-

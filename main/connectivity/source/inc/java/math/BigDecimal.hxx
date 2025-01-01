@@ -45,5 +45,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_JAVA_MATH_BIGDECIMAL_HXX_
-
-

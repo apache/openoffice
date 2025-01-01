@@ -81,4 +81,3 @@ public:
 };
 
 #endif // #ifndef _SVX_EMPHITEM_HXX
-

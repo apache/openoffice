@@ -79,4 +79,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_SOURCE_INC_URLTRANSFORMER_HXX
-

@@ -59,5 +59,3 @@ public:
 }
 
 #endif // _MISCCFG_HXX
-
-

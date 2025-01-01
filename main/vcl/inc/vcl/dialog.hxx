@@ -156,4 +156,3 @@ private:
 };
 
 #endif	// _SV_DIALOG_HXX
-

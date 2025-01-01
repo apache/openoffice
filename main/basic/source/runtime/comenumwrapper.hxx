@@ -47,4 +47,3 @@ public:
 };
 
 #endif // _COMENUMWRAPPER_HXX
-

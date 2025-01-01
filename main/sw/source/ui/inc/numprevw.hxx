@@ -63,5 +63,3 @@ class NumberingPreview : public Window
 };
 
 #endif
-
-

@@ -267,4 +267,3 @@ namespace dbaccess
 	};
 }
 #endif
-

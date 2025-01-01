@@ -141,6 +141,3 @@ public:
 //... namespace comphelper .......................................................
 
 #endif // _COMPHELPER_ENUMHELPER_HXX_
-
-
-

@@ -60,4 +60,3 @@ private:
 
 // _CHART_LINEAR3DTRANSFORMATION_HXX
 #endif
-

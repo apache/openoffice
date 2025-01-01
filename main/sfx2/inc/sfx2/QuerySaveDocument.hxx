@@ -38,4 +38,3 @@ SFX2_DLLPUBLIC short ExecuteQuerySaveDocument(
     Window* _pParent,const String& _rTitle);
 
 #endif //SFX_QUERYSAVEDOCUMENT_HXX
-

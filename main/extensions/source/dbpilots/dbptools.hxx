@@ -41,4 +41,3 @@ namespace dbp
 
 
 #endif // _EXTENSIONS_DBP_DBPTOOLS_HXX_
-

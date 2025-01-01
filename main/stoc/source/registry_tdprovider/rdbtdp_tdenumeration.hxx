@@ -109,4 +109,3 @@ private:
 } // namespace stoc_rdbtdp
 
 #endif /* _STOC_RDBTDP_TDENUMERATION_HXX */
-

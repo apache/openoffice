@@ -93,4 +93,3 @@ public:
 	virtual void Notify( const ::com::sun::star::uno::Sequence< rtl::OUString >& aPropertyNames );
 };
 #endif
-

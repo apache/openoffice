@@ -370,4 +370,3 @@ public:
 }   // namespace linguistic
 
 #endif
-

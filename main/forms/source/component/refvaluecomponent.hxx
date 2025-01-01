@@ -102,4 +102,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_SOURCE_COMPONENT_REFVALUECOMPONENT_HXX
-

@@ -44,4 +44,3 @@ public:
 
 
 #endif	//  _XMLOFF_XMLEHELP_HXX
-

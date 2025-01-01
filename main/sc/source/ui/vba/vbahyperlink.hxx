@@ -81,4 +81,3 @@ private:
 };
 
 #endif /* SC_VBA_HYPERLINK_HXX */
-

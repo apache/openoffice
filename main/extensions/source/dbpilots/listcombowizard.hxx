@@ -220,4 +220,3 @@ namespace dbp
 //.........................................................................
 
 #endif // _EXTENSIONS_DBP_LISTCOMBOWIZARD_HXX_
-

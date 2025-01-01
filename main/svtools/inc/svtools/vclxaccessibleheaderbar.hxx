@@ -83,4 +83,3 @@ public:
 };
 
 #endif // _SVTOOLS_VCLXACCESSIBLEHEADERBAR_HXX_
-

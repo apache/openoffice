@@ -318,5 +318,3 @@ inline SfxApplication* SfxGetpApp()
 }
 
 #endif
-
-

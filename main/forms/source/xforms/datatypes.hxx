@@ -417,4 +417,3 @@ namespace xforms
 //........................................................................
 
 #endif // FORMS_SOURCE_XFORMS_DATATYPES_HXX
-

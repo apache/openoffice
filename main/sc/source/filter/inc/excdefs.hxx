@@ -99,4 +99,3 @@ const sal_uInt8 EXC_AFOPER_GREATEREQUAL     = 0x06;
 // ============================================================================
 
 #endif // _EXCDEFS_HXX
-

@@ -57,4 +57,3 @@ class ScBiffReader
     SvStream& getStream() { return *mpStream; }    
 };
 #endif
-

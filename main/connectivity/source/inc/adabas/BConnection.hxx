@@ -71,4 +71,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADABAS_BCONNECTION_HXX_
-

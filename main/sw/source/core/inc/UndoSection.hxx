@@ -75,4 +75,3 @@ SW_DLLPRIVATE SwUndo * MakeUndoDelSection(SwSectionFmt const&);
 SW_DLLPRIVATE SwUndo * MakeUndoUpdateSection(SwSectionFmt const&, bool const);
 
 #endif // SW_UNDO_SECTION_HXX
-

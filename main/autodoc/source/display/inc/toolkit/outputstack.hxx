@@ -65,5 +65,3 @@ OutputStack::Out() const
 
 
 #endif
-
-

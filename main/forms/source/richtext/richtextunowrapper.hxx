@@ -91,4 +91,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_SOURCE_RICHTEXT_RICHTEXTUNOWRAPPER_HXX
-

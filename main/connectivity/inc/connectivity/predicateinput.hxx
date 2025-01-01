@@ -127,4 +127,3 @@ namespace dbtools
 //.........................................................................
 
 #endif // CONNECTIVITY_PREDICATEINPUT_HXX
-

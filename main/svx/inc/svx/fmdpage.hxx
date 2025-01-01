@@ -69,4 +69,3 @@ public:
 };
 
 #endif // _SVX_FMDPAGE_HXX
-

@@ -54,5 +54,3 @@ public:
 };
 
 #endif // _SVX_NEWTABLEDLG_HXX
-
-

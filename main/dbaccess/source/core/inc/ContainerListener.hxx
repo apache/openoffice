@@ -90,4 +90,3 @@ namespace dbaccess
 }	// namespace dbaccess
 //........................................................................
 #endif // DBA_CONTAINERLISTENER_HXX
-

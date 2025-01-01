@@ -469,4 +469,3 @@ public:
 };
 
 #endif // _INETTYPE_HXX
-

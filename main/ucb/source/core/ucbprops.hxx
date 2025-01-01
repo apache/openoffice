@@ -86,4 +86,3 @@ public:
 };
 
 #endif /* !_UCBPROPS_HXX */
-

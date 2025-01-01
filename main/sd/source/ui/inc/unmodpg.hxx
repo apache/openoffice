@@ -80,4 +80,3 @@ private:
 };
 
 #endif      // _SD_UNMODPG_HXX
-

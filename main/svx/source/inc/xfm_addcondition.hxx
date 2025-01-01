@@ -85,4 +85,3 @@ namespace svxform
 //........................................................................
 
 #endif // SVX_SOURCE_INC_XFM_ADDCONDITION_HXX
-

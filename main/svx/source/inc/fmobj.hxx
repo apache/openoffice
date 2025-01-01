@@ -127,4 +127,3 @@ private:
 
 
 #endif // _FM_FMOBJ_HXX
-

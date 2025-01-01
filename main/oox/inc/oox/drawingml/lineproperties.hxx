@@ -74,4 +74,3 @@ struct LineProperties
 } // namespace oox
 
 #endif
-

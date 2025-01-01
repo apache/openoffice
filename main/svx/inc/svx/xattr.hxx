@@ -46,4 +46,3 @@ class XGradientList;
 
 
 #endif      // _XATTR_HXX
-

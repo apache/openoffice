@@ -55,4 +55,3 @@ private:
 };
 
 #endif // _IDLC_ASTARRAY_HXX_
-

@@ -135,4 +135,3 @@ public:
 
 
 #endif // _SVX_DLG_HYPERDLG_HXX
-

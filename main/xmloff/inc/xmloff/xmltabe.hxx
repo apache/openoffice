@@ -53,4 +53,3 @@ public:
 
 
 #endif	//  _XMLOFF_XMLTABE_HXX
-

@@ -85,4 +85,3 @@ inline const SwFmtURL &SwFmt::GetURL(sal_Bool bInP) const
 	{ return aSet.GetURL(bInP); }
 
 #endif
-

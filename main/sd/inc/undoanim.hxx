@@ -88,4 +88,3 @@ private:
 }
 
 #endif      // _SD_UNDO_ANIM_HXX
-

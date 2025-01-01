@@ -247,4 +247,3 @@ void DoLog_Impl( const BrowseBox *pThis, const char *pWhat, const char *pWho );
 
 
 #endif
-

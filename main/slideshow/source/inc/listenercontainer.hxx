@@ -313,4 +313,3 @@ class ThreadUnsafeListenerContainer : public ListenerContainerBase<ListenerT,
 } // namespace slideshow
 
 #endif /* INCLUDED_SLIDESHOW_LISTENERCONTAINER_HXX */
-

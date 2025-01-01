@@ -50,4 +50,3 @@ namespace dp_gui
 } // namespace dp_gui
 
 #endif // INCLUDED_DESKTOP_SOURCE_DEPLOYMENT_GUI_DP_GUI_DESCEDIT_HXX
-

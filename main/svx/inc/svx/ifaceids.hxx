@@ -37,5 +37,3 @@
 #define SVX_INTERFACE_FORM_SH			(SFX_INTERFACE_IDE_END+ 1)
 
 #endif
-
-

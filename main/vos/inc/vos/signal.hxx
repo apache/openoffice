@@ -92,4 +92,3 @@ protected:
 }
 
 #endif // _VOS_SIGNAL_HXX_
-

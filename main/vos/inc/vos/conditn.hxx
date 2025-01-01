@@ -132,4 +132,3 @@ protected:
 }
 
 #endif	// _VOS_CONDITN_HXX_
-

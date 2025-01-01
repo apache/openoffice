@@ -258,5 +258,3 @@ private:
 
 #endif /* __cplusplus */
 #endif /* _RTL_LOCALE_HXX_ */
-
-

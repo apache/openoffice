@@ -45,4 +45,3 @@ public:
 
 
 #endif	// SC_RTFEXP_HXX
-

@@ -78,4 +78,3 @@ public:
 
 
 #endif // _TOOLKIT_AWT_VCLXPOINTER_HXX_
-

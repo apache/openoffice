@@ -83,4 +83,3 @@ namespace svxform
 //........................................................................
 
 #endif // SVX_SOURCE_INC_FORMTOOLBARS_HXX
-

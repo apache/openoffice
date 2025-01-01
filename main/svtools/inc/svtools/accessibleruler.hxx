@@ -298,4 +298,3 @@ inline sal_Bool SvtRulerAccessible::IsNotAlive( void ) const
 
 
 #endif
-

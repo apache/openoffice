@@ -115,4 +115,3 @@ protected:
 }
 
 #endif  // _VOS_SECURITY_HXX_
-

@@ -66,4 +66,3 @@ namespace toolkit
 //........................................................................
 
 #endif // TOOLKIT_HELPER_ACCESSIBILITY_CLIENT_HXX
-

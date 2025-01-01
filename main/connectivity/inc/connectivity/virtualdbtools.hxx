@@ -350,4 +350,3 @@ namespace connectivity
 //........................................................................
 
 #endif // CONNECTIVITY_VIRTUAL_DBTOOLS_HXX
-

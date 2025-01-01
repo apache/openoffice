@@ -71,4 +71,3 @@ const char * const C_sHFTypeTitle_Typedef           = "typedef";
 
 
 #endif
-

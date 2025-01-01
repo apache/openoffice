@@ -209,4 +209,3 @@ protected:
 };
 
 #endif // _SVX_FMGRIDCL_HXX
-

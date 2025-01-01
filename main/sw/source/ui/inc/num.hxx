@@ -198,4 +198,3 @@ class SwSvxNumBulletTabDialog : public SfxTabDialog
 		~SwSvxNumBulletTabDialog();
 };
 #endif // _NUM_CXX
-

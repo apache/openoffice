@@ -42,4 +42,3 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL _create(
 } // closing component helper namespace
 
 #endif
-

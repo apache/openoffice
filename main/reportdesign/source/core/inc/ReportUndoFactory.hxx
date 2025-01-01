@@ -78,4 +78,3 @@ namespace rptui
 //==============================================================================
 
 #endif // REPORT_UNDOFACTORY_HXX_INCLUDED
-

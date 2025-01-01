@@ -145,4 +145,3 @@ struct CntHTTPCookieRequest
 };
 
 #endif // SVTOOLS_HTTPCOOK_HXX
-

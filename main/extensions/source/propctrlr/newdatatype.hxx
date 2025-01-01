@@ -70,4 +70,3 @@ namespace pcr
 //........................................................................
 
 #endif // EXTENSIONS_SOURCE_PROPCTRLR_NEWDATATYPE_HXX
-

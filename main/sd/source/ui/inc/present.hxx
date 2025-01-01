@@ -107,4 +107,3 @@ public:
 };
 
 #endif // _SD_PRESENT_HXX_
-

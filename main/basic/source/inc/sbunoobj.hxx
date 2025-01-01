@@ -330,5 +330,3 @@ public:
 };
 
 #endif
-
-

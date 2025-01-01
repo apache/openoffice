@@ -363,4 +363,3 @@ namespace dbaui
 }
 
 #endif // _SBA_BWRCTRLR_HXX
-

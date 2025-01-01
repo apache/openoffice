@@ -56,4 +56,3 @@ class DisplayToolsFactory : public autodoc::DisplayToolsFactory_Ifc
 
 
 #endif
-

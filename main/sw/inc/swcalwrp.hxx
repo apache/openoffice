@@ -48,4 +48,3 @@ salhelper::SingletonRef<SwCalendarWrapper>* s_getCalendarWrapper();
 
 
 #endif
-

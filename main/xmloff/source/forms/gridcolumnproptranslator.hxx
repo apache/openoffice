@@ -77,4 +77,3 @@ namespace xmloff
 //........................................................................
 
 #endif // XMLOFF_SOURCE_FORMS_GRIDCOLUMNPROPTRANSLATOR_HXX
-

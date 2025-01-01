@@ -83,4 +83,3 @@ public:
 } // namespace sfx2
 
 #endif
-

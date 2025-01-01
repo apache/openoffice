@@ -69,4 +69,3 @@ public:
 };	
 
 #endif // _FILELIST_HXX
-

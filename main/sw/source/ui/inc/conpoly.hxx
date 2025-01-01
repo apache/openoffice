@@ -48,4 +48,3 @@ public:
 
 
 #endif		// _CONPOLY_HXX
-

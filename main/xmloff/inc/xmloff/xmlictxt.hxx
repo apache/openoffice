@@ -106,4 +106,3 @@ SV_IMPL_REF( SvXMLImportContext )
 
 
 #endif	//  _XMLOFF_XMLICTXT_HXX
-

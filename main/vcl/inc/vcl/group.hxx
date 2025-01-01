@@ -61,4 +61,3 @@ public:
 };
 
 #endif  // _SV_GROUP_HXX
-

@@ -158,4 +158,3 @@ class SvxNumberingPreview : public Window
 
 
 #endif
-

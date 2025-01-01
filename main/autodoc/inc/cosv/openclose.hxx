@@ -136,5 +136,3 @@ OpenCloseGuard::operator bool() const
 
 
 #endif
-
-

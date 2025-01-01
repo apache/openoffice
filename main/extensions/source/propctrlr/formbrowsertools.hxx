@@ -101,4 +101,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_FORMSCTRLR_FORMBROWSERTOOLS_HXX_
-

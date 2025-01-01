@@ -51,4 +51,3 @@ inline const SwFmtRowSplit &SwFmt::GetRowSplit(sal_Bool bInP) const
     { return aSet.GetRowSplit(bInP); }
 
 #endif
-

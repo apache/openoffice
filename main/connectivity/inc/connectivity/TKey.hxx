@@ -46,5 +46,3 @@ namespace connectivity
 	};
 }
 #endif // CONNECTIVITY_TKEY_HXX
-
-

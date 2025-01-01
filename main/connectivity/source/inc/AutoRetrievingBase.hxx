@@ -52,4 +52,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_AUTOKEYRETRIEVINGBASE_HXX_
-

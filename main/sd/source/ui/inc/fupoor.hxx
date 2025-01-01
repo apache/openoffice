@@ -205,4 +205,3 @@ typedef rtl::Reference< FuPoor > FunctionReference;
 } // end of namespace sd
 
 #endif		// _SD_FUPOOR_HXX
-

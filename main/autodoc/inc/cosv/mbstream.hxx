@@ -85,5 +85,3 @@ mbstream::data() const
 
 
 #endif
-
-

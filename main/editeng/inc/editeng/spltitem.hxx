@@ -74,4 +74,3 @@ inline SvxFmtSplitItem& SvxFmtSplitItem::operator=(
 }
 
 #endif
-

@@ -105,5 +105,3 @@ ComponentDescriptionImpl::DescriptionEndTagSize()
 
 
 #endif
-
-

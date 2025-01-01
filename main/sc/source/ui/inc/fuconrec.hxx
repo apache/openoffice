@@ -55,4 +55,3 @@ class FuConstRectangle : public FuConstruct
 
 
 #endif		// _SD_FUCONREC_HXX
-

@@ -118,4 +118,3 @@ namespace dbaui
 //......................................................................
 
 #endif // _DBAUI_INDEXCOLLECTION_HXX_
-

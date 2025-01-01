@@ -68,4 +68,3 @@ public:
 			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xStream );
 
 };
-

@@ -136,4 +136,3 @@ inline const SwFmtHoriOrient &SwFmt::GetHoriOrient(sal_Bool bInP) const
 	{ return aSet.GetHoriOrient(bInP); }
 
 #endif
-

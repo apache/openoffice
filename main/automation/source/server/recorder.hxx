@@ -76,4 +76,3 @@ public:
     static MacroRecorder* GetMacroRecorder();
     static sal_Bool HasMacroRecorder();
 };
-

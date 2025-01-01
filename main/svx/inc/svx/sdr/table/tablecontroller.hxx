@@ -177,4 +177,3 @@ private:
 } }
 
 #endif // _SVX_TABLECONTROLLER_HXX_
-

@@ -135,4 +135,3 @@ public:
 
 #endif // _REDUCED_CONTDLG_HXX_
 #endif // _CONTDLG_HXX_
-

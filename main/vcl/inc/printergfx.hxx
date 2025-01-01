@@ -435,4 +435,3 @@ public:
 
 
 #endif /* _PSPRINT_PRINTERGFX_HXX_ */
-

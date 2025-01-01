@@ -127,4 +127,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // COMPHELPER_ACCESSIBLE_SELECTION_HELPER_HXX
-

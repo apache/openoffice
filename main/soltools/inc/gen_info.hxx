@@ -82,4 +82,3 @@ class GenericInfo
 
 
 #endif
-

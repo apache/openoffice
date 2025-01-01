@@ -262,4 +262,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XMLSTYLE_HXX
-

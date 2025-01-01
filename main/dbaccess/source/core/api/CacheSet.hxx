@@ -155,4 +155,3 @@ namespace dbaccess
 	};
 }
 #endif //DBACCESS_CORE_API_CACHESET_HXX
-

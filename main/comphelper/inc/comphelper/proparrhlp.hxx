@@ -174,5 +174,3 @@ template <class TYPE> inline
 //... namespace comphelper ................................................
 
 #endif // _COMPHELPER_PROPERTY_ARRAY_HELPER_HXX_
-
-

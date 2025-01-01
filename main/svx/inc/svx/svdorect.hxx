@@ -130,4 +130,3 @@ public:
 };
 
 #endif //_SVDORECT_HXX
-

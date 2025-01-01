@@ -76,4 +76,3 @@ public:
 };
 
 #endif	//  _XMLOFF_METATCONTEXT_HXX
-

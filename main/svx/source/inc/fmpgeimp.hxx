@@ -165,4 +165,3 @@ private:
 
 
 #endif // _SVX_FMUNOPGE_HXX
-

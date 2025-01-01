@@ -48,5 +48,3 @@
 #define VOS_POSTCOND(c, m) 	VOS_ENSHURE(c, m)
 
 #endif /* _VOS_DIAGNOSE_H_ */
-
-

@@ -274,4 +274,3 @@ inline sal_Bool AccessibleBrowseBoxHeaderBar::isColumnBar() const
 // ============================================================================
 
 #endif
-

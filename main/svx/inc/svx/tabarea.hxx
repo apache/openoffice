@@ -69,4 +69,3 @@ class SdrModel;
 class SdrView;
 
 #endif // _SVX_TAB_AREA_HXX
-

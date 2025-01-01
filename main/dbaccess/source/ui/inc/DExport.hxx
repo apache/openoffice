@@ -178,8 +178,3 @@ namespace dbaui
 }
 
 #endif // DBAUI_DATABASEEXPORT_HXX
-
-
-
-
-

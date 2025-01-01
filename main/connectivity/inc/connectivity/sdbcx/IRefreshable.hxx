@@ -50,4 +50,3 @@ namespace connectivity
 	}
 }
 #endif //_CONNECTIVITY_SDBCX_IREFRESHABLE_HXX_
-

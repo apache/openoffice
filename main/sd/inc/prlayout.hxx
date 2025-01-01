@@ -49,4 +49,3 @@ enum PresentationObjects
 };
 
 #endif // _SD_PRLAYOUT_HXX_
-

@@ -96,4 +96,3 @@ private:
 
 
 #endif // SC_TPHF_HXX
-

@@ -138,4 +138,3 @@ class PE_Constant : public UnoIDL_PE,
 
 
 #endif
-

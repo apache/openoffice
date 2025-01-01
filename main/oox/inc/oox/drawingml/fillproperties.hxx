@@ -148,4 +148,3 @@ struct GraphicProperties
 } // namespace oox
 
 #endif
-

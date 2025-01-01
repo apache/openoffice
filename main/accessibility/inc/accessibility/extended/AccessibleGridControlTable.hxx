@@ -227,4 +227,3 @@ protected:
 // ============================================================================
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBILEGRIDCONTROLTABLE_HXX
-

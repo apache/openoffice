@@ -110,4 +110,3 @@ public:
 };
 
 #endif // SW_UNDO_DELETE_HXX
-

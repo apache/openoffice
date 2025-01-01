@@ -73,4 +73,3 @@ public:
 
 
 #endif	//  _XMLITEM_HXX
-

@@ -157,4 +157,3 @@ namespace connectivity
 //........................................................................
 
 #endif // CONNECTIVITY_SHAREDRESOURCES_HXX
-

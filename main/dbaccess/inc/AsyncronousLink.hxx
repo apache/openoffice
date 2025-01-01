@@ -64,4 +64,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_ASYNCRONOUSLINK_HXX
-

@@ -72,4 +72,3 @@ namespace utl
 //........................................................................
 
 #endif // UNOTOOLS_INC_UNOTOOLS_DESKTOPTERMINATIONOBSERVER_HXX
-

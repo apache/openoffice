@@ -217,4 +217,3 @@ struct SvxThesaurusDialog_Impl
 };
 
 #endif
-

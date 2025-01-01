@@ -110,4 +110,3 @@ class Tok_EoDocu : public Token
 }   // namespace adoc
 
 #endif
-

@@ -187,4 +187,3 @@ public: \
 }
 
 #endif // _VOS_OBJECT_HXX_
-

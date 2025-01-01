@@ -103,4 +103,3 @@ class SVX_DLLPUBLIC SvxErrorHandler : private SfxErrorHandler
 
 
 #endif
-

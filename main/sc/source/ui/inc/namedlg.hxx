@@ -121,4 +121,3 @@ public:
 
 
 #endif // SC_NAMEDLG_HXX
-

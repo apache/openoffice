@@ -55,4 +55,3 @@ namespace connectivity
 }
 
 #endif // CONNECTIVITY_ADABAS_STATEMENT_HXX
-

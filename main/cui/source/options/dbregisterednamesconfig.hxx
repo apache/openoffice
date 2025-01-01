@@ -46,5 +46,3 @@ namespace svx
 //........................................................................
 
 #endif // SVX_DBREGISTEREDNAMESCONFIG_HXX
-
-

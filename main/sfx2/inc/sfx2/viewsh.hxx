@@ -374,4 +374,3 @@ inline SfxViewFrame* SfxViewShell::GetViewFrame() const
 }
 
 #endif // #ifndef _SFXVIEWSH_HXX
-

@@ -101,4 +101,3 @@ namespace reportdesign
 	};
 }
 #endif // REPORTDESIGN_API_GROUPS_HXX
-

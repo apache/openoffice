@@ -288,4 +288,3 @@ public:
 
 
 #endif // _SWUI_IDXMRK_HXX
-

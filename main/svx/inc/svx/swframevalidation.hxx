@@ -80,4 +80,3 @@ struct SvxSwFrameValidation
 };
 
 #endif
-

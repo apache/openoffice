@@ -51,4 +51,3 @@ public:
 };
 
 #endif	//  _XMLOFF_PROCADDATTRCONTEXT_HXX
-

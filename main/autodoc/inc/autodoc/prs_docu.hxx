@@ -52,4 +52,3 @@ class DocumentationParser_Ifc
 
 
 #endif
-

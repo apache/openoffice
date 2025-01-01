@@ -138,4 +138,3 @@ public:
 };
 
 #endif // SW_UNDO_REDLINE_HXX
-

@@ -141,4 +141,3 @@ public:
 };
 
 #endif // #ifndef _SFXMNUMGR_HXX
-

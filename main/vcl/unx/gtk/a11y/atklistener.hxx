@@ -72,4 +72,3 @@ private:
 };
 
 #endif /* _ATK_LISTENER_HXX_ */
-

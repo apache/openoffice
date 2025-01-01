@@ -143,4 +143,3 @@ class PE_Singleton : public UnoIDL_PE,
 
 
 #endif
-

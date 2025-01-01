@@ -26,4 +26,3 @@
 #include <svtools/imgdef.hxx>
 
 #endif
-

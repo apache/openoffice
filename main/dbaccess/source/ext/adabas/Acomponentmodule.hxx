@@ -272,4 +272,3 @@ typedef ::com::sun::star::uno::Reference< ::com::sun::star::lang::XSingleService
 //.........................................................................
 
 #endif // _EXTENSIONS_COMPONENT_MODULE_HXX_
-

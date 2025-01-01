@@ -199,4 +199,3 @@ namespace connectivity
 //........................................................................
 
 #endif // CONNECTIVITY_STATIC_DBTOOLS_SIMPLE_HXX
-

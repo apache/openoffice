@@ -54,4 +54,3 @@ public:
 };
 
 #endif	//  _XMLOFF_NOTESTCONTEXT_HXX
-

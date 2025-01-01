@@ -126,4 +126,3 @@ private:
 } // end of namespace sd
 
 #endif		// _SD_MOTIONPATHTAG_HXX_
-

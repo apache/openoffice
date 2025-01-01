@@ -152,5 +152,3 @@ pProperties[nPos++] = Property(OPropertyMap::getPropMap().getNameByIndex(PROPERT
 
 
 #endif // _CONNECTIVITY_PROPERTYIDS_HXX_
-
-

@@ -59,4 +59,3 @@ namespace dbaui
 } // namespace dbaui
 //........................................................................
 #endif // DBAUI_APPELEMENTTYPE_HXX
-

@@ -124,5 +124,3 @@ namespace rptui
 } // namespace rptui
 
 #endif /* INCLUDED_REPORTCONTROLLEROBSERVER_HXX */
-
-

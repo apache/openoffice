@@ -607,4 +607,3 @@ public:
 };
 
 #endif // #ifndef INCLUDED_SFX_NEWHELP_HXX
-

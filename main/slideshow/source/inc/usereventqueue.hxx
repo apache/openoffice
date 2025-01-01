@@ -320,4 +320,3 @@ private:
 } // namespace presentation
 
 #endif /* INCLUDED_SLIDESHOW_USEREVENTQUEUE_HXX */
-

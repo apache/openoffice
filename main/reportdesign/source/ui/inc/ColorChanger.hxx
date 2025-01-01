@@ -63,4 +63,3 @@ namespace rptui
 	};
 }
 #endif //RPTUI_COLORCHANGER_HXX
-

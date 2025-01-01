@@ -613,5 +613,3 @@ public:
     bool checkShell( const ViewShell& rCompare ) const
     { return &rCompare == &m_rShell; } 
 };
-
-

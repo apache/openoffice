@@ -85,4 +85,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_JAVA_TOOLS_HXX_
-

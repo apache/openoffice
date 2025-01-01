@@ -38,4 +38,3 @@ namespace svx
 	};
 } // svx
 #endif // SVX_OPTHEADERTABLISTBOX_HXX
-

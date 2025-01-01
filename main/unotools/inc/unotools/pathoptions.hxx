@@ -134,4 +134,3 @@ public:
 };
 
 #endif // #ifndef INCLUDED_unotools_PATHOPTIONS_HXX
-

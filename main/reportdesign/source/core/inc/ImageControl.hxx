@@ -157,4 +157,3 @@ namespace reportdesign
 	};
 }
 #endif //RPT_IMAGECONTROL_HXX
-

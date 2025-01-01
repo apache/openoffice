@@ -78,4 +78,3 @@ void				GatherSubDirectories(
 
 
 #endif
-

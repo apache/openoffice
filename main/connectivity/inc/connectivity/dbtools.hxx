@@ -818,4 +818,3 @@ namespace dbtools
 //.........................................................................
 
 #endif // _CONNECTIVITY_DBTOOLS_HXX_
-

@@ -67,4 +67,3 @@ protected:
 };
 
 #endif	// _BASCTL_BASICIDECTRLR_HXX
-

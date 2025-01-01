@@ -530,4 +530,3 @@ private:
 } // namespace svx
 
 #endif
-

@@ -69,4 +69,3 @@ public:
 };
 
 #endif // SD_GLUECTRL_HXX
-

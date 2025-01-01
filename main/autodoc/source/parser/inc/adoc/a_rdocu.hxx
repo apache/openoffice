@@ -63,5 +63,3 @@ class DocuExplorer
 
 
 #endif
-
-

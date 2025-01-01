@@ -78,4 +78,3 @@ namespace dbaui
 } // dbaui
 //..........................................................................
 #endif //DBACCESS_TOOLBOXCONTROLLER_HXX
-

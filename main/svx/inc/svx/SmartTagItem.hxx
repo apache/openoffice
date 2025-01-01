@@ -88,5 +88,3 @@ public:
 };
 
 #endif // #ifndef _SVX_SMARTTAGITEM_HXX
-
-

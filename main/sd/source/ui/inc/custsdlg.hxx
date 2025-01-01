@@ -109,4 +109,3 @@ public:
 };
 
 #endif // _SD_CUSTSDLG_HXX
-

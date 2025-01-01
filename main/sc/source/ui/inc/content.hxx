@@ -171,4 +171,3 @@ public:
 };
 
 #endif // SC_NAVIPI_HXX
-

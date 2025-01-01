@@ -299,7 +299,3 @@ class SwPostItMgr: public SfxListener
 };
 
 #endif
-
-
-
-

@@ -38,4 +38,3 @@ namespace logging
 //........................................................................
 
 #endif // EXTENSIONS_LOG_MODULE_HXX
-

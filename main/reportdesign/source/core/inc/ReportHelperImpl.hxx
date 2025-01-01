@@ -1284,4 +1284,3 @@ void SAL_CALL clazz::setCharPosture( awt::FontSlant /*_charposture*/ ) throw (be
 
 
 #endif //INCLUDED_REPORTHELPERIMPL_HXX
-

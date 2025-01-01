@@ -120,4 +120,3 @@ inline void SwFilterBase::ClearBytesLeft( void )
 
 
 #endif
-

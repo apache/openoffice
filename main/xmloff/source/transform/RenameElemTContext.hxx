@@ -66,4 +66,3 @@ public:
 };
 
 #endif	//  _XMLOFF_RENAMEELEMCONTEXT_HXX
-

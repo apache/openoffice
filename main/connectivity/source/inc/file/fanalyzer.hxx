@@ -89,4 +89,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_FANALYZER_HXX_
-

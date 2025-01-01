@@ -399,4 +399,3 @@ bool produceType(RegistryKey& typeName, bool bIsExtraType,
 // 				   sal_Bool bNoNameSpace=sal_False);
 
 #endif // INCLUDED_CODEMAKER_SOURCE_CPPUMAKER_CPPUTYPE_HXX
-

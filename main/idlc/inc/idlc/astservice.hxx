@@ -53,4 +53,3 @@ private:
 };
 
 #endif // _IDLC_ASTSERVICE_HXX_
-

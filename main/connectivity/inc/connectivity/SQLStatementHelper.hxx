@@ -44,4 +44,3 @@ namespace dbtools
 //.........................................................................
 
 #endif // _CONNECTIVITY_SQLSTATEMENTHELPER_HXX_
-

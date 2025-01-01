@@ -79,4 +79,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_EVENTEXPORT_HXX_
-

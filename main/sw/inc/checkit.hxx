@@ -47,4 +47,3 @@ public:
 extern SwCheckIt* pCheckIt;
 
 #endif
-

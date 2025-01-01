@@ -71,4 +71,3 @@ public:
 
 
 #endif // _TOOLKIT_HELPER_TKRESMGR_HXX_
-

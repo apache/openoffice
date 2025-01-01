@@ -44,4 +44,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_PROPLINELISTENER_HXX_
-

@@ -82,6 +82,3 @@ namespace svxform
 	};
 }
 #endif // SVX_QUERYDESIGNCONTEXT_HXX
-
-
-

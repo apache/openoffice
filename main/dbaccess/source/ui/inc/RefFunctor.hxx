@@ -53,4 +53,3 @@ namespace dbaui
 } // namespace dbaui
 // -----------------------------------------------------------------------------
 #endif //DBAUI_REFFUNCTOR_HXX
-

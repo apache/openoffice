@@ -75,4 +75,3 @@ class SdrCustomShapeAdjustmentItem : public SfxPoolItem
 };
 
 #endif
-

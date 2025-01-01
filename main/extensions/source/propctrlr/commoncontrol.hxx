@@ -330,4 +330,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_COMMONCONTROL_HXX_
-

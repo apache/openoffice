@@ -101,4 +101,3 @@ SAL_CALL SEInitializer_MSCryptImpl_createInstance( const com::sun::star::uno::Re
 	throw ( com::sun::star::uno::Exception );
 
 #endif
-

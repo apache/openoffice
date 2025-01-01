@@ -309,4 +309,3 @@ private:
 
 
 #endif // _SVX_FMVWIMP_HXX
-

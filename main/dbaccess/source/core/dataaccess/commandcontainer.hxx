@@ -85,5 +85,3 @@ protected:
 //........................................................................
 
 #endif // _DBA_COREDATAACCESS_COMMANDCONTAINER_HXX_
-
-

@@ -361,5 +361,3 @@ SweList_dyn<XX>::size() const
 
 
 #endif
-
-

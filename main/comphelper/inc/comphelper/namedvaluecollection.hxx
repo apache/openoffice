@@ -368,4 +368,3 @@ namespace comphelper
 //........................................................................
 
 #endif // COMPHELPER_NAMEDVALUECOLLECTION_HXX
-

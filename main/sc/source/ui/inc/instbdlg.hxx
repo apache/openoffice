@@ -129,4 +129,3 @@ private:
 #include <layout/layout-post.hxx>
 
 #endif // SC_INSTBDLG_HXX
-

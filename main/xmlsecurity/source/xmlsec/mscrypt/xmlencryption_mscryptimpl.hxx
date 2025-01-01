@@ -95,4 +95,3 @@ class XMLEncryption_MSCryptImpl : public ::cppu::WeakImplHelper3<
 } ;
 
 #endif	// _XMLENCRYPTION_MSCRYPTIMPL_HXX_
-

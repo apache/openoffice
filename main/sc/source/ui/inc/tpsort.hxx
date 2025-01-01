@@ -215,4 +215,3 @@ private:
 #endif /* ENABLE_LAYOUT_EXPERIMENTAL */
 
 #endif // SC_TPSORT_HXX
-

@@ -55,4 +55,3 @@ public:
 } // end of namespace ::svx
 
 #endif // #ifndef _SVX_RADIOBTNBOX_HXX
-

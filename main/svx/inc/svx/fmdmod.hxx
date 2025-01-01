@@ -38,4 +38,3 @@ public:
 };
 
 #endif // _SVX_FMDMOD_HXX
-

@@ -41,4 +41,3 @@ namespace connectivity
 }
 
 #endif // CONNECTIVITY_STDTYPEDEFS_HXX
-

@@ -252,4 +252,3 @@ PE_Exception::PE_StructState::MoveState(
 
 
 #endif
-

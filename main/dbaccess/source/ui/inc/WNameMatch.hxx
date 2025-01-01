@@ -103,6 +103,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_WIZ_NAMEMATCHING_HXX
-
-
-

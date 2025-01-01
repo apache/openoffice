@@ -79,4 +79,3 @@ public:
 }
 
 #endif //_SELECTIONCONTROLLER_HXX
-

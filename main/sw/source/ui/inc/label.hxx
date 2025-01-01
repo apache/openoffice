@@ -92,4 +92,3 @@ inline void SwLabDlg::ReplaceGroup( const String &rMake )
 }
 
 #endif
-

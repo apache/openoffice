@@ -106,4 +106,3 @@ inline const SwFmtFrmSize &SwFmt::GetFrmSize(sal_Bool bInP) const
 	{ return aSet.GetFrmSize(bInP); }
 
 #endif
-

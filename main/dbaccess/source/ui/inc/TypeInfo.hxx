@@ -144,5 +144,3 @@ const sal_uInt16 TYPE_BIT		= 31;
 }
 
 #endif // DBAUI_TYPEINFO_HXX
-
-

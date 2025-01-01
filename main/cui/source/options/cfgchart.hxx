@@ -109,4 +109,3 @@ private:
 };
 
 #endif	// _SVX_CFGCHART_HXX
-

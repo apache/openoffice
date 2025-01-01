@@ -65,4 +65,3 @@ namespace connectivity
 	}
 }
 #endif // CONNECTIVITY_HSQLDB_CATALOG_HXX
-

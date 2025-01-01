@@ -227,4 +227,3 @@ public:
 };
 
 #endif  // _COMBOBOX_HXX
-

@@ -40,4 +40,3 @@ extern SwObjectFactory aSwObjectFactory;
 
 
 #endif // _DOBJFAC_HXX
-

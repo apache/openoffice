@@ -155,5 +155,3 @@ namespace dbaui
 }
 
 #endif // DBAUI_QUERYFILTER_HXX
-
-

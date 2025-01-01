@@ -151,4 +151,3 @@ public:
 
 
 #endif // SC_REFRESHTIMER_HXX
-

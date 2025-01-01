@@ -284,8 +284,3 @@ sal_uInt32 readString(const sal_uInt8* buffer, sal_Unicode* v, sal_uInt32 maxSiz
 sal_uInt32 UINT16StringLen(const sal_uInt8* wstring);
 	
 #endif
-
-
-
-
-

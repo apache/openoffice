@@ -59,4 +59,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_ADABAS_GROUPS_HXX_
-

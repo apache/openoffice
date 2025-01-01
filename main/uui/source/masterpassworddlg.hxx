@@ -59,4 +59,3 @@ private:
 };
 
 #endif // UUI_MASTERPASSWORDDLG_HXX
-

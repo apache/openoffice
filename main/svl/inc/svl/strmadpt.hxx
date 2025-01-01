@@ -128,4 +128,3 @@ public:
 };
 
 #endif // SVTOOLS_STRMADPT_HXX
-

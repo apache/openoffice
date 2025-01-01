@@ -89,4 +89,3 @@ inline void MoreButton::SetState( sal_Bool bNewState )
 }
 
 #endif  // _SV_MOREBTN_HXX
-

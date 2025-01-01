@@ -49,4 +49,3 @@ struct TextBodyProperties
 } // namespace oox
 
 #endif
-

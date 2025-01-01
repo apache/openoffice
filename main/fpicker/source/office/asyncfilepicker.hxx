@@ -111,4 +111,3 @@ namespace svt
 //........................................................................
 
 #endif // SVTOOLS_SOURCE_FILEPICKER_ASYNCFILEPICKER_HXX
-

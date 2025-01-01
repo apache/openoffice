@@ -76,4 +76,3 @@ inline SvxSizeItem& SvxSizeItem::operator=( const SvxSizeItem &rCpy )
 }
 
 #endif
-

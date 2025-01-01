@@ -105,4 +105,3 @@ PageCache_createInstance (
 } // namespace store
 
 #endif /* !_STORE_STORCACH_HXX */
-

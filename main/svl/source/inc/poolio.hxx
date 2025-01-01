@@ -207,4 +207,3 @@ inline sal_uInt16 SfxItemPool::GetIndex_Impl(sal_uInt16 nWhich) const
 	DBG_ASSERT(nWhich >= nStart && nWhich <= nEnd, "Which-Id nicht im Pool-Bereich");
 	return nWhich - nStart;
 }
-

@@ -48,4 +48,3 @@ class DocuParser_AutodocStyle : public autodoc::DocumentationParser_Ifc
 
 
 #endif
-

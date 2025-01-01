@@ -269,4 +269,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_OTOOLS_HXX_
-

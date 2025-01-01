@@ -84,4 +84,3 @@ public:
 } // namespace comphelper
 
 #endif
-

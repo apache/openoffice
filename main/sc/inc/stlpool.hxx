@@ -79,4 +79,3 @@ private:
 };
 
 #endif	   // SC_STLPOOL_HXX
-

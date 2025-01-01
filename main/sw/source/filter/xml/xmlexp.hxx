@@ -183,4 +183,3 @@ inline const SvXMLUnitConverter& SwXMLExport::GetTwipUnitConverter() const
 
 
 #endif	//  _XMLEXP_HXX
-

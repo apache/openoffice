@@ -56,4 +56,3 @@ public:
 };
 
 #endif // UUI_COOKIEDG_HXX
-

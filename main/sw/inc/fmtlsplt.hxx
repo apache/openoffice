@@ -51,4 +51,3 @@ inline const SwFmtLayoutSplit &SwFmt::GetLayoutSplit(sal_Bool bInP) const
 	{ return aSet.GetLayoutSplit(bInP); }
 
 #endif
-

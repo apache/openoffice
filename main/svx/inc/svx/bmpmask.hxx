@@ -194,4 +194,3 @@ private:
 					 GetWindow() ) )
 
 #endif // _BMPMASK_HXX_
-

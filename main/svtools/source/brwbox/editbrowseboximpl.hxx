@@ -38,4 +38,3 @@ namespace svt
 	};
 }
 #endif // SVTOOLS_EDITBROWSEBOX_IMPL_HXX
-

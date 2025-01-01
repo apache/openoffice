@@ -54,5 +54,3 @@ public:
 
 
 #endif // SC_INSCLDLG_HXX
-
-

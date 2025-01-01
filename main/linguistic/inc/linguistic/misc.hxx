@@ -262,4 +262,3 @@ public:
 }	// namespace linguistic
 
 #endif
-

@@ -43,5 +43,3 @@ namespace dbaui
 	};
 }
 #endif //DBAUI_RELTABLEWINDOW_HXX
-
-

@@ -67,4 +67,3 @@ class TokenDealer : virtual public ::TokenDealer
 
 
 #endif
-

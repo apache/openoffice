@@ -87,4 +87,3 @@ public:
     const String& GetString(StringId eId);
 };            
 #endif
-

@@ -98,4 +98,3 @@ public:
 
 
 #endif // _SV_FILTER_OPTIONS_DIALOG_HXX_
-

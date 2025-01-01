@@ -72,5 +72,3 @@ StmBoundsStatus::StatusFunctionNr() const
 
 
 #endif
-
-

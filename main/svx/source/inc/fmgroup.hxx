@@ -113,4 +113,3 @@ protected:
 
 
 #endif // _SVX_FMGROUP_HXX
-

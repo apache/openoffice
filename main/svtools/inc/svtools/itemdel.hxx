@@ -32,4 +32,3 @@ SVT_DLLPUBLIC SfxPoolItem* DeleteItemOnIdle( SfxPoolItem* pItem );
 void DeleteOnIdleItems();
 
 #endif
-

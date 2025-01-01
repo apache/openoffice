@@ -168,4 +168,3 @@ public:
 };
 
 #endif /* SC_VBA_WORKSHEET_HXX */
-

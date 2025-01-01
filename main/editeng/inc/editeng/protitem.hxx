@@ -98,4 +98,3 @@ inline SvxProtectItem &SvxProtectItem::operator=( const SvxProtectItem &rCpy )
 
 
 #endif
-

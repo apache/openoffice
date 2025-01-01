@@ -539,5 +539,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_ODBC_OFUNCTIONS_HXX_
-
-

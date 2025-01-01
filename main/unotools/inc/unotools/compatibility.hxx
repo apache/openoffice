@@ -246,4 +246,3 @@ class UNOTOOLS_DLLPUBLIC SvtCompatibilityOptions: public utl::detail::Options
 };      // class SvtCompatibilityOptions
 
 #endif  // #ifndef INCLUDED_unotools_COMPATIBILITY_HXX
-

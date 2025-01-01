@@ -111,4 +111,3 @@ namespace dbaui
 //......................................................................
 
 #endif // _DBAUI_INDEXFIELDSCONTROL_HXX_
-

@@ -125,4 +125,3 @@ inline void LotusToSc::SetWK3( void )
 
 
 #endif
-

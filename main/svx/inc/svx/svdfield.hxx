@@ -29,4 +29,3 @@
 void SVX_DLLPUBLIC SdrRegisterFieldClasses();
 
 #endif //_SVDFIELD_HXX
-

@@ -162,5 +162,3 @@ CharacterSource::CurPos() const
 
 
 #endif
-
-

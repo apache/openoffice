@@ -201,4 +201,3 @@ protected:
 };
 
 #endif // _SVX_TABBASE_HYPERLINK_HXX
-

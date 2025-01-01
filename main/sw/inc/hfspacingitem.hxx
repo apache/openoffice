@@ -52,4 +52,3 @@ inline const SwHeaderAndFooterEatSpacingItem &SwFmt::GetHeaderAndFooterEatSpacin
     { return aSet.GetHeaderAndFooterEatSpacing(bInP); }
 
 #endif
-

@@ -71,4 +71,3 @@ inline void XclImpOutlineBuffer::SetButtonMode( const sal_Bool b )
 
 
 #endif
-

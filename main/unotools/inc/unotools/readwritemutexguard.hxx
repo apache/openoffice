@@ -106,4 +106,3 @@ public:
 }   // namespace utl
 
 #endif // INCLUDED_UNOTOOLS_READWRITEMUTEXGUARD_HXX
-

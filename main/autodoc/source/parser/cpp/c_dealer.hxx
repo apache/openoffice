@@ -101,4 +101,3 @@ class Distributor : public cpp::TokenDealer,        /// Handle C++ code tokens.
 
 }   // namespace cpp
 #endif
-

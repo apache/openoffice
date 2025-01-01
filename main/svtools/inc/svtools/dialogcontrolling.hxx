@@ -299,4 +299,3 @@ namespace svt
 //........................................................................
 
 #endif // SVTOOLS_DIALOGCONTROLLING_HXX
-

@@ -273,4 +273,3 @@ typedef char Output_t;
 typedef std::vector< Output_t > OutputBuffer;
 
 #endif /* INCLUDED_PDFI_OUTDEV_HXX */
-

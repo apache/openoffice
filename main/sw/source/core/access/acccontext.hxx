@@ -459,4 +459,3 @@ const sal_Char sMissingWindow[] = "window is missing";
 		THROW_RUNTIME_EXCEPTION( i, sMissingWindow );						\
 	}
 #endif
-

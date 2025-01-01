@@ -499,4 +499,3 @@ private:
 };
 
 #endif // INCLUDED_SLIDESHOW_TRANSITION_HXX_
-

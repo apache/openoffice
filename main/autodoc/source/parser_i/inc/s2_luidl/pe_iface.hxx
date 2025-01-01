@@ -177,4 +177,3 @@ class PE_Interface : public UnoIDL_PE,
 
 
 #endif
-

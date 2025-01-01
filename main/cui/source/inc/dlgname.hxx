@@ -197,4 +197,3 @@ public:
 
 
 #endif // _SVX_DLG_NAME_HXX
-

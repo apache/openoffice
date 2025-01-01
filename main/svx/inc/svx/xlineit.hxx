@@ -47,4 +47,3 @@ class SvStream;
 #include <svx/xlnedcit.hxx>
 
 #endif
-

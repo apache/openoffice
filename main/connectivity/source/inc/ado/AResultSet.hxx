@@ -229,5 +229,3 @@ namespace connectivity
 
 }
 #endif // _CONNECTIVITY_ADO_ARESULTSET_HXX_
-
-

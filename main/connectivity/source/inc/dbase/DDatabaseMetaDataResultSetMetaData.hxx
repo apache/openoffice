@@ -100,5 +100,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_ADATABASEMETARESULTSETMETADATA_HXX_
-
-

@@ -153,4 +153,3 @@ DocuToken::IsWhite() const
 }
 
 #endif
-

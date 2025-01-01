@@ -88,4 +88,3 @@ class Point;
  };
 
 #endif // IBLOCKCURSOR_HXX_INCLUDED
-

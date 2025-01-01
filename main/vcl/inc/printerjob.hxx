@@ -142,4 +142,3 @@ public:
 }  /* namespace psp */
 
 #endif /* _PSPRINT_PRINTERJOB_HXX_ */
-

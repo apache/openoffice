@@ -153,4 +153,3 @@ bInherited:
 */
 
 #endif //_SVDLAYER_HXX
-

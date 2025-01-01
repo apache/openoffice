@@ -71,4 +71,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XMLPROPERTYSETCONTEXT_HXX
-

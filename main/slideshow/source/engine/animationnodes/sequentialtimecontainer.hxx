@@ -68,4 +68,3 @@ private:
 } // namespace slideshow
 
 #endif /* INCLUDED_SLIDESHOW_SEQUENTIALTIMECONTAINER_HXX */
-

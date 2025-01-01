@@ -50,4 +50,3 @@ void mscx_raiseException(
 	uno_Any * pUnoExc, uno_Mapping * pUno2Cpp );
 
 }
-

@@ -198,5 +198,3 @@ extern com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CAL
 ////////////////////////////////////////////////////////////
 
 #endif
-
-

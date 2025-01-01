@@ -82,4 +82,3 @@ class HF_IdlGlobalIndex : public HtmlFactory_Idl
 
 
 #endif
-

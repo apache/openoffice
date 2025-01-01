@@ -311,7 +311,3 @@
 #include <com/sun/star/frame/XFrames.hdl>
 #include <svx/msdffdef.hxx>
 #include <vcl/image.hxx>
-
-
-
-

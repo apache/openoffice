@@ -41,4 +41,3 @@ boost::shared_ptr<Activity> createDrawingLayerAnimActivity(
 } // namespace presentation
 
 #endif // ! defined INCLUDED_DRAWINGLAYERANIMATION_HXX
-

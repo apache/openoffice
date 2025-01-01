@@ -60,4 +60,3 @@ private:
 };
 
 #endif // _SVX_OPENGRF_HXX
-

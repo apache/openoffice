@@ -77,5 +77,3 @@ class ComponentDescription
 
 
 #endif
-
-

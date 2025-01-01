@@ -98,4 +98,3 @@ sal_Int64 SAL_CALL classname::getSomething( const ::com::sun::star::uno::Sequenc
 
 
 #endif // _COMPHELPER_SERVICEHELPER_HXX_
-

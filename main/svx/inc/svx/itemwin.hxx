@@ -190,4 +190,3 @@ private:
 };
 
 #endif // #ifndef _SVX_ITEMWIN_HXX
-

@@ -143,4 +143,3 @@ bstream::position() const
 
 
 #endif
-

@@ -67,5 +67,3 @@ class PE_Ignore : public Cpp_PE
 
 
 #endif
-
-

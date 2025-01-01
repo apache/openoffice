@@ -164,4 +164,3 @@ public:
 };
 
 #endif // _SV_SCRBAR_HXX
-

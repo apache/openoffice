@@ -54,4 +54,3 @@ namespace uui
 } // namespace uui
 
 #endif // #ifndef _NEWERVERSIONWARNING_HXX
-

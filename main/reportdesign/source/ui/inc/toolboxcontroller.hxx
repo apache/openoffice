@@ -84,4 +84,3 @@ namespace rptui
 } // rptui
 //..........................................................................
 #endif //RPTUI_TOOLBOXCONTROLLER_HXX
-

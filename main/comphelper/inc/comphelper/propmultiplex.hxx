@@ -109,4 +109,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // _COMPHELPER_PROPERTY_MULTIPLEX_HXX_
-

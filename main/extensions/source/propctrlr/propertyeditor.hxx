@@ -155,5 +155,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_PROPERTYEDITOR_HXX_
-
-

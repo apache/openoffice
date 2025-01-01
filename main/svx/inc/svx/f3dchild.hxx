@@ -44,4 +44,3 @@ class SVX_DLLPUBLIC Svx3DChildWindow : public SfxChildWindow
 };
 
 #endif		// _SVX_F3DCHILD_HXX
-

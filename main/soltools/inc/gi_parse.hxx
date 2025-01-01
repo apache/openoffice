@@ -157,5 +157,3 @@ GenericInfo_Parser::GetLastError( UINT32 * o_pErrorLine ) const
 
 
 #endif
-
-

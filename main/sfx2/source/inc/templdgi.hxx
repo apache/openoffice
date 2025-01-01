@@ -390,5 +390,3 @@ friend class SfxTemplateCatalog;
 };
 
 #endif // #ifndef _SFX_TEMPDLGI_HXX
-
-

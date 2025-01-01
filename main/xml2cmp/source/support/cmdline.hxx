@@ -79,4 +79,3 @@ class CommandLine
 
 
 #endif
-

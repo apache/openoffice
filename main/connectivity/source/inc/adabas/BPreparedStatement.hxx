@@ -45,4 +45,3 @@ namespace connectivity
 }
 
 #endif // CONNECTIVITY_ADABAS_PREPAREDSTATEMENT_HXX
-

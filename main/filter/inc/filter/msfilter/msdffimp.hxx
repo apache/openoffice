@@ -800,4 +800,3 @@ struct SvxMSDffShapeOrder
 };
 
 #endif
-

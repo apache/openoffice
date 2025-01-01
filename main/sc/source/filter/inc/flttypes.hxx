@@ -44,4 +44,3 @@ enum Lotus123Typ
 };
 
 #endif
-

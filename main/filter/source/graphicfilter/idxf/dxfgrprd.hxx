@@ -147,5 +147,3 @@ inline const char * DXFGroupReader::GetS()
 }
 
 #endif
-
-

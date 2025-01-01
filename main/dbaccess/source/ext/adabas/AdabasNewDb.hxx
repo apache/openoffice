@@ -158,4 +158,3 @@ namespace adabasui
 	};
 }
 #endif // adabasui_ADABAS_CREATEDB_HXX
-

@@ -78,4 +78,3 @@ SAL_CALL SEInitializer_NssImpl_createInstance( const ::com::sun::star::uno::Refe
     throw ( ::com::sun::star::uno::Exception );
 
 #endif
-

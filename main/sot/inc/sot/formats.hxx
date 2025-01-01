@@ -187,4 +187,3 @@
 #define SOT_FORMATSTR_ID_USER_END               SOT_FORMATSTR_ID_SVG
 
 #endif // _SOT_FORMATS_HXX
-

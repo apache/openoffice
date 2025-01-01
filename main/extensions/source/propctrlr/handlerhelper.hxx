@@ -210,4 +210,3 @@ namespace pcr
 //........................................................................
 
 #endif // EXTENSIONS_SOURCE_PROPCTRLR_HANDLERHELPER_HXX
-

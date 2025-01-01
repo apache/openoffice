@@ -74,4 +74,3 @@ public:
 };
 
 #endif //_SVDITER_HXX
-

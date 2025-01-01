@@ -161,5 +161,3 @@ namespace dbaccess
 }	// namespace dbaccess
 //........................................................................
 #endif // DBA_CORE_SHARED_CONNECTION_HXX
-
-

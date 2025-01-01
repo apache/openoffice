@@ -49,5 +49,3 @@ struct ScFunctionData					// zum Berechnen von einzelnen Funktionen
 
 
 #endif
-
-

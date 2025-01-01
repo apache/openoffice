@@ -70,4 +70,3 @@ public:
 
 #endif // IDL_COMPILER
 #endif // _ATTRIB_HXX
-

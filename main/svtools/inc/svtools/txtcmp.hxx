@@ -26,4 +26,3 @@
 #include <unotools/textsearch.hxx>
 
 #endif
-

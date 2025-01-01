@@ -103,4 +103,3 @@ public:
 };
 
 #endif // _IPWIN_HXX
-

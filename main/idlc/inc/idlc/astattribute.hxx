@@ -114,4 +114,3 @@ private:
 };
 
 #endif // _IDLC_ASTATTRIBUTE_HXX_
-

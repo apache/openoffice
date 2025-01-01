@@ -55,4 +55,3 @@ private:
 };
 
 #endif // _IDLC_ASTBASETYPE_HXX_
-

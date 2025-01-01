@@ -141,4 +141,3 @@ public:
 }
 
 #endif // _COMPHELPER_MIMECONFIGHELPER_HXX_
-

@@ -37,4 +37,3 @@ void setErrorRecorder();
 void clearErrorRecorder();
 
 #endif
-

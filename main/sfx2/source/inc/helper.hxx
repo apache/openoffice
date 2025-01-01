@@ -70,5 +70,3 @@ public:
 };
 
 #endif // #ifndef _SFX_HELPER_HXX
-
-

@@ -38,4 +38,3 @@ XNameContainer* getApplicationSettings();
 #endif
 
 #endif
-

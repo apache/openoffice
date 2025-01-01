@@ -215,4 +215,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_OBOUNPARAM_HXX_
-

@@ -206,4 +206,3 @@ namespace dbaui
 //........................................................................
 
 #endif // DBAUI_SUBCOMPONENTCONTROLLER_HXX
-

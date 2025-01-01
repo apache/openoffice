@@ -176,4 +176,3 @@ public:
     } while (0)
 
 #endif // _TOOLKIT_AWT_UNOCONTROLMODEL_HXX_
-

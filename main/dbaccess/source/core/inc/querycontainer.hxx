@@ -226,5 +226,3 @@ namespace dbaccess
 //........................................................................
 
 #endif // _DBA_CORE_QUERYCONTAINER_HXX_
-
-

@@ -71,4 +71,3 @@ class PageMaker_Namespace : public SpecializedPageMaker
 
 
 #endif
-

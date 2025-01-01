@@ -169,5 +169,3 @@ namespace connectivity
 
 }
 #endif //_CONNECTIVITY_ADABAS_BDRIVER_HXX_
-
-

@@ -65,4 +65,3 @@ inline FmInterfaceItem& FmInterfaceItem::operator=( const FmInterfaceItem &rCpy 
 
 
 #endif // _SVX_FMITEMS_HXX
-

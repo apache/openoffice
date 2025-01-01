@@ -151,4 +151,3 @@ OOneInstanceAutoRegistration<TYPE>::~OOneInstanceAutoRegistration()
 {
 	OModuleRegistration::revokeComponent(TYPE::getImplementationName_Static());
 }
-

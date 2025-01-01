@@ -241,4 +241,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ODBC_OSTATEMENT_HXX_
-

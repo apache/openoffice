@@ -82,4 +82,3 @@ namespace pcr
 //........................................................................
 
 #endif // EXTENSIONS_SOURCE_PROPCTRLR_LISTSELECTIONDLG_HXX
-

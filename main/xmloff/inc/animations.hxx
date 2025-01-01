@@ -60,4 +60,3 @@ extern struct ImplAttributeNameConversion* getAnimationAttributeNamesConversionL
 }
 
 #endif	//  _XMLOFF_ANIMATIONS_HXX
-

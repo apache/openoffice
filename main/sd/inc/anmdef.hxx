@@ -34,4 +34,3 @@
 #define CLICK_ACTION_COUNT 14
 
 #endif	// _SD_ANIMATIONDEF_HXX
-

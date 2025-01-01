@@ -152,5 +152,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_DBASE_INDEX_HXX_
-
-

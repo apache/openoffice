@@ -84,4 +84,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_JAVA_SQL_CALLABLESTATEMENT_HXX_
-

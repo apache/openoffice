@@ -58,4 +58,3 @@ public:
 
 
 #endif	//  _XMLOFF_XMLTABI_HXX
-

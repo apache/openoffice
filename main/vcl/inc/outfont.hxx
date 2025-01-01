@@ -399,4 +399,3 @@ private:
 };
 
 #endif // _SV_OUTFONT_HXX
-

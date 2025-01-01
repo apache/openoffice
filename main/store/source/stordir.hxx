@@ -142,4 +142,3 @@ SAL_CALL query (IStoreHandle *pHandle, OStoreDirectory_Impl*)
 } // namespace store
 
 #endif /* !_STORE_STORDIR_HXX_ */
-

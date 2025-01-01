@@ -276,4 +276,3 @@ inline void CntUInt32Item::SetValue(sal_uInt32 nTheValue)
 }
 
 #endif // _SVTOOLS_CINTITEM_HXX
-

@@ -90,4 +90,3 @@ typedef ::std::vector< XclFormatRun > XclFormatRunVec;
 // ============================================================================
 
 #endif
-

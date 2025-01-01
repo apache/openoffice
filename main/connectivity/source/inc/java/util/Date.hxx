@@ -47,4 +47,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_JAVA_UTIL_DATE_HXX_
-

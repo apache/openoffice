@@ -147,4 +147,3 @@ public:
 
 
 #endif // _TOOLKIT_AWT_VCLXGRAPHICS_HXX_
-

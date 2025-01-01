@@ -110,5 +110,3 @@
 #define ERRCTX_SFX_SEARCHADDRESS		90
 
 #endif // #ifndef _SFXECODE_HXX
-
-

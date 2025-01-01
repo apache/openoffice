@@ -44,4 +44,3 @@ public:
 
 
 #endif // _TOOLKIT_HELPER_MUTEXHELPER_HXX_
-

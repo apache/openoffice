@@ -544,4 +544,3 @@ protected:
 
 
 #endif // _SVX_FMGRID_HXX
-

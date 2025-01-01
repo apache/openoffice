@@ -35,4 +35,3 @@ public:
 };
 
 #endif // _IDLC_ASTCONSTANTS_HXX_
-

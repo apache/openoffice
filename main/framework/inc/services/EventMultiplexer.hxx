@@ -119,4 +119,3 @@ private:
 } // end of namespace framework
 
 #endif
-

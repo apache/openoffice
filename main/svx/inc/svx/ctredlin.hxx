@@ -426,4 +426,3 @@ public:
 
 
 #endif // _SVX_CTREDLIN_HXX
-

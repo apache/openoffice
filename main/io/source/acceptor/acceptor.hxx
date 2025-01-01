@@ -71,4 +71,3 @@ namespace io_acceptor {
 	};
 	
 }
-

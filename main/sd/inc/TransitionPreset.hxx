@@ -88,4 +88,3 @@ private:
 }
 
 #endif // _SD_TRANSITIONPRESET_HXX
-

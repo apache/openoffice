@@ -246,4 +246,3 @@ inline void SelectionEngine::SetAnchor( sal_Bool bAnchor )
 }
 
 #endif	// _SV_SELENG_HXX
-

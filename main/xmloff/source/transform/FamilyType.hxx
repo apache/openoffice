@@ -53,4 +53,3 @@ enum XMLFamilyType
 };
 
 #endif	//  _XMLOFF_FAMILYTYPE_HXX
-

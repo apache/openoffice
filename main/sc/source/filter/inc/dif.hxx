@@ -219,5 +219,3 @@ inline void DifAttrCache::SetLogical( const SCCOL nCol, const SCROW nRow )
 
 
 #endif
-
-

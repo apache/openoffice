@@ -51,4 +51,3 @@ public:
 	sal_Bool			AddSearchPath( const char* aPath );
 	sal_Bool			AddSource( const char * aSource );
 };
-

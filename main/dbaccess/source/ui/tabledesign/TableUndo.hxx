@@ -170,5 +170,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEUNDO_HXX
-
-

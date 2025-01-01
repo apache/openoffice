@@ -234,4 +234,3 @@ inline void SfxFontItem::setLanguage(LanguageType nTheLanguage)
 }
 
 #endif // _SFONTITM_HXX
-

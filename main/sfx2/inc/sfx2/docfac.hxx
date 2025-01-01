@@ -134,4 +134,3 @@ public:                                                                     \
                                   return *pObjectFactory;                    \
                                 }
 #endif // #ifndef _SFX_OBJFAC_HXX
-

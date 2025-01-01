@@ -196,4 +196,3 @@ namespace utl
 //........................................................................
 
 #endif // UNOTOOLS_INC_UNOTOOLS_COMPONENTRESMODULE_HXX
-

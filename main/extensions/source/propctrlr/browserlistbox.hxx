@@ -242,5 +242,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_BROWSERLISTBOX_HXX_
-
-

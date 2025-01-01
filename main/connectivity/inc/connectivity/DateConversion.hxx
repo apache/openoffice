@@ -87,4 +87,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_DATECONVERSION_HXX_
-

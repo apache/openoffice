@@ -34,4 +34,3 @@ namespace comphelper
 }
 
 #endif // _COMPHELPER_GENERICPROPERTYSET_HXX_
-

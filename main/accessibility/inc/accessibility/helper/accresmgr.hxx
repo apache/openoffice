@@ -65,4 +65,3 @@ public:
 
 
 #endif // ACCESSIBILITY_HELPER_TKARESMGR_HXX
-

@@ -312,5 +312,3 @@ inline void SvImpIconView::MakeVisible( SvLBoxEntry* pEntry )
 }
 
 #endif // #ifndef _SVIMPICN_HXX
-
-

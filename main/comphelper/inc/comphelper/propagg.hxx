@@ -322,4 +322,3 @@ protected:
 //.........................................................................
 
 #endif // _COMPHELPER_PROPERTY_AGGREGATION_HXX_
-

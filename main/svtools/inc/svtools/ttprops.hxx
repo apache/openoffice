@@ -99,4 +99,3 @@ public:
 };
 
 #endif // _SVTOOLS_TTPROPS_HXX
-

@@ -291,4 +291,3 @@ namespace rptui
 }	//rptui
 //==================================================================
 #endif // RPTUI_DESIGNVIEW_HXX
-

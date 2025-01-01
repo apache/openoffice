@@ -45,4 +45,3 @@ public:
 };
 
 #endif	// _SD_BMCACHE_HXX
-

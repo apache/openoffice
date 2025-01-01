@@ -176,4 +176,3 @@ private:
 } ;
 
 #endif	// _XSECURITYENVIRONMENT_NSSIMPL_HXX_
-

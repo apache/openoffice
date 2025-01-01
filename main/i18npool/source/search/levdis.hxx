@@ -222,4 +222,3 @@ inline bool WLevDistance::SetSplit( bool bNewSplit )
 }
 
 #endif      // _LEVDIS_HXX
-

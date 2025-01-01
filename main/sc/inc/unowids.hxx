@@ -89,4 +89,3 @@ inline sal_Bool IsScItemWid( sal_uInt16 nWid )
 }
 
 #endif
-

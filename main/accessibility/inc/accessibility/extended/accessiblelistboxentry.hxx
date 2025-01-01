@@ -247,4 +247,3 @@ namespace accessibility
 //........................................................................
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBLELISTBOXENTRY_HXX_
-

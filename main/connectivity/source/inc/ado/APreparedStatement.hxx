@@ -117,4 +117,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADO_APREPAREDSTATEMENT_HXX_
-

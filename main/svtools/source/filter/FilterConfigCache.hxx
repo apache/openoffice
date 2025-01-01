@@ -138,4 +138,3 @@ class SVT_DLLPUBLIC FilterConfigCache
 };
 
 #endif	// _FILTER_CONFIG_CACHE_HXX_
-

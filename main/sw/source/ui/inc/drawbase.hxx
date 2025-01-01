@@ -83,4 +83,3 @@ public:
 
 
 #endif		// _SW_DRAWBASE_HXX
-

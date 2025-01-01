@@ -327,4 +327,3 @@ private:
 } // namespace presentation
 
 #endif /* INCLUDED_SLIDESHOW_ACTIVITIESFACTORY_HXX */
-

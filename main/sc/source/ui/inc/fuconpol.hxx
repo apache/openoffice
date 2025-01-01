@@ -56,4 +56,3 @@ class FuConstPolygon : public FuConstruct
 
 
 #endif		// _FUCONPOL_HXX
-

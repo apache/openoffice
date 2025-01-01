@@ -110,4 +110,3 @@ SV_DECL_IMPL_PERSIST_LIST(SvMetaModule,SvMetaModule *)
 
 
 #endif // _MODULE_HXX
-

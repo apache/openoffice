@@ -193,4 +193,3 @@ public:
 };
 
 #endif  // _SV_FIXED_HXX
-

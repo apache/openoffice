@@ -208,4 +208,3 @@ SD_CONSTASCII_ACTION( sUNO_View_VisibleAreaHeight,				"VisibleAreaHeight" );
 
 SD_CONSTASCII_ACTION( sUNO_View_ZoomOnPage,						"ZoomOnPage" );
 #endif
-

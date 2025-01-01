@@ -152,6 +152,3 @@ typedef rtl::Reference< SdStyleSheet > SdStyleSheetRef;
 typedef std::vector< SdStyleSheetRef > SdStyleSheetVector;
 
 #endif	   // _SD_STLSHEET_HXX
-
-
-

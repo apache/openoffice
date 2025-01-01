@@ -141,4 +141,3 @@ Simstr::is_empty() const               { return len == 0; }
 
 
 #endif 
-

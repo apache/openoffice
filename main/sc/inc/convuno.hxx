@@ -211,4 +211,3 @@ inline sal_Bool operator!=(
 }
 
 #endif
-

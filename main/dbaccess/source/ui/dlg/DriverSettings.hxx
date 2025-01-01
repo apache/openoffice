@@ -105,4 +105,3 @@ namespace dbaui
 }
 
 #endif // DBAUI_DRIVERSETTINGS_HXX
-

@@ -60,5 +60,3 @@ class StmStatus	// := "State machine status"
 
 
 #endif
-
-

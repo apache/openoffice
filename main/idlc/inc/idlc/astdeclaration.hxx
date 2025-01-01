@@ -141,4 +141,3 @@ protected:
 };
 
 #endif // _IDLC_ASTDECLARATION_HXX_
-

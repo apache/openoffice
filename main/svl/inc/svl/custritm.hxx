@@ -85,4 +85,3 @@ inline void CntUnencodedStringItem::SetValue(const XubString & rTheValue)
 }
 
 #endif //  _SVTOOLS_CUSTRITM_HXX
-

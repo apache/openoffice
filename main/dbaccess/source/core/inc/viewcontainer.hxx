@@ -131,5 +131,3 @@ namespace dbaccess
 	};
 }
 #endif // _DBA_CORE_VIEWCONTAINER_HXX_
-
-

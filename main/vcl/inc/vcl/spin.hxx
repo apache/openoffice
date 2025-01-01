@@ -111,4 +111,3 @@ private:
 };
 
 #endif  // _SV_SPIN_HXX
-

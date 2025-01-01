@@ -122,4 +122,3 @@ private:
 
 
 #endif // SC_DBNAMDLG_HXX
-

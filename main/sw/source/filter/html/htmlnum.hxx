@@ -123,5 +123,3 @@ inline void SwHTMLNumRuleInfo::SetNodeStartValue( sal_uInt8 nLvl, sal_uInt16 nVa
 
 
 #endif
-
-

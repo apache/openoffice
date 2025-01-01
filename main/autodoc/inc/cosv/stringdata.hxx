@@ -127,5 +127,3 @@ StringData<CHAR>::Size() const
 
 
 #endif
-
-

@@ -36,5 +36,3 @@ SVX_DLLPUBLIC ::com::sun::star::uno::Reference< com::sun::star::uno::XInterface 
 SVX_DLLPUBLIC ::com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL SvxUnoXBitmapTable_createInstance( XPropertyList* pList ) throw();
 
 #endif
-
-

@@ -1016,5 +1016,3 @@ inline void SwHTMLParser::PushContext( _HTMLAttrContext *pCntxt )
 
 
 #endif
-
-

@@ -121,4 +121,3 @@ namespace connectivity
 	}
 }
 #endif // CONNECTIVITY_HSQLDB_TABLE_HXX
-

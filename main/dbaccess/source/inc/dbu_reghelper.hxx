@@ -53,4 +53,3 @@ namespace dbaui
 }
 
 #endif // _DBU_REGHELPER_HXX_
-

@@ -218,4 +218,3 @@ namespace dbtools
 //.........................................................................
 
 #endif // _DBHELPER_DBCONVERSION_HXX_
-

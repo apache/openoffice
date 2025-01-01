@@ -49,4 +49,3 @@ bool storeExtensionUpdateInfos(
     const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext,
     const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< rtl::OUString > > &rUpdateInfos
 );
-

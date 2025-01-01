@@ -121,4 +121,3 @@ namespace osl
 
 #endif  /* __cplusplus */
 #endif	/* _OSL_CONDITN_HXX_ */
-

@@ -124,4 +124,3 @@ public:
 } // namespace dp_gui
 
 #endif
-

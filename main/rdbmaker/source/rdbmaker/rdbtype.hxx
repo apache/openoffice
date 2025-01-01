@@ -45,4 +45,3 @@ sal_Bool produceType(const ::rtl::OString& typeName,
 				 throw( CannotDumpException );
 
 #endif // _RDBMAKER_RDBTYPE_HXX_
-

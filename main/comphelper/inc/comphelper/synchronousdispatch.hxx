@@ -67,4 +67,3 @@ namespace comphelper
 //........................................................................
 
 #endif // _COMPHELPER_SYNCHRONOUSDISPATCH_HXX
-

@@ -97,4 +97,3 @@ struct ScInterpreterTableOpParams
 DECLARE_LIST( ScTabOpList, ScInterpreterTableOpParams* )
 
 #endif // SC_TABOPPARAMS_HXX
-

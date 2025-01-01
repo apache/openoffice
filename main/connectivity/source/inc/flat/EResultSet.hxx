@@ -74,4 +74,3 @@ namespace connectivity
 	}
 }
 #endif //_CONNECTIVITY_FLAT_DRESULTSET_HXX_
-

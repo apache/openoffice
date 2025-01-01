@@ -55,5 +55,3 @@ class PE_Module : public ::ParseEnvironment
 
 }   // namespace uidl
 }   // namespace csi
-
-

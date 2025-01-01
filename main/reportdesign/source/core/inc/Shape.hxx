@@ -175,4 +175,3 @@ namespace reportdesign
 	};
 }
 #endif //RPT_SHAPE_HXX
-

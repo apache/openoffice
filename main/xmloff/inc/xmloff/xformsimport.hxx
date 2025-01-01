@@ -83,5 +83,3 @@ void XMLOFF_DLLPUBLIC applyXFormsSettings(
     );
 
 #endif
-
-

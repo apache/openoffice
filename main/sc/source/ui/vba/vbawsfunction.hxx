@@ -50,4 +50,3 @@ public:
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();
 };
 #endif
-

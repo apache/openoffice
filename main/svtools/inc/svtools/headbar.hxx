@@ -393,4 +393,3 @@ public:
 };
 
 #endif	// _HEADBAR_HXX
-

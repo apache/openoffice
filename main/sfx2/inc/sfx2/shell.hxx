@@ -410,4 +410,3 @@ inline void SfxShell::SetPool
         GetStaticInterface()->RegisterStatusBar( rResId )
 
 #endif
-

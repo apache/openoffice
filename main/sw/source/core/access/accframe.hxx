@@ -173,4 +173,3 @@ inline const SwFrm *SwAccessibleFrame::GetParent() const
 }
 
 #endif
-

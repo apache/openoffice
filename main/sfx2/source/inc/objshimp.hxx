@@ -169,4 +169,3 @@ struct SfxObjectShell_Impl : public ::sfx2::IMacroDocumentAccess
 };
 
 #endif
-

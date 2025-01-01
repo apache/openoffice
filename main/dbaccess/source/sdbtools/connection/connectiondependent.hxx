@@ -149,4 +149,3 @@ namespace sdbtools
 //........................................................................
 
 #endif // DBACCESS_CONNECTION_DEPENDENT_HXX
-

@@ -252,4 +252,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_QUERYCONTROLLER_HXX
-

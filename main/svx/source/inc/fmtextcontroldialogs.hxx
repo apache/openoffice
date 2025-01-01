@@ -63,4 +63,3 @@ namespace svx
 //........................................................................
 
 #endif // SVX_SOURCE_FORM_FMTEXTCONTROLDIALOGS_HXX
-

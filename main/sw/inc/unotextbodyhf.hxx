@@ -203,4 +203,3 @@ public:
 };
 
 #endif // SW_UNOTEXTBODYHF_HXX
-

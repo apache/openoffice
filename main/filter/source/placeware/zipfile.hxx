@@ -84,4 +84,3 @@
 
 /* Compression values. */
 #define zf_compNone		0
-

@@ -479,4 +479,3 @@ inline ::com::sun::star::uno::Any queryDeepInterface(
 } // namespace utl
 
 #endif // _UNOTOOLS_QUERYDEEPINTERFACE_HXX
-

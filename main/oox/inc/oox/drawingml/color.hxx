@@ -143,4 +143,3 @@ typedef boost::shared_ptr< Color > ColorPtr;
 } // namespace oox
 
 #endif
-

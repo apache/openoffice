@@ -980,4 +980,3 @@ inline void DbgOut( const rtl::OString& rMessage, sal_uInt16 nOutType, const sal
 #endif /* __cplusplus */
 
 #endif /* _RTL_STRING_HXX_ */
-

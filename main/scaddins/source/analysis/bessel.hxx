@@ -53,4 +53,3 @@ double BesselK( double x, sal_Int32 n ) throw( ::com::sun::star::lang::IllegalAr
 } // namespace sca
 
 #endif
-

@@ -244,4 +244,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_OSUBCOMPONENT_HXX_
-

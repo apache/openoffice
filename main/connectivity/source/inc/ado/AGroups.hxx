@@ -62,4 +62,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_ADO_GROUPS_HXX_
-

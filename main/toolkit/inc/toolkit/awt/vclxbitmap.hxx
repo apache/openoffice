@@ -80,4 +80,3 @@ public:
 
 
 #endif // _TOOLKIT_AWT_VCLXBITMAP_HXX_
-

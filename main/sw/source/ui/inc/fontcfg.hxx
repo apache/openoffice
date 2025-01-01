@@ -112,5 +112,3 @@ public:
     static sal_Int32 GetDefaultHeightFor(sal_uInt16 nFontType, LanguageType eLang);
 };
 #endif
-
-

@@ -170,4 +170,3 @@ namespace rptui
 }	//rptui
 //==================================================================
 #endif // REPORT_REPORTSECTION_HXX
-

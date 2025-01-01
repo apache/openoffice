@@ -283,4 +283,3 @@ private:
 
 
 #endif // FORMULA_TOKENARRAY_HXX
-

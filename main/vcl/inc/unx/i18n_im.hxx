@@ -57,5 +57,3 @@ public:
 };
 
 #endif // _SAL_I18N_INPUTMETHOD_HXX
-
-

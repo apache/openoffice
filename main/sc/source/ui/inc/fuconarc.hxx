@@ -55,4 +55,3 @@ class FuConstArc : public FuConstruct
 
 
 #endif		// _SD_FUCONARC_HXX
-

@@ -100,5 +100,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEDESIGNCONTROL_HXX
-
-

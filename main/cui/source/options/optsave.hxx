@@ -99,4 +99,3 @@ public:
 };
 
 #endif	// #ifndef _SVX_OPTSAVE_HXX
-

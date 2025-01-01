@@ -180,4 +180,3 @@ class SVX_DLLPUBLIC SvxFontWorkDialog : public SfxDockingWindow
 };
 
 #endif		// _SVX_FONTWORK_HXX
-

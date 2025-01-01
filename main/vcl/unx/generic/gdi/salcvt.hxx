@@ -86,4 +86,3 @@ class SalConverterCache {
 
 
 #endif /* SAL_CONVERTER_CACHE_HXX_ */
-

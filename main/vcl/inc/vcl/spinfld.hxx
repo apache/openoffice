@@ -109,4 +109,3 @@ public:
 };
 
 #endif // _SV_SPINFLD_HXX
-

@@ -139,5 +139,3 @@ namespace drivermanager
 }	// namespace drivermanager
 
 #endif // _CONNECTIVITY_DRIVERMANAGER_HXX_
-
-

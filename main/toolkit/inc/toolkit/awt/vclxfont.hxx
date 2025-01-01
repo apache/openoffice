@@ -89,4 +89,3 @@ public:
 
 
 #endif // _TOOLKIT_AWT_VCLXFONT_HXX_
-

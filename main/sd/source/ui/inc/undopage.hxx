@@ -173,4 +173,3 @@ public:
 
 
 #endif		// _SD_UNDOPAGE_HXX
-

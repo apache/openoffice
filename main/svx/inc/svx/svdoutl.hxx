@@ -53,4 +53,3 @@ public:
 };
 
 #endif //_SVDOUTL_HXX
-

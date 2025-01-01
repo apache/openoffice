@@ -533,4 +533,3 @@ inline String GetStringFromCell( const ScBaseCell * pCell, sal_uLong nFormat, Sv
 }
 
 #endif
-

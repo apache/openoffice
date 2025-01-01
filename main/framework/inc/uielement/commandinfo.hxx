@@ -61,4 +61,3 @@ typedef BaseHash< CommandInfo > CommandToInfoMap;
 } // namespace framework
 
 #endif // __FRAMEWORK_UIELEMENT_COMMANDINFO_HXX_
-

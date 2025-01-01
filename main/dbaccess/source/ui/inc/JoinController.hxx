@@ -169,4 +169,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_JOINCONTROLLER_HXX
-

@@ -58,4 +58,3 @@ namespace connectivity
 }
 
 #endif //_CONNECTIVITY_CALC_DRIVER_HXX_
-

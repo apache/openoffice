@@ -228,4 +228,3 @@ inline sal_uLong SwFldMgr::GetCurFldFmt() const
 
 
 #endif
-

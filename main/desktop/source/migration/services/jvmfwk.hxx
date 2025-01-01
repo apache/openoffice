@@ -43,4 +43,3 @@ rtl::OUString jvmfwk_getImplementationName();
 css::uno::Sequence< rtl::OUString > jvmfwk_getSupportedServiceNames();
 
 } //end blind namespace
-

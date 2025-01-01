@@ -37,4 +37,3 @@ extern XMLTransformerEventMapEntry aTransformerEventMap[];
 extern XMLTransformerEventMapEntry aFormTransformerEventMap[];
 
 #endif	//  _XMLOFF_EVENTMAP_HXX
-

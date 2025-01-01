@@ -129,4 +129,3 @@ namespace nullcanvas
 }
 
 #endif /* _NULLCANVAS_SPRITECANVASHELPER_HXX_ */
-

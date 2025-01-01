@@ -264,4 +264,3 @@ public:
 }
 
 #endif // _SVT_FILEVIEW_HXX
-

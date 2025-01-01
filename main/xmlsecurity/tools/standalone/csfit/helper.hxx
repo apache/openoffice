@@ -233,5 +233,3 @@ Reference< XMultiComponentFactory > serviceManager( Reference< XComponentContext
  * Helper : Get password function for PKCS11 slot
  */
 char* PriPK11PasswordFunc( PK11SlotInfo *slot , PRBool retry , void* arg ) ;
-
-

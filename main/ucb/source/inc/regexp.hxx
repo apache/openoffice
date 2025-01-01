@@ -77,4 +77,3 @@ inline bool Regexp::operator ==(Regexp const & rOther) const
 }
 
 #endif // _UCB_REGEXP_HXX_
-

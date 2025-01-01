@@ -73,5 +73,3 @@ namespace connectivity
 //........................................................................
 
 #endif // CONNECTIVITY_PARSENODE_SIMPLE_HXX
-
-

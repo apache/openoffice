@@ -72,4 +72,3 @@ inline SvxPrintItem &SvxPrintItem::operator=( const SvxPrintItem &rCpy )
 
 
 #endif
-

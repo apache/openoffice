@@ -48,4 +48,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADO_KEYCOLUMNS_HXX_
-

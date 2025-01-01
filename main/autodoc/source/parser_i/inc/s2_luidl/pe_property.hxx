@@ -116,4 +116,3 @@ class PE_Property : public UnoIDL_PE,
 
 
 #endif
-

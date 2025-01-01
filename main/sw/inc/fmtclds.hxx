@@ -176,4 +176,3 @@ inline const SwFmtCol &SwFmt::GetCol(sal_Bool bInP) const
 	{ return aSet.GetCol(bInP); }
 
 #endif
-

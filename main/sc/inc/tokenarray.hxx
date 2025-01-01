@@ -90,4 +90,3 @@ public:
 };
 
 #endif // SC_TOKENARRAY_HXX
-

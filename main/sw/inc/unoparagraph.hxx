@@ -358,4 +358,3 @@ public:
 };
 
 #endif // SW_UNOPARAGRAPH_HXX
-

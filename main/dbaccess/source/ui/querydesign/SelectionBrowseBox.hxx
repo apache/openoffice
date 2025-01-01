@@ -353,6 +353,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_QUERYDESIGN_OSELECTIONBROWSEBOX_HXX
-
-
-

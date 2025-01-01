@@ -48,4 +48,3 @@ namespace preload
 //.........................................................................
 
 #endif // _EXTENSIONS_PRELOAD_PRELOADSERVICES_HXX_
-

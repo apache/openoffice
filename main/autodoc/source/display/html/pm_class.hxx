@@ -124,4 +124,3 @@ class PageMaker_Class : public SpecializedPageMaker
 
 
 #endif
-

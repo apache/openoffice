@@ -65,4 +65,3 @@ public:
 };
 
 #endif // #ifndef _SFX_HELP_HXX
-

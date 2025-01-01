@@ -43,4 +43,3 @@ public:
 };
 }
 #endif // _REPORT_RPTUIFAC_HXX
-

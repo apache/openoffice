@@ -66,4 +66,3 @@ public:
 
 
 #endif // _TOOLKIT_HELPER_UNOMEMORYSTREAM_HXX_
-

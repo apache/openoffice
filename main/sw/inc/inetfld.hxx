@@ -103,4 +103,3 @@ public:
 
 
 #endif // SW_INETFLD_HXX
-

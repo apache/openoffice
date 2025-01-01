@@ -112,5 +112,3 @@ public:
 };
 
 #endif //_SPSTREAM_HXX
-
-

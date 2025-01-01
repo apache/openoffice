@@ -213,4 +213,3 @@ private:
 };
 
 #endif // _DBA_COREAPI_STATEMENT_HXX_
-

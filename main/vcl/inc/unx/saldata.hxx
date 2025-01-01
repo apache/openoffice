@@ -127,4 +127,3 @@ inline YieldMutexReleaser::~YieldMutexReleaser()
 }
 
 #endif // _SV_SALDATA_HXX
-

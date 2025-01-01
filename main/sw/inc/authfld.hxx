@@ -200,4 +200,3 @@ inline void	SwAuthEntry::SetAuthorField(ToxAuthorityField ePos, const String& rF
 }
 
 #endif
-

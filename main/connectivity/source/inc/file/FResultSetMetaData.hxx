@@ -83,5 +83,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_ORESULTSETMETADATA_HXX_
-
-

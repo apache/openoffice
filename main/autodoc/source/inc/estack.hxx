@@ -86,4 +86,3 @@ class EStack : private std::slist<ELEM>
 
 
 #endif
-

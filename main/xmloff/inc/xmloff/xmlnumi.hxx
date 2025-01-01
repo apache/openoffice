@@ -104,4 +104,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XMLNUMI_HXX
-

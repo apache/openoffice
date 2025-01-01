@@ -73,4 +73,3 @@ public:
 }
 
 #endif /* _XCEPTION_HXX_ */
-

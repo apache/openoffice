@@ -62,4 +62,3 @@ public:
 };
 
 #endif //  _SFXENUMITEM_HXX
-

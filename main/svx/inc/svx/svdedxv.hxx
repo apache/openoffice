@@ -319,4 +319,3 @@ protected:
 };
 
 #endif //_SVDEDXV_HXX
-

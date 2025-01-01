@@ -141,4 +141,3 @@ typedef comm_USHORT CommunicationOption;
 #define CH_ShutdownLink				((HandshakeType)0x0105)	/// Shutdown this link
 
 #define CH_SetApplication			((HandshakeType)0x0106)	/// Set Description of Client
-

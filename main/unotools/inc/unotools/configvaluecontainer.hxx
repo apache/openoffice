@@ -229,4 +229,3 @@ namespace utl
 //.........................................................................
 
 #endif // UNOTOOLS_CONFIGVALUECONTAINER_HXX
-

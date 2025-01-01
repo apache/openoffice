@@ -50,4 +50,3 @@ public:
 #include <layout/layout-post.hxx>
 
 #endif /* _LAYOUT_PLUGIN_HXX */
-

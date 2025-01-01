@@ -83,4 +83,3 @@ namespace svt
 //........................................................................
 
 #endif // DBA14_SVTOOLS_INC_IMAGERESOURCEACCESS_HXX
-

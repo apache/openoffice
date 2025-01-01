@@ -69,4 +69,3 @@ public:
 };
 
 #endif //SC_VBA_BORDERS_HXX
-

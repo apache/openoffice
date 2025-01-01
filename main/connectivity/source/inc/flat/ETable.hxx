@@ -101,4 +101,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FLAT_TABLE_HXX_
-

@@ -229,4 +229,3 @@ public:
 //... namespace frm .......................................................
 
 #endif // _FRM_PROPERTY_HXX_
-

@@ -57,4 +57,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_MYSQL_VIEWS_HXX_
-

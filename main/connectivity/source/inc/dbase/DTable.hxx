@@ -178,4 +178,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_DBASE_TABLE_HXX_
-

@@ -208,4 +208,3 @@ private:
 } // namespace sfx2
 
 #endif // _SFX_DOCUMENTMETADATAACCESS_HXX_
-

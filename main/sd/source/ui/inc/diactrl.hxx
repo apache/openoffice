@@ -71,6 +71,3 @@ public:
 };
 
 #endif // _SD_DIACTRL_HXX
-
-
-

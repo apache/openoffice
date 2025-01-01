@@ -96,4 +96,3 @@ public:
 //... namespace comphelper .......................................................
 
 #endif // _UTL_PROPERTSETINFO_HXX_
-

@@ -86,4 +86,3 @@ public:
 
 
 #endif // _BASIDE_TBXCTL_HXX
-

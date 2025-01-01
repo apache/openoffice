@@ -222,4 +222,3 @@ typedef ::boost::shared_ptr< BaseNode > BaseNodeSharedPtr;
 } // namespace slideshow
 
 #endif /* INCLUDED_SLIDESHOW_BASENODE_HXX */
-

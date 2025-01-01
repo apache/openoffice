@@ -86,4 +86,3 @@ public:
 //... namespace utl .......................................................
 
 #endif // _UTL_PROPERTSETINFO_HXX_
-

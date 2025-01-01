@@ -64,4 +64,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_CATALOG_HXX_
-

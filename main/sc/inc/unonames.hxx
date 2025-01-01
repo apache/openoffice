@@ -643,4 +643,3 @@
 #define SC_UNO_SCRIPT               "Script"
 
 #endif
-

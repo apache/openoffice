@@ -76,5 +76,3 @@ class TokenParser_Uidl : public TokenParse2
 }   // namespace csi
 
 #endif
-
-

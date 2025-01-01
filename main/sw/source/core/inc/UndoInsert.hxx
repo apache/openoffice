@@ -228,4 +228,3 @@ public:
 };
 
 #endif // SW_UNDO_INSERT_HXX
-

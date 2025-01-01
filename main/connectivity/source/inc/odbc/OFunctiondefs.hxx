@@ -167,5 +167,3 @@
 #endif
 
 #endif // _CONNECTIVITY_OFUNCTIONDEFS_HXX_
-
-

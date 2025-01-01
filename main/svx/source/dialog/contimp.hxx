@@ -120,4 +120,3 @@ public:
 
 
 #endif // _CONTIMP_HXX_
-

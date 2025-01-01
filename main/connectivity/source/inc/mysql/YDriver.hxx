@@ -119,4 +119,3 @@ namespace connectivity
 }	// namespace connectivity
 //........................................................................
 #endif // CONNECTIVITY_MYSQL_DRIVER_HXX
-

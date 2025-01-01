@@ -54,4 +54,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADABAS_COLUMNS_HXX_
-

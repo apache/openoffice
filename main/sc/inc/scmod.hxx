@@ -287,5 +287,3 @@ SC_DLLPUBLIC	void					SetAppOptions	( const ScAppOptions& rOpt );
 #define SC_MOD() ( *(ScModule**) GetAppData(SHL_CALC) )
 
 #endif
-
-

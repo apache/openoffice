@@ -125,4 +125,3 @@ public:
 DECL_PTRHINT (SVL_DLLPUBLIC, INetURLHistoryHint, const INetURLObject);
 
 #endif /* _INETHIST_HXX */
-

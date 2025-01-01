@@ -78,4 +78,3 @@ namespace odma
 	};
 }
 #endif // ODMA_CONTENTPROPS_HXX
-

@@ -104,4 +104,3 @@
 	// the above definitions are only used in sfx2/source/doc/doc.src
 
 #endif // _TOOLS_INETDEF_HXX
-

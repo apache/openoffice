@@ -71,4 +71,3 @@ public:
 	bool			PrintDataBase();
 	static void		DumpError(unsigned long nError);
 };
-

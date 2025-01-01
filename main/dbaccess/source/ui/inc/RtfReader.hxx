@@ -76,5 +76,3 @@ namespace dbaui
 	SV_DECL_IMPL_REF( ORTFReader );
 }
 #endif // DBAUI_RTFREADER_HXX
-
-

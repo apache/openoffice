@@ -201,4 +201,3 @@ inline	sal_Bool OBookmarkContainer::checkExistence(const ::rtl::OUString& _rName
 //........................................................................
 
 #endif // _DBA_CORE_BOOKMARKCONTAINER_HXX_
-

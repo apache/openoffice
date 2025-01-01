@@ -65,4 +65,3 @@ public:
 };
 
 #endif // _FILEDLG_HXX
-

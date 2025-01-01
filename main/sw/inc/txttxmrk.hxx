@@ -58,4 +58,3 @@ inline const SwTxtNode& SwTxtTOXMark::GetTxtNode() const
 }
 
 #endif
-

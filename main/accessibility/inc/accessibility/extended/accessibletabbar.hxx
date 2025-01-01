@@ -113,4 +113,3 @@ namespace accessibility
 //.........................................................................
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBLETABBAR_HXX_
-

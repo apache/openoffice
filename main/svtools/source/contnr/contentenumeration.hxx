@@ -280,4 +280,3 @@ namespace svt
 //........................................................................
 
 #endif // SVTOOLS_SOURCE_CONTNR_CONTENTENUMERATION_HXX
-

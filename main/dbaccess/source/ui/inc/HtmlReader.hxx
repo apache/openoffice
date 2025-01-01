@@ -91,6 +91,3 @@ namespace dbaui
 	SV_DECL_IMPL_REF( OHTMLReader );
 }
 #endif // DBAUI_HTMLREADER_HXX
-
-
-

@@ -163,4 +163,3 @@ void generateFunctionParameterMap(std::ostream& o,
 }
 
 #endif // INCLUDED_UNODEVTOOLS_SOURCE_SKELETONMAKER_SKELETONCOMMON_HXX
-

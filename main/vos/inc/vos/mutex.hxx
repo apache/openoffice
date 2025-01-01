@@ -176,5 +176,3 @@ protected:
 
 
 #endif  //_VOS_MUTEX_HXX_
-
-

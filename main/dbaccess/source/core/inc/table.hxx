@@ -156,5 +156,3 @@ namespace dbaccess
 	};
 }
 #endif // _DBA_CORE_TABLE_HXX_
-
-

@@ -28,4 +28,3 @@ Point SwGetChartDialogPos( const Window *pParentWin, const Size& rDialogSize, co
 void SwInsertChart( Window *pParent, SfxBindings *pBindings );
 
 #endif  /*_CHARTINS_HXX*/
-

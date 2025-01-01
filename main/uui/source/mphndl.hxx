@@ -89,4 +89,3 @@ public:
 };
 
 #endif // UUI_IAHNDL_HXX
-

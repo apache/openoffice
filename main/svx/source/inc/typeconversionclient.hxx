@@ -84,5 +84,3 @@ namespace svxform
 //........................................................................
 
 #endif // SVX_TYPECONVERSION_CLIENT_HXX
-
-

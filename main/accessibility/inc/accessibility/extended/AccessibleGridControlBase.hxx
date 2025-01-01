@@ -459,4 +459,3 @@ inline void AccessibleGridControlBase::implSetDescription(
 // ============================================================================
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBILEGRIDCONTROLBASE_HXX
-

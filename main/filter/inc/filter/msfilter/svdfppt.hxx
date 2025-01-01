@@ -1443,4 +1443,3 @@ class PPTConvertOCXControls : public SvxMSConvertOCXControls
 #endif // SVX_LIGHT
 
 #endif //_SVDFPPT_HXX
-

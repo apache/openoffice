@@ -63,4 +63,3 @@ public:
 };
 
 #endif // _FORBIDDENCHARACTERSTABLE_HXX
-

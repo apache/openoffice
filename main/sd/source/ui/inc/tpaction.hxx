@@ -134,4 +134,3 @@ public:
 };
 
 #endif		// _SD_TPACTION_HXX
-

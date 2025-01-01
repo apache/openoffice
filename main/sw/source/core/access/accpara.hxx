@@ -487,4 +487,3 @@ inline SwAccessibleParagraph::operator ::com::sun::star::accessibility::XAccessi
 }
 
 #endif
-

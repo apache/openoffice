@@ -51,5 +51,3 @@ public:
 };
 
 #endif
-
-

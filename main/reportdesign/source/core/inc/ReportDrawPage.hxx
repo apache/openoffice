@@ -43,4 +43,3 @@ namespace reportdesign
     };
 }
 #endif //REPORTDRAWPAGE_HXX_INCLUDED
-

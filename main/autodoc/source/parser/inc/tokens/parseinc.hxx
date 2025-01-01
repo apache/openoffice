@@ -196,4 +196,3 @@ jumpToMatchingBracket( CharacterSource & io_rText,
 
 
 #endif
-

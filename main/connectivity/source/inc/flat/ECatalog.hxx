@@ -42,4 +42,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FLAT_CATALOG_HXX_
-

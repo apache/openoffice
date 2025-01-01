@@ -123,4 +123,3 @@ public:
 };
 
 #endif // _EDITSTT2_HXX
-

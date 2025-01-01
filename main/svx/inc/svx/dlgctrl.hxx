@@ -553,4 +553,3 @@ public:
 };
 
 #endif // _SVX_DLG_CTRL_HXX
-

@@ -48,4 +48,3 @@
 #define RETURN_FINITE(d)    if( ::rtl::math::isFinite( d ) ) return d; else THROW_IAE
 
 #endif
-

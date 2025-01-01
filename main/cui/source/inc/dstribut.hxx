@@ -118,4 +118,3 @@ public:
 
 
 #endif // _SVX_DSTRIBUT_HXX
-

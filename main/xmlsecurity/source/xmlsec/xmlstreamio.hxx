@@ -39,4 +39,3 @@ int xmlRegisterStreamInputCallbacks(
 int xmlUnregisterStreamInputCallbacks( void ) ;
 
 #endif //_XMLSTREAMIO_XMLSECIMPL_HXX_
-

@@ -63,4 +63,3 @@ public:
 };
 
 #endif	//  _XMLOFF_FLATTCONTEXT_HXX
-

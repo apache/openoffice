@@ -70,4 +70,3 @@ struct ScTabOpParam
 };
 
 #endif // SC_PARAMISC_HXX
-

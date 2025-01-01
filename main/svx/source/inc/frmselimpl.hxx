@@ -298,4 +298,3 @@ typedef FrameBorderIterBase< FrameBorderPtrVec, FrameBorderPtrVec::iterator, Fra
 } // namespace svx
 
 #endif
-

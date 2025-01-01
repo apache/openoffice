@@ -48,4 +48,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FLAT_ODATABASEMETADATA_HXX_
-

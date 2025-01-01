@@ -83,4 +83,3 @@ SAL_CALL ONSSInitializer_createInstance( const ::com::sun::star::uno::Reference<
     throw ( ::com::sun::star::uno::Exception );
 
 #endif
-

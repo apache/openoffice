@@ -36,4 +36,3 @@ const sal_uInt16 BOUNDCOLUMN	 =	0x0001;
 //.........................................................................
 
 #endif // _FORMS_BASELISTBOX_HXX_
-

@@ -100,4 +100,3 @@ private:
 } // end of namespace sd
 
 #endif		// _SD_ANNOTATIONTAG_HXX_
-

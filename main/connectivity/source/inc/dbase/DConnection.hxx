@@ -51,4 +51,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_DBASE_DCONNECTION_HXX_
-

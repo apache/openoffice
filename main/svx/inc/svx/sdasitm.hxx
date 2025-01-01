@@ -156,4 +156,3 @@ inline size_t SdrCustomShapeGeometryItem::PropertyPairHash::operator()( const Sd
 };
 
 #endif
-

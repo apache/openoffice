@@ -48,5 +48,3 @@ private:
 
 
 #endif // SC_SUBTDLG_HXX
-
-

@@ -125,4 +125,3 @@ namespace dbaccess
 	};
 }
 #endif // _DBA_COREAPI_PREPAREDSTATEMENT_HXX_
-

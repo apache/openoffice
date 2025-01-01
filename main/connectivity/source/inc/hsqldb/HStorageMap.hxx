@@ -87,4 +87,3 @@ namespace connectivity
 
 //........................................................................
 #endif // CONNECTIVI_HSQLDB_HSTORAGEMAP_HXX
-

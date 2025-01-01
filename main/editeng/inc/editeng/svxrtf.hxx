@@ -474,4 +474,3 @@ inline SfxItemSet& SvxRTFParser::GetAttrSet()
 
 #endif
 	//_SVXRTF_HXX
-

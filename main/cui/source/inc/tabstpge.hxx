@@ -150,5 +150,3 @@ private:
 };
 
 #endif // #ifndef _SVX_TABSTPGE_HXX
-
-

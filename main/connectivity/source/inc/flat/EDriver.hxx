@@ -54,4 +54,3 @@ namespace connectivity
 
 }
 #endif //_CONNECTIVITY_FLAT_DDRIVER_HXX_
-

@@ -49,5 +49,3 @@ protected:
 
 
 #endif // SD_OPTDLG_HXX
-
-

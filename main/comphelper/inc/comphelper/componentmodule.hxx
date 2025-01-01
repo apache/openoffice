@@ -405,4 +405,3 @@ namespace comphelper
 //........................................................................
 
 #endif // COMPHELPER_INC_COMPHELPER_COMPONENTMODULE_HXX
-

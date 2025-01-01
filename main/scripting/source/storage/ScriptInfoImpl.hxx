@@ -86,4 +86,3 @@ struct ScriptInfoImpl
 } // namespace scripting_impl
 
 #endif // _SCRIPTING_STORAGE_SCRIPTINFOIMPL_HXX_
-

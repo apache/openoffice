@@ -44,4 +44,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_JAVA_LANG_EXCEPTION_HXX_
-

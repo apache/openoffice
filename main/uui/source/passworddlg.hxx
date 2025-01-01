@@ -63,4 +63,3 @@ private:
 };
 
 #endif // PASSWORDDLG_HXX
-

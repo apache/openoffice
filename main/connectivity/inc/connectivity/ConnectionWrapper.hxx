@@ -91,4 +91,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_ZCONNECTIONWRAPPER_HXX_
-

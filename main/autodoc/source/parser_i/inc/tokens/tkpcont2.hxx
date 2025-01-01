@@ -115,5 +115,3 @@ class TkpDocuContext : public TkpContext
 
 
 #endif
-
-

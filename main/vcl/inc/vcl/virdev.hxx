@@ -123,4 +123,3 @@ private:
 };
 
 #endif // _SV_VIRDEV_HXX
-

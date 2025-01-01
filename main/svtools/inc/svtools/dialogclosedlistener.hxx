@@ -70,4 +70,3 @@ namespace svt
 //.........................................................................
 
 #endif// COMPHELPER_DIALOGCLOSEDLISTENER_HXX
-

@@ -40,4 +40,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_FORMEVENTS_HXX_
-

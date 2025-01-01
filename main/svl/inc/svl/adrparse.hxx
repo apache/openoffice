@@ -100,4 +100,3 @@ inline UniString const & SvAddressParser::GetRealName(sal_Int32 nIndex) const
 }
 
 #endif // _ADRPARSE_HXX
-

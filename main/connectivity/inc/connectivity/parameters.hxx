@@ -419,4 +419,3 @@ namespace dbtools
 //........................................................................
 
 #endif // CONNECTIVITY_PARAMETERS_HXX
-

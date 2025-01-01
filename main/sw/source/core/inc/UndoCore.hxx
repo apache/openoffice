@@ -259,4 +259,3 @@ String DenoteSpecialCharacters(const String & rStr);
 
 
 #endif // SW_UNDOCORE_HXX
-

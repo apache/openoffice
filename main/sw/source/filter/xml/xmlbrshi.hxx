@@ -83,4 +83,3 @@ public:
 
 
 #endif	//  _XMLBRSHI_HXX
-

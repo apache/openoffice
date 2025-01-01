@@ -1082,4 +1082,3 @@ private:
 };
 
 #endif
-
