@@ -116,7 +116,7 @@ Function InitString(ByRef resRef As String, resName As String)
 End Function
 
 Private Sub Class_Initialize()
-    Set langDict = New Scripting.Dictionary 'Allocate the string dictonary
+    Set langDict = New Scripting.Dictionary 'Allocate the string dictionary
 End Sub
 
 Private Sub Class_Terminate()
