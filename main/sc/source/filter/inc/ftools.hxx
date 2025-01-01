@@ -347,26 +347,26 @@ public:
 
 // *** byte string import operations *** --------------------------------------
 
-    /** Reads and returns a zero terminted byte string. */
+    /** Reads and returns a zero terminated byte string. */
     static ByteString   ReadCString( SvStream& rStrm );
-    /** Reads and returns a zero terminted byte string. */
+    /** Reads and returns a zero terminated byte string. */
     inline static String ReadCString( SvStream& rStrm, rtl_TextEncoding eTextEnc )
                             { return String( ReadCString( rStrm ), eTextEnc ); }
 
-    /** Reads and returns a zero terminted byte string and decreases a stream counter. */
+    /** Reads and returns a zero terminated byte string and decreases a stream counter. */
     static ByteString   ReadCString( SvStream& rStrm, sal_Int32& rnBytesLeft );
-    /** Reads and returns a zero terminted byte string and decreases a stream counter. */
+    /** Reads and returns a zero terminated byte string and decreases a stream counter. */
     inline static String ReadCString( SvStream& rStrm, sal_Int32& rnBytesLeft, rtl_TextEncoding eTextEnc )
                             { return String( ReadCString( rStrm, rnBytesLeft ), eTextEnc ); }
 
-    /** Appends a zero terminted byte string.
+    /** Appends a zero terminated byte string.
         @param nLen
                The previous length of the string, usually rString.Len(), but 
                necessary as this may be called from within AppendCString() 
                where rString is a temporary ByteString to be appended to 
                UniString. */
     static void         AppendCStringWithLen( SvStream& rStrm, ByteString& rString, sal_uInt32 nLen );
-    /** Appends a zero terminted byte string. */
+    /** Appends a zero terminated byte string. */
     static void         AppendCString( SvStream& rStrm, String& rString, rtl_TextEncoding eTextEnc );
 
 // *** HTML table names <-> named range names *** -----------------------------
