@@ -1020,7 +1020,7 @@ void SwNoTxtFrm::PaintPicture( OutputDevice* pOut, const SwRect &rGrfArea ) cons
                     // and unlinked) but fails for linked Writer GraphicObjects. These have the URL in the
                     // GraphicObject, but no GfxLink with the original file data when it's a linked graphic.
                     // Since this blows up PDF size by a factor of 10 (the graphics get embedded as pixel maps
-                    // then) it is okay to add this workarund: In the needed case, load the graphic in a way to
+                    // then) it is okay to add this workaround: In the needed case, load the graphic in a way to
                     // get the GfxLink in the needed form and use that Graphic temporarily. Do this only when
                     // - we have PDF export
                     // - the GraphicObject is linked
