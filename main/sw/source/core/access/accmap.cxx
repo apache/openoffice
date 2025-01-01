@@ -3367,7 +3367,7 @@ sal_Bool SwAccessibleMap::ReplaceChild (
 											 // hold it.
 	// Also get keep parent.
 	uno::Reference < XAccessible > xParent( pCurrentChild->getAccessibleParent() );
-	pCurrentChild = 0;	// well be realease by dispose
+	pCurrentChild = 0;	// well be release by dispose
     Dispose( 0, pObj, 0 );
 
 	{
