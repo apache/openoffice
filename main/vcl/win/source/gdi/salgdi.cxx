@@ -633,9 +633,9 @@ void ImplPreparePolyDraw( bool						bCloseFigures,
     {
         const POINT* pCurrPoint = reinterpret_cast<const POINT*>( *pPtAry++ );
         const BYTE* pCurrFlag = *pFlgAry++;
-        const sal_uLong nCurrPoints = *pPoints++;
+        const sal_uInt32 nCurrPoints = *pPoints++;
         const bool bHaveFlagArray( pCurrFlag );
-        sal_uLong nCurrPoint;
+        sal_uInt32 nCurrPoint;
 
         if( nCurrPoints )
         {
