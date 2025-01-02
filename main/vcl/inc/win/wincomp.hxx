@@ -176,7 +176,7 @@ inline HBRUSH GetClassBrush( HWND hWnd )
 
 inline HINSTANCE GetWindowInstance( HWND hWnd )
 {
-	return (HINSTANCE)GetWindowLong( hWnd, GWL_HINSTANCE );
+	return (HINSTANCE)GetWindowLongPtr( hWnd, GWLP_HINSTANCE );
 }
 
 // ------------------------
