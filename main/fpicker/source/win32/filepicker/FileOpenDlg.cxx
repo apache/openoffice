@@ -144,7 +144,7 @@ CFileOpenDialog::CFileOpenDialog(
 	}
 
 	// set a pointer to myself as ofn parameter
-	m_ofn.lCustData = reinterpret_cast<long>(this);	
+	m_ofn.lCustData = reinterpret_cast<LPARAM>(this);
 }
 
 //------------------------------------------------------------------------
@@ -430,7 +430,7 @@ rtl::OUString SAL_CALL CFileOpenDialog::getCurrentFileName() const
 // 
 //------------------------------------------------------------------------
 
-sal_uInt32 SAL_CALL CFileOpenDialog::onShareViolation(const rtl::OUString&)
+UINT_PTR SAL_CALL CFileOpenDialog::onShareViolation(const rtl::OUString&)
 {
 	return 0;
 }
@@ -439,7 +439,7 @@ sal_uInt32 SAL_CALL CFileOpenDialog::onShareViolation(const rtl::OUString&)
 // 
 //------------------------------------------------------------------------
 
-sal_uInt32 SAL_CALL CFileOpenDialog::onFileOk()
+UINT_PTR SAL_CALL CFileOpenDialog::onFileOk()
 {
 	return 0;
 }
@@ -489,7 +489,7 @@ void SAL_CALL CFileOpenDialog::onTypeChanged(sal_uInt32)
 // 
 //------------------------------------------------------------------------
 
-sal_uInt32 SAL_CALL CFileOpenDialog::onCtrlCommand(HWND, sal_uInt16, sal_uInt16)
+UINT_PTR SAL_CALL CFileOpenDialog::onCtrlCommand(HWND, sal_uInt16, sal_uInt16)
 {
 	return 0;
 }
@@ -498,7 +498,7 @@ sal_uInt32 SAL_CALL CFileOpenDialog::onCtrlCommand(HWND, sal_uInt16, sal_uInt16)
 // 
 //------------------------------------------------------------------------
 
-sal_uInt32 SAL_CALL CFileOpenDialog::onWMNotify( HWND, LPOFNOTIFY lpOfNotify )
+UINT_PTR SAL_CALL CFileOpenDialog::onWMNotify( HWND, LPOFNOTIFY lpOfNotify )
 {
 	switch(lpOfNotify->hdr.code)
 	{
@@ -553,7 +553,7 @@ void SAL_CALL CFileOpenDialog::handleInitDialog(HWND hwndDlg, HWND hwndChild)
 // 
 //------------------------------------------------------------------------
 
-unsigned int CALLBACK CFileOpenDialog::ofnHookProc( 
+UINT_PTR CALLBACK CFileOpenDialog::ofnHookProc(
 	HWND hChildDlg, unsigned int uiMsg, WPARAM wParam, LPARAM lParam)
 {
     HWND hwndDlg = GetParent(hChildDlg);
@@ -568,12 +568,12 @@ unsigned int CALLBACK CFileOpenDialog::ofnHookProc(
             OSL_ASSERT(pImpl);
             
             // subclass the base dialog for WM_NCDESTROY processing 
-            pImpl->m_pfnBaseDlgProc = 
-		        reinterpret_cast<WNDPROC>( 
-			        SetWindowLong(
-			            hwndDlg, 
-			            GWL_WNDPROC, 
-                        reinterpret_cast<LONG>(CFileOpenDialog::BaseDlgProc)));                                                                                              
+            pImpl->m_pfnBaseDlgProc =
+		        reinterpret_cast<WNDPROC>(
+			        SetWindowLongPtr(
+			            hwndDlg,
+			            GWLP_WNDPROC,
+                        reinterpret_cast<LONG_PTR>(CFileOpenDialog::BaseDlgProc)));
             // connect the instance handle to the window            
             SetProp(hwndDlg, CURRENT_INSTANCE, pImpl);
 		    pImpl->handleInitDialog(hwndDlg, hChildDlg);
@@ -583,7 +583,7 @@ unsigned int CALLBACK CFileOpenDialog::ofnHookProc(
 	case WM_NOTIFY:
         {
             pImpl = getCurrentInstance(hwndDlg);
-		    return pImpl->onWMNotify( 
+		    return pImpl->onWMNotify(
 			    hChildDlg, reinterpret_cast<LPOFNOTIFY>(lParam));
         }
 
@@ -592,8 +592,8 @@ unsigned int CALLBACK CFileOpenDialog::ofnHookProc(
             pImpl = getCurrentInstance(hwndDlg);
             OSL_ASSERT(pImpl);
 
-		    return pImpl->onCtrlCommand( 
-			    hChildDlg, LOWORD(wParam), HIWORD(lParam));	
+		    return pImpl->onCtrlCommand(
+			    hChildDlg, LOWORD(wParam), HIWORD(lParam));
         }
 	}
 
@@ -614,8 +614,8 @@ LRESULT CALLBACK CFileOpenDialog::BaseDlgProc(
 		pImpl = reinterpret_cast<CFileOpenDialog*>(
 			RemoveProp(hWnd,CURRENT_INSTANCE));
 				
-		SetWindowLong(hWnd, GWL_WNDPROC, 
-			reinterpret_cast<LONG>(pImpl->m_pfnBaseDlgProc));
+		SetWindowLongPtr(hWnd, GWLP_WNDPROC,
+			reinterpret_cast<LONG_PTR>(pImpl->m_pfnBaseDlgProc));
 	}
 	else
 	{

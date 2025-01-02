@@ -244,8 +244,8 @@ protected:
 	virtual void SAL_CALL postModal(sal_Int16 nDialogResult);
 
 	// message handler, to be overwritten by subclasses
-	virtual sal_uInt32 SAL_CALL onShareViolation(const rtl::OUString& aPathName);
-	virtual sal_uInt32 SAL_CALL onFileOk();
+	virtual UINT_PTR SAL_CALL onShareViolation(const rtl::OUString& aPathName);
+	virtual UINT_PTR SAL_CALL onFileOk();
 	virtual void SAL_CALL onSelChanged(HWND hwndListBox);
 	virtual void SAL_CALL onHelp();
 
@@ -256,9 +256,9 @@ protected:
 
 	virtual void SAL_CALL onInitDialog(HWND hwndDlg) = 0;
 
-	virtual sal_uInt32 SAL_CALL onCtrlCommand(HWND hwndDlg, sal_uInt16 ctrlId, sal_uInt16 notifyCode);
+	virtual UINT_PTR SAL_CALL onCtrlCommand(HWND hwndDlg, sal_uInt16 ctrlId, sal_uInt16 notifyCode);
 
-	sal_uInt32 SAL_CALL onWMNotify(HWND hwndChild, LPOFNOTIFYW lpOfNotify);
+	UINT_PTR SAL_CALL onWMNotify(HWND hwndChild, LPOFNOTIFYW lpOfNotify);
 
 	// we use non-virtual functions to do necessary work before
 	// calling the virtual functions (see Gamma: Template method)
@@ -300,7 +300,7 @@ private:
     WNDPROC	    		m_pfnBaseDlgProc;
 
 	// callback function
-	static unsigned int CALLBACK ofnHookProc(
+	static UINT_PTR CALLBACK ofnHookProc(
 		HWND hChildDlg, // handle to child dialog box
 		unsigned int uiMsg,     // message identifier
 		WPARAM wParam,  // message parameter
