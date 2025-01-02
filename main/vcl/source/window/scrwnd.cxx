@@ -391,12 +391,12 @@ IMPL_LINK( ImplWheelWindow, ImplScrollHdl, Timer*, EMPTYARG )
 
         if ( !ImplCallPreNotify( aNCmdEvt ) )
         {
-            const sal_uLong nTime = Time::GetSystemTicks();
+            const sal_uIntPtr nTime = Time::GetSystemTicks();
 			ImplDelData aDel( this );
             pWindow->Command( aCEvt );
 			if( aDel.IsDead() )
 				return 0;
-            mnRepaintTime = Max( Time::GetSystemTicks() - nTime, 1UL );
+            mnRepaintTime = Max( Time::GetSystemTicks() - nTime, sal_uIntPtr(1UL) );
             ImplRecalcScrollValues();
         }
     }
