@@ -344,8 +344,8 @@ int ImplSalWICompareAscii( const wchar_t* pStr1, const char* pStr2 );
 // -----------------
 
 // A/W-Wrapper
-LONG        ImplSetWindowLong( HWND hWnd, int nIndex, DWORD dwNewLong );
-LONG        ImplGetWindowLong( HWND hWnd, int nIndex );
+LONG_PTR        ImplSetWindowLong( HWND hWnd, int nIndex, LONG_PTR newLong );
+LONG_PTR        ImplGetWindowLong( HWND hWnd, int nIndex );
 BOOL    ImplPostMessage( HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam );
 BOOL    ImplSendMessage( HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam );
 BOOL    ImplGetMessage( LPMSG lpMsg, HWND hWnd, UINT wMsgFilterMin, UINT wMsgFilterMax );
@@ -354,7 +354,7 @@ LONG        ImplDispatchMessage( CONST MSG *lpMsg );
 
 inline void SetWindowPtr( HWND hWnd, WinSalFrame* pThis )
 {
-    ImplSetWindowLong( hWnd, SAL_FRAME_THIS, (LONG)pThis );
+    ImplSetWindowLong( hWnd, SAL_FRAME_THIS, (LONG_PTR)pThis );
 }
 
 inline WinSalFrame* GetWindowPtr( HWND hWnd )
@@ -364,7 +364,7 @@ inline WinSalFrame* GetWindowPtr( HWND hWnd )
 
 inline void SetSalObjWindowPtr( HWND hWnd, WinSalObject* pThis )
 {
-    ImplSetWindowLong( hWnd, SAL_OBJECT_THIS, (LONG)pThis );
+    ImplSetWindowLong( hWnd, SAL_OBJECT_THIS, (LONG_PTR)pThis );
 }
 
 inline WinSalObject* GetSalObjWindowPtr( HWND hWnd )

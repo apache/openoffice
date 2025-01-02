@@ -114,16 +114,16 @@ int ImplSalWICompareAscii( const wchar_t* pStr1, const char* pStr2 )
 
 // =======================================================================
 
-LONG ImplSetWindowLong( HWND hWnd, int nIndex, DWORD dwNewLong )
+LONG_PTR ImplSetWindowLong( HWND hWnd, int nIndex, LONG_PTR newLong )
 {
-	return SetWindowLongW( hWnd, nIndex, dwNewLong );
+	return SetWindowLongPtrW( hWnd, nIndex, newLong );
 }
 
 // -----------------------------------------------------------------------
 
-LONG ImplGetWindowLong( HWND hWnd, int nIndex )
+LONG_PTR ImplGetWindowLong( HWND hWnd, int nIndex )
 {
-	return GetWindowLongW( hWnd, nIndex );
+	return GetWindowLongPtrW( hWnd, nIndex );
 }
 
 // -----------------------------------------------------------------------
