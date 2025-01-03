@@ -413,7 +413,7 @@ sub add_installationobject_to_variables ($$)
 
 #####################################################################################
 # Adding all variables, that must be defined, but are not defined until now.
-# List of this varibles: @installer::globals::forced_properties
+# List of this variables: @installer::globals::forced_properties
 #####################################################################################
 
 sub add_forced_properties

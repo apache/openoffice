@@ -2539,7 +2539,7 @@ drawing::HomogenMatrix3 SwXShape::_ConvertTransformationToLayoutDir(
     drawing::HomogenMatrix3 aMatrix( _aMatrixInHoriL2R );
 
     // --> OD 2005-03-10 #i44334#, #i44681# - direct manipulation of the
-    // tranformation structure isn't valid, if it contains rotation.
+    // transformation structure isn't valid, if it contains rotation.
     SvxShape* pSvxShape = GetSvxShape();
     ASSERT( pSvxShape,
             "<SwXShape::_ConvertTransformationToLayoutDir(..)> - no SvxShape found!")

@@ -289,7 +289,7 @@ void SvxLinguConfigUpdate::UpdateAll( sal_Bool bForceCheck )
             }
 
             //
-            // add new available language/servcice entries
+            // add new available language/service entries
             //
             uno::Reference< XAvailableLocales > xAvail( xLngSvcMgr, UNO_QUERY );
             Sequence< Locale > aAvailLocales( xAvail->getAvailableLocales(aService) );
@@ -407,7 +407,7 @@ void SvxLinguConfigUpdate::UpdateAll( sal_Bool bForceCheck )
 
 		// for the time being (developer builds until OOo 3.0)
 		// we should always check for everything available
-		// otherwise we may miss a new installed extension dicitonary
+		// otherwise we may miss a new installed extension dictionary
 		// just because e.g. the spellchecker is not asked what
 		// languages it does support currently...
 		// Since the check is on-demand occurring and executed once it should
@@ -896,7 +896,7 @@ LinguMgrAppExitLstnr::~LinguMgrAppExitLstnr()
 		xDesktop->removeEventListener( this );
 		xDesktop = NULL;	//! release reference to desktop
 	}
-	DBG_ASSERT(!xDesktop.is(), "reference to desktop should be realeased");
+	DBG_ASSERT(!xDesktop.is(), "reference to desktop should be released");
 }
 
 void LinguMgrAppExitLstnr::disposing(const EventObject& rSource)
