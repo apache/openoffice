@@ -166,7 +166,7 @@ static FILE *_tmpfile(void)
 
 			if ( IsValidHandle( hFile ) )
 			{
-				int fd = _open_osfhandle( (int)hFile, 0 );
+				int fd = _open_osfhandle( (intptr_t)hFile, 0 );
 
 				fp = _fdopen( fd, "w+b" );
 			}
@@ -666,7 +666,7 @@ BOOL WriteReportFile( CrashReportParams *pParams )
 
 			if ( hFile )
 			{
-				int	fd = _open_osfhandle( (LONG)hFile, _O_TEXT );
+				int	fd = _open_osfhandle( (intptr_t)hFile, _O_TEXT );
 				FILE	*fp = _fdopen( fd, "w+t" );
 				CHAR	szTitle[1024] = "";
 				CHAR	szBuildId[1024] = "";
@@ -858,7 +858,7 @@ void ApplySystemFont( HWND hwndDlg )
 }
 */
 
-BOOL CALLBACK PreviewDialogProc(
+INT_PTR CALLBACK PreviewDialogProc(
 	HWND hwndDlg,
 	UINT uMsg,
 	WPARAM wParam,
@@ -892,8 +892,8 @@ BOOL CALLBACK PreviewDialogProc(
 			CrashReportParams *pParams = (CrashReportParams *)lParam;
 
 			TCHAR	szBuffer[256] = TEXT("");
-			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong( hwndDlg, GWL_HINSTANCE );
-			HWND	hwndParent = (HWND)GetWindowLong( hwndDlg, GWL_HWNDPARENT );
+			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr( hwndDlg, GWLP_HINSTANCE );
+			HWND	hwndParent = (HWND)GetWindowLongPtr( hwndDlg, GWLP_HWNDPARENT );
 
 			GetWindowText( hwndParent, szBuffer, elementsof(szBuffer) );
 			SetWindowText( hwndDlg, szBuffer );
@@ -997,7 +997,7 @@ BOOL CALLBACK PreviewDialogProc(
 
 static void PreviewReport( HWND hwndParent, CrashReportParams *pParams )
 {
-	HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndParent, GWL_HINSTANCE );
+	HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr(hwndParent, GWLP_HINSTANCE );
 
 	WriteReportFile( pParams );
 
@@ -1028,7 +1028,7 @@ void UpdateOptionsDialogControls( HWND hwndDlg )
 
 //***************************************************************************
 
-BOOL CALLBACK OptionsDialogProc(
+INT_PTR CALLBACK OptionsDialogProc(
 	HWND hwndDlg,
 	UINT uMsg,
 	WPARAM wParam,
@@ -1042,8 +1042,8 @@ BOOL CALLBACK OptionsDialogProc(
 	case WM_INITDIALOG:
 		{
 			TCHAR	szBuffer[1024] = TEXT("");
-			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong( hwndDlg, GWL_HINSTANCE );
-			//HWND	hwndParent = (HWND)GetWindowLong( hwndDlg, GWL_HWNDPARENT );
+			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr( hwndDlg, GWLP_HINSTANCE );
+			//HWND	hwndParent = (HWND)GetWindowLongPtr( hwndDlg, GWLP_HWNDPARENT );
 
 			pParams = (CrashReportParams *)lParam;
 
@@ -1132,7 +1132,7 @@ BOOL CALLBACK OptionsDialogProc(
 
 static void OptionsDialog( HWND hwndParent, CrashReportParams *pParams )
 {
-	HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndParent, GWL_HINSTANCE );
+	HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr(hwndParent, GWLP_HINSTANCE );
 
 	if ( IDOK == DialogBoxParam(
 		hInstance,
@@ -1158,7 +1158,7 @@ void UpdateReportDialogControls( HWND hwndDlg )
 
 //***************************************************************************
 
-BOOL CALLBACK ReportDialogProc(
+INT_PTR CALLBACK ReportDialogProc(
 	HWND hwndDlg,
 	UINT uMsg,
 	WPARAM wParam,
@@ -1169,8 +1169,8 @@ BOOL CALLBACK ReportDialogProc(
 	{
 	case WM_INITDIALOG:
 		{
-			CrashReportParams	*pParams = (CrashReportParams*)GetWindowLong( GetParent(hwndDlg), GWL_USERDATA );
-			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndDlg, GWL_HINSTANCE );
+			CrashReportParams	*pParams = (CrashReportParams*)GetWindowLongPtr( GetParent(hwndDlg), GWLP_USERDATA );
+			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr(hwndDlg, GWLP_HINSTANCE );
 			TCHAR		szBuffer[FORMATBUFSIZE];
 
 			LoadAndFormatString( hInstance, IDS_REPORT_INTRO, szBuffer, elementsof(szBuffer) );
@@ -1214,8 +1214,8 @@ BOOL CALLBACK ReportDialogProc(
 	case WM_SHOWWINDOW:
 		if ( (BOOL)wParam )
 		{
-			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndDlg, GWL_HINSTANCE );
-			CrashReportParams	*pParams = (CrashReportParams*)GetWindowLong( GetParent(hwndDlg), GWL_USERDATA );
+			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr(hwndDlg, GWLP_HINSTANCE );
+			CrashReportParams	*pParams = (CrashReportParams*)GetWindowLongPtr( GetParent(hwndDlg), GWLP_USERDATA );
 			TCHAR		szBuffer[FORMATBUFSIZE];
 
 			LoadAndFormatString( hInstance, IDS_REPORT_CAPTION, szBuffer, elementsof(szBuffer) );
@@ -1236,10 +1236,10 @@ BOOL CALLBACK ReportDialogProc(
 			Edit_SetText( GetDlgItem(hwndDlg, IDC_EDIT_DESCRIPTION), pParams->sComment.c_str() );
 
 			/*
-			SetWindowLong( GetDlgItem(GetParent(hwndDlg),IDFINISH), GWL_STYLE,
-				GetWindowLong( GetDlgItem(GetParent(hwndDlg),IDFINISH), GWL_STYLE) | BS_DEFPUSHBUTTON );
-			SetWindowLong( GetDlgItem(GetParent(hwndDlg),IDBACK), GWL_STYLE,
-				GetWindowLong( GetDlgItem(GetParent(hwndDlg),IDBACK), GWL_STYLE) &~ BS_DEFPUSHBUTTON );
+			SetWindowLongPtr( GetDlgItem(GetParent(hwndDlg),IDFINISH), GWLP_STYLE,
+				GetWindowLongPtr( GetDlgItem(GetParent(hwndDlg),IDFINISH), GWLP_STYLE) | BS_DEFPUSHBUTTON );
+			SetWindowLongPtr( GetDlgItem(GetParent(hwndDlg),IDBACK), GWLP_STYLE,
+				GetWindowLongPtr( GetDlgItem(GetParent(hwndDlg),IDBACK), GWLP_STYLE) &~ BS_DEFPUSHBUTTON );
 				*/
 			SetFocus( GetDlgItem(hwndDlg,IDC_EDIT_TITLE) );
 		}
@@ -1251,7 +1251,7 @@ BOOL CALLBACK ReportDialogProc(
 			{
 				TCHAR	szBuffer[32767];
 
-				CrashReportParams	*pParams = (CrashReportParams*)GetWindowLong( GetParent(hwndDlg), GWL_USERDATA );
+				CrashReportParams	*pParams = (CrashReportParams*)GetWindowLongPtr( GetParent(hwndDlg), GWLP_USERDATA );
 
 				pParams->fAllowContact = Button_GetCheck( GetDlgItem(hwndDlg, IDC_ALLOW_CONTACT) ) ? TRUE : FALSE;
 
@@ -1272,7 +1272,7 @@ BOOL CALLBACK ReportDialogProc(
 			return TRUE;
 		case IDC_OPTIONS:
 			{
-				CrashReportParams	*pParams = (CrashReportParams*)GetWindowLong( GetParent(hwndDlg), GWL_USERDATA );
+				CrashReportParams	*pParams = (CrashReportParams*)GetWindowLongPtr( GetParent(hwndDlg), GWLP_USERDATA );
 				OptionsDialog( GetParent(hwndDlg), pParams );
 			}
 			return TRUE;
@@ -1290,13 +1290,13 @@ BOOL CALLBACK ReportDialogProc(
 }
 //***************************************************************************
 
-BOOL CALLBACK WelcomeDialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam )
+INT_PTR CALLBACK WelcomeDialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam )
 {
 	switch ( uMsg )
 	{
 	case WM_INITDIALOG:
 		{
-			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndDlg, GWL_HINSTANCE );
+			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr(hwndDlg, GWLP_HINSTANCE );
 			HWND	hwndRichEdit = GetDlgItem(hwndDlg, IDC_RICHEDIT21);
 			TCHAR	szBuffer[FORMATBUFSIZE];
 			TCHAR	szBuffer2[FORMATBUFSIZE];
@@ -1329,7 +1329,7 @@ BOOL CALLBACK WelcomeDialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM 
 	case WM_SHOWWINDOW:
 		if ( (BOOL)wParam )
 		{
-			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndDlg, GWL_HINSTANCE );
+			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr(hwndDlg, GWLP_HINSTANCE );
 			TCHAR		szBuffer[FORMATBUFSIZE];
 
 			LoadAndFormatString( hInstance, IDS_WELCOME_CAPTION, szBuffer, elementsof(szBuffer) );
@@ -1380,7 +1380,7 @@ BOOL CALLBACK WelcomeDialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM 
 }
 //***************************************************************************
 
-BOOL CALLBACK DialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam )
+INT_PTR CALLBACK DialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam )
 {
 	static	HWND	hwndPages[2] = { NULL };
 	static	int		iActualPage = 0;
@@ -1389,10 +1389,10 @@ BOOL CALLBACK DialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam 
 	{
 	case WM_INITDIALOG:
 		{
-			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndDlg, GWL_HINSTANCE );
+			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr(hwndDlg, GWLP_HINSTANCE );
 			TCHAR		szBuffer[FORMATBUFSIZE];
 
-			SetWindowLong( hwndDlg, GWL_USERDATA, (LONG)lParam );
+			SetWindowLongPtr( hwndDlg, GWLP_USERDATA, (LONG)lParam );
 			hwndPages[0] = CreateDialog(
 				hInstance,
 				MAKEINTRESOURCE(IDD_WELCOME_PAGE),
@@ -1458,7 +1458,7 @@ BOOL CALLBACK DialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam 
 		case IDFINISH:
 			{
 				TCHAR	szBuffer[32767];
-				CrashReportParams	*pParams = (CrashReportParams*)GetWindowLong( hwndDlg, GWL_USERDATA );
+				CrashReportParams	*pParams = (CrashReportParams*)GetWindowLongPtr( hwndDlg, GWLP_USERDATA );
 
 				pParams->fAllowContact = Button_GetCheck( GetDlgItem(hwndPages[1], IDC_ALLOW_CONTACT) ) ? TRUE : FALSE;
 
@@ -1725,9 +1725,21 @@ static bool WriteStackFile( FILE *fout, hash_map< string, string >& rLibraries, 
 			STACKFRAME	frame;
 
 			ZeroMemory( &frame, sizeof(frame) );
+#if defined(INTEL)
 			frame.AddrPC.Offset = aContextRecord.Eip;
+#elif defined(X86_64)
+			frame.AddrPC.Offset = aContextRecord.Rip;
+#else
+#error Unsupported architecture
+#endif
 			frame.AddrPC.Mode = AddrModeFlat;
+#if defined(INTEL)
 			frame.AddrFrame.Offset = aContextRecord.Ebp;
+#elif defined(X86_64)
+			frame.AddrFrame.Offset = aContextRecord.Rbp;
+#else
+#error Unsupported architecture
+#endif
 			frame.AddrFrame.Mode = AddrModeFlat;
 
 			BOOL bSuccess;
@@ -1766,7 +1778,7 @@ static bool WriteStackFile( FILE *fout, hash_map< string, string >& rLibraries, 
 					{
 						rLibraries[ GetFileName( moduleInfo.LoadedImageName ).c_str() ] = moduleInfo.LoadedImageName;
 
-						DWORD	dwRelOffset = 0;
+						DWORD64	dwRelOffset = 0;
 						BYTE	symbolBuffer[sizeof(IMAGEHLP_SYMBOL) + 256 ];
 						PIMAGEHLP_SYMBOL	pSymbol = (PIMAGEHLP_SYMBOL)symbolBuffer;
 
@@ -2600,7 +2612,7 @@ void _cdecl SendingThread( void *lpArgs )
 
 //***************************************************************************
 
-BOOL CALLBACK SendingStatusDialogProc(
+INT_PTR CALLBACK SendingStatusDialogProc(
 	HWND hwndDlg,
 	UINT uMsg,
 	WPARAM wParam,
@@ -2615,8 +2627,8 @@ BOOL CALLBACK SendingStatusDialogProc(
 	case WM_INITDIALOG:
 		{
 			TCHAR	szBuffer[1024] = TEXT("");
-			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong( hwndDlg, GWL_HINSTANCE );
-			//HWND	hwndParent = (HWND)GetWindowLong( hwndDlg, GWL_HWNDPARENT );
+			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr( hwndDlg, GWLP_HINSTANCE );
+			//HWND	hwndParent = (HWND)GetWindowLongPtr( hwndDlg, GWLP_HWNDPARENT );
 
 			pRequest = (RequestParams *)lParam;
 
