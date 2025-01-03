@@ -60,7 +60,7 @@
    variables accordingly.
 */
 
-#if defined WNT // only 32-bit Windows, actually
+#if defined WNT && defined INTEL
 
 extern "C" {
 
