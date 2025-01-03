@@ -220,9 +220,9 @@ sal_Bool SupportsCommandGroup( sal_Int16 nCommandGroup )
         return sal_False;
 }
 
-sal_uInt32 Get10ThSec()
+clock_t Get10ThSec()
 {
-	sal_uInt32 n10Ticks = 10 * (sal_uInt32)clock();
+	clock_t n10Ticks = 10 * clock();
 	return n10Ticks / CLOCKS_PER_SEC;
 }
 
@@ -246,7 +246,7 @@ friend class SfxBaseController;
     SfxWorkWindow*          pWorkWindow;
     sal_Int32               _nRange;
     sal_Int32               _nValue;
-	long					_nStartTime;
+	clock_t					_nStartTime;
 public:
                             SfxStatusIndicator(SfxBaseController* pController, SfxWorkWindow* pWork)
                                 : xOwner( pController )
