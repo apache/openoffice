@@ -34,6 +34,11 @@
 
 // just to go with calling convention of windows
 #define SQL_API __stdcall
+// On Win64, we need additional types predefined:
+#if _WIN64
+typedef long long INT64;
+typedef unsigned long long UINT64;
+#endif
 #include <odbc/sqlext.h>
 #undef SQL_API
 #define SQL_API __stdcall
