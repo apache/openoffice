@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_calc.hxx"
 #include "calc/CConnection.hxx"
 #include "calc/CDatabaseMetaData.hxx"
 #include "calc/CCatalog.hxx"

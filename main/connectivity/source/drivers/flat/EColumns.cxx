@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_flat.hxx"
 #include "flat/EColumns.hxx"
 #include "flat/ETable.hxx"
 #include "connectivity/sdbcx/VColumn.hxx"

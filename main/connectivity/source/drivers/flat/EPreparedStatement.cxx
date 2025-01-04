@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_flat.hxx"
 
 #ifndef _CONNECTIVITY_FLAT_EPREPAREDSTATEMENT_HXX_
 #include "flat/EPreparedStatement.hxx"

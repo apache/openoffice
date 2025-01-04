@@ -20,7 +20,7 @@
  *************************************************************/
 
 
-#include "precompiled_connectivity.hxx"
+#include "precompiled_dbtools.hxx"
 #include "ParameterSubstitution.hxx"
 #include "connectivity/sqlparse.hxx"
 #include <comphelper/sequenceashashmap.hxx>

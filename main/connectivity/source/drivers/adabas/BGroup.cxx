@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_adabas.hxx"
 
 #ifndef _CONNECTIVITY_ADABAS_GROUP_HXX_
 #include "adabas/BGroup.hxx"

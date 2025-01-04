@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_macabdrv1.hxx"
 
 #include "macabcondition.hxx"
 #include "MacabHeader.hxx"

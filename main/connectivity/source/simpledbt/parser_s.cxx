@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_dbtools.hxx"
 #include <connectivity/virtualdbtools.hxx>
 #include "parser_s.hxx"
 #include "parsenode_s.hxx"

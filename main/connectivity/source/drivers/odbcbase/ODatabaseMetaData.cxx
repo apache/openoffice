@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_odbcbase.hxx"
 #include "odbc/ODatabaseMetaData.hxx"
 #include "odbc/OTools.hxx"
 #ifndef _CONNECTIVITY_ODBC_ORESULTSET_HXX_

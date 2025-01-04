@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_hsqldb.hxx"
 #include "hsqldb/HStorageMap.hxx"
 #include <comphelper/types.hxx>
 #include <com/sun/star/embed/XTransactionBroadcaster.hpp>

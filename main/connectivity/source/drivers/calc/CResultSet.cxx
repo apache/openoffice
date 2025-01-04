@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_calc.hxx"
 #include <com/sun/star/sdbcx/CompareBookmark.hpp>
 #include "calc/CResultSet.hxx"
 #include <com/sun/star/lang/DisposedException.hpp>

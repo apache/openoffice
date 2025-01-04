@@ -21,7 +21,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_dbtools.hxx"
 #include "connectivity/BlobHelper.hxx"
 #include <comphelper/seqstream.hxx>
 #include "connectivity/dbexception.hxx"

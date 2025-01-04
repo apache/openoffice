@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_jdbc.hxx"
 #include "java/sql/PreparedStatement.hxx"
 #include "java/sql/ResultSet.hxx"
 #include "java/sql/ResultSetMetaData.hxx"
