@@ -244,10 +244,10 @@ namespace connectivity
 			//////////////////////////////////////////////////////////////////////
 
 			 WpADOProperties get_Properties();
-			 sal_Int32 GetActualSize() const ;
+			 sal_IntPtr GetActualSize() const ;
 			 sal_Int32 GetAttributes() const ;
 			 sal_Int32 GetStatus() const 	  ;
-			 sal_Int32 GetDefinedSize() const ;
+			 sal_IntPtr GetDefinedSize() const ;
 			// gibt den Namen des Feldes zur"ueck
 			 ::rtl::OUString GetName() const ;
 			 DataTypeEnum GetADOType() const  ;
@@ -271,7 +271,7 @@ namespace connectivity
 
 			 void PutADOType(DataTypeEnum eType) ;
 
-			 sal_Bool PutDefinedSize(sal_Int32 _nDefSize);
+			 sal_Bool PutDefinedSize(sal_IntPtr _nDefSize);
 
 			 sal_Bool PutAttributes(sal_Int32 _nDefSize);
 		};
@@ -331,7 +331,7 @@ namespace connectivity
 			 sal_Bool Cancel() const;
 			 sal_Int32 get_State( );
 			 sal_Bool Supports( /* [in] */ CursorOptionEnum CursorOptions);
-			PositionEnum get_AbsolutePosition();
+			 sal_IntPtr get_AbsolutePosition();
 			 void GetDataSource(IUnknown** pIUnknown) const ;
 			 void PutRefDataSource(IUnknown* pIUnknown);
 			 void GetBookmark(VARIANT& var);
@@ -353,9 +353,9 @@ namespace connectivity
 			 sal_Bool CancelUpdate();
 			 WpADOProperties get_Properties() const;
 			 sal_Bool NextRecordset(OLEVariant& RecordsAffected,ADORecordset** ppiRset);
-			 sal_Bool get_RecordCount(sal_Int32 &_nRet) const;
-			 sal_Bool get_MaxRecords(sal_Int32 &_nRet) const;
-			 sal_Bool put_MaxRecords(sal_Int32 _nRet);
+			 sal_Bool get_RecordCount(sal_IntPtr &_nRet) const;
+			 sal_Bool get_MaxRecords(sal_IntPtr &_nRet) const;
+			 sal_Bool put_MaxRecords(sal_IntPtr _nRet);
 			 sal_Bool get_CursorType(CursorTypeEnum &_nRet) const;
 			 sal_Bool put_CursorType(CursorTypeEnum _nRet);
 			 sal_Bool get_LockType(LockTypeEnum &_nRet) const;

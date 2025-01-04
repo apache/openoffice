@@ -304,12 +304,14 @@ Reference< XResultSet > SAL_CALL OStatement_Base::executeQuery( const ::rtl::OUS
 	OLEVariant aCon;
 	aCon.setNoArg();
 	CHECK_RETURN(aSet.put_CacheSize(m_nFetchSize))
-	CHECK_RETURN(aSet.put_MaxRecords(m_nMaxRows))
+	sal_IntPtr maxRows = m_nMaxRows;
+	CHECK_RETURN(aSet.put_MaxRecords(maxRows))
 	CHECK_RETURN(aSet.Open(aCmd,aCon,m_eCursorType,m_eLockType,adOpenUnspecified))
 
 
 	CHECK_RETURN(aSet.get_CacheSize(m_nFetchSize))
-	CHECK_RETURN(aSet.get_MaxRecords(m_nMaxRows))
+	CHECK_RETURN(aSet.get_MaxRecords(maxRows))
+	m_nMaxRows = maxRows;
 	CHECK_RETURN(aSet.get_CursorType(m_eCursorType))
 	CHECK_RETURN(aSet.get_LockType(m_eLockType))
 
@@ -385,7 +387,7 @@ Sequence< sal_Int32 > SAL_CALL OStatement::executeBatch(  ) throw(SQLException, 
 		{
 			assignRecordSet( pSet );
 
-			sal_Int32 nValue;
+			sal_IntPtr nValue;
 			if(m_RecordSet.get_RecordCount(nValue))
 				pArray[j] = nValue;
 		}
@@ -438,7 +440,7 @@ sal_Int32 SAL_CALL OStatement_Base::getUpdateCount(  ) throw(SQLException, Runti
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
 
 
-	sal_Int32 nRet;
+	sal_IntPtr nRet;
 	if(m_RecordSet.IsValid() && m_RecordSet.get_RecordCount(nRet))
 		return nRet;
 	return -1;
@@ -507,7 +509,7 @@ sal_Int32 OStatement_Base::getQueryTimeOut() const  throw(SQLException, RuntimeE
 //------------------------------------------------------------------------------
 sal_Int32 OStatement_Base::getMaxRows() const throw(SQLException, RuntimeException)
 {
-	sal_Int32 nRet=-1;
+	sal_IntPtr nRet=-1;
 	if(!(m_RecordSet.IsValid() && m_RecordSet.get_MaxRecords(nRet)))
 		::dbtools::throwFunctionSequenceException(NULL);
 	return nRet;
