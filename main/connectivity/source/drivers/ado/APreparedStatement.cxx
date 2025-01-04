@@ -306,10 +306,12 @@ m_xMetaData.clear();
 	OLEVariant aCon;
 	aCon.setNoArg();
 	CHECK_RETURN(m_RecordSet.put_CacheSize(m_nFetchSize))
-	CHECK_RETURN(m_RecordSet.put_MaxRecords(m_nMaxRows))
+	sal_IntPtr maxRows = m_nMaxRows;
+	CHECK_RETURN(m_RecordSet.put_MaxRecords(maxRows))
 	CHECK_RETURN(m_RecordSet.Open(aCmd,aCon,m_eCursorType,m_eLockType,adOpenUnspecified))
 	CHECK_RETURN(m_RecordSet.get_CacheSize(m_nFetchSize))
-	CHECK_RETURN(m_RecordSet.get_MaxRecords(m_nMaxRows))
+	CHECK_RETURN(m_RecordSet.get_MaxRecords(maxRows))
+	m_nMaxRows = maxRows;
 	CHECK_RETURN(m_RecordSet.get_CursorType(m_eCursorType))
 	CHECK_RETURN(m_RecordSet.get_LockType(m_eLockType))
 
