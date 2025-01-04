@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_evoab2.hxx"
 #include "NResultSetMetaData.hxx"
 #include "NDatabaseMetaData.hxx"
 #include "connectivity/dbexception.hxx"

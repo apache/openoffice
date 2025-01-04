@@ -20,7 +20,7 @@
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_dbpool2.hxx"
 #include "ZPoolCollection.hxx"
 #include "ZDriverWrapper.hxx"
 #include "ZConnectionPool.hxx"

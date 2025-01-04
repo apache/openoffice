@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_hsqldb.hxx"
 #if defined(HAVE_CONFIG_H) && HAVE_CONFIG_H
 #include <config.h>
 #endif

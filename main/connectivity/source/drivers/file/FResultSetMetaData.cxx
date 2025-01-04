@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_file.hxx"
 #include "file/FResultSetMetaData.hxx"
 #include "file/FTable.hxx"
 #include <comphelper/extract.hxx>

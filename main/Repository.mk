@@ -71,6 +71,7 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	acc \
 	adabas \
 	adabasui \
+	ado \
 	agg \
 	analysis \
 	animcore \
@@ -84,6 +85,7 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	basebmp \
 	basegfx \
 	cached1 \
+	calc \
 	canvastools \
 	collator_data \
 	communi \
@@ -92,10 +94,12 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	cui \
 	date \
 	dba \
+	dbase \
 	dbaxml \
 	dbmm \
 	dbui \
 	dbpool \
+	dbpool2 \
 	dbtools \
 	desktop_detector \
 	dict_ja \
@@ -107,9 +111,11 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	editeng \
 	embobj \
 	emboleobj \
+	evoab2 \
 	evtatt \
 	file \
 	fileacc \
+	flat \
 	fop \
 	for \
 	forui \
@@ -121,9 +127,11 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	fwl \
 	fwm \
 	guesslang \
+	hsqldb \
 	i18npaper \
 	index_data \
 	java_uno_accessbridge \
+	jdbc \
 	juh \
 	juhx \
 	lng \
@@ -131,9 +139,12 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	localedata_es \
 	localedata_euro \
 	localedata_others \
+	macab1 \
+	macabdrv1 \
 	mcnttype \
 	msfilter \
 	msword \
+	mysql \
 	odbc \
 	odbcbase \
 	oox \
@@ -151,6 +162,7 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	scfilt \
 	scui \
 	sdbc \
+	sdbc2 \
 	sdbt \
 	sfx \
 	simplecm \
