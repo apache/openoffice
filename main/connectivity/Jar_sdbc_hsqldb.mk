@@ -44,6 +44,7 @@ $(eval $(call gb_Jar_set_jarclasspath,sdbc_hsqldb,\
 ))
 
 $(eval $(call gb_Jar_add_sourcefiles,sdbc_hsqldb,\
+	connectivity/org/hsqldb/lib/FileSystemRuntimeException \
 	connectivity/com/sun/star/sdbcx/comp/hsqldb/FileSystemRuntimeException \
 	connectivity/com/sun/star/sdbcx/comp/hsqldb/NativeInputStreamHelper \
 	connectivity/com/sun/star/sdbcx/comp/hsqldb/NativeLibraries \
