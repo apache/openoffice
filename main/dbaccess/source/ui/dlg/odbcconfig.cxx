@@ -86,6 +86,10 @@
 #pragma warning(push)
 #pragma warning(disable: 4005)
 #endif
+#if _WIN64
+typedef long long INT64;
+typedef unsigned long long UINT64;
+#endif // _WIN64
 #endif // defined(WNT)
 
 #if defined(OS2)
