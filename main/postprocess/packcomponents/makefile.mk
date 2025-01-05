@@ -48,7 +48,6 @@ my_components = \
     abp \
     basprov \
     bib \
-    calc \
     chartcontroller \
     chartmodel \
     charttools \
@@ -64,6 +63,11 @@ my_components = \
     component/canvas/source/vcl/vclcanvas \
     component/comphelper/util/comphelp \
     component/configmgr/source/configmgr \
+    component/connectivity/source/drivers/calc/calc \
+    component/connectivity/source/drivers/dbase/dbase \
+    component/connectivity/source/drivers/flat/flat \
+    component/connectivity/source/drivers/mysql/mysql \
+    component/connectivity/source/drivers/odbc/odbc \
     component/cui/util/cui \
     component/drawinglayer/drawinglayer \
 	component/dbaccess/source/ext/adabas/adabasui \
@@ -151,7 +155,6 @@ my_components = \
     component/xmloff/source/transform/xof \
     component/xmloff/util/xo \
     component/xmlscript/util/xcr \
-    dbase \
     dbp \
     dbpool2 \
     dbtools \
@@ -160,15 +163,12 @@ my_components = \
     dlgprov \
     filterconfig1 \
     flash \
-    flat \
     frm \
     localebe1 \
     log \
 	mailmerge \
     migrationoo2 \
     msfilter \
-    mysql \
-    odbc \
     offacc \
     oooimprovecore \
     pcr \
@@ -283,8 +283,8 @@ my_components += \
     component/wizards/com/sun/star/wizards/agenda/agenda \
     component/wizards/com/sun/star/wizards/fax/fax \
     component/wizards/com/sun/star/wizards/form/form \
-    hsqldb \
-    jdbc \
+    component/connectivity/drivers/hsqldb/hsqldb \
+    component/connectivity/drivers/jdbc/jdbc \
     postgresql \
     component/wizards/com/sun/star/wizards/letter/letter \
     component/wizards/com/sun/star/wizards/query/query \
@@ -321,9 +321,9 @@ my_components += \
 
 .IF "$(OS)" == "WNT"
 my_components += \
-    ado \
     component/accessibility/java/java_uno_accessbridge/java_uno_accessbridge \
     component/avmedia/source/win/avmediawin \
+    component/connectivity/drivers/ado/ado \
     component/dtrans/source/generic/dtrans \
     component/dtrans/util/dnd \
     component/dtrans/util/ftransl \
@@ -360,7 +360,7 @@ my_components += component/canvas/source/directx/directx5canvas
 
 .IF "$(OS)" == "LINUX" || "$(OS)" == "NETBSD" || \
     ("$(OS)" == "SOLARIS" && "$(CPU)" == "S") || "$(OS)" == "WNT"
-my_components += adabas
+my_components += component/connectivity/source/drivers/adabas/adabas
 .END
 
 .IF "$(OS)" != "MACOSX" && "$(OS)" != "WNT" && "$(OS)" != "OS2"
