@@ -87,6 +87,10 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	cached1 \
 	calc \
 	canvastools \
+	chartcontroller \
+	chartmodel \
+	charttools \
+	chartview \
 	collator_data \
 	communi \
 	cppcanvas \

@@ -20,7 +20,7 @@
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_chart2.hxx"
+#include "precompiled_chartcontroller.hxx"
 
 #include "StatusBarCommandDispatch.hxx"
 #include "ObjectNameProvider.hxx"
