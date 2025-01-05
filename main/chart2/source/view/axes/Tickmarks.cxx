@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_chart2.hxx"
+#include "precompiled_chartview.hxx"
 #include "Tickmarks.hxx"
 #include "Tickmarks_Equidistant.hxx"
 #include "Tickmarks_Dates.hxx"

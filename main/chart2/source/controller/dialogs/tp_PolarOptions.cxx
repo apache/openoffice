@@ -21,7 +21,7 @@
 
 
 
-#include "precompiled_chart2.hxx"
+#include "precompiled_chartcontroller.hxx"
 #include "tp_PolarOptions.hxx"
 #include "tp_PolarOptions.hrc"
 #include "ResId.hxx"
