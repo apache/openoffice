@@ -61,7 +61,7 @@ public class AccessibleControlShape extends TestCase {
                 UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
         } catch ( com.sun.star.uno.Exception e ) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create document", e );
         }
