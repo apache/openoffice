@@ -117,7 +117,7 @@ Private Function BrowseCallbackProc(ByVal hWnd As Long, ByVal uMsg As Long, ByVa
   Dim ret As Long
   Dim sBuffer As String
   
-  On Error Resume Next  'Sugested by MS to prevent an error from
+  On Error Resume Next  'Suggested by MS to prevent an error from
                         'propagating back into the calling process.
      
   Select Case uMsg
@@ -131,7 +131,7 @@ Private Function BrowseCallbackProc(ByVal hWnd As Long, ByVal uMsg As Long, ByVa
   
 End Function
 
-' This function allows you to assign a function pointer to a vaiable.
+' This function allows you to assign a function pointer to a variable.
 Private Function GetAddressofFunction(add As Long) As Long
   GetAddressofFunction = add
 End Function
