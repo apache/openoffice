@@ -1025,7 +1025,7 @@ class XclExpDval;
 
     The constructor does all the work creating the cell table. It reads the
     Calc sheet and converts all columns, rows, and cells to Excel record data.
-    Additioanlly, hyperlink records, note records, additional records for
+    Additionally, hyperlink records, note records, additional records for
     formula cells, data validation records, and outline records are created.
 
     The Finalize() function does even more work. It calculates default column

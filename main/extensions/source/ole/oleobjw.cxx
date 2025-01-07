@@ -422,7 +422,7 @@ Any SAL_CALL IUnknownWrapper_Impl::getValue( const OUString& aPropertyName )
         // of the automation object to be exposed.. but it seems
         // from looking at comments in the code that it is possible for 
         // this object to actually wrap an UNO object ( I guess if automation is
-        // used from MSO to create Openoffice objects ) Therefore, those objects
+        // used from MSO to create OpenOffice objects ) Therefore, those objects
         // will more than likely already have their own XServiceInfo interface.
         // Instead here I chose a name that should be illegal both in COM and
         // UNO ( from an IDL point of view ) therefore I think this is a safe
