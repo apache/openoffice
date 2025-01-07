@@ -78,7 +78,7 @@ public class ScDataPilotFieldGroupObj extends TestCase
         }
         catch (com.sun.star.uno.Exception e)
         {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace (log);
             throw new StatusException ("Couldn't create document", e);
         }

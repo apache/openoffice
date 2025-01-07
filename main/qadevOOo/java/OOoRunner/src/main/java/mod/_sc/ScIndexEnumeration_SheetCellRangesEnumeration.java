@@ -59,7 +59,7 @@ public class ScIndexEnumeration_SheetCellRangesEnumeration extends TestCase {
             log.println( "creating a sheetdocument" );
             xSheetDoc = SOF.createCalcDoc(null);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create document", e );
         }

@@ -94,7 +94,8 @@ SHL1STDLIBS += -lgcc -lmingw32 -lmoldname -lmsvcrt
 
 SHL1STDLIBS +=\
 		$(KERNEL32LIB)\
-		$(ADVAPI32LIB)
+		$(ADVAPI32LIB)\
+		$(LIBCMT)
 
 SHL1DEF=$(MISC)$/$(SHL1TARGET).def
 

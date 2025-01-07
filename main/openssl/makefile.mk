@@ -171,13 +171,15 @@ OUT2BIN += out/libeay32.dll
 		perl configure $(NO_ASM)
 	.IF "$(CPUNAME)"=="INTEL"
 		CONFIGURE_FLAGS=VC-WIN32
+		OUT2BIN = libcrypto-3.dll
+		OUT2BIN += libssl-3.dll
 	.ELIF "$(CPUNAME)"=="X86_64"
 		CONFIGURE_FLAGS=VC-WIN64A
+		OUT2BIN = libcrypto-3-x64.dll
+		OUT2BIN += libssl-3-x64.dll
 	.ENDIF
 	BUILD_ACTION=LIB="$(ILIB)" nmake
 
-	OUT2BIN = libcrypto-3.dll
-	OUT2BIN += libssl-3.dll
 	OUT2INC = include$/openssl$/*
 
 .ENDIF # "$(COM)"=="GCC"

@@ -124,8 +124,11 @@ RSCDEFS+=-DFULL_DESK
 CFLAGSEXCEPTIONS=-EHa
 CFLAGS_NO_EXCEPTIONS=
 
-# enable boost support for __cdecl (SAL_CALL) C++-UNO interface methods
-CDEFS+=-DBOOST_MEM_FN_ENABLE_CDECL
+# boost support for __cdecl (SAL_CALL) C++-UNO interface methods
+# would normally be necessary, but on Windows/x64 that produces
+# errors, as cdecl is a no-op, so it produces duplicate functions/methods
+# that fail to compile. So NEVER EVER EVER set this flag:
+### CDEFS+=-DBOOST_MEM_FN_ENABLE_CDECL
 
 # with the current debug switches PCH won't work
 # anyway. so keep the existing .pch intact and don't
