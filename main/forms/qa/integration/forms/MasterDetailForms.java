@@ -345,7 +345,7 @@ public class MasterDetailForms extends complexlib.ComplexTestCase implements com
     }
 
     /* ------------------------------------------------------------------ */
-    /** executes an operation on the master, and waits until the detail form has been (re)loaded aferwards
+    /** executes an operation on the master, and waits until the detail form has been (re)loaded afterwards
      */
     private void operateMasterAndWaitForDetailForm( Method _masterMethod, Object _masterInterface, Object[] _methodParameters ) throws SQLException
     {

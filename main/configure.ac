@@ -106,7 +106,7 @@ AC_ARG_WITH(fonts,
 ],,)
 AC_ARG_WITH(ppds,
 [  --without-ppds          Removes Postscript Printer definition files from
-                          Apache Openoffice installation set, for people building
+                          Apache OpenOffice installation set, for people building
                           for specific distributions where PPDs are known to be
                           already available (every recent distro with CUPS
                           backend)
