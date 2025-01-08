@@ -28,9 +28,6 @@ $(eval $(call gb_Module_add_targets,connectivity,\
 	AllLangResTarget_hsqldb \
 	AllLangResTarget_sdbcl \
 	AllLangResTarget_sdberr \
-	Configuration \
-	Connectivity \
-	Jar_sdbc_hsqldb \
 	Library_adabas \
 	Library_calc \
 	Library_dbase \
