@@ -1983,7 +1983,7 @@ void ScColumn::SetDirtyAfterLoad()
  * this method here then.
 */
 
-        // If the cell was alsready dirty because of CalcAfterLoad,
+        // If the cell was already dirty because of CalcAfterLoad,
         // FormulaTracking has to take place.
         if ( p->GetCellType() == CELLTYPE_FORMULA && p->GetDirty() )
             p->SetDirty();

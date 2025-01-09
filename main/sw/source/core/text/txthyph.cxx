@@ -335,7 +335,7 @@ sal_Bool SwTxtPortion::CreateHyphen( SwTxtFormatInfo &rInf, SwTxtGuess &rGuess )
     {
 		SvxAlternativeSpelling aAltSpell;
 		aAltSpell = SvxGetAltSpelling( xHyphWord );
-		ASSERT( aAltSpell.bIsAltSpelling, "no alternatve spelling" );
+		ASSERT( aAltSpell.bIsAltSpelling, "no alternative spelling" );
 
 		XubString  aAltTxt   = aAltSpell.aReplacement;
         nPorEnd = aAltSpell.nChangedPos + rGuess.BreakStart() - rGuess.FieldDiff();

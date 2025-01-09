@@ -64,9 +64,9 @@ public:
 	ULONG					mnStyle;				// SalFrameStyle
 	long					mnWidth;				// Window-Witdth
 	long					mnHeight;				// Window-Height
-	SWP 					maFullScreenRect;		// WindowRect befor FullScreenMode
+	SWP 					maFullScreenRect;		// WindowRect before FullScreenMode
 	sal_Bool					mbGraphics; 			// is Graphics used
-	sal_Bool					mbAllwayOnTop;			// Allways on top modus
+	sal_Bool					mbAllwayOnTop;			// Always on top modus
 	sal_Bool					mbVisible;				// Visible Show/Hide-Status
 	sal_Bool					mbMinHide;				// hide called from OS2
 	sal_Bool					mbHandleIME;			// TRUE: Wir handeln die IME-Messages

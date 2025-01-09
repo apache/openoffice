@@ -751,7 +751,7 @@ static int parseCharWidths( FileInputStream* fp, int* cwi)
 
 
 /*
- * number of char metrics is almost allways inaccurate, so be gentle and try to
+ * number of char metrics is almost always inaccurate, so be gentle and try to
  * adapt our internal storage by adjusting the allocated list
  */ 
 

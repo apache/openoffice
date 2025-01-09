@@ -1360,7 +1360,7 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchAlreadyLoaded()
     if (!xTaskList.is())
         return css::uno::Reference< css::frame::XFrame >(); // task list can be empty!
 
-    // Note: To detect if a document was alrady loaded before
+    // Note: To detect if a document was already loaded before
     // we check URLs here only. But might the existing and the required
     // document has different versions! Then its URLs are the same ...
     sal_Int16 nNewVersion = m_lMediaDescriptor.getUnpackedValueOrDefault(::comphelper::MediaDescriptor::PROP_VERSION(), (sal_Int16)(-1));
