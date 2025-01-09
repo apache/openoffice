@@ -48,7 +48,7 @@ import org.xml.sax.SAXException;
  * 'office:document-context' element is encountered, if the document is split
  * into separate files.
  * <p/>
- * Alternativly, there is the option to keep everything in one file. The root
+ * Alternatively, there is the option to keep everything in one file. The root
  * element for that format is 'office:document'.
  */
 public class DocumentContentReadHandler extends AbstractXmlReadHandler

@@ -243,7 +243,7 @@ int TextSearch::SearchFrwrd( const String & rStr, xub_StrLen* pStart,
 			{
 				nRet = 1;
 				// the XTextsearch returns in startOffset the higher position
-				// and the endposition is allways exclusive.
+				// and the endposition is always exclusive.
 				// The caller of this function will have in startPos the
 				// lower pos. and end
 				*pStart = (xub_StrLen)aRet.startOffset[ 0 ];
@@ -274,7 +274,7 @@ int TextSearch::SearchBkwrd( const String & rStr, xub_StrLen* pStart,
 			{
 				nRet = 1;
 				// the XTextsearch returns in startOffset the higher position
-				// and the endposition is allways exclusive.
+				// and the endposition is always exclusive.
 				// The caller of this function will have in startPos the
 				// lower pos. and end
 				*pEnde = (xub_StrLen)aRet.startOffset[ 0 ];

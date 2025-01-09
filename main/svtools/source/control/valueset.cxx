@@ -2816,7 +2816,7 @@ void ValueSet::SetFocusedItem(sal_Bool bFocused)
 				&& nPos == VALUESET_ITEM_NOTFOUND 
 				&& mnSelItemId == 0)
 			{
-				// When present the first item is the then allways visible none field.
+				// When present the first item is the then always visible none field.
 				pItem = ImplGetItem (VALUESET_ITEM_NONEITEM);
 			}
 			else

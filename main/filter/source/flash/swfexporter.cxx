@@ -211,7 +211,7 @@ sal_Bool FlashExporter::exportAll( Reference< XComponent > xDoc, Reference< XOut
 		if ( xStatusIndicator.is() )
 			xStatusIndicator->setValue( nPage );
 
-        // #56084# get current xDrawPage when not exporting selection; else alraedy set above
+        // #56084# get current xDrawPage when not exporting selection; else already set above
         if(!mbExportSelection)
         {
             xDrawPages->getByIndex(nPage) >>= xDrawPage;

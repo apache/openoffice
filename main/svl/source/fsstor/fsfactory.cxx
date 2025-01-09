@@ -119,7 +119,7 @@ uno::Reference< uno::XInterface > SAL_CALL FSStorageFactory::createInstanceWithA
 			OSL_ENSURE( sal_False, "Wrong second argument!\n" );
 			throw uno::Exception(); // TODO: Illegal argument
 		}
-		// it's allways possible to read written storage in this implementation
+		// it's always possible to read written storage in this implementation
 		nStorageMode |= embed::ElementModes::READ;
 	}
 
