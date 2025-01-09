@@ -71,7 +71,7 @@ sal_Bool HeaderFooterHelper::isFirstPageHeader( const uno::Reference< frame::XMo
     if( isHeader( xModel, xCurrentText ) )
     {
         uno::Reference< text::XPageCursor > xPageCursor( word::getXTextViewCursor( xModel ), uno::UNO_QUERY_THROW );
-        // FIXME: getPage allways returns 1
+        // FIXME: getPage always returns 1
         sal_Int32 nPage = xPageCursor->getPage();
         return nPage == FIRST_PAGE;
     }

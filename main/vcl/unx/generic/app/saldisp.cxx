@@ -367,7 +367,7 @@ sal_GetServerVendor( Display *p_display )
 		{ vendor_sgi,         "Silicon Graphics",                 9 },
 		{ vendor_sco,         "The Santa Cruz Operation", 		 16 },
 		{ vendor_xinside,     "X Inside Inc.", 					 10	},
-		// allways the last entry: vendor_none to indicate eol
+		// always the last entry: vendor_none to indicate eol
 		{ vendor_none, 	  	  NULL,								  0 },
 	};
 

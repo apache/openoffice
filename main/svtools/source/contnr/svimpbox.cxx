@@ -3183,7 +3183,7 @@ void SvImpLBox::Command( const CommandEvent& rCEvt )
 			sal_Int32	nSelectionCount = pView->GetSelectionCount();
 
 			if( nSelectionCount )
-			{	// now allways take first visible as base for positioning the menu
+			{	// now always take first visible as base for positioning the menu
 				SvLBoxEntry*	pSelected = pView->FirstSelected();
 				while( pSelected )
 				{

@@ -106,8 +106,8 @@ namespace sdr
             if(GetOle2Obj().IsChart())
             {
                 // #123539# allow buffering and reuse of local chart data to not need to rebuild it
-                // on every ViewObjectContact::getPrimitive2DSequence call. TTTT: No tneeded for
-                // aw080, there this mechanism alraedy works differently
+                // on every ViewObjectContact::getPrimitive2DSequence call. TTTT: Not needed for
+                // aw080, there this mechanism already works differently
                 if(mxChartContent.is())
                 {
                     xContent = mxChartContent;
