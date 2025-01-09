@@ -62,7 +62,7 @@ published interface XLinguServiceEventBroadcaster : com::sun::star::uno::XInterf
 			<FALSE/> otherwise.
 
 		@param xLstnr
-			the listener to be addded.
+			the listener to be added.
 	 */
 	boolean	addLinguServiceEventListener (
 		[in] com::sun::star::linguistic2::XLinguServiceEventListener	xLstnr );
