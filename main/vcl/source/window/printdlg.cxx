@@ -1083,7 +1083,7 @@ void PrintDialog::readFromSettings()
     maNUpPage.readFromSettings();
     maOptionsPage.readFromSettings();
     
-    // read last selected tab page; if it exists, actiavte it
+    // read last selected tab page; if it exists, activate it
     SettingsConfigItem* pItem = SettingsConfigItem::get();
     rtl::OUString aValue = pItem->getValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "PrintDialog" ) ),
                                             rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "LastPage" ) ) );

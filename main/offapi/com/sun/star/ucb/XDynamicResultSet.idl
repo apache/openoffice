@@ -96,7 +96,7 @@ module com { module sun { module star { module ucb {
   	<li> The listener is allowed to access both <type>ContentResultSet</type>s,
 		 they must be both valid.</li>
   	<li> It is not allowed to start a second notify-call.</li>
-  	<li> All addditional things we want to send as notification are to be
+  	<li> All additional things we want to send as notification are to be
 	     queued.</li>
   	<li> Any other calls are to be accepted and treated.</li>
 	</ol>
