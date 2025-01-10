@@ -1365,7 +1365,7 @@ throw ( RuntimeException )
     {
         vos::OGuard aGuard( Application::GetSolarMutex() );
 
-        // Add layout manager as listener to get notifications about toolbar button activties
+        // Add layout manager as listener to get notifications about toolbar button activities
         Window* pContainerWindow = VCLUnoHelper::GetWindow( m_xContainerWindow );
         if ( pContainerWindow )
             pContainerWindow->AddChildEventListener( LINK( this, LayoutManager, WindowEventListener ) );

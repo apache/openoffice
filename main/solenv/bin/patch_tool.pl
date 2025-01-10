@@ -615,7 +615,7 @@ sub CheckFeatureSets($$)
 
     if (scalar @added_features > 0)
     {
-        $installer::logger::Info->printf("Warning: %d features have been addded\n", scalar @added_features);
+        $installer::logger::Info->printf("Warning: %d features have been added\n", scalar @added_features);
 
         my @new_features_with_existing_parents = ();
         foreach my $new_feature (@added_features)
@@ -760,7 +760,7 @@ sub CheckAddedComponents ($$)
     else
     {
 	$installer::logger::Info->printf(
-	    "Warning: %d components have been addded\n",
+	    "Warning: %d components have been added\n",
 	    scalar @added_components);
 
         # Check that the referencing features are also new.
