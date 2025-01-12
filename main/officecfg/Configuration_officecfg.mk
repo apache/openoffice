@@ -41,6 +41,7 @@ $(call gb_Configuration_add_schemas,registry,officecfg/registry/schema,\
 	org/openoffice/Office/Draw.xcs \
 	org/openoffice/Office/Events.xcs \
 	org/openoffice/Office/Embedding.xcs \
+	org/openoffice/Office/ExtensionDependencies.xcs \
 	org/openoffice/Office/ExtensionManager.xcs \
 	org/openoffice/Office/Impress.xcs \
 	org/openoffice/Office/Java.xcs \
@@ -50,6 +51,7 @@ $(call gb_Configuration_add_schemas,registry,officecfg/registry/schema,\
 	org/openoffice/Office/Logging.xcs \
 	org/openoffice/Office/Math.xcs \
 	org/openoffice/Office/OptionsDialog.xcs \
+	org/openoffice/Office/PresenterScreen.xcs \
 	org/openoffice/Office/ProtocolHandler.xcs \
 	org/openoffice/Office/SFX.xcs \
 	org/openoffice/Office/Substitution.xcs \
@@ -85,6 +87,7 @@ $(call gb_Configuration_add_schemas,registry,officecfg/registry/schema,\
 	org/openoffice/Office/UI/DrawImpressCommands.xcs \
 	org/openoffice/Office/UI/GenericCommands.xcs \
 	org/openoffice/Office/UI/MathCommands.xcs \
+	org/openoffice/Office/UI/Sidebar.xcs \
 	org/openoffice/Office/UI/StartModuleCommands.xcs \
 	org/openoffice/Office/UI/WriterCommands.xcs \
 	org/openoffice/Office/UI/WindowState.xcs \
@@ -132,6 +135,7 @@ $(call gb_Configuration_add_datas,registry,officecfg/registry/data,\
 	org/openoffice/Office/Calc.xcu \
 	org/openoffice/Office/Canvas.xcu \
 	org/openoffice/Office/Compatibility.xcu \
+	org/openoffice/Office/ExtensionDependencies.xcu \
 	org/openoffice/Office/ExtensionManager.xcu \
 	org/openoffice/Office/Impress.xcu \
 	org/openoffice/Office/Jobs.xcu \
@@ -139,6 +143,7 @@ $(call gb_Configuration_add_datas,registry,officecfg/registry/data,\
 	org/openoffice/Office/Linguistic.xcu \
 	org/openoffice/Office/Logging.xcu \
 	org/openoffice/Office/Math.xcu \
+	org/openoffice/Office/PresenterScreen.xcu \
 	org/openoffice/Office/ProtocolHandler.xcu \
 	org/openoffice/Office/Security.xcu \
 	org/openoffice/Office/Scripting.xcu \
@@ -228,6 +233,7 @@ $(call gb_Configuration_add_localized_datas,registry,officecfg/registry/data,\
 	org/openoffice/Office/Embedding.xcu \
 	org/openoffice/Office/WebWizard.xcu \
 	org/openoffice/Office/FormWizard.xcu \
+	org/openoffice/Office/PresenterScreen.xcu \
 	org/openoffice/Office/Writer.xcu \
 	org/openoffice/Office/UI/BasicIDECommands.xcu \
 	org/openoffice/Office/UI/BibliographyCommands.xcu \
@@ -253,6 +259,7 @@ $(call gb_Configuration_add_localized_datas,registry,officecfg/registry/data,\
 	org/openoffice/Office/UI/DrawWindowState.xcu \
 	org/openoffice/Office/UI/ImpressWindowState.xcu \
 	org/openoffice/Office/UI/MathWindowState.xcu \
+	org/openoffice/Office/UI/Sidebar.xcu \
 	org/openoffice/Office/UI/StartModuleWindowState.xcu \
 	org/openoffice/Office/UI/WriterWindowState.xcu \
 	org/openoffice/Office/UI/XFormsWindowState.xcu \
