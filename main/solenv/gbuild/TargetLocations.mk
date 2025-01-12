@@ -32,6 +32,13 @@ gb_ResTarget_get_outdir_imagelist_target = $(OUTDIR)/res/img/$(1).ilst
 gb_ResTarget_get_outdir_target = $(OUTDIR)/bin/$(1).res
 gb_Jar_get_outdir_target = $(OUTDIR)/bin/$(1).jar
 gb_Zip_get_outdir_target = $(OUTDIR)/pck/$(1).zip
+# outdir targets: $(1) is path
+gb_Configuration_registry = $(OUTDIR)/xml/registry
+gb_XcsTarget_get_outdir_target = $(gb_Configuration_registry)/schema/$(1)
+gb_XcuDataTarget_get_outdir_target = $(gb_Configuration_registry)/data/$(1)
+gb_XcuLangpackTarget_get_outdir_target = $(gb_Configuration_registry)/spool/$(1)
+gb_XcuModuleTarget_get_outdir_target = $(gb_Configuration_registry)/spool/$(1)
+
 
 define gb_Library_get_target
 $(patsubst $(1):%,$(gb_Library_OUTDIRLOCATION)/%,$(filter $(filter $(1),$(gb_Library_TARGETS)):%,$(gb_Library_FILENAMES)))
@@ -96,6 +103,14 @@ gb_SrsPartMergeTarget_get_target = $(WORKDIR)/SrsPartMergeTarget/$(1)
 gb_SrsPartTarget_get_target = $(WORKDIR)/SrsPartTarget/$(1)
 gb_SrsTarget_get_target = $(WORKDIR)/SrsTarget/$(1).srs
 gb_WinResTarget_get_target = $(WORKDIR)/WinResTarget/$(1)$(gb_WinResTarget_POSTFIX)
+# workdir targets: $(1) is prefix/path
+gb_Configuration_get_target = $(WORKDIR)/Configuration/$(1).done
+gb_XcsTarget_get_target = $(WORKDIR)/XcsTarget/$(1)
+gb_XcuDataTarget_get_target = $(WORKDIR)/XcuDataTarget/$(1)
+gb_XcuLangpackTarget_get_target = $(WORKDIR)/XcuLangpackTarget/$(1)
+gb_XcuModuleTarget_get_target = $(WORKDIR)/XcuModuleTarget/$(1)
+gb_XcuMergeTarget_get_target = $(WORKDIR)/XcuMergeTarget/$(1)
+gb_XcuResTarget_get_target = $(WORKDIR)/XcuResTarget/$(1)
 gb_Zip_get_target = $(WORKDIR)/Zip/$(1).zip
 gb_Zip_get_final_target = $(WORKDIR)/Zip/$(1).done
 
@@ -135,6 +150,13 @@ $(eval $(call gb_Helper_make_clean_targets,\
 	CustomTarget \
 	UnoApiTarget \
 	Zip \
+	XcsTarget \
+	XcuDataTarget \
+	XcuModuleTarget \
+	XcuLangpackTarget \
+	XcuMergeTarget \
+	XcuResTarget \
+	Configuration \
 ))
 
 $(eval $(call gb_Helper_make_outdir_clean_targets,\
