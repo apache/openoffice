@@ -282,7 +282,7 @@ On Error Goto ErrHndl
     initListeners()
     oObj.contextChanged()
     if (instr(cObjectName,"Desktop") &gt; -1) then
-        Out.log("Desktop cann't change context")
+        Out.log("Desktop can't change context")
     elseif(contextChanged1) then
         bOK = true
     elseif(listener1Called) then

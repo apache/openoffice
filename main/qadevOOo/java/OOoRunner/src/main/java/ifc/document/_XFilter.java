@@ -117,7 +117,7 @@ public class _XFilter extends MultiMethodTest {
 		result = oObj.filter(mDesc) ;
                 
 		if (checker == null) {
-			log.println("!!! Warning : cann't check filter as no relation found");
+			log.println("!!! Warning : can't check filter as no relation found");
 		} else {
 			result &= checker.checkFilter() ;
 		}
