@@ -59,7 +59,7 @@ public class TextReplace {
                 UnoRuntime.queryInterface(
                     com.sun.star.util.XReplaceable.class, xTextDocument);
             
-            // You need a descriptor to set properies for Replace
+            // You need a descriptor to set properties for Replace
             xReplaceDescr = (com.sun.star.util.XReplaceDescriptor)
                 xReplaceable.createReplaceDescriptor();
             

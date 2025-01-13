@@ -382,10 +382,10 @@ public class ODatabaseForm extends TestCase {
             formLoader = FormTools.bindForm(xTextDoc, "MyForm", dbSourceName, 
                                             tableName);
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Cann't bind the form to source '" + dbSourceName + 
+            log.println("Can't bind the form to source '" + dbSourceName +
                         "', table '" + tableName + "' :");
             e.printStackTrace(log);
-            throw new StatusException("Cann't bind a form", e);
+            throw new StatusException("Can't bind a form", e);
         }
 
 
@@ -514,7 +514,7 @@ public class ODatabaseForm extends TestCase {
         try {
             the_set.first();
         } catch (SQLException e) {
-            log.println("Cann't move cursor to the first row.");
+            log.println("Can't move cursor to the first row.");
             e.printStackTrace();
             throw new StatusException("Can't move cursor to the first row.", e); 
         }

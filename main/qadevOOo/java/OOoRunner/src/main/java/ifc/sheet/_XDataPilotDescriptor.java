@@ -381,7 +381,7 @@ public class _XDataPilotDescriptor extends MultiMethodTest {
         }
 
         if (fieldsNames[rem] == null) {
-            log.println("No fields were set to this orientation - cann't check result") ;
+            log.println("No fields were set to this orientation - can't check result") ;
             return true ;
         }
 

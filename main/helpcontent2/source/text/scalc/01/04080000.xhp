@@ -37,30 +37,29 @@
 <!-- removed HID HID_SC_FUNCTIONLIST -->
 <bookmark xml-lang="en-US" branch="hid/.uno:FunctionBox" id="bm_id998166" localize="false"/><!-- HID added by script -->
 <bookmark xml-lang="en-US" branch="hid/.uno:FunctionBox" id="bm_id7607654" localize="false"/>
-<paragraph role="heading" id="hd_id3154126" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/04080000.xhp" name="Function List">Function List</link></paragraph>
-<paragraph role="paragraph" id="par_id3151118" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="funktionslistetext"><ahelp hid="HID_SC_FUNCTIONLIST">This command opens the <emph>Function List</emph> window, which displays all functions that can be inserted into your document.</ahelp>
+<paragraph role="heading" id="hd_id3154126" xml-lang="en-US" level="1" l10n="U"><link href="text/scalc/01/04080000.xhp" name="Function List">Function List</link></paragraph>
+<paragraph role="paragraph" id="par_id3151118" xml-lang="en-US" l10n="CHG"><variable id="funktionslistetext"><ahelp hid="HID_SC_FUNCTIONLIST">This command opens the <emph>Function List</emph> window, which displays all functions that can be inserted into your document.</ahelp>
 </variable> The <emph>Function List</emph> window is similar to the <emph>Functions</emph> tab page of the <link href="text/scalc/01/04060000.xhp" name="Function Wizard">Function Wizard</link>. The functions are inserted with placeholders to be replaced with your own values.</paragraph>
 <section id="howtoget">
 <embed href="text/scalc/00/00000404.xhp#funktionsliste"/>
 </section>
-<paragraph role="paragraph" id="par_id3152576" xml-lang="en-US" l10n="U" oldref="3">The <emph>Function List</emph> window is a resizable <link href="text/shared/00/00000005.xhp#andocken" name="dockable window">dockable window</link>. Use it to quickly enter functions in the spreadsheet. By double-clicking an entry in the functions list, the respective function is directly inserted with all parameters.</paragraph>
+<paragraph role="paragraph" id="par_id3152576" xml-lang="en-US" l10n="U">The <emph>Function List</emph> window is a resizable <link href="text/shared/00/00000005.xhp#andocken" name="dockable window">dockable window</link>. Use it to quickly enter functions in the spreadsheet. By double-clicking an entry in the functions list, the respective function is directly inserted with all parameters.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:ListBox:FID_FUNCTION_BOX:CB_CAT" id="bm_id3149960" localize="false"/>
-<paragraph role="heading" id="hd_id3145799" xml-lang="en-US" level="2" l10n="U" oldref="4">Category List</paragraph>
+<paragraph role="heading" id="hd_id3145799" xml-lang="en-US" level="2" l10n="U">Category List</paragraph>
 <embed href="text/scalc/01/04060000.xhp#kategorienliste"/>
 <bookmark xml-lang="en-US" branch="hid/sc:ListBox:FID_FUNCTION_BOX:LB_FUNC" id="bm_id3147126" localize="false"/>
-<paragraph role="heading" id="hd_id3153160" xml-lang="en-US" level="2" l10n="U" oldref="5">Function List</paragraph>
-<paragraph role="paragraph" id="par_id3149412" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SC:LISTBOX:FID_FUNCTION_BOX:LB_FUNC">Displays the available functions.</ahelp> When you select a function, the area below the list box displays a short description. To insert the selected function double-click it or click the <emph>Insert Function into calculation sheet</emph> icon.</paragraph>
+<paragraph role="heading" id="hd_id3153160" xml-lang="en-US" level="2" l10n="U">Function List</paragraph>
+<paragraph role="paragraph" id="par_id3149412" xml-lang="en-US" l10n="U"><ahelp hid="SC:LISTBOX:FID_FUNCTION_BOX:LB_FUNC">Displays the available functions.</ahelp> When you select a function, the area below the list box displays a short description. To insert the selected function double-click it or click the <emph>Insert Function into calculation sheet</emph> icon.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:ImageButton:FID_FUNCTION_BOX:IMB_INSERT" id="bm_id3150752" localize="false"/>
-<paragraph role="heading" id="hd_id3146971" xml-lang="en-US" level="2" l10n="U" oldref="7">Insert Function into calculation sheet</paragraph>
+<paragraph role="heading" id="hd_id3146971" xml-lang="en-US" level="2" l10n="U">Insert Function into calculation sheet</paragraph>
 <table id="tbl_id3153711">
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id3150043" xml-lang="en-US" l10n="E">
-<image id="img_id3159267" src="sc/res/fx.png" width="0.1945inch" height="0.1945inch"><alt id="alt_id3159267" xml-lang="en-US">Icon</alt>
-</image></paragraph>
+<image id="img_id3159267" src="sc/res/fx.png" width="0.1945inch" height="0.1945inch"><alt id="alt_id3159267" xml-lang="en-US">Icon</alt></image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3147345" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SC:IMAGEBUTTON:FID_FUNCTION_BOX:IMB_INSERT">Inserts the selected function into the document.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3147345" xml-lang="en-US" l10n="U"><ahelp hid="SC:IMAGEBUTTON:FID_FUNCTION_BOX:IMB_INSERT">Inserts the selected function into the document.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
