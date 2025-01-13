@@ -183,16 +183,16 @@ public class SvxShapeCircle extends TestCase {
             props.setPropertyValue("CircleKind",
                 com.sun.star.drawing.CircleKind.FULL) ;
         } catch (com.sun.star.lang.WrappedTargetException e) {
-            log.println("Cann't set 'CircleKind' property : " + e);
+            log.println("Can't set 'CircleKind' property : " + e);
             throw new StatusException("Can't create component", e) ;
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            log.println("Cann't set 'CircleKind' property : " + e);
+            log.println("Can't set 'CircleKind' property : " + e);
             throw new StatusException("Can't create component", e) ;
         } catch (com.sun.star.beans.PropertyVetoException e) {
-            log.println("Cann't set 'CircleKind' property : " + e);
+            log.println("Can't set 'CircleKind' property : " + e);
             throw new StatusException("Can't create component", e) ;
         } catch (com.sun.star.beans.UnknownPropertyException e) {
-            log.println("Cann't set 'CircleKind' property : " + e);
+            log.println("Can't set 'CircleKind' property : " + e);
             throw new StatusException("Can't create component", e) ;
         }
 
