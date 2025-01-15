@@ -29,7 +29,7 @@
 
 namespace com { namespace sun { namespace star { namespace uno { class Any; }}}}
 
-// Returns a SbxObject that wrapps an Uno Interface
+// Returns a SbxObject that wraps an Uno Interface
 // Implementation in basic/source/classes/sbunoobj.cxx
 BASIC_DLLPUBLIC SbxObjectRef GetSbUnoObject( const String& aName, const com::sun::star::uno::Any& aUnoObj_ );
 

@@ -1545,7 +1545,7 @@ namespace xmloff
     {
         // In OpenOffice.org 2.0, we changed the implementation of the css.form.component.TextField (the model of a text field control),
         // so that it now uses another default control. So if we encounter a text field where the *old* default
-        // control property is writting, we are not allowed to use it
+        // control property is writing, we are not allowed to use it
         PropertyValueArray::iterator aDefaultControlPropertyPos = ::std::find_if(
             m_aValues.begin(),
             m_aValues.end(),
@@ -1582,7 +1582,7 @@ namespace xmloff
         UniReference < XMLTextImportHelper > xTextImportHelper( m_rContext.getGlobalContext().GetTextImport() );
         if ( m_xCursor.is() )
 	    {
-		    // delete the newline which has been imported errornously
+		    // delete the newline which has been imported erroneously
             // TODO (fs): stole this code somewhere - why don't we fix the text import??
 		    m_xCursor->gotoEnd( sal_False );
 		    m_xCursor->goLeft( 1, sal_True );
@@ -2123,7 +2123,7 @@ namespace xmloff
 
 				aElements.push_back(sElement);
 
-				// swith to the next element
+				// switch to the next element
 				nElementStart = 1 + nNextSep;
 			}
 			while (nElementStart < nLength);

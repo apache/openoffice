@@ -47,7 +47,7 @@ import com.sun.star.uno.UnoRuntime;
 
 /**
  * The BridgeFactory class implements the <code>XBridgeFactory</code> Interface.
- * It wrapps the <code>UnoRuntime#getBridgeByName</code>method and delivers a 
+ * It wraps the <code>UnoRuntime#getBridgeByName</code>method and delivers a
  * XBridge component.
  * <p>
  * This component is only usable for remote bridges.
@@ -61,7 +61,7 @@ public class BridgeFactory implements XBridgeFactory/*, XEventListener*/ {
 	static private final boolean DEBUG = false;
 
 	/**
-	 * The name of the service, the <code>JavaLoader</code> acceses this through reflection.
+	 * The name of the service, the <code>JavaLoader</code> accesses this through reflection.
 	 */
 	public final static String __serviceName = "com.sun.star.bridge.BridgeFactory";
 

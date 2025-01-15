@@ -126,7 +126,7 @@ sal_Int32 vcl::I18nHelper::CompareString( const String& rStr1, const String& rSt
 
     if ( mbTransliterateIgnoreCase )
     {
-        // Change mbTransliterateIgnoreCase and destroy the warpper, next call to
+        // Change mbTransliterateIgnoreCase and destroy the wrapper, next call to
         // ImplGetTransliterationWrapper() will create a wrapper with the correct bIgnoreCase
         ((vcl::I18nHelper*)this)->mbTransliterateIgnoreCase = sal_False;
         delete ((vcl::I18nHelper*)this)->mpTransliterationWrapper;
@@ -145,7 +145,7 @@ sal_Bool vcl::I18nHelper::MatchString( const String& rStr1, const String& rStr2 
 
     if ( !mbTransliterateIgnoreCase )
     {
-        // Change mbTransliterateIgnoreCase and destroy the warpper, next call to
+        // Change mbTransliterateIgnoreCase and destroy the wrapper, next call to
         // ImplGetTransliterationWrapper() will create a wrapper with the correct bIgnoreCase
         ((vcl::I18nHelper*)this)->mbTransliterateIgnoreCase = sal_True;
         delete ((vcl::I18nHelper*)this)->mpTransliterationWrapper;

@@ -167,7 +167,7 @@ End Function
 
 '###################### 
 Sub DAsaveExcelDriver(saveDriver)
-	'# Not overwritting - Excel hangs, need to remove file first
+	'# Not overwriting - Excel hangs, need to remove file first
 	if daFso.FileExists(daFso.GetAbsolutePathName(saveDriver)) Then
 		daFso.DeleteFile(daFso.GetAbsolutePathName(saveDriver))
 	End If
