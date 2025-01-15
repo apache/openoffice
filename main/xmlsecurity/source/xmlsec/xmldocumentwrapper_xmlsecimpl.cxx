@@ -466,7 +466,7 @@ xmlNodePtr XMLDocumentWrapper_XmlSecImpl::checkElement( const cssu::Reference< c
  *	see NAME
  *
  *   INPUTS
- *	xXMLElement -	the XXMLElementWrapper interface wraping a node
+ *	xXMLElement -	the XXMLElementWrapper interface wrapping a node
  *
  *   RESULT
  *	node - the node wrapped in the XXMLElementWrapper interface

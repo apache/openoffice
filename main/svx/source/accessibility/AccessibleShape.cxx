@@ -692,8 +692,8 @@ awt::Rectangle SAL_CALL AccessibleShape::getBounds (void)
 			int x = aPixelPosition.getX() - aParentLocation.X;
 			int y = aPixelPosition.getY() - aParentLocation.Y;
 
-			/*        //  The following block is a workarround for bug #99889# (property
-			//  BoundRect returnes coordinates relative to document window
+			/*        //  The following block is a workaround for bug #99889# (property
+			//  BoundRect returns coordinates relative to document window
 			//  instead of absolute coordinates for shapes in Writer).  Has to
 			//  be removed as soon as bug is fixed.
 
@@ -711,7 +711,7 @@ awt::Rectangle SAL_CALL AccessibleShape::getBounds (void)
 						y = aPixelPosition.getY();
 					}
 				}
-			//  End of workarround.
+			//  End of workaround.
 			*/
 			// Clip with parent (with coordinates relative to itself).
 			::Rectangle aBBox (
