@@ -101,7 +101,7 @@ DGColorNameLookUp::DGColorNameLookUp (void)
         xNA = uno::Reference<container::XNameAccess>(xColorTable, uno::UNO_QUERY);
         if (xNA.is())
         {
-            // Look the solar mutex here as workarround for missing lock in
+            // Look the solar mutex here as workaround for missing lock in
             // called function.
             ::vos::OGuard aGuard (::Application::GetSolarMutex());
             aNames = xNA->getElementNames();
@@ -109,7 +109,7 @@ DGColorNameLookUp::DGColorNameLookUp (void)
     }
     catch (uno::RuntimeException e)
     {
-        // When an excpetion occurred then whe have an empty name sequence
+        // When an exception occurred then whe have an empty name sequence
         // and the loop below is not entered.
     }
 

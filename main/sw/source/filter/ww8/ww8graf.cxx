@@ -2041,7 +2041,7 @@ void SwWW8ImplReader::MapWrapIntoFlyFmt(SvxMSDffImportRec* pRecord,
              Gather round children and hear of a tale that will raise the
              hairs on the back of your neck this dark halloween night.
 
-             There is a polygon in word that describes the wraping around
+             There is a polygon in word that describes the wrapping around
              the graphic.
 
              Here are some sample values for the simplest case of a square
