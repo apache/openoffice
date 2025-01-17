@@ -48,10 +48,6 @@ my_components = \
     abp \
     basprov \
     bib \
-    chartcontroller \
-    chartmodel \
-    charttools \
-    chartview \
     component/UnoControls/util/ctl \
     component/animations/source/animcore/animcore \
     component/avmedia/util/avmedia \
@@ -61,13 +57,20 @@ my_components = \
     component/canvas/source/factory/canvasfactory \
     component/canvas/source/simplecanvas/simplecanvas \
     component/canvas/source/vcl/vclcanvas \
+    component/chart2/source/controller/chartcontroller \
+    component/chart2/source/model/chartmodel \
+    component/chart2/source/tools/charttools \
+    component/chart2/source/view/chartview \
     component/comphelper/util/comphelp \
     component/configmgr/source/configmgr \
+    component/connectivity/source/cpool/dbpool2 \
+    component/connectivity/source/dbtools/dbtools \
     component/connectivity/source/drivers/calc/calc \
     component/connectivity/source/drivers/dbase/dbase \
     component/connectivity/source/drivers/flat/flat \
     component/connectivity/source/drivers/mysql/mysql \
     component/connectivity/source/drivers/odbc/odbc \
+    component/connectivity/source/manager/sdbc2 \
     component/cui/util/cui \
     component/drawinglayer/drawinglayer \
 	component/dbaccess/source/ext/adabas/adabasui \
@@ -156,8 +159,6 @@ my_components = \
     component/xmloff/util/xo \
     component/xmlscript/util/xcr \
     dbp \
-    dbpool2 \
-    dbtools \
     deployment \
     deploymentgui \
     dlgprov \
@@ -180,7 +181,6 @@ my_components = \
     res \
     scn \
     scriptframe \
-    sdbc2 \
     spl \
     stringresource \
     svgfilter \
@@ -283,9 +283,9 @@ my_components += \
     component/wizards/com/sun/star/wizards/agenda/agenda \
     component/wizards/com/sun/star/wizards/fax/fax \
     component/wizards/com/sun/star/wizards/form/form \
-    component/connectivity/drivers/hsqldb/hsqldb \
-    component/connectivity/drivers/jdbc/jdbc \
-    postgresql \
+    component/connectivity/java/sdbc_jdbc/jdbc \
+    component/connectivity/java/sdbc_postgresql/postgresql \
+    component/connectivity/source/drivers/hsqldb/hsqldb \
     component/wizards/com/sun/star/wizards/letter/letter \
     component/wizards/com/sun/star/wizards/query/query \
     component/wizards/com/sun/star/wizards/report/report \

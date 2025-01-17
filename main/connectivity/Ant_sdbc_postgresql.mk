@@ -21,16 +21,9 @@
 
 
 
-$(eval $(call gb_Module_Module,chart2))
+$(eval $(call gb_Ant_Ant,sdbc_postgresql,$(SRCDIR)/connectivity/java/sdbc_postgresql/build.xml))
 
-$(eval $(call gb_Module_add_targets,chart2,\
-	AllLangResTarget_chartcontroller \
-	Library_chartcontroller \
-	Library_chartmodel \
-	Library_chartview \
-	Library_charttools \
-	Package_uiconfig \
-))
-
+$(eval $(call gb_Ant_set_componentfile,sdbc_postgresql,connectivity/java/sdbc_postgresql/postgresql,OOO))
 
 # vim: set noet sw=4 ts=4:
+

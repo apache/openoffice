@@ -21,16 +21,7 @@
 
 
 
-$(eval $(call gb_Module_Module,chart2))
-
-$(eval $(call gb_Module_add_targets,chart2,\
-	AllLangResTarget_chartcontroller \
-	Library_chartcontroller \
-	Library_chartmodel \
-	Library_chartview \
-	Library_charttools \
-	Package_uiconfig \
-))
-
+$(eval $(call gb_Ant_Ant,dbtools,$(SRCDIR)/connectivity/java/dbtools/build.xml))
 
 # vim: set noet sw=4 ts=4:
+

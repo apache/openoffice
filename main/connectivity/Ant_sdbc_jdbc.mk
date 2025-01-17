@@ -21,19 +21,9 @@
 
 
 
-PRJ=..$/..
-PRJNAME=connectivity
-TARGET=sdbc_hsqldb
+$(eval $(call gb_Ant_Ant,sdbc_jdbc,$(SRCDIR)/connectivity/java/sdbc_jdbc/build.xml))
 
-.INCLUDE : ant.mk
+$(eval $(call gb_Ant_set_componentfile,sdbc_jdbc,connectivity/java/sdbc_jdbc/jdbc,OOO))
 
-.IF defined(debug) || defined(DEBUG)
-ANTDEBUG=true
-.ELSE
-ANTDEBUG=off
-.ENDIF
-
-ANT_FLAGS+=-Dantdebug=$(ANTDEBUG)
-
-ALLTAR: ANTBUILD
+# vim: set noet sw=4 ts=4:
 
