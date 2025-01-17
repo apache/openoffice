@@ -217,6 +217,8 @@
             <manifest>
                 <attribute name="Class-Path" value="${jar.classpath}" unless:blank="${jar.classpath}"/>
                 <attribute name="Solar-Version" value="${RSCREVISION}"/>
+                <attribute name="RegistrationClassName" value="${jar.registration-class-name}" unless:blank="${jar.registration-class-name}"/>
+                <attribute name="Sealed" value="true" if:true="${jar.sealed}"/>
             </manifest>
             <fileset dir="${main.build.dir}"/>
 <!-- Breaks trunk/test/smoketestdoc by packaging different classes with the same name: -->

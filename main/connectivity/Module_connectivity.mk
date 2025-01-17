@@ -28,6 +28,11 @@ $(eval $(call gb_Module_add_targets,connectivity,\
 	AllLangResTarget_hsqldb \
 	AllLangResTarget_sdbcl \
 	AllLangResTarget_sdberr \
+	Ant_dbtools \
+	Ant_sdbc_hsqldb \
+	Ant_sdbc_jdbc \
+	Ant_sdbc_postgresql \
+	Configuration_connectivity \
 	Library_adabas \
 	Library_calc \
 	Library_dbase \
@@ -36,7 +41,6 @@ $(eval $(call gb_Module_add_targets,connectivity,\
 	Library_file \
 	Library_flat \
 	Library_hsqldb \
-	Library_jdbc \
 	Library_mysql \
 	Library_odbc \
 	Library_odbcbase \

@@ -148,8 +148,6 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	mcnttype \
 	msfilter \
 	msword \
-	mysql \
-	odbc \
 	odbcbase \
 	oox \
 	package2 \
@@ -280,7 +278,9 @@ $(eval $(call gb_Helper_register_libraries,UNOLIBS_OOO, \
 	i18npool \
 	i18nsearch \
 	lnth \
+	mysql \
 	nullcanvas \
+	odbc \
 	passwordcontainer \
 	pythonloader \
 	simplecanvas \
