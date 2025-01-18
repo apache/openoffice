@@ -25,8 +25,6 @@ $(eval $(call gb_Library_Library,chartcontroller))
 
 $(eval $(call gb_Library_add_precompiled_header,chartcontroller,$(SRCDIR)/chart2/inc/pch/precompiled_chartcontroller))
 
-$(eval $(call gb_Library_set_versionmap,chartcontroller,$(SRCDIR)/solenv/src/component.map))
-
 $(eval $(call gb_Library_set_componentfile,chartcontroller,chart2/source/controller/chartcontroller))
 
 $(eval $(call gb_Library_set_include,chartcontroller,\

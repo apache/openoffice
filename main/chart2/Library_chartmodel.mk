@@ -25,8 +25,6 @@ $(eval $(call gb_Library_Library,chartmodel))
 
 $(eval $(call gb_Library_add_precompiled_header,chartmodel,$(SRCDIR)/chart2/inc/pch/precompiled_chartmodel))
 
-$(eval $(call gb_Library_set_versionmap,chartmodel,$(SRCDIR)/solenv/src/component.map))
-
 $(eval $(call gb_Library_set_componentfile,chartmodel,chart2/source/model/chartmodel))
 
 $(eval $(call gb_Library_set_include,chartmodel,\
