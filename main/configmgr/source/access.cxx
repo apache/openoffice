@@ -101,6 +101,7 @@
 #include "propertynode.hxx"
 #include "rootaccess.hxx"
 #include "setnode.hxx"
+#include "wipednode.hxx"
 #include "type.hxx"
 
 namespace configmgr {
@@ -480,7 +481,7 @@ void Access::initBroadcasterAndChanges(
          i != modifications.children.end(); ++i)
     {
         rtl::Reference< ChildAccess > child(getChild(i->first));
-        if (child.is()) {
+        if (child.is() && (child->getNode()->kind() != Node::KIND_WIPED)) {
             switch (child->getNode()->kind()) {
             case Node::KIND_LOCALIZED_PROPERTY:
                 if (!i->second.children.empty()) {
@@ -677,6 +678,8 @@ void Access::initBroadcasterAndChanges(
                         // listeners
                 }
                 break;
+            case Node::KIND_WIPED:
+                break; // Excluded above
             }
         } else {
             switch (getNode()->kind()) {
@@ -1906,12 +1909,29 @@ void Access::removeByName(rtl::OUString const & aName)
                     aName, static_cast< cppu::OWeakObject * >(this));
             }
         }
+        // Elements of file/URL histories must not be marked as
+        // "removed": they must disappear
+        bool mustWipe = false;
+        ::rtl::Reference< Access > parent = getParentAccess();
+        if (parent.is()) {
+            const ::rtl::OUString parentName = parent->getName();
+            mustWipe =
+                ((parentName == ::rtl::OUString::createFromAscii("PickList")) ||
+                 (parentName == ::rtl::OUString::createFromAscii("URLHistory"))) &&
+                (getName() == ::rtl::OUString::createFromAscii("ItemList"));
+        }
         Modifications localMods;
         localMods.add(child->getRelativePath());
         // unbind() modifies the parent chain that markChildAsModified() walks,
         // so order is important:
         markChildAsModified(child); //TODO: must not throw
-        child->unbind();
+        if (!mustWipe) {
+            // This will mark the element as "removed"
+            child->unbind();
+        } else {
+            // The element will disappear
+            child->setNode(new WipedNode(child->getNode()->getLayer()));
+        }
         getNotificationRoot()->initBroadcaster(localMods.getRoot(), &bc);
     }
     bc.send();
