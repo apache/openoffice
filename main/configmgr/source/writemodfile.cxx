@@ -443,6 +443,8 @@ void writeNode(
         }
         writeData(handle, RTL_CONSTASCII_STRINGPARAM("</node>"));
         break;
+    case Node::KIND_WIPED:
+        break; // Nothing to write
     }
 }
 
@@ -494,6 +496,8 @@ void writeModifications(
                     handle,
                     RTL_CONSTASCII_STRINGPARAM("\" oor:op=\"remove\"/>"));
                 break;
+            case Node::KIND_WIPED:
+                break; // Our parent was wiped, we should not exist
             default:
                 OSL_ASSERT(false); // this cannot happen
                 break;
