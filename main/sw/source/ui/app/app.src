@@ -47,10 +47,10 @@ String STR_PAGE_COUNT_MACRO
 	Text [ en-US ] = "Changing the page count" ;
 };
 
- // Image-Liste ----------------------------------------------------------------
- // Don't use this image list for normal toolbar images. We have now our commandimagelist
- // folder in default_images. This list is now only used for special toolboxes that are
- // used in floating windows.
+// Image-List -----------------------------------------------------------------
+// Don't use this image list for normal toolbar images. We have now our commandimagelist
+// folder in default_images. This list is now only used for special toolboxes that are
+// used in floating windows.
 
 #define IMAGELIST_AND_COUNT 	\
 	IdList = { 					\
@@ -180,11 +180,11 @@ SfxStyleFamilies DLG_STYLE_DESIGNER
 
 
 
- // Default Bitmap for toolbox
-BITMAP BMP_FEHLT { FILE = "x.png" ; };
- // Bitmap fuer die NumerierungsVorlagen im Organizer
-Bitmap BMP_STYLES_FAMILY_NUM { File = "styfamnu.png" ; };
-Bitmap BMP_STYLES_FAMILY_NUM_HC { File = "styfamnu_h.png" ; };
+// Default Bitmap for toolbox
+BITMAP BMP_MISSING { FILE = "x.png" ; } ;
+// Bitmap für die Listenvorlagen im Organizer
+Bitmap BMP_STYLES_FAMILY_NUM { File = "styfamnu.png" ; } ;
+Bitmap BMP_STYLES_FAMILY_NUM_HC { File = "styfamnu_h.png" ; } ;
 
 String STR_ENV_TITLE
 {
@@ -196,7 +196,7 @@ String STR_LAB_TITLE
 	Text [ en-US ] = "Labels" ;
 };
 
- // ShortName!!!
+// ShortName!!!
 String STR_HUMAN_SWDOC_NAME
 {
 	Text [ en-US ] = "Text" ;
@@ -223,7 +223,7 @@ String STR_DLLNOTFOUND
 };
 
 
-String STR_UNBENANNT
+String STR_UNTITLED
 {
 	Text [ en-US ] = "Untitled" ;
 };
@@ -277,9 +277,9 @@ String STR_DOC_STAT
 	Text [ en-US ] = "Statistics" ;
 };
 
- // ----------------------------
- // Statusleisten-Ueberschriften
- // ----------------------------
+// ----------------------------
+// Statusleisten-Überschriften
+// ----------------------------
 
 String STR_STATSTR_W4WREAD
 {
@@ -462,8 +462,8 @@ String STR_FDLG_TEMPLATE_BUTTON
 
 String STR_FDLG_TEMPLATE_NAME
 {
-	//Text [ en-US ] = "Styles: " ; //#outline level,removed by zhaojianwei
-	Text [ en-US ] = "separated by: " ; //<-end,add by zhaojianwei
+	//Text [ en-US ] = "Styles: " ; // #outline level,removed by zhaojianwei
+	Text [ en-US ] = "separated by: " ; // <-end,add by zhaojianwei
 };
 //#outline level,add by zhaojianwei
 String STR_FDLG_OUTLINE_LEVEL
@@ -530,47 +530,47 @@ ModalDialog DLG_MERGE_SOURCE_UNAVAILABLE
 
 	FixedImage IMG_MERGE
 	{
-        Pos = MAP_APPFONT ( 12, 14 ) ;
-        Size = MAP_APPFONT ( 103, 32 ) ;
-    };
-    FixedText ST_MERGE_SOURCE_UNAVAILABLE
-    {
-        Pos = MAP_APPFONT ( 12, 6 ) ;
-        Size = MAP_APPFONT ( 178, 40 ) ;
-        WordBreak = TRUE ;
-        Text [ en-US ] = "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings." ;
-    };
-    OKButton PB_MERGE_OK
-    {
-        Pos = MAP_APPFONT ( 12, 52 ) ;
-        Size = MAP_APPFONT ( 125, 14 ) ;
-        Text [ en-US ] = "Check Connection Settings..." ;
-    };
-    CancelButton PB_MERGE_CANCEL
-    {
-        Pos = MAP_APPFONT ( 140, 52 ) ;
-        Size = MAP_APPFONT ( 50, 14 ) ;
-    };
+		Pos = MAP_APPFONT ( 12, 14 ) ;
+		Size = MAP_APPFONT ( 103, 32 ) ;
+	};
+	FixedText ST_MERGE_SOURCE_UNAVAILABLE
+	{
+		Pos = MAP_APPFONT ( 12, 6 ) ;
+		Size = MAP_APPFONT ( 178, 40 ) ;
+		WordBreak = TRUE ;
+		Text [ en-US ] = "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings." ;
+	};
+	OKButton PB_MERGE_OK
+	{
+		Pos = MAP_APPFONT ( 12, 52 ) ;
+		Size = MAP_APPFONT ( 125, 14 ) ;
+		Text [ en-US ] = "Check Connection Settings..." ;
+	};
+	CancelButton PB_MERGE_CANCEL
+	{
+		Pos = MAP_APPFONT ( 140, 52 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
+	};
 };
 WarningBox MSG_DATA_SOURCES_UNAVAILABLE
 {
-    HelpId = HID_DATA_SOURCES_UNAVAILABLE ;
-    Buttons = WB_OK_CANCEL ;
-    Message [ en-US ] = "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields." ;
+	HelpId = HID_DATA_SOURCES_UNAVAILABLE ;
+	Buttons = WB_OK_CANCEL ;
+	Message [ en-US ] = "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields." ;
 };
 
 String RID_MODULE_TOOLBOX
 {
 	Text [ en-US ] = "Function Bar (viewing mode)" ;
 };
-String  STR_DONT_ASK_AGAIN
+String STR_DONT_ASK_AGAIN
 {
-    Text [ en-US ] = "~Do not show warning again" ;
+	Text [ en-US ] = "~Do not show warning again" ;
 };
 // --> OD 2008-04-14 #outlinelevel#
 String STR_OUTLINE_NUMBERING
 {
-    Text [ en-US ] = "Outline Numbering" ;
+	Text [ en-US ] = "Outline Numbering" ;
 };
 ToolBox RID_MODULE_TOOLBOX
 {
