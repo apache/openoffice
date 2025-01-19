@@ -317,9 +317,10 @@ void SAL_CALL RecentFilesMenuController::itemSelected( const css::awt::MenuEvent
         OSL_TRACE( "RecentFilesMenuController::itemSelected() - Command : %s",
                    rtl::OUStringToOString( aCommand, RTL_TEXTENCODING_UTF8 ).getStr() );
 
-        if ( aCommand.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( CMD_CLEAR_LIST ) ) )
+        if ( aCommand.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( CMD_CLEAR_LIST ) ) ) {
             SvtHistoryOptions().Clear( ePICKLIST );
-        else
+            SvtHistoryOptions().Clear( eHISTORY );
+        } else
             executeEntry( rEvent.MenuId-1 );
     }
 }
