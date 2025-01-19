@@ -323,7 +323,7 @@ my_components += \
 my_components += \
     component/accessibility/java/java_uno_accessbridge/java_uno_accessbridge \
     component/avmedia/source/win/avmediawin \
-    component/connectivity/drivers/ado/ado \
+    component/connectivity/source/drivers/ado/ado \
     component/dtrans/source/generic/dtrans \
     component/dtrans/util/dnd \
     component/dtrans/util/ftransl \
@@ -358,8 +358,8 @@ my_components += \
 my_components += component/canvas/source/directx/directx5canvas
 .END
 
-.IF "$(OS)" == "LINUX" || "$(OS)" == "NETBSD" || \
-    ("$(OS)" == "SOLARIS" && "$(CPU)" == "S") || "$(OS)" == "WNT"
+.IF "$(OS)" == "WNT" || "$(GUIBASE)" == "aqua" ||\
+    "$(GUIBASE)" == "unx"
 my_components += component/connectivity/source/drivers/adabas/adabas
 .END
 
