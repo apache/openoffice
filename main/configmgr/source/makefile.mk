@@ -57,6 +57,7 @@ SLOFILES = \
     $(SLO)/type.obj \
     $(SLO)/update.obj \
     $(SLO)/valueparser.obj \
+    $(SLO)/wipednode.obj \
     $(SLO)/writemodfile.obj \
     $(SLO)/xcdparser.obj \
     $(SLO)/xcsparser.obj \
