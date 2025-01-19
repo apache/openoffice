@@ -306,7 +306,7 @@ MY_FILES_main += \
 .END
 .IF "$(GUIBASE)" == "aqua"
 MY_FILES_main += \
-    $(MY_MOD)/DataAccess/macab.xcu \
+    $(MY_XCU)/Office/DataAccess/macab.xcu \
     $(MY_MOD)/org/openoffice/Inet-macosx.xcu \
     $(MY_MOD)/org/openoffice/Office/Accelerators-macosx.xcu \
     $(MY_MOD)/org/openoffice/Office/Common-macosx.xcu \
@@ -326,7 +326,7 @@ MY_FILES_main += \
         # VCL-unixdesktop.xcu must come after VCL.xcu
 .ELIF "$(GUIBASE)" == "WIN"
 MY_FILES_main += \
-    $(MY_MOD)/DataAccess/ado.xcu \
+    $(MY_XCU)/Office/DataAccess/ado.xcu \
     $(MY_MOD)/org/openoffice/Inet-wnt.xcu \
     $(MY_MOD)/org/openoffice/Office/Accelerators-unxwnt.xcu \
     $(MY_MOD)/org/openoffice/Office/Common-wnt.xcu \
@@ -342,12 +342,12 @@ MY_FILES_main += \
 .ELSE
 ERROR : unknown-GUIBASE
 .END
-.IF "$(OS)" == "WNT" || "$(OS)" == "LINUX" || "$(OS)" == "OS2" || \
-        ("$(OS)" == "SOLARIS" && "$(CPU)" == "S") || "$(OS)" == "NETBSD"
-MY_FILES_main += $(MY_MOD)/DataAccess/adabas.xcu
+.IF "$(OS)" == "WNT" || "$(GUIBASE)" == "aqua" ||\
+        "$(GUIBASE)" == "unx"
+MY_FILES_main += $(MY_XCU)/Office/DataAccess/adabas.xcu
 .END
 .IF "$(ENABLE_EVOAB2)" == "TRUE"
-MY_FILES_main += $(MY_MOD)/DataAccess/evoab2.xcu
+MY_FILES_main += $(MY_XCU)/Office/DataAccess/evoab2.xcu
 .END
 .IF "$(SOLAR_JAVA)" == "TRUE"
 MY_FILES_main += \
