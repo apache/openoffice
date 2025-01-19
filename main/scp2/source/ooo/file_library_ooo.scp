@@ -1774,8 +1774,10 @@ File gid_File_Lib_Openssl
     TXT_FILE_BODY;
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
-  #ifdef WNT
+  #if defined(WNT) && defined(X86)
     Name = "libssl-3.dll";
+  #elif defined(WNT) && defined(X86_64)
+    Name = "libssl-3-x64.dll";
   #else
     Name = SCP2_URE_DL_VER("ssl", "3");
   #endif
@@ -1787,8 +1789,10 @@ File gid_File_Lib_Crypto
     TXT_FILE_BODY;
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
-  #ifdef WNT
+  #if defined(WNT) && defined(X86)
     Name = "libcrypto-3.dll";
+  #elif defined(WNT) && defined(X86_64)
+    Name = "libcrypto-3-x64.dll";
   #else
     Name = SCP2_URE_DL_VER("crypto", "3");
   #endif
