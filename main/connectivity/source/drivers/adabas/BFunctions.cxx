@@ -111,8 +111,8 @@ sal_Bool LoadLibrary_ADABAS(::rtl::OUString &_rPath)
 	::rtl::OUString sTemp(RTL_CONSTASCII_USTRINGPARAM("DBROOT"));
 	if ( osl_getEnvironment(sTemp.pData,&pPath) == osl_Process_E_None && pPath )
 	{
-
-#if ( defined(SOLARIS) && defined(SPARC)) || defined(LINUX) || defined(MACOSX)
+		
+#if defined(UNX)
 		_rPath = ::rtl::OUString(pPath);
 		_rPath += ::rtl::OUString::createFromAscii("/lib/");
 #endif
@@ -127,10 +127,10 @@ sal_Bool LoadLibrary_ADABAS(::rtl::OUString &_rPath)
 
 #if defined(WNT)
 	pLibraryAsciiName = "SQLOD32.DLL";
-#elif ( defined(SOLARIS) && defined(SPARC)) || defined(LINUX)
-	pLibraryAsciiName = "odbclib.so";
 #elif defined(MACOSX)
 	pLibraryAsciiName = "odbclib.dylib";
+#elif defined(UNX)
+	pLibraryAsciiName = "odbclib.so";
 #endif
     if ( !pLibraryAsciiName )
         return sal_False;
