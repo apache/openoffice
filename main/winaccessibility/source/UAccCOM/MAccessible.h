@@ -200,12 +200,12 @@ public:
     STDMETHOD(Put_XAccParent)(IMAccessible __RPC_FAR *pIParent);
     STDMETHOD(Put_XAccWindowHandle)(HWND hwnd);
     STDMETHOD(Put_XAccChildID)(long dChildID);
-    STDMETHOD(Put_XAccAgent)(long pAgent);
+    STDMETHOD(Put_XAccAgent)(LONG_PTR pAgent);
     STDMETHOD(NotifyDestroy)(BOOL isDestroy);
     STDMETHOD(Put_ActionDescription)( const OLECHAR* szAction);
-    STDMETHOD(SetDefaultAction)(long pAction);
-    STDMETHOD(GetUNOInterface)(long*);
-    STDMETHOD(SetXAccessible)(long);
+    STDMETHOD(SetDefaultAction)(LONG_PTR pAction);
+    STDMETHOD(GetUNOInterface)(LONG_PTR*);
+    STDMETHOD(SetXAccessible)(LONG_PTR);
 
 private:
     OLECHAR* m_pszName;
@@ -271,12 +271,12 @@ public:
     // implement some specific MSAA methods,such as accSelection,accNavigate
     static AccObjectManagerAgent* g_pAgent;
 
-    static BOOL get_IAccessibleFromXAccessible(long pXAcc,IAccessible** ppIA);
+    static BOOL get_IAccessibleFromXAccessible(LONG_PTR pXAcc,IAccessible** ppIA);
     BOOL m_bRequiresSave;
     XGUIDToComObjHash m_containedObjects;
 
     static HRESULT WINAPI _SmartQI(void* pv,
-                                   REFIID iid, void** ppvObject, DWORD)
+                                   REFIID iid, void** ppvObject, DWORD_PTR)
     {
         return ((CMAccessible*)pv)->SmartQI(pv,iid,ppvObject);
     }

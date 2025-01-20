@@ -59,7 +59,7 @@ public:
     DECLARE_REGISTRY_RESOURCEID(IDR_AccHyperLink)
 
     static HRESULT WINAPI _SmartQI(void* pv,
-                                   REFIID iid, void** ppvObject, DWORD)
+                                   REFIID iid, void** ppvObject, DWORD_PTR)
     {
         return ((CAccHyperLink*)pv)->SmartQI(iid,ppvObject);
     }
@@ -121,10 +121,10 @@ public:
     STDMETHOD(get_valid)(/* [retval][out] */ boolean __RPC_FAR *valid);
 
     // Overide of IUNOXWrapper.
-    STDMETHOD(put_XInterface)(long pXInterface);
+    STDMETHOD(put_XInterface)(LONG_PTR pXInterface);
 
     // Overide of IUNOXWrapper.
-    STDMETHOD(put_XSubInterface)(long pXSubInterface);
+    STDMETHOD(put_XSubInterface)(LONG_PTR pXSubInterface);
 
 private:
 

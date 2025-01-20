@@ -72,7 +72,7 @@ public:
         /* [retval][out] */ long __RPC_FAR *nBinding);
 
     // Overide of IUNOXWrapper.
-    STDMETHOD(put_XInterface)(long pXInterface);
+    STDMETHOD(put_XInterface)(LONG_PTR pXInterface);
 
     static void GetkeyBindingStrByXkeyBinding( const com::sun::star::uno::Sequence< com::sun::star::awt::KeyStroke > &keySet, OLECHAR* pString );
 

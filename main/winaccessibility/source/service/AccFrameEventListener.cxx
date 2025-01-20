@@ -37,7 +37,7 @@ using namespace com::sun::star::accessibility;
 
 #ifndef _SV_SYSDATA_HXX
 #if defined( WIN ) || defined( WNT ) || defined( OS2 )
-typedef sal_Int32 HWND;
+typedef void* HWND;
 typedef sal_Int32 HMENU;
 typedef sal_Int32 HDC;
 typedef void *PVOID;

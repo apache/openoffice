@@ -27,7 +27,7 @@
 
 #ifndef _SV_SYSDATA_HXX
 #if defined( WIN ) || defined( WNT ) || defined( OS2 )
-typedef sal_Int32 HWND;
+typedef void* HWND;
 typedef sal_Int32 HMENU;
 typedef sal_Int32 HDC;
 typedef void *PVOID;
@@ -72,10 +72,10 @@ void FreeTopWindowListener()
 /**
  *	As a global method to invoke the handleWindowOpened() method
  */
-void handleWindowOpened_impl(long pAcc)
+void handleWindowOpened_impl(sal_Int64 pAcc)
 {
     if( g_pTop && pAcc != NULL )
-        g_pTop->handleWindowOpened( (com::sun::star::accessibility::XAccessible*)((void*)pAcc) );
+        g_pTop->handleWindowOpened( (com::sun::star::accessibility::XAccessible*)((void*)(sal_IntPtr)pAcc) );
 }
 
 /**

@@ -26,7 +26,7 @@
 
 #ifndef _SV_SYSDATA_HXX
 #if defined( WIN ) || defined( WNT ) || defined( OS2 )
-typedef sal_Int32 HWND;
+typedef void* HWND;
 #endif
 #endif
 #include "AccEventListener.hxx"

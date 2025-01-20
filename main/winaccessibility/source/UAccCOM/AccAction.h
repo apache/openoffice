@@ -53,7 +53,7 @@ public:
     END_COM_MAP()
 
     static HRESULT WINAPI _SmartQI(void* pv,
-                                   REFIID iid, void** ppvObject, DWORD)
+                                   REFIID iid, void** ppvObject, DWORD_PTR)
     {
         return ((CAccAction*)pv)->SmartQI(iid,ppvObject);
     }
@@ -95,10 +95,10 @@ public:
         /* [retval][out] */ long __RPC_FAR *nBinding);
 
     // Overide of IUNOXWrapper.
-    STDMETHOD(put_XInterface)(long pXInterface);
+    STDMETHOD(put_XInterface)(LONG_PTR pXInterface);
 
     // Overide of IUNOXWrapper.
-    STDMETHOD(put_XSubInterface)(long pXSubInterface);
+    STDMETHOD(put_XSubInterface)(LONG_PTR pXSubInterface);
 
 };
 

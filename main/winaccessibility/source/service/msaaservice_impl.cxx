@@ -38,14 +38,14 @@ using namespace ::com::sun::star::accessibility;
 
 using namespace ::com::sun::star::awt;
 
-typedef sal_Int32 HWND;
+typedef void* HWND;
 
 #include "AccTopWindowListener.hxx"
 #include "g_msacc.hxx"
 
 extern void FreeTopWindowListener();
-extern long GetMSComPtr(long hWnd, long lParam, long wParam);
-extern void handleWindowOpened_impl( long pAcc);
+extern sal_IntPtr GetMSComPtr( sal_IntPtr hWnd, sal_IntPtr lParam, sal_IntPtr wParam);
+extern void handleWindowOpened_impl( sal_Int64 pAcc);
 
 
 namespace my_sc_impl
@@ -110,9 +110,9 @@ public:
     virtual void SAL_CALL initialize( Sequence< Any > const & args )
     throw (Exception);
     // XMSAAService
-    virtual sal_Int32 SAL_CALL getAccObjectPtr (long hWnd, long lParam, long wParam)
+    virtual sal_Int64 SAL_CALL getAccObjectPtr (sal_Int64 hWnd, sal_Int64 lParam, sal_Int64 wParam)
     throw (RuntimeException);
-    virtual void SAL_CALL handleWindowOpened(sal_Int32)
+    virtual void SAL_CALL handleWindowOpened(sal_Int64)
     throw (RuntimeException);
     // XServiceInfo
     virtual OUString SAL_CALL getImplementationName()
@@ -151,9 +151,9 @@ void MSAAServiceImpl::initialize( Sequence< Any > const & args ) throw (Exceptio
    * @param
    * @return Com interface.
    */
-sal_Int32 MSAAServiceImpl::getAccObjectPtr ( long hWnd, long lParam, long wParam) throw (RuntimeException)
+sal_Int64 MSAAServiceImpl::getAccObjectPtr ( sal_Int64 hWnd, sal_Int64 lParam, sal_Int64 wParam) throw (RuntimeException)
 {
-    return GetMSComPtr(hWnd, lParam, wParam);
+    return (sal_Int64)GetMSComPtr((sal_IntPtr)hWnd, (sal_IntPtr)lParam, (sal_IntPtr)wParam);
 }
 
 /**
@@ -162,7 +162,7 @@ sal_Int32 MSAAServiceImpl::getAccObjectPtr ( long hWnd, long lParam, long wParam
    * @param
    * @return
    */
-void MSAAServiceImpl::handleWindowOpened( sal_Int32 pAcc)
+void MSAAServiceImpl::handleWindowOpened( sal_Int64 pAcc)
 {
     handleWindowOpened_impl(pAcc);
 }

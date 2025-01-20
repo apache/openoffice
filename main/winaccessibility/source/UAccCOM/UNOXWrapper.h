@@ -42,24 +42,24 @@ public:
 public:
     // IUNOXWrapper
 
-    STDMETHOD(put_XInterface)(long pXInterface)
+    STDMETHOD(put_XInterface)(LONG_PTR pXInterface)
     {
         pUNOInterface = (com::sun::star::accessibility::XAccessible*)pXInterface;
         return S_OK;
     }
 
-    STDMETHOD(put_XSubInterface)(long)
+    STDMETHOD(put_XSubInterface)(LONG_PTR)
     {
         return S_OK;
     }
 
-    STDMETHOD(get_XInterface)(/*[out,retval]*/long *pXInterface)
+    STDMETHOD(get_XInterface)(/*[out,retval]*/LONG_PTR *pXInterface)
     {
-        *pXInterface = (long)pUNOInterface;//.get();
+        *pXInterface = (LONG_PTR)pUNOInterface;//.get();
         return S_OK;
     }
 
-    STDMETHOD(get_XSubInterface)(/*[out,retval]*/long *)
+    STDMETHOD(get_XSubInterface)(/*[out,retval]*/LONG_PTR *)
     {
         return S_OK;
     }
