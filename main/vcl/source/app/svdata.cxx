@@ -412,7 +412,7 @@ void AccessBridgehandleExistingWindow(Window * pWindow, bool bShow)
 
 		if ( xAccessible.is() && g_acc_manager1 )
 		{
-			g_acc_manager1->handleWindowOpened( (long)(xAccessible.get()));
+			g_acc_manager1->handleWindowOpened( (sal_Int64)(xAccessible.get()));
 		}
 	}
 }

@@ -6226,11 +6226,11 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
 							*/
 							if ( (lParam == OBJID_CLIENT ) /* && !bSkipSetTitleClient */ )
 							{
-								long RetResult = g_acc_manager1->getAccObjectPtr((long)hWnd, lParam, wParam);
+								sal_Int64 RetResult = g_acc_manager1->getAccObjectPtr((sal_Int64)hWnd, lParam, (sal_Int64)wParam);
 								if(RetResult != 0)
 								{
 									rDef = FALSE;
-									return (HRESULT)RetResult;
+									return (LRESULT)RetResult;
 								}
 							}
 						}

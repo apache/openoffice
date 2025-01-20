@@ -111,7 +111,7 @@ STDMETHODIMP CAccRelation::get_target(long targetIndex, IUnknown * * target)
     Reference<XInterface> pRAcc = xTargets[targetIndex];
     IAccessible* pRet = NULL;
 
-    BOOL isGet = CMAccessible::get_IAccessibleFromXAccessible((long)pRAcc.get(),&pRet);
+    BOOL isGet = CMAccessible::get_IAccessibleFromXAccessible((LONG_PTR)pRAcc.get(),&pRet);
     if(isGet)
     {
         *target = /*(IAccessible2 *)*/(IUnknown*)pRet;
@@ -174,7 +174,7 @@ STDMETHODIMP CAccRelation::get_targets(long, IUnknown * * target, long * nTarget
    * @param pXSubInterface AccessibleRelation pointer.
    * @return Result.
 */
-STDMETHODIMP CAccRelation::put_XSubInterface(long pXSubInterface)
+STDMETHODIMP CAccRelation::put_XSubInterface(LONG_PTR pXSubInterface)
 {
 
     relation = *((AccessibleRelation*)pXSubInterface);

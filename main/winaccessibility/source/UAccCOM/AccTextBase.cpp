@@ -943,7 +943,7 @@ STDMETHODIMP CAccTextBase::scrollSubstringTo(long, long, IA2ScrollType)
    * @param pXInterface UNO interface.
    * @return Result.
 */
-STDMETHODIMP CAccTextBase::put_XInterface(long pXInterface)
+STDMETHODIMP CAccTextBase::put_XInterface(LONG_PTR pXInterface)
 {
 
 	CHECK_ENABLE_INF

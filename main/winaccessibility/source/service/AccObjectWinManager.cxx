@@ -64,10 +64,10 @@ AccObjectWinManager* AccObjectWinManager::me = NULL;
    * @param
    * @return  Com interface.
    */
-long GetMSComPtr(long hWnd, long lParam, long wParam)
+sal_IntPtr GetMSComPtr(sal_IntPtr hWnd, sal_IntPtr lParam, sal_IntPtr wParam)
 {
     if( g_acc_manager )
-        return (long)g_acc_manager->Get_ToATInterface(HWND((void*)hWnd),lParam,wParam );
+        return (sal_IntPtr)g_acc_manager->Get_ToATInterface(HWND((void*)hWnd), (LPARAM)lParam, (WPARAM)wParam );
     return NULL;
 }
 
@@ -133,7 +133,7 @@ AccObjectWinManager::~AccObjectWinManager()
    * @return Com interface with event.
    */
 
-long AccObjectWinManager::Get_ToATInterface( HWND hWnd, long lParam, long wParam)
+LRESULT AccObjectWinManager::Get_ToATInterface( HWND hWnd, LPARAM lParam, WPARAM wParam)
 {
     vos::OGuard localGuard(maATInterfaceMutex);//
 
@@ -153,7 +153,7 @@ long AccObjectWinManager::Get_ToATInterface( HWND hWnd, long lParam, long wParam
     if ( pRetIMAcc && lParam == OBJID_CLIENT )
     {
         IAccessible* pTemp = dynamic_cast<IAccessible*>( pRetIMAcc );
-        HRESULT result = LresultFromObject(IID_IAccessible, wParam, pTemp);
+        LRESULT result = LresultFromObject(IID_IAccessible, wParam, pTemp);
         pTemp->Release();
         return result;
     }
@@ -773,12 +773,12 @@ sal_Bool AccObjectWinManager::InsertAccObj( XAccessible* pXAcc,XAccessible* pPar
     //for file name support
     if ( pObj.GetRole() == DOCUMENT )
     {
-        XHWNDToDocumentHash::iterator aIter = XHWNDDocList.find( (long)pWnd );
+        XHWNDToDocumentHash::iterator aIter = XHWNDDocList.find( pWnd );
         if ( aIter != XHWNDDocList.end() )
         {
             XHWNDDocList.erase( aIter );
         }
-        XHWNDDocList.insert( XHWNDToDocumentHash::value_type( (long)pWnd, pXAcc ) );
+        XHWNDDocList.insert( XHWNDToDocumentHash::value_type( pWnd, pXAcc ) );
 
     }
     //end of file name
@@ -1290,7 +1290,7 @@ short AccObjectWinManager::GetRole(com::sun::star::accessibility::XAccessible* p
     return -1;
 }
 
-XAccessible* AccObjectWinManager::GetAccDocByHWND( long pWnd )
+XAccessible* AccObjectWinManager::GetAccDocByHWND( HWND pWnd )
 {
     XHWNDToDocumentHash::iterator aIter;
     aIter = XHWNDDocList.find( pWnd );
@@ -1305,8 +1305,7 @@ XAccessible* AccObjectWinManager::GetAccDocByHWND( long pWnd )
 XAccessible* AccObjectWinManager::GetAccDocByAccTopWin( XAccessible* pXAcc )
 {
     AccObject* pAccObj = GetAccObjByXAcc( pXAcc );
-    long pWnd = (long)( pAccObj->GetParentHWND() );
-    return GetAccDocByHWND( pWnd );
+    return GetAccDocByHWND( pAccObj->GetParentHWND() );
 }
 
 bool AccObjectWinManager::IsTopWinAcc( com::sun::star::accessibility::XAccessible* pXAcc )

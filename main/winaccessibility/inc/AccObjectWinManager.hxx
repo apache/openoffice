@@ -54,14 +54,14 @@ private:
     {
         bool operator()(const void*  s1, const void*  s2) const
         {
-            return long(s1)<long(s2);
+            return LONG_PTR(s1)<LONG_PTR(s2);
         }
     };
     struct ltstr2
     {
         bool operator()(const HWND  s1, const HWND  s2) const
         {
-            return long(s1)<long(s2);
+            return LONG_PTR(s1)<LONG_PTR(s2);
         }
     };
     struct ltstr3
@@ -75,7 +75,7 @@ private:
     typedef std::map< HWND,void*,ltstr2 > XHWNDToXAccHash;
     typedef std::map< const long, AccObject*,ltstr3 > XResIdToAccObjHash;
 
-    typedef std::map< const long, com::sun::star::accessibility::XAccessible*,ltstr3 > XHWNDToDocumentHash;
+    typedef std::map< HWND, com::sun::star::accessibility::XAccessible*,ltstr2 > XHWNDToDocumentHash;
 
 
     //XAccessible to AccObject
@@ -109,7 +109,7 @@ private:
 
     AccObject* GetTopWindowAccObj(HWND hWnd);
 
-    com::sun::star::accessibility::XAccessible* GetAccDocByHWND( long pWnd );
+    com::sun::star::accessibility::XAccessible* GetAccDocByHWND( HWND pWnd );
 
     void       DeleteAccListener( AccObject* pAccObj );
     void       InsertAccChildNode(AccObject* pCurObj,AccObject* pParentObj,HWND pWnd);
@@ -129,7 +129,7 @@ public:
 
     sal_Bool NotifyAccEvent( com::sun::star::accessibility::XAccessible* pXAcc,short state = 0 );
 
-    long Get_ToATInterface( HWND hWnd, long lParam, long wParam);
+    LRESULT Get_ToATInterface( HWND hWnd, LPARAM lParam, WPARAM wParam);
 
     void  DecreaseState( com::sun::star::accessibility::XAccessible* pXAcc,unsigned short pState );
     void  IncreaseState( com::sun::star::accessibility::XAccessible* pXAcc,unsigned short pState );

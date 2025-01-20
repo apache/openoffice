@@ -274,7 +274,7 @@ STDMETHODIMP CAccText::scrollSubstringTo(long startIndex, long endIndex,enum IA2
    * @param pXInterface UNO interface.
    * @return Result.
 */
-STDMETHODIMP CAccText::put_XInterface(long pXInterface)
+STDMETHODIMP CAccText::put_XInterface(LONG_PTR pXInterface)
 {
 
     return CAccTextBase::put_XInterface(pXInterface);

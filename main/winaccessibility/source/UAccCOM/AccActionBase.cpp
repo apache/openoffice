@@ -250,7 +250,7 @@ STDMETHODIMP CAccActionBase::get_keyBinding(
  *
  * @param    pXInterface    the pointer of UNO interface.
  */
-STDMETHODIMP CAccActionBase::put_XInterface(long pXInterface)
+STDMETHODIMP CAccActionBase::put_XInterface(LONG_PTR pXInterface)
 {
 
 
