@@ -1338,7 +1338,7 @@ STDMETHODIMP CMAccessible::Put_XAccChildID(long dChildID)
 * @param	pAgent, the AccObjectManagerAgent point.
 * @return   S_OK if successful and E_FAIL if failure.
 */
-STDMETHODIMP CMAccessible::Put_XAccAgent(long pAgent)
+STDMETHODIMP CMAccessible::Put_XAccAgent(LONG_PTR pAgent)
 {
 	g_pAgent = (AccObjectManagerAgent*)pAgent;
 	return S_OK;
@@ -1393,12 +1393,12 @@ IMAccessible* CMAccessible::GetChildInterface(long dChildID)//for test
 
 		IAccessible* pChild = NULL;
 		Reference< XAccessible > pXChild = pRContext->getAccessibleChild(dChildID-1);
-		BOOL isGet = get_IAccessibleFromXAccessible((long)pXChild.get(),&pChild);
+		BOOL isGet = get_IAccessibleFromXAccessible((LONG_PTR)pXChild.get(),&pChild);
 
 		if(!isGet)
 		{
-			g_pAgent->InsertAccObj(pXChild.get(),pUNOInterface,(long)m_hwnd);
-			isGet = get_IAccessibleFromXAccessible((long)pXChild.get(),&pChild);
+			g_pAgent->InsertAccObj(pXChild.get(),pUNOInterface,m_hwnd);
+			isGet = get_IAccessibleFromXAccessible((LONG_PTR)pXChild.get(),&pChild);
 		}
 
 		if(isGet)
@@ -1463,7 +1463,7 @@ IMAccessible* CMAccessible::GetNavigateChildForDM(VARIANT varCur, short flags)
 		{
 			return NULL;
 		}
-		pCurChild->GetUNOInterface((long*)&pChildXAcc);
+		pCurChild->GetUNOInterface((LONG_PTR*)&pChildXAcc);
 		if(pChildXAcc==NULL)
 		{
 			return NULL;
@@ -1732,7 +1732,7 @@ STDMETHODIMP CMAccessible::get_relation( long relationIndex, IAccessibleRelation
 				if(SUCCEEDED(hr))
 				{
 					AccessibleRelation accRelation = pRrelationSet->getRelation(relationIndex);
-					wrapper->put_XSubInterface((long)&accRelation);
+					wrapper->put_XSubInterface((LONG_PTR)&accRelation);
 					wrapper->Release();
 					*relation = pRelation;
 					return S_OK;
@@ -1795,7 +1795,7 @@ STDMETHODIMP CMAccessible::get_relations( long, IAccessibleRelation __RPC_FAR *_
 				if(SUCCEEDED(hr))
 				{
 					AccessibleRelation accRelation = pRrelationSet->getRelation(i);
-					wrapper->put_XSubInterface((long)&accRelation);
+					wrapper->put_XSubInterface((LONG_PTR)&accRelation);
 					wrapper->Release();
 				}
 				(relation)[i] = pRelation;
@@ -2273,11 +2273,11 @@ HRESULT CMAccessible::DeSelectMultipleChildren( XAccessible** pItem,int size )
 * @param	pXAcc, the XAccessible object of current object.
 * @return  S_OK if successful.
 */
-STDMETHODIMP CMAccessible::SetXAccessible(long pXAcc)
+STDMETHODIMP CMAccessible::SetXAccessible(LONG_PTR pXAcc)
 {
 	pUNOInterface = (XAccessible*)pXAcc;
 	pRef = pUNOInterface;
-	m_pEnumVar->PutSelection(/*XAccessibleSelection*/(long)pUNOInterface);
+	m_pEnumVar->PutSelection(/*XAccessibleSelection*/(LONG_PTR)pUNOInterface);
 
 	pRContext = pUNOInterface->getAccessibleContext();
 	pRContextInterface = (XAccessibleContext*)pRContext.is();
@@ -2332,7 +2332,7 @@ STDMETHODIMP CMAccessible::accSelect(long flagsSelect, VARIANT varChild)
 
 	if( flagsSelect&SELFLAG_TAKEFOCUS )
 	{
-		long pTempUNO = 0;
+		LONG_PTR pTempUNO = 0;
 		pSelectAcc->GetUNOInterface( &pTempUNO);
 
 		if( pTempUNO == NULL )
@@ -2388,13 +2388,13 @@ STDMETHODIMP CMAccessible::accSelect(long flagsSelect, VARIANT varChild)
 * @param pXAcc, [in, out] the Uno interface of the current object.
 * @return S_OK if successful.
 */
-STDMETHODIMP CMAccessible::GetUNOInterface(long* pXAcc)
+STDMETHODIMP CMAccessible::GetUNOInterface(LONG_PTR* pXAcc)
 {
 	// #CHECK#
 	if(pXAcc == NULL)
 		return E_INVALIDARG;
 
-	*pXAcc = (long)pUNOInterface;
+	*pXAcc = (LONG_PTR)pUNOInterface;
 	return S_OK;
 }
 
@@ -2403,7 +2403,7 @@ STDMETHODIMP CMAccessible::GetUNOInterface(long* pXAcc)
 * @param pAction, the default action point of the current object.
 * @return S_OK if successful.
 */
-STDMETHODIMP CMAccessible::SetDefaultAction(long pAction)
+STDMETHODIMP CMAccessible::SetDefaultAction(LONG_PTR pAction)
 {
 	m_pXAction = (XAccessibleAction*)pAction;
 	return S_OK;
@@ -2595,7 +2595,7 @@ HRESULT WINAPI CMAccessible::SmartQI(void* pv, REFIID iid, void** ppvObject)
 					((IUnknown*)*ppvObject)->QueryInterface(IID_IUNOXWrapper, (void**)&wrapper);
 					if(wrapper)
 					{
-						wrapper->put_XInterface((long)pUNOInterface);
+						wrapper->put_XInterface((LONG_PTR)pUNOInterface);
 						wrapper->Release();
 					}
 					return S_OK;
@@ -2610,7 +2610,7 @@ HRESULT WINAPI CMAccessible::SmartQI(void* pv, REFIID iid, void** ppvObject)
 	LEAVE_PROTECTED_BLOCK
 }
 
-BOOL CMAccessible::get_IAccessibleFromXAccessible(long pXAcc, IAccessible **ppIA)
+BOOL CMAccessible::get_IAccessibleFromXAccessible(LONG_PTR pXAcc, IAccessible **ppIA)
 {
 
 	ENTER_PROTECTED_BLOCK
@@ -2963,12 +2963,12 @@ void CMAccessible::ConvertAnyToVariant(const ::com::sun::star::uno::Any &rAnyVal
 					if(pXAcc.is())
 					{
 						IAccessible* pIAcc = NULL;
-						get_IAccessibleFromXAccessible((long)pXAcc.get(), &pIAcc);
+						get_IAccessibleFromXAccessible((LONG_PTR)pXAcc.get(), &pIAcc);
 						if(pIAcc == NULL)
 						{
 							Reference< XAccessibleContext > pXAccContext = pXAcc->getAccessibleContext();
 							g_pAgent->InsertAccObj(pXAcc.get(),pXAccContext->getAccessibleParent().get());
-							get_IAccessibleFromXAccessible((long)pXAcc.get(), &pIAcc);
+							get_IAccessibleFromXAccessible((LONG_PTR)pXAcc.get(), &pIAcc);
 						}
 						if(pIAcc)
 						{

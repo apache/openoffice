@@ -185,7 +185,7 @@ STDMETHODIMP CAccComponentBase::get_background(IA2Color * background)
  *
  * @param    pXInterface    the pointer of UNO interface.
  */
-STDMETHODIMP CAccComponentBase::put_XInterface(long pXInterface)
+STDMETHODIMP CAccComponentBase::put_XInterface(LONG_PTR pXInterface)
 {
 
 	CHECK_ENABLE_INF

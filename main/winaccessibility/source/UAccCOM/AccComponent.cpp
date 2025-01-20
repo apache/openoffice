@@ -65,7 +65,7 @@ STDMETHODIMP CAccComponent::get_background(IA2Color * background)
  *
  * @param    pXInterface    the pointer of UNO interface.
  */
-STDMETHODIMP CAccComponent::put_XInterface(long pXInterface)
+STDMETHODIMP CAccComponent::put_XInterface(LONG_PTR pXInterface)
 {
 
     return CAccComponentBase::put_XInterface(pXInterface);

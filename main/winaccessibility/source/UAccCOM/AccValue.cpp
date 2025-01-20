@@ -198,7 +198,7 @@ STDMETHODIMP CAccValue::get_minimumValue(VARIANT *mininumValue)
    * @param  pXInterface UNO interface.
    * @return Result.
    */
-STDMETHODIMP CAccValue::put_XInterface(long pXInterface)
+STDMETHODIMP CAccValue::put_XInterface(LONG_PTR pXInterface)
 {
 
 

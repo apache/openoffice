@@ -250,7 +250,7 @@ STDMETHODIMP CAccHyperLink::get_valid(/* [retval][out] */ boolean __RPC_FAR *val
    * @param pXInterface XAccessibleContext interface.
    * @return Result.
 */
-STDMETHODIMP CAccHyperLink::put_XInterface(long pXInterface)
+STDMETHODIMP CAccHyperLink::put_XInterface(LONG_PTR pXInterface)
 {
 
 	CHECK_ENABLE_INF
@@ -284,7 +284,7 @@ STDMETHODIMP CAccHyperLink::put_XInterface(long pXInterface)
    * @param pXSubInterface XAccessibleHyperlink interface.
    * @return Result.
 */
-STDMETHODIMP CAccHyperLink::put_XSubInterface(long pXSubInterface)
+STDMETHODIMP CAccHyperLink::put_XSubInterface(LONG_PTR pXSubInterface)
 {
 
 	CHECK_ENABLE_INF

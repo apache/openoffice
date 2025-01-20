@@ -142,10 +142,10 @@ void  AccObjectManagerAgent::UpdateDescription( XAccessible* pXAcc, Any newDesc 
    * @param pWnd The top window handle containing control.
    * @return If the method is correctly processed.
    */
-unsigned char AccObjectManagerAgent::InsertAccObj( XAccessible* pXAcc,XAccessible* pParentXAcc,long pWnd)
+unsigned char AccObjectManagerAgent::InsertAccObj( XAccessible* pXAcc,XAccessible* pParentXAcc,void *pWnd)
 {
     if( pWinManager )
-        return (unsigned char)pWinManager->InsertAccObj( pXAcc, pParentXAcc,HWND((void*)pWnd) );
+        return (unsigned char)pWinManager->InsertAccObj( pXAcc, pParentXAcc, (HWND)pWnd );
 
     return sal_False;
 }
@@ -156,10 +156,10 @@ unsigned char AccObjectManagerAgent::InsertAccObj( XAccessible* pXAcc,XAccessibl
    * @param pXAcc XAccessible interface for top window
    * @return void
    */
-void AccObjectManagerAgent::SaveTopWindowHandle(long hWnd, com::sun::star::accessibility::XAccessible* pXAcc)
+void AccObjectManagerAgent::SaveTopWindowHandle(void *hWnd, com::sun::star::accessibility::XAccessible* pXAcc)
 {
     if( pWinManager )
-        pWinManager->SaveTopWindowHandle( HWND((void*)hWnd), pXAcc );
+        pWinManager->SaveTopWindowHandle( (HWND)hWnd, pXAcc );
 }
 
 
@@ -171,10 +171,10 @@ void AccObjectManagerAgent::SaveTopWindowHandle(long hWnd, com::sun::star::acces
    * @return If the method is correctly processed.
    */
 unsigned char AccObjectManagerAgent::InsertChildrenAccObj( XAccessible* pXAcc,
-        long pWnd)
+        void *pWnd)
 {
     if( pWinManager )
-        return (unsigned char)pWinManager->InsertChildrenAccObj( pXAcc, HWND((void*)pWnd) );
+        return (unsigned char)pWinManager->InsertChildrenAccObj( pXAcc, (HWND)pWnd );
 
     return sal_False;
 }
