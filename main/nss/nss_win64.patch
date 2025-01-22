@@ -1,0 +1,30 @@
+--- misc/build/nss-3.39/nspr/pr/src/io/prsocket.c	2025-01-21 18:09:11.629055000 +0200
++++ misc/build/nss-3.39/nspr/pr/src/io/prsocket.c	2025-01-21 18:11:44.990333000 +0200
+@@ -337,8 +337,8 @@
+      * input/output.
+      * To get result we need to use GetOverlappedResult. */
+     if (fd->secret->overlappedActive) {
+-        PR_ASSERT(fd->secret->nonblocking);
+         PRInt32 rvSent;
++        PR_ASSERT(fd->secret->nonblocking);
+         if (GetOverlappedResult(osfd, &fd->secret->ol, &rvSent, FALSE) == TRUE) {
+             fd->secret->overlappedActive = PR_FALSE;
+             PR_LOG(_pr_io_lm, PR_LOG_MIN,
+--- misc/build/nss-3.39/nss/lib/freebl/blinit.c	2025-01-21 18:09:11.487953000 +0200
++++ misc/build/nss-3.39/nss/lib/freebl/blinit.c	2025-01-21 18:28:06.705161000 +0200
+@@ -50,14 +50,8 @@
+         mov xcr0, eax
+     }
+ #else
+-    xcr0 = (PRUint32)_xgetbv(0); /* Requires VS2010 SP1 or later. */
++    return 0;
+ #endif /* _M_IX86 */
+-#else  /* _MSC_VER */
+-    /* Old OSX compilers don't support xgetbv. Use byte form. */
+-    __asm__(".byte 0x0F, 0x01, 0xd0"
+-            : "=a"(xcr0)
+-            : "c"(0)
+-            : "%edx");
+ #endif /* _MSC_VER */
+     /* Check if xmm and ymm state are enabled in XCR0. */
+     return (xcr0 & 6) == 6;
