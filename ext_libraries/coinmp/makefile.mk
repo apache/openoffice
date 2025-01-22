@@ -50,8 +50,10 @@ PATCH_FILES=coinmp-1.7.6.patch coinmp-1.7.6-clang.patch coinmp-1.7.6-clang-1.8.p
 PATCH_FILES+=coinmp-1.6.0-os2.patch
 .ENDIF
 
-.IF "$(COM)"=="MSC"
+.IF "$(COM)$(CPU)"=="MSCI"
 BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv CoinMP\\MSVisualStudio\\v9\\CoinMP.sln "Release|Win32"
+.ELIF "$(COM)$(CPU)"=="MSCX"
+BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv CoinMP\\MSVisualStudio\\v9\\CoinMP.sln "Release|x64"
 .ELSE
 CONFIGURE_ACTION=./configure
 #CONFIGURE_FLAGS=--disable-pkg-config --disable-bzlib --disable-zlib CC='$(CC) $(ARCH_FLAGS)' CXX='$(CXX) $(ARCH_FLAGS)' CFLAGS='$(ARCH_FLAGS) -Wc,-arch -Wc,i386' CPPFLAGS='$(ARCH_FLAGS)' LDFLAGS='$(ARCH_FLAGS)' compiler_flags='$(ARCH_FLAGS)'
@@ -77,9 +79,12 @@ CONFIGURE_FLAGS+= --disable-shared --enable-static
 
 OUT2INC+=CoinMP$/src/CoinMP.h
 
-.IF "$(OS)"=="WNT"
+.IF "$(OS)$(CPU)"=="WNTI"
 OUT2BIN+=CoinMP$/MSVisualStudio$/v9$/release$/CoinMP.dll
 OUT2LIB+=CoinMP$/MSVisualStudio$/v9$/release$/CoinMP.lib
+.ELIF "$(OS)$(CPU)"=="WNTX"
+OUT2BIN+=CoinMP$/MSVisualStudio$/v9$/x64$/Release$/CoinMP.dll
+OUT2LIB+=CoinMP$/MSVisualStudio$/v9$/x64$/Release$/CoinMP.lib
 .ELIF "$(OS)"=="OS2"
 OUT2BIN+=CoinMP$/src$/CoinMP.dll
 OUT2LIB+=CoinMP$/src$/.libs/CoinMP.lib
