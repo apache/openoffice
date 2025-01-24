@@ -49,7 +49,7 @@ namespace framework{
 #define SPECIALPROTOCOL_PRIVATE_OBJECT    DECLARE_ASCII("private:object" )       // indicates loading of components using a model directly
 #define SPECIALPROTOCOL_PRIVATE_STREAM    DECLARE_ASCII("private:stream" )       // indicates loading of components using a stream only
 #define SPECIALPROTOCOL_PRIVATE_FACTORY   DECLARE_ASCII("private:factory")       // indicates creation of empty documents
-#define SPECIALPROTOCOL_SLOT              DECLARE_ASCII("slot:"          )       // internal protocol of the sfx project for generic dispatch funtionality
+#define SPECIALPROTOCOL_SLOT              DECLARE_ASCII("slot:"          )       // internal protocol of the sfx project for generic dispatch functionality
 #define SPECIALPROTOCOL_UNO               DECLARE_ASCII(".uno:"          )       // external representation of the slot protocol using names instead of id's
 #define SPECIALPROTOCOL_MACRO             DECLARE_ASCII("macro:"         )       // special sfx protocol to execute macros
 #define SPECIALPROTOCOL_SERVICE           DECLARE_ASCII("service:"       )       // generic way to start uno services during dispatch
