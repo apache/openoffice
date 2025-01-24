@@ -144,7 +144,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
      * (started inside the original oneway method). We found all parameters of
      * the original request packed inside a vector. Here we unpack it and
      * call the right internal helper method, which implements the right
-     * funtionality.
+     * functionality.
      *
      * @seealso frameAction()
      * @seealso statusChanged()
@@ -184,7 +184,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
      * Because it's a oneway method we start a thread as reaction. This thread call
      * us back and we can do necessary things there.
      * But we shouldn't start such action - if it's not really necessary.
-     * So we check before, if we are intereested on this event really.
+     * So we check before, if we are interested on this event really.
      *
      * @see impl_frameAction()
      *
@@ -227,7 +227,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
 
     /**
      * This is the callback method for the status we listen for an wish to show it
-     * on our UI control. Of yourse it's a oneway method ... but we doesn't call back
+     * on our UI control. Of course it's a oneway method ... but we doesn't call back
      * to the office synchronously here. We update our UI only. So we don't leave this
      * java process. In such case it's not necessary to use threads to decouple it.
      * Do it here and now ...
@@ -242,7 +242,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
             if (m_bDead)
                 return;
 
-            // enable/dsiable th control.
+            // enable/disable th control.
             // Means: If the feature isn't available currently - we can't show an status really here.
             // Then we should colorize it gray ...
             m_rControl.setEnabled(aEvent.IsEnabled);
@@ -250,7 +250,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
             // Only if status is enabled we can look for his value!
             if (aEvent.IsEnabled)
             {
-                // look for the right type ofthe UI control
+                // look for the right type of the UI control
                 // Following actions depend on it.
 
                 //.............................................................

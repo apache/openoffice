@@ -149,7 +149,7 @@ namespace comphelper
 	//=====================================================================
 	//= deriving from multiple XInterface-derived classes
 	//=====================================================================
-	//= forwarding/merging XInterface funtionality
+	//= forwarding/merging XInterface functionality
 	//=====================================================================
 	#define DECLARE_XINTERFACE( )	\
 		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException); \
@@ -185,7 +185,7 @@ namespace comphelper
 		}
 
 	//=====================================================================
-	//= forwarding/merging XTypeProvider funtionality
+	//= forwarding/merging XTypeProvider functionality
 	//=====================================================================
 	#define DECLARE_XTYPEPROVIDER( )	\
 		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw (::com::sun::star::uno::RuntimeException); \
