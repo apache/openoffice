@@ -30,6 +30,6 @@ repos:
     hooks:
       - id: codespell
         name: run codespell
-        description: Check spelling with codespell
-        entry: codespell --ignore-words=codespell.txt
+        description: check spelling with codespell
+        args: [--ignore-words=.github/linters/codespell.txt]
         exclude: ^extras/
