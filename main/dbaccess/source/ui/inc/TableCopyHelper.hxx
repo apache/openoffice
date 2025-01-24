@@ -186,7 +186,7 @@ namespace dbaui
             const SharedConnection& _xDestConnection
         );
 
-		/** insert a table into the data source. The source can eihter be a table or a query
+		/** insert a table into the data source. The source can either be a table or a query
 		*/
 		void insertTable(
 			const ::rtl::OUString& i_rSourceDataSource,

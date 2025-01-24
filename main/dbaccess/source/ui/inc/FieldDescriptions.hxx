@@ -99,7 +99,7 @@ namespace dbaui
 		void SetPrimaryKey(sal_Bool _bPKey);									
 		void SetCurrency(sal_Bool _bIsCurrency);
 
-		/** copies the content of the field eescription into the column
+		/** copies the content of the field description into the column
 			@param	_rxColumn the dest
 		*/
 		void copyColumnSettingsTo(const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& _rxColumn);
