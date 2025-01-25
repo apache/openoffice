@@ -343,7 +343,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 //==================================================================================================
 extern "C" void privateSnippetExecutor( ... );
 
-int const codeSnippetSize = 44;
+int const codeSnippetSize = 48;
 
 unsigned char * codeSnippet(
     unsigned char * code, sal_Int32 functionIndex, sal_Int32 vtableOffset, bool isArgFloat[4])
