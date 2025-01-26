@@ -1055,7 +1055,7 @@ IMPL_LINK( SdPublishingDlg, DesignDeleteHdl, PushButton *, EMPTYARG )
 }
 
 // =====================================================================
-// Clickhandler fuer das �ndern des Servertyps
+// Clickhandler fuer das ändern des Servertyps
 // =====================================================================
 IMPL_LINK( SdPublishingDlg, WebServerHdl, RadioButton *, pButton )
 {
