@@ -98,7 +98,8 @@ privateSnippetExecutor PROC FRAME
 	mov rax, -8[rbp]
 	movsd xmm0, qword ptr -8[rbp]
 
-	leave
+	add rsp, 48
+        pop rbp
 	ret
 
 privateSnippetExecutor ENDP
