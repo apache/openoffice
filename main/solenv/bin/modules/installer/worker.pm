@@ -2155,7 +2155,7 @@ sub compare_arrays
 	{
 		for ( my $i = 0; $i <= $#{$array1}; $i++ )
 		{
-			# ingnoring whitespaces at end and beginning
+			# ignoring whitespaces at end and beginning
 			${$array1}[$i] =~ s/^\s*//;
 			${$array2}[$i] =~ s/^\s*//;
 			${$array1}[$i] =~ s/\s*$//;

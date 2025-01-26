@@ -308,7 +308,7 @@ namespace svgio
             drawinglayer::primitive2d::Primitive2DSequence aSequence;
 
             // #125258# check now if we need to init some style settings locally. Do not do this
-            // in the constructor, there is not yet informatikon e.g. about existing CssStyles.
+            // in the constructor, there is not yet information e.g. about existing CssStyles.
             // Here all nodes are read and interpreted
             const_cast< SvgSvgNode* >(this)->initializeStyleAttributes();
 

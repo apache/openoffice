@@ -1886,7 +1886,7 @@ sal_uInt16 SwScriptInfo::KashidaJustify( sal_Int32* pKernArray,
     if( !IsKashidaLine(nStt))
         return STRING_LEN;
 
-    // evaluate kashida informatin in collected in SwScriptInfo
+    // evaluate kashida information in collected in SwScriptInfo
 
     sal_uInt16 nCntKash = 0;
     while( nCntKash < CountKashida() )
