@@ -626,11 +626,11 @@ public:
     */
     bool notifyPauseMode( bool bPauseShow );
     
-    /** Notify that all audio has to be stoped.
+    /** Notify that all audio has to be stopped.
         
         This method is used by XCommand nodes and all sound
         playing nodes should listen for this command and
-        stop theire sounds when its fired.
+        stop their sounds when its fired.
         
         @return true, if this event was processed by
         anybody. If false is returned, no handler processed
