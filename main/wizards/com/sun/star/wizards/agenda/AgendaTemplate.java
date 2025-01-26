@@ -591,7 +591,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
             catch (Exception ex)
             {
                 ex.printStackTrace();
-                throw new IllegalArgumentException("Fatal Error while initialilzing Template: items table in section " + sections[i]);
+                throw new IllegalArgumentException("Fatal Error while initializing Template: items table in section " + sections[i]);
             }
         }
 

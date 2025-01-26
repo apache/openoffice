@@ -336,7 +336,7 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
             @param  xRequest
                     the interaction request, which should be intercepted.
                     
-            @return A identifier, which inidicates if the request was intercepted,
+            @return A identifier, which indicates if the request was intercepted,
                     the continuation was found and selected ... or not.
          */
         UCBHELPER_DLLPRIVATE EInterceptionState impl_interceptRequest(const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xRequest);
