@@ -303,7 +303,7 @@ public class InfoDir {
     static public void removeUninstallationFiles() {
         // removing selected File
         removeSpecialFiles();
-        // removing directories html/images, html and xpd
+        // removing directories html/images, HTML and xpd
         removeInforootSubdir("html", "images");
         removeInforootSubdir("html");
         removeInforootSubdir("xpd");

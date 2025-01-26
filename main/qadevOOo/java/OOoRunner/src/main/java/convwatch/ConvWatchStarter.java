@@ -294,7 +294,7 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
             
             LISToutput.close();
             HTMLoutput.close();
-            log.println("The file '" + HTMLoutput.getFilename() + "' shows a html based status.");
+            log.println("The file '" + HTMLoutput.getFilename() + "' shows a HTML based status.");
             DB.writeHTMLFile(HTMLoutput.getFilename());
         }
     

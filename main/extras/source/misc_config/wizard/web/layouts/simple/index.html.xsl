@@ -66,7 +66,7 @@ places...
 	 
 	 <xsl:template name="toc">
 		<!--
-		     @ pre toc html here
+		     @ pre toc HTML here
 		-->
 			<tr> 
     			<td width="30" class="ccolor">&#160;
@@ -80,7 +80,7 @@ places...
 	  <xsl:apply-templates select="/session/content/document"/>
 
 		<!--
-		     @ post toc html here
+		     @ post toc HTML here
 		-->
 				</td>
 			</tr>
@@ -134,7 +134,7 @@ places...
 	 	 
 	 <xsl:template name="title">
 	    <!--
-	      @ Pre title html code here
+	      @ Pre title HTML code here
 	    -->
   		<tr> 
     		<td height="80" colspan="2" class="toctitle">
@@ -142,7 +142,7 @@ places...
 				<xsl:value-of select="/session/general-info/@title"/>
 	    
 	    <!--
-	      @ Post title html code here
+	      @ Post title HTML code here
 	    -->
 	    	</td>
 	    </tr>

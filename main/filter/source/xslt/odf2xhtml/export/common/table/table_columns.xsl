@@ -200,7 +200,7 @@
 	<xsl:template name="table-debug-allTableColumns">
 		<xsl:param name="allTableColumns" />
 
-		<!-- debug output as table summary attribut in html -->
+		<!-- debug output as table summary attribut in HTML -->
 		<xsl:attribute name="summary">
 			<xsl:call-template name="table-debug-column-out">
 				<xsl:with-param name="allTableColumns" select="$allTableColumns" />

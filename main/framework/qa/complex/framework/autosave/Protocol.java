@@ -73,7 +73,7 @@ public class Protocol extends JComponent
      * @const   MODE_STDOUT             messages are logged to stdout
      * @const   MODE_STDERR             messages are logged to stderr
      * @const   MODE_ASCII              messages are logged to an ascii file
-     * @const   MODE_HTML               messages are logged to a html file
+     * @const   MODE_HTML               messages are logged to a HTML file
      *
      * @const   TYPE_SCOPE_OPEN         open, mark or count a new scope for following log statements
      * @const   TYPE_SCOPE_CLOSE        close, mark or count the current scope
@@ -298,7 +298,7 @@ public class Protocol extends JComponent
 
         /**
          * format this line as a string for writing log files
-         * using the html format
+         * using the HTML format
          */
         public synchronized String toHTML()
         {
@@ -503,7 +503,7 @@ public class Protocol extends JComponent
     // ____________________
     /**
      * For some modes it's necessary, that we write some additional
-     * informations to the log. E.g. for html we must generate close targets.
+     * informations to the log. E.g. for HTML we must generate close targets.
      */
     public synchronized void finish()
     {
@@ -754,10 +754,10 @@ public class Protocol extends JComponent
 
     // ____________________
     /**
-     * returns a generic html header for generating html log files
+     * returns a generic HTML header for generating HTML log files
      *
-     * It's used from the method finish() to generate a valid html formatted file.
-     * For that it's necessary to open some special html targets like e.g. <html>.
+     * It's used from the method finish() to generate a valid HTML formatted file.
+     * For that it's necessary to open some special HTML targets like e.g. <html>.
      *
      * @return  A string, which includes the whole header.
      *

@@ -24,7 +24,7 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 
 
 
-# create java installer help files in html format for all languages defined in ulf file
+# create java installer help files in HTML format for all languages defined in ulf file
 
 use Cwd;
 use File::Copy;
@@ -136,13 +136,13 @@ sub main::collect_helpfile_content
   my @helpfilecontent = ();
   my $stringhash = create_string_hash($ulffile, $language);
   
-  # Collecting all strings for one html file.
+  # Collecting all strings for one HTML file.
   # For "Prologue_de.html" all files need to begin with "STRING_PROLOGUE_X"
   # The "X" is the ordering number.
   
   my $basestring = "STRING_" . uc($helpfilename) . "_";
   
-  for ( my $i = 0; $i <= 10; $i++ )  # 10 strings possible for each html file
+  for ( my $i = 0; $i <= 10; $i++ )  # 10 strings possible for each HTML file
   {
     my $key = $basestring . $i;
     if ( exists $stringhash->{$key} )

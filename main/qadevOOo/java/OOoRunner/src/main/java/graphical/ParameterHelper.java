@@ -404,7 +404,7 @@ public class ParameterHelper
             String sPrefix = (String)getTestParameters().get( PropertyName.DOC_COMPARATOR_HTML_OUTPUT_PREFIX );
             if (sPrefix == null || sPrefix.length() == 0)
             {
-                GlobalLogWriter.println("Please set html prefix " + PropertyName.DOC_COMPARATOR_HTML_OUTPUT_PREFIX + "=prefix.");            
+                GlobalLogWriter.println("Please set HTML prefix " + PropertyName.DOC_COMPARATOR_HTML_OUTPUT_PREFIX + "=prefix.");
             }
             else
             {
