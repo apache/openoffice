@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "globals.hrc"
 #include "misc.hrc"
 #include "num.hrc"
@@ -308,7 +306,7 @@ TabDialog DLG_SVXTEST_NUM_BULLET
 			PageItem
 			{
 				Identifier = RID_SVXPAGE_PICK_SINGLE_NUM ;
-				Text [ en-US ] = "Numbering type" ;
+				Text [ en-US ] = "Numbering" ;
 			};
 			PageItem
 			{
