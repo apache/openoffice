@@ -72,5 +72,3 @@ EasyWriter::Out()
 
 
 #endif
-
-

@@ -46,4 +46,3 @@ public:
 };
 
 #endif	//  _XMLOFF_NUMBERSTYLESEXPORT_HXX
-

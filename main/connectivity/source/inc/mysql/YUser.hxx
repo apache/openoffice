@@ -75,4 +75,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_MYSQL_USER_HXX_
-

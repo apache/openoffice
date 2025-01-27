@@ -30,4 +30,3 @@
 
 
 #endif  // _SVDITEXT_HXX
-

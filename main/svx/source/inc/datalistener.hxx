@@ -72,4 +72,3 @@ namespace svxform
 //............................................................................
 
 #endif // #ifndef _SVX_DATALISTENER_HXX
-

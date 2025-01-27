@@ -91,4 +91,3 @@ private:
 };
 
 #endif // _IDLC_FEHELPER_HXX_
-

@@ -406,5 +406,3 @@ public:
 };
 
 #endif // IMPDIALOG_HXX
-
-

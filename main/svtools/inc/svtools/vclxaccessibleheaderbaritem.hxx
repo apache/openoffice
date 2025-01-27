@@ -124,4 +124,3 @@ public:
 };
 
 #endif // _SVTOOLS_VCLACCESSIBLEHEADBARITEM_HXX_
-

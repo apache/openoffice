@@ -150,5 +150,3 @@ class HF_IdlTypeText : public HtmlFactory_Idl
 
 
 #endif
-
-

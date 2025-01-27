@@ -53,4 +53,3 @@ class Token_Receiver
 }   // namespace csi
 
 #endif
-

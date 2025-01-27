@@ -90,4 +90,3 @@ namespace dbtools
 //.........................................................................
 
 #endif // _CONNECTIVITY_CONNCLEANUP_HXX_
-

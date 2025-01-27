@@ -74,5 +74,3 @@ class SemanticParser : public csi::uidl::Token_Receiver,
 }   // namespace csi
 
 #endif
-
-

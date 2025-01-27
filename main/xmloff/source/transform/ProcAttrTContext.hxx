@@ -59,4 +59,3 @@ public:
 };
 
 #endif	//  _XMLOFF_PROCATTRCONTEXT_HXX
-

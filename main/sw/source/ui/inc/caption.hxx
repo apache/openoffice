@@ -110,5 +110,3 @@ public:
 };
 
 #endif
-
-

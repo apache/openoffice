@@ -765,4 +765,3 @@ typedef tools::WeakReference< SdrModel > SdrModelWeakRef;
 Die Klasse SdrModel ist der Kopf des Datenmodells der StarView Drawing-Engine.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////// */
-

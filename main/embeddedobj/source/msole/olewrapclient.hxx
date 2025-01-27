@@ -49,4 +49,3 @@ public:
 	STDMETHODIMP OnShowWindow(BOOL);
 	STDMETHODIMP RequestNewObjectLayout(void);
 };
-

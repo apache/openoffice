@@ -105,4 +105,3 @@ private:
 
 
 #endif // SC_CRNRDLG_HXX
-

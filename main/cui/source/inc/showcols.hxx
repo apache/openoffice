@@ -59,4 +59,3 @@ protected:
 };
 
 #endif // _SVX_SHOWCOLS_HXX
-

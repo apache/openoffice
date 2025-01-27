@@ -230,4 +230,3 @@ namespace comphelper
 //........................................................................
 
 #endif // COMPHELPER_PROPERTYBAG_HXX
-

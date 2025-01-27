@@ -59,4 +59,3 @@ namespace sdr
 #endif // _SDR_PROPERTIES_E3DSPHEREPROPERTIES_HXX
 
 // eof
-

@@ -34,6 +34,3 @@ public:
 };
 
 #endif //_CONVERTER_HXX_
-
-
-

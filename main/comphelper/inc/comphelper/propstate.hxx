@@ -105,4 +105,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // _COMPHELPER_PROPERTY_STATE_HXX_
-

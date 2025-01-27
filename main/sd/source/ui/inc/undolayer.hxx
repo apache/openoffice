@@ -60,4 +60,3 @@ private:
 };
 
 #endif		// _SD_UNDOLAYER_HXX
-

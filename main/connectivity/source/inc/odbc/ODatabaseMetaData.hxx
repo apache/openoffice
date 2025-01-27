@@ -217,4 +217,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ODBC_ODATABASEMETADATA_HXX_
-

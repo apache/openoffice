@@ -81,4 +81,3 @@ namespace svt
 //........................................................................
 
 #endif	// _SVTOOLS_HELPAGENTWIDNOW_HXX_
-

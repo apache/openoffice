@@ -88,4 +88,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_CONTROLELEMENT_HXX_
-

@@ -1947,4 +1947,3 @@ public:
 
 #endif  /* __cplusplus */
 #endif	/* _OSL_FILE_HXX_ */
-

@@ -45,4 +45,3 @@ DECL_PTRARRAY(SfxMenuCfgItemArr, SfxMenuCfgItem*, 4, 4 )
 
 
 #endif
-

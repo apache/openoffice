@@ -103,4 +103,3 @@ inline oslSecurity Security::getHandle() const
 }
 
 #endif	// _OSL_SECURITY_HXX_
-

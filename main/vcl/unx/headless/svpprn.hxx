@@ -115,5 +115,3 @@ public:
 }
 
 #endif // _SVP_SVPPRN_HXX
-
-

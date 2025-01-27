@@ -100,6 +100,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_WIZ_COLUMNSELECT_HXX
-
-
-

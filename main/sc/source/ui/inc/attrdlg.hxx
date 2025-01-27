@@ -61,5 +61,3 @@ private:
 #endif
 
 #endif // SC_ATTRDLG_HXX
-
-

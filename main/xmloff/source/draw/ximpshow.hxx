@@ -50,4 +50,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XIMPSHOW_HXX
-

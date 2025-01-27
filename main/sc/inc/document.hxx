@@ -1925,5 +1925,3 @@ inline void ScDocument::SetSortParam( ScSortParam& rParam, SCTAB nTab )
 }
 
 #endif
-
-

@@ -58,4 +58,3 @@ public:
 #endif	// _SFX_BRUSHITEMLINK_DECLARED
 
 #endif // _WALLITEM_HXX
-

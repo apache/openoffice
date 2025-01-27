@@ -211,4 +211,3 @@ inline sal_Bool AccessibleGridControlHeader::isColumnBar() const
 // ============================================================================
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBILEGRIDCONTROLHEADER_HXX
-

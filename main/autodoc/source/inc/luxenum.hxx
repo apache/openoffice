@@ -96,4 +96,3 @@ class Enum // : public Template_Base
 
 }   // namespace lux
 #endif
-

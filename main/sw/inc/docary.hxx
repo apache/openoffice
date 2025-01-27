@@ -118,4 +118,3 @@ SV_DECL_PTRARR(SwOLENodes,SwOLENodePtr,16,16)
 
 
 #endif	//_DOCARY_HXX
-

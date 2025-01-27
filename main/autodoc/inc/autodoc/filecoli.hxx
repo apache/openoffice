@@ -65,4 +65,3 @@ class FileCollector_Ifc
 
 
 #endif
-

@@ -176,6 +176,3 @@ PE_Type::Result_KindOf() const
 
 
 #endif
-
-
-

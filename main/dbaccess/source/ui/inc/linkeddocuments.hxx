@@ -152,4 +152,3 @@ namespace dbaui
 //......................................................................
 
 #endif // _DBAUI_LINKEDDOCUMENTS_HXX_
-

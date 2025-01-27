@@ -339,4 +339,3 @@ inline ScValidationDlg * ScValidationDlg::Find1AliveObject( Window *pAncestor )
 }
 //-->Added by PengYunQuan for Validity Cell Range Picker
 #endif // SC_VALIDATE_HXX
-

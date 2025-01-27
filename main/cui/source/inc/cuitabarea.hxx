@@ -793,4 +793,3 @@ public:
 
 
 #endif // _CUI_TAB_AREA_HXX
-

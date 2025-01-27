@@ -143,4 +143,3 @@ public:
 };
 
 #endif // SW_UNDO_DRAW_HXX
-

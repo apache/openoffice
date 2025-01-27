@@ -119,4 +119,3 @@ public:
 }}	// namespace vcl::unohelper
 
 #endif  // _VCL_DNDHELP_HXX
-

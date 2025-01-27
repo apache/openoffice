@@ -100,10 +100,3 @@ namespace dbaui
 }
 
 #endif //  DBAUI_DBEXCHANGE_HXX
-
-
-
-
-
-
-

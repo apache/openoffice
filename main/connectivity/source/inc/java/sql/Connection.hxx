@@ -144,4 +144,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_JAVA_SQL_CONNECTION_HXX_
-

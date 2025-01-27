@@ -885,4 +885,3 @@
 #include "xmloff/xmltoken.hxx"
 //---MARKER---
 #endif
-

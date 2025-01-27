@@ -51,4 +51,3 @@ private:
 } // namespace slideshow
 
 #endif /* INCLUDED_SLIDESHOW_PROPERTYANIMATIONNODE_HXX */
-

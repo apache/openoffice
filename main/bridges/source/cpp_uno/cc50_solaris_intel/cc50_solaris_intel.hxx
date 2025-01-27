@@ -66,4 +66,3 @@ void cc50_solaris_intel_fillUnoException(
     void*, const char*,
     uno_Any*, uno_Mapping * pCpp2Uno );
 }
-

@@ -150,4 +150,3 @@ protected:
 } // formula
 
 #endif // FORMULA_FORMULA_HXX
-

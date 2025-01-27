@@ -47,4 +47,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_EVOAB_TABLES_HXX_
-

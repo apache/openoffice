@@ -118,4 +118,3 @@ class ST_InfoListWriter : public GenericInfoParseTypes,
 };
 
 #endif
-

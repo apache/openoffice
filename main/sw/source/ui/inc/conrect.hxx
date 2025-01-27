@@ -53,4 +53,3 @@ class ConstRectangle : public SwDrawBase
 
 
 #endif		// _SW_CONRECT_HXX
-

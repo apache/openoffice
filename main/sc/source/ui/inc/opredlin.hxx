@@ -78,5 +78,3 @@ public:
 	virtual	void 		Reset( const SfxItemSet& rSet );
 };
 #endif
-
-

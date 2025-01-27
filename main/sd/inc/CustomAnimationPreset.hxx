@@ -148,4 +148,3 @@ typedef boost::shared_ptr< CustomAnimationPresets > CustomAnimationPresetsPtr;
 }
 
 #endif // _SD_CUSTOMANIMATIONEFFECTS_HXX
-

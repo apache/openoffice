@@ -56,5 +56,3 @@ public:
 
 
 #endif // SC_DELCLDLG_HXX
-
-

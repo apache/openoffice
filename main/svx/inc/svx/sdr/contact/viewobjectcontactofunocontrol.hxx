@@ -135,4 +135,3 @@ namespace sdr { namespace contact {
 //........................................................................
 
 #endif // SVX_SDR_CONTACT_VIEWOBJECTCONTACTOFUNOCONTROL_HXX
-

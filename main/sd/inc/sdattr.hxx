@@ -167,5 +167,3 @@ public:
 };
 
 #endif // _SDATTR_HXX
-
-

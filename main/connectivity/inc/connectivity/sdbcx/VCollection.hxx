@@ -235,5 +235,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_SDBCX_COLLECTION_HXX_
-
-

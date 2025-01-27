@@ -108,4 +108,3 @@ SalI18N_KeyboardExtension::GetEventBase() const
 }
 
 #endif // _SAL_I18N_XKBDEXTENSION_HXX
-

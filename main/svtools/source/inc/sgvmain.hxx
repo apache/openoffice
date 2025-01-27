@@ -345,5 +345,3 @@ public:
 };
 
 #endif //_SGVMAIN_HXX
-
-

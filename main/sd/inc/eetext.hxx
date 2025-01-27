@@ -26,5 +26,3 @@
 #include <editeng/outliner.hxx>
 
 #endif	// EETEXT_HXX
-
-

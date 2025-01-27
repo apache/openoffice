@@ -109,4 +109,3 @@ namespace comphelper
 //........................................................................
 
 #endif // COMPHELPER_OFFICE_RESOURCE_BUNDLE_HXX
-

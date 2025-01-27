@@ -80,4 +80,3 @@ inline const SwFmtChain &SwFmt::GetChain(sal_Bool bInP) const
 	{ return aSet.GetChain(bInP); }
 
 #endif
-

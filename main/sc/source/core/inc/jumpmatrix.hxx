@@ -215,4 +215,3 @@ public:
 };
 
 #endif // SC_JUMPMATRIX_HXX
-

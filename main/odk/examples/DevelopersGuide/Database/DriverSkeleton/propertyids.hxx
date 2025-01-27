@@ -146,5 +146,3 @@ pProperties[nPos++] = ::com::sun::star::beans::Property(OPropertyMap::getPropMap
 #define PROPERTY_ID_PRIVILEGES						50
 
 #endif // _CONNECTIVITY_PROPERTYIDS_HXX_
-
-

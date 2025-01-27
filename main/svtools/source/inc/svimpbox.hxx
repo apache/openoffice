@@ -467,4 +467,3 @@ inline void SvImpLBox::TreeInserted( SvLBoxEntry* pInsTree )
 }
 
 #endif // #ifndef _SVIMPLBOX_HXX
-

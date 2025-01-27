@@ -139,4 +139,3 @@ class DocuText_Display : public DocumentationDisplay
 
 
 #endif
-

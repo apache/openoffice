@@ -59,4 +59,3 @@ namespace pcr
 //........................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_FONTITEMIDS_HXX_
-

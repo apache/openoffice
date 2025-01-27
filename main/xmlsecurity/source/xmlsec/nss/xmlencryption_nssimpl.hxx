@@ -95,4 +95,3 @@ class XMLEncryption_NssImpl : public ::cppu::WeakImplHelper3<
 } ;
 
 #endif	// _XMLENCRYPTION_NSSIMPL_HXX_
-

@@ -44,4 +44,3 @@ public:
 };
 
 #endif // _SV_SOUND_HXX
-

@@ -74,4 +74,3 @@ public:
 };
 
 #endif /* SC_VBA_COMMENT_HXX */
-

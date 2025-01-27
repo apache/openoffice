@@ -82,4 +82,3 @@ Sequence<OUString> OSaxWriterTest_getSupportedServiceNames( ) throw();
 		return; \
 	} \
 	((void)0)
-

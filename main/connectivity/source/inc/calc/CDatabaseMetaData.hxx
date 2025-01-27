@@ -54,4 +54,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_CALC_DATABASEMETADATA_HXX_
-

@@ -115,4 +115,3 @@ public:
     ::rtl::OUString     GetFilter();
 };
 #endif
-

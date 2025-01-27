@@ -33,4 +33,3 @@
 #endif
 
 #endif //_VOS_TYPES_HXX_
-

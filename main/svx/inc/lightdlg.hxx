@@ -68,4 +68,3 @@ public:
 };
 
 #endif // _SVX_LIGHT3D_HXX_
-

@@ -110,4 +110,3 @@ inline const SwFmtFooter &SwFmt::GetFooter(sal_Bool bInP) const
 	{ return aSet.GetFooter(bInP); }
 
 #endif
-

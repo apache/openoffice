@@ -53,4 +53,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_JAVA_IO_INPUTSTREAM_HXX_
-

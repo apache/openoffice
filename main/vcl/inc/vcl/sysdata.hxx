@@ -187,4 +187,3 @@ struct SystemTextLayoutData
 };
 
 #endif // _SV_SYSDATA_HXX
-

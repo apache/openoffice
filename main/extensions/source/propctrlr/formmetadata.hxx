@@ -343,4 +343,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_FORMMETADATA_HXX_
-

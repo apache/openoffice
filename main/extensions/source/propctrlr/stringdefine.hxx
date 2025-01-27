@@ -92,4 +92,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_FORMSCTRLR_STRINGDEFINE_HXX_
-

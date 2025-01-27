@@ -118,4 +118,3 @@ FWI_DLLPUBLIC void FillLangItems( std::set< ::rtl::OUString > &rLangItems,
 } // namespace framework
 
 #endif // __MISC_HELPER_HXX_
-

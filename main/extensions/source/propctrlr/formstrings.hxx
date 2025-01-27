@@ -300,4 +300,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_FORMSCTRLR_FORMSTRINGS_HXX_
-

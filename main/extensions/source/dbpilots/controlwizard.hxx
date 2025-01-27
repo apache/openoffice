@@ -180,4 +180,3 @@ namespace dbp
 //.........................................................................
 
 #endif // _EXTENSIONS_DBP_CONTROLWIZARD_HXX
-

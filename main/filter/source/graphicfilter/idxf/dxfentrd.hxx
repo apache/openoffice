@@ -594,5 +594,3 @@ inline DXFEntities::~DXFEntities()
 
 
 #endif
-
-

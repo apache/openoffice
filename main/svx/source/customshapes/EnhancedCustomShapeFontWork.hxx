@@ -38,4 +38,3 @@ class EnhancedCustomShapeFontWork
 };
 
 #endif
-

@@ -33,4 +33,3 @@ enum ObjectType
 };
 
 #endif // _DBA_OBJECT_HXX_
-

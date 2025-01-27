@@ -196,5 +196,3 @@ namespace osl {
 }
 
 #endif	/* _OSL_PROFILE_HXX_ */
-
-

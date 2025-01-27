@@ -85,4 +85,3 @@ namespace svt
 //........................................................................
 
 #endif // SVTOOLS_FILEPICKER_INTERACTION_HXX
-

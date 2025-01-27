@@ -191,4 +191,3 @@ namespace rptui
 } // namespace rptui
 // =============================================================================
 #endif // RPTUI_CONDITION_HXX
-

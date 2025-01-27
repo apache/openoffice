@@ -81,4 +81,3 @@ namespace dbaccess
 //.........................................................................
 
 #endif // DBACORE_SDBCORETOOLS_HXX
-

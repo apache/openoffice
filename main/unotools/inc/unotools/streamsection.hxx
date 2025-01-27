@@ -77,5 +77,3 @@ public:
 }	// namespace utl
 
 #endif // _UNOTOOLS_STREAMSECTION_HXX_
-
-

@@ -103,6 +103,3 @@ public:
 
 
 #endif // SC_IMOPTDLG_HXX
-
-
-

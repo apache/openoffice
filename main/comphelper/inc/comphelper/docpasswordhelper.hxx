@@ -368,4 +368,3 @@ private:
 } // namespace comphelper
 
 #endif
-

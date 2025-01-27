@@ -161,4 +161,3 @@ protected:
 //........................................................................
 
 #endif // _DBA_COREDATAACCESS_DOCUMENTCONTAINER_HXX_
-

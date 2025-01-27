@@ -370,4 +370,3 @@ private:
 } // namespace msfilter
 
 #endif
-

@@ -83,5 +83,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_OTYPEINFO_HXX_
-
-

@@ -43,5 +43,3 @@ public:
 };
 
 #endif	// _TOOLKIT_HELPER_MUTEXANDBROADCASTHELPER_HXX
-
-

@@ -41,4 +41,3 @@ private:
 };
 
 #endif // _IDLC_ASTNEEDS_HXX_
-

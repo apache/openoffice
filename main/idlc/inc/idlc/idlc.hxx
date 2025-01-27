@@ -161,4 +161,3 @@ AstDeclaration const * deconstructAndResolveTypedefs(
 AstInterface const * resolveInterfaceTypedefs(AstType const * type);
 
 #endif // _IDLC_IDLC_HXX_
-

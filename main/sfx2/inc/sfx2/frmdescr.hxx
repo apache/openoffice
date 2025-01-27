@@ -287,4 +287,3 @@ public:
 };
 
 #endif // #ifndef _SFX_FRMDESCRHXX
-

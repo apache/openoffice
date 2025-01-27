@@ -42,4 +42,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_DBASE_CATALOG_HXX_
-

@@ -52,4 +52,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_COLUMNS_HXX_
-

@@ -69,4 +69,3 @@ namespace pcr
 //........................................................................
 
 #endif // EXTENSIONS_SOURCE_PROPCTRLR_ENUMREPRESENTATION_HXX
-

@@ -382,4 +382,3 @@ namespace comphelper
 
 
 #endif // _COMPHELPER_SEQUENCE_HXX_
-

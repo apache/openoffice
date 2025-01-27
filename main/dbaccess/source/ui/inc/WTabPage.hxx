@@ -51,6 +51,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_WIZ_TABBPAGE_HXX
-
-
-

@@ -101,4 +101,3 @@ SAL_CALL XMLElementWrapper_XmlSecImpl_createInstance(
 	throw ( com::sun::star::uno::Exception );
 
 #endif
-

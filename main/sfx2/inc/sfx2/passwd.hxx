@@ -90,4 +90,3 @@ public:
 };
 
 #endif // #ifndef _SFX_PASSWD_HXX
-

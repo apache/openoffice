@@ -91,4 +91,3 @@ namespace sdbtools
 //........................................................................
 
 #endif // DBACCESS_SOURCE_SDBTOOLS_INC_OBJECTNAMES_HXX
-

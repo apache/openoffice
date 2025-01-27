@@ -49,4 +49,3 @@ public:
 	STDMETHODIMP_(void)  OnSave(void);
 	STDMETHODIMP_(void)  OnClose(void);
 };
-

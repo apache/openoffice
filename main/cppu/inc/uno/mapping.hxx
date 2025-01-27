@@ -349,4 +349,3 @@ inline sal_Bool mapToUno( uno_Interface ** ppRet, const Reference< C > & x ) SAL
 }
 
 #endif
-

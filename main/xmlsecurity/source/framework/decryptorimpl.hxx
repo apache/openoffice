@@ -129,4 +129,3 @@ SAL_CALL DecryptorImpl_createInstance(
 	throw ( com::sun::star::uno::Exception );
 
 #endif
-

@@ -35,5 +35,3 @@ public:
 	SFX_DECL_CHILDWINDOW(SvxHyperlinkDlgWrapper);
 };
 #endif // _SVX_DLG_HYPERLINK_HXX
-
-

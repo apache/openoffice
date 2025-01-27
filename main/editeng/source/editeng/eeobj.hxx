@@ -65,4 +65,3 @@ public:
 };
 
 #endif	// _DATAOBJ_HXX
-

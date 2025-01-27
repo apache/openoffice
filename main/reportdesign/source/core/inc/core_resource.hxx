@@ -71,4 +71,3 @@ namespace reportdesign
 //.........................................................................
 
 #endif // REPORTDESIGN_CORE_RESOURCE_HXX_
-

@@ -147,5 +147,3 @@ namespace dbaui
 	};
 }
 #endif // DBUI_TABLECONTROLLER_HXX
-
-

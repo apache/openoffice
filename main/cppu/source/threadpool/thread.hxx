@@ -84,4 +84,3 @@ namespace cppu_threadpool {
 
 
 #endif 
-

@@ -302,4 +302,3 @@ public:
 };
 
 #endif // _SVTOOLS_TEMPLWIN_HXX
-

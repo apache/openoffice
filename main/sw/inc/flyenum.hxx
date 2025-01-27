@@ -47,5 +47,3 @@ enum FlyCntType
 
 
 #endif
-
-

@@ -80,4 +80,3 @@ IGrammarContact* getGrammarContact( const SwTxtNode& );
 void finishGrammarCheck( SwTxtNode& );
 
 #endif // IGRAMMARCONTACT_HXX_INCLUDED
-

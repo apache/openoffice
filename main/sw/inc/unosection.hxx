@@ -248,4 +248,3 @@ public:
 };
 
 #endif // SW_UNOSECTION_HXX
-

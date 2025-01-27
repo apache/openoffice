@@ -136,5 +136,3 @@ namespace stoc_connector
   		XStreamListener_hash_set _listeners;
 	};
 }
-
-

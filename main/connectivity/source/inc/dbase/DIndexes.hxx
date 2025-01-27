@@ -54,4 +54,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_DBASE_INDEXES_HXX_
-

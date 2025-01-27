@@ -66,4 +66,3 @@ namespace logging
 //........................................................................
 
 #endif // EXTENSIONS_METHODGUARD_HXX
-

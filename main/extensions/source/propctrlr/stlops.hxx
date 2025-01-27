@@ -63,4 +63,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_STLOPS_HXX_
-

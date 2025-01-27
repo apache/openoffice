@@ -175,4 +175,3 @@ public:
 #endif
 
 #endif // _DATABASE_HXX
-

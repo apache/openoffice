@@ -110,4 +110,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // INCLUDED_COMPHELPER_SELECTION_MULTIPLEX_HXX
-

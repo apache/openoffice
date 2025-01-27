@@ -71,6 +71,3 @@ class Root
 
 
 #endif
-
-
-

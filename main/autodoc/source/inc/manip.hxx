@@ -54,4 +54,3 @@ class Const_Manipulator
 
 
 #endif
-

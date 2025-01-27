@@ -416,4 +416,3 @@ extern "C" \
     COMPHELPER_SERVICEDECL_make_exports((comp0_)(comp1_)(comp2_)(comp3_)(comp4_)(comp5_)(comp6_)(comp7_))
 
 #endif //  ! defined(COMPHELPER_SERVICEDECL_HXX_INCLUDED)
-

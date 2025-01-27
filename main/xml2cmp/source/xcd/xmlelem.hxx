@@ -234,4 +234,3 @@ class MultipleAttrElement : public EmptyElement
 
 
 #endif
-

@@ -24,4 +24,3 @@ XInterfaceRef OSaxWriterTest_CreateInstance( const XMultiServiceFactoryRef & rSM
 UString     OSaxWriterTest_getServiceName( ) THROWS( () );
 UString 	OSaxWriterTest_getImplementationName( ) THROWS( () );
 Sequence<UString> OSaxWriterTest_getSupportedServiceNames( ) THROWS( () );
-

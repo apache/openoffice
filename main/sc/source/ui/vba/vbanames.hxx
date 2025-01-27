@@ -75,4 +75,3 @@ public:
 
 };
 #endif /* SC_VBA_NAMES_HXX */
-

@@ -68,4 +68,3 @@ namespace dbaccess
 	};
 }
 #endif // DBACCESS_CORE_API_BOOKMARKSET_HXX
-

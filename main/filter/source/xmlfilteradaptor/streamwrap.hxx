@@ -71,4 +71,3 @@ public:
 
 
 #endif // _UTL_STREAM_WRAPPER_HXX_
-

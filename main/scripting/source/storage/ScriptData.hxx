@@ -84,4 +84,3 @@ struct ScriptData
 };
 } // namespace scripting_impl
 #endif // _SCRIPTING_STORAGE_ScriptData_HXX_
-

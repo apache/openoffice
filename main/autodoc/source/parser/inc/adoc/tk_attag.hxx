@@ -91,4 +91,3 @@ DECL_TOKEN_CLASS(at_since);
 }   // namespace adoc
 
 #endif
-

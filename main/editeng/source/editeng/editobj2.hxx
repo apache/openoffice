@@ -304,4 +304,3 @@ public:
 };
 
 #endif	// _EDITOBJ2_HXX
-

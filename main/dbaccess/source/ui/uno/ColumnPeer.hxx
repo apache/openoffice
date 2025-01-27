@@ -62,5 +62,3 @@ namespace dbaui
 }	// namespace dbaui
 //.........................................................................
 #endif //DBAUI_COLUMNPEER_HXX
-
-

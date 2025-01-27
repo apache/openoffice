@@ -520,4 +520,3 @@ inline void AccessibleBrowseBoxBase::implSetDescription(
 // ============================================================================
 
 #endif
-

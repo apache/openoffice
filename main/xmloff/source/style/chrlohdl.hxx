@@ -52,4 +52,3 @@ public:
 };
 
 #endif		// _XMLOFF_PROPERTYHANDLER_CHARLOCALETYPES_HXX
-

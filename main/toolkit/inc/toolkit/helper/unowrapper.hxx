@@ -86,4 +86,3 @@ private:
 };
 
 #endif // _TOOLKIT_HELPER_UNOWRAPPER_HXX_
-

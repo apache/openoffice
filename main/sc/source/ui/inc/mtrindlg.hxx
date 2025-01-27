@@ -65,8 +65,3 @@ private:
 };
 
 #endif // SC_MTRINDLG_HXX
-
-
-
-
-

@@ -142,4 +142,3 @@ namespace dbaui
 }
 
 #endif // DBAUI_UPDATEHELPERIMPL_HXX
-

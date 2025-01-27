@@ -69,4 +69,3 @@ UniString GEN_RES_STR2( sal_uIntPtr nResId, const UniString &Text1, const UniStr
 UniString GEN_RES_STR3( sal_uIntPtr nResId, const UniString &Text1, const UniString &Text2, const UniString &Text3 ) { return GEN_RES_STR2( nResId, Text1, Text2 ).Append( ArgString( 3, Text3 ) );}
 
 #endif
-

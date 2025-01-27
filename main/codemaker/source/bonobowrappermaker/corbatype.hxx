@@ -303,4 +303,3 @@ sal_Bool produceType(const ::rtl::OString& typeName,
 
 
 #endif // _CORBAMAKER_CPPUTYPE_HXX_
-

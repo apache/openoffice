@@ -96,4 +96,3 @@ private:
 };
 
 #endif // VCL_THROBBER_HXX
-

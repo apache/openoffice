@@ -68,4 +68,3 @@ inline ::boost::shared_ptr<T> make_shared_from_UNO( T * p )
 } // namespace comphelper
 
 #endif // ! defined(INCLUDED_COMPHELPER_MAKE_SHARED_FROM_UNO_HXX)
-

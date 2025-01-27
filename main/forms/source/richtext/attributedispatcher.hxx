@@ -97,4 +97,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_SOURCE_RICHTEXT_ATTRIBUTEDISPATCHER_HXX
-

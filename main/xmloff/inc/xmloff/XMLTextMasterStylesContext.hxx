@@ -55,4 +55,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XMLTEXTMASTERSTYLECONTEXT_HXX
-

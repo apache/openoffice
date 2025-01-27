@@ -257,4 +257,3 @@ public:
 } //namespace svx
 
 #endif
-

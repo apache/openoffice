@@ -40,4 +40,3 @@ namespace dbp
 }	// namespace dbp
 //.........................................................................
 #endif // _EXTENSIONS_DBP_DBPTYPES_HXX_
-

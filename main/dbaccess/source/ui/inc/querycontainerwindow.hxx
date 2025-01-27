@@ -129,4 +129,3 @@ namespace dbaui
 //.........................................................................
 
 #endif // DBAUI_QUERYCONTAINERWINDOW_HXX
-

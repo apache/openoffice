@@ -59,4 +59,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_ADO_INDEXES_HXX_
-

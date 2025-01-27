@@ -534,4 +534,3 @@ inline ::com::sun::star::uno::Any SAL_CALL queryInterface(
 }
 
 #endif
-

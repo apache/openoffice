@@ -159,4 +159,3 @@ private:
 
 
 #endif // _TOOLKIT_AWT_VCLXACCESSIBLECOMPONENT_HXX_
-

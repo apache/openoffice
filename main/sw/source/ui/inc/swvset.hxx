@@ -34,4 +34,3 @@ class SwRulerValueSet : public SvxBmpNumValueSet
 	virtual void	UserDraw( const UserDrawEvent& rUDEvt );
 };
 #endif
-

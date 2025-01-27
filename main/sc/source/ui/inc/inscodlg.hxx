@@ -114,5 +114,3 @@ private:
 
 
 #endif // SC_INSCODLG_HXX
-
-

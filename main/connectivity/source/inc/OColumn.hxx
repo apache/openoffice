@@ -139,4 +139,3 @@ namespace connectivity
 }
 
 #endif //_CONNECTIVITY_COLUMN_HXX_
-

@@ -120,4 +120,3 @@ public:
 };
 
 #endif // _XMLOFF_XMLMETAE_HXX
-

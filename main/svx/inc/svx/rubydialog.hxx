@@ -196,5 +196,3 @@ public:
 };
 
 #endif // _SVX_RUBYDLG_HXX_
-
-

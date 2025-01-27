@@ -68,4 +68,3 @@ public:
 #define SFX_RESMANAGER() SFX_APP()->GetResourceManager()
 
 #endif
-

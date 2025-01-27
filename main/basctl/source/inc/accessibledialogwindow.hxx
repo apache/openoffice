@@ -168,4 +168,3 @@ public:
 
 
 #endif // _BASCTL_ACCESSIBLEDIALOGWINDOW_HXX_
-

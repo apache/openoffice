@@ -47,4 +47,3 @@ public:
 };
 
 #endif //SC_VBAPALETTE_HXX
-

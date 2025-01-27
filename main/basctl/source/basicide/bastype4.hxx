@@ -59,5 +59,3 @@ public:
 };
 
 #endif  //_BASTYPE4_HXX
-
-

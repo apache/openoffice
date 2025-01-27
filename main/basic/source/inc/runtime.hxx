@@ -527,4 +527,3 @@ void implStepRenameOSL( const String& aSource, const String& aDest );
 bool IsBaseIndexOne();
 
 #endif
-

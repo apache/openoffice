@@ -105,6 +105,3 @@ private:
 };
 
 #endif // SC_TABOPDLG_HXX
-
-
-

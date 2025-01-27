@@ -689,4 +689,3 @@ namespace svt
 
 #undef SVTOOLS_IN_EDITBROWSEBOX_HXX
 #endif // _SVTOOLS_EDITBROWSEBOX_HXX_
-

@@ -67,5 +67,3 @@ class TokNameSeparator : public Token
 }   // namespace csi
 
 #endif
-
-

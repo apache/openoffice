@@ -347,4 +347,3 @@ public:
     void            ResetPage();
     void            SavePage();
 };
-

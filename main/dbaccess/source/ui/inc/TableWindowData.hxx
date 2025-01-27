@@ -99,4 +99,3 @@ namespace dbaui
     typedef ::std::vector< ::boost::shared_ptr<OTableWindowData> >		TTableWindowData;
 }
 #endif // DBAUI_TABLEWINDOWDATA_HXX
-

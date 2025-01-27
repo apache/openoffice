@@ -94,4 +94,3 @@ private:
 } // namespace svx
 
 #endif
-

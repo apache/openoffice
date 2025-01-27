@@ -88,4 +88,3 @@ namespace dbaccess
 	};
 }
 #endif // _DBA_COREAPI_CALLABLESTATEMENT_HXX_
-

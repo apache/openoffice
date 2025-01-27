@@ -38,4 +38,3 @@ public:
 };
 
 #endif // _IDLC_ASTTYPE_HXX_
-

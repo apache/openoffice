@@ -115,4 +115,3 @@ public:
 };
 
 #endif	//  _XMLOFF_PERSATTRLISTTCONTEXT_HXX
-

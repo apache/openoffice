@@ -121,4 +121,3 @@ private:
 } } // end of namespace ::sd::notes
 
 #endif
-

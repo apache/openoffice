@@ -40,5 +40,3 @@ public:
 		m_nTargetStateVariable = -1;
 	}
 };
-
-

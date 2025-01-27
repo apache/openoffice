@@ -223,6 +223,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEEDITORCONTROL_HXX
-
-
-

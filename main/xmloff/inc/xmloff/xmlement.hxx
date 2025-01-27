@@ -53,4 +53,3 @@ struct SvXMLEnumStringMapEntry
 };
 
 #endif	//  _XMLOFF_XMLEMENT_HXX
-

@@ -37,4 +37,3 @@ SbxVariable* MakeVariable( StarBASIC *pBas, SbxObject *pObject,
 
 
 #endif
-

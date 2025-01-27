@@ -178,4 +178,3 @@ namespace bib
 //.........................................................................
 
 #endif // EXTENSIONS_BIB_LOADLISTENERADAPTER_HXX
-

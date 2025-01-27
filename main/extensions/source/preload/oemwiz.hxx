@@ -149,4 +149,3 @@ namespace preload
 //.........................................................................
 
 #endif // _EXTENSIONS_PRELOAD_OEMWIZ_HXX_
-

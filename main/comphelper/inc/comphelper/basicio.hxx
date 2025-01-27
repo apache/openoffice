@@ -99,4 +99,3 @@ const staruno::Reference<stario::XObjectOutputStream>& operator << (const starun
 //.........................................................................
 
 #endif // _COMPHELPER_BASIC_IO_HXX_
-

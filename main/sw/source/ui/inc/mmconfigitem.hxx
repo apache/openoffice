@@ -272,4 +272,3 @@ public:
     ::rtl::OUString     GetAssignedColumn(sal_uInt32 nColumn)const;
 };
 #endif
-

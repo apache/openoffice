@@ -134,4 +134,3 @@ enum NavigatorDragType
 #define NAVIGATOR_DRAGTYPE_COUNT 4
 
 #endif	// _PRESENTATION_HXX
-

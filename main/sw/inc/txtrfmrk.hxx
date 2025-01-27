@@ -53,4 +53,3 @@ inline const SwTxtNode& SwTxtRefMark::GetTxtNode() const
 }
 
 #endif
-

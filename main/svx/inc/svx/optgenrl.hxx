@@ -42,5 +42,3 @@
 #define EMAIL_EDIT		((sal_uInt16)15)
 
 #endif // #ifndef _SVX_OPTGENRL_HXX
-
-

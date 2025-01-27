@@ -26,5 +26,3 @@
 #include <vcl/dialog.hxx>
 #include <vcl/msgbox.hxx>
 #include <vcl/svapp.hxx>
-
-

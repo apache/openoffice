@@ -99,4 +99,3 @@ class ParseEnvState : public   	TokenInterpreter,
 }   // namespace csi
 
 #endif
-

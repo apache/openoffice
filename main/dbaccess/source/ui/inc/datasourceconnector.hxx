@@ -95,4 +95,3 @@ namespace dbaui
 //.........................................................................
 
 #endif // _DBAUI_DATASOURCECONNECTOR_HXX_
-

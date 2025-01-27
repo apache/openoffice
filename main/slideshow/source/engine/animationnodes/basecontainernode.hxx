@@ -98,4 +98,3 @@ typedef ::boost::shared_ptr< BaseContainerNode > BaseContainerNodeSharedPtr;
 } // namespace presentation
 
 #endif /* INCLUDED_SLIDESHOW_BASECONTAINERNODE_HXX */
-

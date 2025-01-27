@@ -219,4 +219,3 @@ SAL_CALL query (IStoreHandle *pHandle, OStorePageManager*)
 } // namespace store
 
 #endif /* !_STORE_STORPAGE_HXX_ */
-

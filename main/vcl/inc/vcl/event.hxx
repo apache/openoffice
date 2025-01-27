@@ -472,4 +472,3 @@ inline const AllSettings* DataChangedEvent::GetOldSettings() const
 }
 
 #endif // _SV_EVENT_HXX
-

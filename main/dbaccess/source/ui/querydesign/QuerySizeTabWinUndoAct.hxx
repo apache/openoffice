@@ -80,5 +80,3 @@ namespace dbaui
 }
 
 #endif //DBAUI_QUERYSIZETABWINUNDOACT_HXX
-
-

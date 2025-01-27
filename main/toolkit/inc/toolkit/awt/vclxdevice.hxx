@@ -130,4 +130,3 @@ public:
 
 
 #endif // _TOOLKIT_AWT_VCLXDEVICE_HXX_
-

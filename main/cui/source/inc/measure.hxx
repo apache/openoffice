@@ -120,4 +120,3 @@ public:
 
 
 #endif // _SVX_MEASURE_HXX
-

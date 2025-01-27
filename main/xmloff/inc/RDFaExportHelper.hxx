@@ -71,4 +71,3 @@ public:
 } // namespace xmloff
 
 #endif // RDFAEXPORTHELPER_HXX
-

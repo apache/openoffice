@@ -53,4 +53,3 @@ public:
 }
 
 #endif		// _SVX_EXTRUSIONDEPTHDIALOG_HXX
-

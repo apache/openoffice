@@ -1077,4 +1077,3 @@ inline sal_uInt32 SfxMultiRecordReader::ContentCount() const
 }
 
 #endif
-

@@ -98,4 +98,3 @@ namespace reportdesign
 	};
 }
 #endif // REPORTDESIGN_API_FUNCTIONS_HXX
-

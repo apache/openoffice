@@ -49,4 +49,3 @@ public:
 
 
 #endif // _TOOLKIT_HELPER_EMPTYFONTDESCRIPTOR_HXX_
-

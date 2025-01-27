@@ -59,4 +59,3 @@ const sal_uInt16 OBJ_FM_SPINBUTTON      =   ::com::sun::star::form::FormComponen
 const sal_uInt16 OBJ_FM_NAVIGATIONBAR   =   ::com::sun::star::form::FormComponentType::PATTERNFIELD + 4;
 
 #endif      // _FM_FMGLOB_HXX
-

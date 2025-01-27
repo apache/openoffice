@@ -61,4 +61,3 @@ createEventAttacherManager(
 }
 
 #endif // _COMPHELPER_EVENTATTACHERMGR_HXX_
-

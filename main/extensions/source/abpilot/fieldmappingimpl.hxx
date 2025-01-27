@@ -119,4 +119,3 @@ namespace abp
 //.........................................................................
 
 #endif // EXTENSIONS_ABP_FIELDMAPPINGIMPL_HXX
-

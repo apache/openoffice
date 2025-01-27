@@ -287,4 +287,3 @@ sal_Bool	MultiPropertySetHandler::SingleGet	(const ::com::sun::star::uno::Sequen
 
 
 #endif
-

@@ -195,4 +195,3 @@ public:
 };
 
 #endif // _SVP_PSPGRAPHICS_HXX
-

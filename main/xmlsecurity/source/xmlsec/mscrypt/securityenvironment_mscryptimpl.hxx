@@ -197,4 +197,3 @@ class SecurityEnvironment_MSCryptImpl : public ::cppu::WeakImplHelper4<
 } ;
 
 #endif	// _XSECURITYENVIRONMENT_MSCRYPTIMPL_HXX_
-

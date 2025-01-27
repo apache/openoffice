@@ -301,4 +301,3 @@ namespace comphelper
 //........................................................................
 
 #endif // COMPHELPER_INC_COMPHELPER_LISTENERNOTIFICATION_HXX
-

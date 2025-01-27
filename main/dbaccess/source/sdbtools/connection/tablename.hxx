@@ -102,4 +102,3 @@ namespace sdbtools
 //........................................................................
 
 #endif // DBACCESS_SOURCE_SDBTOOLS_CONNECTION_TABLENAME_HXX
-

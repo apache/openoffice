@@ -140,4 +140,3 @@ inline void ExcScenarioList::SetLast( const sal_uInt16 n )
 
 
 #endif
-

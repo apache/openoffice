@@ -55,4 +55,3 @@ namespace slideshow
 }
 
 #endif /* INCLUDED_SLIDESHOW_SLIDEVIEW_HXX */
-

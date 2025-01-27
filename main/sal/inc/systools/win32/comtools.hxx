@@ -187,4 +187,3 @@ namespace systools
 typedef sal::systools::COMReference<IDataObject> IDataObjectPtr;
 typedef sal::systools::COMReference<IStream> IStreamPtr;
 typedef sal::systools::COMReference<IEnumFORMATETC> IEnumFORMATETCPtr;
-

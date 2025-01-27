@@ -84,4 +84,3 @@ public:
 };
 
 #endif //  _SVX_XMLCNITM_HXX
-

@@ -203,5 +203,3 @@ public:
 
 #endif // _REDUCED_IMAPDLG_HXX_
 #endif // _IMAPDLG_HXX_
-
-

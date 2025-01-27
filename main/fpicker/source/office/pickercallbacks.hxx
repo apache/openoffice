@@ -55,4 +55,3 @@ namespace svt
 //.........................................................................
 
 #endif // SVTOOLS_PICKER_CALLBACKS_HXX
-

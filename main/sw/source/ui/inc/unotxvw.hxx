@@ -266,5 +266,3 @@ public:
 	virtual SwDoc* 				GetDoc();
 };
 #endif
-
-

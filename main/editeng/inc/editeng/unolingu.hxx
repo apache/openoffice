@@ -227,6 +227,3 @@ EDITENG_DLLPUBLIC short	SvxDicError( Window *pParent, sal_Int16 nError );
 
 
 #endif
-
-
-

@@ -71,5 +71,3 @@ namespace svxform
 //........................................................................
 
 #endif // SVX_SQLPARSERCLIENT_HXX
-
-

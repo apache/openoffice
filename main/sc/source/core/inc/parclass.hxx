@@ -173,4 +173,3 @@ private:
 };
 
 #endif // SC_PARCLASS_HXX
-

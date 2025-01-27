@@ -99,4 +99,3 @@ public:
 
 } // formula
 #endif // FORMULA_FUNCUTL_HXX
-

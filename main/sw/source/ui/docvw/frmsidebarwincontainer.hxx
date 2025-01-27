@@ -63,4 +63,3 @@ class SwFrmSidebarWinContainer
 } } // eof of namespace sw::sidebarwindows::
 
 #endif
-

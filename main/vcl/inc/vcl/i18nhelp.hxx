@@ -90,4 +90,3 @@ public:
 }	// namespace vcl
 
 #endif  // _VCL_I18NHELP_HXX
-

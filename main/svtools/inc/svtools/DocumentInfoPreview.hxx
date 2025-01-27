@@ -54,4 +54,3 @@ namespace svtools
 }
 
 #endif // SVTOOLS_DOCUMENTINFOPREVIEW_HXX
-

@@ -150,6 +150,3 @@ WordTransTree::CalculateBranch(u_char i_cInputChar) const
 
 
 #endif
-
-
-

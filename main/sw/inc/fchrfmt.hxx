@@ -77,4 +77,3 @@ public:
 	SwCharFmt* GetCharFmt() const { return (SwCharFmt*)GetRegisteredIn(); }
 };
 #endif
-

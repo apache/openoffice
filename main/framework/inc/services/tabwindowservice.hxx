@@ -225,4 +225,3 @@ class TabWindowService :  public css::lang::XTypeProvider
 }		//	namespace framework
 
 #endif  //  #ifndef __FRAMEWORK_SERVICES_TABWINDOWSERVICE_HXX_
-

@@ -121,5 +121,3 @@ public:
 };
 
 #endif
-
-

@@ -45,4 +45,3 @@ enum PublishingScript
 };
 
 #endif  // _SD_RESLTN_HXX
-

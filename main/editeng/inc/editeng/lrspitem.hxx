@@ -172,4 +172,3 @@ inline void SvxLRSpaceItem::SetTxtLeft( const long nL, const sal_uInt16 nProp )
 }
 
 #endif
-

@@ -189,4 +189,3 @@ namespace connectivity
 
 }
 #endif // _CONNECTIVITY_FILE_ADATABASEMETADATARESULTSET_HXX_
-

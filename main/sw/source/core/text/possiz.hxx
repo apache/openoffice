@@ -77,4 +77,3 @@ inline SwPosSize &SwPosSize::operator=( const Size &rSize )
 
 
 #endif
-

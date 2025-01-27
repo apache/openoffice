@@ -369,4 +369,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_FILE_FNUMERICFUNCTIONS_HXX_
-

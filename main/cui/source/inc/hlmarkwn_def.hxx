@@ -29,4 +29,3 @@
 #define LERR_DOCNOTOPEN		2
 
 #endif
-

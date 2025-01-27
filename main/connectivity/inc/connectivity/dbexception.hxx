@@ -369,5 +369,3 @@ OOO_DLLPUBLIC_DBTOOLS void throwSQLException(
 //.........................................................................
 
 #endif // _DBHELPER_DBEXCEPTION_HXX_
-
-

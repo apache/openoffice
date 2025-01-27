@@ -121,4 +121,3 @@ namespace connectivity
 	}
 }
 #endif // CONNECTIVITY_MYSQL_TABLE_HXX
-

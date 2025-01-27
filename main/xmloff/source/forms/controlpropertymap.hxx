@@ -60,5 +60,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_CONTROLPROPERTYMAP_HXX_
-
-

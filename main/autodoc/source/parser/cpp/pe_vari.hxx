@@ -123,4 +123,3 @@ PE_Variable::Result_InitExpression() const
 
 
 #endif
-

@@ -42,4 +42,3 @@ struct SwDBData
 };
 
 #endif
-

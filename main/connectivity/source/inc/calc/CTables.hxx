@@ -45,4 +45,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_CALC_TABLES_HXX_
-

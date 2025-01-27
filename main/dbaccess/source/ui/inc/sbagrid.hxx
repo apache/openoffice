@@ -356,4 +356,3 @@ namespace dbaui
 	};
 }
 #endif // _SBA_GRID_HXX
-

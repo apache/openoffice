@@ -84,4 +84,3 @@ SAL_CALL PDFInteractionHandler_createInstance( const Reference< XMultiServiceFac
 	throw ( Exception );
 
 #endif // PDFINTERACT_HXX
-

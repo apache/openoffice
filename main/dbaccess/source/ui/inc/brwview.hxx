@@ -118,4 +118,3 @@ namespace dbaui
 	};
 }
 #endif // _SBX_BRWVIEW_HXX
-

@@ -47,4 +47,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_JAVA_LANG_THROWABLE_HXX_
-

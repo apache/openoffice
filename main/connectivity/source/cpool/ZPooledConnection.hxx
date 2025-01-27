@@ -61,4 +61,3 @@ namespace connectivity
 
 }
 #endif // CONNECTIVITY_POOLEDCONNECTION_HXX
-

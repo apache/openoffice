@@ -897,4 +897,3 @@ inline sal_Bool SwTxtFormatInfo::IsSoftHyph( const xub_StrLen nPos ) const
 
 
 #endif
-

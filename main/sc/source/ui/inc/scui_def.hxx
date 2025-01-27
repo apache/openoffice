@@ -50,4 +50,3 @@
 #define BTN_CURRENT_SELECTION  151
 #define SCRET_REMOVE	0x42 //from subtdlg.hxx
 #endif
-

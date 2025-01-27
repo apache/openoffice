@@ -198,4 +198,3 @@ class HelpAgentDispatcher : public  css::lang::XTypeProvider
 //........................................................................
 
 #endif // _FRAMEWORK_DISPATCH_HELPAGENTDISPATCHER_HXX_
-

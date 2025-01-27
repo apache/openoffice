@@ -313,4 +313,3 @@ public:
 
 
 #endif // SC_RANGEUTL_HXX
-

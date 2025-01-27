@@ -119,4 +119,3 @@ public:
 };
 
 #endif // #ifndef	_SVX_SVXFONT_HXX
-

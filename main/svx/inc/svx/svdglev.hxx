@@ -112,4 +112,3 @@ public:
 };
 
 #endif //_SVDGLEV_HXX
-

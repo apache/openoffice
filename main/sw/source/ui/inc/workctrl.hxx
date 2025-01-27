@@ -216,6 +216,3 @@ public:
     virtual Window*         CreateItemWindow( Window *pParent );
 };
 #endif
-
-
-

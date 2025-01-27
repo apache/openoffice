@@ -63,4 +63,3 @@ const sal_Int32 n_ConstDigestDecrypt = 1056; // 1024 + 32
 
 
 #endif
-

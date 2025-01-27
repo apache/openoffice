@@ -60,5 +60,3 @@ extern const String
     C_sCePrefix_Enum;
 
 #endif
-
-

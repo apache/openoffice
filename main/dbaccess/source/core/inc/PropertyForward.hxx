@@ -89,4 +89,3 @@ namespace dbaccess
 }	// namespace dbaccess
 //........................................................................
 #endif // DBA_PROPERTYSETFORWARD_HXX
-

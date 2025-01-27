@@ -209,4 +209,3 @@ private:
 #endif
 
 #endif                                 // _SDMOD_HXX
-

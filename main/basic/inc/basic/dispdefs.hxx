@@ -31,4 +31,3 @@
 #define DH_MODE_SEND_DATA	0x0010		// Send data to Testtool
 
 #endif
-

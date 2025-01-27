@@ -186,4 +186,3 @@ UnoTunnelId UnoTunnelHelper<Classname>::s_aTunnelId;
 } // namespace utl
 
 #endif // _UNOTOOLS_UNOTUNNELHLP_HXX
-

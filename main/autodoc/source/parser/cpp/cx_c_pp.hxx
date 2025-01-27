@@ -88,4 +88,3 @@ class Context_PP_Definition : public Cx_Base
 }   // namespace cpp
 
 #endif
-

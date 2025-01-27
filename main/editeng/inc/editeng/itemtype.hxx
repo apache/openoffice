@@ -67,4 +67,3 @@ inline long Scale( long nVal, long nMult, long nDiv )
 }
 
 #endif
-

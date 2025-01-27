@@ -459,5 +459,3 @@ namespace connectivity
 }
 
 #endif // #ifndef _CONNECTIVITY_FILE_VALUE_HXX_
-
-

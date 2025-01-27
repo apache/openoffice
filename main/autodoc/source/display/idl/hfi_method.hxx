@@ -96,5 +96,3 @@ class HF_IdlMethod : public HtmlFactory_Idl
 
 
 #endif
-
-

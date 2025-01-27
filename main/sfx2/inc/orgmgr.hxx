@@ -98,5 +98,3 @@ public:
 };
 
 #endif // #ifndef _SFX_ORGMGR_HXX
-
-

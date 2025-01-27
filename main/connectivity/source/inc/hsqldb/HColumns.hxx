@@ -63,4 +63,3 @@ namespace connectivity
 	}
 }
 #endif // CONNECTIVITY_HSQLDB_COLUMN_HXX
-

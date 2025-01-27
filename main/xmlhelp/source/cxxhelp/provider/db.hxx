@@ -128,4 +128,3 @@ namespace helpdatafileproxy {
 }
 
 #endif
-

@@ -85,4 +85,3 @@ private:
 };
 
 #endif // _SVTOOLS_TEMPLDLG_HXX
-

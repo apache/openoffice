@@ -104,4 +104,3 @@ class HtmlDisplay_Idl : public autodoc::HtmlDisplay_Idl_Ifc
 
 
 #endif
-

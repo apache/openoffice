@@ -248,6 +248,3 @@ namespace dbaui
 
 }
 #endif // DBAUI_TOKENWRITER_HXX
-
-
-

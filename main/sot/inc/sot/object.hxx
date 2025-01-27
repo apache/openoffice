@@ -431,4 +431,3 @@ SV_DECL_REF_LIST(SotObject,SotObject*)
 SV_IMPL_REF_LIST(SotObject,SotObject*)
 
 #endif // _IFACE_HXX
-

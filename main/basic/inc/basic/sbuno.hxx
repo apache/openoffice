@@ -41,4 +41,3 @@ BASIC_DLLPUBLIC ::com::sun::star::uno::Any sbxToUnoValue( SbxVariable* pVar );
 BASIC_DLLPUBLIC void unoToSbxValue( SbxVariable* pVar, const ::com::sun::star::uno::Any& aValue );
 
 #endif
-

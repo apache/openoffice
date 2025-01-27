@@ -363,4 +363,3 @@ public:
 
 
 #endif // _SD_OUTLINER_ITERATOR_HXX
-

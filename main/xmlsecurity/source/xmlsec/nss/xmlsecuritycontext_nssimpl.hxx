@@ -132,4 +132,3 @@ class XMLSecurityContext_NssImpl : public ::cppu::WeakImplHelper3<
 } ;
 
 #endif	// _XMLSIGNATURECONTEXT_NSSIMPL_HXX_
-

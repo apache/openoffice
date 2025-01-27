@@ -139,4 +139,3 @@ namespace dbp
 
 
 #endif // _EXTENSIONS_DBP_COMMONPAGESDBP_HXX_
-

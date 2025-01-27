@@ -190,4 +190,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_ODATABASEMETADATA_HXX_
-

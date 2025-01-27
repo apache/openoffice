@@ -84,5 +84,3 @@ namespace offapp
 //........................................................................
 
 #endif // _OFFAPP_CONNPOOLOPTIONS_HXX_
-
-

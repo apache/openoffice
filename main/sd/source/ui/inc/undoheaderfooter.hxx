@@ -50,4 +50,3 @@ public:
 };
 
 #endif		// _SD_UNDOHEADERFOOTER_HXX
-

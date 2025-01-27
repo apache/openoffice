@@ -84,4 +84,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_SOURCE_RICHTEXT_RICHTEXTENGINE_HXX
-

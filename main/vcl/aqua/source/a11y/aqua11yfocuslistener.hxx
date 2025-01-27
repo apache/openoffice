@@ -54,4 +54,3 @@ public:
 };
 
 #endif // _AQUA11YFOCUSLISTENER_HXX_
-

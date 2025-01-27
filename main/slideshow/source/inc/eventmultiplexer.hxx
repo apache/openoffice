@@ -654,4 +654,3 @@ private:
 } // namespace Presentation
 
 #endif /* INCLUDED_SLIDESHOW_EVENTMULTIPLEXER_HXX */
-

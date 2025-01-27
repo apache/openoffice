@@ -96,6 +96,3 @@ namespace dbaui
 }
 
 #endif // DBAUI_DLGSAVE_HXX
-
-
-

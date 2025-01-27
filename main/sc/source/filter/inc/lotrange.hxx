@@ -158,6 +158,3 @@ inline void LotusRangeList::SetEing( const SCCOL nCol, const SCROW nRow )
 }
 
 #endif
-
-
-

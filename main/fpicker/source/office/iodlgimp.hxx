@@ -331,5 +331,3 @@ inline	void SvtExpFileDlg_Impl::SetCurFilter( SvtFileDialogFilter_Impl* pFilter 
 }
 
 #endif // #ifndef _IODLGIMP_HXX
-
-

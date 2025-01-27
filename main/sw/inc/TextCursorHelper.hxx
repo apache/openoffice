@@ -46,5 +46,3 @@ public:
 };
 
 #endif // _SW_TEXTCURSORHELPER_HXX
-
-

@@ -133,6 +133,3 @@ namespace dbaui
     typedef OWizTypeSelect* (*TypeSelectionPageFactory)( Window*, SvStream& );
 }
 #endif // DBAUI_WIZ_TYPESELECT_HXX
-
-
-

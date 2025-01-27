@@ -141,4 +141,3 @@ namespace basic
 //........................................................................
 
 #endif // BASICMANAGERREPOSITORY_HXX
-

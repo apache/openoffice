@@ -173,4 +173,3 @@ public:
 #define SM_MOD() ( *(SmModule**) GetAppData(SHL_SM) )
 
 #endif                                 // _SDMOD_HXX
-

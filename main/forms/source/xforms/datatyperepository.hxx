@@ -91,4 +91,3 @@ namespace xforms
 //........................................................................
 
 #endif // OFFAPI_COM_SUN_STAR_XFORMS_DATATYPEREPOSITORY_HXX
-

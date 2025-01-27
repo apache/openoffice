@@ -51,4 +51,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADABAS_INDEX_HXX_
-

@@ -58,5 +58,3 @@ namespace svxform
 //........................................................................
 
 #endif // SVX_DBCHARSETCLIENT_HXX
-
-

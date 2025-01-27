@@ -190,6 +190,3 @@ namespace dbaui
 	}
 }
 #endif // DBAUI_FIELDCONTROLS_HXX
-
-
-

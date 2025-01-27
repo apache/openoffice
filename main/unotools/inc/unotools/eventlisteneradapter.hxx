@@ -64,4 +64,3 @@ namespace utl
 //.........................................................................
 
 #endif // _UNOTOOLS_EVENTLISTENERADAPTER_HXX_
-

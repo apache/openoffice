@@ -46,4 +46,3 @@ private:
 };
 
 #endif // _IDLC_ASTINTERFACEMEMBER_HXX_
-

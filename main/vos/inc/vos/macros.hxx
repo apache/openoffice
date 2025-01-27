@@ -149,4 +149,3 @@
 #define NAMESPACE_STD(class_name) std::class_name
 
 #endif //_VOS_MACROS_HXX_
-

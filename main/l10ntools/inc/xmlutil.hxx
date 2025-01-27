@@ -27,4 +27,3 @@
 #define GERMAN_DE_ISO			"x-german"
 #define GERMAN_DE_INDEX				3
 #define GERMAN_ISO2                     "de-DE"
-

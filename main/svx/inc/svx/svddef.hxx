@@ -306,4 +306,3 @@
 #define SDRATTR_END								SDRATTR_TABLE_LAST		/* 1357 */ /* 1333 V4+++*/ /* 1243 V4+++*/	/*1213*/ /*1085*/ /*1040*/ /*Pool V2: 1123,V1: 1065 */
 
 #endif // _SVDDEF_HXX
-

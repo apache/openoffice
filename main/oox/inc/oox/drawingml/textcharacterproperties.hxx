@@ -82,4 +82,3 @@ struct TextCharacterProperties
 } // namespace oox
 
 #endif
-

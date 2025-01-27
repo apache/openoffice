@@ -44,4 +44,3 @@ public:
 
 
 #endif          // _FM_FMOBJFAC_HXX
-

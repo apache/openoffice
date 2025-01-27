@@ -58,4 +58,3 @@ public:
 } /* namespace gvfs */
 
 #endif /* _PROVIDER_HXX_ */
-

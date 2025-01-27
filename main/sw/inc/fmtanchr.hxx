@@ -85,4 +85,3 @@ inline const SwFmtAnchor &SwAttrSet::GetAnchor(sal_Bool bInP) const
  	{ return aSet.GetAnchor(bInP); }
 
 #endif
-

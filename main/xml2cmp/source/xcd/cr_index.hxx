@@ -84,5 +84,3 @@ class Index
 
 
 #endif
-
-

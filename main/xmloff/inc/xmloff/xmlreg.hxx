@@ -36,4 +36,3 @@
 sal_Bool XMLRegisterServices( ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > ); /// [all] ServiceProvider to register in.
 
 #endif	//  _XMLOFF_XMLREG_HXX
-

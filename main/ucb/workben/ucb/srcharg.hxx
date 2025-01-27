@@ -34,4 +34,3 @@ bool parseSearchArgument(String const & rInput,
 						 com::sun::star::ucb::SearchInfo & rInfo);
 
 #endif // UCBDEMO_SRCHARG_HXX
-

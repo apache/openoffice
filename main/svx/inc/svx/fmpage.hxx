@@ -80,4 +80,3 @@ public:
 };
 
 #endif          // _SVX_FMPAGE_HXX
-

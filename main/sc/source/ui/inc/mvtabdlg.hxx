@@ -71,5 +71,3 @@ private:
 #include <layout/layout-post.hxx>
 
 #endif // SC_MVTABDLG_HXX
-
-

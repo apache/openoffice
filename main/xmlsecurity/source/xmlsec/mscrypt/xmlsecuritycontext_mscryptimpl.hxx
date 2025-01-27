@@ -130,4 +130,3 @@ class XMLSecurityContext_MSCryptImpl : public ::cppu::WeakImplHelper3<
 } ;
 
 #endif	// _XMLSIGNATURECONTEXT_MSCRYPTIMPL_HXX_
-

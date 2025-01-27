@@ -31,4 +31,3 @@
 TOOLS_DLLPUBLIC sal_Bool GetIsoFallback( ByteString& rLanguage );
 
 #endif //_ISOFALLBACK_HXX
-

@@ -1438,4 +1438,3 @@ INetContentTypeParameterList::GetObject(sal_uIntPtr nIndex) const
 }
 
 #endif // TOOLS_INETMIME_HXX
-

@@ -53,4 +53,3 @@ class ParseToolsFactory : public autodoc::ParseToolsFactory_Ifc
 
 
 #endif
-

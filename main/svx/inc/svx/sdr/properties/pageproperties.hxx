@@ -75,5 +75,3 @@ namespace sdr
 #endif //_SDR_PROPERTIES_PAGEPROPERTIES_HXX
 
 // eof
-
-

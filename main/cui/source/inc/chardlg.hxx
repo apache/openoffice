@@ -389,4 +389,3 @@ public:
 };
 
 #endif // #ifndef _SVX_CHARDLG_HXX
-

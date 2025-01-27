@@ -73,4 +73,3 @@ public:
 
 
 #endif // _TOOLKIT_AWT_VCLXCONTAINER_HXX_
-

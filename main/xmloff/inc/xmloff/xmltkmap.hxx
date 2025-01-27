@@ -60,4 +60,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XMLTKMAP_HXX
-

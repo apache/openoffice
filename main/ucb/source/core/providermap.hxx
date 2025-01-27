@@ -70,4 +70,3 @@ typedef std::list< ProviderListEntry_Impl > ProviderList_Impl;
 typedef ucb_impl::RegexpMap< ProviderList_Impl > ProviderMap_Impl;
 
 #endif // _UCB_PROVIDERMAP_HXX_
-

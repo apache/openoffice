@@ -31,4 +31,3 @@ sal_Bool ConvertGraphicToMSG(const Graphic & rGraphic, SvStream & rTargetStream,
 
 
 #endif // _MSGWR_HXX
-

@@ -65,4 +65,3 @@ inline const SwFmtFillOrder &SwFmt::GetFillOrder(sal_Bool bInP) const
 	{ return aSet.GetFillOrder(bInP); }
 
 #endif
-

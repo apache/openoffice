@@ -231,4 +231,3 @@ namespace sfx2
 }	// end of namespace sfx2
 
 #endif // _SFX_FILEDLGIMPL_HXX
-

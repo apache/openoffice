@@ -109,4 +109,3 @@ public:
 }
 
 #endif // _VOS_CONNECTN_HXX_
-

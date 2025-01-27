@@ -51,4 +51,3 @@ namespace connectivity
 }
 
 #endif // CONNECTIVITY_TRESULTSETHELPER_HXX
-

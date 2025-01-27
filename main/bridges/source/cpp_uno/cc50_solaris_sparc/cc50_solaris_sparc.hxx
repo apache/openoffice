@@ -80,4 +80,3 @@ void cc50_solaris_sparc_fillUnoException(
     uno_Any*, uno_Mapping * pCpp2Uno );
 
 }
-

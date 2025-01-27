@@ -39,4 +39,3 @@ class IActionListener : public rtl::IReference
 };
 
 #endif //INCLUDED_ACTION_LISTENER_HXX
-

@@ -85,4 +85,3 @@ public:
 
 
 #endif // _COMPHELPER_STREAM_OSLFILEWRAPPER_HXX_
-

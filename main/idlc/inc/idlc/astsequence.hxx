@@ -52,4 +52,3 @@ private:
 };
 
 #endif // _IDLC_ASTSEQUENCE_HXX_
-

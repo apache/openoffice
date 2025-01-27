@@ -174,4 +174,3 @@ namespace utl
 //----------------------------------------------------------------------------
 
 #endif // UNOTOOLS_CONFIGPATHES_HXX_INCLUDED
-

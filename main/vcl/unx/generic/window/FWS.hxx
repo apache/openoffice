@@ -57,4 +57,3 @@ AddFwsProtocols (Display *display, Window window);
 #endif
 
 #endif // _FOREIGN_WINDOW_SYSTEM_HXX
-

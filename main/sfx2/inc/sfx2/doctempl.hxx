@@ -140,5 +140,3 @@ public:
 };
 
 #endif // #ifndef _SFXDOCTEMPL_HXX
-
-

@@ -107,4 +107,3 @@ bool getPassword( const com::sun::star::uno::Reference< com::sun::star::task::XI
 }
 
 #endif
-

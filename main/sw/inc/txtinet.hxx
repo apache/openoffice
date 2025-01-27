@@ -75,4 +75,3 @@ inline const SwTxtNode& SwTxtINetFmt::GetTxtNode() const
 }
 
 #endif
-

@@ -71,4 +71,3 @@ sal_Bool ReadIdl( SvIdlWorkingBase * pDataBase, const SvCommand & rCommand );
 void DeInit();
 
 #endif // _COMMAND_HXX
-

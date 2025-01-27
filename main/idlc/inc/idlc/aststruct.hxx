@@ -62,4 +62,3 @@ private:
 };
 
 #endif // _IDLC_ASTSTRUCT_HXX_
-

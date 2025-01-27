@@ -125,4 +125,3 @@ S_RecoveryGuard::IsWithinRecovery() const
 
 
 #endif
-

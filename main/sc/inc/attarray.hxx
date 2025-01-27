@@ -243,5 +243,3 @@ inline const ScPatternAttr*	ScAttrIterator::Next( SCROW& rTop, SCROW& rBottom )
 
 
 #endif
-
-

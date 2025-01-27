@@ -134,4 +134,3 @@ namespace accessibility
 //.........................................................................
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBLETABBARPAGELIST_HXX_
-

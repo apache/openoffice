@@ -391,4 +391,3 @@ public:
 };
 
 #endif
-

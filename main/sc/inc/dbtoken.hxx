@@ -47,4 +47,3 @@ formula::StackVar DbgInterpret( ScDocument* pDok, const ScTokenArray* pToken,
 								  ScMatrix** ppMat);
 
 #endif
-

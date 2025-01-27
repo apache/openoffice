@@ -234,4 +234,3 @@ namespace dbaccess
 	};
 }
 #endif // DBACCESS_CORE_API_KEYSET_HXX
-

@@ -132,5 +132,3 @@ class TkpDocuContext : public TkpContext
 } // namespace autodoc
 
 #endif
-
-

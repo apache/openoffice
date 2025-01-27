@@ -311,4 +311,3 @@ namespace dbaccess
 	};
 }
 #endif // _DBACORE_DEFINITIONCOLUMN_HXX_
-

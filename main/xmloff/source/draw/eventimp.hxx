@@ -50,4 +50,3 @@ public:
 };
 
 #endif	//  _XMLOFF_EVENTIMP_HXX
-

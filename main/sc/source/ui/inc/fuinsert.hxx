@@ -78,4 +78,3 @@ class FuInsertMedia : public FuPoor
 };
 
 #endif		// _SD_FUINSERT_HXX
-

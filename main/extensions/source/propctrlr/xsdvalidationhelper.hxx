@@ -143,4 +143,3 @@ namespace pcr
 //........................................................................
 
 #endif // EXTENSIONS_SOURCE_PROPCTRLR_XSDVALIDATIONHELPER_HXX
-

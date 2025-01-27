@@ -93,4 +93,3 @@ protected:
 };
 
 #endif // _SV_FONTSUBSET_HXX
-

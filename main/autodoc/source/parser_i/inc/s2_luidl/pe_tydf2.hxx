@@ -117,4 +117,3 @@ class PE_Typedef : public UnoIDL_PE,
 
 
 #endif
-

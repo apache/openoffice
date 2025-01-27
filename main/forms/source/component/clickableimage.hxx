@@ -288,4 +288,3 @@ namespace frm
 //.........................................................................
 
 #endif // FORMS_SOURCE_CLICKABLEIMAGE_HXX
-

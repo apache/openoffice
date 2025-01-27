@@ -122,4 +122,3 @@ class ConfigurationAccess
 };
 
 #endif	// _CONFIGURATION_ACCESS_HXX_
-

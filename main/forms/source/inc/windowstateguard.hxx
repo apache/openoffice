@@ -76,4 +76,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_WINDOWSTATEGUARD_HXX
-

@@ -177,4 +177,3 @@ MemoryLockBytes_createInstance (
 } // namespace store
 
 #endif /* !_STORE_LOCKBYTE_HXX_ */
-

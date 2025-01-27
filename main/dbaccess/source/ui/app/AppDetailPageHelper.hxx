@@ -396,4 +396,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_APPDETAILPAGEHELPER_HXX
-

@@ -231,4 +231,3 @@ COMPHELPER_DLLPUBLIC sal_Bool tryPropertyValue(staruno::Any& _rConvertedValue, s
 //... namespace comphelper .......................................................
 
 #endif // _COMPHELPER_PROPERTY_HXX_
-

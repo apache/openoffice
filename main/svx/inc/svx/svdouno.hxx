@@ -156,4 +156,3 @@ private:
 
 
 #endif          // _SVDOUNO_HXX
-

@@ -89,4 +89,3 @@ public:
 
 
 #endif // _TOOLKIT_AWT_VCLXREGION_HXX_
-

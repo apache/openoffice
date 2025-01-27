@@ -55,4 +55,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_HSQLDB_USERS_HXX_
-

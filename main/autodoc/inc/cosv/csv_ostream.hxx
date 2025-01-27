@@ -127,4 +127,3 @@ ostream::Data() const
 
 
 #endif
-

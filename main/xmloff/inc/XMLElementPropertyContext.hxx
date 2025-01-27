@@ -61,4 +61,3 @@ public:
 
 
 #endif	//  _XMLOFF_ELEMENTPROPERTYCONTEXT_HXX
-

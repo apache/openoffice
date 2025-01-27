@@ -112,4 +112,3 @@ void raiseException(
 void fillUnoException(
     __cxa_exception * header, uno_Any *, uno_Mapping * pCpp2Uno );
 }
-

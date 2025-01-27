@@ -32,4 +32,3 @@ typedef ::std::vector < ::rtl::OUString> XMLStringVector;
 
 
 #endif	//  _XMLOFF_XMLSTRINGVECTOR_HXX
-

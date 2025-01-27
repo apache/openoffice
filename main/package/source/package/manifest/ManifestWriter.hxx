@@ -67,4 +67,3 @@ public:
 	sal_Bool SAL_CALL static_supportsService(rtl::OUString const & rServiceName);
 };
 #endif
-

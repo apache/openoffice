@@ -64,4 +64,3 @@ inline const SwFmtLineNumber &SwAttrSet::GetLineNumber(sal_Bool bInP) const
 	{ return (const SwFmtLineNumber&)Get( RES_LINENUMBER,bInP); }
 
 #endif
-

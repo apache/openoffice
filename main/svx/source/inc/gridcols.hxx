@@ -55,4 +55,3 @@ sal_Int32 getColumnTypeByModelName(const ::rtl::OUString& aModelName);
 
 
 #endif // _SVX_GRIDCOLS_HXX
-

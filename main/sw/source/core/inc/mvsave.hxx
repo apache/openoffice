@@ -206,4 +206,3 @@ public:
 
 
 #endif  // SW_MVSAVE_HXX
-

@@ -165,4 +165,3 @@ inline ::com::sun::star::uno::Reference<
 
 
 #endif
-

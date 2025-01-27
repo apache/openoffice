@@ -106,4 +106,3 @@ inline void SvxULSpaceItem::SetLower( const sal_uInt16 nL, const sal_uInt16 nPro
 }
 
 #endif
-

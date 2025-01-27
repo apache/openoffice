@@ -59,4 +59,3 @@ class SdrObject;
 #define SVX_SYMBOLTYPE_UNKNOWN  (-100) //unbekannt/nicht initialisiert
 
 #endif // _SVX_TAB_LINE_HXX
-

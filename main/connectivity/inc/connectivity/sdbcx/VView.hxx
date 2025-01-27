@@ -101,4 +101,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_VIEW_HXX_
-

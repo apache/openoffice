@@ -69,4 +69,3 @@ private:
 };
 
 #endif // _IDLC_ASTOPERATION_HXX_
-

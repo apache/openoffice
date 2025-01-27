@@ -766,4 +766,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_ELEMENTIMPORT_HXX_
-

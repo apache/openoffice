@@ -203,4 +203,3 @@ void classname::implCreateMap()	\
 
 
 #endif // _UNOTOOLS_ID_HELPER_HXX_
-

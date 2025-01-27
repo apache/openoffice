@@ -561,5 +561,3 @@ inline void ODatabaseForm::submitNBC(const ::com::sun::star::uno::Reference< ::c
 //.........................................................................
 
 #endif // _FRM_DATABASEFORM_HXX_
-
-

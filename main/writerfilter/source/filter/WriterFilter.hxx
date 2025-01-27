@@ -97,4 +97,3 @@ sal_Bool SAL_CALL WriterFilter_supportsService( const ::rtl::OUString& ServiceNa
                                                                         ::com::sun::star::uno::XComponentContext > &xContext)
     throw( ::com::sun::star::uno::Exception );
 #endif
-

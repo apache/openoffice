@@ -75,4 +75,3 @@ public:
 };
 
 #endif /* !_SVTOOLS_CTYPEITM_HXX */
-

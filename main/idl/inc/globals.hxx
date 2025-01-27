@@ -235,4 +235,3 @@ HASH_INLINE(UnoName)
 
 #endif // IDL_COMPILER
 #endif // _GLOBALS_HXX
-

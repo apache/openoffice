@@ -176,4 +176,3 @@ namespace reportdesign
 } // namespace reportdesign
 // =============================================================================
 #endif // REPORTDESIGN_TOOLS_HXX
-

@@ -45,4 +45,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FLAT_COLUMNS_HXX_
-

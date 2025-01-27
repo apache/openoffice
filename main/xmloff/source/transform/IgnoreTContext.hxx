@@ -82,4 +82,3 @@ public:
 };
 
 #endif	//  _XMLOFF_IGNORETCONTEXT_HXX
-

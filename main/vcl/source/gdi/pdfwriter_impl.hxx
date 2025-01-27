@@ -1332,5 +1332,3 @@ public:
 }
 
 #endif //_VCL_PDFEXPORT_HXX
-
-

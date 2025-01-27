@@ -91,5 +91,3 @@ namespace formula
 //.........................................................................
 
 #endif // FORMULA_MODULE_HELPER_RPT_HXX_
-
-

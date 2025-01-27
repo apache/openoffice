@@ -448,4 +448,3 @@ public:
 
 
 #endif // #ifndef INCLUDED_COMPHELPER_PASSWORDCONTAINER_HXX
-

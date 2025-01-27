@@ -79,5 +79,3 @@ namespace connectivity
 
 }
 #endif //_CONNECTIVITY_FILE_ODRIVER_HXX_
-
-

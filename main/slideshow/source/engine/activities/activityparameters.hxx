@@ -136,4 +136,3 @@ struct ActivityParameters
 } // namespace presentation
 
 #endif /* INCLUDED_SLIDESHOW_ACTIVITYPARAMETERS_HXX */
-

@@ -83,4 +83,3 @@ inline ::com::sun::star::beans::Optional<sal_Bool> makeOptional( bool v )
 } // namespace comphelper
 
 #endif // ! defined(INCLUDED_COMPHELPER_OPTIONAL_HXX)
-

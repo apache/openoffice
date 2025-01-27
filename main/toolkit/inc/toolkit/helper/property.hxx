@@ -248,5 +248,3 @@ sal_Bool							CompareProperties( const ::com::sun::star::uno::Any& r1, const ::
 
 
 #endif // _TOOLKIT_HELPER_PROPERTY_HXX_
-
-

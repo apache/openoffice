@@ -77,4 +77,3 @@ public:
 };
 
 #endif	//  _XMLOFF_DEEPTCONTEXT_HXX
-

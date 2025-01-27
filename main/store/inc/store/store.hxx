@@ -599,7 +599,3 @@ private:
 } // namespace store
 
 #endif /* !_STORE_STORE_HXX_ */
-
-
-
-

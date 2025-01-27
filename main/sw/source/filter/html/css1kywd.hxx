@@ -283,5 +283,3 @@ extern sal_Char __FAR_DATA CSS1_CONSTASCII_DECL( sCSS1_PV_rtl, "rtl" );
 extern sal_Char __FAR_DATA CSS1_CONSTASCII_DECL( sCSS1_PV_inherit, "inherit" );
 
 #endif
-
-

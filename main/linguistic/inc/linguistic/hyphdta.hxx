@@ -144,4 +144,3 @@ public:
 } // namespace linguistic
 
 #endif
-

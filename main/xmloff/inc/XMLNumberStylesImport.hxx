@@ -72,4 +72,3 @@ public:
 };
 
 #endif	//  _XMLOFF_NUMBERSTYLESIMPORT_HXX
-

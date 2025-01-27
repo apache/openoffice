@@ -159,4 +159,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_PROPERTYBAGHELPER_HXX
-

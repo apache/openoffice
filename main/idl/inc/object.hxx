@@ -163,4 +163,3 @@ SV_IMPL_PERSIST_LIST(SvMetaClass,SvMetaClass *)
 
 
 #endif // _OBJECT_HXX
-

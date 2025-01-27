@@ -565,4 +565,3 @@ inline void XclTokenArrayHelper::ChangeTokenClass( sal_uInt8& rnTokenId, sal_uIn
 // ============================================================================
 
 #endif
-

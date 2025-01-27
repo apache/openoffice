@@ -58,5 +58,3 @@ class Tok_Eof : public TextToken
 };
 
 #endif
-
-

@@ -112,4 +112,3 @@ private:
 } // namespace sw
 
 #endif // SW_UNDO_MANAGER_HXX
-

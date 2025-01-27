@@ -384,4 +384,3 @@ public:
 };
 
 #endif // SW_UNDO_TABLE_HXX
-

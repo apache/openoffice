@@ -124,10 +124,3 @@ sal_Bool AStringToUStringNCopy( sal_Unicode       *pDest,
 #endif /* __cplusplus */
 
 #endif /* _RTL_STRING_UTILS_HXX */
-
-
-
-
-
-
-

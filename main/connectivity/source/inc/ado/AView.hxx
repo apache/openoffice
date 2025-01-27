@@ -59,4 +59,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_ADO_VIEW_HXX_
-

@@ -88,4 +88,3 @@ inline const SfxSlot* SfxSlotPool::FirstSlot()
 #define SFX_SLOTPOOL() SfxSlotPool::GetSlotPool()
 
 #endif
-

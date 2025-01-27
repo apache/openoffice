@@ -63,4 +63,3 @@ namespace connectivity
 	}
 }
 #endif // CONNECTIVITY_MYSQL_COLUMN_HXX
-

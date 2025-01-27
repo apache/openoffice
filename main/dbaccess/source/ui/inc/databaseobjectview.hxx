@@ -279,4 +279,3 @@ namespace dbaui
 // .........................................................................
 
 #endif // DBACCESS_DATABASE_OBJECT_VIEW_HXX
-

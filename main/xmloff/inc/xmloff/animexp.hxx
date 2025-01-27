@@ -45,4 +45,3 @@ public:
 };
 
 #endif	//  _XMLOFF_ANIMEXP_HXX
-

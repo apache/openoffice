@@ -135,4 +135,3 @@ void generateCalcAddin(ProgramOptions const & options,
 } }
 
 #endif // INCLUDED_UNODEVTOOLS_SOURCE_SKELETONMAKER_SKELETONCPP_HXX
-

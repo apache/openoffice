@@ -54,4 +54,3 @@ public class TestHelper  {
 		m_aLogWriter.println( m_sTestPrefix + sMessage );
 	}
 }
-

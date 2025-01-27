@@ -27,4 +27,3 @@ OUString SaxWriter_getServiceName() throw();
 OUString SaxWriter_getImplementationName() throw();
 Sequence< OUString > 	SaxWriter_getSupportedServiceNames(void) throw();
 }
-

@@ -104,4 +104,3 @@ namespace dbaui
 	typedef ::std::vector< OConnectionLineDataRef >	OConnectionLineDataVec;
 }
 #endif // DBAUI_CONNECTIONLINEDATA_HXX
-

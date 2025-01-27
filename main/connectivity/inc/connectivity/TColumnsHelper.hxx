@@ -63,4 +63,3 @@ namespace connectivity
 	};
 }
 #endif // CONNECTIVITY_COLUMNSHELPER_HXX
-

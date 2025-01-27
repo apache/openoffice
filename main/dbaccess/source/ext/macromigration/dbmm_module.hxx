@@ -38,4 +38,3 @@ namespace dbmm
 //........................................................................
 
 #endif // DBACCESS_MACROMIGRATION_MODULE_HXX
-

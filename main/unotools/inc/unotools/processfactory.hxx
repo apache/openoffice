@@ -52,4 +52,3 @@ UNOTOOLS_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMu
 }
 
 #endif // _UNOTOOLS_PROCESSFACTORY_HXX_
-

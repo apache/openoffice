@@ -66,5 +66,3 @@ namespace connectivity
 //........................................................................
 
 #endif // CONNECTIVITY_DBTOOLS_PARSER_SIMPLE_HXX
-
-

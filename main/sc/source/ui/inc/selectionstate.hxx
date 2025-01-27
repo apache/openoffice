@@ -72,4 +72,3 @@ inline bool operator!=( const ScSelectionState& rL, const ScSelectionState& rR )
 // ============================================================================
 
 #endif
-

@@ -238,7 +238,3 @@
 #include <olinetab.hxx>
 #include <basic/sbxobj.hxx>
 #include <cfgids.hxx>
-
-
-
-

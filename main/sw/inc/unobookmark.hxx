@@ -266,4 +266,3 @@ public:
 };
 
 #endif // SW_UNOBOOKMARK_HXX
-

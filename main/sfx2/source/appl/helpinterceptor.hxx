@@ -166,4 +166,3 @@ public:
 
 
 #endif // #ifndef INCLUDED_SFX_HELPINTERCEPTOR_HXX
-

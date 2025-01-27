@@ -299,4 +299,3 @@ inline void SwTxtFmtColl::SetNextTxtFmtColl( SwTxtFmtColl& rNext )
 	pNextTxtFmtColl = &rNext;
 }
 #endif
-

@@ -86,4 +86,3 @@ public:
 }}
 
 #endif // MACAVF_COMMON_HXX
-

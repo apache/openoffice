@@ -56,4 +56,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_HSQLDB_VIEWS_HXX_
-

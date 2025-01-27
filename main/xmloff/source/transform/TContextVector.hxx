@@ -35,4 +35,3 @@ class XMLTransformerContextVector :
 };
 
 #endif	//  _XMLOFF_TCONTEXTVECTOR_HXX
-

@@ -86,4 +86,3 @@ class ODbDataSourceAdministrationHelper;
 //.........................................................................
 
 #endif // _DBAUI_TABLESSINGLEDLG_HXX_
-

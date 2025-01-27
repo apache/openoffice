@@ -128,4 +128,3 @@ public:
 
 
 #endif // _SVX_TEXTATTR_HXX
-

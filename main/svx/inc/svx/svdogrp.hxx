@@ -115,4 +115,3 @@ public:
 };
 
 #endif //_SVDOGRP_HXX
-

@@ -182,5 +182,3 @@ private:
 
 
 #endif //DBA_INTERCEPT_HXX
-
-

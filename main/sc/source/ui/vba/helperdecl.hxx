@@ -46,4 +46,3 @@ struct vba_service_class_ : public serviceimpl_base< vba_detail::OwnServiceImpl<
 
 } // namespace service_decl
 } // namespace comphelper
-

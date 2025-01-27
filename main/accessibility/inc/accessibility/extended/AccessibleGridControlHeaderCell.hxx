@@ -95,4 +95,3 @@ namespace accessibility
 }
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBLEGRIDCONTROLHEADERCELL_HXX
-

@@ -306,4 +306,3 @@ public:
 };
 
 #endif		// _SVX_FLOAT3D_HXX
-

@@ -54,4 +54,3 @@ public:
 };
 
 #endif	//  _XMLOFF_CONTROLOOOTCONTEXT_HXX
-

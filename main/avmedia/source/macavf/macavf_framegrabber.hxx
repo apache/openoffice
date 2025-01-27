@@ -63,4 +63,3 @@ private:
 } // namespace avmedia
 
 #endif // MACAVF_FRAMEGRABBER_HXX
-

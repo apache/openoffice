@@ -88,5 +88,3 @@ OGeometryControlModel_Base* OGeometryControlModel<CONTROLMODEL>::createClone_Imp
 {
 	return new OGeometryControlModel<CONTROLMODEL>(_rxAggregateInstance);
 }
-
-

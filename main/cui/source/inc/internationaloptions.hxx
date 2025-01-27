@@ -51,4 +51,3 @@ namespace offapp
 }	// /namespace offapp
 
 #endif
-

@@ -312,5 +312,3 @@ public:
 }
 
 #endif  // _VOS_PROCESS_HXX_
-
-

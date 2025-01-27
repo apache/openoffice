@@ -73,5 +73,3 @@ public:
 			/// return sal_False => unknown format
 	void 	Write( SvStream & rStm );
 };
-
-

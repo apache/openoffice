@@ -138,4 +138,3 @@ Mutex* getBridgeMutex();
 
 
 #endif // _OLE2UNO_HXX
-

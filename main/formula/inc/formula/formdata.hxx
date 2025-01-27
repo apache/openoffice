@@ -84,4 +84,3 @@ private:
 
 } // formula
 #endif // FORMULA_FORMDATA_HXX
-

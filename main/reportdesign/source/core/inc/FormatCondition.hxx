@@ -110,4 +110,3 @@ namespace reportdesign
 	};
 }
 #endif //RPT_FORMATCONDITION_HXX
-

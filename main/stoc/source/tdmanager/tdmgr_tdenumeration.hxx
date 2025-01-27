@@ -82,4 +82,3 @@ private:
 } // namespace stoc_tdmgr
 
 #endif /* _STOC_TDMGR_TDENUMERATION_HXX */
-

@@ -111,5 +111,3 @@ namespace dbaui
 
 }
 #endif // DBAUI_TABLECONNECTIONDATA_HXX
-
-

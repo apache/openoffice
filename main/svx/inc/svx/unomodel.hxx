@@ -105,4 +105,3 @@ SVX_DLLPUBLIC extern sal_Bool SvxDrawingLayerImport( SdrModel* pModel, const com
 #endif
 
 #endif
-

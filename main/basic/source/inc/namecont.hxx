@@ -789,4 +789,3 @@ protected:
 }	// namespace basic
 
 #endif
-

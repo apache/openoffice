@@ -43,4 +43,3 @@ public:
 };
 
 #endif // _DBA_CORE_USERINFORMATION_HXX_
-

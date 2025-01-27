@@ -1550,4 +1550,3 @@ public:
 };
 
 #endif // _SV_METAACT_HXX
-

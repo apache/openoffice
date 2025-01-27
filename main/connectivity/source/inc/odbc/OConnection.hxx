@@ -153,4 +153,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ODBC_OCONNECTION_HXX_
-

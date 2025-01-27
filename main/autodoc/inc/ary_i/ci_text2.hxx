@@ -85,4 +85,3 @@ class DocuTex2
 
 
 #endif
-

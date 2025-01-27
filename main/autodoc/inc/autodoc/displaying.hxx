@@ -69,4 +69,3 @@ class DisplayToolsFactory_Ifc
 
 
 #endif
-

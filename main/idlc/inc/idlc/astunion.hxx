@@ -61,4 +61,3 @@ private:
 };
 
 #endif // _IDLC_ASTUNION_HXX_
-

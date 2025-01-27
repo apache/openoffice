@@ -82,5 +82,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_ENUMTYPES_HXX
-
-

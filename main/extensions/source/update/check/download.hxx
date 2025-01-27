@@ -76,5 +76,3 @@ private:
     const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& m_xContext;
     const rtl::Reference< DownloadInteractionHandler > m_aHandler;
 };
-
-

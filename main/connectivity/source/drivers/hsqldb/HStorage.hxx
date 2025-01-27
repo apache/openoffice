@@ -111,4 +111,3 @@ namespace connectivity
 } // connectivity
 // .......................................................................
 #endif // CONNECTIVITY_HSQLDB_STORAGE_HXX
-

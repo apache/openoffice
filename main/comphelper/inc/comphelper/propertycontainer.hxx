@@ -89,5 +89,3 @@ protected:
 //.........................................................................
 
 #endif // _COMPHELPER_PROPERTYCONTAINER_HXX_
-
-

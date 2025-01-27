@@ -181,5 +181,3 @@ namespace comphelper
 //.........................................................................
 
 #endif// COMPHELPER_WEAKEVENTLISTENER_HXX
-
-

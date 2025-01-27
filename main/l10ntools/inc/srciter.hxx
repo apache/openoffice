@@ -50,4 +50,3 @@ public:
 };
 
 #endif // L10NTOOLS_SRCITER_HXX
-

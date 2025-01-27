@@ -56,5 +56,3 @@ class Token : public TextToken
 }   // namespace csi
 
 #endif
-
-

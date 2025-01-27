@@ -25,4 +25,3 @@
 class ByteString;
 
 rtlDigestError calc_md5_checksum( const char *filename, ByteString &aChecksum );
-

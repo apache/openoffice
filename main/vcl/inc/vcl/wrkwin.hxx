@@ -102,4 +102,3 @@ public:
 };
 
 #endif // _SV_WRKWIN_HXX
-

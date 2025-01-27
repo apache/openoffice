@@ -150,5 +150,3 @@ public:
 };
 
 #endif
-
-

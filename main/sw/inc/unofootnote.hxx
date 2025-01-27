@@ -222,4 +222,3 @@ public:
 };
 
 #endif // SW_UNOFOOTNOTE_HXX
-

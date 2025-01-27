@@ -159,4 +159,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMLAYERIMPORT_HXX_
-

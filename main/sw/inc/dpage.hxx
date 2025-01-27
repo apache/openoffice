@@ -55,6 +55,3 @@ public:
 };
 
 #endif	   // _DPAGE_HXX
-
-
-

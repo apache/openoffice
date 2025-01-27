@@ -60,5 +60,3 @@ public:
 
 
 #endif
-
-

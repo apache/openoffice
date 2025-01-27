@@ -50,4 +50,3 @@ public:
 
 
 #endif		// _CONARC_HXX
-

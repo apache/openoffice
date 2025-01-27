@@ -213,4 +213,3 @@ namespace connectivity
 //==================================================================================
 
 #endif // _CONNECTIVITY_COMMONTOOLS_HXX_
-

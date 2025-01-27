@@ -238,4 +238,3 @@ namespace rptui
 }	//rptui
 //==================================================================
 #endif // RPTUI_REPORT_WINDOW_HXX
-

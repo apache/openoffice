@@ -68,4 +68,3 @@ namespace dbaui
 //........................................................................
 
 #endif // DBAUI_FILEPICKER_INTERACTION_HXX
-

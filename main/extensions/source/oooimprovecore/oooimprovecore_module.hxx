@@ -31,4 +31,3 @@ namespace oooimprovecore
     DECLARE_COMPONENT_MODULE( OooimprovecoreModule, OooimprovecoreModuleClient )
 }
 #endif 
-

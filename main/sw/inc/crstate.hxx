@@ -209,5 +209,3 @@ struct SwCrsrMoveState
 
 
 #endif
-
-

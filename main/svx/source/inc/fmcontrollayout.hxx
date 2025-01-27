@@ -86,4 +86,3 @@ namespace svxform
 //........................................................................
 
 #endif // SVX_SOURCE_INC_FMCONTROLLAYOUT_HXX
-

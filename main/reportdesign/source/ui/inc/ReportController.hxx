@@ -479,4 +479,3 @@ namespace rptui
 	};
 }
 #endif // RPTUI_REPORTCONTROLLER_HXX
-

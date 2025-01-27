@@ -328,4 +328,3 @@ public:
 };
 
 #endif // _TEXTENG_HXX
-

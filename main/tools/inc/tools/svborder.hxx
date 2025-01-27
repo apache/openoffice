@@ -90,4 +90,3 @@ TOOLS_DLLPUBLIC Rectangle & operator -= ( Rectangle & rRect, const SvBorder & rB
 //=========================================================================
 
 #endif 
-

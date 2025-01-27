@@ -350,4 +350,3 @@ public:
  
 }
 #endif // WW8_TABLE_INFO_HXX
-

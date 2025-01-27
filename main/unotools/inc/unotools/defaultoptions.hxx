@@ -47,4 +47,3 @@ public:
 };
 
 #endif // #ifndef INCLUDED_unotools_DEFAULTOPTIONS_HXX
-

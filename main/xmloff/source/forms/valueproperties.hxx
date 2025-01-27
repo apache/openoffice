@@ -76,5 +76,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_VALUEPROPERTIES_HXX_
-
-

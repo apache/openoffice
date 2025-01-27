@@ -57,4 +57,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XMLBASE64IMPORTCONTEXT_HXX
-

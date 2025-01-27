@@ -182,4 +182,3 @@ typedef sfx::ItemControlConnection< sfx::Int32ItemWrapper, DialControlWrapper > 
 } // namespace svx
 
 #endif
-

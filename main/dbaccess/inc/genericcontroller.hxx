@@ -534,5 +534,3 @@ namespace dbaui
 }
 
 #endif //DBAUI_GENERICCONTROLLER_HXX
-
-

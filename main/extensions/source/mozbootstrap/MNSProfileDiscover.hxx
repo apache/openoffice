@@ -95,4 +95,3 @@ namespace connectivity
 }
 
 #endif // __MNSProfileDiscover_h___
-

@@ -94,4 +94,3 @@ namespace dbaccess
 	};
 }
 #endif // _DBACORE_RESULTCOLUMN_HXX_
-

@@ -82,4 +82,3 @@ public:
 };
 
 #endif // #ifndef _SVX_POSTITEM_HXX
-

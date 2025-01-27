@@ -49,4 +49,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_EVOAB_CATALOG_HXX_
-

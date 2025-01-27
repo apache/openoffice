@@ -30,7 +30,3 @@ enum SwCharCompressType{ 	CHARCOMPRESS_NONE,
 
 
 #endif
-
-
-
-

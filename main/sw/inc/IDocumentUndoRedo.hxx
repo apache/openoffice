@@ -278,4 +278,3 @@ private:
 } // namespace sw
 
 #endif
-

@@ -205,4 +205,3 @@ namespace dbaui
 }	// namespace dbaui
 //........................................................................
 #endif // DBUI_TABLECOPYHELPER_HXX
-

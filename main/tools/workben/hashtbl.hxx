@@ -196,4 +196,3 @@ public:
 
                                                                     
 #endif // _HASHTBL_HXX
-

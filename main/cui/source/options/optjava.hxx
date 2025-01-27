@@ -186,4 +186,3 @@ public:
 };
 
 #endif // #ifndef _SVX_OPTJAVA_HXX
-

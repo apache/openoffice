@@ -88,4 +88,3 @@ namespace svx
 }	// namespace svx
 //........................................................................
 #endif // SVX_DBREGISTERSETTING_HXX
-

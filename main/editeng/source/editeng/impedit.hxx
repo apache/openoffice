@@ -1230,5 +1230,3 @@ sal_uInt8 GetCharTypeForCompression( xub_Unicode cChar );
 Point Rotate( const Point& rPoint, short nOrientation, const Point& rOrigin );
 
 #endif // _IMPEDIT_HXX
-
-

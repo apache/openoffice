@@ -52,5 +52,3 @@ enum SvxFrameDirection
 // ----------------------------------------------------------------------------
 
 #endif // #ifndef _SVX_FRMDIR_HXX
-
-

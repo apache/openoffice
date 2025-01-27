@@ -331,4 +331,3 @@ public:
 };
 
 #endif // SW_UNOTEXTRANGE_HXX
-

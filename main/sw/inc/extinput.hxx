@@ -52,4 +52,3 @@ public:
 };
 
 #endif	//_EXTINPUT_HXX
-

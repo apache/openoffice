@@ -346,4 +346,3 @@ ScfPropSetHelper& operator<<( ScfPropSetHelper& rPropSetHelper, const Type& rVal
 // ============================================================================
 
 #endif
-

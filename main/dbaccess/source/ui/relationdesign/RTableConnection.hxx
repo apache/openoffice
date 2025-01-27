@@ -49,7 +49,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_RTABLECONNECTION_HXX
-
-
-
-

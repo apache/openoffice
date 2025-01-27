@@ -137,4 +137,3 @@ public:
 
 
 #endif //_SVX_LABDLG_HXX
-

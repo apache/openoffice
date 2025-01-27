@@ -47,4 +47,3 @@ class File
 }
 
 #endif // L10NTOOLS_FILE_HXX
-

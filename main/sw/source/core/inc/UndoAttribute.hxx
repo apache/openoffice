@@ -281,4 +281,3 @@ public:
 };
 
 #endif // SW_UNDO_ATTRIBUTE_HXX
-

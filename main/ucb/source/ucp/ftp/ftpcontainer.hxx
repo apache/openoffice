@@ -54,4 +54,3 @@ public:
 
 extern "C" int memory_write(
     void *buffer,size_t size,size_t nmemb,void *stream);
-

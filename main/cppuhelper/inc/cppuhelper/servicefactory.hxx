@@ -117,4 +117,3 @@ createServiceFactory(
 } // end namespace cppu
 
 #endif
-

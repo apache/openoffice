@@ -138,6 +138,3 @@ SAL_CALL SignatureCreatorImpl_createInstance(
 	throw ( com::sun::star::uno::Exception );
 
 #endif
-
-
-

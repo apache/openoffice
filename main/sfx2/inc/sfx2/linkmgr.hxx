@@ -179,4 +179,3 @@ SFX2_DLLPUBLIC void MakeLnkName( String& rName,
 }
 
 #endif
-

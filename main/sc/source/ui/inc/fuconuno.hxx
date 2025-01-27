@@ -60,4 +60,3 @@ public:
 
 
 #endif		// _SD_FUCONCTL_HXX
-

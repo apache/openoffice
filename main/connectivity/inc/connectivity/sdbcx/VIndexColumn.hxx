@@ -62,4 +62,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_SDBCX_INDEXCOLUMN_HXX_
-

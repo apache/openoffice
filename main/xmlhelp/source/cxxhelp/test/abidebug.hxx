@@ -25,4 +25,3 @@
 #include  <rtl/ustring>
 #endif
 ostream& operator<<( ostream& out,const rtl::OUString& bla );
-

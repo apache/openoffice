@@ -45,4 +45,3 @@ private:
 };
 
 #endif // _IDLC_ASTUNIONLABEL_HXX_
-

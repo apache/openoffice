@@ -219,4 +219,3 @@ public:
 	void					ResetFlags();
 };
 #endif
-

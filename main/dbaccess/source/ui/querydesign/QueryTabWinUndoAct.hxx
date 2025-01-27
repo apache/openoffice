@@ -78,6 +78,3 @@ namespace dbaui
 	
 }
 #endif // DBAUI_QUERYTABWINUNDOACT_HXX
-
-
-

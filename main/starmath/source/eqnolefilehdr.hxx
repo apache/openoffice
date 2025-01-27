@@ -56,4 +56,3 @@ public:
 SAL_DLLPUBLIC_EXPORT sal_Bool GetMathTypeVersion( SotStorage* pStor, sal_uInt8 &nVersion );
 
 #endif
-

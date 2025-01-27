@@ -99,6 +99,3 @@ namespace dbaui
 }
 
 #endif // DBAUI_RTABLECONNECTIONDATA_HXX
-
-
-

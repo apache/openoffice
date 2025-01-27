@@ -136,4 +136,3 @@ class X2CParser
 // IMPLEMENTATION
 
 #endif
-

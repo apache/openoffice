@@ -73,4 +73,3 @@ namespace dbaccess
 //........................................................................
 
 #endif // DBACCESS_CONTAINERAPPROVE_HXX
-

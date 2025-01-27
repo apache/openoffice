@@ -105,4 +105,3 @@ struct SignatureInformation
 typedef ::std::vector< SignatureInformation > SignatureInformations;
 
 #endif
-

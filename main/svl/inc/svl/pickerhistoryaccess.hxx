@@ -47,4 +47,3 @@ namespace svt
 //.........................................................................
 
 #endif // SVTOOLS_PICKERHISTORYACCESS_HXX
-

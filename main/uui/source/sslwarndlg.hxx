@@ -78,4 +78,3 @@ private:
 };
 
 #endif // UUI_SSLWARN_HXX
-

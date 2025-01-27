@@ -182,4 +182,3 @@ namespace rptui
     void setZoomFactor(const Fraction& _aZoom,Window& _rWindow);
 }
 #endif //RPTUI_UITOOLS_HXX
-

@@ -93,4 +93,3 @@ CPPUHELPER_DLLPUBLIC ::com::sun::star::uno::Any SAL_CALL getCaughtException();
 }
 
 #endif
-

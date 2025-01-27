@@ -278,4 +278,3 @@ PE_Struct::PE_StructState::MoveState(
 
 
 #endif
-

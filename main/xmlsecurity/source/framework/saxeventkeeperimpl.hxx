@@ -360,6 +360,3 @@ SAL_CALL SAXEventKeeperImpl_createInstance( const com::sun::star::uno::Reference
 	throw ( com::sun::star::uno::Exception );
 
 #endif
-
-
-

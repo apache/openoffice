@@ -58,5 +58,3 @@ extern const String
     C_sCePrefix_Constants;
 
 #endif
-
-

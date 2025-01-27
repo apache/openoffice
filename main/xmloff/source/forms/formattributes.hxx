@@ -356,4 +356,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMATTRIBUTES_HXX_
-

@@ -96,6 +96,3 @@ Persistent::InvalidatePath()
 
 
 #endif
-
-
-

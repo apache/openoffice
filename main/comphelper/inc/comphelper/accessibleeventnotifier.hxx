@@ -165,5 +165,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // COMPHELPER_ACCESSIBLE_EVENT_NOTIFIER
-
-

@@ -159,5 +159,3 @@ private:
 };
 
 #endif // #ifndef _SVX_BACKGRND_HXX
-
-

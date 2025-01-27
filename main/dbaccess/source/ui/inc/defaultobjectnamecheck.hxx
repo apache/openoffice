@@ -145,4 +145,3 @@ namespace dbaui
 //........................................................................
 
 #endif // DBACCESS_SOURCE_UI_INC_DEFAULTOBJECTNAMECHECK_HXX
-

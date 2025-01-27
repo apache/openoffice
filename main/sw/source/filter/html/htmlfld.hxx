@@ -84,5 +84,3 @@
 #define OOO_STRING_SW_HTML_FF_name_noext "NAME-NOEXT"
 
 #endif
-
-

@@ -53,5 +53,3 @@ namespace adabasui
 	};
 }
 #endif // DBAUI_SQLNAMEEDIT_HXX
-
-

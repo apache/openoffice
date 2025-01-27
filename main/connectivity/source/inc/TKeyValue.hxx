@@ -75,4 +75,3 @@ namespace connectivity
 }
 
 #endif // CONNECTIVITY_TKEYVALUE_HXX
-

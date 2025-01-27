@@ -377,5 +377,3 @@
 // Ende der veralteten Properties
 
 #endif
-
-

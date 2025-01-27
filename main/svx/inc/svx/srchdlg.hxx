@@ -302,4 +302,3 @@ inline sal_Bool SvxSearchDialog::HasReplaceAttributes() const
 
 
 #endif
-

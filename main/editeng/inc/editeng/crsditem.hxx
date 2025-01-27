@@ -86,4 +86,3 @@ public:
 };
 
 #endif // #ifndef _SVX_CRSDITEM_HXX
-

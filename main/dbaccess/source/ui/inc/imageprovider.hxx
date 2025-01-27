@@ -185,4 +185,3 @@ namespace dbaui
 //........................................................................
 
 #endif // DBACCESS_IMAGEPROVIDER_HXX
-

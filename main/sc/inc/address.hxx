@@ -813,4 +813,3 @@ inline String ScColToAlpha( SCCOL nCol )
 bool AlphaToCol( SCCOL& rCol, const String& rStr);
 
 #endif // SC_ADDRESS_HXX
-

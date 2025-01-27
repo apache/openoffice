@@ -516,4 +516,3 @@ namespace dbaui
 	};
 }
 #endif // _SBA_FORMADAPTER_HXX
-

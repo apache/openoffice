@@ -115,4 +115,3 @@ public:
 	enum CmpResult { LT, EQ, GT };
 	friend CmpResult compare( const SbxDecimal &rLeft, const SbxDecimal &rRight );
 };
-

@@ -127,5 +127,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_OPREPAREDSTATEMENT_HXX_
-
-

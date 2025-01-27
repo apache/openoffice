@@ -48,4 +48,3 @@ public:
     sal_Bool    isAborted();
     com::sun::star::uno::Reference < ::com::sun::star::task::XInteractionRequest > GetRequest();
 };  
-

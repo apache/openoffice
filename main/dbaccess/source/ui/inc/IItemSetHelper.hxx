@@ -69,4 +69,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_ITEMSETHELPER_HXX
-

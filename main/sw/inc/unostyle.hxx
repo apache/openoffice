@@ -467,5 +467,3 @@ protected:
 
 };
 #endif
-
-

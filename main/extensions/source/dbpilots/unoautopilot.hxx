@@ -99,4 +99,3 @@ namespace dbp
 //.........................................................................
 
 #endif // _EXTENSIONS_DBP_UNOAUTOPILOT_HXX_
-

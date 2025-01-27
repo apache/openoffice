@@ -311,4 +311,3 @@ public:
 #endif /* !ENABLE_LAYOUT_SFX_TABDIALOG */
 
 #endif
-

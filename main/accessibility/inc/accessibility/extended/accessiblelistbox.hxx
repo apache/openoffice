@@ -134,4 +134,3 @@ private:
 //........................................................................
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBLELISTBOX_HXX_
-

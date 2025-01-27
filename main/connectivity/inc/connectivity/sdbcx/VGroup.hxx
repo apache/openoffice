@@ -105,5 +105,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_GROUP_HXX_
-
-

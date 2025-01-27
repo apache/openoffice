@@ -195,4 +195,3 @@ inline XclImpChTrFmlConverter::XclImpChTrFmlConverter(
 //___________________________________________________________________
 
 #endif
-

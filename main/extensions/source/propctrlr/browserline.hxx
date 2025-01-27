@@ -136,4 +136,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_BROWSERLINE_HXX_
-

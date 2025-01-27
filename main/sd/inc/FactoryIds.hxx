@@ -44,4 +44,3 @@ enum ViewShellFactoryIds
 } // end of namespace sd
 
 #endif
-

@@ -205,5 +205,3 @@ private:
 //........................................................................
 
 #endif // _DBA_COREDATAACCESS_DATABASECONTEXT_HXX_
-
-

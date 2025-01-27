@@ -94,4 +94,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_RELATIONCONTROLLER_HXX
-

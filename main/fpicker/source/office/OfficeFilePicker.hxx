@@ -223,4 +223,3 @@ private:
 };
 
 #endif // INCLUDED_SVT_FILEPICKER_HXX
-

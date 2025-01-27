@@ -186,4 +186,3 @@ private:
 } // namespace osl
 
 #endif // ! defined(OSL_DIAGNOSE_HXX_INCLUDED)
-

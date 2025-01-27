@@ -98,4 +98,3 @@ struct EDITENG_DLLPUBLIC SvxSwAutoFmtFlags
 };
 
 #endif
-

@@ -118,4 +118,3 @@ public:
 };
 
 #endif //_BASCTL_MANAGELANG_HXX
-

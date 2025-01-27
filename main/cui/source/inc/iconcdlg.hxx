@@ -263,4 +263,3 @@ public :
 };
 
 #endif //_ICCDLG_HXX
-

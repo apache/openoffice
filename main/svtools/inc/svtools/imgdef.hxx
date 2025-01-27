@@ -36,4 +36,3 @@ enum SfxSymbolsSize
 #define SFX_TOOLBOX_CHANGEBUTTONTYPE	0x0004
 
 #endif // _SVTOOLS_IMGDEF_HXX
-

@@ -82,4 +82,3 @@ public:
 };
 
 #endif // _SD_ANMINFO_HXX
-

@@ -37,4 +37,3 @@ namespace dbaui
 }
 #endif // DBAUI_IREFERENCE_HXX
 												  
-

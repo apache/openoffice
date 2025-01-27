@@ -108,4 +108,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADO_ADATABASEMETARESULTSETMETADATA_HXX_
-

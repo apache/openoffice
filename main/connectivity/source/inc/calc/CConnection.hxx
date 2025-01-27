@@ -90,4 +90,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_CALC_CONNECTION_HXX_
-

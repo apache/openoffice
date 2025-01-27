@@ -104,4 +104,3 @@ private:
 } // namespace presentation
 
 #endif /* INCLUDED_SLIDESHOW_ANIMATIONBASENODE_HXX */
-

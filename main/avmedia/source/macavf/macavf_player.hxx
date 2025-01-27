@@ -92,4 +92,3 @@ private:
 } // namespace avmedia
 
 #endif // MACAVF_PLAYER_HXX
-
