@@ -74,7 +74,6 @@ $(eval $(call gb_Library_add_exception_objects,configmgr,\
 	configmgr/source/type \
 	configmgr/source/update \
 	configmgr/source/valueparser \
-	configmgr/source/wipednode \
 	configmgr/source/writemodfile \
 	configmgr/source/xcdparser \
 	configmgr/source/xcsparser \
