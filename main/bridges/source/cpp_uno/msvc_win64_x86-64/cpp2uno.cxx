@@ -369,6 +369,11 @@ unsigned char * codeSnippet(
     // 
     //
 
+    // When it doubt about correctness,
+    // uncomment this and disassemble at runtime:
+    // INT 0x3
+    //*p++ = 0xcc;
+
     if (isArgFloat[0])
     {
         // movsd QWORD[rsp+8], XMM0
@@ -377,7 +382,7 @@ unsigned char * codeSnippet(
     else
     {
         // mov QWORD[rsp+8], rcx
-        *p++ = 0x48; *p++ = 0x49; *p++ = 0x4c; *p++ = 0x24; *p++ = 0x08;
+        *p++ = 0x48; *p++ = 0x89; *p++ = 0x4c; *p++ = 0x24; *p++ = 0x08;
     }
 
     if (isArgFloat[1])
@@ -388,7 +393,7 @@ unsigned char * codeSnippet(
     else
     {
         // mov QWORD[rsp+16], rdx
-        *p++ = 0x48; *p++ = 0x49; *p++ = 0x54; *p++ = 0x24; *p++ = 0x10;
+        *p++ = 0x48; *p++ = 0x89; *p++ = 0x54; *p++ = 0x24; *p++ = 0x10;
     }
 
     if (isArgFloat[2])
@@ -441,7 +446,7 @@ unsigned char * codeSnippet(
     *p++ = (((sal_uIntPtr)(&privateSnippetExecutor)) >> 56) & 0xff;
 
     // jmp r11
-    *p++ = 0x49;
+    *p++ = 0x41;
     *p++ = 0xff;
     *p++ = 0xe3;
 
