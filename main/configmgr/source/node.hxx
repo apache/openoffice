@@ -61,24 +61,17 @@ public:
          * Identifies instances of LocalizedValueNode.
          */
         KIND_LOCALIZED_VALUE,
-        /** Group node (&lt;node&gt; element)
+        /** Group member node (&lt;node&gt; element)
          *
          * Identifies instances of GroupNode.
          */
         KIND_GROUP,
-        /** Set node (&lt;node&gt; element)
+        /** Set member node (&lt;node&gt; element)
          *
          * Identifies instances of SetNode.
          */
         KIND_SET,
-        /** Node to be deleted.
-         *
-         * This type of element is not present in the OOR. It is used as a
-         * placeholder for a node that is about to disappear.
-         *
-         * Identifies instances of WipedNode.
-         */
-        KIND_WIPED };
+    };
 
     virtual Kind kind() const = 0;
 
