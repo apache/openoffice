@@ -145,26 +145,24 @@ callVirtualMethod PROC FRAME
 
 	; We must maintain the stack aligned to a 16 byte boundary:
 	mov eax, 56[rbp]
-	cmp rax, 0
-	je stackIsEmpty
-	mov r11, rax
-	test rax,1
-	jz stackSizeEven
-	sub rsp, 8
-stackSizeEven:
-	mov r10, 48[rbp]
-	shl rax, 3        ; nStack is in units of sal_uInt64, and sizeof(sal_uInt64) == 8
-	add rax, r10
+	test eax, eax
+	jz populateArgumentRegisters
+	inc eax
+	shr eax, 1
+	shl eax, 4
 
+	mov r10, rax
+	add rax, 48[rbp]
 copyStack:
 	sub rax, 8
 	push [rax]
-	dec r11
+	dec r10
 	jne copyStack
 
+populateArgumentRegisters:
 	; First 4 args are passed in registers. Floating point args needs to be
-	; in floating point registers, but those are free for us to clobber
-	; anyway, and the callee knows where to look, so put each arg in both
+	; in floating point registers, but those are volatile anyway,
+	; and the callee knows where to look, so put each arg in both
 	; its general purpose and its floating point register:
 	mov rcx, [rsp]
 	movsd xmm0, qword ptr [rsp]
@@ -174,10 +172,6 @@ copyStack:
 	movsd xmm2, qword ptr 16[rsp]
 	mov r9, 24[rsp]
 	movsd xmm3, qword ptr 24[rsp]
-	jmp callMethod
-
-stackIsEmpty:
-	sub rsp, 32       ; we still need shadow space
 	
 callMethod:
 	; Find the method pointer
