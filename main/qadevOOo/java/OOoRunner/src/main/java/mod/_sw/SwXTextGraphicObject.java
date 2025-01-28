@@ -200,4 +200,3 @@ public class SwXTextGraphicObject extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTextGraphicObject
-

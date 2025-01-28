@@ -200,4 +200,3 @@ public class ScIndexEnumeration_TableConditionalEntryEnumeration extends TestCas
     }
 
 }    // finish class ScTableConditionalEntry
-

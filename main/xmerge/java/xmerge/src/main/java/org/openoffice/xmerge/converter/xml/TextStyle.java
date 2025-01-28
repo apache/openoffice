@@ -672,4 +672,3 @@ public class TextStyle extends Style implements Cloneable {
         return false;
     }
 }
-

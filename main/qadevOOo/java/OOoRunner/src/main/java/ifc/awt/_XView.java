@@ -136,4 +136,3 @@ public class _XView extends MultiMethodTest {
     }    
     
 }
-

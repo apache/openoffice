@@ -71,6 +71,3 @@ public class _XGridColumnFactory extends MultiMethodTest {
         }
     }
 }  // finish class _XGridColumnFactory
-
-
-

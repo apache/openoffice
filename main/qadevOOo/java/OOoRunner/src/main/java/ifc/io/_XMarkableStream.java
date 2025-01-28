@@ -190,4 +190,3 @@ public class _XMarkableStream extends MultiMethodTest {
         tRes.tested("offsetToMark()", res);
     }
 }
-

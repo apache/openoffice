@@ -93,4 +93,3 @@ public class FrameBorderSpacingtoContent {
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_doc.getPropertyValue("BottomBorderDistance"));
 	}
 }
-

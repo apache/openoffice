@@ -69,4 +69,3 @@ public class _UnoControlFixedLineModel extends MultiPropertyTest {
         }) ;
     }
 }
-

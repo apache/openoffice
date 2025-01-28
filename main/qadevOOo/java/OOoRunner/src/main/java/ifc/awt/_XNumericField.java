@@ -303,5 +303,3 @@ public class _XNumericField extends MultiMethodTest {
         tRes.tested("isStrictFormat()", result) ;
     }
 }
-
-

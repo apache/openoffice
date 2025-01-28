@@ -150,4 +150,3 @@ public class _XComponentLoader extends MultiMethodTest {
     }
 
 }
-

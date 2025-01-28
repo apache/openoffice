@@ -53,4 +53,3 @@ public class _ServiceManager extends MultiPropertyTest {
     }
 
 } // EOF _ServiceManager
-

@@ -40,4 +40,3 @@ import lib.MultiPropertyTest;
 public class _HTMLForm extends MultiPropertyTest {
 
 }  // finish class _HTMLForm
-

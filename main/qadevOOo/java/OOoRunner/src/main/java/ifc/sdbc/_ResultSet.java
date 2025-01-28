@@ -42,4 +42,3 @@ public class _ResultSet extends MultiPropertyTest {
 
 
 }  // finish class _ResultSet
-

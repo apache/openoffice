@@ -256,6 +256,3 @@ public class SDraw  {
         return r*65536+g*256+b;        
     }
 }
-
-
-

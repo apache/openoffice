@@ -164,4 +164,3 @@ public class _XPageCursor extends MultiMethodTest {
         tRes.tested("jumpToStartOfPage()", oObj.jumpToStartOfPage());
     }
 }  // finish class _XPageCursor
-

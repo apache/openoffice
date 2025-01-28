@@ -41,4 +41,3 @@ import lib.MultiPropertyTest;
 public class _ConnectorProperties extends MultiPropertyTest {
 
 }
-

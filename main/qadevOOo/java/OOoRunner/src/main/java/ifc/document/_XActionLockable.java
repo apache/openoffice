@@ -102,4 +102,3 @@ public class _XActionLockable extends MultiMethodTest {
         tRes.tested("resetActionLocks()", result);
     }
 }// finish class _XActionLockable
-

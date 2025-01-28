@@ -50,5 +50,3 @@ public class _CurrencyField extends MultiPropertyTest {
         }) ;
     }
 }  // finish class _CurrencyField
-
-

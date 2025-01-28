@@ -85,4 +85,3 @@ public class _XSimpleFileAccess2 extends MultiMethodTest {
     }
 
 }  // finish class _XSimpleFileAccess
-

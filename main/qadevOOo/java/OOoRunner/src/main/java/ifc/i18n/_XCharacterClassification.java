@@ -409,4 +409,3 @@ public class _XCharacterClassification extends MultiMethodTest {
 
 
 } // end XCharacterClassification
-

@@ -258,4 +258,3 @@ public class SvxShapePolyPolygon extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SvxShapeCollection
-

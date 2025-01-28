@@ -1042,4 +1042,3 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 		}
 	}
 }
-

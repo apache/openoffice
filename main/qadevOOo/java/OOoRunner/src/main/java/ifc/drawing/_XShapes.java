@@ -101,5 +101,3 @@ public class _XShapes extends MultiMethodTest {
     }
 
 }
-
-

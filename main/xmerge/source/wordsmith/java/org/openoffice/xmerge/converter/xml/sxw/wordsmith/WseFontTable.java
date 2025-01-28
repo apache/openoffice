@@ -211,4 +211,3 @@ class WseFontTable extends Wse {
         return b;
     }
 }
-

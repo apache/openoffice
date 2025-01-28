@@ -177,5 +177,3 @@ public class _XSearchable extends MultiMethodTest {
         }
     }
 }
-
-

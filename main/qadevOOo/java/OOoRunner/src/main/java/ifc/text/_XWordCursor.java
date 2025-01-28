@@ -125,4 +125,3 @@ public class _XWordCursor extends MultiMethodTest {
     }
 
  }  // finish class _XWordCursor
-

@@ -62,4 +62,3 @@ class InteractionRequest implements XInteractionRequest
 		return aContinuations;
 	}
 };
-

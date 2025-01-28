@@ -64,4 +64,3 @@ public class _XTextDocument extends MultiMethodTest {
     }
 
 }  // finish class _XTextDocument
-

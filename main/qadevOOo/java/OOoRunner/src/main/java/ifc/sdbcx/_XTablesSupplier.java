@@ -73,5 +73,3 @@ public class _XTablesSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XTablesSupplier
-
-

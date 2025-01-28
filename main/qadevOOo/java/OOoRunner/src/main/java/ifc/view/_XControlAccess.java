@@ -117,4 +117,3 @@ public class _XControlAccess extends MultiMethodTest {
         tRes.tested("getControl()", bResult);
     }
 }
-

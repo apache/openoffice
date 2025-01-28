@@ -145,4 +145,3 @@ public class ScAnnotationTextCursor extends TestCase {
     }
 
 }    // finish class ScAnnotationTextCursor
-

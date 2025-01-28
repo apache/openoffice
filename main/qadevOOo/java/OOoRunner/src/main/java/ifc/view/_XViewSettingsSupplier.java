@@ -54,5 +54,3 @@ public class _XViewSettingsSupplier extends MultiMethodTest {
     } // finish _getViewSettings
 
 }  // finish class _XViewSettingsSupplier
-
-

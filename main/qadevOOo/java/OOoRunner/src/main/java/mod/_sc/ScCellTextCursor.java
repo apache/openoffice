@@ -188,4 +188,3 @@ public class ScCellTextCursor extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScCellTextCursor
-

@@ -363,6 +363,3 @@ public class MultiTypeInterfaceContainer_Test
    
     }    
 }
-
-
-

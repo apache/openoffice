@@ -128,4 +128,3 @@ public class ScDrawPagesObj extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScDrawPagesObj
-

@@ -589,4 +589,3 @@ public class ParaStyle extends Style implements Cloneable {
         }
     }
 }
-

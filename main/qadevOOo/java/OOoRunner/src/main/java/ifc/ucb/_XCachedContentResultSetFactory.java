@@ -107,4 +107,3 @@ public class _XCachedContentResultSetFactory extends MultiMethodTest {
 
     }
 }
-

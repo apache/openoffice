@@ -70,5 +70,3 @@ public class _XViewFreezable extends MultiMethodTest {
 
 
 }  // finish class _XViewFreezable
-
-

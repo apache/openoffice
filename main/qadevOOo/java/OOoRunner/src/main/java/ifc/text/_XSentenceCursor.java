@@ -120,4 +120,3 @@ public class _XSentenceCursor extends MultiMethodTest {
     }
 
  }  // finish class _XSentenceCursor
-

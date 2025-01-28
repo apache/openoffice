@@ -154,4 +154,3 @@ public class PathSettings extends TestCase {
     }
 
 }
-

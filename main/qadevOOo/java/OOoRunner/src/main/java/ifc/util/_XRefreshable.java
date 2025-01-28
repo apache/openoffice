@@ -112,4 +112,3 @@ public class _XRefreshable extends MultiMethodTest {
             log.println("RefreshListener was called after removing");
     }
 } // finish class _XRefreshable
-

@@ -102,4 +102,3 @@ public class _UnoControlCheckBoxModel extends MultiPropertyTest {
         testProperty("TextLineColor", ColorTester) ;
     }        
 }
-

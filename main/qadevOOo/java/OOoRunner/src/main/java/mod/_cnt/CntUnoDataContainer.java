@@ -124,4 +124,3 @@ public class CntUnoDataContainer extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class BreakIterator
-

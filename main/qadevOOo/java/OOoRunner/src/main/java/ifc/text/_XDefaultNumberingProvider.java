@@ -67,4 +67,3 @@ public class _XDefaultNumberingProvider extends MultiMethodTest {
         tRes.tested("getDefaultContinuousNumberingLevels()", lev != null) ;
     }
 }
-

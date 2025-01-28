@@ -104,4 +104,3 @@ public class _UnoControlFixedTextModel extends MultiPropertyTest {
         testProperty("TextLineColor", ColorTester) ;
     }          
 }
-

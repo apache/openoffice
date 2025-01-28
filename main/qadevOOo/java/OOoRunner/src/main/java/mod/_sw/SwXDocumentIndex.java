@@ -137,4 +137,3 @@ public class SwXDocumentIndex extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXDocumentIndex
-

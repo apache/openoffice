@@ -160,4 +160,3 @@ public class ScSheetLinksObj extends TestCase {
     }
 
 }
-

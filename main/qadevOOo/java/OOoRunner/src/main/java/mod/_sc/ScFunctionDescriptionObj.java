@@ -110,5 +110,3 @@ public class ScFunctionDescriptionObj extends TestCase {
     }
 
 }
-
-

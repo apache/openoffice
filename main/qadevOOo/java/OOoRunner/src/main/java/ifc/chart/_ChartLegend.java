@@ -35,4 +35,3 @@ import lib.MultiPropertyTest;
 */
 public class _ChartLegend extends MultiPropertyTest {
 }
-

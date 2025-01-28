@@ -134,5 +134,3 @@ public class _XControlAccess extends MultiMethodTest {
      */
     public void _getControlProperty() {}
 }
-
-

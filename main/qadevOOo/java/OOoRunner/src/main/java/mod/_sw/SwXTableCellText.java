@@ -165,4 +165,3 @@ public class SwXTableCellText extends TestCase {
 
 
 }    // finish class SwXTableCellText
-

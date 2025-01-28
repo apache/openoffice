@@ -281,4 +281,3 @@ class SignatureEntity extends SecurityEntity
 		return rc;
 	}
 }
-

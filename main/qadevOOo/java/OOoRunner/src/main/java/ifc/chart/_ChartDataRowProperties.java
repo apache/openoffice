@@ -56,4 +56,3 @@ public class _ChartDataRowProperties extends MultiPropertyTest {
         }        
     }
 }
-

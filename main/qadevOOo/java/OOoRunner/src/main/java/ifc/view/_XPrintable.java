@@ -188,5 +188,3 @@ public class _XPrintable extends MultiMethodTest {
     } // finish _print
 
 }  // finish class _XPrintable
-
-

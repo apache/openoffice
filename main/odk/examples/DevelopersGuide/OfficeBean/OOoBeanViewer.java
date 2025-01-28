@@ -393,4 +393,3 @@ public class OOoBeanViewer extends java.applet.Applet
        frame.show();
    }
 }
-

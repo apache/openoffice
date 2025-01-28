@@ -911,5 +911,3 @@ class ServiceManagerFactory implements 	XServiceInfo, XSingleComponentFactory, X
             "ServiceManagerFactory.createInstanceWithArgumentsAndContext() not impl!" );
     }
 }
-
-

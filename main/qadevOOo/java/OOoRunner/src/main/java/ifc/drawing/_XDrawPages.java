@@ -87,4 +87,3 @@ public class _XDrawPages extends MultiMethodTest {
     } // end remove()
 
 } // end XDrawPages
-

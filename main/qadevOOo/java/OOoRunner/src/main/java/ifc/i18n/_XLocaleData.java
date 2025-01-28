@@ -490,4 +490,3 @@ public class _XLocaleData extends MultiMethodTest {
     }
 
 } // end XLocaleData
-

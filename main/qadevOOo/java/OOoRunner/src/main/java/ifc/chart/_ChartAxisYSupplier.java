@@ -160,4 +160,3 @@ public class _ChartAxisYSupplier extends MultiPropertyTest {
     }
 
 } // EOF ChartAxisYSupplier
-

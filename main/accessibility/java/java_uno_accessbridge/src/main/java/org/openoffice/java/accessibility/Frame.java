@@ -662,4 +662,3 @@ public class Frame extends java.awt.Frame implements javax.accessibility.Accessi
     }
 
 }
-

@@ -430,4 +430,3 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
 
     }   
 }
-

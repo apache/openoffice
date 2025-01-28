@@ -60,4 +60,3 @@ import lib.MultiPropertyTest;
 public class _TextProperties extends MultiPropertyTest {
 
 }
-

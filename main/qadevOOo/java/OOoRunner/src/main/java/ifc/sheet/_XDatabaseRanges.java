@@ -114,4 +114,3 @@ public class _XDatabaseRanges extends MultiMethodTest {
         tRes.tested("removeByName()", bResult);
     }
 }
-

@@ -240,4 +240,3 @@ public class _XLoadable extends MultiMethodTest {
         disposeEnvironment();
     }
 }
-

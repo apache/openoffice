@@ -123,4 +123,3 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
         return null;
     }
 }
-

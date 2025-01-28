@@ -130,5 +130,3 @@ public class _XContentProvider extends MultiMethodTest {
     }
 
 }
-
-

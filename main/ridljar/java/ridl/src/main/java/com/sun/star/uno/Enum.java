@@ -54,4 +54,3 @@ public abstract class Enum {
 		return m_value;	
 	}
 }
-

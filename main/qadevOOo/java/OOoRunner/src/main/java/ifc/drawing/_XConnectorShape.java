@@ -139,5 +139,3 @@ public class _XConnectorShape extends MultiMethodTest {
         tRes.tested("disconnectEnd()", true) ;
     }
 }
-
-

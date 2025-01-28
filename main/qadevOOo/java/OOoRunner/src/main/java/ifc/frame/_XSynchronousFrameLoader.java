@@ -175,5 +175,3 @@ public class _XSynchronousFrameLoader extends MultiMethodTest {
         }
     }
 }
-
-

@@ -42,5 +42,3 @@ public class _SingleSelectQueryComposer extends MultiPropertyTest {
 
 
 }  // finish class _SingleSelectQueryComposer
-
-

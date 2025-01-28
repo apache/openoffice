@@ -108,5 +108,3 @@ public class _XSpellChecker extends MultiMethodTest {
     }
 
 }  // finish class MTest
-
-

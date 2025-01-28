@@ -73,5 +73,3 @@ public class _XEndnotesSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XEndnotesSupplier
-
-

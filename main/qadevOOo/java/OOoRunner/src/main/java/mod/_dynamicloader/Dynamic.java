@@ -94,4 +94,3 @@ public class Dynamic extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

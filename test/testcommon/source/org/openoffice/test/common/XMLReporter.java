@@ -213,4 +213,3 @@ public class XMLReporter extends RunListener {
 	}
 
 }
-

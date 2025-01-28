@@ -164,4 +164,3 @@ public class OServiceManager extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class OServiceManager
-

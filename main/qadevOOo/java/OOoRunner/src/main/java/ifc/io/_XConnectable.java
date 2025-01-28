@@ -125,4 +125,3 @@ public class _XConnectable extends MultiMethodTest {
         this.disposeEnvironment() ;
     }
 }
-

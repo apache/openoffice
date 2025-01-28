@@ -87,4 +87,3 @@ public class SubstituteVariables extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

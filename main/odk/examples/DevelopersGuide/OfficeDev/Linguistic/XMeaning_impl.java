@@ -55,4 +55,3 @@ public class XMeaning_impl implements
         return aSynonyms;
     }
 };
-

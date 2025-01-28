@@ -149,4 +149,3 @@ public class SwXTextFrameText extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTextFrameText
-

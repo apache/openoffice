@@ -32,5 +32,3 @@ public class ConstantTypeInfo extends TypeInfo
 		super(name, flags);
 	}
 }
-
-

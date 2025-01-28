@@ -87,5 +87,3 @@ public class _XMimeContentTypeFactory extends MultiMethodTest {
         tRes.tested("createMimeContentType()", result) ;
     }
 }
-
-

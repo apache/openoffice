@@ -90,5 +90,3 @@ public class MethodTypeInfo extends TypeInfo
         return m_unoType;
     }
 }
-
-

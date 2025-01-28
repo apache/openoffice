@@ -309,4 +309,3 @@ public class DBHelper
     public static final String sAND = " AND ";
 
 }
-

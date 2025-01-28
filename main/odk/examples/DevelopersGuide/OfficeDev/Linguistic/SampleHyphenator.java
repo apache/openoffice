@@ -538,4 +538,3 @@ public class SampleHyphenator extends ComponentBase implements
 //         return bResult;
 //     }
 }
-

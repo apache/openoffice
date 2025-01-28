@@ -200,4 +200,3 @@ public class XInputStreamToInputStreamAdapter extends InputStream {
         // Not supported.
     }
 }
-

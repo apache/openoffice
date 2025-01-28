@@ -96,5 +96,3 @@ public class _XChild {
     }
 
 }  // finish class _XChild
-
-

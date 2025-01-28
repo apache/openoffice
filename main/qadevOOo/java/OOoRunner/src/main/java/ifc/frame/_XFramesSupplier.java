@@ -204,4 +204,3 @@ public class _XFramesSupplier extends MultiMethodTest {
     }
 
 } // finished class _XFramesSupplier
-

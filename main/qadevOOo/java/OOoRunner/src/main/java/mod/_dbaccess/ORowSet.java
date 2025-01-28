@@ -638,4 +638,3 @@ public class ORowSet extends TestCase {
 
     }
 }
-

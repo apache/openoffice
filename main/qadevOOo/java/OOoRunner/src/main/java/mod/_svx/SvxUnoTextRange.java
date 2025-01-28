@@ -149,4 +149,3 @@ public class SvxUnoTextRange extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

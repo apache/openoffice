@@ -183,4 +183,3 @@ public class AccessibleSlideView extends TestCase {
         }
     }
 }
-

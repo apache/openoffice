@@ -93,4 +93,3 @@ class JavaWindowPeerFake implements com.sun.star.awt.XSystemDependentWindowPeer,
 	{
 	}
 }
-

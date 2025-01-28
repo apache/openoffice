@@ -151,4 +151,3 @@ public class _Shape extends MultiPropertyTest {
 
 
 }
-

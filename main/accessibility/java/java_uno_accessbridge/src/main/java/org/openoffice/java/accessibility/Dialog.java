@@ -647,4 +647,3 @@ public class Dialog extends java.awt.Dialog implements javax.accessibility.Acces
         }
     }
 }
-

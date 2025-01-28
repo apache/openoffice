@@ -133,4 +133,3 @@ public class SwXTextFieldTypes extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }    // finish class SwXTextFieldTypes
-

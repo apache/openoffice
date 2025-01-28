@@ -60,4 +60,3 @@ public class _XTextGraphicObjectsSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XTextGraphicObjectsSupplier
-

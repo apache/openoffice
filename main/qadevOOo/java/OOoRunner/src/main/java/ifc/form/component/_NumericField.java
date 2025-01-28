@@ -50,4 +50,3 @@ public class _NumericField extends MultiPropertyTest {
         }) ;
     }
 }
-

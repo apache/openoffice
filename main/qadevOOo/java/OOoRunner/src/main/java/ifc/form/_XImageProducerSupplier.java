@@ -53,5 +53,3 @@ public class _XImageProducerSupplier extends MultiMethodTest {
         tRes.tested("getImageProducer()", bResult);
     }
 }
-
-

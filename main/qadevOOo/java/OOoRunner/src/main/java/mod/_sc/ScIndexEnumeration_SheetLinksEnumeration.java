@@ -141,4 +141,3 @@ public class ScIndexEnumeration_SheetLinksEnumeration extends TestCase {
     }
 
 }
-

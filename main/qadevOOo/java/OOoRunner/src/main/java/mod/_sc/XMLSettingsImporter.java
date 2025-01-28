@@ -212,4 +212,3 @@ public class XMLSettingsImporter extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }
-

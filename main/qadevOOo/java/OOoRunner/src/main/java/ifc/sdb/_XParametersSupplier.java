@@ -53,5 +53,3 @@ public class _XParametersSupplier extends MultiMethodTest {
 
     }
 }  // finish class _XParametersSupplier
-
-

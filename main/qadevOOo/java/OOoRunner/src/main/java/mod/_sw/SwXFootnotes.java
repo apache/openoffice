@@ -127,4 +127,3 @@ public class SwXFootnotes extends TestCase {
     }
 
 }    // finish class SwXFootnote
-

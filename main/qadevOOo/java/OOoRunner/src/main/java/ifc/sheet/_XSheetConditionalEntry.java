@@ -67,5 +67,3 @@ public class _XSheetConditionalEntry extends MultiMethodTest {
     }
 
 }  // finish class _XSheetConditionalEntry
-
-

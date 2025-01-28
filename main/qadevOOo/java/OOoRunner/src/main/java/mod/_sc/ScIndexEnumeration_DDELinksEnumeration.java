@@ -179,5 +179,3 @@ public class ScIndexEnumeration_DDELinksEnumeration extends TestCase {
     }
 
 }
-
-

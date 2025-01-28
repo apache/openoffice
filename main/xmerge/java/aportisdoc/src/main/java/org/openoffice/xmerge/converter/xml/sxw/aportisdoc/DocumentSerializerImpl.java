@@ -524,4 +524,3 @@ public final class DocumentSerializerImpl
         Debug.log(Debug.TRACE, str);
     }
 }
-

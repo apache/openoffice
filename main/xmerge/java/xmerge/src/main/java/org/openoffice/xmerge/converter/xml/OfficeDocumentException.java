@@ -123,4 +123,3 @@ public final class OfficeDocumentException extends IOException {
         return message.toString() + super.getMessage();
     }
 }
-

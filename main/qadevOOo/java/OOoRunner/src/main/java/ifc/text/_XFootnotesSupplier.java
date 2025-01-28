@@ -75,4 +75,3 @@ public class _XFootnotesSupplier extends MultiMethodTest {
         tRes.tested("getFootnoteSettings()", result);
     }
 }
-

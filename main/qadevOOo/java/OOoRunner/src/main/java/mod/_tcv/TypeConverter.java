@@ -64,4 +64,3 @@ public class TypeConverter extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class TypeConverter
-

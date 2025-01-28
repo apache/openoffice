@@ -226,4 +226,3 @@ public class _XBridgeFactory extends MultiMethodTest {
             bridgeName.equals(br.getName())) ;
     }
 }
-

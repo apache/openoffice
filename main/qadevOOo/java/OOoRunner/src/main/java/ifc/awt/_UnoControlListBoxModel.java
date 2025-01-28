@@ -119,4 +119,3 @@ public class _UnoControlListBoxModel extends MultiPropertyTest {
         testProperty("TextLineColor", ColorTester) ;
     }          
 }
-

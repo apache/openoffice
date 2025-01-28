@@ -152,4 +152,3 @@ public class _BarDiagram extends MultiPropertyTest {
         testProperty("NumberOfLines", LineTester) ;
     }
 } // EOF BarDiagram
-

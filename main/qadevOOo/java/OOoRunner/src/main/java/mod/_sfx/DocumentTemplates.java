@@ -90,4 +90,3 @@ public class DocumentTemplates extends TestCase {
     }
 
 }    // finish class TestCase
-

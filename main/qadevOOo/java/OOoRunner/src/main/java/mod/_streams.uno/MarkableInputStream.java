@@ -137,4 +137,3 @@ public class MarkableInputStream extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

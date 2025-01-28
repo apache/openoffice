@@ -164,4 +164,3 @@ public class SdLayerManager extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SdLayerManager
-

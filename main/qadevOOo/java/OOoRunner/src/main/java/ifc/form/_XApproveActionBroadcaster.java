@@ -102,5 +102,3 @@ public class _XApproveActionBroadcaster extends MultiMethodTest {
     }
 
 }
-
-

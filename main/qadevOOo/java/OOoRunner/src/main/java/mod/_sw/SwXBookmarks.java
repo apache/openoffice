@@ -112,4 +112,3 @@ public class SwXBookmarks extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXBookmarks
-

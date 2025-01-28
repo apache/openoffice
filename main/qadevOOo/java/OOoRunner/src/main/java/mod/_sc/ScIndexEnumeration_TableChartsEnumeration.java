@@ -231,4 +231,3 @@ public class ScIndexEnumeration_TableChartsEnumeration extends TestCase {
 
     } // end of insertIntoCell
 }
-

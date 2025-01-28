@@ -151,4 +151,3 @@ public class ScAutoFormatsObj extends TestCase{
     }
 
 }    // finish class ScAutoFormatsObj
-

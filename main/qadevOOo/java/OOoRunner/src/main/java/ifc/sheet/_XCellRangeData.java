@@ -78,4 +78,3 @@ public class _XCellRangeData extends MultiMethodTest {
         tRes.tested("setDataArray()", res);
     }
 }
-

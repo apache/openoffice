@@ -63,5 +63,3 @@ public class _XPropertyMatcherFactory extends MultiMethodTest {
         tRes.tested("createPropertyMatcher()", matcher != null) ;
     }
 }
-
-

@@ -104,4 +104,3 @@ public class SwXStyleFamilies extends TestCase {
 
 
 }    // finish class SwXStyle
-

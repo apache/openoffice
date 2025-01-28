@@ -240,5 +240,3 @@ public class _XUpdateBroadcaster extends MultiMethodTest {
     }
     
 }
-
-

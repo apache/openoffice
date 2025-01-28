@@ -59,4 +59,3 @@ public class _XTextField extends MultiMethodTest{
 
      } // end getPresentation()
 }
-

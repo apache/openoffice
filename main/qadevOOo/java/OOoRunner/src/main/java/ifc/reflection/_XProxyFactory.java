@@ -90,4 +90,3 @@ public class _XProxyFactory extends MultiMethodTest {
             util.ValueComparer.equalValue(params, obj.params));
     }
 }
-

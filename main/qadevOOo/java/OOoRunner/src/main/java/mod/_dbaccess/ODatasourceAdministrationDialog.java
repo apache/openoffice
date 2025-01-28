@@ -93,4 +93,3 @@ public class ODatasourceAdministrationDialog extends TestCase {
     } // finish method getTestEnvironment
 
 } // finish class ODataSourceAdministrationDialog
-

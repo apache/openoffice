@@ -118,4 +118,3 @@ public class ConstantInstanceProvider implements XInstanceProvider {
 		return result;
 	}
 }
-

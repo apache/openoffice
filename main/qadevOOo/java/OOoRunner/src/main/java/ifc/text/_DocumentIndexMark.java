@@ -39,5 +39,3 @@ import lib.MultiPropertyTest;
 public class _DocumentIndexMark extends MultiPropertyTest {
 
 }  // finish class _DocumentIndexMark
-
-

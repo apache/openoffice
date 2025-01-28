@@ -51,4 +51,3 @@ public interface MergeAlgorithm {
     public void applyDifference(Iterator orgSeq, Iterator modSeq,
                                 Difference[] differences) throws MergeException;
 }
-

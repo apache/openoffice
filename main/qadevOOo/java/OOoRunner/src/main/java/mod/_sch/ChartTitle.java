@@ -113,4 +113,3 @@ public class ChartTitle extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ChXChartObject_Title
-

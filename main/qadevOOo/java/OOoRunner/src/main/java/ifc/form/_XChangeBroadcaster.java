@@ -193,4 +193,3 @@ public class _XChangeBroadcaster extends MultiMethodTest {
     }
 
 } // finished class _XChangeBroadcaster
-

@@ -91,5 +91,3 @@ public class StandaloneDocumentInfo {
     private static final OfficeConnection connection = new OfficeConnection();
 
 }
-
-

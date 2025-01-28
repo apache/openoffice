@@ -63,4 +63,3 @@ class TestObject implements TestXInterface {
 		return "TestObject_resultString";
 	}
 }
-

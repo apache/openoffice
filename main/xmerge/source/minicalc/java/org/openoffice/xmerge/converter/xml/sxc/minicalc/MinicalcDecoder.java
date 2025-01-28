@@ -737,4 +737,3 @@ final class MinicalcDecoder extends SpreadsheetDecoder {
         // TODO - Get any more formatting data here
     }   
 }
-

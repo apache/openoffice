@@ -387,4 +387,3 @@ public class JoinViewAccessibility extends TestCase {
         }
     }
 }
-

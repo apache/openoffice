@@ -170,4 +170,3 @@ public class NativeView extends java.awt.Canvas
     public Integer maHandle ;
     public int     maSystem ;
 }
-

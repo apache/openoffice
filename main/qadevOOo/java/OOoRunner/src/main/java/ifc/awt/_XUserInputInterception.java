@@ -532,4 +532,3 @@ public class _XUserInputInterception extends MultiMethodTest {
         final public static int KEY_TEXT_INTO_DOC = 2;
     }   
 }
-

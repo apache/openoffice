@@ -140,4 +140,3 @@ public class ChXChartView extends TestCase {
 
 
 }    // finish class ChXChartView
-

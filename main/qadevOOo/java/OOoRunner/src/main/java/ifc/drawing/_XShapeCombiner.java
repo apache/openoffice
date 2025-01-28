@@ -103,4 +103,3 @@ public class _XShapeCombiner extends MultiMethodTest {
     } // end of split
 
 } // end of XShapeCombiner
-

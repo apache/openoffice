@@ -143,4 +143,3 @@ public class _XSet extends MultiMethodTest {
     }
 
 } // finished class _XSet
-

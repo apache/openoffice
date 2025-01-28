@@ -136,4 +136,3 @@ public class EmbedContFrame extends Frame
         return xMSF;
 	}
 }  
-

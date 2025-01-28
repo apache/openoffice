@@ -86,5 +86,3 @@ public class _XLoadListener extends MultiMethodTest {
     }
 
 } //EOF of XLoadListener
-
-

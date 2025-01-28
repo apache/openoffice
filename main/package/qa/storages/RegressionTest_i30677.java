@@ -281,4 +281,3 @@ public class RegressionTest_i30677 implements StorageTest {
 		}
     } 
 }
-

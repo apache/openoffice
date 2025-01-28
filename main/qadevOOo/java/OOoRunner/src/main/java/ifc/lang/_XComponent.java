@@ -173,5 +173,3 @@ public class _XComponent extends MultiMethodTest {
     }
 
 } // finished class _XComponent
-
-

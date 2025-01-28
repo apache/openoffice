@@ -34,4 +34,3 @@ import lib.MultiPropertyTest;
 public class _Defaults extends MultiPropertyTest {
 
 } //finish class _Defaults
-

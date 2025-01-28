@@ -421,4 +421,3 @@ public class WikiEditSettingDialog extends WikiDialog
         ThreadStop( false );
     }
 }
-

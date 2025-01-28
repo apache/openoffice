@@ -77,4 +77,3 @@ public class _XCompletedConnection extends MultiMethodTest {
         tRes.tested("connectWithCompletion()", con != null) ;
     }
 }  // finish class _XCompletedConnection
-

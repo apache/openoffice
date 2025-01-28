@@ -406,4 +406,3 @@ public class ChXDiagram extends TestCase {
 
 
 }    // finish class ChXDiagram
-

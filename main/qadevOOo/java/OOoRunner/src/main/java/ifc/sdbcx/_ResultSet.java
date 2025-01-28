@@ -38,4 +38,3 @@ import lib.MultiPropertyTest;
 public class _ResultSet extends MultiPropertyTest {
 
 } 
-

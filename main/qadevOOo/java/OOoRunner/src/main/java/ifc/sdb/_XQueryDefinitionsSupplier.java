@@ -62,4 +62,3 @@ public class _XQueryDefinitionsSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XQueryDefinitionsSupplier
-

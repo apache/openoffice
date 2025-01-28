@@ -98,4 +98,3 @@ public class ConverterInfoList {
         return jars.elements();
     }
 }
-

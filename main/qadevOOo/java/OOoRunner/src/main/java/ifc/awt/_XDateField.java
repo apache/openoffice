@@ -332,5 +332,3 @@ public class _XDateField extends MultiMethodTest {
         tRes.tested("isLongFormat()", result) ;
     }
 }
-
-

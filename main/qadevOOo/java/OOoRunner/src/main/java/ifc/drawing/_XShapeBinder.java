@@ -102,4 +102,3 @@ public class _XShapeBinder extends MultiMethodTest {
         tRes.tested("unbind()", result);
     }
 }
-

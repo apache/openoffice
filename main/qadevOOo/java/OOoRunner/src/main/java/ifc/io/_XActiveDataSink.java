@@ -103,5 +103,3 @@ public class _XActiveDataSink extends MultiMethodTest {
         this.disposeEnvironment() ;
     }
 }
-
-

@@ -151,4 +151,3 @@ public class AccessiblePresentationOLEShape extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

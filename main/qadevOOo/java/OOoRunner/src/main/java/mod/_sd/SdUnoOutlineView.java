@@ -238,4 +238,3 @@ public class SdUnoOutlineView extends TestCase {
 
 
 } // finish class SdUnoOutlineView
-

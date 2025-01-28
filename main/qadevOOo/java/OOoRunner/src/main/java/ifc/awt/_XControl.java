@@ -214,5 +214,3 @@ public class _XControl extends MultiMethodTest {
     }
 
 }
-
-

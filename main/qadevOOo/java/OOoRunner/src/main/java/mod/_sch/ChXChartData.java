@@ -95,4 +95,3 @@ public class ChXChartData extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ChXChartData
-

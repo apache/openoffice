@@ -77,4 +77,3 @@ public final class TextNodeIterator extends NodeIterator {
         }
     }
 }
-

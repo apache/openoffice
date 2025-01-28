@@ -181,4 +181,3 @@ public class XMLStylesImporter extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }
-

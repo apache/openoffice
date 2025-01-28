@@ -70,4 +70,3 @@ public class _XDataFormatTranslator extends MultiMethodTest {
     }
 
 }
-

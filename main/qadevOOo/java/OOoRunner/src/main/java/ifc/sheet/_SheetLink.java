@@ -76,5 +76,3 @@ public class _SheetLink extends MultiPropertyTest {
         testProperty("Filter", FilterTester);
     }
 }
-
-

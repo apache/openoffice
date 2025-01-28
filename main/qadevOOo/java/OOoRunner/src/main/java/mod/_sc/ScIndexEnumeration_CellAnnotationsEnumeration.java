@@ -131,4 +131,3 @@ public class ScIndexEnumeration_CellAnnotationsEnumeration extends TestCase {
         return tEnv;
     }
 }
-

@@ -144,4 +144,3 @@ public class ScCellSearchObj extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }    // finish class ScCellSearchObj
-

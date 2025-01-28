@@ -187,4 +187,3 @@ public class _LineDiagram extends MultiPropertyTest {
         testProperty("SymbolBitmapURL", URLTester) ;
     }
 } // EOF LineDiagram
-

@@ -1951,5 +1951,3 @@ class TableCellFormatter
 }
 
     
-
-

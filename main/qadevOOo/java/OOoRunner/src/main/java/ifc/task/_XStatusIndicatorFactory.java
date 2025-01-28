@@ -70,5 +70,3 @@ public class _XStatusIndicatorFactory extends MultiMethodTest {
         tRes.tested("createStatusIndicator()", bResult);
     }
 }
-
-

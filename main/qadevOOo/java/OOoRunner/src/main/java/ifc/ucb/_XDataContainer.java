@@ -128,5 +128,3 @@ public class _XDataContainer extends MultiMethodTest {
         tRes.tested("getDataURL()", dataURL.equals(gURL)) ;
     }
 }
-
-

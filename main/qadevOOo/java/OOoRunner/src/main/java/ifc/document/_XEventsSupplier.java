@@ -53,4 +53,3 @@ public class _XEventsSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XEventSupplier
-

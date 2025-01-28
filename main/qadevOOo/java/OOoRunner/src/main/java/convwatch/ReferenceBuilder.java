@@ -297,4 +297,3 @@ public class ReferenceBuilder extends EnhancedComplexTestCase
             }
         }
 }
-

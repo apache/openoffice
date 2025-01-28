@@ -277,4 +277,3 @@ public class OSingleSelectQueryComposer extends TestCase {
     protected void cleanup( TestParameters Param, PrintWriter log) {
     }
 }
-

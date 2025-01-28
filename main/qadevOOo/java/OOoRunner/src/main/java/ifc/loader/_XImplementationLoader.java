@@ -181,4 +181,3 @@ public class _XImplementationLoader extends MultiMethodTest {
         this.disposeEnvironment() ;
     }
 }
-

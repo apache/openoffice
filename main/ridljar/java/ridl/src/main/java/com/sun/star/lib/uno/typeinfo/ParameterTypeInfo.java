@@ -106,5 +106,3 @@ public class ParameterTypeInfo extends TypeInfo
         return m_unoType;
     }
 }
-
-

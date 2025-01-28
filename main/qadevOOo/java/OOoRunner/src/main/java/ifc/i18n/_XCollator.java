@@ -423,4 +423,3 @@ public class _XCollator extends MultiMethodTest {
     }
 
 }
-

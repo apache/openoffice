@@ -89,5 +89,3 @@ public class _XShapeDescriptor extends MultiMethodTest {
     }
 
 }
-
-

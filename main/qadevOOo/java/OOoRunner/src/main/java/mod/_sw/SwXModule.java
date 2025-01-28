@@ -83,4 +83,3 @@ public class SwXModule extends TestCase {
     } // finish method getTestEnvironment
 
 } // finish class SwXModule
-

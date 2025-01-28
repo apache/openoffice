@@ -85,6 +85,3 @@ public class _XTableCharts extends MultiMethodTest {
     } // removeByName()
 
 } // finish class _XTableCharts
-
-
-

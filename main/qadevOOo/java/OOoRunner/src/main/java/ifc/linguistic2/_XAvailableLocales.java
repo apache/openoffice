@@ -50,5 +50,3 @@ public class _XAvailableLocales extends MultiMethodTest {
     }
 
 }  // finish class XAvailableLocales
-
-

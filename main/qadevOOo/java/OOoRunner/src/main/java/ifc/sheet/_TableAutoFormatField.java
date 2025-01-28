@@ -121,6 +121,3 @@ public class _TableAutoFormatField extends MultiPropertyTest {
     }
 
 } //finish class _TableAutoFormatField
-
-
-

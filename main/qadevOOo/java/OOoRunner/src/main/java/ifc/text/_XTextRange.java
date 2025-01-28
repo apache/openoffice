@@ -176,5 +176,3 @@ public class _XTextRange extends MultiMethodTest {
         tRes.tested("setString()", "Middle".equals(oObj.getString())) ;
     }
 }
-
-

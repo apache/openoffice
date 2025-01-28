@@ -28,4 +28,3 @@ public interface NativeFrame {
     public void setInitialComponent(java.awt.Component c);
 //  public Integer getHWND();
 }
-

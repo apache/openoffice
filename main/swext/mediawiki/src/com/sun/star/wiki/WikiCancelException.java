@@ -26,4 +26,3 @@ package com.sun.star.wiki;
 class WikiCancelException extends java.lang.Exception
 {
 }
-

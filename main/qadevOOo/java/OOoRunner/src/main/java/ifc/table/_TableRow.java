@@ -40,4 +40,3 @@ import lib.MultiPropertyTest;
 public class _TableRow extends MultiPropertyTest {
 
 } // finish class _TableRow
-

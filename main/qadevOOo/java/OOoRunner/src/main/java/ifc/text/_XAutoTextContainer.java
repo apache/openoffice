@@ -133,5 +133,3 @@ public class _XAutoTextContainer  extends MultiMethodTest {
     } // end removeByName()
 
 }    /// finish class XAutoTextContainer
-
-

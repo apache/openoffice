@@ -886,4 +886,3 @@ public class RDFRepositoryTest
 
     private static final OfficeConnection connection = new OfficeConnection();
 }
-

@@ -295,4 +295,3 @@ public class CalcAddins {
 //         _CalcAddins.ADDIN_SERVICE, regKey);
 //     }
 }
-

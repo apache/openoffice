@@ -73,4 +73,3 @@ public class FileProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class FileProvider
-

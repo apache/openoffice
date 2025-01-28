@@ -45,4 +45,3 @@ public class Union {
 
 	protected Object m_value;
 }
-

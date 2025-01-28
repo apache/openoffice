@@ -105,4 +105,3 @@ public class _XInvocationAdapterFactory extends MultiMethodTest {
         }
     }
 }
-

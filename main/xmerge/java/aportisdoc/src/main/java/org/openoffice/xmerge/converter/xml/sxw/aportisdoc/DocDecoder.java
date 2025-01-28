@@ -293,4 +293,3 @@ final class DocDecoder implements DocConstants {
         int version = 0;
     }
 }
-

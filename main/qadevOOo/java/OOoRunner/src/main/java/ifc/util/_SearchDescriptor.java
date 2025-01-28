@@ -46,4 +46,3 @@ import lib.MultiPropertyTest;
 public class _SearchDescriptor extends MultiPropertyTest {
 
 } //finish class _SearchDescriptor
-

@@ -79,4 +79,3 @@ public class SimpleFileAccess extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SimpleFileAccess
-

@@ -60,4 +60,3 @@ public interface DocumentSerializer {
      */
     public ConvertData serialize() throws ConvertException, IOException;
 }
-

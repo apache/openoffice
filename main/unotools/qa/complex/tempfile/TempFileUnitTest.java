@@ -96,4 +96,3 @@ public class TempFileUnitTest {
 
     private static final OfficeConnection connection = new OfficeConnection();
 };
-

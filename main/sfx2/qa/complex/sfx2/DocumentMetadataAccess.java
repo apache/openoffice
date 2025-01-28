@@ -1301,4 +1301,3 @@ public class DocumentMetadataAccess
     private static final OfficeConnection connection = new OfficeConnection();
 
 }
-

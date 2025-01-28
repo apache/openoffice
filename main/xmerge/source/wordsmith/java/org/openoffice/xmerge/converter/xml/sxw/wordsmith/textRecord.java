@@ -108,4 +108,3 @@ class textRecord {
             return null;
     }
 }
-

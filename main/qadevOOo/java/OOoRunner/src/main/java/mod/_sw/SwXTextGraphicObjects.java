@@ -158,4 +158,3 @@ public class SwXTextGraphicObjects extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTextGraphicObjects
-

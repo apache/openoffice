@@ -79,4 +79,3 @@ public class _ParagraphPropertiesAsian extends MultiPropertyTest {
 
 
 }  // finish class _ParagraphProperties
-

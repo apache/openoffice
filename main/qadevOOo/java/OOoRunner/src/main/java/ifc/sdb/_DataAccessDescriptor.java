@@ -117,5 +117,3 @@ public class _DataAccessDescriptor extends MultiPropertyTest {
     }
     
 }
-
-

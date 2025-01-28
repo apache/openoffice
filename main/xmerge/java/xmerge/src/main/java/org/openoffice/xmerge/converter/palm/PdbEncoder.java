@@ -189,4 +189,3 @@ public final class PdbEncoder {
         dos.flush();
     }
 }
-

@@ -135,4 +135,3 @@ public class _XControlContainer extends MultiMethodTest {
         tRes.tested("getControls()",xCtrls.length >= 2);
     }
 }
-

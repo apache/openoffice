@@ -84,4 +84,3 @@ class XConnectionOutputStream_Adapter extends OutputStream {
 		}
 	}
 }
-

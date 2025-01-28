@@ -247,5 +247,3 @@ public void testResizeRow() throws Exception {
     }
 
 }
-
-

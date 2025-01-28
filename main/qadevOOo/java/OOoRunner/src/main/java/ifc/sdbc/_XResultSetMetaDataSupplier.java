@@ -61,5 +61,3 @@ public class _XResultSetMetaDataSupplier extends MultiMethodTest {
 
     }
 }  // finish class _XResultSetMetaDataSupplier
-
-

@@ -60,4 +60,3 @@ public interface ConverterCapabilities {
      */
     boolean canConvertAttribute(String tag, String attribute);
 }
-

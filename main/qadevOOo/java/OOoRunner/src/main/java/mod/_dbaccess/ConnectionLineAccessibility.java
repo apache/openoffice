@@ -416,4 +416,3 @@ public class ConnectionLineAccessibility extends TestCase
         }
     }
 }
-

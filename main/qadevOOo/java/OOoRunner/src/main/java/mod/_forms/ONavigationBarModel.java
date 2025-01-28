@@ -74,4 +74,3 @@ public class ONavigationBarModel extends GenericModelTest {
     }
     
 }    // finish class ONavigationBarModel
-

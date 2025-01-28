@@ -118,4 +118,3 @@ public class AccessibleControlShape extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

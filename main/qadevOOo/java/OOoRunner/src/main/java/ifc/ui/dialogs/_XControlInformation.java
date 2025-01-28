@@ -184,5 +184,3 @@ public class _XControlInformation extends MultiMethodTest {
         tRes.tested("isControlPropertySupported()", result) ;
     }
 }
-
-

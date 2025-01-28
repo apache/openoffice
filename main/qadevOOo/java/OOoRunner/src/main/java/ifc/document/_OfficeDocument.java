@@ -38,4 +38,3 @@ import lib.MultiPropertyTest;
 public class _OfficeDocument extends MultiPropertyTest {
 
 }
-

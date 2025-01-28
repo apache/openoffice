@@ -155,6 +155,3 @@ public class _XNameAccess extends MultiMethodTest {
 
     } // end getByName()
 } /// finished class _XNameAccess
-
-
-

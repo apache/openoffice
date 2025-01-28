@@ -177,5 +177,3 @@ public class _XLinguServiceManager extends MultiMethodTest {
     }
 
 }  // finish class _XLinguServiceManager
-
-

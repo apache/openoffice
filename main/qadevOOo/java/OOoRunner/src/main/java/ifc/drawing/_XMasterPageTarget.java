@@ -101,4 +101,3 @@ public class _XMasterPageTarget extends MultiMethodTest{
     }
 
 } // end of XMasterPageTarget
-

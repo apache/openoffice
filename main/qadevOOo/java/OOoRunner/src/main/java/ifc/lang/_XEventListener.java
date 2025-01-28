@@ -55,4 +55,3 @@ public class _XEventListener extends MultiMethodTest {
     }
 
 } //EOF of XEventListener
-

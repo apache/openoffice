@@ -79,4 +79,3 @@ public class IndexEntrySupplier extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

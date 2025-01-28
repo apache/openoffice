@@ -195,4 +195,3 @@ public class XMLStylesImporter extends TestCase {
     } // end of getTestEnvironment
 
 }
-

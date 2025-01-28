@@ -72,5 +72,3 @@ class QueuedListener
 
     private EventListener maListener;
 }
-
-

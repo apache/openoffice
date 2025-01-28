@@ -76,4 +76,3 @@ public class DefaultNumberingProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

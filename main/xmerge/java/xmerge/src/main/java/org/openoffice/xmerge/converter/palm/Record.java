@@ -209,4 +209,3 @@ public final class Record {
         return bool;
     }
 }
-

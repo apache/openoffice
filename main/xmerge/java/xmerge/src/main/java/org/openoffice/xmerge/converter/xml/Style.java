@@ -220,4 +220,3 @@ public class Style {
         return true;
     }
 }
-

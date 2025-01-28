@@ -185,4 +185,3 @@ public class _XCachedDynamicResultSetStubFactory extends MultiMethodTest {
     }
 
 }
-

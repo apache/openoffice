@@ -263,4 +263,3 @@ public class PipedConnection implements XConnection {
 	}
 
 }
-

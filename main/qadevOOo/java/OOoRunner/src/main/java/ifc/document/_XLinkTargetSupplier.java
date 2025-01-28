@@ -51,5 +51,3 @@ public class _XLinkTargetSupplier extends MultiMethodTest {
     }
 
 }
-
-

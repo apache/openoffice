@@ -272,4 +272,3 @@ public class ConverterInfoReader {
        return (converterInfoList.elements());
     }
 }
-

@@ -204,4 +204,3 @@ public class XMLStylesExporter extends TestCase {
         }
     }
 }
-

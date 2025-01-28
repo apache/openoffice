@@ -146,5 +146,3 @@ public class ScDatabaseRangesObj extends TestCase {
     }
 
 }
-
-

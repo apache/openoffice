@@ -81,4 +81,3 @@ public class TextNodeEntry {
         return node_;
     }
 }
-

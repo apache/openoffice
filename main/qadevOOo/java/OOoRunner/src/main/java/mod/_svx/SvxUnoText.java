@@ -163,4 +163,3 @@ public class SvxUnoText extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SvxUnoText
-

@@ -96,4 +96,3 @@ public class FrameLoader extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

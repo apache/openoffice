@@ -49,4 +49,3 @@ public class _XEmbeddedObjectSupplier extends MultiMethodTest {
                 oObj.getEmbeddedObject() != null);
     }
 }  // finish class _XEmbeddedObjectSupplier
-

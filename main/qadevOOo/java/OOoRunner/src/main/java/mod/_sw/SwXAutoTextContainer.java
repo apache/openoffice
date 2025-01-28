@@ -82,4 +82,3 @@ public class SwXAutoTextContainer extends TestCase {
     }
 
 }    // finish class SwXAutoTextcontainer
-

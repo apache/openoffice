@@ -91,4 +91,3 @@ public class LinguProps extends TestCase {
 
 
 }    // finish class LinguProps
-

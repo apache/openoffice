@@ -711,4 +711,3 @@ public class IniFile implements Enumeration
             return nCount;
         }
 }
-

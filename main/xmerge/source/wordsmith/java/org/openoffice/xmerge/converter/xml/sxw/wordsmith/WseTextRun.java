@@ -317,4 +317,3 @@ class WseTextRun extends Wse {
         System.out.println("\n" + text);
     }
 }
-

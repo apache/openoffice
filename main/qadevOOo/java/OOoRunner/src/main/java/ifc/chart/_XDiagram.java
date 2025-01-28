@@ -148,5 +148,3 @@ public class _XDiagram extends MultiMethodTest {
         tRes.tested("getDataPointProperties()", result);
     }
 }
-
-

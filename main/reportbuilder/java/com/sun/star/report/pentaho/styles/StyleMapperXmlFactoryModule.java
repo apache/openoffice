@@ -63,4 +63,3 @@ public class StyleMapperXmlFactoryModule implements XmlFactoryModule
         return null;
     }
 }
-

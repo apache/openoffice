@@ -37,5 +37,3 @@ import lib.MultiPropertyTest;
 public class _BaseIndexMark extends MultiPropertyTest {
 
 }  // finish class _BaseIndexMark
-
-

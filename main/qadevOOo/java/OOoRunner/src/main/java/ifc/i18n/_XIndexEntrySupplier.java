@@ -100,4 +100,3 @@ public class _XIndexEntrySupplier extends MultiMethodTest {
 
 
 } // end XIndexEntrySupplier
-

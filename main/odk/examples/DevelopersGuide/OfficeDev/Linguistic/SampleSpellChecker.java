@@ -481,4 +481,3 @@ public class SampleSpellChecker extends ComponentBase implements
 //         return bResult;
 //     }
 }
-

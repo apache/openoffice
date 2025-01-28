@@ -105,4 +105,3 @@ public class _XCloneable extends MultiMethodTest {
     }
 
 }  // finish class _XCloneable
-

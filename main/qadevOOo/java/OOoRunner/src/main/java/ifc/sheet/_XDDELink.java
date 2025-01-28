@@ -104,4 +104,3 @@ public class _XDDELink extends MultiMethodTest {
         tRes.tested("getTopic()", bResult) ;
     }
 }
-

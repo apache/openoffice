@@ -135,4 +135,3 @@ public class _XDispatchProviderInterception extends MultiMethodTest {
         tRes.tested("releaseDispatchProviderInterceptor()", result) ;
     }
 }
-

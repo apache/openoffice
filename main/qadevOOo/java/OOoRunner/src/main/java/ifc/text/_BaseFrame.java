@@ -117,4 +117,3 @@ public class _BaseFrame extends MultiPropertyTest {
     }
 
 } //finish class _BaseFrame
-

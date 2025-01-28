@@ -86,4 +86,3 @@ public class _DatabaseForm extends MultiPropertyTest {
         });
     }
 }
-

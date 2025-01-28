@@ -239,4 +239,3 @@ public class _XCellRangeMovement extends MultiMethodTest {
     }
 
 } // EOC _XCellRangeMovement
-

@@ -120,4 +120,3 @@ public interface IThreadPool {
 	 */
 	public void destroy();
 }
-

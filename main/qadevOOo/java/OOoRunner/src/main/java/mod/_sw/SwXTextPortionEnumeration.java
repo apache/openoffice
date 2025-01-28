@@ -154,4 +154,3 @@ public class SwXTextPortionEnumeration extends TestCase {
 
 
 }    // finish class SwXTextPortionEnumeration
-

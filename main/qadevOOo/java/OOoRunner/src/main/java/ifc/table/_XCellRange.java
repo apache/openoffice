@@ -144,4 +144,3 @@ public class _XCellRange extends MultiMethodTest {
     }       
 
 } // finish class _XCellRange
-

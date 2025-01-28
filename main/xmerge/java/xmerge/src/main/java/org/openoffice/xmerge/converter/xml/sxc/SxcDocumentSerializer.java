@@ -986,4 +986,3 @@ public abstract class SxcDocumentSerializer implements OfficeConstants,
     }
 
 }
-

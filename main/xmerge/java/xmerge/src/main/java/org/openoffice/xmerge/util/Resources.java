@@ -92,4 +92,3 @@ public final class Resources
         return rb.getString(key);
     }
 }
-

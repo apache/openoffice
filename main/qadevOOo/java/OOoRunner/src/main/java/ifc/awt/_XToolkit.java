@@ -149,4 +149,3 @@ public class _XToolkit extends MultiMethodTest {
     }
 
 }
-

@@ -136,5 +136,3 @@ public class _XImageConsumer extends MultiMethodTest {
         tRes.tested("complete()", result) ;
     }
 }
-
-

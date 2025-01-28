@@ -463,4 +463,3 @@ public class RadioButtons
         return verifyRadios( radios, states, "seems some of the radio button check states didn't survive the page activation(s)!" );
     }
 }
-

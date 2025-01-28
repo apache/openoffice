@@ -67,5 +67,3 @@ public class _XReplaceDescriptor extends MultiMethodTest {
     }
 
 }  // finish class _XReplaceDescriptor
-
-

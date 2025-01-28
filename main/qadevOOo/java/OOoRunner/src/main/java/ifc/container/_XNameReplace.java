@@ -218,5 +218,3 @@ public class _XNameReplace extends MultiMethodTest {
     }
 
 }
-
-

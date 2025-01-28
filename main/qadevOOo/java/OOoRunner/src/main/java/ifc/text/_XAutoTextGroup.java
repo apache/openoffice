@@ -300,5 +300,3 @@ public class _XAutoTextGroup extends MultiMethodTest {
     }
 
 }  // finish class _XAutoTextGroup
-
-

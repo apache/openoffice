@@ -203,5 +203,3 @@ public class _XIndexReplace extends MultiMethodTest {
         tRes.tested("replaceByIndex()", result);
     }
 }
-
-

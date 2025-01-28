@@ -141,4 +141,3 @@ public class AttributeListHelper implements com.sun.star.xml.sax.XAttributeList
 		return value;
 	}
 }
-

@@ -61,4 +61,3 @@ public class _XGridFieldDataSupplier extends MultiMethodTest {
         tRes.tested("queryFieldData()", data != null);
      }
 }// finish class _XGridFieldDataSupplier
-

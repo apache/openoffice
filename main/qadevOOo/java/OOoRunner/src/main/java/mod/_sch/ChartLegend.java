@@ -135,4 +135,3 @@ public class ChartLegend extends TestCase {
 
 
 }    // finish class ChartLegend
-

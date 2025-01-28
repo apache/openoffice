@@ -138,4 +138,3 @@ class WseHeader extends Wse {
         } else return null;
     }
 }
-

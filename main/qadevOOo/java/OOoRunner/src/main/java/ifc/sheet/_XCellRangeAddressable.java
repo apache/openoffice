@@ -50,4 +50,3 @@ public class _XCellRangeAddressable extends MultiMethodTest {
     }
 
 } // EOC _XCellRangeAddressable
-

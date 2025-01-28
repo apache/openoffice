@@ -398,4 +398,3 @@ public class FileHelper
             return aFileFilter;
         }
 }
-

@@ -392,4 +392,3 @@ public class _XTableColumns extends MultiMethodTest {
     }
 
     } //finish class _XTableColumns
-

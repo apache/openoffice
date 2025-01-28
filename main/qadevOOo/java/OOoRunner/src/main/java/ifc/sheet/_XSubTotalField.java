@@ -107,5 +107,3 @@ public class _XSubTotalField extends MultiMethodTest {
     } // end of getSubTotalColumns
 
 }  // finish class _XSubTotalField
-
-

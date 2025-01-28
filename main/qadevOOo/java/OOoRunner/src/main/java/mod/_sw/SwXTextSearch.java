@@ -124,4 +124,3 @@ public class SwXTextSearch extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTextSearch
-

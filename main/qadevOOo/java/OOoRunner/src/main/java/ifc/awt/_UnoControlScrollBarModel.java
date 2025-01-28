@@ -108,4 +108,3 @@ public class _UnoControlScrollBarModel extends MultiPropertyTest {
         }) ;
     }
 }
-

@@ -40,4 +40,3 @@ import lib.MultiPropertyTest;
 public class _Layer extends MultiPropertyTest {
 
 }// end of _Layer.java
-

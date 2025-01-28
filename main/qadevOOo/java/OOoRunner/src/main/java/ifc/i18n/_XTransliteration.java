@@ -449,4 +449,3 @@ public class _XTransliteration extends MultiMethodTest {
         return ret ;
     }
 }
-

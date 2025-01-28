@@ -142,4 +142,3 @@ public class OCheckBoxModel extends GenericModelTest {
         return super.createTestEnvironment(Param, log);
     }
 }    // finish class OCheckBoxModel
-

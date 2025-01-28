@@ -166,4 +166,3 @@ public class _XFormController extends MultiMethodTest {
         }
     }
 }
-

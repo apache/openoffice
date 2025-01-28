@@ -151,4 +151,3 @@ public class SvxShapeControl extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SvxShapeControl
-

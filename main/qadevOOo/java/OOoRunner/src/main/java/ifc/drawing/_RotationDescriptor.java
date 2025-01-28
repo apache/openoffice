@@ -94,5 +94,3 @@ public class _RotationDescriptor extends MultiPropertyTest {
     }
 
 }  // finish class _RotationDescriptor
-
-

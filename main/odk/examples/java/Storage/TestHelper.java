@@ -882,4 +882,3 @@ public class TestHelper  {
 		System.out.println( m_sTestPrefix + sError );
 	}
 }
-
