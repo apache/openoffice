@@ -25,6 +25,15 @@ repos:
     hooks:
       - id: identity
       - id: check-hooks-apply
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-case-conflict
+      - id: check-illegal-windows-names
+      - id: check-merge-conflict
+      - id: check-vcs-permalinks
+      - id: mixed-line-ending
+        files: ^main/.*\.(c|h)xx$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
     hooks:
