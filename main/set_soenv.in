@@ -115,7 +115,7 @@ my ( $dmake, $build, $build_client, $nmake, $mkout, $deliver, $zipdep );
 #
 
 #-------------------------------------------------------------
-# IIIa. Initialising constants.
+# IIIa. Initializing constants.
 #-------------------------------------------------------------
 #
 # $platform is needed for PathFormat()
@@ -131,7 +131,7 @@ $unset          = "unset";          # msdos batch file command
 $set            = "set";            # msdos batch file command
 $ds             = "/";              # directory separator
 $ps             = ":";              # path separator
-$wps            = ":";              # path separator, will be set to ';' for windows later.
+$wps            = ":";              # path separator, will be set to ';' for Windows later.
 $cur_dir        = ".";              # current directory
 $par_dir        = "..";             # parent directory
 $I              = " -I";            # include search path
@@ -161,7 +161,7 @@ my @unixroot='@unixroot';
 
 #
 #--------------------------------------------------------------------
-# IV. Initialise the warning container and print a note to the user.
+# IV. Initialize the warning container and print a note to the user.
 #--------------------------------------------------------------------
 #
 # Add the configure (pre-requisite) warnings to the warning container
@@ -177,7 +177,7 @@ print ("Setting up the environment for building Apache OpenOffice $newline");
 # A. Checking the platform first.
 #
 # get perls idea for OS
-# needed to differentiate cygwin/native perl on windows
+# needed to differentiate cygwin/native perl on Windows
 $perl_os = $^O;
 
 #
