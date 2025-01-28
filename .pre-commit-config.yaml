@@ -25,6 +25,11 @@ repos:
     hooks:
       - id: identity
       - id: check-hooks-apply
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+        files: \.hxx$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
     hooks:
