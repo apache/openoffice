@@ -149,7 +149,7 @@ callVirtualMethod PROC FRAME
 	jz populateArgumentRegisters
 	inc eax
 	shr eax, 1
-	shl eax, 4
+	shl eax, 1
 
 	mov r10, rax
 	add rax, 48[rbp]
