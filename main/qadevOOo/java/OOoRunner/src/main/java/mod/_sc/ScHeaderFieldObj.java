@@ -234,4 +234,3 @@ public class ScHeaderFieldObj extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScHeaderFieldObj
-

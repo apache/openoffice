@@ -88,4 +88,3 @@ public class _XTypeProvider {
     } // end getTypes()
 
 }
-

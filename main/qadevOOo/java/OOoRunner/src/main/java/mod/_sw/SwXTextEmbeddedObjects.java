@@ -130,4 +130,3 @@ public class SwXTextEmbeddedObjects extends TestCase {
         } // finish method getTestEnvironment
 
 }    // finish class SwXTextEmbeddedObjects
-

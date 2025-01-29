@@ -93,5 +93,3 @@ public class _GridControl extends MultiPropertyTest {
         }) ;
     }
 }  // finish class _GridControl
-
-

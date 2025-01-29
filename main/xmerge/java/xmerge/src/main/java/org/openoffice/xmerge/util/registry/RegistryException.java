@@ -40,4 +40,3 @@ public class RegistryException extends Exception {
         super(message);
     }
 }
-

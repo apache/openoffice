@@ -110,4 +110,3 @@ public class DLLComponentLoader extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class DLLComponentLoader
-

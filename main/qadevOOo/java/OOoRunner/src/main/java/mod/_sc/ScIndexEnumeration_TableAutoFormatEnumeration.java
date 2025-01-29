@@ -98,4 +98,3 @@ public class ScIndexEnumeration_TableAutoFormatEnumeration extends TestCase{
     }
 
 }    // finish class ScAutoFormatsObj
-

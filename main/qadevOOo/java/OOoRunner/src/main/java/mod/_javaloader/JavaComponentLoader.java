@@ -94,4 +94,3 @@ public class JavaComponentLoader extends TestCase {
         return tEnv;
     } // finish method createTestEnvironment
 }
-

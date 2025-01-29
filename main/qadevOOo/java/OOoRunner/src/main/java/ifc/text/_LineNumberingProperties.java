@@ -55,5 +55,3 @@ public class _LineNumberingProperties extends MultiPropertyTest {
     }
 
 }
-
-

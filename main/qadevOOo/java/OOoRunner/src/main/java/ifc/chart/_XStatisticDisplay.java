@@ -83,5 +83,3 @@ public class _XStatisticDisplay extends MultiMethodTest {
     }
 
 } // EOF XStatisticDisplay
-
-

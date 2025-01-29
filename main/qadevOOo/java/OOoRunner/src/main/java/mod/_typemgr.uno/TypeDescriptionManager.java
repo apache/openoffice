@@ -77,4 +77,3 @@ public class TypeDescriptionManager extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class TypeDescriptionManager
-

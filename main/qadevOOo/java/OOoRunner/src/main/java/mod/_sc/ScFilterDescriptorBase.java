@@ -152,4 +152,3 @@ public class ScFilterDescriptorBase extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScFilterDescriptorBase
-

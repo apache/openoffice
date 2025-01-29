@@ -392,4 +392,3 @@ class GlyphGutter extends JComponent {
         g.drawPolygon(arrow);
     }
 };
-

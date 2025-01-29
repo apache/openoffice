@@ -53,4 +53,3 @@ public class _XBookmarksSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XBookmarksSupplier
-

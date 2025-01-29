@@ -316,4 +316,3 @@ public class _XAcceptor extends MultiMethodTest {
         tRes.tested("stopAccepting()", result) ;
     }
 }
-

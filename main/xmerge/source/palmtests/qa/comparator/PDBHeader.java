@@ -146,4 +146,3 @@ final class PDBHeader {
         out.writeShort(numRecords);
     }
 }
-

@@ -28,4 +28,3 @@ public class Main {
 		aEditor.initInitialStrings();
     }
 }
-

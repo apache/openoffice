@@ -150,4 +150,3 @@ public class OSQLMessageDialog extends TestCase {
     } // finish method getTestEnvironment
 
 } // finish class OSQLMessageDialog
-

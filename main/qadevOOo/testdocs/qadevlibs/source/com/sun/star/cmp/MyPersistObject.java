@@ -348,5 +348,3 @@ public class MyPersistObject implements XPersistObject, XTypeProvider,
 
 
 }   // finish class MyPersistObject
-
-

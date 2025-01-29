@@ -160,4 +160,3 @@ public class SimpleRegistry extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SimpleRegistry
-

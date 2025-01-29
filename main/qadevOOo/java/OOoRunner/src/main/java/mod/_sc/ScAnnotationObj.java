@@ -170,5 +170,3 @@ public class ScAnnotationObj extends TestCase {
     }
 
 }    // finish class ScAnnotationObj
-
-

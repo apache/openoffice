@@ -345,4 +345,3 @@ final class WSDecoder implements DOCConstants {
         int version = 0;
     }
 }
-

@@ -191,4 +191,3 @@ public class OfficeConnect
     // reference to remote service manager of singleton connection object
     private static com.sun.star.lang.XMultiComponentFactory  mxServiceManager;
 }
-

@@ -83,6 +83,3 @@ public class _XHierarchicalNameAccess extends MultiMethodTest{
     } // end _getByHierarchicalName()
 
 }  // finish class _XHierarchicalNameAccess
-
-
-

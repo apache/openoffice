@@ -121,4 +121,3 @@ public class StrictResolver implements Resolver
         return c.getMethod( sd.getMethodName(), sd.getArgumentTypes() );
     }
 }
-

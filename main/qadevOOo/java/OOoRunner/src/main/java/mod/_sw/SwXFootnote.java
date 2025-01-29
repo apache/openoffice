@@ -151,4 +151,3 @@ public class SwXFootnote extends TestCase {
     }
 
 }    // finish class SwXFootnote
-

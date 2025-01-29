@@ -53,4 +53,3 @@ import lib.MultiPropertyTest;
 public class _MeasureProperties extends MultiPropertyTest {
 
 }
-

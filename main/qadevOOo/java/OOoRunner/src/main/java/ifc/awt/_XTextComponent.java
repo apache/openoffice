@@ -263,4 +263,3 @@ public class _XTextComponent extends MultiMethodTest {
     }
 
 }
-

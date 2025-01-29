@@ -209,4 +209,3 @@ public class SdDrawPage extends TestCase {
     } // finish method createTestEnvironment
 
 }    // finish class SdDrawPage
-

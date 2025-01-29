@@ -39,4 +39,3 @@ import lib.MultiPropertyTest;
 public class _TextContent extends MultiPropertyTest {
 
 } //finish class _TextContent
-

@@ -101,5 +101,3 @@ public class _XAxisZSupplier extends MultiMethodTest {
     }
 
 } // EOF XAxisZSupplier
-
-

@@ -82,4 +82,3 @@ public class _PathSettings extends MultiPropertyTest {
         });
     }
 }
-

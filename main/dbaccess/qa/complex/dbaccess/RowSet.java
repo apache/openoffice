@@ -1005,4 +1005,3 @@ public class RowSet extends TestCase
         testParametersInteraction();
     }
 }
-

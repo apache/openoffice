@@ -199,4 +199,3 @@ public class XMLSettingsExporter extends TestCase {
         }
     }
 }
-

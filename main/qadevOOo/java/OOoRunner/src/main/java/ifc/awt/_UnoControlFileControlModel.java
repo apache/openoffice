@@ -110,4 +110,3 @@ public class _UnoControlFileControlModel extends MultiPropertyTest {
         }) ;
     }
 }
-

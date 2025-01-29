@@ -235,4 +235,3 @@ public final class Difference {
         return orgPosition + " " + modPosition + " " + operation;
     }
 }
-

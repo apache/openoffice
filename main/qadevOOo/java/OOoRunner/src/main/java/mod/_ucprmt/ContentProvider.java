@@ -111,4 +111,3 @@ public class ContentProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

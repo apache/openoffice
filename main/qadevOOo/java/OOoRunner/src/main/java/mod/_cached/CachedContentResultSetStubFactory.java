@@ -169,4 +169,3 @@ public class CachedContentResultSetStubFactory extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

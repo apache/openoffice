@@ -80,4 +80,3 @@ public class CharacterClassification extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class CharacterClassification
-

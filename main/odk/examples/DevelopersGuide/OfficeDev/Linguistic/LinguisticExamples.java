@@ -354,4 +354,3 @@ public class LinguisticExamples
     };
 
 }
-

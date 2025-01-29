@@ -169,4 +169,3 @@ public class SwXFootnoteText extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXFootnoteText
-

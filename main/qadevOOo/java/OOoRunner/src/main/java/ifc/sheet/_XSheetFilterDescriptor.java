@@ -74,5 +74,3 @@ public class _XSheetFilterDescriptor extends MultiMethodTest {
     }
 
 }  // finish class _XSheetFilterDescriptor
-
-

@@ -155,4 +155,3 @@ public class ChXDataPoint extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ChXDataPoint
-

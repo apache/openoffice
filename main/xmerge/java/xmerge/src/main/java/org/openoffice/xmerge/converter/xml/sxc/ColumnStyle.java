@@ -293,4 +293,3 @@ public class ColumnStyle extends Style implements Cloneable {
         return false;
     }
 }
-

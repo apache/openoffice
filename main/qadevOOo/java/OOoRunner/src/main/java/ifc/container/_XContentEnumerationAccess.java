@@ -87,5 +87,3 @@ public class _XContentEnumerationAccess extends MultiMethodTest{
         tRes.tested( "createContentEnumeration()",  bResult);
     }
 }
-
-

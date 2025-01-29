@@ -131,4 +131,3 @@ public class _XUsedAreaCursor extends MultiMethodTest {
         this.disposeEnvironment();
     }
 } // finished class _XUsedAreaCursor
-

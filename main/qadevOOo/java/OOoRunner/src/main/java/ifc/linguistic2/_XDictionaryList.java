@@ -287,5 +287,3 @@ public class _XDictionaryList extends MultiMethodTest {
     }
 
 }  // finish class _XDictionaryList
-
-

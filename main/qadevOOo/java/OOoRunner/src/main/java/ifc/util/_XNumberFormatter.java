@@ -120,5 +120,3 @@ public class _XNumberFormatter extends MultiMethodTest {
         log.println("Not yet implemented");
     }
 }  // finish class _XNumberFormatter
-
-

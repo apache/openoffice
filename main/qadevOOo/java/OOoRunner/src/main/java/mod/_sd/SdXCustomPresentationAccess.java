@@ -205,4 +205,3 @@ public class SdXCustomPresentationAccess extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SdXCustomPresentationAccess
-

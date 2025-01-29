@@ -84,4 +84,3 @@ public class NumberFormatCodeMapper extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class NumberFormatCodeMapper
-

@@ -38,4 +38,3 @@ public class Application extends java.awt.Frame implements Accessible {
         return true;
     }
 }
-

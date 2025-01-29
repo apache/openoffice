@@ -61,4 +61,3 @@ public class _Diagram extends MultiPropertyTest {
             UnoRuntime.queryInterface( XPropertySet.class, doc.getDiagram() );
     }
 }
-

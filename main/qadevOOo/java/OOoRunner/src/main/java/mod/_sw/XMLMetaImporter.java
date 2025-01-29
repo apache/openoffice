@@ -182,4 +182,3 @@ public class XMLMetaImporter extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }
-

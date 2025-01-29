@@ -90,4 +90,3 @@ public class _XTextRangeMover extends MultiMethodTest {
         tRes.tested("moveTextRange()", res);
     }
 }
-

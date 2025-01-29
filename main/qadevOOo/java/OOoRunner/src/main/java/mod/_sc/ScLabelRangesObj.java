@@ -140,4 +140,3 @@ public class ScLabelRangesObj extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScLabelRangesObj
-

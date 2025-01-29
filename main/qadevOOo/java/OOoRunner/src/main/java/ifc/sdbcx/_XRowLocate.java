@@ -227,4 +227,3 @@ public class _XRowLocate extends MultiMethodTest {
     }
 
 }  // finish class _XRowLocate
-

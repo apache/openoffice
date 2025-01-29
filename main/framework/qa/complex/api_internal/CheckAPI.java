@@ -241,5 +241,3 @@ public class CheckAPI  {
     private static final OfficeConnection connection = new OfficeConnection();
 
 }
-
-

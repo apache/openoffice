@@ -157,5 +157,3 @@ public class ScIndexEnumeration_DataPilotFieldsEnumeration extends TestCase {
     }
 
 }
-
-

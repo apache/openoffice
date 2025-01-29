@@ -148,5 +148,3 @@ public abstract class DBLimitedFieldSelection
         Helper.setUnoPropertyValue(UnoDialog.getModel(xListBox), PropertyNames.SELECTED_ITEMS, SelList);
     }
 }
-
-

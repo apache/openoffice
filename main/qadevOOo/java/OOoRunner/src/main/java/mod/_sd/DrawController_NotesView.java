@@ -326,4 +326,3 @@ public class DrawController_NotesView extends TestCase {
 
 
 }
-

@@ -49,4 +49,3 @@ public class GraphicalComparator extends EnhancedComplexTestCase
     }
 
 }
-

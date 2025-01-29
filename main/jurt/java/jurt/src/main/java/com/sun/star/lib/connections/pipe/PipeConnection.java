@@ -225,4 +225,3 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 	}
 
 }
-

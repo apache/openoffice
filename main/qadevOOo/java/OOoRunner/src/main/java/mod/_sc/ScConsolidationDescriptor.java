@@ -109,4 +109,3 @@ public class ScConsolidationDescriptor extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScConsolidationDescriptor
-

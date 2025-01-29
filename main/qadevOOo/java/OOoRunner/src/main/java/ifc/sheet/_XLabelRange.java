@@ -101,5 +101,3 @@ public class _XLabelRange extends MultiMethodTest {
             ValueComparer.equalValue(gA1, setLAddress));
     }
 }  // finish class _XLabelRange
-
-

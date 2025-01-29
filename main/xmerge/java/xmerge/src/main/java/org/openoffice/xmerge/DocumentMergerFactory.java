@@ -56,4 +56,3 @@ public interface DocumentMergerFactory {
      */
     public DocumentMerger createDocumentMerger(Document doc);
 }
-

@@ -169,4 +169,3 @@ public class SwXFieldEnumeration extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXFieldEnumeration
-

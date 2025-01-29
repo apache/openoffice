@@ -143,4 +143,3 @@ public class ScAreaLinksObj extends TestCase {
     }
 
 }    // finish class ScAreaLinksObj
-

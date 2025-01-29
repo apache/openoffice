@@ -282,4 +282,3 @@ public class ScChartObj extends TestCase {
         }
     } // end of insertIntoCell
 }
-

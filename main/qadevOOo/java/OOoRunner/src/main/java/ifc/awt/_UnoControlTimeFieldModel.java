@@ -130,4 +130,3 @@ public class _UnoControlTimeFieldModel extends MultiPropertyTest {
         }) ;
     }
 }
-

@@ -75,4 +75,3 @@ public class _XBoundControl extends MultiMethodTest {
     }
 
 } //EOF of XBoundControl
-

@@ -194,5 +194,3 @@ public class LineProperties {
 				unoApp.loadDocument(filePath));
 	}
 }
-
-

@@ -228,5 +228,3 @@ public class _XPropertyAccess extends MultiMethodTest {
     }
     
 }    /// finish class XPropertyAccess
-
-

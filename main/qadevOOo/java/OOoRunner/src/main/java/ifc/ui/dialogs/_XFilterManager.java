@@ -98,5 +98,3 @@ public class _XFilterManager extends MultiMethodTest {
         tRes.tested("getCurrentFilter()", "TestFilter".equals(gVal)) ;
     }
 }
-
-

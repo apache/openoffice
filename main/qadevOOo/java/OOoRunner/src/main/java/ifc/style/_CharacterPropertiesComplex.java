@@ -62,4 +62,3 @@ public class _CharacterPropertiesComplex extends MultiPropertyTest {
     }    
 
 } //finish class _CharacterPropertiesComplex
-

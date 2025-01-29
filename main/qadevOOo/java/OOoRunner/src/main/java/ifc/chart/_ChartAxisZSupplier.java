@@ -197,4 +197,3 @@ public class _ChartAxisZSupplier extends MultiPropertyTest {
     }
 
 } // EOF ChartAxisZSupplier
-

@@ -72,4 +72,3 @@ public class _XRemoteContentProviderActivator extends MultiMethodTest {
     }
 
 }
-

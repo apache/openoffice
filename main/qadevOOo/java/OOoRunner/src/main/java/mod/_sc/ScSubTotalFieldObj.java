@@ -162,4 +162,3 @@ public class ScSubTotalFieldObj extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScSubTotalFieldObj
-

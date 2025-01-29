@@ -370,5 +370,3 @@ public class _XMultiPropertySet extends MultiMethodTest {
         disposeEnvironment();
     }
 }
-
-

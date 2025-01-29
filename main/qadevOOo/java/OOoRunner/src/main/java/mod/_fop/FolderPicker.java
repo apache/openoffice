@@ -95,4 +95,3 @@ public class FolderPicker extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class BreakIterator
-

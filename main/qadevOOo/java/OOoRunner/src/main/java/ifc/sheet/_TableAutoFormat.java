@@ -41,5 +41,3 @@ import lib.MultiPropertyTest;
 */
 public class _TableAutoFormat extends MultiPropertyTest {
 }  // finish class _TableAutoFormat
-
-

@@ -103,4 +103,3 @@ public class DBContentLoader extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

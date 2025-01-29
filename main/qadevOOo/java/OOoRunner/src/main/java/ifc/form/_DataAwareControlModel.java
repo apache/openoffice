@@ -161,4 +161,3 @@ public class _DataAwareControlModel extends MultiPropertyTest {
         disposeEnvironment() ;
     }
 }
-

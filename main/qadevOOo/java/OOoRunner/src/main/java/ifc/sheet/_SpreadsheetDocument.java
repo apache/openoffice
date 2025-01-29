@@ -42,5 +42,3 @@ import lib.MultiPropertyTest;
 */
 public class _SpreadsheetDocument extends MultiPropertyTest {
 }  // finish class _SpreadsheetDocument
-
-

@@ -102,5 +102,3 @@ public class _XInitialization extends MultiMethodTest {
     }
 
 } // finished class _XInitialization
-
-

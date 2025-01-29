@@ -189,4 +189,3 @@ public class _ChartAxis extends MultiPropertyTest {
         testProperty("StepMain", StepMainTester);
     }
 }  // finish class _ChartAxis
-

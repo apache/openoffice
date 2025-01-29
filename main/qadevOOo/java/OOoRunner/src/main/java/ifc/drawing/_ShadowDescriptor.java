@@ -34,6 +34,3 @@ public class _ShadowDescriptor extends MultiPropertyTest {
     }
 
 }  // finish class _ShadowDescriptor
-
-
-

@@ -74,4 +74,3 @@ public class Collator extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

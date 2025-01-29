@@ -190,5 +190,3 @@ public class _XImplementationRegistration extends MultiMethodTest {
         this.disposeEnvironment() ;
     }
 }
-
-

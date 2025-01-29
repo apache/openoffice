@@ -225,5 +225,3 @@ public class _XChartDataArray extends MultiMethodTest {
         disposeEnvironment();
     }
 }
-
-

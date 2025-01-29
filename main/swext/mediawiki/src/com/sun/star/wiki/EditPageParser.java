@@ -185,4 +185,3 @@ public class EditPageParser extends HTMLEditorKit.ParserCallback
         }
     }
 }
-

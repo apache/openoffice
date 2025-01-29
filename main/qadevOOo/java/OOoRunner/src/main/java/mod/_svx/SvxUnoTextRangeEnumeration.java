@@ -150,4 +150,3 @@ public class SvxUnoTextRangeEnumeration extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

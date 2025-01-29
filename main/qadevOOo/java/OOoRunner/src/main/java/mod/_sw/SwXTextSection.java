@@ -179,5 +179,3 @@ public class SwXTextSection extends TestCase {
     } // finish method getTestEnvironment
 
 }// finish class SwXTextSection
-
-

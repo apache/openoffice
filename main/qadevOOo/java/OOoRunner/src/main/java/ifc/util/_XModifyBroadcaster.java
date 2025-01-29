@@ -79,4 +79,3 @@ public class _XModifyBroadcaster extends MultiMethodTest {
         tRes.tested("removeModifyListener()", true);
     }
 }// finish class _XModifyBroadcaster
-

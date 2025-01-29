@@ -562,4 +562,3 @@ public class GenericModelTest extends TestCase {
             }
         }
 } // finish class GenericModelTest
-

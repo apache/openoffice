@@ -267,4 +267,3 @@ public class _XPropertyState extends MultiMethodTest {
         }
 
  }// EOF _XPropertyState
-

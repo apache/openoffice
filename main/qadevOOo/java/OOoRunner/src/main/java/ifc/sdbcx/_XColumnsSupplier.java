@@ -71,5 +71,3 @@ public class _XColumnsSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XColumnsSupplier
-
-

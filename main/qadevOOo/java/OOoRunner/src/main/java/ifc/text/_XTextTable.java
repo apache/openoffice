@@ -173,5 +173,3 @@ public class _XTextTable extends MultiMethodTest {
     }
 
 }
-
-

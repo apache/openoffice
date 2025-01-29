@@ -102,4 +102,3 @@ public class _UnoControlImageControlModel extends MultiPropertyTest {
     }
     
 }
-

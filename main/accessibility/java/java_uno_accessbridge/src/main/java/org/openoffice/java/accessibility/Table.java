@@ -720,4 +720,3 @@ public class Table extends DescendantManager implements javax.accessibility.Acce
         }
     }
 }
-

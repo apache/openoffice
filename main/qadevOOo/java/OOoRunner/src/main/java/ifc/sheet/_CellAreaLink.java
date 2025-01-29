@@ -40,5 +40,3 @@ import lib.MultiPropertyTest;
 public class _CellAreaLink extends MultiPropertyTest {
 
 } // finish class _CellAreaLink
-
-

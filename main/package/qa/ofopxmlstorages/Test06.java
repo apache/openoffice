@@ -295,4 +295,3 @@ public class Test06 implements StorageTest {
     } 
 
 }
-

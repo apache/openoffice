@@ -223,4 +223,3 @@ public class ScTableConditionalEntry extends TestCase {
     }
 
 }    // finish class ScTableConditionalEntry
-

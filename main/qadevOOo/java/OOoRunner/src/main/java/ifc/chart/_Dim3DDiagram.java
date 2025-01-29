@@ -60,4 +60,3 @@ public class _Dim3DDiagram extends MultiPropertyTest {
             UnoRuntime.queryInterface( XPropertySet.class, doc.getDiagram() );
     }
 } // EOF Dim3DDiagram
-

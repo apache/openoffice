@@ -99,4 +99,3 @@ public class ScAutoFormatFieldObj extends TestCase {
     }
 
 }    // finish class ScAutoFormatFieldObj
-

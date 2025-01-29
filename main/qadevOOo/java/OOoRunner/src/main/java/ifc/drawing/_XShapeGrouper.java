@@ -101,6 +101,3 @@ public class _XShapeGrouper extends MultiMethodTest {
         tRes.tested("ungroup()", result);
     }
 }
-
-
-

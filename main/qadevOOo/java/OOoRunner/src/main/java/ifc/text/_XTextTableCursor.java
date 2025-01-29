@@ -286,5 +286,3 @@ public class _XTextTableCursor extends MultiMethodTest {
     }
 
  }  // finish class _XTextTableCursor
-
-

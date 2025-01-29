@@ -144,4 +144,3 @@ public class AccessibleOLEShape extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

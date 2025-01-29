@@ -81,5 +81,3 @@ public class _XSupportedLocales extends MultiMethodTest {
     }
 
 }  // finish class XSupportedLocales
-
-

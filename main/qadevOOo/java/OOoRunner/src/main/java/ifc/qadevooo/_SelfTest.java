@@ -76,4 +76,3 @@ public class _SelfTest extends MultiMethodTest
             this.disposeEnvironment() ;
         }
 }
-

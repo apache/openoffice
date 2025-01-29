@@ -134,4 +134,3 @@ public class ScCellFormatsObj extends TestCase {
         return tEnv;
     }
 }    // finish class ScCellFormatsObj
-

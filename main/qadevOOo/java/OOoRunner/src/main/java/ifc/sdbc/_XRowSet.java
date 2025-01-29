@@ -186,4 +186,3 @@ public class _XRowSet extends MultiMethodTest {
     }
 
 }  // finish class _XRowSet
-

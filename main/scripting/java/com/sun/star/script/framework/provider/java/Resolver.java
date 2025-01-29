@@ -43,4 +43,3 @@ public interface Resolver {
     public ScriptProxy getProxy( ScriptDescriptor sd, Class c )
     throws NoSuchMethodException;
 }
-

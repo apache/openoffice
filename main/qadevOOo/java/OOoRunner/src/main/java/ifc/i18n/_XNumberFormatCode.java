@@ -156,4 +156,3 @@ public class _XNumberFormatCode extends MultiMethodTest {
 
 
 } // end XNumberFormatCode
-

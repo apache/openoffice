@@ -74,4 +74,3 @@ public final class RowIterator extends NodeIterator {
         }
     }
 }
-

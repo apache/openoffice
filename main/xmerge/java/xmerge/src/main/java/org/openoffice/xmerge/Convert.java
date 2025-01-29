@@ -320,4 +320,3 @@ public class Convert implements Cloneable {
         return(ci.getPluginFactory().createDeviceDocument(name, is));
     }
 }
-

@@ -200,5 +200,3 @@ class Option {
     //is set.
     boolean bSet;
 }
-
-

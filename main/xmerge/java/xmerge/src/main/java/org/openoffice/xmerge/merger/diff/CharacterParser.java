@@ -135,4 +135,3 @@ public class CharacterParser {
         nodeList_.add(nodeEntry);
     }
 }
-

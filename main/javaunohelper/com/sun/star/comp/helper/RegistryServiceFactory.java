@@ -161,4 +161,3 @@ public class RegistryServiceFactory {
 		return create( null, null, false );
 	}
 }
-

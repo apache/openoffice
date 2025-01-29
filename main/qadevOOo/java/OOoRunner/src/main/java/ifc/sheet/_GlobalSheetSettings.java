@@ -48,5 +48,3 @@ import lib.MultiPropertyTest;
 */
 public class _GlobalSheetSettings extends MultiPropertyTest {
 }
-
-

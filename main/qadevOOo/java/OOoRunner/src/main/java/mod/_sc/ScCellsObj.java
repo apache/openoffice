@@ -160,4 +160,3 @@ public class ScCellsObj extends TestCase {
     }
 
 }    // finish class ScCellsObj
-

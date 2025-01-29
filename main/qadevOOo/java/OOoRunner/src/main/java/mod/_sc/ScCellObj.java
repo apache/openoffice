@@ -209,4 +209,3 @@ public class ScCellObj extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScCellObj
-

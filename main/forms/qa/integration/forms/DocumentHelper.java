@@ -397,4 +397,3 @@ public class DocumentHelper
         return (XInterface) xORB.createInstanceWithArguments( serviceSpecifier, arguments );
     }
 };
-

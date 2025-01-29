@@ -239,4 +239,3 @@ public class ODatabaseSource extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

@@ -453,4 +453,3 @@ public class RegressionTest_i30400 implements StorageTest {
 		return true;
 	}
 }
-

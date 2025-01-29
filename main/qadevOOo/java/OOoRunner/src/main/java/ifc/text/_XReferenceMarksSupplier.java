@@ -58,5 +58,3 @@ public class _XReferenceMarksSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XReferenceMarksSupplier
-
-

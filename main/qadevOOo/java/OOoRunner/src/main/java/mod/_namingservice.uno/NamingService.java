@@ -92,4 +92,3 @@ public class NamingService extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

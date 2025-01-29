@@ -160,4 +160,3 @@ public class _XCell extends MultiMethodTest {
         tRes.tested("setValue()", result);
        } // end setValue()
 }
-

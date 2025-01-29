@@ -163,5 +163,3 @@ public class ScTableSheetsObj extends TestCase {
         return tEnv;
     }
 }
-
-

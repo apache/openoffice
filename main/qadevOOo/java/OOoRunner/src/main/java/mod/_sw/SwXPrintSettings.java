@@ -103,4 +103,3 @@ public class SwXPrintSettings extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXPrintSettings
-

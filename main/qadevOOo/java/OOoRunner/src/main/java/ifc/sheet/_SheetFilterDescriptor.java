@@ -44,5 +44,3 @@ import lib.MultiPropertyTest;
 */
 public class _SheetFilterDescriptor extends MultiPropertyTest {
 }  // finish class _SheetFilterDescriptor
-
-

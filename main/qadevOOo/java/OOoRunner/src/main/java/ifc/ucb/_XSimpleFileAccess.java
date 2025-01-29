@@ -535,4 +535,3 @@ public class _XSimpleFileAccess extends MultiMethodTest {
     } //EOF setInteractionHandler()
 
 }  // finish class _XSimpleFileAccess
-

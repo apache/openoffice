@@ -61,4 +61,3 @@ public class UcbPropertiesManager extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class UcbPropertiesManager
-

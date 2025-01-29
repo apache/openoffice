@@ -100,5 +100,3 @@ public class ScriptInfo extends TestCase {
             TestParameters tParam) {
     }
 }
-
-

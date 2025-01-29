@@ -175,4 +175,3 @@ public class Frame
 		xDispatchProviderInterception.releaseDispatchProviderInterceptor( xInterceptor );
 	}
 };
-

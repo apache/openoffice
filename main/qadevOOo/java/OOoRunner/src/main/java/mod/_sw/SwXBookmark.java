@@ -114,4 +114,3 @@ public class SwXBookmark extends TestCase {
 
 
 }    // finish class SwXBookmark
-

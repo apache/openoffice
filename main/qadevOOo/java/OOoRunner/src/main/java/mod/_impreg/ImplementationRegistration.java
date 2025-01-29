@@ -79,4 +79,3 @@ public class ImplementationRegistration extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class NestedRegistry
-

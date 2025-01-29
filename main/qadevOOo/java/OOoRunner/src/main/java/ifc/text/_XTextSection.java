@@ -70,4 +70,3 @@ public class _XTextSection extends MultiMethodTest {
 
 
 }  // finish class _XTextSection
-

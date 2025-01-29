@@ -288,4 +288,3 @@ public class WikiArticle
         return bResult;
     }
 }
-

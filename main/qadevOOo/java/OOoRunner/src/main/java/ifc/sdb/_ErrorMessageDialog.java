@@ -61,5 +61,3 @@ public class _ErrorMessageDialog extends MultiPropertyTest {
     }
 
 }  // finish class _ErrorMessageDialog
-
-

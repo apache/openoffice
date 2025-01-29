@@ -73,4 +73,3 @@ public class _XTextLayoutConstrains extends MultiMethodTest {
         tRes.tested("getColumnsAndLines()",res);
     }
 }
-

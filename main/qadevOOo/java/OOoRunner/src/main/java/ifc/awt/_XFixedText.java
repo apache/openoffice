@@ -112,5 +112,3 @@ public class _XFixedText extends MultiMethodTest {
     }
 
 }
-
-

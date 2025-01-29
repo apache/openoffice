@@ -54,5 +54,3 @@ public class _XIntrospection extends MultiMethodTest {
     }
 
 }  // finish class _XIntrospection
-
-

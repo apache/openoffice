@@ -75,4 +75,3 @@ public class CHelpContentProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class FileProvider
-

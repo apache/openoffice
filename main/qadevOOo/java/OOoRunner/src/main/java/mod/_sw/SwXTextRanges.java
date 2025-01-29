@@ -122,4 +122,3 @@ public class SwXTextRanges extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTextRanges
-

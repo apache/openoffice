@@ -160,5 +160,3 @@ public class _XSingleServiceFactory extends MultiMethodTest {
     }
 
 }  // finish class _XSingleServiceFactory
-
-

@@ -74,4 +74,3 @@ public class Introspection extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class Introspection
-

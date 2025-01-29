@@ -83,5 +83,3 @@ public class _Presentation extends MultiPropertyTest {
         testProperty("CustomShow", CustomShowTester);
     }
 }  // finish class _Presentation
-
-

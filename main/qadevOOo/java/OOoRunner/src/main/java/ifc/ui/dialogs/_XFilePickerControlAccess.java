@@ -194,5 +194,3 @@ public class _XFilePickerControlAccess extends MultiMethodTest {
         tRes.tested("enableControl()", result) ;
     }
 }
-
-

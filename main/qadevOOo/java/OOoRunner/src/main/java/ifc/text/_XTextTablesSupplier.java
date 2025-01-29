@@ -59,4 +59,3 @@ public class _XTextTablesSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XTextTablesSupplier
-

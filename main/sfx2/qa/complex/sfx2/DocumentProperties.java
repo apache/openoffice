@@ -554,4 +554,3 @@ public class DocumentProperties
     private static final OfficeConnection connection = new OfficeConnection();
 
 }
-

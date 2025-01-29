@@ -123,4 +123,3 @@ public class _XDesktop extends MultiMethodTest {
     }
 
 }
-

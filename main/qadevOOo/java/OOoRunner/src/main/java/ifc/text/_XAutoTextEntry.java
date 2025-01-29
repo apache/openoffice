@@ -70,5 +70,3 @@ public class _XAutoTextEntry extends MultiMethodTest {
     }
 
 }  // finish class _XAutoTextEntry
-
-

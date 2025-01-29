@@ -61,5 +61,3 @@ public class _XResultSetAccess extends MultiMethodTest {
 
     }
 }  // finish class _XResultSetAccess
-
-

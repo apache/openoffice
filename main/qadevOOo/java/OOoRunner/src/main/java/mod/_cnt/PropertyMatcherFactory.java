@@ -79,4 +79,3 @@ public class PropertyMatcherFactory extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

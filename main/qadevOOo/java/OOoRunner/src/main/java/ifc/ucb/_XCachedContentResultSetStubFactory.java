@@ -105,4 +105,3 @@ public class _XCachedContentResultSetStubFactory extends MultiMethodTest {
 
     }
 }
-

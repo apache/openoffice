@@ -74,4 +74,3 @@ public interface OfficeConnection
 	 */
 	OfficeWindow createOfficeWindow(Container container);
 }
-

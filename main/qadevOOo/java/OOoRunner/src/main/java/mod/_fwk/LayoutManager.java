@@ -115,5 +115,3 @@ public class LayoutManager extends TestCase {
         return tEnv;
     }
 }
-
-

@@ -147,4 +147,3 @@ public class SwXTextTables extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTextTables
-

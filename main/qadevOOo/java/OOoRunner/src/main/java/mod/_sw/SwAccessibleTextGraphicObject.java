@@ -169,4 +169,3 @@ public class SwAccessibleTextGraphicObject extends TestCase {
         xTextDoc = WriterTools.createTextDoc((XMultiServiceFactory)Param.getMSF());
     }
 }
-

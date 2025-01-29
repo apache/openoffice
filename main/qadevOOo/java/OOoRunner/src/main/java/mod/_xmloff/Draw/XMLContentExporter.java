@@ -207,5 +207,3 @@ public class XMLContentExporter extends TestCase {
         }
     }
 }
-
-

@@ -162,4 +162,3 @@ public class ChXDataRow extends TestCase {
 
 
 }    // finish class ChXDataRow
-

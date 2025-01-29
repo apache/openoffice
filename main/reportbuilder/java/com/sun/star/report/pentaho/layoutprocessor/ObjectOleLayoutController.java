@@ -117,4 +117,3 @@ public class ObjectOleLayoutController extends AbstractReportElementLayoutContro
         return join(getFlowController());
     }
 }
-

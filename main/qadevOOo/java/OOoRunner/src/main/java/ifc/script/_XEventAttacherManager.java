@@ -491,4 +491,3 @@ public class _XEventAttacherManager extends MultiMethodTest {
     }
 
 }
-

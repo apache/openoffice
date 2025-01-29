@@ -125,5 +125,3 @@ public class ScIndexEnumeration_NamedRangesEnumeration extends TestCase {
     }
 
 }
-
-

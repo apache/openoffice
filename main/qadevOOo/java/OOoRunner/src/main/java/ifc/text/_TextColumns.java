@@ -66,4 +66,3 @@ public class _TextColumns extends MultiPropertyTest {
 
 
 } //finish class _TextColumns
-

@@ -93,4 +93,3 @@ public class SmModel extends TestCase {
 
 
 }    // finish class SmModel
-

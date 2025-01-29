@@ -124,4 +124,3 @@ public class _XStandaloneDocumentInfo extends MultiMethodTest {
     }
 
 }  // finish class _XStandaloneDocumentInfo
-

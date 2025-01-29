@@ -57,4 +57,3 @@ public class _XGluePointsSupplier extends MultiMethodTest {
     }
 
 }
-

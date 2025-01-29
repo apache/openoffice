@@ -57,4 +57,3 @@ class WaitForInput extends java.lang.Thread
 		}
 	}
 };
-

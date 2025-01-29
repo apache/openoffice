@@ -341,4 +341,3 @@ public class Settings
         }
     }
 }
-

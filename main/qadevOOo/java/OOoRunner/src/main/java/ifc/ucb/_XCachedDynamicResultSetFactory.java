@@ -115,4 +115,3 @@ public class _XCachedDynamicResultSetFactory extends MultiMethodTest {
 
     }
 }
-

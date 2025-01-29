@@ -195,4 +195,3 @@ public class NestedRegistry extends TestCase {
     }
 
 }    // finish class NestedRegistry
-

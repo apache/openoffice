@@ -90,4 +90,3 @@ public class SwXPropertySetInfo extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXPropertySetInfo
-

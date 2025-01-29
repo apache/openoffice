@@ -74,5 +74,3 @@ public class _XHeaderFooterContent extends MultiMethodTest {
     }
 
 }  // finish class _XHeaderFooterContent
-
-

@@ -79,4 +79,3 @@ public class _LineProperties extends MultiPropertyTest {
         testProperty("LineDash",aLineDash,aLineDash2);
     }
 }
-

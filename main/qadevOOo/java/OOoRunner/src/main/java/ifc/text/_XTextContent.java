@@ -110,4 +110,3 @@ public class _XTextContent extends MultiMethodTest {
         }
     }
 }
-

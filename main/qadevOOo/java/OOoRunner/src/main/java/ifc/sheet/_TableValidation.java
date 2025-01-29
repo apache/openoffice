@@ -44,5 +44,3 @@ import lib.MultiPropertyTest;
 */
 public class _TableValidation extends MultiPropertyTest {
 }  // finish class _TableValidation
-
-

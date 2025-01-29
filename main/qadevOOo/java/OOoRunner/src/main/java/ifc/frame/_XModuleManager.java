@@ -156,4 +156,3 @@ public class _XModuleManager extends MultiMethodTest {
     }
     
 }
-

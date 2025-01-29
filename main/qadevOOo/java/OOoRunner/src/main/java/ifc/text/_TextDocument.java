@@ -41,4 +41,3 @@ import lib.MultiPropertyTest;
 public class _TextDocument extends MultiPropertyTest {
 
 }
-

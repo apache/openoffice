@@ -40,5 +40,3 @@ public class _DimensioningShapeDescriptor extends MultiPropertyTest {
 */
 
 }  // finish class _ParagraphProperties
-
-

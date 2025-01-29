@@ -146,4 +146,3 @@ public class SdPageLinkTargets extends TestCase {
     } // finish method createTestEnvironment
 
 } // finish class SdPageLinkTargets
-

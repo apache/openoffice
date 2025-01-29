@@ -76,4 +76,3 @@ public class PackageContentProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class PackageContentProvider
-

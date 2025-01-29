@@ -168,5 +168,3 @@ public class ScTableColumnObj extends TestCase {
         return tEnv;
     }
 }
-
-

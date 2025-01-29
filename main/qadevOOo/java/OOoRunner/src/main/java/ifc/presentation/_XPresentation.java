@@ -75,5 +75,3 @@ public class _XPresentation extends MultiMethodTest {
     }
 
 }  // finish class _XPresentation
-
-

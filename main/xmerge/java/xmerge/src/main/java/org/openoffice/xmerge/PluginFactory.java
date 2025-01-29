@@ -186,4 +186,3 @@ public abstract class PluginFactory {
     public abstract Document createDeviceDocument(String name, InputStream is)
         throws IOException;
 }
-

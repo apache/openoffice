@@ -130,4 +130,3 @@ public class _XEnumeration extends MultiMethodTest {
     } // end NextElement
 
 } //end XEnumeration
-

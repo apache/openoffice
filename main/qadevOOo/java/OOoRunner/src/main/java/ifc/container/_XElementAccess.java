@@ -61,5 +61,3 @@ public class _XElementAccess extends MultiMethodTest {
     } // end ElementType
 
 } /// finished class _XElementAccess
-
-

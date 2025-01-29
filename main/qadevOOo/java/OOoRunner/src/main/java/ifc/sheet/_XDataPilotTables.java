@@ -150,4 +150,3 @@ public class _XDataPilotTables extends MultiMethodTest {
     }
 
 }
-

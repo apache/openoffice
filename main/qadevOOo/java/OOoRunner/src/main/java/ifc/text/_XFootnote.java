@@ -108,5 +108,3 @@ public class _XFootnote extends MultiMethodTest {
     } // finished setLabel
 
 }
-
-

@@ -90,4 +90,3 @@ public class ConfiguredExporter extends FilterExporter
         return null;
     }
 }
-

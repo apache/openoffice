@@ -102,4 +102,3 @@ public class ScAutoFormatObj extends TestCase {
         return tEnv;
     }
 }
-

@@ -221,4 +221,3 @@ public class _XStorable extends MultiMethodTest {
     }
 
 }// finished class _XStorable
-

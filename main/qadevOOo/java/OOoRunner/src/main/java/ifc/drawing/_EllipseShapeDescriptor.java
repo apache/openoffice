@@ -29,4 +29,3 @@ import lib.MultiPropertyTest;
 public class _EllipseShapeDescriptor extends MultiPropertyTest {
 
 }  // finish class _EllipseShapeDescriptor
-

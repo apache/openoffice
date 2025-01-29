@@ -70,4 +70,3 @@ public class generic extends TestCase {
 
 
 }
-

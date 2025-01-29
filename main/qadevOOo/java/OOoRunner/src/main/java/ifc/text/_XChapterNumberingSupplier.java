@@ -56,4 +56,3 @@ public class _XChapterNumberingSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XChapterNumberingSupplier
-

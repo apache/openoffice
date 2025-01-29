@@ -83,4 +83,3 @@ public final class ParaNodeIterator extends NodeIterator {
         }
     }
 }
-

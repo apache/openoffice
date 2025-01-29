@@ -67,4 +67,3 @@ public class _XDrawPageSummarizer extends MultiMethodTest {
     } // end of summarize()
 
 } // end of XDrawPageSummarizer
-

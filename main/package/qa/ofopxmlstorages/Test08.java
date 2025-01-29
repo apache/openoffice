@@ -279,4 +279,3 @@ public class Test08 implements StorageTest {
 		return true;
 	}
 }
-

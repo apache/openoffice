@@ -538,4 +538,3 @@ public class MinicalcDataString {
         return out;
     }
 }
-

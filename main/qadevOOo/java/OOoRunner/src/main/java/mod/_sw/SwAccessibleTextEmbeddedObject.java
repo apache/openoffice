@@ -148,4 +148,3 @@ public class SwAccessibleTextEmbeddedObject extends TestCase {
         xTextDoc = WriterTools.loadTextDoc((XMultiServiceFactory)Param.getMSF(),testdoc);
     }
 }
-

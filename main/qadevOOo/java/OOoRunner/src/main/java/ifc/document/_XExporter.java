@@ -82,5 +82,3 @@ public class _XExporter extends MultiMethodTest {
         tRes.tested("setSourceDocument()", result) ;
     }
 }
-
-

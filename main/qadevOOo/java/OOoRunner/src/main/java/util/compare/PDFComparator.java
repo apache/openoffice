@@ -55,4 +55,3 @@ class PDFComparator extends GraphicalComparator implements DocComparator
     // 
     // public boolean compareDiff() throws IOException;
 }
-

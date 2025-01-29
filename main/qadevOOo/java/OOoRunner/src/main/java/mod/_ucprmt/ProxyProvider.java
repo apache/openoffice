@@ -74,4 +74,3 @@ public class ProxyProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

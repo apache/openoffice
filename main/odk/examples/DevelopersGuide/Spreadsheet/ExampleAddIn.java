@@ -304,4 +304,3 @@ public class ExampleAddIn
 //                     _ExampleAddIn.aImplName, _ExampleAddIn.aAddInService, regKey);
 //     }
 }
-

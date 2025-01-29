@@ -65,4 +65,3 @@ public class _UnoControlContainerModel extends MultiPropertyTest {
     }
 
 }
-

@@ -128,4 +128,3 @@ public class _XDataPilotTable {
         return oldData != newData;
     }
 }
-

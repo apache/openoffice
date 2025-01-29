@@ -121,4 +121,3 @@ public class _XMultiComponentFactory extends MultiMethodTest {
         tRes.tested("getAvailableServiceNames()", result);
     }
 }
-

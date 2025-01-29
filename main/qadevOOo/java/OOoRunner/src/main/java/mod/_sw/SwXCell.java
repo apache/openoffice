@@ -128,4 +128,3 @@ public class SwXCell extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }    // finish class SwXCell
-

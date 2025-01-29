@@ -55,5 +55,3 @@ public class _Spreadsheet extends MultiPropertyTest {
         testProperty("PageStyle", styleTester);
     }
 } // finish class _Spreadsheet
-
-

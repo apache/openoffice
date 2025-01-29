@@ -85,4 +85,3 @@ public class ScriptProxy
         return m_method.invoke( m_targetObject, args );
     }
 }
-

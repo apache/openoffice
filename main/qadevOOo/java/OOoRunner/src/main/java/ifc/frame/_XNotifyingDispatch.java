@@ -124,4 +124,3 @@ public class _XNotifyingDispatch extends MultiMethodTest {
     }
 
 }
-

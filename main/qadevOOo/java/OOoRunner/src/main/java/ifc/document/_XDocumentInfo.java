@@ -217,4 +217,3 @@ public class _XDocumentInfo extends MultiMethodTest {
     }
 
 }  // finish class _XDocumentInfo
-

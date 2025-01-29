@@ -171,4 +171,3 @@ class PaintThread extends java.lang.Thread
 		}
 	}
 };
-

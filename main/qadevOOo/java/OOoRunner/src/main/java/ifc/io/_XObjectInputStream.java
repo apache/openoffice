@@ -167,4 +167,3 @@ public class _XObjectInputStream extends MultiMethodTest {
         this.disposeEnvironment() ;
     }
 }
-

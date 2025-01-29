@@ -52,4 +52,3 @@ public class _XCellAddressable extends MultiMethodTest {
 
 
 } //EOC _XCellAddressable
-

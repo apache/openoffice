@@ -154,4 +154,3 @@ public class SvxUnoTextField extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SvxUnoTextField
-

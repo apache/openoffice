@@ -63,4 +63,3 @@ public class _XLayerSupplier extends MultiMethodTest{
     } // finished test
 
 } // end XLayerSupplier
-

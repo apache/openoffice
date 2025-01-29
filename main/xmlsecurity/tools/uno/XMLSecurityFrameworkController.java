@@ -1078,4 +1078,3 @@ public class XMLSecurityFrameworkController
 		*/
 	}
 }
-

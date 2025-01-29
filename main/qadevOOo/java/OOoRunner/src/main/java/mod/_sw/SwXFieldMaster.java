@@ -104,4 +104,3 @@ public class SwXFieldMaster extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXFieldMaster
-

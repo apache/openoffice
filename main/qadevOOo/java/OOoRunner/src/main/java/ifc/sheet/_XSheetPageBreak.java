@@ -86,4 +86,3 @@ public class _XSheetPageBreak extends MultiMethodTest {
             manualColumnPageBreaks == 0 && manualRowPageBreaks == 0);
     }
 }
-

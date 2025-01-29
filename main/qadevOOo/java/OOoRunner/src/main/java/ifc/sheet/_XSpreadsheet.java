@@ -82,5 +82,3 @@ public class _XSpreadsheet extends MultiMethodTest {
     }
 
 } // finisch class _XSpreadsheet
-
-

@@ -180,4 +180,3 @@ public class TypeDetection extends TestCase {
     }
 
 }
-

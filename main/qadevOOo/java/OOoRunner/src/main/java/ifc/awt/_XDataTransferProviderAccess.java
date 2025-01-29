@@ -128,4 +128,3 @@ public class _XDataTransferProviderAccess extends MultiMethodTest {
         tRes.tested("getClipboard()", result) ;
     }
 }
-

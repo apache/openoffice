@@ -126,4 +126,3 @@ public class FilePicker extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

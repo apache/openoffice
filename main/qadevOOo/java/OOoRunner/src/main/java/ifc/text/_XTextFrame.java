@@ -60,5 +60,3 @@ public class _XTextFrame extends MultiMethodTest {
     }
 
 }  // finish class _XTextFrame
-
-

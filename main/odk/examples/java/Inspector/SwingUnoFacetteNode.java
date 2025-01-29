@@ -70,4 +70,3 @@ public class SwingUnoFacetteNode extends SwingUnoNode implements XUnoFacetteNode
         return ((String) getUserObject()).equals(SINTERFACEDESCRIPTION);
     }
 }
-

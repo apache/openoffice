@@ -104,4 +104,3 @@ public class _XFlushable extends MultiMethodTest {
     }
 
 }  // finish class _XFlushable
-

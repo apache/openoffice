@@ -80,4 +80,3 @@ public class _StockDiagram extends MultiPropertyTest {
         doc.setDiagram(oldDiagram);
     }
 }
-

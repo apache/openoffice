@@ -209,4 +209,3 @@ public class BridgeFactory implements XBridgeFactory/*, XEventListener*/ {
         private static BigInteger counter = BigInteger.ZERO;
     }
 }
-

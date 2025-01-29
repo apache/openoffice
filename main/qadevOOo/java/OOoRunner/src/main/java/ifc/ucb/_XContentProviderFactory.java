@@ -53,4 +53,3 @@ public class _XContentProviderFactory extends MultiMethodTest {
         tRes.tested("createContentProvider()",CP != null);
     }
 }
-

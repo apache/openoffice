@@ -282,5 +282,3 @@ public class _XFilePickerNotifier extends MultiMethodTest {
         eThread.start();
     }
 }
-
-

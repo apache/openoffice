@@ -257,4 +257,3 @@ public class ScCellRangesObj extends TestCase {
     }
 
 }    // finish class ScCellRangesObj
-

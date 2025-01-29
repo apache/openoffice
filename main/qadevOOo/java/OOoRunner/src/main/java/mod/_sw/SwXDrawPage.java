@@ -157,4 +157,3 @@ public class SwXDrawPage extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXDrawPage
-

@@ -106,4 +106,3 @@ public class DicList extends TestCase {
     }
 
 }    // finish class DicList
-

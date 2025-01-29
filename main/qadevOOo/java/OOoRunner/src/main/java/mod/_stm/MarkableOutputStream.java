@@ -200,4 +200,3 @@ public class MarkableOutputStream extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

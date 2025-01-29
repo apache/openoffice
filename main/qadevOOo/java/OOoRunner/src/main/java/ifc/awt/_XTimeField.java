@@ -287,5 +287,3 @@ public class _XTimeField extends MultiMethodTest {
         tRes.tested("isStrictFormat()", result) ;
     }
 }
-
-

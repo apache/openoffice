@@ -229,5 +229,3 @@ public class OCheckBoxControl extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class OButtonControl
-
-

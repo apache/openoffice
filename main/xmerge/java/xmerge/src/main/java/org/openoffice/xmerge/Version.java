@@ -81,4 +81,3 @@ public final class Version {
         System.out.println("Implementation-Version: " + pkg.getImplementationVersion());
     }
 }
-

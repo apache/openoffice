@@ -150,5 +150,3 @@ public class _XDialog extends MultiMethodTest {
         disposeEnvironment() ;
     }
 }
-
-

@@ -25,4 +25,3 @@ public interface StorageTest
 {
 	boolean test();
 }
-

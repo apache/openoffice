@@ -124,4 +124,3 @@ public class ScIndexEnumeration_CellAreaLinksEnumeration extends TestCase {
     }
 
 }
-

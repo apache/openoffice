@@ -304,4 +304,3 @@ class BitmapPainter implements XPaintListener, XMouseListener, XMouseMotionListe
 	}
 
 };
-

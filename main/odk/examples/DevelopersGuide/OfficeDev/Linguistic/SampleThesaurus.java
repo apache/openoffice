@@ -318,4 +318,3 @@ public class SampleThesaurus extends ComponentBase implements
 //         return bResult;
 //     }
 }
-

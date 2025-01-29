@@ -52,4 +52,3 @@ public class _XPropertySetRegistryFactory extends MultiMethodTest {
     }
 
 }
-

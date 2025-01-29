@@ -158,5 +158,3 @@ public class _XLayerManager extends MultiMethodTest {
         tRes.tested("remove()", result);
     }
 }
-
-

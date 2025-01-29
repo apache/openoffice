@@ -110,4 +110,3 @@ public class _XStyle extends MultiMethodTest {
         tRes.tested("setParentStyle()",result);
     }
 } //finish class _XStyle
-

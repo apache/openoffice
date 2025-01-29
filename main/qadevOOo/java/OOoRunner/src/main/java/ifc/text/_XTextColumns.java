@@ -106,5 +106,3 @@ public class _XTextColumns extends MultiMethodTest {
     }
 
 }  // finish class _XTextColumns
-
-

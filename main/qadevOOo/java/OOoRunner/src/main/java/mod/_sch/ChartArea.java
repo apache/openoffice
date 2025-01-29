@@ -115,4 +115,3 @@ public class ChartArea extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ChartArea
-

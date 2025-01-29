@@ -78,4 +78,3 @@ class XMLTreeCellRanderer extends DefaultTreeCellRenderer
 		return this;
 	}
 }
-

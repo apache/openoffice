@@ -230,5 +230,3 @@ public abstract class AbstractErrorHandler implements ErrorHandler
      */
     protected abstract String getMessageFor(Exception ex, Object arg, int ix, int type);
 }
-
-

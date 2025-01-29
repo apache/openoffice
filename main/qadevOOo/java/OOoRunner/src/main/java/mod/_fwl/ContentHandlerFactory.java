@@ -108,4 +108,3 @@ public class ContentHandlerFactory extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

@@ -141,4 +141,3 @@ public class ScTableRowsObj extends TestCase {
         return tEnv;
     }
 }    // finish class ScTableRowsObj
-

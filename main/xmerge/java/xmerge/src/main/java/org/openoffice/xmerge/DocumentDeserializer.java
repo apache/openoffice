@@ -58,4 +58,3 @@ public interface DocumentDeserializer {
      */
     public Document deserialize() throws ConvertException, IOException;
 }
-

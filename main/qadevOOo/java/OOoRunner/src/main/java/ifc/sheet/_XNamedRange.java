@@ -201,5 +201,3 @@ public class _XNamedRange extends MultiMethodTest {
     }
 
 }
-
-

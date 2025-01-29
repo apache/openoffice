@@ -143,4 +143,3 @@ public class ODatabaseContext extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

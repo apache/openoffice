@@ -280,4 +280,3 @@ final class PocketExcelEncoder extends SpreadsheetEncoder {
     
 
 }
-

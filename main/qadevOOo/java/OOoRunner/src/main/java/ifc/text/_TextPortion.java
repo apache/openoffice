@@ -50,4 +50,3 @@ public class _TextPortion extends MultiPropertyTest {
     }
 
 } //finish class _TextPortion
-

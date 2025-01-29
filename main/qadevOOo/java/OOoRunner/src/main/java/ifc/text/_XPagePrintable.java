@@ -154,4 +154,3 @@ public class _XPagePrintable extends MultiMethodTest {
     }
 
 }  // finish class _XPagePrintable
-

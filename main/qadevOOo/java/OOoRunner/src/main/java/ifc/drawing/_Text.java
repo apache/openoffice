@@ -63,6 +63,3 @@ public class _Text extends MultiPropertyTest {
     }
 
 }  // finish class _Text
-
-
-

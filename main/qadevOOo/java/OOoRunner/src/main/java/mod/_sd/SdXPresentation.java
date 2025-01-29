@@ -157,4 +157,3 @@ public class SdXPresentation extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SdPresentation
-

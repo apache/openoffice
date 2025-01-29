@@ -64,4 +64,3 @@ public interface DocumentDeserializer2 extends DocumentSerializer {
     public Document deserialize(String deviceURL, String officeURL) throws
         ConvertException, IOException;
 }
-

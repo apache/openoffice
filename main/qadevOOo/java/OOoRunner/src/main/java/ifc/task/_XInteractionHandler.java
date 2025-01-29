@@ -143,5 +143,3 @@ public class _XInteractionHandler extends MultiMethodTest {
         tRes.tested("handle()", Status.skipped(true)) ;
     }
 }
-
-

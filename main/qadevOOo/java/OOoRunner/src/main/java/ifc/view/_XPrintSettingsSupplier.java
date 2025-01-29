@@ -55,4 +55,3 @@ public class _XPrintSettingsSupplier extends MultiMethodTest {
     } // finish _getPrintSettings
 
 }  // finish class _XPrintSettingsSupplier
-

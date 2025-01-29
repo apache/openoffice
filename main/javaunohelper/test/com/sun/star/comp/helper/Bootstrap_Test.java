@@ -110,4 +110,3 @@ public class Bootstrap_Test {
 		System.exit( test(args[0], bootstrap_parameters) == true ? 0: -1 );		
 	}
 }
-

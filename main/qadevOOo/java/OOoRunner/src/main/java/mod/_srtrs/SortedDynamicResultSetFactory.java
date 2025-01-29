@@ -76,4 +76,3 @@ public class SortedDynamicResultSetFactory extends TestCase {
         return tEnv;
     }
 }
-

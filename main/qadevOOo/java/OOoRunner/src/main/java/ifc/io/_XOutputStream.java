@@ -166,4 +166,3 @@ public class _XOutputStream extends MultiMethodTest {
         this.disposeEnvironment() ;
     }
 }
-

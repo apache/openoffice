@@ -55,5 +55,3 @@ public class _XTwoAxisXSupplier extends MultiMethodTest {
     }
 
 } // EOF XTwoAxisXSupplier
-
-

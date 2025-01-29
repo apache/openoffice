@@ -44,4 +44,3 @@ class CheckBox extends ToggleButton {
         }
     }
 }
-
