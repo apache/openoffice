@@ -276,7 +276,7 @@ sub setglobalvariables
 	# makefile calling the perl program.
 	$installer::globals::installertypedir = $installer::globals::packageformat;
 
-	if ( $installer::globals::compiler =~ /wnt(msc|gcc)i/ )
+	if ( $installer::globals::compiler =~ /wnt(msc|gcc)[ix}/ )
 	{
 		$installer::globals::iswindowsbuild = 1;
 	}
