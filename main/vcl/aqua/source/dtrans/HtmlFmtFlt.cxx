@@ -35,7 +35,7 @@ using namespace com::sun::star::uno;
 //------------------------------------------------------------------------------
 // converts the openoffice text/html clipboard format to the HTML Format
 // well known under MS Windows
-// the MS HTML Format has a header before the real html data
+// the MS HTML Format has a header before the real HTML data
 //
 // Version:1.0		Version number of the clipboard. Staring is 0.9
 // StartHTML:		Byte count from the beginning of the clipboard to the start
@@ -73,7 +73,7 @@ std::string GetHtmlFormatHeader(size_t startHtml, size_t endHtml, size_t startFr
 } // namespace private
 
 
-// the office always writes the start and end html tag in upper cases and
+// the office always writes the start and end HTML tag in upper cases and
 // without spaces both tags don't allow parameters
 const std::string TAG_HTML = std::string("<HTML>");
 const std::string TAG_END_HTML = std::string("</HTML>");

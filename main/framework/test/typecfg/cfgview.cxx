@@ -233,7 +233,7 @@ void CFGView::impl_printSyntax()
 /*-************************************************************************************************************//**
     @short      analyze command line arguments
     @descr      Created binary accept different command line arguments. These parameters
-                regulate creation of this html view. Follow arguments are supported:
+                regulate creation of this HTML view. Follow arguments are supported:
                     "-dir=<directory for output files>"
                     "-ver=<version of input file>[1|2|3]"
 

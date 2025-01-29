@@ -242,7 +242,7 @@ Sequence< sal_Int8 > SAL_CALL OOBmpToWinDIB( Sequence< sal_Int8 >& aOOBmp )
 //------------------------------------------------------------------------------
 // converts the openoffice text/html clipboard format to the HTML Format
 // well known under MS Windows
-// the MS HTML Format has a header before the real html data
+// the MS HTML Format has a header before the real HTML data
 //
 // Version:1.0		Version number of the clipboard. Staring is 0.9
 // StartHTML:		Byte count from the beginning of the clipboard to the start
@@ -288,7 +288,7 @@ Sequence< sal_Int8 > SAL_CALL TextHtmlToHTMLFormat( Sequence< sal_Int8 >& aTextH
 	sal_uInt32 lHTMLFmtHdr = rtl_str_getLength( aHTMLFmtHdr );
 	
     // the office always writes the start
-    // and end html tag in upper cases and
+    // and end HTML tag in upper cases and
     // without spaces
     // both tags don't allow parameters
 	OString startHtmlTag( "<HTML>" );
@@ -321,7 +321,7 @@ Sequence< sal_Int8 > SAL_CALL TextHtmlToHTMLFormat( Sequence< sal_Int8 >& aTextH
 		nStartFrgmt = nStartFrgmt + startBodyTag.getLength( ) + lHTMLFmtHdr; // after the <BODY> tag
 		nEndFrgmt   = nEndFrgmt   + lHTMLFmtHdr;
 
-		// fill the html header
+		// fill the HTML header
 		rtl_zeroMemory( aHTMLFmtHdr, sizeof( aHTMLFmtHdr ) );
 
 		wsprintf( 
@@ -360,7 +360,7 @@ std::string GetHtmlFormatHeader(size_t startHtml, size_t endHtml, size_t startFr
     return htmlHeader.str();
 }
 
-// the office always writes the start and end html tag in upper cases and
+// the office always writes the start and end HTML tag in upper cases and
 // without spaces both tags don't allow parameters
 const std::string TAG_HTML = std::string("<HTML>");
 const std::string TAG_END_HTML = std::string("</HTML>");

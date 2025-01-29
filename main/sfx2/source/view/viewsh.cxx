@@ -698,7 +698,7 @@ void SfxViewShell::ExecMisc_Impl( SfxRequest &rReq )
                 aArgs[0].Name  = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "FilterName" ));
                 aArgs[0].Value = css::uno::makeAny( aFilterName );
 
-                // Store document in the html format
+                // Store document in the HTML format
                 try
                 {
                     xStorable->storeToURL( aFileURL, aArgs );

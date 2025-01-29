@@ -482,7 +482,7 @@ ODatabaseForm::~ODatabaseForm()
 }
 
 //==============================================================================
-// html tools
+// HTML tools
 //------------------------------------------------------------------------
 ::rtl::OUString ODatabaseForm::GetDataURLEncoded(const Reference<XControl>& SubmitButton, const ::com::sun::star::awt::MouseEvent& MouseEvt)
 {
@@ -541,7 +541,7 @@ ODatabaseForm::~ODatabaseForm()
 }
 
 //==============================================================================
-// html tools
+// HTML tools
 //------------------------------------------------------------------------
 ::rtl::OUString ODatabaseForm::GetDataTextEncoded(const Reference<XControl>& SubmitButton, const ::com::sun::star::awt::MouseEvent& MouseEvt)
 {
@@ -3955,7 +3955,7 @@ void SAL_CALL ODatabaseForm::write(const Reference<XObjectOutputStream>& _rxOutS
 	_rxOutStream->writeBoolean(m_bAllowUpdate);
 	_rxOutStream->writeBoolean(m_bAllowDelete);
 
-	// html form stuff
+	// HTML form stuff
 	::rtl::OUString sTmp = INetURLObject::decode( m_aTargetURL, '%', INetURLObject::DECODE_UNAMBIGUOUS);
 	_rxOutStream << sTmp;
 	_rxOutStream->writeShort( (sal_Int16)m_eSubmitMethod );
@@ -4063,7 +4063,7 @@ void SAL_CALL ODatabaseForm::read(const Reference<XObjectInputStream>& _rxInStre
 	m_bAllowUpdate		= _rxInStream->readBoolean();
 	m_bAllowDelete		= _rxInStream->readBoolean();
 
-	// html stuff
+	// HTML stuff
 	::rtl::OUString sTmp;
 	_rxInStream >> sTmp;
 	m_aTargetURL = INetURLObject::decode( sTmp, '%', INetURLObject::DECODE_UNAMBIGUOUS);

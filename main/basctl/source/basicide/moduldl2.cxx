@@ -795,7 +795,7 @@ void LibPage::InsertLib()
     aFilter += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ";*.sdw;*.sxw;*.odt" ) );      // text
     aFilter += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ";*.vor;*.stw;*.ott" ) );      // text template
     aFilter += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ";*.sgl;*.sxg;*.odm" ) );      // master document
-    aFilter += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ";*.oth" ) );                  // html document template
+    aFilter += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ";*.oth" ) );                  // HTML document template
     aFilter += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ";*.sdc;*.sxc;*.ods" ) );      // spreadsheet
     aFilter += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ";*.stc;*.ots" ) );            // spreadsheet template
     aFilter += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ";*.sda;*.sxd;*.odg" ) );      // drawing

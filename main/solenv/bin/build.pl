@@ -146,7 +146,7 @@
     my $post_job = '';        # -"-
     my @warnings = (); # array of warnings to be shown at the end of the process
     my @errors = (); # array of errors to be shown at the end of the process
-    my %html_info = (); # hash containing all necessary info for generating of html page
+    my %html_info = (); # hash containing all necessary info for generating of HTML page
     my %module_by_hash = (); # hash containing all modules names as values and correspondent hashes as keys
     my %build_in_progress = (); # hash of modules currently being built
     my %build_is_finished = (); # hash of already built modules
