@@ -25,7 +25,7 @@
 
 # GCOV_RESULT
 # 
-# Helper, to interpret the result and put the result via html in a database.
+# Helper, to interpret the result and put the result via HTML in a database.
 # Put into DB works via php.
 #
 # Q: Why perl?

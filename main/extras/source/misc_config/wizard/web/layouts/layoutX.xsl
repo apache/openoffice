@@ -63,7 +63,7 @@
 	 
 	 <xsl:template name="toc">
 		<!--
-		     @ pre toc html here
+		     @ pre toc HTML here
 		-->
 		
 		<!-- use this to group documents, it
@@ -74,7 +74,7 @@
 		<xsl:for-each select="/session/content/document[ ( ( position() - 1 ) mod $group ) = 0 ]">
 			
 			<!-- 
-				@ pre group html here 
+				@ pre group HTML here
 			-->
 			
 			<xsl:call-template name="document-group">
@@ -82,7 +82,7 @@
 			</xsl:call-template>  
 			
 			<!--
-				@ post group html here
+				@ post group HTML here
 			-->
 			
 		</xsl:for-each>
@@ -97,7 +97,7 @@
 		-->
 
 		<!--
-		     @ post toc html here
+		     @ post toc HTML here
 		-->
 
 	 </xsl:template>
@@ -142,7 +142,7 @@
 	 	 
 	 <xsl:template name="title">
 	    <!--
-	      @ Pre title html code here
+	      @ Pre title HTML code here
 	    -->
 	    
 	    <xsl:value-of select="/session/general-info/@title"/>

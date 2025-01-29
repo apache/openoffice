@@ -139,7 +139,7 @@ public class HelpDialog extends JDialog implements ActionListener {
             }
         }
         else {
-            System.err.println("Did not find html directory");
+            System.err.println("Did not find HTML directory");
         }
         
         return editorPane;

@@ -125,7 +125,7 @@ public class UnoNode{
     public void openIdlDescription(String _sIDLUrl, String _sClassName, String _sAnchor){
     try{
         String sIDLUrl = _sIDLUrl;
-        String sAnchor = ""; // TODO find out how the Anchor may be set at the html file;  //_sAnchor;
+        String sAnchor = ""; // TODO find out how the Anchor may be set at the HTML file;  //_sAnchor;
         boolean bExists = Introspector.getIntrospector().getXSimpleFileAccess().exists(sIDLUrl);
         if (sIDLUrl.equals("") || (!bExists)){
             sIDLUrl = "http://api.openoffice.org/" + Inspector.sIDLDOCUMENTSUBFOLDER;

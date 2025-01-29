@@ -352,7 +352,7 @@ void SwSrcView::Execute(SfxRequest& rReq)
 //			pFileDlg->SetHelpId(HID_FILEDLG_SRCVIEW);
             uno::Reference<XFilterManager> xFltMgr(xFP, UNO_QUERY);
 
-			// search for an html filter for export
+			// search for an HTML filter for export
 			SfxFilterContainer* pFilterCont = GetObjectShell()->GetFactory().GetFilterContainer();
 			const SfxFilter* pFilter =
 				pFilterCont->GetFilter4Extension( C2S("html"), SFX_FILTER_EXPORT );

@@ -90,7 +90,7 @@ namespace frm
 //.........................................................................
 
 //========================================================================
-//= html tools
+//= HTML tools
 //========================================================================
 
 const sal_uInt16 SUCCESSFUL_REPRESENT_TEXT			= 0x0001;
@@ -524,7 +524,7 @@ private:
 	void	onError(const ::com::sun::star::sdb::SQLErrorEvent& _rEvent);
 	void	onError(const ::com::sun::star::sdbc::SQLException&, const ::rtl::OUString& _rContextDescription);
 
-	// html tools
+	// HTML tools
     ::rtl::OUString         GetDataEncoded(bool _bURLEncoded,const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl>& SubmitButton, const ::com::sun::star::awt::MouseEvent& MouseEvt);
 	::rtl::OUString			GetDataURLEncoded(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl>& SubmitButton, const ::com::sun::star::awt::MouseEvent& MouseEvt);
 	::rtl::OUString			GetDataTextEncoded(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl>& SubmitButton, const ::com::sun::star::awt::MouseEvent& MouseEvt);

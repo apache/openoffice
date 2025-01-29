@@ -73,7 +73,7 @@ places...
 		</table>
 		
 		<!--
-		     @ post toc html here
+		     @ post toc HTML here
 		-->
 		
 		<p class="colback"> </p>

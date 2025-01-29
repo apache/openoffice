@@ -102,7 +102,7 @@ public class WikiArticle
             }
         }
 
-        // in case of loading the html contents are used
+        // in case of loading the HTML contents are used
         // in case of saving the contents should be checked whether they are empty
         InitArticleHTML();
 

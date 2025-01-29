@@ -78,7 +78,7 @@ com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL OOBmpToWinDIB( com::sun::star
 /*------------------------------------------------------------------------
 	input:
 	aTextHtml - a sequence of text/html which will be converted to the 
-	HTML Format; the HTML Format has header before the real html data
+	HTML Format; the HTML Format has header before the real HTML data
 	the Format is described in the MSDN Library under HTML Clipboard
 	Format
 ------------------------------------------------------------------------*/

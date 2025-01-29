@@ -79,7 +79,7 @@ public class ResourceManager {
                             setupFiles.put(key, newFileName);                
                             // System.err.println("Using file: " + fileName);
                         } else {
-                            // Introducing fallback to a very special simple html page
+                            // Introducing fallback to a very special simple HTML page
                             String simplePage = "Excuse.html";
                             File simpleFile = new File(htmlDirectory, simplePage);
                             if ( simpleFile.exists() ) {

@@ -1625,7 +1625,7 @@ sub ShowLog ($$$$)
             my $new_name = $candidate;
             $new_name =~ s/Details.*$/$log_basename.html/;
 
-            # Rename the top-level html file and replace the title.
+            # Rename the top-level HTML file and replace the title.
             open my $in, "<", $candidate;
             open my $out, ">", $new_name;
             while (<$in>)

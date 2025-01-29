@@ -92,7 +92,7 @@ public class AcceptLicense extends JPanel {
                 System.err.println("Attempted to read a bad URL");
             }
         } else {
-            System.err.println("Did not find html directory");
+            System.err.println("Did not find HTML directory");
         }
 
         return editorPane;
