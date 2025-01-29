@@ -32,4 +32,3 @@ public interface ComplexTest {
     public String getTestObjectName();
     
 }
-

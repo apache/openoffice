@@ -141,4 +141,3 @@ public class SwXBodyText extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXBodyText
-

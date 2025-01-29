@@ -83,4 +83,3 @@ public class _UnoControlProgressBarModel extends MultiPropertyTest {
         }) ;
     }
 }
-

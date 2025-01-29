@@ -161,4 +161,3 @@ public class _XRecentFunctions extends MultiMethodTest {
     }
 
 }
-

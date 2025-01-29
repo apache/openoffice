@@ -108,4 +108,3 @@ public class _ChartDataPointProperties extends MultiPropertyTest {
         testProperty("SymbolBitmapURL", URLTester);
     }
 }
-

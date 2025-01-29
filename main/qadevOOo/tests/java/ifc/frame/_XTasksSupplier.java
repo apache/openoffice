@@ -93,4 +93,3 @@ public class _XTasksSupplier extends MultiMethodTest {
     } // finished _removeResetListener()
 
 } // finished class _XTaskSupplier
-

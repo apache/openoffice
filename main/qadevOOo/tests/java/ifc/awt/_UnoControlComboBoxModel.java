@@ -131,4 +131,3 @@ public class _UnoControlComboBoxModel extends MultiPropertyTest {
     }      
 
 } //EOF UnoControlComboBoxModel
-

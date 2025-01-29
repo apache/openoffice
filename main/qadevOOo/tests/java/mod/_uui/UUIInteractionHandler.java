@@ -75,4 +75,3 @@ public class UUIInteractionHandler extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

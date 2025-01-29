@@ -93,4 +93,3 @@ public class _XRemoteContentProviderAcceptor extends MultiMethodTest {
 
 
 }
-

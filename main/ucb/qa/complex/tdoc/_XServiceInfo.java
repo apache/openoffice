@@ -92,4 +92,3 @@ public class _XServiceInfo {
         return oObj.supportsService(names[0]);
     } // end supportsService()
 }
-

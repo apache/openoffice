@@ -157,5 +157,3 @@ public class _XImageProducer extends MultiMethodTest {
     }
 
 }
-
-

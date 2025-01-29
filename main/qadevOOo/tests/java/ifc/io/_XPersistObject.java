@@ -261,5 +261,3 @@ public class _XPersistObject extends MultiMethodTest {
 
 
 }
-
-

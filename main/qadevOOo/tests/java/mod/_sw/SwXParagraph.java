@@ -272,4 +272,3 @@ public class SwXParagraph extends TestCase {
     } // finish method getTestEnvironment
     
 }    // finish class SwXParagraph
-

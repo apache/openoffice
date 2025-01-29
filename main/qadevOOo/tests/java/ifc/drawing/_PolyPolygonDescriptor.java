@@ -39,5 +39,3 @@ import lib.MultiPropertyTest;
 public class _PolyPolygonDescriptor extends MultiPropertyTest {
 
 }  // finish class _PolyPolygonDescriptor
-
-

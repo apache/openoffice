@@ -188,4 +188,3 @@ public class SvxShapeGroup extends TestCase {
     } // finish method createTestEnvironment
 
 }    // finish class SvxShapeGroup
-

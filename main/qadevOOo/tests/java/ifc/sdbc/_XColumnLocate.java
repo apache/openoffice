@@ -78,4 +78,3 @@ public class _XColumnLocate extends MultiMethodTest {
     }
 
 }  // finish class _XColumnLocate
-

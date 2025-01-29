@@ -160,4 +160,3 @@ public class ScIndexEnumeration_SheetCellRangesEnumeration extends TestCase {
     }
 
 }
-

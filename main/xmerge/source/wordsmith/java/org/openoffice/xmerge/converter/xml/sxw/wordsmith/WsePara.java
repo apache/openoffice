@@ -292,4 +292,3 @@ class WsePara extends Wse {
         return x;
     }
 }
-

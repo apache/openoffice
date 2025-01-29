@@ -81,5 +81,3 @@ class TestMessage implements IMessage {
 //  			return new Integer(_requestId);
 	}
 }
-
-

@@ -134,4 +134,3 @@ public class AccessiblePageShape extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

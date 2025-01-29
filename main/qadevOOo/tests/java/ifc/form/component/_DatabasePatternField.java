@@ -38,4 +38,3 @@ import lib.MultiPropertyTest;
 public class _DatabasePatternField extends MultiPropertyTest {
 
 }
-

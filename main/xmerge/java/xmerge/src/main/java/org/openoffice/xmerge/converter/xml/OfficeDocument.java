@@ -1258,4 +1258,3 @@ public abstract class OfficeDocument
         manifestRoot.appendChild(docRoot);
     }
 }
-

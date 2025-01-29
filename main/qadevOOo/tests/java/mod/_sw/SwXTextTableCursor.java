@@ -117,4 +117,3 @@ public class SwXTextTableCursor extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTextTableCursor
-

@@ -103,5 +103,3 @@ public class _XHyphenator extends MultiMethodTest {
     }
 
 }  // \u0422\u044B finish class XHyphenator
-
-

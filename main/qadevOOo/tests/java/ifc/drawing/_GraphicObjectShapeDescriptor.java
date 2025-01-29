@@ -64,4 +64,3 @@ public class _GraphicObjectShapeDescriptor extends MultiPropertyTest {
     }
 
 }
-

@@ -1299,4 +1299,3 @@ public abstract class WWD_Events extends WWD_Startup
         }
     }
 }
-

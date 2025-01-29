@@ -101,5 +101,3 @@ public class _XAxisYSupplier extends MultiMethodTest {
         tRes.tested("getYHelpGrid()", result);
     }
 } // EOF XAxisYSupplier
-
-

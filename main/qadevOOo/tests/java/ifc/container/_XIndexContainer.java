@@ -201,6 +201,3 @@ public class _XIndexContainer extends MultiMethodTest {
         tRes.tested("removeByIndex()", result);
     }
 }
-
-
-

@@ -74,4 +74,3 @@ public class TextSearch extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

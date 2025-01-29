@@ -39,4 +39,3 @@ public class MetaDataFunctionCategory extends AbstractFunctionCategory
         super("com.sun.star.report.function.metadata.category");
     }
 }
-

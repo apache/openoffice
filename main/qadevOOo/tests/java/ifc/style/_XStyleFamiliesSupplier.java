@@ -48,4 +48,3 @@ public class _XStyleFamiliesSupplier extends MultiMethodTest {
          tRes.tested("getStyleFamilies()",oObj.getStyleFamilies() != null);
     }
 }
-

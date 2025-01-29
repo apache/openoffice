@@ -87,4 +87,3 @@ public class _XCloseable extends MultiMethodTest {
     }
 
 }  // finish class _XCloseable
-

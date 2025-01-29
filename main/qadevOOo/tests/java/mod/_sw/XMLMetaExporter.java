@@ -193,4 +193,3 @@ public class XMLMetaExporter extends TestCase {
         }
     }
 }
-

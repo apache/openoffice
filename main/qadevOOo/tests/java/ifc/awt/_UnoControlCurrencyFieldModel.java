@@ -126,4 +126,3 @@ public class _UnoControlCurrencyFieldModel extends MultiPropertyTest {
         }) ;
     }
 }
-

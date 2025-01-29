@@ -375,4 +375,3 @@ public class TableWindowAccessibility extends TestCase {
         }
     }
 }
-

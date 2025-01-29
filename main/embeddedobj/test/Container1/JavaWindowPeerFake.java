@@ -102,4 +102,3 @@ class JavaWindowPeerFake implements XSystemDependentWindowPeer,
 	{
 	}
 }
-

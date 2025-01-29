@@ -93,4 +93,3 @@ abstract class Wse {
      */
     abstract byte[] getBytes();
 }
-

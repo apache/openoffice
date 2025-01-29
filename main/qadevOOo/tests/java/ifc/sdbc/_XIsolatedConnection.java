@@ -116,4 +116,3 @@ public class _XIsolatedConnection extends MultiMethodTest {
         tRes.tested("getIsolatedConnection()", con != null) ;
     }
 }  // finish class _XIsolatedConnection
-

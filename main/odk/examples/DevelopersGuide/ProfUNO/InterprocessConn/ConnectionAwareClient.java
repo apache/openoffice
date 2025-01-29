@@ -246,4 +246,3 @@ public class ConnectionAwareClient extends java.awt.Frame
             connAware.setVisible( true );
         }
 }
-

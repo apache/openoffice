@@ -255,5 +255,3 @@ public class _XConsolidationDescriptor extends MultiMethodTest {
 
 
 }  // finish class _XConsolidationDescriptor
-
-

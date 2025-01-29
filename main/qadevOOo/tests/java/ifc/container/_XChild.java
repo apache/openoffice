@@ -92,5 +92,3 @@ public class _XChild extends MultiMethodTest {
     }
 
 }  // finish class _XChild
-
-

@@ -89,4 +89,3 @@ public class _GenericDrawPage extends MultiPropertyTest {
     }
 
 } // end of GenericDrawPage
-

@@ -90,5 +90,3 @@ public class _XNumberFormatsSupplier extends MultiMethodTest {
     }
 
 }
-
-

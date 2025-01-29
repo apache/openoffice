@@ -256,4 +256,3 @@ public class PropTest extends PropertySet implements XServiceInfo
 //         PropTest.__serviceName, regKey);
 //     }
 }
-

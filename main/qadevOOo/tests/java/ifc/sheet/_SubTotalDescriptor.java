@@ -42,4 +42,3 @@ import lib.MultiPropertyTest;
 */
 public class _SubTotalDescriptor extends MultiPropertyTest {
 }  // finish class _SubTotalDescriptor
-

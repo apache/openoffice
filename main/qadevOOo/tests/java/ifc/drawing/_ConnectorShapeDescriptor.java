@@ -34,6 +34,3 @@ public class _ConnectorShapeDescriptor extends MultiPropertyTest {
     }
 
 }  // finish class _ConnectorShapeDescriptor
-
-
-

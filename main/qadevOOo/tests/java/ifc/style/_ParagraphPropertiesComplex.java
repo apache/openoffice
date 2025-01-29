@@ -48,4 +48,3 @@ public class _ParagraphPropertiesComplex extends MultiPropertyTest {
     }    
 
 }  // finish class _ParagraphPropertiesComplex
-

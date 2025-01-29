@@ -116,4 +116,3 @@ public class _XTypeDetection extends MultiMethodTest {
         tRes.tested("queryTypeByDescriptor()", result) ;
     }
 }
-

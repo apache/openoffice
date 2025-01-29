@@ -80,4 +80,3 @@ public class _XSearchDescriptor extends MultiMethodTest {
     }
 
 }  // finish class _XSearchDescriptor
-

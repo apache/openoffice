@@ -78,4 +78,3 @@ public class SwXPropertySet extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXPropertySet
-

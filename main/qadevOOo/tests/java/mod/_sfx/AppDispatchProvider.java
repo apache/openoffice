@@ -97,4 +97,3 @@ public class AppDispatchProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

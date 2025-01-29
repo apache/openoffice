@@ -56,4 +56,3 @@ public class _XMasterPagesSupplier extends MultiMethodTest{
         tRes.tested("getMasterPages()",result);
     }
 }
-

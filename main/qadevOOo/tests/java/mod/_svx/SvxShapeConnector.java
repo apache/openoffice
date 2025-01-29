@@ -197,4 +197,3 @@ public class SvxShapeConnector extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SvxShapeConnector
-

@@ -126,4 +126,3 @@ public class _XViewPane extends MultiMethodTest {
         tRes.tested("getVisibleRange()", result);
     }
 }
-

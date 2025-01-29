@@ -168,5 +168,3 @@ public class _XPatternField extends MultiMethodTest {
         tRes.tested("isStrictFormat()", result) ;
     }
 }
-
-

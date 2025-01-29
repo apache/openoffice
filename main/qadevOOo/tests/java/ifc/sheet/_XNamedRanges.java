@@ -320,4 +320,3 @@ public class _XNamedRanges extends MultiMethodTest {
         return types[rnd.nextInt(5)];
     }
 }
-

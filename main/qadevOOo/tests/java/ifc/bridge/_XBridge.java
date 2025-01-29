@@ -141,4 +141,3 @@ public class _XBridge extends MultiMethodTest {
     }
 
 }
-

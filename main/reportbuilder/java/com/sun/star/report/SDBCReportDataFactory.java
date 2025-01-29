@@ -584,4 +584,3 @@ public class SDBCReportDataFactory implements DataSourceFactory
         rowSetProp.setPropertyValue("Order", order.toString());
     }
 }
-

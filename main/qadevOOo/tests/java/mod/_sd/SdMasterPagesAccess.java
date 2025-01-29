@@ -115,4 +115,3 @@ public class SdMasterPagesAccess extends TestCase {
     } // finish method createTestEnvironment
 
 }    // finish class SdMasterPagesAccess
-

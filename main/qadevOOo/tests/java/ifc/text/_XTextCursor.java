@@ -235,4 +235,3 @@ public class _XTextCursor extends MultiMethodTest {
     }
 
 }  // finish class _XTextCursor
-

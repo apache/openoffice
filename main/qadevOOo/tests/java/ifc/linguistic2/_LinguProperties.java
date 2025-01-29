@@ -53,5 +53,3 @@ import lib.MultiPropertyTest;
 */
 public class _LinguProperties extends MultiPropertyTest {
 }  // finish class _LinguProperties
-
-

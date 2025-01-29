@@ -258,4 +258,3 @@ public class Test12 implements StorageTest {
 		return true;
 	}
 }
-

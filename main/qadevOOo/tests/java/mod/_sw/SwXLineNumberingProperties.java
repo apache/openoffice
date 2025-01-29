@@ -112,4 +112,3 @@ public class SwXLineNumberingProperties extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXLineNumberingProperties
-

@@ -150,4 +150,3 @@ public class ScCellFormatsEnumeration extends TestCase {
     }
 
 }    // finish class ScCellFormatsEnumeration
-

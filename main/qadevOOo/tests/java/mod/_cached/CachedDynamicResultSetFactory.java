@@ -176,4 +176,3 @@ public class CachedDynamicResultSetFactory extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

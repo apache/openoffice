@@ -237,5 +237,3 @@ public class ScDDELinkObj extends TestCase {
     }
 
 }
-
-

@@ -147,4 +147,3 @@ public class SwXParagraphEnumeration extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXParagraphEnumeration
-

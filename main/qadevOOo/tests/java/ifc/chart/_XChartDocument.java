@@ -156,5 +156,3 @@ public class _XChartDocument extends MultiMethodTest {
     }
 
 }
-
-

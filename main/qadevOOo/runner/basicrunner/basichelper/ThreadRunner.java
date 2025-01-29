@@ -246,5 +246,3 @@ class ExecuteDialogThread extends Thread {
         execDlg.execute();
     }
 }
-
-

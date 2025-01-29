@@ -149,5 +149,3 @@ public class _XObjectInspector extends MultiMethodTest {
 
     }
 }
-
-

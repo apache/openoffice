@@ -229,4 +229,3 @@ public class IteratorLCSAlgorithm implements DiffAlgorithm {
         }
     }
 }
-

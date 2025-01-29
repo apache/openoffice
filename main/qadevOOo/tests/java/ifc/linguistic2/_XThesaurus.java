@@ -64,5 +64,3 @@ public class _XThesaurus extends MultiMethodTest {
 
 
 }  // finish class
-
-

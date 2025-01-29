@@ -157,4 +157,3 @@ public class SwXReferenceMarks extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXReferenceMarks
-

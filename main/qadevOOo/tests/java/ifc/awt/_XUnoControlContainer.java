@@ -174,4 +174,3 @@ public class _XUnoControlContainer extends MultiMethodTest {
     }
 
 }
-

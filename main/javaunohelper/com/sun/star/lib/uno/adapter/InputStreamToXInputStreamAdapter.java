@@ -172,4 +172,3 @@ public class InputStreamToXInputStreamAdapter implements XInputStream {
         } while (tmpLongVal > 0);
     }
 }
-

@@ -44,4 +44,3 @@ public interface DiffAlgorithm {
      */
     public Difference[] computeDiffs(Iterator orgSeq, Iterator modSeq);
 }
-

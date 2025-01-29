@@ -187,4 +187,3 @@ public class SdMasterPage extends TestCase {
     } // finish method createTestEnvironment
 
 }    // finish class SdMasterPage
-

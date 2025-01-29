@@ -142,4 +142,3 @@ public class ScImportDescriptorBase extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScImportDescriptorBase
-

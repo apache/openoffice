@@ -28,4 +28,3 @@ import lib.MultiPropertyTest;
 public class _CaptionShape extends MultiPropertyTest {
 
 }
-

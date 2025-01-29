@@ -114,4 +114,3 @@ public abstract class SpreadsheetEncoder {
      */
     public abstract void addSettings(BookSettings s) throws IOException;		
 }
-

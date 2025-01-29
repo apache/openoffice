@@ -159,4 +159,3 @@ public class ScIndexEnumeration_TextFieldEnumeration extends TestCase {
     }
 
 }
-

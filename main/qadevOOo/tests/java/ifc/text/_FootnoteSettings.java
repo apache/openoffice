@@ -96,5 +96,3 @@ public class _FootnoteSettings extends MultiPropertyTest {
     }
 
 }
-
-

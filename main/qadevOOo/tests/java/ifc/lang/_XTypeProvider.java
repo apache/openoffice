@@ -86,4 +86,3 @@ public class _XTypeProvider extends MultiMethodTest {
     } // end getTypes()
 
 }
-

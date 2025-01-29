@@ -106,4 +106,3 @@ public final class ConverterCapabilitiesImpl
         return false;
     }
 }
-

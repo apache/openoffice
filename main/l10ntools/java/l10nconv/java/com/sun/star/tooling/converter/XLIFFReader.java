@@ -735,4 +735,3 @@ public class XLIFFReader extends DefaultHandler {
         //Converter.out(EMPTY);
     }
 }
-

@@ -191,5 +191,3 @@ public class StateSetView
         saDefaultColor = new Color (90,90,90),
         saEditColor = new Color (240,240,0);
 }
-
-

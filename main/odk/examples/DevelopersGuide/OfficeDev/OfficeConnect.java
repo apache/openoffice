@@ -170,4 +170,3 @@ public class OfficeConnect
     // reference to remote service manager
     private com.sun.star.lang.XMultiComponentFactory  mxServiceManager;
 }
-

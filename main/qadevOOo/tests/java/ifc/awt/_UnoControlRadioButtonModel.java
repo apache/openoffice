@@ -101,4 +101,3 @@ public class _UnoControlRadioButtonModel extends MultiPropertyTest {
         }) ;
     }               
 }
-

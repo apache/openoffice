@@ -127,4 +127,3 @@ public class SwXEndnoteProperties extends TestCase {
     }
 
 }
-

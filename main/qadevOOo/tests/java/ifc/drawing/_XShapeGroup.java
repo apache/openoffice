@@ -63,4 +63,3 @@ public class _XShapeGroup extends MultiMethodTest {
     }
 
 } // end of _XShapeGroup
-

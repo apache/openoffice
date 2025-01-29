@@ -136,4 +136,3 @@ public class SwXFrames extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXFrames
-

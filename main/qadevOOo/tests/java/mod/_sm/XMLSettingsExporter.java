@@ -191,4 +191,3 @@ public class XMLSettingsExporter extends TestCase {
     }
 
 }    // finish class TestCase
-

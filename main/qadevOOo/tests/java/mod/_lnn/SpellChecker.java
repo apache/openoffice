@@ -102,4 +102,3 @@ public class SpellChecker extends TestCase {
     }
 
 }    // finish class TestCase
-

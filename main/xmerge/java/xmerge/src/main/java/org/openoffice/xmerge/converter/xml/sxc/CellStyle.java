@@ -503,4 +503,3 @@ public class CellStyle extends Style implements Cloneable {
         return false;
     }
 }
-

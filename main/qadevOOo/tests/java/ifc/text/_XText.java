@@ -162,5 +162,3 @@ public class _XText extends MultiMethodTest {
 
     }
 }  // finish class _XText
-
-

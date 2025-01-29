@@ -80,4 +80,3 @@ public class CoreReflection extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class CoreReflection
-

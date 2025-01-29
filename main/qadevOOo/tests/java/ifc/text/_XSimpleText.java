@@ -129,4 +129,3 @@ public class _XSimpleText extends MultiMethodTest {
         tRes.tested("createTextCursorByRange()", oTCursor != null) ;
     }
 }  // finish class _XSimpleText
-

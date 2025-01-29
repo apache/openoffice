@@ -121,4 +121,3 @@ public class AccessibleShape extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

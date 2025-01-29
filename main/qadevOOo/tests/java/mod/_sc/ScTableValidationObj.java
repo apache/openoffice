@@ -157,4 +157,3 @@ public class ScTableValidationObj extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }    // finish class ScTableValidationObj
-

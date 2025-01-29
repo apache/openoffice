@@ -105,5 +105,3 @@ public class ScIndexEnumeration_FunctionDescriptionEnumeration extends TestCase 
     }
 
 }
-
-

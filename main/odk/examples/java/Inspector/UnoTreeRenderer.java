@@ -120,5 +120,3 @@ public class UnoTreeRenderer extends DefaultTreeCellRenderer{
         super.paintComponent(g);
     }
 }
-
-

@@ -228,4 +228,3 @@ public class _XMultiPropertyStates extends MultiMethodTest {
     }
 
 }
-

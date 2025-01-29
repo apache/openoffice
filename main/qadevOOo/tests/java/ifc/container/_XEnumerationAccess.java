@@ -48,6 +48,3 @@ public class _XEnumerationAccess extends MultiMethodTest{
         return;
     } // end createEnumeration()
 }  // finish class _XEnumerationAccess
-
-
-

@@ -97,4 +97,3 @@ public class JavaLoaderFactory implements XSingleServiceFactory, XServiceInfo {
 		return supportedServices;
 	}
 }
-

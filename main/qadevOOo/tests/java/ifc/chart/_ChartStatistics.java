@@ -67,4 +67,3 @@ public class _ChartStatistics extends MultiPropertyTest {
             UnoRuntime.queryInterface( XPropertySet.class, doc.getDiagram() );
     }
 }
-

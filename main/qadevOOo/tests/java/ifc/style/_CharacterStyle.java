@@ -43,4 +43,3 @@ import lib.MultiPropertyTest;
 public class _CharacterStyle extends MultiPropertyTest {
 
 }
-

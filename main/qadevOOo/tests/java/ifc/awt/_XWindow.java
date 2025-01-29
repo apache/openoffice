@@ -617,4 +617,3 @@ public class _XWindow extends MultiMethodTest {
     }
 
 }
-

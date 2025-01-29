@@ -173,4 +173,3 @@ public abstract class SpreadsheetDecoder {
      */
     public abstract void addDeviceContent(ConvertData cd) throws IOException;
 }
-

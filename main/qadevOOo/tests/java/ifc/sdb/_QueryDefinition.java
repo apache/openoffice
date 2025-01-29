@@ -47,5 +47,3 @@ public class _QueryDefinition extends MultiPropertyTest {
 
 
 }  // finish class _QueryDefinition
-
-

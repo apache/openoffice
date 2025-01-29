@@ -99,5 +99,3 @@ public class _XAreaLinks extends MultiMethodTest {
     }
 
 } //EOC _XAreaLinks
-
-

@@ -70,4 +70,3 @@ public class _XImporter extends MultiMethodTest {
     }
 
 }  // finish class _XImporter
-

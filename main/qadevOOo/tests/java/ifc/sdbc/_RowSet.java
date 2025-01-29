@@ -74,4 +74,3 @@ public class _RowSet extends MultiPropertyTest {
     }    
 
 }  // finish class _RowSet
-

@@ -99,4 +99,3 @@ public class ChXChartDataArray extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ChXChartDataArray
-

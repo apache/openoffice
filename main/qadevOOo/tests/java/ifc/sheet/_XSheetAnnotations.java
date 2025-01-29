@@ -82,5 +82,3 @@ public class _XSheetAnnotations extends MultiMethodTest {
     }
 
 } // EOC _XSheetAnnotations
-
-

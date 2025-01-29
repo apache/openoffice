@@ -122,5 +122,3 @@ public class ScFunctionListObj extends TestCase {
     }
 
 }
-
-

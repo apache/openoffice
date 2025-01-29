@@ -97,5 +97,3 @@ public class MemberTypeInfo extends TypeInfo
         return m_typeParameterIndex;
     }
 }
-
-

@@ -70,4 +70,3 @@ public class UcbStore extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class UcbStore
-

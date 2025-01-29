@@ -97,4 +97,3 @@ public class WeakAdapter implements XAdapter
         m_xreferenceList.add(xReference);
     }
 }
-

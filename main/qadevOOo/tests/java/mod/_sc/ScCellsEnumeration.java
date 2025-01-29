@@ -165,4 +165,3 @@ public class ScCellsEnumeration extends TestCase {
     }
 
 }    // finish class ScCellsEnumeration
-

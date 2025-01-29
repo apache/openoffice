@@ -401,4 +401,3 @@ public class _XDocumentHandler extends MultiMethodTest {
     }
 
 }
-

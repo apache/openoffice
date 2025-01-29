@@ -123,5 +123,3 @@ public class _XFunctionDescriptions extends MultiMethodTest {
         tRes.tested("getById()", bResult);
     }
 }  // finish class _XFunctionDescriptions
-
-

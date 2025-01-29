@@ -139,4 +139,3 @@ public class EditorFrame extends JFrame
         return new byte[0];
     }
 }  
-

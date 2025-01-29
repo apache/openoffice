@@ -71,4 +71,3 @@ public class _ConnectorShape extends MultiPropertyTest {
 
 
 }
-

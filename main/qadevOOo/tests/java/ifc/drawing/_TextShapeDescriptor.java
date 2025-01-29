@@ -29,4 +29,3 @@ import lib.MultiPropertyTest;
 public class _TextShapeDescriptor extends MultiPropertyTest {
 
 }  // finish class _TextShapeDescriptor
-

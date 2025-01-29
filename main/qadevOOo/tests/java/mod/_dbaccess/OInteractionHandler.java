@@ -110,4 +110,3 @@ public class OInteractionHandler extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

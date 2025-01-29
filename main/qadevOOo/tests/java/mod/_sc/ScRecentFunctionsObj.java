@@ -125,5 +125,3 @@ public class ScRecentFunctionsObj extends TestCase {
     }
 
 }
-
-

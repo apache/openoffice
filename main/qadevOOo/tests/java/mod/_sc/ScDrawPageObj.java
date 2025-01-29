@@ -155,4 +155,3 @@ public class ScDrawPageObj extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

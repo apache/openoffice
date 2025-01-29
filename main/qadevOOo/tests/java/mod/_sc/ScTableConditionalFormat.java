@@ -201,4 +201,3 @@ public class ScTableConditionalFormat extends TestCase {
     }
 
 }    // finish class ScTableConditionalFormat
-

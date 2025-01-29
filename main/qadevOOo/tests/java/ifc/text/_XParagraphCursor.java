@@ -133,4 +133,3 @@ public class _XParagraphCursor extends MultiMethodTest {
     }
 
  }  // finish class _XParagraphCursor
-

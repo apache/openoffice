@@ -126,4 +126,3 @@ public class _UnoControlNumericFieldModel extends MultiPropertyTest {
         }) ;
     }
 }
-

@@ -148,4 +148,3 @@ public class _XNamingService extends MultiMethodTest {
         tRes.tested("revokeObject()", res);
     }
 }
-

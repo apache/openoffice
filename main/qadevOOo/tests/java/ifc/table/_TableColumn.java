@@ -66,5 +66,3 @@ public class _TableColumn extends MultiPropertyTest {
     }
 
 } //finish class _TableColumn
-
-

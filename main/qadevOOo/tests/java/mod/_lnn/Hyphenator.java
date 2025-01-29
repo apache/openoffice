@@ -104,4 +104,3 @@ public class Hyphenator extends TestCase {
 
 
 }    // finish class Hyphenator
-

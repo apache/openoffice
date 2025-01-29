@@ -54,5 +54,3 @@ public class _XTextViewCursorSupplier extends MultiMethodTest {
     } // finish _getViewCursor()
 
 }  // finish class _XTextViewCursorSupplier
-
-

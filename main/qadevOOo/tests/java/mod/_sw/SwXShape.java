@@ -126,4 +126,3 @@ public class SwXShape extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXShape
-

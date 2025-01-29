@@ -104,4 +104,3 @@ public class SdDocLinkTargets extends TestCase {
     } // finish method createTestEnvironment
 
 }    // finish class SdDocLinkTargets
-

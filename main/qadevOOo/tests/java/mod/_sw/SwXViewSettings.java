@@ -105,4 +105,3 @@ public class SwXViewSettings extends TestCase {
 
 
 }    // finish class SwXViewSettings
-

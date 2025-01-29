@@ -537,4 +537,3 @@ public class _CharacterProperties extends MultiPropertyTest {
     }
 
 } //finish class _CharacterProperties
-

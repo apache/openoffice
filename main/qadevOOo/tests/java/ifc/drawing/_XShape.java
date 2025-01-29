@@ -187,6 +187,3 @@ public class _XShape extends MultiMethodTest {
 
 
 }  // finish class _XShape
-
-
-

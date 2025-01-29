@@ -240,4 +240,3 @@ public class DocumentMerge implements MergeAlgorithm {
         parent.replaceChild(clonedNode, currElem);
     }
 }
-

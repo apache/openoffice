@@ -56,5 +56,3 @@ public class _XFormDocumentsSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XFormDocumentsSupplier
-
-

@@ -418,6 +418,3 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
     }
     
 }  // finish class _XMultiSelectionSupplier
-
-
-

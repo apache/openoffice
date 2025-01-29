@@ -65,4 +65,3 @@ public class ProviderAcceptor extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

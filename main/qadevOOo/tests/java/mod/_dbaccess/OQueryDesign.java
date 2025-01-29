@@ -319,4 +319,3 @@ public class OQueryDesign extends TestCase {
 	}
 
 }	// finish class oDatasourceBrowser
-

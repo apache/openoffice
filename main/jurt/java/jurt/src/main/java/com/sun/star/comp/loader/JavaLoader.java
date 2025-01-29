@@ -476,4 +476,3 @@ public class JavaLoader implements XImplementationLoader,
 	    return result;
     }
 }
-

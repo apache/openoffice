@@ -89,5 +89,3 @@ public class DocumentMergerImpl implements DocumentMerger {
         docMerge.applyDifference(i1, i2, diffTable);
     }
 }
-
-

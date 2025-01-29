@@ -663,5 +663,3 @@ public class _XTreeControl extends MultiMethodTest {
         tRes.tested("DefaultCollapsedGraphicURL()", bOK);
     }
 }
-
-

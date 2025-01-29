@@ -121,5 +121,3 @@ public class _XDocumentIndex extends MultiMethodTest {
 
 
 }  // finish class _XDocumentIndex
-
-

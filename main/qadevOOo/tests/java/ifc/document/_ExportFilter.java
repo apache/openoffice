@@ -44,4 +44,3 @@ import lib.MultiPropertyTest;
 public class _ExportFilter extends MultiPropertyTest {
 
 }
-

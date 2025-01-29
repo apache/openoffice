@@ -255,5 +255,3 @@ public class _XResultSetUpdate extends MultiMethodTest {
         //disposeEnvironment() ;
     }
 }  // finish class _XResultSetUpdate
-
-

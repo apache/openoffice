@@ -107,5 +107,3 @@ public class _AreaShapeDescriptor extends MultiPropertyTest {
     }
 
 }
-
-

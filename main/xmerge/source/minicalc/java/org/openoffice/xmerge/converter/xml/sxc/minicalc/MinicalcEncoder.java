@@ -575,4 +575,3 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
         }
     }
 }
-

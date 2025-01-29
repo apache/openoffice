@@ -98,4 +98,3 @@ public class _XDataPilotTable extends MultiMethodTest {
         tRes.tested("refresh()", oldData != newData);
     }
 }
-

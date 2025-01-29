@@ -158,5 +158,3 @@ public class ScIndexEnumeration_DataPilotTablesEnumeration extends TestCase {
     }
 
 }
-
-

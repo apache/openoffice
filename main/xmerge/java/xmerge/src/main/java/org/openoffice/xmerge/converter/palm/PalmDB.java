@@ -462,4 +462,3 @@ public final class PalmDB {
         return bool;
     }
 }
-

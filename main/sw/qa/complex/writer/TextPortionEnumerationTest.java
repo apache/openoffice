@@ -4157,4 +4157,3 @@ public class TextPortionEnumerationTest
 
     private static final OfficeConnection connection = new OfficeConnection();
 }
-

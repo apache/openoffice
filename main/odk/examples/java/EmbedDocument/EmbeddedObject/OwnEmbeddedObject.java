@@ -1142,4 +1142,3 @@ public final class OwnEmbeddedObject extends WeakBase
         // not implemented
     }
 }
-

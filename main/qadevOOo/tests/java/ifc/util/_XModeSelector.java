@@ -97,4 +97,3 @@ public class _XModeSelector extends MultiMethodTest {
         tRes.tested("supportsMode()", result);
     }
 }// finish class _XModeSelector
-

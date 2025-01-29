@@ -49,4 +49,3 @@ public class _XScenariosSupplier extends MultiMethodTest {
     }
 
 } // EOC _XScenariosSupplier
-

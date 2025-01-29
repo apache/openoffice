@@ -143,5 +143,3 @@ public class _XRadioButton extends MultiMethodTest {
         tRes.tested("setLabel()", result) ;
     }
 }
-
-

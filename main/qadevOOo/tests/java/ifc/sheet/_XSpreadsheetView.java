@@ -84,5 +84,3 @@ public class _XSpreadsheetView extends MultiMethodTest {
 
 
 }  // finish class _XSpreadsheetView
-
-

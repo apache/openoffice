@@ -124,4 +124,3 @@ public class RegistryTypeDescriptionProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

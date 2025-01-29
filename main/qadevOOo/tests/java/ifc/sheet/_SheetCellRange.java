@@ -37,4 +37,3 @@ import lib.MultiPropertyTest;
 */
 public class _SheetCellRange extends MultiPropertyTest {
 } // finisch class _SheetCellRange
-

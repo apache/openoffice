@@ -269,4 +269,3 @@ public class _XDocumentTemplates extends MultiMethodTest {
         return subContent;
     }
 }
-

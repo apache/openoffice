@@ -187,4 +187,3 @@ public class SharedLibraryLoader_Test {
 		System.exit( test() == true ? 0: -1 );		
 	}
 }
-

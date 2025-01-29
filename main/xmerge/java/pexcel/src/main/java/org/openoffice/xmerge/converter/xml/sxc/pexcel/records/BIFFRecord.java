@@ -54,4 +54,3 @@ import java.io.IOException;
     public void write(OutputStream output) throws IOException;
     
 }
-

@@ -144,4 +144,3 @@ public class _DocumentInfo extends MultiPropertyTest {
         testProperty("ModifyDate", new DatePropertyTester());
     }
 }
-

@@ -166,4 +166,3 @@ public class SwAccessibleTableView extends TestCase {
         xTextDoc = WriterTools.createTextDoc((XMultiServiceFactory)Param.getMSF());
     }
 }
-

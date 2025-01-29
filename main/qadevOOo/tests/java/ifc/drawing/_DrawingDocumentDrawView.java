@@ -170,4 +170,3 @@ public class _DrawingDocumentDrawView extends MultiPropertyTest {
     }        
             
 }
-

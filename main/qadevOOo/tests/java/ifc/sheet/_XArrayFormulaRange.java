@@ -175,4 +175,3 @@ public class _XArrayFormulaRange extends MultiMethodTest {
         disposeEnvironment();
     }    
 }
-

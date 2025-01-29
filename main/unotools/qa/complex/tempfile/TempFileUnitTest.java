@@ -107,4 +107,3 @@ public class TempFileUnitTest /* extends ComplexTestCase */ {
 
     private static final OfficeConnection connection = new OfficeConnection();
 };
-

@@ -64,4 +64,3 @@ import lib.MultiPropertyTest;
 public class _ViewSettings extends MultiPropertyTest {
 
 } // finish class _ViewSettings
-

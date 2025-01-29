@@ -227,5 +227,3 @@ public class _XFastPropertySet extends MultiMethodTest {
         return hasChanged;
     }
 }
-
-

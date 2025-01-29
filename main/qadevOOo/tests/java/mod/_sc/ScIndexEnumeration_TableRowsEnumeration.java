@@ -121,4 +121,3 @@ public class ScIndexEnumeration_TableRowsEnumeration extends TestCase {
         return tEnv;
     }
 }
-

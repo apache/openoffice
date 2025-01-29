@@ -674,4 +674,3 @@ public class _XBreakIterator extends MultiMethodTest {
     }
 
 }
-

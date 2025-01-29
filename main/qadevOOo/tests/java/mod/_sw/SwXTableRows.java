@@ -121,4 +121,3 @@ public class SwXTableRows extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTableRows
-

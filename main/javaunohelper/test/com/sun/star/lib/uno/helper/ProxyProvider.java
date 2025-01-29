@@ -157,5 +157,3 @@ class Proxy implements IQueryInterface, XEventListener
 //        return result;
 //    }
 //}
-
-

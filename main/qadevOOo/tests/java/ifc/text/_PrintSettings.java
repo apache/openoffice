@@ -49,4 +49,3 @@ import lib.MultiPropertyTest;
 public class _PrintSettings extends MultiPropertyTest {
 
 }
-

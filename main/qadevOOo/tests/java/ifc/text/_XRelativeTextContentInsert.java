@@ -129,4 +129,3 @@ public class _XRelativeTextContentInsert extends MultiMethodTest {
     } // end _insertTextContentBefore()
 
 }
-

@@ -1094,5 +1094,3 @@ public class ViewForwarder {
     private static final OfficeConnection connection = new OfficeConnection();
 
 }
-
-

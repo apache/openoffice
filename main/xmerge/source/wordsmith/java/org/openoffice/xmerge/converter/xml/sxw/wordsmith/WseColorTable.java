@@ -240,4 +240,3 @@ class WseColorTable extends Wse {
         return colorArray[index];
     }
 }
-

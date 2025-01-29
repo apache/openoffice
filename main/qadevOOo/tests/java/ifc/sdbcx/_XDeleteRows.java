@@ -87,4 +87,3 @@ public class _XDeleteRows extends MultiMethodTest {
         disposeEnvironment();
     }
 }  // finish class _XDeleteRows
-

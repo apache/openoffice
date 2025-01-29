@@ -116,6 +116,3 @@ public class _XTableChart extends MultiMethodTest {
      } // getRanges()
 
 } // finish class _XTableChartsSupplier
-
-
-

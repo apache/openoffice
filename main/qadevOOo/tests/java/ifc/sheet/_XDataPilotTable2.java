@@ -569,4 +569,3 @@ public class _XDataPilotTable2 extends MultiMethodTest
         return null;
     }
 }
-

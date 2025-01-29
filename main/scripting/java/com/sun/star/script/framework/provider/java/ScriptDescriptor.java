@@ -205,4 +205,3 @@ public class ScriptDescriptor
         return description.toString();
     }
 }
-

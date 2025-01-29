@@ -138,4 +138,3 @@ public class SwXDocumentIndexMark extends TestCase {
     } // finish method getTestEnvironment
 
  }    // finish class SwXDocumentIndexMark
-

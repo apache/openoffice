@@ -80,4 +80,3 @@ public class _XScreenCursor extends MultiMethodTest {
     }
 
 }  // finish class _XScreenCursor
-

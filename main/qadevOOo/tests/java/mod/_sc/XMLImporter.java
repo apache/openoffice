@@ -188,4 +188,3 @@ public class XMLImporter extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }
-

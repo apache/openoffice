@@ -189,4 +189,3 @@ public class ScCellFieldObj extends TestCase {
     }
 
 }    // finish class ScCellFieldObj
-

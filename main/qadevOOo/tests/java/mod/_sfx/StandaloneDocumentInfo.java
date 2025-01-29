@@ -126,4 +126,3 @@ public class StandaloneDocumentInfo extends TestCase {
     }
 
 }    // finish class TestCase
-

@@ -245,4 +245,3 @@ public class SocketConnection implements XConnection, XConnectionBroadcaster {
 	}
 
 }
-

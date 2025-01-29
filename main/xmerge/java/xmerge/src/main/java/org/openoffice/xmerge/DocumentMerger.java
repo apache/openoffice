@@ -86,4 +86,3 @@ public interface DocumentMerger {
      */
     public void merge(Document modifiedDoc) throws MergeException;
 }
-

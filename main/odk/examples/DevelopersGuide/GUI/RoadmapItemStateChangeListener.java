@@ -54,4 +54,3 @@ public class RoadmapItemStateChangeListener implements XItemListener {
     public void disposing(EventObject eventObject) {
     }
 }
-

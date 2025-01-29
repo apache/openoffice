@@ -57,4 +57,3 @@ public class _XDrawPagesSupplier extends MultiMethodTest {
     }
 
 }
-

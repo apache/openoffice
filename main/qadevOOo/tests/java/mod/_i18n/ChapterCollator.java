@@ -77,4 +77,3 @@ public class ChapterCollator extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

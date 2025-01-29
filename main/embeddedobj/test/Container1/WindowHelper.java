@@ -155,4 +155,3 @@ class WindowHelper {
 		return xResult;	
 	}
 };
-

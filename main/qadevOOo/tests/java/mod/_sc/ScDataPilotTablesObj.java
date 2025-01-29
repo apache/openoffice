@@ -187,5 +187,3 @@ public class ScDataPilotTablesObj extends TestCase {
     }
 
 }
-
-

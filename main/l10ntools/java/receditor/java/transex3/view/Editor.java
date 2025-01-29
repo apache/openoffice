@@ -115,4 +115,3 @@ public class Editor extends JFrame{
 }
 
 //class ControlPanel extends JPanel{}
-

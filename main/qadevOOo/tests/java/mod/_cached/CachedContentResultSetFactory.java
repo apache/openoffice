@@ -179,4 +179,3 @@ public class CachedContentResultSetFactory extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

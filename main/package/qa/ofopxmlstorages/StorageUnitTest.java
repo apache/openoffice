@@ -151,4 +151,3 @@ public class StorageUnitTest  extends ComplexTestCase
 		assure( "Test08 failed!", aTest.test() );
 	}
 }
-

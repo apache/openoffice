@@ -209,4 +209,3 @@ public class ScStyleFamilyObj extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScStyleFamilyObj
-

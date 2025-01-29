@@ -155,4 +155,3 @@ public class _XMailMergeBroadcaster extends MultiMethodTest {
 
 
 } // finished class _XMailMergeBroadcaster
-

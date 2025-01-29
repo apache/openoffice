@@ -106,4 +106,3 @@ public class _XDrawView extends MultiMethodTest {
     } // end setCurrentPage
 
 } // end DrawView
-

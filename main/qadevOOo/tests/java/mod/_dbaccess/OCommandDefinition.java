@@ -84,4 +84,3 @@ public class OCommandDefinition extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }
-

@@ -171,5 +171,3 @@ public class _XDataDefinitionSupplier extends MultiMethodTest {
 
     }
 }  // finish class _XDataDefinitionSupplier
-
-

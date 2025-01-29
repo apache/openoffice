@@ -30,4 +30,3 @@ package com.sun.star.beans;
 	public void	startupService() throws java.io.IOException;
 	public int getStartupTime();
 }
-

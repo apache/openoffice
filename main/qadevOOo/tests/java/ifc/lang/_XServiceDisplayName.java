@@ -51,5 +51,3 @@ public class _XServiceDisplayName extends MultiMethodTest {
     }
 
 }  // finish class MTest
-
-

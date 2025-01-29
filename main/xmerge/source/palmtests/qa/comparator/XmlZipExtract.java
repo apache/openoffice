@@ -136,5 +136,3 @@ public class XmlZipExtract
         return baos.toByteArray();
   }
 }
-
-

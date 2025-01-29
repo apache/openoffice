@@ -67,4 +67,3 @@ public class _XDrawPageExpander extends MultiMethodTest {
         tRes.tested("expand()", result);
     } // end expand
 } // end DrawPageExpander
-

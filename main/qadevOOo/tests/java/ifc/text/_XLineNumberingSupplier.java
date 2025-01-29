@@ -57,4 +57,3 @@ public class _XLineNumberingSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XLineNumberingSupplier
-

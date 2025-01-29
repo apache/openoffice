@@ -53,5 +53,3 @@ public class _XLineNumberingProperties extends MultiMethodTest {
     }
 
 }  // finish class _XLineNumberingProperties
-
-

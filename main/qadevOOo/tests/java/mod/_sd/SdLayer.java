@@ -132,4 +132,3 @@ public class SdLayer extends TestCase {
     } // finish method createTestEnvironment
 
 }    // finish class SdLayer
-

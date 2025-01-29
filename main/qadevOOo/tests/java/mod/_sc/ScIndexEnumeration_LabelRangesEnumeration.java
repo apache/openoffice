@@ -119,4 +119,3 @@ public class ScIndexEnumeration_LabelRangesEnumeration extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

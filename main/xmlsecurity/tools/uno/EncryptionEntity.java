@@ -211,4 +211,3 @@ class EncryptionEntity extends SecurityEntity
 		return rc;
 	}
 }
-

@@ -98,5 +98,3 @@ public class _XControlShape extends MultiMethodTest {
     }
 
 }  // finish class _XControlShape
-
-

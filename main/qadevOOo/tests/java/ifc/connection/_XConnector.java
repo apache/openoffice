@@ -191,4 +191,3 @@ public class _XConnector extends MultiMethodTest {
         tRes.tested("connect()", result) ;
     }
 }
-

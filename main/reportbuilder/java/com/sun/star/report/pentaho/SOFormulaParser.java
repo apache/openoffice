@@ -439,4 +439,3 @@ public final class SOFormulaParser extends ComponentBase
         return (String[]) ops.toArray(new String[ops.size()]);
     }
 }
-

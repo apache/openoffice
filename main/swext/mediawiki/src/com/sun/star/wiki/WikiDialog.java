@@ -318,4 +318,3 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
     public void disposing( EventObject e )
     {}
 }
-

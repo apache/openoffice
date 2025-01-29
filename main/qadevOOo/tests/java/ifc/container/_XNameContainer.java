@@ -250,6 +250,3 @@ public class _XNameContainer extends MultiMethodTest {
         return;
     } // end removeByName()
 } //XNameContainer
-
-
-

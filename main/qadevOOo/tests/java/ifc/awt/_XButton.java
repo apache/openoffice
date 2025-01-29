@@ -110,5 +110,3 @@ public class _XButton extends MultiMethodTest {
     }
 
 }
-
-

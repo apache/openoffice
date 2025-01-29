@@ -84,4 +84,3 @@ public class DataFormatTranslator extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class DataFormatTranslator
-

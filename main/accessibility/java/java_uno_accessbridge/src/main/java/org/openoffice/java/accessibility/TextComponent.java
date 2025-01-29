@@ -187,4 +187,3 @@ public class TextComponent extends Component implements javax.accessibility.Acce
         }
     }
 }
-

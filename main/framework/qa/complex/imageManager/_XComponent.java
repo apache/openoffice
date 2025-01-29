@@ -179,5 +179,3 @@ public class _XComponent {
     }
 
 } // finished class _XComponent
-
-

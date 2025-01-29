@@ -86,5 +86,3 @@ public class _XLinguServiceEventBroadcaster extends MultiMethodTest {
     }
 
 }  // finish class XLinguServiceEventBroadcaster
-
-

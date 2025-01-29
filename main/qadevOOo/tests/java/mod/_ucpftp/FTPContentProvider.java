@@ -74,4 +74,3 @@ public class FTPContentProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class FileProvider
-

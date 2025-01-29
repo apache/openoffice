@@ -82,4 +82,3 @@ public final class SheetMerge extends DocumentMerge {
         }
     }
 }
-

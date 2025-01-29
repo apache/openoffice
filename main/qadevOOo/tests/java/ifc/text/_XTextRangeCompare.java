@@ -182,4 +182,3 @@ public class _XTextRangeCompare extends MultiMethodTest {
     }
 
 }
-

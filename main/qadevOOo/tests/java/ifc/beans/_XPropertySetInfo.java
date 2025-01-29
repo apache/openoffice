@@ -118,5 +118,3 @@ public class _XPropertySetInfo extends MultiMethodTest {
     }
 
 }    /// finish class XPropertySetInfo
-
-

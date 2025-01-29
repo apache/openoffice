@@ -100,5 +100,3 @@ public class _DatabaseImportDescriptor extends MultiMethodTest {
 
 
 }  // finish class _DatabaseImportDescriptor
-
-

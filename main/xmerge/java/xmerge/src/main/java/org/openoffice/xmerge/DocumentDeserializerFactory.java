@@ -58,4 +58,3 @@ public interface DocumentDeserializerFactory {
 
     public DocumentDeserializer createDocumentDeserializer(ConvertData cd);
 }
-

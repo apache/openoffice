@@ -116,4 +116,3 @@ public class SwXChapterNumbering extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXChapterNumbering
-

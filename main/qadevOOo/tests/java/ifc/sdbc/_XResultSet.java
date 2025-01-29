@@ -498,4 +498,3 @@ public class _XResultSet extends MultiMethodTest {
     }
 
 }  // finish class _XResultSet
-

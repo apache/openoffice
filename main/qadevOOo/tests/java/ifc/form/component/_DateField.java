@@ -48,4 +48,3 @@ public class _DateField extends MultiPropertyTest {
         }) ;
     }
 }
-

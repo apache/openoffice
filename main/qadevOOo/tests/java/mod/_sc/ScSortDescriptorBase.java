@@ -144,4 +144,3 @@ public class ScSortDescriptorBase extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScSortDescriptorBase
-

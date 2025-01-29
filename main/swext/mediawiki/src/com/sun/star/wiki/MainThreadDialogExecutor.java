@@ -169,4 +169,3 @@ public class MainThreadDialogExecutor implements XCallback
         m_bCalled = true;
     }
 }
-

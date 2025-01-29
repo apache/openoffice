@@ -241,4 +241,3 @@ class ParsingThread
 		return rc;
 	}
 }
-

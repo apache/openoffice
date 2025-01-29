@@ -137,4 +137,3 @@ public class SvxUnoTextCursor extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SvxUnoTextCursor
-

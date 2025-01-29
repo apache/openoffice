@@ -227,4 +227,3 @@ public class RowSet
 		System.out.println("RowSet destroyed!");
 	}
 }
-

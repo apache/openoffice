@@ -80,4 +80,3 @@ public class _UnoControlDialogModel extends MultiPropertyTest {
         }) ;
     }    
 }
-

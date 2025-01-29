@@ -51,6 +51,3 @@ public class _XTableChartsSupplier extends MultiMethodTest {
     } // getCharts()
 
 } // finish class _XTableChartsSupplier
-
-
-

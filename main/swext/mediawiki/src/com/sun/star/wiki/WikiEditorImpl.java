@@ -469,4 +469,3 @@ public final class WikiEditorImpl extends WeakBase
         return bResult;
     }
 }
-

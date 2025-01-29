@@ -92,4 +92,3 @@ public class _FormulaProperties extends MultiPropertyTest {
 
 
 }  // finish class _FormulaProperties
-

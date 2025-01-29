@@ -255,4 +255,3 @@ public class _XTreeNode extends MultiMethodTest {
     }
 
 }
-

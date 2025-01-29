@@ -114,4 +114,3 @@ public class ScStyleFamiliesObj extends TestCase {
 
     } // finish method getTestEnvironment
 }    // finish class ScStyleFamiliesObj
-

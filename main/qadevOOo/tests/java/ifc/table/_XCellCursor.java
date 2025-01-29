@@ -240,4 +240,3 @@ public class _XCellCursor extends MultiMethodTest {
 
 
 } //EOC _XCellCursor
-

@@ -54,4 +54,3 @@ interface DOCConstants {
     /** Constant for SPACE character. */
     public final static char SPACE_CHAR = ' ';
 }
-

@@ -116,4 +116,3 @@ public class BreakIterator extends TestCase {
     }
 
 }    // finish class BreakIterator
-

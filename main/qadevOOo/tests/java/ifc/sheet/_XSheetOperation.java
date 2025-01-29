@@ -97,4 +97,3 @@ public class _XSheetOperation extends MultiMethodTest {
     } // finished computeFunction
 
 } // finished class _XSheetOperation
-

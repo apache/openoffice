@@ -161,5 +161,3 @@ public class _DataPilotField extends MultiPropertyTest {
         tRes.tested ("IsGroupField",result);
     }
 }
-
-

@@ -275,4 +275,3 @@ public class _XDataOutputStream extends MultiMethodTest {
         this.disposeEnvironment() ;
     }
 }
-

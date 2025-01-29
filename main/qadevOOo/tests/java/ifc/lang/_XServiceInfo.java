@@ -90,4 +90,3 @@ public class _XServiceInfo extends MultiMethodTest {
         tRes.tested("supportsService()", oObj.supportsService(names[0]));
     } // end supportsService()
 }
-

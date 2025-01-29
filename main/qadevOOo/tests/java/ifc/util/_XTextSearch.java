@@ -111,5 +111,3 @@ public class _XTextSearch extends MultiMethodTest {
     }
 
 }
-
-

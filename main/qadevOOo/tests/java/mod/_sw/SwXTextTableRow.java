@@ -120,4 +120,3 @@ public class SwXTextTableRow extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXTextTableRow
-

@@ -367,4 +367,3 @@ class MyTableModelIDE extends AbstractTableModel {
 	    }
 	    
 }
-

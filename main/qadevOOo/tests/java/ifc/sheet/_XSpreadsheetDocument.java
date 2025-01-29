@@ -51,5 +51,3 @@ public class _XSpreadsheetDocument extends MultiMethodTest {
 
 
 }  // finish class _XSpreadsheetDocument
-
-

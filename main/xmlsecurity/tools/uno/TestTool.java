@@ -1385,4 +1385,3 @@ public class TestTool extends JFrame implements ActionListener
 		}
 	}
 }
-

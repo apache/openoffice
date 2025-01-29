@@ -186,5 +186,3 @@ public class _XReset extends MultiMethodTest {
 
 
 } // finished class _XRefresh
-
-

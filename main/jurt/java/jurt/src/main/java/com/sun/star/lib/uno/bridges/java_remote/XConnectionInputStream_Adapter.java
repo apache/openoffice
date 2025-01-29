@@ -75,4 +75,3 @@ class XConnectionInputStream_Adapter extends InputStream {
 		return len == 0 ? -1 : len;
 	}
 }
-

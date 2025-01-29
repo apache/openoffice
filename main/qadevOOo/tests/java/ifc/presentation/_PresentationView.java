@@ -48,5 +48,3 @@ public class _PresentationView extends MultiPropertyTest {
     }
 
 }  // finish class _PresentationView
-
-

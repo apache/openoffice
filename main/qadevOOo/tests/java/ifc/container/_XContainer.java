@@ -362,5 +362,3 @@ public class _XContainer extends MultiMethodTest {
         }
     }    
 }
-
-
