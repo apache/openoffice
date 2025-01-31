@@ -109,25 +109,25 @@ static void cpp_call(
 			{
 			case typelib_TypeClass_HYPER:
 			case typelib_TypeClass_UNSIGNED_HYPER:
-				*pStack++ = *(sal_uInt64*)&pCppArgs[nPos];
+				*pStack++ = *(sal_uInt64*)pCppArgs[nPos];
 				break;
 			case typelib_TypeClass_LONG:
 			case typelib_TypeClass_UNSIGNED_LONG:
 			case typelib_TypeClass_ENUM:
-				*pStack++ = *(sal_uInt32*)&pCppArgs[nPos];
+				*pStack++ = *(sal_uInt32*)pCppArgs[nPos];
 				break;
 			case typelib_TypeClass_SHORT:
 			case typelib_TypeClass_UNSIGNED_SHORT:
 			case typelib_TypeClass_CHAR:
-				*pStack++ = *(sal_uInt16*)&pCppArgs[nPos];
+				*pStack++ = *(sal_uInt16*)pCppArgs[nPos];
 				break;
 			case typelib_TypeClass_BOOLEAN:
 			case typelib_TypeClass_BYTE:
-				*pStack++ = *(sal_uInt8*)&pCppArgs[nPos];
+				*pStack++ = *(sal_uInt8*)pCppArgs[nPos];
 				break;
 			case typelib_TypeClass_FLOAT:
 			case typelib_TypeClass_DOUBLE:
-				*pStack++ = *(sal_uInt64*)&pCppArgs[nPos]; // verbatim!
+				*pStack++ = *(sal_uInt64*)pCppArgs[nPos]; // verbatim!
                 break;
             default:
                 break;
