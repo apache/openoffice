@@ -39,7 +39,7 @@ import com.sun.star.util.XTextSearch;
 *  <li><code> searchForward()</code></li>
 *  <li><code> searchBackward()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.util.XTextSearch
 */
 public class _XTextSearch extends MultiMethodTest {

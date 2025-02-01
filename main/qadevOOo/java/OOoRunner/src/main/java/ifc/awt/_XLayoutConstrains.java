@@ -36,7 +36,7 @@ import com.sun.star.awt.XLayoutConstrains;
 *   <li><code> getPreferredSize() </code></li>
 *   <li><code> calcAdjustedSize() </code></li>
 * </ul><p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XLayoutConstrains
 */
 public class _XLayoutConstrains extends MultiMethodTest {

@@ -40,7 +40,7 @@ import com.sun.star.uno.UnoRuntime;
 *  <li> <code>'DOCURL'</code> (of type <code>String</code>):
 *   URL of document which info is loaded.</li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.document.XStandaloneDocumentInfo
 */
 public class _XStandaloneDocumentInfo extends MultiMethodTest {
