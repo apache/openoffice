@@ -55,4 +55,3 @@ $(MISC)$/activex_component : $(SOURCE)
 .ENDIF
 
 .INCLUDE : target.mk
-

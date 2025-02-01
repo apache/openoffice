@@ -52,4 +52,3 @@ APP1DEPN=   $(LB)$/$(TARGET).lib $(LB)$/cosv.lib
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

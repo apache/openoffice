@@ -37,5 +37,3 @@ $(eval $(call gb_SrsTarget_set_include,tpl/res,\
 $(eval $(call gb_SrsTarget_add_files,tpl/res,\
 	wizards/source/template/template.src \
 ))
-
-

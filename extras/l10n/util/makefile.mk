@@ -43,4 +43,3 @@ $(COMMONBIN)$/%.zip : $(COMMONMISC)$/merge.done
 	$(RENAME) $(@:d)$(@:b)_$(INPATH).zip $@
 
 .ENDIF
-

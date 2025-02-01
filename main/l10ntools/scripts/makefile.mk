@@ -55,5 +55,3 @@ create_pyc : $(PYFILES)
 
 $(BIN)$/%.py : tool/%.py
     @$(COPY) $< $@
-
-

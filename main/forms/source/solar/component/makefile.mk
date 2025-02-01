@@ -44,4 +44,3 @@ SLOFILES=	$(SLO)$/navbarcontrol.obj
 # --- Targets ----------------------------------
 
 .INCLUDE : target.mk
-

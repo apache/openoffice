@@ -73,4 +73,3 @@ ALL_4fcfg_draw = \
 ALL_UI_FILTERS+=$(UI_FILTERS_4fcfg_draw)
 
 ALL_PACKAGES+=draw
-

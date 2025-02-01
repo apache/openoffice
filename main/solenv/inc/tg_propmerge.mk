@@ -58,5 +58,3 @@ $(MISC)/$(TARGET).pmerge.mk : $(PMERGELIST)
     $(COMMAND_ECHO)echo last_merge=$(alllangiso) > $@
 
 .ENDIF          # "$(L10NPROPERTYFILES)"!=""
-
-

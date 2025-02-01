@@ -55,4 +55,3 @@ APP1STDLIBS+=	\
 APP1DEF=	$(MISC)$/$(APP1TARGET).def
 
 .INCLUDE :  target.mk
-

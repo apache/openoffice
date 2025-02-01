@@ -123,4 +123,3 @@ $(BIN)$/excomp.rdb: $(ALLIDLFILES)
 	regmerge $@ /UCR $(MISC)$/excomp$/{$(?:f:s/.idl/.urd/)}
 	regmerge $@ / $(SOLARBINDIR)$/udkapi.rdb
 	touch $@
-

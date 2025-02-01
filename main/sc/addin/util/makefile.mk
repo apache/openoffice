@@ -40,4 +40,3 @@ $(BIN)$/addin.zip : \
 .INCLUDE: target.mk
 
 ALLTAR:	$(BIN)$/addin.zip 
-

@@ -26,4 +26,3 @@ $(eval $(call gb_Ant_Ant,LuceneHelpWrapper,$(SRCDIR)/xmlhelp/java/LuceneHelpWrap
 $(eval $(call gb_Ant_set_componentfile,LuceneHelpWrapper,xmlhelp/java/LuceneHelpWrapper/LuceneHelpWrapper,OOO))
 
 # vim: set noet sw=4 ts=4:
-

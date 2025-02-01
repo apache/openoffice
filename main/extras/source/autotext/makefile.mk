@@ -42,8 +42,3 @@ ZIP1LIST        = mytexts.bau
 
 
 .INCLUDE : target.mk
-
-
-
-
-

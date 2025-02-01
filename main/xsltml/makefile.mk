@@ -59,4 +59,3 @@ CONVERTFILES=\
 @all:
 	@echo "MediaWiki Publisher extension disabled."
 .ENDIF
-

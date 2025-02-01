@@ -50,5 +50,3 @@ BUILD_ACTION=dmake &&  cd Contrib$/CmdLine$/create_sRGB_profile && $(AUGMENT_LIB
 .INCLUDE :	set_ext.mk
 .INCLUDE :	target.mk
 .INCLUDE :	tg_ext.mk
-
-

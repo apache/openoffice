@@ -37,5 +37,3 @@ $(eval $(call gb_SrsTarget_set_include,eur/res,\
 $(eval $(call gb_SrsTarget_add_files,eur/res,\
 	wizards/source/euro/euro.src \
 ))
-
-

@@ -200,4 +200,3 @@ $(foreach txt,$(wildcard $(SRCDIR)/i18npool/source/breakiterator/data/*.txt),$(e
 $(eval $(call gb_Library_add_generated_cobject,i18npool,CustomTarget/i18npool/source/breakiterator/data/OpenOffice_dat))
 
 # vim: set noet sw=4 ts=4:
-

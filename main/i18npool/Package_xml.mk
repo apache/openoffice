@@ -35,4 +35,3 @@ $(eval $(call gb_Package_add_file,i18npool_xml,xml/NumberFormatCodeMapper.xml,Nu
 $(eval $(call gb_Package_add_file,i18npool_xml,xml/OrdinalSuffix.xml,OrdinalSuffix.xml))
 $(eval $(call gb_Package_add_file,i18npool_xml,xml/TextSearch.xml,TextSearch.xml))
 $(eval $(call gb_Package_add_file,i18npool_xml,xml/Transliteration.xml,Transliteration.xml))
-

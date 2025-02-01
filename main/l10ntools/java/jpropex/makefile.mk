@@ -29,4 +29,3 @@ TARGET=jpropex
 .INCLUDE : ant.mk
 
 ALLTAR : ANTBUILD
-

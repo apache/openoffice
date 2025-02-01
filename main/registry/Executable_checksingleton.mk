@@ -46,4 +46,3 @@ $(eval $(call gb_Executable_add_exception_objects,checksingleton,\
 ))
 
 # vim: set noet sw=4 ts=4:
-

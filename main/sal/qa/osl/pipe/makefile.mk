@@ -50,4 +50,3 @@ APP1TEST = enabled
 .INCLUDE: target.mk
 
 .ENDIF
-

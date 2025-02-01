@@ -61,4 +61,3 @@ JAVAIFLAGS =\
 ALLTAR : javatest
 
 .END
-

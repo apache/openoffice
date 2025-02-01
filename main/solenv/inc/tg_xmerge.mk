@@ -100,5 +100,3 @@ $(MISC)/$(TARGET).tree.pmerge.mk : $(TREEMERGELIST)
 	@-$(RM) $@
     $(COMMAND_ECHO)echo last_merge=$(alllangiso) > $@
 .ENDIF          # "$(TREEFILE)"!=""
-
-

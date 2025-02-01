@@ -37,5 +37,3 @@ $(eval $(call gb_SrsTarget_set_include,cal/res,\
 $(eval $(call gb_SrsTarget_add_files,cal/res,\
 	wizards/source/schedule/schedule.src \
 ))
-
-

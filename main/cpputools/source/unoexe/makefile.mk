@@ -81,4 +81,3 @@ APP1STDLIBS= \
     $(LIBXML2LIB)
 
 .INCLUDE :  target.mk
-

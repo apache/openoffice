@@ -38,4 +38,3 @@ XCSFILES= \
     Store.xcs 
 
 .INCLUDE :  target.mk
-

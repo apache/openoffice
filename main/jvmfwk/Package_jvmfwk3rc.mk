@@ -30,4 +30,3 @@ $(eval $(call gb_Package_add_file,jvmfwk_jvmfwk3rc,bin/jvmfwk3.ini,jvmfwk3rc))
 else
 $(eval $(call gb_Package_add_file,jvmfwk_jvmfwk3rc,lib/jvmfwk3rc,jvmfwk3rc))
 endif
-

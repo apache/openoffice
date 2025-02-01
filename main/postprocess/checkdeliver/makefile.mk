@@ -36,4 +36,3 @@ ALLTAR : $(MISC)$/checkdeliver.done
 $(MISC)$/checkdeliver.done .PHONY:
 	@-$(RM) $(MISC)$/checkdeliver_log.txt
 	$(PERL) checkdeliver.pl  -l $(MISC)$/checkdeliver_log.txt && $(TOUCH) $@
-

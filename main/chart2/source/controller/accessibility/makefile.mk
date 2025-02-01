@@ -47,4 +47,3 @@ SLOFILES=	$(SLO)$/AccessibleChartView.obj		\
 # --- Targets -----------------------------------------------------------------
 
 .INCLUDE: target.mk
-

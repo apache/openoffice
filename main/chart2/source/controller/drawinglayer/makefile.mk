@@ -42,4 +42,3 @@ SLOFILES=   	$(SLO)$/DrawViewWrapper.obj \
 # --- Targets -----------------------------------------------------------------
 
 .INCLUDE: target.mk
-

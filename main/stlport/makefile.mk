@@ -42,4 +42,3 @@ $(INCCOM)$/stlport$/set \
 $(INCCOM)$/stlport$/vector: systemstl$/$$(@:f)
     $(MKDIRHIER) $(@:d)
     $(COPY) $< $@
-

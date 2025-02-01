@@ -29,5 +29,3 @@ $(WORKDIR)/CustomTarget/pyuno/zipcore/python.sh : $(SRCDIR)/pyuno/zipcore/python
 	mkdir -p $(dir $@) && \
 	sed 's/%%PYVERSION%%/$(PYVERSION)/g' < $< > $@ && \
 	chmod +x $@
-
-

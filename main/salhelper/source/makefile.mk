@@ -77,4 +77,3 @@ SHL1VERSIONMAP=gcc3.map
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :	target.mk
-

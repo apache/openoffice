@@ -109,5 +109,3 @@ $(MISC)$/$(SHL1TARGET).flt: makefile.mk
 	@echo ------------------------------
 	@echo Making: $@
 	@echo __CT>>$@
-
-

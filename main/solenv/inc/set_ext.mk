@@ -30,4 +30,3 @@ CONFIGURE_FLAG_FILE*=so_configured_$(TARGET)
 BUILD_FLAG_FILE*=so_built_$(TARGET)
 INSTALL_FLAG_FILE*=so_installed_$(TARGET)
 PREDELIVER_FLAG_FILE*=so_predeliver_$(TARGET)
-

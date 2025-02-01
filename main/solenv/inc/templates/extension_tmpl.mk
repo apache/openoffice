@@ -146,4 +146,3 @@ $(COMPONENT_DIALOGS) : dialogs$/$$(@:f)
 $(CUSTOM_LICENSE) : my_license.txt
 	@@-$(MKDIRHIER) $(@:d)
     $(COPY) $< $@
-

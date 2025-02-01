@@ -26,4 +26,3 @@ $(eval $(call gb_Package_Package,cppuhelper_findsofficepath,$(WORKDIR)/CObject/c
 $(eval $(call gb_Package_add_file,cppuhelper_findsofficepath,lib/findsofficepath.o,findsofficepath.o))
 # For Windows:
 $(eval $(call gb_Package_add_file,cppuhelper_findsofficepath,lib/findsofficepath.obj,findsofficepath.o))
-

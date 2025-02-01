@@ -47,4 +47,3 @@ $(MISC)/jdbc.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
         jdbc.component
     $(XSLTPROC) --nonet --stringparam uri '$(COMPONENTPREFIX_URE_JAVA)sdbc_jdbc.jar' \
         -o $@ $(SOLARENV)/bin/createcomponent.xslt jdbc.component
-

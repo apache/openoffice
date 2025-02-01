@@ -31,6 +31,3 @@ ZIP1TARGET      = $(GALLERY_BULLETS_TARGET)
 ZIP1LIST        = * -x makefile.*
 
 .INCLUDE : target.mk
-
-
-

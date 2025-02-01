@@ -58,4 +58,3 @@ $(eval $(call gb_Library_add_exception_objects,java_uno_accessbridge,\
 ))
 
 # vim: set noet sw=4 ts=4:
-

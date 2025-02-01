@@ -39,4 +39,3 @@ XCUFILES = Addons.xcu OptionsDialog.xcu ProtocolHandler.xcu Paths.xcu
 .ENDIF
 
 .INCLUDE : target.mk
-

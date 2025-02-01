@@ -48,4 +48,3 @@ JARCLASSDIRS            = $(PACKAGE) org/openoffice/java/accessibility/awb
 
 
 .INCLUDE :  target.mk
-

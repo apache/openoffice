@@ -59,4 +59,3 @@ $(WORKDIR)/CustomTarget/i18npool/source/collator/data/collator_%.cxx : $(SRCDIR)
 
 
 # vim: set noet sw=4 ts=4:
-

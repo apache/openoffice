@@ -41,5 +41,3 @@ $(eval $(call gb_SrsTarget_add_files,svl/res,\
 	svl/source/misc/mediatyp.src \
 	svl/source/items/cstitem.src \
 ))
-
-

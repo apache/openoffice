@@ -140,5 +140,3 @@ $(BIN)$/demo.rdb: \
 	$(REGCOMP) -register -r $(BIN)$/demo.tmp -c $(DLLPRE)xsec_xmlsec$(DLLPOST)
 	$(REGMERGE) $(BIN)$/demo.tmp / $(SOLARBINDIR)/types.rdb
 	mv $(BIN)$/demo.tmp $@
-
-

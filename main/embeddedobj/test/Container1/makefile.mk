@@ -80,4 +80,3 @@ debug: $(CLASSFILES)
 
 clean :
 	-$(DELRECURSIVE) $(subst /,$(PS),$(OUT_COMP_CLASS))
-

@@ -42,5 +42,3 @@
 
 # falls dependencies auf s:\solver\... erstellt werden sollen
 # MKDEPENDSOLVER=YES
-
-

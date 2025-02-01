@@ -73,4 +73,3 @@ $(eval $(call \
 $(eval $(call gb_Package_add_file,writerfilter_generated,inc/writerfilter/doctok/sprmids.hxx,doctok/sprmids.hxx))
 $(eval $(call gb_Package_add_file,writerfilter_generated,inc/writerfilter/doctok/resourceids.hxx,doctok/resourceids.hxx))
 $(eval $(call gb_Package_add_file,writerfilter_generated,inc/writerfilter/ooxml/resourceids.hxx,ooxml/resourceids.hxx))
-

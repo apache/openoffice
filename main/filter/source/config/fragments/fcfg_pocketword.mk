@@ -61,4 +61,3 @@ ALL_4fcfg_pocketword = \
 ALL_UI_FILTERS+=$(UI_FILTERS_4fcfg_pocketword)
     
 ALL_PACKAGES+=pocketword
-

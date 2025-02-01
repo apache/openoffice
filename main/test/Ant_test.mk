@@ -24,4 +24,3 @@
 $(eval $(call gb_Ant_Ant,test,$(SRCDIR)/test/java/test/build.xml))
 
 # vim: set noet sw=4 ts=4:
-

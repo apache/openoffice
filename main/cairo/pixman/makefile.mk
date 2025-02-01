@@ -157,4 +157,3 @@ OUT2LIB+=pixman$/.libs$/libpixman-1.a
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
-

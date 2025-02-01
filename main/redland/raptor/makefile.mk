@@ -173,4 +173,3 @@ OUT2LIB+=src$/.libs$/libraptor2.so.$(RAPTOR_MAJOR) src$/.libs$/libraptor2.so
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
-

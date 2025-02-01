@@ -39,4 +39,3 @@ XCSFILES = WikiExtension.xcs
 .ENDIF
 
 .INCLUDE : target.mk
-

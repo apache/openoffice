@@ -82,5 +82,3 @@ optix: $(HELP_OUT)$/$(TARGET).done
 %.created :
     @@-$(MKDIRHIER) $(@:d)
     @$(TOUCH) $@
-
-

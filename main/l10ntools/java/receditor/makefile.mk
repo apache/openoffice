@@ -28,4 +28,3 @@ TARGET=receditor
 .INCLUDE : ant.mk
 
 ALLTAR : ANTBUILD
-

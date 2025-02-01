@@ -88,4 +88,3 @@ $(DESTDIREXAMPLES)$/%$/office_connectrc : $(PRJ)$/examples$/%$/office_connectrc
 	-$(MKDIRHIER) $(@:d)        
 	@@-rm -f $@
 	$(MY_TEXTCOPY) $(MY_TEXTCOPY_SOURCEPRE) $< $(MY_TEXTCOPY_TARGETPRE) $@
-

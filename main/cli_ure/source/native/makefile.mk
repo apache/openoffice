@@ -177,4 +177,3 @@ $(BIN)$/cli_cppuhelper.config: cli_cppuhelper_config $(BIN)$/cliureversion.mk
 	$< $@
 	
 .ENDIF			# "$(BUILD_FOR_CLI)" != ""
-

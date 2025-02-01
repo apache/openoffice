@@ -37,4 +37,3 @@ ZIP1TARGET      = $(TEMPLATE_WIZARD_WEB_TARGET)
 ZIP1LIST        = $(LANGDIR)$/* $(LANGDIR)$/*$/* $(LANGDIR)$/*$/*$/*
 
 .INCLUDE : target.mk
-

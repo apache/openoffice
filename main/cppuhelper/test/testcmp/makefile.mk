@@ -42,4 +42,3 @@ DEF1NAME       := $(SHL1TARGET)
 
 
 .INCLUDE: target.mk
-
