@@ -152,6 +152,7 @@ callVirtualMethod PROC FRAME
 	shl eax, 1
 
 	mov r10, rax
+	shl rax, 3
 	add rax, 48[rbp]
 copyStack:
 	sub rax, 8
