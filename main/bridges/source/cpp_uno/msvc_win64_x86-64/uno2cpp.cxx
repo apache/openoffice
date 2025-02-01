@@ -164,7 +164,7 @@ static void cpp_call(
 				// no longer needed
 				TYPELIB_DANGER_RELEASE( pParamTypeDescr );
 			}
-			*pStack++ = *(sal_uInt64*)&pCppArgs[nPos];			
+			*pStack++ = (sal_uInt64)pCppArgs[nPos];
 		}
 	}
 
