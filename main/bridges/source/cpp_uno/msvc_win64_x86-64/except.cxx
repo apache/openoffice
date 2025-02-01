@@ -610,7 +610,7 @@ int mscx_filterCppException(
         return EXCEPTION_CONTINUE_SEARCH;
     
 #if _MSC_VER < 1300 // MSVC -6
-    bool rethrow = (pRecord->NumberParameters < 3 ||
+    bool rethrow = (pRecord->NumberParameters < 4 ||
                     pRecord->ExceptionInformation[ 2 ] == 0);
 #else
     bool rethrow = __CxxDetectRethrow( &pRecord );
