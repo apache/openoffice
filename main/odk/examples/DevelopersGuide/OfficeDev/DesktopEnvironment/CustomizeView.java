@@ -121,8 +121,8 @@ public class CustomizeView extends    JPanel
 
     /**
      * set new frame for this view
-     * We start listening for frame action/status and click events instandly.
-     * If an event occure we use it to synchronize our controls
+     * We start listening for frame action/status and click events instantly.
+     * If an event occurred we use it to synchronize our controls
      * with states of a (my be) new document view of this frame.
      *
      * @param xFrame
@@ -139,7 +139,7 @@ public class CustomizeView extends    JPanel
             return;
 
         // be listener for click events
-        // They will toogle the UI controls.
+        // They will toggle the UI controls.
         ClickListener aMenuBarHandler   = new ClickListener(FEATUREURL_MENUBAR  ,FEATUREPROP_MENUBAR  ,xFrame);
         ClickListener aToolBarHandler   = new ClickListener(FEATUREURL_TOOLBAR  ,FEATUREPROP_TOOLBAR  ,xFrame);
         ClickListener aObjectBarHandler = new ClickListener(FEATUREURL_OBJECTBAR,FEATUREPROP_OBJECTBAR,xFrame);
@@ -165,9 +165,9 @@ public class CustomizeView extends    JPanel
     /**
      * react for click events of the used check boxes
      * We use our internal set dispatch objects to
-     * call it. This calls toogle the menu/object- or toolbar.
+     * call it. This calls toggle the menu/object- or toolbar.
      * Note: Because we are listener status events too - hopefully
-     * we get a notification, if toogling was successfully or not.
+     * we get a notification, if toggling was successfully or not.
      * We use this information to update our check boxes again.
      * But such update doesn't force (hopefully) an action event. Otherwise
      * we can produce a never ending recursion!
@@ -179,7 +179,7 @@ public class CustomizeView extends    JPanel
     class ClickListener implements ActionListener,
                                    com.sun.star.lang.XEventListener
     {
-        /// URL, to toogle the requested UI item
+        /// URL, to toggle the requested UI item
         String m_sURL;
         /// name of the property which must be used in combination with the URL
         String m_sProp;
@@ -205,15 +205,15 @@ public class CustomizeView extends    JPanel
 
         /**
          * callback for action events
-         * Such events occure if somehwere click the
+         * Such events occur if somewhere click the
          * JCheckBox control on which we are registered.
-         * Such events doesn't occure if we set it programmaticly
+         * Such events doesn't occur if we set it programmatically
          * (e.g. if we get status events to -> see class StatusListener too)
          *
          * @param aEvent
          *          describes the check box and his state
-         *          we can use to toogle the requested office
-         *          ressource.
+         *          we can use to toggle the requested office
+         *          resource.
          */
         public void actionPerformed(ActionEvent aEvent)
         {

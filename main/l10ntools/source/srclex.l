@@ -21,7 +21,7 @@
  *
  *************************************************************/
 /*
- * lexer for parsing ressource source files (*.src)
+ * lexer for parsing resource source files (*.src)
  *
  */
 

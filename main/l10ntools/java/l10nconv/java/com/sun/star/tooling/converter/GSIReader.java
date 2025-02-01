@@ -178,7 +178,7 @@ public class GSIReader extends DataReader {
                 if ((lang = languageResolver.getISOfromNr((String) GSILine
                         .get("languageNr"))).equals(this.sourceLanguage)) {
                     // ok..store it as Source String under the depending
-                    // ressource type
+                    // resource type
 
                     ((Map) GSIBlock.get(sourceLanguage)).put("Source"
                             + ResTypeResolver.getInternKey((String) GSILine
@@ -193,7 +193,7 @@ public class GSIReader extends DataReader {
                     if (lang.equals(this.targetLanguage)) {
 
                         // ok..store it as target String under the depending
-                        // ressource type
+                        // resource type
                         ((Map) GSIBlock.get(targetLanguage)).put("Target"
                                 + ResTypeResolver.getInternKey((String) GSILine
                                         .get("resType")), GSILine

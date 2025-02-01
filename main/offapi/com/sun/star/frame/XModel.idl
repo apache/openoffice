@@ -81,10 +81,10 @@ published interface XModel: com::sun::star::lang::XComponent
 	/** informs a model about its resource description.
 
         @param URL
-            specifies the ressource
+            specifies the resource
 
         @param Arguments
-            are optional arguments for that ressource
+            are optional arguments for that resource
             (see <type scope="com::sun::star::document">MediaDescriptor</type>)
 
         @return
