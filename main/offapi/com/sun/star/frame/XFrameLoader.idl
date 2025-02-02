@@ -64,7 +64,7 @@ published interface XFrameLoader: com::sun::star::uno::XInterface
             specifies the loading target
 
         @param URL
-            describes the ressource of loading component
+            describes the resource of loading component
             Support of special protocols are implementation details
             and depends from the environment.
 

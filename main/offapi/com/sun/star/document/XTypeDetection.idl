@@ -96,7 +96,7 @@ published interface XTypeDetection: com::sun::star::uno::XInterface
 		</p>
 
         @param Descriptor
-            means the <type>MediaDescriptor</type> which specify the ressource for detection
+            means the <type>MediaDescriptor</type> which specify the resource for detection
 
         @param AllowDeep
             if it is set to <TRUE/> a "deep" detection will be follow a "flat" detection
