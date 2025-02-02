@@ -36,7 +36,7 @@ import com.sun.star.form.XGridColumnFactory;
 *  <li><code> createColumn()</code></li>
 *  <li><code> getColumnTypes()</code></li>
 * </ul>
-* Test is multithread compilant. <p>
+* Test is multithread compliant. <p>
 * @see com.sun.star.form.XGridColumnFactory
 */
 public class _XGridColumnFactory extends MultiMethodTest {

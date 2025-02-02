@@ -50,7 +50,7 @@ import com.sun.star.util.DateTime;
 *  instance of <code>com.sun.star.sdb.InteractionHandler</code>
 *  </li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.ucb.XSimpleFileAccess
 */
 public class _XSimpleFileAccess extends MultiMethodTest {

@@ -43,7 +43,7 @@ import com.sun.star.text.XParagraphCursor;
  * <b>Prerequisites :</b> the text must have at least
  * two paragraphs. <p>
  *
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.text.XParagraphCursor
  */
 public class _XParagraphCursor extends MultiMethodTest {
