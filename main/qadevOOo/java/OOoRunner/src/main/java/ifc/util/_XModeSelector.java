@@ -36,7 +36,7 @@ import com.sun.star.util.XModeSelector;
 *  <li><code>getSupportedModes()</code></li>
 *  <li><code>supportsMode()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.util.XModeSelector
 */
 public class _XModeSelector extends MultiMethodTest {

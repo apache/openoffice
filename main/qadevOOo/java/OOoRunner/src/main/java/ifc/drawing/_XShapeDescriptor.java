@@ -35,7 +35,7 @@ import com.sun.star.uno.UnoRuntime;
 * <ul>
 *  <li><code> getShapeType()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.drawing.XShapeDescriptor
 */
 public class _XShapeDescriptor extends MultiMethodTest {
