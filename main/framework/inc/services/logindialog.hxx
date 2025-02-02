@@ -282,11 +282,11 @@ class cIMPL_Dialog	:	public ModalDialog
 			@short		default ctor
 			@descr		This ctor initialize the dialog, load ressources but not set values on edits or check boxes!
 						These is implemented by setValues() on the same class.
-						You must give us a language identifier to describe which ressource should be used!
+						You must give us a language identifier to describe which resource should be used!
 
 			@seealso	method setValues()
 
-            @param      "aLanguage" , identifier to describe ressource language
+            @param      "aLanguage" , identifier to describe resource language
             @param      "pParent"   , parent window handle for dialog! If is it NULL -> no parent exist ...
 			@return		-
 
@@ -368,16 +368,16 @@ class cIMPL_Dialog	:	public ModalDialog
 		void			getProxyHostPort( const OUSTRING& aProxyHostPort, OUSTRING& aHost, OUSTRING& aPort );
 
 		/*-****************************************************************************************************//**
-			@short		get a ressource for given id from right ressource file
-			@descr		This dialog need his own ressource. We can't use the global ressource manager!
+			@short		get a resource for given id from right resource file
+			@descr		This dialog need his own resource. We can't use the global resource manager!
 						We must use our own.
-						You must give us the ressource language. If no right ressource could be found -
+						You must give us the resource language. If no right resource could be found -
 						any  existing one is used automatically!
 
 			@seealso	method setValues()
 
-			@param		"nId"		; id to convert it in right ressource id
-			@param		"aLanguage"	; type of ressource language
+			@param		"nId"		; id to convert it in right resource id
+			@param		"aLanguage"	; type of resource language
 			@return		-
 
 			@onerror	-
