@@ -1,8 +1,8 @@
 :
 eval 'exec perl -wS $0 ${1+"$@"}'
-    if 0; 
+	if 0;
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,18 +10,17 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
-
 
 use	IO::File;
 use	Cwd;
@@ -32,10 +31,8 @@ use File::Path;
 
 $TempDir = "";
 
-
 # all the XML package generation is a blatant rip from AF's
 # write-calc-doc.pl
-
 
 ###############################################################################
 #	Open a file with the given name.
@@ -47,23 +44,22 @@ $TempDir = "";
 sub	open_file
 {
 	my	$filename = pop @_;
-	
-	#	Create base directory of temporary directory tree if not alreay
+
+	#	Create base directory of temporary directory tree if not already
 	#	present.
 	if ($TempDir eq "")
 	{
 		$TempDir = File::Temp::tempdir (CLEANUP => 1);
 	}
-	
+
 	#	Create the path to the file.
 	my $fullname = File::Spec->catfile ($TempDir, $filename);
 	my ($volume,$directories,$file) = File::Spec->splitpath ($fullname);
 	mkpath (File::Spec->catpath ($volume,$directories,""));
-	
+
 	#	Open the file and return a file handle to it.
 	return new IO::File ($fullname, "w");
 }
-
 
 ###############################################################################
 #	Zip the files in the directory tree into the given file.
@@ -71,13 +67,13 @@ sub	open_file
 sub	zip_dirtree
 {
 	my	$filename = pop @_;
-	
+
 	my	$cwd = getcwd;
 	my	$zip_name = $filename;
-	
+
 	#	We are about to change the directory.
 	#	Therefore create an absolute pathname for the zip archive.
-	
+
 	#	First transfer the drive from $cwd to $zip_name.  This is a
 	#	workaround for a bug in file_name_is_absolute which thinks
 	#	the path \bla is an absolute path under DOS.
@@ -85,16 +81,16 @@ sub	zip_dirtree
 	my ($volume_cwd,$directories_cwd,$file_cwd) = File::Spec->splitpath ($cwd);
 	$volume = $volume_cwd if ($volume eq "");
 	$zip_name = File::Spec->catpath ($volume,$directories,$file);
-	
+
 	#	Add the current working directory to a relative path.
 	if ( ! file_name_is_absolute ($zip_name))
 	{
 		$zip_name = File::Spec->catfile ($cwd, $zip_name);
-		
+
 		#	Try everything to clean up the name.
 		$zip_name = File::Spec->rel2abs ($filename);
 		$zip_name = File::Spec->canonpath ($zip_name);
-		
+
 		#	Remove .. directories from the middle of the path.
 		while ($zip_name =~ /\/[^\/][^\.\/][^\/]*\/\.\.\//)
 		{
@@ -113,7 +109,7 @@ sub	zip_dirtree
 			return;
 		}
 	}
-	
+
 	#	Finally create the zip file.  First change into the temporary directory
 	#	so that the resulting zip file contains only paths relative to it.
 	print "zipping [$ZipCmd $ZipFlags $zip_name *]\n";
@@ -240,10 +236,10 @@ sub writeTransitionAnimation
 
 	print $OUT "          <anim:par smil:begin=\"0s\" smil:fill=\"remove\">\n";
 	print $OUT "            <anim:set smil:begin=\"0s\" smil:dur=\"0.001s\" smil:fill=\"hold\" smil:targetElement=\"textid$slideNum\" smil:attributeName=\"visibility\" smil:to=\"visible\"/>\n";
-    print $OUT "            <anim:transitionFilter smil:dur=\"1s\" smil:targetElement=\"textid$slideNum\" smil:type=\"$transitionType\" smil:subtype=\"$transitionSubtype\"/>\n";   
+	print $OUT "            <anim:transitionFilter smil:dur=\"1s\" smil:targetElement=\"textid$slideNum\" smil:type=\"$transitionType\" smil:subtype=\"$transitionSubtype\"/>\n";
 	print $OUT "            <anim:set smil:begin=\"0.3s\" smil:dur=\"0.001s\" smil:fill=\"hold\" smil:targetElement=\"id$slideNum\" smil:attributeName=\"visibility\" smil:to=\"visible\"/>\n";
-    print $OUT "            <anim:transitionFilter smil:begin=\"0.3s\" smil:dur=\"1s\" smil:targetElement=\"id$slideNum\" smil:type=\"$transitionType\" smil:subtype=\"$transitionSubtype\"/>\n";   
-    print $OUT "          </anim:par>\n";
+	print $OUT "            <anim:transitionFilter smil:begin=\"0.3s\" smil:dur=\"1s\" smil:targetElement=\"id$slideNum\" smil:type=\"$transitionType\" smil:subtype=\"$transitionSubtype\"/>\n";
+	print $OUT "          </anim:par>\n";
 }
 
 sub writePropertyAnimation
@@ -255,10 +251,10 @@ sub writePropertyAnimation
 
 	print $OUT "          <anim:par smil:begin=\"0s\" smil:dur=\"3s\" smil:fill=\"remove\">\n";
 	print $OUT "            <anim:set smil:begin=\"0s\" smil:dur=\"0.001s\" smil:fill=\"hold\" smil:targetElement=\"id$slideNum\" smil:attributeName=\"visibility\" smil:to=\"visible\"/>\n";
-    print $OUT "            <anim:animate smil:begin=\"0s\" smil:dur=\"1s\" smil:fill=\"hold\" smil:targetElement=\"id$slideNum\" smil:attributeName=\"$propertyName\" smil:values=\"$propertyStart;$propertyEnd\" smil:keyTimes=\"0;1\" presentation:additive=\"base\"/>\n";   
+	print $OUT "            <anim:animate smil:begin=\"0s\" smil:dur=\"1s\" smil:fill=\"hold\" smil:targetElement=\"id$slideNum\" smil:attributeName=\"$propertyName\" smil:values=\"$propertyStart;$propertyEnd\" smil:keyTimes=\"0;1\" presentation:additive=\"base\"/>\n";
 	print $OUT "            <anim:set smil:begin=\"0.6s\" smil:dur=\"0.001s\" smil:fill=\"hold\" smil:targetElement=\"textid$slideNum\" smil:attributeName=\"visibility\" smil:to=\"visible\"/>\n";
-    print $OUT "            <anim:animate smil:begin=\"0.6s\" smil:dur=\"1s\" smil:fill=\"hold\" smil:targetElement=\"textid$slideNum\" smil:attributeName=\"$propertyName\" smil:values=\"$propertyStart;$propertyEnd\" smil:keyTimes=\"0;1\" presentation:additive=\"base\"/>\n";   
-    print $OUT "          </anim:par>\n";
+	print $OUT "            <anim:animate smil:begin=\"0.6s\" smil:dur=\"1s\" smil:fill=\"hold\" smil:targetElement=\"textid$slideNum\" smil:attributeName=\"$propertyName\" smil:values=\"$propertyStart;$propertyEnd\" smil:keyTimes=\"0;1\" presentation:additive=\"base\"/>\n";
+	print $OUT "          </anim:par>\n";
 }
 
 sub writeTransformAnimation
@@ -269,10 +265,10 @@ sub writeTransformAnimation
 
 	print $OUT "          <anim:par smil:begin=\"0s\" smil:dur=\"3s\" smil:fill=\"remove\">\n";
 	print $OUT "            <anim:set smil:begin=\"0s\" smil:dur=\"0.001s\" smil:fill=\"hold\" smil:targetElement=\"id$slideNum\" smil:attributeName=\"visibility\" smil:to=\"visible\"/>\n";
-    print $OUT "            <anim:animateTransform smil:begin=\"0s\" smil:dur=\"1s\" smil:targetElement=\"id$slideNum\" smil:fill=\"hold\" smil:by=\"$propertyBy\" presentation:additive=\"base\" svg:type=\"$propertyName\"/>\n";
+	print $OUT "            <anim:animateTransform smil:begin=\"0s\" smil:dur=\"1s\" smil:targetElement=\"id$slideNum\" smil:fill=\"hold\" smil:by=\"$propertyBy\" presentation:additive=\"base\" svg:type=\"$propertyName\"/>\n";
 	print $OUT "            <anim:set smil:begin=\"0.6s\" smil:dur=\"0.001s\" smil:fill=\"hold\" smil:targetElement=\"textid$slideNum\" smil:attributeName=\"visibility\" smil:to=\"visible\"/>\n";
-    print $OUT "            <anim:animateTransform smil:begin=\"0.6s\" smil:dur=\"1s\" smil:targetElement=\"textid$slideNum\" smil:fill=\"hold\" smil:by=\"$propertyBy\" presentation:additive=\"base\" svg:type=\"$propertyName\"/>\n";
-    print $OUT "          </anim:par>\n";
+	print $OUT "            <anim:animateTransform smil:begin=\"0.6s\" smil:dur=\"1s\" smil:targetElement=\"textid$slideNum\" smil:fill=\"hold\" smil:by=\"$propertyBy\" presentation:additive=\"base\" svg:type=\"$propertyName\"/>\n";
+	print $OUT "          </anim:par>\n";
 }
 
 sub writePathMotionAnimation
@@ -281,10 +277,10 @@ sub writePathMotionAnimation
 
 	print $OUT "          <anim:par smil:begin=\"0s\" smil:dur=\"10s\" smil:fill=\"remove\">\n";
 	print $OUT "            <anim:set smil:begin=\"0s\" smil:dur=\"0.001s\" smil:fill=\"hold\" smil:targetElement=\"id$slideNum\" smil:attributeName=\"visibility\" smil:to=\"visible\"/>\n";
-    print $OUT "            <anim:animateMotion smil:dur=\"5s\" smil:fill=\"hold\" smil:targetElement=\"id$slideNum\" presentation:additive=\"base\" svg:path=\"m0.0 0.07658c0.0098-0.00493 0.00197-0.00985 0.00295-0.01478 0.00191 0.00 0.00383 0.00 0.00574 0.00-0.00005 0.00033-0.00011 0.00065-0.00016 0.00098-0.00034 0.00276-0.00060 0.00446-0.00077 0.00512-0.00021 0.00086-0.00031 0.00143-0.00031 0.00170 0.00 0.00200 0.00150 0.00369 0.00452 0.00507 0.00301 0.00138 0.00671 0.00206 0.01108 0.00206 0.00438 0.00 0.00816-0.00164 0.01134-0.00493 0.00319-0.00329 0.00478-0.00719 0.00478-0.01170 0.00-0.00514-0.00311-0.01022-0.00935-0.01525-0.00162-0.00129-0.00324-0.00258-0.00486-0.00387-0.00806-0.00651-0.01209-0.01290-0.01209-0.01917s0.0251-0.01148 0.00752-0.01561 0.01131-0.00620 0.01889-0.00620c0.0585 0.00 0.01276 0.00126 0.02072 0.00377-0.00102 0.00512-0.00203 0.01023-0.00305 0.01535-0.00191 0.00-0.00383 0.00-0.00574 0.00 0.00009-0.00052 0.00017-0.00103 0.00026-0.00155 0.00019-0.00195 0.00038-0.00389 0.00057-0.00584 0.00009-0.00062 0.00017-0.00124 0.00026-0.00186-0.00014-0.00183-0.00155-0.00337-0.00424-0.00462-0.00269-0.00126-0.00589-0.00189-0.00961-0.00189-0.00424 0.00-0.00782 0.00144-0.01075 0.00431-0.00293 0.00288-0.00439 0.00640-0.00439 0.01057 0.00 0.00510 0.00334 0.01035 0.01002 0.01576 0.00172 0.00138 0.00345 0.00275 0.00517 0.00413 0.00782 0.00631 0.01173 0.01277 0.01173 0.01938 0.00 0.00675-0.00272 0.01224-0.00816 0.01646-0.00545 0.00422-0.01256 0.00633-0.02134 0.00633-0.00538 0.00-0.01165-0.00105-0.01881-0.00315-0.00064-0.00019-0.00128-0.00038-0.00192-0.00057z\"/>\n";
+	print $OUT "            <anim:animateMotion smil:dur=\"5s\" smil:fill=\"hold\" smil:targetElement=\"id$slideNum\" presentation:additive=\"base\" svg:path=\"m0.0 0.07658c0.0098-0.00493 0.00197-0.00985 0.00295-0.01478 0.00191 0.00 0.00383 0.00 0.00574 0.00-0.00005 0.00033-0.00011 0.00065-0.00016 0.00098-0.00034 0.00276-0.00060 0.00446-0.00077 0.00512-0.00021 0.00086-0.00031 0.00143-0.00031 0.00170 0.00 0.00200 0.00150 0.00369 0.00452 0.00507 0.00301 0.00138 0.00671 0.00206 0.01108 0.00206 0.00438 0.00 0.00816-0.00164 0.01134-0.00493 0.00319-0.00329 0.00478-0.00719 0.00478-0.01170 0.00-0.00514-0.00311-0.01022-0.00935-0.01525-0.00162-0.00129-0.00324-0.00258-0.00486-0.00387-0.00806-0.00651-0.01209-0.01290-0.01209-0.01917s0.0251-0.01148 0.00752-0.01561 0.01131-0.00620 0.01889-0.00620c0.0585 0.00 0.01276 0.00126 0.02072 0.00377-0.00102 0.00512-0.00203 0.01023-0.00305 0.01535-0.00191 0.00-0.00383 0.00-0.00574 0.00 0.00009-0.00052 0.00017-0.00103 0.00026-0.00155 0.00019-0.00195 0.00038-0.00389 0.00057-0.00584 0.00009-0.00062 0.00017-0.00124 0.00026-0.00186-0.00014-0.00183-0.00155-0.00337-0.00424-0.00462-0.00269-0.00126-0.00589-0.00189-0.00961-0.00189-0.00424 0.00-0.00782 0.00144-0.01075 0.00431-0.00293 0.00288-0.00439 0.00640-0.00439 0.01057 0.00 0.00510 0.00334 0.01035 0.01002 0.01576 0.00172 0.00138 0.00345 0.00275 0.00517 0.00413 0.00782 0.00631 0.01173 0.01277 0.01173 0.01938 0.00 0.00675-0.00272 0.01224-0.00816 0.01646-0.00545 0.00422-0.01256 0.00633-0.02134 0.00633-0.00538 0.00-0.01165-0.00105-0.01881-0.00315-0.00064-0.00019-0.00128-0.00038-0.00192-0.00057z\"/>\n";
 	print $OUT "            <anim:set smil:begin=\"3.6s\" smil:dur=\"0.001s\" smil:fill=\"hold\" smil:targetElement=\"textid$slideNum\" smil:attributeName=\"visibility\" smil:to=\"visible\"/>\n";
-    print $OUT "            <anim:animateMotion smil:begin=\"3.6s\" smil:dur=\"5s\" smil:fill=\"hold\" smil:targetElement=\"textid$slideNum\" presentation:additive=\"base\" svg:path=\"m0.0 0.07658c0.0098-0.00493 0.00197-0.00985 0.00295-0.01478 0.00191 0.00 0.00383 0.00 0.00574 0.00-0.00005 0.00033-0.00011 0.00065-0.00016 0.00098-0.00034 0.00276-0.00060 0.00446-0.00077 0.00512-0.00021 0.00086-0.00031 0.00143-0.00031 0.00170 0.00 0.00200 0.00150 0.00369 0.00452 0.00507 0.00301 0.00138 0.00671 0.00206 0.01108 0.00206 0.00438 0.00 0.00816-0.00164 0.01134-0.00493 0.00319-0.00329 0.00478-0.00719 0.00478-0.01170 0.00-0.00514-0.00311-0.01022-0.00935-0.01525-0.00162-0.00129-0.00324-0.00258-0.00486-0.00387-0.00806-0.00651-0.01209-0.01290-0.01209-0.01917s0.0251-0.01148 0.00752-0.01561 0.01131-0.00620 0.01889-0.00620c0.0585 0.00 0.01276 0.00126 0.02072 0.00377-0.00102 0.00512-0.00203 0.01023-0.00305 0.01535-0.00191 0.00-0.00383 0.00-0.00574 0.00 0.00009-0.00052 0.00017-0.00103 0.00026-0.00155 0.00019-0.00195 0.00038-0.00389 0.00057-0.00584 0.00009-0.00062 0.00017-0.00124 0.00026-0.00186-0.00014-0.00183-0.00155-0.00337-0.00424-0.00462-0.00269-0.00126-0.00589-0.00189-0.00961-0.00189-0.00424 0.00-0.00782 0.00144-0.01075 0.00431-0.00293 0.00288-0.00439 0.00640-0.00439 0.01057 0.00 0.00510 0.00334 0.01035 0.01002 0.01576 0.00172 0.00138 0.00345 0.00275 0.00517 0.00413 0.00782 0.00631 0.01173 0.01277 0.01173 0.01938 0.00 0.00675-0.00272 0.01224-0.00816 0.01646-0.00545 0.00422-0.01256 0.00633-0.02134 0.00633-0.00538 0.00-0.01165-0.00105-0.01881-0.00315-0.00064-0.00019-0.00128-0.00038-0.00192-0.00057z\"/>\n";
-    print $OUT "          </anim:par>\n";
+	print $OUT "            <anim:animateMotion smil:begin=\"3.6s\" smil:dur=\"5s\" smil:fill=\"hold\" smil:targetElement=\"textid$slideNum\" presentation:additive=\"base\" svg:path=\"m0.0 0.07658c0.0098-0.00493 0.00197-0.00985 0.00295-0.01478 0.00191 0.00 0.00383 0.00 0.00574 0.00-0.00005 0.00033-0.00011 0.00065-0.00016 0.00098-0.00034 0.00276-0.00060 0.00446-0.00077 0.00512-0.00021 0.00086-0.00031 0.00143-0.00031 0.00170 0.00 0.00200 0.00150 0.00369 0.00452 0.00507 0.00301 0.00138 0.00671 0.00206 0.01108 0.00206 0.00438 0.00 0.00816-0.00164 0.01134-0.00493 0.00319-0.00329 0.00478-0.00719 0.00478-0.01170 0.00-0.00514-0.00311-0.01022-0.00935-0.01525-0.00162-0.00129-0.00324-0.00258-0.00486-0.00387-0.00806-0.00651-0.01209-0.01290-0.01209-0.01917s0.0251-0.01148 0.00752-0.01561 0.01131-0.00620 0.01889-0.00620c0.0585 0.00 0.01276 0.00126 0.02072 0.00377-0.00102 0.00512-0.00203 0.01023-0.00305 0.01535-0.00191 0.00-0.00383 0.00-0.00574 0.00 0.00009-0.00052 0.00017-0.00103 0.00026-0.00155 0.00019-0.00195 0.00038-0.00389 0.00057-0.00584 0.00009-0.00062 0.00017-0.00124 0.00026-0.00186-0.00014-0.00183-0.00155-0.00337-0.00424-0.00462-0.00269-0.00126-0.00589-0.00189-0.00961-0.00189-0.00424 0.00-0.00782 0.00144-0.01075 0.00431-0.00293 0.00288-0.00439 0.00640-0.00439 0.01057 0.00 0.00510 0.00334 0.01035 0.01002 0.01576 0.00172 0.00138 0.00345 0.00275 0.00517 0.00413 0.00782 0.00631 0.01173 0.01277 0.01173 0.01938 0.00 0.00675-0.00272 0.01224-0.00816 0.01646-0.00545 0.00422-0.01256 0.00633-0.02134 0.00633-0.00538 0.00-0.01165-0.00105-0.01881-0.00315-0.00064-0.00019-0.00128-0.00038-0.00192-0.00057z\"/>\n";
+	print $OUT "          </anim:par>\n";
 }
 
 sub writeManifest
@@ -332,7 +328,7 @@ sub	process_command_line
 			exit 0;
 		}
 	}
-	
+
 	$global_gen_all=0;
 	$global_output_name = "alltransitions.odp";
 
@@ -351,7 +347,7 @@ sub	process_command_line
 		}
 		elsif ($#ARGV == $i )
 		{
-			$global_output_name = $ARGV[$i];			
+			$global_output_name = $ARGV[$i];
 		}
 	}
 
@@ -361,41 +357,41 @@ sub	process_command_line
 $transitionsRef = [
 
 				["barWipe",
-				 ["leftToRight",				
+				 ["leftToRight",
 				  "topToBottom"]],
 
 				["blindsWipe",
-				 ["vertical",				
+				 ["vertical",
 				  "horizontal"]],
-				
+
 				["boxWipe",
-				 ["topLeft",				
-				  "topRight",				
-				  "bottomRight",				
-				  "bottomLeft",				
-				  "topCenter",				
-				  "rightCenter",				
-				  "bottomCenter",				
-				  "leftCenter"]],				
+				 ["topLeft",
+				  "topRight",
+				  "bottomRight",
+				  "bottomLeft",
+				  "topCenter",
+				  "rightCenter",
+				  "bottomCenter",
+				  "leftCenter"]],
 
 				["fourBoxWipe",
-				 ["cornersIn",				
+				 ["cornersIn",
 				  "cornersOut"]],
 
 				["barnDoorWipe",
-				 ["vertical",				
-				  "horizontal",				
-				  "diagonalBottomLeft",				
-				  "diagonalTopLeft"]],				
+				 ["vertical",
+				  "horizontal",
+				  "diagonalBottomLeft",
+				  "diagonalTopLeft"]],
 
 				["bowTieWipe",
-				 ["vertical",				
-				  "horizontal"]],				
-				
+				 ["vertical",
+				  "horizontal"]],
+
 				["miscDiagonalWipe",
 				 ["doubleBarnDoor",
 				  "doubleDiamond"]],
-				
+
 				["veeWipe",
 				 ["down",
 				  "left",
@@ -415,11 +411,11 @@ $transitionsRef = [
 				["barnZigZagWipe",
 				 ["vertical",
 				  "horizontal"]],
-				
+
 				["irisWipe",
 				 ["rectangle",
 				  "diamond"]],
-				
+
 				["triangleWipe",
 				 ["up",
 				  "right",
@@ -431,11 +427,11 @@ $transitionsRef = [
 				  "right",
 				  "down",
 				  "left"]],
-				
+
 				["pentagonWipe",
 				 ["up",
 				  "down"]],
-				
+
 				["hexagonWipe",
 				 ["horizontal",
 				  "vertical"]],
@@ -457,7 +453,7 @@ $transitionsRef = [
 				 ["fourPoint",
 				  "fivePoint",
 				  "sixPoint"]],
-				
+
 				["miscShapeWipe",
 				 ["heart",
 				  "keyhole"]],
@@ -467,7 +463,7 @@ $transitionsRef = [
 				  "clockwiseThree",
 				  "clockwiseSix",
 				  "clockwiseNine"]],
-				
+
 				["pinWheelWipe",
 				 ["oneBlade",
 				  "twoBladeVertical",
@@ -499,7 +495,7 @@ $transitionsRef = [
 				  "fanOutHorizontal",
 				  "fanInVertical",
 				  "fanInHorizontal"]],
-				
+
 				["doubleSweepWipe",
 				 ["parallelVertical",
 				  "parallelDiagonal",
@@ -507,7 +503,7 @@ $transitionsRef = [
 				  "oppositeHorizontal",
 				  "parallelDiagonalTopLeft",
 				  "parallelDiagonalBottomLeft"]],
-				
+
 				["saloonDoorWipe",
 				 ["top",
 				  "left",
@@ -527,7 +523,7 @@ $transitionsRef = [
 				  "topRightDiagonal",
 				  "bottomRightDiagonal",
 				  "bottomLeftDiagonal"]],
-				
+
 				["spiralWipe",
 				 ["topLeftClockwise",
 				  "topRightClockwise",
@@ -537,7 +533,7 @@ $transitionsRef = [
 				  "topRightCounterClockwise",
 				  "bottomRightCounterClockwise",
 				  "bottomLeftCounterClockwise"]],
-				
+
 				["parallelSnakesWipe",
 				 ["verticalTopSame",
 				  "verticalBottomSame",
@@ -549,7 +545,7 @@ $transitionsRef = [
 				  "horizontalTopRightOpposite",
 				  "diagonalBottomLeftOpposite",
 				  "diagonalTopLeftOpposite"]],
-				
+
 				["boxSnakesWipe",
 				 ["twoBoxTop",
 				  "twoBoxLeft",
@@ -563,7 +559,7 @@ $transitionsRef = [
 				  "horizontalLeft",
 				  "horizontalRight"]],
 
-			   ["pushWipe",
+				["pushWipe",
 				 ["fromLeft",
 				  "fromTop",
 				  "fromRight",
@@ -639,7 +635,7 @@ $propertiesRef = [
                     [ "value", "y", "y-0.1", "y+0.1" ]
     ];
 
-$transformsRef = [ 
+$transformsRef = [
     ["translate", "0.5*width,0.5*height"],
     ["scale", "0.5*width,0.5*height"],
     ["rotate", "270"],
@@ -739,23 +735,23 @@ writeSlideFooter();
 
           <anim:par smil:begin="0s" smil:fill="remove">
             <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="textid10001" smil:attributeName="visibility" smil:to="visible"/>
-            <anim:animate smil:begin="0s" smil:dur="10s" smil:fill="hold" smil:targetElement="textid10001" smil:accelerate="0.5" smil:attributeName="x" smil:by="0.3" presentation:additive="base"/>   
+            <anim:animate smil:begin="0s" smil:dur="10s" smil:fill="hold" smil:targetElement="textid10001" smil:accelerate="0.5" smil:attributeName="x" smil:by="0.3" presentation:additive="base"/>
           </anim:par>
 
           <anim:par smil:begin="0s" smil:fill="remove">
             <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="textid10002" smil:attributeName="visibility" smil:to="visible"/>
-            <anim:animate smil:begin="0s" smil:dur="10s" smil:fill="hold" smil:targetElement="textid10002" smil:decelerate="0.5" smil:attributeName="x" smil:by="0.3" presentation:additive="base"/>   
+            <anim:animate smil:begin="0s" smil:dur="10s" smil:fill="hold" smil:targetElement="textid10002" smil:decelerate="0.5" smil:attributeName="x" smil:by="0.3" presentation:additive="base"/>
           </anim:par>
 
           <anim:par smil:begin="0s" smil:fill="remove">
             <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="textid10003" smil:attributeName="visibility" smil:to="visible"/>
-            <anim:animate smil:begin="0s" smil:dur="3s" smil:fill="hold" smil:targetElement="textid10003" smil:attributeName="x" smil:to="0.3" presentation:additive="sum"/>   
-            <anim:animate smil:begin="0s" smil:dur="6s" smil:fill="hold" smil:targetElement="textid10003" smil:attributeName="x" smil:to="0.3" presentation:additive="sum"/>   
+            <anim:animate smil:begin="0s" smil:dur="3s" smil:fill="hold" smil:targetElement="textid10003" smil:attributeName="x" smil:to="0.3" presentation:additive="sum"/>
+            <anim:animate smil:begin="0s" smil:dur="6s" smil:fill="hold" smil:targetElement="textid10003" smil:attributeName="x" smil:to="0.3" presentation:additive="sum"/>
           </anim:par>
 
           <anim:par smil:begin="0s" smil:fill="remove">
             <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="textid10004" smil:attributeName="visibility" smil:to="visible"/>
-            <anim:animate smil:begin="0s" smil:dur="5s" smil:fill="hold" smil:targetElement="textid10004" smil:attributeName="y" smil:from="0.3" smil:to="0.8" smil:autoReverse="true" presentation:additive="base"/>   
+            <anim:animate smil:begin="0s" smil:dur="5s" smil:fill="hold" smil:targetElement="textid10004" smil:attributeName="y" smil:from="0.3" smil:to="0.8" smil:autoReverse="true" presentation:additive="base"/>
           </anim:par>
 
           <anim:par smil:begin="0s" smil:fill="remove">
@@ -770,7 +766,7 @@ writeSlideFooter();
 
           <anim:par smil:begin="0s" smil:fill="remove">
             <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:targetElement="textid10007" smil:attributeName="visibility" smil:to="visible"/>
-            <anim:animate smil:begin="0s" smil:dur="3s" smil:fill="hold" smil:targetElement="textid10007" smil:attributeName="y" smil:values="0;1" smil:keyTimes="0;1" anim:formula="y+0.3*height*sin(5*pi*\$)" presentation:additive="base"/>   
+            <anim:animate smil:begin="0s" smil:dur="3s" smil:fill="hold" smil:targetElement="textid10007" smil:attributeName="y" smil:values="0;1" smil:keyTimes="0;1" anim:formula="y+0.3*height*sin(5*pi*\$)" presentation:additive="base"/>
           </anim:par>
 ~;
 
@@ -784,7 +780,7 @@ writeSlideFooter();
        <draw:rect draw:style-name="gr1" draw:text-style-name="P1" draw:id="id20000" draw:layer="layout" svg:width="17.5cm" svg:height="13cm" svg:x="5cm" svg:y="4cm">
         <text:p text:style-name="P2">Slide: 5</text:p>
         <text:p text:style-name="P2">Topic: Text effects</text:p>
-        <text:p text:id="textid20001" text:style-name="P2">Some text to show iterated single paragraph</text:p> 
+        <text:p text:id="textid20001" text:style-name="P2">Some text to show iterated single paragraph</text:p>
         <text:p text:id="textid20002" text:style-name="P2">Some text to show iterated word-by-word effects</text:p>
         <text:p text:id="textid20003" text:style-name="P2">Some text to show iterated letter-by-letter effects</text:p>
         <text:p text:id="textid20004" text:style-name="P2">Some more text</text:p>
@@ -799,7 +795,7 @@ writeSlideFooter();
           <anim:par smil:begin="0s" smil:fill="remove">
             <anim:iterate smil:begin="0s" smil:fill="hold" smil:targetElement="id20000" anim:iterate-type="by-paragraph" anim:iterate-interval="0.2s">
                <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:attributeName="visibility" smil:to="visible"/>
-               <anim:animate smil:begin="0s" smil:dur="2s" smil:fill="hold" smil:decelerate="0.5" smil:attributeName="x" smil:from="1.0" smil:to="x" presentation:additive="base"/>   
+               <anim:animate smil:begin="0s" smil:dur="2s" smil:fill="hold" smil:decelerate="0.5" smil:attributeName="x" smil:from="1.0" smil:to="x" presentation:additive="base"/>
             </anim:iterate>
           </anim:par>
 
@@ -807,7 +803,7 @@ writeSlideFooter();
             <anim:set smil:begin="0s" smil:dur="0.001s" smil:targetElement="id20000" smil:fill="hold" smil:attributeName="visibility" smil:to="visible"/>
             <anim:iterate smil:begin="0s" smil:fill="hold" smil:targetElement="textid20002" anim:iterate-type="by-word" anim:iterate-interval="0.2s">
                <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:attributeName="visibility" smil:to="visible"/>
-               <anim:animate smil:begin="0s" smil:dur="2s" smil:fill="hold" smil:decelerate="0.5" smil:attributeName="x" smil:from="1.0" smil:to="x" presentation:additive="base"/>   
+               <anim:animate smil:begin="0s" smil:dur="2s" smil:fill="hold" smil:decelerate="0.5" smil:attributeName="x" smil:from="1.0" smil:to="x" presentation:additive="base"/>
             </anim:iterate>
           </anim:par>
 
@@ -815,7 +811,7 @@ writeSlideFooter();
             <anim:set smil:begin="0s" smil:dur="0.001s" smil:targetElement="id20000" smil:fill="hold" smil:attributeName="visibility" smil:to="visible"/>
             <anim:iterate smil:begin="0s" smil:fill="hold" smil:targetElement="textid20003" anim:iterate-type="by-letter" anim:iterate-interval="0.2s">
                <anim:set smil:begin="0s" smil:dur="0.001s" smil:fill="hold" smil:attributeName="visibility" smil:to="visible"/>
-               <anim:animate smil:begin="0s" smil:dur="2s" smil:fill="hold" smil:decelerate="0.5" smil:attributeName="x" smil:from="1.0" smil:to="x" presentation:additive="base"/>   
+               <anim:animate smil:begin="0s" smil:dur="2s" smil:fill="hold" smil:decelerate="0.5" smil:attributeName="x" smil:from="1.0" smil:to="x" presentation:additive="base"/>
             </anim:iterate>
           </anim:par>
 ~;
@@ -827,4 +823,3 @@ writeFooter();
 $OUT->close;
 
 zip_dirtree ($global_output_name);
-
