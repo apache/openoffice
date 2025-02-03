@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_comphelper.hxx"
 #include <com/sun/star/container/XChild.hpp>
@@ -530,7 +528,7 @@ sal_Bool EmbeddedObjectContainer::StoreEmbeddedObject( const uno::Reference < em
 				xPersist->storeToEntry( pImpl->mxStorage, rName, aSeq, aSeq );
 			else
 			{
-				// TODO/LATER: possible optimisation, don't store immediately
+				// TODO/LATER: possible optimization, don't store immediately
 				//xPersist->setPersistentEntry( pImpl->mxStorage, rName, embed::EntryInitModes::ENTRY_NO_INIT, aSeq, aSeq );
 				xPersist->storeAsEntry( pImpl->mxStorage, rName, aSeq, aSeq );
 				xPersist->saveCompleted( sal_True );
@@ -1482,7 +1480,7 @@ sal_Bool EmbeddedObjectContainer::StoreAsChildren(sal_Bool _bOasisFormat,sal_Boo
 	{
 		try
 		{
-			// the substorage still can not be locked by the embedded object conteiner
+			// the substorage still can not be locked by the embedded object container
 			::rtl::OUString aObjReplElement( RTL_CONSTASCII_USTRINGPARAM( "ObjectReplacements" ) );
 			if ( _xStorage->hasByName( aObjReplElement ) && _xStorage->isStorageElement( aObjReplElement ) )
 				_xStorage->removeElement( aObjReplElement );
@@ -1706,3 +1704,5 @@ void EmbeddedObjectContainer::setUserAllowsLinkUpdate(bool bNew)
 }
 
 }
+
+/* vim: set noet sw=4 ts=4: */
