@@ -82,5 +82,3 @@ $(MISC)$/rgt$(DLLPOSTFIX).flt:
 	@echo WEP>$@
 	@echo LIBMAIN>>$@
 	@echo LibMain>>$@
-
-

@@ -33,4 +33,3 @@ $(WORKDIR)/CustomTarget/solenv/inc/versionlist.hrc : $(SRCDIR)/solenv/inc/versio
 	@echo "#define VER_DAY $(OOOBASEVERSIONDAY)" >> $@
 	@echo "#define VER_MONTH $(OOOBASEVERSIONMONTH)" >> $@
 	@echo "#define VER_YEAR $(OOOBASEVERSIONYEAR)" >> $@
-

@@ -82,4 +82,3 @@ INCLUDE!:=$(subst,/stl, $(INCLUDE))
  
 .ENDIF
 .INCLUDE :	tg_wntx64.mk
-

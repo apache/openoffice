@@ -253,4 +253,3 @@ $(COMMONMISC)$/{$(PRODUCTLIST)}$/build.flag : $(ICONDEPN) \
 	$(COMMONMISC)$/{$(PRODUCTLIST)}$/openoffice.applications \
 	$(COMMONMISC)$/{$(PRODUCTLIST)}$/{openoffice printeradmin}.sh
 	@touch $@
-

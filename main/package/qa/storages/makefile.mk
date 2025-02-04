@@ -108,5 +108,3 @@ RUN: run
 
 run:
     java -cp $(CLASSPATH) $(CT_APP) $(CT_TESTBASE) $(CT_APPEXECCOMMAND) $(CT_TEST)
-
-

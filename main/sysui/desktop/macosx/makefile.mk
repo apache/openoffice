@@ -84,4 +84,3 @@ $(COMMONMISC)$/InfoPlist_{$(alllangiso)}$/InfoPlist.strings : Info.plist $(ULFDI
 	$(MV) -f $@.$(INPATH) $@
 	
 .ENDIF		# "$(OS)"!="MACOSX"	
-

@@ -1307,4 +1307,3 @@ $(ZIP10TARGETN) : delzip $(ZIP10DEPS)
 .ENDIF			# "$(ZIP10DIR)" != ""
 .ENDIF			# "$(common_build_zip)"!=""
 .ENDIF
-

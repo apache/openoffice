@@ -149,4 +149,3 @@ $(COMPONENT_IMAGES) :  $(SOLARSRC)$/$(RSCDEFIMG)$/desktop$/res$/$$(@:f)
 	$(COPY) $< $@
 
 .ENDIF # L10N_framework
-

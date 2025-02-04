@@ -59,4 +59,3 @@ APP1STDLIBS = $(SALLIB) \
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :	target.mk
-

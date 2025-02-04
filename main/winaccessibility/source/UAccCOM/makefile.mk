@@ -133,4 +133,3 @@ $(MISC)/$(TARGET).manifest: $(BIN)$/$(TARGET)$(DLLPOST)
 	mt.exe -manifest $(MISC)$/$(TARGET).manifest -outputresource:$(BIN)$/$(TARGET)$(DLLPOST)\;\#97
 
 .ENDIF # "$(GUI)"!="WNT" || "$(DISABLE_ATL)"!=""
-

@@ -69,5 +69,3 @@ APP1STDLIBS+=-lCstd
 
 
 .INCLUDE : target.mk
-
-

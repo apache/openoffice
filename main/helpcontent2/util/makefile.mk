@@ -41,4 +41,3 @@ ZIP1LIST=main_transform*.xsl idxcaption.xsl idxcontent.xsl
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

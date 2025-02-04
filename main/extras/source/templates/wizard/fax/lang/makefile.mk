@@ -40,6 +40,3 @@ ZIP1LIST	= $(LANGDIR)$/*.ott
 
 
 .INCLUDE : target.mk
-
-
-

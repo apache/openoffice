@@ -61,4 +61,3 @@ ALLTAR: "$(PWD)$/$(MISC)$/$(EXTNAME)$/registry$/schema$/$(PACKAGEDIR)$/Embedding
 "$(PWD)$/$(MISC)$/$(EXTNAME)$/registry$/schema$/$(PACKAGEDIR)$/Accelerators.xcs" : $(SOLARXMLDIR)$/registry$/schema$/$(PACKAGEDIR)$/Accelerators.xcs
     @@-$(MKDIRHIER) $(@:d)
     $(COPY) $< $@
-

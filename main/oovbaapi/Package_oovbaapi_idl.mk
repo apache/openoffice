@@ -22,4 +22,3 @@
 
 
 $(eval $(call gb_UnoApiTarget_autopackage_idl,oovbaapi))
-

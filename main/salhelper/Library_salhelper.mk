@@ -64,4 +64,3 @@ $(eval $(call gb_Library_add_exception_objects,salhelper,\
 ))
 
 # vim: set noet sw=4 ts=4:
-

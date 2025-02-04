@@ -105,4 +105,3 @@ $(MISC)$/OpenOffice_%.c : $(MY_BRK_BRKFILES:s/.brk/_brk.c/)
     $(TYPE) $(@:s/_dat/_tmp/) >> $@
 
 .INCLUDE :	target.mk
-

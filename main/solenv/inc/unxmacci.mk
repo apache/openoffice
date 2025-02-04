@@ -34,4 +34,3 @@ CFLAGSENABLESYMBOLS=-g
 
 # Include generic Mac OS X makefile
 .INCLUDE : unxmacc.mk
-

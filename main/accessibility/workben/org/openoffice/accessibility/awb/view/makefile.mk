@@ -44,4 +44,3 @@ JAVACLASSFILES= $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
 
 
 .INCLUDE :  target.mk
-

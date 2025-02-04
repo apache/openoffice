@@ -50,4 +50,3 @@ $(eval $(call gb_Library_add_exception_objects,pythonloader,\
 ))
 
 # vim: set noet sw=4 ts=4:
-

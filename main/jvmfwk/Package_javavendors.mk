@@ -46,4 +46,3 @@ $(eval $(call gb_Package_add_file,jvmfwk_javavendors,lib/javavendors.xml,OpenOff
 else
 gb_Output_Error(Unsupported platform.)
 endif
-

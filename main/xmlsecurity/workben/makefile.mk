@@ -64,4 +64,3 @@ APP1STDLIBS=	$(CPPULIB)			\
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :	target.mk
-

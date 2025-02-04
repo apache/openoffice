@@ -52,4 +52,3 @@ REBASE .PHONY : $(BASEADDRESSES)
 
 $(BASEADDRESSES) : coffbase.txt
 	$(COPY) coffbase.txt $@
-

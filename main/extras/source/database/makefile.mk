@@ -42,8 +42,3 @@ ZIP2LIST        = biblio.dbf biblio.dbt
 
 
 .INCLUDE : target.mk
-
-
-
-
-

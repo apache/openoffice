@@ -28,4 +28,3 @@ $(eval $(call gb_Package_add_file,jvmfwk_sunjavapluginrc,bin/sunjavaplugin.ini,s
 else
 $(eval $(call gb_Package_add_file,jvmfwk_sunjavapluginrc,lib/sunjavapluginrc,sunjavapluginrc))
 endif
-

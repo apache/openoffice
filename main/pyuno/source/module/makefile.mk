@@ -158,4 +158,3 @@ $(MISC)$/pyuno.flt : pyuno.flt
 	-rm -f $@
 	cat $? > $@
 .ENDIF # L10N_framework
-

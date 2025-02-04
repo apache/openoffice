@@ -74,4 +74,3 @@ BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)"  -Dcommons-logging.jar=
 .IF "$(SOLAR_JAVA)" != "" && "$(ENABLE_MEDIAWIKI)" == "YES"
 .INCLUDE : tg_ext.mk
 .ENDIF
-

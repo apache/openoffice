@@ -54,4 +54,3 @@ $(eval $(call gb_Library_add_objcobjects,AppleRemote,\
 ))
 
 # vim: set noet sw=4 ts=4:
-

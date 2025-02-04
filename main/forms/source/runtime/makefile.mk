@@ -40,4 +40,3 @@ SLOFILES=	$(SLO)$/formoperations.obj
 # --- Targets ----------------------------------
 
 .INCLUDE : target.mk
-

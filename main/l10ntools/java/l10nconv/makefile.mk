@@ -28,4 +28,3 @@ TARGET=converter
 .INCLUDE : ant.mk
 
 ALLTAR : ANTBUILD
-

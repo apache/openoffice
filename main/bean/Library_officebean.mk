@@ -66,4 +66,3 @@ $(eval $(call gb_Library_add_cobjects,officebean,\
 endif
 
 # vim: set noet sw=4 ts=4:
-

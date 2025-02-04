@@ -19,4 +19,3 @@
 
 # AllLangResTarget etc. refer to this as LOCDIR
 $(eval $(call gb_Helper_register_repository,LOCDIR))
-

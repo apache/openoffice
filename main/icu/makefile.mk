@@ -286,4 +286,3 @@ $(LB)$/icutu$(ICU_BUILD_LIBPOST).lib : $(PACKAGE_DIR)$/$(PREDELIVER_FLAG_FILE)
 # Changes in this makefile could also make a complete build necessary if
 # configure is affected.
 $(PACKAGE_DIR)$/$(UNTAR_FLAG_FILE) : makefile.mk
-

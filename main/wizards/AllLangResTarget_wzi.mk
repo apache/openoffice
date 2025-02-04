@@ -39,5 +39,3 @@ $(eval $(call gb_SrsTarget_set_include,wzi/res,\
 $(eval $(call gb_SrsTarget_add_files,wzi/res,\
 	wizards/source/imagelists/imagelists.src \
 ))
-
-

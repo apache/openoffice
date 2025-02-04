@@ -63,4 +63,3 @@ $(eval $(call gb_Library_add_generated_exception_objects,textconv_dict,\
 ))
 
 # vim: set noet sw=4 ts=4:
-

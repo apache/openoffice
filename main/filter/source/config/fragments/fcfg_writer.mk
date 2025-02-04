@@ -131,4 +131,3 @@ ALL_4fcfg_writer = \
 ALL_UI_FILTERS+=$(UI_FILTERS_4fcfg_writer)
 
 ALL_PACKAGES+=writer
-

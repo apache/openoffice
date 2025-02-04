@@ -37,4 +37,3 @@ SLOFILES := $(SLO)$/LogBridge.obj
 
 
 .INCLUDE: target.mk
-

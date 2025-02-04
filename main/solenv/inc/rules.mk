@@ -760,4 +760,3 @@ $(COMMONMISC)/$(TARGET)/%.xrm : %.xrm
 # if local *.sdf file is missing
 #%.sdf:
 #    echo > $@
-

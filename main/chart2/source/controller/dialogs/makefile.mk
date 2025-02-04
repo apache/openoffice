@@ -198,4 +198,3 @@ $(SRS)$/chcdialogs.srs: \
 #        res_Statistic.hrc \
 
 #$(SRS)$/chcdialogs.srs: $(SOLARINCDIR)$/svx$/globlmn.hrc
-

@@ -55,4 +55,3 @@ CFLAGS += -D__DIAGNOSE
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :	target.mk
-

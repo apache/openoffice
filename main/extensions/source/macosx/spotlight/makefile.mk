@@ -92,4 +92,3 @@ $(MACOS)$/OOoSpotlightImporter: $(SLOFILES)
 $(RESOURCES)$/% : mdimporter/%
     $(MKDIRHIER) $(@:d)
     $(COPY) "$<" "$@"
-

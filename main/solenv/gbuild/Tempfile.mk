@@ -46,4 +46,3 @@ $(foreach item,$(strip $(3)),$(eval gb_var2file_curblock += $(item)
     )) \
 	)
 endef
-

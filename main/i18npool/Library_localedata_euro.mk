@@ -127,4 +127,3 @@ $(eval $(call gb_Library_add_generated_exception_objects,localedata_euro,\
 
 
 # vim: set noet sw=4 ts=4:
-

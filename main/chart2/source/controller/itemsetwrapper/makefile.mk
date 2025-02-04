@@ -53,4 +53,3 @@ SLOFILES=   	$(SLO)$/ItemConverter.obj \
 # --- Targets -----------------------------------------------------------------
 
 .INCLUDE: target.mk
-

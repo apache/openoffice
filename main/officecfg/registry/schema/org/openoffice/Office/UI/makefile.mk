@@ -74,4 +74,3 @@ XCSFILES= \
     Sidebar.xcs
 
 .INCLUDE :  target.mk
-

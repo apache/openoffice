@@ -72,4 +72,3 @@ ALL_4fcfg_xslt = \
 ALL_UI_FILTERS+=$(UI_FILTERS_4fcfg_xslt)
 
 ALL_PACKAGES+=xslt
-

@@ -25,5 +25,3 @@ $(eval $(call gb_Package_Package,svx_sdi,$(SRCDIR)/svx/sdi))
 $(eval $(call gb_Package_add_file,svx_sdi,inc/svx/svx.sdi,svx.sdi))
 $(eval $(call gb_Package_add_file,svx_sdi,inc/svx/svxitems.sdi,svxitems.sdi))
 $(eval $(call gb_Package_add_file,svx_sdi,inc/svx/xoitems.sdi,xoitems.sdi))
-
-

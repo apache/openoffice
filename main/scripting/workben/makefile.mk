@@ -28,4 +28,3 @@ TARGET=scriptinginstaller
 .INCLUDE : ant.mk
 
 ALLTAR : ANTBUILD
-

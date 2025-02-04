@@ -91,4 +91,3 @@ copy_resources: $(RESLIB1TARGETN) $(RESLIB2TARGETN)
 
 
 .END
-

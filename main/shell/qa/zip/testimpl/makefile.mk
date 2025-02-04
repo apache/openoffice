@@ -51,4 +51,3 @@ DEF1NAME=$(SHL1TARGET)
 .IF "$(OS)" == "WNT"
 	INCLUDE!:=$(subst,/stl, $(INCLUDE))
 .ENDIF
-

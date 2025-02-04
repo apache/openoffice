@@ -86,4 +86,3 @@ JAVAIFLAGS = -Dorg.openoffice.test.arg.properties=$(SRCDIR)/qa/integration/integ
 ALLTAR : javatest
 
 .END
-

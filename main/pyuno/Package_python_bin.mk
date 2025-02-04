@@ -28,4 +28,3 @@ $(WORKDIR)/CustomTarget/pyuno/zipcore/python.bin : $(OUTDIR)/bin/python
 	cp $^ $@ && \
 	$(if $(filter-out MACOSX,$(OS)),strip $@ &&) \
 	chmod +x $@
-

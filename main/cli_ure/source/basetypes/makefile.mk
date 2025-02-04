@@ -98,4 +98,3 @@ $(BIN)$/cli_basetypes.config: cli_basetypes_config $(BIN)$/cliureversion.mk
 
 .ENDIF
 	
-

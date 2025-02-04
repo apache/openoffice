@@ -378,5 +378,3 @@ APP5DEPN=	$(SLB)$/sal.lib
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-
-

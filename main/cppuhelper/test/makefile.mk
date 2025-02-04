@@ -159,6 +159,3 @@ $(BIN)$/testrc: makefile.mk
 	echo '[Tests]' > $@
 	echo 'TestKey1=file:///'$(PWD)/$(BIN)'/com.sun.star.uno.NamingService.rdb' >> $@
 .ENDIF
-
-
-

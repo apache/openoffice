@@ -74,4 +74,3 @@ SHL1STDLIBS=\
 .ENDIF
 
 .INCLUDE : target.mk
-

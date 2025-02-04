@@ -116,4 +116,3 @@ all : \
 # use global rules
 #--------------------------------------------------   
 .INCLUDE: $(PRJ)$/util$/odk_rules.pmk
-

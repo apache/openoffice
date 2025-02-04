@@ -168,4 +168,3 @@ $(BIN)$/client.rdb: $(BIN)$/test.rdb
 $(BIN)$/server.rdb: $(BIN)$/test.rdb
 	rm -f $(BIN)$/client.rdb
 	$(REGMERGE) $@ / $(BIN)$/test.rdb $(SOLARBINDIR)$/udkapi.rdb
-

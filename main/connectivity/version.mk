@@ -99,4 +99,3 @@ MACAB_MICRO=0
 # ----------------------------HSQLDB settings-----------------------------------#
 # target
 HSQLDB_TARGET=hsqldb
-

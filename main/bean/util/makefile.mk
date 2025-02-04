@@ -48,5 +48,3 @@ ZIP1LIST=com -x "*makefile.mk"
 .ENDIF # L10N_framework
 
 .INCLUDE : target.mk
-
-

@@ -25,4 +25,3 @@
 $(eval $(call gb_Ant_Ant,ConvwatchGUIProject,$(SRCDIR)/testgraphical/ui/java/ConvwatchGUIProject/build.xml))
 
 # vim: set noet sw=4 ts=4:
-

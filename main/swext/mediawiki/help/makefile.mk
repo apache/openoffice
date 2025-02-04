@@ -80,4 +80,3 @@ $(OUT_MEDIAWIKI)/help/%.xhp : $(OUT_MEDIAWIKI)_merge/help/%.xhp
         sed 's/@WIKIEXTENSIONFILENAME@/wiki-publisher/g' > $@
 
 .ENDIF          # "$(ENABLE_MEDIAWIKI)" != "YES"
-

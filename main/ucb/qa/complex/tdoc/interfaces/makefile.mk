@@ -55,5 +55,3 @@ JARCOMPRESS   = TRUE
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-
-

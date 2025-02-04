@@ -59,5 +59,3 @@ DEF1EXPORTFILE=	exports.dxp
 # --- Targets -------------------------------------------------------------
 
 .INCLUDE :  target.mk
-
-

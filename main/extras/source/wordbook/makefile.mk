@@ -31,4 +31,3 @@ ZIP1TARGET      = $(WORDBOOK_ALL_TARGET)
 ZIP1LIST        = business.dic
 
 .INCLUDE : target.mk
-
