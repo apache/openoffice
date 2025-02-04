@@ -629,7 +629,7 @@ sal_uInt32 ComCtlModelBase::getDataPartId() const
         case COMCTL_VERSION_50: return mnDataPartId5;
         case COMCTL_VERSION_60: return mnDataPartId6;
     }
-    OSL_ENSURE( false, "ComCtlObjectBase::getDataPartId - unxpected version" );
+    OSL_ENSURE( false, "ComCtlObjectBase::getDataPartId - unexpected version" );
     return SAL_MAX_UINT32;
 }
 
