@@ -1053,7 +1053,7 @@ public:
                                                     // to decide which table stream is valid.
 
     sal_uInt16 fExtChar :1; // 1000 =1, when using extended character set in file
-    sal_uInt16 fFarEast :1; // 4000 =1, probably, when far-East language vaiants of Word is used to create a file #i90932#
+    sal_uInt16 fFarEast :1; // 4000 =1, probably, when far-East language variants of Word is used to create a file #i90932#
 
 	sal_uInt16 fObfuscated :1; // 8000=1. specifies whether the document is obfuscated using XOR obfuscation. otherwise this bit MUST be ignored.
 

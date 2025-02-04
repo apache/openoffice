@@ -109,7 +109,7 @@ namespace sdr
 						aViewRange.transform(pTargetDevice->GetInverseViewTransformation());
 					}
 
-					// upate local ViewInformation2D
+					// update local ViewInformation2D
 					const drawinglayer::geometry::ViewInformation2D aNewViewInformation2D(
                         basegfx::B2DHomMatrix(), 
 						pTargetDevice->GetViewTransformation(), 

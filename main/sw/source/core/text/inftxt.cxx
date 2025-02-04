@@ -1377,7 +1377,7 @@ static void lcl_InitHyphValues( PropertyValues &rVals,
 		pVal[1].Value <<= nMinTrailing;
 	}
 	else {
-		DBG_ERROR( "unxpected size of sequence" );
+		DBG_ERROR( "unexpected size of sequence" );
     }
 }
 
