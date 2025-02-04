@@ -1047,7 +1047,7 @@ ERRTYPE RscCompiler::Link()
         if ( NULL == (fExitFile = foutput = fopen( aTmpOutputRcCtor.GetBuffer(), "w" )) )
             pTC->pEH->FatalError( ERR_OPENFILE, RscId(), aTmpOutputRcCtor.GetBuffer() );
 
-        pTC->pEH->StdOut( "Generating .cxx ressource constructor file\n" );
+        pTC->pEH->StdOut( "Generating .cxx resource constructor file\n" );
 
         // Schreibe Datei
         pTC->WriteRcCtor( foutput );

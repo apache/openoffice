@@ -78,7 +78,7 @@ import util.ValueComparer;
 *   ControlShape is changed. For such shapes this relation should
 *   be passed for proper <code>addWindowListener</code> test. </li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XWindow
 */
 public class _XWindow extends MultiMethodTest {

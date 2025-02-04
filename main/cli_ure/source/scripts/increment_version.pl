@@ -35,10 +35,10 @@ sub incrementPolicyVersion($);
 my $usage = 
 "The tool increments the minor version of assemblies and the major version of ". 
 "the respective policy files. This is only done if new uno types have been added since".
-"the last product upate. This information is obtained from the file which is passed as ".
+"the last product update. This information is obtained from the file which is passed as ".
 "argument changedTypes. The names in the version file must have a particular form. ".
-"They must end on one of folling terms: NEW_VERSION, OLD_VERSION, POLICY_VERSION\n".
-"If no new published types habe been added then no output, argument  newVersions, is written".
+"They must end on one of following terms: NEW_VERSION, OLD_VERSION, POLICY_VERSION\n".
+"If no new published types have been added then no output, argument  newVersions, is written".
 "Usage is: \n increment_version.pl oldVersions  incVersions newVersions changedTypes\n\n".
 "oldVersion: Contains name value pairs, which are used for forming the config files of ".
 "the policy assemblies, for building the assemblies. \n\n". 
@@ -101,7 +101,7 @@ if ( $newTypes == 0)
 }
 else
 {
-    print "\nNew UNO types were addes since last release. The version will be increased.\n\n";
+    print "\nNew UNO types were added since last release. The version will be increased.\n\n";
 }
 
 #read in incVersions in a list

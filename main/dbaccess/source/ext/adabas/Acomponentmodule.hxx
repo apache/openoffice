@@ -175,7 +175,7 @@ typedef ::com::sun::star::uno::Reference< ::com::sun::star::lang::XSingleService
 	//=========================================================================
 	//= ModuleRes
 	//=========================================================================
-	/** specialized ResId, using the ressource manager provided by the global module
+	/** specialized ResId, using the resource manager provided by the global module
 	*/
 	class ModuleRes : public ::ResId
 	{

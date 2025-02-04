@@ -1,8 +1,8 @@
 :
 eval 'exec perl -wS $0 ${1+"$@"}'
-    if 0; 
+    if 0;
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 #
@@ -51,19 +51,19 @@ $TempDir = "";
 sub	open_file
 {
     my	$filename = pop @_;
-    
-    #	Create base directory of temporary directory tree if not alreay
+
+    #	Create base directory of temporary directory tree if not already
     #	present.
     if ($TempDir eq "")
     {
         $TempDir = File::Temp::tempdir (CLEANUP => 1);
     }
-    
+
     #	Create the path to the file.
     my $fullname = File::Spec->catfile ($TempDir, $filename);
     my ($volume,$directories,$file) = File::Spec->splitpath ($fullname);
     mkpath (File::Spec->catpath ($volume,$directories,""));
-    
+
     #	Open the file and return a file handle to it.
     return new IO::File ($fullname, "w");
 }
@@ -75,13 +75,13 @@ sub	open_file
 sub	zip_dirtree
 {
     my	$filename = pop @_;
-    
+
     my	$cwd = getcwd;
     my	$zip_name = $filename;
-    
+
     #	We are about to change the directory.
     #	Therefore create an absolute pathname for the zip archive.
-    
+
     #	First transfer the drive from $cwd to $zip_name.  This is a
     #	workaround for a bug in file_name_is_absolute which thinks
     #	the path \bla is an absolute path under DOS.
@@ -89,16 +89,16 @@ sub	zip_dirtree
     my ($volume_cwd,$directories_cwd,$file_cwd) = File::Spec->splitpath ($cwd);
     $volume = $volume_cwd if ($volume eq "");
     $zip_name = File::Spec->catpath ($volume,$directories,$file);
-    
+
     #	Add the current working directory to a relative path.
     if ( ! file_name_is_absolute ($zip_name))
     {
         $zip_name = File::Spec->catfile ($cwd, $zip_name);
-        
+
         #	Try everything to clean up the name.
         $zip_name = File::Spec->rel2abs ($filename);
         $zip_name = File::Spec->canonpath ($zip_name);
-        
+
         #	Remove .. directories from the middle of the path.
         while ($zip_name =~ /\/[^\/][^\.\/][^\/]*\/\.\.\//)
         {
@@ -117,7 +117,7 @@ sub	zip_dirtree
             return;
         }
     }
-    
+
     #	Finally create the zip file.  First change into the temporary directory
     #	so that the resulting zip file contains only paths relative to it.
     print "zipping [$ZipCmd $ZipFlags $zip_name *]\n";
@@ -293,7 +293,7 @@ sub	process_command_line
             exit 0;
         }
     }
-    
+
     $global_output_name = "polygons.odp";
     my	$j = 0, $noMoreOptions = 0;
     for (my $i=0; $i<$#ARGV; $i++)
@@ -358,4 +358,3 @@ writeFooter();
 $OUT->close;
 
 zip_dirtree ($global_output_name);
-

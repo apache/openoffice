@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
@@ -75,33 +73,33 @@ namespace drawinglayer
 			// prepare maCurrentTransformation matrix with viewTransformation to target directly to pixels
 			maCurrentTransformation = rViewInformation.getObjectToViewTransformation();
 
-            // prepare output directly to pixels
-   			mpOutputDevice->Push(PUSH_MAPMODE);
-    		mpOutputDevice->SetMapMode();
+			// prepare output directly to pixels
+			mpOutputDevice->Push(PUSH_MAPMODE);
+			mpOutputDevice->SetMapMode();
 
-            // react on AntiAliasing settings
-            if(getOptionsDrawinglayer().IsAntiAliasing())
-            {
-                mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() | ANTIALIASING_ENABLE_B2DDRAW);
-            }
-            else
-            {
-                mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
-            }
-        }
+			// react on AntiAliasing settings
+			if(getOptionsDrawinglayer().IsAntiAliasing())
+			{
+				mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() | ANTIALIASING_ENABLE_B2DDRAW);
+			}
+			else
+			{
+				mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
+			}
+		}
 
 		VclPixelProcessor2D::~VclPixelProcessor2D()
 		{
-            // restore MapMode
-   			mpOutputDevice->Pop();
+			// restore MapMode
+			mpOutputDevice->Pop();
 
-            // restore AntiAliasing
-            mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
+			// restore AntiAliasing
+			mpOutputDevice->SetAntialiasing(mpOutputDevice->GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
 		}
 
-        bool VclPixelProcessor2D::tryDrawPolyPolygonColorPrimitive2DDirect(const drawinglayer::primitive2d::PolyPolygonColorPrimitive2D& rSource, double fTransparency)
-        {
-            basegfx::B2DPolyPolygon aLocalPolyPolygon(rSource.getB2DPolyPolygon());
+		bool VclPixelProcessor2D::tryDrawPolyPolygonColorPrimitive2DDirect(const drawinglayer::primitive2d::PolyPolygonColorPrimitive2D& rSource, double fTransparency)
+		{
+			basegfx::B2DPolyPolygon aLocalPolyPolygon(rSource.getB2DPolyPolygon());
 
             if(!aLocalPolyPolygon.count())
             {
@@ -115,7 +113,7 @@ namespace drawinglayer
             mpOutputDevice->SetLineColor();
             aLocalPolyPolygon.transform(maCurrentTransformation);
             mpOutputDevice->DrawTransparent(
-                aLocalPolyPolygon, 
+                aLocalPolyPolygon,
                 fTransparency);
 
             return true;
@@ -139,8 +137,8 @@ namespace drawinglayer
 
             // try drawing; if it did not work, use standard fallback
             if(mpOutputDevice->TryDrawPolyLineDirect(
-                aLocalPolygon, 
-                0.0, 
+                aLocalPolygon,
+                0.0,
                 fTransparency))
             {
                 return true;
@@ -171,10 +169,10 @@ namespace drawinglayer
             {
                 // apply LineStyle
                 basegfx::tools::applyLineDashing(
-                    aLocalPolygon, 
-                    rSource.getStrokeAttribute().getDotDashArray(), 
-                    &aHairLinePolyPolygon, 
-                    0, 
+                    aLocalPolygon,
+                    rSource.getStrokeAttribute().getDotDashArray(),
+                    &aHairLinePolyPolygon,
+                    0,
                     rSource.getStrokeAttribute().getFullDotDashLen());
             }
 
@@ -214,8 +212,8 @@ namespace drawinglayer
                     bHasPoints = true;
 
                     if(mpOutputDevice->TryDrawPolyLineDirect(
-                        aSingle, 
-                        fLineWidth, 
+                        aSingle,
+                        fLineWidth,
                         fTransparency,
                         rSource.getLineAttribute().getLineJoin(),
                         rSource.getLineAttribute().getLineCap()))
@@ -248,8 +246,8 @@ namespace drawinglayer
 						const primitive2d::WrongSpellPrimitive2D& rWrongSpellPrimitive = static_cast< const primitive2d::WrongSpellPrimitive2D& >(rCandidate);
 
 						if(!renderWrongSpellPrimitive2D(
-							rWrongSpellPrimitive, 
-							*mpOutputDevice, 
+							rWrongSpellPrimitive,
+							*mpOutputDevice,
 							maCurrentTransformation,
 							maBColorModifierStack))
 						{
@@ -280,10 +278,10 @@ namespace drawinglayer
                     {
     					process(rCandidate.get2DDecomposition(getViewInformation2D()));
                     }
-					
+
 					// restore DrawMode
 					mpOutputDevice->SetDrawMode(nOriginalDrawMode);
-					
+
 					break;
 				}
 				case PRIMITIVE2D_ID_TEXTDECORATEDPORTIONPRIMITIVE2D :
@@ -453,12 +451,12 @@ namespace drawinglayer
 
                     // use new Metafile decomposition
     				process(rCandidate.get2DDecomposition(getViewInformation2D()));
-                    
+
                     if(bForceLineSnap)
                     {
                         mpOutputDevice->SetAntialiasing(nOldAntiAliase);
                     }
-					
+
                     break;
 				}
 				case PRIMITIVE2D_ID_MASKPRIMITIVE2D :
@@ -492,7 +490,7 @@ namespace drawinglayer
 					        bool bDrawTransparentUsed(false);
 
 					        // since DEV300 m33 DrawTransparent is supported in VCL (for some targets
-                            // natively), so i am now enabling this shortcut
+                            // natively), so I am now enabling this shortcut
 					        static bool bAllowUsingDrawTransparent(true);
 
 					        if(bAllowUsingDrawTransparent && 1 == rContent.getLength())
@@ -521,7 +519,7 @@ namespace drawinglayer
                                             // do no tallow by default - problem is that self-overlapping parts of this geometry will
                                             // not be in a all-same transparency but will already alpha-cover themselves with blending.
                                             // This is not what the UnifiedTransparencePrimitive2D defines: It requires all it's
-                                            // content to be uniformely transparent.
+                                            // content to be uniformly transparent.
                                             // For hairline the effect is pretty minimal, but still not correct.
                                             static bool bAllowed(false);
 
@@ -537,8 +535,8 @@ namespace drawinglayer
                                             // do no tallow by default - problem is that self-overlapping parts of this geometry will
                                             // not be in a all-same transparency but will already alpha-cover themselves with blending.
                                             // This is not what the UnifiedTransparencePrimitive2D defines: It requires all it's
-                                            // content to be uniformely transparent.
-                                            // To check, acitvate and draw a wide transparent self-crossing line/curve
+                                            // content to be uniformly transparent.
+                                            // To check, activate and draw a wide transparent self-crossing line/curve
                                             static bool bAllowed(false);
 
                                             bDrawTransparentUsed = bAllowed && tryDrawPolygonStrokePrimitive2DDirect(*pPoStroke, rUniTransparenceCandidate.getTransparence());
@@ -614,17 +612,17 @@ namespace drawinglayer
                             // it does not need to be painted at all.
                             uno::Reference< awt::XWindow2 > xControlWindow(rXControl, uno::UNO_QUERY_THROW);
 	                        const bool bControlIsVisibleAsChildWindow(rXControl->getPeer().is() && xControlWindow->isVisible());
-                            
+
     					    if(!bControlIsVisibleAsChildWindow)
                             {
                                 // draw it. Do not forget to use the evtl. offsetted origin of the target device,
                                 // e.g. when used with mask/transparence buffer device
                                 const Point aOrigin(mpOutputDevice->GetMapMode().GetOrigin());
                                 xControlView->draw(
-                                    aOrigin.X() + basegfx::fround(aTopLeftPixel.getX()), 
+                                    aOrigin.X() + basegfx::fround(aTopLeftPixel.getX()),
                                     aOrigin.Y() + basegfx::fround(aTopLeftPixel.getY()));
                             }
-                            
+
                             // restore original graphics
 				            xControlView->setGraphics(xOriginalGraphics);
                         }
@@ -634,7 +632,7 @@ namespace drawinglayer
 						// #i116763# removing since there is a good alternative when the xControlView
 						// is not found and it is allowed to happen
                         // DBG_UNHANDLED_EXCEPTION();
-                        
+
                         // process recursively and use the decomposition as Bitmap
 				        process(rCandidate.get2DDecomposition(getViewInformation2D()));
                     }
@@ -675,8 +673,8 @@ namespace drawinglayer
 					}
 					else
 					{
-						// Lines with 1 and 2 pixel width without AA need special treatment since their vsiualisation
-						// as filled polygons is geometrically corret but looks wrong since polygon filling avoids
+						// Lines with 1 and 2 pixel width without AA need special treatment since their visualization
+						// as filled polygons is geometrically correct but looks wrong since polygon filling avoids
 						// the right and bottom pixels. The used method evaluates that and takes the correct action,
 						// including calling recursively with decomposition if line is wide enough
 						RenderPolygonStrokePrimitive2D(rPolygonStrokePrimitive2D);
@@ -693,19 +691,19 @@ namespace drawinglayer
 
                     if(bForceIgnoreHatchSmoothing || getOptionsDrawinglayer().IsAntiAliasing())
                     {
-						// if AA is used (or ignore smoothing is on), there is no need to smooth 
+						// if AA is used (or ignore smoothing is on), there is no need to smooth
 						// hatch painting, use decomposition
 						process(rCandidate.get2DDecomposition(getViewInformation2D()));
 					}
 					else
 					{
-						// without AA, use VCL to draw the hatch. It snaps hatch distances to the next pixel 
-						// and forces hatch distance to be >= 3 pixels to make the hatch display look smoother. 
+						// without AA, use VCL to draw the hatch. It snaps hatch distances to the next pixel
+						// and forces hatch distance to be >= 3 pixels to make the hatch display look smoother.
 						// This is wrong in principle, but looks nicer. This could also be done here directly
 						// without VCL usage if needed
 						const primitive2d::FillHatchPrimitive2D& rFillHatchPrimitive = static_cast< const primitive2d::FillHatchPrimitive2D& >(rCandidate);
 						const attribute::FillHatchAttribute& rFillHatchAttributes = rFillHatchPrimitive.getFillHatch();
-						
+
 						// create hatch polygon in range size and discrete coordinates
 						basegfx::B2DRange aHatchRange(rFillHatchPrimitive.getOutputRange());
 						aHatchRange.transform(maCurrentTransformation);
@@ -715,7 +713,7 @@ namespace drawinglayer
                         {
                             // #i111846# background fill is active; draw fill polygon
 			                const basegfx::BColor aPolygonColor(maBColorModifierStack.getModifiedColor(rFillHatchPrimitive.getBColor()));
-			                
+
                             mpOutputDevice->SetFillColor(Color(aPolygonColor));
 			                mpOutputDevice->SetLineColor();
             			    mpOutputDevice->DrawPolygon(aHatchPolygon);
@@ -837,5 +835,4 @@ namespace drawinglayer
 	} // end of namespace processor2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

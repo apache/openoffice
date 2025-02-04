@@ -450,7 +450,7 @@ void PieChart::createShapes()
                 }
 
                 //---------------------------
-                //transforme to unit circle:
+                //transform to unit circle:
                 double fUnitCircleWidthAngleDegree = m_pPosHelper->getWidthAngleDegree( fLogicStartAngleValue, fLogicEndAngleValue );
                 double fUnitCircleStartAngleDegree = m_pPosHelper->transformToAngleDegree( fLogicStartAngleValue );
                 double fUnitCircleInnerRadius = m_pPosHelper->transformToRadius( fLogicInnerRadius );

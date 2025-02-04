@@ -1,8 +1,8 @@
 :
 eval 'exec perl -wS $0 ${1+"$@"}'
-    if 0; 
+	if 0;
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,18 +10,17 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
-
 
 use	IO::File;
 use	Cwd;
@@ -34,10 +33,8 @@ $TempDir = "";
 my $FirstTransitionIndex = 0;
 my $LastTransitionIndex = -1;
 
-
 # all the XML package generation is a blatant rip from AF's
 # write-calc-doc.pl
-
 
 ###############################################################################
 #	Open a file with the given name.
@@ -49,19 +46,19 @@ my $LastTransitionIndex = -1;
 sub	open_file
 {
 	my	$filename = pop @_;
-	
-	#	Create base directory of temporary directory tree if not alreay
+
+	#	Create base directory of temporary directory tree if not already
 	#	present.
 	if ($TempDir eq "")
 	{
 		$TempDir = File::Temp::tempdir (CLEANUP => 1);
 	}
-	
+
 	#	Create the path to the file.
 	my $fullname = File::Spec->catfile ($TempDir, $filename);
 	my ($volume,$directories,$file) = File::Spec->splitpath ($fullname);
 	mkpath (File::Spec->catpath ($volume,$directories,""));
-	
+
 	#	Open the file and return a file handle to it.
 	return new IO::File ($fullname, "w");
 }
@@ -73,13 +70,13 @@ sub	open_file
 sub	zip_dirtree
 {
 	my	$filename = pop @_;
-	
+
 	my	$cwd = getcwd;
 	my	$zip_name = $filename;
-	
+
 	#	We are about to change the directory.
 	#	Therefore create an absolute pathname for the zip archive.
-	
+
 	#	First transfer the drive from $cwd to $zip_name.  This is a
 	#	workaround for a bug in file_name_is_absolute which thinks
 	#	the path \bla is an absolute path under DOS.
@@ -87,16 +84,16 @@ sub	zip_dirtree
 	my ($volume_cwd,$directories_cwd,$file_cwd) = File::Spec->splitpath ($cwd);
 	$volume = $volume_cwd if ($volume eq "");
 	$zip_name = File::Spec->catpath ($volume,$directories,$file);
-	
+
 	#	Add the current working directory to a relative path.
 	if ( ! file_name_is_absolute ($zip_name))
 	{
 		$zip_name = File::Spec->catfile ($cwd, $zip_name);
-		
+
 		#	Try everything to clean up the name.
 		$zip_name = File::Spec->rel2abs ($filename);
 		$zip_name = File::Spec->canonpath ($zip_name);
-		
+
 		#	Remove .. directories from the middle of the path.
 		while ($zip_name =~ /\/[^\/][^\.\/][^\/]*\/\.\.\//)
 		{
@@ -115,14 +112,14 @@ sub	zip_dirtree
 			return;
 		}
 	}
-	
+
 	#	Finally create the zip file.  First change into the temporary directory
 	#	so that the resulting zip file contains only paths relative to it.
 	print "zipping [$ZipCmd $ZipFlags $zip_name *]\n";
 	chdir ($TempDir);
 	system ("$ZipCmd $ZipFlags $zip_name *");
 	chdir ($cwd);
-	
+
 }
 
 
@@ -221,7 +218,7 @@ sub writeSlide
 	my $transitionType = pop @_;
 	my $slideNum = pop @_;
 
-    return if $slideNum<$FirstTransitionIndex || ($LastTransitionIndex>=0 && $slideNum>$LastTransitionIndex);
+	return if $slideNum<$FirstTransitionIndex || ($LastTransitionIndex>=0 && $slideNum>$LastTransitionIndex);
 
 	print $OUT "   <draw:page draw:name=\"page",$slideNum,"\" draw:style-name=\"dp",$slideNum,"\" draw:master-page-name=\"Default\" presentation:presentation-page-layout-name=\"AL1T19\">";
 
@@ -305,41 +302,41 @@ sub writeManifest
 $transitionsRef = [
 
 				["barWipe",
-				 ["leftToRight",				
+				 ["leftToRight",
 				  "topToBottom"]],
 
 				["blindsWipe",
-				 ["vertical",				
+				 ["vertical",
 				  "horizontal"]],
-				
+
 				["boxWipe",
-				 ["topLeft",				
-				  "topRight",				
-				  "bottomRight",				
-				  "bottomLeft",				
-				  "topCenter",				
-				  "rightCenter",				
-				  "bottomCenter",				
-				  "leftCenter"]],				
+				 ["topLeft",
+				  "topRight",
+				  "bottomRight",
+				  "bottomLeft",
+				  "topCenter",
+				  "rightCenter",
+				  "bottomCenter",
+				  "leftCenter"]],
 
 				["fourBoxWipe",
-				 ["cornersIn",				
+				 ["cornersIn",
 				  "cornersOut"]],
 
 				["barnDoorWipe",
-				 ["vertical",				
-				  "horizontal",				
-				  "diagonalBottomLeft",				
-				  "diagonalTopLeft"]],				
+				 ["vertical",
+				  "horizontal",
+				  "diagonalBottomLeft",
+				  "diagonalTopLeft"]],
 
 				["bowTieWipe",
-				 ["vertical",				
-				  "horizontal"]],				
-				
+				 ["vertical",
+				  "horizontal"]],
+
 				["miscDiagonalWipe",
 				 ["doubleBarnDoor",
 				  "doubleDiamond"]],
-				
+
 				["veeWipe",
 				 ["down",
 				  "left",
@@ -359,11 +356,11 @@ $transitionsRef = [
 				["barnZigZagWipe",
 				 ["vertical",
 				  "horizontal"]],
-				
+
 				["irisWipe",
 				 ["rectangle",
 				  "diamond"]],
-				
+
 				["triangleWipe",
 				 ["up",
 				  "right",
@@ -375,11 +372,11 @@ $transitionsRef = [
 				  "right",
 				  "down",
 				  "left"]],
-				
+
 				["pentagonWipe",
 				 ["up",
 				  "down"]],
-				
+
 				["hexagonWipe",
 				 ["horizontal",
 				  "vertical"]],
@@ -401,7 +398,7 @@ $transitionsRef = [
 				 ["fourPoint",
 				  "fivePoint",
 				  "sixPoint"]],
-				
+
 				["miscShapeWipe",
 				 ["heart",
 				  "keyhole"]],
@@ -411,7 +408,7 @@ $transitionsRef = [
 				  "clockwiseThree",
 				  "clockwiseSix",
 				  "clockwiseNine"]],
-				
+
 				["pinWheelWipe",
 				 ["oneBlade",
 				  "twoBladeVertical",
@@ -443,7 +440,7 @@ $transitionsRef = [
 				  "fanOutHorizontal",
 				  "fanInVertical",
 				  "fanInHorizontal"]],
-				
+
 				["doubleSweepWipe",
 				 ["parallelVertical",
 				  "parallelDiagonal",
@@ -451,7 +448,7 @@ $transitionsRef = [
 				  "oppositeHorizontal",
 				  "parallelDiagonalTopLeft",
 				  "parallelDiagonalBottomLeft"]],
-				
+
 				["saloonDoorWipe",
 				 ["top",
 				  "left",
@@ -471,7 +468,7 @@ $transitionsRef = [
 				  "topRightDiagonal",
 				  "bottomRightDiagonal",
 				  "bottomLeftDiagonal"]],
-				
+
 				["spiralWipe",
 				 ["topLeftClockwise",
 				  "topRightClockwise",
@@ -481,7 +478,7 @@ $transitionsRef = [
 				  "topRightCounterClockwise",
 				  "bottomRightCounterClockwise",
 				  "bottomLeftCounterClockwise"]],
-				
+
 				["parallelSnakesWipe",
 				 ["verticalTopSame",
 				  "verticalBottomSame",
@@ -493,7 +490,7 @@ $transitionsRef = [
 				  "horizontalTopRightOpposite",
 				  "diagonalBottomLeftOpposite",
 				  "diagonalTopLeftOpposite"]],
-				
+
 				["boxSnakesWipe",
 				 ["twoBoxTop",
 				  "twoBoxLeft",
@@ -579,7 +576,7 @@ sub	process_command_line
 			exit 0;
 		}
 	}
-	
+
 	$global_gen_all=0;
 	$global_output_name = "alltransitions.odp";
 
@@ -606,7 +603,7 @@ sub	process_command_line
 		}
 		elsif ($#ARGV == $i )
 		{
-			$global_output_name = $ARGV[$i];			
+			$global_output_name = $ARGV[$i];
 		}
 	}
 
@@ -714,4 +711,3 @@ writeFooter();
 $OUT->close;
 
 zip_dirtree ($global_output_name);
-

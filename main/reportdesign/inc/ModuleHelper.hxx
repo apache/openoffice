@@ -80,7 +80,7 @@ namespace rptui
     //=========================================================================
     //= ModuleRes
     //=========================================================================
-    /** specialized ResId, using the ressource manager provided by the global module
+    /** specialized ResId, using the resource manager provided by the global module
     */
     class REPORTDESIGN_DLLPUBLIC ModuleRes : public ::ResId
     {
