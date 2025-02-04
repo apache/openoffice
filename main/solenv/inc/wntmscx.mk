@@ -399,4 +399,3 @@ WININETLIB=wininet.lib
 OLDNAMESLIB=oldnames.lib
 MSIMG32LIB=msimg32.lib
 PROPSYSLIB=propsys.lib
-

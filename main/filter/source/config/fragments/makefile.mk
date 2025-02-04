@@ -212,4 +212,3 @@ $(INTERNALFILTERPACKAGES_FILTERS_FLAG) : $$(FILTERS_4$$(@:b))
      @echo ===================================================================
      -$(MKDIRHIER) $(DIR_MODPACKS)
      $(MERGE) fragmentsdir=. tempdir=$(TEMP) outdir=$(DIR_MODPACKS) pkg=$(DIR_MODPACKS)$/$(@:b)_filters.xcu xmlpackage=GraphicFilter fcfg=$(mktmp items=$(FILTERS_4$(@:b):b:t",":s/.xcu//)) subdir_filters=internalgraphicfilters && $(TOUCH) $@
-

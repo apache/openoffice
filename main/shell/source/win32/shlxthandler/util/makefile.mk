@@ -61,4 +61,3 @@ SLOFILES_X64=$(SLO_X64)$/dbgmacros.obj\
 INCLUDE!:=$(subst,/stl, $(INCLUDE))
 
 .INCLUDE :	tg_wntx64.mk
-

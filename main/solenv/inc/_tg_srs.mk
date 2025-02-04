@@ -427,4 +427,3 @@ $(SRS)/$(SRS10NAME).srs: $(SRC10FILES)
 	$(COMMAND_ECHO)-$(RM) $@.$(INPATH)
 
 .ENDIF          # "$(SRS10NAME)"!=""
-

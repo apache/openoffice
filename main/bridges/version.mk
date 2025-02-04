@@ -33,4 +33,3 @@ RMCXT_MICRO=0
 
 # this is a c++ compatible library 
 RMCXT_CPP=0
-

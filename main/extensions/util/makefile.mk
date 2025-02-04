@@ -32,4 +32,3 @@ GEN_HID_OTHER=TRUE
 .INCLUDE :	settings.mk
 
 .INCLUDE : target.mk
-

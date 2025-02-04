@@ -49,4 +49,3 @@ ZIP2LIST	= $(LANGDIR)/*.ott
 
 
 .INCLUDE : target.mk
-

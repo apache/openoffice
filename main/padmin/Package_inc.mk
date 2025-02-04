@@ -23,4 +23,3 @@
 
 $(eval $(call gb_Package_Package,padmin_src,$(SRCDIR)/padmin/source))
 $(eval $(call gb_Package_add_file,padmin_src,bin/spadmin,spadmin.sh))
-

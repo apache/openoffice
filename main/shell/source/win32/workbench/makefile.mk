@@ -81,5 +81,3 @@ APP4DEF=		$(MISC)$/$(APP4TARGET).def
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :		target.mk
-
-

@@ -40,6 +40,3 @@ ZIP2TARGET      = $(CONFIG_USER_TARGET)
 ZIP2LIST        = autotbl.fmt
 
 .INCLUDE : target.mk
-
-
-

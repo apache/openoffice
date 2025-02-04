@@ -65,4 +65,3 @@ APP1STDLIBS=$(TOOLSLIB) 		\
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :	target.mk
-

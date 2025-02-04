@@ -97,4 +97,3 @@ $(WORKDIR)/CustomTarget/i18npool/source/localedata/data/saxparser.input :
 	&& echo "<list>$(foreach component,$(MY_COMPONENTS),<filename>$(component).inbuild.component</filename>)</list>" > $@
 
 # vim: set noet sw=4 ts=4:
-

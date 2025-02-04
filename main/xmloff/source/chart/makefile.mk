@@ -66,4 +66,3 @@ SLOFILES =	$(SLO)$/ColorPropertySet.obj \
 # --- Targets --------------------------------------------------------------
 
 .INCLUDE : target.mk
-

@@ -24,4 +24,3 @@
 $(eval $(call gb_Ant_Ant,pocketword,$(SRCDIR)/xmerge/java/pocketword/build.xml))
 
 # vim: set noet sw=4 ts=4:
-

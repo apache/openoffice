@@ -144,5 +144,3 @@ SLOFILES=\
 
 .INCLUDE :  target.mk
 .INCLUDE : _cppunit.mk
-
-

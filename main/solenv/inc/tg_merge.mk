@@ -59,4 +59,3 @@ $(ULFPARFILES) : $(COMMONMISC)/$(TARGET)/$$(@:b).$(LANGFILEEXT)
 #.IF "$(READMEFILES)"!=""
 #$(uniq $(foreach,i,$(READMEFILES) $(COMMONMISC)/$(TARGET)/$(i:b).xrm)) : $$(@:f) $(LOCALIZESDF)
 #.ENDIF          # "$(ULFFILES)"!=""
-

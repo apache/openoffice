@@ -33,4 +33,3 @@ STORE_MICRO=0
 
 # this is a c++ compatible library 
 STORE_CPP=0
-

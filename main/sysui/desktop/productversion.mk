@@ -74,4 +74,3 @@ PRODUCTVERSIONSHORT.openoffice = $(PRODUCTVERSIONSHORT)
 PKGVERSION.openoffice = $(PKGVERSION)
 UNIXFILENAME.openoffice = $(PRODUCTNAME.openoffice:l:s/ /_/g)$(PRODUCTVERSIONSHORT.openoffice)
 ICONPREFIX.openoffice = $(UNIXFILENAME.openoffice:s/.//g)
-

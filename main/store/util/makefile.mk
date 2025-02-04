@@ -72,6 +72,3 @@ DEF1DES=Store
 # --- Targets ---
 
 .INCLUDE : target.mk
-
-
-

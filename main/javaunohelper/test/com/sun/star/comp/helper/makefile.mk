@@ -45,4 +45,3 @@ JAVAFILES= $(subst,$(CLASSDIR)$/$(PACKAGE)$/, $(subst,.class,.java $(JAVACLASSFI
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

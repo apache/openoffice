@@ -109,4 +109,3 @@ $(RCFILES) : $(MANIFEST) $(ULFDIR)$/$(TARGET).ulf makefile.mk rcfooter.txt rchea
 $(PAW_RES_DLLS) : $(RCFILES)
     -$(MKDIRHIER) $(@:d)
     link /NOENTRY /DLL /MACHINE:X86 /OUT:$@ $(RESFILE)
-

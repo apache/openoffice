@@ -99,4 +99,3 @@ $(MISC)$/$(TARGET).def: makefile
 	echo  STACKSIZE 	32768							   >>$@
 
 .ENDIF
-

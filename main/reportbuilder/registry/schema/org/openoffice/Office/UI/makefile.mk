@@ -51,4 +51,3 @@ ALLTAR: "$(PWD)$/$(MISC)$/$(EXTNAME)$/registry$/schema$/$(PACKAGEDIR)$/Commands.
 "$(PWD)$/$(MISC)$/$(EXTNAME)$/registry$/schema$/$(PACKAGEDIR)$/Controller.xcs" : $(SOLARXMLDIR)$/registry$/schema$/$(PACKAGEDIR)$/Controller.xcs
     @@-$(MKDIRHIER) $(@:d)
     $(COPY) $< $@
-

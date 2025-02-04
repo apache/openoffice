@@ -89,4 +89,3 @@ $(MISC)$/$(SHL1TARGET).def:  makefile.mk
     @echo   component_writeInfo @25                                 >>$@
     @echo   component_getFactory @26                                >>$@
 .ENDIF
-

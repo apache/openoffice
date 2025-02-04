@@ -24,4 +24,3 @@
 $(eval $(call gb_Ant_Ant,aportisdoc,$(SRCDIR)/xmerge/java/aportisdoc/build.xml))
 
 # vim: set noet sw=4 ts=4:
-

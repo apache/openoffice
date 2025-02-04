@@ -101,4 +101,3 @@ $(MISC)$/$(SHL1TARGET).flt: makefile.mk
 	@echo ------------------------------
 	@echo _TI				>$@
 	@echo _real				>>$@
-

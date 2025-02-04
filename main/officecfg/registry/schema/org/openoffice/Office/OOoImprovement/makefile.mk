@@ -35,4 +35,3 @@ XCSFILES= \
 	Settings.xcs
 
 .INCLUDE :  target.mk
-

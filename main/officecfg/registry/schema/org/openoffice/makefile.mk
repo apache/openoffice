@@ -42,4 +42,3 @@ XCSFILES= \
     Interaction.xcs
 
 .INCLUDE :  target.mk
-

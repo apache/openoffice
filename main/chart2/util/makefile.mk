@@ -53,4 +53,3 @@ $(MISC)$/$(TARGET).don : $(UCR)$/$(PRJNAME).db
 	echo $@
 
 .ENDIF # "$(L10N_framework)"==""
-

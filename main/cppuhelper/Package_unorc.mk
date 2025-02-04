@@ -25,4 +25,3 @@ $(eval $(call gb_Package_Package,cppuhelper_unorc,$(SRCDIR)/cppuhelper/source))
 
 $(eval $(call gb_Package_add_file,cppuhelper_unorc,bin/uno.ini,unorc))
 $(eval $(call gb_Package_add_file,cppuhelper_unorc,lib/unorc,unorc))
-

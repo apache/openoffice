@@ -37,4 +37,3 @@ ALLTAR : $(COPYFILES)
 
 $(COPYFILES) : $$(@:f)
     $(COPY) $< $@
-

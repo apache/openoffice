@@ -39,4 +39,3 @@ all: ..$/misc$/deltree.txt
 	@@-rm -f odkidl.zip
 	@@-rm -f odk_ooidl.zip
 	@echo "" > ..$/misc$/deltree.txt
-

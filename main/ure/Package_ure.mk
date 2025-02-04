@@ -27,4 +27,3 @@ $(eval $(call gb_Package_add_file,ure_ure,bin/ure/jvmfwk3rc,jvmfwk3rc))
 $(eval $(call gb_Package_add_file,ure_ure,bin/ure/startup.sh,startup.sh))
 $(eval $(call gb_Package_add_file,ure_ure,bin/ure/uno.ini,uno.ini))
 $(eval $(call gb_Package_add_file,ure_ure,bin/ure/unorc,unorc))
-

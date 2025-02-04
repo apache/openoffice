@@ -116,4 +116,3 @@ $(MISC)$/%.ico: %.ico
 	+$(COPY) $< $@
 
 .INCLUDE :  target.mk
-

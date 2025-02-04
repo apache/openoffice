@@ -39,4 +39,3 @@ XCSFILES= \
     UISort.xcs
 
 .INCLUDE :  target.mk
-

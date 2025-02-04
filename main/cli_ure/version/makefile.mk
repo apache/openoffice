@@ -50,7 +50,3 @@ $(BIN)$/cliureversion.mk: version.txt
 #INCVERSION .PHONY: version.txt incversions.txt  
 #	$(PERL) $(PRJ)$/source$/scripts$/increment_version.pl \
 #	$< $(BIN)$/cliureversion.mk $(SOLARBINDIR)$/unotype_statistics.txt
-
-
-
-

@@ -40,5 +40,3 @@ $(eval $(call gb_SrsTarget_add_files,fps_office/res,\
 	fpicker/source/office/iodlg.src \
 	fpicker/source/office/OfficeFilePicker.src \
 ))
-
-

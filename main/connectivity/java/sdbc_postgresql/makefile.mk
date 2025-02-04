@@ -47,4 +47,3 @@ $(MISC)/postgresql.component .ERRREMOVE : $(SOLARENV)/bin/createcomponent.xslt \
         postgresql.component
     $(XSLTPROC) --nonet --stringparam uri '$(COMPONENTPREFIX_URE_JAVA)sdbc_postgresql.jar' \
         -o $@ $(SOLARENV)/bin/createcomponent.xslt postgresql.component
-

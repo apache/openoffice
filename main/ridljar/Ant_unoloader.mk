@@ -24,4 +24,3 @@
 $(eval $(call gb_Ant_Ant,unoloader,$(SRCDIR)/ridljar/java/unoloader/build.xml))
 
 # vim: set noet sw=4 ts=4:
-

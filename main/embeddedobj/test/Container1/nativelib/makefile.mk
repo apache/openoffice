@@ -70,5 +70,3 @@ $(SHL1HEADER) :
         javah -classpath $(OUT)$/class -o $(SHL1HEADER) embeddedobj.test
 
 .ENDIF                  # "$(JAVANUMVER:s/.//)" >= "000100040000"
-
-

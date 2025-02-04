@@ -76,4 +76,3 @@ ALL_4fcfg_global = \
 ALL_UI_FILTERS+=$(UI_FILTERS_4fcfg_global)
     
 ALL_PACKAGES+=global
-

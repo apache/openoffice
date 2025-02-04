@@ -128,4 +128,3 @@ ALL_4fcfg_calc = \
 ALL_UI_FILTERS+=$(UI_FILTERS_4fcfg_calc)
 
 ALL_PACKAGES+=calc
-

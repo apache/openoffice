@@ -49,4 +49,3 @@ E *:= .exe	# Executables
 # Does not respect case of filenames.
 .DIRCACHERESPCASE := no
 NAMEMAX	=	256
-

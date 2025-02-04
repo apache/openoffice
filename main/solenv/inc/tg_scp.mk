@@ -43,4 +43,3 @@ $(SCP$(TNR)TARGETN): $(LOCALSCP$(TNR)FILES)
 # Anweisungen fuer das Linken
 # unroll end
 #######################################################
-

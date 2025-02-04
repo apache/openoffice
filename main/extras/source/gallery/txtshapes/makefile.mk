@@ -31,6 +31,3 @@ ZIP1TARGET      = $(GALLERY_TXTSHAPES_TARGET)
 ZIP1LIST        = * -x makefile.*
 
 .INCLUDE : target.mk
-
-
-

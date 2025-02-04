@@ -24,4 +24,3 @@
 $(eval $(call gb_Ant_Ant,java_uno,$(SRCDIR)/bridges/java/java_uno/build.xml))
 
 # vim: set noet sw=4 ts=4:
-

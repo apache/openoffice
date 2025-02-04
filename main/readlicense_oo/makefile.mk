@@ -60,4 +60,3 @@ ${SUM_LICENSE} : ${ALL_LICENSE}
 
 ${SUM_NOTICE} : ${ALL_NOTICE}
     ${LINEEND_CAT} > $@ $<
-

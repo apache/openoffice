@@ -37,5 +37,3 @@ $(eval $(call gb_SrsTarget_set_include,imp/res,\
 $(eval $(call gb_SrsTarget_add_files,imp/res,\
 	wizards/source/importwizard/importwi.src \
 ))
-
-

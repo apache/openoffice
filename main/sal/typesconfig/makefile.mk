@@ -54,4 +54,3 @@ ALLTAR : $(INCCOM)$/sal$/typesizes.h
 $(INCCOM)$/sal$/typesizes.h : $(BIN)$/$(TARGET)
 	-$(MKDIR) $(INCCOM)$/sal
 	$(AUGMENT_LIBRARY_PATH) $(BIN)$/$(TARGET) $@
-

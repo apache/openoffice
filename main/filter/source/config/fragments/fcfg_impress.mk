@@ -95,4 +95,3 @@ ALL_4fcfg_impress = \
 ALL_UI_FILTERS+=$(UI_FILTERS_4fcfg_impress)
 
 ALL_PACKAGES+=impress
-

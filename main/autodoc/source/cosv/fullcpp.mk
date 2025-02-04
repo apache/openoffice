@@ -50,4 +50,3 @@ CFLAGS+= -YX"precomp.h" /Fp$(PRJ)$/$(INPATH)$/misc$/$(PCH_NAME).pcd -DNP_LOCALBU
 # RTTI
 CFLAGSCXX+= -frtti
 .ENDIF
-

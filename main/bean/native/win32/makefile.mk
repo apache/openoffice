@@ -51,4 +51,3 @@ DEF1DES=officebean
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

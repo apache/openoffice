@@ -33,4 +33,3 @@ SAL_MICRO=0
 
 # this is a c compatible library 
 SAL_CPP=0
-

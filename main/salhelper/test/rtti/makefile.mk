@@ -100,4 +100,3 @@ APP1STDLIBS+=	-lsamplelibrtti
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :	target.mk
-

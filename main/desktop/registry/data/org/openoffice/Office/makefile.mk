@@ -70,4 +70,3 @@ ALLTAR : $(MYXCUFILES)
 $(SPOOLDIR)$/$(PACKAGEDIR)$/Jobs$/Jobs-registration.xcu : $(PROCESSOUT)$/registry$/data$/$/$(PACKAGEDIR)$/Jobs.xcu
 	@-$(MKDIRHIER) $(@:d)
 	@$(COPY) $< $@
-

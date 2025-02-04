@@ -68,4 +68,3 @@ $(eval $(call gb_Library_add_exception_objects,hyphen_uno,\
 
 
 # vim: set noet sw=4 ts=4:
-

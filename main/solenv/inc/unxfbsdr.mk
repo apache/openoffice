@@ -43,4 +43,3 @@ CDEFS+=-DARMV6
 ARCH_FLAGS+=-march=armv7-a -mtune=cortex-a8 -mfpu=neon
 CDEFS+=-DARMV7
 .ENDIF
-

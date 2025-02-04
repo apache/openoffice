@@ -93,4 +93,3 @@ $(MISC)$/classic.flag : $(CLASSIC_TARBALL)
 images_hicontrast : $(MISC)$/hicontrast.flag $(RES)$/img$/commandimagelist.ilst
 
 images_classic : $(MISC)$/classic.flag $(RES)$/img$/commandimagelist.ilst
-

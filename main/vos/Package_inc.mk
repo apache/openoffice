@@ -48,4 +48,3 @@ $(eval $(call gb_Package_add_file,vos_inc,inc/vos/timer.hxx,timer.hxx))
 $(eval $(call gb_Package_add_file,vos_inc,inc/vos/types.hxx,types.hxx))
 $(eval $(call gb_Package_add_file,vos_inc,inc/vos/vosdllapi.h,vosdllapi.h))
 $(eval $(call gb_Package_add_file,vos_inc,inc/vos/xception.hxx,xception.hxx))
-

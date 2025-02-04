@@ -37,4 +37,3 @@ ALLTAR : $(MISC)$/checksize.done
 
 $(MISC)$/checksize.done .PHONY:
     $(PERL) checksize.pl
-

@@ -44,5 +44,3 @@ LIB1OBJFILES=$(SLOFILES)
 # --- Targets ----------------------------------
 
 .INCLUDE : target.mk
-
-

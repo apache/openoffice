@@ -46,4 +46,3 @@ ZIP2LIST        = Resources$/* Resources$/lang$/*
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :	target.mk
-

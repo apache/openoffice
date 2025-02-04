@@ -64,4 +64,3 @@ $(CLASSDIR)/ConvwatchGUIProject.jar: src/ConvwatchGUI.java src/IniFile.java
 
 clean:
 	$(ANT) clean
-

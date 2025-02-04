@@ -46,4 +46,3 @@ $(eval $(call gb_Package_add_file,oox_generated,inc/oox/token/namespaces.hxx,nam
 $(eval $(call gb_Package_add_file,oox_generated,inc/oox/token/namespaces.txt,namespaces.txt))
 $(eval $(call gb_Package_add_file,oox_generated,inc/oox/token/properties.hxx,properties.hxx))
 $(eval $(call gb_Package_add_file,oox_generated,inc/oox/token/tokens.hxx,tokens.hxx))
-

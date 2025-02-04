@@ -38,4 +38,3 @@ ZIP1LIST        = $(LANGDIR)$/*
 
 
 .INCLUDE : target.mk
-

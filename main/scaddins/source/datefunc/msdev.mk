@@ -107,6 +107,3 @@ $(RDBOUT)\dateadd.rdb: $(URDS) $(REGMERGE)
 $(TARGET):  $(UNOHEADER) $(OBJS)
 	-$(MKDIR) $(@D)
     $(LIB32) $(LFLAGS) /DLL $(OBJS) /out:$@ -def:datefunc.def $(LINKCPPUHELPER) $(LINKCPPU) $(LINKVOS) $(LINKSAL) msvcirtd.lib $(LIBS)
-
-
-

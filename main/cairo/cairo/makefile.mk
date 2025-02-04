@@ -201,4 +201,3 @@ OUT2LIB+=src$/.libs$/libcairo.so*
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
-

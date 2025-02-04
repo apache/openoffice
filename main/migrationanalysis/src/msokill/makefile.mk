@@ -76,4 +76,3 @@ ALLTAR : $(PAW_RES_EXE)
 $(PAW_RES_EXE) : $(BIN)$/$$(@:f)
 	-$(MKDIRHIER) $(@:d)
 	$(COPY) $(BIN)$/$(@:f) $@
-
