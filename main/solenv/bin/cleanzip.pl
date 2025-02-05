@@ -57,4 +57,3 @@ unless ( $zip->writeToFileNamed( ${filename}."_new" ) == AZ_OK ) {
 	die "$0: ERROR reading ${filename}_new\n";
 }
 rename($filename."_new", $filename);
-

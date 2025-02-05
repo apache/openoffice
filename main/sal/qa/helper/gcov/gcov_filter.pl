@@ -444,4 +444,3 @@ Usage: $tool_name [OPTIONS] INPUTFILE
 END_OF_USAGE
     ;
 }
-

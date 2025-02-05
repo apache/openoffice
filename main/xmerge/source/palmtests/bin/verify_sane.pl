@@ -103,4 +103,3 @@ sub close_connection
   print "closing connection\n";
   EmRPC::CloseConnection();
 }
-

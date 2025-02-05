@@ -39,4 +39,3 @@ if ( rmdir $ARGV[0] ) {
 shift @ARGV;
 }
 exit $r_code;
-

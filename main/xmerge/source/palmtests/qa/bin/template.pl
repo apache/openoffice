@@ -47,5 +47,3 @@ open_connection();
 # command(s) go here.
 
 close_connection();
-
-

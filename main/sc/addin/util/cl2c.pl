@@ -228,5 +228,3 @@ close(SRCIN);
 close(COUT);
 
 exit 0;
-
-

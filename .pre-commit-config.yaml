@@ -33,7 +33,7 @@ repos:
       - id: check-merge-conflict
       - id: check-vcs-permalinks
       - id: end-of-file-fixer
-        files: \.(hxx|java|md|mk|ya?ml)$
+        files: \.(hxx|java|md|mk|pl|pm|ya?ml)$
       - id: mixed-line-ending
         files: ^main/.*\.(c|h)xx$
   - repo: https://github.com/codespell-project/codespell

@@ -340,4 +340,3 @@ if ( (defined $debug_light) or (defined $debug) ) { print( STDERR "Command: $com
 replace_cyg(\@params);
 if ( (defined $debug_light) or (defined $debug) ) { print(STDERR "\n---------------------\nExecute: $command @params\n----------------\n");};
 exec( "$command", @params) or die( "\nError: guw.pl: executing $command failed!\n" );
-

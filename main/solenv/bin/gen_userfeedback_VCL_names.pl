@@ -189,4 +189,3 @@ open HIDS, ">$outfile" or die "can't open file $filename $! $^E";
 print HIDS join "\n", @names;
 print HIDS "\n";
 close HIDS;
-

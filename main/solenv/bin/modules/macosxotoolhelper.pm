@@ -42,4 +42,3 @@ sub otoolD($) {
     close(IN);
     return $line;
 }
-

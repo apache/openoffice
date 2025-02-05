@@ -69,4 +69,3 @@ sub usage
     print STDERR "Do move diffing file only\n";
     exit 1;    
 }
-
