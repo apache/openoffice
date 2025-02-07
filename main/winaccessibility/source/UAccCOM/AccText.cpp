@@ -78,10 +78,10 @@ STDMETHODIMP CAccText::get_characterCount(long * nCharacters)
 /**
    * Get character extents.
    * @param offset  Offset.
-   * @param x Variant to accpet x position.
-   * @param y Variant to accpet y position.
-   * @param width Variant to accpet width.
-   * @param Height Variant to accpet height.
+   * @param x Variant to accept x position.
+   * @param y Variant to accept y position.
+   * @param width Variant to accept width.
+   * @param Height Variant to accept height.
    * @return Result.
 */
 STDMETHODIMP CAccText::get_characterExtents(long offset, IA2CoordinateType coordType, long * x, long * y, long * width, long * height)
@@ -91,8 +91,8 @@ STDMETHODIMP CAccText::get_characterExtents(long offset, IA2CoordinateType coord
 }
 
 /**
-   * Get slections count.
-   * @param nSelections Variant to accpet slections count.
+   * Get selections count.
+   * @param nSelections Variant to accept selections count.
    * @return Result.
 */
 STDMETHODIMP CAccText::get_nSelections(long * nSelections)
@@ -193,7 +193,7 @@ STDMETHODIMP CAccText::get_textAtOffset(long offset, IA2TextBoundaryType boundar
 /**
    * Remove selection.
    * @param selectionIndex Special selection index
-   * @param success Variant to accept the memthod called result.
+   * @param success Variant to accept the method called result.
    * @return Result.
 */
 STDMETHODIMP CAccText::removeSelection(long selectionIndex)//, unsigned char * success)
@@ -205,7 +205,7 @@ STDMETHODIMP CAccText::removeSelection(long selectionIndex)//, unsigned char * s
 /**
    * Set caret position.
    * @param offset Special position.
-   * @param success Variant to accept the memthod called result.
+   * @param success Variant to accept the method called result.
    * @return Result.
 */
 STDMETHODIMP CAccText::setCaretOffset(long offset)
@@ -219,7 +219,7 @@ STDMETHODIMP CAccText::setCaretOffset(long offset)
    * @param selectionIndex Special selection index.
    * @param startOffset start position.
    * @param endOffset end position.
-   * @param success Variant to accept the memthod called result.
+   * @param success Variant to accept the method called result.
    * @return Result.
 */
 
