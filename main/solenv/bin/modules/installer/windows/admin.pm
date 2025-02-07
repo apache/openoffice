@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,19 +7,17 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
-
-
 
 package installer::windows::admin;
 
@@ -39,15 +37,15 @@ use installer::windows::idtglobal;
 sub unpack_cabinet_file
 {
 	my ($cabfilename, $unpackdir) = @_;
-	
+
 	my $infoline = "Unpacking cabinet file: $cabfilename\n";
 	$installer::logger::Lang->print($infoline);
 
 	my $expandfile = "expand.exe";	# Has to be in the path
 
 	# expand.exe has to be located in the system directory.
-	# Cygwin has another tool expand.exe, that converts tabs to spaces. This cannot be used of course. 
-	# But this wrong expand.exe is typically in the PATH before this expand.exe, to unpack 
+	# Cygwin has another tool expand.exe, that converts tabs to spaces. This cannot be used of course.
+	# But this wrong expand.exe is typically in the PATH before this expand.exe, to unpack
 	# cabinet files.
 
 #	if ( $^O =~ /cygwin/i )
@@ -71,7 +69,7 @@ sub unpack_cabinet_file
 	my $systemcall = "";
 	if ( $^O =~ /cygwin/i ) {
 		my $localunpackdir = qx{cygpath -w "$unpackdir"};
-        chomp ($localunpackdir);
+		chomp ($localunpackdir);
 		$localunpackdir =~ s/\\/\\\\/g;
 		$cabfilename =~ s/\\/\\\\/g;
 		$cabfilename =~ s/\s*$//g;
@@ -114,7 +112,7 @@ sub include_tables_into_pcpfile
 
 	# Make all table 8+3 conform
 	my $alltables = installer::converter::convert_stringlist_into_array(\$tables, " ");
-	
+
 	for ( my $i = 0; $i <= $#{$alltables}; $i++ )
 	{
 		my $tablename = ${$alltables}[$i];
@@ -135,7 +133,7 @@ sub include_tables_into_pcpfile
 	# Import of tables
 
 	$systemcall = $msidb . " -d " . $fullmsidatabasepath . " -f " . $workdir . " -i " . $tables;
-							
+
 	$returnvalue = system($systemcall);
 
 	$infoline = "Systemcall: $systemcall\n";
@@ -166,23 +164,23 @@ sub extract_tables_from_pcpfile
 	my $infoline = "";
 	my $systemcall = "";
 	my $returnvalue = "";
-	
+
 	my $localfullmsidatabasepath = $fullmsidatabasepath;
 
 	# Export of all tables by using "*"
 
 	if ( $^O =~ /cygwin/i ) {
-		# Copying the msi database locally guarantees the format of the directory. 
-		# Otherwise it is defined in the file of UPDATE_DATABASE_LISTNAME 
+		# Copying the msi database locally guarantees the format of the directory.
+		# Otherwise it is defined in the file of UPDATE_DATABASE_LISTNAME
 
 		my $msifilename = $localfullmsidatabasepath;
 		installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$msifilename);
 		my $destdatabasename = $workdir . $installer::globals::separator . $msifilename;
 		installer::systemactions::copy_one_file($localfullmsidatabasepath, $destdatabasename);
 		$localfullmsidatabasepath = $destdatabasename;
-		
-		chomp( $localfullmsidatabasepath = qx{cygpath -w "$localfullmsidatabasepath"} ); 
-		chomp( $workdir = qx{cygpath -w "$workdir"} ); 
+
+		chomp( $localfullmsidatabasepath = qx{cygpath -w "$localfullmsidatabasepath"} );
+		chomp( $workdir = qx{cygpath -w "$workdir"} );
 
 		# msidb.exe really wants backslashes. (And double escaping because system() expands the string.)
 		$localfullmsidatabasepath =~ s/\\/\\\\/g;
@@ -192,7 +190,7 @@ sub extract_tables_from_pcpfile
 		$localfullmsidatabasepath =~ s/\//\\\\/g;
 		$workdir =~ s/\//\\\\/g;
 	}
-							
+
 	$systemcall = $msidb . " -d " . $localfullmsidatabasepath . " -f " . $workdir . " -e $tablelist";
 	$returnvalue = system($systemcall);
 
@@ -219,7 +217,7 @@ sub extract_tables_from_pcpfile
 sub analyze_directory_file
 {
 	my ($filecontent) = @_;
-	
+
 	my %table = ();
 
 	for ( my $i = 0; $i <= $#{$filecontent}; $i++ )
@@ -231,18 +229,18 @@ sub analyze_directory_file
 			my $dir = $1;
 			my $parent = $2;
 			my $name = $3;
-			
+
 			if ( $name =~ /^\s*(.*?)\s*\:\s*(.*?)\s*$/ ) { $name = $2; }
 			if ( $name =~ /^\s*(.*?)\s*\|\s*(.*?)\s*$/ ) { $name = $2; }
-			
+
 			my %helphash = ();
 			$helphash{'Directory_Parent'} = $parent;
 			$helphash{'DefaultDir'} = $name;
 			$table{$dir} = \%helphash;
 		}
 	}
-	
-	return \%table;	
+
+	return \%table;
 }
 
 #################################################################################
@@ -252,9 +250,9 @@ sub analyze_directory_file
 sub analyze_component_file
 {
 	my ($filecontent) = @_;
-	
+
 	my %table = ();
-	
+
 	for ( my $i = 0; $i <= $#{$filecontent}; $i++ )
 	{
 		if (( $i == 0 ) || ( $i == 1 ) || ( $i == 2 )) { next; }
@@ -263,12 +261,12 @@ sub analyze_component_file
 		{
 			my $component = $1;
 			my $dir = $3;
-			
+
 			$table{$component} = $dir;
 		}
 	}
 
-	return \%table;	
+	return \%table;
 }
 
 #################################################################################
@@ -280,7 +278,7 @@ sub analyze_keypath_component_file
 	my ($filecontent) = @_;
 
 	my %keypathtable = ();
-	
+
 	for ( my $i = 0; $i <= $#{$filecontent}; $i++ )
 	{
 		if (( $i == 0 ) || ( $i == 1 ) || ( $i == 2 )) { next; }
@@ -305,9 +303,9 @@ sub analyze_keypath_component_file
 sub analyze_registry_file
 {
 	my ($filecontent) = @_;
-	
+
 	my %table = ();
-	
+
 	for ( my $i = 0; $i <= $#{$filecontent}; $i++ )
 	{
 		if (( $i == 0 ) || ( $i == 1 ) || ( $i == 2 )) { next; }
@@ -320,7 +318,7 @@ sub analyze_registry_file
 			my $name = $4;
 			my $value = $5;
 			my $component = $6;
-			
+
 			my %helphash = ();
 			# $helphash{'Registry'} = $registry;
 			$helphash{'Root'} = $root;
@@ -333,7 +331,7 @@ sub analyze_registry_file
 		}
 	}
 
-	return \%table;		
+	return \%table;
 }
 
 #################################################################################
@@ -343,11 +341,11 @@ sub analyze_registry_file
 sub analyze_file_file
 {
 	my ($filecontent) = @_;
-	
+
 	my %table = ();
 	my %fileorder = ();
 	my $maxsequence = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$filecontent}; $i++ )
 	{
 		if (( $i == 0 ) || ( $i == 1 ) || ( $i == 2 )) { next; }
@@ -360,16 +358,16 @@ sub analyze_file_file
 			my $sequence = $8;
 
 			if ( $filename =~ /^\s*(.*?)\s*\|\s*(.*?)\s*$/ ) { $filename = $2; }
-			
+
 			my %helphash = ();
 			$helphash{'Component'} = $comp;
 			$helphash{'FileName'} = $filename;
 			$helphash{'Sequence'} = $sequence;
 
 			$table{$file} = \%helphash;
-			
+
 			$fileorder{$sequence} = $file;
-			
+
 			if ( $sequence > $maxsequence ) { $maxsequence = $sequence; }
 		}
 	}
@@ -383,7 +381,7 @@ sub analyze_file_file
 
 sub create_directory_tree
 {
-	my ($parent, $pathcollector, $fulldir, $dirhash) = @_;	
+	my ($parent, $pathcollector, $fulldir, $dirhash) = @_;
 
 	foreach my $dir ( keys %{$dirhash} )
 	{
@@ -408,11 +406,11 @@ sub create_directory_tree
 sub create_directory_structure
 {
 	my ($dirhash, $targetdir) = @_;
-	
+
 	my %fullpathhash = ();
-	
+
 	my @startparents = ("TARGETDIR", "INSTALLLOCATION");
-	
+
 	foreach $dir (@startparents) { create_directory_tree($dir, \%fullpathhash, $targetdir, $dirhash); }
 
 	# Also adding the paths of the startparents
@@ -420,7 +418,7 @@ sub create_directory_structure
 	{
 		if ( ! exists($fullpathhash{$dir}) ) { $fullpathhash{$dir} = $targetdir; }
 	}
-	
+
 	return \%fullpathhash;
 }
 
@@ -450,24 +448,24 @@ sub copy_files_into_directory_structure
 
 			$destfile = $destdir . $installer::globals::separator . $destfile;
 			my $sourcefile = $unpackdir . $installer::globals::separator . $file;
-			
+
 			if ( ! -f $sourcefile )
 			{
 				# It is possible, that this was an unpacked file
 				# Looking in the dirhash, to find the subdirectory in the installation set (the id is $dirname)
 				# subdir is not recursively analyzed, only one directory.
-				
-				my $oldsourcefile = $sourcefile;			
+
+				my $oldsourcefile = $sourcefile;
 				my $subdir = "";
 				if ( exists($dirhash->{$dirname}->{'DefaultDir'}) ) { $subdir = $dirhash->{$dirname}->{'DefaultDir'} . $installer::globals::separator; }
 				my $realfilename = $filehash->{$file}->{'FileName'};
 				my $localinstalldir = $installdir;
-				
+
 				$localinstalldir =~ s/\\\s*$//;
 				$localinstalldir =~ s/\/\s*$//;
-				
+
 				$sourcefile = $localinstalldir . $installer::globals::separator . $subdir . $realfilename;
-				
+
 				if ( ! -f $sourcefile )
 				{
 					installer::exiter::exit_program("ERROR: File not found: \"$oldsourcefile\" (or \"$sourcefile\").", "copy_files_into_directory_structure");
@@ -493,19 +491,19 @@ sub copy_files_into_directory_structure
 		# 	installer::exiter::exit_program("ERROR: No file assigned to sequence $i", "copy_files_into_directory_structure");
 		# }
 	}
-	
+
 	return $unopkgfile;
 }
 
 
 ###############################################################
-# Setting the time string for the 
-# Summary Information stream in the 
+# Setting the time string for the
+# Summary Information stream in the
 # msi database of the admin installations.
 ###############################################################
 
 sub get_sis_time_string
-{	
+{
 	# Syntax: <yyyy/mm/dd hh:mm:ss>
 	my $second = (localtime())[0];
 	my $minute = (localtime())[1];
@@ -521,16 +519,16 @@ sub get_sis_time_string
 	if ( $hour < 10 ) { $hour = "0" . $hour; }
 	if ( $day < 10 ) { $day = "0" . $day; }
 	if ( $month < 10 ) { $month = "0" . $month; }
-	
+
 	my $timestring = $year . "/" . $month . "/" . $day . " " . $hour . ":" . $minute . ":" . $second;
-		
+
 	return $timestring;
 }
 
 ###############################################################
 # Windows registry entries containing properties are not set
-# correctly during msp patch process. The properties are 
-# empty or do get their default values. This destroys the 
+# correctly during msp patch process. The properties are
+# empty or do get their default values. This destroys the
 # values of many entries in Windows registry.
 # This can be fixed by removing all entries in Registry table,
 # containing a property before starting msimsp.exe.
@@ -542,16 +540,16 @@ sub remove_properties_from_registry_table
 
 	$installer::logger::Lang->print("\n");
 	$installer::logger::Lang->add_timestamp("Performance Info: Start remove_properties_from_registry_table");
-	
+
 	my @registrytable = ();
-	
+
 	# Registry hash
 	# Collecting all RegistryItems with values containing a property: [...]
 	# To which component do they belong
 	# Is this after removal an empty component? Create a replacement, so that
 	# no Component has to be removed.
 	# Is this RegistryItem a KeyPath of a component. Then it cannot be removed.
-	
+
 	my %problemitems = ();
 	my %problemcomponents = ();
 	my %securecomponents = ();
@@ -561,7 +559,7 @@ sub remove_properties_from_registry_table
 
 	my $newitemcounter = 0;
 	my $olditemcounter = 0;
-	
+
 	foreach my $regitem ( keys %{$registryhash} )
 	{
 		my $value = "";
@@ -570,11 +568,11 @@ sub remove_properties_from_registry_table
 		if ( $value =~ /^.*(\[.*?\]).*$/ )
 		{
 			my $property = $1;
-			
+
 			# Collecting registry item
 			$problemitems{$regitem} = 1;	# "1" -> can be removed
 			if ( exists($componentkeypathhash->{$regitem}) ) { $problemitems{$regitem} = 2; } 	# "2" -> cannot be removed, KeyPath
-			
+
 			# Collecting component (and number of problematic registry items
 			# my $component = $registryhash->{$regitem}->{'Component'};
 			# if ( exists($problemcomponents{$regitem}) ) { $problemcomponents{$regitem} = $problemcomponents{$regitem} + 1; }
@@ -588,7 +586,7 @@ sub remove_properties_from_registry_table
 			if ( $component eq "" ) { installer::exiter::exit_program("ERROR: Did not find component for registry item \"$regitem\".", "remove_properties_from_registry_table"); }
 			$securecomponents{$component} = 1;
 		}
-		
+
 		# Searching for change value
 		my $localkey = "";
 		if ( exists($registryhash->{$regitem}->{'Key'}) ) { $localkey = $registryhash->{$regitem}->{'Key'}; }
@@ -596,14 +594,14 @@ sub remove_properties_from_registry_table
 		{
 			$changevalue = $1;
 			$changeroot = $registryhash->{$regitem}->{'Root'};
-		}	
-		
-		$olditemcounter++;	
+		}
+
+		$olditemcounter++;
 	}
-	
+
 	my $removecounter = 0;
 	my $renamecounter = 0;
-	
+
 	foreach my $regitem ( keys %{$registryhash} )
 	{
 		my $value = "";
@@ -630,7 +628,7 @@ sub remove_properties_from_registry_table
 			{
 				# Changing values of registry items, that are KeyPath or that contain to
 				# components with only unsecure registry items.
-	
+
 				if (( $problemitems{$regitem} == 2 ) || ( ! exists($securecomponents{$component}) ))
 				{
 					# change value of registry item
@@ -638,11 +636,11 @@ sub remove_properties_from_registry_table
 
 					my $oldkey = "";
 					if ( exists($registryhash->{$regitem}->{'Key'}) ) { $oldkey = $registryhash->{$regitem}->{'Key'}; };
-					my $oldname = ""; 
+					my $oldname = "";
 					if ( exists($registryhash->{$regitem}->{'Name'}) ) { $oldname = $registryhash->{$regitem}->{'Name'}; }
 					my $oldvalue = "";
 					if ( exists($registryhash->{$regitem}->{'Value'}) ) { $oldvalue = $registryhash->{$regitem}->{'Value'}; }
-					
+
 					$registryhash->{$regitem}->{'Key'} = $changevalue . "RegistryItem";
 					$registryhash->{$regitem}->{'Root'} = $changeroot;
 					$registryhash->{$regitem}->{'Name'} = $regitem;
@@ -662,11 +660,11 @@ sub remove_properties_from_registry_table
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Number of changed registry items: $renamecounter\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	# Creating the new content of Registry table
 	# First three lines from $registryfilecontent
 	# All further files from changed $registryhash
-	
+
 	for ( my $i = 0; $i <= 2; $i++ ) { push(@registrytable, ${$registryfilecontent}[$i]); }
 
 	foreach my $regitem ( keys %{$registryhash} )
@@ -682,7 +680,7 @@ sub remove_properties_from_registry_table
 		if ( exists($registryhash->{$regitem}->{'Value'}) ) { $value = $registryhash->{$regitem}->{'Value'}; }
 		my $comp = "";
 		if ( exists($registryhash->{$regitem}->{'Component'}) ) { $comp = $registryhash->{$regitem}->{'Component'}; }
-		
+
 		my $oneline = $regitem . "\t" . $root . "\t" . $localkey . "\t" . $name . "\t" . $value . "\t" . $comp . "\n";
 		push(@registrytable, $oneline);
 
@@ -694,13 +692,13 @@ sub remove_properties_from_registry_table
 
 	$installer::logger::Lang->print("\n");
 	$installer::logger::Lang->add_timestamp("Performance Info: End remove_properties_from_registry_table");
-	
+
 	return (\@registrytable);
 }
 
 ###############################################################
-# Writing content of administrative installations into 
-# Summary Information Stream of msi database. 
+# Writing content of administrative installations into
+# Summary Information Stream of msi database.
 # This is required for example for following
 # patch processes using Windows Installer service.
 ###############################################################
@@ -708,7 +706,7 @@ sub remove_properties_from_registry_table
 sub write_sis_info
 {
 	my ($msidatabase) = @_ ;
-	
+
 	if ( ! -f $msidatabase ) { installer::exiter::exit_program("ERROR: Cannot find file $msidatabase", "write_sis_info"); }
 
 	my $msiinfo = "msiinfo.exe";	# Has to be in the path
@@ -717,25 +715,25 @@ sub write_sis_info
 	my $returnvalue = "";
 
 	# Required setting for administrative installations:
-	# -w 4   (source files are unpacked),  wordcount
+	# -w 4   (source files are unpacked), wordcount
 	# -s <date of admin installation>, LastPrinted, Syntax: <yyyy/mm/dd hh:mm:ss>
 	# -l <person_making_admin_installation>, LastSavedBy
-	
-	my $wordcount = 4;  # Unpacked files
+
+	my $wordcount = 4; # Unpacked files
 	my $lastprinted = get_sis_time_string();
 	my $lastsavedby = "Installer";
 
 	my $localmsidatabase = $msidatabase;
-	
+
 	if( $^O =~ /cygwin/i )
 	{
 		$localmsidatabase = qx{cygpath -w "$localmsidatabase"};
 		$localmsidatabase =~ s/\\/\\\\/g;
 		$localmsidatabase =~ s/\s*$//g;
 	}
-							
+
 	$systemcall = $msiinfo . " " . "\"" . $localmsidatabase . "\"" . " -w " . $wordcount . " -s " . "\"" . $lastprinted . "\"" . " -l $lastsavedby";
-    $installer::logger::Lang->printf($systemcall);
+	$installer::logger::Lang->printf($systemcall);
 	$returnvalue = system($systemcall);
 
 	if ($returnvalue)
@@ -743,7 +741,7 @@ sub write_sis_info
 		$infoline = "ERROR: Could not execute $systemcall !\n";
 		$installer::logger::Lang->print($infoline);
 		installer::exiter::exit_program($infoline, "write_sis_info");
-	}	
+	}
 }
 
 ####################################################
@@ -753,14 +751,14 @@ sub write_sis_info
 sub get_extensions_dir
 {
 	my ( $unopkgfile ) = @_;
-	
+
 	my $localbranddir = $unopkgfile;
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$localbranddir); # "program" dir in brand layer
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$localbranddir); # root dir in brand layer
 	$localbranddir =~ s/\Q$installer::globals::separator\E\s*$//;
 	my $extensiondir = $localbranddir . $installer::globals::separator . "share" . $installer::globals::separator . "extensions";
-	
-	return $extensiondir;	
+
+	return $extensiondir;
 }
 
 ##############################################################
@@ -777,7 +775,7 @@ sub remove_empty_dirs_in_folder
 	}
 
 	my @content = ();
-	
+
 	$dir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	if ( -d $dir )
@@ -787,7 +785,7 @@ sub remove_empty_dirs_in_folder
 		closedir(DIR);
 
 		my $oneitem;
-	
+
 		foreach $oneitem (@content)
 		{
 			if ((!($oneitem eq ".")) && (!($oneitem eq "..")))
@@ -800,11 +798,11 @@ sub remove_empty_dirs_in_folder
 				}
 			}
 		}
-		
-		# try to remove empty directory	
+
+		# try to remove empty directory
 		my $returnvalue = rmdir $dir;
 
-		# if ( $returnvalue ) { print "Successfully removed empty dir $dir\n"; }	
+		# if ( $returnvalue ) { print "Successfully removed empty dir $dir\n"; }
 	}
 }
 
@@ -818,23 +816,23 @@ sub make_admin_install
 
 	# Create helper directory
 
-    $installer::logger::Info->printf("... installing %s in directory %s ...\n",
-        $databasepath,
-        $targetdir);
+	$installer::logger::Info->printf("... installing %s in directory %s ...\n",
+		$databasepath,
+		$targetdir);
 
 	my $helperdir = $targetdir . $installer::globals::separator . "installhelper";
 	installer::systemactions::create_directory($helperdir);
-	
+
 	# Get File.idt, Component.idt and Directory.idt from database
-	
+
 	my $tablelist = "File Directory Component Registry";
 	extract_tables_from_pcpfile($databasepath, $helperdir, $tablelist);
-	
+
 	# Unpack all cab files into $helperdir, cab files must be located next to msi database
 	my $installdir = $databasepath;
 
 	if ( $^O =~ /cygwin/i ) { $installdir =~ s/\\/\//g; } # backslash to slash
-	
+
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$installdir);
 
 	if ( $^O =~ /cygwin/i ) { $installdir =~ s/\//\\/g; } # slash to backslash
@@ -843,7 +841,7 @@ sub make_admin_install
 	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$databasefilename);
 
 	my $cabfiles = installer::systemactions::find_file_with_file_extension("cab", $installdir);
-	
+
 	if ( $#{$cabfiles} < 0 ) { installer::exiter::exit_program("ERROR: Did not find any cab file in directory $installdir", "make_admin_install"); }
 
 	# Set unpackdir
@@ -863,16 +861,16 @@ sub make_admin_install
 		}
 		unpack_cabinet_file($cabfile, $unpackdir);
 	}
-	
+
 	# Reading tables
 	my $filename = $helperdir . $installer::globals::separator . "Directory.idt";
 	my $filecontent = installer::files::read_file($filename);
 	my $dirhash = analyze_directory_file($filecontent);
-	
+
 	$filename = $helperdir . $installer::globals::separator . "Component.idt";
 	my $componentfilecontent = installer::files::read_file($filename);
 	my $componenthash = analyze_component_file($componentfilecontent);
-	
+
 	$filename = $helperdir . $installer::globals::separator . "File.idt";
 	$filecontent = installer::files::read_file($filename);
 	my ( $filehash, $fileorder, $maxsequence ) = analyze_file_file($filecontent);
@@ -882,17 +880,17 @@ sub make_admin_install
 
 	# Copying files
 	my $unopkgfile = copy_files_into_directory_structure($fileorder, $filehash, $componenthash, $fullpathhash, $maxsequence, $unpackdir, $installdir, $dirhash);
-	
+
 	my $msidatabase = $targetdir . $installer::globals::separator . $databasefilename;
 	installer::systemactions::copy_one_file($databasepath, $msidatabase);
-	
+
 	if ( $unopkgfile ne "" )
 	{
 		# Removing empty dirs in extension folder
 		my $extensionfolder = get_extensions_dir($unopkgfile);
 		if ( -d $extensionfolder ) { remove_empty_dirs_in_folder($extensionfolder, 1); }
 	}
-	
+
 	# Editing registry table because of wrong Property value
 	#	my $registryfilename = $helperdir . $installer::globals::separator . "Registry.idt";
 	#	my $componentfilename = $helperdir . $installer::globals::separator . "Component.idt";
@@ -906,7 +904,7 @@ sub make_admin_install
 	#	installer::files::save_file($registryfilename, $registryfilecontent);
 	#	$tablelist = "Registry";
 	#	include_tables_into_pcpfile($msidatabase, $helperdir, $tablelist);
-	
+
 	# Saving info in Summary Information Stream of msi database (required for following patches)
 	write_sis_info($msidatabase);
 
