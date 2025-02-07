@@ -35,4 +35,3 @@ foreach my $filename (@ARGV) {
 	truncate KKK, $size;
 	close KKK;
 }
-

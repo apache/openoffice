@@ -340,4 +340,3 @@ sub usage {
 	print STDERR "      [-n suffixes]  [-t mmddyyyy]  [-tt mmddyyyy]  [  zipfile [\n";
 	print STDERR "      file1 file2 ...]] [-xi list]\n";
 }
-

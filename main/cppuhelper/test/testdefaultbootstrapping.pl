@@ -268,6 +268,3 @@ else {
 	print "Commnent:\n", $comment, "\n";
 }
 print "**************************\n";
-
-
-

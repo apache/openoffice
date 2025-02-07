@@ -839,4 +839,3 @@ sub verify_prcs_exist
 		die "The pose PRC directory ($pose_prc) is correct, but I can't find $prcfile there.";
 	}
 }
-

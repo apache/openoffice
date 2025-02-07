@@ -57,4 +57,3 @@ close PATCHED_FILE;
 close ORIG_FILE;
 
 exit(0);
-

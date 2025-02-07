@@ -53,5 +53,3 @@ open_connection();
 TapPen($ARGV[0], $ARGV[1]);
 
 close_connection();
-
-
