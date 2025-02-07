@@ -84,4 +84,3 @@ sub usage
     print "$0 <unix|dos> <FILE|\@filelist> [more files/lists]\n";
     exit 1;
 }
-

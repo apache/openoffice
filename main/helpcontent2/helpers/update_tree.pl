@@ -392,4 +392,3 @@ sub read_loc {
     print "\ndone reading a total of ".$total_elements." localized titles for ".scalar(keys(%loc_title))." languages from ".scalar @files ." files\n";
     print sort(@langstat);
 }
-

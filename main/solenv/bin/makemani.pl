@@ -105,4 +105,3 @@ foreach my $j (@headlines, @bodylines, @taillines) {
 }
 
 close MANIOUT;
-

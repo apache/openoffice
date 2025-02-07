@@ -200,4 +200,3 @@ sub usage {
 	print STDERR "\nmapgen:\n";
     print STDERR "Syntax:    mapgen -d dump_file -s first_string -f filter_file -m map_file [-h|--help]\n";
 };
-

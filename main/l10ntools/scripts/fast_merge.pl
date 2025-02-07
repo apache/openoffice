@@ -326,5 +326,3 @@ sub read_sdf_file_names
     }
     close ( FILE );
 }
-
-

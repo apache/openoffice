@@ -68,6 +68,3 @@ if (open UNO, $uno_cmd) {
 } else {
 	die "Cannot open $uno_cmd: $!\n";
 }
-
-
-
