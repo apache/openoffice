@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 import java.io.*;
 
@@ -32,37 +30,37 @@ import com.sun.star.container.XIndexAccess;
 import com.sun.star.sdbc.*;
 import com.sun.star.sdbcx.*;
 import com.sun.star.lang.XMultiServiceFactory;
-    
+
 public class sdbcx
 {
 	private XMultiServiceFactory xORB;
 	private static XConnection con;
 	private XTablesSupplier xTabSup;
-        
-        public static XMultiServiceFactory rSmgr;
+
+		public static XMultiServiceFactory rSmgr;
 	public static void main(String argv[]) throws java.lang.Exception
 	{
 		try{
 			rSmgr = connect("socket,host=localhost,port=8100");
-                        sdbcx test = new sdbcx(rSmgr);
-                        test.createConnection();
-                        test.displayTableProperties();
-                        // now we dispose the connection to close it
-                        XComponent xComponent = (XComponent)UnoRuntime.queryInterface(XComponent.class,con);
-                        if(xComponent != null)
-                        {
-                                xComponent.dispose();
-                                System.out.println("Connection disposed!");
-                        }
-                }
+				sdbcx test = new sdbcx(rSmgr);
+					test.createConnection();
+					test.displayTableProperties();
+					// now we dispose the connection to close it
+					XComponent xComponent = (XComponent)UnoRuntime.queryInterface(XComponent.class,con);
+					if(xComponent != null)
+				{
+					xComponent.dispose();
+					System.out.println("Connection disposed!");
+				}
+			}
 		catch(com.sun.star.uno.Exception e)
 		{
 			System.out.println(e);
 			e.printStackTrace();
 		}
 		System.exit(0);
-        }
-        public static XMultiServiceFactory connect( String connectStr )
+		}
+		public static XMultiServiceFactory connect( String connectStr )
 		throws com.sun.star.uno.Exception,
 		com.sun.star.uno.RuntimeException, java.lang.Exception
 	{
@@ -71,14 +69,14 @@ public class sdbcx
 			com.sun.star.comp.helper.Bootstrap.createSimpleServiceManager();
 
 		// create a connector, so that it can contact the office
-		Object  xUrlResolver  = xLocalServiceManager.createInstance( "com.sun.star.bridge.UnoUrlResolver" );
+		Object xUrlResolver = xLocalServiceManager.createInstance( "com.sun.star.bridge.UnoUrlResolver" );
 		XUnoUrlResolver urlResolver = (XUnoUrlResolver)UnoRuntime.queryInterface(
-            XUnoUrlResolver.class, xUrlResolver );
+			XUnoUrlResolver.class, xUrlResolver );
 
 		Object rInitialObject = urlResolver.resolve( "uno:" + connectStr + ";urp;StarOffice.NamingService" );
 
 		XNamingService rName = (XNamingService)UnoRuntime.queryInterface(
-            XNamingService.class, rInitialObject );
+			XNamingService.class, rInitialObject );
 
 		XMultiServiceFactory xMSF = null;
 		if( rName != null ) {
@@ -97,7 +95,7 @@ public class sdbcx
 	{
 		xORB = rSmgr;
 	}
-		
+
 	public void createConnection() throws com.sun.star.uno.Exception
 	{
 		// create the Driver with the implementation name
@@ -107,7 +105,7 @@ public class sdbcx
 		xDriver = (XDriver)UnoRuntime.queryInterface(XDriver.class,aDriver);
 		if(xDriver != null)
 		{
-			// first create the needed url
+			// first create the needed URL
 			String adabasURL = "sdbc:adabas::MYDB0";
 			// second create the necessary properties
 			com.sun.star.beans.PropertyValue [] adabasProps = new com.sun.star.beans.PropertyValue[]
@@ -115,9 +113,8 @@ public class sdbcx
 				new com.sun.star.beans.PropertyValue("user",0,"test1",com.sun.star.beans.PropertyState.DIRECT_VALUE),
 				new com.sun.star.beans.PropertyValue("password",0,"test1",com.sun.star.beans.PropertyState.DIRECT_VALUE)
 			};
-			// 
-			
-			// now create a connection to adabas
+
+			// now create a connection to Adabas
 			con = xDriver.connect(adabasURL,adabasProps);
 			if(con != null)
 			{
@@ -165,7 +162,7 @@ public class sdbcx
 	}
 
 	//###########################################################
-	// 15. example 
+	// 15. example
 	// print all columns of a XColumnsSupplier
 	//###########################################################
 	public static void printColumns(XColumnsSupplier xColumnsSup) throws com.sun.star.uno.Exception,SQLException
@@ -179,7 +176,7 @@ public class sdbcx
 			System.out.println("    " + aColumnNames[i]);
 	}
 	//###########################################################
-	// 16. example 
+	// 16. example
 	// print all keys inclusive the columns of a key
 	//###########################################################
 	public static void printKeys(XColumnsSupplier xColumnsSup) throws com.sun.star.uno.Exception,SQLException
@@ -196,12 +193,12 @@ public class sdbcx
 				XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,key);
 				System.out.println("    " + xProp.getPropertyValue("Name"));
 				XColumnsSupplier xKeyColumnsSup = ( XColumnsSupplier ) UnoRuntime.queryInterface(XColumnsSupplier.class,xProp);
-				printColumns(xKeyColumnsSup);				
+				printColumns(xKeyColumnsSup);
 			}
 		}
 	}
 	//###########################################################
-	// 17. example 
+	// 17. example
 	// print all keys inclusive the columns of a key
 	//###########################################################
 	public static void printIndexes(XColumnsSupplier xColumnsSup) throws com.sun.star.uno.Exception,SQLException
@@ -218,16 +215,16 @@ public class sdbcx
 				System.out.println("    " + aIndexNames[i]);
 				Object index = xIndexs.getByName(aIndexNames[i]);
 				XColumnsSupplier xIndexColumnsSup = (XColumnsSupplier)UnoRuntime.queryInterface(XColumnsSupplier.class,index);
-				printColumns(xIndexColumnsSup);				
+				printColumns(xIndexColumnsSup);
 			}
 		}
 	}
 
 	//###########################################################
-	// 18. example 
+	// 18. example
 	// column properties
 	//###########################################################
-    public static void printColumnProperties(Object column) throws com.sun.star.uno.Exception,SQLException
+	public static void printColumnProperties(Object column) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example printColumnProperties");
 		XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,column);
@@ -249,7 +246,7 @@ public class sdbcx
 	}
 
 	//###########################################################
-	// 19. example 
+	// 19. example
 	// index properties
 	//###########################################################
 	public static void printIndexProperties(Object index) throws com.sun.star.uno.Exception,SQLException
@@ -264,7 +261,7 @@ public class sdbcx
 	}
 
 	//###########################################################
-	// 20. example 
+	// 20. example
 	// key properties
 	//###########################################################
 	public static void printKeyProperties(Object key) throws com.sun.star.uno.Exception,SQLException
@@ -279,7 +276,7 @@ public class sdbcx
 	}
 
 	//###########################################################
-	// 21. example 
+	// 21. example
 	// print all groups and the users with their privileges who belong to this group
 	//###########################################################
 	public static void printGroups(XTablesSupplier xTabSup) throws com.sun.star.uno.Exception,SQLException
@@ -313,7 +310,7 @@ public class sdbcx
 	}
 
 	//###########################################################
-	// 22. example 
+	// 22. example
 	// create the table salesmen
 	//###########################################################
 	public static void createTableSalesMen(XNameAccess xTables) throws com.sun.star.uno.Exception,SQLException
@@ -337,29 +334,29 @@ public class sdbcx
 			xCol.setPropertyValue("Type",new Integer(DataType.INTEGER));
 			xCol.setPropertyValue("IsNullable",new Integer(ColumnValue.NO_NULLS));
 			xAppend.appendByDescriptor(xCol);
-			// 2nd only set the properties which differs
+			// only set the properties which differs
 			xCol.setPropertyValue("Name","FIRSTNAME");
 			xCol.setPropertyValue("Type",new Integer(DataType.VARCHAR));
 			xCol.setPropertyValue("IsNullable",new Integer(ColumnValue.NULLABLE));
 			xCol.setPropertyValue("Precision",new Integer(50));
 			xAppend.appendByDescriptor(xCol);
-			// 3nd only set the properties which differs
+			// only set the properties which differs
 			xCol.setPropertyValue("Name","LASTNAME");
 			xCol.setPropertyValue("Precision",new Integer(100));
 			xAppend.appendByDescriptor(xCol);
-			// 4nd only set the properties which differs
+			// only set the properties which differs
 			xCol.setPropertyValue("Name","STREET");
 			xCol.setPropertyValue("Precision",new Integer(50));
 			xAppend.appendByDescriptor(xCol);
-			// 5nd only set the properties which differs
+			// only set the properties which differs
 			xCol.setPropertyValue("Name","STATE");
 			xAppend.appendByDescriptor(xCol);
-			// 6nd only set the properties which differs
+			// only set the properties which differs
 			xCol.setPropertyValue("Name","ZIP");
 			xCol.setPropertyValue("Type",new Integer(DataType.INTEGER));
 			xCol.setPropertyValue("Precision",new Integer(10)); // default value integer
 			xAppend.appendByDescriptor(xCol);
-			// 7nd only set the properties which differs
+			// only set the properties which differs
 			xCol.setPropertyValue("Name","BIRTHDATE");
 			xCol.setPropertyValue("Type",new Integer(DataType.DATE));
 			xCol.setPropertyValue("Precision",new Integer(10)); // default value integer
@@ -379,7 +376,7 @@ public class sdbcx
 			xKeyCol.setPropertyValue("Name","SNR");
 			// append the key column
 			xKeyColAppend.appendByDescriptor(xKeyCol);
-			// apend the key
+			// append the key
 			xKeyAppend.appendByDescriptor(xKey);
 			// the last step is to append the new table to the tables collection
 			 XAppend xTableAppend = (XAppend)UnoRuntime.queryInterface(XAppend.class,xTabFac);
@@ -388,7 +385,7 @@ public class sdbcx
 	}
 
 	//###########################################################
-	// 23. example 
+	// 23. example
 	// create a user
 	//###########################################################
 	public static void createUser(XNameAccess xUsers) throws com.sun.star.uno.Exception,SQLException
