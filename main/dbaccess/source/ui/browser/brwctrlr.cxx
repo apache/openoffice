@@ -2294,7 +2294,7 @@ void SbaXDataBrowserController::Execute(sal_uInt16 nId, const Sequence< Property
 				break;
 
 			sal_Bool bNeedPostReload = preReloadForm();
-			// reset the filter and the sort property simutaneously so only _one_ new statement has to be
+			// reset the filter and the sort property simultaneously so only _one_ new statement has to be
 			// sent
 			Reference< XPropertySet >  xSet(getRowSet(), UNO_QUERY);
 			if ( xSet.is() )

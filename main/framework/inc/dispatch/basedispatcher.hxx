@@ -81,7 +81,7 @@ namespace framework{
 //_________________________________________________________________________________________________________________
 
 /*-************************************************************************************************************//**
-    @descr      We must support loading of different URLs with different handler or loader into different tasks simultaniously.
+    @descr      We must support loading of different URLs with different handler or loader into different tasks simultaneously.
                 They call us back to return state of operation. We need some informations to distinguish
                 between these different "loading threads".
                 This is the reason to implement this dynamicly list.

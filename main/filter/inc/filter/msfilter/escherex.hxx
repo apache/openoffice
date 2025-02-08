@@ -1367,7 +1367,7 @@ public:
     /** Creates and returns a new shape identifier, updates the internal shape
         counters and registers the identifier in the DGG cluster table.
         @param nDrawingId  Drawing identifier has to be passed to be able to
-            generate shape identifiers for multiple drawings simultaniously. */
+            generate shape identifiers for multiple drawings simultaneously. */
     sal_uInt32          GenerateShapeId( sal_uInt32 nDrawingId, bool bIsInSpgr );
     /** Returns the number of shapes in the current drawing, based on number of
         calls to the GenerateShapeId() function. */

@@ -44,7 +44,7 @@ namespace framework{
     @attention      This implementation could be used one times only. We don't support a resetable continuation yet!
                     Why? Normally interaction should show a filter selection dialog and ask user for his decision.
                     He can select any filter - then instances of these class will be called by handler ... or user
-                    close dialog without any selection. Then another continuation should be slected by handler to
+                    close dialog without any selection. Then another continuation should be selected by handler to
                     abort continuations ... Retrying isn't very useful here ... I think.
 
     @implements     XInteractionFilterSelect
