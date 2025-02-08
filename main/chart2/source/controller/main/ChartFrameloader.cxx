@@ -123,7 +123,7 @@ APPHELPER_XSERVICEINFO_IMPL(ChartFrameLoader,CHART_FRAMELOADER_SERVICE_IMPLEMENT
 			, uno::UNO_QUERY );
 
 		//!!!it is a special characteristic of the example application
-		//that the controller simultaniously provides the XWindow controller functionality
+		//that the controller simultaneously provides the XWindow controller functionality
 		xComponentWindow =
 					  uno::Reference< awt::XWindow >( xController, uno::UNO_QUERY );
 
