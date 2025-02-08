@@ -35,11 +35,43 @@ namespace rtl { class OUString; }
 
 namespace configmgr {
 
+/**
+ * Configuration element.
+ *
+ * This class represent either a "node" or a "property" in the words of the
+ * OpenOffice.org Registry Format (OOR).
+ */
 class Node: public salhelper::SimpleReferenceObject {
 public:
+    /// Identifies the type of configuration element.
     enum Kind {
-        KIND_PROPERTY, KIND_LOCALIZED_PROPERTY, KIND_LOCALIZED_VALUE,
-        KIND_GROUP, KIND_SET };
+        /** Property (&lt;prop&gt; element)
+         *
+         * Identifies instances of PropertyNode.
+         */
+        KIND_PROPERTY,
+        /** Localized property (&lt;prop&gt; element)
+         *
+         * Identifies instances of LocalizedPropertyNode.
+         */
+        KIND_LOCALIZED_PROPERTY,
+        /**
+         * Value of a property (&lt;value&gt; element)
+         *
+         * Identifies instances of LocalizedValueNode.
+         */
+        KIND_LOCALIZED_VALUE,
+        /** Group member node (&lt;node&gt; element)
+         *
+         * Identifies instances of GroupNode.
+         */
+        KIND_GROUP,
+        /** Set member node (&lt;node&gt; element)
+         *
+         * Identifies instances of SetNode.
+         */
+        KIND_SET,
+    };
 
     virtual Kind kind() const = 0;
 
