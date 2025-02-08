@@ -128,4 +128,3 @@ mkdir -p ${DESTDIR}/usr/share/applications
 for i in `cat launcherlist`; do
   ln -sf ${office_root}/share/xdg/$i ${DESTDIR}/usr/share/applications/${PREFIX}-$i
 done
-

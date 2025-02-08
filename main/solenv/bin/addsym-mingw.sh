@@ -51,4 +51,3 @@ s#$#$#' | tr '\n' '|' | sed "s#|\$##" >$2
 awk -v SYMBOLSREGEXP="`cat $2`" '
 match (substr ($1,2) ,SYMBOLSREGEXP) > 0 { print substr ($1,2) ";" }'
 fi
-
