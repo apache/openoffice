@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_connectivity.hxx"
@@ -458,7 +456,7 @@ Any OPoolCollection::getNodeValue(const ::rtl::OUString& _rPath,const Reference<
 		if (xDirectAccess.is() && xDirectAccess->hasByName(_rPath) )
 		{
 			aReturn = xDirectAccess->getByName(_rPath);
-        }
+		}
 		else if (xHierarchyAccess.is())
 		{
 			aReturn = xHierarchyAccess->getByHierarchicalName(_rPath);
@@ -466,7 +464,7 @@ Any OPoolCollection::getNodeValue(const ::rtl::OUString& _rPath,const Reference<
 	}
 	catch(NoSuchElementException& e)
 	{
-		OSL_UNUSED( e );    // make compiler happy
+		OSL_UNUSED( e ); // make compiler happy
 		OSL_ENSURE(sal_False,
 			::rtl::OString("::getNodeValue: caught a NoSuchElementException while trying to open ")
 		+=	::rtl::OString(e.Message.getStr(), e.Message.getLength(), RTL_TEXTENCODING_ASCII_US)
@@ -541,7 +539,7 @@ void SAL_CALL OPoolCollection::propertyChange( const ::com::sun::star::beans::Pr
 		{
 			::rtl::OUString sThisDriverName;
 			getNodeValue(getDriverNameNodeName(),evt.Source) >>= sThisDriverName;
-			// 1nd relase the driver
+			// First release the driver
 			// look if we already have a proxy for this driver
 			MapDriver2DriverRefIterator aLookup = m_aDriverProxies.begin();
 			while(	aLookup != m_aDriverProxies.end())
@@ -574,4 +572,4 @@ m_xDesktop.clear();
 }
 // -----------------------------------------------------------------------------
 
-
+/* vim: set noet sw=4 ts=4: */
