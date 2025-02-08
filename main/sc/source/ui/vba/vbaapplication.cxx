@@ -561,7 +561,7 @@ ScVbaApplication::GoTo( const uno::Any& Reference, const uno::Any& Scroll ) thro
         {
             //maybe this should be a procedure name
             //TODO for procedure name
-            //browse::XBrowseNodeFactory is a singlton. OUString::createFromAscii( "/singletons/com.sun.star.script.browse.theBrowseNodeFactory")
+            //browse::XBrowseNodeFactory is a singleton. OUString::createFromAscii( "/singletons/com.sun.star.script.browse.theBrowseNodeFactory")
             //and the createView( browse::BrowseNodeFactoryViewTypes::MACROSELECTOR ) to get a root browse::XBrowseNode.
             //for query XInvocation interface.
             //but how to directly get the XInvocation?

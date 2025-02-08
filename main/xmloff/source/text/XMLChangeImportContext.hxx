@@ -58,7 +58,7 @@ public:
 	 * import a change mark 
 	 * (<text:change>, <text:change-start>, <text:change-end>)
 	 * Note: a <text:change> mark denotes start and end of a change 
-	 * simultaniously, so both bIsStart and bIsEnd parameters would 
+	 * simultaneously, so both bIsStart and bIsEnd parameters would
 	 * be set true.
 	 */
 	XMLChangeImportContext(
