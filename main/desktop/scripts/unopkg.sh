@@ -77,4 +77,3 @@ unset XENVIRONMENT
 # execute binary
 exec "$sd_prog/unopkg.bin" "$@"  "$JVMFWKPARAMS" \
     "-env:INIFILENAME=vnd.sun.star.pathname:$sd_prog/redirectrc"
-

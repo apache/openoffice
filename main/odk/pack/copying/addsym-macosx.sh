@@ -28,4 +28,3 @@
 # symbols will erroneously be added to the generated export symbols list file.
 awk -v SYMBOLSREGEXP="^__ZTI.*$|^__ZTS.*$" '
 match ($6,SYMBOLSREGEXP) > 0 &&  $6 !~ /_GLOBAL_/ { if (($2 != 1) && ( $2 != "1f" ) ) print $6 }'
-

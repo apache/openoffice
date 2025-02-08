@@ -79,4 +79,3 @@ output=`"${STCLIENT}" -a -p "${PRODUCT_NAME}" -e "${PRODUCT_VERSION}" -t ${TARGE
 [ "${INSTANCE_URN}" = "" -a ${EXITCODE} -eq 226 ] && exit 0
 
 exit ${EXITCODE}
-

@@ -29,6 +29,3 @@ ctx.ServiceManager.insert( comp)
 
 bridgetest = ctx.ServiceManager.createInstanceWithContext( "com.sun.star.test.bridge.BridgeTest", ctx )
 #bridgetest.run( "com.sun.star.test.bridge.PythonTestObject" )
-
-
-

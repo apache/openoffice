@@ -124,4 +124,3 @@ if test -z "${SOLARENV}"; then
     echo "$me: error: No environment set!"
     exit 1
 fi
-
