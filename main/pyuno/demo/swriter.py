@@ -123,4 +123,3 @@ cursor.setPropertyValue( "CharColor", 65536 )
 cursor.setPropertyValue( "CharShadowed", uno.Bool(0) )
 
 text.insertString( cursor, " That's all for now!" , 0 )
-

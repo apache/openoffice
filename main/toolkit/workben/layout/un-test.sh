@@ -31,4 +31,3 @@ sed -e 's!^#!@!' < $1\
     | sed -e 's! /\*\$\*/!!' \
     -e 's!^@!#!' \
     -e 's!#define 1 1!#define NON_LAYOUT_COMPILE_FIXES 1!'
-

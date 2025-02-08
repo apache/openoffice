@@ -46,4 +46,3 @@ s#$#$#' | tr '\n' '|' | sed "s#|\$##" >$2
 # symbols will erroneously be added to the generated export symbols list file.
 awk -v SYMBOLSREGEXP="`cat $2`" '
 match ($6,SYMBOLSREGEXP) > 0 &&  $6 !~ /_GLOBAL_/ { if (($2 != 1) && ( $2 != "1f" ) ) print $6 }'
-

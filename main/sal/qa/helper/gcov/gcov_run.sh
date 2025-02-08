@@ -81,4 +81,3 @@ statistics
 # the gcov_resultcompare.pl use two of these files to give out a compare.
 
 # usage: gcov_resultcompare.pl -o realallchecked.txt -c <other>/realallchecked.txt
-
