@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef SC_DOCUMENT_HXX
 #define SC_DOCUMENT_HXX
-
 
 #include <vcl/prntypes.hxx>
 #include <vcl/timer.hxx>
@@ -140,7 +137,7 @@ class ScLookupCache;
 struct ScLookupCacheMapImpl;
 class SfxUndoManager;
 class ScFormulaParserPool;
-struct ScClipParam;        
+struct ScClipParam;
 struct ScClipRangeNameData;
 class ScRowBreakIterator;
 
@@ -281,7 +278,7 @@ private:
 	ScFormulaCell*		pFormulaTree;					// Berechnungsbaum Start
 	ScFormulaCell*		pEOFormulaTree;					// Berechnungsbaum Ende, letzte Zelle
 	ScFormulaCell*		pFormulaTrack;					// BroadcastTrack Start
-	ScFormulaCell*		pEOFormulaTrack;				// BrodcastTrack Ende, letzte Zelle
+	ScFormulaCell*		pEOFormulaTrack;				// BroadcastTrack Ende, letzte Zelle
 	ScBroadcastAreaSlotMachine*	pBASM;					// BroadcastAreas
 	ScChartListenerCollection* pChartListenerCollection;
 	ScStrCollection*		pOtherObjects;					// non-chart OLE objects
@@ -348,17 +345,17 @@ private:
 	LanguageType		eCtlLanguage;					// default language for complex text
 	CharSet				eSrcSet; 						// Einlesen: Quell-Zeichensatz
 
-    /** The compiler grammar used in document storage. GRAM_PODF for ODF 1.1
-        documents, GRAM_ODFF for ODF 1.2 documents. */
-    formula::FormulaGrammar::Grammar  eStorageGrammar;
+	/** The compiler grammar used in document storage. GRAM_PODF for ODF 1.1
+		documents, GRAM_ODFF for ODF 1.2 documents. */
+	formula::FormulaGrammar::Grammar  eStorageGrammar;
 
-    /** The compiler grammar used in ODF import after brackets had been
-        stripped (which they shouldn't, but until that's fixed) by the XML
-        importer. */
-    formula::FormulaGrammar::Grammar  eXmlImportGrammar;
+	/** The compiler grammar used in ODF import after brackets had been
+		stripped (which they shouldn't, but until that's fixed) by the XML
+		importer. */
+	formula::FormulaGrammar::Grammar  eXmlImportGrammar;
 
 	sal_uLong				nFormulaCodeInTree;				// FormelRPN im Formelbaum
-    sal_uLong               nXMLImportedFormulaCount;        // progress count during XML import
+	sal_uLong				nXMLImportedFormulaCount;        // progress count during XML import
 	sal_uInt16				nInterpretLevel;				// >0 wenn im Interpreter
 	sal_uInt16				nMacroInterpretLevel; 			// >0 wenn Macro im Interpreter
 	sal_uInt16				nInterpreterTableOpLevel;		// >0 if in Interpreter TableOp
@@ -390,10 +387,10 @@ private:
 	// kein Broadcast, keine Listener aufbauen waehrend aus einem anderen
 	// Doc (per Filter o.ae.) inserted wird, erst bei CompileAll / CalcAfterLoad
 	sal_Bool				bInsertingFromOtherDoc;
-    bool                bLoadingMedium;
-    bool                bImportingXML;      // special handling of formula text
-    bool                mbImportingMSXML;
-    sal_Bool                bXMLFromWrapper;    // distinguish ScXMLImportWrapper from external component
+	bool                bLoadingMedium;
+	bool                bImportingXML; // special handling of formula text
+	bool                mbImportingMSXML;
+	sal_Bool                bXMLFromWrapper; // distinguish ScXMLImportWrapper from external component
 	sal_Bool				bCalcingAfterLoad;				// in CalcAfterLoad TRUE
 	// wenn temporaer keine Listener auf/abgebaut werden sollen
 	sal_Bool				bNoListening;
@@ -419,26 +416,26 @@ private:
 	sal_uInt8				nAsianCompression;
 	sal_uInt8				nAsianKerning;
 
-    sal_Bool                bPastingDrawFromOtherDoc;
+	sal_Bool                bPastingDrawFromOtherDoc;
 
-    sal_uInt8                nInDdeLinkUpdate;   // originating DDE links (stacked bool)
+	sal_uInt8                nInDdeLinkUpdate; // originating DDE links (stacked bool)
 
 	sal_Bool				bInUnoBroadcast;
 	sal_Bool				bInUnoListenerCall;
-    formula::FormulaGrammar::Grammar  eGrammar;
+	formula::FormulaGrammar::Grammar  eGrammar;
 
-    mutable sal_Bool        bStyleSheetUsageInvalid;
+	mutable sal_Bool        bStyleSheetUsageInvalid;
 
-    bool                mbUndoEnabled;
-    bool                mbAdjustHeightEnabled;
-    bool                mbExecuteLinkEnabled;
-    bool                mbChangeReadOnlyEnabled;    // allow changes in read-only document (for API import filters)
-    bool                mbStreamValidLocked;
+	bool                mbUndoEnabled;
+	bool                mbAdjustHeightEnabled;
+	bool                mbExecuteLinkEnabled;
+	bool                mbChangeReadOnlyEnabled; // allow changes in read-only document (for API import filters)
+	bool                mbStreamValidLocked;
 
-    // #118840# Have a flag to know that this ScDocument is used temporary
-    bool                mbIsTemporary : 1;
+	// #118840# Have a flag to know that this ScDocument is used temporary
+	bool                mbIsTemporary : 1;
 
-    sal_Int16           mnNamedRangesLockCount;
+	sal_Int16           mnNamedRangesLockCount;
 
 	String msDocAccTitle;
 public:
@@ -447,8 +444,8 @@ public:
 	virtual void setDocAccTitle( const String& rTitle ) { msDocAccTitle = rTitle; }
 	virtual const String getDocAccTitle() const { return msDocAccTitle; }
 
-private:	
-	sal_Bool bReadOnly;  // MT: Really needed???
+private:
+	sal_Bool bReadOnly; // MT: Really needed???
 
 public:
 	virtual void setDocReadOnly( sal_Bool b){ bReadOnly = b; }
@@ -456,7 +453,7 @@ public:
 	sal_Bool IsCellInChangeTrack(const ScAddress &cell,Color *pColCellBoder);
 	void GetCellChangeTrackNote( const ScAddress &cell,String &strTrackText,sal_Bool &pbLeftEdge);
 	SC_DLLPUBLIC sal_uLong			GetCellCount() const;		// alle Zellen
-    SCSIZE          GetCellCount(SCTAB nTab, SCCOL nCol) const;
+	SCSIZE          GetCellCount(SCTAB nTab, SCCOL nCol) const;
 	sal_uLong			GetWeightedCount() const;	// Formeln und Edit staerker gewichtet
 	sal_uLong			GetCodeCount() const;		// RPN-Code in Formeln
 	DECL_LINK( GetUserDefinedColor, sal_uInt16 * );
@@ -520,37 +517,37 @@ public:
 	ScDBData*		GetDBAtCursor(SCCOL nCol, SCROW nRow, SCTAB nTab,
 										sal_Bool bStartOnly = sal_False) const;
 	ScDBData*		GetDBAtArea(SCTAB nTab, SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2) const;
-    ScDBData*       GetFilterDBAtTable(SCTAB nTab) const;
+	ScDBData*       GetFilterDBAtTable(SCTAB nTab) const;
 	SC_DLLPUBLIC ScRangeData*	GetRangeAtBlock( const ScRange& rBlock, String* pName=NULL ) const;
 
 	SC_DLLPUBLIC ScDPCollection*		GetDPCollection();
 	ScDPObject*			GetDPAtCursor(SCCOL nCol, SCROW nRow, SCTAB nTab) const;
-    ScDPObject*         GetDPAtBlock( const ScRange& rBlock ) const;
-    // Wang Xu Ming -- 2009-8-17
-    // DataPilot Migration - Cache&&Performance
-    SC_DLLPUBLIC ScDPTableDataCache*    GetDPObjectCache( long nID );
-    SC_DLLPUBLIC ScDPTableDataCache*    GetUsedDPObjectCache ( ScRange rRange ); 
-    SC_DLLPUBLIC long                                 AddDPObjectCache( ScDPTableDataCache* pData );
-    SC_DLLPUBLIC void                                 RemoveDPObjectCache( long nID );
-    SC_DLLPUBLIC void                                 RemoveUnusedDPObjectCaches();
-    SC_DLLPUBLIC void                                 GetUsedDPObjectCache( std::list<ScDPTableDataCache*>& usedlist );
-    SC_DLLPUBLIC long                                 GetNewDPObjectCacheId ();
-    // End Comments
+	ScDPObject*         GetDPAtBlock( const ScRange& rBlock ) const;
+	// Wang Xu Ming -- 2009-8-17
+	// DataPilot Migration - Cache&&Performance
+	SC_DLLPUBLIC ScDPTableDataCache*    GetDPObjectCache( long nID );
+	SC_DLLPUBLIC ScDPTableDataCache*    GetUsedDPObjectCache ( ScRange rRange );
+	SC_DLLPUBLIC long                                 AddDPObjectCache( ScDPTableDataCache* pData );
+	SC_DLLPUBLIC void                                 RemoveDPObjectCache( long nID );
+	SC_DLLPUBLIC void                                 RemoveUnusedDPObjectCaches();
+	SC_DLLPUBLIC void                                 GetUsedDPObjectCache( std::list<ScDPTableDataCache*>& usedlist );
+	SC_DLLPUBLIC long                                 GetNewDPObjectCacheId ();
+	// End Comments
 
 	SC_DLLPUBLIC ScChartCollection*	GetChartCollection() const;
 
-    void				StopTemporaryChartLock();
+	void				StopTemporaryChartLock();
 
 	void			EnsureGraphicNames();
 
 	SdrObject*		GetObjectAtPoint( SCTAB nTab, const Point& rPos );
 	sal_Bool			HasChartAtPoint( SCTAB nTab, const Point& rPos, String* pName = NULL );
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartDocument > GetChartByName( const String& rChartName );
-    SC_DLLPUBLIC void            GetChartRanges( const String& rChartName, ::std::vector< ScRangeList >& rRanges, ScDocument* pSheetNameDoc );
-    void            SetChartRanges( const String& rChartName, const ::std::vector< ScRangeList >& rRanges );
+	::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartDocument > GetChartByName( const String& rChartName );
+	SC_DLLPUBLIC void            GetChartRanges( const String& rChartName, ::std::vector< ScRangeList >& rRanges, ScDocument* pSheetNameDoc );
+	void            SetChartRanges( const String& rChartName, const ::std::vector< ScRangeList >& rRanges );
 
-    void			UpdateChartArea( const String& rChartName, const ScRange& rNewArea,
+	void			UpdateChartArea( const String& rChartName, const ScRange& rNewArea,
 										sal_Bool bColHeaders, sal_Bool bRowHeaders, sal_Bool bAdd );
 	void			UpdateChartArea( const String& rChartName,
 									const ScRangeListRef& rNewList,
@@ -574,8 +571,8 @@ public:
 	SC_DLLPUBLIC inline SCTAB	GetTableCount() const { return nMaxTableNumber; }
 	SvNumberFormatterIndexTable* GetFormatExchangeList() const { return pFormatExchangeList; }
 
-    SC_DLLPUBLIC ScDocProtection* GetDocProtection() const;
-    SC_DLLPUBLIC void            SetDocProtection(const ScDocProtection* pProtect);
+	SC_DLLPUBLIC ScDocProtection* GetDocProtection() const;
+	SC_DLLPUBLIC void            SetDocProtection(const ScDocProtection* pProtect);
 	SC_DLLPUBLIC sal_Bool			IsDocProtected() const;
 	sal_Bool			IsDocEditable() const;
 	SC_DLLPUBLIC sal_Bool			IsTabProtected( SCTAB nTab ) const;
@@ -734,7 +731,7 @@ public:
 	SfxBroadcaster*	GetDrawBroadcaster();		// zwecks Header-Vermeidung
 	void			BeginDrawUndo();
 	sal_Bool		IsDrawRecording() const;
-	void			EndDrawUndo();//paired with BeginDrawUndo, clear undo object if GetUndoObj is not called. 
+	void			EndDrawUndo();//paired with BeginDrawUndo, clear undo object if GetUndoObj is not called.
 								//Not necessary if GetUndoObj is called, but call EndDrawUndo paired with BeginDrawUndo is recommended
 
     void            BeginUnoRefUndo();
@@ -793,7 +790,7 @@ public:
 							sal_uLong nFormatIndex, sal_Bool bForceTab = sal_False);
 					//	return sal_True = Zahlformat gesetzt
     SC_DLLPUBLIC sal_Bool           SetString(
-        SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rString, 
+        SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rString,
         SvNumberFormatter* pFormatter = NULL, bool bDetectNumberFormat = true );
     SC_DLLPUBLIC void           SetValue( SCCOL nCol, SCROW nRow, SCTAB nTab, const double& rVal );
 	void 			SetError( SCCOL nCol, SCROW nRow, SCTAB nTab, const sal_uInt16 nError);
@@ -936,13 +933,13 @@ public:
 	sal_Bool			IsForcedFormulaPending() const { return bForcedFormulaPending; }
 					// if CalcFormulaTree() is currently running
 	sal_Bool			IsCalculatingFormulaTree() { return bCalculatingFormulaTree; }
-	
+
 	sal_uInt16			GetErrCode( const ScAddress& ) const;
 
                     /** Shrink a range to only include data area.
 
-                        This is not the actually used area within the 
-                        selection, but the bounds of the sheet's data area 
+                        This is not the actually used area within the
+                        selection, but the bounds of the sheet's data area
                         instead.
 
                         @returns True if the area passed intersected the data
@@ -954,7 +951,7 @@ public:
     bool            ShrinkToDataArea( SCTAB nTab, SCCOL& rStartCol, SCROW& rStartRow, SCCOL& rEndCol, SCROW& rEndRow ) const;
 
                     /** Shrink a range to only include used data area.
-                        
+
                         @param o_bShrunk
                                Out parameter, True if area was shrunk, false if not.
 
@@ -983,10 +980,10 @@ public:
 
     SC_DLLPUBLIC sal_Bool			GetDataStart( SCTAB nTab, SCCOL& rStartCol, SCROW& rStartRow ) const;
 
-    /** 
-     * Find the maximum column position that contains printable data for the 
-     * specified row range.  The final column position must be equal or less 
-     * than the initial value of rEndCol. 
+    /**
+     * Find the maximum column position that contains printable data for the
+     * specified row range.  The final column position must be equal or less
+     * than the initial value of rEndCol.
      */
     void			ExtendPrintArea( OutputDevice* pDev, SCTAB nTab,
                                     SCCOL nStartCol, SCROW nStartRow,
@@ -1072,7 +1069,7 @@ public:
 								SCTAB nTab, sal_uInt16 nDelFlag);
 	void			DeleteAreaTab(const ScRange& rRange, sal_uInt16 nDelFlag);
 
-    void            CopyToClip(const ScClipParam& rClipParam, ScDocument* pClipDoc, 
+    void            CopyToClip(const ScClipParam& rClipParam, ScDocument* pClipDoc,
                                const ScMarkData* pMarks = NULL, bool bAllTabs = false, bool bKeepScenarioFlags = false,
                                bool bIncludeObjects = false, bool bCloneNoteCaptions = true);
 
@@ -1103,8 +1100,8 @@ public:
 									sal_Bool bSkipAttrForEmpty = sal_False,
                                     const ScRangeList * pDestRanges = NULL );
 
-    void            CopyMultiRangeFromClip(const ScAddress& rDestPos, const ScMarkData& rMark, 
-                                           sal_uInt16 nInsFlag, ScDocument* pClipDoc, 
+    void            CopyMultiRangeFromClip(const ScAddress& rDestPos, const ScMarkData& rMark,
+                                           sal_uInt16 nInsFlag, ScDocument* pClipDoc,
                                            bool bResetCut = true, bool bAsLink = false,
                                            bool bIncludeFiltered = true,
                                            bool bSkipAttrForEmpty = false);
@@ -1408,10 +1405,10 @@ public:
     SCROW                       LastNonFilteredRow(SCROW nStartRow, SCROW nEndRow, SCTAB nTab);
     SCROW                       CountNonFilteredRows(SCROW nStartRow, SCROW nEndRow, SCTAB nTab);
 
-    /** 
-     * Write all column row flags to table's flag data, because not all column 
-     * row attributes are stored in the flag data members.  This is necessary 
-     * for ods export. 
+    /**
+     * Write all column row flags to table's flag data, because not all column
+     * row attributes are stored in the flag data members. This is necessary
+     * for ODS export.
      */
     void                        SyncColRowFlags();
 
@@ -1861,9 +1858,9 @@ public:
 
 private: // CLOOK-Impl-Methoden
 
-    /** 
-     * Use this class as a locale variable to merge number formatter from 
-     * another document, and set NULL pointer to pFormatExchangeList when 
+    /**
+     * Use this class as a locale variable to merge number formatter from
+     * another document, and set NULL pointer to pFormatExchangeList when
      * done.
      */
     class NumFmtMergeHandler
@@ -1925,3 +1922,5 @@ inline void ScDocument::SetSortParam( ScSortParam& rParam, SCTAB nTab )
 }
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef COMPHELPER_ACCESSIBLE_EVENT_NOTIFIER
 #define COMPHELPER_ACCESSIBLE_EVENT_NOTIFIER
@@ -59,8 +57,8 @@ namespace comphelper
 		~AccessibleEventNotifier( );	// never implemented
 
 	private:
-		COMPHELPER_DLLPRIVATE AccessibleEventNotifier( const AccessibleEventNotifier& );				// never implemented!
-		COMPHELPER_DLLPRIVATE AccessibleEventNotifier& operator=( const AccessibleEventNotifier& );	// never implemented!
+		COMPHELPER_DLLPRIVATE AccessibleEventNotifier( const AccessibleEventNotifier& ); // never implemented!
+		COMPHELPER_DLLPRIVATE AccessibleEventNotifier& operator=( const AccessibleEventNotifier& ); // never implemented!
 
 	public:
 		/** registers a client of this class, means a broadcaster of AccessibleEvents
@@ -79,7 +77,7 @@ namespace comphelper
 			When the client is disposed, you should prefer <member>revokeClientNotifyDisposing</member></p>
 
 			<p>Any possibly pending events for this client are removed from the queue.</p>
-	
+
 			@seealso revokeClientNotifyDisposing
 		*/
 		static	void		revokeClient( const TClientId _nClient );
@@ -129,7 +127,7 @@ namespace comphelper
 		static ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > >
 						getEventListeners( const TClientId _nClient ) SAL_THROW( ( ) );
 
-		/** adds an event, which is to be braodcasted, to the queue
+		/** adds an event, which is to be broadcasted, to the queue
 
 			@param _nClient
 				the id of the client which needs to broadcast the event
@@ -165,3 +163,5 @@ namespace comphelper
 //.........................................................................
 
 #endif // COMPHELPER_ACCESSIBLE_EVENT_NOTIFIER
+
+/* vim: set noet sw=4 ts=4: */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
-
-
 
 // INCLUDE ---------------------------------------------------------------
 
@@ -79,19 +75,17 @@
 #include <stdio.h>
 #endif // DEBUG_CHANGETRACK
 
-
 //------------------------------------------------------------------
 
 //
 //			Redraw - Benachrichtigungen
 //
 
-
 void ScDocShell::PostEditView( ScEditEngineDefaulter* pEditEngine, const ScAddress& rCursorPos )
 {
 //	Broadcast( ScEditViewHint( pEditEngine, rCursorPos ) );
 
-		//	Test: nur aktive ViewShell
+		// Test: nur aktive ViewShell
 
 	ScTabViewShell* pViewSh = ScTabViewShell::GetActiveViewShell();
 	if (pViewSh && pViewSh->GetViewData()->GetDocShell() == this)
@@ -106,7 +100,7 @@ void ScDocShell::PostDataChanged()
 	Broadcast( SfxSimpleHint( FID_DATACHANGED ) );
 	aDocument.ResetChanged( ScRange(0,0,0,MAXCOL,MAXROW,MAXTAB) );
 
-	SFX_APP()->Broadcast(SfxSimpleHint( FID_ANYDATACHANGED ));		// Navigator
+	SFX_APP()->Broadcast(SfxSimpleHint( FID_ANYDATACHANGED )); // Navigator
 	//!	Navigator direkt benachrichtigen!
 }
 
@@ -121,7 +115,7 @@ void ScDocShell::PostPaint( SCCOL nStartCol, SCROW nStartRow, SCTAB nStartTab,
 
 	if ( pPaintLockData )
 	{
-        // #i54081# PAINT_EXTRAS still has to be brodcast because it changes the
+        // #i54081# PAINT_EXTRAS still has to be broadcast because it changes the
         // current sheet if it's invalid. All other flags added to pPaintLockData.
         sal_uInt16 nLockPart = nPart & ~PAINT_EXTRAS;
         if ( nLockPart )
@@ -422,7 +416,7 @@ double ScDocShell::GetOutputFactor() const
 
 void ScDocShell::InitOptions(bool bForLoading)      // called from InitNew and Load
 {
-	//	Einstellungen aus dem SpellCheckCfg kommen in Doc- und ViewOptions
+	// Einstellungen aus dem SpellCheckCfg kommen in Doc- und ViewOptions
 
 	sal_uInt16 nDefLang, nCjkLang, nCtlLang;
     sal_Bool bAutoSpell;
@@ -675,9 +669,9 @@ void ScDocShell::ExecuteChangeCommentDialog( ScChangeAction* pAction, Window* pP
 	String aAuthor = pAction->GetUser();
 
 	DateTime aDT = pAction->GetDateTime();
-    String aDate = ScGlobal::pLocaleData->getDate( aDT );
+	String aDate = ScGlobal::pLocaleData->getDate( aDT );
 	aDate += ' ';
-    aDate += ScGlobal::pLocaleData->getTime( aDT, sal_False, sal_False );
+	aDate += ScGlobal::pLocaleData->getTime( aDT, sal_False, sal_False );
 
 	SfxItemSet aSet( GetPool(),
 					  SID_ATTR_POSTIT_AUTHOR, SID_ATTR_POSTIT_AUTHOR,
@@ -768,33 +762,33 @@ void ScDocShell::CompareDocument( ScDocument& rOtherDoc )
 inline sal_Bool lcl_Equal( const ScChangeAction* pA, const ScChangeAction* pB, sal_Bool bIgnore100Sec )
 {
 	return pA && pB &&
-        pA->GetActionNumber() == pB->GetActionNumber() &&
-        pA->GetType()		  == pB->GetType() &&
-        pA->GetUser()		  == pB->GetUser() &&
-        (bIgnore100Sec ?
-         pA->GetDateTimeUTC().IsEqualIgnore100Sec( pB->GetDateTimeUTC() ) :
-         pA->GetDateTimeUTC() == pB->GetDateTimeUTC());
+		pA->GetActionNumber() == pB->GetActionNumber() &&
+		pA->GetType()		  == pB->GetType() &&
+		pA->GetUser()		  == pB->GetUser() &&
+		(bIgnore100Sec ?
+		pA->GetDateTimeUTC().IsEqualIgnore100Sec( pB->GetDateTimeUTC() ) :
+		pA->GetDateTimeUTC() == pB->GetDateTimeUTC());
 	//	State nicht vergleichen, falls eine alte Aenderung akzeptiert wurde
 }
 
 bool lcl_FindAction( ScDocument* pDoc, const ScChangeAction* pAction, ScDocument* pSearchDoc, const ScChangeAction* pFirstSearchAction, const ScChangeAction* pLastSearchAction, sal_Bool bIgnore100Sec )
 {
-    if ( !pDoc || !pAction || !pSearchDoc || !pFirstSearchAction || !pLastSearchAction )
-    {
-        return false;
-    }
+	if ( !pDoc || !pAction || !pSearchDoc || !pFirstSearchAction || !pLastSearchAction )
+	{
+		return false;
+	}
 
-    sal_uLong nLastSearchAction = pLastSearchAction->GetActionNumber();
-    const ScChangeAction* pA = pFirstSearchAction;
-    while ( pA && pA->GetActionNumber() <= nLastSearchAction )
-    {
-	    if ( pAction->GetType() == pA->GetType() &&
+	sal_uLong nLastSearchAction = pLastSearchAction->GetActionNumber();
+	const ScChangeAction* pA = pFirstSearchAction;
+	while ( pA && pA->GetActionNumber() <= nLastSearchAction )
+	{
+		if ( pAction->GetType() == pA->GetType() &&
              pAction->GetUser() == pA->GetUser() &&
              (bIgnore100Sec ?
                 pAction->GetDateTimeUTC().IsEqualIgnore100Sec( pA->GetDateTimeUTC() ) :
                 pAction->GetDateTimeUTC() == pA->GetDateTimeUTC() ) &&
              pAction->GetBigRange() == pA->GetBigRange() )
-        {
+		{
             String aActionDesc;
             pAction->GetDescription( aActionDesc, pDoc, sal_True );
             String aADesc;
@@ -804,16 +798,16 @@ bool lcl_FindAction( ScDocument* pDoc, const ScChangeAction* pAction, ScDocument
                 DBG_ERROR( "lcl_FindAction(): found equal action!" );
                 return true;
             }
-        }
-        pA = pA->GetNext();
-    }
+		}
+		pA = pA->GetNext();
+	}
 
-    return false;
+	return false;
 }
 
 void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheckDuplicates, sal_uLong nOffset, ScChangeActionMergeMap* pMergeMap, bool bInverseMap )
 {
-    ScTabViewShell* pViewSh = GetBestViewShell( sal_False );    //! Funktionen an die DocShell
+	ScTabViewShell* pViewSh = GetBestViewShell( sal_False ); //! Funktionen an die DocShell
 	if (!pViewSh)
 		return;
 
@@ -827,25 +821,25 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 		aDocument.StartChangeTracking();
 		pThisTrack = aDocument.GetChangeTrack();
 		DBG_ASSERT(pThisTrack,"ChangeTracking nicht angeschaltet?");
-        if ( !bShared )
-        {
+		if ( !bShared )
+		{
             // #51138# visuelles RedLining einschalten
             ScChangeViewSettings aChangeViewSet;
             aChangeViewSet.SetShowChanges(sal_True);
             aDocument.SetChangeViewSettings(aChangeViewSet);
-        }
+		}
 	}
 
-    // #97286# include 100th seconds in compare?
-    sal_Bool bIgnore100Sec = !pSourceTrack->IsTime100thSeconds() ||
+	// #97286# include 100th seconds in compare?
+	sal_Bool bIgnore100Sec = !pSourceTrack->IsTime100thSeconds() ||
             !pThisTrack->IsTime100thSeconds();
 
 	//	gemeinsame Ausgangsposition suchen
 	sal_uLong nFirstNewNumber = 0;
 	const ScChangeAction* pSourceAction = pSourceTrack->GetFirst();
 	const ScChangeAction* pThisAction = pThisTrack->GetFirst();
-    // skip identical actions
-    while ( lcl_Equal( pSourceAction, pThisAction, bIgnore100Sec ) )
+	// skip identical actions
+	while ( lcl_Equal( pSourceAction, pThisAction, bIgnore100Sec ) )
 	{
 		nFirstNewNumber = pSourceAction->GetActionNumber() + 1;
 		pSourceAction = pSourceAction->GetNext();
@@ -858,10 +852,10 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 
 
 	const ScChangeAction* pFirstMergeAction = pSourceAction;
-    const ScChangeAction* pFirstSearchAction = pThisAction;
+	const ScChangeAction* pFirstSearchAction = pThisAction;
 
-    // #i94841# [Collaboration] When deleting rows is rejected, the content is sometimes wrong
-    const ScChangeAction* pLastSearchAction = pThisTrack->GetLast();
+	// #i94841# [Collaboration] When deleting rows is rejected, the content is sometimes wrong
+	const ScChangeAction* pLastSearchAction = pThisTrack->GetLast();
 
 	//	MergeChangeData aus den folgenden Aktionen erzeugen
 	sal_uLong nNewActionCount = 0;
@@ -882,7 +876,7 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 
 	sal_uLong nLastMergeAction = pSourceTrack->GetLast()->GetActionNumber();
 	// UpdateReference-Undo, gueltige Referenzen fuer den letzten gemeinsamen Zustand
-    pSourceTrack->MergePrepare( (ScChangeAction*) pFirstMergeAction, bShared );
+	pSourceTrack->MergePrepare( (ScChangeAction*) pFirstMergeAction, bShared );
 
 	//	MergeChangeData an alle noch folgenden Aktionen in diesem Dokument anpassen
 	//	-> Referenzen gueltig fuer dieses Dokument
@@ -923,12 +917,12 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
                 {
                     // added to avoid warnings
                 }
-		    }
-        }
+			}
+		}
 		pThisAction = pThisAction->GetNext();
 	}
 
-    LockPaint();    // #i73877# no repainting after each action
+	LockPaint(); // #i73877# no repainting after each action
 
 	//	MergeChangeData in das aktuelle Dokument uebernehmen
 	sal_Bool bHasRejected = sal_False;
@@ -939,9 +933,9 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 	pSourceAction = pFirstMergeAction;
 	while ( pSourceAction && pSourceAction->GetActionNumber() <= nLastMergeAction )
 	{
-        bool bMergeAction = false;
-        if ( bShared )
-        {
+		bool bMergeAction = false;
+		if ( bShared )
+		{
             if ( !bCheckDuplicates || !lcl_FindAction( &rOtherDoc, pSourceAction, &aDocument, pFirstSearchAction, pLastSearchAction, bIgnore100Sec ) )
             {
                 bMergeAction = true;
@@ -953,12 +947,12 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
             {
                 bMergeAction = true;
             }
-        }
+		}
 
-        if ( bMergeAction )
+		if ( bMergeAction )
 		{
 			ScChangeActionType eSourceType = pSourceAction->GetType();
-            if ( !bShared && pSourceAction->IsDeletedIn() )
+			if ( !bShared && pSourceAction->IsDeletedIn() )
 			{
 				//! muss hier noch festgestellt werden, ob wirklich in
 				//! _diesem_ Dokument geloescht?
@@ -966,7 +960,7 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 				//	liegt in einem Bereich, der in diesem Dokument geloescht wurde
 				//	-> wird weggelassen
 				//!	??? Loesch-Aktion rueckgaengig machen ???
-				//!	??? Aktion irgendwo anders speichern  ???
+				//!	??? Aktion irgendwo anders speichern ???
 #ifdef DBG_UTIL
 				String aValue;
 				if ( eSourceType == SC_CAT_CONTENT )
@@ -982,11 +976,11 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 
 				pThisTrack->SetUser( pSourceAction->GetUser() );
 				pThisTrack->SetFixDateTimeUTC( pSourceAction->GetDateTimeUTC() );
-                sal_uLong nOldActionMax = pThisTrack->GetActionMax();
+				sal_uLong nOldActionMax = pThisTrack->GetActionMax();
 
-                bool bExecute = true;
+				bool bExecute = true;
 				sal_uLong nReject = pSourceAction->GetRejectAction();
-                if ( nReject )
+				if ( nReject )
 				{
                     if ( bShared )
                     {
@@ -1019,7 +1013,7 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
                     }
 				}
 
-                if ( bExecute )
+				if ( bExecute )
 				{
 					//	normal ausfuehren
 					ScRange aSourceRange = pSourceAction->GetBigRange().MakeRange();
@@ -1037,7 +1031,7 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 							((const ScChangeActionContent*)pSourceAction)->GetNewString( aValue );
 							sal_uInt8 eMatrix = MM_NONE;
 							const ScBaseCell* pCell = ((const ScChangeActionContent*)pSourceAction)->GetNewCell();
-                            if ( pCell && pCell->GetCellType() == CELLTYPE_FORMULA )
+							if ( pCell && pCell->GetCellType() == CELLTYPE_FORMULA )
 								eMatrix = ((const ScFormulaCell*)pCell)->GetMatrixFlag();
 							switch ( eMatrix )
 							{
@@ -1133,7 +1127,7 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 				if ( rComment.Len() )
 				{
 					ScChangeAction* pAct = pThisTrack->GetLast();
-                    if ( pAct && pAct->GetActionNumber() > nOldActionMax )
+					if ( pAct && pAct->GetActionNumber() > nOldActionMax )
 						pAct->SetComment( rComment );
 #ifdef DBG_UTIL
 					else
@@ -1192,21 +1186,21 @@ void ScDocShell::MergeDocument( ScDocument& rOtherDoc, bool bShared, bool bCheck
 	if (bHasRejected)
 		PostPaintGridAll();			// Reject() paintet nicht selber
 
-    UnlockPaint();
+	UnlockPaint();
 }
 
 bool ScDocShell::MergeSharedDocument( ScDocShell* pSharedDocShell )
 {
-    if ( !pSharedDocShell )
-    {
-        return false;
-    }
+	if ( !pSharedDocShell )
+	{
+		return false;
+	}
 
-    ScChangeTrack* pThisTrack = aDocument.GetChangeTrack();
-    if ( !pThisTrack )
-    {
-        return false;
-    }
+	ScChangeTrack* pThisTrack = aDocument.GetChangeTrack();
+	if ( !pThisTrack )
+	{
+		return false;
+	}
 
     ScDocument& rSharedDoc = *( pSharedDocShell->GetDocument() );
     ScChangeTrack* pSharedTrack = rSharedDoc.GetChangeTrack();
@@ -1382,24 +1376,26 @@ bool ScDocShell::MergeSharedDocument( ScDocShell* pSharedDocShell )
             aChangeViewSet.SetHasActionRange( true );
             aChangeViewSet.SetTheActionRange( nStartShared, nEndShared );
             aDocument.SetChangeViewSettings( aChangeViewSet );
-        }
+		}
 
-        // update view
-        PostPaintExtras();
-        PostPaintGridAll();
+		// update view
+		PostPaintExtras();
+		PostPaintGridAll();
 
-        InfoBox aInfoBox( GetActiveDialogParent(), ScGlobal::GetRscString( STR_DOC_UPDATED ) );
-        aInfoBox.Execute();
-    }
+		InfoBox aInfoBox( GetActiveDialogParent(), ScGlobal::GetRscString( STR_DOC_UPDATED ) );
+		aInfoBox.Execute();
+	}
 
 #if DEBUG_CHANGETRACK
-    aMessage = ::rtl::OUString::createFromAscii( "\nafter merge:\n" );
-    aMessage += pThisTrack->ToString();
-    aMsg = ::rtl::OUStringToOString( aMessage, RTL_TEXTENCODING_UTF8 );
-    OSL_ENSURE( false, aMsg.getStr() );
-    //fprintf( stdout, "%s ", aMsg.getStr() );
-    //fflush( stdout );
+	aMessage = ::rtl::OUString::createFromAscii( "\nafter merge:\n" );
+	aMessage += pThisTrack->ToString();
+	aMsg = ::rtl::OUStringToOString( aMessage, RTL_TEXTENCODING_UTF8 );
+	OSL_ENSURE( false, aMsg.getStr() );
+	//fprintf( stdout, "%s ", aMsg.getStr() );
+	//fflush( stdout );
 #endif // DEBUG_CHANGETRACK
 
-    return ( pThisAction != NULL );
+	return ( pThisAction != NULL );
 }
+
+/* vim: set noet sw=4 ts=4: */
