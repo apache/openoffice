@@ -51,11 +51,11 @@ if( (abs( $sCurrPic ) > 0) && ( abs( $sCurrPic ) < ( $nPictureArrayLen ) ) )
 
 # return to edit page
 print "Content-type: text/html\n\n";
-print "<HTML>\n<HEAD>\n";
-print "<META http-equiv=\"refresh\" CONTENT=\"0 ;URL=editpic.pl\">";
+print "<html>\n<head>\n";
+print "<meta http-equiv=\"refresh\" content=\"0 ;URL=editpic.pl\">";
 print "<title>savepic.pl</title>";
-print "</HEAD>\n";
-print "<BODY>\n";
-print "</BODY>\n";
-print "</HTML>\n";
+print "</head>\n";
+print "<body>\n";
+print "</body>\n";
+print "</html>\n";
 %>
