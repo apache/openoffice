@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -28,19 +28,19 @@ my $zipName = shift || die 'must provide a ext name';
 my $rdbName = shift || die 'must provide a types library';
 my $libName = shift || die 'must provide a component library';
 
-die "can't access type library $rdbName" unless -f $rdbName; 
-die "can't access component library $libName" unless -f $libName; 
+die "can't access type library $rdbName" unless -f $rdbName;
+die "can't access component library $libName" unless -f $libName;
 
 # Read the zip
 my $zip = Archive::Zip->new();
 
 if ( -f $zipName )
 {
-    # be stupid and recreate zip every time 
+    # be stupid and recreate zip every time
     # in another iteration lets try to overwrite it instead
     my $result = 0;
     $result = unlink($zipName);
-    if ( result != 0 ) 
+    if ( result != 0 )
     {
         die 'can not delete old extension';
     }

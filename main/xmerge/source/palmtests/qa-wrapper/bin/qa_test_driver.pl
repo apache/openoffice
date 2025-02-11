@@ -2,7 +2,7 @@
 #########################################################################
 
  #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -195,7 +195,7 @@ exit(0);
 #
 # This is the main driver function
 # Opens the infile, reads it in parses it, runs the appropriate conversion
-# starts pose and load the file into the emulator. It launches the 
+# starts pose and load the file into the emulator. It launches the
 # appropriate editor and then runs the commands specified in the test case.
 # It then exports the file and saves it locally. Finally it is converted
 # back to the original office format.
@@ -209,17 +209,17 @@ sub process_testcase
 	# Process the inputfile
 	#
 	open (INFILE, $infile) || die "Failed to open test case <$infile>";
-	
+
 	$running_testtype = "";
-	
+
 	# Process the input file.
 	#
 	while ($c_inline = <INFILE>)
 	{
 	   chomp $c_inline;
 	   @entry = split('\|', $c_inline);
-	
-	   # Process TEST 
+
+	   # Process TEST
 	   #
 	   if ($c_inline =~ /^ *#/ || $c_inline =~ /^[ \t]*$/)
 	   {
@@ -233,9 +233,9 @@ sub process_testcase
 	      #
 	      &close_program($convert_file);
 	      $running_testtype = "";
-	      
+
 	      $valid_test = 0;
-	
+
 	      if ($#entry != 3)
 	      {
 	         print "\nERROR, $entry[0] invalid number of arguments\n\n";
@@ -246,12 +246,12 @@ sub process_testcase
 	         #
 	         print "\nStarting test: $entry[1]\n";
 	         $convert_file = $entry[3];
-	   
+
 	         if ("$entry[2]"  =~ /[Qq][Uu][Ii][Cc][Kk][Ww][Oo][Rr][Dd]/)
 	         {
 	            $xml_extension = "sxw";
 	            $convert_to = "application/x-aportisdoc";
-	
+
 	            # Convert XML file to pdb format.
 	            #
 	            $rc = &convert_to_pdb("$xml_orig", $convert_file, $xml_extension ,
@@ -267,7 +267,7 @@ sub process_testcase
 	               $rc = &start_pose("$pose_exe",
                      "$pose_prc/Quickword.PRC,$pose_prc/DBExporter.prc,$pdb_orig/$convert_file.pdb",
 	                 "Quickword", $pose_timeout);
-	
+
 	               if ($rc == 0)
 	               {
 	                  &start_quickword();
@@ -286,7 +286,7 @@ sub process_testcase
 	         {
 	            $xml_extension = "sxc";
 	            $convert_to = "application/x-minicalc";
-	
+
 	            # Convert XML file to pdb format.
 	            #
 	            $rc = &convert_to_pdb("$xml_orig", $convert_file,
@@ -318,7 +318,7 @@ sub process_testcase
 	               $rc = &start_pose("$pose_exe",
 	                  "$pose_prc/MiniCalc.prc,$pose_prc/DBExporter.prc,$pdb_files",
 	                  "MiniCalc", $pose_timeout);
-	
+
 	               if ($rc == 0)
 	               {
 	                  &start_minicalc();
@@ -339,7 +339,7 @@ sub process_testcase
 	         }
 	      }
 	   }
-	
+
 	   # Process DB_EXPORT
 	   #
 	   elsif ("$entry[0]" eq "DB_EXPORT")
@@ -386,7 +386,7 @@ sub process_testcase
                $entry[3], $running_testtype);
 	      }
 	   }
-	
+
 	   # Process TAP_PEN
 	   #
 	   elsif ("$entry[0]" eq "TAP_PEN")
@@ -496,13 +496,13 @@ sub process_testcase
 	      print "\nERROR, invalid line <$c_inline>\n";
 	   }
 	}
-	
+
 	&close_program($convert_file);
 }
 
 # close_program
 # convert_file - file to export
-# 
+#
 # closes the program running in pose and kills pose
 #
 sub close_program
@@ -522,8 +522,8 @@ sub close_program
 }
 
 # close_program_quickword
-# convert_file - file to export 
-# 
+# convert_file - file to export
+#
 # Closes quickword and kills pose
 #
 sub close_program_quickword
@@ -558,7 +558,7 @@ sub close_program_quickword
 
 # close_program_minicalc
 # convert_file - file to export
-# 
+#
 # Closes minicalc and kills pose
 #
 sub close_program_minicalc
@@ -588,7 +588,7 @@ sub close_program_minicalc
 	  }
 
 	  $rc = &convert_to_xml($xml_new, $xml_orig, "$list",
-		  "application/x-minicalc", "sxc", $convert_file, $merge_opt);  
+		  "application/x-minicalc", "sxc", $convert_file, $merge_opt);
 	  if ($rc != 0)
 	  {
 	    print "\nERROR, problem converting file(s) $list\n\n";
@@ -605,8 +605,8 @@ sub print_usage
 {
 	print "Usage : test_driver.pl\n";
 	print "\t-test=<file> \t\t: individual test case file to run\n";
-	print "\t-list=<file> \t\t: list of test case files\n"; 
-	print "\t-env=<file> \t\t: Properites like file defining env\n"; 
+	print "\t-list=<file> \t\t: list of test case files\n";
+	print "\t-env=<file> \t\t: Properites like file defining env\n";
 	print "\t-pose-exe=<fullpath> \t: path to pose executable\n";
 	print "\t-pose-prc=<path> \t: path to directory holding prc files\n";
 	print "\t-pdb-orig=<path> \t: directory to hold original pdb files\n";
@@ -646,7 +646,7 @@ sub process_cmdline
 	{
 		my @arg= split('=', $i);
 		@arg[0] =~ tr/A-Z/a-z/;
-		
+
 		if (@arg[0] eq "-pose-exe")
 		{
 			$pose_exe=$arg[1];
@@ -719,7 +719,7 @@ sub set_env_from_props
     my $infile = $_[0];
 
 	open(PROPSFILE, $infile) || die "Could not open properties file <$infile>";
-	
+
 	while (<PROPSFILE>)
 	{
 		chomp $_;
@@ -757,7 +757,7 @@ sub set_env_from_props
 			$xml_new_dir=$arg[1];
 			$xml_new=$arg[1];
 		}
-		
+
 	}
 	close PROPSFILE;
 }
@@ -778,7 +778,7 @@ sub verify_env_options
 	{
 		die "$pose_exe exists but is not executable.";
 	}
-	
+
 	if (!-e "$pose_prc")
 	{
 		die "The PRC directory specified as $pose_prc does not exist.";
@@ -787,7 +787,7 @@ sub verify_env_options
 	{
 		die "The PRC location specified as $pose_prc exists, but is not a directory.";
 	}
-	
+
 	if (!-e "$pdb_orig_dir")
 	{
 		die "The original PDB directory specified as $pdb_orig_dir does not exist.";
@@ -796,7 +796,7 @@ sub verify_env_options
 	{
 		die "The original PDB directory specified as $pdb_orig_dir exists but is not a directory.";
 	}
-	
+
 	if (!-e "$pdb_new_dir")
 	{
 		die "The new PDB directory specified as $pdb_new_dir does not exist.";
@@ -805,7 +805,7 @@ sub verify_env_options
 	{
 		die "The new PDB directory specified as $pdb_new_dir exists but is not a directory.";
 	}
-	
+
 	if (!-e "$xml_orig")
 	{
 		die "The original Office document directory specified as $xml_orig does not exist.";
@@ -814,7 +814,7 @@ sub verify_env_options
 	{
 		die "The original Office document location specified as $xml_orig exists but is not a directory.";
 	}
-	
+
 	if (!-e "$xml_new_dir")
 	{
 		die "The new Office document directory specified as $xml_new_dir does not exist.";

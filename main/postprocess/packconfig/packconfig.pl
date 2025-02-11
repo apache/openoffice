@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -79,14 +79,14 @@ sub parse_options
     my $opt_help;
     my $p = Getopt::Long::Parser->new();
     my $success =$p->getoptions(
-                             '-h' => \$opt_help, 
+                             '-h' => \$opt_help,
                              '-o=s' => \$out_file,
                              '-i=s' => \$files_path,
                              '-v'   => \$verbose,
                              '-vv'  => \$extra_verbose
                             );
 
-    if ( $opt_help || !$success || !$out_file || !$files_path ) 
+    if ( $opt_help || !$success || !$out_file || !$files_path )
     {
         usage();
         exit(1);
@@ -112,9 +112,9 @@ sub parse_options
 sub get_files
 {
     local @main::file_list;
-    
+
     find_files(\%files_hash);
-    
+
     if ( !keys %files_hash ) {
         print_error("can't find any image lists in '$files_path'", 3);
     }
@@ -128,31 +128,31 @@ sub find_files
     find({ wanted => \&wanted, no_chdir => 0 }, "$files_path");
     foreach ( @main::file_list ) {
         /^\Q$files_path\E\/(.*)$/o;
-        $files_hash_ref->{$1}++; 
+        $files_hash_ref->{$1}++;
     }
 }
 
 sub wanted
 {
     my $file = $_;
-    
+
     if ( $file =~ /.*\.xml$/ && -f $file ) {
         push @main::file_list, $File::Find::name;
     }
 }
 
-sub is_file_newer 
+sub is_file_newer
 {
     my $test_hash_ref = shift;
     my $reference_stamp = 0;
-    
+
     print_message("checking timestamps ...") if $verbose;
     if ( -e $out_file ) {
         $reference_stamp = (stat($out_file))[9];
         print_message("found $out_file with $reference_stamp ...") if $verbose;
     }
     return 1 if $reference_stamp == 0;
-        
+
     foreach ( sort keys %{$test_hash_ref} ) {
         my $path = $files_path;
         $path .= "/" if "$path" ne "";

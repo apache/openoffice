@@ -2,7 +2,7 @@
 eval 'exec perl -S $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -S $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -117,7 +117,7 @@ sub makenumber
         $h = int( $h / $order );
     }
     die "makenumber failed because number is too big (this cannot be so this is a strange error)" if $h > 0;
-    
+
     return reverse $result;
 }
 
@@ -126,7 +126,7 @@ sub makekidstr
 {
     $kid = shift;
     $str = shift;
-    
+
     if ( $str ne "" )
     {
         # special handling for strings starting with font descriptions like {&Tahoma8} (win system integration)
@@ -167,7 +167,7 @@ sub get_options {
 	while ($arg = shift @ARGV) {
 		$arg =~ /^-dbimport$/  and $dbimport = 1 and next;
 		$arg =~ /^-help$/  and $help = 1 and next; #show help
-		
+
 		if ( !$has_infile )
 		{
 		    $infile = $arg;

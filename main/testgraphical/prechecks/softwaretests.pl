@@ -2,7 +2,7 @@ eval 'exec perl -wS $0 ${1+\"$@\"}'
     if 0;
 
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+\"$@\"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -97,7 +97,7 @@ sub prepare()
     $sPath .= "/" . $sEnv;
     chdir ($sPath);
     cwd();
-    $sPath = getcwd(); 
+    $sPath = getcwd();
     my $sInpath = $ENV{INPATH};
     $sPath .= "/" . $sInpath . "/misc";
     $sGlobalIniFile = "$sPath/pathes.ini";
@@ -124,7 +124,7 @@ sub searchForFileInPath($$)
         $sep = ';';
     }
     my @path = split($sep, $sPathList);
-    
+
     my $sPath;
     my $startdir;
     my $bFound = 0;
@@ -135,7 +135,7 @@ sub searchForFileInPath($$)
     foreach $startdir (@path)
     {
         my $nCount = 0;
-        # 
+        #
         # IMPORTANT: leave out windir path.
         #
         if ($OSNAME eq "MSWin32" || $OSNAME eq "cygwin")
@@ -156,7 +156,7 @@ sub searchForFileInPath($$)
             cwd();
             my $myfile;
             while ($myfile = readdir(DIR))      # get filename
-            {                                  
+            {
                 if (-f $myfile )                # is it a file?
                 {
                     $nCount ++;
@@ -169,7 +169,7 @@ sub searchForFileInPath($$)
                 }
             }
             closedir(DIR);
-            print " ($nCount)\n" if ($verbose);            
+            print " ($nCount)\n" if ($verbose);
         }
         if ($bFound == 1)
         {
@@ -399,7 +399,7 @@ sub checkForImageMagick()
             {
                 # next try, search image magick in $PROGRAMFILES
                 my $sPrograms = unixpath($ENV{PROGRAMFILES});
-        
+
                 if (! $sPrograms)
                 {
                     print "There exist no \$PROGRAMFILES path, wrong Windows version?\n";
@@ -409,10 +409,10 @@ sub checkForImageMagick()
                 {
                     local *DIR;
                     if (opendir (DIR, $sPrograms))           # open program directory
-                    {                
+                    {
                         my $myfile;
                         while ($myfile = readdir(DIR))       # get a filename
-                        {                                  
+                        {
                             if ($myfile =~ /ImageMagick/)
                             {
                                 $sImageMagickPath = $sPrograms . "/" . $myfile;
@@ -432,7 +432,7 @@ sub checkForImageMagick()
                     }
                 }
             }
-            
+
         }
         if ( -e "$sImageMagickPath/$sImageMagickExe" )
         {
@@ -453,7 +453,7 @@ sub checkForJava6()
     {
         $javaexe = $ENV{JAVA6};
     }
-    
+
     if ($OSNAME eq "linux" || $OSNAME eq "cygwin")
     {
         # search for imagemagick
@@ -494,8 +494,8 @@ sub checkForJava6()
          if ( $ENV{JAVA6} )
          {
              $javaexe = $ENV{JAVA6};
-         }    
-         
+         }
+
          if (! -e $javaexe)
          {
              print "Java not found.\n";
@@ -505,7 +505,7 @@ sub checkForJava6()
          {
              print "Found Java: '$javaexe'\n" if ($verbose);
              insertPath("java.exe", $javaexe);
-         }        
+         }
     }
     else
     {
@@ -516,7 +516,7 @@ sub checkForJava6()
 # different checks
 print "Environment '$OSNAME'\n" if ($verbose);
 
-if ($printerdriver) 
+if ($printerdriver)
 {
     checkForPSDriver();
 }
@@ -544,7 +544,7 @@ sub print_usage(*)
 
     print(HANDLE <<END_OF_USAGE);
 
-Usage: $tool_name [OPTIONS] 
+Usage: $tool_name [OPTIONS]
 
     -ghostscript             Try to find ghostscript in your environment
     -imagemagick             Try to find imagemagick
