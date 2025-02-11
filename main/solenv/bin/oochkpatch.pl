@@ -2,7 +2,7 @@
     eval 'exec perl -S $0 ${1+"$@"}'
         if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -90,8 +90,8 @@ if( $^O eq 'MSWin32' )
 {
 	$perl = "$ENV{COMSPEC} -c $ENV{PERL}";
 	$setup_file = $setup_file . ".inf";
-} 
-else 
+}
+else
 {
 	$perl = 'perl';
 	$setup_file = $setup_file . ".ins";
@@ -107,7 +107,7 @@ if( $from_module )
 	print "Checking all modules upwards and including ", $from_module, "\n" if $verbose;
 
 	# append build.pl-generated list of modules
-	chdir "$SRC_ROOT/$toplevel_module" or 
+	chdir "$SRC_ROOT/$toplevel_module" or
 		chdir "$SRC_ROOT/$toplevel_module.lnk" or die "ERROR: cannot cd to $SRC_ROOT/$toplevel_module!";
 	open(ALLMODULES,
 		 "$perl $SRC_ROOT/$build --all:$from_module --show 2>&1 |") or die "ERROR: cannot build --show!\n";
@@ -180,7 +180,7 @@ print "Generating list of delivered libs...\n" if $verbose;
 foreach my $module (@modules)
 {
 	print " dummy-delivering $module...\n" if $verbose;
-	chdir "$SRC_ROOT/$module" or 
+	chdir "$SRC_ROOT/$module" or
 		chdir "$SRC_ROOT/$module.lnk" or die "ERROR: cannot cd to $SRC_ROOT/$module!";
 	`$perl $SRC_ROOT/$deliver $tempdir`;
 }
@@ -257,9 +257,9 @@ Verbosely tell what's currently happening
 
 =item B<--from=module>
 
-Assumes OOo was built incompatibly from given module 
+Assumes OOo was built incompatibly from given module
 upwards, and check against all libs from all upwards modules.
-Further modules can be given at the command line, which are merged 
+Further modules can be given at the command line, which are merged
 with the ones generated from this option
 
 =back
@@ -267,8 +267,8 @@ with the ones generated from this option
 =head1 DESCRIPTION
 
 B<This program> will compare all libs delivered from the specified modules
-against the set of files marked with the B<patch> flag in scp2. Useful to check 
-if the patch set is complete. Please note that this program needs to be run in 
+against the set of files marked with the B<patch> flag in scp2. Useful to check
+if the patch set is complete. Please note that this program needs to be run in
 a solar shell, i.e. the OOo build environment needs to be set up in the shell.
 
 There's kind of a heuristic involved, to determine exactly which files

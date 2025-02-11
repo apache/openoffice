@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -9,16 +9,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 use LWP::UserAgent;
@@ -34,9 +34,9 @@ use strict;
     patch_make_releases_xml.pl <version-number>
 
         version-number is the version number (eg 4.0.1) for which to create the releases.xml file.
-    
+
 =head1 DESCRIPTION
-    
+
     Will contact http://archive.apache.org/dist/openoffice/<version-number>/binaries/ and
     a) determine the set of languages
     b) collect sizes and sha256 check sums for all Windows installation sets.
@@ -57,7 +57,7 @@ my $version = $ARGV[0];
 print <<EOT;
 <?xml version='1.0' encoding='UTF-8'?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -65,16 +65,16 @@ print <<EOT;
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 EOT
 

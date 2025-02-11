@@ -3,7 +3,7 @@ eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -11,16 +11,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -52,7 +52,7 @@ use Cws;
 my $is_debug = 1;       	# enable debug
 my $opt_master;          	# option: master workspace
 my $opt_child;    	        # option: child workspace
-my $opt_milestone;    	        # option: milestone 
+my $opt_milestone;    	        # option: milestone
 my $opt_testrunName;  		# option: testrunName
 my $opt_testrunPlatform;	# option: testrunPlatfrom
 my $opt_resultPage;     	# option: resultPage
@@ -72,8 +72,8 @@ sub testresult
     # get master and child workspace
     my $masterws = $opt_master ? uc($opt_master) : $ENV{WORK_STAMP};
     my $milestone = $opt_milestone ? $opt_milestone : $ENV{UPDMINOR};
-    my $childws  = $opt_milestone ? undef : ( $opt_child  ? $opt_child  : $ENV{CWS_WORK_STAMP} ); 
-    
+    my $childws  = $opt_milestone ? undef : ( $opt_child  ? $opt_child  : $ENV{CWS_WORK_STAMP} );
+
     if ( !defined($masterws) ) {
         print_error("Can't determine master workspace environment.\n"
                     . "Please initialize environment with setsolar ...", 1);
@@ -108,7 +108,7 @@ sub testresult
         $opt_resultPage=SOAP::Data->type(string => $opt_resultPage);
         $result=$eis->submitTestResultMWS($masterws,$milestone,$opt_testrunName,$opt_testrunPlatform, $opt_resultPage, $status);
     }
-		
+
     exit(0)
 }
 
@@ -116,7 +116,7 @@ sub testresult
 sub is_valid_cws
 {
     my $cws = shift;
-    
+
     my $masterws = $cws->master();
     my $childws  = $cws->child();
     # check if we got a valid child workspace
@@ -161,7 +161,7 @@ sub parse_options
 # sub print_message
 # {
 #     my $message     = shift;
-# 
+#
 #     print STDERR "$script_name: ";
 #     print STDERR "$message\n";
 #     return;
@@ -182,7 +182,7 @@ sub print_error
     return;
 }
 
-sub usage 
+sub usage
 {
     print STDERR "Usage: cwstestresult[-h] [-M masterws] [-m milestone|-c childws] <-n testrunName> <-p testrunPlatform> <-r resultPage> statusName\n";
     print STDERR "\n";

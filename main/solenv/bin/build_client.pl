@@ -2,7 +2,7 @@
 eval 'exec perl -S $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -S $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -82,7 +82,7 @@ if ($processes_to_run > 1) {
         };
         do {
             my $rc = Win32::Process::Create($process_obj, $^X,
-                                            $child_args, 
+                                            $child_args,
 	 	   	                                0, 0, #NORMAL_PRIORITY_CLASS,
                                             ".");
             print_error("Cannot start child process") if (!$rc);
@@ -114,10 +114,10 @@ sub handle_temp_files {
     foreach (keys %job_temp_files) {
         if ($job_temp_files{$_}) {
             rename($_, $job_temp_files{$_}) or system("mv", $_, $job_temp_files{$_});
-            print STDERR "Could not rename $_ to $job_temp_files{$_}\n" if (-e $_); 
+            print STDERR "Could not rename $_ to $job_temp_files{$_}\n" if (-e $_);
         } else {
             unlink $_ or system("rm -rf $_");
-            print STDERR "Could not remove $_\n" if (-e $_); 
+            print STDERR "Could not remove $_\n" if (-e $_);
         };
     };
     exit($?);
@@ -128,19 +128,19 @@ sub run_client {
     if (!scalar keys %hosts_ports) {
         $hosts_ports{localhost} = $default_port;
     }
-    
+
     print "Started client with PID $$, hostname $host\n";
-    
+
     my $message = '';
     my $current_port = '';
     my %active_servers = ();
-    
+
     do {
         $got_job = 0;
         foreach $current_server (keys %hosts_ports) {
             foreach $current_port (keys %{$hosts_ports{$current_server}}) {
 
-                #before each "inactive" server/port connect - connect to each "active" server/port 
+                #before each "inactive" server/port connect - connect to each "active" server/port
                 next if (defined ${$active_servers{$current_server}}{$current_port});
                 # "active" cycle
                 foreach my $active_server (keys %active_servers) {
@@ -149,7 +149,7 @@ sub run_client {
                         my $iaddr = inet_aton($active_server);
                         $paddr = sockaddr_in($active_port, $iaddr);
                         do {
-                            my $server_is_active = 0; 
+                            my $server_is_active = 0;
                             $message = request_job($message, $active_server, $active_port);
                             $server_is_active++ if ($message);
                             if (!$server_is_active) {
@@ -166,7 +166,7 @@ sub run_client {
                         } while ($message);
                     };
                 };
-                
+
                 # "inactive" cycle
 #                print "Inactive: $current_server:$current_port\n";
                 my $iaddr = inet_aton($current_server);
@@ -310,7 +310,7 @@ sub do_job {
             $job_hash{$`} = $';
             $last_param = $`;
         } else {
-           $job_hash{$last_param} .= " $_"; 
+           $job_hash{$last_param} .= " $_";
         };
     };
     $env_alias = $job_hash{server_pid} . '@' . $job_hash{server} . ':' . $job_hash{port};
@@ -323,7 +323,7 @@ sub do_job {
         # use configuration string from server
         $setenv_string .= $job_hash{setenv_string};
         print "Environment: $setenv_string\n";
-    
+
         my $directory = $job_hash{job_dir};
         open (COMMAND_FILE, ">$cmd_file");
         print COMMAND_FILE "$setenv_string\n";
@@ -335,7 +335,7 @@ sub do_job {
             };
             exit (1);
         };
-    
+
         print COMMAND_FILE "pushd $job_hash{job_dir} && ";
         print COMMAND_FILE $job_hash{job} ." >& $tmp_log_file\n";
         print COMMAND_FILE "exit \$?\n";
@@ -352,16 +352,16 @@ sub do_job {
             return($error_code) if ($error_code);
         };
         my $solar_vars = $environments{$env_alias};
- 
+
         delete $ENV{$_} foreach (keys %ENV);
         $ENV{$_} = $$solar_vars{$_} foreach (keys %$solar_vars);
         print 'Workspace: ';
         if (defined $ENV{CWS_WORK_STAMP}) {
-            print $ENV{CWS_WORK_STAMP}; 
-        } else { 
+            print $ENV{CWS_WORK_STAMP};
+        } else {
             print $ENV{SOLARSRC};
         };
- 
+
         print "\nplatform: $ENV{INPATH} $^O";
         print "\ndir: $job_hash{job_dir}\n";
         print "job: $job_hash{job}\n";

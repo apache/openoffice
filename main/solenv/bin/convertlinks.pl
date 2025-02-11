@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,19 +7,19 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 #
-# convertlinks - a perl script to make hrefs to 
+# convertlinks - a perl script to make hrefs to
 # http://api.openoffice.org/common/ref relativ.
 #
 
@@ -43,7 +43,7 @@ find(\&wanted, "$ARGV[0]");
 
 $return = 1;
 
-foreach $i (@files) 
+foreach $i (@files)
 {
 	next if( $i->{directory} =~ /.*common((\/|\\)ref(.*))/ ||
 		 $i->{directory} =~ /.*cpp((\/|\\)ref(.*))/ ||
@@ -66,7 +66,7 @@ foreach $i (@files)
 			$relToSource = "\.\.\/$relPath";
 		} else
 		{
-			$relToSource = $relPath; 
+			$relToSource = $relPath;
 		}
 	} else
 	{
@@ -79,8 +79,8 @@ foreach $i (@files)
 			$relToSource = "\.\.";
 		} else
 		{
-			$relToSource = $relPath; 
-		}		    
+			$relToSource = $relPath;
+		}
 	}
 
 	@lines = <FILEIN>;
@@ -111,17 +111,17 @@ foreach $i (@files)
 			s#((http:\/\/api\.openoffice\.org\/)(design_guide.html))#$relPath\/www\/$3#go;
 			s#(http:\/\/api\.openoffice\.org\/index.html)#$relPath\/www\/odk_index.html#go;
 
-			# change the links for the C++ examples in the UDK			    
+			# change the links for the C++ examples in the UDK
 			s#((http:\/\/udk\.openoffice\.org\/source\/browse\/udk\/product\/examples\/)(cpp\/*))#$3#go;
-			
-			# change the links to udk.openoffice.org to relativ links			    
+
+			# change the links to udk.openoffice.org to relativ links
 			s#(http:\/\/udk\.openoffice\.org\/index.html)#$relPath\/www\/udk_index.html#go;
 			s#((http:\/\/udk\.openoffice\.org)(\/*))#$relPath\/www$3#go;
-			
+
 			# change the link to tutorial
 			s#((http:\/\/api\.openoffice\.org\/)(basic\/man\/tutorial\/tutorial.pdf))#$relPath\/www\/$3#go;
 		}
-		print FILEOUT $_; 
+		print FILEOUT $_;
 	}
 	close FILEOUT;
 	chmod 0666, $i->{filename};

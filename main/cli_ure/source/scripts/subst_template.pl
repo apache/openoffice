@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -28,9 +28,9 @@ use diagnostics;
 sub trim;
 sub readRedirectionValues($);
 
-my $usage = 
+my $usage =
    "Usage is: \n subst_template.pl configTemplate redirections policyConfig
-   
+
    configTemplate: The config file which is used for the policy assembly. It
    contains place holders for the binding redirection.
 
@@ -40,7 +40,7 @@ my $usage =
    policyConfig: Name of the file in which we want to write the config file.
 ";
 
-			  
+
 if (scalar @ARGV < 3) {
    print $usage;
    exit -1;
@@ -85,20 +85,20 @@ sub readRedirectionValues($)
         if (length($trimmed = trim($_)) == 0) {
             next;
         }
-        
+
 	#Skip comment symbol: #
 	if ($trimmed =~ /^#/) {
 	    next;
 	}
 
         my @lineParts = split /=/,$_;
-        
+
         #Check if we have valid name value pairs.
         if (scalar @lineParts != 2) {
             print "Error: Values in $ARGV[1] are not correct (Entries must have the form name=value). Invalid line: \n$_\n";
             exit -1;
         }
-        
+
         #Trim the strings and check if they still contain characters
         my $name = trim($lineParts[0]);
         my $value = trim($lineParts[1]);
@@ -106,7 +106,7 @@ sub readRedirectionValues($)
             print "Error: Values in $ARGV[1] are not correct. Invalid line: \n$_\n";
             exit -1;
         }
-        
+
         #Check if we have duplicate key names
         for (keys %redirectionValues) {
             if ( $name eq $_) {
@@ -114,7 +114,7 @@ sub readRedirectionValues($)
                 exit -1;
             }
         }
-        
+
         $redirectionValues{$name} = $value;
     }
     return %redirectionValues;
