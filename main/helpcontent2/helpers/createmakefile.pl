@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,30 +8,30 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 use File::Find;
 use File::Basename;
 
-# creates the help2 makefile for a given 
+# creates the help2 makefile for a given
 # directory including all help xhp files
 # in that and the subordinate directories
-# Only help files with the following 
+# Only help files with the following
 #
 # status values are included:
 # PUBLISH DEPRECATED
 #
-# The following status values are 
+# The following status values are
 # disregarded:
 # DRAFT FINAL STALLED
 
@@ -78,9 +78,9 @@ print "Link Directory : $linkdir\n";
 print "Recursive      : ". ($recursive ? "yes" : "no") . "\n";
 print "All files      : ". ($all ? "yes" : "no") . "\n";
 
-if ($recursive) {	
-	find(sub{push @dirs, $File::Find::name if (-d and ($File::Find::name!~/\/CVS/));},$startdir); 
-} else { 
+if ($recursive) {
+	find(sub{push @dirs, $File::Find::name if (-d and ($File::Find::name!~/\/CVS/));},$startdir);
+} else {
 	push @dirs, $startdir;
 }
 
@@ -92,11 +92,11 @@ for $d(@dirs) {
 	@files = grep {/xhp$/} readdir DIR;
 	undef @files2;
 	closedir DIR;
-	
+
 	($helpdir = $d) =~ s/.*\/$helpdirprefix/source\//gis;
-	
-	($package = $helpdir) =~ s/^source\///gi; 
-	 
+
+	($package = $helpdir) =~ s/^source\///gi;
+
 	($target = $package) =~ s/\//_/g; $target =~ s/_$//;
 	($module = $package) =~ s/^\/*text\/([^\/]+)\/*.*$/$1/;
 
@@ -121,21 +121,21 @@ for $d(@dirs) {
 			push @files2, '   '.$n.'.xhp ';
 		}
 	}
-	
+
 	printf "%s: %4d files, %4d included in makefile -> ",$d,scalar @files,scalar @files2;
-		
+
 	if (scalar @files2 > 0) { # don't write makefiles where there are no files to make
 		($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
-	
+
 		$auth = "script";
 		$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 		$prj = '..$/' x ((split "/", $helpdir) -1); $prj = $prj . "..";
 
-		
+
 		$xhpfiles = join "\\\n", sort @files2;
 
 		($makefile = $tmpl) =~ s/%([^%]*)%/$$1/gise;
-	
+
 		if (open(MK, ">$d/makefile.mk")) {
 			print MK $makefile;
 			close MK;
@@ -162,47 +162,47 @@ for $d(@dirs) {
 #----------------------------------
 # sbasic
 	$module = "sbasic";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.cfg \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    -add $module.tree \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAD
-	
+
 	$linklinkfiles = '';
 	for (@sbasic) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	for (@shared) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
-	
+
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
 	&writelinkmakefile($module,$linkmakefile);
 
-	
+
 #-------------------------------------
 # scalc
 	$module = "scalc";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.cfg \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    -add $module.tree \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAD
-	
+
 	$linklinkfiles = '';
 	for (@scalc)  { $linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	for (@shared) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
@@ -211,26 +211,26 @@ LAD
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
 	&writelinkmakefile($module,$linkmakefile);
 
-#--------------------------------	
+#--------------------------------
 # schart
 	$module = "schart";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.cfg \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    -add $module.tree \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAD
-	
+
 	$linklinkfiles = '';
 
 	for (@shared) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
@@ -240,24 +240,24 @@ LAD
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
 	&writelinkmakefile($module,$linkmakefile);
 
 #------------------------------
 # sdraw
 	$module = "sdraw";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.cfg \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAD
-	
+
 	$linklinkfiles = '';
 	for (@sdraw) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	for (@simpress) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
@@ -267,15 +267,15 @@ LAD
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
 	&writelinkmakefile($module,$linkmakefile);
-		
+
 #-------------------------------------
 # shared
- 
+
 	$module = "shared";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.tree \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip \\
@@ -286,7 +286,7 @@ LAD
    -add highcontrastblack.css  \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/highcontrastblack.css \\
    -add err.html  \$(COMMONMISC)\$/LANGUAGE\$/text\$/shared\$/05\$/err_html.xhp
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip \\
@@ -297,89 +297,89 @@ LAF
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/highcontrastblack.css \\
    \$(COMMONMISC)\$/LANGUAGE\$/text\$/shared\$/05\$/err_html.xhp
 LAD
-	
+
 	$linklinkfiles = '';
 
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
 	&writelinkmakefile($module,$linkmakefile);
 
 #-------------------------------
 # simpress
 	$module = "simpress";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.cfg \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    -add $module.tree \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAD
-	
+
 	$linklinkfiles = '';
 
 	for (@sdraw) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	for (@simpress) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	for (@shared) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	for (@schart) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
-	
+
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
 	&writelinkmakefile($module,$linkmakefile);
 
 #-------------------------------------
 # smath
 	$module = "smath";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.cfg \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    -add $module.tree \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAD
-	
+
 	$linklinkfiles = '';
 	for (@smath) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	for (@shared) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
-	
+
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
 	&writelinkmakefile($module,$linkmakefile);
 
 #-------------------------------
 # swriter
 	$module = "swriter";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.cfg \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    -add $module.tree \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    \$(COMMONMISC)\$/LANGUAGE\$/$module.tree \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAD
-	
+
 	$linklinkfiles = '';
 	for (@swriter) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	for (@shared) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
@@ -387,38 +387,38 @@ LAD
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
 	&writelinkmakefile($module,$linkmakefile);
 
 #-------------------------------
 # sdatabase
 	$module = "sdatabase";
-	
+
 	$linkaddedfiles = <<"LAF";
    -add $module.cfg \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    -add $module.jar  \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAF
-	
+
 	$linkaddeddeps = <<"LAD";
    \$(PRJ)\$/source\$/auxiliary\$/LANGUAGE\$/$module.cfg \\
    \$(COMMONBIN)\$/xhp_${module}_LANGUAGE.zip
 LAD
-	
+
 	$linklinkfiles = '';
 	for (@shared) {	$linklinkfiles = $linklinkfiles . "   $_ \\\n";	}
 	$auth = "script";
 	$date = sprintf "%4d/%02d/%02d %02d:%02d:%02d",$year+1900,$mon,$mday,$hour,$min,$sec;
 	$prj = '..$/..' ;
-	
+
 	($linkmakefile = $linktmpl) =~ s/%([^%]*)%/$$1/gise;
-	
+
 	# remove zip1 targets
 	$linkmakefile =~ s,\n(ZIP1LIST=.*)\n,\nZIP1LIST=\$(LANGDIR)\$/text\$/shared\$/explorer\$/database\$/main.xhp\n,gi;
 	&writelinkmakefile($module,$linkmakefile);
-	
-	
-	
+
+
+
 print "sbasic: $#sbasic\n";
 print "scalc : $#scalc\n";
 print "schart: $#schart\n";
@@ -433,7 +433,7 @@ sub terminate {
 	$err = shift;
 	print "$err\n\n";
 	$msg = <<"MSG";
-createmakefile.pl -dir=[directory name] -linkdir=[directory name] [-recursive] [-all] 
+createmakefile.pl -dir=[directory name] -linkdir=[directory name] [-recursive] [-all]
   -dir        Directory to start
   -linkdir    Directory to write the link makefiles
   -recursive  Write makefiles recursively
@@ -447,7 +447,7 @@ sub writelinkmakefile {
 	$module = shift;
 	$content = shift;
 	if (open(MK, ">$linkdir/$module/makefile.mk")) {
-		print MK $content;	
+		print MK $content;
 		close MK;
 	} else {
 		&terminate("Cannot write makefile to ${linkdir}/$module\n");

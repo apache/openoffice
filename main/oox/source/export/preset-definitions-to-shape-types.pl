@@ -1,6 +1,6 @@
 #!/usr/bin/env perl -w
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -312,22 +312,22 @@ sub setup_variables()
         't'        => 0,
         'r'        => 21600,
         'b'        => 21600,
-                  
+
         'w'        => 21600,
         'h'        => 21600,
         'ss'       => 21600,
         'ls'       => 21600,
-                  
+
         'ssd2'     => 10800, # 1/2
         'ssd4'     => 5400,  # 1/4
         'ssd6'     => 3600,  # 1/6
         'ssd8'     => 2700,  # 1/8
         'ssd16'    => 1350,  # 1/16
         'ssd32'    => 675,   # 1/32
-                  
+
         'hc'       => 10800, # horizontal center
         'vc'       => 10800, # vertical center
-                  
+
         'wd2'      => 10800, # 1/2
         'wd3'      => 7200,  # 1/3
         'wd4'      => 5400,  # 1/4
@@ -337,7 +337,7 @@ sub setup_variables()
         'wd10'     => 2160,  # 1/10
         'wd12'     => 1800,  # 1/12
         'wd32'     => 675,   # 1/32
-                  
+
         'hd2'      => 10800, # 1/2
         'hd3'      => 7200,  # 1/3
         'hd4'      => 5400,  # 1/4
@@ -350,11 +350,11 @@ sub setup_variables()
 
         '25000'    => 5400,
         '12500'    => 2700,
-                  
+
         'cd4'      => 90,    # 1/4 of a circle
         'cd2'      => 180,   # 1/2 of a circle
         '3cd4'     => 270,   # 3/4 of a circle
-                  
+
         'cd8'      => 45,    # 1/8 of a circle
         '3cd8'     => 135,   # 3/8 of a circle
         '5cd8'     => 225,   # 5/8 of a circle
@@ -386,7 +386,7 @@ sub value( $ )
 
     my $result = $variables{$val};
     return $result if ( defined( $result ) );
-    
+
     return $val if ( $val =~ /^[0-9-]+$/ );
 
     error( "Unknown variable '$val'." );
@@ -409,14 +409,14 @@ sub command_value( $ )
     my ( $value ) = @_;
 
     return "" if ( $value eq "" );
-    
+
     return $value if ( $value =~ /^@/ );
 
     my $command_val = $command_variables{$value};
     if ( defined( $command_val ) ) {
         return $command_val;
     }
-    
+
     return value( $value );
 }
 
@@ -682,7 +682,7 @@ sub convert_formula( $$ )
 sub elliptic_quadrant( $$$$ )
 {
     my ( $wR, $hR, $stAng, $swAng ) = @_;
-    
+
     if ( defined( $convert_arcTo{$stAng} ) && defined( $convert_arcTo{$stAng}{$swAng} ) ) {
         my $conv_path = $convert_arcTo{$stAng}{$swAng}{'path'};
         my $conv_op_ref = $convert_arcTo{$stAng}{$swAng}{'op'};
@@ -769,10 +769,10 @@ sub start_element( $% )
     push @levels, $element;
 
     #print "element: $element\n";
-    
+
     if ( is_level( -1, "presetShapeDefinitons" ) || is_level( -1, "presetTextWarpDefinitions" ) ) {
         $shape_name = $element;
-        
+
         $state = "";
         $ignore_this_shape = 0;
         $path = "";
@@ -981,7 +981,7 @@ sub end_element( $ )
         if ( !$ignore_this_shape ) {
             # we have all the info, generate the shape now
             $state = "";
-            
+
             # shape path
             my $out = "<v:shapetype id=\"shapetype___ID__\" coordsize=\"21600,21600\" o:spt=\"__ID__\" ";
             if ( $adjust ne "" ) {
@@ -996,7 +996,7 @@ sub end_element( $ )
 
             # stroke
             $out .= "<v:stroke joinstyle=\"miter\"/>\n";
-            
+
             # formulas
             if ( $#formulas >= 0 )
             {
@@ -1075,7 +1075,7 @@ sub parse_start_element( $ )
 {
     # split the string containing both the elements and attributes
     my ( $element_tmp ) = @_;
-    
+
     $element_tmp =~ s/\s*$//;
     $element_tmp =~ s/^\s*//;
 
@@ -1135,7 +1135,7 @@ sub parse( $ )
         s/^\s*//;
         s/\s*$//;
         next if ( $_ eq "" );
-    
+
         # take care of lines where element continues
         if ( $line ne "" ) {
             $line .= " " . $_;
@@ -1144,17 +1144,17 @@ sub parse( $ )
             $line = $_;
         }
         next if ( !/>$/ );
-    
+
         # the actual parsing
         my @starts = split( /</, $line );
         $line = "";
         foreach $start ( @starts ) {
             next if ( $start eq "" );
-    
+
             @ends = split( />/, $start );
             my $element = $ends[0];
             my $data = $ends[1];
-    
+
             # start or end element
             if ( $element =~ /^\/(.*)/ ) {
                 end_element( $1 );
@@ -1167,7 +1167,7 @@ sub parse( $ )
             else {
                 parse_start_element( $element );
             }
-    
+
             # the data
             characters( $data ) if ( defined( $data ) && $data ne "" );
         }
@@ -1216,7 +1216,7 @@ for ( $i = 0; $i < 203; ++$i ) {
         if ( defined( $out ) ) {
             # set the id
             $out =~ s/__ID__/$i/g;
-        
+
             # escape the '"'s
             $out =~ s/"/\\"/g;
 

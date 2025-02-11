@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -64,7 +64,7 @@ if ( ! defined $prj ) {
         {
             $source_dir = $ENV{TRYSDF};
         }
-        else 
+        else
         {
             $source_dir = $ENV{LOCALIZESDF};
         }
@@ -85,7 +85,7 @@ if ( ! defined $prj ) {
     {
         $source_dir = $ENV{TRYSDF};
     }
-    else 
+    else
     {
         $source_dir = $ENV{LOCALIZESDF};
     }
@@ -150,7 +150,7 @@ sub do_english {
     undef %helpsection; undef %node;
     &readtreestrings;
     &gettreefiles;
-    &processtreefiles('en-US');    
+    &processtreefiles('en-US');
 }
 
 #---------------------------------------------------
@@ -167,13 +167,13 @@ sub readtreestrings {
     if (open TREE, $treestrings) {
         while (<TREE>) {
             chomp;
-            s/<\/*help:productname>//gis;    
+            s/<\/*help:productname>//gis;
             if (/help_section/) {
                 s/^\s*<.*help_section//;
                 s/<\/.*$//;
                 ($id = $_) =~ s/^.*id=&quot;(\d+)&quot;.*$/$1/;
                 ($title = $_) =~ s/^.*title=&quot;(.*)&quot;.*$/$1/;
-                $helpsection{$id} = $title; 
+                $helpsection{$id} = $title;
             }
 
             if (/node id=/) {
@@ -208,7 +208,7 @@ sub gettreefiles {
 #------------------------------------
 sub processtreefiles {
     $lng = shift;
-	use File::Temp qw/ tempfile /; 
+	use File::Temp qw/ tempfile /;
 	use File::Spec;
 
 	for $tv(@treeviews) {
@@ -244,7 +244,7 @@ sub processtreefiles {
                     }
                 }
             }
-    
+
             if ($l =~/<node/) {
                 ($id = $l) =~ s/^.*id="(\d+)".*$/$1/gis;
                 if ($lng eq 'en-US') {
@@ -259,7 +259,7 @@ sub processtreefiles {
                     }
                 }
             }
-    
+
             if ($l =~/<help_section/) {
                 ($id = $l) =~ s/^.*id="(\d+)".*$/$1/gis;
                 if ($lng eq 'en-US') {
@@ -276,7 +276,7 @@ sub processtreefiles {
                 }
             }
         }
- 		if ( ! -d "$tree_dest/$lng" ) { 
+ 		if ( ! -d "$tree_dest/$lng" ) {
 	        mkdir "$tree_dest/$lng" or die "\nCouldn't create directory \"$tree_dest/$lng\"";
 		}
 		my $treeoutdir = "$tree_dest/$lng";
@@ -284,11 +284,11 @@ sub processtreefiles {
 		my ( $treetmpfilehandle, $treetmpfile ) = tempfile($tmpname_template , DIR => File::Spec->tmpdir() );
 		close $treetmpfilehandle ;
         if (open TV, ">$treetmpfile") {
-            for $line(@lines) { 
+            for $line(@lines) {
                 $line =~ s/\$\[officename\]/%PRODUCTNAME/g;
                 $line =~ s/\$\[officeversion\]/%PRODUCTVERSION/g;
-                print TV $line;    
-            }  
+                print TV $line;
+            }
             close TV;
 			chmod 0664, $treetmpfile or &terminate("Cannot change rights on $treetmpfile");
 			if( $^O eq 'MSWin32' )
@@ -317,8 +317,8 @@ sub readtv {
         my @l = <TV>;
         close TV;
         return @l;
-    } else { 
-        &terminate("Error opening $f"); 
+    } else {
+        &terminate("Error opening $f");
     }
 }
 
@@ -338,7 +338,7 @@ sub read_loc {
         while (<LOCALIZE_SDF>) {
             my $sdf_line = $_;
 	    my ($Fld1,$file,$Fld3,$Fld4,$id,$Fld6,$Fld7,$Fld8,$Fld9,$lang,$text) = split($FS, $sdf_line , 12);
-            next if ( $Fld1 =~ /^#/); 
+            next if ( $Fld1 =~ /^#/);
 	    if ($id eq 'tit') {
                 #strip filename
                 $file =~ s/.*text\\/text\\/g;
@@ -355,7 +355,7 @@ sub read_loc {
                 #convert \ to / in filename
                 $file =~ s/\\/\//g;
                 if ($text =~ /^<help_section/) {
-                    #example: <help_section application="scalc" id="08" title="表計算ドキュメント"> 
+                    #example: <help_section application="scalc" id="08" title="表計算ドキュメント">
                     my ($fld1,$app,$fld3,$id,$fld5,$sec_title) = split('"', $text, 7);
                     #fpe: i46823 - need to encode &s, added encoding
                     if( defined $sec_title )
@@ -363,10 +363,10 @@ sub read_loc {
 		    	        $sec_title =~ s/&(?!amp;)/&amp;/g;
 		    	        #unquot \<item ... /\>
 			            terminate( "\n\nERROR: Bad string in file '$fname' will cause invalid xml tree file \n---\n'$sdf_line'\n---\nPlease remove or replace < = '&lt;' and  > = '&gt;' within the title attribute '$sec_title'\n") , if( $sec_title =~ /[\<\>]/ );
-		    	        $helpsection{$lang}->{$id} = $sec_title; 
+		    	        $helpsection{$lang}->{$id} = $sec_title;
 		            }
                 } elsif ($text =~/<node id=/) {
-                    # example: <node id="0205" title="Tabelas em documentos de texto"> 
+                    # example: <node id="0205" title="Tabelas em documentos de texto">
                     # BEWARE: title may contain escaped '"' so only match " not preceded by \
                     # using a zero‐width negative look‐behind assertion.
                     my ($fld1,$id,$fld3,$node_title,$Fld5) = split(/(?<!\\)"/, $text, 5);

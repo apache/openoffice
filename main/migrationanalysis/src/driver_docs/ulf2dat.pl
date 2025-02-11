@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -56,7 +56,7 @@ if ( $help ) {
 
 open IN, "<$in_name" or die "Could not open $in_name for reading $! $^E";
 
-foreach $lang ( keys %files ) 
+foreach $lang ( keys %files )
 {
     open "F_$lang",">$files{$lang}" or die "Could not open $files{$lang} for writing $! $^E";
     binmode "F_$lang";
@@ -74,7 +74,7 @@ while ( <IN> )
     if ( $line =~ /^\[(.*)\]$/ )
     {
         $new_ID = $1;
-        
+
         write_transunit();
         $ID = $new_ID;
         %transunit = ();
@@ -111,11 +111,11 @@ sub write_transunit
 	    {
 	        $string = $transunit{ "en-US" };
 	    }
-	    
+
         my $dat_line = "$ID=$string";
         Encode::from_to( $dat_line, "utf8", "UTF-16LE");
 		print { $files{$lang} } "$dat_line\015\000\012\000";
-	}    	
+	}
 }
 
 
@@ -125,7 +125,7 @@ sub get_options {
 	while ($arg = shift @ARGV) {
 		$arg =~ /^-i$/  and $in_name = shift @ARGV and next;
 		$arg =~ /^-help$/  and $help = 1 and next; #show help
-		
+
 		$arg =~ /.*[\/\\]([^\/\\]*)\.dat$/;
 #		$arg =~ /.*[/\]([^/\]*)\.dat$/;
 		$lang = $1;

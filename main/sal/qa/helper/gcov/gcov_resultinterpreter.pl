@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,23 +8,23 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
-# 
+#
 # $Id$
 #
 
 # GCOV_RESULTINTERPRETER
-# 
+#
 # Helper, to interpret the result
 #
 # Q: Why perl?
@@ -147,10 +147,10 @@ sub read_gcov_function_file($)
     my $file = $_[0];
     my %list;
     my $line = "";
-    
+
     open(INPUT_HANDLE, $file)
         or die("ERROR: cannot open $file!\n");
-    
+
     while ($line = <INPUT_HANDLE>)
     {
         chomp($line);
@@ -160,7 +160,7 @@ sub read_gcov_function_file($)
         {
             my $percent = $1;
             my $value = $2;
-            
+
             $list{$value} = $percent;
         }
     }
@@ -183,7 +183,7 @@ Usage: $tool_name [OPTIONS] INPUTFILE
     -p, --percent           show all functions, which have a value > percent
     -c, --complete          show all functions, which have a value == 100
     -i, --incomplete        show all functions, which have a value > 0 && < 100
-                            
+
     -h, --help              Print this help, then exit
     -v, --version           Print version number, then exit
 

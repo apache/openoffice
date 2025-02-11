@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 use strict;
@@ -40,7 +40,7 @@ use Carp::always;
 =head1 SYNOPSIS
 
     build_release.pl <command> {option} <release-description.xml>
-    
+
     comands:
         build      builds all install sets as requested by the XML file and supported by the platform.
         build-missing
@@ -63,7 +63,7 @@ use Carp::always;
     Typical calls are:
        build_release.pl build -j4 instsetoo_native/util/aoo-410-release.xml
            for building the installation sets, language packs and patches for the 4.1 release.
-    
+
        build_release.pl upload -u me@server:path -n 3 instsetoo_native/util/aoo-410-release.xml
            to upload the previously built installation sets etc.
 
@@ -71,12 +71,12 @@ use Carp::always;
            to create an updated wiki page with installation sets etc built at several
            places and uploaded to several locations.
 
-    
+
 =head1 XML file format
 
 The release description could look like this:
 
-<release 
+<release
     name="snapshot"
     version="4.1.0">
 
@@ -86,7 +86,7 @@ The release description could look like this:
         local-name="Asturianu"
         />
     ... more languages
-    
+
     <platform
         id="wntmsci12.pro"
         display-name="Windows"
@@ -125,7 +125,7 @@ The release description could look like this:
         />
     ... more packages
   </wiki>
-   
+
 </release>
 
 A single <release> tag contains any number of
@@ -134,12 +134,12 @@ A single <release> tag contains any number of
                 The language id used internally by the build process, eg de, en-US
             english-name
                 The english name of the language, eg german
-            local-name 
+            local-name
                 The language name in that language, eg Deutsch
 
     Each listed language is expected to have been passed to configure via --with-lang
     The set of languages defines for which languages to
-          build installation sets, language packs etc. (build command) 
+          build installation sets, language packs etc. (build command)
           upload installation sets, etc (upload command)
           add rows in the wiki page (wiki command)
 
@@ -188,7 +188,7 @@ A single <release> tag contains any number of
                 %E extension.
 
     Defines a downloadable and distributable package, eg openoffice for the binary OpenOffice installation set.
-    
+
 <build>     target
             platform-list
                 Semicolon separated list of platforms for which to build the target.
@@ -210,9 +210,9 @@ A single <release> tag contains any number of
                 See <build> tag for explanation.
             table
                 Specifies the wiki table into which to add the package lines.  Can be "main" or "secondary".
-                
+
 =cut
-    
+
 
 
 my %EnUSBasedLanguages = (
@@ -358,7 +358,7 @@ sub ProcessCommandline (@)
             $error = 1;
         }
     }
-    
+
     if ($error)
     {
         PrintUsageAndExit();
@@ -423,7 +423,7 @@ sub Trim ($)
 =head2 ReadReleaseDescription ($$)
 
     Read the release description from $filename.
-    
+
 =cut
 sub ReadReleaseDescription ($$)
 {
@@ -446,7 +446,7 @@ sub ReadReleaseDescription ($$)
         'platform-ids' => [],
         'wiki-packages' => []
     };
-    
+
     # Process the language descriptions.
     for my $language_element ($root->getChildrenByTagName("language"))
     {
@@ -498,7 +498,7 @@ sub ReadReleaseDescription ($$)
             push @{$release->{'builds'}}, ProcessBuildDescription($build_element, $context, $release);
         }
         printf "%d build targets\n", scalar @{$release->{'builds'}};
-    }    
+    }
 
     if ($context->{'command'} eq "wiki")
     {
@@ -562,7 +562,7 @@ sub ProcessBuildDescription ($$$)
     }
 
     my @languages = CheckLanguageSet($context, @$languages);
-    
+
     return {
         'package-id' => $package_id,
         'platform-list' => $platforms,
@@ -579,7 +579,7 @@ sub ProcessBuildDescription ($$$)
     Process one <platform> element.
 
     The corresponding platform descriptor is returned as a hash.
-    
+
 =cut
 sub ProcessPlatformDescription ($$)
 {
@@ -614,14 +614,14 @@ sub ProcessPlatformDescription ($$)
     Process one <download> element.
 
     The corresponding download descriptor is returned as a hash.
-    
+
 =cut
 sub ProcessDownloadDescription ($$)
 {
     my ($element, $context) = @_;
 
     my $descriptor = {};
-    
+
     # Mandatory tags.
     foreach my $id ("platform-id", "base-url")
     {
@@ -640,14 +640,14 @@ sub ProcessDownloadDescription ($$)
     Process one <package> element.
 
     The corresponding package descriptor is returned as a hash.
-    
+
 =cut
 sub ProcessPackageDescription ($$)
 {
     my ($element, $context) = @_;
 
     my $descriptor = {};
-    
+
     # Mandatory tags.
     foreach my $id ("id", "target", "archive-path", "archive-name", "display-name")
     {
@@ -673,14 +673,14 @@ sub ProcessPackageDescription ($$)
     Process one <platform-package> element.
 
     The corresponding package descriptor is returned as a hash.
-    
+
 =cut
 sub ProcessPlatformPackageDescription ($$)
 {
     my ($element, $context) = @_;
 
     my $descriptor = {};
-    
+
     # Mandatory tags.
     foreach my $id ("platform-id", "package-id")
     {
@@ -710,7 +710,7 @@ sub ProcessPlatformPackageDescription ($$)
     Process one <wiki><package-ref> element.
 
     The corresponding descriptor is returned as a hash.
-    
+
 =cut
 sub ProcessWikiPackageDescription ($$$)
 {
@@ -746,7 +746,7 @@ sub ProcessWikiPackageDescription ($$$)
     Process one <language> element.
 
     The corresponding language descriptor is returned as a hash.
-    
+
 =cut
 sub ProcessLanguageDescription ($$)
 {
@@ -771,7 +771,7 @@ sub ProcessLanguageDescription ($$)
 
     If the attribute is missing, ie $language_list is undef, or its value is "all",
     then the returned list of languages is set to all languages defined via <language> elements.
-    
+
 =cut
 sub PostprocessLanguageList ($$)
 {
@@ -800,7 +800,7 @@ sub PostprocessLanguageList ($$)
 
     If the attribute is missing, ie $platform_list is undef, or its value is "all",
     then the returned list of platforms is set to all platforms defined via <platform> elements.
-    
+
 =cut
 sub PostprocessPlatformList ($$)
 {
@@ -816,7 +816,7 @@ sub PostprocessPlatformList ($$)
     {
         @matching_platforms = split(/;/, $platform_list);
     }
-    
+
     return \@matching_platforms;
 }
 
@@ -829,7 +829,7 @@ sub PostprocessPlatformList ($$)
 
     This is to ensure that configure --with-lang was called with the same set of languages that are
     listed by the <language> elements.
-    
+
 =cut
 sub CheckLanguageSet ($@)
 {
@@ -861,7 +861,7 @@ sub CheckLanguageSet ($@)
             printf "        %s\n", join(", ", @present_languages);
         }
         else
-        {    
+        {
             printf STDERR "ERROR: please rerun configure with --with-lang=\"%s\"\n", join(" ", @languages);
             exit(1);
         }
@@ -959,7 +959,7 @@ sub WriteMakefile ($$)
     }
     close $make;
 
-    
+
     if ( ! defined $context->{'output-filename'})
     {
         # Caller wants us to run make.
@@ -1016,12 +1016,12 @@ sub Upload ($$)
     The files that are to be uploaded are not copied but linked into this temporary directory tree.
 
     Returns the name of the temporary directory.
-    
+
 =cut
 sub PrepareUploadArea ($@)
 {
     my ($context, @download_sets) = @_;
-    
+
     my $tmpdir = File::Temp->newdir();
     foreach my $download_set (@download_sets)
     {
@@ -1074,7 +1074,7 @@ sub UploadFilesViaRsync ($$@)
         "--partial",  # Try to resume a previously failed upload
         );
 
-    # (Optional) Add flags for upload to ssh server 
+    # (Optional) Add flags for upload to ssh server
     my $upload_destination = $context->{'upload-destination'};
     if ($upload_destination =~ /@/)
     {
@@ -1115,7 +1115,7 @@ sub CollectDownloadSets ($)
     my ($release_descriptor) = @_;
 
     my @download_sets = ();
-    
+
     foreach my $platform_descriptor (values %{$release_descriptor->{'platforms'}})
     {
         my $platform_path = sprintf("%s/instsetoo_native/%s",
@@ -1174,7 +1174,7 @@ sub CollectDownloadSets ($)
 
     Create checksums in MD5 and SHA256 format and a gpg signature for the given download set.
     The checksums are not created when they already exists and are not older than the download set.
-    
+
 =cut
 sub ProvideChecksums ($@)
 {
@@ -1312,7 +1312,7 @@ sub GetInstallationPackageName ($$$$)
 sub ResolveTemplate ($$$$$)
 {
     my ($template, $release_descriptor, $platform_package_descriptor, $package_format, $language) = @_;
-    
+
     my $archive_package_type = "";
     if ($platform_package_descriptor->{'add-package-type-to-archive-name'} =~ /^(1|true|yes)$/i)
     {
@@ -1338,10 +1338,10 @@ sub ResolveTemplate ($$$$$)
         "%s-%s",
         $release_descriptor->{'previous-version'},
         $release_descriptor->{'version'});
-    
-    
+
+
     my $name = $template;
-    
+
     # Resolve %? template parameters.
     $name =~ s/%V/$release_descriptor->{'version'}/g;
     $name =~ s/%W/$old_to_new_version_dash/g;
@@ -1388,7 +1388,7 @@ sub GetPlatformPackage ($$$)
     my $platform_package = $release_descriptor->{'platform-packages'}->{$key};
     $platform_package = {}
         unless defined $platform_package;
-    
+
     my $joined_descriptor = {
         %$platform_descriptor,
         %$package_descriptor,
@@ -1495,7 +1495,7 @@ sub Wiki ($$)
                     }
                 }
             }
-            
+
             if ($context->{'check-links'})
             {
                 printf "\n";
@@ -1782,7 +1782,7 @@ sub CreateLink ($$$)
 
     Check if the file referenced by $url can be downloaded.
     This is determined by downloading only the header.
-    
+
 =cut
 my $LastCheckedURL = "";
 my $LastCheckedResult = undef;

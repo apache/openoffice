@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -154,8 +154,8 @@ if (!$rc) {
 }
 
 # simple macro expansion
-$rc = system "./testbootstrap", 
-	"_first_second_third_", 
+$rc = system "./testbootstrap",
+	"_first_second_third_",
 	"-env:FIRST=first",
 	"-env:SECOND=second",
 	"-env:THIRD=third",
@@ -166,10 +166,10 @@ if (!$rc) {
 }
 
 # simple quoting
-$rc = system "./testbootstrap",  
-	'_${FIRST}_${SECOND}_${THIRD}_',  
-	"-env:FIRST=first",  
-	"-env:SECOND=second",  
+$rc = system "./testbootstrap",
+	'_${FIRST}_${SECOND}_${THIRD}_',
+	"-env:FIRST=first",
+	"-env:SECOND=second",
 	"-env:THIRD=third",
 	'-env:MYBOOTSTRAPTESTVALUE=_\$\{FIRST\}_\$\{SECOND\}_\$\{THIRD\}_';
 if (!$rc) {
@@ -178,8 +178,8 @@ if (!$rc) {
 }
 
 # simple ini access
-$rc = system "./testbootstrap", 
-	"TheIniKeysValue", 
+$rc = system "./testbootstrap",
+	"TheIniKeysValue",
 	'-env:MYBOOTSTRAPTESTVALUE=${./bootstraptest.ini:TheIniKey}';
 if (!$rc) {
 	$comment = $comment . "simple macro ini access test not passed\n";
@@ -187,8 +187,8 @@ if (!$rc) {
 }
 
 # simple profile access
-$rc = system "./testbootstrap", 
-	"TheKeysValue", 
+$rc = system "./testbootstrap",
+	"TheKeysValue",
 	'-env:MYBOOTSTRAPTESTVALUE=${./bootstraptest.ini:TheSection:TheKey}';
 if (!$rc) {
 	$comment = $comment . "simple macro profile access test not passed\n";
@@ -196,11 +196,11 @@ if (!$rc) {
 }
 
 # profile access with simple macro expansion
-$rc = system "./testbootstrap", 
-	"TheKeysValue", 
-	"-env:ININAME=./bootstraptest.ini", 
-	"-env:SECTIONNAME=TheSection", 
-	"-env:KEYNAME=TheKey", 
+$rc = system "./testbootstrap",
+	"TheKeysValue",
+	"-env:ININAME=./bootstraptest.ini",
+	"-env:SECTIONNAME=TheSection",
+	"-env:KEYNAME=TheKey",
 	'-env:MYBOOTSTRAPTESTVALUE=${$ININAME:$SECTIONNAME:$KEYNAME}';
 if (!$rc) {
 	$comment = $comment . "profile access with simple macro expansion test not passed\n";
@@ -208,8 +208,8 @@ if (!$rc) {
 }
 
 # profile access with complex macro expansion
-$rc = system "./testbootstrap", 
-	"TheKeysValue", 
+$rc = system "./testbootstrap",
+	"TheKeysValue",
 	"-env:ININAME=./bootstraptest.ini",
 	'-env:MYBOOTSTRAPTESTVALUE=${$ININAME:${$ININAME:SecondSection:IndirectSection}:${$ININAME:SecondSection:IndirectKey}}';
 if (!$rc) {
@@ -219,13 +219,13 @@ if (!$rc) {
 
 # test no infinite recursion
 if ($ENV{GUI} eq "WNT") {
-	$rc = system "./testbootstrap", 
-	'"***RECURSION DETECTED***"', 
+	$rc = system "./testbootstrap",
+	'"***RECURSION DETECTED***"',
 	'-env:MYBOOTSTRAPTESTVALUE=$MYBOOTSTRAPTESTVALUE';
 }
 else {
-	$rc = system "./testbootstrap", 
-	'***RECURSION DETECTED***', 
+	$rc = system "./testbootstrap",
+	'***RECURSION DETECTED***',
 	'-env:MYBOOTSTRAPTESTVALUE=$MYBOOTSTRAPTESTVALUE';
 }
 if (!$rc) {
