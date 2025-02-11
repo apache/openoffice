@@ -23,7 +23,7 @@
 require "common.pl";
 
 print "Content-type: text/html\n\n";
-print "<HTML>";
+print "<html>";
 
 # get current and last shown picture id
 $sCurrPic = join( "", common::File_read( "currpic.txt" ) );
@@ -31,22 +31,22 @@ $sCurrPic = join( "", common::File_read( "currpic.txt" ) );
 %aRequestMap = common::HTTP_getRequest();
 $sLastPic = $aRequestMap{ "LastPic" };
 
-print "<HEAD>";
-    print "<META http-equiv=\"refresh\" CONTENT=\"" . $common::REFRESH_TIME . "; URL=poll.pl?LastPic=" . $sCurrPic . "\">";
-print "</HEAD>";
+print "<head>";
+    print "<meta http-equiv=\"refresh\" content=\"" . $common::REFRESH_TIME . "; URL=poll.pl?LastPic=" . $sCurrPic . "\">";
+print "</head>";
 
 #' a new picture was chosen ?
 if( $sLastPic ne $sCurrPic )
 {
     # then show the new picture
-    print "<BODY bgcolor=\"red\" onLoad=\"parent.frame1.location.href='./show.pl?" . $sCurrPic . "'\">";
+    print "<body bgcolor=\"red\" onLoad=\"parent.frame1.location.href='./show.pl?" . $sCurrPic . "'\">";
 }
 else
 {
     # otherwise do nothing
-    print "<BODY bgcolor=\"green\">";
+    print "<body bgcolor=\"green\">";
 }
 
-print "</BODY>";
+print "</body>";
 
-print "</HTML>";
+print "</html>";
