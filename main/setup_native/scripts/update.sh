@@ -1,6 +1,6 @@
 #!/bin/sh
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 GNOMEXCMDS="/usr/bin/gksu"
@@ -50,17 +50,17 @@ make_tempfile() {
     touch $TMPCMD
     echo $TMPCMD
   fi
-  
+
 }
 
-# 
+#
 # make_command_file - generate a command file to pass to xterm & co
 #
 run_in_terminal () {
 
   TMPCMD=`make_tempfile 'Apache_OpenOffice-Online-Update'`
-  
-  cat >> $TMPCMD 
+
+  cat >> $TMPCMD
 
   cat >> $TMPCMD << \EOF
 if [ $? -eq 0 -a ! -z "$DISPLAY" ]; then
@@ -79,7 +79,7 @@ EOF
 }
 
 #
-# run the command line passed as positional parameters either via 
+# run the command line passed as positional parameters either via
 # gksu/kdesu or via su command in a terminal emulator.
 #
 elevate() {
@@ -120,7 +120,7 @@ elevate() {
 
 update_pkg() {
   ADMINFILE=`make_tempfile 'Apache_OpenOffice-Online-Update-admin'`
-  
+
 cat >> $ADMINFILE << EOF
 action=nocheck
 conflict=nocheck
@@ -129,15 +129,15 @@ idepend=nocheck
 rdepend=nocheck
 mail=
 EOF
-  
+
   PKGLIST=""
   for i in `cd $1; ls -d *`; do
     pkginfo -q $i && PKGLIST="$PKGLIST $i"
   done
-  
+
   pkgrm -n -a $ADMINFILE $PKGLIST
   pkgadd -n -a $ADMINFILE -d $1 $PKGLIST
-  
+
   rm -f $ADMINFILE
 }
 
@@ -212,4 +212,4 @@ if [ "$CMD" = "update" ]; then
   fi
 else
   Usage
-fi    
+fi

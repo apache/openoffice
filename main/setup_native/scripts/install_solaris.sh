@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 ADD="no"
@@ -27,12 +27,12 @@ USAGE="Usage: $0 [-a] [-l] [-h] <pkg-source-dir> <office-installation-dir>"
 
 help()
 {
-  echo 
+  echo
   echo "User Mode Installation script for developer and knowledgeable early access tester"
-  echo 
+  echo
   echo "This installation method is not intended for use in a production environment!"
   echo "Using this script is unsupported and completely at your own risk"
-  echo 
+  echo
   echo "Usage:" $0 "<pkg-source-dir> <office-installation-dir> [-l]"
   echo "    <pkg-source-dir>:       directory *only* containing the Solaris pkg packages to be installed"
   echo "                            or language pack shell script containing the Solaris pkg packages"
@@ -60,13 +60,13 @@ try_to_unpack_languagepack_file()
   else
     printf "\nERROR: First parameter $FILENAME is a file, but no language pack shell script.\n"
     echo $USAGE
-    exit 2  
+    exit 2
   fi
-  
+
   echo "Unpacking shell script $FILENAME"
   # TAILLINE=`head -n 20 $FILENAME | sed --quiet 's/linenum=//p'`
   TAILLINE=`head -n 20 $FILENAME | sed -n 's/linenum=//p'`
-  
+
   if [ -x "/usr/bin/mktemp" ]  # available in Solaris 10
   then
     UNPACKDIR=`mktemp -d`
@@ -74,13 +74,13 @@ try_to_unpack_languagepack_file()
     UNPACKDIR=/var/tmp/install_$$
     mkdir $UNPACKDIR
   fi
-  
+
   echo $UNPACKDIR
   tail +$TAILLINE $FILENAME | gunzip | (cd $UNPACKDIR; tar xvf -)
 
   # Setting the new package path, in which the packages exist
   PACKAGE_PATH=$UNPACKDIR
-  
+
   # Setting variable UPDATE, because an Office installation has to exist, if a language pack shall be installed
   UPDATE="yes"
 }
@@ -135,7 +135,7 @@ then
 fi
 
 # Determine whether this is a patch or a regular install set ..
-/bin/bash -c "ls $1/*/patchinfo >/dev/null 2>&1" 
+/bin/bash -c "ls $1/*/patchinfo >/dev/null 2>&1"
 if [ "$?" = 0 ]
 then
   UPDATE="yes"
@@ -156,7 +156,7 @@ else
   fi
 
   #
-  # If the first parameter is a shell script (download installation set), the packages have to 
+  # If the first parameter is a shell script (download installation set), the packages have to
   # be unpacked into temp directory
   #
   if [ -f "$PACKAGE_PATH" ]
@@ -167,7 +167,7 @@ else
   #
   # Create sed filter script for unwanted packages
   #
-  
+
   cat > /tmp/userinstall_filer.$$ << EOF
 /SUNWadabas/d
 /^SUNWj[0-9]/d
@@ -175,12 +175,12 @@ else
 /-shared-mime-info/d
 /-cde/d
 EOF
- 
+
   # Do not install gnome-integration package on systems without GNOME
   pkginfo -q SUNWgnome-vfs
   if [ $? -ne 0 ]
   then
-  
+
     echo '/-gnome/d' >> /tmp/userinstall_filer.$$
   fi
 
@@ -189,20 +189,20 @@ EOF
   if [ ! -x $PKGDEP ]; then
     PKGDEP="get_pkg_list"
   fi
-  
+
   #
   # Get the list of packages to install
   #
-  
+
   PKG_LIST=`$PKGDEP $PACKAGE_PATH | sed -f  /tmp/userinstall_filer.$$`
   rm -f /tmp/userinstall_filer.$$
-  
+
   if [ -z "$PKG_LIST" ]
   then
     printf "\n$0: No packages found in $PACKAGE_PATH\n"
     exit 2
   fi
-  
+
   echo "Packages found:"
   for i in $PKG_LIST ; do
     echo $i
@@ -289,7 +289,7 @@ linenum=???
 tail +$linenum $0 > $GETUID_SO
 
 #
-# Perform the installation 
+# Perform the installation
 #
 if [ "$UPDATE" = "yes" ]
 then
@@ -305,11 +305,11 @@ then
     mkdir -p ${INSTALL_ROOT}/var/sadm/system/admin 2>/dev/null
     cp -f /var/sadm/system/admin/INST_RELEASE ${INSTALL_ROOT}/var/sadm/system/admin/INST_RELEASE
   fi
-  
+
   # The case UPDATE="yes" is valid for patch installation and for language packs.
   # For patches the variable PKG_LIST is empty, for language packs it is not empty.
   # Patches have to be installed with patchadd, language packs with pkgadd
-  
+
   if [ -z "${PKG_LIST}" ]
   then
     LD_PRELOAD_32=$GETUID_SO /usr/sbin/patchadd -R ${INSTALL_ROOT} -M ${PATCH_PATH} ${PATCH_LIST} 2>&1 | grep -v '/var/sadm/patch' || pkg_error
@@ -323,11 +323,11 @@ else
   for i in ${PKG_LIST}; do
     mkdir -m 0755 -p ${INSTALL_ROOT}`pkgparam -d ${PACKAGE_PATH} $i BASEDIR` 2>/dev/null
   done
-  
+
   if [ ! "${INSTALL_ROOT:0:1}" = "/" ]; then
     INSTALL_ROOT=`cd ${INSTALL_ROOT}; pwd`
   fi
-  
+
   echo "####################################################################"
   echo "#     Installation of the found packages                           #"
   echo "####################################################################"
