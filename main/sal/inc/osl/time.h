@@ -153,4 +153,3 @@ sal_uInt32 SAL_CALL osl_getGlobalTimer(void);
 #endif
 
 #endif	/* _OSL_TIME_H_ */
-

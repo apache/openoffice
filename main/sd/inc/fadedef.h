@@ -37,4 +37,3 @@ enum FadeSpeed
 #define FADE_SPEED_COUNT 3
 
 #endif	// _SD_FADEDEF_H
-

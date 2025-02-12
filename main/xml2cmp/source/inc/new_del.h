@@ -47,5 +47,3 @@ void  				Delete(
 	{ type##_DTOR( ptr ); Delete(ptr); }
 
 #endif
-
-

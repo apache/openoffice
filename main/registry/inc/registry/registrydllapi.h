@@ -34,4 +34,3 @@
 #define REGISTRY_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_REGISTRYDLLAPI_H */
-

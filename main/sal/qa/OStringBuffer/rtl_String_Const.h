@@ -545,4 +545,3 @@ static const sal_Int32 kNonSInt16Max = SHRT_MIN;
 //------------------------------------------------------------------------
 
 #endif /* _RTL_STRING_CONST_H_ */
-

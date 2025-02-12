@@ -228,4 +228,3 @@ extern "C" {
 #endif
 
 #endif /*_OSL_ENDIAN_H_ */
-

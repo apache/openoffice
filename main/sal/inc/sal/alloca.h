@@ -59,4 +59,3 @@
 #endif
 
 #endif  /* INCLUDED_SAL_ALLOCA_H */
-

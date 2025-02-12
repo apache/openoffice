@@ -34,4 +34,3 @@
 #define JVMFWK_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_JVMFWKDLLAPI_H */
-

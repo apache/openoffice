@@ -272,4 +272,3 @@ Japanese (JIS 0212)                             RTL_TEXTENCODING_JISX_0212
 */
 
 #endif /* _RTL_TEXTENC_H */
-

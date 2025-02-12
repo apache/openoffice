@@ -106,5 +106,3 @@ sal_Bool SAL_CALL osl_setErrorReporting( sal_Bool bEnable );
 #endif
 
 #endif	/* _OSL_SIGNAL_H_ */
-
-

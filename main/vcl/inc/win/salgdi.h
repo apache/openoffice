@@ -413,4 +413,3 @@ inline bool ImplWinFontData::HasChar( sal_uInt32 cChar ) const
 }
 
 #endif // _SV_SALGDI_H
-

@@ -85,4 +85,3 @@ sal_Bool SAL_CALL osl_checkCondition(oslCondition Condition);
 #endif
 
 #endif /* _OSL_CONDITION_H_ */
-

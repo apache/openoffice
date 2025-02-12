@@ -1014,4 +1014,3 @@
 #define HID_TBX_FORMULA_CALC                                    "SW_HID_TBX_FORMULA_CALC"
 #define HID_TBX_FORMULA_CANCEL                                  "SW_HID_TBX_FORMULA_CANCEL"
 #define HID_TBX_FORMULA_APPLY                                   "SW_HID_TBX_FORMULA_APPLY"
-

@@ -145,4 +145,3 @@ int WINAPI WinMain( HINSTANCE _hinst, HINSTANCE _dummy, char* _cmdline, int _nsh
 #endif
 
 #endif	/* _SAL_MAIN_H_ */
-

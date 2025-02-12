@@ -374,4 +374,3 @@ an existing cert, but that is not the same cert."},
 {SEC_ERROR_BAD_INFO_ACCESS_METHOD, "Unknown information access method in certificate extension."},
 
 {SEC_ERROR_CRL_IMPORT_FAILED, "Error attempting to import a CRL."},
-

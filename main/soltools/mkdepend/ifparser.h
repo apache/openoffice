@@ -72,4 +72,3 @@ typedef struct _if_parser {
 } IfParser;
 
 const char *ParseIfExpression (/* IfParser *, const char *, int * */);
-

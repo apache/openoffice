@@ -43,4 +43,3 @@ void ConstString( void );	//    6
 // ACHTUNG: unbekannte Funktionen -> P0()
 
 #endif
-

@@ -38,4 +38,3 @@ size_t base64_encode( FILE *fin, FILE *fout );
 #endif
 
 #endif /* __BASE64_H */
-

@@ -39,4 +39,3 @@ using ::std::max;
 #endif
 
 #endif 
-

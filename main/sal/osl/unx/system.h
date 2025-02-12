@@ -489,4 +489,3 @@ struct hostent *gethostbyname_r(const char *name, struct hostent *result,
 #endif
 
 #endif /* __OSL_SYSTEM_H__ */
-

@@ -169,4 +169,3 @@ oslFileError FileURLToPath(char * buffer, size_t bufLen, rtl_uString* ustrFileUR
 
 
 #endif /* #define _FILE_URL_H_ */
-

@@ -392,4 +392,3 @@ inline Pixel X11SalGraphics::GetPixel( SalColor nSalColor ) const
 #endif
 
 #endif // _SV_SALGDI_H
-

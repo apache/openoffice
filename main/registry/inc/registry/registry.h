@@ -471,4 +471,3 @@ REGISTRY_DLLPUBLIC RegError REGISTRY_CALLTYPE reg_dumpRegistry(RegKeyHandle hKey
 #endif
 
 #endif
-

@@ -157,4 +157,3 @@ inline const SfxUInt32Item* FormCache::GetAttr( sal_uInt8 nFormat, sal_uInt8 nSt
 }
 
 #endif
-

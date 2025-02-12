@@ -1643,4 +1643,3 @@ static sal_Unicode UnicodeScriptType[][2] = {
 };
 
 #endif
-

@@ -119,4 +119,3 @@
 
     #define IS_NT (GetPlatformId() == VER_PLATFORM_WIN32_NT)
 #endif // #ifdef _DLL_
-

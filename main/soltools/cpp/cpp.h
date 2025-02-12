@@ -256,4 +256,3 @@ extern Nlist *kwdefined;
 extern Includelist includelist[NINCLUDE];
 extern Wraplist wraplist[NINCLUDE];
 extern char wd[];
-

@@ -67,6 +67,3 @@ intt			   	TF_Size( TextFile_THIS );
 
 
 #endif
-
-
-
