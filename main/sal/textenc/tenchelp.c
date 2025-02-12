@@ -206,4 +206,3 @@ ImplHandleUndefinedUnicodeToTextChar(ImplTextConverterData const * pData,
 
     return sal_True;
 }
-

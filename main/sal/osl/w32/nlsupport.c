@@ -223,5 +223,3 @@ void _imp_getProcessLocale( rtl_Locale ** ppLocale )
         *ppLocale = rtl_locale_register( L"C", L"", L"" );
     }
 }
-
-

@@ -309,5 +309,3 @@ void SAL_CALL osl_unloadUserProfile(oslSecurity Security)
 {
     return;
 }
-
-

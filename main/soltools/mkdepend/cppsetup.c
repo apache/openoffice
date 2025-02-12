@@ -231,4 +231,3 @@ int cppsetup(line, filep, inc)
 	return IFFALSE;
 }
 #endif /* CPP */
-

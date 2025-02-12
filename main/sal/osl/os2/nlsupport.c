@@ -437,5 +437,3 @@ int _imp_setProcessLocale( rtl_Locale * pLocale )
 
     return 0;
 }
-
-

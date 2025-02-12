@@ -984,4 +984,3 @@ static sal_Bool SAL_CALL getUserNameImpl(oslSecurity Security, rtl_uString **str
 
     return sal_False;
 }
-

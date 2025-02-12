@@ -40,4 +40,3 @@ echo =============================================
 cp %WS_PATH%/xmlsecurity/tools/uno/current.gif ./.
 java -classpath %WS_PATH%/xmlsecurity/%OUTPUTDIR%/class;%SO_CLASSPATHPATH%/rt.jar;%SO_CLASSPATHPATH%/java_uno.jar;%SO_CLASSPATHPATH%/jurt.jar;%SO_CLASSPATHPATH%/unoil.jar;%SO_CLASSPATHPATH%/ridl.jar;%SO_CLASSPATHPATH%/juh.jar com.sun.star.xml.security.uno.TestTool %WS_PATH%/xmlsecurity/tools/cryptoken/jks/testToken.jks ""
 rm ./current.gif
-

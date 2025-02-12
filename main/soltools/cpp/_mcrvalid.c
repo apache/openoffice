@@ -147,4 +147,3 @@ tokenrow_zeroTokenIdentifiers(Tokenrow* trp)
 		tp->identifier = 0;
 	}
 }
-

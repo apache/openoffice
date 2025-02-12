@@ -212,4 +212,3 @@ oslInterlockedCount SAL_CALL osl_decrementInterlockedCount(oslInterlockedCount* 
 }
 
 #endif /* default */
-

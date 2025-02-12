@@ -54,5 +54,3 @@ void* SAL_CALL rtl_findInMemory(const void *MemA, sal_uInt8 ch, sal_Size Bytes)
 {
 	return memchr(MemA, ch, Bytes);
 }
-
-

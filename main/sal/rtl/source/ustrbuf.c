@@ -200,5 +200,3 @@ void SAL_CALL rtl_uStringbuffer_insert_ascii(   /*inout*/rtl_uString ** This,
         pBuf[ nOldLen + len ] = 0;
     }
 }
-
-

@@ -164,4 +164,3 @@ sal_Int32 SAL_CALL osl_reportError(sal_uInt32 nType, const sal_Char* pszMessage)
 
 	return nDisposition;
 }
-
