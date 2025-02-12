@@ -37,7 +37,7 @@ repos:
       - id: mixed-line-ending
         files: ^main/.*\.(c|h)xx$
       - id: trailing-whitespace
-        files: \.pl$
+        files: \.(pl|sh|ya?ml)$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
     hooks:

@@ -8,7 +8,7 @@ if ( $# < 2 ) then
     echo "e.g.    fix_l10n.sh s/test/ivo/g *.sdf"
     echo "or      fix_l10n.sh 's/abc<ctrl+v+tab>/abcx<ctrl+v+tab/'"
     exit( -1 )
-endif  
+endif
 
 foreach file ( $files )
     echo "Processing $1 on file $file"
