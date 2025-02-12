@@ -966,5 +966,3 @@ int _imp_setProcessLocale( rtl_Locale * pLocale )
 }
 
 #endif /* ifdef LINUX || SOLARIS || MACOSX || NETBSD */
-
-

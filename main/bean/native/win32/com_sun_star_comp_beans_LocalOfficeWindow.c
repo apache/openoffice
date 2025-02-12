@@ -201,5 +201,3 @@ static LRESULT APIENTRY OpenOfficeWndProc(
 #pragma warning(pop)
 #endif
 }
-
-

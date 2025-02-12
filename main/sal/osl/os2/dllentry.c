@@ -67,5 +67,3 @@ sal_uInt32 _System _DLL_InitTerm( sal_uInt32 nModule,
 	return (sal_True);
 }
 #endif
-
-

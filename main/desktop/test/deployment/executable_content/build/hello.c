@@ -37,5 +37,3 @@ int main(int argc , char** argv, char** envp)
     fprintf(stdout,"Hello world!\n");
     return 0;
 }
-
-

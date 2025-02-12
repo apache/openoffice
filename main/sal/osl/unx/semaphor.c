@@ -307,4 +307,3 @@ sal_Bool SAL_CALL osl_releaseSemaphore(oslSemaphore Semaphore)
 }
 
 #endif /* OSL_USE_SYS_V_SEMAPHORE */
-

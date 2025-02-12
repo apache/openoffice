@@ -38,4 +38,3 @@ int main( argc, argv )
 #endif
     return( start_cpp( argc, argv ) );
 }
-

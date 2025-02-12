@@ -241,5 +241,3 @@ short SwParagrDlg(void *pHandle)
 									 pHandle,0,pEmpty);
 	return 0;
 }
-
-

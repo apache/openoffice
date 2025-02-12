@@ -209,4 +209,3 @@ sal_uInt32 SAL_CALL osl_getGlobalTimer(void)
 
   return ( nSeconds * 1000 ) + (long)( currentTime.millitm - startTime.millitm );
 }
-

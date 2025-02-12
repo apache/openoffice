@@ -242,4 +242,3 @@ sal_Bool SAL_CALL osl_setErrorReporting( sal_Bool bEnable )
 
 	return bOld;
 }
-

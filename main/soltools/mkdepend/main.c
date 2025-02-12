@@ -796,4 +796,3 @@ char* append_slash(path)
     }
     return new_string;
 }
-

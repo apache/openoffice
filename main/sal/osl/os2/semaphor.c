@@ -182,5 +182,3 @@ sal_Bool SAL_CALL osl_releaseSemaphore(oslSemaphore Semaphore)
 
     return( rc == NO_ERROR );
 }
-
-

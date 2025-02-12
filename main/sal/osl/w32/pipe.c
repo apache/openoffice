@@ -629,4 +629,3 @@ oslPipeError SAL_CALL osl_getLastPipeError(oslPipe pPipe)
 
 	return (Error);
 }
-

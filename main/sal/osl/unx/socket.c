@@ -3060,4 +3060,3 @@ sal_Int32 SAL_CALL osl_demultiplexSocketEvents(oslSocketSet IncomingSet,
 				  pOOBSet ? PTR_FD_SET(pOOBSet->m_Set) : 0,
 				  pTimeout ? &tv : 0);
 }
-

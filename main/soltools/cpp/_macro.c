@@ -775,4 +775,3 @@ void
     tp->len = op - outptr;
     outptr = op;
 }
-
