@@ -457,4 +457,3 @@ template< typename T1, typename T2 > inline T1 static_int_cast(T2 n) {
 #endif /* __cplusplus */
 
 #endif /*_SAL_TYPES_H_ */
-

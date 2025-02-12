@@ -312,4 +312,3 @@ void SAL_CALL rtl_cipher_destroyARCFOUR (
 #endif
 
 #endif /* !_RTL_CIPHER_H_ */
-

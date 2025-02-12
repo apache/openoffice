@@ -34,4 +34,3 @@
 #define SALHELPER_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_SALHELPERDLLAPI_H */
-

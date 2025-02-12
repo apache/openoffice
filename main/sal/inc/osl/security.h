@@ -151,4 +151,3 @@ void SAL_CALL osl_unloadUserProfile(oslSecurity Security);
 #endif
 
 #endif	/* _OSL_SECURITY_H_ */
-

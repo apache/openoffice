@@ -64,4 +64,3 @@
 #define CHRDLG_POSITION_UNDER				1
 
 #endif
-

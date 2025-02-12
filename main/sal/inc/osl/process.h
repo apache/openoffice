@@ -436,4 +436,3 @@ oslSocket SAL_CALL osl_receiveResourcePipe(oslPipe Pipe);
 #endif
 
 #endif    /* _OSL_PROCESS_H_ */
-

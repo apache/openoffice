@@ -45,4 +45,3 @@
 //	global _Module.  (Its definition is in XMergeSync.cpp.)
 //
 extern CXMergeSyncModule _Module;
-

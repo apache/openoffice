@@ -34,4 +34,3 @@
 #define FORMULA_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_FORMULADLLAPI_H */
-

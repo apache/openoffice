@@ -237,4 +237,3 @@ extern "C"
 
 // Konfl�kt mit den Tools-Pair vermeiden
 #undef Pair
-

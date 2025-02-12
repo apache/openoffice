@@ -105,4 +105,3 @@ inline FASTBOOL IsError( sal_uLong nErr )
 
 
 #endif
-

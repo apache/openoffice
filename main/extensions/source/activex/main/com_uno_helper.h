@@ -42,4 +42,3 @@ HRESULT GetPropertiesFromIDisp( IDispatch* pdispObject,
 							    OLECHAR** sMemberNames, 
 							    CComVariant* pVariant, 
 							    unsigned int count );
-

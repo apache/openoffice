@@ -259,4 +259,3 @@ SAL_CALL rtl_cache_free (
 #endif
 
 #endif /*_RTL_ALLOC_H_ */
-

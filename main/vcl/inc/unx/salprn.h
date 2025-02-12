@@ -119,5 +119,3 @@ public:
 }
 
 #endif // _SV_SALPRN_H
-
-

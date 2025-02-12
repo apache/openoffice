@@ -46,6 +46,3 @@ typedef long	  	intt;
 
 
 #endif
-
-
-

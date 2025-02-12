@@ -74,4 +74,3 @@ EXTERN_C const GUID DECLSPEC_SELECTANY OID_MathOASISServer = { SO3_SM_OLE_EMBED_
 #endif
 
 #endif
-

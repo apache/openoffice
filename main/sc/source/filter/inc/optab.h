@@ -45,4 +45,3 @@ typedef void ( *OPCODE_FKT )( SvStream &aStream, sal_uInt16 nLaenge );
 #define COL_FORMAT_MARKER 0x107
 
 #endif
-

@@ -286,4 +286,3 @@ inline XLIB_Window X11SalFrame::GetDrawable() const
 #endif
 
 #endif // _SV_SALFRAME_H
-

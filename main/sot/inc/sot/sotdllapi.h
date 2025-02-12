@@ -34,4 +34,3 @@
 #define SOT_DLLPRIVATE SAL_DLLPRIVATE
                                                                                                                              
 #endif /* INCLUDED_SOTDLLAPI_H */
-

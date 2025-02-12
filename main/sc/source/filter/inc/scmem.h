@@ -30,4 +30,3 @@ sal_Bool MemNew( void );
 void MemDelete( void );
 
 #endif
-

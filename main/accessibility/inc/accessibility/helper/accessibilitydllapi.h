@@ -34,4 +34,3 @@
 #define ACCESSIBILITY_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_ACCESSIBILITYDLLAPI_H */
-

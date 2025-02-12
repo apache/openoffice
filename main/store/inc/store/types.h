@@ -160,4 +160,3 @@ typedef struct __store_FindData storeFindData;
 #endif
 
 #endif /* _STORE_TYPES_H_ */
-

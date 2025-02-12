@@ -133,4 +133,3 @@ sal_uInt32 SAL_CALL osl_getProfileSections(oslProfile Profile, sal_Char* pszBuff
 #endif
 
 #endif	/* _OSL_PROFILE_H_ */
-

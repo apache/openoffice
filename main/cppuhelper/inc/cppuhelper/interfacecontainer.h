@@ -612,4 +612,3 @@ typedef OBroadcastHelperVar< OMultiTypeInterfaceContainerHelper , OMultiTypeInte
 }     
 
 #endif
-
