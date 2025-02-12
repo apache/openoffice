@@ -89,5 +89,3 @@ int main(int argc, char *argv[])
 	printf(": ERROR: %s\n", dlerror());
 	return 3;
 }
-
-

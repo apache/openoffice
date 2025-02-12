@@ -922,4 +922,3 @@ register int	*valp;		/* -> value vector		*/
 	}
 }
 #endif
-

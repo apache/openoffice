@@ -296,4 +296,3 @@ sal_Bool SAL_CALL osl_getModuleURLFromFunctionAddress( oslGenericFunction addr, 
 }
 
 /*****************************************************************************/
-

@@ -58,4 +58,3 @@ int main (int argc, char **argv)
 	rtl_random_destroyPool (pool);
 	return(0);
 }
-

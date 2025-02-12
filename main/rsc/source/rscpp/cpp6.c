@@ -1141,4 +1141,3 @@ void ciwarn(char* format, int narg)
 {
         domsg("IWarning", format, &narg);
 }
-

@@ -331,4 +331,3 @@ rtlRandomError SAL_CALL rtl_random_getBytes (
 	__rtl_random_readPool (pImpl, pBuffer, Bytes);
 	return rtl_Random_E_None;
 }
-

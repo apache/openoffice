@@ -586,5 +586,3 @@ sal_Int32 SAL_CALL osl_readPipe( oslPipe pPipe, void *pBuffer , sal_Int32 n )
 	}
 	return BytesRead;
 }
-
-

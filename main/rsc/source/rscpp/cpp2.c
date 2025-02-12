@@ -618,4 +618,3 @@ char            *result;        /* Size is at least NAM$C_MAXRSS + 1    */
         return (FALSE);
 }
 #endif
-

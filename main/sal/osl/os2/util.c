@@ -29,5 +29,3 @@ extern sal_Bool osl_getEthernetAddress( sal_uInt8 * pTargetAddress )
 {
 	return sal_False;
 }
-
-

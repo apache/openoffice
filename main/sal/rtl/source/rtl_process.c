@@ -42,4 +42,3 @@ void SAL_CALL rtl_getGlobalProcessId( sal_uInt8 *pTargetUUID )
 	}
 	memcpy( pTargetUUID , pUuid , 16 );
 }
-

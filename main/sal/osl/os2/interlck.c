@@ -43,5 +43,3 @@ oslInterlockedCount SAL_CALL osl_decrementInterlockedCount(oslInterlockedCount* 
 {
 	return __atomic_decrement_s32( pCount);
 }
-
-
