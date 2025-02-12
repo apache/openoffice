@@ -31,4 +31,3 @@
 #define I18NUTIL_DLLPRIVATE SAL_DLLPRIVATE
 
 #endif
-

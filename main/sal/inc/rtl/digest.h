@@ -632,4 +632,3 @@ rtlDigestError SAL_CALL rtl_digest_PBKDF2 (
 #endif
 
 #endif /* _RTL_DIGEST_H_ */
-

@@ -34,4 +34,3 @@
 #define CPPUHELPER_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_CPPUHELPERDLLAPI_H */
-

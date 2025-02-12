@@ -144,5 +144,3 @@ extern "C" {
 #endif
 
 #endif /*_SAL_CONFIG_H_ */
-
-

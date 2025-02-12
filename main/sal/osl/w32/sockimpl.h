@@ -100,5 +100,3 @@ static sal_Bool __osl_attemptSocketDialupImpl (void);
 #endif
 
 #endif 
-
-

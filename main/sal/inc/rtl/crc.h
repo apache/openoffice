@@ -59,4 +59,3 @@ sal_uInt32 SAL_CALL rtl_crc32 (
 #endif
 
 #endif /* _RTL_CRC_H_ */
-

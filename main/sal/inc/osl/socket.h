@@ -884,4 +884,3 @@ sal_Int32 SAL_CALL osl_writeSocket( oslSocket Socket, const void *pBuffer, sal_I
 #endif
 
 #endif	/* _OSL_SOCKET_H_ */
-

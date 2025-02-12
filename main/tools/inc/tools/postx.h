@@ -66,4 +66,3 @@ Error KeyPress must be Equal 2
 #define XLIB_KeyPress 2
 
 #endif
-

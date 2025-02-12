@@ -136,4 +136,3 @@ typedef struct {
 } EContactAddress;
 G_END_DECLS
 #endif
-

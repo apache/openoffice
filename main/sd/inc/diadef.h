@@ -35,4 +35,3 @@ enum PresChange
 #define PRESCHANGE_COUNT 3
 
 #endif // _SD_DIADEF_H
-

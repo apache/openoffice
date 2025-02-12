@@ -60,4 +60,3 @@ typedef unsigned long Pixel;
 #define __Ol_OlXlibExt_h__
 
 #endif
-

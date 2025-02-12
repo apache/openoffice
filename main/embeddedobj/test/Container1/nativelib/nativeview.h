@@ -50,4 +50,3 @@ JNIEXPORT jlong JNICALL Java_embeddedobj_test_NativeView_getNativeWindow
 }
 #endif
 #endif
-

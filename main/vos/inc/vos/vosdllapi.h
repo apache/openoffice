@@ -34,4 +34,3 @@
 #define VOS_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_VOSDLLAPI_H */
-

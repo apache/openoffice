@@ -473,4 +473,3 @@ inline RGBAColor::RGBAColor( float fRed, float fGreen, float fBlue, float fAlpha
 }
 
 #endif // _SV_SALGDI_H
-

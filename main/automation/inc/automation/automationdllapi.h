@@ -36,4 +36,3 @@
 #define AUTOMATION_DLLPRIVATE SAL_DLLPRIVATE
                                                                                                                              
 #endif /* INCLUDED_AUTOMATIONDLLAPI_H */
-

@@ -48,4 +48,3 @@
 #define XMLSEC_CALL			1
 
 #endif
-

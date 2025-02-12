@@ -40,4 +40,3 @@ typedef struct _oslProcessImpl {
 #endif
 
 #endif
-

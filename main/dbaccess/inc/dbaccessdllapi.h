@@ -36,4 +36,3 @@
 #define DBACCESS_DLLPRIVATE SAL_DLLPRIVATE
                                                                                                                              
 #endif /* INCLUDED_DBACCESSDLLAPI_H */
-

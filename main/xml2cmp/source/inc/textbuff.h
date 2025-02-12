@@ -78,4 +78,3 @@ Bool				TB_EndOfBuffer( TextBuffer_THIS );
 
 
 #endif
-

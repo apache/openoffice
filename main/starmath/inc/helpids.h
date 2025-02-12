@@ -319,4 +319,3 @@
 #define HID_SMA_NOSPACE                                   "STARMATH_HID_SMA_NOSPACE"
 
 #endif
-

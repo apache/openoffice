@@ -185,6 +185,3 @@ bool hasNoFolder(::rtl::OUString const & folderUrl);
 void removeFolder(::rtl::OUString const & folderUrl);
 
 }
-
-
-

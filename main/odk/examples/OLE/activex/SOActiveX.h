@@ -152,4 +152,3 @@ public:
 };
 
 #endif //__SOACTIVEX_H_
-

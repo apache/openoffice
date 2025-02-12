@@ -37,4 +37,3 @@ typedef sal_Char STRING6[ 6 ];
 typedef sal_uInt16 USHORT4[ 4 ];
 //typedef unsigned short USHORT4[ 4 ];
 #endif
-

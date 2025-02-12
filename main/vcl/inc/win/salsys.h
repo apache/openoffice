@@ -85,4 +85,3 @@ public:
 };
 
 #endif // _SV_SALSYS_H
-

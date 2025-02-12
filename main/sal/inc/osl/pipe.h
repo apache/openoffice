@@ -95,4 +95,3 @@ oslPipeError SAL_CALL osl_getLastPipeError(oslPipe Pipe);
 #endif
 
 #endif	/* _OSL_PIPE_H_ */
-

@@ -211,4 +211,3 @@ namespace framework{
 }		//	namespace framework
 
 #endif	//	#ifndef __FRAMEWORK_SERVICES_H_
-

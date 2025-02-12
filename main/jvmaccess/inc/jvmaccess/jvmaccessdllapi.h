@@ -34,4 +34,3 @@
 #define JVMACCESS_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_JVMACCESSDLLAPI_H */
-

@@ -65,6 +65,3 @@ static const sal_Int32 kErrCompareNAStringToString     = -9;
 //------------------------------------------------------------------------
 
 #endif /* _RTL_STRING_UTILS_CONST_H_ */
-
-
-

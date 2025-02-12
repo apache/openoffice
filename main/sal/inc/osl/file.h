@@ -1586,5 +1586,3 @@ oslFileError SAL_CALL osl_createTempFile(
 #endif
 
 #endif	/* _OSL_FILE_H_ */
-
-
