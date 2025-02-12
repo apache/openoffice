@@ -45,15 +45,15 @@ if( abs( $sCurrPic ) > 0 )
     }
 }
 
-print "<HTML>";
+print "<html>";
 
-print "<HEAD>";
-    print "<TITLE>$$1</TITLE>";
-print "</HEAD>";
+print "<head>";
+    print "<title>$$1</title>";
+print "</head>";
 
-print "<BODY bgcolor=\"white\">";
-    print "<P ALIGN=CENTER><IMG src=\"" . $sPictureName1 . "\" width=$$4 height=$$5 border=0>";
-    print "<P><IMG src=\"" . $sPictureName2 . "\" width=1 height=1 border=0>";
-print "</BODY>";
+print "<body bgcolor=\"white\">";
+    print "<p align=center><img src=\"" . $sPictureName1 . "\" width=$$4 height=$$5 border=0>";
+    print "<p><img src=\"" . $sPictureName2 . "\" width=1 height=1 border=0>";
+print "</body>";
 
-print "</HTML>";
+print "</html>";
