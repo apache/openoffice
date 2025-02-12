@@ -1,6 +1,6 @@
 #!/bin/bash
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 ADD="no"
@@ -30,10 +30,10 @@ help()
 {
   echo
   echo "User Mode Installation script for developer and knowledgeable early access tester"
-  echo 
+  echo
   echo "This installation method is not intended for use in a production environment!"
   echo "Using this script is unsupported and completely at your own risk"
-  echo 
+  echo
   echo "Usage:" $0 [-lU] "<rpm-source-dir> <office-installation-dir>"
   echo "    <rpm-source-dir>: directory *only* containing the Linux rpm packages to be installed"
   echo "                      or language pack shell script containing the rpm packages"
@@ -63,9 +63,9 @@ try_to_unpack_languagepack_file()
   else
     printf "\nERROR: First parameter $FILENAME is a file, but no language pack shell script.\n"
     echo $USAGE
-    exit 2  
+    exit 2
   fi
-  
+
   echo "Unpacking shell script $FILENAME"
   TAILLINE=`head --lines=20 $FILENAME | sed --quiet 's/linenum=//p'`
 
@@ -76,7 +76,7 @@ try_to_unpack_languagepack_file()
 
   # Setting the new package path, in which the packages exist
   PACKAGE_PATH=$UNPACKDIR
-  
+
   # Setting variable UPDATE, because an Office installation has to exist, if a language pack shall be installed
   UPDATE="yes"
 }
@@ -120,7 +120,7 @@ fi
 PACKAGE_PATH=$1
 
 #
-# If the first parameter is a shell script (download installation set), the packages have to 
+# If the first parameter is a shell script (download installation set), the packages have to
 # be unpacked into temp directory
 #
 
@@ -150,7 +150,7 @@ else
 fi
 
 #
-# Determine whether this should be an update or a fresh install 
+# Determine whether this should be an update or a fresh install
 #
 
 INSTALLDIR=$2
@@ -159,7 +159,7 @@ RPM_DB_PATH=${INSTALLDIR}/var/lib/rpm
 # Check for versionrc
 if [ -f ${INSTALLDIR}/program/versionrc ]; then VERSIONRC=versionrc; fi
 
-if [ "$UPDATE" = "ask" ] 
+if [ "$UPDATE" = "ask" ]
 then
   PRODUCT=`sed --silent -e "
 /^buildid=/ {
@@ -218,7 +218,7 @@ then
   if [ ! "${RPM_DB_PATH:0:1}" = "/" ]; then
     RPM_DB_PATH=`cd ${RPM_DB_PATH}; pwd`
   fi
-  
+
   # we should use --freshen for updates to not add languages with patches, but this will break
   # language packs, so leave it for now ..
 #  RPMCMD="--freshen"
@@ -245,7 +245,7 @@ else
   if [ "$ADD" = "no" ]; then
     rpm --initdb --dbpath $RPM_DB_PATH
   fi
-  
+
   # Default install command
   RPMCMD="--install"
 fi
@@ -265,7 +265,7 @@ for i in $RPMLIST ; do
 done
 
 #
-# Perform the installation 
+# Perform the installation
 #
 
 echo
