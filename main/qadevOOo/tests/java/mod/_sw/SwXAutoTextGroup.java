@@ -55,7 +55,7 @@ import util.utils;
  *  <li> <code>com::sun::star::text::XAutoTextGroup</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.container.XNamed
  * @see com.sun.star.container.XNameAccess
  * @see com.sun.star.container.XIndexAccess

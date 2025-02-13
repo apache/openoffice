@@ -74,7 +74,7 @@ import com.sun.star.uno.XInterface;
  *  adding a shape tested to it. </li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.style.ParagraphProperties
  * @see com.sun.star.drawing.LineProperties

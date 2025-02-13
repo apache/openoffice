@@ -58,7 +58,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::sheet::XSheetAnnotation</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.sheet.CellAnnotation
 * @see com.sun.star.text.XSimpleText
 * @see com.sun.star.text.XTextRange

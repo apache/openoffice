@@ -52,7 +52,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::beans::XPropertySet</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.sheet.TableAutoFormatField
 * @see com.sun.star.beans.XPropertySet
 * @see ifc.sheet._TableAutoFormatField

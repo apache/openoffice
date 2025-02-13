@@ -129,7 +129,7 @@ import ifc.sdb._XCompletedExecution;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * The following parameters in ini-file used by this test:
  * <ul>
  *   <li><code>test.db.url</code> - URL to MySQL database.
