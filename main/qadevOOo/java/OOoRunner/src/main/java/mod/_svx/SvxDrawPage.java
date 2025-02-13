@@ -68,7 +68,7 @@ import util.ShapeDsc;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.drawing.GenericDrawPage
  * @see com.sun.star.drawing.XShapeBinder

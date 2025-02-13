@@ -59,7 +59,7 @@ import com.sun.star.uno.XInterface;
  *  <li> <code>com::sun::star::drawing::XShapeCombiner</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.drawing.GenericDrawPage
  * @see com.sun.star.drawing.XShapeBinder
  * @see com.sun.star.drawing.XShapeGrouper

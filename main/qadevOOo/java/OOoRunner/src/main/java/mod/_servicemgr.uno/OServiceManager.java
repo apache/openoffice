@@ -55,7 +55,7 @@ import com.sun.star.uno.Type;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.lang.XMultiServiceFactory
  * @see com.sun.star.container.XContentEnumerationAccess

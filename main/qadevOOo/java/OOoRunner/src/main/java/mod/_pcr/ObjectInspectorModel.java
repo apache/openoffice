@@ -51,7 +51,7 @@ import util.utils;
  *  <li> <code>com::sun::star::inspection::XObjectInspectorModel</code></li>
  * </ul>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.inspection.XObjectInspectorModel
  */
 public class ObjectInspectorModel extends TestCase {

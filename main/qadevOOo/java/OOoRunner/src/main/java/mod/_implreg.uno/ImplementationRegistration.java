@@ -38,7 +38,7 @@ import lib.TestParameters;
 *  <li> <code>com::sun::star::registry::XImplementationRegistration</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.registry.XImplementationRegistration
 * @see com.sun.star.registry.ImplementationRegistration
 * @see ifc.registry._XImplementationRegistration

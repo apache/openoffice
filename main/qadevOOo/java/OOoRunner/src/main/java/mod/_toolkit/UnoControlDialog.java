@@ -61,7 +61,7 @@ import util.SOfficeFactory;
 *  <li> <code>com::sun::star::awt::XView</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.lang.XComponent
 * @see com.sun.star.awt.XWindow
 * @see com.sun.star.awt.XDialog
