@@ -123,7 +123,7 @@ public class NativeView extends java.awt.Canvas
 
     /**
      * JNI interface of this class
-     * These two methods are implemented by using JNI mechanismen.
+     * These two methods are implemented by using JNI mechanism.
      * The will be used to get the platform dependent window handle
      * of a java awt canvas. This handle can be used to create an office
      * window as direct child of it. So it's possible to plug Office
