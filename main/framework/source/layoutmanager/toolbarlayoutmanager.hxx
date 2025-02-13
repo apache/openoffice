@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef __FRAMEWORK_LAYOUTMANAGER_TOOLBARLAYOUTMANAGER_HXX_
 #define __FRAMEWORK_LAYOUTMANAGER_TOOLBARLAYOUTMANAGER_HXX_
@@ -96,15 +94,15 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
                      const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationManager >& xModuleCfgMgr,
                      const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationManager >& xDocCfgMgr,
                      const ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess >& xPersistentWindowState );
-        
+
         void setParentWindow( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& xParentWindow );
         void setDockingAreaOffsets( const ::Rectangle aOffsets );
 
         void resetDockingArea();
-        
+
         ::com::sun::star::awt::Rectangle getDockingArea();
         void setDockingArea( const ::com::sun::star::awt::Rectangle& rDockingArea );
-        
+
         // layouting
         bool isLayoutDirty();
         void doLayout(const ::Size& aContainerSize);
@@ -112,7 +110,7 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         // creation/destruction
         void createStaticToolbars();
         void destroyToolbars();
-        
+
         bool requestToolbar( const ::rtl::OUString& rResourceURL );
         bool createToolbar( const ::rtl::OUString& rResourceURL );
         bool destroyToolbar( const ::rtl::OUString& rResourceURL );
@@ -129,10 +127,10 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         // docking and further functions
         bool dockToolbar( const ::rtl::OUString& rResourceURL, ::com::sun::star::ui::DockingArea eDockingArea, const ::com::sun::star::awt::Point& aPos );
         bool dockAllToolbars();
-        bool floatToolbar( const ::rtl::OUString& rResoureURL );
+        bool floatToolbar( const ::rtl::OUString& rResourceURL );
         bool lockToolbar( const ::rtl::OUString& rResourceURL );
         bool unlockToolbar( const ::rtl::OUString& rResourceURL );
-        void setToolbarPos( const ::rtl::OUString& rResourceURL, const ::com::sun::star::awt::Point& aPos ); 
+        void setToolbarPos( const ::rtl::OUString& rResourceURL, const ::com::sun::star::awt::Point& aPos );
         void setToolbarSize( const ::rtl::OUString& rResourceURL, const ::com::sun::star::awt::Size& aSize );
         void setToolbarPosSize( const ::rtl::OUString& rResourceURL, const ::com::sun::star::awt::Point& aPos, const ::com::sun::star::awt::Size& aSize );
         bool isToolbarVisible( const ::rtl::OUString& rResourceURL );
@@ -153,12 +151,12 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         virtual void SAL_CALL acquire() throw();
         virtual void SAL_CALL release() throw();
         virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw( ::com::sun::star::uno::RuntimeException );
-        
+
         //---------------------------------------------------------------------------------------------------------
         // XEventListener
         //---------------------------------------------------------------------------------------------------------
         virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
-        
+
         //---------------------------------------------------------------------------------------------------------
         // XWindowListener
         //---------------------------------------------------------------------------------------------------------
@@ -174,7 +172,7 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         virtual ::com::sun::star::awt::DockingData SAL_CALL docking( const ::com::sun::star::awt::DockingEvent& e ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL endDocking( const ::com::sun::star::awt::EndDockingEvent& e ) throw (::com::sun::star::uno::RuntimeException);
         virtual sal_Bool SAL_CALL prepareToggleFloatingMode( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL toggleFloatingMode( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException); 
+        virtual void SAL_CALL toggleFloatingMode( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL closed( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL endPopupMode( const ::com::sun::star::awt::EndPopupModeEvent& e ) throw (::com::sun::star::uno::RuntimeException);
 
@@ -183,7 +181,7 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         //---------------------------------------------------------------------------------------------------------
         virtual void SAL_CALL elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);        
+        virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
 
     private:
         enum DockingOperation
@@ -192,7 +190,7 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
             DOCKOP_ON_COLROW,
             DOCKOP_AFTER_COLROW
         };
-        
+
         typedef std::vector< UIElement > UIElementVector;
         struct SingleRowColumnWindowData
         {
@@ -254,12 +252,12 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         void             implts_calcDockingPosSize( UIElement& aUIElement, DockingOperation& eDockOperation, ::Rectangle& rTrackingRect, const Point& rMousePos );
         DockingOperation implts_determineDockingOperation( ::com::sun::star::ui::DockingArea DockingArea, const ::Rectangle& rRowColRect, const Point& rMousePos );
         ::Rectangle      implts_getWindowRectFromRowColumn( ::com::sun::star::ui::DockingArea DockingArea, const SingleRowColumnWindowData& rRowColumnWindowData, const ::Point& rMousePos, const rtl::OUString& rExcludeElementName );
-        ::Rectangle      implts_determineFrontDockingRect( ::com::sun::star::ui::DockingArea eDockingArea, 
-                                                           sal_Int32 nRowCol, 
+        ::Rectangle      implts_determineFrontDockingRect( ::com::sun::star::ui::DockingArea eDockingArea,
+                                                           sal_Int32 nRowCol,
                                                            const ::Rectangle& rDockedElementRect,
                                                            const ::rtl::OUString& rMovedElementName,
                                                            const ::Rectangle& rMovedElementRect );
-        ::Rectangle      implts_calcTrackingAndElementRect( ::com::sun::star::ui::DockingArea eDockingArea, 
+        ::Rectangle      implts_calcTrackingAndElementRect( ::com::sun::star::ui::DockingArea eDockingArea,
                                                             sal_Int32 nRowCol,
                                                             UIElement& rUIElement,
                                                             const ::Rectangle& rTrackingRect,
@@ -304,17 +302,17 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         css::uno::Reference< ::com::sun::star::awt::XToolkit >               m_xToolkit;
         css::uno::Reference< ::com::sun::star::container::XNameAccess >      m_xPersistentWindowState;
         ILayoutNotifications*                                                m_pParentLayouter;
-        
+
         UIElementVector                                                      m_aUIElements;
         UIElement                                                            m_aDockUIElement;
         Point                                                                m_aStartDockMousePos;
         Rectangle                                                            m_aDockingArea;
         Rectangle                                                            m_aDockingAreaOffsets;
         DockingOperation                                                     m_eDockOperation;
-        
+
         AddonsOptions*                                                       m_pAddonOptions;
         GlobalSettings*                                                      m_pGlobalSettings;
-        
+
         bool                                                                 m_bComponentAttached;
         bool                                                                 m_bMustLayout;
         bool                                                                 m_bLayoutDirty;
@@ -324,7 +322,7 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
         bool                                                                 m_bVisible;
         bool                                                                 m_bLayoutInProgress;
         bool                                                                 m_bToolbarCreation;
-        
+
         ::rtl::OUString                                                      m_aFullAddonTbxPrefix;
         ::rtl::OUString                                                      m_aCustomTbxPrefix;
         ::rtl::OUString                                                      m_aCustomizeCmd;
@@ -335,3 +333,5 @@ class ToolbarLayoutManager : public ::cppu::WeakImplHelper3< ::com::sun::star::a
 } // namespace framework
 
 #endif // __FRAMEWORK_LAYOUTMANAGER_TOOLBARLAYOUTMANAGER_HXX_
+
+/* vim: set noet sw=4 ts=4: */
