@@ -66,7 +66,7 @@ import com.sun.star.view.XControlAccess;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.lang.XComponent
  * @see com.sun.star.awt.XWindow

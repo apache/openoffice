@@ -50,7 +50,7 @@ import com.sun.star.uno.XInterface;
  *   some key set. </li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.registry.XSimpleRegistry
  * @see ifc.registry._XSimpleRegistry

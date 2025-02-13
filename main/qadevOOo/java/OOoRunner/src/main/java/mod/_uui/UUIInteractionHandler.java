@@ -41,7 +41,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::task::XInteractionHandler</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see ifc.task._XInteractionHandler
 */
 public class UUIInteractionHandler extends TestCase {

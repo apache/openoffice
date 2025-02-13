@@ -55,7 +55,7 @@ import com.sun.star.uno.XInterface;
  *   save its info. </li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.lang.XComponent
  * @see com.sun.star.document.DocumentInfo
