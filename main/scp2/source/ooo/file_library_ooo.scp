@@ -1774,7 +1774,7 @@ File gid_File_Lib_Openssl
     TXT_FILE_BODY;
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
-  #if defined(WNT) && defined(X86)
+  #if defined(WNT) && defined(INTEL)
     Name = "libssl-3.dll";
   #elif defined(WNT) && defined(X86_64)
     Name = "libssl-3-x64.dll";
@@ -1789,7 +1789,7 @@ File gid_File_Lib_Crypto
     TXT_FILE_BODY;
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
-  #if defined(WNT) && defined(X86)
+  #if defined(WNT) && defined(INTEL)
     Name = "libcrypto-3.dll";
   #elif defined(WNT) && defined(X86_64)
     Name = "libcrypto-3-x64.dll";
