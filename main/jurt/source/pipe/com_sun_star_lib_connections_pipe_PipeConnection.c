@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include "jni.h"
 #include "osl/security.h"
@@ -32,7 +30,7 @@
    wrapped code are truncated from the long JNICALL names, as JNICALL causes
    some "@N" with different numeric values for N (and probably different across
    32 and 64 bit) to be added to the symbol names, which the calls to
-   GetProcAddress in wrapper/wrapper.c would otheriwse have to take into
+   GetProcAddress in wrapper/wrapper.c would otherwise have to take into
    account.
 */
 
@@ -215,11 +213,11 @@ JNICALL Java_com_sun_star_lib_connections_pipe_PipeConnection_createJNI
     (*env)->SetLongField(
         env, obj_this, fid, SAL_INT_CAST(jlong, (sal_IntPtr) npipe));
 
-    /* done */
-    rtl_uString_release(pname);
-    (*env)->MonitorExit(env, obj_this);
-    osl_freeSecurityHandle(psec);
-    return;
+	/* done */
+	rtl_uString_release(pname);
+	(*env)->MonitorExit(env, obj_this);
+	osl_freeSecurityHandle(psec);
+	return;
 
  error:
 	switch (state)
@@ -232,7 +230,7 @@ JNICALL Java_com_sun_star_lib_connections_pipe_PipeConnection_createJNI
 		case INMONITOR:
 			(*env)->MonitorExit(env, obj_this);
 		case START:
-            osl_freeSecurityHandle(psec);
+			osl_freeSecurityHandle(psec);
 		default:
 			break;
 	}
@@ -303,15 +301,15 @@ JNICALL Java_com_sun_star_lib_connections_pipe_PipeConnection_closeJNI
         goto error;
     }
 
-    (*env)->SetLongField(env, obj_this, fid, (jlong)0);
+	(*env)->SetLongField(env, obj_this, fid, (jlong)0);
 
-    /* release the pipe */
-    osl_closePipe(npipe);
-    osl_releasePipe(npipe);
+	/* release the pipe */
+	osl_closePipe(npipe);
+	osl_releasePipe(npipe);
 
-    /* done */
-    (*env)->MonitorExit(env, obj_this);
-    return;
+	/* done */
+	(*env)->MonitorExit(env, obj_this);
+	return;
 
  error:
 	switch (state)
@@ -347,10 +345,10 @@ JNICALL Java_com_sun_star_lib_connections_pipe_PipeConnection_readJNI
 	};
 
 	short		state	= START;
-    oslPipe     npipe;          /* native pipe */
-    void *      nbuff = NULL;   /* native read buffer */
-    jbyteArray  bytes;          /* java read buffer */
-    jint        nread;          /* number of bytes has been read */
+	oslPipe     npipe;          /* native pipe */
+	void *      nbuff = NULL;   /* native read buffer */
+	jbyteArray  bytes;          /* java read buffer */
+	jint        nread;          /* number of bytes has been read */
 
     /* enter monitor */
     if ((*env)->MonitorEnter(env, obj_this) != 0)
