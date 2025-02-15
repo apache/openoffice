@@ -773,7 +773,7 @@ void WpADORecordset::Close()
  sal_IntPtr WpADORecordset::get_AbsolutePosition()
 {
 	OSL_ENSURE(pInterface,"Interface is null!");
-	sal_IntPtr aTemp=adPosUnknown;
+	PositionEnum_Param aTemp=adPosUnknown;
 	pInterface->get_AbsolutePosition(&aTemp);
 	return aTemp;
 }
