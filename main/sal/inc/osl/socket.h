@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _OSL_SOCKET_H_
 #define _OSL_SOCKET_H_
@@ -47,7 +45,6 @@ extern "C" {
 	Opaque datatype SocketAddr.
 */
 typedef struct oslSocketAddrImpl * oslSocketAddr;
-
 
 /**
 	Represents the address-family of a socket
@@ -311,7 +308,7 @@ oslSocketResult	SAL_CALL osl_getDottedInetAddrOfSocketAddr(oslSocketAddr Addr, r
 oslSocketResult SAL_CALL osl_setAddrOfSocketAddr( oslSocketAddr Addr, sal_Sequence *pByteSeq );
 
 /** Returns the addr field in the struct sockaddr.
-	@param ppByteSeq out parameter. After the call, *ppByteSeq contains the ipadrress
+	@param ppByteSeq out parameter. After the call, *ppByteSeq contains the ipaddress
 	                 in network byteorder. *ppByteSeq may be 0 in case of an invalid socket handle.
 	@return <code>osl_Socket_Ok</code> or <code>osl_Socket_Error</code>
  */
@@ -417,7 +414,7 @@ oslSocket SAL_CALL osl_createSocket(oslAddrFamily	Family,
 
 /**	Retrieves the Address of the local end of the socket.
 	Note that a socket must be bound or connected before
-	a vaild address can be returned.
+	a valid address can be returned.
 	@return 0 if socket-address could not be created, otherwise you get
 	the created Socket-Address.
 */
@@ -425,7 +422,7 @@ oslSocketAddr SAL_CALL osl_getLocalAddrOfSocket(oslSocket Socket);
 
 /**	Retrieves the Address of the remote end of the socket.
 	Note that a socket must be connected before
-	a vaild address can be returned.
+	a valid address can be returned.
 	@return 0 if socket-address could not be created, otherwise you get
 	the created Socket-Address.
 */
@@ -764,7 +761,6 @@ sal_Bool SAL_CALL osl_enableNonBlockingMode(oslSocket Socket,
 */
 sal_Bool SAL_CALL osl_isNonBlockingMode(oslSocket Socket);
 
-
 /** Queries the socket for its type.
 	@return one of:
 	<ul>
@@ -808,7 +804,6 @@ void SAL_CALL osl_destroySocketSet(oslSocketSet Set);
 	@param Set the set to be cleared.
 */
 void SAL_CALL osl_clearSocketSet(oslSocketSet Set);
-
 
 /** Adds a socket to the set.
 	@param Set the set were the socket is added.
@@ -864,7 +859,6 @@ void SAL_CALL osl_closeSocket(oslSocket Socket);
 */
 sal_Int32 SAL_CALL osl_readSocket( oslSocket Socket, void *pBuffer, sal_Int32 nSize );
 
-
 /** Writes n bytes from pBuffer to the stream. The method avoids 
 	incomplete writes due to packet boundaries.
 	@param pBuffer contains the data to be written.
@@ -877,10 +871,10 @@ sal_Int32 SAL_CALL osl_writeSocket( oslSocket Socket, const void *pBuffer, sal_I
 /**@} end section oslSocket
 */
 
-
-
 #ifdef __cplusplus
 }
 #endif
 
 #endif	/* _OSL_SOCKET_H_ */
+
+/* vim: set noet sw=4 ts=4: */
