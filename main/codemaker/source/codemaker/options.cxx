@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_codemaker.hxx"
@@ -30,22 +28,22 @@ using namespace rtl;
 
 Options::Options()
 {
-}	
+}
 
 Options::~Options()
 {
-	
+
 }
 
 const OString& Options::getProgramName() const
 {
 	return m_program;
-}	
+}
 
 sal_Bool Options::isValid(const OString& option)
 {
-	return (m_options.count(option) > 0);	
-}	
+	return (m_options.count(option) > 0);
+}
 
 const OString Options::getOption(const OString& option)
 	throw( IllegalArgument )
@@ -61,35 +59,36 @@ const OString Options::getOption(const OString& option)
 
 const OptionMap& Options::getOptions()
 {
-	return m_options;	
-}	
+	return m_options;
+}
 
 const OString Options::getInputFile(sal_uInt16 index)
 	throw( IllegalArgument )
 {
 	if (index < m_inputFiles.size())
 	{
-		return m_inputFiles[index];		
+		return m_inputFiles[index];
 	} else
 	{
 		throw IllegalArgument("index is out of bound.");
 	}
-}	
+}
 
 const StringVector& Options::getInputFiles()
 {
-	return m_inputFiles;	
-}	
-	
+	return m_inputFiles;
+}
+
 OString Options::getExtraInputFile(sal_uInt16 index) const
 	throw( IllegalArgument )
 {
 	if (index < m_extra_input_files.size())
 	{
-		return m_extra_input_files[index];		
+		return m_extra_input_files[index];
 	} else
 	{
 		throw IllegalArgument("index is out of bound.");
 	}
-}	
+}
 
+/* vim: set noet sw=4 ts=4: */

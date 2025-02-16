@@ -256,7 +256,7 @@ sal_Bool SbiScanner::NextSym()
 			}
 		}
 
-		// Abschliessendes '_' durch Space ersetzen, wenn Zeilenende folgt
+		// Abschließendes '_' durch Space ersetzen, wenn Zeilenende folgt
 		// (sonst falsche Zeilenfortsetzung)
 		if(	!bUsedForHilite && !*pLine && *(pLine-1) == '_' )
 		{
@@ -265,7 +265,7 @@ sal_Bool SbiScanner::NextSym()
 		}
 		// Typkennung?
 		// Das Ausrufezeichen bitte nicht testen, wenn
-		// danach noch ein Symbol anschliesst
+		// danach noch ein Symbol anschließt
 		else if( *pLine != '!' || !BasicSimpleCharClass::isAlpha( pLine[ 1 ], bCompatible ) )
 		{
 			SbxDataType t = GetSuffixType( *pLine );
@@ -378,7 +378,7 @@ sal_Bool SbiScanner::NextSym()
 		//char *cmp = "0123456789ABCDEF";
 		sal_Unicode base = 16;
 		sal_Unicode ndig = 8;
-		sal_Unicode xch  = *pLine++ & 0xFF; nCol++;
+		sal_Unicode xch = *pLine++ & 0xFF; nCol++;
 		switch( toupper( xch ) )
 		{
 			case 'O':
@@ -446,9 +446,9 @@ sal_Bool SbiScanner::NextSym()
 				if( *pLine != cSep || cSep == ']' ) break;
 			} else aError = cSep, GenError( SbERR_EXPECTED );
 		}
-		// If VBA Interop then doesn't eat the [] chars
+		// If VBA Interop then don't eat the [] chars
 		if ( cSep == ']' && bVBASupportOn )
-			aSym = aLine.copy( n - 1, nCol - n  + 1);
+			aSym = aLine.copy( n - 1, nCol - n + 1);
 		else
 			aSym = aLine.copy( n, nCol - n - 1 );
 		// Doppelte Stringbegrenzer raus
@@ -467,7 +467,7 @@ sal_Bool SbiScanner::NextSym()
 		if( cSep != ']' )
 			eScanType = ( cSep == '#' ) ? SbxDATE : SbxSTRING;
 	}
-	// ungueltige Zeichen:
+	// ungültige Zeichen:
 	else if( ( *pLine & 0xFF ) >= 0x7F )
 	{
 		GenError( SbERR_SYNTAX ); pLine++; nCol++;
@@ -489,7 +489,7 @@ sal_Bool SbiScanner::NextSym()
 	nCol2 = nCol-1;
 
 PrevLineCommentLbl:
-	// Kommentar?
+	// Comment?
 	if( bPrevLineExtentsComment || (eScanType != SbxSTRING &&
 		( aSym.GetBuffer()[0] == '\'' || aSym.EqualsIgnoreCaseAscii( "REM" ) ) ) )
 	{
