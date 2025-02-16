@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
@@ -30,8 +28,8 @@ SbxObject* cloneTypeObjectImpl( const SbxObject& rTypeObj );
 
 // Deklaration einer Variablen
 // Bei Fehlern wird bis zum Komma oder Newline geparst.
-// Returnwert: eine neue Instanz, die eingefuegt und dann geloescht wird.
-// Array-Indexe werden als SbiDimList zurueckgegeben
+// Returnwert: eine neue Instanz, die eingefügt und dann gelöscht wird.
+// Array-Indexe werden als SbiDimList zurückgegeben
 
 SbiSymDef* SbiParser::VarDecl( SbiDimList** ppDim, sal_Bool bStatic, sal_Bool bConst )
 {
@@ -139,7 +137,7 @@ void SbiParser::TypeDecl( SbiSymDef& rDef, sal_Bool bAsNewAlreadyParsed )
 						{
 							aCompleteName += aDotStr;
 							Next();
-                            SbiToken ePeekTok = Peek();
+							SbiToken ePeekTok = Peek();
 							if( ePeekTok == SYMBOL || IsKwd( ePeekTok ) )
 							{
 								Next();
@@ -205,14 +203,14 @@ void SbiParser::DefVar( SbiOpcode eOp, sal_Bool bStatic )
 	if( pProc && ( eCurTok == GLOBAL || eCurTok == PUBLIC || eCurTok == PRIVATE ) )
 		Error( SbERR_NOT_IN_SUBR, eCurTok );
 	if( eCurTok == PUBLIC || eCurTok == GLOBAL )
-    {
+	{
 		bSwitchPool = sal_True;		// im richtigen Moment auf globalen Pool schalten
-    	if( eCurTok == GLOBAL )
-            bPersistantGlobal = sal_True;
-    }
-	// behavior in VBA is that a module scope variable's lifetime is 
+		if( eCurTok == GLOBAL )
+			bPersistantGlobal = sal_True;
+	}
+	// behavior in VBA is that a module scope variable's lifetime is
 	// tied to the document. e.g. a module scope variable is global
-   	if(  GetBasic()->IsDocBasic() && bVBASupportOn && !pProc ) 
+	if( GetBasic()->IsDocBasic() && bVBASupportOn && !pProc )
 		bPersistantGlobal = sal_True;
 	// PRIVATE ist Synonym fuer DIM
 	// _CONST_?
@@ -236,7 +234,7 @@ void SbiParser::DefVar( SbiOpcode eOp, sal_Bool bStatic )
 		}
 		else if( eCurTok == SUB || eCurTok == FUNCTION || eCurTok == PROPERTY )
 		{
-			// End global chain if necessary (not done in 
+			// End global chain if necessary (not done in
 			// SbiParser::Parse() under these conditions
 			if( bNewGblDefs && nGblChain == 0 )
 			{
@@ -256,7 +254,7 @@ void SbiParser::DefVar( SbiOpcode eOp, sal_Bool bStatic )
 		else if( eCurTok == DECLARE )
 		{
 			Next();
-			DefDeclare( bPrivate ); 
+			DefDeclare( bPrivate );
 			return;
 		}
 		// #i109049
@@ -350,14 +348,14 @@ void SbiParser::DefVar( SbiOpcode eOp, sal_Bool bStatic )
 		// #36374: Variable vor Unterscheidung IsNew() anlegen
 		// Sonst Error bei Dim Identifier As New Type und option explicit
 		if( !bDefined && !(eOp == _REDIM || eOp == _REDIMP)
-                      && ( !bConst || pDef->GetScope() == SbGLOBAL ) )
+					  && ( !bConst || pDef->GetScope() == SbGLOBAL ) )
 		{
 			// Variable oder globale Konstante deklarieren
 			SbiOpcode eOp2;
 			switch ( pDef->GetScope() )
 			{
-				case SbGLOBAL:	eOp2 = bPersistantGlobal ? _GLOBAL_P : _GLOBAL; 
-                                goto global;
+				case SbGLOBAL:	eOp2 = bPersistantGlobal ? _GLOBAL_P : _GLOBAL;
+								goto global;
 				case SbPUBLIC:	eOp2 = bPersistantGlobal ? _PUBLIC_P : _PUBLIC;
 								// AB 9.7.97, #40689, kein eigener Opcode mehr
 								if( bVBASupportOn && bStatic )
@@ -407,24 +405,24 @@ void SbiParser::DefVar( SbiOpcode eOp, sal_Bool bStatic )
 
 			if( pDim )
 			{
-                if( eOp == _REDIMP )
-                {
+				if( eOp == _REDIMP )
+				{
 					SbiExpression aExpr( this, *pDef, NULL );
 					aExpr.Gen();
 					aGen.Gen( _REDIMP_ERASE );
 
-				    pDef->SetDims( pDim->GetDims() );
-				    SbiExpression aExpr2( this, *pDef, pDim );
-				    aExpr2.Gen();
-    				aGen.Gen( _DCREATE_REDIMP, pDef->GetId(), pDef->GetTypeId() );
-                }
-                else
-                {
-				    pDef->SetDims( pDim->GetDims() );
-				    SbiExpression aExpr( this, *pDef, pDim );
-				    aExpr.Gen();
-	    			aGen.Gen( _DCREATE, pDef->GetId(), pDef->GetTypeId() );
-                }
+					pDef->SetDims( pDim->GetDims() );
+					SbiExpression aExpr2( this, *pDef, pDim );
+					aExpr2.Gen();
+					aGen.Gen( _DCREATE_REDIMP, pDef->GetId(), pDef->GetTypeId() );
+				}
+				else
+				{
+					pDef->SetDims( pDim->GetDims() );
+					SbiExpression aExpr( this, *pDef, pDim );
+					aExpr.Gen();
+					aGen.Gen( _DCREATE, pDef->GetId(), pDef->GetTypeId() );
+				}
 			}
 			else
 			{
@@ -489,11 +487,11 @@ void SbiParser::DefVar( SbiOpcode eOp, sal_Bool bStatic )
 					aGen.Gen( _REDIMP_ERASE );
 				}
 				pDef->SetDims( pDim->GetDims() );
-                if( bPersistantGlobal )
-                    pDef->SetGlobal( sal_True );
+				if( bPersistantGlobal )
+					pDef->SetGlobal( sal_True );
 				SbiExpression aExpr( this, *pDef, pDim );
 				aExpr.Gen();
-                pDef->SetGlobal( sal_False );
+				pDef->SetGlobal( sal_False );
 				aGen.Gen( (eOp == _STATIC) ? _DIM : eOp );
 			}
 		}
@@ -507,7 +505,7 @@ void SbiParser::DefVar( SbiOpcode eOp, sal_Bool bStatic )
 		// d.h. pPool muss immer am Schleifen-Ende zurueckgesetzt werden.
 		// auch bei break
 		pPool = pOldPool;
-		continue;		// MyBreak �berspingen
+		continue;		// MyBreak überspingen
 	MyBreak:
 		pPool = pOldPool;
 		break;
@@ -531,7 +529,7 @@ void SbiParser::DefVar( SbiOpcode eOp, sal_Bool bStatic )
 
 void SbiParser::ReDim()
 {
-	DefVar( _REDIM, (  pProc && bVBASupportOn ) ? pProc->IsStatic() : sal_False );
+	DefVar( _REDIM, ( pProc && bVBASupportOn ) ? pProc->IsStatic() : sal_False );
 }
 
 // ERASE array, ...
@@ -557,7 +555,7 @@ void SbiParser::Type()
 void SbiParser::DefType( sal_Bool bPrivate )
 {
 	// TODO: Use bPrivate
-    (void)bPrivate;
+	(void)bPrivate;
 
 	// Neues Token lesen, es muss ein Symbol sein
 	if (!TestSymbol())
@@ -609,7 +607,7 @@ void SbiParser::DefType( sal_Bool bPrivate )
 				SbxProperty *pTypeElem = new SbxProperty( aElemName, eElemType );
 				if( pDim )
 				{
-					SbxDimArray* pArray = new SbxDimArray( pElem->GetType() );	
+					SbxDimArray* pArray = new SbxDimArray( pElem->GetType() );
 					if ( pDim->GetSize() )
 					{
 						// Dimension the target array
@@ -618,27 +616,27 @@ void SbiParser::DefType( sal_Bool bPrivate )
 						{
 							sal_Int32 ub = -1;
 							sal_Int32 lb = nBase;
-							SbiExprNode* pNode =  pDim->Get(i)->GetExprNode();
+							SbiExprNode* pNode = pDim->Get(i)->GetExprNode();
 							ub = pNode->GetNumber();
 							if ( !pDim->Get( i )->IsBased() ) // each dim is low/up
 							{
-								if (  ++i >= pDim->GetSize() ) // trouble
+								if ( ++i >= pDim->GetSize() ) // trouble
 									StarBASIC::FatalError( SbERR_INTERNAL_ERROR );
-								pNode =  pDim->Get(i)->GetExprNode();
+								pNode = pDim->Get(i)->GetExprNode();
 								lb = ub;
 								ub = pNode->GetNumber();
 							}
 							else if ( !bCompatible )
 								ub += nBase;
-							pArray->AddDim32( lb, ub );      
+							pArray->AddDim32( lb, ub );
 						}
 						pArray->setHasFixedSize( true );
 					}
 					else
 						pArray->unoAddDim( 0, -1 ); // variant array
 					sal_uInt16 nSavFlags = pTypeElem->GetFlags();
-					// need to reset the FIXED flag 
-					// when calling PutObject ( because the type will not match Object ) 	
+					// need to reset the FIXED flag
+					// when calling PutObject ( because the type will not match Object )
 					pTypeElem->ResetFlag( SBX_FIXED );
 					pTypeElem->PutObject( pArray );
 					pTypeElem->SetFlags( nSavFlags );
@@ -772,13 +770,13 @@ void SbiParser::DefEnum( sal_Bool bPrivate )
 
 				if( !bPrivate )
 				{
-					SbiOpcode eOp = _GLOBAL; 
+					SbiOpcode eOp = _GLOBAL;
 					aGen.BackChain( nGblChain );
 					nGblChain = 0;
 					bGblDefs = bNewGblDefs = sal_True;
 					aGen.Gen(
-                        eOp, pElem->GetId(),
-                        sal::static_int_cast< sal_uInt16 >( pElem->GetType() ) );
+						eOp, pElem->GetId(),
+						sal::static_int_cast< sal_uInt16 >( pElem->GetType() ) );
 
 					aVar.Gen();
 					sal_uInt16 nStringId = aGen.GetParser()->aGblStrings.Add( nCurrentEnumValue, SbxLONG );
@@ -1142,16 +1140,16 @@ void SbiParser::DefProc( sal_Bool bStatic, sal_Bool bPrivate )
 	aPublics.SetProcId( pProc->GetId() );
 	pProc->GetParams().SetParent( &aPublics );
 	if( bStatic )
-        {
+		{
 		if ( bVBASupportOn )
 			pProc->SetStatic( sal_True );
 		else
 			Error( SbERR_NOT_IMPLEMENTED ); // STATIC SUB ...
-        }
+		}
  	else
 	{
 		pProc->SetStatic( sal_False );
-        }
+		}
 	// Normalfall: Lokale Variable->Parameter->Globale Variable
 	pProc->GetLocals().SetParent( &pProc->GetParams() );
 	pPool = &pProc->GetLocals();
@@ -1185,7 +1183,7 @@ void SbiParser::DefStatic( sal_Bool bPrivate )
 		case SUB:
 		case FUNCTION:
 		case PROPERTY:
-			// End global chain if necessary (not done in 
+			// End global chain if necessary (not done in
 			// SbiParser::Parse() under these conditions
 			if( bNewGblDefs && nGblChain == 0 )
 			{
@@ -1207,3 +1205,4 @@ void SbiParser::DefStatic( sal_Bool bPrivate )
 	}
 }
 
+/* vim: set noet sw=4 ts=4: */
