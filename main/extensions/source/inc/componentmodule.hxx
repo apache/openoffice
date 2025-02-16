@@ -147,7 +147,7 @@ typedef ::com::sun::star::uno::Reference< ::com::sun::star::lang::XSingleService
 	//=========================================================================
 	//= OModuleResourceClient
 	//=========================================================================
-	/** base class for objects which uses any global module-specific ressources 
+	/** base class for objects which uses any global module-specific resources
 	*/
 	class OModuleResourceClient
 	{

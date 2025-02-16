@@ -61,7 +61,7 @@ public:
 	OModuleImpl();
 	~OModuleImpl();
 
-	/// get the manager for the ressources of the module
+	/// get the manager for the resources of the module
 	ResMgr*	getResManager();
 };
 
