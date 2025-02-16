@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _VCL_WMADAPTOR_HXX_
 #define _VCL_WMADAPTOR_HXX_
@@ -97,7 +95,7 @@ public:
         WIN_ICONS,
         WIN_WORKSPACE_NAMES,
         WIN_CLIENT_LIST,
-        
+
         // atoms for general WM hints
         WM_STATE,
         MOTIF_WM_HINTS,
@@ -124,7 +122,7 @@ public:
     };
 
     /*
-     *  flags for frame decoration
+     * flags for frame decoration
      */
     static const int decoration_Title			= 0x00000001;
     static const int decoration_Border		= 0x00000002;
@@ -135,7 +133,7 @@ public:
     static const int decoration_All			= 0x10000000;
 
     /*
-     *  window type
+     * window type
      */
     enum WMWindowType
     {
@@ -171,8 +169,8 @@ protected:
     bool getNetWmName();
 
     /*
-     *  returns whether this instance is useful
-     *  only useful for createWMAdaptor
+     * returns whether this instance is useful
+     * only useful for createWMAdaptor
      */
     virtual bool isValid() const;
 
@@ -181,19 +179,19 @@ public:
     virtual ~WMAdaptor();
 
     /*
-     *  creates a vaild WMAdaptor instance for the SalDisplay
+     * creates a valid WMAdaptor instance for the SalDisplay
      */
     static WMAdaptor* createWMAdaptor( SalDisplay* );
 
     /*
-     *  may return an empty string if the window manager could
-     *  not be identified.
+     * may return an empty string if the window manager could
+     * not be identified.
      */
     const String& getWindowManagerName() const
     { return m_aWMName; }
 
     /*
-     *  gets the number of workareas
+     * gets the number of workareas
      */
     int getWorkAreaCount() const
     { return m_aWMWorkAreas.size(); }
@@ -207,22 +205,22 @@ public:
      */
     int getWindowWorkArea( XLIB_Window aWindow ) const;
     /*
-     *  gets the specified workarea
+     * gets the specified workarea
      */
     const Rectangle& getWorkArea( int n ) const
     { return m_aWMWorkAreas[n]; }
-    
+
     /*
      * attempt to switch the desktop to a certain workarea
      * if bConsiderWM is true, then on some WMs the call will not result in any action
      */
     void switchToWorkArea( int nWorkArea, bool bConsiderWM = true ) const;
-    
+
     /*
-     *  sets window title
+     * sets window title
      */
     virtual void setWMName( X11SalFrame* pFrame, const String& rWMName ) const;
-    
+
     /*
      * set NET_WM_PID
      */
@@ -232,26 +230,26 @@ public:
      * set WM_CLIENT_MACHINE
      */
     virtual void setClientMachine( X11SalFrame* pFrame ) const;
-    
+
     virtual void answerPing( X11SalFrame*, XClientMessageEvent* ) const;
 
     /*
-     *  maximizes frame
-     *  maximization can be toggled in either direction
-     *  to get the original position and size
-     *  use maximizeFrame( pFrame, false, false )
+     * maximizes frame
+     * maximization can be toggled in either direction
+     * to get the original position and size
+     * use maximizeFrame( pFrame, false, false )
      */
     virtual void maximizeFrame( X11SalFrame* pFrame, bool bHorizontal = true, bool bVertical = true ) const;
     /*
-     *  start/stop fullscreen mode on a frame
+     * start/stop fullscreen mode on a frame
      */
     virtual void showFullScreen( X11SalFrame* pFrame, bool bFullScreen ) const;
     /*
-     *  tell whether legacy partial full screen handling is necessary
-     *  see #i107249#: NET_WM_STATE_FULLSCREEN is not well defined, but de facto
-     *  modern WM's interpret it the "right" way, namely they make "full screen"
-     *  taking twin view or Xinerama into account and honor the positioning hints
-     *  to see which screen actually was meant to use for fullscreen.
+     * tell whether legacy partial full screen handling is necessary
+     * see #i107249#: NET_WM_STATE_FULLSCREEN is not well defined, but de facto
+     * modern WM's interpret it the "right" way, namely they make "full screen"
+     * taking twin view or Xinerama into account and honor the positioning hints
+     * to see which screen actually was meant to use for fullscreen.
      */
     bool isLegacyPartialFullscreen() const
     { return m_bLegacyPartialFullscreen; }
@@ -268,55 +266,55 @@ public:
      * set _NET_WM_USER_TIME property, if NetWM
      */
     virtual void setUserTime( X11SalFrame* i_pFrame, long i_nUserTime ) const;
-    
+
     /*
-     *  tells whether fullscreen mode is supported by WM
+     * tells whether fullscreen mode is supported by WM
      */
     bool supportsFullScreen() const { return m_aWMAtoms[ NET_WM_STATE_FULLSCREEN ] != 0; }
 
     /*
-     *  shade/unshade frame
+     * shade/unshade frame
      */
     virtual void shade( X11SalFrame* pFrame, bool bToShaded ) const;
 
     /*
-     *  set hints what decoration is needed;
-     *  must be called before showing the frame
+     * set hints what decoration is needed;
+     * must be called before showing the frame
      */
     virtual void setFrameTypeAndDecoration( X11SalFrame* pFrame, WMWindowType eType, int nDecorationFlags, X11SalFrame* pTransientFrame = NULL ) const;
 
     /*
-     *  tells whether there is WM support for splash screens
+     * tells whether there is WM support for splash screens
      */
     bool supportsSplash() const { return m_aWMAtoms[ NET_WM_WINDOW_TYPE_SPLASH ] != 0; }
 
     /*
-     *  tells whteher there is WM support for NET_WM_WINDOW_TYPE_TOOLBAR
+     * tells whether there is WM support for NET_WM_WINDOW_TYPE_TOOLBAR
      */
     bool supportsToolbar() const { return m_aWMAtoms[ NET_WM_WINDOW_TYPE_TOOLBAR ] != 0; }
 
     /*
-     *  enables always on top or equivalent if possible
+     * enables always on top or equivalent if possible
      */
     virtual void enableAlwaysOnTop( X11SalFrame* pFrame, bool bEnable ) const;
 
     /*
-     *  tells whether enableAlwaysOnTop actually works with this WM
+     * tells whether enableAlwaysOnTop actually works with this WM
      */
     bool isAlwaysOnTopOK() const { return m_bEnableAlwaysOnTopWorks; }
-    
+
     /*
-     *  handle WM messages (especially WM state changes)
+     * handle WM messages (especially WM state changes)
      */
     virtual int handlePropertyNotify( X11SalFrame* pFrame, XPropertyEvent* pEvent ) const;
-    
+
     /*
      * called by SalFrame::Show: time to update state properties
      */
     virtual void frameIsMapping( X11SalFrame* ) const;
 
     /*
-     *  gets a WM atom
+     * gets a WM atom
      */
     Atom getAtom( WMAtom eAtom ) const
     { return m_aWMAtoms[ eAtom ]; }
@@ -333,23 +331,25 @@ public:
     { return m_nInitWinGravity; }
 
     /*
-     *  expected behaviour is that the WM will not allow transient
-     *  windows to get stacked behind the windows they are transient for
+     * expected behavior is that the WM will not allow transient
+     * windows to get stacked behind the windows they are transient for
      */
     bool isTransientBehaviourAsExpected() const
     { return m_bTransientBehaviour; }
 
     /*
-     *  changes the transient hint of a window to reference frame
-     *  if reference frame is NULL the root window is used instead
+     * changes the transient hint of a window to reference frame
+     * if reference frame is NULL the root window is used instead
      */
     void changeReferenceFrame( X11SalFrame* pFrame, X11SalFrame* pReferenceFrame ) const;
-    
+
     /* set fullscreen monitor range; takes X11 window as input since it is also used by gtk plugin
      */
-    virtual void setFullScreenMonitors( XLIB_Window i_aWindow, sal_Int32 i_nScreen ); 
+    virtual void setFullScreenMonitors( XLIB_Window i_aWindow, sal_Int32 i_nScreen );
 };
 
 } // namespace
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
