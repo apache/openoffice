@@ -99,4 +99,3 @@ install .PHONY :
 	    $(PERL) $(SOLARENV)/bin/make_installer.pl -f openoffice.lst -l $(WITH_LANG:f:t",") -p OpenOffice -buildid 0 -simple $(DESTDIR)$(prefix)
 
 #*************************************************************************
-
