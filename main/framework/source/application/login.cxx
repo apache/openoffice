@@ -155,7 +155,7 @@ void LoginApplication::Main()
 	Reference< XDialog >		xLoginDialog( xServiceManager->createInstance( SERVICENAME_LOGINDIALOG ), UNO_QUERY );
 	Reference< XPropertySet >	xPropertySet( xLoginDialog												, UNO_QUERY );
 
-	// Work with valid ressources only!
+	// Work with valid resources only!
 	// Otherwise do nothing ...
 	if	(
 			( xLoginDialog.is()			==	sal_True	)	&&

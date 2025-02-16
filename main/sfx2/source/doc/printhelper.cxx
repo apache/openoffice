@@ -497,7 +497,7 @@ class ImplUCBPrintWatcher : public ::osl::Thread
 
         /* waits for finishing of the print job and moves the temp file afterwards
            Note: Starting of the job is done outside this thread!
-           But we have to free some of the given ressources on heap!
+           But we have to free some of the given resources on heap!
          */
         void SAL_CALL run()
         {
