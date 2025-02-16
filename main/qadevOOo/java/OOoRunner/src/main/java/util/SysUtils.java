@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 package util;
 
@@ -46,9 +44,9 @@ public class SysUtils {
         return jh;
     }
 
-  static ArrayList files = new ArrayList();
+static ArrayList files = new ArrayList();
 
-  public static Object[] traverse( String afileDirectory ) {
+public static Object[] traverse( String afileDirectory ) {
 
     File fileDirectory = new File(afileDirectory);
     // Testing, if the file is a directory, and if so, it throws an exception
@@ -85,10 +83,10 @@ public class SysUtils {
           exception.printStackTrace();
         }
 
-      }
-    }
-    return files.toArray();
-  }
+		}
+	}
+	return files.toArray();
+}
 
   public static XComponent getActiveComponent(XMultiServiceFactory msf) {
     XComponent ac = null;
@@ -115,7 +113,7 @@ public class SysUtils {
   }
 
   /**
-   * Tries to obtain text data from cliboard if such one exists.
+   * Tries to obtain text data from clipboard if such one exists.
    * The method iterates through all 'text/plain' supported data
    * flavors and returns the first non-null String value.
    *
@@ -147,3 +145,5 @@ public class SysUtils {
     return null;
   }
 }
+
+/* vim: set noet sw=4 ts=4: */
