@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
@@ -39,7 +37,7 @@ void SbiParser::If()
 	if( IsEoln( Next() ) )
 	{
 		// AB 13.5.1996: #27720# Am Ende jeden Blocks muss ein Jump zu ENDIF
-		// eingefuegt werden, damit bei ELSEIF nicht erneut die Bedingung
+		// eingefügt werden, damit bei ELSEIF nicht erneut die Bedingung
 		// ausgewertet wird. Die Tabelle nimmt alle Absprungstellen auf.
 #define JMP_TABLE_SIZE 100
 		sal_uInt32 pnJmpToEndLbl[JMP_TABLE_SIZE];	// 100 ELSEIFs zulaessig
@@ -83,7 +81,7 @@ void SbiParser::If()
 				eTok = Peek();
 				if( IsEof() )
 				{
-					Error( SbERR_BAD_BLOCK, ELSEIF );  bAbort = sal_True; return;
+					Error( SbERR_BAD_BLOCK, ELSEIF ); bAbort = sal_True; return;
 				}
 			}
 		}
@@ -216,7 +214,7 @@ void SbiParser::For()
 		TestToken( _IN_ );
 		SbiExpression aCollExpr( this, SbOPERAND );
 		aCollExpr.Gen();	// Colletion var to for stack
-		TestEoln();	
+		TestEoln();
 		aGen.Gen( _INITFOREACH );
 	}
 	else
@@ -245,7 +243,7 @@ void SbiParser::For()
 	}
 
 	sal_uInt32 nLoop = aGen.GetPC();
-	// Test durchfuehren, evtl. Stack freigeben
+	// Test durchführen, evtl. Stack freigeben
 	sal_uInt32 nEndTarget = aGen.Gen( _TESTFOR, 0 );
 	OpenBlock( FOR );
 	StmntBlock( NEXT );
@@ -268,7 +266,7 @@ void SbiParser::With()
 {
 	SbiExpression aVar( this, SbOPERAND );
 
-	// Letzten Knoten in der Objekt-Kette ueberpruefen
+	// Letzten Knoten in der Objekt-Kette überprüfen
 	SbiExprNode *pNode = aVar.GetExprNode()->GetRealNode();
 	SbiSymDef* pDef = pNode->GetVar();
 	// Variant, AB 27.6.1997, #41090: bzw. empty -> muß Object sein
@@ -277,7 +275,7 @@ void SbiParser::With()
 	else if( pDef->GetType() != SbxOBJECT )
 		Error( SbERR_NEEDS_OBJECT );
 
-	// Knoten auch auf SbxOBJECT setzen, damit spaeter Gen() klappt
+	// Knoten auch auf SbxOBJECT setzen, damit später Gen() klappt
 	pNode->SetType( SbxOBJECT );
 
 	OpenBlock( NIL, aVar.GetExprNode() );
@@ -402,9 +400,9 @@ void SbiParser::Select()
 					SbiExpression aCompare( this );
 					aCompare.Gen();
 					nTrueTarget = aGen.Gen(
-                        _CASEIS, nTrueTarget,
-                        sal::static_int_cast< sal_uInt16 >(
-                            SbxEQ + ( eTok2 - EQ ) ) );
+						_CASEIS, nTrueTarget,
+						sal::static_int_cast< sal_uInt16 >(
+							SbxEQ + ( eTok2 - EQ ) ) );
 				}
 				else
 				{	// CASE expr | expr TO expr
@@ -502,7 +500,7 @@ void SbiParser::On()
 					bError_ = true;
 			}
 			if( bError_ )
-				Error( SbERR_LABEL_EXPECTED );			
+				Error( SbERR_LABEL_EXPECTED );
 		}
 		else if( eCurTok == RESUME )
 		{
@@ -552,3 +550,4 @@ void SbiParser::Resume()
 	}
 }
 
+/* vim: set noet sw=4 ts=4: */

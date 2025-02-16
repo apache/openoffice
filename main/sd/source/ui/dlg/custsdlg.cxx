@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
@@ -40,11 +38,7 @@
 #include "app.hxx"
 #include <vcl/msgbox.hxx>
 
-
-/////////////////////
-// SdCustomShowDlg //
-/////////////////////
-
+// SdCustomShowDlg
 
 /*************************************************************************
 |* Konstruktor
@@ -58,10 +52,10 @@ SdCustomShowDlg::SdCustomShowDlg( Window* pWindow,
 	aBtnNew			( this, SdResId( BTN_NEW ) ),
 	aBtnEdit		( this, SdResId( BTN_EDIT ) ),
 	aBtnRemove		( this, SdResId( BTN_REMOVE ) ),
-	aBtnCopy  		( this, SdResId( BTN_COPY ) ),
-	aBtnHelp        ( this, SdResId( BTN_HELP ) ),
+	aBtnCopy		( this, SdResId( BTN_COPY ) ),
+	aBtnHelp		( this, SdResId( BTN_HELP ) ),
 	aBtnStartShow	( this, SdResId( BTN_STARTSHOW ) ),
-	aBtnOK          ( this, SdResId( BTN_OK ) ),
+	aBtnOK			( this, SdResId( BTN_OK ) ),
 
 	rDoc			( rDrawDoc ),
 	pCustomShowList	( NULL ),
@@ -180,7 +174,7 @@ IMPL_LINK( SdCustomShowDlg, ClickButtonHdl, void *, p )
 			}
 		}
 	}
-	// CustomShow loeschen
+	// CustomShow löschen
 	else if( p == &aBtnRemove )
 	{
 		sal_uInt16 nPos = aLbCustomShows.GetSelectEntryPos();
@@ -220,7 +214,7 @@ IMPL_LINK( SdCustomShowDlg, ClickButtonHdl, void *, p )
 				aStr.Append( UniString::CreateFromInt32( nNum ) );
 			}
 
-			// Name ueberpruefen...
+			// Name überprüfen...
 			sal_Bool bDifferent = sal_False;
 			//long nPosToSelect = pCustomShowList->GetCurPos();
 			while( !bDifferent )
@@ -235,7 +229,7 @@ IMPL_LINK( SdCustomShowDlg, ClickButtonHdl, void *, p )
 				}
 				if( !bDifferent )
 				{
-					// Nummer entfernen und durch um 1 erhoehte ersetzen
+					// Nummer entfernen und durch um 1 erhöhte ersetzen
 
 					const CharClass* pCharClass = rDoc.GetCharClass();
 					while( pCharClass->isDigit( aStr, nStrPos ) )
@@ -292,17 +286,10 @@ sal_Bool SdCustomShowDlg::IsCustomShow() const
 	return( aCbxUseCustomShow.IsEnabled() && aCbxUseCustomShow.IsChecked() );
 }
 
-
-
-///////////////////////////
-// SdDefineCustomShowDlg //
-///////////////////////////
-
+// SdDefineCustomShowDlg
 
 /*************************************************************************
-|*
 |* Konstruktor
-|*
 \************************************************************************/
 SdDefineCustomShowDlg::SdDefineCustomShowDlg( Window* pWindow,
 						SdDrawDocument& rDrawDoc, SdCustomShow*& rpCS ) :
@@ -316,9 +303,9 @@ SdDefineCustomShowDlg::SdDefineCustomShowDlg( Window* pWindow,
 	aBtnRemove		( this, SdResId( BTN_REMOVE ) ),
 	aFtCustomPages	( this, SdResId( FT_CUSTOM_PAGES ) ),
 	aLbCustomPages	( this, SdResId( LB_CUSTOM_PAGES ) ),
-	aBtnOK          ( this, SdResId( BTN_OK ) ),
+	aBtnOK			( this, SdResId( BTN_OK ) ),
 	aBtnCancel		( this, SdResId( BTN_CANCEL ) ),
-	aBtnHelp        ( this, SdResId( BTN_HELP ) ),
+	aBtnHelp		( this, SdResId( BTN_HELP ) ),
 
 	rDoc			( rDrawDoc ),
 	rpCustomShow	( rpCS ),
@@ -336,7 +323,7 @@ SdDefineCustomShowDlg::SdDefineCustomShowDlg( Window* pWindow,
 	aBtnOK.SetClickHdl( LINK( this, SdDefineCustomShowDlg, OKHdl ) );
 
 	SdPage* pPage;
-	// Listbox mit Seitennamen des Docs fuellen
+	// Listbox mit Seitennamen des Docs füllen
 	for( long nPage = 0L;
 		 nPage < rDoc.GetSdPageCount( PK_STANDARD );
 		 nPage++ )
@@ -352,7 +339,7 @@ SdDefineCustomShowDlg::SdDefineCustomShowDlg( Window* pWindow,
 		aOldName = rpCustomShow->GetName();
 		aEdtName.SetText( aOldName );
 
-		// ListBox mit CustomShow-Seiten fuellen
+		// ListBox mit CustomShow-Seiten füllen
 		for( pPage = (SdPage*) rpCustomShow->First();
 			 pPage != NULL;
 			 pPage = (SdPage*) rpCustomShow->Next() )
@@ -377,9 +364,7 @@ SdDefineCustomShowDlg::SdDefineCustomShowDlg( Window* pWindow,
 }
 
 /*************************************************************************
-|*
 |* Dtor
-|*
 \************************************************************************/
 SdDefineCustomShowDlg::~SdDefineCustomShowDlg()
 {
@@ -460,8 +445,8 @@ IMPL_LINK( SdDefineCustomShowDlg, ClickButtonHdl, void *, p )
 
 /*************************************************************************
 |* CheckCustomShow():
-|* Ueberprueft die Page-Pointer der Show, da die Eintraege ueber die
-|* TreeLB verschoben und kopiert werden k�nnen
+|* Überprüft die Page-Pointer der Show, da die Einträge über die
+|* TreeLB verschoben und kopiert werden können
 \************************************************************************/
 void SdDefineCustomShowDlg::CheckCustomShow()
 {
@@ -554,3 +539,4 @@ IMPL_LINK( SdDefineCustomShowDlg, OKHdl, Button *, EMPTYARG )
 	return 0;
 }
 
+/* vim: set noet sw=4 ts=4: */
