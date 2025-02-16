@@ -33,7 +33,7 @@ repos:
       - id: check-merge-conflict
       - id: check-vcs-permalinks
       - id: end-of-file-fixer
-        files: \.(bat|c|h|hrc|hxx|idl|java|md|mk|pl|pm|py|rc|sh|ya?ml)$|^test/.*$
+        files: \.(bat|c|h|hrc|hxx|idl|java|md|mk|pl|pm|py|rc|sh|xcs|xdl|xhp|xmi|xsd|ya?ml)$|^test/.*$
       - id: mixed-line-ending
         files: ^main/.*\.(c|h)xx$
       - id: trailing-whitespace
