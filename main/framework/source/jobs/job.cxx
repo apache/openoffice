@@ -795,7 +795,7 @@ void SAL_CALL Job::queryTermination( /*IN*/ const css::lang::EventObject& ) thro
 void SAL_CALL Job::notifyTermination( /*IN*/ const css::lang::EventObject& ) throw(css::uno::RuntimeException)
 {
     die();
-    // Do nothing else here. Our internal ressources was released ...
+    // Do nothing else here. Our internal resources was released ...
 }
 
 //________________________________

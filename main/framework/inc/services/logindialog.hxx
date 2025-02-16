@@ -280,7 +280,7 @@ class cIMPL_Dialog	:	public ModalDialog
 
 		/*-****************************************************************************************************//**
 			@short		default ctor
-			@descr		This ctor initialize the dialog, load ressources but not set values on edits or check boxes!
+			@descr		This ctor initialize the dialog, load resources but not set values on edits or check boxes!
 						These is implemented by setValues() on the same class.
 						You must give us a language identifier to describe which resource should be used!
 
@@ -297,7 +297,7 @@ class cIMPL_Dialog	:	public ModalDialog
 
 		/*-****************************************************************************************************//**
 			@short		default dtor
-			@descr		This dtor deinitialize the dialog and free all used ressources.
+			@descr		This dtor deinitialize the dialog and free all used resources.
 						But you can't get the values of the dialog. Use getValues() to do this.
 
 			@seealso	method getValues()
