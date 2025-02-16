@@ -810,12 +810,12 @@ $$(foreach lib,$(2),$$(call gb_StaticLibrary_get_headers_target,$$(lib)))
 endef
 
 #
-# Add external libs for linking.  External libaries are not built by any module.
+# Add external libs for linking.  External libraries are not built by any module.
 #
 # The list of libraries is used as is, ie it is not filtered with gb_Library_KNOWNLIBS.
 #
 # An error is signaled, when any of the library names does not look like
-# a base name, ie is prefixed by -l or is folled by .lib or .so.
+# a base name, ie is prefixed by -l or is followed by .lib or .so.
 # 
 # @param target
 # @param libraries
