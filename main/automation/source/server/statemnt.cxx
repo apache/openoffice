@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -97,7 +97,6 @@ using namespace com::sun::star::beans;
 using namespace svt;
 //using namespace svt::table;
 
-
 #ifndef SBX_VALUE_DECL_DEFINED
 #define SBX_VALUE_DECL_DEFINED
 SV_DECL_REF(SbxValue)
@@ -113,9 +112,7 @@ sal_uInt16 StatementCommand::nDirPos = 0;
 Dir *StatementCommand::pDir = NULL;
 pfunc_osl_printDebugMessage StatementCommand::pOriginal_osl_DebugMessageFunc = NULL;
 
-
 #define RESET_APPLICATION_TO_BACKING_WINDOW
-
 
 #define SET_WINP_CLOSING(pWin) \
 	pWindowWaitPointer = pWin; \
@@ -244,7 +241,7 @@ sal_Bool StatementFlow::Execute()
 	case F_Sequence:
 
 		pRet->GenReturn(RET_Sequence,nLNr1);
-        #if OSL_DEBUG_LEVEL > 1
+		#if OSL_DEBUG_LEVEL > 1
 		m_pDbgWin->AddText( "Sending Sequence Nr: " );
 		m_pDbgWin->AddText( String::CreateFromInt64( nLNr1 ) );
 		m_pDbgWin->AddText( "\n" );
@@ -330,7 +327,7 @@ static short ImpGetRType( Window *pWin )
 		case WINDOW_BUTTONDIALOG:		nRT = C_ButtonDialog;	break;
 		case WINDOW_TREELISTBOX:		nRT = C_TreeListBox;	break;
 
-        case WINDOW_DIALOG:				nRT = C_Dialog;			break;
+		case WINDOW_DIALOG:				nRT = C_Dialog;			break;
 	}
 	return nRT;
 }
@@ -350,10 +347,10 @@ StatementSlot::StatementSlot( SCmdStream *pCmdIn )
 	pCmdIn->Read( nAnzahl );
 	if ( nAnzahl )
 	{
-        switch ( pCmdIn->GetNextType() )
-        {
-            case BinUSHORT: // use old calling method
-                {
+		switch ( pCmdIn->GetNextType() )
+		{
+			case BinUSHORT: // use old calling method
+				{
 		            nAnzahl++;
 		            pItemArr = new SfxPoolItem*[nAnzahl];
 		            for (sal_uInt16 i = 0 ; i+1 < nAnzahl ; i++)
@@ -369,7 +366,7 @@ StatementSlot::StatementSlot( SCmdStream *pCmdIn )
 			            pCmdIn->Read( pArg[i] );
                 }
                 break;
-        }
+		}
 	}
 }
 
@@ -407,64 +404,64 @@ StatementSlot::~StatementSlot()
 {
 	if (nAnzahl)
 	{
-        if ( pItemArr )
-        {
-		    for (sal_uInt16 i = 0 ; i+1 < nAnzahl ; i++)
-			    delete pItemArr[i];
-		    delete[] pItemArr;
-        }
+		if ( pItemArr )
+		{
+			for (sal_uInt16 i = 0 ; i+1 < nAnzahl ; i++)
+				delete pItemArr[i];
+			delete[] pItemArr;
+		}
 
-        aArgs.realloc( 0 );
+		aArgs.realloc( 0 );
 	}
 }
 
 void StatementSlot::AddReferer()
 {
-    HACK( "only to test!" );
+	HACK( "only to test!" );
 // because slot 6102 /*SID_VERB_START*/ crashes when called with Property Referer
 // We return to the previous behavior (which was a bug really) of not adding this Property to calls which have no properties at all
 // according to MBA most likely this Property can be removed at all and is maybe only needed for Slots with URLs
-    if ( !nAnzahl )
-        return;
+	if ( !nAnzahl )
+		return;
 
-    PropertyValue* pArg;
+	PropertyValue* pArg;
 
-    nAnzahl++;
-    aArgs.realloc(nAnzahl);
-    pArg = aArgs.getArray();
-    pArg[nAnzahl-1].Name = rtl::OUString::createFromAscii("Referer");
-    pArg[nAnzahl-1].Value <<= ::rtl::OUString::createFromAscii("private:user");
+	nAnzahl++;
+	aArgs.realloc(nAnzahl);
+	pArg = aArgs.getArray();
+	pArg[nAnzahl-1].Name = rtl::OUString::createFromAscii("Referer");
+	pArg[nAnzahl-1].Value <<= ::rtl::OUString::createFromAscii("private:user");
 
-    nAnzahl++;
-    aArgs.realloc(nAnzahl);
-    pArg = aArgs.getArray();
-    pArg[nAnzahl-1].Name = rtl::OUString::createFromAscii("SynchronMode");
-    pArg[nAnzahl-1].Value <<= sal_Bool( sal_True );
+	nAnzahl++;
+	aArgs.realloc(nAnzahl);
+	pArg = aArgs.getArray();
+	pArg[nAnzahl-1].Name = rtl::OUString::createFromAscii("SynchronMode");
+	pArg[nAnzahl-1].Value <<= sal_Bool( sal_True );
 }
 
 class SlotStatusListener : public cppu::WeakImplHelper1< XStatusListener >
 {
 public:
-    SlotStatusListener();
+	SlotStatusListener();
 
-    // XStatusListener
-    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-    // XEventListener
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+	// XStatusListener
+	virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+	// XEventListener
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
 
-    // local Members
-    sal_Bool bDisposed;
-    sal_Bool bEnabled;
+	// local Members
+	sal_Bool bDisposed;
+	sal_Bool bEnabled;
 };
 /*
 struct FeatureStateEvent : public ::com::sun::star::lang::EventObject
-    ::com::sun::star::util::URL FeatureURL;
-    ::rtl::OUString FeatureDescriptor;
-    sal_Bool IsEnabled;
-    sal_Bool Requery;
-    ::com::sun::star::uno::Any State;
+	::com::sun::star::util::URL FeatureURL;
+	::rtl::OUString FeatureDescriptor;
+	sal_Bool IsEnabled;
+	sal_Bool Requery;
+	::com::sun::star::uno::Any State;
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > Source;
+	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > Source;
 */
 
 SlotStatusListener::SlotStatusListener()
@@ -485,14 +482,14 @@ void SAL_CALL SlotStatusListener::statusChanged( const ::com::sun::star::frame::
 // XEventListener
 void SAL_CALL SlotStatusListener::disposing( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
 {
-    bDisposed = sal_True;
+	bDisposed = sal_True;
 }
 
 sal_Bool StatementSlot::Execute()
 {
 	if ( IsError )
 	{
-        #if OSL_DEBUG_LEVEL > 1
+		#if OSL_DEBUG_LEVEL > 1
 		m_pDbgWin->AddText( "Skipping Slot: " );
 		m_pDbgWin->AddText( String::CreateFromInt32( nFunctionId ) );
 		m_pDbgWin->AddText( "\n" );
@@ -510,26 +507,26 @@ sal_Bool StatementSlot::Execute()
 	m_pDbgWin->AddText( "\n" );
 #endif
 
-    PopupMenu *pPopup = NULL;
-    MenuBar *pMenuBar = NULL;
+	PopupMenu *pPopup = NULL;
+	MenuBar *pMenuBar = NULL;
 	Menu *pMenu;
 
-    GetCurrentMenues( pPopup, pMenuBar, pMenu );
-    if ( pPopup )
-    {
-        if ( !bMenuClosed )
-        {
-            pPopup->EndExecute(0);
+	GetCurrentMenues( pPopup, pMenuBar, pMenu );
+	if ( pPopup )
+	{
+		if ( !bMenuClosed )
+		{
+			pPopup->EndExecute(0);
 			aSubMenuId1 = 0;
 			aSubMenuId2 = 0;
 			aSubMenuId3 = 0;
 			pMenuWindow = NULL;
-            bMenuClosed = sal_True;
+			bMenuClosed = sal_True;
 #if OSL_DEBUG_LEVEL > 1
-	        m_pDbgWin->AddText( "Closed contextmenu\n" );
+			m_pDbgWin->AddText( "Closed contextmenu\n" );
 #endif
-	        return sal_False;
-        }
+			return sal_False;
+		}
 		else if ( nRetryCount-- )
 		{
 #if OSL_DEBUG_LEVEL > 1
@@ -539,7 +536,7 @@ sal_Bool StatementSlot::Execute()
 		}
 		else
 			ReportError( GEN_RES_STR0( S_MENU_NOT_CLOSING ) );
-    }
+	}
 
 	Advance();
 
@@ -659,7 +656,7 @@ sal_Bool StatementSlot::Execute()
 
 /*	New method from the line 334!
 	New method for setting that modal dialogs are always called asynchronously
-	and a real return value, whether slot has worked  
+	and a real return value, whether slot has worked
 	and testing whether slot can be called by UI at all       */
 
 
@@ -704,7 +701,7 @@ StatementCommand::StatementCommand( StatementList *pAfterThis, sal_uInt16 Method
 #if OSL_DEBUG_LEVEL > 1
 	m_pDbgWin->AddText( "Directly adding Conmmand:" );
 	m_pDbgWin->AddText( " Methode: " );
-    m_pDbgWin->AddText( String::CreateFromInt32( nMethodId ) );
+	m_pDbgWin->AddText( String::CreateFromInt32( nMethodId ) );
 	m_pDbgWin->AddText( " Params:" );
 	if( nParams & PARAM_USHORT_1 )	{m_pDbgWin->AddText( " n1:" );m_pDbgWin->AddText( String::CreateFromInt32( nNr1 ) );}
 	if( nParams & PARAM_USHORT_2 )	{m_pDbgWin->AddText( " n2:" );m_pDbgWin->AddText( String::CreateFromInt32( nNr2 ) );}
@@ -713,8 +710,8 @@ StatementCommand::StatementCommand( StatementList *pAfterThis, sal_uInt16 Method
 	if( nParams & PARAM_ULONG_1 )	{m_pDbgWin->AddText( " nl1:" );m_pDbgWin->AddText( String::CreateFromInt64( nLNr1 ) );}
 	if( nParams & PARAM_STR_1 )		{m_pDbgWin->AddText( " s1:" );m_pDbgWin->AddText( aString1 );}
 	if( nParams & PARAM_STR_2 )		{m_pDbgWin->AddText( " s2:" );m_pDbgWin->AddText( aString2 );}
-	if( nParams & PARAM_BOOL_1 )    {m_pDbgWin->AddText( " b1:" );m_pDbgWin->AddText( bBool1 ? "TRUE" : "FALSE" );}
-	if( nParams & PARAM_BOOL_2 )    {m_pDbgWin->AddText( " b2:" );m_pDbgWin->AddText( bBool2 ? "TRUE" : "FALSE" );}
+	if( nParams & PARAM_BOOL_1 )	{m_pDbgWin->AddText( " b1:" );m_pDbgWin->AddText( bBool1 ? "TRUE" : "FALSE" );}
+	if( nParams & PARAM_BOOL_2 )	{m_pDbgWin->AddText( " b2:" );m_pDbgWin->AddText( bBool2 ? "TRUE" : "FALSE" );}
 	m_pDbgWin->AddText( "\n" );
 #endif
 }
@@ -759,14 +756,14 @@ StatementCommand::StatementCommand( SCmdStream *pCmdIn )
 	if( nParams & PARAM_ULONG_1 )	{m_pDbgWin->AddText( " nl1:" );m_pDbgWin->AddText( String::CreateFromInt64( nLNr1 ) );}
 	if( nParams & PARAM_STR_1 )		{m_pDbgWin->AddText( " s1:" );m_pDbgWin->AddText( aString1 );}
 	if( nParams & PARAM_STR_2 )		{m_pDbgWin->AddText( " s2:" );m_pDbgWin->AddText( aString2 );}
-	if( nParams & PARAM_BOOL_1 )    {m_pDbgWin->AddText( " b1:" );m_pDbgWin->AddText( bBool1 ? "TRUE" : "FALSE" );}
-	if( nParams & PARAM_BOOL_2 )    {m_pDbgWin->AddText( " b2:" );m_pDbgWin->AddText( bBool2 ? "TRUE" : "FALSE" );}
+	if( nParams & PARAM_BOOL_1 )	{m_pDbgWin->AddText( " b1:" );m_pDbgWin->AddText( bBool1 ? "TRUE" : "FALSE" );}
+	if( nParams & PARAM_BOOL_2 )	{m_pDbgWin->AddText( " b2:" );m_pDbgWin->AddText( bBool2 ? "TRUE" : "FALSE" );}
 	m_pDbgWin->AddText( "\n" );
 #endif
 
 	if ( nMethodId == RC_AppAbort )
 	{
-        #if OSL_DEBUG_LEVEL > 1
+		#if OSL_DEBUG_LEVEL > 1
 		m_pDbgWin->AddText( "*Deleting all Commands:\n" );
 		#endif
 		bReadingCommands = sal_False;
@@ -777,7 +774,7 @@ StatementCommand::StatementCommand( SCmdStream *pCmdIn )
 			delete pDeQue;
 		}
 		bReadingCommands = sal_True;
-        #if OSL_DEBUG_LEVEL > 1
+		#if OSL_DEBUG_LEVEL > 1
 		m_pDbgWin->AddText( "*Done deleting all Commands:\n" );
 		#endif
 	}
@@ -794,11 +791,11 @@ void StatementCommand::WriteControlData( Window *pBase, sal_uLong nConf, sal_Boo
 		pRet->GenReturn ( RET_WinInfo, rtl::OString(), (comm_ULONG)nConf | DH_MODE_DATA_VALID, UniString(), sal_True );
 
 	if ( bFirst )
-    {
-        if ( pBase->GetType() == WINDOW_WINDOW && pBase->GetParent() && pBase->GetParent()->GetType() == WINDOW_CONTROL &&
-             dynamic_cast< svt::table::TableControl* > ( pBase->GetParent() ) )
-            pBase = pBase->GetParent();
-    }
+	{
+		if ( pBase->GetType() == WINDOW_WINDOW && pBase->GetParent() && pBase->GetParent()->GetType() == WINDOW_CONTROL &&
+			dynamic_cast< svt::table::TableControl* > ( pBase->GetParent() ) )
+			pBase = pBase->GetParent();
+	}
 
 	{	// KParentheses, so that the string does not persist during recursion.
 		String aName;
@@ -883,9 +880,9 @@ void StatementCommand::WriteControlData( Window *pBase, sal_uLong nConf, sal_Boo
 				aName = pBase->GetText();
 
 
-    		String aTypeSuffix;
-            if ( pBase->GetType() == WINDOW_CONTROL )
-            {
+			String aTypeSuffix;
+			if ( pBase->GetType() == WINDOW_CONTROL )
+			{
                 if ( dynamic_cast< EditBrowseBox* >(pBase) )
                     aTypeSuffix.AppendAscii( "/BrowseBox", 10 );
                 else if ( dynamic_cast< ValueSet* >(pBase) )
@@ -1033,23 +1030,23 @@ void StatementCommand::WriteControlData( Window *pBase, sal_uLong nConf, sal_Boo
 			}
 
 
-            Menu* pMenu = GetMatchingMenu( pBase );
+			Menu* pMenu = GetMatchingMenu( pBase );
 
 			if ( pMenu )	// Menus
 			{
 				sal_uInt16 i;
 				for ( i = 0; i < pMenu->GetItemCount() ; i++ )
 				{
-                    sal_uInt16 nID = pMenu->GetItemId( i );
-                    
-                    aName = String();
+					sal_uInt16 nID = pMenu->GetItemId( i );
+
+					aName = String();
 					if ( aName.Len() == 0 )
 						aName = pMenu->GetHelpText( nID );
 					if ( aName.Len() == 0 )
 						aName = pMenu->GetItemText( nID );
 
 
-					if ( pMenu->GetItemType( i ) == MENUITEM_STRING || pMenu->GetItemType( i ) ==  MENUITEM_IMAGE || pMenu->GetItemType( i ) == MENUITEM_STRINGIMAGE || (nConf & DH_MODE_ALLWIN) )
+					if ( pMenu->GetItemType( i ) == MENUITEM_STRING || pMenu->GetItemType( i ) == MENUITEM_IMAGE || pMenu->GetItemType( i ) == MENUITEM_STRINGIMAGE || (nConf & DH_MODE_ALLWIN) )
 					{
 						String aMenuItemType;
 						switch ( pMenu->GetItemType( i ) )
@@ -1158,7 +1155,6 @@ void SysWinContainer::Resizing( Size& rSize )
 	rSize = aBestSize;
 }
 
-
 class DisplayHidWin : public ToolBox
 {
 	Edit	*pEdit;
@@ -1182,10 +1178,10 @@ class DisplayHidWin : public ToolBox
 
 	SysWinContainer *pContainer;
 
-    // aborting by pressing shist twice
-    sal_Bool bOldShift;
-    Time aLatest;
-    sal_uInt16 nShiftCount;
+	// aborting by pressing shift twice
+	sal_Bool bOldShift;
+	Time aLatest;
+	sal_uInt16 nShiftCount;
 
 public:
 	DisplayHidWin();
@@ -1241,7 +1237,7 @@ DisplayHidWin::DisplayHidWin()
 DisplayHidWin::~DisplayHidWin()
 {
 	Application::RemoveEventHook( nEventHookID );
-    Hide(); // so GetFirstDocFrame won't return ourselves (needed for SOPlayer)
+	Hide(); // so GetFirstDocFrame won't return ourselves (needed for SOPlayer)
 	SetParent( StatementList::GetFirstDocFrame() );
 	delete pContainer;
 	delete pEdit;
@@ -1347,14 +1343,14 @@ void DisplayHidWin::SetText( const XubString& rStr )
 long DisplayHidWin::VCLEventHook( NotifyEvent& rEvt )
 {
 	if ( EVENT_MOUSEMOVE == rEvt.GetType() )
-    {
+	{
 		pLastMouseMoveWin = rEvt.GetWindow();
 
-        // check if abort with pressing shift twice
-        MouseEvent* pMEvt = (MouseEvent*)rEvt.GetMouseEvent();
+		// check if abort with pressing shift twice
+		MouseEvent* pMEvt = (MouseEvent*)rEvt.GetMouseEvent();
 
-        if ( (  pMEvt->IsShift() && !bOldShift ) )    // Shift pressed
-        {
+		if ( ( pMEvt->IsShift() && !bOldShift ) ) // Shift pressed
+		{
             if ( aLatest < Time() )
             {
                 nShiftCount = 0;
@@ -1362,7 +1358,7 @@ long DisplayHidWin::VCLEventHook( NotifyEvent& rEvt )
             }
             nShiftCount++;
         }
-        if ( ( !pMEvt->IsShift() &&  bOldShift ) )    // Shift released
+        if ( ( !pMEvt->IsShift() && bOldShift ) ) // Shift released
         {
             nShiftCount++;
             if ( nShiftCount == 4 && aLatest > Time() )
@@ -1370,10 +1366,10 @@ long DisplayHidWin::VCLEventHook( NotifyEvent& rEvt )
 			    bIsPermanentDraging = sal_False;
 			    SetDraging( sal_False );
 		        SetItemState( TT_SHOW, STATE_NOCHECK );
-            }
-        }
-        bOldShift = pMEvt->IsShift();
-    }
+			}
+		}
+		bOldShift = pMEvt->IsShift();
+	}
 	if ( ( ( EVENT_MOUSEBUTTONUP == rEvt.GetType() && rEvt.GetMouseEvent()->GetButtons() == MOUSE_LEFT) || ( EVENT_MOUSEMOVE == rEvt.GetType() && !rEvt.GetMouseEvent()->GetButtons() ) )
 			&& IsDraging() && !bIsPermanentDraging )
 		SetDraging( sal_False );
@@ -1493,7 +1489,7 @@ sal_Bool StatementCommand::DisplayHID()
 				if ( GetTTSettings()->Act )
 				{
 					SET_WIN(GetTTSettings()->Act);
-                    GetTTSettings()->pDisplayHidWin->SetDisplayText( Id2Str(GetTTSettings()->Act->GetUniqueOrHelpId()).AppendAscii(" WinType: ")
+					GetTTSettings()->pDisplayHidWin->SetDisplayText( Id2Str(GetTTSettings()->Act->GetUniqueOrHelpId()).AppendAscii(" WinType: ")
 						.Append(UniString::CreateFromInt64(GetTTSettings()->Act->GetType())).AppendAscii("  ").Append(GetTTSettings()->Act->GetText()));
 					if ( GetTTSettings()->Act && !GetTTSettings()->Act->GetUniqueId().equals( GetTTSettings()->Act->GetHelpId() ) )
 						GetTTSettings()->pDisplayHidWin->SetText(UniString( TTProperties::GetSvtResId( TT_ALTERNATE_CAPTION ) ).AppendAscii(GetTTSettings()->Act->GetHelpId().getStr()));
@@ -1506,14 +1502,14 @@ sal_Bool StatementCommand::DisplayHID()
 			else if ( GetTTSettings()->Act )
 			{
 //				SET_WIN(GetTTSettings()->Act);
-                // allow setting a HelpID manually (just enter the ID in the displayHID Window and terminate it by |
+				// allow setting a HelpID manually (just enter the ID in the displayHID Window and terminate it by |
 				if ( GetTTSettings()->pDisplayHidWin->IsDisplayTextModified() && GetTTSettings()->pDisplayHidWin->GetDisplayText().GetTokenCount( '|' ) > 1 )
 				{
 					GetTTSettings()->Act->SetUniqueId( Str2Id( GetTTSettings()->pDisplayHidWin->GetDisplayText().GetToken( '|' ) ) );
 					GetTTSettings()->pDisplayHidWin->ClearDisplayTextModified();
 				}
 			}
-/*			if ( Application::GetLastInputInterval() > 5000 )	// 5 Sekunden lang nix geschehen
+/*			if ( Application::GetLastInputInterval() > 5000 )	// 5 Sekunden lang nichts geschehen
 			{
 				GetTTSettings()->pDisplayHidWin->ToTop( TOTOP_NOGRABFOCUS );
 			}
@@ -1536,7 +1532,7 @@ sal_Bool StatementCommand::DisplayHID()
 			}
 		}
 
-		if ( pFirst == this )	// Sollte immer so sein, aber besser isses
+		if ( pFirst == this )	// Sollte immer so sein, aber besser ist es
 			if ( pNext )		// Befehle warten auf Ausführung
 			{					// An Ende neu einsortieren
 				Advance();
@@ -1639,7 +1635,7 @@ TranslateWin::TranslateWin()
 , bAvailable( sal_False )
 , bNext( sal_False )
 {
-    FreeResource();
+	FreeResource();
 	PushButtonTT_PB_NEXT.SetClickHdl( LINK( this, TranslateWin, DoNext ) );
 	PushButtonTT_PB_ACCEPT.SetClickHdl( LINK( this, TranslateWin, DoAccept ) );
 	PushButtonTT_PB_SELECT.SetClickHdl( LINK( this, TranslateWin, DoSelect ) );
@@ -1740,7 +1736,7 @@ IMPL_LINK( TranslateWin, DoRestore, PushButton*, EMPTYARG )
 
 IMPL_LINK( TranslateWin, TranslationChanged, Edit*, pEdit )
 {
-    (void) pEdit; /* avoid warning about unused parameter */
+	(void) pEdit; /* avoid warning about unused parameter */
 	PushButtonTT_PB_RESTORE.Enable();
 	InplaceTimer.Start();
 	return 0;
@@ -1790,8 +1786,8 @@ long TranslateWin::VCLEventHook( NotifyEvent& rEvt )
 				}
 			}
 
-            if ( !StatementList::WinPtrValid ( Old ) )
-                Old = NULL;
+			if ( !StatementList::WinPtrValid ( Old ) )
+				Old = NULL;
 
 			if ( Act != Old )
 			{
@@ -1816,7 +1812,7 @@ long TranslateWin::VCLEventHook( NotifyEvent& rEvt )
 			{
 	//			SET_WIN(Act);
 			}
-	/*		if ( Application::GetLastInputInterval() > 5000 )	// 5 Sekunden lang nix geschehen
+	/*		if ( Application::GetLastInputInterval() > 5000 )	// 5 Sekunden lang nichts geschehen
 			{
 				ToTop();
 			}
@@ -2086,7 +2082,7 @@ void StatementCommand::Translate()
 			if ( pTranslationWindow->GetType() == WINDOW_BORDERWINDOW && pTranslationWindow->GetWindow( WINDOW_CLIENT ) )
 			{
 				Window* pNew = pTranslationWindow->GetWindow( WINDOW_CLIENT );
-				// Bei Dockingwindoes das kanze Geraffel von Docking Floating überspringen
+				// Bei Dockingwindows das ganze Geraffel von Docking Floating überspringen
 				while ( IsDialog( pNew ) && pNew->GetUniqueOrHelpId().isEmpty() && pNew->GetChildCount() == 1 )
 					pNew = pNew->GetChild( 0 );
 				pTranslationWindow = pNew;
@@ -2113,7 +2109,7 @@ void StatementCommand::Translate()
 				aTranslation += TypeString( pParentDialog->GetType() );
 			}
 			else
-				aTranslation.AppendAscii( "0;" );		// Zahl + leerer String
+				aTranslation.AppendAscii( "0;" ); // Zahl + leerer String
 			aTranslation += ';';
 
 			aTranslation += '\"';
@@ -2222,7 +2218,7 @@ Window* StatementCommand::GetNextRecoverWin()
 				    return pControl;
 		    }
 
-		    // dann das Fenster selbst Schliessen
+		    // dann das Fenster selbst schliessen
        	    // erstes DocWin überspringen
             // Assumption that Doc Windows are Borderwindows and ButtonDialog and such are not
 		    if ( pBase->IsVisible() && !IsFirstDocFrame( pBase ) && pBase->GetType() != WINDOW_BORDERWINDOW && !IsIMEWin( pBase ) )
@@ -2312,7 +2308,7 @@ sal_Bool StatementCommand::Execute()
 				if ( !bBool1 )
 				{
 					nRetryCount = 150;		// das sollte reichen.
-					bBool1 = sal_True;			// Nur beim ersten mal!
+					bBool1 = sal_True;		// Nur beim ersten mal!
 					nNr1 = 1;				// Welcher Button ist dran?
 					nLNr1 = 0;				// Speichern des AppWin
 					aString1 = UniString();	// Liste der geschlossenen Fenster
@@ -2450,7 +2446,7 @@ sal_Bool StatementCommand::Execute()
 
 								// Eigentlich nur bei TaskWindows! Hoffen wir mal, daß keine anderen DockingWindows dazwischen hauen.
 								if ( (Window*)nLNr1 != pControl )
-									nNr1 = 1;		// Zum durchprobieren der Buttons beim Schließen
+									nNr1 = 1;		// Zum durchprobieren der Buttons beim schließen
 								nLNr1 = (sal_uLong)pControl;
 
 								return sal_False;
@@ -2746,7 +2742,7 @@ sal_Bool StatementCommand::Execute()
 				{
                     if ( nErr == 1 )
 					    ReportError( GEN_RES_STR0( S_NO_POPUP ) );
-                    else 
+                    else
                         ReportError( GEN_RES_STR0( S_NO_SUBMENU ) );
 					break;
 				}
@@ -3046,10 +3042,8 @@ sal_Bool StatementCommand::Execute()
 							{
 								pRet->GenReturn ( RET_Value, nMethodId, aPath );
                             }
-                            
-                            
-                            
-/* keep old Implementation for now                            
+
+/* keep old Implementation for now
                             // neues Verzeichnis einlesen
 							if ( (nParams & PARAM_STR_1) )
 							{
@@ -3272,7 +3266,7 @@ sal_Bool StatementCommand::Execute()
 
 #if OSL_DEBUG_LEVEL > 1
                     sal_uInt16 nEntries = Dir( aDestPath, FSYS_KIND_FILE | FSYS_KIND_DIR ).Count();
-                    (void) nEntries; /* avoid warning about unused parameter */ 
+                    (void) nEntries; /* avoid warning about unused parameter */
 #endif
                     // The Count is only larger than 2 is the path is a directory which is not empty
                     // the Count of 2 results from the "." and ".." directory
@@ -3929,7 +3923,7 @@ sal_Bool StatementControl::HandleVisibleControls( Window *pControl )
 		case M_GetScreenRectangle:
 			{
 				Rectangle aRect =  bBool1 ? pControl->GetClientWindowExtentsRelative(NULL) : pControl->GetWindowExtentsRelative( NULL );
-                pRet->GenReturn ( RET_Value, aUId, 
+                pRet->GenReturn ( RET_Value, aUId,
 					UniString::CreateFromInt32(aRect.Left()).
 					AppendAscii(",").Append(UniString::CreateFromInt32(aRect.Top())).
 					AppendAscii(",").Append(UniString::CreateFromInt32(aRect.GetWidth())).
@@ -3960,7 +3954,7 @@ sal_Bool StatementControl::HandleCommonMethods( Window *pControl )
 {
 	switch( nMethodId )		// Diese können an jedem Window ausgeführt werden
 	{
-		case M_Exists:			// Oben schon Behandelt. Unterdrückt hier nur Fehler
+		case M_Exists:			// Oben schon behandelt. Unterdrückt hier nur Fehler
 		case M_NotExists:
 		case M_IsEnabled:
 		case M_IsVisible:
@@ -3981,7 +3975,7 @@ sal_Bool StatementControl::HandleCommonMethods( Window *pControl )
 			break;
 		case M_TypeKeys:
 			{
-				if( !(nParams & PARAM_USHORT_1) )	// Anzahl wiederholungen
+				if( !(nParams & PARAM_USHORT_1) )	// Anzahl Wiederholungen
 					nNr1 = 1;
 				if( !(nParams & PARAM_BOOL_1) )		// Follow Focus
 					bBool1 = sal_False;		// so bleibt das bisherige Verhalten
@@ -4017,12 +4011,12 @@ sal_Bool StatementControl::HandleCommonMethods( Window *pControl )
 							if ( !pFocus || !pControl->IsWindowOrChild( pFocus, sal_True ) )
     							pControl->GrabFocus();
 						}
-						if ( bBool1 )	// Jedesmal das FocusWindow finden
+						if ( bBool1 ) // Jedesmal das FocusWindow finden
 						{
 							Window *pFocus = GetpApp()->GetFocusWindow();
 							if ( pFocus && pControl->IsWindowOrChild( pFocus, sal_True ) )
 								pDeliverHere = pFocus;
-							else	// sonst fallback auf das Basisfenster
+							else // sonst Fallback auf das Basisfenster
 								pDeliverHere = pControl;
 						}
                         pDeliverHere = pDeliverHere->GetPreferredKeyInputWindow();
@@ -4442,7 +4436,7 @@ sal_Bool StatementControl::HandleCommonMethods( Window *pControl )
                 }
 
                 if( !(nParams & PARAM_USHORT_1) )
-					nNr1 = CONST_ALIGN_RIGHT;		// default is right Scrollbar(vertical)
+					nNr1 = CONST_ALIGN_RIGHT;		// default is right Scrollbar (vertical)
 
                 if ( (nNr1 != CONST_ALIGN_RIGHT) && (nNr1 != CONST_ALIGN_BOTTOM) )
                 {
@@ -4597,7 +4591,7 @@ sal_Bool StatementControl::Execute()
 
 	short nRT = 0;
 
-	if( pControl )			// Das Fenster Existiert irgendwo, kann aber auch hidden sein!
+	if( pControl )			// Das Fenster existiert irgendwo, kann aber auch hidden sein!
 	{
 		nRT = ImpGetRType( pControl );
 #if OSL_DEBUG_LEVEL > 1
@@ -4665,7 +4659,7 @@ sal_Bool StatementControl::Execute()
                     if ( !WinPtrValid( pControl ) )
                         return sal_False;
                 }
-                if ( !pControl->HasFocus() )  // to get asyncronous focus
+                if ( !pControl->HasFocus() )  // to get asynchronous focus
                 {
                     bBool2 = sal_True;
                     return sal_False;
@@ -4701,6 +4695,7 @@ sal_Bool StatementControl::Execute()
 /*  leads to problems because settext sets the text whereas typekeys adds to the text.
         if ( bDoTypeKeysDelay && nMethodId == M_SetText && ( nParams & PARAM_STR_1 ) )
 		{	// Here the statement is bent to a TypeKeys
+			nMethodId = M_TypeKeys;
 			nParams = PARAM_BOOL_1 | PARAM_STR_1;
 			bBool1 = sal_True;
 			pControl->GrabFocus();
@@ -5368,7 +5363,7 @@ sal_Bool StatementControl::Execute()
 							case M_OpenMenu :
 								{
                                     FIND_ITEM;
-									if ( bItemFound )	// FIND_ITEM Erfolgreich
+									if ( bItemFound ) // FIND_ITEM successful
 									{
 										Rectangle aRect = pTB->GetItemPosDropDownRect( nItemPos );
 										AnimateMouse( pControl, aRect.Center() );
@@ -5376,7 +5371,7 @@ sal_Bool StatementControl::Execute()
 										ImplMouseButtonDown( pTB, aMEvnt);
 										ImplMouseButtonUp( pTB, aMEvnt);
 
-                                        // T.
+                                        // The window is open
 				                        aSubMenuId1 = 0;
 				                        aSubMenuId2 = 0;
 				                        aSubMenuId3 = 0;
@@ -5387,7 +5382,7 @@ sal_Bool StatementControl::Execute()
 							case _M_IsEnabled:
 								{
                                     FIND_ITEM;
-									if ( bItemFound )	// FIND_ITEM successful
+									if ( bItemFound ) // FIND_ITEM successful
 									{
 										pRet->GenReturn ( RET_Value, aUId, pTB->IsItemEnabled( pTB->GetItemId(nItemPos) ) );
 									}
@@ -5396,7 +5391,7 @@ sal_Bool StatementControl::Execute()
 							case M_GetState :
 								{
                                     FIND_ITEM;
-									if ( bItemFound )	// FIND_ITEM successful
+									if ( bItemFound ) // FIND_ITEM successful
 									{
                                         if ( ValueOK( aUId, CUniString("GetState"), nNr1, 4 ) )
 								            switch (nNr1)
@@ -5423,7 +5418,7 @@ sal_Bool StatementControl::Execute()
 											{
 												Rectangle aRect = pTB->GetItemPosRect( nItemPos );
 												Rectangle aTBRect = pTB->GetWindowExtentsRelative( NULL );
-												pRet->GenReturn ( RET_Value, aUId, 
+												pRet->GenReturn ( RET_Value, aUId,
 												UniString::CreateFromInt32(aRect.Left()+aTBRect.Left()).
 													AppendAscii(",").Append(UniString::CreateFromInt32(aRect.Top()+aTBRect.Top())).
 													AppendAscii(",").Append(UniString::CreateFromInt32(aRect.GetWidth())).
@@ -5479,7 +5474,7 @@ sal_Bool StatementControl::Execute()
 						    case M_IsMax:
 						    case M_Minimize:
 						    case M_Maximize:
-						    case M_Help:		// Everything to be treated below
+						    case M_Help: // Everything to be treated below
                                 goto DockingWin;
 							default:
 								ReportError( aUId, GEN_RES_STR2c2( S_UNKNOWN_METHOD, MethodString(nMethodId), "ToolBox" ) );
@@ -5511,7 +5506,7 @@ sal_Bool StatementControl::Execute()
 								if ( ! (nParams & PARAM_USHORT_1) )
 									nNr1 = 1;
 								if ( pThisEntry )
-                                {
+								{
                                     SvLBoxString* pItem = NULL;
                                     sal_uInt16 nValidTextItemCount = 0;
                                     {
@@ -5526,11 +5521,11 @@ sal_Bool StatementControl::Execute()
                                                 nValidTextItemCount++;
                                             }
                                             nIndex++;
-                                        }
-                                    }
+										}
+									}
 									if ( ValueOK( aUId, CUniString("GetText"), nNr1, nValidTextItemCount ) )
-                                        pRet->GenReturn ( RET_Value, aUId, pItem->GetText() );
-                                }
+										pRet->GenReturn ( RET_Value, aUId, pItem->GetText() );
+								}
 								else
 									ReportError( aUId, GEN_RES_STR2c2( S_NO_SELECTED_ENTRY, MethodString( nMethodId ), "TreeListBox" ) );
 							}
@@ -5747,7 +5742,7 @@ sal_Bool StatementControl::Execute()
 							}
 							break;
 						case M_GetItemType :
-                            {
+							{
 								SvTreeListBox *pTree = (SvTreeListBox*)pControl;
                                 SvLBoxEntry *pThisEntry = NULL;
 
@@ -5764,7 +5759,7 @@ sal_Bool StatementControl::Execute()
                                         pThisEntry = (SvLBoxEntry*)pTree->GetEntryAtVisPos( nNr1-1 );
                                     }
                                 }
-                            
+
 							    if ( pThisEntry )
 							    {
 								    if ( ! (nParams & PARAM_USHORT_2) )
@@ -5791,8 +5786,8 @@ sal_Bool StatementControl::Execute()
 							break;
 					}
 					break;
-			    case C_Control:
-                {
+				case C_Control:
+	{
                     sal_uInt16 nRealControlType = 0;
                     if ( dynamic_cast< EditBrowseBox* >(pControl) )
                         nRealControlType = CONST_CTBrowseBox;
@@ -5821,10 +5816,7 @@ sal_Bool StatementControl::Execute()
                                         switch( nMethodId )
 									    {
 
-
     /*
-
-
     sal_Bool			MakeFieldVisible( long nRow, sal_uInt16 nColId, sal_Bool bComplete = sal_False );
     // access to dynamic values of cursor row
     String          GetColumnTitle( sal_uInt16 nColumnId ) const;
@@ -5859,7 +5851,7 @@ sal_Bool StatementControl::Execute()
 
     virtual String  GetCellText(long _nRow, sal_uInt16 _nColId) const;
     sal_uInt16 GetColumnCount() const { return ColCount(); }
-protected:   
+protected:
     virtual long    GetRowCount() const;
 
 
@@ -5874,10 +5866,8 @@ protected:
 
 		    virtual void ActivateCell(long nRow, sal_uInt16	nCol, sal_Bool bSetCellFocus = sal_True);
 		    virtual void DeactivateCell(sal_Bool bUpdate = sal_True);
-
-
-
     */
+
 										    case M_GetSelText :
 											    {
                                                     pRet->GenReturn ( RET_Value, aUId, pEBBox->GetCellText( pEBBox->GetCurrRow(), pEBBox->GetColumnId( pEBBox->GetCurrColumn() )));
@@ -5925,9 +5915,7 @@ protected:
                                                     }
 											    }
 											    break;
-                                                
-                                                
-                                                
+
                                                 /*
 										    case M_GetSelCount :
 											    pRet->GenReturn ( RET_Value, aUId, comm_ULONG(((SvLBox*)pControl)->GetSelectionCount()));
@@ -6196,7 +6184,7 @@ protected:
                                                                     pRet->GenReturn ( RET_Value, aUId, aContent );
                                                                 }
                                                                 break;
-                                                            case TypeClass_STRING:			
+                                                            case TypeClass_STRING:
                                                                 {
                                                                     ::rtl::OUString aContent;
                                                                     aCell >>= aContent;
@@ -6302,12 +6290,12 @@ protected:
                                         default:
                                             ReportError( aUId, GEN_RES_STR2c2( S_UNKNOWN_METHOD, MethodString(nMethodId), "TableControl" ) );
 											break;
-									    }
-                                    }
+										}
+									}
 									break;
 
 								case CONST_CTUnknown:
-                					ReportError( aUId, GEN_RES_STR2( S_UNKNOWN_TYPE, UniString::CreateFromInt32( nRT ), MethodString(nMethodId) ) );
+									ReportError( aUId, GEN_RES_STR2( S_UNKNOWN_TYPE, UniString::CreateFromInt32( nRT ), MethodString(nMethodId) ) );
 									break;
 								default:
 									ReportError( aUId, GEN_RES_STR1( S_INTERNAL_ERROR, MethodString( nMethodId ) ) );
@@ -6315,7 +6303,7 @@ protected:
 							}
 					}
 					break;
-                }
+				}
 				case C_Window:
 					switch( nMethodId )
 					{
@@ -6329,7 +6317,7 @@ protected:
 					break;
 
 				case C_DockingWin:
-                    DockingWin:
+					DockingWin:
 					switch( nMethodId )
 					{
 						case M_AnimateMouse :
@@ -6442,8 +6430,8 @@ protected:
 					break;
 				case C_ModelessDlg:
 				case C_ModalDlg:
-                case C_Dialog:
-                case C_TabDlg:
+				case C_Dialog:
+				case C_TabDlg:
 					MoreDialog:
 					switch( nMethodId )
 					{
@@ -6651,7 +6639,7 @@ protected:
 							case M_Default:
 								{
 									WinBits Style = pControl->GetStyle();
-									if      ( Style & WB_DEF_OK )
+									if ( Style & WB_DEF_OK )
 									{
 										SET_WINP_CLOSING(pControl);
 										pBD->EndDialog(RET_OK);
@@ -6714,10 +6702,10 @@ protected:
 						break;
 					}
 				default:
-					DBG_ERROR( "Unknown Objekttype from UId or Method not suported" );
+					DBG_ERROR( "Unknown object type from UId or Method not supported" );
 					ReportError( aUId, GEN_RES_STR2( S_UNKNOWN_TYPE, UniString::CreateFromInt32( nRT ), MethodString(nMethodId) ) );
 #if OSL_DEBUG_LEVEL > 1
-					m_pDbgWin->AddText( " Unknown Objekttype from UId or Method not suported" );
+					m_pDbgWin->AddText( " Unknown object type from UId or Method not supported" );
 #endif
 					break;
 			}
@@ -6753,3 +6741,5 @@ protected:
 #define FINISH_SAME
 
 }
+
+/* vim: set noet sw=4 ts=4: */
