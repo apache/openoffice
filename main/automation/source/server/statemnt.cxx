@@ -1392,7 +1392,7 @@ sal_Bool StatementCommand::DisplayHID()
 
 		if ( !(nParams & PARAM_ULONG_1) )
 		{
-			if( GetTTSettings()->pDisplayHidWin )	// Nichts ver‰ndern
+			if( GetTTSettings()->pDisplayHidWin )	// Nichts ver√§ndern
 				nLNr1 = GetTTSettings()->pDisplayHidWin->GetConfig();
 			else	// Beim ersten Aufruf wollen wir alles richtig einstellen
 				nLNr1 = DH_MODE_KURZNAME | DH_MODE_LANGNAME;
@@ -1521,7 +1521,7 @@ sal_Bool StatementCommand::DisplayHID()
 			if ( GetTTSettings()->pDisplayHidWin->IsSendData() /*&& bBool2*/ && GetTTSettings()->Act )
 			{
 				if ( !StatementFlow::bSending )
-				{	// Normalerweise syncronisierung ¸ber Protokoll. Hier ist das aber asyncron!!!
+				{	// Normalerweise syncronisierung √ºber Protokoll. Hier ist das aber asyncron!!!
 					WriteControlData( GetTTSettings()->Act, GetTTSettings()->pDisplayHidWin->GetConfig() );
 					new StatementFlow( this, F_EndCommandBlock );	// Kommando zum Senden erzeugen und in que eintragen
 				}
@@ -1537,7 +1537,7 @@ sal_Bool StatementCommand::DisplayHID()
 		}
 
 		if ( pFirst == this )	// Sollte immer so sein, aber besser isses
-			if ( pNext )		// Befehle warten auf Ausf¸hrung
+			if ( pNext )		// Befehle warten auf Ausf√ºhrung
 			{					// An Ende neu einsortieren
 				Advance();
 				QueStatement( NULL );
@@ -1725,7 +1725,7 @@ IMPL_LINK( TranslateWin, DoRestore, PushButton*, EMPTYARG )
 	sTT_E_NEW.SearchAndReplaceAll( CUniString("\\t"), CUniString("\t") );
 
 	if ( StatementList::WinPtrValid( pTranslateWin ) && pTranslateWin->GetText().CompareTo( sTT_E_NEW ) == COMPARE_EQUAL )
-	{	// Im ersten schritt nur in der UI zur¸ck
+	{	// Im ersten schritt nur in der UI zur√ºck
 		pTranslateWin->SetText( sTT_E_OLD );
 	}
 	else
@@ -2086,7 +2086,7 @@ void StatementCommand::Translate()
 			if ( pTranslationWindow->GetType() == WINDOW_BORDERWINDOW && pTranslationWindow->GetWindow( WINDOW_CLIENT ) )
 			{
 				Window* pNew = pTranslationWindow->GetWindow( WINDOW_CLIENT );
-				// Bei Dockingwindoes das kanze Geraffel von Docking Floating ¸berspringen
+				// Bei Dockingwindoes das kanze Geraffel von Docking Floating √ºberspringen
 				while ( IsDialog( pNew ) && pNew->GetUniqueOrHelpId().isEmpty() && pNew->GetChildCount() == 1 )
 					pNew = pNew->GetChild( 0 );
 				pTranslationWindow = pNew;
@@ -2166,8 +2166,8 @@ void StatementCommand::Translate()
 }
 
 Window* StatementCommand::GetNextOverlap( Window* pBase )
-{	// Findet irgendwelche Overlap-Fenster, die schlieﬂbar aussehen
-	// Eventuell muﬂ noch die Auswahl verfeinert werden.
+{	// Findet irgendwelche Overlap-Fenster, die schlie√übar aussehen
+	// Eventuell mu√ü noch die Auswahl verfeinert werden.
 
 	if ( pBase->GetType() != WINDOW_BORDERWINDOW )
 		pBase = pBase->GetWindow( WINDOW_OVERLAP );
@@ -2200,7 +2200,7 @@ Window* StatementCommand::GetNextOverlap( Window* pBase )
 
 Window* StatementCommand::GetNextRecoverWin()
 {
-	// ¸ber die TopLevelWindows der App iterieren
+	// √ºber die TopLevelWindows der App iterieren
 	Window* pBase = Application::GetFirstTopLevelWindow();
 	Window *pControl = NULL;
     Window* pMyFirstDocFrame = NULL;
@@ -2223,7 +2223,7 @@ Window* StatementCommand::GetNextRecoverWin()
 		    }
 
 		    // dann das Fenster selbst Schliessen
-       	    // erstes DocWin ¸berspringen
+       	    // erstes DocWin √ºberspringen
             // Assumption that Doc Windows are Borderwindows and ButtonDialog and such are not
 		    if ( pBase->IsVisible() && !IsFirstDocFrame( pBase ) && pBase->GetType() != WINDOW_BORDERWINDOW && !IsIMEWin( pBase ) )
 			    return pBase;
@@ -2317,7 +2317,7 @@ sal_Bool StatementCommand::Execute()
 					nLNr1 = 0;				// Speichern des AppWin
 					aString1 = UniString();	// Liste der geschlossenen Fenster
 
-					// So daﬂ nacher auch wieder alles auf Default steht
+					// So da√ü nacher auch wieder alles auf Default steht
 					nUseBindings = 0;
                     bCatchGPF = sal_True;
                     bUsePostEvents = sal_True;
@@ -2348,7 +2348,7 @@ sal_Bool StatementCommand::Execute()
 						short nRT = ImpGetRType( pControl );
 
 						if ( nRT == C_TabControl && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_TABDIALOG )
-						{	// Bei Tabcontrol den zugehˆrigen Tabdialog nehmen
+						{	// Bei Tabcontrol den zugeh√∂rigen Tabdialog nehmen
 							pControl = pControl->GET_REAL_PARENT();
 							nRT = ImpGetRType( pControl );
 						}
@@ -2448,9 +2448,9 @@ sal_Bool StatementCommand::Execute()
 								SET_WINP_CLOSING(pControl);
 								((DockingWindow*)pControl)->Close();
 
-								// Eigentlich nur bei TaskWindows! Hoffen wir mal, daﬂ keine anderen DockingWindows dazwischen hauen.
+								// Eigentlich nur bei TaskWindows! Hoffen wir mal, da√ü keine anderen DockingWindows dazwischen hauen.
 								if ( (Window*)nLNr1 != pControl )
-									nNr1 = 1;		// Zum durchprobieren der Buttons beim Schlieﬂen
+									nNr1 = 1;		// Zum durchprobieren der Buttons beim Schlie√üen
 								nLNr1 = (sal_uLong)pControl;
 
 								return sal_False;
@@ -2482,7 +2482,7 @@ sal_Bool StatementCommand::Execute()
 
                                                 // nur bei TaskWindows!
                                                 if ( (Window*)nLNr1 != pControl )
-									                nNr1 = 1;		// Zum durchprobieren der Buttons beim Schlieﬂen
+									                nNr1 = 1;		// Zum durchprobieren der Buttons beim Schlie√üen
 								                nLNr1 = (sal_uLong)pControl;
 
                                                 return sal_False;
@@ -2499,7 +2499,7 @@ sal_Bool StatementCommand::Execute()
 
                                     // Eigentlich nur bei TaskWindows!
                                     if ( (Window*)nLNr1 != pControl )
-									    nNr1 = 1;		// Zum durchprobieren der Buttons beim Schlieﬂen
+									    nNr1 = 1;		// Zum durchprobieren der Buttons beim Schlie√üen
 								    nLNr1 = (sal_uLong)pControl;
 
                                     return sal_False;
@@ -2554,11 +2554,11 @@ sal_Bool StatementCommand::Execute()
 		case RC_ResetApplication:
 		case RC_WaitSlot:
 
-		case RC_AppAbort:		// Sofortiges Lˆschen aller Befehle
+		case RC_AppAbort:		// Sofortiges L√∂schen aller Befehle
 			break;
 		case RC_Assert:
             {
-                ByteString aAssertion( "Diese Assertion wurde vom Testtool per Befehl ausgelˆst" );
+                ByteString aAssertion( "Diese Assertion wurde vom Testtool per Befehl ausgel√∂st" );
                 aAssertion = ByteString( String( aAssertion, RTL_TEXTENCODING_MS_1252 ), RTL_TEXTENCODING_UTF8 );
 			    DBG_ASSERT( !aString1.Len(), ByteString( aString1, RTL_TEXTENCODING_UTF8 ).GetBuffer() );
 			    DBG_ASSERT(  aString1.Len(), aAssertion.GetBuffer() );
@@ -2641,10 +2641,10 @@ sal_Bool StatementCommand::Execute()
 		case RC_Profile:
 			//	Bei folgenden Parametern passiert folgendes:
 			//	ein boolean=false					Alles Profiling stoppen (Ergebnisse liefern)
-			//	ein boolean=true, 1-4 ints			Einteilung der Zeiten in K‰stchen
+			//	ein boolean=true, 1-4 ints			Einteilung der Zeiten in K√§stchen
 			//	kein! boolean keine ints			loggen jeden Befehls
 			//	kein! boolean 1 int					loggen alle int Millisekunden
-			//  ein String							wird in das Logfile ¸bernommen(sonst passiert nichts)
+			//  ein String							wird in das Logfile √ºbernommen(sonst passiert nichts)
 			if( !(nParams & PARAM_BOOL_1) || bBool1 )
 			{
 				if ( !pProfiler )
@@ -2661,7 +2661,7 @@ sal_Bool StatementCommand::Execute()
 					}
 					pProfiler->StartAutoProfiling( nNr1 );
 
-					// Der Header ist abh‰ngig vom Modus
+					// Der Header ist abh√§ngig vom Modus
 					pRet->GenReturn( RET_ProfileInfo, 0, pProfiler->GetProfileHeader() );
 				}
 				else if ( nParams & PARAM_USHORT_1 )
@@ -2672,8 +2672,8 @@ sal_Bool StatementCommand::Execute()
 					if ( nParams & PARAM_USHORT_3 ) { nAnzahl++; };
 					if ( nParams & PARAM_USHORT_4 ) { nAnzahl++; };
 
-					// Hier werden die Parameter ans Testtool zur¸ck ¸bertragen.
-					// Das ist zwar etwas eigenartig, aber ansonsten m¸sste man im Testtool
+					// Hier werden die Parameter ans Testtool zur√ºck √ºbertragen.
+					// Das ist zwar etwas eigenartig, aber ansonsten m√ºsste man im Testtool
 					// die einfache Struktur der Remotebefehle aufbrechen.
 					pRet->GenReturn( RET_ProfileInfo, S_ProfileReset, nAnzahl );
 
@@ -2699,7 +2699,7 @@ sal_Bool StatementCommand::Execute()
 					}
 					pProfiler->StartProfilingPerCommand();
 
-					// Der Header ist abh‰ngig vom Modus
+					// Der Header ist abh√§ngig vom Modus
 					pRet->GenReturn( RET_ProfileInfo, 0, pProfiler->GetProfileHeader() );
 				}
 			}
@@ -2960,7 +2960,7 @@ sal_Bool StatementCommand::Execute()
 							nErrorcode = aDir.GetError();
 							if ( !nErrorcode && !aDir.MakeDir() )
 								nErrorcode = FSYS_ERR_UNKNOWN;
-//	Workaround f¸r Bug 60693
+//	Workaround f√ºr Bug 60693
 //								nErrorcode = aDir.GetError();
 						}
 						break;
@@ -3074,7 +3074,7 @@ sal_Bool StatementCommand::Execute()
 									nDirPos = 0;
 									FileStat aFS( aEntry );
 									if ( !aFS.IsKind( FSYS_KIND_WILD ) && !aFS.IsKind( FSYS_KIND_DIR ) && aEntry.Exists() )
-									{	// Sonderbehandlung f¸r genau einen Eintrag
+									{	// Sonderbehandlung f√ºr genau einen Eintrag
 										if ( !aFS.IsKind( FSYS_KIND_DIR ) && ( aDirEntryKind == FSYS_KIND_DIR ) )
 											pRet->GenReturn ( RET_Value, nMethodId, String() );
 										else
@@ -3738,7 +3738,7 @@ void StatementControl::AnimateMouse( Window *pControl, Point aWohin )
 	aDiff /= nSteps;
 
 	StatementList::bExecuting = sal_True;		// Bah ist das ein ekliger Hack
-												// Das verhindert, daﬂ schon der n‰chste Befehl ausgef¸hrt wird.
+												// Das verhindert, da√ü schon der n√§chste Befehl ausgef√ºhrt wird.
 
 	for ( ; nSteps ; nSteps-- )
 	{
@@ -3765,7 +3765,7 @@ sal_Bool StatementControl::MaybeDoTypeKeysDelay( Window *pTestWindow )
 		aTimer.SetTimeout( nTimeWait );
 		aTimer.Start();
 		StatementList::bExecuting = sal_True;		// Bah ist das ein ekliger Hack
-													// Das verhindert, daﬂ schon der n‰chste Befehl ausgef¸hrt wird.
+													// Das verhindert, da√ü schon der n√§chste Befehl ausgef√ºhrt wird.
 		while ( aTimer.IsActive() )
 		{
 			SafeReschedule( sal_True );
@@ -3794,11 +3794,11 @@ sal_Bool StatementControl::HandleVisibleControls( Window *pControl )
 			break;
 		case M_GetPosX:
 			if ( pControl->GetType() == WINDOW_DOCKINGWINDOW && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_FLOATINGWINDOW )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r FloatingWindows
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr FloatingWindows
 			if ( pControl->GetType() == WINDOW_TABCONTROL && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_TABDIALOG )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r TabDialoge
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr TabDialoge
 			if ( pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_BORDERWINDOW )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r Border
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr Border
             if ( (nParams & PARAM_BOOL_1) && bBool1 )
                 pControl = pControl->GetWindow( WINDOW_OVERLAP );
 
@@ -3813,11 +3813,11 @@ sal_Bool StatementControl::HandleVisibleControls( Window *pControl )
 			break;
 		case M_GetPosY:
 			if ( pControl->GetType() == WINDOW_DOCKINGWINDOW && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_FLOATINGWINDOW )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r FloatingWindows
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr FloatingWindows
 			if ( pControl->GetType() == WINDOW_TABCONTROL && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_TABDIALOG )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r TabDialoge
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr TabDialoge
 			if ( pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_BORDERWINDOW )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r Border
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr Border
             if ( (nParams & PARAM_BOOL_1) && bBool1 )
                 pControl = pControl->GetWindow( WINDOW_OVERLAP );
 
@@ -3832,11 +3832,11 @@ sal_Bool StatementControl::HandleVisibleControls( Window *pControl )
 			break;
 		case M_GetSizeX:
 			if ( pControl->GetType() == WINDOW_DOCKINGWINDOW && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_FLOATINGWINDOW )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r FloatingWindows
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr FloatingWindows
 			if ( pControl->GetType() == WINDOW_TABCONTROL && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_TABDIALOG )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r TabDialoge
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr TabDialoge
 			if ( pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_BORDERWINDOW )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r Border
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr Border
             if ( (nParams & PARAM_BOOL_1) && bBool1 )
                 pControl = pControl->GetWindow( WINDOW_OVERLAP );
 
@@ -3844,11 +3844,11 @@ sal_Bool StatementControl::HandleVisibleControls( Window *pControl )
 			break;
 		case M_GetSizeY:
 			if ( pControl->GetType() == WINDOW_DOCKINGWINDOW && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_FLOATINGWINDOW )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r FloatingWindows
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr FloatingWindows
 			if ( pControl->GetType() == WINDOW_TABCONTROL && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_TABDIALOG )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r TabDialoge
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr TabDialoge
 			if ( pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_BORDERWINDOW )
-				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r Border
+				pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr Border
             if ( (nParams & PARAM_BOOL_1) && bBool1 )
                 pControl = pControl->GetWindow( WINDOW_OVERLAP );
 
@@ -3857,11 +3857,11 @@ sal_Bool StatementControl::HandleVisibleControls( Window *pControl )
 		case M_SnapShot:
 			{
 				if ( pControl->GetType() == WINDOW_DOCKINGWINDOW && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_FLOATINGWINDOW )
-					pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r FloatingWindows
+					pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr FloatingWindows
 				if ( pControl->GetType() == WINDOW_TABCONTROL && pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_TABDIALOG )
-					pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r TabDialoge
+					pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr TabDialoge
 				if ( pControl->GET_REAL_PARENT() && pControl->GET_REAL_PARENT()->GetType() == WINDOW_BORDERWINDOW )
-					pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f¸r Border
+					pControl = pControl->GET_REAL_PARENT();		// Sonderbehandlung f√ºr Border
                 if ( (nParams & PARAM_BOOL_1) && bBool1 )
                     pControl = pControl->GetWindow( WINDOW_OVERLAP );
 
@@ -3958,9 +3958,9 @@ sal_Bool StatementControl::HandleVisibleControls( Window *pControl )
 
 sal_Bool StatementControl::HandleCommonMethods( Window *pControl )
 {
-	switch( nMethodId )		// Diese kˆnnen an jedem Window ausgef¸hrt werden
+	switch( nMethodId )		// Diese k√∂nnen an jedem Window ausgef√ºhrt werden
 	{
-		case M_Exists:			// Oben schon Behandelt. Unterdr¸ckt hier nur Fehler
+		case M_Exists:			// Oben schon Behandelt. Unterdr√ºckt hier nur Fehler
 		case M_NotExists:
 		case M_IsEnabled:
 		case M_IsVisible:
@@ -4210,7 +4210,7 @@ sal_Bool StatementControl::HandleCommonMethods( Window *pControl )
 
 				Edit *pMyEd = new Edit(pDlg,WB_CENTER | WB_BORDER );
 				pMyEd->SetSizePixel(Size(100,30));
-				pDlg->SetText(UniString("Schlieﬂen", RTL_TEXTENCODING_ISO_8859_1));
+				pDlg->SetText(UniString("Schlie√üen", RTL_TEXTENCODING_ISO_8859_1));
 				pDlg->Show();
 				pMyEd->Show();
 				sal_uLong nTime = Time().GetTime();
@@ -4326,7 +4326,7 @@ sal_Bool StatementControl::HandleCommonMethods( Window *pControl )
 					break;
 				}
 
-				pControl = pTemp;	// So daﬂ wir unten ohne Fehler durchkommen
+				pControl = pTemp;	// So da√ü wir unten ohne Fehler durchkommen
 				SplitWindow *pSW = (SplitWindow*) pTemp;
 
 //	Rectangle			GetAutoHideRect() const;
@@ -4570,7 +4570,7 @@ sal_Bool StatementControl::Execute()
 				bBool2 = sal_True;
 				nNr2 = aSeconds;
 				if( !(nParams & PARAM_USHORT_1) )
-					nNr1 = 0;		// defaultm‰ﬂig sofort zur¸ck
+					nNr1 = 0;		// defaultm√§√üig sofort zur√ºck
 			}
 			if ( aSeconds < nNr2 )			// Falls die Stunde umgesprungen ist
 				aSeconds += 60*60;
@@ -4579,7 +4579,7 @@ sal_Bool StatementControl::Execute()
 				pControl = NULL;
 			if ( ((nMethodId == M_Exists) && pControl) ||
 				 ((nMethodId == M_NotExists) && !pControl) )
-			{	// Wenn Bedingung erf¸llt
+			{	// Wenn Bedingung erf√ºllt
 				pRet->GenReturn ( RET_Value, aUId, (comm_BOOL)sal_True );
 			}
 			else
@@ -4649,7 +4649,7 @@ sal_Bool StatementControl::Execute()
         // TODO: handle GetFocus for all Methods and Windows like this (remove part below)
         //       See for impact of changed focus for HandleVisibleControls() (taking Snapshots might be different, possible exclude those methods)
 		if (( (nRT == C_TreeListBox) && !bBool2 )
-			&& nMethodId != M_TypeKeys			// TypeKeys macht das selbst, falls eigenes Focushandling gew¸nscht
+			&& nMethodId != M_TypeKeys			// TypeKeys macht das selbst, falls eigenes Focushandling gew√ºnscht
 			&& nMethodId != M_MouseDown
 			&& nMethodId != M_MouseUp
 			&& nMethodId != M_MouseMove
@@ -4691,7 +4691,7 @@ sal_Bool StatementControl::Execute()
               || nRT == C_TreeListBox
              )
 			|| nMethodId == M_OpenContextMenu )
-			&& nMethodId != M_TypeKeys			// TypeKeys macht das selbst, falls eigenes Focushandling gew¸nscht
+			&& nMethodId != M_TypeKeys			// TypeKeys macht das selbst, falls eigenes Focushandling gew√ºnscht
 			&& nMethodId != M_MouseDown
 			&& nMethodId != M_MouseUp
 			&& nMethodId != M_MouseMove
@@ -5302,7 +5302,7 @@ sal_Bool StatementControl::Execute()
 							case M_Click :
 								{
                                     FIND_ITEM;
-									if ( bItemFound )	// FIND_ITEM successfull
+									if ( bItemFound )	// FIND_ITEM successful
 									{
 										Rectangle aRect = pTB->GetItemRect(pTB->GetItemId(nItemPos));
                                         if ( aRect.IsEmpty() )
