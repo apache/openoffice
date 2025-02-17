@@ -1,6 +1,7 @@
 :
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
+
 #**************************************************************
 #
 #  Licensed to the Apache Software Foundation (ASF) under one
@@ -21,8 +22,6 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  under the License.
 #
 #**************************************************************
-
-
 
 use Cwd 'abs_path';
 use File::Find;
@@ -51,7 +50,7 @@ $destpath =~ s/\\/\//g;
 
 
 if ( ! defined $prj ) {
-# do someting that works for manual call
+# do something that works for manual call
     ($scriptname = `pwd`) =~ s/\n/\/$0/;
     ($tree_src = $scriptname) =~ s/\/update_tree.pl/\/..\/source\/auxiliary/;
     ($tree_dest = $scriptname) =~ s/\/update_tree.pl/\/..\/$destpath\/misc/;
@@ -100,7 +99,7 @@ if ( ! defined $prj ) {
 #-------------------------------
 &do_english;
 #-------------------------------
-# Update localizations from sdf
+# Update localization from sdf
 #-------------------------------
 
 @langs = split /\s+/, $with_lang;
@@ -222,7 +221,7 @@ sub processtreefiles {
                 $id =~ s/^.*?\///;
                 $file = "$source_dir_xhp/$id";
 
-                if ($lng eq 'en-US') { # english comes from the file
+                if ($lng eq 'en-US') { # English comes from the file
                     if (open F,$file) {
                         print ".";
                         undef $/; $cnt = <F>; close F;
