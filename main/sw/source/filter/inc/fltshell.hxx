@@ -598,7 +598,7 @@ public:
 	void BeginStyle(sal_uInt16 nUserCode, RES_POOL_COLLFMT_TYPE aType)
 	{
 		ASSERT(nUserCode<sizeof(pColls)/sizeof(*pColls), "code out of bounds");
-		ASSERT(pColls[nUserCode] == NULL, "user codes dublicate");
+		ASSERT(pColls[nUserCode] == NULL, "user codes duplicate");
 		if (eSubMode == Style)
 			EndStyle();
 		pOut = pColls[nUserCode] = new SwFltFormatCollection(GetDoc(), aType);
@@ -608,7 +608,7 @@ public:
 	void BeginStyle( sal_uInt16 nUserCode, const String& rName )
 	{
 		ASSERT(nUserCode<sizeof(pColls)/sizeof(*pColls), "code out of bounds");
-		ASSERT(pColls[nUserCode] == NULL, "user codes dublicate");
+		ASSERT(pColls[nUserCode] == NULL, "user codes duplicate");
 		if (eSubMode == Style)
 			EndStyle();
 		pOut = pColls[nUserCode] = new SwFltFormatCollection(GetDoc(), rName );
