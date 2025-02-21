@@ -668,7 +668,7 @@ sal_Bool SAL_CALL SfxBaseController::suspend( sal_Bool bSuspend ) throw( ::com::
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
-	// ignore dublicate calls, which doesn't change anything real
+	// ignore duplicate calls, which doesn't change anything real
 	if (bSuspend == m_pData->m_bSuspendState)
 	   return sal_True;
 
