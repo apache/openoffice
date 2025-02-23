@@ -43,8 +43,8 @@
 <bookmark_value>references; by defined names</bookmark_value>
 <bookmark_value>allowed cell names</bookmark_value>
 <bookmark_value>renaming;cells</bookmark_value>
-</bookmark><comment>mw changed "names;...", "addressing;..." and "references,..."  entries.</comment><comment>mw added "renaming;"</comment>
-<paragraph xml-lang="en-US" id="hd_id3147434" role="heading" level="1" l10n="U" oldref="1"><variable id="value_with_name"><link href="text/scalc/guide/value_with_name.xhp" name="Naming Cells">Naming Cells</link>
+</bookmark><comment>mw changed "names;...", "addressing;..." and "references,..." entries.</comment><comment>mw added "renaming;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3147434" role="heading" level="1" l10n="U"><variable id="value_with_name"><link href="text/scalc/guide/value_with_name.xhp" name="Naming Cells">Naming Cells</link>
 </variable></paragraph>
 <paragraph xml-lang="en-US" id="hd_id4391918" role="heading" level="2" l10n="NEW">Allowed names</paragraph>
 <paragraph xml-lang="en-US" id="par_id2129581" role="paragraph" l10n="NEW">Names in Calc can contain letters, numeric characters, and some special characters. Names must start with a letter or an underline character.</paragraph>
@@ -69,24 +69,24 @@
 <paragraph xml-lang="en-US" id="par_id4889675" role="paragraph" l10n="NEW">Use the <emph>Define Names</emph> dialog to define names for formulas or parts of formulas you need more often. In order to specify range names,</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3153954" role="listitem" l10n="U" oldref="3">Select a cell or range of cells, then choose <emph>Insert - Names - Define</emph>. The <emph>Define Names</emph> dialog appears.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153954" role="listitem" l10n="U">Select a cell or range of cells, then choose <emph>Insert - Names - Define</emph>. The <emph>Define Names</emph> dialog appears.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3156283" role="listitem" l10n="U" oldref="4">Type the name of the selected area in the <emph>Name</emph> field. Click <emph>Add</emph>. The newly defined name appears in the list below. Click OK to close the dialog.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156283" role="listitem" l10n="U">Type the name of the selected area in the <emph>Name</emph> field. Click <emph>Add</emph>. The newly defined name appears in the list below. Click OK to close the dialog.</paragraph>
 </listitem>
 </list>
 <paragraph xml-lang="en-US" id="par_id5774101" role="paragraph" l10n="NEW">You can also name other cell ranges in this dialog by entering the name in the field and then selecting the respective cells.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154942" role="paragraph" l10n="U" oldref="5">If you type the name in a formula, after the first few characters entered you will see the entire name as a tip.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154942" role="paragraph" l10n="U">If you type the name in a formula, after the first few characters entered you will see the entire name as a tip.</paragraph>
 <list type="unordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3154510" role="listitem" l10n="U" oldref="6">Press the Enter key in order to accept the name from the tip.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154510" role="listitem" l10n="U">Press the Enter key in order to accept the name from the tip.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3150749" role="listitem" l10n="U" oldref="7">If more than one name starts with the same characters, you can scroll through all the names using the Tab key.<comment>mw copied contents from Calc guide address_byname.xhp</comment></paragraph>
+<paragraph xml-lang="en-US" id="par_id3150749" role="listitem" l10n="U">If more than one name starts with the same characters, you can scroll through all the names using the Tab key.<comment>mw copied contents from Calc guide address_byname.xhp</comment></paragraph>
 </listitem>
 </list>
 <section id="relatedtopics">
-<paragraph xml-lang="en-US" id="par_id3153711" role="paragraph" l10n="U" oldref="8"><link href="text/scalc/01/04070100.xhp" name="Insert - Names - Define">Insert - Names - Define</link></paragraph>
+<paragraph xml-lang="en-US" id="par_id3153711" role="paragraph" l10n="U"><link href="text/scalc/01/04070100.xhp" name="Insert - Names - Define">Insert - Names - Define</link></paragraph>
 <embed href="text/scalc/guide/goalseek.xhp#goalseek"/>
 <embed href="text/scalc/guide/relativ_absolut_ref.xhp#relativ_absolut_ref"/>
 <embed href="text/scalc/guide/address_auto.xhp#address_auto"/><comment>mw deleted one EMBED paragraph and copied two EMBED paragraphs from Calc guide address_byname.xhp</comment>
