@@ -140,7 +140,7 @@ typedef struct
     uLong rest_read_compressed; /* number of byte to be decompressed */
     uLong rest_read_uncompressed;/*number of byte to be obtained after decomp*/
     zlib_filefunc_def z_filefunc;
-    voidpf filestream;        /* io structore of the zipfile */
+    voidpf filestream;        /* io structure of the zipfile */
     uLong compression_method;   /* compression method (0==store) */
     uLong byte_before_the_zipfile;/* byte before the zipfile, (>0 for sfx)*/
     int   raw;
@@ -152,7 +152,7 @@ typedef struct
 typedef struct
 {
     zlib_filefunc_def z_filefunc;
-    voidpf filestream;        /* io structore of the zipfile */
+    voidpf filestream;        /* io structure of the zipfile */
     unz_global_info gi;       /* public global information */
     uLong byte_before_the_zipfile;/* byte before the zipfile, (>0 for sfx)*/
     uLong num_file;             /* number of the current file in the zipfile*/
