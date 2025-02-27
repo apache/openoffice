@@ -99,5 +99,3 @@ endif
 .PHONY: clean
 clean :
 	-$(DELRECURSIVE) $(subst /,$(PS),$(OUT_BIN)/CSharp_SpreadsheetExamples)
-
-
