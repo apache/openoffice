@@ -41,7 +41,7 @@ use Carp::always;
 
     build_release.pl <command> {option} <release-description.xml>
 
-    comands:
+    commands:
         build      builds all install sets as requested by the XML file and supported by the platform.
         build-missing
                    build only those install sets that have not been built earlier.
@@ -170,7 +170,7 @@ A single <release> tag contains any number of
                 Eg. http://people.apache.org/~somebody/developer-snapshots/snapshot/win32
 
     Defines one download source that is referenced in the wiki page.  Multiple <download> elements
-    per platform are possible.  Earlier entires are preferred over later ones.
+    per platform are possible.  Earlier entries are preferred over later ones.
 
 <package>
             id
@@ -198,7 +198,7 @@ A single <release> tag contains any number of
                 Semicolon separated list of languages for which the build the target.
                 The special value 'all' is a shortcut for all languages listed by <language> elements.
 
-    Defines the sets of targets, plaforms and languages which are to be built.
+    Defines the sets of targets, platforms and languages which are to be built.
 
 <wiki>
     <package-ref>
@@ -385,7 +385,7 @@ sub ProcessCommandline (@)
 sub PrintUsageAndExit ()
 {
     print STDERR "usage: $0 <command> {option} <release-description.xml>\n";
-    print STDERR "    comands:\n";
+    print STDERR "    commands:\n";
     print STDERR "        build\n";
     print STDERR "        build-missing\n";
     print STDERR "        upload\n";
@@ -1012,7 +1012,7 @@ sub Upload ($$)
 
 =head2 PrepareUploadArea ($context, @download_sets)
 
-    Create a temporary directory with the same sub directory strcuture that is requested in the upload location.
+    Create a temporary directory with the same sub directory structure that is requested in the upload location.
     The files that are to be uploaded are not copied but linked into this temporary directory tree.
 
     Returns the name of the temporary directory.
@@ -1600,7 +1600,7 @@ sub GetPlatformsForTable ($@)
         }
     }
 
-    # Retrieve the platform descriptors for the plaform ids.
+    # Retrieve the platform descriptors for the platform ids.
     my @matching_platform_descriptors = ();
     foreach my $platform_id (@{$release_descriptor->{'platform-ids'}})
     {
