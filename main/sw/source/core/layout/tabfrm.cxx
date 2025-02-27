@@ -4380,7 +4380,7 @@ void SwRowFrm::Format( const SwBorderAttrs *pAttrs )
                 }
                 else
                 {
-                    // pTmpRow is a first row in the table structue.
+                    // pTmpRow is a first row in the table structure.
                     // We go up in the table structure:
                     pTmpRow = pTmpRow->GetUpper()->GetUpper() &&
                               pTmpRow->GetUpper()->GetUpper()->IsRowFrm() ?
@@ -5852,7 +5852,7 @@ SwTwips SwTabFrm::CalcHeightOfFirstContentLine() const
             // actually is determined by a lower cell with rowspan = -1. In this case we should not
             // just return the height of the first line. Basically we need to get the height of the
             // line as it would be on the last page. Since this is quite complicated to calculate,
-            // we olny calculate the height of the first line.
+            // we only calculate the height of the first line.
             if ( pFirstRow->GetPrev() &&
                  static_cast<SwRowFrm*>(pFirstRow->GetPrev())->IsRowSpanLine() )
             {

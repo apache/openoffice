@@ -638,7 +638,7 @@ private:
     sal_Int32							m_nCurrentStructElement;
     /* structure parent tree */
     std::vector< rtl::OString >         m_aStructParentTree;
-    /* emit strucure marks currently (aka. NonStructElement or not)
+    /* emit structure marks currently (aka. NonStructElement or not)
      */
     bool								m_bEmitStructure;
     bool								m_bNewMCID;
