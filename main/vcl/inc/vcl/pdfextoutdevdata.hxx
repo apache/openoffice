@@ -315,7 +315,7 @@ public :
     /** Set an outline item's parent
 
     @param nItem
-    specififies which item should be reparented.
+    specifies which item should be reparented.
 
     @param nNewParent
     specifies which outline item will be the item's new parent.
@@ -330,7 +330,7 @@ public :
     /** Set an outline item's title text
 
     @param nItem
-    specififies which item should get a new text
+    specifies which item should get a new text
 
     @param rText
     sets the title text of the item
@@ -344,7 +344,7 @@ public :
     /** Set an outline item's destination
 
     @param nItem
-    specififies which item should get a new dest
+    specifies which item should get a new dest
 
     @param nDestID
     specifies the item's new destination
@@ -390,7 +390,7 @@ public :
     For pagination artifacts that are not part of the logical structure
     of the document (like header, footer or page number) the special
     StructElement <code>NonStructElement</code> exists. To place content
-    outside of the struture tree simply call
+    outside of the structure tree simply call
     <code>BeginStructureElement( NonStructElement )</code> then draw your
     content and then call <code>EndStructureElement()</code>. Any children
     of a <code>NonStructElement</code> will not be part of the structure as well.
