@@ -6364,7 +6364,7 @@
 						<xsl:when test="../@ss:StyleID">
 							<xsl:value-of select="../@ss:StyleID"/>
 						</xsl:when>
-						<!-- if no correspondent column style exist.. -->
+						<!-- if no corresponding column style exists... -->
 						<!-- inherit style from parent table style -->
 						<xsl:when test="../../@ss:StyleID">
 							<!-- function to give in col-pos and get back column style  -->
@@ -6787,7 +6787,7 @@
 							<xsl:value-of select="../@ss:StyleID"/>
 						</xsl:attribute>
 					</xsl:when>
-					<!-- if no correspondent column style exist.. -->
+					<!-- if no corresponding column style exists... -->
 					<!-- inherit style from parent table style -->
 					<xsl:when test="../../@ss:StyleID">
 						<!-- function to give in col-pos and get back column style  -->
