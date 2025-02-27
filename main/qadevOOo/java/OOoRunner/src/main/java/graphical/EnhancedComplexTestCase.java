@@ -490,20 +490,20 @@ private void callEntry(String _sEntry, ParameterHelper _aParam)
 //                                FileOutputStream out2 = new FileOutputStream(sHTMLFile);
 //                                PrintStream out = new PrintStream(out2);
 //
-//                                out.println("<HTML>");
-//                                out.println("<BODY>");
+//                                out.println("<html>");
+//                                out.println("<body>");
 //                                for (int i=0;i<aList.size();i++)
 //                                {
-//                                    // <A href="link">blah</A>
+//                                    // <a href="link">blah</a>
 //                                    String sPSFile = (String)aList.get(i);
-//                                    out.print("<A href=\"");
+//                                    out.print("<a href=\"");
 //                                    out.print(sPSFile + ".html");
 //                                    out.print("\">");
 //                                    out.print(sPSFile);
-//                                    out.println("</A>");
-//                                    out.println("<BR>");
+//                                    out.println("</a>");
+//                                    out.println("<br>");
 //                                }
-//                                out.println("</BODY></HTML>");
+//                                out.println("</body></html>");
 //                                out.close();
 //                                out2.close();
 //                            }
