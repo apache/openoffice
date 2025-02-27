@@ -115,4 +115,3 @@ clean :
 	-$(DELRECURSIVE) $(subst /,$(PS),$(SAMPLE_CLASS_OUT))
 	-$(DELRECURSIVE) $(subst /,$(PS),$(SCRIPT_GEN_OUT))
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$(SCRIPT_PACKAGE_URL)))
-

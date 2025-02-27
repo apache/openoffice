@@ -87,4 +87,3 @@ endif
 .PHONY: clean
 clean :
 	-$(DELRECURSIVE) $(subst /,$(PS),$(OUT_BIN)/VB_dotNET_WriterDemo)
-
