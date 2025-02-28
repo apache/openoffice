@@ -362,8 +362,8 @@ Sequence < Reference < ::com::sun::star::linguistic2::XMeaning > > SAL_CALL Thes
                 OString aTmpdat(OU2ENC(ndat,osl_getThreadTextEncoding()));
 
 #if defined(WNT)
-                // workaround for Windows specifc problem that the
-                // path length in calls to 'fopen' is limted to somewhat
+                // workaround for Windows specific problem that the
+                // path length in calls to 'fopen' is limited to somewhat
                 // about 120+ characters which will usually be exceed when
                 // using dictionaries as extensions.
                 aTmpidx = Win_GetShortPathName( nidx );
