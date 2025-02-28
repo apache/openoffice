@@ -262,5 +262,5 @@ namespace DOM
     }
 
 
-} // namspace DOM
+} // namespace DOM
 

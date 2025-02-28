@@ -41,8 +41,8 @@ namespace ary
     {
         class Module;
         class CodeEntity;
-    }   // namspace idl
-}   // namspace csi
+    }   // namespace idl
+}   // namespace csi
 
 
 class MainDisplay_Idl;
