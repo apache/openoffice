@@ -261,4 +261,3 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 }
 
 //----------------------------------------------------------------------------
-

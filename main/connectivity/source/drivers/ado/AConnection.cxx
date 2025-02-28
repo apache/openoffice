@@ -621,6 +621,3 @@ const OExtendedTypeInfo* OConnection::getTypeInfoFromType(const OTypeInfoMap& _r
 	return pTypeInfo;
 }
 // -----------------------------------------------------------------------------
-
-
-

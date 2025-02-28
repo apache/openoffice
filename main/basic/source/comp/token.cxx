@@ -712,4 +712,3 @@ void SbiTokenizer::Hilite( SbTextPortions& rList )
 	}
 	bUsedForHilite = sal_False;
 }
-

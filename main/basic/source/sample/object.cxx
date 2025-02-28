@@ -271,4 +271,3 @@ SbxObject* SampleObjectFac::CreateObject( const String& rClass )
 		return new SampleElement( rClass );
 	return NULL;
 }
-

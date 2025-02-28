@@ -84,4 +84,3 @@ void ODbaseColumns::dropObject(sal_Int32 _nPos,const ::rtl::OUString /*_sElement
 		m_pTable->dropColumn(_nPos);
 }
 // -----------------------------------------------------------------------------
-

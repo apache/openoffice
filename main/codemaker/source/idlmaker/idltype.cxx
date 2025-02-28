@@ -1744,5 +1744,3 @@ OString scope(const OString& scope, const OString& type )
 
 	return tmpBuf.makeStringAndClear();
 }
-
-

@@ -262,5 +262,3 @@ void OConnectionWrapper::createUniqueId( const ::rtl::OUString& _rURL
 	rtl_digest_destroy(aDigest);
 }
 // -----------------------------------------------------------------------------
-
-

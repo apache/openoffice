@@ -62,5 +62,3 @@ void ODbaseCatalog::refreshTables()
 	else
 		m_pTables = new ODbaseTables(m_xMetaData,*this,m_aMutex,aVector);
 }
-
-

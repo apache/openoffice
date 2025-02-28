@@ -184,5 +184,3 @@ SbError SbiDdeControl::Poke( sal_Int16 nChannel, const String& rItem, const Stri
 	aRequest.Execute();
 	return GetLastErr( pConv );
 }
-
-

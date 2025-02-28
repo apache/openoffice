@@ -96,4 +96,3 @@ DT_Xml::inq_IsWhite() const
 
 }   // namespace info
 }   // namespace ary
-

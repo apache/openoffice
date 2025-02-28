@@ -660,4 +660,3 @@ int mscx_filterCppException(
 }
 
 #pragma pack(pop)
-

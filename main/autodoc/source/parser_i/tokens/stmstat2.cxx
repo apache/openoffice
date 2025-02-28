@@ -36,5 +36,3 @@ StmStatu2::AsBounds()
 {
 	return 0;
 }
-
-

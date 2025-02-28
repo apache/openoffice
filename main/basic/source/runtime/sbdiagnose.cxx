@@ -128,4 +128,3 @@ RTLFUNC(CaptureAssertions)
     (void)bWrite;
 #endif
 }
-

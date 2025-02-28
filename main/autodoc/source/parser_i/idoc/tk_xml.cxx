@@ -164,5 +164,3 @@ Tok_XmlFormat_EndTag::Text() const
 
 }   // namespace dsapi
 }   // namespace csi
-
-

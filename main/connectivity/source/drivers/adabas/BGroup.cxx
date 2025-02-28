@@ -86,5 +86,3 @@ void OAdabasGroup::refreshUsers()
 	else
 		m_pUsers = new OUsers(*this,m_aMutex,aVector,m_pConnection,this);
 }
-
-

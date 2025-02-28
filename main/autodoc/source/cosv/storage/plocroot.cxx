@@ -516,6 +516,3 @@ InvalidRoot::OwnDelimiter() const
 
 } // namespace ploc
 } // namespace csv
-
-
-

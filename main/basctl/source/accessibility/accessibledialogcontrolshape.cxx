@@ -612,4 +612,3 @@ Reference< awt::XFont > AccessibleDialogControlShape::getFont(  ) throw (Runtime
 }
 
 // -----------------------------------------------------------------------------
-

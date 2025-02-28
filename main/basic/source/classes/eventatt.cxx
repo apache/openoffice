@@ -592,4 +592,3 @@ void RTL_Impl_CreateUnoDialog( StarBASIC* pBasic, SbxArray& rPar, sal_Bool bWrit
 
 
 //===================================================================
-

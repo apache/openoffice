@@ -781,4 +781,3 @@ IMPL_LINK( SfxSaveTabPage, ODFVersionHdl_Impl, ListBox *, EMPTYARG )
 
     return 0;
 }
-

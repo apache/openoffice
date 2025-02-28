@@ -1964,4 +1964,3 @@ void SvxSwPosSizeTabPage::SetView( const SdrView* pSdrView )
 
     //SetMinMaxPosition();
 }
-

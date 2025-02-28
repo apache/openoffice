@@ -264,4 +264,3 @@ IMPL_LINK( OfaMemoryOptionsPage, GraphicCacheConfigHdl, NumericField*, EMPTYARG 
 
     return 0;
 }
-

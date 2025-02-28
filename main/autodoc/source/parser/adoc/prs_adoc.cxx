@@ -46,6 +46,3 @@ DocuParser_AutodocStyle::Create_DocuContext() const
 }
 
 }   // namespace adoc
-
-
-

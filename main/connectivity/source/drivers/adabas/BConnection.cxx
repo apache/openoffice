@@ -265,6 +265,3 @@ Sequence< sal_Int8 > OAdabasConnection::getUnoTunnelImplementationId()
 	return aRet;
 }
 // -----------------------------------------------------------------------------
-
-
-

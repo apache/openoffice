@@ -252,4 +252,3 @@ Sequence< Reference< XInteractionContinuation > > SAL_CALL DocPasswordRequest::g
 // ============================================================================
 
 } // namespace comphelper
-

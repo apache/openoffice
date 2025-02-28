@@ -2595,4 +2595,3 @@ Reference< XStarBasicAccess > getStarBasicAccess( BasicManager* pMgr )
 		new StarBasicAccess_Impl( (BasicManager*)pMgr );
 	return xRet;
 }
-

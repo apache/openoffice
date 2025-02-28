@@ -2549,4 +2549,3 @@ IMPL_LINK( SvxEditModulesDlg, OpenURLHdl_Impl, svt::FixedHyperlink *, EMPTYARG )
     lcl_OpenURL( sURL );
     return 0;
 }
-

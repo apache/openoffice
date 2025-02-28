@@ -143,6 +143,3 @@ sal_Int32 SAL_CALL java_sql_Array::getBaseType(  ) throw(::com::sun::star::sdbc:
 	//	return out==0 ? 0 : new java_sql_ResultSet( t.pEnv, out );
 	return NULL;
 }
-
-
-

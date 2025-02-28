@@ -426,4 +426,3 @@ void SAL_CALL cppu_unoInterfaceProxy_dispatch(
 }
 
 }
-

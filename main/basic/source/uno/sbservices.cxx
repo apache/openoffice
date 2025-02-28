@@ -56,4 +56,3 @@ namespace basic
 //........................................................................
 
 IMPLEMENT_COMPONENT_LIBRARY_API( ::basic::BasicModule, ::basic::initializeModule )
-

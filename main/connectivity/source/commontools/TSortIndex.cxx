@@ -171,4 +171,3 @@ OKeyValue* OKeyValue::createKeyValue(sal_Int32 _nVal)
 	return new OKeyValue(_nVal);
 }
 // -----------------------------------------------------------------------------
-

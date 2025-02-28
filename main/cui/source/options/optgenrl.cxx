@@ -554,4 +554,3 @@ int SvxGeneralTabPage::DeactivatePage( SfxItemSet* _pSet )
         FillItemSet( *_pSet );
 	return LEAVE_PAGE;
 }
-

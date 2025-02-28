@@ -36,4 +36,3 @@ OResultSet* OFlatStatement::createResultSet()
 }
 // -------------------------------------------------------------------------
 IMPLEMENT_SERVICE_INFO(OFlatStatement,"com.sun.star.sdbc.driver.flat.Statement","com.sun.star.sdbc.Statement");
-

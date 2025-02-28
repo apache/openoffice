@@ -767,5 +767,3 @@ sal_uInt16 SvxTextAnimationPage::GetSelectedDirection()
 
 	return( nValue );
 }
-
-

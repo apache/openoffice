@@ -54,6 +54,3 @@ TkpNullContex2::FollowUpContext()
 {
  	return *this;
 }
-
-
-

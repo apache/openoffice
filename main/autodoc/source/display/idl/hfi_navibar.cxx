@@ -216,4 +216,3 @@ HF_IdlNavigationBar::Add_SubRow()
 {
     return *new HF_NaviSubRow( CurOut() );
 }
-

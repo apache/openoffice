@@ -78,7 +78,3 @@ void OGroups::dropObject(sal_Int32 /*_nPos*/,const ::rtl::OUString _sElementName
 	m_aCollection.Delete(_sElementName);
 }
 // -----------------------------------------------------------------------------
-
-
-
-

@@ -123,5 +123,3 @@ OEvaluateSet* OFILEOperandAttr::preProcess(OBoolOperator* pOp, OOperand* pRight)
 	}
 	return pEvaluateSet;
 }
-
-

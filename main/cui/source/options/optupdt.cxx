@@ -406,4 +406,3 @@ void SvxOnlineUpdateTabPage::CalcButtonWidth()
         m_aChangePathButton.SetSizePixel( aSize );
     }
 }
-

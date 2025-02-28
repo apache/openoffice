@@ -158,4 +158,3 @@ rtl::OUString ServiceDecl::getImplementationName() const
 
 } // namespace service_decl
 } // namespace comphelper
-

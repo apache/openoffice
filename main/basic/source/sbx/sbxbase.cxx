@@ -448,4 +448,3 @@ sal_Bool SbxInfo::StoreData( SvStream& rStrm ) const
 	}
 	return sal_True;
 }
-

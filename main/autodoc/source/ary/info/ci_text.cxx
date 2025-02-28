@@ -61,5 +61,3 @@ DocuText::StoreAt( DocuDisplay & o_rDisplay ) const
 
 }   // namespace info
 }   // namespace ary
-
-

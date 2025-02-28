@@ -144,4 +144,3 @@ void primeWeakMap( void)
 	InitTypeDesc( com::sun::star::reflection::XInterfaceMethodTypeDescription );
 	InitTypeDesc( com::sun::star::reflection::XMethodParameter );
 }
-

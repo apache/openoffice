@@ -510,6 +510,3 @@ void OUnaryOperator::Exec(OCodeStack& rCodeStack)
 }
 // -----------------------------------------------------------------------------
 sal_uInt16 OUnaryOperator::getRequestedOperands() const {return 1;}
-
-
-

@@ -710,4 +710,3 @@ void SvBaseLinksDlg::SetActLink( SvBaseLink * pLink )
         }
 	}
 }
-

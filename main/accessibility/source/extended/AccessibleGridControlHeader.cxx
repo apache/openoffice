@@ -289,4 +289,3 @@ Reference< XAccessible > AccessibleGridControlHeader::implGetChild(
 } // namespace accessibility
 
 // ============================================================================
-

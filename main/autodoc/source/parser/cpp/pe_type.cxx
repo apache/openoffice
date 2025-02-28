@@ -541,8 +541,3 @@ PE_Type::On_within_indirection_AmpersAnd(const char *)
 }
 
 }   // namespace cpp
-
-
-
-
-

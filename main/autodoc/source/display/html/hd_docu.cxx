@@ -477,4 +477,3 @@ Docu_Display::Write_QualifiedName( const ary::QualifiedName & i_sQuName )
     if ( i_sQuName.IsFunction() )
         CurOut() << "()";
 }
-

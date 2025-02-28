@@ -361,5 +361,3 @@ void SvxAreaTabDialog::PageCreated( sal_uInt16 nId, SfxTabPage &rPage )
 
 	}
 }
-
-

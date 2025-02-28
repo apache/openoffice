@@ -102,7 +102,3 @@ void fx()
 
     Cout() << a << " " << x << Endl();  // Must be:   5 15
 }
-
-
-
-

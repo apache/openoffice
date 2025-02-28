@@ -395,4 +395,3 @@ bool AccessibleBrowseBoxAccess::isContextAlive() const
 // ============================================================================
 
 }   // namespace accessibility
-

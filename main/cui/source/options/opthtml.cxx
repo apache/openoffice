@@ -261,5 +261,3 @@ IMPL_LINK(OfaHtmlTabPage, CheckBoxHdl_Impl, CheckBox*, pBox)
 	aStarBasicWarningCB.Enable(!pBox->IsChecked());
 	return 0;
 }
-
-

@@ -87,6 +87,3 @@ void* SAL_CALL component_getFactory( const sal_Char* pImplementationName,
 	return pReturn ;
 }
 } // extern "C"
-
-
-

@@ -1975,5 +1975,3 @@ AbstractPasswordToOpenModifyDialog * AbstractDialogFactory_Impl::CreatePasswordT
     PasswordToOpenModifyDialog * pDlg = new PasswordToOpenModifyDialog( pParent, nMinPasswdLen, nMaxPasswdLen, bIsPasswordToModify );
     return new AbstractPasswordToOpenModifyDialog_Impl( pDlg );
 }    
-
-

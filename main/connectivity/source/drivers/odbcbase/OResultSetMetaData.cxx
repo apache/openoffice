@@ -309,4 +309,3 @@ sal_Bool SAL_CALL OResultSetMetaData::isWritable( sal_Int32 column ) throw(SQLEx
 	return getNumColAttrib(column,SQL_DESC_UPDATABLE) == SQL_ATTR_WRITE;
 }
 // -------------------------------------------------------------------------
-

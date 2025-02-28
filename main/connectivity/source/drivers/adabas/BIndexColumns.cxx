@@ -115,6 +115,3 @@ ObjectType OIndexColumns::appendObject( const ::rtl::OUString& /*_rForName*/, co
     return cloneDescriptor( descriptor );
 }
 // -----------------------------------------------------------------------------
-
-
-

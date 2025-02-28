@@ -651,4 +651,3 @@ bool SAL_CALL SfxDialogLibrary::isLibraryElementValid( ::com::sun::star::uno::An
 
 }
 //============================================================================
-

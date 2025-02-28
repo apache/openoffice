@@ -93,5 +93,3 @@ HF_NaviSubRow::Produce_Row()
             << (*it).first.first;
     }
 }
-
-

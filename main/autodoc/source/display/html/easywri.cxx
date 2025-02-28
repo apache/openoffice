@@ -56,4 +56,3 @@ EasyWriter::Out()
     csv_assert( ! aCurDestination.empty() );
     return *aCurDestination.top();
 }
-

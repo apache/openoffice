@@ -52,5 +52,3 @@ TokenParse2::GetNextToken()
 	}
 	return bDone;
 }
-
-

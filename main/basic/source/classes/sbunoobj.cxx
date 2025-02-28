@@ -4857,4 +4857,3 @@ bool handleToStringForCOMObjects( SbxObject* pObj, SbxValue* pVal )
 	}
 	return bSuccess;
 }
-

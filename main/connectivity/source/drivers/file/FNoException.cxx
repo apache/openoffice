@@ -117,11 +117,3 @@ OKeyValue* OResultSet::GetOrderbyKeyValue(OValueRefRow& _rRow)
 	return pKeyValue;
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-
-
-
-

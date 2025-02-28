@@ -216,4 +216,3 @@ void SAL_CALL MediaEventListenersImpl::focusLost( const ::com::sun::star::awt::F
 
 } // namespace priv
 } // namespace avmedia
-

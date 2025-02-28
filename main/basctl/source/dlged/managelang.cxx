@@ -423,4 +423,3 @@ Sequence< Locale > SetDefaultLanguageDialog::GetLocales() const
 	}
 	return aLocaleSeq;
 }
-

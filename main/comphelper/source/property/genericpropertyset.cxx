@@ -294,4 +294,3 @@ Sequence< OUString > SAL_CALL GenericPropertySet::getSupportedServiceNames(  )
 {
 	return (XPropertySet*)new GenericPropertySet( pInfo );
 }
-

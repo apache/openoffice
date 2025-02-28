@@ -294,5 +294,3 @@ void ADOS::ThrowException(ADOConnection* _pAdoCon,const Reference< XInterface >&
 	}
 	pErrors->Release();
 }
-
-

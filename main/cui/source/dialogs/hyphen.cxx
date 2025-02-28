@@ -649,5 +649,3 @@ void SvxHyphenWordDialog::SelRight()
 {
     m_pImpl->SelLeft_Impl();
 }
-
-

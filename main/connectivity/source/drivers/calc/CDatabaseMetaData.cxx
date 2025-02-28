@@ -482,5 +482,3 @@ Reference< XResultSet > SAL_CALL OCalcDatabaseMetaData::getTables(
 	return xRef;
 }
 // -----------------------------------------------------------------------------
-
-

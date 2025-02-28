@@ -938,5 +938,3 @@ void OTools::getBindTypes(sal_Bool _bUseWChar,
 										fSqlType	= SQL_LONGVARBINARY; break;
 	}
 }
-
-

@@ -344,4 +344,3 @@ void SAL_CALL OHSQLUser::changePassword( const ::rtl::OUString& /*oldPassword*/,
 	return sPrivs;
 }
 // -----------------------------------------------------------------------------
-

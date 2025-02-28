@@ -1078,4 +1078,3 @@ void SvxJavaClassPathDlg::SetClassPath( const String& _rPath )
 	m_aPathList.SelectEntryPos(0);
 	SelectHdl_Impl( NULL );
 }
-

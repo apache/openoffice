@@ -492,4 +492,3 @@ ExpressionNodeSharedPtr FunctionParser::parseFunction( const ::rtl::OUString& _s
     return pContext->maOperandStack.top();
 }
 }
-

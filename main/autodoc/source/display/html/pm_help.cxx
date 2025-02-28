@@ -221,6 +221,3 @@ PageMaker_Help::Write_DocuArea()
 {
     CurOut() << new HorizontalLine;
 }
-
-
-

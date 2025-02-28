@@ -275,7 +275,3 @@ OOperandAttr::OOperandAttr(sal_uInt16 _nPos,const Reference< XPropertySet>& _xCo
 {
 }
 // -----------------------------------------------------------------------------
-
-
-
-

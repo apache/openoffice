@@ -748,4 +748,3 @@ void SvxLineEndDefTabPage::DataChanged( const DataChangedEvent& rDCEvt )
 		aLbLineEnds.SelectEntryPos( nOldSelect );
 	}
 }
-

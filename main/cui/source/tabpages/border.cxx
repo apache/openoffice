@@ -1249,4 +1249,3 @@ void SvxBorderTabPage::PageCreated (SfxAllItemSet aSet) //add CHINA001
 }
 
 // ============================================================================
-

@@ -103,4 +103,3 @@ sal_Int32 SAL_CALL java_io_InputStream::readBytes( ::com::sun::star::uno::Sequen
 	} //t.pEnv
 	return out;
 }
-

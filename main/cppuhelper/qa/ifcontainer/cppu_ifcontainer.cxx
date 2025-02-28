@@ -241,4 +241,3 @@ namespace cppu_ifcontainer
 
 
 } // namespace cppu_ifcontainer
-

@@ -325,4 +325,3 @@ void SAL_CALL OAdabasUser::changePassword( const ::rtl::OUString& objPassword, c
 	return sPrivs;
 }
 // -----------------------------------------------------------------------------
-

@@ -821,5 +821,3 @@ void SAL_CALL java_sql_Statement::release() throw()
 	return ::cppu::OPropertySetHelper::createPropertySetInfo(getInfoHelper());
 }
 // -----------------------------------------------------------------------------
-
-

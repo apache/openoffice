@@ -161,4 +161,3 @@ void OAdabasCatalog::correctColumnProperties(sal_Int32 /*_nPrec*/, sal_Int32& _r
 	}	
 }
 // -----------------------------------------------------------------------------
-

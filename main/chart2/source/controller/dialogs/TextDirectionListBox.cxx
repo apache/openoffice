@@ -53,4 +53,3 @@ TextDirectionListBox::~TextDirectionListBox()
 }
 
 } //namespace chart
-

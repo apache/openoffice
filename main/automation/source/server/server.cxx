@@ -987,4 +987,3 @@ extern "C" AUTOMATION_DLLPUBLIC void DestroyEventLogger()
 {
     MacroRecorder::GetMacroRecorder()->SetActionLog( sal_False );   // Will delete MacroRecorder if necessary
 }
-

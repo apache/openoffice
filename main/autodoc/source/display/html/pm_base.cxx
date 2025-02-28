@@ -68,4 +68,3 @@ SpecializedPageMaker::CurOut()
 {
     return Page().CurOut();
 }
-

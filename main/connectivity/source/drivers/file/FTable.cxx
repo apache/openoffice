@@ -250,4 +250,3 @@ void OFileTable::refreshHeader()
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OFileTable::refreshHeader" );
 }
 // -----------------------------------------------------------------------------
-

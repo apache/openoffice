@@ -851,4 +851,3 @@ void SvxPathTabPage::SetPathList(
         OSL_ENSURE( sal_False, "SvxPathTabPage::SetPathList(): caught an exception!" );
     }
 }
-

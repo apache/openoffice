@@ -129,4 +129,3 @@ HF_IdlConstGroup::produce_MemberDetails( HF_SubTitleTable &  o_table,
         aElement( Env(), o_table );
     aElement.Produce_byData(i_ce);
 }
-

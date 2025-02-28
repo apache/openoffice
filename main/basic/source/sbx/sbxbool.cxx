@@ -245,4 +245,3 @@ void ImpPutBool( SbxValues* p, sal_Int16 n )
 			SbxBase::SetError( SbxERR_CONVERSION );
 	}
 }
-

@@ -110,4 +110,3 @@ void _cdecl main( int argc, char * argv[] )
 	sal_Int32 d;
 	scanf("%d",&d);
 }
-

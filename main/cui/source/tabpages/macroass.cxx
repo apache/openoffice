@@ -494,5 +494,3 @@ SfxMacroAssignDlg::SfxMacroAssignDlg( Window* pParent, const Reference< XFrame >
 SfxMacroAssignDlg::~SfxMacroAssignDlg()
 {
 }
-
-
