@@ -1161,4 +1161,3 @@ sal_Bool SbxBasicFormater::isBasicFormat( String sFormatStrg )
 		return sal_True;
 	return sal_False;
 }
-

@@ -68,5 +68,3 @@ void OAdabasPreparedStatement::setResultSetType(sal_Int32 /*_par0*/)
     ::dbtools::throwFeatureNotImplementedException( "PreparedStatement:ResultSetType", *this );
 }
 // -----------------------------------------------------------------------------
-
-

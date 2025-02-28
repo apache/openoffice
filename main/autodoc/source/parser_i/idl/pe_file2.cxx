@@ -308,5 +308,3 @@ PE_File::MyPE()
 
 }   // namespace uidl
 }   // namespace csi
-
-

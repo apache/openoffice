@@ -81,4 +81,3 @@ Reference< XConnection > OPooledConnection::getConnection()  throw(SQLException,
 	return Reference< XConnection >(m_xComponent,UNO_QUERY);
 }
 // -----------------------------------------------------------------------------
-

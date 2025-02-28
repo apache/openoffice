@@ -768,5 +768,3 @@ RTLFUNC(TYP_JUMPEDITFLD)
     
 	rPar.Get(0)->PutInteger(38);
 }
-
-

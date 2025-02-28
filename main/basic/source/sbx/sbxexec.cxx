@@ -394,4 +394,3 @@ SbxVariable* SbxObject::FindQualified( const XubString& rName, SbxClassType t )
 		SetError( SbxERR_SYNTAX );
 	return pVar;
 }
-

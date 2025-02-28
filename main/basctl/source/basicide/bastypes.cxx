@@ -1017,4 +1017,3 @@ sal_Bool QueryPassword( const Reference< script::XLibraryContainer >& xLibContai
 
     return bOK;
 }
-

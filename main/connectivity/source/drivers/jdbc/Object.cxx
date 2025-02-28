@@ -422,4 +422,3 @@ jclass java_lang_Object::findMyClass(const char* _pClassName)
 	t.pEnv->DeleteLocalRef( tempClass );
 	return globClass;
 }
-

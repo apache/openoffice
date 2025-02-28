@@ -1434,4 +1434,3 @@ IMPL_LINK( BasicIDEShell, AccelSelectHdl, Accelerator*, pAccel )
 	}
 	return bDone;
 }
-

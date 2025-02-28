@@ -343,4 +343,3 @@ void CmdBaseStream::Write( rtl::OString* pId )
     (void) pId; /* avoid warning about unused parameter */ 
     DBG_ERROR("Write( rtl::OString* pId ) Not Implemented");
 }
-

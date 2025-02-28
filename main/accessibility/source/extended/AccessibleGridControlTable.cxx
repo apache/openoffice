@@ -420,4 +420,3 @@ std::vector< Reference< XAccessible > >& AccessibleGridControlTable::getAccessib
 } // namespace accessibility
 
 // ============================================================================
-

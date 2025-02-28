@@ -250,4 +250,3 @@ void SAL_CALL OAdoTable::release() throw()
 {
       return m_aTable.get_Name();
 }
-

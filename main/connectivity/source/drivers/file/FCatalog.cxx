@@ -113,5 +113,3 @@ Sequence< Type > SAL_CALL OFileCatalog::getTypes(  ) throw(RuntimeException)
 	return Sequence< Type >(pTypes, aOwnTypes.size());
 }
 // -----------------------------------------------------------------------------
-
-

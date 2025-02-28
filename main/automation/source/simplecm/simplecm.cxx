@@ -695,4 +695,3 @@ sal_Bool CommonSocketFunctions::DoStartCommunication( CommunicationManager *pCM,
 
 	return sal_False;
 }
-

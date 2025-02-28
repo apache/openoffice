@@ -47,7 +47,3 @@ CommandLine_Ifc::CheckParameters() const
 
 
 }   // namespace csv
-
-
-
-

@@ -1867,4 +1867,3 @@ IMPL_LINK( OfaLanguagesTabPage, LocaleSettingHdl, SvxLanguageBox*, pBox )
 
     return 0;
 }
-

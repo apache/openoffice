@@ -676,4 +676,3 @@ sal_Bool Locale::operator!=(const Locale& aComparable) const
 }
 
 } // namespace comphelper
-

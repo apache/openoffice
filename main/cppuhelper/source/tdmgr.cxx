@@ -777,4 +777,3 @@ sal_Bool SAL_CALL installTypeDescriptionManager(
 }
 
 } // end namespace cppu
-

@@ -241,5 +241,3 @@ sal_Int32 ODbaseResultSet::getCurrentFilePos() const
 	return m_pTable->getFilePos();
 }
 // -----------------------------------------------------------------------------
-
-

@@ -685,4 +685,3 @@ void SAL_CALL uno_revokeMappingCallback(
 	rData.aCallbacks.erase( pCallback );
 }
 } // extern "C"
-

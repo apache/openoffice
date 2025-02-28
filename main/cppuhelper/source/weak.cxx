@@ -546,4 +546,3 @@ Reference< XInterface > WeakReferenceHelper::get() const SAL_THROW( () )
 }
 }
 }     
-

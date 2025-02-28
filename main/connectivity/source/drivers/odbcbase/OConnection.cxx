@@ -661,6 +661,3 @@ void OConnection::freeStatementHandle(SQLHANDLE& _pHandle)
 	--m_nStatementCount;
 }
 // -----------------------------------------------------------------------------
-
-
-

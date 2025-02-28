@@ -293,4 +293,3 @@ IMPL_LINK( AlignmentTabPage, UpdateEnableHdl, void*, EMPTYARG )
 // ============================================================================
 
 } // namespace svx
-

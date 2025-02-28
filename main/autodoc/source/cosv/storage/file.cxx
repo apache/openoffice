@@ -235,4 +235,3 @@ File::inq_MyPath() const
 
 
 }   // namespace csv
-

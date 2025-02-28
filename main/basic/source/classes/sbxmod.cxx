@@ -2697,4 +2697,3 @@ SbProperty::~SbProperty()
 
 SbProcedureProperty::~SbProcedureProperty()
 {}
-

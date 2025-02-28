@@ -308,4 +308,3 @@ ONDXKey* OIndexIterator::GetNextKey()
 	}
 	return m_aCurLeaf.Is() ? &(*m_aCurLeaf)[m_nCurNode].GetKey() : NULL;
 }
-

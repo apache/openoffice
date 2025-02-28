@@ -271,6 +271,3 @@ BreakPoint* BreakPointDialog::GetSelectedBreakPoint()
 	BreakPoint* pBrk = m_aModifiedBreakPointList.GetObject( nEntry );
 	return pBrk;
 }
-
-
-

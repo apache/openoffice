@@ -755,4 +755,3 @@ MainDisplay_Idl::do_Typedef2s( const ary::idl::CodeEntity & i_ce )
         *pXrefList );
     aUses.Write_ManualLinks(i_ce);
 }
-

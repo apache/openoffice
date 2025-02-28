@@ -523,4 +523,3 @@ void Proxy::dispatch(typelib_TypeDescriptionReference * pReturnTypeRef,
 				   pArgs,
 				   ppException);
 }
-

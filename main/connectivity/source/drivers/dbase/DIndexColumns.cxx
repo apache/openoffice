@@ -86,5 +86,3 @@ sdbcx::ObjectType ODbaseIndexColumns::appendObject( const ::rtl::OUString& /*_rF
     return cloneDescriptor( descriptor );
 }
 // -----------------------------------------------------------------------------
-
-

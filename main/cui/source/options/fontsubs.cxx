@@ -603,5 +603,3 @@ SvButtonState SvxFontSubstCheckListBox::GetCheckButtonState( SvLBoxEntry* pEntry
 
 	return eState;
 }
-
-

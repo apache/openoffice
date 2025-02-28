@@ -221,4 +221,3 @@ void SAL_CALL OKey::release() throw()
 	ODescriptor_BASE::release();
 }
 // -----------------------------------------------------------------------------
-

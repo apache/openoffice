@@ -255,4 +255,3 @@ Documentation::Increment_CurLine()
 
 }   // namespace uidl
 }   // namespace csi
-

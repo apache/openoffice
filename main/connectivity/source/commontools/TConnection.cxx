@@ -99,4 +99,3 @@ void OMetaConnection::throwGenericSQLException( sal_uInt16 _nErrorResourceId,con
         xContext = *this;
     ::dbtools::throwGenericSQLException( sErrorMessage, xContext);
 }
-

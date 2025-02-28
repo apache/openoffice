@@ -543,5 +543,3 @@ void SbStdClipboard::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 		SbxObject::SFX_NOTIFY( rBC, rBCType, rHint, rHintType );
 	}
 }
-
-

@@ -131,4 +131,3 @@ void FmShowColsDialog::SetColumns(const ::com::sun::star::uno::Reference< ::com:
 			m_aList.SetEntryData( m_aList.InsertEntry(sCurName), reinterpret_cast<void*>((sal_Int64)i) );
 	}
 }
-

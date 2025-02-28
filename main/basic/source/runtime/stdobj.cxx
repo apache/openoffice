@@ -792,4 +792,3 @@ SbxInfo* SbiStdObject::GetInfo( short nIdx )
 	}
 	return pInfo_;
 }
-

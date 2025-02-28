@@ -442,4 +442,3 @@ void cc50_solaris_intel_fillUnoException(
 }
 
 }
-

@@ -388,4 +388,3 @@ SbxUINT64 ImpDoubleToUINT64( double d )
 	nRes.Set( d );
 	return nRes;
 }
-

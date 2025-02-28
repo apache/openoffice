@@ -38,4 +38,3 @@ Token::DealOut( ::TokenDealer & o_rDealer )
 
 
 }   // namespace adoc
-

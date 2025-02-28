@@ -161,4 +161,3 @@ namespace vclcanvas
         mbVDevContentIsCurrent 	 = true;
     }
 }
-

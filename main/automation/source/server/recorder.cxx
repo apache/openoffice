@@ -1064,4 +1064,3 @@ sal_Bool MacroRecorder::HasMacroRecorder()
 	::osl::MutexGuard aGuard( getRecorderMutex() );
     return pMacroRecorder != NULL;
 }
-

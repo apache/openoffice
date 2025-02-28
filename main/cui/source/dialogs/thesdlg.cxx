@@ -743,5 +743,3 @@ sal_uInt16 SvxThesaurusDialog::GetLanguage() const
 void SvxThesaurusDialog::Apply()
 {
 }
-
-

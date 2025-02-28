@@ -801,5 +801,3 @@ Node::IncrBaseCount()
 
 
 }   // anonymous namespace
-
-

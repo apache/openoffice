@@ -931,5 +931,3 @@ void SvxGradientTabPage::SetControlState_Impl( XGradientStyle eXGS )
 			break;
 	}
 }
-
-

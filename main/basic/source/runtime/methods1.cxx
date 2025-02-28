@@ -2713,4 +2713,3 @@ RTLFUNC(Me)
 	else
 		refVar->PutObject( pClassModuleObject );
 }
-

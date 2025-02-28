@@ -483,4 +483,3 @@ IMPL_LINK ( SvxHyperlinkNewDocTp, ClickNewHdl_Impl, void *, EMPTYARG )
 	}
 	return( 0L );
 }
-

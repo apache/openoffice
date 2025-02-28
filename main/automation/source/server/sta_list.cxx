@@ -1221,4 +1221,3 @@ void ImplCommand( Window* pWin, CommandEvent &aCmdEvnt )
 {
 	CALL_EVENT_WITH_NOTIFY( EVENT_COMMAND, aCmdEvnt, pWin, Command )
 };
-

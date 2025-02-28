@@ -236,5 +236,3 @@ sal_Bool SvxDistributePage::FillItemSet( SfxItemSet& )
 
 	return sal_False;
 }
-
-

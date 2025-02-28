@@ -570,4 +570,3 @@ uno::Reference< graphic::XGraphic > MediaWindow::grabFrame( const ::rtl::OUStrin
 }
 
 } // namespace avmedia
-

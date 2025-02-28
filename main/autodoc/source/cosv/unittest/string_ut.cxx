@@ -132,5 +132,3 @@ FUT_DECL( SimpleString, SeekRelative )
 }
 
 #endif
-
-

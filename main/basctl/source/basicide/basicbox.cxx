@@ -537,4 +537,3 @@ void BasicLanguageBox::Update( const SfxStringItem* pItem )
 			SelectEntry( m_sCurrentText );
 	}
 }
-

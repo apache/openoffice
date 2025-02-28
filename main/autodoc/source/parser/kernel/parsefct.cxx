@@ -71,5 +71,3 @@ ParseToolsFactory::Create_FileCollector( uintt i_nEstimatedNrOfFiles ) const
 {
     return new FileCollector(i_nEstimatedNrOfFiles);
 }
-
-

@@ -38,11 +38,3 @@ namespace comphelper
 			xRef->disposing(Source);
 	}
 }
-
-
-
-
-
-
-
-

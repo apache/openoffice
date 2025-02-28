@@ -66,4 +66,3 @@ jobject java_lang_Class::newInstanceObject()
 	static jmethodID mID(NULL);
     return callObjectMethod(t.pEnv,"newInstance","()Ljava/lang/Object;", mID);
 }
-

@@ -638,6 +638,3 @@ PE_VarFunc::CreateFunctionFlags()
 
 
 }   // namespace cpp
-
-
-

@@ -178,6 +178,3 @@ PE_Enum::On_afterBlock_Return2Type( const char * )
 }
 
 }   // namespace cpp
-
-
-

@@ -93,4 +93,3 @@ sal_Int32 java_sql_SQLException_BASE::getErrorCode() const
     static jmethodID mID(NULL);
     return callIntMethod("getErrorCode",mID);
 }
-

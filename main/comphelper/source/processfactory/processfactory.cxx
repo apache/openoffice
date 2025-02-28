@@ -120,4 +120,3 @@ uno::XComponentContext * comphelper_getProcessComponentContext()
     return xRet.get();
 }
 } // extern "C"
-

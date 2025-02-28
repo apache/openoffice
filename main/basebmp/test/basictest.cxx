@@ -239,4 +239,3 @@ TEST_F(BasicTest, testPixelFuncs)
 }
 
 }
-

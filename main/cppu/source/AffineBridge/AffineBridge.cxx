@@ -357,4 +357,3 @@ extern "C" void SAL_DLLPUBLIC_EXPORT SAL_CALL uno_ext_getMapping(uno_Mapping    
 {
 	cppu::helper::purpenv::createMapping(ppMapping, pFrom, pTo);
 }
-

@@ -420,4 +420,3 @@ Any SAL_CALL OHSQLTable::queryInterface( const Type & rType ) throw(RuntimeExcep
 	return OTableHelper::queryInterface(rType);
 }
 // -------------------------------------------------------------------------
-

@@ -294,6 +294,3 @@ IndexList::AddEntry()
 
 
 }   // namespace adcdisp
-
-
-

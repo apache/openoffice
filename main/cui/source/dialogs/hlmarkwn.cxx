@@ -538,5 +538,3 @@ IMPL_LINK ( SvxHlinkDlgMarkWnd, ClickCloseHdl_Impl, void *, EMPTYARG )
 
 	return( 0L );
 }
-
-

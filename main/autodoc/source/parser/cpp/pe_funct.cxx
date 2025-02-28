@@ -597,8 +597,3 @@ PE_Function::EnterImplementation( intt i_nBracketCountStart )
 
 
 }   // namespace cpp
-
-
-
-
-

@@ -918,5 +918,3 @@ OOperand* OPredicateCompiler::executeFunction(OSQLParseNode* pPredicateNode)	thr
 	return NULL;
 }
 // -----------------------------------------------------------------------------
-
-

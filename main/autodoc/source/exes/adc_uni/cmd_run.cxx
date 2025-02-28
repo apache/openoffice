@@ -602,7 +602,3 @@ CommandRunner::CreateHtml_OldIdlStyle()
 #endif // 0
 
 }   // namespace autodoc
-
-
-
-

@@ -934,4 +934,3 @@ uno::Sequence<sal_Int8> MimeConfigurationHelper::GetSequenceClassIDFromObjectNam
     }
     return aClassId;
 }
-

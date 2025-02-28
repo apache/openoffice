@@ -190,5 +190,3 @@ namespace dbtools
 			return pStr;
 		}
 }
-
-

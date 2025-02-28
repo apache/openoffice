@@ -227,4 +227,3 @@ IMPL_LINK( SvxDefaultColorOptPage, BoxClickedHdl, ValueSet*, EMPTYARG )
 
     return 0L;
 }
-

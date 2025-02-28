@@ -322,4 +322,3 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
 }
 
 }
-

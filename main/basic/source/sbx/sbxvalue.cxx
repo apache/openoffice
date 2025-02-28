@@ -1857,4 +1857,3 @@ sal_Bool SbxValue::StoreData( SvStream& r ) const
 	}
 	return sal_True;
 }
-

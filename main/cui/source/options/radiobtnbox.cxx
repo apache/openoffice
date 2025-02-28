@@ -108,4 +108,3 @@ const Point& SvxRadioButtonListBox::GetCurMousePoint() const
 }
 
 } // end of namespace ::svx
-

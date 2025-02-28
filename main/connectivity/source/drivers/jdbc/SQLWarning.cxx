@@ -41,4 +41,3 @@ jclass java_sql_SQLWarning_BASE::getMyClass() const
         theClass = findMyClass("java/sql/SQLWarning");
 	return theClass;
 }
-

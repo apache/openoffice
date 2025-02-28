@@ -1049,4 +1049,3 @@ void StarBASIC::Highlight( const String& rSrc, SbTextPortions& rList )
 	SbiTokenizer aTok( rSrc );
 	aTok.Hilite( rList );
 }
-

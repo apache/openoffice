@@ -163,4 +163,3 @@ void SvxCTLOptionsPage::Reset( const SfxItemSet& )
     m_aRestrictedCB.Enable( bIsSequenceChecking );
     m_aTypeReplaceCB.Enable( bIsSequenceChecking );
 }
-

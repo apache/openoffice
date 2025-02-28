@@ -1141,4 +1141,3 @@ void SbxObject::GarbageCollection( sal_uIntPtr nObjects )
 #endif
 	bInGarbageCollection = sal_False;
 }
-

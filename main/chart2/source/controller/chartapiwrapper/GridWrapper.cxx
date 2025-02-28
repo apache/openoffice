@@ -205,4 +205,3 @@ APPHELPER_XSERVICEINFO_IMPL( GridWrapper, lcl_aServiceName );
 
 } //  namespace wrapper
 } //  namespace chart
-

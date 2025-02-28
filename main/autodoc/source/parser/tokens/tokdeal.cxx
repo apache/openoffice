@@ -39,6 +39,3 @@ Tok_Eof::Text() const
 {
 	return "";
 }
-
-
-

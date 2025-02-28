@@ -157,4 +157,3 @@ void EditWindow::AddText( const String &rNew )
 }
 
 #endif
-

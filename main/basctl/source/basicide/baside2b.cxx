@@ -2340,4 +2340,3 @@ void WatchTreeListBox::UpdateWatches( bool bBasicStopped )
 		SbxBase::SetError( eOld );
 	setBasicWatchMode( false );
 }
-
