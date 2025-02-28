@@ -164,7 +164,7 @@ FileInputStream::~FileInputStream()
  */
 
 // some metrics have Ascent, Descent instead Ascender, Descender or Em
-// which is not allowed per afm spcification, but let us handle
+// which is not allowed per afm specification, but let us handle
 // this gently
 enum parseKey {
     ASCENDER, ASCENT, CHARBBOX, CODE, COMPCHAR, CODEHEX, CAPHEIGHT, CHARWIDTH, CHARACTERSET, CHARACTERS, COMMENT,
@@ -1574,4 +1574,4 @@ freeFontInfo (FontInfo *fi)
     free (fi);
 }
 
-} // namspace
+} // namespace

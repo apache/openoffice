@@ -87,7 +87,7 @@ const String  C_sHelpText(
 "After the title, the documentation of the namespace follows (which is often\n"
 "missing, because the namespace name may be self-explaining).<br>\n"
 "        <br>\n"
-"Below are the lists of nested namspaces and of the classes, functions and\n"
+"Below are the lists of nested namespaces and of the classes, functions and\n"
 "other program objects, that belong within this namespace.<br>\n"
 "Each of this lists is accessible by the lower navigationbar on top of the\n"
 "page.<br>\n"

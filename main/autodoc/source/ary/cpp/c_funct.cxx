@@ -67,7 +67,7 @@ std::vector<Type_id>
                         const std::vector<S_Parameter> &
                                             i_rParameters );
 
-}   // namspace anonymous
+}   // namespace anonymous
 
 
 namespace ary

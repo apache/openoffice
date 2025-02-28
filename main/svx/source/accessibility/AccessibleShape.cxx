@@ -560,7 +560,7 @@ uno::Reference<XAccessibleStateSet> SAL_CALL
 
 /** The implementation below is at the moment straightforward.  It iterates
     over all children (and thereby instances all children which have not
-    been already instatiated) until a child covering the specifed point is
+    been already instantiated) until a child covering the specified point is
     found.
     This leaves room for improvement.  For instance, first iterate only over
     the already instantiated children and only if no match is found
@@ -1714,7 +1714,7 @@ throw (uno::RuntimeException)
 	return aRet;
 }
 
-//=====  XAccesibleHypertext  ==================================================
+//=====  XAccessibleHypertext  ==================================================
 sal_Int32 SAL_CALL AccessibleShape::getHyperLinkCount()
 	throw (::com::sun::star::uno::RuntimeException)
 {
@@ -1752,7 +1752,7 @@ throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno:
 	sal_Int32 nRet = 0;	
 	return nRet;
 }
-//=====  XAccesibleText  ==================================================
+//=====  XAccessibleText  ==================================================
 sal_Int32 SAL_CALL AccessibleShape::getCaretPosition(  ) throw (::com::sun::star::uno::RuntimeException){return 0;}
 sal_Bool SAL_CALL AccessibleShape::setCaretPosition( sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException){return 0;}
 sal_Unicode SAL_CALL AccessibleShape::getCharacter( sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException){return 0;}
