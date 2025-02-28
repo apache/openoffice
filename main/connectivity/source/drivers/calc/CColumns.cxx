@@ -48,4 +48,3 @@ sdbcx::ObjectType OCalcColumns::createObject(const ::rtl::OUString& _rName)
 	return xRet;
 }
 // -------------------------------------------------------------------------
-

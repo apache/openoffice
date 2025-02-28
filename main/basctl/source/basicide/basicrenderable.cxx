@@ -186,5 +186,3 @@ void SAL_CALL BasicRenderable::render (
             throw lang::IllegalArgumentException();
     }
 }
-
-

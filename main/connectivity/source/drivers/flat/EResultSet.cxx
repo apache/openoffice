@@ -182,4 +182,3 @@ void SAL_CALL OFlatResultSet::release() throw()
 	return ::cppu::OPropertySetHelper::createPropertySetInfo(getInfoHelper());
 }
 // -----------------------------------------------------------------------------
-

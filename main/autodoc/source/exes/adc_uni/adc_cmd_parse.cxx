@@ -332,6 +332,3 @@ S_ProjectData::do_Init( opt_iter &          it,
 
 }   // namespace command
 }   // namespace autodoc
-
-
-

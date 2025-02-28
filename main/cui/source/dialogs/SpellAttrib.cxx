@@ -165,4 +165,3 @@ int  SpellBackgroundAttrib::operator==( const TextAttrib& rAttr ) const
     return Which() == rAttr.Which() && 
             m_aBackgroundColor == static_cast<const SpellBackgroundAttrib&>(rAttr).m_aBackgroundColor;
 }
-

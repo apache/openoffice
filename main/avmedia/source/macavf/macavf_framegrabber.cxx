@@ -140,4 +140,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL FrameGrabber::getSupportedServiceNames
 
 } // namespace macavf
 } // namespace avmedia
-

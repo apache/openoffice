@@ -36,4 +36,3 @@ OResultSet* OCalcPreparedStatement::createResultSet()
 }
 // -------------------------------------------------------------------------
 IMPLEMENT_SERVICE_INFO(OCalcPreparedStatement,"com.sun.star.sdbc.driver.calc.PreparedStatement","com.sun.star.sdbc.PreparedStatement");
-

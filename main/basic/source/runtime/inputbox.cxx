@@ -188,6 +188,3 @@ RTLFUNC(InputBox)
 		delete pDlg;
 	}
 }
-
-
-

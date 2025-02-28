@@ -112,4 +112,3 @@ mbstream::inq_position() const
 
 
 }   // namespace csv
-

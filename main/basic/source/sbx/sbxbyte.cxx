@@ -322,4 +322,3 @@ void ImpPutByte( SbxValues* p, sal_uInt8 n )
 			SbxBase::SetError( SbxERR_CONVERSION );
 	}
 }
-

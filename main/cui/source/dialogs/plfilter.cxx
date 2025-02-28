@@ -119,4 +119,3 @@ void fillNetscapePluginFilters( Sequence< rtl::OUString >& rPluginNames, Sequenc
 		ShowServiceNotAvailableError( NULL,
 			String::CreateFromAscii( RTL_CONSTASCII_STRINGPARAM( "com.sun.star.plugin.PluginManager" ) ), sal_True );
 }
-

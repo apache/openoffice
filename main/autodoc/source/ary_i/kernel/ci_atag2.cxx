@@ -48,4 +48,3 @@ void    DocuTag_Display::Display_EOL() {}
 
 }   // namespace inf
 }   // namespace ary
-

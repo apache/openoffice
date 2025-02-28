@@ -127,6 +127,3 @@ String TTProfiler::GetSysdepProfileLine( SysdepProfileSnapshot *pStart, SysdepPr
 
 	return aProfile;
 };
-
-
-

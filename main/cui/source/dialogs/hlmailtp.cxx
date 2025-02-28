@@ -356,5 +356,3 @@ IMPL_LINK ( SvxHyperlinkMailTp, ClickAdrBookHdl_Impl, void *, EMPTYARG )
 
 	return( 0L );
 }
-
-

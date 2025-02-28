@@ -312,4 +312,3 @@ HtmlFactory_Idl::inq_BaseOf( const client & ) const
     // Unused dummy.
     return type_id(0);
 }
-

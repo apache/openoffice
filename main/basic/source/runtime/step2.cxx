@@ -1298,4 +1298,3 @@ void SbiRuntime::StepSTATIC( sal_uInt32 nOp1, sal_uInt32 nOp2 )
     SbxDataType t = (SbxDataType) nOp2;
     StepSTATIC_Impl( aName, t );
 }
-

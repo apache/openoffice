@@ -127,6 +127,3 @@ S_Slot_Table::GetTable()
                 ?   *pTable
                 :   *( pTable = &Create_ChildListTable(sTableTitle) );
 }
-
-
-

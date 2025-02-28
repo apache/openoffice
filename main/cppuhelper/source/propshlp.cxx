@@ -1325,6 +1325,3 @@ sal_Int32 OPropertyArrayHelper::fillHandles( sal_Int32 * pHandles, const Sequenc
 }
 
 } // end namespace cppu
-
-
-

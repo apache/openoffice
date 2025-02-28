@@ -917,4 +917,3 @@ String MacroChooser::GetInfo( SbxVariable* pVar )
 		aComment = xInfo->GetComment();
 	return aComment;
 }
-

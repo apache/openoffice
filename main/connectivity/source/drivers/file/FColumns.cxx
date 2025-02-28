@@ -83,8 +83,3 @@ void OColumns::impl_refresh() throw(RuntimeException)
 	m_pTable->refreshColumns();
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-

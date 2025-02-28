@@ -319,4 +319,3 @@ OTypeCollection::OTypeCollection(
 }
 
 }
-

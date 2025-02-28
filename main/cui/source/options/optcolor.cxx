@@ -1731,4 +1731,3 @@ void SvxColorOptionsTabPage::FillUserData()
 {
     SetUserData(String::CreateFromInt32(pColorConfigCT->GetScrollPosition()));
 }
-

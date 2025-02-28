@@ -328,4 +328,3 @@ rtl::OUString anyToString( uno::Any const & value )
 }
 
 } // namespace comphelper
-

@@ -214,6 +214,3 @@ HandleOperatorsBeforeTextItem( csv::StreamStr &    o_rText,
 
 	return false;
 }
-
-
-

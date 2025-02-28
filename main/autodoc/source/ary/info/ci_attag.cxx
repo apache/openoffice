@@ -83,5 +83,3 @@ AtTag::do_StoreAt( DocuDisplay &  ) const
 
 }   // namespace info
 }   // namespace ary
-
-

@@ -574,4 +574,3 @@ void test_ImplHelper( const Reference< lang::XMultiServiceFactory > & /*xSF*/ )
 	}
 	OSL_ENSURE( sal_False, "### exception test failed!" );
 }
-

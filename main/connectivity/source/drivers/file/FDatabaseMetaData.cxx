@@ -1215,5 +1215,3 @@ Reference< XResultSet > SAL_CALL ODatabaseMetaData::getUDTs( const Any& /*catalo
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "ODatabaseMetaData::getUDTs" );
 	return NULL;
 }
-
-

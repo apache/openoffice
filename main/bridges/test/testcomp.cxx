@@ -791,4 +791,3 @@ Reference <XInterface > createComponent( const ::rtl::OUString &sService ,
 	}
 	return rInterface;
 }
-

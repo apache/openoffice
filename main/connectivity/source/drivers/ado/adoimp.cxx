@@ -327,7 +327,3 @@ WpADOField ADOS::getField(ADORecordset* _pRecordSet,sal_Int32 _nColumnIndex) thr
 	return aField;
 }
 // -----------------------------------------------------------------------------
-
-
-
-

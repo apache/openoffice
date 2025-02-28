@@ -356,4 +356,3 @@ void SvxMultiPathDialog::EnableRadioButtonMode()
     aNewPos.Y() -= nDelta;
     aDelBtn.SetPosPixel( aNewPos );
 }
-

@@ -2309,4 +2309,3 @@ void BasicCollection::CollRemove( SbxArray* pPar_ )
 	else
 		SetError( SbERR_BAD_ARGUMENT );
 }
-

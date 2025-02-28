@@ -567,4 +567,3 @@ PageDisplay::Create_IndexFile( int i_nLetter )
 
     Create_File();
 }
-

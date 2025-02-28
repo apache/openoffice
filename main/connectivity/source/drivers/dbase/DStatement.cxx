@@ -37,4 +37,3 @@ OResultSet* ODbaseStatement::createResultSet()
 }
 // -------------------------------------------------------------------------
 IMPLEMENT_SERVICE_INFO(ODbaseStatement,"com.sun.star.sdbc.driver.dbase.Statement","com.sun.star.sdbc.Statement");
-

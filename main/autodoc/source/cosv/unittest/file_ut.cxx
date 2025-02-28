@@ -112,6 +112,3 @@ FUT_DECL( File, SeekRelative )
 
     return ret;
 }
-
-
-

@@ -788,4 +788,3 @@ unsigned char * bridges::cpp_uno::shared::VtableFactory::addLocalFunctions(
     }
     return code;
 }
-

@@ -60,5 +60,3 @@ ModuleSizeExceeded::isApprove() const
     comphelper::OInteractionApprove* pBase = static_cast< comphelper::OInteractionApprove* >( m_xApprove.get() );
     return pBase->wasSelected();
 }
-
-

@@ -892,4 +892,3 @@ void SvxHatchTabPage::DataChanged( const DataChangedEvent& rDCEvt )
 
 	SvxTabPage::DataChanged( rDCEvt );
 }
-

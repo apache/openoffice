@@ -66,6 +66,3 @@ void OFlatCatalog::refreshTables()
 		m_pTables = new OFlatTables(m_xMetaData,*this,m_aMutex,aVector);
 }
 // -----------------------------------------------------------------------------
-
-
-

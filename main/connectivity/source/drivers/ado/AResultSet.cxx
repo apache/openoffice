@@ -1164,6 +1164,3 @@ void SAL_CALL OResultSet::release() throw()
 	return ::cppu::OPropertySetHelper::createPropertySetInfo(getInfoHelper());
 }
 // -----------------------------------------------------------------------------
-
-
-

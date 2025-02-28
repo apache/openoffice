@@ -138,5 +138,3 @@ sal_Int64 SAL_CALL java_sql_Clob::positionOfClob( const ::com::sun::star::uno::R
     // 2005-11-15 / #i57457# / frank.schoenheit@sun.com
     return 0;
 }
-
-

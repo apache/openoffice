@@ -79,5 +79,3 @@ DisplayToolsFactory::Create_StdFrame() const
     static StdFrame aFrame;
     return aFrame;
 }
-
-

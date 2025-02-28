@@ -98,4 +98,3 @@ Sequence< DriverPropertyInfo > SAL_CALL ODriver::getPropertyInfo( const ::rtl::O
 	return Sequence< DriverPropertyInfo >();
 }
 // -----------------------------------------------------------------------------
-

@@ -233,5 +233,3 @@ SfxPopupWindow*	TbxControls::CreatePopupWindow()
 */
 	return(0);
 }
-
-

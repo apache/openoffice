@@ -176,5 +176,3 @@ SvxMultiFileDialog::SvxMultiFileDialog( Window* pParent, sal_Bool bEmptyAllowed 
 SvxMultiFileDialog::~SvxMultiFileDialog()
 {
 }
-
-

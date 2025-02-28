@@ -221,5 +221,3 @@ PreProcessor::InterpretMacro()
 
 
 }   // end namespace cpp
-
-

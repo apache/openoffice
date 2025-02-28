@@ -137,5 +137,3 @@ void OKeyColumnsHelper::impl_refresh() throw(::com::sun::star::uno::RuntimeExcep
 	m_pKey->refreshColumns();
 }
 // -----------------------------------------------------------------------------
-
-

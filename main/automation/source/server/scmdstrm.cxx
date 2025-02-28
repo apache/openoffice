@@ -208,4 +208,3 @@ void SCmdStream::Read ( ::com::sun::star::beans::PropertyValue &rItem )
 		StatementList::m_pDbgWin->AddText( "\n" );
 #endif
 }
-

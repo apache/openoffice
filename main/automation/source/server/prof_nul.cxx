@@ -87,6 +87,3 @@ String TTProfiler::GetSysdepProfileLine( SysdepProfileSnapshot *, SysdepProfileS
 {
 	return String();
 };
-
-
-

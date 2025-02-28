@@ -351,5 +351,3 @@ void java_sql_CallableStatement::createStatement(JNIEnv* /*_pEnv*/)
 	} //t.pEnv
 }
 // -----------------------------------------------------------------------------
-
-

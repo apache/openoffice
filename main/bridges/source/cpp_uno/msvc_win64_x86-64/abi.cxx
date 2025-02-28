@@ -87,4 +87,3 @@ bool x86_64::return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef 
     }
     return 0; /* Never reached.  */
 }
-

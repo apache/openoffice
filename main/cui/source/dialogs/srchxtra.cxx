@@ -282,4 +282,3 @@ SvxSearchSimilarityDialog::SvxSearchSimilarityDialog
 	aLongerFld.SetValue( nLonger );
 	aRelaxBox.Check( bRelax );
 }
-

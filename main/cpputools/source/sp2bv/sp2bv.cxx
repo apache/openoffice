@@ -130,8 +130,3 @@ static sal_Bool hasOption(char const * szOption, int argc, char** argv)
     }
     return retVal;
 }
-
-
-
-
-

@@ -1210,5 +1210,3 @@ OLEVariant ODatabaseMetaDataResultSet::getValue(sal_Int32 columnIndex ) throw(SQ
 	return m_aValue;
 }
 // -----------------------------------------------------------------------------
-
-

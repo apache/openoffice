@@ -225,5 +225,3 @@ sal_Bool SAL_CALL ODatabaseMetaDataResultSetMetaData::isWritable( sal_Int32 colu
 	return isDefinitelyWritable(column);
 }
 // -----------------------------------------------------------------------------
-
-

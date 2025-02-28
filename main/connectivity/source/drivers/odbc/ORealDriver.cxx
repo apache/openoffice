@@ -362,4 +362,3 @@ SQLHANDLE ORealObdcDriver::EnvironmentHandle(::rtl::OUString &_rPath)
 
 	}
 }
-

@@ -1140,5 +1140,3 @@ Reference< lang::XSingleComponentFactory > SAL_CALL createOneInstanceComponentFa
 }
 
 }
-
-

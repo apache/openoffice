@@ -262,4 +262,3 @@ void SvxImprovementOptionsPage::Reset( const SfxItemSet& /*rSet*/ )
         m_aShowDataPB.Enable(false);
     }
 }
-

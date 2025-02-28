@@ -244,6 +244,3 @@ Local_LoadFile( CharacterSource &       o_rTextBuffer,
 	aFile.close();
     return true;
 }
-
-
-

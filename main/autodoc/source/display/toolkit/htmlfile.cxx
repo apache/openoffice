@@ -196,10 +196,3 @@ DocuFile_Html::WriteBody( csv::File & io_aFile )
     aBodyData.WriteOut(aBuffer);
     io_aFile.write(aBuffer.c_str(), aBuffer.size());
 }
-
-
-
-
-
-
-

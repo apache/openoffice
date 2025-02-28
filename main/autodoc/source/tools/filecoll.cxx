@@ -123,4 +123,3 @@ FileCollector::Size() const
 {
     return aFoundFiles.size();
 }
-

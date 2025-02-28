@@ -111,6 +111,3 @@ void OIndexColumn::construct()
 	registerProperty(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_ISASCENDING),	PROPERTY_ID_ISASCENDING,	nAttrib,&m_IsAscending,	::getBooleanCppuType());
 }
 // -----------------------------------------------------------------------------
-
-
-

@@ -1042,4 +1042,3 @@ void SbiIoSystem::WriteCon( const ByteString& rText )
         }
 	}
 }
-

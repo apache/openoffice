@@ -94,4 +94,3 @@ TEST_F(Test, testReferenceDispose) {
 }
 
 }
-

@@ -657,6 +657,3 @@ void java_sql_PreparedStatement::createStatement(JNIEnv* _pEnv)
 	} //t.pEnv
 }
 // -----------------------------------------------------------------------------
-
-
-

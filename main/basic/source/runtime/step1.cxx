@@ -562,8 +562,3 @@ void SbiRuntime::StepBASED( sal_uInt32 nOp1 )
 	PushVar( x2 );	// erst die Expr
 	PushVar( p1 );	// dann die Base
 }
-
-
-
-
-

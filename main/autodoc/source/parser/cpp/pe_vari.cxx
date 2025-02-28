@@ -175,7 +175,3 @@ PE_Variable::On_expectFinish_Bracket_Right(const char *)
 
 
 }   // namespace cpp
-
-
-
-

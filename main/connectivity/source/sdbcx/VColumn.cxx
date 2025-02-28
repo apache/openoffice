@@ -222,4 +222,3 @@ void SAL_CALL OColumn::setName( const ::rtl::OUString& aName ) throw(::com::sun:
 	m_Name = aName;
 }
 // -----------------------------------------------------------------------------
-

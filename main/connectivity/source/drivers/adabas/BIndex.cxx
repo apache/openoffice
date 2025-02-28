@@ -98,5 +98,3 @@ void OAdabasIndex::refreshColumns()
 		m_pColumns	= new OIndexColumns(this,m_aMutex,aVector);
 }
 // -----------------------------------------------------------------------------
-
-

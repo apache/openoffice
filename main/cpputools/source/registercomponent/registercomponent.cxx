@@ -838,5 +838,3 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 
 	return exitCode;
 }
-
-

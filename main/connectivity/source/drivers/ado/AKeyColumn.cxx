@@ -64,4 +64,3 @@ void OKeyColumn::construct()
 	sal_Int32 nAttrib = isNew() ? 0 : starbeans::PropertyAttribute::READONLY;
 	registerProperty(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_RELATEDCOLUMN),	PROPERTY_ID_RELATEDCOLUMN,	nAttrib,&m_ReferencedColumn,	::getCppuType(reinterpret_cast< ::rtl::OUString*>(NULL)));
 }
-

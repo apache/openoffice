@@ -294,6 +294,3 @@ void SAL_CALL OAdoColumn::release() throw()
 	OColumn_ADO::release();
 }
 // -----------------------------------------------------------------------------
-
-
-

@@ -65,7 +65,3 @@ Cx_Base::AssignDealer( Distributor &  o_rDealer )
 
 
 }   // namespace cpp
-
-
-
-

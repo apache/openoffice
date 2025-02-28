@@ -491,7 +491,3 @@ PE_Class::On_afterDecl_Return2Type( const char * )
 
 
 }   // namespace cpp
-
-
-
-

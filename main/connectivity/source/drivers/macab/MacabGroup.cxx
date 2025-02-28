@@ -95,4 +95,3 @@ MacabGroup::MacabGroup(const ABAddressBookRef _addressBook, const MacabRecords *
 
 	CFRelease(xGroupMembers);
 }
-

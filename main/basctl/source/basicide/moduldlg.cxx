@@ -1061,7 +1061,3 @@ SbModule* createModImpl( Window* pWin, const ScriptDocument& rDocument,
 	}
 	return pModule;
 }
-
-
-
-

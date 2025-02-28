@@ -107,5 +107,3 @@ void OTables::appendNew(const ::rtl::OUString& _rsNewTable)
 		static_cast<XContainerListener*>(aListenerLoop.next())->elementInserted(aEvent);
 }
 // -----------------------------------------------------------------------------
-
-

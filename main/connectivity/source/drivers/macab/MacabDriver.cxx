@@ -341,4 +341,3 @@ Reference< XInterface >  SAL_CALL MacabDriver::Create( const Reference< XMultiSe
 {
     return *(new MacabDriver(_rxFactory));
 }
-

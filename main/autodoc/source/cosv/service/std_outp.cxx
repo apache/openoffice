@@ -74,4 +74,3 @@ PerformAssertion(const char * condition, const char * file, unsigned line)
 }
 
 }   // namespace csv
-

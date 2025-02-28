@@ -184,5 +184,3 @@ void OIndexes::dropObject(sal_Int32 /*_nPos*/,const ::rtl::OUString _sElementNam
 	}
 }
 // -------------------------------------------------------------------------
-
-

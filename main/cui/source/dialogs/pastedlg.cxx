@@ -302,4 +302,3 @@ void SvPasteObjectDialog::SetObjName( const SvGlobalName & rClass, const String 
     aObjClassName = rClass;
     aObjName = rObjName;
 }
-

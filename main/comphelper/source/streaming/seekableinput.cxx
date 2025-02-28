@@ -260,4 +260,3 @@ sal_Int64 SAL_CALL OSeekableInputWrapper::getLength()
 }
 
 }	// namespace comphelper
-

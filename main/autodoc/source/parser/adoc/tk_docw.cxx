@@ -118,5 +118,3 @@ Tok_EoDocu::Text() const
 }
 
 }   // namespace adoc
-
-

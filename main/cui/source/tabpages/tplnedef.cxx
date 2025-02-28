@@ -1017,4 +1017,3 @@ void SvxLineDefTabPage::DataChanged( const DataChangedEvent& rDCEvt )
 		aLbLineStyles.SelectEntryPos( nOldSelect );
 	}
 }
-

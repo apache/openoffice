@@ -42,4 +42,3 @@ ResMgr* GetResMgr()
 }
 
 } // namespace avmedia
-

@@ -375,7 +375,3 @@ void OMySQLTable::executeStatement(const ::rtl::OUString& _rStatement )
 {
     return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("RENAME TABLE "));
 }
-
-
-
-

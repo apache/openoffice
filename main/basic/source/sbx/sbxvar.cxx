@@ -664,4 +664,3 @@ void SbxVariable::Dump( SvStream& rStrm, sal_Bool bFill )
 	else
 		rStrm << endl;
 }
-
