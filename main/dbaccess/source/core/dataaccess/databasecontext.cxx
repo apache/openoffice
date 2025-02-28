@@ -685,7 +685,7 @@ Any ODatabaseContext::getByName(const rtl::OUString& _rName) throw( NoSuchElemen
 		throw;
 	}
 	catch (Exception& e)
-	{	// exceptions other than the speciafied ones -> wrap
+	{	// exceptions other than the specified ones -> wrap
         Any aError = ::cppu::getCaughtException();
 		throw WrappedTargetException(_rName, *this, aError );
 	}
