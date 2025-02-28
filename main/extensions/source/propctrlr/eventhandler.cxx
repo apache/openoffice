@@ -676,7 +676,7 @@ namespace pcr
         // The only exception is the user pressing "DEL" while the control has the focus, in this case, we reset the
         // control content to an empty string. So this is the only scenario where this method is allowed to be called.
 
-        // Striclty, we would be able to convert the display value to a property value,
+        // Strictly, we would be able to convert the display value to a property value,
         // using the "name (location, language)" format we used in convertToControlValue. However,
         // there is no need for this code ...
 
@@ -1257,7 +1257,7 @@ namespace pcr
     bool EventHandler::impl_filterMethod_nothrow( const EventDescription& _rEvent ) const
     {
         // some (control-triggered) events do not make sense for certain grid control columns. However,
-        // our mechnism to retrieve control-triggered events does not know about this, so we do some
+        // our mechanism to retrieve control-triggered events does not know about this, so we do some
         // late filtering here.
         switch ( m_nGridColumnType )
         {
