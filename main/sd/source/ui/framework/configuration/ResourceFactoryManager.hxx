@@ -50,14 +50,14 @@ public:
         @param rsURL
             The type of the resource that will be created by the factory.
         @param rxFactory
-            The factory that will create resource objects of the specfied type.
+            The factory that will create resource objects of the specified type.
     */
     void AddFactory (
         const ::rtl::OUString& rsURL,
         const css::uno::Reference<css::drawing::framework::XResourceFactory>& rxFactory)
         throw (css::uno::RuntimeException);
 
-    /** Unregister the specifed factory.
+    /** Unregister the specified factory.
         @param rsURL
             Unregister only the factory for this URL.  When the same factory
             is registered for other URLs then these remain registered.

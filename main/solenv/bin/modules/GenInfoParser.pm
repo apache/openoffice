@@ -198,7 +198,7 @@ sub walk_accesspath
 	    return ($$lookup_ref[0], $$lookup_ref[1], $sub_data_ref);
     }
     else {
-        # empty access path is only vlaid for getting top level key list
+        # empty access path is only valid for getting top level key list
         return ( undef, undef, $sub_data_ref );
     }
 }
@@ -237,7 +237,7 @@ GenInfoParser - Perl extension for parsing general info databases
   
 =head1 DESCRIPTION
 
-GenInfoParser is a perl extension to load and parse General Info Databses.
+GenInfoParser is a perl extension to load and parse General Info Databases.
 It uses a simple object oriented interface to retrieve the information stored
 in the database.
 
@@ -256,7 +256,7 @@ Loads and parses $database. Returns 1 on success and 0 on failure
 GenInfoParser::get_keys($path)
 
 Returns a sorted list of keys from the path $path. Returns an emtpy list if $path
-has no sublist. If there is no $path spcified, the method will return the
+has no sublist. If there is no $path specified, the method will return the
 primary key list. $path can be specified case insensitive. Sorting is done case
 insensitive.
 
