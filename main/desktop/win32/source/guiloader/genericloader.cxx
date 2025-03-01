@@ -169,4 +169,3 @@ int __cdecl _tmain()
 {
 	return GenericMain();
 }
-

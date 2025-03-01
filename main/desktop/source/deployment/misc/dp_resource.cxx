@@ -226,4 +226,3 @@ lang::Locale getOfficeLocale()
 }
 
 }
-

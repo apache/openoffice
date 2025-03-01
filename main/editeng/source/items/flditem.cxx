@@ -1044,4 +1044,3 @@ String SvxDateTimeField::GetFormatted( Date& rDate, Time& rTime, int eFormat, Sv
 
 	return aRet;
 }
-

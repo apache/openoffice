@@ -237,4 +237,3 @@ bool hasValidPlatform( css::uno::Sequence<OUString> const & platformStrings)
 }
 
 }
-

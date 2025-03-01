@@ -439,6 +439,3 @@ sal_Bool SAL_CALL SvxAccessibleHyperlink::isValid(  )
 }
 
 */
-
-
-

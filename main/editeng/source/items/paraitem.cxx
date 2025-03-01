@@ -1752,5 +1752,3 @@ SfxItemPresentation SvxParaGridItem::GetPresentation(
     }
 	return SFX_ITEM_PRESENTATION_NONE;
 }
-
-

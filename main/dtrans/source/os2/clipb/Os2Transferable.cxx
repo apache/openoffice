@@ -169,4 +169,3 @@ sal_Bool SAL_CALL Os2Transferable::isDataFlavorSupported( const DataFlavor& aFla
 
 	return sal_False;
 }
-

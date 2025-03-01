@@ -346,4 +346,3 @@ void SAL_CALL ToolBarWrapper::setFastPropertyValue_NoBroadcast( sal_Int32 nHandl
 }
 
 } // namespace framework
-

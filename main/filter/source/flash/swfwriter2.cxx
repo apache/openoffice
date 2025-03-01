@@ -685,4 +685,3 @@ void FillStyle::Impl_addGradient( Tag* pTag ) const
 		pTag->addRGBA( (*i).maColor );
 	}
 }
-

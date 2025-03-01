@@ -214,4 +214,3 @@ IMPL_LINK ( XMLFilterTabPageXSLT, ClickBrowseHdl_Impl, PushButton *, pButton )
 
 	return( 0L );
 }
-

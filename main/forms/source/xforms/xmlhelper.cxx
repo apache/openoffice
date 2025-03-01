@@ -141,4 +141,3 @@ Reference<XDocumentBuilder> getDocumentBuilder()
     OSL_ENSURE( xBuilder.is(), "no document builder?" );
     return xBuilder;
 }
-

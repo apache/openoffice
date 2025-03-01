@@ -526,4 +526,3 @@ String OAddTableDlg::getDialogTitleForContext( IAddTableDialogContext& _rContext
 }
 
 // -----------------------------------------------------------------------------
-

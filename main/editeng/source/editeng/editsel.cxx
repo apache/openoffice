@@ -114,4 +114,3 @@ EditView* EditSelectionEngine::GetCurView()
 
 	return pView;
 }
-

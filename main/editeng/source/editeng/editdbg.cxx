@@ -579,4 +579,3 @@ sal_Bool CheckOrderedList( CharAttribArray& rAttribs, sal_Bool bStart )
 }
 
 #endif
-

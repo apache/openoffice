@@ -135,4 +135,3 @@ using namespace ::com::sun::star;
         m_nPos = columnIndex;
         return Reference< XArray >(m_aRow[m_nPos].makeAny(),UNO_QUERY);
     }
-

@@ -472,4 +472,3 @@ Reference < XPropertySetInfo > ConstItemContainer::createPropertySetInfo(
 }
 
 } // namespace framework
-

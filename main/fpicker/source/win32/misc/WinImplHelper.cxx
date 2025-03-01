@@ -603,4 +603,3 @@ OUString WindowsToSOfficeLabel( const rtl::OUString& aWinLabel )
 
     return aSOLabel;
 }
-

@@ -284,5 +284,3 @@ void ORowSetDataColumns::impl_refresh() throw(::com::sun::star::uno::RuntimeExce
 {
 }
 // -----------------------------------------------------------------------------
-
-

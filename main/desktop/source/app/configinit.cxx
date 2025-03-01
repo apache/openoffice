@@ -294,6 +294,3 @@ ConfigurationErrorHandler::InteractionHandler ConfigurationErrorHandler::getDefa
     return xHandler;
 }
 //------------------------------------------------------------------------------
-
-
-

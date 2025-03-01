@@ -1368,4 +1368,3 @@ void NewVersionUIInfo::init(const ::std::vector< MigrationModuleInfo >& vModules
 }
 
 } // namespace desktop
-

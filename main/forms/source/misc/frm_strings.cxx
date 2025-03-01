@@ -27,4 +27,3 @@
 #define FORMS_IMPLEMENT_STRINGS
 #include "frm_strings.hxx"
 #include "services.hxx"
-

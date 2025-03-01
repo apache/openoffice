@@ -2119,4 +2119,3 @@ IMPL_STATIC_LINK_NOINSTANCE( AddonsOptions, Notify, void*, EMPTYARG )
 }
 
 }
-

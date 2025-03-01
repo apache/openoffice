@@ -749,4 +749,3 @@ void __EXPORT EditUndoMarkSelection::Redo()
 {
 	// Fuer Redo unwichtig, weil am Anfang der Undo-Klammerung
 }
-

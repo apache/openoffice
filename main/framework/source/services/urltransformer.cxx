@@ -365,4 +365,3 @@ sal_Bool SAL_CALL URLTransformer::assemble( URL& aURL ) throw( RuntimeException 
 
 
 }		//	namespace framework
-

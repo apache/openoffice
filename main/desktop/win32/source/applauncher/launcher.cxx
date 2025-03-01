@@ -139,4 +139,3 @@ extern "C" int APIENTRY _tWinMain( HINSTANCE, HINSTANCE, LPTSTR, int )
 
 	return GetLastError();
 }
-

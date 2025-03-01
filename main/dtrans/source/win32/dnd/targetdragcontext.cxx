@@ -52,4 +52,3 @@ void SAL_CALL TargetDragContext::rejectDrag( )
 {
 	m_pDropTarget->_rejectDrag( static_cast<XDropTargetDragContext*>( this) );
 }
-

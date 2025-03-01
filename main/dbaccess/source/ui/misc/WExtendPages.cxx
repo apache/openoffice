@@ -83,6 +83,3 @@ SvParser* OWizNormalExtend::createReader(sal_Int32 /*_nRows*/)
 	return NULL;
 }
 // -----------------------------------------------------------------------------
-
-
-

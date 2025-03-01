@@ -29,4 +29,3 @@
     #define FORMS_MODULE_NAMESPACE  frm
     #include "forms_module_impl.hxx"
 #undef FORMS_MODULE_IMPLEMENTATION_INCLUDE_CONTEXT
-

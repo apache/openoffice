@@ -1786,5 +1786,3 @@ void SAL_CALL SbaXFormAdapter::disposing(const ::com::sun::star::lang::EventObje
 			removeByIndex(aIter - m_aChildren.begin());
 }
 // -----------------------------------------------------------------------------
-
-

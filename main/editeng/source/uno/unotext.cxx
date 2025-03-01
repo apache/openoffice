@@ -2717,4 +2717,3 @@ xub_StrLen SvxDummyTextSource::AppendTextPortion( sal_uInt32, const String &, co
 void  SvxDummyTextSource::CopyText(const SvxTextForwarder& )
 {
 }
-

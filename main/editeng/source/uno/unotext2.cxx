@@ -703,5 +703,3 @@ uno::Sequence< OUString > SAL_CALL SvxUnoTextCursor::getSupportedServiceNames() 
 												 "com.sun.star.text.TextCursor");
 	return aSeq;
 }
-
-

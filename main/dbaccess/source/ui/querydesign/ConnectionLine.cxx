@@ -389,5 +389,3 @@ Point OConnectionLine::getMidPoint() const
 	return m_aSourceConnPos + aDest;
 }
 // -----------------------------------------------------------------------------
-
-

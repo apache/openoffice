@@ -163,5 +163,3 @@ uno::Sequence< ::rtl::OUString> SAL_CALL SvxAccessibleTextPropertySet::getSuppor
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.beans.PropertyValue"));
 }
-
-

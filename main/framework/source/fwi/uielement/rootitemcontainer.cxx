@@ -459,4 +459,3 @@ const com::sun::star::uno::Sequence< com::sun::star::beans::Property > RootItemC
 }
 
 } // namespace framework
-

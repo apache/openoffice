@@ -1925,4 +1925,3 @@ sal_Bool SAL_CALL  OCommonEmbeddedObject::isLink()
 
 	return m_aLinkURL;
 }
-

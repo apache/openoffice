@@ -625,6 +625,3 @@ sal_Bool SvxSpellWrapper::FindSpellError()
 	WAIT_OFF();
 	return GetLast().is();
 }
-
-
-

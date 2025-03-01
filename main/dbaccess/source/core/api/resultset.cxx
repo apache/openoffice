@@ -1201,4 +1201,3 @@ void OResultSet::checkBookmarkable() const
         throwSQLException( "The result set does not have bookmark support.", SQL_GENERAL_ERROR, *const_cast< OResultSet* >( this ) );
 }
 // -----------------------------------------------------------------------------
-

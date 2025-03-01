@@ -22,4 +22,3 @@
 
 
 #include "precompiled_desktop.hxx"
-

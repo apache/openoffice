@@ -474,4 +474,3 @@ BOOL CALLBACK CFormatRegistrar::EnumLocalesProc( LPSTR lpLocaleStr )
 	
 	return sal_True;
 }
-

@@ -113,7 +113,3 @@ void SAL_CALL OIndexes::disposing(void)
 		OIndexesHelper::disposing();
 }
 // -----------------------------------------------------------------------------
-
-
-
-

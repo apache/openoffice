@@ -167,7 +167,3 @@ sal_Bool OTableFieldControl::isAutoIncrementValueEnabled() const
 	return const_cast<OTableFieldControl*>(this)->GetCtrl()->GetView()->getController().getAutoIncrementValue();
 }
 // -----------------------------------------------------------------------------
-
-
-
-

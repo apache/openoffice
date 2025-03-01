@@ -335,4 +335,3 @@ LanguageType ConvertCountryToLanguage( CountryId eCountry )
 } // namespace svx
 
 // ============================================================================
-

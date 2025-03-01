@@ -366,5 +366,3 @@ bool singleton_entries(
 }
 
 } // namespace dp_info
-
-

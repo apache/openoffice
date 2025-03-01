@@ -4322,4 +4322,3 @@ void ToolbarLayoutManager::setToolbarPosSize( const ::rtl::OUString& rResourceUR
 }
 
 } // namespace framework
-

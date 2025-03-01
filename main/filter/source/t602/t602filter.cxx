@@ -1259,4 +1259,3 @@ Reference< XInterface > SAL_CALL T602ImportFilterDialog_createInstance( const Re
 }
 
 }
-

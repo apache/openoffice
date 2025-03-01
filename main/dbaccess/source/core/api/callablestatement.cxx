@@ -336,5 +336,3 @@ Reference< XArray > SAL_CALL OCallableStatement::getArray( sal_Int32 columnIndex
 	::connectivity::checkDisposed(OComponentHelper::rBHelper.bDisposed);
 	return Reference< XRow >(m_xAggregateAsSet, UNO_QUERY)->getArray( columnIndex );
 }
-
-

@@ -85,4 +85,3 @@ void MyApp::Main()
 
 	xReg->revokeImplementation( aDllName, XSimpleRegistryRef() );
 }
-

@@ -58,4 +58,3 @@ FwlResId::FwlResId( sal_uInt16 nId ) :
 }
 
 }
-

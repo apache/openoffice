@@ -340,5 +340,3 @@ DXFVPort * DXFTables::SearchVPort(const char * pName) const
 	}
 	return p;
 }
-
-

@@ -700,4 +700,3 @@ void SAL_CALL OCommonEmbeddedObject::removeEventListener( const uno::Reference< 
         m_pInterfaceContainer->removeInterface( ::getCppuType( (const uno::Reference< document::XEventListener >*)0 ),
                                                 xListener );
 }
-

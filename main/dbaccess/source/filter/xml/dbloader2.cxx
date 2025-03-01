@@ -651,4 +651,3 @@ extern "C" void SAL_CALL writeDBLoaderInfo2(void* pRegistryKey)
 	xNewKey->setAsciiValue( ::rtl::OUString::createFromAscii("private:factory/sdatabase") );
 }
 // -----------------------------------------------------------------------------
-

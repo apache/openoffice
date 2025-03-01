@@ -372,4 +372,3 @@ Reference< XInterface > SAL_CALL MenuBarWrapper::getRealInterface() throw ( Runt
 }
 
 } // namespace framework
-

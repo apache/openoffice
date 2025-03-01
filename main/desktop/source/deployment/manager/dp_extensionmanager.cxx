@@ -1623,5 +1623,3 @@ void ExtensionManager::fireModified()
 }
 
 } // namespace dp_manager
-
-

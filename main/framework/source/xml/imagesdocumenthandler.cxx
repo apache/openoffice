@@ -841,4 +841,3 @@ void OWriteImagesDocumentHandler::WriteExternalImage( const ExternalImageItemDes
 }
 
 } // namespace framework
-

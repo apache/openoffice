@@ -29,4 +29,3 @@ namespace dbaxml
 {
 #include "stringconstants.inc"
 }
-

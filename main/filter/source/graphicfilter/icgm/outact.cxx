@@ -192,5 +192,3 @@ void CGMOutAct::SetGradientStyle( sal_uInt32 nStyle, double /*fRatio*/ )
 		}
 	}
 }
-
-

@@ -238,7 +238,3 @@ void OTableWindowTitle::StateChanged( StateChangedType nType )
 		Resize();
 	}
 }
-
-
-
-

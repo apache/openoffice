@@ -1798,4 +1798,3 @@ void SAL_CALL OleComponent::removeModifyListener( const com::sun::star::uno::Ref
         m_pInterfaceContainer->removeInterface( ::getCppuType( ( const uno::Reference< util::XModifyListener >* )0 ),
 												xListener );
 }
-

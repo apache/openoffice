@@ -607,4 +607,3 @@ void SvxTextForwarder::SetParaIsNumberingRestart( sal_uInt32, sal_Bool )
 }
 
 //------------------------------------------------------------------------
-

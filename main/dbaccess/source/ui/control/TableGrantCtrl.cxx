@@ -509,4 +509,3 @@ Reference< XAccessible > OTableGrantControl::CreateAccessibleCell( sal_Int32 _nR
 	return EditBrowseBox::CreateAccessibleCell( _nRow, _nColumnPos );
 }
 // -----------------------------------------------------------------------------
-

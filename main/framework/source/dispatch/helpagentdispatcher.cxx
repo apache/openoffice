@@ -437,4 +437,3 @@ css::uno::Reference< css::awt::XWindow > HelpAgentDispatcher::implts_ensureAgent
 }
 
 } // namespace framework
-

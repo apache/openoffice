@@ -849,5 +849,3 @@ void SvxFont::DrawCapital( OutputDevice *pOut,
 }
 
 #endif // !REDUCEDSVXFONT
-
-
