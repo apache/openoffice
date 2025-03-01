@@ -77,7 +77,7 @@
                           ids should get blacklisted. When true, a
 						  running DXCanvas will write a DeviceBlacklist entry, and refuse to run
 						  on that device subsequently.
-					</desc> 
+					</desc>
 					<label>Blacklist current DirectX device</label>
 				</info>
 				<value>false</value>
@@ -96,7 +96,7 @@
 						  card/driver combinations expose bugs, when
 						  running them with their maximum texture
 						  size.
-					</desc> 
+					</desc>
 					<label>Maximum texture size requested from the DirectX runtime</label>
 				</info>
 				<value>2048</value>
@@ -125,7 +125,7 @@
 				<author>THB</author>
 				<desc>When true, suggest canvas factory to use a
 				      canvas service listed in the
-				      AcceleratedImplementations lists. 
+				      AcceleratedImplementations lists.
 				</desc>
 				<label>Use a canvas listed among the AcceleratedImplementations</label>
 			</info>
@@ -136,7 +136,7 @@
 				<author>THB</author>
 				<desc>When true, suggest canvas factory to use a
 				      canvas service listed in the
-				      AntialiasingImplementations lists. 
+				      AntialiasingImplementations lists.
 				</desc>
 				<label>Use a canvas listed among the AntialiasingImplementations</label>
 			</info>

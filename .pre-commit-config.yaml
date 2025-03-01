@@ -37,7 +37,7 @@ repos:
       - id: mixed-line-ending
         files: ^main/.*\.(c|h)xx$|^main/.*\.mk$|^main/.*\.java$|\.sh$|\.xslt?$|\.ya?ml$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$
       - id: trailing-whitespace
-        files: \.(bat|ini|pl|sh|ya?ml)$
+        files: \.(bat|ini|pl|sh|xcs|xmi|ya?ml)$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
