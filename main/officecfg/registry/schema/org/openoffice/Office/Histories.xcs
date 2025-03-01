@@ -28,13 +28,13 @@
                       xmlns:oor="http://openoffice.org/2001/registry"
                       xmlns:xs="http://www.w3.org/2001/XMLSchema"
                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                      
+
 	<info>
 		<desc>Contains Picklist, URL-History and Help-Bookmarks data.</desc>
 	</info>
-    
+
 	<templates>
-    
+
 		<group oor:name="HistoryItem">
 			<info>
 				<desc>Describe an history item in it's details. Use URL as node name.</desc>
@@ -55,7 +55,7 @@
 				</info>
 			</prop>
 		</group>
-        
+
 		<group oor:name="HistoryOrder">
 			<info>
 				<desc>Map an ordered number to all existing history items.</desc>
@@ -66,7 +66,7 @@
 				</info>
 			</prop>
         </group>
-        
+
 		<group oor:name="HistoryInfo">
             <info>
                 <desc>Combines item and order list to a complete history description.</desc>
@@ -82,16 +82,16 @@
                 </info>
             </set>
         </group>
-        
+
 	</templates>
-    
+
 	<component>
-    
+
         <set oor:name="Histories" oor:node-type="HistoryInfo">
             <info>
                 <desc>Contains all histories of OOo. Can be extended easy to know any history you like.</desc>
             </info>
         </set>
-        
+
 	</component>
 </oor:component-schema>
