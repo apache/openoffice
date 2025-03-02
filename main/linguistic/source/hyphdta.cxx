@@ -198,4 +198,3 @@ com::sun::star::uno::Reference < com::sun::star::linguistic2::XPossibleHyphens >
 ///////////////////////////////////////////////////////////////////////////
 
 }	// namespace linguistic
-

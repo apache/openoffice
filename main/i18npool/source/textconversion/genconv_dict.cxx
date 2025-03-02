@@ -476,4 +476,3 @@ void make_stc_word(FILE *sfp, FILE *cfp)
         fprintf (cfp, "\tSAL_DLLPUBLIC_EXPORT const sal_uInt16* getSTC_WordIndex_T2S(sal_Int32& count) { count = 0; return NULL; }\n");
     }
 }
-

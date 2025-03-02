@@ -497,4 +497,3 @@ Sequence<OUString> OPumpImpl_getSupportedServiceNames(void)
 }
 
 }
-

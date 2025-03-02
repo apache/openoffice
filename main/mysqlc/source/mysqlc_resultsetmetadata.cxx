@@ -457,4 +457,3 @@ void OResultSetMetaData::checkColumnIndex(sal_Int32 columnIndex)
  * vim600: noet sw=4 ts=4 fdm=marker
  * vim<600: noet sw=4 ts=4
  */
-

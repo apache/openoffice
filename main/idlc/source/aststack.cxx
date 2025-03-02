@@ -130,4 +130,3 @@ void AstStack::clear()
 { 
 	m_top = 0;
 }
-

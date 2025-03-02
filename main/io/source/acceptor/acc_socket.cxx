@@ -408,5 +408,3 @@ namespace io_acceptor {
 		m_socket.close();
 	}
 }
-
-

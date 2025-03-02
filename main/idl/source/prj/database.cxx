@@ -1032,4 +1032,3 @@ sal_Bool SvIdlWorkingBase::WriteDocumentation( SvStream & rOutStm )
 
 
 #endif // IDL_COMPILER
-

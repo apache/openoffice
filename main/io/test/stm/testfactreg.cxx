@@ -209,4 +209,3 @@ Sequence<sal_Int8> createIntSeq( sal_Int32 i )
 	sprintf( pcCount , "%d" , i );
 	return createSeq( pcCount );
 }
-

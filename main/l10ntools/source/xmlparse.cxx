@@ -1446,4 +1446,3 @@ ByteString XMLUtil::GetIsoLangByIndex( sal_uInt16 nIndex )
 		return isoArray[nIndex];
 	return "";
 }
-

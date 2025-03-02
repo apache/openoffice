@@ -160,4 +160,3 @@ sal_Unicode casefolding::getNextChar(const sal_Unicode *str, sal_Int32& idx, sal
 }
 
 } } } }
-

@@ -865,4 +865,3 @@ sal_Bool PropertyHelper_Spelling::removeLinguServiceEventListener(
 ///////////////////////////////////////////////////////////////////////////
 
 }   // namespace linguistic
-

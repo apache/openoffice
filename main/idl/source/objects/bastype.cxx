@@ -603,5 +603,3 @@ sal_Bool SvVersion::WriteSvIdl( SvStream & rOutStm )
     return sal_True;
 }
 #endif //IDL_COMPILER
-
-
