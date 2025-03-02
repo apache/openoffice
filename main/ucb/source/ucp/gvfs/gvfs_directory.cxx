@@ -412,6 +412,3 @@ sal_Bool DataSupplier::getData()
 
     return sal_True;
 }
-
-
-

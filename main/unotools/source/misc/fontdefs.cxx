@@ -591,4 +591,3 @@ int FontNameHash::operator()( const String& rStr ) const
 
     return nHash;
 }
-

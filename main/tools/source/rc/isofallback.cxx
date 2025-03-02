@@ -60,4 +60,3 @@ sal_Bool GetIsoFallback( ByteString& rLanguage )
     rLanguage.Erase();
     return false;
 }
-

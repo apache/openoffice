@@ -975,5 +975,3 @@ void Content::destroy( sal_Bool bDeletePhysical )
 }
 
 #endif // IMPLEMENT_COMMAND_DELETE
-
-

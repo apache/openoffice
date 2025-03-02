@@ -1645,5 +1645,3 @@ SvStream& INetMIMEMessage::operator>> (SvStream& rStrm)
 
     return rStrm;
 }
-
-

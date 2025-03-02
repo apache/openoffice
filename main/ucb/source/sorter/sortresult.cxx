@@ -2063,4 +2063,3 @@ SRSPropertySetInfo::hasPropertyByName( const OUString& Name )
     else
         return sal_False;
 }
-

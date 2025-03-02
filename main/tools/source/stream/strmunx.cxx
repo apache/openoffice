@@ -912,5 +912,3 @@ void SvFileStream::SetSize (sal_Size nSize)
 		}
     }
 }
-
-

@@ -653,4 +653,3 @@ ErrCode FileStat::QueryDiskSpace( const String &, BigInt &, BigInt & )
 void FSysEnableSysErrorBox( sal_Bool )
 {
 }
-

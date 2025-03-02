@@ -98,5 +98,3 @@ void Options::ConfigurationChanged( ConfigurationBroadcaster*, sal_uInt32 nHint 
 {
     NotifyListeners( nHint );
 }
-
-

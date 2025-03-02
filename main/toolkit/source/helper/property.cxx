@@ -404,6 +404,3 @@ sal_Bool CompareProperties( const ::com::sun::star::uno::Any& r1, const ::com::s
 {
 	return ::comphelper::compare( r1, r2 );
 }
-
-
-

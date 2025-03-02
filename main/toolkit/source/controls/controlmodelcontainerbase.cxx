@@ -1859,4 +1859,3 @@ uno::Reference< graphic::XGraphic > ControlContainerBase::Impl_getGraphicFromURL
 
 	return absoluteURL;
 }
-

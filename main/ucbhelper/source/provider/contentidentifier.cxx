@@ -214,4 +214,3 @@ OUString SAL_CALL ContentIdentifier::getContentProviderScheme()
 }
 
 } /* namespace ucbhelper */
-

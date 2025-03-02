@@ -621,4 +621,3 @@ SortedDynamicResultSetListener::impl_OwnerDies()
 	osl::Guard< osl::Mutex > aGuard( maMutex );
 	mpOwner = NULL;
 }
-

@@ -164,4 +164,3 @@ ByteString SimpleConfig::GetCleanedNextLine( sal_Bool bReadComments )
 	return aTmpStr;
 
 }
-

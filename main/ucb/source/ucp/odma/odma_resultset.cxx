@@ -89,4 +89,3 @@ void DynamicResultSet::initDynamic()
                                       m_xEnv );
 	m_xResultSet2 = m_xResultSet1;
 }
-

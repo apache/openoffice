@@ -1007,4 +1007,3 @@ void FSysEnableSysErrorBox( sal_Bool bEnable )
 {
     DosError( bEnable ? 0 : FERR_DISABLEHARDERR );
 }
-

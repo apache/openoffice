@@ -762,4 +762,3 @@ UUIInteractionHelper::handlePasswordRequest(
 
     return false;
 }
-

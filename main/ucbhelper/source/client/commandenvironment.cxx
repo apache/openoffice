@@ -132,4 +132,3 @@ CommandEnvironment::getProgressHandler()
 }
 
 } /* namespace ucbhelper */
-

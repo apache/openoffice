@@ -490,5 +490,3 @@ void DataSupplier::validate()
 	}	
 	return aURL;
 }
-
-

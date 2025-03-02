@@ -321,4 +321,3 @@ void ItemHolder1::impl_deleteItem(TItemInfo& rItem)
         rItem.pItem = 0;
     }
 }
-

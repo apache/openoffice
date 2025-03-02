@@ -53,4 +53,3 @@ AlreadyOpenQueryBox::AlreadyOpenQueryBox( Window* pParent, ResMgr* pResMgr, cons
 AlreadyOpenQueryBox::~AlreadyOpenQueryBox()
 {
 }
-

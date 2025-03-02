@@ -461,5 +461,3 @@ ByteString &InformationParser::GetErrorText()
 
 	return sErrorText;
 }
-
-

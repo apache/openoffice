@@ -204,7 +204,3 @@ ScriptEventContainer::ScriptEventContainer( void )
 }
 
 }
-
-
-
-

@@ -101,5 +101,3 @@ CURL* FTPLoaderThread::handle() {
 
 	return ret;
 }
-
-
