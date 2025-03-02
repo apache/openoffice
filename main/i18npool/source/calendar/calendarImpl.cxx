@@ -317,4 +317,3 @@ CalendarImpl::getSupportedServiceNames(void) throw( RuntimeException )
     aRet[0] = OUString::createFromAscii(cCalendar);
     return aRet;
 }
-

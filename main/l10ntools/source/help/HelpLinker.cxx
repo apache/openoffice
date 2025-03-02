@@ -1092,4 +1092,3 @@ HELPLINKER_DLLPUBLIC bool compileExtensionHelp
 
     return bSuccess;
 }
-

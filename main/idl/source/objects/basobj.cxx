@@ -778,5 +778,3 @@ void SvMetaExtern::WriteAttributes( SvIdlDataBase & rBase, SvStream & rOutStm,
 }
 
 #endif // IDL_COMPILER
-
-

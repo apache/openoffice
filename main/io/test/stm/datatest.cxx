@@ -1115,5 +1115,3 @@ OUString 	OObjectStreamTest_getImplementationName( int i) throw ()
 		return OUString( RTL_CONSTASCII_USTRINGPARAM("test.com.sun.star.comp.extensions.stm.ObjectOutputStream"));	
 	}
 }
-
-

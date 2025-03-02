@@ -496,4 +496,3 @@ sal_Bool SvTokenStream::MakeToken( SvToken & rToken )
     rToken.SetColumn( nLastColumn );
 	return rInStream.GetError() == SVSTREAM_OK;
 }
-

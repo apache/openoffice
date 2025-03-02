@@ -175,4 +175,3 @@ ScriptTypeDetector::getSupportedServiceNames() throw( ::com::sun::star::uno::Run
     aRet[0] = ::rtl::OUString::createFromAscii(sDetector);
     return aRet;
 }
-

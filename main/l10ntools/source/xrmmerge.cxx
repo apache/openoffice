@@ -724,4 +724,3 @@ void XRMResMerge::EndOfText(
 	delete pResData;
 	pResData = NULL;
 }
-

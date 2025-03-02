@@ -1040,4 +1040,3 @@ void SvMetaClass::WriteCxx( SvIdlDataBase &, SvStream & rOutStm, sal_uInt16 )
 }
 
 #endif // IDL_COMPILER
-

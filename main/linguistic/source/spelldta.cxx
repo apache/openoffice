@@ -369,4 +369,3 @@ com::sun::star::uno::Reference < com::sun::star::linguistic2::XSpellAlternatives
 ///////////////////////////////////////////////////////////////////////////
 
 }	// namespace linguistic
-

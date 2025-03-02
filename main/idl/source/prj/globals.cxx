@@ -182,4 +182,3 @@ SvGlobalHashNames::SvGlobalHashNames()
     A_ENTRY(Description)
     A_ENTRY(UnoName)
 {}
-
