@@ -139,5 +139,3 @@
 <xsl:template match="*"/>
 	
 </xsl:stylesheet>
-
-
