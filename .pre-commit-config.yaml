@@ -33,8 +33,8 @@ repos:
       - id: check-merge-conflict
       - id: check-vcs-permalinks
       - id: end-of-file-fixer
-      - id: fix-byte-order-marker
         files: (m|M)akefile$|\.(bat|c|cxx|dxp|h|hrc|hxx|idl|in|ini|java|md|mk|pl|pm|py|rc|sh|xcs|xdl|xhp|xmi|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
+      - id: fix-byte-order-marker
       - id: mixed-line-ending
         files: ^main/.*\.(c|h)xx$|^main/.*\.java$|\.(dxp|h|hrc|idl|in|ini|md|mk|pl|pm|py|rc|sh|xcs|xdl|xhp|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$
       - id: trailing-whitespace
