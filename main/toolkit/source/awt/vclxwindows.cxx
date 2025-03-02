@@ -6268,4 +6268,3 @@ VCLXToolBox::~VCLXToolBox()
 {
     return getAccessibleFactory().createAccessibleContext( this );
 }
-

@@ -361,4 +361,3 @@ rtl::OUString CurlUri::makeConnectionEndPointString(
     }
     return aBuf.makeStringAndClear();
 }
-

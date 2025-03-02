@@ -1144,4 +1144,3 @@ void SAL_CALL InteractionReplaceExistingData::select()
 {
     recordSelection();
 }
-

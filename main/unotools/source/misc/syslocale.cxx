@@ -207,4 +207,3 @@ rtl_TextEncoding SvtSysLocale::GetBestMimeEncoding()
         nRet = RTL_TEXTENCODING_UTF8;
     return nRet;
 }
-

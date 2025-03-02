@@ -989,5 +989,3 @@ void generateSkeleton(ProgramOptions const & options,
 }
 
 } }
-
-

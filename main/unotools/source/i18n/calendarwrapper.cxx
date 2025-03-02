@@ -673,4 +673,3 @@ String CalendarWrapper::getDisplayString( sal_Int32 nCalendarDisplayCode, sal_In
 	}
 	return String();
 }
-

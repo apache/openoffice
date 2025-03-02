@@ -88,4 +88,3 @@ void DynamicResultSet::initDynamic()
                                        m_aCommand.Mode ) );
 	m_xResultSet2 = m_xResultSet1;
 }
-

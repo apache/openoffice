@@ -283,4 +283,3 @@ sal_Bool SvtOptionsDialogOptions::IsOptionHidden(
 {
     return m_pImp->IsOptionHidden( _rOption, _rPage, _rGroup );
 }
-

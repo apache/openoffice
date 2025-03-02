@@ -390,4 +390,3 @@ UUIInteractionHelper::handleCertificateValidationRequest(
 
     return false;
 }
-

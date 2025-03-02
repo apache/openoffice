@@ -466,4 +466,3 @@ Regexp Regexp::parse(rtl::OUString const & rRegexp)
 					  bOpen, aReversePrefix);
 	}
 }
-

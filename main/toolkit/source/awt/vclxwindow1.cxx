@@ -103,4 +103,3 @@ void VCLXWindow::SetSystemParent_Impl( const com::sun::star::uno::Any& rHandle )
 	// set system parent
 	((WorkWindow*)pWindow)->SetPluginParent( &aSysParentData );
 }
-

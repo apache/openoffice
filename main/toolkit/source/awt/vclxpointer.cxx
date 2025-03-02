@@ -71,6 +71,3 @@ sal_Int32 VCLXPointer::getType() throw(::com::sun::star::uno::RuntimeException)
 
 	return (sal_Int32)maPointer.GetStyle();
 }
-
-
-

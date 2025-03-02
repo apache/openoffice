@@ -152,5 +152,3 @@ sal_Int32 UnoPropertyArrayHelper::fillHandles( sal_Int32* pHandles, const ::com:
 	}
 	return nValidHandles;
 }
-
-

@@ -1302,4 +1302,3 @@ EBasicSecurityMode SvtSecurityOptions::GetBasicMode() const
     MutexGuard aGuard( GetInitMutex() );
 	return m_pDataContainer->GetBasicMode();
 }
-

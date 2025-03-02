@@ -931,5 +931,3 @@ SourceDirectory *SourceDirectoryList::Search(
 
 	return NULL;
 }
-
-

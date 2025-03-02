@@ -682,4 +682,3 @@ void SvFileStream::SetSize( sal_uIntPtr nSize )
 			SetError(::GetSvError( GetLastError() ) );
 	}
 }
-

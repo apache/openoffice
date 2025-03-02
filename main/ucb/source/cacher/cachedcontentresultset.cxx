@@ -2222,4 +2222,3 @@ Reference< XResultSet > SAL_CALL CachedContentResultSetFactory
     xRet = new CachedContentResultSet( m_xSMgr, xSource, xMapping );
 	return xRet;
 }
-

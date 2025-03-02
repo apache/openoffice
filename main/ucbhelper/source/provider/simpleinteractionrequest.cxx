@@ -125,4 +125,3 @@ sal_Int32 SimpleInteractionRequest::getResponse() const
     }
     return CONTINUATION_UNKNOWN;
 }
-

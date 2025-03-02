@@ -442,4 +442,3 @@ void MyWin::Paint( const Rectangle& r )
 	}
    
 }
-

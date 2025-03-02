@@ -109,4 +109,3 @@ OUString SAL_CALL ContentIdentifier::getContentProviderScheme()
 
     return m_aProviderScheme;
 }
-

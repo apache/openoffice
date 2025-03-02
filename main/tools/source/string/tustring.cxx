@@ -155,4 +155,3 @@ double UniString::ToDouble() const
 
 	return rtl_ustr_toDouble( mpData->maStr );
 }
-

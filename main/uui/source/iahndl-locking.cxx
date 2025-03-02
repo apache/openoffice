@@ -308,5 +308,3 @@ UUIInteractionHelper::handleLockFileIgnoreRequest(
     }
     return false;
 }
-
-

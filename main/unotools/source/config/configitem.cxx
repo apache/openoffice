@@ -1414,5 +1414,3 @@ void ConfigItem::UnlockTree()
     if(0 != (pImpl->nMode&CONFIG_MODE_RELEASE_TREE))
         m_xHierarchyAccess = 0;
 }
-
-

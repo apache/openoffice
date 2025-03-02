@@ -614,5 +614,3 @@ IMPL_LINK( SvxZoomDialog, OKHdl, Button *, pBtn )
 		EndDialog( RET_CANCEL );
 	return 0;
 }
-
-

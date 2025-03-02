@@ -908,4 +908,3 @@ sal_uIntPtr SvPersistStream::RemoveObj( SvPersistBase * pObj )
 	aPTable.Remove( (sal_uIntPtr)pObj );
 	return nIdx;
 }
-

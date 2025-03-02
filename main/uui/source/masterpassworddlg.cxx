@@ -73,4 +73,3 @@ MasterPasswordDialog::MasterPasswordDialog
 
 	aOKBtn.SetClickHdl( LINK( this, MasterPasswordDialog, OKHdl_Impl ) );
 };
-

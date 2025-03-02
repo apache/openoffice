@@ -180,4 +180,3 @@ uno::Sequence< ucb::CommandInfo > FTPContent::getCommands(
 
     return uno::Sequence< ucb::CommandInfo >( aCommandInfoTable, COMMAND_COUNT );
 }
-

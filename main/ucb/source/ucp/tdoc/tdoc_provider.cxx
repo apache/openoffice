@@ -622,4 +622,3 @@ ContentProvider::queryDocumentModel( const rtl::OUString & rUri ) const
                 "ContentProvider::queryDocumentModel - no model!" );
     return xModel;
 }
-

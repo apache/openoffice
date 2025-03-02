@@ -2243,4 +2243,3 @@ uno::Reference< uno::XInterface > SAL_CALL _create(
 }
 
 } // closing component helper namespace
-
