@@ -404,4 +404,3 @@ SAL_DLLPUBLIC_EXPORT ScFormatFilterPlugin * SAL_CALL ScFilterCreate(void)
 }
 
 // implementation class inside the filters
-

@@ -489,4 +489,3 @@ sal_Bool isRowSetAlive(const Reference< XInterface >& _rxRowSet)
 
 	return bIsAlive;
 }
-

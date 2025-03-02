@@ -283,5 +283,3 @@ OUString IdlMemberImpl::getName()
 }
 
 }
-
-

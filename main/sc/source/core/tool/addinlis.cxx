@@ -181,6 +181,3 @@ void SAL_CALL ScAddInListener::disposing( const ::com::sun::star::lang::EventObj
 
 
 //------------------------------------------------------------------------
-
-
-

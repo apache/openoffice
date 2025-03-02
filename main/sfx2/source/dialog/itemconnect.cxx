@@ -401,4 +401,3 @@ bool ItemConnectionArray::FillItemSet( SfxItemSet& rDestSet, const SfxItemSet& r
 // ============================================================================
 
 } // namespace sfx
-

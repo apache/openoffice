@@ -582,4 +582,3 @@ void SmartTagMgr::AssociateActionsWithRecognizers()
         }
     }
 }
-

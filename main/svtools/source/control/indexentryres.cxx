@@ -124,4 +124,3 @@ IndexEntryRessource::GetTranslation (const String &r_Algorithm)
 			return mp_Data[i].GetTranslation();
 	return r_Algorithm;
 }
-

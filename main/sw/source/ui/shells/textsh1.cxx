@@ -1945,4 +1945,3 @@ void SwTextShell::ChangeHeaderOrFooter(
     rSh.EndUndo( UNDO_HEADER_FOOTER ); // #i7983#
     rSh.EndAllAction();
 }
-

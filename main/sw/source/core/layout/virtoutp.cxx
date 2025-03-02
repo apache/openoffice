@@ -248,5 +248,3 @@ void SwLayVout::_Flush()
     SetOutDev( pSh, pOut );
 	pOut = NULL;
 }
-
-

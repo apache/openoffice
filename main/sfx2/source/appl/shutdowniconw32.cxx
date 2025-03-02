@@ -969,5 +969,3 @@ void ShutdownIcon::EnableAutostartW32( const rtl::OUString &aShortcut )
 }
 
 #endif // WNT
-
-

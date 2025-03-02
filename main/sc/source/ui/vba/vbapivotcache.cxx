@@ -53,4 +53,3 @@ ScVbaPivotCache::getServiceNames()
 	}
 	return aServiceNames;
 }
-

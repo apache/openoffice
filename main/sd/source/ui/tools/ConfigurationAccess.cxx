@@ -223,4 +223,3 @@ void ConfigurationAccess::FillList(
 
 
 } } // end of namespace sd::tools
-

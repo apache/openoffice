@@ -835,5 +835,3 @@ ScVbaFormat<Ifc1>::getCurrentDataSet( ) throw ( uno::RuntimeException )
 
 template class ScVbaFormat< excel::XStyle >;
 template class ScVbaFormat< excel::XRange >;
-
-

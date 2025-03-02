@@ -404,4 +404,3 @@ void PngHelper::createPng( OutputBuffer& o_rOutputBuf,
     // output IEND
     appendIEND( o_rOutputBuf );
 }
-

@@ -648,4 +648,3 @@ sal_uInt16 ScConsolidateDlg::FuncToLbPos( ScSubTotalFunc eFunc )
 			return 0;
 	}
 }
-

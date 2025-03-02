@@ -1919,5 +1919,3 @@ sal_Bool SwHTMLPosFlyFrm::operator<( const SwHTMLPosFlyFrm& rFrm ) const
 	else
 		return pNdIdx->GetIndex() < rFrm.pNdIdx->GetIndex();
 }
-
-

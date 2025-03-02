@@ -223,4 +223,3 @@ double E3dView::GetDefaultCamFocal()
 {
 	return (double)((const SfxUInt32Item&)pMod->GetItemPool().GetDefaultItem(SDRATTR_3DSCENE_FOCAL_LENGTH)).GetValue();
 }
-

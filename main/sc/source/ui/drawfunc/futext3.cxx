@@ -246,4 +246,3 @@ void FuText::StopDragMode(SdrObject* /*pObject*/)
     }
 #endif
 }
-

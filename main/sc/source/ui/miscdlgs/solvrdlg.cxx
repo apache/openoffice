@@ -306,7 +306,3 @@ IMPL_LINK( ScSolverDlg, LoseFocusHdl, Control*, EMPTYARG )
 	bDlgLostFocus = !IsActive();
 	return 0;
 }
-
-
-
-

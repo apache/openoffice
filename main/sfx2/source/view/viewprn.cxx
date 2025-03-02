@@ -970,4 +970,3 @@ JobSetup SfxViewShell::GetJobSetup() const
 {
 	return JobSetup();
 }
-

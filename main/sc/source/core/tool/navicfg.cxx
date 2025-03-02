@@ -72,5 +72,3 @@ void ScNavipiCfg::SetRootType(sal_uInt16 nNew)
 //!		SetModified();
 	}
 }
-
-

@@ -170,4 +170,3 @@ void SfxAlienWarningDialog::InitSize()
     aPos.X() += nTxtW + a3Size.Width();
     m_aSaveODFBtn.SetPosSizePixel( aPos, aNewSize );
 }
-

@@ -100,5 +100,3 @@ String SdMoveStyleSheetsUndoAction::GetComment() const
 {
 	return String();
 }
-
-

@@ -36,6 +36,3 @@ void ScDocShell::GetDrawObjState( SfxItemSet & /* rSet */ )
 {
 	//	SID_SC_ACTIVEOBJECT (SelectedObject) - removed (old Basic)
 }
-
-
-

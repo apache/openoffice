@@ -2584,6 +2584,3 @@ sal_Bool SwFEShell::IsTableVertical() const
 
     return pFrm->ImplFindTabFrm()->IsVertical();
 }
-
-
-

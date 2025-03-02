@@ -566,4 +566,3 @@ SwVbaParagraphFormat::getServiceNames()
 	}
 	return aServiceNames;
 }
-

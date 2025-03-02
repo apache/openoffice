@@ -96,4 +96,3 @@ void SwUndoInsBookmark::RedoImpl(::sw::UndoRedoContext & rContext)
 {
     SetInDoc( &rContext.GetDoc() );
 }
-

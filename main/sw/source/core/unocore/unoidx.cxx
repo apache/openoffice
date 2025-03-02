@@ -3452,4 +3452,3 @@ throw (uno::RuntimeException)
 {
 	return sal_True;
 }
-

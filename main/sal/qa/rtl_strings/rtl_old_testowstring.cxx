@@ -413,5 +413,3 @@ CPPUNIT_TEST_SUITE_NAMED_REGISTRATION( rtl_OUString::oldtests, "rtl_OUString" );
 
 // -----------------------------------------------------------------------------
 NOADDITIONAL;
-
-

@@ -373,5 +373,3 @@ String SfxFrameHTMLWriter::CreateURL( SfxFrame* pFrame )
 
 	return aRet;
 }
-
-

@@ -98,6 +98,3 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoGradientTable_createInstance( S
 {
 	return *new SvxUnoGradientTable(pModel);
 }
-
-
-

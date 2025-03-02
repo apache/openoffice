@@ -3257,4 +3257,3 @@ throw (uno::RuntimeException)
         ? OTextCursorHelper::queryInterface(rType)
         : SwXTextCursor_Base::queryInterface(rType);
 }
-

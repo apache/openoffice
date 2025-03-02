@@ -96,4 +96,3 @@ bool SvPasswordHelper::CompareHashPassword(const uno::Sequence<sal_Int8>& rOldPa
 
     return bResult;
 }
-

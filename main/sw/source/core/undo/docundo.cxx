@@ -597,4 +597,3 @@ UndoManager::Repeat(::sw::RepeatContext & rContext,
 }
 
 } // namespace sw
-

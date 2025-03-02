@@ -2644,5 +2644,3 @@ static sal_Bool lookupProfile(const sal_Unicode *strPath, const sal_Unicode *str
 
 	return sal_True;
 }
-
-

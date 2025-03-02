@@ -66,6 +66,3 @@ ScRTFImport::~ScRTFImport()
 	// Ist gewaehrleistet, da ScEEImport Basisklasse ist
     delete (ScRTFParser*) mpParser;     // vor EditEngine!
 }
-
-
-

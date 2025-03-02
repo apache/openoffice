@@ -399,8 +399,3 @@ sal_Bool ScMarkArrayIter::Next( SCROW& rTop, SCROW& rBottom )
 	++nPos;
 	return sal_True;
 }
-
-
-
-
-

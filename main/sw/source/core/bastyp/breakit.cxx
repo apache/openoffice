@@ -179,4 +179,3 @@ sal_uInt16 SwBreakIt::GetAllScriptsOfText( const String& rTxt ) const
 	}
 	return nRet;
 }
-

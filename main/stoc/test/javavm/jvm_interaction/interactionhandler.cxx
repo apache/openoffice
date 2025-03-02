@@ -197,5 +197,3 @@ SAL_IMPLEMENT_MAIN()
 	xCompContext->dispose();
 	return (bSucc ? 0 : -1);
 }
-
-

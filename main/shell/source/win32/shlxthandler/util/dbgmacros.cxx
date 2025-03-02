@@ -51,4 +51,3 @@ void DbgAssert(bool /*condition*/, const char* /*message*/)
 	//}
 	
 }
-

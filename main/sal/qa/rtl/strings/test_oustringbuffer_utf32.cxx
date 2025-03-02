@@ -114,6 +114,3 @@ TEST_F(Utf32, insertUtf32) {
 }
 
 } }
-
-
-

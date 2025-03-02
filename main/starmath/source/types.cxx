@@ -45,4 +45,3 @@ sal_Unicode ConvertMathToMathML( sal_Unicode cChar )
     sal_Unicode cRes = ConvertMathPrivateUseAreaToUnicode( cChar );
     return cRes;
 }
-

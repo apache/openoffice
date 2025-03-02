@@ -299,7 +299,3 @@ void ScScenarioWindow::SetSizePixel( const Size& rNewSize )
 	aSize.Height() -= 4;
 	aEdComment.SetPosSizePixel(	Point( 0, nHeight+4 ), aSize );
 }
-
-
-
-

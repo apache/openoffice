@@ -775,5 +775,3 @@ void BrowserScrollBar::EndScroll()
 	_nTip = 0;
 	ScrollBar::EndScroll();
 }
-
-

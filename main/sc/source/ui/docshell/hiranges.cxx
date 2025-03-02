@@ -43,7 +43,3 @@ ScHighlightRanges::~ScHighlightRanges()
 		pEntry = aEntries.Next();
 	}
 }
-
-
-
-

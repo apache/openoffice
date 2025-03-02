@@ -22,4 +22,3 @@
 
 
 #include "precompiled_stoc.hxx"
-

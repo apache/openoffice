@@ -1351,5 +1351,3 @@ void ImpSvFileDlg::CreateDialog( PathDialog* pSvDlg, WinBits nStyle, RESOURCE_TY
 	else
 		pDlg = new ImpFileDialog( pSvDlg, nStyle, nType );
 }
-
-

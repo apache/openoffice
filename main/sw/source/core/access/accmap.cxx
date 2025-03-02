@@ -3823,4 +3823,3 @@ sal_Bool SwAccessibleMap::IsDocumentSelAll()
 {
 	return GetShell()->GetDoc()->IsPrepareSelAll();
 }
-

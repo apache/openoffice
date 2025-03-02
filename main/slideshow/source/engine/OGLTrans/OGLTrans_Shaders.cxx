@@ -133,4 +133,3 @@ GLuint OGLShaders::LinkProgram( const char *vertexShader, const char *fragmentSh
     return 0;
 #endif
 }
-

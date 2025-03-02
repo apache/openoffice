@@ -1592,4 +1592,3 @@ void ScDPFunctionDlg_Dummy()
     ListBox* pListBox = NULL;
     ScDPListBoxWrapper aWrapper( *pListBox );
 }
-

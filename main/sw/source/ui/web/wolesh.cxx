@@ -60,5 +60,3 @@ SwWebOleShell::SwWebOleShell(SwView &_rView) :
 __EXPORT SwWebOleShell::~SwWebOleShell()
 {
 }
-
-

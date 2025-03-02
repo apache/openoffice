@@ -1922,4 +1922,3 @@ void SdrEditView::AlignMarkedObjects(SdrHorAlign eHor, SdrVertAlign eVert, sal_B
 	if( bUndo )
 		EndUndo();
 }
-

@@ -2071,7 +2071,3 @@ void ScGridWindow::DataChanged( const DataChangedEvent& rDCEvt )
 		Invalidate();
 	}
 }
-
-
-
-

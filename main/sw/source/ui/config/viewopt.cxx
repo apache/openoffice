@@ -650,4 +650,3 @@ sal_Bool SwViewOption::IsAppearanceFlag(sal_Int32 nFlag)
 {
     return 0 != (nAppearanceFlags & nFlag);
 }
-

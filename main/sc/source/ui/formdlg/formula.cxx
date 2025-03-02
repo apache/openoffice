@@ -660,4 +660,3 @@ table::CellAddress ScFormulaDlg::getReferencePosition() const
     pArray->Fill( _aTokenList, pDoc->GetExternalRefManager());
     return pArray;
 }
-

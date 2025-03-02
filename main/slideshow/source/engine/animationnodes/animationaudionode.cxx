@@ -174,4 +174,3 @@ bool AnimationAudioNode::handleAnimationEvent(
 
 } // namespace internal
 } // namespace presentation
-

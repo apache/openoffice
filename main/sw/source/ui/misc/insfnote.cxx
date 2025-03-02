@@ -350,4 +350,3 @@ void SwInsFootNoteDlg::Init()
 
 	rSh.EndAction();
 }
-

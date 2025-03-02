@@ -4683,4 +4683,3 @@ IMPL_LINK(SwAutoMarkDlg_Impl, OkHdl, OKButton*, EMPTYARG)
 		EndDialog(RET_OK);
 	return 0;
 }
-

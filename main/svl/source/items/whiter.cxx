@@ -115,4 +115,3 @@ sal_uInt16 SfxWhichIter::LastWhich()
 		return nWhich;
 	return PrevWhich();
 }
-

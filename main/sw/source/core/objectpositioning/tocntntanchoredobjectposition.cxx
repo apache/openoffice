@@ -1137,4 +1137,3 @@ const SwLayoutFrm& SwToCntntAnchoredObjectPosition::GetVertPosOrientFrm() const
 {
     return *mpVertPosOrientFrm;
 }
-

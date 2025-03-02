@@ -108,4 +108,3 @@ XclSelectionData& XclTabViewData::CreateSelectionData( sal_uInt8 nPane )
 }
 
 // ============================================================================
-

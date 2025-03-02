@@ -34,4 +34,3 @@ SvxAbstractDialogFactory* SvxAbstractDialogFactory::Create()
 SvxAbstractDialogFactory::~SvxAbstractDialogFactory()
 {
 }
-

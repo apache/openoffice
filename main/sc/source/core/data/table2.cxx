@@ -3328,4 +3328,3 @@ ScColumn* ScTable::GetColumnByIndex(sal_Int32 index)
 	}
 	return NULL;
 }
-

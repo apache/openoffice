@@ -593,4 +593,3 @@ void ScParameterClassification::GenerateDocumentation()
 }
 
 #endif // OSL_DEBUG_LEVEL
-

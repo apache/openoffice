@@ -465,4 +465,3 @@ sal_Bool ScViewFunc::PasteGraphic( const Point& rPos, const Graphic& rGraphic,
 
 	return sal_True;
 }
-

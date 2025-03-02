@@ -1294,4 +1294,3 @@ void FmSearchEngine::RebuildUsedFields(sal_Int32 nFieldIndex, sal_Bool bForce)
     // und natuerlich beginne ich die naechste Suche wieder jungfraeulich
     InvalidatePreviousLoc();
 }
-

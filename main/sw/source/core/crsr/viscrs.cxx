@@ -1087,4 +1087,3 @@ sal_Bool SwShellTableCrsr::IsAtValidPos( sal_Bool bPoint ) const
 {
 	return SwShellCrsr::IsAtValidPos( bPoint );
 }
-

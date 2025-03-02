@@ -720,4 +720,3 @@ void SwUndoSetFlyFmt::Modify( const SfxPoolItem* pOld, const SfxPoolItem* )
 		}
 	}
 }
-

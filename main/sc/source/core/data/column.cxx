@@ -2156,5 +2156,3 @@ sal_Bool ScColumn::SearchStyleRange( SCsROW& rRow, SCsROW& rEndRow, const ScStyl
 	else
 		return pAttrArray->SearchStyleRange( rRow, rEndRow, pSearchStyle, bUp, NULL );
 }
-
-

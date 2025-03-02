@@ -174,4 +174,3 @@ void PageCollector::CollectMasterPages( const Reference< XModel >& rxModel, std:
 	{
 	}
 }
-

@@ -1594,8 +1594,3 @@ sal_Bool ExcelToSc8::GetAbsRefs( ScRangeList& r, XclImpStream& aIn, sal_Size nLe
 
 	return r.Count() != 0;
 }
-
-
-
-
-

@@ -189,5 +189,3 @@ sal_Bool SwDDETable::NoDDETable()
 
 	return sal_True;
 }
-
-

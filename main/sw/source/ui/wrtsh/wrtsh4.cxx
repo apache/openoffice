@@ -293,5 +293,3 @@ sal_Bool SwWrtShell::_BwdPara()
 	Combine();
 	return bRet;
 }
-
-

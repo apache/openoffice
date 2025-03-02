@@ -80,4 +80,3 @@ SwVbaSection::getServiceNames()
 	}
 	return aServiceNames;
 }
-

@@ -1045,7 +1045,3 @@ sal_Bool ScAreaNameIterator::Next( String& rName, ScRange& rRange )
         }
     }
 }
-
-
-
-

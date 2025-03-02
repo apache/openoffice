@@ -811,4 +811,3 @@ sal_Bool SwHHCWrapper::ConvContinue_impl( SwConversionArgs *pConversionArgs )
 }
 
 //////////////////////////////////////////////////////////////////////
-

@@ -146,4 +146,3 @@ void SdrDragStat::TakeCreateRect(Rectangle& rRect) const
 		rRect.Left()+=rRect.Left()-rRect.Right();
 	}
 }
-

@@ -1242,5 +1242,3 @@ void SwXMLTextParagraphExport::exportTable(
 
 	((SwXMLExport&)GetExport()).SetShowProgress( bOldShowProgress );
 }
-
-

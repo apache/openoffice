@@ -1004,5 +1004,3 @@ sal_Bool SetHTMLTemplate( SwDoc & rDoc )
 
 	return bRet;
 }
-
-

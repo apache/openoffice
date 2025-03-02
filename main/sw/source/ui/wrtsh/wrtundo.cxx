@@ -171,5 +171,3 @@ String SwWrtShell::GetRepeatString() const
     buf.append(str);
     return buf.makeStringAndClear();
 }
-
-

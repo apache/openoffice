@@ -307,4 +307,3 @@ css::uno::Reference< css::accessibility::XAccessibleContext > SidebarTxtControlA
 }
 
 } } // end of namespace sw::sidebarwindows
-

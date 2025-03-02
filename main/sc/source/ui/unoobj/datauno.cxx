@@ -2359,8 +2359,3 @@ sal_Bool SAL_CALL ScDatabaseRangesObj::hasByName( const rtl::OUString& aName )
 }
 
 //------------------------------------------------------------------------
-
-
-
-
-

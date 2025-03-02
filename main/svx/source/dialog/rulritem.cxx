@@ -736,4 +736,3 @@ sal_Bool SvxObjectItem::PutValue( const com::sun::star::uno::Any& rVal, sal_uInt
 
     return bRet;
 }
-

@@ -493,4 +493,3 @@ void SwUndoUpdateSection::RedoImpl(::sw::UndoRedoContext & rContext)
 {
     UndoImpl(rContext);
 }
-

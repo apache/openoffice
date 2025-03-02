@@ -294,4 +294,3 @@ ScVbaFormatConditions::getServiceNames()
 	}
 	return aServiceNames;
 }
-

@@ -1240,4 +1240,3 @@ void Array::DrawArray( OutputDevice& rDev, const Color* pForceColor ) const
 
 } // namespace frame
 } // namespace svx
-

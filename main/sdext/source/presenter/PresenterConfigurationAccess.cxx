@@ -403,4 +403,3 @@ Any PresenterConfigurationAccess::GetProperty (
 
 
 } } // end of namespace sdext::tools
-

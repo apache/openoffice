@@ -90,6 +90,3 @@ void  SwWordCountDialog::SetValues(const SwDocStat& rCurrent, const SwDocStat& r
     aDocWordFI.SetText(         String::CreateFromInt32(rDoc.nWord ));
     aDocCharacterFI.SetText(    String::CreateFromInt32(rDoc.nChar ));
 }
-
-
-

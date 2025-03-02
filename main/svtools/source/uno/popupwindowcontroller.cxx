@@ -255,4 +255,3 @@ Reference< awt::XWindow > SAL_CALL PopupWindowController::createItemWindow( cons
 }
 
 }
-

@@ -963,4 +963,3 @@ OUString SAL_CALL ScaDateAddIn::getRot13( const OUString& aSrcString ) throw( un
 }
 
 //------------------------------------------------------------------
-

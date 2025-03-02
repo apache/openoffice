@@ -59,5 +59,3 @@ UniString SmFormatAction::GetComment() const
 {
 	return (SmResId(RID_UNDOFORMATNAME));
 }
-
-

@@ -2705,5 +2705,3 @@ sal_Bool _FndBox::AreLinesToRestore( const SwTable &rTable ) const
     // A call of MakeFrms() is necessary.
 	return sal_True;
 }
-
-

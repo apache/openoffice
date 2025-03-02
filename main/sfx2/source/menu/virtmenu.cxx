@@ -1332,4 +1332,3 @@ void SfxVirtualMenu::SetHelpIds( ResMgr *pRes )
 {
 	pResMgr = pRes;
 }
-

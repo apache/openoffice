@@ -86,4 +86,3 @@ void ScForbiddenCharsObj::onChange()
 		pDocShell->SetDocumentModified();
 	}
 }
-

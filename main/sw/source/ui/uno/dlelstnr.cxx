@@ -197,4 +197,3 @@ void SAL_CALL SwLinguServiceEventListener::notifyTermination(
 		xDesktop = NULL;
 	}
 }
-

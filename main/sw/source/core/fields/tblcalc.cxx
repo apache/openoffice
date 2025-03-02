@@ -239,7 +239,3 @@ sal_Bool SwTblField::PutValue( const uno::Any& rAny, sal_uInt16 nWhichId )
 	}
     return bRet;
 }
-
-
-
-

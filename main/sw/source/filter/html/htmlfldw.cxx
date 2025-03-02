@@ -531,5 +531,3 @@ Writer& OutHTML_SwFmtFld( Writer& rWrt, const SfxPoolItem& rHt )
 	}
 	return rWrt;
 }
-
-

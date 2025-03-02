@@ -170,6 +170,3 @@ Window* SdTbxCtlDiaPages::CreateItemWindow( Window* pParent )
 {
 	return new SdPagesField( pParent, m_xFrame );
 }
-
-
-

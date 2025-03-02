@@ -1605,9 +1605,3 @@ SAL_IMPLEMENT_MAIN()
 //*****************************
 // Bleibt auf Dauer nicht drin, dient als exportierbare Test-Klasse
 // z.B. fuer Basic-Anbindung
-
-
-
-
-
-

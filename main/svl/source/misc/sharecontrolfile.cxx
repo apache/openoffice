@@ -366,4 +366,3 @@ void ShareControlFile::RemoveFile()
 }
 
 } // namespace svt
-

@@ -320,7 +320,3 @@ void SwWebView::SelectShell()
 	if(bUpdateTable)
 		GetWrtShell().UpdateTable();
 }
-
-
-
-

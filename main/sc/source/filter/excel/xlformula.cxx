@@ -802,4 +802,3 @@ bool XclTokenArrayHelper::GetMultipleOpRefs( XclMultipleOpRefs& rRefs, const ScT
 }
 
 // ============================================================================
-

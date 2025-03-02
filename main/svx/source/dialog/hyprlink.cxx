@@ -1006,4 +1006,3 @@ SfxChildWinInfo SvxHyperlinkDlgWrapper::GetInfo() const
 	SfxChildWinInfo aInfo = SfxChildWindow::GetInfo();
 	return aInfo;
 }
-

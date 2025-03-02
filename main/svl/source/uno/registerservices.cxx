@@ -113,4 +113,3 @@ SVL_DLLPUBLIC void* SAL_CALL component_getFactory (
 }
 
 }	// "C"
-

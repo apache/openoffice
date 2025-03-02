@@ -743,4 +743,3 @@ void SwTxtFrm::Paint(SwRect const& rRect, SwPrintData const*const) const
         ASSERT( ! IsSwapped(), "A frame is swapped after Paint" );
     }
 }
-

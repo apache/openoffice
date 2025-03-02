@@ -269,6 +269,3 @@ IMPL_LINK(FmFormObjFactory, MakeObject, SdrObjFactory*, pObjFactory)
 
 	return 0;
 }
-
-
-

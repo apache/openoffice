@@ -1596,4 +1596,3 @@ void ScDocument::TransliterateText( const ScMarkData& rMultiMark, sal_Int32 nTyp
 
 	delete pEngine;
 }
-

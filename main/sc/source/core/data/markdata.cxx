@@ -597,8 +597,3 @@ void ScMarkData::DeleteTab( SCTAB nTab )
 		bTabMarked[i] = bTabMarked[i+1];
 	bTabMarked[MAXTAB] = sal_False;
 }
-
-
-
-
-

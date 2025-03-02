@@ -534,5 +534,3 @@ sal_Bool INetURLHistory::QueryUrl_Impl (const INetURLObject &rUrl)
 	}
 	return sal_False;
 }
-
-

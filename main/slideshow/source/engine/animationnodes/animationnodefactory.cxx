@@ -613,4 +613,3 @@ void AnimationNodeFactory::showTree( AnimationNodeSharedPtr& pRootNode )
 
 } // namespace internal
 } // namespace slideshow
-

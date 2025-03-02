@@ -561,5 +561,3 @@ extern "C"
         return component_getFactoryHelper( pImplementationName, pServiceManager, pRegistryKey, scripting_protocolhandler::g_entries );
     }
 } // extern "C"
-
-

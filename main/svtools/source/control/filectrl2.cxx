@@ -87,4 +87,3 @@ void FileControl::ImplBrowseFile( )
 		DBG_ERROR( "FileControl::ImplBrowseFile: caught an exception while executing the file picker!" );
 	}
 }
-

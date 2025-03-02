@@ -911,5 +911,3 @@ void SwTxtAdjuster::CalcDropRepaint()
 	if( rRepaint.Bottom() < nBottom )
 		rRepaint.Bottom( nBottom );
 }
-
-

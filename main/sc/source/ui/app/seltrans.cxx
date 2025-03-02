@@ -445,5 +445,3 @@ void ScSelectionTransferObj::ObjectReleased()
 
 	TransferableHelper::ObjectReleased();
 }
-
-

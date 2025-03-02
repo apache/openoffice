@@ -156,4 +156,3 @@ sal_Bool SAL_CALL SdUnoModule::supportsService( const ::rtl::OUString& sServiceN
 {
 	return SdUnoModule_getSupportedServiceNames();
 }
-

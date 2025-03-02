@@ -749,4 +749,3 @@ SwFieldType* SwAuthorityField::ChgTyp( SwFieldType* pFldTyp )
 	}
 	return pSrcTyp;
 }
-

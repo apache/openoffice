@@ -187,7 +187,3 @@ SfxItemPresentation SvxGrfCrop::GetPresentation(
 	}
 	return ePres;
 }
-
-
-
-

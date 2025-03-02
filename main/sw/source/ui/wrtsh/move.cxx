@@ -682,6 +682,3 @@ sal_Bool SwWrtShell::SelectTxtAttr( sal_uInt16 nWhich, const SwTxtAttr* pAttr )
     EndSelect();
     return bRet;
 }
-
-
-

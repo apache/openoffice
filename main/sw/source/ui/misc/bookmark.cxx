@@ -294,6 +294,3 @@ long BookmarkCombo::PreNotify( NotifyEvent& rNEvt )
 		nHandled = SwComboBox::PreNotify( rNEvt );
 	return nHandled;
 }
-
-
-

@@ -4296,5 +4296,3 @@ SwViewOptionAdjust_Impl::AdjustViewOptions(SwPrintData const*const pPrtOptions)
 
 
 /*****************************************************************************/
-
-

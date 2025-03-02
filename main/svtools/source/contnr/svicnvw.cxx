@@ -821,5 +821,3 @@ void SvIconView::ShowFocusRect( const SvLBoxEntry* pEntry )
 {
 	pImp->ShowFocusRect( pEntry );
 }
-
-

@@ -535,7 +535,3 @@ void SwTxtFtn::CheckCondColl()
 		((SwStartNode&)GetStartNode()->GetNode()).CheckSectionCondColl();
 //FEATURE::CONDCOLL
 }
-
-
-
-

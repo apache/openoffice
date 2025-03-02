@@ -162,4 +162,3 @@ SwAccessibleChildMap::SwAccessibleChildMap( const SwRect& rVisArea,
            ( rFrm.IsTxtFrm() &&
              rFrm.GetDrawObjs() );
 }
-

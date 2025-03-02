@@ -65,9 +65,3 @@ void ScDBFunc::UpdateCharts( sal_Bool bAllCharts )
 	if ( !nFound && !bAllCharts )
 		ErrorMessage(STR_NOCHARTATCURSOR);
 }
-
-
-
-
-
-

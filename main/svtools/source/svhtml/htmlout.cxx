@@ -972,5 +972,3 @@ sal_Bool HTMLOutFuncs::PrivateURLToInternalImg( String& rURL )
 
 	return sal_False;
 }
-
-

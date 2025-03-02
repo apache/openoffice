@@ -2513,4 +2513,3 @@ namespace sdecl = comphelper::service_decl;
 
 // The C shared lib entry points
 COMPHELPER_SERVICEDECL_EXPORTS1(slideShowDecl)
-

@@ -596,4 +596,3 @@ void SdStyleFamily::removeVetoableChangeListener( const OUString& , const Refere
 {
     OSL_ENSURE( 0, "###unexpected!" );
 }
-

@@ -369,5 +369,3 @@ void AccessiblePageShape::dispose (void)
 
 
 } // end of namespace accessibility
-
-

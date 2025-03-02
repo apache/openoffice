@@ -337,5 +337,3 @@ void SwClipboardChangeListener::AddRemoveListener( sal_Bool bAdd )
 {
 	pView->AddRemoveClipboardListener( Reference< XClipboardListener >( this ), bAdd );
 }
-
-

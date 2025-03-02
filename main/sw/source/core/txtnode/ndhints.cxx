@@ -489,5 +489,3 @@ bool SwpHintsArray::Resort()
 #endif
 	return bResort;
 }
-
-

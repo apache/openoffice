@@ -137,5 +137,3 @@ void SvxRelativeField::SetRelative( sal_Bool bNewRelative )
 	SetText( aStr );
 	SetSelection( aSelection );
 }
-
-

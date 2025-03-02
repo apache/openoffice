@@ -556,5 +556,3 @@ void  SwEditWin::Paint(const Rectangle& rRect)
 	if( bPaintShadowCrsr )
 		pShadCrsr->Paint();
 }
-
-

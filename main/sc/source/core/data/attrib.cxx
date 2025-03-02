@@ -1320,5 +1320,3 @@ sal_Bool ScPageScaleToItem::PutValue( const uno::Any& rAny, sal_uInt8 nMemberId 
 }
 
 // ============================================================================
-
-

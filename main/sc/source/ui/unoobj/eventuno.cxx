@@ -189,6 +189,3 @@ sal_Bool SAL_CALL ScSheetEventsObj::hasElements() throw(uno::RuntimeException)
         return sal_True;
     return sal_False;
 }
-
-
-

@@ -417,4 +417,3 @@ css::uno::Reference< css::accessibility::XAccessible > SidebarTxtControl::Create
 }
 
 } } // end of namespace sw::sidebarwindows
-

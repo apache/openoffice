@@ -258,7 +258,3 @@ SfxPoolItem* SwTblBoxValue::Clone( SfxItemPool* ) const
 {
 	return new SwTblBoxValue( nValue );
 }
-
-
-
-

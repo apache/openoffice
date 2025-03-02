@@ -58,6 +58,3 @@ SvxStandardDialog::SvxStandardDialog( Window *pParent, const ResId &rResId ) :
 __EXPORT SvxStandardDialog::~SvxStandardDialog()
 {
 }
-
-
-

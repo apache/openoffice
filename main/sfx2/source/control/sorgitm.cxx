@@ -129,4 +129,3 @@ sal_Bool SfxScriptOrganizerItem::PutValue( const com::sun::star::uno::Any& rVal,
 
     return bRet;
 }
-

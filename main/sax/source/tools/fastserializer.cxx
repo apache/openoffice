@@ -396,4 +396,3 @@ namespace sax_fastparser {
     }
 
 } // namespace sax_fastparser
-

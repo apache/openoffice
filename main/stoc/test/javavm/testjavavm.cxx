@@ -194,5 +194,3 @@ SAL_IMPLEMENT_MAIN()
 //	cout << "javavm " << (bSucc ? "succeeded" : "failed") << " !" << endl;
 	return (bSucc ? 0 : -1);
 }
-
-

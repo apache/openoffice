@@ -195,4 +195,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OPackageStructureCreator::getSupported
 {
 	return impl_getStaticSupportedServiceNames();
 }
-

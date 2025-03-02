@@ -2467,4 +2467,3 @@ sal_Bool                TextView::IsInsertMode() const
 { return mpImpl->mbInsertMode; }
 void                TextView::SupportProtectAttribute(sal_Bool bSupport) 
 { mpImpl->mbSupportProtectAttribute = bSupport;}
-

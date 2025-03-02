@@ -621,4 +621,3 @@ sal_uLong StgWriter::Write( SwPaM& rPaM, const uno::Reference < embed::XStorage 
 
 	return nRet;
 }
-

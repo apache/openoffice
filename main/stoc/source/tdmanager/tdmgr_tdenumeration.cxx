@@ -180,4 +180,3 @@ TypeDescriptionEnumerationImpl::queryCurrentChildEnumeration()
 }
 
 } // namespace stoc_tdmgr
-

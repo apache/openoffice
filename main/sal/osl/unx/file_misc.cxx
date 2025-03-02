@@ -1045,4 +1045,3 @@ static int oslDoCopyFile(const sal_Char* pszSourceFileName, const sal_Char* pszD
 
 	return nRet;
 }
-

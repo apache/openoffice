@@ -592,7 +592,3 @@ uno::Sequence<rtl::OUString> ScServiceProvider::GetAllServiceNames()
     }
 	return aRet;
 }
-
-
-
-

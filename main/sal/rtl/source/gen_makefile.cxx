@@ -33,5 +33,3 @@ int main()
   printf( "RTL_ARCH:=%s\n", THIS_ARCH );
   return 0;
 }
-
-

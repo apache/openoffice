@@ -267,7 +267,3 @@ void ScTabViewShell::GetImageMapState( SfxItemSet& rSet )
 		nWhich = aIter.NextWhich();
 	}
 }
-
-
-
-

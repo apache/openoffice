@@ -847,4 +847,3 @@ sal_Bool SwDoc::SplitDoc( sal_uInt16 eDocType, const String& rPath, int nOutline
 
 	return pRet && pRet->GetValue();
 }//<-end,zhaojianwei
-

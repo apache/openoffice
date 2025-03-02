@@ -468,5 +468,3 @@ FmFieldWinMgr::FmFieldWinMgr(Window* _pParent, sal_uInt16 _nId,
 	eChildAlignment = SFX_ALIGN_NOALIGNMENT;
 	((SfxFloatingWindow*)pWindow)->Initialize( _pInfo );
 }
-
-

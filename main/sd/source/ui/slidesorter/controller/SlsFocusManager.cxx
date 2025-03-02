@@ -396,4 +396,3 @@ FocusManager::FocusHider::~FocusHider (void)
 }
 
 } } } // end of namespace ::sd::slidesorter::controller
-

@@ -267,4 +267,3 @@ oslFileError SAL_CALL osl_getTempDirURL(rtl_uString** pustrTempDir)
 
 	return error;
 }
-

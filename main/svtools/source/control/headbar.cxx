@@ -1663,4 +1663,3 @@ void HeaderBar::SetAccessible( ::com::sun::star::uno::Reference< ::com::sun::sta
 	else
 		return xPeer;
 }
-

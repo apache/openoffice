@@ -309,6 +309,3 @@ void SwMarginPortion::AdjustRight( const SwLineLayout *pCurr )
 		pRight = pLeft ? pLeft : (SwGluePortion*)this;
 	}
 }
-
-
-

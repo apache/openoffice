@@ -118,7 +118,3 @@ void ScDrawUtil::CalcScale( ScDocument* pDoc, SCTAB nTab,
 	rScaleX.ReduceInaccurate( 25 );
 	rScaleY.ReduceInaccurate( 25 );
 }
-
-
-
-

@@ -139,5 +139,3 @@ sal_Int32 ScDPItemDataPool::insertData( const ScDPItemData& aData )
 
 	return nResult;
 }
-
-

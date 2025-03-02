@@ -408,4 +408,3 @@ void SAL_CALL ScDispatch::disposing( const ::com::sun::star::lang::EventObject& 
 
     pViewShell = NULL;
 }
-

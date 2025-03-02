@@ -3833,7 +3833,3 @@ ScInputHdlState& ScInputHdlState::operator=( const ScInputHdlState& r )
 
 	return *this;
 }
-
-
-
-

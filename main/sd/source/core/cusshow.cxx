@@ -129,4 +129,3 @@ String SdCustomShow::GetName() const
 {
     return aName;
 }
-

@@ -706,4 +706,3 @@ void SwTxtFmtColl::DeleteAssignmentToListLevelOfOutlineStyle(
         ResetFmtAttr( RES_PARATR_OUTLINELEVEL );
     }
 }
-

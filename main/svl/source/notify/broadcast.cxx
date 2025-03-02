@@ -139,6 +139,3 @@ void SvtBroadcaster::Forward( SvtBroadcaster& rBC, const SfxHint& rHint )
 //		UnlockModify();
 	}
 }
-
-
-

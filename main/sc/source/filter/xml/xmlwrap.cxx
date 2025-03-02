@@ -1105,4 +1105,3 @@ sal_Bool ScXMLImportWrapper::Export(sal_Bool bStylesOnly)
 
 	return sal_False;
 }
-

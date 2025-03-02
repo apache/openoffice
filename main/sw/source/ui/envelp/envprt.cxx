@@ -249,7 +249,3 @@ void SwEnvPrtPage::Reset(const SfxItemSet& rSet)
 	ActivatePage(rSet);
 	ClickHdl(&aTopButton);
 }
-
-
-
-

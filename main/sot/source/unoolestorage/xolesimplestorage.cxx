@@ -803,5 +803,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OLESimpleStorage::getSupportedServiceN
 {
 	return impl_staticGetSupportedServiceNames();
 }
-
-

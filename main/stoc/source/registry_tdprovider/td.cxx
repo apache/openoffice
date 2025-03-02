@@ -72,5 +72,3 @@ OUString TypeDescriptionImpl::getName()
 }
 
 }
-
-

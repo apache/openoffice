@@ -737,5 +737,3 @@ uno::Any SAL_CALL ScFunctionAccess::callFunction( const rtl::OUString& aName,
 
 	return aRet;
 }
-
-

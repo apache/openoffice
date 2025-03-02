@@ -815,5 +815,3 @@ void Block::Update (
 } // end of anonymous namespace
 
 } } // end of namespace ::sdext::presenter
-
-

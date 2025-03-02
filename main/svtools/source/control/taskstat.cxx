@@ -646,4 +646,3 @@ sal_Bool TaskStatusBar::GetStatusFieldItem( sal_uInt16 nItemId, TaskStatusFieldI
 
     return sal_False;
 }
-

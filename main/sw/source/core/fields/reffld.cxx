@@ -1056,4 +1056,3 @@ void SwGetRefFieldType::MergeWithOtherDoc( SwDoc& rDestDoc )
 		}
 	}
 }
-

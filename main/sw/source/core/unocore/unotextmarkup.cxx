@@ -535,4 +535,3 @@ uno::Any SAL_CALL SwXStringKeyMap::getValueByIndex(::sal_Int32 nIndex) throw (un
 
     return uno::Any();
 }
-

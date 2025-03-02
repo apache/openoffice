@@ -557,4 +557,3 @@ SwClient* SwClientIter::Previous()
 	} while( pAct );
 	return pAct;
 }
-

@@ -1301,4 +1301,3 @@ void ScDrawTextObjectBar::GetStatePropPanelAttr(SfxItemSet &rSet)
 		nWhich = aIter.NextWhich();
 	}	
 }
-

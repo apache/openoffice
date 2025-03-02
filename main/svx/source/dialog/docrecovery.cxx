@@ -2174,4 +2174,3 @@ void BrokenRecoveryDialog::impl_askForSavePath()
         }
     }   // namespace DocRecovery
 }	// namespace svx
-

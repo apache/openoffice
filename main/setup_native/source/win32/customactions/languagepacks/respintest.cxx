@@ -205,4 +205,3 @@ extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
 
     return ERROR_SUCCESS;
 }
-

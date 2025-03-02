@@ -418,5 +418,3 @@ IMPL_LINK( SvxGridTabPage, ChangeGridsnapHdl_Impl, void *, EMPTYARG )
 	bAttrModified = sal_True;
 	return 0;
 }
-
-

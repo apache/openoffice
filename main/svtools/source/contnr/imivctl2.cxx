@@ -839,6 +839,3 @@ void IcnGridMap_Impl::GetGridCoord( GridId nId, sal_uInt16& rGridX, sal_uInt16& 
 		rGridY = (sal_uInt16)(nId % _nGridRows);
 	}
 }
-
-
-

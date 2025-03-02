@@ -451,4 +451,3 @@ SdrLayerID SdrLayerAdmin::GetUniqueLayerID() const
 	}
 	return i;
 }
-

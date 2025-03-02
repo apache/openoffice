@@ -2399,4 +2399,3 @@ extern "C" void * SAL_CALL component_getFactory(
         implName, serviceManager, registryKey, entries);
 }
 #endif
-

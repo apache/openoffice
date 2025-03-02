@@ -663,4 +663,3 @@ ScVbaAxis::getServiceNames()
 	}
 	return aServiceNames;
 }
-

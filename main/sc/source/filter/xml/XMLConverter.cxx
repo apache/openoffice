@@ -663,4 +663,3 @@ bool lclSkipEmptyParentheses( const sal_Unicode*& rpcString, const sal_Unicode* 
 }
 
 // ============================================================================
-

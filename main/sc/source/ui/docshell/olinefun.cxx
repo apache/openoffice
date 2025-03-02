@@ -811,8 +811,3 @@ sal_Bool ScOutlineDocFunc::HideOutline( SCTAB nTab, sal_Bool bColumns, sal_uInt1
 
 	return sal_True;		//! immer ???
 }
-
-
-
-
-

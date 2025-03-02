@@ -128,5 +128,3 @@ SAL_IMPLEMENT_MAIN()
 
 	return(0);
 }
-
-

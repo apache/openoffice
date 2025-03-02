@@ -728,6 +728,3 @@ void SvxSwFrameExample::DrawRect_Impl(const Rectangle &rRect, const Color &rFill
 	SetLineColor(rLineColor);
 	Window::DrawRect(rRect);
 }
-
-
-

@@ -1426,4 +1426,3 @@ void 	SwXTextPortionEnumeration::Modify( const SfxPoolItem* pOld, const SfxPoolI
 {
 	ClientModify(this, pOld, pNew);
 }
-

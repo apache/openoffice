@@ -151,7 +151,3 @@ void SwEditShell::FillByEx(SwTxtFmtColl* pColl, sal_Bool bReset)
             GetDoc()->ChgFmt(*pColl, *pSet );
 	}
 }
-
-
-
-

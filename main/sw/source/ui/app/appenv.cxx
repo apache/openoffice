@@ -533,5 +533,3 @@ static sal_uInt16 nTitleNo = 0;
 	}
 	delete pDlg;
 }
-
-

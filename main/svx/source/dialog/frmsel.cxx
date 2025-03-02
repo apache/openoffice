@@ -1251,4 +1251,3 @@ FrameBorderIterBase< Cont, Iter, Pred >& FrameBorderIterBase< Cont, Iter, Pred >
 // ============================================================================
 
 } // namespace svx
-

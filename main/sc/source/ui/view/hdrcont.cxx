@@ -1037,6 +1037,3 @@ String ScHeaderControl::GetDragHelp( long /* nVal */ )
 void ScHeaderControl::SetMarking( sal_Bool /* bSet */ )
 {
 }
-
-
-

@@ -301,8 +301,3 @@ const ScDPCacheTable& ScDatabaseDPData::GetCacheTable() const
 }
 
 // -----------------------------------------------------------------------
-
-
-
-
-

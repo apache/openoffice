@@ -474,4 +474,3 @@ void StgEntry::Store( void* pTo )
 	  << nSize 						// 78 file size
 	  << nUnknown;					// 7C unknown
 }
-

@@ -603,4 +603,3 @@ namespace SwLangHelper
 	#endif
 	}
 }
-

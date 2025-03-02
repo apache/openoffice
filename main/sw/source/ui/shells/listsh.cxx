@@ -294,5 +294,3 @@ SwListShell::SwListShell(SwView &_rView) :
 	SetName(String::CreateFromAscii("List"));
 	SetHelpId(SW_LISTSHELL);
 }
-
-

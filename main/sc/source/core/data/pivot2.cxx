@@ -151,4 +151,3 @@ ScPivotFuncData::ScPivotFuncData( SCCOL nCol, sal_uInt16 nFuncMask, const DataPi
 }
 
 // ============================================================================
-

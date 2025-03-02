@@ -250,5 +250,3 @@ void SwXMLBrushItemExport::exportXML( const SvxBrushItem& rItem )
 		}
 	}
 }
-
-

@@ -233,5 +233,3 @@ FltError ScImportLotus123old( SvStream& aStream, ScDocument* pDocument, CharSet 
 
     return generate_Opcodes( aStream, *pDoc, aPrgrsBar, eTyp );
 }
-
-

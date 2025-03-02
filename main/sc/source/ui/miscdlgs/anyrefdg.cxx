@@ -1004,4 +1004,3 @@ void ScRefHandler::RefInputDone( sal_Bool bForced )
 {
     m_aHelper.RefInputDone( bForced );
 }
-

@@ -614,4 +614,3 @@ void SwHTMLWriter::OutFootEndNoteInfo()
 										 OOO_STRING_SVTOOLS_HTML_META_sdendnote );
 	}
 }
-

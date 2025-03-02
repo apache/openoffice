@@ -171,4 +171,3 @@ void ScChangeViewSettings::AdjustDateMode( const ScDocument& rDoc )
         }
     }
 }
-

@@ -3334,5 +3334,3 @@ sal_Unicode GetCharOfTxtAttr( const SwTxtAttr& rAttr )
     }
     return cRet;
 }
-
-

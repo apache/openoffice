@@ -3677,6 +3677,3 @@ void ScOutputData::DrawRotated(sal_Bool bPixelToLogic)
 
 	delete pEngine;
 }
-
-
-

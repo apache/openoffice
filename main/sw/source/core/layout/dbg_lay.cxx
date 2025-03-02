@@ -862,4 +862,3 @@ void SwFrmChangesLeave::Leave()
 }
 
 #endif // DBG_UTIL
-

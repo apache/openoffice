@@ -2457,4 +2457,3 @@ IMPL_LINK(ScExternalRefManager, TimeOutHdl, AutoTimer*, pTimer)
 
     return 0;
 }
-

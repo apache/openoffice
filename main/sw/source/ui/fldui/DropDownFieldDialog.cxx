@@ -132,4 +132,3 @@ IMPL_LINK(sw::DropDownFieldDialog, ButtonHdl, PushButton*, pButton)
     EndDialog(&aNextPB == pButton ? RET_OK : RET_YES );
 	return 0;
 }
-

@@ -513,6 +513,3 @@ sal_Bool TypedScStrCollection::GetExactMatch( String& rString ) const
 
 	return sal_False;
 }
-
-
-

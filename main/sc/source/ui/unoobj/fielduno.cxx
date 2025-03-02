@@ -1539,7 +1539,3 @@ uno::Sequence<rtl::OUString> SAL_CALL ScHeaderFieldObj::getSupportedServiceNames
 }
 
 //------------------------------------------------------------------------
-
-
-
-

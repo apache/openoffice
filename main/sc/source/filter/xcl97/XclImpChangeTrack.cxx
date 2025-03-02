@@ -495,4 +495,3 @@ bool XclImpChTrFmlConverter::Read3DTabReference( sal_uInt16 /*nIxti*/, SCTAB& rF
 {
 	return rChangeTrack.Read3DTabRefInfo( rFirstTab, rLastTab, rExtInfo );
 }
-

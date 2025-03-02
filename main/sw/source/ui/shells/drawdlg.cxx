@@ -269,6 +269,3 @@ void SwDrawShell::GetDrawAttrState(SfxItemSet& rSet)
 	else
 		rSet.Put(pSdrView->GetDefaultAttr());
 }
-
-
-

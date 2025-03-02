@@ -298,5 +298,3 @@ void SwLabelConfig::SaveLabel( 	const rtl::OUString& rManufacturer,
 	SetSetProperties(wrapConfigurationElementName(rManufacturer), aPropValues);
 
 }
-
-

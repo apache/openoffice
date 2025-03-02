@@ -175,4 +175,3 @@ sal_Bool InsCaptionOpt::operator==( const InsCaptionOpt& rOpt ) const
 	return rOStream;
 }
 */
-

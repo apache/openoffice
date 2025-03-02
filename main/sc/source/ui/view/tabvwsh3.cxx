@@ -1225,6 +1225,3 @@ void ScTabViewShell::Execute( SfxRequest& rReq )
 			break;
 	}
 }
-
-
-

@@ -49,4 +49,3 @@ void ScAccessibleDocumentBase::SwitchViewFireFocus()
 {
 	CommitFocusGained();
 }
-

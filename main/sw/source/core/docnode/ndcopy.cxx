@@ -1640,7 +1640,3 @@ void SwDoc::CopyFlyInFlyImpl(
 		}
 	}
 }
-
-
-
-

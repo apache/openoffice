@@ -1870,4 +1870,3 @@ SfxInPlaceClient* SwDocShell::GetIPClient( const ::svt::EmbeddedObjectRef& xObjR
 
     return pResult;
 }
-

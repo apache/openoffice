@@ -621,4 +621,3 @@ void SwCompatibilityOptPage::Reset( const SfxItemSet&  )
 	SetCurrentOptions( nOptions );
 	m_nSavedOptions = nOptions;
 }
-

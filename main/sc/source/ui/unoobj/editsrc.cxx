@@ -366,4 +366,3 @@ SfxBroadcaster& ScAccessibilityEditSource::GetBroadcaster() const
 {
 	return mpAccessibleTextData->GetBroadcaster();
 }
-

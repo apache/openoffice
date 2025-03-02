@@ -3320,4 +3320,3 @@ static oslVolumeDeviceHandle osl_isFloppyDrive(const sal_Char* pszPath)
 {
     return NULL;
 }
-

@@ -2559,4 +2559,3 @@ sal_Int32 SAL_CALL ScAccessibleDocument::getBackground(  )
     IsObjectValid();
     return SC_MOD()->GetColorConfig().GetColorValue( ::svtools::DOCCOLOR ).nColor;
 }
-

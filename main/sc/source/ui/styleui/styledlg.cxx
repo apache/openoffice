@@ -224,6 +224,3 @@ const SfxItemSet* __EXPORT ScStyleDlg::GetRefreshedSet()
     pItemSet->SetParent( GetStyleSheet().GetItemSet().GetParent() );
     return pItemSet;
 }
-
-
-

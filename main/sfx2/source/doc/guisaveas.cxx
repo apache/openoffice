@@ -1798,4 +1798,3 @@ Window* SfxStoringHelper::GetModelWindow( const uno::Reference< frame::XModel >&
 
 	return pWin;
 }
-

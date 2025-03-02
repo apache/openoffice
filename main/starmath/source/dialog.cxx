@@ -2464,4 +2464,3 @@ void SmSymDefineDialog::SelectChar(xub_Unicode cChar)
 
 
 /**************************************************************************/
-

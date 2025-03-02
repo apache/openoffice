@@ -688,5 +688,3 @@ SAL_IMPLEMENT_MAIN()
     xSimReg->destroy();
 	return(0);
 }
-
-

@@ -1097,4 +1097,3 @@ sal_Bool DdeService::SysTopicExecute( const String* )
 {
 	return sal_False;
 }
-

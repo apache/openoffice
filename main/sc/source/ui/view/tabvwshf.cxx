@@ -954,7 +954,3 @@ void ScTabViewShell::GetStateTable( SfxItemSet& rSet )
 		nWhich = aIter.NextWhich();
 	}
 }
-
-
-
-

@@ -71,5 +71,3 @@ SwBorderDlg::SwBorderDlg(Window* pParent, SfxItemSet& rSet, sal_uInt16 nType) :
 SwBorderDlg::~SwBorderDlg()
 {
 }
-
-

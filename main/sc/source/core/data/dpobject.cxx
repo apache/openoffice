@@ -2629,5 +2629,3 @@ bool ScDPCollection::HasDPTable(SCCOL nCol, SCROW nRow, SCTAB nTab) const
 
     return pMergeAttr->HasDPTable();
 }
-
-

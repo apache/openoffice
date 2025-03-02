@@ -1846,9 +1846,3 @@ void ScPosWnd::ReleaseFocus_Impl()
 			pShellWnd->GrabFocus();
 	}
 }
-
-
-
-
-
-

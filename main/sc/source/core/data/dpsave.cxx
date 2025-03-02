@@ -1535,4 +1535,3 @@ bool operator == (const ::com::sun::star::sheet::DataPilotFieldReference &l, con
 		l.ReferenceItemType == r.ReferenceItemType &&
 		l.ReferenceItemName == r.ReferenceItemName;
 }
-

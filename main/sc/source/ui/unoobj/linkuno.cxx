@@ -1833,4 +1833,3 @@ sal_Bool SAL_CALL ScExternalDocLinksObj::hasElements()
     ScUnoGuard aGuard;
     return mpRefMgr->getExternalFileCount() > 0;
 }
-

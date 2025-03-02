@@ -524,4 +524,3 @@ void DialControlWrapper::SetControlValue( sal_Int32 nValue )
 // ============================================================================
 
 } // namespace svx
-

@@ -86,4 +86,3 @@ css::uno::Reference< css::office::XAnnotation > SAL_CALL AnnotationEnumeration::
 }
 
 } // namespace sd
-

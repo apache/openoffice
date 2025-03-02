@@ -204,4 +204,3 @@ void ScPrintCfg::SetOptions( const ScPrintOptions& rNew )
 }
 
 void ScPrintCfg::Notify( const ::com::sun::star::uno::Sequence< rtl::OUString >& ) {}
-

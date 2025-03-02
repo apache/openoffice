@@ -3147,4 +3147,3 @@ Point SwFEShell::GetRelativePagePosition(const Point& rDocPos)
     }
     return aRet;
 }
-

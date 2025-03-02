@@ -265,4 +265,3 @@ uno::Sequence< ::rtl::OUString > LockFileCommon::GenerateOwnEntry()
 }
 
 } // namespace svt
-

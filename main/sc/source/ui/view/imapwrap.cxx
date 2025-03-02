@@ -66,7 +66,3 @@ const ImageMap&	ScIMapDlgGetMap( SvxIMapDlg* pDlg )
 {
 	return pDlg->GetImageMap();
 }
-
-
-
-

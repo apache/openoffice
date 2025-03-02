@@ -71,5 +71,3 @@ IMPL_LINK( SdObjectFactory, MakeUserData, SdrObjFactory *, pObjFactory )
 
 	return 0;
 }
-
-

@@ -427,4 +427,3 @@ void ScXMLTableContext::EndElement()
 	}
 	GetScImport().UnlockSolarMutex();
 }
-

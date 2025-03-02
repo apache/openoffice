@@ -248,5 +248,3 @@ short SfxPasswordDialog::Execute()
 
 	return ModalDialog::Execute();
 }
-
-

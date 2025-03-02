@@ -274,4 +274,3 @@ void SwLabDlg::UpdateFieldInformation(uno::Reference< frame::XModel > & xModel, 
 	uno::Reference< util::XRefreshable >  xRefresh(xFldAcc, uno::UNO_QUERY);
 	xRefresh->refresh();
 }
-

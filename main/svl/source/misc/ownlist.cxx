@@ -320,4 +320,3 @@ void SvCommandList::FillSequence( com::sun::star::uno::Sequence < com::sun::star
         aCommandSequence[nIndex].State = beans::PropertyState_DIRECT_VALUE;
 	}
 }
-

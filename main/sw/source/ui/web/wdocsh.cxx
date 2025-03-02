@@ -105,6 +105,3 @@ void SwWebDocShell::FillClass( SvGlobalName * pClassName,
 	}
 	*pUserName = SW_RESSTR(STR_HUMAN_SWWEBDOC_NAME);
 }
-
-
-

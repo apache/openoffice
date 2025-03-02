@@ -1659,4 +1659,3 @@ void XclImpPivotTableManager::ConvertPivotTables( XclImpStream & rStm/* guoyanp:
 }*/
 
 // ============================================================================
-

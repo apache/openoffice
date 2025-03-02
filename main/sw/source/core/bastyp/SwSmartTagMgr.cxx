@@ -88,4 +88,3 @@ SmartTagMgr& SwSmartTagMgr::Get()
      return *pSmartTagMgr;
 }
 */
-

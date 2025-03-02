@@ -2511,6 +2511,3 @@ FltError ScFormatFilterPluginImpl::ScImportStarCalc10( SvStream& rStream, ScDocu
 	Sc10Import	aImport( rStream, pDocument );
 	return ( FltError ) aImport.Import();
 }
-
-
-

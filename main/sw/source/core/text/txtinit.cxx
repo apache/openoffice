@@ -92,6 +92,3 @@ void _TextFinit()
 	delete pContourCache;
 	SwDropPortion::DeleteDropCapCache();
 }
-
-
-

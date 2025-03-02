@@ -152,4 +152,3 @@ css::uno::Reference< css::accessibility::XAccessibleContext > SidebarWinAccessib
 }
 
 } } // end of namespace sw::sidebarwindows
-

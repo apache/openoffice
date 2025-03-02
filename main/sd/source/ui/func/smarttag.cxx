@@ -472,4 +472,3 @@ SmartProxyHdl::~SmartProxyHdl()
 }
 */
 } // end of namespace sd
-

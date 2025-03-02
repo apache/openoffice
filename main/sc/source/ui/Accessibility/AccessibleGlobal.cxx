@@ -88,4 +88,3 @@ void ScAccessibleStateSet::clear()
 {
     maStates.clear();
 }
-

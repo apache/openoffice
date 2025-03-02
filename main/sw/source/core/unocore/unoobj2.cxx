@@ -1989,4 +1989,3 @@ throw (uno::RuntimeException)
     return ::sw::GetSupportedServiceNamesImpl(
             g_nServicesParaFrameEnum, g_ServicesParaFrameEnum);
 }
-

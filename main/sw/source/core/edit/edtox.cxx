@@ -478,6 +478,3 @@ void SwEditShell::ApplyAutoMark()
 	DoUndo(bDoesUndo);
 	EndAllAction();
 }
-
-
-

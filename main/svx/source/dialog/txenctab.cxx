@@ -69,4 +69,3 @@ rtl_TextEncoding SvxTextEncodingTable::GetTextEncoding( const String& rStr ) con
 	}
 	return RTL_TEXTENCODING_DONTKNOW;
 }
-

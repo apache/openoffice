@@ -130,6 +130,3 @@ void ScPageBreakData::AddPages()
 		}
 	}
 }
-
-
-

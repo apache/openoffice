@@ -239,4 +239,3 @@ std::string GetProcessImagePath( DWORD dwProcessId )
 {
 	return (LONG)GetVersion() < 0 ? GetProcessImagePath_9x( dwProcessId ) : GetProcessImagePath_NT( dwProcessId );
 }
-

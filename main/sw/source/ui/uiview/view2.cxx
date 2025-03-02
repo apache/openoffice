@@ -2502,4 +2502,3 @@ void SwView::ExecuteScan( SfxRequest& rReq )
 	if (pViewImpl)
 		pViewImpl->ExecuteScan(rReq) ;
 }
-

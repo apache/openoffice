@@ -1883,4 +1883,3 @@ bool SwTxtFrm::FillSelection( SwSelectionList& rSelList, const SwRect& rRect ) c
     }
     return bRet;
 }
-

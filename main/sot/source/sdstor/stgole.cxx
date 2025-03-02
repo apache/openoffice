@@ -208,4 +208,3 @@ sal_Bool StgOleStream::Store()
 	Commit();
 	return sal_Bool( GetError() == SVSTREAM_OK );
 }
-

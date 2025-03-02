@@ -227,4 +227,3 @@ void DocumentLockFile::RemoveFile()
 }
 
 } // namespace svt
-

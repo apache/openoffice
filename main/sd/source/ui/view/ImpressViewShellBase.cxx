@@ -115,4 +115,3 @@ void ImpressViewShellBase::InitializeFramework (void)
 }
 
 } // end of namespace sd
-

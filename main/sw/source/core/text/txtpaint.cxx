@@ -129,5 +129,3 @@ void SwSaveClip::_ChgClip( const SwRect &rRect, const SwTxtFrm* pFrm,
 
     (SwRect&)rRect = aOldRect;
 }
-
-

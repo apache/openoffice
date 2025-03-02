@@ -276,4 +276,3 @@ void ScSheetSaveData::SetInSupportedSave( bool bSet )
 {
     mbInSupportedSave = bSet;
 }
-

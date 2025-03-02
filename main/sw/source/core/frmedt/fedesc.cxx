@@ -284,6 +284,3 @@ const SwPageDesc* SwFEShell::GetSelectedPageDescs() const
 
 	return pRetDesc;
 }
-
-
-

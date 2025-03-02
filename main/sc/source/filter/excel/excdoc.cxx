@@ -824,4 +824,3 @@ void ExcDocument::WriteXml( SvStream& rStrm )
         pExpChangeTrack->WriteXml();
 #endif
 }
-

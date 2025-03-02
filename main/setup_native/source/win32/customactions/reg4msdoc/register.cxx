@@ -333,4 +333,3 @@ int FixReturnRegistrationState(MSIHANDLE handle)
 
 	return registration_state;
 }
-

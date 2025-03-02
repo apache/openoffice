@@ -152,4 +152,3 @@ bool XclAddressConverterBase::CheckScTab( SCTAB nScTab, bool bWarn )
 }
 
 // ============================================================================
-

@@ -99,4 +99,3 @@ IBlockCursor *createBlockCursor( const SwCrsrShell& rCrsrSh, const SwPosition &r
 {
     return new SwBlockCursor( rCrsrSh, rPos );
 }
-

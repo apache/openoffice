@@ -941,4 +941,3 @@ UNOREFERENCE< UNOXINTERFACE > SAL_CALL ScFilterDetect::impl_createInstance( cons
 {
     return UNOREFERENCE< UNOXINTERFACE >( *new ScFilterDetect( xServiceManager ) );
 }
-

@@ -322,7 +322,3 @@ sal_uInt16* __EXPORT ScFooterPage::GetRanges()
 {
 	return SvxHeaderPage::GetRanges();
 }
-
-
-
-

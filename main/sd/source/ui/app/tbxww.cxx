@@ -463,6 +463,3 @@ sal_Bool SdTbxControl::IsCheckable( sal_uInt16 nSId )
 	}
 	return( sal_False );
 }
-
-
-

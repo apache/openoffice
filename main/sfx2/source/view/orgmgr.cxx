@@ -825,5 +825,3 @@ void SfxOrganizeMgr::SaveAll(Window *pParent)
 		}
 	}
 }
-
-

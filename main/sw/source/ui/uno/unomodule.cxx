@@ -165,4 +165,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL SwUnoModule::getSupportedServiceNames(
 {
 	return SwUnoModule_getSupportedServiceNames();
 }
-

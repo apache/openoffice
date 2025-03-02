@@ -1862,4 +1862,3 @@ sal_Bool SvxNumberFormatShell::IsInTable(sal_uInt16 nPos,sal_Bool bTmpBanking,co
 
 	return bFlag;
 }
-

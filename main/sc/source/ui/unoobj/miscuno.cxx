@@ -415,6 +415,3 @@ sal_Bool SAL_CALL ScNameToIndexAccess::hasElements(  ) throw(::com::sun::star::u
 
 
 //------------------------------------------------------------------------
-
-
-

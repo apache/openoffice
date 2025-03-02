@@ -1551,4 +1551,3 @@ void SwRegHistory::_MakeSetWhichIds()
 		}
 	}
 }
-

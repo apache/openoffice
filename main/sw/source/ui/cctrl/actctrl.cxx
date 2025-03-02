@@ -133,5 +133,3 @@ void ReturnActionEdit::KeyInput( const KeyEvent& rEvt)
     else 
         Edit::KeyInput(rEvt);
 }            
-
-
