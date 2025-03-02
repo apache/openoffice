@@ -65,4 +65,3 @@ void OMutex::release()
 {
 	osl_releaseMutex(m_Impl);
 }
-

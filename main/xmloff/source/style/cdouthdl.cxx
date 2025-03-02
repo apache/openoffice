@@ -323,4 +323,3 @@ sal_Bool XMLCrossedOutTextPropHdl::exportXML( OUString& rStrExpValue, const uno:
 	
 	return bRet;
 }
-

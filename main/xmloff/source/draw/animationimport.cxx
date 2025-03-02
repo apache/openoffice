@@ -1516,4 +1516,3 @@ Sequence< OUString > SAL_CALL AnimationsImport::getSupportedServiceNames() throw
 }
 
 } // namespace xmloff
-

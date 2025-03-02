@@ -278,5 +278,3 @@ ComponentDescription::ServiceDependencies() const
 }
 
 #endif
-
-

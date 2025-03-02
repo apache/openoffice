@@ -179,5 +179,3 @@ const XMLPropertyHandler* XMLPageMasterPropHdlFactory::GetPropertyHandler( sal_I
 	}
 	return pHdl;
 }
-
-

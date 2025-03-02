@@ -136,5 +136,3 @@ SvXMLImportContext *PagePropertySetContext::CreateChildContext(
 
 	return pContext;
 }
-
-

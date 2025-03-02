@@ -329,4 +329,3 @@ const ::rtl::OUString& XMLTextListBlockContext::GetContinueListId() const
     return msContinueListId;
 }
 // <--
-

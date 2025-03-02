@@ -78,4 +78,3 @@ sal_Int32 PDFFontCache::getGlyphWidth( const ImplFontData* pFont, sal_GlyphId nG
     }
     return nWidth;
 }
-

@@ -520,5 +520,3 @@ SvXMLMetaExport::setDocumentLocator(const uno::Reference<xml::sax::XLocator>&)
 {
     // nothing to do here, move along...
 }
-
-

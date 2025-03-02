@@ -1057,4 +1057,3 @@ ImplFontEntry* ImplOs2FontData::CreateFontInstance( ImplFontSelectData& rFSD ) c
 }
 
 // =======================================================================
-

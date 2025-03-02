@@ -385,4 +385,3 @@ Sequence< OUString > SAL_CALL AquaClipboard::getSupportedServiceNames() throw( R
 {
   return clipboard_getSupportedServiceNames();
 }
-

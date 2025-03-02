@@ -1519,5 +1519,3 @@ const XMLPropertyHandler *XMLTextPropertyHandlerFactory::GetPropertyHandler(
 
 	return pHdl;
 }
-
-

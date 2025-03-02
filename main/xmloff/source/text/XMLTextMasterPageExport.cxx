@@ -178,4 +178,3 @@ void XMLTextMasterPageExport::exportMasterPageContent(
 		}
 	}
 }
-

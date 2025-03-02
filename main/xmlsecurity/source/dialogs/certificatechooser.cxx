@@ -231,4 +231,3 @@ void CertificateChooser::ImplShowCertificateDetails()
 		aViewer.Execute();
 	}
 }
-

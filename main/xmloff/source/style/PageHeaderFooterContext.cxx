@@ -93,4 +93,3 @@ SvXMLImportContext *PageHeaderFooterContext::CreateChildContext( sal_uInt16 nPre
 void PageHeaderFooterContext::EndElement()
 {
 }
-

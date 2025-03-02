@@ -293,4 +293,3 @@ Reference< XInterface > SAL_CALL XMLAutoTextEventExportOOO_createInstance(
 	// return (cppu::OWeakObject*)new XMLAutoTextEventExport;
 	return (cppu::OWeakObject*)new XMLAutoTextEventExport(rSMgr,EXPORT_ALL);
 }
-

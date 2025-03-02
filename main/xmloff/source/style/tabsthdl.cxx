@@ -85,4 +85,3 @@ sal_Bool XMLTabStopPropHdl::exportXML( ::rtl::OUString&, const ::com::sun::star:
 { 
 	return sal_False;
 }
-

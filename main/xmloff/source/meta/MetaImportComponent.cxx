@@ -111,4 +111,3 @@ uno::Reference< uno::XInterface > SAL_CALL XMLMetaImportComponent_createInstance
     // return (cppu::OWeakObject*)new XMLMetaImportComponent;
     return (cppu::OWeakObject*)new XMLMetaImportComponent(rSMgr);
 }
-

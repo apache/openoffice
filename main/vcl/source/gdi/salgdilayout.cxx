@@ -875,4 +875,3 @@ void SalGraphics::AddDevFontSubstitute( OutputDevice* pOutDev,
 {
     pOutDev->ImplAddDevFontSubstitute( rFontName, rReplaceFontName, nFlags );
 }
-

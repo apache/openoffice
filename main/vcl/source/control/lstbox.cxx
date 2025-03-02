@@ -1721,4 +1721,3 @@ MultiListBox::MultiListBox( Window* pParent, const ResId& rResId ) :
 		Show();
 	EnableMultiSelection( sal_True );
 }
-

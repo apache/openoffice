@@ -91,4 +91,3 @@ rtl::OUString certificateValidityToOUString( ::sal_Int32 certValidity ) {
 
 	return aValidity ;
 }
-

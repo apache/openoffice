@@ -238,4 +238,3 @@ Reference< XMultiComponentFactory > serviceManager( Reference< XComponentContext
 	xContext = xUsedComponentContext ;
 	return xUsedServiceManager ;
 }
-

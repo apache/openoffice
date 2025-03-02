@@ -164,4 +164,3 @@ CertificateContainer::impl_createFactory( const Reference< XMultiServiceFactory 
 
 	return xReturn;		
 }
-

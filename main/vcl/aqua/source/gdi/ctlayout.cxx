@@ -568,4 +568,3 @@ SalLayout* CTTextStyle::GetTextLayout( void ) const
 }
 
 // =======================================================================
-

@@ -179,4 +179,3 @@ bool FontSubsetInfo::CreateFontSubsetFromType1( sal_Int32* pOutGlyphWidths)
 }
 
 // ====================================================================
-

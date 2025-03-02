@@ -542,5 +542,3 @@ extern sdecl::ServiceDecl const serviceDecl(
     "ControlProviderImpl",
     "ooo.vba.ControlProvider" );
 }
-
-

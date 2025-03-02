@@ -12214,4 +12214,3 @@ void PDFWriterImpl::addStream( const String& rMimeType, PDFOutputStream* pStream
         rStream.m_bCompress = bCompress;
     }
 }
-

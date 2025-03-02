@@ -4098,4 +4098,3 @@ SvXMLImportContext* SdXMLTableShapeContext::CreateChildContext( sal_uInt16 nPref
 	else
 		return SdXMLShapeContext::CreateChildContext(nPrefix, rLocalName, xAttrList);
 }
-

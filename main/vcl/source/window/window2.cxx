@@ -1971,4 +1971,3 @@ void Window::SetOutputSizePixel( const Size& rNewSize )
     SetSizePixel( Size( rNewSize.Width()+mpWindowImpl->mnLeftBorder+mpWindowImpl->mnRightBorder,
                         rNewSize.Height()+mpWindowImpl->mnTopBorder+mpWindowImpl->mnBottomBorder ) );
 }
-

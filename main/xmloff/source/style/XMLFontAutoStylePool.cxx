@@ -284,5 +284,3 @@ void XMLFontAutoStylePool::exportXML()
 								  sal_True, sal_True );
 	}
 }
-
-

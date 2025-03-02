@@ -345,4 +345,3 @@ uno::Any VbaDocumentsBase::openDocument( const rtl::OUString& rFileName, const u
 
     return uno::makeAny( xComponent );
 }
-

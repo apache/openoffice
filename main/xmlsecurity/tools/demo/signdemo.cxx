@@ -150,4 +150,3 @@ int SAL_CALL main( int argc, char **argv )
 
 	return 0;
 }
-

@@ -597,4 +597,3 @@ int ExtraKernInfo::GetUnscaledKernValue( sal_Unicode cLeft, sal_Unicode cRight )
 }
 
 // =======================================================================
-

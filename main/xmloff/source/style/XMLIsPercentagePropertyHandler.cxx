@@ -55,4 +55,3 @@ sal_Bool XMLIsPercentagePropertyHandler::exportXML(
 	DBG_ERROR( "XMLIsPercentagePropertyHandler is not for export!" ); 
 	return sal_False;
 }
-

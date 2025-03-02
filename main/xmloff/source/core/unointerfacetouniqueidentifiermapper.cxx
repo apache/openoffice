@@ -164,4 +164,3 @@ bool UnoInterfaceToUniqueIdentifierMapper::findIdentifier( const OUString& rIden
 }
 
 }
-

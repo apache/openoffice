@@ -189,5 +189,3 @@ SvXMLImportContext *XMLTextListItemContext::CreateChildContext(
 
 	return pContext;
 }
-
-

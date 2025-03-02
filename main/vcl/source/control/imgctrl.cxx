@@ -224,4 +224,3 @@ void ImageControl::LoseFocus()
     FixedImage::GetFocus();
     GetWindow( WINDOW_BORDER )->Invalidate();
 }
-

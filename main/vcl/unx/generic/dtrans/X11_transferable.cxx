@@ -127,4 +127,3 @@ sal_Bool SAL_CALL X11Transferable::isDataFlavorSupported( const DataFlavor& aFla
 
 	return sal_False;
 }
-

@@ -496,4 +496,3 @@ WW8Value::Pointer_t createValue
 }
 
 }
-

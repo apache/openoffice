@@ -181,4 +181,3 @@ void XmlSecStatusBarControl::Paint( const UserDrawEvent& rUsrEvt )
 	pDev->SetLineColor( aOldLineColor );
 	pDev->SetFillColor( aOldFillColor );
 }
-

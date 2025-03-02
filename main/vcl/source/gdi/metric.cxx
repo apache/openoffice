@@ -232,4 +232,3 @@ sal_Bool FontMetric::operator==( const FontMetric& rMetric ) const
 }
 
 // =======================================================================
-

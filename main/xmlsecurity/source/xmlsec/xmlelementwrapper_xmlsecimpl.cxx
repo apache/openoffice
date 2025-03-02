@@ -180,4 +180,3 @@ void XMLElementWrapper_XmlSecImpl::setNativeElement(const xmlNodePtr pNode)
 {
 	m_pElement = pNode;
 }
-

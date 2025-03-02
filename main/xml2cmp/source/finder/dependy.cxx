@@ -217,4 +217,3 @@ ShortName(const Simstr & i_rService)
 	else
 		return i_rService;
 }
-

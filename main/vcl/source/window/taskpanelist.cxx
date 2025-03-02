@@ -394,4 +394,3 @@ Window* TaskPaneList::FindNextFloat( Window *pWindow, sal_Bool bForward )
 }
 
 // --------------------------------------------------
-

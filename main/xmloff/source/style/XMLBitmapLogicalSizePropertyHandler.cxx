@@ -59,4 +59,3 @@ sal_Bool XMLBitmapLogicalSizePropertyHandler::exportXML(
 {
 	return sal_False;
 }
-

@@ -819,5 +819,3 @@ void XMLTextImportPropertyMapper::finished(
     // pXXX-type variables set in the first switch statement of this method, 
     // may have been invalidated by the above push_back() calls!
 }
-
-

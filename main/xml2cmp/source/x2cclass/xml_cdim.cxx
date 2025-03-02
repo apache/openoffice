@@ -175,5 +175,3 @@ ComponentDescriptionImpl::ValueList::Null_()
 	static const ValueList aNull_(ComponentDescription::tag_None);
     return aNull_;
 }
-
-

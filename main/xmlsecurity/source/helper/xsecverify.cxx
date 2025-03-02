@@ -387,4 +387,3 @@ void XSecController::releaseSignatureReader()
 	clearSAXChainConnector( );
 	m_pXSecParser = NULL;
 }
-

@@ -494,4 +494,3 @@ void RDFaImportHelper::InsertRDFa(
 }
 
 } // namespace xmloff
-

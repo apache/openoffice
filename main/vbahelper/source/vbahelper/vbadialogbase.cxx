@@ -41,4 +41,3 @@ VbaDialogBase::Show() throw(uno::RuntimeException)
 		dispatchRequests( m_xModel, aURL );
 	}
 }	
-

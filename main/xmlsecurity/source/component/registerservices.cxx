@@ -77,8 +77,3 @@ void* SAL_CALL component_getFactory( const sal_Char * pImplName, void * pService
 }
 
 }   // extern "C"
-
-
-
-
-

@@ -225,5 +225,3 @@ uno::Reference < io::XInputStream > UriBindingHelper::OpenInputStream( const uno
     }
     return xInStream;
 }
-
-

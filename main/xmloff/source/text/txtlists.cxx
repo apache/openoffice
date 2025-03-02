@@ -534,4 +534,3 @@ XMLTextListsHelper::MakeNumRule(
 
     return xNumRules;
 }
-

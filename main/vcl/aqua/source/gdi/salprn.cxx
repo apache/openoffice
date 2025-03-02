@@ -823,5 +823,3 @@ int AquaSalInfoPrinter::GetLandscapeAngle( const ImplJobSetup* )
 {
     return 900;
 }
-
-

@@ -283,7 +283,3 @@ void SvxXMLTabStopImportContext::EndElement( )
 	XMLElementPropertyContext::EndElement();
 
 }
-
-
-
-

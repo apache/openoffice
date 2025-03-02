@@ -871,4 +871,3 @@ void WinSalObject::InterceptChildWindowKeyDown( sal_Bool bIntercept )
 {
     mbInterceptChildWindowKeyDown = bIntercept;
 }
-

@@ -2646,4 +2646,3 @@ void PrintProgressDialog::Paint( const Rectangle& )
         aDecoView.DrawFrame( aFrameRect );
     }
 }
-

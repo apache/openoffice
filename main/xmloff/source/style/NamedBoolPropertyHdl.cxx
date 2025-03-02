@@ -75,4 +75,3 @@ sal_Bool XMLNamedBoolPropertyHdl::exportXML( OUString& rStrExpValue, const Any& 
 
 	return sal_True;
 }
-
