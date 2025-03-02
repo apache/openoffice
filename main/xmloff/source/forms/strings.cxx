@@ -29,5 +29,3 @@
 #include "strings.hxx"
 #undef XMLFORM_IMPLEMENT_STRINGS
 #endif
-
-

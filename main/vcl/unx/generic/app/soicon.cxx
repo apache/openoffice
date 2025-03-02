@@ -109,4 +109,3 @@ sal_Bool SelectAppIconPixmap( SalDisplay *pDisplay, int nScreen,sal_uInt16 nIcon
     
     return sal_True;
 }
-

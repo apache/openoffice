@@ -347,4 +347,3 @@ Reference< XSingleServiceFactory > XMLSignature_NssImpl :: impl_createFactory( c
 	//return xFactory ;
 	return ::cppu::createSingleFactory( aServiceManager , impl_getImplementationName() , impl_createInstance , impl_getSupportedServiceNames() ) ;
 }
-

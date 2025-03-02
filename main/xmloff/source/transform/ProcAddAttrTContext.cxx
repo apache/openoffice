@@ -73,4 +73,3 @@ void XMLProcAddAttrTransformerContext::StartElement(
 	pMutableAttrList->AddAttribute( m_aAttrQName, m_aAttrValue );
 	GetTransformer().GetDocHandler()->startElement( GetElemQName(), xAttrList );
 }
-

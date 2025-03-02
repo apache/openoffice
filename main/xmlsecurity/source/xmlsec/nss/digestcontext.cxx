@@ -94,4 +94,3 @@ uno::Sequence< ::sal_Int8 > SAL_CALL ODigestContext::finalizeDigestAndDispose()
     aResult.realloc( nResultLen );
     return aResult;
 }
-

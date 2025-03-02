@@ -2607,4 +2607,3 @@ void NetWMAdaptor::setFullScreenMonitors( XLIB_Window i_aWindow, sal_Int32 i_nSc
         }
     }
 }
-

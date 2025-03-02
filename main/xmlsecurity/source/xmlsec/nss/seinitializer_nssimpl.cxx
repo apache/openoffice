@@ -189,4 +189,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL SEInitializer_NssImpl::getSupportedServ
 {
     return SEInitializer_NssImpl_getSupportedServiceNames();
 }
-

@@ -69,4 +69,3 @@ sal_Bool OCondition::check()
 {
 	return osl_checkCondition(m_Condition);
 }
-

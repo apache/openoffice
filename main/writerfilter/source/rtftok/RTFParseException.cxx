@@ -26,4 +26,3 @@
 writerfilter::rtftok::RTFParseException::RTFParseException(char * /*message*/)
 {
 }
-

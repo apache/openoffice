@@ -293,5 +293,3 @@ sal_Int64 SAL_CALL SvXMLAttributeList::getSomething( const uno::Sequence< sal_In
 	}
 	return 0;
 }
-
-

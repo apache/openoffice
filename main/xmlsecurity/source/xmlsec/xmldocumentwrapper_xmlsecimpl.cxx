@@ -1146,4 +1146,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL XMLDocumentWrapper_XmlSecImpl::getSuppo
 {
 	return XMLDocumentWrapper_XmlSecImpl_getSupportedServiceNames();
 }
-

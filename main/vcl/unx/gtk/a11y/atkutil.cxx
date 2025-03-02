@@ -795,5 +795,3 @@ ooo_atk_util_get_type (void)
 
   return type;
 }
-
-

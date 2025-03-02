@@ -138,5 +138,3 @@ void XMLMetaTransformerContext::Characters( const OUString& )
 {
 	// ignore them
 }
-
-

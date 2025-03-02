@@ -730,4 +730,3 @@ std::vector< vcl::PNGWriter::ChunkData >& PNGWriter::GetChunks()
 }
 
 } // namespace vcl
-

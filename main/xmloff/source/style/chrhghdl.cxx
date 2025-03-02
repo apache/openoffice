@@ -160,4 +160,3 @@ sal_Bool XMLCharHeightDiffHdl::exportXML( OUString& rStrExpValue, const uno::Any
 	
 	return rStrExpValue.getLength() != 0;
 }
-

@@ -374,4 +374,3 @@ sal_Bool XMLUnderlineWidthPropHdl::exportXML( OUString& rStrExpValue, const uno:
 	
 	return bRet;
 }
-

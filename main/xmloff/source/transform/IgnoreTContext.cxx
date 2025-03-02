@@ -101,5 +101,3 @@ void XMLIgnoreTransformerContext::Characters( const OUString& rChars )
     else if ( m_bRecursiveUse && m_bAllowCharactersRecursive )
 		GetTransformer().GetDocHandler()->characters( rChars );
 }
-
-

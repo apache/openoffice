@@ -199,5 +199,3 @@ HeapItem::SetNext( HeapItem * i_pNext )
 {
 	pNext = i_pNext;
 }
-
-

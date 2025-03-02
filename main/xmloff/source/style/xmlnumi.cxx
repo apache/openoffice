@@ -1417,4 +1417,3 @@ void SvxXMLListStyleContext::SetDefaultStyle(
 	aAny <<= aPropSeq;
 	rNumRule->replaceByIndex( nLevel, aAny );
 }
-

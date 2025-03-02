@@ -98,5 +98,3 @@ Create_AccessMethod( const char *			i_pOutputFileName,
 
 	aFile.close();
 }
-
-

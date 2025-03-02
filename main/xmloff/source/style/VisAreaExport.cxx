@@ -76,5 +76,3 @@ XMLVisAreaExport::XMLVisAreaExport(SvXMLExport& rExport, const sal_Char *pName,
 XMLVisAreaExport::~XMLVisAreaExport()
 {
 }
-
-

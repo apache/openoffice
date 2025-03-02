@@ -2776,4 +2776,3 @@ SvXMLElementExport::~SvXMLElementExport()
         mrExport.EndElement( maElementName, mbIgnoreWhitespaceInside );
     }
 }
-

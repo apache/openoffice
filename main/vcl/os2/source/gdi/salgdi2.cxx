@@ -785,4 +785,3 @@ void Os2SalGraphics::invert( sal_uInt32 nPoints, const SalPoint* pPtAry, SalInve
 		Ft2SetAttrs( mhPS, PRIM_AREA, ABB_COLOR | ABB_MIX_MODE | ABB_SYMBOL, 0, &oldAb );
 	}
 }
-

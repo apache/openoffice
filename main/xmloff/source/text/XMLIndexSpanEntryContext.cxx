@@ -69,4 +69,3 @@ void XMLIndexSpanEntryContext::FillPropertyValues(
 	rValues[nValues-1].Name = rTemplateContext.sText;
 	rValues[nValues-1].Value = aAny;
 }
-

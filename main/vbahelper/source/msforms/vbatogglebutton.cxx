@@ -144,4 +144,3 @@ ScVbaToggleButton::getServiceNames()
 	}
 	return aServiceNames;
 }
-

@@ -548,4 +548,3 @@ Reference< XInterface > SalInstance::CreateDropTarget()
 {
     return Reference< XInterface >( ( cppu::OWeakObject * )new vcl::GenericDropTarget() );
 }
-

@@ -94,5 +94,3 @@ void SdXMLShapeLinkContext::EndElement()
 {
 	SvXMLImportContext::EndElement();
 }
-
-

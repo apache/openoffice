@@ -142,4 +142,3 @@ void AccParagraphEventListener::handleTextSelectionChangedEvent()
 {
     pAgent->NotifyAccEvent(UM_EVENT_TEXT_SELECTION_CHANGED, pAccessible);
 }
-

@@ -3428,4 +3428,3 @@ Pixel SalColormap::GetPixel( SalColor nSalColor ) const
                          + (((g+8)/17) << 4)
                          +  ((b+8)/17) ];
 }
-

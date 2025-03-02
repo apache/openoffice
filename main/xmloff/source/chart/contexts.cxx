@@ -225,5 +225,3 @@ SvXMLImportContext* SchXMLBodyContext::CreateChildContext(
 
 	return pContext;	
 }
-
-

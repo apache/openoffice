@@ -145,4 +145,3 @@ void VclEventListeners2::callListeners( VclSimpleEvent* i_pEvent )
     }
     m_aIterators.pop_back();
 }
-

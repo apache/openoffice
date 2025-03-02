@@ -315,4 +315,3 @@ void SAL_CALL VbaPageSetupBase::setOrientation( sal_Int32 orientation ) throw (c
     {
     }
 }
-

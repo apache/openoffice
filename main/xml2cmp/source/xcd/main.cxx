@@ -319,4 +319,3 @@ StreamOut_TypeInfo( std::ostream &               o_rOut,
 		pLastHeapTop = 0;
 	}
 }
-

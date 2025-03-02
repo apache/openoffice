@@ -235,4 +235,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL SignatureVerifierImpl::getSupportedServ
 {
 	return SignatureVerifierImpl_getSupportedServiceNames();
 }
-

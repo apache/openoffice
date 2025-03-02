@@ -90,4 +90,3 @@ void CertificateExtension_XmlSecImpl :: setCertExtn( unsigned char* value, unsig
 
 	m_critical = critical ;
 }
-

@@ -150,5 +150,3 @@ SvXMLImportContext *XMLTextPropertySetContext::CreateChildContext(
 	
 	return pContext;
 }
-
-

@@ -223,4 +223,3 @@ void AccDescendantManagerEventListener::handleSelectionChangedWithinEvent(const 
     }
     pAgent->NotifyAccEvent(UM_EVENT_SELECTION_CHANGED_WITHIN,pAccessible);
 }
-

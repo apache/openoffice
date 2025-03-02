@@ -52,5 +52,3 @@ void XMLElementPropertyContext::EndElement( )
 	if( bInsert )
 		rProperties.push_back( aProp );
 }
-
-

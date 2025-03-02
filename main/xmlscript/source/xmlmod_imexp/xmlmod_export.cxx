@@ -73,4 +73,3 @@ SAL_CALL exportScriptModule(
 }
 
 }
-

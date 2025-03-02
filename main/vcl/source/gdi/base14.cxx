@@ -682,4 +682,3 @@ const PDFWriterImpl::BuiltinFont PDFWriterImpl::m_aBuiltinFonts[ 14 ] = {
 }
 
 };
-

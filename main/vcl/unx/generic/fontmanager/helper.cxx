@@ -398,5 +398,3 @@ void psp::splitPath( OString& rPath, OString& rDir, OString& rBase )
     if( rPath.getLength() > nIndex+1 )
         rBase = rPath.copy( nIndex+1 );
 }
-
-

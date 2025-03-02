@@ -251,6 +251,3 @@ Status XvaCloseIM(XIM)
   	}
 	return (s);
 }
-
-
-

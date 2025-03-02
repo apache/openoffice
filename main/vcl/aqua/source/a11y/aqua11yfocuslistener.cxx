@@ -112,4 +112,3 @@ AquaA11yFocusListener::release() SAL_THROW(())
 { 
     return ReferenceObject::release(); 
 }
-

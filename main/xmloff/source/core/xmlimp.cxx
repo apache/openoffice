@@ -2074,4 +2074,3 @@ SvXMLImport::AddRDFa(uno::Reference<rdf::XMetadatable> i_xObject,
     rRDFaHelper.ParseAndAddRDFa(i_xObject,
         i_rAbout, i_rProperty, i_rContent, i_rDatatype);
 }
-

@@ -146,5 +146,3 @@ void XMLTextDropCapImportContext::EndElement()
 	if( -1 != aWholeWordProp.mnIndex )
 		rProperties.push_back( aWholeWordProp );
 }
-
-
