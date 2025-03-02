@@ -422,4 +422,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicImport(SvStream & rStream, Graphic & 
 		rStream.SetError( SVSTREAM_FILEFORMAT_ERROR );
 	return nRetValue;
 }
-

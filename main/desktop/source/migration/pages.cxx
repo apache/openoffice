@@ -327,4 +327,3 @@ void UpdateCheckPage::ActivatePage()
 }
 
 } // namespace desktop
-

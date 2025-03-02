@@ -479,4 +479,3 @@ void OSaveAsDlg::implInit()
 String OSaveAsDlg::getName() const		{ return m_pImpl->m_aName; }
 String OSaveAsDlg::getCatalog() const	{ return m_pImpl->m_aCatalog.IsVisible() ? m_pImpl->m_aCatalog.GetText() : String(); }
 String OSaveAsDlg::getSchema() const	{ return m_pImpl->m_aSchema.IsVisible() ? m_pImpl->m_aSchema.GetText() : String(); }
-

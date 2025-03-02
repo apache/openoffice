@@ -464,4 +464,3 @@ namespace res
         return aInfo;
     }
 }
-

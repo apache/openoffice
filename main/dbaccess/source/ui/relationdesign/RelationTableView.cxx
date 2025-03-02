@@ -456,4 +456,3 @@ void ORelationTableView::_elementRemoved( const container::ContainerEvent& _rEve
 void ORelationTableView::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
 {
 }
-

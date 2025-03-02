@@ -382,4 +382,3 @@ const Sequence<OUString>& DBChangeDialogConfig_Impl::GetDataSourceNames()
     }
     return aSourceNames;
 }
-

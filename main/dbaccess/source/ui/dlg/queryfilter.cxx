@@ -914,4 +914,3 @@ void DlgFilterCrit::fillLines(const Sequence<Sequence<PropertyValue > >& _aValue
 		}
 	}
 }
-

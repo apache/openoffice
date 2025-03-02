@@ -48,5 +48,3 @@ void OJoinMoveTabWinUndoAct::TogglePosition()
 
 	m_ptNextPosition = ptNext;
 }
-
-

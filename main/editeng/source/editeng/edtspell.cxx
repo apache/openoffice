@@ -757,4 +757,3 @@ void EdtAutoCorrDoc::ImplStartUndoAction()
 	bUndoAction = sal_True;
 	bAllowUndoAction = sal_False;
 }
-

@@ -378,4 +378,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL MSOLEDialogObjectCreator::getSupported
 {
 	return impl_staticGetSupportedServiceNames();
 }
-

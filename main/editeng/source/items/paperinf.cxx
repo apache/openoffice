@@ -133,5 +133,3 @@ String SvxPaperInfo::GetName( Paper ePaper )
 {
     return String( Printer::GetPaperName( ePaper ) );
 }
-
-

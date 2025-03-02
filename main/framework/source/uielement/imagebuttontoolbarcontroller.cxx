@@ -228,4 +228,3 @@ sal_Bool ImageButtonToolbarController::ReadImageFromURL( sal_Bool bBigImage, con
 }
 
 } // namespace
-

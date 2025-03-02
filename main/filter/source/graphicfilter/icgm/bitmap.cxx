@@ -403,4 +403,3 @@ CGMBitmapDescriptor* CGMBitmap::GetBitmap()
 {
 	return pCGMBitmapDescriptor;
 }
-

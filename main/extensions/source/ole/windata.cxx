@@ -32,5 +32,3 @@ namespace ole_adapter
 
 
 }
-
-

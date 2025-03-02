@@ -388,4 +388,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicImport(SvStream & rStream, Graphic & 
 	PCDReader aPCDReader;
 	return aPCDReader.ReadPCD( rStream, rGraphic, pConfigItem );
 }
-

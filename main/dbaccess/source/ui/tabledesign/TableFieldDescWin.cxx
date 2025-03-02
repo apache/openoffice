@@ -329,5 +329,3 @@ long OTableFieldDescWin::PreNotify( NotifyEvent& rNEvt )
 	
 	return bHandled ? 1L : TabPage::PreNotify(rNEvt);
 }
-
-

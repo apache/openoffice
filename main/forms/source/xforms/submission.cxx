@@ -712,4 +712,3 @@ void SAL_CALL Submission::removeVetoableChangeListener( const ::rtl::OUString& P
 {
     PropertySetBase::removeVetoableChangeListener( PropertyName, aListener );
 }
-

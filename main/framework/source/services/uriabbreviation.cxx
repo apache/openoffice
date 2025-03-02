@@ -79,8 +79,3 @@ UriAbbreviation::UriAbbreviation(css::uno::Reference< css::uno::XComponentContex
 }
 
 } // namespace framework
-
-
-
-
-

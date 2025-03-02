@@ -704,5 +704,3 @@ const Rectangle& TextRanger::_GetBoundRect()
 	pBound = new Rectangle( mpPolyPolygon->GetBoundRect() );
 	return *pBound;
 }
-
-

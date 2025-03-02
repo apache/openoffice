@@ -259,4 +259,3 @@ throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetExcept
 }
 
 } // namespace framework
-

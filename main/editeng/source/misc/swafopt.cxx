@@ -151,4 +151,3 @@ SvxSwAutoFmtFlags& SvxSwAutoFmtFlags::operator=( const SvxSwAutoFmtFlags& rAFFla
 
 	return *this;
 }
-

@@ -253,4 +253,3 @@ SvXMLImportContext *SvxXMLXTextImportComponent::CreateChildContext( sal_uInt16 n
 	}
 	return pContext;
 }
-

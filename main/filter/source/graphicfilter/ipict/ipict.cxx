@@ -1895,4 +1895,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicImport( SvStream& rIStm, Graphic & rG
 
 	return bRet;
 }
-

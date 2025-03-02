@@ -237,4 +237,3 @@ void OutlinerEditEng::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet )
 			pOwner->UndoActionEnd( OLUNDO_ATTR );
 	}
 }
-

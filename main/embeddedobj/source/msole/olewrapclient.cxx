@@ -151,4 +151,3 @@ STDMETHODIMP OleWrapperClientSite::RequestNewObjectLayout(void)
 {
 	return E_NOTIMPL;
 }
-

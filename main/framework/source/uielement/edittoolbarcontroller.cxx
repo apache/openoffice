@@ -261,4 +261,3 @@ void EditToolbarController::executeControlCommand( const ::com::sun::star::frame
 }
 
 } // namespace
-

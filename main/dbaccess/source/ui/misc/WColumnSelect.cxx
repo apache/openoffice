@@ -445,4 +445,3 @@ void OWizColumnSelect::enableButtons()
 	m_pParent->EnableButton(OCopyTableWizard::WIZARD_NEXT,bEntries && m_pParent->getOperation() != CopyTableOperation::AppendData);
 }
 // -----------------------------------------------------------------------------
-

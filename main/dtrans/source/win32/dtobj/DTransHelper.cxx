@@ -232,4 +232,3 @@ sal_uInt32 SAL_CALL CStgTransferHelper::memSize( CLIPFORMAT cf ) const
 
 	return dwSize;
 }
-

@@ -425,4 +425,3 @@ extern sdecl::ServiceDecl const serviceDecl(
 } // namespace sfwk
 } // namespace backend
 } // namespace dp_registry
-

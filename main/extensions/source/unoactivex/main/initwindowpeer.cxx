@@ -80,4 +80,3 @@ void SAL_CALL InitWindowPeer::removeEventListener( const uno::Reference< lang::X
 	throw ( uno::RuntimeException )
 {
 }
-

@@ -1123,5 +1123,3 @@ void SAL_CALL OleEmbeddedObject::setContainerName( const ::rtl::OUString& sName 
 
 	m_aContainerName = sName;
 }
-
-

@@ -442,4 +442,3 @@ void ComboboxToolbarController::executeControlCommand( const ::com::sun::star::f
 }
 
 } // namespace
-

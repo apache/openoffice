@@ -385,4 +385,3 @@ void SvxUnoConvertFromMM( const SfxMapUnit eDestinationMapUnit, uno::Any & rMetr
 		}
 	}
 }
-

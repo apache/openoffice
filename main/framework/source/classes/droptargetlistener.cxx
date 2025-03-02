@@ -247,4 +247,3 @@ void DropTargetListener::implts_OpenFile( const String& rFilePath )
 }
 
 }
-

@@ -443,4 +443,3 @@ Reference< XInterface > SAL_CALL Os2Clipboard_createInstance(
 {
 	return Reference < XInterface >( ( OWeakObject * ) new Os2Clipboard());
 }
-

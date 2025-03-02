@@ -1300,4 +1300,3 @@ void SvxAccessibleTextEditViewAdapter::SetForwarder( SvxEditViewForwarder& 		rFo
     mrViewForwarder = &rForwarder;
     mrTextForwarder = &rTextForwarder;
 }
-

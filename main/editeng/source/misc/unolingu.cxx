@@ -1369,5 +1369,3 @@ Locale SvxCreateLocale( LanguageType eLang )
 
 	return aLocale;
 }
-
-

@@ -750,5 +750,3 @@ void SAL_CALL ODBTableDecorator::setName( const ::rtl::OUString& /*aName*/ ) thr
 }
 
 // -----------------------------------------------------------------------------
-
-

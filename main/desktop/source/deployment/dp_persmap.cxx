@@ -328,4 +328,3 @@ t_string2string_map PersistentMap::getEntries() const
 }
 
 }
-

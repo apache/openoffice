@@ -255,5 +255,3 @@ namespace dbaui
         ClearFormats();
 	}
 }
-
-

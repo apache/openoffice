@@ -323,8 +323,3 @@ void DlgOrderCrit::BuildOrderPart()
 	m_xQueryComposer->setOrder(GetOrderList());
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-

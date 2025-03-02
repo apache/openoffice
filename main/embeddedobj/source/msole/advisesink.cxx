@@ -127,4 +127,3 @@ STDMETHODIMP_(void) OleWrapperAdviseSink::OnClose(void)
 
 	// TODO: sometimes it can be necessary to simulate OnShowWindow( False ) here
 }
-

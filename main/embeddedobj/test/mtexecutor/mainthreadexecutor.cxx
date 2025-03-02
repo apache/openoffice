@@ -132,4 +132,3 @@ void MainThreadExecutorRequest::doIt()
 	if ( m_xJob.is() )
 		m_xJob->execute( m_aValues );
 }
-

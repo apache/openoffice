@@ -342,4 +342,3 @@ STDMETHODIMP InprocEmbedProvider_Impl::LockServer( int fLock )
 }
 
 }; // namespace inprocserv
-

@@ -1778,5 +1778,3 @@ void SbaGridControl::DeleteSelectedRows()
 {
 	FmGridControl::DeleteSelectedRows();
 }
-
-

@@ -180,4 +180,3 @@ STDMETHODIMP_(void) OleWrapperAdviseSink::OnClose(void)
 }
 
 } // namespace inprocserv
-

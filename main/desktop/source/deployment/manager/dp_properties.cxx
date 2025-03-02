@@ -161,5 +161,3 @@ bool ExtensionProperties::isExtensionUpdate()
 }    
 
 } // namespace dp_manager
-
-

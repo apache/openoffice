@@ -49,7 +49,3 @@ OTableFieldInfo::~OTableFieldInfo()
 {
 	DBG_DTOR(OTableFieldInfo,NULL);
 }
-
-
-
-

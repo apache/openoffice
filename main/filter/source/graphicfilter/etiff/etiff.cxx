@@ -611,4 +611,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicExport( SvStream& rStream, Graphic& r
 {
 	return TIFFWriter().WriteTIFF( rGraphic, rStream, pFilterConfigItem );
 }
-

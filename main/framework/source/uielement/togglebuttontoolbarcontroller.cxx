@@ -315,4 +315,3 @@ IMPL_LINK( ToggleButtonToolbarController, MenuSelectHdl, Menu *, pMenu )
 }
 
 } // namespace
-

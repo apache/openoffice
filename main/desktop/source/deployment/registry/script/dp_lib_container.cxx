@@ -66,4 +66,3 @@ OUString LibraryContainer::get_libname(
 }
 }
 }
-

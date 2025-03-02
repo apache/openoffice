@@ -260,4 +260,3 @@ void SAL_CALL SalAquaPicker::implsetTitle( const rtl::OUString& aTitle ) throw( 
 
     DBG_PRINT_EXIT(CLASS_NAME, __func__);
 }
-

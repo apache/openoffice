@@ -257,4 +257,3 @@ int main( void)
 }
 
 #endif //TESTBMP
-

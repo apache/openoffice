@@ -497,4 +497,3 @@ HRESULT EmbedDocument_Impl::OLENotifyDeactivation()
 #if defined(_MSC_VER)
 #pragma warning(disable: 4505)
 #endif
-

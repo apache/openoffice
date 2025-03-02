@@ -649,4 +649,3 @@ void printVariant( VARIANT & _var)
 		return;
 
 }
-

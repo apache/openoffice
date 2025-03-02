@@ -316,5 +316,3 @@ void SilentCheckPrerequisitesCommandEnv::handle(
 
 
 } // namespace dp_manager
-
-

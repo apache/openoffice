@@ -183,6 +183,3 @@ void LZWDecompressor::DecompressSome()
 		nCode=pTable[nCode].nPrevCode;
 	}
 }
-
-
-

@@ -439,8 +439,3 @@ void OColumnTreeBox::FillListBox( const ODatabaseExport::TColumnVector& _rList)
 	}
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-

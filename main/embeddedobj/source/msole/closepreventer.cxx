@@ -45,4 +45,3 @@ void SAL_CALL OClosePreventer::disposing( const com::sun::star::lang::EventObjec
 	// just a disaster
 	OSL_ENSURE( sal_False, "The object can not be prevented from closing!\n" );
 }
-

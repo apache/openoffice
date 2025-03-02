@@ -187,4 +187,3 @@ void SAL_CALL ModuleAcceleratorConfiguration::dispose()
 }
 
 } // namespace framework
-

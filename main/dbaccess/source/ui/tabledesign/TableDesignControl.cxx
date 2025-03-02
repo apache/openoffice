@@ -232,6 +232,3 @@ EditBrowseBox::RowStatus OTableRowView::GetRowStatus(long nRow) const
 	else
 		return CLEAN;
 }
-
-
-

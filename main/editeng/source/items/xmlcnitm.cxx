@@ -243,4 +243,3 @@ const ::rtl::OUString& SvXMLAttrContainerItem::GetPrefix( sal_uInt16 i ) const
 {
 	return pImpl->GetPrefix( i );
 }
-

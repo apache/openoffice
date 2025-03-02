@@ -737,4 +737,3 @@ extern "C" sal_Bool GraphicImport(SvStream & rStream, Graphic & rGraphic, Filter
 	rStream.Seek( nOrigPos );
 	return ( bRetValue );
 }
-

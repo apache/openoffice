@@ -140,5 +140,3 @@ void SbaSbAttrDlg::PageCreated( sal_uInt16 nPageId, SfxTabPage& rTabPage )
 		break;
 	}
 }
-
-

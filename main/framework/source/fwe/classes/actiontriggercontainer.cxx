@@ -195,4 +195,3 @@ Sequence< sal_Int8 > SAL_CALL ActionTriggerContainer::getImplementationId() thro
 }
 
 }
-

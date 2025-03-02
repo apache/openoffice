@@ -591,4 +591,3 @@ TypeSelectionPageFactory OHTMLReader::getTypeSelectionPageFactory()
     return &OWizHTMLExtend::Create;
 }
 // -----------------------------------------------------------------------------
-
