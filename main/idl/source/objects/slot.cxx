@@ -1812,5 +1812,3 @@ void SvMetaSlot::WriteCSV( SvIdlDataBase& rBase, SvStream& rStrm )
 }
 
 #endif // IDL_COMPILER
-
-

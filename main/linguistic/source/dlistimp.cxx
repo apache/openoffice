@@ -937,4 +937,3 @@ static sal_Bool IsVers2OrNewer( const String& rFileURL, sal_uInt16& nLng, sal_Bo
 }
 
 ///////////////////////////////////////////////////////////////////////////
-

@@ -263,4 +263,3 @@ void Directory::readDirectory( const rtl::OUString& sFullpath )
 
 #endif
 }
-

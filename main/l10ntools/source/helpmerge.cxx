@@ -714,4 +714,3 @@ void HelpParser::Process( LangHashMap* aLangHM , const ByteString& sCur , ResDat
 
     }
 }
-

@@ -22,4 +22,3 @@
 
 
 #include "precompiled_l10ntools.hxx"
-

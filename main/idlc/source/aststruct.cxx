@@ -184,4 +184,3 @@ sal_Bool AstStruct::dump(RegistryKey& rKey)
 
 	return sal_True;
 }	
-

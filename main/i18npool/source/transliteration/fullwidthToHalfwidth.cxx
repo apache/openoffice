@@ -148,4 +148,3 @@ fullwidthToHalfwidthLikeASC::transliterateChar2Char( sal_Unicode inChar )
 }
 
 } } } }
-

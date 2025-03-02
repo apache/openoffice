@@ -281,4 +281,3 @@ Sequence< OUString > SAL_CALL cclass_Unicode::getSupportedServiceNames() throw( 
 }
 
 } } } }
-

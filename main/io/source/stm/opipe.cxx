@@ -484,5 +484,3 @@ Sequence<OUString> OPipeImpl_getSupportedServiceNames(void)
 	return aRet;
 }
 }
-
-

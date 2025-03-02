@@ -169,4 +169,3 @@ Collator_Unicode::getSupportedServiceNames() throw( RuntimeException )
 }
 
 } } } }
-

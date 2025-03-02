@@ -248,4 +248,3 @@ namespace stoc_connector {
 		_listeners.erase(aListener);
 	}
 }
-
