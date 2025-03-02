@@ -1154,4 +1154,3 @@ IMPL_LINK( SvxSuperContourDlg, MiscHdl, void*, EMPTYARG )
 
     return 0L;
 }
-

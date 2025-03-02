@@ -2203,4 +2203,3 @@ Window *  ScModule::Find1RefWindow( Window *pWndAncestor )
 
     return NULL;
 }
-

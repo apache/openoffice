@@ -420,4 +420,3 @@ void PresenterSlidePreview::ThrowIfDisposed (void)
 
 
 } } // end of namespace ::sd::presenter
-

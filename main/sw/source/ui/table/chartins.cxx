@@ -275,7 +275,3 @@ void __EXPORT AutoEdit::KeyInput( const KeyEvent& rEvt )
 	if( nCode != KEY_SPACE )
 		Edit::KeyInput( rEvt );
 }
-
-
-
-

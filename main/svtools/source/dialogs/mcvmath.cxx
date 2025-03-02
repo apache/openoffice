@@ -298,4 +298,3 @@ void ImpPolarToCart( const Fix& rR, const sal_uInt16 Phi, short& rX, short& rY )
 	fc.GetImag().MultBig( rR );
 	rY = sal::static_int_cast< short >(long( fc.GetImag() ));
 }
-

@@ -636,4 +636,3 @@ TypeDescriptionEnumerationImpl::queryNext()
 }
 
 } // namespace stoc_rdbtdp
-

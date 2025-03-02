@@ -463,5 +463,3 @@ SfxMapUnit SfxControllerItem::GetCoreMetric() const
 #ifdef _MSC_VER
 #pragma optimize("g",off)
 #endif
-
-

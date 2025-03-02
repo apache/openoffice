@@ -1736,4 +1736,3 @@ SCROW ScTable::VisibleDataCellIterator::getRow() const
 {
     return mnCurRow;
 }
-

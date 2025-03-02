@@ -1310,6 +1310,3 @@ sal_Bool SAL_CALL ScLabelRangesObj::hasElements() throw(uno::RuntimeException)
 }
 
 //------------------------------------------------------------------------
-
-
-

@@ -2268,5 +2268,3 @@ SdrObject* EnhancedCustomShape2d::CreateLineGeometry()
 {
 	return CreateObject( sal_True );
 }
-
-

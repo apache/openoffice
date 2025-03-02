@@ -637,4 +637,3 @@ long SvResizeWindow::Notify( NotifyEvent& rEvt )
 
     return Window::Notify(rEvt);
 }
-

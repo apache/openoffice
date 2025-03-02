@@ -99,6 +99,3 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoDashTable_createInstance( SdrMo
 {
 	return *new SvxUnoDashTable(pModel);
 }
-
-
-

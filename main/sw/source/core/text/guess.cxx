@@ -562,4 +562,3 @@ sal_Bool SwTxtGuess::AlternativeSpelling( const SwTxtFormatInfo &rInf,
 						nPos - nBreakStart, rInf.GetHyphValues() );
 	return xHyphWord.is() && xHyphWord->isAlternativeSpelling();
 }
-

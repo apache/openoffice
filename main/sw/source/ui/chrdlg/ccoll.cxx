@@ -226,7 +226,3 @@ const CommandStruct* SwCondCollItem::GetCmds()
 {
 	return aCmds;
 }
-
-
-
-

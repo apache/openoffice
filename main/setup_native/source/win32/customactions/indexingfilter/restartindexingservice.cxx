@@ -201,4 +201,3 @@ extern "C" UINT __stdcall RestartIndexingService(MSIHANDLE)
     }
     return ERROR_SUCCESS;
 }
-

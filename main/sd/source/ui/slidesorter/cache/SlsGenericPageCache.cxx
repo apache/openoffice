@@ -370,6 +370,3 @@ void GenericPageCache::Resume (void)
 
 
 } } } // end of namespace ::sd::slidesorter::cache
-
-
-

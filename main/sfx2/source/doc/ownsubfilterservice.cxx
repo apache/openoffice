@@ -158,4 +158,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OwnSubFilterService::getSupportedServi
 }
 
 } // namespace sfx2
-

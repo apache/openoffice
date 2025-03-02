@@ -2792,4 +2792,3 @@ void SwEditShell::SetAutoFmtFlags(SvxSwAutoFmtFlags * pFlags)
 	pEditFlags->cByInputBullet		= pFlags->cByInputBullet;
 	pEditFlags->aByInputBulletFont	= pFlags->aByInputBulletFont;
 }
-

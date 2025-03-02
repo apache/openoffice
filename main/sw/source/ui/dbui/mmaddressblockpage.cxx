@@ -1839,4 +1839,3 @@ String AddressMultiLineEdit::GetAddress()
     }
     return sRet;
 }
-

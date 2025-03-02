@@ -104,5 +104,3 @@ IMPL_LINK( SwSyncBtnDlg, BtnHdl, PushButton *, EMPTYARG )
 	SfxViewFrame::Current()->GetDispatcher()->Execute(FN_UPDATE_ALL_LINKS, SFX_CALLMODE_ASYNCHRON);
 	return 0;
 }
-
-

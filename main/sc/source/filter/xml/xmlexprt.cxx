@@ -4645,4 +4645,3 @@ void ScXMLExport::DisposingModel()
 	pDoc = NULL;
 	xCurrentTable = 0;
 }
-

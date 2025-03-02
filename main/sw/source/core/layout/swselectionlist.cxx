@@ -87,4 +87,3 @@ bool SwSelectionList::checkContext( const SwFrm* pCheck )
         pContext = pCheck;
     return pContext == pCheck;
 }
-

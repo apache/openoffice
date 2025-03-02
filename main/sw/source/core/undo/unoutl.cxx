@@ -54,4 +54,3 @@ void SwUndoOutlineLeftRight::RepeatImpl(::sw::RepeatContext & rContext)
 {
     rContext.GetDoc().OutlineUpDown(rContext.GetRepeatPaM(), nOffset);
 }
-

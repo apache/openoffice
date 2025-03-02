@@ -169,4 +169,3 @@ SfxWorkWindow* SfxApplication::GetWorkWindow_Impl(const SfxViewFrame *pFrame) co
     else
         return NULL;
 }
-

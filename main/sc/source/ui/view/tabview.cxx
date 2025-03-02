@@ -2526,6 +2526,3 @@ void ScTabView::EnableRefInput(sal_Bool bFlag)
 	if(pRowBar[SC_SPLIT_TOP]!=NULL)
 		pRowBar[SC_SPLIT_TOP]->EnableInput(bFlag,sal_False);
 }
-
-
-

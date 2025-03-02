@@ -66,4 +66,3 @@ ScUnoRefUndoHint::ScUnoRefUndoHint( const ScUnoRefEntry& rRefEntry ) :
 ScUnoRefUndoHint::~ScUnoRefUndoHint()
 {
 }
-

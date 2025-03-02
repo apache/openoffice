@@ -298,4 +298,3 @@ IMPL_LINK( DocumentInserter, DialogClosedHdl, sfx2::FileDialogHelper*, EMPTYARG 
 } // namespace sfx2
 
 // =======================================================================
-

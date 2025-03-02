@@ -384,7 +384,3 @@ void ScDrawView::SetMarkedOriginalSize()
 #ifdef _MSC_VER
 #pragma optimize ( "", on )
 #endif
-
-
-
-

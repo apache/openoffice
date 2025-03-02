@@ -527,5 +527,3 @@ IMPL_LINK( ScSpecialFilterDlg, FilterAreaModHdl, formula::RefEdit*, pEd )
 
 	return 0;
 }
-
-

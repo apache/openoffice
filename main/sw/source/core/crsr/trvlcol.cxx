@@ -124,6 +124,3 @@ sal_Bool SwCrsrShell::MoveColumn( SwWhichColumn fnWhichCol, SwPosColumn fnPosCol
 	}
 	return bRet;
 }
-
-
-

@@ -101,6 +101,3 @@ IMPL_LINK_INLINE_END( ScShowTabDlg, DblClkHdl, void *, EMPTYARG )
 __EXPORT ScShowTabDlg::~ScShowTabDlg()
 {
 }
-
-
-

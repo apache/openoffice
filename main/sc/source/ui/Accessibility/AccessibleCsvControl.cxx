@@ -1673,4 +1673,3 @@ Rectangle ScAccessibleCsvCell::implGetBoundingBox() const
 
 
 // ============================================================================
-

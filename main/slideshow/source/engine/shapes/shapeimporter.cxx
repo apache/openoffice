@@ -662,4 +662,3 @@ ShapeImporter::ShapeImporter( uno::Reference<drawing::XDrawPage> const&         
 
 } // namespace internal
 } // namespace presentation
-

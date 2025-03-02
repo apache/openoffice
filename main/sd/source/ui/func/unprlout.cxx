@@ -110,6 +110,3 @@ String SdPresentationLayoutUndoAction::GetComment() const
 {
 	return aComment;
 }
-
-
-

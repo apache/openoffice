@@ -112,5 +112,3 @@ sal_uInt8 SfxTemplateItem::GetFlagCount() const
 {
 	return sizeof(sal_uInt16) * 8;
 }
-
-

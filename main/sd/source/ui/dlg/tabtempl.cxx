@@ -214,6 +214,3 @@ const SfxItemSet* SdTabTemplateDlg::GetRefreshedSet()
 
 	return pRet;
 }
-
-
-

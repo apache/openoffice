@@ -1707,5 +1707,3 @@ const SfxPoolItem* SfxItemPool::LoadItem( SvStream &rStream, FASTBOOL bDirect,
 
 	return pItem;
 }
-
-

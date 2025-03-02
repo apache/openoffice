@@ -348,4 +348,3 @@ SwUndoCpyDoc::SwUndoCpyDoc( const SwPaM& rPam )
 	: SwUndoInserts( UNDO_COPY, rPam )
 {
 }
-

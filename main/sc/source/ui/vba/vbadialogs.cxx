@@ -59,6 +59,3 @@ ScVbaDialogs::getServiceNames()
 	}
 	return aServiceNames;
 }
-
-
-

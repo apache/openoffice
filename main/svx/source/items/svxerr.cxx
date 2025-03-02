@@ -47,4 +47,3 @@ void SvxErrorHandler::Get()
 	if ( !pHandler )
 		new SvxErrorHandler;
 }
-

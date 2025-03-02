@@ -100,5 +100,3 @@ sal_Int8 ConditionEdit::ExecuteDrop( const ExecuteDropEvent& rEvt )
     }
 	return nRet;
 }
-
-

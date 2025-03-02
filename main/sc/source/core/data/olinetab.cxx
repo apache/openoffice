@@ -798,5 +798,3 @@ void ScSubOutlineIterator::DeleteLast()
     --nSubEntry;
     pArray->aCollections[nSubLevel].AtFree(nSubEntry);
 }
-
-

@@ -563,6 +563,3 @@ sal_Bool lcl_PutScaleItem2( sal_uInt16               nWhich,
 
     return bDataChanged;
 }
-
-
-

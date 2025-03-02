@@ -300,5 +300,3 @@ TEST_F(LayerManagerTest, testRefCounting)
 
 
 } // namespace
-
-

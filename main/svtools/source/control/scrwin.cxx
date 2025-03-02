@@ -564,5 +564,3 @@ void ScrollableWindow::ScrollPages( long nPagesX, sal_uLong nOverlapX,
 	Scroll( nPagesX * aOutSz.Width() + (nPagesX>0 ? 1 : -1) * nOverlapX,
 			nPagesY * aOutSz.Height() + (nPagesY>0 ? 1 : -1) * nOverlapY );
 }
-
-

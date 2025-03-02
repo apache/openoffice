@@ -70,4 +70,3 @@ void SwUndoTOXChange::RepeatImpl(::sw::RepeatContext &)
 {
     DoImpl();
 }
-

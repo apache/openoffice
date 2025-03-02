@@ -1174,4 +1174,3 @@ void SAL_CALL SmModel::setParent( const uno::Reference< uno::XInterface >& xPare
             GetObjectShell()->OnDocumentPrinterChanged( pDoc->GetDocumentPrinter() );
     }
 }
-

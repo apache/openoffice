@@ -223,5 +223,3 @@ void FileControl::ResetButtonText()
 	maButtonText = XubString( SvtResId( STR_FILECTRL_BUTTONTEXT ) );
 	Resize();
 }
-
-

@@ -436,6 +436,3 @@ void ScGridWindow::DrawMarkDropObj( SdrObject* pObj )
 	if (pDrView)
 		pDrView->MarkDropObj(pObj);
 }
-
-
-

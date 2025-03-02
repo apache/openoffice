@@ -92,4 +92,3 @@ sal_Bool FStatHelper::IsFolder( const UniString& rURL )
 	}
 	return bExist;
 }
-

@@ -829,6 +829,3 @@ IMPL_LINK( ScTpUserLists, EdEntriesModHdl, MultiLineEdit*, pEd )
 
 	return 0;
 }
-
-
-

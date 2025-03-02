@@ -5491,4 +5491,3 @@ void SwHTMLParser::AddMetaUserDefined( ::rtl::OUString const & i_rMetaName )
         (*pName) = i_rMetaName;
     }
 }
-

@@ -440,4 +440,3 @@ double SfxHTMLParser::GetTableDataOptionsValNum( sal_uInt32& nNumForm,
 	}
 	return fVal;
 }
-

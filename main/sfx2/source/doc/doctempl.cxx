@@ -2732,4 +2732,3 @@ sal_Bool getTextProperty_Impl( Content& rContent,
 
     return bGotProperty;
 }
-

@@ -360,6 +360,3 @@ sal_uInt16	ScInsertContentsDlg::GetFormulaCmdBits() const
 	// Bits fuer Checkboxen ausblenden
 	return ScInsertContentsDlg::nPreviousFormulaChecks;
 }
-
-
-

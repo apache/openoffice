@@ -1070,6 +1070,3 @@ void SwDoc::Unchain( SwFrmFmt &rFmt )
         GetIDocumentUndoRedo().EndUndo( UNDO_UNCHAIN, NULL );
     }
 }
-
-
-

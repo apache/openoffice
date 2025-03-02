@@ -672,7 +672,3 @@ sal_Bool ScDBDocFunc::DoImport( SCTAB nTab, const ScImportParam& rParam,
 
 	return bSuccess;
 }
-
-
-
-

@@ -341,5 +341,3 @@ IMPL_LINK( SdStartPresentationDlg, ChangePauseHdl, void *, EMPTYARG )
 	aCbxAutoLogo.Enable( aRbtAuto.IsChecked() && ( aTmfPause.GetTime().GetMSFromTime() > 0 ) );
 	return( 0L );
 }
-
-

@@ -960,4 +960,3 @@ sal_Bool SdrCreateView::SetStyleSheet(SfxStyleSheet* pStyleSheet, sal_Bool bDont
 		return SdrDragView::SetStyleSheet(pStyleSheet,bDontRemoveHardAttr);
 	}
 }
-

@@ -947,5 +947,3 @@ void SwSrcView::Load(SwDocShell* pDocShell)
 	aEditWin.GetTextEngine()->ResetUndo();
 	aEditWin.GetOutWin()->GrabFocus();
 }
-
-

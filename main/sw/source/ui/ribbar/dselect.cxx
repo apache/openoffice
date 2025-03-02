@@ -94,5 +94,3 @@ void DrawSelection::Activate(const sal_uInt16 nSlotId)
 
     m_pSh->GetView().GetViewFrame()->GetBindings().Invalidate(SID_INSERT_DRAW);
 }
-
-

@@ -171,4 +171,3 @@ void XMLTableMasterPageExport::exportMasterPageContent(
 		exportHeaderFooter( xFooterLeft, XML_FOOTER_LEFT, bLeftFooter );
 	}
 }
-

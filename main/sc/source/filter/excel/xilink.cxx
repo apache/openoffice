@@ -800,4 +800,3 @@ const String& XclImpLinkManager::GetMacroName( sal_uInt16 nExtSheet, sal_uInt16 
 }
 
 // ============================================================================
-

@@ -440,4 +440,3 @@ void SdrTableObj::ImportAsRTF( SvStream& rStream, SdrTableObj& rObj )
 }
 
 } }
-

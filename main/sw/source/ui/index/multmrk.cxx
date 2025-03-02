@@ -89,6 +89,3 @@ void SwMultiTOXMarkDlg::Apply()
 
 
 SwMultiTOXMarkDlg::~SwMultiTOXMarkDlg() {}
-
-
-

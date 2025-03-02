@@ -941,5 +941,3 @@ IMPL_LINK( SwTextShell, RedlinePrevHdl, AbstractSvxPostItDialog *, pBtn )
 
 	return 0;
 }
-
-

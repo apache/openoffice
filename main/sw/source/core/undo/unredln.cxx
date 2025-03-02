@@ -531,4 +531,3 @@ void SwUndoCompDoc::RedoImpl(::sw::UndoRedoContext & rContext)
 
     SetPaM(*pPam, true);
 }
-

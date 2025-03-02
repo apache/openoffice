@@ -182,5 +182,3 @@ SdrObject* FuConstUnoControl::CreateDefaultObject(const sal_uInt16 /* nID */, co
 
 	return pObj;
 }
-
-

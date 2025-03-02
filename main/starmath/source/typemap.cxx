@@ -141,6 +141,3 @@
 
 #define SFX_TYPEMAP
 #include "smslots.hxx"
-
-
-

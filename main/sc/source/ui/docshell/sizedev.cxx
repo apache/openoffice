@@ -70,4 +70,3 @@ ScSizeDeviceProvider::~ScSizeDeviceProvider()
 	else
 		pDevice->SetMapMode( aOldMapMode );
 }
-

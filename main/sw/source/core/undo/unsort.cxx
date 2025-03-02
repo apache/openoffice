@@ -272,4 +272,3 @@ void SwUndoSort::Insert( sal_uLong nOrgPos, sal_uLong nNewPos)
 	SwSortUndoElement* pEle = new SwSortUndoElement(nOrgPos, nNewPos);
 	aSortList.C40_INSERT( SwSortUndoElement, pEle, aSortList.Count() );
 }
-

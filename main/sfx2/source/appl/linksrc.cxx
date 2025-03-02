@@ -428,4 +428,3 @@ void SvLinkSource::Edit( Window *, SvBaseLink *, const Link& )
 }
 
 }
-

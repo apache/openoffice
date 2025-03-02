@@ -148,4 +148,3 @@ bool SwTableLine::hasSoftPageBreak() const
     }
     return false;
 }
-

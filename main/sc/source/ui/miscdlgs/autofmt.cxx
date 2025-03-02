@@ -972,4 +972,3 @@ void ScAutoFmtPreview::Paint( const Rectangle& rRect )
 {
 	DoPaint( rRect );
 }
-

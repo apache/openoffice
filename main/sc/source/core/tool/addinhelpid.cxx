@@ -218,4 +218,3 @@ rtl::OString ScUnoAddInHelpIdGenerator::GetHelpId( const ::rtl::OUString& rFuncN
 
 
 // ============================================================================
-

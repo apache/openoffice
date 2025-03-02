@@ -230,4 +230,3 @@ uno::Any SAL_CALL ScDocOptionsObj::getPropertyValue( const rtl::OUString& aPrope
 
 	return aRet;
 }
-

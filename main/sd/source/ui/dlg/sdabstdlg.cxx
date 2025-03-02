@@ -46,5 +46,3 @@ SdAbstractDialogFactory* SdAbstractDialogFactory::Create()
 		return fp();
 	return 0;
 }
-
-

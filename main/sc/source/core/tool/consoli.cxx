@@ -847,8 +847,3 @@ void ScConsData::OutputToDocument( ScDocument* pDestDoc, SCCOL nCol, SCROW nRow,
 		}
 	}
 }
-
-
-
-
-

@@ -2000,6 +2000,3 @@ void SwTextFlowPage::DisablePageBreak()
 	aPageNoFT      .Disable();
 	aPageNoNF      .Disable();
 }
-
-
-

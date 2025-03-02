@@ -137,5 +137,3 @@ void SwTextShell::ExecGlossary(SfxRequest &rReq)
 			pList->Update();
 	}
 }
-
-

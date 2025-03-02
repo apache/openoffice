@@ -148,5 +148,3 @@ IMPL_LINK( ScAttrDlg, OkHandler, void*, EMPTYARG )
 
 	return 0;
 }
-
-

@@ -3049,4 +3049,3 @@ void ScXMLImport::ExtractFormulaNamespaceGrammar(
     rFormulaNmsp = OUString();  // remove any namespace string
     reGrammar = eDefaultGrammar;
 }
-

@@ -2156,5 +2156,3 @@ uno::Sequence<rtl::OUString> SAL_CALL ScStyleObj::getSupportedServiceNames()
 }
 
 //------------------------------------------------------------------------
-
-

@@ -80,9 +80,3 @@ sal_uInt8 SwInsertAbstractDlg::GetPara() const
 {
 	return (sal_uInt8) aParaNF.GetValue();
 }
-
-
-
-
-
-

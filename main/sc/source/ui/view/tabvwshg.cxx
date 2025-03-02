@@ -130,7 +130,3 @@ void ScTabViewShell::InsertURLButton( const String& rName, const String& rURL,
 	//	nicht markieren wenn Ole
 	pDrView->InsertObjectSafe( pObj, *pDrView->GetSdrPageView() );
 }
-
-
-
-

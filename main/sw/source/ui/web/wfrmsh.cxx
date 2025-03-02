@@ -82,10 +82,3 @@ SwWebFrameShell::SwWebFrameShell(SwView &_rView) :
 SwWebFrameShell::~SwWebFrameShell()
 {
 }
-
-
-
-
-
-
-

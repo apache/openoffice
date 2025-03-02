@@ -222,5 +222,3 @@ void SwInputFieldList::RemoveUnselectedFlds()
 	delete pSrtLst;
 	pSrtLst = pNewLst;
 }
-
-

@@ -1038,4 +1038,3 @@ void ScOutlineWindow::KeyInput( const KeyEvent& rKEvt )
 
 
 // ============================================================================
-

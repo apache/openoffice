@@ -2368,7 +2368,3 @@ void SAL_CALL ScTabViewObj::insertTransferable( const ::com::sun::star::uno::Ref
 }
 
 //------------------------------------------------------------------------
-
-
-
-

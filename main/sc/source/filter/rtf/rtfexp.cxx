@@ -297,5 +297,3 @@ void ScRTFExport::WriteCell( SCTAB nTab, SCROW nRow, SCCOL nCol )
 	if ( bResetAttr )
 		rStrm << OOO_STRING_SVTOOLS_RTF_PLAIN;
 }
-
-

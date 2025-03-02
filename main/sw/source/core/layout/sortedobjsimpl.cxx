@@ -306,4 +306,3 @@ sal_uInt32 SwSortedObjsImpl::ListPosOf( const SwAnchoredObject& _rAnchoredObj ) 
 
     return nRetLstPos;
 }
-

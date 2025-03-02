@@ -3287,5 +3287,3 @@ void CheckTable( const SwTable& rTbl )
 	}
 }
 #endif
-
-

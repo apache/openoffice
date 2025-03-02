@@ -701,4 +701,3 @@ String SfxMacro::GenerateSource() const
 
 	return aSource;
 }
-

@@ -783,4 +783,3 @@ IMPL_LINK( AnnotationTag, ClosePopupHdl, void *, EMPTYARG )
 }
 
 } // end of namespace sd
-

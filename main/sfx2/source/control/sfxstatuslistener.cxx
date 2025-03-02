@@ -283,4 +283,3 @@ throw( RuntimeException )
     StateChanged( m_nSlotID, eState, pItem );
     delete pItem;
 }
-

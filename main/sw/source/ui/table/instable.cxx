@@ -246,4 +246,3 @@ IMPL_LINK(SwInsTableDlg, ModifyRepeatHeaderNF_Hdl, void*, EMPTYARG)
 	nEnteredValRepeatHeaderNF = aRepeatHeaderNF.GetValue();
 	return 0;
 }
-

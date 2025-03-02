@@ -1582,4 +1582,3 @@ long ScDPGroupTableData::GetSourceDim( long nDim )
 	return ScDPItemData::Compare( *GetMemberById(nDim,  nDataId1),*GetMemberById(nDim,  nDataId2) );
 }
 // -----------------------------------------------------------------------
-

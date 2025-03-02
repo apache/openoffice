@@ -496,5 +496,3 @@ sal_uInt16 SvxChartRegressItem::GetVersion (sal_uInt16 nFileFormatVersion) const
 			   ? USHRT_MAX
 			   : 0;
 }
-
-

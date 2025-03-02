@@ -737,5 +737,3 @@ void ScAppCfg::OptionsChanged()
 	aSortListItem.SetModified();
 	aMiscItem.SetModified();
 }
-
-

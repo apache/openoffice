@@ -2949,5 +2949,3 @@ sal_Bool SwXGroupShape::hasElements(  ) throw(uno::RuntimeException)
         throw uno::RuntimeException();
     return xAcc->hasElements();
 }
-
-

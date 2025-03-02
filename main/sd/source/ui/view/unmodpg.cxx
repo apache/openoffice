@@ -240,4 +240,3 @@ String RenameLayoutTemplateUndoAction::GetComment() const
 {
 	return 	maComment;
 }
-

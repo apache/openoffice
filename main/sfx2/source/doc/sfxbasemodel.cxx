@@ -4514,4 +4514,3 @@ void SfxModelSubComponent::disposing()
 {
     // nothing to do here
 }
-

@@ -283,7 +283,3 @@ bool ScTabViewShell::ExecuteRetypePassDlg(ScPasswordHash eDesiredHash)
     pDlg->WriteNewDataToDocument(*pDoc);
     return true;
 }
-
-
-
-

@@ -832,5 +832,3 @@ void FuInsertChart::Deactivate()
 {
 	FuPoor::Deactivate();
 }
-
-

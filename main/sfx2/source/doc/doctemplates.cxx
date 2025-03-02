@@ -2916,5 +2916,3 @@ void SfxURLRelocator_Impl::makeAbsoluteURL( rtl::OUString & rURL )
         rURL = mxOfficeInstDirs->makeAbsoluteURL( rURL );
     }
 }
-
-

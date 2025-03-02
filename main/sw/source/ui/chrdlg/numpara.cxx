@@ -358,5 +358,3 @@ IMPL_LINK( SwParagraphNumTabPage, StyleHdl_Impl, ListBox*, pBox )
 
 	return 0;
 }
-
-

@@ -157,5 +157,3 @@ void RescheduleProgress( SwDocShell *pDocShell )
 			pProgress->pProgress->Reschedule();
 	}
 }
-
-

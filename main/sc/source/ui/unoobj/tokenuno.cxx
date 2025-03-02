@@ -460,4 +460,3 @@ ScFormulaOpCodeMapperObj::ScFormulaOpCodeMapperObj(::std::auto_ptr<formula::Form
 }
 
 // ============================================================================
-

@@ -1942,4 +1942,3 @@ void	SwAuthMarkModalDlg::Apply()
 {
 	aDlg.InsertHdl(0);
 }
-

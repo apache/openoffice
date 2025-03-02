@@ -706,5 +706,3 @@ void SvFileObject::SendStateChg_Impl( sfx2::LinkManager::LinkState nState )
 		bStateChangeCalled = sal_True;
 	}
 }
-
-

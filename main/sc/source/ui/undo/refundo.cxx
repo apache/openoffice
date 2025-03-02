@@ -204,7 +204,3 @@ void ScRefUndoData::DoUndo( ScDocument* pDoc, sal_Bool bUndoRefFirst )
     if ( pUnoRefs )
         pUnoRefs->Undo( pDoc );
 }
-
-
-
-

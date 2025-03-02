@@ -45,4 +45,3 @@ QueryTemplateBox::QueryTemplateBox( Window* pParent, const String& rMessage ) :
 }
 
 } // end of namespace sfx2
-

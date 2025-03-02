@@ -116,4 +116,3 @@ namespace sw { namespace mark
         return pAnnotationFmtFld;
     }
 }}
-

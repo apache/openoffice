@@ -155,4 +155,3 @@ void SAL_CALL osl_detail_ObjectRegistry_revokeObject(
 }
 
 } // extern "C"
-

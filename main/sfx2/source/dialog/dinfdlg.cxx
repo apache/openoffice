@@ -2483,4 +2483,3 @@ SfxTabPage* SfxCustomPropertiesPage::Create( Window* pParent, const SfxItemSet& 
 {
     return new SfxCustomPropertiesPage( pParent, rItemSet );
 }
-

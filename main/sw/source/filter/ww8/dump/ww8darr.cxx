@@ -536,7 +536,3 @@ SprmDumpInfo& WW8GetSprmDumpInfo( sal_uInt16 nId )
 	}
 	return *(SprmDumpInfo*) pFound;
 }
-
-
-
-

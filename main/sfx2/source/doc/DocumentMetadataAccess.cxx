@@ -1425,4 +1425,3 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 }
 
 } // namespace sfx2
-

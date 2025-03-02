@@ -110,5 +110,3 @@ void	SwEventListenerContainer::Disposing()
 	}
 	pListenerArr->DeleteAndDestroy(0, pListenerArr->Count());
 }
-
-

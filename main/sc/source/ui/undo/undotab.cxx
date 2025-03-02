@@ -1709,4 +1709,3 @@ String ScUndoLayoutRTL::GetComment() const
 //UNUSED2009-05 {
 //UNUSED2009-05     return ScGlobal::GetRscString( STR_UNDO_TAB_R1C1 );
 //UNUSED2009-05 }
-

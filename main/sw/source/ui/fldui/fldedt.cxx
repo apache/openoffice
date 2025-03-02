@@ -404,5 +404,3 @@ IMPL_LINK( SwFldEditDlg, AddressHdl, PushButton *, EMPTYARG )
     delete pDlg;
 	return 0;
 }
-
-

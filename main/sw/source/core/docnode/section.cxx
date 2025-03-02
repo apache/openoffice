@@ -1806,6 +1806,3 @@ sal_Bool SwIntrnlSectRefLink::IsInRange( sal_uLong nSttNd, sal_uLong nEndNd,
 			nSttNd < pSttNd->GetIndex() &&
 			pSttNd->EndOfSectionIndex() < nEndNd;
 }
-
-
-

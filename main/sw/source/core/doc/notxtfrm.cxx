@@ -1241,6 +1241,3 @@ sal_Bool SwNoTxtFrm::HasAnimation() const
 	const SwGrfNode* pGrfNd = GetNode()->GetGrfNode();
 	return pGrfNd && pGrfNd->IsAnimated();
 }
-
-
-

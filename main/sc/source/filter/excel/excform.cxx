@@ -2033,4 +2033,3 @@ void ExcelToSc::ReadExtensions( const ExtensionTypeVec& rExtensions,
         }
     }
 }
-

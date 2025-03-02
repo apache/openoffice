@@ -368,4 +368,3 @@ void RegistrationContextInformation::ExtractOpenOfficeExecNameFromPath()
     assert(idx != std::wstring::npos); // assert valid path
 	m_OOExecName = m_OOExecPath.substr(idx + 1);
 }
-

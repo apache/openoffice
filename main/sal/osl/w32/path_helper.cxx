@@ -110,5 +110,3 @@ sal_Int32 osl_systemPathIsLogicalDrivePattern(/*in*/ const rtl_uString* pustrPat
     }   
     return 0;
 }
-
-

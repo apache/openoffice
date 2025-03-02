@@ -1340,4 +1340,3 @@ Graphic SvxGetGraphicForShape( SdrObject& rShape, bool bVector )
 	}
 	return aGraphic;
 }
-

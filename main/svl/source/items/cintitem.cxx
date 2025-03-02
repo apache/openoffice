@@ -555,4 +555,3 @@ SfxFieldUnit CntUInt32Item::GetUnit() const
 	DBG_CHKTHIS(CntUInt32Item, 0);
 	return SFX_FUNIT_NONE;
 }
-

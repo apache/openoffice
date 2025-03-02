@@ -359,4 +359,3 @@ SfxItemSet SdModifyFieldDlg::GetItemSet()
 
 	return aOutput;
 }
-

@@ -50,5 +50,3 @@ ScVbaAxisTitle::getServiceNames()
 	}
 	return aServiceNames;
 }
-
-

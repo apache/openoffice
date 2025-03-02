@@ -73,6 +73,3 @@ sal_Bool ScGroupDlg::GetColsChecked() const
 __EXPORT ScGroupDlg::~ScGroupDlg()
 {
 }
-
-
-

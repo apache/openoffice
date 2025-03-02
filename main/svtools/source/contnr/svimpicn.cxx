@@ -4153,5 +4153,3 @@ void SvImpIconView::CancelUserEvent()
 		nCurUserEvent = 0;
 	}
 }
-
-

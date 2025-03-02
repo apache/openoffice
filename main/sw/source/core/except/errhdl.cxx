@@ -129,4 +129,3 @@ void AssertFail( sal_uInt16 nErrorId, const sal_Char* pFileName, sal_uInt16 nLin
 }
 
 #endif // DBG_UTIL
-

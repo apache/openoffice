@@ -977,4 +977,3 @@ boost::shared_ptr<Activity> createDrawingLayerAnimActivity(
 
 } // namespace internal
 } // namespace presentation
-

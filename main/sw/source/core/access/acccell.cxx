@@ -559,4 +559,3 @@ void SwAccessibleCell::deselectAccessibleChild(
 {
     aSelectionHelper.deselectAccessibleChild(nSelectedChildIndex);
 }
-

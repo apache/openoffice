@@ -1080,4 +1080,3 @@ void ScCellTextStyleContext::FillPropertySet( const uno::Reference<beans::XPrope
         // formatted text in page headers/footers can be ignored
     }
 }
-

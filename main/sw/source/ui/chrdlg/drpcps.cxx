@@ -884,7 +884,3 @@ void SwDropCapsPage::FillSet( SfxItemSet &rSet )
 		}
 	}
 }
-
-
-
-

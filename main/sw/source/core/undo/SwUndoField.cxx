@@ -155,4 +155,3 @@ void SwUndoFieldFromAPI::RepeatImpl(::sw::RepeatContext &)
 {
     DoImpl();
 }
-

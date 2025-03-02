@@ -1190,4 +1190,3 @@ UnoViewSharedPtr createSlideView( uno::Reference< presentation::XSlideShowView> 
 
 } // namespace internal
 } // namespace slideshow
-

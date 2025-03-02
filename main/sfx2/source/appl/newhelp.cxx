@@ -3485,4 +3485,3 @@ void SfxAddHelpBookmarkDialog_Impl::SetTitle( const String& rTitle )
 	aTitleED.SetText( rTitle );
 	aTitleED.SetSelection( Selection( 0, rTitle.Len() ) );
 }
-

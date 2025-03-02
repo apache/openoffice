@@ -2323,4 +2323,3 @@ void SfxViewShell::AddRemoveClipboardListener( const uno::Reference < datatransf
     {
     }
 }
-

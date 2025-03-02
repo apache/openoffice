@@ -162,4 +162,3 @@ void ScSheetEvents::SetScript(sal_Int32 nEvent, const rtl::OUString* pNew)
     else
         mpScriptNames[nEvent] = NULL;
 }
-

@@ -396,4 +396,3 @@ SmToolBoxWrapper::SmToolBoxWrapper(Window *pParentWindow,
 	pWindow = new SmToolBoxWindow(pBindings, this, pParentWindow);
     ((SfxFloatingWindow *)pWindow)->Initialize(pInfo);
 }
-

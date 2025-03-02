@@ -146,4 +146,3 @@ void	SwInsertAuthMarkWrapper::ReInitDlg(SwWrtShell& rWrtShell)
 {
     pAbstDlg->ReInitDlg(rWrtShell);
 }
-

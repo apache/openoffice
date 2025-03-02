@@ -451,4 +451,3 @@ sal_Bool InformationDialog::execute()
 	endExecute( sal_True );
 	return mbStatus;
 }
-

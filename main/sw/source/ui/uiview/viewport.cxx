@@ -1380,5 +1380,3 @@ sal_Bool SwView::HandleWheelCommands( const CommandEvent& rCEvt )
 	}
 	return bOk;
 }
-
-

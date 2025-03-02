@@ -97,4 +97,3 @@ void SAL_CALL GenericConfigurationChangeRequest::setName (const OUString& rsName
 }
 
 } } // end of namespace sd::framework
-

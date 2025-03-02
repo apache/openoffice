@@ -63,5 +63,3 @@ uno::Reference< uno::XInterface > SAL_CALL SmDocument_createInstance(
 
 	return uno::Reference< uno::XInterface >();
 }
-
-

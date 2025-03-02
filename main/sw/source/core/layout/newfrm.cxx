@@ -681,4 +681,3 @@ void SwRootFrm::AllInvalidateSmartTagsOrSpelling(sal_Bool bSmartTags) const
 		pPage = (SwPageFrm*)pPage->GetNext();
 	}	//swmod 080218
 }
-

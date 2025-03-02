@@ -414,5 +414,3 @@ sal_Bool SfxStringListItem::QueryValue( com::sun::star::uno::Any& rVal,sal_uInt8
     rVal = ::com::sun::star::uno::makeAny( aStringList );
 	return sal_True;
 }
-
-

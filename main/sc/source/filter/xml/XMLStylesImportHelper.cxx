@@ -580,4 +580,3 @@ void ScMyStylesImportHelper::SetStylesToRanges()
 	aCellStyles.clear();
 	nMaxRanges = 0;
 }
-

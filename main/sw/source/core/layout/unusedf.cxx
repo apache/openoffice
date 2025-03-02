@@ -83,5 +83,3 @@ sal_Bool SwFrm::GetCharRect( SwRect&, const SwPosition&,
 	ASSERT( sal_False, "GetCharRect() der Basis gerufen." );
 	return sal_False;
 }
-
-

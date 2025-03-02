@@ -166,4 +166,3 @@ void ScXMLTableScenarioContext::EndElement()
 		pDoc->SetActiveScenario( nCurrTable, bIsActive );
 	}
 }
-

@@ -158,7 +158,3 @@ void ScRefFinder::ToggleRel( xub_StrLen nStartPos, xub_StrLen nEndPos )
 
 	aFormula = aTotal;
 }
-
-
-
-

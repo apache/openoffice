@@ -302,4 +302,3 @@ bool ButtonSet::exportButton( int nSet, const rtl::OUString& rPath, const rtl::O
 {
 	return mpImpl->exportButton( nSet, rPath, rName );
 }
-

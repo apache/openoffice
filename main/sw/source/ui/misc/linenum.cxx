@@ -338,5 +338,3 @@ sal_Bool __EXPORT SwLineNumberingPage::FillItemSet( SfxItemSet& )
 
 	return sal_False;
 }
-
-

@@ -676,6 +676,3 @@ const SfxInterface* SfxInterface::GetRealInterfaceForSlot( const SfxSlot *pRealS
 
 	return pInterface;
 }
-
-
-

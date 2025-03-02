@@ -433,5 +433,3 @@ void SwEnvPage::Reset(const SfxItemSet& rSet)
 	aSenderBox .Check  (aItem.bSend);
 	aSenderBox.GetClickHdl().Call(&aSenderBox);
 }
-
-

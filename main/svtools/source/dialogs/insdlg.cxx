@@ -382,4 +382,3 @@ sal_Bool SvPasteObjectHelper::GetEmbeddedName(const TransferableDataHelper& rDat
 	return bRet;
 }
 // -----------------------------------------------------------------------------
-

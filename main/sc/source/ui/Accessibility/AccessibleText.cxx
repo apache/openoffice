@@ -1909,4 +1909,3 @@ SvxEditViewForwarder* ScAccessibleCsvTextData::GetEditViewForwarder( sal_Bool /*
 
 
 // ============================================================================
-

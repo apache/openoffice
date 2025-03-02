@@ -67,5 +67,3 @@ String SfxStringDecode( const String &, const char *  )
 	String aRet;
 	return aRet;
 }
-
-

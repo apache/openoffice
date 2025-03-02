@@ -1306,4 +1306,3 @@ void SmMathConfig::Notify( const com::sun::star::uno::Sequence< rtl::OUString >&
 {}
 
 /////////////////////////////////////////////////////////////////
-

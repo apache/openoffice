@@ -116,4 +116,3 @@ void PresentationViewShellBase::InitializeFramework (void)
 }
 
 } // end of namespace sd
-

@@ -411,5 +411,3 @@ void OutTabD609( SvStream& rSt, short nLen )
 			*pOut << ", ";
 	}
 }
-
-

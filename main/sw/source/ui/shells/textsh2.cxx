@@ -299,6 +299,3 @@ IMPL_STATIC_LINK( SwBaseShell, InsertDBTextHdl, DBTextStruct_Impl*, pDBStruct )
     delete pDBStruct;
 	return 0;
 }
-
-
-

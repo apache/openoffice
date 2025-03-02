@@ -1221,4 +1221,3 @@ void ChildDescriptor::disposeAccessibleObject (AccessibleContextBase& rParent)
 
 
 } // end of namespace accessibility
-

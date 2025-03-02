@@ -139,5 +139,3 @@ bool recently_used_file::eof() const
 }
 
  
-
-

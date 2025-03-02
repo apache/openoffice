@@ -3145,6 +3145,3 @@ void SmBlankNode::Arrange(const OutputDevice &rDev, const SmFormat &rFormat)
 	SetItalicSpaces(0, 0);
 	SetWidth(nSpace);
 }
-
-
-

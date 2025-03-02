@@ -487,4 +487,3 @@ sal_Bool ScByteSequenceToString::GetString( String& rString, const uno::Any& rAn
 }
 
 //------------------------------------------------------------------------
-

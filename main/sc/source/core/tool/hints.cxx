@@ -154,5 +154,3 @@ ScDataPilotModifiedHint::ScDataPilotModifiedHint( const String& rName )
 ScDataPilotModifiedHint::~ScDataPilotModifiedHint()
 {
 }
-
-

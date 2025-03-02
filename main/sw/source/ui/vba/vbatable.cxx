@@ -115,4 +115,3 @@ SwVbaTable::getServiceNames()
     }
     return aServiceNames;
 }
-

@@ -1190,7 +1190,3 @@ sal_uInt16 ScAutoFormat::FindIndexPerName( const String& rName ) const
 
 	return 0;
 }
-
-
-
-

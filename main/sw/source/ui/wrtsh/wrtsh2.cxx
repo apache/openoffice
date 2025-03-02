@@ -532,5 +532,3 @@ void SwWrtShell::NavigatorPaste( const NaviContentBookmark& rBkmk,
 		}
 	}
 }
-
-

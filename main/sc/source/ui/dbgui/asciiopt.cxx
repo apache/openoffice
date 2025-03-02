@@ -479,4 +479,3 @@ void ScAsciiOptions::InterpretColumnList( const String& rString )
 	delete[] pTemp;
 }
 #endif
-

@@ -422,4 +422,3 @@ void ScTableProtection::setOption(Option eOption, bool bEnabled)
 {
     mpImpl->setOption(eOption, bEnabled);
 }
-

@@ -244,5 +244,3 @@ extern sdecl::ServiceDecl const serviceDecl(
     "SwVbaWrapFormat",
     "ooo.vba.word.WrapFormat" );
 }
-
-

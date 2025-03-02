@@ -497,4 +497,3 @@ sal_Bool    SvtCJKOptions::IsReadOnly(EOption eOption) const
     DBG_ASSERT(pCJKOptions->IsLoaded(), "CJK options not loaded");
     return pCJKOptions->IsReadOnly(eOption);
 }
-

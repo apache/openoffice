@@ -50,5 +50,3 @@ FltError ScFormatFilterPluginImpl::ScExportLotus123( SvStream& aStream, ScDocume
 	return eERR_OK;
 }
 #endif
-
-

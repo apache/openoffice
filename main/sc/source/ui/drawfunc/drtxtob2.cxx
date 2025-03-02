@@ -274,7 +274,3 @@ void ScDrawTextObjectBar::GetFormTextState(SfxItemSet& rSet)
 		rSet.Set(aViewAttr);
 	}
 }
-
-
-
-

@@ -1989,5 +1989,3 @@ sal_Bool SwTxtFormatInfo::ChgHyph( const sal_Bool bNew )
 	}
 	return bOld;
 }
-
-

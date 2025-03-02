@@ -362,5 +362,3 @@ sal_Int64 PercentField::Convert(sal_Int64 nValue, FieldUnit eInUnit, FieldUnit e
 
 	return ConvertValue(nValue, 0, nOldDigits, eInUnit, eOutUnit);
 }
-
-

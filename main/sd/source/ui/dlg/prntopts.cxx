@@ -307,4 +307,3 @@ void SdPrintOptions::PageCreated (SfxAllItemSet
 	SetDrawMode();
 #endif
 }
-

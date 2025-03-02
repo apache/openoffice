@@ -1556,4 +1556,3 @@ sal_Int32 SotStorage::GetVersion( const com::sun::star::uno::Reference < com::su
 
 	return 0;
 }
-

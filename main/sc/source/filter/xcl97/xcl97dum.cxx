@@ -156,4 +156,3 @@ const sal_uInt8* ExcDummy8_02::GetData() const
 {
 	return pMyData;
 }
-

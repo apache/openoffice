@@ -235,4 +235,3 @@ void SwEditWin::DataChanged( const DataChangedEvent& rDCEvt )
 	if( bUnlockPaint )
         pSh->UnlockPaint();
 }
-

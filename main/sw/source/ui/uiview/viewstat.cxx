@@ -536,4 +536,3 @@ sal_Bool SwView::HasUIFeature( sal_uInt32 nFeature )
     }
     return bRet;
 }
-

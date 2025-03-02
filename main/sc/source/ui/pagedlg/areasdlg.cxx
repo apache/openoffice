@@ -899,4 +899,3 @@ void lcl_GetRepeatRangeString( const ScRange* pRange, ScDocument* pDoc, bool bIs
         rStr += aTmpStr;
     }
 }
-

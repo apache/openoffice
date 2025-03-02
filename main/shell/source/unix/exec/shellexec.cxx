@@ -327,4 +327,3 @@ Sequence< OUString > SAL_CALL ShellExec::getSupportedServiceNames(	 )
 {
     return ShellExec_getSupportedServiceNames();
 }
-

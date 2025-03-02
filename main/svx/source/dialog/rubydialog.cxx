@@ -991,4 +991,3 @@ long  RubyEdit::PreNotify( NotifyEvent& rNEvt )
         nHandled = Edit::PreNotify(rNEvt);
 	return nHandled;
 }
-

@@ -245,4 +245,3 @@ Reference< XInterface > SAL_CALL SfxApplicationScriptLibraryContainer::impl_crea
         Reference< XInterface >( SFX_APP()->GetBasicContainer(), UNO_QUERY );
     return xRet;
 }
-

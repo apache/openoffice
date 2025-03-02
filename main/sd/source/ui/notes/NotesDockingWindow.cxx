@@ -107,4 +107,3 @@ void NotesDockingWindow::Resize (void)
 
 
 } } // end of namespace ::sd::notes
-

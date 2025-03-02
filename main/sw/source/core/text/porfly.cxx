@@ -448,4 +448,3 @@ xub_StrLen SwFlyCntPortion::GetCrsrOfst( const KSHORT nOfst ) const
 	// ASSERT( sal_False, "SwFlyCntPortion::GetCrsrOfst: use GetFlyCrsrOfst()" );
 	return SwLinePortion::GetCrsrOfst( nOfst );
 }
-

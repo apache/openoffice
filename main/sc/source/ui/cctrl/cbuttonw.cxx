@@ -167,8 +167,3 @@ void ScDDComboBoxButton::ImpDrawArrow( const Rectangle& rRect,
 	pOut->DrawLine( Point( aCenter.X() - aSize3.Width(), aPos1.Y()+1 ),
 					Point( aCenter.X() + aSize3.Width(), aPos1.Y()+1 ) );
 }
-
-
-
-
-

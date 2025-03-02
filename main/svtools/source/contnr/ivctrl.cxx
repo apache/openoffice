@@ -632,4 +632,3 @@ void SvtIconChoiceCtrl::CallImplEventListeners(sal_uLong nEvent, void* pData)
 	}
     return xAccessible;
 }
-

@@ -960,4 +960,3 @@ void SwAttrHandler::GetDefaultAscentAndHeight( ViewShell* pShell, OutputDevice& 
         nAscent = aFont.GetAscent( pShell, rOut );
     }
 }
-

@@ -218,4 +218,3 @@ long SwCallLink::getLayoutFrm( const SwRootFrm* pRoot, SwTxtNode& rNd, xub_StrLe
 	}
 	return 0;
 }
-

@@ -180,4 +180,3 @@ extern "C" UINT __stdcall ShowSurveyAfter( MSIHANDLE handle )
 
     return ERROR_SUCCESS;
 }
-

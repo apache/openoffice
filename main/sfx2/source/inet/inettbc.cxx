@@ -296,4 +296,3 @@ void SfxURLToolBoxControl_Impl::StateChanged
 	    }
     }
 }
-

@@ -179,9 +179,3 @@ SwColMgr::SwColMgr(const SfxItemSet& rSet, sal_uInt16 nActWidth) :
 
 
 SwColMgr::~SwColMgr() {}
-
-
-
-
-
-

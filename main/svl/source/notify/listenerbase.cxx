@@ -68,5 +68,3 @@ SvtListenerBase::~SvtListenerBase()
 	if( !pBroadcaster->pRoot )
 		pBroadcaster->ListenersGone();
 }
-
-

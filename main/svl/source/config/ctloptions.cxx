@@ -485,4 +485,3 @@ sal_Bool SvtCTLOptions::IsReadOnly(EOption eOption) const
     return pCTLOptions->IsReadOnly(eOption);
 }
 // -----------------------------------------------------------------------------
-

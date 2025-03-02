@@ -673,4 +673,3 @@ void SwTabPortion::HandlePortion( SwPortionHandler& rPH ) const
 {
     rPH.Text( GetLen(), GetWhichPor() );
 }
-

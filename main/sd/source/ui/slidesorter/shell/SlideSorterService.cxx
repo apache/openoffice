@@ -637,4 +637,3 @@ void SlideSorterService::ThrowIfDisposed (void)
 
 
 } } // end of namespace ::sd::presenter
-

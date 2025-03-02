@@ -644,4 +644,3 @@ SwTxtAnnotationFld::~SwTxtAnnotationFld()
            ? pMark->get()
            : NULL;
 }
-

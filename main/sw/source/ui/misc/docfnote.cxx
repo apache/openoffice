@@ -490,10 +490,3 @@ SfxTabPage *SwFootNoteOptionPage::Create(Window *pParent, const SfxItemSet &rSet
 {
 	return new SwFootNoteOptionPage( pParent, rSet );
 }
-
-
-
-
-
-
-

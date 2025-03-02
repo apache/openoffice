@@ -915,5 +915,3 @@ MetaFieldManager::getMetaFields()
 }
 
 } // namespace sw
-
-

@@ -1578,4 +1578,3 @@ void SwNavigationPI::InitImageList()
     aContentToolBox.SetItemImage( FN_DROP_REGION,
                                     rImgLst.GetImage(nDropId));
 }
-

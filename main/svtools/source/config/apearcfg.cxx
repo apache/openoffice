@@ -263,6 +263,3 @@ void SvtTabAppearanceCfg::SetApplicationDefaults ( Application* pApp )
 
 	pApp->SetSettings ( hAppSettings );
 }
-
-
-

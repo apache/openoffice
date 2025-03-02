@@ -2650,4 +2650,3 @@ XclTokenArrayRef XclExpFormulaCompiler::CreateNameXFormula(
 }
 
 // ============================================================================
-

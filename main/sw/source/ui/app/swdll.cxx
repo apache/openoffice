@@ -149,4 +149,3 @@ void SwDLL::Exit()
 	delete (*ppShlPtr);
 	(*ppShlPtr) = NULL;
 }
-

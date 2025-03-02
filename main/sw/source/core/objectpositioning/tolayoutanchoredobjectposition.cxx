@@ -248,4 +248,3 @@ Point SwToLayoutAnchoredObjectPosition::GetRelPos() const
 {
     return maRelPos;
 }
-

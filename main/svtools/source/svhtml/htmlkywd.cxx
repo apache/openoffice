@@ -1066,4 +1066,3 @@ sal_uLong GetHTMLColor( const String& rName )
 
 	return nRet;
 }
-

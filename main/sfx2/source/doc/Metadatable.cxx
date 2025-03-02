@@ -1696,4 +1696,3 @@ static void dump(sfx2::XmlIdList_t * pList)
 }
 
 #endif
-

@@ -183,4 +183,3 @@ IMPL_LINK( DdeTopicList, Data, DdeData*, pData )
 	}
 	return 0;
 }
-

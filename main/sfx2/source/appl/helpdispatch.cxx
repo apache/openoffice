@@ -116,4 +116,3 @@ void SAL_CALL HelpDispatch_Impl::removeStatusListener(
 	DBG_ASSERT( m_xRealDispatch.is(), "invalid dispatch" );
 	m_xRealDispatch->removeStatusListener( xControl, aURL );
 }
-

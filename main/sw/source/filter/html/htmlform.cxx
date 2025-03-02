@@ -2654,4 +2654,3 @@ void SwHTMLParser::InsertSelectText()
 			rText += aToken;
 	}
 }
-

@@ -1590,4 +1590,3 @@ void SwDoc::AdjustCellWidth( const SwCursor& rCursor, sal_Bool bBalance )
 
 	SetModified();
 }
-

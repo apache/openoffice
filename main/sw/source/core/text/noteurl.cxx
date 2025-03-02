@@ -77,7 +77,3 @@ void SwNoteURL::FillImageMap( ImageMap *pMap, const Point &rPos,
 		}
 	}
 }
-
-
-
-

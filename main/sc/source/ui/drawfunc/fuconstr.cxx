@@ -325,7 +325,3 @@ void FuConstruct::Deactivate()
 {
 	FuDraw::Deactivate();
 }
-
-
-
-

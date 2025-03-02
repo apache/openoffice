@@ -242,5 +242,3 @@ void SvxNumberInfoItem::SetDelFormatArray( const sal_uInt32* pData,
 		}
 	}
 }
-
-

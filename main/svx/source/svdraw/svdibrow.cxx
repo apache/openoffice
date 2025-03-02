@@ -1289,5 +1289,3 @@ IMPL_LINK(SdrItemBrowser,SetDirtyHdl,_SdrItemBrowserControl*,EMPTYARG)
 	SetDirty();
 	return 0;
 }
-
-

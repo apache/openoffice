@@ -1137,5 +1137,3 @@ ScDocument* ScPreviewShell::GetDocument()
 {
 	return pDocShell->GetDocument();
 }
-
-

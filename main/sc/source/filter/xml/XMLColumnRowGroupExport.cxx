@@ -180,4 +180,3 @@ void ScMyOpenCloseColumnRowGroup::Sort()
 	aTableStart.sort();
 	aTableEnd.sort();
 }
-

@@ -344,4 +344,3 @@ void CALLBACK OnClipboardContentChange( void )
 	InvalidateRect( g_hwndMain, NULL, TRUE );
 	UpdateWindow( g_hwndMain );
 }
-

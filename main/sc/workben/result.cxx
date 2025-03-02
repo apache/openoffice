@@ -124,6 +124,3 @@ void SAL_CALL ScAddInResult::removeResultListener( const ::com::sun::star::uno::
 }
 
 //------------------------------------------------------------------------
-
-
-

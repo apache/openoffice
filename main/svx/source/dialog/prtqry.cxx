@@ -54,5 +54,3 @@ SvxPrtQryBox::SvxPrtQryBox(Window* pParent) :
 SvxPrtQryBox::~SvxPrtQryBox()
 {
 }
-
-

@@ -96,4 +96,3 @@ SwVbaTemplate::getServiceNames()
         }
         return aServiceNames;
 }
-

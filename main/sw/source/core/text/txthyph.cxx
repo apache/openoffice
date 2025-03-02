@@ -686,6 +686,3 @@ SwSoftHyphStrPortion::SwSoftHyphStrPortion( const XubString &rStr )
 	SetLen( 1 );
 	SetWhichPor( POR_SOFTHYPHSTR );
 }
-
-
-

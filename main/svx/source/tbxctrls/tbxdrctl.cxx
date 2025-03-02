@@ -113,4 +113,3 @@ void SvxTbxCtlDraw::Select( sal_Bool )
 {
     toggleToolbox();
 }
-

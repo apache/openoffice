@@ -249,4 +249,3 @@ void SvEmbedTransferHelper::FillTransferableObjectDescriptor( TransferableObject
 	rDesc.maDisplayName = String();
 	rDesc.mbCanLink = sal_False;
 }
-

@@ -192,4 +192,3 @@ void SvxXMeasurePreview::DataChanged( const DataChangedEvent& rDCEvt )
 		SetDrawMode( GetSettings().GetStyleSettings().GetHighContrastMode() ? OUTPUT_DRAWMODE_CONTRAST : OUTPUT_DRAWMODE_COLOR );
 	}
 }
-

@@ -2961,4 +2961,3 @@ IMPL_LINK(FmXGridPeer, OnExecuteGridSlot, void*, pSlot)
 
 	return 0;	// not handled
 }
-

@@ -119,4 +119,3 @@ CollatorRessource::GetTranslation (const String &r_Algorithm)
 
 	return r_Algorithm;
 }
-

@@ -227,4 +227,3 @@ List_GenericInfo::lower_bound( bool &              o_bExists,
                     : false;
     return &aChildren[low];
 }
-

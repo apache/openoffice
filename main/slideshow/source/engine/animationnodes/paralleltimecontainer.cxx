@@ -62,4 +62,3 @@ void ParallelTimeContainer::notifyDeactivating(
 
 } // namespace internal
 } // namespace slideshow
-

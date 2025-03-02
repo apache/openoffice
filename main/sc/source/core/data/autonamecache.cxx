@@ -102,4 +102,3 @@ const ScAutoNameAddresses& ScAutoNameCache::GetNameOccurences( const String& rNa
 
     return rAddresses;
 }
-

@@ -58,4 +58,3 @@
 #include <editeng/memberids.hrc>
 #define SFX_TYPEMAP
 #include "svxslots.hxx"
-

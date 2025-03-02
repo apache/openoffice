@@ -59,4 +59,3 @@ SfxDocInfoEditDlg::SfxDocInfoEditDlg( Window* pParent ) :
 {
 	FreeResource();
 }
-

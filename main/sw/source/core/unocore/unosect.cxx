@@ -1909,4 +1909,3 @@ uno::Reference<frame::XModel> SwXTextSection::GetModel()
     }
     return 0;
 }
-

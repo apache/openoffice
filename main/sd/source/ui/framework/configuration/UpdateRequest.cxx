@@ -79,4 +79,3 @@ void SAL_CALL UpdateRequest::setName (const OUString& rsName)
 }
 
 } } // end of namespace sd::framework
-

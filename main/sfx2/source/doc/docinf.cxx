@@ -300,4 +300,3 @@ uno::Sequence<sal_uInt8> SFX2_DLLPUBLIC convertMetaFile(GDIMetaFile* i_pThumb)
 }
 
 } // namespace sfx2
-

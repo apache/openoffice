@@ -580,4 +580,3 @@ sal_Bool WidowsAndOrphans::WouldFit( SwTxtMargin &rLine, SwTwips &rMaxHeight, sa
 	}
 	return sal_False;
 }
-

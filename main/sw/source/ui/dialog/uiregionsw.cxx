@@ -2461,4 +2461,3 @@ IMPL_LINK(SwSectionIndentTabPage, IndentModifyHdl, MetricField*, EMPTYARG)
     aPreviewWin.Draw(sal_True);
     return 0;
 }
-

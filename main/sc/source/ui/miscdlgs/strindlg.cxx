@@ -79,6 +79,3 @@ void ScStringInputDlg::GetInputString( String& rString ) const
 __EXPORT ScStringInputDlg::~ScStringInputDlg()
 {
 }
-
-
-

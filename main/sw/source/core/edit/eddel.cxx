@@ -350,6 +350,3 @@ sal_Bool SwEditShell::DelFullPara()
 	}
 	return bRet;
 }
-
-
-

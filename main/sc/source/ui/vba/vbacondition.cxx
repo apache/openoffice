@@ -168,4 +168,3 @@ ScVbaCondition< Ifc1 >::Operator(sal_Bool _bIncludeFormulaValue) throw ( script:
 }
 
 template class ScVbaCondition< excel::XFormatCondition >;
-

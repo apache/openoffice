@@ -241,4 +241,3 @@ void XclPageData::SetScPaperSize( const Size& rSize, bool bPortrait )
 }
 
 // ============================================================================
-

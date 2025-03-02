@@ -50,4 +50,3 @@ void ThreadListener::NotifyAboutFinishedThread( const oslInterlockedCount nThrea
 {
     mrThreadListenerOwner.NotifyAboutFinishedThread( nThreadID );
 }
-

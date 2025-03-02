@@ -239,4 +239,3 @@ EventSharedPtr generateEvent(
 
 } // namespace internal
 } // namespace slideshow
-

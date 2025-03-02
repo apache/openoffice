@@ -1051,4 +1051,3 @@ Sequence< OUString > SwXViewSettings::getSupportedServiceNames(void) throw( Runt
 	pArray[0] = C2U("com.sun.star.text.ViewSettings");
 	return aRet;
 }
-

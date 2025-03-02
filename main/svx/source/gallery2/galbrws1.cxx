@@ -736,4 +736,3 @@ IMPL_LINK( GalleryBrowser1, ClickNewThemeHdl, void*, EMPTYARG )
 
 	return 0L;
 }
-

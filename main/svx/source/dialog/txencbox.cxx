@@ -247,4 +247,3 @@ sal_Bool SvxTextEncodingBox::IsTextEncodingSelected( const rtl_TextEncoding nEnc
 	else
 		return sal_False;
 }
-

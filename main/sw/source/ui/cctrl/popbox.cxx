@@ -83,5 +83,3 @@ sal_Int8 SwHelpToolBox::ExecuteDrop( const ExecuteDropEvent& rEvt )
 {
 	return ((SwNavigationPI*)GetParent())->ExecuteDrop( rEvt );
 }
-
-

@@ -4836,4 +4836,3 @@ IMPL_LINK( FmXFilterCell, OnCommit, void*, EMPTYARG )
         ((::com::sun::star::awt::XTextListener *)aIt.next())->textChanged( aEvt );
     return 1;
 }
-

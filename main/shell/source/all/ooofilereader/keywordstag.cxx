@@ -57,4 +57,3 @@ std::wstring CKeywordsTag::getTagContent( )
         ret_KeyWord_String += L"," + *keywords_Iter;
     return ret_KeyWord_String;
 }
-

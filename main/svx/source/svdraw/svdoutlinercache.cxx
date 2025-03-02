@@ -107,5 +107,3 @@ void SdrOutlinerCache::disposeOutliner( SdrOutliner* pOutliner )
 		}
 	}
 }
-
-

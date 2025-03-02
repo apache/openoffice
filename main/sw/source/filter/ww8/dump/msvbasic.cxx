@@ -529,4 +529,3 @@ int VBA_Impl::DecompressVBA( int nIndex, SvStorageStreamRef &xVBAStream )
 		Output(pos%WINDOWLEN,aHistory);
 	return(pos);
 }
-

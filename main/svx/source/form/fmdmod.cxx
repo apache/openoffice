@@ -123,5 +123,3 @@ using namespace ::svxform;
 	return xRet;
 }
 */
-
-

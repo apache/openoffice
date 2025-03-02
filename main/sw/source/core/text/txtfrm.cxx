@@ -2799,4 +2799,3 @@ void SwTxtFrm::repaintTextFrames( const SwTxtNode& rNode )
             pCurShell->InvalidateWindows( aRec );
     }    
 }
-

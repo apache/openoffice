@@ -4675,5 +4675,3 @@ lcl_DelRedlines::lcl_DelRedlines( const SwTableNode& rNd,
 	}
 }
 #endif
-
-

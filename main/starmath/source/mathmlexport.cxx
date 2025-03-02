@@ -1597,4 +1597,3 @@ void SmXMLExport::ExportNodes(const SmNode *pNode, int nLevel)
 }
 
 ////////////////////////////////////////////////////////////
-

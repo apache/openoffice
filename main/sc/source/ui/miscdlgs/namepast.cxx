@@ -124,5 +124,3 @@ String ScNamePasteDlg::GetSelectedName() const
 {
 	return aNameList.GetSelectEntry();
 }
-
-

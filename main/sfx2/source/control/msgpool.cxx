@@ -413,5 +413,3 @@ SfxSlotPool& SfxSlotPool::GetSlotPool( SfxViewFrame *pFrame )
 	else
         return *SFX_APP()->Get_Impl()->pSlotPool;
 }
-
-

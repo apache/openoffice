@@ -294,7 +294,3 @@ void LotAttrTable::Apply( const SCTAB nTabNum )
 	for( nColCnt = 0 ; nColCnt <= MAXCOL ; nColCnt++ )
 		pCols[ nColCnt ].Apply( nColCnt, nTabNum );		// macht auch gleich ein Clear() am Ende
 }
-
-
-
-

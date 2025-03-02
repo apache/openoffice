@@ -1437,4 +1437,3 @@ void SwHTMLParser::StripTrailingPara()
         pCNd->SetAttr( aFontHeight );
     }
 }
-

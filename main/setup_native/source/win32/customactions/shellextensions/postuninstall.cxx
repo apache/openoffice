@@ -148,4 +148,3 @@ extern "C" UINT __stdcall ExecutePostUninstallScript( MSIHANDLE handle )
 
 	return ERROR_SUCCESS;
 }
-

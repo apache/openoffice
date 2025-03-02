@@ -757,4 +757,3 @@ XclImpAutoFilterData* XclImpAutoFilterBuffer::GetByTab( SCTAB nTab )
 			return pData;
 	return NULL;
 }
-

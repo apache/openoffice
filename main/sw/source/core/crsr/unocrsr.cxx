@@ -265,4 +265,3 @@ void SwUnoTableCrsr::MakeBoxSels()
 		}
 	}
 }
-

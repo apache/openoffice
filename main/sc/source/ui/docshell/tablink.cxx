@@ -616,4 +616,3 @@ String ScDocumentLoader::GetTitle() const
 	else
 		return EMPTY_STRING;
 }
-

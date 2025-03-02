@@ -666,4 +666,3 @@ void SwHTMLParser::InsertComment( const String& rComment, const sal_Char *pTag )
     if( bMoveFwd )
         pPam->Move( fnMoveForward );
 }
-

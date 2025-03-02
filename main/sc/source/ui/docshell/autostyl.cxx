@@ -234,7 +234,3 @@ IMPL_LINK( ScAutoStyleList, TimerHdl, Timer*, EMPTYARG )
 
 	return 0;
 }
-
-
-
-

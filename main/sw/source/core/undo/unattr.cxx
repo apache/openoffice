@@ -1246,4 +1246,3 @@ void SwUndoDontExpandFmt::RepeatImpl(::sw::RepeatContext & rContext)
     SwDoc & rDoc = rContext.GetDoc();
     rDoc.DontExpandFmt( *rPam.GetPoint() );
 }
-

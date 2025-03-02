@@ -75,5 +75,3 @@ SfxItemPool* ScDrawDefaultsObj::getModelPool( sal_Bool bReadOnly ) throw()
 
 	return pRet;
 }
-
-

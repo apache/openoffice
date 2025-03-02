@@ -90,6 +90,3 @@ SwWebTextShell::SwWebTextShell(SwView &_rView) :
 SwWebTextShell::~SwWebTextShell()
 {
 }
-
-
-

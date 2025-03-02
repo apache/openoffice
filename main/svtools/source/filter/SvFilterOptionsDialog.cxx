@@ -263,4 +263,3 @@ void SvFilterOptionsDialog::setSourceDocument( const uno::Reference< lang::XComp
 		}
 	}
 }
-

@@ -788,5 +788,3 @@ void SwSendMailDialog::AllMailsSent()
 {
     m_aStopPB.Enable(sal_False);
 }
-
-

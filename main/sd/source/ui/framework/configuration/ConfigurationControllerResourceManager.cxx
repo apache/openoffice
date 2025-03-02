@@ -352,4 +352,3 @@ bool ConfigurationControllerResourceManager::ResourceComparator::operator() (
 
 
 } } // end of namespace sd::framework
-

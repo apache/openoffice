@@ -1042,4 +1042,3 @@ bool XclExpFilterManager::HasFilterMode( SCTAB nScTab )
 }
 
 // ============================================================================
-

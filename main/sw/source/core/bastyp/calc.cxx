@@ -1817,6 +1817,3 @@ static const sal_Char* sNTypeTab[ 27 ] =
 }
 
 #endif
-
-
-

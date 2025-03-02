@@ -825,5 +825,3 @@ void SAL_CALL SfxPrintHelper::removePrintJobListener( const ::com::sun::star::un
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     m_pData->m_aInterfaceContainer.removeInterface( ::getCppuType((const uno::Reference < view::XPrintJobListener>*)0), xListener );
 }
-
-

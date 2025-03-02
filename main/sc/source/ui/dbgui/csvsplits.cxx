@@ -113,4 +113,3 @@ sal_uInt32 ScCsvSplits::GetIterIndex( const_iterator aIter ) const
 
 
 // ============================================================================
-

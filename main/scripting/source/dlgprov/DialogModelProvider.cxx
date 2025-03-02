@@ -189,4 +189,3 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL DialogModelProvider::getSupported
 }
 
 } // closing anonymous implementation namespace
-

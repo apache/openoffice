@@ -341,5 +341,3 @@ SwDocShellRef SwGlossaries::EditGroupDoc( const String& rGroup, const String& rS
 	}
 	return xDocSh;
 }
-
-

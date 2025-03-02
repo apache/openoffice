@@ -1028,5 +1028,3 @@ const SfxItemSet* FlatFndBox::GetItemSet(sal_uInt16 n_Col, sal_uInt16 n_Row) con
 
 	return ppItemSets ? *(ppItemSets + (n_Row * nCols + n_Col )) : 0;
 }
-
-

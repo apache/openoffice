@@ -230,5 +230,3 @@ String SfxThesSubMenuHelper::GetThesImplName( const lang::Locale &rLocale ) cons
 }    
 
 ////////////////////////////////////////////////////////////
-
-

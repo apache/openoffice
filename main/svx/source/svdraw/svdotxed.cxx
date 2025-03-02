@@ -367,4 +367,3 @@ void SdrTextObj::ImpSetTextEditParams() const
 		if (bUpdMerk) pEdtOutl->SetUpdateMode(sal_True);
 	}
 }
-

@@ -478,4 +478,3 @@ double BesselY( double fNum, sal_Int32 nOrder ) throw( IllegalArgumentException,
 
 } // namespace analysis
 } // namespace sca
-

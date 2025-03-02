@@ -721,4 +721,3 @@ sal_Bool SwSaveLabelDlg::GetLabel(SwLabItem& rItem)
 	}
 	return bSuccess;
 }
-

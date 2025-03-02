@@ -645,8 +645,3 @@ sal_Bool SwCacheAccess::IsAvailable() const
 {
 	return pObj != 0;
 }
-
-
-
-
-

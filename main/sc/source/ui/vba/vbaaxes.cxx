@@ -196,4 +196,3 @@ ScVbaAxes::getServiceNames()
 	}
 	return aServiceNames;
 }
-

@@ -2065,4 +2065,3 @@ xub_StrLen ScColumn::GetMaxNumberStringLen(
     }
     return nStringLen;
 }
-

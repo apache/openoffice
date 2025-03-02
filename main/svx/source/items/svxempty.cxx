@@ -32,5 +32,3 @@ static XubString aImplSVXEmptyStr;
 XubString& rImplEmptyStr = aImplSVXEmptyStr;
 static String aImplSVXEmptySStr;
 String& rImplEmptySStr = aImplSVXEmptySStr;
-
-

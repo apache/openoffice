@@ -110,6 +110,3 @@ const SfxPoolItem* SfxItemIter::PrevItem()
 	}
 	return 0;
 }
-
-
-

@@ -543,4 +543,3 @@ void RegistryKeyImplWin9x::SetValue(const RegistryValue& Value)
 	else if (ERROR_SUCCESS != rc)
 		throw RegistryException(rc);
 }
-

@@ -84,4 +84,3 @@ sal_uInt16 SvXMLItemMapEntries::getCount() const
 {
 	return mpImpl->mnCount;	
 }
-

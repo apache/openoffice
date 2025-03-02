@@ -2211,4 +2211,3 @@ void SAL_CALL SwXTextView::insertTransferable( const uno::Reference< datatransfe
 }
 
 // -----------------------------------------------------------------------------
-

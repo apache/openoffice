@@ -811,5 +811,3 @@ sal_Int64 SAL_CALL ScDrawTransferObj::getSomething( const com::sun::star::uno::S
         nRet = TransferableHelper::getSomething(rId);
     return nRet;
 }
-
-

@@ -411,5 +411,3 @@ sal_Bool ScRowBar::IsMirrored()			// overloaded only for rows
 {
 	return pViewData->GetDocument()->IsLayoutRTL( pViewData->GetTabNo() );
 }
-
-

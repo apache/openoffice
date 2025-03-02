@@ -515,5 +515,3 @@ sal_Bool SAL_CALL ScAccessibleTableBase::unselectColumn( sal_Int32 )
 {
 	return sal_True;
 }
-
-

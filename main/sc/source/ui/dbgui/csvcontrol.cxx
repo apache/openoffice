@@ -330,4 +330,3 @@ ScCsvControl::XAccessibleRef ScCsvControl::CreateAccessible()
 
 
 // ============================================================================
-
