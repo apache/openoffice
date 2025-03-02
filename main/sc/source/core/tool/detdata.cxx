@@ -109,6 +109,3 @@ sal_Bool ScDetOpList::operator==( const ScDetOpList& r ) const
 
 	return bEqual;
 }
-
-
-

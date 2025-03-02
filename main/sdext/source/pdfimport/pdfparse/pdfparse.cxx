@@ -693,5 +693,3 @@ PDFEntry* PDFReader::read( const char* pFileName )
 #elif defined _MSC_VER
 #pragma warning(pop)
 #endif 
-
-

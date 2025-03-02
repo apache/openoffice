@@ -1071,7 +1071,3 @@ sal_Bool SwWrtShell::SelectNextPrevHyperlink( sal_Bool bNext )
  * eine bestehende Selektion aufgehoben wird, wird der Cursor auf
  * den Stack gepushed. Nach dem Verschieben werden sie wieder
  * zusammengefasst. */
-
-
-
-

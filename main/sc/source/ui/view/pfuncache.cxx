@@ -193,5 +193,3 @@ long ScPrintFuncCache::GetDisplayStart( SCTAB nTab ) const
 	}
 	return nDisplayStart;
 }
-
-

@@ -118,6 +118,3 @@ void __EXPORT ScNavigatorControllerItem::StateChanged( sal_uInt16 /* nSID */, Sf
 			break;
 	}
 }
-
-
-

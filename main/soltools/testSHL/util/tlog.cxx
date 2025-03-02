@@ -97,8 +97,3 @@ void tLog::initialize( const ::rtl::OString& name ) {
 } // </method_write>
 
 } // </namespace_tstutl>
-
-
-
-
-

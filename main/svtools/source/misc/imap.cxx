@@ -1215,4 +1215,3 @@ void ImageMap::Read( SvStream& rIStm, const String& rBaseURL )
 
 	rIStm.SetNumberFormatInt( nOldFormat );
 }
-

@@ -1438,5 +1438,3 @@ HTMLControl::HTMLControl(
 
 HTMLControl::~HTMLControl()
 {}
-
-

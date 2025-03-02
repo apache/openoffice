@@ -132,6 +132,3 @@ sal_Bool SwDoc::IsVisitedURL( const String& rURL ) const
 	}
 	return bRet;
 }
-
-
-

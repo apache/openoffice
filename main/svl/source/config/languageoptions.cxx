@@ -268,5 +268,3 @@ LanguageType SvtSystemLanguageOptions::GetWin16SystemLanguage()
         return LANGUAGE_NONE;
     return MsLangId::convertIsoStringToLanguage( m_sWin16SystemLocale );
 }
-
-

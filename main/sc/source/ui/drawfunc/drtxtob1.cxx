@@ -152,5 +152,3 @@ void ScDrawTextObjectBar::ExecutePasteContents( SfxRequest & /* rReq */ )
 	}
 	delete pDlg;
 }
-
-

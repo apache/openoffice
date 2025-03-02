@@ -275,4 +275,3 @@ void LotusConverterBase::Reset( const ScAddress& rEingPos )
 	nBytesLeft = 0;
     aEingPos = rEingPos;
 }
-

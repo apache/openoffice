@@ -74,4 +74,3 @@ void ScRefreshTimer::Timeout()
 			Start();
 	}
 }
-

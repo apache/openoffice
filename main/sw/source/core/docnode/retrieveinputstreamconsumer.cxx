@@ -65,4 +65,3 @@ void SwAsyncRetrieveInputStreamThreadConsumer::ApplyInputStream(
 {
     mrGrfNode.ApplyInputStream( xInputStream, bIsStreamReadOnly );
 }
-

@@ -366,7 +366,3 @@ IMPL_LINK( ScFillSeriesDlg, OKHdl, void *, EMPTYARG )
 
 	return 0;
 }
-
-
-
-

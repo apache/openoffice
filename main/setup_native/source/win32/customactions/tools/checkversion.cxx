@@ -141,5 +141,3 @@ extern "C" UINT __stdcall CheckVersions( MSIHANDLE hMSI )
 
 	return ERROR_SUCCESS;
 }
-
-

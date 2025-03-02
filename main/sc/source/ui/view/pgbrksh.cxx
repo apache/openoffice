@@ -77,5 +77,3 @@ ScPageBreakShell::ScPageBreakShell( ScTabViewShell* pViewSh ) :
 ScPageBreakShell::~ScPageBreakShell()
 {
 }
-
-

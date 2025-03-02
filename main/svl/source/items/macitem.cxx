@@ -288,4 +288,3 @@ sal_uInt16 SvxMacroItem::GetVersion( sal_uInt16 nFileFormatVersion ) const
 	return SOFFICE_FILEFORMAT_31 == nFileFormatVersion
 				? 0 : aMacroTable.GetVersion();
 }
-

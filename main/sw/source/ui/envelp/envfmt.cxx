@@ -624,6 +624,3 @@ void __EXPORT SwEnvFmtPage::Reset(const SfxItemSet& rSet)
 	DELETEZ(GetParent()->pSenderSet);
 	DELETEZ(GetParent()->pAddresseeSet);
 }
-
-
-

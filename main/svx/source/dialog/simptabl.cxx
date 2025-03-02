@@ -571,5 +571,3 @@ IMPL_LINK( SvxSimpleTable, CompareHdl, SvSortData*, pData)
 	SvLBoxEntry* pRight = (SvLBoxEntry*)(pData->pRight );
 	return (long) ColCompare(pLeft,pRight);
 }
-
-

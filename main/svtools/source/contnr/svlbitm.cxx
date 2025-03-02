@@ -644,4 +644,3 @@ void SvLBoxContextBmp::Clone( SvLBoxItem* pSource )
 	m_pImpl->m_aImage2 = static_cast< SvLBoxContextBmp* >( pSource )->m_pImpl->m_aImage2;
 	m_pImpl->m_nB2IndicatorFlags = static_cast< SvLBoxContextBmp* >( pSource )->m_pImpl->m_nB2IndicatorFlags;
 }
-

@@ -44,4 +44,3 @@ SwCheckIt::SwCheckIt()
         x >>= xCheck;
 	}
 }
-

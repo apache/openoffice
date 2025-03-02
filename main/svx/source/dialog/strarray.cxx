@@ -91,5 +91,3 @@ long SvxStringArray::GetValueByStr( const String& rStr ) const
 		}
 	return nType;
 }
-
-

@@ -792,4 +792,3 @@ void OptimizerDialog::last( const SpinEvent& /* rEvent */ )
 	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( static_cast< double >( 100 ) ) );	
 	SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)100 ) );
 }
-

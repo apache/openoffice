@@ -1812,4 +1812,3 @@ OUString Cell::getName()
 }
 
 } }
-

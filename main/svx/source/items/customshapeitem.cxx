@@ -366,4 +366,3 @@ SdrCustomShapeReplacementURLItem::SdrCustomShapeReplacementURLItem()
 SdrCustomShapeReplacementURLItem::SdrCustomShapeReplacementURLItem( const String& rVal )
 :	SfxStringItem( SDRATTR_CUSTOMSHAPE_REPLACEMENT_URL, rVal )
 {}
-

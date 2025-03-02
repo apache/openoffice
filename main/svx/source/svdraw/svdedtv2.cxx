@@ -2177,4 +2177,3 @@ void SdrEditView::DoImportMarkedMtf(SvdProgressInfo *pProgrInfo)
 		EndUndo();
 	}
 }
-

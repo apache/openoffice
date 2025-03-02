@@ -111,6 +111,3 @@ SwTableHeightDlg::SwTableHeightDlg( Window *pParent, SwWrtShell &rS ) :
 		delete pSz;
 	}
 }
-
-
-

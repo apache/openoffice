@@ -956,4 +956,3 @@ Reference< XInterface > SAL_CALL TypeConverter_Impl_CreateInstance(
 	return s_ref;
 }
 }
-

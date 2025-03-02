@@ -612,4 +612,3 @@ IMPL_LINK(SwMailBodyDialog, OKHdl, PushButton*, EMPTYARG)
     EndDialog(RET_OK);
     return 0;
 }
-

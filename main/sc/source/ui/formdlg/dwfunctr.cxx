@@ -1183,5 +1183,3 @@ void ScFunctionDockWin::StateChanged( StateChangedType nStateChange )
 		UseSplitterInitPos();			//	set initial splitter position if necessary
 	}
 }
-
-

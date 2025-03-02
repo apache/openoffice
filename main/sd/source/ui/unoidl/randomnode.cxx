@@ -696,4 +696,3 @@ Sequence< OUString > RandomAnimationNode::getSupportedServiceNames(void) throw()
 }
 
 }
-

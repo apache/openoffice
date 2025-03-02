@@ -172,5 +172,3 @@ const String& SvxClipboardFmtItem::GetClipbrdFormatName( sal_uInt16 nPos ) const
 	const String* pS = pImpl->aFmtNms[ nPos ];
 	return pS ? *pS : SvxClipboardFmtItem_Impl::sEmptyStr;
 }
-
-

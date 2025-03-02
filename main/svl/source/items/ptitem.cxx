@@ -196,6 +196,3 @@ sal_Bool SfxPointItem::PutValue( const uno::Any& rVal,
 
 	return bRet;
 }
-
-
-

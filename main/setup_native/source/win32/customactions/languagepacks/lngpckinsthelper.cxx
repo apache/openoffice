@@ -197,4 +197,3 @@ extern "C" UINT __stdcall RegisterLanguagePack(MSIHANDLE handle)
     }
     return ERROR_SUCCESS;
 }
-

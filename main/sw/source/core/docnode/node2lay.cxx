@@ -464,5 +464,3 @@ SwFrm* SwNode2Layout::GetFrm( const Point* pDocPos,
 {
 	return pImpl->GetFrm( pDocPos, pPos, bCalcFrm );
 }
-
-

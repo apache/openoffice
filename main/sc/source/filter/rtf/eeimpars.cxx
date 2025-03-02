@@ -626,7 +626,3 @@ void ScEEParser::NewActEntry( ScEEParseEntry* pE )
 	pActEntry->aSel.nStartPara = (pE ? pE->aSel.nEndPara + 1 : 0);
 	pActEntry->aSel.nStartPos = 0;
 }
-
-
-
-

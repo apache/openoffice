@@ -2016,4 +2016,3 @@ IMPL_LINK( SfxDockingWindow, TimerHdl, Timer*, EMPTYARG)
 	}
 	return 0;
 }
-

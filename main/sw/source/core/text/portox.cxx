@@ -108,4 +108,3 @@ void SwIsoToxPortion::HandlePortion( SwPortionHandler& rPH ) const
     String aString;
     rPH.Special( GetLen(), aString, GetWhichPor() );
 }
-

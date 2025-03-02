@@ -173,4 +173,3 @@ IMPL_LINK(TimerBasedTaskExecution,TimerCallback, Timer*,EMPTYARG)
 
 
 } } // end of namespace ::sd::tools
-

@@ -534,4 +534,3 @@ sal_Int32 StylePool::getCount() const
 StylePool::~StylePool() { delete pImpl; }
 
 // End of class StylePool
-

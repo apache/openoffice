@@ -65,4 +65,3 @@ SfxPoolItem * SfxStringItem::Clone(SfxItemPool *) const
 {
 	return new SfxStringItem(*this);
 }
-

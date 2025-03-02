@@ -262,8 +262,3 @@ void __EXPORT ScServerObject::Notify( SfxBroadcaster& rBC, const SfxHint& rHint 
 	if ( bDataChanged && HasDataLinks() )
 		SvLinkSource::NotifyDataChanged();
 }
-
-
-
-
-

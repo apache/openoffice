@@ -397,5 +397,3 @@ Sequence< Reference< XIdlField > > CompoundIdlClassImpl::getFields()
 }
 
 }
-
-

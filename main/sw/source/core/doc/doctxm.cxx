@@ -2431,4 +2431,3 @@ sal_Bool SwTOXBase::GetInfo( SfxPoolItem& rInfo ) const
 	}
 	return sal_True;
 }
-

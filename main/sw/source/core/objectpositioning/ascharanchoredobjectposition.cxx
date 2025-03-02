@@ -451,4 +451,3 @@ sal_uInt8 SwAsCharAnchoredObjectPosition::GetLineAlignment() const
 {
     return mnLineAlignment;
 }
-

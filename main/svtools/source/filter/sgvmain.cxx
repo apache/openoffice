@@ -1123,4 +1123,3 @@ for n:=0 to 63 do
  if plotbal<=dmatrix0[n] then cmatrix0[n]:=col0 else cmatrix0[n]:=col1;
 end;
 */
-

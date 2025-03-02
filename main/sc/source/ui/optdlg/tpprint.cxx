@@ -136,4 +136,3 @@ sal_Bool ScTpPrintOptions::FillItemSet( SfxItemSet& rCoreAttrs )
         return sal_False;
     }
 }
-

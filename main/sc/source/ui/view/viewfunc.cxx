@@ -3013,7 +3013,3 @@ void ScViewFunc::InsertNameList()
 	if ( pDocSh->GetDocFunc().InsertNameList( aPos, sal_False ) )
 		pDocSh->UpdateOle(GetViewData());
 }
-
-
-
-

@@ -735,4 +735,3 @@ void    SfxNewFileDialog::SetTemplateFlags(sal_uInt16 nSet)
 {
     pImpl->SetTemplateFlags(nSet);
 }
-

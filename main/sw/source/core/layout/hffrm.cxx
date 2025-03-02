@@ -790,6 +790,3 @@ void SwPageFrm::PrepareFooter()
 		delete pLay;
 	}
 }
-
-
-

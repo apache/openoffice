@@ -1040,4 +1040,3 @@ void XclExpXmlStream::Trace( const char* format, ...)
     vfprintf( stderr, format, ap );
     va_end( ap );
 }
-

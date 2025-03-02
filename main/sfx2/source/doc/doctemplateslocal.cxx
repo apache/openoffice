@@ -256,4 +256,3 @@ void SAL_CALL DocTemplLocaleHelper::setDocumentLocator( const uno::Reference< xm
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
-

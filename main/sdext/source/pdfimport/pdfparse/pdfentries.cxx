@@ -1474,4 +1474,3 @@ PDFEntry* PDFPart::clone() const
     cloneSubElements( pNewPt->m_aSubElements );
     return pNewPt;
 }
-

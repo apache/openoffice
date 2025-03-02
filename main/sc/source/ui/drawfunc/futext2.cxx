@@ -294,6 +294,3 @@ SdrOutliner* FuText::MakeOutliner()
 
 	return pOutl;
 }
-
-
-

@@ -292,4 +292,3 @@ SwExtTextInput* SwDoc::GetExtTextInput() const
 			"more than one InputEngine available" );
 	return (SwExtTextInput*)pExtInputRing;
 }
-

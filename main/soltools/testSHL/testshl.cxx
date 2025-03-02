@@ -91,4 +91,3 @@ void usage(){
             "USAGE: testSHL shlname scename [logname] [-boom]\n" );
     exit(0);
 }
-

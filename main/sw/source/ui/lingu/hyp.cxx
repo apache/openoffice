@@ -169,4 +169,3 @@ SwHyphWrapper::~SwHyphWrapper()
     if( bInfoBox )
         InfoBox( &pView->GetEditWin(), SW_RESSTR(STR_HYP_OK) ).Execute();
 }
-

@@ -88,5 +88,3 @@ void SwWait::LeaveWaitAndUnlockDispatcher()
         pFrame = SfxViewFrame::GetNext( *pFrame, &mrDoc, sal_False );
     }
 }
-
-

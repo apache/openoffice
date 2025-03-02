@@ -152,4 +152,3 @@ Reference< XFormulaParser > ScFormulaParserPool::getFormulaParser( const OUStrin
 }
 
 // ============================================================================
-

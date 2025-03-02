@@ -1156,4 +1156,3 @@ Reference< XInterface > SAL_CALL ManagerImpl_create(
 }
 
 }
-

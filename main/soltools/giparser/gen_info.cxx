@@ -81,4 +81,3 @@ GenericInfo::CreateMyList() const
     return * ( const_cast<GenericInfo&>(*this).dpSubList = new List_GenericInfo);
 
 }
-

@@ -455,4 +455,3 @@ void AnchorOverlayObject::SetAnchorState( const AnchorState aState)
 }
 
 } } // end of namespace sw::annotation
-

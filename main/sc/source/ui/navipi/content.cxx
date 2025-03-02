@@ -1788,4 +1788,3 @@ void ScContentLBoxString::Paint( const Point& rPos, SvLBox& rDev, sal_uInt16 nFl
 //
 //------------------------------------------------------------------------
 //
-

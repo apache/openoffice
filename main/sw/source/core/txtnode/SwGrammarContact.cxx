@@ -196,4 +196,3 @@ void finishGrammarCheck( SwTxtNode& rTxtNode )
     if( pGrammarContact )
         pGrammarContact->finishGrammarCheck( rTxtNode );
 }
-

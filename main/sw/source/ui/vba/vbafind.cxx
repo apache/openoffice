@@ -421,4 +421,3 @@ SwVbaFind::getServiceNames()
 	}
 	return aServiceNames;
 }
-

@@ -2202,4 +2202,3 @@ void SwEnhancedPDFExportHelper::MakeHeaderFooterLinks( vcl::PDFExtOutDevData& rP
             }
         }
 }
-

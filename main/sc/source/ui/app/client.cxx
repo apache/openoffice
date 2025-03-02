@@ -265,4 +265,3 @@ void __EXPORT ScClient::MakeVisible()
 			pViewSh->ScrollToObject( pDrawObj );
 	}
 }
-

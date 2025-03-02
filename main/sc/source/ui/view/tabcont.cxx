@@ -630,6 +630,3 @@ void ScTabControl::Mirror()
         nSelPageIdByMouse = TabBar::PAGE_NOT_FOUND;  // only once after a Select()
     }
 }
-
-
-

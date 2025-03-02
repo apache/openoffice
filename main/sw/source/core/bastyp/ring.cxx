@@ -117,5 +117,3 @@ sal_uInt32 Ring::numberOf() const
     }
     return nRet;
 }
-
-

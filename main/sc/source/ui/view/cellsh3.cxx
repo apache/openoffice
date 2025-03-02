@@ -971,4 +971,3 @@ void ScCellShell::Execute( SfxRequest& rReq )
 			break;
 	}
 }
-

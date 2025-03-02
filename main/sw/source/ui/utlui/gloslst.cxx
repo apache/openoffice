@@ -506,5 +506,3 @@ void	SwGlossaryList::ClearGroups()
 	aGroupArr.Remove( 0, nCount );
 	bFilled = sal_False;
 }
-
-

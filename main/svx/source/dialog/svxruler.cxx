@@ -3969,4 +3969,3 @@ void SvxRuler::SetTabsRelativeToIndent( sal_Bool bRel )
 {
     pRuler_Imp->bIsTabsRelativeToIndent = bRel;
 }
-

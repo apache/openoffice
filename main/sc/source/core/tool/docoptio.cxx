@@ -434,5 +434,3 @@ void ScDocCfg::SetOptions( const ScDocOptions& rNew )
 	aCalcItem.SetModified();
 	aLayoutItem.SetModified();
 }
-
-

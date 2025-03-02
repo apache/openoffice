@@ -173,4 +173,3 @@ extern "C" sal_Int32 SAL_CALL rtl_compareUuid( const sal_uInt8 *pUUID1 , const s
     return 0;
 
 }	
-

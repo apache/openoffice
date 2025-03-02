@@ -169,6 +169,3 @@ sal_Bool SvxRotateModeItem::PutValue( const uno::Any& rVal, sal_uInt8 /*nMemberI
 	SetValue( (sal_uInt16)eSvx );
 	return sal_True;
 }
-
-
-

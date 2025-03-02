@@ -175,7 +175,3 @@ void __EXPORT ScHFEditDlg::PageCreated( sal_uInt16 /* nId */, SfxTabPage& rPage 
 
 	((ScHFEditPage&)rPage).SetNumType(eNumType);
 }
-
-
-
-

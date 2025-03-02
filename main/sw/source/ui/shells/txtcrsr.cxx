@@ -363,4 +363,3 @@ void SwTextShell::ExecMoveMisc(SfxRequest &rReq)
     rReq.Done();
 
 }
-

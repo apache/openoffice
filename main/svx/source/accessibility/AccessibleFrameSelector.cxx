@@ -760,4 +760,3 @@ void AccFrameSelector::Invalidate()
 
 } // namespace a11y
 } // namespace svx
-

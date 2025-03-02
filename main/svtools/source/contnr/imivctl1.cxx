@@ -4674,5 +4674,3 @@ void SvxIconChoiceCtrl_Impl::CallEventListeners( sal_uLong nEvent, void* pData )
 {
     pView->CallImplEventListeners( nEvent, pData );
 }
-
-

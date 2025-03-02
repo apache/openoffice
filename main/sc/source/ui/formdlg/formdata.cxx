@@ -52,6 +52,3 @@ void ScFormEditData::SaveValues()
 	Reset();
 	pParent = pTemp;
 }
-
-
-

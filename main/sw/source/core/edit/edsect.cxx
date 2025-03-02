@@ -448,4 +448,3 @@ bool SwEditShell::DoSpecialInsert()
 
 	return bRet;
 }
-

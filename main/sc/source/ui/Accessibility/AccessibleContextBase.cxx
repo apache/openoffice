@@ -621,4 +621,3 @@ void ScAccessibleContextBase::IsObjectValid() const
     if (rBHelper.bDisposed || rBHelper.bInDispose)
         throw lang::DisposedException();
 }
-

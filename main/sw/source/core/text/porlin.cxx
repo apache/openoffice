@@ -419,4 +419,3 @@ void SwLinePortion::HandlePortion( SwPortionHandler& rPH ) const
     String aString;
     rPH.Special( GetLen(), aString, GetWhichPor() );
 }
-

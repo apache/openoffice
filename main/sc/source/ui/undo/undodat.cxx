@@ -2181,9 +2181,3 @@ sal_Bool __EXPORT ScUndoChartData::CanRepeat(SfxRepeatTarget& /* rTarget */) con
 {
 	return sal_False;
 }
-
-
-
-
-
-

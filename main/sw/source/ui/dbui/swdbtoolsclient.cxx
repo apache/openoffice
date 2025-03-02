@@ -241,4 +241,3 @@ sal_Int32 SwDbtoolsClient::getDefaultNumberFormat(
         sRet = xConversion->getFormattedValue(_rxColumn, _rxFormatter, _rLocale, _rNullDate);
     return sRet;
 }
-

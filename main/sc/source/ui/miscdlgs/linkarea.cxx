@@ -361,4 +361,3 @@ sal_uLong ScLinkedAreaDlg::GetRefresh()
 	else
 		return 0;	// disabled
 }
-

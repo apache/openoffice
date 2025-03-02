@@ -3384,5 +3384,3 @@ void HtmlErrorContext::SetContext( sal_uInt16 nResId, const String& rURL1, const
 }
 
 // =====================================================================
-
-

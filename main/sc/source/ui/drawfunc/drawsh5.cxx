@@ -731,7 +731,3 @@ ScDrawView* ScDrawShell::GetDrawView()
 {
     return pViewData->GetView()->GetScDrawView();
 }
-
-
-
-

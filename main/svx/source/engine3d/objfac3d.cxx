@@ -102,5 +102,3 @@ IMPL_LINK( E3dObjFactory, MakeObject, SdrObjFactory*, pObjFactory)
 	}
 	return 0;
 }
-
-

@@ -873,6 +873,3 @@ uno::Any SAL_CALL ScAutoFormatFieldObj::getPropertyValue( const rtl::OUString& a
 SC_IMPL_DUMMY_PROPERTY_LISTENER( ScAutoFormatFieldObj )
 
 //------------------------------------------------------------------------
-
-
-

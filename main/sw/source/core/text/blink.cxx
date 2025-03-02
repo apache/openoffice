@@ -190,5 +190,3 @@ void SwBlink::FrmDelete( const SwRootFrm* pRoot )
 			++nPos;
 	}
 }
-
-

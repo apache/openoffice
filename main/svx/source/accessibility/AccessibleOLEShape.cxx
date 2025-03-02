@@ -239,4 +239,3 @@ uno::Any SAL_CALL AccessibleOLEShape::getExtendedAttributes()
 {
     return CreateAccessibleName ();
 }
-

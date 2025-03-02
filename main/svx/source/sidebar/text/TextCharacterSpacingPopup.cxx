@@ -76,4 +76,3 @@ void TextCharacterSpacingPopup::PopupModeEndCallback (void)
 
 
 } } // end of namespace svx::sidebar
-

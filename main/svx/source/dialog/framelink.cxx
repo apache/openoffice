@@ -1526,4 +1526,3 @@ void DrawDiagFrameBorders(
 
 } // namespace frame
 } // namespace svx
-

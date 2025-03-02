@@ -192,4 +192,3 @@ sal_uLong FileList::Count( void ) const
 {
 	return pStrList->Count();
 }
-

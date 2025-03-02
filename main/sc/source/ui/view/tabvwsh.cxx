@@ -121,6 +121,3 @@ rtl::OUString ScTabViewShell::GetFormula(ScAddress& rAddress)
 	}
 	return sFormula;
 }
-
-
-

@@ -361,4 +361,3 @@ sal_Bool SvByteStringsISortDtor::Seek_Entry( const ByteStringPtr aE, sal_uInt16*
 	if( pP ) *pP = nU;
 	return sal_False;
 }
-

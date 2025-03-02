@@ -70,6 +70,3 @@ void SwSplitTblDlg::Apply()
     rShell.SplitTable( m_nSplit );
 
 }
-
-
-

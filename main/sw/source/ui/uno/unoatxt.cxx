@@ -1298,7 +1298,3 @@ void SwAutoTextEventDescriptor::getByName(
 		delete pBlocks;
 	}
 }
-
-
-
-

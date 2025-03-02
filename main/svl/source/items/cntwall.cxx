@@ -159,5 +159,3 @@ sal_Bool CntWallpaperItem::PutValue( const com::sun::star::uno::Any&,sal_uInt8 )
     DBG_ERROR("Not implemented!");
 	return sal_False;
 }
-
-

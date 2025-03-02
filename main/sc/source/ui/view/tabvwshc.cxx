@@ -318,6 +318,3 @@ SfxModelessDialog* ScTabViewShell::CreateRefDialog(
 
 	return pResult;
 }
-
-
-

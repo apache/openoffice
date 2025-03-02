@@ -848,4 +848,3 @@ void SfxChildWindow::RegisterChildWindow(SfxModule* pMod, SfxChildWinFactory* pF
 {
     SFX_APP()->RegisterChildWindow_Impl( pMod, pFact );
 }
-

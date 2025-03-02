@@ -310,4 +310,3 @@ void SfxObjectShell::ClearEmbeddedObjects()
     // frees alle space taken by embedded objects
     DELETEZ( pImp->mpObjectContainer );
 }
-

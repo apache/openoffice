@@ -281,4 +281,3 @@ IMPL_LINK( ScRedlineOptionsTabPage, ColorHdl, ColorListBox *, EMPTYARG )
 */
 	return 0;
 }
-

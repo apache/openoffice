@@ -152,6 +152,3 @@ void LotusFontBuffer::MakeFont( ENTRY* pEntry )
 	delete pEntry->pTmpName;
 	pEntry->pTmpName = NULL;
 }
-
-
-

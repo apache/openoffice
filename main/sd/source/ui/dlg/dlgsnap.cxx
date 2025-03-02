@@ -226,6 +226,3 @@ void SdSnapLineDlg::SetInputFields(sal_Bool bEnableX, sal_Bool bEnableY)
 		aFtY.Disable();
 	}
 }
-
-
-

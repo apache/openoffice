@@ -195,5 +195,3 @@ sal_Bool SwDoc::InsertGlossary( SwTextBlocks& rBlock, const String& rEntry,
 	rBlock.EndGetDoc();
 	return bRet;
 }
-
-

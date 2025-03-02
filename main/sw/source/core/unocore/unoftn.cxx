@@ -707,4 +707,3 @@ throw (beans::UnknownPropertyException, lang::WrappedTargetException,
     OSL_ENSURE(false,
         "SwXFootnote::removeVetoableChangeListener(): not implemented");
 }
-

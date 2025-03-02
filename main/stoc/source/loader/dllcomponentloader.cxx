@@ -254,4 +254,3 @@ Reference<XInterface> SAL_CALL DllComponentLoader_CreateInstance( const Referenc
 }
 
 }
-

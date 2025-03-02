@@ -864,4 +864,3 @@ void ScDocument::ApplyAsianEditSettings( ScEditEngineDefaulter& rEngine )
     rEngine.SetAsianCompressionMode( GetAsianCompression() );
     rEngine.SetKernAsianPunctuation( GetAsianKerning() );
 }
-

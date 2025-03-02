@@ -785,4 +785,3 @@ sal_Bool ScPreviewLocationData::GetMainCellRange( ScRange& rRange, Rectangle& rP
     }
     return sal_False;       // not found
 }
-

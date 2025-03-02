@@ -2970,5 +2970,3 @@ void  SwStyleSheetIterator::Notify( SfxBroadcaster&, const SfxHint& rHint )
         }
 	}
 }
-
-

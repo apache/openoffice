@@ -224,4 +224,3 @@ void ConfigurationControllerBroadcaster::DisposeAndClear (void)
 
 
 } } // end of namespace sd::framework
-

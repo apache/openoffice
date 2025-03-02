@@ -1436,5 +1436,3 @@ void GetHTMLWriter( const String&, const String& rBaseURL, WriterRef& xRet )
 {
     xRet = new SwHTMLWriter( rBaseURL );
 }
-
-

@@ -80,5 +80,3 @@ SfxViewFactory::~SfxViewFactory()
 {
 	DBG_DTOR(SfxViewFactory, 0);
 }
-
-

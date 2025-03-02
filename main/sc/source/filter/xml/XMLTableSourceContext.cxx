@@ -139,4 +139,3 @@ void ScXMLTableSourceContext::EndElement()
 		}
 	}
 }
-

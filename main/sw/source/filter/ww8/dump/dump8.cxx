@@ -162,6 +162,3 @@ void MyWin::KeyInput( const KeyEvent& rKEvt )
 {
 	WorkWindow::KeyInput( rKEvt );
 }
-
-
-

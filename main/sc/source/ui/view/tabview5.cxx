@@ -717,5 +717,3 @@ void ScTabView::ResetBrushDocument()
         SetActivePointer( Pointer( POINTER_ARROW ) );   // switch pointers also when ended with escape key
     }
 }
-
-

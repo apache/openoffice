@@ -314,4 +314,3 @@ sal_Bool SwDateTimeField::PutValue( const uno::Any& rVal, sal_uInt16 nWhichId )
 	}
 	return sal_True;
 }
-

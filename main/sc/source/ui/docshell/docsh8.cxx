@@ -1083,5 +1083,3 @@ sal_uLong ScDocShell::DBaseExport( const String& rFullFileName, CharSet eCharSet
 
 	return nErr;
 }
-
-

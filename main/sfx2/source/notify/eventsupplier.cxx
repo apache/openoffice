@@ -888,4 +888,3 @@ TModelList::iterator SfxGlobalEvents_Impl::impl_searchDoc(const css::uno::Refere
 
     return pIt;
 }
-

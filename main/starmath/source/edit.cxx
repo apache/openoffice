@@ -982,4 +982,3 @@ uno::Reference< XAccessible > SmEditWindow::CreateAccessible()
     }
     return xAccessible;
 }
-

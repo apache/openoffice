@@ -258,4 +258,3 @@ void ScXMLDetectiveOperationContext::EndElement()
 	if( bHasType && (aDetectiveOp.nIndex >= 0) )
 		GetScImport().GetDetectiveOpArray()->AddDetectiveOp( aDetectiveOp );
 }
-

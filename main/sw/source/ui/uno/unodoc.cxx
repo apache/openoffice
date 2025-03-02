@@ -121,4 +121,3 @@ uno::Reference< uno::XInterface > SAL_CALL SwGlobalDocument_createInstance(
 	SfxObjectShell* pShell = new SwGlobalDocShell( SFX_CREATE_MODE_STANDARD );
 	return uno::Reference< uno::XInterface >( pShell->GetModel() );
 }
-

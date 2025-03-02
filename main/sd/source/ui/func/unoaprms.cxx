@@ -133,5 +133,3 @@ void SdAnimationPrmsUndoAction::Redo()
 SdAnimationPrmsUndoAction::~SdAnimationPrmsUndoAction()
 {
 }
-
-

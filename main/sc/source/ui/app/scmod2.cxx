@@ -99,5 +99,3 @@ sal_Bool ScModule::HasThesaurusLanguage( sal_uInt16 nLang )
 
 	return bHasLang;
 }
-
-

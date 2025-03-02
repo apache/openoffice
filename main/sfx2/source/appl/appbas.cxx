@@ -324,4 +324,3 @@ void SfxApplication::PropState_Impl( SfxItemSet &rSet )
 		}
 	}
 }
-

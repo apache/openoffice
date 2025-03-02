@@ -414,4 +414,3 @@ sal_Bool ExtTextView::UnindentBlock()
 {
 	return ImpIndentBlock( sal_False );
 }
-

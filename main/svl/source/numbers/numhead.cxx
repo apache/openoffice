@@ -242,4 +242,3 @@ void ImpSvNumMultipleWriteHeader::StartEntry()
 	sal_uLong nPos = rStream.Tell();
 	nEntryStart = nPos;
 }
-

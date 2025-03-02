@@ -64,5 +64,3 @@ void SvxUnoShapeModifyListener::invalidate() throw()
 {
 	mpObj = NULL;
 }
-
-

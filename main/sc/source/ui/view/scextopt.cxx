@@ -217,4 +217,3 @@ void ScExtDocOptions::SetCodeName( SCTAB nTab, const String& rCodeName )
 }
 
 // ============================================================================
-

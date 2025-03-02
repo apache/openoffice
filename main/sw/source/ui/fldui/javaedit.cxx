@@ -359,4 +359,3 @@ IMPL_LINK( SwJavaEditDialog, DlgClosedHdl, sfx2::FileDialogHelper *, EMPTYARG )
 
     return 0;
 }
-

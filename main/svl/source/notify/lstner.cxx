@@ -186,4 +186,3 @@ void SfxListener::Notify( SfxBroadcaster&, const SfxHint& )
 				"notification from unregistered broadcaster" );
     #endif
 }
-

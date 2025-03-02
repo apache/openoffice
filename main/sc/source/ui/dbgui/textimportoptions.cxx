@@ -110,4 +110,3 @@ IMPL_LINK( ScTextImportOptionsDlg, RadioHdl, RadioButton*, pBtn )
     }
     return 0;
 }
-

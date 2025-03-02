@@ -180,4 +180,3 @@ void SwOleClient::FormatChanged()
     }
 }
 // <--
-

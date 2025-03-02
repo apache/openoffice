@@ -262,7 +262,3 @@ void ScOutputData::DrawingSingle(const sal_uInt16 nLayer)
 	if (bHad)
 		DrawSelectiveObjects( nLayer );
 }
-
-
-
-

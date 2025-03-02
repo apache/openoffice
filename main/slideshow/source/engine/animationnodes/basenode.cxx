@@ -762,4 +762,3 @@ void BaseNode::showTreeFromWithin() const
 
 } // namespace internal
 } // namespace slideshow
-

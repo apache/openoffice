@@ -595,4 +595,3 @@ extern "C" {
 		return pReturn ;
 	}
 } // extern "C" 
-

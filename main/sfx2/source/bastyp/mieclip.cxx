@@ -101,4 +101,3 @@ SvStream* MSE40HTMLClipFormatObj::IsValid( SvStream& rStream )
 
 	return pStrm;
 }
-

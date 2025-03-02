@@ -1436,4 +1436,3 @@ void XclRefmode::SaveXml( XclExpXmlStream& rStrm )
             XML_refMode, GetBool() ? "A1" : "R1C1",
             FSEND );
 }
-

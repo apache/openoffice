@@ -178,4 +178,3 @@ IMPL_STATIC_LINK(SfxTemplateControllerItem, SetWaterCanStateHdl_Impl,
     delete pState;
     return 0;
 }
-

@@ -176,5 +176,3 @@ sal_Bool SwFldMgr::IsDBNumeric( const String& rDBName, const String& rTblQryName
 	}
 	return bNumeric;
 }
-
-

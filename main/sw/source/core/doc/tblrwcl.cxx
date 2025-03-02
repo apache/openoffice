@@ -4755,5 +4755,3 @@ sal_Bool SwShareBoxFmts::Seek_Entry( const SwFrmFmt& rFmt, sal_uInt16* pPos ) co
 		*pPos = nU;
 	return sal_False;
 }
-
-

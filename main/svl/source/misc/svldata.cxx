@@ -84,4 +84,3 @@ ImpSvlData & ImpSvlData::GetSvlData()
 		pSvlData= new ImpSvlData;
 	return *pSvlData;
 }
-

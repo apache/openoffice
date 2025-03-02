@@ -138,5 +138,3 @@ sal_Bool SAL_CALL SvxFmDrawPage::hasForms(void) throw( ::com::sun::star::uno::Ru
 {
 	return SvxDrawPage::getSupportedServiceNames();
 }
-
-

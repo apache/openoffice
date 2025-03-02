@@ -2170,4 +2170,3 @@ Rectangle BrowseBox::GetFieldRectPixelAbs( sal_Int32 _nRowId,sal_uInt16 _nColId,
 }
 
 // ------------------------------------------------------------------------- EOF
-

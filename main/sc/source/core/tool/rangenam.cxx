@@ -936,6 +936,3 @@ void ScRangeName::UpdateTabRef(SCTAB nOldTable, sal_uInt16 nFlag, SCTAB nNewTabl
             CopyRangeinScope( copyScope, nOldTable);
        }
 }
-
-
-

@@ -310,4 +310,3 @@ void SAL_CALL ScFilterOptionsObj::setSourceDocument( const uno::Reference<lang::
 {
 	bExport = sal_True;
 }
-

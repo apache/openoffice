@@ -1878,5 +1878,3 @@ long SwDoc::MergeDoc( const SwDoc& rDoc )
 
 	return nRet;
 }
-
-

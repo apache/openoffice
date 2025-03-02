@@ -985,5 +985,3 @@ void InterfaceIdlClassImpl::createObject( Any & rObj )
 }
 
 }
-
-

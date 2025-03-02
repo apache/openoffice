@@ -357,6 +357,3 @@ sal_Bool SwDrawModeGrf::PutValue( const uno::Any& rVal,
 	}
 	return sal_False;
 }
-
-
-

@@ -790,4 +790,3 @@ void XclExpNameManager::SaveXml( XclExpXmlStream& rStrm )
 }
 
 // ============================================================================
-

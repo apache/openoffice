@@ -1145,4 +1145,3 @@ ScCellTextObj::ScCellTextObj(ScDocShell* pDocSh, const ScAddress& rP) :
 ScCellTextObj::~ScCellTextObj() throw()
 {
 }
-

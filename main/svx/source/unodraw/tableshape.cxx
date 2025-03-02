@@ -187,4 +187,3 @@ void SvxTableShape::unlock()
 		static_cast< sdr::table::SdrTableObj* >( mpObj.get() )->uno_unlock();
 	SvxShape::unlock();
 }
-

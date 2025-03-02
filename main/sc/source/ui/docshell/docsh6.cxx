@@ -463,5 +463,3 @@ sal_Bool ScDocShell::ReloadTabLinks()
 
 	return sal_True;		//! Fehler erkennen
 }
-
-

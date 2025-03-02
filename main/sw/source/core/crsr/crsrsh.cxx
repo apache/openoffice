@@ -3565,4 +3565,3 @@ void SwCrsrShell::GetSmartTagTerm( const Point& rPt, SwRect& rSelectRect,
         }
     }
 }
-

@@ -1339,4 +1339,3 @@ SlideExclusionState GetSlideExclusionState (model::PageEnumeration& rPageSet)
 } // end of anonymous namespace
 
 } } } // end of namespace ::sd::slidesorter::controller
-

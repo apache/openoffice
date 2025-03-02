@@ -218,4 +218,3 @@ void ScXMLTextPContext::EndElement()
 		GetScImport().SetRemoveLastChar(sal_True);
 	}
 }
-

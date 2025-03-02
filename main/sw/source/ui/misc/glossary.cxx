@@ -1307,5 +1307,3 @@ void	SwGlossaryDlg::ResumeShowAutoText()
 	}
 	ResetResumeData();
 }
-
-

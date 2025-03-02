@@ -94,6 +94,3 @@ SwSortOptions::~SwSortOptions()
 {
 	aKeys.DeleteAndDestroy(0, aKeys.Count());
 }
-
-
-

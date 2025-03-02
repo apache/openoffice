@@ -748,7 +748,3 @@ IMPL_LINK( SwFldFuncPage, ModifyHdl, Edit *, EMPTYARG )
 
 	return 0;
 }
-
-
-
-

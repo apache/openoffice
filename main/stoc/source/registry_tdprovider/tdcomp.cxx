@@ -179,5 +179,3 @@ Sequence< OUString > CompoundTypeDescriptionImpl::getMemberNames()
 }
 
 }
-
-

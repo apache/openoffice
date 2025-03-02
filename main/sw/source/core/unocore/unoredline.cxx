@@ -717,4 +717,3 @@ uno::Sequence<sal_Int8> SwXRedline::getImplementationId()
     }
     return aId;
 }
-

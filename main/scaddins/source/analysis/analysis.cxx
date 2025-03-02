@@ -1375,5 +1375,3 @@ double SAL_CALL AnalysisAddIn::getConvert( double f, const STRING& aFU, const ST
     double fRet = pCDL->Convert( f, aFU, aTU );
     RETURN_FINITE( fRet );
 }
-
-

@@ -2807,4 +2807,3 @@ SdrObject* SwDrawVirtObj::getFullDragClone() const
 }
 
 // eof
-

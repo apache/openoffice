@@ -232,7 +232,3 @@ void SwLabPrtPage::Reset(const SfxItemSet& )
 
 	aSynchronCB.Check(aItem.bSynchron);
 }
-
-
-
-

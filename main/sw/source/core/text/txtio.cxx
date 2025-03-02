@@ -941,4 +941,3 @@ SvStream &SwDropPortion::operator<<( SvStream &rOs ) const //$ ostream
 #endif /* OSL_DEBUG_LEVEL */
 
 #endif // DBG_UTIL
-

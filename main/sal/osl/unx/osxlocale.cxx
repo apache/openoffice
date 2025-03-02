@@ -122,4 +122,3 @@ extern "C" int macxp_OSXConvertCFEncodingToIANACharSetName( char *buffer, unsign
 
 	return( noErr );
 }
-

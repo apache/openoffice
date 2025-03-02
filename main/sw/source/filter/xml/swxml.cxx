@@ -1115,4 +1115,3 @@ sal_uInt16 XMLReader::GetSectionList( SfxMedium& rMedium,
 	}
 	return rStrings.Count();
 }
-

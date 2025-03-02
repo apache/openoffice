@@ -74,4 +74,3 @@ void ScDoubleField::SetValue( double fValue, sal_Int32 nDecPlaces, bool bEraseTr
 }
 
 // ============================================================================
-

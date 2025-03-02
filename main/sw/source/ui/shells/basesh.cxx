@@ -2967,4 +2967,3 @@ void SwBaseShell::ExecField( SfxRequest& rReq )
 			ASSERT(sal_False, falscher Dispatcher);
 	}
 }
-

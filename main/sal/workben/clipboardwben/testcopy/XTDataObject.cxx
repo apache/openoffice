@@ -463,4 +463,3 @@ STDMETHODIMP CEnumFormatEtc::Clone( IEnumFORMATETC** ppenum )
 
 	return hr;
 }
-

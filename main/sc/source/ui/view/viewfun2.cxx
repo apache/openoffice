@@ -3137,5 +3137,3 @@ void ScViewFunc::SetValidation( const ScValidationData& rNew )
 
 	ApplyAttr( aItem );			// mit Paint und Undo...
 }
-
-

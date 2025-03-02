@@ -113,4 +113,3 @@ void ToolTipMultiListBox::RequestHelp( const HelpEvent& rHEvt )
 } // namespace svtools
 
 // ============================================================================
-

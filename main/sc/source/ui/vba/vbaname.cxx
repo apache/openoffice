@@ -262,4 +262,3 @@ ScVbaName::getServiceNames()
 	}
 	return aServiceNames;
 }
-

@@ -1637,4 +1637,3 @@ void GalleryTheme::InsertAllThemes( ListBox& rListBox )
 	for( sal_uInt16 i = RID_GALLERYSTR_THEME_FIRST; i <= RID_GALLERYSTR_THEME_LAST; i++ )
 		rListBox.InsertEntry( String( GAL_RESID( i ) ) );
 }
-

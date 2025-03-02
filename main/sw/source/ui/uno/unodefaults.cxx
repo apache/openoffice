@@ -61,6 +61,3 @@ SfxItemPool* SwSvxUnoDrawPool::getModelPool( sal_Bool /*bReadOnly*/ ) throw()
     }
     return 0;
 }
-
-
-

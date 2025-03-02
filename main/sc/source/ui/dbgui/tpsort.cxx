@@ -1078,5 +1078,3 @@ IMPL_LINK( ScTabPageSortOptions, FillAlgorHdl, void *, EMPTYARG )
 	aLbAlgorithm.SetUpdateMode( sal_True );
 	return 0;
 }
-
-

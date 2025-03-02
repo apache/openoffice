@@ -219,4 +219,3 @@ void Ruler::ExtraDown()
 }
 
 } // end of namespace sd
-

@@ -272,4 +272,3 @@ void ScXMLSortByContext::EndElement()
 {
 	pSortContext->AddSortField(sFieldNumber, sDataType, sOrder);
 }
-

@@ -872,4 +872,3 @@ uno::Any SAL_CALL SdUnoFindAllAccess::getByIndex( sal_Int32 Index )
 		aAny <<= pRefs[ Index ];
 	return aAny;
 }
-

@@ -597,6 +597,3 @@ void SvMacroTableEventDescriptor::copyMacrosIntoTable(
 		}
 	}
 }
-
-
-

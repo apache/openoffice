@@ -126,4 +126,3 @@ SvXMLImportContext *ScXMLCellRangeSourceContext::CreateChildContext(
 void ScXMLCellRangeSourceContext::EndElement()
 {
 }
-

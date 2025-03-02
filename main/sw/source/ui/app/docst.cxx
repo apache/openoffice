@@ -1329,6 +1329,3 @@ Bitmap SwDocShell::GetStyleFamilyBitmap( SfxStyleFamily eFamily, BmpColorMode eC
 
 	return SfxObjectShell::GetStyleFamilyBitmap( eFamily, eColorMode );
 }
-
-
-

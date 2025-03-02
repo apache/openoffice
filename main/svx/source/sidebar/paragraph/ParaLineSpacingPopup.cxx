@@ -78,5 +78,3 @@ void ParaLineSpacingPopup::PopupModeEndCallback (void)
 
 
 } } // end of namespace svx::sidebar
-
-

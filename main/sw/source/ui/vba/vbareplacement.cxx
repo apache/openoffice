@@ -64,4 +64,3 @@ SwVbaReplacement::getServiceNames()
 	}
 	return aServiceNames;
 }
-

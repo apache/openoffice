@@ -1023,5 +1023,3 @@ sal_Bool SwFieldFormPortion::Format( SwTxtFormatInfo & rInf )
     }
     return ret;
 }
-
-

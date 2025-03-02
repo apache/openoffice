@@ -3475,4 +3475,3 @@ XclExpChart::XclExpChart( const XclExpRoot& rRoot, Reference< XModel > xModel, c
 }
 
 // ============================================================================
-

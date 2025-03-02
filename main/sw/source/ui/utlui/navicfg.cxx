@@ -133,5 +133,3 @@ void SwNavigationConfig::Commit()
 }
 
 void SwNavigationConfig::Notify( const ::com::sun::star::uno::Sequence< rtl::OUString >& ) {}
-
-

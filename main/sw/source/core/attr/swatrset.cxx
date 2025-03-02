@@ -477,4 +477,3 @@ sal_Bool IsInRange( const sal_uInt16* pRange, const sal_uInt16 nId )
 	}
 	return sal_False;
 }
-

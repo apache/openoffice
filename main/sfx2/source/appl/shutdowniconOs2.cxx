@@ -87,5 +87,3 @@ bool ShutdownIcon::GetAutostartOs2( )
     else
         return false;
 }
-
-

@@ -2193,4 +2193,3 @@ void AnimationExporter::exportIterate( SvStream& rStrm, const Reference< XAnimat
 }
 
 } // namespace ppt;
-

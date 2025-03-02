@@ -2063,5 +2063,3 @@ void SwView::StateTabWin(SfxItemSet& rSet)
         rSet.Put(aProtect);
     }
 }
-
-

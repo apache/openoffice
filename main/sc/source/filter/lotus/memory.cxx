@@ -73,6 +73,3 @@ void MemDelete( void )
 	delete pAttrStandard;
 	delete pAttrUnprot;
 }
-
-
-

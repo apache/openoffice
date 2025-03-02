@@ -1011,5 +1011,3 @@ void showTableDesignDialog( ::Window* pParent, ViewShellBase& rBase )
 
 
 }
-
-

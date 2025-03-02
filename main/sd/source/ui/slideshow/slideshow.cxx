@@ -1306,4 +1306,3 @@ Reference< XPresentation2 > CreatePresentation( const SdDrawDocument& rDocument 
 }
 
 // ---------------------------------------------------------
-

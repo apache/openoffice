@@ -105,5 +105,3 @@ void TextControlCombo::Enable( sal_Bool _bEnable, sal_Bool _bChild )
 	mrFTbefore.Enable( _bEnable, _bChild );
 	mrFTafter.Enable( _bEnable, _bChild );
 }
-
-

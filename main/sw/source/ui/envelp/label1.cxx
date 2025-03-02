@@ -1108,6 +1108,3 @@ void SwBusinessDataPage::Reset(const SfxItemSet& rSet)
 	aHomePageED     .SetText(aItem.aCompWWW);
 	aMailED         .SetText(aItem.aCompMail);
 }
-
-
-

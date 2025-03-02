@@ -280,4 +280,3 @@ void SvxSearchConfig::RemoveData(const rtl::OUString& rEngineName)
         }
     }
 }
-

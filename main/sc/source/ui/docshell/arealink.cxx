@@ -523,4 +523,3 @@ IMPL_LINK( ScAreaLink, AreaEndEditHdl, void*, EMPTYARG )
 
     return 0;
 }
-

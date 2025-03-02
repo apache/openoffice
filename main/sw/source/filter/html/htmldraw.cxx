@@ -845,5 +845,3 @@ Writer& OutHTML_DrawFrmFmtAsMarquee( Writer& rWrt,
 
 	return rWrt;
 }
-
-

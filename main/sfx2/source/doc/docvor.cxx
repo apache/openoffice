@@ -2473,4 +2473,3 @@ SfxTemplateOrganizeDlg::~SfxTemplateOrganizeDlg()
 	delete pImp->pPrt;
 	delete pImp;
 }
-

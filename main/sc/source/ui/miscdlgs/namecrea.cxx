@@ -68,7 +68,3 @@ sal_uInt16 ScNameCreateDlg::GetFlags() const
 
 	return nResult;
 }
-
-
-
-

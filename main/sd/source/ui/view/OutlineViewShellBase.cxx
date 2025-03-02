@@ -79,4 +79,3 @@ OutlineViewShellBase::~OutlineViewShellBase (void)
 
 
 } // end of namespace sd
-

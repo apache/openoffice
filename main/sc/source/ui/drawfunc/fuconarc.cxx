@@ -226,5 +226,3 @@ SdrObject* FuConstArc::CreateDefaultObject(const sal_uInt16 nID, const Rectangle
 
 	return pObj;
 }
-
-

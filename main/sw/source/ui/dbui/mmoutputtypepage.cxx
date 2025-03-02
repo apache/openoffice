@@ -95,5 +95,3 @@ IMPL_LINK( SwMailMergeOutputTypePage, TypeHdl_Impl, RadioButton*, EMPTYARG )
     m_pWizard->UpdateRoadmap();
     return 0;
 }
-
-

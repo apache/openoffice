@@ -1691,6 +1691,3 @@ sal_Bool SwParaPortion::UpdateQuoVadis( const XubString &rQuo )
 
 	return pQuo->GetQuoTxt() == rQuo;
 }
-
-
-

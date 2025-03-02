@@ -1302,5 +1302,3 @@ sal_Int32 SvHeaderTabListBox::GetFieldIndexAtPoint(sal_Int32 _nRow,sal_Int32 _nC
 	return -1;
 }
 // -----------------------------------------------------------------------------
-
-

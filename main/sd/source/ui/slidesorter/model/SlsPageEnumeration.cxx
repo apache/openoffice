@@ -277,4 +277,3 @@ void PageEnumerationImpl::AdvanceToNextValidElement (void)
 }
 
 } // end of anonymous namespace
-

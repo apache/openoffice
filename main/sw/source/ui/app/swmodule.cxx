@@ -494,5 +494,3 @@ void	SwModule::RemoveAttrPool()
 	SetPool(0);
 	SfxItemPool::Free(pAttrPool);
 }
-
-

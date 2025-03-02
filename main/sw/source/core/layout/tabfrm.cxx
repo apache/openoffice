@@ -5932,4 +5932,3 @@ bool SwFrm::IsInCoveredCell() const
 
     return bRet;
 }
-

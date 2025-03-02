@@ -4037,5 +4037,3 @@ void SwRootFrm::InvalidateAllObjPos()
         pPageFrm = static_cast<const SwPageFrm*>(pPageFrm->GetNext());
     }
 }
-
-

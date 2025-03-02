@@ -1034,5 +1034,3 @@ void TextDoc::FindAttribs( TextNode* pNode, sal_uInt16 nStartPos, sal_uInt16 nEn
 
 
 */
-
-

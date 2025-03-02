@@ -166,4 +166,3 @@ void HTMLParser::RemoveSGMLComment( String &rString, sal_Bool bFull )
 		}
 	}
 }
-

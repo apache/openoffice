@@ -155,4 +155,3 @@ void SequentialTimeContainer::notifyDeactivating(
 
 } // namespace internal
 } // namespace slideshow
-

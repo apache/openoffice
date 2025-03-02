@@ -628,9 +628,3 @@ void ScUpdateRect::GetContDiff( SCCOL& rX1, SCROW& rY1, SCCOL& rX2, SCROW& rY2 )
     rY2 = nContY2;
 }
 #endif
-
-
-
-
-
-

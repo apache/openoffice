@@ -379,5 +379,3 @@ uno::Any SAL_CALL ScDocDefaultsObj::getPropertyDefault( const rtl::OUString& aPr
 	}
 	return aRet;
 }
-
-

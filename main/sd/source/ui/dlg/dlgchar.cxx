@@ -84,6 +84,3 @@ void SdCharDlg::PageCreated( sal_uInt16 nId, SfxTabPage &rPage )
 		break;
 	}
 }
-
-
-

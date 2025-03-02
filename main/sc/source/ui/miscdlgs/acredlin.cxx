@@ -2132,4 +2132,3 @@ IMPL_LINK( ScAcceptChgDlg, ColCompareHdl, SvSortData*, pSortData )
 	}
 	return eCompare;
 }
-

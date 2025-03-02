@@ -320,4 +320,3 @@ ScVbaVPageBreaks::getServiceNames()
 	}
 	return aServiceNames;
 }
-

@@ -1562,5 +1562,3 @@ SvxRedlinTable* SvxAcceptChgCtr::GetViewTable()
 		return NULL;
 	}
 }
-
-

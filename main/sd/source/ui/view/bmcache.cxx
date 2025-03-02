@@ -70,5 +70,3 @@ void BitmapCache::Remove( const SdPage* pPage )
 			nPos++;
 	}
 }
-
-

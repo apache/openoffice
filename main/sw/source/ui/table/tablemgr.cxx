@@ -377,6 +377,3 @@ int SwTableFUNC::GetRightSeparator(int nNum) const
 	}
 	return i - 1;
 }
-
-
-

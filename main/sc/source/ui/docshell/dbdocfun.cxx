@@ -1498,7 +1498,3 @@ void ScDBDocFunc::UpdateImport( const String& rTarget, const svx::ODataAccessDes
 		}
 	}
 }
-
-
-
-

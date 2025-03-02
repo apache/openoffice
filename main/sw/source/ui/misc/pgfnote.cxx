@@ -364,6 +364,3 @@ sal_uInt16* SwFootNotePage::GetRanges()
 {
 	return aPageRg;
 }
-
-
-

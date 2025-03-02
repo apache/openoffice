@@ -1059,4 +1059,3 @@ void SwUndoInsertLabel::SetDrawObj( sal_uInt8 nLId )
 		nLayerId = nLId;
 	}
 }
-

@@ -73,4 +73,3 @@ ScVbaSeriesCollection::getServiceNames()
 	}
 	return sNames;
 }
-

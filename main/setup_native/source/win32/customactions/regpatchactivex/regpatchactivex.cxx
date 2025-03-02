@@ -114,5 +114,3 @@ extern "C" UINT __stdcall PatchActiveXControl( MSIHANDLE hMSI )
 
 	return ERROR_SUCCESS;
 }
-
-

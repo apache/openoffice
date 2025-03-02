@@ -519,6 +519,3 @@ String ExportGraphic( const Graphic &rGraphic, const String &rGrfName )
 	}
 	return aEmptyStr;
 }
-
-
-

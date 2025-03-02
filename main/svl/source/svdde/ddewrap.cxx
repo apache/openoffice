@@ -93,4 +93,3 @@ func##_PROC lpfn##func = (LONG)GetVersion() >= 0 ? func : func##_9x;
 DEFINE_WAPI_FUNC( DdeCreateStringHandleW );
 DEFINE_WAPI_FUNC( DdeQueryStringW );
 DEFINE_WAPI_FUNC( DdeInitializeW );
-

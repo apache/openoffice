@@ -2242,7 +2242,3 @@ sal_Bool __EXPORT ScUndoBorder::CanRepeat(SfxRepeatTarget& /* rTarget */) const
 {
 	return sal_False;	// s.o.
 }
-
-
-
-

@@ -977,5 +977,3 @@ sal_Bool SvXMLImportItemMapper::PutXMLValue(
 
     return bOk;
 }
-
-

@@ -282,6 +282,3 @@ sal_Bool SwCrsrShell::GotoRegion( const String& rName )
 					SwCrsrShell::READONLY ); // und den akt. Updaten
 	return bRet;
 }
-
-
-

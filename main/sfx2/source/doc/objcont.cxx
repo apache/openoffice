@@ -1224,4 +1224,3 @@ sal_Bool SfxObjectShell::IsModifyPasswordEntered()
 {
     return pImp->m_bModifyPasswordEntered;
 }
-

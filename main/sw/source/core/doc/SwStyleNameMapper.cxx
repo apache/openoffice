@@ -1135,4 +1135,3 @@ const String SwStyleNameMapper::GetSpecialExtraUIName( const String& rExtraProgN
         aRes = *GetExtraUINameArray()[*pIds];
     return aRes;
 }
-

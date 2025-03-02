@@ -160,4 +160,3 @@ IMPL_LINK( SwRetrievedInputStreamDataManager,
 
     return 0;
 }
-

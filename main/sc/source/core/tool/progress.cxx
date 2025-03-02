@@ -200,6 +200,3 @@ void ScProgress::DeleteInterpretProgress()
         --nInterpretProgress;
 	}
 }
-
-
-

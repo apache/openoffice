@@ -138,4 +138,3 @@ void ScXMLLabelRangeContext::EndElement()
 
     GetScImport().AddLabelRange(pLabelRange);
 }
-

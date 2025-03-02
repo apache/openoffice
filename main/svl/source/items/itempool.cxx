@@ -1170,5 +1170,3 @@ void SfxItemPool::SetFileFormatVersion( sal_uInt16 nFileFormatVersion )
 	for ( SfxItemPool *pPool = this; pPool; pPool = pPool->pSecondary )
 		pPool->_nFileFormatVersion = nFileFormatVersion;
 }
-
-

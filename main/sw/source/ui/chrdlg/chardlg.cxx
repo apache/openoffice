@@ -404,5 +404,3 @@ IMPL_LINK( SwCharURLPage, EventHdl, PushButton *, EMPTYARG )
 					::GetActiveView()->GetWrtShell(), pINetItem );
 	return 0;
 }
-
-

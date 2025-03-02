@@ -120,4 +120,3 @@ void FrameDirListBoxWrapper::SetControlValue( SvxFrameDirection eValue )
 // ============================================================================
 
 } // namespace svx
-

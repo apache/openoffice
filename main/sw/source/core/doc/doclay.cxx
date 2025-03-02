@@ -2423,4 +2423,3 @@ void SwDoc::ShareLayout(boost::shared_ptr<SwRootFrm>& rPtr)
 {
     pLayoutPtr = rPtr;
 }
-

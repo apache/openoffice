@@ -469,5 +469,3 @@ SvxFmTbxPrevRec::SvxFmTbxPrevRec( sal_uInt16 nSlotId, sal_uInt16 nId, ToolBox& r
 {
 	rTbx.SetItemBits(nId, rTbx.GetItemBits(nId) | TIB_REPEAT);
 }
-
-

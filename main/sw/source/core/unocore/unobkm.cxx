@@ -684,4 +684,3 @@ uno::Reference<container::XNameContainer> SwXFieldmark::getParameters()
         throw uno::RuntimeException();
     return uno::Reference<container::XNameContainer>(new SwXFieldmarkParameters(pBkm));
 }
-

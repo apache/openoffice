@@ -89,5 +89,3 @@ void ScLinkTransferObj::DragFinished( sal_Int8 nDropAction )
 
 	TransferableHelper::DragFinished( nDropAction );
 }
-
-

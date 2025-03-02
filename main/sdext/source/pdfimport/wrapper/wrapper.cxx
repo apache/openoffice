@@ -1143,4 +1143,3 @@ bool xpdf_ImportFromStream( const uno::Reference< io::XInputStream >&         xI
 }
 
 }
-

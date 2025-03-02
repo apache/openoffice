@@ -2029,4 +2029,3 @@ IntlWrapper*         ScGlobal::GetScIntlWrapper()
     }
     return pLocale;
 }
-

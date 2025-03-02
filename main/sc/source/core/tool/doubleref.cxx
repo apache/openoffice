@@ -507,4 +507,3 @@ bool ScDBExternalRange::isRangeEqual(const ScRange& /*rRange*/) const
 {
     return false;
 }
-

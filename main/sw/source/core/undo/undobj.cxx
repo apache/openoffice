@@ -1372,4 +1372,3 @@ bool IsDestroyFrameAnchoredAtChar(SwPosition const & rAnchorPos,
             ||  !rStart.nContent.GetIndex()
             );
 }
-

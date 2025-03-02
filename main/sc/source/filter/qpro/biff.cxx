@@ -97,4 +97,3 @@ bool ScBiffReader::nextRecord()
 #endif
 	return true;
 }
-

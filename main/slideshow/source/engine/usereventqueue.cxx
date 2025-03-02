@@ -1000,4 +1000,3 @@ void UserEventQueue::callSkipEffectEventHandler (void)
 
 } // namespace internal
 } // namespace presentation
-

@@ -256,6 +256,3 @@ Reference< XInterface > SwDPage::createUnoPage()
 	}
 	return xRet;
 }
-
-
-

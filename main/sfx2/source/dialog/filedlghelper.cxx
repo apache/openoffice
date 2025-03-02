@@ -2910,4 +2910,3 @@ String DecodeSpaces_Impl( const String& rSource )
 // ------------------------------------------------------------------------
 
 }	// end of namespace sfx2
-

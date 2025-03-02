@@ -857,6 +857,3 @@ void SwTextShell::GetAttrState(SfxItemSet &rSet)
 
 	rSet.Put(aCoreSet,sal_False);
 }
-
-
-

@@ -54,4 +54,3 @@ sal_Int64 SAL_CALL OTextCursorHelper::getSomething(
 	return 0;
 }
 // -----------------------------------------------------------------------------
-

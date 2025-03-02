@@ -269,6 +269,3 @@ SfxItemPresentation SfxColumnDateTimeItem::GetPresentation
 	}
 	return SFX_ITEM_PRESENTATION_NAMELESS;
 }
-
-
-

@@ -1391,4 +1391,3 @@ void DoubleCurrencyField::UpdateCurrencyFormat()
 	SetFormat(sNewFormat, eLanguage);
 	m_bChangingFormat = sal_False;
 }
-

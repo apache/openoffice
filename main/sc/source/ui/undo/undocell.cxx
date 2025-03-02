@@ -1119,7 +1119,3 @@ sal_Bool __EXPORT ScUndoRangeNames::CanRepeat(SfxRepeatTarget& /* rTarget */) co
 {
 	return sal_False;
 }
-
-
-
-

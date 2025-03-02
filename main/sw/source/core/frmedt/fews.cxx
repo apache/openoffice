@@ -1389,4 +1389,3 @@ void SwFEShell::MoveObjectIfActive( svt::EmbeddedObjectRef&, const Point& )
 {
     // does not do anything, only avoids crash if the method is used for wrong shell
 }
-

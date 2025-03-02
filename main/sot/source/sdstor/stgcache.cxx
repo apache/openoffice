@@ -558,4 +558,3 @@ sal_Int32 StgCache::Pos2Page( sal_Int32 nPos )
 {
     return ( ( nPos + nPageSize - 1 ) / nPageSize ) * nPageSize - 1;
 }
-

@@ -1918,4 +1918,3 @@ Reference<XInterface> SAL_CALL ImplementationRegistration_CreateInstance(
 }
 
 }
-

@@ -1417,6 +1417,3 @@ void __EXPORT ScCellShell::GetDBState( SfxItemSet& rSet )
 		nWhich = aIter.NextWhich();
 	}
 }
-
-
-

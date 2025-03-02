@@ -2348,4 +2348,3 @@ sal_Bool SwCrsrShell::SelectNxtPrvHyperlink( sal_Bool bNext )
 	}
 	return bRet;
 }
-

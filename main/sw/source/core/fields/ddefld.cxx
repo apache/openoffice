@@ -441,4 +441,3 @@ void SwDDEField::SetPar2(const String& rStr)
 {
 	((SwDDEFieldType*)GetTyp())->SetCmd(rStr);
 }
-

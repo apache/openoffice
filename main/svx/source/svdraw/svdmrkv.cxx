@@ -2208,4 +2208,3 @@ void SdrMarkView::SetDesignMode( sal_Bool _bOn )
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // In diesem Fall bekomme ich kein Notify und beim Aufruf des
 // PaintHandlers->CompleteRedraw() sind auch die SolidHandles sichtbar.
-

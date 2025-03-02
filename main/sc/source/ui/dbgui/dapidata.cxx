@@ -218,7 +218,3 @@ void ScDataPilotDatabaseDlg::FillObjects()
 		DBG_WARNING("exception in database");
 	}
 }
-
-
-
-

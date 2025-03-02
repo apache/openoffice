@@ -1606,5 +1606,3 @@ void SAL_CALL FSStorage::removeStreamElementByHierarchicalName( const ::rtl::OUS
 	if ( !::utl::UCBContentHelper::Kill( aFileURL.GetMainURL( INetURLObject::NO_DECODE ) ) )
 		throw io::IOException(); // TODO: error handling
 }
-
-

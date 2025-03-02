@@ -1025,5 +1025,3 @@ void DrawController::ThrowIfDisposed (void) const
 
 
 } // end of namespace sd
-
-

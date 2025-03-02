@@ -197,4 +197,3 @@ void SwUndoSplitNode::RepeatImpl(::sw::RepeatContext & rContext)
     rContext.GetDoc().SplitNode(
         *rContext.GetRepeatPaM().GetPoint(), bChkTblStt );
 }
-

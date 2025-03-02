@@ -127,5 +127,3 @@ void DeleteOnIdleItems()
 		DELETEZ(rpList);
 	}
 }
-
-

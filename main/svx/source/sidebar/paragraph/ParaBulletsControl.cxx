@@ -129,5 +129,3 @@ IMPL_LINK(ParaBulletsControl, MoreButtonClickHdl_Impl, void*, EMPTYARG)
 }
 
 }} // end of namespace sidebar
-
-

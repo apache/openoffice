@@ -158,5 +158,3 @@ void SvxRulerItem::StateChanged( sal_uInt16 nSID, SfxItemState eState,
         break;
 	}
 }
-
-

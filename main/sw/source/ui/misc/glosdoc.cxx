@@ -797,6 +797,3 @@ Reference< text::XAutoTextEntry > SwGlossaries::GetAutoTextEntry( const String& 
 
 	return xReturn;
 }
-
-
-

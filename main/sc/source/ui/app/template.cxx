@@ -69,7 +69,3 @@ void ScTemplateDlg::InvalidateTemplates()
 void ScTemplateDlg::ToggleApplyTemplate()
 {
 }
-
-
-
-

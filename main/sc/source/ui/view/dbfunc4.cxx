@@ -90,9 +90,3 @@ sal_uInt16 ScDBFunc::DoUpdateCharts( const ScAddress& rPos, ScDocument* pDoc, sa
 	}
 	return nFound;
 }
-
-
-
-
-
-

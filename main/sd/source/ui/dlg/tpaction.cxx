@@ -921,4 +921,3 @@ sal_uInt16 SdTPAction::GetClickActionSdResId( presentation::ClickAction eCA )
 	}
 	return( 0 );
 }
-

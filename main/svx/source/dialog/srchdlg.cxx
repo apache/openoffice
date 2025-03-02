@@ -2573,4 +2573,3 @@ SfxChildWinInfo SvxSearchDialogWrapper::GetInfo() const
 	aInfo.bVisible = sal_False;
 	return aInfo;
 }
-

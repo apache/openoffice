@@ -3410,5 +3410,3 @@ void SvxConvertTo3DItem::StateChanged(sal_uInt16 /*_nId*/, SfxItemState eState, 
         }
 	}
 }
-
-

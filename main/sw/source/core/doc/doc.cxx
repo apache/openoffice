@@ -2761,4 +2761,3 @@ void SwDoc::setExternalData(::sw::tExternalDataType eType,
 {
 	return m_externalData[eType];
 }
-

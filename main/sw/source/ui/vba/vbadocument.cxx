@@ -374,4 +374,3 @@ extern sdecl::ServiceDecl const serviceDecl(
     "SwVbaDocument",
     "ooo.vba.word.Document" );
 }
-

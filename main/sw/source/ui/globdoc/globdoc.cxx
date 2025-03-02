@@ -82,6 +82,3 @@ void SwGlobalDocShell::FillClass( SvGlobalName * pClassName,
 
 	*pUserName = SW_RESSTR(STR_HUMAN_SWGLOBDOC_NAME);
 }
-
-
-

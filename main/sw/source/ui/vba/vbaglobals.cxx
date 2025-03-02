@@ -186,4 +186,3 @@ extern sdecl::ServiceDecl const serviceDecl(
     "SwVbaGlobals",
     "ooo.vba.word.Globals" );
 }
-

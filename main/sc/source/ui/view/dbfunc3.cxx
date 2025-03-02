@@ -2373,7 +2373,3 @@ void ScDBFunc::RepeatDB( sal_Bool bRecord )
 	else		// "Keine Operationen auszufuehren"
 		ErrorMessage(STR_MSSG_REPEATDB_0);
 }
-
-
-
-

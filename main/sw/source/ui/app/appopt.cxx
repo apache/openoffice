@@ -639,4 +639,3 @@ SfxTabPage* SwModule::CreateTabPage( sal_uInt16 nId, Window* pParent, const SfxI
 	DBG_ASSERT( pRet, "SwModule::CreateTabPage(): Unknown tabpage id" );
 	return pRet;
 }
-

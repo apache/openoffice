@@ -556,5 +556,3 @@ AbstractHeaderFooterDialog* SdAbstractDialogFactory_Impl::CreateHeaderFooterDial
 {
 	return new AbstractHeaderFooterDialog_Impl( new ::sd::HeaderFooterDialog( (::sd::ViewShell*)pViewShell, pParent, pDoc, pCurrentPage ));
 }
-
-

@@ -189,5 +189,3 @@ void ScDatabaseDocUtil::PutData( ScDocument* pDoc, SCCOL nCol, SCROW nRow, SCTAB
 		pDoc->PutCell( nCol, nRow, nTab, pCell );
 	}
 }
-
-

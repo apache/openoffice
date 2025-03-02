@@ -65,6 +65,3 @@ SwWebGrfShell::SwWebGrfShell(SwView &_rView) :
 SwWebGrfShell::~SwWebGrfShell()
 {
 }
-
-
-

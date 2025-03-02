@@ -1311,4 +1311,3 @@ XclImpSheetProtectBuffer::Sheet* XclImpSheetProtectBuffer::GetSheetItem( SCTAB n
 }
 
 // ============================================================================
-

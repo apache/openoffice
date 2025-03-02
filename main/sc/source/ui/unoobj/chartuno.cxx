@@ -827,6 +827,3 @@ uno::Reference< beans::XPropertySetInfo > ScChartObj::getPropertySetInfo() throw
 }
 
 //------------------------------------------------------------------------
-
-
-

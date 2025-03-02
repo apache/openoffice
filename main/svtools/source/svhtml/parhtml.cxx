@@ -2366,5 +2366,3 @@ sal_Bool HTMLParser::SetEncodingByHTTPHeader(
     }
 	return bRet;
 }
-
-

@@ -228,4 +228,3 @@ void CContentReader::characters( const std::wstring& character )
         pTagBuilder->addCharacters( character );
     }
 }
-

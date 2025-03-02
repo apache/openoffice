@@ -328,5 +328,3 @@ SvStream &operator<<( SvStream &rStream, const SwRect &rRect )
 	return rStream;
 }
 #endif
-
-

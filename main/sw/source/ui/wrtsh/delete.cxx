@@ -570,7 +570,3 @@ long SwWrtShell::DelPrvWord()
 	ClearMark();
 	return nRet;
 }
-
-
-
-

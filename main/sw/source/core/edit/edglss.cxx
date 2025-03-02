@@ -362,8 +362,3 @@ sal_Bool SwEditShell::GetSelectedText( String &rBuf, int nHndlParaBrk )
 
 	return sal_True;
 }
-
-
-
-
-

@@ -307,7 +307,3 @@ FltError ScFormatFilterPluginImpl::ScExportDif( SvStream& rOut, ScDocument* pDoc
 
 	return eRet;
 }
-
-
-
-

@@ -295,4 +295,3 @@ void CMetaInfoReader::characters( const std::wstring& character )
 		pTagBuilder->addCharacters( character );
 	}
 }
-

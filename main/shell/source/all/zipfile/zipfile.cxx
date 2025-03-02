@@ -245,4 +245,3 @@ long ZipFile::GetFileLongestFileNameLength() const
 
 	return lmax;
 }
-

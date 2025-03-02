@@ -401,6 +401,3 @@ SwGlblDocContent::SwGlblDocContent( const SwSection* pSect )
 	const SwSectionNode* pSectNd = pSect->GetFmt()->GetSectionNode();
 	nDocPos = pSectNd ? pSectNd->GetIndex() : 0;
 }
-
-
-

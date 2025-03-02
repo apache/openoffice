@@ -1068,4 +1068,3 @@ void EmbeddedObjectRef::SetDefaultSizeForChart( const Size& rSizeIn_100TH_MM )
 }
 
 } // namespace svt
-

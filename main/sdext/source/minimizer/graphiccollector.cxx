@@ -454,4 +454,3 @@ void GraphicCollector::CountGraphics( const Reference< XComponentContext >& rxCo
 	{
 	}
 }
-

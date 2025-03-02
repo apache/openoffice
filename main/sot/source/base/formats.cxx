@@ -1698,4 +1698,3 @@ sal_uInt16 SotExchange::IsMath(  const SvGlobalName& rName )
 
 	return nRet;
 }
-

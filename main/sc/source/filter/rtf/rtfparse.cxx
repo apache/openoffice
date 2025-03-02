@@ -410,7 +410,3 @@ void ScRTFParser::ProcToken( ImportInfo* pInfo )
 		}
 	}
 }
-
-
-
-

@@ -823,4 +823,3 @@ void SAL_CALL ScAccessibleDataPilotButton::release()
 {
 	ScAccessibleContextBase::release();
 }
-

@@ -160,5 +160,3 @@ SwNodeIndex& SwNodeIndex::Assign( const SwNode& rNd, long nOffset )
 
 	return *this;
 }
-
-

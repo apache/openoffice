@@ -2812,6 +2812,3 @@ sal_Bool ImpSvNumberInputScan::IsNumberFormat(
     F_Type = eScannedType;
     return res;
 }
-
-
-

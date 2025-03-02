@@ -782,4 +782,3 @@ void ParaLineSpacingControl::ExecuteLineSpacing( sal_uInt16 aIsCustom, sal_uInt1
 }
 
 }} // end of namespace sidebar
-

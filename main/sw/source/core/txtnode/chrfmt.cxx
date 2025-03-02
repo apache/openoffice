@@ -29,6 +29,3 @@
 
 
 TYPEINIT1( SwCharFmt, SwFmt );	//rtti fuer SwCharFmt
-
-
-

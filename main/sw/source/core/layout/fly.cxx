@@ -2961,4 +2961,3 @@ sal_Bool SwFlyFrm::IsPageNumberingFrm()
 }
 
 //Bug 120881(End)
-

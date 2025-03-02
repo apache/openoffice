@@ -1260,5 +1260,3 @@ Writer& OutHTML_SwTblNode( Writer& rWrt, SwTableNode & rNode,
 	}
 	return rWrt;
 }
-
-

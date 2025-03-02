@@ -558,6 +558,3 @@ void SAL_CALL OFSStreamContainer::waitForCompletion()
 
 	m_xAsyncOutputMonitor->waitForCompletion();
 }
-
-
-

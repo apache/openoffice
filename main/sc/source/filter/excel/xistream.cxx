@@ -1165,4 +1165,3 @@ sal_uInt16 XclImpStream::ReadRawData( void* pData, sal_uInt16 nBytes )
 }
 
 // ============================================================================
-

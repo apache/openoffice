@@ -247,4 +247,3 @@ void SwRegionRects::Compress( sal_Bool bFuzzy )
 		}
 	}
 }
-

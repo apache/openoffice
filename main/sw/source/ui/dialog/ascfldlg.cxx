@@ -452,5 +452,3 @@ IMPL_LINK( SwAsciiFilterDlg, LineEndHdl, RadioButton*, pBtn )
 		pBtn->SaveValue();
 	return 0;
 }
-
-

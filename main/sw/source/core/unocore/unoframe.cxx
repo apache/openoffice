@@ -3879,4 +3879,3 @@ void SwXOLEListener::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew )
 	if(!GetRegisteredIn())
         xOLEModel = 0;
 }
-

@@ -1518,4 +1518,3 @@ void FontSizeBox::SetUserValue( sal_Int64 nNewValue, FieldUnit eInUnit )
 
     MetricBox::SetUserValue( nNewValue, eInUnit );
 }
-

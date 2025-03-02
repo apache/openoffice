@@ -1110,4 +1110,3 @@ sal_Bool StgDirStrm::Move( StgDirEntry& rStg1, StgDirEntry& rStg2, const String&
         return sal_False;
     }
 }
-

@@ -317,6 +317,3 @@ FltError ImportLotus::Read( SvStream& rIn )
 
 	return eRet;
 }
-
-
-

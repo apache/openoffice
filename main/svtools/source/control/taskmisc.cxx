@@ -370,4 +370,3 @@ void WindowArrange::Arrange( sal_uInt16 nType, const Rectangle& rRect )
 			break;
 	}
 }
-

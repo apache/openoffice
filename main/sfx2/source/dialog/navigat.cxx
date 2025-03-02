@@ -93,4 +93,3 @@ sal_Bool SfxNavigator::Close()
 	else
 		return sal_False;
 }
-

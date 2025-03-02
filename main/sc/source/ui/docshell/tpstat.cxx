@@ -90,7 +90,3 @@ sal_Bool __EXPORT ScDocStatPage::FillItemSet( SfxItemSet& /* rSet */ )
 void __EXPORT ScDocStatPage::Reset( const SfxItemSet& /* rSet */ )
 {
 }
-
-
-
-

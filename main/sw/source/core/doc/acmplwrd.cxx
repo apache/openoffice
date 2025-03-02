@@ -467,4 +467,3 @@ void SwAutoCompleteWord::DocumentDying(const SwDoc& rDoc)
         }
     }
 }
-

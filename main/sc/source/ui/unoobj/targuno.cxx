@@ -309,6 +309,3 @@ sal_Bool SAL_CALL ScLinkTargetsObj::hasElements(void) throw( uno::RuntimeExcepti
 {
 	return xCollection->hasElements();
 }
-
-
-

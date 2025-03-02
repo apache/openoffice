@@ -455,5 +455,3 @@ static sal_uInt16 nBCTitleNo = 0;
 	if( pNewDBMgr )
 		delete pNewDBMgr;
 }
-
-

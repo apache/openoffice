@@ -245,4 +245,3 @@ SwNodeFnTab aASCNodeFnTab = {
 /* RES_GRFNODE	*/					 0,
 /* RES_OLENODE	*/					 0
 };
-
