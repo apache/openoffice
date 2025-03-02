@@ -2604,4 +2604,3 @@ bool FreetypeServerFont::ApplyGSUB( const ImplFontSelectData& rFSD )
 }
 
 // =======================================================================
-

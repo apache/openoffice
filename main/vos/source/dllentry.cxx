@@ -55,4 +55,3 @@ sal_Int32 CALLBACK LibMain(HINSTANCE hinst, WORD wDataSeg, WORD cbHeap, LPSTR lp
 }
  
 #endif
-

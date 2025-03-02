@@ -1311,6 +1311,3 @@ rtl::OUString TreeFileIterator::implGetTreeFileFromPackage
 
 	return aRetFile;
 }
-
-
-

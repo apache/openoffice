@@ -251,4 +251,3 @@ uno::Sequence< OUString > WriterFilter::getSupportedServiceNames(  ) throw (uno:
 {
     return WriterFilter_getSupportedServiceNames();
 }
-

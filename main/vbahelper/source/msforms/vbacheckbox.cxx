@@ -104,4 +104,3 @@ ScVbaCheckbox::getServiceNames()
 	}
 	return aServiceNames;
 }
-

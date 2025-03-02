@@ -159,4 +159,3 @@ VbaTextFrame::getServiceNames()
     }
     return aServiceNames;
 }
-

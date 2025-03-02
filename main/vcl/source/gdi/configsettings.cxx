@@ -200,4 +200,3 @@ void SettingsConfigItem::setValue( const OUString& rGroup, const OUString& rKey,
         SetModified();
     }
 }
-

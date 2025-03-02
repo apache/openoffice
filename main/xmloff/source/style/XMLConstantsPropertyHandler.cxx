@@ -106,4 +106,3 @@ sal_Bool XMLConstantsPropertyHandler::exportXML(
 
 	return bRet;
 }
-

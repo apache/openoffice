@@ -237,4 +237,3 @@ void SanExtensionImpl :: setCertExtn( unsigned char* value, unsigned int vlen, u
 
 void SanExtensionImpl :: extractCertExt () {
 }
-

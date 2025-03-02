@@ -1393,4 +1393,3 @@ SystemGraphicsData PspGraphics::GetGraphicsData() const
         aRes.pRenderFormat = 0;
     return aRes;
 }
-

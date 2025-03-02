@@ -534,4 +534,3 @@ uno::Reference< uno::XInterface > SAL_CALL XMLVersionImExportOOO_createInstance(
 {
     return (cppu::OWeakObject*)new XMLVersionListPersistence;
 }
-

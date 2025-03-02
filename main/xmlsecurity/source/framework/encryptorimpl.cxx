@@ -274,4 +274,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL EncryptorImpl::getSupportedServiceNames
 {
 	return EncryptorImpl_getSupportedServiceNames();
 }
-

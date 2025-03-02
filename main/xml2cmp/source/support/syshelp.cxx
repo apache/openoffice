@@ -307,4 +307,3 @@ GatherSubDirectories( List<Simstr> &   	o_sSubDirectories,
 #error Must run on unix or windows, please define UNX or WNT.
 #endif
 }
-

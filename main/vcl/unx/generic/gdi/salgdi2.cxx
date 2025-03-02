@@ -1157,4 +1157,3 @@ bool X11SalGraphics::supportsOperation( OutDevSupportType eType ) const
     }
     return bRet;
 }
-

@@ -82,4 +82,3 @@ sal_Bool DrawAspectHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValu
 
 	return bRet;
 }
-

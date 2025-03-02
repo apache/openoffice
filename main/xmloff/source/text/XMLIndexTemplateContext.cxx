@@ -497,4 +497,3 @@ const sal_Bool aAllowedTokenTypesTable[] =
 	sal_False, 		// XML_TOK_INDEX_TYPE_LINK_END,   
 	sal_False		// XML_TOK_INDEX_TYPE_BIBLIOGRAPHY
 };
-

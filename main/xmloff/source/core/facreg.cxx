@@ -276,4 +276,3 @@ XMLOFF_DLLPUBLIC void * SAL_CALL component_getFactory( const sal_Char * pImplNam
 #ifdef __cplusplus
 }
 #endif
-

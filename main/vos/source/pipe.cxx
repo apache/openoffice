@@ -406,7 +406,3 @@ sal_Bool OStreamPipe::isEof() const
 {
 	return isValid();
 }
-
-
-
-

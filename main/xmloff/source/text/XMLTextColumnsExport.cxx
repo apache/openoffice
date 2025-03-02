@@ -181,5 +181,3 @@ void XMLTextColumnsExport::exportXML( const Any& rAny )
 		pColumns++;
 	}
 }
-
-

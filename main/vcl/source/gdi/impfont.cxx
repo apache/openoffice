@@ -868,4 +868,3 @@ void UpdateAttributesFromPSName( const String& rPSName, ImplDevFontAttributes& r
 }
 
 // =======================================================================
-

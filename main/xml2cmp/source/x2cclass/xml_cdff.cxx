@@ -222,6 +222,3 @@ CompDescrsFromAnXmlFile::Empty()
 	dpDescriptions->erase( dpDescriptions->begin(),
 						   dpDescriptions->end() );
 }
-
-
-

@@ -89,4 +89,3 @@ void X11SalTimer::Start( sal_uLong nMS )
 {
 	GetX11SalData()->GetLib()->StartTimer( nMS );
 }
-

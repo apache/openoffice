@@ -259,4 +259,3 @@ char* PriPK11PasswordFunc(
 
 	return passwd ;
 }
-

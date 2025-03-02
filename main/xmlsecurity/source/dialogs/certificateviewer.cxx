@@ -543,4 +543,3 @@ SvLBoxEntry* CertificateViewerCertPathTP::InsertCert(
 
 	return pEntry;
 }
-

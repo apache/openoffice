@@ -315,5 +315,3 @@ bool SvpSalBitmap::GetSystemData( BitmapSystemData& )
 {
     return false;
 }
-
-

@@ -269,4 +269,3 @@ uno::Sequence< ::sal_Int8 > SAL_CALL OCipherContext::finalizeCipherContextAndDis
 
     return aResult;
 }
-

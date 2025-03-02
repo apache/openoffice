@@ -4188,4 +4188,3 @@ Sequence< OUString > SelectionManagerHolder::getSupportedServiceNames() throw()
 
 
 // ------------------------------------------------------------------------
-

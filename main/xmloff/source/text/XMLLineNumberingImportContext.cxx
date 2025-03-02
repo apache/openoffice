@@ -315,4 +315,3 @@ void XMLLineNumberingImportContext::SetSeparatorIncrement(
 {
 	nSeparatorIncrement = nIncr;
 }
-

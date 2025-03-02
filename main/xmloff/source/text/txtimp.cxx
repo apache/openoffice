@@ -3048,4 +3048,3 @@ XMLTextImportHelper::SetCellParaStyleDefault(::rtl::OUString const& rNewValue)
 {
     return m_pImpl->m_sCellParaStyleDefault;
 }
-

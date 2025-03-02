@@ -419,4 +419,3 @@ sal_Bool XMLPMPropHdl_CenterVertical::exportXML(
 
     return bRet;
 }
-

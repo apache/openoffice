@@ -527,4 +527,3 @@ void SvpSalTimer::Start( sal_uLong nMS )
 {
 	m_pInstance->StartTimer( nMS );
 }
-

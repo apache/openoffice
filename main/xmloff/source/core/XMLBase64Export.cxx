@@ -88,4 +88,3 @@ sal_Bool XMLBase64Export::exportOfficeBinaryDataElement(
 	return exportElement( rIn, XML_NAMESPACE_OFFICE,
 				   		  ::xmloff::token::XML_BINARY_DATA );
 }
-

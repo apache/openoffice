@@ -238,4 +238,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL DecryptorImpl::getSupportedServiceNames
 {
 	return DecryptorImpl_getSupportedServiceNames();
 }
-

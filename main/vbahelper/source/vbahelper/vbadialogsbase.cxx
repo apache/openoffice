@@ -37,4 +37,3 @@ VbaDialogsBase::Item( const uno::Any& /* &aItem */) throw (uno::RuntimeException
 {
 	return uno::Any();
 }
-

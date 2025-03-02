@@ -114,5 +114,3 @@ sal_uInt16 SvXMLTokenMap::Get( sal_uInt16 nKeyPrefix,
 	else
 		return XML_TOK_UNKNOWN;
 }
-
-

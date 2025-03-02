@@ -86,4 +86,3 @@ sal_Bool XMLPosturePropHdl::exportXML( OUString& rStrExpValue, const uno::Any& r
 
 	return bRet;
 }
-

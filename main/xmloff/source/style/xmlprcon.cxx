@@ -96,5 +96,3 @@ SvXMLImportContext *SvXMLPropertySetContext::CreateChildContext(
 {
 	return new SvXMLImportContext( GetImport(), nPrefix, rLocalName );
 }
-
-

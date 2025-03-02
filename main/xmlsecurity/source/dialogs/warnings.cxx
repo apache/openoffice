@@ -138,4 +138,3 @@ IMPL_LINK( MacroWarning, EnableBtnHdl, void*, EMPTYARG )
 {
     return 0;
 }*/
-

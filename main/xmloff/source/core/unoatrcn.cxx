@@ -307,5 +307,3 @@ sal_Bool SvUnoAttributeContainer::supportsService(const OUString& ServiceName)
 
 	return sal_False;
 }
-
-

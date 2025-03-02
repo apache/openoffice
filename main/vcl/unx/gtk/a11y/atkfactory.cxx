@@ -176,4 +176,3 @@ wrapper_factory_get_type (void)
 }
 
 } // extern C
-

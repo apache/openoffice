@@ -110,4 +110,3 @@ int SvpSalSystem::ShowNativeMessageBox( const String&,
 {
     return 0;
 }
-

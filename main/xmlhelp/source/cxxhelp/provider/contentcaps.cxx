@@ -240,4 +240,3 @@ uno::Sequence< star::ucb::CommandInfo > Content::getCommands(
 	return uno::Sequence< star::ucb::CommandInfo >( 
         aCommandInfoTable, COMMAND_COUNT );
 }
-

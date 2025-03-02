@@ -237,4 +237,3 @@ void xmlDisableStreamInputCallbacks() {
 	xmlUnregisterStreamInputCallbacks() ;
 	enableXmlStreamIO &= ~XMLSTREAMIO_INITIALIZED ;
 }
-

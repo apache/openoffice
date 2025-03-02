@@ -259,6 +259,3 @@ HtmlCreator::WriteElementName( const Simstr & i_sName,
 		WriteStr( "</H4>" );
 	FinishCell();
 }
-
-
-

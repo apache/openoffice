@@ -122,5 +122,3 @@ void SdXMLGroupShapeContext::EndElement()
 
 	SdXMLShapeContext::EndElement();
 }
-
-

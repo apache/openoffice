@@ -118,4 +118,3 @@ void DeleteOnDeinitBase::ImplDeleteOnDeInit()
 } // namespace vcl
 
 #endif
-

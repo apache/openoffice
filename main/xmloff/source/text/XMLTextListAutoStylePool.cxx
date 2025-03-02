@@ -311,5 +311,3 @@ void XMLTextListAutoStylePool::exportXML() const
 	}
 	delete [] aExpEntries;
 }
-
-

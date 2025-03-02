@@ -129,4 +129,3 @@ sal_Bool XMLLastLineAdjustPropHdl::exportXML( OUString& rStrExpValue, const uno:
 
 	return bRet;
 }
-

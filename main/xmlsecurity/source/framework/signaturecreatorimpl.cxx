@@ -290,4 +290,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL SignatureCreatorImpl::getSupportedServi
 {
 	return SignatureCreatorImpl_getSupportedServiceNames();
 }
-

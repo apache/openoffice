@@ -86,5 +86,3 @@ sal_Int64 SAL_CALL StyleMap::getSomething(
 	}
 	return 0;
 }
-
-

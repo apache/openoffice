@@ -156,4 +156,3 @@ Rectangle SalMenu::GetMenuBarButtonRectPixel( sal_uInt16, SalFrame* )
 SalMenuItem::~SalMenuItem()
 {
 }
-

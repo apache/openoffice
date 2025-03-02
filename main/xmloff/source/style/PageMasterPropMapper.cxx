@@ -56,4 +56,3 @@ XMLPageMasterPropSetMapper::XMLPageMasterPropSetMapper(
 XMLPageMasterPropSetMapper::~XMLPageMasterPropSetMapper()
 {
 }
-

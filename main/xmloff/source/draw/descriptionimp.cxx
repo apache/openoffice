@@ -86,4 +86,3 @@ void SdXMLDescriptionContext::Characters( const ::rtl::OUString& rChars )
 {
 	msText += rChars;
 }
-

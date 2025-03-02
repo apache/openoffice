@@ -659,4 +659,3 @@ sal_Int32 SAL_CALL X509Certificate_MSCryptImpl::getCertificateUsage(  )
 }
 
 // MM : end
-
