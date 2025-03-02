@@ -196,5 +196,3 @@ void SAL_CALL OOutputStreamHelper::closeOutput(  )
 }
 
 } // namespace utl
-
-

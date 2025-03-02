@@ -194,4 +194,3 @@ sal_Bool ReconnectingFile::reconnect()
 }
 
 } // namespace fileaccess
-

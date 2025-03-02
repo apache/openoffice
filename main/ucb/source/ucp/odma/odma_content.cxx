@@ -1208,4 +1208,3 @@ void Content::changePropertyValue(const beans::PropertyValue& _rValue,
     }
 }
 // -----------------------------------------------------------------------------
-

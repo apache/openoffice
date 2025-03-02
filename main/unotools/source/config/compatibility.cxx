@@ -797,4 +797,3 @@ Mutex& SvtCompatibilityOptions::GetOwnStaticMutex()
 	// Return new created or already existing mutex object.
     return *pMutex;
 }
-

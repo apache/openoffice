@@ -262,4 +262,3 @@ void MyWin::Paint( const Rectangle& r )
 	if ( bDraw && mxView.is() )
 		mxView->draw( 50, 50 );
 }
-

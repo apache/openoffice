@@ -521,4 +521,3 @@ void SAL_CALL DynamicResultSetWrapperListener
 
 	m_pOwner = NULL;
 }
-

@@ -191,4 +191,3 @@ void NewerVersionWarningDialog::InitButtonWidth()
 }
 
 } // end of namespace uui
-

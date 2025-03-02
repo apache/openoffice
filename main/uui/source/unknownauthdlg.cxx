@@ -96,4 +96,3 @@ UnknownAuthDialog::UnknownAuthDialog
 	m_aView_Certificate.SetClickHdl( LINK( this, UnknownAuthDialog, ViewCertHdl_Impl ) );
 	m_aCommandButtonOK.SetClickHdl( LINK( this, UnknownAuthDialog, OKHdl_Impl ) );
 };
-

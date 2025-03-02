@@ -922,4 +922,3 @@ sal_Bool Bootstrap::Impl::getVersionValue(OUString const& _sName, OUString& _rVa
 // ---------------------------------------------------------------------------------------
 
 } // namespace utl
-

@@ -397,8 +397,3 @@ void StdTabControllerModel::read( const ::com::sun::star::uno::Reference< ::com:
 		setGroup( aCtrlSeq, aGroupName );
 	}
 }
-
-
-
-
-

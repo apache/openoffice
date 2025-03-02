@@ -162,5 +162,3 @@ NativeNumberWrapper::convertFromXmlAttributes(
     }
     return 0;
 }
-
-

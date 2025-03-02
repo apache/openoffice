@@ -463,5 +463,3 @@ UUIInteractionHelper::handleFilterOptionsRequest(
     }
     return false;
 }
-
-

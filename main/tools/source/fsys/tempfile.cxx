@@ -294,4 +294,3 @@ String TempFile::GetTempNameBaseDirectory()
     aTmp = rTempNameBase_Impl;
     return aTmp;
 }
-

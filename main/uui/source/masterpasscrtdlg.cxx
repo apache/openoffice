@@ -183,4 +183,3 @@ void MasterPasswordCreateDialog::CalculateTextHeight()
         SetSizePixel( aDlgSize );
     }
 }
-

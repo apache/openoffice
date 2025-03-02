@@ -918,4 +918,3 @@ sal_Bool UCBContentHelper::EqualURLs( const ::rtl::OUString& aFirstURL, const ::
 
 
 } // namespace utl
-

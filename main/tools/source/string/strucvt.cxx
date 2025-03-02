@@ -206,4 +206,3 @@ UniString::UniString( const ResId& rResId )
     if ( pImplResHookProc )
         pImplResHookProc( *this );
 }
-

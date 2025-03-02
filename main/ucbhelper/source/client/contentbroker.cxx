@@ -373,4 +373,3 @@ bool ContentBroker_Impl::initialize()
 }
 
 } /* namespace ucbhelper */
-

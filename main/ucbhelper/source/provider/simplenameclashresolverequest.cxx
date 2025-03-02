@@ -60,4 +60,3 @@ SimpleNameClashResolveRequest::SimpleNameClashResolveRequest(
 
     setContinuations( aContinuations );
 }
-

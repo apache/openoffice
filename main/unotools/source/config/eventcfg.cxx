@@ -448,4 +448,3 @@ Mutex& GlobalEventConfig::GetOwnStaticMutex()
 {
 	return GlobalEventConfig().m_pImpl->GetEventName( nIndex );
 }
-

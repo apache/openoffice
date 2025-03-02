@@ -1056,4 +1056,3 @@ namespace DOM
         return 0;
     }
 }
-

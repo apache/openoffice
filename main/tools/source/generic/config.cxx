@@ -1297,4 +1297,3 @@ LineEnd Config::GetLineEnd() const
 {
 	return mpData->meLineEnd;
 }
-

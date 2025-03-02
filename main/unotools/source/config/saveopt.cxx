@@ -1083,4 +1083,3 @@ sal_Bool SvtSaveOptions::IsReadOnly( SvtSaveOptions::EOption eOption ) const
 {
     return pImp->pSaveOpt->IsReadOnly(eOption);
 }
-

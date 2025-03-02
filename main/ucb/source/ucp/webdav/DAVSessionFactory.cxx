@@ -99,4 +99,3 @@ void DAVSessionFactory::releaseElement( DAVSession * pElement ) SAL_THROW(())
     if ( pElement->m_aContainerIt != m_aMap.end() )
         m_aMap.erase( pElement->m_aContainerIt );
 }
-

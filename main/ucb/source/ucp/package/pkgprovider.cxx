@@ -323,4 +323,3 @@ sal_Bool ContentProvider::removePackage( const rtl::OUString & rName )
     }
     return sal_False;
 }
-

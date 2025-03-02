@@ -1513,4 +1513,3 @@ String GetFontToSubsFontName( FontToSubsFontConverter hConverter )
     const char* pName = ((ConvertChar*)hConverter)->mpSubsFontName;
     return String::CreateFromAscii( pName );
 }
-

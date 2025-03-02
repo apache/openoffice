@@ -1470,4 +1470,3 @@ void SAL_CALL ContentResultSetWrapperListener
 {
 	m_pOwner = NULL;
 }
-

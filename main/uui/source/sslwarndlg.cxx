@@ -84,6 +84,3 @@ SSLWarnDialog::SSLWarnDialog
 	m_aCommandButtonViewCert.SetClickHdl( LINK( this, SSLWarnDialog, ViewCertHdl_Impl ) );
 	m_aOkButton.SetClickHdl( LINK( this, SSLWarnDialog, OKHdl_Impl ) );
 };
-
-
-

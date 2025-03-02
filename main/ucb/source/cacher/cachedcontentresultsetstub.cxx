@@ -623,5 +623,3 @@ Reference< XResultSet > SAL_CALL CachedContentResultSetStubFactory
 	}
 	return NULL;
 }
-
-

@@ -44,5 +44,3 @@ OpenLockedQueryBox::OpenLockedQueryBox( Window* pParent, ResMgr* pResMgr, const 
 OpenLockedQueryBox::~OpenLockedQueryBox()
 {
 }
-
-

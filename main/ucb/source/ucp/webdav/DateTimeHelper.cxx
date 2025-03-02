@@ -263,4 +263,3 @@ bool DateTimeHelper::convert (const OUString& s, DateTime& dateTime)
 	else
 		return false;
 }
-

@@ -401,4 +401,3 @@ void LayoutWidget::setChildProperties( LayoutWidget *pChild,
 }
 
 } // namespace layoutimpl
-

@@ -1109,4 +1109,3 @@ HierarchyDataAccess::getPendingChanges()
         "HierarchyDataAccess : Data source is not an XChangesBatch!" );
     return xOrig->getPendingChanges();
 }
-

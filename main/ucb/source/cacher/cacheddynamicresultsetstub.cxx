@@ -238,4 +238,3 @@ void SAL_CALL CachedDynamicResultSetStubFactory
 
 	xTarget->setSource( xStub );
 }
-

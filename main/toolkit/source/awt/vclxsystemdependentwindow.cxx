@@ -115,8 +115,3 @@ IMPL_XTYPEPROVIDER_END
 	}
 	return aRet;
 }
-
-
-
-
-

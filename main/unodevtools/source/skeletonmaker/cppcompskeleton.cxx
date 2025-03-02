@@ -1269,5 +1269,3 @@ void generateCalcAddin(ProgramOptions const & options,
 }
 
 } }
-
-
