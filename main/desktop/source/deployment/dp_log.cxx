@@ -204,4 +204,3 @@ extern sdecl::ServiceDecl const serviceDecl(
     "com.sun.star.comp.deployment.ProgressLog" );
 
 } // namespace dp_log
-

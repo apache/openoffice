@@ -406,4 +406,3 @@ void FwkTabWindow::Resize()
 }
 
 } // namespace framework
-

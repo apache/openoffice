@@ -29,5 +29,3 @@ namespace adabasui
 {
 #include "Astringconstants.cxx"
 }
-
-

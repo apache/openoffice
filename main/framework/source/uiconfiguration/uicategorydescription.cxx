@@ -469,4 +469,3 @@ Reference< XNameAccess > UICategoryDescription::impl_createConfigAccess(const ::
 }
 
 } // namespace framework
-

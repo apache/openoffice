@@ -1374,4 +1374,3 @@ sal_Bool ImplEESdrObject::ImplHasText() const
 	Reference< XText > xXText( mXShape, UNO_QUERY );
 	return xXText.is() && xXText->getString().getLength();
 }
-

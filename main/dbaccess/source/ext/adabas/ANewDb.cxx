@@ -154,4 +154,3 @@ void OAdabasCreateDialog::executedDialog(sal_Int16 _nExecutionResult)
 	}
 }
 // -----------------------------------------------------------------------------
-

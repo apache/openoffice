@@ -484,4 +484,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL UNOEmbeddedObjectCreator::getSupported
 {
 	return impl_staticGetSupportedServiceNames();
 }
-

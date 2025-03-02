@@ -500,11 +500,3 @@ void SAL_CALL DispatchWatcher::dispatchFinished( const DispatchResultEvent& ) th
 }
 
 }
-
-
-
-
-
-
-
-

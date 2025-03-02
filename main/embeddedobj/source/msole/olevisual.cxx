@@ -436,5 +436,3 @@ sal_Int32 SAL_CALL OleEmbeddedObject::getMapUnit( sal_Int64 nAspect )
 
 	return embed::EmbedMapUnits::ONE_100TH_MM;
 }
-
-

@@ -231,5 +231,3 @@ sal_uInt16 GetMetricId( SfxMapUnit eUnit )
 	}
 	return nId;
 }
-
-

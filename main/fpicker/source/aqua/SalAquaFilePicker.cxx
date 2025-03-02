@@ -805,4 +805,3 @@ void SalAquaFilePicker::filterControlChanged() {
 
     DBG_PRINT_EXIT(CLASS_NAME, __func__);
 }
-

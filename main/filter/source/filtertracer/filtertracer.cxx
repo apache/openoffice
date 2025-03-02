@@ -248,5 +248,3 @@ NMSP_UTIL::SearchResult SAL_CALL FilterTracer::searchBackward( const rtl::OUStri
 		mxTextSearch->searchBackward( rSearchStr, nStartPos, nEndPos );
 	return nSearchResult;
 }
-
-

@@ -66,4 +66,3 @@ void SAL_CALL DragSourceListener::dropActionChanged( const DragSourceDragEvent& 
 	throw(RuntimeException)
 {
 }
-

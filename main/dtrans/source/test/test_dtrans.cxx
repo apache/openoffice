@@ -504,5 +504,3 @@ int SAL_CALL main( int argc, const char* argv[] )
 	fprintf( stderr, "Done.\n" );
 	return 0;	
 }
-
-

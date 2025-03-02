@@ -293,5 +293,3 @@ namespace desktop {
 
     }
 }
-
-

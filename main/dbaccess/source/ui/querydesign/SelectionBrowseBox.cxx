@@ -2878,4 +2878,3 @@ bool OSelectionBrowseBox::HasFieldByAliasName(const ::rtl::OUString& rFieldName,
     return aIter != aEnd;
 }
 // -----------------------------------------------------------------------------
-

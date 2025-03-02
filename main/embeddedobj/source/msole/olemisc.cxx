@@ -697,4 +697,3 @@ void SAL_CALL OleEmbeddedObject::setParent( const com::sun::star::uno::Reference
 
     m_xParent = xParent;
 }
-

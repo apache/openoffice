@@ -258,4 +258,3 @@ Reference< XInterface > SAL_CALL SvtFolderPicker::impl_createInstance( const Ref
 	Reference< XMultiServiceFactory > xServiceManager (rxContext->getServiceManager(), UNO_QUERY_THROW);
 	return Reference< XInterface >( *new SvtFolderPicker( xServiceManager ) );
 }
-

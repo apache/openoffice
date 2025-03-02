@@ -516,5 +516,3 @@ void CGM::ImplDoClass5()
 		default: ComOut( CGM_UNKNOWN_COMMAND, "" ) break;
 	}
 };
-
-

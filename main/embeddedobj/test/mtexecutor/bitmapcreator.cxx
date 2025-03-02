@@ -116,4 +116,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL VCLBitmapCreator::getSupportedServiceN
 {
 	return impl_staticGetSupportedServiceNames();
 }
-

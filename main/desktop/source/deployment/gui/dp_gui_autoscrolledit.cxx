@@ -67,4 +67,3 @@ void AutoScrollEdit::Notify( SfxBroadcaster&, const SfxHint& rHint )
 
 
 } // namespace dp_gui
-

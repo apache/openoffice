@@ -179,4 +179,3 @@ ConfigurationBackendDb::getEntry(::rtl::OUString const & url)
 } // namespace configuration
 } // namespace backend
 } // namespace dp_registry
-

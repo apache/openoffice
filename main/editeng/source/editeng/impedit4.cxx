@@ -3246,5 +3246,3 @@ long ImpEditEngine::LogicToTwips( long n )
 	aSz = pRefDev->LogicToLogic( aSz, NULL, &aTwipsMode );
 	return aSz.Width();
 }
-
-

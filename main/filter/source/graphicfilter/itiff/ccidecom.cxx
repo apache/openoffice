@@ -1110,5 +1110,3 @@ void CCIDecompressor::Read2DScanlineData(sal_uInt8 * pTarget, sal_uInt16 nTarget
 		}
 	}
 }
-
-

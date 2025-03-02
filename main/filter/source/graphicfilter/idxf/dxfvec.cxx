@@ -247,4 +247,3 @@ sal_Bool DXFTransform::Mirror() const
 {
 	if (aMZ.SProd(aMX*aMY)<0) return sal_True; else return sal_False;
 }
-

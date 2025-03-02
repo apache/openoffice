@@ -335,4 +335,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OleEmbeddedObjectFactory::getSupported
 {
 	return impl_staticGetSupportedServiceNames();
 }
-

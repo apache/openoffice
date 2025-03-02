@@ -524,4 +524,3 @@ void TheExtensionManager::modified( ::lang::EventObject const & /*rEvt*/ )
 }
 
 } //namespace dp_gui
-

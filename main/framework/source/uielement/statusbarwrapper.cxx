@@ -198,4 +198,3 @@ Reference< XInterface > SAL_CALL StatusBarWrapper::getRealInterface() throw ( Ru
 }
 
 } // namespace framework
-

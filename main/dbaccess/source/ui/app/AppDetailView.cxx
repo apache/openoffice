@@ -1008,4 +1008,3 @@ Window* OApplicationDetailView::getTreeWindow() const
 {
     return m_pControlHelper->getCurrentView();
 }
-

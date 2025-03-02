@@ -666,4 +666,3 @@ Sequence< ::rtl::OUString > OTableColumnWrapper::getSupportedServiceNames(  ) th
 {
     return OTableColumnDescriptorWrapper::createArrayHelper( nId );
 }
-

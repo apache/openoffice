@@ -135,4 +135,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL UNOMainThreadExecutor::getSupportedSer
 {
 	return impl_staticGetSupportedServiceNames();
 }
-

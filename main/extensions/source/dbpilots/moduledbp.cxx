@@ -25,4 +25,3 @@
 #include "precompiled_extensions.hxx"
 
 #include "componentmodule.cxx"
-

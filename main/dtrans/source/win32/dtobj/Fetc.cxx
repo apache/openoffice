@@ -252,4 +252,3 @@ sal_Int32 operator!=( const CFormatEtc& lhs, const CFormatEtc& rhs )
 {
 	return ( ( lhs == rhs ) != 1 );
 }
-

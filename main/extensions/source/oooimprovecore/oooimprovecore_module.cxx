@@ -30,4 +30,3 @@ namespace oooimprovecore
 {
     IMPLEMENT_COMPONENT_MODULE( OooimprovecoreModule );
 } 
-

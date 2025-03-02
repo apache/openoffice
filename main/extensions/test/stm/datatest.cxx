@@ -1062,5 +1062,3 @@ UString 	OObjectStreamTest_getImplementationName( int i) THROWS( () )
 		return L"test.com.sun.star.comp.extensions.stm.ObjectOutputStream";	
 	}
 }
-
-

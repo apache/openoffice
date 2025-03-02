@@ -104,4 +104,3 @@ void SbaXPropertiesChangeMultiplexer::propertiesChange(const ::com::sun::star::u
 	while (aIt.hasMoreElements())
 		((::com::sun::star::beans::XPropertiesChangeListener*)aIt.next())->propertiesChange(aMulti);
 }
-

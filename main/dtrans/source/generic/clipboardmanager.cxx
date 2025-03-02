@@ -255,8 +255,3 @@ Sequence< OUString > SAL_CALL ClipboardManager_getSupportedServiceNames()
         OUString::createFromAscii("com.sun.star.datatransfer.clipboard.ClipboardManager");
     return SupportedServicesNames;
 }
-
-
-
-
-

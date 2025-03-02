@@ -67,4 +67,3 @@ Reference< XTransferable > SAL_CALL CDTransObjFactory::createTransferableFromDat
 
 	return refDOTransf;	
 }
-

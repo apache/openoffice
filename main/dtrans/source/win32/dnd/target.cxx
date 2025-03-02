@@ -653,4 +653,3 @@ inline sal_Int8 DropTarget::getFilteredActions( DWORD grfKeyState, DWORD dwEffec
 	sal_Int8 actions= dndOleKeysToAction( grfKeyState, dndOleDropEffectsToActions( dwEffect));
 	return actions & m_nDefaultActions;
 }
-

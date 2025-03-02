@@ -897,5 +897,3 @@ Reference< XPreparedStatement > ODatabaseExport::createPreparedStatment( const R
 	return Reference< XPreparedStatement >(_xMetaData->getConnection()->prepareStatement(aSql));
 }
 // -----------------------------------------------------------------------------
-
-

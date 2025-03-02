@@ -257,6 +257,3 @@ uno::Any SvxUnoFontDescriptor::getPropertyDefault( SfxItemPool* pPool )
 
 	return aAny;
 }
-
-
-

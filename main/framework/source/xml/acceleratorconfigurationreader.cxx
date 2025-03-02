@@ -332,4 +332,3 @@ AcceleratorConfigurationReader::EXMLAttribute AcceleratorConfigurationReader::im
 }
 
 } // namespace framework
-

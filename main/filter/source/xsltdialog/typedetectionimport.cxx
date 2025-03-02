@@ -355,4 +355,3 @@ void SAL_CALL TypeDetectionImporter::setDocumentLocator( const uno::Reference< x
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
-

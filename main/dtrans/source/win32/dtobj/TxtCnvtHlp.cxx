@@ -138,4 +138,3 @@ int WideCharToMultiByteEx( UINT cp_dest,
 								NULL,
 								NULL );
 }
-

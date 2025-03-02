@@ -275,6 +275,3 @@ void OQueryTableWindow::KeyInput( const KeyEvent& rEvt )
 	OTableWindow::KeyInput( rEvt );
 }
 // -----------------------------------------------------------------------------
-
-
-

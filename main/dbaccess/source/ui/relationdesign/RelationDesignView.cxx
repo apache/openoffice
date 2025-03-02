@@ -140,10 +140,3 @@ void ORelationDesignView::GetFocus()
 		m_pTableView->GrabTabWinFocus();
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-
-
-

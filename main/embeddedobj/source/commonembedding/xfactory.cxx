@@ -571,5 +571,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OOoSpecialEmbeddedObjectFactory::getSu
 {
 	return impl_staticGetSupportedServiceNames();
 }
-
-

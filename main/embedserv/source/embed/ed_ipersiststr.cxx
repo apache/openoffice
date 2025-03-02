@@ -1011,4 +1011,3 @@ void LockedEmbedDocument_Impl::ExecuteMethod( sal_Int16 nId )
 #if defined(_MSC_VER)
 #pragma warning(disable: 4505)
 #endif
-

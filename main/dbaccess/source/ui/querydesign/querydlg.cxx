@@ -390,6 +390,3 @@ void DlgQryJoin::setJoinType(EJoinType _eNewJoinType)
 	LBChangeHdl(&m_pJoinControl->aLB_JoinType);
 }
 // -----------------------------------------------------------------------------
-
-
-

@@ -548,4 +548,3 @@ IMPL_LINK( AddonsToolBarManager, DataChanged, DataChangedEvent*, pDataChangedEve
 }
 
 }
-

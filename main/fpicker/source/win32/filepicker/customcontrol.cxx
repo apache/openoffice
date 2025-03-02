@@ -59,5 +59,3 @@ void SAL_CALL CCustomControl::RemoveAllControls()
 {
 	// will be implemented by custom control containers
 }
-
-

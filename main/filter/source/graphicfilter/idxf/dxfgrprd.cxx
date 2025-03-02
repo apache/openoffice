@@ -358,5 +358,3 @@ void DXFGroupReader::ReadS(char * ptgt)
 {
 	ReadLine(ptgt);
 }
-
-

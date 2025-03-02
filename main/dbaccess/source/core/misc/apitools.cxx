@@ -147,5 +147,3 @@ Any OSubComponent::queryInterface( const Type & rType ) throw(RuntimeException)
 
 	return aReturn;
 }
-
-

@@ -570,4 +570,3 @@ rtl::OUString SpinfieldToolbarController::impl_formatOutputString( double fValue
 }
 
 } // namespace
-

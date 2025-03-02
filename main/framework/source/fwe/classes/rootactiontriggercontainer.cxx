@@ -370,4 +370,3 @@ void RootActionTriggerContainer::setName( const ::rtl::OUString& ) throw ( Runti
     throw RuntimeException();        
 }
 }
-

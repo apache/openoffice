@@ -241,4 +241,3 @@ namespace desktop {
 			File::remove( m_aLockname );
 	}
 }
-

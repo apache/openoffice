@@ -291,4 +291,3 @@ void TypeDetectionExporter::addLocaleProperty( Reference< XDocumentHandler > xHa
 		DBG_ERROR( "TypeDetectionExporter::addLocaleProperty exception caught!" );
 	}
 }
-

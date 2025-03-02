@@ -350,4 +350,3 @@ void OResultColumn::getFastPropertyValue( Any& rValue, sal_Int32 nHandle ) const
 		}
 	}
 }
-

@@ -2547,4 +2547,3 @@ ITypeInfo* IUnknownWrapper_Impl::getTypeInfo()
 }
 
 } // end namespace
-

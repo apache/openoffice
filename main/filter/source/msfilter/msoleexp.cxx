@@ -355,6 +355,3 @@ void SvxMSExportOLEObjects::ExportOLEObject( svt::EmbeddedObjectRef& rObj, SvSto
     //We never need this stream: See #99809# and #i2179#
     rDestStg.Remove(CREATE_CONST_ASC(SVEXT_PERSIST_STREAM));
 }
-
-
-

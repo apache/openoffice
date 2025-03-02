@@ -346,4 +346,3 @@ void DropdownToolbarController::executeControlCommand( const ::com::sun::star::f
 }
 
 } // namespace
-

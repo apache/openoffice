@@ -802,4 +802,3 @@ UpdateCheckConfig::getSupportedServiceNames() throw (uno::RuntimeException)
 {
 	return getServiceNames();
 }
-

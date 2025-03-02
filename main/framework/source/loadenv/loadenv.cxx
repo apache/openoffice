@@ -1900,4 +1900,3 @@ void LoadEnv::impl_applyPersistentWindowState(const css::uno::Reference< css::aw
 }
 
 } // namespace framework
-

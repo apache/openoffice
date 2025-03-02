@@ -93,4 +93,3 @@ void DescriptionEdit::SetDescription( const String& rDescription )
     SetText( rDescription );
     UpdateScrollBar();
 }
-

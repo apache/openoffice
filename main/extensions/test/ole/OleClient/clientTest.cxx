@@ -1317,5 +1317,3 @@ HRESULT doTest()
 
 
 //VARIANT_TRUE VT_UI1
-
-

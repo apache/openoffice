@@ -509,4 +509,3 @@ void OTableContainer::addMasterContainerListener()
         DBG_UNHANDLED_EXCEPTION();
     }
 }
-
