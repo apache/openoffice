@@ -151,5 +151,3 @@ TEST_F(heap_ptr_test, global)
     }
     ASSERT_TRUE(Help::InstanceCount_() == nHelpCount) << "raii2";
 }
-
-

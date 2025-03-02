@@ -397,4 +397,3 @@ bool PresentationFragmentHandler::importSlide( const FragmentHandlerRef& rxSlide
 }
 
 } }
-

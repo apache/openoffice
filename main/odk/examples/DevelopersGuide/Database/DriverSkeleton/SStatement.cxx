@@ -354,4 +354,3 @@ Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL OStatement_Base:
 	return ::cppu::OPropertySetHelper::createPropertySetInfo(getInfoHelper());
 }
 // -----------------------------------------------------------------------------
-

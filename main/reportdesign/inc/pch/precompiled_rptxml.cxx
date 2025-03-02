@@ -22,4 +22,3 @@
 
 
 #include "precompiled_rptxml.hxx"
-

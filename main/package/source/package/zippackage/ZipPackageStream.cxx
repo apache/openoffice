@@ -937,4 +937,3 @@ sal_Bool SAL_CALL ZipPackageStream::supportsService( OUString const & rServiceNa
 {
 	return rServiceName == getSupportedServiceNames()[0];
 }
-

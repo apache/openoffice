@@ -299,4 +299,3 @@ void SlidePersist::applyTextStyles( const XmlFilterBase& rFilterBase )
 }
 
 } }
-

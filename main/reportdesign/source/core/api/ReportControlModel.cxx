@@ -152,4 +152,3 @@ bool OReportControlModel::isInterfaceForbidden(const uno::Type& _rType)
 }
 // -----------------------------------------------------------------------------
 } // reportdesign
-

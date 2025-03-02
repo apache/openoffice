@@ -1363,4 +1363,3 @@ void RscCompiler::PreprocessSrsFile( const RscCmdLine::OutputFile& rOutputFile,
     if( pSysListFile )
         fclose( pSysListFile );
 }
-

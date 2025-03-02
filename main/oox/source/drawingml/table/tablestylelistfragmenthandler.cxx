@@ -77,4 +77,3 @@ Reference< XFastContextHandler > TableStyleListFragmentHandler::createFastChildC
 } // namespace table
 } // namespace drawingml
 } // namespace oox
-

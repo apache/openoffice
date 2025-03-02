@@ -87,5 +87,3 @@ namespace oox { namespace drawingml {
 
 
 } }
-
-

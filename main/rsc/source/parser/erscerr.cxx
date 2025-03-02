@@ -507,4 +507,3 @@ void RscError::FatalError( const ERRTYPE& rError, const RscId &aId,
 
 	exit( 1 );
 }
-

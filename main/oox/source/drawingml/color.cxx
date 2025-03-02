@@ -663,4 +663,3 @@ void Color::toHsl() const
 
 } // namespace drawingml
 } // namespace oox
-

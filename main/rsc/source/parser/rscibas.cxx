@@ -704,4 +704,3 @@ RscArray * RscTypCont::InitLangStringLongTupelList( RscCont * pStrLongTupelLst )
 	return new RscArray( pHS->getID( "Lang_CharsLongTupelList" ),
                          RSC_NOTYPE, pStrLongTupelLst, &aLangType );
 }
-

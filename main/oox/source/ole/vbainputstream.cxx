@@ -201,4 +201,3 @@ bool VbaInputStream::updateChunk()
 
 } // namespace ole
 } // namespace oox
-

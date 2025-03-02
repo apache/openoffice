@@ -751,5 +751,3 @@ void SAL_CALL OInputCompStream::removeVetoableChangeListener(
 
 	//TODO:
 }
-
-

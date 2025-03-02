@@ -47,4 +47,3 @@ void TextBodyProperties::pushToPropMap( PropertyMap& rPropMap ) const
 
 } // namespace drawingml
 } // namespace oox
-

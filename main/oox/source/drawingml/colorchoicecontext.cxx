@@ -153,4 +153,3 @@ Reference< XFastContextHandler > ColorContext::createFastChildContext(
 
 } // namespace drawingml
 } // namespace oox
-

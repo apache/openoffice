@@ -451,4 +451,3 @@ void OReportWindow::_propertyChanged(const beans::PropertyChangeEvent& _rEvent) 
 //==================================================================
 }	//rptui
 //==================================================================
-

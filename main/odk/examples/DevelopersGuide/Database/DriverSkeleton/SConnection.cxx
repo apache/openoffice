@@ -386,6 +386,3 @@ void OConnection::disposing()
 	OConnection_BASE::disposing();
 }
 // -----------------------------------------------------------------------------
-
-
-

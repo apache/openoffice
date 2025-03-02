@@ -165,4 +165,3 @@ float TextCharacterProperties::getCharHeightPoints( float fDefault ) const
 
 } // namespace drawingml
 } // namespace oox
-
