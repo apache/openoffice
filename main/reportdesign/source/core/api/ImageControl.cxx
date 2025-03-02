@@ -492,4 +492,3 @@ void SAL_CALL OImageControl::setPreserveIRI( ::sal_Bool _preserveiri ) throw (un
 // =============================================================================
 } // namespace reportdesign
 // =============================================================================
-

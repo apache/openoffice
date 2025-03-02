@@ -294,4 +294,3 @@ sal_Bool checkTypeDependencies(TypeManager& typeMgr, TypeDependency& dependencie
 	return sal_True;
 }	
 	
-

@@ -721,4 +721,3 @@ RSCCLASS_TYPE RscLangArray::GetClassType() const
         return RscArray::GetClassType();
 
 }
-

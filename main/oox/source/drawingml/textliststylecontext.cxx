@@ -103,4 +103,3 @@ Reference< XFastContextHandler > TextListStyleContext::createFastChildContext( s
 // --------------------------------------------------------------------
 
 } }
-

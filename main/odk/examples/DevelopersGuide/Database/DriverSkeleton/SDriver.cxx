@@ -196,4 +196,3 @@ void checkDisposed(sal_Bool _bThrow) throw ( DisposedException )
 	}
 }
 //.........................................................................
-

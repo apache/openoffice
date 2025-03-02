@@ -146,4 +146,3 @@ void SequenceOutputStream::writeMemory( const void* pMem, sal_Int32 nBytes, size
 // ============================================================================
 
 } // namespace oox
-

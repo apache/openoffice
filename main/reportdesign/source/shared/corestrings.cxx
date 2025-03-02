@@ -28,4 +28,3 @@ namespace reportdesign
 {
 #include "stringconstants.cxx"
 }
-

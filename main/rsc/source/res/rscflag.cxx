@@ -483,4 +483,3 @@ RSCINST RscClient::Create( RSCINST * pInst, const RSCINST & rDflt,
 
     return( aTmpI );
 }
-

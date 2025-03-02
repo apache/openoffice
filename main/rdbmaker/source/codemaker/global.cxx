@@ -164,4 +164,3 @@ const sal_Char* FileStream::checkAccessMode(FileAccessMode mode)
     }
     return "w+";
 }
-

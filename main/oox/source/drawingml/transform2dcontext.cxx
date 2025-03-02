@@ -73,4 +73,3 @@ Reference< XFastContextHandler > Transform2DContext::createFastChildContext( sal
 
 } // namespace drawingml
 } // namespace oox
-

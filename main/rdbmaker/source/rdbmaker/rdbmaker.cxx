@@ -500,5 +500,3 @@ int _cdecl main( int argc, char * argv[] )
 	cleanUp(sal_False);
 	return 0;
 }
-
-

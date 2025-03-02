@@ -440,4 +440,3 @@ RscExpression * MacroParser( RscFileInst & rFileInst )
 	};
 	return( pExpression );
 }
-

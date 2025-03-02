@@ -486,4 +486,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OZipFileAccess::getSupportedServiceNam
 {
 	return impl_staticGetSupportedServiceNames();
 }
-

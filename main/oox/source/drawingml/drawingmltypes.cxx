@@ -288,4 +288,3 @@ IndexRange GetIndexRange( const Reference< XFastAttributeList >& xAttributes )
 
 } // namespace drawingml
 } // namespace oox
-

@@ -77,4 +77,3 @@ TEST_F(vector_pool_test, testPoolValueSemantics)
     nIdx3 = aPool.store(2);
     ASSERT_TRUE(aPool.get(nIdx3) == 2) << "allocator value semantics 3 after fragmentation";
 }
-

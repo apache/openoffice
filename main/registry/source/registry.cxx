@@ -624,5 +624,3 @@ RegError REGISTRY_CALLTYPE reg_dumpRegistry(RegKeyHandle hKey)
 
 	return dumpRegistry(pKey->getRegistry(), hKey);
 }	
-
-
