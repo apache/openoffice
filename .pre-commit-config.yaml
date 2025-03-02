@@ -35,7 +35,7 @@ repos:
       - id: end-of-file-fixer
         files: (m|M)akefile$|\.(bat|c|dxp|h|hrc|hxx|idl|in|ini|java|md|mk|pl|pm|py|rc|sh|xcs|xdl|xhp|xmi|xsd|ya?ml)$|^ext_libraries/.*$|^main/[a-s].*\.cxx$|^test/.*$
       - id: mixed-line-ending
-        files: ^main/.*\.(c|h)xx$|^main/.*\.mk$|^main/.*\.java$|\.sh$|\.xslt?$|\.ya?ml$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$
+        files: ^main/.*\.(c|h)xx$|^main/.*\.mk$|^main/.*\.idl$|^main/.*\.java$|\.(sh|xcs|xdl|xhp|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$
       - id: trailing-whitespace
         files: \.(bat|ini|pl|sh|xcs|xdl|xmi|ya?ml)$
   - repo: https://github.com/codespell-project/codespell
