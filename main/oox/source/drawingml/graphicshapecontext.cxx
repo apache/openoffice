@@ -310,4 +310,3 @@ Reference< XFastContextHandler > ChartGraphicDataContext::createFastChildContext
 
 } // namespace drawingml
 } // namespace oox
-

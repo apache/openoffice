@@ -186,6 +186,3 @@ sal_Bool produceType(const OString& typeName,
 
 	return ret;
 }
-
-
-

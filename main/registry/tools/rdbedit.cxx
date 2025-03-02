@@ -310,5 +310,3 @@ int _cdecl main( int argc, char * argv[] )
 		exit(5);
 	}
 }
-
-

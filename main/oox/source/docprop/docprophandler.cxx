@@ -684,4 +684,3 @@ void SAL_CALL OOXMLDocPropHandler::processingInstruction( const ::rtl::OUString&
 
 } // namespace docprop
 } // namespace oox
-

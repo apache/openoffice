@@ -67,4 +67,3 @@ PACKAGE_DLLPUBLIC void * SAL_CALL component_getFactory( const sal_Char * pImplNa
 }
 
 } // extern "C"
-

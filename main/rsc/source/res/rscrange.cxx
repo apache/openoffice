@@ -843,4 +843,3 @@ RSCINST RscBreakRange::Create( RSCINST * pInst, const RSCINST & rDflt,
 
 	return( aInst );
 }
-

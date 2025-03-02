@@ -301,4 +301,3 @@ SimpleFillPropertiesContext::~SimpleFillPropertiesContext()
 
 } // namespace drawingml
 } // namespace oox
-

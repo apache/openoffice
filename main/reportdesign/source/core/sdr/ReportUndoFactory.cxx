@@ -175,4 +175,3 @@ SdrUndoAction* OReportUndoFactory::CreateUndoPageChangeMasterPage(SdrPage& rChan
 //==================================================================
 }	//rptui
 //==================================================================
-

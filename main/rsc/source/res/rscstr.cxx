@@ -394,4 +394,3 @@ void RscString::WriteRcAccess
 	fprintf( fOutput, "\t\tSet%s( aStr );\n", pName );
 	fprintf( fOutput, "\t\tnOffset += GetStringSizeRes( aStr );\n" );
 }
-

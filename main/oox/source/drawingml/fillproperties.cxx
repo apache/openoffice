@@ -410,4 +410,3 @@ void GraphicProperties::pushToPropMap( PropertyMap& rPropMap, const GraphicHelpe
 
 } // namespace drawingml
 } // namespace oox
-

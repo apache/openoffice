@@ -96,4 +96,3 @@ bool TextFont::implGetFontData( OUString& rFontName, sal_Int16 rnFontPitch, sal_
 
 } // namespace drawingml
 } // namespace oox
-

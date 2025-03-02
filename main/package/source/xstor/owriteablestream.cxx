@@ -3613,5 +3613,3 @@ void SAL_CALL OWriteStream::removeTransactionListener( const uno::Reference< emb
 	m_pData->m_aListenersContainer.removeInterface( ::getCppuType((const uno::Reference< embed::XTransactionListener >*)0),
 													aListener );
 }
-
-

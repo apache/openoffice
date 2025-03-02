@@ -260,4 +260,3 @@ RSCINST GetFirstTupelEle( const RSCINST & rTop )
 #if defined _MSC_VER
 #pragma warning(pop)
 #endif
-

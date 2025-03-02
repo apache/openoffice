@@ -445,4 +445,3 @@ void ZipOutputStream::dosDateToTMDate ( tm &rTime, sal_uInt32 nDosDate)
 	rTime.tm_sec  = static_cast < sal_uInt32 > ( 2 * (nDosDate & 0x1F) );
 }
 */
-

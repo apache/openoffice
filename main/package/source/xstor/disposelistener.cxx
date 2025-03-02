@@ -50,4 +50,3 @@ void SAL_CALL OChildDispListener_Impl::disposing( const lang::EventObject& Sourc
 	if ( m_pStorage && Source.Source.is() )
 		m_pStorage->ChildIsDisposed( Source.Source );
 }
-

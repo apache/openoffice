@@ -317,4 +317,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OStorageFactory::getSupportedServiceNa
 {
 	return impl_staticGetSupportedServiceNames();
 }
-

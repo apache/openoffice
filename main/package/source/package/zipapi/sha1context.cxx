@@ -89,5 +89,3 @@ uno::Sequence< ::sal_Int8 > SAL_CALL SHA1DigestContext::finalizeDigestAndDispose
 
     return aResult;
 }
-
-

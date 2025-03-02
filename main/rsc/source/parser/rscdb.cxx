@@ -1109,4 +1109,3 @@ sal_uInt32 RscTypCont::PutTranslatorKey( sal_uInt64 nKey )
     aIdTranslator[ nKey ] = nFilePos;
 	return nPMId++;
 }
-

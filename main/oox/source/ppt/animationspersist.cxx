@@ -190,5 +190,3 @@ namespace oox { namespace ppt {
 	}
 
 } }
-
-

@@ -276,4 +276,3 @@ Reference< XFastContextHandler > TextParagraphPropertiesContext::createFastChild
 // --------------------------------------------------------------------
 
 } }
-

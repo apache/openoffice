@@ -146,4 +146,3 @@ sal_Int64 SAL_CALL OSelfTerminateFileStream::getLength()
 {
     return m_xSeekable->getLength();
 }
-

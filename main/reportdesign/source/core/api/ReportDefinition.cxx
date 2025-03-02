@@ -2955,4 +2955,3 @@ uno::Reference< document::XUndoManager > SAL_CALL OReportDefinition::getUndoMana
 // =============================================================================
 }// namespace reportdesign
 // =============================================================================
-

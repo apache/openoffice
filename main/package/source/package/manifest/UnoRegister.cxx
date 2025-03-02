@@ -86,4 +86,3 @@ extern "C" PACKAGE_DLLPUBLIC void * SAL_CALL component_getFactory(
 	}
     return pRet;
 }
-
