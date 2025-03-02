@@ -294,4 +294,3 @@ uno::Reference< beans::XPropertySet > SchXMLSeriesHelper::createOldAPIDataPointP
 
     return xRet;
 }
-

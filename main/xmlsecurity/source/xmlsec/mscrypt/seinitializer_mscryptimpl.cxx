@@ -231,4 +231,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL SEInitializer_MSCryptImpl::getSupported
 {
 	return SEInitializer_MSCryptImpl_getSupportedServiceNames();
 }
-

@@ -109,4 +109,3 @@ OSecurity::operator oslSecurity() const
 {
     return m_oslSecurity;
 }
-

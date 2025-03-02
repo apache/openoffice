@@ -126,5 +126,3 @@ void AquaSalTimer::Stop()
 {
     ImplSalStopTimer();
 }
-
-

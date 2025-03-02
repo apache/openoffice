@@ -305,4 +305,3 @@ void XMLTextImportHelper::ProcessSequenceReference(
 	GetSequenceIdBP().SetProperty(xPropSet, sXMLId);
 	GetSequenceNameBP().SetProperty(xPropSet, sXMLId);
 }
-

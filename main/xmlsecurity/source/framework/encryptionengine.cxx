@@ -209,4 +209,3 @@ void SAL_CALL EncryptionEngine::setBlockerId( sal_Int32 id )
 	m_nIdOfBlocker = id;
 	tryToPerform();
 }
-

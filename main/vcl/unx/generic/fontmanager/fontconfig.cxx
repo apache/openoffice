@@ -1296,4 +1296,3 @@ rtl::OUString PrintFontManager::Substitute( const rtl::OUString&,
 }
 
 #endif // ENABLE_FONTCONFIG
-

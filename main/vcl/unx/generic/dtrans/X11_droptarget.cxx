@@ -220,5 +220,3 @@ Sequence< OUString > DropTarget::getSupportedServiceNames() throw()
 {
 	return Xdnd_dropTarget_getSupportedServiceNames();
 }
-
-

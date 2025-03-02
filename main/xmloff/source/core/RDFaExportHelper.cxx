@@ -224,4 +224,3 @@ RDFaExportHelper::AddRDFa(
 }
 
 } // namespace xmloff
-

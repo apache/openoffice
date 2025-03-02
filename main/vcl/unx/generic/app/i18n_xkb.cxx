@@ -121,5 +121,3 @@ sal_uInt32 SalI18N_KeyboardExtension::LookupKeysymInGroup( sal_uInt32 nKeyCode,
 	KeySym nKeySymbol = XkbKeycodeToKeysym( mpDisplay, nKeyCode, nGroup, nShiftState );
 	return nKeySymbol;
 }
-
-

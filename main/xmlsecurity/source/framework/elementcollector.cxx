@@ -289,4 +289,3 @@ ElementCollector* ElementCollector::clone(
 	
 	return pClonedOne;
 }
-

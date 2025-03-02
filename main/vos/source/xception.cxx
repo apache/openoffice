@@ -36,4 +36,3 @@ VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OException, vos), 	\
 OException::~OException()
 {
 }
-

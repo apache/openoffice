@@ -119,4 +119,3 @@ OUString bigIntegerToNumericString ( Sequence< sal_Int8 > integer )
 
 	return aRet ;
 }
-

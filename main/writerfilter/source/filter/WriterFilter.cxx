@@ -70,5 +70,3 @@ component_getFactory(sal_Char const * implName, ::com::sun::star::lang::XMultiSe
 }
 
 } //extern "C"
-
-

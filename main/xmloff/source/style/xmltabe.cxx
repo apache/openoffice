@@ -134,5 +134,3 @@ void SvxXMLTabStopExport::Export( const uno::Any& rAny )
 		}
 	}
 }
-
-

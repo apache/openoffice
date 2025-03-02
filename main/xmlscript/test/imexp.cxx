@@ -235,4 +235,3 @@ void MyApp::Main()
         xComp->dispose();
     }
 }
-

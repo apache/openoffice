@@ -35,12 +35,12 @@ repos:
       - id: detect-aws-credentials
         args: [--allow-missing-credentials]
       - id: end-of-file-fixer
-        files: (m|M)akefile$|\.(bat|c|dxp|h|hrc|hxx|idl|in|ini|java|md|mk|pl|pm|py|rc|sh|xcs|xdl|xhp|xmi|xsd|ya?ml)$|^ext_libraries/.*$|^main/[a-u].*\.cxx$|^test/.*$
+        files: (m|M)akefile$|\.(bat|c|dxp|h|hrc|hxx|idl|in|ini|java|md|mk|pl|pm|py|rc|sh|xcs|xdl|xhp|xmi|xsd|ya?ml)$|^ext_libraries/.*$|^main/[a-z].*\.cxx$|^test/.*$
       - id: fix-byte-order-marker
       - id: mixed-line-ending
-        files: ^main/.*\.(c|h)xx$|^main/.*\.mk$|^main/.*\.idl$|^main/.*\.java$|\.(sh|xcs|xdl|xhp|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$
+        files: ^main/.*\.(c|h)xx$|^main/.*\.mk$|^main/.*\.java$|\.(idl|in|ini|pl|pm|py|sh|xcs|xdl|xhp|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$
       - id: trailing-whitespace
-        files: \.(bat|ini|pl|sh|xcs|xdl|xmi|ya?ml)$
+        files: \.(bat|ini|pl|rc|sh|xcs|xdl|xmi|xsd|ya?ml)$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:

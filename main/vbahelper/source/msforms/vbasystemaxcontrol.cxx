@@ -94,4 +94,3 @@ VbaSystemAXControl::getServiceNames()
 	}
 	return aServiceNames;
 }
-

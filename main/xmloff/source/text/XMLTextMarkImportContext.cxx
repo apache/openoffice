@@ -478,4 +478,3 @@ sal_Bool XMLTextMarkImportContext::FindName(
 
 	return bNameOK;
 }
-

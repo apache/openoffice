@@ -423,5 +423,3 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
 		AlignAfterImage( _rImage, _rFI, _nXOffset );
 	}
 }
-
-

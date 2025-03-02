@@ -275,4 +275,3 @@ SvXMLImportContext * SdXMLShowsContext::CreateChildContext( sal_uInt16 p_nPrefix
 
 	return new SvXMLImportContext( GetImport(), p_nPrefix, rLocalName );
 }
-

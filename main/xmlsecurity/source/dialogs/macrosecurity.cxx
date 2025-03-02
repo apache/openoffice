@@ -461,4 +461,3 @@ const String& ReadOnlyImage::GetHelpTip()
      static String  aStr(XMLSEC_RES( RID_XMLSECTP_READONLY_CONFIG_TIP));
      return aStr;
 }
-

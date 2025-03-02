@@ -109,4 +109,3 @@ const Point&   HelpEvent::GetMousePosPixel() const
     //DBG_ASSERT( !mbKeyboardActivated, "Keyboard help has no mouse position !");
     return maPos;
 }
-

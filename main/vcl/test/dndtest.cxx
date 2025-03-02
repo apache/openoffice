@@ -439,5 +439,3 @@ sal_Bool SAL_CALL StringTransferable::isDataFlavorSupported( const DataFlavor& )
 {
 	return sal_True;
 }
-
-

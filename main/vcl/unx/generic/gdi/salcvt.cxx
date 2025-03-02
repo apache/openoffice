@@ -334,4 +334,3 @@ SalConverterCache::ConvertStringUTF16( const sal_Unicode *pText, int nTextLen,
 
 	return nSize;
 }
-

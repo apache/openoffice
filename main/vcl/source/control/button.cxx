@@ -4342,5 +4342,3 @@ void DisclosureButton::KeyInput( const KeyEvent& rKEvt )
     else
         Button::KeyInput( rKEvt );
 }
-
-

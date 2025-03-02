@@ -132,4 +132,3 @@ void ProgressBarHelper::SetValue(sal_Int32 nTempValue)
 #endif
 	}
 }
-

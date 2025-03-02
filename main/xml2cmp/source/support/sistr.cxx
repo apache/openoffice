@@ -392,5 +392,3 @@ operator>=(const char * str, const Simstr & S)
 {
    return strcmp(str,S) >= 0;
 }
-
-

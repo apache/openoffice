@@ -4516,4 +4516,3 @@ void X11SalFrame::EndSetClipRegion()
 							  op, ordering );
 
 }
-

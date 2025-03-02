@@ -1449,4 +1449,3 @@ attribute_set_map_to_property_values(
     rValueList = aAttributeList;
     return true;
 }
-

@@ -1685,4 +1685,3 @@ void SdXMLHeaderFooterDeclContext::Characters( const ::rtl::OUString& rChars )
 {
 	maStrText += rChars;
 }
-

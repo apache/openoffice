@@ -81,4 +81,3 @@ sal_Bool SAL_CALL SecurityEngine::endMission(  )
 	
 	return rc;
 }
-

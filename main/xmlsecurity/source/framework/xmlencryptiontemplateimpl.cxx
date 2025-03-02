@@ -135,4 +135,3 @@ Reference< XSingleServiceFactory > XMLEncryptionTemplateImpl :: impl_createFacto
 	//return xFactory ;
 	return ::cppu::createSingleFactory( aServiceManager , impl_getImplementationName() , impl_createInstance , impl_getSupportedServiceNames() ) ;
 }
-

@@ -367,4 +367,3 @@ bool XSecController::WriteSignature(
 	
 	return rc;
 }
-

@@ -180,4 +180,3 @@ ScVbaColorFormat::getServiceNames()
     }
     return aServiceNames;
 }
-

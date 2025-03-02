@@ -161,4 +161,3 @@ LONG ImplDispatchMessage( CONST MSG *lpMsg )
 {
 	return DispatchMessageW( lpMsg );
 }
-

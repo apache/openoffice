@@ -291,4 +291,3 @@ void XMLBackGraphicPositionPropHdl::MergeXMLHoriPos( style::GraphicLocation& ePo
 		break;
 	}
 }
-

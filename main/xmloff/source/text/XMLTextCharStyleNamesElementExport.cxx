@@ -82,4 +82,3 @@ XMLTextCharStyleNamesElementExport::~XMLTextCharStyleNamesElementExport()
 			rExport.EndElement( aName, sal_False );
 	}
 }
-

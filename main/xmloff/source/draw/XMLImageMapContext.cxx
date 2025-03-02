@@ -707,4 +707,3 @@ void XMLImageMapContext::EndElement()
 	if( xInfo.is() && xInfo->hasPropertyByName( sImageMap ) )
 		xPropertySet->setPropertyValue(sImageMap, uno::makeAny( xImageMap ) );
 }
-

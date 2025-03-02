@@ -204,4 +204,3 @@ void clearErrorRecorder()
 	xmlSecErrorsSetCallback(NULL);
 //	g_xErrorRecorder = NULL;
 }
-

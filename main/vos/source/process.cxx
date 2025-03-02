@@ -518,4 +518,3 @@ sal_Bool SAL_CALL OExtCommandLine::getCommandArg(sal_uInt32 nArg, ::rtl::OUStrin
 {
     return pExtImpl->getCommandArg(nArg,strCommandArg);
 }
-

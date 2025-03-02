@@ -509,4 +509,3 @@ Reference< XInterface > DocumentDigitalSignatures_CreateInstance(
 {
 	return (cppu::OWeakObject*) new DocumentDigitalSignatures( rCtx );
 }
-

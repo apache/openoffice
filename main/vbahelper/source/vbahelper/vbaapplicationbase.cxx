@@ -439,4 +439,3 @@ void VbaApplicationBase::Quit() throw (uno::RuntimeException)
         }
     }
 }
-
