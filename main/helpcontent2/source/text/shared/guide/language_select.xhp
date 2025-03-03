@@ -41,80 +41,78 @@
 <bookmark_value>spellcheck; default languages</bookmark_value>
 <bookmark_value>dictionaries, see also languages</bookmark_value>
 </bookmark><comment>mw deleted "applying;" and changed "languages;"</comment>
-<paragraph xml-lang="en-US" id="hd_id3083278" role="heading" level="1" l10n="U" oldref="1"><variable id="language_select"><link href="text/shared/guide/language_select.xhp" name="Selecting the Document Language">Selecting the Document Language</link>
+<paragraph xml-lang="en-US" id="hd_id3083278" role="heading" level="1" l10n="U"><variable id="language_select"><link href="text/shared/guide/language_select.xhp" name="Selecting the Document Language">Selecting the Document Language</link>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="par_id3150040" role="paragraph" l10n="U" oldref="2">The language you select for your document determines the dictionary used for spellcheck, thesaurus and hyphenation, the decimal and thousands delimiter used and the default currency format.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150040" role="paragraph" l10n="U">The language you select for your document determines the dictionary used for spellcheck, thesaurus and hyphenation, the decimal and thousands delimiter used and the default currency format.</paragraph>
 <list type="unordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3153093" role="listitem" l10n="U" oldref="3">The language you select applies to the whole document.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153093" role="listitem" l10n="U">The language you select applies to the whole document.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3152578" role="listitem" l10n="U" oldref="4">Within the document, you can apply a separate language to any paragraph style. This has priority over the language of the whole document.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152578" role="listitem" l10n="U">Within the document, you can apply a separate language to any paragraph style. This has priority over the language of the whole document.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3152886" role="listitem" l10n="U" oldref="5">You can assign a language to selected pieces of text in a paragraph, either by direct formatting or with a character style. This assignment has priority over the paragraph style and document language.</paragraph>
-</listitem>
-</list>
-<paragraph xml-lang="en-US" id="hd_id3146121" role="heading" level="2" l10n="U" oldref="6">Selecting a language for the whole document</paragraph>
-<list type="ordered">
-<listitem>
-<paragraph xml-lang="en-US" id="par_id3083443" role="listitem" l10n="U" oldref="7">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline></emph>. Go to <link href="text/shared/optionen/01140000.xhp" name="Language Settings - Languages"><emph>Language Settings - Languages</emph></link>.</paragraph>
-</listitem>
-<listitem>
-<paragraph xml-lang="en-US" id="par_id3149664" role="listitem" l10n="U" oldref="8">Under <emph>Default languages for documents</emph>, select the document language for all newly created documents. If you mark <emph>For the current document only</emph>, your choice will only apply to the current document. Close the dialog with <emph>OK</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152886" role="listitem" l10n="U">You can assign a language to selected pieces of text in a paragraph, either by direct formatting or with a character style. This assignment has priority over the paragraph style and document language.</paragraph>
 </listitem>
 </list>
-<paragraph xml-lang="en-US" id="hd_id3152938" role="heading" level="2" l10n="U" oldref="9">Selecting a language for a Paragraph Style</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146121" role="heading" level="2" l10n="U">Selecting a language for the whole document</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3150872" role="listitem" l10n="U" oldref="10">Place the cursor in the paragraph whose paragraph style you want to edit.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3083443" role="listitem" l10n="U">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline></emph>. Go to <link href="text/shared/optionen/01140000.xhp" name="Language Settings - Languages"><emph>Language Settings - Languages</emph></link>.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3145367" role="listitem" l10n="U" oldref="11">Open the context menu and select <emph>Edit Paragraph Style</emph>. This opens the <emph>Paragraph Style</emph> dialog.</paragraph>
-</listitem>
-<listitem>
-<paragraph xml-lang="en-US" id="par_id3166413" role="listitem" l10n="U" oldref="12">Select the <emph>Font</emph> tab.</paragraph>
-</listitem>
-<listitem>
-<paragraph xml-lang="en-US" id="par_id3156283" role="listitem" l10n="U" oldref="13">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154942" role="listitem" l10n="U" oldref="14">All paragraphs formatted with the current paragraph style will have the selected language.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149664" role="listitem" l10n="U">Under <emph>Default languages for documents</emph>, select the document language for all newly created documents. If you mark <emph>For the current document only</emph>, your choice will only apply to the current document. Close the dialog with <emph>OK</emph>.</paragraph>
 </listitem>
 </list>
-<paragraph xml-lang="en-US" id="hd_id3145801" role="heading" level="2" l10n="U"
-oldref="15">Applying a language directly to selected text</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3152938" role="heading" level="2" l10n="U">Selecting a language for a Paragraph Style</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3148455" role="listitem" l10n="U" oldref="16">Select the text to which you want to apply a language.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150872" role="listitem" l10n="U">Place the cursor in the paragraph whose paragraph style you want to edit.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3159348" role="listitem" l10n="U" oldref="17">Choose <emph>Format - Character</emph>. This opens the <emph>Character</emph> dialog.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145367" role="listitem" l10n="U">Open the context menu and select <emph>Edit Paragraph Style</emph>. This opens the <emph>Paragraph Style</emph> dialog.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3155600" role="listitem" l10n="U" oldref="18">Select the <emph>Font</emph> tab.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3166413" role="listitem" l10n="U">Select the <emph>Font</emph> tab.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3154510" role="listitem" l10n="U" oldref="19">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156283" role="listitem" l10n="U">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154942" role="listitem" l10n="U">All paragraphs formatted with the current paragraph style will have the selected language.</paragraph>
 </listitem>
 </list>
-<paragraph xml-lang="en-US" id="par_id3154164" role="paragraph" l10n="U" oldref="20">In <item type="productname">%PRODUCTNAME</item> Calc, choose <emph>Format - Cells</emph> and proceed accordingly.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3154272" role="heading" level="2" l10n="U"
-oldref="21">Selecting a language for a Character Style</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145801" role="heading" level="2" l10n="U">Applying a language directly to selected text</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3145649" role="listitem" l10n="U" oldref="22">Open the Styles and Formatting window and click on the <emph>Character Styles</emph> icon.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148455" role="listitem" l10n="U">Select the text to which you want to apply a language.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3146792" role="listitem" l10n="U" oldref="23">Click on the name of the character style to which you want to apply a different language.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3159348" role="listitem" l10n="U">Choose <emph>Format - Character</emph>. This opens the <emph>Character</emph> dialog.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3150753" role="listitem" l10n="U" oldref="24">Then open the context menu in the Styles and Formatting window and select <emph>Modify</emph>. This opens the <emph>Character Style</emph> dialog.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155600" role="listitem" l10n="U">Select the <emph>Font</emph> tab.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3150321" role="listitem" l10n="U" oldref="25">Select the <emph>Font</emph> tab.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154510" role="listitem" l10n="U">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph xml-lang="en-US" id="par_id3154164" role="paragraph" l10n="U">In <item type="productname">%PRODUCTNAME</item> Calc, choose <emph>Format - Cells</emph> and proceed accordingly.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154272" role="heading" level="2" l10n="U">Selecting a language for a Character Style</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3145649" role="listitem" l10n="U">Open the Styles and Formatting window and click on the <emph>Character Styles</emph> icon.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3154756" role="listitem" l10n="U" oldref="26">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155766" role="listitem" l10n="U" oldref="27">Now you can apply the character style to your selected text.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146792" role="listitem" l10n="U">Click on the name of the character style to which you want to apply a different language.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3150753" role="listitem" l10n="U">Then open the context menu in the Styles and Formatting window and select <emph>Modify</emph>. This opens the <emph>Character Style</emph> dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3150321" role="listitem" l10n="U">Select the <emph>Font</emph> tab.</paragraph>
+</listitem>
+<listitem>
+<paragraph xml-lang="en-US" id="par_id3154756" role="listitem" l10n="U">Select the <emph>Language</emph> and click <emph>OK</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155766" role="listitem" l10n="U">Now you can apply the character style to your selected text.</paragraph>
 </listitem>
 </list><comment>UFI: see i76182</comment>
 <paragraph xml-lang="en-US" id="hd_id8703268" role="heading" level="2" l10n="NEW">Adding More Text Languages</paragraph>
@@ -168,7 +166,7 @@ oldref="21">Selecting a language for a Character Style</paragraph>
 </listitem>
 </list>
 <embed href="text/shared/00/00000004.xhp#related"/>
-<paragraph xml-lang="en-US" id="par_id3150043" role="paragraph" l10n="U" oldref="28"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01140000.xhp" name="Language Settings - Languages">Language Settings - Languages</link></paragraph>
-<paragraph xml-lang="en-US" id="par_id3152483" role="paragraph" l10n="U" oldref="29"><link href="text/shared/01/05020100.xhp" name="Format - Character - Font">Format - Character - Font</link></paragraph>
+<paragraph xml-lang="en-US" id="par_id3150043" role="paragraph" l10n="U"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01140000.xhp" name="Language Settings - Languages">Language Settings - Languages</link></paragraph>
+<paragraph xml-lang="en-US" id="par_id3152483" role="paragraph" l10n="U"><link href="text/shared/01/05020100.xhp" name="Format - Character - Font">Format - Character - Font</link></paragraph>
 </body>
 </helpdocument>
