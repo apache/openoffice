@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -181,7 +179,7 @@ static void lcl_SetAllTextToDefaultLanguage( SwWrtShell &rWrtSh, sal_uInt16 nWhi
 }
 
 /*---------------------------------------------------------------------------
-	Beschreibung:	String fuer die Seitenanzeige in der Statusbar basteln.
+	Beschreibung:	String für die Seitenanzeige in der Statusbar basteln.
  ----------------------------------------------------------------------------*/
 
 String SwView::GetPageStr( sal_uInt16 nPg, sal_uInt16 nLogPg,
@@ -209,33 +207,33 @@ int SwView::InsertGraphic( const String &rPath, const String &rFilter,
                                 sal_Bool bLink, GraphicFilter *pFlt,
                                 Graphic* pPreviewGrf, sal_Bool bRule )
 {
-    SwWait aWait( *GetDocShell(), true );
+	SwWait aWait( *GetDocShell(), true );
 
-    Graphic aGrf;
-    int nRes = GRFILTER_OK;
-    if ( pPreviewGrf )
-        aGrf = *pPreviewGrf;
-    else
-    {
-        if( !pFlt )
-            pFlt = GraphicFilter::GetGraphicFilter();
-        nRes = GraphicFilter::LoadGraphic( rPath, rFilter, aGrf, pFlt /*, nFilter*/ );
-    }
+	Graphic aGrf;
+	int nRes = GRFILTER_OK;
+	if ( pPreviewGrf )
+		aGrf = *pPreviewGrf;
+	else
+	{
+		if( !pFlt )
+			pFlt = GraphicFilter::GetGraphicFilter();
+		nRes = GraphicFilter::LoadGraphic( rPath, rFilter, aGrf, pFlt /*, nFilter*/ );
+	}
 
-    if( GRFILTER_OK == nRes )
-    {
-        SwFlyFrmAttrMgr aFrmMgr( sal_True, GetWrtShellPtr(), FRMMGR_TYPE_GRF );
-        SwWrtShell &rSh = GetWrtShell();
+	if( GRFILTER_OK == nRes )
+	{
+		SwFlyFrmAttrMgr aFrmMgr( sal_True, GetWrtShellPtr(), FRMMGR_TYPE_GRF );
+		SwWrtShell &rSh = GetWrtShell();
 
-        // #123922# determine if we really want to insert or replace the graphic at a selected object
-        const bool bReplaceMode(rSh.HasSelection() && nsSelectionType::SEL_FRM == rSh.GetSelectionType());
+		// #123922# determine if we really want to insert or replace the graphic at a selected object
+		const bool bReplaceMode(rSh.HasSelection() && nsSelectionType::SEL_FRM == rSh.GetSelectionType());
 
         if(bReplaceMode)
         {
             // #123922# Do same as in D&D, ReRead graphic and all is done
             rSh.ReRead(
-                bLink ? rPath : String(), 
-                bLink ? rFilter : String(), 
+                bLink ? rPath : String(),
+                bLink ? rFilter : String(),
                 &aGrf);
         }
         else
@@ -260,11 +258,11 @@ int SwView::InsertGraphic( const String &rPath, const String &rFilter,
                 rSh.Insert( aEmptyStr, aEmptyStr, aGrf, &aFrmMgr );
             }
 
-            // nach dem EndAction ist es zu spaet, weil die Shell dann schon zerstoert sein kann
+            // nach dem EndAction ist es zu spät, weil die Shell dann schon zerstört sein kann
             rSh.EndAction();
-        }
-    }
-    return nRes;
+		}
+	}
+	return nRes;
 }
 
 
@@ -277,7 +275,7 @@ sal_Bool SwView::InsertGraphicDlg( SfxRequest& rReq )
     sal_Bool bReturn = sal_False;
     SwDocShell* pDocShell = GetDocShell();
     sal_uInt16 nHtmlMode = ::GetHtmlMode(pDocShell);
-    // im HTML-Mode nur verknuepft einfuegen
+    // im HTML-Mode nur verknüpft einfügen
     FileDialogHelper* pFileDlg = new FileDialogHelper( SFXWB_GRAPHIC | SFXWB_SHOWSTYLES );
     pFileDlg->SetTitle(SW_RESSTR(STR_INSERT_GRAPHIC ));
     pFileDlg->SetContext( FileDialogHelper::SW_INSERT_GRAPHIC );
@@ -484,7 +482,7 @@ sal_Bool SwView::InsertGraphicDlg( SfxRequest& rReq )
         }
         else
         {
-            // set the specific graphic attrbutes to the graphic
+            // set the specific graphic attributes to the graphic
             bReturn = sal_True;
             AutoCaption( GRAPHIC_CAP );
             rReq.Done();
@@ -804,7 +802,7 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
 				const sal_uInt16 nCurIdx = pWrtShell->GetCurPageDesc();
 				SwPageDesc aPageDesc( pWrtShell->GetPageDesc( nCurIdx ) );
 				::ItemSetToPageDesc( *pArgs, aPageDesc );
-				// Den Descriptor der Core veraendern.
+				// Den Descriptor der Core verändern.
 				pWrtShell->ChgPageDesc( nCurIdx, aPageDesc );
 			}
 		}
@@ -857,7 +855,7 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
 				while( pWrtShell->GotoPrevTOXBase() )
 					;   // aufs erste Verzeichnis springen
 
-				// falls wir nicht mehr in einem stehen, dann zum naechsten
+				// falls wir nicht mehr in einem stehen, dann zum nächsten
 				// springen.
 				const SwTOXBase* pBase = pWrtShell->GetCurTOX();
 				if( !pBase )
@@ -874,8 +872,8 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
 						pWrtShell->ApplyAutoMark();
 						bAutoMarkApplied = sal_True;
 					}
-					// JP 15.07.96: das pBase wird nur fuer die Schnittstelle
-					//              benoetigt. Muss mal umgetstellt werden!!!
+					// JP 15.07.96: das pBase wird nur für die Schnittstelle
+					//              benötigt. Muss mal umgestellt werden!!!
 					pWrtShell->UpdateTableOf( *pBase );
 
 					if( pWrtShell->GotoNextTOXBase() )
@@ -1023,7 +1021,7 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
                 {
                     SwDBData aData;
                     aData = rSh.GetDBData();
-                    rSh.EnterStdMode(); // Wechsel in Textshell erzwingen; ist fuer
+                    rSh.EnterStdMode(); // Wechsel in Textshell erzwingen; ist für
                                         // das Mischen von DB-Feldern notwendig.
                     AttrChangedNotify( &rSh );
                     pNewDBMgr->SetMergeType( DBMGR_MERGE );
@@ -1133,7 +1131,7 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
                     case SID_ALIGN_ANY_BOTTOM   :   nAlias = SID_OBJECT_ALIGN_DOWN    ; break;
                 }
             }
-            //special handling for the draw shell
+            // special handling for the draw shell
             if(nAlias && (nSelectionType & (nsSelectionType::SEL_DRW)))
             {
                 SfxAllEnumItem aEnumItem(SID_OBJECT_ALIGN, nAlias - SID_OBJECT_ALIGN_LEFT);
@@ -1141,14 +1139,14 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
                                 SID_OBJECT_ALIGN, SFX_CALLMODE_ASYNCHRON, &aEnumItem, 0L);
             }
             else if(nAlias)
-            //these slots are either re-mapped to text or object alignment
+            // these slots are either re-mapped to text or object alignment
                 GetViewFrame()->GetDispatcher()->Execute(
                                 nAlias, SFX_CALLMODE_ASYNCHRON);
         }
         break;
         case SID_RESTORE_EDITING_VIEW:
         {
-            //#i33307# restore editing position
+            // #i33307# restore editing position
             Point aCrsrPos;
             bool bSelectObj;
             if(pViewImpl->GetRestorePosition(aCrsrPos, bSelectObj))
@@ -1204,7 +1202,7 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 	ASSERT( nWhich, "leeres Set");
 	if (Application::IsAccessibilityEnabled())
 	{
-		//get section chang event
+		// get section change event
 		const SwSection* CurrSect = rShell.GetCurrSection();
 		if( CurrSect )
 		{
@@ -1220,7 +1218,7 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 			rShell.FireSectionChangeEvent(2, 1);
 			nOldSectionName = String();
 		}
-		//get column change event
+		// get column change event
 		if(rShell.bColumnChange())
 		{
 			rShell.FireColumnChangeEvent(2, 1);
@@ -1233,7 +1231,7 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 		{
 			case FN_STAT_PAGE:
 /*
-//JP 07.01.00: is a nice feature - show the selektion of DrawObjects
+//JP 07.01.00: is a nice feature - show the selection of DrawObjects
 			if( rShell.IsObjSelected()
 //???				|| rShell.IsFrmSelected()
 				)
@@ -1250,7 +1248,7 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 				rShell.GetPageNumber( -1, rShell.IsCrsrVisible(), nPage, nLogPage, sDisplay );
 				rSet.Put( SfxStringItem( FN_STAT_PAGE,
 							GetPageStr( nPage, nLogPage, sDisplay) ));
-				//if existing page number is not equal to old page number, send out this event.
+				// if existing page number is not equal to old page number, send out this event.
 				if (nOldPageNum != nLogPage )
 				{
 					if (nOldPageNum != 0)
@@ -1570,7 +1568,7 @@ void SwView::StateStatusLine(SfxItemSet &rSet)
 }
 
 /*--------------------------------------------------------------------
-	Beschreibung:	Execute fuer die Stauszeile
+	Beschreibung:	Execute für die Stauszeile
  --------------------------------------------------------------------*/
 
 
@@ -2132,7 +2130,7 @@ long SwView::InsertMedium( sal_uInt16 nSlotId, SfxMedium* pMedium, sal_Int16 nVe
         }
         pDocSh->RegisterTransfer( *pMedium );
         pMedium->DownLoad();    // ggfs. den DownLoad anstossen
-		if( aRef.Is() && 1 < aRef->GetRefCount() )	// noch gueltige Ref?
+		if( aRef.Is() && 1 < aRef->GetRefCount() )	// noch gültige Ref?
 		{
 			SwReader* pRdr;
             Reader *pRead = pDocSh->StartConvertFrom( *pMedium, &pRdr, pWrtShell );
@@ -2149,10 +2147,10 @@ long SwView::InsertMedium( sal_uInt16 nSlotId, SfxMedium* pMedium, sal_Int16 nVe
 					SwWait aWait( *GetDocShell(), true );
 					pWrtShell->StartAllAction();
 					if ( pWrtShell->HasSelection() )
-						pWrtShell->DelRight();		// Selektionen loeschen
+						pWrtShell->DelRight();		// Selektionen löschen
 					if( pRead )
 					{
-						nErrno = pRdr->Read( *pRead );	// und Dokument einfuegen
+						nErrno = pRdr->Read( *pRead );	// und Dokument einfügen
 						delete pRdr;
 					}
 					else
@@ -2168,7 +2166,7 @@ long SwView::InsertMedium( sal_uInt16 nSlotId, SfxMedium* pMedium, sal_Int16 nVe
 				{
 					SfxRequest aReq( FN_UPDATE_TOX, SFX_CALLMODE_SLOT, GetPool() );
 					Execute( aReq );
-					pWrtShell->SetUpdateTOX( sal_False );		// wieder zurueck setzen
+					pWrtShell->SetUpdateTOX( sal_False );		// wieder zurück setzen
 				}
 
                 if( pDoc )
@@ -2209,7 +2207,7 @@ extern int lcl_FindDocShell( SfxObjectShellRef& xDocSh, SfxObjectShellLock& xLoc
 			SwWait aWait( *GetDocShell(), true );
 			pWrtShell->StartAllAction();
 
-			pWrtShell->EnterStdMode();			// Selektionen loeschen
+			pWrtShell->EnterStdMode();			// Selektionen löschen
 
 			if( bCompare )
 				nFound = pWrtShell->CompareDoc( *((SwDocShell*)&xDocSh)->GetDoc() );
@@ -2316,7 +2314,7 @@ void SwView::GenerateFormLetter(sal_Bool bUseCurrentDocument)
     {
         if(!GetWrtShell().IsAnyDatabaseFieldInDoc())
         {
-            //check availability of data sources (except biblio source)
+            // check availability of data sources (except biblio source)
             uno::Reference< XMultiServiceFactory > xMgr( ::comphelper::getProcessServiceFactory() );
             uno::Reference<XNameAccess>  xDBContext;
             if( xMgr.is() )
@@ -2341,7 +2339,7 @@ void SwView::GenerateFormLetter(sal_Bool bUseCurrentDocument)
             }
             else
             {
-                //take an existing data source or create a new one?
+                // take an existing data source or create a new one?
 					SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
                     DBG_ASSERT(pFact, "Dialogdiet fail!");
 					AbstractMailMergeFieldConnectionsDlg* pConnectionsDlg = pFact->CreateMailMergeFieldConnectionsDlg(
@@ -2405,7 +2403,7 @@ void SwView::GenerateFormLetter(sal_Bool bUseCurrentDocument)
         SwDBData aData;
         SwWrtShell &rSh = GetWrtShell();
         aData = rSh.GetDBData();
-        rSh.EnterStdMode(); // Wechsel in Textshell erzwingen; ist fuer
+        rSh.EnterStdMode(); // Wechsel in Textshell erzwingen; ist für
                             // das Mischen von DB-Feldern notwendig.
         AttrChangedNotify( &rSh );
         pNewDBMgr->SetMergeType( DBMGR_MERGE );
@@ -2425,7 +2423,7 @@ void SwView::GenerateFormLetter(sal_Bool bUseCurrentDocument)
     }
     else
     {
-        //call documents and template dialog
+        // call documents and template dialog
         SfxApplication* pSfxApp = SFX_APP();
         Window* pTopWin = pSfxApp->GetTopWindow();
         SvtDocumentTemplateDialog* pDocTemplDlg = new SvtDocumentTemplateDialog( pTopWin );
@@ -2492,9 +2490,9 @@ IMPL_LINK( SwView, DialogClosedHdl, sfx2::FileDialogHelper*, _pFileDlg )
                         pRed->ReInitDlg( GetDocShell() );
                 }
             }
-        }
-    }
-    return 0;
+		}
+	}
+	return 0;
 }
 
 void SwView::ExecuteScan( SfxRequest& rReq )
@@ -2502,3 +2500,5 @@ void SwView::ExecuteScan( SfxRequest& rReq )
 	if (pViewImpl)
 		pViewImpl->ExecuteScan(rReq) ;
 }
+
+/* vim: set noet sw=4 ts=4: */
