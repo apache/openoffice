@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef _XMLOFF_PRSTYLEI_HXX_
 #define _XMLOFF_PRSTYLEI_HXX_
@@ -41,7 +40,7 @@ namespace com { namespace sun { namespace star {
 } } }
 
 //UUUU
-typedef std::hash_set< rtl::OUString, rtl::OUStringHash > OldFillStyleDefinitionSet; 
+typedef std::hash_set< rtl::OUString, rtl::OUStringHash > OldFillStyleDefinitionSet;
 
 class XMLOFF_DLLPUBLIC XMLPropStyleContext : public SvXMLStyleContext
 {
@@ -63,14 +62,14 @@ private:
 
 protected:
 
-    //UUUU Helper to check if the local maProperties contzains the given
+    //UUUU Helper to check if the local maProperties contains the given
     // FillStyle tag and if the FillStyle there is different from FillStyle_NONE
     bool doNewDrawingLayerFillStyleDefinitionsExist(
         const ::rtl::OUString& rFillStyleTag) const;
 
     //UUUU Helper which will deactivate all old fill definitions (identified by
     // the given OldFillStyleDefinitionSet) in the local maProperties. Deactivation
-    // is done setting theindex to -1. It returns true when actually old fill
+    // is done setting the index to -1. It returns true when actually old fill
     // definitions existed and were deactivated
     bool deactivateOldFillStyleDefinitions(
         const OldFillStyleDefinitionSet& rHashSetOfTags);
@@ -93,7 +92,7 @@ protected:
 	SvXMLStylesContext *GetStyles() { return (SvXMLStylesContext *)&mxStyles; }
 	::std::vector< XMLPropertyState > & GetProperties() { return maProperties; }
 
-	// This methos my be overloaded to create a new style. Its called by
+	// This method may be overloaded to create a new style. It's called by
 	// CreateInsert to create a style if a style with the requested family and
 	// name couldn't be found. The st
 	virtual ::com::sun::star::uno::Reference <
@@ -107,7 +106,7 @@ public:
 			const ::rtl::OUString& rLName,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > & xAttrList,
 			SvXMLStylesContext& rStyles, sal_uInt16 nFamily = 0,
-		    sal_Bool bDefaultStyle=sal_False );
+			sal_Bool bDefaultStyle=sal_False );
 	virtual ~XMLPropStyleContext();
 
 	virtual SvXMLImportContext *CreateChildContext(
@@ -124,7 +123,7 @@ public:
 
 	const ::com::sun::star::uno::Reference <
 				::com::sun::star::style::XStyle >&
-	   		GetStyle() const { return mxStyle; }
+			GetStyle() const { return mxStyle; }
 	void SetStyle(
 			const ::com::sun::star::uno::Reference<
 				::com::sun::star::style::XStyle >& xStl) { mxStyle = xStl; }
