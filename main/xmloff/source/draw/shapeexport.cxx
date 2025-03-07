@@ -1118,6 +1118,9 @@ void XMLShapeExport::ImpCalcShapeType(const uno::Reference< drawing::XShape >& x
 								// #110680#
 								// same reaction for binfilter
 								|| sCLSID.equals(rtl::OUString( SvGlobalName( BF_SO3_SC_CLASSID ).GetHexName()))
+								// #121222#
+								// same reaction for graph in report builder
+								|| sCLSID.equals(rtl::OUString( SvGlobalName( SO3_RPT_SCH_CLASSID_90 ).GetHexName()))
 								)
 							{
 								eShapeType = XmlShapeTypeDrawSheetShape;
