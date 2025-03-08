@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,21 +9,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
 <!--
-	For further documentation and updates visit http://xml.openoffice.org/odf2xhtml
+	For further documentation and updates visit https://xml.openoffice.org/odf2xhtml
 -->
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -122,7 +122,7 @@
 
 				The cell-style depends on two attributes:
 
-				1) table:style-name - the style properties of cell. When they exist, a default alignement (cp. below) will be added for the
+				1) table:style-name - the style properties of cell. When they exist, a default alignment (cp. below) will be added for the
 									  case of no alignment in the style exist.
 
 				2) office:value-type - the value type of the table-cell giving the default alignments.
@@ -207,11 +207,11 @@
 			<!-- set column style (disjunct of cell style) -->
 			<xsl:value-of select="$globalData/all-styles/style[@style:name = $currentTableColumn/@table:style-name]/final-properties" />
 
-	   </xsl:attribute>
+		</xsl:attribute>
 
-	   <!-- cell style header -->
-	   <xsl:attribute name="class">
-		   <xsl:value-of select="translate($styleName, '.,;: %()[]/\+', '_____________')"/>
-	   </xsl:attribute>
+		<!-- cell style header -->
+		<xsl:attribute name="class">
+			<xsl:value-of select="translate($styleName, '.,;: %()[]/\+', '_____________')"/>
+		</xsl:attribute>
 	</xsl:template>
 </xsl:stylesheet>
