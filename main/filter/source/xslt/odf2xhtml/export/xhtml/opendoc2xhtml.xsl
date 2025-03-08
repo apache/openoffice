@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,7 +20,6 @@
  * under the License.
  *
  ***********************************************************-->
-
 
 <!--
 	For further documentation and updates visit https://xml.openoffice.org/odf2xhtml
@@ -103,7 +103,7 @@
 
 	<!-- OPTIONAL: (MANDATORY: for session management by URL rewriting)
 		 Useful for WebApplications: if a HTTP session is not cookie based, URL rewriting is being used (the session is appended to the URL).
-		 This URL session is used for example when links to graphics are created by XSLT. Otherwise the user has to log in again for every graphic he likes to see. -->
+		 This URL session is used for example when links to graphics are created by XSLT. Otherwise the user has to log again in for every graphic he likes to see. -->
 	<xsl:param name="optionalURLSuffix" />
 
 	<!-- OPTIONAL: URL to office meta file (flat xml use the URL to the input file) -->
@@ -113,12 +113,12 @@
 	<xsl:param name="stylesFileURL" />
 
 	<!-- OPTIONAL: DPI (dots per inch) the standard resolution of given pictures (necessary for the conversion of 'cm' into 'pixel')-->
-	<!-- Although many pictures have a 96 dpi resolution, a higher resolution gives better results for common browsers -->
+	<!-- Although many pictures have a 96 dpi resolution, a higher resolution give better results for common browsers -->
 	<!-- Cp. measure_conversion.xsl:
 		 <xsl:param name="dpi" select="111" /> -->
 
 
-	<!-- OPTIONAL: in case of using a different processor than a JAVA XSLT, you can enable the Java functionality
+	<!-- OPTIONAL: in case of using a different processor than a JAVA XSLT, you can unable the Java functionality
 		 (e.g. encoding chapter names for the content-table as href and anchors ) -->
 	<xsl:param name="java"        select="true()" />
 	<xsl:param name="javaEnabled" select="boolean($java)" />
@@ -135,10 +135,10 @@
 	<xsl:template match="/">
 		<!-- debug output of parameter value set -->
 		<xsl:if test="$debugEnabled">
-			<xsl:call-template name="debug-check-parameter" />
+			<xsl:call-template name="debug-check-paramter" />
 		</xsl:if>
 		<!-- gathers style properties and
-			returns them as globalData parameter to the 'start-main' template            -->
+			returns them as globalData parameter to the 'start-main' template -->
 		<xsl:call-template name="collect-global-odf-properties" />
 	</xsl:template>
 
@@ -150,7 +150,7 @@
 		<xsl:param name="globalData" />
 
 		<xsl:element name="html">
-			<xsl:comment>This file was converted to xhtml by Apache OpenOffice - see https://xml.openoffice.org/odf2xhtml for more info.</xsl:comment>
+			<xsl:comment>This file was converted to xhtml by OpenOffice.org - see http://xml.openoffice.org/odf2xhtml for more info.</xsl:comment>
 			<xsl:call-template name='create-header'>
 				<xsl:with-param name="globalData" select="$globalData" />
 			</xsl:call-template>
@@ -164,7 +164,7 @@
 
 	<!-- debug purpose only:
 		 verbose checking of the parameters of this template-->
-	<xsl:template name="debug-check-parameter">
+	<xsl:template name="debug-check-paramter">
 		<xsl:message>Parameter dpi: <xsl:value-of select="$dpi" /></xsl:message>
 		<xsl:message>Parameter metaFileURL: <xsl:value-of select="$metaFileURL" /></xsl:message>
 		<xsl:message>Parameter stylesFileURL: <xsl:value-of select="$stylesFileURL" /></xsl:message>
