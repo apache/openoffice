@@ -72,4 +72,4 @@
 
 #endif	// #ifndef __FRAMEWORK_MACROS_DEBUG_REGISTRATION_HXX_
 
-
+/* vim: set noet sw=4 ts=4: */
