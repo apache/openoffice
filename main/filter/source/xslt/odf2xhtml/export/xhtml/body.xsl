@@ -797,7 +797,7 @@
 					<xsl:when test="$createDiv and normalize-space(.) != ''">
 						<!-- every following frame sibling till the next draw:frame
 							have to be incapuslated within a div with left indent.
-							To be moved alltogether arcording the indent (usually right) -->
+							To be moved altogether arcording the indent (usually right) -->
 						<xsl:comment>Next 'div' added for floating.</xsl:comment>
 						<xsl:element name="div">
 							<xsl:attribute name="style">
@@ -881,7 +881,7 @@
 
 
 
-	<!-- As draw:fame may occure within more elements than in text:p and draw:page -->
+	<!-- As draw:fame may occur within more elements than in text:p and draw:page -->
 	<xsl:template match="draw:frame">
 		<xsl:param name="globalData"/>
 		<xsl:param name="previousFrameWidths" select="0"/>
@@ -990,7 +990,7 @@
 		<xsl:if test="@text:anchor-type='paragraph'">
 			<xsl:comment>Next 'div' is emulating the top hight of a draw:frame.</xsl:comment>
 			<!-- When the svg:y is set relativ to the paragraph content, the best way to emulate a positive height,
-			 is to add an invisbile division inbetween with a height.
+			 is to add an invisbile division between with a height.
 			 Often text will flow into this 'gap', which is handled separately!
 			 -->
 			<xsl:if test="$svgY &gt; 0">
@@ -1551,7 +1551,7 @@
 
 		B)
 		Since OASIS Open Document XML (implemented in OOo2.0) only one parent type exists for list items
-		the 'text:list' element. The XHTML element 'ol', 'ul' will be choosen upon the list style type.
+		the 'text:list' element. The XHTML element 'ol', 'ul' will be chosen upon the list style type.
 
 		C)
 		An Office list may be spread over the whole document. Linked by their style and text:continue-numbering='true'.
@@ -1975,7 +1975,7 @@
 									</xsl:variable>
 									<!-- Numbering is being done by this transformation creating a HTML span representing the number label
 										 The html:span represents the list item/header label (e.g. 1.A.III)
-										 As the html:span is usually a inline element is formated by CSS as block element to use width upon it,
+										 As the html:span is usually a inline element is formatted by CSS as block element to use width upon it,
 										 to disable the caridge return float:left is used and later neglected -->
 									<xsl:element name="span">
 										<xsl:if test="$listLevelStyle/@text:style-name">
