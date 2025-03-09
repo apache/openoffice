@@ -322,7 +322,7 @@ public class PostNewsgroup extends JFrame
 
 		if( subscribedNewsgroups == null )
 		{
-			//System.out.println( "Couldn't find any subscibed newsgroups in .mozilla" );
+			//System.out.println( "Couldn't find any subscribed newsgroups in .mozilla" );
 			JOptionPane.showMessageDialog( window, "No subscribed newsgroups found in mozilla/netscape profile \nPlease enter newsgroup and host name", 
 							"Newsgroups Information", JOptionPane.INFORMATION_MESSAGE );
 		}
