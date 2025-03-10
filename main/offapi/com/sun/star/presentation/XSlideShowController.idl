@@ -127,19 +127,19 @@ interface XSlideShowController
 	//------------------------------------------------------------------------- 
 
 	/** goto and display next slide.
-		<p>Remaining effects on the current slide will be skiped.*/
+		<p>Remaining effects on the current slide will be skipped.*/
 	void gotoNextSlide();
 
 	//------------------------------------------------------------------------- 
 
 	/** goto and display previous slide.
-		<p>Remaining effects on the current slide will be skiped.*/
+		<p>Remaining effects on the current slide will be skipped.*/
 	void gotoPreviousSlide();
 
 	//------------------------------------------------------------------------- 
 
 	/** goto and display last slide.
-		<p>Remaining effects on the current slide will be skiped.*/
+		<p>Remaining effects on the current slide will be skipped.*/
 	void gotoLastSlide();
 
 	//------------------------------------------------------------------------- 

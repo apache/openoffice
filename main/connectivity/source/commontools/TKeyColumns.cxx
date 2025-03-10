@@ -59,7 +59,7 @@ sdbcx::ObjectType OKeyColumnsHelper::createObject(const ::rtl::OUString& _rName)
 	m_pKey->getTable()->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_SCHEMANAME))	>>= aSchema;
 	m_pKey->getTable()->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_NAME))			>>= aTable;
 
-	// frist get the related column to _rName
+	// first get the related column to _rName
 	Reference< XResultSet > xResult = m_pKey->getTable()->getMetaData()->getImportedKeys(
 			m_pKey->getTable()->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_CATALOGNAME)),aSchema,aTable);
 
@@ -104,7 +104,7 @@ sdbcx::ObjectType OKeyColumnsHelper::createObject(const ::rtl::OUString& _rName)
 				}
 				catch(const SQLException&)
 				{
-					// somethimes we get an error when asking for this param
+					// sometimes we get an error when asking for this param
 				}
 
 				OKeyColumn* pRet = new OKeyColumn(aRefColumnName,

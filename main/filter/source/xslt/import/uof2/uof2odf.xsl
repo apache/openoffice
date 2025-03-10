@@ -8965,7 +8965,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 		<xsl:param name="points"/>
 		<xsl:param name="value"/>
 		<xsl:if test="$points">
-			<xsl:variable name="frist-piont">
+			<xsl:variable name="first-point">
 				<xsl:value-of select="substring-before($points,'lineto')"/>
 			</xsl:variable>
 			<xsl:variable name="other-points">
@@ -8974,10 +8974,10 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 			<xsl:choose>
 				<xsl:when test="contains($other-points,'lineto')">
 					<xsl:variable name="x-coor">
-						<xsl:value-of select="number(substring-before($frist-piont,' ')) * 1000"/>
+						<xsl:value-of select="number(substring-before($first-point,' ')) * 1000"/>
 					</xsl:variable>
 					<xsl:variable name="y-coor">
-						<xsl:value-of select="number(substring-after($frist-piont,' ')) * 1000"/>
+						<xsl:value-of select="number(substring-after($first-point,' ')) * 1000"/>
 					</xsl:variable>
 					<xsl:call-template name="DrawPoints">
 						<xsl:with-param name="points" select="$other-points"/>
@@ -8986,10 +8986,10 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:variable name="q-x-coor">
-						<xsl:value-of select="number(substring-before($frist-piont,' ')) * 1000"/>
+						<xsl:value-of select="number(substring-before($first-point,' ')) * 1000"/>
 					</xsl:variable>
 					<xsl:variable name="q-y-coor">
-						<xsl:value-of select="number(substring-after($frist-piont,' ')) * 1000"/>
+						<xsl:value-of select="number(substring-after($first-point,' ')) * 1000"/>
 					</xsl:variable>
 					<xsl:variable name="e-x-coor">
 						<xsl:value-of select="number(substring-before($other-points,' ')) * 1000"/>
