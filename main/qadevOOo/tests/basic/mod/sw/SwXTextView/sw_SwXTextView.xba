@@ -31,10 +31,10 @@
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for XControlAccess
+' Required for XControlAccess
  Global oControlModel As Object
 
-' Requiered for  com.sun.star.view.XSelectionSupplier
+' Required for  com.sun.star.view.XSelectionSupplier
  Global SelectableObj1 As Object
  Global SelectableObj2 As Object
 

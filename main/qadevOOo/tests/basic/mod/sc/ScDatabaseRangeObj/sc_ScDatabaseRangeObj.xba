@@ -34,10 +34,10 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.container.XNamed
+' Required for  com.sun.star.container.XNamed
  Global cNameToSet As String ' "fixed" if name is fixed
 
-' Requiered for  com.sun.star.sheet.XCellRangeReferrer
+' Required for  com.sun.star.sheet.XCellRangeReferrer
  Global oReferredCells As Variant
 
 

@@ -34,7 +34,7 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.lang.XInitialization
+' Required for  com.sun.star.lang.XInitialization
 Global aInitArgs As Variant
 
 Global oReg1 As Object

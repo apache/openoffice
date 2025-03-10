@@ -34,10 +34,10 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.lang.XComponent
+' Required for  com.sun.star.lang.XComponent
  Global oComponentInstance As Object ' it will be disposed
 
-' Requiered for  com.sun.star.frame.XModel
+' Required for  com.sun.star.frame.XModel
  Global oXModelController As Object
  Global oXModelSel As Object
  Global oXModelToSel As Object

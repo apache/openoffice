@@ -538,7 +538,7 @@ public class CalcRTL /* extends ComplexTestCase */
     }
 
     /*
-     * This method inserts a RectangleShape into the calc document xSheetDoc and returns the resultung XShape-object
+     * This method inserts a RectangleShape into the calc document xSheetDoc and returns the resulting XShape-object
      */
     protected XShape getInsertedShape() {
         XShape insertedShape = null;

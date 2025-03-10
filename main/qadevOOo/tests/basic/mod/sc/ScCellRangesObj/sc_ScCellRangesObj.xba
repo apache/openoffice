@@ -36,7 +36,7 @@ option explicit
 
 Global oInstance As Object
 
-' Requiered for  com.sun.star.container.XNameReplace
+' Required for  com.sun.star.container.XNameReplace
 Global cNameToReplace As String 'name of instance to be replased
 Global oReplaceInstance As Object 'instance, that will be inserted
                                    'instead old one

@@ -654,7 +654,7 @@ class SwAccPreviewData
 
     const SwPageFrm *mpSelPage;
 
-    /** adjust logic page retangle to its visible part
+    /** adjust logic page rectangle to its visible part
 
         OD 17.01.2003 #103492#
 
@@ -821,7 +821,7 @@ void SwAccPreviewData::DisposePage(const SwPageFrm *pPageFrm )
         mpSelPage = 0;
 }
 
-/** adjust logic page retangle to its visible part
+/** adjust logic page rectangle to its visible part
 
     OD 17.01.2003 #103492#
 

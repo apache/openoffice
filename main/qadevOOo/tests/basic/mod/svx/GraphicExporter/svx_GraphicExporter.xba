@@ -33,11 +33,11 @@ option explicit
 
 
 ' REQUIRED VARIABLES for interface/service tests:
-' Requiered for  com.sun.star.document.XFilter
+' Required for  com.sun.star.document.XFilter
   Global oFilterDescriptor As Variant
   Global pictureURL As String 
 
-' Requiered for  com.sun.star.document.XExporter
+' Required for  com.sun.star.document.XExporter
   Global oSrcDocument As Object
 
 

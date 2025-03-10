@@ -31,9 +31,9 @@
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.container.XNamed
+' Required for  com.sun.star.container.XNamed
  Global cNameToSet As String ' "fixed" if name is fixed
-' Requiered for  com.sun.star.style.XStyle
+' Required for  com.sun.star.style.XStyle
 Global oStandartStyle As Variant
 
 
