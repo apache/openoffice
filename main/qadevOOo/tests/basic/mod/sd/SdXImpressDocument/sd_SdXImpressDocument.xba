@@ -34,12 +34,12 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.lang.XMultiServiceFactory
+' Required for  com.sun.star.lang.XMultiServiceFactory
   Global cServiceName As String ' ex. "com.sun.star.drawing.RectangleShape"
   Global bCreateInstanceWithoutArguments As Boolean
   Global aArguments() As Variant
 
-' Requiered for  com.sun.star.drawing.XDrawPageDuplicator
+' Required for  com.sun.star.drawing.XDrawPageDuplicator
   Global oCollection As Object ' = oDoc.DrawPages(0)
 
 ' com.sun.star.frame.XModel

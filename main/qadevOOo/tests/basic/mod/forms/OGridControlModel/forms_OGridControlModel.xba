@@ -40,22 +40,22 @@ Global oPersistInstance As Object
 ' Required for XComponent
 Global oComponentInstance As Object ' it will be disposed
 
-' Requiered for  com.sun.star.container.XNameContainer
+' Required for  com.sun.star.container.XNameContainer
  Global oInstance As Object 'instance to insert
 
-' Requiered for  com.sun.star.view.XSelectionSupplier
+' Required for  com.sun.star.view.XSelectionSupplier
  Global SelectableObj1 As Variant
  Global SelectableObj2 As Variant
 
-' Requiered for  com.sun.star.container.XNameReplace
+' Required for  com.sun.star.container.XNameReplace
  Global cNameToReplace As String 'name of instance to be replased
  Global oReplaceInstance As Object 'instance, that will be inserted
                                    'instead old one
 
-' Requiered for  com.sun.star.container.XIndexReplace
+' Required for  com.sun.star.container.XIndexReplace
  Global oIdxReplaceInstance As Object
 
-' Requiered for XContainer
+' Required for XContainer
  Global oElementToInsert As Object
 
 

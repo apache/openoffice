@@ -31,9 +31,9 @@
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.text.XParagraphCursor
+' Required for  com.sun.star.text.XParagraphCursor
  Global oText As Object
-' Requiered for  com.sun.star.text.XTextCursor
+' Required for  com.sun.star.text.XTextCursor
  Global oCursor As Object 'One more cursor
 
 

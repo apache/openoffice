@@ -34,10 +34,10 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.lang.XComponent
+' Required for  com.sun.star.lang.XComponent
  Global oComponentInstance As Object ' it will be disposed
 
-' Requiered for  com.sun.star.io.XPersistObject
+' Required for  com.sun.star.io.XPersistObject
  Global oPersistInstance As Object
 
 ' for XUpdateBroadcaster
