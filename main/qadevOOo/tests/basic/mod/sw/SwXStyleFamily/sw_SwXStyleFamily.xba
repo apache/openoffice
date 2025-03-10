@@ -31,11 +31,11 @@
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.container.XNameContainer
+' Required for  com.sun.star.container.XNameContainer
  Global oInstance As Variant 'instance to insert
 
 
-' Requiered for  com.sun.star.container.XNameReplace
+' Required for  com.sun.star.container.XNameReplace
  Global cNameToReplace As String 'name of instance to be replased
  Global oReplaceInstance As Variant 'instance, that will be inserted
                                    'instead old one

@@ -35,15 +35,15 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.lang.XMultiServiceFactory
+' Required for  com.sun.star.lang.XMultiServiceFactory
   Global cServiceName As String ' ex. "com.sun.star.drawing.RectangleShape"
   Global bCreateInstanceWithoutArguments As Boolean
   Global aArguments() As Variant
 
-' Requiered for  com.sun.star.lang.XMultiComponentFactory
+' Required for  com.sun.star.lang.XMultiComponentFactory
   Global aContext() As Variant
 
-' Requiered for  com.sun.star.lang.XComponent
+' Required for  com.sun.star.lang.XComponent
   Global oComponentInstance As Object ' it will be disposed
 
 

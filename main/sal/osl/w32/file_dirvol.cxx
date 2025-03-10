@@ -1717,7 +1717,7 @@ oslFileError SAL_CALL osl_getFileStatus(
 		FileTimeToTimeValue( &pItemImpl->FindData.ftCreationTime, &pStatus->aCreationTime ) )
 		pStatus->uValidFields |= osl_FileStatus_Mask_CreationTime;
 
-	/* Most of the fields are already set, regardless of requiered fields */
+	/* Most of the fields are already set, regardless of required fields */
 
 	rtl_uString_newFromStr( &pStatus->ustrFileName, reinterpret_cast<const sal_Unicode*>(pItemImpl->FindData.cFileName) );
 	pStatus->uValidFields |= osl_FileStatus_Mask_FileName;

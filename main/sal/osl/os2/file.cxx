@@ -2753,7 +2753,7 @@ oslFileError SAL_CALL osl_getFileStatus(
 		pStatus->uValidFields |= osl_FileStatus_Mask_CreationTime;
 	}
 
-	/* Most of the fields are already set, regardless of requiered fields */
+	/* Most of the fields are already set, regardless of required fields */
 
 	osl_systemPathGetFileNameOrLastDirectoryPart(pItemImpl->ustrFilePath, &pStatus->ustrFileName);
 	pStatus->uValidFields |= osl_FileStatus_Mask_FileName;
