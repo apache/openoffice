@@ -2943,7 +2943,7 @@ bool SwWW8ImplReader::AddTextToParagraph(const String& rAddString)
 /*
 #ifdef DEBUG
 //!! does not compile with debug=t -> unresolved external (dbg_out),
-//!! sommeone who knows what he wants to get should fix this
+//!! someone who knows what he wants to get should fix this
 //        ::std::clog << "<addTextToParagraph>" << dbg_out(rAddString)
 //        << "</addTextToParagraph>" << ::std::endl;
 #endif
