@@ -1494,7 +1494,7 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchRecycleTarget()
     ReadGuard aReadLock(m_aLock);
 
     // The special backing mode frame will be recycled by definition!
-    // It doesn't matter if somewhere whishes to create a new view
+    // It doesn't matter if somewhere wishes to create a new view
     // or open a new untitled document ...
     // The only exception form that - hidden frames!
     if (m_lMediaDescriptor.getUnpackedValueOrDefault(::comphelper::MediaDescriptor::PROP_HIDDEN(), sal_False) == sal_True)
