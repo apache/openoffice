@@ -123,7 +123,7 @@ public class SystemManager {
             // System.err.println("Resource root: " + dir.getPath());
             dir = new File(dir, subdir);
             if (! dir.exists()) {
-                System.err.println("Error: Directory \"" + subdir + "\" does not exist at resouce root");
+                System.err.println("Error: Directory \"" + subdir + "\" does not exist at resource root");
             } else {
                 path = dir.getPath();
             }
