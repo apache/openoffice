@@ -473,7 +473,7 @@ Reference< XInterface >  FmFormObj::ensureModelEnv(const Reference< XInterface >
 	Reference< XInterface >  xTopLevelSouce;
 	String sAccessPath = lcl_getFormComponentAccessPath(_rSourceContainer, xTopLevelSouce);
 	if (!xTopLevelSouce.is())
-		// somthing went wrong, maybe _rSourceContainer isn't part of a valid forms hierarchy
+		// something went wrong, maybe _rSourceContainer isn't part of a valid forms hierarchy
 		return Reference< XInterface > ();
 
 	Reference< XIndexContainer >  xDestContainer(_rTopLevelDestContainer);

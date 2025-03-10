@@ -1524,7 +1524,7 @@ void OutputDevice::DrawImage( const Point& rPos, const Size& rSize,
 Bitmap OutputDevice::GetBitmap( const Point& rSrcPt, const Size& rSize ) const
 {
 	DBG_CHKTHIS( OutputDevice, ImplDbgCheckOutputDevice );
-    OSL_ENSURE(OUTDEV_PRINTER != GetOutDevType(), "OutputDevice::GetBitmap with sorce type OUTDEV_PRINTER should not be used (!)");
+    OSL_ENSURE(OUTDEV_PRINTER != GetOutDevType(), "OutputDevice::GetBitmap with source type OUTDEV_PRINTER should not be used (!)");
 
 	Bitmap	aBmp;
 	long	nX = ImplLogicXToDevicePixel( rSrcPt.X() );

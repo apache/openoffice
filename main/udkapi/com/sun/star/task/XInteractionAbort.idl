@@ -35,7 +35,7 @@
 //============================================================================= 
  
 // DocMerge from xml: interface com::sun::star::task::XInteractionAbort
-/** An interaction continuation specifing to abort executing the process that
+/** An interaction continuation specifying to abort executing the process that
 	issued the request.
  */
 published interface XInteractionAbort: com::sun::star::task::XInteractionContinuation
