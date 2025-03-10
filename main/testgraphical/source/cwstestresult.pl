@@ -193,12 +193,12 @@ sub usage
     print STDERR "\t-M master\t\toverride MWS specified in environment\n";
     print STDERR "\t-m milestone\t\toverride milestone specified in environment\n";
     print STDERR "\t-c child\t\toverride CWS specified in environment\n";
-    print STDERR "\t-n testrunName\t\tspecifiy name of the test\n";
+    print STDERR "\t-n testrunName\t\tspecify name of the test\n";
     print STDERR "\t-p testrunPlatform\tspecify platform where the test ran on\n";
     print STDERR "\t-r resultPage\t\tspecify name of attachment or hyperlink\n";
     print STDERR "\t\t\t\tfor resultPage\n";
 
 
     print STDERR "\nExample:\n";
-    print STDERR "\tcwstestresult -c mycws -n Performance -p Windows -r PerfomanceTestWindows.html ok\n";
+    print STDERR "\tcwstestresult -c mycws -n Performance -p Windows -r PerformanceTestWindows.html ok\n";
 }

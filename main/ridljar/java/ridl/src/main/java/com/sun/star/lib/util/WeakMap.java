@@ -264,7 +264,7 @@ public final class WeakMap implements Map {
 
     // cleanUp must only be called from within modifying methods.  Otherwise,
     // the implementations of entrySet, keySet and values would break
-    // (specificially, iterating over the collections returned by those
+    // (specifically, iterating over the collections returned by those
     // methods), as non-modifying methods might modify the underlying map.
     private void cleanUp() {
         for (;;) {
