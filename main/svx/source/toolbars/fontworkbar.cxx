@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 #include <svx/svdundo.hxx>
@@ -532,17 +530,17 @@ void FontworkBar::execute( SdrView* pSdrView, SfxRequest& rReq, SfxBindings& rBi
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_FONTWORK_ALIGNMENT;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_FONTWORK_CHARACTER_SPACING:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_FONTWORK_KERN_CHARACTER_PAIRS:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_FONTWORK_CHARACTER_SPACING;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_FONTWORK_SAME_LETTER_HEIGHTS:
 		{
 			if ( !nStrResId )
@@ -629,3 +627,5 @@ void FontworkBar::getState( SdrView* pSdrView, SfxItemSet& rSet )
 			SetFontWorkShapeTypeState( pSdrView, rSet );
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */

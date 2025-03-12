@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,27 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
 //------------------------------------------------------------------------
-//
 // Global header
-//
 //------------------------------------------------------------------------
 
 #include <limits.h>
@@ -58,9 +54,7 @@
 #include <sfx2/viewfrm.hxx>
 #include <sfx2/viewsh.hxx>
 //------------------------------------------------------------------------
-//
 // Project-local header
-//
 //------------------------------------------------------------------------
 #include "AccessibleTextEventQueue.hxx"
 #include <svx/AccessibleTextHelper.hxx>
@@ -101,9 +95,7 @@ namespace accessibility
 	}
 
 //------------------------------------------------------------------------
-//
 // AccessibleTextHelper_Impl declaration
-//
 //------------------------------------------------------------------------
 
     DBG_NAME( AccessibleTextHelper_Impl )
@@ -195,7 +187,7 @@ namespace accessibility
         // checks all children for visibility, throws away invisible ones
         void UpdateVisibleChildren( bool bBroadcastEvents=true );
 
-        // check all children for changes in positíon and size
+        // check all children for changes in position and size
         void UpdateBoundRect();
 
         // calls SetSelection on the forwarder and updates maLastSelection
@@ -277,9 +269,7 @@ namespace accessibility
     };
 
 	//------------------------------------------------------------------------
-	//
 	// AccessibleTextHelper_Impl implementation
-	//
 	//------------------------------------------------------------------------
 
     AccessibleTextHelper_Impl::AccessibleTextHelper_Impl() :
@@ -1223,7 +1213,7 @@ namespace accessibility
                 // release everything from the insertion position until the end
                 maParaManager.Release(aFunctor.GetParaIndex(), nCurrParas);
 
-                // TODO: Clarify whether this behaviour _really_ saves
+                // TODO: Clarify whether this behavior _really_ saves
                 // anybody anything!
                 // update children, _don't_ broadcast
                 UpdateVisibleChildren( false );
@@ -1262,7 +1252,7 @@ namespace accessibility
                 // update num of paras
                 maParaManager.SetNum( nNewParas );
 
-                // TODO: Clarify whether this behaviour _really_ saves
+                // TODO: Clarify whether this behavior _really_ saves
                 // anybody anything!
                 // update children, _don't_ broadcast
                 UpdateVisibleChildren( false );
@@ -1541,7 +1531,7 @@ namespace accessibility
                     case TEXT_HINT_BLOCKNOTIFICATION_START:
                     case TEXT_HINT_INPUT_START:
                         ++maEventOpenFrames;
-                        // --> OD 2005-12-19 #i27299# - no FALLTROUGH
+                        // --> OD 2005-12-19 #i27299# - no FALLTHROUGH
                         // reason: event will not be processes, thus appending
                         // the event isn't necessary.
                         break;
@@ -1774,9 +1764,7 @@ namespace accessibility
     }
 
 	//------------------------------------------------------------------------
-	//
 	// AccessibleTextHelper implementation (simply forwards to impl)
-	//
 	//------------------------------------------------------------------------
 
     AccessibleTextHelper::AccessibleTextHelper( ::std::auto_ptr< SvxEditSource > pEditSource ) :
@@ -2114,4 +2102,4 @@ namespace accessibility
 
 } // end of namespace accessibility
 
-//------------------------------------------------------------------------
+/* vim: set noet sw=4 ts=4: */
