@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef __FILTER_CONFIG_TYPEDETECTION_HXX_
 #define __FILTER_CONFIG_TYPEDETECTION_HXX_
@@ -153,7 +152,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
 
             @param      rLastChance
                         the internal name of a "suggested type" ... (see before)
-                        Note: it will be reseted to an empty string every time. So
+                        Note: it will be reset to an empty string every time. So
                         a set value of "rLastChance" can be detected outside very easy.
 
             @param      rUsedDetectors
@@ -203,9 +202,9 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
                                                 const OUStringList&                  rUsedDetectors);
 
         //---------------------------------------
-        
+
         /** @short      seek a might existing stream to position 0.
-        
+
             @descr      This is an optional action to be more robust
                         in case any detect service doesn't make this seek ...
                         Normally it's part of any called detect service or filter ...
@@ -215,7 +214,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
                         a stl representation of the MediaDescriptor as in/out parameter.
          */
         void impl_seekStreamToZero(comphelper::MediaDescriptor& rDescriptor);
-        
+
         //---------------------------------------
 
         /** @short      make deep type detection for a specified
@@ -249,12 +248,12 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
 
             @param      rDescriptor
                         a stl representation of the MediaDescriptor as in/out parameter.
-                        
+
             @return     [string]
                         a valid type name or an empty string if user canceled interaction.
          */
         ::rtl::OUString impl_askUserForTypeAndFilterIfAllowed(::comphelper::MediaDescriptor& rDescriptor);
-        
+
         //---------------------------------------
 
         /** @short      check if an input stream is already part of the
@@ -288,7 +287,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
 
             @throw      Any suitable exception if stream should be opened but operation was not successful.
                         Note: If an interactionHandler is part of the given descriptor too, it was already used.
-                        Means: let the exception pass trough the top most interface method!
+                        Means: let the exception pass through the top most interface method!
          */
         void impl_openStream(::comphelper::MediaDescriptor& rDescriptor)
             throw (css::uno::Exception);
@@ -296,7 +295,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
         //---------------------------------------
 
         /** @short      validate the specified type and its relation ships
-                        and set all needed informations related to this type
+                        and set all needed information related to this type
                         in the specified descriptor.
 
             @descr      Related informations are: - corresponding filter
@@ -319,7 +318,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
         //---------------------------------------
 
         /** @short      validate the specified filter and its relation ships
-                        and set all needed informations related to this filter
+                        and set all needed information related to this filter
                         in the specified descriptor.
 
             @descr      Related informations are: - corresponding type
@@ -453,3 +452,5 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
 } // namespace filter
 
 #endif // __FILTER_CONFIG_TYPEDETECTION_HXX_
+
+/* vim: set noet sw=4 ts=4: */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,34 +7,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include "embeddoc.hxx"
 #include <osl/diagnose.h>
 #include <com/sun/star/frame/XController.hpp>
 #include <com/sun/star/beans/PropertyValue.hpp>
 
-
 using namespace ::com::sun::star;
-
 
 extern ::rtl::OUString	getFilterNameFromGUID_Impl( GUID* );
 
 //-------------------------------------------------------------------------------
 // IOleObject
-
 
 STDMETHODIMP EmbedDocument_Impl::SetClientSite( IOleClientSite* pSite )
 {
@@ -66,28 +61,28 @@ STDMETHODIMP EmbedDocument_Impl::SetHostNames( LPCOLESTR szContainerApp, LPCOLES
 
 STDMETHODIMP EmbedDocument_Impl::Close( DWORD dwSaveOption )
 {
-    HRESULT hr = S_OK;
+	HRESULT hr = S_OK;
 
-    if ( m_pDocHolder->HasFrame() )
-    {
-        if ( dwSaveOption == 2 && m_aFileName.getLength() )
-        {
-            // ask the user about saving
-            if ( m_pDocHolder->ExecuteSuspendCloseFrame() )
-            {
-                m_pDocHolder->CloseDocument();
-                return S_OK;
-            }
-            else
-                return OLE_E_PROMPTSAVECANCELLED;
-        }
+	if ( m_pDocHolder->HasFrame() )
+	{
+		if ( dwSaveOption == 2 && m_aFileName.getLength() )
+		{
+			// ask the user about saving
+			if ( m_pDocHolder->ExecuteSuspendCloseFrame() )
+			{
+				m_pDocHolder->CloseDocument();
+				return S_OK;
+			}
+			else
+				return OLE_E_PROMPTSAVECANCELLED;
+		}
 
-        if ( dwSaveOption != 1 )
-            hr = SaveObject(); // ADVF_DATAONSTOP);
+		if ( dwSaveOption != 1 )
+			hr = SaveObject(); // ADVF_DATAONSTOP);
 
-	    m_pDocHolder->CloseFrame();
-        OLENotifyDeactivation();
-    }
+		m_pDocHolder->CloseFrame();
+		OLENotifyDeactivation();
+	}
 
 	m_pDocHolder->FreeOffice();
 	m_pDocHolder->CloseDocument();
@@ -117,22 +112,22 @@ HRESULT EmbedDocument_Impl::OLENotifyClosing()
 
 STDMETHODIMP EmbedDocument_Impl::SetMoniker( DWORD /*dwWhichMoniker*/, IMoniker * /*pmk*/ )
 {
-    return E_NOTIMPL;
+	return E_NOTIMPL;
 }
 
 STDMETHODIMP EmbedDocument_Impl::GetMoniker( DWORD /*dwAssign*/, DWORD /*dwWhichMoniker*/, IMoniker ** /*ppmk*/ )
 {
-    return E_NOTIMPL;
+	return E_NOTIMPL;
 }
 
 STDMETHODIMP EmbedDocument_Impl::InitFromData( IDataObject * /*pDataObject*/, BOOL /*fCreation*/, DWORD /*dwReserved*/ )
 {
-    return E_NOTIMPL;
+	return E_NOTIMPL;
 }
 
 STDMETHODIMP EmbedDocument_Impl::GetClipboardData( DWORD /*dwReserved*/, IDataObject ** /*ppDataObject*/ )
 {
-    return E_NOTIMPL;
+	return E_NOTIMPL;
 }
 
 /**
@@ -150,11 +145,11 @@ STDMETHODIMP EmbedDocument_Impl::DoVerb(
 {
 	// no locking is used since the OLE must use the same thread always
 	if ( m_bIsInVerbHandling )
-        return OLEOBJ_S_CANNOT_DOVERB_NOW;
+		return OLEOBJ_S_CANNOT_DOVERB_NOW;
 
-    // an object can not handle any Verbs in Hands off mode
-    if ( m_pMasterStorage == NULL || m_pOwnStream == NULL )
-        return OLE_E_CANT_BINDTOSOURCE;
+	// an object can not handle any Verbs in Hands off mode
+	if ( m_pMasterStorage == NULL || m_pOwnStream == NULL )
+		return OLE_E_CANT_BINDTOSOURCE;
 
 
 	BooleanGuard_Impl aGuard( m_bIsInVerbHandling );
@@ -198,7 +193,7 @@ STDMETHODIMP EmbedDocument_Impl::DoVerb(
 						pActiveSite,TRUE)))
 					return NOERROR;
 
-				// intended fall trough
+				// intended fall through
 			case OLEIVERB_OPEN:
 				OSL_ENSURE(m_pDocHolder,"no document to open");
 
@@ -253,66 +248,66 @@ STDMETHODIMP EmbedDocument_Impl::DoVerb(
 
 STDMETHODIMP EmbedDocument_Impl::EnumVerbs( IEnumOLEVERB ** /*ppEnumOleVerb*/ )
 {
-    return OLE_S_USEREG;
+	return OLE_S_USEREG;
 }
 
 STDMETHODIMP EmbedDocument_Impl::Update()
 {
-    return S_OK;
-//    HRESULT hr = CACHE_E_NOCACHE_UPDATED;
-//    return hr;
+	return S_OK;
+//	HRESULT hr = CACHE_E_NOCACHE_UPDATED;
+//	return hr;
 }
 
 STDMETHODIMP EmbedDocument_Impl::IsUpToDate()
 {
-    return S_OK;
+	return S_OK;
 }
 
 STDMETHODIMP EmbedDocument_Impl::GetUserClassID( CLSID *pClsid )
 {
-    return GetClassID( pClsid );
+	return GetClassID( pClsid );
 }
 
 STDMETHODIMP EmbedDocument_Impl::GetUserType( DWORD /*dwFormOfTypeUe*/, LPOLESTR * /*pszUserType*/ )
 {
-    return OLE_S_USEREG;
+	return OLE_S_USEREG;
 }
 
 STDMETHODIMP EmbedDocument_Impl::SetExtent( DWORD /*dwDrawAspect*/, SIZEL *psizel )
 {
-    if ( !psizel )
-        return E_FAIL;
+	if ( !psizel )
+		return E_FAIL;
 
-    m_pDocHolder->SetExtent( psizel );
+	m_pDocHolder->SetExtent( psizel );
 
-    return S_OK;
+	return S_OK;
 }
 
 STDMETHODIMP EmbedDocument_Impl::GetExtent( DWORD /*dwDrawAspect*/, SIZEL * psizel )
 {
-    if ( !psizel )
-        return E_INVALIDARG;
+	if ( !psizel )
+		return E_INVALIDARG;
 
-    if ( FAILED( m_pDocHolder->GetExtent( psizel ) ) )
-    {
-        // return default values
-        psizel->cx = 500;
-        psizel->cy = 500;
-    }
+	if ( FAILED( m_pDocHolder->GetExtent( psizel ) ) )
+	{
+		// return default values
+		psizel->cx = 500;
+		psizel->cy = 500;
+	}
 
-    return S_OK;
+	return S_OK;
 }
 
 STDMETHODIMP EmbedDocument_Impl::Advise( IAdviseSink *pAdvSink, DWORD *pdwConnection )
 {
-    if ( m_nAdviseNum == 0xFFFFFFFF )
-        return E_OUTOFMEMORY;
+	if ( m_nAdviseNum == 0xFFFFFFFF )
+		return E_OUTOFMEMORY;
 
-    pAdvSink->AddRef();
-    m_aAdviseHashMap.insert( ::std::pair< DWORD, IAdviseSink* >( m_nAdviseNum, pAdvSink ) );
-    *pdwConnection = m_nAdviseNum++;
+	pAdvSink->AddRef();
+	m_aAdviseHashMap.insert( ::std::pair< DWORD, IAdviseSink* >( m_nAdviseNum, pAdvSink ) );
+	*pdwConnection = m_nAdviseNum++;
 
-    return S_OK;
+	return S_OK;
 }
 
 STDMETHODIMP EmbedDocument_Impl::Unadvise( DWORD dwConnection )
@@ -347,7 +342,7 @@ STDMETHODIMP EmbedDocument_Impl::SetColorScheme( LOGPALETTE * /*pLogpal*/ )
 //-------------------------------------------------------------------------------
 // IDispatch
 
-STDMETHODIMP EmbedDocument_Impl::GetTypeInfoCount( unsigned int FAR*  pctinfo )
+STDMETHODIMP EmbedDocument_Impl::GetTypeInfoCount( unsigned int FAR* pctinfo )
 {
 	if ( m_pDocHolder->GetIDispatch() )
 		return m_pDocHolder->GetIDispatch()->GetTypeInfoCount( pctinfo );
@@ -405,12 +400,12 @@ STDMETHODIMP EmbedDocument_Impl::Invoke( DISPID dispIdMember,
 
 DWORD STDMETHODCALLTYPE EmbedDocument_Impl::AddConnection( DWORD , DWORD )
 {
-    return AddRef();
+	return AddRef();
 }
 
 DWORD STDMETHODCALLTYPE EmbedDocument_Impl::ReleaseConnection( DWORD , DWORD , BOOL )
 {
-    return Release();
+	return Release();
 }
 
 // C++ - methods
@@ -438,7 +433,7 @@ HRESULT EmbedDocument_Impl::SaveObject()
 		SaveCompleted( (LPCOLESTR)aPreservFileName.getStr() );
 	}
 
-    notify( false );
+	notify( false );
 
 	return hr;
 }
@@ -464,20 +459,20 @@ void EmbedDocument_Impl::notify( bool bDataChanged )
 		if ( iAdvise->second )
 			iAdvise->second->OnViewChange( DVASPECT_CONTENT, -1 );
 
-    if ( m_pDAdviseHolder && bDataChanged )
+	if ( m_pDAdviseHolder && bDataChanged )
 		m_pDAdviseHolder->SendOnDataChange( (IDataObject*)this, 0, 0 );
 }
 
 void EmbedDocument_Impl::Deactivate()
 {
-    HRESULT hr = S_OK;
+	HRESULT hr = S_OK;
 
-    if ( m_pDocHolder->HasFrame() )
-    {
-	    hr = SaveObject();
-	    m_pDocHolder->CloseFrame();
-	    OLENotifyDeactivation();
-    }
+	if ( m_pDocHolder->HasFrame() )
+	{
+		hr = SaveObject();
+		m_pDocHolder->CloseFrame();
+		OLENotifyDeactivation();
+	}
 }
 
 HRESULT EmbedDocument_Impl::OLENotifyDeactivation()
@@ -497,3 +492,5 @@ HRESULT EmbedDocument_Impl::OLENotifyDeactivation()
 #if defined(_MSC_VER)
 #pragma warning(disable: 4505)
 #endif
+
+/* vim: set noet sw=4 ts=4: */
