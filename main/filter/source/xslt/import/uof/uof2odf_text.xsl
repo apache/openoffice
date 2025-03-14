@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
- * 
+ *
+
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,17 +10,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:uof="http://schemas.uof.org/cn/2003/uof" xmlns:表="http://schemas.uof.org/cn/2003/uof-spreadsheet" xmlns:演="http://schemas.uof.org/cn/2003/uof-slideshow" xmlns:字="http://schemas.uof.org/cn/2003/uof-wordproc" xmlns:图="http://schemas.uof.org/cn/2003/graph" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" office:version="1.0">
 	<xsl:template match="uof:UOF">
 		<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" office:version="1.0">
@@ -92,8 +95,8 @@
 				</xsl:for-each>
 			</xsl:if>
 			<meta:document-statistic>
-			   <xsl:attribute name="meta:page-count">
-			        <xsl:choose>
+				<xsl:attribute name="meta:page-count">
+					<xsl:choose>
 						<xsl:when test="child::*[@uof:locID='u0020']"><xsl:value-of select="uof:页数"/></xsl:when>
 						<xsl:otherwise>
 							<xsl:for-each select="/uof:UOF/uof:文字处理/字:主体/字:段落/字:域开始[@字:类型='numpages']">
@@ -111,19 +114,19 @@
 										<xsl:when test="$content='II' or $content='ii' or $content='B' or $content='b'">2</xsl:when>
 									</xsl:choose>
 								</xsl:if>
-						    </xsl:for-each>
+							</xsl:for-each>
 						</xsl:otherwise>
 					</xsl:choose>
-			   </xsl:attribute>
-			   <xsl:attribute name="meta:paragraph-count"><xsl:if test="child::*[@uof:locID='u0025']"><xsl:value-of select="uof:段落数"/></xsl:if></xsl:attribute>
-			   <xsl:attribute name="meta:word-count"><xsl:if test="child::*[@uof:locID='u0023']"><xsl:value-of select="uof:中文字符数"/></xsl:if></xsl:attribute>
-			   <xsl:attribute name="meta:object-count"><xsl:if test="child::*[@uof:locID='u0026']"><xsl:value-of select="uof:对象数"/></xsl:if></xsl:attribute>
-			   <xsl:attribute name="meta:character-count">
-			        <xsl:for-each select="/uof:UOF/uof:文字处理/字:主体/字:段落/字:域开始[@字:类型='numchars']">
-			            <xsl:value-of select="following-sibling::字:句/字:文本串"/>
-			        </xsl:for-each>
-			        <xsl:if test="child::*[@uof:locID='u0021']"><xsl:value-of select="uof:字数"/></xsl:if>
-			   </xsl:attribute>
+				</xsl:attribute>
+				<xsl:attribute name="meta:paragraph-count"><xsl:if test="child::*[@uof:locID='u0025']"><xsl:value-of select="uof:段落数"/></xsl:if></xsl:attribute>
+				<xsl:attribute name="meta:word-count"><xsl:if test="child::*[@uof:locID='u0023']"><xsl:value-of select="uof:中文字符数"/></xsl:if></xsl:attribute>
+				<xsl:attribute name="meta:object-count"><xsl:if test="child::*[@uof:locID='u0026']"><xsl:value-of select="uof:对象数"/></xsl:if></xsl:attribute>
+				<xsl:attribute name="meta:character-count">
+					<xsl:for-each select="/uof:UOF/uof:文字处理/字:主体/字:段落/字:域开始[@字:类型='numchars']">
+						<xsl:value-of select="following-sibling::字:句/字:文本串"/>
+					</xsl:for-each>
+					<xsl:if test="child::*[@uof:locID='u0021']"><xsl:value-of select="uof:字数"/></xsl:if>
+				</xsl:attribute>
 			</meta:document-statistic>
 			<meta:document-statistic/>
 		</xsl:element>
@@ -192,11 +195,11 @@
 						<xsl:attribute name="style:display-name"><xsl:value-of select="@字:别名"/></xsl:attribute>
 					</xsl:if>
 					<xsl:element name="style:paragraph-properties">
-                        <xsl:call-template name="XDParagraphAttr"/>
+						<xsl:call-template name="XDParagraphAttr"/>
 						<xsl:apply-templates select="*[not(name()='字:大纲级别')]"/>
-                        <xsl:if test="字:制表位设置">
-                            <xsl:call-template name="ootab"/>
-                        </xsl:if>
+						<xsl:if test="字:制表位设置">
+							<xsl:call-template name="ootab"/>
+						</xsl:if>
 					</xsl:element>
 					<xsl:element name="style:text-properties">
 						<xsl:apply-templates select="字:句属性/*"/>
@@ -1198,7 +1201,7 @@
 					<xsl:attribute name="style:family">graphic</xsl:attribute>
 					<xsl:if test="图:文本内容/@图:自动换行='true' or 图:文本内容/@图:自动换行='1'">
 						<xsl:attribute name="draw:fit-to-contour">true</xsl:attribute>
-					</xsl:if>                    
+					</xsl:if>
 					<xsl:element name="style:graphic-properties">
 						<xsl:call-template name="process-graphics">
 							<xsl:with-param name="draw-name" select="$draw-name"/>
@@ -1478,7 +1481,7 @@
 		</xsl:if>
 		<xsl:if test="图:预定义图形/图:名称">
 			<xsl:choose>
-				<xsl:when test="图:预定义图形/图:名称='椭圆'">					
+				<xsl:when test="图:预定义图形/图:名称='椭圆'">
 				</xsl:when>
 			</xsl:choose>
 		</xsl:if>
@@ -1548,13 +1551,13 @@
 				<xsl:attribute name="draw:marker-end-width"><xsl:choose><xsl:when test="图:预定义图形/图:属性/图:后端箭头/图:大小 = '1'"><xsl:value-of select="concat('0.05',$uofUnit)"/></xsl:when><xsl:when test="图:预定义图形/图:属性/图:后端箭头/图:大小 = '2'"><xsl:value-of select="concat('0.10',$uofUnit)"/></xsl:when><xsl:when test="图:预定义图形/图:属性/图:后端箭头/图:大小 = '3'"><xsl:value-of select="concat('0.15',$uofUnit)"/></xsl:when><xsl:when test="图:预定义图形/图:属性/图:后端箭头/图:大小 = '4'"><xsl:value-of select="concat('0.20',$uofUnit)"/></xsl:when><xsl:when test="图:预定义图形/图:属性/图:后端箭头/图:大小 = '5'"><xsl:value-of select="concat('0.25',$uofUnit)"/></xsl:when><xsl:when test="图:预定义图形/图:属性/图:后端箭头/图:大小 = '6'"><xsl:value-of select="concat('0.30',$uofUnit)"/></xsl:when><xsl:when test="图:预定义图形/图:属性/图:后端箭头/图:大小 = '7'"><xsl:value-of select="concat('0.35',$uofUnit)"/></xsl:when><xsl:when test="图:预定义图形/图:属性/图:后端箭头/图:大小 = '8'"><xsl:value-of select="concat('0.40',$uofUnit)"/></xsl:when><xsl:otherwise><xsl:value-of select="concat('0.45',$uofUnit)"/></xsl:otherwise></xsl:choose></xsl:attribute>
 			</xsl:if>
 		</xsl:if>
-		<xsl:if test="图:预定义图形/图:属性/图:宽度">			
+		<xsl:if test="图:预定义图形/图:属性/图:宽度">
 		</xsl:if>
-		<xsl:if test="图:预定义图形/图:属性/图:高度">			
+		<xsl:if test="图:预定义图形/图:属性/图:高度">
 		</xsl:if>
-		<xsl:if test="图:预定义图形/图:属性/图:旋转角度">				
+		<xsl:if test="图:预定义图形/图:属性/图:旋转角度">
 		</xsl:if>
-		<xsl:if test="图:预定义图形/图:属性/图:锁定纵横比">			
+		<xsl:if test="图:预定义图形/图:属性/图:锁定纵横比">
 		</xsl:if>
 		<xsl:if test="图:预定义图形/图:属性/图:打印对象">
 		</xsl:if>
@@ -1667,7 +1670,7 @@
 				<xsl:variable name="bshi">
 					<xsl:value-of select="/uof:UOF/uof:对象集/图:图形/@图:其他对象"/>
 				</xsl:variable>
-				<xsl:if test="/uof:UOF/uof:对象集/uof:其他对象[@uof:标识符=$bshi]/@uof:公共类型='jpg'">				
+				<xsl:if test="/uof:UOF/uof:对象集/uof:其他对象[@uof:标识符=$bshi]/@uof:公共类型='jpg'">
 					<xsl:element name="draw:frame">
 						<xsl:attribute name="draw:name"><xsl:variable name="pos"><xsl:value-of select="count(preceding::字:锚点)"/></xsl:variable><xsl:value-of select="concat('图形',$pos)"/></xsl:attribute>
 						<xsl:if test="字:锚点属性/字:位置/字:水平/字:绝对">
@@ -1734,7 +1737,7 @@
 						<xsl:attribute name="svg:y"><xsl:value-of select="concat(字:锚点属性/字:位置/字:垂直/字:绝对/@字:值,$uofUnit)"/></xsl:attribute>
 					</xsl:if>
 					<xsl:attribute name="draw:z-index">
-					    <xsl:for-each select="/uof:UOF/uof:对象集/图:图形[@图:标识符 = $tuxing1]"><xsl:value-of select="@图:层次"/></xsl:for-each>
+						<xsl:for-each select="/uof:UOF/uof:对象集/图:图形[@图:标识符 = $tuxing1]"><xsl:value-of select="@图:层次"/></xsl:for-each>
 					</xsl:attribute>
 					<draw:text-box>
 						<xsl:apply-templates select="/uof:UOF/uof:对象集/图:图形[@图:标识符=$tuxing1]/图:文本内容/字:段落"/>
@@ -2112,7 +2115,7 @@
 					<xsl:attribute name="text:fixed">true</xsl:attribute>
 					<xsl:value-of select="$datestr"/>
 				</xsl:element>
-			</xsl:when> 
+			</xsl:when>
 			<xsl:when test="@字:类型='date'">
 				<xsl:variable name="datestr" select="../字:句[preceding-sibling::字:域代码]/字:文本串"/>
 				<xsl:element name="text:date">
@@ -2533,7 +2536,7 @@
 				</xsl:when>
 				<xsl:when test="@字:类型='circle below' ">
 					<xsl:attribute name="style:text-emphasize">circle below</xsl:attribute>
-				</xsl:when>				
+				</xsl:when>
 				<xsl:otherwise>none</xsl:otherwise>
 			</xsl:choose>
 		</xsl:if>
@@ -2846,7 +2849,7 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 	<xsl:template match="字:对齐[parent::字:文字表属性]">
-	
+
 	</xsl:template>
 	<xsl:template match="uof:上">
 		<xsl:choose>
@@ -3001,10 +3004,10 @@
 														<xsl:attribute name="style:justify-single-word">false</xsl:attribute>
 													</xsl:if>
 												</xsl:if>
-												<xsl:call-template name="ParagraphAttr"/>                                                                                        
-                                                <xsl:if test="字:段落属性/字:制表位设置">
-                                                    <xsl:call-template name="ootab"/>
-                                                </xsl:if>
+												<xsl:call-template name="ParagraphAttr"/>
+												<xsl:if test="字:段落属性/字:制表位设置">
+													<xsl:call-template name="ootab"/>
+												</xsl:if>
 											</xsl:element>
 											<xsl:if test="字:句属性">
 												<xsl:variable name="bsh">
@@ -3051,10 +3054,10 @@
 					</xsl:for-each>
 				</xsl:if>
 				<xsl:apply-templates select="字:句/字:句属性/字:浮雕 | 字:句/字:句属性/字:边框 | 字:句/字:句属性/字:缩放 | 字:句/字:句属性/字:阴影 | 字:句/字:句属性/字:删除线 | 字:句/字:句属性/字:下划线 |  字:句/字:填充"/>
-				<xsl:call-template name="ParagraphAttr"/>                                                        
-                <xsl:if test="字:段落属性/字:制表位设置">
-                    <xsl:call-template name="ootab"/>
-                </xsl:if>                
+				<xsl:call-template name="ParagraphAttr"/>
+				<xsl:if test="字:段落属性/字:制表位设置">
+					<xsl:call-template name="ootab"/>
+				</xsl:if>
 				<xsl:for-each select="/uof:UOF/uof:式样集/uof:句式样[@字:标识符=$stylename]">
 					<xsl:apply-templates select="./*"/>
 				</xsl:for-each>
@@ -3066,10 +3069,10 @@
 				<xsl:if test="字:句/字:分页符">
 					<xsl:attribute name="fo:break-before">page</xsl:attribute>
 				</xsl:if>
-				<xsl:call-template name="ParagraphAttr"/>                                                                        
-                <xsl:if test="字:段落属性/字:制表位设置">
-                    <xsl:call-template name="ootab"/>
-                </xsl:if>
+				<xsl:call-template name="ParagraphAttr"/>
+				<xsl:if test="字:段落属性/字:制表位设置">
+					<xsl:call-template name="ootab"/>
+				</xsl:if>
 			</style:paragraph-properties>
 		</xsl:element>
 	</xsl:template>
@@ -3639,7 +3642,7 @@
 
 
 	 MEASURE LIST:
-	 * 1 milimeter (mm), the basic measure
+	 * 1 millimeter (mm), the basic measure
 
 	 * 1 centimeter (cm) = 10 mm
 
@@ -3880,7 +3883,7 @@
 				</xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
-			
+
 		<xsl:choose>
 			<xsl:when test="substring($str1,1,4)='yyyy'">
 				<xsl:variable name="str1-before" select="substring($str1,1,4)"/>
@@ -4512,7 +4515,7 @@
 	<xsl:template name="GenerateTrackChanges">
 		<text:tracked-changes>
 			<xsl:if test="/uof:UOF/uof:文字处理/字:公用处理规则/字:文档设置/字:修订">
-			    <xsl:attribute name="text:track-changes"><xsl:value-of select="/uof:UOF/uof:文字处理/字:公用处理规则/字:文档设置/字:修订/@字:值"/></xsl:attribute>
+				<xsl:attribute name="text:track-changes"><xsl:value-of select="/uof:UOF/uof:文字处理/字:公用处理规则/字:文档设置/字:修订/@字:值"/></xsl:attribute>
 			</xsl:if>
 			<xsl:if test="//字:段落/字:修订开始[@字:类型='insert']">
 				<xsl:for-each select="//字:段落/字:修订开始[@字:类型='insert']">
@@ -4616,7 +4619,7 @@
 											</office:change-info>
 										</text:format-change>
 									</xsl:when>
-									<xsl:otherwise>										
+									<xsl:otherwise>
 									</xsl:otherwise>
 								</xsl:choose>
 							</xsl:when>
@@ -4624,9 +4627,9 @@
 					</text:changed-region>
 				</xsl:for-each>
 				</xsl:if>
-				
+
 			</text:tracked-changes>
-		
+
 	</xsl:template>
 	<xsl:template name="oo数字格式">
 		<xsl:param name="oo_format"/>
@@ -4659,9 +4662,9 @@
 					<xsl:otherwise>1</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
-			
+
 			<xsl:element name="text:chapter">
-			    <xsl:attribute name="text:display">name</xsl:attribute>
+				<xsl:attribute name="text:display">name</xsl:attribute>
 				<xsl:attribute name="text:outline-level"><xsl:value-of select="$fmt"/></xsl:attribute>
 				<xsl:value-of select="following-sibling::字:句/字:文本串"/>
 			</xsl:element>
