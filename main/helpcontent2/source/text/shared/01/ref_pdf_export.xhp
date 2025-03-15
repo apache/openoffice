@@ -38,34 +38,32 @@
 <bookmark xml-lang="en-US" branch="hid/.uno:ExportToPDF" id="bm_id2491692" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:ExportToPDF" id="bm_id3146856" localize="false"/>
 <!-- removed HID FILTER_EDIT_RID_PDF_EXPORT_DLG_ED_PAGES -->
-<paragraph xml-lang="en-US" id="hd_id3149532" role="heading" level="1" l10n="U"
-oldref="52"><variable id="export_as_pdf"><variable id="ref_pdf_export"><link href="text/shared/01/ref_pdf_export.xhp" name="Export as PDF">Export as PDF</link>
+<paragraph xml-lang="en-US" id="hd_id3149532" role="heading" level="1" l10n="U"><variable id="export_as_pdf"><variable id="ref_pdf_export"><link href="text/shared/01/ref_pdf_export.xhp" name="Export as PDF">Export as PDF</link>
 </variable>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="par_id3154044" role="paragraph" l10n="CHG" oldref="1"><variable id="export"><ahelp hid="FILTER_EDIT_RID_PDF_EXPORT_DLG_ED_PAGES">Saves the current file to Portable Document Format (PDF) version 1.4.</ahelp> A PDF file can be viewed and printed on any platform with the original formatting intact, provided that supporting software is installed.
+<paragraph xml-lang="en-US" id="par_id3154044" role="paragraph" l10n="CHG"><variable id="export"><ahelp hid="FILTER_EDIT_RID_PDF_EXPORT_DLG_ED_PAGES">Saves the current file to Portable Document Format (PDF) version 1.4.</ahelp> A PDF file can be viewed and printed on any platform with the original formatting intact, provided that supporting software is installed.
 </variable></paragraph>
 </section>
 <section id="howtoget">
 <embed href="text/shared/00/00000401.xhp#exportpdf"/>
 </section>
 <paragraph xml-lang="en-US" id="hd_id746482" role="heading" level="2" l10n="NEW">General<comment>UFI: all on one page because they were intended to shrink to AHID tags with OOo3 anyway. Sadly cws help9s stalled ...</comment></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3148520" role="heading" level="2" l10n="CHG"
-oldref="2">Range</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154230" role="paragraph" l10n="CHG" oldref="3">Sets the export options for the pages included in the PDF file.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3148520" role="heading" level="2" l10n="CHG">Range</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154230" role="paragraph" l10n="CHG">Sets the export options for the pages included in the PDF file.</paragraph>
 <!-- removed HID filter_RadioButton_RID_PDF_EXPORT_DLG_RB_ALL -->
 <bookmark xml-lang="en-US" branch="hid/filter:RadioButton:RID_PDF_TAB_GENER:RB_ALL" id="bm_id1033967" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3166445" role="heading" level="2" l10n="U" oldref="4">All</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149893" role="paragraph" l10n="U" oldref="5"><ahelp hid="FILTER_RADIOBUTTON_RID_PDF_EXPORT_DLG_RB_ALL">Exports all defined print ranges. If no print range is defined, exports the entire document.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3166445" role="heading" level="2" l10n="U">All</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149893" role="paragraph" l10n="U"><ahelp hid="FILTER_RADIOBUTTON_RID_PDF_EXPORT_DLG_RB_ALL">Exports all defined print ranges. If no print range is defined, exports the entire document.</ahelp></paragraph>
 <!-- removed HID filter_RadioButton_RID_PDF_EXPORT_DLG_RB_RANGE -->
 <bookmark xml-lang="en-US" branch="hid/filter:RadioButton:RID_PDF_TAB_GENER:RB_RANGE" id="bm_id2618793" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/filter:Edit:RID_PDF_TAB_GENER:ED_PAGES" id="bm_id2676778" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154673" role="heading" level="2" l10n="CHG" oldref="6">Pages</paragraph>
-<paragraph xml-lang="en-US" id="par_id3147571" role="paragraph" l10n="U" oldref="7"><ahelp hid="FILTER_EDIT_RID_PDF_EXPORT_DLG_ED_PAGES">Exports the pages you type in the box.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="par_id3145136" role="paragraph" l10n="U" oldref="53">To export a range of pages, use the format 3-6. To export single pages, use the format 7;9;11. If you want, you can export a combination of page ranges and single pages, by using a format like 3-6;8;10;12.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154673" role="heading" level="2" l10n="CHG">Pages</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147571" role="paragraph" l10n="U"><ahelp hid="FILTER_EDIT_RID_PDF_EXPORT_DLG_ED_PAGES">Exports the pages you type in the box.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_id3145136" role="paragraph" l10n="U">To export a range of pages, use the format 3-6. To export single pages, use the format 7;9;11. If you want, you can export a combination of page ranges and single pages, by using a format like 3-6;8;10;12.</paragraph>
 <!-- removed HID filter_RadioButton_RID_PDF_EXPORT_DLG_RB_SELECTION -->
 <bookmark xml-lang="en-US" branch="hid/filter:RadioButton:RID_PDF_TAB_GENER:RB_SELECTION" id="bm_id8889126" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3147043" role="heading" level="2" l10n="U" oldref="8">Selection</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150774" role="paragraph" l10n="U" oldref="9"><ahelp hid="FILTER_RADIOBUTTON_RID_PDF_EXPORT_DLG_RB_SELECTION">Exports the current selection.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3147043" role="heading" level="2" l10n="U">Selection</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150774" role="paragraph" l10n="U"><ahelp hid="FILTER_RADIOBUTTON_RID_PDF_EXPORT_DLG_RB_SELECTION">Exports the current selection.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="par_idN10706" role="heading" level="2" l10n="NEW">Images</paragraph>
 <paragraph xml-lang="en-US" id="par_idN1070A" role="paragraph" l10n="NEW">Sets the PDF export options for images inside your document.</paragraph>
 <paragraph xml-lang="en-US" id="par_idN1071B" role="note" l10n="NEW">EPS images with embedded previews are exported only as previews. EPS images without embedded previews are exported as empty placeholders.</paragraph>
@@ -271,8 +269,7 @@ oldref="2">Range</paragraph>
 <bookmark xml-lang="en-US" branch="hid/filter:CheckBox:RID_PDF_TAB_SECURITY:CB_ENAB_ACCESS" id="bm_id3429059" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id9312417" role="heading" level="2" l10n="NEW">Enable text access for accessibility tools</paragraph>
 <paragraph xml-lang="en-US" id="par_id9089022" role="paragraph" l10n="NEW"><ahelp hid=".">Select to enable text access for accessibility tools.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3150507" role="heading" level="2" l10n="U"
-oldref="50">Export</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146975" role="paragraph" l10n="U" oldref="51"><ahelp hid=".">Exports the current file in PDF format.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150507" role="heading" level="2" l10n="U">Export</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146975" role="paragraph" l10n="U"><ahelp hid=".">Exports the current file in PDF format.</ahelp></paragraph>
 </body>
 </helpdocument>
