@@ -38,22 +38,22 @@
 <bookmark_value>data; sorting in forms</bookmark_value>
 <bookmark_value>forms; sorting data</bookmark_value>
 </bookmark><comment>MW changed "toolbars;..."</comment>
-<paragraph role="heading" id="hd_id3157896" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/shared/main0213.xhp" name="Form Navigation Bar">Form Navigation Bar</link></paragraph>
-<paragraph role="paragraph" id="par_id3154751" xml-lang="en-US" l10n="CHG" oldref="2">The <emph>Form Navigation</emph> bar contains icons to edit a database table or to control the data view. The bar is displayed at the bottom of a document that contains fields that are linked to a database.</paragraph>
+<paragraph role="heading" id="hd_id3157896" xml-lang="en-US" level="1" l10n="CHG"><link href="text/shared/main0213.xhp" name="Form Navigation Bar">Form Navigation Bar</link></paragraph>
+<paragraph role="paragraph" id="par_id3154751" xml-lang="en-US" l10n="CHG">The <emph>Form Navigation</emph> bar contains icons to edit a database table or to control the data view. The bar is displayed at the bottom of a document that contains fields that are linked to a database.</paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3157958" xml-lang="en-US" l10n="CHG" oldref="27">You can use the <emph>Form Navigation</emph> bar to move within records as well as to insert and to delete records. If data is saved in a form, the changes are transferred to the database. The <emph>Form Navigation</emph> bar also contains sort, filter, and search functions for data records.</paragraph>
+<paragraph role="paragraph" id="par_id3157958" xml-lang="en-US" l10n="CHG">You can use the <emph>Form Navigation</emph> bar to move within records as well as to insert and to delete records. If data is saved in a form, the changes are transferred to the database. The <emph>Form Navigation</emph> bar also contains sort, filter, and search functions for data records.</paragraph>
 <paragraph role="tip" id="par_idN10717" xml-lang="en-US" l10n="NEW">You can use the Navigation bar icon on the <link href="text/shared/02/01170000.xhp">More Controls </link> bar to add a Navigation bar to a form.</paragraph>
-<paragraph role="note" id="par_id3157910" xml-lang="en-US" l10n="CHG" oldref="3">The Navigation bar is only visible for forms connected to a database. In the <link href="text/shared/explorer/database/04030000.xhp" name="Design view">Design view</link> of a form, the Navigation bar is not available. See also <link href="text/shared/main0212.xhp" name="Database Bar">Table Data bar</link>.</paragraph>
-<paragraph role="paragraph" id="par_id3153880" xml-lang="en-US" l10n="U" oldref="22">You can control the view of data with the sorting and filtering functions. Original tables are not changed.</paragraph>
-<paragraph role="paragraph" id="par_id3153062" xml-lang="en-US" l10n="U" oldref="23">The current sort order or filter is saved with the current document. If a filter is set, the <emph>Apply Filter</emph> icon on the <emph>Navigation</emph> bar is activated. Sorting and filtering features in the document can also be configured in the <emph>Form Properties</emph> dialog. (Choose <emph>Form Properties - Data</emph> - properties <link href="text/shared/02/01170203.xhp" name="Sort"><emph>Sort</emph></link> and <link href="text/shared/02/01170203.xhp" name="Filter"><emph>Filter</emph></link>).</paragraph>
-<paragraph role="note" id="par_id3149810" xml-lang="en-US" l10n="U" oldref="24">If an SQL statement is the basis for a form (see <emph>Form Properties</emph> - tab <emph>Data</emph> - <link href="text/shared/02/01170203.xhp" name="Data Source"><emph>Data Source</emph></link>), then the filter and sort functions are only available when the SQL statement refers to only one table and is not written in the native SQL mode.</paragraph>
+<paragraph role="note" id="par_id3157910" xml-lang="en-US" l10n="CHG">The Navigation bar is only visible for forms connected to a database. In the <link href="text/shared/explorer/database/04030000.xhp" name="Design view">Design view</link> of a form, the Navigation bar is not available. See also <link href="text/shared/main0212.xhp" name="Database Bar">Table Data bar</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3153880" xml-lang="en-US" l10n="U">You can control the view of data with the sorting and filtering functions. Original tables are not changed.</paragraph>
+<paragraph role="paragraph" id="par_id3153062" xml-lang="en-US" l10n="U">The current sort order or filter is saved with the current document. If a filter is set, the <emph>Apply Filter</emph> icon on the <emph>Navigation</emph> bar is activated. Sorting and filtering features in the document can also be configured in the <emph>Form Properties</emph> dialog. (Choose <emph>Form Properties - Data</emph> - properties <link href="text/shared/02/01170203.xhp" name="Sort"><emph>Sort</emph></link> and <link href="text/shared/02/01170203.xhp" name="Filter"><emph>Filter</emph></link>).</paragraph>
+<paragraph role="note" id="par_id3149810" xml-lang="en-US" l10n="U">If an SQL statement is the basis for a form (see <emph>Form Properties</emph> - tab <emph>Data</emph> - <link href="text/shared/02/01170203.xhp" name="Data Source"><emph>Data Source</emph></link>), then the filter and sort functions are only available when the SQL statement refers to only one table and is not written in the native SQL mode.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/.uno:AbsoluteRecord" id="bm_id3131892" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:AbsoluteRecord" id="bm_id3151383" localize="false"/>
-<paragraph role="heading" id="hd_id3153192" xml-lang="en-US" level="2" l10n="U" oldref="4">Absolute Record</paragraph>
-<paragraph role="paragraph" id="par_id3146922" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid=".uno:AbsoluteRecord">Shows the number of the current record. Enter a number to go to the corresponding record.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3153192" xml-lang="en-US" level="2" l10n="U">Absolute Record</paragraph>
+<paragraph role="paragraph" id="par_id3146922" xml-lang="en-US" l10n="U"><ahelp hid=".uno:AbsoluteRecord">Shows the number of the current record. Enter a number to go to the corresponding record.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/.uno:FirstRecord" id="bm_id2556384" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:FirstRecord" id="bm_id3155414" localize="false"/>
-<paragraph role="heading" id="hd_id3153573" xml-lang="en-US" level="2" l10n="U" oldref="6">First Record</paragraph>
+<paragraph role="heading" id="hd_id3153573" xml-lang="en-US" level="2" l10n="U">First Record</paragraph>
 <table id="tbl_id3147428">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -62,13 +62,13 @@
 </image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid=".uno:FirstRecord">Takes you to the first record.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="U"><ahelp hid=".uno:FirstRecord">Takes you to the first record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:PrevRecord" id="bm_id2338439" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:PrevRecord" id="bm_id3153159" localize="false"/>
-<paragraph role="heading" id="hd_id3154792" xml-lang="en-US" level="2" l10n="U" oldref="8">Previous Record</paragraph>
+<paragraph role="heading" id="hd_id3154792" xml-lang="en-US" level="2" l10n="U">Previous Record</paragraph>
 <table id="tbl_id3155417">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -77,13 +77,13 @@
 </image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3157846" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid=".uno:PrevRecord">Takes you to the previous record.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3157846" xml-lang="en-US" l10n="U"><ahelp hid=".uno:PrevRecord">Takes you to the previous record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:NextRecord" id="bm_id2894208" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:NextRecord" id="bm_id3146900" localize="false"/>
-<paragraph role="heading" id="hd_id3149121" xml-lang="en-US" level="2" l10n="U" oldref="10">Next Record</paragraph>
+<paragraph role="heading" id="hd_id3149121" xml-lang="en-US" level="2" l10n="U">Next Record</paragraph>
 <table id="tbl_id3153947">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -92,13 +92,13 @@
 </image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3148914" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid=".uno:NextRecord">Takes you to the next record.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3148914" xml-lang="en-US" l10n="U"><ahelp hid=".uno:NextRecord">Takes you to the next record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:LastRecord" id="bm_id8390976" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:LastRecord" id="bm_id3156056" localize="false"/>
-<paragraph role="heading" id="hd_id3148997" xml-lang="en-US" level="2" l10n="U" oldref="12">Last Record</paragraph>
+<paragraph role="heading" id="hd_id3148997" xml-lang="en-US" level="2" l10n="U">Last Record</paragraph>
 <table id="tbl_id3147341">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -107,13 +107,13 @@
 </image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3151248" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid=".uno:LastRecord">Takes you to the last record.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3151248" xml-lang="en-US" l10n="U"><ahelp hid=".uno:LastRecord">Takes you to the last record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:RecSave" id="bm_id450354" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:RecSave" id="bm_id3153963" localize="false"/>
-<paragraph role="heading" id="hd_id3145231" xml-lang="en-US" level="2" l10n="U" oldref="14">Save Record</paragraph>
+<paragraph role="heading" id="hd_id3145231" xml-lang="en-US" level="2" l10n="U">Save Record</paragraph>
 <table id="tbl_id3155938">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -122,13 +122,13 @@
 </image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3146808" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid=".uno:RecSave">Saves a new data entry. The change is registered in the database.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3146808" xml-lang="en-US" l10n="U"><ahelp hid=".uno:RecSave">Saves a new data entry. The change is registered in the database.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:RecUndo" id="bm_id5478424" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:RecUndo" id="bm_id3148422" localize="false"/>
-<paragraph role="heading" id="hd_id3158446" xml-lang="en-US" level="2" l10n="U" oldref="16">Undo: Data entry</paragraph>
+<paragraph role="heading" id="hd_id3158446" xml-lang="en-US" level="2" l10n="U">Undo: Data entry</paragraph>
 <table id="tbl_id3155111">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -137,13 +137,13 @@
 </image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3151276" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid=".uno:RecUndo">Allows you to undo a data entry.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3151276" xml-lang="en-US" l10n="U"><ahelp hid=".uno:RecUndo">Allows you to undo a data entry.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:NewRecord" id="bm_id9891476" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:NewRecord" id="bm_id3154589" localize="false"/>
-<paragraph role="heading" id="hd_id3149967" xml-lang="en-US" level="2" l10n="U" oldref="18">New Record</paragraph>
+<paragraph role="heading" id="hd_id3149967" xml-lang="en-US" level="2" l10n="U">New Record</paragraph>
 <table id="tbl_id3150826">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -152,13 +152,13 @@
 </image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3148460" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid=".uno:NewRecord">Creates a new record.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3148460" xml-lang="en-US" l10n="U"><ahelp hid=".uno:NewRecord">Creates a new record.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:DeleteRecord" id="bm_id9404569" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:DeleteRecord" id="bm_id3152994" localize="false"/>
-<paragraph role="heading" id="hd_id3153659" xml-lang="en-US" level="2" l10n="U" oldref="20">Delete Record</paragraph>
+<paragraph role="heading" id="hd_id3153659" xml-lang="en-US" level="2" l10n="U">Delete Record</paragraph>
 <table id="tbl_id3166432">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -167,13 +167,13 @@
 </image></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3148817" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid=".uno:DeleteRecord">Deletes a record. A query needs to be confirmed before deleting.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3148817" xml-lang="en-US" l10n="U"><ahelp hid=".uno:DeleteRecord">Deletes a record. A query needs to be confirmed before deleting.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
 <embed href="text/shared/02/12050000.xhp#aktualisieren"/>
 <embed href="text/shared/02/12050000.xhp#syaktualisieren"/>
-<paragraph role="heading" id="hd_id3156448" xml-lang="en-US" level="2" l10n="U" oldref="25"><link href="text/shared/02/12100200.xhp" name="Find Record">Find Record</link></paragraph>
+<paragraph role="heading" id="hd_id3156448" xml-lang="en-US" level="2" l10n="U"><link href="text/shared/02/12100200.xhp" name="Find Record">Find Record</link></paragraph>
 <embed href="text/shared/02/12100200.xhp#suchentext"/>
 <embed href="text/shared/00/00000450.xhp#sydatensuchen"/>
 <embed href="text/shared/02/12010000.xhp#aufsteigend"/>
@@ -184,7 +184,7 @@
 <embed href="text/shared/02/12030000.xhp#syautofilter"/>
 <embed href="text/shared/02/12110000.xhp#formbasedfilters"/>
 <embed href="text/shared/02/12110000.xhp#syformfilter"/>
-<paragraph role="heading" id="hd_id3148599" xml-lang="en-US" level="2" l10n="U" oldref="26"><link href="text/shared/02/12100100.xhp" name="Sort">Sort</link></paragraph>
+<paragraph role="heading" id="hd_id3148599" xml-lang="en-US" level="2" l10n="U"><link href="text/shared/02/12100100.xhp" name="Sort">Sort</link></paragraph>
 <embed href="text/shared/02/12100100.xhp#sortierentext"/>
 <embed href="text/shared/00/00000450.xhp#sysortieren"/>
 <embed href="text/shared/02/12040000.xhp#filterentfernen"/>
