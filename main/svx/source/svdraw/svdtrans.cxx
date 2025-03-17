@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
@@ -32,8 +30,6 @@
 #include <tools/bigint.hxx>
 #include <tools/debug.hxx>
 #include <unotools/syslocale.hxx>
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void MoveXPoly(XPolygon& rPoly, const Size& S)
 {
@@ -183,7 +179,7 @@ void MirrorPoint(Point& rPnt, const Point& rRef1, const Point& rRef2)
 		rPnt.Y()=rRef1.Y()-dx1;
 	} else { // beliebige Achse
 		// mal optimieren !!!
-		// Lot auf der Spiegelachse faellen oder so
+		// Lot auf der Spiegelachse fällen oder so
 		long nRefWink=GetAngle(rRef2-rRef1);
 		rPnt-=rRef1;
 		long nPntWink=GetAngle(rPnt);
@@ -263,15 +259,7 @@ void ShearXPoly(XPolyPolygon& rPoly, const Point& rRef, double tn, FASTBOOL bVSh
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//   @@@@  @@@@@   @@@@   @@@@  @@  @@
-//  @@  @@ @@  @@ @@  @@ @@  @@ @@  @@
-//  @@     @@  @@ @@  @@ @@  @@ @@ @@
-//  @@     @@@@@  @@  @@ @@  @@ @@@@
-//  @@     @@  @@ @@  @@ @@  @@ @@ @@
-//  @@  @@ @@  @@ @@  @@ @@  @@ @@  @@
-//   @@@@  @@  @@  @@@@   @@@@  @@  @@
-//
+// CROOK
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 double CrookRotateXPoint(Point& rPnt, Point* pC1, Point* pC2, const Point& rCenter,
@@ -289,13 +277,13 @@ double CrookRotateXPoint(Point& rPnt, Point* pC1, Point* pC2, const Point& rCent
 	RotatePoint(rPnt,rCenter,sn,cs);
 	if (bC1) {
 		if (bVert) {
-			// Richtung Zentrum verschieben, als Ausgangsposition fuer Rotate
+			// Richtung Zentrum verschieben, als Ausgangsposition für Rotate
 			pC1->Y()-=y0;
 			// Resize, entsprechend der Entfernung vom Zentrum
 			pC1->Y()=Round(((double)pC1->Y()) /rRad.X()*(cx-pC1->X()));
 			pC1->Y()+=cy;
 		} else {
-			// Richtung Zentrum verschieben, als Ausgangsposition fuer Rotate
+			// Richtung Zentrum verschieben, als Ausgangsposition für Rotate
 			pC1->X()-=x0;
 			// Resize, entsprechend der Entfernung vom Zentrum
 			long nPntRad=cy-pC1->Y();
@@ -307,13 +295,13 @@ double CrookRotateXPoint(Point& rPnt, Point* pC1, Point* pC2, const Point& rCent
 	}
 	if (bC2) {
 		if (bVert) {
-			// Richtung Zentrum verschieben, als Ausgangsposition fuer Rotate
+			// Richtung Zentrum verschieben, als Ausgangsposition für Rotate
 			pC2->Y()-=y0;
 			// Resize, entsprechend der Entfernung vom Zentrum
 			pC2->Y()=Round(((double)pC2->Y()) /rRad.X()*(rCenter.X()-pC2->X()));
 			pC2->Y()+=cy;
 		} else {
-			// Richtung Zentrum verschieben, als Ausgangsposition fuer Rotate
+			// Richtung Zentrum verschieben, als Ausgangsposition für Rotate
 			pC2->X()-=x0;
 			// Resize, entsprechend der Entfernung vom Zentrum
 			long nPntRad=rCenter.Y()-pC2->Y();
@@ -561,7 +549,7 @@ long GetLen(const Point& rPnt)
 		nx+=ny;
 		nx=sqrt(nx);
 		if (nx>0x7FFFFFFF) {
-			return 0x7FFFFFFF; // Ueberlauf, mehr is nich!
+			return 0x7FFFFFFF; // Überlauf, mehr ist nicht!
 		} else {
 			return Round(nx);
 		}
@@ -615,17 +603,17 @@ void Poly2Rect(const Polygon& rPol, Rectangle& rRect, GeoStat& rGeo)
 	rGeo.RecalcSinCos();
 
 	Point aPt1(rPol[1]-rPol[0]);
-	if (rGeo.nDrehWink!=0) RotatePoint(aPt1,Point(0,0),-rGeo.nSin,rGeo.nCos); // -Sin fuer Rueckdrehung
+	if (rGeo.nDrehWink!=0) RotatePoint(aPt1,Point(0,0),-rGeo.nSin,rGeo.nCos); // -Sin für Rückdrehung
 	long nWdt=aPt1.X();
 
 	Point aPt0(rPol[0]);
 	Point aPt3(rPol[3]-rPol[0]);
-	if (rGeo.nDrehWink!=0) RotatePoint(aPt3,Point(0,0),-rGeo.nSin,rGeo.nCos); // -Sin fuer Rueckdrehung
+	if (rGeo.nDrehWink!=0) RotatePoint(aPt3,Point(0,0),-rGeo.nSin,rGeo.nCos); // -Sin für Rückdrehung
 	long nHgt=aPt3.Y();
 
 	if(aPt3.X())
 	{
-		// #i74358# the axes are not orthogonal, so for getting the correct height, 
+		// #i74358# the axes are not orthogonal, so for getting the correct height,
 		// calculate the length of aPt3
 
 		// #i74358# this change was wrong, in the field of the old geometry stuff
@@ -636,9 +624,9 @@ void Poly2Rect(const Polygon& rPol, Rectangle& rRect, GeoStat& rGeo)
 		// nHgt = static_cast< long >(sqrt(static_cast< double >(aPt3.X() * aPt3.X() + aPt3.Y() * aPt3.Y())));
 	}
 
-    long nShW=GetAngle(aPt3);
+	long nShW=GetAngle(aPt3);
 	nShW-=27000; // ShearWink wird zur Senkrechten gemessen
-	nShW=-nShW;  // Negieren, denn '+' ist Rechtskursivierung
+	nShW=-nShW; // Negieren, denn '+' ist Rechtskursivierung
 
 	FASTBOOL bMirr=aPt3.Y()<0;
 	if (bMirr) { // "Punktetausch" bei Spiegelung
@@ -698,9 +686,9 @@ long BigMulDiv(long nVal, long nMul, long nDiv)
 	BigInt aVal(nVal);
 	aVal*=nMul;
 	if (aVal.IsNeg()!=(nDiv<0)) {
-		aVal-=nDiv/2; // fuer korrektes Runden
+		aVal-=nDiv/2; // für korrektes Runden
 	} else {
-		aVal+=nDiv/2; // fuer korrektes Runden
+		aVal+=nDiv/2; // für korrektes Runden
 	}
 	if(nDiv)
 	{
@@ -719,23 +707,23 @@ void Kuerzen(Fraction& rF, unsigned nDigits)
 	if (nDiv<0) { nDiv=-nDiv; bNeg=!bNeg; }
 	if (nMul==0 || nDiv==0) return;
 	sal_uInt32 a;
-	a=sal_uInt32(nMul); unsigned nMulZ=0; // Fuehrende Nullen zaehlen
+	a=sal_uInt32(nMul); unsigned nMulZ=0; // Führende Nullen zählen
 	while (a<0x00800000) { nMulZ+=8; a<<=8; }
 	while (a<0x80000000) { nMulZ++; a<<=1; }
-	a=sal_uInt32(nDiv); unsigned nDivZ=0; // Fuehrende Nullen zaehlen
+	a=sal_uInt32(nDiv); unsigned nDivZ=0; // Führende Nullen zählen
 	while (a<0x00800000) { nDivZ+=8; a<<=8; }
 	while (a<0x80000000) { nDivZ++; a<<=1; }
 	// Anzahl der verwendeten Digits bestimmen
 	int nMulDigits=32-nMulZ;
 	int nDivDigits=32-nDivZ;
-	// Nun bestimmen, wieviele Stellen hinten weg koennen
+	// Nun bestimmen, wieviele Stellen hinten weg können
 	int nMulWeg=nMulDigits-nDigits; if (nMulWeg<0) nMulWeg=0;
 	int nDivWeg=nDivDigits-nDigits; if (nDivWeg<0) nDivWeg=0;
 	int nWeg=Min(nMulWeg,nDivWeg);
 	nMul>>=nWeg;
 	nDiv>>=nWeg;
 	if (nMul==0 || nDiv==0) {
-		DBG_WARNING("Oups, beim kuerzen einer Fraction hat sich Joe verrechnet.");
+		DBG_WARNING("Oups, beim kürzen einer Fraction hat sich Joe verrechnet.");
 		return;
 	}
 	if (bNeg) nMul=-nMul;
@@ -744,7 +732,7 @@ void Kuerzen(Fraction& rF, unsigned nDigits)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Wieviele eU-Einheiten passen in einen mm bzw. Inch?
-// Oder wie gross ist ein eU in mm bzw. Inch, und davon der Kehrwert
+// Oder wie groß ist ein eU in mm bzw. Inch, und davon der Kehrwert
 
 FrPair GetInchOrMM(MapUnit eU)
 {
@@ -762,13 +750,13 @@ FrPair GetInchOrMM(MapUnit eU)
 		case MAP_PIXEL      : {
 			VirtualDevice aVD;
 			aVD.SetMapMode(MapMode(MAP_100TH_MM));
-			Point aP(aVD.PixelToLogic(Point(64,64))); // 64 Pixel fuer bessere Genauigkeit
+			Point aP(aVD.PixelToLogic(Point(64,64))); // 64 Pixel für bessere Genauigkeit
 			return FrPair(6400,aP.X(),6400,aP.Y());
 		}
 		case MAP_APPFONT: case MAP_SYSFONT: {
 			VirtualDevice aVD;
 			aVD.SetMapMode(MapMode(eU));
-			Point aP(aVD.LogicToPixel(Point(32,32))); // 32 Einheiten fuer bessere Genauigkeit
+			Point aP(aVD.LogicToPixel(Point(32,32))); // 32 Einheiten für bessere Genauigkeit
 			aVD.SetMapMode(MapMode(MAP_100TH_MM));
 			aP=aVD.PixelToLogic(aP);
 			return FrPair(3200,aP.X(),3200,aP.Y());
@@ -859,24 +847,24 @@ FrPair GetMapFactor(FieldUnit eS, FieldUnit eD)
 	// 1 yd      =  3 ft      =     36" =       914,4mm
 	// 1 ft      = 12 "       =      1" =       304,8mm
 
-void GetMeterOrInch(MapUnit eMU, short& rnKomma, long& rnMul, long& rnDiv, int& rbMetr, int& rbInch)
+void GetMeterOrInch(MapUnit eMU, short& rnComma, long& rnMul, long& rnDiv, int& rbMetr, int& rbInch)
 {
 	rnMul=1; rnDiv=1;
-	short nKomma=0;
+	short nComma=0;
 	FASTBOOL bMetr=sal_False,bInch=sal_False;
 	switch (eMU) {
 		// Metrisch
-		case MAP_100TH_MM   : bMetr=sal_True; nKomma=5; break;
-		case MAP_10TH_MM    : bMetr=sal_True; nKomma=4; break;
-		case MAP_MM         : bMetr=sal_True; nKomma=3; break;
-		case MAP_CM         : bMetr=sal_True; nKomma=2; break;
+		case MAP_100TH_MM   : bMetr=sal_True; nComma=5; break;
+		case MAP_10TH_MM    : bMetr=sal_True; nComma=4; break;
+		case MAP_MM         : bMetr=sal_True; nComma=3; break;
+		case MAP_CM         : bMetr=sal_True; nComma=2; break;
 		// Inch
-		case MAP_1000TH_INCH: bInch=sal_True; nKomma=3; break;
-		case MAP_100TH_INCH : bInch=sal_True; nKomma=2; break;
-		case MAP_10TH_INCH  : bInch=sal_True; nKomma=1; break;
-		case MAP_INCH       : bInch=sal_True; nKomma=0; break;
-		case MAP_POINT      : bInch=sal_True; rnDiv=72;  break;          // 1Pt   = 1/72"
-		case MAP_TWIP       : bInch=sal_True; rnDiv=144; nKomma=1; break; // 1Twip = 1/1440"
+		case MAP_1000TH_INCH: bInch=sal_True; nComma=3; break;
+		case MAP_100TH_INCH : bInch=sal_True; nComma=2; break;
+		case MAP_10TH_INCH  : bInch=sal_True; nComma=1; break;
+		case MAP_INCH       : bInch=sal_True; nComma=0; break;
+		case MAP_POINT      : bInch=sal_True; rnDiv=72;  break; // 1Pt = 1/72"
+		case MAP_TWIP       : bInch=sal_True; rnDiv=144; nComma=1; break; // 1Twip = 1/1440"
 		// Sonstiges
 		case MAP_PIXEL      : break;
 		case MAP_SYSFONT    : break;
@@ -884,36 +872,36 @@ void GetMeterOrInch(MapUnit eMU, short& rnKomma, long& rnMul, long& rnDiv, int& 
 		case MAP_RELATIVE   : break;
 		default: break;
 	} // switch
-	rnKomma=nKomma;
+	rnComma=nComma;
 	rbMetr=bMetr;
 	rbInch=bInch;
 }
 
-void GetMeterOrInch(FieldUnit eFU, short& rnKomma, long& rnMul, long& rnDiv, int& rbMetr, int& rbInch)
+void GetMeterOrInch(FieldUnit eFU, short& rnComma, long& rnMul, long& rnDiv, int& rbMetr, int& rbInch)
 {
 	rnMul=1; rnDiv=1;
-	short nKomma=0;
+	short nComma=0;
 	FASTBOOL bMetr=sal_False,bInch=sal_False;
 	switch (eFU) {
 		case FUNIT_NONE     : break;
 		// Metrisch
-		case FUNIT_100TH_MM : bMetr=sal_True; nKomma=5; break;
-		case FUNIT_MM       : bMetr=sal_True; nKomma=3; break;
-		case FUNIT_CM       : bMetr=sal_True; nKomma=2; break;
-		case FUNIT_M        : bMetr=sal_True; nKomma=0; break;
-		case FUNIT_KM       : bMetr=sal_True; nKomma=-3; break;
+		case FUNIT_100TH_MM : bMetr=sal_True; nComma=5; break;
+		case FUNIT_MM       : bMetr=sal_True; nComma=3; break;
+		case FUNIT_CM       : bMetr=sal_True; nComma=2; break;
+		case FUNIT_M        : bMetr=sal_True; nComma=0; break;
+		case FUNIT_KM       : bMetr=sal_True; nComma=-3; break;
 		// Inch
-		case FUNIT_TWIP     : bInch=sal_True; rnDiv=144; nKomma=1; break;  // 1Twip = 1/1440"
-		case FUNIT_POINT    : bInch=sal_True; rnDiv=72; break;   // 1Pt   = 1/72"
-		case FUNIT_PICA     : bInch=sal_True; rnDiv=6; break;    // 1Pica = 1/6"  ?
-		case FUNIT_INCH     : bInch=sal_True; break;             // 1"    = 1"
-		case FUNIT_FOOT     : bInch=sal_True; rnMul=12; break;   // 1Ft   = 12"
-		case FUNIT_MILE     : bInch=sal_True; rnMul=6336; nKomma=-1; break; // 1mile = 63360"
+		case FUNIT_TWIP     : bInch=sal_True; rnDiv=144; nComma=1; break; // 1Twip = 1/1440"
+		case FUNIT_POINT    : bInch=sal_True; rnDiv=72; break;   // 1Pt = 1/72"
+		case FUNIT_PICA     : bInch=sal_True; rnDiv=6; break;    // 1Pica = 1/6" ?
+		case FUNIT_INCH     : bInch=sal_True; break;             // 1" = 1"
+		case FUNIT_FOOT     : bInch=sal_True; rnMul=12; break;   // 1Ft = 12"
+		case FUNIT_MILE     : bInch=sal_True; rnMul=6336; nComma=-1; break; // 1mile = 63360"
 		// sonstiges
 		case FUNIT_CUSTOM   : break;
-		case FUNIT_PERCENT  : nKomma=2; break;
+		case FUNIT_PERCENT  : nComma=2; break;
 	} // switch
-	rnKomma=nKomma;
+	rnComma=nComma;
 	rbMetr=bMetr;
 	rbInch=bInch;
 }
@@ -923,39 +911,39 @@ void SdrFormatter::Undirty()
 	if (aScale.GetNumerator()==0 || aScale.GetDenominator()==0) aScale=Fraction(1,1);
 	FASTBOOL bSrcMetr,bSrcInch,bDstMetr,bDstInch;
 	long nMul1,nDiv1,nMul2,nDiv2;
-	short nKomma1,nKomma2;
-	// Zunaechst normalisieren auf m bzw. "
+	short nComma1,nComma2;
+	// Zunächst normalisieren auf m bzw. "
 	if (!bSrcFU) {
-		GetMeterOrInch(eSrcMU,nKomma1,nMul1,nDiv1,bSrcMetr,bSrcInch);
+		GetMeterOrInch(eSrcMU,nComma1,nMul1,nDiv1,bSrcMetr,bSrcInch);
 	} else {
-		GetMeterOrInch(eSrcFU,nKomma1,nMul1,nDiv1,bSrcMetr,bSrcInch);
+		GetMeterOrInch(eSrcFU,nComma1,nMul1,nDiv1,bSrcMetr,bSrcInch);
 	}
 	if (!bDstFU) {
-		GetMeterOrInch(eDstMU,nKomma2,nMul2,nDiv2,bDstMetr,bDstInch);
+		GetMeterOrInch(eDstMU,nComma2,nMul2,nDiv2,bDstMetr,bDstInch);
 	} else {
-		GetMeterOrInch(eDstFU,nKomma2,nMul2,nDiv2,bDstMetr,bDstInch);
+		GetMeterOrInch(eDstFU,nComma2,nMul2,nDiv2,bDstMetr,bDstInch);
 	}
 	nMul1*=nDiv2;
 	nDiv1*=nMul2;
-	nKomma1=nKomma1-nKomma2;
+	nComma1=nComma1-nComma2;
 
 	if (bSrcInch && bDstMetr) {
-		nKomma1+=4;
+		nComma1+=4;
 		nMul1*=254;
 	}
 	if (bSrcMetr && bDstInch) {
-		nKomma1-=4;
+		nComma1-=4;
 		nDiv1*=254;
 	}
 
-	// Temporaere Fraction zum Kuerzen
+	// Temporäre Fraction zum Kürzen
 	Fraction aTempFract(nMul1,nDiv1);
 	nMul1=aTempFract.GetNumerator();
 	nDiv1=aTempFract.GetDenominator();
 
 	nMul_=nMul1;
 	nDiv_=nDiv1;
-	nKomma_=nKomma1;
+	nComma_=nComma1;
 	bDirty=sal_False;
 }
 
@@ -973,12 +961,12 @@ void SdrFormatter::TakeStr(long nVal, XubString& rStr) const
 
 	// Hier fallen trotzdem evtl. Nachkommastellen weg, wg. MulDiv statt Real
 	sal_Bool bNeg(nVal < 0);
-    SvtSysLocale aSysLoc;
-    const LocaleDataWrapper& rLoc = aSysLoc.GetLocaleData();
+	SvtSysLocale aSysLoc;
+	const LocaleDataWrapper& rLoc = aSysLoc.GetLocaleData();
 
 	ForceUndirty();
 
-	sal_Int16 nK(nKomma_);
+	sal_Int16 nK(nComma_);
 	XubString aStr;
 
 	if(bNeg)
@@ -1006,30 +994,30 @@ void SdrFormatter::TakeStr(long nVal, XubString& rStr) const
 		// Komma erforderlich
 		sal_Int16 nAnz(nK - aStr.Len());
 
-        if(nAnz >= 0 && rLoc.isNumLeadingZero())
+		if(nAnz >= 0 && rLoc.isNumLeadingZero())
 			nAnz++;
 
 		for(xub_StrLen  i=0; i<nAnz; i++)
 			aStr.Insert(aNullCode, 0);
 
-		// zuviele Nachkommastellen abhacken
-        xub_StrLen nNumDigits(rLoc.getNumDigits());
+		// zu viele Nachkommastellen abhacken
+		xub_StrLen nNumDigits(rLoc.getNumDigits());
 		xub_StrLen nWeg(nK - nNumDigits);
 
 		if(nWeg > 0)
 		{
-			// hier muesste eigentlich noch gerundet werden!
+			// hier müsste eigentlich noch gerundet werden!
 			aStr.Erase(aStr.Len() - nWeg);
 			nK = nNumDigits;
 		}
 	}
 
-	// Vorkommastellen fuer spaeter merken
-	xub_StrLen nVorKomma(aStr.Len() - nK);
+	// Vorkommastellen für später merken
+	xub_StrLen nPreComma(aStr.Len() - nK);
 
 	if(nK > 0)
 	{
-		// KommaChar einfuegen
+		// KommaChar einfügen
 		// erstmal trailing Zeros abhacken
 		while(nK > 0 && aStr.GetChar(aStr.Len() - 1) == aNullCode)
 		{
@@ -1040,26 +1028,26 @@ void SdrFormatter::TakeStr(long nVal, XubString& rStr) const
 		if(nK > 0)
 		{
 			// na, noch Nachkommastellen da?
-            sal_Unicode cDec(rLoc.getNumDecimalSep().GetChar(0));
-			aStr.Insert(cDec, nVorKomma);
+			sal_Unicode cDec(rLoc.getNumDecimalSep().GetChar(0));
+			aStr.Insert(cDec, nPreComma);
 		}
 	}
 
-	// ggf. Trennpunkte bei jedem Tausender einfuegen
-    if( nVorKomma > 3 )
+	// ggf. Trennpunkte bei jedem Tausender einfügen
+	if( nPreComma > 3 )
 	{
-        String aThoSep( rLoc.getNumThousandSep() );
-        if ( aThoSep.Len() > 0 )
-        {
-            sal_Unicode cTho( aThoSep.GetChar(0) );
-            sal_Int32 i(nVorKomma - 3);
+		String aThoSep( rLoc.getNumThousandSep() );
+		if ( aThoSep.Len() > 0 )
+		{
+			sal_Unicode cTho( aThoSep.GetChar(0) );
+			sal_Int32 i(nPreComma - 3);
 
-            while(i > 0)
-            {
-                rStr.Insert(cTho, (xub_StrLen)i);
-                i -= 3;
-            }
-        }
+			while(i > 0)
+			{
+				rStr.Insert(cTho, (xub_StrLen)i);
+				i -= 3;
+			}
+		}
 	}
 
 	if(!aStr.Len())
@@ -1137,4 +1125,4 @@ void SdrFormatter::TakeUnitStr(FieldUnit eUnit, XubString& rStr)
 	rStr = XubString::CreateFromAscii( pText );
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+/* vim: set noet sw=4 ts=4: */
