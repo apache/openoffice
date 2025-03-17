@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
@@ -81,8 +79,6 @@
 #include <drawinglayer/attribute/sdrlinestartendattribute.hxx>
 #include <map>
 #include <vector>
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrDragEntry::SdrDragEntry()
 :	mbAddToTransparent(false)
@@ -379,8 +375,7 @@ void SdrDragMethod::createSdrDragEntries()
 
 void SdrDragMethod::createSdrDragEntryForSdrObject(const SdrObject& rOriginal, sdr::contact::ObjectContact& rObjectContact, bool bModify)
 {
-	// add full object drag; Clone() at the object has to work
-	// for this
+	// add full object drag; Clone() at the object has to work for this
 	addSdrDragEntry(new SdrDragEntrySdrObject(rOriginal, rObjectContact, bModify));
 }
 
@@ -1092,7 +1087,7 @@ void SdrDragMovHdl::MoveSdrDrag(const Point& rNoSnapPnt)
 				nSA=getSdrDragView().GetSnapAngle();
 
 			if (getSdrDragView().IsMirrorAllowed(true,true))
-			{ // eingeschraenkt
+			{ // eingeschränkt
 				if (!getSdrDragView().IsMirrorAllowed(false,false)) nSA=4500;
 				if (!getSdrDragView().IsMirrorAllowed(true,false)) nSA=9000;
 			}
@@ -1443,7 +1438,7 @@ bool SdrDragObjOwn::EndSdrDrag(bool /*bCopy*/)
 		// evtl. use operator= for setting changed object data (do not change selection in
 		// view, this will destroy the interactor). This is possible since a clone is now
 		// directly modified by the modifiers. Only SdrTableObj is adding own UNDOs
-		// in it's SdrTableObj::endSpecialDrag, so currently not possible. OTOH it uses
+		// in its SdrTableObj::endSpecialDrag, so currently not possible. OTOH it uses
 		// a CreateUndoGeoObject() so maybe setting SetEndDragChangesAttributes is okay. I
 		// will test this now
 		Rectangle aBoundRect0;
@@ -1520,7 +1515,7 @@ TYPEINIT1(SdrDragMove,SdrDragMethod);
 
 void SdrDragMove::createSdrDragEntryForSdrObject(const SdrObject& rOriginal, sdr::contact::ObjectContact& rObjectContact, bool /*bModify*/)
 {
-	// for SdrDragMove, use current Primitive2DSequence of SdrObject visualisation
+	// for SdrDragMove, use current Primitive2DSequence of SdrObject visualization
 	// in given ObjectContact directly
 	sdr::contact::ViewContact& rVC = rOriginal.GetViewContact();
 	sdr::contact::ViewObjectContact& rVOC = rVC.GetViewObjectContact(rObjectContact);
@@ -1670,7 +1665,7 @@ void SdrDragMove::MoveSdrDrag(const Point& rNoSnapPnt_)
 			}
 
 			if (aSR2.Left()>aLR.Left() || aSR2.Right()<aLR.Right())
-			{ // ist ueberhaupt Platz zum verschieben?
+			{ // ist überhaupt Platz zum verschieben?
 				aSR2.Move(aD.X(),0);
 
 				if (aSR2.Left()<aLR.Left())
@@ -1686,7 +1681,7 @@ void SdrDragMove::MoveSdrDrag(const Point& rNoSnapPnt_)
 				aPt1.X()=DragStat().GetStart().X(); // kein Platz zum verschieben
 
 			if (aSR2.Top()>aLR.Top() || aSR2.Bottom()<aLR.Bottom())
-			{ // ist ueberhaupt Platz zum verschieben?
+			{ // ist überhaupt Platz zum verschieben?
 				aSR2.Move(0,aD.Y());
 
 				if (aSR2.Top()<aLR.Top())
@@ -2328,7 +2323,7 @@ bool SdrDragShear::BeginSdrDrag()
 	}
 	else
 	{
-		DBG_ERROR("SdrDragShear::BeginSdrDrag(): Kein Referenzpunkt-Handle fuer Shear gefunden");
+		DBG_ERROR("SdrDragShear::BeginSdrDrag(): Kein Referenzpunkt-Handle für Shear gefunden");
 		return false;
 	}
 
@@ -2442,7 +2437,7 @@ void SdrDragShear::MoveSdrDrag(const Point& rPnt)
 		bUpSideDown=nNeuWink>9000 && nNeuWink<27000;
 
 		if (bSlant)
-		{ // Resize fuer Slant berechnen
+		{ // Resize für Slant berechnen
 			// Mit Winkelfang jedoch ohne 89deg Begrenzung
 			long nTmpWink=nNeuWink;
 			if (bUpSideDown) nNeuWink-=18000;
@@ -3927,7 +3922,7 @@ bool SdrDragCrop::EndSdrDrag(bool /*bCopy*/)
 	double fScaleY = ( aGraphicSize.Height() - rOldCrop.GetTop() - rOldCrop.GetBottom() ) / (double)aOldRect.GetHeight();
 
 	// not needed since the modification is done in unit coordinates, free from shear/rotate and mirror
-	// // TTTT may be removed or exhanged by other stuff in aw080
+	// // TTTT may be removed or exchanged by other stuff in aw080
 	// // to correct the never working combination of cropped images and mirroring
 	// // I have to correct the rectangles the calculation is based on here. In the current
 	// // core geometry stuff a vertical mirror is expressed as 180 degree rotation. All
@@ -3976,5 +3971,4 @@ Pointer SdrDragCrop::GetSdrDragPointer() const
 	return Pointer(POINTER_CROP);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */
