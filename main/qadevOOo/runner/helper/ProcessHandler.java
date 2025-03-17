@@ -289,17 +289,17 @@ public class ProcessHandler
      * @param envVars       The specified environment variables are
      *                      set for the new process.
      *                      If log stream is null, logging is printed to stdout.
-     * @param  timeOut      When started sychronisly, the maximum time the
+     * @param  timeOut      When started synchronously, the maximum time the
      *                      process will live. When the process being destroyed
      *                      a log will be written out. It can be asked on
      *                      <code>isTimedOut()</code> if it has been terminated.
      *
      *                      timeOut > 0
-     *                      Waits specified time in miliSeconds for
+     *                      Waits specified time in milliSeconds for
      *                      process to exit and return its status.
      *
      *                      timeOut = 0
-     *                      Waits for the process to end regulary
+     *                      Waits for the process to end regularly
      *
      *                      timeOut < 0
      *                      Kills the process immediately
@@ -452,7 +452,7 @@ public class ProcessHandler
      * exits.
      *
      * @return <code>true</code> if process was successfully
-     * started and correcly exits (exit code doesn't affect
+     * started and correctly exits (exit code doesn't affect
      * to this result).
      */
     public boolean executeSynchronously()
@@ -644,11 +644,11 @@ public class ProcessHandler
      * to exit and return its status.
      *
      * @param timeout      > 0
-     *                      Waits specified time in miliSeconds for
+     *                      Waits specified time in milliSeconds for
      *                      process to exit and return its status.
      *
      *                      = 0
-     *                      Waits for the process to end regulary
+     *                      Waits for the process to end regularly
      *
      *                      < 0
      *                      Kills the process immediately

@@ -2522,7 +2522,7 @@ Function RunAnalysis(bDoPrepare) As Boolean
     
     tend = GetTickCount()
     WriteToLog CELAPSED_TIME, (FormatNumber((tend - tstart) / 1000, 0) & " seconds: ") & _
-    (FormatNumber((tend - tstart), 0) & " miliseconds")
+    (FormatNumber((tend - tstart), 0) & " milliseconds")
 
 FinalExit:
     Unload ShowProgress

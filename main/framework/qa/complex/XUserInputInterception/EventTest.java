@@ -64,7 +64,7 @@ import static org.junit.Assert.*;
  * This <CODE>ComplexTest</CODE> checks the interface 
  * <CODE>XUserInputInterception</CODE>. Therefore it creates a document,
  * adds a mouse and a key listener onto the interface and fire the
- * correspond events. If all listener works as expected the test resluts in 
+ * correspond events. If all listener works as expected the test results in
  * <CODE>OK</CODE> status.
  * @short Check the interface XUserInputIntercaption
  * @descr checks is a simple way the interface XUserInputInteraction
@@ -93,7 +93,7 @@ public class EventTest {
     private SOfficeFactory m_SOF = null;
     
     /**
-     * define the miliseconds to wait until a <CODE>EventTrigger</CODE> thread should
+     * define the milliseconds to wait until a <CODE>EventTrigger</CODE> thread should
      * be finished with its work
      */
     final int m_threadWait = 3000;
@@ -481,8 +481,8 @@ public class EventTest {
         private XModel xModel = null;
         
         /**
-         * Creates an instacne of this class. The parameter <CODE>eType</CODE> represents
-         * the kind of event which will be triggert at <CODE>run()</CODE>
+         * Creates an instance of this class. The parameter <CODE>eType</CODE> represents
+         * the kind of event which will be triggered at <CODE>run()</CODE>
          * @param model the model of a document
          * @param eType the kind of event which should be trigger
          */
