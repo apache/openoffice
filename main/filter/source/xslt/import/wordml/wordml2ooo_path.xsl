@@ -1439,7 +1439,7 @@
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:when test="string-length(translate($curr-char ,  '+-' ,'') ) = 0  and string-length($number) &gt; 0">
-                        <!-- finsh it with +/- -->
+                        <!-- finish it with +/- -->
                         <xsl:call-template name="format-number-pos">
                             <xsl:with-param name="number" select="$number"/>
                             <xsl:with-param name="position" select="$position"/>

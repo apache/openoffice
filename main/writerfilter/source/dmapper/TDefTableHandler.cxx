@@ -250,7 +250,7 @@ PropertyMapPtr  TDefTableHandler::getRowProperties() const
     {
         //determine table width 
         double nFullWidth = m_aCellBorderPositions[m_aCellBorderPositions.size() - 1] - m_aCellBorderPositions[0];
-        //the positions have to be distibuted in a range of 10000 
+        //the positions have to be distributed in a range of 10000
         const double nFullWidthRelative = 10000.;
         uno::Sequence< text::TableColumnSeparator > aSeparators( m_aCellBorderPositions.size() - 2 );
         text::TableColumnSeparator* pSeparators = aSeparators.getArray();
