@@ -982,8 +982,8 @@ void XSecController::endMission()
 				( m_vInternalSignatureInformations[i].xReferenceResolvedListener, cssu::UNO_QUERY );
 			
 			/*
-			 * askes the SignatureCreator/SignatureVerifier to release
-			 * all resouces it uses.
+			 * asks the SignatureCreator/SignatureVerifier to release
+			 * all resources it uses.
 			 */	
 			xMissionTaker->endMission();
 		}

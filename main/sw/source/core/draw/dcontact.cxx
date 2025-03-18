@@ -2246,7 +2246,7 @@ namespace sdr
 
                 if(rCandidate.GetViewContact().GetObjectCount())
                 {
-                    // is a group object itself, call resursively
+                    // is a group object itself, call recursively
                     impAddPrimitivesFromGroup(rCandidate, rOffsetMatrix, rDisplayInfo, rxTarget);
                 }
                 else
