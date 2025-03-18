@@ -919,7 +919,7 @@ void SwStdFontTabPage::Reset( const SfxItemSet& rSet)
     // #i94536# prevent duplication of font entries when 'reset' button is pressed
     if( !aStandardBox.GetEntryCount() )
     {
-        // get the set of disctinct available family names
+        // get the set of distinct available family names
         std::set< String > aFontNames;
         int nFontNames = pPrt->GetDevFontCount();
         for( int i = 0; i < nFontNames; i++ )

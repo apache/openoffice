@@ -470,7 +470,7 @@ sal_Bool SvxImportMSVBasic::ImportCode_Impl( const String& rStorageName,
 							}
 							catch(uno::Exception& e)
 							{
-								OSL_TRACE("Failed to get documument object for %s", rtl::OUStringToOString( it->first, RTL_TEXTENCODING_UTF8 ).getStr() );
+								OSL_TRACE("Failed to get document object for %s", rtl::OUStringToOString( it->first, RTL_TEXTENCODING_UTF8 ).getStr() );
 							}
 						}
 					}

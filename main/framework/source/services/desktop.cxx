@@ -231,7 +231,7 @@ DEFINE_INIT_SERVICE                     (   Desktop,
                 The value must be different from NULL!
     @return     -
 
-    @onerror    We throw an ASSERT in debug version or do nothing in relaese version.
+    @onerror    We throw an ASSERT in debug version or do nothing in release version.
 *//*-*************************************************************************************************************/
 Desktop::Desktop( const css::uno::Reference< css::lang::XMultiServiceFactory >& xFactory )
 		//	Init baseclasses first

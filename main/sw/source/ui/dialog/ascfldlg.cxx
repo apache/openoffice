@@ -177,7 +177,7 @@ SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
 			}
 			
 			
-			// get the set of disctinct available family names
+			// get the set of distinct available family names
 			std::set< String > aFontNames;
 			int nFontNames = pPrt->GetDevFontCount();
 			for( int i = 0; i < nFontNames; i++ )

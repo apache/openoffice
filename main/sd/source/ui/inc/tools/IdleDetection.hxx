@@ -31,7 +31,7 @@ class Window;
 namespace sd { namespace tools {
 
 /** Detect whether the system is idle and some time consuming operation may
-    be carried out.  This class ditinguishes between different states of
+    be carried out.  This class distinguishes between different states of
     idle-ness.
 */
 class IdleDetection
