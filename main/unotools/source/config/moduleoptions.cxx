@@ -224,8 +224,8 @@ struct FactoryInfo
         sal_Int32           getIcon             () const { return nIcon;              };
 
         //---------------------------------------------------------------------------------------------------------
-        // If you call set-methods - we check for changes of valkues and mark it.
-        // But if you whish to set it without that ... you must initialize it!
+        // If you call set-methods - we check for changes of values and mark it.
+        // But if you wish to set it without that ... you must initialize it!
         void initInstalled        ( sal_Bool               bNewInstalled        ) { bInstalled        = bNewInstalled        ; }
         void initFactory          ( const ::rtl::OUString& sNewFactory          ) { sFactory          = sNewFactory          ; }
         void initShortName        ( const ::rtl::OUString& sNewShortName        ) { sShortName        = sNewShortName        ; }
