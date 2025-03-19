@@ -399,19 +399,19 @@ double CrookStretchXPoint(Point& rPnt, Point* pC1, Point* pC2, const Point& rCen
 void CrookRotatePoly(XPolygon& rPoly, const Point& rCenter, const Point& rRad, FASTBOOL bVert)
 {
 	double nSin,nCos;
-	sal_uInt16 nPointAnz=rPoly.GetPointCount();
+	sal_uInt16 nPointCount=rPoly.GetPointCount();
 	sal_uInt16 i=0;
-	while (i<nPointAnz) {
+	while (i<nPointCount) {
 		Point* pPnt=&rPoly[i];
 		Point* pC1=NULL;
 		Point* pC2=NULL;
-		if (i+1<nPointAnz && rPoly.IsControl(i)) { // Kontrollpunkt links
+		if (i+1<nPointCount && rPoly.IsControl(i)) { // Kontrollpunkt links
 			pC1=pPnt;
 			i++;
 			pPnt=&rPoly[i];
 		}
 		i++;
-		if (i<nPointAnz && rPoly.IsControl(i)) { // Kontrollpunkt rechts
+		if (i<nPointCount && rPoly.IsControl(i)) { // Kontrollpunkt rechts
 			pC2=&rPoly[i];
 			i++;
 		}
@@ -422,19 +422,19 @@ void CrookRotatePoly(XPolygon& rPoly, const Point& rCenter, const Point& rRad, F
 void CrookSlantPoly(XPolygon& rPoly, const Point& rCenter, const Point& rRad, FASTBOOL bVert)
 {
 	double nSin,nCos;
-	sal_uInt16 nPointAnz=rPoly.GetPointCount();
+	sal_uInt16 nPointCount=rPoly.GetPointCount();
 	sal_uInt16 i=0;
-	while (i<nPointAnz) {
+	while (i<nPointCount) {
 		Point* pPnt=&rPoly[i];
 		Point* pC1=NULL;
 		Point* pC2=NULL;
-		if (i+1<nPointAnz && rPoly.IsControl(i)) { // Kontrollpunkt links
+		if (i+1<nPointCount && rPoly.IsControl(i)) { // Kontrollpunkt links
 			pC1=pPnt;
 			i++;
 			pPnt=&rPoly[i];
 		}
 		i++;
-		if (i<nPointAnz && rPoly.IsControl(i)) { // Kontrollpunkt rechts
+		if (i<nPointCount && rPoly.IsControl(i)) { // Kontrollpunkt rechts
 			pC2=&rPoly[i];
 			i++;
 		}
@@ -445,19 +445,19 @@ void CrookSlantPoly(XPolygon& rPoly, const Point& rCenter, const Point& rRad, FA
 void CrookStretchPoly(XPolygon& rPoly, const Point& rCenter, const Point& rRad, FASTBOOL bVert, const Rectangle rRefRect)
 {
 	double nSin,nCos;
-	sal_uInt16 nPointAnz=rPoly.GetPointCount();
+	sal_uInt16 nPointCount=rPoly.GetPointCount();
 	sal_uInt16 i=0;
-	while (i<nPointAnz) {
+	while (i<nPointCount) {
 		Point* pPnt=&rPoly[i];
 		Point* pC1=NULL;
 		Point* pC2=NULL;
-		if (i+1<nPointAnz && rPoly.IsControl(i)) { // Kontrollpunkt links
+		if (i+1<nPointCount && rPoly.IsControl(i)) { // Kontrollpunkt links
 			pC1=pPnt;
 			i++;
 			pPnt=&rPoly[i];
 		}
 		i++;
-		if (i<nPointAnz && rPoly.IsControl(i)) { // Kontrollpunkt rechts
+		if (i<nPointCount && rPoly.IsControl(i)) { // Kontrollpunkt rechts
 			pC2=&rPoly[i];
 			i++;
 		}
