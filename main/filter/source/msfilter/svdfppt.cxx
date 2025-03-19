@@ -1331,7 +1331,7 @@ SdrObject* SdrEscherImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 			}
 		}
 	}
-	if ( pRet )	// sj: #i38501#, and and taking care of connections to group objects
+	if ( pRet )	// sj: #i38501#, and taking care of connections to group objects
 	{
 		if ( rObjData.nSpFlags & SP_FBACKGROUND )
 		{
