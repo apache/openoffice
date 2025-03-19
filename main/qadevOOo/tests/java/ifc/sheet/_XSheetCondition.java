@@ -54,7 +54,7 @@ public class _XSheetCondition extends MultiMethodTest {
 
     /**
     * Test calls the method, checks and stores returned value. <p>
-    * Has <b> OK </b> status if returned vakue isn't null. <p>
+    * Has <b> OK </b> status if returned value isn't null. <p>
     */
     public void _getFormula1() {
         Formula1 = oObj.getFormula1();
@@ -63,7 +63,7 @@ public class _XSheetCondition extends MultiMethodTest {
 
     /**
     * Test calls the method, checks and stores returned value. <p>
-    * Has <b> OK </b> status if returned vakue isn't null. <p>
+    * Has <b> OK </b> status if returned value isn't null. <p>
     */
     public void _getFormula2() {
         Formula2 = oObj.getFormula2();
@@ -72,7 +72,7 @@ public class _XSheetCondition extends MultiMethodTest {
 
     /**
     * Test calls the method, checks and stores returned value. <p>
-    * Has <b> OK </b> status if returned vakue isn't null. <p>
+    * Has <b> OK </b> status if returned value isn't null. <p>
     */
     public void _getOperator() {
         Operator = oObj.getOperator();
@@ -81,7 +81,7 @@ public class _XSheetCondition extends MultiMethodTest {
 
     /**
     * Test calls the method, checks and stores returned value. <p>
-    * Has <b> OK </b> status if returned vakue isn't null. <p>
+    * Has <b> OK </b> status if returned value isn't null. <p>
     */
     public void _getSourcePosition() {
         SourcePosition = oObj.getSourcePosition();
