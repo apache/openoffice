@@ -1754,23 +1754,23 @@ void SdrModel::Merge(SdrModel& rSourceModel,
 
 					if (bMergeMasterPages)
 					{
-						sal_uInt16 nNeuNum(0xFFFF);
+						sal_uInt16 nNewNum(0xFFFF);
 
 						if(pMasterMap)
 						{
-							nNeuNum = pMasterMap[nMaPgNum];
+							nNewNum = pMasterMap[nMaPgNum];
 						}
 
-						if(nNeuNum != 0xFFFF)
+						if(nNewNum != 0xFFFF)
 						{
 							if(bUndo)
 							{
 								AddUndo(GetSdrUndoFactory().CreateUndoPageChangeMasterPage(*pPg));
 							}
 
-							pPg->TRG_SetMasterPage(*GetMasterPage(nNeuNum));
+							pPg->TRG_SetMasterPage(*GetMasterPage(nNewNum));
 						}
-						DBG_ASSERT(nNeuNum!=0xFFFF,"SdrModel::Merge(): Irgendwas ist krumm beim Mappen der MasterPages");
+						DBG_ASSERT(nNewNum!=0xFFFF,"SdrModel::Merge(): Irgendwas ist krumm beim Mappen der MasterPages");
 					} else {
 						if (nMaPgNum>=nDstMasterPageAnz) {
 							// Aha, die ist ausserbalb des ursprünglichen Bereichs der Masterpages des DstModel
