@@ -106,7 +106,7 @@ namespace ftp {
         rtl::OUString username() const { return m_aUsername; }
 
         /** This returns the URL, but cleaned from
-         *  unnessary ellipses.
+         *  unnecessary ellipses.
          */
 
         rtl::OUString ident(bool withslash,bool internal) const;

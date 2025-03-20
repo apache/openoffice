@@ -238,7 +238,7 @@ void TypeDetection::impl_checkResultsAndAddBestFilter(::comphelper::MediaDescrip
 
     // b)
     // check a preselected document service too.
-    // Then we have to search a suitable filter witin this module.
+    // Then we have to search a suitable filter within this module.
     ::rtl::OUString sDocumentService = rDescriptor.getUnpackedValueOrDefault(
                                             ::comphelper::MediaDescriptor::PROP_DOCUMENTSERVICE(),
                                             ::rtl::OUString());

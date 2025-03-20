@@ -131,7 +131,7 @@ int SAL_CALL main( int argc, char **argv )
 	 */
 	
 	/*
-	 * configures the start-verify handler. Don't need to verify for transfering...
+	 * configures the start-verify handler. Don't need to verify for transferring...
 	 */
 	aSignatureHelper.SetStartVerifySignatureHdl( Link( NULL, denyVerifyHandler ) );
 	aSignatureHelper.StartMission();
@@ -143,7 +143,7 @@ int SAL_CALL main( int argc, char **argv )
 	if ( !bDone )
 		fprintf( stderr, "\nSTATUS MISSION 2: Error in reading Signature!\n" );
 	else
-		fprintf( stdout, "\nSTATUS MISSION 2: Signature successfully transfered!\n" );
+		fprintf( stdout, "\nSTATUS MISSION 2: Signature successfully transferred!\n" );
 	
 	/*
 	 * get all signature information

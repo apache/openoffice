@@ -29,7 +29,7 @@ ANT_LIB*:=$(ANT_HOME)/lib
 ANT_CLASSPATH:=$(ANT_LIB)/xercesImpl.jar$(PATH_SEPERATOR)$(ANT_LIB)/xml-apis.jar$(PATH_SEPERATOR)$(ANT_LIB)/ant.jar
 
 # PATH_SEPERATOR won't work here as it is defined
-# as ; for wondows (all shells)
+# as ; for windows (all shells)
 #PATH!:=$(ANT_HOME)/bin$(PATH_SEPERATOR)$(PATH)
 PATH!:=$(ANT_HOME)/bin:$(PATH)
 

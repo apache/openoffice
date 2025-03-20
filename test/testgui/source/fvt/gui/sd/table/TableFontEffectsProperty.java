@@ -98,7 +98,7 @@ public class TableFontEffectsProperty {
 		effectsPageUnderlineColor.select(1);
 		assertEquals("EffectsPage_Underline_Color isn't the first item", effectsPageUnderlineColor.getSelText(), effectsPageUnderlineColor.getItemText(1));
 
-		// select individual workds
+		// select individual words
 		effectsPageInvidiualWords.check();
 		assertTrue("EffectsPage_InvidiualWords isn't checked", effectsPageInvidiualWords.isChecked());
 

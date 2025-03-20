@@ -208,7 +208,7 @@ SvXMLImportItemMapper::handleSpecialItem(  const SvXMLItemMapEntry& /*rEntry*/,
 											const SvXMLUnitConverter& /*rUnitConverter*/,
                                             const SvXMLNamespaceMap& /*rNamespaceMap*/ )
 {
-	DBG_ERROR( "unsuported special item in xml import" );
+	DBG_ERROR( "unsupported special item in xml import" );
 	return sal_False;
 }
 
@@ -220,7 +220,7 @@ sal_Bool SvXMLImportItemMapper::handleNoItem( const SvXMLItemMapEntry& /*rEntry*
 										   const SvXMLUnitConverter& /*rUnitConverter*/,
                                            const SvXMLNamespaceMap& /*rNamespaceMap*/ )
 {
-	DBG_ERROR( "unsuported no item in xml import" );
+	DBG_ERROR( "unsupported no item in xml import" );
 	return sal_False;
 }
 
