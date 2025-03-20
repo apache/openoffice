@@ -1405,7 +1405,7 @@
 			<!-- end line special attribute-->
 			<!-- polyline and polygon special attribute-->
 			<xsl:if test="$ooshapename='polyline' or $ooshapename='polygon' ">
-				<!-- translate ' '  to in '  tranclate ',' to 'in,' -->
+				<!-- translate ' '  to in '  translate ',' to 'in,' -->
 				<xsl:variable name="points">
 					<xsl:call-template name="points2points">
 						<xsl:with-param name="input_x" select="$x"/>

@@ -72,7 +72,7 @@ public class _XAccessibleAction extends lib.MultiMethodTest {
             log.println("Did action: "+act);
             res &= act ;
         } catch (com.sun.star.lang.IndexOutOfBoundsException ioe) {
-            log.println("Unexepected exception -- FAILED");
+            log.println("Unexpected exception -- FAILED");
             res &= false;
         }
 
@@ -107,7 +107,7 @@ public class _XAccessibleAction extends lib.MultiMethodTest {
                 log.println("Found action: "+desc);
                 res &= desc!=null ;
             } catch (com.sun.star.lang.IndexOutOfBoundsException ioe) {
-                log.println("Unexepected exception -- FAILED");
+                log.println("Unexpected exception -- FAILED");
                 res &= false;
             }
         }
@@ -145,7 +145,7 @@ public class _XAccessibleAction extends lib.MultiMethodTest {
                 }
                 res &= true;
             } catch (com.sun.star.lang.IndexOutOfBoundsException ioe) {
-                log.println("Unexepected exception -- FAILED");
+                log.println("Unexpected exception -- FAILED");
                 res &= false;
             }
         }

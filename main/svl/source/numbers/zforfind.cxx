@@ -358,7 +358,7 @@ sal_Bool ImpSvNumberInputScan::SkipThousands(
         }   // switch
     }   // while
 
-    if (eState == SsGetValue)               // break witth less than 3 digits
+    if (eState == SsGetValue)               // break with less than 3 digits
     {
         if ( nCounter )
             rSymbol.Erase( rSymbol.Len() - nCounter, nCounter );

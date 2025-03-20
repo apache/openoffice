@@ -552,7 +552,7 @@ void SwNumberTreeNode::AddChild( SwNumberTreeNode * pChild,
             mChildren.upper_bound(pChild);
 
         ASSERT(! (aInsertDeepIt != mChildren.end() &&
-                  (*aInsertDeepIt)->IsPhantom()), " unexspected phantom");
+                  (*aInsertDeepIt)->IsPhantom()), " unexpected phantom");
 
 
         if (aInsertDeepIt == mChildren.begin())
@@ -631,7 +631,7 @@ void SwNumberTreeNode::AddChild( SwNumberTreeNode * pChild,
                         break;
                     }
                 }
-                // assure that unnessary created phantoms at <pChild> are deleted.
+                // assure that unnecessary created phantoms at <pChild> are deleted.
                 pChild->ClearObsoletePhantoms();
                 // <--
 

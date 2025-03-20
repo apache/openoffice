@@ -3603,7 +3603,7 @@ Size SwAccessibleMap::GetPreViewPageSize( sal_uInt16 _nPrevwPageNum ) const
     }
 }
 
-/** method to build up a new data structure of the accessible pararaphs,
+/** method to build up a new data structure of the accessible paragraphs,
     which have a selection
 
     OD 2005-12-13 #i27301#

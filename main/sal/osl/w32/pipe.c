@@ -379,7 +379,7 @@ oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
 
 	if (IS_NT)
 	{
-		DWORD nBytesTransfered;
+		DWORD nBytesTransferred;
 		rtl_uString* path = NULL;
 		rtl_uString* temp = NULL;
 
@@ -403,7 +403,7 @@ oslPipe SAL_CALL osl_acceptPipe(oslPipe pPipe)
 			case ERROR_IO_PENDING:		// This is normal if not client is connected yet
 			case ERROR_MORE_DATA:		// Should not happen
 				// blocking call to accept
-				if( !GetOverlappedResult( pPipe->m_File, &os, &nBytesTransfered, TRUE ) )
+				if( !GetOverlappedResult( pPipe->m_File, &os, &nBytesTransferred, TRUE ) )
 				{
 					// Possible error could be that between ConnectNamedPipe and GetOverlappedResult a connect
 					// took place.

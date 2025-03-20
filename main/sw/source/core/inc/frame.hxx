@@ -961,7 +961,7 @@ public:
     // <--
 
     // NEW TABELS
-    // Some functions for covered/covering table cells. This way unnessessary
+    // Some functions for covered/covering table cells. This way unnecessary
     // includes can be avoided
     bool IsLeaveUpperAllowed() const;
     bool IsCoveredCell() const;
