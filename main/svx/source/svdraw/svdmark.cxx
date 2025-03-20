@@ -31,7 +31,7 @@
 #include <svx/svdopath.hxx> // zur Abschaltung
 #include <svx/svdogrp.hxx> // des Cache bei
 #include <svx/svdorect.hxx> // GetMarkDescription
-#include "svx/svdstr.hrc" // Name from resource
+#include "svx/svdstr.hrc" // Names from resource
 #include "svx/svdglob.hxx" // StringCache
 
 #include <svx/obj3d.hxx>
@@ -493,9 +493,9 @@ void SdrMarkList::InsertEntry(const SdrMark& rMark, sal_Bool bChkSort)
 	{
 		SdrMark* pLast = GetMark(sal_uLong(nAnz - 1));
 		const SdrObject* pLastObj = pLast->GetMarkedSdrObj();
-		const SdrObject* pNeuObj = rMark.GetMarkedSdrObj();
+		const SdrObject* pNewObj = rMark.GetMarkedSdrObj();
 
-		if(pLastObj == pNeuObj)
+		if(pLastObj == pNewObj)
 		{
 			// Aha, den gibt es schon
 			// Con1/Con2 Merging
@@ -512,12 +512,12 @@ void SdrMarkList::InsertEntry(const SdrMark& rMark, sal_Bool bChkSort)
 
 			// und nun checken, ob die Sortierung noch ok ist
 			const SdrObjList* pLastOL = pLastObj!=0L ? pLastObj->GetObjList() : 0L;
-			const SdrObjList* pNeuOL = pNeuObj !=0L ? pNeuObj ->GetObjList() : 0L;
+			const SdrObjList* pNeuOL = pNewObj !=0L ? pNewObj ->GetObjList() : 0L;
 
 			if(pLastOL == pNeuOL)
 			{
 				const sal_uLong nLastNum(pLastObj!=0L ? pLastObj->GetOrdNum() : 0);
-				const sal_uLong nNewNum(pNeuObj !=0L ? pNeuObj ->GetOrdNum() : 0);
+				const sal_uLong nNewNum(pNewObj !=0L ? pNewObj ->GetOrdNum() : 0);
 
 				if(nNewNum < nLastNum)
 				{

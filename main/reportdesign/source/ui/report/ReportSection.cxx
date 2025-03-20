@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #include "precompiled_rptui.hxx"
 #include "ReportSection.hxx"
@@ -80,7 +79,7 @@ sal_Int32 lcl_getOverlappedControlColor(/*const uno::Reference <lang::XMultiServ
 }
 //------------------------------------------------------------------------------
 DBG_NAME( rpt_OReportSection )
-OReportSection::OReportSection(OSectionWindow* _pParent,const uno::Reference< report::XSection >& _xSection) 
+OReportSection::OReportSection(OSectionWindow* _pParent,const uno::Reference< report::XSection >& _xSection)
 : Window(_pParent,WB_DIALOGCONTROL)
 , ::comphelper::OPropertyChangeListener(m_aMutex)
 , DropTargetHelper(this)
@@ -103,7 +102,7 @@ OReportSection::OReportSection(OSectionWindow* _pParent,const uno::Reference< re
     SetParentClipMode( PARENTCLIPMODE_CLIP );
     EnableChildTransparentMode( sal_False );
     SetPaintTransparent( sal_False );
-   
+
 	try
 	{
 		fill();
@@ -124,11 +123,11 @@ OReportSection::~OReportSection()
 	//m_pModel->GetUndoEnv().RemoveSection(m_xSection.get());
 	if ( m_pMulti.is() )
     	m_pMulti->dispose();
-    
+
 	if ( m_pReportListener.is() )
 		m_pReportListener->dispose();
 	m_pFunc = ::std::auto_ptr<DlgEdFunc>();
-    
+
 	{
 		::std::auto_ptr<OSectionView> aTemp( m_pView);
 		if ( m_pView )
@@ -216,7 +215,7 @@ void OReportSection::fill()
     const Fraction aY(aGridSizeFine.B());
     m_pView->SetSnapGridWidth(aX, aY);
 
-	m_pView->SetGridSnap( pDesignView->isGridSnap() );	
+	m_pView->SetGridSnap( pDesignView->isGridSnap() );
 	m_pView->SetGridFront( sal_False );
 	m_pView->SetDragStripes( sal_True );
 	m_pView->SetPageVisible();
@@ -234,7 +233,7 @@ void OReportSection::fill()
 // LLA: TODO
 //  m_pPage->SetUppBorder(-10000);
 
-	m_pView->SetDesignMode( sal_True );	
+	m_pView->SetDesignMode( sal_True );
 
 	m_pView->StartListening( *m_pModel  );
 	/*Resize();*/
@@ -274,13 +273,13 @@ void OReportSection::Paste(const uno::Sequence< beans::NamedValue >& _aAllreadyC
 						SvxShape* pShape = SvxShape::getImplementation( *pCopiesIter );
                         SdrObject* pObject = pShape ? pShape->GetSdrObject() : NULL;
 						if ( pObject )
-						{   
-                            SdrObject* pNeuObj = pObject->Clone();
+						{
+                            SdrObject* pNewObj = pObject->Clone();
 
-                            pNeuObj->SetPage( m_pPage );
-							pNeuObj->SetModel( m_pModel.get() );
+                            pNewObj->SetPage( m_pPage );
+							pNewObj->SetModel( m_pModel.get() );
 			                SdrInsertReason aReason(SDRREASON_VIEWCALL);
-			                m_pPage->InsertObject(pNeuObj,CONTAINER_APPEND,&aReason);
+			                m_pPage->InsertObject(pNewObj,CONTAINER_APPEND,&aReason);
 
 							Rectangle aRet(VCLPoint((*pCopiesIter)->getPosition()),VCLSize((*pCopiesIter)->getSize()));
 							aRet.setHeight(aRet.getHeight() + 1);
@@ -288,16 +287,16 @@ void OReportSection::Paste(const uno::Sequence< beans::NamedValue >& _aAllreadyC
 							bool bOverlapping = true;
 							while ( bOverlapping )
 							{
-								bOverlapping = isOver(aRet,*m_pPage,*m_pView,true,pNeuObj) != NULL;
+								bOverlapping = isOver(aRet,*m_pPage,*m_pView,true,pNewObj) != NULL;
 								if ( bOverlapping )
 								{
 									aRet.Move(0,aRet.getHeight()+1);
-                                    pNeuObj->SetLogicRect(aRet);
+                                    pNewObj->SetLogicRect(aRet);
 									//(*pCopiesIter)->setPositionY(aRet.Top());
 								}
 							}
-							m_pView->AddUndo( m_pView->GetModel()->GetSdrUndoFactory().CreateUndoNewObject( *pNeuObj ) );
-							m_pView->MarkObj( pNeuObj, m_pView->GetSdrPageView() );
+							m_pView->AddUndo( m_pView->GetModel()->GetSdrUndoFactory().CreateUndoNewObject( *pNewObj ) );
+							m_pView->MarkObj( pNewObj, m_pView->GetSdrPageView() );
                             if ( m_xSection.is() && (static_cast<sal_uInt32>(aRet.getHeight() + aRet.Top()) > m_xSection->getHeight()) )
 			                    m_xSection->setHeight(aRet.getHeight() + aRet.Top());
 						}
@@ -338,16 +337,16 @@ void OReportSection::SetMode( DlgEdMode eNewMode )
         m_pFunc->setOverlappedControlColor(lcl_getOverlappedControlColor( ) );
         m_pModel->SetReadOnly(eNewMode == RPTUI_READONLY);
         m_eMode = eNewMode;
-	}	
+	}
 }
 // -----------------------------------------------------------------------------
 void OReportSection::Copy(uno::Sequence< beans::NamedValue >& _rAllreadyCopiedObjects)
-{	
+{
     Copy(_rAllreadyCopiedObjects,false);
 }
 //----------------------------------------------------------------------------
 void OReportSection::Copy(uno::Sequence< beans::NamedValue >& _rAllreadyCopiedObjects,bool _bEraseAnddNoClone)
-{	
+{
     OSL_ENSURE(m_xSection.is(),"Why is the section here NULL!");
 	if( !m_pView->AreObjectsMarked() || !m_xSection.is() )
 		return;
@@ -363,7 +362,7 @@ void OReportSection::Copy(uno::Sequence< beans::NamedValue >& _rAllreadyCopiedOb
     aCopies.reserve(nMark);
 
     SdrUndoFactory& rUndo = m_pView->GetModel()->GetSdrUndoFactory();
-    
+
 	for( sal_uLong i = nMark; i > 0; )
 	{
         --i;
@@ -373,8 +372,8 @@ void OReportSection::Copy(uno::Sequence< beans::NamedValue >& _rAllreadyCopiedOb
 		{
             try
             {
-                SdrObject* pNeuObj = pSdrObject->Clone();
-                aCopies.push_back(uno::Reference<report::XReportComponent>(pNeuObj->getUnoShape(),uno::UNO_QUERY));
+                SdrObject* pNewObj = pSdrObject->Clone();
+                aCopies.push_back(uno::Reference<report::XReportComponent>(pNewObj->getUnoShape(),uno::UNO_QUERY));
                 if ( _bEraseAnddNoClone )
                 {
                     m_pView->AddUndo( rUndo.CreateUndoDeleteObject( *pSdrObject ) );
@@ -436,13 +435,13 @@ void OReportSection::SelectAll(const sal_uInt16 _nObjectType)
         {
             m_pView->UnmarkAll();
             SdrObjListIter aIter(*m_pPage,IM_DEEPNOGROUPS);
-            SdrObject* pObjIter = NULL;        
+            SdrObject* pObjIter = NULL;
             while( (pObjIter = aIter.Next()) != NULL )
             {
                 if ( pObjIter->GetObjIdentifier() == _nObjectType )
                     m_pView->MarkObj( pObjIter, m_pView->GetSdrPageView() );
             }
-        }		
+        }
     }
 }
 void lcl_insertMenuItemImages(PopupMenu& rContextMenu,OReportController& rController,const uno::Reference< report::XReportDefinition>& _xReportDefinition,uno::Reference<frame::XFrame>& _rFrame,sal_Bool _bHiContrast)
@@ -490,9 +489,9 @@ void OReportSection::Command( const CommandEvent& _rCEvt )
             sal_Bool bHiContrast = rSettings.GetHighContrastMode();
             OReportController& rController = m_pParent->getViewsWindow()->getView()->getReportView()->getController();
             uno::Reference<frame::XFrame> xFrame = rController.getFrame();
-            PopupMenu aContextMenu( ModuleRes( RID_MENU_REPORT ) );			
+            PopupMenu aContextMenu( ModuleRes( RID_MENU_REPORT ) );
             uno::Reference< report::XReportDefinition> xReportDefinition = getSection()->getReportDefinition();
-			
+
             lcl_insertMenuItemImages(aContextMenu,rController,xReportDefinition,xFrame,bHiContrast);
 
 			Point aPos = _rCEvt.GetMousePosPixel();
@@ -532,7 +531,7 @@ void OReportSection::_propertyChanged(const beans::PropertyChangeEvent& _rEvent)
             const sal_Int32 nLeftMargin  = getStyleProperty<sal_Int32>(xReportDefinition,PROPERTY_LEFTMARGIN);
             const sal_Int32 nRightMargin = getStyleProperty<sal_Int32>(xReportDefinition,PROPERTY_RIGHTMARGIN);
             const sal_Int32 nPaperWidth  = getStyleProperty<awt::Size>(xReportDefinition,PROPERTY_PAPERSIZE).Width;
-            
+
             if ( _rEvent.PropertyName == PROPERTY_LEFTMARGIN )
             {
 	            m_pPage->SetLftBorder(nLeftMargin);
@@ -552,7 +551,7 @@ void OReportSection::_propertyChanged(const beans::PropertyChangeEvent& _rEvent)
             impl_adjustObjectSizePosition(nPaperWidth,nLeftMargin,nRightMargin);
             m_pParent->Invalidate(INVALIDATE_UPDATE | INVALIDATE_TRANSPARENT);
 		}
-	}	
+
 }
 void OReportSection::impl_adjustObjectSizePosition(sal_Int32 i_nPaperWidth,sal_Int32 i_nLeftMargin,sal_Int32 i_nRightMargin)
 {
@@ -593,7 +592,7 @@ void OReportSection::impl_adjustObjectSizePosition(sal_Int32 i_nPaperWidth,sal_I
                 }
                 if ( aPos.Y < 0 )
                     aPos.Y = 0;
-                if ( bChanged ) 
+                if ( bChanged )
                 {
                     xReportComponent->setPosition(aPos);
                     correctOverlapping(pObject,*this,false);
@@ -622,29 +621,29 @@ sal_Bool OReportSection::handleKeyEvent(const KeyEvent& _rEvent)
 // -----------------------------------------------------------------------------
 void OReportSection::deactivateOle()
 {
-    if ( m_pFunc.get() )
+	if ( m_pFunc.get() )
 		m_pFunc->deactivateOle(true);
 }
 // -----------------------------------------------------------------------------
 void OReportSection::createDefault(const ::rtl::OUString& _sType)
 {
-    SdrObject* pObj = m_pView->GetCreateObj();//rMarkList.GetMark(0)->GetObj();
-    if ( !pObj )
-        return;
-    createDefault(_sType,pObj);
+	SdrObject* pObj = m_pView->GetCreateObj();//rMarkList.GetMark(0)->GetObj();
+	if ( !pObj )
+		return;
+	createDefault(_sType,pObj);
 }
 // -----------------------------------------------------------------------------
 void OReportSection::createDefault(const ::rtl::OUString& _sType,SdrObject* _pObj)
 {
-    sal_Bool bAttributesAppliedFromGallery = sal_False;
+	sal_Bool bAttributesAppliedFromGallery = sal_False;
 
 	if ( GalleryExplorer::GetSdrObjCount( GALLERY_THEME_POWERPOINT ) )
 	{
 		std::vector< rtl::OUString > aObjList;
 		if ( GalleryExplorer::FillObjListTitle( GALLERY_THEME_POWERPOINT, aObjList ) )
 		{
-            std::vector< rtl::OUString >::iterator aIter = aObjList.begin();
-            std::vector< rtl::OUString >::iterator aEnd = aObjList.end();
+			std::vector< rtl::OUString >::iterator aIter = aObjList.begin();
+			std::vector< rtl::OUString >::iterator aEnd = aObjList.end();
 			for (sal_uInt32 i=0 ; aIter != aEnd; ++aIter,++i)
 			{
 				if ( aIter->equalsIgnoreAsciiCase( _sType ) )
@@ -704,10 +703,10 @@ uno::Reference< report::XReportComponent > OReportSection::getCurrentControlMode
 	if ( m_pView )
 	{
 		const SdrMarkList& rMarkList = m_pView->GetMarkedObjectList();
-        sal_uInt32 nMarkCount = rMarkList.GetMarkCount();
+		sal_uInt32 nMarkCount = rMarkList.GetMarkCount();
 
-        if ( nMarkCount == 1 )
-        {
+		if ( nMarkCount == 1 )
+		{
 			SdrObject* pDlgEdObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
 			OObjectBase* pObj = dynamic_cast<OObjectBase*>(pDlgEdObj);
 			if ( pObj )
@@ -719,34 +718,34 @@ uno::Reference< report::XReportComponent > OReportSection::getCurrentControlMode
 // -----------------------------------------------------------------------------
 void OReportSection::fillControlModelSelection(::std::vector< uno::Reference< uno::XInterface > >& _rSelection) const
 {
-    if ( m_pView )
+	if ( m_pView )
 	{
 		const SdrMarkList& rMarkList = m_pView->GetMarkedObjectList();
-        const sal_uInt32 nMarkCount = rMarkList.GetMarkCount();
+		const sal_uInt32 nMarkCount = rMarkList.GetMarkCount();
 
-        for (sal_uInt32 i=0; i < nMarkCount; ++i)
-        {
+		for (sal_uInt32 i=0; i < nMarkCount; ++i)
+		{
 			const SdrObject* pDlgEdObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
 			const OObjectBase* pObj = dynamic_cast<const OObjectBase*>(pDlgEdObj);
 			if ( pObj )
-                _rSelection.push_back(pObj->getReportComponent());
+				_rSelection.push_back(pObj->getReportComponent());
 		}
 	}
 }
 // -----------------------------------------------------------------------------
 sal_Int8 OReportSection::AcceptDrop( const AcceptDropEvent& _rEvt )
 {
-    OSL_TRACE("AcceptDrop::DropEvent.Action %i\n", _rEvt.mnAction);
+	OSL_TRACE("AcceptDrop::DropEvent.Action %i\n", _rEvt.mnAction);
 
-    ::Point aDropPos(_rEvt.maPosPixel);
-    const MouseEvent aMouseEvt(aDropPos);
-    if ( m_pFunc->isOverlapping(aMouseEvt) )
-        return DND_ACTION_NONE;
+	::Point aDropPos(_rEvt.maPosPixel);
+	const MouseEvent aMouseEvt(aDropPos);
+	if ( m_pFunc->isOverlapping(aMouseEvt) )
+		return DND_ACTION_NONE;
 
-    if ( _rEvt.mnAction == DND_ACTION_COPY ||
-         _rEvt.mnAction == DND_ACTION_LINK
-         )
-    {
+	if ( _rEvt.mnAction == DND_ACTION_COPY ||
+		 _rEvt.mnAction == DND_ACTION_LINK
+		)
+	{
 		if (!m_pParent) return DND_ACTION_NONE;
 		sal_uInt16 nCurrentPosition = 0;
 		nCurrentPosition = m_pParent->getViewsWindow()->getPosition(m_pParent);
@@ -775,7 +774,7 @@ sal_Int8 OReportSection::AcceptDrop( const AcceptDropEvent& _rEvt )
         if (   ::svx::OMultiColumnTransferable::canExtractDescriptor(rFlavors)
             || ::svx::OColumnTransferable::canExtractColumnDescriptor(rFlavors, CTF_FIELD_DESCRIPTOR | CTF_CONTROL_EXCHANGE | CTF_COLUMN_DESCRIPTOR) )
             return _rEvt.mnAction;
-        
+
         const sal_Int8 nDropOption = ( OReportExchange::canExtract(rFlavors) ) ? DND_ACTION_COPYMOVE : DND_ACTION_NONE;
 
         return nDropOption;
@@ -823,15 +822,15 @@ sal_Int8 OReportSection::ExecuteDrop( const ExecuteDropEvent& _rEvt )
         if ( !bMultipleFormat )
         {
             ::svx::ODataAccessDescriptor aDescriptor = ::svx::OColumnTransferable::extractColumnDescriptor(aDropped);
-		    
+
             aValues.realloc(1);
             aValues[0].Value <<= aDescriptor.createPropertyValueSequence();
         } // if ( !bMultipleFormat )
-        else 
+        else
             aValues = ::svx::OMultiColumnTransferable::extractDescriptor(aDropped);
-        
+
         beans::PropertyValue* pIter = aValues.getArray();
-        beans::PropertyValue* pEnd  = pIter + aValues.getLength();
+        beans::PropertyValue* pEnd = pIter + aValues.getLength();
         for(;pIter != pEnd; ++pIter)
         {
             uno::Sequence<beans::PropertyValue> aCurrent;
@@ -842,7 +841,7 @@ sal_Int8 OReportSection::ExecuteDrop( const ExecuteDropEvent& _rEvt )
                 aCurrent.realloc(nLength + 3);
                 aCurrent[nLength].Name = PROPERTY_POSITION;
                 aCurrent[nLength++].Value <<= AWTPoint(aDropPos);
-                // give also the DND Action (Shift|Ctrl) Key to really say what we want 
+                // give also the DND Action (Shift|Ctrl) Key to really say what we want
                 aCurrent[nLength].Name = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("DNDAction"));
                 aCurrent[nLength++].Value <<= _rEvt.mnAction;
 
@@ -850,26 +849,27 @@ sal_Int8 OReportSection::ExecuteDrop( const ExecuteDropEvent& _rEvt )
                 aCurrent[nLength++].Value <<= getSection();
                 pIter->Value <<= aCurrent;
             }
-        }
+		}
 
-        // we use this way to create undo actions
-        OReportController& rController = m_pParent->getViewsWindow()->getView()->getReportView()->getController();
+		// we use this way to create undo actions
+		OReportController& rController = m_pParent->getViewsWindow()->getView()->getReportView()->getController();
 		rController.executeChecked(SID_ADD_CONTROL_PAIR,aValues);
-        nDropOption = DND_ACTION_COPY;
-    }
+		nDropOption = DND_ACTION_COPY;
+	}
 	return nDropOption;
 }
 // -----------------------------------------------------------------------------
 void OReportSection::stopScrollTimer()
 {
-    m_pFunc->stopScrollTimer();
+	m_pFunc->stopScrollTimer();
 }
 // -----------------------------------------------------------------------------
 bool OReportSection::isUiActive() const
 {
-    return m_pFunc->isUiActive();
+	return m_pFunc->isUiActive();
 }
 // -----------------------------------------------------------------------------
 // =============================================================================
 }
-// =============================================================================
+
+/* vim: set noet sw=4 ts=4: */
