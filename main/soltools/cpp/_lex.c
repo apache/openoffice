@@ -604,7 +604,7 @@ int
 {
     int n = 1;
 
-	/* skip pending wihite spaces */
+	/* skip pending white spaces */
 	while ((s->inp[n] == ' ') || (s->inp[n] == '\t'))
 	{
 		n++;

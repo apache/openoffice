@@ -149,13 +149,13 @@ namespace dbaui
 
 		/** returns the stripped database name.
 			@return
-				The stripped database name either the registered naem or if it is a file url the last segment.
+				The stripped database name either the registered name or if it is a file url the last segment.
 		*/
 		::rtl::OUString getStrippedDatabaseName() const;
 
 		/** return the element type for given container
 			@param	_xContainer	The container where the element type has to be found
-			@return	the element type coressponding to the given container
+			@return	the element type corresponding to the given container
 		*/
 		ElementType getElementType(const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainer >& _xContainer) const;
 
@@ -280,7 +280,7 @@ namespace dbaui
 			@param	_bMove
 				if <TRUE/> the name of the content must be inserted without any change, otherwise not.
 			@return
-				<TRUE/> if the paste opertions was successful, otherwise <FALSE/>.
+				<TRUE/> if the paste operations was successful, otherwise <FALSE/>.
 		*/
 		sal_Bool paste( ElementType _eType,const ::svx::ODataAccessDescriptor& _rPasteData ,const String& _sParentFolder = String(),sal_Bool _bMove = sal_False);
 
@@ -304,9 +304,9 @@ namespace dbaui
 		*/
 		void addContainerListener(const ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess>& _xCollection);
 
-		/** opens a uno dialog withthe currently selected data source as initialize argument
+		/** opens a uno dialog with the currently selected data source as initialize argument
 			@param	_sServiceName
-				The serivce name of the dialog to be executed.
+				The service name of the dialog to be executed.
 		*/
 		void openDialog(const ::rtl::OUString& _sServiceName);
 
@@ -348,14 +348,14 @@ namespace dbaui
 			@param	_bMove
 				if <TRUE/> the name of the content must be inserted without any change, otherwise not.
 			@return
-				<TRUE/> if the insert opertions was successful, otherwise <FALSE/>.
+				<TRUE/> if the insert operations was successful, otherwise <FALSE/>.
 		*/
 		sal_Bool insertHierachyElement(	 ElementType _eType
 									,const String& _sParentFolder
 									,sal_Bool _bCollection = sal_True
 									,const ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XContent>& _xContent = ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XContent>()
 									,sal_Bool _bMove = sal_False);
-		/** checks if delete command or rename comamnd is allowed
+		/** checks if delete command or rename command is allowed
 			@param	_eType
 				The element type.
 			@param	_bDelete

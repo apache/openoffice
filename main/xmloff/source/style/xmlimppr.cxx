@@ -357,7 +357,7 @@ sal_Bool SvXMLImportPropertyMapper::handleSpecialItem(
 		const SvXMLUnitConverter& rUnitConverter,
 		const SvXMLNamespaceMap& rNamespaceMap ) const
 {
-	OSL_ENSURE( mxNextMapper.is(), "unsuported special item in xml import" );
+	OSL_ENSURE( mxNextMapper.is(), "unsupported special item in xml import" );
 	if( mxNextMapper.is() )
 		return mxNextMapper->handleSpecialItem( rProperty, rProperties, rValue,
 											   rUnitConverter, rNamespaceMap );
