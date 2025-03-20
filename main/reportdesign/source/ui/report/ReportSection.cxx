@@ -112,17 +112,17 @@ OReportSection::OReportSection(OSectionWindow* _pParent,const uno::Reference< re
 		OSL_ENSURE(0,"Exception catched!");
 	}
 
-    m_pFunc.reset(new DlgEdFuncSelect( this ));
-    m_pFunc->setOverlappedControlColor(lcl_getOverlappedControlColor( /* m_pParent->getViewsWindow()->getView()->getReportView()->getController().getORB() */ ) );
+	m_pFunc.reset(new DlgEdFuncSelect( this ));
+	m_pFunc->setOverlappedControlColor(lcl_getOverlappedControlColor( /* m_pParent->getViewsWindow()->getView()->getReportView()->getController().getORB() */ ) );
 }
 //------------------------------------------------------------------------------
 OReportSection::~OReportSection()
 {
 	DBG_DTOR( rpt_OReportSection,NULL);
-    m_pPage = NULL;
+	m_pPage = NULL;
 	//m_pModel->GetUndoEnv().RemoveSection(m_xSection.get());
 	if ( m_pMulti.is() )
-    	m_pMulti->dispose();
+		m_pMulti->dispose();
 
 	if ( m_pReportListener.is() )
 		m_pReportListener->dispose();
@@ -134,42 +134,42 @@ OReportSection::~OReportSection()
 			m_pView->EndListening( *m_pModel );
 		m_pView = NULL;
 	}
-    /*m_pModel->DeletePage(m_pPage->GetPageNum());*/
+	/*m_pModel->DeletePage(m_pPage->GetPageNum());*/
 }
 //------------------------------------------------------------------------------
 void OReportSection::Paint( const Rectangle& rRect )
 {
-    Window::Paint(rRect);
+	Window::Paint(rRect);
 
 	if ( m_pView && m_nPaintEntranceCount == 0)
 	{
-        ++m_nPaintEntranceCount;
-         // repaint, get PageView and prepare Region
-        SdrPageView* pPgView = m_pView->GetSdrPageView();
-        const Region aPaintRectRegion(rRect);
+		++m_nPaintEntranceCount;
+		// repaint, get PageView and prepare Region
+		SdrPageView* pPgView = m_pView->GetSdrPageView();
+		const Region aPaintRectRegion(rRect);
 
-        // #i74769#
-        SdrPaintWindow* pTargetPaintWindow = 0;
+		// #i74769#
+		SdrPaintWindow* pTargetPaintWindow = 0;
 
-        // mark repaint start
-        if(pPgView)
-        {
-            pTargetPaintWindow = pPgView->GetView().BeginDrawLayers(this, aPaintRectRegion);
-            OSL_ENSURE(pTargetPaintWindow, "BeginDrawLayers: Got no SdrPaintWindow (!)");
-            // draw background self using wallpaper
-            OutputDevice& rTargetOutDev = pTargetPaintWindow->GetTargetOutputDevice();
-            rTargetOutDev.DrawWallpaper(rRect, Wallpaper(pPgView->GetApplicationDocumentColor()));
-        }
+		// mark repaint start
+		if(pPgView)
+		{
+			pTargetPaintWindow = pPgView->GetView().BeginDrawLayers(this, aPaintRectRegion);
+			OSL_ENSURE(pTargetPaintWindow, "BeginDrawLayers: Got no SdrPaintWindow (!)");
+			// draw background self using wallpaper
+			OutputDevice& rTargetOutDev = pTargetPaintWindow->GetTargetOutputDevice();
+			rTargetOutDev.DrawWallpaper(rRect, Wallpaper(pPgView->GetApplicationDocumentColor()));
+		}
 
-        // do paint (unbuffered) and mark repaint end
-        if(pPgView)
-        {
-            pPgView->DrawLayer(0, this);
-            pPgView->GetView().EndDrawLayers(*pTargetPaintWindow, true);
-        }
+		// do paint (unbuffered) and mark repaint end
+		if(pPgView)
+		{
+			pPgView->DrawLayer(0, this);
+			pPgView->GetView().EndDrawLayers(*pTargetPaintWindow, true);
+		}
 
 		m_pView->CompleteRedraw(this,aPaintRectRegion);
-        --m_nPaintEntranceCount;
+		--m_nPaintEntranceCount;
 	}
 }
 //------------------------------------------------------------------------------
@@ -188,8 +188,8 @@ void OReportSection::fill()
 
 	m_pReportListener = addStyleListener(m_xSection->getReportDefinition(),this);
 
-    m_pModel = m_pParent->getViewsWindow()->getView()->getReportView()->getController().getSdrModel();
-    m_pPage = m_pModel->getPage(m_xSection);
+	m_pModel = m_pParent->getViewsWindow()->getView()->getReportView()->getController().getSdrModel();
+	m_pPage = m_pModel->getPage(m_xSection);
 
 	m_pView = new OSectionView( m_pModel.get(), this, m_pParent->getViewsWindow()->getView() );
 
@@ -551,29 +551,29 @@ void OReportSection::_propertyChanged(const beans::PropertyChangeEvent& _rEvent)
             impl_adjustObjectSizePosition(nPaperWidth,nLeftMargin,nRightMargin);
             m_pParent->Invalidate(INVALIDATE_UPDATE | INVALIDATE_TRANSPARENT);
 		}
-
+	}
 }
 void OReportSection::impl_adjustObjectSizePosition(sal_Int32 i_nPaperWidth,sal_Int32 i_nLeftMargin,sal_Int32 i_nRightMargin)
 {
-    try
-    {
-	    sal_Int32 nRightBorder = i_nPaperWidth - i_nRightMargin;
-        const sal_Int32 nCount = m_xSection->getCount();
-        for (sal_Int32 i = 0; i < nCount; ++i)
-        {
-            bool bChanged = false;
-            uno::Reference< report::XReportComponent> xReportComponent(m_xSection->getByIndex(i),uno::UNO_QUERY_THROW);
-            awt::Point aPos = xReportComponent->getPosition();
-            awt::Size aSize = xReportComponent->getSize();
-            SvxShape* pShape = SvxShape::getImplementation( xReportComponent );
-            SdrObject* pObject = pShape ? pShape->GetSdrObject() : NULL;
-            if ( pObject )
-            {
+	try
+	{
+		sal_Int32 nRightBorder = i_nPaperWidth - i_nRightMargin;
+		const sal_Int32 nCount = m_xSection->getCount();
+		for (sal_Int32 i = 0; i < nCount; ++i)
+		{
+			bool bChanged = false;
+			uno::Reference< report::XReportComponent> xReportComponent(m_xSection->getByIndex(i),uno::UNO_QUERY_THROW);
+			awt::Point aPos = xReportComponent->getPosition();
+			awt::Size aSize = xReportComponent->getSize();
+			SvxShape* pShape = SvxShape::getImplementation( xReportComponent );
+			SdrObject* pObject = pShape ? pShape->GetSdrObject() : NULL;
+			if ( pObject )
+			{
                 OObjectBase* pBase = dynamic_cast<OObjectBase*>(pObject);
                 pBase->EndListening(sal_False);
                 if ( aPos.X < i_nLeftMargin )
                 {
-                    aPos.X  = i_nLeftMargin;
+                    aPos.X = i_nLeftMargin;
                     bChanged = true;
                 }
                 if ( (aPos.X + aSize.Width) > nRightBorder )
@@ -599,19 +599,19 @@ void OReportSection::impl_adjustObjectSizePosition(sal_Int32 i_nPaperWidth,sal_I
                     Rectangle aRet(VCLPoint(xReportComponent->getPosition()),VCLSize(xReportComponent->getSize()));
 					aRet.setHeight(aRet.getHeight() + 1);
 					aRet.setWidth(aRet.getWidth() + 1);
-                    if ( m_xSection.is() && (static_cast<sal_uInt32>(aRet.getHeight() + aRet.Top()) > m_xSection->getHeight()) )
-			            m_xSection->setHeight(aRet.getHeight() + aRet.Top());
+					if ( m_xSection.is() && (static_cast<sal_uInt32>(aRet.getHeight() + aRet.Top()) > m_xSection->getHeight()) )
+						 m_xSection->setHeight(aRet.getHeight() + aRet.Top());
 
                     pObject->RecalcBoundRect();
                 }
                 pBase->StartListening();
-            }
-        } // for (sal_Int32 i = 0; i < nCount; ++i)
-    }
-    catch(uno::Exception)
-    {
-        OSL_ENSURE(0,"Exception caught: OReportSection::_propertyChanged(");
-    }
+			}
+		} // for (sal_Int32 i = 0; i < nCount; ++i)
+	}
+	catch(uno::Exception)
+	{
+		OSL_ENSURE(0,"Exception caught: OReportSection::_propertyChanged(");
+	}
 }
 //------------------------------------------------------------------------------
 sal_Bool OReportSection::handleKeyEvent(const KeyEvent& _rEvent)
