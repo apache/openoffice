@@ -38,7 +38,7 @@
 #include <svx/svdmark.hxx>
 #include <svx/svdocapt.hxx>
 #include <svx/svdpagv.hxx>
-#include "svx/svdstr.hrc" // Namen aus der Resource
+#include "svx/svdstr.hrc" // Names from resource
 #include "svx/svdglob.hxx" // StringCache
 #include <svx/svddrgv.hxx>
 #include <svx/svdundo.hxx>
@@ -3187,26 +3187,26 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 		if (nSA==0)
 			aPnt=GetSnapPos(aPnt);
 
-		Point aNeuCenter(aMarkCenter.X(),aStart.Y());
+		Point aNewCenter(aMarkCenter.X(),aStart.Y());
 
 		if (bVertical)
 		{
-			aNeuCenter.X()=aStart.X();
-			aNeuCenter.Y()=aMarkCenter.Y();
+			aNewCenter.X()=aStart.X();
+			aNewCenter.Y()=aMarkCenter.Y();
 		}
 
 		if (!getSdrDragView().IsCrookAtCenter())
 		{
 			switch (GetDragHdlKind())
 			{
-				case HDL_UPLFT: aNeuCenter.X()=aMarkRect.Right();  bLft=true; break;
-				case HDL_UPPER: aNeuCenter.Y()=aMarkRect.Bottom(); bUpr=true; break;
-				case HDL_UPRGT: aNeuCenter.X()=aMarkRect.Left();   bRgt=true; break;
-				case HDL_LEFT : aNeuCenter.X()=aMarkRect.Right();  bLft=true; break;
-				case HDL_RIGHT: aNeuCenter.X()=aMarkRect.Left();   bRgt=true; break;
-				case HDL_LWLFT: aNeuCenter.X()=aMarkRect.Right();  bLft=true; break;
-				case HDL_LOWER: aNeuCenter.Y()=aMarkRect.Top();    bLwr=true; break;
-				case HDL_LWRGT: aNeuCenter.X()=aMarkRect.Left();   bRgt=true; break;
+				case HDL_UPLFT: aNewCenter.X()=aMarkRect.Right();  bLft=true; break;
+				case HDL_UPPER: aNewCenter.Y()=aMarkRect.Bottom(); bUpr=true; break;
+				case HDL_UPRGT: aNewCenter.X()=aMarkRect.Left();   bRgt=true; break;
+				case HDL_LEFT : aNewCenter.X()=aMarkRect.Right();  bLft=true; break;
+				case HDL_RIGHT: aNewCenter.X()=aMarkRect.Left();   bRgt=true; break;
+				case HDL_LWLFT: aNewCenter.X()=aMarkRect.Right();  bLft=true; break;
+				case HDL_LOWER: aNewCenter.Y()=aMarkRect.Top();    bLwr=true; break;
+				case HDL_LWRGT: aNewCenter.X()=aMarkRect.Left();   bRgt=true; break;
 				default: bAtCenter=true;
 			}
 		}
@@ -3214,8 +3214,8 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 			bAtCenter=true;
 
 		Fraction aNeuFact(1,1);
-		long dx1=aPnt.X()-aNeuCenter.X();
-		long dy1=aPnt.Y()-aNeuCenter.Y();
+		long dx1=aPnt.X()-aNewCenter.X();
+		long dy1=aPnt.Y()-aNewCenter.Y();
 		bValid=bVertical ? dx1!=0 : dy1!=0;
 
 		if (bValid)
@@ -3226,7 +3226,7 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 				bValid=Abs(dy1)*100>Abs(dx1);
 		}
 
-		long nNeuRad=0;
+		long nNewRad=0;
 		nWink=0;
 
 		if (bValid)
@@ -3237,21 +3237,21 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 			if (bVertical)
 			{
 				a=((double)dy1)/((double)dx1); // Steigung des Radius
-				nNeuRad=((long)(dy1*a)+dx1) /2;
-				aNeuCenter.X()+=nNeuRad;
-				nPntWink=GetAngle(aPnt-aNeuCenter);
+				nNewRad=((long)(dy1*a)+dx1) /2;
+				aNewCenter.X()+=nNewRad;
+				nPntWink=GetAngle(aPnt-aNewCenter);
 			}
 			else
 			{
 				a=((double)dx1)/((double)dy1); // Steigung des Radius
-				nNeuRad=((long)(dx1*a)+dy1) /2;
-				aNeuCenter.Y()+=nNeuRad;
-				nPntWink=GetAngle(aPnt-aNeuCenter)-9000;
+				nNewRad=((long)(dx1*a)+dy1) /2;
+				aNewCenter.Y()+=nNewRad;
+				nPntWink=GetAngle(aPnt-aNewCenter)-9000;
 			}
 
 			if (!bAtCenter)
 			{
-				if (nNeuRad<0)
+				if (nNewRad<0)
 				{
 					if (bRgt) nPntWink+=18000;
 					if (bLft) nPntWink=18000-nPntWink;
@@ -3268,13 +3268,13 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 			}
 			else
 			{
-				if (nNeuRad<0) nPntWink+=18000;
+				if (nNewRad<0) nPntWink+=18000;
 				if (bVertical) nPntWink=18000-nPntWink;
 				nPntWink=NormAngle180(nPntWink);
 				nPntWink=Abs(nPntWink);
 			}
 
-			double nUmfang=2*Abs(nNeuRad)*nPi;
+			double nUmfang=2*Abs(nNewRad)*nPi;
 
 			if (bResize)
 			{
@@ -3284,15 +3284,15 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 					nPntWink+=nSA/2;
 					nPntWink/=nSA;
 					nPntWink*=nSA;
-					BigInt a2(nNeuRad);
+					BigInt a2(nNewRad);
 					a2*=BigInt(nWink);
 					a2/=BigInt(nWink0);
-					nNeuRad=long(a2);
+					nNewRad=long(a2);
 
 					if (bVertical)
-						aNeuCenter.X()=aStart.X()+nNeuRad;
+						aNewCenter.X()=aStart.X()+nNewRad;
 					else
-						aNeuCenter.Y()=aStart.Y()+nNeuRad;
+						aNewCenter.Y()=aStart.Y()+nNewRad;
 				}
 
 				long nMul=(long)(nUmfang*NormAngle360(nPntWink)/36000);
@@ -3316,24 +3316,24 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 					nWink+=nSA/2;
 					nWink/=nSA;
 					nWink*=nSA;
-					BigInt a2(nNeuRad);
+					BigInt a2(nNewRad);
 					a2*=BigInt(nWink);
 					a2/=BigInt(nWink0);
-					nNeuRad=long(a2);
+					nNewRad=long(a2);
 
 					if (bVertical)
-						aNeuCenter.X()=aStart.X()+nNeuRad;
+						aNewCenter.X()=aStart.X()+nNewRad;
 					else
-						aNeuCenter.Y()=aStart.Y()+nNeuRad;
+						aNewCenter.Y()=aStart.Y()+nNewRad;
 				}
 			}
 		}
 
-		if (nWink==0 || nNeuRad==0)
+		if (nWink==0 || nNewRad==0)
 			bValid=false;
 
 		if (!bValid)
-			nNeuRad=0;
+			nNewRad=0;
 
 		if (!bValid && bResize)
 		{
@@ -3353,7 +3353,7 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 			aNeuFact=Fraction(nMul,nDiv);
 		}
 
-		if (aNeuCenter!=aCenter || bNeuContortion!=bContortion || aNeuFact!=aFact ||
+		if (aNewCenter!=aCenter || bNeuContortion!=bContortion || aNeuFact!=aFact ||
 			bNeuMoveOnly != getMoveOnly() || bNeuRotate!=bRotate || eNeuMode!=eMode)
 		{
 			Hide();
@@ -3361,9 +3361,9 @@ void SdrDragCrook::MoveSdrDrag(const Point& rPnt)
 			bRotate=bNeuRotate;
 			eMode=eNeuMode;
 			bContortion=bNeuContortion;
-			aCenter=aNeuCenter;
+			aCenter=aNewCenter;
 			aFact=aNeuFact;
-			aRad=Point(nNeuRad,nNeuRad);
+			aRad=Point(nNewRad,nNewRad);
 			bResize=aFact!=Fraction(1,1) && aFact.GetDenominator()!=0 && aFact.IsValid();
 			DragStat().NextMove(aPnt);
 			Show();
