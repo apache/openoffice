@@ -140,19 +140,19 @@ XPolygon SdrRectObj::ImpCalcXPoly(const Rectangle& rRect1, long nRad1) const
 {
 	XPolygon aXPoly(rRect1,nRad1,nRad1);
 	const sal_uInt16 nPointCount(aXPoly.GetPointCount());
-	XPolygon aNeuPoly(nPointCount+1);
+	XPolygon aNewPoly(nPointCount+1);
 	sal_uInt16 nShift=nPointCount-2;
 	if (nRad1!=0) nShift=nPointCount-5;
 	sal_uInt16 j=nShift;
 	for (sal_uInt16 i=1; i<nPointCount; i++) {
-		aNeuPoly[i]=aXPoly[j];
-		aNeuPoly.SetFlags(i,aXPoly.GetFlags(j));
+		aNewPoly[i]=aXPoly[j];
+		aNewPoly.SetFlags(i,aXPoly.GetFlags(j));
 		j++;
 		if (j>=nPointCount) j=1;
 	}
-	aNeuPoly[0]=rRect1.BottomCenter();
-	aNeuPoly[nPointCount]=aNeuPoly[0];
-	aXPoly=aNeuPoly;
+	aNewPoly[0]=rRect1.BottomCenter();
+	aNewPoly[nPointCount]=aNewPoly[0];
+	aXPoly=aNewPoly;
 
 	// Die Winkelangaben beziehen sich immer auf die linke obere Ecke von !aRect!
 	if (aGeo.nShearWink!=0) ShearXPoly(aXPoly,aRect.TopLeft(),aGeo.nTan);
