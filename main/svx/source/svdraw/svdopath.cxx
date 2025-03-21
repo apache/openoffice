@@ -662,7 +662,7 @@ bool ImpPathForDragAndCreate::movePathDrag( SdrDragStat& rDrag ) const
 	{
 		mpSdrPathDragData->ResetPoly(mrSdrPathObject);
 
-		// Div. Daten lokal Kopieren fuer weniger Code und schnelleren Zugriff
+		// Div. Daten lokal Kopieren für weniger Code und schnelleren Zugriff
 		FASTBOOL bClosed       =mpSdrPathDragData->bClosed       ; // geschlossenes Objekt?
 		sal_uInt16   nPnt          =mpSdrPathDragData->nPnt          ; // Punktnummer innerhalb des obigen Polygons
 		FASTBOOL bBegPnt       =mpSdrPathDragData->bBegPnt       ; // Gedraggter Punkt ist der Anfangspunkt einer Polyline
@@ -672,10 +672,10 @@ bool ImpPathForDragAndCreate::movePathDrag( SdrDragStat& rDrag ) const
 		FASTBOOL bPrevIsBegPnt =mpSdrPathDragData->bPrevIsBegPnt ; // Vorheriger Punkt ist Anfangspunkt einer Polyline
 		FASTBOOL bNextIsEndPnt =mpSdrPathDragData->bNextIsEndPnt ; // Folgepunkt ist Endpunkt einer Polyline
 		sal_uInt16   nPrevPrevPnt  =mpSdrPathDragData->nPrevPrevPnt  ; // Index des vorvorherigen Punkts
-		sal_uInt16   nNextNextPnt  =mpSdrPathDragData->nNextNextPnt  ; // Index des uebernächsten Punkts
+		sal_uInt16   nNextNextPnt  =mpSdrPathDragData->nNextNextPnt  ; // Index des übernächsten Punkts
 		FASTBOOL bControl      =mpSdrPathDragData->bControl      ; // Punkt ist ein Kontrollpunkt
-		//int bIsPrevControl=mpSdrPathDragData->bIsPrevControl; // Punkt ist Kontrollpunkt vor einem Stuetzpunkt
-		FASTBOOL bIsNextControl=mpSdrPathDragData->bIsNextControl; // Punkt ist Kontrollpunkt hinter einem Stuetzpunkt
+		//int bIsPrevControl=mpSdrPathDragData->bIsPrevControl; // Punkt ist Kontrollpunkt vor einem Stützpunkt
+		FASTBOOL bIsNextControl=mpSdrPathDragData->bIsNextControl; // Punkt ist Kontrollpunkt hinter einem Stützpunkt
 		FASTBOOL bPrevIsControl=mpSdrPathDragData->bPrevIsControl; // Falls nPnt ein StPnt: Davor ist ein Kontrollpunkt
 		FASTBOOL bNextIsControl=mpSdrPathDragData->bNextIsControl; // Falls nPnt ein StPnt: Dahinter ist ein Kontrollpunkt
 
@@ -685,8 +685,8 @@ bool ImpPathForDragAndCreate::movePathDrag( SdrDragStat& rDrag ) const
 			Point  aPos(rDrag.GetNow());      // die aktuelle Position
 			Point  aPnt(mpSdrPathDragData->aXP[nPnt]);      // der gedraggte Punkt
 			sal_uInt16 nPnt1=0xFFFF,nPnt2=0xFFFF; // seine Nachbarpunkte
-			Point  aNeuPos1,aNeuPos2;         // die neuen Alternativen fuer aPos
-			FASTBOOL bPnt1=sal_False,bPnt2=sal_False; // die neuen Alternativen gueltig?
+			Point  aNewPos1,aNewPos2;         // die neuen Alternativen für aPos
+			FASTBOOL bPnt1=sal_False,bPnt2=sal_False; // die neuen Alternativen gültig?
 			if (!bClosed && mpSdrPathDragData->nPntAnz>=2) { // Mind. 2 Pt bei Linien
 				if (!bBegPnt) nPnt1=nPrevPnt;
 				if (!bEndPnt) nPnt2=nNextPnt;
@@ -711,9 +711,9 @@ bool ImpPathForDragAndCreate::movePathDrag( SdrDragStat& rDrag ) const
 					FASTBOOL bVer=bVLin || (!bHLin && (nXFact<=nYFact)==bBigOrtho);
 					if (bHor) ndy=long(ndy0*nXFact);
 					if (bVer) ndx=long(ndx0*nYFact);
-					aNeuPos1=aPnt1;
-					aNeuPos1.X()+=ndx;
-					aNeuPos1.Y()+=ndy;
+					aNewPos1=aPnt1;
+					aNewPos1.X()+=ndx;
+					aNewPos1.Y()+=ndy;
 				}
 			}
 			if (nPnt2!=0xFFFF && !bNextIsControl) {
@@ -732,23 +732,23 @@ bool ImpPathForDragAndCreate::movePathDrag( SdrDragStat& rDrag ) const
 					FASTBOOL bVer=bVLin || (!bHLin && (nXFact<=nYFact)==bBigOrtho);
 					if (bHor) ndy=long(ndy0*nXFact);
 					if (bVer) ndx=long(ndx0*nYFact);
-					aNeuPos2=aPnt2;
-					aNeuPos2.X()+=ndx;
-					aNeuPos2.Y()+=ndy;
+					aNewPos2=aPnt2;
+					aNewPos2.X()+=ndx;
+					aNewPos2.Y()+=ndy;
 				}
 			}
 			if (bPnt1 && bPnt2) { // beide Alternativen vorhanden (Konkurenz)
-				BigInt nX1(aNeuPos1.X()-aPos.X()); nX1*=nX1;
-				BigInt nY1(aNeuPos1.Y()-aPos.Y()); nY1*=nY1;
-				BigInt nX2(aNeuPos2.X()-aPos.X()); nX2*=nX2;
-				BigInt nY2(aNeuPos2.Y()-aPos.Y()); nY2*=nY2;
+				BigInt nX1(aNewPos1.X()-aPos.X()); nX1*=nX1;
+				BigInt nY1(aNewPos1.Y()-aPos.Y()); nY1*=nY1;
+				BigInt nX2(aNewPos2.X()-aPos.X()); nX2*=nX2;
+				BigInt nY2(aNewPos2.Y()-aPos.Y()); nY2*=nY2;
 				nX1+=nY1; // Korrekturabstand zum Quadrat
 				nX2+=nY2; // Korrekturabstand zum Quadrat
 				// Die Alternative mit dem geringeren Korrekturbedarf gewinnt
 				if (nX1<nX2) bPnt2=sal_False; else bPnt1=sal_False;
 			}
-			if (bPnt1) rDrag.Now()=aNeuPos1;
-			if (bPnt2) rDrag.Now()=aNeuPos2;
+			if (bPnt1) rDrag.Now()=aNewPos1;
+			if (bPnt2) rDrag.Now()=aNewPos2;
 		}
 		rDrag.SetActionRect(Rectangle(rDrag.GetNow(),rDrag.GetNow()));
 
@@ -821,7 +821,7 @@ bool ImpPathForDragAndCreate::movePathDrag( SdrDragStat& rDrag ) const
 					mpSdrPathDragData->aXP.CalcSmoothJoin(nPnt,nPrevPnt,nNextPnt);
 				}
 			}
-			// Und nun noch die anderen Enden der Strecken ueberpruefen (nPnt+-1).
+			// Und nun noch die anderen Enden der Strecken überprüfen (nPnt+-1).
 			// Ist dort eine Kurve (IsControl(nPnt+-2)) mit SmoothJoin (nPnt+-1),
 			// so muss der entsprechende Kontrollpunkt (nPnt+-2) angepasst werden.
 			if (!bBegPnt && !bPrevIsControl && !bPrevIsBegPnt && mpSdrPathDragData->aXP.IsSmooth(nPrevPnt)) {
