@@ -19,16 +19,12 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
 
 #include <drawinglayer/primitive2d/discretebitmapprimitive2d.hxx>
 #include <drawinglayer/primitive2d/bitmapprimitive2d.hxx>
 #include <drawinglayer/primitive2d/drawinglayer_primitivetypes2d.hxx>
-
-//////////////////////////////////////////////////////////////////////////////
 
 namespace drawinglayer
 {
@@ -53,7 +49,7 @@ namespace drawinglayer
 
 				// get size and position in world coordinates
 				const basegfx::B2DVector aWorldSize(aInverseViewTransformation * aDiscreteSize);
-				const basegfx::B2DPoint  aWorldTopLeft(getObjectTransformation() * getTopLeft());
+				const basegfx::B2DPoint aWorldTopLeft(getObjectTransformation() * getTopLeft());
 
 				// build object matrix in world coordinates so that the top-left
 				// position remains, but eventual transformations (e.g. rotations)
