@@ -3235,8 +3235,8 @@ void SvxMSDffManager::Scale( PolyPolygon& rPoly ) const
 {
 	if ( !bNeedMap )
 		return;
-	sal_uInt16 nPolyAnz = rPoly.Count();
-	for ( sal_uInt16 nPolyNum = 0; nPolyNum < nPolyAnz; nPolyNum++ )
+	sal_uInt16 nPolyCount = rPoly.Count();
+	for ( sal_uInt16 nPolyNum = 0; nPolyNum < nPolyCount; nPolyNum++ )
 		Scale( rPoly[ nPolyNum ] );
 }
 

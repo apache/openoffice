@@ -469,24 +469,24 @@ void CrookStretchPoly(XPolygon& rPoly, const Point& rCenter, const Point& rRad, 
 
 void CrookRotatePoly(XPolyPolygon& rPoly, const Point& rCenter, const Point& rRad, FASTBOOL bVert)
 {
-	sal_uInt16 nPolyAnz=rPoly.Count();
-	for (sal_uInt16 nPolyNum=0; nPolyNum<nPolyAnz; nPolyNum++) {
+	sal_uInt16 nPolyCount=rPoly.Count();
+	for (sal_uInt16 nPolyNum=0; nPolyNum<nPolyCount; nPolyNum++) {
 		CrookRotatePoly(rPoly[nPolyNum],rCenter,rRad,bVert);
 	}
 }
 
 void CrookSlantPoly(XPolyPolygon& rPoly, const Point& rCenter, const Point& rRad, FASTBOOL bVert)
 {
-	sal_uInt16 nPolyAnz=rPoly.Count();
-	for (sal_uInt16 nPolyNum=0; nPolyNum<nPolyAnz; nPolyNum++) {
+	sal_uInt16 nPolyCount=rPoly.Count();
+	for (sal_uInt16 nPolyNum=0; nPolyNum<nPolyCount; nPolyNum++) {
 		CrookSlantPoly(rPoly[nPolyNum],rCenter,rRad,bVert);
 	}
 }
 
 void CrookStretchPoly(XPolyPolygon& rPoly, const Point& rCenter, const Point& rRad, FASTBOOL bVert, const Rectangle rRefRect)
 {
-	sal_uInt16 nPolyAnz=rPoly.Count();
-	for (sal_uInt16 nPolyNum=0; nPolyNum<nPolyAnz; nPolyNum++) {
+	sal_uInt16 nPolyCount=rPoly.Count();
+	for (sal_uInt16 nPolyNum=0; nPolyNum<nPolyCount; nPolyNum++) {
 		CrookStretchPoly(rPoly[nPolyNum],rCenter,rRad,bVert,rRefRect);
 	}
 }
@@ -863,7 +863,7 @@ void GetMeterOrInch(MapUnit eMU, short& rnComma, long& rnMul, long& rnDiv, int& 
 		case MAP_100TH_INCH : bInch=sal_True; nComma=2; break;
 		case MAP_10TH_INCH  : bInch=sal_True; nComma=1; break;
 		case MAP_INCH       : bInch=sal_True; nComma=0; break;
-		case MAP_POINT      : bInch=sal_True; rnDiv=72;  break; // 1Pt = 1/72"
+		case MAP_POINT      : bInch=sal_True; rnDiv=72; break; // 1Pt = 1/72"
 		case MAP_TWIP       : bInch=sal_True; rnDiv=144; nComma=1; break; // 1Twip = 1/1440"
 		// Sonstiges
 		case MAP_PIXEL      : break;
@@ -997,7 +997,7 @@ void SdrFormatter::TakeStr(long nVal, XubString& rStr) const
 		if(nAnz >= 0 && rLoc.isNumLeadingZero())
 			nAnz++;
 
-		for(xub_StrLen  i=0; i<nAnz; i++)
+		for(xub_StrLen i=0; i<nAnz; i++)
 			aStr.Insert(aNullCode, 0);
 
 		// zu viele Nachkommastellen abhacken

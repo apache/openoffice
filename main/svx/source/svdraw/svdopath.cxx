@@ -1485,11 +1485,11 @@ FASTBOOL ImpPathForDragAndCreate::EndCreate(SdrDragStat& rStat, SdrCreateCmd eCm
 		}
 	}
 
-	sal_uInt16 nPolyAnz=aPathPolygon.Count();
-	if (nPolyAnz!=0) {
+	sal_uInt16 nPolyCount=aPathPolygon.Count();
+	if (nPolyCount!=0) {
 		// den letzten Punkt ggf. wieder löschen
 		if (eCmd==SDRCREATE_FORCEEND) {
-			XPolygon& rXP=aPathPolygon[nPolyAnz-1];
+			XPolygon& rXP=aPathPolygon[nPolyCount-1];
 			sal_uInt16 nPtAnz=rXP.GetPointCount();
 			if (nPtAnz>=2) {
 				if (!rXP.IsControl(nPtAnz-2)) {
@@ -1503,12 +1503,12 @@ FASTBOOL ImpPathForDragAndCreate::EndCreate(SdrDragStat& rStat, SdrCreateCmd eCm
 				}
 			}
 		}
-		for (sal_uInt16 nPolyNum=nPolyAnz; nPolyNum>0;) {
+		for (sal_uInt16 nPolyNum=nPolyCount; nPolyNum>0;) {
 			nPolyNum--;
 			XPolygon& rXP=aPathPolygon[nPolyNum];
 			sal_uInt16 nPtAnz=rXP.GetPointCount();
 			// Polygone mit zu wenig Punkten werden gelöscht
-			if (nPolyNum<nPolyAnz-1 || eCmd==SDRCREATE_FORCEEND) {
+			if (nPolyNum<nPolyCount-1 || eCmd==SDRCREATE_FORCEEND) {
 				if (nPtAnz<2) aPathPolygon.Remove(nPolyNum);
 			}
 		}
@@ -2058,11 +2058,11 @@ void SdrPathObj::AddToHdlList(SdrHdlList& rHdlList) const
 {
 	// keep old stuff to be able to keep old SdrHdl stuff, too
 	const XPolyPolygon aOldPathPolygon(GetPathPoly());
-	sal_uInt16 nPolyCnt=aOldPathPolygon.Count();
+	sal_uInt16 nPolyCount=aOldPathPolygon.Count();
 	FASTBOOL bClosed=IsClosed();
 	sal_uInt16 nIdx=0;
 
-	for (sal_uInt16 i=0; i<nPolyCnt; i++) {
+	for (sal_uInt16 i=0; i<nPolyCount; i++) {
 		const XPolygon& rXPoly=aOldPathPolygon.GetObject(i);
 		sal_uInt16 nPntCnt=rXPoly.GetPointCount();
 		if (bClosed && nPntCnt>1) nPntCnt--;
