@@ -272,7 +272,7 @@ Any SAL_CALL ODatabaseForm::queryAggregation(const Type& _rType) throw(RuntimeEx
 
 				// aggregate interfaces
 				// (ask the aggregated object _after_ the OComponentHelper (base of OFormComponents),
-				// so calls to the XComponent interface reach us and not the aggreagtion)
+				// so calls to the XComponent interface reach us and not the aggregation)
 				if (!aReturn.hasValue() && m_xAggregate.is())
 					aReturn = m_xAggregate->queryAggregation(_rType);
 			}
@@ -2756,7 +2756,7 @@ sal_Bool ODatabaseForm::canShareConnection( const Reference< XPropertySet >& _rx
 //------------------------------------------------------------------------------
 void ODatabaseForm::doShareConnection( const Reference< XPropertySet >& _rxParentProps )
 {
-	// get the conneciton of the parent
+	// get the connection of the parent
 	Reference< XConnection > xParentConn;
 	_rxParentProps->getPropertyValue( PROPERTY_ACTIVE_CONNECTION ) >>= xParentConn;
 	OSL_ENSURE( xParentConn.is(), "ODatabaseForm::doShareConnection: we're a valid sub-form, but the parent has no connection?!" );

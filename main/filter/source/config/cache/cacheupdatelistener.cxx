@@ -206,7 +206,7 @@ void SAL_CALL  CacheUpdateListener::changesOccurred(const css::util::ChangesEven
         catch(const css::container::NoSuchElementException&)
             {
                 // can be ignored! Because we must be aware that
-                // sItem was removed from the condfiguration and we forced an update of the cache.
+                // sItem was removed from the configuration and we forced an update of the cache.
                 // But we know, that the cache is up-to-date know and has thrown this exception afterwards .-)
             }
         // NO FLUSH! Otherwise we start a never ending story here .-)

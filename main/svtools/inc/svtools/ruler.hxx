@@ -191,7 +191,7 @@ Werte initialisiert werden muessen:
     sal_uInt16  nStyle          - Bit-Style:
                                 RULER_INDENT_TOP    (Erstzeileneinzug)
                                 RULER_INDENT_BOTTOM (Linker/Rechter Einzug)
-                                RULER_INDENT_BORDER (Verical line that shows the border distance)
+                                RULER_INDENT_BORDER (Vertical line that shows the border distance)
                                 Zu diesen Style's koennen folgende Style-
                                 Bits dazugeodert werden:
                                 RULER_STYLE_DONTKNOW (fuer alte Position oder

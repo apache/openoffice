@@ -229,7 +229,7 @@ public class XmlUpdater extends Thread {
             else
                 System.out.println( manifestPath + " exists" );
 
-            // Backup the confguration files in 
+            // Backup the configuration files in
             // <office>/user/config/soffice.cfg/
             // If they already exist.
 

@@ -203,7 +203,7 @@ public:
             Id of the item for which the size limits are set.
         @param aRange
             Values of -1 define missing bounds, thus setting a range (-1,-1)
-            (the default) removes the size limitiation.
+            (the default) removes the size limitation.
     */
     void                SetItemSizeRange (sal_uInt16 nId, const Range aRange);
     /** Return the current size limits for the specified item.

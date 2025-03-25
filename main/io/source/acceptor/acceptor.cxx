@@ -147,7 +147,7 @@ namespace io_acceptor
 		{
 			// instantiate another acceptor for different ports
 			OUString sMessage = OUString( RTL_CONSTASCII_USTRINGPARAM(
-				"acceptor::accept called multiple times with different conncetion strings\n" ) );
+				"acceptor::accept called multiple times with different connection strings\n" ) );
 			throw ConnectionSetupException( sMessage, Reference< XInterface > () );
 		}
 

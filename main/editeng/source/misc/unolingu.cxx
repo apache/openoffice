@@ -201,7 +201,7 @@ Sequence< OUString > lcl_MergeSeq(
 
     for (sal_Int32 k = 0;  k < 2;  ++k)
     {
-		// add previously configuerd service first and append
+		// add previously configured service first and append
 		// new found services at the end
         const Sequence< OUString > &rSeq = k == 0 ? rCfgSvcs : rNewSvcs;
 

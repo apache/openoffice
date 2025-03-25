@@ -590,7 +590,7 @@ public class APIDescGetter extends DescGetter
                     String entry = e.nextElement().toString();
 
 //                    if (debug) {
-//                        System.out.println("### Read from connetion: " + entry);
+//                        System.out.println("### Read from connection: " + entry);
 //                    }
 
                     if ((entry.lastIndexOf(sStartModule) != -1) &&
