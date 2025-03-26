@@ -99,13 +99,13 @@ namespace pcr
         ~DefaultEnumRepresentation();
 
     protected:
-        // IPropertyEnumRepresentation implementqation
+        // IPropertyEnumRepresentation implementation
         virtual ::std::vector< ::rtl::OUString >
                                     SAL_CALL getDescriptions() const;
         virtual void                SAL_CALL getValueFromDescription( const ::rtl::OUString& _rDescription, ::com::sun::star::uno::Any& _out_rValue ) const;
         virtual ::rtl::OUString     SAL_CALL getDescriptionForValue( const ::com::sun::star::uno::Any& _rEnumValue ) const;
 
-        // IReference implementqation
+        // IReference implementation
         virtual oslInterlockedCount SAL_CALL acquire();
         virtual oslInterlockedCount SAL_CALL release();
 
@@ -130,7 +130,7 @@ namespace pcr
 #define PROP_FLAG_COMPOSEABLE       0x00000080  // the property is "composeable", i.e. an intersection of property
                                                 //  sets should expose it, if all elements do
 #define PROP_FLAG_EXPERIMENTAL      0x00000100  // the property is experimental, i.e. should not appear in the
-                                                // UI, unless experimental properties are enabled by a configuraiton
+                                                // UI, unless experimental properties are enabled by a configuration
                                                 // option
 
 	//========================================================================

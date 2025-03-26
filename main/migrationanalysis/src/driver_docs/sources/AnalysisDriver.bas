@@ -3576,8 +3576,8 @@ Function FindIndex(myDocument As String, _
 
 End Function
 
-' The sub GetIndexValues calulates the start index of the analysis and the index
-' of the file after which the next intermediate reult will be written
+' The sub GetIndexValues calculates the start index of the analysis and the index
+' of the file after which the next intermediate result will be written
 Function GetIndexValues(startIndex As Long, nextCheck As Long, _
                         myFiles As Collection) As Boolean
 

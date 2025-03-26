@@ -50,7 +50,7 @@ public:
 	String aPackageName;				// Package name
 	sal_Bool bIsOnlyTxtFlagInit : 1;		// ist das Flag gueltig?
 	sal_Bool bIsOnlyTxt : 1;				// unformatted text
-	sal_Bool bInPutMuchBlocks : 1;			// put serveral block entries
+	sal_Bool bInPutMuchBlocks : 1;			// put several block entries
 
 	SwBlockName( const String& rShort, const String& rLong, long n );
 	SwBlockName( const String& rShort, const String& rLong, const String& rPackageName );
@@ -78,7 +78,7 @@ protected:
 	SwDoc* pDoc;						// Austauschdokument
 	sal_uInt16 nCur;						// aktueller Index
 	sal_Bool bReadOnly : 1;
-	sal_Bool bInPutMuchBlocks : 1;			// put serveral block entries
+	sal_Bool bInPutMuchBlocks : 1;			// put several block entries
 	sal_Bool bInfoChanged : 1;				// any Info of TextBlock is changed
 
 	SwImpBlocks( const String&, sal_Bool = sal_False );

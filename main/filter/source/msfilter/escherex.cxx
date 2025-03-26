@@ -577,7 +577,7 @@ void	EscherPropertyContainer::CreateFillProperties(
 		if ( pObj )
 		{
 			SfxItemSet aAttr( pObj->GetMergedItemSet() );
-			//tranparency with gradient. Means the third setting in transparency page is set
+			//transparency with gradient. Means the third setting in transparency page is set
 			sal_Bool bTransparentGradient =  ( aAttr.GetItemState( XATTR_FILLFLOATTRANSPARENCE ) == SFX_ITEM_SET ) &&
 				( (const XFillFloatTransparenceItem&) aAttr.Get( XATTR_FILLFLOATTRANSPARENCE ) ).IsEnabled();
 			CreateFillProperties(  rXPropSet, bEdge, bTransparentGradient );
@@ -728,7 +728,7 @@ void EscherPropertyContainer::CreateTextProperties(
         switch (eMode)
         {
             case ::com::sun::star::text::WritingMode_TB_RL:
-                //Well if it so happens that we are fliped 180 we can use
+                //Well if it so happens that we are flipped 180 we can use
                 //this instead.
                 if (rObj.GetAngle() == 18000)
                     eFlow = ESCHER_txflBtoT;
@@ -747,7 +747,7 @@ void EscherPropertyContainer::CreateTextProperties(
     sal_uInt32 nTextAttr = 0x40004;     // rotate text with shape
 
     if ( eWM == text::WritingMode_TB_RL )
-    {   // verical writing
+    {   // vertical writing
         switch ( eHA )
         {
             case drawing::TextHorizontalAdjust_LEFT :
@@ -900,7 +900,7 @@ sal_Bool EscherPropertyContainer::GetLineArrow( const sal_Bool bLineStart,
 				{
 
 					/* todo:
-					calculate the best option for ArrowLenght and ArrowWidth
+					calculate the best option for ArrowLength and ArrowWidth
 					*/
 					if ( aApiName.equalsAscii( "Arrow concave" ) )
 						reLineEnd = ESCHER_LineArrowStealthEnd;

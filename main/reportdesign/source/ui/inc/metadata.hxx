@@ -94,7 +94,7 @@ namespace rptui
 #define PROP_FLAG_COMPOSEABLE       0x00000008  // the property is "composeable", i.e. an intersection of property
                                                 //  sets should expose it, if all elements do
 #define PROP_FLAG_EXPERIMENTAL      0x00000010  // the property is experimental, i.e. should not appear in the
-                                                // UI, unless experimental properties are enabled by a configuraiton
+                                                // UI, unless experimental properties are enabled by a configuration
                                                 // option
 #define PROP_FLAG_DATA_PROPERTY     0x00000020  // the property is to appear on the "Data" page
 

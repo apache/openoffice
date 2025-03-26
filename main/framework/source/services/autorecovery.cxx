@@ -2281,7 +2281,7 @@ AutoRecovery::ETimerType AutoRecovery::implts_saveDocs(      sal_Bool        bAl
 
 		// already auto saved during this session :-)
 		// This state must be reset for all documents
-		// if timer is started with normnal AutoSaveTimerIntervall!
+		// if timer is started with normal AutoSaveTimerIntervall!
 		if ((aInfo.DocumentState & AutoRecovery::E_HANDLED) == AutoRecovery::E_HANDLED)
 			continue;
 
@@ -3074,7 +3074,7 @@ void AutoRecovery::implts_doEmergencySave(const DispatchParams& aParams)
         css::uno::makeAny(sal_True),
         ::comphelper::ConfigurationHelper::E_STANDARD);
 
-    // for all docs, store their current view/names in the configurtion
+    // for all docs, store their current view/names in the configuration
     implts_persistAllActiveViewNames();
 
     // The called method for saving documents runs
@@ -3083,7 +3083,7 @@ void AutoRecovery::implts_doEmergencySave(const DispatchParams& aParams)
     // That is normally done by recalling it from a timer.
     // Here we must do it immediately!
     // Of course this method returns the right state -
-    // because it knows, that we are running in ERMERGENCY SAVE mode .-)
+    // because it knows, that we are running in EMERGENCY SAVE mode .-)
 
     sal_Bool                 bAllowUserIdleLoop = sal_False; // not allowed to change that .-)
     AutoRecovery::ETimerType eSuggestedTimer    = AutoRecovery::E_DONT_START_TIMER;

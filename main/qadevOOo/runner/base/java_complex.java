@@ -91,11 +91,11 @@ public class java_complex implements TestBase
 
 //        the concept of the TimeOut depends on runner logs. If the runner log, 
 //        for example to start a test method, the timeout was reset. This is not
-//        while the test itself log something like "open docuent...".
+//        while the test itself log something like "open document...".
 //        An property of complex test could be that it have only one test method 
-//        which works for serveral minutes. Ih this case the TimeOut get not trigger
+//        which works for several minutes. Ih this case the TimeOut get not trigger
 //        and the office was killed.
-//        In complex tests just use "ThreadTimeOut" as timout.
+//        In complex tests just use "ThreadTimeOut" as timeout.
 
         // param.put("TimeOut", new Integer(0));
 
