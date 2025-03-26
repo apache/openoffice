@@ -21,7 +21,7 @@
 
 
 
-# @@@ UCP Version - Increase, if your UCP libraray becomes incompatible.
+# @@@ UCP Version - Increase, if your UCP library becomes incompatible.
 UCP_VERSION=1
 
 # @@@ Name for your UCP. Will become part of the library name (See below).

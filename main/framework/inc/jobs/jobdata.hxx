@@ -218,7 +218,7 @@ class JobData : private ThreadHelpBase
             a job can be registered for an event.
             It can be an empty value! But it will be set from outside any times.
             Because it's not clear which job this instance should represent if an event
-            (instaed of an alias) comes in. Because there can be multiple registrations
+            (instead of an alias) comes in. Because there can be multiple registrations
             for this event. We use this information only, to merge it with the job specific
             arguments. A job can be called so, with a) it's onw config data and b) some dynamic
             environment data.

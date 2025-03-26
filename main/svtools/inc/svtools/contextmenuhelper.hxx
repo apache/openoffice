@@ -91,7 +91,7 @@ class SVT_DLLPUBLIC ContextMenuHelper
 
         
         // methods to retrieve a single command URL dependent value from a
-        // ui configuratin manager
+        // ui configuration manager
         Image           getImageFromCommandURL( const ::rtl::OUString& aCmdURL, bool bHiContrast ) const;
         rtl::OUString   getLabelFromCommandURL( const ::rtl::OUString& aCmdURL ) const;
 

@@ -193,7 +193,7 @@ class AcceleratorExecute : private TMutexInit
         //---------------------------------------
         /** @short  trigger this accelerator.
         
-            @descr  The internal configuartions are used to find
+            @descr  The internal configurations are used to find
                     as suitable command for this key code.
                     This command will be queued and executed later
                     asynchronous.

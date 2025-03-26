@@ -78,13 +78,13 @@ namespace pcr
     public:
         EnumRepresentation( const Reference< XComponentContext >& _rxContext, const Type& _rEnumType );
 
-        // IPropertyEnumRepresentation implementqation
+        // IPropertyEnumRepresentation implementation
         virtual ::std::vector< ::rtl::OUString >
                                     SAL_CALL getDescriptions() const;
         virtual void                SAL_CALL getValueFromDescription( const ::rtl::OUString& _rDescription, ::com::sun::star::uno::Any& _out_rValue ) const;
         virtual ::rtl::OUString     SAL_CALL getDescriptionForValue( const ::com::sun::star::uno::Any& _rEnumValue ) const;
 
-        // IReference implementqation
+        // IReference implementation
         virtual oslInterlockedCount SAL_CALL acquire();
         virtual oslInterlockedCount SAL_CALL release();
 

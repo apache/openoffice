@@ -800,7 +800,7 @@ void lcl_normalizeLocalNames(Sequence< OUString >& _rNames, ConfigNameFormat _eF
             }
         }
         OSL_ENSURE(false, "Cannot create absolute paths: missing interface");
-        // make local paths instaed
+        // make local paths instead
 
     case CONFIG_NAME_LOCAL_PATH:
         {

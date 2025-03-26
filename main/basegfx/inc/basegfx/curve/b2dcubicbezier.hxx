@@ -170,7 +170,7 @@ namespace basegfx
 		// extract snippet from fStart to fEnd from this bezier
 		B2DCubicBezier snippet(double fStart, double fEnd) const;
 
-		// get range including conrol points
+		// get range including control points
 		B2DRange getRange() const;
 
 		/** Get the minimum extremum position t
@@ -201,7 +201,7 @@ namespace basegfx
 		/** Get optimum-split position on this segment
 
 			This method calculates the positions of all points of the segment
-			that have the maximimum distance to the corresponding line from
+			that have the maximum distance to the corresponding line from
 			startpoint-endpoint. This helps to approximate the bezier curve
 			with a minimum number of line segments
 
