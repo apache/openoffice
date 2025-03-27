@@ -20,9 +20,11 @@ OpenOffice is used by millions of users worldwide and with more than 386 million
 # Getting the latest sources via Git
 
 You can always checkout the latest source via Git using the following command:
+
 ```
 git clone https://gitbox.apache.org/repos/asf/openoffice.git aoo
 ```
+
 For further information visit [https://openoffice.apache.org/source.html](https://openoffice.apache.org/source.html).
 
 # Building Apache OpenOffice
@@ -33,6 +35,7 @@ The list of prerequisites varies for the different platforms.
 A comprehensive and complete building guide can be found in the [Project Wiki](https://wiki.openoffice.org/wiki/Documentation/Building_Guide_AOO).
 
 With having all prerequisites in place you can simply run
+
 ```
 cd aoo/main
 autoconf
@@ -42,6 +45,7 @@ source *.Set.sh
 cd instsetoo_native
 build --all
 ```
+
 Note that building OpenOffice can take several hours.
 
 The default build will produce a setup version (e.g. setup program on Windows, dmg on macOS, rpm and deb packages on Linux) and an archived version.\

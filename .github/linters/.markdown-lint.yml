@@ -1,0 +1,13 @@
+# https://github.com/DavidAnson/markdownlint
+
+# MD013/line-length Line length
+MD013: false
+
+# MD025/single-title/single-h1 Multiple top-level headings in the same document
+MD025: false
+
+# MD033/no-inline-html Inline HTML
+MD033: false
+
+# MD040/fenced-code-language Fenced code blocks should have a language specified
+MD040: false
