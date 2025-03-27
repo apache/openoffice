@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef CONNECTIVITY_TSORTINDEX_HXX
 #define CONNECTIVITY_TSORTINDEX_HXX
@@ -55,15 +54,15 @@ namespace connectivity
 		typedef ::std::vector<OKeyType>								TKeyTypeVector;
 
 	private:
-		TIntValuePairVector			    m_aKeyValues;
-		TKeyTypeVector				    m_aKeyType;
-        ::std::vector<TAscendingOrder>  m_aAscending;
-		sal_Bool					    m_bFrozen;
+		TIntValuePairVector				m_aKeyValues;
+		TKeyTypeVector					m_aKeyType;
+		::std::vector<TAscendingOrder>	m_aAscending;
+		sal_Bool						m_bFrozen;
 
 	public:
 
 		OSortIndex(	const ::std::vector<OKeyType>& _aKeyType,
-                    const ::std::vector<TAscendingOrder>& _aAscending);
+					const ::std::vector<TAscendingOrder>& _aAscending);
 
 		~OSortIndex();
 
@@ -91,7 +90,7 @@ namespace connectivity
 		void Freeze();
 
 		/**
-			CreateKeySet creates the keyset which vaalues could be used to travel in your table/result
+			CreateKeySet creates the keyset which values could be used to travel in your table/result
 			The returned keyset is frozen.
 		*/
 		::vos::ORef<OKeySet> CreateKeySet();
@@ -109,7 +108,7 @@ namespace connectivity
 		sal_Int32 GetValue(sal_Int32 nPos) const;
 
 		inline const ::std::vector<OKeyType>& getKeyType() const { return m_aKeyType; }
-        inline TAscendingOrder getAscending(::std::vector<TAscendingOrder>::size_type _nPos) const { return m_aAscending[_nPos]; }
+		inline TAscendingOrder getAscending(::std::vector<TAscendingOrder>::size_type _nPos) const { return m_aAscending[_nPos]; }
 
 	};
 
@@ -133,3 +132,5 @@ namespace connectivity
 	};
 }
 #endif // CONNECTIVITY_TSORTINDEX_HXX
+
+/* vim: set noet sw=4 ts=4: */
