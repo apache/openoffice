@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_scfilt.hxx"
@@ -46,11 +44,11 @@ using namespace ::formula;
 // External reference log =====================================================
 
 XclExpRefLogEntry::XclExpRefLogEntry() :
-    mpUrl( 0 ),
-    mpFirstTab( 0 ),
-    mpLastTab( 0 ),
-    mnFirstXclTab( EXC_TAB_DELETED ),
-    mnLastXclTab( EXC_TAB_DELETED )
+	mpUrl( 0 ),
+	mpFirstTab( 0 ),
+	mpLastTab( 0 ),
+	mnFirstXclTab( EXC_TAB_DELETED ),
+	mnLastXclTab( EXC_TAB_DELETED )
 {
 }
 
@@ -59,16 +57,16 @@ XclExpRefLogEntry::XclExpRefLogEntry() :
 namespace {
 
 /** Wrapper structure for a processed Calc formula token with additional
-    settings (whitespaces). */
+	settings (whitespaces). */
 struct XclExpScToken
 {
-    const FormulaToken* mpScToken;          /// Currently processed Calc token.
-    sal_uInt8           mnSpaces;           /// Number of spaces before the Calc token.
+	const FormulaToken* mpScToken; // Currently processed Calc token.
+	sal_uInt8           mnSpaces; // Number of spaces before the Calc token.
 
-    inline explicit     XclExpScToken() : mpScToken( 0 ), mnSpaces( 0 ) {}
-    inline bool         Is() const { return mpScToken != 0; }
-    inline StackVar     GetType() const { return mpScToken ? mpScToken->GetType() : static_cast< StackVar >( svUnknown ); }
-    inline OpCode       GetOpCode() const { return mpScToken ? mpScToken->GetOpCode() : static_cast< OpCode >( ocNone ); }
+	inline explicit     XclExpScToken() : mpScToken( 0 ), mnSpaces( 0 ) {}
+	inline bool         Is() const { return mpScToken != 0; }
+	inline StackVar     GetType() const { return mpScToken ? mpScToken->GetType() : static_cast< StackVar >( svUnknown ); }
+	inline OpCode       GetOpCode() const { return mpScToken ? mpScToken->GetOpCode() : static_cast< OpCode >( ocNone ); }
 };
 
 // ----------------------------------------------------------------------------
@@ -76,9 +74,9 @@ struct XclExpScToken
 /** Effective token class conversion types. */
 enum XclExpClassConv
 {
-    EXC_CLASSCONV_ORG,          /// Keep original class of the token.
-    EXC_CLASSCONV_VAL,          /// Convert ARR tokens to VAL class (REF remains uncahnged).
-    EXC_CLASSCONV_ARR           /// Convert VAL tokens to ARR class (REF remains uncahnged).
+	EXC_CLASSCONV_ORG,          // Keep original class of the token.
+	EXC_CLASSCONV_VAL,          // Convert ARR tokens to VAL class (REF remains unchanged).
+	EXC_CLASSCONV_ARR           // Convert VAL tokens to ARR class (REF remains unchanged).
 };
 
 // ----------------------------------------------------------------------------
@@ -86,26 +84,26 @@ enum XclExpClassConv
 /** Token class conversion and position of a token in the token array. */
 struct XclExpTokenConvInfo
 {
-    sal_uInt16          mnTokPos;       /// Position of the token in the token array.
-    XclFuncParamConv    meConv;         /// Token class conversion type.
-    bool                mbValType;      /// Data type (false = REFTYPE, true = VALTYPE).
+	sal_uInt16          mnTokPos;       // Position of the token in the token array.
+	XclFuncParamConv    meConv;         // Token class conversion type.
+	bool                mbValType;      // Data type (false = REFTYPE, true = VALTYPE).
 };
 
 /** Vector of token position and conversion for all operands of an operator,
-    or for all parameters of a function. */
+	or for all parameters of a function. */
 struct XclExpOperandList : public ::std::vector< XclExpTokenConvInfo >
 {
-    inline explicit     XclExpOperandList() { reserve( 2 ); }
-    void                AppendOperand( sal_uInt16 nTokPos, XclFuncParamConv eConv, bool bValType );
+	inline explicit     XclExpOperandList() { reserve( 2 ); }
+	void                AppendOperand( sal_uInt16 nTokPos, XclFuncParamConv eConv, bool bValType );
 };
 
 void XclExpOperandList::AppendOperand( sal_uInt16 nTokPos, XclFuncParamConv eConv, bool bValType )
 {
-    resize( size() + 1 );
-    XclExpTokenConvInfo& rConvInfo = back();
-    rConvInfo.mnTokPos = nTokPos;
-    rConvInfo.meConv = eConv;
-    rConvInfo.mbValType = bValType;
+	resize( size() + 1 );
+	XclExpTokenConvInfo& rConvInfo = back();
+	rConvInfo.mnTokPos = nTokPos;
+	rConvInfo.meConv = eConv;
+	rConvInfo.mbValType = bValType;
 }
 
 typedef ScfRef< XclExpOperandList > XclExpOperandListRef;
@@ -116,19 +114,19 @@ typedef ::std::vector< XclExpOperandListRef > XclExpOperandListVector;
 /** Encapsulates all data needed for a call to an external function (macro, add-in). */
 struct XclExpExtFuncData
 {
-    String              maFuncName;         /// Name of the function.
-    bool                mbVBasic;           /// True = Visual Basic macro call.
-    bool                mbHidden;           /// True = Create hidden defined name.
+	String              maFuncName;         // Name of the function.
+	bool                mbVBasic;           // True = Visual Basic macro call.
+	bool                mbHidden;           // True = Create hidden defined name.
 
-    inline explicit     XclExpExtFuncData() : mbVBasic( false ), mbHidden( false ) {}
-    void                Set( const String& rFuncName, bool bVBasic, bool bHidden );
+	inline explicit     XclExpExtFuncData() : mbVBasic( false ), mbHidden( false ) {}
+	void                Set( const String& rFuncName, bool bVBasic, bool bHidden );
 };
 
 void XclExpExtFuncData::Set( const String& rFuncName, bool bVBasic, bool bHidden )
 {
-    maFuncName = rFuncName;
-    mbVBasic = bVBasic;
-    mbHidden = bHidden;
+	maFuncName = rFuncName;
+	mbVBasic = bVBasic;
+	mbHidden = bHidden;
 }
 
 // ----------------------------------------------------------------------------
@@ -167,12 +165,12 @@ public:
     inline void         AppendAttrPos( sal_uInt16 nPos ) { maAttrPosVec.push_back( nPos ); }
 
 private:
-    ScfUInt16Vec        maAttrPosVec;       /// Token array positions of tAttr tokens.
-    const XclExpScToken& mrTokData;         /// Data about processed function name token.
-    const XclFunctionInfo& mrFuncInfo;      /// Constant data about processed function.
-    XclExpExtFuncData   maExtFuncData;      /// Data for external functions (macro, add-in).
-    XclExpOperandListRef mxOperands;        /// Class conversion and position of all parameters.
-    const XclFuncParamInfo* mpParamInfo;    /// Information for current parameter.
+    ScfUInt16Vec        maAttrPosVec;       // Token array positions of tAttr tokens.
+    const XclExpScToken& mrTokData;         // Data about processed function name token.
+    const XclFunctionInfo& mrFuncInfo;      // Constant data about processed function.
+    XclExpExtFuncData   maExtFuncData;      // Data for external functions (macro, add-in).
+    XclExpOperandListRef mxOperands;        // Class conversion and position of all parameters.
+    const XclFuncParamInfo* mpParamInfo;    // Information for current parameter.
 };
 
 XclExpFuncData::XclExpFuncData( const XclExpScToken& rTokData,
@@ -236,20 +234,20 @@ void XclExpFuncData::FinishParam( sal_uInt16 nTokPos )
 /** Type of token class handling. */
 enum XclExpFmlaClassType
 {
-    EXC_CLASSTYPE_CELL,         /// Cell formula, shared formula.
-    EXC_CLASSTYPE_ARRAY,        /// Array formula, conditional formatting, data validation.
-    EXC_CLASSTYPE_NAME          /// Defined name, range list.
+    EXC_CLASSTYPE_CELL,         // Cell formula, shared formula.
+    EXC_CLASSTYPE_ARRAY,        // Array formula, conditional formatting, data validation.
+    EXC_CLASSTYPE_NAME          // Defined name, range list.
 };
 
 /** Configuration data of the formula compiler. */
 struct XclExpCompConfig
 {
-    XclFormulaType      meType;         /// Type of the formula to be created.
-    XclExpFmlaClassType meClassType;    /// Token class handling type.
-    bool                mbLocalLinkMgr; /// True = local (per-sheet) link manager, false = global.
-    bool                mbFromCell;     /// True = Any kind of cell formula (cell, array, shared).
-    bool                mb3DRefOnly;    /// True = Only 3D references allowed (e.g. names).
-    bool                mbAllowArrays;  /// True = Allow inline arrays.
+    XclFormulaType      meType;         // Type of the formula to be created.
+    XclExpFmlaClassType meClassType;    // Token class handling type.
+    bool                mbLocalLinkMgr; // True = local (per-sheet) link manager, false = global.
+    bool                mbFromCell;     // True = Any kind of cell formula (cell, array, shared).
+    bool                mb3DRefOnly;    // True = Only 3D references allowed (e.g. names).
+    bool                mbAllowArrays;  // True = Allow inline arrays.
 };
 
 /** The table containing configuration data for all formula types. */
@@ -275,20 +273,20 @@ struct XclExpCompData
 {
     typedef ScfRef< ScTokenArray > ScTokenArrayRef;
 
-    const XclExpCompConfig& mrCfg;          /// Configuration for current formula type.
-    ScTokenArrayRef     mxOwnScTokArr;      /// Own clone of a Calc token array.
-    XclTokenArrayIterator maTokArrIt;       /// Iterator in Calc token array.
-    XclExpLinkManager*  mpLinkMgr;          /// Link manager for current context (local/global).
-    XclExpRefLog*       mpRefLog;           /// Log for external references.
-    const ScAddress*    mpScBasePos;        /// Current cell position of the formula.
+    const XclExpCompConfig& mrCfg;          // Configuration for current formula type.
+    ScTokenArrayRef     mxOwnScTokArr;      // Own clone of a Calc token array.
+    XclTokenArrayIterator maTokArrIt;       // Iterator in Calc token array.
+    XclExpLinkManager*  mpLinkMgr;          // Link manager for current context (local/global).
+    XclExpRefLog*       mpRefLog;           // Log for external references.
+    const ScAddress*    mpScBasePos;        // Current cell position of the formula.
 
-    ScfUInt8Vec         maTokVec;           /// Byte vector containing token data.
-    ScfUInt8Vec         maExtDataVec;       /// Byte vector containing extended data (arrays, stacked NLRs).
-    XclExpOperandListVector maOpListVec;    /// Formula structure, maps operators to their operands.
-    ScfUInt16Vec        maOpPosStack;       /// Stack with positions of operand tokens waiting for an operator.
-    bool                mbStopAtSep;        /// True = Stop subexpression creation at an ocSep token.
-    bool                mbVolatile;         /// True = Formula contains volatile function.
-    bool                mbOk;               /// Current state of the compiler.
+    ScfUInt8Vec         maTokVec;           // Byte vector containing token data.
+    ScfUInt8Vec         maExtDataVec;       // Byte vector containing extended data (arrays, stacked NLRs).
+    XclExpOperandListVector maOpListVec;    // Formula structure, maps operators to their operands.
+    ScfUInt16Vec        maOpPosStack;       // Stack with positions of operand tokens waiting for an operator.
+    bool                mbStopAtSep;        // True = Stop subexpression creation at an ocSep token.
+    bool                mbVolatile;         // True = Formula contains volatile function.
+    bool                mbOk;               // Current state of the compiler.
 
     explicit            XclExpCompData( const XclExpCompConfig* pCfg );
 };
@@ -476,17 +474,17 @@ private:
     typedef ScfRef< XclExpCompData >                        XclExpCompDataRef;
     typedef ::std::vector< XclExpCompDataRef >              XclExpCompDataVector;
 
-    XclExpCompConfigMap maCfgMap;       /// Compiler configuration map for all formula types.
-    XclFunctionProvider maFuncProv;     /// Excel function data provider.
-    XclExpCompDataRef   mxData;         /// Working data for current formula.
-    XclExpCompDataVector maDataStack;   /// Stack for working data, when compiler is called recursively.
-    const XclBiff       meBiff;         /// Cached BIFF version to save GetBiff() calls.
-    const SCsCOL        mnMaxAbsCol;    /// Maximum column index.
-    const SCsROW        mnMaxAbsRow;    /// Maximum row index.
-    const SCsCOL        mnMaxScCol;     /// Maximum column index in Calc itself.
-    const SCsROW        mnMaxScRow;     /// Maximum row index in Calc itself.
-    const sal_uInt16    mnMaxColMask;   /// Mask to delete invalid bits in column fields.
-    const sal_uInt16    mnMaxRowMask;   /// Mask to delete invalid bits in row fields.
+    XclExpCompConfigMap maCfgMap;       // Compiler configuration map for all formula types.
+    XclFunctionProvider maFuncProv;     // Excel function data provider.
+    XclExpCompDataRef   mxData;         // Working data for current formula.
+    XclExpCompDataVector maDataStack;   // Stack for working data, when compiler is called recursively.
+    const XclBiff       meBiff;         // Cached BIFF version to save GetBiff() calls.
+    const SCsCOL        mnMaxAbsCol;    // Maximum column index.
+    const SCsROW        mnMaxAbsRow;    // Maximum row index.
+    const SCsCOL        mnMaxScCol;     // Maximum column index in Calc itself.
+    const SCsROW        mnMaxScRow;     // Maximum row index in Calc itself.
+    const sal_uInt16    mnMaxColMask;   // Mask to delete invalid bits in column fields.
+    const sal_uInt16    mnMaxRowMask;   // Mask to delete invalid bits in row fields.
 };
 
 // ----------------------------------------------------------------------------
@@ -2650,3 +2648,5 @@ XclTokenArrayRef XclExpFormulaCompiler::CreateNameXFormula(
 }
 
 // ============================================================================
+
+/* vim: set noet sw=4 ts=4: */
