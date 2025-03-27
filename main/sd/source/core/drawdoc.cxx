@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
@@ -176,9 +174,9 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 {
 	// #109538#
 	mpDrawPageListWatcher = ::std::auto_ptr<ImpDrawPageListWatcher>(
-        new ImpDrawPageListWatcher(*this));
+		new ImpDrawPageListWatcher(*this));
 	mpMasterPageListWatcher = ::std::auto_ptr<ImpMasterPageListWatcher>(
-        new ImpMasterPageListWatcher(*this));
+		new ImpMasterPageListWatcher(*this));
 
 	SetObjectShell(pDrDocSh);		// for the VCDrawModel
 
@@ -192,15 +190,15 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 	SdOptions* pOptions = SD_MOD()->GetSdOptions(meDocType);
 	pOptions->GetScale( nX, nY );
 
-    // #92067# Allow UI scale only for draw documents.
-    if( eType == DOCUMENT_TYPE_DRAW )
-        SetUIUnit( (FieldUnit)pOptions->GetMetric(), Fraction( nX, nY ) );	// user-defined
-    else
-        SetUIUnit( (FieldUnit)pOptions->GetMetric(), Fraction( 1, 1 ) );	// default
+	// #92067# Allow UI scale only for draw documents.
+	if( eType == DOCUMENT_TYPE_DRAW )
+		SetUIUnit( (FieldUnit)pOptions->GetMetric(), Fraction( nX, nY ) );	// user-defined
+	else
+		SetUIUnit( (FieldUnit)pOptions->GetMetric(), Fraction( 1, 1 ) );	// default
 
 	SetScaleUnit(MAP_100TH_MM);
 	SetScaleFraction(Fraction(1, 1));
-	SetDefaultFontHeight(847);     // 24p
+	SetDefaultFontHeight(847); // 24p
 
 	pItemPool->SetDefaultMetric(SFX_MAPUNIT_100TH_MM);
 	pItemPool->FreezeIdRanges();
@@ -218,16 +216,16 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 
 	// set linguistic options
 	{
-        const SvtLinguConfig    aLinguConfig;
+		const SvtLinguConfig	aLinguConfig;
 		SvtLinguOptions			aOptions;
 		aLinguConfig.GetOptions( aOptions );
 
 		SetLanguage( MsLangId::resolveSystemLanguageByScriptType(aOptions.nDefaultLanguage,
-            ::com::sun::star::i18n::ScriptType::LATIN), EE_CHAR_LANGUAGE );
+			::com::sun::star::i18n::ScriptType::LATIN), EE_CHAR_LANGUAGE );
 		SetLanguage( MsLangId::resolveSystemLanguageByScriptType(aOptions.nDefaultLanguage_CJK,
-            ::com::sun::star::i18n::ScriptType::ASIAN), EE_CHAR_LANGUAGE_CJK );
+			::com::sun::star::i18n::ScriptType::ASIAN), EE_CHAR_LANGUAGE_CJK );
 		SetLanguage( MsLangId::resolveSystemLanguageByScriptType(aOptions.nDefaultLanguage_CTL,
-            ::com::sun::star::i18n::ScriptType::COMPLEX), EE_CHAR_LANGUAGE_CTL );
+			::com::sun::star::i18n::ScriptType::COMPLEX), EE_CHAR_LANGUAGE_CTL );
 
 		mbOnlineSpell = aOptions.bIsSpellAuto;
 	}
@@ -247,7 +245,7 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 	// for korean and japanese languages we have a different default for apply spacing between asian, latin and ctl text
 	if( ( LANGUAGE_KOREAN  == eRealCTLLanguage ) || ( LANGUAGE_KOREAN_JOHAB == eRealCTLLanguage ) || ( LANGUAGE_JAPANESE == eRealCTLLanguage ) )
 	{
-        GetPool().GetSecondaryPool()->SetPoolDefaultItem( SvxScriptSpaceItem( sal_False, EE_PARA_ASIANCJKSPACING ) );
+		GetPool().GetSecondaryPool()->SetPoolDefaultItem( SvxScriptSpaceItem( sal_False, EE_PARA_ASIANCJKSPACING ) );
 	}
 
 	// set DefTab and SpellOptions
@@ -257,13 +255,13 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 
 	try
 	{
-	    Reference< XSpellChecker1 > xSpellChecker( LinguMgr::GetSpellChecker() );
-	    if ( xSpellChecker.is() )
-		    rOutliner.SetSpeller( xSpellChecker );
+		Reference< XSpellChecker1 > xSpellChecker( LinguMgr::GetSpellChecker() );
+		if ( xSpellChecker.is() )
+			rOutliner.SetSpeller( xSpellChecker );
 
-	    Reference< XHyphenator > xHyphenator( LinguMgr::GetHyphenator() );
-	    if( xHyphenator.is() )
-		    rOutliner.SetHyphenator( xHyphenator );
+		Reference< XHyphenator > xHyphenator( LinguMgr::GetHyphenator() );
+		if( xHyphenator.is() )
+			rOutliner.SetHyphenator( xHyphenator );
 
 		SetForbiddenCharsTable( new SvxForbiddenCharactersTable( ::comphelper::getProcessServiceFactory() ) );
 	}
@@ -276,8 +274,8 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 
 	if (mpDocSh)
 	{
-        sfx2::LinkManager *linkMgr = new sfx2::LinkManager(mpDocSh);
-        linkMgr->SetAutoAskUpdateAllLinks();
+		sfx2::LinkManager *linkMgr = new sfx2::LinkManager(mpDocSh);
+		linkMgr->SetAutoAskUpdateAllLinks();
 		SetLinkManager( linkMgr );
 	}
 
@@ -291,18 +289,18 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 		nCntrl &= ~EE_CNTRL_ONLINESPELLING;
 
 	nCntrl &= ~ EE_CNTRL_ULSPACESUMMATION;
-    if ( meDocType != DOCUMENT_TYPE_IMPRESS )
-        SetSummationOfParagraphs( sal_False );
-    else
-    {
-        SetSummationOfParagraphs( pOptions->IsSummationOfParagraphs() );
-    	if ( pOptions->IsSummationOfParagraphs() )
-	    	nCntrl |= EE_CNTRL_ULSPACESUMMATION;
-    }
+	if ( meDocType != DOCUMENT_TYPE_IMPRESS )
+		SetSummationOfParagraphs( sal_False );
+	else
+	{
+		SetSummationOfParagraphs( pOptions->IsSummationOfParagraphs() );
+		if ( pOptions->IsSummationOfParagraphs() )
+			nCntrl |= EE_CNTRL_ULSPACESUMMATION;
+	}
 	rOutliner.SetControlWord(nCntrl);
 
-    // Initialize the printer independent layout mode.
-    SetPrinterIndependentLayout (pOptions->GetPrinterIndependentLayout());
+	// Initialize the printer independent layout mode.
+	SetPrinterIndependentLayout (pOptions->GetPrinterIndependentLayout());
 
 	// Set the StyleSheetPool to the HitTestOutliner.
 	// The link to the StyleRequest handler of the document will be set
@@ -314,13 +312,13 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 
 	try
 	{
-	    Reference< XSpellChecker1 > xSpellChecker( LinguMgr::GetSpellChecker() );
-	    if ( xSpellChecker.is() )
-		    pHitTestOutliner->SetSpeller( xSpellChecker );
+		Reference< XSpellChecker1 > xSpellChecker( LinguMgr::GetSpellChecker() );
+		if ( xSpellChecker.is() )
+			pHitTestOutliner->SetSpeller( xSpellChecker );
 
-	    Reference< XHyphenator > xHyphenator( LinguMgr::GetHyphenator() );
-	    if( xHyphenator.is() )
-		    pHitTestOutliner->SetHyphenator( xHyphenator );
+		Reference< XHyphenator > xHyphenator( LinguMgr::GetHyphenator() );
+		if( xHyphenator.is() )
+			pHitTestOutliner->SetHyphenator( xHyphenator );
 	}
 	catch(...)
 	{
@@ -373,9 +371,7 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 }
 
 /*************************************************************************
-|*
 |* Destructor
-|*
 \************************************************************************/
 
 SdDrawDocument::~SdDrawDocument()
@@ -419,7 +415,7 @@ SdDrawDocument::~SdDrawDocument()
 	{
 		// if necessary delete FrameViews
 		pFrameView =
-            static_cast< ::sd::FrameView*>(mpFrameViewList->GetObject(i));
+			static_cast< ::sd::FrameView*>(mpFrameViewList->GetObject(i));
 
 		if (pFrameView)
 			delete pFrameView;
@@ -455,11 +451,9 @@ SdDrawDocument::~SdDrawDocument()
 }
 
 /*************************************************************************
-|*
 |* This methods creates a new document (SdDrawDocument) and gives back a
 |* pointer to it. The Drawing Engine uses this method to be able to put
 |* the document or parts of it into Clipboard/DragServer.
-|*
 \************************************************************************/
 
 SdrModel* SdDrawDocument::AllocModel() const
@@ -470,17 +464,17 @@ SdrModel* SdDrawDocument::AllocModel() const
 	{
 		// the document will created for Drag&Drop/Clipboard,
 		// for this the document has to know a DocShell (SvPersist)
-        SfxObjectShell*   pObj = NULL;
+		SfxObjectShell*   pObj = NULL;
 		::sd::DrawDocShell*		pNewDocSh = NULL;
 
-    	if( meDocType == DOCUMENT_TYPE_IMPRESS )
-    		mpCreatingTransferable->SetDocShell( new ::sd::DrawDocShell(
-                SFX_CREATE_MODE_EMBEDDED, sal_True, meDocType ) );
+		if( meDocType == DOCUMENT_TYPE_IMPRESS )
+			mpCreatingTransferable->SetDocShell( new ::sd::DrawDocShell(
+				SFX_CREATE_MODE_EMBEDDED, sal_True, meDocType ) );
 		else
-	        mpCreatingTransferable->SetDocShell( new ::sd::GraphicDocShell(
-                SFX_CREATE_MODE_EMBEDDED, sal_True, meDocType ) );
+			mpCreatingTransferable->SetDocShell( new ::sd::GraphicDocShell(
+				SFX_CREATE_MODE_EMBEDDED, sal_True, meDocType ) );
 
-        pNewDocSh = static_cast< ::sd::DrawDocShell*>( pObj = mpCreatingTransferable->GetDocShell() );
+		pNewDocSh = static_cast< ::sd::DrawDocShell*>( pObj = mpCreatingTransferable->GetDocShell() );
 		pNewDocSh->DoInitNew( NULL );
 		pNewModel = pNewDocSh->GetDoc();
 
@@ -503,7 +497,7 @@ SdrModel* SdDrawDocument::AllocModel() const
 			pNewStylePool->CopyLayoutSheets(aOldLayoutName, *pOldStylePool, aCreatedSheets );
 		}
 
-		pNewModel->NewOrLoadCompleted( DOC_LOADED );  // loaded from source document
+		pNewModel->NewOrLoadCompleted( DOC_LOADED ); // loaded from source document
 	}
 	else if( mbAllocDocSh )
 	{
@@ -511,7 +505,7 @@ SdrModel* SdDrawDocument::AllocModel() const
 		SdDrawDocument* pDoc = (SdDrawDocument*) this;
 		pDoc->SetAllocDocSh(sal_False);
 		pDoc->mxAllocedDocShRef = new ::sd::DrawDocShell(
-            SFX_CREATE_MODE_EMBEDDED, sal_True, meDocType);
+			SFX_CREATE_MODE_EMBEDDED, sal_True, meDocType);
 		pDoc->mxAllocedDocShRef->DoInitNew(NULL);
 		pNewModel = pDoc->mxAllocedDocShRef->GetDoc();
 	}
@@ -524,11 +518,9 @@ SdrModel* SdDrawDocument::AllocModel() const
 }
 
 /*************************************************************************
-|*
 |* This methods creates a new page (SdPage) and gives back a pointer to it.
 |* The Drawing Engine uses this method when loading to create pages (whose
-|* types are not knowed for it because these are DERIVATIONS of SdrPage).
-|*
+|* types are not known for it because these are DERIVATIONS of SdrPage).
 \************************************************************************/
 
 SdrPage* SdDrawDocument::AllocPage(FASTBOOL bMasterPage)
@@ -537,9 +529,7 @@ SdrPage* SdDrawDocument::AllocPage(FASTBOOL bMasterPage)
 }
 
 /*************************************************************************
-|*
 |* SetChanged(), the modele was changed
-|*
 \************************************************************************/
 
 void SdDrawDocument::SetChanged(sal_Bool bFlag)
@@ -563,24 +553,20 @@ void SdDrawDocument::SetChanged(sal_Bool bFlag)
 }
 
 /*************************************************************************
-|*
 |* NbcSetChanged(), the model changed, don't call anybody else
-|*
 \************************************************************************/
 
 void SdDrawDocument::NbcSetChanged(sal_Bool bFlag)
 {
-    // #100237# forward to baseclass
-    FmFormModel::SetChanged(bFlag);
+	// #100237# forward to baseclass
+	FmFormModel::SetChanged(bFlag);
 }
 
 /*************************************************************************
-|*
 |* NewOrLoadCompleted
 |*
 |* Will be called when the document was loaded respectively when it is
 |* certain that it will not be loaded any longer.
-|*
 \************************************************************************/
 
 void SdDrawDocument::NewOrLoadCompleted(DocCreationMode eMode)
@@ -646,7 +632,7 @@ void SdDrawDocument::NewOrLoadCompleted(DocCreationMode eMode)
 	String aName( SdResId(STR_STANDARD_STYLESHEET_NAME));
 	SetDefaultStyleSheet(static_cast<SfxStyleSheet*>(mxStyleSheetPool->Find(aName, SD_STYLE_FAMILY_GRAPHICS)));
 
-    // #119287# Set default StyleSheet for SdrGrafObj and SdrOle2Obj
+	// #119287# Set default StyleSheet for SdrGrafObj and SdrOle2Obj
 	SetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj(static_cast<SfxStyleSheet*>(mxStyleSheetPool->Find(String( SdResId(STR_POOLSHEET_OBJNOLINENOFILL)), SD_STYLE_FAMILY_GRAPHICS)));
 
 	// initialize Draw-Outliner and Document Outliner,
@@ -736,14 +722,14 @@ void SdDrawDocument::UpdateAllLinks()
 	{
 		pDocLockedInsertingLinks = this; // lock inserting links. only links in this document should by resolved
 
-		pLinkManager->UpdateAllLinks();  // query box: update all links?
+		pLinkManager->UpdateAllLinks(); // query box: update all links?
 
 		if( pDocLockedInsertingLinks == this )
-			pDocLockedInsertingLinks = NULL;  // unlock inserting links
+			pDocLockedInsertingLinks = NULL; // unlock inserting links
 	}
 }
 
-/** this loops over the presentation objectes of a page and repairs some new settings
+/** this loops over the presentation objects of a page and repairs some new settings
 	from old binary files and resets all default strings for empty presentation objects.
 */
 void SdDrawDocument::NewOrLoadCompleted( SdPage* pPage, SdStyleSheetPool* pSPool )
@@ -790,7 +776,7 @@ void SdDrawDocument::NewOrLoadCompleted( SdPage* pPage, SdStyleSheetPool* pSPool
 					if( pOPO && pOPO->GetOutlinerMode() == OUTLINERMODE_DONTKNOW )
 						pOPO->SetOutlinerMode( OUTLINERMODE_TITLEOBJECT );
 
-					// sal_True: in doing so do not delete hard attributes 
+					// sal_True: in doing so do not delete hard attributes
 					if (pTitleSheet)
 						pObj->SetStyleSheet(pTitleSheet, sal_True);
 				}
@@ -836,10 +822,8 @@ void SdDrawDocument::NewOrLoadCompleted( SdPage* pPage, SdStyleSheetPool* pSPool
 }
 
 /*************************************************************************
-|*
 |* Local Outliner that is used for the outline mode.
 |* If necessary, insert OutlinerViews into this outliner !
-|*
 \************************************************************************/
 
 ::sd::Outliner* SdDrawDocument::GetOutliner(sal_Bool bCreateOutliner)
@@ -860,10 +844,8 @@ void SdDrawDocument::NewOrLoadCompleted( SdPage* pPage, SdStyleSheetPool* pSPool
 
 
 /*************************************************************************
-|*
 |* Internal Outliner that is used for creating text objects.
 |* No OutlinerViews will be inserted into this Outliner!
-|*
 \************************************************************************/
 
 ::sd::Outliner* SdDrawDocument::GetInternalOutliner(sal_Bool bCreateOutliner)
@@ -890,7 +872,7 @@ void SdDrawDocument::NewOrLoadCompleted( SdPage* pPage, SdStyleSheetPool* pSPool
 
 	// MT: Who fills it with spam has to empty it right after:
 	// Advantages:
-	// a) No uncessary clear calls.
+	// a) No unnecessary clear calls.
 	// b) No spam in memory.
 	DBG_ASSERT( !mpInternalOutliner || ( ( mpInternalOutliner->GetParagraphCount() == 1 ) && ( mpInternalOutliner->GetText( mpInternalOutliner->GetParagraph( 0 ) ).Len() == 0 ) ), "InternalOutliner: Nicht leer!" );
 
@@ -898,9 +880,7 @@ void SdDrawDocument::NewOrLoadCompleted( SdPage* pPage, SdStyleSheetPool* pSPool
 }
 
 /*************************************************************************
-|*
 |* OnlineSpelling on/off
-|*
 \************************************************************************/
 
 void SdDrawDocument::SetOnlineSpell(sal_Bool bIn)
@@ -955,9 +935,7 @@ void SdDrawDocument::SetOnlineSpell(sal_Bool bIn)
 
 
 /*************************************************************************
-|*
 |* OnlineSpelling: Marking on/off
-|*
 \************************************************************************/
 
 uno::Reference< uno::XInterface > SdDrawDocument::createUnoModel()
@@ -987,14 +965,14 @@ SvxNumType SdDrawDocument::GetPageNumType() const
 void SdDrawDocument::SetPrinterIndependentLayout (sal_Int32 nMode)
 {
 	// #108104#
-    // DBG_ASSERT (mpDocSh!=NULL, "No available document shell to set ref device at.");
+	// DBG_ASSERT (mpDocSh!=NULL, "No available document shell to set ref device at.");
 
 	switch (nMode)
-    {
-        case ::com::sun::star::document::PrinterIndependentLayout::DISABLED:
-        case ::com::sun::star::document::PrinterIndependentLayout::ENABLED:
-            // Just store supported modes and inform the doc shell.
-            mnPrinterIndependentLayout = nMode;
+	{
+		case ::com::sun::star::document::PrinterIndependentLayout::DISABLED:
+		case ::com::sun::star::document::PrinterIndependentLayout::ENABLED:
+			// Just store supported modes and inform the doc shell.
+			mnPrinterIndependentLayout = nMode;
 
 			// #108104#
 			// Since it is possible that a SdDrawDocument is constructed without a
@@ -1005,17 +983,17 @@ void SdDrawDocument::SetPrinterIndependentLayout (sal_Int32 nMode)
 				mpDocSh->UpdateRefDevice ();
 			}
 
-            break;
+			break;
 
-        default:
-            // Ignore unknown values.
-            break;
-    }
+		default:
+			// Ignore unknown values.
+			break;
+	}
 }
 
 sal_Int32 SdDrawDocument::GetPrinterIndependentLayout (void)
 {
-    return mnPrinterIndependentLayout;
+	return mnPrinterIndependentLayout;
 }
 
 bool SdDrawDocument::IsStartWithPresentation() const
@@ -1047,29 +1025,29 @@ void SdDrawDocument::SetCalcFieldValueHdl(::Outliner* pOutliner)
 
 sal_uInt16 SdDrawDocument::GetAnnotationAuthorIndex( const rtl::OUString& rAuthor )
 {
-    // force current user to have first color
-    if( maAnnotationAuthors.empty() )
-    {
-        SvtUserOptions aUserOptions;
-        maAnnotationAuthors.push_back( aUserOptions.GetFullName() );
-    }
+	// force current user to have first color
+	if( maAnnotationAuthors.empty() )
+	{
+		SvtUserOptions aUserOptions;
+		maAnnotationAuthors.push_back( aUserOptions.GetFullName() );
+	}
 
-    sal_uInt16 idx = 0;
-    for( std::vector< OUString >::iterator iter( maAnnotationAuthors.begin() ); iter != maAnnotationAuthors.end(); iter++ )
-    {
-        if( (*iter) == rAuthor )
-        {
-            break;
-        }
-        idx++;
-    }
+	sal_uInt16 idx = 0;
+	for( std::vector< OUString >::iterator iter( maAnnotationAuthors.begin() ); iter != maAnnotationAuthors.end(); iter++ )
+	{
+		if( (*iter) == rAuthor )
+		{
+			break;
+		}
+		idx++;
+	}
 
-    if( idx == maAnnotationAuthors.size() )
-    {
-        maAnnotationAuthors.push_back( rAuthor );
-    }
+	if( idx == maAnnotationAuthors.size() )
+	{
+		maAnnotationAuthors.push_back( rAuthor );
+	}
 
-    return idx;
+	return idx;
 }
 
-// eof
+/* vim: set noet sw=4 ts=4: */

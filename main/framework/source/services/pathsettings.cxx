@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_framework.hxx"
@@ -85,7 +83,7 @@ const sal_Int32 IDGROUP_COUNT           = 4;
 
 sal_Int32 impl_getPropGroup(sal_Int32 nID)
 {
-    return (nID % IDGROUP_COUNT);
+	return (nID % IDGROUP_COUNT);
 }
 
 // ______________________________________________
@@ -129,7 +127,7 @@ DEFINE_INIT_SERVICE                     (   PathSettings,
                                                 /*Attention
                                                     I think we don't need any mutex or lock here ... because we are called by our own static method impl_createInstance()
                                                     to create a new instance of this class by our own supported service factory.
-                                                    see macro DEFINE_XSERVICEINFO_MULTISERVICE and "impl_initService()" for further informations!
+                                                    see macro DEFINE_XSERVICEINFO_MULTISERVICE and "impl_initService()" for further information!
                                                 */
 
                                                 // fill cache
@@ -240,9 +238,9 @@ void PathSettings::impl_readAll()
 // NO substitution here ! It's done outside ...
 OUStringList PathSettings::impl_readOldFormat(const ::rtl::OUString& sPath)
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "PathSettings::impl_readOldFormat" );
-    css::uno::Reference< css::container::XNameAccess > xCfg( fa_getCfgOld() );
-    OUStringList aPathVal;
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "PathSettings::impl_readOldFormat" );
+	css::uno::Reference< css::container::XNameAccess > xCfg( fa_getCfgOld() );
+	OUStringList aPathVal;
 
 	if( xCfg->hasByName(sPath) )
 	{
@@ -261,7 +259,7 @@ OUStringList PathSettings::impl_readOldFormat(const ::rtl::OUString& sPath)
 		}
 	}
 
-    return aPathVal;
+	return aPathVal;
 }
 
 //-----------------------------------------------------------------------------
@@ -289,16 +287,16 @@ PathSettings::PathInfo PathSettings::impl_readNewFormat(const ::rtl::OUString& s
 
     // read state props
     xPath->getByName(CFGPROP_ISSINGLEPATH) >>= aPathVal.bIsSinglePath;
-    
+
     // analyze finalized/mandatory states
     aPathVal.bIsReadonly = sal_False;
     css::uno::Reference< css::beans::XProperty > xInfo(xPath, css::uno::UNO_QUERY);
     if (xInfo.is())
     {
         css::beans::Property aInfo = xInfo->getAsProperty();
-        sal_Bool bFinalized = ((aInfo.Attributes & css::beans::PropertyAttribute::READONLY  ) == css::beans::PropertyAttribute::READONLY  );
+        sal_Bool bFinalized = ((aInfo.Attributes & css::beans::PropertyAttribute::READONLY ) == css::beans::PropertyAttribute::READONLY );
 		//sal_Bool bMandatory = ((aInfo.Attributes & css::beans::PropertyAttribute::REMOVEABLE) != css::beans::PropertyAttribute::REMOVEABLE);
-    
+
         // Note: Till we support finalized / mandatory on our API more in detail we handle
         // all states simple as READONLY ! But because all really needed paths are "mandatory" by default
         // we have to handle "finalized" as the real "readonly" indicator .
@@ -317,9 +315,9 @@ void PathSettings::impl_storePath(const PathSettings::PathInfo& aPath)
     css::uno::Reference< css::container::XNameAccess > xCfgNew = fa_getCfgNew();
     css::uno::Reference< css::container::XNameAccess > xCfgOld = fa_getCfgOld();
 
-    // try to replace path-parts with well known and uspported variables.
-    // So an office can be moved easialy to another location without losing
-    // it's related paths.
+    // try to replace path-parts with well known and supported variables.
+    // So an office can be moved easily to another location without losing
+    // its related paths.
     PathInfo aResubstPath(aPath);
     impl_subst(aResubstPath, sal_True);
 
@@ -405,7 +403,7 @@ PathSettings::EChangeOp PathSettings::impl_updatePath(const ::rtl::OUString& sPa
         aPath.sPathName = sPath;
         // replace all might existing variables with real values
         // Do it before these old paths will be compared against the
-        // new path configuration. Otherwise some striungs uses different variables ... but substitution
+        // new path configuration. Otherwise some strings uses different variables ... but substitution
         // will produce strings with same content (because some variables are redundant!)
         impl_subst(aPath, sal_False);
     }
@@ -424,7 +422,7 @@ PathSettings::EChangeOp PathSettings::impl_updatePath(const ::rtl::OUString& sPa
         OUStringList lOldVals = impl_readOldFormat(sPath);
         // replace all might existing variables with real values
         // Do it before these old paths will be compared against the
-        // new path configuration. Otherwise some striungs uses different variables ... but substitution
+        // new path configuration. Otherwise some strings uses different variables ... but substitution
         // will produce strings with same content (because some variables are redundant!)
         impl_subst(lOldVals, fa_getSubstitution(), sal_False);
         impl_mergeOldUserPaths(aPath, lOldVals);
@@ -846,7 +844,7 @@ void PathSettings::impl_setPathValue(      sal_Int32      nID ,
         throw css::container::NoSuchElementException();
 
     // We work on a copied path ... so we can be sure that errors during this operation
-    // does not make our internal cache invalid  .-)
+    // does not make our internal cache invalid .-)
     PathSettings::PathInfo aChangePath(*pOrgPath);
 
     switch(impl_getPropGroup(nID))
@@ -948,7 +946,7 @@ void PathSettings::impl_setPathValue(      sal_Int32      nID ,
     */
 
     // first we should try to store the changed (copied!) path ...
-    // In case an error occure on saving time an exception is thrown ...
+    // In case an error occurs on saving time an exception is thrown ...
     // If no exception occurs we can update our internal cache (means
     // we can overwrite pOrgPath !
     impl_storePath(aChangePath);
@@ -968,38 +966,38 @@ sal_Bool PathSettings::impl_isValidPath(const OUStringList& lPath) const
             return sal_False;
     }
 
-    return sal_True;
+	return sal_True;
 }
 
 //-----------------------------------------------------------------------------
 sal_Bool PathSettings::impl_isValidPath(const ::rtl::OUString& sPath) const
 {
-    // allow empty path to reset a path.
+	// allow empty path to reset a path.
 // idea by LLA to support empty paths
-//    if (sPath.getLength() == 0)
-//    {
-//        return sal_True;
-//    }
-    
-    return (! INetURLObject(sPath).HasError());
+//	if (sPath.getLength() == 0)
+//	{
+//		return sal_True;
+//	}
+
+	return (! INetURLObject(sPath).HasError());
 }
 
 //-----------------------------------------------------------------------------
 ::rtl::OUString impl_extractBaseFromPropName(const ::rtl::OUString& sPropName)
 {
-    sal_Int32 i = -1;
+	sal_Int32 i = -1;
 
-    i = sPropName.indexOf(POSTFIX_INTERNAL_PATHES);
-    if (i > -1)
-        return sPropName.copy(0, i);
-    i = sPropName.indexOf(POSTFIX_USER_PATHES);
-    if (i > -1)
-        return sPropName.copy(0, i);
-    i = sPropName.indexOf(POSTFIX_WRITE_PATH);
-    if (i > -1)
-        return sPropName.copy(0, i);
+	i = sPropName.indexOf(POSTFIX_INTERNAL_PATHES);
+	if (i > -1)
+		return sPropName.copy(0, i);
+	i = sPropName.indexOf(POSTFIX_USER_PATHES);
+	if (i > -1)
+		return sPropName.copy(0, i);
+	i = sPropName.indexOf(POSTFIX_WRITE_PATH);
+	if (i > -1)
+		return sPropName.copy(0, i);
 
-    return sPropName;
+	return sPropName;
 }
 
 //-----------------------------------------------------------------------------
@@ -1101,7 +1099,7 @@ css::uno::Reference< css::util::XStringSubstitution > PathSettings::fa_getSubsti
     if (! xSubst.is())
     {
         // create the needed substitution service.
-        // We must replace all used variables inside readed path values.
+        // We must replace all used variables inside read path values.
         // In case we can't do so ... the whole office can't work really.
         // That's why it seems to be OK to throw a RuntimeException then.
         xSubst = css::uno::Reference< css::util::XStringSubstitution >(
@@ -1181,3 +1179,5 @@ css::uno::Reference< css::container::XNameAccess > PathSettings::fa_getCfgNew()
 }
 
 } // namespace framework
+
+/* vim: set noet sw=4 ts=4: */
