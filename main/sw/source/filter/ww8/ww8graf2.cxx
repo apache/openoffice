@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
-
 
 #include <iterator>
 #include <hintids.hxx>
@@ -129,7 +125,7 @@ sal_uLong wwZOrderer::GetEscherObjectPos( sal_uLong nSpId,
     sal_uInt16 nFound = GetEscherObjectIdx(nSpId);
     // Match the ordering position from the ShapeOrders to the ordering of all
     // objects in the document, there is a complexity when escherobjects
-    // contain inlines objects, we need to consider thsose as part of the
+    // contain inlines objects, we need to consider those as part of the
     // escher count
     sal_uLong nRet=0;
     myeiter aIter = maEscherLayer.begin();
@@ -191,8 +187,8 @@ void wwZOrderer::InsertTextLayerObject(SdrObject* pObject)
     }
     else
     {
-        //If we are inside an escher objects, place us just after that
-        //escher obj, and increment its inline count
+        // If we are inside an escher objects, place us just after that
+        // escher obj, and increment its inline count
         sal_uInt16 nIdx = maIndexes.top();
         myeiter aEnd = MapEscherIdxToIter(nIdx);
 
@@ -537,7 +533,7 @@ SwFrmFmt* SwWW8ImplReader::ImportGraf(SdrTextObj* pTextObj,
             //              and the current PaM point's behind the position if
             //              it is anchored in content; because this anchor add
             //              a character into the textnode.
-            //              IussueZilla task 2806
+            //              IssueZilla task 2806
             if (FLY_AS_CHAR ==
                 pFlyFmtOfJustInsertedGraphic->GetAnchor().GetAnchorId() )
             {
@@ -602,9 +598,9 @@ SwFrmFmt* SwWW8ImplReader::ImportGraf(SdrTextObj* pTextObj,
 
                 if( pRecord )
                 {
-                    //A graphic of this type in this location is always
-                    //inline, and uses the pic in the same mould as ww6
-                    //graphics.
+                    // A graphic of this type in this location is always
+                    // inline, and uses the pic in the same mould as ww6
+                    // graphics.
                     if (pWFlyPara && pWFlyPara->bGrafApo)
                     {
                         WW8FlySet aFlySet(*this, pWFlyPara, pSFlyPara, true);
@@ -622,8 +618,8 @@ SwFrmFmt* SwWW8ImplReader::ImportGraf(SdrTextObj* pTextObj,
 
                         aAttrSet.Put(aFlySet);
                     }
-			//Modified for i120717,for graf importing from MS Word 2003 binary format, 
-			//there is no border distance.
+			// Modified for i120717,for graf importing from MS Word 2003 binary format, 
+			// there is no border distance.
                     /*Rectangle aInnerDist(   pRecord->nDxTextLeft,
                         pRecord->nDyTextTop, pRecord->nDxTextRight,
                         pRecord->nDyTextBottom  );*/
@@ -819,4 +815,4 @@ void WW8FSPAShadowToReal( WW8_FSPA_SHADOW * pFSPAS, WW8_FSPA * pFSPA )
 }
 #endif // defined __WW8_NEEDS_COPY
 
-/* vi:set tabstop=4 shiftwidth=4 expandtab: */
+/* vim: set noet sw=4 ts=4: */
