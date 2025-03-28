@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svtools.hxx"
 
-// this file contains code from filectrl.cxx which needs to be compiled with enabled exception hanling
+// this file contains code from filectrl.cxx which needs to be compiled with enabled exception handling
 #include <svtools/filectrl.hxx>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <com/sun/star/ui/dialogs/XFilePicker.hpp>

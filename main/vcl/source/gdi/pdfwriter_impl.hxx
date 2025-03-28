@@ -993,7 +993,7 @@ i12626
     void beginCompression();
     void endCompression();
     void beginRedirect( SvStream* pStream, const Rectangle& );
-    // returns an empty rect if no redirection is happending
+    // returns an empty rect if no redirection is happening
     Rectangle getRedirectTargetRect() const;
     SvStream* endRedirect();
 
