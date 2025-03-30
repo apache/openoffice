@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -27,14 +27,14 @@
 #
 # usage: see below
 #
-#************************************************************************* 
+#*************************************************************************
 
 package SourceConfig;
 
 use strict;
 
-use constant SOURCE_CONFIG_FILE_NAME => 'source_config'; 
-use constant SOURCE_CONFIG_VERSION => 3; 
+use constant SOURCE_CONFIG_FILE_NAME => 'source_config';
+use constant SOURCE_CONFIG_VERSION => 3;
 
 use Carp;
 use Cwd;
@@ -53,7 +53,7 @@ sub new {
     my $class = ref($proto) || $proto;
     my $source_root = shift;
     my @additional_repositories = @_;
-    
+
     my $self = {};
     $self->{USER_SOURCE_ROOT} = undef;
     $self->{SOURCE_CONFIG_FILE} = undef;
@@ -61,9 +61,9 @@ sub new {
         $source_root = Cwd::realpath($source_root);
         $source_root =~ s/\\|\/$//;
         if (-f $source_root) {
-            # We have path to source_config 
+            # We have path to source_config
             if (File::Basename::basename($source_root) eq 'source_config') {
-                # We have path to source_config 
+                # We have path to source_config
                 $self->{SOURCE_CONFIG_FILE} = $source_root;
                 $source_root = File::Basename::dirname($source_root);
             } else {
@@ -106,7 +106,7 @@ sub new {
     {
         ${$self->{REPOSITORIES}}{File::Basename::basename($additional_repository)} = $additional_repository;
     }
-    
+
     read_config_file($self);
    	get_module_paths($self);
     bless($self, $class);
@@ -119,14 +119,14 @@ sub get_version {
     return SOURCE_CONFIG_VERSION;
 };
 
-sub get_repositories 
-{   
+sub get_repositories
+{
     my $self        = shift;
     return sort keys %{$self->{REPOSITORIES}};
 }
 
-sub add_repository 
-{   
+sub add_repository
+{
     my $self        = shift;
     my $new_rep_path = shift;
     $new_rep_path = Cwd::realpath($new_rep_path);
@@ -189,14 +189,14 @@ sub get_module_build_list {
     };
 }
 
-sub get_all_modules 
-{   
+sub get_all_modules
+{
     my $self = shift;
     my $module = shift;
     return sort keys %{$self->{MODULE_PATHS}};
 };
 
-sub get_active_modules 
+sub get_active_modules
 {
     my $self        = shift;
     if (scalar keys %{$self->{ACTIVATED_MODULES}}) {
@@ -417,7 +417,7 @@ sub add_content {
     my $message_part1;
     my $warning_message;
     my $activated_entries;
-    
+
     if ($entries_to_add == $self->{NEW_MODULES}) {
         $self->{NEW_MODULES} = [];
         $message_part1 = "Module(s):\n";
@@ -436,7 +436,7 @@ sub add_content {
             $message .= "$entry "
         };
     };
-    
+
     push(@{$self->{REPORT_MESSAGES}}, "\n$message_part1 $message\nhave been added to the ". $self->get_config_file_default_path()."\n") if ($message);
     push (@{$self->{WARNINGS}}, "\nWARNING: $message_part1 $warning_message\nare already added to the ". $self->get_config_file_default_path()."\n") if ($warning_message);
 };
@@ -487,16 +487,16 @@ sub generate_config_file {
     if (scalar keys %removed_modules) {
         my @deleted_modules = keys %removed_modules;
         push(@{$self->{REPORT_MESSAGES}}, "\nModules: @deleted_modules\nhave been removed from the ". $self->get_config_file_default_path()."\n");
-    
+
     };
     if (scalar keys %removed_repositories) {
         my @deleted_repositories = keys %removed_repositories;
         push(@{$self->{REPORT_MESSAGES}}, "\nRepositories: @deleted_repositories\nhave been removed from the ". $self->get_config_file_default_path()."\n");
-    
+
     };
 
     # Writing file, printing warnings and reports
-    
+
     #check if we need to write a new file
     my $write_needed = 0;
     if ((scalar @{$self->{CONFIG_FILE_CONTENT}}) != (scalar @config_content_new)) {
@@ -553,7 +553,7 @@ SourceConfig - Perl extension for parsing general info databases
 
     # Add a repository new_repository for the actual workspace (via full path):
     $a->add_repository(/DEV300/new_repository);
-  
+
 =head1 DESCRIPTION
 
 SourceConfig is a perl extension to load and parse General Info Databses.

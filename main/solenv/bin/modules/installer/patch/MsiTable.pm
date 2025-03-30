@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 package installer::patch::MsiTable;
@@ -26,7 +26,7 @@ package installer::patch::MsiTable;
     package installer::patch::MsiTable - Class that represents one table of an Msi file.
 
 =cut
-    
+
 use installer::patch::MsiRow;
 
 use strict;
@@ -91,7 +91,7 @@ sub SetColumnData ($@)
 sub SetIndexColumns ($@)
 {
     my ($self, @index_columns) = @_;
-    
+
     $self->{'index_columns'} = [@index_columns];
 }
 
@@ -101,7 +101,7 @@ sub SetIndexColumns ($@)
 sub SetCodepage ($$)
 {
     my ($self, $codepage) = @_;
-    
+
     $self->{'codepage'} = $codepage;
 }
 
@@ -144,7 +144,7 @@ sub ReadFile ($$)
         $self->{'is_valid'} = 0;
         return;
     }
-    
+
     open my $in, "<", $filename;
 
     my $columns = Trim(<$in>);
@@ -180,7 +180,7 @@ sub ReadFile ($$)
     {
         # Remove all trailing returns and newlines.  Keep trailing spaces and tabs.
         s/[\r\n]+$//g;
-        
+
         my @items = split(/\t/, $_);
         push @$rows, new installer::patch::MsiRow($self, @items);
     }
@@ -193,9 +193,9 @@ sub ReadFile ($$)
 
 
 =head WriteFile($self, $filename)
-    
+
     Write a text file containing the current table content.
-    
+
 =cut
 sub WriteFile ($$)
 {
@@ -246,7 +246,7 @@ sub GetName ($)
 =head2 GetColumnCount($self)
 
     Return the number of columns in the table.
-    
+
 =cut
 sub GetColumnCount ($)
 {
@@ -261,7 +261,7 @@ sub GetColumnCount ($)
 =head2 GetRowCount($self)
 
     Return the number of rows in the table.
-    
+
 =cut
 sub GetRowCount ($)
 {
@@ -306,7 +306,7 @@ sub GetColumnIndex ($$)
     in column with index $index_column_index.
 
     Return -1 if now such row is found.
-    
+
 =cut
 sub GetRowIndex ($$$)
 {
@@ -334,7 +334,7 @@ sub GetRowIndex ($$$)
     $selector_column_value and return its value in the $value_column.
 
 =cut
-    
+
 sub GetValue ($$$$)
 {
     my ($self, $selector_column, $selector_column_value, $value_column) = @_;
@@ -356,7 +356,7 @@ sub GetValue ($$$$)
 =head2 GetRow($self, $column, $value)
 
     Return the (first) row which has $value in $column.
-    
+
 =cut
 sub GetRow ($$$)
 {
@@ -368,7 +368,7 @@ sub GetRow ($$$)
         printf STDERR "ERROR: unknown column $column in table $self->{'name'}\n";
         return undef;
     }
-    
+
     foreach my $row (@{$self->{'rows'}})
     {
         if ($row->GetValue($column_index) eq $value)
@@ -381,7 +381,7 @@ sub GetRow ($$$)
         $column,
         $value,
         table $self->{'name'});
-        
+
     return undef;
 }
 
@@ -391,9 +391,9 @@ sub GetRow ($$$)
 =head2 GetAllRows ($self)
 
     Return the reference to an array that contains all rows of the table.
-    
+
 =cut
-    
+
 sub GetAllRows ($)
 {
     my $self = shift;
@@ -413,7 +413,7 @@ sub GetAllRows ($)
 
     Rows are compared by their values of the index column.  By default this is the first element of
     $self->{'index_columns'} but is overruled by the last key that starts with a '*'.
-    
+
 =cut
 sub SetRow ($@)
 {
@@ -422,7 +422,7 @@ sub SetRow ($@)
 
     my @items = ();
     my $index_column = $self->{'index_columns'}->[0];
-    
+
     # Key/Value has to have an even number of entries.
     MsiTools::Die("invalid arguments given to MsiTable::SetRow()\n") if (scalar @data%2) != 0;
 

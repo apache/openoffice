@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,23 +7,23 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
 package installer::windows::file;
 
-use Digest::MD5; 
+use Digest::MD5;
 use installer::existence;
 use installer::exiter;
 use installer::files;
@@ -49,7 +49,7 @@ use strict;
 sub assign_cab_to_files
 {
 	my ( $filesref ) = @_;
-	
+
 	my $infoline = "";
 
 	foreach my $file (@$filesref)
@@ -95,7 +95,7 @@ sub assign_cab_to_files
         $count{$cabfile} = $filecount;
 		$installer::globals::cabfilecounter{$cabfile} = $offset;
 		$offset = $offset + $filecount;
-		
+
 		$installer::globals::lastsequence{$cabfile} = $offset - 1;
 	}
 
@@ -122,14 +122,14 @@ sub assign_cab_to_files
 sub assign_sequencenumbers_to_files
 {
 	my ( $filesref ) = @_;
-	
+
 	my %directaccess = ();
 	my %allassigns = ();
 
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
 	{
 		my $onefile = ${$filesref}[$i];
-		
+
 		# Keeping order in cabinet files
 		# -> collecting all files in one cabinet file
 		# -> sorting files and assigning numbers
@@ -144,7 +144,7 @@ sub assign_sequencenumbers_to_files
 		if ( ! exists($allassigns{$cabfilename}) )
 		{
 			my %onecabfile = ();
-			$onecabfile{$onefile->{'destination'}} = 1;			
+			$onecabfile{$onefile->{'destination'}} = 1;
 			$allassigns{$cabfilename} = \%onecabfile;
 		}
 		else
@@ -152,9 +152,9 @@ sub assign_sequencenumbers_to_files
 			$allassigns{$cabfilename}->{$onefile->{'destination'}} = 1;
 		}
 	}
-	
+
 	# Sorting each hash and assigning numbers
-	# The destination of the file determines the sort order, not the filename! 
+	# The destination of the file determines the sort order, not the filename!
 	my $cabfile;
 	foreach $cabfile ( sort keys %allassigns )
 	{
@@ -163,7 +163,7 @@ sub assign_sequencenumbers_to_files
 		foreach $dest ( sort keys %{$allassigns{$cabfile}} ) # <- sorting the destination!
 		{
 			my $directaccessnumber = $directaccess{$dest};
-            ${$filesref}[$directaccessnumber]->{'assignedsequencenumber'} = $counter;			
+            ${$filesref}[$directaccessnumber]->{'assignedsequencenumber'} = $counter;
 			$counter++;
 		}
 	}
@@ -184,15 +184,15 @@ sub assign_sequencenumbers_to_files
 sub generate_new_short_componentname
 {
 	my ($componentname) = @_;
-	
+
 	my $startversion = substr($componentname, 0, 60); # taking only the first 60 characters
 	my $subid = installer::windows::msiglobal::calculate_id($componentname, 9); # taking only the first 9 digits
 	my $shortcomponentname = $startversion . "_" . $subid;
-	
+
 	if ( exists($installer::globals::allshortcomponents{$shortcomponentname}) ) { installer::exiter::exit_program("Failed to create unique component name: \"$shortcomponentname\"", "generate_new_short_componentname"); }
-	
+
 	$installer::globals::allshortcomponents{$shortcomponentname} = 1;
-	
+
 	return $shortcomponentname;
 }
 
@@ -205,9 +205,9 @@ sub get_file_component_name
 	my ($fileref, $filesref) = @_;
 
 	my $componentname = "";
-	
+
 	# Special handling for files with ASSIGNCOMPOMENT
-	
+
 	my $styles = "";
 	if ( $fileref->{'Styles'} ) { $styles = $fileref->{'Styles'}; }
 	if ( $styles =~ /\bASSIGNCOMPOMENT\b/ )
@@ -222,22 +222,22 @@ sub get_file_component_name
 		# both have the same destination directory.
 		# both have the same "gid" -> both were packed in the same zip file
 		# All other files are included into different components!
-	
+
 		# my $componentname = $fileref->{'gid'} . "_" . $fileref->{'Dir'};
 
 		# $fileref->{'Dir'} is not sufficient! All files in a zip file have the same $fileref->{'Dir'},
 		# but can be in different subdirectories.
 		# Solution: destination=share\Scripts\beanshell\Capitalise\capitalise.bsh
-		# in which the filename (capitalise.bsh) has to be removed and all backslashes (slashes) are 
+		# in which the filename (capitalise.bsh) has to be removed and all backslashes (slashes) are
 		# converted into underline.
-	
+
 		my $destination = $fileref->{'destination'};
 		installer::pathanalyzer::get_path_from_fullqualifiedname(\$destination);
 		$destination =~ s/\s//g;
 		$destination =~ s/\\/\_/g;
 		$destination =~ s/\//\_/g;
 		$destination =~ s/\_\s*$//g;	# removing ending underline
-	
+
 		$componentname = $fileref->{'gid'} . "__" . $destination;
 
 		# Files with different languages, need to be packed into different components.
@@ -246,7 +246,7 @@ sub get_file_component_name
 		if ( $fileref->{'ismultilingual'} )
 		{
 			my $officelanguage = $fileref->{'specificlanguage'};
-			$componentname = $componentname . "_" . $officelanguage;	
+			$componentname = $componentname . "_" . $officelanguage;
 		}
 
 		$componentname = lc($componentname);	# componentnames always lowercase
@@ -255,19 +255,19 @@ sub get_file_component_name
 		$componentname =~ s/\./\_/g;			# converting "-" to "_"
 
 		# Attention: Maximum length for the componentname is 72
-		# %installer::globals::allcomponents_in_this_database : resetted for each database	
+		# %installer::globals::allcomponents_in_this_database : resetted for each database
 		# %installer::globals::allcomponents : not resetted for each database
 		# Component strings must be unique for the complete product, because they are used for
-		# the creation of the globally unique identifier.	
+		# the creation of the globally unique identifier.
 
 		my $fullname = $componentname;  # This can be longer than 72
-		
+
 		if (( exists($installer::globals::allcomponents{$fullname}) ) && ( ! exists($installer::globals::allcomponents_in_this_database{$fullname}) ))
 		{
 			# This is not allowed: One component cannot be installed with different packages.
 			installer::exiter::exit_program("ERROR: Component \"$fullname\" is already included into another package. This is not allowed.", "get_file_component_name");
 		}
-		
+
 		if ( exists($installer::globals::allcomponents{$fullname}) )
 		{
 			$componentname = $installer::globals::allcomponents{$fullname};
@@ -335,7 +335,7 @@ sub get_file_component_name
 		# $componentname =~ s/openoffice/oo/g;
 	}
 
-	return $componentname;	
+	return $componentname;
 }
 
 ####################################################################
@@ -351,7 +351,7 @@ sub get_component_from_assigned_file
 	my $componentname = "";
 	if ( $onefile->{'componentname'} ) { $componentname = $onefile->{'componentname'}; }
 	else { installer::exiter::exit_program("ERROR: No component defined for file: $gid", "get_component_from_assigned_file"); }
-	
+
 	return $componentname;
 }
 
@@ -404,9 +404,9 @@ sub generate_unique_filename_for_filetable ($)
 	{
 		# adding a number until the name is really unique: OFFSETS, OFFSETS1, OFFSETS2, ...
 		# But attention: Making "abc.xcu" to "abc1.xcu"
-		
+
 		my $uniquefilenamebase = $uniquefilename;
-		
+
         my $counter = 0;
 		do
 		{
@@ -432,10 +432,10 @@ sub generate_unique_filename_for_filetable ($)
 				$newname = 1;
 			}
 		}
-		until ( $newname ) 
+		until ( $newname )
 	}
 
-	return $uniquefilename;	
+	return $uniquefilename;
 }
 
 ####################################################################
@@ -450,13 +450,13 @@ sub generate_filename_for_filetable ($$)
 
 	my $returnstring = "";
 
-	my $filename = $fileref->{'Name'};	
+	my $filename = $fileref->{'Name'};
 
-    # making /registry/schema/org/openoffice/VCL.xcs to VCL.xcs 
-	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$filename);	
-	
+    # making /registry/schema/org/openoffice/VCL.xcs to VCL.xcs
+	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$filename);
+
 	my $shortstring = installer::windows::idtglobal::make_eight_three_conform_with_hash($filename, "file", $shortnamesref);
-	
+
 	if ( $shortstring eq $filename )
     {
         # nothing changed
@@ -466,7 +466,7 @@ sub generate_filename_for_filetable ($$)
     {
         $returnstring = $shortstring . "\|" . $filename;
     }
-	
+
 	return $returnstring;
 }
 
@@ -481,7 +481,7 @@ sub get_filesize
 	my $file = $fileref->{'sourcepath'};
 
 	my $filesize;
-	
+
 	if ( -f $file )	# test of existence. For instance services.rdb does not always exist
 	{
 		$filesize = ( -s $file );	# file size can be "0"
@@ -490,7 +490,7 @@ sub get_filesize
 	{
 		$filesize = -1;
 	}
-		
+
 	return $filesize;
 }
 
@@ -510,7 +510,7 @@ sub get_fileversion
 		if ( ! $allvariables->{'LIBRARYVERSION'} )
         {
             installer::exiter::exit_program("ERROR: USE_FILEVERSION is set, but not LIBRARYVERSION", "get_fileversion");
-        } 
+        }
 		my $libraryversion = $allvariables->{'LIBRARYVERSION'};
 		if ( $libraryversion =~ /^\s*(\d+)\.(\d+)\.(\d+)\s*$/ )
 		{
@@ -532,13 +532,13 @@ sub get_fileversion
             $fileversion = $onefile->{'FileVersion'};
         }
 	}
-	
+
 	if ( $installer::globals::prepare_winpatch )
     {
         # Windows patches do not allow this version # -> who says so?
         $fileversion = "";
     }
-		
+
 	return $fileversion;
 }
 
@@ -550,7 +550,7 @@ sub retrieve_sequence_and_uniquename ($$)
     my ($file_list, $source_data) = @_;
 
     my @added_files = ();
-    
+
     # Read the sequence numbers of the previous version.
     if ($installer::globals::is_release)
     {
@@ -594,10 +594,10 @@ sub retrieve_sequence_and_uniquename ($$)
 =head2 assign_mssing_sequence_numbers ($file_list)
 
     Assign sequence numbers where still missing.
-    
+
     When we are preparing a patch then all files that have no sequence numbers
     at this point are new.  Otherwise no file has a sequence number yet.
-    
+
 =cut
 sub assign_missing_sequence_numbers ($)
 {
@@ -642,7 +642,7 @@ sub create_items_for_missing_files ($$$)
     # modules (ie features).  Note that Each file belongs to exactly
     # one component but one component can belong to multiple features.
     my $component_to_features_map = create_feature_component_map($source_msi);
-    
+
     my @new_files = ();
     foreach my $row (@$missing_items)
     {
@@ -774,14 +774,14 @@ sub create_feature_component_map ($)
 sub get_language_for_file
 {
 	my ($fileref) = @_;
-	
+
 	my $language = "";
-	
+
 	if ( $fileref->{'specificlanguage'} ) { $language = $fileref->{'specificlanguage'}; }
-	
+
 	if ( $language eq "" )
 	{
-		$language = 0;  # language independent 
+		$language = 0;  # language independent
 		# If this is not a font, the return value should be "0" (Check ICE 60)
 		my $styles = "";
 		if ( $fileref->{'Styles'} ) { $styles = $fileref->{'Styles'}; }
@@ -791,8 +791,8 @@ sub get_language_for_file
 	{
 		$language = installer::windows::language::get_windows_language($language);
 	}
-	
-	return $language;	
+
+	return $language;
 }
 
 ####################################################################
@@ -808,24 +808,24 @@ sub generate_registry_keypath
 	$keypath = lc($keypath);
 	$keypath = "userreg_" . $keypath;
 
-	return $keypath;	
+	return $keypath;
 }
 
 
 ###################################################################
 # Collecting further conditions for the component table.
-# This is used by multilayer products, to enable installation 
+# This is used by multilayer products, to enable installation
 # of separate layers.
 ###################################################################
 
 sub get_tree_condition_for_component
 {
 	my ($onefile, $componentname) = @_;
-	
+
 	if ( $onefile->{'destination'} )
 	{
 		my $dest = $onefile->{'destination'};
-		
+
 		# Comparing the destination path with
 		# $installer::globals::hostnametreestyles{$hostname} = $treestyle;
 		# (-> hostname is the key, the style the value!)
@@ -843,7 +843,7 @@ sub get_tree_condition_for_component
 				$condition = $condition . "=1";
 				# saving this condition
 				$installer::globals::treeconditions{$componentname} = $condition;
-			
+
 				# saving also at the file, for usage in fileinfo
 				$onefile->{'layer'} = $installer::globals::treelayername{$style};
 			}
@@ -876,7 +876,7 @@ sub collect_shortnames_from_old_database
 sub process_language_conditions ($)
 {
     my ($onefile) = @_;
-    
+
     # Collecting all languages specific conditions
     if ( $onefile->{'ismultilingual'} )
     {
@@ -895,7 +895,7 @@ sub process_language_conditions ($)
         my $property = "IS" . $onefile->{'windows_language'};
         my $value = 1;
         my $condition = $property . "=" . $value;
-        
+
         $onefile->{'ComponentCondition'} = $condition;
 
         if ( exists($installer::globals::componentcondition{$onefile->{'componentname'}}))
@@ -914,7 +914,7 @@ sub process_language_conditions ($)
         else
         {
             $installer::globals::componentcondition{$onefile->{'componentname'}} = $condition;
-        }		
+        }
 
         # collecting all properties for table Property
         if ( ! exists($installer::globals::languageproperties{$property}) )
@@ -941,7 +941,7 @@ sub has_style ($$)
 sub prepare_file_table_creation ($$$)
 {
     my ($file_list, $directory_list, $allvariables) = @_;
-    
+
     if ( $^O =~ /cygwin/i )
     {
         installer::worker::generate_cygwin_pathes($file_list);
@@ -960,7 +960,7 @@ sub prepare_file_table_creation ($$$)
         my $previous_sequence_data = new installer::patch::FileSequenceList();
         $previous_sequence_data->SetFromMsi($installer::globals::source_msi);
         my @added_files = retrieve_sequence_and_uniquename($file_list, $previous_sequence_data);
-    
+
         # Extract just the unique names.
         my %target_unique_names = map {$_->{'uniquename'} => 1} @$file_list;
         my @removed_items = $previous_sequence_data->get_removed_files(\%target_unique_names);
@@ -1009,10 +1009,10 @@ sub prepare_file_table_creation ($$$)
         {
             $file->{'uniquename'} = generate_unique_filename_for_filetable($file->{'Name'});
         }
-	
+
 		# Collecting all component conditions
 		if ( $file->{'ComponentCondition'} )
-		{			
+		{
 			if ( ! exists($installer::globals::componentcondition{$file->{'componentname'}}))
 			{
 				$installer::globals::componentcondition{$file->{'componentname'}}
@@ -1038,7 +1038,7 @@ sub prepare_file_table_creation ($$$)
 			$file->{'userregkeypath'} = $keypath;
 			push(@installer::globals::userregistrycollector, $file);
 			$installer::globals::addeduserregitrykeys = 1;
-		}	
+		}
 
 		$file->{'windows_language'} = get_language_for_file($file);
 
@@ -1060,7 +1060,7 @@ sub prepare_file_table_creation ($$$)
 sub create_file_table_data ($$)
 {
     my ($file_list, $allvariables) = @_;
-    
+
     my @file_table_data = ();
 	foreach my $file (@$file_list)
 	{
@@ -1098,7 +1098,7 @@ sub create_file_table_data ($$)
 sub collect_components ($)
 {
     my ($file_list) = @_;
-    
+
 	my %components = ();
     foreach my $file (@$file_list)
     {
@@ -1115,7 +1115,7 @@ sub collect_components ($)
     Filter out Java files when not building a Java product.
 
     Is this still triggered?
-    
+
 =cut
 sub filter_files ($$)
 {
@@ -1147,7 +1147,7 @@ sub filter_files ($$)
 sub create_file_table ($$)
 {
     my ($file_table_data, $basedir) = @_;
-    
+
     # Set up the 'File' table.
 	my @filetable = ();
 	installer::windows::idtglobal::write_idt_header(\@filetable, "file");
@@ -1164,7 +1164,7 @@ sub create_file_table ($$)
     my $filetablename = $basedir . $installer::globals::separator . "File.idt";
 	installer::files::save_file($filetablename ,\@filetable);
 	$installer::logger::Lang->print("\n");
-	$installer::logger::Lang->printf("Created idt file: %s\n", $filetablename); 
+	$installer::logger::Lang->printf("Created idt file: %s\n", $filetablename);
 }
 
 

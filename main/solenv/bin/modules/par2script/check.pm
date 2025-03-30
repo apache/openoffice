@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -57,7 +57,7 @@ sub check_needed_directories
 				last;
 			}
 		}
-		if ( $fileinside ) { next; }	
+		if ( $fileinside ) { next; }
 
 		# III. the directory is parent for another directory
 		my $isparent = 0;
@@ -70,7 +70,7 @@ sub check_needed_directories
 				last;
 			}
 		}
-		if ( $isparent ) { next; }	
+		if ( $isparent ) { next; }
 
 		# no condition is true -> directory definition is superfluous
 		my $infoline = "\tINFO: Directory definition $dir is superfluous\n";
@@ -90,14 +90,14 @@ sub check_directories_in_item_definitions
 	foreach $item ( @par2script::globals::items_with_directories )
 	{
 		my $allitems = $par2script::globals::definitions{$item};
-		
+
 		my $onegid;
 		foreach $onegid ( keys %{$allitems} )
 		{
 			if ( ! exists($allitems->{$onegid}->{'Dir'}) ) { die "\nERROR: No directory defined for item: $onegid!\n\n"; }
 			my $dir = $allitems->{$onegid}->{'Dir'};
 			if (( $dir eq "PD_PROGDIR" ) || ( $dir =~ /PREDEFINED_/ )) { next; }
-			
+
 			# checking if this directoryid is defined
 			if ( ! exists($par2script::globals::definitions{'Directory'}->{$dir}) )
 			{
@@ -124,7 +124,7 @@ sub check_module_existence
 		{
 			if ( ! exists($allitems->{$onegid}->{'ModuleID'}) ) { die "\nERROR: No ModuleID defined for item: $onegid!\n\n"; }
 			my $moduleid = $allitems->{$onegid}->{'ModuleID'};
-			
+
 			# checking if this directoryid is defined
 			if ( ! exists($par2script::globals::definitions{'Module'}->{$moduleid}) )
 			{
@@ -145,7 +145,7 @@ sub check_rootmodule
 	my $foundroot = 0;
 
 	my $allmodules = $par2script::globals::definitions{'Module'};
-	
+
 	my $modulegid = "";
 	foreach $modulegid (keys %{$allmodules} )
 	{
@@ -159,18 +159,18 @@ sub check_rootmodule
 			$foundroot = 1;
 		}
 	}
-	
+
 	if ( ! $foundroot )
 	{
 		die "\nERROR: Could not find Root module. Did not find module without ParentID or with empty ParentID.\n";
 	}
-	
-	print " $rootgid\n";	
+
+	print " $rootgid\n";
 
 }
 
 ########################################################
-# File, Shortcut, Directory, Unixlink must not 
+# File, Shortcut, Directory, Unixlink must not
 # contain a ModuleID
 ########################################################
 
@@ -200,7 +200,7 @@ sub check_multiple_assignments
 {
 	my @multiassignments = ();
 	my $error;
-	
+
 	my $topitem;
 	foreach $topitem ( keys %par2script::globals::assignedgids )
 	{
@@ -226,9 +226,9 @@ sub check_multiple_assignments
 sub contains_create_flag
 {
 	my ($gid) = @_;
-	
+
 	my $createflag = 0;
-	
+
 	if (( exists($par2script::globals::definitions{'Directory'}->{$gid}->{'Styles'}) ) &&
 		( $par2script::globals::definitions{'Directory'}->{$gid}->{'Styles'} =~ /\bCREATE\b/ ))
 	{
@@ -245,9 +245,9 @@ sub contains_create_flag
 
 sub check_missing_assignments
 {
-	# If defined gids for "File", "Directory" or "Unixlink" are not assigned, 
+	# If defined gids for "File", "Directory" or "Unixlink" are not assigned,
 	# this causes an error.
-	# Directories only have to be assigned, if they have the flag "CREATE". 
+	# Directories only have to be assigned, if they have the flag "CREATE".
 
 	my @missingassignments = ();
 	$error = 0;
@@ -284,7 +284,7 @@ sub check_shortcut_assignments
 {
 	my $allshortcuts = $par2script::globals::definitions{'Shortcut'};
 	my $allfiles = $par2script::globals::definitions{'File'};
-	
+
 	my $shortcut;
 	foreach $shortcut ( keys %{$allshortcuts} )
 	{
@@ -300,19 +300,19 @@ sub check_shortcut_assignments
 		{
 			die "\nERROR: ShortcutID $allshortcuts->{$shortcut}->{'ShortcutID'} has no definition at shortcut $shortcut !\n";
 		}
-		
+
 		if (( ! exists($allshortcuts->{$shortcut}->{'ShortcutID'}) ) &&
 			( ! exists($allshortcuts->{$shortcut}->{'FileID'}) ))
 		{
 			die "\nERROR: Shortcut requires assignment to \"ShortcutID\" or \"FileID\". Missing at shortcut $shortcut !\n";
-		}		
+		}
 	}
 }
 
 #############################################################
 # Controlling if for Modules and Directories, the parents
 # are defined. If not, this can lead to a problem during
-# script creation, because only recursively added 
+# script creation, because only recursively added
 # Modules or Directories are added to the script.
 #############################################################
 
@@ -320,12 +320,12 @@ sub check_missing_parents
 {
 	my @parentitems = ("Module", "Directory");
 	my %rootparents = ("PREDEFINED_PROGDIR" => "1");
-	
+
 	my $oneitem;
 	foreach $oneitem ( @parentitems )
 	{
 		my $alldefinitions = $par2script::globals::definitions{$oneitem};
-		
+
 		my $onegid;
 		foreach $onegid ( keys %{$alldefinitions} )
 		{
@@ -334,10 +334,10 @@ sub check_missing_parents
 				( ! exists($alldefinitions->{$alldefinitions->{$onegid}->{'ParentID'}}) ) &&
 				( ! exists($rootparents{$alldefinitions->{$onegid}->{'ParentID'}}) ))
 			{
-				die "\nERROR: Parent \"$alldefinitions->{$onegid}->{'ParentID'}\" at $oneitem \"$onegid\" is not defined!\n";				
-			}	
+				die "\nERROR: Parent \"$alldefinitions->{$onegid}->{'ParentID'}\" at $oneitem \"$onegid\" is not defined!\n";
+			}
 		}
-	} 	
+	}
 }
 
 1;

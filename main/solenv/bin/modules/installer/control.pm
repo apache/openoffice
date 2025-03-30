@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -58,7 +58,7 @@ sub check_needed_files_in_path
 		else
 		{
 			$installer::logger::Info->print( "\tFound: $$fileref\n" );
-		}		
+		}
 	}
 
 	if ( $error )
@@ -78,11 +78,11 @@ sub check_system_path
 	# All platforms: zip
 	# Windows only: "msiinfo.exe", "msidb.exe", "uuidgen.exe", "makecab.exe", "msitran.exe", "expand.exe" for msi database and packaging
 
-	my $onefile;	
+	my $onefile;
 	my $error = 0;
 	my $pathvariable = $ENV{'PATH'};
 	my $local_pathseparator = $installer::globals::pathseparator;
-	
+
 	if( $^O =~ /cygwin/i )
 	{	# When using cygwin's perl the PATH variable is POSIX style and ...
 		$pathvariable = qx{cygpath -mp "$pathvariable"} ;
@@ -95,7 +95,7 @@ sub check_system_path
 		$local_pathseparator = ';';
 	}
 	my $patharrayref = installer::converter::convert_stringlist_into_array(\$pathvariable, $local_pathseparator);
-	
+
 	$installer::globals::patharray = $patharrayref;
 
 	my @needed_files_in_path = ();
@@ -105,7 +105,7 @@ sub check_system_path
 		@needed_files_in_path = ("zip.exe", "msiinfo.exe", "msidb.exe", "uuidgen.exe", "makecab.exe", "msitran.exe", "expand.exe");
 	}
 	elsif ($installer::globals::iswin || $installer::globals::isos2)
-	{	
+	{
 		@needed_files_in_path = ("zip.exe");
 	}
 	else
@@ -129,7 +129,7 @@ sub check_system_path
 			$installer::logger::Info->print( "\tFound: $$fileref\n" );
 			# Saving the absolut path for msitran.exe. This is required for the determination of the checksum.
 			if ( $onefile eq "msitran.exe" ) { $installer::globals::msitranpath = $$fileref; }
-		}		
+		}
 	}
 
 	if ( $error )
@@ -156,7 +156,7 @@ sub check_system_path
 			$installer::globals::epm_path = $$fileref;
 		}
 	}
-	
+
 	# checking, if upx can be found in path
 
 	if ( $installer::globals::iswindowsbuild ) { $installer::globals::upxfile = "upx.exe"; }
@@ -181,7 +181,7 @@ sub check_system_path
 sub get_makecab_version
 {
 	my $makecabversion = -1;
-	
+
 	my $systemcall = "makecab.exe |";
 	my @makecaboutput = ();
 
@@ -198,7 +198,7 @@ sub get_makecab_version
 	else
 	{
         $installer::logger::Global->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
-		
+
 		my $versionline = "";
 
 		for ( my $i = 0; $i <= $#makecaboutput; $i++ )
@@ -211,14 +211,14 @@ sub get_makecab_version
 		}
 
         $installer::logger::Global->printf("%s\n", $versionline);
-		
+
 		if ( $versionline =~ /\bVersion\b\s+(\d+[\d\.]+\d+)\s+/ )
 		{
 			$makecabversion = $1;
 		}
-		
+
 		# Only using the first number
-		
+
 		if ( $makecabversion =~ /^\s*(\d+?)\D*/ )
 		{
 			$makecabversion = $1;
@@ -226,7 +226,7 @@ sub get_makecab_version
 
         $installer::logger::Global->printf("Using version: %s\n", $makecabversion);
 	}
-	
+
 	return $makecabversion;
 }
 
@@ -238,21 +238,21 @@ sub check_makecab_version
 {
 	# checking version of makecab.exe
 	# Now it is guaranteed, that makecab.exe is in the path
-	
+
 	my $do_check = 1;
-	
+
 	my $makecabversion = get_makecab_version();
 
     $installer::logger::Global->printf("Tested version: %s\n", $installer::globals::controlledmakecabversion);
-	
+
 	if ( $makecabversion < 0 ) { $do_check = 0; } # version could not be determined
-	
+
 	if ( $do_check )
 	{
 		if ( $makecabversion < $installer::globals::controlledmakecabversion )
 		{
 			# warning for OOo, error for inhouse products
-			if ( $installer::globals::isopensourceproduct ) 
+			if ( $installer::globals::isopensourceproduct )
 			{
 				installer::logger::print_warning("Old version of makecab.exe. Found version: \"$makecabversion\", tested version: \"$installer::globals::controlledmakecabversion\"!\n");
 			}
@@ -284,19 +284,19 @@ sub check_system_environment
 		my $value = "";
 		if ( $ENV{$key} ) { $value = $ENV{$key}; }
 		$variables{$key} = $value;
-		
+
 		if ( $value eq "" )
 		{
 			installer::logger::print_error( "$key not set in environment\n" );
 			$error = 1;
 		}
 	}
-	
+
 	if ( $error )
 	{
 		installer::exiter::exit_program("ERROR: Environment variable not set!", "check_system_environment");
 	}
-	
+
 	return \%variables;
 }
 
@@ -309,7 +309,7 @@ sub prepare_error_processing ()
 =item filter_log_error ($relative_time, $log_id, $process_id, $message)
 
     Process the given log message.  Returns $message unaltered.
-    
+
 =cut
 sub filter_log_error ($$$$)
 {
@@ -322,7 +322,7 @@ sub filter_log_error ($$$$)
         # Remove all filenames that contain the word "Error".
 		my $work_string = $message;
 		$work_string =~ s/Error\.(idt|mlf|ulf|idl|html|hpp|ipp)//g;
-		
+
 		if ($work_string =~ /\bError\b/i)
 		{
             # This really is an error message.
@@ -353,9 +353,9 @@ sub printocessed_error_lines ()
 
 
 =item check_logfile()
-    
+
     Print all error messages (typically at the end) on the console.
-    
+
 =cut
 sub check_logfile ()
 {
@@ -363,7 +363,7 @@ sub check_logfile ()
 
 	my @errors = ();
 	my @output = ();
-	
+
 	my $ignore_errors = ( ! $installer::globals::pro ) && ( $installer::globals::ignore_error_in_logfile );
 	my $contains_errors = scalar @ErrorMessages > 0;
 
@@ -386,7 +386,7 @@ sub check_logfile ()
         {
             push @output, sprintf("    %12.6f : %s", $line->{'relative_time'}, $line->{'message'});
         }
-		
+
 		push(@output, "*********************************************************************\n");
 	}
 
@@ -412,7 +412,7 @@ sub check_logfile ()
     @ErrorMessages = ();
 
     @installer::globals::errorlogfileinfo = @output;
-	
+
 	return $contains_error && ! $ignore_error;
 }
 
@@ -424,7 +424,7 @@ sub determine_ship_directory
 {
 	my ($languagesref) = @_;
 
-	if (!( $ENV{'SHIPDRIVE'} )) { installer::exiter::exit_program("ERROR: SHIPDRIVE must be set for updater!", "determine_ship_directory"); } 
+	if (!( $ENV{'SHIPDRIVE'} )) { installer::exiter::exit_program("ERROR: SHIPDRIVE must be set for updater!", "determine_ship_directory"); }
 
 	my $shipdrive = $ENV{'SHIPDRIVE'};
 
@@ -441,20 +441,20 @@ sub determine_ship_directory
 
 	if ( $installer::globals::languagepack ) { $productstring = $productstring . "_languagepack"; }
 	if ( $installer::globals::patch ) { $productstring = $productstring . "_patch"; }
-	
-	my $destdir = $shipdrive . $installer::globals::separator . $installer::globals::compiler . 
-				$installer::globals::productextension . $installer::globals::separator . 
+
+	my $destdir = $shipdrive . $installer::globals::separator . $installer::globals::compiler .
+				$installer::globals::productextension . $installer::globals::separator .
 				$productstring . $installer::globals::separator;
-	
+
 	if ( $productsubdir ) { $destdir = $destdir . $productsubdir . $installer::globals::separator; }
-		 
-	$destdir = $destdir . $installer::globals::installertypedir . $installer::globals::separator . 
+
+	$destdir = $destdir . $installer::globals::installertypedir . $installer::globals::separator .
 				$installer::globals::build . "_" . $installer::globals::lastminor . "_" .
 				"native_inprogress-number_" . $languagestring . "\." . $installer::globals::buildid;
 
     $installer::logger::Global->print("\n");
     $installer::logger::Global->printf("Setting ship directory: %s\n", $destdir);
-	
+
 	return $destdir;
 }
 
@@ -467,7 +467,7 @@ sub check_updatepack
 	my $shipdrive = "";
 	my $filename = "";
 	my $infoline = "";
-	
+
 	if ( $ENV{'UPDATER'} )	# the environment variable UPDATER has to be set
 	{
         $installer::logger::Global->print("\n");
@@ -477,7 +477,7 @@ sub check_updatepack
 		{
             $installer::logger::Global->print("Environment variable CWS_WORK_STAMP not set\n");
 
-			if ( $ENV{'SHIPDRIVE'} )	# the environment variable SHIPDRIVE must be set 
+			if ( $ENV{'SHIPDRIVE'} )	# the environment variable SHIPDRIVE must be set
 			{
 				$shipdrive = $ENV{'SHIPDRIVE'};
                 $installer::logger::Global->printf("Ship drive defined: %s\n", $shipdrive);
@@ -494,7 +494,7 @@ sub check_updatepack
 					$directory = $shipdrive . $installer::globals::separator . $directory;
 
                     $installer::logger::Global->printf("Try to create directory: %s\n", $directory);
-					
+
 					# saving this directory for later removal
 					$installer::globals::shiptestdirectory = $directory;
 
@@ -506,29 +506,29 @@ sub check_updatepack
                             $installer::globals::shiptestdirectory);
 						my $systemcall = "rmdir $directory";
 						my $returnvalue = system($systemcall);
-						
-						# 5th condition: No local build environment. 
+
+						# 5th condition: No local build environment.
 						# In this case the content of SOLARENV starts with the content of SOL_TMP
-						
+
 						my $solarenv = "";
 						my $sol_tmp;
 						if ( $ENV{'SOLARENV'} ) { $solarenv = $ENV{'SOLARENV'}; }
 
                         $installer::logger::Global->printf("Environment variable SOLARENV: %s\n", $solarenv);
 
-						if ( $ENV{'SOL_TMP'} ) 
-                        { 
+						if ( $ENV{'SOL_TMP'} )
+                        {
                             $sol_tmp = $ENV{'SOL_TMP'};
 						    $infoline = "Environment variable SOL_TMP: $sol_tmp\n";
                         } else {
                             $infoline = "Environment variable SOL_TMP not set\n";
                         }
                         $installer::logger::Global->print($infoline);
-						
+
 						if ( defined $sol_tmp && ( $solarenv =~ /^\s*\Q$sol_tmp\E/ ))
 						{
                             $installer::logger::Global->print("Content of SOLARENV starts with the content of SOL_TMP\: Local environment -\> No Updatepack\n");
-						}										
+						}
 						else
 						{
 							$installer::logger::Global->print("Content of SOLARENV does not start with the content of SOL_TMP: No local environment\n");
@@ -537,7 +537,7 @@ sub check_updatepack
 						}
 
 						# Additional logging information for the temporary ship directory
-	
+
 						if ( -d $installer::globals::shiptestdirectory )
 						{
                             $installer::logger::Global->printf(
@@ -549,7 +549,7 @@ sub check_updatepack
                             $installer::logger::Global->printf(
                                 "Ship test directory %s was successfully removed.\n",
                                 $installer::globals::shiptestdirectory);
-						}	
+						}
 					}
 					else
 					{
@@ -575,8 +575,8 @@ sub check_updatepack
 		{
             $installer::logger::Global->print("Environment variable CWS_WORK_STAMP defined: No updatepack\n");
 		}
-	}	
-				
+	}
+
 	if ( $installer::globals::updatepack )
     {
         $installer::logger::Global->print("Setting updatepack true\n");
@@ -587,7 +587,7 @@ sub check_updatepack
         $installer::logger::Global->print("\n");
         $installer::logger::Global->print("No updatepack\n");
     }
-	
+
 }
 
 #############################################################
@@ -597,20 +597,20 @@ sub check_updatepack
 sub read_encodinglist
 {
 	my ($patharrayref) = @_;
-	
+
 	my $fileref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$installer::globals::encodinglistname, $patharrayref , 0);
 
 	if ( $$fileref eq "" ) { installer::exiter::exit_program("ERROR: Did not find Windows encoding list $installer::globals::encodinglistname!", "read_encodinglist"); }
 
     $installer::logger::Global->printf("Found encoding file: %s\n", $$fileref);
-		
+
 	my $encodinglist = installer::files::read_file($$fileref);
 
 	my %msiencoding = ();
 	my %msilanguage = ();
-	
+
 	# Controlling the encoding list
-	
+
 	for ( my $i = 0; $i <= $#{$encodinglist}; $i++ )
 	{
 		my $line = ${$encodinglist}[$i];
@@ -619,12 +619,12 @@ sub read_encodinglist
 
 		if ( $line =~ /^(.*?)(\#.*)$/ ) { $line = $1; }	# removing comments after "#"
 
-		if ( $line =~ /^\s*([\w-]+)\s*(\d+)\s*(\d+)\s*$/ ) 
+		if ( $line =~ /^\s*([\w-]+)\s*(\d+)\s*(\d+)\s*$/ )
 		{
 			my $onelanguage = $1;
 			my $codepage = $2;
 			my $windowslanguage = $3;
-			
+
 			$msiencoding{$onelanguage} = $codepage;
 			$msilanguage{$onelanguage} = $windowslanguage;
 		}
@@ -633,7 +633,7 @@ sub read_encodinglist
 			installer::exiter::exit_program("ERROR: Wrong syntax in Windows encoding list $installer::globals::encodinglistname : en-US 1252 1033 !", "read_encodinglist");
 		}
 	}
-	
+
 	$installer::globals::msiencoding = \%msiencoding;
 	$installer::globals::msilanguage = \%msilanguage;
 
@@ -658,9 +658,9 @@ sub check_oxtfiles
 	for ( my $i = 0; $i <= $#{$filesarray}; $i++ )
 	{
 		my $onefile = ${$filesarray}[$i];
-		
+
 		if (( $onefile->{'Name'} ) && ( $onefile->{'Dir'} ))
-		{		
+		{
 			if (( $onefile->{'Name'} =~ /\.oxt\s*$/ ) && ( $onefile->{'Dir'} eq $installer::globals::extensioninstalldir ))
 			{
 				installer::exiter::exit_program("There is currently only for Linux (RPM) and Windows a reliable mechanism to register extensions during installation.\nPlease remove file \"$onefile->{'gid'}\" from your installation set!\nYou can use \"\#ifdef WNT\" and \"\#ifdef LINUX\" in scp.", "check_oxtfiles");
@@ -676,7 +676,7 @@ sub check_oxtfiles
 sub check_java_for_xpd
 {
 	my ( $allvariables ) = @_;
-	
+
 	if ( ! $installer::globals::solarjavaset ) { $allvariables->{'XPDINSTALLER'} = 0; }
 }
 
@@ -688,15 +688,15 @@ sub set_addchildprojects
 {
 	my ($allvariables) = @_;
 
-	if (( $allvariables->{'JAVAPRODUCT'} ) || 
-		( $allvariables->{'ADAPRODUCT'} ) || 
-		( $allvariables->{'UREPRODUCT'} ) || 
+	if (( $allvariables->{'JAVAPRODUCT'} ) ||
+		( $allvariables->{'ADAPRODUCT'} ) ||
+		( $allvariables->{'UREPRODUCT'} ) ||
 		( $allvariables->{'ADDREQUIREDPACKAGES'} )) { $installer::globals::addchildprojects = 1; }
-		
+
 	if ( $installer::globals::patch )
 	{
 		$installer::globals::addchildprojects = 0;	# no child projects for patches
-	}	
+	}
 
     $installer::logger::Global->printf(
         "Value of \$installer::globals::addchildprojects: %s\n",
@@ -712,7 +712,7 @@ sub set_addjavainstaller
 	my ($allvariables) = @_;
 
 	if ( $allvariables->{'JAVAINSTALLER'} ) { $installer::globals::addjavainstaller = 1; }
-		
+
 	if ( $installer::globals::patch ) {	$installer::globals::addjavainstaller = 0; }
 	if ( $installer::globals::languagepack ) { $installer::globals::addjavainstaller = 0; }
 	if ( $allvariableshashref->{'XPDINSTALLER'} ) {	$installer::globals::addjavainstaller = 0; }
@@ -731,7 +731,7 @@ sub set_addsystemintegration
 	my ($allvariables) = @_;
 
 	if ( $allvariables->{'ADDSYSTEMINTEGRATION'} ) { $installer::globals::addsystemintegration = 1; }
-	
+
 	if ( $installer::globals::patch ) {	$installer::globals::addsystemintegration = 0; }
 	if ( $installer::globals::languagepack ) { $installer::globals::addsystemintegration = 0; }
 	if (( $installer::globals::packageformat eq "native" ) || ( $installer::globals::packageformat eq "portable" )) { $installer::globals::addsystemintegration = 0; }

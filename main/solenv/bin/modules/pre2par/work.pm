@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -40,7 +40,7 @@ use pre2par::pathanalyzer;
 sub split_line
 {
 	my ($line, $parfile) = @_;
-	
+
 	while ( $line =~ /^((?:[^"]|\"(?:[^"\\]|\\.)*\")*?\;\s+)\s*(.*)$/ )
 	{
 		my $oneline = $1;
@@ -61,7 +61,7 @@ sub split_line
 	pre2par::remover::remove_leading_and_ending_whitespaces(\$line);
 	$line = $line . "\n";
 	push(@{$parfile}, $line);
-	
+
 	if ( $line =~ /^\s*End\s*$/i ) { push(@{$parfile}, "\n"); }
 }
 
@@ -84,9 +84,9 @@ sub preprocess_macros
 		}
 		else
 		{
-			push(@newprefile, $oneline);	
+			push(@newprefile, $oneline);
 		}
-	}	
+	}
 
 	return \@newprefile;
 }
@@ -98,37 +98,37 @@ sub preprocess_macros
 sub convert
 {
 	my ($prefile) = @_;
-	
+
 	my @parfile = ();
-	
+
 	my $iscodesection = 0;
 	my $ismultiliner = 0;
 	my $globalline = "";
 
 	# Preprocessing the pre file to split all lines with semicolon
 	$prefile = preprocess_macros($prefile);
-	
+
 	for ( my $i = 0; $i <= $#{$prefile}; $i++ )
 	{
 		my $oneline = ${$prefile}[$i];
-		
+
 		if ($iscodesection)
 		{
 			if ( $oneline =~ /^\s*\}\;\s*$/ )
 			{
 				$iscodesection = 0;
 			}
-			else	# nothing to do for code inside a code section 
+			else	# nothing to do for code inside a code section
 			{
 				push(@parfile, $oneline);
 				next;
 			 }
-		} 
+		}
 
 		if ( $oneline =~ /^\s*$/ ) { next; }
 
 		if ( $oneline =~ /^\s*Code\s+\=\s+\{/ )
-		{ 
+		{
 			$iscodesection = 1;
 		}
 
@@ -146,7 +146,7 @@ sub convert
 			$oneline = $2;
 			$gidline = $gidline . "\n";
 
-			push(@parfile, $gidline);					
+			push(@parfile, $gidline);
 		}
 
 		if ( $oneline =~ /\;\s*\w+/ )
@@ -165,13 +165,13 @@ sub convert
 				$oneline =~ s/\=/\ \=\ /;	# adding whitespace around equals sign
 			}
 		}
-		
+
 		if ( $oneline =~ /^\s*\w+\s+\=\s*$/ )
 		{
 			$oneline =~ s/\s*$//;
 			pre2par::exiter::exit_program("Error: Illegal syntax, no line break after eqals sign allowed. Line: \"$oneline\"", "convert");
 		}
-		
+
 		if (( $oneline =~ /^\s*\w+\s+\=\s*\(/ ) && (!( $oneline =~ /\)\s*\;\s*$/ )))	 # several lines
 		{
 			$ismultiliner = 1;
@@ -179,14 +179,14 @@ sub convert
 			$globalline .= $oneline;
 			next;						# not including yet
 		}
-		
+
 		if ( $ismultiliner )
 		{
 			$oneline =~ s/\s//g;
 			$globalline .= $oneline;
-			
+
 			if ( $oneline =~ /\)\s*\;\s*$/ ) {	$ismultiliner = 0; }
-			
+
 			if (! ( $ismultiliner ))
 			{
 				$globalline =~ s/\=/\ \=\ /;	# adding whitespace around equals sign
@@ -194,9 +194,9 @@ sub convert
 				push(@parfile, $globalline);
 				$globalline = "";
 			}
-			
+
 			next;
-		}		
+		}
 
 		$oneline = $oneline . "\n";
 
@@ -213,14 +213,14 @@ sub convert
                  ((?:[^\\"]|\\.)*\")
                 /\1\2/x)
         {}
-	
+
 		push(@parfile, $oneline);
 
 		if ($insertemptyline) { push(@parfile, "\n"); }
 
-	}	
-	
-	return \@parfile;	
+	}
+
+	return \@parfile;
 }
 
 ############################################
@@ -230,20 +230,20 @@ sub convert
 sub formatter
 {
 	my ($parfile) = @_;
-	
+
 	my $iscodesection = 0;
 
 	my $tabcounter = 0;
 	my $isinsideitem = 0;
 	my $currentitem;
-	
+
 	for ( my $i = 0; $i <= $#{$parfile}; $i++ )
 	{
 		my $oneline = ${$parfile}[$i];
 		my $isitemline = 0;
 
 		if (! $isinsideitem )
-		{		
+		{
 			for ( my $j = 0; $j <= $#pre2par::globals::allitems; $j++ )
 			{
 				if ( $oneline =~ /^\s*$pre2par::globals::allitems[$j]\s+\w+\s*$/ )
@@ -251,15 +251,15 @@ sub formatter
 					$currentitem = $pre2par::globals::allitems[$j];
 					$isitemline = 1;
 					$isinsideitem = 1;
-					$tabcounter = 0;	
+					$tabcounter = 0;
 					last;
 				}
 			}
 		}
-		
+
 		if ( $isitemline )
 		{
-			next;	# nothing to do	
+			next;	# nothing to do
 		}
 
 		if ( $oneline =~ /^\s*end\s*$/i )
@@ -273,7 +273,7 @@ sub formatter
 			$oneline = "\t" . $oneline;
 			${$parfile}[$i] = $oneline;
 		}
-	}	
+	}
 }
 
 ###################################################
@@ -286,7 +286,7 @@ sub getlangfilename
 }
 
 ###################################################
-# Creating the ulf file name from the 
+# Creating the ulf file name from the
 # corresponding pre file name
 ###################################################
 
@@ -308,16 +308,16 @@ sub getulffilename
 sub fileexists
 {
 	my ($langfilename) = @_;
-	
+
 	my $fileexists = 0;
-	
+
 	if( -f $langfilename ) { $fileexists = 1; }
 
 	return $fileexists;
 }
 
 ############################################
-# Checking the existence of ulf and 
+# Checking the existence of ulf and
 # jlf/mlf files
 ############################################
 
@@ -329,7 +329,7 @@ sub check_existence_of_langfiles
 
 	if (( fileexists($ulffilename) ) && ( ! fileexists($langfilename) )) { pre2par::exiter::exit_program("Error: Did not find language file $langfilename", "check_existence_of_langfiles"); }
 	if (( fileexists($ulffilename) ) && ( fileexists($langfilename) )) { $do_localize = 1; }
-	
+
 	return $do_localize;
 }
 
@@ -340,7 +340,7 @@ sub check_existence_of_langfiles
 sub check_content
 {
 	my ($filecontent, $filename) = @_;
-	
+
 	if ( $#{$filecontent} < 0 ) { pre2par::exiter::exit_program("Error: $filename has no content!", "check_content"); }
 }
 
@@ -352,7 +352,7 @@ sub check_content
 sub diff_content
 {
 	my ($content1, $content2, $filename) = @_;
-	
+
 	if ( $#{$content1} != $#{$content2} ) { pre2par::exiter::exit_program("Error: $filename was not saved correctly!", "diff_content"); }
 }
 

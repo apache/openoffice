@@ -33,7 +33,7 @@ use installer::windows::idtglobal;
 sub get_media_diskid
 {
 	my ($id) = @_;
-	
+
 	return $id;
 }
 
@@ -44,7 +44,7 @@ sub get_media_diskid
 sub get_media_lastsequence
 {
 	my ($fileref) = @_;
-	
+
 	return $fileref->{'sequencenumber'};
 }
 
@@ -67,9 +67,9 @@ sub get_media_cabinet
 
 	my $number = 1000 + $id;
 	my $filename = "f_" . $number . ".cab";
-	
+
 	if ( $installer::globals::include_cab_in_msi ) { $filename = "\#" . $filename; }
-	
+
 	return $filename;
 }
 
@@ -93,7 +93,7 @@ sub get_media_source
 
 ##############################################################
 # Saving the cabinet file name in the files collector.
-# This is useful for making a list to connect the 
+# This is useful for making a list to connect the
 # source of each file with the destination cabinet file.
 ##############################################################
 
@@ -109,16 +109,16 @@ sub set_cabinetfilename_for_component_in_file_collector
 		if ( $component eq $componentname )
 		{
 			my $cabinet = "";
-			
+
 			if ( $onefile->{'cabinet'} ) { $cabinet = $onefile->{'cabinet'}; }
-			
+
 			if ( $cabinet eq "" )
 			{
-				$onefile->{'cabinet'} = $cabinetfilename;				
+				$onefile->{'cabinet'} = $cabinetfilename;
 			}
 		}
 	}
-}	
+}
 
 #################################################
 # Creating the cab file name dynamically
@@ -129,7 +129,7 @@ sub generate_cab_filename_for_some_cabs
 	my ( $allvariables, $id ) = @_;
 
 	my $name = $allvariables->{'PRODUCTNAME'};
-	
+
 	$name = lc($name);
 	$name =~ s/\.//g;
 	$name =~ s/\s//g;
@@ -152,10 +152,10 @@ sub generate_cab_filename_for_some_cabs
 sub get_cabfilename
 {
 	my ($name) = @_;
-	
+
 	if ( $installer::globals::include_cab_in_msi ) { $name = "\#" . $name; }
 
-	return $name;	
+	return $name;
 }
 
 #################################################
@@ -167,7 +167,7 @@ sub generate_cab_filename
 	my ( $allvariables ) = @_;
 
 	my $name = $allvariables->{'PRODUCTNAME'};
-	
+
 	$name = lc($name);
 	$name =~ s/\.//g;
 	$name =~ s/\s//g;
@@ -187,16 +187,16 @@ sub get_maximum_filenumber
 	my ($allfiles, $maxcabfilenumber) = @_;
 
 	my $maxfile = 0;
-	
+
 	while ( ! ( $allfiles%$maxcabfilenumber == 0 ))
 	{
-		$allfiles++;	
-	} 
-	
+		$allfiles++;
+	}
+
 	$maxfile = $allfiles / $maxcabfilenumber;
-	
+
 	$maxfile++;					# for security
-	
+
 	return $maxfile;
 }
 
@@ -207,7 +207,7 @@ sub get_maximum_filenumber
 sub get_last_sequence
 {
 	my ( $cabfilename, $allupdatelastsequences ) = @_;
-	
+
 	my $sequence = $installer::globals::lastsequence{$cabfilename};
 
 	return $sequence;
@@ -215,9 +215,9 @@ sub get_last_sequence
 
 #################################################################################
 # Creating the file Media.idt dynamically
-# Content: 
+# Content:
 # DiskId LastSequence DiskPrompt Cabinet VolumeLabel Source
-# Idea: Every component is packed into each own cab file 
+# Idea: Every component is packed into each own cab file
 #################################################################################
 
 sub create_media_table
@@ -225,15 +225,15 @@ sub create_media_table
 	my ($filesref, $basedir, $allvariables) = @_;
 
 	my @mediatable = ();
-	
+
 	my $diskid = 0;
 
 	installer::windows::idtglobal::write_idt_header(\@mediatable, "media");
-	
+
 	if ( $allvariables->{'INCLUDE_CAB_IN_MSI'} ) { $installer::globals::include_cab_in_msi = 1; }
 
 	if ( $installer::globals::fix_number_of_cab_files )
-	{		
+	{
 		# number of cabfiles
 		my $maxcabfilenumber = $installer::globals::number_of_cabfiles;
 		if ( $allvariables->{'CABFILENUMBER'} ) { $maxcabfilenumber = $allvariables->{'CABFILENUMBER'}; }
@@ -243,22 +243,22 @@ sub create_media_table
 		my $cabfilenumber = 0;
 		my $cabfull = 0;
 		my $counter = 0;
-		
+
 		# Sorting of files collector files required !
 		# Attention: The order in the cab file is not guaranteed (especially in update process)
-		
+
 		for ( my $i = 0; $i <= $#{$filesref}; $i++ )
 		{
 			if (( $counter >= $maxfilenumber ) || ( $i == $#{$filesref} )) { $cabfull = 1; }
 
 			$counter++; 	 # counting the files in the cab file
-			
+
 			my $onefile = ${$filesref}[$i];
 			my $nextfile = ${$filesref}[$i+1];
-		
+
 			my $filecomponent = "";
 			my $nextcomponent = "";
-			
+
 			if ( $onefile->{'componentname'} ) { $filecomponent = $onefile->{'componentname'}; }
 			if ( $nextfile->{'componentname'} ) { $nextcomponent = $nextfile->{'componentname'}; }
 
@@ -280,10 +280,10 @@ sub create_media_table
 				$media{'VolumeLabel'} = get_media_volumelabel();
 				$media{'Source'} = get_media_source();
 
-				my $oneline = $media{'DiskId'} . "\t" . $media{'LastSequence'} . "\t" . $media{'DiskPrompt'} . "\t"  
+				my $oneline = $media{'DiskId'} . "\t" . $media{'LastSequence'} . "\t" . $media{'DiskPrompt'} . "\t"
 						. $media{'Cabinet'} . "\t" . $media{'VolumeLabel'} . "\t" . $media{'Source'} . "\n";
 
-				push(@mediatable, $oneline);		
+				push(@mediatable, $oneline);
 
 				# Saving the cabinet file name in the file collector
 
@@ -291,12 +291,12 @@ sub create_media_table
 
 				for ( my $j = 0; $j <= $i; $j++ )
 				{
-					my $onefile = ${$filesref}[$j];			
-					if ( ! $onefile->{'cabinet'} ) { $onefile->{'cabinet'} = $media{'Cabinet'}; }				
+					my $onefile = ${$filesref}[$j];
+					if ( ! $onefile->{'cabinet'} ) { $onefile->{'cabinet'} = $media{'Cabinet'}; }
 				}
 
 				$cabfull = 0;
-				$counter = 0;				
+				$counter = 0;
 			}
 		}
 	}
@@ -304,12 +304,12 @@ sub create_media_table
 	{
 		installer::exiter::exit_program("ERROR: No cab file specification in globals.pm !", "create_media_table");
 	}
-	
+
 	# Saving the file
-	
+
 	my $mediatablename = $basedir . $installer::globals::separator . "Media.idt";
 	installer::files::save_file($mediatablename ,\@mediatable);
-    $installer::logger::Lang->printf("Created idt file: %s\n", $mediatablename); 
+    $installer::logger::Lang->printf("Created idt file: %s\n", $mediatablename);
 }
 
 1;

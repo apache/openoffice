@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -38,20 +38,20 @@ use strict;
 sub get_registry_component_name
 {
 	my ($registryref, $allvariables) = @_;
-		
+
 	# In this function exists the rule to create components from registryitems
 	# Rule:
 	# The componentname can be directly taken from the ModuleID.
 	# All registryitems belonging to one module can get the same component.
-		
+
 	my $componentname = "";
 	my $isrootmodule = 0;
-	
+
 	if ($registryref->{'ModuleID'})
     {
         $componentname = $registryref->{'ModuleID'};
     }
-	
+
 	$componentname =~ s/\\/\_/g;
 	$componentname =~ s/\//\_/g;
 	$componentname =~ s/\-/\_/g;
@@ -64,15 +64,15 @@ sub get_registry_component_name
         $isrootmodule = 1;
     }
 
-	# Attention: Maximum length for the componentname is 72 
-	
+	# Attention: Maximum length for the componentname is 72
+
 	# identifying this component as registryitem component
 	$componentname = "registry_" . $componentname;
 
 	$componentname =~ s/gid_module_/g_m_/g;
 	$componentname =~ s/_optional_/_o_/g;
 	$componentname =~ s/_javafilter_/_jf_/g;
-	
+
 	# This componentname must be more specific
 	my $addon = "_";
 	if ($allvariables->{'PRODUCTNAME'})
@@ -108,13 +108,13 @@ sub get_registry_component_name
     }
 
 	# Attention: Maximum length for the componentname is 72
-	# %installer::globals::allregistrycomponents_in_this_database_ : resetted for each database	
+	# %installer::globals::allregistrycomponents_in_this_database_ : resetted for each database
 	# %installer::globals::allregistrycomponents_ : not resetted for each database
 	# Component strings must be unique for the complete product, because they are used for
-	# the creation of the globally unique identifier.	
+	# the creation of the globally unique identifier.
 
 	my $fullname = $componentname;  # This can be longer than 72
-		
+
 	if (exists($installer::globals::allregistrycomponents_{$fullname})
         && ! exists($installer::globals::allregistrycomponents_in_this_database_{$fullname}))
 	{
@@ -123,7 +123,7 @@ sub get_registry_component_name
             "ERROR: Windows registry component \"$fullname\" is already included into another package. This is not allowed.",
             "get_registry_component_name");
 	}
-		
+
 	if ( exists($installer::globals::allregistrycomponents_{$fullname}) )
 	{
 		$componentname = $installer::globals::allregistrycomponents_{$fullname};
@@ -144,7 +144,7 @@ sub get_registry_component_name
         $installer::globals::registryrootcomponent = $componentname;
     }
 
-	return $componentname;	
+	return $componentname;
 }
 
 #########################################################
@@ -165,11 +165,11 @@ sub generate_new_short_registrycomponentname
 	my $startversion = substr($componentname, 0, 60); # taking only the first 60 characters
 	my $subid = installer::windows::msiglobal::calculate_id($componentname, 9); # taking only the first 9 digits
 	my $shortcomponentname = $startversion . "_" . $subid;
-	
+
 	if ( exists($installer::globals::allshortregistrycomponents{$shortcomponentname}) ) { installer::exiter::exit_program("Failed to create unique component name: \"$shortcomponentname\"", "generate_new_short_registrycomponentname"); }
-	
+
 	$installer::globals::allshortregistrycomponents{$shortcomponentname} = 1;
-	
+
 	return $shortcomponentname;
 }
 
@@ -182,9 +182,9 @@ sub get_registry_identifier
 	my ($registry) = @_;
 
 	my $identifier = "";
-	
+
 	if ( $registry->{'gid'} ) { $identifier = $registry->{'gid'}; }
-	
+
 	$identifier = lc($identifier);	# always lower case
 
 	# Attention: Maximum length is 72
@@ -199,15 +199,15 @@ sub get_registry_identifier
 	$identifier =~ s/_productversion_/_pv_/;
 	$identifier =~ s/_staroffice_/_so_/;
 	$identifier =~ s/_software_/_sw_/;
-	$identifier =~ s/_capabilities_/_cap_/;	
+	$identifier =~ s/_capabilities_/_cap_/;
 	$identifier =~ s/_classpath_/_cp_/;
 	$identifier =~ s/_extension_/_ex_/;
 	$identifier =~ s/_fileassociations_/_fa_/;
 	$identifier =~ s/_propertysheethandlers_/_psh_/;
 	$identifier =~ s/__/_/g;
-		
+
 	# Saving this in the registry collector
-	
+
 	$registry->{'uniquename'} = $identifier;
 
 	return $identifier;
@@ -223,13 +223,13 @@ sub get_registry_root
 
 	my $rootvalue = 0;	# Default: Parent is KKEY_CLASSES_ROOT
 	my $scproot = "";
-	
+
 	if ( $registry->{'ParentID'} ) { $scproot = $registry->{'ParentID'}; }
 
 	if ( $scproot eq "PREDEFINED_HKEY_LOCAL_MACHINE" ) { $rootvalue = -1; }
-	
+
 	if ( $scproot eq "PREDEFINED_HKEY_CLASSES_ROOT" ) { $rootvalue = 0; }
-	
+
 	if ( $scproot eq "PREDEFINED_HKEY_CURRENT_USER_ONLY" ) { $rootvalue = 1; }
 
 	if ( $scproot eq "PREDEFINED_HKEY_LOCAL_MACHINE_ONLY" ) { $rootvalue = 2; }
@@ -246,7 +246,7 @@ sub get_registry_key
 	my ($registry, $allvariableshashref) = @_;
 
 	my $key = "";
-	
+
 	if ( $registry->{'Subkey'} ) { $key = $registry->{'Subkey'}; }
 
 	if ( $key =~ /\%/ ) { $key = installer::worker::replace_variables_in_string($key, $allvariableshashref); }
@@ -263,7 +263,7 @@ sub get_registry_name
 	my ($registry, $allvariableshashref) = @_;
 
 	my $name = "";
-	
+
 	if ( $registry->{'Name'} ) { $name = $registry->{'Name'}; }
 
 	if ( $name =~ /\%/ ) { $name = installer::worker::replace_variables_in_string($name, $allvariableshashref); }
@@ -280,9 +280,9 @@ sub get_registry_value
 	my ($registry, $allvariableshashref) = @_;
 
 	my $value = "";
-	
+
 	if ( $registry->{'Value'} ) { $value = $registry->{'Value'}; }
-	
+
 	$value =~ s/\\\"/\"/g;	# no more masquerading of '"'
 	$value =~ s/\\\\\s*$/\\/g;	# making "\\" at end of value to "\"
 	$value =~ s/\<progpath\>/\[INSTALLLOCATION\]/;
@@ -304,7 +304,7 @@ sub get_registry_val64
 	my $value = "";
 
 	if ( $registry->{'Val64'} ) { $value = $registry->{'Val64'}; }
-	
+
 	$value =~ s/\\\"/\"/g;	# no more masquerading of '"'
 	$value =~ s/\\\\\s*$/\\/g;	# making "\\" at end of value to "\"
 	$value =~ s/\<progpath\>/\[INSTALLLOCATION\]/;
@@ -317,7 +317,7 @@ sub get_registry_val64
 
 
 ######################################################
-# Adding the content of 
+# Adding the content of
 # @installer::globals::userregistrycollector
 # to the registry table. The content was collected
 # in create_files_table() in file.pm.
@@ -333,7 +333,7 @@ sub add_userregs_to_registry_table
 
 		my $styles = "";
 		if ( $onefile->{'Styles'} ) { $styles = $onefile->{'Styles'}; }
-		
+
 		my %registry = ();
 
 		$registry{'Registry'} = $onefile->{'userregkeypath'};
@@ -348,13 +348,13 @@ sub add_userregs_to_registry_table
 		my $oneline = $registry{'Registry'} . "\t" . $registry{'Root'} . "\t" . $registry{'Key'} . "\t"
 					. $registry{'Name'} . "\t" . $registry{'Value'} . "\t" . $registry{'Component_'} . "\n";
 
-		push(@{$registrytable}, $oneline);			
+		push(@{$registrytable}, $oneline);
 	}
 }
 
 ######################################################
 # Creating the file Registry.idt dynamically
-# Content: 
+# Content:
 # Registry Root Key Name Value Component_
 ######################################################
 sub prepare_registry_table ($$$)
@@ -368,24 +368,24 @@ sub prepare_registry_table ($$$)
 		foreach my $oneregistry (@$registryref)
 		{
 			# Controlling the language!
-			# Only language independent folderitems or folderitems with the correct language 
+			# Only language independent folderitems or folderitems with the correct language
 			# will be included into the table
-			
+
 			next if $oneregistry->{'ismultilingual'}
                 && $oneregistry->{'specificlanguage'} ne $onelanguage;
 
 			my %registry = ();
 
-			$registry{'Registry'} = get_registry_identifier($oneregistry); 		
+			$registry{'Registry'} = get_registry_identifier($oneregistry);
 			$registry{'Root'} = get_registry_root($oneregistry);
-			$registry{'Key'} = get_registry_key($oneregistry, $allvariableshashref); 		
+			$registry{'Key'} = get_registry_key($oneregistry, $allvariableshashref);
 			$registry{'Name'} = get_registry_name($oneregistry, $allvariableshashref);
 			$registry{'Value'} = get_registry_value($oneregistry, $allvariableshashref);
 			$registry{'Val64'} = get_registry_val64($oneregistry, $allvariableshashref);
             my $component_name = get_registry_component_name($oneregistry, $allvariableshashref);
             $oneregistry->{'componentname'} = $component_name;
 			$registry{'Component_'} = $component_name;
-	
+
 			# Collecting all components with DONT_DELETE style
 			my $style = $oneregistry->{'Styles'};
             $style = "" unless defined $style;
@@ -413,7 +413,7 @@ sub prepare_registry_table ($$$)
 
 			# Collecting all component conditions
 			if ( $oneregistry->{'ComponentCondition'} )
-			{			
+			{
 				if ( ! exists($installer::globals::componentcondition{$registry{'Component_'}}))
 				{
 					$installer::globals::componentcondition{$registry{'Component_'}} = $oneregistry->{'ComponentCondition'};
@@ -440,7 +440,7 @@ sub collect_registry_components ($)
     {
         foreach my $item (@$language_data)
         {
-			$components{$item->{'Component_'}} = 1; 
+			$components{$item->{'Component_'}} = 1;
         }
     }
     return keys %components;
@@ -496,7 +496,7 @@ sub create_registry_table_32 ($$$$)
 		foreach my $item (@{$table_data->{$onelanguage}})
 		{
 			next if $item->{'styles'} =~ /\bX64_ONLY\b/;
-            
+
 			my $oneline = join("\t",
                 $item->{'Registry'},
                 $item->{'Root'},
@@ -520,7 +520,7 @@ sub create_registry_table_32 ($$$$)
             add_userregs_to_registry_table(\@registrytable, $allvariableshashref);
         }
 
-		# Save the database file.		
+		# Save the database file.
 		my $registrytablename = $basedir . $installer::globals::separator . "Registry.idt" . "." . $onelanguage;
 		installer::files::save_file($registrytablename ,\@registrytable);
         $installer::logger::Lang->printf("Created idt file: %s\n", $registrytablename);

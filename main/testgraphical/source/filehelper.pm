@@ -1,7 +1,7 @@
 package filehelper;
 
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -9,16 +9,16 @@ package filehelper;
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -101,10 +101,10 @@ sub unixpath($)
 #     my $sSolarisLockFile = "/tmp/.ai.pkg.zone.lock-afdb66cf-1dd1-11b2-a049-000d560ddc3e";
 #     return $sSolarisLockFile;
 # }
-# 
+#
 # sub checkForSolarisLock()
 # {
-#     if ($OSNAME eq "solaris") 
+#     if ($OSNAME eq "solaris")
 #     {
 #         # wait until the internal installer lock is gone
 #         while ( -e getSolarisLockFile() )
@@ -119,14 +119,14 @@ sub unixpath($)
 #         log_print( "[ok], lock is gone.\n");
 #     }
 # }
-# 
+#
 # sub deleteSolarisLock()
 # {
-#     if ($OSNAME eq "solaris") 
+#     if ($OSNAME eq "solaris")
 #     {
 #         sleep 1;
 #         unlink getSolarisLockFile();
-# 
+#
 #         sleep 1;
 #         if ( -e getSolarisLockFile() )
 #         {
@@ -192,7 +192,7 @@ our $programprefix;
 # sub getProgramPrefix($)
 # {
 #     my $sDBDistinct = shift;
-# 
+#
 #     my $sProgramPrefix;
 #     if (! $programprefix)
 #     {
@@ -271,7 +271,7 @@ sub rmkdir($)
     {
         @dirs = split("\\\\", $tpath);
     }
-    
+
     foreach $dir (@dirs)
     {
 	$accum = "$accum$dir/";

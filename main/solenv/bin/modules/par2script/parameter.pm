@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -35,7 +35,7 @@ use par2script::systemactions;
 
 ###############################################################################
 # Usage:
-# perl par2script.pl -i ..\wntmsci8.pro\par,o:\SRX645\wntmsci8.pro\par.m24 
+# perl par2script.pl -i ..\wntmsci8.pro\par,o:\SRX645\wntmsci8.pro\par.m24
 # 					@@C:\DOCUMEN~1\is\LOCALS~1\Temp\mk6pd
 # 					-o ..\wntmsci8.pro\bin\osl\setup_osl.inf
 ###############################################################################
@@ -51,9 +51,9 @@ The following parameter are needed:
 -o: setup script file name
 -v: writing logfile.txt (optional)
 \@\@list: list of all par files
- 
+
 Example:
- perl par2script.pl -i ..\\wntmsci8\\par\,o\:\\SRX645\\wntmsci8\\par.m24 
+ perl par2script.pl -i ..\\wntmsci8\\par\,o\:\\SRX645\\wntmsci8\\par.m24
  		\@\@C\:\\DOCUMEN\~1\\is\\LOCALS\~1\\Temp\\mk6pd
  		-o ..\\wntmsci8.pro\\bin\\osl\\setup_osl.inf \[-v\]
 
@@ -71,7 +71,7 @@ sub getparameter
 	while ( $#ARGV >= 0 )
 	{
 		my $param = shift(@ARGV);
-		
+
 		if ($param eq "-o") { $par2script::globals::scriptname = shift(@ARGV); }
 		elsif ($param eq "-v") { $par2script::globals::logging = 1; }
 		elsif ($param =~ /\@\@/) { $par2script::globals::parfilelistorig = $param; }
@@ -87,7 +87,7 @@ sub getparameter
 			print("\n*************************************\n");
 			usage();
 			exit(-1);
-		}	
+		}
 	}
 }
 
@@ -106,7 +106,7 @@ sub control_parameter
 		usage();
 		exit(-1);
 	}
-	
+
 	if ($par2script::globals::scriptname eq "")
 	{
 		print "\n************************************************\n";
@@ -124,9 +124,9 @@ sub control_parameter
 		usage();
 		exit(-1);
 	}
-	
+
 	# The par file list has to exist
-	
+
 	$par2script::globals::parfilelist = $par2script::globals::parfilelistorig;
 	$par2script::globals::parfilelist =~ s/\@\@//;
 	par2script::files::check_file($par2script::globals::parfilelist);
@@ -141,7 +141,7 @@ sub outputparameter
 	my $outputline = "\n$par2script::globals::prog -i $par2script::globals::includepathlist $par2script::globals::parfilelistorig -o $par2script::globals::scriptname";
 
 	if ($par2script::globals::logging) { $outputline .= " -v"; }
-	
+
 	$outputline .= "\n";
 
 	print $outputline;

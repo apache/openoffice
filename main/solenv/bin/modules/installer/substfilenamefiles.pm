@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -47,7 +47,7 @@ sub resolving_subst_filename_flag
 		my $styles = "";
 
 		if ( $onefile->{'Styles'} ) { $styles = $onefile->{'Styles'}; }
-	
+
 		if ( $styles =~ /\bSUBST_FILENAME\b/ )
 		{
 			# Files with flag SUBST_FILENAME must have a "Substitute" key
@@ -55,34 +55,34 @@ sub resolving_subst_filename_flag
 			{
 				installer::exiter::exit_program("ERROR: SUBST_FILENAME is set, but no Substitute and no InstallName defined at file $onefile->{'gid'}!", "resolving_subst_filename_flag");
 			}
-			
+
 			# Language specific subdirectory
 			my $onelanguage = $onefile->{'specificlanguage'};
-			
+
 			if ($onelanguage eq "")
 			{
 				$onelanguage = "00";	# files without language into directory "00"
 			}
-			
-			my $replacedir = $replacedirbase . $installer::globals::separator . $onelanguage . $installer::globals::separator; 
+
+			my $replacedir = $replacedirbase . $installer::globals::separator . $onelanguage . $installer::globals::separator;
 			installer::systemactions::create_directory($replacedir);	# creating language specific directories
 
 			# copy files and edit them with the variables defined in the zip.lst
-				
+
 			my $longfilename = 0;
-				
+
 			my $onefilename = $onefile->{'Name'};
 
 			my $sourcepath = $onefile->{'sourcepath'};
-				
+
 			# if ( $onefilename =~ /^\s*\Q$installer::globals::separator\E/ )	# filename begins with a slash, for instance /registry/schema/org/openoffice/VCL.xcs
 			if ( $onefilename =~ /\Q$installer::globals::separator\E/ )	# filename begins with a slash, for instance /registry/schema/org/openoffice/VCL.xcs
 			{
 				$onefilename =~ s/^\s*\Q$installer::globals::separator\E//;
 				$longfilename = 1;
 			}
-	
-			my $destinationpath = $replacedir . $onefilename;  
+
+			my $destinationpath = $replacedir . $onefilename;
 			my $movepath = $destinationpath . ".orig";
 			my $destdir = $replacedir;
 
@@ -104,14 +104,14 @@ sub resolving_subst_filename_flag
 					my $newfilename = $destinationpath;
 					installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$newfilename);
 					eval '$newfilename =~ ' . "$substitute";
-		
+
 					my $longnewfilename = $destdir . $newfilename;
 
-					$copysuccess = installer::systemactions::copy_one_file($movepath, $longnewfilename);				
+					$copysuccess = installer::systemactions::copy_one_file($movepath, $longnewfilename);
 
 					# Saving the new file name
 					$onefile->{'Name'} = $newfilename;
-				
+
 					# Saving the new destination
 					my $newdest = $onefile->{'destination'};
 					installer::pathanalyzer::get_path_from_fullqualifiedname(\$newdest);
@@ -131,10 +131,10 @@ sub resolving_subst_filename_flag
 
 						my $newfilename = $destinationpath;
 						installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$newfilename);
-		
+
 						my $longnewfilename = $destdir . $installname;
 
-						$copysuccess = installer::systemactions::copy_one_file($movepath, $longnewfilename);				
+						$copysuccess = installer::systemactions::copy_one_file($movepath, $longnewfilename);
 
 						# Saving the new file name
 						$onefile->{'Name'} = $installname;
@@ -148,7 +148,7 @@ sub resolving_subst_filename_flag
 						$onefile->{'originalsourcepath'} = $onefile->{'sourcepath'};
 
 						# Writing the new sourcepath into the hashref, even if it was not copied
-						$onefile->{'sourcepath'} = $longnewfilename;		
+						$onefile->{'sourcepath'} = $longnewfilename;
 					}
 				}
 			}

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -46,7 +46,7 @@ sub create_featurecomponent_table_from_files_collector ($$)
 		my $filecomponent = $onefile->{'componentname'};
 		my $filemodules = $onefile->{'modules'};
 
-		if ( $filecomponent eq "" ) 
+		if ( $filecomponent eq "" )
 		{
 			installer::exiter::exit_program(
                 sprintf("ERROR: No component defined for file %s", $onefile->{'Name'}),
@@ -57,7 +57,7 @@ sub create_featurecomponent_table_from_files_collector ($$)
             # Temporary for files created from source installation set.
             die;
         }
-		if ($filemodules eq "") 
+		if ($filemodules eq "")
 		{
 			installer::exiter::exit_program(
                 sprintf("ERROR: No modules found for file %s", $onefile->{'Name'}),
@@ -69,26 +69,26 @@ sub create_featurecomponent_table_from_files_collector ($$)
 		foreach my $onemodule (@$filemodulesarrayref)
 		{
 			my %featurecomponent = ();
-			
+
 			$onemodule =~ s/\s*$//;
 			$featurecomponent{'Feature'} = $onemodule;
 			$featurecomponent{'Component'} = $filecomponent;
-			
+
 			# Attention: Features are renamed, because the maximum length is 38.
 			# But in the files collector ($filesref), the original names are saved.
 
 			installer::windows::idtglobal::shorten_feature_gid(\$featurecomponent{'Feature'});
-			
+
 			my $oneline = "$featurecomponent{'Feature'}\t$featurecomponent{'Component'}\n";
-			
+
 			# control of uniqueness
-			
+
 			if (! installer::existence::exists_in_array($oneline, $featurecomponenttableref))
-			{		
+			{
 				push(@{$featurecomponenttableref}, $oneline);
-			}			
+			}
 		}
-	}			
+	}
 }
 
 
@@ -108,7 +108,7 @@ sub create_featurecomponent_table_from_registry_collector ($$)
 	foreach my $oneregistry (@$registryref)
 	{
 		my $component_name = $oneregistry->{'componentname'};
-		if ($component_name eq "") 
+		if ($component_name eq "")
 		{
 			installer::exiter::exit_program(
                 sprintf("ERROR: No component defined for registry %s", $oneregistry->{'gid'}),
@@ -116,7 +116,7 @@ sub create_featurecomponent_table_from_registry_collector ($$)
 		}
 
 		my $feature_name = $oneregistry->{'ModuleID'};
-		if ($feature_name eq "") 
+		if ($feature_name eq "")
 		{
 			installer::exiter::exit_program(
                 sprintf("ERROR: No modules found for registry %s", $oneregistry->{'gid'}),
@@ -130,7 +130,7 @@ sub create_featurecomponent_table_from_registry_collector ($$)
 
         my $oneline = sprintf("%s\t%s\n", $feature_name, $component_name);
 		if ( ! installer::existence::exists_in_array($oneline, $featurecomponenttableref))
-		{		
+		{
 			push(@$featurecomponenttableref, $oneline);
             ++$unique_count;
 		}
@@ -153,13 +153,13 @@ sub create_featurecomponent_table_from_registry_collector ($$)
 sub collect_all_features
 {
 	my ($featurecomponenttable) = @_;
-	
+
 	my @allfeature = ();
 
 	for ( my $i = 3; $i <= $#{$featurecomponenttable}; $i++ )	# beginning in line 4
 	{
 		my $oneline = ${$featurecomponenttable}[$i];
-		
+
 		if ( $oneline =~ /^\s*(\S+)\s+(\S+)\s*$/ )
 		{
 			my $feature = $1;
@@ -170,7 +170,7 @@ sub collect_all_features
             }
 		}
 	}
-	
+
 	return \@allfeature;
 }
 
@@ -193,7 +193,7 @@ sub check_number_of_components_at_feature
 	{
 		my $onefeature = ${$allfeature}[$i];
 		my $featurecomponents = 0;
-	
+
 		for ( my $j = 0; $j <= $#{$featurecomponenttable}; $j++ )
 		{
 			if ( ${$featurecomponenttable}[$j] =~ /^\s*\Q$onefeature\E\s+(\S+)\s*$/ ) { $featurecomponents++; }
@@ -203,28 +203,28 @@ sub check_number_of_components_at_feature
 		{
 			installer::exiter::exit_program("ERROR: More than 816 components ($featurecomponents) at feature $onefeature. This causes problems on Win 98 and Win Me!", "check_number_of_components_at_feature");
 		}
-		
+
 		# Logging the result
-		
+
 		$installer::logger::Lang->printf("Number of components at feature $onefeature : %s\n", $featurecomponents);
 	}
 
 	$installer::logger::Lang->print("\n");
 }
-	
+
 #################################################################################
 # Creating the file FeatureC.idt dynamically
-# Content: 
-# Feature Component 
+# Content:
+# Feature Component
 #################################################################################
 
 sub create_featurecomponent_table ($$$)
 {
 	my ($filesref, $registryref, $basedir) = @_;
-	
+
 	my @featurecomponenttable = ();
 	my $infoline;
-	
+
 	installer::windows::idtglobal::write_idt_header(\@featurecomponenttable, "featurecomponent");
 
 	# This is the first time, that features and componentes are related
@@ -237,7 +237,7 @@ sub create_featurecomponent_table ($$$)
 
 	# At the moment only the files are related to components (and the files know their modules).
 	# The component for each file is written into the files collector $filesinproductlanguageresolvedarrayref
-			
+
 	create_featurecomponent_table_from_files_collector(
         \@featurecomponenttable,
         $filesref);
@@ -253,7 +253,7 @@ sub create_featurecomponent_table ($$$)
 	check_number_of_components_at_feature(\@featurecomponenttable);
 
 	# Saving the file
-	
+
 	my $featurecomponenttablename = $basedir . $installer::globals::separator . "FeatureC.idt";
 	installer::files::save_file($featurecomponenttablename ,\@featurecomponenttable);
 	$installer::logger::Lang->printf("Created idt file: %s\n", $featurecomponenttablename);
