@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -36,21 +36,21 @@ use packager::globals;
 sub set_global_variable
 {
 	my $compiler = $ENV{'OUTPATH'};
-	
+
 	if ( $ENV{'PROEXT'} ) { $compiler = $compiler . $ENV{'PROEXT'}; }
 
-	$packager::globals::compiler = $compiler;	
+	$packager::globals::compiler = $compiler;
 }
 
 #############################################################################
-# Converting a string list with separator $listseparator 
+# Converting a string list with separator $listseparator
 # into an array
 #############################################################################
 
 sub convert_stringlist_into_array
 {
 	my ( $includestringref, $listseparator ) = @_;
-	
+
 	my @newarray = ();
 	my $first;
 	my $last = ${$includestringref};
@@ -58,12 +58,12 @@ sub convert_stringlist_into_array
 	while ( $last =~ /^\s*(.+?)\Q$listseparator\E(.+)\s*$/)	# "$" for minimal matching
 	{
 		$first = $1;
-		$last = $2;	
+		$last = $2;
 		push(@newarray, "$first");
-	}	
+	}
 
-	push(@newarray, "$last");	
-	
+	push(@newarray, "$last");
+
 	return \@newarray;
 }
 
@@ -75,15 +75,15 @@ sub convert_stringlist_into_array
 sub create_package_todos
 {
 	my ( $packagelist ) = @_;
-	
+
 	my @targets = ();	# only used, if the build server is not used
 
 	for ( my $i = 0; $i <= $#{$packagelist}; $i++ )
 	{
 		my $line = ${$packagelist}[$i];
-		
+
 		if ( $line =~ /^\s*\#/ ) { next; }	# comment line
-		
+
 		if ( $line =~ /^\s*(\w+?)\s+(\S+?)\s+(\S+?)\s+(\w+?)\s*$/ )
 		{
 			my $product = $1;
@@ -95,34 +95,34 @@ sub create_package_todos
 			$compilerlist =~ s/\s//g;
 			$languagelist =~ s/\s//g;
 			$target =~ s/\s//g;
-			
+
 			my $compilers = convert_stringlist_into_array(\$compilerlist, ",");
-			
-			# is the compiler of this "build" part of the compiler list in pack.lst ? 
-			
+
+			# is the compiler of this "build" part of the compiler list in pack.lst ?
+
 			if ( packager::existence::exists_in_array($packager::globals::compiler, $compilers) )
-			{			
+			{
 				# products are separated in pack.lst by "|"
-				
+
 				my $languagesets = convert_stringlist_into_array(\$languagelist, "\|");
-			
+
 				# now all information is available to create the targets for the systemcalls
-			
+
 				for ( my $j = 0; $j <= $#{$languagesets}; $j++ )
 				{
 					my $languagestring = ${$languagesets}[$j];
 					$languagestring =~ s/\,/\_/g;	# comma in pack.lst becomes "_" in dmake command
 
 					my $target = $target . "_" . $languagestring;
-					push(@targets, $target);	
+					push(@targets, $target);
 
-					my $insertline = $target . "\n"; 
+					my $insertline = $target . "\n";
 					push( @packager::globals::logfileinfo, $insertline);
 				}
 			}
 		}
 	}
-	
+
 	return \@targets;
 }
 
@@ -155,7 +155,7 @@ sub execute_system_calls
 			push( @packager::globals::logfileinfo, $infoline);
 			if (!($packager::globals::ignoreerrors)) { packager::exiter::exit_program("ERROR: Packing not successful : $systemcall", "execute_system_calls"); }
 		}
-	}	
+	}
 }
 
 ##############################################################
@@ -202,7 +202,7 @@ sub start_build_server
 		if ( defined $pkgformat ) {
 	    	push( @targetlines, "\n$target : ".'$$@{$(PKGFORMAT:^".")}'."\n\n");	# to be included into the makefile.mk
 		}
-		
+
 		generate_makefile($tempdir, $makefilepath, $prjroot, $target, \@targetlines);
 
 		do_broadcast($tempdir, $prjname, $prj, $platform, $prjdep);
@@ -222,9 +222,9 @@ sub generate_makefile
 
 	my @targetlines = ();
 	push( @targetlines, @{$targetlines_ref});	# to be included into the makefile.mk
-	
+
 	$prjroot = $prjroot . "\n";
-	
+
 	my $uniquename = $tempdir;
 	get_filename_from_path(\$uniquename);
 	$uniquename = $uniquename . "\n";
@@ -242,7 +242,7 @@ sub generate_makefile
 
 		if ( $increase ) { $counter++; }
 	}
-	
+
 	splice(@{$makefile}, $counter, 0, @targetlines);	# including the new target lines at position $counter
 
 	my $newmakefilepath = $tempdir . $packager::globals::separator . "makefile.mk";
@@ -256,15 +256,15 @@ sub generate_makefile
 sub do_broadcast
 {
     use  File::Temp;
-    
+
 	my ( $tempdir, $prjname, $prj, $platform, $prjdep ) = @_;
 
-	# Syntax:  cmd_bcst -s 18 "Version;Environment;Project;Verzeichnis;Restriction[;Abhaengigkeit1][;Abhaengigkeit n]..." 
+	# Syntax:  cmd_bcst -s 18 "Version;Environment;Project;Verzeichnis;Restriction[;Abhaengigkeit1][;Abhaengigkeit n]..."
 	# Example: cmd_bcst -s 18 "SRC680;wntmsci10.pro;instsetoo_native;;instsetoo_native\bla1;instsetoo_native\util"
 
 	if ( ! $ENV{'WORK_STAMP'} ) { packager::exiter::exit_program("ERROR: Environment variable WORK_STAMP not set!", "do_broadcast"); }
 	my $workstamp = $ENV{WORK_STAMP};
-	my $cwsworkstamp = $ENV{CWS_WORK_STAMP}; 
+	my $cwsworkstamp = $ENV{CWS_WORK_STAMP};
 
 	my $prjdir = $tempdir;
 	$prjdir =~ s/$prj/$prjname/;
@@ -302,7 +302,7 @@ sub do_broadcast
 sub get_filename_from_path
 {
 	my ($longfilenameref) = @_;
-	
+
 	if ( $packager::globals::isunix )
 	{
 		if ( $$longfilenameref =~ /^.*\/(\S.+\S?)/ )

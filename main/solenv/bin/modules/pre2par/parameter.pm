@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -43,11 +43,11 @@ The following parameter are needed:
 -o: path to the par file
 -l: path to the ulf file (mlf or jlf file)
 -v: log  process (optional)
-  
+
 Example:
 
 perl pre2par.pl -l test.mlf -s readme.pre -o readme.par -v
-                        
+
 ---------------------------------------------------------
 Ende
 	exit(-1);
@@ -62,7 +62,7 @@ sub getparameter
 	while ( $#ARGV >= 0 )
 	{
 		my $param = shift(@ARGV);
-		
+
 		if ($param eq "-s") { $pre2par::globals::prefilename = shift(@ARGV); }
 		elsif ($param eq "-o") { $pre2par::globals::parfilename = shift(@ARGV); }
 		elsif ($param eq "-l") { $pre2par::globals::langfilename = shift(@ARGV); }
@@ -93,7 +93,7 @@ sub control_parameter
 		usage();
 		exit(-1);
 	}
-	
+
 	if ($pre2par::globals::parfilename eq "")
 	{
 		print "\n************************************************\n";
@@ -111,7 +111,7 @@ sub control_parameter
 		usage();
 		exit(-1);
 	}
-	
+
 	if (!($pre2par::globals::parfilename =~ /\.par\s*$/))
 	{
 		print "\n************************************************\n";
@@ -120,9 +120,9 @@ sub control_parameter
 		usage();
 		exit(-1);
 	}
-	
+
 	# The input file has to exist
-	
+
 	pre2par::files::check_file($pre2par::globals::prefilename);
 }
 
@@ -161,7 +161,7 @@ sub make_path_absolute
 		}
 	}
 
-	$$pathref =~ s/\Q$pre2par::globals::separator\E\s*$//;	# removing ending slashes	
+	$$pathref =~ s/\Q$pre2par::globals::separator\E\s*$//;	# removing ending slashes
 }
 
 #####################################
@@ -172,7 +172,7 @@ sub outputparameter
 {
 	$pre2par::globals::logging ? ($logoption = " -v") : ($logoption = "");
 	print "\n$pre2par::globals::prog -l $pre2par::globals::langfilename -s $pre2par::globals::prefilename -o $pre2par::globals::parfilename$logoption\n";
-	
+
 #	print "\n********************************************************\n";
 #	print "This is $pre2par::globals::prog, version 1.0\n";
 #	print "Input file: $pre2par::globals::prefilename\n";

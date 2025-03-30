@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -42,14 +42,14 @@ sub check_module_existence
 	for ( my $i = 0; $i <= $#{$moduleslist}; $i++ )
 	{
 		my $gid = ${$moduleslist}[$i]->{'gid'};
-		
+
 		if ( $gid eq $onegid )
 		{
 			$foundgid = 1;
 			last;
 		}
 	}
-	
+
 	return $foundgid;
 }
 
@@ -60,17 +60,17 @@ sub check_module_existence
 sub analyze_list
 {
 	my ($packagelist, $moduleslist) = @_;
-	
+
 	@allpackages = ();
-	
+
 	my $moduleshash = get_module_hash($moduleslist);
-	
+
 	for ( my $i = 0; $i <= $#{$packagelist}; $i++ )
 	{
 		my $onepackage = ${$packagelist}[$i];
-		
+
 		my $onegid = $onepackage->{'module'};
-		
+
 		installer::remover::remove_leading_and_ending_whitespaces(\$onegid);
 
 		my $moduleexists = check_module_existence($onegid, $moduleslist);
@@ -80,10 +80,10 @@ sub analyze_list
 		my @allmodules = ();
 
 		push(@allmodules, $onegid);
-		
+
 		# get_children($moduleslist, $onegid, \@allmodules);
 		get_children_with_hash($moduleshash, $onegid, \@allmodules);
-		
+
 		$onepackage->{'allmodules'} = \@allmodules;
 
 		push(@allpackages, $onepackage);
@@ -100,21 +100,21 @@ sub analyze_list
 sub get_module_hash
 {
 	my ($moduleslist) = @_;
-	
+
 	my %modulehash = ();
-	
+
 	for ( my $i = 0; $i <= $#{$moduleslist}; $i++ )
 	{
 		my $gid = ${$moduleslist}[$i]->{'gid'};
 		# Containing only modules with parent. Root modules can be ignored.
 		if ( ${$moduleslist}[$i]->{'ParentID'} ) { $modulehash{$gid} = ${$moduleslist}[$i]->{'ParentID'}; }
 	}
-	
+
 	return \%modulehash;
 }
 
 ########################################################
-# Recursively defined procedure to order 
+# Recursively defined procedure to order
 # modules and directories
 ########################################################
 
@@ -131,12 +131,12 @@ sub get_children_with_hash
 			push(@{$newitemorder}, $gid);
 			my $parent = $gid;
 			get_children_with_hash($modulehash, $parent, $newitemorder);	# recursive!
-		}		
+		}
 	}
 }
 
 ########################################################
-# Recursively defined procedure to order 
+# Recursively defined procedure to order
 # modules and directories
 ########################################################
 
@@ -177,32 +177,32 @@ sub remove_multiple_modules_packages
 		my $allmodules = $onepackage->{'allmodules'};
 
 		# print "Modules below $onepackage->{'module'}: $#{$allmodules}\n";
-		
-		# Comparing each package, with all following packages. If a 
-		# gid for the module is part of more than one package, it is 
+
+		# Comparing each package, with all following packages. If a
+		# gid for the module is part of more than one package, it is
 		# removed if the number of modules in the package is greater
 		# in the current package than in the compare package.
-		
+
 		# Taking all modules from package $i
-		
+
 		my $packagecount = $#{$allmodules};
-		
+
 		my @optimizedpackage = ();
-		
+
 		# iterating over all modules of this package
 
 		for ( my $j = 0; $j <= $#{$allmodules}; $j++ )
 		{
 			my $onemodule = ${$allmodules}[$j];	# this is the module, that shall be removed or not
-		
+
 			my $put_module_into_new_package = 1;
-		
-			# iterating over all other packages	
+
+			# iterating over all other packages
 
 			for ( my $k = 0; $k <= $#{$allpackagemodules}; $k++ )
 			{
 				if ( $k == $i ) { next; }	# not comparing equal module
-				
+
 				if (! $put_module_into_new_package) { next; } # do not compare, if already found
 
 				my $comparepackage = ${$allpackagemodules}[$k];
@@ -215,26 +215,26 @@ sub remove_multiple_modules_packages
 
 				if ( $packagecount <= $comparepackagecount ) { next; }	# nothing to do, take next package
 
-				# iterating over all modules of this package	
+				# iterating over all modules of this package
 
 				for ( my $m = 0; $m <= $#{$allcomparemodules}; $m++ )
 				{
 					my $onecomparemodule = ${$allcomparemodules}[$m];
-					
+
 					if ( $onemodule eq $onecomparemodule )	# this $onemodule has to be removed
 					{
 						$put_module_into_new_package = 0;
 					}
 				}
 			}
-		
+
 			if ( $put_module_into_new_package )
 			{
 				push(@optimizedpackage, $onemodule)
-			}	
+			}
 		}
 
-		$onepackage->{'allmodules'} = \@optimizedpackage;	
+		$onepackage->{'allmodules'} = \@optimizedpackage;
 	}
 
 	# for ( my $i = 0; $i <= $#{$allpackagemodules}; $i++ )
@@ -243,7 +243,7 @@ sub remove_multiple_modules_packages
 	#	my $allmodules = $onepackage->{'allmodules'};
 	#	print "New: Modules below $onepackage->{'module'}: $#{$allmodules}\n";
 	# }
-	
+
 }
 
 #####################################################################
@@ -272,16 +272,16 @@ sub find_files_for_package
 			if ( $includefile ) { next; }
 			my $filemodule = ${$moduleslist}[$j];
 			installer::remover::remove_leading_and_ending_whitespaces(\$filemodule);
-			
+
 			# iterating over all modules of the package
-			
+
 			my $packagemodules = $onepackage->{'allmodules'};
 
 			for ( my $k = 0; $k <= $#{$packagemodules}; $k++ )
 			{
 				if ( $includefile ) { next; }
 				my $packagemodule = ${$packagemodules}[$k];
-				
+
 				if ( $filemodule eq $packagemodule )
 				{
 					$includefile = 1;
@@ -289,13 +289,13 @@ sub find_files_for_package
 				}
 			}
 		}
-	
+
 		if ( $includefile )
 		{
-			push(@newfilelist, $onefile);	
+			push(@newfilelist, $onefile);
 		}
 	}
-	
+
 	return \@newfilelist;
 }
 
@@ -309,7 +309,7 @@ sub find_files_for_package
 sub find_links_for_package
 {
 	my ($linklist, $filelist) = @_;
-	
+
 	# First looking for all links with a FileID.
 	# Then looking for all links with a ShortcutID.
 
@@ -320,30 +320,30 @@ sub find_links_for_package
 		my $includelink = 0;
 
 		my $onelink = ${$linklist}[$i];
-	
+
 		my $fileid = "";
 		if ( $onelink->{'FileID'} ) { $fileid = $onelink->{'FileID'}; }
-		
+
 		if ( $fileid eq "" ) { next; }	 # A link with a ShortcutID
-		
+
 		for ( my $j = 0; $j <= $#{$filelist}; $j++ )	 # iterating over file list
 		{
 			my $onefile = ${$filelist}[$j];
 			my $gid = $onefile->{'gid'};
-		
+
 			if ( $gid eq $fileid )
 			{
 				$includelink = 1;
 				last;
 			}
 		}
-		
+
 		if ( $includelink )
 		{
-			push(@newlinklist, $onelink);	
+			push(@newlinklist, $onelink);
 		}
 	}
-	
+
 	# iterating over the new list, because of all links with a ShortcutID
 
 	for ( my $i = 0; $i <= $#{$linklist}; $i++ )
@@ -354,24 +354,24 @@ sub find_links_for_package
 
 		my $shortcutid = "";
 		if ( $onelink->{'ShortcutID'} ) { $shortcutid = $onelink->{'ShortcutID'}; }
-		
+
 		if ( $shortcutid eq "" ) { next; }	 # A link with a ShortcutID
 
 		for ( my $j = 0; $j <= $#newlinklist; $j++ )	 # iterating over newly created link list
 		{
 			my $onefilelink = $newlinklist[$j];
 			my $gid = $onefilelink->{'gid'};
-		
+
 			if ( $gid eq $shortcutid )
 			{
 				$includelink = 1;
 				last;
 			}
 		}
-		
+
 		if ( $includelink )
 		{
-			push(@newlinklist, $onelink);	
+			push(@newlinklist, $onelink);
 		}
 	}
 
@@ -382,7 +382,7 @@ sub find_links_for_package
 # Analyzing all directories if they belong to a special package.
 # A package is described by a list of modules.
 # Directories are included into the package, if they are needed
-# by a file or a link included into the package. 
+# by a file or a link included into the package.
 # Attention: A directory with the flag CREATE, is only included
 # into the root module:
 # ($packagename eq $installer::globals::rootmodulegid)
@@ -409,15 +409,15 @@ sub find_dirs_for_package
 			if ( $includedir ) { last; }
 			my $dirmodule = ${$moduleslist}[$j];
 			installer::remover::remove_leading_and_ending_whitespaces(\$dirmodule);
-			
+
 			# iterating over all modules of the package
-			
+
 			my $packagemodules = $onepackage->{'allmodules'};
 
 			for ( my $k = 0; $k <= $#{$packagemodules}; $k++ )
 			{
 				my $packagemodule = ${$packagemodules}[$k];
-				
+
 				if ( $dirmodule eq $packagemodule )
 				{
 					$includedir = 1;
@@ -425,13 +425,13 @@ sub find_dirs_for_package
 				}
 			}
 		}
-	
+
 		if ( $includedir )
 		{
-			push(@newdirlist, $onedir);	
+			push(@newdirlist, $onedir);
 		}
 	}
-	
+
 	return \@newdirlist;
 }
 
@@ -444,16 +444,16 @@ sub resolve_packagevariables
 	my ($packagenameref, $variableshashref, $make_lowercase) = @_;
 
 	my $key;
-	
+
 	# Special handling for dictionaries
 	if ( $$packagenameref =~ /-dict-/ )
 	{
 		if (exists($variableshashref->{'DICTIONARYUNIXPRODUCTNAME'}) ) { $$packagenameref =~ s/\%UNIXPRODUCTNAME/$variableshashref->{'DICTIONARYUNIXPRODUCTNAME'}/g; }
 		if (exists($variableshashref->{'DICTIONARYBRANDPACKAGEVERSION'}) ) { $$packagenameref =~ s/\%BRANDPACKAGEVERSION/$variableshashref->{'DICTIONARYBRANDPACKAGEVERSION'}/g; }
 	}
-	
+
 	foreach $key (keys %{$variableshashref})
-	{								
+	{
 		my $value = $variableshashref->{$key};
 		if ( $make_lowercase ) { $value = lc($value); }
 		$$packagenameref =~ s/\%$key/$value/g;
@@ -469,16 +469,16 @@ sub resolve_packagevariables2
 	my ($packagenameref, $variableshashref, $make_lowercase, $isdict ) = @_;
 
 	my $key;
-	
+
 	# Special handling for dictionaries
 	if ( $isdict )
 	{
 		if (exists($variableshashref->{'DICTIONARYUNIXPRODUCTNAME'}) ) { $$packagenameref =~ s/\%UNIXPRODUCTNAME/$variableshashref->{'DICTIONARYUNIXPRODUCTNAME'}/g; }
 		if (exists($variableshashref->{'DICTIONARYBRANDPACKAGEVERSION'}) ) { $$packagenameref =~ s/\%BRANDPACKAGEVERSION/$variableshashref->{'DICTIONARYBRANDPACKAGEVERSION'}/g; }
 	}
-	
+
 	foreach $key (keys %{$variableshashref})
-	{								
+	{
 		my $value = $variableshashref->{$key};
 		if ( $make_lowercase ) { $value = lc($value); }
 		$$packagenameref =~ s/\%$key/$value/g;
@@ -498,23 +498,23 @@ sub resolve_packagevariables2
 sub check_packagelist
 {
 	my ($packages) = @_;
-	
+
 	if ( ! ( $#{$packages} > -1 )) { installer::exiter::exit_program("ERROR: No packages defined!", "check_packagelist"); }
 
 	for ( my $i = 0; $i <= $#{$packages}; $i++ )
 	{
 		my $onepackage = ${$packages}[$i];
-		
+
 		my $element;
 
 		# checking all items that must be defined
-		
+
 		foreach $element (@installer::globals::packagelistitems)
-		{	
+		{
 			if ( ! exists($onepackage->{$element}) )
 			{
 				installer::exiter::exit_program("ERROR in package list: No value for $element !", "check_packagelist");
-			}			
+			}
 		}
 
 		# checking the existence of the script file, if defined
@@ -543,9 +543,9 @@ sub get_packinfo
 	my ($gid, $filename, $packages, $onelanguage, $islanguagemodule) = @_;
 
 	my $packagelist	= installer::files::read_file($filename);
-	
+
 	my @allpackages = ();
-	
+
 	for ( my $i = 0; $i <= $#{$packagelist}; $i++ )
 	{
 		my $line = ${$packagelist}[$i];
@@ -564,10 +564,10 @@ sub get_packinfo
 				{
 					my $key = $1;
 					my $value = $2;
-					$onepackage{$key} = $value;							
+					$onepackage{$key} = $value;
 				}
-				
-				$counter++;	
+
+				$counter++;
 			}
 
 			$onepackage{'islanguagemodule'} = $islanguagemodule;
@@ -577,13 +577,13 @@ sub get_packinfo
 				$saveonelanguage =~ s/_/-/g;
 				$onepackage{'language'} = $saveonelanguage;
 			}
-					
-			push(@allpackages, \%onepackage);	
+
+			push(@allpackages, \%onepackage);
 		}
 	}
-	
+
 	# looking for the packinfo with the correct gid
-	
+
 	my $foundgid = 0;
 	my $onepackage;
 	foreach $onepackage (@allpackages)
@@ -608,22 +608,22 @@ sub get_packinfo
 				   ( $onekey eq "requires" )) { $locallang =~ s/_/-/g; } # avoiding illegal package abbreviation
 				$onepackage->{$onekey} =~ s/\%LANGUAGESTRING/$locallang/g;
 			}
-			
+
 			# Saving the language for the package
 			my $lang = $onelanguage;
 			$lang =~ s/_/-/g;
 			$onepackage->{'specificlanguage'} = $lang;
-			
+
 			push(@{$packages}, $onepackage);
 			$foundgid = 1;
 			last;
 		}
 	}
-	
+
 	if ( ! $foundgid )
 	{
 		installer::exiter::exit_program("ERROR: Could not find package info for module $gid in file \"$filename\"!", "get_packinfo");
-	}	
+	}
 }
 
 #####################################################################
@@ -635,7 +635,7 @@ sub collectpackages
 	my ( $allmodules, $languagesarrayref ) = @_;
 
 	installer::logger::include_header_into_logfile("Collecting packages:");
-	
+
 	my @packages = ();
 	my %gid_analyzed = ();
 
@@ -644,11 +644,11 @@ sub collectpackages
 	{
 		my $packageinfo = "PackageInfo";
 		if (( $installer::globals::tab ) && ( $onemodule->{"TabPackageInfo"} )) { $packageinfo = "TabPackageInfo" }
-	
+
 		if ( $onemodule->{$packageinfo} )	# this is a package module!
 		{
 			my $modulegid = $onemodule->{'gid'};
-			
+
 			# Only collecting modules with correct language for language packs
 #			if ( $installer::globals::languagepack ) { if ( ! ( $modulegid =~ /_$onelanguage\s*$/ )) { next; } }
 			# Resetting language, if this is no language pack
@@ -664,7 +664,7 @@ sub collectpackages
 			{
 				$islanguagemodule = 1;
 				$onelanguage = $onemodule->{'Language'}; # already checked, that it is set.
-				$onelanguage =~ s/-/_/g; # pt-BR -> pt_BR in scp		
+				$onelanguage =~ s/-/_/g; # pt-BR -> pt_BR in scp
 			}
 
 			# Modules in different languages are listed more than once in multilingual installation sets
@@ -672,7 +672,7 @@ sub collectpackages
 			$gid_analyzed{$modulegid} = 1;
 
 			my $packinfofile = $onemodule->{$packageinfo};
-			
+
 			# The file with package information has to be found in path list
 			my $fileref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$packinfofile, "" , 0);
 
@@ -683,7 +683,7 @@ sub collectpackages
 			get_packinfo($modulegid, $$fileref, \@packages, $onelanguage, $islanguagemodule);
 		}
 	}
-	
+
 	return \@packages;
 }
 
@@ -694,7 +694,7 @@ sub collectpackages
 sub log_packages_content
 {
 	my ($packages) = @_;
-	
+
 	if ( ! ( $#{$packages} > -1 )) { installer::exiter::exit_program("ERROR: No packages defined!", "print_content"); }
 
 	installer::logger::include_header_into_logfile("Logging packages content:");
@@ -713,7 +713,7 @@ sub log_packages_content
 		foreach $key (sort keys %{$onepackage})
 		{
 			if ( $key =~ /^\s*\;/ ) { next; }
-			
+
 			if ( $key eq "allmodules" )
 			{
                 $installer::logger::Lang->printf("\t%s:\n", $key);
@@ -748,7 +748,7 @@ sub create_module_destination_hash
 	for ( my $i = 0; $i <= $#{$packages}; $i++ )
 	{
 		my $onepackage = ${$packages}[$i];
-		
+
 		my $defaultdestination = $onepackage->{'destpath'};
 		resolve_packagevariables(\$defaultdestination, $allvariables, 1);
 		if ( $^O =~ /darwin/i ) { $defaultdestination =~ s/\/opt\//\/Applications\//; }
@@ -769,11 +769,11 @@ sub create_module_destination_hash
 sub add_defaultpathes_into_filescollector
 {
 	my ($allfiles) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$allfiles}; $i++ )
 	{
 		my $onefile = ${$allfiles}[$i];
-		
+
 		if ( ! $onefile->{'destination'} ) { installer::exiter::exit_program("ERROR: No destination found at file $onefile->{'gid'}!", "add_defaultpathes_into_filescollector"); }
 		my $destination = $onefile->{'destination'};
 
@@ -781,13 +781,13 @@ sub add_defaultpathes_into_filescollector
 		my $module = $onefile->{'modules'};
 		# If modules contains a list of modules, only taking the first one.
 		if ( $module =~ /^\s*(.*?)\,/ ) { $module = $1; }
-		
+
 		if ( ! exists($installer::globals::moduledestination{$module}) ) { installer::exiter::exit_program("ERROR: No default destination path found for module $module!", "add_defaultpathes_into_filescollector"); }
 		my $defaultpath = $installer::globals::moduledestination{$module};
 		$defaultpath =~ s/\/\s*$//; # removing ending slashes
 		my $fulldestpath = $defaultpath . $installer::globals::separator . $destination;
-	
-		$onefile->{'fulldestpath'} = $fulldestpath;	
+
+		$onefile->{'fulldestpath'} = $fulldestpath;
 	}
 }
 
@@ -798,7 +798,7 @@ sub add_defaultpathes_into_filescollector
 sub prepare_cabinet_files
 {
 	my ($packages, $allvariables) = @_;
-	
+
 	if ( ! ( $#{$packages} > -1 )) { installer::exiter::exit_program("ERROR: No packages defined!", "print_content"); }
 
 	installer::logger::include_header_into_logfile("Preparing cabinet files:");
@@ -808,11 +808,11 @@ sub prepare_cabinet_files
 	for ( my $i = 0; $i <= $#{$packages}; $i++ )
 	{
 		my $onepackage = ${$packages}[$i];
-		
+
 		my $cabinetfile = "$onepackage->{'packagename'}\.cab";
-		
+
 		resolve_packagevariables(\$cabinetfile, $allvariables, 0);
-			
+
 		$installer::globals::allcabinets{$cabinetfile} = 1;
 
 		# checking all items that must be defined
@@ -859,7 +859,7 @@ sub log_cabinet_assignments
 
     $installer::logger::Lang->printf("\n");
     $installer::logger::Lang->printf("List of assignments from modules to cabinet files:\n");
-	
+
 	foreach $key ( sort keys %installer::globals::allcabinetassigns )
     {
         $installer::logger::Lang->printf("\t%s : %s\n",

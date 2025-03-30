@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -40,15 +40,15 @@ use installer::windows::language;
 sub get_feature_gid
 {
 	my ($onefeature) = @_;
-	
+
 	my $gid = "";
-	
+
 	if ( $onefeature->{'gid'} ) { $gid = $onefeature->{'gid'}; }
 
 	# Attention: Maximum feature length is 38!
 	installer::windows::idtglobal::shorten_feature_gid(\$gid);
-		
-	return $gid	
+
+	return $gid
 }
 
 ##############################################################
@@ -59,21 +59,21 @@ sub get_feature_gid
 sub get_feature_parent
 {
 	my ($onefeature) = @_;
-	
+
 	my $parentgid = "";
-	
+
 	if ( $onefeature->{'ParentID'} ) { $parentgid = $onefeature->{'ParentID'}; }
 
-	# The modules, hanging directly below the root, have to be root modules. 
-	# Only then it is possible to make the "real" root module invisible by 
-	# setting the display to "0". 
-	
+	# The modules, hanging directly below the root, have to be root modules.
+	# Only then it is possible to make the "real" root module invisible by
+	# setting the display to "0".
+
 	if ( $parentgid eq $installer::globals::rootmodulegid ) { $parentgid = ""; }
 
 	# Attention: Maximum feature length is 38!
 	installer::windows::idtglobal::shorten_feature_gid(\$parentgid);
-		
-	return $parentgid	
+
+	return $parentgid
 }
 
 ##############################################################
@@ -86,12 +86,12 @@ sub get_feature_parent
 sub get_feature_display
 {
 	my ($onefeature) = @_;
-	
+
 	my $display;
 	my $parentid = "";
-	
+
 	if ( $onefeature->{'ParentID'} ) { $parentid = $onefeature->{'ParentID'}; }
-	
+
 	if ( $parentid eq "" )
 	{
 		$display = "0";									# root module is not visible
@@ -113,13 +113,13 @@ sub get_feature_display
 	# Special handling for language modules. Only visible in multilingual installation set
 	if (( $styles =~ /\bSHOW_MULTILINGUAL_ONLY\b/ ) && ( ! $installer::globals::ismultilingual )) { $display = "0"; }
 
-	# Special handling for c05office. No program module visible.	
+	# Special handling for c05office. No program module visible.
 	if (( $onefeature->{'gid'} eq "gid_Module_Prg" ) && ( $installer::globals::product =~ /c05office/i )) { $display = "0";	}
 
 	# making all feature invisible in Language packs!
 	if ( $installer::globals::languagepack ) { $display = "0"; }
-	
-	return $display	
+
+	return $display
 }
 
 ##############################################################
@@ -129,13 +129,13 @@ sub get_feature_display
 sub get_feature_level
 {
 	my ($onefeature) = @_;
-	
+
 	my $level = "20";	# the default
-	
+
 	my $localdefault = "";
-		
-	if ( $onefeature->{'Default'} ) { $localdefault = $onefeature->{'Default'}; } 
-		
+
+	if ( $onefeature->{'Default'} ) { $localdefault = $onefeature->{'Default'}; }
+
 	if ( $localdefault eq "NO" )	# explicitly set Default = "NO"
 	{
 		$level = "200";				# deselected in default installation, base is 100
@@ -149,10 +149,10 @@ sub get_feature_level
 	}
 
 	# if FeatureLevel is defined in scp, this will be used
-	
+
 	if ( $onefeature->{'FeatureLevel'} ) { $level = $onefeature->{'FeatureLevel'}; }
 
-	return $level	
+	return $level
 }
 
 ##############################################################
@@ -162,12 +162,12 @@ sub get_feature_level
 sub get_feature_directory
 {
 	my ($onefeature) = @_;
-	
+
 	my $directory;
-	
+
 	$directory = "INSTALLLOCATION";
-	
-	return $directory	
+
+	return $directory
 }
 
 ##############################################################
@@ -177,19 +177,19 @@ sub get_feature_directory
 sub get_feature_attributes
 {
 	my ($onefeature) = @_;
-	
+
 	my $attributes;
-	
+
 	# No advertising of features and no leaving on network.
 	# Feature without parent must not have the "2"
-	
+
 	my $parentgid = "";
 	if ( $onefeature->{'ParentID'} ) { $parentgid = $onefeature->{'ParentID'}; }
 
 	if (( $parentgid eq "" ) || ( $parentgid eq $installer::globals::rootmodulegid )) { $attributes = "8"; }
 	else { $attributes = "10"; }
-	
-	return $attributes	
+
+	return $attributes
 }
 
 #################################################################################
@@ -199,11 +199,11 @@ sub get_feature_attributes
 sub replace_one_variable
 {
 	my ($translationfile, $variable, $searchstring) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$translationfile}; $i++ )
 	{
 		${$translationfile}[$i] =~ s/\%$searchstring/$variable/g;
-	}	
+	}
 }
 
 #################################################################################
@@ -233,10 +233,10 @@ sub collect_modules_recursive
 	my $childrenexist = 0;
 
 	# Collecting children from Module $parentid
-	
+
 	my $modulegid;
 	foreach $modulegid ( keys %{$directparent})
-	{		
+	{
 		if ( $directparent->{$modulegid} eq $parentid )
 		{
 			my %childhash = ( "gid" => "$modulegid", "Sortkey" => "$directsortkey->{$modulegid}");
@@ -246,9 +246,9 @@ sub collect_modules_recursive
 	}
 
 	# Sorting children
-	
+
 	if ( $childrenexist )
-	{	
+	{
 		# Sort children
 		installer::sorter::sort_array_of_hashes_numerically(\@allchildren, "Sortkey");
 
@@ -259,7 +259,7 @@ sub collect_modules_recursive
 			my $gid = $childhashref->{'gid'};
 
 			# Saving all lines, that have this 'gid'
-			
+
 			my $unique;
 			foreach $unique ( keys %{$directgid} )
 			{
@@ -280,16 +280,16 @@ sub collect_modules_recursive
 # Sorting the feature in specified order. Evaluated is the key "Sortkey", that
 # is set in scp2 projects.
 # The display order of modules in Windows Installer is dependent from the order
-# in the idt file. Therefore the order of the modules array has to be adapted 
+# in the idt file. Therefore the order of the modules array has to be adapted
 # to the Sortkey order, before the idt file is created.
 #################################################################################
 
 sub sort_feature
 {
 	my ($modulesref) = @_;
-	
+
 	my @feature = ();
-	
+
 	my %directaccess = ();
 	my %directparent = ();
 	my %directgid = ();
@@ -302,11 +302,11 @@ sub sort_feature
 
 		my $uniquekey = $onefeature->{'uniquekey'};
 		my $modulegid = $onefeature->{'gid'};
-		
+
 		$directaccess{$uniquekey} = $i;
-		
+
 		$directgid{$uniquekey} = $onefeature->{'gid'};
-		
+
 		# ParentID and Sortkey are not saved for the 'uniquekey', but only for the 'gid'
 
 		if ( $onefeature->{'ParentID'} ) { $directparent{$modulegid} = $onefeature->{'ParentID'}; }
@@ -314,7 +314,7 @@ sub sort_feature
 
 		if ( $onefeature->{'Sortkey'} ) { $directsortkey{$modulegid} = $onefeature->{'Sortkey'}; }
 		else { $directsortkey{$modulegid} = "9999"; }
-		
+
 		# Bookkeeping:
 		$sorted{$uniquekey} = 0;
 	}
@@ -340,7 +340,7 @@ sub sort_feature
 }
 
 #################################################################################
-# Adding a unique key to the modules array. The gid is not unique for 
+# Adding a unique key to the modules array. The gid is not unique for
 # multilingual modules. Only the combination from gid and specific language
 # is unique. Uniqueness is required for sorting mechanism.
 #################################################################################
@@ -359,7 +359,7 @@ sub add_uniquekey
 
 #################################################################################
 # Creating the file Feature.idt dynamically
-# Content: 
+# Content:
 # Feature Feature_Parent Title Description Display Level Directory_ Attributes
 #################################################################################
 
@@ -368,7 +368,7 @@ sub prepare_feature_table ($$$)
 	my ($modules, $language, $variables) = @_;
 
     my $features = [];
-    
+
     foreach my $onefeature (@$modules)
     {
         # Java and Ada only, if the correct settings are set
@@ -378,7 +378,7 @@ sub prepare_feature_table ($$$)
 
         # Controlling the language!
         # Only language independent feature or feature with the correct language will be included into the table
-        
+
         next if $onefeature->{'ismultilingual'} && ($onefeature->{'specificlanguage'} ne $language);
 
         my $feature_gid =get_feature_gid($onefeature);
@@ -397,7 +397,7 @@ sub prepare_feature_table ($$$)
 
         # collecting all feature in global feature collector (so that properties can be set in property table)
         $installer::globals::featurecollector{$feature_gid} = 1;
-        
+
         # collecting all language feature in feature collector for check of language selection
         if (( $styles =~ /\bSHOW_MULTILINGUAL_ONLY\b/ ) && $onefeature->{'ParentID'} ne $installer::globals::rootmodulegid)
         {
@@ -441,7 +441,7 @@ sub add_missing_features ($)
 
     # Prepare fast lookup of the target features.
     my %target_feature_map = map {$_->{'Feature'} => $_} @$features;
-    
+
     # Find missing features.
     my @missing_features = ();
     foreach my $source_feature_row (@{$source_feature_table->GetAllRows()})
@@ -455,7 +455,7 @@ sub add_missing_features ($)
 
     # Return when there are no missing features.
     return $features if scalar @missing_features==0;
-    
+
     # Process the missing features.
     my $extended_features = [@$features];
     foreach my $missing_feature_row (@missing_features)
@@ -464,8 +464,8 @@ sub add_missing_features ($)
             {$_ => $missing_feature_row->GetValue($_)}
             ('Feature', 'Feature_Parent', 'Title', 'Description', 'Display', 'Level', 'Directory_', 'Attributes');
         push @$extended_features, \%feature;
-        
-        $installer::logger::Lang->printf("added missing feature %s\n", $feature->{'Feature'}); 
+
+        $installer::logger::Lang->printf("added missing feature %s\n", $feature->{'Feature'});
     }
     return $extended_features;
 }
@@ -497,7 +497,7 @@ sub create_feature_table ($$$)
 
     my $filename = $basedir . $installer::globals::separator . "Feature.idt" . "." . $language;
     installer::files::save_file($filename ,\@feature_table);
-    $installer::logger::Lang->printf("Created idt file: %s\n", $filename); 
+    $installer::logger::Lang->printf("Created idt file: %s\n", $filename);
 }
 
 1;

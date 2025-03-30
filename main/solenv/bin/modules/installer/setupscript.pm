@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -40,7 +40,7 @@ use strict;
 sub set_setupscript_name
 {
 	my ( $allsettingsarrayref, $includepatharrayref ) = @_;
-		
+
 	my $scriptnameref = installer::ziplist::getinfofromziplist($allsettingsarrayref, "script");
 
 	my $scriptname = $$scriptnameref;
@@ -49,7 +49,7 @@ sub set_setupscript_name
 	{
 		installer::exiter::exit_program("ERROR: Setup script not defined on command line (-l) and not in product list!", "set_setupscript_name");
 	}
-	
+
 	if ( $installer::globals::compiler =~ /wnt/ )
 	{
 		$scriptname .= ".inf";
@@ -58,10 +58,10 @@ sub set_setupscript_name
 	{
 		$scriptname .= ".ins";
 	}
-	
+
 	# and now the complete path for the setup script is needed
 	# The log file cannot be used, because this is the language independent section
-	
+
 	$scriptnameref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$scriptname, $includepatharrayref, 1);
 
 	$installer::globals::setupscriptname = $$scriptnameref;
@@ -79,7 +79,7 @@ sub set_setupscript_name
 sub get_all_scriptvariables_from_installation_object ($$)
 {
 	my ($scriptref, $script_filename) = @_;
-	
+
 	my $installobjectvariables = {};
 
     my $firstline = $scriptref->[0];
@@ -96,7 +96,7 @@ sub get_all_scriptvariables_from_installation_object ($$)
         if ($line =~ /^\s*(\w+)\s+\=\s*\"?(.*?)\"?\s*\;\s*$/ )
         {
             my ($key, $value) = ($1, $2);
-					
+
             $installobjectvariables->{uc($key)} = $value;
         }
 
@@ -114,14 +114,14 @@ sub add_lowercase_productname_setupscriptvariable ($)
 	my ( $variablesref ) = @_;
 
     my %additional_variables = ();
-    
+
 	while (my ($key, $value) = each %$variablesref)
 	{
         if ($key eq "PRODUCTNAME")
         {
             $additional_variables{"LCPRODUCTNAME"} = lc($value);
             my $original = $value;
-            $value =~ s/\s+//g; 
+            $value =~ s/\s+//g;
             $additional_variables{"ONEWORDPRODUCTNAME"} = $value;
             $additional_variables{"LCONEWORDPRODUCTNAME"} = lc($value);
             $value = $original;
@@ -129,13 +129,13 @@ sub add_lowercase_productname_setupscriptvariable ($)
             $value =~ s/ /\%20/g;
 			$additional_variables{"MASKEDPRODUCTNAME"} = $value;
             $value = $original;
-            $value =~ s/\s/\_/g; 
+            $value =~ s/\s/\_/g;
             $additional_variables{"UNIXPRODUCTNAME"} = lc($value);
             $additional_variables{"SYSTEMINTUNIXPACKAGENAME"} = lc($value);
             $additional_variables{"UNIXPACKAGENAME"} = lc($value);
             $value = $original;
-            $value =~ s/\s/\_/g; 
-            $value =~ s/\.//g; 
+            $value =~ s/\s/\_/g;
+            $value =~ s/\.//g;
             $additional_variables{"WITHOUTDOTUNIXPRODUCTNAME"} = lc($value);
             $additional_variables{"WITHOUTDOTUNIXPACKAGENAME"} = lc($value);
             $additional_variables{"SOLARISBRANDPACKAGENAME"} = lc($value);
@@ -146,12 +146,12 @@ sub add_lowercase_productname_setupscriptvariable ($)
         }
         elsif  ($key eq "PRODUCTVERSION")
         {
-            $value =~ s/\.//g; 
+            $value =~ s/\.//g;
             $additional_variables{"WITHOUTDOTPRODUCTVERSION"} = $value;
         }
         elsif  ($key eq "OOOBASEVERSION")
         {
-            $value =~ s/\.//g; 
+            $value =~ s/\.//g;
             $additional_variables{"WITHOUTDOTOOOBASEVERSION"} = $value;
 		}
 	}
@@ -242,23 +242,23 @@ sub get_all_items_from_script
 	my ($scriptref, $searchitem) = @_;
 
 	my @allitemarray = ();
-	
+
 	my ($itemkey, $itemvalue, $valuecounter);
 
 	for ( my $i = 0; $i <= $#{$scriptref}; $i++ )
 	{
 		my $line = ${$scriptref}[$i];
-		
+
 		if ( $line =~ /^\s*\Q$searchitem\E\s+(\S+)\s*$/ )
 		{
 			my $gid = $1;
 			my $counter = $i + 1;
-			
+
 			my %oneitemhash = ();
 			my $ismultilang = 0;
-			
-			$oneitemhash{'gid'} = $gid;			
-						
+
+			$oneitemhash{'gid'} = $gid;
+
 			while  (!( $line =~ /^\s*End\s*$/ ))
 			{
 				if ( $counter > $#{$scriptref} ) {
@@ -279,14 +279,14 @@ sub get_all_items_from_script
 
 					if ( $itemkey =~ /^\s*\S+\s+\(\S+\)\s*$/ )
 					{
-						$ismultilang = 1;			
+						$ismultilang = 1;
 					}
 				}
 				else
 				{
 					if ( $searchitem eq "Module" ) # more than one line, for instance files at modules!
 					{
-						if (( $line =~ /^\s*(.+?)\s*\=\s*\(/ ) && (!($line =~ /\)\;\s*$ / )))	
+						if (( $line =~ /^\s*(.+?)\s*\=\s*\(/ ) && (!($line =~ /\)\;\s*$ / )))
 						{
 							if ( $line =~ /^\s*(.+?)\s*\=\s*(.+)/ )	# the first line
 							{
@@ -298,10 +298,10 @@ sub get_all_items_from_script
 							# collecting the complete itemvalue
 
 							$valuecounter = $counter;
-							$line = ${$scriptref}[$valuecounter];							
+							$line = ${$scriptref}[$valuecounter];
 							installer::remover::remove_leading_and_ending_whitespaces(\$line);
 							$itemvalue = $itemvalue . $line;
-							
+
 							while (!( $line =~ /\)\;\s*$/ ))
 							{
 								$valuecounter++;
@@ -312,24 +312,24 @@ sub get_all_items_from_script
 
 							# removing ending ";"
 							$itemvalue =~ s/\;\s*$//;
-							
+
 							$oneitemhash{$itemkey} = $itemvalue;
-	
+
 							if ( $itemkey =~ /^\s*\S+\s+\(\S+\)\s*$/ )
 							{
-								$ismultilang = 1;			
+								$ismultilang = 1;
 							}
 						}
 					}
 				}
 			}
-			
+
 			$oneitemhash{'ismultilingual'} = $ismultilang;
-			
+
 			push(@allitemarray, \%oneitemhash);
 		}
 	}
-		
+
 	return \@allitemarray;
 }
 
@@ -346,7 +346,7 @@ sub add_predefined_folder
 	{
 		my $folderitem = ${$folderitemref}[$i];
 		my $folderid = $folderitem->{'FolderID'};
-		
+
 		if ( $folderid =~ /PREDEFINED_/ )
 		{
 			if (! installer::existence::exists_in_array_of_hashes("gid", $folderid, $folderref))
@@ -355,9 +355,9 @@ sub add_predefined_folder
 				$folder{'ismultilingual'} = "0";
 				$folder{'Name'} = "";
 				$folder{'gid'} = $folderid;
-				
+
 				push(@{$folderref}, \%folder);
-			}			
+			}
 		}
 	}
 }
@@ -378,26 +378,26 @@ sub prepare_non_advertised_files
 		my $folderitem = ${$folderitemref}[$i];
 		my $styles = "";
 		if ( $folderitem->{'Styles'} ) { $styles = $folderitem->{'Styles'}; }
-		
+
 		if ( $styles =~ /\bNON_ADVERTISED\b/ )
 		{
 			my $fileid = $folderitem->{'FileID'};
 			if ( $folderitem->{'ComponentIDFile'} ) { $fileid = $folderitem->{'ComponentIDFile'}; }
 			my $onefile = installer::worker::find_file_by_id($filesref, $fileid);
-			
+
 			# Attention: If $onefile with "FileID" is not found, this is not always an error.
 			# FileID can also contain an executable file, for example msiexec.exe.
 			if ( $onefile ne "" ) { $onefile->{'needs_user_registry_key'} = 1; }
 		}
-	}	
+	}
 }
 
 #####################################################################################
 # Adding all variables defined in the installation object into the hash
 # of all variables from the zip list file.
-# This is needed if variables are defined in the installation object, 
+# This is needed if variables are defined in the installation object,
 # but not in the zip list file.
-# If there is a definition in the zip list file and in the installation 
+# If there is a definition in the zip list file and in the installation
 # object, the installation object is more important
 #####################################################################################
 
@@ -423,7 +423,7 @@ sub add_forced_properties
 	my $property;
 	foreach $property ( @installer::globals::forced_properties )
 	{
-		if ( ! exists($allvariables->{$property}) ) { $allvariables->{$property} = ""; }	
+		if ( ! exists($allvariables->{$property}) ) { $allvariables->{$property} = ""; }
 	}
 }
 
@@ -441,11 +441,11 @@ sub replace_preset_properties
 	# SOLARISBRANDPACKAGENAME
 	# needs to be replaced by
 	# PRESETSOLARISBRANDPACKAGENAME
-	
+
 	my @presetproperties = ();
 	push(@presetproperties, "SOLARISBRANDPACKAGENAME");
 	push(@presetproperties, "SYSTEMINTUNIXPACKAGENAME");
-	
+
 
 	foreach my $property (@presetproperties)
 	{
@@ -454,7 +454,7 @@ sub replace_preset_properties
 		{
 			$allvariables->{$property} = $allvariables->{$presetproperty};
 		}
-	}	
+	}
 }
 
 1;

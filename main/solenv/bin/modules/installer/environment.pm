@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -44,29 +44,29 @@ sub create_pathvariables
 
 	my $solarcommonpath = $environment->{'SOLARVERSION'} . $installer::globals::separator . "common" . $installer::globals::productextension;
 	# my $solarcommonpath = $environment->{'SOLARVERSION'} . $installer::globals::separator . $environment->{'COMMON_OUTDIR'} . $installer::globals::productextension;
-	$variables{'solarcommonpath'} = $solarcommonpath;	
+	$variables{'solarcommonpath'} = $solarcommonpath;
 
 	my $osdef = lc($environment->{'GUI'});
-	$variables{'osdef'} = $osdef;	
+	$variables{'osdef'} = $osdef;
 
 	$variables{'os'} = $installer::globals::compiler;
 
 	my $solarenvpath = "";
 
 	if ( $ENV{'SO_PACK'} ) { $solarenvpath  = $ENV{'SO_PACK'}; }
-	# overriding with STAR_INSTPATH, if set	
+	# overriding with STAR_INSTPATH, if set
 	if ( $ENV{'STAR_INSTPATH'} ) { $solarenvpath = $ENV{'STAR_INSTPATH'}; }
 
-	$variables{'solarenvpath'} = $solarenvpath;	
+	$variables{'solarenvpath'} = $solarenvpath;
 
 	my $localpath  = $environment->{'LOCAL_OUT'};
-	$variables{'localpath'} = $localpath;	
+	$variables{'localpath'} = $localpath;
 
 	my $localcommonpath  = $environment->{'LOCAL_COMMON_OUT'};
-	$variables{'localcommonpath'} = $localcommonpath;	
+	$variables{'localcommonpath'} = $localcommonpath;
 
 	my $platformname  = $environment->{'OUTPATH'};
-	$variables{'platformname'} = $platformname;	
+	$variables{'platformname'} = $platformname;
 
 	return \%variables;
 }
@@ -90,19 +90,19 @@ sub check_tilde_in_directory
 		# exit, because "~" is not allowed, if HOME is not set
         $installer::logger::Lang->printf("ERROR: If \"~\" is used in \"LOCALINSTALLDIR\", environment variable \"HOME\" needs to be defined!\n");
 		installer::exiter::exit_program("ERROR: If \"~\" is used in \"LOCALINSTALLDIR\", environment variable \"HOME\" needs to be defined!", "check_tilde_in_directory");
-	}	
+	}
 }
 
 ##################################################
 # Setting some fundamental global variables.
-# All these variables can be overwritten 
+# All these variables can be overwritten
 # by parameters.
 ##################################################
 
 sub set_global_environment_variables
 {
 	my ( $environment ) = @_;
-	
+
 	$installer::globals::build = $environment->{'WORK_STAMP'};
 	# $installer::globals::minor = $environment->{'UPDMINOR'};
 	$installer::globals::compiler = $environment->{'OUTPATH'};
@@ -124,7 +124,7 @@ sub set_global_environment_variables
 	if ( $ENV{'DONTCOMPRESS'} ) { $installer::globals::solarisdontcompress = 1; }
 	if ( $ENV{'IGNORE_ERROR_IN_LOGFILE'} ) { $installer::globals::ignore_error_in_logfile = 1; }
 	if (( $ENV{'DISABLE_STRIP'} ) && ( $ENV{'DISABLE_STRIP'} ne '' )) { $installer::globals::strip = 0; }
-	
+
 	if ( $installer::globals::localinstalldir ) { $installer::globals::localinstalldirset = 1; }
 	# Special handling, if LOCALINSTALLDIR contains "~" in the path
 	if ( $installer::globals::localinstalldir =~ /^\s*\~/ ) { check_tilde_in_directory(); }

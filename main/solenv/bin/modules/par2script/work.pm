@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -38,10 +38,10 @@ sub analyze_comma_separated_list
 
 	my @list = ();
 	my $locallistref;
-	
+
 	if (!( $listref )) { $locallistref = \@list; }
 	else { $locallistref = $listref; }
-	
+
 	par2script::remover::remove_leading_and_ending_comma(\$list);
 	par2script::remover::remove_leading_and_ending_whitespaces(\$list);
 
@@ -58,7 +58,7 @@ sub analyze_comma_separated_list
 	par2script::remover::remove_leading_and_ending_whitespaces(\$list);
 	push(@{$locallistref}, $list);
 
-	return $locallistref;	
+	return $locallistref;
 }
 
 ############################################
@@ -68,9 +68,9 @@ sub analyze_comma_separated_list
 sub setincludes
 {
 	my ($list) = @_;
-	
+
 	# input is the comma separated list of include paths
-	
+
 	my $includes = analyze_comma_separated_list($list);
 
 	return $includes;
@@ -88,13 +88,13 @@ sub setparfiles
 	$filename =~ s/\@//;	# removing the leading \@
 
 	my $filecontent = par2script::files::read_file($filename);
-	
+
 	my @parfiles = ();
 	my $parfilesref = \@parfiles;
 
 	foreach ( @{$filecontent} ) { $parfilesref = analyze_comma_separated_list($_, $parfilesref); }
 
-	return $parfilesref;	
+	return $parfilesref;
 }
 
 ############################################
@@ -112,10 +112,10 @@ sub make_complete_pathes_for_parfiles
 	{
 		my $foundparfile = 0;
 		my $includepath;
-		
+
 		foreach $includepath ( @{$includes} )
 		{
-			my $parfile = "$includepath/$oneparfile"; 
+			my $parfile = "$includepath/$oneparfile";
 
 			if ( -f $parfile )
 			{
@@ -127,20 +127,20 @@ sub make_complete_pathes_for_parfiles
 
 		if ( ! $foundparfile )
 		{
-			die "ERROR: Could not find parfile ${$parfiles}[$i] in includes paths: $par2script::globals::includepathlist !\n"; 	
-		}	
+			die "ERROR: Could not find parfile ${$parfiles}[$i] in includes paths: $par2script::globals::includepathlist !\n";
+		}
 	}
 }
 
 ######################################################
-# collecting one special item in the par files and 
+# collecting one special item in the par files and
 # including it into the "definitions" hash
 ######################################################
 
 sub collect_definitions
 {
 	my ($parfilecontent) = @_;
-	
+
 	my $multidefinitionerror = 0;
 	my @multidefinitiongids = ();
 
@@ -150,11 +150,11 @@ sub collect_definitions
 		my $docollect = 0;
 		my $gid = "";
 		my %allitemhash = ();
-	
+
 		for ( my $i = 0; $i <= $#{$parfilecontent}; $i++ )
 		{
 			my $line = ${$parfilecontent}[$i];
-			
+
 			if ( $line =~ /^\s*$oneitem\s+(\w+)\s*$/ )
 			{
 				$gid = $1;
@@ -162,28 +162,28 @@ sub collect_definitions
 			}
 			else
 			{
-				$docollect = 0;			
+				$docollect = 0;
 			}
 
 			if ( $docollect )
 			{
 				my $currentline = $i;
 				my %oneitemhash;
-			
+
 				while (! ( ${$parfilecontent}[$currentline] =~ /^\s*End\s*$/i ) )
 				{
 					if ( ${$parfilecontent}[$currentline] =~ /^\s*(.+?)\s*\=\s*(.+?)\s*\;\s*$/ )	# only oneliner!
 					{
 						$itemkey = $1;
 						$itemvalue = $2;
-					
+
 						if ( $oneitem eq "Directory" ) { if ( $itemkey =~ "DosName" ) { $itemkey =~ s/DosName/HostName/; } }
 						if (( $oneitem eq "Directory" ) || ( $oneitem eq "File" ) || ( $oneitem eq "Unixlink" )) { if ( $itemvalue eq "PD_PROGDIR" ) { $itemvalue = "PREDEFINED_PROGDIR"; }}
 						if (( $itemkey eq "Styles" ) && ( $itemvalue =~ /^\s*(\w+)(\s*\;\s*)$/ )) { $itemvalue = "($1)$2"; }
 
 						$oneitemhash{$itemkey} = $itemvalue;
 					}
-						
+
 					$currentline++;
 				}
 
@@ -194,7 +194,7 @@ sub collect_definitions
 				if ( exists($allitemhash{$gid}) )
 				{
 					$multidefinitionerror = 1;
-					push(@multidefinitiongids, $gid);			
+					push(@multidefinitiongids, $gid);
 				}
 
 				$allitemhash{$gid} = \%oneitemhash;
@@ -205,14 +205,14 @@ sub collect_definitions
 	}
 
 	if ( $multidefinitionerror ) {	par2script::exiter::multidefinitionerror(\@multidefinitiongids); }
-	
+
 	# foreach $key (keys %par2script::globals::definitions)
 	# {
 	#	print "Key: $key \n";
 	#
 	#	foreach $key (keys %{$par2script::globals::definitions{$key}})
 	#	{
-	#		print "\t$key \n";			
+	#		print "\t$key \n";
 	#	}
 	# }
 }
@@ -224,7 +224,7 @@ sub collect_definitions
 sub put_oneitem_into_script
 {
 	my ( $script, $item, $itemhash, $itemkey ) = @_;
-	
+
 	push(@{$script}, "$item $itemkey\n" );
 	my $content = "";
 	foreach $content (sort keys %{$itemhash->{$itemkey}}) { push(@{$script}, "\t$content = $itemhash->{$itemkey}->{$content};\n" ); }
@@ -240,7 +240,7 @@ sub create_script
 {
 	my @script = ();
 	my $oneitem;
-	
+
 	foreach $oneitem ( @par2script::globals::allitems )
 	{
 		if ( exists($par2script::globals::definitions{$oneitem}) )
@@ -252,7 +252,7 @@ sub create_script
 		}
 	}
 
-	return \@script;	
+	return \@script;
 }
 
 ######################################################
@@ -262,14 +262,14 @@ sub create_script
 sub write_unsorted_items
 {
 	my ( $script, $oneitem ) = @_;
-	
+
 	my $itemhash = $par2script::globals::definitions{$oneitem};
 
 	my $itemkey = "";
 	foreach $itemkey (sort keys %{$itemhash})
 	{
 		put_oneitem_into_script($script, $oneitem, $itemhash, $itemkey);
-			
+
 		# special handling for Shortcuts after Files
 		if (( $oneitem eq "File" ) && ( exists($par2script::globals::definitions{"Shortcut"}) ))
 		{
@@ -302,7 +302,7 @@ sub write_unsorted_items
 sub collect_children
 {
 	my ( $itemhash, $parent, $order ) = @_;
-	
+
 	my $item;
 	foreach $item ( keys %{$itemhash} )
 	{
@@ -311,7 +311,7 @@ sub collect_children
 			push(@{$order}, $item);
 			my $newparent = $item;
 			collect_children($itemhash, $newparent, $order);
-		}	
+		}
 	}
 }
 
@@ -322,7 +322,7 @@ sub collect_children
 sub write_sorted_items
 {
 	my ( $script, $oneitem ) = @_;
-	
+
 	my $itemhash = $par2script::globals::definitions{$oneitem};
 
 	my @itemorder = ();
@@ -335,7 +335,7 @@ sub write_sorted_items
 	# supporting more than one toplevel item
 	my $parent;
 	foreach $parent ( @startparents ) { collect_children($itemhash, $parent, \@itemorder); }
-	
+
 	my $itemkey;
 	foreach $itemkey ( @itemorder ) { put_oneitem_into_script($script, $oneitem, $itemhash, $itemkey); }
 }
@@ -349,16 +349,16 @@ sub collect_assigned_gids
 {
 	my $allmodules = $par2script::globals::definitions{'Module'};
 
-	my $item;	
+	my $item;
 	foreach $item ( @par2script::globals::items_assigned_at_modules )
-	{		
+	{
 		if ( ! exists($par2script::globals::searchkeys{$item}) ) { par2script::exiter::exit_program("ERROR: Unknown type \"$item\" at modules.", "collect_assigned_gids"); }
 
 		my $searchkey = $par2script::globals::searchkeys{$item};
-		
+
 		my %assignitems = ();
 		my $modulegid = "";
-		
+
 		foreach $modulegid (keys %{$allmodules} )
 		{
 			# print "Module $modulegid\n";
@@ -366,7 +366,7 @@ sub collect_assigned_gids
 			# foreach $content (sort keys %{$allmodules->{$modulegid}}) { print "\t$content = $allmodules->{$modulegid}->{$content};\n"; }
 			# print "End\n";
 			# print "\n";
-						
+
 			if ( exists($allmodules->{$modulegid}->{$searchkey}) )
 			{
 				my $list = $allmodules->{$modulegid}->{$searchkey};
@@ -379,12 +379,12 @@ sub collect_assigned_gids
 				{
 					if ( exists($assignitems{$gid}) ) { $assignitems{$gid} = $assignitems{$gid} + 1; }
 					else { $assignitems{$gid} = 1; }
-				}				
+				}
 			}
 		}
-		
+
 		$par2script::globals::assignedgids{$item} = \%assignitems;
-	}	
+	}
 }
 
 ##################################################
@@ -406,7 +406,7 @@ sub read_all_parfiles
 		push(@parfilecontent, "\n");
 	}
 
-	return \@parfilecontent;	
+	return \@parfilecontent;
 }
 
 1;

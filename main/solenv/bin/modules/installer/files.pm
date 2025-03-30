@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -76,21 +76,21 @@ sub save_file
 	if ( open( OUT, ">$savefile" ) )
 	{
 		print OUT @{$savecontent};
-		close( OUT);	
+		close( OUT);
 	}
 	else
 	{
 		# it is useless to save a log file, if there is no write access
-		
+
 		if ( $savefile =~ /\.log/ )
 		{
 			print "*************************************************\n";
-			print "ERROR: Cannot write log file: $savefile"; 
+			print "ERROR: Cannot write log file: $savefile";
 			print "*************************************************\n";
 			exit(-1);	# exiting the program to avoid endless loops
 		}
-		
-		installer::exiter::exit_program("ERROR: Cannot open file $savefile for writing", "save_file");	
+
+		installer::exiter::exit_program("ERROR: Cannot open file $savefile for writing", "save_file");
 	}
 }
 
@@ -101,9 +101,9 @@ sub save_hash
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::files::save_hash : $savefile"); }
 
 	my @printcontent = ();
-	
+
 	my $itemkey;
-		
+
 	foreach $itemkey ( keys %{$hashref} )
 	{
 		my $line = "";
@@ -124,13 +124,13 @@ sub save_array_of_hashes
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::files::save_array_of_hashes : $savefile : $#{$arrayref}"); }
 
 	my @printcontent = ();
-			
+
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
-	{		
+	{
 		my $line = "";
 		my $hashref = ${$arrayref}[$i];
 		my $itemkey;
-			
+
 		foreach $itemkey ( keys %{$hashref} )
 		{
 			my $itemvalue = $hashref->{$itemkey};
@@ -138,7 +138,7 @@ sub save_array_of_hashes
 		}
 
 		$line = $line . "\n";
-		
+
 		push(@printcontent, $line);
 	}
 
@@ -154,13 +154,13 @@ sub save_array_of_hashes_modules
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::files::save_array_of_hashes : $savefile : $#{$arrayref}"); }
 
 	my @printcontent = ();
-			
+
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
-	{		
+	{
 		my $line = "***************************************************\n";
 		my $hashref = ${$arrayref}[$i];
 		my $itemkey;
-			
+
 		foreach $itemkey ( keys %{$hashref} )
 		{
 			my $itemvalue = $hashref->{$itemkey};
@@ -168,7 +168,7 @@ sub save_array_of_hashes_modules
 		}
 
 		$line = $line . "\n";
-		
+
 		push(@printcontent, $line);
 	}
 

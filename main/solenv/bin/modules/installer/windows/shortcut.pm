@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -39,17 +39,17 @@ sub get_file_by_name
 
 	my $foundfile = 0;
 	my $onefile;
-	
+
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
 	{
 		$onefile = ${$filesref}[$i];
 		my $name = $onefile->{'Name'};
-		
+
 		if ( $name eq $filename )
 		{
 			$foundfile = 1;
-			last;	
-		}		
+			last;
+		}
 	}
 
 	if (! $foundfile ) { $onefile  = ""; }
@@ -66,7 +66,7 @@ sub get_shortcut_identifier
 	my ($shortcut) = @_;
 
 	my $identifier = $shortcut->{'gid'};
-	
+
 	return $identifier;
 }
 
@@ -77,17 +77,17 @@ sub get_shortcut_identifier
 sub get_shortcut_directory
 {
 	my ($shortcut, $dirref) = @_;
-	
-	# For shortcuts it is easy to convert the gid_Dir_Abc into the unique name in 
+
+	# For shortcuts it is easy to convert the gid_Dir_Abc into the unique name in
 	# the directory table, for instance help_en_simpressidx.
 	# For files (components) this is not so easy, because files can be included
 	# in zip files with subdirectories that are not defined in scp.
-	
+
 	my $onedir;
 	my $shortcutdirectory = $shortcut->{'Dir'};
 	my $directory = "";
 	my $found = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$dirref}; $i++ )
 	{
 		$onedir = ${$dirref}[$i];
@@ -98,17 +98,17 @@ sub get_shortcut_directory
 			$found = 1;
 			last;
 		}
-	}	
+	}
 
 	if (!($found))
 	{
 		installer::exiter::exit_program("ERROR: Did not find DirectoryID $shortcutdirectory in directory collection for shortcut", "get_shortcut_directory");
 	}
-	
+
 	$directory = $onedir->{'uniquename'};
 
 	if ($directory eq "") { $directory = "INSTALLLOCATION"; }		# Shortcuts in the root directory
-	
+
 	return $directory;
 }
 
@@ -119,14 +119,14 @@ sub get_shortcut_directory
 sub get_shortcut_name
 {
 	my ($shortcut, $shortnamesref, $onelanguage) = @_;
-	
+
 	my $returnstring;
-	
+
 	my $name = $shortcut->{'Name'};
-	
+
 	my $shortstring = installer::windows::idtglobal::make_eight_three_conform($name, "shortcut", $shortnamesref);
-	$shortstring =~ s/\s/\_/g;	# replacing white spaces with underline	
-	
+	$shortstring =~ s/\s/\_/g;	# replacing white spaces with underline
+
 	if ( $shortstring eq $name ) { $returnstring = $name; }	# nothing changed
 	else {$returnstring = $shortstring . "\|" . $name; }
 
@@ -141,7 +141,7 @@ sub get_shortcut_component
 {
 	my ($shortcut, $filesref) = @_;
 
-	my $onefile; 
+	my $onefile;
 	my $component = "";
 	my $found = 0;
 	my $shortcut_fileid = $shortcut->{'FileID'};
@@ -165,18 +165,18 @@ sub get_shortcut_component
 			last;
 		}
 	}
-		
+
 	if (!($found))
 	{
 		installer::exiter::exit_program("ERROR: Did not find FileID $shortcut_fileid in file collection for shortcut", "get_shortcut_component");
 	}
-	
+
 	$component = $onefile->{'componentname'};
-	
+
 	# finally saving the componentname in the folderitem collector
-	
+
 	$shortcut->{'component'} = $component;
-	
+
 	return $component;
 }
 
@@ -197,24 +197,24 @@ sub get_shortcut_target
 	{
 		$onefile = ${$filesref}[$i];
 		my $filegid = $onefile->{'gid'};
-		
+
 		if ( $filegid eq $shortcut_fileid )
 		{
 			$found = 1;
 			last;
 		}
 	}
-		
+
 	if (!($found))
 	{
 		installer::exiter::exit_program("ERROR: Did not find FileID $shortcut_fileid in file collection for shortcut", "get_shortcut_target");
 	}
-	
+
 	if ( $onefile->{'Name'} )
 	{
 		$target = $onefile->{'Name'};
 	}
-	
+
 	$target = "\[\#" . $target . "\]";	# format for Non-Advertised shortcuts
 
 	return $target;
@@ -308,9 +308,9 @@ sub get_folderitem_wkdir
 {
 	my ($onelink, $dirref) = @_;
 
-	# For shortcuts it is easy to convert the gid_Dir_Abc into the unique name in 
+	# For shortcuts it is easy to convert the gid_Dir_Abc into the unique name in
 	# the directory table, for instance help_en_simpressidx.
-	
+
 	my $onedir;
 	my $workingdirectory = "";
 	if ( $onelink->{'WkDir'} ) { $workingdirectory = $onelink->{'WkDir'}; }
@@ -319,7 +319,7 @@ sub get_folderitem_wkdir
 	if ( $workingdirectory )
 	{
 		my $found = 0;
-	
+
 		for ( my $i = 0; $i <= $#{$dirref}; $i++ )
 		{
 			$onedir = ${$dirref}[$i];
@@ -330,7 +330,7 @@ sub get_folderitem_wkdir
 				$found = 1;
 				last;
 			}
-		}	
+		}
 
 		if (!($found))
 		{
@@ -342,7 +342,7 @@ sub get_folderitem_wkdir
 		if ($directory eq "") { $directory = "INSTALLLOCATION"; }
 	}
 
-	return $directory;	
+	return $directory;
 }
 
 ###################################################################
@@ -358,10 +358,10 @@ sub get_folderitem_directory
 
 	# The value $installer::globals::programmenufolder is not correct for the
 	# PREDEFINED folders, like PREDEFINED_AUTOSTART
-	
+
 	if ( $shortcut->{'FolderID'} eq "PREDEFINED_AUTOSTART" )
 	{
-		$directory = $installer::globals::startupfolder;		
+		$directory = $installer::globals::startupfolder;
 	}
 
 	if ( $shortcut->{'FolderID'} eq "PREDEFINED_DESKTOP" )
@@ -372,11 +372,11 @@ sub get_folderitem_directory
 
 	if ( $shortcut->{'FolderID'} eq "PREDEFINED_STARTMENU" )
 	{
-		$directory = $installer::globals::startmenufolder;		
+		$directory = $installer::globals::startmenufolder;
 	}
 
 	# saving the directory in the folderitems collector
-	
+
 	$shortcut->{'directory'} = $directory;
 
 	return $directory;
@@ -391,7 +391,7 @@ sub get_folderitem_target
 {
 	my ($shortcut, $filesref) = @_;
 
-	my $onefile; 
+	my $onefile;
 	my $target = "";
 	my $found = 0;
 	my $shortcut_fileid = $shortcut->{'FileID'};
@@ -406,22 +406,22 @@ sub get_folderitem_target
 	# if the FileID contains an absolute filename this can simply be returned as target for the shortcut table.
 	if ( $absolute_filename )
 	{
-		$shortcut->{'target'} = $shortcut_fileid; 
+		$shortcut->{'target'} = $shortcut_fileid;
 		return $shortcut_fileid;
-	} 
+	}
 
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
 	{
 		$onefile = ${$filesref}[$i];
 		my $filegid = $onefile->{'gid'};
-		
+
 		if ( $filegid eq $shortcut_fileid )
 		{
 			$found = 1;
 			last;
 		}
 	}
-		
+
 	if (!($found))
 	{
 		installer::exiter::exit_program("ERROR: Did not find FileID $shortcut_fileid in file collection for folderitem", "get_folderitem_target");
@@ -431,7 +431,7 @@ sub get_folderitem_target
 	if ( $nonadvertised )
 	{
 		$target = "\[" . $onefile->{'uniquedirname'} . "\]" . "\\" . $onefile->{'Name'};
-		$shortcut->{'target'} = $target; 
+		$shortcut->{'target'} = $target;
 		return $target;
 	}
 
@@ -441,16 +441,16 @@ sub get_folderitem_target
 
 	# If modules contains a list of modules, only taking the first one.
 	# But this should never be needed
-	
+
 	if ( $target =~ /^\s*(.*?)\,/ ) { $target = $1; }
 
 	# Attention: Maximum feature length is 38!
 	installer::windows::idtglobal::shorten_feature_gid(\$target);
-	
+
 	# and finally saving the target in the folderitems collector
-	
+
 	$shortcut->{'target'} = $target;
-	
+
 	return $target;
 }
 
@@ -461,11 +461,11 @@ sub get_folderitem_target
 sub get_folderitem_arguments
 {
 	my ($shortcut) = @_;
-	
+
 	my $parameter = "";
 
 	if ( $shortcut->{'Parameter'} ) { $parameter = $shortcut->{'Parameter'}; }
-	
+
 	return $parameter;
 }
 
@@ -483,7 +483,7 @@ sub get_folderitem_icon
 	if ( $styles =~ /\bNON_ADVERTISED\b/ ) { return ""; }	# no icon for non-advertised shortcuts
 
 	my $iconfilegid = "";
-	
+
 	if ( $shortcut->{'IconFile'} ) { $iconfilegid = $shortcut->{'IconFile'}; }
 	else { $iconfilegid = $shortcut->{'FileID'}; }
 
@@ -494,29 +494,29 @@ sub get_folderitem_icon
 	{
 		$onefile = ${$filesref}[$i];
 		my $filegid = $onefile->{'gid'};
-		
+
 		if ( $filegid eq $iconfilegid )
 		{
 			$found = 1;
 			last;
 		}
 	}
-		
+
 	if (!($found))
 	{
 		installer::exiter::exit_program("ERROR: Did not find FileID $iconfilegid in file collection", "get_folderitem_icon");
 	}
 
 	$iconfile = $onefile->{'Name'};
-	
+
 	# collecting all icon files to copy them into the icon directory
-	
+
 	my $sourcepath = $onefile->{'sourcepath'};
-	
+
 	if (! installer::existence::exists_in_array($sourcepath, $iconfilecollector))
-	{		
+	{
 		push(@{$iconfilecollector}, $sourcepath);
-	}			
+	}
 
 	return $iconfile;
 }
@@ -536,7 +536,7 @@ sub get_folderitem_iconindex
 	my $iconid = 0;
 
 	if ( $shortcut->{'IconID'} ) { $iconid = $shortcut->{'IconID'}; }
-	
+
 	return $iconid;
 }
 
@@ -553,7 +553,7 @@ sub get_folderitem_showcmd
 
 ###########################################################################################################
 # Creating the file Shortcut.idt dynamically
-# Content: 
+# Content:
 # Shortcut Directory_ Name Component_ Target Arguments Description Hotkey Icon_ IconIndex ShowCmd WkDir
 ###########################################################################################################
 
@@ -566,7 +566,7 @@ sub create_shortcut_table
 		my $onelanguage = ${$languagesarrayref}[$m];
 
 		my @shortcuttable = ();
-			
+
 		my @shortnames = ();	# to collect all short names
 
 		installer::windows::idtglobal::write_idt_header(\@shortcuttable, "shortcut");
@@ -578,78 +578,78 @@ sub create_shortcut_table
 			my $onelink = ${$linksref}[$i];
 
 			# Controlling the language!
-			# Only language independent folderitems or folderitems with the correct language 
+			# Only language independent folderitems or folderitems with the correct language
 			# will be included into the table
-			
+
 			if (! (!(( $onelink->{'ismultilingual'} )) || ( $onelink->{'specificlanguage'} eq $onelanguage )) )  { next; }
 
 			my %shortcut = ();
-	
-			$shortcut{'Shortcut'} = get_shortcut_identifier($onelink); 		
-			$shortcut{'Directory_'} = get_shortcut_directory($onelink, $dirref); 		
-			$shortcut{'Name'} = get_shortcut_name($onelink, \@shortnames, $onelanguage);	# localized name 		
-			$shortcut{'Component_'} = get_shortcut_component($onelink, $filesref); 		
-			$shortcut{'Target'} = get_shortcut_target($onelink, $filesref); 		
-			$shortcut{'Arguments'} = get_shortcut_arguments($onelink); 		
+
+			$shortcut{'Shortcut'} = get_shortcut_identifier($onelink);
+			$shortcut{'Directory_'} = get_shortcut_directory($onelink, $dirref);
+			$shortcut{'Name'} = get_shortcut_name($onelink, \@shortnames, $onelanguage);	# localized name
+			$shortcut{'Component_'} = get_shortcut_component($onelink, $filesref);
+			$shortcut{'Target'} = get_shortcut_target($onelink, $filesref);
+			$shortcut{'Arguments'} = get_shortcut_arguments($onelink);
 			$shortcut{'Description'} = get_shortcut_description($onelink, $onelanguage); 	# localized description
-			$shortcut{'Hotkey'} = get_shortcut_hotkey($onelink); 		
-			$shortcut{'Icon_'} = get_shortcut_icon($onelink); 		
-			$shortcut{'IconIndex'} = get_shortcut_iconindex($onelink); 		
-			$shortcut{'ShowCmd'} = get_shortcut_showcmd($onelink); 		
-			$shortcut{'WkDir'} = get_shortcut_wkdir($onelink); 		
+			$shortcut{'Hotkey'} = get_shortcut_hotkey($onelink);
+			$shortcut{'Icon_'} = get_shortcut_icon($onelink);
+			$shortcut{'IconIndex'} = get_shortcut_iconindex($onelink);
+			$shortcut{'ShowCmd'} = get_shortcut_showcmd($onelink);
+			$shortcut{'WkDir'} = get_shortcut_wkdir($onelink);
 
 			my $oneline = $shortcut{'Shortcut'} . "\t" . $shortcut{'Directory_'} . "\t" . $shortcut{'Name'} . "\t"
 						. $shortcut{'Component_'} . "\t" . $shortcut{'Target'} . "\t" . $shortcut{'Arguments'} . "\t"
 						. $shortcut{'Description'} . "\t" . $shortcut{'Hotkey'} . "\t" . $shortcut{'Icon_'} . "\t"
 						. $shortcut{'IconIndex'} . "\t" . $shortcut{'ShowCmd'} . "\t" . $shortcut{'WkDir'} . "\n";
 
-			push(@shortcuttable, $oneline);	
+			push(@shortcuttable, $oneline);
 		}
 
-		# Second the entries into the start menu, defined in scp as Folder and Folderitem 
+		# Second the entries into the start menu, defined in scp as Folder and Folderitem
 		# These shortcuts will fill the icons table.
 
 		for ( my $i = 0; $i <= $#{$folderref}; $i++ )
 		{
 			my $foldergid = ${$folderref}[$i]->{'gid'};
-		
+
 			# iterating over all folderitems for this folder
-		
+
 			for ( my $j = 0; $j <= $#{$folderitemsref}; $j++ )
 			{
 				my $onelink = ${$folderitemsref}[$j];
-	
+
 				# Controlling the language!
-				# Only language independent folderitems or folderitems with the correct language 
+				# Only language independent folderitems or folderitems with the correct language
 				# will be included into the table
-			
+
 				if (! (!(( $onelink->{'ismultilingual'} )) || ( $onelink->{'specificlanguage'} eq $onelanguage )) )  { next; }
-			
-				# controlling the folder	
+
+				# controlling the folder
 
 				my $localused = 0;
-				
+
 				if ( $onelink->{'used'} ) { $localused = $onelink->{'used'}; }
 
 				if (!($localused == 1)) { $onelink->{'used'} = "0"; }		# no resetting
-	
+
 				if (!( $onelink->{'FolderID'} eq $foldergid )) { next; }
 
 				$onelink->{'used'} = "1";
-	
+
 				my %shortcut = ();
 
-				$shortcut{'Shortcut'} = get_shortcut_identifier($onelink); 		
-				$shortcut{'Directory_'} = get_folderitem_directory($onelink); 		
+				$shortcut{'Shortcut'} = get_shortcut_identifier($onelink);
+				$shortcut{'Directory_'} = get_folderitem_directory($onelink);
 				$shortcut{'Name'} = get_shortcut_name($onelink, \@shortnames, $onelanguage);	# localized name
-				$shortcut{'Component_'} = get_shortcut_component($onelink, $filesref); 		
-				$shortcut{'Target'} = get_folderitem_target($onelink, $filesref); 		
-				$shortcut{'Arguments'} = get_folderitem_arguments($onelink); 		
+				$shortcut{'Component_'} = get_shortcut_component($onelink, $filesref);
+				$shortcut{'Target'} = get_folderitem_target($onelink, $filesref);
+				$shortcut{'Arguments'} = get_folderitem_arguments($onelink);
 				$shortcut{'Description'} = get_shortcut_description($onelink, $onelanguage);	# localized description
-				$shortcut{'Hotkey'} = get_shortcut_hotkey($onelink); 		
-				$shortcut{'Icon_'} = get_folderitem_icon($onelink, $filesref, $iconfilecollector); 		
-				$shortcut{'IconIndex'} = get_folderitem_iconindex($onelink); 		
-				$shortcut{'ShowCmd'} = get_folderitem_showcmd($onelink); 		
+				$shortcut{'Hotkey'} = get_shortcut_hotkey($onelink);
+				$shortcut{'Icon_'} = get_folderitem_icon($onelink, $filesref, $iconfilecollector);
+				$shortcut{'IconIndex'} = get_folderitem_iconindex($onelink);
+				$shortcut{'ShowCmd'} = get_folderitem_showcmd($onelink);
 				$shortcut{'WkDir'} = get_folderitem_wkdir($onelink, $dirref);
 
 				my $oneline = $shortcut{'Shortcut'} . "\t" . $shortcut{'Directory_'} . "\t" . $shortcut{'Name'} . "\t"
@@ -658,33 +658,33 @@ sub create_shortcut_table
 							. $shortcut{'IconIndex'} . "\t" . $shortcut{'ShowCmd'} . "\t" . $shortcut{'WkDir'} . "\n";
 
 				push(@shortcuttable, $oneline);
-			}	
+			}
 		}
-		
+
 		# The soffice.ico has to be included into the icon table
 		# as icon for the ARP applet
 
 		my $onefile = "";
 		my $sofficefile = "soffice.ico";
-		
+
 		my $sourcepathref = installer::scriptitems::get_sourcepath_from_filename_and_includepath_classic(\$sofficefile, $includepatharrayref, 0);
 
 		if ($$sourcepathref eq "") { installer::exiter::exit_program("ERROR: Could not find $sofficefile as icon!", "create_shortcut_table"); }
 
 		if (! installer::existence::exists_in_array($$sourcepathref, $iconfilecollector))
-		{		
+		{
 			unshift(@{$iconfilecollector}, $$sourcepathref);
 			$installer::globals::sofficeiconadded = 1;
 		}
 
         $installer::logger::Lang->printf(
-            "Added icon file %s for language pack into icon file collector.\n", $$sourcepathref); 
+            "Added icon file %s for language pack into icon file collector.\n", $$sourcepathref);
 
 		# Saving the file
-	
+
 		my $shortcuttablename = $basedir . $installer::globals::separator . "Shortcut.idt" . "." . $onelanguage;
 		installer::files::save_file($shortcuttablename ,\@shortcuttable);
-        $installer::logger::Lang->printf("Created idt file: %s\n", $shortcuttablename); 
+        $installer::logger::Lang->printf("Created idt file: %s\n", $shortcuttablename);
 	}
 }
 

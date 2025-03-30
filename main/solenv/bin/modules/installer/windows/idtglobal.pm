@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -43,7 +43,7 @@ use installer::windows::language;
 sub shorten_feature_gid
 {
 	my ($stringref) = @_;
-	
+
 	$$stringref =~ s/gid_Module_/gm_/;
 	$$stringref =~ s/_Extension_/_ex_/;
 	$$stringref =~ s/_Root_/_r_/;
@@ -57,10 +57,10 @@ sub shorten_feature_gid
 }
 
 =head2 create_shortend_feature_gid ($feature_name)
-    
+
     This is a side effect free version of shorten_feature_gid.
     The shortened feature name is returned instead of overwriting the given name.
-    
+
 =cut
 sub create_shortend_feature_gid ($)
 {
@@ -83,7 +83,7 @@ sub get_next_free_number
 	my $dontsave = 0;
 	my $alreadyexists;
 	my ($newname, $shortname);
-	
+
 	do
 	{
 		$alreadyexists = 0;
@@ -93,24 +93,24 @@ sub get_next_free_number
 		for ( my $i = 0; $i <= $#{$shortnamesref}; $i++ )
 		{
 			$shortname = ${$shortnamesref}[$i];
-			
+
 			if ( uc($shortname) eq uc($newname) )	# case insensitive
 			{
 				$alreadyexists = 1;
 				last;
 			}
-		}	
-	} 
+		}
+	}
 	until (!($alreadyexists));
-	
+
 	if (( $counter > 9 ) && ( length($name) > 6 )) { $dontsave = 1; }
 	if (( $counter > 99 ) && ( length($name) > 5 )) { $dontsave = 1; }
-	
+
 	if (!($dontsave))
 	{
 		push(@{$shortnamesref}, $newname);	# adding the new shortname to the array of shortnames
 	}
-		
+
 	return $counter
 }
 
@@ -129,7 +129,7 @@ sub get_next_free_number_with_hash
 	my $saved = 0;
 	my $alreadyexists;
 	my ($newname, $shortname);
-	
+
 	do
 	{
 		$alreadyexists = 0;
@@ -141,19 +141,19 @@ sub get_next_free_number_with_hash
 		{
 			$alreadyexists = 1;
 		}
-	} 
+	}
 	until (!($alreadyexists));
-	
+
 	if (( $counter > 9 ) && ( length($name) > 6 )) { $dontsave = 1; }
 	if (( $counter > 99 ) && ( length($name) > 5 )) { $dontsave = 1; }
-	
+
 	if (!($dontsave))
 	{
 		# push(@{$shortnamesref}, $newname);	# adding the new shortname to the array of shortnames
 		$shortnamesref->{$newname} = 1;	# adding the new shortname to the array of shortnames, always uppercase
 		$saved = 1;
 	}
-		
+
 	return ( $counter, $saved )
 }
 
@@ -164,18 +164,18 @@ sub get_next_free_number_with_hash
 sub make_eight_three_conform
 {
 	my ($inputstring, $pattern, $shortnamesref) = @_;
-	
+
 	# all shortnames are collected in $shortnamesref, because of uniqueness
 
 	my ($name, $namelength, $number);
 	my $conformstring = "";
 	my $changed = 0;
-	
+
 	if (( $inputstring =~ /^\s*(.*?)\.(.*?)\s*$/ ) && ( $pattern eq "file" ))	# files with a dot
 	{
 		$name = $1;
 		my $extension = $2;
-		
+
 		$namelength = length($name);
 		my $extensionlength = length($extension);
 
@@ -189,12 +189,12 @@ sub make_eight_three_conform
 
 		if (( $namelength > 8 ) || ( $extensionlength > 3 ))
 		{
-			# taking the first six letters	
+			# taking the first six letters
 			$name = substr($name, 0, 6);	# name, offset, length
 			$name =~ s/\s*$//; # removing ending whitespaces
 			$name = $name . "\~";
 			$number = get_next_free_number($name, $shortnamesref);
-			
+
 			# if $number>9 the new name would be "abcdef~10.xyz", which is 9+3, and therefore not allowed
 
 			if ( $number > 9 )
@@ -202,22 +202,22 @@ sub make_eight_three_conform
 				$name = substr($name, 0, 5);	# name, offset, length
 				$name =~ s/\s*$//; # removing ending whitespaces
 				$name = $name . "\~";
-				$number = get_next_free_number($name, $shortnamesref);			
+				$number = get_next_free_number($name, $shortnamesref);
 
 				if ( $number > 99 )
 				{
 					$name = substr($name, 0, 4);	# name, offset, length
 					$name =~ s/\s*$//; # removing ending whitespaces
 					$name = $name . "\~";
-					$number = get_next_free_number($name, $shortnamesref);			
+					$number = get_next_free_number($name, $shortnamesref);
 				}
-			}		
+			}
 
 			$name = $name . "$number";
-			
+
 			$changed = 1;
 		}
-		
+
 		$conformstring = $name . "\." . $extension;
 
 		if ( $changed ) { $conformstring= uc($conformstring); }
@@ -226,10 +226,10 @@ sub make_eight_three_conform
 	{
 		$name = $inputstring;
 		$namelength = length($name);
-		
+
 		if ( $namelength > 8 )
 		{
-			# taking the first six letters	
+			# taking the first six letters
 			$name = substr($name, 0, 6);	# name, offset, length
 			$name =~ s/\s*$//; # removing ending whitespaces
 			$name = $name . "\~";
@@ -242,7 +242,7 @@ sub make_eight_three_conform
 				$name = substr($name, 0, 5);	# name, offset, length
 				$name =~ s/\s*$//; # removing ending whitespaces
 				$name = $name . "\~";
-				$number = get_next_free_number($name, $shortnamesref);			
+				$number = get_next_free_number($name, $shortnamesref);
 
 				if ( $number > 99 )
 				{
@@ -259,10 +259,10 @@ sub make_eight_three_conform
 		}
 
 		$conformstring = $name;
-		
+
 		if ( $changed ) { $conformstring = uc($name); }
 	}
-		
+
 	return $conformstring;
 }
 
@@ -275,24 +275,24 @@ sub make_eight_three_conform
 sub make_eight_three_conform_with_hash
 {
 	my ($inputstring, $pattern, $shortnamesref) = @_;
-	
+
 	# all shortnames are collected in $shortnamesref, because of uniqueness (a hash!)
 
 	my ($name, $namelength, $number);
 	my $conformstring = "";
 	my $changed = 0;
 	my $saved;
-	
+
 	# if (( $inputstring =~ /^\s*(.*?)\.(.*?)\s*$/ ) && ( $pattern eq "file" ))	# files with a dot
 	if (( $inputstring =~ /^\s*(.*)\.(.*?)\s*$/ ) && ( $pattern eq "file" ))	# files with a dot
 	{
 		# extension has to be non-greedy, but name is. This is important to find the last dot in the filename
 		$name = $1;
 		my $extension = $2;
-		
+
 		if ( $name =~ /^\s*(.*?)\s*$/ ) { $name = $1; } # now the name is also non-greedy
 		$name =~ s/\.//g; # no dots in 8+3 conform filename
-		
+
 		$namelength = length($name);
 		my $extensionlength = length($extension);
 
@@ -314,7 +314,7 @@ sub make_eight_three_conform_with_hash
 				$name =~ s/\s*$//; # removing ending whitespaces
 				$name = $name . "\~";
 				($number, $saved) = get_next_free_number_with_hash($name, $shortnamesref, '.'.uc($extension));
-			
+
 				# if $number>9 the new name would be "abcdef~10.xyz", which is 9+3, and therefore not allowed
 
 				if ( ! $saved )
@@ -338,13 +338,13 @@ sub make_eight_three_conform_with_hash
 							installer::exiter::exit_program("ERROR: Could not set 8+3 conform name for $inputstring !", "make_eight_three_conform_with_hash");
 						}
 					}
-				}		
+				}
 
 				$name = $name . "$number";
 				$changed = 1;
 			}
 		}
-		
+
 		$conformstring = $name . "\." . $extension;
 
 		if ( $changed ) { $conformstring= uc($conformstring); }
@@ -353,10 +353,10 @@ sub make_eight_three_conform_with_hash
 	{
 		$name = $inputstring;
 		$namelength = length($name);
-		
+
 		if ( $namelength > 8 )
 		{
-			# taking the first six letters	
+			# taking the first six letters
 			$name = substr($name, 0, 6);	# name, offset, length
 			$name =~ s/\s*$//; # removing ending whitespaces
 			$name = $name . "\~";
@@ -369,7 +369,7 @@ sub make_eight_three_conform_with_hash
 				$name = substr($name, 0, 5);	# name, offset, length
 				$name =~ s/\s*$//; # removing ending whitespaces
 				$name = $name . "\~";
-				( $number, $saved ) = get_next_free_number_with_hash($name, $shortnamesref, '');			
+				( $number, $saved ) = get_next_free_number_with_hash($name, $shortnamesref, '');
 
 				# if $number>99 the new name would be "abcde~100", which is 9+0, and therefore not allowed
 
@@ -382,7 +382,7 @@ sub make_eight_three_conform_with_hash
 
 					if ( ! $saved ) { installer::exiter::exit_program("ERROR: Could not set 8+3 conform name for $inputstring !", "make_eight_three_conform_with_hash"); }
 				}
-			}		
+			}
 
 			$name = $name . "$number";
 			$changed = 1;
@@ -390,10 +390,10 @@ sub make_eight_three_conform_with_hash
 		}
 
 		$conformstring = $name;
-		
+
 		if ( $changed ) { $conformstring = uc($name); }
 	}
-		
+
 	return $conformstring;
 }
 
@@ -404,9 +404,9 @@ sub make_eight_three_conform_with_hash
 sub write_idt_header
 {
 	my ($idtref, $definestring) = @_;
-	
+
 	my $oneline;
-	
+
 	if ( $definestring eq "file" )
 	{
 		$oneline = "File\tComponent_\tFileName\tFileSize\tVersion\tLanguage\tAttributes\tSequence\n";
@@ -466,7 +466,7 @@ sub write_idt_header
 		$oneline = "FeatureComponents\tFeature_\tComponent_\n";
 		push(@{$idtref}, $oneline);
 	}
-	
+
 	if ( $definestring eq "media" )
 	{
 		$oneline = "DiskId\tLastSequence\tDiskPrompt\tCabinet\tVolumeLabel\tSource\n";
@@ -526,7 +526,7 @@ sub write_idt_header
 		$oneline = "CreateFolder\tDirectory_\tComponent_\n";
 		push(@{$idtref}, $oneline);
 	}
-	
+
 	if ( $definestring eq "removefile" )
 	{
 		$oneline = "FileKey\tComponent_\tFileName\tDirProperty\tInstallMode\n";
@@ -545,7 +545,7 @@ sub write_idt_header
 		push(@{$idtref}, $oneline);
 		$oneline = "Upgrade\tUpgradeCode\tVersionMin\tVersionMax\tLanguage\tAttributes\n";
 		push(@{$idtref}, $oneline);
-	}	
+	}
 
 	if ( $definestring eq "icon" )
 	{
@@ -558,7 +558,7 @@ sub write_idt_header
 	}
 
 	if ( $definestring eq "inifile" )
-	{	
+	{
 		$oneline = "IniFile\tFileName\tDirProperty\tSection\tKey\tValue\tAction\tComponent_\n";
 		push(@{$idtref}, $oneline);
 		$oneline = "s72\tl255\tS72\tl96\tl128\tl255\ti2\ts72\n";
@@ -659,24 +659,24 @@ sub get_language_block_from_language_file
 	my @language_block = ();
 
 	for ( my $i = 0; $i <= $#{$languagefile}; $i++ )
-	{		
+	{
 		if ( ${$languagefile}[$i] =~ /^\s*\[\s*$searchstring\s*\]\s*$/ )
 		{
 			my $counter = $i;
 
 			push(@language_block, ${$languagefile}[$counter]);
 			$counter++;
-			
+
 			while (( $counter <= $#{$languagefile} ) && (!( ${$languagefile}[$counter] =~ /^\s*\[/ )))
 			{
 				push(@language_block, ${$languagefile}[$counter]);
 				$counter++;
 			}
-			
+
 			last;
 		}
-	}	
-	
+	}
+
 	return \@language_block;
 }
 
@@ -688,7 +688,7 @@ sub get_language_block_from_language_file
 sub get_language_string_from_language_block
 {
 	my ($language_block, $language, $oldstring) = @_;
-	
+
 	my $newstring = "";
 
 	for ( my $i = 0; $i <= $#{$language_block}; $i++ )
@@ -697,23 +697,23 @@ sub get_language_string_from_language_block
 		{
 			$newstring = $1;
 			last;
-		}	
-	}	
-	
+		}
+	}
+
 	if ( $newstring eq "" )
 	{
-		$language = "en-US"; 	# defaulting to english	
+		$language = "en-US"; 	# defaulting to english
 
 		for ( my $i = 0; $i <= $#{$language_block}; $i++ )
-		{		
+		{
 			if ( ${$language_block}[$i] =~ /^\s*$language\s*\=\s*\"(.*)\"\s*$/ )
 			{
 				$newstring = $1;
 				last;
-			}			
+			}
 		}
 	}
-	
+
 	return $newstring;
 }
 
@@ -725,7 +725,7 @@ sub get_language_string_from_language_block
 sub get_code_from_code_block
 {
 	my ($codeblock, $language) = @_;
-	
+
 	my $newstring = "";
 
 	for ( my $i = 0; $i <= $#{$codeblock}; $i++ )
@@ -734,9 +734,9 @@ sub get_code_from_code_block
 		{
 			$newstring = $1;
 			last;
-		}	
-	}	
-	
+		}
+	}
+
 	return $newstring;
 }
 
@@ -749,22 +749,22 @@ sub translate_idtfile
 	my ($idtfile, $languagefile, $onelanguage) = @_;
 
 	for ( my $i = 0; $i <= $#{$idtfile}; $i++ )
-	{		
+	{
 		my @allstrings = ();
-		
+
 		my $oneline = ${$idtfile}[$i];
-		
+
 		while ( $oneline =~ /\b(OOO_\w+)\b/ )
 		{
 			my $replacestring = $1;
 			push(@allstrings, $replacestring);
 			$oneline =~ s/$replacestring//;
-		} 
-		
+		}
+
 		my $oldstring;
-		
+
 		foreach $oldstring (@allstrings)
-		{			
+		{
 			my $language_block = get_language_block_from_language_file($oldstring, $languagefile);
 			my $newstring = get_language_string_from_language_block($language_block, $onelanguage, $oldstring);
 
@@ -782,7 +782,7 @@ sub translate_idtfile
 sub prepare_language_idt_directory ($$$$$$$)
 {
 	my ($destinationdir, $newidtdir, $onelanguage, $filesref, $iconfilecollector, $binarytablefiles, $allvariables) = @_;
-	
+
 	# Copying all idt-files from the source $installer::globals::idttemplatepath to the destination $destinationdir
 	# Copying all files in the subdirectory "Binary"
 	# Copying all files in the subdirectory "Icon"
@@ -809,7 +809,7 @@ sub prepare_language_idt_directory ($$$$$$$)
             {
                 $bitmapdir = $allvariables->{'WINDOWSBITMAPDIRECTORY'};
             }
-			
+
 			my $newsourcedir = $installer::globals::unpackpath . $installer::globals::separator . $bitmapdir; # path setting in list file dependent from unpackpath !?
             $installer::logger::Lang->printf("\n");
             $installer::logger::Lang->printf(
@@ -838,7 +838,7 @@ sub prepare_language_idt_directory ($$$$$$$)
             $installer::globals::idttemplatepath . $installer::globals::separator . "Icon",
             $destinationdir . $installer::globals::separator . "Icon");
 	}
-	
+
 	# Copying all files in $iconfilecollector, that describe icons of folderitems
 
 	for ( my $i = 0; $i <= $#{$iconfilecollector}; $i++ )
@@ -910,20 +910,20 @@ sub get_licensefilesource
 	my $licensefilename = "license_" . $language . ".txt";
 	my $sourcepath = "";
 	my $foundlicensefile = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
-	{		
+	{
 		my $onefile = ${$filesref}[$i];
 		my $filename = $onefile->{'Name'};
-		
+
 		if ($filename eq $licensefilename)
 		{
 			$sourcepath = $onefile->{'sourcepath'};
 			$foundlicensefile = 1;
-			last;	
-		}	
+			last;
+		}
 	}
-	
+
 	if ( ! $foundlicensefile ) { installer::exiter::exit_program("ERROR: Did not find file $licensefilename in file collector!", "get_licensefilesource"); }
 
 	return $sourcepath;
@@ -941,7 +941,7 @@ sub get_rtf_licensetext
 	# A very simple rtf converter
 
 	# The static header
-	
+
 	my $rtf_licensetext = '{\rtf1\ansi\deff0';
 	$rtf_licensetext = $rtf_licensetext . '{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}}';
 	$rtf_licensetext = $rtf_licensetext . '{\colortbl\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;}';
@@ -993,7 +993,7 @@ sub get_rtf_licensetext
 		$oneline =~ s/\Ã\»/\\\'fb/g;
 		$oneline =~ s/\Ã\¹/\\\'f9/g;
 		$oneline =~ s/\Ã\®/\\\'ee/g;
-	
+
 		# quotation marks
 
 		$oneline =~ s/\â\€\ž/\\\'84/g;
@@ -1004,7 +1004,7 @@ sub get_rtf_licensetext
 		$oneline =~ s/\Â\ /\\\~/g;
 
 		$oneline = '\par ' . $oneline;
-		
+
 		$rtf_licensetext = $rtf_licensetext .  $oneline;
 	}
 
@@ -1030,15 +1030,15 @@ sub make_string_licensetext
 	{
 		my $oneline = ${$licensefile}[$i];
 		$oneline =~ s/\s*$//g;		# no whitespace at line end
-			
+
 		$rtf_licensetext = $rtf_licensetext .  $oneline . " ";
 	}
 
-	return $rtf_licensetext;	
+	return $rtf_licensetext;
 }
 
 ##############################################################
-# Setting the path, where the soffice.exe is installed, into 
+# Setting the path, where the soffice.exe is installed, into
 # the CustomAction table
 ##############################################################
 
@@ -1047,7 +1047,7 @@ sub add_officedir_to_database
 	my ($basedir, $allvariables) = @_;
 
 	my $customactionfilename = $basedir . $installer::globals::separator . "CustomAc.idt";
-	
+
 	my $customacfile = installer::files::read_file($customactionfilename);
 
 	my $found = 0;
@@ -1057,7 +1057,7 @@ sub add_officedir_to_database
 	if ( $installer::globals::officeinstalldirectoryset )
 	{
 		$found = 0;
-		
+
 		for ( my $i = 0; $i <= $#{$customacfile}; $i++ )
 		{
 			if ( ${$customacfile}[$i] =~ /\bOFFICEDIRECTORYGID\b/ )
@@ -1066,17 +1066,17 @@ sub add_officedir_to_database
 				$found = 1;
 			}
 		}
-		
+
 		if (( ! $found ) && ( ! $allvariables->{'IGNOREDIRECTORYLAYER'} ))
 		{
 			installer::exiter::exit_program("ERROR: \"OFFICEDIRECTORYGID\" not found in \"$customactionfilename\" !", "add_officedir_to_database");
-		}		
+		}
 	}
-	
+
 	# Saving the file
-	
+
 	installer::files::save_file($customactionfilename ,$customacfile);
-	my $infoline = "Updated idt file: $customactionfilename\n"; 
+	my $infoline = "Updated idt file: $customactionfilename\n";
 	$installer::logger::Lang->print($infoline);
 
 }
@@ -1088,18 +1088,18 @@ sub add_officedir_to_database
 sub add_licensefile_to_database
 {
 	my ($licensefile, $controltable) = @_;
-	
+
 	# Nine tabs before the license text and two tabs after it
 	# The license text has to be included into the dialog
 	# LicenseAgreement into the control Memo.
-	
+
 	my $foundlicenseline = 0;
 	my ($number, $line);
-	
+
 	for ( my $i = 0; $i <= $#{$controltable}; $i++ )
-	{		
+	{
 		$line = ${$controltable}[$i];
-		
+
 		if ( $line =~ /^\s*\bLicenseAgreement\b\t\bMemo\t/ )
 		{
 			$foundlicenseline = 1;
@@ -1107,7 +1107,7 @@ sub add_licensefile_to_database
 			last;
 		}
 	}
-	
+
 	if (!($foundlicenseline))
 	{
 		installer::exiter::exit_program("ERROR: Line for license file in Control.idt not found!", "add_licensefile_to_database");
@@ -1115,39 +1115,39 @@ sub add_licensefile_to_database
 	else
 	{
 		my %control = ();
-		
+
 		if ( $line =~ /^\s*(.*?)\t(.*?)\t(.*?)\t(.*?)\t(.*?)\t(.*?)\t(.*?)\t(.*?)\t(.*?)\t(.*?)\t(.*?)\t(.*?)\s*$/ )
 		{
-			$control{'Dialog_'} = $1;		
-			$control{'Control'} = $2;		
-			$control{'Type'} = $3;		
-			$control{'X'} = $4;		
-			$control{'Y'} = $5;		
-			$control{'Width'} = $6;		
-			$control{'Height'} = $7;		
-			$control{'Attributes'} = $8;		
-			$control{'Property'} = $9;		
-			$control{'Text'} = $10;		
-			$control{'Control_Next'} = $11;		
-			$control{'Help'} = $12;		
+			$control{'Dialog_'} = $1;
+			$control{'Control'} = $2;
+			$control{'Type'} = $3;
+			$control{'X'} = $4;
+			$control{'Y'} = $5;
+			$control{'Width'} = $6;
+			$control{'Height'} = $7;
+			$control{'Attributes'} = $8;
+			$control{'Property'} = $9;
+			$control{'Text'} = $10;
+			$control{'Control_Next'} = $11;
+			$control{'Help'} = $12;
 		}
 		else
 		{
-			installer::exiter::exit_program("ERROR: Could not split line correctly!", "add_licensefile_to_database");		
+			installer::exiter::exit_program("ERROR: Could not split line correctly!", "add_licensefile_to_database");
 		}
 
 		# my $licensetext = get_rtf_licensetext($licensefile);
-		my $licensetext = make_string_licensetext($licensefile);		
-	
+		my $licensetext = make_string_licensetext($licensefile);
+
 		$control{'Text'} = $licensetext;
-		
+
 		my $newline = $control{'Dialog_'} . "\t" . $control{'Control'} . "\t" . $control{'Type'} . "\t" .
 						$control{'X'} . "\t" . $control{'Y'} . "\t" . $control{'Width'} . "\t" .
 						$control{'Height'} . "\t" . $control{'Attributes'} . "\t" . $control{'Property'} . "\t" .
 						$control{'Text'} . "\t" . $control{'Control_Next'} . "\t" . $control{'Help'} . "\n";
-		
+
 		${$controltable}[$number] = $newline
-	}	
+	}
 }
 
 ################################################################################################
@@ -1156,19 +1156,19 @@ sub add_licensefile_to_database
 # multilingual installation sets.
 #
 # old:
-# LanguageSelection	CheckBox1	CheckBox	22	60	15	24	3	IS1033		CheckBox2	
-# LanguageSelection	Text1	Text	40	60	70	15	65539		OOO_CONTROL_LANG_1033		
-# LanguageSelection	CheckBox2	CheckBox	22	90	15	24	3	IS1031		Next	
-# LanguageSelection	Text2	Text	40	90	70	15	65539		OOO_CONTROL_LANG_1031		
+# LanguageSelection	CheckBox1	CheckBox	22	60	15	24	3	IS1033		CheckBox2
+# LanguageSelection	Text1	Text	40	60	70	15	65539		OOO_CONTROL_LANG_1033
+# LanguageSelection	CheckBox2	CheckBox	22	90	15	24	3	IS1031		Next
+# LanguageSelection	Text2	Text	40	90	70	15	65539		OOO_CONTROL_LANG_1031
 # new:
-# LanguageSelection	CheckBox1	CheckBox	22	60	15	24	3	IS1033	Text	CheckBox2	
-# LanguageSelection	CheckBox2	CheckBox	22	90	15	24	3	IS1031	Text	Next	
+# LanguageSelection	CheckBox1	CheckBox	22	60	15	24	3	IS1033	Text	CheckBox2
+# LanguageSelection	CheckBox2	CheckBox	22	90	15	24	3	IS1031	Text	Next
 ################################################################################################
 
 sub add_language_checkboxes_to_database
 {
 	my ($controltable, $languagesarrayref) = @_;
-	
+
 	# for each language, two lines have to be inserted
 
 	for ( my $i = 0; $i <= $#{$languagesarrayref}; $i++ )
@@ -1181,12 +1181,12 @@ sub add_language_checkboxes_to_database
 
 		# my $is_english = 0;
 		# if ( $windowslanguage eq "1033" ) { $is_english = 1; }
-		
+
 		my $checkboxattribute = "3";
 		# if ( $is_english ) { $checkboxattribute = "1"; }	# english is not deselectable
 
 		my $count = $i + 1;
-		my $nextcount = $i + 2;		
+		my $nextcount = $i + 2;
 		my $checkboxcount = "CheckBox" . $count;
 
 		my $multiplier = 20;
@@ -1207,7 +1207,7 @@ sub add_language_checkboxes_to_database
 		else { $controlnext = "CheckBox" . $nextcount; }
 
 		my $stringname = "OOO_CONTROL_LANG_" . $windowslanguage;
-		
+
 		my $line1 = "LanguageSelection" . "\t" . $checkboxcount . "\t" . "CheckBox" . "\t" .
 					"22" . "\t" . $yvalue . "\t" . "200" . "\t" . "15" . "\t" . $checkboxattribute . "\t" .
 					$property . "\t" . $stringname . "\t" . $controlnext . "\t" . "\n";
@@ -1216,10 +1216,10 @@ sub add_language_checkboxes_to_database
 
 	#	my $textcount = "Text" . $count;
 	#	my $stringname = "OOO_CONTROL_LANG_" . $windowslanguage;
-	#	
+	#
 	#	$yvalue = $yvalue + 2;		# text 2 pixel lower than checkbox
 	#
-	#	my $line2 = "LanguageSelection" . "\t" . $textcount . "\t" . "Text" . "\t" . 
+	#	my $line2 = "LanguageSelection" . "\t" . $textcount . "\t" . "Text" . "\t" .
 	#				"40" . "\t" . $yvalue . "\t" . "70" . "\t" . "15" . "\t" . "65539" . "\t" .
 	#				"\t" . $stringname . "\t" . "\t" . "\n";
 	#
@@ -1235,20 +1235,20 @@ sub add_language_checkboxes_to_database
 sub get_last_position_in_sequencetable
 {
 	my ($sequencetable) = @_;
-	
+
 	my $position = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$sequencetable}; $i++ )
 	{
 		my $line = ${$sequencetable}[$i];
-	
+
 		if ( $line =~ /^\s*\w+\t.*\t\s*(\d+)\s$/ )
 		{
 			my $newposition = $1;
 			if ( $newposition > $position ) { $position = $newposition; }
 		}
 	}
-	
+
 	return $position;
 }
 
@@ -1259,15 +1259,15 @@ sub get_last_position_in_sequencetable
 sub get_position_in_sequencetable
 {
 	my ($action, $sequencetable) = @_;
-	
+
 	my $position = 0;
 
 	$action =~ s/^\s*behind_//;
-	
+
 	for ( my $i = 0; $i <= $#{$sequencetable}; $i++ )
 	{
 		my $line = ${$sequencetable}[$i];
-	
+
 		if ( $line =~ /^\s*(\w+)\t.*\t\s*(\d+)\s$/ )
 		{
 			my $compareaction = $1;
@@ -1275,7 +1275,7 @@ sub get_position_in_sequencetable
 			if ( $compareaction eq $action ) { last; }
 		}
 	}
-	
+
 	return $position;
 }
 
@@ -1305,7 +1305,7 @@ sub get_position_in_sequencetable
 sub set_custom_action
 {
 	my ($customactionidttable, $actionname, $actionflags, $exefilename, $actionparameter, $inbinarytable, $filesref, $customactionidttablename, $styles) = @_;
-	
+
 	my $included_customaction = 0;
 	my $infoline = "";
 	my $customaction_exefilename = $exefilename;
@@ -1323,13 +1323,13 @@ sub set_custom_action
 		$included_customaction = 1;
         return $included_customaction;
 	}
-	
+
 	# is the $exefilename a library that is included into the binary table
-	
+
 	if ( $inbinarytable ) { $customaction_exefilename =~ s/\.//; }	# this is the entry in the binary table ("abc.dll" -> "abcdll")
 
 	# is the $exefilename included into the product?
-	
+
 	my $contains_file = 0;
 
 	# All files are located in $filesref and in @installer::globals::binarytableonlyfiles.
@@ -1354,7 +1354,7 @@ sub set_custom_action
 		else
 		{
 			installer::exiter::exit_program("ERROR: Did not find \"Name\" for file \"$onefile->{'uniquename'}\" ($onefile->{'gid'})!", "set_custom_action");
-		}	
+		}
 	}
 
 	if ( $contains_file )
@@ -1362,13 +1362,13 @@ sub set_custom_action
 		# Now the CustomAction can be included into the CustomAc.idt
 
 		if ( ! $inbinarytable ) { $customaction_exefilename = $uniquename; }	# the unique file name has to be added to the custom action table
-		
+
 		my $line = $actionname . "\t" . $actionflags . "\t" . $customaction_exefilename . "\t" . $actionparameter . "\n";
 		push(@{$customactionidttable}, $line);
-		
+
 		$included_customaction = 1;
 	}
-	
+
 	if ( $included_customaction ) { $infoline = "Added $actionname CustomAction into table $customactionidttablename\n"; }
 	else { $infoline = "Did not add $actionname CustomAction into table $customactionidttablename\n"; }
 	$installer::logger::Lang->print($infoline);
@@ -1383,11 +1383,11 @@ sub set_custom_action
 sub add_custom_action_to_install_table
 {
 	my ($installtable, $exefilename, $actionname, $actioncondition, $position, $filesref, $installtablename, $styles) = @_;
-	
+
 	my $included_customaction = 0;
 	my $feature = "";
 	my $infoline = "";
-	
+
     # when the style NO_FILE is set, no searching for the file is needed, no filtering is done, we can add that custom action
     if ( $styles =~ /\bNO_FILE\b/ )
     {
@@ -1395,11 +1395,11 @@ sub add_custom_action_to_install_table
 		$actioncondition =~ s/FEATURETEMPLATE/$feature/g;	# only execute Custom Action, if feature of the file is installed
 
 		my $actionposition = 0;
-		
+
 		if ( $position eq "end" ) { $actionposition = get_last_position_in_sequencetable($installtable) + 25; }
 		elsif ( $position =~ /^\s*behind_/ ) { $actionposition = get_position_in_sequencetable($position, $installtable) + 2; }
 		else { $actionposition = get_position_in_sequencetable($position, $installtable) - 2; }
-		
+
 		my $line = $actionname . "\t" . $actioncondition . "\t" . $actionposition . "\n";
 		push(@{$installtable}, $line);
 
@@ -1407,7 +1407,7 @@ sub add_custom_action_to_install_table
     	$installer::logger::Lang->print($infoline);
         return;
 	}
-	
+
 	my $contains_file = 0;
 
 	# All files are located in $filesref and in @installer::globals::binarytableonlyfiles.
@@ -1417,28 +1417,28 @@ sub add_custom_action_to_install_table
 	for ( my $i = 0; $i <= $#{$localfilesref}; $i++ )
 	{
 		my $filename = ${$localfilesref}[$i]->{'Name'};
-	
+
 		if ( $filename eq $exefilename )
 		{
 			$contains_file = 1;
 
 			# Determining the feature of the file
-			
+
 			if ( ${$localfilesref}[$i] ) { $feature = ${$localfilesref}[$i]->{'modules'}; }
-	
+
 			# If modules contains a list of modules, only taking the first one.
 			if ( $feature =~ /^\s*(.*?)\,/ ) { $feature = $1; }
 			# Attention: Maximum feature length is 38!
 			shorten_feature_gid(\$feature);
-			
+
 			last;
 		}
 	}
-	
+
 	if ( $contains_file )
 	{
 		# then the InstallE.idt.idt or InstallU.idt.idt
-		
+
 		$actioncondition =~ s/FEATURETEMPLATE/$feature/g;	# only execute Custom Action, if feature of the file is installed
 
 #		my $actionposition = 0;
@@ -1464,22 +1464,22 @@ sub add_custom_action_to_install_table
 }
 
 ##################################################################
-# A line in the table ControlEvent connects a Control 
+# A line in the table ControlEvent connects a Control
 # with a Custom Action
 #################################################################
 
 sub connect_custom_action_to_control
 {
 	my ( $table, $tablename, $dialog, $control, $event, $argument, $condition, $ordering) = @_;
-	
+
 	my $line = $dialog . "\t" . $control. "\t" . $event. "\t" . $argument. "\t" . $condition. "\t" . $ordering . "\n";
 
 	push(@{$table}, $line);
 
 	$line =~ s/\s*$//g;
-		
+
 	$infoline = "Added line \"$line\" into table $tablename\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 }
 
 ##################################################################
@@ -1490,15 +1490,15 @@ sub connect_custom_action_to_control
 sub connect_condition_to_control
 {
 	my ( $table, $tablename, $dialog, $control, $event, $condition) = @_;
-	
+
 	my $line = $dialog . "\t" . $control. "\t" . $event. "\t" . $condition. "\n";
 
 	push(@{$table}, $line);
 
 	$line =~ s/\s*$//g;
-		
+
 	$infoline = "Added line \"$line\" into table $tablename\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 }
 
 ##################################################################
@@ -1520,7 +1520,7 @@ sub get_free_number_in_uisequence_table
 		{
 			my $actionname = $1;
 			my $actionnumber = $2;
-			
+
 			if ( $actionname eq "ExecuteAction" )
 			{
 				$executeactionnumber = $actionnumber;
@@ -1528,7 +1528,7 @@ sub get_free_number_in_uisequence_table
 			}
 		}
 	}
-	
+
 	if ( $executeactionnumber == 0 ) { installer::exiter::exit_program("ERROR: Did not find \"ExecuteAction\" in InstallUISequence table!", "get_free_number_in_uisequence_table"); }
 
 	# determining the sequence of the action before "ExecuteAction"
@@ -1540,7 +1540,7 @@ sub get_free_number_in_uisequence_table
 		if ( ${$installuitable}[$i] =~ /^\s*\w+\t\w*\t(\d+)\s*$/ )
 		{
 			my $actionnumber = $1;
-			
+
 			if (( $actionnumber > $lastactionnumber ) && ( $actionnumber != $executeactionnumber ))
 			{
 				$lastactionnumber = $actionnumber;
@@ -1548,12 +1548,12 @@ sub get_free_number_in_uisequence_table
 		}
 	}
 
-	# the new number can now be calculated 
+	# the new number can now be calculated
 
 	my $newnumber = 0;
 
 	if ((( $lastactionnumber + $executeactionnumber ) % 2 ) == 0 ) { $newnumber = ( $lastactionnumber + $executeactionnumber ) / 2; }
-	else { $newnumber = ( $lastactionnumber + $executeactionnumber -1 ) / 2; } 
+	else { $newnumber = ( $lastactionnumber + $executeactionnumber -1 ) / 2; }
 
 	return $newnumber;
 }
@@ -1567,7 +1567,7 @@ sub get_feature_name
 	my ( $string, $featuretable ) = @_;
 
 	my $featurename = "";
-	
+
 	for ( my $i = 0; $i <= $#{$featuretable}; $i++ )
 	{
 		if ( ${$featuretable}[$i] =~ /^\s*(\w+$string)\t/ )
@@ -1577,7 +1577,7 @@ sub get_feature_name
 		}
 	}
 
-	return $featurename;	
+	return $featurename;
 }
 
 ######################################################################
@@ -1592,12 +1592,12 @@ sub get_directory_name_from_file
 	my $name = $onefile->{'Name'};
 
 	$destination =~ s/\Q$name\E\s*$//;
-	$destination =~ s/\Q$installer::globals::separator\E\s*$//;	
+	$destination =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	my $path = "";
-	
+
 	if ( $destination =~ /\Q$installer::globals::separator\E/ )
-	{	
+	{
 		if ( $destination =~ /^\s*(\S.*\S\Q$installer::globals::separator\E)(\S.+\S?)/ )
 		{
 			$path = $2;
@@ -1606,7 +1606,7 @@ sub get_directory_name_from_file
 	else
 	{
 		$path = $destination;
-	}	
+	}
 
 	return $path;
 }
@@ -1630,7 +1630,7 @@ sub include_subdirname_into_directory_table
 	my $name = "";
 
 	my $includedline = 0;
-	
+
 	my $newdir = "";
 
 	for ( my $i = 0; $i <= $#{$directorytable}; $i++ )
@@ -1641,7 +1641,7 @@ sub include_subdirname_into_directory_table
 			$uniquename = $1;
 			$parent = $2;
 			$name = $3;
-			
+
 			if ( $dirname eq $name )
 			{
 				my $newuniquename = "sub" . $subdir;
@@ -1649,19 +1649,19 @@ sub include_subdirname_into_directory_table
 				# my $newparent = $parent;
 				my $newparent = "INSTALLLOCATION";
 				my $newname = $name . "\:" . $subdir;
-				my $newline = 
+				my $newline =
 				$line = "$newuniquename\t$newparent\t$newname\n";
 				push(@{$directorytable}, $line);
 				installer::remover::remove_leading_and_ending_whitespaces(\$line);
 				$infoline = "Added $line into directory table $directorytablename\n";
-				$installer::logger::Lang->print($infoline);	
+				$installer::logger::Lang->print($infoline);
 
 				$includedline = 1;
 				last;
 			}
 		}
 	}
-	
+
 	if ( ! $includedline ) { installer::exiter::exit_program("ERROR: Could not include new subdirectory into directory table for file $onefile->{'Name'}!", "include_subdirname_into_directory_table"); }
 
 	return $newdir;
@@ -1675,7 +1675,7 @@ sub include_subdir_into_componenttable
 {
 	my ($subdir, $onefile, $componenttable) = @_;
 
-	my $componentname = $onefile->{'componentname'};	
+	my $componentname = $onefile->{'componentname'};
 
 	my $changeddirectory = 0;
 
@@ -1685,7 +1685,7 @@ sub include_subdir_into_componenttable
 		{
 			my $localcomponentname = $1;
 			my $directory = $3;
-			
+
 			if ( $componentname eq $localcomponentname )
 			{
 				my $oldvalue = ${$componenttable}[$i];
@@ -1695,7 +1695,7 @@ sub include_subdir_into_componenttable
 				installer::remover::remove_leading_and_ending_whitespaces(\$oldvalue);
 				installer::remover::remove_leading_and_ending_whitespaces(\$newvalue);
 				$infoline = "Change in Component table: From \"$oldvalue\" to \"$newvalue\"\n";
-				$installer::logger::Lang->print($infoline);	
+				$installer::logger::Lang->print($infoline);
 
 				$changeddirectory = 1;
 				last;
@@ -1730,14 +1730,14 @@ sub add_childprojects
 
 	my $infoline = "";
 	my $line = "";
-	
+
 	$installer::globals::javafile = installer::worker::return_first_item_with_special_flag($filesref ,"JAVAFILE");
 	$installer::globals::urefile = installer::worker::return_first_item_with_special_flag($filesref ,"UREFILE");
 
 	if (( $installer::globals::javafile eq "" ) && ( $allvariables->{'JAVAPRODUCT'} )) { installer::exiter::exit_program("ERROR: No JAVAFILE found in files collector!", "add_childprojects"); }
 	if (( $installer::globals::urefile eq "" ) && ( $allvariables->{'UREPRODUCT'} )) { installer::exiter::exit_program("ERROR: No UREFILE found in files collector!", "add_childprojects"); }
 
-	# Content for Directory table	
+	# Content for Directory table
 	# SystemFolder TARGETDIR .
 
 	my $contains_systemfolder = 0;
@@ -1772,7 +1772,7 @@ sub add_childprojects
 	my $dirname = "";
 	my $subjavadir = "";
 	my $suburedir = "";
-	
+
 	if ( $allvariables->{'JAVAPRODUCT'} )
 	{
 		$dirname = get_directory_name_from_file($installer::globals::javafile);
@@ -1784,10 +1784,10 @@ sub add_childprojects
 		$dirname = get_directory_name_from_file($installer::globals::urefile);
 		$suburedir = include_subdirname_into_directory_table($dirname, $directorytable, $directorytablename, $installer::globals::urefile);
 	}
-	
+
 	# Content for the Component table
 	# The Java and Ada components have new directories
-	
+
 	if ( $allvariables->{'JAVAPRODUCT'} ) { include_subdir_into_componenttable($subjavadir, $installer::globals::javafile, $componenttable); }
 	if ( $allvariables->{'UREPRODUCT'} ) { include_subdir_into_componenttable($suburedir, $installer::globals::urefile, $componenttable); }
 
@@ -1803,7 +1803,7 @@ sub add_childprojects
 	}
 
 	if ( $allvariables->{'UREPRODUCT'} )
-	{	
+	{
 		$line = "InstallUre\t98\tSystemFolder\t$installer::globals::urefile->{'Subdir'}\\$installer::globals::urefile->{'Name'} /S\n";
 		push(@{$customactiontable} ,$line);
 		installer::remover::remove_leading_and_ending_whitespaces(\$line);
@@ -1821,14 +1821,14 @@ sub add_childprojects
 	}
 
 	if ( $allvariables->{'UREPRODUCT'} )
-	{	
+	{
 		$line = "MaintenanceUre\t82\t$installer::globals::urefile->{'uniquename'}\t\/S\n";
 		push(@{$customactiontable} ,$line);
 		installer::remover::remove_leading_and_ending_whitespaces(\$line);
 		$infoline = "Added $line into table $customactiontablename\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	# Content for InstallUISequence table
 	# InstallAdabas &gm_o_Adabas=3 825
 	# InstallJava &gm_o_Java=3 827
@@ -1846,9 +1846,9 @@ sub add_childprojects
 		$infoline = "Added $line into table $installuitablename\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	if ( $allvariables->{'JAVAPRODUCT'} )
-	{	
+	{
 		$number = get_free_number_in_uisequence_table($installuitable) + 2;
 		$featurename = get_feature_name("_Java", $featuretable);
 		if ( $featurename ) { $line = "InstallJava\t\&$featurename\=3 And Not Installed And JAVAPATH\=\"\" And Not PATCH\t$number\n"; }
@@ -1858,7 +1858,7 @@ sub add_childprojects
 		$infoline = "Added $line into table $installuitablename\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	if ( $allvariables->{'ADAPRODUCT'} )
 	{
 		$number = get_free_number_in_uisequence_table($installuitable) + 4;
@@ -1869,7 +1869,7 @@ sub add_childprojects
 		$infoline = "Added $line into table $installuitablename\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	if ( $allvariables->{'JAVAPRODUCT'} )
 	{
 		$number = get_free_number_in_uisequence_table($installuitable) + 6;
@@ -1883,7 +1883,7 @@ sub add_childprojects
 	}
 
 	if ( $allvariables->{'UREPRODUCT'} )
-	{	
+	{
 		$number = get_free_number_in_uisequence_table($installuitable) + 8;
 		$featurename = get_feature_name("_Ure", $featuretable);
 		if ( $featurename ) { $line = "InstallUre\t\&$featurename\=3 And Not Installed\t$number\n"; }
@@ -1905,8 +1905,8 @@ sub add_childprojects
 		$infoline = "Added $line into table $installuitablename\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
-	# Content for Feature table, better from scp (translation)	
+
+	# Content for Feature table, better from scp (translation)
 	# gm_o_java gm_optional Java 1.4.2 Description 2 200
 
 	installer::files::save_file($customactiontablename, $customactiontable);
@@ -1924,11 +1924,11 @@ sub add_childprojects
 sub setencoding
 {
 	my ( $languageidtdir, $onelanguage ) = @_;
-	
+
 	my $encoding = installer::windows::language::get_windows_encoding($onelanguage);
-	
+
 	# collecting all idt files in the directory $languageidtdir and substituting the string
-	
+
 	my $idtfiles = installer::systemactions::find_file_with_file_extension("idt", $languageidtdir);
 
 	for ( my $i = 0; $i <= $#{$idtfiles}; $i++ )
@@ -1947,10 +1947,10 @@ sub setencoding
 
 ##################################################################
 # Setting the condition, that at least one module is selected.
-# All modules with flag SHOW_MULTILINGUAL_ONLY were already 
+# All modules with flag SHOW_MULTILINGUAL_ONLY were already
 # collected. In table ControlE.idt, the string
 # LANGUAGECONDITIONINSTALL needs to be replaced.
-# Also for APPLICATIONCONDITIONINSTALL for the applications 
+# Also for APPLICATIONCONDITIONINSTALL for the applications
 # with flag APPLICATIONMODULE.
 ##################################################################
 
@@ -1960,16 +1960,16 @@ sub set_multilanguageonly_condition
 
 	my $onefilename = $languageidtdir . $installer::globals::separator . "ControlE.idt";
 	my $onefile = installer::files::read_file($onefilename);
-	
+
 	# Language modules
-	
+
 	my $condition = "";
-	
+
 	foreach my $module ( sort keys %installer::globals::multilingual_only_modules )
 	{
-		$condition = $condition . " &$module=3 Or";	
+		$condition = $condition . " &$module=3 Or";
 	}
-	
+
 	$condition =~ s/^\s*//;
 	$condition =~ s/\s*Or\s*$//;	# removing the ending "Or"
 
@@ -1979,21 +1979,21 @@ sub set_multilanguageonly_condition
 	{
 		${$onefile}[$j] =~ s/LANGUAGECONDITIONINSTALL/$condition/;
 	}
-	
+
 	# Application modules
-	
+
 	$condition = "";
-	
+
 	foreach my $module ( sort keys %installer::globals::application_modules )
 	{
-		$condition = $condition . " &$module=3 Or";	
+		$condition = $condition . " &$module=3 Or";
 	}
-	
+
 	$condition =~ s/^\s*//;
 	$condition =~ s/\s*Or\s*$//;	# removing the ending "Or"
 
 	if ( $condition eq "" ) { $condition = "1"; }
-	
+
 	for ( my $j = 0; $j <= $#{$onefile}; $j++ )
 	{
 		${$onefile}[$j] =~ s/APPLICATIONCONDITIONINSTALL/$condition/;
@@ -2009,7 +2009,7 @@ sub set_multilanguageonly_condition
 sub fill_assignment_hash
 {
 	my ($gid, $name, $key, $assignmenthashref, $parameter, $tablename, $assignmentarray) = @_;
-	
+
 	my $max = $parameter - 1;
 
 	if ( $max != $#{$assignmentarray} )
@@ -2043,15 +2043,15 @@ sub create_customaction_assignment_hash
 {
 	my ($gid, $name, $key, $assignmentarray) = @_;
 
-	my %assignment = ();	
+	my %assignment = ();
 	my $assignmenthashref = \%assignment;
 
 	my $tablename = ${$assignmentarray}[0];
 	installer::remover::remove_leading_and_ending_quotationmarks(\$tablename);
-	
+
 	my $tablename_defined = 0;
 	my $parameter = 0;
-	
+
 	if ( $tablename eq "InstallUISequence" )
 	{
 		$tablename_defined = 1;
@@ -2072,7 +2072,7 @@ sub create_customaction_assignment_hash
 		$parameter = 3;
 		fill_assignment_hash($gid, $name, $key, $assignmenthashref, $parameter, $tablename, $assignmentarray);
 	}
-	
+
 	if ( $tablename eq "ControlEvent" )
 	{
 		$tablename_defined = 1;
@@ -2086,19 +2086,19 @@ sub create_customaction_assignment_hash
 		$parameter = 5;
 		fill_assignment_hash($gid, $name, $key, $assignmenthashref, $parameter, $tablename, $assignmentarray);
 	}
-	
+
 	if ( ! $tablename_defined )
 	{
 		installer::exiter::exit_program("ERROR: gid: $gid, key: $key ! Unknown Windows CustomAction table: $tablename ! Currently supported: InstallUISequence, InstallExecuteSequence, ControlEvent, ControlCondition", "create_customaction_assignment_hash");
 	}
-	
+
 	return $assignmenthashref;
 }
 
 ##########################################################################
 # Finding the position of a specified CustomAction.
 # If the CustomAction is not found, the return value is "-1".
-# If the CustomAction position is not defined yet, 
+# If the CustomAction position is not defined yet,
 # the return value is also "-1".
 ##########################################################################
 
@@ -2107,11 +2107,11 @@ sub get_customaction_position
 	my ($action, $sequencetable) = @_;
 
 	my $position = -1;
-	
+
 	for ( my $i = 0; $i <= $#{$sequencetable}; $i++ )
 	{
 		my $line = ${$sequencetable}[$i];
-	
+
 		if ( $line =~ /^\s*([\w\.]+)\t.*\t\s*(\d+)\s$/ )	# matching only, if position is a number!
 		{
 			my $compareaction = $1;
@@ -2124,8 +2124,8 @@ sub get_customaction_position
 			}
 		}
 	}
-	
-	return $position;	
+
+	return $position;
 }
 
 ##########################################################################
@@ -2151,26 +2151,26 @@ sub set_positions_in_table
 			my $customaction = $1;
 			$lastposition = $lastposition + 25;
 			${$sequencetable}[$i] =~ s/POSITIONTEMPLATE_end/$lastposition/;
-			$infoline = "Setting position \"$lastposition\" for custom action \"$customaction\".\n"; 
+			$infoline = "Setting position \"$lastposition\" for custom action \"$customaction\".\n";
 			$installer::logger::Lang->print($infoline);
 		}
 	}
-	
+
 	# Step 2: Resolving all occurrences of "POSITIONTEMPLATE_abc" or "POSITIONTEMPLATE_behind_abc"
 	# where abc is the name of the reference Custom Action.
 	# This has to be done, until there is no more occurrence of POSITIONTEMPLATE (success)
 	# or there is no replacement in one circle (failure).
-	
+
 	my $template_exists = 0;
 	my $template_replaced = 0;
 	my $counter = 0;
-	
+
 	do
 	{
 		$template_exists = 0;
 		$template_replaced = 0;
 		$counter++;
-		
+
 		for ( my $i = 0; $i <= $#{$sequencetable}; $i++ )
 		{
 			if ( ${$sequencetable}[$i] =~ /^\s*([\w\.]+)\t.*\t\s*(POSITIONTEMPLATE_.*?)\s*$/ )
@@ -2181,17 +2181,17 @@ sub set_positions_in_table
 				my $customaction = $templatename;
 				$customaction =~ s/POSITIONTEMPLATE_//;
 				$template_exists = 1;
-				
+
 				# Trying to find the correct number.
 				# This can fail, if the custom action has no number
-				
+
 				my $setbehind = 0;
 				if ( $customaction =~ /^\s*behind_(.*?)\s*$/ )
 				{
 					$customaction = $1;
 					$setbehind = 1;
 				}
-				
+
 				my $position = get_customaction_position($customaction, $sequencetable);
 
 				if ( $position >= 0 )	# Found CustomAction and is has a position. Otherwise return value is "-1".
@@ -2201,13 +2201,13 @@ sub set_positions_in_table
 					else { $newposition = $position - 2; }
 					${$sequencetable}[$i] =~ s/$templatename/$newposition/;
 					$template_replaced = 1;
-					$infoline = "Setting position \"$newposition\" for custom action \"$onename\" (scp: \"$positionname\" at position $position).\n"; 
+					$infoline = "Setting position \"$newposition\" for custom action \"$onename\" (scp: \"$positionname\" at position $position).\n";
 					$installer::logger::Lang->print($infoline);
 				}
 				else
 				{
-					$infoline = "Could not assign position for custom action \"$onename\" yet (scp: \"$positionname\").\n"; 
-					$installer::logger::Lang->print($infoline);					
+					$infoline = "Could not assign position for custom action \"$onename\" yet (scp: \"$positionname\").\n";
+					$installer::logger::Lang->print($infoline);
 				}
 			}
 		}
@@ -2221,7 +2221,7 @@ sub set_positions_in_table
 	# Problem: It is allowed, that a CustomAction is defined in scp2 in a library that is
 	# part of product ABC, but this CustomAction is not used in this product
 	# and the reference CustomAction is not part of this product.
-	# Therefore this cannot be an error, but only produce a warning. The assigned number 
+	# Therefore this cannot be an error, but only produce a warning. The assigned number
 	# must be the last sequence number.
 
 	if (( $template_exists ) && ( ! $template_replaced ))
@@ -2242,16 +2242,16 @@ sub set_positions_in_table
 				# Setting at the end!
 				$lastposition = $lastposition + 25;
 				${$sequencetable}[$i] =~ s/$fulltemplate/$lastposition/;
-				$infoline = "WARNING: Setting position \"$lastposition\" for custom action \"$customactionname\". Could not find CustomAction \"$template\".\n"; 
-				$installer::logger::Lang->print($infoline);			
+				$infoline = "WARNING: Setting position \"$lastposition\" for custom action \"$customactionname\". Could not find CustomAction \"$template\".\n";
+				$installer::logger::Lang->print($infoline);
 			}
 		}
 		# $templatestring =~ s/,\s*$//;
 
-		# $infoline = "Error: Saving table \"$tablename\"\n"; 
-		# $installer::logger::Lang->print($infoline);					
+		# $infoline = "Error: Saving table \"$tablename\"\n";
+		# $installer::logger::Lang->print($infoline);
 		# print $infoline;
-		# installer::files::save_file($tablename, $sequencetable);	
+		# installer::files::save_file($tablename, $sequencetable);
 		# installer::exiter::exit_program("ERROR: Unresolved positions in CustomActions in scp2: $templatestring", "set_positions_in_table");
 	}
 }
@@ -2295,7 +2295,7 @@ sub addcustomactions
 
 		my $styles = "";
 		if ( $customaction->{'Styles'} ) { $styles = $customaction->{'Styles'}; }
-		
+
 		my $added_customaction = set_custom_action($customactionidttable, $name, $typ, $source, $target, $inbinarytable, $filesarray, $customactionidttablename, $styles);
 
 		if ( $added_customaction )
@@ -2318,7 +2318,7 @@ sub addcustomactions
 				{
 					$value = $customaction->{$key};
 
-					# in a patch the Assignment can be overwritten by a PatchAssignment					
+					# in a patch the Assignment can be overwritten by a PatchAssignment
 					if ( $installer::globals::patch )
 					{
 						$patchkey = "PatchAssignment" . $j;
@@ -2327,16 +2327,16 @@ sub addcustomactions
 							$value = $customaction->{$patchkey};
 							$key = $patchkey;
 						}
-					}		
-					
+					}
+
 				}
 				else { last; }
-				
+
 				# $value is now a comma separated list
 				if ( $value =~ /^\s*\(\s*(.*)\s*\);?\s*$/ ) { $value = $1; }
 				my $assignmentarray = installer::converter::convert_stringlist_into_array(\$value, ",");
 				my $assignment = create_customaction_assignment_hash($gid, $name, $key, $assignmentarray);
-				
+
 				if ( $assignment->{'parameter1'} eq "InstallExecuteSequence" )
 				{
 					add_custom_action_to_install_table($installexecutetable, $source, $name, $assignment->{'parameter2'}, $assignment->{'parameter3'}, $filesarray, $installexecutetablename, $styles);
@@ -2347,7 +2347,7 @@ sub addcustomactions
 				}
 				elsif ( $assignment->{'parameter1'} eq "InstallUISequence" )
 				{
-					add_custom_action_to_install_table($installuitable, $source, $name, $assignment->{'parameter2'}, $assignment->{'parameter3'}, $filesarray, $installuitablename, $styles);				
+					add_custom_action_to_install_table($installuitable, $source, $name, $assignment->{'parameter2'}, $assignment->{'parameter3'}, $filesarray, $installuitablename, $styles);
 				}
 				elsif ( $assignment->{'parameter1'} eq "ControlEvent" )
 				{
@@ -2359,7 +2359,7 @@ sub addcustomactions
 				}
 				else
 				{
-					installer::exiter::exit_program("ERROR: gid: $gid, key: $key ! Unknown Windows CustomAction table: $assignmenthashref->{'parameter1'} ! Currently supported: InstallUISequence, InstallESequence, ControlEvent, ControlCondition", "addcustomactions");		
+					installer::exiter::exit_program("ERROR: gid: $gid, key: $key ! Unknown Windows CustomAction table: $assignmenthashref->{'parameter1'} ! Currently supported: InstallUISequence, InstallESequence, ControlEvent, ControlCondition", "addcustomactions");
 				}
 			}
 		}
@@ -2379,18 +2379,18 @@ sub addcustomactions
 	installer::files::save_file($installuitablename, $installuitable);
 	installer::files::save_file($controleventtablename, $controleventtable);
 	installer::files::save_file($controlconditiontablename, $controlconditiontable);
-	
-	my $infoline = "Updated idt file: $customactionidttablename\n"; 
+
+	my $infoline = "Updated idt file: $customactionidttablename\n";
 	$installer::logger::Lang->print($infoline);
-	$infoline = "Updated idt file: $installexecutetablename\n"; 
+	$infoline = "Updated idt file: $installexecutetablename\n";
 	$installer::logger::Lang->print($infoline);
-	$infoline = "Updated idt file: $adminexecutetablename\n"; 
+	$infoline = "Updated idt file: $adminexecutetablename\n";
 	$installer::logger::Lang->print($infoline);
-	$infoline = "Updated idt file: $installuitablename\n"; 
+	$infoline = "Updated idt file: $installuitablename\n";
 	$installer::logger::Lang->print($infoline);
-	$infoline = "Updated idt file: $controleventtablename\n"; 
+	$infoline = "Updated idt file: $controleventtablename\n";
 	$installer::logger::Lang->print($infoline);
-	$infoline = "Updated idt file: $controlconditiontablename\n"; 
+	$infoline = "Updated idt file: $controlconditiontablename\n";
 	$installer::logger::Lang->print($infoline);
 
 	$installer::logger::Lang->print("\n");
@@ -2462,14 +2462,14 @@ sub setbidiattributes
 	}
 
 	# Saving the file
-				 
+
 	installer::files::save_file($dialogfilename, $dialogfile);
-	$infoline = "Set bidi support in idt file \"$dialogfilename\" for language $onelanguage\n"; 
+	$infoline = "Set bidi support in idt file \"$dialogfilename\" for language $onelanguage\n";
 	$installer::logger::Lang->print($infoline);
 
 	installer::files::save_file($controlfilename, $controlfile);
-	$infoline = "Set bidi support in idt file \"$controlfilename\" for language $onelanguage\n"; 
-	$installer::logger::Lang->print($infoline);	
+	$infoline = "Set bidi support in idt file \"$controlfilename\" for language $onelanguage\n";
+	$installer::logger::Lang->print($infoline);
 }
 
 1;

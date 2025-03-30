@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,27 +7,27 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
 #*************************************************************************
 #
-# RepositoryHelper - Perl for working with repositories and underlying SCM 
+# RepositoryHelper - Perl for working with repositories and underlying SCM
 #
 # usage: see below
 #
-#************************************************************************* 
+#*************************************************************************
 
 package RepositoryHelper;
 
@@ -71,22 +71,22 @@ sub new {
 }
 
 ##### methods #####
-sub get_repository_root 
-{   
+sub get_repository_root
+{
     my $self        = shift;
     return $self->{REPOSITORY_ROOT};
 }
 
-sub get_initial_directory 
+sub get_initial_directory
 {
     my $self        = shift;
     return $self->{INITIAL_DIRECTORY};
 }
 
-sub get_scm_name 
+sub get_scm_name
 {
     my $self        = shift;
-    return$self->{SCM_NAME}; 
+    return$self->{SCM_NAME};
 }
 
 ##### private methods #####
@@ -168,10 +168,10 @@ RepositoryHelper - Perl module for working with repositories and underlying SCM
     # Get repositories for the actual workspace:
     $a->get_repository_root();
 
-  
+
 =head1 DESCRIPTION
 
-RepositoryHelper is a perlPerl module for working with repositories and underlying SCM 
+RepositoryHelper is a perlPerl module for working with repositories and underlying SCM
 in the database.
 
 Methods:

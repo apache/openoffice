@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -27,7 +27,7 @@
 #
 # usage: see below
 #
-#************************************************************************* 
+#*************************************************************************
 
 package SourceConfigHelper;
 
@@ -64,12 +64,12 @@ sub new {
     my $self = {};
     my $SourceConfigCurrent;
     my $SourceConfigEnvironment;
-    
+
     $init_action = SOURCE_CONFIG_DEFAULT if (!defined ($init_action));
     if (!eval ($init_action) or ($init_action < SOURCE_CONFIG_NONE) or ($init_action > SOURCE_CONFIG_ENVIRONMENT_ONLY)) {
-		croak("wrong initial parameter: $init_action\n"); 
+		croak("wrong initial parameter: $init_action\n");
     }
-    
+
     if ($init_action != SOURCE_CONFIG_NONE) {
 		my $repositoryHash_ref = {};
 		if ($init_action != SOURCE_CONFIG_ENVIRONMENT_ONLY) {
@@ -85,9 +85,9 @@ sub new {
 				$SourceConfigEnvironment = SourceConfig->new($source_config);
 			}
 		}
-		
+
 		# fill array
-		
+
 		if (($init_action == SOURCE_CONFIG_CURRENT_FIRST) or ($init_action == SOURCE_CONFIG_CURRENT_ONLY)) {
 			if (defined ($SourceConfigCurrent)) {
 				push (@source_config_list, $SourceConfigCurrent);
@@ -109,7 +109,7 @@ sub new {
 			}
 		}
     }
-    
+
     $self->{SOURCE_CONFIG_LIST} = \@source_config_list;
 
     bless($self, $class);
@@ -149,7 +149,7 @@ sub get_module_path {
 	my $self = shift;
 	my $module = shift;
 	my $function = \&SourceConfig::get_module_path;
-	my $result; 
+	my $result;
 	$result = $self->get_StringResult ($function, $module);
 	return $result;
 }
@@ -182,7 +182,7 @@ sub get_module_repository {
 	my $self = shift;
 	my $module = shift;
 	my $function = \&SourceConfig::get_module_repository;
-	my $result; 
+	my $result;
 	$result = $self->get_StringResult ($function, $module);
 	return $result;
 }
@@ -193,7 +193,7 @@ sub is_active {
 	my $self = shift;
 	my $module = shift;
 	my $function = \&SourceConfig::is_active;
-	my $result_ref; 
+	my $result_ref;
 	my $is_active = 0;
 	$result_ref = $self->get_ResultOfList ($function, $module);
 	my $count = @$result_ref;
@@ -272,7 +272,7 @@ sub get_StringResult {
 	my $self = shift;
 	my $function = shift;
 	my $parameter = shift;
-	my $result_ref; 
+	my $result_ref;
 	$result_ref = $self->get_ResultOfList ($function, $parameter);
 	my $count = @$result_ref;
 	if ($count>0) {
@@ -303,7 +303,7 @@ sub get_ArrayResult {
 	my $self = shift;
 	my $function = shift;
 	my $parameter = shift;
-	my $result_ref; 
+	my $result_ref;
 	my @modules;
 	$result_ref = $self->get_ResultOfList ($function, $parameter);
 	my $count = @$result_ref;
@@ -316,7 +316,7 @@ sub get_ArrayResult {
 	}
 	return \@modules;
 }
- 
+
  ##### finish #####
 
 1; # needed by use or require
@@ -415,4 +415,4 @@ Kurt Zenker, kz@openoffice.org
 
 perl(1).
 
-=cut 
+=cut
