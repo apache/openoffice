@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,10 +61,10 @@ static NSDictionary *uti2kind;
         [temp setObject:@"OpenDocument Drawing Template" forKey:@"org.oasis.opendocument.graphics-template"];
         [temp setObject:@"OpenOffice.org 1.0 Database" forKey:@"org.openoffice.database"];
         [temp setObject:@"OpenDocument Chart" forKey:@"org.oasis.opendocument.chart"];
-        
+
         uti2kind = [[NSDictionary dictionaryWithDictionary:temp] retain];
         [temp release];
-        
+
         isInitialized = YES;
     }
 }
@@ -74,12 +74,12 @@ static NSDictionary *uti2kind;
 {
     //NSLog(contentTypeUTI);
     //NSLog(pathToFile);
-    
+
     NSString *itemKind = [uti2kind objectForKey:contentTypeUTI];
     if (itemKind != nil) {
         [attributes setObject:itemKind forKey:(NSString*)kMDItemKind];
     }
-    
+
     //first check to see if this is a valid zipped file that contains a file "meta.xml"
     unzFile unzipFile = [self openZipFileAtPath:pathToFile];
 
@@ -88,7 +88,7 @@ static NSDictionary *uti2kind;
         //NSLog(@"zip file not open");
         return YES;
     }
-    
+
     //first get the metadata
     NSData *metaData = [self metaDataFileFromZip:unzipFile];
     if (metaData == nil) {
@@ -97,7 +97,7 @@ static NSDictionary *uti2kind;
     }
 
     [metaData retain];
-    
+
     OOoMetaDataParser *parser = [OOoMetaDataParser new];
     if (parser != nil) {
 	//parse and extract the data
@@ -106,16 +106,16 @@ static NSDictionary *uti2kind;
 
     [metaData release];
     [parser release];
-    
+
     //and now get the content
     NSData *contentData = [self contentDataFileFromZip:unzipFile];
     if (contentData == nil) {
         unzClose(unzipFile);
         return YES;
     }
-    
+
     [contentData retain];
-    
+
     OOoContentDataParser *parser2 = [OOoContentDataParser new];
     if (parser2 != nil) {
 	//parse and extract the data
@@ -126,7 +126,7 @@ static NSDictionary *uti2kind;
     [parser2 release];
 
     unzClose(unzipFile);
-    
+
     return YES;
 }
 
@@ -134,26 +134,26 @@ static NSDictionary *uti2kind;
 - (unzFile)openZipFileAtPath:(NSString*)pathToFile
 {
     unzFile unzipFile = nil;
-    
+
     const char *zipfilename = [pathToFile UTF8String];
-    
+
     if (zipfilename != nil)
     {
         unzipFile = unzOpen(zipfilename);
     }
-    
+
     if (unzipFile == nil)
     {
         //NSLog(@"Cannot open %s",zipfilename);
         return nil;
     }
-    
+
     //NSLog(@"%s opened",zipfilename);
-    
+
     return unzipFile;
 }
 
-/* metaDataFileFromZip extracts the file meta.xml from the zip file and returns it as an NSData* structure 
+/* metaDataFileFromZip extracts the file meta.xml from the zip file and returns it as an NSData* structure
    or nil if the metadata is not present */
 - (NSData*) metaDataFileFromZip:(unzFile)unzipFile
 {
@@ -163,11 +163,11 @@ static NSDictionary *uti2kind;
         unzCloseCurrentFile(unzipFile);
         return nil;
     }
-    
+
     //open the current file
     if (unzOpenCurrentFile(unzipFile) != UNZ_OK) {
         //we hit an error, do cleanup
-        unzCloseCurrentFile(unzipFile); 
+        unzCloseCurrentFile(unzipFile);
         unzClose(unzipFile);
         return nil;
     }
@@ -180,17 +180,17 @@ static NSDictionary *uti2kind;
         //append the data until we are finished
         [data appendData:[NSData dataWithBytes:(const void *)buffer length:bytesRead]];
     }
-    
+
     //we no longer need the file, so close it
     unzCloseCurrentFile(unzipFile);
-    
+
     NSData *returnValue = [NSData dataWithData:data];
     [data release];
-    
+
     return returnValue;
 }
 
-/* contentDataFileFromZip extracts the file content.xml from the zip file and returns it as an NSData* structure 
+/* contentDataFileFromZip extracts the file content.xml from the zip file and returns it as an NSData* structure
    or nil if the metadata is not present */
 - (NSData*) contentDataFileFromZip:(unzFile)unzipFile
 {
@@ -200,30 +200,30 @@ static NSDictionary *uti2kind;
         unzCloseCurrentFile(unzipFile);
         return nil;
     }
-    
+
     //open the current file
     if (unzOpenCurrentFile(unzipFile) != UNZ_OK) {
         //we hit an error, do cleanup
-        unzCloseCurrentFile(unzipFile); 
+        unzCloseCurrentFile(unzipFile);
         unzClose(unzipFile);
         return nil;
     }
-    
+
     NSMutableData *data = [NSMutableData new];
-    
+
     unsigned buffer[BUFFER_SIZE];
     int bytesRead = 0;
     while ((bytesRead = unzReadCurrentFile(unzipFile, buffer, sizeof(buffer))) > 0) {
         //append the data
         [data appendData:[NSData dataWithBytes:(const void *)buffer length:bytesRead]];
     }
-    
+
     //we no longer need the file, so close it
     unzCloseCurrentFile(unzipFile);
-    
+
     NSData *returnValue = [NSData dataWithData:data];
     [data release];
-    
+
     return returnValue;
 }
 
