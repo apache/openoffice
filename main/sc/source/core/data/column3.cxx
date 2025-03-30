@@ -522,7 +522,7 @@ void ScColumn::DeleteRange( SCSIZE nStartIndex, SCSIZE nEndIndex, sal_uInt16 nDe
 
     // *** delete all formula cells ***
 
-	// first, all cells stop listening, may save unneeded recalcualtions
+	// first, all cells stop listening, may save unneeded recalculations
 	for ( FormulaCellVector::iterator aIt = aDelCells.begin(), aEnd = aDelCells.end(); aIt != aEnd; ++aIt )
 		(*aIt)->EndListeningTo( pDocument );
 

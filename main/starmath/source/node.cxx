@@ -2615,7 +2615,7 @@ void SmMatrixNode::Arrange(const OutputDevice &rDev, const SmFormat &rFormat)
         }
     }
 
-	// norm distance from which the following two are calcutated
+	// norm distance from which the following two are calculated
 	const int  nNormDist = 3 * GetFont().GetSize().Height();
 
 	// define horizontal and vertical minimal distances that separate
@@ -2650,7 +2650,7 @@ void SmMatrixNode::Arrange(const OutputDevice &rDev, const SmFormat &rFormat)
             const SmNode *pCoNode   = pTmpNode->GetLeftMost();
             RectHorAlign  eHorAlign = pCoNode->GetRectHorAlign();
 
-			// caculate horizontal position of element depending on column
+			// calculate horizontal position of element depending on column
 			// and horizontal alignment
 			switch (eHorAlign)
 			{	case RHA_LEFT:
