@@ -71,7 +71,7 @@ public class _XFrameLoader extends MultiMethodTest {
     private PropertyValue[] args = new PropertyValue[0] ;
 
     /**
-    * Implemetation of load listener which geristers all it's calls.
+    * Implementation of load listener which geristers all it's calls.
     */
     protected class TestListener implements XLoadEventListener {
         public boolean finished = false ;

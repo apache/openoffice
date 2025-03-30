@@ -28,7 +28,7 @@
 extern "C" {
 #endif
 
- /* comandline flags */
+ /* commandline flags */
 #define rtl_tres_Flag_BOOM      0x00000001
 #define rtl_tres_Flag_VERBOSE   0x00000002
 #define rtl_tres_Flag_SKIP      0x00000004
