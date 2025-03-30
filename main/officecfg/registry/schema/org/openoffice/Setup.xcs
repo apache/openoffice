@@ -111,7 +111,7 @@
 				<!-- UIHints: setup -->
 				<info>
 					<desc>It's the "most actual" filter, which is able to import/export ALL currently implemented features of this office module.
-					      It has to be the programatic name of the filter.</desc>
+					      It has to be the programmatic name of the filter.</desc>
 				</info>
 			</prop>
 			<prop oor:name="ooSetupFactoryActualTemplateFilter" oor:type="xs:string">
@@ -447,7 +447,7 @@
             <prop oor:name="DecimalSeparatorAsLocale" oor:type="xs:boolean" oor:nillable="false">
                 <info>
                     <author>OS</author>
-                    <desc>Indicates that the decimal separator (dot or commma) is used as appropriate for the selected locale instead of the one related to the default keyboard layout.</desc>
+                    <desc>Indicates that the decimal separator (dot or comma) is used as appropriate for the selected locale instead of the one related to the default keyboard layout.</desc>
                     <label>Decimal separator key same as locale setting.</label>
                 </info>
                 <value>true</value>
