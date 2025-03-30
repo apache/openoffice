@@ -139,7 +139,7 @@ import "ocidl.idl";
 							 // [in, defaultvalue(3)] VARIANT val3, //ok
 							  [in, defaultvalue(4)] VARIANT* val4);
 
-		// bug im midl: when val3 and val4 are pointers then the generated header cretates
+		// bug im midl: when val3 and val4 are pointers then the generated header creates
 		// for all params default values:
 		//HRESULT STDMETHODCALLTYPE defaultvalue2( 
 		//            /* [defaultvalue][in] */ long *val1 = 10,

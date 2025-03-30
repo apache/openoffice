@@ -2381,7 +2381,7 @@ sdr::contact::ViewContact* SwDrawVirtObj::CreateObjectSpecificViewContact()
 }
 
 // #108784#
-// implemetation of SwDrawVirtObj
+// implementation of SwDrawVirtObj
 SwDrawVirtObj::SwDrawVirtObj( SdrObject&        _rNewObj,
                               SwDrawContact&    _rDrawContact )
     : SdrVirtObj( _rNewObj ),

@@ -52,7 +52,7 @@ namespace css = ::com::sun::star;
 /** @short  specify an exception, which can be used inside the
             load environment only.
 
-    @descr  Of course outside code must wrapp it, to transport
+    @descr  Of course outside code must wrap it, to transport
             the occurred information to its caller.
 
     @author as96863

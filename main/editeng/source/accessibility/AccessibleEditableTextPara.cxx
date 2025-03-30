@@ -1464,7 +1464,7 @@ namespace accessibility
 			bSupplementalMode = true;
 			aPropertyNames = getAttributeNames();
 		}
-        // get default attribues...
+        // get default attributes...
         ::comphelper::SequenceAsHashMap aPropHashMap( getDefaultAttributes( aPropertyNames ) );
 
         // ... and override them with the direct attributes from the specific position

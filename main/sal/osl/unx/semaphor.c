@@ -32,7 +32,7 @@
 /* This is the (default) POSIX thread-local semaphore variant */
 
 /*
-	Implemetation notes:
+	Implementation notes:
 	The void* represented by oslSemaphore is used
 	as a pointer to an sem_t struct
 */
@@ -136,7 +136,7 @@ sal_Bool SAL_CALL osl_releaseSemaphore(oslSemaphore Semaphore) {
 /* This is the SYS V private semaphore variant */
 
 /*
-	Implemetation notes:
+	Implementation notes:
 	The void* represented by oslSemaphore is used
 	as a pointer to an osl_TSemImpl struct
 */

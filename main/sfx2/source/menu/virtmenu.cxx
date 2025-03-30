@@ -470,7 +470,7 @@ void SfxVirtualMenu::CreateFromSVMenu()
 					String aCmd( pSVMenu->GetItemCommand( nSlotId ) );
                     if ( aCmd.Len() && (( nSlotId < SID_SFX_START ) || ( nSlotId > SHRT_MAX )) )
 					{
-                        // try to create control via comand name
+                        // try to create control via command name
                         pMnuCtrl = SfxMenuControl::CreateControl( aCmd, nSlotId, *pSVMenu, sItemText, sHelpText, *pBindings, this );
 						if ( pMnuCtrl )
 						{

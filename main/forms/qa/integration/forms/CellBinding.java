@@ -126,7 +126,7 @@ public class CellBinding
         final String otherText = new String( "something else" );
         final String yetAnotherText = new String( "yet another text" );
 
-        // cretae a normal text control
+        // create a normal text control
         XPropertySet controlModel = m_formLayer.createControlAndShape( "DatabaseTextField", 30, 9, 30, 6 );
 
         // bind it to cell A1
