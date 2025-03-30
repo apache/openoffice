@@ -187,7 +187,7 @@ namespace basegfx
 					B2DCubicBezier aBezier;
 					aBezier.setStartPoint(rCandidate.getB2DPoint(0));
 					
-					// perf: try to avoid too many realloctions by guessing the result's pointcount
+					// perf: try to avoid too many reallocations by guessing the result's pointcount
 					aRetval.reserve(nPointCount*4);
 					
 					// add start point (always)
@@ -270,7 +270,7 @@ namespace basegfx
 					B2DCubicBezier aBezier;
 					aBezier.setStartPoint(rCandidate.getB2DPoint(0));
 					
-					// perf: try to avoid too many realloctions by guessing the result's pointcount
+					// perf: try to avoid too many reallocations by guessing the result's pointcount
 					aRetval.reserve(nPointCount*4);
 					
 					// add start point (always)
@@ -343,7 +343,7 @@ namespace basegfx
 					B2DCubicBezier aBezier;
 					aBezier.setStartPoint(rCandidate.getB2DPoint(0));
 	
-					// perf: try to avoid too many realloctions by guessing the result's pointcount
+					// perf: try to avoid too many reallocations by guessing the result's pointcount
 					aRetval.reserve(nPointCount*4);
 					
 					// add start point (always)
@@ -1178,7 +1178,7 @@ namespace basegfx
 						if(fTools::more(fCut1, fZero) && fTools::less(fCut1, fOne)
 							&& (!fTools::equalZero(rEdge2Delta.getX()) || !fTools::equalZero(rEdge2Delta.getY())))
 						{
-							// take the mopre precise calculation of the two possible
+							// take the more precise calculation of the two possible
 							if(fabs(rEdge2Delta.getX()) > fabs(rEdge2Delta.getY()))
 							{
 								fCut2 = (rEdge1Start.getX() + fCut1
@@ -1494,7 +1494,7 @@ namespace basegfx
 					if(nCount > 1)
 					{
 						// these polygons were created above, there exists none with less than two points,
-						// thus dircet point access below is allowed
+						// thus direct point access below is allowed
 						const B2DPolygon aFirst(pLineTarget->getB2DPolygon(0));
 						B2DPolygon aLast(pLineTarget->getB2DPolygon(nCount - 1));
 
@@ -1516,7 +1516,7 @@ namespace basegfx
 					if(nCount > 1)
 					{
 						// these polygons were created above, there exists none with less than two points,
-						// thus dircet point access below is allowed
+						// thus direct point access below is allowed
 						const B2DPolygon aFirst(pGapTarget->getB2DPolygon(0));
 						B2DPolygon aLast(pGapTarget->getB2DPolygon(nCount - 1));
 
