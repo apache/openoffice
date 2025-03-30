@@ -44,19 +44,19 @@
     End If
 %>
 
-<HTML>
-
-<HEAD>
-    <TITLE>$$1</TITLE>
-</HEAD>
-
-<BODY bgcolor="white">
-	<table width=100% height=99%>
-	<tr valign=center><td align=center>
-		<IMG src="<% = sGifName1 %>" width=$$4 height=$$5 border=0>
-		<br><IMG src="<% = sGifName2 %>" width=1 height=1 border=0>
-	</td></tr>
-	</table>
-</BODY>
-
-</HTML>
+<html>
+    <head>
+        <title>$$1</title>
+    </head>
+    <body bgcolor="white">
+        <table width="100%" height="99%">
+            <tr valign="center">
+                <td align="center">
+                    <img src="<% = sGifName1 %>" width=$$4 height=$$5 border="0">
+                    <br>
+                    <img src="<% = sGifName2 %>" width="1" height="1" border="0">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
