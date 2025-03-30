@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -29,7 +29,7 @@
 #
 # usage: create_pdb_relocators($inpath, $milestoneext, $pre);
 #
-#************************************************************************* 
+#*************************************************************************
 
 package CreatePDBRelocators;
 
@@ -54,7 +54,7 @@ sub new
 	    print STDERR "can't determine SOLARVERSION.\n";
         exit (1);
     }
-    
+
     $self->{SOLARVERSION} = $solarversion;
 
     $workdir = $ENV{WORKDIR};
@@ -62,7 +62,7 @@ sub new
 	    print STDERR "can't determine WORKDIR.\n";
         exit (1);
     }
-   
+
     if ( $workdir =~ /^$solarversion/ ) {
         $relworkdir = $workdir;
         $relworkdir =~ s/^$solarversion\///;
@@ -85,7 +85,7 @@ sub new
     }
     $self->{BASEDIRS} = \@basedirs;
     bless($self, $Object);
-    return $self; 
+    return $self;
 }
 
 sub create_pdb_relocators
@@ -94,10 +94,10 @@ sub create_pdb_relocators
     my $inpath   = shift;
     my $milestoneext    = shift;
     my $pre      = shift;
-    
+
     my $solarversion = $self->{SOLARVERSION};
     my $root_dir = "$solarversion/$inpath";
-    
+
     # sanitize path
     $root_dir =~ s/\\/\//g;
     my $o =~ s/\\/\//g;
@@ -133,9 +133,9 @@ sub create_pdb_relocators
 		foreach (@pdb_files) {
 			my $relocator = basename($_) . ".location";
 			/$o\/(.*)/i;
-	        
+
 			my $src_location = $1;
-	        
+
 			my $location = "";
 			my $target = "";
 			if ( $src_location =~ /\/so\// )
@@ -176,7 +176,7 @@ sub collect_files_from_all_basedirs
 sub collect_files
 {
     my $self = shift;
-    my ($srcdir, $platform, $filesref) = @_; 
+    my ($srcdir, $platform, $filesref) = @_;
     my $template = "$srcdir/*/$platform";
     my $template2 = "$srcdir/LinkTarget";
 	if ( $ENV{GUI} eq "WNT" ) {

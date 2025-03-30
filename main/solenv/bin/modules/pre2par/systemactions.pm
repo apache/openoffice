@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -35,7 +35,7 @@ use pre2par::globals;
 sub create_directory
 {
 	my ($directory) = @_;
-		
+
 	my $returnvalue = 1;
 	my $infoline = "";
 
@@ -50,37 +50,37 @@ sub create_directory
 
 		if ($returnvalue)
 		{
-			$infoline = "Created directory: $directory\n"; 
+			$infoline = "Created directory: $directory\n";
 			push(@pre2par::globals::logfileinfo, $infoline);
-	
+
 			if ($pre2par::globals::isunix)
 			{
 				my $localcall = "chmod 775 $directory \>\/dev\/null 2\>\&1";
 				system($localcall);
-			}			
+			}
 		}
 		else
 		{
 			# New solution in parallel packing: It is possible, that the directory now exists, although it
 			# was not created in this process. There is only an important error, if the directory does not
-			# exist now. 
-			
+			# exist now.
+
 			if (!(-d $directory))
 			{
 				pre2par::exiter::exit_program("Error: Could not create directory: $directory", "create_directory");
 			}
 			else
 			{
-				$infoline = "\nAnother process created this directory in exactly this moment :-) : $directory\n"; 
+				$infoline = "\nAnother process created this directory in exactly this moment :-) : $directory\n";
 				push(@pre2par::globals::logfileinfo, $infoline);
 			}
 		}
 	}
 	else
 	{
-		$infoline = "\nAlready existing directory, did not create: $directory\n"; 
+		$infoline = "\nAlready existing directory, did not create: $directory\n";
 		push(@pre2par::globals::logfileinfo, $infoline);
-	}	
+	}
 }
 
 #######################################################################
@@ -90,11 +90,11 @@ sub create_directory
 sub create_directories
 {
 	my ($directory, $languagesref) =@_;
-	
+
 	$pre2par::globals::unpackpath =~ s/\Q$pre2par::globals::separator\E\s*$//;	# removing ending slashes and backslashes
-	
+
 	my $path = $pre2par::globals::unpackpath;	 # this path already exists
-	
+
 	$path = $path . $pre2par::globals::separator . $pre2par::globals::build . $pre2par::globals::separator;
 	create_directory($path);
 
@@ -119,16 +119,16 @@ sub create_directories
 
 		$path = $path . $directory . $pre2par::globals::separator;
 		create_directory($path);
-		
+
 		if (!($$languagesref eq "" ))	# this will be a path like "01_49", for Profiles and ConfigurationFiles, idt-Files
 		{
 			$path = $path . $$languagesref . $pre2par::globals::separator;
-			create_directory($path);			
+			create_directory($path);
 		}
 	}
-	
+
 	$path =~ s/\Q$pre2par::globals::separator\E\s*$//;
-	
+
 	return $path;
 }
 
@@ -141,9 +141,9 @@ sub copy_one_file
 	my ($source, $dest) = @_;
 
 	my ($copyreturn, $returnvalue, $infoline);
-	
+
 	$copyreturn = copy($source, $dest);
-		
+
 	if ($copyreturn)
 	{
 		$infoline = "Copy: $source to $dest\n";
@@ -154,9 +154,9 @@ sub copy_one_file
 		$infoline = "Error: Could not copy $source to $dest\n";
 		$returnvalue = 0;
 	}
-	
+
 	push(@pre2par::globals::logfileinfo, $infoline);
-	
+
 	return $returnvalue;
 }
 
@@ -168,10 +168,10 @@ sub copy_one_file
 sub copy_directory
 {
 	my ($sourcedir, $destdir) = @_;
-	
+
 	my ($onefile, $sourcefile, $destfile);
 	my @sourcefiles = ();
-	
+
 	$sourcedir =~ s/\Q$pre2par::globals::separator\E\s*$//;
 	$destdir =~ s/\Q$pre2par::globals::separator\E\s*$//;
 
@@ -179,11 +179,11 @@ sub copy_directory
 	push(@pre2par::globals::logfileinfo, $infoline);
 	$infoline = "Copying files from directory $sourcedir to directory $destdir\n";
 	push(@pre2par::globals::logfileinfo, $infoline);
-	
+
 	opendir(DIR, $sourcedir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))

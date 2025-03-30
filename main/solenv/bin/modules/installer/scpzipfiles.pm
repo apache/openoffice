@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -97,7 +97,7 @@ sub replace_all_ziplistvariables_in_rtffile ($$)
 sub resolving_scpzip_replace_flag
 {
 	my ($filesarrayref, $variableshashref, $item, $languagestringref) = @_;
-	
+
 	my $diritem = lc($item);
 
 	my $replacedirbase = installer::systemactions::create_directories("replace_$diritem", $languagestringref);
@@ -110,35 +110,35 @@ sub resolving_scpzip_replace_flag
 		my $styles = "";
 
 		if ( $onefile->{'Styles'} ) { $styles = $onefile->{'Styles'}; }
-	
+
 		if ( $styles =~ /\bSCPZIP_REPLACE\b/ )
 		{
 			# Language specific subdirectory
 
 			my $onelanguage = $onefile->{'specificlanguage'};
-			
+
 			if ($onelanguage eq "")
 			{
 				$onelanguage = "00";	# files without language into directory "00"
 			}
-			
-			my $replacedir = $replacedirbase . $installer::globals::separator . $onelanguage . $installer::globals::separator; 
+
+			my $replacedir = $replacedirbase . $installer::globals::separator . $onelanguage . $installer::globals::separator;
 			installer::systemactions::create_directory($replacedir);	# creating language specific directories
 
 			# copy files and edit them with the variables defined in the zip.lst
-			
+
 			my $longfilename = 0;
-			
+
 			my $onefilename = $onefile->{'Name'};
 			my $sourcepath = $onefile->{'sourcepath'};
-			
+
 			if ( $onefilename =~ /^\s*\Q$installer::globals::separator\E/ )	# filename begins with a slash, for instance /registry/schema/org/openoffice/VCL.xcs
 			{
 				$onefilename =~ s/^\s*\Q$installer::globals::separator\E//;
 				$longfilename = 1;
 			}
-			
-			my $destinationpath = $replacedir . $onefilename;  
+
+			my $destinationpath = $replacedir . $onefilename;
 			my $movepath = $destinationpath . ".orig";
 
 			if ( $longfilename )	# the destination directory has to be created before copying
@@ -162,9 +162,9 @@ sub resolving_scpzip_replace_flag
 
 			# Saving the original source, where the file was found
 			$onefile->{'originalsourcepath'} = $onefile->{'sourcepath'};
-	
+
 			# Writing the new sourcepath into the hashref, even if it was no copied
-				
+
 			$onefile->{'sourcepath'} = $destinationpath;
 		}
 	}

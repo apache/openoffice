@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 package installer::patch::InstallationSet;
@@ -154,11 +154,11 @@ sub UnpackExe ($$)
     'Directory' tables in the .msi file.
 
     1. Setup the directory structure of all files in the cab from the 'File' and 'Directory' tables in the msi.
-    
+
     2. Unpack the cab file.
 
     3. Move the files to their destination directories.
-    
+
 =cut
 sub UnpackCab ($$$)
 {
@@ -200,7 +200,7 @@ sub UnpackCab ($$$)
         my $full_name = $directory_item->{'full_source_long_name'};
         # Strip away the leading OfficeMenuFolder part.
         $full_name =~ s/^$office_menu_folder_name\///;
-        my $flat_filename = File::Spec->catfile($temporary_destination_path, $unique_name); 
+        my $flat_filename = File::Spec->catfile($temporary_destination_path, $unique_name);
         my $dir_path = File::Spec->catfile($destination_path, $full_name);
         my $dir_filename = File::Spec->catfile($dir_path, $long_file_name);
 
@@ -272,7 +272,7 @@ sub UnpackCabFlat ($$$)
 =head GetUnpackedExePath ($version, $is_current_version, $language, $package_format, $product)
 
     Convenience function that returns where a downloadable installation set is extracted to.
-    
+
 =cut
 sub GetUnpackedExePath ($$$$$)
 {
@@ -305,7 +305,7 @@ sub GetUnpackedCabPath ($$$$$)
 =head2 GetUnpackedPath($version, $is_current_version, $language, $package_format, $product)
 
     Internal function for creating paths to where archives are unpacked.
-    
+
 =cut
 sub GetUnpackedPath ($$$$$)
 {
@@ -366,7 +366,7 @@ sub Download ($$$)
     my $url = $release_data->{'URL'};
     $release_data->{'URL'} =~ /^(.*)\/([^\/]+)$/;
     my ($location, $basename) = ($1,$2);
-    
+
     $installer::logger::Info->printf("downloading %s\n", $basename);
     $installer::logger::Info->printf("    from '%s'\n", $location);
     my $filesize = $release_data->{'file-size'};
@@ -380,7 +380,7 @@ sub Download ($$$)
     }
     my $temporary_filename = $filename . ".part";
     my $resume_size = 0;
-    
+
     # Prepare checksum.
     my $checksum = undef;
     my $checksum_type = $release_data->{'checksum-type'};
@@ -414,7 +414,7 @@ sub Download ($$$)
     my $handle = select STDOUT;
     $| = 1;
     select $handle;
-    
+
     my $agent = LWP::UserAgent->new();
     $agent->timeout(120);
     $agent->show_progress(0);
@@ -469,7 +469,7 @@ sub Download ($$$)
     select $handle;
 
     $installer::logger::Info->print("                                        \r");
-    
+
     if ($response->is_success())
     {
         if ( ! defined $digest
@@ -601,7 +601,7 @@ sub ProvideUnpackedExe ($$$$$)
     {
         # For the current version the exe is created from the unpacked
         # content and both are expected to be already present.
-            
+
         # In order to have the .cab and its unpacked content in one
         # directory and don't interfere with the creation of regular
         # installation sets, we copy the unpacked .exe into a separate
@@ -669,7 +669,7 @@ sub CopyRecursive ($$)
     my ($source_path, $destination_path) = @_;
 
     return (undef,undef) unless -d $source_path;
-    
+
     my @todo = ([$source_path, $destination_path]);
     my $file_count = 0;
     my $directory_count = 0;
@@ -716,7 +716,7 @@ sub CheckLocalCopy ($$$$)
     my ($version, $language, $package_format, $product_name) = @_;
 
     # Compare creation times of the original .msi and its copy.
-    
+
     my $original_path = File::Spec->catfile(
         $ENV{'SRC_ROOT'},
         "instsetoo_native",
@@ -783,7 +783,7 @@ sub ProvideUnpackedCab ($$$$$)
         # a new installation set has been built.
         CheckLocalCopy($version, $language, $package_format, $product_name);
     }
-    
+
     # Check if the cab file has already been unpacked.
     my $unpacked_cab_path = installer::patch::InstallationSet::GetUnpackedCabPath(
         $version,
@@ -842,13 +842,13 @@ sub ProvideUnpackedCab ($$$$$)
             $installer::logger::Info->printf("    to '%s'\n", $unpacked_cab_path);
 
             installer::patch::Tools::touch($unpacked_cab_flag_filename);
-            
+
             return 1;
         }
         else
         {
             return 0;
         }
-    }    
+    }
 }
 1;

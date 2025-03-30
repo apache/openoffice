@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -40,10 +40,10 @@ sub get_md5sum
 
 	open(FILE, "<$filename") or die "ERROR: Can't open $filename for creating file hash";
 	binmode(FILE);
-	my $digest = Digest::MD5->new->addfile(*FILE)->hexdigest;			
+	my $digest = Digest::MD5->new->addfile(*FILE)->hexdigest;
 	close(FILE);
-	
-	return $digest;	
+
+	return $digest;
 }
 
 ####################################################
@@ -80,12 +80,12 @@ sub set_pool_path
 sub compare_epm_content
 {
 	my ($oldcontent, $newcontent) = @_;
-	
+
 	my $identical = 1;
 	my $diffinfo = "";
 
 	# Removing empty lines and files from $newcontent
-	
+
 	my @newlocalcontent = ();
 	for ( my $i = 0; $i <= $#{$newcontent}; $i++ )
 	{
@@ -127,9 +127,9 @@ sub compare_epm_content
 				last;
 			}
 		}
-	}	
+	}
 
-	return $identical;	
+	return $identical;
 }
 
 ####################################################
@@ -139,15 +139,15 @@ sub compare_epm_content
 sub compare_package_content
 {
 	my ($oldcontent, $newcontent) = @_;
-	
+
 	my $identical = 1;
 	my $infoline = "";
-	
+
 	my $oldmember = scalar keys %{$oldcontent};
 	my $newmember = scalar keys %{$newcontent};
 
 	# comparing the count
-	
+
 	if ( $oldmember != $newmember )
 	{
 		# Logging the difference
@@ -157,9 +157,9 @@ sub compare_package_content
 		$infoline = "Different number of files in packages. New number: $newmember, old number: $oldmember\n";
 		push(@installer::globals::pcfdiffcomment, $infoline);
 	}
-		
+
 	# comparing the keys
-		
+
 	if ( $identical )
 	{
 		my $first = 1;
@@ -176,7 +176,7 @@ sub compare_package_content
 			}
 		}
 
-		# collecting all differences		
+		# collecting all differences
 		if ( ! $identical )
 		{
 			foreach my $dest ( keys %{$oldcontent} )
@@ -187,19 +187,19 @@ sub compare_package_content
                     $installer::logger::Info->print("\n") if $first;
                     $installer::logger::Info->printf("...... file only in one package (B): %s\n", $dest);
 					$infoline = "File only in new package: $dest\n";
-					push(@installer::globals::pcfdiffcomment, $infoline);	
+					push(@installer::globals::pcfdiffcomment, $infoline);
 					$first = 0;
 				}
-			}			
+			}
 		}
 	}
-	
+
 	# comparing the checksum
-	
+
 	if ( $identical )
 	{
 		my $first = 1;
-		
+
 		foreach my $dest ( keys %{$newcontent} )
 		{
 			if ( $newcontent->{$dest}->{'md5sum'} ne $oldcontent->{$dest}->{'md5sum'} )
@@ -212,9 +212,9 @@ sub compare_package_content
 				}
 				$installer::globals::pcfdifflist{$dest} = 1;
                 $installer::logger::Info->printf("...... different file: %s\n", $dest);
-				# last;				
+				# last;
 			}
-			
+
 			if ( $installer::globals::iswindowsbuild )
 			{
 				if ( $newcontent->{$dest}->{'uniquename'} ne $oldcontent->{$dest}->{'uniquename'} )
@@ -223,7 +223,7 @@ sub compare_package_content
 					$installer::globals::pcfdifflist{$dest} = 1;
                     $installer::logger::Info->print("\n");
                     $installer::logger::Info->printf("...... different file: %s", $dest);
-					# last;				
+					# last;
 				}
 			}
 		}
@@ -242,13 +242,13 @@ sub calculate_current_content
 
 	$installer::logger::Lang->print("\n");
 	$installer::logger::Lang->add_timestamp("Calculating content for package content file ($packagename), start");
-	
+
 	my %globalcontent = ();
-	
+
 	for ( my $i = 0; $i <= $#{$filesarray}; $i++ )
 	{
 		my %onefilehash = ();
-		
+
 		my $onefile = ${$filesarray}[$i];
 		if ( ! $onefile->{'sourcepath'} ) { installer::exiter::exit_program("ERROR: No sourcepath found for file $onefile->{'gid'}", "calculate_current_content");  }
 		my $source = $onefile->{'sourcepath'};
@@ -272,7 +272,7 @@ sub calculate_current_content
 	$installer::logger::Lang->print("\n");
 	$installer::logger::Lang->add_timestamp("Calculating content for package content file ($packagename), start");
 
-	return \%globalcontent;	
+	return \%globalcontent;
 }
 
 ####################################################
@@ -285,19 +285,19 @@ sub create_pcfcontent_file
 
 	my @content = ();
 	my $oneline = "PackageName: $realpackagename\n";
-	push(@content, $oneline);		
+	push(@content, $oneline);
 
 	$oneline = "md5sum: $md5sum\n";
-	push(@content, $oneline);		
+	push(@content, $oneline);
 
 	$oneline = "FileSize: $filesize\n";
-	push(@content, $oneline);		
+	push(@content, $oneline);
 
 	$oneline = "FullPackageName: $fullpackagename\n";
-	push(@content, $oneline);		
+	push(@content, $oneline);
 
 	$oneline = "PkgVersion: $pkgversion\n";
-	push(@content, $oneline);		
+	push(@content, $oneline);
 
 	foreach my $dest (keys %{$installer::globals::newpcfcontent} )
 	{
@@ -324,13 +324,13 @@ sub create_pcfcontent_file
 sub read_pcf_content
 {
 	my ($pcffilename) = @_;
-	
+
 	my %allcontent = ();
 	my @epmfile = ();
 	my $realpackagename = "";
 
 	my $content = installer::files::read_file($pcffilename);
-	
+
 	for ( my $i = 0; $i <= $#{$content}; $i++ )
 	{
 		my $line = ${$content}[$i];
@@ -347,7 +347,7 @@ sub read_pcf_content
 			$installer::globals::xpdpackageinfo{'FullPackageName'} = $1;
 			next;
 		}
-		
+
 		if ( $line =~ /^\s*FileSize\:\s*(.*?)\s*$/ )
 		{
 			$installer::globals::xpdpackageinfo{'FileSize'} = $1;
@@ -365,17 +365,17 @@ sub read_pcf_content
 			$installer::globals::xpdpackageinfo{'md5sum'} = $1;
 			next;
 		}
-		
+
 		if ( $line =~ /^\s*Files:\t(.+?)\t(.+?)\t(.*?)\s*$/ )
 		{
 			my $destination = $1;
 			my $checksum = $2;
 			my $uniquename = $3;
-			
+
 			my %onefilehash = ();
 			$onefilehash{'md5sum'} = $checksum;
 			$onefilehash{'uniquename'} = $uniquename;
-			
+
 			$allcontent{$destination} = \%onefilehash;
 			next;
 		}
@@ -387,28 +387,28 @@ sub read_pcf_content
 			next;
 		}
 	}
-	
+
 	if ( $realpackagename eq "" ) { installer::exiter::exit_program("ERROR: Real package name not found in pcf file: \"$pcffilename\"", "read_pcf_content"); }
-	
+
 	return ($realpackagename, \%allcontent, \@epmfile);
 }
 
 ####################################################
-# Checking, if a specific package can be 
+# Checking, if a specific package can be
 # created at the moment.
 ####################################################
 
 sub check_package_availability
 {
 	my ($packagename) = @_;
-	
+
 	my $package_is_available = 1;
-	
+
 	my $checkfilename = $installer::globals::poolpath . $installer::globals::separator . $packagename . ".pcf.check";
 	my $lockfilename = $installer::globals::poolpath . $installer::globals::separator . $packagename . ".pcf.lock";
 
 	if (( -f $checkfilename ) || ( -f $lockfilename )) { $package_is_available = 0; }
-	
+
 	return $package_is_available;
 }
 
@@ -420,12 +420,12 @@ sub check_package_availability
 sub check_pool_exit
 {
 	my ( $lockfilename, $timecounter ) = @_;
-	
+
 	# How old is this lock file?
 	my $timeage = installer::logger::get_file_age($lockfilename);
 
-	# if ( $timeage > 1800 ) # file is older than half an hour 
-	if ( $timeage > 3600 ) # file is older than an hour 
+	# if ( $timeage > 1800 ) # file is older than half an hour
+	if ( $timeage > 3600 ) # file is older than an hour
 	{
 		my $timestring = installer::logger::convert_timestring($timeage);
 		my $infoline = "\nPool: Attention: \"$lockfilename\" is too old ($timestring). Removing file!\n";
@@ -445,7 +445,7 @@ sub check_pool_exit
         $installer::logger::Info->print("\n");
         $installer::logger::Info->printf("... %s", $infoline);
 		$installer::logger::Lang->print("\n");
-		$installer::logger::Lang->print($infoline);		
+		$installer::logger::Lang->print($infoline);
 	}
 }
 
@@ -496,19 +496,19 @@ sub log_pool_info
 sub process_is_owner
 {
 	my ( $filename ) = @_;
-	
+
 	my $process_is_owner = 0;
 
 	$installer::globals::savelockfilecontent = installer::files::read_file($filename);
 	$installer::globals::savelockfilename = $filename;
-	
+
 	if ( ${$installer::globals::savelockfilecontent}[0] =~ /^\s*\Q$installer::globals::sessionid\E\s+/ ) { $process_is_owner = 1; }
-	
+
 	return $process_is_owner;
 }
 
 ####################################################
-# Removing a package from installation set, if 
+# Removing a package from installation set, if
 # there were pooling problems.
 ####################################################
 
@@ -518,7 +518,7 @@ sub remove_package_from_installset
 
     $installer::logger::Lang->printf("Pool problem: Removing package \"%s\" from installation set!\n",
         $newpackagepath);
-	
+
 	if ( -f $newpackagepath ) { unlink $newpackagepath; }
 	if ( -d $newpackagepath ) { installer::systemactions::remove_complete_directory($newpackagepath, 1); }
 
@@ -541,7 +541,7 @@ sub package_is_up_to_date
 
 	if ( ! $installer::globals::poolpathset ) { installer::packagepool::set_pool_path(); }
 	if ( ! $installer::globals::sessionidset ) { installer::packagepool::set_sessionid(); }
-	
+
 	my $infoline = "";
 	# Resetting some variables for this package
 	my $package_is_up_to_date = 0;
@@ -553,7 +553,7 @@ sub package_is_up_to_date
 	%installer::globals::pcfdifflist = ();
 	@installer::globals::pcfdiffcomment = ();
 	@installer::globals::epmdifflist = ();
-	
+
 	# Reading the package content file, if this file exists (extension *.pcf)
 	my $filename = $installer::globals::poolpath . $installer::globals::separator . $packagename . ".pcf";
 	my $checkfilename = $installer::globals::poolpath . $installer::globals::separator . $packagename . ".pcf.check";
@@ -603,7 +603,7 @@ sub package_is_up_to_date
 		log_pool_info(0);
 		$package_is_up_to_date = 4;	# repeat this package
 		return $package_is_up_to_date;
-	} 
+	}
 
 	if ( ! process_is_owner($checkfilename) )
 	{
@@ -670,7 +670,7 @@ sub package_is_up_to_date
 			{
 				$content_is_identical = compare_epm_content($oldepmcontent, $newepmcontent);
 			}
-	
+
 			if ( $content_is_identical ) { $package_is_up_to_date = 1; }
 		}
 	}
@@ -703,18 +703,18 @@ sub package_is_up_to_date
 		else
 		{
 			$infoline = "Pool: $packagename: Does not exist in pool.\n";
-			$installer::logger::Lang->print($infoline);			
+			$installer::logger::Lang->print($infoline);
 		}
 
         $installer::logger::Info->printf("... packaging required\n");
 		%installer::globals::xpdpackageinfo = (); # reset the filled hash, because the package cannot be used.
-		
+
 		# Creating lock mechanism, so that other processes do not create this package, too.
 		installer::files::save_file($lockfilename, \@lockfilecontent);		# Creating the Lock, to create this package (Lock for check still exists).
 		$installer::globals::processhaspoollockfile = 1;
 
 		# Check if creation of Lock file was really successful
-		
+
 		if ( ! -f $lockfilename )
 		{
 			$infoline = "Pool problem: Pool lock file \"$lockfilename\" could not be created successfully or was removed by another process (D)!\n";
@@ -722,7 +722,7 @@ sub package_is_up_to_date
 			log_pool_info(0);
 			$package_is_up_to_date = 4;	# repeat this package
 			return $package_is_up_to_date;
-		} 
+		}
 
 		if ( ! process_is_owner($lockfilename) )
 		{
@@ -751,7 +751,7 @@ sub package_is_up_to_date
 			log_pool_info(0);
 			$package_is_up_to_date = 4;	# repeat this package
 			return $package_is_up_to_date;
-		} 
+		}
 
 		if ( ! process_is_owner($checkfilename) )
 		{
@@ -760,8 +760,8 @@ sub package_is_up_to_date
 			log_pool_info(1);
 			$package_is_up_to_date = 4;	# repeat this package
 			return $package_is_up_to_date;
-		} 
-	
+		}
+
 		# Copying the package from the pool into the installation set
 		$newpackagepath = copy_package_from_pool($installdir, $subdir, $realpackagename);
 	}
@@ -769,17 +769,17 @@ sub package_is_up_to_date
 	# Before the lock file in the pool can be removed, it has to be checked, if this process is still the owner of this lock file.
 	# Check, if lock file still exists and if this process is the owner.
 	if ( ! -f $checkfilename )
-	{		
+	{
 		$infoline = "Pool problem: Pool lock file \"$checkfilename\" was removed by another process (C)!\n";
 		$installer::logger::Lang->print($infoline);
 		log_pool_info(0);
-		
+
 		# removing new package from installation set
 		if ( $newpackagepath ne "" ) { remove_package_from_installset($newpackagepath); } 	# A file was copied and a problem occurred with pooling
-		
+
 		$package_is_up_to_date = 4;	# repeat this package
 		return $package_is_up_to_date;
-	} 
+	}
 
 	if ( ! process_is_owner($checkfilename) )
 	{
@@ -792,9 +792,9 @@ sub package_is_up_to_date
 
 		$package_is_up_to_date = 4;	# repeat this package
 		return $package_is_up_to_date;
-	} 
+	}
 
-	# Removing the check file, releasing this package for the next process. 
+	# Removing the check file, releasing this package for the next process.
 	# The Lock to create this package still exists, if required.
 	unlink $checkfilename;
 	$installer::globals::processhaspoolcheckfile = 0;
@@ -812,7 +812,7 @@ sub package_is_up_to_date
 			log_pool_info(0);
 			$package_is_up_to_date = 4;	# repeat this package
 			return $package_is_up_to_date;
-		} 
+		}
 
 		if ( ! process_is_owner($lockfilename) )
 		{
@@ -821,7 +821,7 @@ sub package_is_up_to_date
 			log_pool_info(1);
 			$package_is_up_to_date = 4;	# repeat this package
 			return $package_is_up_to_date;
-		}		
+		}
 	}
 
 	# Collecting log information
@@ -840,17 +840,17 @@ sub package_is_up_to_date
 		else
 		{
 			$infoline = "\t\tPool: $packagename: Does not exist in pool.\n";
-			push( @packreasons, $infoline);			
+			push( @packreasons, $infoline);
 		}
 
-		$installer::globals::createpackages{$packagename} = \@packreasons;		
+		$installer::globals::createpackages{$packagename} = \@packreasons;
 	}
 
 	return $package_is_up_to_date;
 }
 
 ###################################################
-# Determine, which package was created newly 
+# Determine, which package was created newly
 ###################################################
 
 sub determine_new_packagename
@@ -873,7 +873,7 @@ sub determine_new_packagename
 		installer::exiter::exit_program("ERROR: No new package in directory $dir", "determine_new_packagename (packagepool)");
 	}
 	my $newpackage = ${$newcontent}[0];
-	
+
 	return $newpackage;
 }
 
@@ -900,7 +900,7 @@ sub put_content_into_pool
 		$installer::globals::newpcfcontent = calculate_current_content($filesinpackage, $packagename);
 		$installer::globals::newpcfcontentcalculated = 1;
 	}
-	
+
 	# Determining md5sum and FileSize for the new package and saving in pcf file
 	my $md5sum = installer::xpdinstaller::get_md5_value($fullrealpackagename);
 	my $filesize = installer::xpdinstaller::get_size_value($fullrealpackagename);
@@ -921,7 +921,7 @@ sub put_content_into_pool
 	# Put package into pool
 	$infoline = "Pool: Adding package \"$packagename\" into pool.\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	# Copying with unique name, containing PID. Only renaming if everything was fine.
 	my $realdestination = "";
 	my $uniquedestination = "";
@@ -938,13 +938,13 @@ sub put_content_into_pool
 		my $tarfilename = $packagename . ".tar";
 		my $fulltarfilename = $fullinstalldir . $installer::globals::separator . $tarfilename;
 		my $size = installer::worker::tar_package($fullinstalldir, $packagename, $tarfilename, $installer::globals::getuidpath);
-		if (( ! -f $fulltarfilename ) || ( ! ( $size > 0 ))) { installer::exiter::exit_program("ERROR: Missing file: $fulltarfilename", "put_content_into_pool"); } 
+		if (( ! -f $fulltarfilename ) || ( ! ( $size > 0 ))) { installer::exiter::exit_program("ERROR: Missing file: $fulltarfilename", "put_content_into_pool"); }
 		$realdestination = $installer::globals::poolpath . $installer::globals::separator . $tarfilename;
 		$uniquedestination = $realdestination . "." . $installer::globals::sessionid;
 		installer::systemactions::copy_one_file($fulltarfilename, $uniquedestination);
 		unlink $fulltarfilename;
 	}
-	
+
 	# Before the new package is renamed in the pool, it has to be checked, if this process still has the lock for this package.
 	# Check, if lock file still exists and if this process is the owner. Otherwise a pool error occurred.
 	if ( ! -f $installer::globals::poollockfilename )
@@ -952,15 +952,15 @@ sub put_content_into_pool
 		unlink $uniquedestination;  # removing file from pool
 		log_pool_info(0);
 		installer::exiter::exit_program("ERROR: Pool lock file \"$installer::globals::poollockfilename\" was removed by another process (F)!", "put_content_into_pool");
-	} 
+	}
 
 	if ( ! process_is_owner($installer::globals::poollockfilename) )
 	{
 		unlink $uniquedestination;  # removing file from pool
 		log_pool_info(1);
 		installer::exiter::exit_program("ERROR: Pool lock file \"$installer::globals::poollockfilename\" belongs to another process (F)!", "put_content_into_pool");
-	} 
-	
+	}
+
 	# Renaming the file in the pool (atomic step)
 	rename($uniquedestination, $realdestination);
 
@@ -973,14 +973,14 @@ sub put_content_into_pool
 	{
 		log_pool_info(0);
 		installer::exiter::exit_program("ERROR: Pool lock file \"$installer::globals::poollockfilename\" was removed by another process (G)!", "put_content_into_pool");
-	} 
+	}
 
 	if ( ! process_is_owner($installer::globals::poollockfilename) )
 	{
 		log_pool_info(1);
 		installer::exiter::exit_program("ERROR: Pool lock file \"$installer::globals::poollockfilename\" belongs to another process (G)!", "put_content_into_pool");
-	} 
-	
+	}
+
 	# Removing lock file, so that other processes can use this package now
 	unlink $installer::globals::poollockfilename;
 	$installer::globals::processhaspoollockfile = 0;
@@ -997,7 +997,7 @@ sub copy_package_from_pool
 	my ($installdir, $subdir, $packagename) = @_;
 
 	my $infoline = "Pool: Using package \"$packagename\" from pool.\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 	my $sourcefile = $installer::globals::poolpath . $installer::globals::separator . $packagename;
 	if ( $installer::globals::issolarisbuild ) { $sourcefile = $sourcefile . ".tar"; }
 	if ( ! -f $sourcefile ) { installer::exiter::exit_program("ERROR: Missing package in package pool: \"$sourcefile\"", "copy_package_from_pool"); }
@@ -1014,10 +1014,10 @@ sub copy_package_from_pool
 		unlink $destinationfile;
 		$destinationfile =~ s/.tar\s*$//;
 	}
-	
+
 	# Keeping the content of @installer::globals::installsetcontent up to date (with full paths):
 	push(@installer::globals::installsetcontent, $destinationfile);
-	
+
 	return $destinationfile;
 }
 
@@ -1028,7 +1028,7 @@ sub copy_package_from_pool
 sub get_count
 {
 	my ( $hashref ) = @_;
-	
+
 	my $counter = 0;
 	foreach my $onekey ( keys %{$hashref} ) { $counter++; }
 	return $counter;
@@ -1057,7 +1057,7 @@ sub log_pool_statistics
 	foreach my $packagename ( sort keys(%installer::globals::poolpackages) )
 	{
 		$infoline = "\t$packagename\n";
-		$installer::logger::Lang->print($infoline);	
+		$installer::logger::Lang->print($infoline);
 	}
 
 	$installer::logger::Lang->print("\n");

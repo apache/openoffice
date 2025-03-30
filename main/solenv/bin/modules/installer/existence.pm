@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -32,7 +32,7 @@ sub exists_in_array
 	my ($searchstring, $arrayref) = @_;
 
 	my $alreadyexists = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
 	{
 		if ( ${$arrayref}[$i] eq $searchstring)
@@ -41,7 +41,7 @@ sub exists_in_array
 			last;
 		}
 	}
-	
+
 	return $alreadyexists;
 }
 
@@ -54,14 +54,14 @@ sub exists_in_array_of_hashes
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
 	{
 		my $hashref = ${$arrayref}[$i];
-		
+
 		if ( $hashref->{$searchkey} eq $searchvalue )
 		{
 			$valueexists = 1;
 			last;
 		}
 	}
-	
+
 	return $valueexists;
 }
 
@@ -85,7 +85,7 @@ sub get_specified_file
 		if ( $filegid eq $searchgid )
 		{
 			$foundfile = 1;
-			last;	
+			last;
 		}
 	}
 
@@ -97,7 +97,7 @@ sub get_specified_file
 	{
 		installer::exiter::exit_program($errorline, "get_specified_file");
 	}
-		
+
 	return $onefile;
 }
 
@@ -121,7 +121,7 @@ sub get_specified_file_by_name
 		if ( $filename eq $searchname )
 		{
 			$foundfile = 1;
-			last;	
+			last;
 		}
 	}
 
@@ -129,7 +129,7 @@ sub get_specified_file_by_name
 	{
 		installer::exiter::exit_program("ERROR: Could not find file $searchname in list of files!", "get_specified_file_by_name");
 	}
-		
+
 	return $onefile;
 }
 
@@ -151,10 +151,10 @@ sub filename_exists_in_filesarray
 		if ( $filename eq $searchname )
 		{
 			$foundfile = 1;
-			last;	
+			last;
 		}
 	}
-		
+
 	return $foundfile;
 }
 
@@ -176,10 +176,10 @@ sub filegid_exists_in_filesarray
 		if ( $filegid eq $searchgid )
 		{
 			$foundfile = 1;
-			last;	
+			last;
 		}
 	}
-		
+
 	return $foundfile;
 }
 
