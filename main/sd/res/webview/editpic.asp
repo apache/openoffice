@@ -35,11 +35,11 @@
 	nUpper = CInt( (UBound(aPictureArray) - 1 ) / 2)
 %>
 
-<HTML>
-<HEAD>
-</HEAD>
-<BODY>
-    <FORM action="savepic.asp" method=get>
+<html>
+<head>
+</head>
+<body>
+    <form action="savepic.asp" method="get">
         <%
 			if isNumeric(nPic) then
 				if  (CInt( nPic ) >= CInt( (UBound(aPictureArray ) - 1 ) / 2 )) then
@@ -52,27 +52,27 @@
 
             if CInt( nPic ) > 1 then
             %>
-                <INPUT type=submit name="Auswahl" value="-"></INPUT>
+                <input type="submit" name="Auswahl" value="-"></input>
             <%
             else
             %>
-                <INPUT type=button value=" "></INPUT>
+                <input type="button" value=" "></input>
             <%
             end if
             %>
-            <INPUT type=text name="CurrPic" value="<% = nPic %>" SIZE=3></INPUT>
+            <input type="text" name="CurrPic" value="<% = nPic %>" size="3"></input>
             <%
             if CInt( nPic ) < CInt( nUpper ) then
             %>
-                <INPUT type=submit name="Auswahl" value="+"></INPUT>
+                <input type="submit" name="Auswahl" value="+"></input>
             <%
             else
             %>
-                <INPUT type=button value=" "></INPUT>
+                <input type="button" value=" "></input>
             <%
             end if
         %>
-        <INPUT type=submit name="Auswahl" value="$$2"></INPUT>
-    </FORM>
-</BODY>
-</HTML>
+        <input type="submit" name="Auswahl" value="$$2"></input>
+    </form>
+</body>
+</html>
