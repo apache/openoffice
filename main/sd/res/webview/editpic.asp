@@ -36,43 +36,42 @@
 %>
 
 <html>
-<head>
-</head>
-<body>
-    <form action="savepic.asp" method="get">
-        <%
-			if isNumeric(nPic) then
-				if  (CInt( nPic ) >= CInt( (UBound(aPictureArray ) - 1 ) / 2 )) then
-					nPic = nUpper
-				end if
-			else
-				nPic = nUpper
-			end if
+    <head></head>
+    <body>
+        <form action="savepic.asp" method="get">
+            <%
+                if isNumeric(nPic) then
+                    if  (CInt( nPic ) >= CInt( (UBound(aPictureArray ) - 1 ) / 2 )) then
+                        nPic = nUpper
+                    end if
+                else
+                    nPic = nUpper
+                end if
 
 
-            if CInt( nPic ) > 1 then
+                if CInt( nPic ) > 1 then
+                %>
+                    <input type="submit" name="Auswahl" value="-"></input>
+                <%
+                else
+                %>
+                    <input type="button" value=" "></input>
+                <%
+                end if
+                %>
+                <input type="text" name="CurrPic" value="<% = nPic %>" size="3"></input>
+                <%
+                if CInt( nPic ) < CInt( nUpper ) then
+                %>
+                    <input type="submit" name="Auswahl" value="+"></input>
+                <%
+                else
+                %>
+                    <input type="button" value=" "></input>
+                <%
+                end if
             %>
-                <input type="submit" name="Auswahl" value="-"></input>
-            <%
-            else
-            %>
-                <input type="button" value=" "></input>
-            <%
-            end if
-            %>
-            <input type="text" name="CurrPic" value="<% = nPic %>" size="3"></input>
-            <%
-            if CInt( nPic ) < CInt( nUpper ) then
-            %>
-                <input type="submit" name="Auswahl" value="+"></input>
-            <%
-            else
-            %>
-                <input type="button" value=" "></input>
-            <%
-            end if
-        %>
-        <input type="submit" name="Auswahl" value="$$2"></input>
-    </form>
-</body>
+            <input type="submit" name="Auswahl" value="$$2"></input>
+        </form>
+    </body>
 </html>
