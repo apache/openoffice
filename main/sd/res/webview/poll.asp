@@ -25,11 +25,10 @@
 
 <!-- #include file = "common.inc" -->
 
-<HTML>
-
-<HEAD>
-    <META http-equiv="refresh" CONTENT="<% = cnRefreshTime %>">
-</HEAD>
+<html>
+    <head>
+        <meta http-equiv="refresh" CONTENT="<% = cnRefreshTime %>">
+    </head>
 
 <%
     ' get current picture id
@@ -42,15 +41,14 @@
         ' then store the id of the new picture and show it
         Session( "GIFID" ) = nGIFID
     %>
-        <BODY bgcolor="red" onLoad="parent.frame1.location.href='./show.asp?<%= nGIFID %>'">
+        <body bgcolor="red" onLoad="parent.frame1.location.href='./show.asp?<%= nGIFID %>'">
     <%
     else
     %>
-        <BODY bgcolor="green">
+        <body bgcolor="green">
     <%
     end if
 %>
 
-</BODY>
-
-</HTML>
+    </body>
+</html>
