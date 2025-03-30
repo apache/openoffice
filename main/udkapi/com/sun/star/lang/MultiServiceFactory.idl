@@ -43,12 +43,12 @@ module com {  module sun {  module star {  module lang {
  
 /** Provides a collection of implementations of services.
 	
-	<p>The factories for instantiating objects of implemetations 
+	<p>The factories for instantiating objects of implementations
 	are accessed via a service name.</p>
     
 	<p>The <type scope="com::sun::star::container">XContentEnumerationAccess</type>
 	interface can be supported optionally.
-    If it is suported, it is possible to  enumerate all implementations that
+    If it is supported, it is possible to  enumerate all implementations that
     support the service specified with the argument of
     <member scope="com::sun::star::container">XContentEnumerationAccess::createContentEnumeration</member>.
 	The enumerator returns interfaces. The type of the interface is not specified.

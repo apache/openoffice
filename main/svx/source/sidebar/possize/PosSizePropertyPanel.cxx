@@ -795,7 +795,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
     // #124409# do not change; GetModuleFieldUnit uses SfxModule::GetCurrentFieldUnit()
     // which uses GetActiveModule() and if no items are set there (which is the case e.g.
     // for writer), will just return the system fallback of FUNIT_INCH which is wrong.
-    // Anyways, with multiple open views the static call GetActiveModule is ambigious
+    // Anyways, with multiple open views the static call GetActiveModule is ambiguous
     //
     // meDlgUnit = GetModuleFieldUnit();
 

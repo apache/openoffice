@@ -134,7 +134,7 @@ int SAL_CALL main( int argc, char **argv )
 		tarNode = xmlSecFindNode( xmlDocGetRootElement( doc ), ( xmlChar* )"document", NULL ) ;
 	}
 										
-	//Find the "id" attrbute in the element
+	//Find the "id" attribute in the element
 	if( tarNode != NULL ) {
 		if( ( idAttr = xmlHasProp( tarNode, ( xmlChar* )"id" ) ) != NULL ) {
 			//NULL
@@ -167,14 +167,14 @@ int SAL_CALL main( int argc, char **argv )
 		goto done ;
 	}
 
-	//Find the "URI" attrbute in the reference
+	//Find the "URI" attribute in the reference
 	uriAttr = xmlHasProp( tarNode, ( xmlChar* )"URI" ) ;
 	if( tarNode == NULL ) {
 		fprintf( stderr , "### Cannot find URI of the reference!\n" ) ;
 		goto done ;
 	}
 
-	//Get the "URI" attrbute value
+	//Get the "URI" attribute value
 	uriValue = xmlNodeListGetString( tarNode->doc, uriAttr->children, 1 ) ;
 	if( uriValue == NULL ) {
 		fprintf( stderr , "### the URI value is NULL!\n" ) ;
