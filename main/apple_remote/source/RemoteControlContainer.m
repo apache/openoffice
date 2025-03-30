@@ -2,13 +2,13 @@
  * RemoteControlContainer.m
  * RemoteControlWrapper
  *
- * Created by Martin Kahr on 11.03.06 under a MIT-style license. 
+ * Created by Martin Kahr on 11.03.06 under a MIT-style license.
  * Copyright (c) 2006 martinkahr.com. All rights reserved.
  *
- * Code modified and adapted to OpenOffice.org 
+ * Code modified and adapted to OpenOffice.org
  * by Eric Bachard on 11.08.2008 under the same License
  *
- * Permission is hereby granted, free of charge, to any person obtaining a 
+ * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
  * to deal in the Software without restriction, including without limitation
  * the rights to use, copy, modify, merge, publish, distribute, sublicense,
@@ -20,7 +20,7 @@
  *
  * THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
  * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
@@ -58,12 +58,12 @@
     if (remoteControl) {
         [remoteControls addObject: remoteControl];
         [remoteControl addObserver: self forKeyPath:@"listeningToRemote" options:NSKeyValueObservingOptionNew context:nil];
-        toReturn = YES;		
+        toReturn = YES;
     }
 #ifdef DEBUG
     else {
         NSLog( @"Apple Remote: ControlContainer instantiateAndAddRemoteControlDeviceWithClass failed");
-        toReturn = NO;	
+        toReturn = NO;
     }
 #endif
     return toReturn;
@@ -110,7 +110,7 @@
 	int i;
 	for(i=0; i < [remoteControls count]; i++) {
 		[[remoteControls objectAtIndex: i] startListening: sender];
-	}	
+	}
 }
 - (void) stopListening: (id) sender {
 #ifdef DEBUG
@@ -119,7 +119,7 @@
 	int i;
 	for(i=0; i < [remoteControls count]; i++) {
 		[[remoteControls objectAtIndex: i] stopListening: sender];
-	}	
+	}
 }
 
 - (BOOL) isOpenInExclusiveMode {
@@ -128,13 +128,13 @@
 	for(i=0; i < [remoteControls count]; i++) {
 		mode = mode && ([[remoteControls objectAtIndex: i] isOpenInExclusiveMode]);
 	}
-	return mode;	
+	return mode;
 }
 - (void) setOpenInExclusiveMode: (BOOL) value {
 	int i;
 	for(i=0; i < [remoteControls count]; i++) {
 		[[remoteControls objectAtIndex: i] setOpenInExclusiveMode:value];
-	}	
+	}
 }
 
 @end
