@@ -46,4 +46,3 @@ Note that building OpenOffice can take several hours.
 
 The default build will produce a setup version (e.g. setup program on Windows, dmg on macOS, rpm and deb packages on Linux) and an archived version.\
 The output can be found in the <output> directory in instsetoo_native/<output_dir>/Apache_OpenOffice/...
-
