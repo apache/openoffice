@@ -149,13 +149,13 @@ static bool enabled = false;
         [ nativeRole release ];
         [ aWrapper setActsAsRadioGroup: asRadioGroup ];
         #if 0
-        /* #i102033# NSAccessibility does not seemt to know an equivalent for transient children.
+        /* #i102033# NSAccessibility does not seem to know an equivalent for transient children.
            That means we need to cache this, else e.g. tree list boxes are not accessible (moreover
-           it crashes by notifying dead objects - which would seemt o be another bug)
+           it crashes by notifying dead objects - which would seemt to be another bug)
 
            FIXME:
            Unfortunately this can increase memory consumption drastically until the non transient parent
-           is destroyed an finally all the transients are released.
+           is destroyed and finally all the transients are released.
         */
         if ( ! rxAccessibleContext -> getAccessibleStateSet() -> contains ( AccessibleStateType::TRANSIENT ) )
         #endif
