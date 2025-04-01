@@ -187,7 +187,7 @@ clean-binPROGRAMS:
 	  echo " rm -f $$p $$f"; \
 	  rm -f $$p $$f ; \
 	done
-create_sRGB_profile$(EXEEXT): $(create_sRGB_profile_OBJECTS) $(create_sRGB_profile_DEPENDENCIES) 
+create_sRGB_profile$(EXEEXT): $(create_sRGB_profile_OBJECTS) $(create_sRGB_profile_DEPENDENCIES)
 	@rm -f create_sRGB_profile$(EXEEXT)
 	$(CXXLINK) $(create_sRGB_profile_LDFLAGS) $(create_sRGB_profile_OBJECTS) $(create_sRGB_profile_LDADD) $(LIBS)
 
