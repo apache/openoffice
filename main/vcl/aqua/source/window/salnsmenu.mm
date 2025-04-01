@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 #include "aqua/salnsmenu.h"
 
 #include "vcl/window.hxx"
- 
+
 @implementation SalNSMenu
 -(id)initWithMenu: (AquaSalMenu*)pMenu
 {
@@ -43,7 +43,7 @@
 {
     (void)pMenu;
     YIELD_GUARD;
-    
+
     if( mpMenu )
     {
         const AquaSalFrame* pFrame = mpMenu->getFrame();
@@ -83,7 +83,7 @@
 {
     (void)aSender;
     YIELD_GUARD;
-    
+
     const AquaSalFrame* pFrame = mpMenuItem->mpParentMenu ? mpMenuItem->mpParentMenu->getFrame() : NULL;
     if( pFrame && AquaSalFrame::isAlive( pFrame ) && ! pFrame->GetWindow()->IsInModalMode() )
     {
@@ -99,13 +99,13 @@
         if( pPopupMenu )
         {
             // FIXME: revise this ugly code
-            
+
             // select handlers in vcl are dispatch on the original menu
             // if not consumed by the select handler of the current menu
             // however since only the starting menu ever came into Execute
             // the hierarchy is not build up. Workaround this by getting
             // the menu it should have been
-            
+
             // get started from hierarchy in vcl menus
             AquaSalMenu* pParentMenu = mpMenuItem->mpParentMenu;
             Menu* pCurMenu = mpMenuItem->mpVCLMenu;
@@ -114,7 +114,7 @@
                 pCurMenu = pParentMenu->mpVCLMenu;
                 pParentMenu = pParentMenu->mpParentSalMenu;
             }
-            
+
             pPopupMenu->SetSelectedEntry( mpMenuItem->mnId );
             pPopupMenu->ImplSelectWithStart( pCurMenu );
         }
@@ -174,7 +174,7 @@
                 }
                 return;
             }
-            
+
             aImgRect.origin.x += aFromRect.size.width + 2;
         }
     }
@@ -205,5 +205,3 @@
     [self setFrameSize: aSize];
 }
 @end
-
-

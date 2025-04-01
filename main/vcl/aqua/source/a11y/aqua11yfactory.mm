@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@
 using namespace ::com::sun::star::accessibility;
 using namespace ::com::sun::star::uno;
 
-static bool enabled = false; 
+static bool enabled = false;
 
 @implementation AquaA11yFactory : NSObject
 
@@ -66,7 +66,7 @@ static bool enabled = false;
         // initialize keyboard focus tracker
         rtl::Reference< AquaA11yFocusListener > listener( AquaA11yFocusListener::get() );
         AquaA11yFocusTracker::get().setFocusListener(listener.get());
-        enabled = true;      
+        enabled = true;
     }
     return mdAllWrapper;
 }
@@ -149,13 +149,13 @@ static bool enabled = false;
         [ nativeRole release ];
         [ aWrapper setActsAsRadioGroup: asRadioGroup ];
         #if 0
-        /* #i102033# NSAccessibility does not seemt to know an equivalent for transient children.
+        /* #i102033# NSAccessibility does not seem to know an equivalent for transient children.
            That means we need to cache this, else e.g. tree list boxes are not accessible (moreover
-           it crashes by notifying dead objects - which would seemt o be another bug)
-           
+           it crashes by notifying dead objects - which would seemt to be another bug)
+
            FIXME:
            Unfortunately this can increase memory consumption drastically until the non transient parent
-           is destroyed an finally all the transients are released.
+           is destroyed and finally all the transients are released.
         */
         if ( ! rxAccessibleContext -> getAccessibleStateSet() -> contains ( AccessibleStateType::TRANSIENT ) )
         #endif

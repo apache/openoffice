@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,7 +105,7 @@ static sal_uInt16 ImplMapCharCode( sal_Unicode aCode )
     if( aCode < sizeof( aKeyCodeMap) / sizeof( aKeyCodeMap[0] ) )
         nKeyCode = aKeyCodeMap[ aCode ];
     else if( aCode >= 0xf700 && aCode < 0xf780 )
-        nKeyCode = aFunctionKeyCodeMap[ aCode - 0xf700 ]; 
+        nKeyCode = aFunctionKeyCodeMap[ aCode - 0xf700 ];
     return nKeyCode;
 }
 
@@ -204,7 +204,7 @@ static AquaSalFrame* getMouseContainerFrame()
 
 -(BOOL)canBecomeKeyWindow
 {
-    if( (mpFrame->mnStyle & 
+    if( (mpFrame->mnStyle &
             ( SAL_FRAME_STYLE_FLOAT                 |
               SAL_FRAME_STYLE_TOOLTIP               |
               SAL_FRAME_STYLE_INTRO
@@ -569,7 +569,7 @@ private:
                However if a non SalFrameWindow is on screen (like e.g. the file dialog)
                it can be hit with the containsMouse selector, which it doesn't support.
                Sadly NSApplication:makeWindowsPerform does not check (for performance reasons
-               I assume) whether a window supports a selector before sending it. 
+               I assume) whether a window supports a selector before sending it.
             */
             AquaSalFrame* pMouseFrame = getMouseContainerFrame();
             if( pMouseFrame )
@@ -610,7 +610,7 @@ private:
 
 -(void)mouseDown: (NSEvent*)pEvent
 {
-    if ( mpMouseEventListener != nil && 
+    if ( mpMouseEventListener != nil &&
 	    [mpMouseEventListener respondsToSelector: @selector(mouseDown:)])
 	{
 	    [mpMouseEventListener mouseDown: [pEvent copyWithZone: NULL]];
@@ -622,7 +622,7 @@ private:
 
 -(void)mouseDragged: (NSEvent*)pEvent
 {
-    if ( mpMouseEventListener != nil && 
+    if ( mpMouseEventListener != nil &&
 	     [mpMouseEventListener respondsToSelector: @selector(mouseDragged:)])
 	{
 	    [mpMouseEventListener mouseDragged: [pEvent copyWithZone: NULL]];
@@ -939,7 +939,7 @@ private:
 -(BOOL)handleKeyDownException:(NSEvent*)pEvent
 {
     // check for a very special set of modified characters
-    NSString* pUnmodifiedString = [pEvent charactersIgnoringModifiers]; 
+    NSString* pUnmodifiedString = [pEvent charactersIgnoringModifiers];
 
     if( pUnmodifiedString && [pUnmodifiedString length] == 1 )
     {
@@ -1020,7 +1020,7 @@ private:
                 if( mpLastEvent && ( [mpLastEvent type] == NSKeyDown || [mpLastEvent type] == NSKeyUp ) )
                 {
                     // get unmodified string
-                    NSString* pUnmodifiedString = [mpLastEvent charactersIgnoringModifiers]; 
+                    NSString* pUnmodifiedString = [mpLastEvent charactersIgnoringModifiers];
                     if( pUnmodifiedString && [pUnmodifiedString length] == 1 )
                     {
                         // map the unmodified key code
@@ -1480,7 +1480,7 @@ private:
 
 -(BOOL)sendSingleCharacter: (NSEvent *)pEvent
 {
-    NSString* pUnmodifiedString = [pEvent charactersIgnoringModifiers]; 
+    NSString* pUnmodifiedString = [pEvent charactersIgnoringModifiers];
 
     if( pUnmodifiedString && [pUnmodifiedString length] == 1 )
     {
@@ -1639,7 +1639,7 @@ private:
 /* build target 10.5 or greater */
 - (NSInteger)conversationIdentifier
 #else
-/* build target 10.4 */ 
+/* build target 10.4 */
 - (long)conversationIdentifier
 #endif
 {
@@ -1698,7 +1698,7 @@ private:
     if ( mpReferenceWrapper == nil ) {
         // some frames never become visible ..
         Window *pWindow = mpFrame -> GetWindow();
-        if ( ! pWindow ) 
+        if ( ! pWindow )
             return nil;
 
         mpReferenceWrapper = new ReferenceWrapper;
@@ -1766,4 +1766,3 @@ private:
 }
 
 @end
-
