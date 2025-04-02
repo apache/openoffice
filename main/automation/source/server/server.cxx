@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_automation.hxx"
@@ -108,7 +106,7 @@ RemoteControlCommunicationManager::RemoteControlCommunicationManager()
 	else
 	{
 		SetInfoType( CM_SHORT_TEXT | CM_ALL );
-        ByteString aByteString;
+		ByteString aByteString;
 		InfoMsg( InfoString( aByteString, CM_ALL ) );	// Anzeigen, daß wir da sind
 	}
 }
@@ -117,7 +115,7 @@ RemoteControlCommunicationManager::~RemoteControlCommunicationManager()
 {
 	if ( pTimer )
 		delete pTimer;
-    DoQuickShutdown();
+	DoQuickShutdown();
 }
 
 void RemoteControlCommunicationManager::ConnectionOpened( CommunicationLink* pCL )
@@ -150,7 +148,7 @@ IMPL_LINK( RemoteControlCommunicationManager, SetWinCaption, Timer*, EMPTYARG )
 	}
 	else
 	{	// Dann Probieren wir es eben in 1 Sekunde nochmal
-		pTimer = new Timer();	// Wird im Link gelöscht
+		pTimer = new Timer(); // Wird im Link gelöscht
 		pTimer->SetTimeout( 1000 );
 		pTimer->SetTimeoutHdl( LINK( this, RemoteControlCommunicationManager, SetWinCaption ) );
 		pTimer->Start();
@@ -186,13 +184,13 @@ sal_uLong RemoteControlCommunicationManager::GetPort()
                 bAutomate = sal_True;
                 break;
             }
-        }
+		}
 	// Get port from command line
-	if (bAutomate) 
+	if (bAutomate)
 	{
 		for ( i = 0 ; i < Application::GetCommandLineParamCount() ; i++ )
 		{
-			if ( Application::GetCommandLineParam( i ).Copy(0,16).EqualsIgnoreCaseAscii("/automationport=") 
+			if ( Application::GetCommandLineParam( i ).Copy(0,16).EqualsIgnoreCaseAscii("/automationport=")
 				|| Application::GetCommandLineParam( i ).Copy(0,16).EqualsIgnoreCaseAscii("-automationport="))
 			{
                 		nPortIs = Application::GetCommandLineParam( i ).Copy(16).ToInt32();
@@ -239,7 +237,7 @@ sal_uLong RemoteControlCommunicationManager::GetPort()
 
 		nPortIs = aConf.ReadKey("TTPort","0").ToInt32();
 
-        // noch prüfen ob dieses Office getestet werden soll.
+		// noch prüfen ob dieses Office getestet werden soll.
 		if ( !bAutomate || aConf.ReadKey( aNoTesttoolKey, "" ) != "" )
 			nPortIs = 0;
 
@@ -312,11 +310,11 @@ void ExtraIdle::Timeout()
 #endif
 		}
 #if OSL_DEBUG_LEVEL > 1
-        if ( nStep < 15 )
-        {
+		if ( nStep < 15 )
+		{
 			Sound::Beep();
 			Sound::Beep();
-        }
+		}
 #endif
 		return;
 	}
@@ -585,7 +583,7 @@ void ExtraIdle::Timeout()
 		}
 		case 7:
 		{
-			new StatementSlot( 20384 );	// FN_TOOL_ANKER_CHAR aus SW?
+			new StatementSlot( 20384 );	// FN_TOOL_ANCHOR_CHAR from SW?
 			return;
 		}
 	}
@@ -745,15 +743,15 @@ IMPL_LINK( ImplRemoteControl, QueCommandsEvent, CommunicationLink*, pCL )
 
 sal_Bool ImplRemoteControl::QueCommands( sal_uLong nServiceId, SvStream *pIn )
 {
-//    return sal_True;
+//	return sal_True;
 	sal_uInt16 nId;
 
 	if( !m_bIdleInserted )
 	{
 #ifdef TIMERIDLE
-        m_aIdleTimer.SetTimeoutHdl( LINK( this, ImplRemoteControl, IdleHdl ) );
-        m_aIdleTimer.SetTimeout( 500 );
-        m_aIdleTimer.Start();
+		m_aIdleTimer.SetTimeoutHdl( LINK( this, ImplRemoteControl, IdleHdl ) );
+		m_aIdleTimer.SetTimeout( 500 );
+		m_aIdleTimer.Start();
 #else
 		GetpApp()->InsertIdleHdl( LINK( this, ImplRemoteControl, IdleHdl ), 1 );
 #endif
@@ -786,28 +784,28 @@ sal_Bool ImplRemoteControl::QueCommands( sal_uLong nServiceId, SvStream *pIn )
 		{
 			case SICommand:
 			{
-				new StatementCommand( pCmdStream );     // Wird im Konstruktor an Liste angehängt
+				new StatementCommand( pCmdStream ); // Wird im Konstruktor an Liste angehängt
 				break;
 			}
 			case SIControl:
 			case SIStringControl:
 			{
-				new StatementControl( pCmdStream, nId );     // Wird im Konstruktor an Liste angehängt
+				new StatementControl( pCmdStream, nId ); // Wird im Konstruktor an Liste angehängt
 				break;
 			}
 			case SISlot:
 			{
-				new StatementSlot( pCmdStream );    // Wird im Konstruktor an Liste angehängt
+				new StatementSlot( pCmdStream ); // Wird im Konstruktor an Liste angehängt
 				break;
 			}
 			case SIUnoSlot:
 			{
-				new StatementUnoSlot( pCmdStream );    // Wird im Konstruktor an Liste angehängt
+				new StatementUnoSlot( pCmdStream ); // Wird im Konstruktor an Liste angehängt
 				break;
 			}
 			case SIFlow:
 			{
-				new StatementFlow( nServiceId, pCmdStream, this );              // Wird im Konstruktor an Liste angehängt
+				new StatementFlow( nServiceId, pCmdStream, this ); // Wird im Konstruktor an Liste angehängt
 				break;
 			}
 			default:
@@ -818,7 +816,7 @@ sal_Bool ImplRemoteControl::QueCommands( sal_uLong nServiceId, SvStream *pIn )
 			pCmdStream->Read( nId );
 		else {
 			DBG_ERROR( "truncated input stream" );
-        }
+		}
 	}
 
 	StatementList::bReadingCommands = sal_False;
@@ -829,17 +827,17 @@ sal_Bool ImplRemoteControl::QueCommands( sal_uLong nServiceId, SvStream *pIn )
 	m_pDbgWin->AddText( String::CreateFromInt64( nServiceId ) );
 	m_pDbgWin->AddText( " :\n" );
 #endif
-    if ( !m_bInsideExecutionLoop )
-    {
+	if ( !m_bInsideExecutionLoop )
+	{
 #ifdef DEBUG
-        m_pDbgWin->AddText( "Posting Event for CommandHdl.\n" );
+		m_pDbgWin->AddText( "Posting Event for CommandHdl.\n" );
 #endif
 
-        GetpApp()->PostUserEvent( LINK( this, ImplRemoteControl, CommandHdl ) );
-    }
+		GetpApp()->PostUserEvent( LINK( this, ImplRemoteControl, CommandHdl ) );
+	}
 #ifdef DEBUG
-    else
-        m_bInsideExecutionLoop = sal_True;
+	else
+		m_bInsideExecutionLoop = sal_True;
 #endif
 	return sal_True;
 } // sal_Bool ImplRemoteControl::QueCommands( sal_uLong nServiceId, SvStream *pIn )
@@ -867,7 +865,7 @@ ImplRemoteControl::ImplRemoteControl()
 		m_pDbgWin->bQuiet = sal_True;
 		m_pDbgWin->Hide();
 		m_pDbgWin->bQuiet = sal_False;
-        m_pDbgWin->Show();
+		m_pDbgWin->Show();
 
 		StatementList::m_pDbgWin = m_pDbgWin;
 	}
@@ -898,11 +896,11 @@ ImplRemoteControl::ImplRemoteControl()
 
 ImplRemoteControl::~ImplRemoteControl()
 {
-    if ( MacroRecorder::HasMacroRecorder() )
-        MacroRecorder::GetMacroRecorder()->SetActionRecord( sal_False );   // Will delete MacroRecorder if necessary
+	if ( MacroRecorder::HasMacroRecorder() )
+		MacroRecorder::GetMacroRecorder()->SetActionRecord( sal_False ); // Will delete MacroRecorder if necessary
 
-    
-    StatementList::bDying = sal_True;
+
+	StatementList::bDying = sal_True;
 #if OSL_DEBUG_LEVEL > 1
 	if ( m_pDbgWin )
 		m_pDbgWin->bQuiet = sal_True;	// Keine Ausgabe mehr im Debugwindow
@@ -911,7 +909,7 @@ ImplRemoteControl::~ImplRemoteControl()
 #ifdef DBG_UTIL
 	// Zurücksetzen, so daß nachfolgende Assertions nicht verloren gehen
 	DbgSetPrintTestTool( NULL );
-    osl_setDebugMessageFunc( StatementCommand::pOriginal_osl_DebugMessageFunc );
+	osl_setDebugMessageFunc( StatementCommand::pOriginal_osl_DebugMessageFunc );
 #endif
 
 	if ( StatementList::pFirst )
@@ -924,23 +922,23 @@ ImplRemoteControl::~ImplRemoteControl()
 	if ( pServiceMgr )
 		pServiceMgr->StopCommunication();
 
-    if ( GetTTSettings()->pDisplayHidWin )
-    {
-        delete (Window*)(GetTTSettings()->pDisplayHidWin);
-        GetTTSettings()->pDisplayHidWin = NULL;
-    }
-    if ( GetTTSettings()->pTranslateWin )
-    {
-        delete (Window*)(GetTTSettings()->pTranslateWin);
-        GetTTSettings()->pTranslateWin = NULL;
-    }
+	if ( GetTTSettings()->pDisplayHidWin )
+	{
+		delete (Window*)(GetTTSettings()->pDisplayHidWin);
+		GetTTSettings()->pDisplayHidWin = NULL;
+	}
+	if ( GetTTSettings()->pTranslateWin )
+	{
+		delete (Window*)(GetTTSettings()->pTranslateWin);
+		GetTTSettings()->pTranslateWin = NULL;
+	}
 #if OSL_DEBUG_LEVEL > 1
 	delete m_pDbgWin;
 #endif
 	if( m_bIdleInserted )
 	{
 #ifdef TIMERIDLE
-        m_aIdleTimer.Stop();
+		m_aIdleTimer.Stop();
 #else
 		GetpApp()->RemoveIdleHdl( LINK( this, ImplRemoteControl, IdleHdl ) );
 #endif
@@ -980,10 +978,12 @@ extern "C" AUTOMATION_DLLPUBLIC void DestroyRemoteControl()
 
 extern "C" AUTOMATION_DLLPUBLIC void CreateEventLogger()
 {
-    MacroRecorder::GetMacroRecorder()->SetActionLog();
+	MacroRecorder::GetMacroRecorder()->SetActionLog();
 }
 
 extern "C" AUTOMATION_DLLPUBLIC void DestroyEventLogger()
 {
-    MacroRecorder::GetMacroRecorder()->SetActionLog( sal_False );   // Will delete MacroRecorder if necessary
+	MacroRecorder::GetMacroRecorder()->SetActionLog( sal_False ); // Will delete MacroRecorder if necessary
 }
+
+/* vim: set noet sw=4 ts=4: */
