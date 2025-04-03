@@ -284,7 +284,7 @@ SvxFontWorkDialog::SvxFontWorkDialog( SfxBindings *pBindinx,
 	aShadowColorLB.SetSelectHdl( LINK(this, SvxFontWorkDialog, ColorSelectHdl_Impl) );
 
 	aInputTimer.SetTimeout(500);
-	aInputTimer.SetTimeoutHdl(LINK(this, SvxFontWorkDialog, InputTimoutHdl_Impl));
+	aInputTimer.SetTimeoutHdl(LINK(this, SvxFontWorkDialog, InputTimeoutHdl_Impl));
 }
 
 /*************************************************************************
@@ -794,7 +794,7 @@ IMPL_LINK_INLINE_END( SvxFontWorkDialog, ModifyInputHdl_Impl, void *, EMPTYARG )
 |*
 \************************************************************************/
 
-IMPL_LINK( SvxFontWorkDialog, InputTimoutHdl_Impl, void *, EMPTYARG )
+IMPL_LINK( SvxFontWorkDialog, InputTimeoutHdl_Impl, void *, EMPTYARG )
 {
 	// System-Metrik evtl. neu setzen
 	// Dieses sollte mal als Listener passieren, ist aber aus

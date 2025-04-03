@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _VOS_PROCESS_HXX_
 #define _VOS_PROCESS_HXX_
@@ -117,7 +115,7 @@ public:
     enum TProcessError {
         E_None         = osl_Process_E_None,            /* no error */
         E_NotFound     = osl_Process_E_NotFound,        /* image not found */
-        E_TimedOut     = osl_Process_E_TimedOut,        /* timout occurred */
+        E_TimedOut     = osl_Process_E_TimedOut,        /* timeout occurred */
         E_NoPermission = osl_Process_E_NoPermission,    /* permission denied */
         E_Unknown      = osl_Process_E_Unknown,         /* unknown error */
         E_InvalidError = osl_Process_E_InvalidError     /* unmapped error */
@@ -202,7 +200,7 @@ public:
 
     static TProcessError SAL_CALL getCurrentInfo(TProcessData Data, TProcessInfo* pInfo);
 
-    /** wait for the completation of this child process
+    /** wait for the completion of this child process
         @return eNONE if child process exits, otherwise nothing.
     */
     TProcessError SAL_CALL join();
@@ -214,7 +212,7 @@ protected:
     oslProcess         m_Process;
 };
 
-/** informations for client processes provided by the parent.
+/** information for client processes provided by the parent.
     @see OProcess
 */
 
@@ -229,7 +227,7 @@ public:
     enum TStartupError {
         E_None         = osl_Process_E_None,            /* no error */
         E_NotFound     = osl_Process_E_NotFound,        /* image not found */
-        E_TimedOut     = osl_Process_E_TimedOut,        /* timout occurred */
+        E_TimedOut     = osl_Process_E_TimedOut,        /* timeout occurred */
         E_NoPermission = osl_Process_E_NoPermission,    /* permission denied */
         E_Unknown      = osl_Process_E_Unknown,         /* unknown error */
         E_InvalidError = osl_Process_E_InvalidError     /* unmapped error */
@@ -312,3 +310,5 @@ public:
 }
 
 #endif  // _VOS_PROCESS_HXX_
+
+/* vim: set noet sw=4 ts=4: */
