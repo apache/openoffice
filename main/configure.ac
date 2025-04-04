@@ -2768,7 +2768,7 @@ AC_MSG_CHECKING([whether we are allowed and able to use --ccache-skip])
 if test "$_os" != "Darwin" ; then
    AC_MSG_RESULT([only used on Mac currently, skipping])
 elif test "$enable_ccache_skip" = "no" ; then
-   AC_MSG_RESULT([no - diabled explicitly])
+   AC_MSG_RESULT([no - disabled explicitly])
 elif test "$enable_ccache_skip" = "yes" ; then
    AC_MSG_RESULT([yes - enabled explicitly, skipping checks])
    AC_SUBST([USE_CCACHE], [YES])

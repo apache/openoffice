@@ -73,7 +73,7 @@ namespace framework
 // ------------------------------------------------------------------
 
 // Wrapper class to notify controller about events from ListBox.
-// Unfortunaltly the events are notifed through virtual methods instead
+// Unfortunately the events are notified through virtual methods instead
 // of Listeners.
 
 class ListBoxControl : public ListBox

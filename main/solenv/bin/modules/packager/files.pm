@@ -69,7 +69,7 @@ sub save_file
 }
 
 ######################################################
-# Creating a new direcotory
+# Creating a new directory
 ######################################################
 
 sub create_directory

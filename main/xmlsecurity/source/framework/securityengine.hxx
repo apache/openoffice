@@ -62,7 +62,7 @@ protected:
 		com::sun::star::lang::XMultiServiceFactory > mxMSF;
 
 	/*
-	 * A SAXEventKeeper internally maintians all resources that a security
+	 * A SAXEventKeeper internally maintains all resources that a security
 	 * operation needs. The m_xSAXEventKeeper member is used to release 
 	 * those resources when the security operation finishes.
 	 */

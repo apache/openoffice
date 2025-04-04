@@ -64,7 +64,7 @@ SunVersion::SunVersion(const char * szVer):
 }
 
 
-/**Format major.minor.maintainance_update
+/**Format major.minor.maintenance_update
  */
 bool SunVersion::init(const char *szVersion)
 {
@@ -95,10 +95,10 @@ bool SunVersion::init(const char *szVersion)
         else if (
             ! (nPartPos == 0) // prevents: ".4.1", "..1", part must start with digit
             && (
-                //seperators after maintenance (1.4.1_01, 1.4.1-beta, or1.4.1
+                //separators after maintenance (1.4.1_01, 1.4.1-beta, or1.4.1
                 ((pCur == pEnd || *pCur == '_' || *pCur == '-') && (nPart == 2 ))
                 ||
-                //separators between major-minor and minor-maintainance
+                //separators between major-minor and minor-maintenance
                 (nPart < 2 && *pCur == '.') )
             && (
                 //prevent 1.4.0. 1.4.0-
@@ -217,7 +217,7 @@ SunVersion::PreRelease SunVersion::getPreRelease(const char *szRelease)
     if (szRelease == NULL)
         return Rel_NONE;
 #ifdef OS2
-	// all prerelases codes are threated the same way (-ga1, -ga2, ...)
+	// all prerelases codes are treated the same way (-ga1, -ga2, ...)
         return Rel_OS2;
 #endif
     if( ! strcmp(szRelease,"ea"))
@@ -282,7 +282,7 @@ bool SunVersion::operator > (const SunVersion& ver) const
             return false;
         }
     }
-    //major.minor.maintainance_update are equal. test for a trailing char
+    //major.minor.maintenance_update are equal. test for a trailing char
     if (m_nUpdateSpecial > ver.m_nUpdateSpecial)
     {   
         return true;

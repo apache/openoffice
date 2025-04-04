@@ -115,7 +115,7 @@ namespace svx
         PropertyChangeNotifier( ::cppu::OWeakObject& _rOwner, ::osl::Mutex& _rMutex );
         ~PropertyChangeNotifier();
 
-        // listener maintanance
+        // listener maintenance
         void addPropertyChangeListener( const ::rtl::OUString& _rPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& _rxListener );
         void removePropertyChangeListener( const ::rtl::OUString& _rPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& _rxListener );
 

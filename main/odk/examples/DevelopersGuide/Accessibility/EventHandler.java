@@ -124,7 +124,7 @@ public class EventHandler
 
 
     /** Print a message that the given object just received the focus.  Call
-        all accessible object diplays and tell them to update.
+        all accessible object displays and tell them to update.
     */
 	private synchronized void focusGained (XAccessibleContext xContext)
     {
@@ -154,7 +154,7 @@ public class EventHandler
 
  
     /** Print a message that the given object just lost the focus.  Call
-        all accessible object diplays and tell them to update.
+        all accessible object displays and tell them to update.
     */
 	private synchronized void focusLost (XAccessibleContext xContext)
     {
