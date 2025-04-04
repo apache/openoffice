@@ -53,9 +53,9 @@ sub usage
 {
     print STDERR "\n$0 - append *.xcu file entries to .oxt manifest.xml\n\n";
     print STDERR "usage: $0 <static_part> <start dir> <search dir> <destination dir>\n\n";
-    print STDERR "  static part - file containig all other content for mainfest.xml\n";
+    print STDERR "  static part - file containing all other content for manifest.xml\n";
     print STDERR "  start dir - directory to change to before starting search\n";
-    print STDERR "  out dir - destination directory to write manifes.xml to\n\n";
+    print STDERR "  out dir - destination directory to write manifest.xml to\n\n";
     exit 1;
 }
 

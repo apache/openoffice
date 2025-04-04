@@ -113,7 +113,7 @@ published interface XPluginInstance: com::sun::star::uno::XInterface
 	/** Notifies the plugin of a new url to open as document.
 
 		@param MIMEDesc		[in]:	the MIMEtype of the data stream
-		@param theURL		[in]:	the URL to be openend
+		@param theURL		[in]:	the URL to be opened
 		@param filter		[in]:	a filter string to suggest a component that should handle the document
 		@param sessiondata	[in]:	the data specifying the current session
 

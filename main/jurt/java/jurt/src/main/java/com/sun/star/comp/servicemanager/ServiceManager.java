@@ -47,7 +47,7 @@ import com.sun.star.loader.XImplementationLoader;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * The <code>ServiceManager</code> class is an implmentation of the <code>ServiceManager</code>the central class needed for
+ * The <code>ServiceManager</code> class is an implementation of the <code>ServiceManager</code>the central class needed for
  * implementing or using UNO components in Java.
  * <p>
  * The Methods <code>queryInterface</code> and <code>isSame</code> delegate

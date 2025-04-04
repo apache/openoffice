@@ -441,7 +441,7 @@ uno::Reference< uno::XInterface > SAL_CALL SmXMLExport_createInstance(
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLExport( EXPORT_ALL );
-    // EXPORT_OASIS is required here although there is no differrence between
+    // EXPORT_OASIS is required here although there is no difference between
     // OOo and OASIS, because without the flag, a transformation to OOo would
     // be chained in.
     return (cppu::OWeakObject*)new SmXMLExport( rSMgr, EXPORT_OASIS|EXPORT_ALL );

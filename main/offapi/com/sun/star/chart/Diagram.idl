@@ -72,7 +72,7 @@ published service Diagram
 
     interface com::sun::star::chart::XDiagram;
 
-    /** Provides easier access to the differnet axes and their sub elements.
+    /** Provides easier access to the different axes and their sub elements.
         @since OpenOffice 3.4
     */
     [optional] interface com::sun::star::chart::XAxisSupplier;
