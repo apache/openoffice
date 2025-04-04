@@ -26,7 +26,7 @@
 
 //_________________________________________________________________________________________________________________
 //  switches
-//  use it to enable test szenarios
+//  use it to enable test scenarios
 //_________________________________________________________________________________________________________________
 
 #define TEST_DYNAMICMENUOPTIONS
@@ -250,7 +250,7 @@ void TestApplication::impl_testDynamicMenuOptions()
 }
 
 //*****************************************************************************************************************
-// create new uno servicemanager by using normall applicat.rdb and user.rdb of an office installation!
+// create new uno servicemanager by using normal applicat.rdb and user.rdb of an office installation!
 // Don't use this application at same time like the office!
 //*****************************************************************************************************************
 Reference< XMultiServiceFactory > TestApplication::getUNOServiceManager()

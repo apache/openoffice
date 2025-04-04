@@ -132,7 +132,7 @@ class Wildcard
 		//---------------------------------------------------------------------------------------------------------
 
 		/*-****************************************************************************************************//**
-			@short		debug-methods to check incoming parameter of some other mehods of this class
+			@short		debug-methods to check incoming parameter of some other methods of this class
 			@descr		The follow methods are used to check parameters for other methods
 						of this class. The return value is used directly for an ASSERT(...).
 						This mechanism is active in debug version only!

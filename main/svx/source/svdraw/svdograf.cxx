@@ -138,7 +138,7 @@ const Graphic ImpLoadLinkedGraphic( const String aFileName, const String aFilter
 
 		com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue > aFilterData( 1 );
 
-		// Room for improvment:
+		// Room for improvement:
 		// As this is a linked graphic the GfxLink is not needed if saving/loading our own format.
 		// But this link is required by some filters to access the native graphic (pdf export/ms export),
 		// there we should create a new service to provide this data if needed
@@ -147,7 +147,7 @@ const Graphic ImpLoadLinkedGraphic( const String aFileName, const String aFilter
 
         // #123042# for e.g SVG the path is needed, so hand it over here. I have no real idea
         // what consequences this may have; maybe this is not handed over by purpose here. Not
-        // handing it over means that any GraphicFormat that internallv needs a path as base
+        // handing it over means that any GraphicFormat that internally needs a path as base
         // to interpret included links may fail.
         // Alternatively the path may be set at the result after this call when it is known
         // that it is a SVG graphic, but only because no one yet tried to interpret it.

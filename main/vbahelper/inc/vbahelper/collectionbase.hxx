@@ -137,7 +137,7 @@ public:
         If the container type is CONTAINER_NATIVE_VBA, returns the passed
         object unmodified. If the container type is CONTAINER_CONVERT_ON_DEMAND,
         calls the virtual function implCreateCollectionItem() that implements
-        creation of the VBA implmentation object.
+        creation of the VBA implementation object.
 
         @param rElement
             The container element the VBA implementation object is based on.

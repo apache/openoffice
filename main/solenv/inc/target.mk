@@ -1258,7 +1258,7 @@ TARGETDEPS+=$(NOOPTTARGET)
 .ENDIF
 .ENDIF
 
-# -Gc breaks the dependency chain and causes indefinite nummbers of $(CPPUMAKER)
+# -Gc breaks the dependency chain and causes indefinite numbers of $(CPPUMAKER)
 .IF "$(BOOTSTRAP_SERVICE)"!="TRUE"
 CPPUMAKERFLAGS*=-L
 .ENDIF			# "$(BOOTSTRAP_SERVICE)"!="TRUE"

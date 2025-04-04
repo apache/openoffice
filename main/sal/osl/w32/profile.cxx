@@ -1227,7 +1227,7 @@ static osl_TFile* openFileImpl(rtl_uString * strFileName, oslProfileOption Profi
 										  FILE_SHARE_READ | FILE_SHARE_WRITE, NULL,
 										  OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
 
-        /* mfe: argghh!!! do not check if the file could be openend */
+        /* mfe: argghh!!! do not check if the file could be opened */
         /*      default mode expects it that way!!!                 */
 	}
 	else

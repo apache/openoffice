@@ -237,7 +237,7 @@ class ServiceManager
 	//-------------------------------------------------------------------------------------------------------------
 
 		/*-****************************************************************************************************//**
-			@short		debug-method to check incoming parameter of some other mehods of this class
+			@short		debug-method to check incoming parameter of some other methods of this class
 			@descr		The following methods are used to check parameters for other methods
 						of this class. The return value is used directly for an ASSERT(...).
 
