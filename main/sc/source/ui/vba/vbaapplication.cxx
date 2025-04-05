@@ -264,7 +264,7 @@ ScVbaApplication::getSelection() throw (uno::RuntimeException)
     }
     else
     {
-        throw uno::RuntimeException( sImpementaionName + rtl::OUString::createFromAscii(" not suported"), uno::Reference< uno::XInterface >() );
+        throw uno::RuntimeException( sImpementaionName + rtl::OUString::createFromAscii(" not supported"), uno::Reference< uno::XInterface >() );
     }
 }
 
