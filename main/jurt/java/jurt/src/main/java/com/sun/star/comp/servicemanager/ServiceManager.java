@@ -637,7 +637,7 @@ public class ServiceManager implements XMultiServiceFactory,
      * Provides an enumeration of all registered services.
      * <p>
      * @return 	an enumeration of all available services.
-     * @see 	com.sun.star.conatiner.XEnumerationAccess
+     * @see 	com.sun.star.container.XEnumerationAccess
      */
     public XEnumeration createEnumeration()	
             throws com.sun.star.uno.RuntimeException
