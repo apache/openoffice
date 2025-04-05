@@ -334,7 +334,7 @@ struct FactoryInfo
                     throw css::uno::RuntimeException(
                         ::rtl::OUString(
                             RTL_CONSTASCII_USTRINGPARAM(
-                                "Cannot instanciate service "
+                                "Cannot instantiate service "
                                 "com.sun.star.util.PathSubstitution" ) ),
                         css::uno::Reference< css::uno::XInterface >() );
             }

@@ -1033,7 +1033,7 @@ void cclass_Unicode::parseText( ParseResult& r, const OUString& rText, sal_Int32
                 throw RuntimeException( OUString(
 #ifdef DBG_UTIL
                     RTL_CONSTASCII_USTRINGPARAM(
-                        "cclass_Unicode::parseText: can't instanciate "
+                        "cclass_Unicode::parseText: can't instantiate "
                         NATIVENUMBERSUPPLIER_SERVICENAME )
 #endif
                     ), *this );

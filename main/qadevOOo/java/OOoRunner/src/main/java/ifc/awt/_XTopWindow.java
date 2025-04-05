@@ -172,7 +172,7 @@ public class _XTopWindow extends MultiMethodTest {
                 ((XMultiServiceFactory)tParam.getMSF()).
                 createInstance("com.sun.star.awt.MenuBar")) ;
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Can't instanciate MenuBar service") ;
+            log.println("Can't instantiate MenuBar service") ;
             result = false ;
         }
 

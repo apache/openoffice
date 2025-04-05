@@ -81,7 +81,7 @@ public:
             ::com::sun::star::uno::XComponentContext > & xContext );
 	virtual ~DataSeries();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
     APPHELPER_SERVICE_FACTORY_HELPER( DataSeries )
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()

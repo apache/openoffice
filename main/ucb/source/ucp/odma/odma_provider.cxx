@@ -195,7 +195,7 @@ uno::Reference< ucb::XContent > SAL_CALL ContentProvider::queryContent(
 	if ( xContent.is() )
 		return xContent;
 
-	// @@@ Decision, which content implementation to instanciate may be
+	// @@@ Decision, which content implementation to instantiate may be
 	//     made here ( in case you have different content classes ).
 
 	// Create a new content.

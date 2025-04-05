@@ -63,7 +63,7 @@ namespace framework{
 
 /*-************************************************************************************************************//**
 	@short			create a new global servicemanager
-	@descr			A global servicemanager is necessary to instanciate UNO-services. To do this, you need
+	@descr			A global servicemanager is necessary to instantiate UNO-services. To do this, you need
 					a factory to create new objects with special type. That's the reason for a servicemanager.
 
 	@implements		-

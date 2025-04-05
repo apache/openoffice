@@ -836,7 +836,7 @@ void HierarchyContent::queryChildren( HierarchyContentRefList& rChildren )
     if ( ( m_eKind != FOLDER ) && ( m_eKind != ROOT ) )
         return;
 
-    // Obtain a list with a snapshot of all currently instanciated contents
+    // Obtain a list with a snapshot of all currently instantiated contents
     // from provider and extract the contents which are direct children
     // of this content.
 
@@ -922,7 +922,7 @@ sal_Bool HierarchyContent::exchangeIdentity(
         {
             if ( m_eKind == FOLDER )
             {
-                // Process instanciated children...
+                // Process instantiated children...
 
                 HierarchyContentRefList aChildren;
                 queryChildren( aChildren );
@@ -1651,7 +1651,7 @@ void HierarchyContent::destroy( sal_Bool bDeletePhysical,
 
     if ( m_eKind == FOLDER )
     {
-        // Process instanciated children...
+        // Process instantiated children...
 
         HierarchyContentRefList aChildren;
         queryChildren( aChildren );
@@ -1768,7 +1768,7 @@ void HierarchyContent::transfer(
             uno::Sequence< uno::Any >(&aProps, 1),
             xEnv,
             rtl::OUString::createFromAscii(
-                "Cannot instanciate source object!" ),
+                "Cannot instantiate source object!" ),
             this );
         // Unreachable
     }

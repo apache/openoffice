@@ -1788,7 +1788,7 @@ void UniversalContentBroker::globalTransfer(
             uno::Sequence< uno::Any >(&aProps, 1),
             xEnv,
             rtl::OUString::createFromAscii(
-                "Can't instanciate target object!" ),
+                "Can't instantiate target object!" ),
             this );
         // Unreachable
     }
@@ -1977,7 +1977,7 @@ void UniversalContentBroker::globalTransfer(
             uno::Sequence< uno::Any >(&aProps, 1),
             xEnv,
             rtl::OUString::createFromAscii(
-                "Can't instanciate source object!" ),
+                "Can't instantiate source object!" ),
             this );
         // Unreachable
     }

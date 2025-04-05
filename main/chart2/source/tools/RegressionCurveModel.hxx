@@ -165,7 +165,7 @@ public:
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( MeanValueRegressionCurve )
 };
 
@@ -185,7 +185,7 @@ public:
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( LinearRegressionCurve )
 };
 
@@ -205,7 +205,7 @@ public:
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( LogarithmicRegressionCurve )
 };
 
@@ -225,7 +225,7 @@ public:
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( ExponentialRegressionCurve )
 };
 
@@ -245,7 +245,7 @@ public:
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( PotentialRegressionCurve )
 };
 

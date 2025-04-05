@@ -65,7 +65,7 @@ public:
     APPHELPER_XSERVICEINFO_DECL()
     /// merge XInterface implementations
  	DECLARE_XINTERFACE()
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( RegressionEquation )
 
 protected:

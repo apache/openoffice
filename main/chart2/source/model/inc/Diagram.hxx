@@ -71,7 +71,7 @@ public:
              ::com::sun::star::uno::XComponentContext > const & xContext );
 	virtual ~Diagram();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
     APPHELPER_SERVICE_FACTORY_HELPER( Diagram )
 
     /// XServiceInfo declarations

@@ -354,7 +354,7 @@ void JobDispatch::impl_dispatchEvent( /*IN*/ const ::rtl::OUString&             
             of e.g. one instance services.
 
     @param  sService
-                the uno implementation or service name of the job, which should be instanciated
+                the uno implementation or service name of the job, which should be instantiated
 
     @param  lArgs
                 optional arguments for this request
