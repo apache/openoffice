@@ -179,7 +179,7 @@ extern char *GetOutputFile( int argc, char* argv[])
 int InitCfgExport( char *pOutput , char* pFilename )
 /*****************************************************************************/
 {
-	// instanciate Export
+	// instantiate Export
 	ByteString sOutput( pOutput );
 	ByteString sFilename( pFilename );
     Export::InitLanguages();

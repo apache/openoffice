@@ -61,7 +61,7 @@ public:
 	explicit GridProperties();
 	virtual ~GridProperties();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
     APPHELPER_SERVICE_FACTORY_HELPER( GridProperties )
 
     /// XServiceInfo declarations

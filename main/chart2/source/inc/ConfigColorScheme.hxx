@@ -59,7 +59,7 @@ public:
             ::com::sun::star::uno::XComponentContext > & xContext );
     SAL_DLLPRIVATE virtual ~ConfigColorScheme();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( ConfigColorScheme )
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()

@@ -452,7 +452,7 @@ public abstract class WWD_Startup extends WWD_General
     {
         try
         {
-            // instanciate
+            // instantiate
             String[] settingsResources = new String[]
             {
                 resources.resPages,

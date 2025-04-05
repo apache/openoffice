@@ -55,7 +55,7 @@ public:
                         ::com::sun::star::uno::XComponentContext > & xContext );
 	virtual ~PageBackground();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
     APPHELPER_SERVICE_FACTORY_HELPER( PageBackground )
 
     /// XServiceInfo declarations

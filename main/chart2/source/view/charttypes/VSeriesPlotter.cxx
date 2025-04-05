@@ -51,7 +51,7 @@
 #include "DateHelper.hxx"
 #include "DiagramHelper.hxx"
 
-//only for creation: @todo remove if all plotter are uno components and instanciated via servicefactory
+//only for creation: @todo remove if all plotter are uno components and instantiated via servicefactory
 #include "BarChart.hxx"
 #include "PieChart.hxx"
 #include "AreaChart.hxx"
@@ -2244,7 +2244,7 @@ VSeriesPlotter* VSeriesPlotter::createSeriesPlotter(
 {
     rtl::OUString aChartType = xChartTypeModel->getChartType();
 
-    //@todo: in future the plotter should be instanciated via service factory
+    //@todo: in future the plotter should be instantiated via service factory
     VSeriesPlotter* pRet=NULL;
     if( aChartType.equalsIgnoreAsciiCase( CHART2_SERVICE_NAME_CHARTTYPE_COLUMN ) )
         pRet = new BarChart(xChartTypeModel,nDimensionCount);

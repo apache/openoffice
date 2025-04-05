@@ -119,7 +119,7 @@ class SalGtkFolderPicker :
 		SalGtkFolderPicker( const SalGtkFolderPicker& );           
 		SalGtkFolderPicker& operator=( const SalGtkFolderPicker& );
 	private:
-		// to instanciate own services
+		// to instantiate own services
 		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > m_xServiceMgr;
 
 #if 0

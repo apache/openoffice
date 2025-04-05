@@ -498,7 +498,7 @@ public:
 /** FSysRedirector is an abstract base class for a hook to redirect
 	mirrored directory trees.
 
-	<P>One instance of a subclass can be instanciated and registered
+	<P>One instance of a subclass can be instantiated and registered
 	using the method FSysRedirector::Register(FSysRedirector*).
  */
 

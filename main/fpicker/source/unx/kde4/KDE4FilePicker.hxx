@@ -61,7 +61,7 @@ class KDE4FilePicker :
         ::com::sun::star::lang::XServiceInfo >		
 {
 protected:
-    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > m_xServiceMgr;   // to instanciate own services		
+    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > m_xServiceMgr;   // to instantiate own services
 
 	::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XFilePickerListener > m_xListener;
 	

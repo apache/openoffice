@@ -52,7 +52,7 @@ import com.sun.star.wizards.ui.UIConsts;
 /**
  * This class delivers static convenience methods
  * to use with ucb SimpleFileAccess service.
- * You can also instanciate the class, to encapsulate 
+ * You can also instantiate the class, to encapsulate
  * some functionality of SimpleFileAccess. The instance
  * keeps a reference to an XSimpleFileAccess and an
  * XFileIdentifierConverter, saves the permanent 

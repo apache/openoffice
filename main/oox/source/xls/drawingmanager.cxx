@@ -1379,7 +1379,7 @@ Reference< XShape > BiffDrawingBase::createAndInsertXShape( const OUString& rSer
     catch( Exception& )
     {
     }
-    OSL_ENSURE( xShape.is(), "BiffDrawingBase::createAndInsertXShape - cannot instanciate shape object" );
+    OSL_ENSURE( xShape.is(), "BiffDrawingBase::createAndInsertXShape - cannot instantiate shape object" );
     return xShape;
 }
 

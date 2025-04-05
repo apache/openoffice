@@ -133,7 +133,7 @@ PasswordContainerHelper::PasswordContainerHelper(
         catch (uno::Exception const &)
         {}
     OSL_ENSURE(m_xPasswordContainer.is(),
-               "unable to instanciate password container service");
+               "unable to instantiate password container service");
 }
 
 //=========================================================================

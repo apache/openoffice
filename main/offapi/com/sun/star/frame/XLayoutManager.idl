@@ -217,7 +217,7 @@ published interface XLayoutManager : com::sun::star::uno::XInterface
     */
     com::sun::star::ui::XUIElement getElement( [in] string ResourceURL );
 
-    /** retrieves all user interface elements which are currently instanciated.
+    /** retrieves all user interface elements which are currently instantiated.
 
         @return
             a sequence of user interface elements providing <type scope="com::sun::star::ui">XUIElement</type>
