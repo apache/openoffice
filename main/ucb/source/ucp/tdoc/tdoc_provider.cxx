@@ -282,7 +282,7 @@ void ContentProvider::notifyDocumentClosed( const rtl::OUString & rDocId )
     if ( xRoot.is() )
     {
         // No document content found for rDocId but root content
-        // instanciated. Root content must announce document removal
+        // instantiated. Root content must announce document removal
         // to content event listeners.
         xRoot->notifyChildRemoved( rDocId );
     }

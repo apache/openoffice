@@ -53,7 +53,7 @@ published interface XParametersSupplier;
 /** is a client side RowSet, which use retrieves is data based on a database table,
 	a query or a SQL command or by a rowset reader, who mustn't support SQL.
 	The connection of the rowset is typically a named DataSource or a DataAccess component
-	or a previous instanciated connection.
+	or a previous instantiated connection.
 	<p>
 	Depending on the
 	<type scope="com::sun::star::sdbc">ResultSetConcurrency</type>

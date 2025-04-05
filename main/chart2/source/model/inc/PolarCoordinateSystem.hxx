@@ -63,7 +63,7 @@ public:
             ::com::sun::star::uno::XComponentContext > & xContext );
     virtual ~PolarCoordinateSystem2d();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( PolarCoordinateSystem2d )
     // ____ XServiceInfo ____
     APPHELPER_XSERVICEINFO_DECL()
@@ -77,7 +77,7 @@ public:
             ::com::sun::star::uno::XComponentContext > & xContext );
     virtual ~PolarCoordinateSystem3d();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( PolarCoordinateSystem3d )
     // ____ XServiceInfo ____
     APPHELPER_XSERVICEINFO_DECL()

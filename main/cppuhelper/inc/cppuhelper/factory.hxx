@@ -167,7 +167,7 @@ createOneInstanceComponentFactory(
 	rtl_ModuleCount * pModCount = 0 )
 	SAL_THROW( () );
 
-/** Deprecated.  The type of the instanciate function used as argument of the create*Fcatory functions.
+/** Deprecated.  The type of the instantiate function used as argument of the create*Fcatory functions.
     
     @see createSingleFactory
     @see createOneInstanceFactory

@@ -63,7 +63,7 @@ public:
             ::com::sun::star::uno::XComponentContext > & xContext );
     virtual ~CartesianCoordinateSystem2d();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( CartesianCoordinateSystem2d )
     // ____ XServiceInfo ____
     APPHELPER_XSERVICEINFO_DECL()
@@ -77,7 +77,7 @@ public:
             ::com::sun::star::uno::XComponentContext > & xContext );
     virtual ~CartesianCoordinateSystem3d();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( CartesianCoordinateSystem3d )
     // ____ XServiceInfo ____
     APPHELPER_XSERVICEINFO_DECL()

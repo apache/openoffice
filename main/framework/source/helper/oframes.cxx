@@ -428,7 +428,7 @@ void OFrames::impl_appendSequence(			Sequence< css::uno::Reference< XFrame > >&	
 
 //*****************************************************************************************************************
 // An instance of this class can only work with valid initialization.
-// We share the mutex with our owner class, need a valid factory to instanciate new services and
+// We share the mutex with our owner class, need a valid factory to instantiate new services and
 // use the access to our owner for some operations.
 sal_Bool OFrames::impldbg_checkParameter_OFramesCtor(	const	css::uno::Reference< XMultiServiceFactory >&	xFactory		,
 														const	css::uno::Reference< XFrame >&				xOwner			,

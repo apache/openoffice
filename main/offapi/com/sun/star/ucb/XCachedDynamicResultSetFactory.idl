@@ -42,7 +42,7 @@ module com { module sun { module star { module ucb {
 //=============================================================================
 /** creates a <type>CachedDynamicResultSet</type>.
 
-	<p>Pay attention to instanciate this helper on clientside where your want
+	<p>Pay attention to instantiate this helper on clientside where your want
 	to read the data respectively where you have instantiated the listener to
 	the	<type>XDynamicResultSet</type>.
 

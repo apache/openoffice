@@ -169,7 +169,7 @@ public class ChartTypeChange {
         try {
             /* A desktop environment contains tasks with one or more
                frames in which components can be loaded. Desktop is the
-               environment for components which can instanciate within
+               environment for components which can instantiate within
                frames. */
             XComponentLoader xComponentloader = (XComponentLoader)
                 UnoRuntime.queryInterface( XComponentLoader.class,
@@ -215,7 +215,7 @@ public class ChartTypeChange {
         try {
             /* A desktop environment contains tasks with one or more
                frames in which components can be loaded. Desktop is the
-               environment for components which can instanciate within
+               environment for components which can instantiate within
                frames. */
             XComponentLoader xcomponentloader = ( XComponentLoader )
                 UnoRuntime.queryInterface( XComponentLoader.class,

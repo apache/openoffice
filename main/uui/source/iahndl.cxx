@@ -971,7 +971,7 @@ UUIInteractionHelper::getInteractionHandlerList(
             throw uno::RuntimeException(
                 rtl::OUString(
                     RTL_CONSTASCII_USTRINGPARAM(
-                        "unable to instanciate config provider service")),
+                        "unable to instantiate config provider service")),
                 uno::Reference< uno::XInterface >());
 
         rtl::OUStringBuffer aFullPath;
@@ -995,7 +995,7 @@ UUIInteractionHelper::getInteractionHandlerList(
             throw uno::RuntimeException(
                 rtl::OUString(
                     RTL_CONSTASCII_USTRINGPARAM(
-                        "unable to instanciate config access")),
+                        "unable to instantiate config access")),
                 uno::Reference< uno::XInterface >());
 
         uno::Reference< container::XNameAccess > xNameAccess(
@@ -1141,7 +1141,7 @@ UUIInteractionHelper::getInteractionHandler()
         throw uno::RuntimeException(
             rtl::OUString(
                 RTL_CONSTASCII_USTRINGPARAM(
-                    "unable to instanciate Interaction Handler service")),
+                    "unable to instantiate Interaction Handler service")),
             uno::Reference< uno::XInterface >());
     return xIH;
 }
