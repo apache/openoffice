@@ -168,7 +168,7 @@ NN_<namespace/@name> | DEFINE_<rng:define/@name>
 
 creates case label for a rng:define:
 
-case NN_<namesapce/@name> | DEFINE_<rng:define/@name>:
+case NN_<namespace/@name> | DEFINE_<rng:define/@name>:
 
 -->
 <xsl:template name="caselabeldefine">

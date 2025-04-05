@@ -51,7 +51,7 @@
 #define RDB_SYSPATH  "d:\\projects\\src621\\dtrans\\wntmsci7\\bin\\applicat.rdb"
 
 //------------------------------------------------------------
-//	namesapces
+//	namespaces
 //------------------------------------------------------------
 
 using namespace	::rtl;

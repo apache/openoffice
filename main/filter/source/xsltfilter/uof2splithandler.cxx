@@ -220,7 +220,7 @@ void UOF2SplitHandler::Write( OUString & rFileName , sal_Bool bStart ) throw( Ru
 }
 
 /* -----
-    collect namesapce declaration of the <pzip:entry> element
+    collect namespace declaration of the <pzip:entry> element
 ---- */
 void UOF2SplitHandler::namespaceMap( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& AttrList )
 {

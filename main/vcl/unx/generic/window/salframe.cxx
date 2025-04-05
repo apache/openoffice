@@ -2786,7 +2786,7 @@ bool X11SalFrame::SetPluginParent( SystemParentData* pNewParent )
 
 // Sound
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-void X11SalFrame::Beep( SoundType eSoundType ) // not fully suported
+void X11SalFrame::Beep( SoundType eSoundType ) // not fully supported
 {
     switch( eSoundType )
     {

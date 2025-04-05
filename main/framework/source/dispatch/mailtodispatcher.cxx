@@ -313,7 +313,7 @@ sal_Bool MailToDispatcher::implts_dispatch( const css::util::URL&               
 void SAL_CALL MailToDispatcher::addStatusListener( const css::uno::Reference< css::frame::XStatusListener >& /*xListener*/ ,
                                                    const css::util::URL&                                     /*aURL*/      ) throw( css::uno::RuntimeException )
 {
-    // not suported yet
+    // not supported yet
 }
 
 //_________________________________________________________________________________________________________________
@@ -321,7 +321,7 @@ void SAL_CALL MailToDispatcher::addStatusListener( const css::uno::Reference< cs
 void SAL_CALL MailToDispatcher::removeStatusListener( const css::uno::Reference< css::frame::XStatusListener >& /*xListener*/ ,
                                                       const css::util::URL&                                     /*aURL*/      ) throw( css::uno::RuntimeException )
 {
-    // not suported yet
+    // not supported yet
 }
 
 } //  namespace framework

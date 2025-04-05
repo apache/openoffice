@@ -1027,4 +1027,4 @@ void SAL_CALL ImplEventAttacherManager::read(const Reference< XObjectInputStream
 	xMarkStream->deleteMark( nObjLenMark );
 }
 
-} // namesapce comphelper
+} // namespace comphelper

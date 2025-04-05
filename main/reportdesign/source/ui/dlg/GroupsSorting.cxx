@@ -1189,7 +1189,7 @@ sal_Int32 OGroupsSortingDialog::getColumnDataType(const ::rtl::OUString& _sColum
     }
     catch(uno::Exception&)
     {
-        OSL_ENSURE(0,"Eception caught while getting the type of a column");
+        OSL_ENSURE(0,"Exception caught while getting the type of a column");
     }
 	
 	return nDataType;
