@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
@@ -27,11 +25,7 @@
 #include <drawinglayer/primitive3d/groupprimitive3d.hxx>
 #include <drawinglayer/primitive3d/drawinglayer_primitivetypes3d.hxx>
 
-//////////////////////////////////////////////////////////////////////////////
-
 using namespace com::sun::star;
-
-//////////////////////////////////////////////////////////////////////////////
 
 namespace drawinglayer
 {
@@ -43,8 +37,8 @@ namespace drawinglayer
 		{
 		}
 
-		/** The compare opertator uses the Sequence::==operator, so only checking if
-			the rererences are equal. All non-equal references are interpreted as
+		/** The compare operator uses the Sequence::==operator, so only checking if
+			the references are equal. All non-equal references are interpreted as
 			non-equal.
 		 */
 		bool GroupPrimitive3D::operator==( const BasePrimitive3D& rPrimitive ) const
@@ -59,7 +53,7 @@ namespace drawinglayer
 			return false;
 		}
 
-		/// default: just return children, so all renderers not supporting group will use it's content
+		// default: just return children, so all renderers not supporting group will use its content
 		Primitive3DSequence GroupPrimitive3D::get3DDecomposition(const geometry::ViewInformation3D& /*rViewInformation*/) const
 		{
 			return getChildren();
@@ -71,5 +65,4 @@ namespace drawinglayer
 	} // end of namespace primitive3d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */
