@@ -31,6 +31,7 @@
 #include <com/sun/star/view/XRenderable.hpp>
 #include <com/sun/star/style/XStyleFamiliesSupplier.hpp>
 #include <com/sun/star/document/XActionLockable.hpp>
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
 #include <com/sun/star/document/XLinkTargetSupplier.hpp>
 #include <com/sun/star/drawing/XDrawPagesSupplier.hpp>
 #include <com/sun/star/drawing/XDrawPages.hpp>
@@ -82,6 +83,7 @@ class SC_DLLPUBLIC ScModelObj : public SfxBaseModel,
 					public com::sun::star::sheet::XDocumentAuditing,
 					public com::sun::star::style::XStyleFamiliesSupplier,
 					public com::sun::star::view::XRenderable,
+					public com::sun::star::document::XLinkAuthorizer,
 					public com::sun::star::document::XLinkTargetSupplier,
 					public com::sun::star::beans::XPropertySet,
 					public SvxFmMSFactory,	// derived from XMultiServiceFactory
@@ -175,6 +177,8 @@ public:
 								throw (::com::sun::star::lang::IllegalArgumentException,
 										::com::sun::star::uno::RuntimeException);
 
+							//XLinkAuthorizer
+	virtual sal_Bool SAL_CALL authorizeLinks( const ::rtl::OUString& rURL ) throw( ::com::sun::star::uno::RuntimeException );
 							// XLinkTargetSupplier
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL
 							getLinks() throw(::com::sun::star::uno::RuntimeException);

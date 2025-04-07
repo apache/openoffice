@@ -97,6 +97,7 @@ IDLFILES=\
 	XInteractionFilterOptions.idl\
 	XInteractionFilterSelect.idl\
 	XLinkTargetSupplier.idl\
+	XLinkAuthorizer.idl\
 	XMimeTypeInfo.idl\
 	XOOXMLDocumentPropertiesImporter.idl\
 	XRedlinesSupplier.idl \

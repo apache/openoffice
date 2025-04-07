@@ -36,6 +36,8 @@
 #include <svl/smplhint.hxx>
 #include <unotools/undoopt.hxx>
 #include <unotools/moduleoptions.hxx>
+#include <sfx2/docfile.hxx>
+#include <sfx2/linkmgr.hxx>
 #include <sfx2/printer.hxx>
 #include <sfx2/bindings.hxx>
 #include <vcl/pdfextoutdevdata.hxx>
@@ -462,6 +464,7 @@ uno::Any SAL_CALL ScModelObj::queryInterface( const uno::Type& rType )
 	SC_QUERYINTERFACE( sheet::XDocumentAuditing )
 	SC_QUERYINTERFACE( style::XStyleFamiliesSupplier )
 	SC_QUERYINTERFACE( view::XRenderable )
+	SC_QUERYINTERFACE( document::XLinkAuthorizer )
 	SC_QUERYINTERFACE( document::XLinkTargetSupplier )
 	SC_QUERYINTERFACE( beans::XPropertySet )
 	SC_QUERYINTERFACE( lang::XMultiServiceFactory )
@@ -520,7 +523,7 @@ uno::Sequence<uno::Type> SAL_CALL ScModelObj::getTypes() throw(uno::RuntimeExcep
 		long nAggLen = aAggTypes.getLength();
 		const uno::Type* pAggPtr = aAggTypes.getConstArray();
 
-        const long nThisLen = 15;
+        const long nThisLen = 16;
 		aTypes.realloc( nParentLen + nAggLen + nThisLen );
 		uno::Type* pPtr = aTypes.getArray();
 		pPtr[nParentLen + 0] = getCppuType((const uno::Reference<sheet::XSpreadsheetDocument>*)0);
@@ -533,11 +536,12 @@ uno::Sequence<uno::Type> SAL_CALL ScModelObj::getTypes() throw(uno::RuntimeExcep
 		pPtr[nParentLen + 7] = getCppuType((const uno::Reference<sheet::XDocumentAuditing>*)0);
 		pPtr[nParentLen + 8] = getCppuType((const uno::Reference<style::XStyleFamiliesSupplier>*)0);
 		pPtr[nParentLen + 9] = getCppuType((const uno::Reference<view::XRenderable>*)0);
-		pPtr[nParentLen +10] = getCppuType((const uno::Reference<document::XLinkTargetSupplier>*)0);
-		pPtr[nParentLen +11] = getCppuType((const uno::Reference<beans::XPropertySet>*)0);
-		pPtr[nParentLen +12] = getCppuType((const uno::Reference<lang::XMultiServiceFactory>*)0);
-		pPtr[nParentLen +13] = getCppuType((const uno::Reference<lang::XServiceInfo>*)0);
-        pPtr[nParentLen +14] = getCppuType((const uno::Reference<util::XChangesNotifier>*)0);
+		pPtr[nParentLen +10] = getCppuType((const uno::Reference<document::XLinkAuthorizer>*)0);
+		pPtr[nParentLen +11] = getCppuType((const uno::Reference<document::XLinkTargetSupplier>*)0);
+		pPtr[nParentLen +12] = getCppuType((const uno::Reference<beans::XPropertySet>*)0);
+		pPtr[nParentLen +13] = getCppuType((const uno::Reference<lang::XMultiServiceFactory>*)0);
+		pPtr[nParentLen +14] = getCppuType((const uno::Reference<lang::XServiceInfo>*)0);
+        pPtr[nParentLen +15] = getCppuType((const uno::Reference<util::XChangesNotifier>*)0);
 
 		long i;
 		for (i=0; i<nParentLen; i++)
@@ -1301,6 +1305,31 @@ void SAL_CALL ScModelObj::render( sal_Int32 nSelRenderer, const uno::Any& aSelec
 	if ( pDrawView )
 		pDrawView->HideSdrPage();
 	delete pDrawView;
+}
+
+// XLinkAuthorizer
+
+sal_Bool ScModelObj::authorizeLinks( const ::rtl::OUString& rURL ) throw( uno::RuntimeException )
+{
+	ScUnoGuard aGuard;
+	ScDocument *doc = pDocShell->GetDocument();
+	if ( doc ) {
+		// The following access to the window is copied from SwDoc::UpdateLinks()
+		SfxMedium* pMedium = pDocShell->GetMedium();
+		SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
+		sfx2::LinkManager *pLinkMgr = doc->GetLinkManager();
+		if ( pLinkMgr->urlIsSafe( rURL ) ) {
+			return sal_True;
+		}
+		Window* pDlgParent = 0;
+		if ( pFrm )
+			pDlgParent = &pFrm->GetWindow();
+		if ( !pDlgParent )
+			pDlgParent = pDocShell->GetDialogParent( pMedium );
+		if ( pDlgParent )
+			return pLinkMgr->GetUserAllowsLinkUpdate( pDlgParent );
+	}
+	return sal_False;
 }
 
 // XLinkTargetSupplier

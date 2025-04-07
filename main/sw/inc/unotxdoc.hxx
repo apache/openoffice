@@ -30,6 +30,7 @@
 #include <com/sun/star/beans/PropertyValues.hpp>
 #include <com/sun/star/style/XStyleFamiliesSupplier.hpp>
 #include <com/sun/star/style/XAutoStylesSupplier.hpp>
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
 #include <com/sun/star/document/XLinkTargetSupplier.hpp>
 #include <com/sun/star/document/XRedlinesSupplier.hpp>
 #include <com/sun/star/text/XNumberingRulesSupplier.hpp>
@@ -76,22 +77,22 @@
 
 #include <viewopt.hxx>
 
-#define __IFC32 Ifc1, Ifc2, Ifc3, Ifc4, Ifc5, Ifc6, Ifc7, Ifc8, Ifc9, Ifc10, Ifc11, Ifc12, Ifc13, Ifc14, Ifc15, Ifc16, \
-Ifc17, Ifc18, Ifc19, Ifc20, Ifc21, Ifc22, Ifc23, Ifc24, Ifc25, Ifc26, Ifc27, Ifc28, Ifc29, Ifc30, Ifc31, Ifc32
+#define __IFC33 Ifc1, Ifc2, Ifc3, Ifc4, Ifc5, Ifc6, Ifc7, Ifc8, Ifc9, Ifc10, Ifc11, Ifc12, Ifc13, Ifc14, Ifc15, Ifc16, \
+Ifc17, Ifc18, Ifc19, Ifc20, Ifc21, Ifc22, Ifc23, Ifc24, Ifc25, Ifc26, Ifc27, Ifc28, Ifc29, Ifc30, Ifc31, Ifc32, Ifc33
 
-#define __CLASS_IFC32 class Ifc1, class Ifc2, class Ifc3, class Ifc4, class Ifc5, class Ifc6, class Ifc7, \
+#define __CLASS_IFC33 class Ifc1, class Ifc2, class Ifc3, class Ifc4, class Ifc5, class Ifc6, class Ifc7, \
 class Ifc8, class Ifc9, class Ifc10, class Ifc11, class Ifc12, class Ifc13, class Ifc14, class Ifc15, class Ifc16, \
 class Ifc17, class Ifc18, class Ifc19, class Ifc20, class Ifc21, class Ifc22, class Ifc23, class Ifc24,\
-class Ifc25, class Ifc26, class Ifc27, class Ifc28, class Ifc29, class Ifc30, class Ifc31 , class Ifc32
+class Ifc25, class Ifc26, class Ifc27, class Ifc28, class Ifc29, class Ifc30, class Ifc31 , class Ifc32, class Ifc33
 
-#define __PUBLIC_IFC32 public Ifc1, public Ifc2, public Ifc3, public Ifc4, public Ifc5, public Ifc6, public Ifc7, public Ifc8, public Ifc9, public Ifc10, public Ifc11, public Ifc12, \
+#define __PUBLIC_IFC33 public Ifc1, public Ifc2, public Ifc3, public Ifc4, public Ifc5, public Ifc6, public Ifc7, public Ifc8, public Ifc9, public Ifc10, public Ifc11, public Ifc12, \
 public Ifc13, public Ifc14, public Ifc15, public Ifc16, public Ifc17, public Ifc18, \
 public Ifc19, public Ifc20, public Ifc21, public Ifc22, public Ifc23, public Ifc24, \
 public Ifc25, public Ifc26, public Ifc27, public Ifc28, public Ifc29, public Ifc30, \
-public Ifc31, public Ifc32
+public Ifc31, public Ifc32, public Ifc33
 #include <cppuhelper/implbase_ex.hxx>
 #include <cppuhelper/implbase_ex_pre.hxx>
-#define __IFC_EX_TYPE_INIT32( class_cast ) \
+#define __IFC_EX_TYPE_INIT33( class_cast ) \
     __IFC_EX_TYPE_INIT( class_cast, 1 ), __IFC_EX_TYPE_INIT( class_cast, 2 ), \
     __IFC_EX_TYPE_INIT( class_cast, 3 ), __IFC_EX_TYPE_INIT( class_cast, 4 ), \
     __IFC_EX_TYPE_INIT( class_cast, 5 ), __IFC_EX_TYPE_INIT( class_cast, 6 ), \
@@ -107,10 +108,11 @@ public Ifc31, public Ifc32
     __IFC_EX_TYPE_INIT( class_cast, 25 ), __IFC_EX_TYPE_INIT( class_cast, 26 ), \
     __IFC_EX_TYPE_INIT( class_cast, 27 ), __IFC_EX_TYPE_INIT( class_cast, 28 ), \
     __IFC_EX_TYPE_INIT( class_cast, 29 ), __IFC_EX_TYPE_INIT( class_cast, 30 ), \
-    __IFC_EX_TYPE_INIT( class_cast, 31 ), __IFC_EX_TYPE_INIT( class_cast, 32)
+    __IFC_EX_TYPE_INIT( class_cast, 31 ), __IFC_EX_TYPE_INIT( class_cast, 32 ), \
+    __IFC_EX_TYPE_INIT( class_cast, 33 )
 #include <cppuhelper/implbase_ex_post.hxx>
 
-__DEF_IMPLHELPER_EX( 32 )
+__DEF_IMPLHELPER_EX( 33 )
 
 namespace css = ::com::sun::star;
 
@@ -136,7 +138,7 @@ SV_DECL_PTRARR(ActionContextArr, UnoActionContextPtr, 4, 4)
  ******************************************************************************/
 
 
-typedef cppu::WeakImplHelper32
+typedef cppu::WeakImplHelper33
 <
 	css::text::XTextDocument,
 	css::text::XLineNumberingProperties,
@@ -161,6 +163,7 @@ typedef cppu::WeakImplHelper32
 	css::text::XDocumentIndexesSupplier,
 	css::beans::XPropertySet,
 	css::beans::XPropertyState,
+	css::document::XLinkAuthorizer,
 	css::document::XLinkTargetSupplier,
 	css::document::XRedlinesSupplier,
 	css::util::XRefreshable,
@@ -390,6 +393,9 @@ public:
     virtual css::uno::Sequence< css::beans::PropertyState > SAL_CALL getPropertyStates( const css::uno::Sequence< ::rtl::OUString >& rPropertyNames ) throw (css::beans::UnknownPropertyException, css::uno::RuntimeException);
     virtual void SAL_CALL setPropertyToDefault( const ::rtl::OUString& rPropertyName ) throw (css::beans::UnknownPropertyException, css::uno::RuntimeException);
     virtual css::uno::Any SAL_CALL getPropertyDefault( const ::rtl::OUString& rPropertyName ) throw (css::beans::UnknownPropertyException, css::lang::WrappedTargetException, css::uno::RuntimeException);
+
+	//XLinkAuthorizer
+	virtual sal_Bool SAL_CALL authorizeLinks( const ::rtl::OUString& rURL ) throw( css::uno::RuntimeException );
 
 	//XLinkTargetSupplier
 	virtual css::uno::Reference< css::container::XNameAccess >  SAL_CALL getLinks(void) throw( css::uno::RuntimeException );

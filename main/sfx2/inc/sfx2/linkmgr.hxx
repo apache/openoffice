@@ -33,6 +33,11 @@ class SfxObjectShell;
 class Graphic;
 class Size;
 
+namespace com { namespace sun { namespace star { namespace util {
+    class URL;
+    class XURLTransformer;
+} } } }
+
 namespace sfx2
 {
     // Damit der Link ueber den Status der zu ladenen Grafik informierten werden
@@ -59,6 +64,8 @@ class SFX2_DLLPUBLIC LinkManager
 	sal_Bool mAutoAskUpdateAllLinks;
 	sal_Bool mUpdateAsked;
 	sal_Bool mAllowUpdate;
+
+    com::sun::star::uno::Reference< com::sun::star::util::XURLTransformer > xURLTransformer;
 
 	void SetUserAllowsLinkUpdate(SvBaseLink *pLink, sal_Bool allows);
 protected:
@@ -154,6 +161,14 @@ public:
 	static sal_Bool GetGraphicFromAny( const String& rMimeType,
 								const ::com::sun::star::uno::Any & rValue,
 								Graphic& rGrf );				
+
+    // Check whether a link URL must be subject to authorization
+    //
+    // An empty url is considered unsafe
+    sal_Bool urlIsSafe( const ::rtl::OUString &url );
+
+    // Check whether a link URL must be subject to authorization
+    sal_Bool urlIsSafe( const ::com::sun::star::util::URL &url );
 
 private:
 				LinkManager( const LinkManager& );
