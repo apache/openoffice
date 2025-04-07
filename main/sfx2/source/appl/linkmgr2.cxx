@@ -24,6 +24,9 @@
 
 #include <sfx2/linkmgr.hxx>
 #include <com/sun/star/document/UpdateDocMode.hpp>
+#include <com/sun/star/lang/XMultiServiceFactory.hpp>
+#include <com/sun/star/util/XURLTransformer.hpp>
+
 #include <sfx2/objsh.hxx>
 #include <svl/urihelper.hxx>
 #include <sot/formats.hxx>
@@ -38,6 +41,7 @@
 #include <svl/eitem.hxx>
 #include <svl/intitem.hxx>
 #include <unotools/localfilehelper.hxx>
+#include <comphelper/processfactory.hxx>
 #include <i18npool/mslangid.hxx>
 #include <sfx2/request.hxx>
 #include <vcl/dibtools.hxx>
@@ -536,6 +540,38 @@ sal_Bool LinkManager::GetGraphicFromAny( const String& rMimeType,
 		}
 	}
 	return bRet;
+}
+
+sal_Bool LinkManager::urlIsSafe( const ::rtl::OUString &url )
+{
+	if ( url.getLength() == 0 ) {
+		return sal_False;
+	}
+	if ( !xURLTransformer.is() ) {
+		const com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > xContext ( ::comphelper::getProcessComponentContext() );
+		com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiComponentFactory > xFactory ( xContext->getServiceManager(), ::com::sun::star::uno::UNO_QUERY );
+		if ( !xFactory.is() ) {
+			return sal_False;
+		}
+		xURLTransformer.set( xFactory->createInstanceWithContext( rtl::OUString::createFromAscii( "com.sun.star.util.URLTransformer" ), xContext), com::sun::star::uno::UNO_QUERY );
+		if ( !xURLTransformer.is() ) {
+			return sal_False;
+		}
+	}
+	com::sun::star::util::URL aURL;
+	aURL.Complete = url;
+	sal_Bool b = xURLTransformer->parseSmart( aURL, ::rtl::OUString() );
+	if ( !b ) {
+		return sal_False;
+	}
+	return urlIsSafe( aURL );
+}
+
+sal_Bool LinkManager::urlIsSafe( const ::com::sun::star::util::URL &url )
+{
+	sal_Bool result = ( url.Path.getLength() == 0 ) &&
+		( url.Server.getLength() == 0);
+	return result;
 }
 
 

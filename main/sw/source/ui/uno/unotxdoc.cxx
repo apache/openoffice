@@ -2374,6 +2374,28 @@ void SwXTextDocument::removeVetoableChangeListener(const OUString& /*PropertyNam
 {
 	DBG_WARNING("not implemented");
 }
+
+sal_Bool SwXTextDocument::authorizeLinks( const ::rtl::OUString& rURL ) throw( RuntimeException )
+{
+	SwDoc *doc = pDocShell->GetDoc();
+	if ( doc ) {
+		// The following access to the window is copied from SwDoc::UpdateLinks()
+		SfxMedium* pMedium = pDocShell->GetMedium();
+		SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
+		sfx2::LinkManager &pLinkMgr = doc->GetLinkManager();
+		if ( pLinkMgr.urlIsSafe( rURL ) ) {
+			return sal_True;
+		}
+		Window* pDlgParent = 0;
+		if ( pFrm )
+			pDlgParent = &pFrm->GetWindow();
+		if ( !pDlgParent )
+			pDlgParent = pDocShell->GetDialogParent( pMedium );
+		if ( pDlgParent )
+			return pLinkMgr.GetUserAllowsLinkUpdate( pDlgParent );
+	}
+	return sal_False;
+}
 /* -----------------25.10.99 10:42-------------------
 
  --------------------------------------------------*/
