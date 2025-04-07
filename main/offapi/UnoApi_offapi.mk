@@ -1818,6 +1818,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
 	offapi/com/sun/star/document/XImporter \
 	offapi/com/sun/star/document/XInteractionFilterOptions \
 	offapi/com/sun/star/document/XInteractionFilterSelect \
+	offapi/com/sun/star/document/XLinkAuthorizer \
 	offapi/com/sun/star/document/XLinkTargetSupplier \
 	offapi/com/sun/star/document/XMimeTypeInfo \
 	offapi/com/sun/star/document/XOOXMLDocumentPropertiesImporter \
