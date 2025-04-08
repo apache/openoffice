@@ -702,4 +702,3 @@ sal_Bool SfxDdeDocTopic_Impl::StartAdviseLoop()
 	}
 	return bRet;
 }
-

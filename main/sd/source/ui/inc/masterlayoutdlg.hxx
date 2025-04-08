@@ -71,4 +71,3 @@ public:
 }
 
 #endif // _SD_MASTERLAYOUT_DIALOG_HXX
-

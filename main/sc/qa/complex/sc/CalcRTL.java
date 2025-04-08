@@ -212,7 +212,7 @@ public class CalcRTL
             System.out.println("creating a sheetdocument");
             xSheetDoc = SOF.createCalcDoc(null);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             worked = false;
             e.printStackTrace(/*(PrintWriter) log*/ System.out);
         }
@@ -518,7 +518,7 @@ public class CalcRTL
     }
 
     /*
-     * This method inserts a RectangleShape into the calc document xSheetDoc and returns the resultung XShape-object
+     * This method inserts a RectangleShape into the calc document xSheetDoc and returns the resulting XShape-object
      */
     protected XShape getInsertedShape() {
         XShape insertedShape = null;

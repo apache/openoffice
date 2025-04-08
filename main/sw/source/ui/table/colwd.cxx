@@ -113,7 +113,3 @@ void SwTableWidthDlg::Apply()
             static_cast< sal_uInt16 >(aColEdit.GetValue() - 1),
             static_cast< sal_uInt16 >(aWidthEdit.Denormalize(aWidthEdit.GetValue(FUNIT_TWIP))));
 }
-
-
-
-

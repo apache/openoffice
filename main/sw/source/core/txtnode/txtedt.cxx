@@ -2272,4 +2272,3 @@ sal_Bool SwTxtFrm::HasPageNumberField()
 	return GetRegisteredIn()?((SwTxtNode*)GetRegisteredIn())->HasPageNumberField():false;
 }
 //Bug 120881(End)
-

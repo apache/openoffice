@@ -95,5 +95,3 @@ public class _XCellRangeReferrer extends MultiMethodTest {
         tRes.tested("getReferredCells()", bResult);
     }
 }
-
-

@@ -77,4 +77,3 @@ namespace rptui
 	};
 }
 #endif // RPTUI_COLORLISTENER_HXX
-

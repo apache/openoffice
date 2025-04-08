@@ -141,4 +141,3 @@ namespace connectivity
 	};
 }
 #endif // CONNECTIVITY_POOLCOLLECTION_HXX
-

@@ -1200,8 +1200,3 @@ void ScDocument::CompareDocument( ScDocument& rOtherDoc )
 
 	delete[] pOtherTabs;
 }
-
-
-
-
-

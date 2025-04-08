@@ -41,7 +41,7 @@ import com.sun.star.ui.dialogs.XFilePicker;
 * <ul>
 *  <li> <code>'space-metal.jpg'</code> : just to exist. </li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.ui.XFolderPicker
 */
 public class _XFilePicker extends MultiMethodTest {
@@ -152,5 +152,3 @@ public class _XFilePicker extends MultiMethodTest {
     }
 
 }
-
-

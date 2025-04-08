@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,17 +9,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:uof="http://schemas.uof.org/cn/2003/uof" xmlns:表="http://schemas.uof.org/cn/2003/uof-spreadsheet" xmlns:演="http://schemas.uof.org/cn/2003/uof-slideshow" xmlns:字="http://schemas.uof.org/cn/2003/uof-wordproc" xmlns:图="http://schemas.uof.org/cn/2003/graph" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" office:version="1.0" exclude-result-prefixes="office style text table draw fo xlink dc meta number presentation svg chart dr3d math form script config ooo ooow oooc dom xforms smil anim">
 	<xsl:output method="xml" indent="no" encoding="UTF-8" version="1.0"/>
 	<!--xsl:key name="colWidth" match="/office:automatic/style:style/" use="@style:column-width"/-->
@@ -315,7 +317,7 @@
 			<xsl:with-param name="picnumber" select="$picnumber"/>
 		</xsl:call-template>
 	</xsl:template>
-	<!--xsl:key match="/office:document/office:automatic-styles/style:style" name="graphicset" use="@style:name"/>	
+	<!--xsl:key match="/office:document/office:automatic-styles/style:style" name="graphicset" use="@style:name"/>
 
 	<xsl:template match="style:style[@style:family = 'graphics']">
 		<xsl:variable name="pic-name">
@@ -328,7 +330,7 @@
 			<xsl:with-param name="pic-name" select="$pic-name"/>
 			<xsl:with-param name="pic-num" select="$pic-num"/>
 			<xsl:with-param name="current-num" select="1"/>
-		</xsl:call-template>					
+		</xsl:call-template>
 	</xsl:template-->
 	<xsl:template name="pic-process">
 		<xsl:param name="pic-name"/>
@@ -372,7 +374,7 @@
 								<xsl:when test="$nodename='draw:polygon'">Freeform</xsl:when>
 								<xsl:when test="$nodename='draw:polyline'">Scribble</xsl:when>
 								<xsl:when test="$nodename='draw:ellipse'">Oval</xsl:when>
-								<xsl:when test="$nodename='draw:frame' and  child::draw:text-box[@fo:min-height]">排版框</xsl:when>
+								<xsl:when test="$nodename='draw:frame' and child::draw:text-box[@fo:min-height]">排版框</xsl:when>
 								<xsl:when test="$nodename='draw:frame' and child::draw:text-box">排版框</xsl:when>
 							</xsl:choose>
 						</图:名称>
@@ -970,7 +972,7 @@
 								</xsl:if>
 								<xsl:if test="@text:bullet-char">
 									<xsl:element name="字:项目符号">
-										<xsl:attribute name="uof:locID">t0171</xsl:attribute>                                        
+										<xsl:attribute name="uof:locID">t0171</xsl:attribute>
 										<xsl:value-of select="@text:bullet-char"/>
 									</xsl:element>
 								</xsl:if>
@@ -2427,7 +2429,7 @@
 							<xsl:attribute name="uof:locID">t0124</xsl:attribute>
 						</xsl:element>
 					</xsl:when>
-					<xsl:when test="name(.)='text:bookmark-start' or name(.)='text:bookmark-end' or  name(.)='draw:image' or name(.)='office:binary-data'">						
+					<xsl:when test="name(.)='text:bookmark-start' or name(.)='text:bookmark-end' or  name(.)='draw:image' or name(.)='office:binary-data'">
 						</xsl:when>
 					<xsl:otherwise>
 						<xsl:element name="字:文本串">
@@ -4380,7 +4382,7 @@
 
 
 	 MEASURE LIST:
-	 * 1 milimeter (mm), the basic measure
+	 * 1 millimeter (mm), the basic measure
 
 	 * 1 centimeter (cm) = 10 mm
 

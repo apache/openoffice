@@ -389,4 +389,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_FILE_FCODE_HXX_
-

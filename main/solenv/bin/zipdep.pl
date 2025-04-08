@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,28 +10,28 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
 #
-# mapgen  - generate a dependencies file for zip commando 
+# mapgen  - generate a dependencies file for zip commando
 #
 use Cwd;
 
 #### script id #####
 
-( $script_name = $0 ) =~ s/^.*\b(\w+)\.pl$/$1/; 
+( $script_name = $0 ) =~ s/^.*\b(\w+)\.pl$/$1/;
 
 $id_str = ' $Revision$ ';
 $id_str =~ /Revision:\s+(\S+)\s+\$/
@@ -123,7 +123,7 @@ sub perled_slashes {
 #
 sub get_zip_content {
 	&get_zip_entries(\@given_patterns);
-	my $file_name = ''; 
+	my $file_name = '';
 	foreach $file_name (keys %files_in_arch) {
 		if (-d $file_name) {
 			&get_dir_content($file_name, \%files_in_arch) if ($r || $R);
@@ -159,16 +159,16 @@ sub remove_uncompliant {
 	foreach $pattern (@$given_patterns) {
 		push(@reg_exps, &make_reg_exp($pattern));
 	};
-	# write file name as a value for the path(key)	
+	# write file name as a value for the path(key)
 	foreach my $file (keys %files_in_arch) {
 		next if (-d $file);
-		#print "$file\n"; 
+		#print "$file\n";
 		if ($file =~ /[\\ | \/](.+)$/) {
 			$files_in_arch{$file} = $1;
 		} else {
 			$files_in_arch{$file} = $file;
 		};
-	};	
+	};
 	foreach $pattern (@reg_exps) {
 		foreach my $file (keys %files_in_arch) {
 			if (!($files_in_arch{$file} =~ /$pattern/)) {
@@ -181,8 +181,8 @@ sub remove_uncompliant {
 };
 
 #
-# Procedure adds/removes to/from %files_in_arch all files, that are 
-# compliant to the patterns in array passed 
+# Procedure adds/removes to/from %files_in_arch all files, that are
+# compliant to the patterns in array passed
 #
 sub get_zip_entries {
 	if ($R) {
@@ -209,7 +209,7 @@ sub get_zip_entries {
 				$files_in_arch{$file_name}++;
 			};
 		};
-	} 
+	}
 };
 
 #
@@ -273,7 +273,7 @@ sub get_options {
 			unshift (@ARGV, '-'.$2);
 			next;
 		};
-# just ignore other switches...		
+# just ignore other switches...
 		$arg =~ /^-(\w+)$/		and	next;
 		$arg =~ /^\/\?$/			and &usage						and exit(0);
 		$zip_file = $arg		and next if (!$zip_file);
@@ -315,7 +315,7 @@ sub get_dir_content {
 		foreach $entry (@prj_dir_list) {
 			$entry =~ /^\.$/ and next;
 			$entry =~ /^\.\.$/ and next;
-			
+
 			$entry = $dir . '/' . $entry;
 			# if $enry is a dir - read all its files,
 			# otherwise store $entry itself
@@ -340,4 +340,3 @@ sub usage {
 	print STDERR "      [-n suffixes]  [-t mmddyyyy]  [-tt mmddyyyy]  [  zipfile [\n";
 	print STDERR "      file1 file2 ...]] [-xi list]\n";
 }
-

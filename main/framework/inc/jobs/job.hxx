@@ -66,7 +66,7 @@ namespace framework{
 /**
     @short  it represent a job; execute it and control it's lifetime
 
-    @descr  This implemetation can be used to wrapp jobs, execute it
+    @descr  This implementation can be used to wrap jobs, execute it
             synchronously or asynchronous, control it's lifetime
             and differe between jobs with and without configuration.
  */
@@ -123,7 +123,7 @@ class Job : public  css::lang::XTypeProvider
         /**
             For some special cases we must know the environment, in which
             this job runs. Means the frame inside which we may was triggered.
-            We use it too, to listen for closing events of this ressource.
+            We use it too, to listen for closing events of this resource.
 
             Please note: If m_xFrame is set - m_xModel should be NULL.
             Only one environment can be supported really.
@@ -133,7 +133,7 @@ class Job : public  css::lang::XTypeProvider
         /**
             For some special cases we must know the environment, in which
             this job runs. Means the document inside which we may was triggered.
-            We use it too, to listen for closing events of this ressource.
+            We use it too, to listen for closing events of this resource.
 
             Please note: If m_xModel is set - m_xFrame should be NULL.
             Only one environment can be supported really.

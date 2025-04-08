@@ -69,7 +69,7 @@ import share.LogWriter;
 *   is not specified. This file is used by 'GlobalTransfer'
 *   command as a source file for copying.</li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.ucb.XCommandProcessor
 */
 public class _XCommandProcessor {
@@ -212,7 +212,7 @@ public class _XCommandProcessor {
      * The following method tests are to be completed successfully before :
      * <ul>
      *  <li> <code> createCommandIdentifier() </code> : to have a unique
-     *  identifier which is used to abourt started command. </li>
+     *  identifier which is used to abort started command. </li>
      * </ul>
      */
     public boolean _abort() {

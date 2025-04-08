@@ -77,4 +77,3 @@ public:
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();
 };
 #endif /* SC_VBA_NAME_HXX */
-

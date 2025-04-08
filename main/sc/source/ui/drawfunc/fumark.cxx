@@ -280,7 +280,3 @@ void FuMarkRect::ForcePointer(const MouseEvent* /* pMEvt */)
 {
 	pViewShell->SetActivePointer( Pointer( POINTER_CHART ) );
 }
-
-
-
-

@@ -34,7 +34,7 @@ import util.utils;
 
 /**
 * Here <code>com.sun.star.connection.Acceptor</code> service is tested.<p>
-* Test allows to run object tests in several threads concurently.
+* Test allows to run object tests in several threads concurrently.
 * @see com.sun.star.connection.Acceptor
 * @see com.sun.star.connection.XAcceptor
 * @see com.sun.star.connection.XConnector
@@ -114,5 +114,3 @@ public class Acceptor extends TestCase {
         curPort = ((Integer)tEnv.getObjRelation("Acceptor.Port")).intValue();
     }
 }
-
-

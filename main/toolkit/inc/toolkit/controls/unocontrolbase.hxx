@@ -70,4 +70,3 @@ protected:
 
 
 #endif // _TOOLKIT_AWT_UNOCONTROLBASE_HXX_
-

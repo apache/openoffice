@@ -179,4 +179,3 @@ private:
 };
 
 #endif // _IDLC_ASTEXPRESSION_HXX_
-

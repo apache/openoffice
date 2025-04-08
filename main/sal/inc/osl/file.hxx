@@ -940,7 +940,7 @@ public:
 
 	/** Open a regular file.
 
-        Open a file. Only regular files	can be openend.
+        Open a file. Only regular files	can be opened.
         	        	
 	    @param uFlags [in]
 	    Specifies the open mode.
@@ -1947,4 +1947,3 @@ public:
 
 #endif  /* __cplusplus */
 #endif	/* _OSL_FILE_HXX_ */
-

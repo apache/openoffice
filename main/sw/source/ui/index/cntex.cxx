@@ -509,4 +509,3 @@ void SwMultiTOXTabDialog::CreateOrUpdateExample(
 		DBG_ERROR("::CreateExample() - exception caught");
 	}
 }
-

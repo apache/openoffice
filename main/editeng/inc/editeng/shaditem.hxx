@@ -104,4 +104,3 @@ inline SvxShadowItem &SvxShadowItem::operator=( const SvxShadowItem& rFmtShadow 
 }
 
 #endif // #ifndef _SVX_SHADITEM_HXX
-

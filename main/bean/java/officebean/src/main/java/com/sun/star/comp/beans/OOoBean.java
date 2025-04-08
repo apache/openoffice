@@ -1507,4 +1507,3 @@ xLayoutManager.showElement("private:resource/menubar/menubar");
 		}
 	}
 }
-

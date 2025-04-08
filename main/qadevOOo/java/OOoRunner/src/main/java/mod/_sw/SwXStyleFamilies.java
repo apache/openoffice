@@ -48,7 +48,7 @@ import com.sun.star.uno.UnoRuntime;
  *  <li> <code>com::sun::star::container::XIndexAccess</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.container.XNameAccess
  * @see com.sun.star.container.XElementAccess
  * @see com.sun.star.container.XIndexAccess
@@ -104,4 +104,3 @@ public class SwXStyleFamilies extends TestCase {
 
 
 }    // finish class SwXStyle
-

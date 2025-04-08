@@ -34,4 +34,3 @@
 #define REPORTDESIGN_DLLPRIVATE SAL_DLLPRIVATE
                                                                                                                              
 #endif /* INCLUDED_REPORTDESIGNDLLAPI_H */
-

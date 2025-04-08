@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -50,7 +50,7 @@ sub sorting_profile
 	for ( my $i = 0; $i <= $#{$profilesref}; $i++ )
 	{
 		my $line = ${$profilesref}[$i];
-		
+
 		if ( $line =~ /^\s*(\[.*\])\s*$/ )	# this is a section (every second line)
 		{
 			my $section = $1;
@@ -60,7 +60,7 @@ sub sorting_profile
 				my $sectionline = $section . "\n";
 				push(@definedsections, $section);
 				push(@profile, $sectionline);
-				
+
 				for ( my $j = 0; $j <= $#{$profilesref}; $j++ )
 				{
 					my $oneline = ${$profilesref}[$j];
@@ -71,8 +71,8 @@ sub sorting_profile
 						my $nextline = ${$profilesref}[$j+1];
 						push(@profile, $nextline);
 					}
-				} 
-			} 			
+				}
+			}
 		}
 	}
 
@@ -95,11 +95,11 @@ sub add_profile_into_filelist
 	if ( $allvariables->{'GLOBALFILEGID'} ) { $vclgid = $allvariables->{'GLOBALFILEGID'}; }
 	my $vclfile = installer::existence::get_specified_file($filesarrayref, $vclgid);
 
-	# copying all base data	
-	installer::converter::copy_item_object($vclfile, \%profile);			
+	# copying all base data
+	installer::converter::copy_item_object($vclfile, \%profile);
 
 	# and overriding all new values
-	
+
 	$profile{'ismultilingual'} = 0;
 	$profile{'sourcepath'} = $completeprofilename;
 	$profile{'Name'} = $oneprofile->{'Name'};
@@ -147,31 +147,31 @@ sub create_profiles
 	# the Profile has to be installed completely with all of its content and the correct name.
 	# Only complete profiles can belong to a specified module, but not ProfileItems!
 
-	# iterating over all files	
+	# iterating over all files
 
 	for ( my $i = 0; $i <= $#{$profilesref}; $i++ )
 	{
 		my $oneprofile = ${$profilesref}[$i];
 		my $dir = $oneprofile->{'Dir'};
 		if ( $dir eq "PREDEFINED_CONFIGDIR" ) { next; } 	# ignoring the profile sversion file
-	
+
 		my $profilegid = $oneprofile->{'gid'};
 		my $profilename = $oneprofile->{'Name'};
-		
+
 		my $localprofilesdir = $profilesdir . $installer::globals::separator . $profilegid; # uniqueness guaranteed by gid
 		if ( ! -d $localprofilesdir ) { installer::systemactions::create_directory($localprofilesdir); }
-	
+
 		my @onefile = ();
 		my $profileempty = 1;
-		
+
 		for ( my $j = 0; $j <= $#{$profileitemsref}; $j++ )
 		{
 			my $oneprofileitem = ${$profileitemsref}[$j];
-			
+
 			my $styles = "";
 			if ( $oneprofileitem->{'Styles'} ) { $styles = $oneprofileitem->{'Styles'}; }
 			if ( $styles =~ /\bINIFILETABLE\b/ ) { next; }	# these values are written during installation, not during packing
-			
+
 			my $profileid = $oneprofileitem->{'ProfileID'};
 
 			if ( $profileid eq $profilegid )
@@ -182,7 +182,7 @@ sub create_profiles
 				for (my $pk = 1; $pk <= 50; $pk++)
 				{
 					my $key = "ValueList" . $pk;
-					if ( $oneprofileitem->{$key} ) 
+					if ( $oneprofileitem->{$key} )
 						{ $value = $value . " " . $oneprofileitem->{$key} }
 				}
 				my $order = $oneprofileitem->{'Order'};	# ignoring order at the moment
@@ -191,10 +191,10 @@ sub create_profiles
 				push(@onefile, $line);
 				$line = $key . "=" . $value . "\n";
 				push(@onefile, $line);
-				
-				$profileempty = 0;			
+
+				$profileempty = 0;
 			}
-		}	
+		}
 
 		if ( $profileempty ) { next; } 	# ignoring empty profiles
 
@@ -205,12 +205,12 @@ sub create_profiles
 		{
 			include_windows_lineends($onefileref);
 		}
-		
+
 		# Saving the profile as a file
 		$completeprofilename = $localprofilesdir . $installer::globals::separator . $profilename;
-		
+
 		installer::files::save_file($completeprofilename, $onefileref);
-		
+
 		# Adding the file to the filearray
 		# Some data are set now, others are taken from the file "soffice.exe" ("soffice.bin")
 		add_profile_into_filelist($filesarrayref, $oneprofile, $completeprofilename, $allvariables);

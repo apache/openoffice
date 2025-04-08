@@ -92,4 +92,3 @@ public:
 };
 
 #endif	//_OBJDLG_HXX
-

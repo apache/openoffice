@@ -396,4 +396,3 @@ public:
 // undef for multiple use/inclusion of this header:
 #undef COMPHELPER_IMPLBASE_MAX_CTOR_ARGS
 #undef COMPHELPER_IMPLBASE_INTERFACE_NUMBER
-

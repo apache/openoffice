@@ -49,7 +49,7 @@ import util.utils;
 *  <li><code> getDispatchRecorder() </code></li>
 *  <li><code> dispatchAndRecord() </code></li>
 * </ul><p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.frame.XDispatchRecorderSupplier
 */
 public class _XDispatchRecorderSupplier extends MultiMethodTest {
@@ -91,7 +91,7 @@ public class _XDispatchRecorderSupplier extends MultiMethodTest {
             desktop = (XDesktop) UnoRuntime.queryInterface
                 (XDesktop.class, inst);
         } catch ( com.sun.star.uno.Exception e ) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create document", e );
         }

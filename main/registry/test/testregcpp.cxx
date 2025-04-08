@@ -699,5 +699,3 @@ void test_registry_CppApi()
 
     return;
 }
-
-

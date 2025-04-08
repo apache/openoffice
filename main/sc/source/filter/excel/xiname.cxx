@@ -256,4 +256,3 @@ const XclImpName* XclImpNameManager::GetName( sal_uInt16 nXclNameIdx ) const
 }
 
 // ============================================================================
-

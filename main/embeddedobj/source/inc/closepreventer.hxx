@@ -31,4 +31,3 @@ class OClosePreventer : public ::cppu::WeakImplHelper1 < ::com::sun::star::util:
 
     virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
 };
-

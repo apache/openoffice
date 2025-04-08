@@ -92,5 +92,3 @@ private:
 };
 
 #endif // _SAL_I18N_INPUTCONTEXT_HXX
-
-

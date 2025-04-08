@@ -273,4 +273,3 @@ AddFwsProtocols (Display *display, Window window)
 			XA_ATOM, 32, PropModeAppend,
 			(unsigned char *) fwsProtocols, nProtos);
 }
-

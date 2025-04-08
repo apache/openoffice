@@ -60,4 +60,3 @@ namespace reportdesign
 } // namespace reportdesign
 // =============================================================================
 #endif // INCLUDED_REPORT_VISTITOR_HXX
-

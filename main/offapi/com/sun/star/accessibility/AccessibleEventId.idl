@@ -283,7 +283,7 @@ published constants AccessibleEventId
         fields remain empty.  In this case the whole text may have changed
         and the listener should refetch the text completely.</li> </ol>
 
-        <p>When broadcasting an event allways prefer the first three cases
+        <p>When broadcasting an event always prefer the first three cases
         to the last one.  Use it only as a last resort.</p>
 
         <p> Text ranges should be as small as possible but, of course,

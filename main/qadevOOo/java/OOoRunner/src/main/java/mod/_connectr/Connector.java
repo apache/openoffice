@@ -117,5 +117,3 @@ public class Connector extends TestCase {
         curPort = ((Integer)tEnv.getObjRelation("Connector.Port")).intValue();
     }
 }
-
-

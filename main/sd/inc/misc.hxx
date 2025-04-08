@@ -28,5 +28,3 @@
 #undef STARIMAGE_AVAILABLE
 
 #endif // _SD_MISC_HXX
-
-

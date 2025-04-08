@@ -62,4 +62,3 @@ $(MISC)$/test_0_succeeded: $(BIN)$/xpdfimport$(EXECPOST) binary_0_out.def text_0
 #	diff --strip-trailing-cr $(MISC)$/binary_1_out binary_1_out.def
 #	diff --strip-trailing-cr $(MISC)$/text_1_out text_1_out.def
 #	$(TOUCH) $@
-

@@ -196,4 +196,3 @@ $(BIN)$/cli_bridgetest_inprocess.exe : \
 	$(GNUCOPY) cli_bridgetest_inprocess.ini $(BIN)
 
 .ENDIF
-

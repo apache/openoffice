@@ -220,4 +220,3 @@ namespace svxform
 {
     return ::svxform::LegacyFormController::Create( _rxORB );
 }
-

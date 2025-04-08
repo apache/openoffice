@@ -36,10 +36,10 @@ public class InfoCtrl {
 
     static public String setHtmlFrame(String position, String htmlInfoText) {
         if ( position.equals("header") ) {
-            htmlInfoText = "<HTML><BODY><FONT FACE=\"sans-serif\" SIZE=3>";
+            htmlInfoText = "<html><body><font face=\"sans-serif\" size=3>";
         }
         else if ( position.equals("end")) {
-            htmlInfoText = htmlInfoText + "</FONT></BODY></HTML>";
+            htmlInfoText = htmlInfoText + "</font></body></html>";
         }
         
         return htmlInfoText;

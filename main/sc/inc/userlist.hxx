@@ -84,4 +84,3 @@ inline sal_Bool ScUserList::operator!=( const ScUserList& r ) const
 	{ return !operator==( r ); }
 
 #endif
-

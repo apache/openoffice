@@ -78,4 +78,3 @@ struct SfxViewShell_Impl
 };
 
 #endif
-

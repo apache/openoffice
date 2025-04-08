@@ -1,6 +1,6 @@
 #!/bin/sh
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,19 +8,19 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
-# tries to locate the executable specified 
+# tries to locate the executable specified
 # as first parameter in the user's path.
 which() {
   if [ ! -z "$1" ]; then
@@ -33,7 +33,7 @@ which() {
   fi
 }
 
-# checks for the original mozilla start script(s) 
+# checks for the original mozilla start script(s)
 # and restrict the "-remote" semantics to those.
 run_mozilla() {
   if file "$1" | grep "script" > /dev/null && grep "NPL" "$1" > /dev/null; then
@@ -48,7 +48,7 @@ run_mozilla() {
   fi
 }
 
-# checks the browser value for a %s as defined in 
+# checks the browser value for a %s as defined in
 # http://www.catb.org/~esr/BROWSER/index.html
 run_browser() {
   echo "$1|$2" | awk '

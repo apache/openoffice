@@ -57,4 +57,3 @@ void uno_EnvDcp_getPurpose (rtl_uString const * pEnvDcp, rtl_uString ** ppEnvPur
 
 
 #endif
-

@@ -43,4 +43,3 @@ namespace connectivity
 }
 
 #endif //_CONNECTIVITY_CALC_STATEMENT_HXX_
-

@@ -768,6 +768,3 @@ void BibliographyLoader::removeVetoableChangeListener(
 {
 	//no vetoable properties
 }
-
-
-

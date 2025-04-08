@@ -35,5 +35,3 @@ extern void SvxWriteXML( EditEngine& rEditEngine, SvStream& rStream, const ESele
 extern void SvxReadXML( EditEngine& rEditEngine, SvStream& rStream, const ESelection& rSel );
 
 #endif
-
-

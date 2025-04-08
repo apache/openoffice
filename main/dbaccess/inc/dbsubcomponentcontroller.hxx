@@ -135,7 +135,7 @@ namespace dbaui
         */
         void displayError();
 
-		/** shows an info box with the string conntection lost.
+		/** shows an info box with the string connection lost.
 		*/
 		void connectionLostMessage() const;
 
@@ -206,4 +206,3 @@ namespace dbaui
 //........................................................................
 
 #endif // DBAUI_SUBCOMPONENTCONTROLLER_HXX
-

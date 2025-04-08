@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,16 +43,15 @@
 #define STR_OUTLOOK				15
 #define STR_OUTLOOKEXP			16
 #define STR_EVOLUTION			17
-#define STR_EVOLUTION_GROUPWISE	18 
+#define STR_EVOLUTION_GROUPWISE	18
 #define STR_EVOLUTION_LDAP		19
 #define STR_KAB					20
 #define STR_MACAB				21
 #define STR_EMBEDDED_HSQLDB     22
 #define STR_THUNDERBIRD			23
 #define STR_MYSQL_NATIVE		24
-                                
+
 #define STR_END					STR_MYSQL_NATIVE + 1
 
-                                
-#endif // _DBA_MISCRES_HRC_     
 
+#endif // _DBA_MISCRES_HRC_

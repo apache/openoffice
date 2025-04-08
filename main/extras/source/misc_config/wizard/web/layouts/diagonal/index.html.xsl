@@ -46,13 +46,13 @@
 	 
 	 <xsl:template name="toc">
 		<!--
-		     @ pre toc html here
+		     @ pre toc HTML here
 		-->
 		
 		<xsl:apply-templates select="/session/content/document"/>
 		
 		<!--
-		     @ post toc html here
+		     @ post toc HTML here
 		-->
 		
 	 </xsl:template>
@@ -108,13 +108,13 @@
 	 	 
 	 <xsl:template name="title">
 	    <!--
-	      @ Pre title html code here
+	      @ Pre title HTML code here
 	    -->
 	   <div style="position:absolute; left:280px; top:8px; width:220px; z-index:2; padding:10px" class="ccolor">
 		  <div align="center" class="toctitle">
 		  	<xsl:value-of select="/session/general-info/@title"/>
 	    <!--
-	      @ Post title html code here
+	      @ Post title HTML code here
 	    -->
 	    	</div>
     	</div>

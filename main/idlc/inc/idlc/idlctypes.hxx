@@ -261,4 +261,3 @@ enum ParseState
 };	
 
 #endif // _IDLC_IDLCTYPES_HXX_
-

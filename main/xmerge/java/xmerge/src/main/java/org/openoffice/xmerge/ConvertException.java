@@ -38,4 +38,3 @@ public class ConvertException extends Exception {
         super(message);
     }
 }
-

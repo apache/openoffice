@@ -71,4 +71,3 @@ void DeInitAtkBridge()
 {
     restore_gail_window_vtable();
 }
-

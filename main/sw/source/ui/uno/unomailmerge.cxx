@@ -1246,4 +1246,3 @@ uno::Reference< uno::XInterface > SAL_CALL SwXMailMerge_createInstance(
     uno::Reference< uno::XInterface > xRef = (cppu::OWeakObject *) new SwXMailMerge();
     return xRef;
 }
-

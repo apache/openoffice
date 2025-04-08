@@ -123,4 +123,3 @@ public final class PluginFactoryImpl extends SxcPluginFactory
         return merger;
     }
 }
-

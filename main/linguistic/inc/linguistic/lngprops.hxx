@@ -55,4 +55,3 @@
 #define WID_DEFAULT_LOCALE_CTL				UPH_DEFAULT_LOCALE_CTL
 
 #endif
-

@@ -26,4 +26,3 @@ $(eval $(call gb_Ant_Ant,java_uno_accessbridge,$(SRCDIR)/accessibility/java/java
 $(eval $(call gb_Ant_set_componentfile,java_uno_accessbridge,accessibility/java/java_uno_accessbridge/java_uno_accessbridge,OOO))
 
 # vim: set noet sw=4 ts=4:
-

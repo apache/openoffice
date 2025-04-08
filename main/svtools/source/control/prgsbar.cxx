@@ -251,4 +251,3 @@ void ProgressBar::DataChanged( const DataChangedEvent& rDCEvt )
 
 	Window::DataChanged( rDCEvt );
 }
-

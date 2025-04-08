@@ -480,4 +480,3 @@ public class SbaXGridControl extends TestCase {
         return oCShape;
     } // finish createGrid
 }
-

@@ -510,4 +510,3 @@ public:
 #endif // _OFA_AUTOCDLG_CXX
 
 #endif //
-

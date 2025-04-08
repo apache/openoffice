@@ -130,5 +130,3 @@ struct SvEventDescription;
 const SvEventDescription* ImplGetSupportedMacroItems();
 
 #endif
-
-

@@ -81,5 +81,3 @@ namespace connectivity
 //........................................................................
 
 #endif // _CONNECTIVITY_CPOOL_ZDRIVERWRAPPER_HXX_
-
-

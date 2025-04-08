@@ -1969,5 +1969,3 @@ void EDITENG_DLLPUBLIC ReplaceTextWithSynonym( EditView &rEditView, const String
     rEditView.InsertText( rSynonmText );
     rEditView.ShowCursor( sal_True, sal_False );
 }    
-
-

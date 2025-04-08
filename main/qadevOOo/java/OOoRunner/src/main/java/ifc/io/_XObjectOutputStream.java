@@ -88,4 +88,3 @@ public class _XObjectOutputStream extends MultiMethodTest {
         tRes.tested("writeObject()", label.equals("XObjectOutputStream")) ;
     }
 }
-

@@ -2321,4 +2321,3 @@ void SwFindRowSpanCache::SetCachedStartEndOfRowSpan( const SwTableBox& rKeyBox,
  */
 
 #endif
-

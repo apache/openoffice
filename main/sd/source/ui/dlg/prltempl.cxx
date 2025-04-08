@@ -348,6 +348,3 @@ sal_uInt16 SdPresLayoutTemplateDlg::GetOutlineLevel() const
 	}
 	return 0;
 }
-
-
-

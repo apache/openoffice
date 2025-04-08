@@ -41,7 +41,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::script::XInvocationAdapterFactory</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.script.XInvocationAdapterFactory
 * @see com.sun.star.script.InvocationAdapterFactory
 * @see ifc.script._XInvocationAdapterFactory

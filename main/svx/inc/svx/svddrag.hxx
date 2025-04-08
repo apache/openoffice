@@ -185,4 +185,3 @@ public:
 };
 
 #endif //_SVDDRAG_HXX
-

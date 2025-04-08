@@ -68,7 +68,7 @@ class COMPHELPER_DLLPUBLIC Locale
         static const sal_Unicode SEPERATOR_CV;
         
         /** @short separates COUNTRY and VARIANT part of an ISO formatted Locale.
-            @descr Its true for some linux derivates only :-( */
+            @descr Its true for some linux derivatives only :-( */
         static const sal_Unicode SEPERATOR_CV_LINUX;
         
         /** @short some predefined Locale objects. */
@@ -180,7 +180,7 @@ class COMPHELPER_DLLPUBLIC Locale
             
             @param      sISO
                         an ISO formatted string value, which can be parsed and
-                        tokenized into a Lamnguage, Country and Variant part.
+                        tokenized into a Language, Country and Variant part.
                         
             @throw      MalFormedLocaleException
                         if conversion failed.
@@ -231,7 +231,7 @@ class COMPHELPER_DLLPUBLIC Locale
         /** @short  returns the country/region code for this locale.
         
             @descr  That will either be the empty string or an
-                    upercase ISO 3166 2-letter code.
+                    uppercase ISO 3166 2-letter code.
         
             @return [string]
                     the country code.
@@ -261,7 +261,7 @@ class COMPHELPER_DLLPUBLIC Locale
         /** @short  set the new country/region code for this locale.
         
             @descr  That will either be the empty string or an
-                    upercase ISO 3166 2-letter code.
+                    uppercase ISO 3166 2-letter code.
         
             @param  sCountry
                     the country code.
@@ -283,7 +283,7 @@ class COMPHELPER_DLLPUBLIC Locale
             
             @param      sISO
                         an ISO formatted string value, which can be parsed and
-                        tokenized into a Lamnguage, Country and Variant part.
+                        tokenized into a Language, Country and Variant part.
                         e.g. "en-US" or "en-US_WIN"
                         
             @throw      MalFormedLocaleException
@@ -295,7 +295,7 @@ class COMPHELPER_DLLPUBLIC Locale
         //---------------------------------------
         /** @short  converts this Locale to an ISO formatted string value.
         
-            @descr  The different parts of this Locale will be assempled
+            @descr  The different parts of this Locale will be assembled
                     e.g. to "en-US" or "en-US_WIN"
                     
             @return [string]
@@ -352,7 +352,7 @@ class COMPHELPER_DLLPUBLIC Locale
                         If no "same" nor any "similar" locale could be found,
                         we try "x-default" and "x-notranslate" explicitly.
                         Sometimes localized variables are optimized and don't use
-                        localzation really. E.g. in case the localized value is a fix
+                        localization really. E.g. in case the localized value is a fix
                         product name.
                         
                         If no locale match till now, we use any other existing

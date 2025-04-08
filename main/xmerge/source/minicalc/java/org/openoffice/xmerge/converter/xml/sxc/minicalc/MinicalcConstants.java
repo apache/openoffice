@@ -38,4 +38,3 @@ interface MinicalcConstants {
     /** Type ID. */
     public static final int TYPE_ID = PdbUtil.intID("Data");
 }
-

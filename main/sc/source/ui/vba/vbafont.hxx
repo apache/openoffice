@@ -83,4 +83,3 @@ public:
 
 
 #endif /* SC_VBA_FONT_HXX */
-

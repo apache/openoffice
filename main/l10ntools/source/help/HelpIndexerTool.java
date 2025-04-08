@@ -405,4 +405,3 @@ public class HelpIndexerTool
         return aFile.delete();
     }
 }
-

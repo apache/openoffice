@@ -139,8 +139,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_QUERYTABLEVIEW_HXX
-
-
-
-
-

@@ -1488,11 +1488,11 @@ Paragraph* OutlineView::GetParagraphForPage( ::Outliner* pOutl, SdPage* pPage )
 		// if this paragraph is a page ...
 		if( mpOutliner->HasParaFlag(pPara,PARAFLAG_ISPAGE) )
 		{
-			// see if we already skiped enough pages
+			// see if we already skipped enough pages
 			if( 0 == nPagesToSkip )
 				break;	// and if so, end the loop
 
-			// we skiped another page
+			// we skipped another page
 			nPagesToSkip--;
 		}
 

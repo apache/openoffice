@@ -84,4 +84,3 @@ namespace pcr
 //........................................................................
 
 #endif // EXTENSIONS_SOURCE_PROPCTRLR_DEFAULTFORMINSPECTION_HXX
-

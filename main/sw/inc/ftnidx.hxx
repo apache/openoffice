@@ -72,4 +72,3 @@ public:
 
 
 #endif // _FTNIDX_HXX
-

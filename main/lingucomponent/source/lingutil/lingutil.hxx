@@ -106,4 +106,3 @@ void MergeNewStyleDicsAndOldStyleDics( std::list< SvtLinguConfigDictionaryEntry 
 rtl_TextEncoding getTextEncodingFromCharset(const sal_Char* pCharset);
 
 #endif
-

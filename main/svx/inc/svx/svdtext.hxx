@@ -81,4 +81,3 @@ private:
 };
 
 #endif //_SVDTEXT_HXX
-

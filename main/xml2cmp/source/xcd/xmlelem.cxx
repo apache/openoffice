@@ -256,5 +256,3 @@ MultipleAttrElement::Write2Html(	HtmlCreator & io_rHC ) const
 	if ( ! aAttrValues[0].is_no_text() )
 		io_rHC.Write_ReferenceDocu( Name(), aAttrValues[0], aAttrValues[1], aAttrValues[2] );
 }
-
-

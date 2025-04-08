@@ -145,4 +145,3 @@ private:
 } // namespace presentation
 
 #endif /* INCLUDED_SLIDESHOW_ACTIVITYBASE_HXX */
-

@@ -62,4 +62,3 @@ public class _TextFrame extends MultiPropertyTest {
     }
 
 } //finish class _TextFrame
-

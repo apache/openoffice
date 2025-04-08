@@ -1072,4 +1072,3 @@ bool ScOptSolverDlg::CallSolver()       // return true -> close dialog after cal
 
     return bClose;
 }
-

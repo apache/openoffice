@@ -153,4 +153,3 @@ class SVX_DLLPUBLIC SvxDrawPage : public ::cppu::WeakAggImplHelper5< ::com::sun:
 };
 
 #endif
-

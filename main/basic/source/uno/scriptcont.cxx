@@ -363,7 +363,7 @@ Any SAL_CALL SfxScriptLibraryContainer::importLibraryElement
 				}
 				catch(uno::Exception&)
 				{
-					OSL_TRACE("Failed to get documument object for %s", rtl::OUStringToOString( aElementName, RTL_TEXTENCODING_UTF8 ).getStr() );
+					OSL_TRACE("Failed to get document object for %s", rtl::OUStringToOString( aElementName, RTL_TEXTENCODING_UTF8 ).getStr() );
 				}
 			}
 		}
@@ -451,7 +451,7 @@ sal_Bool SAL_CALL SfxScriptLibraryContainer::verifyLibraryPassword
         bSuccess = implLoadPasswordLibrary( pImplLib, Name, sal_True );
         if( bSuccess )
         {
-            // The library gets modified by verifiying the password, because other-
+            // The library gets modified by verifying the password, because other-
             // wise for saving the storage would be copied and that doesn't work
             // with mtg's storages when the password is verified
             pImplLib->implSetModified( sal_True );
@@ -535,7 +535,7 @@ void SAL_CALL SfxScriptLibraryContainer::changeLibraryPassword( const OUString& 
 
         if( !bStorage && !pImplLib->mbDoc50Password )
         {
-            // Store applictaion basic crypted
+            // Store application basic crypted
 			uno::Reference< embed::XStorage > xStorage;
             storeLibraries_Impl( xStorage, sal_False );
             bKillUncryptedFiles = sal_True;
@@ -931,7 +931,7 @@ sal_Bool SfxScriptLibraryContainer::implLoadPasswordLibrary
 			}
 			catch( uno::Exception& )
 			{
-				OSL_ENSURE( 0, "### couln't open sub storage for library\n" );
+				OSL_ENSURE( 0, "### couldn't open sub storage for library\n" );
 				return sal_False;
 			}
 		}

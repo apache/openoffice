@@ -847,5 +847,3 @@ void SwSubFont::DoOnCapitals( SwDoCapitals &rDo )
 #ifdef _MSC_VER
 #pragma optimize("g",on)
 #endif
-
-

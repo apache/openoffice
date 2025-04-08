@@ -60,4 +60,3 @@ public:
                     
 };
 #endif //SC_VBA_OLEOBJECT_HXX
-

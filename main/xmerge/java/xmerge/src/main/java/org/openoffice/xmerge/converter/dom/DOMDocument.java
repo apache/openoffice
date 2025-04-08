@@ -402,7 +402,3 @@ public class DOMDocument
     }
 
 }
-
-
-
-

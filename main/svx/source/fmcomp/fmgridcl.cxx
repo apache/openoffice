@@ -2135,6 +2135,3 @@ void FmGridControl::KeyInput( const KeyEvent& rKEvt )
 		DbGridControl::KeyInput( rKEvt );
 }
 // -----------------------------------------------------------------------------
-
-
-

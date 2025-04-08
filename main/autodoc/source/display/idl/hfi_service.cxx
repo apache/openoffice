@@ -352,6 +352,3 @@ HF_IdlService::produce_MemberDetails( HF_SubTitleTable &  o_table,
         aProperty( Env(), o_table);
     aProperty.Produce_byData( i_ce );
 }
-
-
-

@@ -1461,4 +1461,3 @@ sal_Int8 DrawViewShell::ExecuteDrop (
 #pragma optimize ( "", on )
 #endif
 #endif
-

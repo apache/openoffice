@@ -40,4 +40,3 @@ $(eval $(call gb_SrsTarget_set_include,svx/textconversiondlgs,\
 $(eval $(call gb_SrsTarget_add_files,svx/textconversiondlgs,\
     svx/source/unodialogs/textconversiondlgs/chinese_dialogs.src \
 ))
-

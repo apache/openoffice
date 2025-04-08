@@ -1155,4 +1155,3 @@ bool StringRangeEnumerator::getRangesFromString( const OUString& i_rPageRange,
 
     return bRes;
 }
-

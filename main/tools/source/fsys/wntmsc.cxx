@@ -1072,6 +1072,3 @@ void FSysEnableSysErrorBox( sal_Bool bEnable )
         nErrorMode |= (SEM_FAILCRITICALERRORS|SEM_NOOPENFILEERRORBOX);
     SetErrorMode( nErrorMode );
 }
-
-
-

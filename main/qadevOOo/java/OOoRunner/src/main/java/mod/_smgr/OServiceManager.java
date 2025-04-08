@@ -57,7 +57,7 @@ import com.sun.star.uno.XInterface;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.lang.XMultiServiceFactory
  * @see com.sun.star.container.XContentEnumerationAccess
@@ -164,4 +164,3 @@ public class OServiceManager extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class OServiceManager
-

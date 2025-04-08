@@ -34,7 +34,7 @@ import com.sun.star.text.XTextEmbeddedObjectsSupplier;
  * <ul>
  *  <li><code> getEmbeddedObjects()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.text.XTextEmbeddedObjectsSupplier
  */
 public class _XTextEmbeddedObjectsSupplier extends MultiMethodTest {
@@ -54,4 +54,3 @@ public class _XTextEmbeddedObjectsSupplier extends MultiMethodTest {
     }
 
  }  // finish class _XTextEmbeddedObjectsSupplier
-

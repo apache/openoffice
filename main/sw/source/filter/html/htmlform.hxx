@@ -44,5 +44,3 @@ extern const sal_Char * __FAR_DATA aEventOptionTable[];
 
 
 #endif
-
-

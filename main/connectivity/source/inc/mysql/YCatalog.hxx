@@ -66,4 +66,3 @@ namespace connectivity
 	}
 }
 #endif // CONNECTIVITY_MYSQL_CATALOG_HXX
-

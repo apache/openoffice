@@ -37,7 +37,7 @@ import com.sun.star.text.XEndnotesSupplier;
  *  <li><code> getEndnotes()</code></li>
  *  <li><code> getEndnoteSettings()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.text.XEndnotesSupplier
  */
 public class _XEndnotesSupplier extends MultiMethodTest {
@@ -73,5 +73,3 @@ public class _XEndnotesSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XEndnotesSupplier
-
-

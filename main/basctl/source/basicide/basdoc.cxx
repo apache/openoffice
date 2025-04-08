@@ -92,4 +92,3 @@ void BasicDocShell::FillClass( SvGlobalName*, sal_uInt32*, String*, String*, Str
 
 void BasicDocShell::Draw( OutputDevice *, const JobSetup &, sal_uInt16 )
 {}
-

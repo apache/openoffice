@@ -287,4 +287,3 @@ UniString CntBoolItem::GetValueTextByVal(sal_Bool bTheValue) const
 		    UniString::CreateFromAscii(RTL_CONSTASCII_STRINGPARAM("sal_True")) :
 		    UniString::CreateFromAscii(RTL_CONSTASCII_STRINGPARAM("sal_False"));
 }
-

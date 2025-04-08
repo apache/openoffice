@@ -454,4 +454,3 @@ Download::stop()
 {
 	m_aCondition.set();
 }
-

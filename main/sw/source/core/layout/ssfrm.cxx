@@ -802,7 +802,3 @@ const SwRect SwFrm::UnionFrm( sal_Bool bBorder ) const
     (aRet.*fnRect->fnSetWidth)( nWidth );
 	return aRet;
 }
-
-
-
-

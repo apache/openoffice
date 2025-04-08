@@ -44,4 +44,3 @@ public:
 };
 
 #endif // _IDLC_ASTMODULE_HXX_
-

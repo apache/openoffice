@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
@@ -49,14 +47,14 @@ namespace drawinglayer
 		HitTestProcessor2D::HitTestProcessor2D(const geometry::ViewInformation2D& rViewInformation,
 			const basegfx::B2DPoint& rLogicHitPosition,
 			double fLogicHitTolerance,
-            bool bHitTextOnly)
+			bool bHitTextOnly)
 		:	BaseProcessor2D(rViewInformation),
 			maDiscreteHitPosition(),
 			mfDiscreteHitTolerance(0.0),
 			mbHit(false),
 			mbHitToleranceUsed(false),
 			mbUseInvisiblePrimitiveContent(true),
-            mbHitTextOnly(bHitTextOnly)
+			mbHitTextOnly(bHitTextOnly)
 		{
 			// init hit tolerance
 			mfDiscreteHitTolerance = fLogicHitTolerance;
@@ -69,11 +67,11 @@ namespace drawinglayer
 			else if(basegfx::fTools::more(mfDiscreteHitTolerance, 0.0))
 			{
 				// generate discrete hit tolerance
-				mfDiscreteHitTolerance = (getViewInformation2D().getObjectToViewTransformation() 
+				mfDiscreteHitTolerance = (getViewInformation2D().getObjectToViewTransformation()
 					* basegfx::B2DVector(mfDiscreteHitTolerance, 0.0)).getLength();
 			}
 
-			// gererate discrete hit position
+			// generate discrete hit position
 			maDiscreteHitPosition = getViewInformation2D().getObjectToViewTransformation() * rLogicHitPosition;
 
 			// check if HitTolerance is used
@@ -104,8 +102,8 @@ namespace drawinglayer
 			{
 				// check if a polygon edge is hit
 				return basegfx::tools::isInEpsilonRange(
-					aLocalPolygon, 
-					getDiscreteHitPosition(), 
+					aLocalPolygon,
+					getDiscreteHitPosition(),
 					fDiscreteHitTolerance);
 			}
 
@@ -133,10 +131,10 @@ namespace drawinglayer
 			if(aPolygonRange.isInside(getDiscreteHitPosition()))
 			{
 				// if a HitTolerance is given, check for polygon edge hit in epsilon first
-				if(bDiscreteHitToleranceUsed && 
+				if(bDiscreteHitToleranceUsed &&
 					basegfx::tools::isInEpsilonRange(
-						aLocalPolyPolygon, 
-						getDiscreteHitPosition(), 
+						aLocalPolyPolygon,
+						getDiscreteHitPosition(),
 						fDiscreteHitTolerance))
 				{
 					bRetval = true;
@@ -158,23 +156,23 @@ namespace drawinglayer
 		void HitTestProcessor2D::check3DHit(const primitive2d::ScenePrimitive2D& rCandidate)
 		{
 			// calculate relative point in unified 2D scene
-            const basegfx::B2DPoint aLogicHitPosition(getViewInformation2D().getInverseObjectToViewTransformation() * getDiscreteHitPosition());
+			const basegfx::B2DPoint aLogicHitPosition(getViewInformation2D().getInverseObjectToViewTransformation() * getDiscreteHitPosition());
 
-            // use bitmap check in ScenePrimitive2D
-            bool bTryFastResult(false);
+			// use bitmap check in ScenePrimitive2D
+			bool bTryFastResult(false);
 
-            if(rCandidate.tryToCheckLastVisualisationDirectHit(aLogicHitPosition, bTryFastResult))
-            {
-                mbHit = bTryFastResult;
-            }
-            else
-            {
-                basegfx::B2DHomMatrix aInverseSceneTransform(rCandidate.getObjectTransformation());
-                aInverseSceneTransform.invert();
-                const basegfx::B2DPoint aRelativePoint(aInverseSceneTransform * aLogicHitPosition);
+			if(rCandidate.tryToCheckLastVisualisationDirectHit(aLogicHitPosition, bTryFastResult))
+			{
+				mbHit = bTryFastResult;
+			}
+			else
+			{
+				basegfx::B2DHomMatrix aInverseSceneTransform(rCandidate.getObjectTransformation());
+				aInverseSceneTransform.invert();
+				const basegfx::B2DPoint aRelativePoint(aInverseSceneTransform * aLogicHitPosition);
 
                 // check if test point is inside scene's unified area at all
-                if(aRelativePoint.getX() >= 0.0 && aRelativePoint.getX() <= 1.0 
+                if(aRelativePoint.getX() >= 0.0 && aRelativePoint.getX() <= 1.0
                     && aRelativePoint.getY() >= 0.0 && aRelativePoint.getY() <= 1.0)
                 {
                     // get 3D view information
@@ -205,9 +203,9 @@ namespace drawinglayer
                                 {
                                     // bound volumes hit, geometric cut tests needed
                                     drawinglayer::processor3d::CutFindProcessor aCutFindProcessor(
-                                        rObjectViewInformation3D, 
-                                        aFront, 
-                                        aBack, 
+                                        rObjectViewInformation3D,
+                                        aFront,
+                                        aBack,
                                         true);
                                     aCutFindProcessor.process(rPrimitives);
 
@@ -232,7 +230,7 @@ namespace drawinglayer
 		        //         process(xExtracted2DSceneShadow);
 	            //     }
                 // }
-                
+
                 if(!getHit())
                 {
 		            // empty 3D scene; Check for border hit
@@ -272,7 +270,7 @@ namespace drawinglayer
 
 		void HitTestProcessor2D::processBasePrimitive2D(const primitive2d::BasePrimitive2D& rCandidate)
 		{
-            if(getHit())
+			if(getHit())
 			{
 				// stop processing as soon as a hit was recognized
 				return;
@@ -288,8 +286,8 @@ namespace drawinglayer
 
 					// create new local ViewInformation2D containing transformation
 					const geometry::ViewInformation2D aViewInformation2D(
-						getViewInformation2D().getObjectTransformation() * rTransformCandidate.getTransformation(), 
-						getViewInformation2D().getViewTransformation(), 
+						getViewInformation2D().getObjectTransformation() * rTransformCandidate.getTransformation(),
+						getViewInformation2D().getViewTransformation(),
 						getViewInformation2D().getViewport(),
 						getViewInformation2D().getVisualizedPage(),
 						getViewInformation2D().getViewTime(),
@@ -310,11 +308,11 @@ namespace drawinglayer
                     {
 					    // create hairline in discrete coordinates
 					    const primitive2d::PolygonHairlinePrimitive2D& rPolygonCandidate(static_cast< const primitive2d::PolygonHairlinePrimitive2D& >(rCandidate));
-    				
+
 					    // use hairline test
     					mbHit = checkHairlineHitWithTolerance(rPolygonCandidate.getB2DPolygon(), getDiscreteHitTolerance());
                     }
-					
+
 					break;
 				}
 				case PRIMITIVE2D_ID_POLYGONMARKERPRIMITIVE2D :
@@ -323,11 +321,11 @@ namespace drawinglayer
                     {
 					    // handle marker like hairline; no need to decompose in dashes
 					    const primitive2d::PolygonMarkerPrimitive2D& rPolygonCandidate(static_cast< const primitive2d::PolygonMarkerPrimitive2D& >(rCandidate));
-				
+
     					// use hairline test
     					mbHit = checkHairlineHitWithTolerance(rPolygonCandidate.getB2DPolygon(), getDiscreteHitTolerance());
                     }
-					
+
 					break;
 				}
 				case PRIMITIVE2D_ID_POLYGONSTROKEPRIMITIVE2D :
@@ -349,10 +347,10 @@ namespace drawinglayer
 						    else
 						    {
 							    // for all other B2DLINEJOIN_* do a hairline HitTest with expanded tolerance
-							    const basegfx::B2DVector aDiscreteHalfLineVector(getViewInformation2D().getObjectToViewTransformation() 
+							    const basegfx::B2DVector aDiscreteHalfLineVector(getViewInformation2D().getObjectToViewTransformation()
 								    * basegfx::B2DVector(rLineAttribute.getWidth() * 0.5, 0.0));
 							    mbHit = checkHairlineHitWithTolerance(
-								    rPolygonCandidate.getB2DPolygon(), 
+								    rPolygonCandidate.getB2DPolygon(),
 								    getDiscreteHitTolerance() + aDiscreteHalfLineVector.getLength());
 						    }
 					    }
@@ -363,7 +361,7 @@ namespace drawinglayer
 						    mbHit = checkHairlineHitWithTolerance(rPolygonCandidate.getB2DPolygon(), getDiscreteHitTolerance());
 					    }
                     }
-					
+
 					break;
 				}
 				case PRIMITIVE2D_ID_POLYGONWAVEPRIMITIVE2D :
@@ -373,7 +371,7 @@ namespace drawinglayer
 					    // do not use decompose; just handle like a line with width
 					    const primitive2d::PolygonWavePrimitive2D& rPolygonCandidate(static_cast< const primitive2d::PolygonWavePrimitive2D& >(rCandidate));
 					    double fLogicHitTolerance(0.0);
-					
+
 					    // if WaveHeight, grow by it
 					    if(basegfx::fTools::more(rPolygonCandidate.getWaveHeight(), 0.0))
 					    {
@@ -386,11 +384,11 @@ namespace drawinglayer
 						    fLogicHitTolerance += rPolygonCandidate.getLineAttribute().getWidth() * 0.5;
 					    }
 
-					    const basegfx::B2DVector aDiscreteHalfLineVector(getViewInformation2D().getObjectToViewTransformation() 
+					    const basegfx::B2DVector aDiscreteHalfLineVector(getViewInformation2D().getObjectToViewTransformation()
 						    * basegfx::B2DVector(fLogicHitTolerance, 0.0));
-    					
+
 					    mbHit = checkHairlineHitWithTolerance(
-						    rPolygonCandidate.getB2DPolygon(), 
+						    rPolygonCandidate.getB2DPolygon(),
 						    getDiscreteHitTolerance() + aDiscreteHalfLineVector.getLength());
                     }
 
@@ -402,7 +400,7 @@ namespace drawinglayer
                     {
 					    // create filled polyPolygon in discrete coordinates
 					    const primitive2d::PolyPolygonColorPrimitive2D& rPolygonCandidate(static_cast< const primitive2d::PolyPolygonColorPrimitive2D& >(rCandidate));
-    					
+
 					    // use fill hit test
     					mbHit = checkFillHitWithTolerance(rPolygonCandidate.getB2DPolyPolygon(), getDiscreteHitTolerance());
                     }
@@ -418,7 +416,7 @@ namespace drawinglayer
 					// the children are recursively checked for hit. This may be refined for
 					// parts where the content is completely transparent if needed.
 					process(rTransCandidate.getChildren());
-					
+
 					break;
 				}
 				case PRIMITIVE2D_ID_MASKPRIMITIVE2D :
@@ -426,7 +424,7 @@ namespace drawinglayer
 					// create mask in discrete coordinates; only recursively continue
 					// with content when HitTest position is inside the mask
 					const primitive2d::MaskPrimitive2D& rMaskCandidate(static_cast< const primitive2d::MaskPrimitive2D& >(rCandidate));
-					
+
 					// use fill hit test
 					if(checkFillHitWithTolerance(rMaskCandidate.getMask(), getDiscreteHitTolerance()))
 					{
@@ -480,10 +478,10 @@ namespace drawinglayer
                     if(!getHitTextOnly())
                     {
                         // The recently added BitmapEx::GetTransparency() makes it easy to extend
-                        // the BitmapPrimitive2D HitTest to take the contained BotmapEx and it's
+                        // the BitmapPrimitive2D HitTest to take the contained BitmapEx and its
                         // transparency into account
 					    const basegfx::B2DRange aRange(rCandidate.getB2DRange(getViewInformation2D()));
-                        
+
                         if(!aRange.isEmpty())
                         {
     					    const primitive2d::BitmapPrimitive2D& rBitmapCandidate(static_cast< const primitive2d::BitmapPrimitive2D& >(rCandidate));
@@ -493,10 +491,10 @@ namespace drawinglayer
                             if(rSizePixel.Width() && rSizePixel.Height())
                             {
                                 basegfx::B2DHomMatrix aBackTransform(
-                                    getViewInformation2D().getObjectToViewTransformation() * 
+                                    getViewInformation2D().getObjectToViewTransformation() *
                                     rBitmapCandidate.getTransform());
                                 aBackTransform.invert();
-                                
+
                                 const basegfx::B2DPoint aRelativePoint(aBackTransform * getDiscreteHitPosition());
                                 const basegfx::B2DRange aUnitRange(0.0, 0.0, 1.0, 1.0);
 
@@ -532,10 +530,10 @@ namespace drawinglayer
 					    // will be used for HitTest currently.
 					    //
 					    // This may be refined in the future, e.g:
-					    // - For Bitamps, the mask and/or transparence information may be used
+					    // - For Bitmaps, the mask and/or transparence information may be used
 					    // - For MetaFiles, the MetaFile content may be used
 					    const basegfx::B2DRange aRange(rCandidate.getB2DRange(getViewInformation2D()));
-                        
+
                         if(!aRange.isEmpty())
                         {
 					        const basegfx::B2DPolygon aOutline(basegfx::tools::createPolygonFromRect(aRange));
@@ -547,7 +545,7 @@ namespace drawinglayer
 				}
 				case PRIMITIVE2D_ID_HIDDENGEOMETRYPRIMITIVE2D :
 				{
-					// HiddenGeometryPrimitive2D; the default decomposition would return an empty seqence,
+					// HiddenGeometryPrimitive2D; the default decomposition would return an empty sequence,
 					// so force this primitive to process it's children directly if the switch is set
 					// (which is the default). Else, ignore invisible content
 				    const primitive2d::HiddenGeometryPrimitive2D& rHiddenGeometry(static_cast< const primitive2d::HiddenGeometryPrimitive2D& >(rCandidate));
@@ -560,13 +558,13 @@ namespace drawinglayer
                             process(rChildren);
 					    }
                     }
-					
+
 					break;
 				}
 				case PRIMITIVE2D_ID_POINTARRAYPRIMITIVE2D :
 				{
-                    if(!getHitTextOnly())
-                    {
+					if(!getHitTextOnly())
+					{
 					    const primitive2d::PointArrayPrimitive2D& rPointArrayCandidate(static_cast< const primitive2d::PointArrayPrimitive2D& >(rCandidate));
 					    const std::vector< basegfx::B2DPoint >& rPositions = rPointArrayCandidate.getPositions();
 					    const sal_uInt32 nCount(rPositions.size());
@@ -581,15 +579,15 @@ namespace drawinglayer
 							    mbHit = true;
 						    }
 					    }
-                    }
-					
+					}
+
 					break;
 				}
 				default :
 				{
 					// process recursively
 					process(rCandidate.get2DDecomposition(getViewInformation2D()));
-					
+
 					break;
 				}
 			}
@@ -598,5 +596,4 @@ namespace drawinglayer
 	} // end of namespace processor2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

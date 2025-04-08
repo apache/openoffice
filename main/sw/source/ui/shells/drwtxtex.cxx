@@ -1087,4 +1087,3 @@ void SwDrawTextShell::StateInsert(SfxItemSet &rSet)
 		nWhich = aIter.NextWhich();
 	}
 }
-

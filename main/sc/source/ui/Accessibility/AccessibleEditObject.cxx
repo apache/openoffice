@@ -549,4 +549,3 @@ uno::Reference< XAccessibleRelationSet > ScAccessibleEditObject::getAccessibleRe
 	}
 	return uno::Reference< XAccessibleRelationSet >();
 }
-

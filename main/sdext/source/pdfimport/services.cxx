@@ -181,4 +181,3 @@ extern "C" void* SAL_CALL component_getFactory(
     xFactory->acquire();
     return xFactory.get();
 }
-

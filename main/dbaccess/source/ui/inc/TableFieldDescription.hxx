@@ -160,4 +160,3 @@ namespace dbaui
 	typedef ::std::vector<OTableFieldDescRef>	OTableFields;
 }
 #endif //
-

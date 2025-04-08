@@ -496,4 +496,3 @@ void SAL_CALL UnoRoadmapControl::propertyChange( const PropertyChangeEvent& evt 
 }
 
 }
-

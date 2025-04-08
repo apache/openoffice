@@ -43,5 +43,3 @@ TryLaterQueryBox::TryLaterQueryBox( Window* pParent, ResMgr* pResMgr, const Stri
 TryLaterQueryBox::~TryLaterQueryBox()
 {
 }
-
-

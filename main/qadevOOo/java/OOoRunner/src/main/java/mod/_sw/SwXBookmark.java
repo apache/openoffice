@@ -48,7 +48,7 @@ import com.sun.star.uno.XInterface;
  *  <li> <code>com::sun::star::text::TextContent</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.container.XNamed
  * @see com.sun.star.lang.XComponent
  * @see com.sun.star.text.XTextContent
@@ -114,4 +114,3 @@ public class SwXBookmark extends TestCase {
 
 
 }    // finish class SwXBookmark
-

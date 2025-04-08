@@ -1328,6 +1328,3 @@ sal_uLong SwCursor::Find( const SfxItemSet& rSet, sal_Bool bNoCollections,
 
 	return nRet;
 }
-
-
-

@@ -86,4 +86,3 @@ inline const SwFmtSurround &SwFmt::GetSurround(sal_Bool bInP) const
 	{ return aSet.GetSurround(bInP); }
 
 #endif
-

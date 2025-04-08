@@ -108,5 +108,3 @@ class DependencyFinder
 
 
 #endif
-
-

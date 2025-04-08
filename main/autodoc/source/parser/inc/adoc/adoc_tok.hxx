@@ -54,5 +54,3 @@ class Token : public TextToken
 }   // namespace adoc
 
 #endif
-
-

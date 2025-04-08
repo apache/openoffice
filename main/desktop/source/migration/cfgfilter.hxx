@@ -190,5 +190,3 @@ public:
 #undef NS_UNO
 
 #endif
-
-

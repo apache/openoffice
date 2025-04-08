@@ -53,7 +53,7 @@ public:
     LogarithmicScaling( double fBase = 10.0 );
     virtual ~LogarithmicScaling();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( LogarithmicScaling )
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()
@@ -94,7 +94,7 @@ public:
     explicit ExponentialScaling( double fBase = 10.0 );
     virtual ~ExponentialScaling();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( ExponentialScaling )
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()
@@ -135,7 +135,7 @@ public:
     LinearScaling( double fSlope = 1.0, double fOffset = 0.0 );
     virtual ~LinearScaling();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( LinearScaling )
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()
@@ -175,7 +175,7 @@ public:
     explicit PowerScaling( double fExponent = 10.0 );
     virtual ~PowerScaling();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( PowerScaling )
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()
@@ -203,4 +203,3 @@ private:
 } //namespace chart
 //.............................................................................
 #endif
-

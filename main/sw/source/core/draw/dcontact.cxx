@@ -1591,7 +1591,7 @@ void SwDrawContact::Modify( const SfxPoolItem* pOld, const SfxPoolItem *pNew )
             // OD 10.10.2003 #112299# - no connect to layout during disconnection
             if ( !mbDisconnectInProgress )
             {
-                // determine old object retangle of 'master' drawing object
+                // determine old object rectangle of 'master' drawing object
                 // for notification
                 const Rectangle* pOldRect = 0L;
                 Rectangle aOldRect;
@@ -2246,7 +2246,7 @@ namespace sdr
 
                 if(rCandidate.GetViewContact().GetObjectCount())
                 {
-                    // is a group object itself, call resursively
+                    // is a group object itself, call recursively
                     impAddPrimitivesFromGroup(rCandidate, rOffsetMatrix, rDisplayInfo, rxTarget);
                 }
                 else
@@ -2381,7 +2381,7 @@ sdr::contact::ViewContact* SwDrawVirtObj::CreateObjectSpecificViewContact()
 }
 
 // #108784#
-// implemetation of SwDrawVirtObj
+// implementation of SwDrawVirtObj
 SwDrawVirtObj::SwDrawVirtObj( SdrObject&        _rNewObj,
                               SwDrawContact&    _rDrawContact )
     : SdrVirtObj( _rNewObj ),
@@ -2807,4 +2807,3 @@ SdrObject* SwDrawVirtObj::getFullDragClone() const
 }
 
 // eof
-

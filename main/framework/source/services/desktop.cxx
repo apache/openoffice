@@ -222,7 +222,7 @@ DEFINE_INIT_SERVICE                     (   Desktop,
                     Do such things in DEFINE_INIT_SERVICE() method, which is called automatically after your ctor!!!
                 b)  Baseclass OBroadcastHelper is a typedef in namespace cppu!
                     The Microsoft compiler has some problems to handle it right BY using namespace explicitly ::cppu::OBroadcastHelper.
-                    If we write it without a namespace or expand the typedef to OBrodcastHelperVar<...> -> it will be OK!?
+                    If we write it without a namespace or expand the typedef to OBroadcastHelperVar<...> -> it will be OK!?
                     I don't know why! (other compiler not tested .. but it works!)
 
     @seealso    method DEFINE_INIT_SERVICE()
@@ -231,7 +231,7 @@ DEFINE_INIT_SERVICE                     (   Desktop,
                 The value must be different from NULL!
     @return     -
 
-    @onerror    We throw an ASSERT in debug version or do nothing in relaese version.
+    @onerror    We throw an ASSERT in debug version or do nothing in release version.
 *//*-*************************************************************************************************************/
 Desktop::Desktop( const css::uno::Reference< css::lang::XMultiServiceFactory >& xFactory )
 		//	Init baseclasses first
@@ -268,7 +268,7 @@ Desktop::Desktop( const css::uno::Reference< css::lang::XMultiServiceFactory >& 
 {
 	// Safe impossible cases
 	// We don't accept all incoming parameter.
-    LOG_ASSERT2( implcp_ctor( xFactory ), "Desktop::Desktop()", "Invalid parameter detected!")
+	LOG_ASSERT2( implcp_ctor( xFactory ), "Desktop::Desktop()", "Invalid parameter detected!")
 }
 
 /*-************************************************************************************************************//**
@@ -284,29 +284,29 @@ Desktop::Desktop( const css::uno::Reference< css::lang::XMultiServiceFactory >& 
 *//*-*************************************************************************************************************/
 Desktop::~Desktop()
 {
-    LOG_ASSERT2( m_bIsTerminated                       ==sal_False, "Desktop::~Desktop()", "Who forgot to terminate the desktop service?" )
-    LOG_ASSERT2( m_aTransactionManager.getWorkingMode()!=E_CLOSE  , "Desktop::~Desktop()", "Who forgot to dispose this service?"          )
+	LOG_ASSERT2( m_bIsTerminated                       ==sal_False, "Desktop::~Desktop()", "Who forgot to terminate the desktop service?" )
+	LOG_ASSERT2( m_aTransactionManager.getWorkingMode()!=E_CLOSE  , "Desktop::~Desktop()", "Who forgot to dispose this service?"          )
 }
 
 //=============================================================================
 sal_Bool SAL_CALL Desktop::terminate()
-    throw( css::uno::RuntimeException )
+	throw( css::uno::RuntimeException )
 {
-    TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
+	TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
-    SYNCHRONIZED_START
-        ReadGuard aReadLock( m_aLock );
+	SYNCHRONIZED_START
+		ReadGuard aReadLock( m_aLock );
 
-        css::uno::Reference< css::frame::XTerminateListener > xPipeTerminator    = m_xPipeTerminator;
-        css::uno::Reference< css::frame::XTerminateListener > xQuickLauncher     = m_xQuickLauncher;
-        css::uno::Reference< css::frame::XTerminateListener > xSWThreadManager   = m_xSWThreadManager;
-        css::uno::Reference< css::frame::XTerminateListener > xSfxTerminator     = m_xSfxTerminator;
+		css::uno::Reference< css::frame::XTerminateListener > xPipeTerminator    = m_xPipeTerminator;
+		css::uno::Reference< css::frame::XTerminateListener > xQuickLauncher     = m_xQuickLauncher;
+		css::uno::Reference< css::frame::XTerminateListener > xSWThreadManager   = m_xSWThreadManager;
+		css::uno::Reference< css::frame::XTerminateListener > xSfxTerminator     = m_xSfxTerminator;
 
-        css::lang::EventObject                                aEvent             ( static_cast< ::cppu::OWeakObject* >(this) );
-        ::sal_Bool											  bAskQuickStart     = !m_bSuspendQuickstartVeto                  ;
+		css::lang::EventObject                                aEvent             ( static_cast< ::cppu::OWeakObject* >(this) );
+		::sal_Bool											  bAskQuickStart     = !m_bSuspendQuickstartVeto                  ;
 
-        aReadLock.unlock();
-    SYNCHRONIZED_END
+		aReadLock.unlock();
+	SYNCHRONIZED_END
 
     //-------------------------------------------------------------------------------------------------------------
     // Ask normal terminate listener. They could stop terminate without closing any open document.
@@ -1512,30 +1512,30 @@ sal_Bool SAL_CALL Desktop::convertFastPropertyValue(       css::uno::Any&   aCon
                                                      const css::uno::Any&   aValue          ) throw( css::lang::IllegalArgumentException )
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
-    // Register transaction and reject wrong calls.
-    TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
+	// Register transaction and reject wrong calls.
+	TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
 	//	Initialize state with sal_False !!!
 	//	(Handle can be invalid)
 	sal_Bool bReturn = sal_False;
 
-    switch( nHandle )
+	switch( nHandle )
 	{
-        case DESKTOP_PROPHANDLE_SUSPENDQUICKSTARTVETO:
+		case DESKTOP_PROPHANDLE_SUSPENDQUICKSTARTVETO:
                 bReturn = PropHelper::willPropertyBeChanged(
                     css::uno::makeAny(m_bSuspendQuickstartVeto),
                     aValue,
                     aOldValue,
                     aConvertedValue);
                 break;
-        case DESKTOP_PROPHANDLE_DISPATCHRECORDERSUPPLIER :
+		case DESKTOP_PROPHANDLE_DISPATCHRECORDERSUPPLIER :
                 bReturn = PropHelper::willPropertyBeChanged(
                     css::uno::makeAny(m_xDispatchRecorderSupplier),
                     aValue,
                     aOldValue,
                     aConvertedValue);
                 break;
-        case DESKTOP_PROPHANDLE_TITLE :
+		case DESKTOP_PROPHANDLE_TITLE :
                 bReturn = PropHelper::willPropertyBeChanged(
                     css::uno::makeAny(m_sTitle),
                     aValue,
@@ -1640,30 +1640,30 @@ void SAL_CALL Desktop::getFastPropertyValue( css::uno::Any& aValue  ,
 ::cppu::IPropertyArrayHelper& SAL_CALL Desktop::getInfoHelper()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
-    // Register transaction and reject wrong calls.
-    TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
+	// Register transaction and reject wrong calls.
+	TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
 	// Optimize this method !
 	// We initialize a static variable only one time. And we don't must use a mutex at every call!
 	// For the first call; pInfoHelper is NULL - for the second call pInfoHelper is different from NULL!
-    static ::cppu::OPropertyArrayHelper* pInfoHelper = NULL;
+	static ::cppu::OPropertyArrayHelper* pInfoHelper = NULL;
 
-    if( pInfoHelper == NULL )
+	if( pInfoHelper == NULL )
 	{
 		// Ready for multithreading
-        ::osl::MutexGuard aGuard( LockHelper::getGlobalLock().getShareableOslMutex() );
+		::osl::MutexGuard aGuard( LockHelper::getGlobalLock().getShareableOslMutex() );
 		// Control this pointer again, another instance can be faster then these!
-        if( pInfoHelper == NULL )
+		if( pInfoHelper == NULL )
 		{
 			// Define static member to give structure of properties to baseclass "OPropertySetHelper".
 			// "impl_getStaticPropertyDescriptor" is a non exported and static function, who will define a static propertytable.
 			// "sal_True" say: Table is sorted by name.
-            static ::cppu::OPropertyArrayHelper aInfoHelper( impl_getStaticPropertyDescriptor(), sal_True );
+			static ::cppu::OPropertyArrayHelper aInfoHelper( impl_getStaticPropertyDescriptor(), sal_True );
 			pInfoHelper = &aInfoHelper;
 		}
 	}
 
-    return(*pInfoHelper);
+	return(*pInfoHelper);
 }
 
 /*-************************************************************************************************************//**
@@ -1992,7 +1992,7 @@ void Desktop::impl_sendNotifyTerminationEvent()
 
 /*-----------------------------------------------------------------------------------------------------------------
 	The follow methods checks the parameter for other functions. If a parameter or his value is non valid,
-    we return "sal_True". (otherwise sal_False) This mechanism is used to throw an ASSERT!
+	we return "sal_True". (otherwise sal_False) This mechanism is used to throw an ASSERT!
 -----------------------------------------------------------------------------------------------------------------*/
 
 #ifdef ENABLE_ASSERTIONS

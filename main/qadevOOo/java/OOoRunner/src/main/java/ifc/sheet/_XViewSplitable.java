@@ -128,5 +128,3 @@ public class _XViewSplitable extends MultiMethodTest {
         tRes.tested("getSplitRow()", oObj.getSplitRow() != 0);
     }
 }  // finish class _XViewSplitable
-
-

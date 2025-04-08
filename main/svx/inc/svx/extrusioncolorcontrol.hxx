@@ -49,4 +49,3 @@ public:
 }
 
 #endif		// _SVX_EXTRUSIONCOLORCONTROL_HXX
-

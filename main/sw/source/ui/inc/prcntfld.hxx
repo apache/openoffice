@@ -92,4 +92,3 @@ public:
 };
 
 #endif // _PRCNTFLD_HXX
-

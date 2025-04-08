@@ -48,7 +48,7 @@ import com.sun.star.text.XMailMergeListener;
 *   used as parameter for <code>'Job'</code> </li>
 * </ul> <p>
 *
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.text.XMailMergeBroadcaster
 */
 public class _XMailMergeBroadcaster extends MultiMethodTest {
@@ -155,4 +155,3 @@ public class _XMailMergeBroadcaster extends MultiMethodTest {
 
 
 } // finished class _XMailMergeBroadcaster
-

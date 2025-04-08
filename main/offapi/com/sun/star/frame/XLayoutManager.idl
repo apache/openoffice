@@ -69,7 +69,7 @@ module com { module sun { module star { module frame {
     Every user interface element which is controlled by a layout manager has
     a unique identifier called resource URL.
 
-    A resourcce URL must meet the following syntax:
+    A resource URL must meet the following syntax:
     "private:resource/$type/$name". It is only allowed to use ascii characters
     for type and name.
 
@@ -81,7 +81,7 @@ module com { module sun { module star { module frame {
         a popup menu.</li>
         <li><b>toolbar</b>A configurable user interface element a tool
         bar.</li>
-        <li><b>statusbar</b>A configurable user interfave element representing
+        <li><b>statusbar</b>A configurable user interface element representing
         a status bar.</li>
         <li><b>floater</b>A basic user interface element representing a
         floating window.</li>
@@ -217,7 +217,7 @@ published interface XLayoutManager : com::sun::star::uno::XInterface
     */
     com::sun::star::ui::XUIElement getElement( [in] string ResourceURL );
 
-    /** retrieves all user interface elements which are currently instanciated.
+    /** retrieves all user interface elements which are currently instantiated.
 
         @return
             a sequence of user interface elements providing <type scope="com::sun::star::ui">XUIElement</type>
@@ -453,7 +453,7 @@ published interface XLayoutManager : com::sun::star::uno::XInterface
     /** prohibit all layout updates until unlock is called again.
 
         <p>
-        This call can be used to speed up the creation process of serveral user interface elements. Otherwise the layout manager
+        This call can be used to speed up the creation process of several user interface elements. Otherwise the layout manager
         would calculate the layout for every creation.
         </p>
     */

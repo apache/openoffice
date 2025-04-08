@@ -419,4 +419,3 @@ Reference< XSingleServiceFactory > XMLEncryption_NssImpl :: impl_createFactory( 
 	//return xFactory ;
 	return ::cppu::createSingleFactory( aServiceManager , impl_getImplementationName() , impl_createInstance , impl_getSupportedServiceNames() ) ;
 }
-

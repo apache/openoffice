@@ -171,16 +171,14 @@
 </section>
 <section id="Section61">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DROPDOWN" id="bm_id3146148" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154638" role="heading" level="2" l10n="U"
-oldref="19">Dropdown</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154638" role="heading" level="2" l10n="U">Dropdown</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152577" role="paragraph" l10n="U"><ahelp hid="HID_PROP_DROPDOWN" visibility="hidden">Specifies whether the combo box should dropdown (Yes) or not (No).</ahelp> A control field with the dropdown property has an additional arrow button which opens the list of the existing form entries per mouse click. Under <emph>Line count</emph>, you can specify how many lines (or rows) should be displayed in the dropdown state. Combination fields can have the dropdown property.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3159198" role="paragraph" l10n="U">Combo boxes that were inserted as columns in a table control are always dropdown as the default.</paragraph>
 </section>
 <section id="Section60">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_ALIGN" id="bm_id3150116" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_IMAGEPOSITION" id="bm_id2524491" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3153140" role="heading" level="2" l10n="CHG"
-oldref="11">Alignment / Graphics alignment</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153140" role="heading" level="2" l10n="CHG">Alignment / Graphics alignment</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151281" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_ALIGN" visibility="hidden">Specifies the alignment option for text or graphics that are used on a control.</ahelp> The alignment options are left-aligned, right-aligned, and centered. These options are available for the following elements:</paragraph>
 <list type="ordered">
 <listitem>
@@ -205,14 +203,12 @@ oldref="11">Alignment / Graphics alignment</paragraph>
 </section>
 <section id="Section59">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_AUTOCOMPLETE" id="bm_id3154790" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3151073" role="heading" level="2" l10n="CHG"
-oldref="76">AutoFill</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3151073" role="heading" level="2" l10n="CHG">AutoFill</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152375" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_AUTOCOMPLETE" visibility="hidden">Assigns the AutoFill function to a combo box.</ahelp> The AutoFill function displays a list of previous entries after you start to type an entry.<comment>UFI: changed AutoComplete to AutoFill (got changed by error in the UI, so we stay with it now, according to FS)</comment></paragraph>
 </section>
 <section id="Section58">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CONTROLLABEL" id="bm_id3151053" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154729" role="heading" level="2" l10n="U"
-oldref="216">Label field</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154729" role="heading" level="2" l10n="U">Label field</paragraph>
 <paragraph xml-lang="en-US" id="par_id3145801" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_CONTROLLABEL">Specifies the source for the label of the control.</ahelp> The text of the label field will be used instead of the name of a database field. For example, in the <emph>Filter Navigator</emph>, <emph>Search</emph> dialog, and as a column name in the table view.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153223" role="paragraph" l10n="U">To define one character of the label as a mnemonic, so that the user can access this control by pressing the character on the keyboard, insert a tilde (~) character in front of the character in the label.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154502" role="paragraph" l10n="U">Only the text of a group frame can be used as the label field when using radio buttons. This text applies to all of the radio buttons of the same group.</paragraph>
@@ -222,8 +218,7 @@ oldref="216">Label field</paragraph>
 </section>
 <section id="Section57">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_WIDTH" id="bm_id3156356" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3148834" role="heading" level="2" l10n="U"
-oldref="142">Width</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3148834" role="heading" level="2" l10n="U">Width</paragraph>
 <paragraph xml-lang="en-US" id="par_id3148566" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_WIDTH" visibility="hidden">Sets the column width in the table control field.</ahelp> Sets the column width in the table control field in the units that are specified in the %PRODUCTNAME module options. If you want, you can enter a value followed by a valid measurement unit, for example, 2 cm.</paragraph>
 </section>
 <section id="Section56">
@@ -238,35 +233,30 @@ oldref="142">Width</paragraph>
 </section>
 <section id="Section54">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_RECORDMARKER" id="bm_id3154272" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145164" role="heading" level="2" l10n="U"
-oldref="214">Record marker</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145164" role="heading" level="2" l10n="U">Record marker</paragraph>
 <paragraph xml-lang="en-US" id="par_id3147257" role="paragraph" l10n="U"><ahelp hid="HID_PROP_RECORDMARKER">Specifies whether the first column is displayed with row labels, in which the current record is marked by an arrow.</ahelp></paragraph>
 </section>
 <section id="Section53">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DATEFORMAT" id="bm_id3158419" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3151019" role="heading" level="2" l10n="U"
-oldref="82">Date format</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3151019" role="heading" level="2" l10n="U">Date format</paragraph>
 <paragraph xml-lang="en-US" id="par_id3152971" role="paragraph" l10n="U"><ahelp hid="HID_PROP_DATEFORMAT" visibility="hidden">Here, you can determine the format you want for the date readout.</ahelp> With date fields you can determine the format for the date readout.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151356" role="note" l10n="U"><variable id="hinweis">All format fields (date, time, currency, numeric) are formatted automatically in the selected format as soon as you leave them regardless of how you entered the input.
 </variable></paragraph>
 </section>
 <section id="Section52">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SPIN" id="bm_id3145642" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3156054" role="heading" level="2" l10n="U"
-oldref="87">Spin Button</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156054" role="heading" level="2" l10n="U">Spin Button</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154360" role="paragraph" l10n="U"><ahelp hid="HID_PROP_SPIN" visibility="hidden">The "Yes" option transforms the control field into a spin button, where corresponding arrow buttons are added.</ahelp> Numerical fields, currency fields, date and time fields can be introduced as spin buttons in the form.</paragraph>
 </section>
 <section id="Section51">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TRISTATE" id="bm_id3150386" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3159268" role="heading" level="2" l10n="U"
-oldref="173">Tristate</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3159268" role="heading" level="2" l10n="U">Tristate</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154254" role="paragraph" l10n="U"><ahelp hid="HID_PROP_TRISTATE">Specifies whether a check box can also represent ZERO values of a linked database apart from the TRUE and FALSE values.</ahelp> This function is only available if the database accepts three states: TRUE, FALSE and ZERO.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3156712" role="note" l10n="U">The <emph>Tristate</emph> property is only defined for database forms, not for HTML forms.</paragraph>
 </section>
 <section id="Section50">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_PRINTABLE" id="bm_id3145228" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3147324" role="heading" level="2" l10n="U"
-oldref="89">Printable</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3147324" role="heading" level="2" l10n="U">Printable</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154703" role="paragraph" l10n="U"><ahelp hid="HID_PROP_PRINTABLE">Specifies whether you want the control field to appear in a document's printout.</ahelp></paragraph>
 </section>
 <section id="Section88">
@@ -296,8 +286,7 @@ oldref="89">Printable</paragraph>
 </section>
 <section id="Section49">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_EDITMASK" id="bm_id3147001" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3155962" role="heading" level="2" l10n="U"
-oldref="91">Edit mask</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3155962" role="heading" level="2" l10n="U">Edit mask</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150938" role="paragraph" l10n="U"><ahelp hid="HID_PROP_EDITMASK" visibility="hidden">Defines the edit mask. By specifying a character code you can determine what the user can enter in the control field.</ahelp> By specifying the character code in pattern fields, you can determine what the user can enter in the pattern field.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3148479" role="paragraph" l10n="U">The length of the edit mask determines the number of the possible input positions. If the user enters characters that do not correspond to the edit mask, the input is rejected when the user leaves the field. You can enter the following characters to define the edit mask:</paragraph>
 <table id="tbl_id3155607">
@@ -406,63 +395,59 @@ oldref="91">Edit mask</paragraph>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3149771" role="paragraph" l10n="U" oldref="65">_parent</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149771" role="paragraph" l10n="U">_parent</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3159143" role="paragraph" l10n="U" oldref="66">The next document is created in a parent frame. If no parent exists, the document is created in the same frame.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
-<paragraph xml-lang="en-US" id="par_id3151374" role="paragraph" l10n="U" oldref="67">_self</paragraph>
-</tablecell>
-<tablecell>
-<paragraph xml-lang="en-US" id="par_id3148600" role="paragraph" l10n="U" oldref="68">The next document is created in the same frame.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3159143" role="paragraph" l10n="U">The next document is created in a parent frame. If no parent exists, the document is created in the same frame.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3153067" role="paragraph" l10n="U" oldref="69">_top</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151374" role="paragraph" l10n="U">_self</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3149174" role="paragraph" l10n="U" oldref="70">The next document is created in a top-level window, that is, in the highest frame of the hierarchy; if the current frame is already a top window, the document is created in the current frame.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148600" role="paragraph" l10n="U">The next document is created in the same frame.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id3153067" role="paragraph" l10n="U">_top</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id3149174" role="paragraph" l10n="U">The next document is created in a top-level window, that is, in the highest frame of the hierarchy; if the current frame is already a top window, the document is created in the current frame.</paragraph>
 </tablecell>
 </tablerow>
 </table>
 </section>
-<paragraph xml-lang="en-US" id="par_id3156172" role="note" l10n="CHG" oldref="185">The Frame property is relevant for HTML forms, but not for database forms.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156172" role="note" l10n="CHG">The Frame property is relevant for HTML forms, but not for database forms.</paragraph>
 </section>
 <section id="Section46">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_IMAGE_URL" id="bm_id3156191" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3146950" role="heading" level="2" l10n="U"
-oldref="114">Graphics</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154344" role="paragraph" l10n="U" oldref="115">An image button has a <emph>Graphics</emph> property. <ahelp hid="HID_PROP_IMAGE_URL">The <emph>Graphics</emph> property specifies the graphic's path and file name that you want to have displayed on the button.</ahelp> If you select the graphic file with the <emph>...</emph> button, the path and file name will be automatically included in the text box.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146950" role="heading" level="2" l10n="U">Graphics</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154344" role="paragraph" l10n="U">An image button has a <emph>Graphics</emph> property. <ahelp hid="HID_PROP_IMAGE_URL">The <emph>Graphics</emph> property specifies the graphic's path and file name that you want to have displayed on the button.</ahelp> If you select the graphic file with the <emph>...</emph> button, the path and file name will be automatically included in the text box.</paragraph>
 </section>
 <section id="Section44">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_HELPTEXT" id="bm_id3151131" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3150530" role="heading" level="2" l10n="U"
-oldref="208">Help text</paragraph>
-<paragraph xml-lang="en-US" id="par_id3156310" role="paragraph" l10n="U" oldref="209"><ahelp hid="HID_PROP_HELPTEXT">Provides the option of entering a help text that will be displayed as a tip on the control.</ahelp> The tip shows the text in user mode when the mouse is moved over the control.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153287" role="paragraph" l10n="U" oldref="210">For URL type buttons, the help text appears as the extended tip instead of the URL address entered under URL.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150530" role="heading" level="2" l10n="U">Help text</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156310" role="paragraph" l10n="U"><ahelp hid="HID_PROP_HELPTEXT">Provides the option of entering a help text that will be displayed as a tip on the control.</ahelp> The tip shows the text in user mode when the mouse is moved over the control.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153287" role="paragraph" l10n="U">For URL type buttons, the help text appears as the extended tip instead of the URL address entered under URL.</paragraph>
 </section>
 <section id="Section43">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_HELPURL" id="bm_id3156336" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145377" role="heading" level="2" l10n="U"
-oldref="212">Help URL</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148649" role="paragraph" l10n="U" oldref="213"><ahelp hid="HID_PROP_HELPURL">Specifies a batch label in URL spelling which refers to a help document and which can be called with the help of the control field.</ahelp> The help for the control field help can be opened if the focus is positioned on the control field and the user presses F1.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145377" role="heading" level="2" l10n="U">Help URL</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148649" role="paragraph" l10n="U"><ahelp hid="HID_PROP_HELPURL">Specifies a batch label in URL spelling which refers to a help document and which can be called with the help of the control field.</ahelp> The help for the control field help can be opened if the focus is positioned on the control field and the user presses F1.</paragraph>
 </section>
 <section id="Section42">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_BACKGROUNDCOLOR" id="bm_id3149545" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3152541" role="heading" level="2" l10n="U" oldref="3">Background color</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155073" role="paragraph" l10n="U" oldref="4"><ahelp hid="HID_PROP_BACKGROUNDCOLOR" visibility="hidden">Sets the background color of the control field.</ahelp>A background color is available for most control fields. If you click on <emph>Background color</emph>, a list will open which enables you to select among various colors. The "Standard" option adopts the system setting. If the desired color is not listed, click the <emph>...</emph> button to define a color in the <link href="text/shared/optionen/01010501.xhp" name="Color"><emph>Color</emph></link> dialog.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3152541" role="heading" level="2" l10n="U">Background color</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155073" role="paragraph" l10n="U"><ahelp hid="HID_PROP_BACKGROUNDCOLOR" visibility="hidden">Sets the background color of the control field.</ahelp>A background color is available for most control fields. If you click on <emph>Background color</emph>, a list will open which enables you to select among various colors. The "Standard" option adopts the system setting. If the desired color is not listed, click the <emph>...</emph> button to define a color in the <link href="text/shared/optionen/01010501.xhp" name="Color"><emph>Color</emph></link> dialog.</paragraph>
 </section>
 <section id="Section41">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_HSCROLL" id="bm_id3149895" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_VSCROLL" id="bm_id3149517" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SHOW_SCROLLBARS" id="bm_id6053651" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3148971" role="heading" level="2" l10n="CHG"
-oldref="40">Scrollbar</paragraph>
-<paragraph xml-lang="en-US" id="par_id3144430" role="paragraph" l10n="CHG" oldref="41"><ahelp hid="HID_PROP_HSCROLL" visibility="hidden">Adds the scrollbar type that you specify to a text box.</ahelp>Adds the scrollbar type that you specify to a text box.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3148971" role="heading" level="2" l10n="CHG">Scrollbar</paragraph>
+<paragraph xml-lang="en-US" id="par_id3144430" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_HSCROLL" visibility="hidden">Adds the scrollbar type that you specify to a text box.</ahelp>Adds the scrollbar type that you specify to a text box.</paragraph>
 </section>
 <section id="Section78">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SPININCREMENT" id="bm_id3022247" localize="false"/>
@@ -471,52 +456,45 @@ oldref="40">Scrollbar</paragraph>
 </section>
 <section id="Section40">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_VALUESTEP" id="bm_id3150624" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3146779" role="heading" level="2" l10n="U"
-oldref="85">Value step</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155096" role="paragraph" l10n="CHG" oldref="86"><ahelp hid="HID_PROP_VALUESTEP" visibility="hidden">Determines spin button intervals.</ahelp> You can preset the value intervals for numerical and currency spin buttons. Use the up and down arrows of the spin button to increase or decrease the value.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146779" role="heading" level="2" l10n="U">Value step</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155096" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_VALUESTEP" visibility="hidden">Determines spin button intervals.</ahelp> You can preset the value intervals for numerical and currency spin buttons. Use the up and down arrows of the spin button to increase or decrease the value.</paragraph>
 </section>
 <section id="Section39">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_STRINGITEMLIST" id="bm_id3153975" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145756" role="heading" level="2" l10n="U"
-oldref="73">List entries</paragraph>
-<paragraph xml-lang="en-US" id="par_id3151300" role="paragraph" l10n="CHG" oldref="120"><ahelp hid="HID_PROP_STRINGITEMLIST" visibility="hidden">Defines the list entries visible in the document. Open this list and type your text. Use Shift+Enter for a new line. With list and combo boxes, you can define the list entries that will be visible in the document. Open the <emph>List entries</emph> field and type your text.</ahelp> Please note the <link href="text/shared/02/01170100.xhp" name="tips">tips</link> referring to the keyboard controls.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152874" role="paragraph" l10n="U" oldref="228">The predefined default list entry is entered into the <emph>Default selection combo</emph> box.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154610" role="note" l10n="U" oldref="186">Note that the list entries entered here are only incorporated into the form if, on the <emph>Data</emph> tab under <emph>List Content Type</emph>, the option "Value List" is selected.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154767" role="paragraph" l10n="U" oldref="188">If you do not want the list entries to be written to the database or transmitted to the recipient of the Web form, but rather assigned values that are not visible in the form, you can assign the list entries to other values in a value list. The value list is determined on the <link href="text/shared/02/01170102.xhp" name="Data"><emph>Data</emph></link> tab. Under <emph>Type of List Contents</emph>, select the option "Value List". Then enter the values under <emph>List Contents</emph> that are to be assigned to the corresponding visible list entries of the form. For the correct assignment, the order in the value list is relevant.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150511" role="note" l10n="U" oldref="189">For HTML documents, a list entry entered on the <emph>General</emph> tab corresponds to the HTML tag &lt;OPTION&gt;; an entry of the value list entered on the <emph>Data</emph> tab under <emph>List Contents</emph> corresponds to the &lt;OPTION VALUE=...&gt; tag.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145756" role="heading" level="2" l10n="U">List entries</paragraph>
+<paragraph xml-lang="en-US" id="par_id3151300" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_STRINGITEMLIST" visibility="hidden">Defines the list entries visible in the document. Open this list and type your text. Use Shift+Enter for a new line. With list and combo boxes, you can define the list entries that will be visible in the document. Open the <emph>List entries</emph> field and type your text.</ahelp> Please note the <link href="text/shared/02/01170100.xhp" name="tips">tips</link> referring to the keyboard controls.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152874" role="paragraph" l10n="U">The predefined default list entry is entered into the <emph>Default selection combo</emph> box.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154610" role="note" l10n="U">Note that the list entries entered here are only incorporated into the form if, on the <emph>Data</emph> tab under <emph>List Content Type</emph>, the option "Value List" is selected.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154767" role="paragraph" l10n="U">If you do not want the list entries to be written to the database or transmitted to the recipient of the Web form, but rather assigned values that are not visible in the form, you can assign the list entries to other values in a value list. The value list is determined on the <link href="text/shared/02/01170102.xhp" name="Data"><emph>Data</emph></link> tab. Under <emph>Type of List Contents</emph>, select the option "Value List". Then enter the values under <emph>List Contents</emph> that are to be assigned to the corresponding visible list entries of the form. For the correct assignment, the order in the value list is relevant.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150511" role="note" l10n="U">For HTML documents, a list entry entered on the <emph>General</emph> tab corresponds to the HTML tag &lt;OPTION&gt;; an entry of the value list entered on the <emph>Data</emph> tab under <emph>List Contents</emph> corresponds to the &lt;OPTION VALUE=...&gt; tag.</paragraph>
 </section>
 <section id="Section38">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DATEMAX" id="bm_id3154336" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154290" role="heading" level="2" l10n="U"
-oldref="121">Date max</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148637" role="paragraph" l10n="U" oldref="122"><ahelp hid="HID_PROP_DATEMAX" visibility="hidden">Determines a date which can not be exceeded by another value introduced by the user.</ahelp> Determines a date which can not be exceeded by another value introduced by the user.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154290" role="heading" level="2" l10n="U">Date max</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148637" role="paragraph" l10n="U"><ahelp hid="HID_PROP_DATEMAX" visibility="hidden">Determines a date which can not be exceeded by another value introduced by the user.</ahelp> Determines a date which can not be exceeded by another value introduced by the user.</paragraph>
 </section>
 <section id="Section37">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_MAXTEXTLEN" id="bm_id3149391" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3149804" role="heading" level="2" l10n="U"
-oldref="123">Max text length</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150776" role="paragraph" l10n="U" oldref="124"><ahelp hid="HID_PROP_MAXTEXTLEN" visibility="hidden">Defines the maximum number of characters that the user can enter.</ahelp> For text and combo boxes, you can define the maximum number of characters that the user can enter. If this control field property is uncertain, the default setting will be zero.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153813" role="paragraph" l10n="U" oldref="190">If the control is linked to a database and the text length is to be accepted from the field definition of the database, you must not enter the text length here. The settings are only accepted from the database if the control property was not defined ("Not Defined" state).</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3149804" role="heading" level="2" l10n="U">Max text length</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150776" role="paragraph" l10n="U"><ahelp hid="HID_PROP_MAXTEXTLEN" visibility="hidden">Defines the maximum number of characters that the user can enter.</ahelp> For text and combo boxes, you can define the maximum number of characters that the user can enter. If this control field property is uncertain, the default setting will be zero.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153813" role="paragraph" l10n="U">If the control is linked to a database and the text length is to be accepted from the field definition of the database, you must not enter the text length here. The settings are only accepted from the database if the control property was not defined ("Not Defined" state).</paragraph>
 </section>
 <section id="Section36">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_VALUEMAX" id="bm_id3145145" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_EFFECTIVEMAX" id="bm_id3155345" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SPINVALUE_MAX" id="bm_id5229956" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145599" role="heading" level="2" l10n="U"
-oldref="125">Value max</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154733" role="paragraph" l10n="U" oldref="126"><ahelp hid="HID_PROP_EFFECTIVEMAX" visibility="hidden">Defines a value for the control field which can not be exceeded by another value introduced by the user.</ahelp> For numerical and currency fields, you can determine the maximum value that the user can enter.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145599" role="heading" level="2" l10n="U">Value max</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154733" role="paragraph" l10n="U"><ahelp hid="HID_PROP_EFFECTIVEMAX" visibility="hidden">Defines a value for the control field which can not be exceeded by another value introduced by the user.</ahelp> For numerical and currency fields, you can determine the maximum value that the user can enter.</paragraph>
 </section>
 <section id="Section35">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TIMEMAX" id="bm_id3154712" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154835" role="heading" level="2" l10n="U"
-oldref="127">Time max</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155762" role="paragraph" l10n="U" oldref="128"><ahelp hid="HID_PROP_TIMEMAX" visibility="hidden">Determines a time which can not be exceeded by another value introduced by the user.</ahelp> Determines a time which can not be exceeded by another value introduced by the user.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154835" role="heading" level="2" l10n="U">Time max</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155762" role="paragraph" l10n="U"><ahelp hid="HID_PROP_TIMEMAX" visibility="hidden">Determines a time which can not be exceeded by another value introduced by the user.</ahelp> Determines a time which can not be exceeded by another value introduced by the user.</paragraph>
 </section>
 <section id="Section34">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_MULTISELECTION" id="bm_id3154168" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3150416" role="heading" level="2" l10n="U"
-oldref="129">Multiselection</paragraph>
-<paragraph xml-lang="en-US" id="par_id3143275" role="paragraph" l10n="CHG" oldref="130"><ahelp hid="HID_PROP_MULTISELECTION" visibility="hidden">Allows you to select more than one item in a list box.</ahelp>Allows you to select more than one item in a list box.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150416" role="heading" level="2" l10n="U">Multiselection</paragraph>
+<paragraph xml-lang="en-US" id="par_id3143275" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_MULTISELECTION" visibility="hidden">Allows you to select more than one item in a list box.</ahelp>Allows you to select more than one item in a list box.</paragraph>
 </section>
 <section id="Section33">
 <bookmark xml-lang="en-US" branch="index" id="bm_id4040955">
@@ -525,9 +503,8 @@ oldref="129">Multiselection</paragraph>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_MULTILINE" id="bm_id3156370" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TEXTTYPE" id="bm_id6511734" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3148527" role="heading" level="2" l10n="CHG"
-oldref="21">Text type<comment>UFI: now renamed to Text Type, see #i24386#</comment><comment>UFI: see dba spec prop_browser_enhancements.sxw</comment></paragraph>
-<paragraph xml-lang="en-US" id="par_id3153724" role="paragraph" l10n="CHG" oldref="22"><ahelp hid="37933">Allows you to use line breaks and formatting in a control field, such as a text box or label. To manually enter a line break, press the Enter key. Select "Multi-line with formatting" to enter formatted text.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3148527" role="heading" level="2" l10n="CHG">Text type<comment>UFI: now renamed to Text Type, see #i24386#</comment><comment>UFI: see dba spec prop_browser_enhancements.sxw</comment></paragraph>
+<paragraph xml-lang="en-US" id="par_id3153724" role="paragraph" l10n="CHG"><ahelp hid="37933">Allows you to use line breaks and formatting in a control field, such as a text box or label. To manually enter a line break, press the Enter key. Select "Multi-line with formatting" to enter formatted text.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="par_idN113D2" role="warning" l10n="NEW">If you select the text type "Multi-line with formatting", you cannot bind this control to a database field.</paragraph>
 <paragraph xml-lang="en-US" id="par_idN11391" role="note" l10n="NEW">This control is named "Multiline input" for a text column inside a table control.</paragraph>
 </section>
@@ -569,59 +546,59 @@ oldref="21">Text type<comment>UFI: now renamed to Text Type, see #i24386#</comme
 <section id="Section32">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DATEMIN" id="bm_id3155750" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3149314" role="heading" level="2" l10n="U">Date min</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155755" role="paragraph" l10n="U" oldref="132"><ahelp hid="HID_PROP_DATEMIN" visibility="hidden">Determines the earliest date that a user can enter.</ahelp> Determines the earliest date that a user can enter.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155755" role="paragraph" l10n="U"><ahelp hid="HID_PROP_DATEMIN" visibility="hidden">Determines the earliest date that a user can enter.</ahelp> Determines the earliest date that a user can enter.</paragraph>
 </section>
 <section id="Section31">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_VALUEMIN" id="bm_id3145321" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_EFFECTIVEMIN" id="bm_id3147499" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SPINVALUE_MIN" id="bm_id3649403" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152866" role="heading" level="2" l10n="U">Value min</paragraph>
-<paragraph xml-lang="en-US" id="par_id3147505" role="paragraph" l10n="U" oldref="134"><ahelp hid="HID_PROP_EFFECTIVEMIN" visibility="hidden">You can determine here a value for the control field to prevent the user from entering a smaller value.</ahelp> For numerical and currency fields you can determine a minimum value to prevent the user from entering a smaller value.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147505" role="paragraph" l10n="U"><ahelp hid="HID_PROP_EFFECTIVEMIN" visibility="hidden">You can determine here a value for the control field to prevent the user from entering a smaller value.</ahelp> For numerical and currency fields you can determine a minimum value to prevent the user from entering a smaller value.</paragraph>
 </section>
 <section id="Section30">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TIMEMIN" id="bm_id3148825" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153298" role="heading" level="2" l10n="U">Time min</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148831" role="paragraph" l10n="U" oldref="136"><ahelp hid="HID_PROP_TIMEMIN" visibility="hidden">Determines the minimum time that a user can enter.</ahelp> Determines the minimum time that a user can enter.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148831" role="paragraph" l10n="U"><ahelp hid="HID_PROP_TIMEMIN" visibility="hidden">Determines the minimum time that a user can enter.</ahelp> Determines the minimum time that a user can enter.</paragraph>
 </section>
 <section id="Section29">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DECIMAL_ACCURACY" id="bm_id3154402" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3155746" role="heading" level="2" l10n="U">Decimal accuracy</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146096" role="paragraph" l10n="U" oldref="138"><ahelp hid="HID_PROP_DECIMAL_ACCURACY" visibility="hidden">Determines the number of digits displayed to the right of the decimal point.</ahelp> With numerical and currency fields you can determine the number of digits displayed to the right of the decimal point.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146096" role="paragraph" l10n="U"><ahelp hid="HID_PROP_DECIMAL_ACCURACY" visibility="hidden">Determines the number of digits displayed to the right of the decimal point.</ahelp> With numerical and currency fields you can determine the number of digits displayed to the right of the decimal point.</paragraph>
 </section>
 <section id="Section28">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_NAME" id="bm_id3152469" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3151340" role="heading" level="2" l10n="U" oldref="9">Name</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149819" role="paragraph" l10n="U" oldref="10"><ahelp hid="HID_PROP_NAME" visibility="hidden">On the <emph>Properties</emph> tab page, this option specifies the name for the control field. On the <emph>Form Properties</emph> tab page, this option specifies the name for the form.</ahelp> Each control field and each form has a <emph>Name</emph> property through which it can be identified. The name will appear in the <link href="text/shared/02/01170600.xhp" name="Form Navigator">Form Navigator</link> and, using the name, the control field can be referred to from a macro. The default settings already specify a name which is constructed from using the field's label and number.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153025" role="note" l10n="U" oldref="191">If you work with macros, make sure that the names of the controls are unique.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3151340" role="heading" level="2" l10n="U">Name</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149819" role="paragraph" l10n="U"><ahelp hid="HID_PROP_NAME" visibility="hidden">On the <emph>Properties</emph> tab page, this option specifies the name for the control field. On the <emph>Form Properties</emph> tab page, this option specifies the name for the form.</ahelp> Each control field and each form has a <emph>Name</emph> property through which it can be identified. The name will appear in the <link href="text/shared/02/01170600.xhp" name="Form Navigator">Form Navigator</link> and, using the name, the control field can be referred to from a macro. The default settings already specify a name which is constructed from using the field's label and number.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153025" role="note" l10n="U">If you work with macros, make sure that the names of the controls are unique.</paragraph>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3146325">
 <bookmark_value>controls; grouping</bookmark_value>
 <bookmark_value>groups;of controls</bookmark_value>
 <bookmark_value>forms; grouping controls</bookmark_value>
 </bookmark><comment>mw changed "grouping;" to "groups;"</comment>
-<paragraph xml-lang="en-US" id="par_id3146325" role="paragraph" l10n="U" oldref="192">The name is also used to group different controls that belong together functionally, such as radio buttons. To do so, give the same name to all members of the group: controls with identical names form a group. Grouped controls can be represented visually by using a <link href="text/shared/02/01170000.xhp" name="Group Box">Group Box</link>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146325" role="paragraph" l10n="U">The name is also used to group different controls that belong together functionally, such as radio buttons. To do so, give the same name to all members of the group: controls with identical names form a group. Grouped controls can be represented visually by using a <link href="text/shared/02/01170000.xhp" name="Group Box">Group Box</link>.</paragraph>
 </section>
 <section id="Section27">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_NAVIGATIONBAR" id="bm_id3153020" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3149720" role="heading" level="2" l10n="U">Navigation bar</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149918" role="paragraph" l10n="U" oldref="198"><ahelp hid="HID_PROP_NAVIGATIONBAR" visibility="hidden">Specifies whether to display the navigation bar on the lower border of the table control.</ahelp> Specifies whether to display the navigation bar on the lower border of table controls.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149918" role="paragraph" l10n="U"><ahelp hid="HID_PROP_NAVIGATIONBAR" visibility="hidden">Specifies whether to display the navigation bar on the lower border of the table control.</ahelp> Specifies whether to display the navigation bar on the lower border of table controls.</paragraph>
 </section>
 <section id="Section26">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_READONLY" id="bm_id3151173" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3158426" role="heading" level="2" l10n="U">Read-only</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153215" role="paragraph" l10n="U" oldref="43"><ahelp hid="HID_PROP_READONLY" visibility="hidden">Determines if the control is read-only (Yes) or if it can be edited (No).</ahelp> The <emph>Read-only</emph> property can be assigned to all controls in which the user can enter text. If you assign the read-only property to an image field which uses graphics from a database, the user will not be able to insert new graphics into the database.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153215" role="paragraph" l10n="U"><ahelp hid="HID_PROP_READONLY" visibility="hidden">Determines if the control is read-only (Yes) or if it can be edited (No).</ahelp> The <emph>Read-only</emph> property can be assigned to all controls in which the user can enter text. If you assign the read-only property to an image field which uses graphics from a database, the user will not be able to insert new graphics into the database.</paragraph>
 </section>
 <section id="Section25">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_BORDER" id="bm_id3154414" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148912" role="heading" level="2" l10n="U">Border</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145637" role="paragraph" l10n="U" oldref="140"><ahelp hid="HID_PROP_BORDER" visibility="hidden">Determines if the field's border should be displayed "Without frame", with a "3-D look" or "Flat".</ahelp> With control fields that have a frame, you can determine the border display on the form using the <emph>Border</emph> property. You can select among the "Without frame", "3-D look" or "Flat" options.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145637" role="paragraph" l10n="U"><ahelp hid="HID_PROP_BORDER" visibility="hidden">Determines if the field's border should be displayed "Without frame", with a "3-D look" or "Flat".</ahelp> With control fields that have a frame, you can determine the border display on the form using the <emph>Border</emph> property. You can select among the "Without frame", "3-D look" or "Flat" options.</paragraph>
 </section>
 <section id="Section24">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TABINDEX" id="bm_id3157872" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3149266" role="heading" level="2" l10n="CHG">Tab order</paragraph>
-<paragraph xml-lang="en-US" id="par_id3147483" role="paragraph" l10n="CHG" oldref="45"><ahelp hid="HID_PROP_TABINDEX">The <emph>Tab order</emph> property determines the order in which the controls are focused in the form when you press the Tab key.</ahelp> In a form that contains more than one control, the focus moves to the next control when you press the Tab key. You can specify the order in which the focus changes with an index under <emph>Tab order</emph>.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3156207" role="note" l10n="CHG" oldref="193">The <emph>Tab order</emph> property is not available to <link href="text/shared/02/01170600.xhp" name="Hidden Controls">Hidden Controls</link>. If you want, you can also set this property for image buttons and image controls, so that you can select these controls with the Tab key.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150378" role="paragraph" l10n="U" oldref="46">When creating a form, an index is automatically assigned to the control fields that are added to this form; every control field added is assigned an index increased by 1. If you change the index of a control, the indices of the other controls are updated automatically. Elements that cannot be focused (Tabstop = No) are also assigned a value. However, these controls are skipped when using the Tab key.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150640" role="paragraph" l10n="U" oldref="47">You can also easily define the indices of the different controls in the <link href="text/shared/02/01170300.xhp" name="Tab Order"><emph>Tab Order</emph></link> dialog.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3147483" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_TABINDEX">The <emph>Tab order</emph> property determines the order in which the controls are focused in the form when you press the Tab key.</ahelp> In a form that contains more than one control, the focus moves to the next control when you press the Tab key. You can specify the order in which the focus changes with an index under <emph>Tab order</emph>.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156207" role="note" l10n="CHG">The <emph>Tab order</emph> property is not available to <link href="text/shared/02/01170600.xhp" name="Hidden Controls">Hidden Controls</link>. If you want, you can also set this property for image buttons and image controls, so that you can select these controls with the Tab key.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150378" role="paragraph" l10n="U">When creating a form, an index is automatically assigned to the control fields that are added to this form; every control field added is assigned an index increased by 1. If you change the index of a control, the indices of the other controls are updated automatically. Elements that cannot be focused (Tabstop = No) are also assigned a value. However, these controls are skipped when using the Tab key.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150640" role="paragraph" l10n="U">You can also easily define the indices of the different controls in the <link href="text/shared/02/01170300.xhp" name="Tab Order"><emph>Tab Order</emph></link> dialog.</paragraph>
 </section>
 <section id="Section89">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_WHEEL_BEHAVIOR" id="bm_id0509200912044845" localize="false"/>
@@ -695,106 +672,95 @@ oldref="21">Text type<comment>UFI: now renamed to Text Type, see #i24386#</comme
 </section>
 <section id="Section16">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DEFAULT_BUTTON" id="bm_id3156300" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3145206" role="heading" level="2" l10n="U"
-oldref="144">Default button</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154681" role="paragraph" l10n="U" oldref="145"><ahelp hid="HID_PROP_DEFAULT_BUTTON" visibility="hidden">The <emph>Default button</emph> property specifies that the corresponding button will be operated when you press the Return key.</ahelp> The <emph>Default button</emph> property specifies that the corresponding button will be operated when you press the Return key. If you open the dialog or form and do not carry out any further action, the button with this property is the default button.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3149750" role="note" l10n="U" oldref="175">This property should be assigned only to a single button within the document.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150931" role="paragraph" l10n="U" oldref="177">When using Web page forms, you might come across this property in search masks. These are edit masks that contain a text field and a Submit type button. The search term is entered in the text field and the search is started by activating the button. If the button is defined as the default button, however, simply hit Enter after entering the search term in order to start the search.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3145206" role="heading" level="2" l10n="U">Default button</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154681" role="paragraph" l10n="U"><ahelp hid="HID_PROP_DEFAULT_BUTTON" visibility="hidden">The <emph>Default button</emph> property specifies that the corresponding button will be operated when you press the Return key.</ahelp> The <emph>Default button</emph> property specifies that the corresponding button will be operated when you press the Return key. If you open the dialog or form and do not carry out any further action, the button with this property is the default button.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149750" role="note" l10n="U">This property should be assigned only to a single button within the document.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150931" role="paragraph" l10n="U">When using Web page forms, you might come across this property in search masks. These are edit masks that contain a text field and a Submit type button. The search term is entered in the text field and the search is started by activating the button. If the button is defined as the default button, however, simply hit Enter after entering the search term in order to start the search.</paragraph>
 </section>
 <section id="Section15">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CURRSYM_POSITION" id="bm_id3150265" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3153389" role="heading" level="2" l10n="U"
-oldref="221">Prefix symbol</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150271" role="paragraph" l10n="U" oldref="222"><ahelp hid="HID_PROP_CURRSYM_POSITION">Determines if the currency symbol is displayed before or after the number when using currency fields.</ahelp> The default setting is currency symbols are not prefixed.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153389" role="heading" level="2" l10n="U">Prefix symbol</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150271" role="paragraph" l10n="U"><ahelp hid="HID_PROP_CURRSYM_POSITION">Determines if the currency symbol is displayed before or after the number when using currency fields.</ahelp> The default setting is currency symbols are not prefixed.</paragraph>
 </section>
 <section id="Section14">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TABSTOP" id="bm_id3148938" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154548" role="heading" level="2" l10n="U"
-oldref="48">Tabstop</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155361" role="paragraph" l10n="U" oldref="49"><ahelp hid="HID_PROP_TABSTOP">The <emph>Tabstop</emph> property determines if a control field can be selected with the tab key.</ahelp> The following options are available:<comment>UFI: Default entry row deleted from table</comment></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3154548" role="heading" level="2" l10n="U">Tabstop</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155361" role="paragraph" l10n="U"><ahelp hid="HID_PROP_TABSTOP">The <emph>Tabstop</emph> property determines if a control field can be selected with the tab key.</ahelp> The following options are available:<comment>UFI: Default entry row deleted from table</comment></paragraph>
 <table id="tbl_id3154843">
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3148627" role="paragraph" l10n="U" oldref="52">No</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148627" role="paragraph" l10n="U">No</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3161673" role="paragraph" l10n="U" oldref="53">When using the tab key, focusing skips the control.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3161673" role="paragraph" l10n="U">When using the tab key, focusing skips the control.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3159323" role="paragraph" l10n="U" oldref="50">Yes</paragraph>
+<paragraph xml-lang="en-US" id="par_id3159323" role="paragraph" l10n="U">Yes</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3148584" role="paragraph" l10n="U" oldref="51">The control can be selected with the Tab key.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148584" role="paragraph" l10n="U">The control can be selected with the Tab key.</paragraph>
 </tablecell>
 </tablerow>
 </table>
 </section>
 <section id="Section13">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SHOWTHOUSANDSEP" id="bm_id3154931" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3146909" role="heading" level="2" l10n="U"
-oldref="147">Thousands separator</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154936" role="paragraph" l10n="U" oldref="148"><ahelp hid="HID_PROP_SHOWTHOUSANDSEP" visibility="hidden">Inserts a thousands separator.</ahelp> With numerical and currency fields you can determine whether thousands separators are used.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146909" role="heading" level="2" l10n="U">Thousands separator</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154936" role="paragraph" l10n="U"><ahelp hid="HID_PROP_SHOWTHOUSANDSEP" visibility="hidden">Inserts a thousands separator.</ahelp> With numerical and currency fields you can determine whether thousands separators are used.</paragraph>
 </section>
 <section id="Section12">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_LABEL" id="bm_id3159212" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3156256" role="heading" level="2" l10n="U" oldref="7">Label</paragraph>
-<paragraph xml-lang="en-US" id="par_id3156432" role="paragraph" l10n="U" oldref="8"><ahelp hid="HID_PROP_LABEL" visibility="hidden">The Label property sets the label of the control field that is displayed in the form.</ahelp> The Label property sets the label of the control field that is displayed in the form. This property determines the visible label or the column header of the data field in table control forms.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154568" role="paragraph" l10n="U" oldref="54">When you create a new control, the description predefined in the <emph>Name</emph> property is used as the default for labeling the control. The label consists of the control field name and an integer numbering the control (for example, CommandButton1). With the <emph>Title</emph> property, you can assign another description to the control so that the label reflects the function of the control. Change this entry in order to assign an expressive label to the control that is visible to the user.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156256" role="heading" level="2" l10n="U">Label</paragraph>
+<paragraph xml-lang="en-US" id="par_id3156432" role="paragraph" l10n="U"><ahelp hid="HID_PROP_LABEL" visibility="hidden">The Label property sets the label of the control field that is displayed in the form.</ahelp> The Label property sets the label of the control field that is displayed in the form. This property determines the visible label or the column header of the data field in table control forms.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154568" role="paragraph" l10n="U">When you create a new control, the description predefined in the <emph>Name</emph> property is used as the default for labeling the control. The label consists of the control field name and an integer numbering the control (for example, CommandButton1). With the <emph>Title</emph> property, you can assign another description to the control so that the label reflects the function of the control. Change this entry in order to assign an expressive label to the control that is visible to the user.</paragraph>
 <bookmark xml-lang="en-US" branch="index" id="bm_id3163820">
 <bookmark_value>multi-line titles in forms</bookmark_value>
 <bookmark_value>names; multi-line titles</bookmark_value>
 <bookmark_value>controls; multi-line titles</bookmark_value>
 </bookmark>
-<paragraph xml-lang="en-US" id="par_id3163820" role="paragraph" l10n="U" oldref="223">To create a multi-line title, open the combo box using the arrow button. You can enter a line break by pressing Shift+<switchinline select="sys"><caseinline select="MAC">Command
+<paragraph xml-lang="en-US" id="par_id3163820" role="paragraph" l10n="U">To create a multi-line title, open the combo box using the arrow button. You can enter a line break by pressing Shift+<switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3159407" role="note" l10n="U" oldref="55">The <emph>Title</emph> property is only used for labeling a form element in the interface visible to the user. If you work with macros, note that at runtime, a control is always addressed through the <emph>Name</emph> property.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3159407" role="note" l10n="U">The <emph>Title</emph> property is only used for labeling a form element in the interface visible to the user. If you work with macros, note that at runtime, a control is always addressed through the <emph>Name</emph> property.</paragraph>
 </section>
 <section id="Section11">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TARGET_URL" id="bm_id3154726" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3150293" role="heading" level="2" l10n="U"
-oldref="56">URL</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154358" role="paragraph" l10n="CHG" oldref="57"><ahelp hid="HID_PROP_TARGET_URL" visibility="hidden">Specifies the URL address that opens when you click an "Open document / web page" button.</ahelp> Enter the URL address for a Open document or web page button type in the <emph>URL</emph> box. The address opens when you click the button.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146074" role="paragraph" l10n="U" oldref="211">If you move the mouse over the button in User mode, the URL appears as the extended tip, provided that no other Help text was entered.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3150293" role="heading" level="2" l10n="U">URL</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154358" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_TARGET_URL" visibility="hidden">Specifies the URL address that opens when you click an "Open document / web page" button.</ahelp> Enter the URL address for a Open document or web page button type in the <emph>URL</emph> box. The address opens when you click the button.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146074" role="paragraph" l10n="U">If you move the mouse over the button in User mode, the URL appears as the extended tip, provided that no other Help text was entered.</paragraph>
 </section>
 <section id="Section10">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CURRENCYSYMBOL" id="bm_id3145154" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3147134" role="heading" level="2" l10n="U"
-oldref="149">Currency symbol</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145160" role="paragraph" l10n="U" oldref="150"><ahelp hid="HID_PROP_CURRENCYSYMBOL" visibility="hidden">You can enter a character or a string for the currency symbol.</ahelp> In a currency field, you can pre-define the currency symbol by entering the character or string in the <emph>Currency symbol</emph> property.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3147134" role="heading" level="2" l10n="U">Currency symbol</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145160" role="paragraph" l10n="U"><ahelp hid="HID_PROP_CURRENCYSYMBOL" visibility="hidden">You can enter a character or a string for the currency symbol.</ahelp> In a currency field, you can pre-define the currency symbol by entering the character or string in the <emph>Currency symbol</emph> property.</paragraph>
 </section>
 <section id="Section9">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_HIDDEN_VALUE" id="bm_id3156100" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3144444" role="heading" level="2" l10n="U"
-oldref="154">Value</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152417" role="paragraph" l10n="U" oldref="155"><ahelp hid="HID_PROP_HIDDEN_VALUE" visibility="hidden">You can enter the data that is inherited by the hidden control.</ahelp> In a <link href="text/shared/02/01170600.xhp" name="hidden control">hidden control</link>, under <emph>Value</emph>, you can enter the data which is inherited by the hidden control. This data will be transferred when sending the form.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3144444" role="heading" level="2" l10n="U">Value</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152417" role="paragraph" l10n="U"><ahelp hid="HID_PROP_HIDDEN_VALUE" visibility="hidden">You can enter the data that is inherited by the hidden control.</ahelp> In a <link href="text/shared/02/01170600.xhp" name="hidden control">hidden control</link>, under <emph>Value</emph>, you can enter the data which is inherited by the hidden control. This data will be transferred when sending the form.</paragraph>
 </section>
 <section id="Section8">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_ECHO_CHAR" id="bm_id3148694" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3157315" role="heading" level="2" l10n="U"
-oldref="156">Password characters</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155323" role="paragraph" l10n="U" oldref="157"><ahelp hid="HID_PROP_ECHO_CHAR" visibility="hidden">If the text box is used as a password input, enter the ASCII-code of the display character. This character is displayed instead of the characters typed by the user for the password.</ahelp> If the user enters a password, you can determine the characters that will be displayed instead of the characters typed by the user. Under <emph>Password character</emph>, enter the ASCII code of the desired character. You can use the values from 0 to 255.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152493" role="tip" l10n="CHG" oldref="158">The characters and their ASCII codes can be seen in the <emph>Special Characters</emph> dialog (Insert - Special Character).</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3157315" role="heading" level="2" l10n="U">Password characters</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155323" role="paragraph" l10n="U"><ahelp hid="HID_PROP_ECHO_CHAR" visibility="hidden">If the text box is used as a password input, enter the ASCII-code of the display character. This character is displayed instead of the characters typed by the user for the password.</ahelp> If the user enters a password, you can determine the characters that will be displayed instead of the characters typed by the user. Under <emph>Password character</emph>, enter the ASCII code of the desired character. You can use the values from 0 to 255.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3152493" role="tip" l10n="CHG">The characters and their ASCII codes can be seen in the <emph>Special Characters</emph> dialog (Insert - Special Character).</paragraph>
 </section>
 <section id="Section7">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_LITERALMASK" id="bm_id3157547" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3157884" role="heading" level="2" l10n="U"
-oldref="159">Literal mask</paragraph>
-<paragraph xml-lang="en-US" id="par_id3157557" role="paragraph" l10n="U" oldref="160"><ahelp hid="HID_PROP_LITERALMASK" visibility="hidden">Defines the literal mask. The literal mask contains the initial values and is always visible after downloading a form.</ahelp> With masked fields you can specify a literal mask. A literal mask contains the initial values of a form, and is always visible after downloading a form. Using a character code for the Edit mask, you can determine the entries that the user can type into the masked field.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148513" role="note" l10n="U" oldref="161">The length of the literal mask should always correspond to the length of the edit mask. If this is not the case, the edit mask is either cut off or filled with blanks up to the length of the edit mask.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3157884" role="heading" level="2" l10n="U">Literal mask</paragraph>
+<paragraph xml-lang="en-US" id="par_id3157557" role="paragraph" l10n="U"><ahelp hid="HID_PROP_LITERALMASK" visibility="hidden">Defines the literal mask. The literal mask contains the initial values and is always visible after downloading a form.</ahelp> With masked fields you can specify a literal mask. A literal mask contains the initial values of a form, and is always visible after downloading a form. Using a character code for the Edit mask, you can determine the entries that the user can type into the masked field.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148513" role="note" l10n="U">The length of the literal mask should always correspond to the length of the edit mask. If this is not the case, the edit mask is either cut off or filled with blanks up to the length of the edit mask.</paragraph>
 </section>
 <section id="Section6">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_FONT" id="bm_id3151032" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3146762" role="heading" level="2" l10n="CHG"
-oldref="5">Font<comment>UFI: dba.features "Character set property renamed to Font"</comment></paragraph>
-<paragraph xml-lang="en-US" id="par_id3151037" role="paragraph" l10n="CHG" oldref="6"><ahelp hid="HID_PROP_FONT" visibility="hidden">Select the font for the text that is in the control field.</ahelp> For control fields which have visible text or titles, select the display font that you want to use. To open the <link href="text/shared/01/05020100.xhp" name="Font"><emph>Font</emph></link> dialog, click the <emph>...</emph> button. The selected font is used in control fields names and to display data in table control fields.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3146762" role="heading" level="2" l10n="CHG">Font<comment>UFI: dba.features "Character set property renamed to Font"</comment></paragraph>
+<paragraph xml-lang="en-US" id="par_id3151037" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_FONT" visibility="hidden">Select the font for the text that is in the control field.</ahelp> For control fields which have visible text or titles, select the display font that you want to use. To open the <link href="text/shared/01/05020100.xhp" name="Font"><emph>Font</emph></link> dialog, click the <emph>...</emph> button. The selected font is used in control fields names and to display data in table control fields.</paragraph>
 </section>
 <section id="Section5">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_ROWHEIGHT" id="bm_id3160449" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3156734" role="heading" level="2" l10n="U"
-oldref="162">Row height</paragraph>
-<paragraph xml-lang="en-US" id="par_id3160455" role="paragraph" l10n="CHG" oldref="163"><ahelp hid="HID_PROP_ROWHEIGHT" visibility="hidden">Specifies the row height of a table control field.</ahelp> In table controls, enter a value for the row height. If you want, you can enter a value followed by valid measurement unit, for example, 2 cm.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156734" role="heading" level="2" l10n="U">Row height</paragraph>
+<paragraph xml-lang="en-US" id="par_id3160455" role="paragraph" l10n="CHG"><ahelp hid="HID_PROP_ROWHEIGHT" visibility="hidden">Specifies the row height of a table control field.</ahelp> In table controls, enter a value for the row height. If you want, you can enter a value followed by valid measurement unit, for example, 2 cm.</paragraph>
 </section>
 <section id="Section77">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_LINEEND_FORMAT" id="bm_id396130" localize="false"/>
@@ -803,21 +769,18 @@ oldref="162">Row height</paragraph>
 </section>
 <section id="Section4">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TIMEFORMAT" id="bm_id3145181" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3160477" role="heading" level="2" l10n="U"
-oldref="168">Time format</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145187" role="paragraph" l10n="U" oldref="169"><ahelp hid="HID_PROP_TIMEFORMAT" visibility="hidden">You can define the desired format for the time display.</ahelp> You can define the desired format for the time display.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3160477" role="heading" level="2" l10n="U">Time format</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145187" role="paragraph" l10n="U"><ahelp hid="HID_PROP_TIMEFORMAT" visibility="hidden">You can define the desired format for the time display.</ahelp> You can define the desired format for the time display.</paragraph>
 </section>
 <section id="Section3">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_TAG" id="bm_id3158205" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3158195" role="heading" level="2" l10n="U"
-oldref="170">Help text</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146823" role="paragraph" l10n="U" oldref="171"><ahelp hid="HID_PROP_TAG" visibility="hidden">Specifies additional information or a descriptive text for the control field.</ahelp> In each control field you can specify additional information or a descriptive text for the control field. This property helps the programmer to save additional information that can be used in the program code. This field can be used, for example, for variables or other evaluation parameters.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3158195" role="heading" level="2" l10n="U">Help text</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146823" role="paragraph" l10n="U"><ahelp hid="HID_PROP_TAG" visibility="hidden">Specifies additional information or a descriptive text for the control field.</ahelp> In each control field you can specify additional information or a descriptive text for the control field. This property helps the programmer to save additional information that can be used in the program code. This field can be used, for example, for variables or other evaluation parameters.</paragraph>
 </section>
 <section id="Section2">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_FORMATKEY" id="bm_id3157839" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3157828" role="heading" level="2" l10n="U"
-oldref="232">Formatting</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146843" role="paragraph" l10n="U" oldref="233"><ahelp hid="HID_PROP_FORMATKEY">Specifies the format code for the control. Click the <emph>...</emph> button to select the format code.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="hd_id3157828" role="heading" level="2" l10n="U">Formatting</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146843" role="paragraph" l10n="U"><ahelp hid="HID_PROP_FORMATKEY">Specifies the format code for the control. Click the <emph>...</emph> button to select the format code.</ahelp></paragraph>
 </section>
 <section id="Section69">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SCALEIMAGE" id="bm_id1145054" localize="false"/>

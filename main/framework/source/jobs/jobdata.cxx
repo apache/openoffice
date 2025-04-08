@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_framework.hxx"
@@ -53,7 +51,7 @@
 namespace framework{
 
 //________________________________
-//  exported const
+// exported const
 
 const sal_Char* JobData::JOBCFG_ROOT              = "/org.openoffice.Office.Jobs/Jobs/"   ;
 const sal_Char* JobData::JOBCFG_PROP_SERVICE      = "Service"                             ;
@@ -79,10 +77,10 @@ const sal_Char* JobData::PROP_SERVICE             = "Service"                   
 const sal_Char* JobData::PROP_CONTEXT             = "Context"                             ;
 
 //________________________________
-//	non exported definitions
+// non exported definitions
 
 //________________________________
-//	declarations
+// declarations
 
 //________________________________
 /**
@@ -149,7 +147,7 @@ void JobData::operator=( const JobData& rCopy )
 /**
     @short  let this instance die
     @descr  There is no chance any longer to work. We have to
-            release all used ressources and free used memory.
+            release all used resources and free used memory.
 */
 JobData::~JobData()
 {
@@ -159,7 +157,7 @@ JobData::~JobData()
 //________________________________
 /**
     @short      initialize this instance as a job with configuration
-    @descr      They given alias can be used to address some configuraton data.
+    @descr      They given alias can be used to address some configuration data.
                 We read it and fill our internal structures. Of course old informations
                 will be lost doing so.
 
@@ -256,13 +254,13 @@ void JobData::setService( const ::rtl::OUString& sService )
 /**
     @short      initialize this instance with new job values.
     @descr      It reads automatically all properties of the specified
-                job (using it's alias name) and "register it" for the
+                job (using its alias name) and "register it" for the
                 given event. This registration will not be validated against
                 the underlying configuration! (That must be done from outside.
                 Because the caller must have the configuration already open to
                 get the values for sEvent and sAlias! And doing so it can perform
-                only, if the time stanp values are readed outside too.
-                Further it make no sense to initialize and start a disabled job.
+                only, if the time stamp values are read outside too.
+                Further it makes no sense to initialize and start a disabled job.
                 So this initialization method will be called for enabled jobs only.)
 
     @param      sEvent
@@ -347,7 +345,7 @@ void JobData::setJobConfig( const css::uno::Sequence< css::beans::NamedValue >& 
 
 //________________________________
 /**
-    @short      set a new excution result
+    @short      set a new execution result
     @descr      Every executed job can have returned a result.
                 We set it here, so our user can use it may be later.
                 But the outside code can use it too, to analyze it and
@@ -542,7 +540,7 @@ void JobData::disableJob()
 
     // update the configuration
     // It doesn't matter if this config object was already opened before.
-    // It doesn nothing here then ... or it change the mode automatically, if
+    // It does nothing here then ... or it change the mode automatically, if
     // it was opened using another one before.
     ::rtl::OUStringBuffer sKey(256);
     sKey.appendAscii(JobData::EVENTCFG_ROOT                       );
@@ -619,23 +617,23 @@ void JobData::appendEnabledJobsForEvent( const css::uno::Reference< css::lang::X
  */
 sal_Bool JobData::hasCorrectContext(const ::rtl::OUString& rModuleIdent) const
 {
-    sal_Int32 nContextLen  = m_sContext.getLength();
-    sal_Int32 nModuleIdLen = rModuleIdent.getLength();
+	sal_Int32 nContextLen = m_sContext.getLength();
+	sal_Int32 nModuleIdLen = rModuleIdent.getLength();
 
-    if ( nContextLen == 0 )
-        return sal_True;
+	if ( nContextLen == 0 )
+		return sal_True;
 
-    if ( nModuleIdLen > 0 )
-    {
-        sal_Int32 nIndex = m_sContext.indexOf( rModuleIdent );
-        if ( nIndex >= 0 && ( nIndex+nModuleIdLen <= nContextLen ))
+	if ( nModuleIdLen > 0 )
 	{
-	    ::rtl::OUString sContextModule = m_sContext.copy( nIndex, nModuleIdLen );
-	    return sContextModule.equals( rModuleIdent );
+		sal_Int32 nIndex = m_sContext.indexOf( rModuleIdent );
+		if ( nIndex >= 0 && ( nIndex+nModuleIdLen <= nContextLen ))
+	{
+		::rtl::OUString sContextModule = m_sContext.copy( nIndex, nModuleIdLen );
+		return sContextModule.equals( rModuleIdent );
 	}
-    }
+	}
 
-    return sal_False;
+	return sal_False;
 }
 
 //________________________________
@@ -719,7 +717,7 @@ css::uno::Sequence< ::rtl::OUString > JobData::getEnabledJobsForEvent( const css
 //________________________________
 /**
     @short      reset all internal structures
-    @descr      If somehwere recycle this instance, he can switch from one
+    @descr      If somewhere recycle this instance, he can switch from one
                 using mode to another one. But then we have to reset all currently
                 used informations. Otherwise we mix it and they can make trouble.
 
@@ -744,3 +742,5 @@ void JobData::impl_reset()
 }
 
 } // namespace framework
+
+/* vim: set noet sw=4 ts=4: */

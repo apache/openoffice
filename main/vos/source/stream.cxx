@@ -108,4 +108,3 @@ IPositionableStream::Offset OStream::getOffset() const
 {
 	return (m_rStream.getOffset());
 }
-

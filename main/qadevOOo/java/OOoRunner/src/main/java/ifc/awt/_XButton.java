@@ -37,7 +37,7 @@ import com.sun.star.awt.XButton;
 *  <li><code> setLabel()</code></li>
 *  <li><code> setActionCommand()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XButton
 */
 public class _XButton extends MultiMethodTest {
@@ -110,5 +110,3 @@ public class _XButton extends MultiMethodTest {
     }
 
 }
-
-

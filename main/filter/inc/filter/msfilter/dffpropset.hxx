@@ -77,5 +77,3 @@ class MSFILTER_DLLPUBLIC DffPropSet
 };
 
 #endif
-
-

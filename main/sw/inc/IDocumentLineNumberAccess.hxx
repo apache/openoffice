@@ -44,4 +44,3 @@ class SwLineNumberInfo;
 };
 
 #endif // IDOCUMENTLINENUMBERACCESS_HXX_INCLUDED
-

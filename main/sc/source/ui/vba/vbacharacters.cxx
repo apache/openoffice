@@ -129,4 +129,3 @@ ScVbaCharacters::getServiceNames()
 	}
 	return aServiceNames;
 }
-

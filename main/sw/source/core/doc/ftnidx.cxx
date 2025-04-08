@@ -389,7 +389,3 @@ sal_uInt16 SwUpdFtnEndNtAtEnd::ChkNumber( const SwTxtFtn& rTxtFtn )
 	const SwSectionNode* pSectNd = FindSectNdWithEndAttr( rTxtFtn );
 	return pSectNd ? GetNumber( rTxtFtn, *pSectNd ) : 0;
 }
-
-
-
-

@@ -84,5 +84,3 @@ namespace connectivity
 	};
 }
 #endif // CONNECTIVITY_CONNECTION_HXX
-
-

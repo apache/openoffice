@@ -49,7 +49,7 @@ import com.sun.star.text.XTextTableCursor;
  * 2x2 and current cursor position must be in the upper
  * left cell. <p>
  *
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  *
  * After test completion object environment has to be recreated
  * because after merging and splitting cells their names
@@ -286,5 +286,3 @@ public class _XTextTableCursor extends MultiMethodTest {
     }
 
  }  // finish class _XTextTableCursor
-
-

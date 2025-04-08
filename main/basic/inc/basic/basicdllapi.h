@@ -34,4 +34,3 @@
 #define BASIC_DLLPRIVATE SAL_DLLPRIVATE
                                                                                     
 #endif /* INCLUDED_BASICDLLAPI_H */
-

@@ -61,4 +61,3 @@ public:
 };
 
 #endif // #ifndef _SVX_WRITINGMODEITEM_HXX
-

@@ -182,4 +182,3 @@ public final class XmlUtil {
         return buffer.toString();
     }
 }
-

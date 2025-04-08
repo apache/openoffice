@@ -66,7 +66,7 @@ public:
                             ::com::sun::star::uno::XComponentContext > const & xContext );
 	virtual ~XMLFilter();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
     APPHELPER_SERVICE_FACTORY_HELPER( XMLFilter )
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
@@ -171,7 +171,7 @@ public:
                             ::com::sun::star::uno::XComponentContext > const & _xContext )
                             :XMLFilter(_xContext)
     {}
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
     static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL	create( 
         ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext) throw(::com::sun::star::uno::Exception)									
     {																			

@@ -105,5 +105,3 @@ public:
 			::com::sun::star::lang::XMultiServiceFactory >& );
 
 #endif
-
-

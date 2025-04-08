@@ -78,5 +78,3 @@ public:
 }	// namespace linguistic
 
 #endif
-
-

@@ -2892,7 +2892,7 @@ gboolean GtkSalFrame::signalMap( GtkWidget*, GdkEvent*, gpointer frame )
 
     if( pThis->m_bFullscreen )
     {
-        /* #i110881# workaorund a gtk issue (see https://bugzilla.redhat.com/show_bug.cgi?id=623191#c8)
+        /* #i110881# workaround a gtk issue (see https://bugzilla.redhat.com/show_bug.cgi?id=623191#c8)
            gtk_window_fullscreen can run into a race condition with the window's showstate
         */
         Application::PostUserEvent( LINK( pThis, GtkSalFrame, ImplDelayedFullScreenHdl ) );

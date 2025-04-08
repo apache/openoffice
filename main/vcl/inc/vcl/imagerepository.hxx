@@ -77,4 +77,3 @@ namespace vcl
 }
 
 #endif // VCL_IMAGEREPOSITORY_HXX
-

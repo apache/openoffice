@@ -52,4 +52,3 @@ namespace dbaccess
 //.........................................................................
 
 #endif // DBA_CORE_REFRESHLISTENER_HXX
-

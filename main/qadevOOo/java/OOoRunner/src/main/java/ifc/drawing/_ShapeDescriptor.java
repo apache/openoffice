@@ -139,5 +139,3 @@ public class _ShapeDescriptor extends MultiMethodTest {
     }
 
 }
-
-

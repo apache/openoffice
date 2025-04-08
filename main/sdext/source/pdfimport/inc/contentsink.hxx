@@ -177,4 +177,3 @@ namespace pdfi
 }
 
 #endif /* INCLUDED_PDFI_CONTENTSINK_HXX */
-

@@ -4492,4 +4492,3 @@ sal_Bool SvxFrameDirectionItem::QueryValue( com::sun::star::uno::Any& rVal,
     }
 	return bRet;
 }
-

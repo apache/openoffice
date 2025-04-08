@@ -78,5 +78,3 @@ public:
 };
 
 #endif // #ifndef _INETIMG_HXX
-
-

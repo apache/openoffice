@@ -51,5 +51,3 @@ private:
 
 
 #endif // SC_STYLEDLG_HXX
-
-

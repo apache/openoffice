@@ -63,4 +63,3 @@ $(SLOFILES) : $(MISC)$/$(TARGET).don
 $(MISC)$/$(TARGET).don : $(SOLARBINDIR)$/oovbaapi.rdb
         +$(CPPUMAKER) -O$(INCCOM)$/$(TARGET) -BUCR $(SOLARBINDIR)$/oovbaapi.rdb -X$(SOLARBINDIR)$/types.rdb && echo > $@
         echo $@
-

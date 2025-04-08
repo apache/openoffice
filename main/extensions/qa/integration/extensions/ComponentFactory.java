@@ -99,4 +99,3 @@ public class ComponentFactory implements XSingleComponentFactory
         return ipml_createInstance( m_defaultConstructor, new Object[] { _componentContext } );
     }
 }
-

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -35,7 +35,7 @@ use installer::ziplist;
 sub send_mail
 {
 	my ($message, $listenerstring, $mailinfostring, $languagesref, $destdir) = @_;
-	
+
 	my $listener = installer::converter::convert_stringlist_into_array($listenerstring, ",");
 	my $mailinfo = installer::converter::convert_stringlist_into_array($mailinfostring, ",");
 
@@ -58,14 +58,14 @@ sub send_mail
 	if ( $message eq "SUCCESS" ) { $subject = "SUCCESS: $basestring" }
 
 	my @message = ();
-	
+
 	my $recipient_string = join ',', @listener;
 	push(@message, "Subject: $subject");
 	push(@message, "To: $recipient_string");
 	push(@message, "\n");
 	push(@message, "Located at $destdir");
 
-	if ( $message eq "ERROR" ) 
+	if ( $message eq "ERROR" )
 	{
 		for ( my $j = 0; $j <= $#installer::globals::errorlogfileinfo; $j++ )
 		{
@@ -86,7 +86,7 @@ sub send_mail
 	my @good_addresses = ();
 	$smtp->recipient( @listener, { SkipBad => 1 } );
 
-	# send message		
+	# send message
 	$smtp->data(\@message);
 
 	# quit server
@@ -100,15 +100,15 @@ sub send_fail_mail
 	# sending a mail into the error board
 	my $listener = "";
 	$listener = installer::ziplist::getinfofromziplist($allsettingsarrayref, "fail");
-	
+
 	if ( $$listener )
-	{ 
+	{
 		my $mailinfo = installer::ziplist::getinfofromziplist($allsettingsarrayref, "mailinfo");
-		
+
 		if ( $$mailinfo ) { send_mail("ERROR", $listener, $mailinfo, $languagestringref, $errordir); }
 		else { installer::exiter::exit_program("ERROR: Could not read mailinfo in list file!", "send_fail_mail"); }
     }
-}			
+}
 
 sub send_success_mail
 {
@@ -126,7 +126,7 @@ sub send_success_mail
 		else { installer::exiter::exit_program("ERROR: Could not read mailinfo in list file!", "send_success_mail"); }
 
 	}
-}			
+}
 
 
 1;

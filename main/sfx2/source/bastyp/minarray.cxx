@@ -728,5 +728,3 @@ short& WordArr::operator [] (sal_uInt16 nPos)
 	DBG_ASSERT( nPos < nUsed, "" );
 	return *(pData+nPos);
 }
-
-

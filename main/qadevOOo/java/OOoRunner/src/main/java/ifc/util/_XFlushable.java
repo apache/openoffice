@@ -36,7 +36,7 @@ import com.sun.star.util.XFlushable;
  *  <li><code> addFlushListener()</code></li>
  *  <li><code> removeFlushListener()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.util.XFlushable
  */
 public class _XFlushable extends MultiMethodTest {
@@ -104,4 +104,3 @@ public class _XFlushable extends MultiMethodTest {
     }
 
 }  // finish class _XFlushable
-

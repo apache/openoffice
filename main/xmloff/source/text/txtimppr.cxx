@@ -660,7 +660,7 @@ void XMLTextImportPropertyMapper::finished(
     }
 
 
-	// insert newly created properties. This inavlidates all iterators!
+	// insert newly created properties. This invalidates all iterators!
     // Most of the pXXX variables in this method are iterators and will be 
     // invalidated!!!
 
@@ -819,5 +819,3 @@ void XMLTextImportPropertyMapper::finished(
     // pXXX-type variables set in the first switch statement of this method, 
     // may have been invalidated by the above push_back() calls!
 }
-
-

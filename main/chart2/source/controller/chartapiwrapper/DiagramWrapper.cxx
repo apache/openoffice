@@ -2146,4 +2146,3 @@ APPHELPER_XSERVICEINFO_IMPL( DiagramWrapper, lcl_aServiceName );
 
 } //  namespace wrapper
 } //  namespace chart
-

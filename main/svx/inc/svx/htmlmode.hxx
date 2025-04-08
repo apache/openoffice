@@ -26,22 +26,3 @@
 #include <sfx2/htmlmode.hxx>
 
 #endif
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

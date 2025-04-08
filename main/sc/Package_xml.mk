@@ -139,4 +139,3 @@ $(eval $(call gb_Package_add_file,sc_xml,xml/ScAnnotationsObj.xml,ScAnnotationsO
 $(eval $(call gb_Package_add_file,sc_xml,xml/ScSheetLinksObj.xml,ScSheetLinksObj.xml))
 $(eval $(call gb_Package_add_file,sc_xml,xml/ScCellsObj.xml,ScCellsObj.xml))
 $(eval $(call gb_Package_add_file,sc_xml,xml/ScRecentFunctionsObj.xml,ScRecentFunctionsObj.xml))
-

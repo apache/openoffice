@@ -37,19 +37,19 @@
 <bookmark_value>documents; master documents and subdocuments</bookmark_value>
 <bookmark_value>styles;master documents</bookmark_value>
 </bookmark><comment>Mw made "master documents" and "subdocuments" a two level entry, deleted "references;" and "bookmarks;" and added a new entry and shifted "Navigator;" and "indexes;" to the file globaldoc_howtos.xhp</comment>
-<paragraph xml-lang="en-US" id="hd_id3145246" role="heading" level="1" l10n="U" oldref="4"><variable id="globaldoc"><link href="text/swriter/guide/globaldoc.xhp">Master Documents and Subdocuments</link>
+<paragraph xml-lang="en-US" id="hd_id3145246" role="heading" level="1" l10n="U"><variable id="globaldoc"><link href="text/swriter/guide/globaldoc.xhp">Master Documents and Subdocuments</link>
 </variable></paragraph><comment>MW: This file was split into globaldoc.xhp (concepts) and globaldoc_howtos.xhp (procedures)</comment>
 <paragraph xml-lang="en-US" id="par_id3149806" role="paragraph" l10n="CHG">A master document lets you manage large documents, such as a book with many chapters. The master document can be seen as a container for individual <item type="productname">%PRODUCTNAME</item> Writer files. The individual files are called subdocuments.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id6537369" role="heading" level="2" l10n="NEW">Characteristics of Master Documents</paragraph>
 <list type="unordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3150096" role="paragraph" l10n="U" oldref="13">When you print a master document, the contents of all subdocuments, indexes, and any text that you entered are printed.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150096" role="paragraph" l10n="U">When you print a master document, the contents of all subdocuments, indexes, and any text that you entered are printed.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3153400" role="paragraph" l10n="U" oldref="12">You can create a table of contents and index in the master document for all of the subdocuments.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153400" role="paragraph" l10n="U">You can create a table of contents and index in the master document for all of the subdocuments.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3155854" role="paragraph" l10n="CHG" oldref="15">Styles that are used in subdocuments, such as new paragraph styles, are automatically imported into the master document.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155854" role="paragraph" l10n="CHG">Styles that are used in subdocuments, such as new paragraph styles, are automatically imported into the master document.</paragraph>
 </listitem>
 <listitem>
 <paragraph xml-lang="en-US" id="par_id9033783" role="paragraph" l10n="NEW">When viewing the master document, styles that are already present in the master document take precedence over styles with the same name that are imported from subdocuments.</paragraph>

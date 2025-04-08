@@ -36,7 +36,7 @@ import com.sun.star.lang.XMultiServiceFactory;
 *  <li><code> insert()</code></li>
 *  <li><code> remove()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.container.XSet
 */
 public class _XSet extends MultiMethodTest {
@@ -143,4 +143,3 @@ public class _XSet extends MultiMethodTest {
     }
 
 } // finished class _XSet
-

@@ -1137,4 +1137,3 @@ void XclExpCachedMatrix::Save( XclExpStream& rStrm ) const
 }
 
 // ============================================================================
-

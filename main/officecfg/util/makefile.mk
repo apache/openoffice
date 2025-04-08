@@ -41,4 +41,3 @@ $(BIN)$/registry_{$(alllangiso)}.zip : $(MISC)$/$(TARGET)_delzip
 ALLTAR: \
 	$(MISC)$/$(TARGET)_delzip \
 	$(BIN)$/registry_{$(alllangiso)}.zip
-

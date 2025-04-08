@@ -213,4 +213,3 @@ public class BorderedStream
 		return (long)m_nCurSize;
 	}
 };
-

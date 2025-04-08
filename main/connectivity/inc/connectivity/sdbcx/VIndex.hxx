@@ -110,4 +110,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_INDEX_HXX_
-

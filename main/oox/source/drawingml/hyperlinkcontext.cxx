@@ -169,4 +169,3 @@ Reference< XFastContextHandler > HyperLinkContext::createFastChildContext(
 
 } // namespace drawingml
 } // namespace oox
-

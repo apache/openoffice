@@ -71,4 +71,3 @@ class ParseToolsFactory_Ifc
 
 
 #endif
-

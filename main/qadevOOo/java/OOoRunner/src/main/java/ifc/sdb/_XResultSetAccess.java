@@ -34,7 +34,7 @@ import com.sun.star.sdbc.XResultSet;
 * <ul>
 *  <li><code> createResultSet()</code></li>
 * </ul> <p>
-* Test is multithread compilant. <p>
+* Test is multithread compliant. <p>
 * @see com.sun.star.sdb.XResultSetAccess
 */
 public class _XResultSetAccess extends MultiMethodTest {
@@ -61,5 +61,3 @@ public class _XResultSetAccess extends MultiMethodTest {
 
     }
 }  // finish class _XResultSetAccess
-
-

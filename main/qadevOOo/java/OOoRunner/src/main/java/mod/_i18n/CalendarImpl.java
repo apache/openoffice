@@ -73,4 +73,3 @@ public class CalendarImpl extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

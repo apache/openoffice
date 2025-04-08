@@ -216,4 +216,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_OSTATEMENT_HXX_
-

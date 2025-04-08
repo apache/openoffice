@@ -90,5 +90,3 @@ namespace dbaui
 	};
 }
 #endif //_DBAUI_ADASTAT_HXX_
-
-

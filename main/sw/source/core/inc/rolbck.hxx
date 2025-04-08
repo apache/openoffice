@@ -451,4 +451,3 @@ public:
 
 
 #endif // _ROLBCK_HXX
-

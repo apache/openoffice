@@ -722,4 +722,3 @@ void OMultiTypeInterfaceContainerHelperInt32::clear()
 }
 
 }
-

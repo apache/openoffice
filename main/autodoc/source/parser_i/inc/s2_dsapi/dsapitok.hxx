@@ -57,5 +57,3 @@ class Token : public TextToken
 
 
 #endif
-
-

@@ -73,4 +73,3 @@ public class HierarchyContentProvider extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class HierarchyContentProvider
-

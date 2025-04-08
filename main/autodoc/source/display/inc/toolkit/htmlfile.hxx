@@ -78,5 +78,3 @@ class DocuFile_Html
 
 
 #endif
-
-

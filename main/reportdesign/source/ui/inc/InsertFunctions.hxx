@@ -39,4 +39,3 @@ namespace rptui
 } // namespace rptui
 // ---------
 #endif		// RPT_INSERTFUNCTIONS_HXX_INCLUDED
-

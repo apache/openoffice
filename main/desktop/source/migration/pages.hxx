@@ -113,4 +113,3 @@ protected:
 } // namespace desktop
 
 #endif // #ifndef _PAGES_HXX_
-

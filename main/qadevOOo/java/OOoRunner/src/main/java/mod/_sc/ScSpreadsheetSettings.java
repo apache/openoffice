@@ -77,4 +77,3 @@ public class ScSpreadsheetSettings extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class ScSpreadsheetSettings
-

@@ -280,6 +280,3 @@ void RequestQueue::Clear (void)
 
 
 } } } // end of namespace ::sd::slidesorter::cache
-
-
-

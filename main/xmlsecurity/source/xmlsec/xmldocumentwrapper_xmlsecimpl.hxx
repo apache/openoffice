@@ -277,4 +277,3 @@ SAL_CALL XMLDocumentWrapper_XmlSecImpl_createInstance(
 	throw ( com::sun::star::uno::Exception );
 
 #endif
-

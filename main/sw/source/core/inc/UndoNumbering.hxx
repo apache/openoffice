@@ -147,4 +147,3 @@ public:
 };
 
 #endif // SW_UNDO_NUMBERING_HXX
-

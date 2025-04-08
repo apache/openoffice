@@ -305,7 +305,3 @@ IMPL_LINK( ScTpCalcOptions, CheckClickHdl, CheckBox*, pBtn )
 
 	return 0;
 }
-
-
-
-

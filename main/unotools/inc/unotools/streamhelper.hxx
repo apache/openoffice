@@ -109,4 +109,3 @@ public:
 
 
 #endif // _UNOTOOLS_STREAM_WRAPPER_HXX_
-

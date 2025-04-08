@@ -133,12 +133,12 @@ protected:
     /** Select or deselect the specified child or all children if the given
         index has the special value ACCESSIBLE_SELECTION_CHILD_ALL.
         Selecting or deselecting a child sets or resets the
-        <const>SELECTED</const> state and selects or deslects the UNO shape
+        <const>SELECTED</const> state and selects or deselects the UNO shape
         being made accessible by the child.
         @param nAccessibleChildIndex
             Index of the child to select or deselect.  If the parameter has
             the value ACCESSIBLE_SELECTION_CHILD_ALL then all children are
-            selected or deslected.
+            selected or deselected.
         @param bSelect
             Indicates whether to select or deselect the specified child
             reps. children.

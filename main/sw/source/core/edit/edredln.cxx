@@ -141,6 +141,3 @@ sal_uInt16 SwEditShell::FindRedlineOfData( const SwRedlineData& rData ) const
 			return i;
 	return USHRT_MAX;
 }
-
-
-

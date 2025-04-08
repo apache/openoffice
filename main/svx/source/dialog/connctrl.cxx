@@ -380,4 +380,3 @@ void SvxXConnectionPreview::DataChanged( const DataChangedEvent& rDCEvt )
 		SetStyles();
 	}
 }
-

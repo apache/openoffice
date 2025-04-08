@@ -56,5 +56,3 @@ public class _XReportDocumentsSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XReportDocumentsSupplier
-
-

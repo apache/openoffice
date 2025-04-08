@@ -59,4 +59,3 @@ inline const SwFmtCntnt &SwFmt::GetCntnt(sal_Bool bInP) const
 	{ return aSet.GetCntnt(bInP); }
 
 #endif
-

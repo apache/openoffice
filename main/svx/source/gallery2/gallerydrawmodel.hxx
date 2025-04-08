@@ -37,4 +37,3 @@ private:
     SfxObjectShellLock mxDoc;
     FmFormModel* mpFormModel;
 };
-

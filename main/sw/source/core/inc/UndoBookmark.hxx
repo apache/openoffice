@@ -76,4 +76,3 @@ public:
 };
 
 #endif // SW_UNDO_BOOKMARK_HXX
-

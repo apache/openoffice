@@ -212,4 +212,3 @@ sal_Bool SAL_CALL OResultSetMetaData::isWritable( sal_Int32 column ) throw(SQLEx
 	return !isReadOnly(column);
 }
 // -------------------------------------------------------------------------
-

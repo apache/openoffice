@@ -452,4 +452,3 @@ namespace vcl
 }
 
 #endif
-

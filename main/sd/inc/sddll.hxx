@@ -72,4 +72,3 @@ public:
 #endif
 
 #endif                               // _SDDLL_HXX
-

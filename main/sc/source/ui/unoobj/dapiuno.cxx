@@ -3565,7 +3565,3 @@ void SAL_CALL ScDataPilotItemObj::removeVetoableChangeListener(
 }
 
 //------------------------------------------------------------------------
-
-
-
-

@@ -62,6 +62,3 @@ class X_Default : public Exception
 
 
 #endif
-
-
-

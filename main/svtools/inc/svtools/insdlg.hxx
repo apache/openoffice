@@ -67,4 +67,3 @@ public:
 };
 
 #endif // _SVTOOLS_INSDLG_HXX
-

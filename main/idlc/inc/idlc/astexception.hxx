@@ -36,4 +36,3 @@ public:
 };
 
 #endif // _IDLC_ASTEXCEPTION_HXX_
-

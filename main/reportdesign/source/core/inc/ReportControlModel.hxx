@@ -130,4 +130,3 @@ namespace reportdesign
 	};
 }
 #endif // RPT_REPORTCONTROLMODEL_HXX
-

@@ -91,4 +91,3 @@ public:
 } // namespace sfx2
 
 #endif // _SFX_XMLIDREGISTRY_HXX_
-

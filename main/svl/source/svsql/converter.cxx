@@ -34,5 +34,3 @@ sal_Int32 SvDbaseConverter::ConvertPrecisionToOdbc(sal_Int32 _nLen, sal_Int32 _n
 {
 	return _nScale ? _nLen -2 : _nLen -1;
 }
-
-

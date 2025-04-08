@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _VOS_SECURITY_HXX_
 #define _VOS_SECURITY_HXX_
@@ -32,9 +30,9 @@
 namespace vos
 {
 
-/** capsulate security informations for one user.
+/** capsulate security information for one user.
     A object of this class is used to execute a process with the rights an
-    security options of a scecified user.
+    security options of a specified user.
     @see OProcess::executeProcess
     @author  Bernd Hofner
     @version 1.0
@@ -61,7 +59,7 @@ public:
     /** get the security information for one user.
         This method will try to login the user at the denoted file server.
         If a network resource named \\server\username exists and this resource
-        could be connected by this user, the methos will return true and getHomeDir
+        could be connected by this user, the method will return true and getHomeDir
         will return \\server\username.
         @param strName [in] denotes the name of the user
         @param strPasswd [in] denotes the password of this user
@@ -75,32 +73,32 @@ public:
     /** get the ident of the logged in user.
         @param strName [out] is the buffer which returns the name
         @param max [in] is the size of this buffer
-        @return True, if any user is successfuly logged in, otherwise False
+        @return True, if any user is successfully logged in, otherwise False
     */
     sal_Bool SAL_CALL getUserIdent(::rtl::OUString& strIdent) const;
 
     /** get the name of the logged in user.
         @param strName [out] is the buffer which returns the name
         @param max [in] is the size of this buffer
-        @return True, if any user is successfuly logged in, otherwise False
+        @return True, if any user is successfully logged in, otherwise False
     */
     sal_Bool SAL_CALL getUserName(::rtl::OUString& strName) const;
 
     /** get the home directory of the logged in user.
         @param strDirectory [out] is the buffer which returns the directory name
         @param max [in] is the size of this buffer
-        @return True, if any user is successfuly logged in, otherwise False
+        @return True, if any user is successfully logged in, otherwise False
     */
     sal_Bool SAL_CALL getHomeDir(::rtl::OUString& strDirectory) const;
 
     /** get the directory for configuration data of the logged in user.
         @param strDirectory [out] is the buffer which returns the directory name
         @param max [in] is the size of this buffer
-        @return True, if any user is successfuly logged in, otherwise False
+        @return True, if any user is successfully logged in, otherwise False
     */
     sal_Bool SAL_CALL getConfigDir(::rtl::OUString& strDirectory) const;
 
-    /** Query if the user who is logged inhas administrator rigths.
+    /** Query if the user who is logged in has administrator rights.
         @return True, if the user has administrator rights, otherwise false.
     */
     sal_Bool SAL_CALL isAdministrator() const;
@@ -115,4 +113,3 @@ protected:
 }
 
 #endif  // _VOS_SECURITY_HXX_
-

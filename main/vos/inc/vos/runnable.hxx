@@ -60,4 +60,3 @@ public:
 
 
 #endif  // _VOS_RUNNABLE_HXX_
-

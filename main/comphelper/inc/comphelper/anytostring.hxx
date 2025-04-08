@@ -43,4 +43,3 @@ COMPHELPER_DLLPUBLIC ::rtl::OUString anyToString( ::com::sun::star::uno::Any con
 }
 
 #endif
-

@@ -187,7 +187,3 @@ void	SwPrintOptions::Commit()
 
     PutProperties(aNames, aValues);
 }
-
-
-
-

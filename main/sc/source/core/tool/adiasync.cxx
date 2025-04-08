@@ -178,6 +178,3 @@ void ScAddInAsync::RemoveDocument( ScDocument* pDocumentP )
 		}
 	}
 }
-
-
-

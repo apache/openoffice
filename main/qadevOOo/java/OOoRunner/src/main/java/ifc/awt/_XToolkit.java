@@ -45,7 +45,7 @@ import com.sun.star.uno.UnoRuntime;
 *  <li><code> createScreenCompatibleDevice() </code></li>
 *  <li><code> createRegion() </code></li>
 * </ul><p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XToolkit
 */
 public class _XToolkit extends MultiMethodTest {
@@ -149,4 +149,3 @@ public class _XToolkit extends MultiMethodTest {
     }
 
 }
-

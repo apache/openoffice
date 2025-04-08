@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
-
 
 #ifndef _OSL_CONDITION_H_
 #define _OSL_CONDITION_H_
@@ -34,8 +31,8 @@ extern "C" {
 typedef void* oslCondition;
 
 typedef enum {
-    osl_cond_result_ok,		/* successful completion */
-    osl_cond_result_error,  /* error occurred, check osl_getLastSocketError() for details */
+	osl_cond_result_ok,		/* successful completion */
+	osl_cond_result_error,  /* error occurred, check osl_getLastSocketError() for details */
 	osl_cond_result_timeout, /* blocking operation timed out */
 	osl_cond_result_FORCE_EQUAL_SIZE = SAL_MAX_ENUM
 } oslConditionResult;
@@ -68,7 +65,7 @@ sal_Bool SAL_CALL osl_resetCondition(oslCondition Condition);
 	If condition has been destroyed prematurely, wait() will
 	return with False.
 	@param Condition handle to a created condition.
-	@param pTimeout Tiemout value or NULL for infinite waiting
+	@param pTimeout Timeout value or NULL for infinite waiting
 	@return False if system-call failed.
 */
 oslConditionResult SAL_CALL osl_waitCondition(oslCondition Condition, const TimeValue* pTimeout);
@@ -85,4 +82,3 @@ sal_Bool SAL_CALL osl_checkCondition(oslCondition Condition);
 #endif
 
 #endif /* _OSL_CONDITION_H_ */
-

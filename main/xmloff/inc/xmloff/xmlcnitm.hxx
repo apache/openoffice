@@ -83,4 +83,3 @@ public:
 };
 
 #endif //  _XMLOFF_XMLCNITM_HXX
-

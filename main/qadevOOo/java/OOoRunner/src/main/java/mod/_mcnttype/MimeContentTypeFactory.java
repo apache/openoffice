@@ -83,4 +83,3 @@ public class MimeContentTypeFactory extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

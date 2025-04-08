@@ -555,6 +555,3 @@ void OPreparedStatement::replaceParameterNodeName(OSQLParseNode* _pNode,
 	}
 }
 // -----------------------------------------------------------------------------
-
-
-

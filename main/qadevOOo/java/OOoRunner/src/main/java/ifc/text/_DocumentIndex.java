@@ -47,4 +47,3 @@ import lib.MultiPropertyTest;
 public class _DocumentIndex extends MultiPropertyTest {
 
 }
-

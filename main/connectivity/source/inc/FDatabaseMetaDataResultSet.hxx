@@ -272,4 +272,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_FDATABASEMETADATARESULTSET_HXX_
-

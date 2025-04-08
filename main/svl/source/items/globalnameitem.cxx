@@ -107,4 +107,3 @@ sal_Bool SfxGlobalNameItem::QueryValue( com::sun::star::uno::Any& rVal, sal_uInt
 	rVal <<= aSeq;
 	return sal_True;
 }
-

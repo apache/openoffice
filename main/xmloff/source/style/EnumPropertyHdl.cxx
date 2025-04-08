@@ -91,4 +91,3 @@ sal_Bool XMLEnumPropertyHdl::exportXML( OUString& rStrExpValue, const Any& rValu
 	rStrExpValue = aOut.makeStringAndClear();
 	return sal_True;
 }
-

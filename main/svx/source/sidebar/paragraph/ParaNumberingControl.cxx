@@ -149,6 +149,3 @@ void ParaNumberingControl::UpdateValueSet()
 }
 
 }} // end of namespace sidebar
-
-
-

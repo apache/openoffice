@@ -152,4 +152,3 @@ public class SharedLibraryLoader {
             libName, smgr, regKey, SharedLibraryLoader.class.getClassLoader() );
 	}
 }
-

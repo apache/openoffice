@@ -1771,4 +1771,3 @@ void XMLPageExportPropertyMapper::handleElementItem(
 			break;
 	}
 }
-

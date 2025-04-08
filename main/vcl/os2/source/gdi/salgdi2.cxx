@@ -610,7 +610,7 @@ SalBitmap* Os2SalGraphics::getBitmap( long nX, long nY, long nDX, long nDY )
 	SIZEL		 size = { nDX, nDY };
 	Os2SalBitmap*	  pSalBitmap = NULL;
 
-	// create device context (at this time allways display compatible)
+	// create device context (at this time always display compatible)
 	DEVOPENSTRUC	aDevOpenStruc = { NULL, (PSZ)"DISPLAY", NULL, NULL, NULL, NULL, NULL, NULL, NULL };
 	HDC 			hMemDC = DevOpenDC( hAB, OD_MEMORY, (PSZ)"*", 5L, (PDEVOPENDATA)&aDevOpenStruc, 0 );
 	HPS 			hMemPS = Ft2CreatePS( hAB, hMemDC, &size, GPIT_MICRO | GPIA_ASSOC | PU_PELS );
@@ -785,4 +785,3 @@ void Os2SalGraphics::invert( sal_uInt32 nPoints, const SalPoint* pPtAry, SalInve
 		Ft2SetAttrs( mhPS, PRIM_AREA, ABB_COLOR | ABB_MIX_MODE | ABB_SYMBOL, 0, &oldAb );
 	}
 }
-

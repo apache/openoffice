@@ -79,4 +79,3 @@ inline SvxPageModelItem& SvxPageModelItem::operator=( const SvxPageModelItem& rM
 }
 
 #endif
-

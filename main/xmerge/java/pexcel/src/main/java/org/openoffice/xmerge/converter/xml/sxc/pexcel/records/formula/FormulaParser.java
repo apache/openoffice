@@ -554,4 +554,3 @@ public class FormulaParser {
 		return "\n\t" + formulaStr + "\n\t" + buff.toString();
 	}
  }
-

@@ -49,4 +49,3 @@ namespace connectivity
 	};
 }
 #endif // CONNECTIVITY_INDEXHELPER_HXX_
-

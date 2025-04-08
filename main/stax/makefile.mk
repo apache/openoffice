@@ -71,4 +71,3 @@ nojava:
 .IF "$(SOLAR_JAVA)" != ""
 .INCLUDE : tg_ext.mk
 .ENDIF
-

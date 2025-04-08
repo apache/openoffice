@@ -286,5 +286,3 @@ SV_DECL_IMPL_PERSIST_LIST(SvMetaExtern,SvMetaExtern *)
 
 
 #endif // _BASOBJ_HXX
-
-

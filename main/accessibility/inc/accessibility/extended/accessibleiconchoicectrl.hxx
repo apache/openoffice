@@ -112,4 +112,3 @@ namespace accessibility
 //........................................................................
 
 #endif // ACCESSIBILITY_EXT_ACCESSIBLEICONCHOICECTRL_HXX_
-

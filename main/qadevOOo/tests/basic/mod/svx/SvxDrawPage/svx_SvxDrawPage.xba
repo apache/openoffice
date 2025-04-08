@@ -31,16 +31,16 @@
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.container.XNamed
+' Required for  com.sun.star.container.XNamed
  Global cNameToSet As String ' "fixed" if name is fixed
 
-' Requiered for  com.sun.star.drawing.XShapeGrouper
+' Required for  com.sun.star.drawing.XShapeGrouper
  Global oGrouperCollection As Object 'groupable objects
-' Requiered for  com.sun.star.drawing.XShapes
+' Required for  com.sun.star.drawing.XShapes
  Global oXShapeInstance As Object 'to add/remove
-' Requiered for  com.sun.star.drawing.XShapeCombiner
+' Required for  com.sun.star.drawing.XShapeCombiner
  Global oCombinerCollection As Object
-' Requiered for  com.sun.star.drawing.XShapeBinder
+' Required for  com.sun.star.drawing.XShapeBinder
  Global oBinderCollection As Object
 
 

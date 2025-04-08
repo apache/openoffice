@@ -267,7 +267,7 @@ class FilterCache : public BaseLock
         OUStringList m_lChangedContentHandlers;
 
         //---------------------------------------
-        /// readonly acccess to the module configuration of OOo
+        /// readonly access to the module configuration of OOo
         css::uno::Reference< css::container::XNameAccess > m_xModuleCfg;
 
     //-------------------------------------------
@@ -283,7 +283,7 @@ class FilterCache : public BaseLock
             @descr  Its not allowed to do anything here ...
                     especially is forbidden to start operations,
                     which needs a FilterCache instance too!
-                    Why? Because thie FilterCache instance will be
+                    Why? Because this FilterCache instance will be
                     used as a singleton! And if during this ctor any
                     action related to this FilterCache singleton is
                     started ... a race will be the result.
@@ -313,7 +313,7 @@ class FilterCache : public BaseLock
                     because it listens for changes on the internal used configuration layer.
                     If the new data are needed immediately inside the original container,
                     the method takeOver() can be used to copy all changes back.
-                    The may be following notifications of the configuration will be superflous then.
+                    The may be following notifications of the configuration will be superfluous then.
                     But they can't be stopped ...
 
                     All internal structures will be copied here. But the internal used
@@ -340,10 +340,10 @@ class FilterCache : public BaseLock
                         Otherwise this method does nothing!
 
                         This method must be called from every user of this cache
-                        everytimes it need a filled cache. Normally we load
+                        everytime it needs a filled cache. Normally we load
                         only standard informations into this cache on startup.
                         After a few seconds we start a special thread, which
-                        may fill this cache completely. But if somehwere outside
+                        may fill this cache completely. But if somewhere outside
                         need a filled cache before ... it can run into trouble,
                         if this "load-on-demand" thread does not finished its work before.
                         This method "load(xxx)" synchronize such load-on-demand requests.
@@ -490,7 +490,7 @@ class FilterCache : public BaseLock
                         see also EItemType.
 
             @param      sItem
-                        the key name of the requested item inside the pecified sub container.
+                        the key name of the requested item inside the specified sub container.
 
             @throw      [css::uno::Exception]
                         if some input parameter are wrong or the cache itself is not valid
@@ -505,7 +505,7 @@ class FilterCache : public BaseLock
         /** @short      return an item, which match the specified type and name.
 
             @descr      Because this cache can be used inside multithreaded environments
-                        the caller must be aware of some exceptions - especially a "NoSuchElementExcepotion".
+                        the caller must be aware of some exceptions - especially a "NoSuchElementException".
                         May another thread already removed the required item before ...
 
             @param      eType
@@ -588,7 +588,7 @@ class FilterCache : public BaseLock
                         Note: If the item is missing inside the underlying configuration
                         no exception will be thrown. In such case the item is marked as
                         finalized/mandatory automatically
-                        Reason: May be the item cames from the old configuration package and
+                        Reason: May be the item comes from the old configuration package and
                         was not migrated to the new one. So we can't provide write access
                         to such items ...
          */
@@ -708,7 +708,7 @@ class FilterCache : public BaseLock
                         object.
 
             @param      bLocalesMode
-                        enable/disable special handling of localized configuratiom
+                        enable/disable special handling of localized configuration
                         items by the returned configuration object.
 
             @return     A valid reference, if the configuration access could be opened
@@ -766,7 +766,7 @@ class FilterCache : public BaseLock
                         Wrong dependencies will be corrected automatically.
                         If something could not be repaired - an exception
                         is thrown.
-                        Further some optmized structures will be created.
+                        Further some optimized structures will be created.
                         E.g.: a hash to map extensions to her types.
 
             @attention  There is no exception, if the cache could be repaired
@@ -862,7 +862,7 @@ class FilterCache : public BaseLock
 
             @param  sItem
                     means the internal name, which can be used to address the item
-                    properties relativ to the given configuration set.
+                    properties relative to the given configuration set.
 
             @param  eOption
                     regulate, which properties of the requested item should be read.
@@ -883,7 +883,7 @@ class FilterCache : public BaseLock
                     layer.
 
             @descr  The outside code has to be sure, that the item does not already exists
-                    inside this cachse. Otherwise it will be loaded twice. This method
+                    inside this caches. Otherwise it will be loaded twice. This method
                     doesn't check such constellations!
 
             @param  eType
@@ -943,7 +943,7 @@ class FilterCache : public BaseLock
                     this list to check if the item was changed/added or removed. This method
                     checks the exist state of the requested item inside our own cache
                     and inside the underlying configuration layer to find out, if the item
-                    must be removed/added or modified inside the configuratuion layer.
+                    must be removed/added or modified inside the configuration layer.
 
             @param  xSet
                     points directly to the configuration set, where the item should resist

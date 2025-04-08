@@ -51,4 +51,3 @@ public:
 };
 
 #endif // _SV_UNOWCNTR_HXX_
-

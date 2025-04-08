@@ -209,5 +209,3 @@ public:
 	virtual	void 		Reset( const SfxItemSet& rSet );
 };
 #endif // #ifndef _OFA_OPTGDLG_HXX
-
-

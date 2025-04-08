@@ -115,4 +115,3 @@ public class _UnoControlButtonModel extends MultiPropertyTest {
 
 
 }
-

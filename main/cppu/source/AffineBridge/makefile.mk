@@ -37,4 +37,3 @@ SLOFILES := $(SLO)$/AffineBridge.obj
 
 
 .INCLUDE: target.mk
-

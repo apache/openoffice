@@ -131,4 +131,3 @@ SfxPoolItem * CntUnencodedStringItem::Clone(SfxItemPool *) const
 	DBG_CHKTHIS(CntUnencodedStringItem, 0);
 	return new CntUnencodedStringItem(*this);
 }
-

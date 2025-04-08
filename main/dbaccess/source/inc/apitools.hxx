@@ -448,4 +448,3 @@ public:
 #define UNUSED(x)	x;
 
 #endif // _DBASHARED_APITOOLS_HXX_
-

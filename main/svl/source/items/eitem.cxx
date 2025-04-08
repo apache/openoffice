@@ -39,5 +39,3 @@ TYPEINIT1(SfxEnumItem, CntEnumItem);
 //============================================================================
 
 TYPEINIT1_AUTOFACTORY(SfxBoolItem, CntBoolItem);
-
-

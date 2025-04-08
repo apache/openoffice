@@ -324,4 +324,3 @@ void restore_gail_window_vtable (void)
     
     atk_class->initialize = window_real_initialize;
 }
-

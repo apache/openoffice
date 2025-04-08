@@ -136,6 +136,3 @@ CSubmission::SubmissionResult CSubmission::replace(const ::rtl::OUString& aRepla
     _rOutEnv = pHelper;
     return apSerialization;
 }
-
-
-

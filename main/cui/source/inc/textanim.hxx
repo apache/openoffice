@@ -121,4 +121,3 @@ public:
 
 
 #endif // _SVX_TEXTANIM_HXX
-

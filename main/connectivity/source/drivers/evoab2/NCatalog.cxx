@@ -93,4 +93,3 @@ Reference< XNameAccess > SAL_CALL  OEvoabCatalog::getTables(  ) throw(RuntimeExc
 
         return m_pTables;
 }
-

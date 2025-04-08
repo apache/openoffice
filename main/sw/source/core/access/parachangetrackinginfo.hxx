@@ -49,4 +49,3 @@ class SwParaChangeTrackingInfo
         SwWrongList* mpChangeTrackFormatChangeTextMarkupList;
 };
 #endif
-

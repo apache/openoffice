@@ -72,4 +72,3 @@ class IdlParser : public ::CodeParser,
 
 
 #endif
-

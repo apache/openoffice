@@ -140,4 +140,3 @@ namespace cairocanvas
 }
 
 #endif /* _CAIROCANVAS_SPRITECANVASHELPER_HXX_ */
-

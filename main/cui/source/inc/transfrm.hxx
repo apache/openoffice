@@ -298,4 +298,3 @@ public:
 
 
 #endif // _SVX_TRANSFRM_HXX
-

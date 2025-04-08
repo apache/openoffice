@@ -133,4 +133,3 @@ void SalTimerProc( HWND, UINT, UINT nId, ULONG )
 	}
 
 }
-

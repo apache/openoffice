@@ -466,4 +466,3 @@ void SAL_CALL OPreparedStatement::clearParameters(  ) throw(SQLException, Runtim
 
 	m_xAggregateAsParameters->clearParameters();
 }
-

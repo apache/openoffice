@@ -168,4 +168,3 @@ void BaseContainerNode::showState() const
 
 } // namespace internal
 } // namespace slideshow
-

@@ -1430,7 +1430,7 @@ public:
     // <- #116530#
 
 
-    // --> FME 2005-03-16 #i44963# The html import sometimes overwrites the
+    // --> FME 2005-03-16 #i44963# The HTML import sometimes overwrites the
     // page sizes set in the page descriptions. This function is used to
     // correct this.
     void CheckDefaultPageFmt();

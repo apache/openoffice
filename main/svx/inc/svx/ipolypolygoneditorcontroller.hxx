@@ -69,4 +69,3 @@ public:
 };
 
 #endif //_SDR_IPOLYPOLYGONEDITORCONTROLLER_HXX
-

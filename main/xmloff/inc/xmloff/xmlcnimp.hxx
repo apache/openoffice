@@ -122,4 +122,3 @@ inline const ::rtl::OUString& SvXMLAttrContainerData::GetPrefix( sal_uInt16 i ) 
 }
 
 #endif
-

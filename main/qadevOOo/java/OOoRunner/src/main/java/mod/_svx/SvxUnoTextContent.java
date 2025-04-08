@@ -64,7 +64,7 @@ public class SvxUnoTextContent extends TestCase {
             log.println( "creating a drawdoc" );
             xDrawDoc = DrawTools.createDrawDoc((XMultiServiceFactory)tParam.getMSF());
         } catch ( Exception e ) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create document", e );
         }
@@ -143,4 +143,3 @@ public class SvxUnoTextContent extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

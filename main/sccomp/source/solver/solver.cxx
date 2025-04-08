@@ -668,4 +668,3 @@ extern "C"
         return pRet;
     }
 }
-

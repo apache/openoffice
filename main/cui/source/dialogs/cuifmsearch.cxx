@@ -966,4 +966,3 @@ void FmSearchDialog::SaveParams() const
 
 	m_pConfig->setParams( aCurrentSettings );
 }
-

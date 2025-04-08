@@ -383,4 +383,3 @@ public class StyleCatalog {
         return null;
     }
 }
-

@@ -338,4 +338,3 @@ void SAL_CALL OFixedText::setSize( const awt::Size& aSize ) throw (beans::Proper
 // =============================================================================
 } // namespace reportdesign
 // =============================================================================
-

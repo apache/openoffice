@@ -58,7 +58,7 @@ import com.sun.star.uno.XInterface;
 *     ('#' - is an ordinary number) </li>
 * </ul> <p>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.registry.XSimpleRegistry
 * @see com.sun.star.lang.XInitialization
 * @see ifc.registry._XSimpleRegistry
@@ -195,4 +195,3 @@ public class NestedRegistry extends TestCase {
     }
 
 }    // finish class NestedRegistry
-

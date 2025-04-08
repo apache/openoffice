@@ -63,4 +63,3 @@ public:
 };
 
 #endif // #ifndef _SVX_OPTCTL_HXX
-

@@ -66,4 +66,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FLAT_DCONNECTION_HXX_
-

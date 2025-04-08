@@ -202,4 +202,3 @@ void SdPageListControl::DataChanged( const DataChangedEvent& rDCEvt )
 {
     SvTreeListBox::DataChanged( rDCEvt );
 }
-

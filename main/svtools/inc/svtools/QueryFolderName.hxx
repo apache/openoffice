@@ -59,4 +59,3 @@ public:
 
 }
 #endif // SVT_QUERYFOLDER_HXX
-

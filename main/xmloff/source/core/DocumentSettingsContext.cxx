@@ -1007,4 +1007,3 @@ void XMLConfigItemMapIndexedContext::EndElement()
 		DBG_ERROR("no BaseContext");
     }
 }
-

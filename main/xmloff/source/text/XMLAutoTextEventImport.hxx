@@ -92,4 +92,3 @@ protected:
 	throw( ::com::sun::star::uno::Exception );
 
 #endif
-

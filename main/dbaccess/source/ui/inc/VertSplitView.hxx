@@ -53,4 +53,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_VERTSPLITVIEW_HXX
-

@@ -74,4 +74,3 @@ bool SFX2_DLLPUBLIC SaveOlePropertySet(
 } // namespace sfx2
 
 #endif
-

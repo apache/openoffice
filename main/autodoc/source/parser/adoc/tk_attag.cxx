@@ -102,4 +102,3 @@ DEFINE_TOKEN_CLASS(at_NOHTML,  "")
 DEFINE_TOKEN_CLASS(at_since, "Since");
 
 }   // namespace adoc
-

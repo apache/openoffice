@@ -283,6 +283,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL SwXTextDefaults::getSupportedServiceNa
     *pArr++ = C2U("com.sun.star.style.ParagraphPropertiesComplex");
 	return aRet;
 }
-
-
-

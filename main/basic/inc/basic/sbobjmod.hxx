@@ -117,4 +117,3 @@ SV_DECL_IMPL_REF(SbObjModule);
 
 #endif
 #endif
-

@@ -67,4 +67,3 @@ public :
 };
 
 #endif	// _FILEOPEN_DIALOG_HXX_
-

@@ -223,4 +223,3 @@ ScAreaLinkSaveCollection* ScAreaLinkSaveCollection::CreateFromDoc( const ScDocum
 
 	return pColl;
 }
-

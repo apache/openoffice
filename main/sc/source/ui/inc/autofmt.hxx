@@ -202,5 +202,3 @@ private:
 };
 
 #endif // SC_AUTOFMT_HXX
-
-

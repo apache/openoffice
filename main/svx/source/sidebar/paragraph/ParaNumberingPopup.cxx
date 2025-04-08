@@ -58,7 +58,3 @@ void ParaNumberingPopup::UpdateValueSet ()
 
 
 } } // end of namespace svx::sidebar
-
-
-
-

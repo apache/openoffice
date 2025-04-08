@@ -217,4 +217,3 @@ namespace svx
 //........................................................................
 
 #endif // SVX_SOURCE_INC_FMTEXTCONTROLSHELL_HXX
-

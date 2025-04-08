@@ -231,4 +231,3 @@ void SvxParaPrevWindow::OutputSizeChanged()
 	aWinSize = PixelToLogic( aWinSize );
 	Invalidate();
 }
-

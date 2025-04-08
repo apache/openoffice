@@ -75,7 +75,7 @@ private:
 //=========================================================================
 //= OModuleClient
 //=========================================================================
-/** base class for objects which uses any global module-specific ressources 
+/** base class for objects which uses any global module-specific resources
 */
 class OModuleClient
 {
@@ -87,7 +87,7 @@ public:
 //=========================================================================
 //= ModuleRes
 //=========================================================================
-/** specialized ResId, using the ressource manager provided by the global module
+/** specialized ResId, using the resource manager provided by the global module
 */
 class ModuleRes : public ::ResId
 {
@@ -100,4 +100,3 @@ public:
 //.........................................................................
 
 #endif // _DBAUI_MODULE_DBU_HXX_
-

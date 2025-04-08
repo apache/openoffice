@@ -44,7 +44,7 @@ import com.sun.star.lang.WrappedTargetException;
 *   will be modified this Object directly so other threads may be faild.
 *  </li>
 * <ul> <p>
-* Test is multithread compilant. <p>
+* Test is multithread compliant. <p>
 * @see com.sun.star.container.XEnumeration
 */
 public class _XEnumeration extends MultiMethodTest {
@@ -130,4 +130,3 @@ public class _XEnumeration extends MultiMethodTest {
     } // end NextElement
 
 } //end XEnumeration
-

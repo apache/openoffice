@@ -138,4 +138,3 @@ namespace connectivity
 }	// namespace connectivity
 //........................................................................
 #endif // CONNECTIVITY_HSQLDB_DRIVER_HXX
-

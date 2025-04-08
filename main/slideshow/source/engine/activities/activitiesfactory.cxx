@@ -969,4 +969,3 @@ AnimationActivitySharedPtr ActivitiesFactory::createSimpleActivity(
 
 } // namespace internal
 } // namespace presentation
-

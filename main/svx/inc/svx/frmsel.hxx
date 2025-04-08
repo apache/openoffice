@@ -197,4 +197,3 @@ private:
 } // namespace svx
 
 #endif
-

@@ -77,4 +77,3 @@ public:
 }	// namespace comphelper
 
 #endif
-

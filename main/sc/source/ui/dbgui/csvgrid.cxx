@@ -1348,4 +1348,3 @@ ScAccessibleCsvControl* ScCsvGrid::ImplCreateAccessible()
 
 
 // ============================================================================
-

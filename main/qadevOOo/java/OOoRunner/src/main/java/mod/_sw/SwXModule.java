@@ -42,7 +42,7 @@ import com.sun.star.uno.XInterface;
  *  <li> <code>com::sun::star::view::XViewSettingsSupplier</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.view.XPrintSettingsSupplier
  * @see com.sun.star.view.XViewSettingsSupplier
  * @see ifc.view._XPrintSettingsSupplier
@@ -83,4 +83,3 @@ public class SwXModule extends TestCase {
     } // finish method getTestEnvironment
 
 } // finish class SwXModule
-

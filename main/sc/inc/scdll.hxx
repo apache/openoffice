@@ -70,5 +70,3 @@ public:
 #define SC_DLL() ( *(ScModule**) GetAppData(SHL_CALC) )
 
 #endif
-
-

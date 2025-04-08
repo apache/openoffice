@@ -34,7 +34,7 @@ import com.sun.star.util.XReplaceDescriptor;
  *  <li><code> getReplaceString()</code></li>
  *  <li><code> setReplaceString()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.util.XReplaceDescriptor
  */
 public class _XReplaceDescriptor extends MultiMethodTest {
@@ -67,5 +67,3 @@ public class _XReplaceDescriptor extends MultiMethodTest {
     }
 
 }  // finish class _XReplaceDescriptor
-
-

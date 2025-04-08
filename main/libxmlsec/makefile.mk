@@ -190,5 +190,3 @@ OUT2LIB+=src$/.libs$/libxmlsec1.a src$/nss$/.libs$/libxmlsec1-nss.a
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
-
-

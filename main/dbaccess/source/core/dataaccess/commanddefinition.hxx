@@ -136,5 +136,3 @@ private:
 //........................................................................
 
 #endif // _DBA_COREDATAACESS_COMMANDDEFINITION_HXX_
-
-

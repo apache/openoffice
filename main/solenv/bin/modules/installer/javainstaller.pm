@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -41,7 +41,7 @@ use installer::logger;
 sub get_language_string_from_language_block
 {
 	my ($language_block, $language, $oldstring) = @_;
-	
+
 	my $newstring = "";
 
 	for ( my $i = 0; $i <= $#{$language_block}; $i++ )
@@ -50,15 +50,15 @@ sub get_language_string_from_language_block
 		{
 			$newstring = $1;
 			last;
-		}	
-	}	
-	
+		}
+	}
+
 	if ( $newstring eq "" )
 	{
-		$language = "en-US"; 	# defaulting to english	
+		$language = "en-US"; 	# defaulting to english
 
 		for ( my $i = 0; $i <= $#{$language_block}; $i++ )
-		{		
+		{
 			if ( ${$language_block}[$i] =~ /^\s*$language\s*\=\s*\"(.*)\"\s*$/ )
 			{
 				$newstring = $1;
@@ -66,7 +66,7 @@ sub get_language_string_from_language_block
 			}
 		}
 	}
-	
+
 	return $newstring;
 }
 
@@ -82,24 +82,24 @@ sub get_language_block_from_language_file
 	my @language_block = ();
 
 	for ( my $i = 0; $i <= $#{$languagefile}; $i++ )
-	{		
+	{
 		if ( ${$languagefile}[$i] =~ /^\s*\[\s*$searchstring\s*\]\s*$/ )
 		{
 			my $counter = $i;
 
 			push(@language_block, ${$languagefile}[$counter]);
 			$counter++;
-			
+
 			while (( $counter <= $#{$languagefile} ) && (!( ${$languagefile}[$counter] =~ /^\s*\[/ )))
 			{
 				push(@language_block, ${$languagefile}[$counter]);
 				$counter++;
 			}
-			
+
 			last;
 		}
-	}	
-	
+	}
+
 	return \@language_block;
 }
 
@@ -113,13 +113,13 @@ sub get_module_name_description
 	my ($modulesarrayref, $onelanguage, $gid, $type) = @_;
 
 	my $found = 0;
-	
+
 	my $newstring = "";
 
 	for ( my $i = 0; $i <= $#{$modulesarrayref}; $i++ )
 	{
 		my $onemodule = ${$modulesarrayref}[$i];
-		
+
 		if ( $onemodule->{'gid'} eq $gid )
 		{
 			my $typestring = $type . " " . "(" . $onelanguage . ")";
@@ -129,13 +129,13 @@ sub get_module_name_description
 
 		if ( $found ) { last; }
 	}
-	
+
 	# defaulting to english
-	
+
 	if ( ! $found )
 	{
 		my $defaultlanguage = "en-US";
-		
+
 		for ( my $i = 0; $i <= $#{$modulesarrayref}; $i++ )
 		{
 			my $onemodule = ${$modulesarrayref}[$i];
@@ -161,7 +161,7 @@ sub get_module_name_description
 sub set_productname_and_productversion
 {
 	my ($templatefile, $variableshashref) = @_;
-	
+
 	$installer::logger::Lang->print("\n");
 	$installer::logger::Lang->print("Setting product name and product version in Java template file\n");
 
@@ -173,9 +173,9 @@ sub set_productname_and_productversion
 		${$templatefile}[$i] =~ s/\{PRODUCTNAME\}/$productname/g;
 		${$templatefile}[$i] =~ s/\{PRODUCTVERSION\}/$productversion/g;
 	}
-	
+
 	$infoline = "End of: Setting product name and product version in Java template file\n\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 }
 
 #######################################################
@@ -188,39 +188,39 @@ sub set_component_name_and_description
 
 	$installer::logger::Lang->print("\n");
 	$installer::logger::Lang->print("Setting component names and description in Java template file\n");
-	
+
 	for ( my $i = 0; $i <= $#{$templatefile}; $i++ )
 	{
 		# OOO_gid_Module_Prg_Wrt_Name
 		# OOO_gid_Module_Prg_Wrt_Description
-	
+
 		my $oneline = ${$templatefile}[$i];
 		my $oldstring = "";
 		my $gid = "";
 		my $type = "";
-		
+
 		if ( $oneline =~ /\b(OOO_gid_\w+)\b/ )
 		{
 			$oldstring = $1;
-			
+
 			$infoline = "Found: $oldstring\n";
 			$installer::logger::Lang->print($infoline);
-			
+
 			if ( $oldstring =~ /^\s*OOO_(gid_\w+)_(\w+?)\s*$/ )
 			{
 				$gid = $1;
 				$type = $2;
-			}  
+			}
 
 			my $newstring = get_module_name_description($modulesarrayref, $onelanguage, $gid, $type);
-		
+
 			$infoline = "\tReplacing (language $onelanguage): OLDSTRING: $oldstring NEWSTRING $newstring\n";
 			$installer::logger::Lang->print($infoline);
 
 			${$templatefile}[$i] =~ s/$oldstring/$newstring/;	# always substitute, even if $newstring eq ""
 		}
 	}
-	
+
 	$infoline = "End of: Setting component names and description in Java template file\n\n";
 	$installer::logger::Lang->print($infoline);
 }
@@ -234,28 +234,28 @@ sub translate_javafile
 	my ($templatefile, $languagefile, $onelanguage) = @_;
 
 	for ( my $i = 0; $i <= $#{$templatefile}; $i++ )
-	{		
+	{
 		my @allstrings = ();
-		
+
 		my $oneline = ${$templatefile}[$i];
-		
+
 		while ( $oneline =~ /\b(OOO_\w+)\b/ )
 		{
 			my $replacestring = $1;
 			push(@allstrings, $replacestring);
 			$oneline =~ s/$replacestring//;
-		} 
-		
+		}
+
 		my $oldstring;
-		
+
 		foreach $oldstring (@allstrings)
-		{			
+		{
 			my $language_block = get_language_block_from_language_file($oldstring, $languagefile);
 			my $newstring = get_language_string_from_language_block($language_block, $onelanguage, $oldstring);
 
 			$newstring =~ s/\"/\\\"/g;	# masquerading the "
 			$newstring =~ s/\\\\\"/\\\"/g;	# unmasquerading if \" was converted to \\"	(because " was already masked)
-			
+
 			# if (!( $newstring eq "" )) { ${$idtfile}[$i] =~ s/$oldstring/$newstring/; }
 			${$templatefile}[$i] =~ s/$oldstring/$newstring/;	# always substitute, even if $newstring eq ""
 		}
@@ -282,7 +282,7 @@ sub get_licensefilesource
 }
 
 #######################################################
-# Converting the license string into the 
+# Converting the license string into the
 # Java specific encoding.
 #######################################################
 
@@ -315,9 +315,9 @@ sub convert_licenstring
 		$oneline =~ s/\s*$//;
 		$oneline =~ s/\"/\\\"/g;	# masquerading the "
 		$oneline =~ s/\'/\\\'/g;	# masquerading the '
-		
+
 		$oneline =~ s/\$\{/\{/g;	# replacement of variables, only {PRODUCTNAME}, not ${PRODUCTNAME}
-		
+
 		my $ulfstring = $onelanguage . " = " . "\"" . $oneline . "\"\n";
 		push(@licensearray, $ulfstring);
 	}
@@ -327,15 +327,15 @@ sub convert_licenstring
 	# converting the ulf file to the jlf file with ulfconv
 
 	@licensearray = ();
-		
+
 	my $converter = "ulfconv";
-	
+
 	my $converterref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$converter, $includepatharrayref, 0);
 	if ($$converterref eq "") { installer::exiter::exit_program("ERROR: Could not find converter $converter!", "convert_licenstring"); }
-	
+
 	my $infoline = "Found converter file $converter: $$converterref \n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	my $systemcall = "$$converterref $licensefilename |";
 	open (CONV, "$systemcall");
 	@licensearray = <CONV>;
@@ -364,7 +364,7 @@ sub convert_licenstring
 		$infoline = "ERROR: Could not convert $licensefilename !\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	return $licensestring;
 }
 
@@ -420,7 +420,7 @@ sub make_systemcall
             $installer::logger::Lang->printf($line);
         }
 	}
-	
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: $systemcall\n";
@@ -432,7 +432,7 @@ sub make_systemcall
 		$infoline = "SUCCESS: $systemcall\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	return \@returns;
 }
 
@@ -466,7 +466,7 @@ sub set_classpath_for_install_sdk
 	# $installsdk/classes:$installsdk/classes/setupsdk.jar:
 	# $installsdk/classes/parser.jar:$installsdk/classes/jaxp.jar:
 	# $installsdk/classes/ldapjdk.jar:$directory
-	
+
 	my @additional_classpath = ();
 	push(@additional_classpath, "$installsdk\/classes");
 	push(@additional_classpath, "$installsdk\/installsdk.jar");
@@ -489,7 +489,7 @@ sub set_classpath_for_install_sdk
 	$ENV{'CLASSPATH'} = $newclasspathstring;
 
 	my $infoline = "Setting CLASSPATH to $ENV{'CLASSPATH'}\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 }
 
 #######################################################
@@ -504,10 +504,10 @@ sub set_classfilename
 	{
 		if ( ${$templatefile}[$j] =~ /\Q$searchstring\E/ )
 		{
-			${$templatefile}[$j] =~ s/$searchstring/$classfilename/;			
-			last;	
+			${$templatefile}[$j] =~ s/$searchstring/$classfilename/;
+			last;
 		}
-	}	
+	}
 }
 
 #######################################################
@@ -517,7 +517,7 @@ sub set_classfilename
 sub replace_one_variable
 {
 	my ($xmlfile, $variable, $searchstring) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
 	{
 		${$xmlfile}[$i] =~ s/\$\{$searchstring\}/$variable/g;
@@ -538,7 +538,7 @@ sub substitute_variables
 	{
 		my $value = $variableshashref->{$key};
 		replace_one_variable($xmlfile, $value, $key);
-	}	
+	}
 }
 
 ##########################################################
@@ -546,12 +546,12 @@ sub substitute_variables
 # component
 ##########################################################
 
-sub find_component_line 
+sub find_component_line
 {
 	my ($xmlfile, $componentname) = @_;
-	
+
 	my $linenumber = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
 	{
 		if ( ${$xmlfile}[$i] =~ /name\s*\=\'\s*$componentname/ )
@@ -560,8 +560,8 @@ sub find_component_line
 			last;
 		}
 	}
-	
-	return $linenumber;		
+
+	return $linenumber;
 }
 
 ##########################################################
@@ -578,7 +578,7 @@ sub remove_package
 	my $packagestring = "";
 	my $namestring = "";
 	my $infoline = "";
-	
+
 	if ( $installer::globals::issolarispkgbuild )
 	{
 		$packagestring = "\<pkgunit";
@@ -589,7 +589,7 @@ sub remove_package
 		$packagestring = "\<rpmunit";
 		$namestring = "rpmUniqueName";
 	}
-	
+
 	my $removed_packge = 0;
 
 	for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
@@ -597,28 +597,28 @@ sub remove_package
 		if ( ${$xmlfile}[$i] =~ /^\s*\Q$packagestring\E/ )
 		{
 			# this is a package, but is it the correct one?
-			
-			my $do_delete = 0;			
+
+			my $do_delete = 0;
 			my $linecounter = 1;
 			my $startline = $i+1;
 			my $line = ${$xmlfile}[$startline];
 			if (($line =~ /^\s*\Q$namestring\E\s*\=/) && ($line =~ /\-\Q$searchstring\E/)) { $do_delete = 1; }
-			
+
 			# but not deleting fonts package in language packs
 			if ( $line =~ /-ONELANGUAGE-/ ) { $do_delete = 0; }
-			
+
 			my $endcounter = 0;
-			
+
 			while ((!( $line =~ /\/\>/ )) && ( $startline <= $#{$xmlfile} ))
 			{
 				$linecounter++;
 				$startline++;
 				$line = ${$xmlfile}[$startline];
 				if (($line =~ /^\s*\Q$namestring\E\s*\=/) && ($line =~ /\-\Q$searchstring\E/)) { $do_delete = 1; }
-			} 
+			}
 
 			$linecounter = $linecounter + 1;
-			
+
 			if ( $do_delete )
 			{
 				my $infoline = "\tReally removing package $packagename from xml file.\n";
@@ -638,8 +638,8 @@ sub remove_package
 	else
 	{
 		$infoline = "Did not find package $packagename in xml file.\n";
-		$installer::logger::Lang->print($infoline);		
-	} 
+		$installer::logger::Lang->print($infoline);
+	}
 
 }
 
@@ -661,29 +661,29 @@ sub remove_component
 		{
 			# Counting the lines till the second "</component>"
 
-			push(@removed_lines, ${$xmlfile}[$i]);			
+			push(@removed_lines, ${$xmlfile}[$i]);
 			my $linecounter = 1;
 			my $startline = $i+1;
 			my $line = ${$xmlfile}[$startline];
 			push(@removed_lines, $line);
 			my $endcounter = 0;
-			
+
 			while ((!( $line =~ /^\s*\<\/component\>\s*$/ )) && ( $startline <= $#{$xmlfile} ))
 			{
 				$linecounter++;
 				$startline++;
 				$line = ${$xmlfile}[$startline];
 				push(@removed_lines, $line);
-			} 
+			}
 
 			$linecounter = $linecounter + 2;	 # last line and following empty line
-			
+
 			splice(@{$xmlfile},$i, $linecounter);	# removing $linecounter lines, beginning in line $i
 			last;
 		}
 	}
-	
-	return \@removed_lines;	
+
+	return \@removed_lines;
 }
 
 ##########################################################
@@ -696,7 +696,7 @@ sub remove_languagepack_from_xmlfile
 	my ($xmlfile) = @_;
 
 	# Component begins with "<component selected="true" name='module_languagepacks' componentVersion="${PRODUCTVERSION}">"
-	# and ends with "</component>" (the second "</component>" !) 
+	# and ends with "</component>" (the second "</component>" !)
 
 	remove_component($xmlfile, "languagepack_DEFAULT");
 	remove_component($xmlfile, "languagepack_ONELANGUAGE");
@@ -710,15 +710,15 @@ sub remove_languagepack_from_xmlfile
 sub duplicate_component
 {
 	my ( $arrayref ) = @_;
-	
+
 	@newarray = ();
 
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
 	{
 		push(@newarray, ${$arrayref}[$i]);
 	}
-	
-	return \@newarray;	
+
+	return \@newarray;
 }
 
 ##########################################################
@@ -745,7 +745,7 @@ sub remove_font_package_from_unit
 
 	my $packagestring = "";
 	my $namestring = "";
-	
+
 	if ( $installer::globals::issolarispkgbuild )
 	{
 		$packagestring = "\<pkgunit";
@@ -762,25 +762,25 @@ sub remove_font_package_from_unit
 		if ( ${$unitcopy}[$i] =~ /^\s*\Q$packagestring\E/ )
 		{
 			# this is a package, but is it the correct one?
-			
-			my $do_delete = 0;			
+
+			my $do_delete = 0;
 			my $linecounter = 1;
 			my $startline = $i+1;
 			my $line = ${$unitcopy}[$startline];
 			if (($line =~ /^\s*\Q$namestring\E\s*\=/) && ($line =~ /\Q$searchstring\E/)) { $do_delete = 1; }
-			
+
 			my $endcounter = 0;
-			
+
 			while ((!( $line =~ /\/\>/ )) && ( $startline <= $#{$unitcopy} ))
 			{
 				$linecounter++;
 				$startline++;
 				$line = ${$unitcopy}[$startline];
 				if (($line =~ /^\s*\Q$namestring\E\s*\=/) && ($line =~ /\Q$searchstring\E/)) { $do_delete = 1; }
-			} 
+			}
 
 			$linecounter = $linecounter + 1;
-			
+
 			if ( $do_delete )
 			{
 				splice(@{$unitcopy},$i, $linecounter);	# removing $linecounter lines, beginning in line $i
@@ -793,23 +793,23 @@ sub remove_font_package_from_unit
 ##########################################################
 # If this is an installation set with language packs,
 # modules for each language pack have to be created
-# dynamically 
+# dynamically
 ##########################################################
 
 sub duplicate_languagepack_in_xmlfile
 {
 	my ($xmlfile, $languagesarrayref) = @_;
 
-	my $unit = remove_component($xmlfile, "languagepack_ONELANGUAGE");	
+	my $unit = remove_component($xmlfile, "languagepack_ONELANGUAGE");
 	my $startline = find_component_line($xmlfile, "module_languagepacks");
 	my $infoline = "";
 	$startline = $startline + 1;
-	
+
 	for ( my $i = 0; $i <= $#{$languagesarrayref}; $i++ )
 	{
 		my $onelanguage = ${$languagesarrayref}[$i];
 		my $unitcopy = duplicate_component($unit);
-		
+
 		# replacing string ONELANGUAGE in the unit copy
 		for ( my $j = 0; $j <= $#{$unitcopy}; $j++ ) { ${$unitcopy}[$j] =~ s/ONELANGUAGE/$onelanguage/g; }
 
@@ -819,10 +819,10 @@ sub duplicate_languagepack_in_xmlfile
 	}
 
 	# adding the default language as language pack, too
-    $unit = remove_component($xmlfile, "languagepack_DEFAULT");	
+    $unit = remove_component($xmlfile, "languagepack_DEFAULT");
 	$startline = find_component_line($xmlfile, "module_languagepacks");
 	$startline = $startline + 1;
-	
+
 	$onelanguage = ${$languagesarrayref}[0];
 	$unitcopy = duplicate_component($unit);
 
@@ -859,16 +859,16 @@ sub remove_empty_packages_in_xmlfile
 sub prepare_language_pack_in_xmlfile
 {
 	my ($xmlfile, $languagesarrayref) = @_;
-	
+
 	# if ( ! $installer::globals::is_unix_multi )
 	# {
 	# 	remove_languagepack_from_xmlfile($xmlfile);
 	# }
 	# else
 	# {
-		duplicate_languagepack_in_xmlfile($xmlfile, $languagesarrayref);		
+		duplicate_languagepack_in_xmlfile($xmlfile, $languagesarrayref);
 	# }
-	
+
 }
 
 #######################################################
@@ -905,12 +905,12 @@ sub get_rpm_unit_from_xmlfile
 
 		if (( $foundrpm ) && ( ! $record )) { last; }
 	}
-	
+
 	if ( ! $foundrpm ) { installer::exiter::exit_program("ERROR: Did not find rpmunit $rpmname in xml file!", "get_rpm_unit_from_xmlfile"); }
 
 	$infoline = "Found $rpmname in xml file. Returning block lines: $#rpmunit + 1. Includeline: $includeline \n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	return (\@rpmunit, $includeline);
 }
 
@@ -921,11 +921,11 @@ sub get_rpm_unit_from_xmlfile
 sub exchange_name_in_rpmunit
 {
 	my ($rpmunit, $oldpackagename, $newpackagename) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$rpmunit}; $i++ )
 	{
 		${$rpmunit}[$i] =~ s/$oldpackagename/$newpackagename/;
-	}	
+	}
 }
 
 #######################################################
@@ -940,12 +940,12 @@ sub prepare_linkrpm_in_xmlfile
 	{
 		my $oldpackagename = "";
 		my $newpackagename = "";
-	
+
 		my $rpmline = ${$rpmlist}[$i];
 
 		my $infoline = "Preparing link/patch RPM: $rpmline\n";
 		$installer::logger::Lang->print($infoline);
-		
+
 		if ( $rpmline =~ /^\s*(\S.*?\S)\s+(\S.*?\S)\s*$/ )
 		{
 			$oldpackagename = $1;
@@ -974,20 +974,20 @@ sub remove_w4w_from_xmlfile
 		if ( ${$xmlfile}[$i] =~ /name\s*\=\'\s*gid_Module_Prg_Wrt_Flt_W4w/ )
 		{
 			# Counting the lines till "</component>"
-			
+
 			my $linecounter = 1;
 			my $startline = $i+1;
 			my $line = ${$xmlfile}[$startline];
-			
+
 			while ((!( $line =~ /^\s*\<\/component\>\s*$/ )) && ( $startline <= $#{$xmlfile} ))
 			{
 				$linecounter++;
 				$startline++;
 				$line = ${$xmlfile}[$startline];
-			} 
+			}
 
 			$linecounter = $linecounter + 2;	 # last line and following empty line
-			
+
 			splice(@{$xmlfile},$i, $linecounter);	# removing $linecounter lines, beginning in line $i
 			last;
 		}
@@ -1004,7 +1004,7 @@ sub remove_scpgid_from_xmlfile
 
 	# Component begins with "<component selected='true' name='$scpgid' componentVersion="8">"
 	# and ends with "</component>"
-	
+
 	my $successfully_removed = 0;
 
 	for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
@@ -1012,26 +1012,26 @@ sub remove_scpgid_from_xmlfile
 		if ( ${$xmlfile}[$i] =~ /name\s*\=\'\s*\Q$scpgid\E/ )
 		{
 			# Counting the lines till "</component>"
-			
+
 			my $linecounter = 1;
 			my $startline = $i+1;
 			my $line = ${$xmlfile}[$startline];
-			
+
 			while ((!( $line =~ /^\s*\<\/component\>\s*$/ )) && ( $startline <= $#{$xmlfile} ))
 			{
 				$linecounter++;
 				$startline++;
 				$line = ${$xmlfile}[$startline];
-			} 
+			}
 
 			$linecounter = $linecounter + 2;	 # last line and following empty line
-			
+
 			splice(@{$xmlfile},$i, $linecounter);	# removing $linecounter lines, beginning in line $i
 			$successfully_removed = 1;
 			last;
 		}
 	}
-	
+
 	my $infoline = "";
 	if ($successfully_removed)
 	{
@@ -1041,7 +1041,7 @@ sub remove_scpgid_from_xmlfile
 	else
 	{
 		$infoline = "Module $scpgid not found in xml file (no problem).\n";
-		$installer::logger::Lang->print($infoline);	
+		$installer::logger::Lang->print($infoline);
 	}
 }
 
@@ -1056,9 +1056,9 @@ sub remove_module_if_not_defined
 
 	my $infoline = "Checking existence of $scpgid in scp definition\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	my $found = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$modulesarrayref}; $i++ )
 	{
 		my $onemodule = ${$modulesarrayref}[$i];
@@ -1066,7 +1066,7 @@ sub remove_module_if_not_defined
 		if ( $found ) { last; }
 	}
 
-	if ( ! $found ) 
+	if ( ! $found )
 	{
 		$infoline = "Module $scpgid not found -> Removing from xml file.\n";
 		$installer::logger::Lang->print($infoline);
@@ -1081,11 +1081,11 @@ sub remove_module_if_not_defined
 sub create_empty_packages
 {
 	my ( $xmlfile ) = @_;
-	
+
 	if ( $installer::globals::issolarispkgbuild )
 	{
 		my $path = "";
-		
+
 		for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
 		{
 			if ( ${$xmlfile}[$i] =~ /pkgRelativePath\s*\=\s*\'(.*?)\'\s*$/ )
@@ -1095,7 +1095,7 @@ sub create_empty_packages
 				last;	# only creating one path
 			}
 		}
-	
+
 		for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
 		{
 			if ( ${$xmlfile}[$i] =~ /pkgName\s*\=\s*\'(.*?)\'\s*$/ )
@@ -1104,7 +1104,7 @@ sub create_empty_packages
 				if ( $path ne "" ) { $pkgname = $path . $installer::globals::separator . $pkgname; }
 				installer::systemactions::create_directory_structure($pkgname);
 			}
-		}		
+		}
 	}
 
 	# "-novalidate" does not work for Linux RPMs
@@ -1117,16 +1117,16 @@ sub create_empty_packages
 			{
 				my $rpmpath = $1;
 				my $path = "";
-			
+
 				if ( $rpmpath =~ /^\s*(.*)\/(.*?)\s*$/ )
 				{
 					$path = $1;
 				}
 
 				if ( $path ne "" ) { installer::systemactions::create_directory_structure($path); }
-				
+
 				my $systemcall = "touch $rpmpath";	# creating empty rpm
-				system($systemcall);				
+				system($systemcall);
 			}
 		}
 	}
@@ -1140,16 +1140,16 @@ sub get_archivefilename
 {
 	my ( $xmlfile ) = @_;
 
-	my $archivefilename = "";	
+	my $archivefilename = "";
 
 	for ( my $j = 0; $j <= $#{$xmlfile}; $j++ )
 	{
 		if ( ${$xmlfile}[$j] =~ /archiveFileName\s*=\s*\'(.*?)\'/ )
 		{
-			$archivefilename = $1;			
-			last;	
+			$archivefilename = $1;
+			last;
 		}
-	}	
+	}
 
 	return $archivefilename;
 }
@@ -1161,7 +1161,7 @@ sub get_archivefilename
 sub copy_setup_locally
 {
 	my ($includepatharrayref, $loadername, $newname) = @_;
-	
+
 	my $loadernameref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$loadername, $includepatharrayref, 0);
 
 	if ($$loadernameref eq "") { installer::exiter::exit_program("ERROR: Could not find Java loader $loadername!", "copy_setup_locally"); }
@@ -1183,14 +1183,14 @@ sub put_loader_into_installset
 	my $installname = $installdir . $installer::globals::separator . $filename;
 
 	installer::systemactions::copy_one_file($filename, $installname);
-	
+
 	my $localcall = "chmod 775 $installname \>\/dev\/null 2\>\&1";
 	system($localcall);
 }
 
 #################################################################
 # Setting for Solaris the package names in the Java translation
-# file. The name is used for the 
+# file. The name is used for the
 # This name is displayed tools like prodreg.
 # Unfortunately this name in the component is also used
 # in the translation template file for the module name
@@ -1202,7 +1202,7 @@ sub replace_component_name_in_java_file
 	my ($alljavafiles, $oldname, $newname) = @_;
 
 	# The new name must not contain white spaces
-	
+
 	$newname =~ s/ /\_/g;
 
 	for ( my $i = 0; $i <= $#{$alljavafiles}; $i++ )
@@ -1234,19 +1234,19 @@ sub replace_component_name_in_java_file
 #################################################################
 # Some module names are not defined in the scp project.
 # The names for this modules are searched in the base Java
-# translation file. 
+# translation file.
 #################################################################
 
 sub get_module_name_from_basejavafile
 {
 	my ($componentname, $javatemplateorigfile, $ulffile) = @_;
-	
+
 	my $searchname = $componentname . "-install-DisplayName";
 	my $modulename = "";
 	my $replacename = "";
-	
-	# line content: { "coremodule-install-DisplayName", "OOO_INSTALLSDK_117" },  
-	
+
+	# line content: { "coremodule-install-DisplayName", "OOO_INSTALLSDK_117" },
+
 	for ( my $i = 0; $i <= $#{$javatemplateorigfile}; $i++ )
 	{
 		if ( ${$javatemplateorigfile}[$i] =~ /\"\s*\Q$searchname\E\s*\"\s*\,\s*\"\s*(.*?)\s*\"\s*\}\s*\,\s*$/ )
@@ -1266,7 +1266,7 @@ sub get_module_name_from_basejavafile
 }
 
 #################################################################
-# Setting for Solaris the package names in the xml file. 
+# Setting for Solaris the package names in the xml file.
 # This name is displayed tools like prodreg.
 # Unfortunately this name in the component is also used
 # in the translation template file for the module name
@@ -1278,25 +1278,25 @@ sub replace_component_names
 	my ($xmlfile, $templatefilename, $modulesarrayref, $javatemplateorigfile, $ulffile) = @_;
 
 	# path in which all java languages files are located
-	
+
 	my $javafilesdir = $templatefilename;
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$javafilesdir);
 	my $alljavafiles = installer::systemactions::find_file_with_file_extension("java", $javafilesdir);
 	for ( my $i = 0; $i <= $#{$alljavafiles}; $i++ ) { ${$alljavafiles}[$i] = $javafilesdir . ${$alljavafiles}[$i]; }
 
 	# analyzing the xml file
-	
+
 	for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
-	{	
+	{
 		my $newstring = "";
 		my $componentname = "";
-	
+
 		if ( ${$xmlfile}[$i] =~ /\bcomponent\b.*\bname\s*\=\'\s*(.*?)\s*\'/ )
 		{
 			$componentname = $1;
 
 			# Getting module name from the scp files in $modulesarrayref
-			
+
 			my $onelanguage = "en-US";
 			my $gid = $componentname;
 			my $type = "Name";
@@ -1314,24 +1314,24 @@ sub replace_component_names
 			{
 				$modulename = get_module_name_from_basejavafile($componentname, $javatemplateorigfile, $ulffile);
 			}
-			
+
 			if ( $modulename ne "" )	# only do something, if the modulename was found
 			{
 				${$xmlfile}[$i] =~ s/$componentname/$modulename/;
-					
+
 				$infoline = "Replacement in xml file (Solaris): $componentname \-\> $modulename\n";
 				$installer::logger::Lang->print($infoline);
-			
+
 				# Replacement has to be done in all Java language files
-				replace_component_name_in_java_file($alljavafiles, $componentname, $modulename);			
+				replace_component_name_in_java_file($alljavafiles, $componentname, $modulename);
 			}
 
 			if ( $modulename eq "" ) # the modulename can also be set in the Java ulf file
 			{
 				$infoline = "WARNING: No replacement in xml file for component: $componentname\n";
-				$installer::logger::Lang->print($infoline);	
+				$installer::logger::Lang->print($infoline);
 			}
-		}		
+		}
 	}
 }
 
@@ -1348,10 +1348,10 @@ sub get_all_packages_in_installdir
 	my @allrpms = ();	# not needed for Solaris at the moment
 	my $allrpms = \@allrpms;
 
-	$installdir =~ s/\Q$installer::globals::separator\E\s*$//;	
+	$installdir =~ s/\Q$installer::globals::separator\E\s*$//;
 	my $directory = $installdir . $installer::globals::separator . $subdir;
-	$directory =~ s/\Q$installer::globals::separator\E\s*$//;	
-	
+	$directory =~ s/\Q$installer::globals::separator\E\s*$//;
+
 	if ( $installer::globals::islinuxrpmbuild )
 	{
 		$allrpms = installer::systemactions::find_file_with_file_extension("rpm", $directory);
@@ -1362,10 +1362,10 @@ sub get_all_packages_in_installdir
 		{
 			${$allrpms}[$i] = $directory . $installer::globals::separator . ${$allrpms}[$i];
 			$infoline = "Found RPM: ${$allrpms}[$i]\n";
-			$installer::logger::Lang->print($infoline);	
+			$installer::logger::Lang->print($infoline);
 		}
 	}
-	
+
 	return $allrpms;
 }
 
@@ -1402,9 +1402,9 @@ sub set_filesize_in_xmlfile
 	for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
 	{
 		my $line = ${$xmlfile}[$i];
-	
+
 		# searching for "rpmPath="RPMS/${UNIXPRODUCTNAME}-core01-${PACKAGEVERSION}-${PACKAGEREVISION}.i586.rpm""
-		
+
 		if (( $line =~ /rpmPath\s*=/ ) && ( $line =~ /\Q$rpmname\E\"\s*$/ ))
 		{
 			$foundrpm = 1;
@@ -1419,22 +1419,22 @@ sub set_filesize_in_xmlfile
 					${$xmlfile}[$number] =~ s/FILESIZEPLACEHOLDER/$filesize/;
 					$filesizeset = 1;
 					$infoline = "Setting filesize for $rpmname : $filesize\n";
-					$installer::logger::Lang->print($infoline);	
+					$installer::logger::Lang->print($infoline);
 					last;
 				}
-				
-				$number++;		
+
+				$number++;
 			}
-			
+
 			last;
 		}
 	}
-	
+
 	if ( ! $foundrpm )
 	{
 		$infoline = "ERROR: Did not find $rpmname in xml file !\n";
 		$installer::logger::Lang->print($infoline);
-	}	
+	}
 
 	if ( ! $filesizeset )
 	{
@@ -1456,7 +1456,7 @@ sub collect_uniquenames_in_xmlfile
 	for ( my $i = 0; $i <= $#{$xmlfile}; $i++ )
 	{
 		my $oneline = ${$xmlfile}[$i];
-		
+
 		if ( $oneline =~ /^\s*rpmUniqueName\s*\=\s*\"(.*)\"\s*$/ )
 		{
 			my $rpmuniquename = $1;
@@ -1493,9 +1493,9 @@ sub find_rpmname_to_uniquename
 
 		if ( $rpmname =~ /^\s*\Q$localuniquename\E\-\d/ ) { push(@all_correct_rpms, $rpmname); }
 	}
-	
+
 	# @all_correct_rpms has to contain exactly one value
-	
+
 	if ( $#all_correct_rpms > 0 )
 	{
 		my $number = $#all_correct_rpms + 1;
@@ -1519,7 +1519,7 @@ sub find_rpmname_to_uniquename
 		$infoline = "Found one rpm for the unique name \"$uniquename\" : $all_correct_rpms[0]\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	return $all_correct_rpms[0];
 }
 
@@ -1552,34 +1552,34 @@ sub set_rpmname_into_xmlfile
 					${$xmlfile}[$number] =~ s/RPMFILENAMEPLACEHOLDER/$rpmname/;
 					$rpmnameset = 1;
 					$infoline = "Setting RPM name for $uniquename : $rpmname\n";
-					$installer::logger::Lang->print($infoline);	
+					$installer::logger::Lang->print($infoline);
 					last;
 				}
-				
-				$number++;		
+
+				$number++;
 			}
-			
+
 			last;
 		}
 	}
-	
+
 	if ( ! $foundrpm )
 	{
 		$infoline = "ERROR: Did not find $rpmname in xml file !\n";
 		$installer::logger::Lang->print($infoline);
-	}	
+	}
 
 	if ( ! $rpmnameset )
 	{
 		$infoline = "ERROR: Did not set rpm name for $uniquename in xml file !\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 }
 
 ############################################################
 # Including the rpm path dynamically into the xml file.
-# This is introduced, because system integration has 
+# This is introduced, because system integration has
 # variable PackageVersion and PackageRevision in xml file.
 ############################################################
 
@@ -1588,7 +1588,7 @@ sub put_rpmpath_into_xmlfile
 	my ($xmlfile, $listofpackages) = @_;
 
 	my $infoline = "";
-	
+
 	my $alluniquenames = collect_uniquenames_in_xmlfile($xmlfile);
 
 	my $number = $#{$listofpackages} + 1;
@@ -1611,9 +1611,9 @@ sub put_rpmpath_into_xmlfile
 		$infoline = "${$alluniquenames}[$i]\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	if ( $#{$alluniquenames} != $#{$listofpackages} ) { installer::exiter::exit_program("ERROR: xml file contains $#{$alluniquenames} unique names, but there are $#{$listofpackages} packages in installation set!", "put_rpmpath_into_xmlfile"); }
-	
+
 	for ( my $i = 0; $i <= $#{$alluniquenames}; $i++ )
 	{
 		my $uniquename = ${$alluniquenames}[$i];
@@ -1632,7 +1632,7 @@ sub put_filesize_into_xmlfile
 	my ($xmlfile, $listofpackages) = @_;
 
 	my $infoline = "";
-	
+
 	for ( my $i = 0; $i <= $#{$listofpackages}; $i++ )
 	{
 		my $completerpmname = ${$listofpackages}[$i];
@@ -1646,9 +1646,9 @@ sub put_filesize_into_xmlfile
 
 		$infoline = "Filesize $rpmname : $filesize\n";
 		$installer::logger::Lang->print($infoline);
-		
+
 		set_filesize_in_xmlfile($filesize, $rpmname, $xmlfile);
-	}	
+	}
 }
 
 #######################################################
@@ -1664,7 +1664,7 @@ sub create_java_installer
 	my $infoline = "";
 
 	# collecting all packages or rpms located in the installation directory
-	my $listofpackages = get_all_packages_in_installdir($installdir, $newdir);	
+	my $listofpackages = get_all_packages_in_installdir($installdir, $newdir);
 
 	# creating the directory
 	my $javadir = installer::systemactions::create_directories("javainstaller", $languagestringref);
@@ -1682,11 +1682,11 @@ sub create_java_installer
 	installer::systemactions::copy_complete_directory_without_cvs($sourcedir, $javadir);
 
 	# determining the java template file
-	
+
 	my $templatefilename = $javadir . $installer::globals::separator . "locale/resources/MyResources_template.java";
-	
+
 	# Saving the content of the template file. It is used in the xml files
-	
+
 	my $javatemplateorigfile = installer::files::read_file($templatefilename);
 
 	# determining the ulf language file
@@ -1700,12 +1700,12 @@ sub create_java_installer
 	$installer::logger::Lang->print("Reading ulf file: $ulffilename\n");
 
 	$infoline = "Translating the Java template file\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 
 	for ( my $i = 0; $i <= $#{$languagesarrayref}; $i++ )
 	{
 		my $onelanguage = ${$languagesarrayref}[$i];
-		
+
 		# replacing all strings in the Java file with content of ulf files
 
 		my $templatefile = installer::files::read_file($templatefilename);
@@ -1732,50 +1732,50 @@ sub create_java_installer
 		set_classfilename($templatefile, $classfilename, "MyResources_TEMPLATE");
 
 		# saving the new file
-		
+
 		my $newfilename = $templatefilename;
 		$newfilename =~ s/_template\.java\s*$/_$onelanguage\.java/;
-		
+
 		installer::files::save_file($newfilename, $templatefile);
 
 		$infoline = "Saving Java file: $newfilename\n";
-		$installer::logger::Lang->print($infoline);	
+		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	# renaming one language java file to "MyResources.java"
-	
+
 	my $baselanguage = installer::languages::get_default_language($languagesarrayref);
 	$baselanguage =~ s/\-/\_/;	 	# "pt-BR" -> "pt_BR"
 	$baselanguage =~ s/en_US/en/;	# java file name and class name contain only "_en"
 	# if ( $baselanguage =~ /^\s*(\w+)\-(\w+)\s*$/ ) { $baselanguage = $1; } 	 # java file name and class name contain only "_en"
 	# $baselanguage =~ s/en-US/en/;	 # java file name and class name contain only "_en"
-	my $baselanguagefilename = $javadir . $installer::globals::separator . "locale/resources/MyResources_" . $baselanguage . "\.java";  
+	my $baselanguagefilename = $javadir . $installer::globals::separator . "locale/resources/MyResources_" . $baselanguage . "\.java";
 	my $basedestfilename = $javadir . $installer::globals::separator . "locale/resources/MyResources.java";
 	installer::systemactions::copy_one_file($baselanguagefilename, $basedestfilename);
 
 	# setting the class file name also for the base class
 
-	my $basetemplatefile = installer::files::read_file($basedestfilename);	
+	my $basetemplatefile = installer::files::read_file($basedestfilename);
 	my $oldclassfilename = $baselanguagefilename;
 	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$oldclassfilename);
-	$oldclassfilename =~ s/\.java//;  
-	my $newclassfilename = $basedestfilename;  
+	$oldclassfilename =~ s/\.java//;
+	my $newclassfilename = $basedestfilename;
 	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$newclassfilename);
-	$newclassfilename =~ s/\.java//; 
-	
+	$newclassfilename =~ s/\.java//;
+
 	set_classfilename($basetemplatefile, $newclassfilename, $oldclassfilename);
 
 	installer::files::save_file($basedestfilename, $basetemplatefile);
 
 	$infoline = "Created base Java file: $basedestfilename\n";
-	$installer::logger::Lang->print($infoline);	
-	
+	$installer::logger::Lang->print($infoline);
+
 	# deleting the template file
-	
+
 	unlink($templatefilename);
 
 	$infoline = "Deleted template Java resource file: $templatefilename\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 
 	# changing into Java directory
 
@@ -1784,13 +1784,13 @@ sub create_java_installer
 	chdir($javadir);
 
 	$infoline = "Changing into directory: $javadir\n";
-	$installer::logger::Lang->print($infoline);	
-	
+	$installer::logger::Lang->print($infoline);
+
 	# preparing the xml file
 
 	my $xmlfilename = "";
 	my $subdir = "";
-	
+
 	if ( $installer::globals::issolarispkgbuild )
 	{
 		$xmlfilename = "pkgUnit.xml";
@@ -1824,21 +1824,21 @@ sub create_java_installer
 	if ( $installer::globals::islinuxrpmbuild ) { put_filesize_into_xmlfile($xmlfile, $listofpackages); }
 	installer::files::save_file($xmlfilename, $xmlfile);
 	$infoline = "Saving xml file: $xmlfilename\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 
 	# Setting the classpath and starting compiler
-	
+
 	set_classpath_for_install_sdk($javadir);
-	
-	# creating class files:	
-	# language class file, dialog class files, installer class file	
+
+	# creating class files:
+	# language class file, dialog class files, installer class file
 
 	my $jdkpath = "";
 	if ( $ENV{'JDKPATH'} ) { $jdkpath = $ENV{'JDKPATH'}; }
 
 	my $javac = "javac";
 	if ( $jdkpath ) { $javac = $jdkpath . $installer::globals::separator . $javac; }
-	
+
 	my $systemcall = "$javac locale\/resources\/\*\.java 2\>\&1 |";
 	make_systemcall($systemcall, 1);
 
@@ -1850,7 +1850,7 @@ sub create_java_installer
 
 	# Copy "jresetup" from solver locally to include it into the classfile
 	# Copy "jresetup" from solver to installdir
-	
+
 	my $setupname = "jresetup";
 	my $newname = "setup";
 	copy_setup_locally($includepatharrayref, $setupname, $newname);
@@ -1876,7 +1876,7 @@ sub create_java_installer
 	chdir($from);
 
 	$infoline = "Changing into directory: $from\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 }
 
 1;

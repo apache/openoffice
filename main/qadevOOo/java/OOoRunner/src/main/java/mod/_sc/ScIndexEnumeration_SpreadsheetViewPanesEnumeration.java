@@ -109,4 +109,3 @@ public class ScIndexEnumeration_SpreadsheetViewPanesEnumeration extends TestCase
         return tEnv;
     }
 }
-

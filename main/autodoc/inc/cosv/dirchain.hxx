@@ -171,6 +171,3 @@ operator<<( csv::bostream &                     o_rOut,
 
 
 #endif
-
-
-

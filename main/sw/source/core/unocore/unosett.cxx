@@ -2816,4 +2816,3 @@ sal_Int64 SAL_CALL SwXTextColumns::getSomething( const uno::Sequence< sal_Int8 >
     }
 	return 0;
 }
-

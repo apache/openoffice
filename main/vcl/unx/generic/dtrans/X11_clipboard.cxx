@@ -286,4 +286,3 @@ Sequence< OUString > SAL_CALL X11Clipboard::getSupportedServiceNames(	 )
 {
 	return X11Clipboard_getSupportedServiceNames();
 }
-

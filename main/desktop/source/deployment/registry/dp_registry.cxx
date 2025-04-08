@@ -569,4 +569,3 @@ Reference<deployment::XPackageRegistry> SAL_CALL create(
 }
 
 } // namespace dp_registry
-

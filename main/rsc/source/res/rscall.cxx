@@ -57,4 +57,3 @@ void InitRscCompiler()
 	nRsc_WHMAPMODEId = InvalidAtom;
     pHS = new AtomContainer();
 };
-

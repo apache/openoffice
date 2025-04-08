@@ -319,5 +319,3 @@ public:
     sal_Bool    IsAutomaticWidth() const {return bIsAutomaticWidth;}
 };
 #endif
-
-

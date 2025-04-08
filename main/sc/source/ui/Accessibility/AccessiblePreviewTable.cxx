@@ -762,4 +762,3 @@ void ScAccessiblePreviewTable::FillTableInfo() const
 		mpViewShell->GetLocationData().GetTableInfo( aVisRect, *mpTableInfo );
 	}
 }
-

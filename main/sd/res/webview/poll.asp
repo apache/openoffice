@@ -3,7 +3,7 @@
     Response.Expires = 0
 %>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,25 +11,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 <!-- #include file = "common.inc" -->
 
-<HTML>
-
-<HEAD>
-    <META http-equiv="refresh" CONTENT="<% = cnRefreshTime %>">
-</HEAD>
+<html>
+    <head>
+        <meta http-equiv="refresh" CONTENT="<% = cnRefreshTime %>">
+    </head>
 
 <%
     ' get current picture id
@@ -42,15 +41,14 @@
         ' then store the id of the new picture and show it
         Session( "GIFID" ) = nGIFID
     %>
-        <BODY bgcolor="red" onLoad="parent.frame1.location.href='./show.asp?<%= nGIFID %>'">
+        <body bgcolor="red" onLoad="parent.frame1.location.href='./show.asp?<%= nGIFID %>'">
     <%
     else
     %>
-        <BODY bgcolor="green">
+        <body bgcolor="green">
     <%
     end if
 %>
 
-</BODY>
-
-</HTML>
+    </body>
+</html>

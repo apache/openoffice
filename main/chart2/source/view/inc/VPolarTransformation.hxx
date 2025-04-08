@@ -60,4 +60,3 @@ private:
 
 // _CHART_VPOLARTRANSFORMATION_HXX
 #endif
-

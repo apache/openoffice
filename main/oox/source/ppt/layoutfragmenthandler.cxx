@@ -79,4 +79,3 @@ void SAL_CALL LayoutFragmentHandler::endDocument()
 }
 
 } }
-

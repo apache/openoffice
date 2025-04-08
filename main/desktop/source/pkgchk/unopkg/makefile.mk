@@ -93,4 +93,3 @@ $(APP1TARGETN) : $(MISC)$/binso_created.flg
 $(MISC)$/binso_created.flg:
 	@@-$(MKDIRHIER) $(BIN)$/so && $(TOUCH) $@
 	@@-$(MKDIRHIER) $(MISC)$/so && $(TOUCH) $@
-

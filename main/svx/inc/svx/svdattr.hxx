@@ -69,4 +69,3 @@
 #include <svx/sdgmoitm.hxx>
 #include <svx/sdasaitm.hxx>
 #endif
-

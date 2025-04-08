@@ -92,4 +92,3 @@ public:
 };
 
 #endif	// _SV_MENUBTN_HXX
-

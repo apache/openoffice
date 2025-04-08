@@ -642,5 +642,3 @@ void SvxCaptionTabDialog::SetValidateFramePosLink( const Link& rLink )
 {
     aValidateLink = rLink;
 }            
-
-

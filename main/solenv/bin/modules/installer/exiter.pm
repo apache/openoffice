@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -40,7 +40,7 @@ sub exit_program
 
 	# If an installation set is currently created, the directory name is saved in $installer::globals::saveinstalldir
 	# If this directory name matches with "_inprogress", it has to be renamed into "_witherror"
-	
+
 	if ( $installer::globals::saveinstalldir =~ /_inprogress/ ) { installer::systemactions::rename_string_in_directory($installer::globals::saveinstalldir, "_inprogress", "_witherror");	}
 
 	# Cleaning files from pool tooling
@@ -66,7 +66,7 @@ sub exit_program
         $installer::logger::Lang->printf("in function: %s\n", $function);
         $installer::logger::Lang->printf("***************************************************************\n");
 
-#		installer::files::save_file($installer::globals::logfilename ,\@installer::globals::logfileinfo);	
+#		installer::files::save_file($installer::globals::logfilename ,\@installer::globals::logfileinfo);
 	}
 	else
 	{
@@ -90,8 +90,8 @@ sub exit_program
     if (defined($installer::globals::exithandler)) {
         &$installer::globals::exithandler;
     }
-	
-	exit(-1);	
+
+	exit(-1);
 }
 
 1;

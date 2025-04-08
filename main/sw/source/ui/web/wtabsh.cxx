@@ -67,6 +67,3 @@ SwWebTableShell::SwWebTableShell(SwView &_rView) :
 __EXPORT SwWebTableShell::~SwWebTableShell()
 {
 }
-
-
-

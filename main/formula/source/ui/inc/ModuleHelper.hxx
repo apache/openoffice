@@ -67,7 +67,7 @@ namespace formula
     //=========================================================================
     //= OModuleClient
     //=========================================================================
-    /** base class for objects which uses any global module-specific ressources 
+    /** base class for objects which uses any global module-specific resources
     */
     class FORMULA_DLLPUBLIC OModuleClient
     {
@@ -79,7 +79,7 @@ namespace formula
     //=========================================================================
     //= ModuleRes
     //=========================================================================
-    /** specialized ResId, using the ressource manager provided by the global module
+    /** specialized ResId, using the resource manager provided by the global module
     */
     class FORMULA_DLLPUBLIC ModuleRes : public ::ResId
     {
@@ -91,5 +91,3 @@ namespace formula
 //.........................................................................
 
 #endif // FORMULA_MODULE_HELPER_RPT_HXX_
-
-

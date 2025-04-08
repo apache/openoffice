@@ -77,4 +77,3 @@ class ComponentTreeTraversal implements IFormComponentAction
 		}
 	}
 }
-

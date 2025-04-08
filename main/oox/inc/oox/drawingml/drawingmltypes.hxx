@@ -204,4 +204,3 @@ struct EmuRectangle : public EmuPoint, public EmuSize
 } // namespace oox
 
 #endif
-

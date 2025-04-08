@@ -62,5 +62,3 @@ public:
 
 
 #endif // SC_LBSELDLG_HXX
-
-

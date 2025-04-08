@@ -43,7 +43,7 @@ import com.sun.star.uno.XInterface;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.i18n.XIndexEntrySupplier
  * @see ifc.i18n._XIndexEntrySupplier
@@ -79,4 +79,3 @@ public class IndexEntrySupplier extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

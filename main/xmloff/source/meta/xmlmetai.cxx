@@ -319,4 +319,3 @@ void SvXMLMetaDocumentContext::setBuildId(::rtl::OUString const& i_rBuildId, con
     {
     }
 }
-

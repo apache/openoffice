@@ -115,4 +115,3 @@ public:
 
 
 #endif // SC_DBNAMDLG_HXX
-

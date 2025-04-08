@@ -38,7 +38,7 @@ import lib.StatusException;
  *  <li><code> inspect()</code></li>
  *  <li><code> InspectorModel()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  *
  * This test needs the following object relations :
  * <ul>
@@ -149,5 +149,3 @@ public class _XObjectInspector extends MultiMethodTest {
 
     }
 }
-
-

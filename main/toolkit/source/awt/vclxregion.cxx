@@ -171,6 +171,3 @@ void VCLXRegion::xOrRegion( const ::com::sun::star::uno::Reference< ::com::sun::
 
 	return aRects;
 }
-
-
-

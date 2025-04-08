@@ -100,4 +100,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_SOURCE_RICHTEXT_FEATUREDISPATCHER_HXX
-

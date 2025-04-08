@@ -344,6 +344,3 @@ sal_Bool ScStyleSheet::SetName( const String& rNew )
 	else
 		return SfxStyleSheet::SetName( rNew );
 }
-
-
-

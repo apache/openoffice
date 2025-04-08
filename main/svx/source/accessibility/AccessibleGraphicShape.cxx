@@ -227,5 +227,3 @@ sal_Int16 SAL_CALL AccessibleGraphicShape::getAccessibleRole (void)
 		return AccessibleShape::getAccessibleRole();
 	return nAccessibleRole;
 }
-
-

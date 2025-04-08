@@ -50,7 +50,7 @@ public class NativeView extends java.awt.Canvas
      * Does nothing really.
      * We can use our JNI mechanism for an already visible
      * canvas only. So we overload the method for showing ("setVisible()")
-     * and make our intialization there. BUt we try to show an empty clean
+     * and make our initialization there. BUt we try to show an empty clean
      * window till there.
      */
     public NativeView()
@@ -122,7 +122,7 @@ public class NativeView extends java.awt.Canvas
 
     /**
      * JNI interface of this class
-     * These two methods are implemented by using JNI mechanismen.
+     * These two methods are implemented by using JNI mechanism.
      * The will be used to get the platform dependent window handle
      * of a java awt canvas. This handle can be used to create an office
      * window as direct child of it. So it's possible to plug Office

@@ -66,5 +66,3 @@ public class StatusBarControllerFactory extends TestCase {
         return tEnv;
     }
 }
-
-

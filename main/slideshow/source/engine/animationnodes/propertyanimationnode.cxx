@@ -108,4 +108,3 @@ AnimationActivitySharedPtr PropertyAnimationNode::createActivity() const
 
 } // namespace internal
 } // namespace slideshow
-

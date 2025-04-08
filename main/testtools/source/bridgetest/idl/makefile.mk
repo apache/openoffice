@@ -63,4 +63,3 @@ $(BIN)$/cli_types_bridgetest.dll: $(BIN)$/bridgetest.rdb
 .ENDIF
 .ENDIF # GUI, WNT
 .ENDIF # L10N_framework
-

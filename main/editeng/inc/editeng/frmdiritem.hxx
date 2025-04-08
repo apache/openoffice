@@ -73,4 +73,3 @@ public:
 };
 
 #endif // #ifndef _SVX_FRMDIRITEM_HXX
-

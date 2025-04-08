@@ -53,7 +53,3 @@ class SdPageLink;
 #endif
 
 #endif	   // _PGLINK_HXX
-
-
-
-

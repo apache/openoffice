@@ -1428,4 +1428,3 @@ sal_Bool SmDocShell::WriteAsMathType3( SfxMedium& rMedium )
     sal_Bool bRet = 0 != aEquation.ConvertFromStarMath( rMedium );
     return bRet;
 }
-

@@ -37,7 +37,7 @@ import com.sun.star.text.XDefaultNumberingProvider;
 *  <li><code> getDefaultOutlineNumberings()</code></li>
 *  <li><code> getDefaultContinuousNumberingLevels()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.text.XDefaultNumberingProvider
 */
 public class _XDefaultNumberingProvider extends MultiMethodTest {
@@ -67,4 +67,3 @@ public class _XDefaultNumberingProvider extends MultiMethodTest {
         tRes.tested("getDefaultContinuousNumberingLevels()", lev != null) ;
     }
 }
-

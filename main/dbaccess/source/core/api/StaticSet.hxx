@@ -86,4 +86,3 @@ namespace dbaccess
 	};
 }
 #endif //DBACCESS_CORE_API_STATICSET_HXX
-

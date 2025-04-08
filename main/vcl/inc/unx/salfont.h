@@ -173,4 +173,3 @@ public:
 DECLARE_LIST( SalFontStructList, SalFontStruct* )
 
 #endif // _SV_SALFONT_H
-

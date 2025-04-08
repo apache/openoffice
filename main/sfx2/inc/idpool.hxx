@@ -56,4 +56,3 @@ inline sal_Bool IdPool::IsLocked( sal_uInt16 nId ) const
 
 
 #endif
-

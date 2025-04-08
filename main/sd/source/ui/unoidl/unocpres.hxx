@@ -161,5 +161,3 @@ inline List * SdXCustomPresentationAccess::GetCustomShowList() const throw()
 };
 
 #endif
-
-

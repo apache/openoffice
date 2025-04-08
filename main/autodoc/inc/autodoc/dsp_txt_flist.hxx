@@ -58,4 +58,3 @@ class TextDisplay_FunctionList_Ifc
 }   // namespace autodoc
 
 #endif
-

@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _SVDHDL_HXX
 #define _SVDHDL_HXX
 
@@ -55,17 +53,15 @@ class SdrObject;
 class SdrPageView;
 class MouseEvent;
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
 // Jedes Objekt muss in der Lage seine Handles zu erzeugen. Diese werden dann
 // bei einer Selektion abgeholt, bei der View angemeldet und sichtbar gemacht.
-// Wird ein Handle von der Maus beruehrt (IsHit()), so wird von der View der
+// Wird ein Handle von der Maus berührt (IsHit()), so wird von der View der
 // entsprechende Mauszeiger vom Handle abgeholt und der App auf Anfrage zum
-// reinschalten uebergeben.
+// reinschalten übergeben.
 // Handles wie z.B. der Rotationsmittelpunkt oder die Spiegelachse werden von
 // der View generiert, wenn vom Controller der entsprechende Transformations-
 // Modus selektiert wird.
-// HDL_MOVE...HDL_LWRGT muessen im enum immer zusammen stehen bleiben!
+// HDL_MOVE...HDL_LWRGT müssen im enum immer zusammen stehen bleiben!
 
 enum SdrHdlKind
 {
@@ -152,16 +148,16 @@ enum BitmapMarkerKind
 
 class SVX_DLLPUBLIC SdrHdl
 {
-	friend class				SdrMarkView; // fuer den Zugriff auf nObjHdlNum
+	friend class				SdrMarkView; // für den Zugriff auf nObjHdlNum
 	friend class				SdrHdlList;
 
 	// #101928#
 	BitmapEx ImpGetBitmapEx(BitmapMarkerKind eKindOfMarker, sal_uInt16 nInd, sal_Bool bFine, sal_Bool bIsHighContrast);
 
 protected:
-	SdrObject*					pObj; // Gehoert das Handle zu einem Objekt?
-	SdrPageView*				pPV; // Gehoert das Handle zu einem Objekt in einer bestimmten PageView?
-	SdrHdlList*					pHdlList; // Zum Feststellen der Handlegroesse
+	SdrObject*					pObj; // Gehört das Handle zu einem Objekt?
+	SdrPageView*				pPV; // Gehört das Handle zu einem Objekt in einer bestimmten PageView?
+	SdrHdlList*					pHdlList; // Zum Feststellen der Handlegröße
 
 	// OVERLAYMANAGER
 	::sdr::overlay::OverlayObjectList			maOverlayGroup;
@@ -171,14 +167,14 @@ protected:
 	SdrHdlKind					eKind;
 
 	long						nDrehWink; // Handles bzw. Mauszeiger drehen
-	sal_uInt32					nObjHdlNum; // wird von der MarkView benoetigt
+	sal_uInt32					nObjHdlNum; // wird von der MarkView benötigt
 	sal_uInt32					nPolyNum; // Polygonpunktes
 	sal_uInt32					nPPntNum; // Punktnummer des Polygons
-	sal_uInt32					nSourceHdlNum; // ist noch vollstaendig zu implementieren
+	sal_uInt32					nSourceHdlNum; // ist noch vollständig zu implementieren
 
 	unsigned					bSelect : 1; // Ein selektierter Polygonpunkt?
-	unsigned					b1PixMore : 1; // True=Handle wird 1 Pixel groesser dargestellt
-	unsigned					bPlusHdl : 1; // u.a. fuer Hld-Paint Optimierung bei MarkPoint/UnmarkPoint, ...
+	unsigned					b1PixMore : 1; // True=Handle wird 1 Pixel größer dargestellt
+	unsigned					bPlusHdl : 1; // u.a. für Hld-Paint Optimierung bei MarkPoint/UnmarkPoint, ...
 
 	bool						mbMoveOutside; // forces this handle to be moved outside of the selection rectangle
 
@@ -373,7 +369,7 @@ public:
 };
 
 // Ein SdrHdlBezWgt hat Kenntnis von seinem "BasisHandle". Seine Draw-Methode
-// zeichnet zusaetzlich eine Linie von seiner Position zur Position dieses
+// zeichnet zusätzlich eine Linie von seiner Position zur Position dieses
 // BasisHandles.
 class SdrHdlBezWgt: public SdrHdl
 {
@@ -463,7 +459,7 @@ protected:
 
 	unsigned					bRotateShear : 1;
 	unsigned					bDistortShear : 1;
-	unsigned					bMoveOutside : 1; // Handles nach aussen ruecken (fuer TextEdit)
+	unsigned					bMoveOutside : 1; // Handles nach außen rücken (für TextEdit)
 	unsigned					bFineHandles : 1;
 
 private:
@@ -504,13 +500,13 @@ public:
 	void     SetFineHdl(sal_Bool bOn);
 	sal_Bool IsFineHdl() const                        { return bFineHandles; }
 
-	// AddHdl uebernimmt das Handle in sein Eigentum. Es muss
+	// AddHdl übernimmt das Handle in sein Eigentum. Es muss
 	// also auf dem Heap stehen, da Clear() ein delete macht.
 	void    AddHdl(SdrHdl* pHdl, sal_Bool bAtBegin=sal_False);
 	SdrHdl* RemoveHdl(sal_uIntPtr nNum);
 
-	// Zuletzt eingefuegte Handles werden am ehesten getroffen
-	// (wenn Handles uebereinander liegen).
+	// Zuletzt eingefügte Handles werden am ehesten getroffen
+	// (wenn Handles übereinander liegen).
 	SdrHdl* IsHdlListHit(const Point& rPnt, sal_Bool bBack=sal_False, sal_Bool bNext=sal_False, SdrHdl* pHdl0=NULL) const;
 	SdrHdl* GetHdl(SdrHdlKind eKind1) const;
 };
@@ -567,9 +563,6 @@ protected:
 	virtual void CreateB2dIAObject();
 };
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
 #endif //_SVDHDL_HXX
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

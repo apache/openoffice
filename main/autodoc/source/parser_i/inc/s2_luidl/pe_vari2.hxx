@@ -100,4 +100,3 @@ class PE_Variable : public UnoIDL_PE,
 
 
 #endif
-

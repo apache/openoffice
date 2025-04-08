@@ -96,4 +96,3 @@ $(BIN)$/oletest.rdb: $(ALLIDLFILES)
 $(MISC)$/$(TARGET).cppumaker.done: $(BIN)$/oletest.rdb
     $(CPPUMAKER) -O$(INCCOM) -BUCR $< -X$(SOLARBINDIR)/types.rdb
     $(TOUCH) $@
-

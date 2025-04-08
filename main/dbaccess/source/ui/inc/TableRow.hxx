@@ -94,4 +94,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEROW_HXX
-

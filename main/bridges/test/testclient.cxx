@@ -240,4 +240,3 @@ int main( int argc, char *argv[] )
 	printf( "Closed\n" );
     return 0;
 }
-

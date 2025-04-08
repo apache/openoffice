@@ -670,6 +670,3 @@ void SAL_CALL ODbaseIndex::release() throw()
 	ODbaseIndex_BASE::release();
 }
 // -----------------------------------------------------------------------------
-
-
-

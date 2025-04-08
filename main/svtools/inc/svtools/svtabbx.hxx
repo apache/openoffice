@@ -260,5 +260,3 @@ public:
 };
 
 #endif // #ifndef _SVTABBX_HXX
-
-

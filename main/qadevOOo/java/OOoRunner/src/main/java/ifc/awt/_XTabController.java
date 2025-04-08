@@ -161,4 +161,3 @@ public class _XTabController extends MultiMethodTest {
         tRes.tested("activateLast()", Status.skipped(true));
     }
 }
-

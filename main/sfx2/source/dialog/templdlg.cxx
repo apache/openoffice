@@ -3241,4 +3241,3 @@ sal_Int8    DropToolBox_Impl::ExecuteDrop( const ExecuteDropEvent& rEvt )
 {
      return rParent.aFmtLb.ExecuteDrop(rEvt);
 }
-

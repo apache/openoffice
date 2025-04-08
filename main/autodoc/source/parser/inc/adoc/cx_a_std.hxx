@@ -98,4 +98,3 @@ class Context_AdocStd : public autodoc::TkpDocuContext,
 
 
 #endif
-

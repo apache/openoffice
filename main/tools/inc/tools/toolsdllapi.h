@@ -34,4 +34,3 @@
 #define TOOLS_DLLPRIVATE SAL_DLLPRIVATE
                                                                                                                              
 #endif /* INCLUDED_TOOLSDLLAPI_H */
-

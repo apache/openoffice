@@ -181,4 +181,3 @@ inline bool operator !=(ucb_impl::RegexpMapConstIter< Val > const & rIter1,
 }
 
 #endif // _UCB_REGEXPMAP_HXX_
-

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_drawinglayer.hxx"
@@ -34,8 +32,6 @@
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <vcl/graph.hxx>
 
-//////////////////////////////////////////////////////////////////////////////
-
 namespace drawinglayer
 {
 	namespace primitive2d
@@ -47,7 +43,7 @@ namespace drawinglayer
 			if(!getLocalObjectRange().isEmpty() && !getBitmapEx().IsEmpty())
 			{
 				// get bitmap PIXEL size
-			    const Size& rPixelSize = getBitmapEx().GetSizePixel();
+				const Size& rPixelSize = getBitmapEx().GetSizePixel();
 
 				if(rPixelSize.Width() > 0 && rPixelSize.Height() > 0)
 				{
@@ -55,12 +51,12 @@ namespace drawinglayer
 					{
 						// shortcut for scale; use simple BitmapPrimitive2D
 						basegfx::B2DHomMatrix aObjectTransform;
-						
+
 						aObjectTransform.set(0, 0, getLocalObjectRange().getWidth());
 						aObjectTransform.set(1, 1, getLocalObjectRange().getHeight());
 						aObjectTransform.set(0, 2, getLocalObjectRange().getMinX());
 						aObjectTransform.set(1, 2, getLocalObjectRange().getMinY());
-						
+
 						Primitive2DReference xReference(
 							new BitmapPrimitive2D(
 								getBitmapEx(),
@@ -75,8 +71,8 @@ namespace drawinglayer
 						aInverseViewTransformation.invert();
 						basegfx::B2DVector aLogicSize(rPixelSize.Width(), rPixelSize.Height());
 						aLogicSize = aInverseViewTransformation * aLogicSize;
-						
-						// apply laout
+
+						// apply layout
 						basegfx::B2DPoint aTargetTopLeft(getLocalObjectRange().getMinimum());
 						bool bUseTargetTopLeft(true);
 						bool bNeedsClipping(false);
@@ -154,18 +150,18 @@ namespace drawinglayer
 
 							// create aligned, single BitmapPrimitive2D
 							basegfx::B2DHomMatrix aObjectTransform;
-							
+
 							aObjectTransform.set(0, 0, aTargetRange.getWidth());
 							aObjectTransform.set(1, 1, aTargetRange.getHeight());
 							aObjectTransform.set(0, 2, aTargetRange.getMinX());
 							aObjectTransform.set(1, 2, aTargetRange.getMinY());
-							
+
 							Primitive2DReference xReference(
 								new BitmapPrimitive2D(
 									getBitmapEx(),
 									aObjectTransform));
 							aRetval = Primitive2DSequence(&xReference, 1);
-							
+
 							// clip when not completely inside object range
 							bNeedsClipping = !getLocalObjectRange().isInside(aTargetRange);
 						}
@@ -192,10 +188,10 @@ namespace drawinglayer
 
 							// create ObjectTransform
 							const basegfx::B2DHomMatrix aObjectTransform(
-                                basegfx::tools::createScaleTranslateB2DHomMatrix(
-                                    getLocalObjectRange().getRange(),
-                                    getLocalObjectRange().getMinimum()));
-				            
+								basegfx::tools::createScaleTranslateB2DHomMatrix(
+									getLocalObjectRange().getRange(),
+									getLocalObjectRange().getMinimum()));
+
 							// create FillBitmapPrimitive
 							const drawinglayer::primitive2d::Primitive2DReference xFillBitmap(
 								new drawinglayer::primitive2d::FillGraphicPrimitive2D(
@@ -211,7 +207,7 @@ namespace drawinglayer
 						{
 							// embed to clipping; this is necessary for tiled fills
 							const basegfx::B2DPolyPolygon aPolyPolygon(
-                                basegfx::tools::createPolygonFromRect(getLocalObjectRange()));
+								basegfx::tools::createPolygonFromRect(getLocalObjectRange()));
 							const drawinglayer::primitive2d::Primitive2DReference xClippedFill(
 								new drawinglayer::primitive2d::MaskPrimitive2D(
 									aPolyPolygon,
@@ -224,7 +220,7 @@ namespace drawinglayer
 
 			return aRetval;
 		}
-		
+
 		WallpaperBitmapPrimitive2D::WallpaperBitmapPrimitive2D(
 			const basegfx::B2DRange& rObjectRange,
 			const BitmapEx& rBitmapEx,
@@ -249,7 +245,7 @@ namespace drawinglayer
 
 			return false;
 		}
-		
+
 		basegfx::B2DRange WallpaperBitmapPrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
 		{
 			return getLocalObjectRange();
@@ -260,5 +256,4 @@ namespace drawinglayer
 	} // end of namespace primitive2d
 } // end of namespace drawinglayer
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

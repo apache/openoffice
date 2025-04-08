@@ -91,4 +91,3 @@ public class _XIndent extends MultiMethodTest {
     }
 
 }  // finish class _XCancellable
-

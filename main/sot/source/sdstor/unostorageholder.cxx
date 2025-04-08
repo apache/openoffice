@@ -189,5 +189,3 @@ void SAL_CALL UNOStorageHolder::disposing( const lang::EventObject& /*Source*/ )
 		pTmp->RemoveUNOStorageHolder( this ); // this statement can lead to destruction of the holder
 	}
 }
-
-

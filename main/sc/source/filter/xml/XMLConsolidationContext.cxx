@@ -153,4 +153,3 @@ void ScXMLConsolidationContext::EndElement()
 	}
 	GetScImport().UnlockSolarMutex();
 }
-

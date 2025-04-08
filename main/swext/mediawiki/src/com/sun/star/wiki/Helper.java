@@ -151,8 +151,8 @@ public class Helper
 
     private static String[] m_pConfigStrings;
 
-    private static final String sHTMLHeader = "<HTML><HEAD><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><TITLE></TITLE></HEAD><BODY>";
-    private static final String sHTMLFooter = "</BODY></HTML>";
+    private static final String sHTMLHeader = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title></title></head><body>";
+    private static final String sHTMLFooter = "</body></html>";
 
     private static Random m_aRandom;
     private static MultiThreadedHttpConnectionManager m_aConnectionManager;
@@ -1144,4 +1144,3 @@ public class Helper
         }
     }
 }
-

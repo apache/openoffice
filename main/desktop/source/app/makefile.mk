@@ -102,4 +102,3 @@ SRC1FILES=	desktop.src
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

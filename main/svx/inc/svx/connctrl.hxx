@@ -70,4 +70,3 @@ public:
 
 
 #endif // _SVX_CONNCTRL_HXX
-

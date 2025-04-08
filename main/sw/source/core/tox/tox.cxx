@@ -935,4 +935,3 @@ const SwFormTokens& SwForm::GetPattern(sal_uInt16 nLevel) const
 	ASSERT(nLevel < GetFormMax(), "Index >= FORM_MAX");
 	return aPattern[nLevel];
 }
-

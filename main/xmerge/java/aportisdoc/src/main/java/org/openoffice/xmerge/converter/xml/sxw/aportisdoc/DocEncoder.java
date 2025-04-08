@@ -204,4 +204,3 @@ final class DocEncoder implements DocConstants {
         return bytes;
     }
 }
-

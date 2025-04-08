@@ -56,4 +56,3 @@ typedef ORelease< ::osl::Mutex >	MutexRelease;
 //.........................................................................
 
 #endif // _COMPHELPER_GUARDING_HXX_
-

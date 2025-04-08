@@ -153,5 +153,3 @@ class HtmlEnvironment_Idl
 
 
 #endif
-
-

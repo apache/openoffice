@@ -124,4 +124,3 @@ public class _XTypeConverter extends MultiMethodTest {
             ((String) destValue).equals("123")) ;
     }
 }
-

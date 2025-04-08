@@ -39,4 +39,3 @@
 #include <sfx2/tabdlg.hxx>
 
 #endif /* _LAYOUT_SFX_TABDLG_HXX */
-

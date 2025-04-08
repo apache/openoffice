@@ -92,5 +92,3 @@
 
 #define UNO_NAME_STYLE_FAMILY	"Family"
 #endif
-
-

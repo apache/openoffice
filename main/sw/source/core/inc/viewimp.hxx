@@ -369,4 +369,3 @@ inline void SwViewImp::AddAccessibleObj( const SdrObject *pObj )
 	MoveAccessible( 0, pObj, aEmptyRect );
 }
 #endif // SW_VIEWIMP_HXX
-

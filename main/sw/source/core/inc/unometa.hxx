@@ -361,4 +361,3 @@ void getPrefixAndSuffix(
         ::rtl::OUString *const o_pPrefix, ::rtl::OUString *const o_pSuffix);
 
 #endif // SW_UNOMETA_HXX
-

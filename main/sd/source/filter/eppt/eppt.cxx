@@ -2515,4 +2515,3 @@ extern "C" SAL_DLLPUBLIC_EXPORT sal_Bool __LOADONCALLAPI SaveVBA( SfxObjectShell
 
 	return sal_False;
 }
-

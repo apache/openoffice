@@ -374,8 +374,8 @@ protected:
 	sal_Int16						m_nClassId;					// type of the control
     sal_Bool                        m_bNativeLook;              // should the control use the native platform look?
     //added for exporting OCX control
-    sal_Int16						m_nControlTypeinMSO;		//keep the MS office control type for exporting to MS binarary file
-    sal_uInt16						m_nObjIDinMSO;				//keep the OCX control obj id for exporting to MS binarary file
+    sal_Int16						m_nControlTypeinMSO;		//keep the MS office control type for exporting to MS binary file
+    sal_uInt16						m_nObjIDinMSO;				//keep the OCX control obj id for exporting to MS binary file
 // </properties>
 
 
@@ -434,7 +434,7 @@ public:
 	virtual StringSequence SAL_CALL		getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
     virtual ::rtl::OUString SAL_CALL	getImplementationName() throw(::com::sun::star::uno::RuntimeException) = 0;
 
-// XSericeInfo - static version(s)
+// XServiceInfo - static version(s)
 	static  StringSequence SAL_CALL		getSupportedServiceNames_Static() throw(::com::sun::star::uno::RuntimeException);
 
 // XPersistObject
@@ -731,7 +731,7 @@ protected:
         column the object is bound to, or with the external value binding, if present.<br/>
         E.g. for a text control model, this property will most probably be "Text".</p>
 
-        <p>Derived classes are stronly recommend to call this method - at least the
+        <p>Derived classes are strongly recommend to call this method - at least the
         "DataFieldProperty" (exposed in getFastPropertyValue) relies on the information
         given herein, and needs to be supplied otherwise else.</p>
 
@@ -983,7 +983,7 @@ protected:
                             getCurrentFormComponentValue() const;
 
 	/** We can't write (new) common properties in this base class, as the file format doesn't allow this
-	    (unfortunally). So derived classes may use the following to methods. They secure the written
+	    (unfortunately). So derived classes may use the following to methods. They secure the written
 	    data with marks, so any new common properties in newer versions will be skipped by older ones.
     */
 	void	writeCommonProperties(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream);
@@ -1236,7 +1236,7 @@ private:
 
     /** connects to an external value binding
 
-        <p>Note that by definition, external data bindings superseede the SQL data binding which
+        <p>Note that by definition, external data bindings supersede the SQL data binding which
         is defined by our RowSet-column-related properties. This means that in case we're currently
         connected to a database column when this is called, this connection is suspended.</p>
 
@@ -1318,4 +1318,3 @@ private:
 //.........................................................................
 
 #endif // _FORMS_FORMCOMPONENT_HXX_
-

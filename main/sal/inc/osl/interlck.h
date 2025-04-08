@@ -49,5 +49,3 @@ oslInterlockedCount SAL_CALL osl_decrementInterlockedCount(oslInterlockedCount* 
 #endif
 
 #endif	/* _OSL_INTERLOCK_H_ */
-
-

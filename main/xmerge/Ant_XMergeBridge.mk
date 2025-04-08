@@ -26,4 +26,3 @@ $(eval $(call gb_Ant_Ant,XMergeBridge,$(SRCDIR)/xmerge/java/XMergeBridge/build.x
 $(eval $(call gb_Ant_set_componentfile,XMergeBridge,xmerge/java/XMergeBridge/XMergeBridge,OOO))
 
 # vim: set noet sw=4 ts=4:
-

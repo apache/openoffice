@@ -43,4 +43,3 @@ LockFailedQueryBox::LockFailedQueryBox( Window* pParent, ResMgr* pResMgr ) :
 LockFailedQueryBox::~LockFailedQueryBox()
 {
 }
-

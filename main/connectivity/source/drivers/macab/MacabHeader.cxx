@@ -336,4 +336,3 @@ sal_Int32 MacabHeader::end() const
 {
 	return size;
 }
-

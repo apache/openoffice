@@ -145,4 +145,3 @@ g_ImplementationHelper.addImplementation( \
 #	      ("com.sun.star.test.bridge.PythonTestObject",),	\
 #	      SampleUnoComponent)				\
 #	   ,
-

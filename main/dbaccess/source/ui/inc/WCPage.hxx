@@ -112,5 +112,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_WIZARD_CPAGE_HXX
-
-

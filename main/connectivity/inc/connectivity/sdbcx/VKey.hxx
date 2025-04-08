@@ -120,5 +120,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_KEY_HXX_
-
-

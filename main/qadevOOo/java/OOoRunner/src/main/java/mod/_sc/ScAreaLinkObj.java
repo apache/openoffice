@@ -57,7 +57,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::beans::XPropertySet</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.sheet.XAreaLink
 * @see com.sun.star.util.XRefreshable
 * @see com.sun.star.sheet.CellAreaLink
@@ -80,7 +80,7 @@ public class ScAreaLinkObj extends TestCase {
             log.println( "creating a Spreadsheet document" );
             xSheetDoc = SOF.createCalcDoc(null);
         } catch ( com.sun.star.uno.Exception e ) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create document", e );
         }

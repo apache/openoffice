@@ -267,4 +267,3 @@ void X11SalVirtualDevice::GetSize( long& rWidth, long& rHeight )
     rWidth  = GetWidth();
     rHeight = GetHeight();
 }
-

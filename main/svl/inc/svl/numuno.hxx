@@ -91,5 +91,3 @@ public:
 };
 
 #endif // #ifndef _NUMUNO_HXX
-
-

@@ -30,4 +30,3 @@ getCertError(PRErrorCode errNum);
 void
 printChainFailure(CERTVerifyLog *log);
 #endif	// _XSECERROR_HXX_
-

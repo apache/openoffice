@@ -196,4 +196,3 @@ DEBUG_ShowTokens()
     { return autodoc::CommandLine::Get_().DebugStyle_ShowTokens(); }
 
 #endif
-

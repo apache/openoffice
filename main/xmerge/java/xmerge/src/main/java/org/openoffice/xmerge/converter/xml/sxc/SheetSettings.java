@@ -86,9 +86,9 @@ public class SheetSettings implements OfficeConstants {
 	}
 	
 	/**
-	 * sets the position of the acitve cell 
+	 * sets the position of the active cell
 	 *
-	 * @param activeCell the current curor position 
+	 * @param activeCell the current cursor position
 	 */
 	public void setCursor(Point activeCell) {
 
@@ -97,7 +97,7 @@ public class SheetSettings implements OfficeConstants {
 	}
 	
 	/**
-	 * Gets the position of the acitve cell 
+	 * Gets the position of the active cell
 	 *
 	 * @return The position as a <code>Point</code>
 	 */

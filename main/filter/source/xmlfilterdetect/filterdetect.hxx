@@ -161,4 +161,3 @@ SAL_CALL FilterDetect_createInstance( const ::com::sun::star::uno::Reference< ::
 
 
 #endif
-

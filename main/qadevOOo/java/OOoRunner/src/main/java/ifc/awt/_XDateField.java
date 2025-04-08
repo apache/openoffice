@@ -49,7 +49,7 @@ import com.sun.star.awt.XDateField;
 *  <li><code> setStrictFormat()</code></li>
 *  <li><code> isStrictFormat()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XDateField
 */
 public class _XDateField extends MultiMethodTest {
@@ -332,5 +332,3 @@ public class _XDateField extends MultiMethodTest {
         tRes.tested("isLongFormat()", result) ;
     }
 }
-
-

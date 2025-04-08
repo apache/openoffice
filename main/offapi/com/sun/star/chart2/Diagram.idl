@@ -58,7 +58,7 @@ service Diagram
      */
     interface  XTitled;
 
-    /** makes it easy to set suiteable defaults for illumination and rotation for 3D charts
+    /** makes it easy to set suitable defaults for illumination and rotation for 3D charts
      */
     [optional] interface ::com::sun::star::chart::X3DDefaultSetter;
 

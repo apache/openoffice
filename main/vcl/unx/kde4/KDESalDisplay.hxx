@@ -31,4 +31,3 @@ class SalKDEDisplay : public SalX11Display
 		SalKDEDisplay( Display* pDisp );
 			virtual ~SalKDEDisplay();
 };
-

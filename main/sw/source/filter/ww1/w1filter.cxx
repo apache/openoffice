@@ -2041,5 +2041,3 @@ void Ww1HeaderFooter::Stop(Ww1Shell& rOut, Ww1Manager& rMan, sal_Unicode&)
 		Start(rOut, rMan);
 	}
 }
-
-

@@ -253,4 +253,3 @@ void ScfStreamProgressBar::Init( SfxObjectShell* pDocShell, const String& rText 
 }
 
 // ============================================================================
-

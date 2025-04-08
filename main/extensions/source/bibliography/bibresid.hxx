@@ -37,4 +37,3 @@ class BibResId : public ResId
 
 
 #endif // ADRRESID_HXX
-

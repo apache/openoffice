@@ -351,4 +351,3 @@ public:
 };
 
 #endif // SW_UNOTEXTCURSOR_HXX
-

@@ -1447,4 +1447,3 @@ void SAXWriter::unknown(const OUString& sString) throw (SAXException, RuntimeExc
 }
 
 }
-

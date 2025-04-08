@@ -159,5 +159,3 @@ uno::Reference< uno::XInterface > OModuleRegistration::getComponentFactory(
 
 	return NULL;
 }
-
-

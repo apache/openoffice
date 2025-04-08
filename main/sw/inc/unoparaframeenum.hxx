@@ -120,4 +120,3 @@ public:
 };
 
 #endif // SW_UNOPARAFRAMEENUM_HXX
-

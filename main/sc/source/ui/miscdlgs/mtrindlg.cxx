@@ -176,6 +176,3 @@ IMPL_LINK_INLINE_START( ScMetricInputDlg, ModifyHdl, MetricField *, EMPTYARG )
 	return 0;
 }
 IMPL_LINK_INLINE_END( ScMetricInputDlg, ModifyHdl, MetricField *, EMPTYARG )
-
-
-

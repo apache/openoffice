@@ -180,5 +180,3 @@ Reference < drawing::XShape > XMLTextFrameHyperlinkContext::GetShape() const
     return xShape;
 }
 // <--
-
-

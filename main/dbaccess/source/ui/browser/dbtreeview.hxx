@@ -75,4 +75,3 @@ namespace dbaui
 }
 
 #endif // DBACCESS_UI_DBTREEVIEW_HXX
-

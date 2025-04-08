@@ -271,5 +271,3 @@ void ScDdeLink::TryUpdate()
 		bNeedUpdate = sal_False;
 	}
 }
-
-

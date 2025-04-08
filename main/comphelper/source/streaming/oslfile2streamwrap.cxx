@@ -190,5 +190,3 @@ void SAL_CALL OSLOutputStreamWrapper::closeOutput() throw( stario::NotConnectedE
 }
 
 } // namespace comphelper
-
-

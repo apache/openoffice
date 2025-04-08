@@ -664,4 +664,3 @@ Reference< XAnimationNode > CustomAnimationPresets::getRandomPreset( sal_Int16 n
 }
 
 }
-

@@ -1860,7 +1860,7 @@ void Content::destroy(
 
     if ( isFolder() )
     {
-        // Process instanciated children...
+        // Process instantiated children...
 
         ContentRefList aChildren;
         queryChildren( aChildren );
@@ -1971,7 +1971,7 @@ void Content::transfer(
             uno::Sequence< uno::Any >(&aProps, 1),
             xEnv,
             rtl::OUString::createFromAscii(
-                "Cannot instanciate source object!" ),
+                "Cannot instantiate source object!" ),
             this );
         // Unreachable
     }
@@ -2212,7 +2212,7 @@ sal_Bool Content::exchangeIdentity(
             m_aUri = aNewUri;
             if ( isFolder() )
             {
-                // Process instanciated children...
+                // Process instantiated children...
 
                 ContentRefList aChildren;
                 queryChildren( aChildren );
@@ -2256,7 +2256,7 @@ sal_Bool Content::exchangeIdentity(
 //=========================================================================
 void Content::queryChildren( ContentRefList& rChildren )
 {
-    // Obtain a list with a snapshot of all currently instanciated contents
+    // Obtain a list with a snapshot of all currently instantiated contents
     // from provider and extract the contents which are direct children
     // of this content.
 
@@ -2377,7 +2377,7 @@ sal_Bool Content::loadData(
 
         if ( xPackagePropSet.is() )
         {
-            // HasEncryptedEntries ( only avalibale at root folder )
+            // HasEncryptedEntries ( only available at root folder )
             try
             {
                 uno::Any aHasEncryptedEntries

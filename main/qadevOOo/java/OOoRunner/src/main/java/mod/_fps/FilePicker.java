@@ -49,7 +49,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::ui::XFilePickerNotifier</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.ui.XFilePicker
 * @see com.sun.star.lang.XInitialization
 * @see com.sun.star.lang.XServiceInfo
@@ -126,4 +126,3 @@ public class FilePicker extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

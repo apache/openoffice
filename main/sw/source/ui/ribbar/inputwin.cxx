@@ -678,4 +678,3 @@ SfxChildWinInfo __EXPORT SwInputChild::GetInfo() const
 	SfxChildWinInfo aInfo = SfxChildWindow::GetInfo();	   \
 	return aInfo;
 }
-

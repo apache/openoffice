@@ -45,7 +45,7 @@ import com.sun.star.uno.UnoRuntime;
 *  <li><code> toBack()</code></li>
 *  <li><code> setMenuBar()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XTopWindow
 */
 public class _XTopWindow extends MultiMethodTest {
@@ -172,7 +172,7 @@ public class _XTopWindow extends MultiMethodTest {
                 ((XMultiServiceFactory)tParam.getMSF()).
                 createInstance("com.sun.star.awt.MenuBar")) ;
         } catch (com.sun.star.uno.Exception e) {
-            log.println("Can't instanciate MenuBar service") ;
+            log.println("Can't instantiate MenuBar service") ;
             result = false ;
         }
 
@@ -199,4 +199,3 @@ public class _XTopWindow extends MultiMethodTest {
         }
     }
 }
-

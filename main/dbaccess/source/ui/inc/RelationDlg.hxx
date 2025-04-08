@@ -122,5 +122,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_RELATIONDIALOG_HXX
-
-

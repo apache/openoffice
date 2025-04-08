@@ -60,7 +60,3 @@ ScWaitCursorOff::~ScWaitCursorOff()
 		}
 	}
 }
-
-
-
-

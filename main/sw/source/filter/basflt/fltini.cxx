@@ -1029,5 +1029,3 @@ sal_uLong GetSaveWarningOfMSVBAStorage( SfxObjectShell &rDocS )
                         return pFunction( rDocS );
         return ERRCODE_NONE;
 }
-
-

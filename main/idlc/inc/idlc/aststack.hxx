@@ -49,4 +49,3 @@ private:
 };
 
 #endif // _IDLC_ASTSTACK_HXX_
-

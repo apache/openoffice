@@ -162,5 +162,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // _COMPHELPER_INTERACTION_HXX_
-
-

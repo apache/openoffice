@@ -2812,4 +2812,3 @@ bool SwSectionFrm::IsBalancedSection() const
     }
     return bRet;
 }
-

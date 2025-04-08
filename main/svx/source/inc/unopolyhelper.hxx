@@ -47,5 +47,3 @@ SVX_DLLPUBLIC void SvxConvertB2DPolyPolygonToPolyPolygonBezier( const basegfx::B
 
 
 #endif
-
-

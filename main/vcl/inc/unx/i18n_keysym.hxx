@@ -63,5 +63,3 @@
 sal_Unicode KeysymToUnicode (KeySym nKeySym);
 
 #endif /* _SAL_I18N_KEYSYM_HXX */
-
-

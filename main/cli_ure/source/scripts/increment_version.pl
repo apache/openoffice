@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -32,16 +32,16 @@ sub checkName($);
 sub incrementNewVersion($);
 sub incrementOldVersion($);
 sub incrementPolicyVersion($);
-my $usage = 
-"The tool increments the minor version of assemblies and the major version of ". 
+my $usage =
+"The tool increments the minor version of assemblies and the major version of ".
 "the respective policy files. This is only done if new uno types have been added since".
-"the last product upate. This information is obtained from the file which is passed as ".
+"the last product update. This information is obtained from the file which is passed as ".
 "argument changedTypes. The names in the version file must have a particular form. ".
-"They must end on one of folling terms: NEW_VERSION, OLD_VERSION, POLICY_VERSION\n".
-"If no new published types habe been added then no output, argument  newVersions, is written".
+"They must end on one of following terms: NEW_VERSION, OLD_VERSION, POLICY_VERSION\n".
+"If no new published types have been added then no output, argument  newVersions, is written".
 "Usage is: \n increment_version.pl oldVersions  incVersions newVersions changedTypes\n\n".
 "oldVersion: Contains name value pairs, which are used for forming the config files of ".
-"the policy assemblies, for building the assemblies. \n\n". 
+"the policy assemblies, for building the assemblies. \n\n".
 "incVersions: File containing the names of which the versions are to be incremented. ".
 "Every line may only contain one name. The names must exactly match those from the ".
 "oldVersion file.\n\n".
@@ -54,7 +54,7 @@ my $sNameForm =
 "The names must end on one of these names: NEW_VERSION, OLD_VERSION, POLICY_VERSION\n".
 "For example, valid names are: \n".
 "CLI_URETYPES_NEW_VERSION\nCLI_URETYPES_OLD_VERSION\nCLI_URETYPES_POLICY_VERSION\n";
-			  
+
 if (scalar @ARGV < 4) {
    print $usage;
    exit -1;
@@ -101,7 +101,7 @@ if ( $newTypes == 0)
 }
 else
 {
-    print "\nNew UNO types were addes since last release. The version will be increased.\n\n";
+    print "\nNew UNO types were added since last release. The version will be increased.\n\n";
 }
 
 #read in incVersions in a list
@@ -111,7 +111,7 @@ my @incVersions = readIncVersions($ARGV[1]);
 #read in oldVersions line by line and apply the increment operation
 open OLDVERSION, "$ARGV[0]" or die "Cannot open to $ARGV[0] $!";
 
-#open file we want to write to 
+#open file we want to write to
 open NEWVERSION, "> $ARGV[2]" or die "Cannot write to $ARGV[2] $!";
 
 print NEWVERSION processLine($_, @incVersions) while(<OLDVERSION>);
@@ -148,9 +148,9 @@ sub processLine($$)
     my $value = substr($line, $i + 1);
     $value = trim($value);
 
-    #Check if the entry shall be incremented, this information is in the second 
+    #Check if the entry shall be incremented, this information is in the second
     #argument
-    my $found;		     
+    my $found;
     for(@incVersions) {
 	if ($_ eq $name) {
 	    $found = 1;
@@ -160,7 +160,7 @@ sub processLine($$)
     if ( ! defined($found)) {
 	 return $line;
     }
- 
+
     #Check if the name represents a version we need to change
     if ($name =~ /NEW_VERSION$/)
     {
@@ -235,7 +235,7 @@ sub readIncVersions($)
     my $arg = $_[0];
     my @names;
 
-    while(<INC>) 
+    while(<INC>)
     {
 	chomp;
 	#Skip empty lines

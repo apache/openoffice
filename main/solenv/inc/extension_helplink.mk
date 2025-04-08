@@ -65,4 +65,3 @@ $(HELPLINKALLTARGETS) : $(foreach,i,$(LINKLINKFILES) $(XHPLINKSRC)/$$(@:b:s/_/./
 	-$(RM) $(XHPLINKSRC)/$(@:b)/content/*.*
 	-$(RM) $(XHPLINKSRC)/$(@:b)/caption/*.*
 .ENDIF
-

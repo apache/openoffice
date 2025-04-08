@@ -871,5 +871,3 @@ sal_Bool SfxContentHelper::Find( const String& rFolder, const String& rName, Str
 
 	return bRet;
 }
-
-

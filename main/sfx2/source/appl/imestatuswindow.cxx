@@ -224,4 +224,3 @@ css::uno::Reference< css::beans::XPropertySet > ImeStatusWindow::getConfig()
             this);
     return xConfig;
 }
-

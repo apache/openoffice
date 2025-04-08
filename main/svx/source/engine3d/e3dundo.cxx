@@ -173,4 +173,3 @@ sal_Bool E3dAttributesUndoAction::CanRepeat(SfxRepeatTarget& /*rView*/) const
 void E3dAttributesUndoAction::Repeat()
 {
 }
-

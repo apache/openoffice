@@ -77,4 +77,3 @@ $(eval $(call gb_Package_add_file,cppuhelper_inc,inc/cppuhelper/access_control.h
 $(eval $(call gb_Package_add_file,cppuhelper_inc,inc/cppuhelper/unourl.hxx,cppuhelper/unourl.hxx))
 $(eval $(call gb_Package_add_file,cppuhelper_inc,inc/cppuhelper/cppuhelperdllapi.h,cppuhelper/cppuhelperdllapi.h))
 $(eval $(call gb_Package_add_file,cppuhelper_inc,inc/cppuhelper/findsofficepath.h,cppuhelper/findsofficepath.h))
-

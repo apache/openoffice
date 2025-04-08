@@ -44,4 +44,3 @@ namespace connectivity
 }
 
 #endif //_CONNECTIVITY_BLOBHELPER_HXX_
-

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,22 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef __com_sun_star_frame_FrameAction_idl__
 #define __com_sun_star_frame_FrameAction_idl__
-
 
 //=============================================================================
 
@@ -33,7 +31,7 @@
     of the desktop
 
     <p>
-    Interest listener can get informations about loaded/realoed or unloaded
+    Interest listener can get information about loaded/reloaded or unloaded
     components into a <type>Frame</type>.
     </p>
 
@@ -73,7 +71,7 @@ published enum FrameAction
 	COMPONENT_DETACHING,
 
 	//-------------------------------------------------------------------------
-    /** an event of this kind is broadcast whenever a component is
+	/** an event of this kind is broadcast whenever a component is
 		attached to a new model.
 
         <p>
@@ -88,7 +86,7 @@ published enum FrameAction
         activated
 
         <p>
-        Activations are broacast from the top component which was
+        Activations are broadcast from the top component which was
         not active before, down to the inner most component.
         </p>
 
@@ -124,7 +122,7 @@ published enum FrameAction
 	CONTEXT_CHANGED,
 
 	//-------------------------------------------------------------------------
-    /** an event of this kind is broadcast by an active frame when it
+	/** an event of this kind is broadcast by an active frame when it
 		is getting UI control (tool control).
 
         @see XFrame::activate()
@@ -132,7 +130,7 @@ published enum FrameAction
 	FRAME_UI_ACTIVATED,
 
 	//-------------------------------------------------------------------------
-    /** an event of this kind is broadcast by an active frame when it
+	/** an event of this kind is broadcast by an active frame when it
 		is losing UI control (tool control).
 
         @see XFrame::deactivate()

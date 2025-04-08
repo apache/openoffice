@@ -89,5 +89,3 @@ void SetMsiErrorCode( int nErrorCode )
 
     CloseHandle( hMapFile );
 }
-
-

@@ -150,4 +150,3 @@ S_SourceState::S_SourceState( DYN char *	dpSource_,
 		cCharAtLastCut(cCharAtLastCut_)
 {
 }
-

@@ -92,5 +92,3 @@ namespace dbaui
 
 
 #endif //DBAUI_COLLECTIONVIEW_HXX
-
-

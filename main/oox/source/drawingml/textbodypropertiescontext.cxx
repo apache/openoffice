@@ -180,4 +180,3 @@ Reference< XFastContextHandler > TextBodyPropertiesContext::createFastChildConte
 // --------------------------------------------------------------------
 
 } }
-

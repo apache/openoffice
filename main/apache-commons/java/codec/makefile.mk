@@ -72,4 +72,3 @@ BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -f $(ANT_BUILDFILE) jar
 .IF "$(SOLAR_JAVA)" != "" && "$(ENABLE_MEDIAWIKI)" == "YES"
 .INCLUDE : tg_ext.mk
 .ENDIF
-

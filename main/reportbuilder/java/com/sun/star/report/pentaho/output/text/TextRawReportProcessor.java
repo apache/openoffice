@@ -108,5 +108,3 @@ public class TextRawReportProcessor extends SinglePassReportProcessor
         return context;
     }
 }
-
-

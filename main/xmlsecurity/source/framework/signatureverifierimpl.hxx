@@ -127,5 +127,3 @@ SAL_CALL SignatureVerifierImpl_createInstance(
 	throw ( com::sun::star::uno::Exception );
 
 #endif
-
-

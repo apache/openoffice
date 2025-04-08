@@ -30,4 +30,3 @@
 #include "postmac.h"
 
 #endif // _AQUAVCLTYPES_H
-

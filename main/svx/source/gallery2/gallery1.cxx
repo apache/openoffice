@@ -936,4 +936,3 @@ void Gallery::ReleaseTheme( GalleryTheme* pTheme, SfxListener& rListener )
 
 sal_Bool GalleryThemeEntry::IsDefault() const 
 { return( ( nId > 0 ) && ( nId != ( RID_GALLERYSTR_THEME_MYTHEME - RID_GALLERYSTR_THEME_START ) ) ); }
-

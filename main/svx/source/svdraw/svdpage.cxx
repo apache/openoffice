@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
@@ -136,7 +134,7 @@ SdrObjList::~SdrObjList()
 
 	// #111111#
 	// To avoid that the Clear() method will broadcast changes when in destruction
-	// which would call virtual methos (not allowed in destructor), the model is set
+	// which would call virtual methods (not allowed in destructor), the model is set
 	// to NULL here.
 	pModel = 0L;
 
@@ -252,7 +250,7 @@ void SdrObjList::Clear()
         RemoveObjectFromContainer(maList.size()-1);
 
 		// flushViewObjectContacts() is done since SdrObject::Free is not guaranteed
-		// to delete the object and thus refresh visualisations
+		// to delete the object and thus refresh visualizations
         pObj->GetViewContact().flushViewObjectContacts(true);
 
 		bObjectsRemoved = sal_True;
@@ -369,7 +367,7 @@ void SdrObjList::NbcInsertObject(SdrObject* pObj, sal_uIntPtr nPos, const SdrIns
 		pObj->SetPage(pPage);
 
 		// #110094# Inform the parent about change to allow invalidations at
-		// evtl. existing parent visualisations
+		// evtl. existing parent visualizations
 		impChildInserted(*pObj);
 
 		if (!bRectsDirty) {
@@ -495,7 +493,7 @@ SdrObject* SdrObjList::RemoveObject(sal_uIntPtr nObjNum)
 		if(pOwnerObj && !GetObjCount())
 		{
 			// empty group created; it needs to be repainted since it's
-			// visualisation changes
+			// visualization changes
 			pOwnerObj->ActionChanged();
 		}
 	}
@@ -528,7 +526,7 @@ SdrObject* SdrObjList::NbcReplaceObject(SdrObject* pNewObj, sal_uIntPtr nObjNum)
 		pNewObj->SetPage(pPage);
 
 		// #110094#  Inform the parent about change to allow invalidations at
-		// evtl. existing parent visualisations
+		// evtl. existing parent visualizations
 		impChildInserted(*pNewObj);
 
 		pNewObj->SetInserted(sal_True);
@@ -575,7 +573,7 @@ SdrObject* SdrObjList::ReplaceObject(SdrObject* pNewObj, sal_uIntPtr nObjNum)
 		pNewObj->SetPage(pPage);
 
 		// #110094#  Inform the parent about change to allow invalidations at
-		// evtl. existing parent visualisations
+		// evtl. existing parent visualizations
 		impChildInserted(*pNewObj);
 
 		pNewObj->SetInserted(sal_True);
@@ -611,7 +609,7 @@ SdrObject* SdrObjList::NbcSetObjectOrdNum(sal_uIntPtr nOldObjNum, sal_uIntPtr nN
 
         InsertObjectIntoContainer(*pObj,nNewObjNum);
 
-		// #110094# No need to delete visualisation data since same object
+		// #110094# No need to delete visualization data since same object
 		// gets inserted again. Also a single ActionChanged is enough
 		pObj->ActionChanged();
 
@@ -638,7 +636,7 @@ SdrObject* SdrObjList::SetObjectOrdNum(sal_uIntPtr nOldObjNum, sal_uIntPtr nNewO
 		RemoveObjectFromContainer(nOldObjNum);
 		InsertObjectIntoContainer(*pObj,nNewObjNum);
 
-		// #110094#No need to delete visualisation data since same object
+		// #110094#No need to delete visualization data since same object
 		// gets inserted again. Also a single ActionChanged is enough
 		pObj->ActionChanged();
 
@@ -668,7 +666,7 @@ const Rectangle& SdrObjList::GetAllObjBoundRect() const
     // #i106183# for deep group hierarchies like in chart2, the invalidates
     // through the hierarchy are not correct; use a 2nd hint for the needed
     // recalculation. Future versions will have no bool flag at all, but
-    // just aOutRect in empty state to representate an invalid state, thus
+    // just aOutRect in empty state to represent an invalid state, thus
     // it's a step in the right direction.
 	if (bRectsDirty || aOutRect.IsEmpty())
     {
@@ -722,7 +720,7 @@ void SdrObjList::ReformatAllTextObjects()
 
 /** steps over all available objects and reformats all
 	edge objects that are connected to other objects so that
-	they may reposition itselfs.
+	they may reposition itself.
 	#103122#
 */
 void SdrObjList::ReformatAllEdgeObjects()
@@ -1489,7 +1487,7 @@ void SdrPage::operator=(const SdrPage& rSrcPage)
         mpSdrPageProperties->SetStyleSheet(rSrcPage.getSdrPageProperties().GetStyleSheet());
     }
 
-    // Now copy the contained obejcts (by cloning them)
+    // Now copy the contained objects (by cloning them)
 	SdrObjList::operator=(rSrcPage);
 }
 
@@ -1703,7 +1701,7 @@ void SdrPage::SetPageNum(sal_uInt16 nNew)
 		// change
 		nPageNum = nNew;
 
-		// notify visualisations, also notifies e.g. buffered MasterPages
+		// notify visualizations, also notifies e.g. buffered MasterPages
 		ActionChanged();
 	}
 }
@@ -2041,5 +2039,4 @@ drawinglayer::primitive2d::Primitive2DSequence StandardCheckVisisbilityRedirecto
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

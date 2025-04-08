@@ -35,17 +35,17 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.lang.XComponent
+' Required for  com.sun.star.lang.XComponent
  Global oComponentInstance As Object ' it will be disposed
 
-' Requiered for  com.sun.star.chart.XChartData
+' Required for  com.sun.star.chart.XChartData
  Global oCellToChange As Object
 
-' Requiered for  com.sun.star.container.XNamed
+' Required for  com.sun.star.container.XNamed
  Global cNameToSet As String ' "fixed" if name is fixed
 
-' Requiered for  com.sun.star.chart.XChartDataArray
-' Requiered for  com.sun.star.text.XTextTable
+' Required for  com.sun.star.chart.XChartDataArray
+' Required for  com.sun.star.text.XTextTable
  Global nTableW As Integer
  Global nTableH As Integer
 

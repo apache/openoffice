@@ -38,4 +38,3 @@ public class MergeException extends Exception {
         super(message);
     }
 }
-

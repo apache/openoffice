@@ -86,4 +86,3 @@ Date MsDos2Date( const time_t *pTimeT );
 #define FSysFailOnErrorImpl()
 
 #endif
-

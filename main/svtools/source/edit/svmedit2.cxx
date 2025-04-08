@@ -74,4 +74,3 @@ sal_uLong ExtMultiLineEdit::GetParagraphCount() const
 {
 	return GetTextEngine()->GetParagraphCount();
 }
-

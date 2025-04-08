@@ -176,5 +176,3 @@ sal_uInt8 ScDocument::GetScriptType( SCCOL nCol, SCROW nRow, SCTAB nTab, ScBaseC
 	sal_uLong nFormat = pPattern->GetNumberFormat( xPoolHelper->GetFormTable(), pCondSet );
 	return GetCellScriptType( pCell, nFormat );
 }
-
-

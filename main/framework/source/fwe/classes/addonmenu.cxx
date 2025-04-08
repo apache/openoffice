@@ -449,4 +449,3 @@ sal_Bool AddonMenuManager::IsCorrectContext( const ::rtl::OUString& rModuleIdent
 }
 
 }
-

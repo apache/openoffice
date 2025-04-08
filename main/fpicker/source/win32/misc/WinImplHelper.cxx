@@ -306,7 +306,7 @@ void SAL_CALL ListboxDeleteItem( HWND hwnd, const Any& aPosition, const Referenc
     // index was not correct
     if ( CB_ERR == lRet )
         throw IllegalArgumentException(
-            OUString::createFromAscii( "inavlid item position" ),
+            OUString::createFromAscii( "invalid item position" ),
             rXInterface,
             aArgPos );
 }
@@ -603,4 +603,3 @@ OUString WindowsToSOfficeLabel( const rtl::OUString& aWinLabel )
 
     return aSOLabel;
 }
-

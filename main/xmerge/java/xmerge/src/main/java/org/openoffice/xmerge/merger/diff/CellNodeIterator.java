@@ -107,4 +107,3 @@ public final class CellNodeIterator extends NodeIterator  {
         return equal;
     }
 }
-

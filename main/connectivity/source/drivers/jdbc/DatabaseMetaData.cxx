@@ -628,7 +628,7 @@ Reference< XResultSet > java_sql_DatabaseMetaData::impl_callResultSetMethodWithS
     jobject out(0);
 
     SDBThreadAttach t;
-    OSL_ENSURE( t.pEnv, "java_sql_DatabaseMetaData::impl_callResultSetMethodWithStrings: no Java enviroment anymore!" );
+    OSL_ENSURE( t.pEnv, "java_sql_DatabaseMetaData::impl_callResultSetMethodWithStrings: no Java environment anymore!" );
 	
     {
         const  char* pSignature = _pOptionalAdditionalString

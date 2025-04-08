@@ -75,5 +75,3 @@ StmArrayStatu2::SetTokenId( UINT16 in_nTokenId )
 
 
 #endif
-
-

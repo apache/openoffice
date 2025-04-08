@@ -365,4 +365,3 @@ DWORD	ripString;	    // 1FCh
 DWORD	LastTlsSetValueEIP[64]; // 200h (parallel to TlsArray, contains EIP
 				//	where TLS value was last set from)
 } THREAD_DATABASE, *PTHREAD_DATABASE;
-

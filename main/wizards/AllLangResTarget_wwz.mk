@@ -37,5 +37,3 @@ $(eval $(call gb_SrsTarget_set_include,wwz/res,\
 $(eval $(call gb_SrsTarget_add_files,wwz/res,\
 	wizards/source/webwizard/webwizar.src \
 ))
-
-

@@ -450,7 +450,7 @@ bool CloseableLifeTimeManager::impl_isDisposedOrClosed( bool bAssert )
 ::startApiCall(sal_Bool bLongLastingCall)
 {
 	//Mutex needs to be acquired exactly ones; will be released inbetween
-	//mutex is requiered due to constructor of LifeTimeGuard
+	//mutex is required due to constructor of LifeTimeGuard
 
 	OSL_ENSURE( !m_bCallRegistered, "this method is only allowed ones" );
 	if(m_bCallRegistered)

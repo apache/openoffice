@@ -144,4 +144,3 @@ public:
 
 
 #endif // INCLUDED_CODEMAKER_GLOBAL_HXX
-

@@ -112,7 +112,7 @@ interface XRegressionCurveCalculator : com::sun::star::uno::XInterface
 
         <p>The value of <it>r</it> is signed.  Often
         <it>r</it><sup>2</sup> is used instead of <it>r</it> to denote
-        a regression curve's accuray.</p>
+        a regression curve's accuracy.</p>
 
         @return
             The return value is the fraction of the variance in the
@@ -131,7 +131,7 @@ interface XRegressionCurveCalculator : com::sun::star::uno::XInterface
      */
     string getRepresentation();
 
-    /** Returns a representation using the given numnber format for formatting all numbers
+    /** Returns a representation using the given number format for formatting all numbers
         contained in the formula.
 
         @see getRepresentation

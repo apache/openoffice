@@ -312,4 +312,3 @@ void LdapConnection::loadModule()
 
 //------------------------------------------------------------------------------
 } } } // extensions.config.ldap
-

@@ -53,5 +53,3 @@ TEST_F(Compare, equalsIgnoreAsciiCaseAscii)
 }
 
 } }
-
-

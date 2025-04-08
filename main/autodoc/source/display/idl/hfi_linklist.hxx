@@ -137,5 +137,3 @@ class HF_IdlLinkList : public HtmlFactory_Idl
 
 
 #endif
-
-

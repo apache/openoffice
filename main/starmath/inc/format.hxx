@@ -164,4 +164,3 @@ inline sal_Bool    SmFormat::operator != (const SmFormat &rFormat) const
 }
 
 #endif
-

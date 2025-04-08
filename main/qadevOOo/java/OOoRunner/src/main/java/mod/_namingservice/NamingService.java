@@ -41,7 +41,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::uno::XNamingService</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.uno.XNamingService
 * @see com.sun.star.uno.NamingService
 * @see ifc.uno._XNamingService
@@ -95,4 +95,3 @@ public class NamingService extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

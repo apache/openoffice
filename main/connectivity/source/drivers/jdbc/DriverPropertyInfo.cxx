@@ -134,4 +134,3 @@ Sequence< ::rtl::OUString> java_sql_DriverPropertyInfo::choices()
 	return Sequence< ::rtl::OUString>();
 }
 // --------------------------------------------------------------------------------
-

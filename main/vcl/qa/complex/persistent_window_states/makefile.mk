@@ -55,9 +55,3 @@ EXTRAJARFILES = $(OOO_JUNIT_JAR)
 ALLTAR : javatest
 
 .END
-
-
-
-
-
-

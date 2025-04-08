@@ -131,4 +131,3 @@ namespace frm
 //.........................................................................
 
 #endif // FORMS_COMPONENT_NAVIGATION_BAR_HXX
-

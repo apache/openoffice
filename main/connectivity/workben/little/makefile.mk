@@ -53,4 +53,3 @@ APP1STDLIBS+=$(STDLIBCPP)
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :      target.mk
-

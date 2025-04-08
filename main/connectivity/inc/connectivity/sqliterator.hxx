@@ -359,4 +359,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_PARSE_SQLITERATOR_HXX_
-

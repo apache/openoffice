@@ -50,4 +50,3 @@ public class _ChartTitle extends MultiPropertyTest {
         } );
     }
 }
-

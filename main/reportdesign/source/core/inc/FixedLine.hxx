@@ -168,4 +168,3 @@ namespace reportdesign
 	};
 }
 #endif //RPT_FIXEDLINE_HXX
-

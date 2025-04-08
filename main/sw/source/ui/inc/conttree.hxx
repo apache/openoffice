@@ -334,4 +334,3 @@ public:
 };
 
 #endif
-

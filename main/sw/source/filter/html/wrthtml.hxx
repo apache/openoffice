@@ -596,4 +596,3 @@ Writer& OutHTML_NumBulListEnd( SwHTMLWriter& rWrt,
 
 
 #endif	//  _WRTHTML_HXX
-

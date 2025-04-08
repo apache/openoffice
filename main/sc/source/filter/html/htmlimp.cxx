@@ -253,4 +253,3 @@ String ScHTMLImport::GetHTMLRangeNameList( ScDocument* pDoc, const String& rOrig
 	}
 	return aNewName;
 }
-

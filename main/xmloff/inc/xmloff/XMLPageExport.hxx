@@ -107,4 +107,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XMLTEXTMASTERPAGEEXPORT_HXX
-

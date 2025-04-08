@@ -78,7 +78,7 @@ struct ImageListItemDescriptor
     String						aMaskURL;			// an URL to an optional bitmap used as a mask
     ImageMaskMode				      nMaskMode;			// an enum to describe the current mask mode
     ImageItemListDescriptor*              pImageItemList;		// an array	of ImageItemDescriptors that describes every image
-    String						aHighContrastURL;		// an URL to an optional high contrast bitmap with serveral images inside
+    String						aHighContrastURL;		// an URL to an optional high contrast bitmap with several images inside
     String						aHighContrastMaskURL;	// an URL to an optional high contrast bitmap as a mask
 };
 

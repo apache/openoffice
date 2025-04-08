@@ -407,4 +407,3 @@ namespace reportdesign
 } // namespace reportdesign
 // =============================================================================
 #endif // REPORTDESIGN_API_REPORTDEFINITION_HXX
-

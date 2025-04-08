@@ -152,4 +152,3 @@ void SwLineNumberInfo::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew 
 		pRoot->EndAllAction();
 	}
 }
-

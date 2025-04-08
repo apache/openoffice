@@ -1118,5 +1118,3 @@ sal_Bool Storage::Equals( const BaseStorage& rStorage ) const
     const Storage* pOther = PTR_CAST( Storage, &rStorage );
     return pOther && ( pOther->pEntry == pEntry );
 }
-
-

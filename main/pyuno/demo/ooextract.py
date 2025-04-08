@@ -124,7 +124,7 @@ def usage():
                   "        the script should connect to in order to do the conversion.\n" +
                   "        The strings defaults to socket,host=localhost,port=2002\n"
                   "--html \n"
-                  "        Instead of the text filter, the writer html filter is used\n"
+                  "        Instead of the text filter, the writer HTML filter is used\n"
                   )
 
 main()

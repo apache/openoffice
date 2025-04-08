@@ -60,4 +60,3 @@ public class _ChartTableAddressSupplier extends MultiPropertyTest {
         }) ;
     }
 }
-

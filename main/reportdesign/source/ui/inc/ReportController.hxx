@@ -354,7 +354,7 @@ namespace rptui
 		// SfxListener
 		virtual void Notify(SfxBroadcaster & rBc, SfxHint const & rHint);
 
-		/** returns <TRUE/> when the command is enbaled
+		/** returns <TRUE/> when the command is enabled
 			@param	_nCommand	the command id
 			@param	_xControlFormat the report control format
 		*/
@@ -479,4 +479,3 @@ namespace rptui
 	};
 }
 #endif // RPTUI_REPORTCONTROLLER_HXX
-

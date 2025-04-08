@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef _SVT_FILEVIEW_HXX
 #define	_SVT_FILEVIEW_HXX
@@ -54,30 +53,30 @@ class IUrlFilter;
 /// the result of an action in the FileView
 enum FileViewResult
 {
-    eSuccess,
-    eFailure,
-    eTimeout,
-    eStillRunning
+	eSuccess,
+	eFailure,
+	eTimeout,
+	eStillRunning
 };
 
 /// describes parameters for doing an action on the FileView asynchronously
 struct FileViewAsyncAction
 {
-    sal_uInt32  nMinTimeout;    /// minimum time to wait for a result, in milliseconds
-    sal_uInt32  nMaxTimeout;    /// maximum time to wait for a result, in milliseconds, until eTimeout is returned
-    Link        aFinishHandler; /// the handler to be called when the action is finished. Called in every case, no matter of the result
+	sal_uInt32  nMinTimeout;    /// minimum time to wait for a result, in milliseconds
+	sal_uInt32  nMaxTimeout;    /// maximum time to wait for a result, in milliseconds, until eTimeout is returned
+	Link        aFinishHandler; /// the handler to be called when the action is finished. Called in every case, no matter of the result
 
-    FileViewAsyncAction()
-    {
-        nMinTimeout = nMaxTimeout = 0;
-    }
+	FileViewAsyncAction()
+	{
+		nMinTimeout = nMaxTimeout = 0;
+	}
 };
 
 class SVT_DLLPUBLIC SvtFileView : public Control
 {
 private:
-    SvtFileView_Impl*       mpImp;
-	
+	SvtFileView_Impl*       mpImp;
+
 	::com::sun::star::uno::Sequence< ::rtl::OUString > mpBlackList;
 
 	SVT_DLLPRIVATE void					OpenFolder( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aContents );
@@ -93,20 +92,20 @@ public:
 	SvtFileView( Window* pParent, const ResId& rResId, sal_Int8 nFlags );
 	~SvtFileView();
 
-    const String&           GetViewURL() const;
+	const String&           GetViewURL() const;
 	String					GetURL( SvLBoxEntry* pEntry ) const;
 	String					GetCurrentURL() const;
 
-    sal_Bool				GetParentURL( String& _rParentURL ) const;
+	sal_Bool				GetParentURL( String& _rParentURL ) const;
 	sal_Bool				CreateNewFolder( const String& rNewFolder );
 
 	void					SetHelpId( const rtl::OString& rHelpId );
 	const rtl::OString&		GetHelpId( ) const;
 	void					SetSizePixel( const Size& rNewSize );
-    using Window::SetPosSizePixel;
+	using Window::SetPosSizePixel;
 	virtual void			SetPosSizePixel( const Point& rNewPos, const Size& rNewSize );
 
-    /** initialize the view with the content of a folder given by URL, and aply an immediate filter
+	/** initialize the view with the content of a folder given by URL, and apply an immediate filter
 
         @param rFolderURL
             the URL of the folder whose content is to be read
@@ -127,7 +126,7 @@ public:
                                 const String& rFolderURL,
                                 const String& rFilter,
                                 const FileViewAsyncAction* pAsyncDescriptor );
-    /** initialze the view with a sequence of contents, which have already been obtained elsewhere
+    /** initialize the view with a sequence of contents, which have already been obtained elsewhere
 
         This method will never return <member>eStillRunning</member>, since it will fill the
         view synchronously
@@ -136,7 +135,7 @@ public:
 
     /** initializes the view with the content of a folder given by an UCB content
     */
-    sal_Bool				Initialize( const ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XContent>& _xContent, 
+    sal_Bool				Initialize( const ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XContent>& _xContent,
 										const String& rFilter );
 
     /** reads the current content of the current folder again, and applies the given filter to it
@@ -178,12 +177,12 @@ public:
                                 const FileViewAsyncAction* pAsyncDescriptor
                             );
 
-    void					SetNoSelection();
+	void					SetNoSelection();
 	void					ResetCursor();
 
 	void					SetSelectHdl( const Link& rHdl );
 	void					SetDoubleClickHdl( const Link& rHdl );
-    void                    SetOpenDoneHdl( const Link& rHdl );
+	void                    SetOpenDoneHdl( const Link& rHdl );
 
 	sal_uLong           		GetSelectionCount() const;
 	SvLBoxEntry*			FirstSelected() const;
@@ -191,8 +190,8 @@ public:
 	void					EnableAutoResize();
 	void					SetFocus();
 
-    void                    EnableContextMenu( sal_Bool bEnable );
-    void                    EnableDelete( sal_Bool bEnable );
+	void                    EnableContextMenu( sal_Bool bEnable );
+	void                    EnableDelete( sal_Bool bEnable );
 	void					EnableNameReplacing( sal_Bool bEnable = sal_True );
 								// translate folder names or display doc-title instead of file name
 								// EnableContextMenu( sal_True )/EnableDelete(sal_True) disable name replacing!
@@ -201,13 +200,13 @@ public:
 	String                  GetConfigString() const;
 	void					SetConfigString( const String& rCfgStr );
 
-    void                    SetUrlFilter( const IUrlFilter* _pFilter );
-    const IUrlFilter*       GetUrlFilter( ) const;
+	void                    SetUrlFilter( const IUrlFilter* _pFilter );
+	const IUrlFilter*       GetUrlFilter( ) const;
 
-    void                    EndInplaceEditing( bool _bCancel );
+	void                    EndInplaceEditing( bool _bCancel );
 
 protected:
-    virtual void            StateChanged( StateChangedType nStateChange );
+	virtual void            StateChanged( StateChangedType nStateChange );
 };
 
 // struct SvtContentEntry ------------------------------------------------
@@ -246,7 +245,7 @@ class SVT_DLLPUBLIC QueryDeleteDlg_Impl : public ModalDialog
 	PushButton              _aNoButton;
 	CancelButton            _aCancelButton;
 
-    QueryDeleteResult_Impl  _eResult;
+	QueryDeleteResult_Impl  _eResult;
 
 private:
 
@@ -257,11 +256,12 @@ public:
 							QueryDeleteDlg_Impl( Window* pParent,
 												 const String& rName );
 
-    void                    EnableAllButton() { _aAllButton.Enable( sal_True ); }
-    QueryDeleteResult_Impl  GetResult() const { return _eResult; }
+	void                    EnableAllButton() { _aAllButton.Enable( sal_True ); }
+	QueryDeleteResult_Impl  GetResult() const { return _eResult; }
 };
 
 }
 
 #endif // _SVT_FILEVIEW_HXX
 
+/* vim: set noet sw=4 ts=4: */

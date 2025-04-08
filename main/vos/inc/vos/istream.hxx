@@ -66,4 +66,3 @@ public:
 }     
 
 #endif	// _VOS_ISTREAM_HXX_
-

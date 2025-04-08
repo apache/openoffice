@@ -325,4 +325,3 @@ namespace rptui
 
 }
 #endif //RPTUI_UNDOACTIONS_HXX
-

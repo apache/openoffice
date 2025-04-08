@@ -191,4 +191,3 @@ void XMLTextHeaderFooterContext::EndElement()
 		xPropSet->setPropertyValue( sOn, aAny );
 	}
 }
-

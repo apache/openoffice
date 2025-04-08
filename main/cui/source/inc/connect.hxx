@@ -111,4 +111,3 @@ public:
 
 
 #endif // _SVX_CONNECT_HXX
-

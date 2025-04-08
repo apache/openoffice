@@ -202,5 +202,3 @@ inline BibDataManager* BibGeneralPage::GetDataManager()
 }
 
 #endif
-
-

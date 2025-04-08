@@ -773,5 +773,3 @@ SalI18N_InputContext::EndExtTextInput( sal_uInt16 /*nFlags*/ )
         }
     }
 }
-
-

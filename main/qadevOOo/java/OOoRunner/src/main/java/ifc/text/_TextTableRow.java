@@ -45,4 +45,3 @@ import lib.MultiPropertyTest;
 public class _TextTableRow extends MultiPropertyTest {
 
 } // finish class _TextTableRow
-

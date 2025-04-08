@@ -729,4 +729,3 @@ void ScChartListenerCollection::EndListeningHiddenRange( ScChartHiddenRangeListe
 {
     maHiddenListeners.remove_if(MatchListener(pListener));
 }
-

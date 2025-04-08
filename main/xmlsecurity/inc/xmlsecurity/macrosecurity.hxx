@@ -168,4 +168,3 @@ public:
 
 
 #endif // _XMLSECURITY_MACROSECURITY_HXX
-

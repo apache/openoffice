@@ -53,5 +53,3 @@ CUSTOMMANIFESTFILE = manifest
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :	target.mk
-
-

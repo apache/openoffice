@@ -173,6 +173,3 @@ PopupMenu* SvxFontMenuControl::GetPopup() const
 {
 	return pMenu;
 }
-
-
-

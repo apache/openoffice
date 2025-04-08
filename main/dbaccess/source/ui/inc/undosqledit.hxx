@@ -53,5 +53,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_UNDOSQLEDIT_HXX
-
-

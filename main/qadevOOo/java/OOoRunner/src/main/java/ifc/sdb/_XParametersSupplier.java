@@ -33,7 +33,7 @@ import lib.MultiMethodTest;
 * <ul>
 *  <li><code> getParameters()</code></li>
 * </ul> <p>
-* Test is multithread compilant. <p>
+* Test is multithread compliant. <p>
 * @see com.sun.star.sdb.XParametersSupplier
 */
 public class _XParametersSupplier extends MultiMethodTest {
@@ -53,5 +53,3 @@ public class _XParametersSupplier extends MultiMethodTest {
 
     }
 }  // finish class _XParametersSupplier
-
-

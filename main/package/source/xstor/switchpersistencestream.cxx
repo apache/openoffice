@@ -481,4 +481,3 @@ void SAL_CALL SwitchablePersistenceStream::waitForCompletion()
 	if ( asyncOutputMonitor.is() )
 		asyncOutputMonitor->waitForCompletion();
 }
-

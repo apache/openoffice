@@ -196,4 +196,3 @@ void OMultiTypeInterfaceContainerHelperVar< key , hashImpl , equalImpl >::clear(
 }     
 
 #endif
-

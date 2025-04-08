@@ -287,4 +287,3 @@ inline void PackageManagerImpl::logIntern( css::uno::Any const & status )
 }
 
 #endif
-

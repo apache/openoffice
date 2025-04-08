@@ -270,5 +270,3 @@ namespace svx
 		}
 	};
 }
-
-

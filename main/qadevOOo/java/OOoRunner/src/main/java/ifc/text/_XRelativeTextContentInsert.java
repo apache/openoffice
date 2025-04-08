@@ -54,7 +54,7 @@ import com.sun.star.uno.XInterface;
  * Tested component <b>must implement</b> <code>XText</code>
  * interface for proper testing. <p>
  *
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.text.XRelativeTextContentInsert
  */
 public class _XRelativeTextContentInsert extends MultiMethodTest {
@@ -129,4 +129,3 @@ public class _XRelativeTextContentInsert extends MultiMethodTest {
     } // end _insertTextContentBefore()
 
 }
-

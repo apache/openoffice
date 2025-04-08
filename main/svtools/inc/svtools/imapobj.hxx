@@ -156,4 +156,3 @@ inline sal_Bool IMapObject::DelEvent( sal_uInt16 nEvent )
 }
 
 #endif
-

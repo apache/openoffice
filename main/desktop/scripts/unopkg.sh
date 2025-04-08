@@ -1,6 +1,6 @@
 #!/bin/sh
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # enable file locking
@@ -46,12 +46,12 @@ do
        -env:*) BOOTSTRAPVARS=$BOOTSTRAPVARS" ""$arg";;
        sync) OPTSYNC=true;;
        -v) VERBOSE=true;;
-       --verbose) VERBOSE=true;;	  
+       --verbose) VERBOSE=true;;
        *) OPTOTHER=$arg;;
   esac
 done
 
-if [ "$OPTSYNC" = "true" ] && [ -z "$OPTOTHER" ] 
+if [ "$OPTSYNC" = "true" ] && [ -z "$OPTOTHER" ]
 then
     JVMFWKPARAMS='-env:UNO_JAVA_JFW_INSTALL_DATA=$OOO_BASE_DIR/share/config/javasettingsunopkginstall.xml -env:JFW_PLUGIN_DO_NOT_CHECK_ACCESSIBILITY=1'
 fi
@@ -77,4 +77,3 @@ unset XENVIRONMENT
 # execute binary
 exec "$sd_prog/unopkg.bin" "$@"  "$JVMFWKPARAMS" \
     "-env:INIFILENAME=vnd.sun.star.pathname:$sd_prog/redirectrc"
-

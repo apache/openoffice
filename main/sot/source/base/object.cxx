@@ -201,5 +201,3 @@ sal_Bool SotObject::Close()
 {
 	return sal_True;
 }
-
-

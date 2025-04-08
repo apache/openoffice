@@ -958,4 +958,3 @@ ScMatrix* TokenPool::GetMatrix( unsigned int n ) const
         printf ("GETMATRIX %d >= %d\n", n, nP_MatrixAkt);
     return NULL;
 }
-

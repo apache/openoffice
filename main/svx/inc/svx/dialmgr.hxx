@@ -42,4 +42,3 @@ struct SVX_DLLPUBLIC DialogsResMgr
 #define SVX_RESSSTR(i)	String(ResId(i,DIALOG_MGR()))
 
 #endif
-

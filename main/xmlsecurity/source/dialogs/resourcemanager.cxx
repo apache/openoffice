@@ -111,7 +111,7 @@ namespace XmlSec
     /*
         Creates two strings based on the distinguished name which are displayed in the 
         certificate details view. The first string contains only the values of the attribute
-        and valudes pairs, which are separated by commas. All escape characters ('"') are
+        and values pairs, which are separated by commas. All escape characters ('"') are
         removed.
         The second string is for the details view at the bottom. It shows the attribute/value 
         pairs on different lines. All escape characters ('"') are removed.
@@ -423,5 +423,3 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
 		AlignAfterImage( _rImage, _rFI, _nXOffset );
 	}
 }
-
-

@@ -172,4 +172,3 @@ public:
 	sal_Bool GetLabel(SwLabItem& rItem);
 };
 #endif
-

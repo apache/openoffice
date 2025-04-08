@@ -58,4 +58,3 @@ private:
 };
 
 #endif /* SC_VBA_COMMENTS_HXX */
-

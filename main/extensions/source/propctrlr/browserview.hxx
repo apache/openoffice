@@ -82,4 +82,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_BROWSERVIEW_HXX_
-

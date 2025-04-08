@@ -49,7 +49,7 @@ import com.sun.star.uno.XInterface;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.linguistic2.XSearchableDictionaryList
  * @see com.sun.star.lang.XComponent
@@ -106,4 +106,3 @@ public class DicList extends TestCase {
     }
 
 }    // finish class DicList
-

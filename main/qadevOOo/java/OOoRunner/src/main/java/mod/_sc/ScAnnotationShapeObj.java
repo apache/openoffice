@@ -64,7 +64,7 @@ import util.InstCreator;
 *  <li> <code>com::sun::star::sheet::XSheetAnnotation</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.sheet.CellAnnotation
 * @see com.sun.star.text.XSimpleText
 * @see com.sun.star.text.XTextRange
@@ -93,7 +93,7 @@ public class ScAnnotationShapeObj extends TestCase {
                     SOF.loadDocument(utils.getFullTestURL(
                             "ScAnnotationShapeObj.sxc")));
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document", e);
         }

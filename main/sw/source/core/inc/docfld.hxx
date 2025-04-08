@@ -183,4 +183,3 @@ public:
 
 
 #endif	// _DOCFLD_HXX
-

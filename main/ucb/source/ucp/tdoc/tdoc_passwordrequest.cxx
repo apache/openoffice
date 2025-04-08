@@ -235,4 +235,3 @@ DocumentPasswordRequest::DocumentPasswordRequest(
 
     setContinuations( aContinuations );
 }
-

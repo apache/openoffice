@@ -56,4 +56,3 @@ public:
 };
 
 #endif // _SD_DLGPAGE_HXX
-

@@ -52,7 +52,3 @@ OQueryTableWindowData::~OQueryTableWindowData()
 	DBG_DTOR(OQueryTableWindowData,NULL);
 }
 // -----------------------------------------------------------------------------
-
-
-
-

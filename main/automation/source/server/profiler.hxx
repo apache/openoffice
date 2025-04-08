@@ -130,4 +130,3 @@ private:
 	// Informationszeile zusammenbauen
 	String GetSysdepProfileLine( SysdepProfileSnapshot *pStart, SysdepProfileSnapshot *pStop );
 };
-

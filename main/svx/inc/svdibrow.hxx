@@ -136,5 +136,3 @@ public:
 };
 
 #endif //_SVDIBROW_HXX
-
-

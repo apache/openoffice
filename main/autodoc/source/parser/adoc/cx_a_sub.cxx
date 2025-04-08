@@ -173,4 +173,3 @@ Cx_AtTagCompletion::FollowUpContext()
 
 
 }   // namespace adoc
-

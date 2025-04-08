@@ -167,7 +167,7 @@ End Function
 
 '###################### 
 Sub DAsaveExcelDriver(saveDriver)
-	'# Not overwritting - Excel hangs, need to remove file first
+	'# Not overwriting - Excel hangs, need to remove file first
 	if daFso.FileExists(daFso.GetAbsolutePathName(saveDriver)) Then
 		daFso.DeleteFile(daFso.GetAbsolutePathName(saveDriver))
 	End If
@@ -313,7 +313,7 @@ Sub DAExportFile(fileName, projectFile, app_name)
 
     Dim myProject
 
-    '# Setup App Specifc VB Project
+    '# Setup App Specific VB Project
     Set myProject = DAgetProject(fileName, projectFile, app_name)
      
     Dim myComponent    
@@ -344,7 +344,7 @@ Sub DAImportFile(fileName, projectFile, app_name)
 
     Dim myProject
 
-    '# Setup App Specifc VB Project
+    '# Setup App Specific VB Project
     Set myProject = DAgetProject(fileName, projectFile, app_name)
 
     '# Check if module already exists raise error
@@ -387,7 +387,7 @@ Sub DARemoveModule(fileName, projectFile, app_name)
 
     Dim myProject
 
-    '# Setup App Specifc VB Project
+    '# Setup App Specific VB Project
     Set myProject = DAgetProject(fileName, projectFile, app_name)
     
     '# Check if module already exists raise error

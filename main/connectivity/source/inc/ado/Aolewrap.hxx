@@ -238,4 +238,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADO_AOLEWRAP_HXX_
-

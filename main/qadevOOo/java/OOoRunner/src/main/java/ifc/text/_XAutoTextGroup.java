@@ -45,7 +45,7 @@ import com.sun.star.text.XTextRange;
  *  <li> <code>'TextRange'</code> (of type <code>XTextRange</code>):
  *   the range for which an entry is added. </li>
  * <ul> <p>
- * Test is multithread compilant. <p>
+ * Test is multithread compliant. <p>
  * @see com.sun.star.text.XAutoTextGroup
  */
 public class _XAutoTextGroup extends MultiMethodTest {
@@ -300,5 +300,3 @@ public class _XAutoTextGroup extends MultiMethodTest {
     }
 
 }  // finish class _XAutoTextGroup
-
-

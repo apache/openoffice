@@ -157,4 +157,3 @@ sal_uInt32 SAL_CALL rtl_crc32 (
 	}
 	return Crc;
 }
-

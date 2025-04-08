@@ -158,5 +158,3 @@ Sequence< Type > SAL_CALL OHCatalog::getTypes(  ) throw(RuntimeException)
 	return Sequence< Type >(pTypes, aOwnTypes.size());
 }
 // -----------------------------------------------------------------------------
-
-

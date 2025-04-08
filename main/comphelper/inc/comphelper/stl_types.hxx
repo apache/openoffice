@@ -275,4 +275,3 @@ OutputIter intersperse(
 #endif
 
 #endif  // _COMPHELPER_STLTYPES_HXX_
-

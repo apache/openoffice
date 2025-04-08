@@ -281,4 +281,3 @@ inline typename FuncT::result_type syncExecute( FuncT const& func )
 
 } // namespace solarthread
 } // namespace vcl
-

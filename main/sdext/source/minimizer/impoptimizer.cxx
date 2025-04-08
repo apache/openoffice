@@ -770,4 +770,3 @@ sal_Bool ImpOptimizer::Optimize( const Sequence< PropertyValue >& rArguments )
 		bRet = sal_False;
 	return bRet;
 }
-

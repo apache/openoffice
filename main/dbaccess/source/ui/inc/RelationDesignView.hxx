@@ -65,6 +65,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_RELATIONDESIGNVIEW_HXX
-
-
-

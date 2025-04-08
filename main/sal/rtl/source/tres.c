@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include <stdio.h>
 #include <rtl/tres.h>
@@ -158,7 +156,7 @@ static rtl_TestResult_vtable trVTable =
   * create and initialize data struct for TestResult
   *
   * @param const sal_Char* meth = name of the method (entryname)
-  * @param sal_uInt32 flags     = bitmap of comandline and status flags
+  * @param sal_uInt32 flags     = bitmap of commandline and status flags
   *
   * @return rtl_TestResult*     = pointer to a new allocated testresult struct
   */
@@ -321,7 +319,7 @@ rtl_CmpState* SAL_CALL rtl_tres_create_cmpstate(
   * rtl_tres_destroy
   * free allocated memory of testresult data struct
   *
-  * @param rtl_TestResult* pThis_ = ponter to a valid testresult struct
+  * @param rtl_TestResult* pThis_ = pointer to a valid testresult struct
   */
 void SAL_CALL rtl_tres_destroy( rtl_TestResult* pThis_ )
 {
@@ -332,7 +330,7 @@ void SAL_CALL rtl_tres_destroy( rtl_TestResult* pThis_ )
     if ( pData->m_state )
         rtl_tres_destroy_funcstates( pData->m_state );
 
-    /* free allocted memory and reinitialize to zero */
+    /* free allocated memory and reinitialize to zero */
     /* to be able to prevent dangling pointer access*/
     free( pData ); pData = NULL;
 }
@@ -454,7 +452,7 @@ static sal_Bool SAL_CALL rtl_tres_state(
         /* indicate this state as substate */
 		rtl_tres_setbit( pFunc, rtl_tres_Flag_SUB );
 
-        /* indicate prvious state as passed if no masterstate */
+        /* indicate previous state as passed if no masterstate */
         if ( pFunc->m_prev != pData->m_state )
             rtl_tres_setbit( pFunc->m_prev, rtl_tres_Flag_PASSED );
     }
@@ -679,4 +677,3 @@ rtl_cmpstate SAL_CALL rtl_tres_getnextcmpstate( rtl_cmpstate cstate)
 //    }
 //} // </method_logPrintf>
  */
-

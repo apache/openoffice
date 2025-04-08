@@ -37,14 +37,14 @@
 </bookmark><comment>mw made "entering..." a one level entry</comment>
 <bookmark xml-lang="en-US" branch="hid/.uno:AutoComplete" id="bm_id6682843" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:AutoComplete" id="bm_id3145673" localize="false"/>
-<paragraph role="heading" id="hd_id3148492" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/06130000.xhp" name="AutoInput">AutoInput</link></paragraph>
-<paragraph role="paragraph" id="par_id3150793" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:AutoComplete">Switches the AutoInput function on and off, which automatically completes entries, based on other entries in the same column.</ahelp> The column is scanned up to a maximum of 2000 cells or 200 different strings.</paragraph>
+<paragraph role="heading" id="hd_id3148492" xml-lang="en-US" level="1" l10n="U"><link href="text/scalc/01/06130000.xhp" name="AutoInput">AutoInput</link></paragraph>
+<paragraph role="paragraph" id="par_id3150793" xml-lang="en-US" l10n="U"><ahelp hid=".uno:AutoComplete">Switches the AutoInput function on and off, which automatically completes entries, based on other entries in the same column.</ahelp> The column is scanned up to a maximum of 2000 cells or 200 different strings.</paragraph>
 </section>
 <embed href="text/scalc/guide/auto_off.xhp#auto_off"/>
 <section id="howtoget">
 <embed href="text/scalc/00/00000406.xhp#autoeingabe"/>
 </section>
-<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="CHG" oldref="8">The completion text is highlighted.</paragraph>
+<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="CHG">The completion text is highlighted.</paragraph>
 <list type="unordered">
 <listitem>
 <paragraph role="paragraph" id="par_idN1065D" xml-lang="en-US" l10n="NEW">To accept the completion, press <item type="keycode">Enter</item> or a cursor key.</paragraph>
@@ -59,7 +59,7 @@
 <paragraph role="paragraph" id="par_idN10679" xml-lang="en-US" l10n="NEW">To see a list of all available AutoInput text items for the current column, press <switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+D.</paragraph>
 </listitem>
 </list>
-<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U" oldref="3">When typing formulas using characters that match previous entries, a Help tip will appear listing the last ten functions used from <emph>Function Wizard</emph>, from all defined range names, from all database range names, and from the content of all label ranges.</paragraph>
-<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="5">AutoInput is case-sensitive. If, for example, you have written "Total" in a cell, you cannot enter "total" in another cell of the same column without first deactivating AutoInput.</paragraph>
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="U">When typing formulas using characters that match previous entries, a Help tip will appear listing the last ten functions used from <emph>Function Wizard</emph>, from all defined range names, from all database range names, and from the content of all label ranges.</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U">AutoInput is case-sensitive. If, for example, you have written "Total" in a cell, you cannot enter "total" in another cell of the same column without first deactivating AutoInput.</paragraph>
 </body>
 </helpdocument>

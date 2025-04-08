@@ -321,5 +321,3 @@ public:
 };
 
 #endif // _UCBHELPER_CONTENT_HXX_
-
-

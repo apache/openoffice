@@ -249,5 +249,3 @@ void SfxPartDockWnd_Impl::FillInfo( SfxChildWinInfo& rInfo ) const
 	SfxDockingWindow::FillInfo( rInfo );
 	rInfo.bVisible = sal_False;
 }
-
-

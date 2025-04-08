@@ -2061,4 +2061,3 @@ Sequence< OUString > SAL_CALL SmEditAccessible::getSupportedServiceNames()
 }
 
 //////////////////////////////////////////////////////////////////////
-

@@ -3593,4 +3593,3 @@ UNOStorageHolderList* UCBStorage::GetUNOStorageHolderList()
 
     return pImp->m_pUNOStorageHolderList;
 }
-

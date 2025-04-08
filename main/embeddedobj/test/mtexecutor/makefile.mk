@@ -71,4 +71,3 @@ DEF1NAME= $(SHL1TARGET)
 # --- Targets -------------------------------------------------------
 
 .INCLUDE :  target.mk
-

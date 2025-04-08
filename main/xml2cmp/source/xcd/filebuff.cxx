@@ -56,4 +56,3 @@ LoadXmlFile( Buffer & 			o_rBuffer,
 	aXmlFile.close();
 	return ret;
 }
-

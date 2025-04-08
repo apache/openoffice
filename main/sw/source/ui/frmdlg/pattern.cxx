@@ -68,4 +68,3 @@ Dtor
 SwBackgroundDlg::~SwBackgroundDlg()
 {
 }
-

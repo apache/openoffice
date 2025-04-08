@@ -167,4 +167,3 @@ public:
 };
 
 #endif // SW_UNOREFMARK_HXX
-

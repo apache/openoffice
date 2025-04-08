@@ -184,4 +184,3 @@ sal_Bool SfxLockBytesItem::QueryValue( com::sun::star::uno::Any& rVal,sal_uInt8 
 
 	return sal_True;
 }
-

@@ -375,5 +375,3 @@ KERNEL9X_API BOOL (WINAPI *lpfnGetDiskFreeSpaceExW)(
 #ifdef __cplusplus
 }
 #endif
-
-

@@ -94,4 +94,3 @@ void SAL_CALL SlideTimingContext::endDocument(  ) throw (::com::sun::star::xml::
 }
 
 } }
-

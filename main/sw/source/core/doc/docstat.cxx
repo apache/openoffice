@@ -60,4 +60,3 @@ void SwDocStat::Reset()
 	nChar	= 0;
 	bModified = sal_True;
 }
-

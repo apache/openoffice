@@ -2821,8 +2821,3 @@ void ScTabView::CheckNeedsRepaint()
 		if ( pGridWin[i] && pGridWin[i]->IsVisible() )
 			pGridWin[i]->CheckNeedsRepaint();
 }
-
-
-
-
-

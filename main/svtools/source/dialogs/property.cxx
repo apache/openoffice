@@ -1552,5 +1552,3 @@ IMPL_LINK( ScPropertyDlg, SelectHdl, SvBasicPropertyDataControl*,pProCtr)
 	return 0;
 }
 */
-
-

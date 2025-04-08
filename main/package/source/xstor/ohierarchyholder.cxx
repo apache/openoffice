@@ -354,4 +354,3 @@ void SAL_CALL OHierarchyElement_Impl::reverted( const ::com::sun::star::lang::Ev
 	throw (::com::sun::star::uno::RuntimeException)
 {
 }
-

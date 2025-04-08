@@ -88,4 +88,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TOOLBOXHELPER_HXX
-

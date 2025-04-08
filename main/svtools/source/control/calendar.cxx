@@ -3028,4 +3028,3 @@ void CalendarField::StateChanged( StateChangedType nStateChange )
         GetSubEdit()->SetStyle( ( GetSubEdit()->GetStyle() & ~nAllAlignmentBits ) | nMyAlignment );
 	}
 }
-

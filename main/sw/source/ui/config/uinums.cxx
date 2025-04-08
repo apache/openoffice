@@ -666,4 +666,3 @@ void SwNumRulesWithName::_SwNumFmtGlobal::ChgNumFmt( SwWrtShell& rSh,
 	if( pFmt )
 		((SwNumFmt&)aFmt).SetCharFmt( 0 );
 }
-

@@ -47,5 +47,3 @@ public:
     MainThreadNotificationRequest( const ::rtl::Reference< OleEmbeddedObject >& xObj, sal_uInt16 nNotificationType, sal_uInt32 nAspect = 0 );
 	~MainThreadNotificationRequest();
 };
-
-

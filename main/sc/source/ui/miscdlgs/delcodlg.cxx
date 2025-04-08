@@ -170,6 +170,3 @@ IMPL_LINK_INLINE_END( ScDeleteContentsDlg, DelAllHdl, void *, EMPTYARG )
 __EXPORT ScDeleteContentsDlg::~ScDeleteContentsDlg()
 {
 }
-
-
-

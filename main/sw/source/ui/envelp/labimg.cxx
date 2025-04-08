@@ -493,4 +493,3 @@ void	SwLabCfgItem::Commit()
 	}
 	PutProperties(aNames, aValues);
 }
-

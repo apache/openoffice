@@ -58,6 +58,3 @@ void ParaBulletsPopup::UpdateValueSet ()
 
 
 } } // end of namespace svx::sidebar
-
-
-

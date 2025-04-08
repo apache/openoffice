@@ -421,4 +421,3 @@ unsigned __stdcall DndOleSTAFunc(LPVOID pParams)
 
 	return 0;
 }
-

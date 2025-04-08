@@ -152,4 +152,3 @@ extern "C" int APIENTRY _tWinMain( HINSTANCE _hAppInstance, HINSTANCE, LPTSTR, i
 
 	return 0;
 }
-

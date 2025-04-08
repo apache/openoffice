@@ -51,4 +51,3 @@ public:
 };
 
 #endif // _BLOWFISHCONTEXT_HXX
-

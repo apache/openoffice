@@ -1180,4 +1180,3 @@ void SAL_CALL uno_getRegisteredEnvironments(
 } // extern "C"
 
 }
-

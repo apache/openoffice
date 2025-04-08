@@ -365,4 +365,3 @@ IMPL_LINK( ScDPDateGroupDlg, CheckHdl, SvxCheckListBox*, pListBox )
 }
 
 // ============================================================================
-

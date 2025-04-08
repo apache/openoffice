@@ -70,4 +70,3 @@ inline SvxPaperBinItem &SvxPaperBinItem::operator=(
 }
 
 #endif
-

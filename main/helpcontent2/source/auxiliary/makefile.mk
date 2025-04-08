@@ -94,4 +94,3 @@ $(COMMONBIN)$/helpimg.ilst .PHONY:
 	$(PERL) $(PRJ)$/helpers$/create_ilst.pl -dir=$(SOLARSRC)/default_images/res/helpimg > $@.$(INPATH)
 	$(RENAME) $@.$(INPATH) $@
 	
-

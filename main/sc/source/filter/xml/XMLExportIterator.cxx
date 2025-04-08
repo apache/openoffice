@@ -885,4 +885,3 @@ sal_Bool ScMyNotEmptyCellsIterator::GetNext(ScMyCell& aCell, ScFormatRangeStyles
 	}
 	return bFoundCell;
 }
-

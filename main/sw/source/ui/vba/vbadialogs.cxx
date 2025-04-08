@@ -54,4 +54,3 @@ SwVbaDialogs::getServiceNames()
 	}
 	return aServiceNames;
 }
-

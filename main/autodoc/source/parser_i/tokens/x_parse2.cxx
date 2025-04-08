@@ -51,5 +51,3 @@ X_AutodocParser::GetInfo( std::ostream &     	o_rOutputMedium ) const
 			o_rOutputMedium << "Unknown exception during parsing." << Endl();
 	}
 }
-
-

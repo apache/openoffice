@@ -377,4 +377,3 @@ public abstract class NodeIterator implements Iterator {
         }
     }
 }
-

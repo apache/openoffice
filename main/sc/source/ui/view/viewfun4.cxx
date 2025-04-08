@@ -840,5 +840,3 @@ sal_Bool ScViewFunc::HasBookmarkAtCursor( SvxHyperlinkItem* pContent )
 	}
 	return sal_False;
 }
-
-

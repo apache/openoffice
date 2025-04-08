@@ -532,4 +532,3 @@
 	{ MAP_CHAR_LEN(UNO_NAME_CUSTOMSHAPE_ADJUSTMENT),SDRATTR_CUSTOMSHAPE_ADJUSTMENT,			SEQTYPE(::getCppuType((::com::sun::star::uno::Sequence<sal_Int32>*)0)), 0, 0}, \
 
 #endif
-

@@ -315,4 +315,3 @@ void GroupBox::DataChanged( const DataChangedEvent& rDCEvt )
 		Invalidate();
 	}
 }
-

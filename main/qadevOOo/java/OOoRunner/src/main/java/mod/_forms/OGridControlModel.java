@@ -77,7 +77,7 @@ import com.sun.star.util.XCloseable;
 *  <li> <code>com::sun::star::container::XContainer</code></li>
 * </ul> <p>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 *
 * @see com.sun.star.io.XPersistObject
 * @see com.sun.star.container.XNameReplace
@@ -193,7 +193,7 @@ public class OGridControlModel extends GenericModelTest {
             aControl4 = columns.createColumn("TextField");
             aControl5 = columns.createColumn("TextField");
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             log.println("!!! Couldn't create instance : " + e);
             throw new StatusException("Can't create column instances.", e);
         }
@@ -356,7 +356,7 @@ class OGridControlModelold extends TestCase {
             aControl4 = columns.createColumn("TextField");
             aControl5 = columns.createColumn("TextField");
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             log.println("!!! Couldn't create instance : " + e);
             throw new StatusException("Can't create column instances.", e);
         }

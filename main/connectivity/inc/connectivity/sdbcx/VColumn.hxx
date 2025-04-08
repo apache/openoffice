@@ -111,4 +111,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_COLUMN_HXX_
-

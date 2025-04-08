@@ -1521,4 +1521,3 @@ void ColumnValueSet::DataChanged( const DataChangedEvent& rDCEvt )
     }
     ValueSet::DataChanged( rDCEvt );
 }
-

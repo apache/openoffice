@@ -276,5 +276,3 @@ SwFlyInCntFrm *SwTxtFlyCnt::_GetFlyFrm( const SwFrm *pCurrFrm )
 
 	return pFly;
 }
-
-

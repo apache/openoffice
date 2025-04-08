@@ -1219,4 +1219,3 @@ Reference< XStringResourceManager > LocalizationMgr::getStringResourceFromDialog
 	}
 	return xStringResourceManager;
 }
-

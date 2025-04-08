@@ -262,7 +262,7 @@ private:
     */
     ::std::vector<SdrObjectWeakRef> maMarkListCopy;
 
-    /**  This flag inidcates that only the current view is to be used for
+    /**  This flag indicates that only the current view is to be used for
          searching and spelling.  Automatically switching to other view does
          not take place when this flag is set.
     */
@@ -547,4 +547,3 @@ private:
 } // end of namespace sd
 
 #endif
-

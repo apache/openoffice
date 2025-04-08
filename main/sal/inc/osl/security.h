@@ -71,7 +71,7 @@ oslSecurityError SAL_CALL osl_loginUser(
 
 /** Create a security handle for the denoted user.
 	Try to log in the user on the denoted file server. On success the homedir will be 
-	the maped drive on this server.
+	the mapped drive on this server.
 	@param strUserName [in] denotes the name of the user to logg in.
 	@param strPasswd [in] the password for this user.
 	@param strFileServer [in] denotes the file server on which the user is logged in.
@@ -88,9 +88,9 @@ oslSecurityError SAL_CALL osl_loginUserOnFileServer(
 	oslSecurity *pSecurity
 	);
 
-/** Query if the user who is denotes by this security has administrator rigths.
+/** Query if the user who is denotes by this security has administrator rights.
 	@param Security [in] the security handle for th user.
-	@return True, if the user has adminsitrator rights, otherwise false.
+	@return True, if the user has administrator rights, otherwise false.
 */
 sal_Bool SAL_CALL osl_isAdministrator(oslSecurity Security);
 
@@ -151,4 +151,3 @@ void SAL_CALL osl_unloadUserProfile(oslSecurity Security);
 #endif
 
 #endif	/* _OSL_SECURITY_H_ */
-

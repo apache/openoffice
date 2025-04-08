@@ -58,4 +58,3 @@ public class _XCancellable extends MultiMethodTest {
     }
 
 }  // finish class _XCancellable
-

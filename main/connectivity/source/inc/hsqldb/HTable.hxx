@@ -42,7 +42,7 @@ namespace connectivity
 		{
 			sal_Int32 m_nPrivileges; // we have to set our privileges by our own
 
-			/** executes the statmenmt.
+			/** executes the statement.
 				@param	_rStatement
 					The statement to execute.
 				*/
@@ -121,4 +121,3 @@ namespace connectivity
 	}
 }
 #endif // CONNECTIVITY_HSQLDB_TABLE_HXX
-

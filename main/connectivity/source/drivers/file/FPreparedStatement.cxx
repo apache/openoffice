@@ -626,5 +626,3 @@ void OPreparedStatement::parseParamterElem(const String& _sColumnName,OSQLParseN
 	SetAssignValue(_sColumnName, String(), sal_True, nParameter);
 }
 // -----------------------------------------------------------------------------
-
-

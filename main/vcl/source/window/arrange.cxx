@@ -1068,4 +1068,3 @@ void MatrixArranger::remove( boost::shared_ptr<WindowArranger> const &i_pChild )
         }
     }
 }
-

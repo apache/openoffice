@@ -96,6 +96,3 @@ void ScTabSplitter::SetFixed(sal_Bool bSet)
 	else
 		SetPointer(POINTER_VSPLIT);
 }
-
-
-

@@ -50,4 +50,3 @@ private:
 };
 
 #endif // _IDLC_ASTCONSTANT_HXX_
-

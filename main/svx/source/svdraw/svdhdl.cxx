@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
@@ -279,9 +277,9 @@ const BitmapEx& SdrHdlBitmapSet::GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal
 }
 
 
-SdrHdlBitmapSet& getSimpleSet()
+SdrHdlBitmapSet& getSimpleSet() // redirects to Fine Handles now
 {
-	static vcl::DeleteOnDeinit< SdrHdlBitmapSet > aSimpleSet(new SdrHdlBitmapSet(SIP_SA_MARKERS));
+	static vcl::DeleteOnDeinit< SdrHdlBitmapSet > aSimpleSet(new SdrHdlBitmapSet(SIP_SA_FINE_MARKERS));
 	return *aSimpleSet.get();
 }
 
@@ -2337,9 +2335,9 @@ BitmapEx SdrCropHdl::GetHandlesBitmap( bool bIsFineHdl, bool bIsHighContrast )
 	}
 	else
 	{
-		static BitmapEx* pSimpleBitmap = 0;
+		static BitmapEx* pSimpleBitmap = 0; //redirects to Fine Handles now
 		if( pSimpleBitmap == 0 )
-			pSimpleBitmap = new BitmapEx(ResId(SIP_SA_CROP_MARKERS, *ImpGetResMgr()));
+			pSimpleBitmap = new BitmapEx(ResId(SIP_SA_CROP_FINE_MARKERS, *ImpGetResMgr()));
 		return *pSimpleBitmap;
 	}
 }

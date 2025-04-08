@@ -903,5 +903,3 @@ UNO_INTERFACE(XInterface) EXTERN_SERVICE_CALLTYPE exService_getFactory
 }
 
 }
-
-

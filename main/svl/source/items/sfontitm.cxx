@@ -132,4 +132,3 @@ SvStream & SfxFontItem::Store(SvStream & rStream, sal_uInt16) const
 						  | m_bHasFillColor << 1);
 	return rStream;
 }
-

@@ -5684,4 +5684,3 @@ SvStream& XFillAttrSetItem::Store( SvStream& rStream, sal_uInt16 nItemVersion ) 
 }
 
 // eof
-

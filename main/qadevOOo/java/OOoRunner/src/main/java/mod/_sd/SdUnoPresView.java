@@ -293,4 +293,3 @@ public class SdUnoPresView extends TestCase {
 
 
 } // finish class SdUnoDrawView
-

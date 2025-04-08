@@ -115,4 +115,3 @@ extern LOTUS_ROOT*		pLotusRoot;	// -> Inkarn. in filter.cxx
 // ----------------------------------------------------------------------------
 
 #endif
-

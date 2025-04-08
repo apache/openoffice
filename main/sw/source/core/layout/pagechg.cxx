@@ -2515,4 +2515,3 @@ const SwPageFrm& SwPageFrm::GetFormatPage() const
     }
     return *pRet;
 }
-

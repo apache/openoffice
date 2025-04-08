@@ -327,4 +327,3 @@ Reference< XSingleServiceFactory > XMLSignature_MSCryptImpl :: impl_createFactor
 	//return xFactory ;
 	return ::cppu::createSingleFactory( aServiceManager , impl_getImplementationName() , impl_createInstance , impl_getSupportedServiceNames() ) ;
 }
-

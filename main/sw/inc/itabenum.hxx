@@ -47,4 +47,3 @@ struct SwInsertTableOptions
 
 
 #endif
-

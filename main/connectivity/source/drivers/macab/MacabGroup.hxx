@@ -44,4 +44,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_MACAB_GROUP_HXX_
-

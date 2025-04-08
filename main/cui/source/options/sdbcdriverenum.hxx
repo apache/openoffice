@@ -67,5 +67,3 @@ namespace offapp
 //........................................................................
 
 #endif // _OFFMGR_SDBCDRIVERENUMERATION_HXX_
-
-

@@ -387,5 +387,3 @@ sal_uInt16 IndexBitSet::GetFreeIndex()
   DBG_ASSERT(sal_False, "IndexBitSet enthaelt mehr als USHRT_MAX Eintraege");
   return 0;
 }
-
-

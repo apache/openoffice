@@ -325,7 +325,7 @@ DocumentDigitalSignatures::ImplVerifySignatures(
             // Verify certificate
             //We have patched our version of libxmlsec, so that it does not verify the certificates. This has two
             //reasons. First we want two separate status for signature and certificate. Second libxmlsec calls
-            //CERT_VerifyCertificate (solaris, linux) falsly, so that it always regards the certificate as valid.
+            //CERT_VerifyCertificate (solaris, linux) falsely, so that it always regards the certificate as valid.
             //On Window the checking of the certificate path is buggy. It does name matching (issuer, subject name)
             //to find the parent certificate. It does not take into account that there can be several certificates
             //with the same subject name.
@@ -341,7 +341,7 @@ DocumentDigitalSignatures::ImplVerifySignatures(
             }
             else
             {
-                //We should always be aible to get the certificates because it is contained in the document,
+                //We should always be able to get the certificates because it is contained in the document,
 				//unless the document is damaged so that signature xml file could not be parsed.
                 rSigInfo.CertificateStatus = css::security::CertificateValidity::INVALID;
             }
@@ -509,4 +509,3 @@ Reference< XInterface > DocumentDigitalSignatures_CreateInstance(
 {
 	return (cppu::OWeakObject*) new DocumentDigitalSignatures( rCtx );
 }
-

@@ -239,7 +239,3 @@ void ScHTMLExport::WriteImage( String& rLinkName, const Graphic& rGrf,
 		rStrm << '>' << sNewLine << GetIndentStr();
 	}
 }
-
-
-
-

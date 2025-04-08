@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 #
 # checknewapi - a perl script to check for new API's
@@ -55,13 +55,13 @@ $published = 0;
 $typeclass = "";
 while (<FILEIN>)
 {
-    if ($first == 0) 
+    if ($first == 0)
     {
-		if ( $linebefore =~ m#type class: published (.+)# ) 
+		if ( $linebefore =~ m#type class: published (.+)# )
 		{
 			$published = 1;
 			$typeclass = $1;
-		} elsif ( $linebefore =~ m#type class: (.+)# ) 
+		} elsif ( $linebefore =~ m#type class: (.+)# )
 		{
 			$published = 0;
 			$typeclass = $1;
@@ -70,12 +70,12 @@ while (<FILEIN>)
 			$published = 0;
 			$typeclass = "";
 		}
-	} else 
+	} else
     {
 		$first = 0;
     }
 
-    if ( (!$typeclass eq "") && ($_ =~ m# *type name: \"([^\[.]+)\"#) ) 
+    if ( (!$typeclass eq "") && ($_ =~ m# *type name: \"([^\[.]+)\"#) )
     {
 		if ($DEBUG == 1)
 		{
@@ -108,13 +108,13 @@ $published = 0;
 $typeclass = "";
 while (<FILEIN>)
 {
-    if ($first == 0) 
+    if ($first == 0)
     {
-		if ( $linebefore =~ m#type class: published (.+)# ) 
+		if ( $linebefore =~ m#type class: published (.+)# )
 		{
 			$published = 1;
 			$typeclass = $1;
-		} elsif ( $linebefore =~ m#type class: (.+)# ) 
+		} elsif ( $linebefore =~ m#type class: (.+)# )
 		{
 			$published = 0;
 			$typeclass = $1;
@@ -123,12 +123,12 @@ while (<FILEIN>)
 			$published = 0;
 			$typeclass = "";
 		}
-	} else 
+	} else
     {
 		$first = 0;
     }
 
-    if ( (!$typeclass eq "") && ($_ =~ m# *type name: \"([^\[.]+)\"#) ) 
+    if ( (!$typeclass eq "") && ($_ =~ m# *type name: \"([^\[.]+)\"#) )
     {
 		if ($DEBUG == 1)
 		{
@@ -137,12 +137,12 @@ while (<FILEIN>)
 	    if ( ! exists $main::reftypes->{$1} )
 	    {
 			$main::reftypes->{$1}++;
-			
+
 			if ( exists $main::currenttypes->{$1} )
 			{
 				$main::currenttypes->{$1}->{COUNT}++;
 #				print "###### $main::currenttypes->{$1}->{PUBLISHED} $main::currenttypes->{$1}->{TYPECLASS} $main::currenttypes->{$1}->{COUNT}\n";
-			} else 
+			} else
 			{
 				if ($published == 0)
 				{
@@ -150,7 +150,7 @@ while (<FILEIN>)
 												  TYPECLASS => $typeclass };
 				} else
 				{
-					print "ERROR: type $1 is only in reference type library, this can't be happen\n"; 
+					print "ERROR: type $1 is only in reference type library, this can't be happen\n";
 				}
 			}
 	    }
@@ -175,7 +175,7 @@ foreach $i ( sort @typekeys )
 		$newunotypes++;
 		my $t = $i;
 		$t =~ s#/#\.#go;
-		if ($main::currenttypes->{$i}->{PUBLISHED} == 1) 
+		if ($main::currenttypes->{$i}->{PUBLISHED} == 1)
 		{
 			print "published ";
 			$newpublished++;
@@ -183,7 +183,7 @@ foreach $i ( sort @typekeys )
 		if ( $t =~ m#drafts\.com.+#)
 		{
 			$draftscount++;
-			if ($main::currenttypes->{$i}->{PUBLISHED} == 1) 
+			if ($main::currenttypes->{$i}->{PUBLISHED} == 1)
 			{
 				$draftspublished++;
 			}

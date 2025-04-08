@@ -50,7 +50,7 @@ import com.sun.star.text.XTextDocument;
  *  <li> <code>'TEXTDOC'</code> (of type <code>XTextDocument</code>):
  *   is used to insert text to document to fill at least two pages. </li>
  * <ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.text.XPageCursor
  */
 public class _XPageCursor extends MultiMethodTest {
@@ -164,4 +164,3 @@ public class _XPageCursor extends MultiMethodTest {
         tRes.tested("jumpToStartOfPage()", oObj.jumpToStartOfPage());
     }
 }  // finish class _XPageCursor
-

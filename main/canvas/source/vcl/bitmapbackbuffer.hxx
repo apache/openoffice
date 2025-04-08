@@ -97,4 +97,3 @@ namespace vclcanvas
 }
 
 #endif /* #ifndef _VCLCANVAS_BITMAPBACKBUFFER_HXX_ */
-

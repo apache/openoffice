@@ -263,4 +263,3 @@ public:
 };
 
 #endif //_SVDOASHP_HXX
-

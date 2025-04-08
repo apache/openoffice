@@ -235,4 +235,3 @@ public:
 } // namespace inprocserv
 
 #endif
-

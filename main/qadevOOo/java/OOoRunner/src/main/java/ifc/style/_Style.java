@@ -46,5 +46,3 @@ public class _Style extends MultiPropertyTest {
     }
     
 }  // finish class _Style
-
-

@@ -103,4 +103,3 @@ private:
 }
 
 #endif	// _VOS_REFERNCE_HXX_
-

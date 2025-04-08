@@ -43,7 +43,7 @@ enum E_BlockType
     dbt_singleline
 };
 
-/** Type of documentation text: with html or without.
+/** Type of documentation text: with HTML or without.
 */
 enum E_TextType
 {

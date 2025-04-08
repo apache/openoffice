@@ -1091,4 +1091,3 @@ void SwSrcEditWindow::SetTextEncoding(rtl_TextEncoding eEncoding)
     eSourceEncoding = eEncoding;
     SetFont();
 }
-

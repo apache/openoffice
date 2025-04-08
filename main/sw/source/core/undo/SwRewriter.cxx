@@ -71,4 +71,3 @@ String SwRewriter::Apply(const String & rStr) const
 
     return aResult;
 }
-

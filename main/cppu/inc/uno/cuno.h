@@ -43,4 +43,3 @@
 typedef sal_Int32 cuno_ErrorCode;
 
 #endif
-

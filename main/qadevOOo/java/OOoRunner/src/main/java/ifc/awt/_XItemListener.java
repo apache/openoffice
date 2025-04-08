@@ -45,7 +45,7 @@ import com.sun.star.awt.XItemListener;
 *   added to the object tested for checking
 *   <code> itemStateChanged()</code> method call. </li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XItemListener
 */
 public class _XItemListener extends MultiMethodTest {
@@ -111,5 +111,3 @@ public class _XItemListener extends MultiMethodTest {
     }
 
 }
-
-

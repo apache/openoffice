@@ -481,4 +481,3 @@ namespace dbaui
 }
 
 #endif // _SBA_MULTIPLEXER_HXX
-

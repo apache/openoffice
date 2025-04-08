@@ -82,5 +82,3 @@ namespace connectivity
 
 }
 #endif //_CONNECTIVITY_ODBC_ODRIVER_HXX_
-
-

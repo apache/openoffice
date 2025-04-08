@@ -66,4 +66,3 @@ namespace svt
 } // namespace svt
 
 #endif  // _STDCTRL_HXX
-

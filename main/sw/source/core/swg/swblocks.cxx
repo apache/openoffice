@@ -810,5 +810,3 @@ void SwTextBlocks::SetBaseURL( const String& rURL )
     if(pImp)
         pImp->SetBaseURL(rURL);
 }
-
-

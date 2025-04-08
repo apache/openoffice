@@ -129,4 +129,3 @@ private:
 
 
 #endif // SC_CONSDLG_HXX
-

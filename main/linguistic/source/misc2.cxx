@@ -295,5 +295,3 @@ String SearchFileInPaths(
 
 
 }   // namespace linguistic
-
-

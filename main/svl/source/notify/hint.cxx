@@ -38,6 +38,3 @@ TYPEINIT0(SfxHint);
 SfxHint::~SfxHint()
 {
 }
-
-
-

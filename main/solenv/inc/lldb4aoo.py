@@ -119,4 +119,3 @@ def getinfo_for__ByteStringData( valobj, dict):
 
 def getinfo_for__UniStringData( valobj, dict):
 	return ret_strdata_info( valobj, 'mnRefCount', 'mnLen', 'maStr') 
-

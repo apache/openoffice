@@ -259,5 +259,3 @@ Reference< XResultSet > SAL_CALL OFlatDatabaseMetaData::getColumns(
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sdbc:flat:")) + m_pConnection->getURL();
 }
 // -----------------------------------------------------------------------------
-
-

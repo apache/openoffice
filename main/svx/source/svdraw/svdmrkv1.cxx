@@ -717,4 +717,3 @@ const Rectangle& SdrMarkView::GetMarkedGluePointsRect() const
 	if (bMarkedPointsRectsDirty) ImpSetPointsRects();
 	return aMarkedGluePointsRect;
 }
-

@@ -199,4 +199,3 @@ public class PixelCounter {
 
 }
  
-

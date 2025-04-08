@@ -170,4 +170,3 @@ public:
 };
 
 #endif // _SVTOOLS_CENUMITM_HXX
-

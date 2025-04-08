@@ -200,6 +200,3 @@ SvStream& RTFOutFuncs::Out_Hex( SvStream& rStream, sal_uLong nHex, sal_uInt8 nLe
 	}
 	return rStream << pStr;
 }
-
-
-

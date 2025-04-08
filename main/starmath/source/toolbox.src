@@ -27,7 +27,6 @@
 #define IMAGE_STDBTN_COLOR Color { Red = 0xff00; Green = 0x0000; Blue = 0xff00; }
 #define IMAGE_STDBTN_COLOR_HC IMAGE_STDBTN_COLOR
 
-
 FloatingWindow RID_TOOLBOXWINDOW
 {
 	HelpId = HID_SMA_OPERATOR_WIN ;
@@ -888,7 +887,7 @@ FloatingWindow RID_TOOLBOXWINDOW
 
 	ToolBox TOOLBOX_CAT_F
 	{
-		// attributs
+		// attributes
 		HelpId = HID_SMA_ATTRIBUTES_TBX ;
 		Pos = MAP_APPFONT ( 0, 45 ) ;
 		Size = MAP_APPFONT ( 65, 95 ) ;
@@ -1231,7 +1230,7 @@ FloatingWindow RID_TOOLBOXWINDOW
 			{
 				Identifier = RID_CSUPX ;
 				HelpId = HID_SMA_CSUPX ;
-				Text [ en-US ] = "Superscript Top";
+				Text [ en-US ] = "Superscript Top" ;
 			};
 			ToolBoxItem
 			{

@@ -1456,4 +1456,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL SAXEventKeeperImpl::getSupportedService
 {
 	return SAXEventKeeperImpl_getSupportedServiceNames();
 }
-

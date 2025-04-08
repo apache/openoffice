@@ -173,4 +173,3 @@ sal_Int64 SAL_CALL OInputSeekStream::getLength()
 
 	return m_xSeekable->getLength();
 }
-

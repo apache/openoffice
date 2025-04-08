@@ -71,5 +71,3 @@ void ScLinkConfigItem::Commit()
 {
 	aCommitLink.Call( this );
 }
-
-

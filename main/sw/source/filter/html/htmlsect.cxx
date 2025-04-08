@@ -853,4 +853,3 @@ void SwHTMLParser::MovePageDescAttrs( SwNode *pSrcNd,
 		}
 	}
 }
-

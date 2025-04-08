@@ -188,4 +188,3 @@ IMPL_LINK( SwDocStatPage, UpdateHdl, PushButton*, EMPTYARG)
 	//pButton->Disable();
 	return 0;
 }
-

@@ -167,4 +167,3 @@ public class _MailMerge extends MultiPropertyTest {
 
 
 } //finish class _MailMerge
-

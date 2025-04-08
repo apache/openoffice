@@ -842,6 +842,3 @@ void SwView::StateSearch(SfxItemSet &rSet)
 		nWhich = aIter.NextWhich();
 	}
 }
-
-
-

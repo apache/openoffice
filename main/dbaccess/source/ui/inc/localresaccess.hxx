@@ -39,7 +39,7 @@ namespace dbaui
 //=========================================================================
 //= LocalResourceAccess
 //=========================================================================
-/** helper class for acessing local resources
+/** helper class for accessing local resources
 */
 typedef ::svt::OLocalResourceAccess LRA_Base;
 class LocalResourceAccess : protected LRA_Base
@@ -57,4 +57,3 @@ public:
 //.........................................................................
 
 #endif // _DBAUI_LOCALRESACCESS_HXX_
-

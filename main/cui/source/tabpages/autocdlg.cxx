@@ -2884,4 +2884,3 @@ void OfaSmartTagOptionsTabPage::ActivatePage( const SfxItemSet& )
 {
 	((OfaAutoCorrDlg*)GetTabDialog())->EnableLanguage( sal_False );
 }
-

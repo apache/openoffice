@@ -259,7 +259,7 @@ Sequence< css::uno::Reference< XFrame > > SAL_CALL OFrames::queryFrames( sal_Int
 	// Else; Do nothing! Our owner is dead.
 	LOG_ASSERT( !(xOwner.is()==sal_False), "OFrames::queryFrames()\nOur owner is dead - you can't query for frames ...!\n" )
 
-	// Resturn result of this operation.
+	// Return result of this operation.
 	return seqFrames;
 }
 
@@ -428,7 +428,7 @@ void OFrames::impl_appendSequence(			Sequence< css::uno::Reference< XFrame > >&	
 
 //*****************************************************************************************************************
 // An instance of this class can only work with valid initialization.
-// We share the mutex with our owner class, need a valid factory to instanciate new services and
+// We share the mutex with our owner class, need a valid factory to instantiate new services and
 // use the access to our owner for some operations.
 sal_Bool OFrames::impldbg_checkParameter_OFramesCtor(	const	css::uno::Reference< XMultiServiceFactory >&	xFactory		,
 														const	css::uno::Reference< XFrame >&				xOwner			,

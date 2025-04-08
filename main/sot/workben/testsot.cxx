@@ -48,4 +48,3 @@ int main (int argc, sal_Char **argv)
 */
 	return 0;
 }
-

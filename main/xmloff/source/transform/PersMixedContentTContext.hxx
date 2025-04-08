@@ -62,4 +62,3 @@ public:
 };
 
 #endif	//  _XMLOFF_PERSMIXEDCONTENTTCONTEXT_HXX
-

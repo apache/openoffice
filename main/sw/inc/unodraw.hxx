@@ -345,5 +345,3 @@ public:
     virtual sal_Bool SAL_CALL hasElements(  ) throw(::com::sun::star::uno::RuntimeException);
 };
 #endif
-
-

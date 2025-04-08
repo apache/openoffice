@@ -96,6 +96,3 @@ sal_Int32 ElementMark::getBufferId() const
 {
 	return m_nBufferId;
 }
-
-
-

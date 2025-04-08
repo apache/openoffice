@@ -274,4 +274,3 @@ template <> SC_DLLPUBLIC long ScRefHdlrImplBase<SfxTabDialog,false>::PreNotify( 
 
 //<!--Added by PengYunQuan for Validity Cell Range Picker
 #endif // SC_ANYREFDG_HXX
-

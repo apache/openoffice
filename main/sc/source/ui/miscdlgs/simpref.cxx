@@ -250,4 +250,3 @@ IMPL_LINK( ScSimpleRefDlg, CancelBtnHdl, void *, EMPTYARG )
 
 
 //------------------------------------------------------------------------
-

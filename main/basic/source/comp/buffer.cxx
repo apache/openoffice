@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
@@ -31,7 +29,7 @@
 const static sal_uInt32 UP_LIMIT=0xFFFFFF00L;
 
 // Der SbiBuffer wird in Inkrements von mindestens 16 Bytes erweitert.
-// Dies ist notwendig, da viele Klassen von einer Pufferlaenge
+// Dies ist notwendig, da viele Klassen von einer Pufferlänge
 // von x*16 Bytes ausgehen.
 
 SbiBuffer::SbiBuffer( SbiParser* p, short n )
@@ -52,7 +50,7 @@ SbiBuffer::~SbiBuffer()
 }
 
 // Rausreichen des Puffers
-// Dies fuehrt zur Loeschung des Puffers!
+// Dies führt zur Löschung des Puffers!
 
 char* SbiBuffer::GetBuffer()
 {
@@ -63,7 +61,7 @@ char* SbiBuffer::GetBuffer()
 }
 
 // Test, ob der Puffer n Bytes aufnehmen kann.
-// Im Zweifelsfall wird er vergroessert
+// Im Zweifelsfall wird er vergrössert
 
 sal_Bool SbiBuffer::Check( sal_uInt16 n )
 {
@@ -96,7 +94,7 @@ sal_Bool SbiBuffer::Check( sal_uInt16 n )
 	return sal_True;
 }
 
-// Angleich des Puffers auf die uebergebene Byte-Grenze
+// Angleich des Puffers auf die übergebene Byte-Grenze
 
 void SbiBuffer::Align( sal_Int32 n )
 {
@@ -132,7 +130,7 @@ void SbiBuffer::Patch( sal_uInt32 off, sal_uInt32 val )
 }
 
 // Forward References auf Labels und Prozeduren
-// bauen eine Kette auf. Der Anfang der Kette ist beim uebergebenen
+// bauen eine Kette auf. Der Anfang der Kette ist beim übergebenen
 // Parameter, das Ende der Kette ist 0.
 
 void SbiBuffer::Chain( sal_uInt32 off )
@@ -147,7 +145,7 @@ void SbiBuffer::Chain( sal_uInt32 off )
 		{
 			ip = (sal_uInt8*) pBuf + i;
 			sal_uInt8* pTmp = ip;
-             		i =  *pTmp++; i |= *pTmp++ << 8; i |= *pTmp++ << 16; i |= *pTmp++ << 24;
+				i =  *pTmp++; i |= *pTmp++ << 8; i |= *pTmp++ << 16; i |= *pTmp++ << 24;
 
 			if( i >= nOff )
 			{
@@ -207,7 +205,7 @@ sal_Bool SbiBuffer::operator +=( sal_uInt32 n )
 		if ( operator +=( n1 ) && operator +=( n2 ) )
 			return sal_True;
 		return sal_True;
-	} 
+	}
 	return sal_False;
 }
 
@@ -215,7 +213,6 @@ sal_Bool SbiBuffer::operator +=( sal_Int32 n )
 {
 	return operator +=( (sal_uInt32) n );
 }
-
 
 sal_Bool SbiBuffer::operator +=( const String& n )
 {
@@ -242,5 +239,4 @@ sal_Bool SbiBuffer::Add( const void* p, sal_uInt16 len )
 	} else return sal_False;
 }
 
-
-
+/* vim: set noet sw=4 ts=4: */

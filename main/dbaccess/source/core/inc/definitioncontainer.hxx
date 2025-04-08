@@ -171,7 +171,7 @@ protected:
 
 protected:
     /** Additionally to our own approvals which new elements must pass, derived classes
-        can specifiy an additional approval instance here.
+        can specify an additional approval instance here.
 
         Every time a new element is inserted into the container (or an element is replaced
         with a new one), this new element must pass our own internal approval, plus the approval
@@ -256,7 +256,7 @@ protected:
 
 	/** create a object from it's persistent data within the configuration. To be overwritten by derived classes.
 		@param		_rName			the name the object has within the container
-		@return						the newly created object or an empty reference if somthing went wrong
+		@return						the newly created object or an empty reference if something went wrong
 	*/
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XContent > createObject(
 		const ::rtl::OUString& _rName) = 0;
@@ -368,4 +368,3 @@ private:
 //........................................................................
 
 #endif // _DBA_CORE_DEFINITIONCONTAINER_HXX_
-

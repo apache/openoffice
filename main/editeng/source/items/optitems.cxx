@@ -195,5 +195,3 @@ SvStream& SfxHyphenRegionItem::Store( SvStream& rStrm, sal_uInt16 ) const
 		  << (sal_uInt8) GetMinTrail();
 	return rStrm;
 }
-
-

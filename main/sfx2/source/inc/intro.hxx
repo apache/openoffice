@@ -47,5 +47,3 @@ public:
 };
 
 #endif // #ifndef _SFX_INTRO_HXX
-
-

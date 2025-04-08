@@ -55,6 +55,3 @@ void ScUnoConversion::FillLocale( lang::Locale& rLocale, LanguageType eLang )
 {
     MsLangId::convertLanguageToLocale( eLang, rLocale );
 }
-
-
-

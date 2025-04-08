@@ -245,4 +245,3 @@ void Client::MakeVisible()
 }
 
 } // end of namespace sd
-

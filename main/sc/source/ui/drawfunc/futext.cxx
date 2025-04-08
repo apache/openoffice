@@ -884,4 +884,3 @@ SdrObject* FuText::CreateDefaultObject(const sal_uInt16 nID, const Rectangle& rR
 
 	return pObj;
 }
-

@@ -50,4 +50,3 @@ public class _XSheetCellRange extends MultiMethodTest {
     }
 
 } // EOC _XSheetCellRange
-

@@ -85,5 +85,3 @@ namespace connectivity
 
 }
 #endif //_CONNECTIVITY_ADO_ADRIVER_HXX_
-
-

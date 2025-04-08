@@ -141,4 +141,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_TABLE_HXX_
-

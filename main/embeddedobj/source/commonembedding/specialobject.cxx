@@ -238,4 +238,3 @@ void SAL_CALL OSpecialEmbeddedObject::doVerb( sal_Int32 nVerbID )
     else
         OCommonEmbeddedObject::doVerb( nVerbID );
 }
-

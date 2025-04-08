@@ -509,7 +509,7 @@ void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::f
     {
         xLayoutManager->lock();
         xLayoutManager->createElement( DECLARE_ASCII( "private:resource/menubar/menubar"     ));
-        /* #i85963# new backing window comes withoud standard bar and statusbar
+        /* #i85963# new backing window comes without standard bar and statusbar
         xLayoutManager->createElement( DECLARE_ASCII( "private:resource/toolbar/standardbar" ));
         xLayoutManager->createElement( DECLARE_ASCII( "private:resource/statusbar/statusbar" ));
         xLayoutManager->showElement  ( DECLARE_ASCII( "private:resource/toolbar/standardbar" ));
@@ -611,7 +611,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL BackingComp::getFrame()
 
 /** ask controller for its current working state.
 
-    If somehwere wishes to close this component, it must suspend the controller before.
+    If somewhere wishes to close this component, it must suspend the controller before.
     That will be a chance for it to disagree with that AND show any UI for a possible
     UI user.
 

@@ -46,4 +46,3 @@ namespace framework
 //........................................................................
 
 #endif // _FRAMEWORK_HELPER_TIMERHELPER_HXX_
-

@@ -2,7 +2,7 @@
 #########################################################################
 
  #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -56,7 +56,7 @@ $em_script_home = $ENV{'EM_SCRIPT_HOME'};
 #
 
 # convert_to_pdb
-# directory  - directory containing the xml-orig and pdb-orig 
+# directory  - directory containing the xml-orig and pdb-orig
 #              subdirectories.
 # file       - file to convert
 # extension  - extension of file to convert (sxw or sxc)
@@ -223,10 +223,10 @@ sub convert_to_xml
       &start_rd($convert_from, $extension, $pdbfile,
         "$xmldir/$output.$extension");
 
-      
+
       # No need to move the file to the $xmldir since the merge
       # argument specifies the output file.
-      
+
       my $check_stamp_update = (stat("$xmldir/$output.$extension"))[9];
       if ($check_stamp eq $check_stamp_update)
       {
@@ -239,7 +239,7 @@ sub convert_to_xml
       &start_rd($convert_from, $extension, $pdbfile, "");
 
       print "Moving $output.$extension to $xmldir\n";
-      `mv $output.$extension $xmldir`;   
+      `mv $output.$extension $xmldir`;
       `chmod 666 $xmldir/$output.$extension`;
     }
   }
@@ -254,7 +254,7 @@ sub convert_to_xml
 # to    - format to convert to
 # file  - file to convert
 # merge - merge filename ("" indicates convert-only with no merge)
-# 
+#
 # converts file from/to the specified formats.
 #
 sub start_rd
@@ -329,7 +329,7 @@ sub close_connection
 # pose_exe  - name of pose executable.
 # apps_load - The PRC files to load into pose, can be a comma
 #             separated list.
-# run_prog  - Program to run at startup. 
+# run_prog  - Program to run at startup.
 # timeout   - Timeout value to use when starting pose.
 #
 # Starts the Palm OS Emulator, loads PRC files, and starts
@@ -405,7 +405,7 @@ sub start_pose
      &open_connection(1);
      print "\nChecking if the appropriate window is on screen...\n";
   }
-  
+
   # Stop looping when the specified window has started.
   #
   for ($i=0; $i < $timeout && $stay_in_loop == 1; $i++)
@@ -575,7 +575,7 @@ sub quickword_press_write_protect
           &print_debug("    top    = $bounds{top}\n");
           &print_debug("    bottom = $bounds{bottom}\n");
        }
-       
+
        # For some reason, the tapping of the write-protect button
        # doesn't work unless you tap somewhere else first.
        #
@@ -594,14 +594,14 @@ sub quickword_press_write_protect
 #
 # Uses QuickWord's find/replace utility to replace
 # one string with another.
-# 
+#
 sub quickword_find_replace
 {
   my $from_string = $_[0];
   my $to_string   = $_[1];
 
   &enter_func("quickword_find_replace");
- 
+
   # Move cursor to beginning...
   #
   &quickword_tap_at_top(1);
@@ -730,12 +730,12 @@ sub minicalc_enter_cell
   }
 
   # Tap pen on home button to start with row=1, col=A
-  # at top left.  
+  # at top left.
   #
   pose_tap_pen(1, 1, 3);
 
   # Now the cell should be in the top-left corner,
-  # so click there.  However we must first click 
+  # so click there.  However we must first click
   # in another cell or pose doesn't acknowledge the
   # click.
   #
@@ -863,7 +863,7 @@ sub enter_string_at_location
      }
   }
 
-  # Just to make sure the offset isn't outside the 
+  # Just to make sure the offset isn't outside the
   # proper area.
   #
   if ($x >= 100)
@@ -885,10 +885,10 @@ sub enter_string_at_location
 # x      - x-location to tap
 # y      - y-location to tap
 # offset - x-offset to use for first tap.
-# 
+#
 # For some reason, pose does not register a single
 # pen tap if the last single pen tap was also
-# at the same x,y coordinate (even if the last tap 
+# at the same x,y coordinate (even if the last tap
 # was a while ago).  So this function does two
 # slightly different pen taps to ensure then pen
 # tap happens.
@@ -922,7 +922,7 @@ sub enter_string
   my $j;
 
   &enter_func("enter_string");
-  
+
   if ($global_debug)
   {
      # Display in_string so \n and \t values
@@ -1167,4 +1167,3 @@ sub print_debug
 }
 
 1;
-

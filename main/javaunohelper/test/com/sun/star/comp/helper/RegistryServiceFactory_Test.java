@@ -93,4 +93,3 @@ public class RegistryServiceFactory_Test {
 		System.exit( test(args[0]) == true ? 0: -1 );		
 	}
 }
-

@@ -105,4 +105,3 @@ namespace dbaui
 } // namespace dbaui
 // .............................................................
 #endif // DBAUI_APPSWAPWINDOW_HXX
-

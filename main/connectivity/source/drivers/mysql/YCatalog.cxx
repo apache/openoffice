@@ -166,5 +166,3 @@ Sequence< Type > SAL_CALL OMySQLCatalog::getTypes(  ) throw(RuntimeException)
 	return Sequence< Type >(pTypes, aOwnTypes.size());
 }
 // -----------------------------------------------------------------------------
-
-

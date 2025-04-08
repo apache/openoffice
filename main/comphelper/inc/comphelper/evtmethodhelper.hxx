@@ -31,4 +31,3 @@ namespace comphelper
 }
 
 #endif // COMPHELPER_EVENTMETHODHELPER_HXX
-

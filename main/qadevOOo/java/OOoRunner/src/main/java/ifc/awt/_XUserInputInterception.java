@@ -58,7 +58,7 @@ import util.AccessibilityTools;
 *  <li> <code>'XUserInputInterception.XModel'</code> (of type <code>XModel</code>):
 *   used as model where a mouse click or a key press could be done </li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XUserInputInterception
 */
 public class _XUserInputInterception extends MultiMethodTest {
@@ -532,4 +532,3 @@ public class _XUserInputInterception extends MultiMethodTest {
         final public static int KEY_TEXT_INTO_DOC = 2;
     }   
 }
-

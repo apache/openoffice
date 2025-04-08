@@ -42,7 +42,7 @@ import com.sun.star.uno.XInterface;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.ucb.XSortedDynamicResultSetFactory
  * @see ifc.ucb._XSortedDynamicResultSetFactory
@@ -76,4 +76,3 @@ public class SortedDynamicResultSetFactory extends TestCase {
         return tEnv;
     }
 }
-

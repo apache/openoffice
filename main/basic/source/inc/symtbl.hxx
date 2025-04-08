@@ -196,7 +196,7 @@ class SbiProcDef : public SbiSymDef {	// Prozedur-Definition (aus Basic):
 	String maPropName;				// Property name if property procedure (!= proc name)
 	sal_Bool   bCdecl  : 1;				// sal_True: CDECL angegeben
 	sal_Bool   bPublic : 1;				// sal_True: proc ist PUBLIC
-	sal_Bool   mbProcDecl : 1;			// sal_True: instanciated by SbiParser::ProcDecl
+	sal_Bool   mbProcDecl : 1;			// sal_True: instantiated by SbiParser::ProcDecl
 public:
 	SbiProcDef( SbiParser*, const String&, sal_Bool bProcDecl=false );
 	virtual ~SbiProcDef();
@@ -246,4 +246,3 @@ public:
 
 
 #endif
-

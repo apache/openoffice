@@ -685,4 +685,3 @@ public:
 };
 
 #endif
-

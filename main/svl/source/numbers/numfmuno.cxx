@@ -1132,5 +1132,3 @@ uno::Sequence<rtl::OUString> SAL_CALL SvNumberFormatSettingsObj::getSupportedSer
 	pArray[0] = rtl::OUString::createFromAscii(SERVICENAME_NUMBERSETTINGS);
 	return aRet;
 }
-
-

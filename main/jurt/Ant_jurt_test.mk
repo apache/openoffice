@@ -24,4 +24,3 @@
 $(eval $(call gb_Ant_Ant,jurt-test,$(SRCDIR)/jurt/java/jurt-test/build.xml))
 
 # vim: set noet sw=4 ts=4:
-

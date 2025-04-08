@@ -201,4 +201,3 @@ PackageManagerFactoryImpl::getPackageManager( OUString const & context )
 
 } // namespace factory
 } // namespace dp_manager
-

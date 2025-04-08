@@ -72,4 +72,3 @@ namespace abp
 //.........................................................................
 
 #endif // EXTENSIONS_ABP_ADDRESSSETTINGS_HXX
-

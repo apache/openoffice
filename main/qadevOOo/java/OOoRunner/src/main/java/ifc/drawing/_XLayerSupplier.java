@@ -36,7 +36,7 @@ import com.sun.star.uno.UnoRuntime;
 * <ul>
 *  <li><code> getLayerManager()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.drawing.XLayerSupplier
 */
 public class _XLayerSupplier extends MultiMethodTest{
@@ -63,4 +63,3 @@ public class _XLayerSupplier extends MultiMethodTest{
     } // finished test
 
 } // end XLayerSupplier
-

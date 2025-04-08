@@ -399,4 +399,3 @@ SvXMLImportContext* XMLSectionImportContext::CreateChildContext(
 
 	return pContext;
 }
-

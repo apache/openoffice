@@ -567,4 +567,3 @@ public:
 };
 
 #endif // #ifndef _SFX_DINFDLG_HXX
-

@@ -49,5 +49,3 @@ private:
 
 
 #endif
-
-

@@ -380,4 +380,3 @@ public:
 };
 
 #endif
-

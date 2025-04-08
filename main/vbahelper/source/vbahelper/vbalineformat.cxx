@@ -447,5 +447,3 @@ ScVbaLineFormat::getServiceNames()
 	}
 	return aServiceNames;
 }
-
-

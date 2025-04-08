@@ -48,4 +48,3 @@ namespace frm
 //.........................................................................
 
 #endif // FORMS_COMPONENT_CLONEABLE_HXX
-

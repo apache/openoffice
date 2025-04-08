@@ -73,4 +73,3 @@ public:
 
 
 #endif // SD_TABTEMPL_HXX
-

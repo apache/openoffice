@@ -53,4 +53,3 @@ class FuEditPoints : public FuDraw
 
 
 #endif		// _SD_FUEDIPO_HXX
-

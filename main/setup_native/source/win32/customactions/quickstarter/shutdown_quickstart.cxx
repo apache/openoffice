@@ -72,4 +72,3 @@ extern "C" UINT __stdcall ShutDownQuickstarter( MSIHANDLE hMSI )
 
     return ERROR_SUCCESS;
 }
-

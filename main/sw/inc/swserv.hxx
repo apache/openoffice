@@ -86,4 +86,3 @@ SV_DECL_REF( SwServerObject )
 #endif
 
 #endif  // _SWSERV_HXX
-

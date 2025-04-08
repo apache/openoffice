@@ -33,23 +33,22 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150772">
 <bookmark_value>CDate function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3150772" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03100300.xhp" name="CDate Function [Runtime]">CDate Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3150986" xml-lang="en-US" l10n="U" oldref="2">Converts any string or numeric expression to a date value.</paragraph>
+<paragraph role="heading" id="hd_id3150772" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03100300.xhp" name="CDate Function [Runtime]">CDate Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150986" xml-lang="en-US" l10n="U">Converts any string or numeric expression to a date value.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3148944" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3148947" xml-lang="en-US" l10n="U" oldref="4">CDate (Expression)</paragraph>
-<paragraph role="heading" id="hd_id3148552" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U" oldref="6">Date</paragraph>
-<paragraph role="heading" id="hd_id3153525" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Expression:</emph> Any string or numeric expression that you want to convert.</paragraph>
-<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U" oldref="9">When you convert a string expression, the date and time must be entered in the format MM.DD.YYYY HH.MM.SS, as defined by the <emph>DateValue</emph> and <emph>TimeValue</emph> function conventions. In numeric expressions, values to the left of the decimal represent the date, beginning from December 31, 1899. Values to the right of the decimal represent the time.</paragraph>
+<paragraph role="heading" id="hd_id3148944" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3148947" xml-lang="en-US" l10n="U">CDate (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3148552" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3159414" xml-lang="en-US" l10n="U">Date</paragraph>
+<paragraph role="heading" id="hd_id3153525" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="U"><emph>Expression:</emph> Any string or numeric expression that you want to convert.</paragraph>
+<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U">When you convert a string expression, the date and time must be entered in the format MM.DD.YYYY HH.MM.SS, as defined by the <emph>DateValue</emph> and <emph>TimeValue</emph> function conventions. In numeric expressions, values to the left of the decimal represent the date, beginning from December 31, 1899. Values to the right of the decimal represent the time.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3156422" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U" oldref="11">sub ExampleCDate</paragraph>
-<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U" oldref="12">MsgBox cDate(1000.25) REM 09.26.1902 06:00:00</paragraph>
-<paragraph role="paragraph" id="par_id3155133" xml-lang="en-US" l10n="U" oldref="13">MsgBox cDate(1001.26) REM 09.27.1902 06:14:24</paragraph>
-<paragraph role="paragraph" id="par_id3153140" xml-lang="en-US" l10n="U" oldref="14">end sub</paragraph>
+<paragraph role="heading" id="hd_id3156422" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153969" xml-lang="en-US" l10n="U">sub ExampleCDate</paragraph>
+<paragraph role="paragraph" id="par_id3159254" xml-lang="en-US" l10n="U">MsgBox cDate(1000.25) REM 09.26.1902 06:00:00</paragraph>
+<paragraph role="paragraph" id="par_id3155133" xml-lang="en-US" l10n="U">MsgBox cDate(1001.26) REM 09.27.1902 06:14:24</paragraph>
+<paragraph role="paragraph" id="par_id3153140" xml-lang="en-US" l10n="U">end sub</paragraph>
 </body>
 </helpdocument>

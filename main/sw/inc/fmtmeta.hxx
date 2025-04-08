@@ -221,4 +221,3 @@ public:
 } // namespace sw
 
 #endif // SW_FMTMETA_HXX
-

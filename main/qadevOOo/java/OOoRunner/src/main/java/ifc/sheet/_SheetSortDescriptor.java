@@ -140,5 +140,3 @@ public class _SheetSortDescriptor extends MultiMethodTest {
 
 
 }  // finish class _SheetSortDescriptor
-
-

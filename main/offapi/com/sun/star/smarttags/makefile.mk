@@ -45,19 +45,3 @@ IDLFILES=\
 
 .INCLUDE :  target.mk
 .INCLUDE :  $(PRJ)$/util$/target.pmk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -472,4 +472,3 @@ namespace pcr
 //........................................................................
 
 #endif // EXTENSIONS_SOURCE_PROPCTRLR_FORMCOMPONENTHANDLER_HXX
-

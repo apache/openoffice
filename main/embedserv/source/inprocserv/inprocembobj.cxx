@@ -1975,4 +1975,3 @@ STDMETHODIMP InprocEmbedDocument_Impl::InternalCacheWrapper::DiscardCache( DWORD
 }
 
 }; // namespace inprocserv
-

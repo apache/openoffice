@@ -96,4 +96,3 @@ inline SvxFmtBreakItem& SvxFmtBreakItem::operator=(
 }
 
 #endif
-

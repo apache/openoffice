@@ -77,5 +77,3 @@ StmArrayStatus::SetTokenCreateFunction( F_CRTOK i_fTokenCreateFunction )
 
 
 #endif
-
-

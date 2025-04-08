@@ -167,4 +167,3 @@ $(BIN)$/boot_services.rdb: \
 # to have a transaction, move it now to the final name
 	$(REGMERGE) $(BIN)$/boot_services.tmp / $(SOLARBINDIR)/types.rdb
 	mv $(BIN)$/boot_services.tmp $@
-

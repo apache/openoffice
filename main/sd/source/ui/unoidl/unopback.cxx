@@ -456,4 +456,3 @@ const SfxItemPropertySimpleEntry* SdUnoPageBackground::getPropertyMapEntry( cons
 {
 	return mpPropSet->getPropertyMap()->getByName(rPropertyName);
 }
-

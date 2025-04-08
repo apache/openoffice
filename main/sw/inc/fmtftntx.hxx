@@ -130,4 +130,3 @@ inline const SwFmtEndAtTxtEnd &SwFmt::GetEndAtTxtEnd(sal_Bool bInP) const
 	{ return aSet.GetEndAtTxtEnd(bInP); }
 
 #endif
-

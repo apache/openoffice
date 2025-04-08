@@ -47,4 +47,3 @@ __.DIVSEP-sh-yes !:= \\\
 __.DIVSEP-sh-no  !:= \\
 
 NAMEMAX		=	256
-

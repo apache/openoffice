@@ -120,4 +120,3 @@ inline const SwTextGridItem &SwFmt::GetTextGrid(sal_Bool bInP) const
     {   return (const SwTextGridItem&)aSet.Get( RES_TEXTGRID, bInP ); }
 
 #endif
-

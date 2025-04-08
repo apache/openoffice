@@ -283,4 +283,3 @@ public:
 
 
 #endif // _BASTYPE_HXX
-

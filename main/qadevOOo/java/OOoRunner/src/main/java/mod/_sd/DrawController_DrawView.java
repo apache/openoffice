@@ -295,4 +295,3 @@ public class DrawController_DrawView extends TestCase {
 
 
 }
-

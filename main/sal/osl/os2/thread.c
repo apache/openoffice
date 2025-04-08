@@ -773,6 +773,3 @@ rtl_TextEncoding SAL_CALL osl_setThreadTextEncoding( rtl_TextEncoding Encoding )
 
 	return oldEncoding;
 }
-
-
-

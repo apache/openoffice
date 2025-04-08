@@ -65,4 +65,3 @@ public:
 }
 
 #endif	//  _XMLOFF_ANIMATIONIMPORT_HXX
-

@@ -338,4 +338,3 @@ SV_DECL_IMPL_PERSIST_LIST(SvMetaTypevoid,SvMetaTypevoid *)
 
 
 #endif // _TYPES_HXX
-

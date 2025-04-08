@@ -757,7 +757,7 @@ void ScViewFunc::EnterData( SCCOL nCol, SCROW nRow, SCTAB nTab, const EditTextOb
 			bCommon = aAttrTester.NeedsCellAttr();
 
 			// formulas have to be recognized even if they're formatted
-			// (but commmon attributes are still collected)
+			// (but common attributes are still collected)
 
 			if ( !bSimple && aEngine.GetParagraphCount() == 1 )
 			{
@@ -3013,7 +3013,3 @@ void ScViewFunc::InsertNameList()
 	if ( pDocSh->GetDocFunc().InsertNameList( aPos, sal_False ) )
 		pDocSh->UpdateOle(GetViewData());
 }
-
-
-
-

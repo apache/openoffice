@@ -81,4 +81,3 @@ namespace reportdesign
 	};
 }
 #endif // RPT_REPORTCOMPONENT_HXX
-

@@ -47,5 +47,3 @@ namespace svx
 //........................................................................
 
 #endif // SVX_SOURCE_INC_FMSLOTINVALIDATOR_HXX
-
-

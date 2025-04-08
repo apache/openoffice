@@ -80,4 +80,3 @@ void SvXMLImportContext::Characters( const OUString& )
 void SvXMLImportContext::onDemandRescueUsefulDataFromTemporary( const SvXMLImportContext& )
 {
 }
-

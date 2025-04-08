@@ -86,7 +86,7 @@ SalVirtualDevice* Os2SalInstance::CreateVirtualDevice( SalGraphics* pSGraphics,
 	HAB 	hAB = GetSalData()->mhAB;
 	SIZEL	size;
 
-	// create device context (at this time allways display compatible)
+	// create device context (at this time always display compatible)
 	DEVOPENSTRUC aDevOpenStruc = { NULL, "DISPLAY", NULL, NULL, NULL, NULL, NULL, NULL, NULL };
 	HDC hDC = DevOpenDC( hAB, OD_MEMORY, (PSZ)"*", 5, (PDEVOPENDATA)&aDevOpenStruc, 0 );
 	if ( !hDC )

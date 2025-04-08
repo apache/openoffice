@@ -339,5 +339,3 @@ namespace connectivity
 
 
 #endif // _CONNECTIVITY_DBASE_INDEXNODE_HXX_
-
-

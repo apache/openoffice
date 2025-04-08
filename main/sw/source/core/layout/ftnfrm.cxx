@@ -3268,4 +3268,3 @@ SwCntntFrm* SwFtnFrm::FindLastCntnt()
 
     return pLastCntntFrm;
 }
-

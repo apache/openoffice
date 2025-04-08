@@ -90,7 +90,7 @@ public class StateSetView
             {
                 super.paintChildren (g);
 
-                // Calculcate the are inside the border.
+                // Calculate the area inside the border.
                 Insets aInsets = getInsets ();
                 Dimension aSize = getSize();
                 Rectangle aWidgetArea = new Rectangle (
@@ -191,5 +191,3 @@ public class StateSetView
         saDefaultColor = new Color (90,90,90),
         saEditColor = new Color (240,240,0);
 }
-
-

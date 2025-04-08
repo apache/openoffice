@@ -2970,4 +2970,3 @@ sal_Bool SAL_CALL SwXHeadFootText::hasElements() throw (uno::RuntimeException)
 {
 	return sal_True;
 }
-

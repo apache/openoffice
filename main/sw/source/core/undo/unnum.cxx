@@ -454,5 +454,3 @@ void SwUndoNumRuleStart::RepeatImpl(::sw::RepeatContext & rContext)
         rDoc.SetNumRuleStart(*rContext.GetRepeatPaM().GetPoint(), bFlag);
     }
 }
-
-

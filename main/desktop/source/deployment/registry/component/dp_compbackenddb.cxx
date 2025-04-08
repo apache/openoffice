@@ -152,4 +152,3 @@ ComponentBackendDb::Data ComponentBackendDb::getEntry(::rtl::OUString const & ur
 } // namespace bundle
 } // namespace backend
 } // namespace dp_registry
-

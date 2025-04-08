@@ -82,4 +82,3 @@ class UnsolvedReferenceTableModel extends AbstractTableModel
 		return false; 
 	}
 }
-

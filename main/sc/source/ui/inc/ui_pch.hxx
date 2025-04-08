@@ -321,7 +321,3 @@
 #include <editeng/eeitem.hxx>
 #include <inputhdl.hxx>
 #include <svx/svdpage.hxx>
-
-
-
-

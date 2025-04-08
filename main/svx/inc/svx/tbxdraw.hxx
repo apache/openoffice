@@ -68,4 +68,3 @@ public:
 
 
 #endif		// _TBX_DRAW_HXX
-

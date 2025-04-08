@@ -308,7 +308,7 @@ namespace svgio
             drawinglayer::primitive2d::Primitive2DSequence aSequence;
 
             // #125258# check now if we need to init some style settings locally. Do not do this
-            // in the constructor, there is not yet informatikon e.g. about existing CssStyles.
+            // in the constructor, there is not yet information e.g. about existing CssStyles.
             // Here all nodes are read and interpreted
             const_cast< SvgSvgNode* >(this)->initializeStyleAttributes();
 
@@ -320,7 +320,7 @@ namespace svgio
                 if(getParent())
                 {
                     // #122594# if width/height is not given, it's 100% (see 5.1.2 The 'svg' element in SVG1.1 spec).
-                    // If it is relative, the question is to what. The previous implementatin assumed relative to the
+                    // If it is relative, the question is to what. The previous implementation assumed relative to the
                     // local ViewBox which is implied by (4.2 Basic data types):
                     //
                     // "Note that the non-property <length> definition also allows a percentage unit identifier. 
@@ -331,7 +331,7 @@ namespace svgio
                     // bounding box width or height on a given object (refer to the section that describes object 
                     // bounding box units)."
 
-                    // Comparisons with commom browsers show, that it's mostly interpreted relative to the viewport
+                    // Comparisons with common browsers show, that it's mostly interpreted relative to the viewport
                     // of the parent, and so does the new implementation.
 
                     // Extract known viewport data
@@ -426,7 +426,7 @@ namespace svgio
                             else
                             {
                                 // create mapping
-                                // #i122610 SVG 1.1 defines in section 5.1.2 that if the attribute perserveAspectRatio is not specified,
+                                // #i122610 SVG 1.1 defines in section 5.1.2 that if the attribute preserveAspectRatio is not specified,
                                 // then the effect is as if a value of 'xMidYMid meet' were specified.
                                 SvgAspectRatio aRatioDefault(Align_xMidYMid,false,true);
                                 const SvgAspectRatio& rRatio = getSvgAspectRatio().isSet()? getSvgAspectRatio() : aRatioDefault;
@@ -533,11 +533,11 @@ namespace svgio
                                     fW = fViewBoxWidth;
                                     fH = fViewBoxHeight;
                                 }
-                                // SVG 1.1 defines in section 5.1.2 that x,y has no meanig for the outermost SVG element.
+                                // SVG 1.1 defines in section 5.1.2 that x,y has no meaning for the outermost SVG element.
                                 aSvgCanvasRange = basegfx::B2DRange(0.0, 0.0, fW, fH);
 
                                 // create mapping
-                                // SVG 1.1 defines in section 5.1.2 that if the attribute perserveAspectRatio is not specified,
+                                // SVG 1.1 defines in section 5.1.2 that if the attribute preserveAspectRatio is not specified,
                                 // then the effect is as if a value of 'xMidYMid meet' were specified.
                                 SvgAspectRatio aRatioDefault(Align_xMidYMid,false,true);
                                 const SvgAspectRatio& rRatio = getSvgAspectRatio().isSet()? getSvgAspectRatio() : aRatioDefault;

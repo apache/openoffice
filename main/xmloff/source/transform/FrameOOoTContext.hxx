@@ -53,4 +53,3 @@ public:
 };
 
 #endif	//  _XMLOFF_FRAMEOOOTCONTEXT_HXX
-

@@ -339,4 +339,3 @@ public:
 };
 
 #endif // SW_UNOTEXT_HXX
-

@@ -222,5 +222,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADO_ADATABASEMETADATA_HXX_
-
-

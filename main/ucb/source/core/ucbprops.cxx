@@ -470,4 +470,3 @@ sal_Bool UcbPropertiesManager::queryProperty(
 
 	return sal_False;
 }
-

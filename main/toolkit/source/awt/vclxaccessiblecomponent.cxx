@@ -967,4 +967,3 @@ uno::Reference< awt::XFont > SAL_CALL VCLXAccessibleComponent::getFont(  ) throw
 
 	return sRet;
 }
-

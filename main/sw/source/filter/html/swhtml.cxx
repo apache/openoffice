@@ -2971,7 +2971,7 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 		nEndCnt != pAttr->GetSttCnt() )
 	{
 		bInsert = sal_True;
-		// We do some optimization for script depenedent attribtes here.
+		// We do some optimization for script dependent attributes here.
 		if( *pEndIdx == pAttr->GetSttPara() )
 		{
 			lcl_swhtml_getItemInfo( *pAttr, bScript, bFont, nScriptItem );
@@ -5491,4 +5491,3 @@ void SwHTMLParser::AddMetaUserDefined( ::rtl::OUString const & i_rMetaName )
         (*pName) = i_rMetaName;
     }
 }
-

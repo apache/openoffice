@@ -35,4 +35,3 @@ enum MoveSpeed
 #define MOVE_SPEED_COUNT 3
 
 #endif	// _SD_MOVEDEF_HXX
-

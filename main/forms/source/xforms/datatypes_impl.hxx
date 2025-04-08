@@ -69,4 +69,3 @@ OValueLimitedType< VALUE_TYPE >::OValueLimitedType( const ::rtl::OUString& _rNam
     :OValueLimitedType_Base( _rName, _nTypeClass )
 {
 }
-

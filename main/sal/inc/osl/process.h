@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
-
 
 #ifndef _OSL_PROCESS_H_
 #define _OSL_PROCESS_H_
@@ -62,26 +59,26 @@ typedef	sal_uInt32 oslProcessIdentifier;
 typedef	sal_uInt32 oslProcessExitCode;
 
 typedef enum {
-    osl_Process_E_None,					/* no error */
-    osl_Process_E_NotFound,				/* image not found */
-    osl_Process_E_TimedOut,				/* timout occurred */
-    osl_Process_E_NoPermission,	  	  	/* permission denied */
-    osl_Process_E_Unknown,			  	/* unknown error */
-    osl_Process_E_InvalidError,			/* unmapped error */
+	osl_Process_E_None,					/* no error */
+	osl_Process_E_NotFound,				/* image not found */
+	osl_Process_E_TimedOut,				/* timeout occurred */
+	osl_Process_E_NoPermission,			/* permission denied */
+	osl_Process_E_Unknown,				/* unknown error */
+	osl_Process_E_InvalidError,			/* unmapped error */
 	osl_Process_E_FORCE_EQUAL_SIZE = SAL_MAX_ENUM
 } oslProcessError;
 
 typedef enum {
-    osl_Process_TypeNone,	  	/* no descriptor */
-    osl_Process_TypeSocket,		/* socket */
-    osl_Process_TypeFile,		/* file   */
-	osl_Process_TypePipe,       /* pipe   */
+	osl_Process_TypeNone,		/* no descriptor */
+	osl_Process_TypeSocket,		/* socket */
+	osl_Process_TypeFile,		/* file */
+	osl_Process_TypePipe,		/* pipe */
 	osl_Process_FORCE_EQUAL_SIZE = SAL_MAX_ENUM
 } oslDescriptorType;
 
 typedef sal_Int32 oslDescriptorFlag;
-#define	osl_Process_DFNONE       0x0000    
-#define	osl_Process_DFWAIT       0x0001    
+#define	osl_Process_DFNONE       0x0000
+#define	osl_Process_DFWAIT       0x0001
 
 #ifdef SAL_W32
 #	pragma pack(push, 8)
@@ -90,13 +87,13 @@ typedef sal_Int32 oslDescriptorFlag;
 #endif
 
 typedef struct {
-    sal_uInt32				Size;
-    oslProcessData			Fields;
-    oslProcessIdentifier	Ident;
-    oslProcessExitCode		Code;
-    TimeValue				UserTime;
-    TimeValue				SystemTime;
-    sal_uInt32				HeapUsage;
+	sal_uInt32				Size;
+	oslProcessData			Fields;
+	oslProcessIdentifier	Ident;
+	oslProcessExitCode		Code;
+	TimeValue				UserTime;
+	TimeValue				SystemTime;
+	sal_uInt32				HeapUsage;
 } oslProcessInfo;
 
 #if defined( SAL_W32) ||  defined(SAL_OS2)
@@ -108,56 +105,56 @@ typedef struct {
 	@see osl_executeProcess
 	@see osl_terminateProcess
 	@see osl_freeProcessHandle
-    @see osl_getProcessInfo
+	@see osl_getProcessInfo
 	@see osl_joinProcess
 */
 typedef void* oslProcess;
 
 /** Execute a process.
 
-    Executes the program image provided in strImageName in a new process.     
-        
-    @param ustrImageName 
-    [in] The file URL of the executable to be started. 
-    Can be NULL in this case the file URL of the executable must be the first element 
-    in ustrArguments.
-    	
+	Executes the program image provided in strImageName in a new process.
+
+	@param ustrImageName
+	[in] The file URL of the executable to be started.
+	Can be NULL in this case the file URL of the executable must be the first element
+	in ustrArguments.
+
 	@param ustrArguments
-	[in] An array of argument strings. Can be NULL if strImageName is not NULL. 
-	If strImageName is NULL it is expected that the first element contains 
+	[in] An array of argument strings. Can be NULL if strImageName is not NULL.
+	If strImageName is NULL it is expected that the first element contains
 	the file URL of the executable to start.
-    
-    @param nArguments
-    [in] The number of arguments provided. If this number is 0 strArguments will be ignored.
-    
+
+	@param nArguments
+	[in] The number of arguments provided. If this number is 0 strArguments will be ignored.
+
 	@param Options
 	[in] A combination of int-constants to describe the mode of execution.
-	
-	@param Security
-	[in] The user and his rights for which the process is started. May be NULL in which case 
-	the process will be started in the context of the current user.
-	
-	@param ustrDirectory 
-	[in] The file URL of the working directory of the new process. If the specified directory 
-	does not exist or is inaccessible the working directory of the newly created process 
-	is undefined. If this parameter is NULL or the caller provides an empty string the 
-	new process will have the same current working directory as the calling process.
-	
-	@param ustrEnviroments
-	[in] An array of strings describing environment variables that should be merged into the 
-	environment of the new process. Each string has to be in the form "variable=value".
-	This parameter can be NULL in which case the new process gets the same environment 
-	as the parent process. 	                               
-	
-    @param nEnvironmentVars
-    [in] The number of environment variables to set.
-    
-	@param pProcess
-	[out] Pointer to a oslProcess variable, which receives the handle of the newly created process. 
-	This parameter must not be NULL.			
 
-	@return	
-	<dl> 
+	@param Security
+	[in] The user and his rights for which the process is started. May be NULL in which case
+	the process will be started in the context of the current user.
+
+	@param ustrDirectory
+	[in] The file URL of the working directory of the new process. If the specified directory
+	does not exist or is inaccessible the working directory of the newly created process
+	is undefined. If this parameter is NULL or the caller provides an empty string the
+	new process will have the same current working directory as the calling process.
+
+	@param ustrEnviroments
+	[in] An array of strings describing environment variables that should be merged into the
+	environment of the new process. Each string has to be in the form "variable=value".
+	This parameter can be NULL in which case the new process gets the same environment
+	as the parent process.
+
+	@param nEnvironmentVars
+	[in] The number of environment variables to set.
+
+	@param pProcess
+	[out] Pointer to a oslProcess variable, which receives the handle of the newly created process.
+	This parameter must not be NULL.
+
+	@return
+	<dl>
 	<dt>osl_Process_E_None</dt>
 	<dd>on success</dd>
 	<dt>osl_Process_E_NotFound</dt>
@@ -167,82 +164,82 @@ typedef void* oslProcess;
 	<dt>osl_Process_E_Unknown</dt>
 	<dd>if arbitrary other errors occur</dd>
 	</dl>
-		
+
 	@see oslProcessOption
 	@see osl_executeProcess_WithRedirectedIO
 	@see osl_freeProcessHandle
 	@see osl_loginUser
 */
 oslProcessError SAL_CALL osl_executeProcess(
-    rtl_uString* ustrImageName,
+	rtl_uString* ustrImageName,
 	rtl_uString* ustrArguments[],
-    sal_uInt32  nArguments,
+	sal_uInt32  nArguments,
 	oslProcessOption Options,
 	oslSecurity Security,
 	rtl_uString* ustrDirectory,
 	rtl_uString* ustrEnvironments[],
-    sal_uInt32 nEnvironmentVars,
+	sal_uInt32 nEnvironmentVars,
 	oslProcess* pProcess);
 
 
 /** Execute a process and redirect child process standard IO.
 
-	@param ustrImageName 
-    [in] The file URL of the executable to be started. 
-    Can be NULL in this case the file URL of the executable must be the first element 
-    in ustrArguments.
-	
+	@param ustrImageName
+	[in] The file URL of the executable to be started.
+	Can be NULL in this case the file URL of the executable must be the first element
+	in ustrArguments.
+
 	@param ustrArguments
-	[in] An array of argument strings. Can be NULL if strImageName is not NULL. 
-	If strImageName is NULL it is expected that the first element contains 
+	[in] An array of argument strings. Can be NULL if strImageName is not NULL.
+	If strImageName is NULL it is expected that the first element contains
 	the file URL of the executable to start.
-    
-    @param nArguments
-    [in] The number of arguments provided. If this number is 0 strArguments will be ignored.
-    
+
+	@param nArguments
+	[in] The number of arguments provided. If this number is 0 strArguments will be ignored.
+
 	@param Options
 	[in] A combination of int-constants to describe the mode of execution.
-	
+
 	@param Security
-	[in] The user and his rights for which the process is started. May be NULL in which case 
+	[in] The user and his rights for which the process is started. May be NULL in which case
 	the process will be started in the context of the current user.
-	
-	@param ustrDirectory 
-	[in] The file URL of the working directory of the new process. If the specified directory 
-	does not exist or is inaccessible the working directory of the newly created process 
-	is undefined. If this parameter is NULL or the caller provides an empty string the 
+
+	@param ustrDirectory
+	[in] The file URL of the working directory of the new process. If the specified directory
+	does not exist or is inaccessible the working directory of the newly created process
+	is undefined. If this parameter is NULL or the caller provides an empty string the
 	new process will have the same current working directory as the calling process.
-	
+
 	@param ustrEnviroments
-	[in] An array of strings describing environment variables that should be merged into the 
+	[in] An array of strings describing environment variables that should be merged into the
 	environment of the new process. Each string has to be in the form "variable=value".
-	This parameter can be NULL in which case the new process gets the same environment 
-	as the parent process. 	                               
-	
-    @param nEnvironmentVars
-    [in] The number of environment variables to set.
-    
+	This parameter can be NULL in which case the new process gets the same environment
+	as the parent process.
+
+	@param nEnvironmentVars
+	[in] The number of environment variables to set.
+
 	@param pProcess
-	[out] Pointer to a oslProcess variable, which receives the handle of the newly created process. 
+	[out] Pointer to a oslProcess variable, which receives the handle of the newly created process.
 	This parameter must not be NULL.
-	
+
 	@param pChildInputWrite
-	[in] Pointer to a oslFileHandle variable that receives the handle which can be used to write 
-	to the child process standard input device. The returned handle is not random accessible. 
+	[in] Pointer to a oslFileHandle variable that receives the handle which can be used to write
+	to the child process standard input device. The returned handle is not random accessible.
 	The handle has to be closed with osl_closeFile if no longer used. This parameter can be NULL.
-	
+
 	@param pChildOutputRead
-	[in] Pointer to a oslFileHandle variable that receives the handle which can be used to read from 
-	the child process standard output device. The returned handle is not random accessible. 
-	The Handle has to be closed with osl_closeFile if no longer used. This parameter can be NULL.	                               
-	
-	@param pChildErrorRead
-	[in] Pointer to a oslFileHandle variable that receives the handle which can be used to read from 
-	the child process standard error device. The returned handle is not random accessible. 
+	[in] Pointer to a oslFileHandle variable that receives the handle which can be used to read from
+	the child process standard output device. The returned handle is not random accessible.
 	The Handle has to be closed with osl_closeFile if no longer used. This parameter can be NULL.
-	
+
+	@param pChildErrorRead
+	[in] Pointer to a oslFileHandle variable that receives the handle which can be used to read from
+	the child process standard error device. The returned handle is not random accessible.
+	The Handle has to be closed with osl_closeFile if no longer used. This parameter can be NULL.
+
 	@return
-	<dl> 
+	<dl>
 	<dt>osl_Process_E_None</dt>
 	<dd>on success</dd>
 	<dt>osl_Process_E_NotFound</dt>
@@ -251,8 +248,8 @@ oslProcessError SAL_CALL osl_executeProcess(
 	<dd>if invalid parameters will be detected</dd>
 	<dt>osl_Process_E_Unknown</dt>
 	<dd>if arbitrary other errors occur</dd>
-	</dl>	
-	
+	</dl>
+
 	@see oslProcessOption
 	@see osl_executeProcess
 	@see osl_freeProcessHandle
@@ -260,34 +257,34 @@ oslProcessError SAL_CALL osl_executeProcess(
 	@see osl_closeFile
 */
 oslProcessError SAL_CALL osl_executeProcess_WithRedirectedIO(
-    rtl_uString* strImageName,
+	rtl_uString* strImageName,
 	rtl_uString* ustrArguments[],
-    sal_uInt32 nArguments,
+	sal_uInt32 nArguments,
 	oslProcessOption Options,
 	oslSecurity Security,
 	rtl_uString* ustrDirectory,
 	rtl_uString* ustrEnvironments[],
-    sal_uInt32 nEnvironmentVars,
+	sal_uInt32 nEnvironmentVars,
 	oslProcess* pProcess,
 	oslFileHandle* pChildInputWrite,
 	oslFileHandle* pChildOutputRead,
 	oslFileHandle* pChildErrorRead);
 
 /** Terminate a process
-    @param Process [in] the handle of the process to be terminated
+	@param Process [in] the handle of the process to be terminated
 
-    @see osl_executeProcess
-    @see osl_getProcess
-    @see osl_joinProcess
+	@see osl_executeProcess
+	@see osl_getProcess
+	@see osl_joinProcess
  */
 oslProcessError SAL_CALL osl_terminateProcess(oslProcess Process);
 
 
 /** @deprecated
-    Retrieve the process handle of a process identifier
-    @param Ident [in] a process identifier
+	Retrieve the process handle of a process identifier
+	@param Ident [in] a process identifier
 
-    @return the process handle on success, NULL in all other cases
+	@return the process handle on success, NULL in all other cases
  */
 oslProcess SAL_CALL osl_getProcess(oslProcessIdentifier Ident);
 
@@ -298,7 +295,7 @@ oslProcess SAL_CALL osl_getProcess(oslProcessIdentifier Ident);
 void SAL_CALL osl_freeProcessHandle(oslProcess Process);
 
 
-/** Wait for completation of the specified childprocess.
+/** Wait for completion of the specified childprocess.
 	@param Process [in]
 	@return ols_Process_E_None
 	@see osl_executeProcess
@@ -306,21 +303,21 @@ void SAL_CALL osl_freeProcessHandle(oslProcess Process);
 oslProcessError SAL_CALL osl_joinProcess(oslProcess Process);
 
 /** Wait with a timeout for the completion of the specified child
-    process.
+	process.
 
-    @param Process [in]
-    A process identifier.
+	@param Process [in]
+	A process identifier.
 
-    @param pTimeout [in]
-    A timeout value or NULL for infinite waiting.
+	@param pTimeout [in]
+	A timeout value or NULL for infinite waiting.
 	The unit of resolution is second.
 
-    @return
-    osl_Process_E_None on success
-    osl_Process_E_TimedOut waiting for the child process timed out
-    osl_Process_E_Unknown an error occurred or the parameter are invalid
+	@return
+	osl_Process_E_None on success
+	osl_Process_E_TimedOut waiting for the child process timed out
+	osl_Process_E_Unknown an error occurred or the parameter are invalid
 
-    @see osl_executeProcess
+	@see osl_executeProcess
 */
 oslProcessError SAL_CALL osl_joinProcessWithTimeout(oslProcess Process, const TimeValue* pTimeout);
 
@@ -328,7 +325,7 @@ oslProcessError SAL_CALL osl_joinProcessWithTimeout(oslProcess Process, const Ti
     @param Process [in] the process handle of the process
     @param Field   [in] the information which is to be retrieved
                         this can be one or more of
-                        osl_Process_IDENTIFIER  
+                        osl_Process_IDENTIFIER
                         osl_Process_EXITCODE
                         osl_Process_CPUTIMES
                         osl_Process_HEAPUSAGE
@@ -339,34 +336,34 @@ oslProcessError SAL_CALL osl_joinProcessWithTimeout(oslProcess Process, const Ti
                         retrieved valid information fields.
     @return osl_Process_E_None on success, osl_Process_E_Unknown on failure.
  */
-oslProcessError SAL_CALL osl_getProcessInfo(oslProcess Process, oslProcessData Fields, 
+oslProcessError SAL_CALL osl_getProcessInfo(oslProcess Process, oslProcessData Fields,
                                    oslProcessInfo* pInfo);
 
-/** Get the filename of the executable. 
+/** Get the filename of the executable.
 	@param strFile [out] the string that receives the executable file path.
-	@return osl_Process_E_None or does not return. 	
-	@see osl_executeProcess 
+	@return osl_Process_E_None or does not return.
+	@see osl_executeProcess
 */
 oslProcessError SAL_CALL osl_getExecutableFile(rtl_uString **strFile);
 
 /** @return the number of commandline arguments passed to the main-function of
-    this process
-    @see osl_getCommandArg
+	this process
+	@see osl_getCommandArg
 */
 sal_uInt32 SAL_CALL osl_getCommandArgCount(void);
 
 /** Get the nArg-th command-line argument passed to the main-function of this process.
-    @param nArg [in] The number of the argument to return.
+	@param nArg [in] The number of the argument to return.
 	@param strCommandArg [out] The string receives the nArg-th command-line argument.
-	@return osl_Process_E_None or does not return. 	
+	@return osl_Process_E_None or does not return.
 	@see osl_executeProcess
 */
 oslProcessError SAL_CALL osl_getCommandArg(sal_uInt32 nArg, rtl_uString **strCommandArg);
 
 /** Set the command-line arguments as passed to the main-function of this process.
 
-    Depricated: This function is only for internal use. Passing the args from main will
-	only work for Unix, on Windows there's no effect, the full command line will automtically
+	Deprecated: This function is only for internal use. Passing the args from main will
+	only work for Unix, on Windows there's no effect, the full command line will automatically
 	be taken. This is due to Windows 9x/ME limitation that don't allow UTF-16 wmain to provide
 	a osl_setCommandArgsU( int argc, sal_Unicode **argv );
 
@@ -399,7 +396,7 @@ oslProcessError SAL_CALL osl_setEnvironment(rtl_uString *strVar, rtl_uString *st
 */
 oslProcessError SAL_CALL osl_clearEnvironment(rtl_uString *strVar);
 
-/** Get the working directory of the current process as a file URL. 
+/** Get the working directory of the current process as a file URL.
 
 	The file URL is encoded as common for the OSL file API.
 	@param	pustrWorkingDir [out] string that receives the working directory file URL.
@@ -407,33 +404,32 @@ oslProcessError SAL_CALL osl_clearEnvironment(rtl_uString *strVar);
 
 oslProcessError SAL_CALL osl_getProcessWorkingDir( rtl_uString **pustrWorkingDir );
 
-/** Get the locale the process is currently running in. 
+/** Get the locale the process is currently running in.
 
 	The unix implementation caches the value it returns, so if you have to change the locale
-    your are running in, you will have to use osl_setProcessLocale therefor.
-    
+	your are running in, you will have to use osl_setProcessLocale therefor.
+
 	@param	ppLocale [out] a pointer that receives the currently selected locale structure
-    @see osl_setProcessLocale
+	@see osl_setProcessLocale
 */
 
 oslProcessError SAL_CALL osl_getProcessLocale( rtl_Locale ** ppLocale );
 
-/** Change the locale of the process. 
+/** Change the locale of the process.
 
 	@param	pLocale [in] a pointer to the locale to be set
-    @see osl_getProcessLocale
+	@see osl_getProcessLocale
 */
 
 oslProcessError SAL_CALL osl_setProcessLocale( rtl_Locale * pLocale );
- 
+
 
 sal_Bool SAL_CALL osl_sendResourcePipe(oslPipe Pipe, oslSocket Socket);
- 
+
 oslSocket SAL_CALL osl_receiveResourcePipe(oslPipe Pipe);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif    /* _OSL_PROCESS_H_ */
-
+#endif /* _OSL_PROCESS_H_ */

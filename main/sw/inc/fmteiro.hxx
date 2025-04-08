@@ -53,4 +53,3 @@ inline const SwFmtEditInReadonly &SwFmt::GetEditInReadonly(sal_Bool bInP) const
 	{ return aSet.GetEditInReadonly(bInP); }
 
 #endif
-

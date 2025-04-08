@@ -107,4 +107,3 @@ class X509Certificate_MSCryptImpl : public ::cppu::WeakImplHelper2<
 } ;
 
 #endif	// _X509CERTIFICATE_MSCRYPTIMPL_HXX_
-

@@ -69,4 +69,3 @@ sal_Bool SAL_CALL WriterFilterDetection_supportsService( const ::rtl::OUString& 
     throw( ::com::sun::star::uno::Exception );
 
 #endif
-

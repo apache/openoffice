@@ -74,4 +74,3 @@ private:
 
 
 #endif		// _SD_FUSEL_HXX
-

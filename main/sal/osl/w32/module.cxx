@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "system.h"
 #include <tlhelp32.h>
 
@@ -65,25 +63,25 @@ oslModule SAL_CALL osl_loadModule(rtl_uString *strModuleName, sal_Int32 nRtldMod
 
 	if (hInstance == NULL)
 		hInstance = LoadLibraryExW(reinterpret_cast<LPCWSTR>(Module->buffer), NULL,
-                                  LOAD_WITH_ALTERED_SEARCH_PATH);
+								LOAD_WITH_ALTERED_SEARCH_PATH);
 
-	//In case of long path names (\\?\c:\...) try to shorten the filename.
-	//LoadLibrary cannot handle file names which exceed 260 letters.
-	//In case the path is to long, the function will fail. However, the error
-	//code can be different. For example, it returned ERROR_FILENAME_EXCED_RANGE
-	//on Windows XP and ERROR_INSUFFICIENT_BUFFER on Windows 7 (64bit)
+	// In case of long path names (\\?\c:\...) try to shorten the filename.
+	// LoadLibrary cannot handle file names which exceed 260 letters.
+	// In case the path is too long, the function will fail. However, the error
+	// code can be different. For example, it returned ERROR_FILENAME_EXCEED_RANGE
+	// on Windows XP and ERROR_INSUFFICIENT_BUFFER on Windows 7 (64bit)
 	if (hInstance == NULL && Module->length > 260)
 	{
 		std::vector<WCHAR> vec(Module->length + 1);
 		DWORD len = GetShortPathNameW(reinterpret_cast<LPCWSTR>(Module->buffer),
-                                      &vec[0], Module->length + 1);
+									&vec[0], Module->length + 1);
 		if (len )
 		{
 			hInstance = LoadLibraryW(&vec[0]);
 
 			if (hInstance == NULL)
 				hInstance = LoadLibraryExW(&vec[0], NULL,
-                                  LOAD_WITH_ALTERED_SEARCH_PATH);
+								LOAD_WITH_ALTERED_SEARCH_PATH);
 		}
 	}
 
@@ -142,15 +140,15 @@ void SAL_CALL osl_unloadModule(oslModule Module)
 /*****************************************************************************/
 void* SAL_CALL osl_getSymbol(oslModule Module, rtl_uString *strSymbolName)
 {
-    /* casting from a function pointer to a data pointer is invalid
-       be in this case unavoidable because the API has to stay
-       compatible we need to keep this function which returns a
-       void* by definition */
+	/* casting from a function pointer to a data pointer is invalid
+	   be in this case unavoidable because the API has to stay
+	   compatible we need to keep this function which returns a
+	   void* by definition */
 #ifdef _MSC_VER
 #pragma warning(push)
 #pragma warning(disable:4054)
 #endif
-    return (void*)(osl_getFunctionSymbol(Module, strSymbolName));
+	return (void*)(osl_getFunctionSymbol(Module, strSymbolName));
 #ifdef _MSC_VER
 #pragma warning(pop)
 #endif
@@ -194,7 +192,6 @@ osl_getAsciiFunctionSymbol( oslModule Module, const sal_Char *pSymbol )
 
 	return fncAddr;
 }
-
 
 
 /*****************************************************************************/
@@ -295,20 +292,20 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_Windows( void *pv, rtl_uString
 #endif
 
 typedef BOOL (WINAPI *SymInitialize_PROC)(
-    HANDLE   hProcess,
-    LPSTR    UserSearchPath,
-    BOOL     fInvadeProcess
-    );
+	HANDLE   hProcess,
+	LPSTR    UserSearchPath,
+	BOOL     fInvadeProcess
+	);
 
 typedef BOOL (WINAPI *SymCleanup_PROC)(
-    HANDLE hProcess
+	HANDLE hProcess
 	);
 
 typedef BOOL (WINAPI *SymGetModuleInfo_PROC)(
-    HANDLE              hProcess,
-    DWORD               dwAddr,
-    PIMAGEHLP_MODULE  ModuleInfo
-    );
+	HANDLE              hProcess,
+	DWORD               dwAddr,
+	PIMAGEHLP_MODULE  ModuleInfo
+	);
 
 /* Seems that IMAGEHLP.DLL is always available on NT 4. But MSDN from Platform SDK says Win 2K is required. MSDN from VS 6.0a says
 	it's OK on NT 4 ???!!!
@@ -400,23 +397,23 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_NT4( void *pv, rtl_uString **p
 
 
 typedef struct _MODULEINFO {
-    LPVOID lpBaseOfDll;
-    DWORD SizeOfImage;
-    LPVOID EntryPoint;
+	LPVOID lpBaseOfDll;
+	DWORD SizeOfImage;
+	LPVOID EntryPoint;
 } MODULEINFO, *LPMODULEINFO;
 
 typedef BOOL (WINAPI *EnumProcessModules_PROC)(
-  HANDLE hProcess,      // handle to the process
-  HMODULE * lphModule,  // array to receive the module handles
-  DWORD cb,             // size of the array
-  LPDWORD lpcbNeeded    // receives the number of bytes returned
+	HANDLE hProcess,      // handle to the process
+	HMODULE * lphModule,  // array to receive the module handles
+	DWORD cb,             // size of the array
+	LPDWORD lpcbNeeded    // receives the number of bytes returned
 );
 
 typedef BOOL (WINAPI *GetModuleInformation_PROC)(
-  HANDLE hProcess,         // handle to the process
-  HMODULE hModule,         // handle to the module
-  LPMODULEINFO lpmodinfo,  // structure that receives information
-  DWORD cb                 // size of the structure
+	HANDLE hProcess,         // handle to the process
+	HMODULE hModule,         // handle to the module
+	LPMODULEINFO lpmodinfo,  // structure that receives information
+	DWORD cb                 // size of the structure
 );
 
 #define bufsizeof(buffer) (sizeof(buffer) / sizeof((buffer)[0]))
@@ -494,17 +491,18 @@ sal_Bool SAL_CALL osl_getModuleURLFromAddress( void *pv, rtl_uString **pustrURL 
 /*****************************************************************************/
 sal_Bool SAL_CALL osl_getModuleURLFromFunctionAddress( oslGenericFunction addr, rtl_uString ** ppLibraryUrl )
 {
-    /* casting a function pointer to a data pointer (void*) is
-       not allowed according to the C/C++ standards. In this case
-       it is unavoidable because we have to stay compatible we
-       cannot remove any function. */
+	/* casting a function pointer to a data pointer (void*) is
+	   not allowed according to the C/C++ standards. In this case
+	   it is unavoidable because we have to stay compatible we
+	   cannot remove any function. */
 #ifdef _MSC_VER
 #pragma warning(push)
 #pragma warning(disable:4054)
 #endif
-    return osl_getModuleURLFromAddress((void*)addr, ppLibraryUrl);
+	return osl_getModuleURLFromAddress((void*)addr, ppLibraryUrl);
 #ifdef _MSC_VER
 #pragma warning(pop)
 #endif
 }
 
+/* vim: set noet sw=4 ts=4: */

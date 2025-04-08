@@ -94,7 +94,7 @@ use strict;
 sub GetSetupScriptLines ($$$)
 {
     my ($allsettingsarrayref, $allvariableshashref, $includepatharrayref) = @_;
-    
+
     if ($installer::globals::setupscript_defined_in_productlist)
     {
         installer::setupscript::set_setupscript_name($allsettingsarrayref, $includepatharrayref);
@@ -177,7 +177,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
     ###########################################
 
     # Building for gcc build in cws requires, that all files are stripped before packaging:
-    # 1. copy all files that need to be stripped locally 
+    # 1. copy all files that need to be stripped locally
     # 2. strip all these files
 
     if ( $installer::globals::compiler =~ /wntgcci/ )
@@ -204,7 +204,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
     #################################################################################
     # Begin of functions that are used for the creation of idt files (Windows only)
     #################################################################################
-    
+
     $installer::logger::Info->print( "... creating idt files ...\n" );
 
     installer::logger::include_header_into_logfile("Creating idt files:");
@@ -216,7 +216,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
     my $binarytablefiles = installer::worker::collect_all_items_with_special_flag(
         $filesinproductlanguageresolvedarrayref,
         "BINARYTABLE");
-	
+
     # Removing all files with flag "BINARYTABLE_ONLY"
     @installer::globals::binarytableonlyfiles = ();
     $filesinproductlanguageresolvedarrayref = installer::worker::remove_all_items_with_special_flag(
@@ -251,7 +251,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
     installer::windows::file::create_filehash_table($filesinproductlanguageresolvedarrayref, $newidtdir);
     my @allfilecomponents = installer::windows::file::collect_components($filesinproductlanguageresolvedarrayref);
 
-    
+
     installer::windows::directory::prepare_directory_table_creation(
         $directoriesforepmarrayref,
         $allvariableshashref);
@@ -306,7 +306,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
     installer::windows::feature::add_uniquekey($modulesinproductlanguageresolvedarrayref);
     $modulesinproductlanguageresolvedarrayref = installer::windows::feature::sort_feature(
         $modulesinproductlanguageresolvedarrayref);
-    
+
 	foreach my $onelanguage (@$languagesarrayref)
 	{
         my $features = installer::windows::feature::prepare_feature_table(
@@ -386,7 +386,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
     # For every language there will be a localized msi database
     # For multilingual installation sets, the differences of this
     # databases have to be stored in transforms.
-    
+
     for ( my $m = 0; $m <= $#{$languagesarrayref}; $m++ )
     {
         my $onelanguage = ${$languagesarrayref}[$m];
@@ -403,7 +403,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
         $installer::logger::Info->print( "... copying idt files ...\n" );
 
         installer::logger::include_header_into_logfile("Copying idt files to $languageidtdir:");
-        
+
         installer::windows::idtglobal::prepare_language_idt_directory(
             $languageidtdir,
             $newidtdir,
@@ -415,7 +415,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
 
         if (( ! $installer::globals::languagepack ) && ( ! $allvariableshashref->{'NOLANGUAGESELECTIONPRODUCT'} ))
         {
-            # For multilingual installation sets, the dialog for the language selection can now be prepared, with 
+            # For multilingual installation sets, the dialog for the language selection can now be prepared, with
             # a checkbox for each available language. This has to happen before the following translation.
             # The new controls have to be added into the Control.idt
 
@@ -424,7 +424,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
             installer::windows::idtglobal::add_language_checkboxes_to_database($controlidttable, $languagesarrayref);
             installer::files::save_file($controlidttablename, $controlidttable);
             $installer::logger::Lang->printf("Added checkboxes for language selection dialog into table %s\n",
-                $controlidttablename); 
+                $controlidttablename);
         }
 
         # Now all files are copied into a language specific directory
@@ -435,20 +435,20 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
         installer::logger::include_header_into_logfile("Localizing idt files (Language: $onelanguage):");
 
         my @translationfiles = ();			# all idt files, that need a translation
-        push(@translationfiles, "ActionTe.idt");			
-        push(@translationfiles, "Control.idt");			
-        push(@translationfiles, "CustomAc.idt");			
-        push(@translationfiles, "Error.idt");			
-        push(@translationfiles, "LaunchCo.idt");			
-        push(@translationfiles, "RadioBut.idt");			
-        push(@translationfiles, "Property.idt");			
-        push(@translationfiles, "UIText.idt");			
-		
+        push(@translationfiles, "ActionTe.idt");
+        push(@translationfiles, "Control.idt");
+        push(@translationfiles, "CustomAc.idt");
+        push(@translationfiles, "Error.idt");
+        push(@translationfiles, "LaunchCo.idt");
+        push(@translationfiles, "RadioBut.idt");
+        push(@translationfiles, "Property.idt");
+        push(@translationfiles, "UIText.idt");
+
         my $oneidtfilename;
         my $oneidtfile;
-		
+
         foreach $oneidtfilename (@translationfiles)
-        {	
+        {
             my $languagefilename = installer::windows::idtglobal::get_languagefilename($oneidtfilename, $installer::globals::idtlanguagepath);
             my $languagefile = installer::files::read_file($languagefilename);
 
@@ -457,17 +457,17 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
 
             # Now the substitution can start
             installer::windows::idtglobal::translate_idtfile($oneidtfile, $languagefile, $onelanguage);
-            
+
             installer::files::save_file($oneidtfilename, $oneidtfile);
 
             $installer::logger::Lang->printf("Translated idt file: %s into language %s\n",
                 $oneidtfilename,
-                $onelanguage); 
+                $onelanguage);
             $installer::logger::Lang->printf("Used languagefile: %s\n", $languagefilename);
-        }	
-        
+        }
+
         # setting the encoding in every table (replacing WINDOWSENCODINGTEMPLATE)
-        
+
         installer::windows::idtglobal::setencoding($languageidtdir, $onelanguage);
 
         # setting bidi attributes, if required
@@ -476,9 +476,9 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
 
         # setting the encoding in every table (replacing WINDOWSENCODINGTEMPLATE)
         installer::windows::idtglobal::set_multilanguageonly_condition($languageidtdir);
-        
+
         # include the license text into the table Control.idt
-        
+
         if ( ! $allvariableshashref->{'HIDELICENSEDIALOG'} )
         {
             my $licensefilesource = installer::windows::idtglobal::get_rtflicensefilesource($onelanguage, $includepatharrayref_lang);
@@ -493,33 +493,33 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
 
             $installer::logger::Lang->printf("Added licensefile %s into database %s\n",
                 $licensefilesource,
-                $controltablename); 
+                $controltablename);
         }
 
         # include a component into environment table if required
-        
+
         installer::windows::component::set_component_in_environment_table($languageidtdir, $filesinproductlanguageresolvedarrayref);
 
         # include the ProductCode and the UpgradeCode from codes-file into the Property.idt
-        
+
         installer::windows::property::set_codes_in_property_table($languageidtdir);
-        
+
         # the language specific properties can now be set in the Property.idt
-        
+
         installer::windows::property::update_property_table($languageidtdir, $onelanguage, $allvariableshashref, $languagestringref);
 
         # replacing variables in RegLocat.idt
-        
+
         installer::windows::msiglobal::update_reglocat_table($languageidtdir, $allvariableshashref);
 
         # replacing variables in RemoveRe.idt (RemoveRegistry.idt)
-        
+
         installer::windows::msiglobal::update_removere_table($languageidtdir);
-        
+
         # adding language specific properties for multilingual installation sets
-        
+
         installer::windows::property::set_languages_in_property_table($languageidtdir, $languagesarrayref);
-        
+
         # adding settings into CheckBox.idt
         installer::windows::property::update_checkbox_table($languageidtdir, $allvariableshashref);
 
@@ -548,7 +548,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
         }
 
         # Then the language specific msi database can be created
-        
+
         if ( $installer::globals::iswin )	# only possible on a Windows platform
         {
             my $msidatabasename = installer::windows::msiglobal::get_msidatabasename($allvariableshashref, $onelanguage);
@@ -562,19 +562,19 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
 #                $allvariableshashref);
 
             installer::windows::msiglobal::prepare_64bit_database($languageidtdir, $allvariableshashref);	# making last 64 bit changes
-            installer::windows::msiglobal::create_msi_database($languageidtdir ,$msifilename);		
+            installer::windows::msiglobal::create_msi_database($languageidtdir ,$msifilename);
 
-            # validating the database 	# ToDo	
+            # validating the database 	# ToDo
 
             my $languagefile = installer::files::read_file($installer::globals::idtlanguagepath . $installer::globals::separator . "SIS.mlf");
             # my $languagefile = installer::files::read_file($installer::globals::idtlanguagepath . $installer::globals::separator . "SIS.ulf");
 
             installer::windows::msiglobal::write_summary_into_msi_database($msifilename, $onelanguage, $languagefile, $allvariableshashref);
-            
+
             # copy msi database into installation directory
 
             my $msidestfilename = $installdir . $installer::globals::separator . $msidatabasename;
-            installer::systemactions::copy_one_file($msifilename, $msidestfilename);				 
+            installer::systemactions::copy_one_file($msifilename, $msidestfilename);
         }
     }
 
@@ -584,7 +584,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
     my $defaultlanguage = installer::languages::get_default_language($languagesarrayref);
 
     if ( $installer::globals::iswin )	# only possible on a Windows platform
-    {					
+    {
         if  ( $#{$languagesarrayref} > 0 )
         {
             installer::windows::msiglobal::create_transforms($languagesarrayref, $defaultlanguage, $installdir, $allvariableshashref);
@@ -595,7 +595,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
         if ( $allvariableshashref->{'ADDLANGUAGEINDATABASENAME'} ) { installer::windows::msiglobal::add_language_to_msi_database($defaultlanguage, $installdir, $allvariableshashref); }
 
         $installer::logger::Info->print( "... generating setup.ini ...\n" );
-        
+
         if ( ! $allvariableshashref->{'NOLOADERREQUIRED'} ) { installer::windows::msiglobal::create_setup_ini($languagesarrayref, $defaultlanguage, $installdir, $allvariableshashref); }
     }
 
@@ -627,7 +627,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
 
     $installer::globals::packjobref = installer::windows::msiglobal::generate_cab_file_list($filesinproductlanguageresolvedarrayref, $installdir, $ddfdir, $allvariableshashref);
 
-    $installer::logger::Info->print("\n"); 
+    $installer::logger::Info->print("\n");
 
     #######################################################
     # Finally really create the installation packages,
@@ -667,7 +667,7 @@ sub MakeWindowsBuild ($$$$$$$$$$$$$$$$$$$$)
         my $downloaddir = installer::download::create_download_sets($finalinstalldir, $includepatharrayref, $allvariableshashref, $$downloadname, $languagestringref, $languagesarrayref);
         installer::worker::analyze_and_save_logfile($loggingdir, $downloaddir, $installlogdir, $allsettingsarrayref, $languagestringref, $current_install_number);
     }
-    
+
 }
 
 
@@ -724,12 +724,12 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
     for ( my $k = 0; $k <= $#{$packages}; $k++ )
     {
         my $onepackage = ${$packages}[$k];
-        
+
         # checking, if this is a language pack or a project pack.
         # Creating language packs only, if $installer::globals::languagepack is set. Parameter: -languagepack
-        
+
         if ( $installer::globals::languagepack ) { installer::languagepack::replace_languagestring_variable($onepackage, $languagestringref); }
-        
+
         my $onepackagename = $onepackage->{'module'};			# name of the top module (required)
 
         my $shellscriptsfilename = "";
@@ -745,29 +745,29 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
 
         if ( $installer::globals::issolarisbuild )	 # only for Solaris
         {
-            if ( $onepackage->{'solarispackagename'} ) { $packagename = $onepackage->{'solarispackagename'}; }	
+            if ( $onepackage->{'solarispackagename'} ) { $packagename = $onepackage->{'solarispackagename'}; }
         }
         else # not Solaris
         {
             if ( $onepackage->{'packagename'} ) { $packagename = $onepackage->{'packagename'}; }
         }
-        
+
         if (!($packagename eq ""))
-        { 
+        {
             installer::packagelist::resolve_packagevariables(\$packagename, $allvariableshashref, 0);
         }
 
         # Debian allows no underline in package name
-        if ( $installer::globals::debian ) { $packagename =~ s/_/-/g; } 
+        if ( $installer::globals::debian ) { $packagename =~ s/_/-/g; }
 
         # Debian allows no underline in package name
-        if ( $installer::globals::debian ) { $packagename =~ s/_/-/g; } 
+        if ( $installer::globals::debian ) { $packagename =~ s/_/-/g; }
 
         my $linkaddon = "";
         my $linkpackage = 0;
         $installer::globals::add_required_package = "";
         $installer::globals::linuxlinkrpmprocess = 0;
-        
+
         if ( $installer::globals::makelinuxlinkrpm )
         {
             my $oldpackagename = $packagename;
@@ -792,10 +792,10 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
         # try it again later.
         ####################################################
 
-        if (( $installer::globals::patch ) || 
+        if (( $installer::globals::patch ) ||
             ( $installer::globals::languagepack ) ||
             ( $installer::globals::packageformat eq "native" ) ||
-            ( $installer::globals::packageformat eq "portable" ) || 
+            ( $installer::globals::packageformat eq "portable" ) ||
             ( $installer::globals::packageformat eq "osx" )) { $allvariableshashref->{'POOLPRODUCT'} = 0; }
 
         if ( $allvariableshashref->{'POOLPRODUCT'} )
@@ -847,7 +847,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
         ###########################################
         # setting the root path for the packages
         ###########################################
-        
+
         installer::scriptitems::add_rootpath_to_directories($dirsinpackage, $packagerootpath);
         installer::scriptitems::add_rootpath_to_files($filesinpackage, $packagerootpath);
         installer::scriptitems::add_rootpath_to_links($linksinpackage, $packagerootpath);
@@ -888,7 +888,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
                 $installer::logger::Lang->print("\n");
                 $installer::logger::Lang->print("\n");
                 $installer::logger::Lang->print("Linux Patch: No patch file in package: %s \-\> Skipping\n\n",
-                    $packagename); 
+                    $packagename);
                 next;
             }
         }
@@ -898,14 +898,14 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
         ###########################################
 
         # Building for non Windows platforms in cws requires, that all files are stripped before packaging:
-        # 1. copy all files that need to be stripped locally 
+        # 1. copy all files that need to be stripped locally
         # 2. strip all these files
 
         if ( $installer::globals::strip )
         {
             installer::strip::strip_libraries($filesinpackage, $languagestringref);
         }
-        
+
         ###############################################################
         # Searching for files in $filesinpackage with flag LINUXLINK
         ###############################################################
@@ -937,8 +937,8 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
                     if ( $installer::globals::patch ) { $installer::globals::call_epm = 0; }	 # no packing of core module in patch
                     $shellscriptsfilename = "";	# shell scripts only need to be included into the link rpm
                     $run = 1;
-                }					
-            }							
+                }
+            }
         }
 
         ###########################################
@@ -961,13 +961,13 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
         ###########################################
         # Creating epm list file
         ###########################################
-        
+
         if ( ! $installer::globals::simple )
-        {			
+        {
             # epm list file format:
             # type mode owner group destination source options
             # Example for a file: f 755 root sys /usr/bin/foo foo
-            # Example for a directory: d 755 root sys /var/spool/foo - 
+            # Example for a directory: d 755 root sys /var/spool/foo -
             # Example for a link: l 000 root sys /usr/bin/linkname filename
             # The source field specifies the file to link to
 
@@ -990,13 +990,13 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
                 {
                     push(@installer::globals::emptypackages, $packagename);
                     $installer::logger::Lang->print("\n");
-                    $installer::logger::Lang->print("No file in package: %s \-\> Skipping\n", $packagename); 
+                    $installer::logger::Lang->print("No file in package: %s \-\> Skipping\n", $packagename);
                     next;	# next package, end of loop !
                 }
             }
 
             # adding directories, files and links into epm file
-			
+
             installer::epmfile::put_directories_into_epmfile($dirsinpackage, \@epmfile, $allvariableshashref, $packagerootpath);
             installer::epmfile::put_files_into_epmfile($filesinpackage, \@epmfile );
             installer::epmfile::put_links_into_epmfile($linksinpackage, \@epmfile );
@@ -1014,7 +1014,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
             if ( $onepackage->{'relocatablepath'} ) { $relocatablepath = $onepackage->{'relocatablepath'}; }
             # setting fix part and variable part of destination path
             installer::epmfile::analyze_rootpath($packagerootpath, \$staticpath, \$relocatablepath, $allvariableshashref);
-            
+
             # ... replacing the variable PRODUCTDIRECTORYNAME in the shellscriptfile by $staticpath
 
             installer::epmfile::resolve_path_in_epm_list_before_packaging(\@epmfile, $completeepmfilename, "PRODUCTDIRECTORYNAME", $staticpath);
@@ -1033,7 +1033,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
             if ( $allvariableshashref->{'POOLPRODUCT'} ) { $use_package_from_pool = installer::packagepool::package_is_up_to_date($allvariableshashref, $onepackage, $packagename, \@epmfile, $filesinpackage, $installdir, $installer::globals::epmoutpath, $languagestringref); }
 
             if ( $use_package_from_pool == 3 ) # repeat this package later
-            {	
+            {
                 my $package_is_creatable = installer::packagepool::check_package_availability($packagename);
 
                 if (( ! $package_is_creatable ) && ( ! exists($installer::globals::poolshiftedpackages{$packagename}) ))
@@ -1061,9 +1061,9 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
             }
 
             if ( $use_package_from_pool == 0 )
-            {	
+            {
                 # changing into the "install" directory to create installation sets
-                
+
                 my $currentdir = cwd();	# $currentdir is global in this file
 
                 chdir($installdir);		# changing into install directory ($installdir is global in this file)
@@ -1072,14 +1072,14 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
                 # Starting epm
                 ###########################################
 
-                # With a patched epm, it is now possible to set the relocatable directory, change 
+                # With a patched epm, it is now possible to set the relocatable directory, change
                 # the directory in which the packages are created, setting "requires" and "provides"
                 # (Linux) or creating the "depend" file (Solaris) and finally to begin
                 # the packaging process with standard tooling and standard parameter
                 # Linux: Adding into the spec file: Prefix: /opt
                 # Solaris: Adding into the pkginfo file: BASEDIR=/opt
                 # Attention: Changing of the path can influence the shell scripts
-				
+
                 if (( $installer::globals::is_special_epm ) && ( ($installer::globals::islinuxrpmbuild) || ($installer::globals::issolarispkgbuild) ))	# special handling only for Linux RPMs and Solaris Packages
                 {
                     if ( $installer::globals::call_epm )	# only do something, if epm is really executed
@@ -1105,12 +1105,12 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
                         installer::epmfile::create_new_directory_structure($newepmdir);
                         $installer::globals::postprocess_specialepm = 1;
 
-                        # solaris patch not needed anymore						
+                        # solaris patch not needed anymore
                         # if (( $installer::globals::patch ) && ( $installer::globals::issolarisx86build )) { installer::worker::fix2_solaris_x86_patch($packagename, $installer::globals::epmoutpath); }
-                    }		
+                    }
                 }
                 else	# this is the standard epm (not relocatable) or ( nonlinux and nonsolaris )
-                {			
+                {
                     installer::epmfile::resolve_path_in_epm_list_before_packaging(\@epmfile, $completeepmfilename, "\$\$PRODUCTINSTALLLOCATION", $relocatablepath);
                     installer::files::save_file($completeepmfilename ,\@epmfile);	# Warning for pool, content of epm file is changed.
 
@@ -1139,9 +1139,9 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
 
                 chdir($currentdir);	# changing back into start directory
 
-            } # end of "if ( ! $use_package_from_pool ) 
+            } # end of "if ( ! $use_package_from_pool )
 
-        } # end of "if ( ! $installer::globals::simple ) 
+        } # end of "if ( ! $installer::globals::simple )
 
         ###########################################
         # xpd installation mechanism
@@ -1215,7 +1215,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
         installer::logger::include_header_into_logfile("Post EPM processes (Unpatched EPM):");
 
         chdir($installdir);
-        
+
         # determine the destination directory
         my $newepmdir = installer::epmfile::determine_installdir_ooo();
 
@@ -1236,7 +1236,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
     }
 
     if (( $installer::globals::issolarispkgbuild ) && ( $allvariableshashref->{'COLLECT_PKGMAP'} )) { installer::worker::collectpackagemaps($installdir, $languagestringref, $allvariableshashref); }
-    
+
     #######################################################
     # Analyzing the log file
     #######################################################
@@ -1384,7 +1384,7 @@ foreach my $key (sort keys %$allvariableshashref)
 {
     $installer::logger::Global->printf("    %s -> %s\n", $key, $allvariableshashref->{$key});
 }
-    
+
 
 # When we are building a release (-release option was given on the command line)
 # then we need additional information.
@@ -1542,9 +1542,9 @@ my $filesinproductarrayref = installer::setupscript::get_all_items_from_script($
 
 $filesinproductarrayref = installer::scriptitems::remove_delete_only_files_from_productlists($filesinproductarrayref);
 
-if (( ! $installer::globals::iswindowsbuild ) && 
-	( ! $installer::globals::islinuxrpmbuild ) && 
-	( ! $installer::globals::islinuxdebbuild ) && 
+if (( ! $installer::globals::iswindowsbuild ) &&
+	( ! $installer::globals::islinuxrpmbuild ) &&
+	( ! $installer::globals::islinuxdebbuild ) &&
 	( ! $installer::globals::issolarispkgbuild ) &&
 	( $installer::globals::packageformat ne "installed" ) &&
 	( $installer::globals::packageformat ne "dmg" ) &&
@@ -1643,7 +1643,7 @@ if ( $installer::globals::iswindowsbuild )	# Windows specific items: Folder, Fol
 
 my $modulesinproductarrayref;
 
-if (!($installer::globals::is_copy_only_project)) 
+if (!($installer::globals::is_copy_only_project))
 {
 	$installer::logger::Info->print( "... analyzing modules ... \n" );
 
@@ -1691,7 +1691,7 @@ if ( $installer::globals::debug ) { installer::logger::savedebug($installer::glo
 
 # Run the following code block exactly once.
 # This strange version of a do{}while(false) loop exists only to allow (legacy) next statements.
-for (;1;last) 
+for (;1;last)
 {
 	my $languagesarrayref = installer::languages::get_all_languages_for_one_product($installer::globals::languageproduct, $allvariableshashref);
 
@@ -1702,7 +1702,7 @@ for (;1;last)
 
 	if ( $installer::globals::patch )
 	{
-		$installer::globals::addlicensefile = 0;	# no license files for patches	
+		$installer::globals::addlicensefile = 0;	# no license files for patches
 		$installer::globals::makedownload = 0;
 		$installer::globals::makejds = 0;
 	}
@@ -1810,7 +1810,7 @@ for (;1;last)
 	# Setting global code variables for Windows
 	##############################################
 
-	if (!($installer::globals::is_copy_only_project)) 
+	if (!($installer::globals::is_copy_only_project))
 	{
 		if (( $installer::globals::iswindowsbuild )
             && ( $installer::globals::packageformat ne "archive" )
@@ -1821,7 +1821,7 @@ for (;1;last)
                 $allvariableshashref);
 		}
 	}
-		
+
 	################################################
 	# Resolving include paths (language dependent)
 	################################################
@@ -1835,7 +1835,7 @@ for (;1;last)
 	##############################################
 	# Analyzing spellchecker languages
 	##############################################
-	
+
 	if ( $allvariableshashref->{'SPELLCHECKERFILE'} ) { installer::worker::set_spellcheckerlanguages($languagesarrayref, $allvariableshashref); }
 
 	#####################################
@@ -1865,7 +1865,7 @@ for (;1;last)
 	{
 		$filesinproductlanguageresolvedarrayref = installer::scriptitems::remove_office_start_language_files($filesinproductlanguageresolvedarrayref);
 	}
-	
+
 	installer::scriptitems::changing_name_of_language_dependent_keys($filesinproductlanguageresolvedarrayref);
 	if ( $installer::globals::iswin and $^O =~ /MSWin/i ) { installer::converter::convert_slash_to_backslash($filesinproductlanguageresolvedarrayref); }
 
@@ -1897,7 +1897,7 @@ for (;1;last)
 	$filesinproductlanguageresolvedarrayref = installer::scriptitems::remove_onlywesternlanguage_files_from_productlists($filesinproductlanguageresolvedarrayref);
 
 	installer::scriptitems::make_filename_language_specific($filesinproductlanguageresolvedarrayref);
-	
+
 	######################################################################################
 	# Unzipping files with flag ARCHIVE and putting all included files into the file list
 	######################################################################################
@@ -1908,7 +1908,7 @@ for (;1;last)
 
 	$filesinproductlanguageresolvedarrayref = installer::archivefiles::resolving_archive_flag($filesinproductlanguageresolvedarrayref, \@additional_paths_from_zipfiles, $languagestringref, $loggingdir);
 
-	# packed files sometimes contain a "$" in their name: HighlightText$1.class. For epm the "$" has to be quoted by "$$" 
+	# packed files sometimes contain a "$" in their name: HighlightText$1.class. For epm the "$" has to be quoted by "$$"
 
 	if (!( $installer::globals::iswindowsbuild || $installer::globals::simple ) )
 	{
@@ -1918,7 +1918,7 @@ for (;1;last)
 	#####################################
 	# Files with flag SUBST_FILENAME
 	#####################################
-	
+
 	$installer::logger::Info->print( "... analyzing files with flag SUBST_FILENAME ...\n" );
 
 	installer::substfilenamefiles::resolving_subst_filename_flag($filesinproductlanguageresolvedarrayref, $allvariableshashref, $languagestringref);
@@ -1926,7 +1926,7 @@ for (;1;last)
 	#####################################
 	# Files with flag SCPZIP_REPLACE
 	#####################################
-	
+
 	$installer::logger::Info->print( "... analyzing files with flag SCPZIP_REPLACE ...\n" );
 
 	# Editing files with flag SCPZIP_REPLACE.
@@ -1936,7 +1936,7 @@ for (;1;last)
 	#####################################
 	# Files with flag PATCH_SO_NAME
 	#####################################
-	
+
 	$installer::logger::Info->print( "... analyzing files with flag PATCH_SO_NAME ...\n" );
 
 	# Editing files with flag PATCH_SO_NAME.
@@ -1946,7 +1946,7 @@ for (;1;last)
 	#####################################
 	# Files with flag HIDDEN
 	#####################################
-	
+
 	$installer::logger::Info->print( "... analyzing files with flag HIDDEN ...\n" );
 
 	installer::worker::resolving_hidden_flag($filesinproductlanguageresolvedarrayref, $allvariableshashref, "File", $languagestringref);
@@ -1961,13 +1961,13 @@ for (;1;last)
 	# 1. Looking for all destination paths in the files array
 	# 2. Looking for directories with CREATE flag in the directory array
 	# Advantage: Many paths are hidden in zip files, they are not defined in the setup script.
-	# It will be possible, that in the setup script only those directoies have to be defined,
+	# It will be possible, that in the setup script only those directories have to be defined,
 	# that have a CREATE flag. All other directories are created, if they contain at least one file.
 
 	my ($directoriesforepmarrayref, $alldirectoryhash) = installer::scriptitems::collect_directories_from_filesarray($filesinproductlanguageresolvedarrayref);
-	
+
 	($directoriesforepmarrayref, $alldirectoryhash) = installer::scriptitems::collect_directories_with_create_flag_from_directoryarray($dirsinproductlanguageresolvedarrayref, $alldirectoryhash);
-	
+
 	# installer::sorter::sorting_array_of_hashes($directoriesforepmarrayref, "HostName");
 	# if ( $installer::globals::globallogging ) { installer::files::save_array_of_hashes($loggingdir . "directoriesforepmlist3.log", $directoriesforepmarrayref); }
 
@@ -2098,8 +2098,8 @@ for (;1;last)
 	#########################################################
 
 	my $modulesinproductlanguageresolvedarrayref;
-	
-	if (!($installer::globals::is_copy_only_project)) 
+
+	if (!($installer::globals::is_copy_only_project))
 	{
 		$installer::logger::Info->print( "... analyzing modules ...\n" );
 
@@ -2109,14 +2109,14 @@ for (;1;last)
 
 		installer::scriptitems::changing_name_of_language_dependent_keys($modulesinproductlanguageresolvedarrayref);
 
-		# installer::scriptitems::collect_language_specific_names($modulesinproductlanguageresolvedarrayref);	
+		# installer::scriptitems::collect_language_specific_names($modulesinproductlanguageresolvedarrayref);
 		installer::scriptitems::select_required_language_strings($modulesinproductlanguageresolvedarrayref);	# using english strings
 	}
-		
-	# Copy-only projects can now start to copy all items File and ScpAction 
+
+	# Copy-only projects can now start to copy all items File and ScpAction
 	if ( $installer::globals::is_copy_only_project ) { installer::copyproject::copy_project($filesinproductlanguageresolvedarrayref, $scpactionsinproductlanguageresolvedarrayref, $loggingdir, $languagestringref, $shipinstalldir, $allsettingsarrayref); }
 
-	# Language pack projects can now start to select the required information 
+	# Language pack projects can now start to select the required information
 	if ( $installer::globals::languagepack )
 	{
 		$filesinproductlanguageresolvedarrayref = installer::languagepack::select_language_items($filesinproductlanguageresolvedarrayref, $languagesarrayref, "File");
@@ -2140,7 +2140,7 @@ for (;1;last)
 	# Collecting all files without flag PATCH (for maintenance reasons)
 	if ( $installer::globals::patch ) { installer::worker::collect_all_files_without_patch_flag($filesinproductlanguageresolvedarrayref); }
 
-	# Patch projects can now start to select the required information 
+	# Patch projects can now start to select the required information
 	if (( $installer::globals::patch ) && (( $installer::globals::issolarispkgbuild ) || ( $installer::globals::iswindowsbuild )))
 	{
 		$filesinproductlanguageresolvedarrayref = installer::worker::select_patch_items($filesinproductlanguageresolvedarrayref, "File");
@@ -2149,7 +2149,7 @@ for (;1;last)
 		$unixlinksinproductlanguageresolvedarrayref = installer::worker::select_patch_items($unixlinksinproductlanguageresolvedarrayref, "Unixlink");
 		$folderitemsinproductlanguageresolvedarrayref = installer::worker::select_patch_items($folderitemsinproductlanguageresolvedarrayref, "FolderItem");
 		# @{$folderitemsinproductlanguageresolvedarrayref} = (); # no folderitems in languagepacks
-		
+
 		if ( $installer::globals::iswindowsbuild )
 		{
 			$registryitemsinproductlanguageresolvedarrayref = installer::worker::select_patch_items_without_name($registryitemsinproductlanguageresolvedarrayref, "RegistryItem");
@@ -2158,7 +2158,7 @@ for (;1;last)
 
 			# For Windows patches, the directories can now be collected again
 			($directoriesforepmarrayref, $alldirectoryhash) = installer::scriptitems::collect_directories_from_filesarray($filesinproductlanguageresolvedarrayref);
-		
+
 			installer::sorter::sorting_array_of_hashes($directoriesforepmarrayref, "HostName");
 		}
 	}
@@ -2203,7 +2203,7 @@ for (;1;last)
 	# Links and ScpActions. This is the last platform
 	# independent part.
 	###########################################################
-	
+
 	if ( $installer::globals::is_simple_packager_project )
 	{
 		installer::simplepackage::create_simple_package($filesinproductlanguageresolvedarrayref, $directoriesforepmarrayref, $scpactionsinproductlanguageresolvedarrayref, $linksinproductlanguageresolvedarrayref, $unixlinksinproductlanguageresolvedarrayref, $loggingdir, $languagestringref, $shipinstalldir, $allsettingsarrayref, $allvariableshashref, $includepatharrayref);
@@ -2215,7 +2215,7 @@ for (;1;last)
 	###########################################################
 
 	$installer::logger::Info->print( "... analyzing package list ...\n" );
-	
+
 	my $packages = installer::packagelist::collectpackages($modulesinproductlanguageresolvedarrayref, $languagesarrayref);
 	installer::packagelist::check_packagelist($packages);
 

@@ -481,9 +481,9 @@ public class Cache
 
     //___________________________________________
 
-    /** create some html views of the current content of this cache.
+    /** create some HTML views of the current content of this cache.
      *
-     *  The given directory is used to create different html files
+     *  The given directory is used to create different HTML files
      *  there. Every of them show another aspect of this cache.
      *  E.g.: - all type/filter properties
      *        - relation ships between types/filters/loaders etc.

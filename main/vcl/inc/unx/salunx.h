@@ -121,4 +121,3 @@ inline timeval operator - ( const timeval &t1, const timeval &t2 )
 	return t0 -= t2;
 }
 #endif
-

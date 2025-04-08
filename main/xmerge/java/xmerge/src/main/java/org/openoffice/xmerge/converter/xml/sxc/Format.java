@@ -468,4 +468,3 @@ public class Format implements Cloneable {
         return true;
     }	 
 }
-

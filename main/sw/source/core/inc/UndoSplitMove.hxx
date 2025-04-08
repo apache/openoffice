@@ -89,4 +89,3 @@ public:
 };
 
 #endif // SW_UNDO_MOVE_HXX
-

@@ -1938,4 +1938,3 @@ void SwInsertDBColAutoPilot::Load()
 		}
 	}
 }
-

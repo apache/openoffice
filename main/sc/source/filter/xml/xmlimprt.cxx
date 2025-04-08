@@ -228,26 +228,6 @@ const SvXMLTokenMap& ScXMLImport::GetTableRowCellAttrTokenMap()
 
 //----------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // NB: virtually inherit so we can multiply inherit properly
 //     in ScXMLFlatDocContext_Impl
 class ScXMLDocContext_Impl : public virtual SvXMLImportContext
@@ -3069,4 +3049,3 @@ void ScXMLImport::ExtractFormulaNamespaceGrammar(
     rFormulaNmsp = OUString();  // remove any namespace string
     reGrammar = eDefaultGrammar;
 }
-

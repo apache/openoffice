@@ -371,4 +371,3 @@ void MacroWarning::SetCertificate( const cssu::Reference< css::security::XCertif
 		maViewSignsBtn.Enable();
 	}
 }
-

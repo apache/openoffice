@@ -616,4 +616,3 @@ public:
 };
 
 #endif /* !_TOOLS_INETMSG_HXX */
-

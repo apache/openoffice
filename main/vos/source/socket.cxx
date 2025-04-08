@@ -1716,4 +1716,3 @@ sal_Int32 ODatagramSocket::sendTo(const OSocketAddr& ReceiverAddr,
 
     return -1;
 }
-

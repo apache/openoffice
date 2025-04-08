@@ -91,4 +91,3 @@ void SAL_CALL ProgressHandlerWrap::pop()
 }
 
 } // namespace utl
-

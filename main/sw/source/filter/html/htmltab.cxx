@@ -5576,4 +5576,3 @@ HTMLTable *SwHTMLParser::BuildTable( SvxAdjust eParentAdjust,
 
 	return pRetTbl;
 }
-

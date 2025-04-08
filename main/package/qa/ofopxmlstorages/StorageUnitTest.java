@@ -166,4 +166,3 @@ public class StorageUnitTest
 		assertTrue( "Test08 failed!", aTest.test() );
 	}
 }
-

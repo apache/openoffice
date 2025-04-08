@@ -1035,4 +1035,3 @@ void SfxApplication::NotifyEvent( const SfxEventHint& rEventHint, bool bSynchron
 }
 
 IMPL_OBJHINT( SfxStringHint, String )
-

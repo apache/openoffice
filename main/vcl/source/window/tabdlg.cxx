@@ -269,4 +269,3 @@ void TabDialog::AdjustLayout()
 {
 	ImplPosControls();
 }
-

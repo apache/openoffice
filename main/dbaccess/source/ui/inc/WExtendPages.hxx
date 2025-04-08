@@ -77,6 +77,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_WIZ_EXTENDPAGES_HXX
-
-
-

@@ -152,6 +152,3 @@ Reference< XResultSet > OAdabasDatabaseMetaData::impl_getTypeInfo_throw(  )
     return xNewRes;
 }
 // -----------------------------------------------------------------------------
-
-
-

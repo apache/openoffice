@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -27,7 +27,7 @@ use par2script::converter;
 use par2script::exiter;
 
 ###########################################
-# Removing undefined gids 
+# Removing undefined gids
 # from modules
 ###########################################
 
@@ -55,18 +55,18 @@ sub remove_from_modules
 			$allmodules->{$onemodule}->{$searchkey} =~ s/\,\s*\,/\,/;
 			$allmodules->{$onemodule}->{$searchkey} =~ s/\(\s*\,\s*/\(/;
 			$allmodules->{$onemodule}->{$searchkey} =~ s/\s*\,\s*\)/\)/;
-					
-			if (( $allmodules->{$onemodule}->{$searchkey} =~ /\(\s*\,\s*\)/ ) || 
+
+			if (( $allmodules->{$onemodule}->{$searchkey} =~ /\(\s*\,\s*\)/ ) ||
 				( $allmodules->{$onemodule}->{$searchkey} =~ /\(\s*\)/ ))
 			{
 				delete($allmodules->{$onemodule}->{$searchkey});
 			}
-			
-			$counter++;			
+
+			$counter++;
 		}
 	}
-	
-	return $counter;	
+
+	return $counter;
 }
 
 ###########################################
@@ -76,7 +76,7 @@ sub remove_from_modules
 
 sub remove_undefined_gids_from_modules
 {
-	# If assigned gids for "File", "Directory" or "Unixlink" are not defined, 
+	# If assigned gids for "File", "Directory" or "Unixlink" are not defined,
 	# they are automatically removed from the module
 
 	foreach $item ( @par2script::globals::items_assigned_at_modules )
@@ -93,14 +93,14 @@ sub remove_undefined_gids_from_modules
 				my $number_of_removals = remove_from_modules($gid, $item);
 				# decreasing counter in assignments
 				if ( $assignedgids->{$gid} > $number_of_removals ) { $assignedgids->{$gid} = $assignedgids->{$gid} - $number_of_removals; }
-				else { delete($assignedgids->{$gid}); }								
+				else { delete($assignedgids->{$gid}); }
 			}
 		}
 	}
 }
 
 ############################################
-# Getting the gid of the root module. The 
+# Getting the gid of the root module. The
 # root module has no ParentID or an empty
 # ParentID.
 ############################################
@@ -111,7 +111,7 @@ sub get_rootmodule_gid
 	my $foundroot = 0;
 
 	my $allmodules = $par2script::globals::definitions{'Module'};
-	
+
 	my $modulegid = "";
 	foreach $modulegid (keys %{$allmodules} )
 	{
@@ -128,22 +128,22 @@ sub get_rootmodule_gid
 			$foundroot = 1;
 		}
 	}
-	
+
 	if ( ! $foundroot ) { par2script::exiter::exit_program("ERROR: Could not find Root module. Did not find module without ParentID or with empty ParentID.", "get_rootmodule_gid"); }
-	
-	return $rootgid;	
+
+	return $rootgid;
 }
 
 ####################################
-# Adding defined items without 
+# Adding defined items without
 # assignment to the root module.
 ####################################
 
 sub add_to_root_module
 {
-	# If defined gids for "File", "Directory" or "Unixlink" are not assigned, 
+	# If defined gids for "File", "Directory" or "Unixlink" are not assigned,
 	# they are automatically assigned to the root module
-	
+
 	my $rootmodulegid = get_rootmodule_gid();
 
 	my $item;
@@ -153,7 +153,7 @@ sub add_to_root_module
 		my $definedgids = $par2script::globals::definitions{$item};
 
 		my $gidstring = "";
-		
+
 		# Perhaps there are already items assigned to the root
 		if ( ! exists($par2script::globals::searchkeys{$item}) ) { par2script::exiter::exit_program("ERROR: Unknown type \"$item\" at modules.", "remove_from_modules"); }
 		my $modulekey = $par2script::globals::searchkeys{$item};
@@ -177,7 +177,7 @@ sub add_to_root_module
 				{
 					$gidstring = "$gidstring,$gid";
 				}
-				
+
 				$assignedgids->{$gid} = 1;
 			}
 		}
@@ -187,7 +187,7 @@ sub add_to_root_module
 			$gidstring = "\($gidstring\)";
 			$par2script::globals::definitions{'Module'}->{$rootmodulegid}->{$modulekey} = $gidstring;
 		}
-	}	
+	}
 }
 
 ###################################################
@@ -203,7 +203,7 @@ sub include_linebreaks
 
 	$allgidstring =~ s/\(//;
 	$allgidstring =~ s/\)//;
-	
+
 	my $allgids = par2script::converter::convert_stringlist_into_array_2($allgidstring, ",");
 
 	if ( $#{$allgids} > -1 )
@@ -217,10 +217,10 @@ sub include_linebreaks
 			if ( $newlength > 80 )
 			{
 				$newline = $newline . "\n\t\t\t\t";
-				$newlength = 0;	
+				$newlength = 0;
 			}
 		}
-	}	
+	}
 
 	$newline =~ s/,\s*$//;
 	$newline = "($newline)";
@@ -246,7 +246,7 @@ sub shorten_lines_at_modules
 		my $onemodule;
 		foreach $onemodule (keys %{$allmodules})
 		{
-			if (( exists($allmodules->{$onemodule}->{$searchkey}) ) && 
+			if (( exists($allmodules->{$onemodule}->{$searchkey}) ) &&
 				( length($allmodules->{$onemodule}->{$searchkey}) > 100 ))
 			{
 				# including "\n\t\t\t\t"

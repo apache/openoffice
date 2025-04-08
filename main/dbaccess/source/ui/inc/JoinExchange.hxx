@@ -89,5 +89,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_JOINEXCHANGE_HXX
-
-

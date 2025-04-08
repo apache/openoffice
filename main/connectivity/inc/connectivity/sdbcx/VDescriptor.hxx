@@ -95,4 +95,3 @@ namespace connectivity
 
 }
 #endif // _CONNECTIVITY_SDBCX_DESCRIPTOR_HXX_
-

@@ -2915,5 +2915,3 @@ void SwTableBox::ForgetFrmFmt()
     if ( GetRegisteredIn() )
         GetRegisteredInNonConst()->Remove(this);
 }
-
-

@@ -160,8 +160,3 @@ public class TimeStampControl extends DatabaseControl
         return FormHandler.SODATETIMECONTROL;
     }
 }
-
-
-
-
-

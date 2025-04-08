@@ -48,7 +48,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::i18n::XBreakIterator</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see ifc.i18n._XBreakIterator
 */
 public class BreakIterator extends TestCase {
@@ -67,7 +67,7 @@ public class BreakIterator extends TestCase {
             log.println( "creating a drawdoc" );
             xTextDoc = SOF.loadDocument(utils.getFullTestURL("Iterator.sxw"));
         } catch ( com.sun.star.uno.Exception e ) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn't load document", e );
         }
@@ -116,4 +116,3 @@ public class BreakIterator extends TestCase {
     }
 
 }    // finish class BreakIterator
-

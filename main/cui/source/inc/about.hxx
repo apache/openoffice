@@ -73,5 +73,3 @@ public:
 };
 
 #endif // #ifndef _ABOUT_HXX
-
-

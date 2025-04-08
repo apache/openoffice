@@ -138,4 +138,3 @@ private:
 
 
 #endif // SC_PFILTDLG_HXX
-

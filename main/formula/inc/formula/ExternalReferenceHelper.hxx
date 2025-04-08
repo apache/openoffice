@@ -38,4 +38,3 @@ namespace formula
 } // formula
 // =============================================================================
 #endif //FORMULA_EXTERNALREFERENCEHELPER_HXX
-

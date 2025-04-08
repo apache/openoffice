@@ -419,4 +419,3 @@ Interceptor::setMasterDispatchProvider(
 	osl::MutexGuard aGuard(m_aMutex);
 	m_xMasterDispatchProvider = NewSupplier;
 }
-

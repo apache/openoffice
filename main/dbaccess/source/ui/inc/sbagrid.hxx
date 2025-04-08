@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _SBA_GRID_HXX
 #define _SBA_GRID_HXX
 
-//	#include <sdb/tools.hxx>
+//#include <sdb/tools.hxx>
 
 #ifndef _SVX_FMGRIDCL_HXX
 #include <svx/fmgridcl.hxx>
@@ -168,7 +166,7 @@ namespace dbaui
 #endif // # _MSC_VER>=1310
 
 	private:
-		// for asny execution of XDispatch::dispatch
+		// for any execution of XDispatch::dispatch
 		struct DispatchArgs
 		{
 			::com::sun::star::util::URL													aURL;
@@ -219,8 +217,8 @@ namespace dbaui
 
 		sal_Bool ImplStartColumnDrag(sal_Int8 _nAction, const Point& _rMousePos);
 
-    private:
-        using FmGridHeader::StartDrag;
+	private:
+		using FmGridHeader::StartDrag;
 	};
 
 	// =========================================================================
@@ -256,7 +254,7 @@ namespace dbaui
 		sal_Int32			            m_nAsyncDropEvent;
 
 		sal_uInt16                          m_nCurrentActionColId;
-			// ui actions (e.g. a context menu) may be performed on columns which aren't the current one
+			// UI actions (e.g. a context menu) may be performed on columns which aren't the current one
 			// and aren't selected, so we have to track this column id
 
 		sal_Bool	                    m_bActivatingForDrop;
@@ -285,18 +283,18 @@ namespace dbaui
 			@param	eObjType
 				The type to ask for
 			@param	_nPosition
-				The position of a tablecell (index position), header bar  column/row cell
+				The position of a tablecell (index position), header bar column/row cell
 			@return
 				The description of the specified object.
 		*/
 		virtual ::rtl::OUString GetAccessibleObjectDescription( ::svt::AccessibleBrowseBoxObjType eObjType,sal_Int32 _nPosition = -1) const;
 
 		virtual void DeleteSelectedRows();
-        /** copies the currently selected rows to the clipboard
-            @precond
-                at least one row is selected
-        */
-        void CopySelectedRowsToClipboard();
+		/** copies the currently selected rows to the clipboard
+			@precond
+				at least one row is selected
+		*/
+		void CopySelectedRowsToClipboard();
 
 
 	protected:
@@ -317,9 +315,9 @@ namespace dbaui
 		virtual void PreExecuteRowContextMenu(sal_uInt16 nRow, PopupMenu& rMenu);
 		virtual void PostExecuteRowContextMenu(sal_uInt16 nRow, const PopupMenu& rMenu, sal_uInt16 nExecutionResult);
 
-        // DbGridControl overridables
-	    virtual void onRowChange();
-        virtual void onColumnChange();
+		// DbGridControl overridables
+		virtual void onRowChange();
+		virtual void onColumnChange();
 
 		// my own overridables
 		virtual void BeforeDrop();
@@ -347,13 +345,14 @@ namespace dbaui
 
 	private:
 		sal_Bool	IsReadOnlyDB() const;
-        void implTransferSelectedRows( sal_Int16 nRowPos, bool _bTrueIfClipboardFalseIfDrag );
+		void implTransferSelectedRows( sal_Int16 nRowPos, bool _bTrueIfClipboardFalseIfDrag );
 
-    private:
-        using FmGridControl::AcceptDrop;
-        using FmGridControl::ExecuteDrop;
-        using FmGridControl::MouseButtonDown;
+	private:
+		using FmGridControl::AcceptDrop;
+		using FmGridControl::ExecuteDrop;
+		using FmGridControl::MouseButtonDown;
 	};
 }
 #endif // _SBA_GRID_HXX
 
+/* vim: set noet sw=4 ts=4: */

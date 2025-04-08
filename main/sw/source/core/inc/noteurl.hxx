@@ -69,4 +69,3 @@ extern SwNoteURL *pNoteURL;
 
 
 #endif
-

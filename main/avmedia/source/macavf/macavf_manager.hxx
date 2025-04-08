@@ -56,4 +56,3 @@ private:
 } // namespace avmedia
 
 #endif // MACAVF_MANAGER_HXX
-

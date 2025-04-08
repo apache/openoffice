@@ -2194,4 +2194,3 @@ sal_Bool SAL_CALL  OleEmbeddedObject::isLink()
 
 	return m_aLinkURL;
 }
-

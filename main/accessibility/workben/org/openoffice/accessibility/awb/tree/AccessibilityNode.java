@@ -155,5 +155,3 @@ class AccessibilityNode extends DefaultMutableTreeNode implements XAccessible,
         listener = AccessibleEventMulticaster.remove(listener, xAccessibleEventListener);
     }
 }
-
-

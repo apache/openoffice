@@ -1,6 +1,6 @@
 : # -*- perl -*-
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
@@ -40,20 +40,20 @@ rpm --query --queryformat "%{POSTIN}\n" --package $package > postin
 rpm --query --queryformat "%{PREUN}\n" --package $package > preun
 rpm --query --queryformat "%{POSTUN}\n" --package $package > postun
 rpm --query --queryformat "[%{FILEMODES:perms} %{FILEUSERNAME}/%{FILEGROUPNAME} .%{FILENAMES} -> %{FILELINKTOS}\n]" --package $package | sed 's/ -> \$//' | sort --key=3 -o filelist
-    
+
 rpm2cpio $package | cpio --extract --make-directories
 
 rm --force `sed --silent 's|^lrw.r..r..-* root/root \\./\\(.*\\) -> .*|\\1 |p' filelist | tr -d "\\012"`
 EOF
 
-# the last step removes all symbolic links from the extracted file tree as they 
+# the last step removes all symbolic links from the extracted file tree as they
 # are handled by diffing the filelist
 }
 
 sub unpack_deb
 {
     my ($package) = @_;
-    
+
     system << "EOF"
 ar x $package control.tar.gz data.tar.gz
 tar --extract --ungzip --file=control.tar.gz
@@ -65,14 +65,14 @@ rm --force data.tar.gz
 rm --force `sed --silent 's|^lrw.r..r..- root/root \\./\\(.*\\) -> .*|\\1 |p' filelist | tr -d "\\012"`
 EOF
 
-# the last step removes all symbolic links from the extracted file tree as they 
+# the last step removes all symbolic links from the extracted file tree as they
 # are handled by diffing the filelist
 }
 
 sub unpack_solpkg
 {
     my ($package) = @_;
-    
+
     system << "EOF"
 sed -e '1 d' -e 's/[0-9][0-9]* [0-9][0-9]* [0-9]\\{10\\}\$//' $package/pkgmap > filelist
 grep -v "^PSTAMP=" $package/pkginfo > pkginfo
@@ -102,26 +102,26 @@ my @pkgroot = ();
 while ( $#ARGV >= 0 )
 {
     my $package = shift;
-    
+
     # make package paths absolute if necessary
     $package = $dir . "/" . $package unless $package =~ /^\//;
-    
+
     my $basename = basename($package);
-    
+
     # when comparing identically named packages, append a "-2"
     unless ( mkdir "$tempdir/$basename", 0777 ) {
         $basename = $basename . "-2";
         mkdir "$tempdir/$basename", 0777;
     }
-    
+
     # change working directory, unpack the package and change back ..
     die "Unable to change to unpack directory $tempdir/$basename: $!\n" unless chdir "$tempdir/$basename";
-    
+
     if ( $package =~ /\.rpm$/ )   { unpack_rpm( $package ); }
     elsif( $package =~ /\.deb$/ ) { unpack_deb( $package ); }
     elsif( -f "$package/pkgmap" ) { unpack_solpkg( $package ); }
     elsif( $package =~ /\.tgz$/ ) { unpack_tgz( $package ); }
-    
+
     push @pkgroot, $basename;
     chdir $dir;
 }
@@ -136,4 +136,3 @@ system "rm -rf *";
 chdir $dir;
 rmdir $tempdir;
 #print STDERR "rm -rf $tempdir\n";
-

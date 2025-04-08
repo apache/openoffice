@@ -75,4 +75,3 @@ class Directory
 }
 
 #endif // L10NTOOLS_DIRECTORY_HXX
-

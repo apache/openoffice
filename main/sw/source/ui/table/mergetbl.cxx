@@ -57,6 +57,3 @@ void SwMergeTblDlg::Apply()
 {
 	rMergePrev = aMergePrevRB.IsChecked();
 }
-
-
-

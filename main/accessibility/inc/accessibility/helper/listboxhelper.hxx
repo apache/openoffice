@@ -194,4 +194,3 @@ public:
 };
 
 #endif	// ACCESSIBILITY_HELPER_LISTBOXHELPER_HXX
-

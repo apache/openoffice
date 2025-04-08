@@ -451,4 +451,3 @@ public final class XmlDiff {
         System.out.println("Diff result: " + same); 
     }
 }
-

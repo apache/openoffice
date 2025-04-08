@@ -143,5 +143,3 @@ class EventQueue
     private LinkedList maRegularQueue;
     private LinkedList maDisposingQueue;
 }
-
-

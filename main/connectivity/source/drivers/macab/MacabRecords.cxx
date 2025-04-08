@@ -1205,4 +1205,3 @@ void MacabRecords::setName(const ::rtl::OUString _sName)
 {
 	return m_sName;
 }
-

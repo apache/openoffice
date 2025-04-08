@@ -36,4 +36,3 @@ rtl::OUString bigIntegerToNumericString( ::com::sun::star::uno::Sequence< sal_In
 ::com::sun::star::uno::Sequence< sal_Int8 > numericStringToBigInteger (	rtl::OUString serialNumber );
 
 #endif
-

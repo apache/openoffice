@@ -48,4 +48,3 @@ private:
 
 
 #endif // SC_NAVCITEM_HXX
-

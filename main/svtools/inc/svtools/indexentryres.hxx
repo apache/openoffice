@@ -40,5 +40,3 @@ class SVT_DLLPUBLIC IndexEntryRessource
 };
 
 #endif /* SVTOOLS_INDEXENTRYRESSOURCE_HXX */
-
-

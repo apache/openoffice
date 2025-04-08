@@ -168,4 +168,3 @@ sal_Bool XMLFontWeightPropHdl::exportXML( OUString& rStrExpValue, const Any& rVa
 
 	return bRet;
 }
-

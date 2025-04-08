@@ -51,4 +51,3 @@ protected:
 } // namespace svx
 
 #endif
-

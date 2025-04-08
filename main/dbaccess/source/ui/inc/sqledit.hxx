@@ -81,5 +81,3 @@ namespace dbaui
 }
 
 #endif // DBAUI_SQLEDIT_HXX
-
-

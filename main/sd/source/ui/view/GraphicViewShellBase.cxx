@@ -124,4 +124,3 @@ void GraphicViewShellBase::InitializeFramework (void)
 
 
 } // end of namespace sd
-

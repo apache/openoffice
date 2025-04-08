@@ -55,4 +55,3 @@ bool PNGToImage( com::sun::star::uno::Sequence<sal_Int8>& rPngData,
 			     NSBitmapImageFileType eOutFormat);
 
 #endif
-

@@ -167,4 +167,3 @@ namespace dbmm
 //........................................................................
 
 #endif // DBACCESS_MIGRATIONERROR_HXX
-

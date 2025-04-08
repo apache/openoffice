@@ -542,4 +542,3 @@ void SvtRulerAccessible::removeEventListener( const ::com::sun::star::uno::Refer
 
 
 // -------------------------------------------------------------------------------------------------
-

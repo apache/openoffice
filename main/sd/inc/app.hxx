@@ -22,4 +22,3 @@
 
 #define _SD_DLL             // fuer SD_MOD()
 #include "sdmod.hxx"
-

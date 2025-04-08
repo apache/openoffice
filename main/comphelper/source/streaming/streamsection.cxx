@@ -114,5 +114,3 @@ sal_Int32 OStreamSection::available()
 // -----------------------------------------------------------------------------
 
 }	// namespace comphelper
-
-

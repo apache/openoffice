@@ -125,4 +125,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_CATALOG_HXX_
-

@@ -52,4 +52,3 @@ void BoolExpression::setExpression( const rtl::OUString& rExpression )
 
 
 } // namespace xforms
-

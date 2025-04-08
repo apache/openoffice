@@ -90,4 +90,3 @@ StmArrayStatus::AsArray()
 {
 	return this;
 }
-

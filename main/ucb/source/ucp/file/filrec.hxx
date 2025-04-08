@@ -79,4 +79,3 @@ public:
 
 } // namespace fileaccess
 #endif	// _FILREC_HXX_
-

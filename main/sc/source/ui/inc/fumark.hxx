@@ -67,4 +67,3 @@ class FuMarkRect : public FuPoor
 
 
 #endif
-

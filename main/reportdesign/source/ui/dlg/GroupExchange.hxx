@@ -46,4 +46,3 @@ namespace rptui
 	};
 }
 #endif // RPTUI_GROUP_EXCHANGE_HXX
-

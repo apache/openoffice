@@ -99,4 +99,3 @@ typedef sfx::ItemControlConnection< FrameDirItemWrapper, FrameDirListBoxWrapper 
 } // namespace svx
 
 #endif
-

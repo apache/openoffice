@@ -138,9 +138,3 @@ FTPContentIdentifier::getContentProviderScheme(
 {
 	return rtl::OUString::createFromAscii("ftp");
 }
-
-
-
-
-
-

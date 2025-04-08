@@ -349,5 +349,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_FILE_ORESULTSET_HXX_
-
-

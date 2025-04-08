@@ -124,5 +124,3 @@ public class _Chart3DBarProperties extends MultiPropertyTest {
     }
     
 }  // finish class _Chart3DBarProperties
-
-

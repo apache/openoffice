@@ -112,5 +112,3 @@ void ScFilterOptions::Notify( const Sequence<rtl::OUString>& /* aPropertyNames *
 {
 	DBG_ERROR("properties have been changed");
 }
-
-

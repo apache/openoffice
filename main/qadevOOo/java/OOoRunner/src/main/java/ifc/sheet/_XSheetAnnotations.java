@@ -36,7 +36,7 @@ import com.sun.star.table.CellAddress;
 *  <li><code> insertNew()</code></li>
 *  <li><code> removeByIndex()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.sheet.XSheetAnnotations
 */
 public class _XSheetAnnotations extends MultiMethodTest {
@@ -82,5 +82,3 @@ public class _XSheetAnnotations extends MultiMethodTest {
     }
 
 } // EOC _XSheetAnnotations
-
-

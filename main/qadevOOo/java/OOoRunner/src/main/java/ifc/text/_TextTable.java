@@ -111,4 +111,3 @@ public class _TextTable extends MultiPropertyTest {
     }    
 
 } // finish class _TextTable
-

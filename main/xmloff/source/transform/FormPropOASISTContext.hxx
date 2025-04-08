@@ -48,4 +48,3 @@ public:
 };
 
 #endif	//  _XMLOFF_FORMPROPOASISTCONTEXT_HXX
-

@@ -738,4 +738,3 @@ public:
 };
 
 #endif	//  _XMLOFF_SVXMLEXP_HXX
-

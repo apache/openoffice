@@ -124,5 +124,3 @@ public:
 };
 
 #endif // _RTF_HXX
-
-

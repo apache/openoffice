@@ -82,4 +82,3 @@ public:
 };
 
 #endif // #ifndef _SVX_WGHTITEM_HXX
-

@@ -253,4 +253,3 @@ void
 		puttokens(&tr);
 	}
 }
-

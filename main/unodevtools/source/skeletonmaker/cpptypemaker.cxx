@@ -963,5 +963,3 @@ void generateDocumentation(std::ostream & o,
 }
 
 } }
-
-

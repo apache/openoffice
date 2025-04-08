@@ -34,7 +34,7 @@ import lib.MultiMethodTest;
 *  <li><code> insertAtPosition()</code></li>
 *  <li><code> removeByIndex()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.sheet.XAreaLinks
 */
 public class _XAreaLinks extends MultiMethodTest {
@@ -99,5 +99,3 @@ public class _XAreaLinks extends MultiMethodTest {
     }
 
 } //EOC _XAreaLinks
-
-

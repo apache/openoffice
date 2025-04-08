@@ -34,7 +34,7 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.container.XNamed
+' Required for  com.sun.star.container.XNamed
 Global cNameToSet As String ' "fixed" if name is fixed
 Global DDEItem As String
 Global DDETopic As String

@@ -2001,7 +2001,3 @@ long OTableEditorCtrl::PreNotify( NotifyEvent& rNEvt )
 	return OTableRowView::PreNotify(rNEvt);
 }
 // -----------------------------------------------------------------------------
-
-
-
-

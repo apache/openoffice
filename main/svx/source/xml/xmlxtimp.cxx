@@ -481,4 +481,3 @@ SvXMLImportContext *SvxXMLXTableImport::CreateContext( sal_uInt16 nPrefix, const
 
 	return new SvXMLImportContext( *this, nPrefix, rLocalName );
 }
-

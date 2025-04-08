@@ -284,7 +284,7 @@ namespace connectivity
         /** parses the node to a string which can be passed to a driver's connection for execution
 
             Any particles of the parse tree which represent application-level features - such
-            as queries appearing in the FROM part - are subsituted, so that the resulting statement can
+            as queries appearing in the FROM part - are substituted, so that the resulting statement can
             be executed at an SDBC-level connection.
 
             @param  _out_rString
@@ -302,7 +302,7 @@ namespace connectivity
 
             @param _pErrorHolder
                 takes the error which occurred while generating the statement, if any. Might be <NULL/>,
-                in this case the error is not reported back, and can only be recognized by examing the
+                in this case the error is not reported back, and can only be recognized by examining the
                 return value.
 
             @return
@@ -399,7 +399,7 @@ namespace connectivity
 		// a + a * b	= a
 		static void absorptions(OSQLParseNode*& pSearchCondition);
 
-		// erase not nessary braces
+		// erase not necessary braces
 		static void eraseBraces(OSQLParseNode*& pSearchCondition);
 
 		// makes the logic formula a little more smaller
@@ -412,7 +412,7 @@ namespace connectivity
 											::rtl::OUString &_rTable
                                             ,const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData >& _xMetaData);
 
-		// susbtitute all occurrences of :var or [name] into the dynamic parameter ?
+		// substitute all occurrences of :var or [name] into the dynamic parameter ?
 		// _pNode will be modified if parameters exists
 		static void substituteParameterNames(OSQLParseNode* _pNode);
 

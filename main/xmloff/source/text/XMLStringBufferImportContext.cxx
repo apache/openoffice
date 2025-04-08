@@ -76,4 +76,3 @@ void XMLStringBufferImportContext::EndElement()
 		rTextBuffer.append(sal_Unicode(0x0a));
 	}
 }
-

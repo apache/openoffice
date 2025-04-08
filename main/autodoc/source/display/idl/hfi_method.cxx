@@ -348,4 +348,3 @@ HF_IdlMethod::leave_ContentCell() const
 {
     Out().Leave();
 }
-

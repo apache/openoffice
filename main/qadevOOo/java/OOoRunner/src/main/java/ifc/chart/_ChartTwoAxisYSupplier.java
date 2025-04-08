@@ -101,4 +101,3 @@ public class _ChartTwoAxisYSupplier extends MultiPropertyTest {
         doc.setDiagram(oldDiagram);
     }
 } // EOF ChartTwoAxisYSupplier
-

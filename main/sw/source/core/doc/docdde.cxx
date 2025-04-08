@@ -415,4 +415,3 @@ sal_Bool SwDoc::SelectServerObj( const String& rStr, SwPaM*& rpPam,
     }
 	return sal_False;
 }
-

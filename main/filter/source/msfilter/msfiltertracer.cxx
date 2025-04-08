@@ -244,4 +244,3 @@ void MSFilterTracer::SetProperty( const ::rtl::OUString& rPropName, const uno::A
 {
 	mpCfgItem->WriteAny( rPropName, rProperty );
 }
-

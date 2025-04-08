@@ -72,4 +72,3 @@ public:
 };
 
 #endif // _SVT_HATCHWINDOW_HXX
-

@@ -115,4 +115,3 @@ public:
 SW_DLLPUBLIC extern SwBreakIt* pBreakIt;
 
 #endif
-

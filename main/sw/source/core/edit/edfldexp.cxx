@@ -88,5 +88,3 @@ sal_Bool SwEditShell::IsFieldDataSourceAvailable(String& rUsedDataSource) const
     }
     return sal_True;
 }
-
-

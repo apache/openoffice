@@ -131,4 +131,3 @@ public class _XTableRows extends MultiMethodTest {
     }
 
 } //finish class _XTableRows
-

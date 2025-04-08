@@ -128,5 +128,3 @@ SvXMLImportContext *XMLReplacementImageContext::CreateChildContext(
 
 	return pContext;
 }
-
-

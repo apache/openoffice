@@ -438,4 +438,3 @@ void UndoAnnotation::Redo()
 }
 
 } // namespace sd
-

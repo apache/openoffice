@@ -2,7 +2,7 @@
 #########################################################################
 
  #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -64,7 +64,7 @@ elsif ($up_pid)
 
    waitpid($up_pid, WNOHANG);
 
-   if (kill(0, $up_pid)) 
+   if (kill(0, $up_pid))
    {
       print "Pose did not start successfully...\n";
       kill(9, $up_pid);
@@ -83,7 +83,7 @@ elsif ($up_pid)
       exit(0);
    }
 }
-else 
+else
 {
    # Child process - Try to open/close the connection.  This
    # can hang if pose did not start properly...
@@ -103,4 +103,3 @@ sub close_connection
   print "closing connection\n";
   EmRPC::CloseConnection();
 }
-

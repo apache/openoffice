@@ -4237,4 +4237,3 @@ XclImpStream& operator>>( XclImpStream& rStrm, XclImpDffPropSet& rPropSet )
 }
 
 // ============================================================================
-

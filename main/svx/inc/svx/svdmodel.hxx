@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _SVDMODEL_HXX
 #define _SVDMODEL_HXX
@@ -39,18 +37,18 @@
 #include <svx/pageitem.hxx>
 #include <vcl/field.hxx>
 #include <boost/shared_ptr.hpp>
-#include <svx/svdtypes.hxx> // fuer enum RepeatFuncts
+#include <svx/svdtypes.hxx> // for enum RepeatFuncts
 #include <vcl/field.hxx>
 #include "svx/svxdllapi.h"
 #include <vos/ref.hxx>
 #include <svx/xtable.hxx>
 
 #if defined(UNX) || defined(WNT)
-#define DEGREE_CHAR ((sal_Unicode)176)   /* 0xB0 = Ansi */
+#define DEGREE_CHAR ((sal_Unicode)176) /* 0xB0 = Ansi */
 #endif
 
 #if defined(OS2)
-#define DEGREE_CHAR ((sal_Unicode)248)   /* 0xF8 = IBM PC (Erw. ASCII) */
+#define DEGREE_CHAR ((sal_Unicode)248) /* 0xF8 = IBM PC (Erw. ASCII) */
 #endif
 
 #ifndef DEGREE_CHAR
@@ -81,13 +79,13 @@ class SdrOutlinerCache;
 class SotStorageRef;
 class SdrUndoFactory;
 namespace comphelper{
-    class IEmbeddedHelper;
+	class IEmbeddedHelper;
 }
 
 class ImageMap;
 
 namespace sfx2{
-    class LinkManager;
+	class LinkManager;
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -102,16 +100,16 @@ namespace sfx2{
 enum SdrHintKind
 {
 				  HINT_UNKNOWN,         // Unbekannt
-				  HINT_LAYERCHG,        // Layerdefinition geaendert
-				  HINT_LAYERORDERCHG,   // Layerreihenfolge geaendert (Insert/Remove/ChangePos)
-				  HINT_PAGEORDERCHG,    // Reihenfolge der Seiten (Zeichenseiten oder Masterpages) geaendert (Insert/Remove/ChangePos)
-				  HINT_OBJCHG,          // Objekt geaendert
-				  HINT_OBJINSERTED,     // Neues Zeichenobjekt eingefuegt
+				  HINT_LAYERCHG,        // Layerdefinition geändert
+				  HINT_LAYERORDERCHG,   // Layerreihenfolge geändert (Insert/Remove/ChangePos)
+				  HINT_PAGEORDERCHG,    // Reihenfolge der Seiten (Zeichenseiten oder Masterpages) geändert (Insert/Remove/ChangePos)
+				  HINT_OBJCHG,          // Objekt geändert
+				  HINT_OBJINSERTED,     // Neues Zeichenobjekt eingefügt
 				  HINT_OBJREMOVED,      // Zeichenobjekt aus Liste entfernt
-				  HINT_MODELCLEARED,    // gesamtes Model geloescht (keine Pages mehr da). not impl.
-				  HINT_REFDEVICECHG,    // RefDevice geaendert
-				  HINT_DEFAULTTABCHG,   // Default Tabulatorweite geaendert
-				  HINT_DEFFONTHGTCHG,   // Default FontHeight geaendert
+				  HINT_MODELCLEARED,    // gesamtes Model gelöscht (keine Pages mehr da). not impl.
+				  HINT_REFDEVICECHG,    // RefDevice geändert
+				  HINT_DEFAULTTABCHG,   // Default Tabulatorweite geändert
+				  HINT_DEFFONTHGTCHG,   // Default FontHeight geändert
 				  HINT_MODELSAVED,      // Dokument wurde gesichert
 				  HINT_SWITCHTOPAGE,    // #94278# UNDO/REDO at an object evtl. on another page
 				  HINT_BEGEDIT,			// Is called after the object has entered text edit mode
@@ -150,7 +148,7 @@ public:
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Flag um nach dem Laden des Pools Aufzuraeumen (d.h. die RefCounts
+// Flag um nach dem Laden des Pools Aufzuräumen (d.h. die RefCounts
 // neu zu bestimmen und unbenutztes wegzuwerfen). sal_False == aktiv
 #define LOADREFCOUNTS (sal_False)
 
@@ -158,7 +156,7 @@ struct SdrDocumentStreamInfo
 {
 	FASTBOOL	    mbDeleteAfterUse;
 	String		    maUserData;
-    com::sun::star::uno::Reference < com::sun::star::embed::XStorage > mxStorageRef;
+	com::sun::star::uno::Reference < com::sun::star::embed::XStorage > mxStorageRef;
 	sal_Bool		    mbDummy1 : 1;
 };
 
@@ -170,49 +168,49 @@ protected:
 	DateTime       aReadDate;  // Datum des Einstreamens
 	Container      maMaPag;     // StammSeiten (Masterpages)
 	Container      maPages;
-	Link           aUndoLink;  // Link fuer einen NotifyUndo-Handler
+	Link           aUndoLink;  // Link für einen NotifyUndo-Handler
 	Link           aIOProgressLink;
 	String         aTablePath;
-	Size           aMaxObjSize; // z.B. fuer Autogrowing Text
-    Fraction       aObjUnit;   // Beschreibung der Koordinateneinheiten fuer ClipBoard, Drag&Drop, ...
-    MapUnit        eObjUnit;   // see above
-    FieldUnit      eUIUnit;      // Masseinheit, Masstab (z.B. 1/1000) fuer die UI (Statuszeile) wird von ImpSetUIUnit() gesetzt
-    Fraction       aUIScale;     // see above
-    String         aUIUnitStr;   // see above
-    Fraction       aUIUnitFact;  // see above
-    int            nUIUnitKomma; // see above
-    FASTBOOL       bUIOnlyKomma; // see above
+	Size           aMaxObjSize; // z.B. für Autogrowing Text
+	Fraction       aObjUnit;   // Beschreibung der Koordinateneinheiten für ClipBoard, Drag&Drop, ...
+	MapUnit        eObjUnit;   // see above
+	FieldUnit      eUIUnit;      // Masseinheit, Masstab (z.B. 1/1000) für die UI (Statuszeile) wird von ImpSetUIUnit() gesetzt
+	Fraction       aUIScale;     // see above
+	String         aUIUnitStr;   // see above
+	Fraction       aUIUnitFact;  // see above
+	int            nUIUnitComma; // see above
+	FASTBOOL       bUIOnlyComma; // see above
 
 	SdrLayerAdmin*  pLayerAdmin;
 	SfxItemPool*    pItemPool;
-	FASTBOOL        bMyPool;        // zum Aufraeumen von pMyPool ab 303a
-	comphelper::IEmbeddedHelper* 
+	FASTBOOL        bMyPool;        // zum Aufräumen von pMyPool ab 303a
+	comphelper::IEmbeddedHelper*
                     m_pEmbeddedHelper; // helper for embedded objects to get rid of the SfxObjectShell
 	SdrOutliner*    pDrawOutliner;  // ein Outliner zur Textausgabe
-	SdrOutliner*    pHitTestOutliner;// ein Outliner fuer den HitTest
-	sal_uIntPtr           nDefTextHgt;    // Default Texthoehe in logischen Einheiten
-	OutputDevice*   pRefOutDev;     // ReferenzDevice fuer die EditEngine
-	sal_uIntPtr           nProgressAkt;   // fuer den
+	SdrOutliner*    pHitTestOutliner;// ein Outliner für den HitTest
+	sal_uIntPtr           nDefTextHgt;    // Default Texthöhe in logischen Einheiten
+	OutputDevice*   pRefOutDev;     // ReferenzDevice für die EditEngine
+	sal_uIntPtr           nProgressAkt;   // für den
 	sal_uIntPtr           nProgressMax;   // ProgressBar-
 	sal_uIntPtr           nProgressOfs;   // -Handler
 	rtl::Reference< SfxStyleSheetBasePool > mxStyleSheetPool;
 	SfxStyleSheet*	pDefaultStyleSheet;
-    SfxStyleSheet* mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj; // #119287#
+	SfxStyleSheet* mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj; // #119287#
 	sfx2::LinkManager* pLinkManager;   // LinkManager
 	Container*      pUndoStack;
 	Container*      pRedoStack;
-	SdrUndoGroup*   pAktUndoGroup;  // Fuer mehrstufige
+	SdrUndoGroup*   pAktUndoGroup;  // Für mehrstufige
 	sal_uInt16          nUndoLevel;     // Undo-Klammerung
 	bool			mbUndoEnabled;	// If false no undo is recorded or we are during the execution of an undo action
-	sal_uInt16          nProgressPercent; // fuer den ProgressBar-Handler
+	sal_uInt16          nProgressPercent; // für den ProgressBar-Handler
 	sal_uInt16          nLoadVersion;   // Versionsnummer der geladenen Datei
 	sal_Bool        mbChanged;
 	FASTBOOL        bInfoChanged;
 	FASTBOOL        bPagNumsDirty;
 	FASTBOOL        bMPgNumsDirty;
-	FASTBOOL        bPageNotValid;  // sal_True=Doc ist nur ObjektTraeger. Page ist nicht gueltig.
+	FASTBOOL        bPageNotValid;  // sal_True=Doc ist nur ObjektTräger. Page ist nicht gültig.
 	FASTBOOL        bSavePortable;  // Metafiles portabel speichern
-	FASTBOOL        bNoBitmapCaching;   // Bitmaps fuer Screenoutput cachen
+	FASTBOOL        bNoBitmapCaching;   // Bitmaps für Screenoutput cachen
 	FASTBOOL        bReadOnly;
 	FASTBOOL        bTransparentTextFrames;
 	FASTBOOL        bSaveCompressed;
@@ -225,7 +223,7 @@ protected:
 	sal_uInt32          nMaxUndoCount;
 	FASTBOOL        bSaveNative;
 	sal_Bool            bStarDrawPreviewMode;
-    bool            mbDisableTextEditUsesCommonUndoManager;
+	bool            mbDisableTextEditUsesCommonUndoManager;
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -253,7 +251,7 @@ public:
 	void SetAllowShapePropertyChangeListener( bool bAllow );
 
 	sal_uInt16          nStarDrawPreviewMasterPageNum;
-	// Reserven fuer kompatible Erweiterungen
+	// Reserven für kompatible Erweiterungen
 //-/	SfxItemPool*    pUndoItemPool;
 	SotStorage*		pModelStorage;
 	SvxForbiddenCharactersTable* mpForbiddenCharactersTable;
@@ -267,16 +265,16 @@ public:
 	sal_uInt16          nReserveUInt7;
 	FASTBOOL        mbModelLocked;
 	FASTBOOL        mbKernAsianPunctuation;
-    FASTBOOL        mbAddExtLeading;
+	FASTBOOL        mbAddExtLeading;
 	FASTBOOL        mbInDestruction;
 
-    // lists for colors, dashes, lineends, hatches, gradients and bitmaps for this model
-    XColorListSharedPtr     maColorTable;
-    XDashListSharedPtr      maDashList;
-    XLineEndListSharedPtr   maLineEndList;
-    XHatchListSharedPtr     maHatchList;
-    XGradientListSharedPtr  maGradientList;
-    XBitmapListSharedPtr    maBitmapList;
+	// lists for colors, dashes, lineends, hatches, gradients and bitmaps for this model
+	XColorListSharedPtr     maColorTable;
+	XDashListSharedPtr      maDashList;
+	XLineEndListSharedPtr   maLineEndList;
+	XHatchListSharedPtr     maHatchList;
+	XGradientListSharedPtr  maGradientList;
+	XBitmapListSharedPtr    maBitmapList;
 
 	// New src638: NumberFormatter for drawing layer and
 	// method for getting it. It is constructed on demand
@@ -317,14 +315,14 @@ public:
 //#endif // __PRIVATE
 	TYPEINFO();
 	// Steckt man hier seinen eigenen Pool rein, so wird die Klasse auch
-	// Aktionen an ihm vornehmen (Put(),Remove()). Bei Zerstoerung von
-	// SdrModel wird dieser Pool ver delete geloescht!
+	// Aktionen an ihm vornehmen (Put(),Remove()). Bei Zerstörung von
+	// SdrModel wird dieser Pool ver delete gelöscht!
 	// Gibt man den Konstruktor stattdessen eine NULL mit, so macht sich
 	// die Klasse einen eigenen Pool (SdrItemPool), den sie dann auch im
-	// Destruktor zerstoert.
+	// Destruktor zerstört.
 	// Bei Verwendung eines eigenen Pools ist darauf zu achten, dass dieser
 	// von SdrItemPool abgeleitet ist, falls man von SdrAttrObj abgeleitete
-	// Zeichenobjekte verwenden moechte. Setzt man degegen nur vom abstrakten
+	// Zeichenobjekte verwenden möchte. Setzt man degegen nur vom abstrakten
 	// Basisobjekt SdrObject abgeleitete Objekte ein, so ist man frei in der
 	// Wahl des Pools.
 	SdrModel(SfxItemPool* pPool=NULL, ::comphelper::IEmbeddedHelper* pPers=NULL, sal_Bool bLoadRefCounts = LOADREFCOUNTS);
@@ -334,10 +332,10 @@ public:
 
 	// Hier kann man erfragen, ob das Model gerade eingrstreamt wird
 	FASTBOOL IsLoading() const                  { return sal_False /*BFS01 bLoading */; }
-	// Muss z.B. ueberladen werden, um das Swappen/LoadOnDemand von Grafiken
-	// zu ermoeglichen. Wird rbDeleteAfterUse auf sal_True gesetzt, so wird
+	// Muss z.B. überladen werden, um das Swappen/LoadOnDemand von Grafiken
+	// zu ermöglichen. Wird rbDeleteAfterUse auf sal_True gesetzt, so wird
 	// die SvStream-Instanz vom Aufrufer nach Gebrauch destruiert.
-	// Wenn diese Methode NULL liefert, wird zum Swappen eine temporaere
+	// Wenn diese Methode NULL liefert, wird zum Swappen eine temporäre
 	// Datei angelegt.
 	// Geliefert werden muss der Stream, aus dem das Model geladen wurde
 	// bzw. in den es zuletzt gespeichert wurde.
@@ -345,11 +343,11 @@ public:
 	// Die Vorlagenattribute der Zeichenobjekte in harte Attribute verwandeln.
 	void BurnInStyleSheetAttributes();
 	// Wer sich von SdrPage ableitet muss sich auch von SdrModel ableiten
-	// und diese beiden VM AllocPage() und AllocModel() ueberladen...
+	// und diese beiden VM AllocPage() und AllocModel() überladen...
 	virtual SdrPage*  AllocPage(FASTBOOL bMasterPage);
 	virtual SdrModel* AllocModel() const;
 
-	// Aenderungen an den Layern setzen das Modified-Flag und broadcasten am Model!
+	// Änderungen an den Layern setzen das Modified-Flag und broadcasten am Model!
 	const SdrLayerAdmin& GetLayerAdmin() const                  { return *pLayerAdmin; }
 	SdrLayerAdmin&       GetLayerAdmin()                        { return *pLayerAdmin; }
 
@@ -365,39 +363,39 @@ public:
 
 	SdrOutliner&         GetHitTestOutliner() const { return *pHitTestOutliner; }
 	const SdrTextObj*    GetFormattingTextObj() const;
-	// Die TextDefaults (Font,Hoehe,Farbe) in ein Set putten
+	// Die TextDefaults (Font,Höhe,Farbe) in ein Set putten
 	void         		 SetTextDefaults() const;
 	static void    		 SetTextDefaults( SfxItemPool* pItemPool, sal_uIntPtr nDefTextHgt );
 
-	// ReferenzDevice fuer die EditEngine
+	// ReferenzDevice für die EditEngine
 	void                 SetRefDevice(OutputDevice* pDev);
 	OutputDevice*        GetRefDevice() const                   { return pRefOutDev; }
-	// Wenn ein neuer MapMode am RefDevice gesetzt wird o.ae.
+	// Wenn ein neuer MapMode am RefDevice gesetzt wird o.ä.
 	void                 RefDeviceChanged(); // noch nicht implementiert
-	// Default-Schrifthoehe in logischen Einheiten
+	// Default-Schrifthöhe in logischen Einheiten
 	void                 SetDefaultFontHeight(sal_uIntPtr nVal);
 	sal_uIntPtr                GetDefaultFontHeight() const           { return nDefTextHgt; }
-	// Default-Tabulatorweite fuer die EditEngine
+	// Default-Tabulatorweite für die EditEngine
 	void                 SetDefaultTabulator(sal_uInt16 nVal);
 	sal_uInt16               GetDefaultTabulator() const            { return nDefaultTabulator; }
 
 	// Der DefaultStyleSheet wird jedem Zeichenobjekt verbraten das in diesem
-	// Model eingefuegt wird und kein StyleSheet gesetzt hat.
+	// Model eingefügt wird und kein StyleSheet gesetzt hat.
 	SfxStyleSheet*       GetDefaultStyleSheet() const             { return pDefaultStyleSheet; }
 	void                 SetDefaultStyleSheet(SfxStyleSheet* pDefSS) { pDefaultStyleSheet = pDefSS; }
 
-    // #119287# default StyleSheet for SdrGrafObj and SdrOle2Obj
-    SfxStyleSheet* GetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj() const { return mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj; }
+	// #119287# default StyleSheet for SdrGrafObj and SdrOle2Obj
+	SfxStyleSheet* GetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj() const { return mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj; }
 	void SetDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj(SfxStyleSheet* pDefSS) { mpDefaultStyleSheetForSdrGrafObjAndSdrOle2Obj = pDefSS; }
 
 	sfx2::LinkManager*      GetLinkManager()                         { return pLinkManager; }
 	void                 SetLinkManager( sfx2::LinkManager* pLinkMgr ) { pLinkManager = pLinkMgr; }
 
-    ::comphelper::IEmbeddedHelper*     GetPersist() const               { return m_pEmbeddedHelper; }
+	::comphelper::IEmbeddedHelper*     GetPersist() const               { return m_pEmbeddedHelper; }
 	void				 ClearPersist()                                 { m_pEmbeddedHelper = 0; }
 	void				 SetPersist( ::comphelper::IEmbeddedHelper *p ) { m_pEmbeddedHelper = p; }
 
-	// Masseinheit fuer die Zeichenkoordinaten.
+	// Masseinheit für die Zeichenkoordinaten.
 	// Default ist 1 logische Einheit = 1/100mm (Unit=MAP_100TH_MM, Fract=(1,1)).
 	// Beispiele:
 	//   MAP_POINT,    Fraction(72,1)    : 1 log Einh = 72 Point   = 1 Inch
@@ -409,8 +407,8 @@ public:
 	//   MAP_CM,       Fraction(100,1)   : 1 log Einh = 100cm      = 1m
 	//   MAP_CM,       Fraction(100000,1): 1 log Einh = 100000cm   = 1km
 	// (PS: Lichtjahre sind somit also nicht darstellbar).
-	// Die Skalierungseinheit wird benoetigt, damit die Engine das Clipboard
-	// mit den richtigen Groessen beliefern kann.
+	// Die Skalierungseinheit wird benötigt, damit die Engine das Clipboard
+	// mit den richtigen Grössen beliefern kann.
 	MapUnit          GetScaleUnit() const                       { return eObjUnit; }
 	void             SetScaleUnit(MapUnit eMap);
 	const Fraction&  GetScaleFraction() const                   { return aObjUnit; }
@@ -418,11 +416,11 @@ public:
 	// Beides gleichzeitig setzen ist etwas performanter
 	void             SetScaleUnit(MapUnit eMap, const Fraction& rFrac);
 
-	// Maximale Groesse z.B. fuer Autogrowing-Texte
+	// Maximale Grösse z.B. für Autogrowing-Texte
 	const Size&      GetMaxObjSize() const                      { return aMaxObjSize; }
 	void             SetMaxObjSize(const Size& rSiz)            { aMaxObjSize=rSiz; }
 
-	// Damit die View! in der Statuszeile vernuenftige Zahlen anzeigen kann:
+	// Damit die View! in der Statuszeile vernünftige Zahlen anzeigen kann:
 	// Default ist mm.
 	void             SetUIUnit(FieldUnit eUnit);
 	FieldUnit        GetUIUnit() const                          { return eUIUnit; }
@@ -434,8 +432,8 @@ public:
 
 	const Fraction&  GetUIUnitFact() const                      { return aUIUnitFact; }
 	const String&    GetUIUnitStr() const                       { return aUIUnitStr; }
-	int              GetUIUnitKomma() const                     { return nUIUnitKomma; }
-	FASTBOOL         IsUIOnlyKomma() const                      { return bUIOnlyKomma; }
+	int              GetUIUnitComma() const                     { return nUIUnitComma; }
+	FASTBOOL         IsUIOnlyComma() const                      { return bUIOnlyComma; }
 
 	static void		 TakeUnitStr(FieldUnit eUnit, String& rStr);
 	void             TakeMetricStr(long nVal, String& rStr, FASTBOOL bNoUnitChars=sal_False, sal_Int32 nNumDigits = -1) const;
@@ -446,10 +444,10 @@ public:
 	FASTBOOL         IsPagNumsDirty() const                     { return bPagNumsDirty; };
 	FASTBOOL         IsMPgNumsDirty() const                     { return bMPgNumsDirty; };
 	void             RecalcPageNums(FASTBOOL bMaster);
-	// Nach dem Insert gehoert die Page dem SdrModel.
+	// Nach dem Insert gehört die Page dem SdrModel.
 	virtual void     InsertPage(SdrPage* pPage, sal_uInt16 nPos=0xFFFF);
 	virtual void     DeletePage(sal_uInt16 nPgNum);
-	// Remove bedeutet Eigentumsuebereignung an den Aufrufer (Gegenteil von Insert)
+	// Remove bedeutet Eigentumsübereignung an den Aufrufer (Gegenteil von Insert)
 	virtual SdrPage* RemovePage(sal_uInt16 nPgNum);
 	virtual void     MovePage(sal_uInt16 nPgNum, sal_uInt16 nNewPos);
 	const SdrPage* GetPage(sal_uInt16 nPgNum) const;
@@ -461,7 +459,7 @@ public:
 	// Masterpages
 	virtual void     InsertMasterPage(SdrPage* pPage, sal_uInt16 nPos=0xFFFF);
 	virtual void     DeleteMasterPage(sal_uInt16 nPgNum);
-	// Remove bedeutet Eigentumsuebereignung an den Aufrufer (Gegenteil von Insert)
+	// Remove bedeutet Eigentumsübereignung an den Aufrufer (Gegenteil von Insert)
 	virtual SdrPage* RemoveMasterPage(sal_uInt16 nPgNum);
 	virtual void     MoveMasterPage(sal_uInt16 nPgNum, sal_uInt16 nNewPos);
 	const SdrPage* GetMasterPage(sal_uInt16 nPgNum) const;
@@ -471,14 +469,14 @@ public:
 	virtual void MasterPageListChanged();
 
 	// Modified-Flag. Wird automatisch gesetzt, wenn an den Pages oder
-	// Zeichenobjekten was geaendert wird. Zuruecksetzen muss man es
+	// Zeichenobjekten was geändert wird. Zurücksetzen muss man es
 	// jedoch selbst (z.B. bei Save() ...).
 	sal_Bool IsChanged() const { return mbChanged; }
 	virtual void SetChanged(sal_Bool bFlg = sal_True);
 
-	// PageNotValid bedeutet, dass das Model lediglich Objekte traegt die zwar
-	// auf einer Page verankert sind, die Page aber nicht gueltig ist. Diese
-	// Kennzeichnung wird fuers Clipboard/Drag&Drop benoetigt.
+	// PageNotValid bedeutet, dass das Model lediglich Objekte trägt die zwar
+	// auf einer Page verankert sind, die Page aber nicht gültig ist. Diese
+	// Kennzeichnung wird fürs Clipboard/Drag&Drop benötigt.
 	FASTBOOL        IsPageNotValid() const                     { return bPageNotValid; }
 	void            SetPageNotValid(FASTBOOL bJa=sal_True)         { bPageNotValid=bJa; }
 
@@ -507,9 +505,9 @@ public:
 	// - beim Laden eines Dokuments nicht sofort mitgeladen,
 	//   sondern erst wenn sie gebraucht (z.B. angezeigt) werden.
 	// - ggf. wieder aus dem Speicher geworfen, falls Sie gerade
-    //   nicht benoetigt werden.
+	//   nicht benötigt werden.
 	// Damit das funktioniert, muss die virtuelle Methode
-	// GetDocumentStream() ueberladen werden.
+	// GetDocumentStream() überladen werden.
 	// Default=FALSE. Flag ist nicht persistent.
 	FASTBOOL        IsSwapGraphics() const { return bSwapGraphics; }
 	void            SetSwapGraphics(FASTBOOL bJa=sal_True);
@@ -521,43 +519,43 @@ public:
 
 	// Damit die Bildschirmausgabe von Bitmaps (insbesondere bei gedrehten)
 	// etwas schneller wird, werden sie gecachet. Diesen Cache kann man mit
-	// diesem Flag ein-/ausschalten. Beim naechsten Paint wird an den Objekten
+	// diesem Flag ein-/ausschalten. Beim nächsten Paint wird an den Objekten
 	// dann ggf. ein Image gemerkt bzw. freigegeben. Wandert ein Bitmapobjekt
-	// in's Undo, so wird der Cache fuer dieses Objekt sofort ausgeschaltet
+	// in's Undo, so wird der Cache für dieses Objekt sofort ausgeschaltet
 	// (Speicher sparen).
 	// Default=Cache eingeschaltet. Flag ist nicht persistent.
 	FASTBOOL        IsBitmapCaching() const                     { return !bNoBitmapCaching; }
 	void            SetBitmapCaching(FASTBOOL bJa=sal_True)         { bNoBitmapCaching=!bJa; }
 
-	// Defaultmaessig (sal_False) kann man Textrahmen ohne Fuellung durch
+	// Defaultmässig (sal_False) kann man Textrahmen ohne Füllung durch
 	// Mausklick selektieren. Nach Aktivierung dieses Flags trifft man sie
-	// nur noch in dem Bereich, wo sich auch tatsaechlich Text befindet.
+	// nur noch in dem Bereich, wo sich auch tatsächlich Text befindet.
 	FASTBOOL        IsPickThroughTransparentTextFrames() const  { return bTransparentTextFrames; }
 	void            SetPickThroughTransparentTextFrames(FASTBOOL bOn) { bTransparentTextFrames=bOn; }
 
-	// Darf denn das Model ueberhaupt veraendert werden?
+	// Darf denn das Model überhaupt verändert werden?
 	// Wird nur von den Possibility-Methoden der View ausgewerdet.
-	// Direkte Manipulationen am Model, ... berueksichtigen dieses Flag nicht.
-	// Sollte ueberladen werden und entsprechend des ReadOnly-Status des Files
-	// sal_True oder sal_False liefern (Methode wird oeffters gerufen, also ein Flag
+	// Direkte Manipulationen am Model, ... berücksichtigen dieses Flag nicht.
+	// Sollte überladen werden und entsprechend des ReadOnly-Status des Files
+	// sal_True oder sal_False liefern (Methode wird öfters gerufen, also ein Flag
 	// verwenden!).
 	virtual FASTBOOL IsReadOnly() const;
 	virtual void     SetReadOnly(FASTBOOL bYes);
 
 	// Vermischen zweier SdrModel. Zu beachten sei, dass rSourceModel nicht
-	// const ist. Die Pages werden beim einfuegen nicht kopiert, sondern gemoved.
+	// const ist. Die Pages werden beim einfügen nicht kopiert, sondern gemoved.
 	// rSourceModel ist anschliessend u.U. weitgehend leer.
-	// nFirstPageNum,nLastPageNum: Die aus rSourceModel zu uebernehmenden Seiten
-	// nDestPos..................: Einfuegeposition
-	// bMergeMasterPages.........: sal_True =benoetigte MasterPages werden aus
-	//                                   rSourceModel ebenfalls uebernommen
+	// nFirstPageNum,nLastPageNum: Die aus rSourceModel zu übernehmenden Seiten
+	// nDestPos..................: Einfügeposition
+	// bMergeMasterPages.........: sal_True =benötigte MasterPages werden aus
+	//                                   rSourceModel ebenfalls übernommen
 	//                             sal_False=Die MasterPageDescriptoren der Seiten
 	//                                   aus rSourceModel werden auf die
 	//                                   vorhandenen MasterPages gemappt.
-	// bUndo.....................: Fuer das Merging wird eine UndoAction generiert.
-	//                             Undo ist nur fuer das ZielModel, nicht fuer
+	// bUndo.....................: Für das Merging wird eine UndoAction generiert.
+	//                             Undo ist nur für das ZielModel, nicht für
 	//                             rSourceModel.
-	// bTreadSourceAsConst.......: sal_True=Das SourceModel wird nicht veraendert,.
+	// bTreadSourceAsConst.......: sal_True=Das SourceModel wird nicht verändert,.
 	//                             d.h die Seiten werden kopiert.
 	virtual void Merge(SdrModel& rSourceModel,
 			   sal_uInt16 nFirstPageNum=0, sal_uInt16 nLastPageNum=0xFFFF,
@@ -570,7 +568,7 @@ public:
 				   sal_uInt16 nDestPos,
 				   FASTBOOL bUndo=sal_True, FASTBOOL bMoveNoCopy=sal_False);
 
-	// Mit BegUndo() / EndUndo() ist es moeglich beliebig viele UndoActions
+	// Mit BegUndo() / EndUndo() ist es möglich beliebig viele UndoActions
 	// beliebig tief zu klammern. Als Kommentar der
 	// UndoAction wird der des ersten BegUndo(String) aller Klammerungen
 	// verwendet. Der NotifyUndoActionHdl wird in diesem Fall erst beim letzten
@@ -610,15 +608,15 @@ public:
 	// Hier kann die Applikation einen Handler setzen, der die auflaufenden
 	// UndoActions einsammelt. Der Handler hat folgendes Aussehen:
 	//   void __EXPORT NotifyUndoActionHdl(SfxUndoAction* pUndoAction);
-	// Beim Aufruf des Handlers findet eine Eigentumsuebereignung statt; die
-	// UndoAction gehoert somit dem Handler, nicht mehr dem SdrModel.
+	// Beim Aufruf des Handlers findet eine Eigentumsübereignung statt; die
+	// UndoAction gehört somit dem Handler, nicht mehr dem SdrModel.
 	void        SetNotifyUndoActionHdl(const Link& rLink)    { aUndoLink=rLink; }
 	const Link& GetNotifyUndoActionHdl() const               { return aUndoLink; }
 
 	/** application can set it's own undo manager, BegUndo, EndUndo and AddUndoAction
 		calls are routet to this interface if given */
 	void SetSdrUndoManager( SfxUndoManager*	pUndoManager );
-    SfxUndoManager* GetSdrUndoManager() const;
+	SfxUndoManager* GetSdrUndoManager() const;
 
 	/** applications can set their own undo factory to overide creation of
 		undo actions. The SdrModel will become owner of the given SdrUndoFactory
@@ -630,56 +628,56 @@ public:
 	SdrUndoFactory& GetSdrUndoFactory() const;
 
 	// Hier kann man einen Handler setzen der beim Streamen mehrfach gerufen
-	// wird und ungefaehre Auskunft ueber den Fortschreitungszustand der
+	// wird und ungefähre Auskunft über den Fortschreitungszustand der
 	// Funktion gibt. Der Handler muss folgendes Aussehen haben:
 	//   void __EXPORT class::IOProgressHdl(const sal_uInt16& nPercent);
-	// Der erste Aufruf des Handlers erfolgt grundsaetzlich mit 0, der letzte
+	// Der erste Aufruf des Handlers erfolgt grundsätzlich mit 0, der letzte
 	// mit 100. Dazwischen erfolgen maximal 99 Aufrufe mit Werten 1...99.
-	// Man kann also durchaus bei 0 den Progressbar Initiallisieren und bei
+	// Man kann also durchaus bei 0 den Progressbar Initialisieren und bei
 	// 100 wieder schliessen. Zu beachten sei, dass der Handler auch gerufen
 	// wird, wenn die App Draw-Daten im officeweiten Draw-Exchange-Format
 	// bereitstellt, denn dies geschieht durch streamen in einen MemoryStream.
 	void        SetIOProgressHdl(const Link& rLink)          { aIOProgressLink=rLink; }
 	const Link& GetIOProgressHdl() const                     { return aIOProgressLink; }
 
-	// Zugriffsmethoden fuer Paletten, Listen und Tabellen
-    void SetColorTableAtSdrModel(XColorListSharedPtr aTable);
-    XColorListSharedPtr GetColorTableFromSdrModel() const;
+	// Zugriffsmethoden für Paletten, Listen und Tabellen
+	void SetColorTableAtSdrModel(XColorListSharedPtr aTable);
+	XColorListSharedPtr GetColorTableFromSdrModel() const;
 
-    void SetDashListAtSdrModel(XDashListSharedPtr aList);
-    XDashListSharedPtr GetDashListFromSdrModel() const;
+	void SetDashListAtSdrModel(XDashListSharedPtr aList);
+	XDashListSharedPtr GetDashListFromSdrModel() const;
 
-    void SetLineEndListAtSdrModel(XLineEndListSharedPtr aList);
-    XLineEndListSharedPtr GetLineEndListFromSdrModel() const;
+	void SetLineEndListAtSdrModel(XLineEndListSharedPtr aList);
+	XLineEndListSharedPtr GetLineEndListFromSdrModel() const;
 
-    void SetHatchListAtSdrModel(XHatchListSharedPtr aList);
-    XHatchListSharedPtr GetHatchListFromSdrModel() const;
+	void SetHatchListAtSdrModel(XHatchListSharedPtr aList);
+	XHatchListSharedPtr GetHatchListFromSdrModel() const;
 
-    void SetGradientListAtSdrModel(XGradientListSharedPtr aList);
-    XGradientListSharedPtr GetGradientListFromSdrModel() const;
+	void SetGradientListAtSdrModel(XGradientListSharedPtr aList);
+	XGradientListSharedPtr GetGradientListFromSdrModel() const;
 
-    void SetBitmapListAtSdrModel(XBitmapListSharedPtr aList);
-    XBitmapListSharedPtr GetBitmapListFromSdrModel() const;
+	void SetBitmapListAtSdrModel(XBitmapListSharedPtr aList);
+	XBitmapListSharedPtr GetBitmapListFromSdrModel() const;
 
 	// Der StyleSheetPool wird der DrawingEngine nur bekanntgemacht.
-	// Zu loeschen hat ihn schliesslich der, der ihn auch konstruiert hat.
+	// Zu löschen hat ihn schliesslich der, der ihn auch konstruiert hat.
 	SfxStyleSheetBasePool* GetStyleSheetPool() const         { return mxStyleSheetPool.get(); }
 	void SetStyleSheetPool(SfxStyleSheetBasePool* pPool)     { mxStyleSheetPool=pPool; }
 
-	// Diese Methode fuert einen Konsistenzcheck auf die Struktur des Models
-	// durch. Geprueft wird insbesondere die Verkettung von Verschachtelten
+	// Diese Methode führt einen Konsistenzcheck auf die Struktur des Models
+	// durch. Geprüft wird insbesondere die Verkettung von Verschachtelten
 	// Gruppenobjekten, aber auch Stati wie bInserted sowie Model* und Page*
 	// der Objects, SubLists und Pages. Bei korrekter Struktur liefert die
 	// Methode sal_True, andernfalls FALSE.
-	// Dieser Check steht nur zur Verfuegung, wenn die Engine mit DBG_UTIL
-	// uebersetzt wurde. Andernfalls liefert die Methode immer TRUE. (ni)
+	// Dieser Check steht nur zur Verfügung, wenn die Engine mit DBG_UTIL
+	// übersetzt wurde. Andernfalls liefert die Methode immer TRUE. (ni)
 	FASTBOOL CheckConsistence() const;
 
 	void 	SetStarDrawPreviewMode(sal_Bool bPreview);
 	sal_Bool 	IsStarDrawPreviewMode() { return bStarDrawPreviewMode; }
 
-    bool GetDisableTextEditUsesCommonUndoManager() const { return mbDisableTextEditUsesCommonUndoManager; }
-    void SetDisableTextEditUsesCommonUndoManager(bool bNew) { mbDisableTextEditUsesCommonUndoManager = bNew; }
+	bool GetDisableTextEditUsesCommonUndoManager() const { return mbDisableTextEditUsesCommonUndoManager; }
+	void SetDisableTextEditUsesCommonUndoManager(bool bNew) { mbDisableTextEditUsesCommonUndoManager = bNew; }
 
 	SotStorage*	GetModelStorage() const { return pModelStorage; }
 	void		SetModelStorage( SotStorage* pStor ) { pModelStorage = pStor; }
@@ -701,8 +699,8 @@ public:
 	void SetKernAsianPunctuation( sal_Bool bEnabled );
 	sal_Bool IsKernAsianPunctuation() const { return (sal_Bool)mbKernAsianPunctuation; }
 
-    void SetAddExtLeading( sal_Bool bEnabled );
-    sal_Bool IsAddExtLeading() const { return (sal_Bool)mbAddExtLeading; }
+	void SetAddExtLeading( sal_Bool bEnabled );
+	sal_Bool IsAddExtLeading() const { return (sal_Bool)mbAddExtLeading; }
 
 	void ReformatAllTextObjects();
 
@@ -724,7 +722,7 @@ public:
 
 	bool IsInDestruction() const;
 
-    static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelImplementationId();
+	static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelImplementationId();
 
 	virtual ImageMap* GetImageMapForObject(SdrObject*){return NULL;};
 	virtual sal_Int32 GetHyperlinkCount(SdrObject*){return 0;}
@@ -766,3 +764,4 @@ Die Klasse SdrModel ist der Kopf des Datenmodells der StarView Drawing-Engine.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////// */
 
+/* vim: set noet sw=4 ts=4: *//* vim: set noet sw=4 ts=4: */

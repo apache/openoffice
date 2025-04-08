@@ -258,4 +258,3 @@ void lcl_SelectSdrMarkList( SwEditShell* pShell,
         ASSERT( pSdrMarkList->GetMarkCount() != 0, "empty mark list" );
     }
 }
-

@@ -101,5 +101,3 @@ public:
 
 
 #endif // _SD_PRNTOPTS_HXX
-
-

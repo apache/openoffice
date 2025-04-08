@@ -411,4 +411,3 @@ WordTransTree::Handle_TokenToTransform()
 	pOutputPosition += nOutputTokenLength;
 	*pOutputPosition = '\0';
 }
-

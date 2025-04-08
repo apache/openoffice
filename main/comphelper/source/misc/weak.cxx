@@ -69,4 +69,3 @@ Sequence< ::sal_Int8 > SAL_CALL OWeakTypeObject::getImplementationId(  ) throw (
 }
 
 }
-

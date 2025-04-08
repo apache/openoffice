@@ -292,4 +292,3 @@ public class ObjectInputStream extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

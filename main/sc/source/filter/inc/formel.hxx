@@ -289,5 +289,3 @@ inline void LotusConverterBase::Read( sal_uInt32& nUINT32 )
 }
 
 #endif
-
-

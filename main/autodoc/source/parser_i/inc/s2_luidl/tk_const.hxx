@@ -57,4 +57,3 @@ class TokAssignment : public Token
 }   // namespace csi
 
 #endif
-

@@ -37,5 +37,3 @@ $(eval $(call gb_SrsTarget_set_include,dbw/res,\
 $(eval $(call gb_SrsTarget_add_files,dbw/res,\
 	wizards/source/formwizard/dbwizres.src \
 ))
-
-

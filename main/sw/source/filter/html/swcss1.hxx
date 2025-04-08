@@ -219,5 +219,3 @@ inline void SwCSS1Parser::SetDelayedStyles()
 
 
 #endif
-
-

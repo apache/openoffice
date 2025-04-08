@@ -42,4 +42,3 @@ public:
 };
 
 #endif // _BASCTL_DLGEDFAC_HXX
-

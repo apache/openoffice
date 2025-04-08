@@ -190,4 +190,3 @@ public class DataInputStream extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

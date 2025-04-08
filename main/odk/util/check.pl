@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -80,7 +80,7 @@ if (-d "$StartDir") {
 	my @filelist = ( "install.html",
 			 "notsupported.html","sdk_styles.css","tools.html",
 			 "images/arrow-1.gif", "images/arrow-3.gif",
-			 "images/sdk-footer-logo.png", 
+			 "images/sdk-footer-logo.png",
 			 "images/bg_table.png","images/bg_table2.png",
 			 "images/bg_table3.png", "images/nav_down.png",
 			 "images/nav_home.png","images/nav_left.png",
@@ -302,8 +302,8 @@ if (-d "$StartDir") {
 	    my @dir_list = ( "lib","lib/uno","lib/uno/helper","lib/uno/helper/class-use",
 			     "uno","uno/class-use","comp","comp/helper",
 			     "comp/helper/class-use");
-	    
-	    foreach $i (@dir_list) 
+
+	    foreach $i (@dir_list)
 	    {
 		if (! -d "$StartDir/docs/java/ref/com/sun/star/$i") {
 		    $return++;
@@ -335,7 +335,7 @@ if (-d "$StartDir") {
 	    $return++;
 	}
 
-	my @idl_dirlist = ( "accessibility", 
+	my @idl_dirlist = ( "accessibility",
 			    "animations",
 			    "auth",
 			    "awt",

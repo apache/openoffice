@@ -43,4 +43,3 @@ class Sd3DChildWindow : public SfxChildWindow
 };
 
 #endif		// _SD_3DCHLD_HXX
-

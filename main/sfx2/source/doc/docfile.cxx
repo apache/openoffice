@@ -3333,7 +3333,7 @@ SfxMedium::~SfxMedium()
 {
     /* Attention
         Don't enable CancelTransfers() till you know that the writer/web has changed his asynchronous load
-        behaviour. Otherwise maybe StyleSheets inside a html file will not be loaded at the right time.
+        behaviour. Otherwise maybe StyleSheets inside a HTML file will not be loaded at the right time.
         => further the help will be empty then ... #100490#
      */
     //CancelTransfers();
@@ -4247,4 +4247,3 @@ sal_Bool SfxMedium::SwitchDocumentToFile( ::rtl::OUString aURL )
 
     return bResult;
 }
-

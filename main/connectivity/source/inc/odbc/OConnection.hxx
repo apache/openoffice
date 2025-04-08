@@ -61,7 +61,7 @@ namespace connectivity
 			//====================================================================
 			// Data attributes
 			//====================================================================
-			::std::map< SQLHANDLE,OConnection*>	m_aConnections;	// holds all connectionas which are need for serveral statements
+			::std::map< SQLHANDLE,OConnection*>	m_aConnections;	// holds all connections which are need for several statements
 			TTypeInfoVector						m_aTypeInfo;	//	vector containing an entry
 														//  for each row returned by
 														//  DatabaseMetaData.getTypeInfo.
@@ -153,4 +153,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ODBC_OCONNECTION_HXX_
-

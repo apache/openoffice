@@ -1093,5 +1093,3 @@ SwSelBoxes& SwTable::SelLineFromBox( const SwTableBox* pBox,
 	pLine->GetTabBoxes().ForEach( &_FndCntntBox, &rBoxes );
 	return rBoxes;
 }
-
-

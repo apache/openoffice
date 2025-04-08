@@ -57,5 +57,3 @@ const String
     C_sCePrefix_Typedef("typedef");
 
 #endif
-
-

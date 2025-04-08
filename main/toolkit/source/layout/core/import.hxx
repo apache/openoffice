@@ -171,7 +171,7 @@ class ElementBase : public ::cppu::WeakImplHelper1< css::xml::input::XElement >
 {
 protected:
     ImportContext *mpImport;
-/* TODO: check if all this memebers are needed. */
+/* TODO: check if all this members are needed. */
     ElementBase   *mpParent;
     sal_Int32      mnUid;
 

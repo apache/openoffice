@@ -240,4 +240,3 @@ IMPL_LINK( ScNewScenarioDlg, EnableHdl, CheckBox *, pBox )
         aLbColor.Enable( aCbShowFrame.IsChecked() );
     return 0;
 }
-

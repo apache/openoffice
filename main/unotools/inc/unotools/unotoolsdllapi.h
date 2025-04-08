@@ -34,4 +34,3 @@
 #define UNOTOOLS_DLLPRIVATE SAL_DLLPRIVATE
                                                                                                                              
 #endif /* INCLUDED_UNOTOOLSDLLAPI_H */
-

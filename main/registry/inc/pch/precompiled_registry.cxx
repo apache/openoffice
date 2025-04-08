@@ -22,4 +22,3 @@
 
 
 #include "precompiled_registry.hxx"
-

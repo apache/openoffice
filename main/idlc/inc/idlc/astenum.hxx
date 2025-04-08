@@ -50,4 +50,3 @@ private:
 };
 
 #endif // _IDLC_ASTENUM_HXX_
-

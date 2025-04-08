@@ -82,4 +82,3 @@ java_math_BigDecimal::java_math_BigDecimal( const double& _par0 ): java_lang_Obj
     ThrowSQLException( t.pEnv, NULL );
 	// und aufraeumen
 }
-

@@ -39,4 +39,3 @@ public:
 };
 
 #endif	//  _XMLOFF_CHARTOOOTCONTEXT_HXX
-

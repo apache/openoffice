@@ -45,7 +45,7 @@ import com.sun.star.uno.XInterface;
  *  <li> <code>com::sun::star::beans::XPropertySet</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.text.TextFieldMaster
  * @see com.sun.star.text.FieldMaster.Database
  * @see com.sun.star.beans.XPropertySet
@@ -104,4 +104,3 @@ public class SwXFieldMaster extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXFieldMaster
-

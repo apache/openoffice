@@ -616,4 +616,3 @@ SV_IMPL_REF(DbGridRow);
 
 
 #endif // _SVX_GRIDCTRL_HXX
-

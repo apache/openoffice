@@ -108,4 +108,3 @@ extern const sal_Char __FAR_DATA szServiceName_UnoControlTabPageContainer[];
 // ExtUnoWrapper:
 extern const char __FAR_DATA szServiceName_ImageProducer[], szServiceName2_ImageProducer[];
 #endif // _TOOLKIT_HELPER_SERVICENAMES_HXX_
-

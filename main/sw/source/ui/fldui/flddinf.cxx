@@ -528,6 +528,3 @@ void	SwFldDokInfPage::FillUserData()
 	sData += String::CreateFromInt32( nTypeSel );
 	SetUserData(sData);
 }
-
-
-

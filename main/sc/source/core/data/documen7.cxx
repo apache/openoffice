@@ -525,6 +525,3 @@ void ScDocument::SetAutoCalc( sal_Bool bNewAutoCalc )
 			CalcFormulaTree( sal_True );
 	}
 }
-
-
-

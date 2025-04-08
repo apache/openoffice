@@ -44,4 +44,3 @@ void SetSalColor( const SalColor& rColor, float* pQuartzColor )
 }
 
 // =======================================================================
-

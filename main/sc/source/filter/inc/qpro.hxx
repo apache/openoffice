@@ -52,4 +52,3 @@ class ScQProReader : public ScBiffReader
     FltError readSheet( SCTAB nTab, ScDocument* pDoc, ScQProStyle *pStyle );
 };
 #endif
-

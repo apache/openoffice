@@ -140,4 +140,3 @@ void SAL_CALL rtl_stringbuffer_insert( rtl_String ** This,
 		pBuf[ nOldLen + len ] = 0;
 	}
 }	
-

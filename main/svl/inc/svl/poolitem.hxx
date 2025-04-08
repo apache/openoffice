@@ -245,7 +245,7 @@ public:
 
 		@param rString  On success, returns the reconstructed Unicode string.
 
-		@return  True if the string was successfuly read and reconstructed.
+		@return  True if the string was successfully read and reconstructed.
 	 */
 	static bool readByteString(SvStream & rStream, UniString & rString);
 
@@ -270,7 +270,7 @@ public:
 		@param bUnicode  Whether to read in a stream Unicode (true) or byte
 		string (false) representation.
 
-		@return  True if the string was successfuly read and reconstructed.
+		@return  True if the string was successfully read and reconstructed.
 	 */
 	static bool readUnicodeString(SvStream & rStream, UniString & rString,
 								  bool bUnicode);

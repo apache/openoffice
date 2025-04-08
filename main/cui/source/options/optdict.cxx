@@ -801,5 +801,3 @@ void SvxDictEdit::KeyInput( const KeyEvent& rKEvt )
 	else if(bSpaces || aKeyCode.GetCode() != KEY_SPACE)
 		Edit::KeyInput(rKEvt);
 }
-
-

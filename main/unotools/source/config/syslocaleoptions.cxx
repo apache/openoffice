@@ -694,5 +694,3 @@ LanguageType SvtSysLocaleOptions::GetRealUILanguage() const
 {
 	return pOptions->GetRealUILanguage();
 }
-
-

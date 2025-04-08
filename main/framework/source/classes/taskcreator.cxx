@@ -69,7 +69,7 @@ namespace framework{
 
 /*-****************************************************************************************************//**
     @short      initialize instance with necessary informations
-    @descr      We need a valid uno service manager to create or instanciate new services.
+    @descr      We need a valid uno service manager to create or instantiate new services.
                 All other informations to create frames or tasks come in on right interface methods.
 
     @param      xSMGR
@@ -85,7 +85,7 @@ TaskCreator::TaskCreator( const css::uno::Reference< css::lang::XMultiServiceFac
 
 /*-****************************************************************************************************//**
     @short      deinitialize instance
-    @descr      We should release all used ressource which are not needed any longer.
+    @descr      We should release all used resources which are not needed any longer.
 
     @modified   16.05.2002 09:33, as96863
 *//*-*****************************************************************************************************/

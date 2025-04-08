@@ -563,5 +563,3 @@ private:
 };
 
 #endif
-
-

@@ -1035,4 +1035,3 @@ SW_DLLPUBLIC const char * dbg_out(const SwNodeRange & rRange)
 }
 
 #endif // DEBUG
-

@@ -182,4 +182,3 @@ extern "C" JNIEXPORT jobject JNICALL Java_com_sun_star_comp_helper_Bootstrap_cpp
     
     return 0;
 }
-

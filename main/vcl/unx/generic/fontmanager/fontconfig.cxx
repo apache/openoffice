@@ -894,7 +894,7 @@ bool PrintFontManager::addFontconfigDir( const rtl::OString& rDirName )
         return false;
 
     // workaround for a stability problems in older FC versions
-    // when handling application specifc fonts
+    // when handling application specific fonts
     const int nVersion = rWrapper.FcGetVersion();
     if( nVersion <= 20400 )
         return false;
@@ -1296,4 +1296,3 @@ rtl::OUString PrintFontManager::Substitute( const rtl::OUString&,
 }
 
 #endif // ENABLE_FONTCONFIG
-

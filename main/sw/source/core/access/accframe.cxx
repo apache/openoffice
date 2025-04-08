@@ -497,4 +497,3 @@ sal_Bool SwAccessibleFrame::IsShowing( const SwAccessibleMap& rAccMap,
 {
     return IsShowing( rFrmOrObj.GetBox( rAccMap ) );
 }
-

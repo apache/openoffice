@@ -850,4 +850,3 @@ sal_Bool SbxDimArray::StoreData( SvStream& rStrm ) const
 	}
 	return SbxArray::StoreData( rStrm );
 }
-

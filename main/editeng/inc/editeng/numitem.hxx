@@ -389,4 +389,3 @@ inline SvxNodeNum& SvxNodeNum::operator=( const SvxNodeNum& rCpy )
 SvxNumRule* SvxConvertNumRule( const SvxNumRule* pRule, sal_uInt16 nLevel, SvxNumRuleType eType );
 
 #endif
-

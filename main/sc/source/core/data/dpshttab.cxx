@@ -300,10 +300,3 @@ sal_uLong ScSheetSourceDesc::CheckValidate( ScDocument* pDoc ) const
 // End Comments
 
 // -----------------------------------------------------------------------
-
-
-
-
-
-
-

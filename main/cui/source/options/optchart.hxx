@@ -82,4 +82,3 @@ public:
 };
 
 #endif  // _SVX_OPTCHART_HXX
-

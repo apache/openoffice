@@ -37,7 +37,7 @@ import com.sun.star.table.CellRangeAddress;
 *  <li><code> getDestArea()</code></li>
 *  <li><code> setDestArea()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.sheet.XAreaLink
 */
 public class _XAreaLink extends MultiMethodTest {
@@ -151,5 +151,3 @@ public class _XAreaLink extends MultiMethodTest {
     }
 
 } // EOC _XAreaLink
-
-

@@ -52,5 +52,3 @@ rtl_TextEncoding SAL_CALL osl_getTextEncodingFromLocale( rtl_Locale * pLocale );
 #endif
 
 #endif	/* _OSL_NLSUPPORT_H_ */
-
-

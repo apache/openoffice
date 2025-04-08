@@ -258,7 +258,7 @@ private:
 
     bool            mbStrictSO52Compatibility;
 public:
-    /* grahics status update */
+    /* graphics status update */
     void            PSSetColor ();
     void            PSSetLineWidth ();
     void            PSSetFont ();
@@ -435,4 +435,3 @@ public:
 
 
 #endif /* _PSPRINT_PRINTERGFX_HXX_ */
-

@@ -196,4 +196,3 @@ void RTL_Impl_CreatePropertySet( StarBASIC* pBasic, SbxArray& rPar, sal_Bool bWr
 
 
 #endif
-

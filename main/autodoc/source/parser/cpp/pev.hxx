@@ -297,4 +297,3 @@ PeEnvironment::IsExternC() const
 
 
 #endif
-

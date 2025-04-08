@@ -44,7 +44,7 @@ import com.sun.star.uno.XInterface;
 * </ul> <p>
 * The component tested <b>must implement</b> interface
 * <code>com.sun.star.table.XCellRange</code>. <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.table.XAutoFormattable
 */
 public class _XAutoFormattable extends MultiMethodTest {
@@ -103,7 +103,7 @@ public class _XAutoFormattable extends MultiMethodTest {
             // applying style
             oObj.autoFormat(name);
 
-            // getting new cell's backround.
+            // getting new cell's background.
             Integer bkgrnd2;
             try {
                 bkgrnd2 = (Integer) PS.getPropertyValue("CellBackColor");

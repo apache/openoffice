@@ -214,4 +214,3 @@ class EnhancedCustomShape2d : public SfxItemSet
 		static void					SwapStartAndEndArrow( SdrObject* pObj );
 };
 #endif
-

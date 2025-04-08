@@ -145,4 +145,3 @@ public:
 };
 
 #endif	// _BASICBOX_HXX
-

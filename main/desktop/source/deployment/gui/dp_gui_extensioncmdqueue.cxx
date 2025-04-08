@@ -1148,4 +1148,3 @@ void handleInteractionRequest( const uno::Reference< uno::XComponentContext > & 
 }
 
 } //namespace dp_gui
-

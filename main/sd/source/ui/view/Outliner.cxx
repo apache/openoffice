@@ -105,7 +105,7 @@ public:
 
     /** Provide in the member mpOutlineView an instance of OutlinerView that
         is either taken from the ViewShell, when it is an OutlineViewShell,
-        or is created.  When an OutlinerView already exists it is initialied.
+        or is created.  When an OutlinerView already exists it is initialized.
     */
     void ProvideOutlinerView (
         Outliner& rOutliner,
@@ -926,7 +926,7 @@ void Outliner::RememberStartPosition (void)
 void Outliner::RestoreStartPosition (void)
 {
     bool bRestore = true;
-    // Take a negative start page index as inidicator that restoring the
+    // Take a negative start page index as indicator that restoring the
     // start position is not requested.
     if (mnStartPageIndex == (sal_uInt16)-1 )
         bRestore = false;
@@ -1314,7 +1314,7 @@ void Outliner::SetViewMode (PageKind ePageKind)
 
         // Force (well, request) a synchronous update of the configuration.
         // In a better world we would handle the asynchronous view update
-        // instead.  But that would involve major restucturing of the
+        // instead.  But that would involve major restructuring of the
         // Outliner code.
         framework::FrameworkHelper::Instance(rBase)->RequestSynchronousUpdate();
         SetViewShell(rBase.GetMainViewShell());

@@ -316,6 +316,3 @@ SfxPoolItem*     SwBackgroundDestinationItem::Clone( SfxItemPool * /*pPool*/ ) c
 {
 	return new SwBackgroundDestinationItem(Which(), GetValue());
 }
-
-
-

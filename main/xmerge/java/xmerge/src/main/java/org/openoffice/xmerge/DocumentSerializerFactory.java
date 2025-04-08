@@ -56,4 +56,3 @@ public interface DocumentSerializerFactory {
      */
     public DocumentSerializer createDocumentSerializer(Document doc);
 }
-

@@ -43,7 +43,7 @@ public class Settings
     private int lastUsedWikiServer = 0;
 
 
-    /* Singelton */
+    /* Singleton */
     private static Settings m_instance;
 
 
@@ -341,4 +341,3 @@ public class Settings
         }
     }
 }
-

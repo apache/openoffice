@@ -128,5 +128,3 @@ public:
 } // namespace comphelper
 
 #endif //_COMPHELPER_OTRANSACTEDFILESTREAM_HXX
-
-

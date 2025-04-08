@@ -77,7 +77,7 @@ public:
     virtual Pointer_t getSubStream(const ::rtl::OUString & rSid) = 0;
 
     /**
-       Return a continious part of the stream.
+       Return a continuous part of the stream.
 
        @param nOffset     offset in the stream where the part starts
        @param nCount      length of the part (number of bytes)
@@ -110,7 +110,7 @@ class WRITERFILTER_DLLPUBLIC WW8Property
 {
 public:
     /**
-       Ponter to a property.
+       Pointer to a property.
     */
     typedef boost::shared_ptr<WW8Property> Pointer_t;
 
@@ -237,7 +237,7 @@ enum PropertyType {
     /** Auxiliary type for character positions defined in piece table */
     PROP_DOC, 
 
-    /** properties are section properies */
+    /** properties are section properties */
     PROP_SEC, 
     
     /** properties are paragraph properties */
@@ -252,7 +252,7 @@ enum PropertyType {
     /** an endnote reference */
     PROP_ENDNOTE,
 
-    /** an annotaion reference */
+    /** an annotation reference */
     PROP_ANNOTATION,
 
     /** the start of a bookmark */
@@ -409,7 +409,7 @@ public:
        - a footer
        - a footnode       
            
-       @param nId identifier of the subdocumen
+       @param nId identifier of the subdocument
     */
     virtual Pointer_t getSubDocument(SubDocumentId nId) = 0;
 

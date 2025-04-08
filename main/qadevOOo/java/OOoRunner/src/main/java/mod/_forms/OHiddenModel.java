@@ -64,7 +64,7 @@ import com.sun.star.util.XCloseable;
  *  <li> <code>com::sun::star::lang::XComponent</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.io.XPersistObject
  * @see com.sun.star.container.XChild
  * @see com.sun.star.form
@@ -103,7 +103,7 @@ public class OHiddenModel extends TestCase {
             log.println("creating a draw document");
             xDrawDoc = SOF.createDrawDoc(null);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document", e);
         }

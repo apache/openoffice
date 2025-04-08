@@ -46,4 +46,3 @@ namespace rptui
 	};
 }
 #endif // RPTUI_ENDMARKER_HXX
-

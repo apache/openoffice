@@ -520,8 +520,3 @@ bool SwDoc::SetCurFtn( const SwPaM& rPam, const String& rNumStr,
 		delete pUndo;
 	return bChg;
 }
-
-
-
-
-

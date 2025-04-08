@@ -101,4 +101,3 @@ transliteration_OneToOne::transliterateChar2Char( sal_Unicode inChar) throw(Runt
 }
 
 } } } }
-

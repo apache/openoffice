@@ -46,4 +46,3 @@ struct SwAccessibilityOptions
     inline void SetStopAnimatedText( sal_Bool b )    { bIsStopAnimatedGraphics = b;}
 };
 #endif
-

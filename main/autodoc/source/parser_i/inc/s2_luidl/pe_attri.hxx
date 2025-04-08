@@ -128,4 +128,3 @@ class PE_Attribute : public UnoIDL_PE,
 
 
 #endif
-

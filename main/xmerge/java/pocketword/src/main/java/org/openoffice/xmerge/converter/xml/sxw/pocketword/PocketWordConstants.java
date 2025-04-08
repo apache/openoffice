@@ -51,7 +51,7 @@ public interface PocketWordConstants {
      */
     public static final byte FORMATTING_TAG = (byte)0xE0;
     
-    /** Font specification tag.  The two bytes following inidicate which font. */
+    /** Font specification tag.  The two bytes following indicate which font. */
     public static final byte FONT_TAG = (byte)0xE5;
     
     /** Font size tag.  The two bytes following specify font size in points. */

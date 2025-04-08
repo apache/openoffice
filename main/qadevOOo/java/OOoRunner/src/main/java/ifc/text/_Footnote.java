@@ -49,4 +49,3 @@ public class _Footnote extends MultiPropertyTest {
     }
 
 } //finish class _Footnote
-

@@ -77,4 +77,3 @@ $(MISC)$/dict_%.cxx : %.dic
 .IF "$(GUI)" != "OS2"
 $(foreach,i,$(shell @$(FIND) . -name "*.dic") $(MISC)$/dict_$(i:b).cxx) : $(BIN)$/gendict$(EXECPOST)
 .ENDIF
-

@@ -146,7 +146,7 @@ public class _XAccessibleEventBroadcaster extends MultiMethodTest {
     }
 
     /**
-     * Removes one of two listeners added before and and fires event
+     * Removes one of two listeners added before and fires event
      * by mean of object relation. <p>
      *
      * Has <b> OK </b> status if the removed listener wasn't called. <p>
@@ -205,4 +205,3 @@ public class _XAccessibleEventBroadcaster extends MultiMethodTest {
     
     
 }
-

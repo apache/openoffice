@@ -1785,4 +1785,3 @@ void AquaSalFrame::EndSetClipRegion()
         // shadow is invalidated when view gets drawn again
     }
 }
-

@@ -135,4 +135,3 @@ public:
 
 
 }	// namespace toolkit_namecontainer
-

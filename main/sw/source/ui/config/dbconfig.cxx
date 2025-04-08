@@ -135,5 +135,3 @@ const SwDBData& SwDBConfig::GetBibliographySource()
 
 void SwDBConfig::Commit() {}
 void SwDBConfig::Notify( const ::com::sun::star::uno::Sequence< rtl::OUString >& ) {}
-
-

@@ -133,5 +133,3 @@ css::uno::Reference< XInterface > X11SalInstance::CreateDropTarget()
 {
 	return css::uno::Reference < XInterface >( ( OWeakObject * ) new DropTarget() );
 }
-
-

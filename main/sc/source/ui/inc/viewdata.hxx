@@ -550,4 +550,3 @@ inline ScSplitPos Which( ScVSplitPos eVPos )
 
 
 #endif
-

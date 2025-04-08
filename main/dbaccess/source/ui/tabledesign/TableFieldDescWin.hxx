@@ -105,7 +105,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEFIELDDESCRIPTION_HXX
-
-
-
-

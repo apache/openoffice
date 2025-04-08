@@ -125,7 +125,7 @@ public class GSIReader extends DataReader {
      * Read the next GSIBlock and return the data
      * 
      * @return A Map containing the data of the read GSIBlock the keys for the language depending data are the language id (numeric) the 
-     * single language  are acessible with the keys "BlockNr", "resType", "languageNr", "status","content".
+     * single language are accessible with the keys "BlockNr", "resType", "languageNr", "status", "content".
      * 
      * @throws IOException
      */
@@ -178,7 +178,7 @@ public class GSIReader extends DataReader {
                 if ((lang = languageResolver.getISOfromNr((String) GSILine
                         .get("languageNr"))).equals(this.sourceLanguage)) {
                     // ok..store it as Source String under the depending
-                    // ressource type
+                    // resource type
 
                     ((Map) GSIBlock.get(sourceLanguage)).put("Source"
                             + ResTypeResolver.getInternKey((String) GSILine
@@ -193,7 +193,7 @@ public class GSIReader extends DataReader {
                     if (lang.equals(this.targetLanguage)) {
 
                         // ok..store it as target String under the depending
-                        // ressource type
+                        // resource type
                         ((Map) GSIBlock.get(targetLanguage)).put("Target"
                                 + ResTypeResolver.getInternKey((String) GSILine
                                         .get("resType")), GSILine

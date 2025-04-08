@@ -361,4 +361,3 @@ private:
 
 
 #endif // SC_NAVIPI_HXX
-

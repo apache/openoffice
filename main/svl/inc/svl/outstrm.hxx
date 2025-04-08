@@ -59,4 +59,3 @@ public:
 };
 
 #endif // SVTOOLS_OUTSTRM_HXX
-

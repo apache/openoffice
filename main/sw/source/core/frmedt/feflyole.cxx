@@ -140,7 +140,3 @@ sal_Bool SwFEShell::FinishOLEObj()						// Server wird beendet
 	}
 	return bRet;
 }
-
-
-
-

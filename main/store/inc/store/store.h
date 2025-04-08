@@ -402,7 +402,3 @@ STORE_DLLPUBLIC storeError SAL_CALL store_remove (
 #endif
 
 #endif /* _STORE_STORE_H_ */
-
-
-
-

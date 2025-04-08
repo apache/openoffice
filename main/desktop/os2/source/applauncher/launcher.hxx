@@ -27,4 +27,3 @@
 #define OFFICE_IMAGE_NAME	"soffice"
 
 extern CHAR APPLICATION_SWITCH[];
-

@@ -88,6 +88,3 @@ IMapCompat::~IMapCompat()
 		}
 	}
 }
-
-
-

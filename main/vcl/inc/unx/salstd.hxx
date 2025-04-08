@@ -70,4 +70,3 @@ struct	XWindowChanges;
 #endif
 
 #endif
-

@@ -356,4 +356,3 @@ inline sal_Bool SfxDispatcher::IsOnTop( const SfxShell& rShell )
 //--------------------------------------------------------------------
 
 #endif
-

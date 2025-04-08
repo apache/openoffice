@@ -72,4 +72,3 @@ bool PopupMenuFloatingWindow::IsPopupMenu() const
 {
     return mpImplData->mnMenuStackLevel != ::std::numeric_limits<sal_uInt16>::max();
 }
-

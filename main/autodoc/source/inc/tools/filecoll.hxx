@@ -62,4 +62,3 @@ class FileCollector : public autodoc::FileCollector_Ifc
 
 
 #endif
-

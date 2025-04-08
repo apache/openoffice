@@ -73,4 +73,3 @@ namespace dbp
 //.........................................................................
 
 #endif // _EXTENSIONS_DBW_WIZARDSERVICES_HXX_
-

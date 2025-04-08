@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _SD_SLIDESHOW_HXX
 #define _SD_SLIDESHOW_HXX
@@ -40,7 +38,7 @@
 #include <boost/shared_ptr.hpp>
 
 namespace com { namespace sun { namespace star {
-	
+
 	namespace drawing {
 		class XDrawPage;
 	}
@@ -93,7 +91,7 @@ typedef ::cppu::WeakComponentImplHelper2< ::com::sun::star::presentation::XPrese
 class SlideShow : private ::cppu::BaseMutex, public SlideshowBase
 {
 public:
-	/// used by the model to create a slideshow for it
+	// used by the model to create a slideshow for it
 	static rtl::Reference< SlideShow > Create( SdDrawDocument* pDoc );
 
 	// static helper api
@@ -109,16 +107,16 @@ public:
 
 	static void Stop( ViewShellBase& rBase );
 
-	/// returns true if there is a running presentation for the given ViewShellBase
+	// returns true if there is a running presentation for the given ViewShellBase
 	static bool IsRunning( ViewShellBase& rBase );
 
-	/// returns true if there is a running presentation inside the given ViewShell
-	/// returns false even if there is a running presentation but in another ViewShell
+	// returns true if there is a running presentation inside the given ViewShell
+	// returns false even if there is a running presentation but in another ViewShell
 	static bool IsRunning( ViewShell& rViewShell );
 
 	// helper api
 
-	bool startPreview( 
+	bool startPreview(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage >& xDrawPage,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& xAnimationNode,
 		::Window* pParent = 0 );
@@ -128,35 +126,35 @@ public:
 		virtual void SAL_CALL disposing (void);
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
 
 	// XPropertySet
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
 
 	// XPresentation
-    virtual void SAL_CALL start(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL end(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL rehearseTimings(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL start(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL end(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL rehearseTimings(  ) throw (::com::sun::star::uno::RuntimeException);
 
-    // XPresentation2
-    virtual void SAL_CALL startWithArguments( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& Arguments ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isRunning(  ) throw (::com::sun::star::uno::RuntimeException);
+	// XPresentation2
+	virtual void SAL_CALL startWithArguments( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& Arguments ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isRunning(  ) throw (::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::presentation::XSlideShowController > SAL_CALL getController(  ) throw (::com::sun::star::uno::RuntimeException);
 
 	// legacy api
 
-	// actions 
-	void jumpToPageNumber( sal_Int32 nPage );				// a.k.a. FuSlideShow::JumpToPage()
+	// actions
+	void jumpToPageNumber( sal_Int32 nPage ); // a.k.a. FuSlideShow::JumpToPage()
 	void jumpToPageIndex( sal_Int32 nIndex );
-	void jumpToBookmark( const ::rtl::OUString& sBookmark );			// a.k.a. FuSlideShow::JumpToBookmark()
+	void jumpToBookmark( const ::rtl::OUString& sBookmark ); // a.k.a. FuSlideShow::JumpToBookmark()
 
 	/** sets or clears the pause state of the running slideshow.
 		!!!! This should only be called by the SdShowWindow !!!!*/
@@ -181,7 +179,7 @@ public:
 	void paint( const Rectangle& rRect );
 
 	bool keyInput(const KeyEvent& rKEvt);
-	
+
 	void receiveRequest(SfxRequest& rReq);
 
 	bool dependsOn( ViewShellBase* pViewShellBase );
@@ -201,18 +199,18 @@ private:
 
 	void CreateController( ViewShell* pViewSh, ::sd::View* pView, ::Window* pParentWindow );
 
-    // default: disabled copy/assignment
+	// default: disabled copy/assignment
 	SlideShow(const SlideShow&);
 	SlideShow& operator=( const SlideShow& );
 
 	SvxItemPropertySet	maPropSet;
 
 	rtl::Reference< SlideshowImpl > mxController;
-    /** This flag is used together with mxController.is() to prevent
-        multiple instances of the slide show for one document.  The flag
-        covers the time before mxController is set.
-    */
-    bool mbIsInStartup;
+	/** This flag is used together with mxController.is() to prevent
+		multiple instances of the slide show for one document. The flag
+		covers the time before mxController is set.
+	*/
+	bool mbIsInStartup;
 	SdDrawDocument* mpDoc;
 
 	boost::shared_ptr< PresentationSettingsEx > mxCurrentSettings;
@@ -226,3 +224,5 @@ private:
 }
 
 #endif /* _SD_SLIDESHOW_HXX */
+
+/* vim: set noet sw=4 ts=4: */

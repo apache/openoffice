@@ -153,4 +153,3 @@ private:
 }
 
 #endif // _TOOLS_WEAKBASE_H_
-

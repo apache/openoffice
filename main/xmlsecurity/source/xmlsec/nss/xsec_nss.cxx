@@ -98,4 +98,3 @@ void* SAL_CALL nss_component_getFactory( const sal_Char* pImplName , void* pServ
 }
 
 }
-

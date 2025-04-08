@@ -92,5 +92,3 @@ config .PHONY:
 
 test .PHONY:
 	$(ANT) $(ANT_FLAGS) $@
-
-

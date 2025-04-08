@@ -85,7 +85,7 @@ ________________________________________________________________________________
 
 //*****************************************************************************************************************
 //	public
-//	define method to instanciate new services
+//	define method to instantiate new services
 //*****************************************************************************************************************
 #define	COMPONENTGETFACTORY( IFFACTORIES )																								\
 	extern "C" SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory(	const	sal_Char*	pImplementationName	,											\

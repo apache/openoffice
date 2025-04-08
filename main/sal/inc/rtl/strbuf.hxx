@@ -657,5 +657,3 @@ private:
 
 #endif  /* __cplusplus */
 #endif  /* _RTL_STRBUF_HXX_ */
-
-

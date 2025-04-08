@@ -1597,6 +1597,3 @@ sal_Bool __EXPORT ScNavigatorDlg::QueryDrop( DropEvent& rEvt )
 	return bReturn;
 }
 #endif
-
-
-

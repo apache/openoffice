@@ -94,5 +94,3 @@ class HtmlMaker
 
 
 #endif
-
-

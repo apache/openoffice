@@ -645,7 +645,7 @@ public class AccessibilityWorkBench
 	// XTerminateListener
 	public void notifyTermination(final EventObject aEvent)
 	{
-		System.out.println ("Notifiy Termination Event : " + aEvent);
+		System.out.println ("Notify Termination Event : " + aEvent);
 	}
 
 

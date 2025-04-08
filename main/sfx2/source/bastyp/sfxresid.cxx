@@ -65,5 +65,3 @@ void SfxResId::DeleteResMgr()
 {
 	DELETEZ( pMgr );
 }
-
-

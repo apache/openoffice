@@ -356,6 +356,3 @@ SwAutoCompleteWord& SwEditShell::GetAutoCompleteWords()
 {
 	return SwDoc::GetAutoCompleteWords();
 }
-
-
-

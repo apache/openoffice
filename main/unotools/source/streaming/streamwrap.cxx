@@ -372,4 +372,3 @@ void SAL_CALL OStreamWrapper::truncate() throw(::com::sun::star::io::IOException
 }
 
 } // namespace utl
-

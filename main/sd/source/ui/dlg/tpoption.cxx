@@ -862,4 +862,3 @@ void SdTpOptionsMisc::PageCreated (SfxAllItemSet aSet)
 			SetImpressMode();
 	}
 }
-

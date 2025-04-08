@@ -35,7 +35,7 @@ import com.sun.star.text.XLineNumberingSupplier;
  *  <li><code> getLineNumberingRules()</code></li>
  *  <li><code> setLineNumberingRules()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.text.XLineNumberingSupplier
  */
 public class _XLineNumberingSupplier extends MultiMethodTest {
@@ -57,4 +57,3 @@ public class _XLineNumberingSupplier extends MultiMethodTest {
     }
 
 }  // finish class _XLineNumberingSupplier
-

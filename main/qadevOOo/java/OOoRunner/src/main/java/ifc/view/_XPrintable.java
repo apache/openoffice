@@ -43,7 +43,7 @@ import com.sun.star.view.XPrintable;
  *  <li><code> setPrinter()</code></li>
  *  <li><code> print()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.view.XPrintable
  */
 public class _XPrintable extends MultiMethodTest {
@@ -121,7 +121,7 @@ public class _XPrintable extends MultiMethodTest {
      * exists. <p>
      *
      * @throws StatusException if service
-     * <code>com.sun.star.ucb.SimpleFileAccess</code> cann't be
+     * <code>com.sun.star.ucb.SimpleFileAccess</code> can't be
      * created.
      */
     public void _print(){
@@ -188,5 +188,3 @@ public class _XPrintable extends MultiMethodTest {
     } // finish _print
 
 }  // finish class _XPrintable
-
-

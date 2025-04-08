@@ -338,4 +338,3 @@ xmlSecKeysMngrPtr XMLSecurityContext_MSCryptImpl :: keysManager() throw( Excepti
 	return m_pKeysMngr ;
 }
 #endif
-

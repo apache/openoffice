@@ -562,8 +562,3 @@ void ScTabView::InterpretVisible()
     // #i65047# repaint during the above loop may have set the bNeedsRepaint flag
     CheckNeedsRepaint();
 }
-
-
-
-
-

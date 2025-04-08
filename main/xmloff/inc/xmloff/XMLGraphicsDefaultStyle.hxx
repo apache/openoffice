@@ -56,4 +56,3 @@ public:
 };
 
 #endif	//  _XMLOFF_XMLGRAPHICSDEFAULTSTYLE_HXX
-

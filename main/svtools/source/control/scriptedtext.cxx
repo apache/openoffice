@@ -385,4 +385,3 @@ void SvtScriptedTextHelper::DrawText( const Point& _rPos )
 
 
 //_____________________________________________________________________________
-

@@ -185,7 +185,3 @@ void SwEditShell::SetAttrSet( const SfxItemSet& rSet, sal_uInt16 nFlags )
     }
 	EndAllAction();
 }
-
-
-
-

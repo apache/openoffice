@@ -1689,4 +1689,3 @@ throw (uno::RuntimeException)
         return prefix + content + suffix;
     }
 }
-

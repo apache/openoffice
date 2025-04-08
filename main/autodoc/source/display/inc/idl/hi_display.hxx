@@ -41,8 +41,8 @@ namespace ary
     {
         class Module;
         class CodeEntity;
-    }   // namspace idl
-}   // namspace csi
+    }   // namespace idl
+}   // namespace csi
 
 
 class MainDisplay_Idl;
@@ -104,4 +104,3 @@ class HtmlDisplay_Idl : public autodoc::HtmlDisplay_Idl_Ifc
 
 
 #endif
-

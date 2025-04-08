@@ -133,4 +133,3 @@ COMPONENTGETFACTORY	(	IFFACTORY( ::framework::URLTransformer					        )	else
                         IFFACTORY( ::framework::NewToolbarController                    )   else
                         IFFACTORY( ::framework::WizardsToolbarController                )
 			)
-

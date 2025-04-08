@@ -167,4 +167,3 @@ private:
 #endif // ENABLE_PANE_RESIZING
 
 #endif
-

@@ -41,5 +41,3 @@ class SVT_DLLPUBLIC CollatorRessource
 };
 
 #endif /* SVTOOLS_COLLATORRESSOURCE_HXX */
-
-

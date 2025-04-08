@@ -85,4 +85,3 @@
 #define N3SQLGetCursorName SQLGetCursorName
 
 #endif // _CONNECTIVITY_ODBC_ODEFS_HXX_
-

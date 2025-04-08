@@ -66,4 +66,3 @@ inline void SwNewHdl::SetErrLnk( const Link &rLink )
 }
 
 #endif
-

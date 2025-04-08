@@ -87,4 +87,3 @@ public:
 };
 
 #endif // _SVTOOLS_CTLOPTIONS_HXX
-

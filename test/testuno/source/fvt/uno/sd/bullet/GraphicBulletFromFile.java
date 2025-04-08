@@ -164,4 +164,3 @@ public class GraphicBulletFromFile {
 				"vnd.sun.star.GraphicObject:"+uniqueID, proValues2[ nGraphObjItemIndex].Value);
 	}
 }
-

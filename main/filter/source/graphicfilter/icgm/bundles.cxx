@@ -281,4 +281,3 @@ void CGMFList::ImplDeleteList()
 	}
 	aFontEntryList.Clear();
 }
-

@@ -68,5 +68,3 @@ public:
 };
 
 #endif		// _SD_SDIOCMPT_HXX
-
-

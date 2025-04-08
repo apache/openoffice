@@ -245,5 +245,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_PROPERTYIMPORT_HXX_
-
-

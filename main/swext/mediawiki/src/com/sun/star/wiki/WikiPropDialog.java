@@ -380,4 +380,3 @@ public class WikiPropDialog extends WikiDialog{
         ThreadStop( false );
     }
 }
-

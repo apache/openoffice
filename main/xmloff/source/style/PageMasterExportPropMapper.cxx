@@ -571,4 +571,3 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 
 	SvXMLExportPropertyMapper::ContextFilter(rPropState,rPropSet);
 }
-

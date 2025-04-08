@@ -853,5 +853,3 @@ void CGM::ImplDoClass4()
 	else
 		mnParaSize = mnElementSize;
 };
-
-

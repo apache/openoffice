@@ -521,4 +521,3 @@ void ScDrawShell::SetHlinkForObject( SdrObject* pObj, const rtl::OUString& rHlnk
     }
 }
 #endif
-

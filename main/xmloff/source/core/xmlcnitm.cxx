@@ -211,4 +211,3 @@ const ::rtl::OUString& SvXMLAttrContainerData::GetAttrValue(sal_uInt16 i) const
 	OSL_ENSURE( i < pValues->Count(), "SvXMLAttrContainerData::GetValue: illegal index" );
 	return *(*pValues)[i];
 }
-

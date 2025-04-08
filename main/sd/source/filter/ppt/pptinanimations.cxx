@@ -3883,4 +3883,3 @@ void AnimationImporter::dump( const char * , const rtl::OUString&  )
 #endif
 
 } // namespace ppt;
-

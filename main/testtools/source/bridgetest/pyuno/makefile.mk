@@ -106,4 +106,3 @@ doc .PHONY:
 runtest : ALL
     cd $(DLLDEST) && $(TEST_ENV) && $(PYTHON) main.py
 .ENDIF # L10N_framework
-

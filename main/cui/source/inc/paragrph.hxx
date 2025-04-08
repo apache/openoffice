@@ -318,5 +318,3 @@ public:
 };
 
 #endif // #ifndef _SVX_PARAGRPH_HXX
-
-

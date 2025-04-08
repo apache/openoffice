@@ -80,5 +80,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_OCallableStatement_HXX_
-
-

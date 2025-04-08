@@ -1216,5 +1216,3 @@ void SwTableFormula::ToSplitMergeBoxNm( SwTableFmlUpdate& rTblUpd )
 	sFormel = ScanString( &SwTableFormula::_SplitMergeBoxNm, *pTbl, (void*)&rTblUpd );
 	eNmType = INTRNL_NAME;
 }
-
-

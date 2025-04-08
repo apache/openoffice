@@ -224,6 +224,3 @@ void ScCellFormat::GetInputString( ScBaseCell* pCell, sal_uLong nFormat, String&
 			break;
 	}
 }
-
-
-

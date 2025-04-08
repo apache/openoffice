@@ -330,4 +330,3 @@ rtl::OUString SAL_CALL makeWinFilterBuffer( CFilterContainer& aFilterContainer )
 
 	return winFilterBuff;
 }
-

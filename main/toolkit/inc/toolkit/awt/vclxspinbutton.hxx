@@ -93,4 +93,3 @@ namespace toolkit
 //........................................................................
 
 #endif // TOOLKIT_INC_TOOLKIT_AWT_VCLXSPINBUTTON_HXX
-

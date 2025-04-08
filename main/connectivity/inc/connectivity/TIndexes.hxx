@@ -50,4 +50,3 @@ namespace connectivity
 }
 
 #endif // CONNECTIVITY_INDEXESHELPER_HXX
-

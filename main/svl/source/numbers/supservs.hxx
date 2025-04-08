@@ -95,4 +95,3 @@ protected:
 
 
 #endif // _SVTOOLS_NUMBERS_SUPPLIERSERVICE_HXX_
-

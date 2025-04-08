@@ -260,4 +260,3 @@ XclExpStream& operator<<( XclExpStream& rStrm, const Color& rColor );
 // ============================================================================
 
 #endif
-

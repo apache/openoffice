@@ -79,4 +79,3 @@ Reference< XFastContextHandler > ShapeStyleContext::createFastChildContext( sal_
 // --------------------------------------------------------------------
 
 } }
-

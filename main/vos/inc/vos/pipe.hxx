@@ -252,4 +252,3 @@ public:
 }
 
 #endif // _VOS_PIPE_HXX_
-

@@ -156,4 +156,3 @@ public void testInsertDeleteColumns() throws Exception {
   }
 
 }
-

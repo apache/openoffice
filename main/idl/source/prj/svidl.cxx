@@ -440,4 +440,3 @@ int cdecl main ( int argc, char ** argv)
 		fprintf( stderr, "svidl terminated with errors\n" );
 	return nExit;
 }
-

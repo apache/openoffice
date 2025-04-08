@@ -256,4 +256,3 @@ void ScSortParam::MoveToDest()
 		DBG_ERROR("MoveToDest, bInplace == TRUE");
 	}
 }
-

@@ -497,7 +497,7 @@ class ImplUCBPrintWatcher : public ::osl::Thread
 
         /* waits for finishing of the print job and moves the temp file afterwards
            Note: Starting of the job is done outside this thread!
-           But we have to free some of the given ressources on heap!
+           But we have to free some of the given resources on heap!
          */
         void SAL_CALL run()
         {
@@ -777,7 +777,7 @@ void SAL_CALL SfxPrintHelper::print(const uno::Sequence< beans::PropertyValue >&
         // b)
         else
         {
-            // Note: we create(d) some ressource on the heap. (thread and tep file)
+            // Note: we create(d) some resource on the heap. (thread and tep file)
             // They will be delected by the thread automatically if he finish his run() method.
             ImplUCBPrintWatcher* pWatcher = new ImplUCBPrintWatcher( pPrinter, pUCBPrintTempFile, sUcbUrl );
             pWatcher->create();
@@ -825,5 +825,3 @@ void SAL_CALL SfxPrintHelper::removePrintJobListener( const ::com::sun::star::un
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     m_pData->m_aInterfaceContainer.removeInterface( ::getCppuType((const uno::Reference < view::XPrintJobListener>*)0), xListener );
 }
-
-

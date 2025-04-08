@@ -61,7 +61,7 @@ enum IteratorLocation {BEGIN,END,CURRENT};
     <ul><li>SELECTION for iteration over all objects that belong to the
     current mark list.</li>
     <li>SINGLE_VIEW for iteration over all objects in the current view.</li>
-    <li>DOCUMENT for iteratioin over all object in all relevant
+    <li>DOCUMENT for iteration over all object in all relevant
     views.</li></ul>
 */
 enum IteratorType {SELECTION,SINGLE_VIEW,DOCUMENT};
@@ -85,7 +85,7 @@ enum IteratorType {SELECTION,SINGLE_VIEW,DOCUMENT};
     <code>Iterator(pDocument,pViewShell,true,BEGIN)</code> for some document
     and view shell.  This iterator can then be compared against
     <code>Iterator(pDocument,pViewShell,true,END)</code>.  On equality the
-    iteration should be stoped without evaluating the iterator: The position
+    iteration should be stopped without evaluating the iterator: The position
     of an end iterator is not valid.</p>
 */
 class Iterator
@@ -117,7 +117,7 @@ public:
         @return
             Returns a reference to the current position.  Therefore this
             method is not thread safe.  The reason for this behaviour is, of
-            course, to ommit the copying of the returned position.
+            course, to omit the copying of the returned position.
     */
     const IteratorPosition& operator* () const;
     /** The prefix increment operator returns the iterator pointing to the
@@ -156,7 +156,7 @@ public:
     */
     bool operator!= (const Iterator& rIterator);
     /** Reverse the direction of iteration.  The position of the iterator is
-        not changed.  Thus caling this method twice returns to the old state.
+        not changed.  Thus calling this method twice returns to the old state.
     */
     void Reverse (void);
 
@@ -181,7 +181,7 @@ private:
 class OutlinerContainer
 {
 public:
-    /** Create a new wraper object for the given outliner.
+    /** Create a new wrapper object for the given outliner.
         @param pOutliner
             The outliner that is represented by the new object as
             <type>SdrObject</type> container.
@@ -363,4 +363,3 @@ public:
 
 
 #endif // _SD_OUTLINER_ITERATOR_HXX
-

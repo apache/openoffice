@@ -54,7 +54,7 @@ import lib.TestParameters;
 *  <li> <code>com::sun::star::ucb::XCachedContentResultSetStubFactory</code></li>
 * </ul> <p>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.ucb.XCachedContentResultSetStubFactory
 * @see com.sun.star.ucb.CachedContentResultSetStubFactory
 * @see ifc.ucb._XCachedContentResultSetStubFactory
@@ -169,4 +169,3 @@ public class CachedContentResultSetStubFactory extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

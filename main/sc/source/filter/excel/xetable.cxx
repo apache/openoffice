@@ -2584,4 +2584,3 @@ void XclExpCellTable::SaveXml( XclExpXmlStream& rStrm )
 }
 
 // ============================================================================
-

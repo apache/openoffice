@@ -72,4 +72,3 @@ public:
     void        SetSelectedTable(const String& rTable, bool bIsTable);
 };
 #endif
-

@@ -73,12 +73,12 @@ import util.ValueComparer;
 *   must lost it. </li>
 *  <li> <code>'XWindow.ControlShape'</code> <b>optional</b>
 *   (of type <code>XControlShape</code>):
-*   Some shapes cann't change their size within fixed ControlShape
+*   Some shapes can't change their size within fixed ControlShape
 *   and their size could be changed only if size of container
 *   ControlShape is changed. For such shapes this relation should
 *   be passed for proper <code>addWindowListener</code> test. </li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XWindow
 */
 public class _XWindow extends MultiMethodTest {
@@ -617,4 +617,3 @@ public class _XWindow extends MultiMethodTest {
     }
 
 }
-

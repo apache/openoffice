@@ -171,5 +171,3 @@ public:
 };
 
 #endif
-
-

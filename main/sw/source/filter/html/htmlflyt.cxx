@@ -509,4 +509,3 @@ sal_uInt8 aHTMLOutFrmAsCharTable[MAX_FRMTYPES][MAX_BROWSERS] =
 		TE(GRFFRM,	INSIDE,	NONE)		// Netscape 4
 	}
 };
-

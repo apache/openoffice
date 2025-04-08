@@ -148,5 +148,3 @@ public class _FunctionDescription extends MultiMethodTest {
     } // end of changeProp
 
 } //finish class _TextContent
-
-

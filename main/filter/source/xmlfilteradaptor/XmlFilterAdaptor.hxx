@@ -177,4 +177,3 @@ SAL_CALL XmlFilterAdaptor_createInstance( const ::com::sun::star::uno::Reference
 
 
 #endif
-

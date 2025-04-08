@@ -136,5 +136,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // COMPHELPER_ACCESSIBLE_COMPONENT_HELPER_HXX
-
-

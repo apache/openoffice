@@ -77,10 +77,3 @@ public class MasterPasswdHandler extends WeakBase
         }
     }
 }
-
-
-
-
-
-
-

@@ -937,4 +937,3 @@ sal_Bool XMLNumberWithAutoInsteadZeroPropHdl::exportXML( OUString& rStrExpValue,
 
     return sal_True;
 }
-

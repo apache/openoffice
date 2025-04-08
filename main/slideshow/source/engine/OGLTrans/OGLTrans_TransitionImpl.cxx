@@ -1308,4 +1308,3 @@ void OGLTransitionImpl::makeNewsflash()
 
     OverallOperations.push_back(new SRotate(basegfx::B3DVector(0,0,1),basegfx::B3DVector(0.2,0.2,0),1080,true,0,1));
 }
-

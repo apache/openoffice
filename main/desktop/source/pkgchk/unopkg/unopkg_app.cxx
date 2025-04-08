@@ -702,4 +702,3 @@ extern "C" int unopkg_main()
     disposeBridges(xLocalComponentContext);
     return 1;
 }
-

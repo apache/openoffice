@@ -738,5 +738,3 @@ Any VCLXAccessibleToolBoxItem::getMinimumValue(  ) throw (RuntimeException)
 	return makeAny((sal_Int32)0);
 }
 // -----------------------------------------------------------------------------
-
-

@@ -60,4 +60,3 @@ namespace dbaui
 //........................................................................
 
 #endif // DBACCESS_ASYNCMODALDIALOG_HXX
-

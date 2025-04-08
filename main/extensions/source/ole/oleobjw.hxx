@@ -271,4 +271,3 @@ protected:
 
 } // end namespace
 #endif
-

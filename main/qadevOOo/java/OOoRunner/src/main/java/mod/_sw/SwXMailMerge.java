@@ -431,5 +431,3 @@ public class SwXMailMerge extends TestCase {
     }    
 
 }
-
-

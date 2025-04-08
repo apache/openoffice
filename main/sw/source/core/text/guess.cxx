@@ -532,7 +532,7 @@ sal_Bool SwTxtGuess::Guess( const SwTxtPortion& rPor, SwTxtFormatInfo &rInf,
  *						SwTxtGuess::AlternativeSpelling
  *************************************************************************/
 
-// returns true if word at position nPos has a diffenrent spelling
+// returns true if word at position nPos has a different spelling
 // if hyphenated at this position (old german spelling)
 
 sal_Bool SwTxtGuess::AlternativeSpelling( const SwTxtFormatInfo &rInf,
@@ -562,4 +562,3 @@ sal_Bool SwTxtGuess::AlternativeSpelling( const SwTxtFormatInfo &rInf,
 						nPos - nBreakStart, rInf.GetHyphValues() );
 	return xHyphWord.is() && xHyphWord->isAlternativeSpelling();
 }
-

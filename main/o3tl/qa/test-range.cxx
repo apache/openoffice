@@ -219,4 +219,3 @@ TEST_F(range_test, global)
     int_test();
     iterator_test();
 }
-

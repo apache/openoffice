@@ -114,5 +114,3 @@ uno::Sequence< ::sal_Int8 > SAL_CALL BlowfishCFB8CipherContext::finalizeCipherCo
 
     return uno::Sequence< sal_Int8 >();
 }
-
-

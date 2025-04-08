@@ -58,5 +58,3 @@ IReference::RefCount OReference::release()
 
 	return (Count);
 }
-
-

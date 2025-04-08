@@ -1124,4 +1124,3 @@ void PDFExport::ImplWriteWatermark( PDFWriter& rWriter, const Size& rPageSize )
     rWriter.EndTransparencyGroup( aTextRect, 50 );
     rWriter.Pop();
 }
-

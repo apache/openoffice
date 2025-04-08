@@ -290,4 +290,3 @@ sal_Bool ScUserList::HasEntry( const String& rStr ) const
     }
     return sal_False;
 }
-

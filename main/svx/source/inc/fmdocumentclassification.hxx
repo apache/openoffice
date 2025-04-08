@@ -80,4 +80,3 @@ namespace svxform
 //........................................................................
 
 #endif // SVX_SOURCE_INC_FMDOCUMENTCLASSIFICATION_HXX
-

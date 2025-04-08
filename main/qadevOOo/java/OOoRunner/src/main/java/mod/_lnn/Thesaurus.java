@@ -48,7 +48,7 @@ import com.sun.star.uno.XInterface;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.lang.XInitialization
  * @see com.sun.star.lang.XComponent
@@ -91,4 +91,3 @@ public class Thesaurus extends TestCase {
     }
 
 }    // finish class TestCase
-

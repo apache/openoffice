@@ -338,6 +338,3 @@ void SAL_CALL OFSInputStreamContainer::removeEventListener( const uno::Reference
 	if ( m_pListenersContainer )
 		m_pListenersContainer->removeInterface( xListener );
 }
-
-
-

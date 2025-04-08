@@ -53,4 +53,3 @@ SimpleIOErrorRequest::SimpleIOErrorRequest(
 
     setContinuations( aContinuations );
 }
-

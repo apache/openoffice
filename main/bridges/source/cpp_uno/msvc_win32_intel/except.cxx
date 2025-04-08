@@ -624,4 +624,3 @@ int msci_filterCppException(
 }
 
 #pragma pack(pop)
-

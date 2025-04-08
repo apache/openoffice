@@ -41,7 +41,7 @@ import com.sun.star.uno.XInterface;
 * <ul>
 *  <li><code> createAdapter()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.script.XInvocationAdapterFactory
 */
 public class _XInvocationAdapterFactory extends MultiMethodTest {
@@ -85,7 +85,7 @@ public class _XInvocationAdapterFactory extends MultiMethodTest {
 
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log) ;
-            throw new StatusException("Cann't create invocation for object", e) ;
+            throw new StatusException("Can't create invocation for object", e) ;
         }
 
         XInterface xInStr = null ;
@@ -105,4 +105,3 @@ public class _XInvocationAdapterFactory extends MultiMethodTest {
         }
     }
 }
-

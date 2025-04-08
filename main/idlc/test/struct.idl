@@ -104,7 +104,7 @@ struct TestStruct : BaseStruct
 	/// a sequence< sequence< long > > member
 	sequence< sequence< long > > 	ms2;
 
-	/// a long array member with dimesion 5,10
+	/// a long array member with dimension 5,10
 //	long			ms3[5][10];
 
 	/// a string array member with dimension 4,8
@@ -125,4 +125,3 @@ struct TestStruct : BaseStruct
 };
 
 }; };
-

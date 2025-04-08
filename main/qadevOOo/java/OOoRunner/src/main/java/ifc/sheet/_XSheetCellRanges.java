@@ -82,4 +82,3 @@ public class _XSheetCellRanges extends MultiMethodTest{
     }
 
 } // finished class _XSheetCellRanges
-

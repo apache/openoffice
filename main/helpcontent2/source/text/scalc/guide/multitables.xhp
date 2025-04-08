@@ -38,13 +38,12 @@
 <bookmark_value>multiple sheets</bookmark_value>
 <bookmark_value>calculating;multiple sheets</bookmark_value>
 </bookmark><comment>MW moved "sheets;simultaneous.." to edit_multitables.xhp, transferred 2 entries from there and added "calculating;"</comment>
-<paragraph xml-lang="en-US" id="hd_id3154759" role="heading" level="1" l10n="U" oldref="9"><variable id="multitables"><link href="text/scalc/guide/multitables.xhp" name="Applying Multiple Sheets">Applying Multiple Sheets</link>
+<paragraph xml-lang="en-US" id="hd_id3154759" role="heading" level="1" l10n="U"><variable id="multitables"><link href="text/scalc/guide/multitables.xhp" name="Applying Multiple Sheets">Applying Multiple Sheets</link>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3148576" role="heading" level="2" l10n="U"
-oldref="10">Inserting a Sheet</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3148576" role="heading" level="2" l10n="U">Inserting a Sheet</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph xml-lang="en-US" id="par_id3154731" role="paragraph" l10n="CHG" oldref="4">Choose <item type="menuitem">Insert - Sheet</item> to insert a new sheet or an existing sheet from another file.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154731" role="paragraph" l10n="CHG">Choose <item type="menuitem">Insert - Sheet</item> to insert a new sheet or an existing sheet from another file.</paragraph>
 </listitem>
 </list>
 <bookmark xml-lang="en-US" branch="hid/FID_TAB_EVENTS" id="bm_id906582498" localize="false"/><comment>Sheet Events</comment>
@@ -56,19 +55,16 @@ oldref="10">Inserting a Sheet</paragraph>
 <paragraph xml-lang="en-US" id="par_id050920091402035" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Click to select all sheets in the document.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/.uno:TableDeselectAll" id="bm_id9065825" localize="false"/>
 <paragraph xml-lang="en-US" id="par_id0509200914020391" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Click to deselect all sheets in the document, except the current sheet.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="hd_id3154491" role="heading" level="2" l10n="U"
-oldref="11">Selecting Multiple Sheets</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145251" role="paragraph" l10n="CHG" oldref="6">The sheet tab of the current sheet is always visible in white in front of the other sheet tabs. The other sheet tabs are gray when they are not selected. By clicking other sheet tabs while pressing <switchinline select="sys"><caseinline select="MAC">Command
+<paragraph xml-lang="en-US" id="hd_id3154491" role="heading" level="2" l10n="U">Selecting Multiple Sheets</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145251" role="paragraph" l10n="CHG">The sheet tab of the current sheet is always visible in white in front of the other sheet tabs. The other sheet tabs are gray when they are not selected. By clicking other sheet tabs while pressing <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl </defaultinline></switchinline>you can select multiple sheets.</paragraph>
 <paragraph xml-lang="en-US" id="par_idN106B7" role="paragraph" l10n="CHG">You can use Shift+<switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Up or Page Down to select multiple sheets using the keyboard.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3155600" role="heading" level="2" l10n="U"
-oldref="12">Undoing a Selection</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146969" role="paragraph" l10n="CHG" oldref="13">To undo the selection of a sheet, click its sheet tab again while pressing the <switchinline select="sys"><caseinline select="MAC">Command
+<paragraph xml-lang="en-US" id="hd_id3155600" role="heading" level="2" l10n="U">Undoing a Selection</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146969" role="paragraph" l10n="CHG">To undo the selection of a sheet, click its sheet tab again while pressing the <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl </defaultinline></switchinline>key. The sheet that is currently visible cannot be removed from the selection.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3156382" role="heading" level="2" l10n="CHG"
-oldref="15">Calculating Across Multiple Sheets</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155333" role="paragraph" l10n="CHG" oldref="16">You can refer to a range of sheets in a formula by specifying the first and last sheet of the range, for example, <item type="literal">=SUM(Sheet1.A1:Sheet3.A1) </item>sums up all A1 cells on Sheet1 through Sheet3.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156382" role="heading" level="2" l10n="CHG">Calculating Across Multiple Sheets</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155333" role="paragraph" l10n="CHG">You can refer to a range of sheets in a formula by specifying the first and last sheet of the range, for example, <item type="literal">=SUM(Sheet1.A1:Sheet3.A1) </item>sums up all A1 cells on Sheet1 through Sheet3.</paragraph>
 <section id="relatedtopics">
 <embed href="text/scalc/guide/multi_tables.xhp#multi_tables"/>
 <embed href="text/scalc/guide/edit_multitables.xhp#edit_multitables"/>

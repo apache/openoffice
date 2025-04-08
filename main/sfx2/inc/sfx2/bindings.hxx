@@ -255,4 +255,3 @@ inline int SfxBindings::IsInRegistrations() const
 //--------------------------------------------------------------------
 
 #endif
-

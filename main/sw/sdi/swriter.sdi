@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 //--------------------------------------------------------------------------
@@ -7063,7 +7063,7 @@ SfxVoidItem SendOutlineToStarImpress FN_OUTLINE_TO_IMPRESS
 ]
 
 //--------------------------------------------------------------------------
-SfxVoidItem SetAnchorAtChar FN_TOOL_ANKER_AT_CHAR
+SfxVoidItem SetAnchorAtChar FN_TOOL_ANCHOR_AT_CHAR
 ()
 [
 	/* flags: */
@@ -7091,7 +7091,7 @@ SfxVoidItem SetAnchorAtChar FN_TOOL_ANKER_AT_CHAR
 ]
 
 //--------------------------------------------------------------------------
-SfxVoidItem SetAnchorToChar FN_TOOL_ANKER_CHAR
+SfxVoidItem SetAnchorToChar FN_TOOL_ANCHOR_CHAR
 ()
 [
 	/* flags: */
@@ -7119,7 +7119,7 @@ SfxVoidItem SetAnchorToChar FN_TOOL_ANKER_CHAR
 ]
 
 //--------------------------------------------------------------------------
-SfxVoidItem SetAnchorToFrame FN_TOOL_ANKER_FRAME
+SfxVoidItem SetAnchorToFrame FN_TOOL_ANCHOR_FRAME
 ()
 [
 	/* flags: */
@@ -7147,7 +7147,7 @@ SfxVoidItem SetAnchorToFrame FN_TOOL_ANKER_FRAME
 ]
 
 //--------------------------------------------------------------------------
-SfxVoidItem SetAnchorToPage FN_TOOL_ANKER_PAGE
+SfxVoidItem SetAnchorToPage FN_TOOL_ANCHOR_PAGE
 ()
 [
 	/* flags: */
@@ -7175,7 +7175,7 @@ SfxVoidItem SetAnchorToPage FN_TOOL_ANKER_PAGE
 ]
 
 //--------------------------------------------------------------------------
-SfxVoidItem SetAnchorToPara FN_TOOL_ANKER_PARAGRAPH
+SfxVoidItem SetAnchorToPara FN_TOOL_ANCHOR_PARAGRAPH
 ()
 [
 	/* flags: */
@@ -8233,7 +8233,7 @@ SfxVoidItem TextWrap FN_DRAW_WRAP_DLG
 ]
 
 //--------------------------------------------------------------------------
-SfxVoidItem ToggleAnchorType FN_TOOL_ANKER
+SfxVoidItem ToggleAnchorType FN_TOOL_ANCHOR
 ()
 [
 	/* flags: */
@@ -10259,4 +10259,3 @@ SvxLongLRSpaceItem SwPageLRMargin SID_ATTR_PAGE_LRSPACE
 	ToolBoxConfig = FALSE,
 	GroupId = GID_FORMAT;
 ]
-

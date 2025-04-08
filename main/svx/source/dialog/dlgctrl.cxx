@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
@@ -69,10 +67,8 @@ using namespace ::com::sun::star::accessibility;
 
 
 /*************************************************************************
-|*
 |*	Control to display select the corner points (and center point)
 |*	of an object
-|*
 \************************************************************************/
 
 Bitmap& SvxRectCtl::GetRectBitmap( void )
@@ -89,16 +85,16 @@ SvxRectCtl::SvxRectCtl( Window* pParent, const ResId& rResId, RECT_POINT eRpt,
 	Control( pParent, rResId ),
 
 	pAccContext	( NULL ),
-    nBorderWidth( nBorder ),
-    nRadius     ( nCircle),
-    eDefRP      ( eRpt ),
-    eCS         ( eStyle ),
+	nBorderWidth( nBorder ),
+	nRadius     ( nCircle),
+	eDefRP      ( eRpt ),
+	eCS         ( eStyle ),
 	pBitmap		( NULL ),
-    m_nState    ( 0 ),
-    mbCompleteDisable(sal_False)
+	m_nState    ( 0 ),
+	mbCompleteDisable(sal_False)
 {
 	SetMapMode( MAP_100TH_MM );
-    Resize_Impl();
+	Resize_Impl();
 }
 
 // -----------------------------------------------------------------------
@@ -114,15 +110,15 @@ SvxRectCtl::~SvxRectCtl()
 // -----------------------------------------------------------------------
 void SvxRectCtl::Resize()
 {
-    Resize_Impl();
-    Control::Resize();
+	Resize_Impl();
+	Control::Resize();
 }
 
 // -----------------------------------------------------------------------
 
 void SvxRectCtl::Resize_Impl()
 {
-    aSize = GetOutputSize();
+	aSize = GetOutputSize();
 
 	switch( eCS )
 	{
@@ -178,7 +174,7 @@ void SvxRectCtl::InitRectBitmap( void )
 	aColorAry1[1] = Color( 0xFF, 0xFF, 0x00 );	// yellow
 	aColorAry1[2] = Color( 0xFF, 0xFF, 0xFF );	// white
 	aColorAry1[3] = Color( 0x80, 0x80, 0x80 );	// dark-gray
-	aColorAry1[4] = Color( 0x00, 0x00, 0x00 );  // black
+	aColorAry1[4] = Color( 0x00, 0x00, 0x00 );	// black
 	aColorAry1[5] = Color( 0x00, 0xFF, 0x00 );	// green
 	aColorAry1[6] = Color( 0x00, 0x00, 0xFF );	// blue
 	aColorAry2[0] = rStyles.GetDialogColor();		// background
@@ -240,10 +236,8 @@ void SvxRectCtl::InitSettings( sal_Bool bForeground, sal_Bool bBackground )
 }
 
 /*************************************************************************
-|*
 |*	The selected rectangle (3 x 3) is identified and the parent (dialog)
 |*	is notified that the point has been changed
-|*
 \************************************************************************/
 
 void SvxRectCtl::MouseButtonDown( const MouseEvent& rMEvt )
@@ -298,8 +292,8 @@ void SvxRectCtl::KeyInput( const KeyEvent& rKeyEvt )
 						case RP_LM: eNewRP = RP_LB; break;
 						case RP_MM: eNewRP = RP_MB; break;
 						case RP_RM: eNewRP = RP_RB; break;
-                        default: ; //prevent warning
-                    }
+						default: ; //prevent warning
+					}
 			}
 			break;
 			case KEY_UP:
@@ -313,8 +307,8 @@ void SvxRectCtl::KeyInput( const KeyEvent& rKeyEvt )
 						case RP_LB: eNewRP = RP_LM; break;
 						case RP_MB: eNewRP = bUseMM ? RP_MM : RP_MT; break;
 						case RP_RB: eNewRP = RP_RM; break;
-                        default: ; //prevent warning
-                    }
+						default: ; //prevent warning
+					}
 			}
 			break;
 			case KEY_LEFT:
@@ -328,8 +322,8 @@ void SvxRectCtl::KeyInput( const KeyEvent& rKeyEvt )
 						case RP_RM: eNewRP = bUseMM ? RP_MM : RP_LM; break;
 						case RP_MB: eNewRP = RP_LB; break;
 						case RP_RB: eNewRP = RP_MB; break;
-                        default: ; //prevent warning
-                    }
+						default: ; //prevent warning
+					}
 			}
 			break;
 			case KEY_RIGHT:
@@ -343,8 +337,8 @@ void SvxRectCtl::KeyInput( const KeyEvent& rKeyEvt )
 						case RP_MM: eNewRP = RP_RM; break;
 						case RP_LB: eNewRP = RP_MB; break;
 						case RP_MB: eNewRP = RP_RB; break;
-                        default: ; //prevent warning
-                    }
+						default: ; //prevent warning
+					}
 			}
 			break;
 			default:
@@ -386,9 +380,7 @@ void SvxRectCtl::DataChanged( const DataChangedEvent& rDCEvt )
 }
 
 /*************************************************************************
-|*
 |*	Draw the control (rectangle with 9 circles)
-|*
 \************************************************************************/
 
 void SvxRectCtl::Paint( const Rectangle& )
@@ -518,14 +510,12 @@ void SvxRectCtl::Paint( const Rectangle& )
 }
 
 /*************************************************************************
-|*
 |*	Converted RECT_POINT in Point
-|*
 \************************************************************************/
 
 Point SvxRectCtl::GetPointFromRP( RECT_POINT _eRP) const
 {
-    switch( _eRP )
+	switch( _eRP )
 	{
 		case RP_LT: return aPtLT;
 		case RP_MT: return aPtMT;
@@ -573,7 +563,7 @@ Point SvxRectCtl::SetActualRPWithoutInvalidate( RECT_POINT eNewRP )
 void SvxRectCtl::GetFocus()
 {
 	SetFocusRect();
-	//Solution: Send the accessible focused event
+	// Solution: Send the accessible focused event
 	Control::GetFocus();
 	// Send accessibility event.
 	if(pAccContext)
@@ -624,9 +614,7 @@ Point SvxRectCtl::GetApproxLogPtFromPixPt( const Point& rPt ) const
 
 
 /*************************************************************************
-|*
 |*	Converted Point in RECT_POINT
-|*
 \************************************************************************/
 
 RECT_POINT SvxRectCtl::GetRPFromPoint( Point aPt ) const
@@ -645,9 +633,7 @@ RECT_POINT SvxRectCtl::GetRPFromPoint( Point aPt ) const
 }
 
 /*************************************************************************
-|*
 |*	Reset the original state of the controls
-|*
 \************************************************************************/
 
 void SvxRectCtl::Reset()
@@ -658,9 +644,7 @@ void SvxRectCtl::Reset()
 }
 
 /*************************************************************************
-|*
 |*	Returns the currently selected RECT_POINT
-|*
 \************************************************************************/
 
 RECT_POINT SvxRectCtl::GetActualRP() const
@@ -669,9 +653,7 @@ RECT_POINT SvxRectCtl::GetActualRP() const
 }
 
 /*************************************************************************
-|*
 |*	Returns the currently selected RECT_POINT
-|*
 \************************************************************************/
 void SvxRectCtl::SetActualRP( RECT_POINT eNewRP /* MT: , sal_Bool bFireFocus */ )
 {
@@ -690,15 +672,15 @@ void SvxRectCtl::SetState( CTL_STATE nState )
 	m_nState = nState;
 
 	Point aPtLast( GetPointFromRP( eRP ) );
-    Point _aPtNew( aPtLast );
+	Point _aPtNew( aPtLast );
 
 	if( (m_nState & CS_NOHORZ) != 0 )
-        _aPtNew.X() = aPtMM.X();
+		_aPtNew.X() = aPtMM.X();
 
 	if( (m_nState & CS_NOVERT) != 0 )
-        _aPtNew.Y() = aPtMM.Y();
+		_aPtNew.Y() = aPtMM.Y();
 
-    eRP = GetRPFromPoint( _aPtNew );
+	eRP = GetRPFromPoint( _aPtNew );
 	Invalidate();
 
 	if( WINDOW_TABPAGE == GetParent()->GetType() )
@@ -742,13 +724,13 @@ Reference< XAccessible > SvxRectCtl::CreateAccessible()
 
 	DBG_ASSERT( pParent, "-SvxRectCtl::CreateAccessible(): No Parent!" );
 
-	Reference< XAccessible >	xAccParent  = pParent->GetAccessible();
+	Reference< XAccessible >	xAccParent = pParent->GetAccessible();
 	if( xAccParent.is() )
 	{
 		pAccContext = new SvxRectCtlAccessibleContext( xAccParent, *this );
 		pAccContext->acquire();
 
-        SetActualRP( GetActualRP() );
+		SetActualRP( GetActualRP() );
 
 		return pAccContext;
 	}
@@ -769,9 +751,7 @@ void SvxRectCtl::DoCompletelyDisable(sal_Bool bNew)
 }
 
 /*************************************************************************
-|*
 |* Constructor without size parameter
-|*
 \************************************************************************/
 
 SvxAngleCtl::SvxAngleCtl( Window* pParent, const ResId& rResId ) :
@@ -785,9 +765,7 @@ SvxAngleCtl::SvxAngleCtl( Window* pParent, const ResId& rResId ) :
 }
 
 /*************************************************************************
-|*
 |* Constructor with size parameter
-|*
 \************************************************************************/
 
 SvxAngleCtl::SvxAngleCtl( Window* pParent, const ResId& rResId, Size _aSize ) :
@@ -796,14 +774,12 @@ SvxAngleCtl::SvxAngleCtl( Window* pParent, const ResId& rResId, Size _aSize ) :
 
 	aFont( Application::GetSettings().GetStyleSettings().GetAppFont() )
 {
-    aFontSize = _aSize;
+	aFontSize = _aSize;
 	Initialize();
 }
 
 /*************************************************************************
-|*
-|* Initialisation
-|*
+|* Initialization
 \************************************************************************/
 
 void SvxAngleCtl::Initialize()
@@ -819,9 +795,7 @@ void SvxAngleCtl::Initialize()
 }
 
 /*************************************************************************
-|*
 |*	Draw the (mini) coordinate system
-|*
 \************************************************************************/
 
 void SvxAngleCtl::Paint( const Rectangle& )
@@ -875,21 +849,19 @@ void SvxAngleCtl::Paint( const Rectangle& )
 }
 
 /*************************************************************************
-|*
 |*	Control to edit bitmaps
-|*
 \************************************************************************/
 
 ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SvxPixelCtl::CreateAccessible()
 {
-    if(!m_xAccess.is())
+	if(!m_xAccess.is())
 	{
-		m_xAccess = m_pAccess =  new SvxPixelCtlAccessible(*this);
+		m_xAccess = m_pAccess = new SvxPixelCtlAccessible(*this);
 	}
-    return m_xAccess;
+	return m_xAccess;
 }
 
-//Logic Pixel
+// Logic Pixel
 long SvxPixelCtl::PointToIndex(const Point &aPt) const
 {
 	sal_uInt16	nX, nY;
@@ -912,7 +884,7 @@ Point SvxPixelCtl::IndexToPoint(long nIndex) const
 
 	return aPtTl;
 }
-long SvxPixelCtl::GetFoucsPosIndex() const 
+long SvxPixelCtl::GetFoucsPosIndex() const
 {
 	return aFocusPosition.getX() + aFocusPosition.getY() * nLines ;
 }
@@ -926,14 +898,14 @@ long SvxPixelCtl::ShowPosition( const Point &pt)
 
 	ChangePixel( nX + nY * nLines );
 
-	//Solution:Set new focus position and repaint
-	//Invalidate( Rectangle( aPtTl, aPtBr ) );
+	// Solution:Set new focus position and repaint
+	// Invalidate( Rectangle( aPtTl, aPtBr ) );
 	aFocusPosition.setX(nX);
 	aFocusPosition.setY(nY);
 	Invalidate(Rectangle(Point(0,0),aRectSize));
 
 	if( WINDOW_TABPAGE == GetParent()->GetType() )
-		( (SvxTabPage*) GetParent() )->PointChanged( this, RP_MM ); // RectPoint ist dummy
+		( (SvxTabPage*) GetParent() )->PointChanged( this, RP_MM ); // RectPoint is dummy
 
 	return GetFoucsPosIndex();
 
@@ -942,7 +914,7 @@ SvxPixelCtl::SvxPixelCtl( Window* pParent, const ResId& rResId, sal_uInt16 nNumb
 						Control		( pParent, rResId ),
 						nLines		( nNumber ),
 						bPaintable	( sal_True )
-						//Solution:Initialize it's value to Point(0,0)
+						// Solution:Initialize its value to Point(0,0)
 						,aFocusPosition(0,0)
 {
 	// SetMapMode( MAP_100TH_MM );
@@ -959,9 +931,7 @@ SvxPixelCtl::SvxPixelCtl( Window* pParent, const ResId& rResId, sal_uInt16 nNumb
 }
 
 /*************************************************************************
-|*
 |*	Destruktor dealociert dyn. Array
-|*
 \************************************************************************/
 
 SvxPixelCtl::~SvxPixelCtl( )
@@ -970,9 +940,7 @@ SvxPixelCtl::~SvxPixelCtl( )
 }
 
 /*************************************************************************
-|*
 |*	Change the foreground or background color
-|*
 \************************************************************************/
 
 void SvxPixelCtl::ChangePixel( sal_uInt16 nPixel )
@@ -984,9 +952,7 @@ void SvxPixelCtl::ChangePixel( sal_uInt16 nPixel )
 }
 
 /*************************************************************************
-|*
 |*	The selected rectangle is identified to change the color
-|*
 \************************************************************************/
 
 void SvxPixelCtl::MouseButtonDown( const MouseEvent& rMEvt )
@@ -1023,9 +989,7 @@ void SvxPixelCtl::MouseButtonDown( const MouseEvent& rMEvt )
 }
 
 /*************************************************************************
-|*
 |*	Draw the control (rectangle with 9 circles)
-|*
 \************************************************************************/
 
 void SvxPixelCtl::Paint( const Rectangle& )
@@ -1070,7 +1034,7 @@ void SvxPixelCtl::Paint( const Rectangle& )
 				DrawRect( Rectangle( aPtTl, aPtBr ) );
 			}
 		}
-		//Solution:Draw visual focus when has focus
+		// Solution:Draw visual focus when has focus
 		if( HasFocus() )
 		{
 			ShowFocus(implCalFocusRect(aFocusPosition));
@@ -1084,7 +1048,7 @@ void SvxPixelCtl::Paint( const Rectangle& )
 		DrawLine( Point( 0, aRectSize.Height() ), Point( aRectSize.Width(), 0 ) );
 	}
 }
-//Solution:Caculate visual focus rectangle via focus position
+// Solution:Calculate visual focus rectangle via focus position
 Rectangle SvxPixelCtl::implCalFocusRect( const Point& aPosition )
 {
 	long nLeft,nTop,nRight,nBottom;
@@ -1098,7 +1062,7 @@ Rectangle SvxPixelCtl::implCalFocusRect( const Point& aPosition )
 	return Rectangle(nLeft,nTop,nRight,nBottom);
 }
 
-//Solution:Keyboard function
+// Solution:Keyboard function
 void SvxPixelCtl::KeyInput( const KeyEvent& rKEvt )
 {
 	KeyCode aKeyCode = rKEvt.GetKeyCode();
@@ -1183,7 +1147,7 @@ void SvxPixelCtl::KeyInput( const KeyEvent& rKEvt )
 	}
 }
 
-//Draw focus when get focus
+// Draw focus when get focus
 void SvxPixelCtl::GetFocus()
 {
 	Invalidate(implCalFocusRect(aFocusPosition));
@@ -1196,7 +1160,7 @@ void SvxPixelCtl::GetFocus()
 	Control::GetFocus();
 }
 
-//Hide focus when lose focus
+// Hide focus when lose focus
 void SvxPixelCtl::LoseFocus()
 {
 	HideFocus();
@@ -1209,45 +1173,41 @@ void SvxPixelCtl::LoseFocus()
 
 /*************************************************************************
 |*
-|*
-|*
 \************************************************************************/
 
 void SvxPixelCtl::SetXBitmap( const BitmapEx& rBitmapEx )
 {
-    BitmapColor aBack;
-    BitmapColor aFront;
+	BitmapColor aBack;
+	BitmapColor aFront;
 
-    if(isHistorical8x8(rBitmapEx, aBack, aFront))
-    {
-        Bitmap aBitmap(rBitmapEx.GetBitmap());
-        BitmapReadAccess* pRead = aBitmap.AcquireReadAccess();
+	if(isHistorical8x8(rBitmapEx, aBack, aFront))
+	{
+		Bitmap aBitmap(rBitmapEx.GetBitmap());
+		BitmapReadAccess* pRead = aBitmap.AcquireReadAccess();
 
-        aBackgroundColor = aBack;
-        aPixelColor = aFront;
+		aBackgroundColor = aBack;
+		aPixelColor = aFront;
 
-        for(sal_uInt16 i(0); i < nSquares; i++)
-        {
-            const BitmapColor aColor(pRead->GetColor(i/8, i%8));
+		for(sal_uInt16 i(0); i < nSquares; i++)
+		{
+			const BitmapColor aColor(pRead->GetColor(i/8, i%8));
 
-            if(aColor == aBack)
-            {
-                *( pPixel + i ) = 0;
-            }
-            else
-            {
-                *( pPixel + i ) = 1;
-            }
-        }
+			if(aColor == aBack)
+			{
+				*( pPixel + i ) = 0;
+			}
+			else
+			{
+				*( pPixel + i ) = 1;
+			}
+		}
 
-        aBitmap.ReleaseAccess(pRead);
-    }
+		aBitmap.ReleaseAccess(pRead);
+	}
 }
 
 /*************************************************************************
-|*
 |*	Return a selected pixel
-|*
 \************************************************************************/
 
 sal_uInt16 SvxPixelCtl::GetBitmapPixel( const sal_uInt16 nPixel )
@@ -1256,9 +1216,7 @@ sal_uInt16 SvxPixelCtl::GetBitmapPixel( const sal_uInt16 nPixel )
 }
 
 /*************************************************************************
-|*
 |*	Reset the original state of the control
-|*
 \************************************************************************/
 
 void SvxPixelCtl::Reset()
@@ -1269,9 +1227,7 @@ void SvxPixelCtl::Reset()
 }
 
 /*************************************************************************
-|*
 |*	Ctor: BitmapCtl for SvxPixelCtl
-|*
 \************************************************************************/
 
 SvxBitmapCtl::SvxBitmapCtl( Window* /*pParent*/, const Size& rSize )
@@ -1281,9 +1237,7 @@ SvxBitmapCtl::SvxBitmapCtl( Window* /*pParent*/, const Size& rSize )
 }
 
 /*************************************************************************
-|*
 |*	Dtor
-|*
 \************************************************************************/
 
 SvxBitmapCtl::~SvxBitmapCtl()
@@ -1291,22 +1245,18 @@ SvxBitmapCtl::~SvxBitmapCtl()
 }
 
 /*************************************************************************
-|*
 |*	BitmapCtl:	Return the bitmap
-|*
 \************************************************************************/
 
 BitmapEx SvxBitmapCtl::GetBitmapEx()
 {
-    const Bitmap aRetval(createHistorical8x8FromArray(pBmpArray, aPixelColor, aBackgroundColor));
+	const Bitmap aRetval(createHistorical8x8FromArray(pBmpArray, aPixelColor, aBackgroundColor));
 
 	return BitmapEx(aRetval);
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box with colors and strings
-|*
 \************************************************************************/
 
 void ColorLB::Fill( const XColorListSharedPtr aColorTab )
@@ -1317,11 +1267,11 @@ void ColorLB::Fill( const XColorListSharedPtr aColorTab )
 
 	for( long i = 0; i < nCount; i++ )
 	{
-        pEntry = aColorTab->GetColor( i );
+		pEntry = aColorTab->GetColor( i );
 		InsertEntry( pEntry->GetColor(), pEntry->GetName() );
 	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	SetUpdateMode( sal_True );
 }
 
@@ -1329,22 +1279,20 @@ void ColorLB::Fill( const XColorListSharedPtr aColorTab )
 
 void ColorLB::Append( const XColorEntry& rEntry )
 {
-    InsertEntry( rEntry.GetColor(), rEntry.GetName() );
-    AdaptDropDownLineCountToMaximum();
+	InsertEntry( rEntry.GetColor(), rEntry.GetName() );
+	AdaptDropDownLineCountToMaximum();
 }
 
 /************************************************************************/
 
 void ColorLB::Modify( const XColorEntry& rEntry, sal_uInt16 nPos )
 {
-    RemoveEntry( nPos );
-    InsertEntry( rEntry.GetColor(), rEntry.GetName(), nPos );
+	RemoveEntry( nPos );
+	InsertEntry( rEntry.GetColor(), rEntry.GetName(), nPos );
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box with colors and strings
-|*
 \************************************************************************/
 
 void FillAttrLB::Fill( const XColorListSharedPtr aColorTab )
@@ -1355,30 +1303,28 @@ void FillAttrLB::Fill( const XColorListSharedPtr aColorTab )
 
 	for( long i = 0; i < nCount; i++ )
 	{
-        pEntry = aColorTab->GetColor( i );
+		pEntry = aColorTab->GetColor( i );
 		InsertEntry( pEntry->GetColor(), pEntry->GetName() );
 	}
 
-    AdaptDropDownLineCountToMaximum();
-    SetUpdateMode( sal_True );
+	AdaptDropDownLineCountToMaximum();
+	SetUpdateMode( sal_True );
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box (temporarily) with strings
-|*
 \************************************************************************/
 
 HatchingLB::HatchingLB( Window* pParent, ResId Id)
 : ListBox( pParent, Id )
 {
-    SetEdgeBlending(true);
+	SetEdgeBlending(true);
 }
 
 HatchingLB::HatchingLB( Window* pParent, WinBits aWB)
 : ListBox( pParent, aWB )
 {
-    SetEdgeBlending(true);
+	SetEdgeBlending(true);
 }
 
 void HatchingLB::Fill( const XHatchListSharedPtr aList )
@@ -1390,7 +1336,7 @@ void HatchingLB::Fill( const XHatchListSharedPtr aList )
 
 	for( long i = 0; i < nCount; i++ )
 	{
-        pEntry = aList->GetHatch( i );
+		pEntry = aList->GetHatch( i );
 		const Bitmap aBitmap = aList->GetUiBitmap( i );
 		if( !aBitmap.IsEmpty() )
 			InsertEntry( pEntry->GetName(), aBitmap );
@@ -1398,7 +1344,7 @@ void HatchingLB::Fill( const XHatchListSharedPtr aList )
 			InsertEntry( pEntry->GetName() );
 	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	SetUpdateMode( sal_True );
 }
 
@@ -1406,32 +1352,32 @@ void HatchingLB::Fill( const XHatchListSharedPtr aList )
 
 void HatchingLB::Append( const XHatchEntry& rEntry, const Bitmap& rBitmap )
 {
-    if(!rBitmap.IsEmpty())
-    {
-        InsertEntry( rEntry.GetName(), rBitmap );
-    }
-    else
-    {
-        InsertEntry( rEntry.GetName() );
-    }
+	if(!rBitmap.IsEmpty())
+	{
+		InsertEntry( rEntry.GetName(), rBitmap );
+	}
+	else
+	{
+		InsertEntry( rEntry.GetName() );
+	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 }
 
 /************************************************************************/
 
 void HatchingLB::Modify( const XHatchEntry& rEntry, sal_uInt16 nPos, const Bitmap& rBitmap )
 {
-    RemoveEntry( nPos );
+	RemoveEntry( nPos );
 
-    if( !rBitmap.IsEmpty() )
-    {
-        InsertEntry( rEntry.GetName(), rBitmap, nPos );
-    }
-    else
-    {
-        InsertEntry( rEntry.GetName(), nPos );
-    }
+	if( !rBitmap.IsEmpty() )
+	{
+		InsertEntry( rEntry.GetName(), rBitmap, nPos );
+	}
+	else
+	{
+		InsertEntry( rEntry.GetName(), nPos );
+	}
 }
 
 /************************************************************************/
@@ -1446,7 +1392,7 @@ void HatchingLB::SelectEntryByList( const XHatchListSharedPtr aList, const Strin
 	long i;
 	for( i = 0; i < nCount && !bFound; i++ )
 	{
-        pEntry = aList->GetHatch( i );
+		pEntry = aList->GetHatch( i );
 
 		aStr = pEntry->GetName();
 
@@ -1458,9 +1404,7 @@ void HatchingLB::SelectEntryByList( const XHatchListSharedPtr aList, const Strin
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box (temporarily) with strings
-|*
 \************************************************************************/
 
 void FillAttrLB::Fill( const XHatchListSharedPtr aList )
@@ -1471,7 +1415,7 @@ void FillAttrLB::Fill( const XHatchListSharedPtr aList )
 
 	for( long i = 0; i < nCount; i++ )
 	{
-        pEntry = aList->GetHatch( i );
+		pEntry = aList->GetHatch( i );
 		const Bitmap aBitmap = aList->GetUiBitmap( i );
 		if( !aBitmap.IsEmpty() )
 			ListBox::InsertEntry( pEntry->GetName(), aBitmap );
@@ -1479,26 +1423,24 @@ void FillAttrLB::Fill( const XHatchListSharedPtr aList )
 			InsertEntry( pEntry->GetName() );
 	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	ListBox::SetUpdateMode( sal_True );
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box (temporarily) with strings
-|*
 \************************************************************************/
 
 GradientLB::GradientLB( Window* pParent, ResId Id)
 : ListBox( pParent, Id )
 {
-    SetEdgeBlending(true);
+	SetEdgeBlending(true);
 }
 
 GradientLB::GradientLB( Window* pParent, WinBits aWB)
 : ListBox( pParent, aWB )
 {
-    SetEdgeBlending(true);
+	SetEdgeBlending(true);
 }
 
 void GradientLB::Fill( const XGradientListSharedPtr aList )
@@ -1510,7 +1452,7 @@ void GradientLB::Fill( const XGradientListSharedPtr aList )
 
 	for( long i = 0; i < nCount; i++ )
 	{
-        pEntry = aList->GetGradient( i );
+		pEntry = aList->GetGradient( i );
 		const Bitmap aBitmap = aList->GetUiBitmap( i );
 		if( !aBitmap.IsEmpty() )
 			InsertEntry( pEntry->GetName(), aBitmap );
@@ -1518,7 +1460,7 @@ void GradientLB::Fill( const XGradientListSharedPtr aList )
 			InsertEntry( pEntry->GetName() );
 	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	SetUpdateMode( sal_True );
 }
 
@@ -1526,32 +1468,32 @@ void GradientLB::Fill( const XGradientListSharedPtr aList )
 
 void GradientLB::Append( const XGradientEntry& rEntry, const Bitmap& rBitmap )
 {
-    if(!rBitmap.IsEmpty())
-    {
-        InsertEntry( rEntry.GetName(), rBitmap );
-    }
-    else
-    {
-        InsertEntry( rEntry.GetName() );
-    }
+	if(!rBitmap.IsEmpty())
+	{
+		InsertEntry( rEntry.GetName(), rBitmap );
+	}
+	else
+	{
+		InsertEntry( rEntry.GetName() );
+	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 }
 
 /************************************************************************/
 
 void GradientLB::Modify( const XGradientEntry& rEntry, sal_uInt16 nPos, const Bitmap& rBitmap )
 {
-    RemoveEntry( nPos );
+	RemoveEntry( nPos );
 
-    if(!rBitmap.IsEmpty())
-    {
-        InsertEntry( rEntry.GetName(), rBitmap, nPos );
-    }
-    else
-    {
-        InsertEntry( rEntry.GetName(), nPos );
-    }
+	if(!rBitmap.IsEmpty())
+	{
+		InsertEntry( rEntry.GetName(), rBitmap, nPos );
+	}
+	else
+	{
+		InsertEntry( rEntry.GetName(), nPos );
+	}
 }
 
 /************************************************************************/
@@ -1566,7 +1508,7 @@ void GradientLB::SelectEntryByList( const XGradientListSharedPtr aList, const St
 	long i;
 	for( i = 0; i < nCount && !bFound; i++ )
 	{
-        pEntry = aList->GetGradient( i );
+		pEntry = aList->GetGradient( i );
 
 		aStr = pEntry->GetName();
 
@@ -1578,9 +1520,7 @@ void GradientLB::SelectEntryByList( const XGradientListSharedPtr aList, const St
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box (temporarily) with strings
-|*
 \************************************************************************/
 
 void FillAttrLB::Fill( const XGradientListSharedPtr aList )
@@ -1591,7 +1531,7 @@ void FillAttrLB::Fill( const XGradientListSharedPtr aList )
 
 	for( long i = 0; i < nCount; i++ )
 	{
-        pEntry = aList->GetGradient( i );
+		pEntry = aList->GetGradient( i );
 		const Bitmap aBitmap = aList->GetUiBitmap( i );
 		if( !aBitmap.IsEmpty() )
 			ListBox::InsertEntry( pEntry->GetName(), aBitmap );
@@ -1599,33 +1539,31 @@ void FillAttrLB::Fill( const XGradientListSharedPtr aList )
 			InsertEntry( pEntry->GetName() );
 	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	ListBox::SetUpdateMode( sal_True );
 }
 
 /*************************************************************************
-|*
 |*	Constructor of BitmapLB
-|*
 \************************************************************************/
 
 BitmapLB::BitmapLB(Window* pParent, ResId Id)
-:   ListBox(pParent, Id),
-    maBitmapEx()
+:	ListBox(pParent, Id),
+	maBitmapEx()
 {
-    SetEdgeBlending(true);
+	SetEdgeBlending(true);
 }
 
 /************************************************************************/
 
 namespace
 {
-    void formatBitmapExToSize(BitmapEx& rBitmapEx, const Size& rSize)
-    {
-        if(!rBitmapEx.IsEmpty() && rSize.Width() > 0 && rSize.Height() > 0)
-        {
-            VirtualDevice aVirtualDevice;
-            aVirtualDevice.SetOutputSizePixel(rSize);
+	void formatBitmapExToSize(BitmapEx& rBitmapEx, const Size& rSize)
+	{
+		if(!rBitmapEx.IsEmpty() && rSize.Width() > 0 && rSize.Height() > 0)
+		{
+			VirtualDevice aVirtualDevice;
+			aVirtualDevice.SetOutputSizePixel(rSize);
 
             if(rBitmapEx.IsTransparent())
             {
@@ -1671,7 +1609,7 @@ namespace
 
             rBitmapEx = aVirtualDevice.GetBitmap(Point(0, 0), rSize);
         }
-    }
+	}
 } // end of anonymous namespace
 
 /************************************************************************/
@@ -1680,20 +1618,20 @@ void BitmapLB::Fill(const XBitmapListSharedPtr aList)
 {
 	XBitmapEntry* pEntry;
 	const long nCount(aList.get() ? aList->Count() : 0);
-    const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
-    const Size aSize(rStyleSettings.GetListBoxPreviewDefaultPixelSize());
+	const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
+	const Size aSize(rStyleSettings.GetListBoxPreviewDefaultPixelSize());
 
 	SetUpdateMode(false);
 
 	for(long i(0); i < nCount; i++)
 	{
-        pEntry = aList->GetBitmap(i);
-        maBitmapEx = pEntry->GetGraphicObject().GetGraphic().GetBitmapEx();
-        formatBitmapExToSize(maBitmapEx, aSize);
-        InsertEntry(pEntry->GetName(), maBitmapEx);
+		pEntry = aList->GetBitmap(i);
+		maBitmapEx = pEntry->GetGraphicObject().GetGraphic().GetBitmapEx();
+		formatBitmapExToSize(maBitmapEx, aSize);
+		InsertEntry(pEntry->GetName(), maBitmapEx);
 	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	SetUpdateMode(true);
 }
 
@@ -1701,7 +1639,7 @@ void BitmapLB::Fill(const XBitmapListSharedPtr aList)
 
 void BitmapLB::Append(const Size& rSize, const XBitmapEntry& rEntry)
 {
-    maBitmapEx = rEntry.GetGraphicObject().GetGraphic().GetBitmapEx();
+	maBitmapEx = rEntry.GetGraphicObject().GetGraphic().GetBitmapEx();
 
     if(!maBitmapEx.IsEmpty())
     {
@@ -1713,7 +1651,7 @@ void BitmapLB::Append(const Size& rSize, const XBitmapEntry& rEntry)
         InsertEntry(rEntry.GetName());
     }
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 }
 
 /************************************************************************/
@@ -1741,11 +1679,11 @@ void BitmapLB::SelectEntryByList(const XBitmapListSharedPtr aList, const String&
 	const long nCount(aList.get() ? aList->Count() : 0);
 	XBitmapEntry* pEntry;
 	bool bFound(false);
-    long i(0);
+	long i(0);
 
 	for(i = 0; i < nCount && !bFound; i++)
 	{
-        pEntry = aList->GetBitmap(i);
+		pEntry = aList->GetBitmap(i);
 		const String aStr(pEntry->GetName());
 
 		if(rStr == aStr)
@@ -1754,28 +1692,26 @@ void BitmapLB::SelectEntryByList(const XBitmapListSharedPtr aList, const String&
 		}
 	}
 
-    if(bFound)
-    {
+	if(bFound)
+	{
 		SelectEntryPos((sal_uInt16)(i - 1));
-    }
+	}
 }
 
 /*************************************************************************
-|*
 |*	Constructor of FillAttrLB
-|*
 \************************************************************************/
 
-FillAttrLB::FillAttrLB( Window* pParent, ResId Id ) 
-:   ColorListBox(pParent, Id),
-    maBitmapEx()
+FillAttrLB::FillAttrLB( Window* pParent, ResId Id )
+:	ColorListBox(pParent, Id),
+	maBitmapEx()
 {
 }
 
 /************************************************************************/
 
-FillAttrLB::FillAttrLB(Window* pParent, WinBits aWB) 
-:   ColorListBox(pParent, aWB)
+FillAttrLB::FillAttrLB(Window* pParent, WinBits aWB)
+:	ColorListBox(pParent, aWB)
 {
 }
 
@@ -1785,21 +1721,21 @@ void FillAttrLB::Fill(const XBitmapListSharedPtr aList)
 {
 	const long nCount(aList.get() ? aList->Count() : 0);
 	XBitmapEntry* pEntry;
-    const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
-    const Size aSize(rStyleSettings.GetListBoxPreviewDefaultPixelSize());
+	const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
+	const Size aSize(rStyleSettings.GetListBoxPreviewDefaultPixelSize());
 
-    ListBox::SetUpdateMode(false);
+	ListBox::SetUpdateMode(false);
 
 	for(long i(0); i < nCount; i++)
 	{
-        pEntry = aList->GetBitmap( i );
+		pEntry = aList->GetBitmap( i );
 		maBitmapEx = pEntry->GetGraphicObject().GetGraphic().GetBitmapEx();
-        formatBitmapExToSize(maBitmapEx, aSize);
+		formatBitmapExToSize(maBitmapEx, aSize);
 		ListBox::InsertEntry(pEntry->GetName(), maBitmapEx);
 	}
 
-    AdaptDropDownLineCountToMaximum();
-    ListBox::SetUpdateMode(true);
+	AdaptDropDownLineCountToMaximum();
+	ListBox::SetUpdateMode(true);
 }
 
 /************************************************************************/
@@ -1811,9 +1747,9 @@ void FillAttrLB::SelectEntryByList( const XBitmapListSharedPtr aList, const Stri
 	bool bFound(false);
 	long i(0);
 
-    for(i = 0; i < nCount && !bFound; i++)
+	for(i = 0; i < nCount && !bFound; i++)
 	{
-        pEntry = aList->GetBitmap(i);
+		pEntry = aList->GetBitmap(i);
 		const String aStr(pEntry->GetName());
 
 		if(rStr == aStr)
@@ -1822,49 +1758,45 @@ void FillAttrLB::SelectEntryByList( const XBitmapListSharedPtr aList, const Stri
 		}
 	}
 
-    if(bFound)
-    {
+	if(bFound)
+	{
 		SelectEntryPos((sal_uInt16)(i - 1));
-    }
+	}
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box (temporarily) with strings
-|*
 \************************************************************************/
 
 void FillTypeLB::Fill()
 {
 	SetUpdateMode( sal_False );
 
-    InsertEntry( String( SVX_RES( RID_SVXSTR_INVISIBLE ) ) );
+	InsertEntry( String( SVX_RES( RID_SVXSTR_INVISIBLE ) ) );
 	InsertEntry( String( SVX_RES( RID_SVXSTR_COLOR ) ) );
 	InsertEntry( String( SVX_RES( RID_SVXSTR_GRADIENT ) ) );
 	InsertEntry( String( SVX_RES( RID_SVXSTR_HATCH ) ) );
 	InsertEntry( String( SVX_RES( RID_SVXSTR_BITMAP ) ) );
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	SetUpdateMode( sal_True );
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box (temporarily) with strings
-|*
 \************************************************************************/
 LineLB::LineLB(Window* pParent, ResId Id)
-:   ListBox(pParent, Id),
-    mbAddStandardFields(true)
+:	ListBox(pParent, Id),
+	mbAddStandardFields(true)
 {
-    // No EdgeBlending for LineStyle/Dash SetEdgeBlending(true);
+	// No EdgeBlending for LineStyle/Dash SetEdgeBlending(true);
 }
 
-LineLB::LineLB(Window* pParent, WinBits aWB) 
-:   ListBox(pParent, aWB),
-    mbAddStandardFields(true)
+LineLB::LineLB(Window* pParent, WinBits aWB)
+:	ListBox(pParent, aWB),
+	mbAddStandardFields(true)
 {
-    // No EdgeBlending for LineStyle/Dash SetEdgeBlending(true);
+	// No EdgeBlending for LineStyle/Dash SetEdgeBlending(true);
 }
 
 LineLB::~LineLB()
@@ -1892,14 +1824,14 @@ void LineLB::Fill( const XDashListSharedPtr aList )
         InsertEntry(aList->GetStringForUiSolidLine(), aList->GetBitmapForUISolidLine());
     }
 
-    // entries for dashed lines
+	// entries for dashed lines
 	long nCount = aList.get() ? aList->Count() : 0;
 	XDashEntry* pEntry;
 	SetUpdateMode( sal_False );
 
 	for( long i = 0; i < nCount; i++ )
 	{
-        pEntry = aList->GetDash( i );
+		pEntry = aList->GetDash( i );
 		const Bitmap aBitmap = aList->GetUiBitmap( i );
 		if( !aBitmap.IsEmpty() )
 		{
@@ -1910,7 +1842,7 @@ void LineLB::Fill( const XDashListSharedPtr aList )
 			InsertEntry( pEntry->GetName() );
 	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	SetUpdateMode( sal_True );
 }
 
@@ -1959,7 +1891,7 @@ void LineLB::SelectEntryByList( const XDashListSharedPtr aList, const String& rS
 	long i;
 	for( i = 0; i < nCount && !bFound; i++ )
 	{
-        pEntry = aList->GetDash( i );
+		pEntry = aList->GetDash( i );
 
 		aStr = pEntry->GetName();
 		aDash = pEntry->GetDash();
@@ -1972,20 +1904,18 @@ void LineLB::SelectEntryByList( const XDashListSharedPtr aList, const String& rS
 }
 
 /*************************************************************************
-|*
 |*	Fill the list box (temporarily) with strings
-|*
 \************************************************************************/
 LineEndLB::LineEndLB( Window* pParent, ResId Id )
-    : ListBox( pParent, Id )
+	: ListBox( pParent, Id )
 {
-    // No EdgeBlending for LineEnds SetEdgeBlending(true);
+	// No EdgeBlending for LineEnds SetEdgeBlending(true);
 }
 
 LineEndLB::LineEndLB( Window* pParent, WinBits aWB )
-    : ListBox( pParent, aWB )
+	: ListBox( pParent, aWB )
 {
-    // No EdgeBlending for LineEnds SetEdgeBlending(true);
+	// No EdgeBlending for LineEnds SetEdgeBlending(true);
 }
 
 LineEndLB::~LineEndLB(void)
@@ -2002,7 +1932,7 @@ void LineEndLB::Fill( const XLineEndListSharedPtr aList, bool bStart )
 
 	for( long i = 0; i < nCount; i++ )
 	{
-        pEntry = aList->GetLineEnd( i );
+		pEntry = aList->GetLineEnd( i );
 		const Bitmap aBitmap = aList->GetUiBitmap( i );
 		if( !aBitmap.IsEmpty() )
 		{
@@ -2018,7 +1948,7 @@ void LineEndLB::Fill( const XLineEndListSharedPtr aList, bool bStart )
 			InsertEntry( pEntry->GetName() );
 	}
 
-    AdaptDropDownLineCountToMaximum();
+	AdaptDropDownLineCountToMaximum();
 	SetUpdateMode( sal_True );
 }
 
@@ -2081,9 +2011,9 @@ void SvxPreviewBase::InitSettings(bool bForeground, bool bBackground)
 		Color aTextColor(aColorConfig.GetColorValue(svtools::FONTCOLOR).nColor);
 
 		if(IsControlForeground())
-        {
+		{
 			aTextColor = GetControlForeground();
-        }
+		}
 
 		getBufferDevice().SetTextColor(aTextColor);
 	}
@@ -2091,125 +2021,123 @@ void SvxPreviewBase::InitSettings(bool bForeground, bool bBackground)
 	if(bBackground)
 	{
 		if(IsControlBackground())
-        {
+		{
 			getBufferDevice().SetBackground(GetControlBackground());
-        }
+		}
 		else
-        {
+		{
 			getBufferDevice().SetBackground(rStyleSettings.GetWindowColor());
-        }
+		}
 	}
 
-    // do not paint background self, it gets painted buffered
+	// do not paint background self, it gets painted buffered
 	SetControlBackground();
-    SetBackground();
+	SetBackground();
 
-    Invalidate();
+	Invalidate();
 }
 
 SvxPreviewBase::SvxPreviewBase( Window* pParent, const ResId& rResId )
 :	Control( pParent, rResId ),
 	mpModel( new SdrModel() ),
-    mpBufferDevice( new VirtualDevice(*this) )
+	mpBufferDevice( new VirtualDevice(*this) )
 {
-	//	Draw the control's border as a flat thin black line.
-    SetBorderStyle(WINDOW_BORDER_MONO);
-    SetDrawMode( GetSettings().GetStyleSettings().GetHighContrastMode() ? OUTPUT_DRAWMODE_CONTRAST : OUTPUT_DRAWMODE_COLOR );
-    SetMapMode(MAP_100TH_MM);
+	// Draw the control's border as a flat thin black line.
+	SetBorderStyle(WINDOW_BORDER_MONO);
+	SetDrawMode( GetSettings().GetStyleSettings().GetHighContrastMode() ? OUTPUT_DRAWMODE_CONTRAST : OUTPUT_DRAWMODE_COLOR );
+	SetMapMode(MAP_100TH_MM);
 
-    // init model
+	// init model
 	mpModel->GetItemPool().FreezeIdRanges();
 }
 
 SvxPreviewBase::~SvxPreviewBase()
 {
 	delete mpModel;
-    delete mpBufferDevice;
+	delete mpBufferDevice;
 }
 
 void SvxPreviewBase::LocalPrePaint()
 {
-    // init BufferDevice
-    if(mpBufferDevice->GetOutputSizePixel() != GetOutputSizePixel())
-    {
-        mpBufferDevice->SetDrawMode(GetDrawMode());
-        mpBufferDevice->SetSettings(GetSettings());
-        mpBufferDevice->SetAntialiasing(GetAntialiasing());
-        mpBufferDevice->SetOutputSizePixel(GetOutputSizePixel());
-	    mpBufferDevice->SetMapMode(GetMapMode());
-    }
+	// init BufferDevice
+	if(mpBufferDevice->GetOutputSizePixel() != GetOutputSizePixel())
+	{
+		mpBufferDevice->SetDrawMode(GetDrawMode());
+		mpBufferDevice->SetSettings(GetSettings());
+		mpBufferDevice->SetAntialiasing(GetAntialiasing());
+		mpBufferDevice->SetOutputSizePixel(GetOutputSizePixel());
+		mpBufferDevice->SetMapMode(GetMapMode());
+	}
 
-    const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
+	const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
 
-    if(rStyleSettings.GetPreviewUsesCheckeredBackground())
-    {
-        const Point aNull(0, 0);
-        static const sal_uInt32 nLen(8);
-        static const Color aW(COL_WHITE);
-        static const Color aG(0xef, 0xef, 0xef);
-        const bool bWasEnabled(mpBufferDevice->IsMapModeEnabled());
+	if(rStyleSettings.GetPreviewUsesCheckeredBackground())
+	{
+		const Point aNull(0, 0);
+		static const sal_uInt32 nLen(8);
+		static const Color aW(COL_WHITE);
+		static const Color aG(0xef, 0xef, 0xef);
+		const bool bWasEnabled(mpBufferDevice->IsMapModeEnabled());
 
-        mpBufferDevice->EnableMapMode(false);
-        mpBufferDevice->DrawCheckered(aNull, mpBufferDevice->GetOutputSizePixel(), nLen, aW, aG);
-        mpBufferDevice->EnableMapMode(bWasEnabled);
-    }
-    else
-    {
-        mpBufferDevice->Erase();
-    }
+		mpBufferDevice->EnableMapMode(false);
+		mpBufferDevice->DrawCheckered(aNull, mpBufferDevice->GetOutputSizePixel(), nLen, aW, aG);
+		mpBufferDevice->EnableMapMode(bWasEnabled);
+	}
+	else
+	{
+		mpBufferDevice->Erase();
+	}
 }
 
 void SvxPreviewBase::LocalPostPaint()
 {
-    // copy to front (in pixel mode)
+	// copy to front (in pixel mode)
 	const bool bWasEnabledSrc(mpBufferDevice->IsMapModeEnabled());
 	const bool bWasEnabledDst(IsMapModeEnabled());
 	const Point aEmptyPoint;
 
-    mpBufferDevice->EnableMapMode(false);
-    EnableMapMode(false);
+	mpBufferDevice->EnableMapMode(false);
+	EnableMapMode(false);
 
-    DrawOutDev(
-        aEmptyPoint, GetOutputSizePixel(),
-        aEmptyPoint, GetOutputSizePixel(),
-        *mpBufferDevice);
+	DrawOutDev(
+		aEmptyPoint, GetOutputSizePixel(),
+		aEmptyPoint, GetOutputSizePixel(),
+		*mpBufferDevice);
 
-    mpBufferDevice->EnableMapMode(bWasEnabledSrc);
-    EnableMapMode(bWasEnabledDst);
+	mpBufferDevice->EnableMapMode(bWasEnabledSrc);
+	EnableMapMode(bWasEnabledDst);
 }
 
 void SvxPreviewBase::StateChanged(StateChangedType nType)
 {
 	Control::StateChanged(nType);
 
-    if(STATE_CHANGE_CONTROLFOREGROUND == nType)
-    {
+	if(STATE_CHANGE_CONTROLFOREGROUND == nType)
+	{
 		InitSettings(true, false);
-    }
+	}
 	else if(STATE_CHANGE_CONTROLBACKGROUND == nType)
-    {
+	{
 		InitSettings(false, true);
-    }
+	}
 }
 
 void SvxPreviewBase::DataChanged(const DataChangedEvent& rDCEvt)
 {
-    SetDrawMode(GetSettings().GetStyleSettings().GetHighContrastMode() ? OUTPUT_DRAWMODE_CONTRAST : OUTPUT_DRAWMODE_COLOR);
+	SetDrawMode(GetSettings().GetStyleSettings().GetHighContrastMode() ? OUTPUT_DRAWMODE_CONTRAST : OUTPUT_DRAWMODE_COLOR);
 
-    if((DATACHANGED_SETTINGS == rDCEvt.GetType()) && (rDCEvt.GetFlags() & SETTINGS_STYLE))
-    {
+	if((DATACHANGED_SETTINGS == rDCEvt.GetType()) && (rDCEvt.GetFlags() & SETTINGS_STYLE))
+	{
 		InitSettings(true, true);
-    }
+	}
 	else
-    {
+	{
 		Control::DataChanged(rDCEvt);
-    }
+	}
 }
 
 /*************************************************************************
-|*
-|*    SvxXLinePreview::SvxXLinePreview()
-|*
+|* SvxXLinePreview::SvxXLinePreview()
 *************************************************************************/
 
 SvxXLinePreview::SvxXLinePreview( Window* pParent, const ResId& rResId )
@@ -2263,9 +2191,9 @@ SvxXLinePreview::SvxXLinePreview( Window* pParent, const ResId& rResId )
 
 SvxXLinePreview::~SvxXLinePreview()
 {
-    SdrObject::Free( mpLineObjA );
-    SdrObject::Free( mpLineObjB );
-    SdrObject::Free( mpLineObjC );
+	SdrObject::Free( mpLineObjA );
+	SdrObject::Free( mpLineObjB );
+	SdrObject::Free( mpLineObjC );
 }
 
 // -----------------------------------------------------------------------
@@ -2323,7 +2251,7 @@ void SvxXLinePreview::Paint( const Rectangle& )
 
 	if ( mbWithSymbol && mpGraphic )
 	{
-    	const Size aOutputSize(GetOutputSize());
+		const Size aOutputSize(GetOutputSize());
 		Point aPos = Point( aOutputSize.Width() / 3, aOutputSize.Height() / 2 );
 		aPos.X() -= maSymbolSize.Width() / 2;
 		aPos.Y() -= maSymbolSize.Height() / 2;
@@ -2334,9 +2262,7 @@ void SvxXLinePreview::Paint( const Rectangle& )
 }
 
 /*************************************************************************
-|*
-|*    SvxXRectPreview::SvxXRectPreview()
-|*
+|* SvxXRectPreview::SvxXRectPreview()
 *************************************************************************/
 
 SvxXRectPreview::SvxXRectPreview( Window* pParent, const ResId& rResId )
@@ -2346,14 +2272,14 @@ SvxXRectPreview::SvxXRectPreview( Window* pParent, const ResId& rResId )
 	InitSettings(true, true);
 
 	// create RectangleObject
-    const Rectangle aObjectSize(Point(), GetOutputSize());
+	const Rectangle aObjectSize(Point(), GetOutputSize());
 	mpRectangleObject = new SdrRectObj(aObjectSize);
 	mpRectangleObject->SetModel(&getModel());
 }
 
 SvxXRectPreview::~SvxXRectPreview()
 {
-    SdrObject::Free(mpRectangleObject);
+	SdrObject::Free(mpRectangleObject);
 }
 
 void SvxXRectPreview::SetAttributes(const SfxItemSet& rItemSet)
@@ -2366,51 +2292,49 @@ void SvxXRectPreview::Paint( const Rectangle& )
 {
 	LocalPrePaint();
 
-    sdr::contact::SdrObjectVector aObjectVector;
+	sdr::contact::SdrObjectVector aObjectVector;
 
-    aObjectVector.push_back(mpRectangleObject);
+	aObjectVector.push_back(mpRectangleObject);
 
-    sdr::contact::ObjectContactOfObjListPainter aPainter(getBufferDevice(), aObjectVector, 0);
+	sdr::contact::ObjectContactOfObjListPainter aPainter(getBufferDevice(), aObjectVector, 0);
 	sdr::contact::DisplayInfo aDisplayInfo;
 
 	aPainter.ProcessDisplay(aDisplayInfo);
 
-    LocalPostPaint();
+	LocalPostPaint();
 }
 
 /*************************************************************************
-|*
-|*    SvxXShadowPreview::SvxXShadowPreview()
-|*
+|* SvxXShadowPreview::SvxXShadowPreview()
 *************************************************************************/
 
 SvxXShadowPreview::SvxXShadowPreview( Window* pParent, const ResId& rResId )
 :	SvxPreviewBase( pParent, rResId ),
 	mpRectangleObject(0),
-    mpRectangleShadow(0)
+	mpRectangleShadow(0)
 {
 	InitSettings(true, true);
 
-    // prepare size
+	// prepare size
 	Size aSize = GetOutputSize();
 	aSize.Width() = aSize.Width() / 3;
 	aSize.Height() = aSize.Height() / 3;
 
-    // create RectangleObject
-    const Rectangle aObjectSize( Point( aSize.Width(), aSize.Height() ), aSize );
+	// create RectangleObject
+	const Rectangle aObjectSize( Point( aSize.Width(), aSize.Height() ), aSize );
 	mpRectangleObject = new SdrRectObj(aObjectSize);
 	mpRectangleObject->SetModel(&getModel());
 
-    // create ShadowObject
-    const Rectangle aShadowSize( Point( aSize.Width(), aSize.Height() ), aSize );
+	// create ShadowObject
+	const Rectangle aShadowSize( Point( aSize.Width(), aSize.Height() ), aSize );
 	mpRectangleShadow = new SdrRectObj(aShadowSize);
 	mpRectangleShadow->SetModel(&getModel());
 }
 
 SvxXShadowPreview::~SvxXShadowPreview()
 {
-    SdrObject::Free(mpRectangleObject);
-    SdrObject::Free(mpRectangleShadow);
+	SdrObject::Free(mpRectangleObject);
+	SdrObject::Free(mpRectangleShadow);
 }
 
 void SvxXShadowPreview::SetRectangleAttributes(const SfxItemSet& rItemSet)
@@ -2425,29 +2349,28 @@ void SvxXShadowPreview::SetShadowAttributes(const SfxItemSet& rItemSet)
 	mpRectangleShadow->SetMergedItem(XLineStyleItem(XLINE_NONE));
 }
 
-void SvxXShadowPreview::SetShadowPosition(const Point& rPos) 
+void SvxXShadowPreview::SetShadowPosition(const Point& rPos)
 {
-    Rectangle aObjectPosition(mpRectangleObject->GetSnapRect());
-    aObjectPosition.Move(rPos.X(), rPos.Y());
-    mpRectangleShadow->SetSnapRect(aObjectPosition);
+	Rectangle aObjectPosition(mpRectangleObject->GetSnapRect());
+	aObjectPosition.Move(rPos.X(), rPos.Y());
+	mpRectangleShadow->SetSnapRect(aObjectPosition);
 }
 
 void SvxXShadowPreview::Paint( const Rectangle& )
 {
 	LocalPrePaint();
 
-    sdr::contact::SdrObjectVector aObjectVector;
+	sdr::contact::SdrObjectVector aObjectVector;
 
-    aObjectVector.push_back(mpRectangleShadow);
+	aObjectVector.push_back(mpRectangleShadow);
 	aObjectVector.push_back(mpRectangleObject);
 
-    sdr::contact::ObjectContactOfObjListPainter aPainter(getBufferDevice(), aObjectVector, 0);
+	sdr::contact::ObjectContactOfObjListPainter aPainter(getBufferDevice(), aObjectVector, 0);
 	sdr::contact::DisplayInfo aDisplayInfo;
 
 	aPainter.ProcessDisplay(aDisplayInfo);
 
-    LocalPostPaint();
+	LocalPostPaint();
 }
 
-// -----------------------------------------------------------------------
-// eof
+/* vim: set noet sw=4 ts=4: */

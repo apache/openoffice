@@ -34,7 +34,7 @@ class SwForm;
 /*--------------------------------------------------------------------
 	Beschreibung: Manager fuer Verzeichnisfunktionalitaet
  --------------------------------------------------------------------*/
-//one single method will be sufficient to insert AND upate indexes
+//one single method will be sufficient to insert AND update indexes
 
 class SW_DLLPUBLIC SwTOXDescription
 {

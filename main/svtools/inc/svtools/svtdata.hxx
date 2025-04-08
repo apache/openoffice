@@ -62,4 +62,3 @@ public:
 };
 
 #endif //  _SVTOOLS_SVTDATA_HXX
-

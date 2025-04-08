@@ -73,4 +73,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_SOURCE_RICHTEXT_RICHTEXTVIEWPORT_HXX
-

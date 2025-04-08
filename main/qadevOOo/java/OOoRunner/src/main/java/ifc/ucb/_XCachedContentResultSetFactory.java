@@ -43,7 +43,7 @@ import com.sun.star.ucb.XCachedContentResultSetFactory;
 *   this must be an imlementation of <code>
 *   com.sun.star.ucb.CachedContentResultSetStub</code> service.</li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.ucb.XCachedContentResultSetFactory
 */
 public class _XCachedContentResultSetFactory extends MultiMethodTest {
@@ -107,4 +107,3 @@ public class _XCachedContentResultSetFactory extends MultiMethodTest {
 
     }
 }
-

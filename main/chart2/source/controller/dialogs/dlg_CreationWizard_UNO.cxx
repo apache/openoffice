@@ -195,7 +195,7 @@ void SAL_CALL CreationWizardUnoDlg::notifyTermination( const lang::EventObject& 
 
 void SAL_CALL CreationWizardUnoDlg::disposing( const lang::EventObject& /*Source*/ ) throw (uno::RuntimeException)
 {
-    //Listener should deregister himself and relaese all references to the closing object.
+    //Listener should deregister himself and release all references to the closing object.
 }
 
 //-------------------------------------------------------------------------

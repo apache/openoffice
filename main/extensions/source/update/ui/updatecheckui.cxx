@@ -1064,4 +1064,3 @@ component_getFactory(const sal_Char *pszImplementationName, void *pServiceManage
         pRegistryKey,
         kImplementations_entries) ;
 }
-

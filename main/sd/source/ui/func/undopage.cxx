@@ -133,4 +133,3 @@ void SdPageULUndoAction::Redo()
 	mpPage->SetUppBorder(mnNewUpper);
 	mpPage->SetLwrBorder(mnNewLower);
 }
-

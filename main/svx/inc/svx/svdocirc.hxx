@@ -146,4 +146,3 @@ public:
 };
 
 #endif //_SVDOCIRC_HXX
-

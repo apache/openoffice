@@ -93,4 +93,3 @@ class SVT_DLLPUBLIC FilterConfigItem
 };
 
 #endif	// _FILTER_CONFIG_ITEM_HXX_
-

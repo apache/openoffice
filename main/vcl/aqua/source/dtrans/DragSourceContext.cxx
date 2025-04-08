@@ -66,5 +66,3 @@ void SAL_CALL DragSourceContext::transferablesFlavorsChanged(  )
 	throw( RuntimeException)
 {
 }
-
-

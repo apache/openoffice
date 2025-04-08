@@ -156,4 +156,3 @@ void SdPage::cloneAnimations( SdPage& rTargetPage ) const
 			rTargetPage.setAnimationNode( xClonedNode );
 	}
 }
-

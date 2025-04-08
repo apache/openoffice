@@ -356,4 +356,3 @@ class FileAliasNotFoundException extends java.lang.Exception{
         super("Could not get '"+fileAlias +"'");
     }
 }
-

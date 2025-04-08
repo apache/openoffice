@@ -132,4 +132,3 @@ ExtensionBackendDb::Data ExtensionBackendDb::getEntry(::rtl::OUString const & ur
 } // namespace bundle
 } // namespace backend
 } // namespace dp_registry
-

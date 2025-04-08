@@ -496,4 +496,3 @@ SfxExtItemPropertySetInfo::hasPropertyByName( const rtl::OUString& rPropertyName
 {
     return aExtMap.hasPropertyByName( rPropertyName );
 }
-

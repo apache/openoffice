@@ -203,4 +203,3 @@ protected:
 };
 
 #endif // IDOCUMENTCONTENTOPERATIONS_HXX_INCLUDED
-

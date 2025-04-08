@@ -310,4 +310,3 @@ public class ObjectOutputStream extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

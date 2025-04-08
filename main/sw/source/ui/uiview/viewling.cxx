@@ -998,4 +998,3 @@ sal_Bool SwView::ExecFieldPopup( const Point& rPt, IFieldmark *fieldBM )
 
     return bRet;
 }
-

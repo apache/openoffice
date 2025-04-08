@@ -249,4 +249,3 @@ void MacabAddressBook::manageDuplicateGroups(::std::vector<MacabGroup *> _xGroup
 		}
 	}
 }
-

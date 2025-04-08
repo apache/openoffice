@@ -96,4 +96,3 @@ public:
     virtual void            StartExecuteModal( const Link& rEndDialogHdl );  
 };
 #endif
-

@@ -38,7 +38,7 @@ import com.sun.star.awt.XFixedText;
 *  <li><code> setAlignment()</code></li>
 *  <li><code> getAlignment()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XFixedText
 */
 public class _XFixedText extends MultiMethodTest {
@@ -112,5 +112,3 @@ public class _XFixedText extends MultiMethodTest {
     }
 
 }
-
-

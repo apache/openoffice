@@ -49,7 +49,7 @@ import com.sun.star.uno.XInterface;
  *  <li> <code>com::sun::star::container::XElementAccess</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.container.XContainer
  * @see com.sun.star.container.XNameAccess
  * @see com.sun.star.container.XIndexAccess
@@ -136,4 +136,3 @@ public class SwXFrames extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXFrames
-

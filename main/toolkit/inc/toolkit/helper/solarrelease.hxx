@@ -75,4 +75,3 @@ namespace toolkit
 //........................................................................
 
 #endif // TOOLKIT_INC_TOOLKIT_HELPER_SOLARRELEASE_HXX
-

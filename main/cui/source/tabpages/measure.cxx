@@ -871,4 +871,3 @@ void SvxMeasurePage::PageCreated (SfxAllItemSet aSet) //add CHINA001
 	
 	Construct();
 }
-

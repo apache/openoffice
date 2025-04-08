@@ -676,4 +676,3 @@ int SfxManageStyleSheetPage::DeactivatePage( SfxItemSet* pItemSet )
 
 	return nRet;
 }
-

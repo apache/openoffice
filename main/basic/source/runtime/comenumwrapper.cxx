@@ -73,5 +73,3 @@ uno::Any SAL_CALL ComEnumerationWrapper::nextElement()
 
     throw container::NoSuchElementException();
 }
-
-

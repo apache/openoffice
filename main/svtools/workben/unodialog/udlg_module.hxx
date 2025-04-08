@@ -38,4 +38,3 @@ namespace udlg
 //........................................................................
 
 #endif // SVTOOLS_WORKBEN_UNODIALOG_MODULE_HXX
-

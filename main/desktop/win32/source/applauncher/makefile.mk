@@ -143,4 +143,3 @@ APP7PRODUCTDEF+=-DRES_APP_NAME=sweb
 
 
 .INCLUDE :  target.mk
-

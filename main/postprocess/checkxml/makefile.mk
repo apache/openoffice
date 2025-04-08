@@ -35,4 +35,3 @@ ALLTAR : $(MISC)$/checkxml.done
 
 $(MISC)$/checkxml.done .PHONY:
     $(PERL) checkxml.pl
-

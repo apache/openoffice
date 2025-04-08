@@ -136,4 +136,3 @@ private:
 
 
 #endif // SC_FILLDLG_HXX
-

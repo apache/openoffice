@@ -37,7 +37,3 @@ ScUnoGuard::ScUnoGuard() :
 	OGuard( Application::GetSolarMutex() )
 {
 }
-
-
-
-

@@ -82,4 +82,3 @@ public class _StackableDiagram extends MultiPropertyTest {
     }
 
 } // EOF StackableDiagram
-

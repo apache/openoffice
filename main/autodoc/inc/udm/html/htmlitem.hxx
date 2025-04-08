@@ -400,5 +400,3 @@ class Sbr : public csi::xml::XmlCode  // Sourcefile lineBreak
 namespace Html = csi::html;
 
 #endif
-
-

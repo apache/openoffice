@@ -319,6 +319,3 @@ TOOLKIT_DLLPUBLIC void* SAL_CALL component_getFactory( const sal_Char* sImplemen
 	return pRet;
 }
 }
-
-
-

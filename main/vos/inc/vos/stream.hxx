@@ -278,5 +278,3 @@ inline OStream& operator<< (OStream& rStream, sal_Char value)
 }     
 
 #endif // _VOS_STREAM_HXX_
-
-

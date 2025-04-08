@@ -42,4 +42,3 @@ class KDEXLib : public SalXLib
 			
 		void doStartup();
 };
-

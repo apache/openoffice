@@ -62,4 +62,3 @@ sfx::ItemConnectionBase* CreateShadowConnection( const SfxItemSet& rItemSet,
 } // namespace svx
 
 #endif
-

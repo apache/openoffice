@@ -87,5 +87,3 @@ sal_Bool SAL_CALL osl_releaseSemaphore(oslSemaphore Semaphore);
 #endif
 
 #endif  /* _OSL_SEMAPHORE_H_  */
-
-

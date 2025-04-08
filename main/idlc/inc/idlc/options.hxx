@@ -86,4 +86,3 @@ protected:
 };
 	
 #endif // _IDLC_OPTIONS_HXX_
-

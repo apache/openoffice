@@ -158,4 +158,3 @@ namespace accessibility
 	};
 }
 #endif // ACCESSIBILITY_EXT_ACCESSIBILEGRIDCONTROLTABLECELL_HXX
-

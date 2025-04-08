@@ -180,4 +180,3 @@ OUT2LIB+=src$/.libs$/librdf.so.$(REDLAND_MAJOR)
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
-

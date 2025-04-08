@@ -3167,8 +3167,3 @@ ScJobSetup::ScJobSetup( SfxPrinter* pPrinter )
 		aUserMapMode = pPrinter->GetMapMode();
 	}
 };
-
-
-
-
-

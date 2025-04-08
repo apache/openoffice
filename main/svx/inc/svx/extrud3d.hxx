@@ -103,4 +103,3 @@ public:
 };
 
 #endif			// _E3D_EXTRUD3D_HXX
-

@@ -82,5 +82,3 @@ void SvxSearchController::StateChanged( sal_uInt16 nSID, SfxItemState eState,
 	else if ( SID_SEARCH_OPTIONS == nSID || SID_SEARCH_ITEM == nSID )
 		rSrchDlg.EnableControls_Impl( 0 );
 }
-
-

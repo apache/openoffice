@@ -1570,4 +1570,3 @@ void FuText::ChangeFontSize( bool bGrow, OutlinerView* pOLV, const FontList* pFo
 }
 
 } // end of namespace sd
-

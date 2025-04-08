@@ -80,4 +80,3 @@ SvXMLImportContext *ScXMLTableShapesContext::CreateChildContext( sal_uInt16 nPre
 void ScXMLTableShapesContext::EndElement()
 {
 }
-

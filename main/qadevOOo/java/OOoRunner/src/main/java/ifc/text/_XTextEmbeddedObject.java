@@ -52,5 +52,3 @@ public class _XTextEmbeddedObject extends MultiMethodTest {
     }
 */
  }  // finish class _XTextEmbeddedObject
-
-

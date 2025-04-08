@@ -82,14 +82,3 @@ JNIEXPORT jlong JNICALL Java_com_sun_star_beans_LocalOfficeWindow_getNativeWindo
     (void) obj_this; /* avoid warning about unused parameter */ 
 	return Java_com_sun_star_comp_beans_LocalOfficeWindow_getNativeWindow(env, obj_this);
 }
-
-
-
-
-
-
-
-
-
-
-

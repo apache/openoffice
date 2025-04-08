@@ -522,5 +522,3 @@ inline void SAL_CALL convertPropertyValue( ::rtl::OUString &ow , const ::com::su
 }     // end namespace cppu
 
 #endif
-
-

@@ -103,4 +103,3 @@ void SvpSalVirtualDevice::GetSize( long& rWidth, long& rHeight )
     else
         rWidth = rHeight = 0;
 }
-

@@ -230,4 +230,3 @@ void FixedBorder::SetBorderType( sal_uInt16 nType )
 		Invalidate();
 	}
 }
-

@@ -110,4 +110,3 @@ void OldStylePrintAdaptor::printPage( int i_nPage ) const
        mpData->maPages[ i_nPage ].maPage.Play( getPrinter().get() );
    }
 }
-

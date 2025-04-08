@@ -73,4 +73,3 @@ public:
 };
 
 #endif // SVTOOLS_INSTRM_HXX
-

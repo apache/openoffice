@@ -272,4 +272,3 @@ bool ScSpellDialogChildWindow::IsSelectionChanged()
 }
 
 // ============================================================================
-

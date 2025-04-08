@@ -72,4 +72,3 @@ public:
 };
 
 #endif // _SVTOOLS_CJKOPTIONS_HXX
-

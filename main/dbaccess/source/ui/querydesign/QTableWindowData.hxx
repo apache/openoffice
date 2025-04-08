@@ -51,5 +51,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_QUERY_TABLEWINDOWDATA_HXX
-
-

@@ -93,4 +93,3 @@ ULONG WinSysMapi::MAPISendMail(
 }
 
 }
-

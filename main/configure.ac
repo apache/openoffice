@@ -106,7 +106,7 @@ AC_ARG_WITH(fonts,
 ],,)
 AC_ARG_WITH(ppds,
 [  --without-ppds          Removes Postscript Printer definition files from
-                          Apache Openoffice installation set, for people building
+                          Apache OpenOffice installation set, for people building
                           for specific distributions where PPDs are known to be
                           already available (every recent distro with CUPS
                           backend)
@@ -2778,7 +2778,7 @@ AC_MSG_CHECKING([whether we are allowed and able to use --ccache-skip])
 if test "$_os" != "Darwin" ; then
    AC_MSG_RESULT([only used on Mac currently, skipping])
 elif test "$enable_ccache_skip" = "no" ; then
-   AC_MSG_RESULT([no - diabled explicitly])
+   AC_MSG_RESULT([no - disabled explicitly])
 elif test "$enable_ccache_skip" = "yes" ; then
    AC_MSG_RESULT([yes - enabled explicitly, skipping checks])
    AC_SUBST([USE_CCACHE], [YES])

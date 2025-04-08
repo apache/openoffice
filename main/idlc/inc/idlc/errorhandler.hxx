@@ -150,4 +150,3 @@ public:
 };
 
 #endif // _IDLC_ERRORHANDLER_HXX_
-

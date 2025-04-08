@@ -71,4 +71,3 @@ private:
 };
 
 #endif // _IDLC_ASTSCOPE_HXX_
-

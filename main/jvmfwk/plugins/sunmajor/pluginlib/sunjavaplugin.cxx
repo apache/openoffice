@@ -715,5 +715,3 @@ javaPluginError jfw_plugin_existJRE(const JavaInfo *pInfo, sal_Bool *exist)
 #endif
     return ret;
 }
-
-

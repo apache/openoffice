@@ -396,4 +396,3 @@ public class _XSheetCellCursor extends MultiMethodTest {
     }
 
 } // EOC _XSheetCellCursor
-

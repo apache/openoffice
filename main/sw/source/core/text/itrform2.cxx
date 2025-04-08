@@ -1578,7 +1578,7 @@ xub_StrLen SwTxtFormatter::FormatLine( const xub_StrLen nStartPos )
         pCurr->CalcLine( *this, GetInfo() );
 		CalcRealHeight( GetInfo().IsNewLine() );
 
-		//Bug 120864:For Special case that at the first caculation couldn't get correct height. And need to recaculate for the right height.
+		//Bug 120864:For Special case that at the first calculation couldn't get correct height. And need to recalculate for the right height.
 		SwLinePortion* pPorTmp = pCurr->GetPortion();
 		if ( IsFlyInCntBase() && (!IsQuick() || (pPorTmp && pPorTmp->IsFlyCntPortion() && !pPorTmp->GetPortion() &&
 			pCurr->Height() > pPorTmp->Height())))

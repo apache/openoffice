@@ -81,4 +81,3 @@ namespace rptui
 	};
 }
 #endif // RPTUI_STARTMARKER_HXX
-

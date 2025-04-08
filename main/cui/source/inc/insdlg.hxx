@@ -206,4 +206,3 @@ public:
 };
 
 #endif // _SVX_INSDLG_HXX
-

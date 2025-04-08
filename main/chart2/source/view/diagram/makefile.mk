@@ -41,4 +41,3 @@ SLOFILES =	$(SLO)$/VDiagram.obj
 # --- Targets -----------------------------------------------------------------
 
 .INCLUDE: target.mk
-

@@ -134,9 +134,7 @@ struct doc
 }   // namespace ifc_ce
 
 
-}   // namspace idl
-}   // namspace ary
+}   // namespace idl
+}   // namespace ary
 
 #endif
-
-

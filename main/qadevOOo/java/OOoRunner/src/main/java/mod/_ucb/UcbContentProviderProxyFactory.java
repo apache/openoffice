@@ -70,4 +70,3 @@ public class UcbContentProviderProxyFactory extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class UcbContentProviderProxyFactory
-

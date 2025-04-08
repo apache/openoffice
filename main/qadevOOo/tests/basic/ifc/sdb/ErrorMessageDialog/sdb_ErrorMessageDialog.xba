@@ -52,7 +52,7 @@ On Error Goto ErrHndl
     bOk = true
     excep = oObj.SQLException
     if isNull(excep) OR isEmpty(excep) then
-        Out.Log("Property is null and cann't be changed")
+        Out.Log("Property is null and can't be changed")
     else
         oObj.SQLException = NULL_OBJECT
         excep = oObj.SQLException

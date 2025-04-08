@@ -57,4 +57,3 @@ public:
 };
 
 #endif //SC_VBA_WINDOWS_HXX
-

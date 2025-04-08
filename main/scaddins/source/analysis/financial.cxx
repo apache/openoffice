@@ -679,5 +679,3 @@ double SAL_CALL AnalysisAddIn::getFvschedule( double fPrinc, const SEQSEQ( doubl
 
     RETURN_FINITE( fPrinc );
 }
-
-

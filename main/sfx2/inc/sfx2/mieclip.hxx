@@ -56,4 +56,3 @@ public:
 
 
 #endif //_MIECLIP_HXX
-

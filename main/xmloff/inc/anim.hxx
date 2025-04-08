@@ -97,4 +97,3 @@ void SdXMLImplSetEffect( ::com::sun::star::presentation::AnimationEffect eEffect
 ::com::sun::star::presentation::AnimationEffect ImplSdXMLgetEffect( XMLEffect eKind, XMLEffectDirection eDirection, sal_Int16 nStartScale, sal_Bool bIn );
 
 #endif	//  _XMLOFF_ANIM_HXX
-

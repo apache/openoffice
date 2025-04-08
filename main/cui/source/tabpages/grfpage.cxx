@@ -827,7 +827,3 @@ void SvxGrfCropPage::SvxCropExample::SetFrameSize( const Size& rSz )
 	SetMapMode( aMapMode );
 	Invalidate();
 }
-
-
-
-

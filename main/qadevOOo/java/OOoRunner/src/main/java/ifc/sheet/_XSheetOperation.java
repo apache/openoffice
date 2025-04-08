@@ -75,7 +75,7 @@ public class _XSheetOperation extends MultiMethodTest {
 
     /**
     * Test calls the method and checks returned value. <p>
-    * Has <b> OK </b> status if returned value is equal or greate than zero
+    * Has <b> OK </b> status if returned value is equal or greater than zero
     * and no exceptions were thrown. <p>
     */
     public void _computeFunction() {
@@ -97,4 +97,3 @@ public class _XSheetOperation extends MultiMethodTest {
     } // finished computeFunction
 
 } // finished class _XSheetOperation
-

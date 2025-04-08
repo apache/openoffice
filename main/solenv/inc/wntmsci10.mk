@@ -334,4 +334,3 @@ URLMONLIB=urlmon.lib
 WININETLIB=wininet.lib
 OLDNAMESLIB=oldnames.lib
 MSIMG32LIB=msimg32.lib
-

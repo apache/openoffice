@@ -309,5 +309,3 @@ public:
 };
 
 #endif // #ifndef _SVX_OPTINET_HXX
-
-

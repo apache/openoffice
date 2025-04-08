@@ -36,7 +36,7 @@ import com.sun.star.util.XRefreshable;
 *  <li><code> addRefreshListener()</code></li>
 *  <li><code> removeRefreshListener()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.util.XRefreshable
 */
 public class _XRefreshable extends MultiMethodTest {
@@ -112,4 +112,3 @@ public class _XRefreshable extends MultiMethodTest {
             log.println("RefreshListener was called after removing");
     }
 } // finish class _XRefreshable
-

@@ -35,7 +35,7 @@ import com.sun.star.ui.dialogs.XFilterManager;
 *  <li><code> setCurrentFilter()</code></li>
 *  <li><code> getCurrentFilter()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.ui.XFilterManager
 */
 public class _XFilterManager extends MultiMethodTest {
@@ -98,5 +98,3 @@ public class _XFilterManager extends MultiMethodTest {
         tRes.tested("getCurrentFilter()", "TestFilter".equals(gVal)) ;
     }
 }
-
-

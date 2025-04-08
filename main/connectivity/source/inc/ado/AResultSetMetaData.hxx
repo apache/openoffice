@@ -86,4 +86,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADO_ARESULTSETMETADATA_HXX_
-

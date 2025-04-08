@@ -56,4 +56,3 @@ public:
 } // namespace http_dav_ucp
 
 #endif
-

@@ -130,5 +130,3 @@ inline double DXFRepresentation::getGlobalLineTypeScale() const { return mfGloba
 inline void DXFRepresentation::setGlobalLineTypeScale(double fGlobalLineTypeScale) { mfGlobalLineTypeScale = fGlobalLineTypeScale; }
 
 #endif
-
-

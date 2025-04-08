@@ -103,7 +103,7 @@ public class Process implements WebWizardConst, ProcessErrors
     public Task myTask;
     /**
      * This is a cache for exporters, so I do not need to 
-     * instanciate the same exporter more than once. 
+     * instantiate the same exporter more than once.
      */
     private Map exporters = new Hashtable(3);
     private boolean result;

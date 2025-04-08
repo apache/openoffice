@@ -50,5 +50,3 @@ public class _XCustomPresentationSupplier extends MultiMethodTest {
     }
 
 }
-
-

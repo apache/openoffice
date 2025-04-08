@@ -244,4 +244,3 @@ DynamicList<XY>::remove( unsigned           pos )
 
 
 #endif
-

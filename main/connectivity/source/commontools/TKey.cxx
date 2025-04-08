@@ -112,4 +112,3 @@ void OTableKeyHelper::refreshColumns()
 		m_pColumns	= new OKeyColumnsHelper(this,m_aMutex,aVector);
 }
 // -----------------------------------------------------------------------------
-

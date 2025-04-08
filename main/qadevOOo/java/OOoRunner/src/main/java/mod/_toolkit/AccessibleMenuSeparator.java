@@ -163,4 +163,3 @@ public class AccessibleMenuSeparator extends TestCase {
         }
     }
 }
-

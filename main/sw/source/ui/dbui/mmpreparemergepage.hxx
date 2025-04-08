@@ -69,5 +69,3 @@ public:
 };
 
 #endif
-
-

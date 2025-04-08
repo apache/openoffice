@@ -97,4 +97,3 @@ public:
 };
 
 #endif // #ifndef INCLUDED_SVTOOLS_ACCESSIBILITYOPTIONS_HXX
-

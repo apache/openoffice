@@ -66,5 +66,3 @@ public:
 
 
 #endif // SC_DELCODLG_HXX
-
-

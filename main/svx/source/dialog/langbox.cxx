@@ -519,4 +519,3 @@ IMPL_GET_WINDOW (SvxLanguageBox);*/
 };
 
 #endif
-

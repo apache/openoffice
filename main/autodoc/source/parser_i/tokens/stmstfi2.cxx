@@ -50,6 +50,3 @@ StmBoundsStatu2::AsBounds()
 {
 	return this;
 }
-
-
-

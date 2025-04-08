@@ -90,4 +90,3 @@ public:
 };
 
 #endif // SW_UNDO_SORT_HXX
-

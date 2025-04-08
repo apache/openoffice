@@ -88,4 +88,3 @@ namespace accessibility
 	};
 }
 #endif // ACCESSIBILITY_EXT_ACCESSIBLEBROWSEBOXCHECKBOXCELL_HXX
-

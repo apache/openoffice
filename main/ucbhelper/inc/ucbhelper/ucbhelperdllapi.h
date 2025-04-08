@@ -34,4 +34,3 @@
 #define UCBHELPER_DLLPRIVATE SAL_DLLPRIVATE
                                                                                                                              
 #endif /* INCLUDED_UCBHELPERDLLAPI_H */
-

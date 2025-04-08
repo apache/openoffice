@@ -137,4 +137,3 @@ public:
 };
 
 #endif // #ifndef _SVX_BRSHITEM_HXX
-

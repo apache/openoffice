@@ -204,4 +204,3 @@ sal_Bool SvxViewLayoutItem::PutValue( const com::sun::star::uno::Any& rVal, sal_
 
     return sal_True;
 }
-

@@ -684,5 +684,3 @@ void ODatabaseMetaDataResultSetMetaData::setVersionColumnsMap()
 		0,0,0,
                 DataType::INTEGER);
 }
-
-

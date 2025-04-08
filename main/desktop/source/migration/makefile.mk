@@ -52,4 +52,3 @@ SRC1FILES=	wizard.src
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

@@ -54,4 +54,3 @@ public interface Exporter
 
     public void init(CGExporter exporter);
 }
-

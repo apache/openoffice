@@ -173,5 +173,3 @@ public:
 };
 
 #endif // #ifndef _SFX_APPDATA_HXX
-
-

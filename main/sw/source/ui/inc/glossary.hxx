@@ -190,4 +190,3 @@ inline String SwGlossaryDlg::GetCurrShortName() const
 
 
 #endif
-

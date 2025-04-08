@@ -80,4 +80,3 @@ extern "C" void *component_getFactory( const sal_Char *aImplementationName,
 }
 
 //------------------------------------------------------------------------------
-

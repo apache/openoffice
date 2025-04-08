@@ -56,4 +56,3 @@
 #define kAquaPopupButtonDefaultHeight (26)
 
 #endif //_SALAQUACONSTANTS_H_
-

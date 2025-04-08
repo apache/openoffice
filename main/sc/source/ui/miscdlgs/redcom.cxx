@@ -179,4 +179,3 @@ IMPL_LINK(ScRedComDialog, NextHdl, AbstractSvxPostItDialog*, pDlgP )
 
 	return 0;
 }
-

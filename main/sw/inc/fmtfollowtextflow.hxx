@@ -59,4 +59,3 @@ inline const SwFmtFollowTextFlow &SwFmt::GetFollowTextFlow(sal_Bool bInP) const
 #endif
 
 #endif
-

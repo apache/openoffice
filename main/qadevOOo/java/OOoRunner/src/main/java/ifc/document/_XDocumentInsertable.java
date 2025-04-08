@@ -59,7 +59,7 @@ import com.sun.star.uno.UnoRuntime;
 *    The file is needed if no other file name specified by relation.
 *    </li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.document.XDocumentInsertable
 */
 public class _XDocumentInsertable extends MultiMethodTest {
@@ -109,7 +109,7 @@ public class _XDocumentInsertable extends MultiMethodTest {
             tEnv.getObjRelation("XDocumentInsertable.Checker") ;
 
         if (checker == null) {
-            log.println("Relaion not found, trying to query for "+
+            log.println("Relation not found, trying to query for "+
                 "XTextRange ...") ;
             range = (XTextRange)
                 UnoRuntime.queryInterface (XTextRange.class, oObj) ;

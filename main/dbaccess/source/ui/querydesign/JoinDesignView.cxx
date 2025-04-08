@@ -163,4 +163,3 @@ void OJoinDesignView::KeyInput( const KeyEvent& rEvt )
 // -----------------------------------------------------------------------------
 
 }   // namespace dbaui
-

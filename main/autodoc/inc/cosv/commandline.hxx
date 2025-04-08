@@ -125,7 +125,7 @@ class CommandLine
 
         @return
         The first argument within the range
-        i_next_argument .. i_comandLine_end that does not belong as a
+        i_next_argument .. i_commandLine_end that does not belong as a
         parameter to the handled option.
     */
     virtual StringVector::const_iterator

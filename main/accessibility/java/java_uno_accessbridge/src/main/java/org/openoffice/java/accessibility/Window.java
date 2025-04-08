@@ -567,4 +567,3 @@ public class Window extends java.awt.Window implements javax.accessibility.Acces
     }
 
 }
-

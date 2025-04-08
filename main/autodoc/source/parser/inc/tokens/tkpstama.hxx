@@ -115,5 +115,3 @@ class StateMachine
 
 
 #endif
-
-

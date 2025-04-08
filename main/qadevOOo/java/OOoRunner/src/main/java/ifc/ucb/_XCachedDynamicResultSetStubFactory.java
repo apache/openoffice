@@ -48,7 +48,7 @@ import com.sun.star.uno.UnoRuntime;
 *   this must be an imlementation of <code>
 *   com.sun.star.ucb.DynamicResultSet</code> service.</li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.ucb.XCachedDynamicResultSetStubFactory
 */
 public class _XCachedDynamicResultSetStubFactory extends MultiMethodTest {
@@ -185,4 +185,3 @@ public class _XCachedDynamicResultSetStubFactory extends MultiMethodTest {
     }
 
 }
-

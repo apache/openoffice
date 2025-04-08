@@ -495,4 +495,3 @@ public:
 	virtual GetTabPageRanges			GetTabPageRangesFunc( sal_uInt16 nId ) = 0;
 };
 #endif
-

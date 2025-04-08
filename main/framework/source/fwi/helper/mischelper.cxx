@@ -234,5 +234,3 @@ void FillLangItems( std::set< OUString > &rLangItems,
 }
     
 } // namespace framework
-
-

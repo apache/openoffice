@@ -41,7 +41,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::util::XTextSearch</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see ifc.util._XTextSearch
 */
 public class TextSearch extends TestCase {
@@ -74,4 +74,3 @@ public class TextSearch extends TestCase {
     } // finish method getTestEnvironment
 
 }
-

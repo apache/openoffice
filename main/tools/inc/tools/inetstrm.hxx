@@ -268,4 +268,3 @@ public:
 };
 
 #endif /* !_TOOLS_INETSTRM_HXX */
-

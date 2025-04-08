@@ -143,4 +143,3 @@ struct SpellCallbackInfo
 };
 
 #endif // _EDITSTAT_HXX
-

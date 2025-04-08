@@ -216,6 +216,3 @@ void OColumnsHelper::dropObject(sal_Int32 /*_nPos*/,const ::rtl::OUString _sElem
 	}
 }
 // -----------------------------------------------------------------------------
-
-
-

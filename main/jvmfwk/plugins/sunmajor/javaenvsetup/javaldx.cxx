@@ -185,6 +185,3 @@ static bool findAndSelect(JavaInfo ** ppInfo)
     }
     return true;
 }
-
-
-

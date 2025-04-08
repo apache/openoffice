@@ -383,4 +383,3 @@ public:
 };
 
 #endif // _ICNVW_HXX
-

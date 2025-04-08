@@ -36,7 +36,7 @@ namespace reportdesign
 
 	//==================================================================
 	//= ResourceManager
-	//= handling ressources within the DBA-Core library
+	//= handling resources within the DBA-Core library
 	//==================================================================
 	class ResourceManager
 	{
@@ -71,4 +71,3 @@ namespace reportdesign
 //.........................................................................
 
 #endif // REPORTDESIGN_CORE_RESOURCE_HXX_
-

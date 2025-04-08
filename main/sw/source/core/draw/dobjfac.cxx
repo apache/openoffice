@@ -49,5 +49,3 @@ IMPL_LINK( SwObjectFactory, MakeObject, SdrObjFactory*, pObjFactory )
 	}
 	return 0;
 }
-
-

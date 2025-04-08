@@ -62,5 +62,3 @@ void SAL_CALL OOutputStreamWrapper::closeOutput() throw( stario::NotConnectedExc
 }
 
 } // namespace utl
-
-

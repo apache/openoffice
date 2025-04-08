@@ -69,5 +69,3 @@ public class _X3DDisplay extends MultiMethodTest {
     }
 
 } // EOF X3DDisplay
-
-

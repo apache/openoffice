@@ -84,4 +84,3 @@ public class CGDesign extends ConfigGroup implements XMLProvider
         cp_Layout = (String) ((CGSettings) root).cp_Layouts.getKey(layout);
     }
 }
-

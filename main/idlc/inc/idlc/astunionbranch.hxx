@@ -39,4 +39,3 @@ private:
 };
 
 #endif // _IDLC_ASTUNIONBRANCH_HXX_
-

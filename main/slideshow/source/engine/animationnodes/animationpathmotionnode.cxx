@@ -60,4 +60,3 @@ AnimationActivitySharedPtr AnimationPathMotionNode::createActivity() const
 
 } // namespace internal
 } // namespace slideshow
-

@@ -121,4 +121,3 @@ uno::Reference< uno::XInterface > SAL_CALL SIDEModel_createInstance(
 	SfxObjectShell* pShell = new BasicDocShell();
 	return uno::Reference< uno::XInterface >( pShell->GetModel() );
 }
-

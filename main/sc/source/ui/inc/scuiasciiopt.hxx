@@ -139,4 +139,3 @@ inline bool ScImportAsciiDlg::Seek(sal_uLong nPos)
 }
 
 #endif
-

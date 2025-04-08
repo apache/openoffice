@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -124,7 +124,7 @@
 #define BMP_FOIL_22 						RID_APP_START+157
 #define BMP_FOIL_23 						RID_APP_START+158
 #define BMP_FOIL_24 						RID_APP_START+159
-											
+
 #define BMP_EFFECT_UNCOVER_TO_L				RID_APP_START+165
 #define BMP_EFFECT_UNCOVER_TO_UL			RID_APP_START+166
 #define BMP_EFFECT_UNCOVER_TO_T				RID_APP_START+167
@@ -205,7 +205,7 @@
 #define BMP_PLACEHOLDER_SMALL_START			(RID_SD_START+402)		// these ids must stay in order!
 #define BMP_PLACEHOLDER_TABLE_SMALL			(RID_SD_START+402)
 #define BMP_PLACEHOLDER_CHART_SMALL			(RID_SD_START+403)
-#define BMP_PLACEHOLDER_IMAGE_SMALL			(RID_SD_START+404)		
+#define BMP_PLACEHOLDER_IMAGE_SMALL			(RID_SD_START+404)
 #define BMP_PLACEHOLDER_MOVIE_SMALL			(RID_SD_START+405)
 #define BMP_PLACEHOLDER_TABLE_SMALL_HOVER	(RID_SD_START+406)
 #define BMP_PLACEHOLDER_CHART_SMALL_HOVER	(RID_SD_START+407)
@@ -214,7 +214,7 @@
 #define BMP_PLACEHOLDER_SMALL_END			(RID_SD_START+410)
 #define BMP_PLACEHOLDER_LARGE_START			(RID_SD_START+410)
 #define BMP_PLACEHOLDER_TABLE_LARGE			(RID_SD_START+410)
-#define BMP_PLACEHOLDER_CHART_LARGE			(RID_SD_START+411)		
+#define BMP_PLACEHOLDER_CHART_LARGE			(RID_SD_START+411)
 #define BMP_PLACEHOLDER_IMAGE_LARGE			(RID_SD_START+412)
 #define BMP_PLACEHOLDER_MOVIE_LARGE			(RID_SD_START+413)
 #define BMP_PLACEHOLDER_TABLE_LARGE_HOVER	(RID_SD_START+414)
@@ -334,4 +334,3 @@
 #define RID_GRAPHICSTYLEFAMILY		RID_APP_START+395
 #define RID_PRESENTATIONSTYLEFAMILY	RID_APP_START+396
 #define RID_GRAPHICSCELLFAMILY		RID_APP_START+397
-

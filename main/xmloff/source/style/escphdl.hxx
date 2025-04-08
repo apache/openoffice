@@ -48,4 +48,3 @@ public:
 };
 
 #endif		// _XMLOFF_PROPERTYHANDLER_ESCAPETYPES_HXX
-

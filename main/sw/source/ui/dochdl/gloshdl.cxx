@@ -891,4 +891,3 @@ sal_Bool SwGlossaryHdl::ImportGlossaries( const String& rName )
 	}
 	return bRet;
 }
-

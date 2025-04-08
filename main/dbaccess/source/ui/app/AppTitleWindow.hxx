@@ -78,4 +78,3 @@ namespace dbaui
 } // namespace dbaui
 // .............................................................
 #endif // DBAUI_TITLE_WINDOW_HXX
-

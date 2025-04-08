@@ -285,5 +285,3 @@ sal_Bool SvxSearchItem::IsMatchFullHalfWidthForms() const
 }
 
 #endif
-
-

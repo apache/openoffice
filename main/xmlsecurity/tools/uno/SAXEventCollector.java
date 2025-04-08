@@ -188,4 +188,3 @@ class SAXEventCollector implements XDocumentHandler
 	{
 	}
 }
-

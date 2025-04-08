@@ -74,4 +74,3 @@ $(INCCOM)$/lrl_include.hxx: $(foreach,i,$(txtlist) data$/$i)
 .ELSE
 	@echo $(EMQ)#define LOCAL_RULE_LANGS $(EMQ)"$(LOCAL_RULE_LANGS)$(EMQ)" >& $@
 .ENDIF
-

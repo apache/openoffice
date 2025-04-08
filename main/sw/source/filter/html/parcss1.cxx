@@ -1419,4 +1419,3 @@ sal_Bool CSS1Expression::GetColor( Color &rColor ) const
 
 	return bRet;
 }
-

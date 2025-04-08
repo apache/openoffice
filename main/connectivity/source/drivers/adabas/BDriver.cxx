@@ -1812,7 +1812,3 @@ void ODriver::convertOldVersion(const ::rtl::OUString& sDBName,const TDatabaseSt
 	} // namespace adabas
 }// namespace connectivity
 // -----------------------------------------------------------------------------
-
-
-
-

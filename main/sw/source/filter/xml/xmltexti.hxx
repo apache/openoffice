@@ -125,4 +125,3 @@ public:
 };
 
 #endif	//  _XMLTEXTI_HXX
-

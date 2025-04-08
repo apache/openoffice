@@ -50,4 +50,3 @@ public:
 }	// namespace utl
 
 #endif // _UTL_PROGRESSHANDLERWRAP_HXX_
-

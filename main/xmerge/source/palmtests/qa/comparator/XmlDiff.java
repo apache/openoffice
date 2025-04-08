@@ -457,4 +457,3 @@ public final class XmlDiff {
         }
     }
 }
-

@@ -33,7 +33,7 @@ import com.sun.star.document.XEmbeddedObjectSupplier;
 * <ul>
 *  <li><code> getEmbeddedObject()</code></li>
 * </ul> <p>
-* Test is multithread compilant. <p>
+* Test is multithread compliant. <p>
 * @see com.sun.star.document.XEmbeddedObjectSupplier
 */
 public class _XEmbeddedObjectSupplier extends MultiMethodTest {
@@ -49,4 +49,3 @@ public class _XEmbeddedObjectSupplier extends MultiMethodTest {
                 oObj.getEmbeddedObject() != null);
     }
 }  // finish class _XEmbeddedObjectSupplier
-

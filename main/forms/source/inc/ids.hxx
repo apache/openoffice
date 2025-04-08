@@ -29,4 +29,3 @@
 DECLARE_IMPLEMENTATIONID_HELPER(frm, OImplementationIds)
 
 #endif // _FRM_IDS_HXX_
-

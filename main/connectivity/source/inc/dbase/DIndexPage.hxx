@@ -82,4 +82,3 @@ namespace connectivity
 }
 #endif
 #endif // _CONNECTIVITY_DBASE_INDEXPAGE_HXX_
-

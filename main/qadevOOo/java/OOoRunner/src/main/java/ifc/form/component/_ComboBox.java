@@ -36,4 +36,3 @@ import lib.MultiPropertyTest;
 public class _ComboBox extends MultiPropertyTest {
     // these properties don't needed in special code.
 }
-

@@ -466,4 +466,3 @@ rtl::OUString SAL_CALL Transliteration_sentencecase::transliterate(
 
 
 } } } }
-

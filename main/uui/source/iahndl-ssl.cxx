@@ -158,7 +158,7 @@ executeUnknownAuthDialog(
                                    xServiceFactory,
                                    xManager.get()));
 
-        // Get correct ressource string
+        // Get correct resource string
         rtl::OUString aMessage;
 
         std::vector< rtl::OUString > aArguments;
@@ -207,7 +207,7 @@ executeSSLWarnDialog(
                               xServiceFactory,
                               xManager.get()));
 
-        // Get correct ressource string
+        // Get correct resource string
         rtl::OUString aMessage_1;
         std::vector< rtl::OUString > aArguments_1;
 
@@ -390,4 +390,3 @@ UUIInteractionHelper::handleCertificateValidationRequest(
 
     return false;
 }
-

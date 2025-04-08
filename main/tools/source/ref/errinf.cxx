@@ -455,4 +455,3 @@ SimpleErrorHandler::SimpleErrorHandler()
  : ErrorHandler()
 {
 }
-

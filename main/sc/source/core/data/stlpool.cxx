@@ -634,4 +634,3 @@ ScStyleSheet* ScStyleSheetPool::FindCaseIns( const String& rName, SfxStyleFamily
 
 	return NULL;
 }
-

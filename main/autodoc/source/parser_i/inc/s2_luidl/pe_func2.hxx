@@ -160,4 +160,3 @@ class PE_Function : public UnoIDL_PE,
 
 
 #endif
-

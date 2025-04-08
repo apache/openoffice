@@ -168,4 +168,3 @@ inline void UnoInterfaceReference::dispatch(
 }
 
 #endif
-

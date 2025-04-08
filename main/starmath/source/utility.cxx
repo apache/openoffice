@@ -374,6 +374,3 @@ SmFace & operator *= (SmFace &rFace, const Fraction &rFrac)
 					   Fraction(rFaceSize.Height()) *= rFrac));
 	return rFace;
 }
-
-
-

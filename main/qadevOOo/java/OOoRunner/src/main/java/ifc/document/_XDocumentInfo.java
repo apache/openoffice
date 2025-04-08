@@ -38,7 +38,7 @@ import com.sun.star.lang.ArrayIndexOutOfBoundsException;
 *  <li><code> getUserFieldValue()</code></li>
 *  <li><code> setUserFieldValue()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.document.XDocumentInfo
 */
 public class _XDocumentInfo extends MultiMethodTest {
@@ -217,4 +217,3 @@ public class _XDocumentInfo extends MultiMethodTest {
     }
 
 }  // finish class _XDocumentInfo
-

@@ -235,4 +235,3 @@ bool ParseCMAP( const unsigned char* pRawData, int nRawLength, CmapResult& );
 void UpdateAttributesFromPSName( const String& rPSName, ImplDevFontAttributes& );
 
 #endif // _SV_IMPFONT_HXX
-

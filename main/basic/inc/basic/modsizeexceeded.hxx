@@ -55,4 +55,3 @@ class BASIC_DLLPUBLIC ModuleSizeExceeded : public ::cppu::WeakImplHelper1< ::com
 };
 
 #endif
-

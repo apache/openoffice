@@ -406,4 +406,3 @@ inline E_TYPE TokenPool::GetType( const TokenId& rId ) const
 
 
 #endif
-

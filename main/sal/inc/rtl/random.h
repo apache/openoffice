@@ -107,4 +107,3 @@ rtlRandomError SAL_CALL rtl_random_getBytes (
 #endif
 
 #endif /* _RTL_RANDOM_H_ */
-

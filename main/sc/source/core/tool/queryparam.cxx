@@ -359,4 +359,3 @@ ScDBQueryParamMatrix::ScDBQueryParamMatrix() :
 ScDBQueryParamMatrix::~ScDBQueryParamMatrix()
 {
 }
-

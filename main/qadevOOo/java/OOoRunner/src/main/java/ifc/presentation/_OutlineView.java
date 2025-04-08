@@ -28,5 +28,3 @@ import lib.MultiPropertyTest;
 public class _OutlineView extends MultiPropertyTest {
 
 }  // finish class _PresentationView
-
-

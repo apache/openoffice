@@ -28,4 +28,3 @@ import lib.MultiPropertyTest;
 public class _Frame extends MultiPropertyTest {
 
 }
-

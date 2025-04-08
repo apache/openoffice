@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef INCLUDED_CONFIGMGR_SOURCE_NODE_HXX
 #define INCLUDED_CONFIGMGR_SOURCE_NODE_HXX
@@ -35,47 +33,81 @@ namespace rtl { class OUString; }
 
 namespace configmgr {
 
+/**
+ * Configuration element.
+ *
+ * This class represent either a "node" or a "property" in the words of the
+ * OpenOffice.org Registry Format (OOR).
+ */
 class Node: public salhelper::SimpleReferenceObject {
 public:
-    enum Kind {
-        KIND_PROPERTY, KIND_LOCALIZED_PROPERTY, KIND_LOCALIZED_VALUE,
-        KIND_GROUP, KIND_SET };
+	// Identifies the type of configuration element.
+	enum Kind {
+		/** Property (&lt;prop&gt; element)
+		 *
+		 * Identifies instances of PropertyNode.
+		 */
+		KIND_PROPERTY,
+		/** Localized property (&lt;prop&gt; element)
+		 *
+		 * Identifies instances of LocalizedPropertyNode.
+		 */
+		KIND_LOCALIZED_PROPERTY,
+		/**
+		 * Value of a property (&lt;value&gt; element)
+		 *
+		 * Identifies instances of LocalizedValueNode.
+		 */
+		KIND_LOCALIZED_VALUE,
+		/** Group member node (&lt;node&gt; element)
+		 *
+		 * Identifies instances of GroupNode.
+		 */
+		KIND_GROUP,
+		/** Set member node (&lt;node&gt; element)
+		 *
+		 * Identifies instances of SetNode.
+		 */
+		KIND_SET,
+	};
 
-    virtual Kind kind() const = 0;
+	virtual Kind kind() const = 0;
 
-    virtual rtl::Reference< Node > clone(bool keepTemplateName) const = 0;
+	virtual rtl::Reference< Node > clone(bool keepTemplateName) const = 0;
 
-    virtual NodeMap & getMembers();
+	virtual NodeMap & getMembers();
 
-    virtual rtl::OUString getTemplateName() const;
+	virtual rtl::OUString getTemplateName() const;
 
-    virtual void setMandatory(int layer);
+	virtual void setMandatory(int layer);
 
-    virtual int getMandatory() const;
+	virtual int getMandatory() const;
 
-    void setLayer(int layer);
+	void setLayer(int layer);
 
-    int getLayer() const;
+	int getLayer() const;
 
-    void setFinalized(int layer);
+	void setFinalized(int layer);
 
-    int getFinalized() const;
+	int getFinalized() const;
 
-    rtl::Reference< Node > getMember(rtl::OUString const & name);
+	rtl::Reference< Node > getMember(rtl::OUString const & name);
 
 protected:
-    explicit Node(int layer);
+	explicit Node(int layer);
 
-    Node(const Node & other);
+	Node(const Node & other);
 
-    virtual ~Node();
+	virtual ~Node();
 
-    virtual void clear();
+	virtual void clear();
 
-    int layer_;
-    int finalized_;
+	int layer_;
+	int finalized_;
 };
 
 }
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

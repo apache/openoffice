@@ -1188,8 +1188,3 @@ void ScTable::InvalidateTextWidth( const ScAddress* pAdrFrom, const ScAddress* p
 		}
 	}
 }
-
-
-
-
-

@@ -52,4 +52,3 @@ namespace dbtools
     };
 } // dbtools
 #endif //CONNECTIVITY_PARAMETERCONTINUATION_HXX_INCLUDED
-

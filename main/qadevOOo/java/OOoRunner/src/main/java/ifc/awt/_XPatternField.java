@@ -39,7 +39,7 @@ import com.sun.star.awt.XPatternField;
 *  <li><code> setStrictFormat()</code></li>
 *  <li><code> isStrictFormat()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XPatternField
 */
 public class _XPatternField extends MultiMethodTest {
@@ -168,5 +168,3 @@ public class _XPatternField extends MultiMethodTest {
         tRes.tested("isStrictFormat()", result) ;
     }
 }
-
-

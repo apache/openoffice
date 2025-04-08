@@ -72,7 +72,7 @@ public:
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( ErrorBar )
 
     /// merge XInterface implementations

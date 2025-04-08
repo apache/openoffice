@@ -246,4 +246,3 @@ SvXMLImportContext *ScXMLNamedExpressionContext::CreateChildContext( sal_uInt16 
 void ScXMLNamedExpressionContext::EndElement()
 {
 }
-

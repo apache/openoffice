@@ -37,4 +37,3 @@ import lib.MultiPropertyTest;
 public class _TextShape extends MultiPropertyTest {
 
 }
-

@@ -305,4 +305,3 @@ sal_Bool SwPostItsPortion::GetExpTxt( const SwTxtSizeInfo &rInf,
 		rTxt.Erase();
 	return sal_True;
 }
-

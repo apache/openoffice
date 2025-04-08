@@ -271,8 +271,3 @@ void DeActivateOlk( ScViewData* /* pViewData */ )
 
 	//	GetSbxForm gibt's nicht mehr, muss auch nichts mehr angemeldet werden
 }
-
-
-
-
-

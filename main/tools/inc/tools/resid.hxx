@@ -53,7 +53,7 @@ class ResId
 	mutable sal_uInt32      m_nResId; 	   // Resource Identifier
 	mutable RESOURCE_TYPE	m_nRT;		   // type for loading (mutable to be set later)
 	mutable ResMgr *		m_pResMgr;	   // load from this ResMgr (mutable for setting on demand)
-	mutable RESOURCE_TYPE	m_nRT2;		   // type for loading (supercedes m_nRT)
+	mutable RESOURCE_TYPE	m_nRT2;		   // type for loading (supersedes m_nRT)
     mutable sal_uInt32      m_nWinBits;    // container for original style bits on a window in a resource
     
     void ImplInit( sal_uInt32 nId, ResMgr& rMgr, RSHEADER_TYPE* pRes )
@@ -112,7 +112,7 @@ class ResId
     /*
     Get the effective type (m_nRT2 or m_nRT1)
 
-	A second resource type is used to supercede settings
+	A second resource type is used to supersede settings
     of the base class ( e.g. Window )
     */
     {
@@ -120,7 +120,7 @@ class ResId
     }
 	const ResId &	SetRT2( RESOURCE_TYPE nTyp ) const
     /*
-    Set the superceding type. Ask spcifically for it with GetRT2()
+    Set the superseding type. Ask specifically for it with GetRT2()
     
     SetRT2() may only be called if no derived class calls SetRT in its
     Resource constructor.

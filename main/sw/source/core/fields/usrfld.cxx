@@ -374,6 +374,3 @@ sal_Bool SwUserFieldType::PutValue( const uno::Any& rAny, sal_uInt16 nWhichId )
 	}
 	return sal_True;
 }
-
-
-

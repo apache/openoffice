@@ -222,4 +222,3 @@ namespace dbp
 //.........................................................................
 
 #endif // _EXTENSIONS_DBP_GROUPBOXWIZ_HXX_
-

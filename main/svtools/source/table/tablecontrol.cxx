@@ -319,7 +319,7 @@ namespace svt { namespace table
 				aRetText = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Grid control" ) );
 				break;
 			case TCTYPE_TABLE:
-				aRetText = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Grid conrol" ) );
+				aRetText = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Grid control" ) );
 				break;
 			case TCTYPE_ROWHEADERBAR:
 				aRetText = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "RowHeaderBar" ) );
@@ -328,7 +328,7 @@ namespace svt { namespace table
 				aRetText = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ColumnHeaderBar" ) );
 				break;
 			case TCTYPE_TABLECELL:
-				//the name of the cell constists of column name and row name if defined
+				//the name of the cell consists of column name and row name if defined
 				//if the name is equal to cell content, it'll be read twice
 				if(GetModel()->hasColumnHeaders())
 				{

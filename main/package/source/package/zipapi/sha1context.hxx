@@ -50,4 +50,3 @@ public:
 };
 
 #endif // _SHA1CONTEXT_HXX
-

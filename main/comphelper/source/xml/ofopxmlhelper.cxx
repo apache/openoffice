@@ -460,4 +460,3 @@ void SAL_CALL OFOPXMLHelper::setDocumentLocator( const uno::Reference< xml::sax:
 }
 
 } // namespace comphelper
-

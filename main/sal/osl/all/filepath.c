@@ -115,5 +115,3 @@ oslFileError SAL_CALL osl_abbreviateSystemPath( rtl_uString *ustrSystemPath, rtl
 
 	return error;
 }
-
-

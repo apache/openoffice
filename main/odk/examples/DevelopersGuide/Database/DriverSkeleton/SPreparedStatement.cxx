@@ -373,5 +373,3 @@ void OPreparedStatement::checkParameterIndex(sal_Int32 _parameterIndex)
 		throw SQLException();
 }
 // -----------------------------------------------------------------------------
-
-

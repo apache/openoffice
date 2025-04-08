@@ -99,9 +99,3 @@ sal_Bool OQueryTableConnection::operator==(const OQueryTableConnection& rCompare
 			);
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-
-

@@ -2801,5 +2801,3 @@ void ImpSvNumberformatScan::CopyInfo(ImpSvNumberformatInfo* pInfo, sal_uInt16 nA
 	pInfo->nCntPost     = nCntPost;
 	pInfo->nCntExp      = nCntExp;
 }
-
-

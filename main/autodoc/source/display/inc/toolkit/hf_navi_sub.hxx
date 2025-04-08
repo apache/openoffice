@@ -73,5 +73,3 @@ class HF_NaviSubRow : public HtmlMaker
 
 
 #endif
-
-

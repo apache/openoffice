@@ -145,4 +145,3 @@ void SwToolbarConfigItem::Commit()
 }
 
 void SwToolbarConfigItem::Notify( const ::com::sun::star::uno::Sequence< rtl::OUString >& ) {}
-

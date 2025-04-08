@@ -55,4 +55,3 @@ EventSharedPtr generateEvent(
 } // namespace slideshow
 
 #endif /* INCLUDED_SLIDESHOW_GENERATEEVENT_HXX */
-

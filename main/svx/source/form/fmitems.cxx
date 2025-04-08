@@ -59,7 +59,3 @@ SfxPoolItem* FmInterfaceItem::Create( SvStream& /*rStrm*/, sal_uInt16 ) const
     DBG_ERROR( "FmInterfaceItem::Create: not implemented!" );
 	return new FmInterfaceItem( *this );
 }
-
-
-
-

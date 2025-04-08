@@ -214,4 +214,3 @@ public class SdUnoSlideView extends TestCase {
 
 
 } // finish class SdUnoOutlineView
-

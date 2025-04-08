@@ -344,4 +344,3 @@ public:
 };
 
 #endif	 // _SVX_CHRTITEM_HXX
-

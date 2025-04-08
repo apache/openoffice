@@ -141,7 +141,7 @@ public class Interceptor implements com.sun.star.frame.XFrameActionListener,
      * (started inside the original oneway method). We found all parameters of
      * the original request packed inside a vector. Here we unpack it and
      * call the right internal helper method, which implements the right
-     * funtionality.
+     * functionality.
      *
      * @seealso frameAction()
      * @seealso dispatch()
@@ -579,7 +579,7 @@ public class Interceptor implements com.sun.star.frame.XFrameActionListener,
     // ____________________
 
     /**
-     * This class listen on the intercepted frame to free all used ressources on closing.
+     * This class listen on the intercepted frame to free all used resources on closing.
      * We forget the reference to the frame only here. Deregistration
      * isn't necessary here - because this frame dies and wish to forgoten.
      *

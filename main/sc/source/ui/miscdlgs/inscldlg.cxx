@@ -110,6 +110,3 @@ InsCellCmd ScInsertCellDlg::GetInsCellCmd() const
 __EXPORT ScInsertCellDlg::~ScInsertCellDlg()
 {
 }
-
-
-

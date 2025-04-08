@@ -113,6 +113,3 @@ sal_uLong SwCursor::Find( const SwTxtFmtColl& rFmtColl,
     }
     return nRet;
 }
-
-
-

@@ -1491,7 +1491,7 @@ namespace
 		return bRet;
 	}
 // .........................................................................
-} // annonymous
+} // anonymous
 // .........................................................................
 // -----------------------------------------------------------------------------
 ::com::sun::star::util::URL	createHelpAgentURL(const ::rtl::OUString& _sModuleName, const rtl::OString& sHelpId)
@@ -1562,7 +1562,7 @@ TOTypeInfoSP queryPrimaryKeyType(const OTypeInfoMap& _rTypeInfo)
 	if ( !pTypeInfo.get() ) // just a fallback
 		pTypeInfo = queryTypeInfoByType(DataType::VARCHAR,_rTypeInfo);
 
-	OSL_ENSURE(pTypeInfo.get(),"checkColumns: cann't find a type which is useable as a key!");
+	OSL_ENSURE(pTypeInfo.get(),"checkColumns: can't find a type which is useable as a key!");
 	return pTypeInfo;
 }
 // -----------------------------------------------------------------------------

@@ -76,5 +76,3 @@ protected:
 
 
 #endif // SC_CBUTTON_HXX
-
-

@@ -103,4 +103,3 @@ public class _CellProperties extends MultiPropertyTest {
     }
 
 } // finish class _CellProperties
-

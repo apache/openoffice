@@ -58,4 +58,3 @@ SvXMLImportContext *SwXMLImport::CreateScriptContext(
 
 	return pContext;
 }
-

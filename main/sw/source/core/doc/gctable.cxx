@@ -443,5 +443,3 @@ void SwTable::GCLines()
 			lcl_MergeGCLine( *(GetTabLines().GetData() + n ), &aPara ); ++n )
 		;
 }
-
-

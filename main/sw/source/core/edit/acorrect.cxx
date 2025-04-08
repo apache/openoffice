@@ -540,5 +540,3 @@ void SwDontExpandItem::RestoreDontExpandItems( const SwPosition& rPos )
 		}
 	}
 }
-
-

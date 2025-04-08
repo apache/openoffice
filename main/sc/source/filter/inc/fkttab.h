@@ -39,4 +39,3 @@ extern const sal_Char *cPost[ 256 ];
 extern BEARBFKT *pFkt[ 256 ];
 
 #endif
-

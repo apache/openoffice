@@ -236,4 +236,3 @@ public:
 
 
 #endif // SC_TPHFEDIT_HXX
-

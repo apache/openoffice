@@ -305,4 +305,3 @@ void SfxPrintOptionsDialog::DisableHelp()
 
 	aHelpBtn.Disable();
 }
-

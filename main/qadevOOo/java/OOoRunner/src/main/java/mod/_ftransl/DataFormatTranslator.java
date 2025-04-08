@@ -44,7 +44,7 @@ import com.sun.star.uno.XInterface;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.lang.XServiceInfo
  * @see com.sun.star.datatransfer.XDataFormatTranslator
@@ -84,4 +84,3 @@ public class DataFormatTranslator extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class DataFormatTranslator
-

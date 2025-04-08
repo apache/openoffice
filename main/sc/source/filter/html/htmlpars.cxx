@@ -3049,4 +3049,3 @@ IMPL_LINK( ScHTMLQueryParser, HTMLImportHdl, const ImportInfo*, pInfo )
 }
 
 // ============================================================================
-

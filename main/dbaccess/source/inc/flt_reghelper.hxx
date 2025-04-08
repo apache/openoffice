@@ -53,4 +53,3 @@ namespace dbaxml
 }
 
 #endif // _FLT_REGHELPER_HXX_
-

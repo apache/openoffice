@@ -40,4 +40,3 @@ namespace sdbtools
 //........................................................................
 
 #endif // DBACCESS_MODULE_SDBT_HXX
-

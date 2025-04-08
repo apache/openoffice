@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "app.hrc"
 #include "res_bmp.hrc"
 #include "helpids.h"
@@ -45,7 +43,7 @@ DockingWindow FLT_WIN_LAYER_DIALOG
 	Window TB_LAYERS
 	{
 		Pos = MAP_APPFONT ( 6, 6 ) ;
-		Size = MAP_APPFONT ( WIDTH-2*6, TAB_BAR_HEIGHT ) ;
+		Size = MAP_APPFONT ( WIDTH-2 * 6, TAB_BAR_HEIGHT ) ;
 		HelpId = HID_SD_TABBAR_LAYERS ;
 		BORDER = TRUE ;
 		SvLook = TRUE ;

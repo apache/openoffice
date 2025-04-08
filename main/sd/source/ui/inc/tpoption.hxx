@@ -195,4 +195,3 @@ public:
 
 
 #endif // _SD_TPOPTION_HXX
-

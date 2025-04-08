@@ -118,4 +118,3 @@ void SvUnoWeakContainer::dispose()
 		pRef = mpList->Next();
 	}
 }
-

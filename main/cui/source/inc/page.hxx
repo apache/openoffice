@@ -242,4 +242,3 @@ public:
 };
 
 #endif // #ifndef _SVX_PAGE_HXX
-

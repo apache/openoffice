@@ -815,4 +815,3 @@ void OTableWindow::_elementReplaced( const container::ContainerEvent& /*_rEvent*
     FillListBox();
 }
 // -----------------------------------------------------------------------------
-

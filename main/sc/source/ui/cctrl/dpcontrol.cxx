@@ -1415,4 +1415,3 @@ void ScDPFieldPopupWindow::setOKAction(Action* p)
 {
     mpOKAction.reset(p);
 }
-

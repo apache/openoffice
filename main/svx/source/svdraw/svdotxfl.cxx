@@ -51,4 +51,3 @@ FASTBOOL SdrTextObj::CalcFieldValue(const SvxFieldItem& /*rField*/, sal_uInt32 /
 {
 	return sal_False;
 }
-

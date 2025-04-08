@@ -133,7 +133,7 @@ void XclImpOutlineBuffer::SetOutlineArray( ScOutlineArray* pOArray )
 }
 
 
-// transtorm xcl-outline into SC-outline
+// transform xcl-outline into SC-outline
 void XclImpOutlineBuffer::MakeScOutline( void )
 {
 	if( !pOutlineArray || !HasOutline() )
@@ -426,5 +426,3 @@ void ExcScenarioList::Apply( const XclImpRoot& rRoot )
 		p = _Prev();
 	}
 }
-
-

@@ -196,4 +196,3 @@ ALLTAR: \
 $(XCU_DEFAULT) : $$(@:d:s!$(PROCESSOUT)/registry/data/!$(ABSXCSROOT)/registry/schema/!)$$(@:f:s/.xcu/.xcs/)
 
 .ENDIF			# "$(XCUFILES)"!=""
-

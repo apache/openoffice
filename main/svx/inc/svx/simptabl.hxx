@@ -173,4 +173,3 @@ public:
 
 
 #endif // _SVX_SIMPTABL_HXX
-

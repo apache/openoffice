@@ -280,4 +280,3 @@ inline sal_Bool SmParser::TokenInGroup(sal_uLong nGroup)
 
 
 #endif
-

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,7 +20,6 @@
  * under the License.
  *
  ***********************************************************-->
-
 
 <!--
 	For further documentation and updates visit https://xml.openoffice.org/odf2xhtml
@@ -138,7 +138,7 @@
 			<xsl:call-template name="debug-check-parameter" />
 		</xsl:if>
 		<!-- gathers style properties and
-			returns them as globalData parameter to the 'start-main' template            -->
+			returns them as globalData parameter to the 'start-main' template -->
 		<xsl:call-template name="collect-global-odf-properties" />
 	</xsl:template>
 

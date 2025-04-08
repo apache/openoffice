@@ -681,4 +681,3 @@ void SvMetaModule::WriteCxx( SvIdlDataBase & rBase, SvStream & rOutStm,
 }
 
 #endif // IDL_COMPILER
-

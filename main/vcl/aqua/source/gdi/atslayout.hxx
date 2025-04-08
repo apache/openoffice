@@ -56,4 +56,3 @@ private:
 };
                              
 #endif	// _SV_SALATSUIFONTUTILS_HXX
-

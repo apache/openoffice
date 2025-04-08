@@ -38,7 +38,7 @@ import util.utils;
 *  <li> <code>MyPersistObjectImpl.jar</code> : jar which will be loaded in
 *    <code>XImplementationLoader</code> interface test. </li>
 * <ul>
-* Multithread testing compilant.
+* Multithread testing compliant.
 * @see com.sun.star.loader.XImplementationLoader
 * @see com.sun.star.lang.XServiceInfo
 * @see ifc.loader._XImplementationLoader
@@ -89,4 +89,3 @@ public class JavaComponentLoader extends TestCase {
         return tEnv;
     } // finish method createTestEnvironment
 }
-

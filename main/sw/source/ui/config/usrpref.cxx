@@ -658,5 +658,3 @@ void SwWebColorConfig::Load()
 		}
 	}
 }
-
-

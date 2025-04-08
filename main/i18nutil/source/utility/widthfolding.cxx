@@ -293,4 +293,3 @@ oneToOneMapping& widthfolding::gethalfKana2fullKanaTable()
 }
 
 } } } }
-

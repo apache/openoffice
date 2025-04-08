@@ -63,4 +63,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_IFACECOMPARE_HXX_
-

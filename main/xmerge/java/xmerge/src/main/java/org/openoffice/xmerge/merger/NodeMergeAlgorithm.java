@@ -45,4 +45,3 @@ public interface NodeMergeAlgorithm {
      */
     public void merge(Node originalNode, Node modifyNode);
 }
-

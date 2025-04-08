@@ -226,4 +226,3 @@ class Cx_CheckStar : public Cx_Base
 
 
 #endif
-

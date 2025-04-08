@@ -63,5 +63,3 @@ public class SectionLabel extends SectionObject
         return a;
     }
 }
-
-

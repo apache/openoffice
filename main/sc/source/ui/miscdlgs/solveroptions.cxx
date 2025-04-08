@@ -505,4 +505,3 @@ double ScSolverValueDialog::GetValue() const
                             &eStatus, NULL );
     return fValue;
 }
-

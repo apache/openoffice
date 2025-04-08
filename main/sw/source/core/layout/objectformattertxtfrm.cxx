@@ -863,4 +863,3 @@ bool SwObjectFormatterTxtFrm::_AtLeastOneObjIsTmpConsiderWrapInfluence()
 
     return bRet;
 }
-

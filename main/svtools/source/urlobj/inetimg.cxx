@@ -139,4 +139,3 @@ sal_Bool INetImage::Read( SvStream& rIStm, sal_uLong nFormat )
 	}
 	return bRet;
 }
-

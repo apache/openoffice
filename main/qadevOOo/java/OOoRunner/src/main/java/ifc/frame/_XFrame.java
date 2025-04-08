@@ -68,7 +68,7 @@ import lib.TestEnvironment;
 *  <li> <code>'Desktop'</code> (of type <code>Object</code>):
 *  if exsists, then desktop component is tested</li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.frame.XFrame
 */
 public class _XFrame extends MultiMethodTest {
@@ -415,7 +415,7 @@ public class _XFrame extends MultiMethodTest {
         TestFrameActionListener listener = new TestFrameActionListener();
 
         if (tEnv.getTestCase().getObjectName().equals("Desktop")) {
-            log.println("Desktop cann't change context");
+            log.println("Desktop can't change context");
             tRes.tested("contextChanged()", true) ;
             return;
         }

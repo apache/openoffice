@@ -39,4 +39,3 @@ import lib.MultiPropertyTest;
 public class _DatabaseListBox extends MultiPropertyTest {
     // these properties don't needed in special code.
 }
-

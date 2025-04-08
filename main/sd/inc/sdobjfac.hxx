@@ -52,4 +52,3 @@ extern SdObjectFactory aSdObjectFactory;
 
 
 #endif // _SDOBJFAC_HXX
-

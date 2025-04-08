@@ -39,4 +39,3 @@ import lib.MultiPropertyTest;
 public class _TextFieldMaster extends MultiPropertyTest {
 
 }
-

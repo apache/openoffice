@@ -94,4 +94,3 @@ public:
                                                                         ::com::sun::star::uno::XComponentContext > &xContext)
     throw( ::com::sun::star::uno::Exception );
 #endif
-

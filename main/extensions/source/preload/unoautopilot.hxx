@@ -99,5 +99,3 @@ namespace preload
 //.........................................................................
 
 #endif // _EXTENSIONS_PRELOAD_UNOAUTOPILOT_HXX_
-
-

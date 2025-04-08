@@ -112,8 +112,3 @@ SfxMapUnit __EXPORT ScMessagePool::GetMetric( sal_uInt16 nWhich ) const
 	else
 		return SFX_MAPUNIT_100TH_MM;
 }
-
-
-
-
-

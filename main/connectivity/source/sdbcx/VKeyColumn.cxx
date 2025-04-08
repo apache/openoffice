@@ -115,7 +115,3 @@ void OKeyColumn::construct()
 	registerProperty(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_RELATEDCOLUMN),	PROPERTY_ID_RELATEDCOLUMN,	nAttrib,&m_ReferencedColumn,	::getCppuType(static_cast< ::rtl::OUString*>(NULL)));
 }
 // -----------------------------------------------------------------------------
-
-
-
-

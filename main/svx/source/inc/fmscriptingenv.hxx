@@ -92,4 +92,3 @@ namespace svxform
 //........................................................................
 
 #endif // SVX_FMSCRIPTINGENV_HXX
-

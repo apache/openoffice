@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include <cuires.hrc>
 #include "helpid.hrc"
 
@@ -193,7 +191,7 @@ ModalDialog RID_SVX_MDLG_HANGULHANJA_OPT
 	SVLook = TRUE ;
 	HelpId = HID_HANGULHANJA_OPT_DLG ;
 	Pos = MAP_APPFONT ( 0, 0 ) ;
-	Size = MAP_APPFONT ( HHO_DLGWIDTH, HHx_DLGHIGHT ) ;
+	Size = MAP_APPFONT ( HHO_DLGWIDTH, HHx_DLGHEIGHT ) ;
 	Text [ en-US ] = "Hangul/Hanja Options" ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
@@ -338,7 +336,7 @@ ModalDialog RID_SVX_MDLG_HANGULHANJA_EDIT
 	SVLook = TRUE ;
 	HelpId = HID_HANGULHANJA_EDIT_DLG ;
 	Pos = MAP_APPFONT ( 0, 0 ) ;
-	Size = MAP_APPFONT ( HHE_DLGWIDTH, HHx_DLGHIGHT ) ;
+	Size = MAP_APPFONT ( HHE_DLGWIDTH, HHx_DLGHEIGHT ) ;
 	Text [ en-US ] = "Edit Custom Dictionary" ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;

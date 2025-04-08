@@ -336,4 +336,3 @@ public:
 	void		SetHideFieldTips(sal_Bool bSet) {bHideFieldTips = bSet;}
 };
 #endif
-

@@ -119,5 +119,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // _COMPHELPER_COMPOSEDPROPS_HXX_
-
-

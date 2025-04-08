@@ -260,4 +260,3 @@ private:
 
 
 #endif // SC_FILTDLG_HXX
-

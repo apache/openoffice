@@ -41,4 +41,3 @@ struct CuiResMgr
 #define CUI_RESSSTR(i)	String(ResId(i,CUI_MGR()))
 
 #endif
-

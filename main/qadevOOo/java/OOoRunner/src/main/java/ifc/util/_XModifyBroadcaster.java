@@ -41,7 +41,7 @@ import com.sun.star.util.XModifyListener;
 * listeners are called only in case of
 * interaction with UI. <p>
 *
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.util.XModifyBroadcaster
 */
 public class _XModifyBroadcaster extends MultiMethodTest {
@@ -79,4 +79,3 @@ public class _XModifyBroadcaster extends MultiMethodTest {
         tRes.tested("removeModifyListener()", true);
     }
 }// finish class _XModifyBroadcaster
-

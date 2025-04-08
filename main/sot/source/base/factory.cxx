@@ -357,7 +357,3 @@ sal_Bool SotFactory::Is( const SotFactory * pSuperCl ) const
     }
     return sal_False;
 }
-
-
-
-

@@ -142,5 +142,3 @@ public class _XCheckBox extends MultiMethodTest {
     }
 
 }
-
-

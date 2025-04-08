@@ -50,5 +50,3 @@ public class _XBoundComponent extends MultiMethodTest {
     }
 
 } //EOF of XBoundComponent
-
-

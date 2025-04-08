@@ -37,4 +37,3 @@ namespace sfx2
 } // end of namespace sfx2
 
 #endif
-

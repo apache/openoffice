@@ -196,4 +196,3 @@ namespace util
   }
 
 } // namespace util
-

@@ -34,4 +34,3 @@
 #define I18NPOOL_DLLPRIVATE SAL_DLLPRIVATE
                                                                                                                              
 #endif /* INCLUDED_I18NPOOL_I18NPOOLDLLAPI_H */
-

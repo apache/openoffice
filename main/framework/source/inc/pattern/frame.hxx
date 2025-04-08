@@ -124,4 +124,3 @@ inline sal_Bool closeIt(const css::uno::Reference< css::uno::XInterface >& xReso
 } // namespace framework
 
 #endif // __FRAMEWORK_PATTERN_FRAME_HXX_
-

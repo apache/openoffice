@@ -52,4 +52,3 @@ public class _XDataPilotTablesSupplier extends MultiMethodTest {
 
 
 } // EOC _XDataPilotTablesSupplier
-

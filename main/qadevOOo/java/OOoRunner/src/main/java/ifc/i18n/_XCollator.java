@@ -43,7 +43,7 @@ import com.sun.star.lang.Locale;
 *  <li><code> loadCollatorAlgorithmWithEndUserOption()</code></li>
 *  <li><code> listCollatorOptions()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.i18n.XCollator
 */
 public class _XCollator extends MultiMethodTest {
@@ -423,4 +423,3 @@ public class _XCollator extends MultiMethodTest {
     }
 
 }
-

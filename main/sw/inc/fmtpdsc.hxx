@@ -97,4 +97,3 @@ inline const SwFmtPageDesc &SwFmt::GetPageDesc(sal_Bool bInP) const
 	{ return aSet.GetPageDesc(bInP); }
 
 #endif
-

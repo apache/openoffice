@@ -445,5 +445,3 @@ inline sal_Bool coerce_assign(
 }
 
 }
-
-

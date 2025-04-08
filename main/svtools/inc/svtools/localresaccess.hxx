@@ -36,7 +36,7 @@ namespace svt
 	//=========================================================================
 	//= OLocalResourceAccess
 	//=========================================================================
-	/** helper class for acessing local resources
+	/** helper class for accessing local resources
 	*/
 	class OLocalResourceAccess : public Resource
 	{
@@ -75,4 +75,3 @@ namespace svt
 //.........................................................................
 
 #endif // _SVTOOLS_LOCALRESACCESS_HXX_
-

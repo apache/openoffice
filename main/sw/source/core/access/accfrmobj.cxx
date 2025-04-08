@@ -440,4 +440,3 @@ const SwFrm* SwAccessibleChild::GetParent( const sal_Bool bInPagePreview ) const
 }
 
 } } // eof of namespace sw::access
-

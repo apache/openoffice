@@ -863,4 +863,3 @@ private:
 } // namespace store
 
 #endif /* !_STORE_STORDATA_HXX_ */
-

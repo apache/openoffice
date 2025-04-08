@@ -322,4 +322,3 @@ namespace toolkit
 {
     return *( new ::toolkit::GridColumn );
 }
-

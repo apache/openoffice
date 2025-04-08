@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -54,7 +54,7 @@ else {
 sub extendProgName($) {
 	my $_extension = shift;
 	my $_result;
-	
+
 	if ($ENV{GUI} eq "WNT") {
 		$_result = $progname . $_extension;
 	}
@@ -127,21 +127,21 @@ sub registerServices() {
 			$comment = $comment . "\tcouldn't unregister service " . $service . "\n";
 			$state = 0;
 		}
-		
-		
+
+
 		# register the service and ensure that it is reachable
 		$rc = registerService($services{$service}, $service . '.rdb');
 		if(!$rc) {
 			$comment = $comment . "\tcouldn't register service " . $service . "\n";
 			$state = 0;
 		}
-		
+
 		$rc = testForServices([$service], "-env:UNO_SERVICES=" . $service . ".rdb", $testexe);
 		if(!$rc) {
 			$comment = $comment . "\tcouldn't reach service " . $service . "\n";
 			$state = 0;
 		}
-		
+
 		# memorize all services
 		if (length($allservices_rdbs)) {
 			$allservices_rdbs = $allservices_rdbs . " ";
@@ -165,7 +165,7 @@ sub testBeneathExe() {
 	my $service = 'com.sun.star.reflection.CoreReflection';
 	my $_testexe;
 
-    my @_exes = (extendProgName(".exe"), 
+    my @_exes = (extendProgName(".exe"),
 				 extendProgName(".Exe"),
 				 extendProgName(".bin"),
 				 extendProgName(".Bin"));
@@ -239,7 +239,7 @@ sub testAllAvailable() {
 	# test that all services are reachable through different rdbs
 	# change the directory to ensure, that all paths become expanded
 	chdir "..";
-	
+
 	$rc = testForServices(\@allservices, "-env:UNO_SERVICES=" . $allservices_rdbs, $testexe);
 	if (!$rc) {
 		$comment = $comment . "\tmulti rdb test not passed\n";
@@ -268,6 +268,3 @@ else {
 	print "Commnent:\n", $comment, "\n";
 }
 print "**************************\n";
-
-
-

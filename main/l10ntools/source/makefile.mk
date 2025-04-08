@@ -199,4 +199,3 @@ $(MISC)$/%_yy.c : %lex.l
 $(OBJ)$/src_yy_wrapper.obj: $(MISC)$/src_yy.c
 $(OBJ)$/cfg_yy_wrapper.obj: $(MISC)$/cfg_yy.c
 $(OBJ)$/xrm_yy_wrapper.obj: $(MISC)$/xrm_yy.c
-

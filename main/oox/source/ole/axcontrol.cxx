@@ -629,7 +629,7 @@ sal_uInt32 ComCtlModelBase::getDataPartId() const
         case COMCTL_VERSION_50: return mnDataPartId5;
         case COMCTL_VERSION_60: return mnDataPartId6;
     }
-    OSL_ENSURE( false, "ComCtlObjectBase::getDataPartId - unxpected version" );
+    OSL_ENSURE( false, "ComCtlObjectBase::getDataPartId - unexpected version" );
     return SAL_MAX_UINT32;
 }
 
@@ -1591,7 +1591,7 @@ bool AxContainerModelBase::importBinaryModel( BinaryInputStream& rInStrm )
     aReader.skipUndefinedProperty();
     aReader.readIntProperty< sal_uInt32 >( mnBackColor );
     aReader.readIntProperty< sal_uInt32 >( mnTextColor );
-    aReader.skipIntProperty< sal_uInt32 >(); // next availbale control ID
+    aReader.skipIntProperty< sal_uInt32 >(); // next available control ID
     aReader.skipUndefinedProperty();
     aReader.skipUndefinedProperty();
     aReader.readIntProperty< sal_uInt32 >( mnFlags );

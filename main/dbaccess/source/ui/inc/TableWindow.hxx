@@ -201,5 +201,3 @@ namespace dbaui
 	};
 }
 #endif //DBAUI_TABLEWINDOW_HXX
-
-

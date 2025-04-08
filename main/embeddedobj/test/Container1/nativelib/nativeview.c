@@ -179,4 +179,3 @@ static LRESULT APIENTRY NativeViewWndProc(
     return CallWindowProc( hFuncPtr, hWnd, uMsg, wParam, lParam);
 }
 #endif
-

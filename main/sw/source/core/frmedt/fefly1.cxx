@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -60,7 +58,7 @@
 #include <ndtxt.hxx>
 #include <edimp.hxx>
 #include <swtable.hxx>
-#include <mvsave.hxx>		// Strukturen zum Sichern beim Move/Delete
+#include <mvsave.hxx> // Strukturen zum Sichern beim Move/Delete
 #include <ndgrf.hxx>
 #include <flyfrms.hxx>
 #include <flypos.hxx>
@@ -110,22 +108,22 @@ sal_Bool lcl_SetNewFlyPos( const SwNode& rNode, SwFmtAnchor& rAnchor,
 	}
 	else
 	{
-        const SwCntntNode *pCntNd = rNode.GetCntntNode();
+		const SwCntntNode *pCntNd = rNode.GetCntntNode();
 		const SwCntntFrm* pCFrm = pCntNd ? pCntNd->getLayoutFrm( pCntNd->GetDoc()->GetCurrentLayout(), &rPt, 0, sal_False ) : 0;
 		const SwPageFrm *pPg = pCFrm ? pCFrm->FindPageFrm() : 0;
 
 		rAnchor.SetPageNum( pPg ? pPg->GetPhyPageNum() : 1 );
-        rAnchor.SetType( FLY_AT_PAGE );
+		rAnchor.SetType( FLY_AT_PAGE );
 	}
 	return bRet;
 }
 
 sal_Bool lcl_FindAnchorPos(
-    SwEditShell& rEditShell,
-    SwDoc& rDoc,
-    const Point& rPt,
-    const SwFrm& rFrm,
-    SfxItemSet& rSet )
+	SwEditShell& rEditShell,
+	SwDoc& rDoc,
+	const Point& rPt,
+	const SwFrm& rFrm,
+	SfxItemSet& rSet )
 {
 	sal_Bool bRet = sal_True;
 	SwFmtAnchor aNewAnch( (SwFmtAnchor&)rSet.Get( RES_ANCHOR ) );
@@ -136,13 +134,13 @@ sal_Bool lcl_FindAnchorPos(
 	Point aTmpPnt( rPt );
 	switch( nNew )
 	{
-    case FLY_AS_CHAR:  // sollte der nicht auch mit hinein?
-    case FLY_AT_PARA:
-    case FLY_AT_CHAR: // LAYER_IMPL
-        {
-			//Ausgehend von der linken oberen Ecke des Fly den
-			//dichtesten CntntFrm suchen.
-            const SwFrm* pFrm = rFrm.IsFlyFrm() ? ((SwFlyFrm&)rFrm).GetAnchorFrm()
+	case FLY_AS_CHAR: // sollte der nicht auch mit hinein?
+	case FLY_AT_PARA:
+	case FLY_AT_CHAR: // LAYER_IMPL
+		{
+			// Ausgehend von der linken oberen Ecke des Fly den
+			// dichtesten CntntFrm suchen.
+			const SwFrm* pFrm = rFrm.IsFlyFrm() ? ((SwFlyFrm&)rFrm).GetAnchorFrm()
 												: &rFrm;
 			pNewAnch = ::FindAnchor( pFrm, aTmpPnt );
 			if( pNewAnch->IsProtected() )
@@ -151,9 +149,9 @@ sal_Bool lcl_FindAnchorPos(
 				break;
 			}
 
-            SwPosition aPos( *((SwCntntFrm*)pNewAnch)->GetNode() );
-            if ((FLY_AT_CHAR == nNew) || (FLY_AS_CHAR == nNew))
-            {
+			SwPosition aPos( *((SwCntntFrm*)pNewAnch)->GetNode() );
+			if ((FLY_AT_CHAR == nNew) || (FLY_AS_CHAR == nNew))
+			{
                 // es muss ein TextNode gefunden werden, denn nur in diesen
                 // ist ein Inhaltsgebundene Frames zu verankern
                 SwCrsrMoveState aState( MV_SETONLYTEXT );
@@ -180,8 +178,8 @@ sal_Bool lcl_FindAnchorPos(
 
 	case FLY_AT_FLY: // LAYER_IMPL
 		{
-			//Ausgehend von der linken oberen Ecke des Fly den
-			//dichtesten SwFlyFrm suchen.
+			// Ausgehend von der linken oberen Ecke des Fly den
+			// dichtesten SwFlyFrm suchen.
 			SwCrsrMoveState aState( MV_SETONLYTEXT );
 			SwPosition aPos( rDoc.GetNodes() );
 			aTmpPnt.X() -= 1;					//nicht im Fly landen!!
@@ -199,10 +197,10 @@ sal_Bool lcl_FindAnchorPos(
 			}
 		}
 
-        aNewAnch.SetType( nNew = FLY_AT_PAGE );
+		aNewAnch.SetType( nNew = FLY_AT_PAGE );
 		// no break
 
-    case FLY_AT_PAGE:
+	case FLY_AT_PAGE:
 		pNewAnch = rFrm.FindPageFrm();
 		aNewAnch.SetPageNum( pNewAnch->GetPhyPageNum() );
 		break;
@@ -219,9 +217,9 @@ sal_Bool lcl_FindAnchorPos(
 //! also used in unoframe.cxx
 //
 sal_Bool lcl_ChkAndSetNewAnchor(
-    SwEditShell& rEditShell,
-    const SwFlyFrm& rFly,
-    SfxItemSet& rSet )
+	SwEditShell& rEditShell,
+	const SwFlyFrm& rFly,
+	SfxItemSet& rSet )
 {
 	const SwFrmFmt& rFmt = *rFly.GetFmt();
 	const SwFmtAnchor &rOldAnch = rFmt.GetAnchor();
@@ -235,8 +233,8 @@ sal_Bool lcl_ChkAndSetNewAnchor(
 	SwDoc* pDoc = (SwDoc*)rFmt.GetDoc();
 
 #ifdef DBG_UTIL
-    ASSERT( !(nNew == FLY_AT_PAGE &&
-        (FLY_AT_PARA==nOld || FLY_AT_CHAR==nOld || FLY_AS_CHAR==nOld ) &&
+	ASSERT( !(nNew == FLY_AT_PAGE &&
+		(FLY_AT_PARA==nOld || FLY_AT_CHAR==nOld || FLY_AS_CHAR==nOld ) &&
 		pDoc->IsInHeaderFooter( rOldAnch.GetCntntAnchor()->nNode )),
 			"Unerlaubter Ankerwechsel in Head/Foot." );
 #endif
@@ -252,11 +250,11 @@ void SwFEShell::SelectFlyFrm( SwFlyFrm& rFrm, sal_Bool bNew )
 	//	!!Rahmen immer selektieren, wenn sie nicht selektiert sind.
 	// 	- Es kann ein neuer 'alter' sein weil der Anker gewechselt wurde.
 	//	- 'alte' Rahmen sind vorher immer selektiert denn sonst wird nix
-	//	  an ihnen veraendert.
+	//	  an ihnen verändert.
 	//	Der Rahmen darf nicht per Dokumentposition selektiert werden, weil er
 	//	auf jedenfall selektiert sein muss!
-    SwViewImp *pImpl = Imp();
-    if( GetWin() && (bNew || !pImpl->GetDrawView()->AreObjectsMarked()) )
+	SwViewImp *pImpl = Imp();
+	if( GetWin() && (bNew || !pImpl->GetDrawView()->AreObjectsMarked()) )
 	{
 		ASSERT( rFrm.IsFlyFrm(), "SelectFlyFrm will einen Fly" );
 
@@ -266,20 +264,20 @@ void SwFEShell::SelectFlyFrm( SwFlyFrm& rFrm, sal_Bool bNew )
 			return;
 
 		//Damit der Anker ueberhaupt noch gepaintet wird.
-        if( rFrm.IsFlyInCntFrm() && rFrm.GetAnchorFrm() )
-             rFrm.GetAnchorFrm()->SetCompletePaint();
+		if( rFrm.IsFlyInCntFrm() && rFrm.GetAnchorFrm() )
+			rFrm.GetAnchorFrm()->SetCompletePaint();
 
-        // --> OD 2004-06-11 #i28701# - no format at all.
-//        //Hier wurde immer kalkuliert. Leider ist der Sonderfall Fly in Fly mit
-//        //Spalten u.U. sehr kritisch wenn der innenliegende zuerst formatiert
-//        //wird. Um kein Risiko einzugehen entschaerfen wir nur diesen Sonderfall.
-//        if( !rFrm.GetAnchorFrm()->IsInFly() )
-//            rFrm.Calc();
+		// --> OD 2004-06-11 #i28701# - no format at all.
+//		//Hier wurde immer kalkuliert. Leider ist der Sonderfall Fly in Fly mit
+//		//Spalten u.U. sehr kritisch wenn der innenliegende zuerst formatiert
+//		//wird. Um kein Risiko einzugehen entschärfen wir nur diesen Sonderfall.
+//		if( !rFrm.GetAnchorFrm()->IsInFly() )
+//		rFrm.Calc();
 
-        if( pImpl->GetDrawView()->AreObjectsMarked() )
-            pImpl->GetDrawView()->UnmarkAll();
+		if( pImpl->GetDrawView()->AreObjectsMarked() )
+			pImpl->GetDrawView()->UnmarkAll();
 
-        pImpl->GetDrawView()->MarkObj( rFrm.GetVirtDrawObj(),
+		pImpl->GetDrawView()->MarkObj( rFrm.GetVirtDrawObj(),
                                       pImpl->GetPageView(), sal_False, sal_False );
 		KillPams();
 		ClearMark();
@@ -1038,8 +1036,8 @@ void SwFEShell::SetPageObjsNewPage( SvPtrarr& rFillArr, int nOffset )
 			SwFmtAnchor aNewAnchor( pFmt->GetAnchor() );
             if ((FLY_AT_PAGE != aNewAnchor.GetAnchorId()) ||
 				0 >= ( nNewPage = aNewAnchor.GetPageNum() + nOffset ) )
-				// chaos::Anchor wurde veraendert oder ungueltige SeitenNummer,
-				// also nicht veraendern !!
+				// chaos::Anchor wurde verändert oder ungültige SeitenNummer,
+				// also nicht verändern !!
 				continue;
 
 			if( sal_uInt16(nNewPage) > nMaxPage )
@@ -1104,8 +1102,8 @@ sal_Bool SwFEShell::GetFlyFrmAttr( SfxItemSet &rSet ) const
 	if( !rSet.Set( pFly->GetFmt()->GetAttrSet(), sal_True ) )
 		return sal_False;
 
-	//Und die Attribute durchschaufeln. Unerlaubte Attribute entfernen, dann
-	//alle restlichen Attribute besorgen und eintragen.
+	// Und die Attribute durchschaufeln. Unerlaubte Attribute entfernen, dann
+	// alle restlichen Attribute besorgen und eintragen.
 	const SfxPoolItem* pItem;
 	if( SFX_ITEM_SET == rSet.GetItemState( RES_ANCHOR, sal_False, &pItem ) )
 	{
@@ -1115,7 +1113,7 @@ sal_Bool SwFEShell::GetFlyFrmAttr( SfxItemSet &rSet ) const
         if ( FLY_AT_PAGE != eType )
         {
             // OD 12.11.2003 #i22341# - content anchor of anchor item is needed.
-            // Thus, don't overwrite anchor item by default contructed anchor item.
+            // Thus, don't overwrite anchor item by default constructed anchor item.
             //rSet.Put( SwFmtAnchor( eType ) );
             if ( FLY_AS_CHAR == eType )
             {
@@ -1633,7 +1631,7 @@ const uno::Reference < embed::XEmbeddedObject > SwFEShell::GetOleRef() const
             xObj = pNd->GetOLEObj().GetOleRef();
     }
     return xObj;
-}    
+}
 
 
 String SwFEShell::GetUniqueGrfName() const
@@ -2081,7 +2079,7 @@ void SwFEShell::GetConnectableFrmFmts(SwFrmFmt & rFmt,
         {
             String  aString = (*aIt)->GetName();
 
-            /* rFmt is not a vaild successor or predecessor of
+            /* rFmt is not a valid successor or predecessor of
                itself */
             if (aString != rReference && aString != rFmt.GetName())
             {
@@ -2208,7 +2206,7 @@ void SwFEShell::SetObjDescription( const String& rDescription )
 
 void SwFEShell::AlignFormulaToBaseline( const uno::Reference < embed::XEmbeddedObject >& xObj, SwFlyFrm * pFly )
 {
-#if OSL_DEBUG_LEVEL > 1    
+#if OSL_DEBUG_LEVEL > 1
     SvGlobalName aCLSID( xObj->getClassID() );
     const bool bStarMath = ( SotExchange::IsMath( aCLSID ) != 0 );
     ASSERT( bStarMath, "AlignFormulaToBaseline should only be called for Math objects" );
@@ -2226,7 +2224,7 @@ void SwFEShell::AlignFormulaToBaseline( const uno::Reference < embed::XEmbeddedO
     if ( pFly && pFrmFmt && FLY_AS_CHAR == pFrmFmt->GetAnchor().GetAnchorId() )
     {
         // get baseline from Math object
-        uno::Any aBaseline;  
+        uno::Any aBaseline;
         if( svt::EmbeddedObjectRef::TryRunningState( xObj ) )
         {
             uno::Reference < beans::XPropertySet > xSet( xObj->getComponent(), uno::UNO_QUERY );
@@ -2259,23 +2257,22 @@ void SwFEShell::AlignFormulaToBaseline( const uno::Reference < embed::XEmbeddedO
         SwFmtVertOrient aVert( rVert );
         aVert.SetPos( -nBaseline );
         aVert.SetVertOrient( com::sun::star::text::VertOrientation::NONE );
-        
+
         pFrmFmt->LockModify();
         pFrmFmt->SetFmtAttr( aVert );
         pFrmFmt->UnlockModify();
         pFly->InvalidatePos();
-    }
+	}
 }
-
 
 void SwFEShell::AlignAllFormulasToBaseline()
 {
-    StartAllAction();
+	StartAllAction();
 
-    SwStartNode *pStNd;
-    SwNodeIndex aIdx( *GetNodes().GetEndOfAutotext().StartOfSectionNode(), 1 );
-    while ( 0 != (pStNd = aIdx.GetNode().GetStartNode()) )
-    {
+	SwStartNode *pStNd;
+	SwNodeIndex aIdx( *GetNodes().GetEndOfAutotext().StartOfSectionNode(), 1 );
+	while ( 0 != (pStNd = aIdx.GetNode().GetStartNode()) )
+	{
         ++aIdx;
         SwOLENode *pOleNode = dynamic_cast< SwOLENode * >( &aIdx.GetNode() );
         if ( pOleNode )
@@ -2287,10 +2284,12 @@ void SwFEShell::AlignAllFormulasToBaseline()
                 if ( SotExchange::IsMath( aCLSID ) )
                     AlignFormulaToBaseline( xObj );
             }
-        }
+		}
 
-        aIdx.Assign( *pStNd->EndOfSectionNode(), + 1 );
-    }
+		aIdx.Assign( *pStNd->EndOfSectionNode(), + 1 );
+	}
 
-    EndAllAction();
+	EndAllAction();
 }
+
+/* vim: set noet sw=4 ts=4: */

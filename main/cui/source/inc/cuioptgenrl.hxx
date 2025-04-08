@@ -119,5 +119,3 @@ public:
 };
 
 #endif // #ifndef _SVX_CUIOPTGENRL_HXX
-
-

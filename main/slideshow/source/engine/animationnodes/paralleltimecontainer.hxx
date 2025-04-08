@@ -56,4 +56,3 @@ private:
 } // namespace slideshow
 
 #endif /* INCLUDED_SLIDESHOW_PARALLELTIMECONTAINER_HXX */
-

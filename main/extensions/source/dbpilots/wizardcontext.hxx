@@ -85,4 +85,3 @@ namespace dbp
 //.........................................................................
 
 #endif // _EXTENSIONS_DBP_WIZARDCONTEXT_HXX_
-

@@ -193,5 +193,3 @@ private:
 
 
 #endif  //_VOS_TIMER_HXX_
-
-

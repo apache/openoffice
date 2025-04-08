@@ -37,76 +37,76 @@
 <bookmark xml-lang="en-US" branch="hid/.uno:ControlProperties" id="bm_id9308186" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:ControlProperties" id="bm_id3150616" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_FM_PROPDLG_TABCTR" id="bm_id9469283" localize="false"/>
-<paragraph role="heading" id="hd_id3147102" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/01170100.xhp" name="Control Properties">Control Properties</link></paragraph>
-<paragraph role="paragraph" id="par_id3145345" xml-lang="en-US" l10n="U" oldref="2"><variable id="kontroll"><ahelp hid=".uno:ControlProperties">Opens a dialog for editing the properties of a selected control.</ahelp>
+<paragraph role="heading" id="hd_id3147102" xml-lang="en-US" level="1" l10n="U"><link href="text/shared/02/01170100.xhp" name="Control Properties">Control Properties</link></paragraph>
+<paragraph role="paragraph" id="par_id3145345" xml-lang="en-US" l10n="U"><variable id="kontroll"><ahelp hid=".uno:ControlProperties">Opens a dialog for editing the properties of a selected control.</ahelp>
 </variable></paragraph>
 </section>
 <section id="howtoget">
 <embed href="text/shared/00/00040501.xhp#controleigenschaften"/>
 </section>
-<paragraph role="note" id="par_id3157910" xml-lang="en-US" l10n="U" oldref="17"><variable id="hinweis">You can only call the <emph>Properties</emph> dialog when in the Design mode with a control selected. 
+<paragraph role="note" id="par_id3157910" xml-lang="en-US" l10n="U"><variable id="hinweis">You can only call the <emph>Properties</emph> dialog when in the Design mode with a control selected. 
 </variable></paragraph>
 <section id="spezialfelder">
-<paragraph role="paragraph" id="par_id3153760" xml-lang="en-US" l10n="U" oldref="3">If you enter data in the <emph>Properties</emph> dialog, note that multiline input is possible for certain drop-down combo boxes. This concerns all fields in which an SQL statement can be entered, as well as the properties of text boxes or label fields. You can open these fields and enter text in the opened list. The following shortcut keys are valid:</paragraph>
+<paragraph role="paragraph" id="par_id3153760" xml-lang="en-US" l10n="U">If you enter data in the <emph>Properties</emph> dialog, note that multiline input is possible for certain drop-down combo boxes. This concerns all fields in which an SQL statement can be entered, as well as the properties of text boxes or label fields. You can open these fields and enter text in the opened list. The following shortcut keys are valid:</paragraph>
 <table id="tbl_id3145315">
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablehead" id="par_id3148686" xml-lang="en-US" l10n="U" oldref="18">Keys</paragraph>
+<paragraph role="tablehead" id="par_id3148686" xml-lang="en-US" l10n="U">Keys</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablehead" id="par_id3155390" xml-lang="en-US" l10n="U" oldref="19">Effects</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3150504" xml-lang="en-US" l10n="U" oldref="4"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Down Arrow</paragraph>
-</tablecell>
-<tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3150944" xml-lang="en-US" l10n="U" oldref="5">Opens the combo box</paragraph>
+<paragraph role="tablehead" id="par_id3155390" xml-lang="en-US" l10n="U">Effects</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3153627" xml-lang="en-US" l10n="U" oldref="6"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Up Arrow</paragraph>
+<paragraph role="tablecontent" id="par_id3150504" xml-lang="en-US" l10n="U"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Down Arrow</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3153063" xml-lang="en-US" l10n="U" oldref="7">Closes the combo box</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3159413" xml-lang="en-US" l10n="U" oldref="8">Shift+Enter</paragraph>
-</tablecell>
-<tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3152811" xml-lang="en-US" l10n="U" oldref="9">Inserts a new line.</paragraph>
+<paragraph role="tablecontent" id="par_id3150944" xml-lang="en-US" l10n="U">Opens the combo box</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3153379" xml-lang="en-US" l10n="U" oldref="10">Up Arrow</paragraph>
+<paragraph role="tablecontent" id="par_id3153627" xml-lang="en-US" l10n="U"><switchinline select="sys"><caseinline select="MAC">Option</caseinline><defaultinline>Alt</defaultinline></switchinline>+Up Arrow</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="11">Places the cursor into the previous line.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3152933" xml-lang="en-US" l10n="U" oldref="12">Down Arrow</paragraph>
-</tablecell>
-<tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3151041" xml-lang="en-US" l10n="U" oldref="13">Places the cursor into the next line.</paragraph>
+<paragraph role="tablecontent" id="par_id3153063" xml-lang="en-US" l10n="U">Closes the combo box</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3153178" xml-lang="en-US" l10n="U" oldref="14">Enter</paragraph>
+<paragraph role="tablecontent" id="par_id3159413" xml-lang="en-US" l10n="U">Shift+Enter</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3147228" xml-lang="en-US" l10n="U" oldref="15">Completes the input in the field and places the cursor into the next field.</paragraph>
+<paragraph role="tablecontent" id="par_id3152811" xml-lang="en-US" l10n="U">Inserts a new line.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153379" xml-lang="en-US" l10n="U">Up Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153192" xml-lang="en-US" l10n="U">Places the cursor into the previous line.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152933" xml-lang="en-US" l10n="U">Down Arrow</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151041" xml-lang="en-US" l10n="U">Places the cursor into the next line.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153178" xml-lang="en-US" l10n="U">Enter</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147228" xml-lang="en-US" l10n="U">Completes the input in the field and places the cursor into the next field.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="U" oldref="16">As with list boxes or combo boxes, you can open or close the list with a mouse click at the arrow on the right end of the field. However, the input here can be entered either in the opened list or in the top text field. An exception is the properties that expect a list representation, for example, the property <emph>List Entries</emph>, which can be set for the control fields <emph>List Box</emph> and <emph>Combo Box</emph>. Here, you can only edit the entries when the field is opened.</paragraph>
+<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="U">As with list boxes or combo boxes, you can open or close the list with a mouse click at the arrow on the right end of the field. However, the input here can be entered either in the opened list or in the top text field. An exception is the properties that expect a list representation, for example, the property <emph>List Entries</emph>, which can be set for the control fields <emph>List Box</emph> and <emph>Combo Box</emph>. Here, you can only edit the entries when the field is opened.</paragraph>
 </section>
 <embed href="text/shared/02/01170101.xhp#allgemein"/>
 <embed href="text/shared/02/01170102.xhp#daten"/>

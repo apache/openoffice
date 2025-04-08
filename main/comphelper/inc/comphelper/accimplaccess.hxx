@@ -158,5 +158,3 @@ namespace comphelper
 
 
 #endif // COMPHELPER_ACCIMPLACCESS_HXX
-
-

@@ -187,5 +187,3 @@
 #define SID_SCATTR_PAGE_SCALETO         ATTR_PAGE_SCALETO
 
 #endif
-
-

@@ -36,7 +36,7 @@ import com.sun.star.awt.XDialog;
 *  <li><code> execute()</code></li>
 *  <li><code> endExecute()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * After test completion object environment has to be recreated.
 * @see com.sun.star.awt.XDialog
 */
@@ -150,5 +150,3 @@ public class _XDialog extends MultiMethodTest {
         disposeEnvironment() ;
     }
 }
-
-

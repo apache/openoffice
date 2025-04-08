@@ -24,4 +24,3 @@
 $(eval $(call gb_Ant_Ant,jreproperties,$(SRCDIR)/jvmfwk/java/jreproperties/build.xml,nodeliver))
 
 # vim: set noet sw=4 ts=4:
-

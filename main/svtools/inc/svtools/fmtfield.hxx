@@ -343,4 +343,3 @@ protected:
 };
 
 #endif // _FMTFIELD_HXX_
-

@@ -881,8 +881,3 @@ ScHeaderSelectionEngine::ScHeaderSelectionEngine( Window* pWindow, ScHeaderFunct
 	SetSelectionMode( MULTIPLE_SELECTION );
 	EnableDrag( sal_False );
 }
-
-
-
-
-

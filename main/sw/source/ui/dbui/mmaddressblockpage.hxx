@@ -324,5 +324,3 @@ public:
     ~SwAssignFieldsDialog();
 };            
 #endif
-
-

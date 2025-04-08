@@ -643,4 +643,3 @@ extern "C" void SAL_CALL createRegistryInfo_StringRepresentation()
             comp_StringRepresentation::_create
         );
 }
-

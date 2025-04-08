@@ -48,4 +48,3 @@ namespace dbaxml
 // -----------------------------------------------------------------------------
 
 #endif // DBA_XMLCONNECTIONRESOURCE_HXX_INCLUDED
-

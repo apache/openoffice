@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 package complex.loadAllDocuments;
 
@@ -36,9 +35,8 @@ import com.sun.star.uno.AnyConverter;
 
 //import java.lang.*;
 
-
 /**
- * Implemets a simple interaction handler,
+ * Implements a simple interaction handler,
  * which can abort all incoming interactions only ... but make it possible to
  * log it. So it can be used for debug and test purposes.
  */
@@ -55,7 +53,7 @@ public class InteractionHandler implements XInteractionHandler
     // ____________________
 
     /**
-     * @member  m_aRequest      the origianl interaction request
+     * @member  m_aRequest      the original interaction request
      * safed for later analyzing
      * @member  m_bWasUsed      true if the interaction handler was used
      * @member  m_nTry          count using of RETRY continuations
@@ -67,7 +65,7 @@ public class InteractionHandler implements XInteractionHandler
 
     /**
      * ctor
-     * It's initialize an object of this class with default values
+     * It initializes an object of this class with default values
      * and set the protocol stack. So the outside code can check
      * if this handler was used or not.
      */
@@ -80,9 +78,9 @@ public class InteractionHandler implements XInteractionHandler
     }
 
     /**
-     * Called to start the interaction, because the outside code whish to solve
+     * Called to start the interaction, because the outside code wish to solve
      * a detected problem or to inform the user about something.
-     * We safe the informations here and can handle two well known continuations
+     * We save the information here and can handle two well known continuations
      * only.
      * [abort and retry].
      *
@@ -93,7 +91,7 @@ public class InteractionHandler implements XInteractionHandler
     {
         m_bWasUsed = true;
 
-        // first sav thje original request
+        // first save the original request
         // Our user can use this information later for some debug analyzing
         Object aRequest = xRequest.getRequest();
         synchronized(this)

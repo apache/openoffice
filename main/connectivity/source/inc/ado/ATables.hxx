@@ -58,4 +58,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ADO_TABLES_HXX_
-

@@ -46,4 +46,3 @@ JAVAFILES = OptionsEventHandler.java
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

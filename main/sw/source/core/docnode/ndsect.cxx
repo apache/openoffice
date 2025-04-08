@@ -1476,5 +1476,3 @@ String SwDoc::GetUniqueSectionName( const String* pChkStr ) const
 		return *pChkStr;
 	return aName += String::CreateFromInt32( ++nNum );
 }
-
-

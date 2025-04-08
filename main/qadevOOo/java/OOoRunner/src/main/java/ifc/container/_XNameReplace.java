@@ -49,7 +49,7 @@ import com.sun.star.uno.UnoRuntime;
 *  <li> <code>'XNameReplaceINDEX'</code> : For internal test
 *   usage. Contains current thread number. </li>
 *  <li> Test environment variable <code>'THRCNT'</code> : number
-*   of interface threads running concurently. </li>
+*   of interface threads running concurrently. </li>
 * <ul> <p>
 * XNameReplace needs n ObjectRelations "INSTANCEn" , where n = 1, ..., THRCNT.
 * <p>
@@ -66,7 +66,7 @@ import com.sun.star.uno.UnoRuntime;
 * Some Object-Container can't replace the first that comes belong. So in
 * NAMEREPLACE you can determine a containerobject, which is replaceable. <p>
 *
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * After test completion object environment has to be recreated.
 * @see com.sun.star.container.XNameReplace
 */
@@ -218,5 +218,3 @@ public class _XNameReplace extends MultiMethodTest {
     }
 
 }
-
-

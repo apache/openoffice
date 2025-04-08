@@ -220,4 +220,3 @@ String StructPage::GetSelectedEntryText()
 }
 
 } // formula
-

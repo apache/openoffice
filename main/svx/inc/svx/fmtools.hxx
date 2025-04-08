@@ -227,4 +227,3 @@ typedef ::std::set  < ::com::sun::star::uno::Reference< ::com::sun::star::uno::X
                     > InterfaceBag;
 
 #endif // _SVX_FMTOOLS_HXX
-

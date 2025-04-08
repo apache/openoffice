@@ -36,6 +36,3 @@ _STD_BEGIN
 bad_cast G_Dummy_Inst_bad_cast;
 _STD_END
 #endif // WNT
-
-
-

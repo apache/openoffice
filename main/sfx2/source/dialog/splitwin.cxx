@@ -1360,5 +1360,3 @@ void SfxSplitWindow::SetActiveWindow_Impl( SfxDockingWindow* pWin )
 	pActive = pWin;
 	pWorkWin->SetActiveChild_Impl( this );
 }
-
-

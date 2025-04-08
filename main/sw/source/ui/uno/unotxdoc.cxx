@@ -3193,7 +3193,7 @@ void SAL_CALL SwXTextDocument::render(
                     //
                     // First, we have to export hyperlinks, notes, and outline to pdf.
                     // During this process, additional information required for tagging
-                    // the pdf file are collected, which are evaulated during painting.
+                    // the pdf file are collected, which are evaluated during painting.
                     //
                     SwWrtShell* pWrtShell = pView->IsA(aSwViewTypeId) ?
                                             ((SwView*)pView)->GetWrtShellPtr() :
@@ -4296,5 +4296,3 @@ SwViewOptionAdjust_Impl::AdjustViewOptions(SwPrintData const*const pPrtOptions)
 
 
 /*****************************************************************************/
-
-

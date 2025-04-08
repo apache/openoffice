@@ -200,4 +200,3 @@ ORealDynamicLoader* ODynamicLoader<API>::m_pStaticLoader = NULL;
 }
 
 #endif
-

@@ -149,6 +149,3 @@ public class _XIndexAccess extends MultiMethodTest {
     }
 
 } // end XIndexAccess
-
-
-

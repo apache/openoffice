@@ -41,4 +41,3 @@ private:
 };
 
 #endif // _IDLC_ASTOBSERVES_HXX_
-

@@ -638,7 +638,7 @@ private:
     sal_Int32							m_nCurrentStructElement;
     /* structure parent tree */
     std::vector< rtl::OString >         m_aStructParentTree;
-    /* emit strucure marks currently (aka. NonStructElement or not)
+    /* emit structure marks currently (aka. NonStructElement or not)
      */
     bool								m_bEmitStructure;
     bool								m_bNewMCID;
@@ -993,7 +993,7 @@ i12626
     void beginCompression();
     void endCompression();
     void beginRedirect( SvStream* pStream, const Rectangle& );
-    // returns an empty rect if no redirection is happending
+    // returns an empty rect if no redirection is happening
     Rectangle getRedirectTargetRect() const;
     SvStream* endRedirect();
 
@@ -1332,5 +1332,3 @@ public:
 }
 
 #endif //_VCL_PDFEXPORT_HXX
-
-

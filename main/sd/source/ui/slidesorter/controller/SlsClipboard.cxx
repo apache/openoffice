@@ -1047,4 +1047,3 @@ sal_Int8 Clipboard::ExecuteOrAcceptShapeDrop (
 
 
 } } } // end of namespace ::sd::slidesorter::controller
-

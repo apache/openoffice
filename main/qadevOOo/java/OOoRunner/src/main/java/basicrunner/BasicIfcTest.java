@@ -53,7 +53,7 @@ public class BasicIfcTest {
 
     /**
      * Let the test run.
-     * @param xTestedEntry Informaton about the interface to test.
+     * @param xTestedEntry Information about the interface to test.
      * @param tEnv The environment of the test.
      * @param tParam The test parameters.
      * @return A result of the test.

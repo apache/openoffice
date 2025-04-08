@@ -435,7 +435,3 @@ void cc50_solaris_sparc_fillUnoException(
 }
 
 }
-
-
-
-

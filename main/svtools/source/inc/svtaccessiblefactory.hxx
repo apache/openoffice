@@ -66,4 +66,3 @@ namespace svt
 //........................................................................
 
 #endif // SVTOOLS_ACCESSIBLE_FACTORY_ACCESS_HXX
-

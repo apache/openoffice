@@ -256,4 +256,3 @@ extern "C" void SAL_CALL createRegistryInfo_OTextConnectionSettingsDialog()
 {
 	static ::dbaui::OMultiInstanceAutoRegistration< ::dbaui::OTextConnectionSettingsDialog > aAutoRegistration;
 }
-

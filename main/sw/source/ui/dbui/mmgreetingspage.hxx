@@ -168,5 +168,3 @@ public:
     String          GetBody() const {return m_aBodyMLE.GetText();}
 };
 #endif
-
-

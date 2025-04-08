@@ -197,4 +197,3 @@ public:
 };
 
 #endif //_SVDOOLE2_HXX
-

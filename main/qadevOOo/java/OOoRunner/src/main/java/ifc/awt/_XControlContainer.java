@@ -45,7 +45,7 @@ import com.sun.star.awt.XControlContainer;
 *  <li> <code>'CONTROL2'</code> (of type <code>XControl</code>):
 *  used as a parameter to addControl(), getControl() and removeControl()</li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.awt.XControlContainer
 */
 public class _XControlContainer extends MultiMethodTest {
@@ -135,4 +135,3 @@ public class _XControlContainer extends MultiMethodTest {
         tRes.tested("getControls()",xCtrls.length >= 2);
     }
 }
-

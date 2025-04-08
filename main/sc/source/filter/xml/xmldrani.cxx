@@ -984,4 +984,3 @@ void ScXMLSubTotalFieldContext::EndElement()
 	aSubTotalColumn.Function = ScXMLConverter::GetFunctionFromString( sFunction );
 	pSubTotalRuleContext->AddSubTotalColumn(aSubTotalColumn);
 }
-

@@ -69,4 +69,3 @@ def suite( ctx ):
     suite.addTest(ImporterTestCase("testStandard",ctx))
     suite.addTest(ImporterTestCase("testDynamicComponentRegistration",ctx))
     return suite
-

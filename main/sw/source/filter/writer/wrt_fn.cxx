@@ -123,5 +123,3 @@ Writer& Out( const SwNodeFnTab pTab, SwNode& rNode, Writer & rWrt )
 		(*pOut)( rWrt, *pCNd );
 	return rWrt;
 }
-
-

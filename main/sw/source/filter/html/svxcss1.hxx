@@ -427,5 +427,3 @@ inline SvxCSS1MapEntry *SvxCSS1Parser::GetTag( const String& rTag ) const
 
 
 #endif
-
-

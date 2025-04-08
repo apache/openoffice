@@ -96,4 +96,3 @@ xub_StrLen* SwTxtRefMark::GetEnd()
 {
     return m_pEnd;
 }
-

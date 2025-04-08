@@ -31,10 +31,10 @@
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.chart.XChartData
+' Required for  com.sun.star.chart.XChartData
  Global oCellToChange As Object
 
-' Requiered for XChartDataArray
+' Required for XChartDataArray
  Global nTableH As Integer
  Global nTableW As Integer
 

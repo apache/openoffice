@@ -288,4 +288,3 @@ Reference< XPreparedStatement > SAL_CALL OCalcConnection::prepareCall( const ::r
     return NULL;
 }
 // -----------------------------------------------------------------------------
-

@@ -692,4 +692,3 @@ SfxTabPage* CreatePrintOptionsPage(	Window *pParent,
 									sal_Bool bPreview);
 
 #endif
-

@@ -57,4 +57,3 @@ public class SectionTextField extends SectionObject
         return a;
     }
 }
-

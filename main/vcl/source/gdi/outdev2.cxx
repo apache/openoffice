@@ -899,7 +899,7 @@ void OutputDevice::DrawTransformedBitmapEx(
         // limit maximum area to something looking good for non-pixel-based targets (metafile, printer)
         // by using a fixed minimum (allow at least, but no need to utilize) for good smooting and an area 
         // dependent of original size for good quality when e.g. rotated/sheared. Still, limit to a maximum 
-        // to avoid crashes/ressource problems (ca. 1500x3000 here)
+        // to avoid crashes/resource problems (ca. 1500x3000 here)
         const Size& rOriginalSizePixel(rBitmapEx.GetSizePixel());
         const double fOrigArea(rOriginalSizePixel.Width() * rOriginalSizePixel.Height() * 0.5);
         const double fOrigAreaScaled(bSheared || bRotated ? fOrigArea * 1.44 : fOrigArea);
@@ -1524,7 +1524,7 @@ void OutputDevice::DrawImage( const Point& rPos, const Size& rSize,
 Bitmap OutputDevice::GetBitmap( const Point& rSrcPt, const Size& rSize ) const
 {
 	DBG_CHKTHIS( OutputDevice, ImplDbgCheckOutputDevice );
-    OSL_ENSURE(OUTDEV_PRINTER != GetOutDevType(), "OutputDevice::GetBitmap with sorce type OUTDEV_PRINTER should not be used (!)");
+    OSL_ENSURE(OUTDEV_PRINTER != GetOutDevType(), "OutputDevice::GetBitmap with source type OUTDEV_PRINTER should not be used (!)");
 
 	Bitmap	aBmp;
 	long	nX = ImplLogicXToDevicePixel( rSrcPt.X() );

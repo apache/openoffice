@@ -748,5 +748,3 @@ sal_Bool SwView::IsVScrollbarVisible()const
     DBG_ASSERT(pVScrollbar, "Scrollbar invalid");
     return pVScrollbar->IsVisible( sal_False );
 }
-
-

@@ -1922,6 +1922,3 @@ SfxItemPresentation XFillBackgroundItem::GetPresentation( SfxItemPresentation eP
 			return SFX_ITEM_PRESENTATION_NONE;
 	}
 }
-
-
-

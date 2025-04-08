@@ -649,4 +649,3 @@ void XclExpString::PrepareWrite( XclExpStream& rStrm, sal_uInt16 nBytes ) const
 }
 
 // ============================================================================
-

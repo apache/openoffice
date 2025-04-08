@@ -122,7 +122,7 @@ void SdModule::Execute(SfxRequest& rReq)
 
 		case SID_AUTOSPELL_CHECK:
 		{
-			// automatische Rechtschreibpruefung
+			// automatische Rechtschreibprüfung
 			const SfxPoolItem* pItem;
 			if( pSet && SFX_ITEM_SET == pSet->GetItemState(
 						SID_AUTOSPELL_CHECK, sal_False, &pItem ) )
@@ -303,7 +303,7 @@ void SdModule::OutlineToImpress (SfxRequest& rRequest)
 
 				if (pViewSh)
 				{
-					// AutoLayouts muessen fertig sein
+					// AutoLayouts müssen fertig sein
 					pDoc->StopWorkStartupDelay();
 
 					SfxViewFrame* pViewFrame = pViewSh->GetViewFrame();
@@ -346,7 +346,7 @@ static bool bOnce = false;
 
 void SdModule::GetState(SfxItemSet& rItemSet)
 {
-	// Autopilot waehrend der Praesentation disablen
+	// Autopilot während der Präsentation disablen
 	if (rItemSet.GetItemState(SID_SD_AUTOPILOT) != SFX_ITEM_UNKNOWN)
 	{
 		if (!SvtModuleOptions().IsImpress())
@@ -797,7 +797,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 			if( pPrinter && pPrinter->IsValid())
 			{
 				// Der Printer gibt leider kein exaktes
-				// Format (z.B. A4) zurueck
+				// Format (z.B. A4) zurück
 				Size aSize(pPrinter->GetPaperSize());
 				Paper ePaper = SvxPaperInfo::GetSvxPaper( aSize, MAP_100TH_MM, sal_True);
 
@@ -809,7 +809,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 
 				if (aSize.Height() > aSize.Width())
 				{
-					 // Always Landscape
+					 // Always use Landscape
 					 aNewSize.Width()  = aSize.Height();
 					 aNewSize.Height() = aSize.Width();
 				}
@@ -840,17 +840,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 		}
 		break;
 
-		case OUTPUT_SLIDE:
-		{
-			aNewSize = Size(27000, 18000);
-			nLeft =0;
-			nRight=0;
-			nUpper=0;
-			nLower=0;
-		}
-		break;
-
-		case OUTPUT_PRESENTATION_4_BY_3:
+		case OUTPUT_SCREEN_4_BY_3:
 		{
 			aNewSize = Size(28000, 21000);
 			nLeft =0;
@@ -860,7 +850,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 		}
 		break;
 
-		case OUTPUT_PRESENTATION_16_BY_9: // not used yet
+		case OUTPUT_SCREEN_16_BY_9:
 		{
 			aNewSize = Size(28000, 15750);
 			nLeft =0;
@@ -870,7 +860,7 @@ void SdModule::ChangeMedium( ::sd::DrawDocShell* pDocShell, SfxViewFrame* pViewF
 		}
 		break;
 
-		case OUTPUT_PRESENTATION_16_BY_10: // not used yet
+		case OUTPUT_SCREEN_16_BY_10:
 		{
 			aNewSize = Size(28000, 17500);
 			nLeft =0;

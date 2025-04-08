@@ -1246,4 +1246,3 @@ ScVbaChart::getServiceNames()
 	}
 	return aServiceNames;
 }
-

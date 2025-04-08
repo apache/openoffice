@@ -172,4 +172,3 @@ public class DataOutputStream extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 }
-

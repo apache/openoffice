@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_embeddedobj.hxx"
@@ -37,7 +35,7 @@
 #include <com/sun/star/util/XCloseable.hpp>
 #include <com/sun/star/beans/XPropertySet.hpp>
 
-#ifndef _COM_SUN_STAR_DOCUMENT_XEVENTBRODCASTER_HPP_
+#ifndef _COM_SUN_STAR_DOCUMENT_XEVENTBROADCASTER_HPP_
 #include <com/sun/star/document/XEventBroadcaster.hpp>
 #endif
 #include <com/sun/star/document/XEventListener.hpp>
@@ -48,7 +46,6 @@
 #include <comphelper/mimeconfighelper.hxx>
 
 #include "ownview.hxx"
-
 
 using namespace ::com::sun::star;
 using namespace ::comphelper;
@@ -121,28 +118,28 @@ sal_Bool OwnView_Impl::CreateModelFromURL( const ::rtl::OUString& aFileURL )
 	if ( aFileURL.getLength() )
 	{
 		try {
-			uno::Reference < frame::XComponentLoader > xDocumentLoader( 
-							m_xFactory->createInstance ( 
+			uno::Reference < frame::XComponentLoader > xDocumentLoader(
+							m_xFactory->createInstance (
 										::rtl::OUString::createFromAscii( "com.sun.star.frame.Desktop" ) ),
 							uno::UNO_QUERY );
 
 			if ( xDocumentLoader.is() )
 			{
 				uno::Sequence< beans::PropertyValue > aArgs( m_aFilterName.getLength() ? 5 : 4 );
-	
+
 				aArgs[0].Name = ::rtl::OUString::createFromAscii( "URL" );
 				aArgs[0].Value <<= aFileURL;
-	
+
 				aArgs[1].Name = ::rtl::OUString::createFromAscii( "ReadOnly" );
 				aArgs[1].Value <<= sal_True;
-	
+
 				aArgs[2].Name = ::rtl::OUString::createFromAscii( "InteractionHandler" );
 				aArgs[2].Value <<= uno::Reference< task::XInteractionHandler >(
 									static_cast< ::cppu::OWeakObject* >( new DummyHandler_Impl() ), uno::UNO_QUERY );
 
 				aArgs[3].Name = ::rtl::OUString::createFromAscii( "DontEdit" );
 				aArgs[3].Value <<= sal_True;
-				
+
 				if ( m_aFilterName.getLength() )
 				{
 					aArgs[4].Name = ::rtl::OUString::createFromAscii( "FilterName" );
@@ -155,7 +152,7 @@ sal_Bool OwnView_Impl::CreateModelFromURL( const ::rtl::OUString& aFileURL )
 																0,
 																aArgs ),
 															uno::UNO_QUERY );
-	
+
 				if ( xModel.is() )
 				{
 					uno::Reference< document::XEventBroadcaster > xBroadCaster( xModel, uno::UNO_QUERY );
@@ -163,16 +160,16 @@ sal_Bool OwnView_Impl::CreateModelFromURL( const ::rtl::OUString& aFileURL )
 						xBroadCaster->addEventListener( uno::Reference< document::XEventListener >(
 																static_cast< ::cppu::OWeakObject* >( this ),
 									 							uno::UNO_QUERY ) );
-	
+
 					uno::Reference< util::XCloseable > xCloseable( xModel, uno::UNO_QUERY );
 					if ( xCloseable.is() )
 					{
 						xCloseable->addCloseListener( uno::Reference< util::XCloseListener >(
 																		static_cast< ::cppu::OWeakObject* >( this ),
-										  								uno::UNO_QUERY ) );
-	
+																		uno::UNO_QUERY ) );
+
 						::osl::MutexGuard aGuard( m_aMutex );
-						m_xModel = xModel;	
+						m_xModel = xModel;
 						bResult = sal_True;
 					}
 				}
@@ -203,9 +200,9 @@ sal_Bool OwnView_Impl::CreateModel( sal_Bool bUseNative )
 
 //--------------------------------------------------------
 ::rtl::OUString OwnView_Impl::GetFilterNameFromExtentionAndInStream(
-                                                    const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory,
-                                                    const ::rtl::OUString& aNameWithExtention,
-                                                    const uno::Reference< io::XInputStream >& xInputStream )
+													const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory,
+													const ::rtl::OUString& aNameWithExtention,
+													const uno::Reference< io::XInputStream >& xInputStream )
 {
 	if ( !xInputStream.is() )
 		throw uno::RuntimeException();
@@ -317,14 +314,14 @@ sal_Bool OwnView_Impl::ReadContentsAndGenerateTempFile( const uno::Reference< io
 				return sal_False;
 
 			if (
-                (aReadSeq[0] >= '0' && aReadSeq[0] <= '9') ||
-                (aReadSeq[0] >= 'a' && aReadSeq[0] <= 'z') ||
-                (aReadSeq[0] >= 'A' && aReadSeq[0] <= 'Z') ||
-                aReadSeq[0] == '.' 
-               )
-            {
+				(aReadSeq[0] >= '0' && aReadSeq[0] <= '9') ||
+				(aReadSeq[0] >= 'a' && aReadSeq[0] <= 'z') ||
+				(aReadSeq[0] >= 'A' && aReadSeq[0] <= 'Z') ||
+				aReadSeq[0] == '.'
+			   )
+			{
 				aFileSuffix += ::rtl::OUString::valueOf( (sal_Unicode) aReadSeq[0] );
-            }
+			}
 
 		} while( aReadSeq[0] );
 
@@ -337,7 +334,7 @@ sal_Bool OwnView_Impl::ReadContentsAndGenerateTempFile( const uno::Reference< io
 
 		// check the next header
 		if ( xInStream->readBytes( aReadSeq, 4 ) != 4
-	  	|| aReadSeq[0] || aReadSeq[1] || aReadSeq[2] != 3 || aReadSeq[3] )
+		|| aReadSeq[0] || aReadSeq[1] || aReadSeq[2] != 3 || aReadSeq[3] )
 			return sal_False;
 
 		// get the size of the next entry
@@ -351,7 +348,7 @@ sal_Bool OwnView_Impl::ReadContentsAndGenerateTempFile( const uno::Reference< io
 		sal_Int64 nTargetPos = xSeekable->getPosition() + nUrlSize;
 
 		xSeekable->seek( nTargetPos );
-	
+
 		// get the size of stored data
 		if ( xInStream->readBytes( aReadSeq, 4 ) != 4 )
 			return sal_False;
@@ -367,8 +364,7 @@ sal_Bool OwnView_Impl::ReadContentsAndGenerateTempFile( const uno::Reference< io
 		{
 			sal_uInt32 nToRead = ( nDataSize - nRead > 32000 ) ? 32000 : nDataSize - nRead;
 			sal_uInt32 nLocalRead = xInStream->readBytes( aReadSeq, nToRead );
-			
-	
+
 			if ( !nLocalRead )
 			{
 				bFailed = sal_True;
@@ -382,7 +378,7 @@ sal_Bool OwnView_Impl::ReadContentsAndGenerateTempFile( const uno::Reference< io
 				aToWrite.realloc( nLocalRead );
 				xNativeOutTemp->writeBytes( aToWrite );
 			}
-	
+
 			nRead += nLocalRead;
 		}
 	}
@@ -390,8 +386,8 @@ sal_Bool OwnView_Impl::ReadContentsAndGenerateTempFile( const uno::Reference< io
 	{
 		uno::Sequence< sal_Int8 > aData( 8 );
 		if ( xInStream->readBytes( aData, 8 ) == 8
-		  && aData[0] == -1 && aData[1] == -1 && aData[2] == -1 && aData[3] == -1
-		  && ( aData[4] == 2 || aData[4] == 3 ) && aData[5] == 0 && aData[6] == 0 && aData[7] == 0 )
+			&& aData[0] == -1 && aData[1] == -1 && aData[2] == -1 && aData[3] == -1
+			&& ( aData[4] == 2 || aData[4] == 3 ) && aData[5] == 0 && aData[6] == 0 && aData[7] == 0 )
 		{
 			// the header has to be removed
 			xSeekable->seek( 40 );
@@ -404,7 +400,7 @@ sal_Bool OwnView_Impl::ReadContentsAndGenerateTempFile( const uno::Reference< io
 
 		::comphelper::OStorageHelper::CopyInputToOutput( xInStream, xNativeOutTemp );
 	}
-	
+
 	xNativeOutTemp->closeOutput();
 
 	// The temporary native file is created, now the filter must be detected
@@ -437,7 +433,7 @@ void OwnView_Impl::CreateNative()
 		uno::Sequence< uno::Any > aArgs( 1 );
 		aArgs[0] <<= xInStream;
 		uno::Reference< container::XNameAccess > xNameAccess(
-				m_xFactory->createInstanceWithArguments( 
+				m_xFactory->createInstanceWithArguments(
 						::rtl::OUString::createFromAscii( "com.sun.star.embed.OLESimpleStorage" ),
 						aArgs ),
 				uno::UNO_QUERY_THROW );
@@ -461,7 +457,7 @@ void OwnView_Impl::CreateNative()
 				if ( MimeConfigurationHelper::ClassIDsEqual( aPackageClassID, aStorClassID ) )
 				{
 					// the storage represents Object Package
-	
+
 					bOk = ReadContentsAndGenerateTempFile( xSubStream->getInputStream(), sal_True );
 
 					if ( !bOk && m_aNativeTempURL.getLength() )
@@ -622,7 +618,7 @@ void SAL_CALL OwnView_Impl::notifyEvent( const document::EventObject& aEvent )
 				xBroadCaster->removeEventListener( uno::Reference< document::XEventListener >(
 																		static_cast< ::cppu::OWeakObject* >( this ),
 											 							uno::UNO_QUERY ) );
-	
+
 			uno::Reference< util::XCloseable > xCloseable( xModel, uno::UNO_QUERY );
 			if ( xCloseable.is() )
 				xCloseable->removeCloseListener( uno::Reference< util::XCloseListener >(
@@ -659,3 +655,4 @@ void SAL_CALL OwnView_Impl::disposing( const lang::EventObject& Source )
 		m_xModel = uno::Reference< frame::XModel >();
 };
 
+/* vim: set noet sw=4 ts=4: */

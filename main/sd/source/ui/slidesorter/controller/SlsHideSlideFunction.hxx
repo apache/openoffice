@@ -66,4 +66,3 @@ protected:
 } } } // end of namespace ::sd::slidesorter::controller
 
 #endif
-

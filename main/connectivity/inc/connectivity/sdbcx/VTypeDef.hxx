@@ -40,4 +40,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_TYPEDEF_HXX_
-

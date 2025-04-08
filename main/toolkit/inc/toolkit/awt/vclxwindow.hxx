@@ -236,4 +236,3 @@ public:
 };
 
 #endif // _TOOLKIT_AWT_VCLXWINDOW_HXX_
-

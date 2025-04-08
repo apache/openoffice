@@ -134,4 +134,3 @@ sal_Bool SAL_CALL osl_checkCondition(oslCondition Condition)
 
 	return (sal_Bool)(WaitForSingleObject((HANDLE)Condition, 0) == WAIT_OBJECT_0);
 }
-

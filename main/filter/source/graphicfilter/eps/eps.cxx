@@ -2810,4 +2810,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicExport( SvStream & rStream, Graphic &
 	PSWriter aPSWriter;
 	return aPSWriter.WritePS( rGraphic, rStream, pFilterConfigItem );
 }
-

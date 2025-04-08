@@ -163,5 +163,3 @@ public class _DataSource extends MultiPropertyTest {
     }
 
 }  // finish class _DataSource
-
-

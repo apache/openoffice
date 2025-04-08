@@ -55,5 +55,3 @@ class TextToken
 
 
 #endif
-
-

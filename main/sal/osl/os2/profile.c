@@ -2288,4 +2288,3 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 }
 
 #endif // 0 // YD
-

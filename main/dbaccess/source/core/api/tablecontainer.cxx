@@ -271,7 +271,7 @@ Reference< XPropertySet > OTableContainer::createDescriptor()
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "api", "Ocke.Janssen@sun.com", "OTableContainer::createDescriptor" );
 	Reference< XPropertySet > xRet;
 
-	// frist we have to look if the master tables does support this
+	// first we have to look if the master tables does support this
 	// and if then create a table object as well with the master tables
 	Reference<XColumnsSupplier > xMasterColumnsSup;
 	Reference<XDataDescriptorFactory> xDataFactory(m_xMasterContainer,UNO_QUERY);
@@ -509,4 +509,3 @@ void OTableContainer::addMasterContainerListener()
         DBG_UNHANDLED_EXCEPTION();
     }
 }
-

@@ -1240,7 +1240,7 @@ bool SvxUnoConvertResourceString( int nSourceResIds, int nDestResIds, int nCount
 //   these have to be in front of others
 //
 // It would be nice to:
-// - evtl. organize these in a single array with 2-dimensional inner to elliminate
+// - evtl. organize these in a single array with 2-dimensional inner to eliminate
 //   the possibility to define it wrong
 // - change the compare to also work when a shorter name is in front of a longer one
 
@@ -1434,4 +1434,3 @@ comphelper::PropertySetInfo* SvxPropertySetInfoPool::getOrCreate( sal_Int32 nSer
 }
 
 comphelper::PropertySetInfo* SvxPropertySetInfoPool::mpInfos[SVXUNO_SERVICEID_LASTID+1] = { NULL };
-

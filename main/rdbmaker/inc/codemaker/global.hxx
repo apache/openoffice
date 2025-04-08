@@ -131,4 +131,3 @@ protected:
 };
 
 #endif // _CODEMAKER_GLOBAL_HXX_
-

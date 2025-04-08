@@ -77,4 +77,3 @@ namespace vcl { namespace unohelper {
 }}	// namespace vcl::unohelper
 
 #endif  // _VCL_UNOHELP2_HXX
-

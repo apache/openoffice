@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 package ifc.container;
 
@@ -46,7 +44,7 @@ import lib.StatusException;
 *   if this relation exists then container elements can have duplicate
 *   names. </li>
 *  <li> Test environment variable <code>'THRCNT'</code> : number
-*   of interface threads running concurently. </li>
+*   of interface threads running concurrently. </li>
 * <ul> <p>
 * XNameComtainer needs n ObjectRelations "INSTANCEn" , where n=1, ..., THRCNT.
 *
@@ -59,7 +57,7 @@ import lib.StatusException;
 * If you insert the same Object by insertByName() several times you
 * don't insert the Object several times. The first insertByName() inserts
 * the Object to the Container but all other insertByName() changes
-* the Name in the Continer because it's the same Object.
+* the Name in the container because it's the same Object.
 * @see com.sun.star.container.XNameContainer
 */
 
@@ -200,7 +198,7 @@ public class _XNameContainer extends MultiMethodTest {
                 oObj.removeByName(Name);
             } catch (com.sun.star.container.NoSuchElementException e1) {
             } catch (com.sun.star.lang.WrappedTargetException e1) {
-            } 
+            }
         }
 
         boolean result = true;
@@ -250,6 +248,3 @@ public class _XNameContainer extends MultiMethodTest {
         return;
     } // end removeByName()
 } //XNameContainer
-
-
-

@@ -424,4 +424,3 @@ void LineProperties::pushToPropMap( ShapePropertyMap& rPropMap,
 
 } // namespace drawingml
 } // namespace oox
-

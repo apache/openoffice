@@ -32,4 +32,3 @@ package com.sun.star.comp.beans;
 public class HasConnectionException extends Exception
 {
 };
-

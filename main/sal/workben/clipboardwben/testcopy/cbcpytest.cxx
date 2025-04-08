@@ -395,4 +395,3 @@ void SetLocale()
 {
 	LCID threadLcid = GetThreadLocale();			   
 }
-

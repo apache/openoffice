@@ -136,5 +136,3 @@ $(MISC)$/$(SHL1TARGET).def: makefile.mk
     @echo     _ScDate_WeeksInYear>>$@
 
 .ENDIF
-
-

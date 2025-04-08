@@ -46,4 +46,3 @@ private:
 };
 
 #endif // _IDLC_ASTSERVICEMEMBER_HXX_
-

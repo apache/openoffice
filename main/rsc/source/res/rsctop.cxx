@@ -986,5 +986,3 @@ void RscTop::WriteRcCtor( FILE * fOutput, RscTypCont * pTC )
 	if( pSuperClass )
 		pSuperClass->WriteRcCtor( fOutput, pTC );
 }
-
-

@@ -2410,5 +2410,3 @@ const SvXMLTokenMap& SvXMLNumFmtHelper::GetStylesElemTokenMap()
 {
 	return pData->GetKeyForName( rName );
 }*/
-
-

@@ -38,4 +38,3 @@ class SC_DLLPUBLIC ScResId : public ResId
 
 
 #endif // SC_SCRESMGR_HXX
-

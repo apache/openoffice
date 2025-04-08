@@ -74,4 +74,3 @@ namespace connectivity
 //........................................................................
 
 #endif // CONNECTIVITY_DBTOOLS_DBTFACTORY_HXX
-

@@ -84,4 +84,3 @@ namespace svx
 //........................................................................
 
 #endif // #ifndef _SVX_SECURITYOPTIONS_HXX
-

@@ -45,4 +45,3 @@ class DrawSelection : public SwDrawBase
 
 
 #endif		// _SW_DSELECT_HXX
-

@@ -50,7 +50,7 @@ import com.sun.star.uno.XInterface;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.lang.XInitialization
  * @see com.sun.star.linguistic2.XHyphenator
@@ -104,4 +104,3 @@ public class Hyphenator extends TestCase {
 
 
 }    // finish class Hyphenator
-

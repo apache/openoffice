@@ -165,5 +165,3 @@ namespace connectivity
 	};
 }
 #endif //_CONNECTIVITY_JAVA_LANG_OBJJECT_HXX_
-
-

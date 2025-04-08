@@ -720,4 +720,3 @@ SVX_DLLPUBLIC void DrawDiagFrameBorders(
 /* Yes, I love ASCII art. :-) -DR- */
 
 #endif
-

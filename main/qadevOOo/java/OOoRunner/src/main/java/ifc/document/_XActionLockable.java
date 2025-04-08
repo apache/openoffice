@@ -37,7 +37,7 @@ import com.sun.star.document.XActionLockable;
 *  <li><code> setActionLocks()</code></li>
 *  <li><code> resetActionLocks()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.document.XActionLockable
 */
 public class _XActionLockable extends MultiMethodTest {
@@ -102,4 +102,3 @@ public class _XActionLockable extends MultiMethodTest {
         tRes.tested("resetActionLocks()", result);
     }
 }// finish class _XActionLockable
-

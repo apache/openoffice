@@ -372,4 +372,3 @@ SAL_IMPLEMENT_MAIN()
         return 1;
     }
 }
-

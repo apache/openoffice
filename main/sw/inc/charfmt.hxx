@@ -52,6 +52,3 @@ namespace CharFmt
 }
 
 #endif
-
-
-

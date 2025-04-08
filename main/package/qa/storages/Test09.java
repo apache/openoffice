@@ -156,4 +156,3 @@ public class Test09 implements StorageTest {
 		}
     } 
 }
-

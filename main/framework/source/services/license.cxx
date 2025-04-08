@@ -624,4 +624,3 @@ void LicenseView::Notify( SfxBroadcaster&, const SfxHint& rHint )
 }
 
 }		//	namespace framework
-

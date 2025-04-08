@@ -36,7 +36,7 @@ import com.sun.star.ucb.XRemoteContentProviderDoneListener;
  *  <li><code> addRemoteContentProvider()</code></li>
  *  <li><code> removeRemoteContentProvider()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.ucb.XRemoteContentProviderAcceptor
  */
 public class _XRemoteContentProviderAcceptor extends MultiMethodTest {
@@ -93,4 +93,3 @@ public class _XRemoteContentProviderAcceptor extends MultiMethodTest {
 
 
 }
-

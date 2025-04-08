@@ -45,5 +45,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_JAVA_LANG_BOOLEAN_HXX_
-
-

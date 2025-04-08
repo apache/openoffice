@@ -82,6 +82,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_JOINDESIGNVIEW_HXX
-
-
-

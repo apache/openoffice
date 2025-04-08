@@ -767,4 +767,3 @@ public class TableBasic {
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps11_assert.getPropertyValue("BackGraphicURL"));				
 	}	
 }
-

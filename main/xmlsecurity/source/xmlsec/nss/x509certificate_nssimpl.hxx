@@ -101,4 +101,3 @@ class X509Certificate_NssImpl : public ::cppu::WeakImplHelper2<
 } ;
 
 #endif	// _X509CERTIFICATE_NSSIMPL_HXX_
-

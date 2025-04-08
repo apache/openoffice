@@ -63,7 +63,7 @@ import com.sun.star.util.XCloseable;
  *  <li> <code>com::sun::star::style::CharacterPropertiesAsian</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.text.XTextContent
  * @see com.sun.star.text.TextContent
  * @see com.sun.star.style.CharacterPropertiesComplex
@@ -272,4 +272,3 @@ public class SwXParagraph extends TestCase {
     } // finish method getTestEnvironment
     
 }    // finish class SwXParagraph
-

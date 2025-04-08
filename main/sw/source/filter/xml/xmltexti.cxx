@@ -1053,6 +1053,3 @@ void SwXMLTextImportHelper::SetChangesProtectionKey(
 	if ( NULL != pRedlineHelper )
 		pRedlineHelper->SetProtectionKey( rKey );
 }
-
-
-

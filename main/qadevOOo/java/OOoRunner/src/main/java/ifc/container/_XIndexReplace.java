@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 package ifc.container;
 
@@ -31,7 +29,6 @@ import com.sun.star.container.XNameContainer;
 import com.sun.star.lang.IllegalArgumentException;
 import com.sun.star.lang.IndexOutOfBoundsException;
 import com.sun.star.uno.UnoRuntime;
-
 
 /**
 * Testing <code>com.sun.star.container.XIndexReplace</code>
@@ -47,7 +44,7 @@ import com.sun.star.uno.UnoRuntime;
 *  <li> <code>'XIndexReplaceINDEX'</code> : For internal test
 *   usage. Contains current thread number. </li>
 *  <li> Test environment variable <code>'THRCNT'</code> : number
-*   of interface threads running concurently. </li>
+*   of interface threads running concurrently. </li>
 * <ul> <p>
 * XIndexReplace needs n ObjectRelations "INSTANCEn" , where n = 1, ..., THRCNT.
 * <p>
@@ -58,15 +55,15 @@ import com.sun.star.uno.UnoRuntime;
 * <p>
 * This ObjectRelations should be necessary to create an Object,
 * which is can be replaced by index
-* INSTANCEn are n Objectrelations so that every thread can isert it's own
+* INSTANCEn are n Objectrelations so that every thread can insert its own
 * object. n depends on the variable THRCNT which and comes from API.INI
 * <p>
 * Why that:
 * If you insert the same Object by replaceByIndex() several times you
 * don't insert the Object several times. The first replaceByIndex() inserts
 * the Object to the Container but all other replaceByIndex() changes
-* the Index in the Continer because it's the same Object. <p>
-* Test is multithread compilant. <p>
+* the Index in the container because it's the same Object. <p>
+* Test is multithread compliant. <p>
 * @see com.sun.star.container.XIndexReplace
 */
 
@@ -203,5 +200,3 @@ public class _XIndexReplace extends MultiMethodTest {
         tRes.tested("replaceByIndex()", result);
     }
 }
-
-

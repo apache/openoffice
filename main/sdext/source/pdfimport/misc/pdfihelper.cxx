@@ -72,5 +72,3 @@ rtl::OUString pdfi::convertPixelToUnitString( double fPix )
     
     return aBuf.makeStringAndClear();
 }
-
-

@@ -34,38 +34,38 @@
 <bookmark_value>recording; macros</bookmark_value>
 <bookmark_value>Basic; recording macros</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3093440" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="macro_recording"><link href="text/shared/guide/macro_recording.xhp" name="Recording a Macro">Recording a Macro</link>
+<paragraph role="heading" id="hd_id3093440" xml-lang="en-US" level="1" l10n="U"><variable id="macro_recording"><link href="text/shared/guide/macro_recording.xhp" name="Recording a Macro">Recording a Macro</link>
 </variable></paragraph>
 <switch select="appl">
 <case select="WRITER"><section id="macrorecorder">
 <list type="ordered">
 <listitem>
-<paragraph role="listitem" id="par_id3154749" xml-lang="en-US" l10n="U" oldref="4">Open the document for which you want to record a macro.</paragraph>
+<paragraph role="listitem" id="par_id3154749" xml-lang="en-US" l10n="U">Open the document for which you want to record a macro.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3149398" xml-lang="en-US" l10n="CHG" oldref="5">Choose <emph>Tools - Macros - Record Macro</emph>.</paragraph>
-<paragraph role="listitem" id="par_id3150275" xml-lang="en-US" l10n="U" oldref="6">You see the small <emph>Recording</emph> dialog with just one button called <emph>Stop Recording</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3149398" xml-lang="en-US" l10n="CHG">Choose <emph>Tools - Macros - Record Macro</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3150275" xml-lang="en-US" l10n="U">You see the small <emph>Recording</emph> dialog with just one button called <emph>Stop Recording</emph>.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3153087" xml-lang="en-US" l10n="U" oldref="7">Perform the actions you want to be recorded in the document.</paragraph>
-<paragraph role="listitem" id="par_id3150504" xml-lang="en-US" l10n="U" oldref="15">Press the Escape key to deselect an object, as the macro recorder currently does not record this action by mouse click.</paragraph>
+<paragraph role="listitem" id="par_id3153087" xml-lang="en-US" l10n="U">Perform the actions you want to be recorded in the document.</paragraph>
+<paragraph role="listitem" id="par_id3150504" xml-lang="en-US" l10n="U">Press the Escape key to deselect an object, as the macro recorder currently does not record this action by mouse click.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3148492" xml-lang="en-US" l10n="U" oldref="8">Click <emph>Stop Recording</emph>.</paragraph>
-<paragraph role="listitem" id="par_id3148686" xml-lang="en-US" l10n="U" oldref="9">The <emph>Macro</emph> dialog appears, in which you can save and run the macro.</paragraph>
-<paragraph role="listitem" id="par_id3159158" xml-lang="en-US" l10n="U" oldref="10">If you want to abort the recording without saving a macro, click the <emph>Close</emph> button of the <emph>Recording</emph> dialog.</paragraph>
+<paragraph role="listitem" id="par_id3148492" xml-lang="en-US" l10n="U">Click <emph>Stop Recording</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3148686" xml-lang="en-US" l10n="U">The <emph>Macro</emph> dialog appears, in which you can save and run the macro.</paragraph>
+<paragraph role="listitem" id="par_id3159158" xml-lang="en-US" l10n="U">If you want to abort the recording without saving a macro, click the <emph>Close</emph> button of the <emph>Recording</emph> dialog.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3144510" xml-lang="en-US" l10n="U" oldref="11">To save the macro, first select the object where you want the macro to be saved in the <emph>Save macro in</emph> list box.</paragraph>
+<paragraph role="listitem" id="par_id3144510" xml-lang="en-US" l10n="U">To save the macro, first select the object where you want the macro to be saved in the <emph>Save macro in</emph> list box.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3148550" xml-lang="en-US" l10n="U" oldref="12">If you want the macro to be saved into a new library or module, click the <emph>New Library</emph> or <emph>New Module</emph> button and enter a name for the library or module.</paragraph>
+<paragraph role="listitem" id="par_id3148550" xml-lang="en-US" l10n="U">If you want the macro to be saved into a new library or module, click the <emph>New Library</emph> or <emph>New Module</emph> button and enter a name for the library or module.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3149456" xml-lang="en-US" l10n="CHG" oldref="13">Enter a name for the new macro in the <emph>Macro name</emph> text box. Do not use Basic keywords as a name.</paragraph>
+<paragraph role="listitem" id="par_id3149456" xml-lang="en-US" l10n="CHG">Enter a name for the new macro in the <emph>Macro name</emph> text box. Do not use Basic keywords as a name.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="14">Click <emph>Save</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3154138" xml-lang="en-US" l10n="U">Click <emph>Save</emph>.</paragraph>
 </listitem>
 </list>
 <paragraph role="head2" id="hd_id2486342" xml-lang="en-US" l10n="NEW">Limitations of the macro recorder</paragraph>
@@ -92,7 +92,7 @@
 </list>
 <embed href="text/shared/00/00000004.xhp#related"/>
 <paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="C"><link href="text/shared/01/06130000.xhp" name="Macro">Macro</link></paragraph>
-<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="2"><link href="text/shared/main0600.xhp" name="macro programming in $[officename]">Programming in %PRODUCTNAME</link></paragraph><comment>how-to running a macro</comment><comment>how-to testing and debugging a macro</comment></section>
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U"><link href="text/shared/main0600.xhp" name="macro programming in $[officename]">Programming in %PRODUCTNAME</link></paragraph><comment>how-to running a macro</comment><comment>how-to testing and debugging a macro</comment></section>
 </case>
 <case select="CALC"><embed href="text/shared/guide/macro_recording.xhp#macrorecorder"/>
 </case>

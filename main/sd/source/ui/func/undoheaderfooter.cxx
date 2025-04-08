@@ -58,4 +58,3 @@ void SdHeaderFooterUndoAction::Redo()
 	mpPage->setHeaderFooterSettings( maNewSettings );
 	SfxViewFrame::Current()->GetDispatcher()->Execute( SID_SWITCHPAGE, SFX_CALLMODE_ASYNCHRON | SFX_CALLMODE_RECORD );
 }
-

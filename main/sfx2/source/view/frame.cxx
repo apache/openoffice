@@ -987,4 +987,3 @@ const SfxPoolItem* SfxFrame::OpenDocumentSynchron( SfxItemSet& i_rSet, const Ref
     i_rSet.ClearItem( SID_TARGETNAME );
     return SFX_APP()->GetDispatcher_Impl()->Execute( SID_OPENDOC, SFX_CALLMODE_SYNCHRON, i_rSet );
 }
-

@@ -122,4 +122,3 @@ namespace reportdesign
 	};
 }
 #endif //RPT_FUNCTION_HXX
-

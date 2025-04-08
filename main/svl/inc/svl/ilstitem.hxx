@@ -56,4 +56,3 @@ public:
 };
 
 #endif // _SFXINTITEM_HXX
-

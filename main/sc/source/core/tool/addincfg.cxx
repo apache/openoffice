@@ -64,5 +64,3 @@ void ScAddInCfg::Notify( const uno::Sequence<rtl::OUString>& )
     if ( SC_MOD()->GetCurRefDlgId() != SID_OPENDLG_FUNCTION )
         ScGlobal::ResetFunctionList();
 }
-
-

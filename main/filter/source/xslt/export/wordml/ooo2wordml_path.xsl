@@ -628,7 +628,7 @@
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:when test="string-length(translate($curr-char ,  '+-' ,'') ) = 0  and string-length($number) &gt; 0">
-                        <!-- finsh it with +/- -->
+                        <!-- finish it with +/- -->
                         <xsl:value-of select="concat( round( concat( $curr-char, $number)) ,  ':' , $position)"/>
                     </xsl:when>
                     <xsl:otherwise>

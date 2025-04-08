@@ -218,4 +218,3 @@ struct ListenerOperations< boost::weak_ptr<ListenerTargetT> >
 } // namespace Presentation
 
 #endif /* INCLUDED_SLIDESHOW_LISTENERCONTAINERIMPL_HXX */
-

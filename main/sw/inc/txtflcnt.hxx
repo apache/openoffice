@@ -61,4 +61,3 @@ inline const SwFlyInCntFrm *SwTxtFlyCnt::GetFlyFrm( const SwFrm *pCurrFrm ) cons
 }
 
 #endif
-

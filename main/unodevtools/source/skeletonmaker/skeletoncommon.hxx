@@ -139,7 +139,7 @@ void checkAddInTypes(TypeManager const & manager,
 
 /**
    checks if XComponent have to be supported, if yes it removes it from the
-   supported interfaces list because it becmoes implmented by the appropriate
+   supported interfaces list because it becomes implemented by the appropriate
    helper
 
    @param manager a type manager
@@ -163,4 +163,3 @@ void generateFunctionParameterMap(std::ostream& o,
 }
 
 #endif // INCLUDED_UNODEVTOOLS_SOURCE_SKELETONMAKER_SKELETONCOMMON_HXX
-

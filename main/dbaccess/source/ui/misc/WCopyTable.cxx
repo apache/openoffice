@@ -728,7 +728,7 @@ void OCopyTableWizard::construct()
 	m_pbNext.GrabFocus();
 
 	if (m_vDestColumns.size())
-		// source is a html or rtf table
+		// source is a HTML or rtf table
 		m_pbNext.SetStyle(m_pbFinish.GetStyle() | WB_DEFBUTTON);
 	else
 		m_pbFinish.SetStyle(m_pbFinish.GetStyle() | WB_DEFBUTTON);
@@ -1685,4 +1685,3 @@ void OCopyTableWizard::showError(const Any& _aError)
         }
     }
 }
-

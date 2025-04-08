@@ -109,4 +109,3 @@ void generateSkeleton(ProgramOptions const & options, TypeManager const & manage
 } }
 
 #endif // INCLUDED_UNODEVTOOLS_SKELETONJAVA_HXX
-

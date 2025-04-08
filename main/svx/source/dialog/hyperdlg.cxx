@@ -100,4 +100,3 @@ sal_Bool SvxHlinkDlgWrapper::QueryClose()
 {
     return mpDlg ? mpDlg->QueryClose() : sal_True;
 }
-

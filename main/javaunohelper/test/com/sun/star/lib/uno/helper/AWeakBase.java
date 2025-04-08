@@ -43,4 +43,3 @@ public class AWeakBase extends WeakBase implements XEventListener
     }
     
 }
-

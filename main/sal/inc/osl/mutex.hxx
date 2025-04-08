@@ -246,4 +246,3 @@ namespace osl
 
 #endif  /* __cplusplus */
 #endif	/* _OSL_MUTEX_HXX_ */
-

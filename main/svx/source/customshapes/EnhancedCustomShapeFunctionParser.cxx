@@ -1205,4 +1205,3 @@ ExpressionNodeSharedPtr FunctionParser::parseFunction( const ::rtl::OUString& rF
 
 
 }
-

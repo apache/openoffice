@@ -206,4 +206,3 @@ void OFileWriter::closeOutput(void) const
 		const_cast< OFileWriter * > ( this )->m_f = 0;
 	}
 }
-

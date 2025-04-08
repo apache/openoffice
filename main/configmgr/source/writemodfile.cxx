@@ -453,53 +453,60 @@ void writeModifications(
     rtl::Reference< Node > const & node,
     Modifications::Node const & modifications)
 {
+    /** Parent paths whose children should disappear */
+    const char *historyPath = "/org.openoffice.Office.Histories/Histories";
+    const char *commonHistoryPath = "/org.openoffice.Office.Common/History";
     // It is never necessary to write oor:finalized or oor:mandatory attributes,
     // as they cannot be set via the UNO API.
     if (modifications.children.empty()) {
         OSL_ASSERT(parent.is());
-            // components themselves have no parent but must have children
-        writeData(handle, RTL_CONSTASCII_STRINGPARAM("<item oor:path=\""));
-        writeAttributeValue(handle, parentPathRepresentation);
-        writeData(handle, RTL_CONSTASCII_STRINGPARAM("\">"));
-        if (node.is()) {
-            writeNode(components, handle, parent, nodeName, node);
-        } else {
-            switch (parent->kind()) {
-            case Node::KIND_LOCALIZED_PROPERTY:
-                writeData(handle, RTL_CONSTASCII_STRINGPARAM("<value"));
-                if (nodeName.getLength() != 0) {
+        // components themselves have no parent but must have children
+        if (node.is() ||
+            ((parentPathRepresentation.compareToAscii(historyPath, strlen(historyPath)) != 0) &&
+             (parentPathRepresentation.compareToAscii(commonHistoryPath, strlen(commonHistoryPath)) != 0))) {
+            writeData(handle, RTL_CONSTASCII_STRINGPARAM("<item oor:path=\""));
+            writeAttributeValue(handle, parentPathRepresentation);
+            writeData(handle, RTL_CONSTASCII_STRINGPARAM("\">"));
+            if (node.is()) {
+                writeNode(components, handle, parent, nodeName, node);
+            } else {
+                switch (parent->kind()) {
+				case Node::KIND_LOCALIZED_PROPERTY:
+                    writeData(handle, RTL_CONSTASCII_STRINGPARAM("<value"));
+                    if (nodeName.getLength() != 0) {
+                        writeData(
+                            handle, RTL_CONSTASCII_STRINGPARAM(" xml:lang=\""));
+                        writeAttributeValue(handle, nodeName);
+                        writeData(handle, RTL_CONSTASCII_STRINGPARAM("\""));
+                    }
                     writeData(
-                        handle, RTL_CONSTASCII_STRINGPARAM(" xml:lang=\""));
+                        handle, RTL_CONSTASCII_STRINGPARAM(" oor:op=\"remove\"/>"));
+                    break;
+                case Node::KIND_GROUP:
+                    OSL_ASSERT(
+                               dynamic_cast< GroupNode * >(parent.get())->isExtensible());
+                    writeData(
+                        handle, RTL_CONSTASCII_STRINGPARAM("<prop oor:name=\""));
                     writeAttributeValue(handle, nodeName);
-                    writeData(handle, RTL_CONSTASCII_STRINGPARAM("\""));
+                    writeData(
+                        handle,
+                        RTL_CONSTASCII_STRINGPARAM("\" oor:op=\"remove\"/>"));
+                    break;
+                case Node::KIND_SET:
+                    writeData(
+                        handle, RTL_CONSTASCII_STRINGPARAM("<node oor:name=\""));
+                    writeAttributeValue(handle, nodeName);
+                    writeData(
+                        handle,
+                        RTL_CONSTASCII_STRINGPARAM("\" oor:op=\"remove\"/>"));
+                    break;
+                default:
+                    OSL_ASSERT(false); // this cannot happen
+                    break;
                 }
-                writeData(
-                    handle, RTL_CONSTASCII_STRINGPARAM(" oor:op=\"remove\"/>"));
-                break;
-            case Node::KIND_GROUP:
-                OSL_ASSERT(
-                    dynamic_cast< GroupNode * >(parent.get())->isExtensible());
-                writeData(
-                    handle, RTL_CONSTASCII_STRINGPARAM("<prop oor:name=\""));
-                writeAttributeValue(handle, nodeName);
-                writeData(
-                    handle,
-                    RTL_CONSTASCII_STRINGPARAM("\" oor:op=\"remove\"/>"));
-                break;
-            case Node::KIND_SET:
-                writeData(
-                    handle, RTL_CONSTASCII_STRINGPARAM("<node oor:name=\""));
-                writeAttributeValue(handle, nodeName);
-                writeData(
-                    handle,
-                    RTL_CONSTASCII_STRINGPARAM("\" oor:op=\"remove\"/>"));
-                break;
-            default:
-                OSL_ASSERT(false); // this cannot happen
-                break;
             }
-        }
-        writeData(handle, RTL_CONSTASCII_STRINGPARAM("</item>"));
+            writeData(handle, RTL_CONSTASCII_STRINGPARAM("</item>"));
+        } // else: the element disappears
     } else {
         OSL_ASSERT(node.is());
         rtl::OUString pathRep(

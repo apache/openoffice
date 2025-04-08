@@ -687,5 +687,3 @@ public class _XRowUpdate extends MultiMethodTest {
     }
 
 }  // finish class _XRow
-
-

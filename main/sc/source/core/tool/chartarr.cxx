@@ -608,4 +608,3 @@ sal_Bool ScChartCollection::operator==(const ScChartCollection& rCmp) const
 
 	return sal_True;
 }
-

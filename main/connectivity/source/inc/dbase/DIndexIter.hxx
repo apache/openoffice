@@ -78,4 +78,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_DBASE_INDEXITER_HXX_
-

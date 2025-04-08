@@ -71,4 +71,3 @@ inline SvxFmtKeepItem& SvxFmtKeepItem::operator=( const SvxFmtKeepItem& rKeep )
 }
 
 #endif
-

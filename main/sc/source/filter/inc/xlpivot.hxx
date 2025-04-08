@@ -811,4 +811,3 @@ XclExpStream& operator<<( XclExpStream& rStrm, const XclPTViewEx9Info& rInfo );
 
 // ============================================================================
 #endif
-

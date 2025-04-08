@@ -62,5 +62,3 @@ public class MappingException extends com.sun.star.uno.RuntimeException {
         super(message, context);
     }
 }
-
-

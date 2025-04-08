@@ -56,4 +56,3 @@ class PageMaker_Help : public SpecializedPageMaker
 
 
 #endif
-

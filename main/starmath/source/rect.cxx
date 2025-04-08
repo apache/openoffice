@@ -768,5 +768,3 @@ sal_Bool SmGetGlyphBoundRect(const OutputDevice &rDev,
     rRect = aResult;
 	return bSuccess;
 }
-
-

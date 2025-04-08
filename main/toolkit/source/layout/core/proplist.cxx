@@ -447,4 +447,3 @@ getAttributeProps( PropList &rProps )
 }
 
 }
-

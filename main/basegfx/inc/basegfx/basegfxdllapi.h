@@ -40,4 +40,3 @@
 #endif /*BASEGFX_STATICLIBRARY*/
 
 #endif
-

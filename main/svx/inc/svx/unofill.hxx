@@ -37,4 +37,3 @@ SVX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterfac
 SVX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL SvxUnoDashTable_createInstance( SdrModel* pModel );
 
 #endif // _SVX_UNOFILL_HXX_
-

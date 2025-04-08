@@ -121,4 +121,3 @@ private:
 } // namespace avmedia
 
 #endif // _WINDOW_HXX
-

@@ -55,4 +55,3 @@ APP1STDLIBS = $(APPSTDLIBS)
 # --- Targets ------------------------------------------------------
 	
 .INCLUDE :      target.mk
-

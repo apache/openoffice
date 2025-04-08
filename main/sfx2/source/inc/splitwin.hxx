@@ -125,5 +125,3 @@ public:
 };
 
 #endif // #ifndef _SFXSPLITWIN_HXX
-
-

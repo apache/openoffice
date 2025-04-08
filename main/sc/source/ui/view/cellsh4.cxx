@@ -378,7 +378,3 @@ void ScCellShell::ExecutePage( SfxRequest& rReq )
 	rReq.AppendItem( SfxBoolItem(FN_PARAM_2, bSel) );
 	rReq.Done();
 }
-
-
-
-

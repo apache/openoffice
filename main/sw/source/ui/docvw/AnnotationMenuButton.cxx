@@ -205,4 +205,3 @@ void AnnotationMenuButton::KeyInput( const KeyEvent& rKeyEvt )
 }
 
 } } // end of namespace sw::annotation
-

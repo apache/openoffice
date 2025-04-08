@@ -144,7 +144,7 @@ private:
     ColorPopup maColorPopup;
     LineWidthPopup maLineWidthPopup;
 
-    // images from ressource
+    // images from resource
     Image                                                   maIMGColor;
     Image                                                   maIMGNone;
 

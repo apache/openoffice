@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
-
-
-
 #include <syshelp.hxx>
-
 
 // NOT FULLY DEFINED SERVICES
 #include <string.h>
@@ -38,16 +34,15 @@
 #include <dirent.h>
 #define stricmp strcasecmp
 #else
-#error Must run under unix or windows, please define UNX or WNT.
+#error Must run under Unix or Windows, please define UNX or WNT.
 #endif
-
 
 char C_sSpaceInName[] = "&nbsp;&nbsp;&nbsp;";
 
 void
 WriteName( std::ostream & 		o_rFile,
 		   const Simstr &	i_rIdlDocuBaseDir,
-		   const Simstr &   i_rName,
+		   const Simstr &	i_rName,
 		   E_LinkType		i_eLinkType )
 {
 	if (i_rName.l() == 0)
@@ -92,31 +87,31 @@ WriteName( std::ostream & 		o_rFile,
 			WriteStr( o_rFile, ".html\">" );
 		}
 		else
-		{  	// Should not be reached:
+		{ // Should not be reached:
 			WriteStr(o_rFile, i_rName);
 			return;
 		}
 	}
 	else if ( i_eLinkType == lt_html )
 	{
-		int nKomma = i_rName.pos_first(',');
+		int nComma = i_rName.pos_first(',');
 		int nEnd = i_rName.pos_first(' ');
-		if ( nKomma > -1 )
+		if ( nComma > -1 )
 		{
-			o_rFile.write( i_rName.str(), nKomma );
+			o_rFile.write( i_rName.str(), nComma );
 			WriteStr( o_rFile, ": " );
 
 			WriteStr( o_rFile, "<A HREF=\"" );
 
-			o_rFile.write( i_rName.str(), nKomma );
+			o_rFile.write( i_rName.str(), nComma );
 			WriteStr( o_rFile, ".html#" );
 			if ( nEnd > -1 )
-				o_rFile.write( i_rName.str() + nKomma + 1, nEnd - nKomma );
+				o_rFile.write( i_rName.str() + nComma + 1, nEnd - nComma );
 			else
-				WriteStr( o_rFile, i_rName.str() + nKomma + 1 );
+				WriteStr( o_rFile, i_rName.str() + nComma + 1 );
 			WriteStr( o_rFile, "\">" );
 
-			o_rFile.write( i_rName.str() + nKomma + 1, nEnd - nKomma );
+			o_rFile.write( i_rName.str() + nComma + 1, nEnd - nComma );
 		}
 		else
 		{
@@ -127,7 +122,7 @@ WriteName( std::ostream & 		o_rFile,
 			WriteStr( o_rFile, i_rName );
 		}
 		WriteStr( o_rFile, "</A>" );
-        return;
+		return;
 	}
 
 	if ( pNameEnd != 0 )
@@ -223,10 +218,10 @@ GatherFileNames( List<Simstr> &   	o_sFiles,
 
 	closedir( pDir );
 #else
-#error Must run on unix or windows, please define UNX or WNT.
+#error Must run on Unix or Windows, please define UNX or WNT.
 #endif
 
-	//  gathering from subdirectories: 
+	// gathering from subdirectories:
 	List<Simstr> aSubDirectories;
 	GatherSubDirectories( aSubDirectories, i_sSrcDirectory );
 
@@ -269,7 +264,7 @@ GatherSubDirectories( List<Simstr> &   	o_sSubDirectories,
 	{
 		if (aEntry.attrib == _A_SUBDIR)
 		{
-			// Do not gather . .. and outputtree directories 
+			// Do not gather . .. and outputtree directories
 			if ( strchr(aEntry.name,'.') == 0
 				 && strncmp(aEntry.name, "wnt", 3) != 0
 				 && strncmp(aEntry.name, "unx", 3) != 0 )
@@ -277,8 +272,8 @@ GatherSubDirectories( List<Simstr> &   	o_sSubDirectories,
 				sNew = aEntry.name;
 				o_sSubDirectories.push_back(sNew);
 			}
-		}   // endif (aEntry.attrib == _A_SUBDIR) 
-	}   // end for 
+		} // endif (aEntry.attrib == _A_SUBDIR)
+	} // end for
 	_findclose(hFile);
 	delete [] sFilter;
 
@@ -292,7 +287,7 @@ GatherSubDirectories( List<Simstr> &   	o_sSubDirectories,
 		stat(pEntry->d_name, &aEntryStatus);
 		if ( ( aEntryStatus.st_mode & S_IFDIR ) == S_IFDIR )
 		{
-			// Do not gather . .. and outputtree directories 
+			// Do not gather . .. and outputtree directories
 			if ( strchr(pEntry->d_name,'.') == 0
 				 && strncmp(pEntry->d_name, "wnt", 3) != 0
 				 && strncmp(pEntry->d_name, "unx", 3) != 0 )
@@ -300,11 +295,12 @@ GatherSubDirectories( List<Simstr> &   	o_sSubDirectories,
 				sNew = pEntry->d_name;
 				o_sSubDirectories.push_back(sNew);
 			}
-		}   // endif (aEntry.attrib == _A_SUBDIR)
-	}	// end while
+		} // endif (aEntry.attrib == _A_SUBDIR)
+	} // end while
 	closedir( pDir );
 #else
-#error Must run on unix or windows, please define UNX or WNT.
+#error Must run on Unix or Windows, please define UNX or WNT.
 #endif
 }
 
+/* vim: set noet sw=4 ts=4: */

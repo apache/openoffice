@@ -62,4 +62,3 @@ namespace connectivity
 }
 
 #endif // CONNECTIVITY_DBASE_DCODE_HXX
-

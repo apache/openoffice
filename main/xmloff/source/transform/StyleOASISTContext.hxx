@@ -69,4 +69,3 @@ public:
 };
 
 #endif	//  _XMLOFF_STYLEOASISTCONTEXT_HXX
-

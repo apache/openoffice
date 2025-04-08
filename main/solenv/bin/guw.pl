@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -292,7 +292,7 @@ sub replace_cyg {
 # Return value:  -
 #----------------------------------------------------------
 sub replace_cyg_env {
-    @affected_vars = ( 
+    @affected_vars = (
         'SOLAR_VERSION',
         'SOLARVERSION',
         'SOLARVER',
@@ -319,8 +319,8 @@ sub replace_cyg_env {
             if ( defined $debug ) { print(STDERR "ENV $one_var after : ".$ENV{ $one_var}."\n" );};
         }
     }
-    
-}    
+
+}
 #---------------------------------------------------------------------------
 # main
 @params = @ARGV;
@@ -332,7 +332,7 @@ while ( $command =~ /^-/ )
     {
         replace_cyg_env;
     }
-    
+
     $command = shift(@params);
 }
 if ( (defined $debug_light) or (defined $debug) ) { print( STDERR "Command: $command\n" ); }
@@ -340,4 +340,3 @@ if ( (defined $debug_light) or (defined $debug) ) { print( STDERR "Command: $com
 replace_cyg(\@params);
 if ( (defined $debug_light) or (defined $debug) ) { print(STDERR "\n---------------------\nExecute: $command @params\n----------------\n");};
 exec( "$command", @params) or die( "\nError: guw.pl: executing $command failed!\n" );
-

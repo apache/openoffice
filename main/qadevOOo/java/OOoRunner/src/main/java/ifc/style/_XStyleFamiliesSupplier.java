@@ -33,7 +33,7 @@ import com.sun.star.style.XStyleFamiliesSupplier;
 * <ul>
 *  <li><code> getStyleFamilies()</code></li>
 * </ul> <p>
-* Test is multithread compilant. <p>
+* Test is multithread compliant. <p>
 * @see com.sun.star.style.XStyleFamiliesSupplier
 */
 public class _XStyleFamiliesSupplier extends MultiMethodTest {
@@ -48,4 +48,3 @@ public class _XStyleFamiliesSupplier extends MultiMethodTest {
          tRes.tested("getStyleFamilies()",oObj.getStyleFamilies() != null);
     }
 }
-

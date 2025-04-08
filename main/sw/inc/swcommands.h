@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef SW_SWCOMMANDS_HRC
 #define SW_SWCOMMANDS_HRC
@@ -303,11 +302,11 @@
 #define CMD_FN_ABSTRACT_STARIMPRESS                 ".uno:SendAbstractToStarImpress"
 #define CMD_FN_OUTLINE_TO_CLIPBOARD                 ".uno:SendOutlineToClipboard"
 #define CMD_FN_OUTLINE_TO_IMPRESS                   ".uno:SendOutlineToStarImpress"
-#define CMD_FN_TOOL_ANKER_AT_CHAR                   ".uno:SetAnchorAtChar"
-#define CMD_FN_TOOL_ANKER_CHAR                      ".uno:SetAnchorToChar"
-#define CMD_FN_TOOL_ANKER_FRAME                     ".uno:SetAnchorToFrame"
-#define CMD_FN_TOOL_ANKER_PAGE                      ".uno:SetAnchorToPage"
-#define CMD_FN_TOOL_ANKER_PARAGRAPH                 ".uno:SetAnchorToPara"
+#define CMD_FN_TOOL_ANCHOR_AT_CHAR                  ".uno:SetAnchorAtChar"
+#define CMD_FN_TOOL_ANCHOR_CHAR                     ".uno:SetAnchorToChar"
+#define CMD_FN_TOOL_ANCHOR_FRAME                    ".uno:SetAnchorToFrame"
+#define CMD_FN_TOOL_ANCHOR_PAGE                     ".uno:SetAnchorToPage"
+#define CMD_FN_TOOL_ANCHOR_PARAGRAPH                ".uno:SetAnchorToPara"
 #define CMD_FN_TABLE_SET_COL_WIDTH                  ".uno:SetColumnWidth"
 #define CMD_FN_SET_EXT_MODE                         ".uno:SetExtSelection"
 #define CMD_FN_SET_ADD_MODE                         ".uno:SetMultiSelection"
@@ -349,7 +348,7 @@
 #define CMD_FN_DRAWTEXT_ATTR_DLG                    ".uno:TextAttributes"
 #define CMD_FN_DRAW_WRAP_DLG                        ".uno:TextWrap"
 #define CMD_FN_THESAURUS_DLG                        ".uno:ThesaurusDialog"
-#define CMD_FN_TOOL_ANKER                           ".uno:ToggleAnchorType"
+#define CMD_FN_TOOL_ANCHOR                          ".uno:ToggleAnchorType"
 #define CMD_FN_TOOL_HIERARCHIE                      ".uno:ToggleObjectLayer"
 #define CMD_FN_UNDERLINE_DOUBLE                     ".uno:UnderlineDouble"
 #define CMD_FN_FRAME_UNCHAIN                        ".uno:UnhainFrames"

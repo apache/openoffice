@@ -142,4 +142,3 @@ class PE_Service : public UnoIDL_PE,
 
 
 #endif
-

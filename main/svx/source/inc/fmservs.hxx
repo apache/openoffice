@@ -83,4 +83,3 @@ namespace svxform
 }	// namespace svxform
 
 #endif // _SVX_FMSERVS_HXX
-

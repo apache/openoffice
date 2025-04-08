@@ -139,4 +139,3 @@ $(eval $(call gb_LinkTarget_set_cxx_optimization, \
 endif
 
 # vim: set noet sw=4 ts=4:
-

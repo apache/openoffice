@@ -761,5 +761,3 @@ sal_Bool SvxMarginItem::SetBottomMargin( sal_Int16 nBottom )
 	nBottomMargin = nBottom;
 	return sal_True;
 }
-
-

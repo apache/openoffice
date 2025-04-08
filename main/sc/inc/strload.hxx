@@ -44,4 +44,3 @@ private:
 
 
 #endif // SC_STRLOAD_HXX
-

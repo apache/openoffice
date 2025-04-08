@@ -57,4 +57,3 @@ public:
 };
 
 #endif		// _XMLOFF_PROPERTYHANDLER_CHARHEIGHTTYPES_HXX
-

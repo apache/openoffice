@@ -317,4 +317,3 @@ extern "C" SAL_DLLPUBLIC_EXPORT void*  SAL_CALL createMacabConnection( void* _pD
     pConnection->acquire();
     return pConnection;
 }
-

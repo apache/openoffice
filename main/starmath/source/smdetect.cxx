@@ -553,4 +553,3 @@ UNOREFERENCE< UNOXINTERFACE > SAL_CALL SmFilterDetect::impl_createInstance( cons
 {
     return UNOREFERENCE< UNOXINTERFACE >( *new SmFilterDetect( xServiceManager ) );
 }
-

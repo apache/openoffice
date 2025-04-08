@@ -34,13 +34,13 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.lang.XComponent
+' Required for  com.sun.star.lang.XComponent
  Global oComponentInstance As Object ' it will be disposed
 
-' Requiered for  com.sun.star.drawing.XControlShape
+' Required for  com.sun.star.drawing.XControlShape
  Global oControlToSet As Object
 
-' Requiered for  com.sun.star.drawing.XShapeDescriptor
+' Required for  com.sun.star.drawing.XShapeDescriptor
  Global cShapeType As String
 
 

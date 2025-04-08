@@ -35,7 +35,7 @@ import com.sun.star.ucb.XContentProviderFactory;
 * <ul>
 *  <li><code> createContentProvider()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.ucb.XContentProviderFactory
 */
 public class _XContentProviderFactory extends MultiMethodTest {
@@ -53,4 +53,3 @@ public class _XContentProviderFactory extends MultiMethodTest {
         tRes.tested("createContentProvider()",CP != null);
     }
 }
-

@@ -163,4 +163,3 @@ OUT2BIN+=src/rasqal-config
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
-

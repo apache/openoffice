@@ -144,5 +144,3 @@ private:
 };
 
 #endif // SC_CONDFRMT_HXX_
-
-

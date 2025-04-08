@@ -330,5 +330,3 @@ sal_Bool OutputDevice::GetNativeControlRegion(  ControlType nType,
 
     return bRet;
 }
-
-

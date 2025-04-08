@@ -187,4 +187,3 @@ sal_Bool            RemoveEmbeddedObject( const ::com::sun::star::uno::Reference
 }
 
 #endif
-

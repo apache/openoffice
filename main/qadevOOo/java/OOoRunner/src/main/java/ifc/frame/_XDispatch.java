@@ -236,4 +236,3 @@ public class _XDispatch extends MultiMethodTest {
         tRes.tested("removeStatusListener()", result) ;
     }
 }
-

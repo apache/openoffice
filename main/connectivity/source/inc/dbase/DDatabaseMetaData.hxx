@@ -61,4 +61,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_DBASE_ODATABASEMETADATA_HXX_
-

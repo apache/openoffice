@@ -91,4 +91,3 @@ comphelper_getProcessComponentContext();
 } // extern "C"
 
 #endif // _COMPHELPER_PROCESSFACTORY_HXX_
-

@@ -59,6 +59,3 @@ public:
 };
 
 #endif
-
-
-

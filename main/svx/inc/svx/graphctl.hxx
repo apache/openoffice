@@ -186,4 +186,3 @@ public:
 //#endif // __PRIVATE
 
 #endif // _GRAPHCTL_HXX
-

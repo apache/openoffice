@@ -303,5 +303,3 @@ sal_Bool ScUndoApplyPageStyle::CanRepeat(SfxRepeatTarget& /* rTarget */) const
 {
 	return sal_False;
 }
-
-

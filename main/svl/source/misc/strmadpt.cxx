@@ -1038,4 +1038,3 @@ SvDataPipe_Impl::SeekResult SvDataPipe_Impl::setReadPosition(sal_uInt32
 		                       + (nPosition - m_pReadPage->m_nOffset);
 	return SEEK_OK;
 }
-

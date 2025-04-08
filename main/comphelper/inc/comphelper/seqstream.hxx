@@ -138,5 +138,3 @@ public:
 } // namespace comphelper
 
 #endif //_COMPHELPER_SEQSTREAM_HXX
-
-

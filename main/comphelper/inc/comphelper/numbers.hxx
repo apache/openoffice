@@ -67,4 +67,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // _COMPHELPER_NUMBERS_HXX_
-

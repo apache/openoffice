@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 package complex.dataPilot;
 
@@ -56,10 +54,10 @@ import util.utils;
 public class _XPropertySet {
 
     /**
-     * The object that is testsed.
+     * The object that is tested.
      */
     private XPropertySet oObj = null;
-    
+
     /**
      * The test parameters
      */
@@ -75,7 +73,7 @@ public class _XPropertySet {
     */
     boolean propertyChanged = false;
 
-    
+
     /**
      * The own property change listener
      */
@@ -145,7 +143,7 @@ public class _XPropertySet {
         // this.log = log;
         this.param = param;
     }
-    
+
     /**
     * Tests method <code>getPropertySetInfo</code>. After test completed
     * call {@link #getPropsToTest} method to retrieve different kinds
@@ -246,7 +244,7 @@ public class _XPropertySet {
 
         vetoableChanged = false;
         boolean result = true;
-        
+
         if ( PTT.constrained.equals("none") ) {
             System.out.println("*** No constrained properties found ***");
         } else {
@@ -302,7 +300,7 @@ public class _XPropertySet {
 
         Object gValue = null;
         Object sValue = null;
-        
+
         boolean result = true;
 
         if ( PTT.normal.equals("none") ) {
@@ -396,7 +394,7 @@ public class _XPropertySet {
 
         propertyChanged = false;
         boolean result = true;
-        
+
         if ( PTT.bound.equals("none") ) {
             System.out.println("*** No bound properties found ***");
         } else {
@@ -624,4 +622,3 @@ public class _XPropertySet {
 
 
 }  // finish class _XPropertySet
-

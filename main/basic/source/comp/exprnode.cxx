@@ -480,5 +480,3 @@ void SbiExprNode::FoldConstants()
 			eType = SbxINTEGER;
 	}
 }
-
-

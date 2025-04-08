@@ -71,7 +71,7 @@ namespace utl
 	//=========================================================================
 	//= ModuleRes
 	//=========================================================================
-	/** specialized ResId, using the ressource manager provided by a given <type>OModule</type>
+	/** specialized ResId, using the resource manager provided by a given <type>OModule</type>
 	*/
 	class UNOTOOLS_DLLPUBLIC ModuleRes : public ::ResId
 	{
@@ -196,4 +196,3 @@ namespace utl
 //........................................................................
 
 #endif // UNOTOOLS_INC_UNOTOOLS_COMPONENTRESMODULE_HXX
-

@@ -98,4 +98,3 @@ namespace frm
 //........................................................................
 
 #endif // FORMS_SOURCE_INC_COMPONENTTOOLS_HXX
-

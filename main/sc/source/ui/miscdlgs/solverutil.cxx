@@ -222,4 +222,3 @@ uno::Sequence<beans::PropertyValue> ScSolverUtil::GetDefaults( const rtl::OUStri
 
     return aDefaults;
 }
-

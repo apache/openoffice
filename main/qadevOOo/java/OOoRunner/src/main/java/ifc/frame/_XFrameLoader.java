@@ -60,7 +60,7 @@ import com.sun.star.uno.UnoRuntime;
 *   necessary arguuments for loading  a component. If omitted
 *   then zero length array is passed as parameter</li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.frame.XFrameLoader
 */
 public class _XFrameLoader extends MultiMethodTest {
@@ -71,7 +71,7 @@ public class _XFrameLoader extends MultiMethodTest {
     private PropertyValue[] args = new PropertyValue[0] ;
 
     /**
-    * Implemetation of load listener which geristers all it's calls.
+    * Implementation of load listener which geristers all it's calls.
     */
     protected class TestListener implements XLoadEventListener {
         public boolean finished = false ;
@@ -113,7 +113,7 @@ public class _XFrameLoader extends MultiMethodTest {
                 shortWait() ;
                 frame = dsk.getCurrentFrame() ;
             } catch ( com.sun.star.uno.Exception e ) {
-                // Some exception occured.FAILED
+                // Some exception occurred. FAILED
                 e.printStackTrace( log );
                 throw new StatusException( "Couldn't create a frame.", e );
             }
@@ -203,4 +203,3 @@ public class _XFrameLoader extends MultiMethodTest {
 
     }
 }
-

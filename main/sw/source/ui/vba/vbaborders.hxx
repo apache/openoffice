@@ -56,4 +56,3 @@ public:
 };
 
 #endif //SW_VBA_BORDERS_HXX
-

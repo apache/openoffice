@@ -677,4 +677,3 @@ rtl::OUString SAL_CALL FileProvider::getSystemPathFromFileURL( const rtl::OUStri
 
 	return aSystemPath;
 }
-

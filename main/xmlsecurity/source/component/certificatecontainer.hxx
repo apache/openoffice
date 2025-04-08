@@ -92,4 +92,3 @@ class CertificateContainer : public ::cppu::WeakImplHelper2< ::com::sun::star::l
 
 
 #endif
-

@@ -81,4 +81,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEFIELDDESCGENPAGE_HXX
-

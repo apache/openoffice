@@ -84,4 +84,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_SELECTLABELDIALOG_HXX_
-

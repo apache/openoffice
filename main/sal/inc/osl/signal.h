@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _OSL_SIGNAL_H_
 #define _OSL_SIGNAL_H_
@@ -67,13 +65,13 @@ typedef enum
 #endif
 
 typedef struct
-{	
+{
 	oslSignal	Signal;
 	sal_Int32	UserSignal;
 	void* 		UserData;
 } oslSignalInfo;
 
-#if defined( SAL_W32) ||  defined(SAL_OS2)
+#if defined( SAL_W32) || defined(SAL_OS2)
 #	pragma pack(pop)
 #endif
 
@@ -92,11 +90,11 @@ oslSignalAction SAL_CALL osl_raiseSignal(sal_Int32 UserSignal, void* UserData);
 	On default error reporting is enabled after process startup.
 
 	@param	bEnable [in]
-	Enables or disables error reporting.	
-	
-	@return 
+	Enables or disables error reporting.
+
+	@return
 	sal_True if previous state of error reporting was enabled<br>
-	sal_False if previous state of error reporting was disbaled<br>
+	sal_False if previous state of error reporting was disabled<br>
 */
 
 sal_Bool SAL_CALL osl_setErrorReporting( sal_Bool bEnable );
@@ -106,5 +104,3 @@ sal_Bool SAL_CALL osl_setErrorReporting( sal_Bool bEnable );
 #endif
 
 #endif	/* _OSL_SIGNAL_H_ */
-
-

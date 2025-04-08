@@ -71,5 +71,3 @@ public:
 };
 
 #endif	// _EDITUND2_HXX
-
-

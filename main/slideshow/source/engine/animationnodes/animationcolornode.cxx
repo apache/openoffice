@@ -130,4 +130,3 @@ AnimationActivitySharedPtr AnimationColorNode::createActivity() const
 
 } // namespace internal
 } // namespace slideshow
-

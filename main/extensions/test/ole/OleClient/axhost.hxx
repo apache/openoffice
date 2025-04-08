@@ -53,5 +53,3 @@ public:
 	LRESULT OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled);
 };
 #endif
-
-

@@ -2451,6 +2451,3 @@ void ScOutputData::DrawClipMarks()
 
 	pDev->SetDrawMode(nOldDrawMode);
 }
-
-
-

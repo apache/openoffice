@@ -123,4 +123,3 @@ public class _UnoControlEditModel extends MultiPropertyTest {
         testProperty("TextLineColor", ColorTester) ;
     }          
 }
-

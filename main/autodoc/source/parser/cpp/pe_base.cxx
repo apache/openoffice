@@ -211,8 +211,3 @@ PE_Base::On_inName_SwBracket_Left(const char *)
 
 
 }   // namespace cpp
-
-
-
-
-

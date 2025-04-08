@@ -52,7 +52,7 @@ import com.sun.star.uno.UnoRuntime;
  *  <li> <code>com::sun::star::text::DocumentIndexMark</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.lang.XComponent
  * @see com.sun.star.text.BaseIndexMark
  * @see com.sun.star.text.XTextContent
@@ -138,4 +138,3 @@ public class SwXDocumentIndexMark extends TestCase {
     } // finish method getTestEnvironment
 
  }    // finish class SwXDocumentIndexMark
-

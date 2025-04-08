@@ -251,4 +251,3 @@ int SfxMetricItem::HasMetrics() const
 {
 	return 1;
 }
-

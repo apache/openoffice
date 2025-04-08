@@ -56,4 +56,3 @@ sal_Bool XMLNumRulePropHdl::exportXML( ::rtl::OUString& /*rStrExpValue*/, const 
 { 
 	return sal_False;
 }
-

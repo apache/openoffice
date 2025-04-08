@@ -52,7 +52,7 @@ import com.sun.star.uno.XInterface;
  *  <li> <code>com::sun::star::drawing::Shape</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.lang.XComponent
  * @see com.sun.star.drawing.XShape
  * @see com.sun.star.drawing.XShapeDescriptor
@@ -126,4 +126,3 @@ public class SwXShape extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class SwXShape
-

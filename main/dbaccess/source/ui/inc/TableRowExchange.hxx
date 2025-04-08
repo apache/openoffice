@@ -50,4 +50,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEROW_EXCHANGE_HXX
-

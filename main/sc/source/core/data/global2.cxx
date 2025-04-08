@@ -730,4 +730,3 @@ String ScGlobal::GetDocTabName( const String& rFileName,
 	aDocTab += rTabName;  	// "'Doc'#Tab"
 	return aDocTab;
 }
-

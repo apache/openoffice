@@ -1,7 +1,7 @@
 package CallExternals;
 
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -9,16 +9,16 @@ package CallExternals;
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -241,7 +241,7 @@ sub callperl($$$)
     my $sParams = shift;
     my $line;
     my $error;
-    
+
     log_print("CALLPERL: $perlexe $perlprogram $sParams\n");
 #    if (open(IN_FILE, "$perlexe $sParams 2>&1 |"))
     if (open(IN_FILE, "$perlexe $perlprogram $sParams |"))
@@ -273,7 +273,7 @@ sub setJavaExecutable($)
 #     my $sJava14;
 #     if ($OSNAME eq "MSWin32")
 #     {
-#         if ($sJavaExecutable) 
+#         if ($sJavaExecutable)
 #         {
 #             $sJava14 = $sJavaExecutable;
 #         }
@@ -307,7 +307,7 @@ sub setJavaExecutable($)
 sub getJava15()
 {
     my $sJava15;
-    if ($sJavaExecutable) 
+    if ($sJavaExecutable)
     {
         $sJava15 = $sJavaExecutable;
     }
@@ -359,7 +359,7 @@ sub getJava15()
 sub getJava16()
 {
     my $sJava16;
-    if ($sJavaExecutable) 
+    if ($sJavaExecutable)
     {
         $sJava16 = $sJavaExecutable;
     }
@@ -409,7 +409,7 @@ sub getJava16()
     }
     return $sJava16;
 }
-    
+
 # ------------------------------------------------------------------------------
 sub getJavaExecutable()
 {
@@ -506,10 +506,10 @@ sub ExecSQL($)
 #     my $line;
 #     my $error;
 #     my @result;
-# 
+#
 #     $exe = quoteIfNeed($exe);
 #     $program = quoteIfNeed($program);
-# 
+#
 #     # print "Will send: $exe $sParams\n";
 #     # log_print("CALLEXE: $exe $program $sParams\n");
 #     if (open(IN_FILE, "$exe $program $sParams |"))

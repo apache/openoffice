@@ -131,4 +131,3 @@ protected:
 
 
 #endif // SC_CRNRDLG_HXX
-

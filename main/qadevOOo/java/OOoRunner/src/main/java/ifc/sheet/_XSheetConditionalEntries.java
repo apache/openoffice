@@ -129,5 +129,3 @@ public class _XSheetConditionalEntries extends MultiMethodTest {
         this.disposeEnvironment();
     }
 }  // finish class _XSheetConditionalEntries
-
-

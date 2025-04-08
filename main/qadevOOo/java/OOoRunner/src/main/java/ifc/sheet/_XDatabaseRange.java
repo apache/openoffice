@@ -236,5 +236,3 @@ public class _XDatabaseRange extends MultiMethodTest {
         disposeEnvironment();
     }
 }
-
-

@@ -531,4 +531,3 @@ SbiConstDef* SbiConstDef::GetConstDef()
 {
 	return this;
 }
-

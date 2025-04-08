@@ -72,5 +72,3 @@ private:
 
 
 #endif // SC_SCENDLG_HXX
-
-

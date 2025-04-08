@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -52,7 +52,7 @@ sub analyze_path_of_configurationitem
 		my $path = $oneconfig->{'Path'};
 
 		installer::remover::remove_leading_and_ending_slashes(\$path);	# in scp are some path beginning with "/"
-			
+
 		if ( $path =~ /^\s*(.*?)\/(.*)\s*$/ )
 		{
 			$startpath = $1;
@@ -62,10 +62,10 @@ sub analyze_path_of_configurationitem
 		{
 			installer::exiter::exit_program("ERROR: Unknown format of ConfigurationItem path: $path", "analyze_path_of_configurationitem");
 		}
-	
+
 		# Startpath is now: org.openoffice.Setup
 		# Nodes is now: Office/Factories/com.sun.star.chart.ChartDocument
-	
+
 		# Dividing the startpath into package (org.openoffic) and name (Setup).
 
 		$oneconfig->{'startpath'} = $startpath;	# saving the startpath into the hash
@@ -91,13 +91,13 @@ sub analyze_path_of_configurationitem
 		# Attention: Do not trust the slash
 		# Filters/Filter['StarWriter 5.0 Vorlage/Template']
 		# Menus/New/*['m10']/Title
-		
+
 		if ( $nodes =~ /^(.*\[\')(.*\/.*)(\'\].*)$/ )
 		{
-			$first = $1;	
-			$second = $2;	
+			$first = $1;
+			$second = $2;
 			$third = $3;
-			
+
 			$second =~ s/\//SUBSTITUTEDSLASH/g;	# substituting "/" to "SUBSTITUTEDSLASH"
 			$nodes = $first . $second . $third;
 		}
@@ -110,26 +110,26 @@ sub analyze_path_of_configurationitem
 				$nodes = $2;
 				$nodename = "node". $counter;
 
-				# Special handling for filters. Difference between: 
+				# Special handling for filters. Difference between:
 				# Filter['StarWriter 5.0 Vorlage/Template']	without oor:op="replace"
 				# *['m10'] with oor:op="replace"
 
 				if ( $onenode =~ /^\s*Filter\[\'(.*)\'\].*$/ ) { $oneconfig->{'isfilter'} = 1; }
-								
+
 				# Changing the nodes with brackets:
 				# Filter['StarWriter 5.0 Vorlage/Template']
 				# *['m10']
-				
+
 				if ( $onenode =~ /^.*\[\'(.*)\'\].*$/ )
 				{
 					$onenode = $1;
 					$bracketnode = "bracket_" . $nodename;
 					$oneconfig->{$bracketnode} = 1;
 				}
-				
+
 				$onenode =~ s/SUBSTITUTEDSLASH/\//g;	# substituting "SUBSTITUTEDSLASH" to "/"
 				$oneconfig->{$nodename} = $onenode;
-				
+
 				# special handling for nodes "Factories"
 
 				if ( $onenode eq "Factories" ) { $oneconfig->{'factoriesnode'} = $counter; }
@@ -138,7 +138,7 @@ sub analyze_path_of_configurationitem
 
 			$counter++
 		}
-		
+
 		# and the final node
 
 		if ( $nodes =~ /^\s*Filter\[\'(.*)\'\].*$/ ) { $oneconfig->{'isfilter'} = 1; }
@@ -174,10 +174,10 @@ sub analyze_path_of_configurationitem
 
 		if ( $onenode eq "Factories" ) { $oneconfig->{'factoriesnode'} = $counter; }
 		else { $oneconfig->{'factoriesnode'} = -99; }
-		
+
 		# saving the number of nodes
-		
-		$oneconfig->{'nodenumber'} = $counter;		
+
+		$oneconfig->{'nodenumber'} = $counter;
 	}
 }
 
@@ -194,14 +194,14 @@ sub insert_start_block_into_configfile
 	my $line = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 	push( @{$configfileref}, $line);
 
-	$line = '<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:install="http://openoffice.org/2004/installation" oor:name="FILENAME" oor:package="PACKAGENAME">' . "\n"; 
+	$line = '<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:install="http://openoffice.org/2004/installation" oor:name="FILENAME" oor:package="PACKAGENAME">' . "\n";
 	my $packagename = $oneconfig->{'packagename'};
 	my $name = $oneconfig->{'name'};
 	$line =~ s/PACKAGENAME/$packagename/g;
 	$line =~ s/FILENAME/$name/g;
 	push( @{$configfileref}, $line);
 
-	$line = "\n";		
+	$line = "\n";
 	push( @{$configfileref}, $line);
 }
 
@@ -230,16 +230,16 @@ sub get_node_content
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::configuration::get_node_content : $nodeline"); }
 
 	my $content = "";
-	
+
 	if ( $nodeline =~ /name\=\"(.*?)\"/ )
 	{
-		$content = $1;	
-	}	
+		$content = $1;
+	}
 	else
 	{
 		installer::exiter::exit_program("ERROR: Impossible error in function get_node_content!", "get_node_content");
 	}
-	
+
 	return \$content;
 }
 
@@ -259,7 +259,7 @@ sub get_node_line_number
 	# Attention: Take care of the two title nodes:
 	# Path=org.openoffice.Office.Common/Menus/Wizard/*['m14']/Title
 	# Path=org.openoffice.Office.Common/Menus/Wizard/*['m15']/Title
-	# -> every subnode has to be identical	
+	# -> every subnode has to be identical
 
 	# creating the allnodes string from $oneconfig
 
@@ -298,7 +298,7 @@ sub get_node_line_number
 
 		if (( $nodechanged ) && ($#allnodes > -1))	# a node was found and the node array is not empty
 		{
-			# creating the string to compare with the string $allnodes 
+			# creating the string to compare with the string $allnodes
 
 			my $nodestring = "";
 
@@ -312,7 +312,7 @@ sub get_node_line_number
 			if ( $nodestring eq $allnodes )
 			{
 				# that is exactly the same node
-	
+
 				$linenumber = $i;
 				$linenumber++;	# increasing the linenumber
 				last;
@@ -333,26 +333,26 @@ sub insert_into_config_file
 	my ($oneconfig, $oneconfigfileref) = @_;
 
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::configuration::insert_into_config_file : $oneconfig->{'nodenumber'} : $#{$oneconfigfileref}"); }
-	
+
 	my ($nodename, $nodecontent, $newnodeline, $bracketkey, $line, $insertline);
 
 	# interpreting the nodes, keys and values
-	
+
 	my $nodeline = '<node oor:name="NODECONTENT" REPLACEPART >' . "\n";
 	my $propline = '<prop oor:name="KEYCONTENT" REPLACEPART TYPEPART>' . "\n";
 	my $valueline = '<value SEPARATORPART>VALUECONTENT</value>' . "\n";
 	my $langvalueline = '<value xml:lang="SAVEDLANGUAGE">VALUECONTENT</value>' . "\n";
 	my $propendline = '</prop>' . "\n";
 	my $nodeendline = '</node>' . "\n";
-	
+
 	my $replacepart = 'oor:op="replace"';
 	my $typepart = 'oor:type="xs:VALUETYPE"';	# VALUETYPE can be "string", "boolean", ...
-	
+
 	my $nodecount = $oneconfig->{'nodenumber'};
 	my $styles = $oneconfig->{'Styles'};
 
 	for ( my $i = 1; $i <= $nodecount; $i++ )
-	{		
+	{
 		$insertline = get_node_line_number($i, $oneconfig, $oneconfigfileref);
 
 		if ( $insertline == -1)	# if true, the node does not exist
@@ -360,10 +360,10 @@ sub insert_into_config_file
 			$nodename = "node" . $i;
 			$nodecontent = $oneconfig->{$nodename};
 			$newnodeline = $nodeline;
-			
+
 			$newnodeline =~ s/NODECONTENT/$nodecontent/g;
 
-			# Case1:	
+			# Case1:
 			# Nodes with brackets, need the replacepart 'oor:op="replace"'
 			# Bracket node is set for each node with: bracket_node1=1, bracket_node2=1, ...
 			# Case a: <node oor:name="m0" oor:op="replace">		(Common.xcu needs oor:op="replace")
@@ -371,16 +371,16 @@ sub insert_into_config_file
 			# For case b introducting a special case for Filters
 
 			$bracketkey = "bracket_" . $nodename;
-			
+
 			my $localbracketkey = 0;
-			
+
 			if ( $oneconfig->{$bracketkey} ) { $localbracketkey = $oneconfig->{$bracketkey}; }
-			
-			if ( $localbracketkey == 1 )	# 'oor:op="replace"' is needed 
+
+			if ( $localbracketkey == 1 )	# 'oor:op="replace"' is needed
 			{
 				my $isfilter = 0;
 				if ( $oneconfig->{'isfilter'} ) { $isfilter = $oneconfig->{'isfilter'}; }
-				
+
 				if ( $isfilter == 1 )	# this is a filter
 				{
 					$newnodeline =~ s/REPLACEPART//;
@@ -389,11 +389,11 @@ sub insert_into_config_file
 				{
 					$newnodeline =~ s/REPLACEPART/$replacepart/;
 				}
-				
+
 				$newnodeline =~ s/\s*\>/\>/;	# removing resulting whitespaces
 			}
 
-			# Case2:	
+			# Case2:
 			# Nodes below a Node "Factories", also need the replacepart 'oor:op="replace"'
 			# This is saved in $oneconfig->{'factoriesnode'}. If not set, the value is "-99"
 
@@ -403,14 +403,14 @@ sub insert_into_config_file
 				$newnodeline =~ s/\s*\>/\>/;	# removing resulting whitespaces
 			}
 
-			# Case3:	
+			# Case3:
 			# In all other cases, REPLACEPART in nodes can be removed
 
 			$newnodeline =~ s/REPLACEPART//;
 			$newnodeline =~ s/\s*\>/\>/;	# removing resulting whitespaces
 
 			# Finding the correct place for inserting the node
-			
+
 			if ( $i == 1 )	# this is a toplevel node
 			{
 				push(@{$oneconfigfileref}, $newnodeline);
@@ -419,22 +419,22 @@ sub insert_into_config_file
 			else
 			{
 				# searching for the parent node
-				
+
 				my $parentnumber = $i-1;
 				$insertline = get_node_line_number($parentnumber, $oneconfig, $oneconfigfileref);
 				splice(@{$oneconfigfileref}, $insertline, 0, ($newnodeline, $nodeendline));
 			}
 		}
-	}	
+	}
 
-	# Setting variables $isbracketnode and $isfactorynode for the properties 
+	# Setting variables $isbracketnode and $isfactorynode for the properties
 
 
 	my $isbracketnode = 0;
-	my $isfactorynode = 0;	
+	my $isfactorynode = 0;
 
 	for ( my $i = 1; $i <= $nodecount; $i++ )
-	{		
+	{
 		$nodename = "node" . $i;
 		$bracketkey = "bracket_" . $nodename;
 
@@ -442,7 +442,7 @@ sub insert_into_config_file
 		if ( $oneconfig->{$bracketkey} ) { $localbracketkey = $oneconfig->{$bracketkey}; }
 
 		if ( $localbracketkey == 1 ) { $isbracketnode = 1;	}
-		if ( $i == $oneconfig->{'factoriesnode'} ) { $isfactorynode = 1; }	
+		if ( $i == $oneconfig->{'factoriesnode'} ) { $isfactorynode = 1; }
 	}
 
 	# now all nodes exist, and the key and value can be inserted into the configfile
@@ -471,7 +471,7 @@ sub insert_into_config_file
 
 	my $key = $oneconfig->{'Key'};
 	$newpropline =~ s/KEYCONTENT/$key/;
-	
+
 	my $valuetype;
 
 	if ( $styles =~ /CFG_STRING\b/ ) { $valuetype = "string"; }
@@ -479,7 +479,7 @@ sub insert_into_config_file
 	elsif ( $styles =~ /CFG_BOOLEAN/ ) { $valuetype = "boolean"; }
 	elsif ( $styles =~ /CFG_STRINGLIST/ ) { $valuetype = "string-list"; }
 #	elsif ( $styles =~ /CFG_STRINGLIST/ ) { $valuetype = "string-list oor:separator=\"\|\""; }
-	else 
+	else
 	{
 		installer::exiter::exit_program("ERROR: Unknown configuration value type: $styles", "insert_into_config_file");
 	}
@@ -492,7 +492,7 @@ sub insert_into_config_file
 		$newpropline =~ s/REPLACEPART//;
 		$newpropline =~ s/TYPEPART//;
 		$newpropline =~ s/\s*\>/\>/;	# removing resulting whitespaces
-	}	
+	}
 
 	# Case 3:
 	# Properties below a "bracket" node do not need a 'oor:op="replace"', except they are iso-codes
@@ -514,7 +514,7 @@ sub insert_into_config_file
 		}
 
 		$newpropline =~ s/\s*\>/\>/;	# removing resulting whitespaces
-	}	
+	}
 
 	# Case 4:
 	# if the flag CREATE is set, the properties get 'oor:op="replace"' and 'oor:type="xs:VALUETYPE"'
@@ -541,9 +541,9 @@ sub insert_into_config_file
 	# finally the value can be set
 
 	my $value = $oneconfig->{'Value'};
-	
+
 	# Some values in setup script are written during installation process by the setup. These
-	# have values like "<title>". This will lead to an error, because of the brackets. Therefore the 
+	# have values like "<title>". This will lead to an error, because of the brackets. Therefore the
 	# brackets have to be removed.
 
 	# ToDo: Substituting the setup replace variables
@@ -555,8 +555,8 @@ sub insert_into_config_file
 
 	# Deal with list separators
 	my $separatorpart = '';
-	if ( ($valuetype eq "string-list") && ($value =~ /\|/) ) 
-    { 
+	if ( ($valuetype eq "string-list") && ($value =~ /\|/) )
+    {
 	    $separatorpart = 'oor:separator="|"';
     }
 
@@ -571,17 +571,17 @@ sub insert_into_config_file
 
 	my $newvalueline;
 
-	if (!($oneconfig->{'isisocode'} ))	# this is the simpe case 
+	if (!($oneconfig->{'isisocode'} ))	# this is the simpe case
 	{
 		# my $valueline = '<value SEPARATORPART>VALUECONTENT</value>' . "\n";
-		$newvalueline = $valueline;  
+		$newvalueline = $valueline;
 		$newvalueline =~ s/VALUECONTENT/$value/g;
 		$newvalueline =~ s/SEPARATORPART/$separatorpart/;
 	}
 	else
 	{
 		# my $langvalueline = '<value xml:lang="SAVEDLANGUAGE">VALUECONTENT</value>' . "\n";
-		$newvalueline = $langvalueline;  
+		$newvalueline = $langvalueline;
 		$newvalueline =~ s/VALUECONTENT/$value/;
 		my $savedlanguage = $oneconfig->{'Key'};
 		$newvalueline =~ s/SAVEDLANGUAGE/$savedlanguage/;
@@ -596,14 +596,14 @@ sub insert_into_config_file
 
 	# The key has to be written after the line, containing the complete node
 
-	$insertline = get_node_line_number($nodecount, $oneconfig, $oneconfigfileref); 
+	$insertline = get_node_line_number($nodecount, $oneconfig, $oneconfigfileref);
 
 	if ( $oneconfig->{'ismultilingual'} )
 	{
 		if ( $newpropline eq ${$oneconfigfileref}[$insertline] )
 		{
-			if (!($newvalueline eq ${$oneconfigfileref}[$insertline+1]))	# only include, if the value not already exists (example: value="FALSE" for many languages) 
-			{			
+			if (!($newvalueline eq ${$oneconfigfileref}[$insertline+1]))	# only include, if the value not already exists (example: value="FALSE" for many languages)
+			{
 				splice(@{$oneconfigfileref}, $insertline+1, 0, ($newvalueline));	# only the value needs to be added
 			}
 		}
@@ -615,10 +615,10 @@ sub insert_into_config_file
 	else
 	{
 		splice(@{$oneconfigfileref}, $insertline, 0, ($newpropline, $newvalueline, $propendline));
-	}	
-	
+	}
+
 	return $oneconfigfileref;
-}	
+}
 
 ##########################################################
 # Inserting tabs for better view into configuration file
@@ -660,7 +660,7 @@ sub insert_tabs_into_configfile
 				$counter--;
 			}
 		}
-	
+
 		if ($counter > 0)
 		{
 			for ( my $j = 0; $j < $counter; $j++ )
@@ -668,7 +668,7 @@ sub insert_tabs_into_configfile
 				$line = "\t" . $line;
 			}
 		}
-		
+
 		${$configfileref}[$i] = $line;
 	}
 }
@@ -688,13 +688,13 @@ sub collect_all_configuration_items
 	for ( my $i = 0; $i <= $#{$configurationitemsref}; $i++ )
 	{
 		my $oneconfig = ${$configurationitemsref}[$i];
-		
+
 		if (! installer::existence::exists_in_array($oneconfig->{$item}, \@allitems))
 		{
 			push(@allitems, $oneconfig->{$item});
 		}
 	}
-	
+
 	return \@allitems;
 }
 
@@ -707,19 +707,19 @@ sub get_all_configitems_at_module
 	my ($moduleid, $configurationitemsref) = @_;
 
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::configuration::get_all_configitems_at_module : $moduleid : $#{$configurationitemsref}"); }
-	
+
 	my @moduleconfigurationitems = ();
-	
+
 	for ( my $i = 0; $i <= $#{$configurationitemsref}; $i++ )
 	{
 		my $oneconfig = ${$configurationitemsref}[$i];
-		
+
 		if ( $oneconfig->{'ModuleID'} eq $moduleid )
-		{		
+		{
 			push(@moduleconfigurationitems, $oneconfig);
 		}
 	}
-	
+
 	return \@moduleconfigurationitems;
 }
 
@@ -746,22 +746,22 @@ sub save_and_zip_configfile
 	# zipping the configfile
 
 	my $returnvalue = 1;
-		
+
 	my $zipfilename = $shortsavefilename;
 	$zipfilename =~ s/\.xcu/\.zip/;
-		
+
 	my $currentdir = cwd();
 	if ( $installer::globals::iswin ) { $currentdir =~ s/\//\\/g; }
 
 	chdir($configdir);
-	
+
  	my $systemcall = "$installer::globals::zippath -q -m $zipfilename $shortsavefilename";
 	$returnvalue = system($systemcall);
 
 	chdir($currentdir);
 
     $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
-		
+
 	if ($returnvalue)
 	{
         $installer::logger::Lang->printf("ERROR: Could not zip %s to %s\n", $savefilename, $zipfilename);
@@ -770,7 +770,7 @@ sub save_and_zip_configfile
 	{
         $installer::logger::Lang->printf("SUCCESS: Zipped file %s to %s\n", $savefilename, $zipfilename);
 	}
-	
+
 	return $zipfilename;
 }
 
@@ -783,7 +783,7 @@ sub add_zipfile_into_filelist
 	my ($zipfilename, $configdir, $filesarrayref, $onemodule) = @_;
 
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::configuration::add_zipfile_into_filelist: $zipfilename : $configdir : $#{$filesarrayref} : $onemodule"); }
-	
+
 	my $longzipfilename = $configdir . $installer::globals::separator . $zipfilename;
 	my $gid = "gid_" . $zipfilename;
 	$gid =~ s/\./\_/g;
@@ -795,8 +795,8 @@ sub add_zipfile_into_filelist
 	my $vclgid = "gid_File_Lib_Vcl";
 	my $vclfile = installer::existence::get_specified_file($filesarrayref, $vclgid);
 
-	# copying all base data	
-	installer::converter::copy_item_object($vclfile, \%configfile);			
+	# copying all base data
+	installer::converter::copy_item_object($vclfile, \%configfile);
 
 	# and overriding all new data
 	$configfile{'ismultilingual'} = 0;
@@ -808,7 +808,7 @@ sub add_zipfile_into_filelist
 	$configfile{'destination'} = "share" . $installer::globals::separator . "uno_packages" . $installer::globals::separator . $zipfilename;
 	$configfile{'modules'} = $onemodule;	# assigning the file to the correct module!
 
-	push(@{$filesarrayref}, \%configfile);	
+	push(@{$filesarrayref}, \%configfile);
 }
 
 #######################################################
@@ -851,15 +851,15 @@ sub create_configuration_files
 
 			my @oneconfigfile = ();
 			my $oneconfigfileref = \@oneconfigfile;
-		
+
 			my $startblockwritten = 0;
-	
+
 			for ( my $k = 0; $k <= $#{$moduleconfigitems}; $k++ )
 			{
 				my $oneconfig = ${$moduleconfigitems}[$k];
 
 				my $startpath = $oneconfig->{'startpath'};
-			
+
 				if ($startpath eq $onefile)
 				{
 					if (!($startblockwritten))	# writing some global lines into the xcu file
@@ -867,16 +867,16 @@ sub create_configuration_files
 						insert_start_block_into_configfile($oneconfigfileref, $oneconfig);
 						$startblockwritten = 1;
 					}
-				
-					$oneconfigfileref = insert_into_config_file($oneconfig, $oneconfigfileref);	
+
+					$oneconfigfileref = insert_into_config_file($oneconfig, $oneconfigfileref);
 				}
 			}
 
 			insert_end_block_into_configfile($oneconfigfileref);
-		
+
 			# inserting tabs for nice appearance
 			insert_tabs_into_configfile($oneconfigfileref);
-		
+
 			# saving the configfile
 			my $zipfilename = save_and_zip_configfile($oneconfigfileref, $onefile, $onemodule, $configdir);
 

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -38,9 +38,9 @@ use installer::systemactions;
 sub is_upx_candidate
 {
 	my ( $filename, $onefile ) = @_;
-	
+
 	my $useupx = 0;
-	
+
 	if (( $filename =~ /\.so\s*$/ ) ||
 		( $filename =~ /\.dll\s*$/ ) ||
 		( $filename =~ /\.exe\s*$/ ) ||
@@ -50,8 +50,8 @@ sub is_upx_candidate
 		if ( $onefile->{'Styles'} ) { $styles = $onefile->{'Styles'}; }
 		if ( ! ( $styles =~ /\bDONT_UPX\b/ )) { $useupx = 1; }
 	}
-	
-	return $useupx;		
+
+	return $useupx;
 }
 
 #####################################################################
@@ -61,15 +61,15 @@ sub is_upx_candidate
 sub do_upx
 {
 	my ( $filename ) = @_;
-	
+
 	my $compression = "9";
 	my $systemcall = $installer::globals::upxfile . " -" . $compression . " " . $filename;
-	
+
 	my $returnvalue = system($systemcall);
 
 	my $infoline = "Systemcall: $systemcall\n";
 	$installer::logger::Lang->print($infoline);
-		
+
 	if ($returnvalue)
 	{
 		$infoline = "WARNING: Could not successfully upx $filename! Using original file.\n";
@@ -80,7 +80,7 @@ sub do_upx
 		$infoline = "SUCCESS: upx $filename!\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	return $returnvalue;
 }
 
@@ -94,7 +94,7 @@ sub upx_on_libraries
 
 	installer::logger::include_header_into_logfile("UPX'ing files:");
 	my $infoline = "";
-	
+
 	if ( ! $installer::globals::upx_in_path )
 	{
 		$installer::logger::Lang->print("\n");
@@ -122,16 +122,16 @@ sub upx_on_libraries
 			{
 				my $shortfilename = $sourcefilename;
 				installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$shortfilename);
-			
+
 				$installer::logger::Lang->print("\n");
 				$installer::logger::Lang->printf("Upx: %s", $shortfilename);
 
 				# copy file into directory for stripped libraries
 				my $onelanguage = ${$filelist}[$i]->{'specificlanguage'};
-	
+
 				# files without language into directory "00"
 				if ($onelanguage eq "") { $onelanguage = "00"; }
-			
+
 				my $upxdir = $upxdirbase . $installer::globals::separator . $onelanguage;
 				installer::systemactions::create_directory($upxdir);	# creating language specific subdirectories
 
@@ -141,11 +141,11 @@ sub upx_on_libraries
 				# change sourcepath in files collector
 				${$filelist}[$i]->{'sourcepath'} = $destfilename;
 
-				# do upx on file	
+				# do upx on file
 				my $return = do_upx($destfilename);
-			
+
 				# Using original file, if upx was not successful (no reason for error)
-				if ( $return ) { ${$filelist}[$i]->{'sourcepath'} = $sourcefilename; } 
+				if ( $return ) { ${$filelist}[$i]->{'sourcepath'} = $sourcefilename; }
 			}
 		}
 	}

@@ -175,5 +175,3 @@ public:
 extern void LOOPING_LOUIE_LIGHT( bool bCondition, const SwTxtFrm& rTxtFrm );
 
 #endif  //_LAYOUTER_HXX
-
-

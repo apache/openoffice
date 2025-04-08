@@ -47,4 +47,3 @@ class AtomContainer
 };
 
 #endif // _RSCHASH_HXX
-

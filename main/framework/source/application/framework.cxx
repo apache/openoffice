@@ -216,7 +216,7 @@ void FrameWork::Main()
 		Reference< XDesktop > xDesktop( xGlobalServiceManager->createInstance( SERVICENAME_DESKTOP ), UNO_QUERY );
 		// Safe impossible cases
 		// We need the desktop for working.
-		LOG_ASSERT( !(xDesktop.is()==sal_False), "FrameWork::Main()\nCan't instanciate desktop!Servicename unknown?\n" )
+		LOG_ASSERT( !(xDesktop.is()==sal_False), "FrameWork::Main()\nCan't instantiate desktop!Servicename unknown?\n" )
 
 		//---------------------------------------------------------------------------------------------------------
 		// c) Initialize connection to possible PlugIn dll.

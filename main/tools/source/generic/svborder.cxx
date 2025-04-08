@@ -70,4 +70,3 @@ Rectangle & operator -= ( Rectangle & rRect, const SvBorder & rBorder )
 	rRect.SetSize( aS );
 	return rRect;
 }
-

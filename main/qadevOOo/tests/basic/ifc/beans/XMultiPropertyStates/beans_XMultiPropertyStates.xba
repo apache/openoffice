@@ -153,7 +153,7 @@ On Error Goto ErrHndl
 
     oObj.setAllPropertiesToDefault()
     
-    Out.Log("Checking that all properties are now in DEFAULT state excepting may be those which 'cann't be default'")
+    Out.Log("Checking that all properties are now in DEFAULT state excepting may be those which 'can't be default'")
     aStates = oObj.getPropertyStates(aPropNames)
     for i = 0 to ubound(aStates)
         if aStates(i) &lt;&gt; com.sun.star.beans.PropertyState.DEFAULT_VALUE then

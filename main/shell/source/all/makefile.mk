@@ -65,4 +65,3 @@ SLOFILES_X64=$(SLO_X64)$/xml_parser.obj
 INCLUDE!:=$(subst,/stl, $(INCLUDE))
 .ENDIF 
 .INCLUDE :  tg_wntx64.mk
-

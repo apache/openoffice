@@ -219,4 +219,3 @@ public:
 	virtual CreateTabPage				GetSdOptionsSnapTabPageCreatorFunc() = 0;
 };
 #endif
-

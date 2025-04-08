@@ -74,7 +74,7 @@ public class CheckXCellRangesQuery {
             System.out.println( "creating a Spreadsheet document" );
             m_xSheetDoc = SOF.createCalcDoc(null);
         } catch ( com.sun.star.uno.Exception e ) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace(  );
             fail( "Couldn?t create document");
         }

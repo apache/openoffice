@@ -415,4 +415,3 @@ SwVbaView::getServiceNames()
 	}
 	return aServiceNames;
 }
-

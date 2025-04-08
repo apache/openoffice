@@ -77,4 +77,3 @@ class SanExtensionImpl : public ::cppu::WeakImplHelper1<
 } ;
 
 #endif	// _CERTIFICATEEXTENSION_XMLSECIMPL_HXX_
-

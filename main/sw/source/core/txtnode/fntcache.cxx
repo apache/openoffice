@@ -2756,4 +2756,3 @@ sal_Bool SwDrawTextInfo::ApplyAutoColor( Font* pFont )
 
     return sal_False;
 }
-

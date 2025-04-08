@@ -1050,21 +1050,21 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			rSh.CallChgLnk();
 		}
 		break;
-		case FN_TOOL_ANKER:
+		case FN_TOOL_ANCHOR:
 			break;
-		case FN_TOOL_ANKER_PAGE:
-		case FN_TOOL_ANKER_PARAGRAPH:
-		case FN_TOOL_ANKER_CHAR:
-		case FN_TOOL_ANKER_AT_CHAR:
-		case FN_TOOL_ANKER_FRAME:
+		case FN_TOOL_ANCHOR_PAGE:
+		case FN_TOOL_ANCHOR_PARAGRAPH:
+		case FN_TOOL_ANCHOR_CHAR:
+		case FN_TOOL_ANCHOR_AT_CHAR:
+		case FN_TOOL_ANCHOR_FRAME:
 		{
-			RndStdIds eSet = nSlot == FN_TOOL_ANKER_PAGE
+			RndStdIds eSet = nSlot == FN_TOOL_ANCHOR_PAGE
                                 ? FLY_AT_PAGE
-								: nSlot == FN_TOOL_ANKER_PARAGRAPH
+								: nSlot == FN_TOOL_ANCHOR_PARAGRAPH
                                     ? FLY_AT_PARA
-									: nSlot == FN_TOOL_ANKER_FRAME
+									: nSlot == FN_TOOL_ANCHOR_FRAME
 										? FLY_AT_FLY
-										: nSlot == FN_TOOL_ANKER_CHAR
+										: nSlot == FN_TOOL_ANCHOR_CHAR
                                             ? FLY_AS_CHAR
                                             : FLY_AT_CHAR;
 			rSh.StartUndo();
@@ -1131,7 +1131,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 					break;
 
                 case FLY_AT_CHAR:
-					//links, von links, rechts, oben,  Durchlauf
+					// links, von links, rechts, oben,  Durchlauf
 					if(eSurround != SURROUND_THROUGHT)
 						aSet.Put(SwFmtSurround(SURROUND_THROUGHT));
 
@@ -1151,7 +1151,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			}
 			rSh.EndUndo();
 
-			GetView().GetViewFrame()->GetBindings().Invalidate( FN_TOOL_ANKER );
+			GetView().GetViewFrame()->GetBindings().Invalidate( FN_TOOL_ANCHOR );
 		}
 		break;
 
@@ -1619,12 +1619,12 @@ void SwBaseShell::GetState( SfxItemSet &rSet )
 			}
 			break;
 
-			case FN_TOOL_ANKER:
-			case FN_TOOL_ANKER_PAGE:
-			case FN_TOOL_ANKER_PARAGRAPH:
-			case FN_TOOL_ANKER_CHAR:
-			case FN_TOOL_ANKER_AT_CHAR:
-			case FN_TOOL_ANKER_FRAME:
+			case FN_TOOL_ANCHOR:
+			case FN_TOOL_ANCHOR_PAGE:
+			case FN_TOOL_ANCHOR_PARAGRAPH:
+			case FN_TOOL_ANCHOR_CHAR:
+			case FN_TOOL_ANCHOR_AT_CHAR:
+			case FN_TOOL_ANCHOR_FRAME:
 			{
 				sal_Bool bObj = 0 != rSh.IsObjSelected();
 				sal_Bool bParentCntProt = rSh.IsSelObjProtected( FLYPROTECT_CONTENT|FLYPROTECT_PARENT ) != 0;
@@ -1638,22 +1638,22 @@ void SwBaseShell::GetState( SfxItemSet &rSet )
 						rSh.GetFlyFrmAttr(aSet);
 					RndStdIds eSet = ((SwFmtAnchor&)aSet.Get(RES_ANCHOR)).GetAnchorId();
                     const sal_Bool bSet =
-                           ((nWhich == FN_TOOL_ANKER_PAGE) &&
+                           ((nWhich == FN_TOOL_ANCHOR_PAGE) &&
                             (eSet == FLY_AT_PAGE))
-                        || ((nWhich == FN_TOOL_ANKER_PARAGRAPH) &&
+                        || ((nWhich == FN_TOOL_ANCHOR_PARAGRAPH) &&
                             (eSet == FLY_AT_PARA))
-                        || ((nWhich == FN_TOOL_ANKER_FRAME) &&
+                        || ((nWhich == FN_TOOL_ANCHOR_FRAME) &&
                             (eSet == FLY_AT_FLY))
-                        || ((nWhich == FN_TOOL_ANKER_AT_CHAR) &&
+                        || ((nWhich == FN_TOOL_ANCHOR_AT_CHAR) &&
                             (eSet == FLY_AT_CHAR))
-                        || ((nWhich == FN_TOOL_ANKER_CHAR) &&
+                        || ((nWhich == FN_TOOL_ANCHOR_CHAR) &&
                             (eSet == FLY_AS_CHAR));
-					if(nWhich != FN_TOOL_ANKER)
+					if(nWhich != FN_TOOL_ANCHOR)
 					{
 						sal_uInt16 nHtmlMode = ::GetHtmlMode(GetView().GetDocShell());
-						if( ( nWhich == FN_TOOL_ANKER_PAGE &&
+						if( ( nWhich == FN_TOOL_ANCHOR_PAGE &&
 							  ((HTMLMODE_ON & nHtmlMode) && (0 == (nHtmlMode & HTMLMODE_SOME_ABS_POS)))) ||
-                            ( nWhich == FN_TOOL_ANKER_FRAME && !rSh.IsFlyInFly() ) )
+                            ( nWhich == FN_TOOL_ANCHOR_FRAME && !rSh.IsFlyInFly() ) )
 							rSet.DisableItem(nWhich);
 						else
 							rSet.Put(SfxBoolItem(nWhich, bSet));
@@ -1665,19 +1665,19 @@ void SwBaseShell::GetState( SfxItemSet &rSet )
 						switch (eSet)
 						{
                             case FLY_AT_PAGE:
-								nSlotId = FN_TOOL_ANKER_PAGE;
+								nSlotId = FN_TOOL_ANCHOR_PAGE;
 							break;
                             case FLY_AT_PARA:
-								nSlotId = FN_TOOL_ANKER_PARAGRAPH;
+								nSlotId = FN_TOOL_ANCHOR_PARAGRAPH;
 							break;
 							case FLY_AS_CHAR:
-								nSlotId = FN_TOOL_ANKER_CHAR;
+								nSlotId = FN_TOOL_ANCHOR_CHAR;
 							break;
                             case FLY_AT_CHAR:
-								nSlotId = FN_TOOL_ANKER_AT_CHAR;
+								nSlotId = FN_TOOL_ANCHOR_AT_CHAR;
 							break;
 							case FLY_AT_FLY:
-								nSlotId = FN_TOOL_ANKER_FRAME;
+								nSlotId = FN_TOOL_ANCHOR_FRAME;
 							break;
 							default:
 								;
@@ -1764,7 +1764,7 @@ void SwBaseShell::GetState( SfxItemSet &rSet )
 						break;
 						case FN_FRAME_WRAP_CONTOUR:
 							bDisable |= bHtmlMode;
-                            //no contour available whenn no wrap or wrap through is set
+                            //no contour available when no wrap or wrap through is set
                             bDisable |= (nSurround == SURROUND_NONE || nSurround == SURROUND_THROUGHT);
 							bSet = rWrap.IsContour();
 							if( !bDisable )
@@ -2967,4 +2967,3 @@ void SwBaseShell::ExecField( SfxRequest& rReq )
 			ASSERT(sal_False, falscher Dispatcher);
 	}
 }
-

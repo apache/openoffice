@@ -318,4 +318,3 @@ S_OwnerStack::CloseEnum()
 
 
 #endif
-

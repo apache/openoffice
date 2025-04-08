@@ -586,4 +586,3 @@ namespace svxform
 }   // namespace svxform
 
 #endif	// _SVX_FMCTRLER_HXX
-

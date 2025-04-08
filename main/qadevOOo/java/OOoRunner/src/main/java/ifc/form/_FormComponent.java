@@ -36,4 +36,3 @@ import lib.MultiPropertyTest;
 public class _FormComponent extends MultiPropertyTest {
 
 }  // finish class _FormComponent
-

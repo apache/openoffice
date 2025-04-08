@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,20 +8,20 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 # ***********************************************************************
-# Description: 
+# Description:
 # Filename:    osarch.pm
 # Author:       EG
 # Date:        28.10.96
@@ -88,13 +88,13 @@ chop( $m_str, $s_str );
 			   "00245D29E000",	"rs6000",		# segv
 			   "00245C46E000",	"rs6000",		# bus
 			   "002012974600",	"rs6000",		# tango
-			   "0006404C4C00",	"rs6000",		# jive 
+			   "0006404C4C00",	"rs6000",		# jive
 			   "2003",			"g3",			# ezopen4
 			   "i86pc",			"x86",			# blauwal
 			   "i386",			"x86",			# SCO_SV, NetBSD, FreeBSD
 			   "i486",			"x86",			# tiger
 			   "i586",			"x86",			# blauwal
-			   "i686",			"x86",			
+			   "i686",			"x86",
 			   "prep",			"ppc",			# hooge
 			   "ppc",			"ppc",			# ppc-linux
 			   "alpha",			"alpha",
@@ -116,13 +116,13 @@ chop( $m_str, $s_str );
 			   "00245D29E000",	"-DRS6000",		# segv
 			   "00245C46E000",	"-DRS6000",		# segv
 			   "002012974600",	"-DRS6000",		# tango
-			   "0006404C4C00",	"-DRS6000",		# jive 
+			   "0006404C4C00",	"-DRS6000",		# jive
 			   "2003",			"-DG3",			# ezopen4
 			   "i86pc",			"-DX86 -DINTEL",# gepard
 			   "i386",			"-DX86",		# SCO_SV, NetBSD, FreeBSD
 			   "i486",			"-DX86",		# tiger
 			   "i586",			"-DX86",		# blauwal
-			   "i686",			"-DX86",		# 
+			   "i686",			"-DX86",		#
 			   "prep",			"-DPPC",	   	# hooge
 			   "ppc",			"-DPPC",	   	# ppc-linux
 			   "alpha",			"-DALPHA",		# mars
@@ -144,13 +144,13 @@ chop( $m_str, $s_str );
 			   "00245D29E000",	"p",		# segv
 			   "00245C46E000",	"p",		# segv
 			   "002012974600",	"p",		# tango
-			   "0006404C4C00",	"p",		# jive 
+			   "0006404C4C00",	"p",		# jive
 			   "2003",			"g",		# ezopen4
 			   "i86pc",			"i",		# gepard
 			   "i386",			"i",		# SCO_SV, NetBSD, FreeBSD
 			   "i486",			"i",		# tiger
 			   "i586",			"i",		# blauwal
-			   "i686",			"i",	
+			   "i686",			"i",
 			   "prep",			"p",	   	# hooge
 			   "ppc",			"p",	   	# ppc-linux
 			   "alpha",			"a",		# mars

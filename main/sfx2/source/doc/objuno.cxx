@@ -1343,4 +1343,3 @@ void SAL_CALL  SfxStandaloneDocumentInfoObject::storeIntoURL(const ::rtl::OUStri
 	if ( !bOK )
 		throw task::ErrorCodeIOException( ::rtl::OUString(), uno::Reference< uno::XInterface >(), ERRCODE_IO_CANTWRITE );
 }
-

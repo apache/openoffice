@@ -537,4 +537,3 @@ namespace dbaccess
 
 }
 #endif // DBACCESS_CORE_API_ROWSET_HXX
-

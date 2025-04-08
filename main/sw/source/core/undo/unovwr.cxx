@@ -494,5 +494,3 @@ void _UndoTransliterate_Data::SetChangeAtNode( SwDoc& rDoc )
 		}
 	}
 }
-
-

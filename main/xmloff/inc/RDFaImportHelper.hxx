@@ -97,4 +97,3 @@ public:
 } // namespace xmloff
 
 #endif // RDFAIMPORTHELPER_HXX
-

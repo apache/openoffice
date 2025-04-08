@@ -49,4 +49,3 @@ public:
 };
 
 #endif // #ifndef _SFX_ALIENWARN_HXX
-

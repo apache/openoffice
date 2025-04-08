@@ -100,4 +100,3 @@ NameClashDialog::NameClashDialog( Window* pParent, ResMgr* pResMgr,
 	else
 	    maEDNewName.SetText( rClashingName );
 }
-

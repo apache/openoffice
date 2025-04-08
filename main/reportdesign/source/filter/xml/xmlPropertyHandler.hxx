@@ -42,4 +42,3 @@ namespace rptxml
 }// rptxml
 // -----------------------------------------------------------------------------
 #endif //RPT_XMLPROPHANDLER_HXX
-

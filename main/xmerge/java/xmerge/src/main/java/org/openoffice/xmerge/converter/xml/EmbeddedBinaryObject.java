@@ -118,4 +118,3 @@ public class EmbeddedBinaryObject extends EmbeddedObject {
     }
     
 }
-

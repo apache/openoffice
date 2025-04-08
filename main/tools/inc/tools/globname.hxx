@@ -131,4 +131,3 @@ private:
 };
 
 #endif // _GLOBNAME_HXX
-

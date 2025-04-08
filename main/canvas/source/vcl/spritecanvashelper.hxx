@@ -172,4 +172,3 @@ namespace vclcanvas
 }
 
 #endif /* _VCLCANVAS_SPRITECANVASHELPER_HXX_ */
-

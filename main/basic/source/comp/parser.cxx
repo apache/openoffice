@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
@@ -27,9 +25,9 @@
 #include "sbcomp.hxx"
 #include <com/sun/star/script/ModuleType.hpp>
 
-struct SbiParseStack {				// "Stack" fuer Statement-Blocks
-	SbiParseStack* pNext;  			// Chain
-	SbiExprNode* pWithVar;			// Variable fuer WITH
+struct SbiParseStack {				// "Stack" für Statement-Blocks
+	SbiParseStack* pNext;			// Chain
+	SbiExprNode* pWithVar;			// Variable für WITH
 	SbiToken eExitTok;				// Exit-Token
 	sal_uInt32  nChain;					// JUMP-Chain
 };
@@ -45,7 +43,7 @@ struct SbiStatement {
 #define	N	sal_False
 
 static SbiStatement StmntTable [] = {
-{ CALL,		&SbiParser::Call,   	N, Y, }, // CALL
+{ CALL,		&SbiParser::Call,		N, Y, }, // CALL
 { CLOSE,	&SbiParser::Close,		N, Y, }, // CLOSE
 { _CONST_,	&SbiParser::Dim, 		Y, Y, }, // CONST
 { DECLARE,	&SbiParser::Declare,	Y, N, }, // DECLARE
@@ -87,12 +85,12 @@ static SbiStatement StmntTable [] = {
 { NEXT,		&SbiParser::BadBlock,	N, Y, }, // NEXT
 { ON,		&SbiParser::On,			N, Y, }, // ON
 { OPEN,		&SbiParser::Open,		N, Y, }, // OPEN
-{ OPTION,	&SbiParser::Option,    	Y, N, }, // OPTION
+{ OPTION,	&SbiParser::Option,		Y, N, }, // OPTION
 { PRINT,	&SbiParser::Print,		N, Y, }, // PRINT
-{ PRIVATE,	&SbiParser::Dim,  		Y, N, }, // PRIVATE
+{ PRIVATE,	&SbiParser::Dim,		Y, N, }, // PRIVATE
 { PROPERTY,	&SbiParser::SubFunc,	Y, N, }, // FUNCTION
-{ PUBLIC,	&SbiParser::Dim,  		Y, N, }, // PUBLIC
-{ REDIM,	&SbiParser::ReDim,  	N, Y, }, // DIM
+{ PUBLIC,	&SbiParser::Dim,		Y, N, }, // PUBLIC
+{ REDIM,	&SbiParser::ReDim,		N, Y, }, // DIM
 { RESUME,	&SbiParser::Resume,		N, Y, }, // RESUME
 { RETURN,	&SbiParser::Return,		N, Y, }, // RETURN
 { RSET,		&SbiParser::RSet,		N, Y, }, // RSET
@@ -142,7 +140,7 @@ SbiParser::SbiParser( StarBASIC* pb, SbModule* pm )
 	OSL_TRACE("Parser - %s, bClassModule %d", rtl::OUStringToOString( pm->GetName(), RTL_TEXTENCODING_UTF8 ).getStr(), bClassModule );
 	pPool	 = &aPublics;
 	for( short i = 0; i < 26; i++ )
-		eDefTypes[ i ] = SbxVARIANT;    // Kein expliziter Defaulttyp
+		eDefTypes[ i ] = SbxVARIANT; // Kein expliziter Defaulttyp
 
 	aPublics.SetParent( &aGlobals );
 	aGlobals.SetParent( &aRtlSyms );
@@ -159,7 +157,7 @@ SbiParser::SbiParser( StarBASIC* pb, SbModule* pm )
 }
 
 
-// Ist  Teil der Runtime-Library?
+// Ist Teil der Runtime-Library?
 SbiSymDef* SbiParser::CheckRTLForSym( const String& rSym, SbxDataType eType )
 {
 	SbxVariable* pVar = GetBasic()->GetRtl()->Find( rSym, SbxCLASS_DONTCARE );
@@ -243,7 +241,7 @@ void SbiParser::Exit()
 	for( SbiParseStack* p = pStack; p; p = p->pNext )
 	{
 		SbiToken eExitTok = p->eExitTok;
-		if( eTok == eExitTok || 
+		if( eTok == eExitTok ||
 			(eTok == PROPERTY && (eExitTok == GET || eExitTok == LET) ) )	// #i109051
 		{
 			p->nChain = aGen.Gen( _JUMP, p->nChain );
@@ -313,7 +311,7 @@ void SbiParser::TestEoln()
 }
 
 // Parsing eines Statement-Blocks
-// Das Parsing laeuft bis zum Ende-Token.
+// Das Parsing läuft bis zum Ende-Token.
 
 void SbiParser::StmntBlock( SbiToken eEnd )
 {
@@ -393,7 +391,7 @@ sal_Bool SbiParser::Parse()
 
 	// Kommt ein Symbol, ist es entweder eine Variable( LET )
 	// oder eine SUB-Prozedur( CALL ohne Klammern )
-	// DOT fuer Zuweisungen im WITH-Block: .A=5
+	// DOT für Zuweisungen im WITH-Block: .A=5
 	if( eCurTok == SYMBOL || eCurTok == DOT )
 	{
 		if( !pProc )
@@ -428,7 +426,7 @@ sal_Bool SbiParser::Parse()
 				// globalen Chain pflegen
 				// AB #41606/#40689: Durch die neue static-Behandlung kann noch
 				// ein nGblChain vorhanden sein, daher vorher abfragen
-				if( bNewGblDefs && nGblChain == 0 && 
+				if( bNewGblDefs && nGblChain == 0 &&
 					( eCurTok == SUB || eCurTok == FUNCTION || eCurTok == PROPERTY ) )
 				{
 					nGblChain = aGen.Gen( _JUMP, 0 );
@@ -461,7 +459,7 @@ sal_Bool SbiParser::Parse()
 			while( !IsEos() ) Next();
 		}
 	}
-	// Der Parser bricht am Ende ab, das naechste Token ist noch nicht
+	// Der Parser bricht am Ende ab, das nächste Token ist noch nicht
 	// geholt!
 	return sal_True;
 }
@@ -476,7 +474,7 @@ SbiExprNode* SbiParser::GetWithVar()
 	SbiParseStack* p = pStack;
 	while( p )
 	{
-		// LoopVar kann zur Zeit nur fuer with sein
+		// LoopVar kann zur Zeit nur für with sein
 		if( p->pWithVar )
 			return p->pWithVar;
 		p = p->pNext;
@@ -532,7 +530,7 @@ void SbiParser::Symbol( const KeywordSymbolInfo* pKeywordSymbolInfo )
 		}
 		else
 		{
-			// Dann muss es eine Zuweisung sein. Was anderes gibts nicht!
+			// Dann muss es eine Zuweisung sein. Was anderes gibt es nicht!
 			if( !aVar.IsLvalue() )
 				Error( SbERR_LVALUE_EXPECTED );
 			TestToken( EQ );
@@ -611,10 +609,10 @@ void SbiParser::Set()
 		SbiExpression aExpr( this );
 		aLvalue.Gen();
 		aExpr.Gen();
-		// Its a good idea to distinguish between
-		// set someting = another & 
-		// someting = another  
-		// ( its necessary for vba objects where set is object
+		// It's a good idea to distinguish between
+		// set something = another &
+		// something = another
+		// ( it's necessary for vba objects where set is object
 		// specific and also doesn't involve processing default params )
 		if( pDef->GetTypeId() )
 		{
@@ -730,7 +728,7 @@ void SbiParser::Implements()
 		{
 			aImplementedIface += aDotStr;
 			Next();
-            SbiToken ePeekTok = Peek();
+			SbiToken ePeekTok = Peek();
 			if( ePeekTok == SYMBOL || IsKwd( ePeekTok ) )
 			{
 				Next();
@@ -751,7 +749,7 @@ void SbiParser::EnableCompatibility()
 {
 	if( !bCompatible )
 		AddConstants();
-	bCompatible = sal_True; 
+	bCompatible = sal_True;
 }
 
 // OPTION
@@ -796,7 +794,7 @@ void SbiParser::Option()
 			break;
 
 		case CLASSMODULE:
-			bClassModule = sal_True; 
+			bClassModule = sal_True;
 			aGen.GetModule().SetModuleType( com::sun::star::script::ModuleType::CLASS );
 			break;
 		case VBASUPPORT:
@@ -865,3 +863,4 @@ void SbiParser::ErrorStmnt()
 	aGen.Gen( _ERROR );
 }
 
+/* vim: set noet sw=4 ts=4: */

@@ -66,7 +66,7 @@ import com.sun.star.util.XCloseable;
  *  <li> <code>com::sun::star::form::component::FileControl</code></li>
  * </ul>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  * @see com.sun.star.io.XPersistObject
  * @see com.sun.star.container.XChild
  * @see com.sun.star.form
@@ -179,7 +179,7 @@ public class OFileControlModel extends TestCase {
             aShape.setSize(size);
             aShape.setPosition(position);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             log.println("Couldn't create a component " + e);
             throw new StatusException(Status.failed("Can't create component"));
         }

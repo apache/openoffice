@@ -104,5 +104,3 @@ void WriteClipboardFormat( SvStream & rStm, sal_uLong nFormat )
     else
         rStm << (sal_Int32) 0;         // no clipboard format
 }
-
-

@@ -57,4 +57,3 @@ $(eval $(call gb_Library_add_exception_objects,writerfilter_debug,\
 #	writerfilter/unocomponent/debugservices/rtftok/XMLScanner \
 
 # vim: set noet sw=4 ts=4:
-

@@ -100,6 +100,3 @@ void Sc10InsertObject::InsertChart( ScDocument* pDoc, SCTAB nDestTab, const Rect
 		pColl->Insert( new ScChartArray( pDoc, nSrcTab, static_cast<SCCOL>(nX1), static_cast<SCROW>(nY1), static_cast<SCCOL>(nX2), static_cast<SCROW>(nY2), aName ) );
 	}
 }
-
-
-

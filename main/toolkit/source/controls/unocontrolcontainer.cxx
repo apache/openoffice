@@ -829,6 +829,3 @@ void UnoControlContainer::setVisible( sal_Bool bVisible ) throw(uno::RuntimeExce
 		// Es ist ein TopWindow, also automatisch anzeigen
 		createPeer( uno::Reference< awt::XToolkit > (), uno::Reference< awt::XWindowPeer > () );
 }
-
-
-

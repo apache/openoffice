@@ -156,6 +156,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_QUERYDESIGNFIELDUNDOACT_HXX
-
-
-

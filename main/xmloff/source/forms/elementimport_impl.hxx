@@ -116,4 +116,3 @@ template <class BASE>
 	}
 	return xReturn;
 }
-

@@ -30,7 +30,7 @@ import com.sun.star.lang.DisposedException;
  * For every jobs thread id exists a job queue which is registered
  * at the <code>ThreadPool</code>.
  * A JobQueue is splitted in a sync job queue and an async job queue.
- * The sync job queue is the registerd queue, it delegates async jobs
+ * The sync job queue is the registered queue, it delegates async jobs
  * (put by <code>putjob</code>) into the async queue, which is only 
  * known by the sync queue.
  * <p>
@@ -60,8 +60,8 @@ public class JobQueue {
 	protected Object    _doDispose = null;
 	protected Throwable _throwable;
 
-	protected JobQueue  _async_jobQueue; // chaining job qeueus for asyncs
-	protected JobQueue  _sync_jobQueue;  // chaining job qeueus for syncs
+	protected JobQueue  _async_jobQueue; // chaining job queues for asyncs
+	protected JobQueue  _sync_jobQueue;  // chaining job queues for syncs
 
 	protected boolean _active = false;
 
@@ -300,14 +300,14 @@ public class JobQueue {
 	 * @param  disposeId  a dispose id
 	 */
 	Object enter(Object disposeId) throws Throwable {
-		return enter(0, disposeId); // wait infinitly
+		return enter(0, disposeId); // wait infinitely
 	}
 
 	/**
 	 * Enters the job queue.
 	 * <p>
 	 * @return the result of the final job (reply)
-	 * @param  waitTime   the maximum amount of time to wait for a job (0 means wait infinitly)
+	 * @param  waitTime   the maximum amount of time to wait for a job (0 means wait infinitely)
 	 * @param  disposeId  a dispose id
 	 */
 	Object enter(int waitTime, Object disposeId) throws Throwable {
@@ -376,7 +376,7 @@ public class JobQueue {
 
 	/**
 	 * If the given disposeId is registered,
-	 * interrups the worker thread.
+	 * interrupts the worker thread.
 	 * <p>
 	 * @param disposeId    the dispose id
 	 */
@@ -392,4 +392,3 @@ public class JobQueue {
 		}
 	}
 }
-

@@ -360,8 +360,3 @@ IMPL_LINK( ScTabOpDlg, LoseFocusHdl, Control*, EMPTYARG )
 	bDlgLostFocus = !IsActive();
 	return 0;
 }
-
-
-
-
-

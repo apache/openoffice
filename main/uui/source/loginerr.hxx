@@ -170,5 +170,3 @@ inline void LoginErrorInfo::SetModifyUserName( sal_Bool bSet )
 }
 
 #endif
-
-

@@ -94,4 +94,3 @@ inline sal_Bool X11SalVirtualDevice::IsDisplay() const
 #endif
 
 #endif // _SV_SALVD_H
-

@@ -45,5 +45,3 @@ public:
 };
 
 #endif // _SD_PARAGR_HXX
-
-

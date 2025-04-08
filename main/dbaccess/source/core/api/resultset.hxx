@@ -271,4 +271,3 @@ namespace dbaccess
 	};
 }
 #endif // _DBA_COREAPI_RESULTSET_HXX_
-

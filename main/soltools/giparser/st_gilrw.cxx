@@ -172,5 +172,3 @@ ST_InfoListWriter::Pop_CurList()
  	
 }
 #endif
-
-

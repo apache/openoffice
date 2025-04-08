@@ -86,4 +86,3 @@ inline void SfxFrameHTMLWriter::OutMeta( SvStream& rStrm,
 }
 
 #endif
-

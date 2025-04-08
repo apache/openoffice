@@ -58,4 +58,3 @@ public:
 };
 
 #endif //__BASIC_H_
-

@@ -135,6 +135,3 @@ const SfxSetItem& SfxItemPoolCache::ApplyTo( const SfxSetItem &rOrigItem, sal_Bo
 
 	return *pNewPoolItem;
 }
-
-
-

@@ -73,4 +73,3 @@ SHL1STDLIBS= \
 
 $(SLO)$/%.obj: %.s
 	CC -KPIC -c -o $(SLO)$/$(@:b).o $< && touch $@
-

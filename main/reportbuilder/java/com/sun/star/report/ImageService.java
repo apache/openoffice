@@ -63,4 +63,3 @@ public interface ImageService
      * @return*/
     Dimension getImageSize(final byte[] image) throws ReportExecutionException;
 }
-

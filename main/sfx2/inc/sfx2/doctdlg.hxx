@@ -79,4 +79,3 @@ public:
 };
 
 #endif
-

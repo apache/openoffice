@@ -606,4 +606,3 @@ void DropTarget::concludeDragOperation(id /*sender*/)
   {
 	return dropTarget_getSupportedServiceNames();
   }
-

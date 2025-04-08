@@ -174,4 +174,3 @@ public class AccessibleOutlineView extends TestCase {
         }
     }
 }
-

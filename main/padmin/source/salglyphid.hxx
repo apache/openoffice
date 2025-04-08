@@ -49,4 +49,3 @@ typedef sal_uInt32 sal_GlyphId;
 #define GF_DROPPED  0xFFFFFFFF
 
 #endif // _SV_SALGLYPHID_HXX
-

@@ -140,4 +140,3 @@ sal_uInt32 ln( const sal_Char* str ) {
 } // <function_ln>
 
 } // </namespace_tstutl>
-

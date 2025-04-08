@@ -831,7 +831,7 @@ void Content::queryChildren( ContentRefList& rChildren )
     if ( !m_aProps.getIsFolder() )
         return;
 
-    // Obtain a list with a snapshot of all currently instanciated contents
+    // Obtain a list with a snapshot of all currently instantiated contents
     // from provider and extract the contents which are direct children
     // of this content.
 
@@ -906,7 +906,7 @@ sal_Bool Content::exchangeIdentity(
         return sal_False;
     }
 
-    // Exchange own identitity.
+    // Exchange own identity.
 
     // Fail, if a content with given id already exists.
     if ( !hasData( Uri( xNewId->getContentIdentifier() ) ) )
@@ -918,7 +918,7 @@ sal_Bool Content::exchangeIdentity(
         {
             if ( eType == FOLDER )
             {
-                // Process instanciated children...
+                // Process instantiated children...
 
                 ContentRefList aChildren;
                 queryChildren( aChildren );
@@ -1896,7 +1896,7 @@ void Content::destroy( sal_Bool bDeletePhysical,
 
     if ( eType == FOLDER )
     {
-        // Process instanciated children...
+        // Process instantiated children...
 
         ContentRefList aChildren;
         queryChildren( aChildren );
@@ -2166,7 +2166,7 @@ void Content::transfer(
                 uno::makeAny( lang::IllegalArgumentException(
                                     rtl::OUString::createFromAscii(
                                         "Invalid source URI! "
-                                        "Unabale to determine source type!" ),
+                                        "Unable to determine source type!" ),
                                     static_cast< cppu::OWeakObject * >( this ),
                                     -1 ) ),
                 xEnv );
@@ -2273,7 +2273,7 @@ void Content::transfer(
             uno::Sequence< uno::Any >(&aProps, 1),
             xEnv,
             rtl::OUString::createFromAscii(
-                "Cannot instanciate target object!" ),
+                "Cannot instantiate target object!" ),
             this );
         // Unreachable
     }
@@ -2318,7 +2318,7 @@ void Content::transfer(
                 uno::Sequence< uno::Any >(&aProps, 1),
                 xEnv,
                 rtl::OUString::createFromAscii(
-                    "Cannot instanciate target object!" ),
+                    "Cannot instantiate target object!" ),
                 this );
             // Unreachable
         }

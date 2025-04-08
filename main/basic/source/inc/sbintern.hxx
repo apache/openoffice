@@ -143,4 +143,3 @@ SbiGlobals* GetSbData();
 #define pFORMFAC	GetSbData()->pFormFac
 
 #endif
-

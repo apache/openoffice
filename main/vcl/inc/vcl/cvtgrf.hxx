@@ -63,4 +63,3 @@ public:
 };
 
 #endif // _SV_CVTGRF_HXX
-

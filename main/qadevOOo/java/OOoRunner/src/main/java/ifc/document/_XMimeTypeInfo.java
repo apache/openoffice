@@ -83,5 +83,3 @@ public class _XMimeTypeInfo extends MultiMethodTest {
         tRes.tested("supportsMimeType()", (pos && !neg)) ;
     }
 }
-
-

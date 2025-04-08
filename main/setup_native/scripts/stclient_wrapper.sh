@@ -1,6 +1,6 @@
 #!/bin/sh
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 if [ `uname -s` = "SunOS" ]; then
@@ -47,7 +47,7 @@ do
 	    echo >&2 \
 	    "usage: $0 -p <product name> -e <product version> -t <urn> -S <source> -P <parent product name> [-i <instance urn>]"
 	    exit 1;;
-	*)  break;;	
+	*)  break;;
     esac
     shift
 done
@@ -62,7 +62,7 @@ if [ ! -n $INSTANCE_URN ]; then
   [ ${EXITCODE} -eq 0 -o  ${EXITCODE} -eq 225 ] || exit 1
 
   # early versions did not have a dedicated exitcode, so need to compare text output
-  [ ${EXITCODE} -eq 225 -o "${TEST}" = "No records found" ] || echo "${TEST}"; exit 0 
+  [ ${EXITCODE} -eq 225 -o "${TEST}" = "No records found" ] || echo "${TEST}"; exit 0
 fi
 
 uname=`uname -p`
@@ -79,4 +79,3 @@ output=`"${STCLIENT}" -a -p "${PRODUCT_NAME}" -e "${PRODUCT_VERSION}" -t ${TARGE
 [ "${INSTANCE_URN}" = "" -a ${EXITCODE} -eq 226 ] && exit 0
 
 exit ${EXITCODE}
-

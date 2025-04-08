@@ -152,5 +152,3 @@ namespace dbaui
 //.........................................................................
 
 #endif // DBACCESS_SOURCE_UI_UNO_COMPOSERDIALOGS_HXX
-
-

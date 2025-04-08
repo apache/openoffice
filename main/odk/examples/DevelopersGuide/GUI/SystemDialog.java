@@ -173,4 +173,3 @@ public class SystemDialog  {
         return sReturnFolder;
     }
 }
-

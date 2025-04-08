@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -349,7 +349,7 @@
 #define RID_SVXITEMS_CHARHIDDEN_FALSE       (RID_EDIT_START + 295)
 #define RID_SVXITEMS_CHARHIDDEN_TRUE        (RID_EDIT_START + 296)
 
-// strings for error messsages in dictionary updates
+// strings for error messages in dictionary updates
 #define RID_SVXSTR_DIC_ERR_UNKNOWN			(RID_EDIT_START + 297)
 #define RID_SVXSTR_DIC_ERR_FULL				(RID_EDIT_START + 298)
 #define RID_SVXSTR_DIC_ERR_READONLY			(RID_EDIT_START + 299)
@@ -385,4 +385,3 @@
 #endif
 
 // ******************************************************************* EOF
-

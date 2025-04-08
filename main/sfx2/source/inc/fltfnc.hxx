@@ -28,4 +28,3 @@
 sal_Bool SfxIsHelpEntryURL( const String &rURL, const String &rExtMask );
 
 #endif
-

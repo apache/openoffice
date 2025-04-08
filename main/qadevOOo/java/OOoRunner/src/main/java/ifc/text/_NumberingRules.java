@@ -40,5 +40,3 @@ import lib.MultiPropertyTest;
 public class _NumberingRules extends MultiPropertyTest {
 
 }  // finish class _NumberingRules
-
-

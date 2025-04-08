@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include <svx/dialogs.hrc>
 #include <svx/globlmn.hrc>
 #include "cmdid.h"
@@ -38,19 +36,19 @@
 #define MN_NUMBERING ITEM_FORMAT_NUMBERING
 
 #define MN_TXT\
-    MenuItem\
-    {\
-        ITEM_FORMAT_CHAR_DLG\
-    };\
-    MenuItem\
-    {\
-        ITEM_FORMAT_PARA_DLG\
-    };\
-    MenuItem\
-    {\
-        Identifier = FN_FORMAT_PAGE_DLG ; \
-        HelpId = CMD_FN_FORMAT_PAGE_DLG ; \
-        Text [ en-US ] = "Pa~ge..." ; \
+	MenuItem\
+	{\
+		ITEM_FORMAT_CHAR_DLG\
+	};\
+	MenuItem\
+	{\
+		ITEM_FORMAT_PARA_DLG\
+	};\
+	MenuItem\
+	{\
+		Identifier = FN_FORMAT_PAGE_DLG ; \
+		HelpId = CMD_FN_FORMAT_PAGE_DLG ; \
+		Text [ en-US ] = "Pa~ge..." ; \
 	};
 
 
@@ -1006,16 +1004,16 @@ String MN_DRAW_POPUPMENU
 	MenuItem\
 	{\
 		RadioCheck = TRUE ; \
-		Identifier = FN_TOOL_ANKER_FRAME ; \
-		HelpId = CMD_FN_TOOL_ANKER_FRAME ; \
+		Identifier = FN_TOOL_ANCHOR_FRAME ; \
+		HelpId = CMD_FN_TOOL_ANCHOR_FRAME ; \
 		Text [ en-US ] = "To ~Frame" ; \
 	};
 
 #define MN_ANCHOR \
     MenuItem\
     {\
-        Identifier = FN_TOOL_ANKER ; \
-        HelpId = CMD_FN_TOOL_ANKER ; \
+        Identifier = FN_TOOL_ANCHOR ; \
+        HelpId = CMD_FN_TOOL_ANCHOR ; \
         Command = ".uno:AnchorMenu" ; \
         Text [ en-US ] = "An~chor" ; \
         SubMenu = Menu\
@@ -1025,29 +1023,29 @@ String MN_DRAW_POPUPMENU
                 MenuItem\
                 {\
                     RadioCheck = TRUE ; \
-                    Identifier = FN_TOOL_ANKER_PAGE ; \
-                    HelpId = CMD_FN_TOOL_ANKER_PAGE ; \
+                    Identifier = FN_TOOL_ANCHOR_PAGE ; \
+                    HelpId = CMD_FN_TOOL_ANCHOR_PAGE ; \
                     Text [ en-US ] = "To P~age" ; \
                 };\
                 MenuItem\
                 {\
                     RadioCheck = TRUE ; \
-                    Identifier = FN_TOOL_ANKER_PARAGRAPH ; \
-                    HelpId = CMD_FN_TOOL_ANKER_PARAGRAPH ; \
+                    Identifier = FN_TOOL_ANCHOR_PARAGRAPH ; \
+                    HelpId = CMD_FN_TOOL_ANCHOR_PARAGRAPH ; \
                     Text [ en-US ] = "To ~Paragraph" ; \
                 };\
                 MenuItem\
                 {\
                     RadioCheck = TRUE ; \
-                    Identifier = FN_TOOL_ANKER_AT_CHAR ; \
-                    HelpId = CMD_FN_TOOL_ANKER_AT_CHAR ; \
+                    Identifier = FN_TOOL_ANCHOR_AT_CHAR ; \
+                    HelpId = CMD_FN_TOOL_ANCHOR_AT_CHAR ; \
                     Text [ en-US ] = "To ~Character" ; \
                 };\
                 MenuItem\
                 {\
                     RadioCheck = TRUE ; \
-                    Identifier = FN_TOOL_ANKER_CHAR ; \
-                    HelpId = CMD_FN_TOOL_ANKER_CHAR ; \
+                    Identifier = FN_TOOL_ANCHOR_CHAR ; \
+                    HelpId = CMD_FN_TOOL_ANCHOR_CHAR ; \
                     Text [ en-US ] = "As C~haracter" ; \
                 };\
                 MN_AT_FRAME\
@@ -1275,25 +1273,25 @@ Menu MN_GRF_POPUPMENU
 	ItemList =
 	{
 		MN_ALIGN_FRAME
-        MN_MOUSE_FRAME_WITH_CONTOUR
-        // --> OD 2009-07-14 #i73249#
-        SEPARATOR ;
-        MN_TITLE_DESCRIPTION_SHAPE
-        // <--
-        SEPARATOR ;
-        MenuItem
-        {
-            Identifier = FN_FORMAT_GRAFIC_DLG ;
-            HelpId = CMD_FN_FORMAT_GRAFIC_DLG ;
-            Text [ en-US ] = "~Picture..." ;
-        };
-        MenuItem
-        {
-            Identifier = FN_SAVE_GRAPHIC;
-            HelpId = CMD_FN_SAVE_GRAPHIC;
-            Text [ en-US ] = "Save Graphics..." ;
-        };
-        MN_FRM_CAPTION_ITEM
+		MN_MOUSE_FRAME_WITH_CONTOUR
+		// --> OD 2009-07-14 #i73249#
+		SEPARATOR ;
+		MN_TITLE_DESCRIPTION_SHAPE
+		// <--
+		SEPARATOR ;
+		MenuItem
+		{
+			Identifier = FN_FORMAT_GRAFIC_DLG ;
+			HelpId = CMD_FN_FORMAT_GRAFIC_DLG ;
+			Text [ en-US ] = "~Picture..." ;
+		};
+		MenuItem
+		{
+			Identifier = FN_SAVE_GRAPHIC;
+			HelpId = CMD_FN_SAVE_GRAPHIC;
+			Text [ en-US ] = "Save Graphics..." ;
+		};
+		MN_FRM_CAPTION_ITEM
 		MenuItem
 		{
 			ITEM_EDIT_IMAP

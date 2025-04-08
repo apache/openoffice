@@ -433,4 +433,3 @@ StgAvlNode* StgAvlIterator::Prev()
 {
     return Find( --nCur );
 }
-

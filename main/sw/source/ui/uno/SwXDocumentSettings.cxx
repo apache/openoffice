@@ -1068,5 +1068,3 @@ Sequence< OUString > SAL_CALL SwXDocumentSettings::getSupportedServiceNames(  )
     aSeq[3] = OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.PrintPreviewSettings") );
     return aSeq;
 }
-
-

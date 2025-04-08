@@ -55,4 +55,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_APPICONCONTROL_HXX
-

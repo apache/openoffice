@@ -195,4 +195,3 @@ class SecurityEntity
 		return rc;
 	}
 }
-

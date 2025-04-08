@@ -971,6 +971,3 @@ sal_Bool DXF2GDIMetaFile::Convert(const DXFRepresentation & rDXF, GDIMetaFile & 
 	delete pVirDev;
 	return bStatus;
 }
-
-
-

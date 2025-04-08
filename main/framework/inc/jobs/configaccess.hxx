@@ -53,7 +53,7 @@ namespace framework{
     @short  implements a simple configuration access
     @descr  Sometimes it's better to have direct config access
             instead of using soecialize config items of the svtools
-            project. This class can wrapp such configuration access.
+            project. This class can wrap such configuration access.
  */
 class FWI_DLLPUBLIC ConfigAccess : public ThreadHelpBase
 {
@@ -80,7 +80,7 @@ class FWI_DLLPUBLIC ConfigAccess : public ThreadHelpBase
 
         /**
             reference to the uno service manager
-            It's necessary to instanciate own needed services.
+            It's necessary to instantiate own needed services.
          */
         css::uno::Reference< css::lang::XMultiServiceFactory > m_xSMGR;
 

@@ -120,4 +120,3 @@ void RetStream::Reset ()
 	pCommStream = new SvCommStream( pSammel );
 //	SetCommStream( pCommStream );
 }
-

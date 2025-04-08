@@ -993,4 +993,3 @@ sal_Bool ScValidationDataList::operator==( const ScValidationDataList& r ) const
 
 	return bEqual;
 }
-

@@ -108,4 +108,3 @@ namespace comphelper
 //.........................................................................
 
 #endif // _COMPHELPER_CONTAINERMULTIPLEXER_HXX_
-

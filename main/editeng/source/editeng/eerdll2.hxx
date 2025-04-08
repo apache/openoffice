@@ -54,4 +54,3 @@ public:
 
 
 #endif //_EERDLL2_HXX
-

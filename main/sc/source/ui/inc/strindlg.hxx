@@ -58,5 +58,3 @@ private:
 #include <layout/layout-post.hxx>
 
 #endif // SC_STRINDLG_HXX
-
-

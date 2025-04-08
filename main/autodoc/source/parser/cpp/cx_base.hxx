@@ -89,4 +89,3 @@ Cx_Base::Dealer() const
 } // namespace cpp
 
 #endif
-

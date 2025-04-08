@@ -207,4 +207,3 @@ sal_Bool RscNameTable::Get( Atom nName, KEY_STRUCT * pEle ){
     };
     return( sal_False );
 };
-

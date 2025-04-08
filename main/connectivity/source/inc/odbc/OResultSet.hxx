@@ -319,5 +319,3 @@ namespace connectivity
 	}
 }
 #endif // _CONNECTIVITY_ODBC_ORESULTSET_HXX_
-
-

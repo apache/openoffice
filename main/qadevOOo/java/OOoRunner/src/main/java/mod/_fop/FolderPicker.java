@@ -46,7 +46,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::lang::XTypeProvider</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.ui.XExecutableDialog
 * @see com.sun.star.lang.XComponent
 * @see com.sun.star.lang.XServiceInfo
@@ -95,4 +95,3 @@ public class FolderPicker extends TestCase {
     } // finish method getTestEnvironment
 
 }    // finish class BreakIterator
-

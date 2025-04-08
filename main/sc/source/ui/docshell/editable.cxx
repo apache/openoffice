@@ -155,4 +155,3 @@ sal_uInt16 ScEditableTester::GetMessageId() const
 	else
 		return STR_PROTECTIONERR;
 }
-

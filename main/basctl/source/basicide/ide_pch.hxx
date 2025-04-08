@@ -62,5 +62,3 @@
 #include <sfx2/docfac.hxx>
 #include <sfx2/progress.hxx>
 #include <editeng/sizeitem.hxx>
-
-

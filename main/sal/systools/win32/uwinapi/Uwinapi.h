@@ -133,16 +133,6 @@ static rettype calltype func##_##Failure params \
 } \
 EXTERN_C rettype calltype func##_##resolve params
 
-
-
-
-
-
-
-
-
-
-
 #define DEFINE_CUSTOM_THUNK( module, resolve, rettype, calltype, func, params ) \
 EXTERN_C _declspec( dllexport ) FARPROC module##_##func##_Ptr; \
 static _declspec ( naked ) func##_Thunk() \

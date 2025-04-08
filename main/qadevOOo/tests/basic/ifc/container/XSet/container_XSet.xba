@@ -45,7 +45,7 @@ On Error Goto ErrHndl
         oElem = oEnum.nextElement
     end if
     bOK = bOK AND NOT inNULL(oElem)
-    Out.Log("Enumeration creationg - " &amp; bOK)
+    Out.Log("Enumeration creation - " &amp; bOK)
 
     Test.StartMethod("has()")
     bOK = true

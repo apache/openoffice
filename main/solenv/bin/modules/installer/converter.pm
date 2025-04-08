@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -31,14 +31,14 @@ use installer::globals;
 
 sub convert_array_to_hash
 {
-	my ($arrayref) = @_;  
-	
+	my ($arrayref) = @_;
+
 	my %newhash = ();
 
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
 	{
 		my $line = ${$arrayref}[$i];
-		
+
 		if ( $line =~ /^\s*([\w-]+?)\s+(.*?)\s*$/ )
 		{
 			my $key = $1;
@@ -53,10 +53,10 @@ sub convert_array_to_hash
 sub convert_hash_into_array
 {
 	my ($hashref) = @_;
-	
+
 	my @array = ();
 	my $key;
-	
+
 	foreach $key (keys %{$hashref})
 	{
 		my $value = $hashref->{$key};
@@ -68,14 +68,14 @@ sub convert_hash_into_array
 }
 
 #############################################################################
-# Converting a string list with separator $listseparator 
+# Converting a string list with separator $listseparator
 # into an array
 #############################################################################
 
 sub convert_stringlist_into_array_without_linebreak_and_quotes
 {
 	my ( $includestringref, $listseparator ) = @_;
-	
+
 	my @newarray = ();
 	my $first;
 	my $last = ${$includestringref};
@@ -83,26 +83,26 @@ sub convert_stringlist_into_array_without_linebreak_and_quotes
 	while ( $last =~ /^\s*(.+?)\Q$listseparator\E(.+)\s*$/)	# "$" for minimal matching
 	{
 		$first = $1;
-		$last = $2;	
+		$last = $2;
 		$first =~ s/\"//g;
 		push(@newarray, $first);
-	}	
+	}
 
 	$last =~ s/\"//g;
-	push(@newarray, $last);	
-	
+	push(@newarray, $last);
+
 	return \@newarray;
 }
 
 #############################################################################
-# Converting a string list with separator $listseparator 
+# Converting a string list with separator $listseparator
 # into an array
 #############################################################################
 
 sub convert_stringlist_into_array
 {
 	my ( $includestringref, $listseparator ) = @_;
-	
+
 	my @newarray = ();
 	my $first;
 	my $last = ${$includestringref};
@@ -110,26 +110,26 @@ sub convert_stringlist_into_array
 	while ( $last =~ /^\s*(.+?)\Q$listseparator\E(.+)\s*$/)	# "$" for minimal matching
 	{
 		$first = $1;
-		$last = $2;	
+		$last = $2;
 		# Problem with two directly following listseparators. For example a path with two ";;" directly behind each other
 		$first =~ s/^$listseparator//;
 		push(@newarray, "$first\n");
-	}	
+	}
 
-	push(@newarray, "$last\n");	
-	
+	push(@newarray, "$last\n");
+
 	return \@newarray;
 }
 
 #############################################################################
-# Converting a string list with separator $listseparator 
+# Converting a string list with separator $listseparator
 # into an array
 #############################################################################
 
 sub convert_stringlist_into_array_without_newline
 {
 	my ( $includestringref, $listseparator ) = @_;
-	
+
 	my @newarray = ();
 	my $first;
 	my $last = ${$includestringref};
@@ -137,24 +137,24 @@ sub convert_stringlist_into_array_without_newline
 	while ( $last =~ /^\s*(.+?)\Q$listseparator\E(.+)\s*$/)	# "$" for minimal matching
 	{
 		$first = $1;
-		$last = $2;	
+		$last = $2;
 		push(@newarray, "$first");
-	}	
+	}
 
-	push(@newarray, "$last");	
-	
+	push(@newarray, "$last");
+
 	return \@newarray;
 }
 
 #############################################################################
-# Converting a string list with separator $listseparator 
+# Converting a string list with separator $listseparator
 # into a hash with values 1.
 #############################################################################
 
 sub convert_stringlist_into_hash
 {
 	my ( $includestringref, $listseparator ) = @_;
-	
+
 	my %newhash = ();
 	my $first;
 	my $last = ${$includestringref};
@@ -162,24 +162,24 @@ sub convert_stringlist_into_hash
 	while ( $last =~ /^\s*(.+?)\Q$listseparator\E(.+)\s*$/)	# "$" for minimal matching
 	{
 		$first = $1;
-		$last = $2;	
+		$last = $2;
 		$newhash{$first} = 1;
-	}	
+	}
 
 	$newhash{$last} = 1;
-	
+
 	return \%newhash;
 }
 
 #############################################################################
-# Converting a string list with separator $listseparator 
+# Converting a string list with separator $listseparator
 # into an array
 #############################################################################
 
 sub convert_whitespace_stringlist_into_array
 {
 	my ( $includestringref ) = @_;
-	
+
 	my @newarray = ();
 	my $first;
 	my $last = ${$includestringref};
@@ -187,17 +187,17 @@ sub convert_whitespace_stringlist_into_array
 	while ( $last =~ /^\s*(\S+?)\s+(\S+)\s*$/)	# "$" for minimal matching
 	{
 		$first = $1;
-		$last = $2;	
+		$last = $2;
 		push(@newarray, "$first\n");
-	}	
+	}
 
-	push(@newarray, "$last\n");	
-	
+	push(@newarray, "$last\n");
+
 	return \@newarray;
 }
 
 #############################################################################
-# Converting an array into a comma separated string 
+# Converting an array into a comma separated string
 #############################################################################
 
 sub convert_array_to_comma_separated_string
@@ -205,21 +205,21 @@ sub convert_array_to_comma_separated_string
 	my ( $arrayref ) = @_;
 
 	my $newstring = "";
-	
+
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
 	{
 		my $arrayentry = ${$arrayref}[$i];
 		$arrayentry =~ s/\s*$//;
 		$newstring = $newstring . $arrayentry . ",";
 	}
-	
+
 	$newstring =~ s/\,\s*$//;
 
 	return $newstring;
 }
 
 #############################################################################
-# Converting an array into a space separated string 
+# Converting an array into a space separated string
 #############################################################################
 
 sub convert_array_to_space_separated_string
@@ -227,21 +227,21 @@ sub convert_array_to_space_separated_string
 	my ( $arrayref ) = @_;
 
 	my $newstring = "";
-	
+
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
 	{
 		my $arrayentry = ${$arrayref}[$i];
 		$arrayentry =~ s/\s*$//;
 		$newstring = $newstring . $arrayentry . " ";
 	}
-	
+
 	$newstring =~ s/\s*$//;
 
 	return $newstring;
 }
 
 #############################################################################
-# The file name contains for some files "/". If this programs runs on 
+# The file name contains for some files "/". If this programs runs on
 # a windows platform, this has to be converted to "\".
 #############################################################################
 
@@ -264,7 +264,7 @@ sub convert_slash_to_backslash
 sub copy_item_object
 {
 	my ($olditemhashref, $newitemhashref) = @_;
-	
+
 	foreach $key (keys %{$olditemhashref})
 	{
 		my $value = $olditemhashref->{$key};
@@ -275,7 +275,7 @@ sub copy_item_object
 #################################################################
 # Windows paths must not contain the following structure:
 # c:\dirA\dirB\..\dirC
-# This has to be exchanged to 
+# This has to be exchanged to
 # c:\dirA\dirC
 #################################################################
 
@@ -284,7 +284,7 @@ sub make_path_conform
 	my ( $path ) = @_;
 
 	my $oldpath = $path;
-	
+
 	while ( $path =~ /(^.*)(\Q$installer::globals::separator\E.*?[^\.])(\Q$installer::globals::separator\E\.\.)(\Q$installer::globals::separator\E.*$)/ )
 	{
 		my $part1 = $1;
@@ -292,10 +292,10 @@ sub make_path_conform
 
 		# $2 must not end with a "." ! Problem with "..\.."
 
-		$path = $part1 . $part2;		
+		$path = $part1 . $part2;
 	}
 
-	return $path;	
+	return $path;
 }
 
 #################################################################
@@ -312,12 +312,12 @@ sub copy_collector
 	foreach my $oldhash (@$oldcollector)
 	{
 		my %newhash = ();
-	
+
 		while (my ($key, $value) = each %$oldhash)
 		{
 			$newhash{$key} = $value;
 		}
-				
+
 		push(@newcollector, \%newhash);
 	}
 
@@ -331,11 +331,11 @@ sub copy_collector
 sub copy_array_from_references
 {
 	my ( $arrayref ) = @_;
-	
+
 	my @newarray = ();
 
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
-	{		
+	{
 		push(@newarray, ${$arrayref}[$i]);
 	}
 
@@ -349,10 +349,10 @@ sub copy_array_from_references
 sub copy_hash_from_references
 {
 	my ($hashref) = @_;
-	
+
 	my %newhash = ();
 	my $key;
-	
+
 	foreach $key (keys %{$hashref})
 	{
 		$newhash{$key} = $hashref->{$key};
@@ -371,14 +371,14 @@ sub combine_arrays_from_references_first_win
 
 	my $hashref1 = convert_array_to_hash($arrayref1);
 	my $hashref2 = convert_array_to_hash($arrayref2);
-	my %commonhash = ();	
+	my %commonhash = ();
 	my @newarray = ();
 
 	# starting with second hash
 	foreach my $key ( keys %{$hashref2} ) { $commonhash{$key} = $hashref2->{$key}; }
 	# overwriting with first hash
 	foreach my $key ( keys %{$hashref1} ) { $commonhash{$key} = $hashref1->{$key}; }
-	
+
 	# Creating the new array
 	foreach my $key ( keys %commonhash ) { push(@newarray, "$key $commonhash{$key}\n"); }
 
@@ -392,16 +392,16 @@ sub combine_arrays_from_references_first_win
 sub combine_arrays_from_references
 {
 	my ( $arrayref1, $arrayref2 ) = @_;
-	
+
 	my @newarray = ();
 
 	for ( my $i = 0; $i <= $#{$arrayref1}; $i++ )
-	{		
+	{
 		push(@newarray, ${$arrayref1}[$i]);
 	}
 
 	for ( my $i = 0; $i <= $#{$arrayref2}; $i++ )
-	{		
+	{
 		push(@newarray, ${$arrayref2}[$i]);
 	}
 
@@ -415,9 +415,9 @@ sub combine_arrays_from_references
 sub get_number_from_directory
 {
 	my ( $directory ) = @_;
-	
+
 	my $number = 0;
-	
+
 	if ( $directory =~ /\_(\d+)\s*$/ )
 	{
 		$number = $1;
@@ -433,9 +433,9 @@ sub get_number_from_directory
 sub replace_masked_separator
 {
 	my ($string, $separator, $replacementstring) = @_;
-	
+
 	$string =~ s/\\\Q$separator\E/$replacementstring/g;
-	
+
 	return $string;
 }
 
@@ -447,7 +447,7 @@ sub replace_masked_separator
 sub resolve_masked_separator
 {
 	my ($arrayref, $separator, $replacementstring) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
 	{
 		${$arrayref}[$i] =~ s/$replacementstring/$separator/g

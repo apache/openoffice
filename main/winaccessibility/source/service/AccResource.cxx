@@ -81,5 +81,3 @@ void ResourceManager::ensureImplExists()
 
     return sReturn;
 }
-
-

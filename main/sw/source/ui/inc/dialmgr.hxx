@@ -41,4 +41,3 @@ struct SwDialogsResMgr
 #define SW_RESSSTR(i)	String(ResId(i,SWDIALOG_MGR()))
 
 #endif
-

@@ -120,4 +120,3 @@ public:
 };
 
 #endif  // _SV_SPLIT_HXX
-

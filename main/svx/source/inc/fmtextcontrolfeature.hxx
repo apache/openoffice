@@ -98,4 +98,3 @@ namespace svx
 //........................................................................
 
 #endif // SVX_SOURCE_INC_FMTEXTCONTROLFEATURE_HXX
-

@@ -50,5 +50,3 @@ public class MenuBarFactory extends TestCase {
         return tEnv;
     }
 }
-
-

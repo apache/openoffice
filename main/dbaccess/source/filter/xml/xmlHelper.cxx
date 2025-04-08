@@ -211,4 +211,3 @@ UniReference < XMLPropertySetMapper > OXMLHelper::GetRowStylesPropertySetMapper(
 }
 // -----------------------------------------------------------------------------
 }
-

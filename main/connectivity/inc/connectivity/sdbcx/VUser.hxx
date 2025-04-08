@@ -100,4 +100,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_SDBCX_USER_HXX_
-

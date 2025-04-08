@@ -486,5 +486,3 @@ sal_Int32 SAL_CALL unicode::getCharType( const sal_Unicode ch )
         return 0;
     }
 }
-
-

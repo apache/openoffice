@@ -39,4 +39,3 @@ OResultSet* OFlatPreparedStatement::createResultSet()
 }
 // -------------------------------------------------------------------------
 IMPLEMENT_SERVICE_INFO(OFlatPreparedStatement,"com.sun.star.sdbc.driver.flat.PreparedStatement","com.sun.star.sdbc.PreparedStatement");
-

@@ -505,4 +505,3 @@ sal_Bool DataSupplier::getData()
 	}
     return !m_pImpl->m_bThrowException;
 }
-

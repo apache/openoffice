@@ -130,6 +130,3 @@ void DXFBlocks::Clear()
 		delete ptmp;
 	}
 }
-
-
-

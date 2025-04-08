@@ -1836,7 +1836,7 @@ namespace svxform
         // somewhere). In case I'd first delete the structure, then the controls, the UNDO would not work
         // (since UNDO then would mean to first restore the controls, then the structure, means their parent
         // form). The other way round, the EntryDatas would be invalid, if I'd first delete the controls and
-        // then go on to the strucure. This means I have to delete the forms *after* the normal controls, so
+        // then go on to the structure. This means I have to delete the forms *after* the normal controls, so
         // that during UNDO, they're restored in the proper order.
 		pFormShell->GetImpl()->EnableTrackProperties(sal_False);
 		sal_uInt16 i;
@@ -2314,5 +2314,3 @@ namespace svxform
 //............................................................................
 }	// namespace svxform
 //............................................................................
-
-

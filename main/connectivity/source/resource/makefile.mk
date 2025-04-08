@@ -100,5 +100,3 @@ RESLIB3SRSFILES=$(RES3FILELIST)
 # --- Targets ----------------------------------
 
 .INCLUDE : target.mk
-
-

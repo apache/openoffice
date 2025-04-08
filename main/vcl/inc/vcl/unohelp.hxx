@@ -63,4 +63,3 @@ void VCL_DLLPUBLIC NotifyAccessibleStateEventGlobally( const ::com::sun::star::a
 }}	// namespace vcl::unohelper
 
 #endif  // _VCL_UNOHELP_HXX
-

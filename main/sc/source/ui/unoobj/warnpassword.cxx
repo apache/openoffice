@@ -88,4 +88,3 @@ bool ScWarnPassword::WarningOnPassword( SfxMedium& rMedium )
     }
     return bReturn;
 }
-

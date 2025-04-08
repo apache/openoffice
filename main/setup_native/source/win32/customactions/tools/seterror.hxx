@@ -47,4 +47,3 @@
 void SetMsiErrorCode( int nErrorCode );
 
 #endif
-

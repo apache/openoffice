@@ -383,4 +383,3 @@ void ComplexToolbarController::notifyTextChanged( const ::rtl::OUString& aText )
 }
 
 } // namespace
-

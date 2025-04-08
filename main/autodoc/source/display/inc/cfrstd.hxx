@@ -73,4 +73,3 @@ class StdFrame : public display::CorporateFrame
 
 
 #endif
-

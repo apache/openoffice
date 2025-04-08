@@ -2409,5 +2409,3 @@ sal_Bool SwTableCursor::HasReadOnlyBoxSel() const
 		}
 	return bRet;
 }
-
-

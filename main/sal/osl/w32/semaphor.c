@@ -27,7 +27,7 @@
 #include <osl/semaphor.h>
 
 /*
-	Implemetation notes:
+	Implementation notes:
 	The void* represented by oslSemaphore is used
 	to store a WIN32 HANDLE.
 */
@@ -102,6 +102,3 @@ sal_Bool SAL_CALL osl_releaseSemaphore(oslSemaphore Semaphore)
     /* increase count by one, not interested in previous count */
 	return (sal_Bool)(ReleaseSemaphore((HANDLE)Semaphore, 1, NULL) != FALSE);			
 }
-
-
-

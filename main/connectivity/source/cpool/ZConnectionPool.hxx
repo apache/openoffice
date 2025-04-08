@@ -61,7 +61,7 @@ namespace connectivity
 	//==========================================================================
 	typedef	::cppu::WeakImplHelper1< ::com::sun::star::beans::XPropertyChangeListener>	OConnectionPool_Base;
 
-	// typedef for the interanl structure
+	// typedef for the internal structure
 	typedef ::std::vector< ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XPooledConnection> > TPooledConnections;
 
 	 // contains the currently pooled connections
@@ -112,9 +112,9 @@ namespace connectivity
 		TActiveConnectionMap	m_aActiveConnections;	// the currently active connections
 
 		::osl::Mutex			m_aMutex;
-		::vos::ORef<OPoolTimer>	m_xInvalidator;			// invalidates the conntection pool when shot
+		::vos::ORef<OPoolTimer>	m_xInvalidator;			// invalidates the connection pool when shot
 		
-		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDriver >				m_xDriver;		// the one and only driver for this connectionpool
+		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDriver >				m_xDriver;		// the one and only driver for this connection pool
 		::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >			m_xDriverNode;	// config node entry
 		::com::sun::star::uno::Reference< ::com::sun::star::reflection::XProxyFactory >	m_xProxyFactory;
 		sal_Int32				m_nTimeOut;
@@ -147,5 +147,3 @@ namespace connectivity
 	};
 }
 #endif // _CONNECTIVITY_ZCONNECTIONPOOL_HXX_
-
-

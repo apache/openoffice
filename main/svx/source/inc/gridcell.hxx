@@ -1149,4 +1149,3 @@ protected:
 };
 
 #endif // _SVX_GRIDCELL_HXX
-

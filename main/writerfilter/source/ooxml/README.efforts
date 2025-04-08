@@ -44,7 +44,7 @@ contains a top level element <stage1>. <stage1> contains an element
 - Namespaces can be flagged with attribute @todo="ignore" to prevent
   the namespace being considered.
 
-- For every <element>/<attribute> an entry in an according element in <analyze> is genereated. These elements look like this:
+- For every <element>/<attribute> an entry in an according element in <analyze> is generated. These elements look like this:
 
 <attribute id="..." resource="..." tokenid="..." qname="..." namespace="..." define="..." name="..."/>
 

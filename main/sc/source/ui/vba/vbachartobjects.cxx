@@ -187,4 +187,3 @@ ScVbaChartObjects::getServiceNames()
 	}
 	return sNames;
 }
-

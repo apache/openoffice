@@ -952,7 +952,7 @@ throw (uno::RuntimeException)
     {    
         ::osl::Guard< ::osl::Mutex > aGuard( MyMutex::get() );
 
-        // releaase all UNO references
+        // release all UNO references
         
         m_xMSF.clear();
         m_xBreakIterator.clear();

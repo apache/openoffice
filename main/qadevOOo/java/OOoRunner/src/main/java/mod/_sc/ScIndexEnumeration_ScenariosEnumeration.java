@@ -138,4 +138,3 @@ public class ScIndexEnumeration_ScenariosEnumeration extends TestCase {
         return tEnv;
     }
 }
-

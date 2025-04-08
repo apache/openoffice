@@ -23,4 +23,3 @@
 #define _SV_G_MSASSVR_H_
 extern com::sun::star::accessibility::XMSAAService* g_acc_manager1;
 #endif
-

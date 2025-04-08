@@ -58,4 +58,3 @@ enum SvxChooseControlEnum
 #define SvxChooseControlItem SfxAllEnumItem
 
 #endif
-

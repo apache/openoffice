@@ -129,4 +129,3 @@ public abstract class CellValue implements BIFFRecord {
     abstract public String getString() throws IOException;
     
 }
-

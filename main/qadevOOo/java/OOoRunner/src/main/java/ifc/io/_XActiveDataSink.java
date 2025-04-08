@@ -37,7 +37,7 @@ import com.sun.star.uno.XInterface;
 *  <li><code> setInputStream()</code></li>
 *  <li><code> getInputStream()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 *
 * This test needs the following object relations :
 * <ul>
@@ -103,5 +103,3 @@ public class _XActiveDataSink extends MultiMethodTest {
         this.disposeEnvironment() ;
     }
 }
-
-

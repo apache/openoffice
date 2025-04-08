@@ -39,4 +39,3 @@ public class _MeasureShape extends MultiPropertyTest {
 
 
 }
-

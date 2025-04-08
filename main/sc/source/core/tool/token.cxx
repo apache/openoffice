@@ -1849,5 +1849,3 @@ void ScTokenArray::ReadjustRelative3DReferences( const ScAddress& rOldPos,
         }
     }
 }
-
-

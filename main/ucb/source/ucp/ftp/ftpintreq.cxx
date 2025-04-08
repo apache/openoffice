@@ -223,4 +223,3 @@ bool XInteractionRequestImpl::approved() const
 {
     return p1->isSelected();
 }
-

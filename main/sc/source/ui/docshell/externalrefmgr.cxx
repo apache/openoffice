@@ -2081,7 +2081,7 @@ bool ScExternalRefManager::isFileLoadable(const String& rFile) const
 void ScExternalRefManager::maybeLinkExternalFile(sal_uInt16 nFileId)
 {
     if (maLinkedDocs.count(nFileId))
-        // file alerady linked, or the link has been broken.
+        // file already linked, or the link has been broken.
         return;
 
     // Source document not linked yet.  Link it now.
@@ -2457,4 +2457,3 @@ IMPL_LINK(ScExternalRefManager, TimeOutHdl, AutoTimer*, pTimer)
 
     return 0;
 }
-

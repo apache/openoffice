@@ -465,4 +465,3 @@ Sequence< sal_Int8 > DocPasswordHelper::GetXLHashAsSequence(
 // ============================================================================
 
 } // namespace comphelper
-

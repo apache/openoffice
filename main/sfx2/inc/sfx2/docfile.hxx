@@ -342,4 +342,3 @@ DECLARE_LIST( SfxMediumList, SfxMedium* )
 #endif
 
 #endif
-

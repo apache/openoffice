@@ -112,7 +112,7 @@ public class PipedConnection implements XConnection {
 	}
 
 	/**
-	 * This is a private method, used to cummunicate 
+	 * This is a private method, used to communicate
 	 * internal in the pipe.
 	 */
 	private synchronized void receive(byte aData[]) throws com.sun.star.io.IOException {
@@ -263,4 +263,3 @@ public class PipedConnection implements XConnection {
 	}
 
 }
-

@@ -59,5 +59,3 @@ CXXFLAGS+= $(LFS_CFLAGS)
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-
-

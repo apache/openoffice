@@ -212,4 +212,3 @@ void SAL_CALL CFolderPicker::cancel( )
 void SAL_CALL CFolderPicker::disposing()
 {	
 }
-

@@ -99,5 +99,3 @@ public class _XIdlReflection extends MultiMethodTest{
         tRes.tested("getType()", cls != null);
     }
 }
-
-

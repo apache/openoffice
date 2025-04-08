@@ -398,6 +398,3 @@ GenericInfo_Parser::WriteIndentation( ostream &    o_rFile )
         o_rFile.write( sIndentation, iLevel );
     }
 }
-
-
-

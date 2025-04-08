@@ -26,4 +26,3 @@
 		<xsl:copy-of select="."/>
 	</xsl:template>
 </xsl:stylesheet>
-

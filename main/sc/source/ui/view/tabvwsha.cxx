@@ -804,7 +804,3 @@ void ScTabViewShell::GetDrawOptState( SfxItemSet& rSet )
 	aBool.SetWhich( SID_HELPLINES_MOVE );
 	rSet.Put( aBool );
 }
-
-
-
-

@@ -35,7 +35,7 @@ import com.sun.star.text.XAutoTextGroup;
  *  <li><code> insertNewByName()</code></li>
  *  <li><code> removeByName()</code></li>
  * </ul> <p>
- * Test is <b> NOT </b> multithread compilant. <p>
+ * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.text.XAutoTextContainer
  */
 public class _XAutoTextContainer  extends MultiMethodTest {
@@ -133,5 +133,3 @@ public class _XAutoTextContainer  extends MultiMethodTest {
     } // end removeByName()
 
 }    /// finish class XAutoTextContainer
-
-

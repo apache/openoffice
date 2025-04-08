@@ -241,5 +241,3 @@ public class _XActiveDataControl extends MultiMethodTest {
         this.disposeEnvironment();
     }
 }
-
-

@@ -75,4 +75,3 @@ public:
 
 
 #endif	// SC_EXPBASE_HXX
-

@@ -395,8 +395,3 @@ void SAL_CALL OQueryComposer::release() throw()
 	OSubComponent::release();
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-

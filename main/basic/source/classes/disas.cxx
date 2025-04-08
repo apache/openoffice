@@ -679,5 +679,3 @@ void SbiDisas::StrmOp( String& rText )
 	if( nOp2 & SBSTRM_BINARY )
 		rText.AppendAscii( ", Binary" );
 }
-
-

@@ -122,4 +122,3 @@ public:
 };
 
 #endif // INCLUDED_SVTOOLS_NFKEYTAB_HXX
-

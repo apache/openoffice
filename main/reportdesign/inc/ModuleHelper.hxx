@@ -68,7 +68,7 @@ namespace rptui
     //=========================================================================
     //= OModuleClient
     //=========================================================================
-    /** base class for objects which uses any global module-specific ressources 
+    /** base class for objects which uses any global module-specific resources
     */
     class REPORTDESIGN_DLLPUBLIC OModuleClient
     {
@@ -80,7 +80,7 @@ namespace rptui
     //=========================================================================
     //= ModuleRes
     //=========================================================================
-    /** specialized ResId, using the ressource manager provided by the global module
+    /** specialized ResId, using the resource manager provided by the global module
     */
     class REPORTDESIGN_DLLPUBLIC ModuleRes : public ::ResId
     {
@@ -92,5 +92,3 @@ namespace rptui
 //.........................................................................
 
 #endif // _RPTUI_MODULE_HELPER_RPT_HXX_
-
-

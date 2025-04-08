@@ -206,5 +206,3 @@ public class _XRowSetApproveBroadcaster extends MultiMethodTest {
     }
 
 }  // finish class _XRowSetApproveBroadcaster
-
-

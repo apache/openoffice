@@ -38,4 +38,3 @@ public:
 };
 
 #endif	// _TOOLKIT_HELPER_EXTERNALLOCK_HXX_
-

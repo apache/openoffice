@@ -63,5 +63,3 @@ public:
 };
 
 #endif		// _SD_IMAPINFO_HXX
-
-

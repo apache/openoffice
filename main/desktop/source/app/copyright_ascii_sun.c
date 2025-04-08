@@ -26,4 +26,3 @@
   */
  
 const char copyright_text_1[] = "Copyright © 2012 Apache Software Foundation, All rights reserved.";
-

@@ -238,5 +238,3 @@ void SwTxtAttrIterator::SearchNextChg()
 		}
 	}
 }
-
-

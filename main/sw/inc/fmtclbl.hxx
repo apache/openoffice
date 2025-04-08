@@ -47,4 +47,3 @@ inline const SwFmtNoBalancedColumns &SwFmt::GetBalancedColumns(sal_Bool bInP) co
 	{ return aSet.GetBalancedColumns( bInP ); }
 
 #endif
-

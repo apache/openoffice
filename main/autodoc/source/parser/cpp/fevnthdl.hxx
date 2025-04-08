@@ -98,4 +98,3 @@ FileScope_EventHandler::Event_Semicolon()
 
 }   // namespace cpp
 #endif
-

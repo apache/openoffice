@@ -572,5 +572,3 @@ sal_uInt16 BigPtrArray::Compress( short nMax )
 
 	return nFirstChgPos;
 }
-
-

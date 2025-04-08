@@ -89,5 +89,3 @@ public class _XLabelRanges extends MultiMethodTest {
     }
 
 }  // finish class _XLabelRanges
-
-

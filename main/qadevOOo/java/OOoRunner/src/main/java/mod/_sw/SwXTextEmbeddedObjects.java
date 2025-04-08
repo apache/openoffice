@@ -62,7 +62,7 @@ public class SwXTextEmbeddedObjects extends TestCase {
         try {
             oDoc = SOF.createTextDoc(null);
         } catch ( com.sun.star.uno.Exception e ) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn?t create document", e );
         }
@@ -130,4 +130,3 @@ public class SwXTextEmbeddedObjects extends TestCase {
         } // finish method getTestEnvironment
 
 }    // finish class SwXTextEmbeddedObjects
-

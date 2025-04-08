@@ -245,4 +245,3 @@ namespace comphelper
 //........................................................................
 
 #endif // COMPHELPER_COMPONENTCONTEXT_HXX
-

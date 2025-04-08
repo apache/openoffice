@@ -189,4 +189,3 @@ private:
 };
 
 #endif // _BASCTL_DLGEDOBJ_HXX
-

@@ -715,4 +715,3 @@ bool RegisteredDb::getEntry(::rtl::OUString const & url)
 
 } // namespace backend
 } // namespace dp_registry
-

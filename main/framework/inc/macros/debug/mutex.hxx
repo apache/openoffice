@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef __FRAMEWORK_MACROS_DEBUG_MUTEX_HXX_
 #define __FRAMEWORK_MACROS_DEBUG_MUTEX_HXX_
@@ -45,13 +43,13 @@
 	_____________________________________________________________________________________________________________*/
 
 	#ifndef	LOGFILE_MUTEX
-        #define LOGFILE_MUTEX   "mutex.log"
+		#define LOGFILE_MUTEX   "mutex.log"
 	#endif
 
 	/*_____________________________________________________________________________________________________________
-        LOG_LOCKTYPE( _EFALLBACK, _ECURRENT )
+		LOG_LOCKTYPE( _EFALLBACK, _ECURRENT )
 
-        Write informations about current set lock type for whole framework project to special file.
+		Write information about current set lock type for whole framework project to special file.
 	_____________________________________________________________________________________________________________*/
 
     #define LOG_LOCKTYPE( _EFALLBACK, _ECURRENT )                                                               \
@@ -97,12 +95,12 @@
 #else	// #ifdef ENABLE_MUTEXDEBUG
 
 	/*_____________________________________________________________________________________________________________
-		If right testmode is'nt set - implements these macro with normal functionality!
+		If right testmode isn't set - implements these macro with normal functionality!
 		We need the guard but not the log mechanism.
 	_____________________________________________________________________________________________________________*/
 
 	#undef	LOGFILE_MUTEX
-    #define LOG_LOCKTYPE( _EFALLBACK, _ECURRENT )
+	#define LOG_LOCKTYPE( _EFALLBACK, _ECURRENT )
 
 #endif	// #ifdef ENABLE_MUTEXDEBUG
 

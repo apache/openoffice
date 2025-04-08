@@ -52,4 +52,3 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_TABLEWINDOWTITLE_HXX
-

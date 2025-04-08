@@ -39,5 +39,3 @@ import lib.MultiPropertyTest;
 public class _PolyPolygonBezierDescriptor extends MultiPropertyTest {
 
 }  // finish class _PolyPolygonBezierDescriptor
-
-

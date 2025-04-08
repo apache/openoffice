@@ -3897,5 +3897,3 @@ Reference< XAccessible > DbGridControl::CreateAccessibleCell( sal_Int32 _nRow, s
 	return DbGridControl_Base::CreateAccessibleCell( _nRow, _nColumnPos );
 }
 // -----------------------------------------------------------------------------
-
-

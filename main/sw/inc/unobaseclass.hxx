@@ -167,4 +167,3 @@ namespace sw {
 } // namespace sw
 
 #endif // SW_UNOBASECLASS_HXX
-

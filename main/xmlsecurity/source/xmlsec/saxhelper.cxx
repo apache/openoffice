@@ -443,4 +443,3 @@ void SAXHelper::setDocumentLocator(
 
 	//m_pSaxHandler->setDocumentLocator( m_pParserCtxt , m_pSaxLocator ) ;
 }
-

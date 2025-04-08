@@ -42,4 +42,3 @@ FileChangedQueryBox::FileChangedQueryBox( Window* pParent, ResMgr* pResMgr ) :
 FileChangedQueryBox::~FileChangedQueryBox()
 {
 }
-

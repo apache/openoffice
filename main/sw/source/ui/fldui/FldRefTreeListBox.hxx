@@ -37,4 +37,3 @@ public:
 //  virtual long    GetTabPos( SvLBoxEntry*, SvLBoxTab* );
 };
 #endif
-

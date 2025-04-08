@@ -181,4 +181,3 @@ protected:
 } // end of namespace sd
 
 #endif		// _SD_SMARTTAG_HXX_
-

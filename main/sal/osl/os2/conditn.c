@@ -117,4 +117,3 @@ sal_Bool SAL_CALL osl_checkCondition(oslCondition Condition)
 
     return( DosWaitEventSem((HEV)Condition, SEM_IMMEDIATE_RETURN) == NO_ERROR);
 }
-

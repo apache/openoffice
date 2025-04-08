@@ -174,4 +174,3 @@ sdbcx::ObjectType OKeys::appendObject( const ::rtl::OUString& _rForName, const R
 }
 
 // -----------------------------------------------------------------------------
-

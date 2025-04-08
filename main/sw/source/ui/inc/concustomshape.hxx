@@ -65,4 +65,3 @@ class ConstCustomShape : public SwDrawBase
 
 
 #endif		// _SW_CONRECT_HXX
-

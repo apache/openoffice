@@ -1760,4 +1760,3 @@ void SdXShape::pageChanged( SdrPage*  )
 void SdXShape::objectChanged( SdrObject*  )
 {
 }
-

@@ -646,5 +646,3 @@ $(RESLIB10TARGETN): \
 .ENDIF			# "$(common_build_reslib)"!=""
 .ENDIF              # "$(GUI)"=="UNX"
 .ENDIF				# "$(RESLIB10TARGETN)"!=""
-
-

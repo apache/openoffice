@@ -342,4 +342,3 @@ SW_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponent
             ::com::sun::star::uno::Reference<
                 ::com::sun::star::lang::XMultiServiceFactory> rSrvMgr);
 #endif
-

@@ -42,4 +42,3 @@ ULFFILES = \
 .IF "$(WITH_LANG)"!=""
 ALLTAR : $(foreach,i,$(ULFFILES) $(COMMONMISC)$/$(TARGET)$/$i)
 .ENDIF			# "$(WITH_LANG)"!=""
-

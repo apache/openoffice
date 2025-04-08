@@ -116,4 +116,3 @@ public:
 
 
 #endif // _TOOLKIT_AWT_VCLXTOPWINDOW_HXX_
-

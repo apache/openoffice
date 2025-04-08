@@ -116,4 +116,3 @@ public:
         long WhichMethodToCallback) = 0;
 
 };
-

@@ -95,4 +95,3 @@ SVX_DLLPUBLIC void SvxUnogetApiNameForItem( const sal_Int16 nWhich, const String
 SVX_DLLPUBLIC void SvxUnogetInternalNameForItem( const sal_Int16 nWhich, const rtl::OUString& rApiName, String& rInternalName ) throw();
 
 #endif // _SVX_UNOAPI_HXX_
-

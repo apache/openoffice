@@ -178,4 +178,3 @@ void AbortChannel::sendAbort() throw (RuntimeException)
 }
 
 } // dp_misc
-

@@ -366,6 +366,3 @@ MainRow::Add_Item( E_Style             i_eStyle,
                         csv_assert(false);
     }
 }
-
-
-

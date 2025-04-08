@@ -414,5 +414,3 @@ void ScPrivatSplit::DataChanged( const DataChangedEvent& rDCEvt )
 	else
 		Window::DataChanged( rDCEvt );
 }
-
-

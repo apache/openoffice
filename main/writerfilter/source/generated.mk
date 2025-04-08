@@ -47,5 +47,3 @@ WRITERFILTER_OOXMLNAMESPACES= \
 	vml-main \
 	vml-officeDrawing \
 	vml-wordprocessingDrawing \
-
-

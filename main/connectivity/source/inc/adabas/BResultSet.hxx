@@ -53,4 +53,3 @@ namespace connectivity
 }
 
 #endif // CONNECTIVITY_ADABAS_RESULTSET_HXX
-

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
-
-
 
 // INCLUDE ---------------------------------------------------------------
 
@@ -888,7 +884,7 @@ sal_Bool ScDocFunc::PutData( const ScAddress& rPos, ScEditEngineDefaulter& rEngi
 	if ( bEditCell )
 	{
         // #i61702# With bLoseContent set, the content of rEngine isn't restored
-        // (used in loading XML, where after the removeActionLock call the API obejct's
+        // (used in loading XML, where after the removeActionLock call the API object's
         // EditEngine isn't accessed again.
         sal_Bool bLoseContent = pDoc->IsImportingXML();
 
@@ -1145,7 +1141,7 @@ bool ScDocFunc::ReplaceNote( const ScAddress& rPos, const String& rNoteText, con
             aOldData = pOldNote->GetNoteData();
         }
 
-        // collect drawing undo actions for deleting/inserting caption obejcts
+        // collect drawing undo actions for deleting/inserting caption objects
         if( pUndoMgr )
             pDrawLayer->BeginCalcUndo(false);
 
@@ -2472,7 +2468,7 @@ sal_Bool ScDocFunc::MoveBlock( const ScRange& rSource, const ScAddress& rDestPos
         clipdoc does not contain a drawing layer.
         #i102056# Passing IDF_NOTE only would overwrite cell contents with
         empty note cells, therefore the special modifier IDF_ADDNOTES is passed
-        here too which changes the behaviour of ScColumn::CopyFromClip() to not
+        here too which changes the behavior of ScColumn::CopyFromClip() to not
         touch existing cells. */
 	if ( pClipDoc->GetDrawLayer() )
         pDoc->CopyFromClip( aPasteDest, aDestMark, IDF_NOTE | IDF_ADDNOTES | IDF_OBJECTS,
@@ -4885,6 +4881,4 @@ sal_Bool ScDocFunc::InsertAreaLink( const String& rFile, const String& rFilter,
 	return sal_True;
 }
 
-
-
-
+/* vim: set noet sw=4 ts=4: */

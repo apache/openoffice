@@ -970,4 +970,3 @@ const css::uno::Sequence< css::beans::Property > TabWindow::impl_getStaticProper
 }
 
 }
-

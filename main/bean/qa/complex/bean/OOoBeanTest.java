@@ -711,5 +711,3 @@ public class OOoBeanTest
 
 
 }
-
-

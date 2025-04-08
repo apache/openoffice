@@ -70,7 +70,7 @@ import com.sun.star.view.XControlAccess;
  *  <li> <code>com::sun::star::lang::XEventListener</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.awt.XView
  * @see com.sun.star.form.XBoundControl
@@ -108,7 +108,7 @@ public class OTimeControl extends TestCase {
             log.println("creating a textdocument");
             xTextDoc = SOF.createTextDoc(null);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document", e);
         }

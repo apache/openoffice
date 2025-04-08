@@ -61,4 +61,3 @@ APP1STDLIBS+= msvcprt.lib
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

@@ -753,4 +753,3 @@ long TransformMetric( long nVal, FieldUnit aOld, FieldUnit aNew )
     }
 	return ConvertTable[nOld][nNew]( nVal );
 }
-

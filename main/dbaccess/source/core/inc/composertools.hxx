@@ -135,4 +135,3 @@ namespace dbaccess
 //........................................................................
 
 #endif // DBACCESS_SOURCE_CORE_INC_COMPOSERTOOLS_HXX
-

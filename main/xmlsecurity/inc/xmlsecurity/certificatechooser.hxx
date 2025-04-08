@@ -87,4 +87,3 @@ public:
 };
 
 #endif // _XMLSECURITY_CERTIFICATECHOOSER_HXX
-

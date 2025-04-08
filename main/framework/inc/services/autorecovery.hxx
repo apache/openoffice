@@ -72,7 +72,7 @@ namespace framework
 /** @short  hold all needed informations for an asynchronous dispatch alive.
 
     @descr  Because some operations are forced to be executed asynchronously
-            (e.g. requested by our CreashSave/Recovery dialog) ... we must make sure
+            (e.g. requested by our CrashSave/Recovery dialog) ... we must make sure
             that these informations won't be set as "normal" members of our AutoRecovery
             instance. Otherwise they can disturb our normal AutoSave-timer handling.
             e.g. it can be unclear then, which progress has to be used for storing documents ...
@@ -526,7 +526,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         /** @short  open the underlying configuration.
 
             @descr  This method must be called every time
-                    a configuartion call is needed. Because
+                    a configuration call is needed. Because
                     method works together with the member
                     m_xCFG, open it on demand and cache it
                     afterwards.
@@ -650,9 +650,9 @@ class AutoRecovery  : public  css::lang::XTypeProvider
                     the new document, which should be deregistered.
 
             @param  bStopListening
-                    sal_False: must be used in case this method is called withion disposing() of the document,
+                    sal_False: must be used in case this method is called within disposing() of the document,
                            where it make no sense to deregister our listener. The container dies ...
-                    sal_True : must be used in case this method is used on "dergistration" of this document, where
+                    sal_True : must be used in case this method is used on "deregistration" of this document, where
                            we must deregister our listener .-)
 
             @threadsafe
@@ -990,7 +990,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         
             Every URL supported by our UCB component can be used here.
             Further it doesn't matter if the file really exists or not.
-            Because removing a non exsistent file will have the same
+            Because removing a non existent file will have the same
             result at the end ... a non existing file .-)
 
             On the other side removing of files from disc is an optional

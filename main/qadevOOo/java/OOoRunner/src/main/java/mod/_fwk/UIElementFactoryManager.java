@@ -92,5 +92,3 @@ public class UIElementFactoryManager extends TestCase {
         return tEnv;
     }
 }
-
-

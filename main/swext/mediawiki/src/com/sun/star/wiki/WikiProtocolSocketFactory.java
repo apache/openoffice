@@ -161,4 +161,3 @@ class WikiProtocolSocketFactory implements SecureProtocolSocketFactory
         return WikiProtocolSocketFactory.class.hashCode();
     }
 }
-

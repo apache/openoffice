@@ -50,7 +50,7 @@ using ::com::sun::star::util::DateTime ;
 
 #define OUSTR(x) ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(x) )
 
-/*Resturns the index withing rRawString where sTypeName starts and where it ends.
+/*Returns the index withing rRawString where sTypeName starts and where it ends.
     The starting index is pair.first. The ending index in pair.second points
     one char after the last character of the type.
     sTypeName can be 
@@ -659,4 +659,3 @@ sal_Int32 SAL_CALL X509Certificate_MSCryptImpl::getCertificateUsage(  )
 }
 
 // MM : end
-

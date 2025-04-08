@@ -35,15 +35,15 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for XSpreadsheets
+' Required for XSpreadsheets
  Global nGlobalLong As Long 'the number of sheets
 
-' Requiered for XNameReplace
+' Required for XNameReplace
  Global cNameToReplace As String 'name of instance to be replased
  Global oReplaceInstance As Object 'instance, that will be inserted
                                    'instead old one
 
-' Requiered for XNameContainer
+' Required for XNameContainer
  Global oInstance As Object 'instance to insert
 
 

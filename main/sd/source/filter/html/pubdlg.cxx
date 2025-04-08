@@ -206,7 +206,7 @@ int SdPublishingDesign::operator ==(const SdPublishingDesign & rDesign) const
 		m_aCompression == rDesign.m_aCompression &&
 		m_eFormat	   == rDesign.m_eFormat &&
         m_bHiddenSlides == rDesign.m_bHiddenSlides &&
-		(  // compare html options
+		(  // compare HTML options
 			(m_eMode != PUBLISH_HTML && m_eMode != PUBLISH_FRAMES) ||
 			(
 				m_bContentPage == rDesign.m_bContentPage &&
@@ -1055,7 +1055,7 @@ IMPL_LINK( SdPublishingDlg, DesignDeleteHdl, PushButton *, EMPTYARG )
 }
 
 // =====================================================================
-// Clickhandler fuer das ändern des Servertyps
+// Clickhandler fuer das Ã¤ndern des Servertyps
 // =====================================================================
 IMPL_LINK( SdPublishingDlg, WebServerHdl, RadioButton *, pButton )
 {
@@ -1405,7 +1405,7 @@ void SdPublishingDlg::UpdatePage()
 	}
 }
 
-/** loads the html buttons from the button sets, creates a preview and fills the
+/** loads the HTML buttons from the button sets, creates a preview and fills the
 	itemset for page 5
  */
 void SdPublishingDlg::LoadPreviewButtons()
@@ -1747,6 +1747,3 @@ IMPL_LINK( SdDesignNameDlg, ModifyHdl, Edit*, EMPTYARG )
 
 	return 0;
 }
-
-
-

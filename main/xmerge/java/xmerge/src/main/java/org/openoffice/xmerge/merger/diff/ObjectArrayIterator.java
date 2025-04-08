@@ -203,4 +203,3 @@ public final class ObjectArrayIterator implements Iterator {
         // do nothing
     }
 }
-

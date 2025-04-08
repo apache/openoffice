@@ -342,4 +342,3 @@ void TaskToolBox::EndUpdateTask()
 
     ImplFormatTaskToolBox();
 }
-

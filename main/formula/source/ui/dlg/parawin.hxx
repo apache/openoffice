@@ -167,4 +167,3 @@ public:
 } // formula
 
 #endif // FORMULA_PARAWIN_HXX
-

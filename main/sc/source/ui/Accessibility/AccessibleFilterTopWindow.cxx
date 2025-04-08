@@ -120,4 +120,3 @@ void ScAccessibleFilterTopWindow::setAccessibleChild(
         break;
     }
 }
-

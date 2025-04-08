@@ -103,4 +103,3 @@ long	MMToPica(long nIn );
 SVT_DLLPUBLIC long 	TransformMetric( long nVal, FieldUnit aOld, FieldUnit aNew );
 
 #endif
-

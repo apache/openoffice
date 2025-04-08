@@ -96,5 +96,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMS_OFFICEFORMS_HXX_
-
-

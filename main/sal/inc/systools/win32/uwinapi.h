@@ -114,4 +114,3 @@ inline bool IsValidHandle(HANDLE handle)
 #define IsValidHandle(Handle)	((DWORD)(Handle) + 1 > 1)
 
 #endif	/* __cplusplus */
-

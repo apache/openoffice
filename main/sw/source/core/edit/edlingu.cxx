@@ -1967,5 +1967,3 @@ void SwEditShell::IgnoreGrammarErrorAt( SwPaM& rErrorPosition )
         nStart = 0;
     }
 }    
-
-

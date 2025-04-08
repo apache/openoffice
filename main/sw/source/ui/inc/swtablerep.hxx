@@ -87,4 +87,3 @@ public:
 	TColumn* 	GetColumns() const				{return pTColumns;}
 };
 #endif
-

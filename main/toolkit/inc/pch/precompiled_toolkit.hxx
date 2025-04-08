@@ -338,4 +338,3 @@
 #include "vos/mutex.hxx"
 //---MARKER---
 #endif
-

@@ -204,4 +204,3 @@ sal_Bool AstDeclaration::dump(RegistryKey& rKey)
 	}
 	return bRet;
 }	
-

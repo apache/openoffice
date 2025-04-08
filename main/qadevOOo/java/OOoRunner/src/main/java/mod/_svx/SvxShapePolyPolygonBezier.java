@@ -80,7 +80,7 @@ import com.sun.star.uno.XInterface;
  * </ul> <p>
  *
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.style.ParagraphProperties
  * @see com.sun.star.drawing.PolyPolygonBezierDescriptor
@@ -141,7 +141,7 @@ public class SvxShapePolyPolygonBezier extends TestCase {
             xDrawDoc = SOF.loadDocument(
                              utils.getFullTestURL("SvxShape.sxd"));
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create document", e );
         }

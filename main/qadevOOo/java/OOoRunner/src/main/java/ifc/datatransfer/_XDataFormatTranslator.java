@@ -36,7 +36,7 @@ import com.sun.star.uno.Type;
 *  <li><code> getSystemDataTypeFromDataFlavor()</code></li>
 *  <li><code> getDataFlavorFromSystemDataType()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.datatransfer.XDataFormatTranslator
 */
 public class _XDataFormatTranslator extends MultiMethodTest {
@@ -70,4 +70,3 @@ public class _XDataFormatTranslator extends MultiMethodTest {
     }
 
 }
-

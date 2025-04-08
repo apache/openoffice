@@ -95,4 +95,3 @@ FltError ScFormatFilterPluginImpl::ScImportLotus123( SfxMedium& rMedium, ScDocum
 
 	return eRet;
 }
-

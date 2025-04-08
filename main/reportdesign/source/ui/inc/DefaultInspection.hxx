@@ -104,4 +104,3 @@ namespace rptui
 //........................................................................
 
 #endif // RPT_DEFAULTINSPECTION_HXX
-

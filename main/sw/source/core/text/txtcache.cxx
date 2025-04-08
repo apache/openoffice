@@ -233,5 +233,3 @@ void SwTxtFrm::SetPara( SwParaPortion *pNew, sal_Bool bDelete )
 		}
 	}
 }
-
-

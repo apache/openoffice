@@ -71,4 +71,3 @@ public class UnoFacetteNode extends UnoNode{
         return ((String) getUserObject()).equals(SINTERFACEDESCRIPTION);
     }
 }
-

@@ -968,6 +968,3 @@ void CaptionComboBox::KeyInput(const KeyEvent& rEvt)
 	if( rEvt.GetKeyCode().GetCode() != KEY_SPACE )
 		SwComboBox::KeyInput(rEvt);
 }
-
-
-

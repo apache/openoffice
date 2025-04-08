@@ -2979,4 +2979,3 @@ public class DOMTest
         }
     }
 }
-

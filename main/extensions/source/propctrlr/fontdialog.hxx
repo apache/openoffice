@@ -76,4 +76,3 @@ namespace pcr
 //............................................................................
 
 #endif // _EXTENSIONS_PROPCTRLR_FONTDIALOG_HXX_
-

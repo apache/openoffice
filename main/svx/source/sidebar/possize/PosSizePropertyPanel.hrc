@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 //  RID_SIDEBAR_POSSIZE_PANEL--------------------------------------------------------------
@@ -60,14 +60,14 @@
 #define FT_WIDTH_Y								MF_POSITION_X_Y + MBOX_HEIGHT + CONTROL_SPACING_VERTICAL
 #define FLD_WIDTH_X								FT_WIDTH_X
 #define FLD_WIDTH_Y								FT_WIDTH_Y + TEXT_HEIGHT + TEXT_CONTROL_SPACING_VERTICAL
-#define FT_HEIGHT_X								FT_WIDTH_X + MBOX_WIDTH + CONTROL_SPACING_HORIZONTAL				
+#define FT_HEIGHT_X								FT_WIDTH_X + MBOX_WIDTH + CONTROL_SPACING_HORIZONTAL
 #define FT_HEIGHT_Y								FT_WIDTH_Y
 #define FLD_HEIGHT_X							FT_HEIGHT_X
 #define FLD_HEIGHT_Y							FLD_WIDTH_Y
 #define CBX_X                                   FT_WIDTH_X
 #define CBX_Y									FLD_WIDTH_Y + MBOX_HEIGHT + CONTROL_SPACING_VERTICAL
 /////////////////////
-#define FT_ROTATION_X							FT_WIDTH_X			
+#define FT_ROTATION_X							FT_WIDTH_X
 #define FT_ROTATION_Y							CBX_Y + CONTROL_SPACING_VERTICAL + TEXT_HEIGHT
 
 #define MF_ROTATION_X							FT_ROTATION_X + 40 + CONTROL_SPACING_HORIZONTAL

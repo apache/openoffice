@@ -59,5 +59,3 @@ uno::Reference< uno::XInterface > SAL_CALL ScDocument_createInstance(
     SfxObjectShell* pShell = new ScDocShell( _nCreationFlags );
 	return uno::Reference< uno::XInterface >( pShell->GetModel() );
 }
-
-

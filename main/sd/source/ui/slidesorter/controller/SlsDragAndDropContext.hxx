@@ -53,7 +53,7 @@ public:
     ~DragAndDropContext (void);
 
     /** Call this method (for example as reaction to ESC key press) to avoid
-        processing (ie moving or inserting) the substition when the called
+        processing (ie moving or inserting) the substitution when the called
         DragAndDropContext object is destroyed.
     */
     void Dispose (void);

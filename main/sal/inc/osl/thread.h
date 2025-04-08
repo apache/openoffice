@@ -196,4 +196,3 @@ rtl_TextEncoding SAL_CALL osl_setThreadTextEncoding(rtl_TextEncoding Encoding);
 #endif
 
 #endif	/* _OSL_THREAD_H_ */
-

@@ -931,5 +931,3 @@ ScRefUpdateRes ScRefUpdate::UpdateGrow( const ScRange& rArea, SCCOL nGrowX, SCRO
 
 	return eRet;
 }
-
-

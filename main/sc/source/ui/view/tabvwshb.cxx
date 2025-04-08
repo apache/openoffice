@@ -593,6 +593,3 @@ void ScTabViewShell::GetUndoState(SfxItemSet &rSet)
 		nWhich = aIter.NextWhich();
 	}
 }
-
-
-

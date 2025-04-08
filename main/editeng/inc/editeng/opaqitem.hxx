@@ -74,4 +74,3 @@ inline SvxOpaqueItem &SvxOpaqueItem::operator=( const SvxOpaqueItem &rCpy )
 
 
 #endif
-

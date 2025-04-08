@@ -343,4 +343,3 @@ inline XclExpStream& operator<<( XclExpStream& rStrm, const XclExpString& rStrin
 // ============================================================================
 
 #endif
-

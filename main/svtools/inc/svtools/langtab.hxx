@@ -51,4 +51,3 @@ public:
 SVT_DLLPUBLIC const String ApplyLreOrRleEmbedding( const String &rText );
 
 #endif
-

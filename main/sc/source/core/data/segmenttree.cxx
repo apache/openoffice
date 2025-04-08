@@ -575,4 +575,3 @@ void ScFlatUInt16RowSegments::setInsertFromBack(bool bInsertFromBack)
 {
     mpImpl->setInsertFromBack(bInsertFromBack);
 }
-

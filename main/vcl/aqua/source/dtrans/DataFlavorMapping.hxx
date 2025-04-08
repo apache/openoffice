@@ -66,7 +66,7 @@ typedef std::auto_ptr<DataProvider> DataProviderPtr_t;
 class DataFlavorMapper
 {
 public:
-  /* Initialialize a DataFavorMapper instance. Throws a RuntimeException in case the XMimeContentTypeFactory service
+  /* Initialize a DataFavorMapper instance. Throws a RuntimeException in case the XMimeContentTypeFactory service
 	 cannot be created.
    */
   DataFlavorMapper();
@@ -74,7 +74,7 @@ public:
 
 
   /* Map a system data flavor to an OpenOffice data flavor. 
-	 Return an empty string if there is not suiteable 
+	 Return an empty string if there is not suitable
 	 mapping from a system data flavor to a OpenOffice data
 	 flavor.
   */
@@ -82,13 +82,13 @@ public:
 
 
   /* Map an OpenOffice data flavor to a system data flavor.
-	 If there is no suiteable mapping available NULL will
+	 If there is no suitable mapping available NULL will
 	 be returned.
   */
   const NSString* openOfficeToSystemFlavor(const com::sun::star::datatransfer::DataFlavor& oooDataFlavor, bool& rbInternal) const;
 
   /* Select the best available image data type
-	 If there is no suiteable mapping available NULL will
+	 If there is no suitable mapping available NULL will
 	 be returned.
   */
   NSString* openOfficeImageToSystemFlavor(NSPasteboard* pPasteboard) const;

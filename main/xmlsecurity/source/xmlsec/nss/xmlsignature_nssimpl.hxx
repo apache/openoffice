@@ -95,4 +95,3 @@ class XMLSignature_NssImpl : public ::cppu::WeakImplHelper3<
 } ;
 
 #endif	// _XMLSIGNATURE_NSSIMPL_HXX_
-

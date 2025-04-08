@@ -47,4 +47,3 @@ public:
 };
 
 #endif // #ifndef SFX_HELPDISPATCHER_HXX
-

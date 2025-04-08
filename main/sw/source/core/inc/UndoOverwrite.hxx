@@ -98,4 +98,3 @@ public:
 };
 
 #endif // SW_UNDO_OVERWRITE_HXX
-

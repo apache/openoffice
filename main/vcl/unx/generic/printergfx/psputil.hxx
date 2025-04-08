@@ -72,4 +72,3 @@ ConverterFactory* GetConverterFactory ();
 }  /* namespace psp */
 
 #endif /* _PSPRINT_PRINTERUTIL_HXX_ */
-

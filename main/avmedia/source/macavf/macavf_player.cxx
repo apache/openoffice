@@ -460,4 +460,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL Player::getSupportedServiceNames(  )
 
 } // namespace macavf
 } // namespace avmedia
-

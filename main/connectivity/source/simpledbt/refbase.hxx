@@ -53,5 +53,3 @@ namespace connectivity
 //........................................................................
 
 #endif // CONNECTIVITY_DBTOOLS_REFBASE_HXX
-
-

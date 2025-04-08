@@ -54,7 +54,7 @@ import com.sun.star.uno.UnoRuntime;
 *   assumed.
 *  </li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.document.XFilter
 */
 public class _XFilter extends MultiMethodTest {
@@ -117,7 +117,7 @@ public class _XFilter extends MultiMethodTest {
 		result = oObj.filter(mDesc) ;
                 
 		if (checker == null) {
-			log.println("!!! Warning : cann't check filter as no relation found");
+			log.println("!!! Warning : can't check filter as no relation found");
 		} else {
 			result &= checker.checkFilter() ;
 		}
@@ -174,6 +174,3 @@ public class _XFilter extends MultiMethodTest {
     }
 
 }
-
-
-

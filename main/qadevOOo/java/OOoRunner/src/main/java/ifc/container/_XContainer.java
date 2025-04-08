@@ -54,7 +54,7 @@ import com.sun.star.uno.XNamingService;
 *    container.</li>
 *  <li> <code>'INSTANCE2'</code> : <b>(optional)</b>
 *     Object which can be inserted into container. The relation
-*     must be specified when container cann't contain two
+*     must be specified when container can't contain two
 *     identical objects. Replaces the first instance.</li>
 *  <li> <code>'XContainer.Container'</code> (of type
 *  <code>com.sun.star.container.XNameContainer</code>)
@@ -65,7 +65,7 @@ import com.sun.star.uno.XNamingService;
 * Object <b>must implement</b>
 * <code>com.sun.star.container.XNameContainer</code>.
 * <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.container.XContainer
 */
 public class _XContainer extends MultiMethodTest {
@@ -362,5 +362,3 @@ public class _XContainer extends MultiMethodTest {
         }
     }    
 }
-
-

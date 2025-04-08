@@ -119,4 +119,3 @@ public class ScrollBar extends Component implements SwingConstants, javax.access
         }
     }
 }
-

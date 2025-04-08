@@ -53,7 +53,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::container::XNameContainer</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.container.XNameAccess
 * @see com.sun.star.container.XElementAccess
 * @see com.sun.star.container.XNameReplace
@@ -77,7 +77,7 @@ public class ScAutoFormatsObj extends TestCase{
             log.println( "creating a Spreadsheet document" );
             xSheetDoc = SOF.createCalcDoc(null);
         } catch ( com.sun.star.uno.Exception e ) {
-            // Some exception occured.FAILED
+            // Some exception occurred. FAILED
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create document", e );
         }
@@ -151,4 +151,3 @@ public class ScAutoFormatsObj extends TestCase{
     }
 
 }    // finish class ScAutoFormatsObj
-

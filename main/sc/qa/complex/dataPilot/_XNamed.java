@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 package complex.dataPilot;
 
@@ -42,15 +40,15 @@ import lib.TestParameters;
 *    isn't to be tested and result of this test will be
 *    equal to relation value.</li>
 * <ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.container.XNamed
 */
 public class _XNamed {
 
     /**
-     * The object that is testsed.
+     * The object that is tested.
      */
-    public XNamed oObj = null;    
+    public XNamed oObj = null;
 
     /**
      * The test parameters
@@ -61,7 +59,7 @@ public class _XNamed {
      * The log writer
      */
     // private LogWriter log = null;
-    
+
     /**
      * Constructor: gets the object to test, a logger and the test parameters
      * @param xObj The test object
@@ -151,5 +149,3 @@ public class _XNamed {
         return result;
     }
 }
-
-

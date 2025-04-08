@@ -203,4 +203,3 @@ class WriterFrame extends java.awt.Frame
     }
     
 }
-

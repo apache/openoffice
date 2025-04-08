@@ -52,4 +52,3 @@ UserInformation::UserInformation()
 	LanguageType eLanguage = MsLangId::convertIsoStringToLanguage(comphelper::getString(aValue),'-');
 	m_aUserLocale = MsLangId::convertLanguageToLocale(eLanguage);
 }
-

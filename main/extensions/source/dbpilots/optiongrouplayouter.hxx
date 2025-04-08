@@ -68,4 +68,3 @@ namespace dbp
 //.........................................................................
 
 #endif // _EXTENSIONS_DBP_OPTIONGROUPLAYOUTER_HXX_
-

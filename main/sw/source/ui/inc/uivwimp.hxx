@@ -181,4 +181,3 @@ public:
     inline void             SetParam( sal_Int16 nParam ) { m_nParam = nParam; }
 };
 #endif
-

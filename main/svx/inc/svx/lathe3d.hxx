@@ -115,4 +115,3 @@ private:
 };
 
 #endif			// _E3D_LATHE3D_HXX
-

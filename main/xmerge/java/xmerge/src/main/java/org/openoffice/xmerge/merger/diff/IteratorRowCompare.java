@@ -236,4 +236,3 @@ public class IteratorRowCompare implements DiffAlgorithm {
         return splitRow;
     }
 }
-

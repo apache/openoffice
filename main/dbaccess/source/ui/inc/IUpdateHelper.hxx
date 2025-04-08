@@ -45,4 +45,3 @@ namespace dbaui
 }
 
 #endif // DBAUI_IUPDATEHELPER_HXX
-

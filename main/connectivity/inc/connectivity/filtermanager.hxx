@@ -125,4 +125,3 @@ namespace dbtools
 //........................................................................
 
 #endif // CONNECTIVITY_FORMFILTERMANAGER_HXX
-

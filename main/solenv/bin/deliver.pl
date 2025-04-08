@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -37,7 +37,7 @@ use File::Spec;
 
 #### script id #####
 
-( $script_name = $0 ) =~ s/^.*\b(\w+)\.pl$/$1/; 
+( $script_name = $0 ) =~ s/^.*\b(\w+)\.pl$/$1/;
 
 $id_str = ' $Revision$ ';
 $id_str =~ /Revision:\s+(\S+)\s+\$/
@@ -69,11 +69,11 @@ $is_debug           = 0;
 
 $error              = 0;
 $module             = 0;            # module name
-$repository         = 0;            # parent directory of this module 
+$repository         = 0;            # parent directory of this module
 $base_dir           = 0;            # path to module base directory
 $dlst_file          = 0;            # path to d.lst
 $ilst_ext           = 'ilst';       # extension of image lists
-$umask              = 22;           # default file/directory creation mask 
+$umask              = 22;           # default file/directory creation mask
 $dest               = 0;            # optional destination path
 $common_build       = 0;            # do we have common trees?
 $common_dest        = 0;            # common tree on solver
@@ -165,7 +165,7 @@ exit($error);
 
 #### implemented actions #####
 
-sub do_copy 
+sub do_copy
 {
     # We need to copy two times:
     # from the platform dependent output tree
@@ -173,7 +173,7 @@ sub do_copy
     my ($dependent, $common, $from, $to, $file_list);
     my $line = shift;
     my $touch = 0;
-    
+
     $dependent = expand_macros($line);
     ($from, $to) = split(' ', $dependent);
     print "copy dependent: from: $from, to: $to\n" if $is_debug;
@@ -191,7 +191,7 @@ sub do_copy
     }
 }
 
-sub do_dos 
+sub do_dos
 {
     my $line = shift;
 
@@ -208,7 +208,7 @@ sub do_dos
     }
 }
 
-sub do_addincpath 
+sub do_addincpath
 {
     # just collect all addincpath files, actual filtering is done later
     my $line = shift;
@@ -217,11 +217,11 @@ sub do_addincpath
 
     $line = expand_macros($line);
     ($from, $to) = split(' ', $line);
-    
+
     push( @addincpath_list, @{glob_line($from, $to)});
 }
 
-sub do_linklib 
+sub do_linklib
 {
     my ($lib_base, $lib_major,$from_dir, $to_dir);
     my $lib = shift;
@@ -253,10 +253,10 @@ sub do_linklib
             print_warning("invalid library name: $lib");
         }
     }
-        
+
     foreach $lib_base ( sort keys %globbed_hash ) {
         $lib = get_latest_patchlevel(@{$globbed_hash{$lib_base}});
-    
+
         if ( $lib =~ /^(lib\S+(\.so|\.dylib))\.(\d+)\.(\d+)(\.(\d+))?$/ )
         {
             $lib_major = "$lib_base.$3";
@@ -316,16 +316,16 @@ sub do_linklib
     }
 }
 
-sub do_mkdir 
+sub do_mkdir
 {
     my $path = expand_macros(shift);
     # strip whitespaces from path name
     $path =~ s/\s$//;
     if (( ! $opt_delete ) && ( ! -d $path )) {
-        if ( $opt_check ) { 
+        if ( $opt_check ) {
             print "MKDIR: $path\n";
         } else {
-            mkpath($path, 0, 0777-$umask); 
+            mkpath($path, 0, 0777-$umask);
             if ( ! -d $path ) {
                 print_error("mkdir: could not create directory '$path'", 0);
             }
@@ -354,7 +354,7 @@ sub do_symlink
     print "symlink: $from, to: $to\n" if $is_debug;
 
     return unless $has_symlinks;
-    
+
     if ( $opt_check ) {
         if ( $opt_delete ) {
             print "REMOVE: $to\n";
@@ -382,12 +382,12 @@ sub do_symlink
     }
 }
 
-sub do_touch 
+sub do_touch
 {
     my ($from, $to);
     my $line = shift;
     my $touch = 1;
-    
+
     $line = expand_macros($line);
     ($from, $to) = split(' ', $line);
     print "touch: $from, to: $to\n" if $is_debug;
@@ -396,7 +396,7 @@ sub do_touch
 
 #### subroutines #####
 
-sub parse_options 
+sub parse_options
 {
     my $arg;
     my $dontdeletecommon = 0;
@@ -415,9 +415,9 @@ sub parse_options
         $arg =~ /^-deloutput$/  and $opt_deloutput = 1 and next;
         $arg =~ /^-debug$/      and $is_debug   = 1  and next;
         $arg =~ /^-checkdlst$/  and $opt_checkdlst = 1 and next;
-        print_error("invalid option $arg") if ( $arg =~ /^-/ ); 
+        print_error("invalid option $arg") if ( $arg =~ /^-/ );
         if ( $arg =~ /^-/ || $opt_help || $#ARGV > -1 ) {
-            usage(1); 
+            usage(1);
         }
         $dest = $arg;
     }
@@ -440,12 +440,12 @@ sub parse_options
     $opt_force = 1 if $opt_delete;
 }
 
-sub init_globals 
+sub init_globals
 {
     my $ext;
     ($module, $repository, $base_dir, $dlst_file) =  get_base();
 
-    # for CWS: 
+    # for CWS:
     $module =~ s/\.lnk$//;
 
     print "Module=$module, Base_Dir=$base_dir, d.lst=$dlst_file\n" if $is_debug;
@@ -465,7 +465,7 @@ sub init_globals
     my $work_stamp    = $ENV{'WORK_STAMP'};
 
     $::CC_PATH=(fileparse( $ENV{"CC"}))[1];
- 
+
     # special security check for release engineers
     if ( defined($updater) && !defined($build_sosl) && !$opt_force) {
         my $path = getcwd();
@@ -508,7 +508,7 @@ sub init_globals
         $common_outdir = $inpath;
         $dest = "$solarversion/$inpath" if ( !$dest );
         $common_dest = $dest;
-    } 
+    }
     $dest =~ s#\\#/#g;
     $common_dest =~ s#\\#/#g;
 
@@ -522,7 +522,7 @@ sub init_globals
     # %OUTPATH%
     # %L10N_FRAMEWORK%
     # %UPD%
-    
+
     # valid macros
     @macros = (
                 [ '%__PRJROOT%',        $base_dir       ],
@@ -538,7 +538,7 @@ sub init_globals
     $has_symlinks = eval { symlink("",""); 1 };
 }
 
-sub get_base 
+sub get_base
 {
     # a module base dir contains a subdir 'prj'
     # which in turn contains a file 'd.lst'
@@ -568,7 +568,7 @@ sub get_base
     }
 }
 
-sub parse_dlst 
+sub parse_dlst
 {
     my $line_cnt = 0;
     open(DLST, "<$dlst_file") or die "can't open d.lst";
@@ -580,7 +580,7 @@ sub parse_dlst
         if (!$delete_common && /%COMMON_DEST%/) {
             # Just ignore all lines with %COMMON_DEST%
             next;
-        }; 
+        };
         if ( /^\s*(\w+?):\s+(.*)$/ ) {
             if ( !exists $action_hash{$1} ) {
                 print_error("unknown action: \'$1\'", $line_cnt);
@@ -595,7 +595,7 @@ sub parse_dlst
                 next;
             }
             push(@action_data, ['copy', $_]);
-            # for each ressource file (.res) copy its image list (.ilst)
+            # for each resource file (.res) copy its image list (.ilst)
             if ( /\.res\s/ ) {
                 my $imagelist = $_;
                 $imagelist =~ s/\.res/\.$ilst_ext/g;
@@ -610,13 +610,13 @@ sub parse_dlst
     close(DLST);
 }
 
-sub expand_macros 
+sub expand_macros
 {
     # expand all macros and change backslashes to slashes
     my $line        = shift;
     my $line_cnt    = shift;
     my $i;
-    
+
     for ($i=0; $i<=$#macros; $i++)  {
         $line =~ s/$macros[$i][0]/$macros[$i][1]/gi
     }
@@ -629,7 +629,7 @@ sub expand_macros
     return $line;
 }
 
-sub walk_action_data 
+sub walk_action_data
 {
     # all actions have to be excuted relative to the prj directory
     chdir("$base_dir/prj");
@@ -644,14 +644,14 @@ sub walk_action_data
     }
 }
 
-sub glob_line 
+sub glob_line
 {
     my $from = shift;
     my $to = shift;
     my $to_dir = shift;
     my $replace = 0;
     my @globbed_files = ();
-    
+
     if ( ! ( $from && $to ) ) {
         print_warning("Error in d.lst? source: '$from' destination: '$to'");
         return \@globbed_files;
@@ -662,12 +662,12 @@ sub glob_line
         ($to_fname, $to_dir) = fileparse($to);
         $replace = 1;
     }
-        
+
     if ( $from =~ /[\*\?\[\]]/ ) {
         # globbing necessary, no renaming possible
         my $file;
         my @file_list = glob($from);
-        
+
         foreach $file ( @file_list ) {
             next if ( -d $file); # we only copy files, not directories
             my ($fname, $dir) = fileparse($file);
@@ -694,19 +694,19 @@ sub glob_line
     }
     return \@globbed_files;
 }
-    
 
-sub glob_and_copy 
+
+sub glob_and_copy
 {
     my $from = shift;
     my $to = shift;
     my $touch = shift;
 
     my @copy_files = @{glob_line($from, $to)};
-    
+
     for (my $i = 0; $i <= $#copy_files; $i++) {
         next if filter_out($copy_files[$i][0]); # apply copy filter
-        copy_if_newer($copy_files[$i][0], $copy_files[$i][1], $touch) 
+        copy_if_newer($copy_files[$i][0], $copy_files[$i][1], $touch)
                     ? $files_copied++ : $files_unchanged++;
     }
 }
@@ -718,7 +718,7 @@ sub is_unstripped {
     if (-f $file_name.$maybedot) {
         my $file_type = `file $file_name`;
         # OS X file command doesn't know if a file is stripped or not
-        if (($file_type =~ /not stripped/o) || ($file_type =~ /Mach-O/o) || 
+        if (($file_type =~ /not stripped/o) || ($file_type =~ /Mach-O/o) ||
             (($file_type =~ /PE/o) && ($ENV{GUI} eq 'WNT') &&
              ($nm_output = `nm $file_name 2>&1`) && $nm_output &&
              !($nm_output =~ /no symbols/i) && !($nm_output =~ /not recognized/i))) {
@@ -770,7 +770,7 @@ sub strip_target {
     return $rc;
 };
 
-sub copy_if_newer 
+sub copy_if_newer
 {
     # return 0 if file is unchanged ( for whatever reason )
     # return 1 if file has been copied
@@ -779,7 +779,7 @@ sub copy_if_newer
     my $touch = shift;
     my $from_stat_ref;
     my $rc = 0;
-    
+
     print "testing $from, $to\n" if $is_debug;
     push_on_ziplist($to) if $opt_zip;
     push_on_loglist("COPY", "$from", "$to") if $opt_log;
@@ -806,7 +806,7 @@ sub copy_if_newer
     else {
        print "COPY: $from -> $to\n" if $opt_verbose;
     }
-     
+
     return 1 if( $opt_check );
 
     #
@@ -825,7 +825,7 @@ sub copy_if_newer
             if ( !$rc ) {
                 print_warning("can't update temporary file modification time '$temp_file': $!\n
                                Check file permissions of '$from'.",0);
-            }   
+            }
         }
         fix_file_permissions($$from_stat_ref[2], $temp_file);
         if ( $^O eq 'os2' )
@@ -875,7 +875,7 @@ sub copy_if_newer
     return 0;
 }
 
-sub is_newer 
+sub is_newer
 {
         # returns whole stat buffer if newer
         my $from = shift;
@@ -900,7 +900,7 @@ sub is_newer
         }
         # adjust timestamps to even seconds
         # this is necessary since NT platforms have a
-        # 2s modified time granularity while the timestamps 
+        # 2s modified time granularity while the timestamps
         # on Samba volumes have a 1s granularity
 
         $from_stat[9]-- if $from_stat[9] % 2;
@@ -940,11 +940,11 @@ sub filter_out
     return 0;
 }
 
-sub fix_file_permissions 
+sub fix_file_permissions
 {
     my $mode = shift;
     my $file = shift;
-    
+
     if ( ($mode >> 6) % 2 == 1 ) {
         $mode = 0777 & ~$umask;
     }
@@ -954,14 +954,14 @@ sub fix_file_permissions
     chmod($mode, $file);
 }
 
-sub get_latest_patchlevel 
+sub get_latest_patchlevel
 {
     # note: feed only well formed library names to this function
     # of the form libfoo.so.x.y.z with x,y,z numbers
 
     my @sorted_files = sort by_rev @_;
     return $sorted_files[-1];
-        
+
     sub by_rev {
     # comparison function for sorting
         my (@field_a, @field_b, $i);
@@ -990,10 +990,10 @@ sub get_latest_patchlevel
 
 }
 
-sub push_default_actions 
+sub push_default_actions
 {
-    # any default action (that is an action which must be done even without 
-    # a corresponding d.lst entry) should be pushed here on the 
+    # any default action (that is an action which must be done even without
+    # a corresponding d.lst entry) should be pushed here on the
     # @action_data list.
     my $subdir;
     my @subdirs = (
@@ -1054,7 +1054,7 @@ sub push_default_actions
     }
 }
 
-sub walk_addincpath_list 
+sub walk_addincpath_list
 {
     my (@addincpath_headers);
     return if $#addincpath_list == -1;
@@ -1067,12 +1067,12 @@ sub walk_addincpath_list
 
     # now stream all addincpath headers through addincpath filter
     for (my $i = 0; $i <= $#addincpath_list; $i++) {
-        add_incpath_if_newer($addincpath_list[$i][0], $addincpath_list[$i][1], \@addincpath_headers) 
+        add_incpath_if_newer($addincpath_list[$i][0], $addincpath_list[$i][1], \@addincpath_headers)
                 ? $files_copied++ : $files_unchanged++;
     }
 }
 
-sub add_incpath_if_newer 
+sub add_incpath_if_newer
 {
     my $from = shift;
     my $to = shift;
@@ -1088,10 +1088,10 @@ sub add_incpath_if_newer
         return 1 if $rc;
         return 0;
     }
-        
+
     if ( $from_stat_ref = is_newer($from, $to) ) {
         print "ADDINCPATH: $from -> $to\n" if $opt_verbose;
-        
+
         return 1 if $opt_check;
 
         my $save = $/;
@@ -1170,7 +1170,7 @@ sub push_on_loglist
     my $ext = "%_EXT%";
     $ext = expand_macros($ext);
     $entry[2] =~ s#$ext([\\\/])#$1#o;
-    
+
     if ( $common ) {
         push @common_log_list, [@entry];
     } else {
@@ -1183,7 +1183,7 @@ sub zip_files
 {
     my $zipexe = 'zip';
     $zipexe .= ' -y' unless  $^O eq 'MSWin32';
-    
+
     my ($platform_zip_file, $common_zip_file);
     $platform_zip_file = "%_DEST%/zip%_EXT%/$module.zip";
     $platform_zip_file = expand_macros($platform_zip_file);
@@ -1199,7 +1199,7 @@ sub zip_files
 
     my $ext = "%_EXT%";
     $ext = expand_macros($ext);
-    
+
     my @zipfiles;
     $zipfiles[0] = $platform_zip_file;
     if ( $common_build ) {
@@ -1345,7 +1345,7 @@ sub write_log
     return;
 }
 
-sub check_dlst 
+sub check_dlst
 {
     my %createddir;
     my %destdir;
@@ -1381,7 +1381,7 @@ sub check_dlst
                         last;
                     }
                 }
-                print_warning("Possibly copying into directory without creating in before: '$to_dir'") 
+                print_warning("Possibly copying into directory without creating in before: '$to_dir'")
                     unless $createddir{$to_dir};
             }
             # Check: overwrite file?
@@ -1395,15 +1395,15 @@ sub check_dlst
     }
 }
 
-sub cleanup 
+sub cleanup
 {
     # remove empty directories
     foreach my $path ( @dirlist ) {
         $path = expand_macros($path);
-        if ( $opt_check ) { 
+        if ( $opt_check ) {
             print "RMDIR: $path\n" if $opt_verbose;
         } else {
-            rmdir $path; 
+            rmdir $path;
         }
     }
 }
@@ -1424,7 +1424,7 @@ sub delete_output
     }
 }
 
-sub print_warning 
+sub print_warning
 {
     my $message = shift;
     my $line = shift;
@@ -1439,7 +1439,7 @@ sub print_warning
     print STDERR "WARNING: $message\n";
 }
 
-sub print_error 
+sub print_error
 {
     my $message = shift;
     my $line = shift;
@@ -1455,9 +1455,9 @@ sub print_error
     $error ++;
 }
 
-sub print_stats 
+sub print_stats
 {
-    print "Module '$module' delivered "; 
+    print "Module '$module' delivered ";
     if ( $error ) {
         print "with errors\n";
     } else {
@@ -1483,11 +1483,11 @@ sub cleanup_and_die
         unlink($work_file);
         print STDERR "$work_file removed\n";
     }
-    
+
     die "caught unexpected signal $sig, terminating ...";
 }
 
-sub usage 
+sub usage
 {
     my $exit_code = shift;
     print STDERR "Usage:\ndeliver [OPTIONS] [DESTINATION-PATH]\n";

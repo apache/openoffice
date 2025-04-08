@@ -240,4 +240,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicExport( SvStream& rStream, Graphic& r
 }
 
 // ------------------------------------------------------------------------
-

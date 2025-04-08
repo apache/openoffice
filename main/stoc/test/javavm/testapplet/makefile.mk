@@ -48,4 +48,3 @@ JARCLASSDIRS= .
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk
-

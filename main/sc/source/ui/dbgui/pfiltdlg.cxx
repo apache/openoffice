@@ -611,5 +611,3 @@ IMPL_LINK( ScPivotFilterDlg, ValModifyHdl, ComboBox*, pEd )
 
 	return 0;
 }
-
-

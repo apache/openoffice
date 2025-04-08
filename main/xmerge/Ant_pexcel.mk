@@ -24,4 +24,3 @@
 $(eval $(call gb_Ant_Ant,pexcel,$(SRCDIR)/xmerge/java/pexcel/build.xml))
 
 # vim: set noet sw=4 ts=4:
-

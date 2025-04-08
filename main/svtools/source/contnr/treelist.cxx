@@ -2108,5 +2108,3 @@ void SvTreeList::GetInsertionPos( SvListEntry* pEntry, SvListEntry* pParent,
 			rPos = k;
 	}
 }
-
-

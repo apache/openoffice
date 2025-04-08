@@ -1052,4 +1052,3 @@ const sal_uInt16* SfxSingleTabDialog::GetInputRanges( const SfxItemPool& rPool )
 	pRanges[aUS.Count()] = 0;
 	return pRanges;
 }
-

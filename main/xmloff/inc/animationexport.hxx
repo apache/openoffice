@@ -49,4 +49,3 @@ public:
 }
 
 #endif	//  _XMLOFF_ANIMATIONEXPORT_HXX
-

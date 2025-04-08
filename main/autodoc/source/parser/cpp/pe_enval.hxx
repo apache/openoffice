@@ -92,4 +92,3 @@ class PE_EnumValue : public Cpp_PE
 
 }   // namespace cpp
 #endif
-

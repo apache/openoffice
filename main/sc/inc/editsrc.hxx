@@ -186,4 +186,3 @@ public:
 };
 
 #endif
-

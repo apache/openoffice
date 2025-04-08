@@ -42,7 +42,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::reflection::XProxyFactory</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.reflection.XProxyFactory
 * @see com.sun.star.reflection.ProxyFactory
 * @see ifc.reflection._XProxyFactory

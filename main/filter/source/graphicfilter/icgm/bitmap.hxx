@@ -80,4 +80,3 @@ class CGMBitmap
 		CGMBitmap*				GetNext();
 };
 #endif
-

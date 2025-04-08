@@ -308,4 +308,3 @@ SdrObject* FuConstRectangle::CreateDefaultObject(const sal_uInt16 nID, const Rec
 
 	return pObj;
 }
-

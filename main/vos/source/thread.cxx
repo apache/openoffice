@@ -233,4 +233,3 @@ void *OThreadData::getData()
 
 	return (osl_getThreadKeyData(m_hKey));
 }
-

@@ -64,4 +64,3 @@ void				Cs_ToUpper( Cstring_THIS );
 
 
 #endif
-

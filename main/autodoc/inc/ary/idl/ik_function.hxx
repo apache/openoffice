@@ -89,4 +89,3 @@ struct doc : public ifc_ce::doc
 
 
 #endif
-

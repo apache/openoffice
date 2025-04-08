@@ -51,4 +51,3 @@ public:
 };
 
 #endif // _SVX_TAB_HYPERLINK_HXX
-

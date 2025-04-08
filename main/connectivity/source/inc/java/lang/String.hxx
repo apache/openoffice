@@ -46,4 +46,3 @@ namespace connectivity
 }
 
 #endif // _CONNECTIVITY_JAVA_LANG_STRING_HXX_
-

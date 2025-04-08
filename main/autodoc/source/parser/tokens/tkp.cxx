@@ -62,5 +62,3 @@ TokenParser::InitSource( CharacterSource & i_rSource )
 	bHasMore = true;
 	SetStartContext();
 }
-
-

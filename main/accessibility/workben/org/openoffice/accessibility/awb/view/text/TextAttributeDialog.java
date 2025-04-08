@@ -172,4 +172,3 @@ class TextAttributeDialog
         maBackground;
 
 }
-

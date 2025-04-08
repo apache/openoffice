@@ -328,5 +328,3 @@ public:
 };
 
 #endif
-
-

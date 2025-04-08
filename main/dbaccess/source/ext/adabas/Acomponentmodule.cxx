@@ -70,7 +70,7 @@ namespace COMPMOD_NAMESPACE
 		OModuleImpl();
 		~OModuleImpl();
 
-		/// get the manager for the ressources of the module
+		/// get the manager for the resources of the module
 		ResMgr*	getResManager();
 		void	setResourceFilePrefix(const ::rtl::OString& _rPrefix) { m_sFilePrefix = _rPrefix; }
 	};
@@ -296,4 +296,3 @@ namespace COMPMOD_NAMESPACE
 //.........................................................................
 }	// namespace COMPMOD_NAMESPACE
 //.........................................................................
-

@@ -175,4 +175,3 @@ class BASIC_DLLPUBLIC SbxBasicFormater {
 };
 
 #endif
-

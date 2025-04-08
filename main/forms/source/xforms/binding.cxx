@@ -1273,7 +1273,7 @@ void Binding::handleEvent( const XEvent_t& xEvent )
 	if(!sType.compareToAscii("xforms-generic")) {
 
 		// the modification of the 'mnDeferModifyNotifications'-member
-		// is necessary to prevent infinite notication looping.
+		// is necessary to prevent infinite notification looping.
 		// This can happened in case the binding which caused
 		// the notification chain is listening to those events
 		// as well...

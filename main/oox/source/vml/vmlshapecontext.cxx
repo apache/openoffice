@@ -428,4 +428,3 @@ ContextHandlerRef GroupShapeContext::onCreateContext( sal_Int32 nElement, const 
 
 } // namespace vml
 } // namespace oox
-

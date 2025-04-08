@@ -314,4 +314,3 @@ public:
 };
 
 #endif //_SVDDRGV_HXX
-

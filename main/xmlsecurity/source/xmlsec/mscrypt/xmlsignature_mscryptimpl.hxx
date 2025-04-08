@@ -95,4 +95,3 @@ class XMLSignature_MSCryptImpl : public ::cppu::WeakImplHelper3<
 } ;
 
 #endif	// _XMLSIGNATURE_MSCRYPTIMPL_HXX_
-

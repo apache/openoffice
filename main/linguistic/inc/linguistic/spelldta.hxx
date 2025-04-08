@@ -129,4 +129,3 @@ public:
 }	// namespace linguistic
 
 #endif
-
