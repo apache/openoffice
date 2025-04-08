@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef SD_TASKPANE_TITLED_CONTROL_HXX
 #define SD_TASKPANE_TITLED_CONTROL_HXX
 
@@ -94,7 +92,7 @@ public:
 	/** Return the control child. When a control factory has been given and
 		the control has not yet been created and the given flag is <TRUE/>
 		then the control is created.
-	*/
+	 */
 	TreeNode* GetControl (void);
 	const TreeNode* GetConstControl () const;
 
@@ -107,16 +105,16 @@ public:
 		@param bExpanded
 			When <TRUE/> then the control is expanded, otherwise it is
 			collapsed.
-	*/
+	 */
 	virtual bool Expand (bool bExpanded = true);
 
 	/** Return whether the control is currently expanded (<TRUE/>) or
 		not (<FALSE/>).
-	*/
+	 */
 	virtual bool IsExpanded (void) const;
 
 	/** Returns the value of the control.
-	*/
+	 */
 	virtual bool IsExpandable (void) const;
 
 	virtual void SetEnabledState(bool bFlag);
@@ -138,7 +136,7 @@ private:
 	void* mpUserData;
 	::std::auto_ptr<ClickHandler> mpClickHandler;
 
-	/// Do not use! Assignment operator is not supported.
+	// Do not use! Assignment operator is not supported.
 	const TitledControl& operator= (
 		const TitledControl& aDescriptor);
 
@@ -146,8 +144,6 @@ private:
 
 	DECL_LINK(WindowEventListener, VclSimpleEvent*);
 };
-
-
 
 
 /** This standard implementation of the ClickHandler expands, or toggles the
@@ -175,3 +171,5 @@ private:
 } } // end of namespace ::sd::toolpanel
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
