@@ -34,8 +34,8 @@
 <bookmark_value>functions; date &amp; time</bookmark_value>
 <bookmark_value>Function Wizard; date &amp; time</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3154536" xml-lang="en-US" level="1" l10n="U" oldref="1">Date &amp; Time Functions</paragraph>
-<paragraph role="paragraph" id="par_id3153973" xml-lang="en-US" l10n="U" oldref="2"><variable id="datumzeittext">These spreadsheet functions are used for inserting and editing dates and times. 
+<paragraph role="heading" id="hd_id3154536" xml-lang="en-US" level="1" l10n="U">Date &amp; Time Functions</paragraph>
+<paragraph role="paragraph" id="par_id3153973" xml-lang="en-US" l10n="U"><variable id="datumzeittext">These spreadsheet functions are used for inserting and editing dates and times. 
 </variable></paragraph>
 <section id="howtoget">
 <embed href="text/scalc/00/00000404.xhp#eikadaze"/>
@@ -43,7 +43,7 @@
 <section id="ADD_note">
 <paragraph role="note" id="par_idN10600" xml-lang="en-US" l10n="NEW">The functions whose names end with _ADD return the same results as the corresponding Microsoft Excel functions. Use the functions without _ADD to get results based on international standards. For example, the WEEKNUM function calculates the week number of a given date based on international standard ISO 8601, while WEEKNUM_ADD returns the same week number as Microsoft Excel.<comment>UFI: see #33784#</comment></paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3150437" xml-lang="en-US" l10n="U" oldref="170">$[officename] internally handles a date/time value as a numerical value. If you assign the numbering format "Number" to a date or time value, it is converted to a number. For example, 01/01/2000 12:00 PM, converts to 36526.5. The value preceding the decimal point corresponds to the date; the value following the decimal point corresponds to the time. If you do not want to see this type of numerical date or time representation, change the number format (date or time) accordingly. To do this, select the cell containing the date or time value, call its context menu and select <emph>Format Cells</emph>. The <emph>Numbers</emph> tab page contains the functions for defining the number format.</paragraph>
+<paragraph role="paragraph" id="par_id3150437" xml-lang="en-US" l10n="U">$[officename] internally handles a date/time value as a numerical value. If you assign the numbering format "Number" to a date or time value, it is converted to a number. For example, 01/01/2000 12:00 PM, converts to 36526.5. The value preceding the decimal point corresponds to the date; the value following the decimal point corresponds to the time. If you do not want to see this type of numerical date or time representation, change the number format (date or time) accordingly. To do this, select the cell containing the date or time value, call its context menu and select <emph>Format Cells</emph>. The <emph>Numbers</emph> tab page contains the functions for defining the number format.</paragraph>
 <paragraph role="heading" id="hd_id2408825" xml-lang="en-US" level="2" l10n="NEW">Date base for day zero</paragraph>
 <paragraph role="paragraph" id="par_id9988402" xml-lang="en-US" l10n="NEW">Dates are calculated as offsets from a starting day zero. You can set the day zero to be one of the following:</paragraph>
 <table id="tbl_id1661427">
@@ -83,8 +83,8 @@
 <paragraph role="paragraph" id="par_id791039" xml-lang="en-US" l10n="NEW">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - Calculate</emph> to select the date base.</paragraph>
 <paragraph role="warning" id="par_id1953489" xml-lang="en-US" l10n="NEW">When you copy and paste cells containing date values between different spreadsheets, both spreadsheet documents must be set to the same date base. If date bases differ, the displayed date values will change!</paragraph>
 <paragraph role="heading" id="hd_id757469" xml-lang="en-US" level="2" l10n="NEW">Two digits years</paragraph>
-<paragraph role="paragraph" id="par_id3149720" xml-lang="en-US" l10n="U" oldref="183">In <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - General</emph> you find the area <emph>Year (two digits)</emph>. This sets the period for which two-digit information applies. Note that changes made here have an effect on some of the following functions.</paragraph>
-<paragraph role="note" id="par_id3150654" xml-lang="en-US" l10n="U" oldref="185">When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, "07/20/54".</paragraph>
+<paragraph role="paragraph" id="par_id3149720" xml-lang="en-US" l10n="U">In <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - General</emph> you find the area <emph>Year (two digits)</emph>. This sets the period for which two-digit information applies. Note that changes made here have an effect on some of the following functions.</paragraph>
+<paragraph role="note" id="par_id3150654" xml-lang="en-US" l10n="U">When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, "07/20/54".</paragraph>
 <paragraph role="heading" id="par_idN1067A" xml-lang="en-US" level="2" l10n="NEW">Functions</paragraph>
 <sort order="asc">
 <section id="workday">
