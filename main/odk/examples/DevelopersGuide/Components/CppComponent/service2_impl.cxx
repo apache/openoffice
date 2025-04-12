@@ -101,7 +101,7 @@ void MyService2Impl::initialize( Sequence< Any > const & args )
     {
         throw lang::IllegalArgumentException(
             OUString( RTL_CONSTASCII_USTRINGPARAM(
-                          "give a string instanciating this component!") ),
+                          "give a string instantiating this component!") ),
             // resolve to XInterface reference:
             static_cast< ::cppu::OWeakObject * >(this),
             0 ); // argument pos

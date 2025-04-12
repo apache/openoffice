@@ -106,7 +106,7 @@ rtl::OUString Databases::expandURL( const rtl::OUString& aURL, Reference< uno::X
 		if( !xFac.is() )
 		{
 			throw RuntimeException(
-				::rtl::OUString::createFromAscii( "Databases::expand(), could not instatiate UriReferenceFactory." ),
+				::rtl::OUString::createFromAscii( "Databases::expand(), could not instantiate UriReferenceFactory." ),
 				Reference< XInterface >() );
 		}
 

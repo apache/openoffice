@@ -141,7 +141,7 @@ public class LetterWizardDialogImpl extends LetterWizardDialog
             //Number of steps on WizardDialog:
             setMaxStep(6);
 
-            //instatiate The Document Frame for the Preview
+            //instantiate The Document Frame for the Preview
             myLetterDoc = new LetterDocument(xMSF, this);
 
             //create the dialog:

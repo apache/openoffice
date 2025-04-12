@@ -304,7 +304,7 @@ static ::rtl::OUString aResourceResolverPropName = ::rtl::OUString::createFromAs
         if  ( !xFac.is() )
         {
             throw RuntimeException(
-                ::rtl::OUString::createFromAscii( "DialogProviderImpl::getDialogModel(), could not instatiate UriReferenceFactory." ),
+                ::rtl::OUString::createFromAscii( "DialogProviderImpl::getDialogModel(), could not instantiate UriReferenceFactory." ),
                 Reference< XInterface >() );
         }
 
