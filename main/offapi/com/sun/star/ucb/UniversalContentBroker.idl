@@ -65,7 +65,7 @@ module com { module sun { module star { module ucb {
 	<type scope="com::sun::star::lang">XInitialization</type> interface for
 	details.
 
-	<p>If the instance is created without arguments, the newly instatiated
+	<p>If the instance is created without arguments, the newly instantiated
     broker is not configured.
 */
 published service UniversalContentBroker
