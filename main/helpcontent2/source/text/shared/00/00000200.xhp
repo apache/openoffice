@@ -84,19 +84,19 @@
 <bookmark xml-lang="en-US" branch="hid/svtools:CheckBox:DLG_EXPORT:CB_EPS_PREVIEW_TIFF" id="bm_id993153884" localize="false"/>
 <paragraph role="paragraph" id="par_id993155271" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Specifies whether a preview image is exported in the TIFF format together with the actual PostScript file.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svtools:CheckBox:DLG_EXPORT:CB_EPS_PREVIEW_EPSI" id="bm_id993155069" localize="false"/>
-<paragraph role="paragraph" id="par_id993144740" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="." visibility="hidden">Specifies whether a monochrome preview graphic in EPSI format is exported together with the PostScript file. This format only contains printable characters from the 7-bit ASCII code.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id993144740" xml-lang="en-US" l10n="U"><ahelp hid="." visibility="hidden">Specifies whether a monochrome preview graphic in EPSI format is exported together with the PostScript file. This format only contains printable characters from the 7-bit ASCII code.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_LEVEL1" id="bm_id993150040" localize="false"/>
-<paragraph role="paragraph" id="par_id993150935" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="." visibility="hidden">Compression is not available at this level. Select the Level 1 option if your PostScript printer does not offer the capabilities of Level 2.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id993150935" xml-lang="en-US" l10n="U"><ahelp hid="." visibility="hidden">Compression is not available at this level. Select the Level 1 option if your PostScript printer does not offer the capabilities of Level 2.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_LEVEL2" id="bm_id993149640" localize="false"/>
-<paragraph role="paragraph" id="par_id993159201" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="." visibility="hidden">Select the Level 2 option if your output device supports colored bitmaps, palette graphics and compressed graphics.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id993159201" xml-lang="en-US" l10n="U"><ahelp hid="." visibility="hidden">Select the Level 2 option if your output device supports colored bitmaps, palette graphics and compressed graphics.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_COLOR_FORMAT1" id="bm_id319953049" localize="false"/>
-<paragraph role="paragraph" id="par_id319947250" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="." visibility="hidden">Exports the file in color.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id319947250" xml-lang="en-US" l10n="U"><ahelp hid="." visibility="hidden">Exports the file in color.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_COLOR_FORMAT2" id="bm_id399153346" localize="false"/>
-<paragraph role="paragraph" id="par_id993147088" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="." visibility="hidden">Exports the file in grayscale tones.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id993147088" xml-lang="en-US" l10n="U"><ahelp hid="." visibility="hidden">Exports the file in grayscale tones.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_COMPRESSION_LZW" id="bm_id315799863" localize="false"/>
-<paragraph role="paragraph" id="par_id399153683" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="." visibility="hidden">LZW compression is the compression of a file into a smaller file using a table-based lookup algorithm.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id399153683" xml-lang="en-US" l10n="U"><ahelp hid="." visibility="hidden">LZW compression is the compression of a file into a smaller file using a table-based lookup algorithm.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/svtools:RadioButton:DLG_EXPORT:RB_EPS_COMPRESSION_NONE" id="bm_id319947653" localize="false"/>
-<paragraph role="paragraph" id="par_id319952780" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="." visibility="hidden">Specifies that you do not wish to use compression.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id319952780" xml-lang="en-US" l10n="U"><ahelp hid="." visibility="hidden">Specifies that you do not wish to use compression.</ahelp></paragraph>
 <paragraph xml-lang="en-US" role="paragraph" id="par_id3147250" l10n="NEW">See <link href="text/shared/00/00000020.xhp" name="Import and Export Filter Information">Import and Export Filter Information</link> for more information about filters.</paragraph>
 </body>
 </helpdocument>
