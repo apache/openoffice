@@ -655,7 +655,7 @@ Reference< ucb::XSimpleFileAccess > BackendImpl::getFileAccess( void )
 			throw RuntimeException(
 				::rtl::OUString::createFromAscii( 
 				"dp_registry::backend::help::BackendImpl::getFileAccess(), "
-				"could not instatiate SimpleFileAccess." ),
+				"could not instantiate SimpleFileAccess." ),
 				Reference< XInterface >() );
 		}
 	}

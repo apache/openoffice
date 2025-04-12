@@ -1475,7 +1475,7 @@ void SAL_CALL ZipPackage::commitChanges()
                 uno::Reference< ::com::sun::star::ucb::XSimpleFileAccess > xSimpleAccess(
                     m_xFactory->createInstance( ::rtl::OUString::createFromAscii( "com.sun.star.ucb.SimpleFileAccess" ) ),
                     uno::UNO_QUERY );
-                OSL_ENSURE( xSimpleAccess.is(), "Can't instatiate SimpleFileAccess service!\n" );
+                OSL_ENSURE( xSimpleAccess.is(), "Can't instantiate SimpleFileAccess service!\n" );
                 uno::Reference< io::XTruncate > xOrigTruncate;
                 if ( xSimpleAccess.is() )
                 {
