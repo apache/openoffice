@@ -3401,9 +3401,9 @@ AC_MSG_CHECKING([whether to enable EPM for packing])
 if test "$enable_epm" = "yes"; then
    AC_MSG_RESULT([yes])
    dnl ===================================================================
-   dnl Check for epm - not needed for Windows
+   dnl Check for epm - not needed for Windows or building archive format
    dnl ===================================================================
-   if test "$_os" != "WINNT"; then
+   if test "$_os" != "WINNT" -a "$with_package_format" != "archive"; then
       if test -n "$with_epm"; then
 	      EPM=$with_epm
       else
