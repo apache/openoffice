@@ -40,8 +40,8 @@
 #define HELPWINSTYLE_QUICK		0
 #define HELPWINSTYLE_BALLOON	1
 
-#define HELPTEXTMARGIN_QUICK	3
-#define HELPTEXTMARGIN_BALLOON	6
+#define HELPTEXTMARGIN_QUICK	4
+#define HELPTEXTMARGIN_BALLOON	4
 
 #define HELPDELAY_NORMAL		1
 #define HELPDELAY_SHORT 		2
@@ -352,7 +352,7 @@ HelpTextWindow::HelpTextWindow( Window* pParent, const XubString& rText, sal_uIn
 	else
 		SetBackground( Wallpaper( rStyleSettings.GetHelpColor() ) );
 	if( rStyleSettings.GetHelpColor().IsDark() )
-		SetLineColor( COL_WHITE );
+		SetLineColor( COL_YELLOW );
 	else
 		SetLineColor( COL_BLACK );
 	SetFillColor();
@@ -413,7 +413,7 @@ void HelpTextWindow::SetHelpText( const String& rHelpText )
 		Point		aTmpPoint;
 		sal_uInt16		nCharsInLine = 35 + ((maHelpText.Len()/100)*5);
 		XubString	aXXX;
-		aXXX.Fill( nCharsInLine, 'x' ); // Durchschnittliche Breite, damit nicht jedes Fenster anders.
+		aXXX.Fill( nCharsInLine, 'x' ); // average width for all windows
 		long nWidth = GetTextWidth( aXXX );
 		Size aTmpSize( nWidth, 0x7FFFFFFF );
 		Rectangle aTry1( aTmpPoint, aTmpSize );
@@ -457,11 +457,11 @@ void HelpTextWindow::Paint( const Rectangle& )
 	bool bNativeOK = false;
 	if ( IsNativeControlSupported( CTRL_TOOLTIP, PART_ENTIRE_CONTROL ) )
 	{
-        // #i46472# workaround gcc3.3 temporary problem
-        Rectangle aCtrlRegion( Point( 0, 0 ), GetOutputSizePixel() );
-        ImplControlValue    aControlValue;
-        bNativeOK = DrawNativeControl( CTRL_TOOLTIP, PART_ENTIRE_CONTROL, aCtrlRegion,
-                                       0, aControlValue, rtl::OUString() );
+		// #i46472# workaround gcc3.3 temporary problem
+		Rectangle aCtrlRegion( Point( 0, 0 ), GetOutputSizePixel() );
+		ImplControlValue aControlValue;
+		bNativeOK = DrawNativeControl( CTRL_TOOLTIP, PART_ENTIRE_CONTROL, aCtrlRegion,
+									   0, aControlValue, rtl::OUString() );
 	}
 
 	// paint text
@@ -612,11 +612,11 @@ void ImplShowHelpWindow( Window* pParent, sal_uInt16 nHelpWinStyle, sal_uInt16 n
 		DBG_ASSERT( pHelpWin != pParent, "HelpInHelp ?!" );
 
 		if  (   (   ( pHelpWin->GetHelpText() != rHelpText )
-                ||  ( pHelpWin->GetWinStyle() != nHelpWinStyle )
-                ||  (   pHelpArea
-                    &&  ( pHelpWin->GetHelpArea() != *pHelpArea )
-                    )
-                )
+				||  ( pHelpWin->GetWinStyle() != nHelpWinStyle )
+				||  (   pHelpArea
+					&&  ( pHelpWin->GetHelpArea() != *pHelpArea )
+					)
+				)
 			&&  pSVData->maHelpData.mbRequestingHelp
 			)
 		{
@@ -630,12 +630,12 @@ void ImplShowHelpWindow( Window* pParent, sal_uInt16 nHelpWinStyle, sal_uInt16 n
 		}
 		else
 		{
-            bool const bTextChanged = rHelpText != pHelpWin->GetHelpText();
-            if ( bTextChanged || ( ( nStyle & QUICKHELP_FORCE_REPOSITION ) != 0 ) )
-            {
-                Window * pWindow = pHelpWin->GetParent()->ImplGetFrameWindow();
-                Rectangle aInvRect( pHelpWin->GetWindowExtentsRelative( pWindow ) );
-                if( pHelpWin->IsVisible() )
+			bool const bTextChanged = rHelpText != pHelpWin->GetHelpText();
+			if ( bTextChanged || ( ( nStyle & QUICKHELP_FORCE_REPOSITION ) != 0 ) )
+			{
+				Window * pWindow = pHelpWin->GetParent()->ImplGetFrameWindow();
+				Rectangle aInvRect( pHelpWin->GetWindowExtentsRelative( pWindow ) );
+				if( pHelpWin->IsVisible() )
 					pWindow->Invalidate( aInvRect );
 
 				pHelpWin->SetHelpText( rHelpText );
@@ -655,7 +655,7 @@ void ImplShowHelpWindow( Window* pParent, sal_uInt16 nHelpWinStyle, sal_uInt16 n
 			)
 			nDelayMode = HELPDELAY_NONE;
 
-		DBG_ASSERT( !pHelpWin, "Noch ein HelpWin ?!" );
+		DBG_ASSERT( !pHelpWin, "Another HelpWin?!" );
 		pHelpWin = new HelpTextWindow( pParent, rHelpText, nHelpWinStyle, nStyle );
 		pSVData->maHelpData.mpHelpWin = pHelpWin;
 		pHelpWin->SetStatusText( rStatusText );
@@ -704,7 +704,7 @@ void ImplSetHelpWindowPos( Window* pHelpWin, sal_uInt16 nHelpWinStyle, sal_uInt1
 	Size		aSz = pHelpWin->GetSizePixel();
 	Rectangle	aScreenRect = pHelpWin->ImplGetFrameWindow()->GetDesktopRectPixel();
 	aPos = pHelpWin->GetParent()->ImplGetFrameWindow()->OutputToAbsoluteScreenPixel( aPos );
-	// get mouse screen coords
+	// get mouse screen coordinates
 	Point mPos( pHelpWin->GetParent()->ImplGetFrameWindow()->GetPointerPosPixel() );
 	mPos = pHelpWin->GetParent()->ImplGetFrameWindow()->OutputToAbsoluteScreenPixel( mPos );
 
@@ -735,7 +735,7 @@ void ImplSetHelpWindowPos( Window* pHelpWin, sal_uInt16 nHelpWinStyle, sal_uInt1
 	{
 		if ( pHelpArea )
 		{
-			// convert help area to screen coords
+			// convert help area to screen coordinates
 			Rectangle devHelpArea(
 				pHelpWin->GetParent()->ImplGetFrameWindow()->OutputToAbsoluteScreenPixel( pHelpArea->TopLeft() ),
 				pHelpWin->GetParent()->ImplGetFrameWindow()->OutputToAbsoluteScreenPixel( pHelpArea->BottomRight() ) );
@@ -791,13 +791,13 @@ void ImplSetHelpWindowPos( Window* pHelpWin, sal_uInt16 nHelpWinStyle, sal_uInt1
 		Rectangle aHelpRect( aPos, aSz );
 		if( aHelpRect.IsInside( mPos ) )
 		{
-            Point delta(2,2);
-            Point pSize( aSz.Width(), aSz.Height() );
-            Point pTest( mPos - pSize - delta );
-            if( pTest.X() > aScreenRect.Left() && pTest.Y() > aScreenRect.Top() )
-                aPos = pTest;
-            else
-                aPos = mPos + delta;
+			Point delta(2,2);
+			Point pSize( aSz.Width(), aSz.Height() );
+			Point pTest( mPos - pSize - delta );
+			if( pTest.X() > aScreenRect.Left() && pTest.Y() > aScreenRect.Top() )
+				aPos = pTest;
+			else
+				aPos = mPos + delta;
 		}
 	}
 
