@@ -163,7 +163,7 @@ OString createFileNameFromType( const OString& destination,
     OUString uSysFileName;
     OSL_VERIFY( FileBase::getSystemPathFromFileURL(
         convertToFileUrl(fileName), uSysFileName) == FileBase::E_None );    
-	return OUStringToOString(uSysFileName, osl_getThreadTextEncoding());;
+	return OUStringToOString(uSysFileName, osl_getThreadTextEncoding());
 }
 
 sal_Bool fileExists(const OString& fileName)

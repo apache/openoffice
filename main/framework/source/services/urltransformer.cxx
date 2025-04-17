@@ -193,7 +193,7 @@ sal_Bool SAL_CALL URLTransformer::parseStrict( URL& aURL ) throw( RuntimeExcepti
 			// in framework!
 			aURL.Protocol	= aProtocol;
 			aURL.Main		= aURL.Complete;
-			aURL.Path		= aURL.Complete.copy( nURLIndex+1 );;
+			aURL.Path		= aURL.Complete.copy( nURLIndex+1 );
 
 			// Return "URL is parsed".
 			return sal_True;

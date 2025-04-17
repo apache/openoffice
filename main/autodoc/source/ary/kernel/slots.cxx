@@ -82,7 +82,7 @@ Slot_MapLocalCe::~Slot_MapLocalCe()
 uintt
 Slot_MapLocalCe::Size() const
 {
- 	return pData->size();;
+ 	return pData->size();
 }
 
 void
@@ -112,7 +112,7 @@ Slot_MapOperations::~Slot_MapOperations()
 uintt
 Slot_MapOperations::Size() const
 {
- 	return pData->size();;
+ 	return pData->size();
 }
 
 void
@@ -140,7 +140,7 @@ Slot_ListLocalCe::~Slot_ListLocalCe()
 uintt
 Slot_ListLocalCe::Size() const
 {
- 	return pData->size();;
+ 	return pData->size();
 }
 
 void

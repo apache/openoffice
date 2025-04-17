@@ -569,8 +569,8 @@ int main(int argc, char **argv)
 	aStringForward = ::rtl::OUString::createFromAscii( getForwardString() );
 	if ( !aStringForward.equals( aNullURL ) && aStringForward.indexOf( (sal_Unicode)' ' ) != -1 )
 	{
-		sal_Int32 nFirstSpacePoint = aStringForward.indexOf( (sal_Unicode)' ' );;
-		sal_Int32 nLastSpacePoint = aStringForward.lastIndexOf( (sal_Unicode)' ' );;
+		sal_Int32 nFirstSpacePoint = aStringForward.indexOf( (sal_Unicode)' ' );
+		sal_Int32 nLastSpacePoint = aStringForward.lastIndexOf( (sal_Unicode)' ' );
 		if ( nFirstSpacePoint == nLastSpacePoint )  
 		/// only forwarded two parameters, username and password.
 		{
