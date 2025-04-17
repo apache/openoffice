@@ -85,7 +85,7 @@ void ExceptionTree::add(rtl::OString const & name, TypeManager const & manager)
                 break;
             }
             for (ExceptionTreeNode::Children::iterator j(
-                     node->children.begin());
+                     node->children.begin());;
                  ++j)
             {
                 if (j == node->children.end()) {
