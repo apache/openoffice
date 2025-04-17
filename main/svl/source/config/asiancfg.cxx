@@ -77,7 +77,7 @@ Sequence<OUString> lcl_GetPropertyNames()
 	OUString* pNames = aNames.getArray();
 	pNames[0] = C2U("IsKerningWesternTextOnly");
 	pNames[1] = C2U("CompressCharacterDistance");
-	return aNames;;
+	return aNames;
 }
 // ---------------------------------------------------------------------------
 SvxAsianConfig::SvxAsianConfig(sal_Bool bEnableNotify) :

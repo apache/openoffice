@@ -390,7 +390,7 @@ void SAL_CALL FinalThreadManager::cancelAllJobs() throw (css::uno::RuntimeExcept
 
         if ( mpCancelJobsThread == 0 )
         {
-            mpCancelJobsThread = new CancelJobsThread( aThreads );;
+            mpCancelJobsThread = new CancelJobsThread( aThreads );
             if ( !mpCancelJobsThread->create() )
             {
                 // error handling

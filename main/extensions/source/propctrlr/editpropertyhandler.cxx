@@ -264,7 +264,7 @@ namespace pcr
         if ( implHaveTextTypeProperty() )
             aInterestingActuatingProps.push_back( PROPERTY_TEXTTYPE );
         aInterestingActuatingProps.push_back( PROPERTY_MULTILINE );
-        return Sequence< ::rtl::OUString >( &(*aInterestingActuatingProps.begin()), aInterestingActuatingProps.size() );;
+        return Sequence< ::rtl::OUString >( &(*aInterestingActuatingProps.begin()), aInterestingActuatingProps.size() );
     }
 
     //--------------------------------------------------------------------

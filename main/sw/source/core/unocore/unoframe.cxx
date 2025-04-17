@@ -3563,7 +3563,7 @@ void SAL_CALL SwXTextEmbeddedObject::release()throw()
 ::uno::Any SAL_CALL SwXTextEmbeddedObject::queryInterface( const uno::Type& aType )
 	throw( uno::RuntimeException)
 {
-    ::uno::Any aRet = SwXFrame::queryInterface(aType);;
+    ::uno::Any aRet = SwXFrame::queryInterface(aType);
 	if(aRet.getValueType() == ::getCppuVoidType())
 		aRet = SwXTextEmbeddedObjectBaseClass::queryInterface(aType);
 	return aRet;

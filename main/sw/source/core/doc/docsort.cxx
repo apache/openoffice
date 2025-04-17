@@ -529,7 +529,7 @@ sal_Bool SwDoc::SortTbl(const SwSelBoxes& rBoxes, const SwSortOptions& rOpt)
 	_FndBox aFndBox( 0, 0 );
 	{
 		_FndPara aPara( rBoxes, &aFndBox );
-		pTblNd->GetTable().GetTabLines().ForEach( &_FndLineCopyCol, &aPara );;
+		pTblNd->GetTable().GetTabLines().ForEach( &_FndLineCopyCol, &aPara );
 	}
 
 	if(!aFndBox.GetLines().Count())

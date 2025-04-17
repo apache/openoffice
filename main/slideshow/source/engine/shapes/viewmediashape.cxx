@@ -185,7 +185,7 @@ namespace slideshow
 		
         bool ViewMediaShape::render( const ::basegfx::B2DRectangle&	rBounds ) const
         {
-            ::cppcanvas::CanvasSharedPtr pCanvas = mpViewLayer->getCanvas();;
+            ::cppcanvas::CanvasSharedPtr pCanvas = mpViewLayer->getCanvas();
 
             if( !pCanvas )
                 return false;
@@ -205,7 +205,7 @@ namespace slideshow
         {
             maBounds = rNewBounds;
 
-            ::cppcanvas::CanvasSharedPtr pCanvas = mpViewLayer->getCanvas();;
+            ::cppcanvas::CanvasSharedPtr pCanvas = mpViewLayer->getCanvas();
 
             if( !pCanvas )
                 return false;
