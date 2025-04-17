@@ -3666,7 +3666,7 @@ void ScDocument::SetColHidden(SCCOL nStartCol, SCCOL nEndCol, SCTAB nTab, bool b
 SCROW ScDocument::FirstVisibleRow(SCROW nStartRow, SCROW nEndRow, SCTAB nTab)
 {
 	if (!ValidTab(nTab) || !pTab[nTab])
-		return ::std::numeric_limits<SCROW>::max();;
+		return ::std::numeric_limits<SCROW>::max();
 
 	return pTab[nTab]->FirstVisibleRow(nStartRow, nEndRow);
 }
@@ -3674,7 +3674,7 @@ SCROW ScDocument::FirstVisibleRow(SCROW nStartRow, SCROW nEndRow, SCTAB nTab)
 SCROW ScDocument::LastVisibleRow(SCROW nStartRow, SCROW nEndRow, SCTAB nTab)
 {
 	if (!ValidTab(nTab) || !pTab[nTab])
-		return ::std::numeric_limits<SCROW>::max();;
+		return ::std::numeric_limits<SCROW>::max();
 
 	return pTab[nTab]->LastVisibleRow(nStartRow, nEndRow);
 }
@@ -3730,7 +3730,7 @@ void ScDocument::SetColFiltered(SCCOL nStartCol, SCCOL nEndCol, SCTAB nTab, bool
 SCROW ScDocument::FirstNonFilteredRow(SCROW nStartRow, SCROW nEndRow, SCTAB nTab)
 {
 	if (!ValidTab(nTab) || !pTab[nTab])
-		return ::std::numeric_limits<SCROW>::max();;
+		return ::std::numeric_limits<SCROW>::max();
 
 	return pTab[nTab]->FirstNonFilteredRow(nStartRow, nEndRow);
 }
@@ -3738,7 +3738,7 @@ SCROW ScDocument::FirstNonFilteredRow(SCROW nStartRow, SCROW nEndRow, SCTAB nTab
 SCROW ScDocument::LastNonFilteredRow(SCROW nStartRow, SCROW nEndRow, SCTAB nTab)
 {
 	if (!ValidTab(nTab) || !pTab[nTab])
-		return ::std::numeric_limits<SCROW>::max();;
+		return ::std::numeric_limits<SCROW>::max();
 
 	return pTab[nTab]->LastNonFilteredRow(nStartRow, nEndRow);
 }

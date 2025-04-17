@@ -1455,7 +1455,7 @@ FASTBOOL ImpPathForDragAndCreate::EndCreate(SdrDragStat& rStat, SdrCreateCmd eCm
 				}
 			} else {
 				if (nActPoint==1 && IsBezier(pU->eAktKind) && !pU->bBezHasCtrl0) {
-					pU->aBezControl0=rStat.GetNow();;
+					pU->aBezControl0=rStat.GetNow();
 					pU->bBezHasCtrl0=sal_True;
 					nActPoint--;
 				}

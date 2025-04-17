@@ -128,7 +128,7 @@ static sal_uInt32 lcl_FFDATA_formatting_offset(WW8FFDATA & rRef)
         break;
     }
     
-    return nResult;;
+    return nResult;
 }
 
 static sal_uInt32 lcl_FFDATA_help_offset(WW8FFDATA & rRef)
@@ -137,7 +137,7 @@ static sal_uInt32 lcl_FFDATA_help_offset(WW8FFDATA & rRef)
 
     nResult += (rRef.getU16(nResult) + 2) * 2;
     
-    return nResult;;
+    return nResult;
 }
 
 static sal_uInt32 lcl_FFDATA_tooltip_offset(WW8FFDATA & rRef)
@@ -146,7 +146,7 @@ static sal_uInt32 lcl_FFDATA_tooltip_offset(WW8FFDATA & rRef)
 
     nResult += (rRef.getU16(nResult) + 2) * 2;
     
-    return nResult;;
+    return nResult;
 }
 
 rtl::OUString WW8FFDATA::get_default()
