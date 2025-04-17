@@ -666,7 +666,7 @@ String GalleryListView::GetCellText(long _nRow, sal_uInt16 nColumnId) const
 		}
 	}
 
-	return sRet;;
+	return sRet;
 }
 
 // -----------------------------------------------------------------------------

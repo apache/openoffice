@@ -6282,7 +6282,7 @@ sal_Int32 PDFWriterImpl::emitOutputIntent()
     appendLiteralStringEncrypt( aComment ,nOIObject, aLine );
     aLine.append("/DestOutputProfile ");
     aLine.append( nICCObject );
-    aLine.append( " 0 R>>\nendobj\n\n" );;
+    aLine.append( " 0 R>>\nendobj\n\n" );
     CHECK_RETURN( writeBuffer( aLine.getStr(), aLine.getLength() ) );
 
     return nOIObject;

@@ -2953,7 +2953,7 @@ void AttributeOutputBase::TextField( const SwFmtFld& rField )
             nScript = i18n::ScriptType::ASIAN;
 
         long nHeight = ((SvxFontHeightItem&)(GetExport().GetItem(
-            GetWhichOfScript(RES_CHRATR_FONTSIZE,nScript)))).GetHeight();;
+            GetWhichOfScript(RES_CHRATR_FONTSIZE,nScript)))).GetHeight();
 
         nHeight = (nHeight + 10) / 20; //Font Size in points;
 
