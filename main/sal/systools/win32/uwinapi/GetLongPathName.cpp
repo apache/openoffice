@@ -51,7 +51,7 @@
 
 			_tcscpy( szFilePath, lpShortPath );
 			_tcscat( szFilePath, TEXT("*.*") );
-			hFind = FindFirstFile( szFilePath, &aFindFileData );;
+			hFind = FindFirstFile( szFilePath, &aFindFileData );
 			aFindFileData.cFileName[0] = 0;
 		}
 		else
@@ -63,7 +63,7 @@
 
 				_tcscpy( szFilePath, lpShortPath );
 				_tcscat( szFilePath, TEXT("\\*.*") );
-				hFind = FindFirstFile( szFilePath, &aFindFileData );;
+				hFind = FindFirstFile( szFilePath, &aFindFileData );
 				aFindFileData.cFileName[0] = 0;
 			}
 		}

@@ -540,7 +540,7 @@ void DrawView::PresPaint(const Region& rRegion)
 
 sal_Bool DrawView::IsObjMarkable(SdrObject* pObj, SdrPageView* pPV) const
 {
-	return FmFormView::IsObjMarkable(pObj, pPV);;
+	return FmFormView::IsObjMarkable(pObj, pPV);
 }
 
 /*************************************************************************

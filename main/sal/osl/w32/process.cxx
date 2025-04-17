@@ -448,7 +448,7 @@ oslProcessError SAL_CALL osl_getProcessWorkingDir( rtl_uString **pustrWorkingDir
 	if ( dwLen && dwLen < aBuffer.getBufSizeInSymbols() )
 	{
 		oslFileError	eError;
-		rtl_uString		*ustrTemp = NULL;;
+		rtl_uString		*ustrTemp = NULL;
 
 		rtl_uString_newFromStr_WithLength( &ustrTemp, aBuffer, dwLen );
 		eError = osl_getFileURLFromSystemPath( ustrTemp, pustrWorkingDir );

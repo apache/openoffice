@@ -95,7 +95,7 @@ sal_uInt16 SvxZoomSliderControl::Offset2Zoom( long nOffset ) const
 	sal_uInt16 nRet = 0;
 
 	if ( nOffset < nSliderXOffset )
-		return mpImpl->mnMinZoom;;
+		return mpImpl->mnMinZoom;
 
 	if ( nOffset > nControlWidth - nSliderXOffset )
 		return mpImpl->mnMaxZoom;
@@ -346,7 +346,7 @@ void SvxZoomSliderControl::Paint( const UserDrawEvent& rUsrEvt )
 sal_Bool SvxZoomSliderControl::MouseButtonDown( const MouseEvent & rEvt )
 {
 	if ( !mpImpl->mbValuesSet )
-		return sal_True;;
+		return sal_True;
 
 	const Rectangle aControlRect = getControlRect();
 	const Point aPoint = rEvt.GetPosPixel();
@@ -403,7 +403,7 @@ sal_Bool SvxZoomSliderControl::MouseButtonDown( const MouseEvent & rEvt )
 sal_Bool SvxZoomSliderControl::MouseMove( const MouseEvent & rEvt )
 {
 	if ( !mpImpl->mbValuesSet )
-		return sal_True;;
+		return sal_True;
 
 	const short nButtons = rEvt.GetButtons();
 

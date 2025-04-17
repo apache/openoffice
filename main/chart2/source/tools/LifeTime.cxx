@@ -141,7 +141,7 @@ bool LifeTimeManager::impl_isDisposed( bool bAssert )
 	//--do the disposing of listeners after calling this method
 	{
 		uno::Reference< lang::XComponent > xComponent =
-			uno::Reference< lang::XComponent >(m_pComponent);;
+			uno::Reference< lang::XComponent >(m_pComponent);
 		if(xComponent.is())
 		{
             // notify XCLoseListeners
@@ -234,12 +234,12 @@ bool CloseableLifeTimeManager::impl_isDisposedOrClosed( bool bAssert )
 	try
 	{
 		uno::Reference< util::XCloseable > xCloseable =
-			uno::Reference< util::XCloseable >(m_pCloseable);;
+			uno::Reference< util::XCloseable >(m_pCloseable);
 		if(xCloseable.is())
 		{
 			//--call queryClosing on all registered close listeners
 			::cppu::OInterfaceContainerHelper* pIC = m_aListenerContainer.getContainer(
-						::getCppuType((const uno::Reference< util::XCloseListener >*)0) );;
+						::getCppuType((const uno::Reference< util::XCloseListener >*)0) );
 			if( pIC )
 			{
 				//lang::EventObject aEvent( static_cast< util::XCloseable*>(xCloseable) );
@@ -363,12 +363,12 @@ bool CloseableLifeTimeManager::impl_isDisposedOrClosed( bool bAssert )
 	uno::Reference< util::XCloseable > xCloseable=NULL;
 	try
 	{
-		xCloseable = uno::Reference< util::XCloseable >(m_pCloseable);;
+		xCloseable = uno::Reference< util::XCloseable >(m_pCloseable);
 		if(xCloseable.is())
 		{
 			//--call notifyClosing on all registered close listeners
 			::cppu::OInterfaceContainerHelper* pIC = m_aListenerContainer.getContainer(
-						::getCppuType((const uno::Reference< util::XCloseListener >*)0) );;
+						::getCppuType((const uno::Reference< util::XCloseListener >*)0) );
 			if( pIC )
 			{
 				//lang::EventObject aEvent( static_cast< util::XCloseable*>(xCloseable) );
