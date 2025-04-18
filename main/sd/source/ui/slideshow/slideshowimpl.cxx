@@ -1573,7 +1573,7 @@ void SAL_CALL SlideshowImpl::resume() throw (RuntimeException)
         }
         else
         {
-            mbIsPaused = sal_False;;
+            mbIsPaused = sal_False;
 		    if( mxShow.is() )
 		    {
 			    mxShow->pause(sal_False);

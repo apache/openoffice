@@ -472,7 +472,7 @@ void SwTxtNode::RstTxtAttr(
         }
 
         // Default behavior is to process all attributes:
-        bool bSkipAttr = false;;
+        bool bSkipAttr = false;
         boost::shared_ptr<SfxItemSet> pStyleHandle;
 
         // 1. case: We want to reset only the attributes listed in pSet:

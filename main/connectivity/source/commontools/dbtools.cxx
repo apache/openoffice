@@ -1063,7 +1063,7 @@ try
 #ifdef DBG_UTIL
 					::rtl::OUString sMessage = ::rtl::OUString::createFromAscii("TransferFormComponentProperties : could not transfer the value for property \"");
 					sMessage += pResult->Name;
-					sMessage += ::rtl::OUString::createFromAscii("\"");;
+					sMessage += ::rtl::OUString::createFromAscii("\"");
 					OSL_ENSURE(sal_False, ::rtl::OUStringToOString(sMessage, RTL_TEXTENCODING_ASCII_US));
 #endif
 				}

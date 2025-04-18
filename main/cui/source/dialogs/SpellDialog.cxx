@@ -1552,7 +1552,7 @@ long SentenceEditWindow_Impl::PreNotify( NotifyEvent& rNEvt )
                 break;
 //    6 - on field FS and on error UE
                 case BRACE      :
-                    nAction = bHasField ? ACTION_SELECTFIELD : ACTION_UNDOEDIT;;
+                    nAction = bHasField ? ACTION_SELECTFIELD : ACTION_UNDOEDIT;
                 break;
 //    7 - UE
 //    8 - UE

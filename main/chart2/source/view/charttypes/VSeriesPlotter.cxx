@@ -500,7 +500,7 @@ uno::Reference< drawing::XShape > VSeriesPlotter::createDataLabel( const uno::Re
         {
             ASSERT_EXCEPTION( e );
         }
-        bool bMultiLineLabel = aSeparator.equals(C2U("\n"));;
+        bool bMultiLineLabel = aSeparator.equals(C2U("\n"));
         sal_Int32 nLineCountForSymbolsize = 0;
         {
             if(pLabel->ShowCategoryName)
