@@ -644,7 +644,7 @@ sal_Bool SwDocShell::ConvertTo( SfxMedium& rMedium )
 	}
 
     // --> FME 2007-5-7 #i76360# Update document statistics
-    SwDocStat aDocStat( mpDoc->GetDocStat() );;
+    SwDocStat aDocStat( mpDoc->GetDocStat() );
     mpDoc->UpdateDocStat( aDocStat );
     // <--
 	CalcLayoutForOLEObjects();	// format for OLE objets

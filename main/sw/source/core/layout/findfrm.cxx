@@ -1082,7 +1082,7 @@ SwCntntFrm* SwFrm::_FindPrevCnt( const bool _bInSameFtn )
                         {
                             // current content frame is the first content in the
                             // footnote - no previous content exists.
-                            pPrevCntntFrm = 0L;;
+                            pPrevCntntFrm = 0L;
                         }
                     }
                 }
