@@ -315,7 +315,7 @@ ModalDialog DLG_PUBLISHING
 	Edit PAGE2_INDEX
 	{
 		HelpID = "sd:Edit:DLG_PUBLISHING:PAGE2_INDEX" ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 154, 88 ) ;
 		Size = MAP_APPFONT ( 105, 12 ) ;
 		Left = TRUE ;
@@ -331,7 +331,7 @@ ModalDialog DLG_PUBLISHING
 	Edit PAGE2_URL
 	{
 		HelpID = "sd:Edit:DLG_PUBLISHING:PAGE2_URL" ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 154, 116 ) ;
 		Size = MAP_APPFONT ( 105, 12 ) ;
 		LEFT = TRUE ;
@@ -347,7 +347,7 @@ ModalDialog DLG_PUBLISHING
 	Edit PAGE2_CGI
 	{
 		HelpID = "sd:Edit:DLG_PUBLISHING:PAGE2_CGI" ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 154, 144 ) ;
 		Size = MAP_APPFONT ( 105, 12 ) ;
 		LEFT = TRUE ;
@@ -504,7 +504,7 @@ ModalDialog DLG_PUBLISHING
 	Edit PAGE4_AUTHOR
 	{
 		HelpID = "sd:Edit:DLG_PUBLISHING:PAGE4_AUTHOR" ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 136, 49 ) ;
 		Size = MAP_APPFONT ( 128, 12 ) ;
 		LEFT = TRUE ;
@@ -520,7 +520,7 @@ ModalDialog DLG_PUBLISHING
 	Edit PAGE4_EMAIL_EDIT
 	{
 		HelpID = "sd:Edit:DLG_PUBLISHING:PAGE4_EMAIL_EDIT" ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 136, 65 ) ;
 		Size = MAP_APPFONT ( 128, 12 ) ;
 		LEFT = TRUE ;
@@ -536,7 +536,7 @@ ModalDialog DLG_PUBLISHING
 	Edit PAGE4_WWW_EDIT
 	{
 		HelpID = "sd:Edit:DLG_PUBLISHING:PAGE4_WWW_EDIT" ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 136, 81 ) ;
 		Size = MAP_APPFONT ( 128, 12 ) ;
 		LEFT = TRUE ;
@@ -765,7 +765,7 @@ ModalDialog DLG_DESIGNNAME
 	Edit EDT_NAME
 	{
 		HelpID = "sd:Edit:DLG_DESIGNNAME:EDT_NAME" ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 4, 4 ) ;
 		Size = MAP_APPFONT ( 152, 14 ) ;
 		LEFT = TRUE ;

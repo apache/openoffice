@@ -19,16 +19,10 @@
  *
  *************************************************************/
 
-
-
 #include "globals.hrc"
 #include "optload.hrc"
 #include "helpid.h"
 #include "config.hrc"
-
-/**************************************************************************/
-/*                                                                        */
-/**************************************************************************/
 
 TabPage TP_OPTLOAD_PAGE
 {
@@ -337,7 +331,7 @@ TabPage TP_OPTCAPTION_PAGE
 		Size = MAP_APPFONT ( 59, 12 ) ;
 		Border = TRUE ;
 		MaxTextLength = 1 ;
-		TEXT = "." ;
+		Text = "." ;
 	};
 	FixedLine FL_CATEGORY
 	{

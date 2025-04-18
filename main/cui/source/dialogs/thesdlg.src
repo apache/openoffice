@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "cuires.hrc"
 #include "thesdlg.hrc"
 #include "helpid.hrc"
@@ -40,7 +38,7 @@ ModalDialog RID_SVXDLG_THESAURUS
 	{
 		Pos = MAP_APPFONT ( 0, 0 ) ;
 		Size = MAP_APPFONT ( 235, 0 ) ; // correct size will be applied at runtime
-		Hide = TRUE;
+		Hide = TRUE ;
 	};
 
 	ImageButton BTN_LEFT
@@ -85,7 +83,7 @@ ModalDialog RID_SVXDLG_THESAURUS
 		HelpID = HID_CT_THES_ALTERNATIVES ; // also needed for automatic testing to find the control
 		Pos = MAP_APPFONT ( 5, 45 ) ;
 		Size = MAP_APPFONT ( 225, 121 ) ;
-		Border = TRUE;
+		Border = TRUE ;
 		TabStop = TRUE ;
 	};
 
@@ -99,7 +97,7 @@ ModalDialog RID_SVXDLG_THESAURUS
 	Edit ED_REPL
 	{
 		HelpID = "cui:Edit:RID_SVXDLG_THESAURUS:ED_REPL" ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 		Pos = MAP_APPFONT ( 5, 184 ) ;
 		Size = MAP_APPFONT ( 225, 12 ) ;
 		LEFT = TRUE ;

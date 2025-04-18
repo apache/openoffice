@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // include ---------------------------------------------------------------
 #include "helpid.hrc"
 #include "cuires.hrc"
@@ -43,83 +41,83 @@ ModalDialog RID_SVXDLG_HYPHENATE
 
 	FixedText FT_WORD
 	{
-        Pos = MAP_APPFONT ( 5, 5 ) ;
-        Size = MAP_APPFONT ( 120, 8 ) ;
-        Text [ en-US ] = "~Word" ;
+		Pos = MAP_APPFONT ( 5, 5 ) ;
+		Size = MAP_APPFONT ( 120, 8 ) ;
+		Text [ en-US ] = "~Word" ;
 	};
 	Edit ED_WORD
 	{
-	    HelpID = "cui:Edit:RID_SVXDLG_HYPHENATE:ED_WORD" ;
-		BORDER = TRUE ;
-        Pos = MAP_APPFONT ( 5, 17 ) ;
-        Size = MAP_APPFONT ( 132, 12 ) ;
+		HelpID = "cui:Edit:RID_SVXDLG_HYPHENATE:ED_WORD" ;
+		Border = TRUE ;
+		Pos = MAP_APPFONT ( 5, 17 ) ;
+		Size = MAP_APPFONT ( 132, 12 ) ;
 		TABSTOP = TRUE ;
 		LEFT = TRUE ;
 	};
 	ImageButton BTN_LEFT
 	{
-	    HelpID = "cui:ImageButton:RID_SVXDLG_HYPHENATE:BTN_LEFT" ;
-        Pos = MAP_APPFONT ( 56, 33 ) ;
+		HelpID = "cui:ImageButton:RID_SVXDLG_HYPHENATE:BTN_LEFT" ;
+		Pos = MAP_APPFONT ( 56, 33 ) ;
 		Size = MAP_APPFONT ( 14, 14 ) ;
 		TABSTOP = TRUE ;
 		SYMBOL = IMAGEBUTTON_ARROW_LEFT ;
 	};
 	ImageButton BTN_RIGHT
 	{
-	    HelpID = "cui:ImageButton:RID_SVXDLG_HYPHENATE:BTN_RIGHT" ;
-        Pos = MAP_APPFONT ( 75, 33 ) ;
+		HelpID = "cui:ImageButton:RID_SVXDLG_HYPHENATE:BTN_RIGHT" ;
+		Pos = MAP_APPFONT ( 75, 33 ) ;
 		Size = MAP_APPFONT ( 14, 14 ) ;
 		TABSTOP = TRUE ;
 		Symbol = IMAGEBUTTON_ARROW_RIGHT ;
 	};
-    OKButton BTN_HYPH_CUT
-    {
-        Pos = MAP_APPFONT ( 144, 17 ) ;
-        Size = MAP_APPFONT ( 50, 14 ) ;
-        Text [ en-US ] = "H~yphenate" ;
-        TABSTOP = TRUE ;
-        DEFBUTTON = TRUE ;
-    };
+	OKButton BTN_HYPH_CUT
+	{
+		Pos = MAP_APPFONT ( 144, 17 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
+		Text [ en-US ] = "H~yphenate" ;
+		TABSTOP = TRUE ;
+		DEFBUTTON = TRUE ;
+	};
 	PushButton BTN_HYPH_CONTINUE
 	{
-	    HelpID = "cui:PushButton:RID_SVXDLG_HYPHENATE:BTN_HYPH_CONTINUE" ;
-        Pos = MAP_APPFONT ( 144, 35 ) ;
-        Size = MAP_APPFONT ( 50, 14 ) ;
-        Text [ en-US ] = "~Skip" ;
+		HelpID = "cui:PushButton:RID_SVXDLG_HYPHENATE:BTN_HYPH_CONTINUE" ;
+		Pos = MAP_APPFONT ( 144, 35 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
+		Text [ en-US ] = "~Skip" ;
 		TABSTOP = TRUE ;
 	};
 	PushButton BTN_HYPH_DELETE
 	{
-	    HelpID = "cui:PushButton:RID_SVXDLG_HYPHENATE:BTN_HYPH_DELETE" ;
-        Pos = MAP_APPFONT ( 144, 52 ) ;
+		HelpID = "cui:PushButton:RID_SVXDLG_HYPHENATE:BTN_HYPH_DELETE" ;
+		Pos = MAP_APPFONT ( 144, 52 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Remove" ;
 		TABSTOP = TRUE ;
 	};
-    FixedLine FL_BOTTOM
-    {
-        Pos = MAP_APPFONT ( 0, 81 ) ;
-        Size = MAP_APPFONT ( 200, 8 ) ;
-    };
-    HelpButton BTN_HYPH_HELP
-    {
-        Pos = MAP_APPFONT ( 5, 93 ) ;
-        Size = MAP_APPFONT ( 50, 14 ) ;
-        TABSTOP = TRUE ;
-    };
-    PushButton BTN_HYPH_ALL
-    {
-        HelpID = "cui:PushButton:RID_SVXDLG_HYPHENATE:BTN_HYPH_ALL" ;
-        Pos = MAP_APPFONT ( 63, 93 ) ;
-        Size = MAP_APPFONT ( 74, 14 ) ;
-        Text [ en-US ] = "Hyphenate ~All" ;
-        TABSTOP = TRUE ;
-    };
+	FixedLine FL_BOTTOM
+	{
+		Pos = MAP_APPFONT ( 0, 81 ) ;
+		Size = MAP_APPFONT ( 200, 8 ) ;
+	};
+	HelpButton BTN_HYPH_HELP
+	{
+		Pos = MAP_APPFONT ( 5, 93 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
+		TABSTOP = TRUE ;
+	};
+	PushButton BTN_HYPH_ALL
+	{
+		HelpID = "cui:PushButton:RID_SVXDLG_HYPHENATE:BTN_HYPH_ALL" ;
+		Pos = MAP_APPFONT ( 63, 93 ) ;
+		Size = MAP_APPFONT ( 74, 14 ) ;
+		Text [ en-US ] = "Hyphenate ~All" ;
+		TABSTOP = TRUE ;
+	};
 	CancelButton BTN_HYPH_CANCEL
 	{
-        Pos = MAP_APPFONT ( 144, 93 ) ;
+		Pos = MAP_APPFONT ( 144, 93 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
-        Text [ en-US ] = "~Close" ;
+		Text [ en-US ] = "~Close" ;
 		TABSTOP = TRUE ;
 	};
 };
