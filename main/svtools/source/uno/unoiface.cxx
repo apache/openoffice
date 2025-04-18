@@ -1513,7 +1513,7 @@ RMItemData SVTXRoadmap::GetRMItemData( const ::com::sun::star::container::Contai
         aValue = xPropertySet->getPropertyValue(::rtl::OUString::createFromAscii( "Enabled" ));
         aValue >>= aCurRMItemData.b_Enabled;
     }
-    return aCurRMItemData;;
+    return aCurRMItemData;
 }
 
 void SVTXRoadmap::elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent )throw(::com::sun::star::uno::RuntimeException)

@@ -287,7 +287,7 @@ SwHistorySetTxtFld::SwHistorySetTxtFld( SwTxtFld* pTxtFld, sal_uLong nNodePos )
 
 String SwHistorySetTxtFld::GetDescription() const
 {
-    return m_pFld->GetField()->GetDescription();;
+    return m_pFld->GetField()->GetDescription();
 }
 
 SwHistorySetTxtFld::~SwHistorySetTxtFld()

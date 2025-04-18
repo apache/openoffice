@@ -207,7 +207,7 @@ CSS1Token CSS1Parser::GetNextToken()
 							{
 							case '{':
 								if( !cQuoteCh && !bOldEscape )
-									nBlockLvl++;;
+									nBlockLvl++;
 								break;
 							case ';':
 								if( !cQuoteCh && !bOldEscape )

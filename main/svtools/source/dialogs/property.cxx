@@ -857,7 +857,7 @@ void SvListBoxForProperties::UpdatePlayGround()
 	{
 		nStart=(sal_uInt16)nThumbPos;
 		nEnd=(sal_uInt16)(nThumbPos-nDelta);
-		aPEnd.Y()=(nThumbPos-nDelta)*nRowHeight;;
+		aPEnd.Y()=(nThumbPos-nDelta)*nRowHeight;
 	}
 
 	aSize.Height()=nRowHeight;
