@@ -849,7 +849,7 @@ ErrCode FileDialogHelper_Impl::getGraphic( Graphic& rGraphic ) const
 
 	if ( ! maGraphic )
 	{
-		OUString aPath;;
+		OUString aPath;
 		Sequence < OUString > aPathSeq = mxFileDlg->getFiles();
 
 		if ( aPathSeq.getLength() == 1 )

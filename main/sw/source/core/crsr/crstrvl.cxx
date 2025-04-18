@@ -849,7 +849,7 @@ SwField* SwCrsrShell::GetCurFld( const bool bIncludeInputFldAtStart ) const
         return NULL;
     }
 
-    SwField* pCurFld = GetFieldAtCrsr( pCrsr, bIncludeInputFldAtStart );;
+    SwField* pCurFld = GetFieldAtCrsr( pCrsr, bIncludeInputFldAtStart );
     if ( pCurFld != NULL
          && RES_TABLEFLD == pCurFld->GetTyp()->Which() )
     {

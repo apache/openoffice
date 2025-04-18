@@ -997,7 +997,7 @@ RTLFUNC(InStr)
 		}
 		else
 		{
-			bTextMode = 1;;
+			bTextMode = 1;
 		}
 		if ( nArgCount == 4 )
 			bTextMode = rPar.Get(4)->GetInteger();
@@ -1078,7 +1078,7 @@ RTLFUNC(InStrRev)
 		}
 		else
 		{
-			bTextMode = 1;;
+			bTextMode = 1;
 		}
 		if ( nArgCount == 4 )
 			bTextMode = rPar.Get(4)->GetInteger();

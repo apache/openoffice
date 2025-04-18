@@ -1390,7 +1390,7 @@ sal_Bool Bitmap::ImplScaleSuper(
 		long*				pMapIY = new long[ nDstH ];
 		long*				pMapFX = new long[ nDstW ];
 		long*				pMapFY = new long[ nDstH ];
-		long				nX, nY, nXDst, nYDst;;
+		long				nX, nY, nXDst, nYDst;
 		double				fTemp;
 		long				nTemp , nTempX, nTempY, nTempFX, nTempFY;
 		sal_uInt8			cR0, cG0, cB0, cR1, cG1, cB1;

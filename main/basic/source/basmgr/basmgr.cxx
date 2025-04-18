@@ -1602,7 +1602,7 @@ sal_Bool BasicManager::LoadLib( sal_uInt16 nLib )
         {
             String aLibName = pLibInfo->GetLibName();
             xLibContainer->loadLibrary( aLibName );
-            bDone = xLibContainer->isLibraryLoaded( aLibName );;
+            bDone = xLibContainer->isLibraryLoaded( aLibName );
         }
         else
         {
