@@ -2839,7 +2839,7 @@ bool INetURLObject::parseHostOrNetBiosName(
                         case ']':
                         case '`':
                         case '|':
-                            return false;;
+                            return false;
                         }
                     if (pCanonic != NULL) {
                         appendUCS4(

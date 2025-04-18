@@ -464,7 +464,7 @@ sub resolving_archive_flag
 						{
                             $installer::logger::Lang->printf(
                                 "WARNING: %s not included in install set (does not exist in zip file)!\n",
-                                $name);;
+                                $name);
 						}
 					}
 				}

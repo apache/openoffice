@@ -2872,7 +2872,7 @@ static Writer& OutCSS1_SvxFontWeight( Writer& rWrt, const SfxPoolItem& rHt )
 		break;
 	case WEIGHT_ULTRABOLD:	pStr = sCSS1_PV_extra_bold;		break;
 	default:
-		pStr = sCSS1_PV_normal;;
+		pStr = sCSS1_PV_normal;
 	}
 
 	if( pStr )

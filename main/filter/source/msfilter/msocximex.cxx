@@ -3696,7 +3696,7 @@ void OCX_MultiPage::ProcessControl(OCX_Control* pControl, SvStorageStream* /* pS
         pPage->mnLeft = mnLeft;
         pPage->mnBackColor = mnBackColor;
 
-        oStream = pPage->getContainerStream();;
+        oStream = pPage->getContainerStream();
         // Position of controls is relative to pos of this MuliPage
         // Control
         pPage->FullRead( oStream );
