@@ -90,7 +90,7 @@ public class TagPair {
         if(tagList.size()==0){
             return;
         }
-        ArrayList contentList=new ArrayList();;
+        ArrayList contentList=new ArrayList();
         Tag tag=(Tag)tagList.get(0);
         tagList.remove(0);
 

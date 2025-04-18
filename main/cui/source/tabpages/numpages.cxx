@@ -4045,7 +4045,7 @@ void SvxNumOptionsTabPage::PageCreated(SfxAllItemSet aSet)
 	{
 		ListBox& myCharFmtLB = GetCharFmtListBox();
 		const List *pList = (pListItem)->GetList();
-		sal_uInt32 nCount = pList->Count();;
+		sal_uInt32 nCount = pList->Count();
         for(sal_uInt32 i = 0; i < nCount; i++)
 		{
 			myCharFmtLB.InsertEntry(*(const String*)(pList->GetObject(i)) );
