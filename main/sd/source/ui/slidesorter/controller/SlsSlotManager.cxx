@@ -863,7 +863,8 @@ void SlotManager::GetStatusBarState (SfxItemSet& rSet)
 	{
 		rSet.Put( SfxVoidItem( SID_ATTR_ZOOMSLIDER ) );
 	}
-} */
+*/
+}
 
 void SlotManager::ShowSlideShow( SfxRequest& rReq)
 {
