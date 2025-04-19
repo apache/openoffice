@@ -1164,7 +1164,7 @@ void SlotManager::DuplicateSelectedSlides (SfxRequest& rRequest)
 
 void SlotManager::ExecuteCommandAsynchronously (::std::auto_ptr<Command> pCommand)
 {
-    // Ownership of command is (implicitely) transferred to the queue.
+    // Ownership of command is (implicitly) transferred to the queue.
     maCommandQueue.push(pCommand.get());
     pCommand.release();
     Application::PostUserEvent(LINK(this,SlotManager,UserEventCallback));
@@ -1308,7 +1308,7 @@ SlideExclusionState GetSlideExclusionState (model::PageEnumeration& rPageSet)
         switch (eState)
         {
             case UNDEFINED:
-                // Use the first selected page to set the inital value.
+                // Use the first selected page to set the initial value.
                 eState = bState ? EXCLUDED : INCLUDED;
                 break;
 
@@ -1339,4 +1339,3 @@ SlideExclusionState GetSlideExclusionState (model::PageEnumeration& rPageSet)
 } // end of anonymous namespace
 
 } } } // end of namespace ::sd::slidesorter::controller
-
