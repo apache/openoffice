@@ -84,7 +84,7 @@ public class PackageRemover {
 
         idx = idx + ParcelZipper.CONTENTS_DIRNAME.length();
         if (line.charAt(idx) == '.')
-            return "package " + line.substring(idx + 1);;
+            return "package " + line.substring(idx + 1);
 
         return null;
     }

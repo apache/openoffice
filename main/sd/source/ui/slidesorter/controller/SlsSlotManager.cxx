@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include "precompiled_sd.hxx"
 
@@ -435,7 +433,7 @@ void SlotManager::ExecCtrl (SfxRequest& rRequest)
 			// Undo-Manager leeren
 			mrSlideSorter.GetModel().GetDocument()->GetDocSh()->ClearUndoBuffer();
 
-			// Normale Weiterleitung an ViewFrame zur Ausfuehrung
+			// Normale Weiterleitung an ViewFrame zur Ausführung
             if (pViewShell != NULL)
                 pViewShell->GetViewFrame()->ExecuteSlot(rRequest);
 
@@ -491,7 +489,7 @@ void SlotManager::ExecCtrl (SfxRequest& rRequest)
 
 void SlotManager::GetAttrState (SfxItemSet& rSet)
 {
-    // Iteratate over all items.
+    // Iterate over all items
 	SfxWhichIter aIter (rSet);
 	sal_uInt16 nWhich = aIter.FirstWhich();
 	while (nWhich)
@@ -564,7 +562,7 @@ void SlotManager::GetMenuState (SfxItemSet& rSet)
 					}
 					else
 					{
-						// check if the object is in edit, than its temporarely not empty
+						// check if the object is in edit, than it's temporarily not empty
 						SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( pObj );
 						if( pTextObj )
 						{
@@ -608,7 +606,7 @@ void SlotManager::GetMenuState (SfxItemSet& rSet)
 			rSet.DisableItem (SID_SUMMARY_PAGE);
 	}
 
-	// Starten der Praesentation moeglich?
+	// Starten der Präsentation möglich?
 	if( SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_PRESENTATION ) ||
 		SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_REHEARSE_TIMINGS ) )
 	{
@@ -854,16 +852,18 @@ void SlotManager::GetStatusBarState (SfxItemSet& rSet)
 
             aLayoutStr = pFirstPage->GetLayoutName();
             aLayoutStr.Erase( aLayoutStr.SearchAscii( SD_LT_SEPARATOR ) );
-        }
+		}
 	}
 
 	rSet.Put( SfxStringItem( SID_STATUS_PAGE, aPageStr ) );
 	rSet.Put( SfxStringItem( SID_STATUS_LAYOUT, aLayoutStr ) );
 
+/* #121506: Zoom slider disappears after changing page/slide in Draw/Impress
 	if( SFX_ITEM_AVAILABLE == rSet.GetItemState( SID_ATTR_ZOOMSLIDER ) )
 	{
-        rSet.Put( SfxVoidItem( SID_ATTR_ZOOMSLIDER ) );
-    }
+		rSet.Put( SfxVoidItem( SID_ATTR_ZOOMSLIDER ) );
+	}
+*/
 }
 
 void SlotManager::ShowSlideShow( SfxRequest& rReq)
@@ -880,11 +880,11 @@ void SlotManager::ShowSlideShow( SfxRequest& rReq)
 
 void SlotManager::RenameSlide (void)
 {
-    PageKind ePageKind = mrSlideSorter.GetModel().GetPageType();
-    View* pDrView = &mrSlideSorter.GetView();
+	PageKind ePageKind = mrSlideSorter.GetModel().GetPageType();
+	View* pDrView = &mrSlideSorter.GetView();
 
-    if (ePageKind==PK_STANDARD || ePageKind==PK_NOTES)
-    {
+	if (ePageKind==PK_STANDARD || ePageKind==PK_NOTES)
+	{
         if ( pDrView->IsTextEdit() )
         {
             pDrView->SdrEndTextEdit();
@@ -1179,8 +1179,8 @@ IMPL_LINK(SlotManager, UserEventCallback, void*, EMPTYARG)
 
         if (pCommand != NULL)
         {
-            // The queue ownes the command that has just been removed from
-            // it.  Therefore it is deleted after it has been executed.
+            // The queue owns the command that has just been removed from
+            // it. Therefore it is deleted after it has been executed.
             (*pCommand)();
             delete pCommand;
         }
@@ -1339,3 +1339,5 @@ SlideExclusionState GetSlideExclusionState (model::PageEnumeration& rPageSet)
 } // end of anonymous namespace
 
 } } } // end of namespace ::sd::slidesorter::controller
+
+/* vim: set noet sw=4 ts=4: */

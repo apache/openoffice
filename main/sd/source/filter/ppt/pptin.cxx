@@ -1888,7 +1888,7 @@ void ImplSdPPTImport::ImportPageEffect( SdPage* pPage, const sal_Bool bNewAnimat
 
         for( ;aIter != aEnd; aIter++ )
         {
-            Ppt97AnimationPtr pPpt97Animation = (*aIter).second;;
+            Ppt97AnimationPtr pPpt97Animation = (*aIter).second;
             if( pPpt97Animation.get() )
                 pPpt97Animation->createAndSetCustomAnimationEffect( (*aIter).first );
         }

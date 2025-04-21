@@ -625,7 +625,7 @@ namespace framework
 
         size_t nContextElements = 0;
 
-        const bool isHiddenContext = m_aContextVisibilities.top();;
+        const bool isHiddenContext = m_aContextVisibilities.top();
         m_aContextVisibilities.pop();
 
         const bool bHadRedoActions = ( rUndoManager.GetRedoActionCount( IUndoManager::TopLevel ) > 0 );

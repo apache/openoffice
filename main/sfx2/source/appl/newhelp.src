@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "app.hrc"
 #include "newhelp.hrc"
 #include "helpid.hrc"
@@ -338,14 +336,14 @@ ModalDialog DLG_HELP_ADDBOOKMARK
 		Text [ en-US ] = "Bookmark:" ;
 		TABSTOP = FALSE ;
 		GROUP = TRUE ;
-		LEFT = TRUE ;
+		Left = TRUE ;
 	};
 	Edit ED_BOOKMARK_TITLE
 	{
 		HelpID = "sfx2:Edit:DLG_HELP_ADDBOOKMARK:ED_BOOKMARK_TITLE" ;
 		PosSize = MAP_APPFONT ( 6, 19, 140, 12 ) ;
 		TABSTOP = TRUE ;
-		BORDER = TRUE ;
+		Border = TRUE ;
 	};
 	OKButton PB_BOOKMARK_OK
 	{

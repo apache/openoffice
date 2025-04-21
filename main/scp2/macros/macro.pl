@@ -22,7 +22,7 @@
 
 
 my $completelangiso_var = $ENV{COMPLETELANGISO_VAR};
-my $lastcompletelangiso_var;;
+my $lastcompletelangiso_var;
 my $outfile = "";
 
 if ( !defined $completelangiso_var) {

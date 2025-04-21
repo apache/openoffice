@@ -279,13 +279,13 @@ int WINAPI _tWinMain( HINSTANCE /*hInstance*/, HINSTANCE, LPTSTR, int )
         TCHAR szProductSource[1024]     = {0};
         TCHAR szInstanceURN[1024]       = {0};
 
-//      -i)  INSTANCE_URN="$2"; shift;;
-//      -t)  TARGET_URN="$2"; shift;;
-//	    -p)  PRODUCT_NAME="$2"; shift;;
-//	    -e)  PRODUCT_VERSION="$2"; shift;;
-//	    -P)  PARENT_PRODUCT_NAME="$2"; shift;;
-//	    -S)  PRODUCT_SOURCE="$2"; shift;;
-//	    "usage: $0 [-i <instance urn>] -p <product name> -e <product version> -t <urn> -S <source> -P <parent product name>"
+//		-i)  INSTANCE_URN="$2"; shift;;
+//		-t)  TARGET_URN="$2"; shift;;
+//		-p)  PRODUCT_NAME="$2"; shift;;
+//		-e)  PRODUCT_VERSION="$2"; shift;;
+//		-P)  PARENT_PRODUCT_NAME="$2"; shift;;
+//		-S)  PRODUCT_SOURCE="$2"; shift;;
+//		"usage: $0 [-i <instance urn>] -p <product name> -e <product version> -t <urn> -S <source> -P <parent product name>"
 
         int i = 1;
         while ( i < nArgs )

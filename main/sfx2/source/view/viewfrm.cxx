@@ -2553,7 +2553,7 @@ void SfxViewFrame::ExecView_Impl
 	        {
 				pViewShell->DoVerb( pItem->GetValue() );
                 rReq.Done();
-				break;;
+				break;
             }
         }
     }

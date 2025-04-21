@@ -303,7 +303,7 @@ bool SfxSaveTabPage::AcceptFilter( sal_uInt16 nPos )
         {
             bAlien = pImpl->aAlienArr[nPos][nFilter];
             bODF = pImpl->aODFArr[nPos][nFilter];
-            sUIName = pUIFilters[nFilter];;
+            sUIName = pUIFilters[nFilter];
             break;
         }
     }

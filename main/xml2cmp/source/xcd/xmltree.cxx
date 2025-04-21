@@ -151,7 +151,7 @@ CompDescrList::Create_and_Add_NewElement()
 void
 CompDescrList::Get_SupportedServices( List< const MultipleTextElement * > & o_rResult ) const
 {
-	unsigned i_max = aCDs.size();;
+	unsigned i_max = aCDs.size();
 	for (unsigned i = 0; i < i_max; ++i)
 	{
 		o_rResult.push_back(& aCDs[i]->SupportedServices());
@@ -161,7 +161,7 @@ CompDescrList::Get_SupportedServices( List< const MultipleTextElement * > & o_rR
 void
 CompDescrList::Get_Types( List< const MultipleTextElement * > & o_rResult ) const
 {
-	unsigned i_max = aCDs.size();;
+	unsigned i_max = aCDs.size();
 	for (unsigned i = 0; i < i_max; ++i)
 	{
 		o_rResult.push_back(& aCDs[i]->Types());
@@ -171,7 +171,7 @@ CompDescrList::Get_Types( List< const MultipleTextElement * > & o_rResult ) cons
 void
 CompDescrList::Get_ServiceDependencies( List< const MultipleTextElement * > & o_rResult ) const
 {
-	unsigned i_max = aCDs.size();;
+	unsigned i_max = aCDs.size();
 	for (unsigned i = 0; i < i_max; ++i)
 	{
 		o_rResult.push_back(& aCDs[i]->ServiceDependencies());

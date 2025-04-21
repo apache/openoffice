@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
 
@@ -30,7 +28,6 @@
 
 #include <unotools/syslocale.hxx>
 #include <sfx2/viewfrm.hxx>
-
 
 #include "res_bmp.hrc"
 #include "slideshow.hxx"
@@ -332,7 +329,6 @@ long ShowWindow::Notify(NotifyEvent& rNEvt)
 
 	return nOK;
 }
-
 
 // -----------------------------------------------------------------------------
 

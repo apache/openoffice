@@ -133,7 +133,7 @@ void MSAAServiceImpl::initialize( Sequence< Any > const & args ) throw (Exceptio
     if (1 != args.getLength())
     {
         throw lang::IllegalArgumentException(
-            OUString( RTL_CONSTASCII_USTRINGPARAM("give a string instanciating this component!") ),
+            OUString( RTL_CONSTASCII_USTRINGPARAM("give a string instantiating this component!") ),
             (::cppu::OWeakObject *)this, // resolve to XInterface reference
             0 ); // argument pos
     }

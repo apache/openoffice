@@ -130,7 +130,7 @@ public class FaxWizardDialogImpl extends FaxWizardDialog
             //Number of steps on WizardDialog:
             setMaxStep(5);
 
-            //instatiate The Document Frame for the Preview
+            //instantiate The Document Frame for the Preview
             myFaxDoc = new FaxDocument(xMSF, this);
 
             //create the dialog:

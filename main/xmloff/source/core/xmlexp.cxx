@@ -2490,7 +2490,7 @@ void SvXMLExport::DisposingModel()
 {
 	mxModel.clear();
     // --> OD 2006-03-13 #i51726#
-    meModelType = SvtModuleOptions::E_UNKNOWN_FACTORY;;
+    meModelType = SvtModuleOptions::E_UNKNOWN_FACTORY;
     // <--
 	mxEventListener.clear();
 }

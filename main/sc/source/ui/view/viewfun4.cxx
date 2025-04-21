@@ -399,7 +399,7 @@ void ScViewFunc::DoThesaurus( sal_Bool bRecord )
 	{
 		DBG_ERROR("DoThesaurus: Keine String oder Editzelle");
 	}
-	pEditView = GetViewData()->GetEditView(GetViewData()->GetActivePart());;
+	pEditView = GetViewData()->GetEditView(GetViewData()->GetActivePart());
 	if (pEditSel)
 		pEditView->SetSelection(*pEditSel);
 	else

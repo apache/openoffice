@@ -879,7 +879,7 @@ sal_uInt16 Writer::defineBitmap( const BitmapEx &bmpSource, sal_Int32 nJPEGQuali
 	}
 
 	//Figure out JPEG size
-	const sal_uInt8* pJpgData = NULL;;
+	const sal_uInt8* pJpgData = NULL;
 	sal_uInt32 nJpgDataLength = 0xffffffff;
 
 	Graphic aGraphic( bmpSource );

@@ -547,7 +547,7 @@ void SlideTransitionPane::UpdateLook (void)
 {
     SetBackground(::sfx2::sidebar::Theme::GetWallpaper(::sfx2::sidebar::Theme::Paint_PanelBackground));
     maFL_APPLY_TRANSITION.SetBackground(Wallpaper());
-    maFL_MODIFY_TRANSITION.SetBackground(Wallpaper());;
+    maFL_MODIFY_TRANSITION.SetBackground(Wallpaper());
     maFT_SPEED.SetBackground(Wallpaper());
     maFT_SOUND.SetBackground(Wallpaper());
     maFL_ADVANCE_SLIDE.SetBackground(Wallpaper());

@@ -209,7 +209,7 @@ void SAL_CALL DropTarget::dropComplete(sal_Bool success) throw (RuntimeException
 //
 OUString SAL_CALL DropTarget::getImplementationName() throw (RuntimeException)
 {
-    return OUString(RTL_CONSTASCII_USTRINGPARAM(OS2_DNDTARGET_IMPL_NAME));;
+    return OUString(RTL_CONSTASCII_USTRINGPARAM(OS2_DNDTARGET_IMPL_NAME));
 }
 
 sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName ) throw (RuntimeException)

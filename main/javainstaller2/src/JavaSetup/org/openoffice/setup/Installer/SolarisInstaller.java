@@ -373,7 +373,7 @@ public class SolarisInstaller extends Installer {
         String pkgCommand;
         String[] pkgCommandArray;
         boolean useLocalRoot = false;
-        HashMap map = new HashMap();;
+        HashMap map = new HashMap();
 
         if (installData.isUserInstallation()) {
             rootPath = installData.getDatabasePath();

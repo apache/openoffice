@@ -54,7 +54,7 @@ OfficeConstants {
 	private Vector definedNames			= new Vector();
 	private static final CodePage cp;
 	private static final Window1 win1;
-	private static final BeginningOfFile bof;;
+	private static final BeginningOfFile bof;
 	private static final Eof eof;
 	private String fileName;
 

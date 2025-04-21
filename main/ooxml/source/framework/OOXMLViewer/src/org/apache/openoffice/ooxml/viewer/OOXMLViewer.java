@@ -82,7 +82,7 @@ public class OOXMLViewer
                         
                     default:
                         System.out.printf("unknown option '%s'\n", aArguments[nIndex]);
-                        System.exit(1);;
+                        System.exit(1);
                         break;
                         
                 }

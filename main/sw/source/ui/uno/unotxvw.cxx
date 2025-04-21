@@ -358,7 +358,7 @@ sal_Bool SwXTextView::select(const uno::Any& aInterface) throw( lang::IllegalArg
 			}
 		}
 
-		uno::Reference< text::XTextTable >  xTbl(xInterface, uno::UNO_QUERY);;
+		uno::Reference< text::XTextTable >  xTbl(xInterface, uno::UNO_QUERY);
 
 		if(xTbl.is() && xIfcTunnel.is())
 		{
@@ -407,7 +407,7 @@ sal_Bool SwXTextView::select(const uno::Any& aInterface) throw( lang::IllegalArg
 				return sal_True;
            }
         }
-		uno::Reference< text::XTextContent >  xBkm(xInterface, uno::UNO_QUERY);;
+		uno::Reference< text::XTextContent >  xBkm(xInterface, uno::UNO_QUERY);
 
 		if(xBkm.is() && xIfcTunnel.is())
         {
@@ -548,7 +548,7 @@ uno::Any SwXTextView::getSelection(void) throw( uno::RuntimeException )
 					DBG_ASSERT(rSh.GetTableFmt(), "kein Tabellenformat?");
 					uno::Reference< text::XTextTableCursor >  xCrsr = new SwXTextTableCursor(*rSh.GetTableFmt(),
 													rSh.GetTableCrsr());
-					aRef = uno::Reference< uno::XInterface >  (xCrsr, uno::UNO_QUERY);;
+					aRef = uno::Reference< uno::XInterface >  (xCrsr, uno::UNO_QUERY);
 					break;
 				}
 
@@ -617,7 +617,7 @@ uno::Any SwXTextView::getSelection(void) throw( uno::RuntimeException )
 				{
 					SdrObject* pObj = rMarkList.GetMark(i)->GetMarkedSdrObj();
 					uno::Reference< uno::XInterface >  xInt = pSvxDrawPage->GetInterface( pObj );
-					uno::Reference< drawing::XShape >  xShape(xInt, uno::UNO_QUERY);;
+					uno::Reference< drawing::XShape >  xShape(xInt, uno::UNO_QUERY);
 					xShCol->add(xShape);
 				}
 				aRef = uno::Reference< uno::XInterface >(xShCol, uno::UNO_QUERY);
@@ -2131,7 +2131,7 @@ sal_Int64 SAL_CALL SwXTextViewCursor::getSomething(
         {
                 return sal::static_int_cast< sal_Int64 >( reinterpret_cast< sal_IntPtr >( this ));
         }
-	return OTextCursorHelper::getSomething(rId);;
+	return OTextCursorHelper::getSomething(rId);
 }
 // -----------------------------------------------------------------------------
 
