@@ -266,14 +266,14 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 
 #define FN_DRAW_WRAP_DLG		(FN_VIEW + 3)	/* Draw Umlauf-Dlg */
 
-#define FN_RULER				(FN_VIEW + 11)	/* Horizontales Lineal */
+#define FN_RULER				(FN_VIEW + 11)	/* Horizontal Ruler */
 
 #define FN_VIEW_GRAPHIC			(FN_VIEW + 13)	/* Grafiken anzeigen */
 #define FN_VIEW_BOUNDS			(FN_VIEW + 14)	/* Begrenzungen */
 #define FN_VIEW_FIELDS			(FN_VIEW + 15)	/* Textbefehle */
-#define FN_VLINEAL				(FN_VIEW + 16)	/* Vertikales Lineal */
-#define FN_VSCROLLBAR			(FN_VIEW + 17)	/* Vertikaler Scrollbar */
-#define FN_HSCROLLBAR			(FN_VIEW + 18)	/* Horizontaler Scrollbar */
+#define FN_VLINEAL				(FN_VIEW + 16)	/* Vertical Ruler */
+#define FN_VSCROLLBAR			(FN_VIEW + 17)	/* Vertical Scrollbar */
+#define FN_HSCROLLBAR			(FN_VIEW + 18)	/* Horizontal Scrollbar */
 #define FN_TOOLBOX_TOGGLE		(FN_VIEW + 19)	/* Toolboxinhalte umschalten */
 #define FN_VIEWOPTIONS_ON		(FN_VIEW + 20)	/* Gruppe Viewoptions an */
 #define FN_VIEWOPTIONS_OFF		(FN_VIEW + 21)	/* Gruppe Viewoptions aus */
@@ -288,7 +288,6 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 #define FN_SET_PAGE 			(FN_VIEW + 29)	/* Seitenvorlage am Absatz setzen */
 
 #define FN_TOOLBOX_SWITCH 		(FN_VIEW + 30)	/* Auf Textshell umschalten */
-
 
 // noch mehr Navigator
 #define	FN_CONTENT_LB			(FN_VIEW + 32)  /**/

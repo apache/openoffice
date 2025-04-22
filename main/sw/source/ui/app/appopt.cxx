@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -91,8 +89,8 @@ SfxItemSet*	 SwModule::CreateItemSet( sal_uInt16 nId )
 		SwMasterUsrPref* pPref = bTextDialog ? pUsrPref : pWebUsrPref;
 		//kein MakeUsrPref, da hier nur die Optionen von Textdoks genommen werden duerfen
 		SwView* pAppView = GetView();
-        if(pAppView && pAppView->GetViewFrame() != SfxViewFrame::Current())
-            pAppView = 0;
+		if(pAppView && pAppView->GetViewFrame() != SfxViewFrame::Current())
+			pAppView = 0;
 		if(pAppView)
 		{
 		// wenn Text dann nicht WebView und umgekehrt
@@ -100,15 +98,13 @@ SfxItemSet*	 SwModule::CreateItemSet( sal_uInt16 nId )
 			if( (bWebView &&  !bTextDialog) ||(!bWebView &&  bTextDialog))
 			{
 				aViewOpt = *pAppView->GetWrtShell().GetViewOptions();
-            }
+			}
 			else
 				pAppView = 0; // mit View kann hier nichts gewonnen werden
 		}
 
 	/********************************************************************/
-	/*																	*/
 	/* Optionen/Bearbeiten  											*/
-	/*																	*/
 	/********************************************************************/
 	SfxItemSet*	pRet = new SfxItemSet (GetPool(),	FN_PARAM_DOCDISP,		FN_PARAM_ELEM,
 									SID_PRINTPREVIEW, 		SID_PRINTPREVIEW,
@@ -131,7 +127,7 @@ SfxItemSet*	 SwModule::CreateItemSet( sal_uInt16 nId )
 #endif
                                     0);
 
-    pRet->Put( SwDocDisplayItem( aViewOpt, FN_PARAM_DOCDISP) );
+	pRet->Put( SwDocDisplayItem( aViewOpt, FN_PARAM_DOCDISP) );
 	pRet->Put( SwElemItem( aViewOpt, FN_PARAM_ELEM) );
 	if( bTextDialog )
 	{
@@ -143,7 +139,7 @@ SfxItemSet*	 SwModule::CreateItemSet( sal_uInt16 nId )
 	{
 		SwWrtShell& rWrtShell = pAppView->GetWrtShell();
 
-        SfxPrinter* pPrt = rWrtShell.getIDocumentDeviceAccess()->getPrinter( false );
+		SfxPrinter* pPrt = rWrtShell.getIDocumentDeviceAccess()->getPrinter( false );
 		if( pPrt )
 			pRet->Put(SwPtrItem(FN_PARAM_PRINTER, pPrt));
 		pRet->Put(SwPtrItem(FN_PARAM_WRTSHELL, &rWrtShell));
@@ -199,12 +195,12 @@ SfxItemSet*	 SwModule::CreateItemSet( sal_uInt16 nId )
 
     FieldUnit eUnit = pPref->GetHScrollMetric();
     if(pAppView)
-        pAppView->GetHLinealMetric(eUnit);
+        pAppView->GetHRulerMetric(eUnit);
     pRet->Put(SfxUInt16Item( FN_HSCROLL_METRIC, static_cast< sal_uInt16 >(eUnit)));
 
     eUnit = pPref->GetVScrollMetric();
     if(pAppView)
-        pAppView->GetVLinealMetric(eUnit);
+        pAppView->GetVRulerMetric(eUnit);
     pRet->Put(SfxUInt16Item( FN_VSCROLL_METRIC, static_cast< sal_uInt16 >(eUnit) ));
     pRet->Put(SfxUInt16Item( SID_ATTR_METRIC, static_cast< sal_uInt16 >(pPref->GetMetric()) ));
     if(bTextDialog)
@@ -369,16 +365,16 @@ void SwModule::ApplyItemSet( sal_uInt16 nId, const SfxItemSet& rSet )
         FieldUnit eUnit = (FieldUnit)pMetricItem->GetValue();
         pPref->SetVScrollMetric(eUnit);
         if(pAppView)
-            pAppView->ChangeVLinealMetric(eUnit);
+            pAppView->ChangeVRulerMetric(eUnit);
     }
 
-    if( SFX_ITEM_SET == rSet.GetItemState(SID_ATTR_DEFTABSTOP, sal_False, &pItem ) )
+	if( SFX_ITEM_SET == rSet.GetItemState(SID_ATTR_DEFTABSTOP, sal_False, &pItem ) )
 	{
 		sal_uInt16 nTabDist = ((const SfxUInt16Item*)pItem)->GetValue();
-        pPref->SetDefTab(nTabDist);
+		pPref->SetDefTab(nTabDist);
 		if(pAppView)
 		{
-            SvxTabStopItem aDefTabs( 0, 0, SVX_TAB_ADJUST_DEFAULT, RES_PARATR_TABSTOP );
+			SvxTabStopItem aDefTabs( 0, 0, SVX_TAB_ADJUST_DEFAULT, RES_PARATR_TABSTOP );
 			MakeDefTabs( nTabDist, aDefTabs );
 			pAppView->GetWrtShell().SetDefault( aDefTabs );
 		}
@@ -435,10 +431,10 @@ void SwModule::ApplyItemSet( sal_uInt16 nId, const SfxItemSet& rSet )
 		if (pOpt)
 		{
 			const SwAddPrinterItem* pAddPrinterAttr = (const SwAddPrinterItem*)pItem;
-            *pOpt = *pAddPrinterAttr;
+			*pOpt = *pAddPrinterAttr;
 
-            if(pAppView)
-                pAppView->GetWrtShell().getIDocumentDeviceAccess()->setPrintData( *pOpt );
+			if(pAppView)
+				pAppView->GetWrtShell().getIDocumentDeviceAccess()->setPrintData( *pOpt );
 		}
 
 	}
@@ -450,15 +446,15 @@ void SwModule::ApplyItemSet( sal_uInt16 nId, const SfxItemSet& rSet )
 			pBindings->Invalidate(FN_SHADOWCURSOR);
 	}
 
-    if( pAppView )
+	if( pAppView )
 	{
-        SwWrtShell &rWrtSh = pAppView->GetWrtShell();
-        const bool bAlignFormulas = rWrtSh.GetDoc()->get( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT );
-        pPref->SetAlignMathObjectsToBaseline( bAlignFormulas );
-        
-        // don't align formulas in documents that are currently loading
-        if (bAlignFormulas && !rWrtSh.GetDoc()->IsInReading())
-            rWrtSh.AlignAllFormulasToBaseline();
+		SwWrtShell &rWrtSh = pAppView->GetWrtShell();
+		const bool bAlignFormulas = rWrtSh.GetDoc()->get( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT );
+		pPref->SetAlignMathObjectsToBaseline( bAlignFormulas );
+
+		// don't align formulas in documents that are currently loading
+		if (bAlignFormulas && !rWrtSh.GetDoc()->IsInReading())
+			rWrtSh.AlignAllFormulasToBaseline();
 	}
 
 	if( SFX_ITEM_SET == rSet.GetItemState( FN_PARAM_CRSR_IN_PROTECTED, sal_False, &pItem ))
@@ -512,16 +508,16 @@ SfxTabPage* SwModule::CreateTabPage( sal_uInt16 nId, Window* pParent, const SfxI
 			}
 			break;
 		}
-        case RID_SW_TP_HTML_OPTGRID_PAGE:
+		case RID_SW_TP_HTML_OPTGRID_PAGE:
 		case RID_SVXPAGE_GRID:
 			pRet = SvxGridTabPage::Create(pParent, rSet);
 		break;
 
-        case RID_SW_TP_STD_FONT:
-        case RID_SW_TP_STD_FONT_CJK:
-        case RID_SW_TP_STD_FONT_CTL:
+		case RID_SW_TP_STD_FONT:
+		case RID_SW_TP_STD_FONT_CJK:
+		case RID_SW_TP_STD_FONT_CTL:
 		{
-            SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
+			SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
 			if ( pFact )
 			{
 				::CreateTabPage fnCreatePage = pFact->GetTabPageCreatorFunc( nId );
@@ -559,27 +555,27 @@ SfxTabPage* SwModule::CreateTabPage( sal_uInt16 nId, Window* pParent, const SfxI
 				if ( fnCreatePage )
 					pRet = (*fnCreatePage)( pParent, rSet );
 			}
-            SwView* pCurrView = GetView();
-            if(pCurrView)
+			SwView* pCurrView = GetView();
+			if(pCurrView)
 			{
 				// wenn Text dann nicht WebView und umgekehrt
-                sal_Bool bWebView = 0 != PTR_CAST(SwWebView, pCurrView);
+				sal_Bool bWebView = 0 != PTR_CAST(SwWebView, pCurrView);
 				if( (bWebView &&  RID_SW_TP_HTML_OPTTABLE_PAGE == nId) ||
 					(!bWebView &&  RID_SW_TP_HTML_OPTTABLE_PAGE != nId) )
 				{
-                    aSet.Put (SwWrtShellItem(SID_WRT_SHELL,pCurrView->GetWrtShellPtr()));
+					aSet.Put (SwWrtShellItem(SID_WRT_SHELL,pCurrView->GetWrtShellPtr()));
 					pRet->PageCreated(aSet);
 				}
 			}
 		}
 		break;
-        case RID_SW_TP_OPTSHDWCRSR:
-        case RID_SW_TP_HTML_OPTSHDWCRSR:
-        case RID_SW_TP_REDLINE_OPT:
-        case RID_SW_TP_OPTLOAD_PAGE:
-        case RID_SW_TP_OPTCOMPATIBILITY_PAGE:
-        case RID_SW_TP_MAILCONFIG:
-        {
+		case RID_SW_TP_OPTSHDWCRSR:
+		case RID_SW_TP_HTML_OPTSHDWCRSR:
+		case RID_SW_TP_REDLINE_OPT:
+		case RID_SW_TP_OPTLOAD_PAGE:
+		case RID_SW_TP_OPTCOMPATIBILITY_PAGE:
+		case RID_SW_TP_MAILCONFIG:
+		{
 			SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
 			if ( pFact )
 			{
@@ -599,7 +595,7 @@ SfxTabPage* SwModule::CreateTabPage( sal_uInt16 nId, Window* pParent, const SfxI
 		}
 		break;
 #ifdef DBG_UTIL
-        case  RID_SW_TP_OPTTEST_PAGE:
+		case  RID_SW_TP_OPTTEST_PAGE:
 		{
 			SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
 			if ( pFact )
@@ -611,7 +607,7 @@ SfxTabPage* SwModule::CreateTabPage( sal_uInt16 nId, Window* pParent, const SfxI
 			break;
 		}
 #endif
-        case  RID_SW_TP_BACKGROUND:
+		case  RID_SW_TP_BACKGROUND:
 		{
 			SfxAbstractDialogFactory* pFact = SfxAbstractDialogFactory::Create();
 			if ( pFact )
@@ -639,3 +635,5 @@ SfxTabPage* SwModule::CreateTabPage( sal_uInt16 nId, Window* pParent, const SfxI
 	DBG_ASSERT( pRet, "SwModule::CreateTabPage(): Unknown tabpage id" );
 	return pRet;
 }
+
+/* vim: set noet sw=4 ts=4: */
