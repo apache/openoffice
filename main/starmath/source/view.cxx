@@ -19,11 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_starmath.hxx"
-
 
 #include <com/sun/star/accessibility/AccessibleEventId.hpp>
 #include <com/sun/star/accessibility/AccessibleEventObject.hpp>
@@ -74,7 +71,6 @@
 #include "starmath.hrc"
 #include "toolbox.hxx"
 #include "mathmlimport.hxx"
-
 
 #define MINWIDTH		200
 #define MINHEIGHT		200
@@ -193,7 +189,7 @@ void SmGraphicWindow::MouseButtonDown(const MouseEvent& rMEvt)
 
 			if (rMEvt.GetClicks() != 1)
 			{	// select whole token
-				// for text include terminating symbol (ie '"')
+				// for text include terminating symbol (i.e. '"')
 				aSel.nEndPos += aToken.aText.Len() + nExtra
 								+ (aToken.eType == TTEXT ? 1 : 0);
 			}
@@ -785,7 +781,6 @@ SFX_IMPL_INTERFACE(SmViewShell, SfxViewShell, SmResId(0))
 								SFX_VISIBILITY_FULLSCREEN | SFX_VISIBILITY_SERVER,
 								SmResId(RID_MATH_TOOLBOX ));
 
-	SFX_CHILDWINDOW_REGISTRATION(SID_TASKPANE);
 	SFX_CHILDWINDOW_REGISTRATION(SmToolBoxWrapper::GetChildWindowId());
 	SFX_CHILDWINDOW_REGISTRATION(SmCmdBoxWrapper::GetChildWindowId());
 }
@@ -2006,3 +2001,5 @@ void SmViewShell::Notify( SfxBroadcaster& , const SfxHint& rHint )
 		}
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */
