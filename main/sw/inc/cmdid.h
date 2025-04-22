@@ -271,7 +271,7 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 #define FN_VIEW_GRAPHIC			(FN_VIEW + 13)	/* Grafiken anzeigen */
 #define FN_VIEW_BOUNDS			(FN_VIEW + 14)	/* Begrenzungen */
 #define FN_VIEW_FIELDS			(FN_VIEW + 15)	/* Textbefehle */
-#define FN_VLINEAL				(FN_VIEW + 16)	/* Vertical Ruler */
+#define FN_VRULER				(FN_VIEW + 16)	/* Vertical Ruler */
 #define FN_VSCROLLBAR			(FN_VIEW + 17)	/* Vertical Scrollbar */
 #define FN_HSCROLLBAR			(FN_VIEW + 18)	/* Horizontal Scrollbar */
 #define FN_TOOLBOX_TOGGLE		(FN_VIEW + 19)	/* Toolboxinhalte umschalten */
