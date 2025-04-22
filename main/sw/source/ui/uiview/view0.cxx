@@ -231,7 +231,7 @@ void SwView::RecheckBrowseMode()
             FN_VIEW_GRAPHIC,    /*20213*/
             FN_VIEW_BOUNDS,   	/**/
             FN_VIEW_FIELDS,     /*20215*/
-            FN_VLINEAL,             /*20216*/
+            FN_VRULER,          /*20216*/
             FN_VSCROLLBAR,      /*20217*/
             FN_HSCROLLBAR,      /*20218*/
             FN_VIEW_META_CHARS, /**/
@@ -331,7 +331,7 @@ void SwView::StateViewOptions(SfxItemSet &rSet)
                 aBool.SetValue( pOpt->IsCrossHair() ); break;
             case FN_VIEW_SMOOTH_SCROLL:
                 aBool.SetValue( pOpt->IsSmoothScroll()); break;
-            case FN_VLINEAL:
+            case FN_VRULER:
                 aBool.SetValue( 0 != StatVRuler() ); break;
             case FN_HSCROLLBAR:
                 if( pOpt->getBrowseMode() )
@@ -473,7 +473,7 @@ void SwView::ExecViewOptions(SfxRequest &rReq)
                 break;
 
 
-        case FN_VLINEAL:
+        case FN_VRULER:
                 if( STATE_TOGGLE == eState )
                     bFlag = !pOpt->IsViewVRuler();
 
