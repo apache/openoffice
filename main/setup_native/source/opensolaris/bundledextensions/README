@@ -37,7 +37,7 @@ What do these files do
 ================================================================================
 
 The three files constitute a SMF service. When this service is started, then it
-installes the bundled extensions which are contained in
+installs the bundled extensions which are contained in
 /opt/openoffice3/share/extension/install. To install them, the service calls
 "unopkg add --shared ..." with the appropriate arguments.
 
@@ -57,7 +57,7 @@ file in every release. Otherwise IPS would not replace the installed version of
 
 The update procedure of OOo will replace 'installed'. 'installed' is associated
 with a restart_fmri of the service ooo_bundled_extensions. That is after
-copying 'installed' the service will be restarted. It then installes all
+copying 'installed' the service will be restarted. It then installs all
 extensions contained in /opt/openoffice3/share/extension/install, because
 the newly installed 'installed' file does not contain any entries yet, except
 for the version string.

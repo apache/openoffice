@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import helper.OSHelper;
 
 /**
- * This object gives all functionallity to print msoffice documents.
+ * This object gives all functionality to print msoffice documents.
  * It also offers functions to check what type of document it is.
  * It handles *.doc as word documents and use word to print
  * *.xls as excel
