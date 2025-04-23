@@ -43,7 +43,7 @@ const BRANCH_T C_NR_OF_BRANCHES = 34;
 
 
 /**	@task
-	This is a node of the parsing-tree which implements the fuctionality of
+	This is a node of the parsing-tree which implements the functionality of
 	class WordTransTree.
 	WordTransTree is dependent of this class, but NOT the other way!
 **/

@@ -208,7 +208,7 @@ WordTransTree::InitTransformation( const char *	i_sInput,
 
 /**	pInputCurTokenStart and CurParseNode are updated just when
 	starting this function. After its end they must not be changed
-	till this functon is called again.
+	till this function is called again.
 	Outside this function pInputPositon and pOutputPosition are both
 	on the first not transformed char in their respective array.
 **/
