@@ -88,7 +88,7 @@ class WordTransTree
 	char 				CurHotkey() const;
 
   private:
-	// SERVICE FUNCTONS
+	// SERVICE FUNCTIONS
 	UINT8	  			CalculateBranch(
 							u_char 				i_cInputChar ) const;
 

@@ -3752,7 +3752,7 @@ if test -n "$with_system_jpeg" -o -n "$with_system_libs" && \
     AC_CHECK_HEADER(jpeglib.h, [],
         [AC_MSG_ERROR(jpeg.h not found. install libjpeg)], [])
     AC_CHECK_LIB(jpeg, jpeg_resync_to_restart, [ JPEG3RDLIB=-ljpeg ],
-	[AC_MSG_CHECKING(jpeg library not found or fuctional)], [])
+	[AC_MSG_CHECKING(jpeg library not found or functional)], [])
 else
     AC_MSG_RESULT([internal])
     SYSTEM_JPEG=NO

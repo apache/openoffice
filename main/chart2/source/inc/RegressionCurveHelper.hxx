@@ -150,9 +150,9 @@ public:
 
     /** adds the given regression curve if there was none before. If there are
         regression curves, the first one is replaced by the one given by the
-        type. All remaining curves are remnoved.
+        type. All remaining curves are removed.
 
-        <p>This fuction ignores mean-value lines.</p>
+        <p>This function ignores mean-value lines.</p>
      */
     static void replaceOrAddCurveAndReduceToOne(
         tRegressionType eType,
