@@ -21,7 +21,6 @@
 
 
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #ifndef _WW8STRUC_HXX
 #define _WW8STRUC_HXX

@@ -20,7 +20,6 @@
  *************************************************************/
 
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 /// @HTML
 
 #ifndef SW_WRITERWORDGLUE
