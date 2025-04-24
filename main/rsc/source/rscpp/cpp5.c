@@ -109,7 +109,7 @@ register int	op;
 #define	isbinary(op)	(op >= FIRST_BINOP && op <= LAST_BINOP)
 #define	isunary(op)	(op >= FIRST_UNOP  && op <= LAST_UNOP)
 #endif
-
+
 /*
  * The following definitions are used to specify basic variable sizes.
  */
@@ -153,7 +153,7 @@ register int	op;
 #ifndef	S_PFPTR
 #define S_PFPTR		(sizeof (int (*)()))
 #endif
-
+
 typedef struct types {
     short	type;			/* This is the bit if		*/
     char	*name;			/* this is the token word	*/
@@ -198,7 +198,7 @@ SIZES size_table[] = {
     { T_FPTR,	0,		S_PFPTR		},	/* int (*()) 	*/
     { 0,	0,		0		},	/* End of table	*/
 };
-
+
 
 void InitCpp5()
 {
@@ -376,7 +376,7 @@ again:
 	    }					/* op1 switch end	*/
 	}					/* Stack unwind loop	*/
 }
-
+
 FILE_LOCAL int
 evallex(int skip)
 /*
@@ -494,7 +494,7 @@ again:  do {					/* Collect the token	*/
 	}
 	return (t);
 }
-
+
 FILE_LOCAL int
 dosizeof()
 /*
@@ -659,7 +659,7 @@ evalnum(int c)
 	unget();
 	return (value);
 }
-
+
 FILE_LOCAL int
 evalchar(int skip)
 /*
@@ -765,7 +765,7 @@ evalchar(int skip)
 	instring = FALSE;
 	return (value);
 }
-
+
 FILE_LOCAL int *
 evaleval(int* valp, int op, int skip)
 /*
@@ -903,7 +903,7 @@ evaleval(int* valp, int op, int skip)
 	*valp++ = v1;
 	return (valp);
 }
-
+
 #ifdef	DEBUG_EVAL
 dumpstack(opstack, opp, value, valp)
 OPTAB		opstack[NEXP];	/* Operand stack		*/

@@ -3172,7 +3172,7 @@ bool SwCrsrShell::SelectHiddenRange()
     return bRet;
 }
 
-/*  */
+/* */
 
 	// die Suchfunktionen
 sal_uLong SwCrsrShell::Find( const SearchOptions& rSearchOpt, sal_Bool bSearchInNotes,

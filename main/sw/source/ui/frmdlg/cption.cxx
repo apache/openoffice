@@ -479,7 +479,7 @@ SwCaptionDialog::~SwCaptionDialog()
 {
 	delete pMgr;
 }
-/*  */
+/* */
 
 
 SwSequenceOptionDialog::SwSequenceOptionDialog( Window *pParent, SwView &rV,

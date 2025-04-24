@@ -388,7 +388,7 @@ void SwPoolFmtList::Erase()
 	DeleteAndDestroy( 0, Count() );
 }
 
-/*  */
+/* */
 
 /*--------------------------------------------------------------------
 	Beschreibung:  UI-seitige implementierung von StyleSheets
@@ -2143,7 +2143,7 @@ void  SwDocStyleSheet::SetHelpId( const String& r, sal_uLong nId )
 }
 
 
-/*  */
+/* */
 
 /*--------------------------------------------------------------------
 	Beschreibung:	Methoden fuer den DocStyleSheetPool
@@ -2507,7 +2507,7 @@ SfxStyleSheetBase* SwDocStyleSheetPool::Find( const String& rName,
 	return bFnd ? mxStyleSheet.get() : 0;
 }
 
-/*  */
+/* */
 
 SwStyleSheetIterator::SwStyleSheetIterator( SwDocStyleSheetPool* pBase,
 								SfxStyleFamily eFam, sal_uInt16 n )

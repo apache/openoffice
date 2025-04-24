@@ -23,7 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basctl.hxx"
-
+
 
 #include <ide_pch.hxx>
 

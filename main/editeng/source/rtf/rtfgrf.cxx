@@ -184,7 +184,7 @@ static sal_uInt8 __FAR_DATA aPal8[ 256 * 4 ] =
 };
 
 
-/*  */
+/* */
 
 
 inline long SwapLong( long n )
@@ -253,7 +253,7 @@ static void WriteBMPHeader( SvStream& rStream,
 	}
 }
 
-/*  */
+/* */
 
 		// wandel die ASCII-HexCodes in binaere Zeichen um. Werden
 		// ungueltige Daten gefunden (Zeichen ausser 0-9|a-f|A-F, so
