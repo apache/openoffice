@@ -1361,7 +1361,7 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
     // set the accessory view
     [pOp setAccessoryView: [pAccessoryView autorelease]];
 
-    // set the current selecte tab item
+    // set the current selected tab item
     if( pState->nLastPage >= 0 && pState->nLastPage < [pTabView numberOfTabViewItems] )
         [pTabView selectTabViewItemAtIndex: pState->nLastPage];
 

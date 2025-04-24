@@ -987,7 +987,7 @@ bool WW8_WrPlcSepx::HeaderFooterWritten()
 
 sal_uInt16 MSWordSections::CurrentNumberOfColumns( const SwDoc &rDoc ) const
 {
-    ASSERT( aSects.Count(), "no segement inserted yet" );
+    ASSERT( aSects.Count(), "no segment inserted yet" );
     if ( !aSects.Count() )
         return 1;
 

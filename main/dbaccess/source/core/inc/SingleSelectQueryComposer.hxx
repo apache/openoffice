@@ -158,7 +158,7 @@ namespace dbaccess
 		inline bool implSetFilter(::rtl::OUString _sFilter) { setFilter(_sFilter); return true;}
 		inline bool implSetHavingClause(::rtl::OUString _sFilter) { setHavingClause(_sFilter); return true;}
 
-		/** returns the part of the seelect statement
+		/** returns the part of the select statement
 			@param	_ePart
 				Which part should be returned.
 			@param	_bWithKeyword

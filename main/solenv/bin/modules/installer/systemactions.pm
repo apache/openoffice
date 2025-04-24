@@ -1717,7 +1717,7 @@ sub read_full_directory ($$$)
 	my $fullname;
 	local *DH;
 
-	$installer::logger::Lang->printf("seaching files under '%s'\n", $currentdir);
+	$installer::logger::Lang->printf("searching files under '%s'\n", $currentdir);
 
 	my @directory_queue = [$currentdir, $pathstring];
 

@@ -1945,7 +1945,7 @@ void lcl_CalcNewWidths( const _FndLines& rFndLines, _CpyPara& rPara )
                         else
                             break;
                     }
-                    // nPos is now the left border of the first selceted box
+                    // nPos is now the left border of the first selected box
                     if( rPara.nMinLeft > nPos )
                         rPara.nMinLeft = nPos;
                     nBoxCount = pFndLine->GetBoxes().Count();

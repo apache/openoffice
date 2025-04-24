@@ -34,7 +34,7 @@ extern "C" {
    @file
    
    The described concept provides a platform independent way to access 
-   minimum bootstrap settings for every application by excplitly or 
+   minimum bootstrap settings for every application by explicitly or
    implicitly passing the values to the application.<p>
 
    MULTI-LEVEL STRATEGY FOR RETRIEVAL OF BOOTSTRAP VALUES :<p>
@@ -47,14 +47,14 @@ extern "C" {
    
    2nd level: command line arguments. A "-env:SETTINGNAME=value" is given on 
    command line. This allows to give an application a certain setting, even 
-   if an ini-file exists (espicially useful for e.g. daemons that want to 
+   if an ini-file exists (especially useful for e.g. daemons that want to
    start an executable with dynamical changing settings).<p>
 
    3rd level: environment variables. The application tries to get the 
    setting from the environment.<p>
 
    4th level: executable ini-file. Every application looks for an ini-file.  
-   The filename defaults to /absoulte/path/to/executable[rc|.ini]
+   The filename defaults to /absolute/path/to/executable[rc|.ini]
    (without .bin or .exe suffix). The ini-filename can be
    set by the special command line parameter
    '-env:INIFILENAME=/absolute/path/to/inifile' at runtime or it may
@@ -73,7 +73,7 @@ extern "C" {
    NAMING CONVENTIONS <p>
 
    Naming conventions for names of bootstrap values :
-   Names may only include characters, that are allowed charcters for 
+   Names may only include characters, that are allowed characters for
    environment variables. This excludes '.', ' ', ';', ':' and any non-ascii 
    character. Names are case insensitive.<p>
    
@@ -115,7 +115,7 @@ extern "C" {
 	<p>
     Must be called before rtl_bootstrap_get(). May not be called twice.
     If it is never called, a the filename executable.ini (win)
-	or execuablerc (unx) is assumed.
+	or executablerc (unx) is assumed.
 
     @param pName Name of the inifile with path but WITHOUT 
 	suffix (.ini or rc) 
@@ -159,7 +159,7 @@ typedef	void * rtlBootstrapHandle;
 /**
    Opens a bootstrap argument container.
    @param pIniName [in]   The name of the ini-file to use, if <code>NULL</code> defaults 
-                          to the excutables name
+                          to the executables name
    @return                Handle for a boostrap argument container
 */
 rtlBootstrapHandle SAL_CALL rtl_bootstrap_args_open(rtl_uString * pIniName)

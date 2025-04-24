@@ -1028,12 +1028,12 @@ void SdrEditView::ReplaceObjectAtView(SdrObject* pOldObj, SdrPageView& rPV, SdrO
 #ifdef DBG_UTIL
         if(pOldObj && dynamic_cast< SdrTextObj* >(pOldObj) && static_cast< SdrTextObj* >(pOldObj)->IsTextEditActive())
         {
-            OSL_ENSURE(false, "OldObject is in TextEdit mode, this has to be ended before replacing it usnig SdrEndTextEdit (!)");
+            OSL_ENSURE(false, "OldObject is in TextEdit mode, this has to be ended before replacing it using SdrEndTextEdit (!)");
         }
 
         if(pNewObj && dynamic_cast< SdrTextObj* >(pNewObj) && static_cast< SdrTextObj* >(pNewObj)->IsTextEditActive())
         {
-            OSL_ENSURE(false, "NewObject is in TextEdit mode, this has to be ended before replacing it usnig SdrEndTextEdit (!)");
+            OSL_ENSURE(false, "NewObject is in TextEdit mode, this has to be ended before replacing it using SdrEndTextEdit (!)");
         }
 #endif
 
