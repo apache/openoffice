@@ -94,7 +94,7 @@ void addfile(FILE* fp, char* filename)
         line = 1;                       /* Working on line 1 now        */
         wrongline = TRUE;               /* Force out initial #line      */
 }
-
+
 void setincdirs()
 /*
  * Append system-specific directories to the include directory list.
@@ -211,7 +211,7 @@ int AddInclude( char* pIncStr )
 
 
 
-
+
 int
 dooptions(int argc, char** argv)
 /*
@@ -362,7 +362,7 @@ dooptions(int argc, char** argv)
         }
 		return (j);                     /* Return new argc              */
 }
-
+
 int
 readoptions(char* filename, char*** pfargv)
 {
@@ -426,7 +426,7 @@ readoptions(char* filename, char*** pfargv)
 }
 
 
-
+
 #if HOST != SYS_UNIX
 FILE_LOCAL void
 zap_uc(char* ap)
@@ -507,7 +507,7 @@ void initdefines()
 #endif
         }
 }
-
+
 #if HOST == SYS_VMS
 /*
  * getredirection() is intended to aid in porting C programs

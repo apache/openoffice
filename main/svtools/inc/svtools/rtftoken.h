@@ -269,7 +269,7 @@ enum RTF_TOKEN_IDS {
 
 	RTF_HIGHLIGHT,
 
-/*  */
+/* */
 
 	RTF_DEFTAB			= RTF_DOCFMT,
 	RTF_HYPHHOTZ,
@@ -437,7 +437,7 @@ enum RTF_TOKEN_IDS {
 	RTF_ADEFLANG,
 	RTF_ADEFF,
 
-/*  */
+/* */
 
 	RTF_SECTD				= RTF_SECTFMT,
 	RTF_ENDNHERE,
@@ -536,7 +536,7 @@ enum RTF_TOKEN_IDS {
 	RTF_BALANCED_COLUMN,
 
 
-/*  */
+/* */
 
 	RTF_PARD 				= RTF_PARFMT,
 	RTF_S,
@@ -619,7 +619,7 @@ enum RTF_TOKEN_IDS {
 	RTF_ASPALPHA,
 
 
-/*  */
+/* */
 
 	RTF_TX					= RTF_TABSTOPDEF,
 	RTF_TB,
@@ -636,7 +636,7 @@ enum RTF_TOKEN_IDS {
 	// Swg-TabStop-Tokens
 	RTF_TLSWG = (RTF_TABSTOPDEF|RTF_SWGDEFS),
 
-/*  */
+/* */
 
 	RTF_BRDRT		= RTF_BRDRDEF,
 	RTF_BRDRB,
@@ -664,7 +664,7 @@ enum RTF_TOKEN_IDS {
 	RTF_BRDLINE_OUT,
 	RTF_BRDLINE_DIST,
 
-/*  */
+/* */
 
 	RTF_PLAIN		= RTF_CHRFMT,
 	RTF_B,
@@ -803,7 +803,7 @@ enum RTF_TOKEN_IDS {
 	RTF_HYPHMAX,
 
 
-/*  */
+/* */
 
 	RTF_CHDATE				= RTF_SPECCHAR,
 	RTF_CHDATEL,
@@ -847,7 +847,7 @@ enum RTF_TOKEN_IDS {
 	RTF_ZWJ,
 	RTF_ZWNJ,
 
-/*  */
+/* */
 
 	RTF_ABSW = RTF_APOCTL,
 	RTF_ABSH,
@@ -902,7 +902,7 @@ enum RTF_TOKEN_IDS {
 	RTF_FLY_INPARA,
 
 
-/*  */
+/* */
 
 	RTF_SHADING 	= RTF_SHADINGDEF,
 	RTF_CFPAT,
@@ -920,7 +920,7 @@ enum RTF_TOKEN_IDS {
 	RTF_BGDKCROSS,
 	RTF_BGDKDCROSS,
 
-/*  */
+/* */
 
 	RTF_TROWD			= RTF_TABLEDEF,
 	RTF_TRGAPH,
@@ -994,10 +994,7 @@ enum RTF_TOKEN_IDS {
 	RTF_CLBGDKCROSS,
 	RTF_CLBGDKDCROSS,
 
-/*  */
-
-
-/*  */
+/* */
 
 	RTF_DO = RTF_DRAWOBJECTS,
 	RTF_DOBXCOLUMN,
@@ -1109,7 +1106,7 @@ enum RTF_TOKEN_IDS {
 	RTF_SHPLEFT,
 	RTF_SHPLID,
 
-/*  */
+/* */
 
 	RTF_OBJALIAS = RTF_OBJECTS,
 	RTF_OBJALIGN,
@@ -1147,7 +1144,7 @@ enum RTF_TOKEN_IDS {
 	RTF_OBJHTML,
 	RTF_OBJATTPH,
 
-/*  */
+/* */
 
 	RTF_PN = RTF_NUMBULLETS,
 	RTF_PNACROSS,
@@ -1233,7 +1230,7 @@ enum RTF_TOKEN_IDS {
 	RTF_PNZODIACL,
 	RTF_LFOLEVEL,
 
-/*  */
+/* */
 
 	RTF_GRF_ALIGNV= RTF_SWGDEFS,
 	RTF_GRF_ALIGNH,

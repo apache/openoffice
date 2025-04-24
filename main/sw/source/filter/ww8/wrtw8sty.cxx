@@ -591,7 +591,7 @@ void MSWordStyles::OutputStylesTable()
     m_rExport.bStyDef = false;
 }
 
-/*  */
+/* */
 
 //---------------------------------------------------------------------------
 //          Fonts
@@ -875,7 +875,7 @@ void wwFontHelper::WriteFontTable( const RtfAttributeOutput& rAttrOutput )
         ::std::bind2nd( ::std::mem_fun( &wwFont::WriteRtf ), &rAttrOutput ) );
 }
 
-/*  */
+/* */
 
 WW8_WrPlc0::WW8_WrPlc0( sal_uLong nOffset )
     : aPos( 4, 4 ), nOfs( nOffset )
@@ -900,7 +900,7 @@ void WW8_WrPlc0::Write( SvStream& rStrm )
 
 //------------------------------------------------------------------------------
 
-/*  */
+/* */
 //------------------------------------------------------------------------------
 // class MSWordSections : Uebersetzung PageDescs in Sections
 //      behandelt auch Header und Footer
@@ -1899,7 +1899,7 @@ void MSWordExportBase::WriteHeaderFooterText( const SwFmt& rFmt, bool bHeader )
     }
 }
 
-/*  */
+/* */
 //------------------------------------------------------------------------------
 // class WW8_WrPlcFtnEdn : Sammeln der Fuss/Endnoten und Ausgeben der Texte
 // und Plcs am Ende des Docs.

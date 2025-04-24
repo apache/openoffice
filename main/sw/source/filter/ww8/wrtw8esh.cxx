@@ -961,7 +961,7 @@ const SvULongs* WW8_WrPlcTxtBoxes::GetShapeIdArr() const
     return &aShapeIds;
 }
 
-/*  */
+/* */
 
 sal_uInt32 WW8Export::GetSdrOrdNum( const SwFrmFmt& rFmt ) const
 {
@@ -1445,7 +1445,7 @@ void WinwordAnchoring::WriteData( EscherEx& rEx ) const
     }
 }
 
-/*  */
+/* */
 
 void WW8Export::CreateEscher()
 {
@@ -1490,7 +1490,7 @@ void SwEscherEx::WritePictures()
     Flush();
 }
 
-/*  */
+/* */
 
 // Output- Routines for Escher Export
 

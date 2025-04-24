@@ -576,7 +576,7 @@ SET_FONTALIGNMENT:
 			}
 			break;
 
-/*  */
+/* */
 			case RTF_B:
 			case RTF_AB:
 				if( IsAttrSttPos() )	// nicht im Textfluss ?
@@ -1141,7 +1141,7 @@ ATTR_SETEMPHASIS:
 				break;
 
 
-/*  */
+/* */
 
 			case BRACELEFT:
 				{

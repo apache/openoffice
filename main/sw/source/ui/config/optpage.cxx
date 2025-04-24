@@ -1485,7 +1485,7 @@ void SwTableOptionsTabPage::PageCreated (SfxAllItemSet aSet)
 	if (pWrtSh)
 		SetWrtShell(pWrtSh->GetValue());
 }
-/*  */
+/* */
 
 /*-----------------31.10.97 17:55-------------------
  TabPage fuer ShadowCrsr

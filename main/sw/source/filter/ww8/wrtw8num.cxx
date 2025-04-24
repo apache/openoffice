@@ -629,7 +629,7 @@ void WW8Export::OutListNamesTab()
     pFib->lcbSttbListNames = pTableStrm->Tell() - pFib->fcSttbListNames;
 }
 
-/*  */
+/* */
 
 // old WW95-Code
 
