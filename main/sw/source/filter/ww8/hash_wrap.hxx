@@ -21,7 +21,6 @@
 
 
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 //this is a shameless rip from sortedarray.hxx but changed to hash_set
 

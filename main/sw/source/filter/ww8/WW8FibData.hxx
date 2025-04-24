@@ -20,7 +20,6 @@
  *************************************************************/
 
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 #ifndef INCLUDED_WW8_FIB_DATA_HXX
 #define INCLUDED_WW8_FIB_DATA_HXX
 #include <IDocumentExternalData.hxx>
