@@ -519,7 +519,7 @@ ScVbaApplication::GoTo( const uno::Any& Reference, const uno::Any& Scroll ) thro
             bScroll = aScroll;
         }
         else
-            throw uno::RuntimeException( rtl::OUString::createFromAscii( "sencond parameter should be boolean" ),
+            throw uno::RuntimeException( rtl::OUString::createFromAscii( "second parameter should be boolean" ),
                     uno::Reference< uno::XInterface >() );
     }
 

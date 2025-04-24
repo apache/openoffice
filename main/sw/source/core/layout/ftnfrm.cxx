@@ -2881,7 +2881,7 @@ sal_uInt8 SwFtnBossFrm::_NeighbourhoodAdjustment( const SwFrm* ) const
 			nRet = NA_GROW_SHRINK;
 		else
 		{
-			ASSERT( GetUpper()->IsSctFrm(), "NeighbourhoodAdjustment: Unexspected Upper" );
+			ASSERT( GetUpper()->IsSctFrm(), "NeighbourhoodAdjustment: Unexpected Upper" );
 			if( !GetNext() && !GetPrev() )
 				nRet = NA_GROW_ADJUST; // section with a single column (FtnAtEnd)
 			else

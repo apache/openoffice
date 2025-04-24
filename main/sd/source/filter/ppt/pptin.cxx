@@ -2193,7 +2193,7 @@ void ImplSdPPTImport::FillSdAnimationInfo( SdAnimationInfo* pInfo, PptInteractiv
             }
         }
         break;
-        case 0x05 :                     // OLEAction ( OLEVerb to use, 0==first, 1==secnd, .. )
+        case 0x05 :                     // OLEAction ( OLEVerb to use, 0==first, 1==second, .. )
         case 0x06 :                     // MediaAction
         case 0x07 :                     // CustomShowAction
         default :                        // 0x00: no action, else unknown action

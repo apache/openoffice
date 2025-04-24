@@ -1314,7 +1314,7 @@ sal_Bool SvXMLImport::IsPackageURL( const ::rtl::OUString& rURL ) const
 		switch( rURL[nPos] )
 		{
 		case '/':
-			// a relative path segement
+			// a relative path segment
 			return sal_True;
 		case ':':
 			// a schema

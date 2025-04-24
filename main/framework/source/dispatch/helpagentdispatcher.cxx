@@ -63,7 +63,7 @@ HelpAgentDispatcher::HelpAgentDispatcher( const css::uno::Reference< css::frame:
 	, m_aTimer			(							  )
 	, m_xSelfHold		(							  )
 {
-	// It's required that this class has to be contructed with a valid frame.
+	// It's required that this class has to be constructed with a valid frame.
 	// And "valid" means: the frame must already bound to a valid container window.
 	m_xContainerWindow = xParentFrame->getContainerWindow();
 }
