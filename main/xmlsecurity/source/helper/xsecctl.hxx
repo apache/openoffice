@@ -164,7 +164,7 @@ class XSecController : public cppu::WeakImplHelper4
  *	XSecController -- the xml security framework controller
  *
  *   FUNCTION
- *	Controlls the whole xml security framework to create signatures or to
+ *	Controls the whole xml security framework to create signatures or to
  *	verify signatures.
  *
  *   HISTORY
@@ -248,7 +248,7 @@ private:
 	com::sun::star::uno::Reference< 
 		com::sun::star::uno::XInterface > m_xPreviousNodeOnSAXChain;
 	/*
-	 * whether the preivous node can provide an XInitiazlize interface, 
+	 * whether the previous node can provide an XInitialize interface,
 	 * use this variable in order to typecast the XInterface to the 
 	 * correct interface type.
 	 */
@@ -535,7 +535,7 @@ public:
 		const rtl::OUString& ouX509IssuerName,
 		const rtl::OUString& ouX509SerialNumber,
 		const rtl::OUString& ouX509Cert);
-    // see the other setX509Certifcate function    
+    // see the other setX509Certificate function
 	void setX509Certificate(
 		sal_Int32 nSecurityId,
 		const sal_Int32	nSecurityEnvironmentIndex,

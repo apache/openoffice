@@ -86,7 +86,7 @@ awt::Size
 Box::calculateSize( long nWidth )
 {
     int nVisibleChildren = 0;
-    // primary vs secundary axis (instead of a X and Y)
+    // primary vs secondary axis (instead of a X and Y)
     int nPrimSize = 0;
     int nSecSize = 0;
     int nFlowMinWidth = 0;  // in case the box only has flow children

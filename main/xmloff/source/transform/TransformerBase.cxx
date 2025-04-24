@@ -1332,7 +1332,7 @@ sal_Bool XMLTransformerBase::ConvertURIToOASIS( ::rtl::OUString& rURI,
 					switch( rURI[nPos] )
 					{
 					case '/':
-						// a relative path segement
+						// a relative path segment
 						nPos = nLen;	// leave loop
 						break;
 					case ':':
@@ -1398,7 +1398,7 @@ sal_Bool XMLTransformerBase::ConvertURIToOOo( ::rtl::OUString& rURI,
 					switch( rURI[nPos] )
 					{
 					case '/':
-						// a relative path segement within the package
+						// a relative path segment within the package
 						nPos = nLen;	// leave loop
 						break;
 					case ':':

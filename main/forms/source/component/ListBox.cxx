@@ -1007,7 +1007,7 @@ namespace frm
     //------------------------------------------------------------------------------
     sal_Bool OListBoxModel::commitControlValueToDbColumn( bool /*_bPostReset*/ )
     {
-        // current selektion list
+        // current selection list
         const ORowSetValue aCurrentValue( getFirstSelectedValue() );
         if ( aCurrentValue != m_aSaveValue )
         {
