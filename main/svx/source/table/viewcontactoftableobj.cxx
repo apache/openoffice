@@ -651,7 +651,7 @@ namespace sdr
 									impGetLine(aRightLine, rTableLayouter, nXRight, nY, false, nColCount, nRowCount, bIsRTL);
 									impGetLine(aTopLine, rTableLayouter, nX, nY, true, nColCount, nRowCount, bIsRTL);
 									
-									// create the primtive containing all data for one cell with borders
+									// create the primitive containing all data for one cell with borders
 									xBorderSequence[nBorderInsert++] = drawinglayer::primitive2d::Primitive2DReference(
 										new drawinglayer::primitive2d::SdrBorderlinePrimitive2D(
 											aCellMatrix,

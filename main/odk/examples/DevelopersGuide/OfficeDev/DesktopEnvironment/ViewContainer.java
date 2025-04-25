@@ -155,7 +155,7 @@ public class ViewContainer extends Thread
     // ____________________
 
     /**
-     * add/remove listener for possibe shutdown events
+     * add/remove listener for possible shutdown events
      */
     public void addListener( IShutdownListener rListener )
     {

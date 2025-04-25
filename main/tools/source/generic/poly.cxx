@@ -2129,7 +2129,7 @@ void impCorrectContinuity(basegfx::B2DPolygon& roPolygon, sal_uInt32 nIndex, sal
 	{
 		if(roPolygon.isPrevControlPointUsed(nIndex) && roPolygon.isNextControlPointUsed(nIndex))
 		{
-            // #115917# Patch from osnola (modified, thanks for showing the porblem)
+            // #115917# Patch from osnola (modified, thanks for showing the problem)
             //
             // The correction is needed because an integer polygon with control points
             // is converted to double precision. When C1 or C2 is used the involved vectors
