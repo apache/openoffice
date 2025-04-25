@@ -149,7 +149,7 @@ namespace unocontrols{
 
 struct IMPL_MutexContainer
 {
-	// Is necassery to initialize "BaseControl" and make this class thread-safe.
+	// Is necessary to initialize "BaseControl" and make this class thread-safe.
 	UNO3_MUTEX m_aMutex ;
 };
 

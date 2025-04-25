@@ -224,7 +224,7 @@ namespace editeng
             @param _rOrigText
                 the original text to be replaced (as returned by GetNextPortion).
                 Since in Chinese conversion the original text is needed as well
-                in order to only do the minimal necassry text changes and to keep
+                in order to only do the minimal necessary text changes and to keep
                 as much attributes as possible this is supplied here as well.
 
 			@param _rReplaceWith

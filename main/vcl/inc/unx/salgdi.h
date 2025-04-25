@@ -292,7 +292,7 @@ public:
         com::sun::star::drawing::LineCap);
     virtual bool			drawFilledTrapezoids( const ::basegfx::B2DTrapezoid*, int nTrapCount, double fTransparency );
 
-#if 1 // TODO: remove these obselete methods
+#if 1 // TODO: remove these obsolete methods
     virtual sal_Bool		drawPolyLineBezier( sal_uInt32 nPoints,
                                                 const SalPoint* pPtAry,
                                                 const sal_uInt8* pFlgAry );

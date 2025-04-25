@@ -583,7 +583,7 @@ const BufferNode* BufferNode::childAt(sal_Int32 nIndex) const
 /****** BufferNode/childAt ***************************************************
  *
  *   NAME
- *	childAt -- retrieves the child BufferNode at specific possition.
+ *	childAt -- retrieves the child BufferNode at specific position.
  *
  *   SYNOPSIS
  *	child = childAt(nIndex);

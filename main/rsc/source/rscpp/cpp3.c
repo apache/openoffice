@@ -271,7 +271,7 @@ dooptions(int argc, char** argv)
                     AddInclude( ap );           /* BP, 11.09.91 */
                     break;
 
-                case 'N':                       /* No predefineds       */
+                case 'N':                       /* No predefines        */
                     nflag++;                    /* Repeat to undefine   */
                     break;                      /* __LINE__, etc.       */
 
