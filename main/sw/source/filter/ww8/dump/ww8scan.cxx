@@ -1369,7 +1369,7 @@ short WW8_BRC::DetermineBorderProperties(bool bVer67, short *pSpace,
             case 20:
                 /*
                 wave, the dimensions appear to be created by the drawing of
-                the wave, so we have only two possibilites in the menus, 3/4
+                the wave, so we have only two possibilities in the menus, 3/4
                 point is equal to solid 3 point. This calculation seems to
                 match well to results.
                 */
@@ -1378,7 +1378,7 @@ short WW8_BRC::DetermineBorderProperties(bool bVer67, short *pSpace,
             case 21:
                 /*
                 double wave, the dimensions appear to be created by the
-                drawing of the wave, so we have only one possibilites in the
+                drawing of the wave, so we have only one possibilities in the
                 menus, that of 3/4 point is equal to solid 3 point. This
                 calculation seems to match well to results.
                 */

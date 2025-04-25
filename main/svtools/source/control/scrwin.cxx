@@ -187,7 +187,7 @@ void __EXPORT ScrollableWindow::Resize()
 	const long nScrSize = GetSettings().GetStyleSettings().GetScrollBarSize();
 	sal_Bool bVVisible = sal_False; // by default no vertical-ScrollBar
 	sal_Bool bHVisible = sal_False; // by default no horizontal-ScrollBar
-	sal_Bool bChanged;			// determines if a visiblility was changed
+	sal_Bool bChanged;			// determines if a visibility was changed
 	do
 	{
 		bChanged = sal_False;

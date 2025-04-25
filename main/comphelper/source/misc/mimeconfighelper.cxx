@@ -755,13 +755,13 @@ sal_Bool MimeConfigurationHelper::AddFilterNameCheckOwnFile(
                         sal_Int32 nRequired = ( SFX_FILTER_OWN | SFX_FILTER_EXPORT | SFX_FILTER_IMPORT );
                         if ( ( ( nFlags & nRequired ) == nRequired ) && !( nFlags & SFX_FILTER_TEMPLATEPATH ) )
                         {
-                            // if there are more than one filter the preffered one should be used
-                            // if there is no preffered filter the first one will be used
+                            // if there are more than one filter the preferred one should be used
+                            // if there is no preferred filter the first one will be used
                             if ( aResult.isEmpty() || ( nFlags & SFX_FILTER_PREFERED ) )
                                 aResult = aPropsHM.getUnpackedValueOrDefault( ::rtl::OUString::createFromAscii( "Name" ),
                                                                                 ::rtl::OUString() );
                             if ( nFlags & SFX_FILTER_PREFERED )
-                                break; // the preffered filter was found
+                                break; // the preferred filter was found
                         }
                     }
                 }

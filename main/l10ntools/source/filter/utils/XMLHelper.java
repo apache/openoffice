@@ -727,7 +727,7 @@ public class XMLHelper
     public static java.util.Vector extractChildNodesByType(org.w3c.dom.Node aNode,
                                                            short            nType)
     {
-        // get list of all possibe childs and reserve enough space for our return list
+        // get list of all possible childs and reserve enough space for our return list
         // Attention: A null pointer is not allowed for return! (means lExtractedChilds)
         org.w3c.dom.NodeList lChilds          = aNode.getChildNodes();
         int                  c                = lChilds.getLength();

@@ -207,7 +207,7 @@ public:
 	GenericInformation *GetInfo( ByteString &rKey, sal_Bool bSearchByPath = sal_False,
 				     sal_Bool bCreatePath = sal_False );
   /* path can be something like this: src370/drives/o:
-   * bCreatePath will create the neccecary paths to the GI */
+   * bCreatePath will create the necessary paths to the GI */
 
 	sal_Bool InsertInfo( GenericInformation *pInfo, sal_Bool bOverwrite = sal_True );
   /* legt eine GenericInformation im Baum an mit Key-Value

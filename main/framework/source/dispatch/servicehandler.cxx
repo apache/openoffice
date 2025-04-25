@@ -307,7 +307,7 @@ css::uno::Reference< css::uno::XInterface > ServiceHandler::implts_dispatch( con
             xExecuteable->trigger(sArguments);
     }
     // ignore all errors - inclusive runtime errors!
-    // E.g. a script based service (written in phyton) could not be executed
+    // E.g. a script based service (written in python) could not be executed
     // because it contains syntax errors, which was detected at runtime ...
     catch(const css::uno::Exception&)
         { xService.clear(); }
