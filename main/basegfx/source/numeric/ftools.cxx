@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
 #include <basegfx/numeric/ftools.hxx>
@@ -108,4 +106,4 @@ namespace basegfx
 	}
 } // end of namespace basegfx
 
-// eof
+/* vim: set noet sw=4 ts=4: */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
@@ -31,24 +29,22 @@
 #include <basegfx/vector/b2dvector.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 
-///////////////////////////////////////////////////////////////////////////////
-
 namespace basegfx
 {
-    class Impl2DHomMatrix : public ::basegfx::internal::ImplHomMatrixTemplate< 3 >
-    {
-    };
-    
-    namespace { struct IdentityMatrix : public rtl::Static< B2DHomMatrix::ImplType, 
-                                                            IdentityMatrix > {}; }
+	class Impl2DHomMatrix : public ::basegfx::internal::ImplHomMatrixTemplate< 3 >
+	{
+	};
+
+	namespace { struct IdentityMatrix : public rtl::Static< B2DHomMatrix::ImplType,
+															IdentityMatrix > {}; }
 
 	B2DHomMatrix::B2DHomMatrix() :
-        mpImpl( IdentityMatrix::get() ) // use common identity matrix
+		mpImpl( IdentityMatrix::get() ) // use common identity matrix
 	{
 	}
 
 	B2DHomMatrix::B2DHomMatrix(const B2DHomMatrix& rMat) :
-        mpImpl(rMat.mpImpl)
+		mpImpl(rMat.mpImpl)
 	{
 	}
 
@@ -69,14 +65,14 @@ namespace basegfx
 
 	B2DHomMatrix& B2DHomMatrix::operator=(const B2DHomMatrix& rMat)
 	{
-        mpImpl = rMat.mpImpl;
+		mpImpl = rMat.mpImpl;
 		return *this;
 	}
 
-    void B2DHomMatrix::makeUnique()
-    {
-        mpImpl.make_unique();
-    }
+	void B2DHomMatrix::makeUnique()
+	{
+		mpImpl.make_unique();
+	}
 
 	double B2DHomMatrix::get(sal_uInt16 nRow, sal_uInt16 nColumn) const
 	{
@@ -113,7 +109,7 @@ namespace basegfx
 
 	void B2DHomMatrix::identity()
 	{
-        mpImpl = IdentityMatrix::get();
+		mpImpl = IdentityMatrix::get();
 	}
 
 	bool B2DHomMatrix::isInvertible() const
@@ -215,7 +211,7 @@ namespace basegfx
 
 	bool B2DHomMatrix::operator!=(const B2DHomMatrix& rMat) const
 	{
-        return !(*this == rMat);
+		return !(*this == rMat);
 	}
 
 	void B2DHomMatrix::rotate(double fRadiant)
@@ -227,7 +223,7 @@ namespace basegfx
 
 			tools::createSinCosOrthogonal(fSin, fCos, fRadiant);
 			Impl2DHomMatrix aRotMat;
-			
+
 			aRotMat.set(0, 0, fCos);
 			aRotMat.set(1, 1, fCos);
 			aRotMat.set(1, 0, fSin);
@@ -242,7 +238,7 @@ namespace basegfx
 		if(!fTools::equalZero(fX) || !fTools::equalZero(fY))
 		{
 			Impl2DHomMatrix aTransMat;
-			
+
 			aTransMat.set(0, 2, fX);
 			aTransMat.set(1, 2, fY);
 
@@ -257,7 +253,7 @@ namespace basegfx
 		if(!fTools::equal(fOne, fX) || !fTools::equal(fOne, fY))
 		{
 			Impl2DHomMatrix aScaleMat;
-			
+
 			aScaleMat.set(0, 0, fX);
 			aScaleMat.set(1, 1, fY);
 
@@ -267,11 +263,11 @@ namespace basegfx
 
 	void B2DHomMatrix::shearX(double fSx)
 	{
-		// #i76239# do not test againt 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
+		// #i76239# do not test against 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
 		if(!fTools::equalZero(fSx))
 		{
 			Impl2DHomMatrix aShearXMat;
-			
+
 			aShearXMat.set(0, 1, fSx);
 
 			mpImpl->doMulMatrix(aShearXMat);
@@ -280,11 +276,11 @@ namespace basegfx
 
 	void B2DHomMatrix::shearY(double fSy)
 	{
-		// #i76239# do not test againt 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
+		// #i76239# do not test against 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
 		if(!fTools::equalZero(fSy))
 		{
 			Impl2DHomMatrix aShearYMat;
-			
+
 			aShearYMat.set(1, 0, fSy);
 
 			mpImpl->doMulMatrix(aShearYMat);
@@ -293,10 +289,10 @@ namespace basegfx
 
 	/** Decomposition
 
-	   New, optimized version with local shearX detection. Old version (keeping
-	   below, is working well, too) used the 3D matrix decomposition when
-	   shear was used. Keeping old version as comment below since it may get
-	   necessary to add the determinant() test from there here, too.
+		New, optimized version with local shearX detection. Old version (keeping
+		below, is working well, too) used the 3D matrix decomposition when
+		shear was used. Keeping old version as comment below since it may get
+		necessary to add the determinant() test from there here, too.
 	*/
 	bool B2DHomMatrix::decompose(B2DTuple& rScale, B2DTuple& rTranslate, double& rRotate, double& rShearX) const
 	{
@@ -352,8 +348,8 @@ namespace basegfx
 						// and correct rotation, it's the Y-Axis rotation minus 90 degrees
 						rRotate = atan2(aUnitVecY.getY(), aUnitVecY.getX()) - M_PI_2;
 					}
-					
-					// one or both unit vectors do not extist, determinant is zero, no decomposition possible.
+
+					// one or both unit vectors do not exist, determinant is zero, no decomposition possible.
 					// Eventually used rotations or shears are lost
 					return false;
 				}
@@ -407,7 +403,7 @@ namespace basegfx
 
 					if(!fTools::equalZero(rRotate))
 					{
-						// To be able to correct the shear for aUnitVecY, rotation needs to be 
+						// To be able to correct the shear for aUnitVecY, rotation needs to be
 						// removed first. Correction of aUnitVecX is easy, it will be rotated back to (1, 0).
 						aUnitVecX.setX(rScale.getX());
 						aUnitVecX.setY(0.0);
@@ -416,7 +412,7 @@ namespace basegfx
 						const double fNegRotate(-rRotate);
 						const double fSin(sin(fNegRotate));
 						const double fCos(cos(fNegRotate));
-						
+
 						const double fNewX(aUnitVecY.getX() * fCos - aUnitVecY.getY() * fSin);
 						const double fNewY(aUnitVecY.getX() * fSin + aUnitVecY.getY() * fCos);
 
@@ -446,5 +442,4 @@ namespace basegfx
 	}
 } // end of namespace basegfx
 
-///////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

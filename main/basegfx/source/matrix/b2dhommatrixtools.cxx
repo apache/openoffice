@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
@@ -28,35 +26,33 @@
 #include <rtl/ustring.hxx>
 #include <rtl/ustrbuf.hxx>
 
-///////////////////////////////////////////////////////////////////////////////
-
 namespace basegfx
 {
-    ::rtl::OUString exportToSvg( const B2DHomMatrix& rMatrix )
-    {
-        rtl::OUStringBuffer aStrBuf;
-        aStrBuf.appendAscii("matrix(");
+	::rtl::OUString exportToSvg( const B2DHomMatrix& rMatrix )
+	{
+		rtl::OUStringBuffer aStrBuf;
+		aStrBuf.appendAscii("matrix(");
 
-        aStrBuf.append(rMatrix.get(0,0));
-        aStrBuf.appendAscii(", ");
+		aStrBuf.append(rMatrix.get(0,0));
+		aStrBuf.appendAscii(", ");
 
-        aStrBuf.append(rMatrix.get(1,0));
-        aStrBuf.appendAscii(", ");
+		aStrBuf.append(rMatrix.get(1,0));
+		aStrBuf.appendAscii(", ");
 
-        aStrBuf.append(rMatrix.get(0,1));
-        aStrBuf.appendAscii(", ");
+		aStrBuf.append(rMatrix.get(0,1));
+		aStrBuf.appendAscii(", ");
 
-        aStrBuf.append(rMatrix.get(1,1));
-        aStrBuf.appendAscii(", ");
+		aStrBuf.append(rMatrix.get(1,1));
+		aStrBuf.appendAscii(", ");
 
-        aStrBuf.append(rMatrix.get(0,2));
-        aStrBuf.appendAscii(", ");
+		aStrBuf.append(rMatrix.get(0,2));
+		aStrBuf.appendAscii(", ");
 
-        aStrBuf.append(rMatrix.get(1,2));
-        aStrBuf.appendAscii(")");
+		aStrBuf.append(rMatrix.get(1,2));
+		aStrBuf.appendAscii(")");
 
-        return aStrBuf.makeStringAndClear();
-    }
+		return aStrBuf.makeStringAndClear();
+	}
 
 	namespace tools
 	{
@@ -65,7 +61,7 @@ namespace basegfx
 			if( fTools::equalZero( fmod( fRadiant, F_PI2 ) ) )
 			{
 				// determine quadrant
-				const sal_Int32 nQuad( 
+				const sal_Int32 nQuad(
 					(4 + fround( 4/F_2PI*fmod( fRadiant, F_2PI ) )) % 4 );
 				switch( nQuad )
 				{
@@ -186,23 +182,23 @@ namespace basegfx
 
 			if(fTools::equal(fScaleX, fOne) && fTools::equal(fScaleY, fOne))
 			{
-				/// no scale, take shortcut
+				// no scale, take shortcut
 				return createShearXRotateTranslateB2DHomMatrix(fShearX, fRadiant, fTranslateX, fTranslateY);
 			}
 			else
 			{
-				/// scale used
+				// scale used
 				if(fTools::equalZero(fShearX))
 				{
-					/// no shear
+					// no shear
 					if(fTools::equalZero(fRadiant))
 					{
-						/// no rotate, take shortcut
+						// no rotate, take shortcut
 						return createScaleTranslateB2DHomMatrix(fScaleX, fScaleY, fTranslateX, fTranslateY);
 					}
 					else
 					{
-						/// rotate and scale used, no shear
+						// rotate and scale used, no shear
 						double fSin(0.0);
 						double fCos(1.0);
 
@@ -215,16 +211,16 @@ namespace basegfx
 							/* Row 1, Column 0 */ fSin * fScaleX,
 							/* Row 1, Column 1 */ fScaleY * fCos,
 							/* Row 1, Column 2 */ fTranslateY);
-						
+
 						return aRetval;
 					}
 				}
 				else
 				{
-					/// scale and shear used
+					// scale and shear used
 					if(fTools::equalZero(fRadiant))
 					{
-						/// scale and shear, but no rotate
+						// scale and shear, but no rotate
 						B2DHomMatrix aRetval(
 							/* Row 0, Column 0 */ fScaleX,
 							/* Row 0, Column 1 */ fScaleY * fShearX,
@@ -237,7 +233,7 @@ namespace basegfx
 					}
 					else
 					{
-						/// scale, shear and rotate used
+						// scale, shear and rotate used
 						double fSin(0.0);
 						double fCos(1.0);
 
@@ -250,13 +246,13 @@ namespace basegfx
 							/* Row 1, Column 0 */ fSin * fScaleX,
 							/* Row 1, Column 1 */ fScaleY * ((fSin * fShearX) + fCos),
 							/* Row 1, Column 2 */ fTranslateY);
-						
+
 						return aRetval;
 					}
 				}
 			}
 		}
-		
+
 		B2DHomMatrix createShearXRotateTranslateB2DHomMatrix(
 			double fShearX,
 			double fRadiant,
@@ -264,15 +260,15 @@ namespace basegfx
 		{
 			if(fTools::equalZero(fShearX))
 			{
-				/// no shear
+				// no shear
 				if(fTools::equalZero(fRadiant))
 				{
-					/// no shear, no rotate, take shortcut
+					// no shear, no rotate, take shortcut
 					return createTranslateB2DHomMatrix(fTranslateX, fTranslateY);
 				}
 				else
 				{
-					/// no shear, but rotate used
+					// no shear, but rotate used
 					double fSin(0.0);
 					double fCos(1.0);
 
@@ -285,16 +281,16 @@ namespace basegfx
 						/* Row 1, Column 0 */ fSin,
 						/* Row 1, Column 1 */ fCos,
 						/* Row 1, Column 2 */ fTranslateY);
-					
+
 					return aRetval;
 				}
 			}
 			else
 			{
-				/// shear used
+				// shear used
 				if(fTools::equalZero(fRadiant))
 				{
-					/// no rotate, but shear used
+					// no rotate, but shear used
 					B2DHomMatrix aRetval(
 						/* Row 0, Column 0 */ 1.0,
 						/* Row 0, Column 1 */ fShearX,
@@ -302,12 +298,12 @@ namespace basegfx
 						/* Row 1, Column 0 */ 0.0,
 						/* Row 1, Column 1 */ 1.0,
 						/* Row 1, Column 2 */ fTranslateY);
-					
+
 					return aRetval;
 				}
 				else
 				{
-					/// shear and rotate used
+					// shear and rotate used
 					double fSin(0.0);
 					double fCos(1.0);
 
@@ -320,12 +316,12 @@ namespace basegfx
 						/* Row 1, Column 0 */ fSin,
 						/* Row 1, Column 1 */ (fSin * fShearX) + fCos,
 						/* Row 1, Column 2 */ fTranslateY);
-					
+
 					return aRetval;
 				}
 			}
 		}
-		
+
 		B2DHomMatrix createScaleTranslateB2DHomMatrix(
 			double fScaleX, double fScaleY,
 			double fTranslateX, double fTranslateY)
@@ -334,17 +330,17 @@ namespace basegfx
 
 			if(fTools::equal(fScaleX, fOne) && fTools::equal(fScaleY, fOne))
 			{
-				/// no scale, take shortcut
+				// no scale, take shortcut
 				return createTranslateB2DHomMatrix(fTranslateX, fTranslateY);
 			}
 			else
 			{
-				/// scale used
+				// scale used
 				if(fTools::equalZero(fTranslateX) && fTools::equalZero(fTranslateY))
 				{
-					/// no translate, but scale.
+					// no translate, but scale.
 					B2DHomMatrix aRetval;
-					
+
 					aRetval.set(0, 0, fScaleX);
 					aRetval.set(1, 1, fScaleY);
 
@@ -352,7 +348,7 @@ namespace basegfx
 				}
 				else
 				{
-					/// translate and scale
+					// translate and scale
 					B2DHomMatrix aRetval(
 						/* Row 0, Column 0 */ fScaleX,
 						/* Row 0, Column 1 */ 0.0,
@@ -360,79 +356,78 @@ namespace basegfx
 						/* Row 1, Column 0 */ 0.0,
 						/* Row 1, Column 1 */ fScaleY,
 						/* Row 1, Column 2 */ fTranslateY);
-					
+
 					return aRetval;
 				}
 			}
 		}
 
-        B2DHomMatrix createRotateAroundPoint(
-            double fPointX, double fPointY,
-            double fRadiant)
-        {
+		B2DHomMatrix createRotateAroundPoint(
+			double fPointX, double fPointY,
+			double fRadiant)
+		{
 			B2DHomMatrix aRetval;
-            
+
 			if(!fTools::equalZero(fRadiant))
 			{
-                double fSin(0.0);
+				double fSin(0.0);
 				double fCos(1.0);
 
 				createSinCosOrthogonal(fSin, fCos, fRadiant);
-                
-                aRetval.set3x2(
+
+				aRetval.set3x2(
 					/* Row 0, Column 0 */ fCos,
 					/* Row 0, Column 1 */ -fSin,
 					/* Row 0, Column 2 */ (fPointX * (1.0 - fCos)) + (fSin * fPointY),
 					/* Row 1, Column 0 */ fSin,
 					/* Row 1, Column 1 */ fCos,
 					/* Row 1, Column 2 */ (fPointY * (1.0 - fCos)) - (fSin * fPointX));
-            }
+			}
 
-            return aRetval;
-        }
+			return aRetval;
+		}
 
-        /// special for the case to map from source range to target range
-        B2DHomMatrix createSourceRangeTargetRangeTransform(
-            const B2DRange& rSourceRange,
-            const B2DRange& rTargetRange)
-        {
-            B2DHomMatrix aRetval;
+		// special for the case to map from source range to target range
+		B2DHomMatrix createSourceRangeTargetRangeTransform(
+			const B2DRange& rSourceRange,
+			const B2DRange& rTargetRange)
+		{
+			B2DHomMatrix aRetval;
 
-            if(&rSourceRange == &rTargetRange)
-            {
-                return aRetval;
-            }
+			if(&rSourceRange == &rTargetRange)
+			{
+				return aRetval;
+			}
 
-            if(!fTools::equalZero(rSourceRange.getMinX()) || !fTools::equalZero(rSourceRange.getMinY()))
-            {
-                aRetval.set(0, 2, -rSourceRange.getMinX());
-                aRetval.set(1, 2, -rSourceRange.getMinY());
-            }
+			if(!fTools::equalZero(rSourceRange.getMinX()) || !fTools::equalZero(rSourceRange.getMinY()))
+			{
+				aRetval.set(0, 2, -rSourceRange.getMinX());
+				aRetval.set(1, 2, -rSourceRange.getMinY());
+			}
 
-            const double fSourceW(rSourceRange.getWidth());
-            const double fSourceH(rSourceRange.getHeight());
-            const bool bDivX(!fTools::equalZero(fSourceW) && !fTools::equal(fSourceW, 1.0));
-            const bool bDivY(!fTools::equalZero(fSourceH) && !fTools::equal(fSourceH, 1.0));
-            const double fScaleX(bDivX ? rTargetRange.getWidth() / fSourceW : rTargetRange.getWidth());
-            const double fScaleY(bDivY ? rTargetRange.getHeight() / fSourceH : rTargetRange.getHeight());
+			const double fSourceW(rSourceRange.getWidth());
+			const double fSourceH(rSourceRange.getHeight());
+			const bool bDivX(!fTools::equalZero(fSourceW) && !fTools::equal(fSourceW, 1.0));
+			const bool bDivY(!fTools::equalZero(fSourceH) && !fTools::equal(fSourceH, 1.0));
+			const double fScaleX(bDivX ? rTargetRange.getWidth() / fSourceW : rTargetRange.getWidth());
+			const double fScaleY(bDivY ? rTargetRange.getHeight() / fSourceH : rTargetRange.getHeight());
 
-            if(!fTools::equalZero(fScaleX) || !fTools::equalZero(fScaleY))
-            {
-                aRetval.scale(fScaleX, fScaleY);
-            }
+			if(!fTools::equalZero(fScaleX) || !fTools::equalZero(fScaleY))
+			{
+				aRetval.scale(fScaleX, fScaleY);
+			}
 
-            if(!fTools::equalZero(rTargetRange.getMinX()) || !fTools::equalZero(rTargetRange.getMinY()))
-            {
-                aRetval.translate(
-                    rTargetRange.getMinX(), 
-                    rTargetRange.getMinY());
-            }
+			if(!fTools::equalZero(rTargetRange.getMinX()) || !fTools::equalZero(rTargetRange.getMinY()))
+			{
+				aRetval.translate(
+					rTargetRange.getMinX(),
+					rTargetRange.getMinY());
+			}
 
-            return aRetval;
-        }
+			return aRetval;
+		}
 
-    } // end of namespace tools
+	} // end of namespace tools
 } // end of namespace basegfx
 
-///////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */
