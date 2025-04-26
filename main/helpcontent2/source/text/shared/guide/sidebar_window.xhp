@@ -36,7 +36,7 @@
 </paragraph>
 <bookmark xml-lang="en-US" branch="hid/SFX2_HID_SIDEBAR_WINDOW" id="bm_id0020"/>
 <paragraph xml-lang="en-US" id="par_id0001" role="paragraph" l10n="NEW">
-<ahelp hid="SFX2_HID_SIDEBAR_WINDOW">The sidebar provides frequently used tools, grouped in decks. Click on a tab in the vertical tab bar to choose a deck.</ahelp>
+<ahelp hid="SFX2_HID_SIDEBAR_WINDOW">The Sidebar provides frequently used tools, grouped in decks. Click on a tab in the vertical tab bar to choose a deck.</ahelp>
 </paragraph>
 <paragraph xml-lang="en-US" id="hd_id0200" role="heading" level="2" l10n="NEW">Tab Bar</paragraph>
 <paragraph xml-lang="en-US" id="hd_id0300" role="heading" level="3" l10n="NEW">Configuration Menu Button</paragraph>
@@ -52,7 +52,7 @@
 <paragraph xml-lang="en-US" id="par_id1004" role="tablecontent" l10n="NEW">Choose an item in the upper part of the list to switch between the currently available panel decks.</paragraph>
 </listitem>
 <listitem>
-<paragraph xml-lang="en-US" id="par_id1005" role="tablecontent" l10n="NEW">To undock or dock the sidebar window use the <item type="menuitem">Undock</item> or <item type="menuitem">Dock</item> item respectively.</paragraph>
+<paragraph xml-lang="en-US" id="par_id1005" role="tablecontent" l10n="NEW">To undock or dock the Sidebar window use the <item type="menuitem">Undock</item> or <item type="menuitem">Dock</item> item respectively.</paragraph>
 <paragraph xml-lang="en-US" id="par_id1006" role="tablecontent" l10n="NEW">Use the sub-list of the item <item type="menuitem">Customization</item> to enable or disable a deck or to restore the default configuration.</paragraph>
 </listitem>
 </list>
@@ -137,10 +137,10 @@ The <item type="menuitem">Functions</item> deck contains the <link href="text/sc
 </tablecell>
 </tablerow>
 </table>
-<paragraph xml-lang="en-US" id="par_id0002" role="paragraph" l10n="NEW">The sidebar is available in WRITER, CALC, IMPRESS, and DRAW application.</paragraph>
+<paragraph xml-lang="en-US" id="par_id0002" role="paragraph" l10n="NEW">The Sidebar is available in Writer, Calc, Impress, and Draw application.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id0500" role="heading" level="2" l10n="NEW">Sidebar Window Handling</paragraph>
-<paragraph xml-lang="en-US" id="par_id0003" role="paragraph" l10n="NEW">The sidebar is a <link href="text/shared/guide/autohide.xhp" name="docking">dockable window</link>. However, you cannot dock it to the bottom or top edge of the working area but only to the left or right edge. The sensitive area for the <switchinline select="sys"><caseinline select="MAC">Command-</caseinline><defaultinline>Ctrl-</defaultinline></switchinline>double-click method of docking is small, so make sure you click the sidebar window and not its content.</paragraph>
-<paragraph xml-lang="en-US" id="par_id0004" role="paragraph" l10n="NEW">In a docked sidebar window the <item type="menuitem">Close Sidebar Deck</item> button in the upper-right corner of the title area minimizes the current deck, but keeps the tab bar open. To reopen the deck click the corresponding tab or drag the sidebar window frame. To close the sidebar window completely uncheck <item type="menuitem">Sidebar</item> in the View menu.
+<paragraph xml-lang="en-US" id="par_id0003" role="paragraph" l10n="NEW">The Sidebar is a <link href="text/shared/guide/autohide.xhp" name="docking">dockable window</link>. However, you cannot dock it to the bottom or top edge of the working area but only to the left or right edge. The sensitive area for the <switchinline select="sys"><caseinline select="MAC">Command-</caseinline><defaultinline>Ctrl-</defaultinline></switchinline>double-click method of docking is small, so make sure you click the Sidebar window and not its content.</paragraph>
+<paragraph xml-lang="en-US" id="par_id0004" role="paragraph" l10n="NEW">In a docked Sidebar window the <item type="menuitem">Close Sidebar Deck</item> button in the upper-right corner of the title area minimizes the current deck, but keeps the tab bar open. To reopen the deck click the corresponding tab or drag the Sidebar window frame. To close the Sidebar window completely uncheck <item type="menuitem">Sidebar</item> in the View menu.
 </paragraph>
 <paragraph xml-lang="en-US" id="par_id0005" role="paragraph" l10n="NEW">For decks with several panels click the panel title area to toggle between expanded and minimized state of the panel.</paragraph>
 <paragraph xml-lang="en-US" id="par_id0006" role="paragraph" l10n="NEW">The <item type="menuitem">More Options</item> button at the top-right of a panel title opens a dialog which provides additional settings. Not all panels have this feature.</paragraph>
