@@ -66,7 +66,7 @@ static HTMLOptionEnum __FAR_DATA aHTMLULTypeTable[] =
 	{ 0,					0							}
 };
 
-/*  */
+/* */
 
 void SwHTMLNumRuleInfo::Set( const SwTxtNode& rTxtNd )
 {
@@ -101,7 +101,7 @@ void SwHTMLNumRuleInfo::Set( const SwTxtNode& rTxtNd )
 	}
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewNumBulList( int nToken )
 {
@@ -490,7 +490,7 @@ void SwHTMLParser::EndNumBulList( int nToken )
 
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewNumBulListItem( int nToken )
 {
@@ -676,7 +676,7 @@ void SwHTMLParser::EndNumBulListItem( int nToken, sal_Bool bSetColl,
 		SetTxtCollAttrs();
 }
 
-/*  */
+/* */
 
 // --> OD 2008-04-02 #refactorlists#
 void SwHTMLParser::SetNodeNum( sal_uInt8 nLevel, bool bCountedInList )
@@ -711,7 +711,7 @@ void SwHTMLParser::SetNodeNum( sal_uInt8 nLevel, bool bCountedInList )
 }
 
 
-/*  */
+/* */
 
 void SwHTMLWriter::FillNextNumInfo()
 {

@@ -1184,7 +1184,7 @@ sal_uInt16 GetSvxEditEngineItemState( EditEngine& rEditEngine, const ESelection&
 		// get list of char attribs
 		rEditEngine.GetCharAttribs( nPara, aAttribs );
 
-		sal_Bool bEmpty = sal_True;		// we found no item inside the selektion of this paragraph
+		sal_Bool bEmpty = sal_True;		// we found no item inside the selection of this paragraph
 		sal_Bool bGaps  = sal_False;	// we found items but theire gaps between them
 		sal_uInt16 nLastEnd = nPos;
 
@@ -1197,10 +1197,10 @@ sal_uInt16 GetSvxEditEngineItemState( EditEngine& rEditEngine, const ESelection&
 
 			const sal_Bool bEmptyPortion = aAttrib.nStart == aAttrib.nEnd;
 			if( (!bEmptyPortion && (aAttrib.nStart >= nEndPos)) || (bEmptyPortion && (aAttrib.nStart > nEndPos)) )
-				break;	// break if we are already behind our selektion
+				break;	// break if we are already behind our selection
 
 			if( (!bEmptyPortion && (aAttrib.nEnd <= nPos)) || (bEmptyPortion && (aAttrib.nEnd < nPos)) )
-				continue;	// or if the attribute ends before our selektion
+				continue;	// or if the attribute ends before our selection
 
 			if( aAttrib.pAttr->Which() != nWhich )
 				continue; // skip if is not the searched item

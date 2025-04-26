@@ -694,11 +694,11 @@ public:
     // returns false if there were not any
     bool getAlternativeFamilyNames( fontID nFont, std::list< rtl::OUString >& rNames ) const;
 
-    /*  system dependendent font matching
+    /*  system dependent font matching
 
     <p>
     <code>matchFont</code> matches a pattern of font characteristics
-    and returns the closest match if possibe. If a match was found
+    and returns the closest match if possible. If a match was found
     the <code>FastPrintFontInfo</code> passed in as parameter
     will be update to the found matching font.
     </p>

@@ -2644,7 +2644,7 @@ SwFtnContFrm* SwSectionFrm::ContainsFtnCont( const SwFtnContFrm* pCont ) const
 	if( pCont )
 	{
 		pLay = pCont->FindFtnBossFrm( 0 );
-		ASSERT( IsAnLower( pLay ), "ConatainsFtnCont: Wrong FtnContainer" );
+		ASSERT( IsAnLower( pLay ), "ContainsFtnCont: Wrong FtnContainer" );
 		pLay = (SwLayoutFrm*)pLay->GetNext();
 	}
 	else if( Lower() && Lower()->IsColumnFrm() )
@@ -2656,11 +2656,11 @@ SwFtnContFrm* SwSectionFrm::ContainsFtnCont( const SwFtnContFrm* pCont ) const
 		if( pLay->Lower() && pLay->Lower()->GetNext() )
 		{
 			ASSERT( pLay->Lower()->GetNext()->IsFtnContFrm(),
-					"ToMaximize: Unexspected Frame" );
+					"ToMaximize: Unexpected Frame" );
 			pRet = (SwFtnContFrm*)pLay->Lower()->GetNext();
 		}
 		ASSERT( !pLay->GetNext() || pLay->GetNext()->IsLayoutFrm(),
-				"ToMaximize: ColFrm exspected" );
+				"ToMaximize: ColFrm expected" );
 		pLay = (SwLayoutFrm*)pLay->GetNext();
 	}
 	return pRet;

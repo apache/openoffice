@@ -1347,7 +1347,7 @@ SwLinePortion *SwTxtFormatter::NewPortion( SwTxtFormatInfo &rInf )
                     // --> FME 2005-12-19 #127428# Abandon dec. tab position if line is full:
                     // We have a decimal tab portion in the line and the next character has to be
                     // aligned at the tab stop position. We store the width from the beginning of
-                    // the tab stop portion up to the portion containint the decimal separator:
+                    // the tab stop portion up to the portion containing the decimal separator:
 				  if ( GetTxtFrm()->GetTxtNode()->getIDocumentSettingAccess()->get(IDocumentSettingAccess::TAB_COMPAT) /*rInf.GetVsh()->IsTabCompat();*/ &&
 						 POR_TABDECIMAL == pLastTabPortion->GetWhichPor() )
                     {

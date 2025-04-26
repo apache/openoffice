@@ -40,7 +40,7 @@
 #include <controldata.hxx>
 
 // =======================================================================
-
+
 inline sal_uLong ImplCreateKey( sal_uInt16 nPos )
 {
 	// Key = Pos+1, wegen Pos 0
@@ -62,7 +62,7 @@ static void lcl_GetSelectedEntries( Table& rSelectedPos, const XubString& rText,
 }
 
 // =======================================================================
-
+
 ComboBox::ComboBox( WindowType nType ) :
 	Edit( nType )
 {

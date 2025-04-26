@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
-
 
 #include "hintids.hxx"
 #include <vcl/graph.hxx>
@@ -235,7 +231,7 @@ void SwView::RecheckBrowseMode()
             FN_VIEW_GRAPHIC,    /*20213*/
             FN_VIEW_BOUNDS,   	/**/
             FN_VIEW_FIELDS,     /*20215*/
-            FN_VLINEAL,             /*20216*/
+            FN_VRULER,          /*20216*/
             FN_VSCROLLBAR,      /*20217*/
             FN_HSCROLLBAR,      /*20218*/
             FN_VIEW_META_CHARS, /**/
@@ -335,8 +331,8 @@ void SwView::StateViewOptions(SfxItemSet &rSet)
                 aBool.SetValue( pOpt->IsCrossHair() ); break;
             case FN_VIEW_SMOOTH_SCROLL:
                 aBool.SetValue( pOpt->IsSmoothScroll()); break;
-            case FN_VLINEAL:
-                aBool.SetValue( 0 != StatVLineal() ); break;
+            case FN_VRULER:
+                aBool.SetValue( 0 != StatVRuler() ); break;
             case FN_HSCROLLBAR:
                 if( pOpt->getBrowseMode() )
                 {
@@ -447,7 +443,7 @@ void SwView::ExecViewOptions(SfxRequest &rReq)
                 bBrowseModeChanged = bFlag != pOpt->getBrowseMode();
                 // Disable "multiple layout"
                 GetDocShell()->ToggleBrowserMode( bFlag, this );
-                
+
                 pOpt->setBrowseMode( bFlag );
                 break;
 
@@ -477,7 +473,7 @@ void SwView::ExecViewOptions(SfxRequest &rReq)
                 break;
 
 
-        case FN_VLINEAL:
+        case FN_VRULER:
                 if( STATE_TOGGLE == eState )
                     bFlag = !pOpt->IsViewVRuler();
 
@@ -596,29 +592,31 @@ void SwView::ExecViewOptions(SfxRequest &rReq)
     if( !bModified )
         rSh.ResetModified();
 
-    pModule->ApplyUsrPref( *pOpt, this, bWebView ? VIEWOPT_DEST_WEB : VIEWOPT_DEST_TEXT );
+	pModule->ApplyUsrPref( *pOpt, this, bWebView ? VIEWOPT_DEST_WEB : VIEWOPT_DEST_TEXT );
 
 	//mod #i6193# let postits know about new spellcheck setting
-    if ( nSlot == SID_AUTOSPELL_CHECK )
+	if ( nSlot == SID_AUTOSPELL_CHECK )
 		GetPostItMgr()->SetSpellChecking();
 
-    const sal_Bool bLockedView = rSh.IsViewLocked();
-    rSh.LockView( sal_True );    //lock visible section
-    GetWrtShell().EndAction();
-    if( bBrowseModeChanged && !bFlag )
-        CalcVisArea( GetEditWin().GetOutputSizePixel() );
-    rSh.LockView( bLockedView );
+	const sal_Bool bLockedView = rSh.IsViewLocked();
+	rSh.LockView( sal_True ); //lock visible section
+	GetWrtShell().EndAction();
+	if( bBrowseModeChanged && !bFlag )
+		CalcVisArea( GetEditWin().GetOutputSizePixel() );
+	rSh.LockView( bLockedView );
 
-    delete pOpt;
-    Invalidate(rReq.GetSlot());
-    if(!pArgs)
-        rReq.AppendItem(SfxBoolItem(nSlot, (sal_Bool)bFlag));
-    rReq.Done();
+	delete pOpt;
+	Invalidate(rReq.GetSlot());
+	if(!pArgs)
+		rReq.AppendItem(SfxBoolItem(nSlot, (sal_Bool)bFlag));
+	rReq.Done();
 }
 
 IMPL_LINK( SwView, HtmlOptionsHdl, void*, EMPTYARG )
 {
 	// Invalidierung, falls blinkender Text erlaubt/verboten wurde
-    GetViewFrame()->GetBindings().Invalidate(SID_DRAW_TEXT_MARQUEE);
-    return 0;
+	GetViewFrame()->GetBindings().Invalidate(SID_DRAW_TEXT_MARQUEE);
+	return 0;
 }
+
+/* vim: set noet sw=4 ts=4: */

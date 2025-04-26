@@ -56,7 +56,7 @@ enum LB_EVENT_TYPE
 // -----------------
 // - ImplEntryType -
 // -----------------
-
+
 struct ImplEntryType
 {
 	XubString	maStr;
@@ -98,7 +98,7 @@ struct ImplEntryType
 // -----------------
 // - ImplEntryList -
 // -----------------
-
+
 class ImplEntryList : private List
 {
 private:
@@ -397,7 +397,7 @@ protected:
 // ---------------
 // - ImplListBox -
 // ---------------
-
+
 class ImplListBox : public Control
 {
 private:
@@ -531,7 +531,7 @@ public:
 // -----------------------------
 // - ImplListBoxFloatingWindow -
 // -----------------------------
-
+
 class ImplListBoxFloatingWindow : public FloatingWindow
 {
 private:
@@ -574,7 +574,7 @@ public:
 // -----------
 // - ImplWin -
 // -----------
-
+
 class ImplWin : public Control
 {
 private:

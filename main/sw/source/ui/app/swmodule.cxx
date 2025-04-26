@@ -132,7 +132,6 @@
 #include <modcfg.hxx>
 #include <fontcfg.hxx>
 #include <sfx2/sidebar/SidebarChildWindow.hxx>
-#include <sfx2/taskpane.hxx>
 #include <sfx2/evntconf.hxx>
 #include <sfx2/appuno.hxx>
 #include <swatrset.hxx>
@@ -214,7 +213,7 @@ SwModule::SwModule( SfxObjectFactory* pWebFact,
 
 	pModuleConfig = new SwModuleOptions;
 
-	//Die brauchen wie sowieso
+	// Die brauchen wir sowieso
 	pToolbarConfig = new SwToolbarConfigItem( sal_False );
 	pWebToolbarConfig = new SwToolbarConfigItem( sal_True );
 
@@ -298,8 +297,8 @@ void SwModule::CreateLngSvcEvtListener()
 
 void SwDLL::RegisterFactories()
 {
-	//Diese Id's duerfen nicht geaendert werden. Mittels der Id's wird vom
-	//Sfx die View (Dokumentansicht wiederherstellen) erzeugt.
+	// Diese Id's duerfen nicht geaendert werden. Mittels der Id's wird vom
+	// Sfx die View (Dokumentansicht wiederherstellen) erzeugt.
 	if ( SvtModuleOptions().IsWriter() )
 		SwView::RegisterFactory		( 2 );
 
@@ -313,7 +312,6 @@ void SwDLL::RegisterFactories()
 }
 
 //************************************************************************
-
 
 void SwDLL::RegisterInterfaces()
 {
@@ -463,10 +461,7 @@ void SwDLL::RegisterControls()
 
 	SvxSmartTagsControl::RegisterControl(SID_OPEN_SMARTTAGMENU, pMod);
 	::sfx2::sidebar::SidebarChildWindow::RegisterChildWindow(sal_False, pMod);
-	::sfx2::TaskPaneWrapper::RegisterChildWindow(sal_False, pMod);
 }
-
-
 
 /*************************************************************************
 |* Modul laden (nur Attrappe für das Linken der DLL)
@@ -477,7 +472,7 @@ void SwDLL::RegisterControls()
  * --------------------------------------------------*/
 void	SwModule::InitAttrPool()
 {
-	DBG_ASSERT(!pAttrPool, "Pool ist schon da!");
+	DBG_ASSERT(!pAttrPool, "Pool is already there!");
 	pAttrPool = new SwAttrPool(0);
 	SetPool(pAttrPool);
 }

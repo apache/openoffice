@@ -36,7 +36,7 @@
 #include <svtools/htmltokn.h>
 #include <svtools/htmlkywd.hxx>
 
-/*  */
+/* */
 
 // Tabellen zum Umwandeln von Options-Werten in Strings
 

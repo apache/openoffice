@@ -2182,7 +2182,7 @@ sal_Bool OBoundControlModel::connectToField(const Reference<XRowSet>& rForm)
 //------------------------------------------------------------------------------
 void OBoundControlModel::initFromField( const Reference< XRowSet >& _rxRowSet )
 {
-	// but only if the rowset if posisitioned on a valid record
+	// but only if the rowset if positioned on a valid record
 	if ( hasField() && _rxRowSet.is() )
 	{
 		if ( !_rxRowSet->isBeforeFirst() && !_rxRowSet->isAfterLast() )

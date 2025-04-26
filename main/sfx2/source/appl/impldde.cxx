@@ -125,7 +125,7 @@ IMPL_STATIC_LINK( SvDDELinkEditDialog, EditHdl_Impl, Edit *, pEdit )
 	return 0;
 }
 
-/*  */
+/* */
 
 
 SvDDEObject::SvDDEObject()

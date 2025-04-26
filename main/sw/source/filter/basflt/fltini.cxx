@@ -165,7 +165,7 @@ void _FinitFilter()
 }
 
 
-/*  */
+/* */
 
 namespace SwReaderWriter {
 
@@ -201,7 +201,7 @@ SwRead GetReader( const String& rFltName )
 
 } // namespace SwReaderWriter
 
-/*  */
+/* */
 
 /////////////// die Storage Reader/Writer ////////////////////////////////
 
@@ -238,7 +238,7 @@ sal_uLong StgReader::OpenMainStream( SvStorageStreamRef& rRef, sal_uInt16& rBuff
         return nRet;
 }
 
-/*  */
+/* */
 /*
 sal_uLong Sw3Reader::Read( SwDoc &rDoc, SwPaM &rPam, const String & )
 {
@@ -326,7 +326,7 @@ sal_Bool Writer::IsStgWriter() const { return sal_False; }
 
 sal_Bool StgWriter::IsStgWriter() const { return sal_True; }
 
-/*  */
+/* */
 
 
 
@@ -343,7 +343,7 @@ sal_Bool SwReader::CheckPasswd( const String& /*rPasswd*/, const Reader& /*rOpti
 }
 
 
-/*  */
+/* */
 
 //-----------------------------------------------------------------------
 // Filter Flags lesen, wird von WW8 / W4W / EXCEL / LOTUS benutzt.
@@ -421,7 +421,7 @@ void SwFilterOptions::GetValues( sal_uInt16 nCnt, const sal_Char** ppNames,
 void SwFilterOptions::Commit() {}
 void SwFilterOptions::Notify( const ::com::sun::star::uno::Sequence< rtl::OUString >& ) {}
 
-/*  */
+/* */
 
 
 void StgReader::SetFltName( const String& rFltNm )
@@ -431,7 +431,7 @@ void StgReader::SetFltName( const String& rFltNm )
 }
 
 
-/*  */
+/* */
 
 SwRelNumRuleSpaces::SwRelNumRuleSpaces( SwDoc& rDoc, sal_Bool bNDoc )
         : bNewDoc( bNDoc )
@@ -611,7 +611,7 @@ void SwRelNumRuleSpaces::SetNumLSpace( SwTxtNode& rNd, const SwNumRule& rRule )
         }
 }
 
-/*  */
+/* */
 
 
 void CalculateFlySize(SfxItemSet& rFlySet, const SwNodeIndex& rAnchor,
@@ -727,7 +727,7 @@ void CalculateFlySize(SfxItemSet& rFlySet, const SwNodeIndex& rAnchor,
         }
 }
 
-/*  */
+/* */
 struct CharSetNameMap
 {
     rtl_TextEncoding eCode;

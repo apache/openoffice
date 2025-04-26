@@ -21,7 +21,6 @@
 
 
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #ifndef WW_SORTEDARRAY_HXX
 #define WW_SORTEDARRAY_HXX

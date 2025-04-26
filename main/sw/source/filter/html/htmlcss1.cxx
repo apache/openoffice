@@ -80,7 +80,7 @@ using namespace ::com::sun::star;
 
 void lcl_swcss1_setEncoding( SwFmt& rFmt, rtl_TextEncoding eEnc );
 
-/*  */
+/* */
 
 // Implementierung des SwCSS1Parsers (eigentlich swcss1.cxx)
 static struct SwCSS1ItemIds
@@ -143,7 +143,7 @@ SwCSS1Parser::~SwCSS1Parser()
 }
 
 
-/*  */
+/* */
 
 // Feature: PrintExt
 sal_Bool SwCSS1Parser::SetFmtBreak( SfxItemSet& rItemSet,
@@ -1176,7 +1176,7 @@ const FontList *SwCSS1Parser::GetFontList() const
 	return pFList;
 }
 
-/*  */
+/* */
 
 SwCharFmt* SwCSS1Parser::GetChrFmt( sal_uInt16 nToken2, const String& rClass ) const
 {
@@ -1258,7 +1258,7 @@ SwCharFmt* SwCSS1Parser::GetChrFmt( sal_uInt16 nToken2, const String& rClass ) c
 }
 
 
-/*  */
+/* */
 
 SwTxtFmtColl *SwCSS1Parser::GetTxtCollFromPool( sal_uInt16 nPoolId ) const
 {
@@ -1507,7 +1507,7 @@ sal_Bool SwCSS1Parser::MayBePositioned( const SvxCSS1PropertyInfo& rPropInfo,
 }
 
 
-/*  */
+/* */
 
 void SwCSS1Parser::AddClassName( String& rFmtName, const String& rClass )
 {
@@ -1520,7 +1520,7 @@ void SwCSS1Parser::AddClassName( String& rFmtName, const String& rClass )
 	(rFmtName += '.') += rClass;
 }
 
-/*  */
+/* */
 
 void SwCSS1Parser::FillDropCap( SwFmtDrop& rDrop,
 								SfxItemSet& rItemSet,
@@ -1605,7 +1605,7 @@ void SwCSS1Parser::FillDropCap( SwFmtDrop& rDrop,
 	}
 }
 
-/*  */
+/* */
 
 // CSS1-sezifisches des SwHTMLParsers
 
@@ -2238,7 +2238,7 @@ void SwHTMLParser::SetFrmFmtAttrs( SfxItemSet &rItemSet,
 }
 
 
-/*  */
+/* */
 
 _HTMLAttrContext *SwHTMLParser::PopContext( sal_uInt16 nToken, sal_uInt16 nLimit,
 											sal_Bool bRemove )

@@ -155,7 +155,7 @@ public class CellBinding
     {
         // two radio buttons
         XPropertySet primaryRadio = createRadio( 28, "radio button no. 1", "radio group", "primary" );
-        XPropertySet secondaryRadio = createRadio( 33, "radio button no. 2", "radio group", "secodary" );
+        XPropertySet secondaryRadio = createRadio( 33, "radio button no. 2", "radio group", "secondary" );
 
         // bind them
         short col = (short)0;
@@ -193,7 +193,7 @@ public class CellBinding
     {
         // two radio buttons
         XPropertySet primaryRadio = createRadio( 46, "radio button A", "radio ref group", "primary" );
-        XPropertySet secondaryRadio = createRadio( 51, "radio button B", "radio ref group", "secodary" );
+        XPropertySet secondaryRadio = createRadio( 51, "radio button B", "radio ref group", "secondary" );
 
         // give the ref values
         String refValueA = new String( "ref value A" );

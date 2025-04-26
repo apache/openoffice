@@ -13770,7 +13770,7 @@
 		</xsl:choose>
 	</xsl:template>
 	<!-- Each parameter of the argumentlist have to be determined.
-	Due to the low level string functionlity in XSLT it becomes a clumsy task -->
+	Due to the low level string functionality in XSLT it becomes a clumsy task -->
 	<xsl:template name="find-parameters">
 		<!-- used for mapping of row/column reference  -->
 		<xsl:param name="rowPos"/>

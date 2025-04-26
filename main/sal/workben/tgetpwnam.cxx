@@ -37,7 +37,7 @@
 #include <shadow.h>
 #endif
 
-/* exercises some reentrant libc-fucntions */
+/* exercises some reentrant libc-functions */
 
 extern "C"
 {

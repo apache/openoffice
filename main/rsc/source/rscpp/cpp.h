@@ -164,7 +164,7 @@ extern FILE *pDefOut;                                   /* ER */
 #define T_UNSIGNED      128
 #define T_PTR           256             /* Pointer                      */
 #define T_FPTR          512             /* Pointer to functions         */
-
+
 /*
  * The DEFBUF structure stores information about #defined
  * macros.  Note that the defbuf->repl information is always

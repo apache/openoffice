@@ -22,7 +22,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 #include <hintids.hxx>
 #include <stack>
 #include <tools/errinf.hxx>
@@ -112,7 +111,7 @@ inline const SvxFontHeightItem& GetSize(const SfxItemSet& rSet,sal_Bool bInP=sal
 inline const SvxLRSpaceItem& GetLRSpace(const SfxItemSet& rSet,sal_Bool bInP=sal_True)
     { return (const SvxLRSpaceItem&)rSet.Get( RES_LR_SPACE,bInP); }
 
-/*  */
+/* */
 
 extern "C" SAL_DLLPUBLIC_EXPORT Reader* SAL_CALL ImportRTF()
 {
@@ -4368,7 +4367,7 @@ void SwRTFParser::RestoreState()
 }
 #endif
 
-/**/
+/* */
 
 BookmarkPosition::BookmarkPosition(const SwPaM &rPaM)
     : maMkNode(rPaM.GetMark()->nNode),

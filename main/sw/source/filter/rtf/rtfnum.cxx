@@ -1153,7 +1153,7 @@ NUMATTR_SETUNDERLINE:
 }
 
 
-/*  */
+/* */
 
 // dann noch die Ausgabe-Funktionen (nur fuer WinWord 97)
 

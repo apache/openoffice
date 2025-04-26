@@ -519,7 +519,7 @@ sal_uInt16 ImplEntryList::FindFirstSelectable( sal_uInt16 nPos, bool bForward /*
 }
 
 // =======================================================================
-
+
 ImplListBoxWindow::ImplListBoxWindow( Window* pParent, WinBits nWinStyle ) :
 	Control( pParent, 0 ),
     maQuickSelectionEngine( *this )
@@ -2252,7 +2252,7 @@ sal_uInt16 ImplListBoxWindow::ImplGetTextStyle() const
 }
 
 // =======================================================================
-
+
 ImplListBox::ImplListBox( Window* pParent, WinBits nWinStyle ) :
 	Control( pParent, nWinStyle ),
 	maLBWindow( this, nWinStyle&(~WB_BORDER) )
@@ -2771,7 +2771,7 @@ void ImplListBox::SetEdgeBlending(bool bNew)
 }
 
 // =======================================================================
-
+
 ImplWin::ImplWin( Window* pParent, WinBits nWinStyle ) :
 	Control ( pParent, nWinStyle )
 {

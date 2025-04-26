@@ -145,7 +145,7 @@ public abstract class WWD_Startup extends WWD_General
      */
     protected List designAware = new Vector();
     /**
-     * A Vector containig the DataAware objects
+     * A Vector containing the DataAware objects
      * which relay on Publishing Objects.
      * Differently from other Vectors, each
      * DataAware object in this Vector relays

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
-
 
 #include <hintids.hxx>
 #include <vcl/settings.hxx>
@@ -44,12 +40,9 @@
 #include <frmatr.hxx>
 #include <editeng/frmdiritem.hxx>
 
-
 /*--------------------------------------------------------------------
 	Beschreibung:	Core-Notify
  --------------------------------------------------------------------*/
-
-
 
 void ScrollMDI( ViewShell* pVwSh, const SwRect &rRect,
 				sal_uInt16 nRangeX, sal_uInt16 nRangeY)
@@ -63,8 +56,6 @@ void ScrollMDI( ViewShell* pVwSh, const SwRect &rRect,
 	Beschreibung:	Docmdi - verschiebbar
  --------------------------------------------------------------------*/
 
-
-
 sal_Bool IsScrollMDI( ViewShell* pVwSh, const SwRect &rRect )
 {
 	SfxViewShell *pSfxVwSh = pVwSh->GetSfxViewShell();
@@ -76,8 +67,6 @@ sal_Bool IsScrollMDI( ViewShell* pVwSh, const SwRect &rRect )
 /*--------------------------------------------------------------------
 	Beschreibung:	Notify fuer Groessen-Aenderung
  --------------------------------------------------------------------*/
-
-
 
 void SizeNotify(ViewShell* pVwSh, const Size &rSize)
 {
@@ -95,8 +84,6 @@ void SizeNotify(ViewShell* pVwSh, const Size &rSize)
 	Beschreibung:	Notify fuer Seitenzahl-Update
  --------------------------------------------------------------------*/
 
-
-
 void PageNumNotify( ViewShell* pVwSh, sal_uInt16 nPhyNum, sal_uInt16 nVirtNum,
 													const String& rPgStr)
 {
@@ -113,8 +100,6 @@ void PageNumNotify( ViewShell* pVwSh, sal_uInt16 nPhyNum, sal_uInt16 nVirtNum,
  *	Aenderung	:
  ******************************************************************************/
 
-
-
 void FrameNotify( ViewShell* pVwSh, FlyMode eMode )
 {
 	if ( pVwSh->ISA(SwCrsrShell) )
@@ -126,7 +111,7 @@ void FrameNotify( ViewShell* pVwSh, FlyMode eMode )
  --------------------------------------------------------------------*/
 sal_Bool SwEditWin::RulerColumnDrag( const MouseEvent& rMEvt, sal_Bool bVerticalMode)
 {
-    SvxRuler& rRuler = bVerticalMode ?  rView.GetVLineal() : rView.GetHLineal();
+    SvxRuler& rRuler = bVerticalMode ?  rView.GetVRuler() : rView.GetHRuler();
     return (!rRuler.StartDocDrag( rMEvt, RULER_TYPE_BORDER ) &&
             !rRuler.StartDocDrag( rMEvt, RULER_TYPE_MARGIN1) &&
             !rRuler.StartDocDrag( rMEvt, RULER_TYPE_MARGIN2));
@@ -138,7 +123,7 @@ sal_Bool SwEditWin::RulerColumnDrag( const MouseEvent& rMEvt, sal_Bool bVertical
 sal_Bool SwEditWin::RulerMarginDrag( const MouseEvent& rMEvt,
                                  const bool bVerticalMode )
 {
-    SvxRuler& rRuler = bVerticalMode ?  rView.GetVLineal() : rView.GetHLineal();
+    SvxRuler& rRuler = bVerticalMode ?  rView.GetVRuler() : rView.GetHRuler();
     return !rRuler.StartDocDrag( rMEvt, RULER_TYPE_INDENT);
 }
 // <--
@@ -209,15 +194,15 @@ void SwEditWin::DataChanged( const DataChangedEvent& rDCEvt )
 	switch( rDCEvt.GetType() )
 	{
 	case DATACHANGED_SETTINGS:
-		// ScrollBars neu anordnen bzw. Resize ausloesen, da sich
+		// ScrollBars neu anordnen bzw. Resize auslösen, da sich
 		// ScrollBar-Groesse geaendert haben kann. Dazu muss dann im
 		// Resize-Handler aber auch die Groesse der ScrollBars aus
 		// den Settings abgefragt werden.
 		if( rDCEvt.GetFlags() & SETTINGS_STYLE )
 		{
-            pSh->LockPaint();
+			pSh->LockPaint();
 			bUnlockPaint = sal_True;
-            ViewShell::DeleteReplacementBitmaps();
+			ViewShell::DeleteReplacementBitmaps();
 			GetView().InvalidateBorder();				//Scrollbarbreiten
 		}
 		break;
@@ -226,12 +211,14 @@ void SwEditWin::DataChanged( const DataChangedEvent& rDCEvt )
 	case DATACHANGED_DISPLAY:
 	case DATACHANGED_FONTS:
 	case DATACHANGED_FONTSUBSTITUTION:
-        pSh->LockPaint();
+		pSh->LockPaint();
 		bUnlockPaint = sal_True;
-		GetView().GetDocShell()->UpdateFontList();	//z.B. Druckerwechsel
+		GetView().GetDocShell()->UpdateFontList(); // z.B. Druckerwechsel
 		break;
 	}
-    pSh->LockView( bViewWasLocked );
+	pSh->LockView( bViewWasLocked );
 	if( bUnlockPaint )
-        pSh->UnlockPaint();
+		pSh->UnlockPaint();
 }
+
+/* vim: set noet sw=4 ts=4: */

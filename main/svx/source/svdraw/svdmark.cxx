@@ -181,7 +181,7 @@ void SdrMark::ObjectInDestruction(const SdrObject& rObject)
 {
 	(void) rObject; // avoid warnings
 	OSL_ENSURE(mpSelectedSdrObject && mpSelectedSdrObject == &rObject, "SdrMark::ObjectInDestruction: called form object different from hosted one (!)");
-	OSL_ENSURE(mpSelectedSdrObject, "SdrMark::ObjectInDestruction: still seleceted SdrObject is deleted, deselect first (!)");
+	OSL_ENSURE(mpSelectedSdrObject, "SdrMark::ObjectInDestruction: still selected SdrObject is deleted, deselect first (!)");
 	mpSelectedSdrObject = 0L;
 }
 

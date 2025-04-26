@@ -13240,7 +13240,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 			</xsl:if>
 		</xsl:element>
 		<xsl:element name="style:text-properties">
-			<!-- absent fucntions -->
+			<!-- absent functions -->
 			<xsl:for-each select="图表:图例项_E765[1]/图表:字体_E70B">
 				<xsl:call-template name="TextProperties"/>
 			</xsl:for-each>
@@ -13570,7 +13570,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 				</style:graphic-properties>
 			</style:style>
 			<xsl:apply-templates select="图表:数据点集_E755" mode="chartstyle"/>
-			<!-- Waiting, New Funciton : xsl:apply-templates select="图表:引导线_E758" mode="chartstyle" -->
+			<!-- Waiting, New Function : xsl:apply-templates select="图表:引导线_E758" mode="chartstyle" -->
 			<xsl:apply-templates select="图表:误差线集_E759" mode="chartstyle"/>
 			<xsl:apply-templates select="图表:趋势线集_E762" mode="chartstyle"/>
 		</xsl:for-each>

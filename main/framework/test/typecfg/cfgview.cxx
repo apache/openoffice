@@ -222,7 +222,7 @@ void CFGView::impl_printCopyright()
 void CFGView::impl_printSyntax()
 {
     fprintf( stderr, "\nusing: xml2xcd -fi=<outputfile> -vi=<version input> -vo=<version output> [-wr=<true|false>]\n\n"    );
-    fprintf( stderr, "\tneccessary parameters:\n"                                                                           );
+    fprintf( stderr, "\tnecessary parameters:\n"                                                                           );
     fprintf( stderr, "\t\t-fi=<outputfile>\tname of output file in system notation\n"                                       );
     fprintf( stderr, "\t\t-vi=<version input>\tformat version of input xml file\n"                                          );
     fprintf( stderr, "\t\t-vo=<version output>\tformat version of generated xcd file\n\n"                                   );

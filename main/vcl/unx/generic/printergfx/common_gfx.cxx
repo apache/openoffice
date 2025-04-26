@@ -595,7 +595,7 @@ PrinterGfx::DrawPolygonBezier (sal_uInt32 nPoints, const Point* pPath, const sal
         else
         {
             if (i+2 >= nPoints)               
-                return; //Error: wrong sequence of contol/normal points somehow
+                return; //Error: wrong sequence of control/normal points somehow
             if ((pFlgAry[i] == POLY_CONTROL) && (pFlgAry[i+1] == POLY_CONTROL) &&
                     (pFlgAry[i+2] != POLY_CONTROL))
             {

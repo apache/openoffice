@@ -21,7 +21,6 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #include <iostream>
 #include <com/sun/star/embed/ElementModes.hpp>
@@ -872,7 +871,7 @@ sal_uLong SwWW8Writer::FillUntil( SvStream& rStrm, sal_uLong nEndPos )
 
 
 //--------------------------------------------------------------------------
-/*  */
+/* */
 
 WW8_WrPlcPn::WW8_WrPlcPn( WW8Export& rWr, ePLCFT ePl, WW8_FC nStartFc )
     : rWrt(rWr), nFkpStartPage(0), ePlc(ePl), nMark(0)
@@ -995,7 +994,7 @@ void WW8_WrPlcPn::WritePlc()
 }
 
 //--------------------------------------------------------------------------
-/*  */
+/* */
 
 WW8_WrFkp::WW8_WrFkp(ePLCFT ePl, WW8_FC nStartFc, bool bWrtWW8)
     : ePlc(ePl), nStartGrp(511), nOldStartGrp(511),
@@ -1540,7 +1539,7 @@ void MSWordExportBase::AppendWordBookmark( const String& rName )
 
 
 //--------------------------------------------------------------------------
-/*  */
+/* */
 
 void WW8_WrtRedlineAuthor::Write( Writer& rWrt )
 {
@@ -1560,7 +1559,7 @@ sal_uInt16 WW8Export::AddRedlineAuthor( sal_uInt16 nId )
 }
 
 //--------------------------------------------------------------------------
-/*  */
+/* */
 
 void WW8Export::WriteAsStringTable(const std::vector<String>& rStrings,
     sal_Int32& rfcSttbf, sal_Int32& rlcbSttbf, sal_uInt16 nExtraLen)

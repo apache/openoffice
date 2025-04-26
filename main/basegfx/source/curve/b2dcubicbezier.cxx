@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
@@ -30,13 +28,11 @@
 
 #include <limits>
 
-// #i37443# 
+// #i37443#
 #define FACTOR_FOR_UNSHARPEN	(1.6)
 #ifdef DBG_UTIL
 static double fMultFactUnsharpen = FACTOR_FOR_UNSHARPEN;
 #endif
-
-//////////////////////////////////////////////////////////////////////////////
 
 namespace basegfx
 {
@@ -57,7 +53,7 @@ namespace basegfx
 				// do angle test
 				B2DVector aLeft(rfEA - rfPA);
 				B2DVector aRight(rfEB - rfPB);
-				
+
 				// #i72104#
 				if(aLeft.equalZero())
 				{
@@ -149,7 +145,7 @@ namespace basegfx
 						if(!bLeftEqualZero)
 						{
 							double fFactor;
-							
+
 							if(fabs(aBase.getX()) > fabs(aBase.getY()))
 							{
 								fFactor = aLeft.getX() / aBase.getX();
@@ -168,7 +164,7 @@ namespace basegfx
 						if(!bRightEqualZero)
 						{
 							double fFactor;
-							
+
 							if(fabs(aBase.getX()) > fabs(aBase.getY()))
 							{
 								fFactor = aRight.getX() / -aBase.getX();
@@ -329,8 +325,6 @@ namespace basegfx
 	} // end of anonymous namespace
 } // end of namespace basegfx
 
-//////////////////////////////////////////////////////////////////////////////
-
 namespace basegfx
 {
 	B2DCubicBezier::B2DCubicBezier(const B2DCubicBezier& rBezier)
@@ -340,11 +334,11 @@ namespace basegfx
 		maControlPointB(rBezier.maControlPointB)
 	{
 	}
-	
+
 	B2DCubicBezier::B2DCubicBezier()
 	{
 	}
-	
+
 	B2DCubicBezier::B2DCubicBezier(const B2DPoint& rStart, const B2DPoint& rEnd)
 	:	maStartPoint(rStart),
 		maEndPoint(rEnd),
@@ -372,7 +366,7 @@ namespace basegfx
 		maEndPoint = rBezier.maEndPoint;
 		maControlPointA = rBezier.maControlPointA;
 		maControlPointB = rBezier.maControlPointB;
-		
+
 		return *this;
 	}
 
@@ -397,15 +391,15 @@ namespace basegfx
 		);
 	}
 
-    bool B2DCubicBezier::equal(const B2DCubicBezier& rBezier) const
-    {
+	bool B2DCubicBezier::equal(const B2DCubicBezier& rBezier) const
+	{
 		return (
 			maStartPoint.equal(rBezier.maStartPoint)
 			&& maEndPoint.equal(rBezier.maEndPoint)
 			&& maControlPointA.equal(rBezier.maControlPointA)
 			&& maControlPointB.equal(rBezier.maControlPointB)
 		);
-    }
+	}
 
 	// test if vectors are used
 	bool B2DCubicBezier::isBezier() const
@@ -423,28 +417,28 @@ namespace basegfx
 		if(maControlPointA != maStartPoint || maControlPointB != maEndPoint)
 		{
 			const B2DVector aEdge(maEndPoint - maStartPoint);
-			
-			// controls parallel to edge can be trivial. No edge -> not parallel -> control can 
-            // still not be trivial (e.g. ballon loop)
+
+			// controls parallel to edge can be trivial. No edge -> not parallel -> control can
+			// still not be trivial (e.g. balloon loop)
 			if(!aEdge.equalZero())
 			{
-                // get control vectors
+				// get control vectors
 				const B2DVector aVecA(maControlPointA - maStartPoint);
 				const B2DVector aVecB(maControlPointB - maEndPoint);
 
-                // check if trivial per se
-                bool bAIsTrivial(aVecA.equalZero());
-                bool bBIsTrivial(aVecB.equalZero());
+				// check if trivial per se
+				bool bAIsTrivial(aVecA.equalZero());
+				bool bBIsTrivial(aVecB.equalZero());
 
-                // #i102241# prepare inverse edge length to normalize cross values;
-                // else the small compare value used in fTools::equalZero
-                // will be length dependent and this detection will work as less
-                // precise as longer the edge is. In principle, the length of the control
+				// #i102241# prepare inverse edge length to normalize cross values;
+				// else the small compare value used in fTools::equalZero
+				// will be length dependent and this detection will work as less
+				// precise as longer the edge is. In principle, the length of the control
 				// vector would need to be used too, but to be trivial it is assumed to
 				// be of roughly equal length to the edge, so edge length can be used
 				// for both. Only needed when one of both is not trivial per se.
-                const double fInverseEdgeLength(bAIsTrivial && bBIsTrivial 
-					? 1.0 
+				const double fInverseEdgeLength(bAIsTrivial && bBIsTrivial
+					? 1.0
 					: 1.0 / aEdge.getLength());
 
 				// if A is not zero, check if it could be
@@ -457,8 +451,8 @@ namespace basegfx
 					if(fTools::equalZero(fCross))
 					{
 						// get scale to edge. Use bigger distance for numeric quality
-						const double fScale(fabs(aEdge.getX()) > fabs(aEdge.getY()) 
-							? aVecA.getX() / aEdge.getX() 
+						const double fScale(fabs(aEdge.getX()) > fabs(aEdge.getY())
+							? aVecA.getX() / aEdge.getX()
 							: aVecA.getY() / aEdge.getY());
 
 						// relative end point of vector in edge range?
@@ -469,18 +463,18 @@ namespace basegfx
 					}
 				}
 
-                // if B is not zero, check if it could be, but only if A is already trivial;
-                // else solve to trivial will not be possible for whole edge
+				// if B is not zero, check if it could be, but only if A is already trivial;
+				// else solve to trivial will not be possible for whole edge
 				if(bAIsTrivial && !bBIsTrivial)
 				{
 					// parallel to edge? Check aVecB, aEdge
 					const double fCross(aVecB.cross(aEdge) * fInverseEdgeLength);
-					
+
 					if(fTools::equalZero(fCross))
 					{
 						// get scale to edge. Use bigger distance for numeric quality
-						const double fScale(fabs(aEdge.getX()) > fabs(aEdge.getY()) 
-							? aVecB.getX() / aEdge.getX() 
+						const double fScale(fabs(aEdge.getX()) > fabs(aEdge.getY())
+							? aVecB.getX() / aEdge.getX()
 							: aVecB.getY() / aEdge.getY());
 
 						// end point of vector in edge range? Caution: controlB is directed AGAINST edge
@@ -491,7 +485,7 @@ namespace basegfx
 					}
 				}
 
-                // if both are/can be reduced, do it.
+				// if both are/can be reduced, do it.
 				// Not possible if only one is/can be reduced (!)
 				if(bAIsTrivial && bBIsTrivial)
 				{
@@ -502,47 +496,47 @@ namespace basegfx
 		}
 	}
 
-    namespace {
-        double impGetLength(const B2DCubicBezier& rEdge, double fDeviation, sal_uInt32 nRecursionWatch)
-        {
-            const double fEdgeLength(rEdge.getEdgeLength());
-            const double fControlPolygonLength(rEdge.getControlPolygonLength());
-            const double fCurrentDeviation(fTools::equalZero(fControlPolygonLength) ? 0.0 : 1.0 - (fEdgeLength / fControlPolygonLength));
+	namespace {
+		double impGetLength(const B2DCubicBezier& rEdge, double fDeviation, sal_uInt32 nRecursionWatch)
+		{
+			const double fEdgeLength(rEdge.getEdgeLength());
+			const double fControlPolygonLength(rEdge.getControlPolygonLength());
+			const double fCurrentDeviation(fTools::equalZero(fControlPolygonLength) ? 0.0 : 1.0 - (fEdgeLength / fControlPolygonLength));
 
-            if(!nRecursionWatch || fTools:: lessOrEqual(fCurrentDeviation, fDeviation))
-            {
-                return (fEdgeLength + fControlPolygonLength) * 0.5;
-            }
-            else
-            {
-                B2DCubicBezier aLeft, aRight;
-                const double fNewDeviation(fDeviation * 0.5);
-                const sal_uInt32 nNewRecursionWatch(nRecursionWatch - 1);
+			if(!nRecursionWatch || fTools:: lessOrEqual(fCurrentDeviation, fDeviation))
+			{
+				return (fEdgeLength + fControlPolygonLength) * 0.5;
+			}
+			else
+			{
+				B2DCubicBezier aLeft, aRight;
+				const double fNewDeviation(fDeviation * 0.5);
+				const sal_uInt32 nNewRecursionWatch(nRecursionWatch - 1);
 
-                rEdge.split(0.5, &aLeft, &aRight);
+				rEdge.split(0.5, &aLeft, &aRight);
 
-                return impGetLength(aLeft, fNewDeviation, nNewRecursionWatch)
-                    + impGetLength(aRight, fNewDeviation, nNewRecursionWatch);
-            }
-        }
-    }
+				return impGetLength(aLeft, fNewDeviation, nNewRecursionWatch)
+					+ impGetLength(aRight, fNewDeviation, nNewRecursionWatch);
+			}
+		}
+	}
 
 	double B2DCubicBezier::getLength(double fDeviation) const
-    {
-        if(isBezier())
-        {
-            if(fDeviation < 0.00000001)
-            {
-                fDeviation = 0.00000001;
-            }
+	{
+		if(isBezier())
+		{
+			if(fDeviation < 0.00000001)
+			{
+				fDeviation = 0.00000001;
+			}
 
-            return impGetLength(*this, fDeviation, 6);
-        }
-        else
-        {
-            return B2DVector(getEndPoint() - getStartPoint()).getLength();
-        }
-    }
+			return impGetLength(*this, fDeviation, 6);
+		}
+		else
+		{
+			return B2DVector(getEndPoint() - getStartPoint()).getLength();
+		}
+	}
 
 	double B2DCubicBezier::getEdgeLength() const
 	{
@@ -579,61 +573,61 @@ namespace basegfx
 		}
 	}
 
-    B2DVector B2DCubicBezier::getTangent(double t) const
-    {
-        if(fTools::lessOrEqual(t, 0.0))
-        {
-            // tangent in start point
-            B2DVector aTangent(getControlPointA() - getStartPoint());
+	B2DVector B2DCubicBezier::getTangent(double t) const
+	{
+		if(fTools::lessOrEqual(t, 0.0))
+		{
+			// tangent in start point
+			B2DVector aTangent(getControlPointA() - getStartPoint());
 
-            if(!aTangent.equalZero())
-            {
-                return aTangent;
-            }
+			if(!aTangent.equalZero())
+			{
+				return aTangent;
+			}
 
-            // start point and control vector are the same, fallback
-            // to implicit start vector to control point B
-            aTangent = (getControlPointB() - getStartPoint()) * 0.3;
+			// start point and control vector are the same, fallback
+			// to implicit start vector to control point B
+			aTangent = (getControlPointB() - getStartPoint()) * 0.3;
 
-            if(!aTangent.equalZero())
-            {
-                return aTangent;
-            }
+			if(!aTangent.equalZero())
+			{
+				return aTangent;
+			}
 
-            // not a bezier at all, return edge vector
-            return (getEndPoint() - getStartPoint()) * 0.3;
-        }
-        else if(fTools::moreOrEqual(t, 1.0))
-        {
-            // tangent in end point
-            B2DVector aTangent(getEndPoint() - getControlPointB());
+			// not a bezier at all, return edge vector
+			return (getEndPoint() - getStartPoint()) * 0.3;
+		}
+		else if(fTools::moreOrEqual(t, 1.0))
+		{
+			// tangent in end point
+			B2DVector aTangent(getEndPoint() - getControlPointB());
 
-            if(!aTangent.equalZero())
-            {
-                return aTangent;
-            }
+			if(!aTangent.equalZero())
+			{
+				return aTangent;
+			}
 
-            // end point and control vector are the same, fallback
-            // to implicit start vector from control point A
-            aTangent = (getEndPoint() - getControlPointA()) * 0.3;
+			// end point and control vector are the same, fallback
+			// to implicit start vector from control point A
+			aTangent = (getEndPoint() - getControlPointA()) * 0.3;
 
-            if(!aTangent.equalZero())
-            {
-                return aTangent;
-            }
+			if(!aTangent.equalZero())
+			{
+				return aTangent;
+			}
 
-            // not a bezier at all, return edge vector
-            return (getEndPoint() - getStartPoint()) * 0.3;
-        }
-        else
-        {
-            // t is in ]0.0 .. 1.0[. Split and extract
-            B2DCubicBezier aRight;
-            split(t, 0, &aRight);
+			// not a bezier at all, return edge vector
+			return (getEndPoint() - getStartPoint()) * 0.3;
+		}
+		else
+		{
+			// t is in ]0.0 .. 1.0[. Split and extract
+			B2DCubicBezier aRight;
+			split(t, 0, &aRight);
 
-            return aRight.getControlPointA() - aRight.getStartPoint();
-        }
-    }
+			return aRight.getControlPointA() - aRight.getStartPoint();
+		}
+	}
 
 	// #i37443# adaptive subdivide by nCount subdivisions
 	void B2DCubicBezier::adaptiveSubdivideByCount(B2DPolygon& rTarget, sal_uInt32 nCount) const
@@ -654,7 +648,7 @@ namespace basegfx
 	{
 		if(isBezier())
 		{
-			ImpSubDivDistance(maStartPoint, maControlPointA, maControlPointB, maEndPoint, rTarget, 
+			ImpSubDivDistance(maStartPoint, maControlPointA, maControlPointB, maEndPoint, rTarget,
 				fDistanceBound * fDistanceBound, ::std::numeric_limits<double>::max(), 30);
 		}
 		else
@@ -674,7 +668,7 @@ namespace basegfx
 			const B2DPoint aS1R(interpolate(maControlPointB, maEndPoint, t));
 			const B2DPoint aS2L(interpolate(aS1L, aS1C, t));
 			const B2DPoint aS2R(interpolate(aS1C, aS1R, t));
-	
+
 			return interpolate(aS2L, aS2R, t);
 		}
 		else
@@ -846,7 +840,7 @@ namespace basegfx
 	B2DCubicBezier B2DCubicBezier::snippet(double fStart, double fEnd) const
 	{
 		B2DCubicBezier aRetval;
-		
+
 		if(fTools::more(fStart, 1.0))
 		{
 			fStart = 1.0;
@@ -954,15 +948,15 @@ namespace basegfx
 	{
 		inline void impCheckExtremumResult(double fCandidate, ::std::vector< double >& rResult)
 		{
-            // check for range ]0.0 .. 1.0[ with excluding 1.0 and 0.0 clearly
-            // by using the equalZero test, NOT ::more or ::less which will use the
-            // ApproxEqual() which is too exact here
-            if(fCandidate > 0.0 && !fTools::equalZero(fCandidate))
-            {
-                if(fCandidate < 1.0 && !fTools::equalZero(fCandidate - 1.0))
-                {
-    				rResult.push_back(fCandidate);
-                }
+			// check for range ]0.0 .. 1.0[ with excluding 1.0 and 0.0 clearly
+			// by using the equalZero test, NOT ::more or ::less which will use the
+			// ApproxEqual() which is too exact here
+			if(fCandidate > 0.0 && !fTools::equalZero(fCandidate))
+			{
+				if(fCandidate < 1.0 && !fTools::equalZero(fCandidate - 1.0))
+				{
+					rResult.push_back(fCandidate);
+				}
 			}
 		}
 	}
@@ -1098,4 +1092,4 @@ namespace basegfx
 
 } // end of namespace basegfx
 
-// eof
+/* vim: set noet sw=4 ts=4: */

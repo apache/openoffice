@@ -3284,7 +3284,7 @@ void SwTransferable::DragFinished( sal_Int8 nAction )
 }
 
 
-/*  */
+/* */
 
 int SwTransferable::PrivatePaste( SwWrtShell& rShell )
 {
@@ -3695,7 +3695,7 @@ SwTransferable* SwTransferable::GetSwTransferable( const TransferableDataHelper&
     
 }
 
-/*  */
+/* */
 
 // -----------------------------------------------------------------------
 

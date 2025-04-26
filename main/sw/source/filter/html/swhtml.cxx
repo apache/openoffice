@@ -260,7 +260,7 @@ sal_uLong HTMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPam, co
 }
 
 
-/*  */
+/* */
 
 SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
                             const String& rPath,
@@ -2037,7 +2037,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		aParaAttrs.Remove( 0, aParaAttrs.Count() );
 }
 
-/*  */
+/* */
 
 extern sal_Bool lcl_css1atr_equalFontItems( const SfxPoolItem& r1, const SfxPoolItem& r2 );
 
@@ -2559,7 +2559,7 @@ ViewShell *SwHTMLParser::CheckActionViewShell()
 	return pActionViewShell;
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 							 _HTMLAttrs *pPostIts )
@@ -3329,7 +3329,7 @@ void SwHTMLParser::InsertAttrs( _HTMLAttrs& rAttrs )
 	}
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewStdAttr( int nToken )
 {
@@ -3775,7 +3775,7 @@ void SwHTMLParser::EndFontAttr( int nToken )
 		aFontStack.Remove( aFontStack.Count()-1, 1 );
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewPara()
 {
@@ -4027,7 +4027,7 @@ void SwHTMLParser::EndHeading()
 	nFontStHeadStart = nFontStMin;
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewTxtFmtColl( int nToken, sal_uInt16 nColl )
 {
@@ -4156,7 +4156,7 @@ void SwHTMLParser::EndTxtFmtColl( int nToken )
 	SetTxtCollAttrs();
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewDefList()
 {
@@ -4372,7 +4372,7 @@ void SwHTMLParser::EndDefListItem( int nToken, sal_Bool bSetColl,
 		SetTxtCollAttrs();
 }
 
-/*  */
+/* */
 
 sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 									   sal_Bool bSurroundOnly ) const
@@ -4443,7 +4443,7 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 	return bFound;
 }
 
-/*  */
+/* */
 
 // the special methods for inserting objects
 
@@ -4673,7 +4673,7 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 	}
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewCharFmt( int nToken )
 {
@@ -4737,7 +4737,7 @@ void SwHTMLParser::NewCharFmt( int nToken )
 }
 
 
-/*  */
+/* */
 
 void SwHTMLParser::InsertSpacer()
 {
@@ -4951,7 +4951,7 @@ SwTwips SwHTMLParser::GetCurrentBrowseWidth()
 }
 
 
-/*  */
+/* */
 
 void SwHTMLParser::InsertIDOption()
 {
@@ -4972,7 +4972,7 @@ void SwHTMLParser::InsertIDOption()
 }
 
 
-/*  */
+/* */
 
 
 void SwHTMLParser::InsertLineBreak()
@@ -5380,7 +5380,7 @@ void SwHTMLParser::ParseMoreMetaOptions()
     InsertAttr( aFmtFld );
 }
 
-/*  */
+/* */
 
 _HTMLAttr::_HTMLAttr( const SwPosition& rPos, const SfxPoolItem& rItem,
 					  _HTMLAttr **ppHd ) :

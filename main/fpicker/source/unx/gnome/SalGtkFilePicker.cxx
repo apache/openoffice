@@ -1890,7 +1890,7 @@ case_insensitive_filter (const GtkFileFilterInfo *filter_info, gpointer data)
 		bRetval = sal_True;
 
 #ifdef DEBUG
-	fprintf( stderr, "'%s' match extn '%s' vs '%s' yeilds %d\n",
+	fprintf( stderr, "'%s' match extn '%s' vs '%s' yields %d\n",
 		filter_info->uri, pExtn, pFilter, bRetval );
 #endif
 

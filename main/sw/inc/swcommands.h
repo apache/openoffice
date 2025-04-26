@@ -361,7 +361,7 @@
 #define CMD_FN_UPDATE_FIELDS                        ".uno:UpdateFields"
 #define CMD_FN_UPDATE_INPUTFIELDS                   ".uno:UpdateInputFields"
 #define CMD_FN_VIEW_BOUNDS                          ".uno:ViewBounds"
-#define CMD_FN_VLINEAL                              ".uno:VRuler"
+#define CMD_FN_VRULER                               ".uno:VRuler"
 #define CMD_FN_VSCROLLBAR                           ".uno:VScroll"
 #define CMD_FN_PREV_WORD_SEL                        ".uno:WordLeftSel"
 #define CMD_FN_NEXT_WORD_SEL                        ".uno:WordRightSel"

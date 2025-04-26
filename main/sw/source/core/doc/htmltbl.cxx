@@ -83,7 +83,7 @@ public:
 	sal_uInt16 GetColumn() const { return nCol; }
 };
 
-/*  */
+/* */
 
 SwHTMLTableLayoutCnts::SwHTMLTableLayoutCnts( const SwStartNode *pSttNd,
 										  SwHTMLTableLayout* pTab,

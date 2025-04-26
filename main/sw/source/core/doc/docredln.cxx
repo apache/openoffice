@@ -2613,7 +2613,7 @@ void SwDoc::SetRedlinePassword(
 	SetModified();
 }
 
-/*  */
+/* */
 
 sal_Bool SwRedlineTbl::Insert( SwRedlinePtr& p, sal_Bool bIns )
 {
@@ -2847,7 +2847,7 @@ sal_uInt16 SwRedlineTbl::FindPrevSeqNo( sal_uInt16 nSeqNo, sal_uInt16 nSttPos,
 	return nRet;
 }
 
-/*  */
+/* */
 
 SwRedlineExtraData::~SwRedlineExtraData()
 {
@@ -3004,7 +3004,7 @@ int SwRedlineExtraData_Format::operator == ( const SwRedlineExtraData& rCmp ) co
 	return nRet;
 }
 
-/*  */
+/* */
 
 SwRedlineData::SwRedlineData( RedlineType_t eT, sal_uInt16 nAut )
 	: pNext( 0 ), pExtraData( 0 ), eType( eT ), nAuthor( nAut ), nSeqNo( 0 )
@@ -3062,7 +3062,7 @@ String SwRedlineData::GetDescr() const
     return aResult;
 }
 
-/*  */
+/* */
 
 SwRedline::SwRedline(RedlineType_t eTyp, const SwPaM& rPam )
 	: SwPaM( *rPam.GetMark(), *rPam.GetPoint() ),

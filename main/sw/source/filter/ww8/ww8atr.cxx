@@ -23,7 +23,6 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 /*
  * This file contains methods for the WW8 output
@@ -943,7 +942,7 @@ String MSWordExportBase::GetBookmarkName( sal_uInt16 nTyp, const String* pName, 
 }
 
 //-----------------------------------------------------------------------
-/*  */
+/* */
 /* File CHRATR.HXX: */
 void WW8AttributeOutput::RTLAndCJKState( bool bIsRTL, sal_uInt16 nScript )
 {
