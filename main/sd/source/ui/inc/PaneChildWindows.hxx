@@ -25,7 +25,6 @@
 #define SD_PANE_CHILD_WINDOWS_HXX
 
 #include <sfx2/childwin.hxx>
-#include <sfx2/taskpane.hxx>
 
 namespace sd {
 
