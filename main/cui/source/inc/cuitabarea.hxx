@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef _CUI_TAB_AREA_HXX
 #define _CUI_TAB_AREA_HXX
@@ -29,9 +28,7 @@
 #include <svx/SvxColorValueSet.hxx>
 
 /*************************************************************************
-|*
-|* Fl"achen-Tab-Dialog
-|*
+|* Flächen-Tab-Dialog
 \************************************************************************/
 
 class SvxAreaTabDialog : public SfxTabDialog
@@ -92,9 +89,7 @@ public:
 };
 
 /*************************************************************************
-|*
 |* Transparence-Tab-Page
-|*
 \************************************************************************/
 
 class SvxTransparenceTabPage : public SvxTabPage
@@ -173,15 +168,13 @@ public:
 
 	//CHINA001 void SetPageType(sal_uInt16 *pInType) { pPageType = pInType; }
 	//CHINA001 void SetDlgType(sal_uInt16* pInType) { pDlgType = pInType; }
-	void SetPageType(sal_uInt16 nInType) { nPageType = nInType; } //add CHINA001 
-	void SetDlgType(sal_uInt16 nInType) { nDlgType = nInType; }//add CHINA001 
-	virtual void PageCreated (SfxAllItemSet aSet); //add CHINA001 
+	void SetPageType(sal_uInt16 nInType) { nPageType = nInType; } //add CHINA001
+	void SetDlgType(sal_uInt16 nInType) { nDlgType = nInType; }//add CHINA001
+	virtual void PageCreated (SfxAllItemSet aSet); //add CHINA001
 };
 
 /*************************************************************************
-|*
-|* Fl"achen-Tab-Page
-|*
+|* Flächen-Tab-Page
 \************************************************************************/
 
 class SvxAreaTabPage : public SvxTabPage
@@ -312,13 +305,13 @@ public:
 	void    SetBitmapList( XBitmapListSharedPtr aBmpLst) { maBitmapList = aBmpLst; }
 
 	//CHINA001 void    SetPageType( sal_uInt16* pInType ) { pPageType = pInType; }
-	void    SetPageType( sal_uInt16 nInType ) { nPageType = nInType; } //add CHINA001 
+	void    SetPageType( sal_uInt16 nInType ) { nPageType = nInType; } //add CHINA001
 	//CHINA001 void    SetDlgType( sal_uInt16* pInType ) { pDlgType = pInType; }
-	void    SetDlgType( sal_uInt16 nInType ) { nDlgType = nInType; }//add CHINA001 
+	void    SetDlgType( sal_uInt16 nInType ) { nDlgType = nInType; }//add CHINA001
 	//CHINA001 void    SetPos( sal_uInt16* pInPos ) { pPos = pInPos; }
-	void    SetPos( sal_uInt16 nInPos ) { nPos = nInPos; }//add CHINA001 
+	void    SetPos( sal_uInt16 nInPos ) { nPos = nInPos; }//add CHINA001
 	void    SetAreaTP( sal_Bool* pIn ) { pbAreaTP = pIn; }
-	virtual void PageCreated (SfxAllItemSet aSet); //add CHINA001 
+	virtual void PageCreated (SfxAllItemSet aSet); //add CHINA001
 	void    SetColorChgd( ChangeType* pIn ) { pnColorTableState = pIn; }
 	void    SetGrdChgd( ChangeType* pIn ) { pnGradientListState = pIn; }
 	void    SetHtchChgd( ChangeType* pIn ) { pnHatchingListState = pIn; }
@@ -326,9 +319,7 @@ public:
 };
 
 /*************************************************************************
-|*
 |* Schatten-Tab-Page
-|*
 \************************************************************************/
 
 class SvxShadowTabPage : public SvxTabPage
@@ -354,8 +345,8 @@ private:
 
 	XColorListSharedPtr maColorTab;
 	ChangeType*         pnColorTableState;
-	sal_uInt16				nPageType;	//add CHINA001 
-	sal_uInt16				nDlgType;	//add CHINA001 
+	sal_uInt16				nPageType;	// add CHINA001
+	sal_uInt16				nDlgType;	// add CHINA001
 	sal_uInt16*             pPos;
 	sal_Bool*               pbAreaTP;
 
@@ -387,18 +378,16 @@ public:
 	void    SetColorTable( XColorListSharedPtr aColTab ) { maColorTab = aColTab; }
 //CHINA001	void    SetPageType( sal_uInt16* pInType ) { pPageType = pInType; }
 //CHINA001	void    SetDlgType( sal_uInt16* pInType ) { pDlgType = pInType; }
-	void    SetPageType( sal_uInt16 nInType ) { nPageType = nInType; } //add CHINA001 
-	void    SetDlgType( sal_uInt16 nInType ) { nDlgType = nInType; }	//add CHINA001 
+	void    SetPageType( sal_uInt16 nInType ) { nPageType = nInType; } //add CHINA001
+	void    SetDlgType( sal_uInt16 nInType ) { nDlgType = nInType; }	//add CHINA001
 	void    SetAreaTP( sal_Bool* pIn ) { pbAreaTP = pIn; }
 	void    SetColorChgd( ChangeType* pIn ) { pnColorTableState = pIn; }
-	virtual void PageCreated (SfxAllItemSet aSet); //add CHINA001 
+	virtual void PageCreated (SfxAllItemSet aSet); //add CHINA001
 	void	DisablePage( sal_Bool bIn ) { bDisable = bIn; }
 };
 
 /*************************************************************************
-|*
 |* Farbverlauf-Tab-Page
-|*
 \************************************************************************/
 
 class SvxGradientTabPage : public SfxTabPage
@@ -488,9 +477,7 @@ public:
 };
 
 /*************************************************************************
-|*
 |* Schraffuren-Tab-Page
-|*
 \************************************************************************/
 
 class SvxHatchTabPage : public SvxTabPage
@@ -579,9 +566,7 @@ public:
 };
 
 /*************************************************************************
-|*
 |* Bitmap-Tab-Page
-|*
 \************************************************************************/
 
 class SvxBitmapTabPage : public SvxTabPage
@@ -680,9 +665,7 @@ public:
 };
 
 /*************************************************************************
-|*
 |* Farben-Tab-Page
-|*
 \************************************************************************/
 
 class SvxColorTabPage : public SfxTabPage
@@ -751,16 +734,16 @@ private:
     void ImpColorCountChanged();
 
 	//-----------------------------------------------------------------------------------------------------
-	DECL_LINK( ClickAddHdl_Impl, void * );		// Button 'Hinzufuegen'
-	DECL_LINK( ClickModifyHdl_Impl, void * );	// Button 'Aendern'
-	DECL_LINK( ClickDeleteHdl_Impl, void * );	// Button 'loeschen'
+	DECL_LINK( ClickAddHdl_Impl, void * );		// Button 'Hinzufügen'
+	DECL_LINK( ClickModifyHdl_Impl, void * );	// Button 'Ändern'
+	DECL_LINK( ClickDeleteHdl_Impl, void * );	// Button 'löschen'
 	DECL_LINK( ClickWorkOnHdl_Impl, void * );	// Button 'Bearbeiten'
 
-	DECL_LINK( SelectColorLBHdl_Impl, void * );	// Farbe aus Listbox ausw�hlen
-	DECL_LINK( SelectValSetHdl_Impl, void * );	// Farbe aus Farbpalette (links) ausw�hlen
+	DECL_LINK( SelectColorLBHdl_Impl, void * );	// Farbe aus Listbox auswählen
+	DECL_LINK( SelectValSetHdl_Impl, void * );	// Farbe aus Farbpalette (links) auswählen
 	DECL_LINK( SelectColorModelHdl_Impl, void * );	// Auswahl Listbox 'Farbmodell'
 	long ChangeColorHdl_Impl( void* p );
-	DECL_LINK( ModifiedHdl_Impl, void * );		// Inhalt der Farbwerte-Felder wurde ver�ndert
+	DECL_LINK( ModifiedHdl_Impl, void * );		// Inhalt der Farbwerte-Felder wurde verändert
 	DECL_LINK( ClickLoadHdl_Impl, void * );		// Button 'Farbtabelle laden'
 	DECL_LINK( ClickSaveHdl_Impl, void * );		// Button 'Farbtabelle sichern'
 
@@ -793,3 +776,5 @@ public:
 
 
 #endif // _CUI_TAB_AREA_HXX
+
+/* vim: set noet sw=4 ts=4: */
