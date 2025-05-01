@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
@@ -115,7 +113,7 @@ void CGM::ImplDoClass4()
 	if ( mbFirstOutPut )
 		mpOutAct->FirstOutPut();
 
-	if ( mpBitmapInUse && ( mnElementID != 9 ) )	// vorhandene grafik verarbeiten,
+	if ( mpBitmapInUse && ( mnElementID != 9 ) )	// vorhandene Grafik verarbeiten,
 	{												// da jetzt nicht bitmap actions anstehen
 		CGMBitmapDescriptor* pBmpDesc = mpBitmapInUse->GetBitmap();
 		// irgendetwas mit der Bitmap anfangen
@@ -148,7 +146,7 @@ void CGM::ImplDoClass4()
 			case 0x02 : ComOut( CGM_LEVEL1 | CGM_EXTENDED_PRIMITIVES_SET, "Disjoint PolyLine" )
 			{
 				sal_uInt16 nPoints = sal::static_int_cast< sal_uInt16 >(
-                    mnElementSize / ImplGetPointSize());
+					mnElementSize / ImplGetPointSize());
 				if ( ! ( nPoints & 1 ) )
 				{
 					nPoints >>= 1;
@@ -267,7 +265,7 @@ void CGM::ImplDoClass4()
 					mpOutAct->CloseRegion();
 
 				sal_uInt16 nPoints = sal::static_int_cast< sal_uInt16 >(
-                    mnElementSize / ImplGetPointSize());
+					mnElementSize / ImplGetPointSize());
 				Polygon aPolygon( nPoints );
 				for ( sal_uInt16 i = 0; i < nPoints; i++)
 				{
@@ -319,8 +317,8 @@ void CGM::ImplDoClass4()
 				if ( mpBitmapInUse )
 				{
 					CGMBitmap* pBmpDesc = mpBitmapInUse->GetNext();
-					if ( pBmpDesc )	// eventuell bekommen wir eine bitmap zurück, die nicht
-					{				// zur vorherigen paßt -> diese müssen wir dann auch löschen
+					if ( pBmpDesc )	// eventuell bekommen wir eine bitmap zurÃ¼ck, die nicht
+					{				// zur vorherigen passt -> diese mÃ¼ssen wir dann auch lÃ¶schen
 						mpOutAct->DrawBitmap( pBmpDesc->GetBitmap() );
 						delete pBmpDesc;
 					}
@@ -334,7 +332,7 @@ void CGM::ImplDoClass4()
 
 			case 0x0a : ComOut( CGM_LEVEL1, "Generalized Drawing Primitive" )
 			{
-				ImplGetI( pElement->nIntegerPrecision );  //-Wall is this needed
+				ImplGetI( pElement->nIntegerPrecision ); //-Wall is this needed
 				ImplGetUI( pElement->nIntegerPrecision ); //-Wall is this needed
 				mnParaSize = mnElementSize;
 			}
@@ -506,7 +504,7 @@ void CGM::ImplDoClass4()
 			}
 			break;
 
-			case 0x0f : ComOut( CGM_LEVEL1 | CGM_EXTENDED_PRIMITIVES_SET, "Circular Arc Centre" )
+			case 0x0f : ComOut( CGM_LEVEL1 | CGM_EXTENDED_PRIMITIVES_SET, "Circular Arc Center" )
 			{
 				double fOrientation, fStartAngle, fEndAngle, vector[ 4 ];
 				FloatPoint aCenter, aRadius;
@@ -560,7 +558,7 @@ void CGM::ImplDoClass4()
 			}
 			break;
 
-			case 0x10 : ComOut( CGM_LEVEL1 | CGM_EXTENDED_PRIMITIVES_SET, "Circular Arc Centre Close" )
+			case 0x10 : ComOut( CGM_LEVEL1 | CGM_EXTENDED_PRIMITIVES_SET, "Circular Arc Center Close" )
 			{
 				double fOrientation, fStartAngle, fEndAngle, vector[ 4 ];
 				FloatPoint aCenter, aRadius;
@@ -682,37 +680,37 @@ void CGM::ImplDoClass4()
 								nType, fEndAngle, fStartAngle);
 			}
 			break;
-			case 0x14 : ComOut( CGM_LEVEL2, "Circular Arc Centre Reversed" )
+			case 0x14 : ComOut( CGM_LEVEL2, "Circular Arc Center Reversed" )
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
 			}
 			break;
-			case 0x15 : ComOut( CGM_LEVEL2, "Connection Edge" )							// NS
+			case 0x15 : ComOut( CGM_LEVEL2, "Connection Edge" ) // NS
 			{
 //				if ( mbFigure )
 //					mpOutAct->CloseRegion();
 			}
 			break;
-			case 0x16 : ComOut( CGM_LEVEL3, "Hyperbolic Arc" )							// NS
+			case 0x16 : ComOut( CGM_LEVEL3, "Hyperbolic Arc" ) // NS
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
 			}
 			break;
-			case 0x17 : ComOut( CGM_LEVEL3, "Parabolic Arc" )							// NS
+			case 0x17 : ComOut( CGM_LEVEL3, "Parabolic Arc" ) // NS
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
 			}
 			break;
-			case 0x18 : ComOut( CGM_LEVEL3, "Non Uniform B-Spline" )					// NS
+			case 0x18 : ComOut( CGM_LEVEL3, "Non Uniform B-Spline" ) // NS
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
 			}
 			break;
-			case 0x19 : ComOut( CGM_LEVEL3, "Non Uniform Rational B-Spline" )			// NS
+			case 0x19 : ComOut( CGM_LEVEL3, "Non Uniform Rational B-Spline" ) // NS
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
@@ -762,19 +760,19 @@ void CGM::ImplDoClass4()
 			}
 			break;
 
-			case 0x1b : ComOut( CGM_LEVEL3, "Polysymbol" )								// NS
+			case 0x1b : ComOut( CGM_LEVEL3, "Polysymbol" ) // NS
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
 			}
 			break;
-			case 0x1c : ComOut( CGM_LEVEL3, "Bitonal Tile" )							// NS
+			case 0x1c : ComOut( CGM_LEVEL3, "Bitonal Tile" ) // NS
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
 			}
 			break;
-			case 0x1d : ComOut( CGM_LEVEL3, "Tile" )									// NS
+			case 0x1d : ComOut( CGM_LEVEL3, "Tile" ) // NS
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
@@ -804,7 +802,7 @@ void CGM::ImplDoClass4()
 					mpOutAct->CloseRegion();
 			}
 			break;
-			case 0xfc : ComOut( CGM_GDSF_ONLY, "Reounded Rectangle" )
+			case 0xfc : ComOut( CGM_GDSF_ONLY, "Rounded Rectangle" )
 			{
 				if ( mbFigure )
 					mpOutAct->CloseRegion();
@@ -853,3 +851,5 @@ void CGM::ImplDoClass4()
 	else
 		mnParaSize = mnElementSize;
 };
+
+/* vim: set noet sw=4 ts=4: */
