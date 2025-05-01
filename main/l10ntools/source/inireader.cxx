@@ -19,12 +19,16 @@
  * 
  *************************************************************/
 
-#include <unicode/regex.h>
-#include <unicode/unistr.h>
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
+#include <unicode/uregex.h>
+//#include <unicode/unistr.h>
+
 #include <cstdlib>
 #include <string>
 #include <fstream>
 #include <iostream>
+#include <rtl/ustring.hxx>
 #include "inireader.hxx"
 
 using namespace std;
@@ -85,17 +89,23 @@ bool INIreader::is_section( string& line , string& section_str )
 {
     // Error in regex ?
     check_status( section_status );
-    UnicodeString target( line.c_str() , line.length() );
+    ::rtl::OUString target = ::rtl::OUString::createFromAscii( line.c_str() );
     
-    section_match->reset( target );
+    uregex_setText( section_match, (UChar*) target.getStr(), target.getLength(), &section_status );
     check_status( section_status );
 
-    if( section_match->find() )
+    if( uregex_find(section_match, 0, &section_status) )
     {
         check_status( section_status );
-        UnicodeString result(  section_match->group( 1 , section_status) );
+
+        ::std::vector<UChar> group( 1024 );
+        int32_t size = uregex_group( section_match, 1, group.data(), group.capacity(), &section_status );
+        if (group.capacity() < size) {
+            group.reserve( size );
+            size = uregex_group( section_match, 1, group.data(), group.capacity(), &section_status );
+        }
         check_status( section_status );
-        toStlString( result , section_str );
+        toStlString( group , section_str );
         
         return true;
     }
@@ -106,21 +116,31 @@ bool INIreader::is_parameter( string& line , string& parameter_key , string& par
 {
     // Error in regex ?
     check_status( parameter_status );
-    UnicodeString target( line.c_str() , line.length() );
+    ::rtl::OUString target = ::rtl::OUString::createFromAscii( line.c_str() );
     
-    parameter_match->reset( target );
+    uregex_setText(parameter_match, (const UChar*)target.getStr(), target.getLength(), &parameter_status);
     check_status( parameter_status );
 
-    if( parameter_match->find() )
+    if( uregex_find(parameter_match, 0, &parameter_status) )
     {
         check_status( parameter_status );
-        
-        UnicodeString result1(  parameter_match->group( 1 , parameter_status) );
+
+        ::std::vector<UChar> group(1024);
+        int32_t size = uregex_group(parameter_match, 1 , group.data(), group.capacity(), &parameter_status);
+        if (group.capacity() < size) {
+            group.reserve(size);
+            uregex_group(parameter_match, 1 , group.data(), group.capacity(), &parameter_status);
+        }
         check_status( parameter_status );
-        toStlString( result1 , parameter_key );
-        UnicodeString result2(  parameter_match->group( 2 , parameter_status) );
+        toStlString( group , parameter_key );
+
+        size = uregex_group(parameter_match, 2 , group.data(), group.capacity(), &parameter_status);
+        if (group.capacity() < size) {
+            group.reserve(size);
+            size = uregex_group(parameter_match, 2 , group.data(), group.capacity(), &parameter_status);
+        }
         check_status( parameter_status );
-        toStlString( result2 , parameter_value );
+        toStlString( group , parameter_value );
         
         return true;
     }
@@ -136,13 +156,11 @@ void INIreader::check_status( UErrorCode status )
     }
 }
 
-void INIreader::toStlString( const UnicodeString& str , string& stl_str)
+void INIreader::toStlString( const ::std::vector<UChar>& str , string& stl_str )
 {
-         // convert to string 
-        char* buffer = new char[ str.length()*3 ];
-        str.extract( 0 , str.length() , buffer );
-        stl_str = string( buffer );
-        delete [] buffer;
+    // convert to string
+    ::rtl::OUString ouString( (sal_Unicode*) str.data(), str.capacity() );
+    stl_str = string( ::rtl::OUStringToOString( ouString, RTL_TEXTENCODING_ASCII_US ).getStr() );
 }
 
 void INIreader::trim( string& str )

@@ -21,7 +21,11 @@
 
 #include <string>
 #include <hash_map>
-#include <unicode/regex.h>
+#include <vector>
+
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
+#include <unicode/uregex.h>
 
 using namespace std;
 
@@ -44,20 +48,22 @@ class INIreader
     private:
         UErrorCode section_status;  
         UErrorCode parameter_status; 
-        RegexMatcher* section_match;
-        RegexMatcher* parameter_match;
+        URegularExpression* section_match;
+        URegularExpression* parameter_match;
 
     public: 
         INIreader(): section_status   ( U_ZERO_ERROR ) ,
                      parameter_status ( U_ZERO_ERROR ) 
         {
-                     section_match   = new RegexMatcher   ( "^\\s*\\[([a-zA-Z0-9]*)\\].*" , 0 , section_status );
-                     parameter_match = new RegexMatcher   ( "^\\s*([a-zA-Z0-9]*)\\s*=\\s*([a-zA-Z0-9 ]*).*" , 0 , parameter_status ) ;
+                     section_match   = uregex_openC( "^\\s*\\[([a-zA-Z0-9]*)\\].*" , 0 , NULL , &section_status );
+                     parameter_match = uregex_openC( "^\\s*([a-zA-Z0-9]*)\\s*=\\s*([a-zA-Z0-9 ]*).*" , 0 , NULL , &parameter_status ) ;
         }
         ~INIreader()
         {
-            delete section_match;
-            delete parameter_match;
+            if (section_match)
+                uregex_close(section_match);
+            if (parameter_match)
+                uregex_close(parameter_match);
         }
         // open "filename", fill hash_map with sections / paramaters 
         bool read( INImap& myMap , string& filename );
@@ -66,7 +72,7 @@ class INIreader
         bool is_section( string& line , string& section_str );
         bool is_parameter( string& line , string& parameter_key , string& parameter_value );
         inline void check_status( UErrorCode status );
-        inline void toStlString ( const UnicodeString& str, string& stl_str );
+        inline void toStlString ( const ::std::vector<UChar>& str, string& stl_str );
         inline void trim( string& str );
 };
 
