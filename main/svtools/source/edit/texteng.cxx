@@ -67,6 +67,8 @@
 #include <vcl/unohelp.hxx>
 #include <vcl/metric.hxx>
 
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
 #include <unicode/ubidi.h>
 
 using namespace ::com::sun::star;
