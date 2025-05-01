@@ -32,6 +32,8 @@
 #include <algorithm>                //std::find_if
 #include <functional>               //std::unary_function
 
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
 #include <unicode/ubidi.h>          //ubidi_getLogicalRun
 #   include <tools/tenccvt.hxx>     //GetExtendedTextEncoding
 #   include <i18nutil/unicode.hxx>  //unicode::getUnicodeScriptType

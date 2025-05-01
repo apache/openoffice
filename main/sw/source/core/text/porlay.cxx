@@ -65,6 +65,8 @@ using namespace ::com::sun::star;
 using namespace i18n::ScriptType;
 
 //#ifdef BIDI
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
 #include <unicode/ubidi.h>
 #include <i18nutil/unicode.hxx>  //unicode::getUnicodeScriptType
 
