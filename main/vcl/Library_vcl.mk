@@ -87,7 +87,6 @@ $(eval $(call gb_Library_add_linked_libs,vcl,\
 ))
 
 $(call gb_Library_use_externals,vcl,\
-	icule \
 	icuuc \
 )
 

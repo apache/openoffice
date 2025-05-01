@@ -70,7 +70,6 @@ $(eval $(call gb_Library_add_linked_libs,desktop_detector,\
 ))
 
 $(call gb_Library_use_externals,desktop_detector,\
-	icule \
 	icuuc \
 )
 

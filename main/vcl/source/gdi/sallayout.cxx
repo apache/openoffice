@@ -43,6 +43,8 @@
 
 #include <limits.h>
 
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
 #if defined _MSC_VER
 #pragma warning(push, 1)
 #endif

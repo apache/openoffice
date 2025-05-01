@@ -24,7 +24,8 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
-#define ENABLE_ICU_LAYOUT
+//Stopped existing:
+//#define ENABLE_ICU_LAYOUT
 #include <gcach_ftyp.hxx>
 #include <sallayout.hxx>
 #include <salgdi.hxx>

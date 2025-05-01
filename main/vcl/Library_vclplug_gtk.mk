@@ -91,7 +91,6 @@ $(eval $(call gb_Library_add_linked_libs,vclplug_gtk,\
 ))
 
 $(call gb_Library_use_externals,vclplug_gtk,\
-	icule \
 	icuuc \
 )
 

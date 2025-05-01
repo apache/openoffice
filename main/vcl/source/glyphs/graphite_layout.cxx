@@ -58,6 +58,8 @@
 
 #include <salgdi.hxx>
 
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
 #include <unicode/uchar.h>
 #include <unicode/ubidi.h>
 #include <unicode/uscript.h>
