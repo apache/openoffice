@@ -67,6 +67,8 @@
 
 #include <sot/formats.hxx>
 
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
 #include <unicode/ubidi.h>
 
 using namespace ::com::sun::star;
@@ -136,7 +138,7 @@ ImpEditEngine::ImpEditEngine( EditEngine* pEE, SfxItemPool* pItemPool ) :
 	bIsFormatting 		= sal_False;
 	bFormatted			= sal_False;
 	bUpdate 			= sal_True;
-	bUpdateForAcc		= TRUE;
+	bUpdateForAcc		= sal_True;
     bUseAutoColor       = sal_True;
     bForceAutoColor     = sal_False;
     bAddExtLeading      = sal_False;

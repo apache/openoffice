@@ -59,6 +59,8 @@
 #include <svl/itempool.hxx>
 
 // #101498# calculate if it's RTL or not
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
 #include <unicode/ubidi.h>
 
 #define DEFAULT_SCALE	75
