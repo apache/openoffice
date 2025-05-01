@@ -49,8 +49,8 @@ Collator_Unicode::Collator_Unicode()
 
 Collator_Unicode::~Collator_Unicode()
 {
-	if (collator) delete collator;
-	if (uca_base) delete uca_base;
+	if (collator) ucol_close(collator);
+	if (uca_base) ucol_close(uca_base);
     if (hModule) osl_unloadModule(hModule);
 }
 
@@ -58,13 +58,13 @@ sal_Int32 SAL_CALL
 Collator_Unicode::compareSubstring( const OUString& str1, sal_Int32 off1, sal_Int32 len1,
 	const OUString& str2, sal_Int32 off2, sal_Int32 len2) throw(RuntimeException)
 {
-    return collator->compare(reinterpret_cast<const UChar *>(str1.getStr()) + off1, len1, reinterpret_cast<const UChar *>(str2.getStr()) + off2, len2);	// UChar != sal_Unicode in MinGW
+    return ucol_strcoll(collator, reinterpret_cast<const UChar *>(str1.getStr()) + off1, len1, reinterpret_cast<const UChar *>(str2.getStr()) + off2, len2);	// UChar != sal_Unicode in MinGW
 }
 
 sal_Int32 SAL_CALL
 Collator_Unicode::compareString( const OUString& str1, const OUString& str2) throw(RuntimeException)
 {
-    return collator->compare(reinterpret_cast<const UChar *>(str1.getStr()), reinterpret_cast<const UChar *>(str2.getStr()));	// UChar != sal_Unicode in MinGW
+    return ucol_strcoll(collator, reinterpret_cast<const UChar *>(str1.getStr()), -1, reinterpret_cast<const UChar *>(str2.getStr()), -1);	// UChar != sal_Unicode in MinGW
 }
 
 extern "C" { static void SAL_CALL thisModule() {} }
@@ -75,9 +75,10 @@ Collator_Unicode::loadCollatorAlgorithm(const OUString& rAlgorithm, const lang::
 {
 	if (!collator) {
         UErrorCode status = U_ZERO_ERROR;
+        UParseError parseError;
         OUString rule = LocaleData().getCollatorRuleByAlgorithm(rLocale, rAlgorithm);
         if (rule.getLength() > 0) {
-            collator = new RuleBasedCollator(reinterpret_cast<const UChar *>(rule.getStr()), status);	// UChar != sal_Unicode in MinGW
+            collator = ucol_openRules(reinterpret_cast<const UChar *>(rule.getStr()), -1, UCOL_DEFAULT, UCOL_DEFAULT_STRENGTH, &parseError, &status);	// UChar != sal_Unicode in MinGW
 			if (! U_SUCCESS(status)) throw RuntimeException();
 		}
 		if (!collator && OUString::createFromAscii(LOCAL_RULE_LANGS).indexOf(rLocale.Language) >= 0) {
@@ -113,9 +114,9 @@ Collator_Unicode::loadCollatorAlgorithm(const OUString& rAlgorithm, const lang::
 				}
 				if (func) {
 					const sal_uInt8* ruleImage=func();
-					uca_base = new RuleBasedCollator(static_cast<UChar*>(NULL), status);
+                    uca_base = ucol_open("root", &status);
 					if (! U_SUCCESS(status)) throw RuntimeException();
-					collator = new RuleBasedCollator(reinterpret_cast<const uint8_t*>(ruleImage), -1, uca_base, status);
+					collator = ucol_openBinary(reinterpret_cast<const uint8_t*>(ruleImage), -1, uca_base, &status);
 					if (! U_SUCCESS(status)) throw RuntimeException();
 				}
 			}
@@ -127,22 +128,37 @@ Collator_Unicode::loadCollatorAlgorithm(const OUString& rAlgorithm, const lang::
 				case here. The icu::Locale constructor changes the algorithm name to
 				uppercase itself, so we don't have to bother with that.
 			*/
-			icu::Locale icuLocale(
-				   OUStringToOString(rLocale.Language, RTL_TEXTENCODING_ASCII_US).getStr(),
-				   OUStringToOString(rLocale.Country, RTL_TEXTENCODING_ASCII_US).getStr(),
-				   OUStringToOString(rAlgorithm, RTL_TEXTENCODING_ASCII_US).getStr());
+            /** "The Locale constructor (in C++ and Java) taking multiple strings behaves exactly as if those strings
+                 were concatenated, with the ‘_’ separator inserted between two adjacent non-empty strings, and
+                 the result passed to uloc_getName." -- https://unicode-org.github.io/icu/userguide/locale/
+            */
+            OUStringBuffer locale;
+            if (!rLocale.Language.isEmpty()) {
+                locale.append(rLocale.Language);
+                locale.appendAscii("_");
+                if (!rLocale.Country.isEmpty()) {
+                    locale.append(rLocale.Country);
+                }
+                if (!rAlgorithm.isEmpty()) {
+                    locale.appendAscii("_");
+                    locale.append(rAlgorithm);
+                }
+            }
+            char icuLocale[1024];
+            uloc_getName(OUStringToOString(locale.makeStringAndClear(), RTL_TEXTENCODING_ASCII_US).getStr(), icuLocale, sizeof(icuLocale), &status);
+            if (! U_SUCCESS(status)) throw RuntimeException();
 			// load ICU collator
-			collator = (RuleBasedCollator*) icu::Collator::createInstance(icuLocale, status);
+            collator = ucol_open(icuLocale, &status);
 			if (! U_SUCCESS(status)) throw RuntimeException();
 		}
     }
 
 	if (options & CollatorOptions::CollatorOptions_IGNORE_CASE_ACCENT)
-        collator->setStrength(Collator::PRIMARY);
+        ucol_setStrength(collator, UCOL_PRIMARY);
 	else if (options & CollatorOptions::CollatorOptions_IGNORE_CASE)
-        collator->setStrength(Collator::SECONDARY);
+        ucol_setStrength(collator, UCOL_SECONDARY);
     else
-        collator->setStrength(Collator::TERTIARY);
+        ucol_setStrength(collator, UCOL_TERTIARY);
 
 	return(0);
 }

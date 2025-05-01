@@ -86,7 +86,7 @@ public:
 
 protected:
     Era *eraArray;
-    icu::Calendar *body;
+    UCalendar *body;
     NativeNumberSupplier aNatNum;
     const sal_Char* cCalendar;
     com::sun::star::lang::Locale aLocale;

@@ -31,6 +31,7 @@
 #include <unicode/udata.h>
 #include <rtl/strbuf.hxx>
 #include <rtl/ustring.hxx>
+#include <rtl/ustrbuf.hxx>
 
 U_CDECL_BEGIN
 extern const char OpenOffice_dat[];
@@ -67,15 +68,19 @@ BreakIterator_Unicode::BreakIterator_Unicode() :
 BreakIterator_Unicode::~BreakIterator_Unicode()
 {
         if (icuBI && icuBI->aBreakIterator) {
-            delete icuBI->aBreakIterator;
+            ubrk_close(icuBI->aBreakIterator);
             icuBI->aBreakIterator=NULL;
         }
-        if (character.aBreakIterator) delete character.aBreakIterator;
-        if (word.aBreakIterator) delete word.aBreakIterator;
-        if (sentence.aBreakIterator) delete sentence.aBreakIterator;
-        if (line.aBreakIterator) delete line.aBreakIterator;
+        if (character.aBreakIterator) ubrk_close(character.aBreakIterator);
+        if (word.aBreakIterator) ubrk_close(word.aBreakIterator);
+        if (sentence.aBreakIterator) ubrk_close(sentence.aBreakIterator);
+        if (line.aBreakIterator) ubrk_close(line.aBreakIterator);
 }
 
+// Hard to support in C:
+// 1. setBreakType() cannot be reached from C.
+// 2. UDataMemory's udata_getLength() is a private API, yet we need the length for ubrk_openBinaryRules().
+#if 0
 /*
 	Wrapper class to provide public access to the RuleBasedBreakIterator's
 	setbreakType method.
@@ -90,6 +95,28 @@ class OOoRuleBasedBreakIterator : public RuleBasedBreakIterator {
 			RuleBasedBreakIterator(image, status) { };
 
 };
+
+static UBreakIterator* open_udata_BreakIterator(UDataMemory *udm, UErrorCode *status)
+{
+    *status = U_ZERO_ERROR;
+    UDataInfo info;
+    info.size = sizeof(info);
+    udata_getInfo(udm, &info);
+    if (  !(info.isBigEndian == U_IS_BIG_ENDIAN &&
+            info.charsetFamily == U_CHARSET_FAMILY &&
+            info.dataFormat[0] == 0x42 &&  // dataFormat="Brk "
+            info.dataFormat[1] == 0x72 &&
+            info.dataFormat[2] == 0x6b &&
+            info.dataFormat[3] == 0x20)
+    ) {
+        *status = U_INVALID_FORMAT_ERROR;
+        return NULL;
+    }
+
+    uint8_t *memory = (uint8_t*) udata_getMemory(udm);
+    return ubrk_openBinaryRules(memory, udata_getLength(udm), NULL, 0, status);
+}
+#endif
 
 // loading ICU breakiterator on demand.
 void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::lang::Locale& rLocale,
@@ -114,9 +141,11 @@ void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::
             rLocale.Language != aLocale.Language || rLocale.Country != aLocale.Country ||
             rLocale.Variant != aLocale.Variant) {
         if (icuBI->aBreakIterator) {
-            delete icuBI->aBreakIterator;
+            ubrk_close(icuBI->aBreakIterator);
             icuBI->aBreakIterator=NULL;
         }
+// Hard to support in C:
+#if 0
         if (rule) {
             uno::Sequence< OUString > breakRules = LocaleData().getBreakIteratorRules(rLocale);
 
@@ -124,11 +153,11 @@ void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::
             udata_setAppData("OpenOffice", OpenOffice_dat, &status);
             if ( !U_SUCCESS(status) ) throw ERROR;
 
-            OOoRuleBasedBreakIterator *rbi = NULL;
+            UBreakIterator *rbi = NULL;
 
             if (breakRules.getLength() > breakType && breakRules[breakType].getLength() > 0) {
-                rbi = new OOoRuleBasedBreakIterator(udata_open("OpenOffice", "brk", 
-                    OUStringToOString(breakRules[breakType], RTL_TEXTENCODING_ASCII_US).getStr(), &status), status);
+                rbi = open_udata_BreakIterator(udata_open("OpenOffice", "brk", 
+                    OUStringToOString(breakRules[breakType], RTL_TEXTENCODING_ASCII_US).getStr(), &status), &status);
             } else {
                 status = U_ZERO_ERROR;
                 OStringBuffer aUDName(64);
@@ -137,12 +166,12 @@ void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::
                 aUDName.append( OUStringToOString(rLocale.Language, RTL_TEXTENCODING_ASCII_US));
                 UDataMemory* pUData = udata_open("OpenOffice", "brk", aUDName.getStr(), &status);
                 if( U_SUCCESS(status) )
-                    rbi = new OOoRuleBasedBreakIterator( pUData, status);
+                    rbi = open_udata_BreakIterator( pUData, &status);
                 if (!U_SUCCESS(status) ) {
                     status = U_ZERO_ERROR;
                     pUData = udata_open("OpenOffice", "brk", rule, &status);
                     if( U_SUCCESS(status) )
-                        rbi = new OOoRuleBasedBreakIterator( pUData, status);
+                        rbi = open_udata_BreakIterator( pUData, &status);
                     if (!U_SUCCESS(status) ) icuBI->aBreakIterator=NULL;
                 }
             }
@@ -156,26 +185,37 @@ void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::
                 icuBI->aBreakIterator = rbi;
             }
         }
+#endif
 
         if (!icuBI->aBreakIterator) {
-            icu::Locale icuLocale(
-                    OUStringToOString(rLocale.Language, RTL_TEXTENCODING_ASCII_US).getStr(),
-                    OUStringToOString(rLocale.Country, RTL_TEXTENCODING_ASCII_US).getStr(),
-                    OUStringToOString(rLocale.Variant, RTL_TEXTENCODING_ASCII_US).getStr());
+            ::rtl::OUStringBuffer locale;
+            if (!rLocale.Language.isEmpty()) {
+                locale.append(rLocale.Language);
+                locale.appendAscii("_");
+                if (!rLocale.Country.isEmpty()) {
+                    locale.append(rLocale.Country);
+                }
+                if (!rLocale.Variant.isEmpty()) {
+                    locale.appendAscii("_");
+                    locale.append(rLocale.Variant);
+                }
+            }
+            char icuLocale[1024];
+            uloc_getName(OUStringToOString(locale.makeStringAndClear(), RTL_TEXTENCODING_ASCII_US).getStr(), icuLocale, sizeof(icuLocale), &status);
 
             status = U_ZERO_ERROR;
             switch (rBreakType) {
                 case LOAD_CHARACTER_BREAKITERATOR:
-                    icuBI->aBreakIterator =  icu::BreakIterator::createCharacterInstance(icuLocale, status);
+                    icuBI->aBreakIterator = ubrk_open(UBRK_CHARACTER, icuLocale, NULL, 0, &status);
                     break;
                 case LOAD_WORD_BREAKITERATOR:
-                    icuBI->aBreakIterator =  icu::BreakIterator::createWordInstance(icuLocale, status);
+                    icuBI->aBreakIterator = ubrk_open(UBRK_WORD, icuLocale, NULL, 0, &status);
                     break;
                 case LOAD_SENTENCE_BREAKITERATOR:
-                    icuBI->aBreakIterator = icu::BreakIterator::createSentenceInstance(icuLocale, status);
+                    icuBI->aBreakIterator = ubrk_open(UBRK_SENTENCE, icuLocale, NULL, 0, &status);
                     break;
                 case LOAD_LINE_BREAKITERATOR:
-                    icuBI->aBreakIterator = icu::BreakIterator::createLineInstance(icuLocale, status);
+                    icuBI->aBreakIterator = ubrk_open(UBRK_LINE, icuLocale, NULL, 0, &status);
                     break;
             }
             if ( !U_SUCCESS(status) ) {
@@ -193,9 +233,9 @@ void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::
         }
     }
 
-    if (newBreak || icuBI->aICUText.compare(UnicodeString(reinterpret_cast<const UChar *>(rText.getStr()), rText.getLength()))) {	// UChar != sal_Unicode in MinGW
-        icuBI->aICUText=UnicodeString(reinterpret_cast<const UChar *>(rText.getStr()), rText.getLength());
-        icuBI->aBreakIterator->setText(icuBI->aICUText);
+    if (newBreak || icuBI->aICUText.compareTo(rText)) {	// UChar != sal_Unicode in MinGW
+        icuBI->aICUText = rText;
+        ubrk_setText(icuBI->aBreakIterator, (const UChar*)icuBI->aICUText.getStr(), icuBI->aICUText.getLength(), &status);
     }
 }
 
@@ -208,8 +248,8 @@ sal_Int32 SAL_CALL BreakIterator_Unicode::nextCharacters( const OUString& Text,
         if (nCharacterIteratorMode == CharacterIteratorMode::SKIPCELL ) { // for CELL mode
             loadICUBreakIterator(rLocale, LOAD_CHARACTER_BREAKITERATOR, 0, "char", Text);
             for (nDone = 0; nDone < nCount; nDone++) {
-                nStartPos = character.aBreakIterator->following(nStartPos);
-                if (nStartPos == BreakIterator::DONE)
+                nStartPos = ubrk_following(character.aBreakIterator, nStartPos);
+                if (nStartPos == UBRK_DONE)
                     return Text.getLength();
             }
         } else { // for CHARACTER mode
@@ -227,8 +267,8 @@ sal_Int32 SAL_CALL BreakIterator_Unicode::previousCharacters( const OUString& Te
         if (nCharacterIteratorMode == CharacterIteratorMode::SKIPCELL ) { // for CELL mode
             loadICUBreakIterator(rLocale, LOAD_CHARACTER_BREAKITERATOR, 0, "char", Text);
             for (nDone = 0; nDone < nCount; nDone++) {
-                nStartPos = character.aBreakIterator->preceding(nStartPos);
-                if (nStartPos == BreakIterator::DONE)
+                nStartPos = ubrk_preceding(character.aBreakIterator, nStartPos);
+                if (nStartPos == UBRK_DONE)
                     return 0;
             }
         } else { // for BS to delete one char and CHARACTER mode.
@@ -244,17 +284,17 @@ Boundary SAL_CALL BreakIterator_Unicode::nextWord( const OUString& Text, sal_Int
 {
         loadICUBreakIterator(rLocale, LOAD_WORD_BREAKITERATOR, rWordType, NULL, Text);
 
-        result.startPos = word.aBreakIterator->following(nStartPos);
-        if( result.startPos >= Text.getLength() || result.startPos == BreakIterator::DONE )
+        result.startPos = ubrk_following(word.aBreakIterator, nStartPos);
+        if( result.startPos >= Text.getLength() || result.startPos == UBRK_DONE )
             result.endPos = result.startPos;
         else {
             if ( (rWordType == WordType::ANYWORD_IGNOREWHITESPACES ||
                     rWordType == WordType::DICTIONARY_WORD ) &&
                         u_isWhitespace(Text.iterateCodePoints(&result.startPos, 0)) )
-                result.startPos = word.aBreakIterator->following(result.startPos);
+                result.startPos = ubrk_following(word.aBreakIterator, result.startPos);
 
-            result.endPos = word.aBreakIterator->following(result.startPos);
-            if(result.endPos == BreakIterator::DONE)
+            result.endPos = ubrk_following(word.aBreakIterator, result.startPos);
+            if(result.endPos == UBRK_DONE)
                 result.endPos = result.startPos;
         }
         return result;
@@ -266,17 +306,17 @@ Boundary SAL_CALL BreakIterator_Unicode::previousWord(const OUString& Text, sal_
 {
         loadICUBreakIterator(rLocale, LOAD_WORD_BREAKITERATOR, rWordType, NULL, Text);
 
-        result.startPos = word.aBreakIterator->preceding(nStartPos);
-        if( result.startPos < 0 || result.startPos == BreakIterator::DONE)
+        result.startPos = ubrk_preceding(word.aBreakIterator, nStartPos);
+        if( result.startPos < 0 || result.startPos == UBRK_DONE)
             result.endPos = result.startPos;
         else {
             if ( (rWordType == WordType::ANYWORD_IGNOREWHITESPACES ||
                     rWordType == WordType::DICTIONARY_WORD) &&
                         u_isWhitespace(Text.iterateCodePoints(&result.startPos, 0)) )
-                result.startPos = word.aBreakIterator->preceding(result.startPos);
+                result.startPos = ubrk_preceding(word.aBreakIterator, result.startPos);
 
-            result.endPos = word.aBreakIterator->following(result.startPos);
-            if(result.endPos == BreakIterator::DONE)
+            result.endPos = ubrk_following(word.aBreakIterator, result.startPos);
+            if(result.endPos == UBRK_DONE)
                 result.endPos = result.startPos;
         }
         return result;
@@ -289,27 +329,27 @@ Boundary SAL_CALL BreakIterator_Unicode::getWordBoundary( const OUString& Text, 
         loadICUBreakIterator(rLocale, LOAD_WORD_BREAKITERATOR, rWordType, NULL, Text);
         sal_Int32 len = Text.getLength();
 
-        if(word.aBreakIterator->isBoundary(nPos)) {
+        if(ubrk_isBoundary(word.aBreakIterator, nPos)) {
             result.startPos = result.endPos = nPos;
             if((bDirection || nPos == 0) && nPos < len) //forward
-                result.endPos = word.aBreakIterator->following(nPos);
+                result.endPos = ubrk_following(word.aBreakIterator, nPos);
             else
-                result.startPos = word.aBreakIterator->preceding(nPos);
+                result.startPos = ubrk_preceding(word.aBreakIterator, nPos);
         } else {
             if(nPos <= 0) {
                 result.startPos = 0;
-                result.endPos = len ? word.aBreakIterator->following((sal_Int32)0) : 0;
+                result.endPos = len ? ubrk_following(word.aBreakIterator, (sal_Int32)0) : 0;
             } else if(nPos >= len) {
-                result.startPos = word.aBreakIterator->preceding(len);
+                result.startPos = ubrk_preceding(word.aBreakIterator, len);
                 result.endPos = len;
             } else {
-                result.startPos = word.aBreakIterator->preceding(nPos);
-                result.endPos = word.aBreakIterator->following(nPos);
+                result.startPos = ubrk_preceding(word.aBreakIterator, nPos);
+                result.endPos = ubrk_following(word.aBreakIterator, nPos);
             }
         }
-        if (result.startPos == BreakIterator::DONE)
+        if (result.startPos == UBRK_DONE)
             result.startPos = result.endPos;
-        else if (result.endPos == BreakIterator::DONE)
+        else if (result.endPos == UBRK_DONE)
             result.endPos = result.startPos;
 
         return result;
@@ -324,8 +364,8 @@ sal_Int32 SAL_CALL BreakIterator_Unicode::beginOfSentence( const OUString& Text,
         sal_Int32 len = Text.getLength();
         if (len > 0 && nStartPos == len)
             Text.iterateCodePoints(&nStartPos, -1); // issue #i27703# treat end position as part of last sentence
-        if (!sentence.aBreakIterator->isBoundary(nStartPos))
-            nStartPos = sentence.aBreakIterator->preceding(nStartPos);
+        if (!ubrk_isBoundary(sentence.aBreakIterator, nStartPos))
+            nStartPos = ubrk_preceding(sentence.aBreakIterator, nStartPos);
 
         // skip preceding space.
         sal_uInt32 ch = Text.iterateCodePoints(&nStartPos, 1);
@@ -343,7 +383,7 @@ sal_Int32 SAL_CALL BreakIterator_Unicode::endOfSentence( const OUString& Text, s
         sal_Int32 len = Text.getLength();
         if (len > 0 && nStartPos == len)
             Text.iterateCodePoints(&nStartPos, -1); // issue #i27703# treat end position as part of last sentence
-        nStartPos = sentence.aBreakIterator->following(nStartPos);
+        nStartPos = ubrk_following(sentence.aBreakIterator, nStartPos);
 
         sal_Int32 nPos=nStartPos;
         while (nPos > 0 && u_isWhitespace(Text.iterateCodePoints(&nPos, -1))) nStartPos=nPos;
@@ -369,7 +409,7 @@ LineBreakResults SAL_CALL BreakIterator_Unicode::getLineBreak(
 
         sal_Bool GlueSpace=sal_True;
         while (GlueSpace) {
-            if (line.aBreakIterator->preceding(nStartPos + 1) == nStartPos) { //Line boundary break
+            if (ubrk_preceding(line.aBreakIterator, nStartPos + 1) == nStartPos) { //Line boundary break
                 lbr.breakIndex = nStartPos;
                 lbr.breakType = BreakType::WORDBOUNDARY;
             } else if (hOptions.rHyphenator.is()) { //Hyphenation break
@@ -387,11 +427,11 @@ LineBreakResults SAL_CALL BreakIterator_Unicode::getLineBreak(
                         lbr.breakIndex = wBoundary.startPos; //aHyphenatedWord->getHyphenationPos();
                     lbr.breakType = BreakType::HYPHENATION;
                 } else {
-                    lbr.breakIndex = line.aBreakIterator->preceding(nStartPos);
+                    lbr.breakIndex = ubrk_preceding(line.aBreakIterator, nStartPos);
                     lbr.breakType = BreakType::WORDBOUNDARY;
                 }
             } else { //word boundary break
-                lbr.breakIndex = line.aBreakIterator->preceding(nStartPos);
+                lbr.breakIndex = ubrk_preceding(line.aBreakIterator, nStartPos);
                 lbr.breakType = BreakType::WORDBOUNDARY;
             }
 

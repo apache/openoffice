@@ -26,6 +26,7 @@
 #include <breakiteratorImpl.hxx>
 
 #include "warnings_guard_unicode_brkiter.h"
+#include "unicode/ustring.h"
 
 namespace com { namespace sun { namespace star { namespace i18n {
 
@@ -80,8 +81,8 @@ protected:
 	Boundary result; // for word break iterator
 
     struct BI_Data {
-        UnicodeString aICUText;
-        icu::BreakIterator *aBreakIterator;
+        ::rtl::OUString aICUText;
+        UBreakIterator *aBreakIterator;
         
         BI_Data() : aICUText(), aBreakIterator(NULL) {}
     } character, word, sentence, line, *icuBI; 

@@ -72,7 +72,8 @@ public:
 protected:
 	const sal_Char *implementationName;
 private:
-	RuleBasedCollator *uca_base, *collator;
+    UCollator *uca_base;
+    UCollator *collator;
     oslModule hModule;
 };
 

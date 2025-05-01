@@ -30,8 +30,10 @@
 #include <sal/main.h>
 #include <sal/types.h>
 #include <rtl/ustrbuf.hxx>
-
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
 #include "warnings_guard_unicode_tblcoll.h"
+#include "unicode/ucol.h"
 
 U_CAPI void U_EXPORT2 uprv_free(void *mem);
 
@@ -107,30 +109,41 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 	fclose(fp);
 
     UErrorCode status = U_ZERO_ERROR;
-    //UParseError parseError;
-    //UCollator *coll = ucol_openRules(Obuf.getStr(), Obuf.getLength(), UCOL_OFF, 
-    //        UCOL_DEFAULT_STRENGTH, &parseError, &status);
+    UParseError parseError;
+    UCollator *coll = ucol_openRules(reinterpret_cast<const UChar *>(Obuf.getStr()), -1, UCOL_OFF, 
+            UCOL_DEFAULT_STRENGTH, &parseError, &status);
 
-    RuleBasedCollator *coll = new RuleBasedCollator(reinterpret_cast<const UChar *>(Obuf.getStr()), status);	// UChar != sal_Unicode in MinGW
+    //RuleBasedCollator *coll = new RuleBasedCollator(reinterpret_cast<const UChar *>(Obuf.getStr()), status);	// UChar != sal_Unicode in MinGW
+
 
     if (U_SUCCESS(status)) {
 
         int32_t len = 0;
-        uint8_t *data = coll->cloneRuleData(len, status);
-
-        if (U_SUCCESS(status) && data != NULL)
-            data_write(argv[2], argv[3], data, len);
-        else {
+        status = U_ZERO_ERROR;
+        len = ucol_cloneBinary(coll, NULL, 0, &status);
+        if (len > 0 && status == U_BUFFER_OVERFLOW_ERROR) {
+            uint8_t* data = (uint8_t*)malloc(len);
+            if (data != NULL) {
+                status = U_ZERO_ERROR;
+                len = ucol_cloneBinary(coll, data, len, &status);
+                if (U_SUCCESS(status))
+                    data_write(argv[2], argv[3], data, len);
+                else {
+                    printf("Could not get rule data from collator\n");
+                }
+                free(data);
+            } else {
+                printf("Out of memory getting rule data from collator\n");
+            }
+        } else {
             printf("Could not get rule data from collator\n");
         }
-
-	if (data) uprv_free(data);
     } else {
         printf("\nRule parsering error\n");
     }
 
     if (coll)
-        delete coll;
+        ucol_close(coll); //delete coll;
 
     return U_SUCCESS(status) ? 0 : 1;
 }	// End of main

@@ -73,7 +73,7 @@ TextSearch::TextSearch(const Reference < XMultiServiceFactory > & rxMSF)
         : xMSF( rxMSF )
         , pJumpTable( 0 )
         , pJumpTable2( 0 )
-        , pRegexMatcher( NULL )
+        , pRegex( NULL )
         , pWLD( 0 )
 {
     SearchOptions aOpt;
@@ -85,7 +85,7 @@ TextSearch::TextSearch(const Reference < XMultiServiceFactory > & rxMSF)
 
 TextSearch::~TextSearch()
 {
-    delete pRegexMatcher;
+    uregex_close(pRegex);
     delete pWLD;
     delete pJumpTable;
     delete pJumpTable2;
@@ -95,7 +95,10 @@ void TextSearch::setOptions( const SearchOptions& rOptions ) throw( RuntimeExcep
 {
     aSrchPara = rOptions;
 
-    delete pRegexMatcher, pRegexMatcher = NULL;
+    if (pRegex) {
+        uregex_close(pRegex);
+        pRegex = NULL;
+    }
     delete pWLD, pWLD = 0;
     delete pJumpTable, pJumpTable = 0;
     delete pJumpTable2, pJumpTable2 = 0;
@@ -739,27 +742,36 @@ void TextSearch::RESrchPrepare( const ::com::sun::star::util::SearchOptions& rOp
 		nIcuSearchFlags |= UREGEX_CASE_INSENSITIVE;
 	UErrorCode nIcuErr = U_ZERO_ERROR;
 	// assumption: transliteration didn't mangle regexp control chars
-	IcuUniString aIcuSearchPatStr( (const UChar*)rPatternStr.getStr(), rPatternStr.getLength());
 #ifndef DISABLE_WORDBOUND_EMULATION
 	// for conveniance specific syntax elements of the old regex engine are emulated
 	// - by replacing \< with "word-break followed by a look-ahead word-char"
-	static const IcuUniString aChevronPatternB( "\\\\<", -1, IcuUniString::kInvariant);
-	static const IcuUniString aChevronReplaceB( "\\\\b(?=\\\\w)", -1, IcuUniString::kInvariant);
-	static RegexMatcher aChevronMatcherB( aChevronPatternB, 0, nIcuErr);
-	aChevronMatcherB.reset( aIcuSearchPatStr);
-	aIcuSearchPatStr = aChevronMatcherB.replaceAll( aChevronReplaceB, nIcuErr);
-	aChevronMatcherB.reset();
+	static const ::rtl::OUString aChevronPatternB = ::rtl::OUString::createFromAscii( "\\\\<" );
+	static const ::rtl::OUString aChevronReplaceB = ::rtl::OUString::createFromAscii( "\\\\b(?=\\\\w)" );
+    URegularExpression *aChevronMatcherB = uregex_open( (const UChar*)aChevronPatternB.getStr(), -1, 0, NULL, &nIcuErr);
+    uregex_setText(aChevronMatcherB, (const UChar*)rPatternStr.getStr(), -1, &nIcuErr);
+    ::std::vector<sal_uInt16> replacedTextB(rPatternStr.getLength() * 2);
+    int32_t realSize = uregex_replaceAll(aChevronMatcherB, (const UChar*)aChevronReplaceB.getStr(), -1, (UChar*)replacedTextB.data(), replacedTextB.capacity(), &nIcuErr);
+    if (realSize > replacedTextB.capacity()) {
+        replacedTextB.reserve(realSize);
+        realSize = uregex_replaceAll(aChevronMatcherB, (const UChar*)aChevronReplaceB.getStr(), -1, (UChar*)replacedTextB.data(), replacedTextB.capacity(), &nIcuErr);
+    }
+	uregex_close(aChevronMatcherB);
 	// - by replacing \> with "look-behind word-char followed by a word-break"
-	static const IcuUniString aChevronPatternE( "\\\\>", -1, IcuUniString::kInvariant);
-	static const IcuUniString aChevronReplaceE( "(?<=\\\\w)\\\\b", -1, IcuUniString::kInvariant);
-	static RegexMatcher aChevronMatcherE( aChevronPatternE, 0, nIcuErr);
-	aChevronMatcherE.reset( aIcuSearchPatStr);
-	aIcuSearchPatStr = aChevronMatcherE.replaceAll( aChevronReplaceE, nIcuErr);
-	aChevronMatcherE.reset();
+	static const ::rtl::OUString aChevronPatternE = ::rtl::OUString::createFromAscii( "\\\\>" );
+	static const ::rtl::OUString aChevronReplaceE = ::rtl::OUString::createFromAscii( "(?<=\\\\w)\\\\b" );
+    URegularExpression *aChevronMatcherE = uregex_open( (const UChar*)aChevronPatternE.getStr(), -1, 0, NULL, &nIcuErr);
+	uregex_setText(aChevronMatcherE, (const UChar*)replacedTextB.data(), -1, &nIcuErr);
+    ::std::vector<sal_uInt16> replacedTextE(replacedTextB.capacity() * 2);
+    realSize = uregex_replaceAll(aChevronMatcherE, (const UChar*)aChevronReplaceE.getStr(), -1, (UChar*)replacedTextE.data(), replacedTextE.capacity(), &nIcuErr);
+    if (realSize > replacedTextE.capacity()) {
+        replacedTextE.reserve(realSize);
+        realSize = uregex_replaceAll(aChevronMatcherE, (const UChar*)aChevronReplaceE.getStr(), -1, (UChar*)replacedTextE.data(), replacedTextE.capacity(), &nIcuErr);
+    }
+	uregex_close(aChevronMatcherE);
 #endif
-	pRegexMatcher = new RegexMatcher( aIcuSearchPatStr, nIcuSearchFlags, nIcuErr);
+	pRegex = uregex_open( (const UChar*)replacedTextE.data(), -1, nIcuSearchFlags, NULL, &nIcuErr);
 	if( nIcuErr)
-		{ delete pRegexMatcher; pRegexMatcher = NULL;}
+		{ uregex_close(pRegex); pRegex = NULL;}
 }
 
 //---------------------------------------------------------------------------
@@ -770,7 +782,7 @@ SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
 {
 	SearchResult aRet;
 	aRet.subRegExpressions = 0;
-	if( !pRegexMatcher)
+	if( !pRegex)
 		return aRet;
 
 	if( endPos > searchStr.getLength())
@@ -778,17 +790,17 @@ SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
 
 	// use the ICU RegexMatcher to find the matches
 	UErrorCode nIcuErr = U_ZERO_ERROR;
-	const IcuUniString aSearchTargetStr( (const UChar*)searchStr.getStr(), endPos);
-	pRegexMatcher->reset( aSearchTargetStr);
+	const ::rtl::OUString aSearchTargetStr = searchStr.copy(0, endPos);
+	uregex_setText(pRegex, (const UChar*)aSearchTargetStr.getStr(), -1, &nIcuErr);
 	// search until there is a valid match
 	for(;;)
 	{
-		if( !pRegexMatcher->find( startPos, nIcuErr))
+		if( !uregex_find(pRegex, startPos, &nIcuErr))
 			return aRet;
 
 		// #i118887# ignore zero-length matches e.g. "a*" in "bc"
-		int nStartOfs = pRegexMatcher->start( nIcuErr);
-		int nEndOfs = pRegexMatcher->end( nIcuErr);
+		int nStartOfs = uregex_start(pRegex, 0, &nIcuErr);
+		int nEndOfs = uregex_end(pRegex, 0, &nIcuErr);
 		if( nStartOfs < nEndOfs)
 			break;
 		// try at next position if there was a zero-length match
@@ -797,15 +809,15 @@ SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
 	}
 
 	// extract the result of the search
-	const int nGroupCount = pRegexMatcher->groupCount();
+	const int nGroupCount = uregex_groupCount(pRegex, &nIcuErr);
 	aRet.subRegExpressions = nGroupCount + 1;
 	aRet.startOffset.realloc( aRet.subRegExpressions);
 	aRet.endOffset.realloc( aRet.subRegExpressions);
-	aRet.startOffset[0] = pRegexMatcher->start( nIcuErr);
-	aRet.endOffset[0]   = pRegexMatcher->end( nIcuErr);
+	aRet.startOffset[0] = uregex_start(pRegex, 0, &nIcuErr);
+	aRet.endOffset[0]   = uregex_end(pRegex, 0, &nIcuErr);
 	for( int i = 1; i <= nGroupCount; ++i) {
-		aRet.startOffset[i] = pRegexMatcher->start( i, nIcuErr);
-		aRet.endOffset[i]   = pRegexMatcher->end( i, nIcuErr);
+		aRet.startOffset[i] = uregex_start(pRegex, i, &nIcuErr);
+		aRet.endOffset[i]   = uregex_end(pRegex, i, &nIcuErr);
 	}
 
 	return aRet;
@@ -818,7 +830,7 @@ SearchResult TextSearch::RESrchBkwrd( const OUString& searchStr,
 	// NOTE: for backwards search callers provide startPos/endPos inverted!
 	SearchResult aRet;
 	aRet.subRegExpressions = 0;
-	if( !pRegexMatcher)
+	if( !pRegex)
 		return aRet;
 
 	if( startPos > searchStr.getLength())
@@ -828,37 +840,37 @@ SearchResult TextSearch::RESrchBkwrd( const OUString& searchStr,
 	// TODO: use ICU's backward searching once it becomes available
 	//       as its replacement using forward search is not as good as the real thing
 	UErrorCode nIcuErr = U_ZERO_ERROR;
-	const IcuUniString aSearchTargetStr( (const UChar*)searchStr.getStr(), startPos);
-	pRegexMatcher->reset( aSearchTargetStr);
-	if( !pRegexMatcher->find( endPos, nIcuErr))
+	const ::rtl::OUString aSearchTargetStr = searchStr.copy(0, startPos);
+	uregex_setText(pRegex, (const UChar*)aSearchTargetStr.getStr(), -1, &nIcuErr);
+	if( !uregex_find(pRegex, endPos, &nIcuErr))
 		return aRet;
 
 	// find the last match
 	int nLastPos = 0;
 	int nFoundEnd = 0;
 	do {
-		nLastPos = pRegexMatcher->start( nIcuErr);
-		nFoundEnd = pRegexMatcher->end( nIcuErr);
+		nLastPos = uregex_start(pRegex, 0, &nIcuErr);
+		nFoundEnd = uregex_end(pRegex, 0, &nIcuErr);
 		if( nFoundEnd >= startPos)
 			break;
 		if( nFoundEnd == nLastPos)
 			++nFoundEnd;
-	} while( pRegexMatcher->find( nFoundEnd, nIcuErr));
+	} while( uregex_find(pRegex, nFoundEnd, &nIcuErr));
 
 	// find last match again to get its details
-	pRegexMatcher->find( nLastPos, nIcuErr);
+	uregex_find(pRegex, nLastPos, &nIcuErr);
 
 	// fill in the details of the last match
-	const int nGroupCount = pRegexMatcher->groupCount();
+	const int nGroupCount = uregex_groupCount(pRegex, &nIcuErr);
 	aRet.subRegExpressions = nGroupCount + 1;
 	aRet.startOffset.realloc( aRet.subRegExpressions);
 	aRet.endOffset.realloc( aRet.subRegExpressions);
 	// NOTE: existing users of backward search seem to expect startOfs/endOfs being inverted!
-	aRet.startOffset[0] = pRegexMatcher->end( nIcuErr);
-	aRet.endOffset[0]   = pRegexMatcher->start( nIcuErr);
+	aRet.startOffset[0] = uregex_end(pRegex, 0, &nIcuErr);
+	aRet.endOffset[0]   = uregex_start(pRegex, 0, &nIcuErr);
 	for( int i = 1; i <= nGroupCount; ++i) {
-		aRet.startOffset[i] = pRegexMatcher->end( i, nIcuErr);
-		aRet.endOffset[i]   = pRegexMatcher->start( i, nIcuErr);
+		aRet.startOffset[i] = uregex_end(pRegex, i, &nIcuErr);
+		aRet.endOffset[i]   = uregex_start(pRegex, i, &nIcuErr);
 	}
 
 	return aRet;

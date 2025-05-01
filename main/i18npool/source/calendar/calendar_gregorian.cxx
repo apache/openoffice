@@ -161,11 +161,10 @@ Calendar_gregorian::init(Era *_eraArray)
          * not all, language and country and variant), otherwise the current 
          * default locale would be used again and the calendar keyword ignored. 
          * */
-        icu::Locale aIcuLocale( "", NULL, NULL, "calendar=gregorian");
-
-        UErrorCode status;
-        body = icu::Calendar::createInstance( aIcuLocale, status = U_ZERO_ERROR);
-        if (!body || !U_SUCCESS(status)) throw ERROR;
+        UErrorCode status = U_ZERO_ERROR;
+        body = ucal_open(NULL, -1, "@calendar=gregorian", UCAL_GREGORIAN, &status);
+        if (!body || !U_SUCCESS(status))
+            throw ERROR;
 
 #if 0
         {
@@ -292,8 +291,8 @@ Calendar_gregorian::getUniqueID() throw(RuntimeException)
 void SAL_CALL
 Calendar_gregorian::setDateTime( double timeInDays ) throw(RuntimeException)
 {
-        UErrorCode status;
-        body->setTime(timeInDays * U_MILLIS_PER_DAY, status = U_ZERO_ERROR);
+        UErrorCode status = U_ZERO_ERROR;
+        ucal_setMillis(body, timeInDays * U_MILLIS_PER_DAY, &status);
         if ( !U_SUCCESS(status) ) throw ERROR;
         getValue();
 }
@@ -305,8 +304,8 @@ Calendar_gregorian::getDateTime() throw(RuntimeException)
             setValue();
             getValue();
         }
-        UErrorCode status;
-        double r = body->getTime(status = U_ZERO_ERROR);
+        UErrorCode status = U_ZERO_ERROR;
+        double r = ucal_getMillis(body, &status);
         if ( !U_SUCCESS(status) ) throw ERROR;
         return r / U_MILLIS_PER_DAY;
 }
@@ -432,7 +431,7 @@ void Calendar_gregorian::submitFields() throw(com::sun::star::uno::RuntimeExcept
             switch (fieldIndex)
             {
                 default:
-                    body->set(fieldNameConverter(fieldIndex), fieldSetValue[fieldIndex]);
+                    ucal_set(body, fieldNameConverter(fieldIndex), fieldSetValue[fieldIndex]);
                     break;
                 case CalendarFieldIndex::ZONE_OFFSET:
                 case CalendarFieldIndex::DST_OFFSET:
@@ -444,9 +443,9 @@ void Calendar_gregorian::submitFields() throw(com::sun::star::uno::RuntimeExcept
     }
     sal_Int32 nZoneOffset, nDSTOffset;
     if (getZoneOffset( nZoneOffset))
-        body->set( fieldNameConverter( CalendarFieldIndex::ZONE_OFFSET), nZoneOffset);
+        ucal_set(body, fieldNameConverter( CalendarFieldIndex::ZONE_OFFSET), nZoneOffset);
     if (getDSTOffset( nDSTOffset))
-        body->set( fieldNameConverter( CalendarFieldIndex::DST_OFFSET), nDSTOffset);
+        ucal_set(body, fieldNameConverter( CalendarFieldIndex::DST_OFFSET), nDSTOffset);
 }
 
 void Calendar_gregorian::submitValues( sal_Int32 nYear,
@@ -456,23 +455,23 @@ void Calendar_gregorian::submitValues( sal_Int32 nYear,
 {
     submitFields();
     if (nYear >= 0)
-        body->set( UCAL_YEAR, nYear);
+        ucal_set(body, UCAL_YEAR, nYear);
     if (nMonth >= 0)
-        body->set( UCAL_MONTH, nMonth);
+        ucal_set(body, UCAL_MONTH, nMonth);
     if (nDay >= 0)
-        body->set( UCAL_DATE, nDay);
+        ucal_set(body, UCAL_DATE, nDay);
     if (nHour >= 0)
-        body->set( UCAL_HOUR_OF_DAY, nHour);
+        ucal_set(body, UCAL_HOUR_OF_DAY, nHour);
     if (nMinute >= 0)
-        body->set( UCAL_MINUTE, nMinute);
+        ucal_set(body, UCAL_MINUTE, nMinute);
     if (nSecond >= 0)
-        body->set( UCAL_SECOND, nSecond);
+        ucal_set(body, UCAL_SECOND, nSecond);
     if (nMilliSecond >= 0)
-        body->set( UCAL_MILLISECOND, nMilliSecond);
+        ucal_set(body, UCAL_MILLISECOND, nMilliSecond);
     if (nZone != 0)
-        body->set( UCAL_ZONE_OFFSET, nZone);
+        ucal_set(body, UCAL_ZONE_OFFSET, nZone);
     if (nDST != 0)
-        body->set( UCAL_DST_OFFSET, nDST);
+        ucal_set(body, UCAL_DST_OFFSET, nDST);
 }
 
 static void lcl_setCombinedOffsetFieldValues( sal_Int32 nValue,
@@ -533,55 +532,64 @@ void Calendar_gregorian::setValue() throw(RuntimeException)
             UErrorCode status;
             if ( !(fieldSet & (1 << CalendarFieldIndex::YEAR)) )
             {
-                nYear = body->get( UCAL_YEAR, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nYear = ucal_get(body, UCAL_YEAR, &status);
                 if ( !U_SUCCESS(status) )
                     nYear = -1;
             }
             if ( !(fieldSet & (1 << CalendarFieldIndex::MONTH)) )
             {
-                nMonth = body->get( UCAL_MONTH, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nMonth = ucal_get(body, UCAL_MONTH, &status);
                 if ( !U_SUCCESS(status) )
                     nMonth = -1;
             }
             if ( !(fieldSet & (1 << CalendarFieldIndex::DAY_OF_MONTH)) )
             {
-                nDay = body->get( UCAL_DATE, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nDay = ucal_get(body, UCAL_DATE, &status);
                 if ( !U_SUCCESS(status) )
                     nDay = -1;
             }
             if ( !(fieldSet & (1 << CalendarFieldIndex::HOUR)) )
             {
-                nHour = body->get( UCAL_HOUR_OF_DAY, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nHour = ucal_get(body, UCAL_HOUR_OF_DAY, &status);
                 if ( !U_SUCCESS(status) )
                     nHour = -1;
             }
             if ( !(fieldSet & (1 << CalendarFieldIndex::MINUTE)) )
             {
-                nMinute = body->get( UCAL_MINUTE, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nMinute = ucal_get(body, UCAL_MINUTE, &status);
                 if ( !U_SUCCESS(status) )
                     nMinute = -1;
             }
             if ( !(fieldSet & (1 << CalendarFieldIndex::SECOND)) )
             {
-                nSecond = body->get( UCAL_SECOND, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nSecond = ucal_get(body, UCAL_SECOND, &status);
                 if ( !U_SUCCESS(status) )
                     nSecond = -1;
             }
             if ( !(fieldSet & (1 << CalendarFieldIndex::MILLISECOND)) )
             {
-                nMilliSecond = body->get( UCAL_MILLISECOND, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nMilliSecond = ucal_get(body, UCAL_MILLISECOND, &status);
                 if ( !U_SUCCESS(status) )
                     nMilliSecond = -1;
             }
             if ( !(fieldSet & (1 << CalendarFieldIndex::ZONE_OFFSET)) )
             {
-                nZone0 = body->get( UCAL_ZONE_OFFSET, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nZone0 = ucal_get(body, UCAL_ZONE_OFFSET, &status);
                 if ( !U_SUCCESS(status) )
                     nZone0 = 0;
             }
             if ( !(fieldSet & (1 << CalendarFieldIndex::DST_OFFSET)) )
             {
-                nDST0 = body->get( UCAL_DST_OFFSET, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                nDST0 = ucal_get(body, UCAL_DST_OFFSET, &status);
                 if ( !U_SUCCESS(status) )
                     nDST0 = 0;
             }
@@ -591,10 +599,12 @@ void Calendar_gregorian::setValue() throw(RuntimeException)
 
             DUMP_ICU_CAL_MSG(("%s\n","setValue() in bNeedZone||bNeedDST after submitValues()"));
             DUMP_I18N_CAL_MSG(("%s\n","setValue() in bNeedZone||bNeedDST after submitValues()"));
-            nZone1 = body->get( UCAL_ZONE_OFFSET, status = U_ZERO_ERROR);
+            status = U_ZERO_ERROR;
+            nZone1 = ucal_get(body, UCAL_ZONE_OFFSET, &status);
             if ( !U_SUCCESS(status) )
                 nZone1 = 0;
-            nDST1 = body->get( UCAL_DST_OFFSET, status = U_ZERO_ERROR);
+            status = U_ZERO_ERROR;
+            nDST1 = ucal_get(body, UCAL_DST_OFFSET, &status);
             if ( !U_SUCCESS(status) )
                 nDST1 = 0;
         }
@@ -607,11 +617,11 @@ void Calendar_gregorian::setValue() throw(RuntimeException)
 
         if ( bNeedZone || bNeedDST )
         {
-            UErrorCode status;
-            sal_Int32 nZone2 = body->get( UCAL_ZONE_OFFSET, status = U_ZERO_ERROR);
+            UErrorCode status = U_ZERO_ERROR;
+            sal_Int32 nZone2 = ucal_get(body, UCAL_ZONE_OFFSET, &status);
             if ( !U_SUCCESS(status) )
                 nZone2 = nZone1;
-            sal_Int32 nDST2 = body->get( UCAL_DST_OFFSET, status = U_ZERO_ERROR);
+            sal_Int32 nDST2 = ucal_get(body, UCAL_DST_OFFSET, &status);
             if ( !U_SUCCESS(status) )
                 nDST2 = nDST1;
             if ( nZone0 != nZone1 || nZone2 != nZone1 || nDST0 != nDST1 || nDST2 != nDST1 )
@@ -647,7 +657,8 @@ void Calendar_gregorian::setValue() throw(RuntimeException)
                 //      -3:30:52 (!) instead of -3:30
                 //      if first submission included time zone -3:30 that would be wrong.
                 bool bResubmit = false;
-                sal_Int32 nZone3 = body->get( UCAL_ZONE_OFFSET, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                sal_Int32 nZone3 = ucal_get(body, UCAL_ZONE_OFFSET, &status);
                 if ( !U_SUCCESS(status) )
                     nZone3 = nZone2;
                 if (nZone3 != nZone2)
@@ -668,7 +679,8 @@ void Calendar_gregorian::setValue() throw(RuntimeException)
                 // factored in all days by ICU and there seems to be some
                 // unknown behavior.
                 // TZ=Asia/Tehran 1999-03-22 exposes this, for example.
-                sal_Int32 nDST3 = body->get( UCAL_DST_OFFSET, status = U_ZERO_ERROR);
+                status = U_ZERO_ERROR;
+                sal_Int32 nDST3 = ucal_get(body, UCAL_DST_OFFSET, &status);
                 if ( !U_SUCCESS(status) )
                     nDST3 = nDST2;
                 if (nDST2 != nDST3 && !nDST3)
@@ -693,8 +705,8 @@ void Calendar_gregorian::setValue() throw(RuntimeException)
 #if erDUMP_ICU_CALENDAR || erDUMP_I18N_CALENDAR
         {
             // force icu::Calendar to recalculate
-            UErrorCode status;
-            sal_Int32 nTmp = body->get( UCAL_DATE, status = U_ZERO_ERROR);
+            UErrorCode status = U_ZERO_ERROR;
+            sal_Int32 nTmp = ucal_get(body, UCAL_DATE, &status);
             DUMP_ICU_CAL_MSG(("%s: %d\n","setValue() result day",nTmp));
             DUMP_I18N_CAL_MSG(("%s: %d\n","setValue() result day",nTmp));
         }
@@ -711,8 +723,8 @@ void Calendar_gregorian::getValue() throw(RuntimeException)
                 fieldIndex == CalendarFieldIndex::DST_OFFSET_SECOND_MILLIS)
             continue;   // not ICU fields
 
-        UErrorCode status; sal_Int32 value = body->get( fieldNameConverter(
-                    fieldIndex), status = U_ZERO_ERROR);
+        UErrorCode status = U_ZERO_ERROR;
+        sal_Int32 value = ucal_get(body, fieldNameConverter(fieldIndex), &status);
         if ( !U_SUCCESS(status) ) throw ERROR;
 
         // Convert millisecond to minute for ZONE and DST and set remainder in
@@ -762,8 +774,8 @@ void SAL_CALL
 Calendar_gregorian::addValue( sal_Int16 fieldIndex, sal_Int32 value ) throw(RuntimeException)
 {
         // since ZONE and DST could not be add, we don't need to convert value here
-        UErrorCode status;
-        body->add(fieldNameConverter(fieldIndex), value, status = U_ZERO_ERROR);
+        UErrorCode status = U_ZERO_ERROR;
+        ucal_add(body, fieldNameConverter(fieldIndex), value, &status);
         if ( !U_SUCCESS(status) ) throw ERROR;
         getValue();
 }
@@ -865,7 +877,7 @@ Calendar_gregorian::getFirstDayOfWeek() throw(RuntimeException)
     // Check for underflow just in case we're called "out of sync".
     return ::std::max( sal::static_int_cast<sal_Int16>(0),
             sal::static_int_cast<sal_Int16>( static_cast<sal_Int16>(
-                    body->getFirstDayOfWeek()) - 1));
+                    ucal_getAttribute(body, UCAL_FIRST_DAY_OF_WEEK)) - 1));
 }
 
 void SAL_CALL
@@ -873,14 +885,14 @@ Calendar_gregorian::setFirstDayOfWeek( sal_Int16 day )
 throw(RuntimeException)
 {
     // Weekdays::SUNDAY == 0, UCAL_SUNDAY == 1 => offset +1
-    body->setFirstDayOfWeek( static_cast<UCalendarDaysOfWeek>( day + 1));
+    ucal_setAttribute(body, UCAL_FIRST_DAY_OF_WEEK, static_cast<UCalendarDaysOfWeek>( day + 1));
 }
 
 void SAL_CALL
 Calendar_gregorian::setMinimumNumberOfDaysForFirstWeek( sal_Int16 days ) throw(RuntimeException)
 {
         aCalendar.MinimumNumberOfDaysForFirstWeek = days;
-        body->setMinimalDaysInFirstWeek( static_cast<uint8_t>( days));
+        ucal_setAttribute(body, UCAL_MINIMAL_DAYS_IN_FIRST_WEEK, static_cast<uint8_t>( days));
 }
 
 sal_Int16 SAL_CALL

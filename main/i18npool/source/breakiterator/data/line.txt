@@ -14,7 +14,8 @@
 #
 
 !!chain;
-!!LBCMNoChain;
+# Breaks on recent ICU, see LibreOffice's bug report at https://bugs.documentfoundation.org/show_bug.cgi?id=158108
+#!!LBCMNoChain;
 
 
 !!lookAheadHardBreak;
