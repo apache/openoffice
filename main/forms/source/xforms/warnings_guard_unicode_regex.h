@@ -24,6 +24,9 @@
 #ifndef INCLUDED_WARNINGS_GUARD_UNICODE_REGEX_H
 #define INCLUDED_WARNINGS_GUARD_UNICODE_REGEX_H
 
+#define U_SHOW_CPLUSPLUS_API 0
+#define U_SHOW_CPLUSPLUS_HEADER_API 0
+
 // Because the GCC system_header mechanism doesn't work in .c/.cxx compilation
 // units and more important affects the rest of the current include file, the
 // warnings guard is separated into this header file on its own.
@@ -36,7 +39,7 @@
 #elif defined __GNUC__
 #pragma GCC system_header
 #endif
-#include <unicode/regex.h>
+#include <unicode/uregex.h>
 #ifdef _MSC_VER
 #pragma warning(pop)
 #endif

@@ -84,6 +84,8 @@ namespace xforms
     //--------------------------------------------------------------------
     OXSDDataType::~OXSDDataType()
     {
+        if ( m_pPatternMatcher )
+            uregex_close( m_pPatternMatcher );
     }
 
     //--------------------------------------------------------------------
@@ -207,24 +209,26 @@ namespace xforms
     //--------------------------------------------------------------------
     namespace
     {
-        static void lcl_initializePatternMatcher( ::std::auto_ptr< RegexMatcher >& _rpMatcher, const ::rtl::OUString& _rPattern )
+        static void lcl_initializePatternMatcher( URegularExpression **_ppMatcher, const ::rtl::OUString& _rPattern )
         {
             UErrorCode nMatchStatus = U_ZERO_ERROR;
-            UnicodeString aIcuPattern( reinterpret_cast<const UChar *>(_rPattern.getStr()), _rPattern.getLength() );	// UChar != sal_Unicode in MinGW
-            _rpMatcher.reset( new RegexMatcher( aIcuPattern, 0, nMatchStatus ) );
+            if ( *_ppMatcher ) {
+                uregex_close( *_ppMatcher );
+                *_ppMatcher = NULL;
+            }
+            *_ppMatcher = uregex_open( reinterpret_cast<const UChar *>(_rPattern.getStr()), _rPattern.getLength(), 0, NULL, &nMatchStatus );
             OSL_ENSURE( U_SUCCESS( nMatchStatus ), "lcl_initializePatternMatcher: invalid pattern property!" );
                 // if asserts, then something changed our pattern without going to convertFastPropertyValue/checkPropertySanity
         }
 
-        static bool lcl_matchString( RegexMatcher& _rMatcher, const ::rtl::OUString& _rText )
+        static bool lcl_matchString( URegularExpression *_pMatcher, const ::rtl::OUString& _rText )
         {
             UErrorCode nMatchStatus = U_ZERO_ERROR;
-            UnicodeString aInput( reinterpret_cast<const UChar *>(_rText.getStr()), _rText.getLength() );	// UChar != sal_Unicode in MinGW
-            _rMatcher.reset( aInput );
-            if ( _rMatcher.matches( nMatchStatus ) )
+            uregex_setText( _pMatcher, reinterpret_cast<const UChar *>(_rText.getStr()), _rText.getLength(), &nMatchStatus ); // UChar != sal_Unicode in MinGW
+            if ( uregex_matches( _pMatcher, 0, &nMatchStatus ) )
             {
-                int32_t nStart = _rMatcher.start( nMatchStatus );
-                int32_t nEnd   = _rMatcher.end  ( nMatchStatus );
+                int32_t nStart = uregex_start( _pMatcher, 0, &nMatchStatus );
+                int32_t nEnd   = uregex_end  ( _pMatcher, 0, &nMatchStatus );
                 if ( ( nStart == 0 ) && ( nEnd == _rText.getLength() ) )
                     return true;
             }
@@ -245,12 +249,12 @@ namespace xforms
             // ensure our pattern matcher is up to date
             if ( m_bPatternMatcherDirty )
             {
-                lcl_initializePatternMatcher( m_pPatternMatcher, m_sPattern );
+                lcl_initializePatternMatcher( &m_pPatternMatcher, m_sPattern );
                 m_bPatternMatcherDirty = false;
             }
 
             // let it match the string
-            if ( !lcl_matchString( *m_pPatternMatcher.get(), _rValue ) )
+            if ( !lcl_matchString( m_pPatternMatcher, _rValue ) )
                 return RID_STR_XFORMS_PATTERN_DOESNT_MATCH;
         }
 
@@ -293,14 +297,15 @@ namespace xforms
             ::rtl::OUString sPattern;
             OSL_VERIFY( _rNewValue >>= sPattern );
 
-            UnicodeString aIcuPattern( reinterpret_cast<const UChar *>(sPattern.getStr()), sPattern.getLength() );	// UChar != sal_Unicode in MinGW
             UErrorCode nMatchStatus = U_ZERO_ERROR;
-            RegexMatcher aMatcher( aIcuPattern, 0, nMatchStatus );
+            // UChar != sal_Unicode in MinGW
+            URegularExpression *aMatcher = uregex_open( reinterpret_cast<const UChar *>(sPattern.getStr()), sPattern.getLength(), 0, NULL, &nMatchStatus );
             if ( U_FAILURE( nMatchStatus ) )
             {
                 _rErrorMessage = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "This is no valid pattern." ) );
                 return false;
             }
+            uregex_close( aMatcher );
         }
         return true;
     }
