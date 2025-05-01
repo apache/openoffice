@@ -22,8 +22,6 @@
 #include <sfx2/sfx.hrc>
 #include "starmath.hrc"
 
-////////////////////////////////////////////////////////////
-
 String RID_PLUSX 			{ Text = "+<?> " ; };
 String RID_MINUSX 			{ Text = "-<?> " ; };
 String RID_PLUSMINUSX 		{ Text = "+-<?> " ; };
@@ -1122,7 +1120,7 @@ Menu RID_COMMANDMENU
 					{
 						Identifier = RID_LRDBRACKETX ;
 						HelpId = HID_SMA_LRDBRACKETX ;
-						Text = "ldbracket x rdbracket " ;
+						Text = "ldbracket x rdbracket" ;
 					};
 					MenuItem
 					{
@@ -1186,7 +1184,7 @@ Menu RID_COMMANDMENU
 					{
 						Identifier = RID_SLRDBRACKETX ;
 						HelpId = HID_SMA_SLRDBRACKETX ;
-						Text = "left ldbracket x right rdbracket " ;
+						Text = "left ldbracket x right rdbracket" ;
 					};
 					MenuItem
 					{
@@ -1306,8 +1304,8 @@ Menu RID_COMMANDMENU
 					};
 					MenuItem
 					{
-						Identifier = RID_SBLANK;
-						HelpId = HID_SMA_SBLANK;
+						Identifier = RID_SBLANK ;
+						HelpId = HID_SMA_SBLANK ;
 						Text [ en-US ] = "Small Gap" ;
 					};
 					MenuItem
