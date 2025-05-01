@@ -19,11 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_starmath.hxx"
-
 
 #include <com/sun/star/accessibility/AccessibleEventId.hpp>
 #include <com/sun/star/lang/Locale.hpp>
@@ -110,8 +107,6 @@ static const char __FAR_DATA pStarMathDoc[] = "StarMathDocument";
 #define SmDocShell
 #include "smslots.hxx"
 
-////////////////////////////////////////////////////////////
-
 
 TYPEINIT1( SmDocShell, SfxObjectShell );
 
@@ -178,52 +173,52 @@ void SmDocShell::SetText(const String& rBuffer)
 		if( pViewSh )
 		{
 			pViewSh->GetViewFrame()->GetBindings().Invalidate(SID_TEXT);
-            if ( SFX_CREATE_MODE_EMBEDDED == GetCreateMode() )
-            {
-                // have SwOleClient::FormatChanged() to align the modified formula properly
-                // even if the vis area does not change (e.g. when formula text changes from
-                // "{a over b + c} over d" to "d over {a over b + c}"
-                SFX_APP()->NotifyEvent(SfxEventHint( SFX_EVENT_VISAREACHANGED, GlobalEventConfig::GetEventName(STR_EVENT_VISAREACHANGED), this));
+			if ( SFX_CREATE_MODE_EMBEDDED == GetCreateMode() )
+			{
+				// have SwOleClient::FormatChanged() to align the modified formula properly
+				// even if the vis area does not change (e.g. when formula text changes from
+				// "{a over b + c} over d" to "d over {a over b + c}"
+				SFX_APP()->NotifyEvent(SfxEventHint( SFX_EVENT_VISAREACHANGED, GlobalEventConfig::GetEventName(STR_EVENT_VISAREACHANGED), this));
 
-                Repaint();
-            }
-            else
-                pViewSh->GetGraphicWindow().Invalidate();
-        }
+				Repaint();
+			}
+			else
+				pViewSh->GetGraphicWindow().Invalidate();
+		}
 
 		if ( bIsEnabled )
 			EnableSetModified( bIsEnabled );
 		SetModified(sal_True);
 
-        // launch accessible event if necessary
-        SmGraphicAccessible *pAcc = pViewSh ? pViewSh->GetGraphicWindow().GetAccessible_Impl() : 0;
-        if (pAcc)
-        {
+		// launch accessible event if necessary
+		SmGraphicAccessible *pAcc = pViewSh ? pViewSh->GetGraphicWindow().GetAccessible_Impl() : 0;
+		if (pAcc)
+		{
 			Any aOldValue, aNewValue;
 			if ( comphelper::OCommonAccessibleText::implInitTextChangedEvent( aText, rBuffer, aOldValue, aNewValue ) )
 			{
 				pAcc->LaunchEvent( AccessibleEventId::TEXT_CHANGED,
 						aOldValue, aNewValue );
 			}
-        }
+		}
 
-        if ( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED )
-            OnDocumentPrinterChanged(0);
+		if ( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED )
+			OnDocumentPrinterChanged(0);
 	}
 }
 
 void SmDocShell::SetFormat(SmFormat& rFormat)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetFormat" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetFormat" );
 
 	aFormat = rFormat;
 	SetFormulaArranged( sal_False );
 	SetModified( sal_True );
 
-    nModifyCount++; //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
+	nModifyCount++; //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
 
-    // don't use SmGetActiveView since the view shell might not be active (0 pointer)
-    // if for example the Basic Macro dialog currently has the focus. Thus:
+	// don't use SmGetActiveView since the view shell might not be active (0 pointer)
+	// if for example the Basic Macro dialog currently has the focus. Thus:
 	SfxViewFrame* pFrm = SfxViewFrame::GetFirst( this );
 	while (pFrm)
 	{
@@ -234,110 +229,110 @@ void SmDocShell::SetFormat(SmFormat& rFormat)
 
 String SmDocShell::GetAccessibleText()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetAccessibleText" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetAccessibleText" );
 
-    if (!IsFormulaArranged())
-        ArrangeFormula();
-    if (0 == aAccText.Len())
-    {
-        DBG_ASSERT( pTree, "Tree missing" );
-        if (pTree)
-            pTree->GetAccessibleText( aAccText );
-    }
-    return aAccText;
+	if (!IsFormulaArranged())
+		ArrangeFormula();
+	if (0 == aAccText.Len())
+	{
+		DBG_ASSERT( pTree, "Tree missing" );
+		if (pTree)
+			pTree->GetAccessibleText( aAccText );
+	}
+	return aAccText;
 }
 
 void SmDocShell::Parse()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Parse" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Parse" );
 
 	if (pTree)
 		delete pTree;
-    ReplaceBadChars();
+	ReplaceBadChars();
 	pTree = aInterpreter.Parse(aText);
 	nModifyCount++; //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
-    SetFormulaArranged( sal_False );
+	SetFormulaArranged( sal_False );
 
-    aUsedSymbols = aInterpreter.GetUsedSymbols();
+	aUsedSymbols = aInterpreter.GetUsedSymbols();
 }
 
 
 void SmDocShell::ArrangeFormula()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::ArrangeFormula" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::ArrangeFormula" );
 
 	if (IsFormulaArranged())
 		return;
 
 	//! Nur für die Dauer der Existenz dieses Objekts sind am Drucker die
 	//! richtigen Einstellungen garantiert.
-    SmPrinterAccess  aPrtAcc(*this);
+	SmPrinterAccess  aPrtAcc(*this);
 //	OutputDevice	*pOutDev = aPrtAcc.GetPrinter();
-    OutputDevice* pOutDev = aPrtAcc.GetRefDev();
+	OutputDevice* pOutDev = aPrtAcc.GetRefDev();
 
 	if (!pOutDev)
-    {
+	{
 #if OSL_DEBUG_LEVEL > 1
 		DBG_ERROR("!! SmDocShell::ArrangeFormula: reference device missing !!");
 #endif
-    }
+	}
 
-    // falls nötig ein anderes OutputDevice holen für das formatiert wird
+	// falls nötig ein anderes OutputDevice holen für das formatiert wird
 	if (!pOutDev)
 	{
 		SmViewShell *pView = SmGetActiveView();
 		if (pView)
 			pOutDev = &pView->GetGraphicWindow();
 		else
-        {
-            pOutDev = &SM_MOD()->GetDefaultVirtualDev();
+		{
+			pOutDev = &SM_MOD()->GetDefaultVirtualDev();
 			pOutDev->SetMapMode( MapMode(MAP_100TH_MM) );
 		}
 	}
 	DBG_ASSERT(pOutDev->GetMapMode().GetMapUnit() == MAP_100TH_MM,
-			   "Sm : falscher MapMode");
+			   "Sm : Wrong MapMode");
 
 	const SmFormat &rFormat = GetFormat();
 	pTree->Prepare(rFormat, *this);
 
-    // format/draw formulas always from left to right,
-    // and numbers should not be converted
-    sal_uLong nLayoutMode = pOutDev->GetLayoutMode();
-    pOutDev->SetLayoutMode( TEXT_LAYOUT_BIDI_LTR );
-    sal_Int16 nDigitLang = pOutDev->GetDigitLanguage();
-    pOutDev->SetDigitLanguage( LANGUAGE_ENGLISH );
-    //
-    pTree->Arrange(*pOutDev, rFormat);
-    //
-    pOutDev->SetLayoutMode( nLayoutMode );
-    pOutDev->SetDigitLanguage( nDigitLang );
+	// format/draw formulas always from left to right,
+	// and numbers should not be converted
+	sal_uLong nLayoutMode = pOutDev->GetLayoutMode();
+	pOutDev->SetLayoutMode( TEXT_LAYOUT_BIDI_LTR );
+	sal_Int16 nDigitLang = pOutDev->GetDigitLanguage();
+	pOutDev->SetDigitLanguage( LANGUAGE_ENGLISH );
+	//
+	pTree->Arrange(*pOutDev, rFormat);
+	//
+	pOutDev->SetLayoutMode( nLayoutMode );
+	pOutDev->SetDigitLanguage( nDigitLang );
 
 	SetFormulaArranged(sal_True);
 
-    // invalidate accessible text
-    aAccText = String();
+	// invalidate accessible text
+	aAccText = String();
 }
 
 
 void SetEditEngineDefaultFonts(
-        EditEngine &/*rEditEngine*/,
-        SfxItemPool &rEditEngineItemPool )
+		EditEngine &/*rEditEngine*/,
+		SfxItemPool &rEditEngineItemPool )
 {
-        //
-        // set fonts to be used
-        //
-        SvtLinguOptions aOpt;
-        SvtLinguConfig().GetOptions( aOpt );
-        //
-        struct FontDta {
-            sal_Int16       nFallbackLang;
-            sal_Int16       nLang;
-            sal_uInt16      nFontType;
-            sal_uInt16      nFontInfoId;
-            } aTable[3] =
-        {
-            // info to get western font to be used
-            {   LANGUAGE_ENGLISH_US,    LANGUAGE_NONE,
+		//
+		// set fonts to be used
+		//
+		SvtLinguOptions aOpt;
+		SvtLinguConfig().GetOptions( aOpt );
+		//
+		struct FontDta {
+			sal_Int16       nFallbackLang;
+			sal_Int16       nLang;
+			sal_uInt16      nFontType;
+			sal_uInt16      nFontInfoId;
+			} aTable[3] =
+		{
+			// info to get western font to be used
+			{   LANGUAGE_ENGLISH_US,    LANGUAGE_NONE,
                 DEFAULTFONT_FIXED,      EE_CHAR_FONTINFO },
             // info to get CJK font to be used
             {   LANGUAGE_JAPANESE,      LANGUAGE_NONE,
@@ -390,17 +385,17 @@ void SetEditEngineDefaultFonts(
 
 EditEngine& SmDocShell::GetEditEngine()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetEditEngine" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetEditEngine" );
 
 	if (!pEditEngine)
 	{
-        //!
-        //! see also SmEditWindow::DataChanged !
-        //!
+		//!
+		//! see also SmEditWindow::DataChanged !
+		//!
 
 		pEditEngineItemPool = EditEngine::CreatePool();
 
-        SetEditEngineDefaultFonts( *pEditEngine, *pEditEngineItemPool );
+		SetEditEngineDefaultFonts( *pEditEngine, *pEditEngineItemPool );
 
 		pEditEngine = new EditEngine( pEditEngineItemPool );
 
@@ -420,11 +415,11 @@ EditEngine& SmDocShell::GetEditEngine()
 
 		pEditEngine->EraseVirtualDevice();
 
-        // set initial text if the document already has some...
-        // (may be the case when reloading a doc)
-        String aTxt( GetText() );
-        if (aTxt.Len())
-            pEditEngine->SetText( aTxt );
+		// set initial text if the document already has some...
+		// (may be the case when reloading a doc)
+		String aTxt( GetText() );
+		if (aTxt.Len())
+			pEditEngine->SetText( aTxt );
 
 		pEditEngine->ClearModifyFlag();
 
@@ -438,7 +433,7 @@ EditEngine& SmDocShell::GetEditEngine()
 
 SfxItemPool& SmDocShell::GetEditEngineItemPool()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetEditEngineItemPool" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetEditEngineItemPool" );
 
 	if (!pEditEngineItemPool)
 		GetEditEngine();
@@ -449,21 +444,21 @@ SfxItemPool& SmDocShell::GetEditEngineItemPool()
 
 void SmDocShell::Draw(OutputDevice &rDev, Point &rPosition)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Draw" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Draw" );
 
-    if (!pTree)
+	if (!pTree)
 		Parse();
 	DBG_ASSERT(pTree, "Sm : NULL pointer");
 
 	if (!IsFormulaArranged())
 		ArrangeFormula();
 
-	//Problem: Was passiert mit dem WYSIWYG? Wir haben waehrend wir inplace aktiv
-	//sind kein Referenzdevice und sind auch nicht darauf ausgerichtet. Es kann
-	//also jetzt eine Differenz zwischen der VisArea (spricht die Groesse im Client)
-	//und der jetzt vorliegenden Groesse geben.
-	//Idee: Die Differenz koennte, zumindest behelfsmaessig, mit SmNod::SetSize
-	//angepasst werden.
+	// Problem: Was passiert mit dem WYSIWYG? Wir haben während wir inplace aktiv
+	// sind kein Referenzdevice und sind auch nicht darauf ausgerichtet. Es kann
+	// also jetzt eine Differenz zwischen der VisArea (spricht die Groesse im Client)
+	// und der jetzt vorliegenden Groesse geben.
+	// Idee: Die Differenz koennte, zumindest behelfsmässig, mit SmNod::SetSize
+	// angepasst werden.
 
 	rPosition.X() += aFormat.GetDistance( DIS_LEFTSPACE );
 	rPosition.Y() += aFormat.GetDistance( DIS_TOPSPACE	);
@@ -494,15 +489,15 @@ void SmDocShell::Draw(OutputDevice &rDev, Point &rPosition)
     rDev.SetLayoutMode( nLayoutMode );
     rDev.SetDigitLanguage( nDigitLang );
 
-    if (bRestoreDrawMode)
-        rDev.SetDrawMode( nOldDrawMode );
+	if (bRestoreDrawMode)
+		rDev.SetDrawMode( nOldDrawMode );
 }
 
 
 
 Size SmDocShell::GetSize()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetSize" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetSize" );
 
 	Size aRet;
 
@@ -530,14 +525,13 @@ Size SmDocShell::GetSize()
 	return aRet;
 }
 
-////////////////////////////////////////
 
 SmPrinterAccess::SmPrinterAccess( SmDocShell &rDocShell )
 {
 	if ( 0 != (pPrinter = rDocShell.GetPrt()) )
 	{
 		pPrinter->Push( PUSH_MAPMODE );
-        if ( SFX_CREATE_MODE_EMBEDDED == rDocShell.GetCreateMode() )
+		if ( SFX_CREATE_MODE_EMBEDDED == rDocShell.GetCreateMode() )
 		{
 			// if it is an embedded object (without its own printer)
 			// we change the MapMode temporarily.
@@ -559,11 +553,11 @@ SmPrinterAccess::SmPrinterAccess( SmDocShell &rDocShell )
 			}
 		}
 	}
-    if ( 0 != (pRefDev = rDocShell.GetRefDev()) && pPrinter != pRefDev )
-    {
-        pRefDev->Push( PUSH_MAPMODE );
-        if ( SFX_CREATE_MODE_EMBEDDED == rDocShell.GetCreateMode() )
-        {
+	if ( 0 != (pRefDev = rDocShell.GetRefDev()) && pPrinter != pRefDev )
+	{
+		pRefDev->Push( PUSH_MAPMODE );
+		if ( SFX_CREATE_MODE_EMBEDDED == rDocShell.GetCreateMode() )
+		{
             // if it is an embedded object (without its own printer)
             // we change the MapMode temporarily.
             //!If it is a document with its own printer the MapMode should
@@ -590,27 +584,26 @@ SmPrinterAccess::~SmPrinterAccess()
 {
 	if ( pPrinter )
 		pPrinter->Pop();
-    if ( pRefDev && pRefDev != pPrinter )
-        pRefDev->Pop();
+	if ( pRefDev && pRefDev != pPrinter )
+		pRefDev->Pop();
 }
 
-////////////////////////////////////////
 
 Printer* SmDocShell::GetPrt()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetPrt" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetPrt" );
 
-    if ( SFX_CREATE_MODE_EMBEDDED == GetCreateMode() )
+	if ( SFX_CREATE_MODE_EMBEDDED == GetCreateMode() )
 	{
-		//Normalerweise wird der Printer vom Server besorgt. Wenn dieser aber
-		//keinen liefert (weil etwa noch keine connection da ist), kann es
-		//dennoch sein, dass wir den Printer kennen, denn dieser wird in
-		//OnDocumentPrinterChanged vom Server durchgereicht und dann temporaer
-		//festgehalten.
-        Printer *pPrt = GetDocumentPrinter();
-        if ( !pPrt && pTmpPrinter )
-            pPrt = pTmpPrinter;
-        return pPrt;
+		// Normalerweise wird der Printer vom Server besorgt. Wenn dieser aber
+		// keinen liefert (weil etwa noch keine connection da ist), kann es
+		// dennoch sein, dass wir den Printer kennen, denn dieser wird in
+		// OnDocumentPrinterChanged vom Server durchgereicht und dann temporär
+		// festgehalten.
+		Printer *pPrt = GetDocumentPrinter();
+		if ( !pPrt && pTmpPrinter )
+			pPrt = pTmpPrinter;
+		return pPrt;
 	}
 	else if ( !pPrinter )
 	{
@@ -625,7 +618,7 @@ Printer* SmDocShell::GetPrt()
                            SID_SAVE_ONLY_USED_SYMBOLS, SID_SAVE_ONLY_USED_SYMBOLS,
 						   0);
 
-        SmModule *pp = SM_MOD();
+		SmModule *pp = SM_MOD();
 		pp->GetConfig()->ConfigToItemSet(*pOptions);
 		pPrinter = new SfxPrinter(pOptions);
 		pPrinter->SetMapMode( MapMode(MAP_100TH_MM) );
@@ -635,7 +628,7 @@ Printer* SmDocShell::GetPrt()
 
 OutputDevice* SmDocShell::GetRefDev()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetRefDev" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetRefDev" );
 
     if ( SFX_CREATE_MODE_EMBEDDED == GetCreateMode() )
     {
@@ -644,29 +637,29 @@ OutputDevice* SmDocShell::GetRefDev()
             return pOutDev;
     }
 
-    return GetPrt();
+	return GetPrt();
 }
 
 
 void SmDocShell::SetPrinter( SfxPrinter *pNew )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetPrinter" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetPrinter" );
 
 	delete pPrinter;
-	pPrinter = pNew;	//Eigentumsuebergang!
+	pPrinter = pNew;	// Eigentumsübergang!
 	pPrinter->SetMapMode( MapMode(MAP_100TH_MM) );
 	SetFormulaArranged(sal_False);
-    Repaint();
+	Repaint();
 }
 
 void SmDocShell::OnDocumentPrinterChanged( Printer *pPrt )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::OnDocumentPrinterChanged" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::OnDocumentPrinterChanged" );
 
-    pTmpPrinter = pPrt;
+	pTmpPrinter = pPrt;
 	SetFormulaArranged(sal_False);
 	Size aOldSize = GetVisArea().GetSize();
-    Repaint();
+	Repaint();
 	if( aOldSize != GetVisArea().GetSize() && aText.Len() )
 		SetModified( sal_True );
 	pTmpPrinter = 0;
@@ -674,19 +667,19 @@ void SmDocShell::OnDocumentPrinterChanged( Printer *pPrt )
 
 void SmDocShell::Repaint()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Repaint" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Repaint" );
 
 	sal_Bool bIsEnabled = IsEnableSetModified();
 	if ( bIsEnabled )
 		EnableSetModified( sal_False );
 
-    SetFormulaArranged( sal_False );
+	SetFormulaArranged( sal_False );
 
 	Size aVisSize = GetSize();
 	SetVisAreaSize( aVisSize );
 	SmViewShell *pViewSh = SmGetActiveView();
 	if (pViewSh)
-        pViewSh->GetGraphicWindow().Invalidate();
+		pViewSh->GetGraphicWindow().Invalidate();
 
 	if ( bIsEnabled )
 		EnableSetModified( bIsEnabled );
@@ -696,19 +689,19 @@ void SmDocShell::Repaint()
 SmDocShell::SmDocShell( const sal_uInt64 i_nSfxCreationFlags ) :
 	SfxObjectShell( i_nSfxCreationFlags ),
 	pTree				( 0 ),
-    pEditEngineItemPool ( 0 ),
-    pEditEngine         ( 0 ),
+	pEditEngineItemPool ( 0 ),
+	pEditEngine			( 0 ),
 	pPrinter			( 0 ),
-    pTmpPrinter         ( 0 ),
+	pTmpPrinter			( 0 ),
 	nModifyCount		( 0 ),
 	bIsFormulaArranged	( sal_False )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SmDocShell" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SmDocShell" );
 
 	SetPool(&SFX_APP()->GetPool());
 
-    SmModule *pp = SM_MOD();
-    aFormat = pp->GetConfig()->GetStandardFormat();
+	SmModule *pp = SM_MOD();
+	aFormat = pp->GetConfig()->GetStandardFormat();
 
 	StartListening(aFormat);
 	StartListening(*pp->GetConfig());
@@ -720,9 +713,9 @@ SmDocShell::SmDocShell( const sal_uInt64 i_nSfxCreationFlags ) :
 
 SmDocShell::~SmDocShell()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::~SmDocShell" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::~SmDocShell" );
 
-    SmModule *pp = SM_MOD();
+	SmModule *pp = SM_MOD();
 
 	EndListening(aFormat);
 	EndListening(*pp->GetConfig());
@@ -736,7 +729,7 @@ SmDocShell::~SmDocShell()
 
 sal_Bool SmDocShell::SetData( const String& rData )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetData" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetData" );
 
 	SetText( rData );
 	return sal_True;
@@ -745,53 +738,53 @@ sal_Bool SmDocShell::SetData( const String& rData )
 
 sal_Bool SmDocShell::ConvertFrom(SfxMedium &rMedium)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::ConvertFrom" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::ConvertFrom" );
 
 	sal_Bool	 bSuccess = sal_False;
 	const String& rFltName = rMedium.GetFilter()->GetFilterName();
 
-    DBG_ASSERT( !rFltName.EqualsAscii( STAROFFICE_XML ), "Wrong filter!");
+	DBG_ASSERT( !rFltName.EqualsAscii( STAROFFICE_XML ), "Wrong filter!");
 
-    if ( rFltName.EqualsAscii( MATHML_XML ) )
+	if ( rFltName.EqualsAscii( MATHML_XML ) )
 	{
 		if (pTree)
 		{
 			delete pTree;
 			pTree = 0;
 		}
-        Reference<com::sun::star::frame::XModel> xModel(GetModel());
-        SmXMLImportWrapper aEquation(xModel);
-        bSuccess = 0 == aEquation.Import(rMedium);
+		Reference<com::sun::star::frame::XModel> xModel(GetModel());
+		SmXMLImportWrapper aEquation(xModel);
+		bSuccess = 0 == aEquation.Import(rMedium);
 	}
 	else
 	{
 		SvStream *pStream = rMedium.GetInStream();
-        if ( pStream )
+		if ( pStream )
 		{
-            if ( SotStorage::IsStorageFile( pStream ) )
-            {
-                SvStorageRef aStorage = new SotStorage( pStream, sal_False );
-                if ( aStorage->IsStream( C2S( "Equation Native" ) ) )
-                {
-                    // is this a MathType Storage?
-                    MathType aEquation( aText );
-                    if ( sal_True == (bSuccess = (1 == aEquation.Parse( aStorage )) ))
-                        Parse();
-                }
-            }
-            else
-            {
-                //bSuccess = ImportSM20File( pStream );
-            }
+			if ( SotStorage::IsStorageFile( pStream ) )
+			{
+				SvStorageRef aStorage = new SotStorage( pStream, sal_False );
+				if ( aStorage->IsStream( C2S( "Equation Native" ) ) )
+				{
+					// is this a MathType Storage?
+					MathType aEquation( aText );
+					if ( sal_True == (bSuccess = (1 == aEquation.Parse( aStorage )) ))
+						Parse();
+				}
+			}
+			else
+			{
+				//bSuccess = ImportSM20File( pStream );
+			}
 		}
 	}
 
-    if ( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED )
-    {
-        //???OnDocumentPrinterChanged(0);
-        SetFormulaArranged( sal_False );
-        Repaint();
-    }
+	if ( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED )
+	{
+		//???OnDocumentPrinterChanged(0);
+		SetFormulaArranged( sal_False );
+		Repaint();
+	}
 
 	FinishedLoading( SFX_LOADED_ALL );
 	return bSuccess;
@@ -800,10 +793,10 @@ sal_Bool SmDocShell::ConvertFrom(SfxMedium &rMedium)
 
 sal_Bool SmDocShell::InitNew( const uno::Reference < embed::XStorage >& xStorage )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::InitNew" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::InitNew" );
 
 	sal_Bool bRet = sal_False;
-    if ( SfxObjectShell::InitNew( xStorage ) )
+	if ( SfxObjectShell::InitNew( xStorage ) )
 	{
 		bRet = sal_True;
 		SetVisArea(Rectangle(Point(0, 0), Size(2000, 1000)));
@@ -814,39 +807,39 @@ sal_Bool SmDocShell::InitNew( const uno::Reference < embed::XStorage >& xStorage
 
 sal_Bool SmDocShell::Load( SfxMedium& rMedium )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Load" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Load" );
 
 	sal_Bool bRet = sal_False;
-    if( SfxObjectShell::Load( rMedium ))
+	if( SfxObjectShell::Load( rMedium ))
 	{
-        uno::Reference < embed::XStorage > xStorage = GetMedium()->GetStorage();
-        uno::Reference < container::XNameAccess > xAccess (xStorage, uno::UNO_QUERY);
-        if (
-            (
-             xAccess->hasByName( C2S( "content.xml" ) ) &&
-             xStorage->isStreamElement( C2S( "content.xml" ) )
-            ) ||
-            (
-             xAccess->hasByName( C2S( "Content.xml" ) ) &&
-             xStorage->isStreamElement( C2S( "Content.xml" ) )
-            )
-           )
-        {
-            // is this a fabulous math package ?
-            Reference<com::sun::star::frame::XModel> xModel(GetModel());
-            SmXMLImportWrapper aEquation(xModel);
-            sal_uLong nError = aEquation.Import(rMedium);
-            bRet = 0 == nError;
-            SetError( nError, ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ) );
-        }
+		uno::Reference < embed::XStorage > xStorage = GetMedium()->GetStorage();
+		uno::Reference < container::XNameAccess > xAccess (xStorage, uno::UNO_QUERY);
+		if (
+			(
+			 xAccess->hasByName( C2S( "content.xml" ) ) &&
+			 xStorage->isStreamElement( C2S( "content.xml" ) )
+			) ||
+			(
+			 xAccess->hasByName( C2S( "Content.xml" ) ) &&
+			 xStorage->isStreamElement( C2S( "Content.xml" ) )
+			)
+		   )
+		{
+			// is this a fabulous math package?
+			Reference<com::sun::star::frame::XModel> xModel(GetModel());
+			SmXMLImportWrapper aEquation(xModel);
+			sal_uLong nError = aEquation.Import(rMedium);
+			bRet = 0 == nError;
+			SetError( nError, ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ) );
+		}
 	}
 
-    if ( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED )
-    {
-        //???OnDocumentPrinterChanged(0);
+	if ( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED )
+	{
+		//???OnDocumentPrinterChanged(0);
 		SetFormulaArranged( sal_False );
-        Repaint();
-    }
+		Repaint();
+	}
 
 	FinishedLoading( SFX_LOADED_ALL );
 	return bRet;
@@ -856,22 +849,22 @@ sal_Bool SmDocShell::Load( SfxMedium& rMedium )
 
 sal_Bool SmDocShell::Save()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Save" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Save" );
 
-    //! apply latest changes if necessary
-    UpdateText();
+	//! apply latest changes if necessary
+	UpdateText();
 
-    if ( SfxObjectShell::Save() )
+	if ( SfxObjectShell::Save() )
 	{
 		if (!pTree)
 			Parse();
 		if( pTree && !IsFormulaArranged() )
 			ArrangeFormula();
 
-        Reference<com::sun::star::frame::XModel> xModel(GetModel());
-        SmXMLExportWrapper aEquation(xModel);
-        aEquation.SetFlat(sal_False);
-        return aEquation.Export(*GetMedium());
+		Reference<com::sun::star::frame::XModel> xModel(GetModel());
+		SmXMLExportWrapper aEquation(xModel);
+		aEquation.SetFlat(sal_False);
+		return aEquation.Export(*GetMedium());
 	}
 
 	return sal_False;
@@ -914,25 +907,25 @@ sal_Bool SmDocShell::ReplaceBadChars()
 
 void SmDocShell::UpdateText()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::UpdateText" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::UpdateText" );
 
-    if (pEditEngine && pEditEngine->IsModified())
-    {
-        String aEngTxt( pEditEngine->GetText( LINEEND_LF ) );
-        if (GetText() != aEngTxt)
-            SetText( aEngTxt );
-    }
+	if (pEditEngine && pEditEngine->IsModified())
+	{
+		String aEngTxt( pEditEngine->GetText( LINEEND_LF ) );
+		if (GetText() != aEngTxt)
+			SetText( aEngTxt );
+	}
 }
 
 
 sal_Bool SmDocShell::SaveAs( SfxMedium& rMedium )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SaveAs" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SaveAs" );
 
 	sal_Bool bRet = sal_False;
 
-    //! apply latest changes if necessary
-    UpdateText();
+	//! apply latest changes if necessary
+	UpdateText();
 
 	if ( SfxObjectShell::SaveAs( rMedium ) )
 	{
@@ -941,17 +934,17 @@ sal_Bool SmDocShell::SaveAs( SfxMedium& rMedium )
 		if( pTree && !IsFormulaArranged() )
 			ArrangeFormula();
 
-        Reference<com::sun::star::frame::XModel> xModel(GetModel());
-        SmXMLExportWrapper aEquation(xModel);
-        aEquation.SetFlat(sal_False);
-        bRet = aEquation.Export(rMedium);
+		Reference<com::sun::star::frame::XModel> xModel(GetModel());
+		SmXMLExportWrapper aEquation(xModel);
+		aEquation.SetFlat(sal_False);
+		bRet = aEquation.Export(rMedium);
 	}
 	return bRet;
 }
 
 sal_Bool SmDocShell::ConvertTo( SfxMedium &rMedium )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::ConvertTo" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::ConvertTo" );
 
 	sal_Bool bRet = sal_False;
 	const SfxFilter* pFlt = rMedium.GetFilter();
@@ -965,29 +958,29 @@ sal_Bool SmDocShell::ConvertTo( SfxMedium &rMedium )
 		const String& rFltName = pFlt->GetFilterName();
 		if(rFltName.EqualsAscii( STAROFFICE_XML ))
 		{
-            Reference<com::sun::star::frame::XModel> xModel(GetModel());
-            SmXMLExportWrapper aEquation(xModel);
+			Reference<com::sun::star::frame::XModel> xModel(GetModel());
+			SmXMLExportWrapper aEquation(xModel);
 			aEquation.SetFlat(sal_False);
 			bRet = aEquation.Export(rMedium);
 		}
 		else if(rFltName.EqualsAscii( MATHML_XML ))
 		{
-            Reference<com::sun::star::frame::XModel> xModel(GetModel());
-            SmXMLExportWrapper aEquation(xModel);
+			Reference<com::sun::star::frame::XModel> xModel(GetModel());
+			SmXMLExportWrapper aEquation(xModel);
 			aEquation.SetFlat(sal_True);
 			bRet = aEquation.Export(rMedium);
 		}
-        else if( pFlt->GetFilterName().EqualsAscii("MathType 3.x"))
-            bRet = WriteAsMathType3( rMedium );
+		else if( pFlt->GetFilterName().EqualsAscii("MathType 3.x"))
+			bRet = WriteAsMathType3( rMedium );
 	}
 	return bRet;
 }
 
 sal_Bool SmDocShell::SaveCompleted( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SaveCompleted" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SaveCompleted" );
 
-    if( SfxObjectShell::SaveCompleted( xStorage ))
+	if( SfxObjectShell::SaveCompleted( xStorage ))
 		return sal_True;
 
 	return sal_False;
@@ -996,66 +989,66 @@ sal_Bool SmDocShell::SaveCompleted( const ::com::sun::star::uno::Reference< ::co
 
 void SmDocShell::Execute(SfxRequest& rReq)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Execute" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Execute" );
 
 	switch (rReq.GetSlot())
 	{
 		case SID_TEXTMODE:
 		{
-            SmFormat aOldFormat  = GetFormat();
-            SmFormat aNewFormat( aOldFormat );
-            aNewFormat.SetTextmode(!aOldFormat.IsTextmode());
+			SmFormat aOldFormat  = GetFormat();
+			SmFormat aNewFormat( aOldFormat );
+			aNewFormat.SetTextmode(!aOldFormat.IsTextmode());
 
-            ::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
-            if (pTmpUndoMgr)
-                pTmpUndoMgr->AddUndoAction(
-                    new SmFormatAction(this, aOldFormat, aNewFormat));
+			::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
+			if (pTmpUndoMgr)
+				pTmpUndoMgr->AddUndoAction(
+					new SmFormatAction(this, aOldFormat, aNewFormat));
 
-            SetFormat( aNewFormat );
-            Repaint();
+			SetFormat( aNewFormat );
+			Repaint();
 		}
 		break;
 
 		case SID_AUTO_REDRAW :
 		{
-            SmModule *pp = SM_MOD();
+			SmModule *pp = SM_MOD();
 			sal_Bool bRedraw = pp->GetConfig()->IsAutoRedraw();
 			pp->GetConfig()->SetAutoRedraw(!bRedraw);
 		}
 		break;
 
 		case SID_LOADSYMBOLS:
-            LoadSymbols();
+			LoadSymbols();
 		break;
 
 		case SID_SAVESYMBOLS:
-            SaveSymbols();
+			SaveSymbols();
 		break;
 
 		case SID_FONT:
 		{
-            // get device used to retrieve the FontList
-            OutputDevice *pDev = GetPrinter();
-            if (!pDev || pDev->GetDevFontCount() == 0)
-                pDev = &SM_MOD()->GetDefaultVirtualDev();
-            DBG_ASSERT (pDev, "device for font list missing" );
+			// get device used to retrieve the FontList
+			OutputDevice *pDev = GetPrinter();
+			if (!pDev || pDev->GetDevFontCount() == 0)
+				pDev = &SM_MOD()->GetDefaultVirtualDev();
+			DBG_ASSERT (pDev, "device for font list missing" );
 
-            SmFontTypeDialog *pFontTypeDialog = new SmFontTypeDialog( NULL, pDev );
+			SmFontTypeDialog *pFontTypeDialog = new SmFontTypeDialog( NULL, pDev );
 
-            SmFormat aOldFormat  = GetFormat();
-            pFontTypeDialog->ReadFrom( aOldFormat );
+			SmFormat aOldFormat  = GetFormat();
+			pFontTypeDialog->ReadFrom( aOldFormat );
 			if (pFontTypeDialog->Execute() == RET_OK)
 			{
-                SmFormat aNewFormat( aOldFormat );
+				SmFormat aNewFormat( aOldFormat );
 
 				pFontTypeDialog->WriteTo(aNewFormat);
-                ::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
-                if (pTmpUndoMgr)
-                    pTmpUndoMgr->AddUndoAction(
+				::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
+				if (pTmpUndoMgr)
+					pTmpUndoMgr->AddUndoAction(
 						new SmFormatAction(this, aOldFormat, aNewFormat));
 
 				SetFormat( aNewFormat );
-                Repaint();
+				Repaint();
 			}
 			delete pFontTypeDialog;
 		}
@@ -1065,21 +1058,21 @@ void SmDocShell::Execute(SfxRequest& rReq)
 		{
 			SmFontSizeDialog *pFontSizeDialog = new SmFontSizeDialog(NULL);
 
-            SmFormat aOldFormat  = GetFormat();
-            pFontSizeDialog->ReadFrom( aOldFormat );
+			SmFormat aOldFormat  = GetFormat();
+			pFontSizeDialog->ReadFrom( aOldFormat );
 			if (pFontSizeDialog->Execute() == RET_OK)
 			{
-                SmFormat aNewFormat( aOldFormat );
+				SmFormat aNewFormat( aOldFormat );
 
 				pFontSizeDialog->WriteTo(aNewFormat);
 
-                ::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
-                if (pTmpUndoMgr)
-                    pTmpUndoMgr->AddUndoAction(
+				::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
+				if (pTmpUndoMgr)
+					pTmpUndoMgr->AddUndoAction(
 						new SmFormatAction(this, aOldFormat, aNewFormat));
 
 				SetFormat( aNewFormat );
-                Repaint();
+				Repaint();
 			}
 			delete pFontSizeDialog;
 		}
@@ -1089,21 +1082,21 @@ void SmDocShell::Execute(SfxRequest& rReq)
 		{
 			SmDistanceDialog *pDistanceDialog = new SmDistanceDialog(NULL);
 
-            SmFormat aOldFormat  = GetFormat();
-            pDistanceDialog->ReadFrom( aOldFormat );
+			SmFormat aOldFormat  = GetFormat();
+			pDistanceDialog->ReadFrom( aOldFormat );
 			if (pDistanceDialog->Execute() == RET_OK)
 			{
-                SmFormat aNewFormat( aOldFormat );
+				SmFormat aNewFormat( aOldFormat );
 
 				pDistanceDialog->WriteTo(aNewFormat);
 
-                ::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
-                if (pTmpUndoMgr)
-                    pTmpUndoMgr->AddUndoAction(
+				::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
+				if (pTmpUndoMgr)
+					pTmpUndoMgr->AddUndoAction(
 						new SmFormatAction(this, aOldFormat, aNewFormat));
 
 				SetFormat( aNewFormat );
-                Repaint();
+				Repaint();
 			}
 			delete pDistanceDialog;
 		}
@@ -1113,26 +1106,26 @@ void SmDocShell::Execute(SfxRequest& rReq)
 		{
 			SmAlignDialog *pAlignDialog = new SmAlignDialog(NULL);
 
-            SmFormat aOldFormat  = GetFormat();
-            pAlignDialog->ReadFrom( aOldFormat );
+			SmFormat aOldFormat  = GetFormat();
+			pAlignDialog->ReadFrom( aOldFormat );
 			if (pAlignDialog->Execute() == RET_OK)
 			{
-                SmFormat aNewFormat( aOldFormat );
+				SmFormat aNewFormat( aOldFormat );
 
 				pAlignDialog->WriteTo(aNewFormat);
 
-                SmModule *pp = SM_MOD();
-                SmFormat aFmt( pp->GetConfig()->GetStandardFormat() );
-                pAlignDialog->WriteTo( aFmt );
-                pp->GetConfig()->SetStandardFormat( aFmt );
+				SmModule *pp = SM_MOD();
+				SmFormat aFmt( pp->GetConfig()->GetStandardFormat() );
+				pAlignDialog->WriteTo( aFmt );
+				pp->GetConfig()->SetStandardFormat( aFmt );
 
-                ::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
-                if (pTmpUndoMgr)
-                    pTmpUndoMgr->AddUndoAction(
-                        new SmFormatAction(this, aOldFormat, aNewFormat));
+				::svl::IUndoManager *pTmpUndoMgr = GetUndoManager();
+				if (pTmpUndoMgr)
+					pTmpUndoMgr->AddUndoAction(
+						new SmFormatAction(this, aOldFormat, aNewFormat));
 
 				SetFormat( aNewFormat );
-                Repaint();
+				Repaint();
 			}
 			delete pAlignDialog;
 		}
@@ -1149,8 +1142,8 @@ void SmDocShell::Execute(SfxRequest& rReq)
 		case SID_UNDO:
 		case SID_REDO:
 		{
-            ::svl::IUndoManager* pTmpUndoMgr = GetUndoManager();
-            if( pTmpUndoMgr )
+			::svl::IUndoManager* pTmpUndoMgr = GetUndoManager();
+			if( pTmpUndoMgr )
 			{
 				sal_uInt16 nId = rReq.GetSlot(), nCnt = 1;
 				const SfxItemSet* pArgs = rReq.GetArgs();
@@ -1163,30 +1156,30 @@ void SmDocShell::Execute(SfxRequest& rReq)
 				sal_uInt16 nCount;
 				if( SID_UNDO == rReq.GetSlot() )
 				{
-                    nCount = pTmpUndoMgr->GetUndoActionCount();
+					nCount = pTmpUndoMgr->GetUndoActionCount();
 					fnDo = &::svl::IUndoManager::Undo;
 				}
 				else
 				{
-                    nCount = pTmpUndoMgr->GetRedoActionCount();
+					nCount = pTmpUndoMgr->GetRedoActionCount();
 					fnDo = &::svl::IUndoManager::Redo;
 				}
 
-                try
-                {
-				    for( ; nCnt && nCount; --nCnt, --nCount )
-                        (pTmpUndoMgr->*fnDo)();
-                }
-                catch( const Exception& e )
-                {
-                    DBG_UNHANDLED_EXCEPTION();
-                }
+				try
+				{
+					for( ; nCnt && nCount; --nCnt, --nCount )
+						(pTmpUndoMgr->*fnDo)();
+				}
+				catch( const Exception& e )
+				{
+					DBG_UNHANDLED_EXCEPTION();
+				}
 			}
 
-            SmModule  *pModule = SM_MOD();
-            if ( pModule && pModule->GetConfig()->IsAutoRedraw() )
-                UpdateText();
-            Repaint();
+			SmModule  *pModule = SM_MOD();
+			if ( pModule && pModule->GetConfig()->IsAutoRedraw() )
+				UpdateText();
+			Repaint();
 			SfxViewFrame* pFrm = SfxViewFrame::GetFirst( this );
 			while( pFrm )
 			{
@@ -1207,7 +1200,7 @@ void SmDocShell::Execute(SfxRequest& rReq)
 
 void SmDocShell::GetState(SfxItemSet &rSet)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetState" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetState" );
 
 	SfxWhichIter aIter(rSet);
 
@@ -1225,7 +1218,7 @@ void SmDocShell::GetState(SfxItemSet &rSet)
 
 		case SID_AUTO_REDRAW :
 			{
-                SmModule  *pp = SM_MOD();
+				SmModule  *pp = SM_MOD();
 				sal_Bool	   bRedraw = pp->GetConfig()->IsAutoRedraw();
 
 				rSet.Put(SfxBoolItem(SID_AUTO_REDRAW, bRedraw));
@@ -1245,12 +1238,12 @@ void SmDocShell::GetState(SfxItemSet &rSet)
 			rSet.Put(SfxStringItem(SID_TEXT, GetText()));
 			break;
 
-        case SID_GAPHIC_SM:
-            //! very old (pre UNO) and ugly hack to invalidate the SmGraphicWindow.
-            //! If nModifyCount gets changed then the call below will implicitly notify
-            //! SmGraphicController::StateChanged and there the window gets invalidated.
-            //! Thus all the 'nModifyCount++' before invalidating this slot.
-            rSet.Put(SfxInt16Item(SID_GAPHIC_SM, nModifyCount));
+		case SID_GAPHIC_SM:
+			//! very old (pre UNO) and ugly hack to invalidate the SmGraphicWindow.
+			//! If nModifyCount gets changed then the call below will implicitly notify
+			//! SmGraphicController::StateChanged and there the window gets invalidated.
+			//! Thus all the 'nModifyCount++' before invalidating this slot.
+			rSet.Put(SfxInt16Item(SID_GAPHIC_SM, nModifyCount));
 			break;
 
 		case SID_UNDO:
@@ -1267,27 +1260,27 @@ void SmDocShell::GetState(SfxItemSet &rSet)
 		case SID_GETUNDOSTRINGS:
 		case SID_GETREDOSTRINGS:
 			{
-                ::svl::IUndoManager* pTmpUndoMgr = GetUndoManager();
-                if( pTmpUndoMgr )
+				::svl::IUndoManager* pTmpUndoMgr = GetUndoManager();
+				if( pTmpUndoMgr )
 				{
 					UniString(::svl::IUndoManager:: *fnGetComment)( size_t, bool const ) const;
 
 					sal_uInt16 nCount;
 					if( SID_GETUNDOSTRINGS == nWh )
 					{
-                        nCount = pTmpUndoMgr->GetUndoActionCount();
+						nCount = pTmpUndoMgr->GetUndoActionCount();
 						fnGetComment = &::svl::IUndoManager::GetUndoActionComment;
 					}
 					else
 					{
-                        nCount = pTmpUndoMgr->GetRedoActionCount();
+						nCount = pTmpUndoMgr->GetRedoActionCount();
 						fnGetComment = &::svl::IUndoManager::GetRedoActionComment;
 					}
 					if( nCount )
 					{
 						String sList;
 						for( sal_uInt16 n = 0; n < nCount; ++n )
-                            ( sList += (pTmpUndoMgr->*fnGetComment)( n, ::svl::IUndoManager::TopLevel ) )
+							( sList += (pTmpUndoMgr->*fnGetComment)( n, ::svl::IUndoManager::TopLevel ) )
 									+= '\n';
 
 						SfxStringListItem aItem( nWh );
@@ -1306,7 +1299,7 @@ void SmDocShell::GetState(SfxItemSet &rSet)
 
 ::svl::IUndoManager *SmDocShell::GetUndoManager()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetUndoManager" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetUndoManager" );
 
 	if (!pEditEngine)
 		GetEditEngine();
@@ -1316,18 +1309,18 @@ void SmDocShell::GetState(SfxItemSet &rSet)
 
 void SmDocShell::SaveSymbols()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SaveSymbols" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SaveSymbols" );
 
-    SmModule *pp = SM_MOD();
-    pp->GetSymbolManager().Save();
+	SmModule *pp = SM_MOD();
+	pp->GetSymbolManager().Save();
 }
 
 
 void SmDocShell::Draw(OutputDevice *pDevice,
 					  const JobSetup &,
-                      sal_uInt16 /*nAspect*/)
+					  sal_uInt16 /*nAspect*/)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Draw" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::Draw" );
 
 	pDevice->IntersectClipRegion(GetVisArea());
 	Point atmppoint;
@@ -1341,7 +1334,7 @@ SfxItemPool& SmDocShell::GetPool() const
 
 void SmDocShell::SetVisArea(const Rectangle & rVisArea)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetVisArea" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetVisArea" );
 
 	Rectangle aNewRect(rVisArea);
 
@@ -1354,11 +1347,11 @@ void SmDocShell::SetVisArea(const Rectangle & rVisArea)
 	if ( bIsEnabled )
 		EnableSetModified( sal_False );
 
-    //TODO/LATER: it's unclear how this interacts with the SFX code
-    // If outplace editing, then don't resize the OutplaceWindow. But the
+	// TODO/LATER: it's unclear how this interacts with the SFX code
+	// If outplace editing, then don't resize the OutplaceWindow. But the
 	// ObjectShell has to resize. Bug 56470
 	sal_Bool bUnLockFrame;
-    if( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED && !IsInPlaceActive() && GetFrame() )
+	if( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED && !IsInPlaceActive() && GetFrame() )
 	{
 		GetFrame()->LockAdjustPosSizePixel();
 		bUnLockFrame = sal_True;
@@ -1366,7 +1359,7 @@ void SmDocShell::SetVisArea(const Rectangle & rVisArea)
 	else
 		bUnLockFrame = sal_False;
 
-    SfxObjectShell::SetVisArea( aNewRect );
+	SfxObjectShell::SetVisArea( aNewRect );
 
 	if( bUnLockFrame )
 		GetFrame()->UnlockAdjustPosSizePixel();
@@ -1378,39 +1371,39 @@ void SmDocShell::SetVisArea(const Rectangle & rVisArea)
 
 void SmDocShell::FillClass(SvGlobalName* pClassName,
 						   sal_uInt32*  pFormat,
-                           String* /*pAppName*/,
+						   String* /*pAppName*/,
 						   String* pFullTypeName,
-                           String* pShortTypeName,
-                           sal_Int32 nFileFormat,
-                           sal_Bool bTemplate /* = sal_False */) const
+						   String* pShortTypeName,
+						   sal_Int32 nFileFormat,
+						   sal_Bool bTemplate /* = sal_False */) const
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::FillClass" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::FillClass" );
 
 	if (nFileFormat == SOFFICE_FILEFORMAT_60 )
 	{
 		*pClassName 	= SvGlobalName(SO3_SM_CLASSID_60);
 		*pFormat		= SOT_FORMATSTR_ID_STARMATH_60;
-        *pFullTypeName  = String(SmResId(STR_MATH_DOCUMENT_FULLTYPE_CURRENT));
+		*pFullTypeName  = String(SmResId(STR_MATH_DOCUMENT_FULLTYPE_CURRENT));
 		*pShortTypeName = String(SmResId(RID_DOCUMENTSTR));
 	}
 	else if (nFileFormat == SOFFICE_FILEFORMAT_8 )
 	{
 		*pClassName 	= SvGlobalName(SO3_SM_CLASSID_60);
-        *pFormat		= bTemplate ? SOT_FORMATSTR_ID_STARMATH_8_TEMPLATE : SOT_FORMATSTR_ID_STARMATH_8;
-        *pFullTypeName  = String(SmResId(STR_MATH_DOCUMENT_FULLTYPE_CURRENT));
+		*pFormat		= bTemplate ? SOT_FORMATSTR_ID_STARMATH_8_TEMPLATE : SOT_FORMATSTR_ID_STARMATH_8;
+		*pFullTypeName  = String(SmResId(STR_MATH_DOCUMENT_FULLTYPE_CURRENT));
 		*pShortTypeName = String(SmResId(RID_DOCUMENTSTR));
 	}
 }
 
 sal_uLong SmDocShell::GetMiscStatus() const
 {
-    return SfxObjectShell::GetMiscStatus() | SVOBJ_MISCSTATUS_NOTRESIZEABLE
+	return SfxObjectShell::GetMiscStatus() | SVOBJ_MISCSTATUS_NOTRESIZEABLE
 											 | SVOBJ_MISCSTATUS_RESIZEONPRINTERCHANGE;
 }
 
 void SmDocShell::SetModified(sal_Bool bModified)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetModified" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetModified" );
 
 	if( IsEnableSetModified() )
 	{
@@ -1421,10 +1414,12 @@ void SmDocShell::SetModified(sal_Bool bModified)
 
 sal_Bool SmDocShell::WriteAsMathType3( SfxMedium& rMedium )
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::WriteAsMathType3" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::WriteAsMathType3" );
 
-    MathType aEquation( aText, pTree );
+	MathType aEquation( aText, pTree );
 
-    sal_Bool bRet = 0 != aEquation.ConvertFromStarMath( rMedium );
-    return bRet;
+	sal_Bool bRet = 0 != aEquation.ConvertFromStarMath( rMedium );
+	return bRet;
 }
+
+/* vim: set noet sw=4 ts=4: */
