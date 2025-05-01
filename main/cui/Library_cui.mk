@@ -94,8 +94,6 @@ $(eval $(call gb_Library_add_linked_libs,cui,\
 ))
 endif
 
-$(call gb_Library_use_external,cui,icuuc)
-
 $(eval $(call gb_Library_add_exception_objects,cui,\
 	cui/source/customize/acccfg \
 	cui/source/customize/cfg \

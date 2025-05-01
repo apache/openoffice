@@ -884,7 +884,6 @@
 #include "ucbhelper/configurationkeys.hxx"
 #include "ucbhelper/content.hxx"
 #include "ucbhelper/contentbroker.hxx"
-#include "unicode/ubidi.h"
 #include "uno/lbnames.h"
 #include "uno/mapping.hxx"
 #include "unotools/accessiblerelationsethelper.hxx"
