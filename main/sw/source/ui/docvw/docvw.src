@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "docvw.hrc"
 #include "cmdid.h"
 #include "helpid.h"
@@ -251,7 +249,7 @@ String STR_ENDNOTE
 {
 	Text [ en-US ] = "Endnote: " ;
 };
-String STR_FTNNOTE
+String STR_FOOTNOTE
 {
 	Text [ en-US ] = "Footnote: " ;
 };
