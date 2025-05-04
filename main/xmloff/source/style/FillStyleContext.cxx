@@ -24,6 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
 #include <com/sun/star/container/XNameContainer.hpp>
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
 #include "FillStyleContext.hxx"
 #include <xmloff/xmlimp.hxx>
 #include "xmloff/GradientStyle.hxx"
@@ -190,6 +191,13 @@ void XMLBitmapStyleContext::EndElement()
 		sURL = GetImport().ResolveGraphicObjectURLFromBase64( mxBase64Stream );
 		mxBase64Stream = 0;
 		maAny <<= sURL;
+	}
+
+	uno::Reference< document::XLinkAuthorizer > xLinkAuthorizer( GetImport().GetModel(), uno::UNO_QUERY);
+	if ( xLinkAuthorizer.is() ) {
+		if ( !xLinkAuthorizer->authorizeLinks( sURL ) ) {
+			return;
+		}
 	}
 
 	uno::Reference< container::XNameContainer > xBitmap( GetImport().GetBitmapHelper() );
