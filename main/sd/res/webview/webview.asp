@@ -29,20 +29,20 @@
     Session( "GIFID" ) = File_getDataVirtual( csFileCurrent, ".", ";" )( 0 )
 %>
 
-<HTML>
+<html>
 
-<HEAD>
-</HEAD>
+<head>
+</head>
 
-<FRAMESET ROWS="*,2" BORDER=0 FRAMEBORDER=0 FRAMESPACING=0>
-	<FRAME SRC="./show.asp" NAME="frame1" SCROLLING=yes  RESIZE MARGINWIDTH=0 MARGINHEIGHT=0 FRAMEBORDER=0>
-	<FRAME SRC="./poll.asp" NAME="frame2" SCROLLING=no NORESIZE MARGINWIDTH=0 MARGINHEIGHT=0 FRAMEBORDER=0>
-</FRAMESET>
+<frameset rows="*,2" border="0" frameborder="0" framespacing="0">
+	<frame src="./show.asp" name="frame1" scrolling="yes"  resize marginwidth="0" marginheight="0" frameborder="0">
+	<frame src="./poll.asp" name="frame2" scrolling="no" noresize marginwidth="0" marginheight="0" frameborder="0">
+</frameset>
 
-<NOFRAMES>
+<noframes>
 
-<BODY BGCOLOR="white">
-    <META HTTP-EQUIV="-REFRESH" CONTENT="1;URL=./show.asp">
-</BODY>
+<body bgcolor="white">
+    <meta http-equiv="refresh" content="1;URL=./show.asp">
+</body>
 
-</HTML>
+</html>
