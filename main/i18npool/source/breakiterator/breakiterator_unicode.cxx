@@ -77,46 +77,42 @@ BreakIterator_Unicode::~BreakIterator_Unicode()
         if (line.aBreakIterator) ubrk_close(line.aBreakIterator);
 }
 
-// Hard to support in C:
-// 1. setBreakType() cannot be reached from C.
-// 2. UDataMemory's udata_getLength() is a private API, yet we need the length for ubrk_openBinaryRules().
-#if 0
-/*
-	Wrapper class to provide public access to the RuleBasedBreakIterator's
-	setbreakType method.
-*/
-class OOoRuleBasedBreakIterator : public RuleBasedBreakIterator {
-	public:
-		inline void publicSetBreakType(int32_t type) {
-			setBreakType(type);
-		};
-		OOoRuleBasedBreakIterator(UDataMemory* image,
-				UErrorCode &status) : 
-			RuleBasedBreakIterator(image, status) { };
-
-};
-
 static UBreakIterator* open_udata_BreakIterator(UDataMemory *udm, UErrorCode *status)
 {
     *status = U_ZERO_ERROR;
     UDataInfo info;
     info.size = sizeof(info);
     udata_getInfo(udm, &info);
-    if (  !(info.isBigEndian == U_IS_BIG_ENDIAN &&
+    if (  !(
+#if defined(OSL_LITENDIAN)
+            !info.isBigEndian  &&
+#else
+            info.isBigEndian &&
+#endif
             info.charsetFamily == U_CHARSET_FAMILY &&
             info.dataFormat[0] == 0x42 &&  // dataFormat="Brk "
             info.dataFormat[1] == 0x72 &&
             info.dataFormat[2] == 0x6b &&
-            info.dataFormat[3] == 0x20)
+            info.dataFormat[3] == 0x20
+           )
     ) {
         *status = U_INVALID_FORMAT_ERROR;
         return NULL;
     }
 
     uint8_t *memory = (uint8_t*) udata_getMemory(udm);
-    return ubrk_openBinaryRules(memory, udata_getLength(udm), NULL, 0, status);
+    // FIXME: We have no way to get the real length, without parsing private data out first.
+    // But ubrk_openBinaryRules() calls
+    //     RuleBasedBreakIterator::RuleBasedBreakIterator(const uint8_t *compiledRules,
+    //                 uint32_t       ruleLength,
+    //                 UErrorCode     &status)
+    // which, ***AT THE TIME OF WRITING***, only does these checks, and nothing else:
+    // (compiledRules == nullptr || ruleLength < sizeof(RBBIDataHeader))
+    // (data->fLength > ruleLength)
+    // both those must be false for this to work, so we just use an arbitrary large number:
+    uint32_t length = 1000000000;
+    return ubrk_openBinaryRules(memory, length, NULL, 0, status);
 }
-#endif
 
 // loading ICU breakiterator on demand.
 void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::lang::Locale& rLocale,
@@ -144,8 +140,6 @@ void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::
             ubrk_close(icuBI->aBreakIterator);
             icuBI->aBreakIterator=NULL;
         }
-// Hard to support in C:
-#if 0
         if (rule) {
             uno::Sequence< OUString > breakRules = LocaleData().getBreakIteratorRules(rLocale);
 
@@ -176,16 +170,17 @@ void SAL_CALL BreakIterator_Unicode::loadICUBreakIterator(const com::sun::star::
                 }
             }
             if (rbi) {
-                switch (rBreakType) {
-                    case LOAD_CHARACTER_BREAKITERATOR: rbi->publicSetBreakType(UBRK_CHARACTER); break;
-                    case LOAD_WORD_BREAKITERATOR: rbi->publicSetBreakType(UBRK_WORD); break;
-                    case LOAD_SENTENCE_BREAKITERATOR: rbi->publicSetBreakType(UBRK_SENTENCE); break;
-                    case LOAD_LINE_BREAKITERATOR: rbi->publicSetBreakType(UBRK_LINE); break;
-                }
+                // This was always a bad idea, as it required calling a private, internal ICU API,
+                // and isn't possible since ICU >= 61.1 as per https://unicode-org.atlassian.net/browse/ICU-10688.
+                //switch (rBreakType) {
+                //    case LOAD_CHARACTER_BREAKITERATOR: rbi->publicSetBreakType(UBRK_CHARACTER); break;
+                //    case LOAD_WORD_BREAKITERATOR: rbi->publicSetBreakType(UBRK_WORD); break;
+                //    case LOAD_SENTENCE_BREAKITERATOR: rbi->publicSetBreakType(UBRK_SENTENCE); break;
+                //    case LOAD_LINE_BREAKITERATOR: rbi->publicSetBreakType(UBRK_LINE); break;
+                //}
                 icuBI->aBreakIterator = rbi;
             }
         }
-#endif
 
         if (!icuBI->aBreakIterator) {
             ::rtl::OUStringBuffer locale;
