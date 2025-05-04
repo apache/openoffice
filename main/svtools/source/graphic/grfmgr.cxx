@@ -28,7 +28,12 @@
 
 #include <algorithm>
 
+#include <com/sun/star/uno/Reference.hxx>
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
+#include <com/sun/star/frame/XDesktop.hpp>
+#include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <tools/vcompat.hxx>
+#include <ucbhelper/contentbroker.hxx>
 #include <unotools/ucbstreamhelper.hxx>
 #include <unotools/localfilehelper.hxx>
 #include <unotools/tempfile.hxx>
@@ -43,6 +48,8 @@
 // --> OD 2010-01-04 #i105243#
 #include <vcl/pdfextoutdevdata.hxx>
 // <--
+
+using namespace ::com::sun::star;
 
 // -----------
 // - Defines -
@@ -1440,6 +1447,33 @@ GraphicObject GraphicObject::CreateGraphicObjectFromURL( const ::rtl::OUString &
 		Graphic		aGraphic;
 		if ( aURL.Len() )
 		{
+			/* We must obtain authorization from the current document, and we
+			   need a ServiceManager to access it. Because utl::UcbStreamHelper
+			   relies on the ::ucbhelper::ContentBroker instance, we will
+			   use its ServiceManager. */
+			::ucbhelper::ContentBroker* pBroker = ::ucbhelper::ContentBroker::get();
+			if ( pBroker ) {
+				uno::Reference< lang::XMultiServiceFactory > xFactory = pBroker->getServiceManager();
+				uno::Any desktop( xFactory->createInstance( ::rtl::OUString::createFromAscii( "com.sun.star.frame.Desktop" ) ) );
+				uno::Reference< com::sun::star::frame::XDesktop > xDesktop( desktop, uno::UNO_QUERY );
+				if ( xDesktop.is() ) {
+					uno::Reference< ::com::sun::star::frame::XFrame > xFrame = xDesktop->getCurrentFrame();
+					if ( xFrame.is() ) {
+						uno::Reference< ::com::sun::star::frame::XController > xController = xFrame->getController();
+						if ( xController.is() ) {
+							uno::Reference< ::com::sun::star::frame::XModel > xModel = xController->getModel();
+							if ( xModel.is() ) {
+								uno::Reference< com::sun::star::document::XLinkAuthorizer > xLinkAuthorizer( xModel, uno::UNO_QUERY);
+								if ( xLinkAuthorizer.is() ) {
+									if ( !xLinkAuthorizer->authorizeLinks( aURL ) )
+										return GraphicObject( aGraphic );
+								}
+							}
+						}
+					}
+				}
+			}
+
 			SvStream*	pStream = utl::UcbStreamHelper::CreateStream( aURL, STREAM_READ );
 			if( pStream )
 				GraphicConverter::Import( *pStream, aGraphic );
