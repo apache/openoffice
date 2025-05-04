@@ -139,7 +139,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
             printf("Could not get rule data from collator\n");
         }
     } else {
-        printf("\nRule parsering error\n");
+        printf("\nRule parsing failed, error %d at line %d offset %d\n", status, parseError.line, parseError.offset);
     }
 
     if (coll)
