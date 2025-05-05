@@ -181,7 +181,7 @@ Calendar_gregorian::init(Era *_eraArray)
 
 Calendar_gregorian::~Calendar_gregorian()
 {
-        delete body;
+        ucal_close(body);
 }
 
 Calendar_hanja::Calendar_hanja()
