@@ -317,7 +317,7 @@ public class XCharacterClassificationTest {
     @Test
     public void _getCharacterDirection() {
         boolean res = true;
-        String toCheck = new String(new char[]{65,1470,48,47,35,1632,44,10,
+        String toCheck = new String(new char[]{65,1470,48,43,35,1632,44,10,
                                 9,12,33,8234,8237,1563,8235,8238,8236,768,1});
         for (short i=0;i<19;i++) {
             short get = oObj.getCharacterDirection(toCheck, i);
