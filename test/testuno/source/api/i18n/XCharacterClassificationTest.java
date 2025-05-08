@@ -230,11 +230,15 @@ public class XCharacterClassificationTest {
     @Test
     public void _getType() {
         boolean res = true;
-        char[] characters = new char[]{586,65,97,498,721,4588,772,8413,3404,
-            48,8544,179,32,8232,8233,144,8204,57344,56320,173,40,41,95,3852,247,
-            3647,901,3896,171,187};
-        int[] charsInt = new int[]{586,65,97,498,721,4588,772,8413,3404,48,
-            8544,179,32,8232,8233,144,8204,57344,56320,173,40,41,95,3852,247,
+        // If or when this list gets out of date again,
+        // find new characters of the required type with:
+        // for (int i = 30; i <= 0xffff; i++) {
+        //     String s = new String("" + (char)i);
+        //     int type = oObj.getType(s, 0);
+        //     System.out.println("character " + i + " has type " + charstyles_office[type]);
+        // }
+        char[] characters = new char[]{888,65,97,498,721,4588,772,8413,3404,
+            48,8544,179,32,8232,8233,144,8204,57344,56320,45,40,41,95,3852,247,
             3647,901,3896,171,187};
         String toCheck = new String(characters);
 
@@ -242,9 +246,9 @@ public class XCharacterClassificationTest {
             int get = oObj.getType(toCheck, i);
             res &= (charstyles_office[get] == charstyles_office[i]);
             if (!res) {
-                System.out.println("Code :" + Integer.toHexString(charsInt[i]));
+                System.out.println("Code: " + Integer.toHexString((int)characters[i]));
                 System.out.println("Gained: " + charstyles_office[get]);
-                System.out.println("Expected : " + charstyles_office[i]);
+                System.out.println("Expected: " + charstyles_office[i]);
             }
         }
         Assert.assertTrue("getType()", res);
