@@ -21,15 +21,21 @@
 
 
 
-package ifc.i18n;
+package api.i18n;
 
 import java.text.Collator;
-
-import lib.MultiMethodTest;
 
 import com.sun.star.i18n.CollatorOptions;
 import com.sun.star.i18n.XCollator;
 import com.sun.star.lang.Locale;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
 
 /**
 * Testing <code>com.sun.star.i18n.XCollator</code>
@@ -46,26 +52,52 @@ import com.sun.star.lang.Locale;
 * Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.i18n.XCollator
 */
-public class _XCollator extends MultiMethodTest {
-    public XCollator oObj = null;
+public class XCollatorTest {
+    private static final UnoApp app = new UnoApp();
+
+    private XComponentContext xContext = null;
+    private XCollator oObj = null;
     private String[] alg = null ;
     private int[] opt = null ;
     Locale loc = new Locale("en", "EN", "");
+
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception, java.lang.Exception
+    {
+        xContext = app.getComponentContext();
+        final Object object = xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.Collator", xContext);
+        oObj = UnoRuntime.queryInterface(XCollator.class, object);
+        alg = oObj.listCollatorAlgorithms(loc);
+    }
 
     /**
     * Just retrieves a list of algorithms. <p>
     * Has <b>OK</b> status if non-zero length array returned.
     */
+    @Test
     public void _listCollatorAlgorithms() {
-        alg = oObj.listCollatorAlgorithms(loc) ;
-        log.println("Collator algorithms :");
-        if (alg != null) {
+        String[] algorithms = oObj.listCollatorAlgorithms(loc) ;
+        System.out.println("Collator algorithms :");
+        if (algorithms != null) {
             for (int i = 0; i < alg.length; i++) {
-                log.println("  '" + alg[i] + "'") ;
+                System.out.println("  '" + algorithms[i] + "'") ;
             }
-            tRes.tested("listCollatorAlgorithms()", alg.length > 0) ;
+            Assert.assertTrue("listCollatorAlgorithms()", algorithms.length > 0) ;
         } else {
-            tRes.tested("listCollatorAlgorithms()", false) ;
+            Assert.fail("listCollatorAlgorithms()");
         }
     }
 
@@ -78,17 +110,17 @@ public class _XCollator extends MultiMethodTest {
     *    algorithm name. </li>
     * </ul>
     */
+    @Test
     public void _listCollatorOptions() {
-        requiredMethod("listCollatorAlgorithms()") ;
         opt = oObj.listCollatorOptions(alg[0]) ;
-        log.println("Collator '" + alg[0] + "' options :");
+        System.out.println("Collator '" + alg[0] + "' options :");
         if (opt != null) {
             for (int i = 0; i < opt.length; i++) {
-                log.println("  " + opt[i]) ;
+                System.out.println("  " + opt[i]) ;
             }
-            tRes.tested("listCollatorOptions()", true) ;
+            Assert.assertTrue("listCollatorOptions()", true) ;
         } else {
-            tRes.tested("listCollatorOptions()", false) ;
+            Assert.fail("listCollatorOptions()") ;
         }
     }
 
@@ -97,13 +129,14 @@ public class _XCollator extends MultiMethodTest {
     * compares strings.<p>
     * Has <b>OK</b> status if compareString() returned correct values.
     */
+    @Test
     public void _loadDefaultCollator() {
         oObj.loadDefaultCollator(loc, 0);
         boolean res = oObj.compareString("A", "a") != 0;
         oObj.loadDefaultCollator(loc,
             CollatorOptions.CollatorOptions_IGNORE_CASE);
         res &= oObj.compareString("a", "A") == 0;
-        tRes.tested("loadDefaultCollator()", res) ;
+        Assert.assertTrue("loadDefaultCollator()", res) ;
     }
 
     /**
@@ -116,14 +149,14 @@ public class _XCollator extends MultiMethodTest {
     *    algorithm name. </li>
     * </ul>
     */
+    @Test
     public void _loadCollatorAlgorithm() {
-        requiredMethod("listCollatorAlgorithms()");
         oObj.loadCollatorAlgorithm(alg[0], loc,
             CollatorOptions.CollatorOptions_IGNORE_CASE);
         boolean res = oObj.compareString("A", "a") == 0;
         oObj.loadCollatorAlgorithm(alg[0], loc, 0);
         res &= oObj.compareString("a", "A") != 0;
-        tRes.tested("loadCollatorAlgorithm()", res);
+        Assert.assertTrue("loadCollatorAlgorithm()", res);
     }
 
     /**
@@ -136,15 +169,15 @@ public class _XCollator extends MultiMethodTest {
     *    algorithm name. </li>
     * </ul>
     */
+    @Test
     public void _loadCollatorAlgorithmWithEndUserOption() {
-        requiredMethod("listCollatorAlgorithms()");
         oObj.loadCollatorAlgorithmWithEndUserOption(alg[0], loc,
             new int[] {0});
         boolean res = oObj.compareString("A", "a") != 0;
         oObj.loadCollatorAlgorithmWithEndUserOption(alg[0], loc,
             new int[] {CollatorOptions.CollatorOptions_IGNORE_CASE});
         res = oObj.compareString("A", "a") == 0;
-        tRes.tested("loadCollatorAlgorithmWithEndUserOption()", res);
+        Assert.assertTrue("loadCollatorAlgorithmWithEndUserOption()", res);
     }
 
     /**
@@ -158,12 +191,13 @@ public class _XCollator extends MultiMethodTest {
     * of two equal strings returns 0. The such comparing is performed
     * for one character strings.
     */
+    @Test
     public void _compareSubstring() {
         boolean result = true ;
         char[] chars = new char[2] ;
         Collator col = null ;
 
-        log.println(" #### Testing English locale ####") ;
+        System.out.println(" #### Testing English locale ####") ;
         oObj.loadDefaultCollator(loc, 0) ;
         col = Collator.getInstance(new java.util.Locale("en", "EN")) ;
         for (char ch = 0x0020; ch < 0x007F; ch ++) {
@@ -171,7 +205,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareSubstring(chars, col) ;
         }
 
-        log.println(" #### Testing Russian locale ####") ;
+        System.out.println(" #### Testing Russian locale ####") ;
         oObj.loadDefaultCollator(
             new com.sun.star.lang.Locale("ru", "RU", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("ru", "RU")) ;
@@ -180,7 +214,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareSubstring(chars, col) ;
         }
 
-        log.println(" #### Testing Japan locale ####") ;
+        System.out.println(" #### Testing Japan locale ####") ;
         oObj.loadDefaultCollator(
             new com.sun.star.lang.Locale("ja", "JP", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("ja", "JP")) ;
@@ -189,7 +223,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareSubstring(chars, col) ;
         }
 
-        log.println(" #### Testing China locale ####") ;
+        System.out.println(" #### Testing China locale ####") ;
         oObj.loadDefaultCollator(new Locale("zh", "CN", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("zh", "CN")) ;
         for (char ch = 0x4E00; ch < 0x4EFD; ch ++) {
@@ -197,7 +231,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareSubstring(chars, col) ;
         }
 
-        log.println(" #### Testing Korean locale ####") ;
+        System.out.println(" #### Testing Korean locale ####") ;
         oObj.loadDefaultCollator(new Locale("ko", "KR", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("ko", "KR")) ;
         for (char ch = 0x4E00; ch < 0x4EFD; ch ++) {
@@ -205,7 +239,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareSubstring(chars, col) ;
         }
 
-        tRes.tested("compareSubstring()", result) ;
+        Assert.assertTrue("compareSubstring()", result) ;
     }
 
     /**
@@ -219,11 +253,12 @@ public class _XCollator extends MultiMethodTest {
     * of two equal strings returns 0. The such comparing is performed
     * for one character strings.
     */
+    @Test
     public void _compareString() {
         boolean result = true ;
         char[] chars = new char[2] ;
         Collator col = null ;
-        log.println(" #### Testing English locale ####") ;
+        System.out.println(" #### Testing English locale ####") ;
         oObj.loadDefaultCollator(
             new com.sun.star.lang.Locale("en", "EN", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("en", "EN")) ;
@@ -232,7 +267,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareString(chars, col) ;
         }
 
-        log.println(" #### Testing Russian locale ####") ;
+        System.out.println(" #### Testing Russian locale ####") ;
         oObj.loadDefaultCollator(
             new com.sun.star.lang.Locale("ru", "RU", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("ru", "RU")) ;
@@ -241,7 +276,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareString(chars, col) ;
         }
 
-        log.println(" #### Testing Japan locale ####") ;
+        System.out.println(" #### Testing Japan locale ####") ;
         oObj.loadDefaultCollator(
             new com.sun.star.lang.Locale("ja", "JP", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("ja", "JP")) ;
@@ -250,7 +285,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareString(chars, col) ;
         }
 
-        log.println(" #### Testing China locale ####") ;
+        System.out.println(" #### Testing China locale ####") ;
         oObj.loadDefaultCollator(new Locale("zh", "CN", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("zh", "CN")) ;
         for (char ch = 0x4E00; ch < 0x4EFD; ch ++) {
@@ -258,7 +293,7 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareString(chars, col) ;
         }
 
-        log.println(" #### Testing Korean locale ####") ;
+        System.out.println(" #### Testing Korean locale ####") ;
         oObj.loadDefaultCollator(new Locale("ko", "KR", ""), 0) ;
         col = Collator.getInstance(new java.util.Locale("ko", "KR")) ;
         for (char ch = 0x4E00; ch < 0x4EFD; ch ++) {
@@ -266,9 +301,8 @@ public class _XCollator extends MultiMethodTest {
             result &= testCompareString(chars, col) ;
         }
 
-        tRes.tested("compareString()", result) ;
+        Assert.assertTrue("compareString()", result) ;
     }
-
 
     /**
     * Testing compareString() method. At first method is testing single chars
@@ -347,11 +381,10 @@ public class _XCollator extends MultiMethodTest {
         }
 
         if (!result) {
-            log.println(msg) ;
+            System.out.println(msg) ;
         }
         return result ;
     }
-
 
     /**
     * Testing compareSubstring() method. Method is testing substrings comparing.
@@ -402,11 +435,10 @@ public class _XCollator extends MultiMethodTest {
         }
 
         if (!result) {
-            log.println(msg) ;
+            System.out.println(msg) ;
         }
         return result ;
     }
-
 
     /**
     * Transforms string to unicode hex codes.

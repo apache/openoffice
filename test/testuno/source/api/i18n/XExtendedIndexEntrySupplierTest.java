@@ -20,24 +20,58 @@
  *************************************************************/
 
 
-package ifc.i18n;
+package api.i18n;
 
 import com.sun.star.i18n.CollatorOptions;
 import com.sun.star.i18n.XExtendedIndexEntrySupplier;
 import com.sun.star.lang.Locale;
-
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
 import java.util.HashMap;
 
-import lib.MultiMethodTest;
 
+public class XExtendedIndexEntrySupplierTest {
+    private static final UnoApp app = new UnoApp();
 
-public class _XExtendedIndexEntrySupplier extends MultiMethodTest {
+    private XComponentContext xContext = null;
     public XExtendedIndexEntrySupplier oObj;
     protected Locale[] locales = null;
-    protected HashMap algorithms = new HashMap();
+    protected HashMap<Integer,String[]> algorithms = new HashMap<Integer,String[]>();
 
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
+        oObj = UnoRuntime.queryInterface(
+            XExtendedIndexEntrySupplier.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.IndexEntrySupplier", xContext)
+        );
+        locales = oObj.getLocaleList();
+        algorithms = getAlgorithmList();
+    }
+
+    @Test
     public void _compareIndexEntry() {
-        requiredMethod("getIndexKey()");
+        getIndexKey();
         Locale locale = new Locale("zh", "CN", "");
         String val1 = new String(new char[]{UnicodeStringPair.getUnicodeValue(0), UnicodeStringPair.getUnicodeValue(1)});
         String val2 = new String(new char[]{UnicodeStringPair.getUnicodeValue(1), UnicodeStringPair.getUnicodeValue(0)});
@@ -45,22 +79,21 @@ public class _XExtendedIndexEntrySupplier extends MultiMethodTest {
         short result2 = oObj.compareIndexEntry(val1, "", locale, val2, "", locale);
         short result3 = oObj.compareIndexEntry(val2, "", locale, val1, "", locale);
         
-        tRes.tested("compareIndexEntry()", result1 == 0 && result2 + result3 == 0);
+        Assert.assertTrue("compareIndexEntry()", result1 == 0 && result2 + result3 == 0);
     }
 
     /*
      * gets the list of all algorithms for each listed language
      * is OK if everyone of the returned lists are filled
      */
+    @Test
     public void _getAlgorithmList() {
-        requiredMethod("getLocaleList()");
-
+        HashMap<Integer, String[]> algorithms = getAlgorithmList();
         boolean result = true;
         boolean locResult = false; 
         
         for (int i = 0; i < locales.length; i++) {
-            String[] algNames = oObj.getAlgorithmList(locales[i]);
-            algorithms.put(new Integer(i), algNames);
+            String[] algNames = algorithms.get(i);
 
             locResult = algNames != null && algNames.length > 0;
             System.out.println("Locale " + i + ": " + locales[i].Country+","+locales[i].Language);
@@ -70,52 +103,65 @@ public class _XExtendedIndexEntrySupplier extends MultiMethodTest {
             }
             
             if (!locResult) {
-                log.println("No Algorithm found for " + locales[i].Country + 
+                System.out.println("No Algorithm found for " + locales[i].Country + 
                             "," + locales[i].Language);
             }
 
             result &= locResult;
         }
 
-        tRes.tested("getAlgorithmList()", result);
+        Assert.assertTrue("getAlgorithmList()", result);
     }
 
+    private HashMap<Integer, String[]> getAlgorithmList() {
+        HashMap<Integer, String[]> algorithms = new HashMap<Integer, String[]>();
+        for (int i = 0; i < locales.length; i++) {
+            String[] algNames = oObj.getAlgorithmList(locales[i]);
+            algorithms.put(i, algNames);
+        }
+        return algorithms;
+    }
+
+    @Test
     public void _getIndexKey() {
-        requiredMethod("loadAlgorithm()");
+        Assert.assertTrue("getIndexKey()", getIndexKey());
+    }
+
+    private boolean getIndexKey() {
         char[] characters = new char[] { 19968 };
         String getIndexFor = new String(characters);
         for (int i = 0; i < locales.length; i++) {
-            log.println("Language: " + locales[i].Language);
+            System.out.println("Language: " + locales[i].Language);
 
             for (int j = 0; j < algorithms.size(); j++) {
                 String[] algs = (String[])algorithms.get(new Integer(j));
                 for (int k=0;k<algs.length;k++) {
-                log.println("\t Algorithm :" + 
+                System.out.println("\t Algorithm :" + 
                             algs[k]);
                 oObj.loadAlgorithm(locales[i], algs[k], CollatorOptions.CollatorOptions_IGNORE_CASE);
-                log.println("\t\t Get: " + 
+                System.out.println("\t\t Get: " + 
                             oObj.getIndexKey(getIndexFor, "", locales[i]));
                 }
             }
         }
-        tRes.tested("getIndexKey()", true);
+        return true;
     }
 
     /*
      * gets a list of all locales, is OK if this list isn't empty
      */
+    @Test
     public void _getLocaleList() {
-        locales = oObj.getLocaleList();
-        tRes.tested("getLocaleList()", locales.length > 0);
+        // they were fetched in before()
+        Assert.assertTrue("getLocaleList()", locales.length > 0);
     }
 
     /*
      * gets one phonetic candidate for the chinese local
      * is ok if 'yi' is returned as expected.
      */
+    @Test
     public void _getPhoneticCandidate() {
-        requiredMethod("getLocaleList()");
-
         boolean res = true;
 
         Locale loc = new Locale("zh", "CN", "");
@@ -129,14 +175,14 @@ public class _XExtendedIndexEntrySupplier extends MultiMethodTest {
             boolean locResult = getting.equals(UnicodeStringPair.getExpectedPhoneticString(i));
 
             if (!locResult) {
-                log.println("Char: "+ c[0] + " (" + (int)c[0] + ")");
-                log.println("Expected " + UnicodeStringPair.getExpectedPhoneticString(i));
-                log.println("Getting " + getting);
+                System.out.println("Char: "+ c[0] + " (" + (int)c[0] + ")");
+                System.out.println("Expected " + UnicodeStringPair.getExpectedPhoneticString(i));
+                System.out.println("Getting " + getting);
             }
 
             res &= locResult;
-       }
-        tRes.tested("getPhoneticCandidate()", res);
+        }
+        Assert.assertTrue("getPhoneticCandidate()", res);
     }
 
     /*
@@ -144,55 +190,53 @@ public class _XExtendedIndexEntrySupplier extends MultiMethodTest {
      * Is OK if no exception occurs and the method returns 
      * true for each valid algorithm and false otherwise
      */
+    @Test
     public void _loadAlgorithm() {
-        requiredMethod("getAlgorithmList()");
-
         boolean res = true;
 
         for (int i = 0; i < algorithms.size(); i++) {
             String[] names = (String[]) algorithms.get(new Integer(i));
-            log.println("loading algorithms for " + locales[i].Country + 
+            System.out.println("loading algorithms for " + locales[i].Country + 
                         "," + locales[i].Language);
 
             for (int j = 0; j < names.length; j++) {
-                log.println("\t Loading " + names[j]);
+                System.out.println("\t Loading " + names[j]);
 
                 boolean localres = oObj.loadAlgorithm(locales[i], names[j], 
                                                       CollatorOptions.CollatorOptions_IGNORE_CASE);
 
                 if (!localres) {
-                    log.println("\t ... didn't work - FAILED");
+                    System.out.println("\t ... didn't work - FAILED");
                 } else {
-                    log.println("\t ... worked - OK");
+                    System.out.println("\t ... worked - OK");
                 }
 
                 res &= localres;
             }
 
-/*            log.println("\tTrying to load 'dummy' algorithm");
+/*            System.out.println("\tTrying to load 'dummy' algorithm");
 
             boolean localres = !oObj.loadAlgorithm(locales[i], "dummy", 
                                                    CollatorOptions.CollatorOptions_IGNORE_WIDTH);
 
             if (!localres) {
-                log.println("\t ... didn't work as expected - FAILED");
+                System.out.println("\t ... didn't work as expected - FAILED");
             } else {
-                log.println("\t ... worked - OK");
+                System.out.println("\t ... worked - OK");
             }
 
             res &= localres;*/
         }
 
-        tRes.tested("loadAlgorithm()", res);
+        Assert.assertTrue("loadAlgorithm()", res);
     }
 
     /*
      * checks the method usePhoneticEntry(). Only the languages ja, ko and zh 
      * should return true. Has OK state if exactly this is the case.
      */
+    @Test
     public void _usePhoneticEntry() {
-        requiredMethod("getLocaleList()");
-
         boolean res = true;
 
         for (int i = 0; i < locales.length; i++) {
@@ -207,15 +251,15 @@ public class _XExtendedIndexEntrySupplier extends MultiMethodTest {
             boolean locResult = oObj.usePhoneticEntry(locales[i]) == expected;
 
             if (!locResult) {
-                log.println("Failure for language " + locales[i].Language);
-                log.println("Expected " + expected);
-                log.println("Getting " + oObj.usePhoneticEntry(locales[i]));
+                System.out.println("Failure for language " + locales[i].Language);
+                System.out.println("Expected " + expected);
+                System.out.println("Getting " + oObj.usePhoneticEntry(locales[i]));
             }
 
             res &= locResult;
         }
 
-        tRes.tested("usePhoneticEntry()", res);
+        Assert.assertTrue("usePhoneticEntry()", res);
     }
     
     /**

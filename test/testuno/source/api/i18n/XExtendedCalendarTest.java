@@ -20,7 +20,7 @@
  *************************************************************/
 
 
-package ifc.i18n;
+package api.i18n;
 
 import com.sun.star.i18n.CalendarDisplayCode;
 import com.sun.star.i18n.NativeNumberMode;
@@ -29,32 +29,59 @@ import com.sun.star.i18n.XLocaleData;
 import com.sun.star.lang.Locale;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import lib.MultiMethodTest;
+import org.openoffice.test.uno.UnoApp;
+
 
 /**
  *
  */
-public class _XExtendedCalendar extends MultiMethodTest {
+public class XExtendedCalendarTest {
+    private static final UnoApp app = new UnoApp();
+
+    private XComponentContext xContext = null;
     public XExtendedCalendar oObj = null;
     boolean useUSENLocale = false;
+
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
     /**
      * Load a calendar
      */
-    public void before() {
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
         Locale[] installed_locales = null;
         XLocaleData locData = null;
-        try {
-            locData = (XLocaleData) UnoRuntime.queryInterface(
-                XLocaleData.class,
-                    ((XMultiServiceFactory)tParam.getMSF()).createInstance(
-                    "com.sun.star.i18n.LocaleData"));
-        } catch (com.sun.star.uno.Exception e) {
-
-        }
+        locData = UnoRuntime.queryInterface(
+            XLocaleData.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.LocaleData", xContext)
+        );
+        oObj = UnoRuntime.queryInterface(
+            XExtendedCalendar.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.LocaleCalendar", xContext)
+        );
         installed_locales = locData.getAllInstalledLocaleNames();
         // use first Locale as fallback, if US-English is not found
         Locale lo = installed_locales[0];
@@ -66,11 +93,11 @@ public class _XExtendedCalendar extends MultiMethodTest {
                 useUSENLocale = true;
             }
         }
-        log.println("Choose Locale: '" + lo.Language + "', '" + lo.Country + "'");
+        System.out.println("Choose Locale: '" + lo.Language + "', '" + lo.Country + "'");
         oObj.loadDefaultCalendar(lo);
     }
     
-    
+    @Test    
     public void _getDisplayString() {
         // against regression: the current state is the right one.
         boolean result = true;
@@ -113,18 +140,18 @@ public class _XExtendedCalendar extends MultiMethodTest {
             if (useUSENLocale) {
                 locResult = displayString[i].equals(expectedStringResult[i]);
                 if (!locResult)
-                    log.println("getDisplayString() result " + i + ": '" + displayString[i] 
+                    System.out.println("getDisplayString() result " + i + ": '" + displayString[i] 
                                         + "', expected: '" + expectedStringResult[i] + "'");
                 result &= locResult;
             }
             else { // no defaults for other locales, just expect a String
                 locResult &= displayString[i] != null;
                 if (!locResult)
-                    log.println("getDisplayString() result " + i + " was 'null'"); 
+                    System.out.println("getDisplayString() result " + i + " was 'null'"); 
                 result &= locResult;
             }
         }
-        tRes.tested("getDisplayString()", result);
+        Assert.assertTrue("getDisplayString()", result);
     }
     
     private SimpleDateFormat getSDF(String format){

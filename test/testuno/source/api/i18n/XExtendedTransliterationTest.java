@@ -20,28 +20,59 @@
  *************************************************************/
 
 
-package ifc.i18n;
+package api.i18n;
 
 import com.sun.star.i18n.TransliterationModules;
 import com.sun.star.i18n.XExtendedTransliteration;
 import com.sun.star.lang.Locale;
-import lib.MultiMethodTest;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
 
 /**
  *
  */
-public class _XExtendedTransliteration extends MultiMethodTest {
+public class XExtendedTransliterationTest {
+    private static final UnoApp app = new UnoApp();
+
+    private XComponentContext xContext = null;
     public XExtendedTransliteration oObj = null;
 //    private Locale loc = new Locale("ja", "JP", "") ;
     private Locale loc = new Locale("en", "US", "") ;
-    
-    public void before() {
+
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
+        oObj = UnoRuntime.queryInterface(
+            XExtendedTransliteration.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.Transliteration", xContext)
+        );
         oObj.loadModule(TransliterationModules.LOWERCASE_UPPERCASE, loc);
     }
     
     /**
      * Check lowercase - uppercase conversion of chars
      */
+    @Test
     public void _transliterateChar2Char() {
         boolean result = true;
         char in = 'a';
@@ -54,9 +85,9 @@ public class _XExtendedTransliteration extends MultiMethodTest {
             result &= out == '$';
         }
         catch(com.sun.star.i18n.MultipleCharsOutputException e) {
-            e.printStackTrace((java.io.PrintWriter)log);
+            e.printStackTrace(System.out);
         }
-        tRes.tested("transliterateChar2Char()", result);
+        Assert.assertTrue("transliterateChar2Char()", result);
     }
     
     /**
@@ -71,7 +102,7 @@ public class _XExtendedTransliteration extends MultiMethodTest {
         in = '$'; // should not be changed
         out = oObj.transliterateChar2String(in) ;
         result &= out.equals("$");
-        tRes.tested("transliterateChar2String()", result);
+        Assert.assertTrue("transliterateChar2String()", result);
     }
     
     /**
@@ -86,6 +117,6 @@ public class _XExtendedTransliteration extends MultiMethodTest {
         in = "$"; // should not be changed
         out = oObj.transliterateString2String(in, 0, 1) ;
         result &= out.equals("$");
-        tRes.tested("transliterateString2String()", result);
+        Assert.assertTrue("transliterateString2String()", result);
     }
 }

@@ -21,9 +21,7 @@
 
 
 
-package ifc.i18n;
-
-import lib.MultiMethodTest;
+package api.i18n;
 
 import com.sun.star.i18n.Calendar;
 import com.sun.star.i18n.Currency;
@@ -34,6 +32,14 @@ import com.sun.star.i18n.LanguageCountryInfo;
 import com.sun.star.i18n.LocaleDataItem;
 import com.sun.star.i18n.XLocaleData;
 import com.sun.star.lang.Locale;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
 
 /**
 * Testing <code>com.sun.star.i18n.XLocaleData</code>
@@ -55,17 +61,41 @@ import com.sun.star.lang.Locale;
 * Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.i18n.XLocaleData
 */
-public class _XLocaleData extends MultiMethodTest {
+public class XLocaleDataTest {
+    private static final UnoApp app = new UnoApp();
+
+    private XComponentContext xContext = null;
     public XLocaleData oObj = null;
     public String[] languages = new String[]{"de","en","es","fr","ja","ko","ko"};
     public String[] countries = new String[]{"DE","US","ES","FR","JP","KR","KR"};
 
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception, java.lang.Exception
+    {
+        xContext = app.getComponentContext();
+        final Object object = xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.LocaleData", xContext);
+        oObj = UnoRuntime.queryInterface(XLocaleData.class, object);
+    }
 
     /**
     * Test calls the method, then result is checked. <p>
     * Has <b> OK </b> status if structure, returned by the method includes
     * correct values of fields 'Language' and 'Country' for all given locales.
     */
+    @Test
     public void _getLanguageCountryInfo() {
         boolean res = true;
         LanguageCountryInfo lci = null;
@@ -73,20 +103,20 @@ public class _XLocaleData extends MultiMethodTest {
         for (int i=0;i<7;i++) {
             lci = oObj.getLanguageCountryInfo(getLocale(i));
             /* For debug purposes
-            log.println("Using: language="+languages[i]+" ; country="+countries[i]);
-            log.println("Getting: ");
-            log.println("\t Language="+lci.Language);
-            log.println("\t LanguageDefaultName="+lci.LanguageDefaultName);
-            log.println("\t Country="+lci.Country);
-            log.println("\t CountryDefaultName="+lci.CountryDefaultName);
+            System.out.println("Using: language="+languages[i]+" ; country="+countries[i]);
+            System.out.println("Getting: ");
+            System.out.println("\t Language="+lci.Language);
+            System.out.println("\t LanguageDefaultName="+lci.LanguageDefaultName);
+            System.out.println("\t Country="+lci.Country);
+            System.out.println("\t CountryDefaultName="+lci.CountryDefaultName);
             boolean lang = ( lci.Language.equals(languages[i]) );
-            if (!lang) log.println("getting false for language: "+lci.LanguageDefaultName);
+            if (!lang) System.out.println("getting false for language: "+lci.LanguageDefaultName);
             lang = ( lci.Country.equals(countries[i]) );
-            if (!lang) log.println("getting false for country: "+lci.CountryDefaultName);
+            if (!lang) System.out.println("getting false for country: "+lci.CountryDefaultName);
             */
             res &= ( ( lci.Language.equals(languages[i]) ) && ( lci.Country.equals(countries[i]) ) );
         }
-        tRes.tested("getLanguageCountryInfo()",res);
+        Assert.assertTrue("getLanguageCountryInfo()",res);
     }
 
     /**
@@ -94,6 +124,7 @@ public class _XLocaleData extends MultiMethodTest {
     * Has <b> OK </b> status if structure, returned by the method consists of
     * non empty strings for all given locales.
     */
+    @Test
     public void _getLocaleItem() {
         boolean res = true;
         LocaleDataItem ldi = null;
@@ -124,30 +155,30 @@ public class _XLocaleData extends MultiMethodTest {
 
             if (!locRes) {
                 /* for debugging puposes
-                log.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
-                log.println("Getting: ");
-                log.println("\t DateSeparator="+ldi.dateSeparator);
-                log.println("\t decimalSeparator="+ldi.decimalSeparator);
-                log.println("\t doubleQuotationEnd="+ldi.doubleQuotationEnd);
-                log.println("\t doubleQuotationStart="+ldi.doubleQuotationStart);
-                log.println("\t listSeparator="+ldi.listSeparator);
-                log.println("\t LongDateDayOfWeekSeparator="+ldi.LongDateDayOfWeekSeparator+"end");
-                log.println("\t LongDateDaySeparator="+ldi.LongDateDaySeparator+"end");
-                log.println("\t LongDateMonthSeparator="+ldi.LongDateMonthSeparator+"end");
-                log.println("\t LongDateYearSeparator="+ldi.LongDateYearSeparator+"end");
-                log.println("\t measurementSystem="+ldi.measurementSystem);
-                log.println("\t quotationEnd="+ldi.quotationEnd);
-                log.println("\t quotationStart="+ldi.quotationStart);
-                log.println("\t thousandSeparator="+ldi.thousandSeparator);
-                log.println("\t time100SecSeparator="+ldi.time100SecSeparator);
-                log.println("\t timeAM="+ldi.timeAM);
-                log.println("\t timePM="+ldi.timePM);
-                log.println("\t timeSeparator="+ldi.timeSeparator);
-                log.println("\t unoID="+ldi.unoID);
+                System.out.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
+                System.out.println("Getting: ");
+                System.out.println("\t DateSeparator="+ldi.dateSeparator);
+                System.out.println("\t decimalSeparator="+ldi.decimalSeparator);
+                System.out.println("\t doubleQuotationEnd="+ldi.doubleQuotationEnd);
+                System.out.println("\t doubleQuotationStart="+ldi.doubleQuotationStart);
+                System.out.println("\t listSeparator="+ldi.listSeparator);
+                System.out.println("\t LongDateDayOfWeekSeparator="+ldi.LongDateDayOfWeekSeparator+"end");
+                System.out.println("\t LongDateDaySeparator="+ldi.LongDateDaySeparator+"end");
+                System.out.println("\t LongDateMonthSeparator="+ldi.LongDateMonthSeparator+"end");
+                System.out.println("\t LongDateYearSeparator="+ldi.LongDateYearSeparator+"end");
+                System.out.println("\t measurementSystem="+ldi.measurementSystem);
+                System.out.println("\t quotationEnd="+ldi.quotationEnd);
+                System.out.println("\t quotationStart="+ldi.quotationStart);
+                System.out.println("\t thousandSeparator="+ldi.thousandSeparator);
+                System.out.println("\t time100SecSeparator="+ldi.time100SecSeparator);
+                System.out.println("\t timeAM="+ldi.timeAM);
+                System.out.println("\t timePM="+ldi.timePM);
+                System.out.println("\t timeSeparator="+ldi.timeSeparator);
+                System.out.println("\t unoID="+ldi.unoID);
                  */
             }
         }
-        tRes.tested("getLocaleItem()",res);
+        Assert.assertTrue("getLocaleItem()",res);
     }
 
     /**
@@ -157,6 +188,7 @@ public class _XLocaleData extends MultiMethodTest {
     * correct for all given locales. (boolean method goodCalendar() with a
     * calendar as an argument returns true)
     */
+    @Test
     public void _getAllCalendars() {
         boolean res = true;
         boolean printit = false;
@@ -170,10 +202,10 @@ public class _XLocaleData extends MultiMethodTest {
                 }
                 res &= goodCalendar(calendar[j]);
             }
-            if (printit) log.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
+            if (printit) System.out.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
             printit = false;
         }
-        tRes.tested("getAllCalendars()", res);
+        Assert.assertTrue("getAllCalendars()", res);
     }
 
     /**
@@ -183,6 +215,7 @@ public class _XLocaleData extends MultiMethodTest {
     * correct for all given locales. (boolean method goodCurrency() with a
     * currency as an argument returns true)
     */
+    @Test
     public void _getAllCurrencies() {
         boolean res = true;
         boolean printit = false;
@@ -196,10 +229,10 @@ public class _XLocaleData extends MultiMethodTest {
                 }
                 res &= goodCurrency(currency[j]);
             }
-            if (printit) log.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
+            if (printit) System.out.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
             printit =false;
         }
-        tRes.tested("getAllCurrencies()",res);
+        Assert.assertTrue("getAllCurrencies()",res);
     }
 
     /**
@@ -209,6 +242,7 @@ public class _XLocaleData extends MultiMethodTest {
     * correct for all given locales. (boolean method goodFormat() with a
     * format as an argument returns true)
     */
+    @Test
     public void _getAllFormats() {
         boolean res = true;
         boolean printit = false;
@@ -222,10 +256,10 @@ public class _XLocaleData extends MultiMethodTest {
                 }
                 res &= goodFormat(format[j]);
             }
-            if (printit) log.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
+            if (printit) System.out.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
             printit =false;
         }
-        tRes.tested("getAllFormats()",res);
+        Assert.assertTrue("getAllFormats()",res);
     }
 
     /**
@@ -234,6 +268,7 @@ public class _XLocaleData extends MultiMethodTest {
     * Has <b> OK </b> status if all structs, returned by the method have non
     * empty field 'UnoID' for all given locales.
     */
+    @Test
     public void _getCollatorImplementations() {
         boolean res = true;
         boolean printit = false;
@@ -247,11 +282,11 @@ public class _XLocaleData extends MultiMethodTest {
                 }
                 res &= (!impl[j].unoID.equals(""));
             }
-            if (printit) log.println("FAILED for: language=" + languages[i]
+            if (printit) System.out.println("FAILED for: language=" + languages[i]
                 + " ; country=" + countries[i]);
             printit = false;
         }
-        tRes.tested("getCollatorImplementations()", res);
+        Assert.assertTrue("getCollatorImplementations()", res);
     }
 
     /**
@@ -260,6 +295,7 @@ public class _XLocaleData extends MultiMethodTest {
     * Has <b> OK </b> status if all strings, returned by the method are not
     * empty for all given locales.
     */
+    @Test
     public void _getSearchOptions() {
         boolean res = true;
         boolean printit = false;
@@ -273,11 +309,11 @@ public class _XLocaleData extends MultiMethodTest {
                 }
                 res &= (!str.equals(""));
             }
-            if (printit) log.println("FAILED for: language=" + languages[i]
+            if (printit) System.out.println("FAILED for: language=" + languages[i]
                 + " ; country=" + countries[i]);
             printit = false;
         }
-        tRes.tested("getSearchOptions()",res);
+        Assert.assertTrue("getSearchOptions()",res);
     }
 
     /**
@@ -286,6 +322,7 @@ public class _XLocaleData extends MultiMethodTest {
     * Has <b> OK </b> status if all strings, returned by the method are not
     * empty for all given locales.
     */
+    @Test
     public void _getCollationOptions() {
         boolean res = true;
         boolean printit = false;
@@ -299,11 +336,11 @@ public class _XLocaleData extends MultiMethodTest {
                 }
                 res &= (!str.equals(""));
             }
-            if (printit) log.println("FAILED for: language=" + languages[i]
+            if (printit) System.out.println("FAILED for: language=" + languages[i]
                 + " ; country=" + countries[i]);
             printit = false;
         }
-        tRes.tested("getCollationOptions()", res);
+        Assert.assertTrue("getCollationOptions()", res);
     }
 
     /**
@@ -312,6 +349,7 @@ public class _XLocaleData extends MultiMethodTest {
     * Has <b> OK </b> status if all strings, returned by the method are not
     * empty for all given locales.
     */
+    @Test
     public void _getTransliterations() {
         boolean res = true;
         boolean printit = false;
@@ -325,11 +363,11 @@ public class _XLocaleData extends MultiMethodTest {
                 }
                 res &= (!str.equals(""));
             }
-            if (printit) log.println("FAILED for: language=" + languages[i]
+            if (printit) System.out.println("FAILED for: language=" + languages[i]
                 + " ; country=" + countries[i]);
             printit = false;
         }
-        tRes.tested("getTransliterations()", res);
+        Assert.assertTrue("getTransliterations()", res);
     }
 
     /**
@@ -338,6 +376,7 @@ public class _XLocaleData extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns structure with non-empty
     * fields for all given locales.
     */
+    @Test
     public void _getForbiddenCharacters() {
         boolean res = true;
         ForbiddenCharacters fc = null;
@@ -347,10 +386,10 @@ public class _XLocaleData extends MultiMethodTest {
             fc = oObj.getForbiddenCharacters(getLocale(i));
             res &= !( fc.beginLine.equals("") || fc.endLine.equals("") );
             if ( !res ) {
-                log.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
+                System.out.println("FAILED for: language="+languages[i]+" ; country="+countries[i]);
             }
         }
-        tRes.tested("getForbiddenCharacters()", res);
+        Assert.assertTrue("getForbiddenCharacters()", res);
     }
 
 
@@ -360,6 +399,7 @@ public class _XLocaleData extends MultiMethodTest {
     * Has <b> OK </b> status if all strings, returned by the method are not
     * empty for all given locales.
     */
+    @Test
     public void _getReservedWord() {
         boolean res = true;
         boolean printit = false;
@@ -373,11 +413,11 @@ public class _XLocaleData extends MultiMethodTest {
                 }
                 res &= (!str.equals(""));
             }
-            if (printit) log.println("FAILED for: language=" + languages[i]
+            if (printit) System.out.println("FAILED for: language=" + languages[i]
                 + " ; country=" + countries[i]);
             printit = false;
         }
-        tRes.tested("getReservedWord()", res);
+        Assert.assertTrue("getReservedWord()", res);
     }
 
 
@@ -386,6 +426,7 @@ public class _XLocaleData extends MultiMethodTest {
     * Has <b> OK </b> status if locale sequence, returned by the method contains
     * given locales.
     */
+    @Test
     public void _getAllInstalledLocaleNames() {
         boolean res = true;
         Locale[] locs = oObj.getAllInstalledLocaleNames();
@@ -394,7 +435,7 @@ public class _XLocaleData extends MultiMethodTest {
         for (int i=0;i<7;i++) {
             res &= contains(locs, getLocale(i));
         }
-        tRes.tested("getAllInstalledLocaleNames()",res);
+        Assert.assertTrue("getAllInstalledLocaleNames()",res);
     }
 
 
@@ -414,34 +455,34 @@ public class _XLocaleData extends MultiMethodTest {
     public boolean goodCalendar(Calendar calendar) {
         boolean good = true;
         for (int i=0;i<calendar.Days.length;i++) {
-            //log.println("Day "+i+"(AbbrevName): "+calendar.Days[i].AbbrevName);
+            //System.out.println("Day "+i+"(AbbrevName): "+calendar.Days[i].AbbrevName);
             good &= (! calendar.Days[i].AbbrevName.equals("") );
-            //log.println("Day "+i+"(FullName): "+calendar.Days[i].FullName);
+            //System.out.println("Day "+i+"(FullName): "+calendar.Days[i].FullName);
             good &= (! calendar.Days[i].FullName.equals("") );
-            //log.println("Day "+i+"(ID): "+calendar.Days[i].ID);
+            //System.out.println("Day "+i+"(ID): "+calendar.Days[i].ID);
             good &= (! calendar.Days[i].ID.equals("") );
         }
         for (int i=0;i<calendar.Months.length;i++) {
-            //log.println("Day "+i+"(AbbrevName): "+calendar.Months[i].AbbrevName);
+            //System.out.println("Day "+i+"(AbbrevName): "+calendar.Months[i].AbbrevName);
             good &= (! calendar.Months[i].AbbrevName.equals("") );
-            //log.println("Day "+i+"(FullName): "+calendar.Months[i].FullName);
+            //System.out.println("Day "+i+"(FullName): "+calendar.Months[i].FullName);
             good &= (! calendar.Months[i].FullName.equals("") );
-            //log.println("Day "+i+"(ID): "+calendar.Months[i].ID);
+            //System.out.println("Day "+i+"(ID): "+calendar.Months[i].ID);
             good &= (! calendar.Months[i].ID.equals("") );
         }
         for (int i=0;i<calendar.Eras.length;i++) {
-            //log.println("Era "+i+"(AbbrevName): "+calendar.Eras[i].AbbrevName);
+            //System.out.println("Era "+i+"(AbbrevName): "+calendar.Eras[i].AbbrevName);
             good &= (! calendar.Eras[i].AbbrevName.equals("") );
-            //log.println("Era "+i+"(FullName): "+calendar.Eras[i].FullName);
+            //System.out.println("Era "+i+"(FullName): "+calendar.Eras[i].FullName);
             good &= (! calendar.Eras[i].FullName.equals("") );
-            //log.println("Era "+i+"(ID): "+calendar.Eras[i].ID);
+            //System.out.println("Era "+i+"(ID): "+calendar.Eras[i].ID);
             good &= (! calendar.Eras[i].ID.equals("") );
         }
-        //log.println("Start of Week: "+calendar.StartOfWeek);
+        //System.out.println("Start of Week: "+calendar.StartOfWeek);
         good &= (! calendar.StartOfWeek.equals("") );
-        //log.println("MinimumNumberOfDaysForFirstWeek: "+calendar.MinimumNumberOfDaysForFirstWeek);
-        //log.println("Default: "+calendar.Default);
-        //log.println("Name: "+calendar.Name);
+        //System.out.println("MinimumNumberOfDaysForFirstWeek: "+calendar.MinimumNumberOfDaysForFirstWeek);
+        //System.out.println("Default: "+calendar.Default);
+        //System.out.println("Name: "+calendar.Name);
         good &= (! calendar.Name.equals("") );
         return good;
     }
@@ -485,7 +526,7 @@ public class _XLocaleData extends MultiMethodTest {
                     break;
             }
         }
-        if (!cont) log.println("Not contained: " + oneLoc.Language);
+        if (!cont) System.out.println("Not contained: " + oneLoc.Language);
         return cont;
     }
 
