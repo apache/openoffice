@@ -364,25 +364,19 @@ public class XCharacterClassificationTest {
             9734,9999,10247,11911,12034,12274,12294,12358,12456,12552,12605,12688,12727,
             12806,13065,13312,19968,40964,42152,44032,55296,56192,56320,57344,63744,
             64257,64370,65056,65073,65131,65146,65532,65288};
-        int[] charsInt = new int[]{65,128,256,384,592,750,773,924,1030,1331,1448,
-            1569,1792,1936,2313,2465,2570,2707,2822,2972,3079,3240,3337,3464,3590,
-            3745,3906,4097,4274,4357,4621,5040,5200,5776,5806,6030,6155,7683,7943,
-            8202,8319,8352,8413,8452,8545,8616,8715,8965,9217,9281,9336,9474,9608,9719,
-            9734,9999,10247,11911,12034,12274,12294,12358,12456,12552,12605,12688,12727,
-            12806,13065,13312,19968,40964,42152,44032,55296,56192,56320,57344,63744,
-            64257,64370,65056,65073,65131,65146,65532,65288};
         String toCheck = new String(characters);
 
         for (int i=0;i<characters.length;i++) {
             int get = oObj.getScript(toCheck, i);
-            res &= (get == i);
             //The HIGH_SURROGATE 55296 doesn't work since it hasn't the right
-            //neighborhood
-            if (toCheck.substring(i, i + 1).hashCode() == 55296) res = true;
+            //neighborhood. Neither does 56192 - it combines with 55296 into another code point.
+            if (toCheck.charAt(i) != 55296 && toCheck.charAt(i) != 56192) {
+                res &= (get == i);
+            }
             if (!res) {
                 System.out.println("-- " + toCheck.substring(i, i + 1).hashCode());
-                System.out.println("Code: " + Integer.toHexString(charsInt[i]));
-                System.out.println("Gained: " + unicode_script[get]);
+                System.out.println("Code: " + Integer.toHexString((int)characters[i]));
+                System.out.println("Gained: " + get + " (" + (0 <= get && get < unicode_script.length ? unicode_script[get] : "out of range") + ")");
                 System.out.println("Expected: " + unicode_script[i]);
             }
         }
