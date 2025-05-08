@@ -263,7 +263,15 @@ public class XCharacterClassificationTest {
     @Test
     public void _getCharacterType() {
         boolean res = true;
-        String toCheck = "Ab0)";
+        // If or when this list gets out of date again,
+        // find new characters of the required type with:
+        //for (int i = 32; i <= 0xffff; i++) {
+        //    int charType = oObj.getCharacterType("" + (char)i, 0, getLocale(1));
+        //    if (charType == 32) {
+        //        System.out.println("character " + i + " has type 32");
+        //    }
+        //}
+        String toCheck = "Ab0*";
         int[] expected = new int[]{226,228,97,32};
 
         for (int i=0;i<toCheck.length();i++) {
