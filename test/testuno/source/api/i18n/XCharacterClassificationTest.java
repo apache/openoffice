@@ -269,9 +269,9 @@ public class XCharacterClassificationTest {
                 if (!res) {
                     System.out.println("FAILED for: language=" + languages[j] +
                         " ; country=" + countries[j]);
-                    System.out.println("Symbol :" + toCheck.toCharArray()[i]);
+                    System.out.println("Symbol: " + toCheck.toCharArray()[i]);
                     System.out.println("Gained: " + get);
-                    System.out.println("Expected : " + expected[i]);
+                    System.out.println("Expected: " + expected[i]);
                 }
             }
         }
