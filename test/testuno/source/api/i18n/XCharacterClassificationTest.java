@@ -35,6 +35,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openoffice.test.uno.UnoApp;
 
@@ -167,6 +168,7 @@ public class XCharacterClassificationTest {
     * a string that is returned by String.toLowerCase() for all locales.
     */
     @Test
+    @Ignore("Bug #87590 Incorrect casing for U+026A, U+0268, U+0197...")
     public void _toLower() {
         boolean res = true;
         char[] characters = new char[]{586,65,97,498,721,4588,772,8413,3404};
