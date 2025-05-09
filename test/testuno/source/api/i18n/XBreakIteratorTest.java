@@ -351,13 +351,11 @@ public class XBreakIteratorTest {
         for(int i = 0; i < vBounds.size(); i++) {
             Boundary iBounds = (Boundary)vBounds.get(i);
             boolean isBegin = oObj.isBeginWord(UnicodeString, iBounds.startPos,
-                                               locale, WordType.ANY_WORD);
+                                               locale, wordType);
             bRes = bRes && isBegin;
-            Assert.assertTrue("isBeginWord is wrong at position " + iBounds.startPos + ", string len " + UnicodeString.length(), isBegin);
             boolean isNotBegin = !oObj.isBeginWord(UnicodeString,
-                    iBounds.startPos + 1, locale, WordType.ANY_WORD);
+                    iBounds.startPos + 1, locale, wordType);
             bRes = bRes && isNotBegin;
-            Assert.assertTrue("isBeginWord is wrong at position " + (iBounds.startPos + 1) + " for bounds (" + iBounds.startPos + "," + iBounds.endPos, isNotBegin);
 
             System.out.println("At position + " + iBounds.startPos
                 + " isBeginWord? " + isBegin);
@@ -386,10 +384,10 @@ public class XBreakIteratorTest {
         for(int i = 0; i < vBounds.size(); i++) {
             Boundary iBounds = (Boundary)vBounds.get(i);
             boolean isEnd = oObj.isEndWord(UnicodeString, iBounds.endPos,
-                locale, WordType.ANY_WORD);
+                locale, wordType);
             bRes = bRes && isEnd;
             boolean isNotEnd = !oObj.isEndWord(UnicodeString,
-                iBounds.endPos - 1, locale, WordType.ANY_WORD);
+                iBounds.endPos - 1, locale, wordType);
             bRes = bRes && isNotEnd;
 
             System.out.println("At position + " + iBounds.endPos
