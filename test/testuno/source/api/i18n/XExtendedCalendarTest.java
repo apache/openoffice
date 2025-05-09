@@ -119,9 +119,9 @@ public class XExtendedCalendarTest {
         int month = cal.get(Calendar.MONTH) + 1;
         String quarter = "Q1";
         String longQuarter = "1st quarter";
-        if (month > 3 && month < 7) { quarter = "Q2"; longQuarter = "2nd quarter"; }
-        else if (month > 6 && month < 10) { quarter = "Q3"; longQuarter = "3rd quarter"; }
-        else if (month > 10 && month < 13) {quarter = "Q4"; longQuarter = "4th quarter"; }
+        if (4 <= month && month <= 6) { quarter = "Q2"; longQuarter = "2nd quarter"; }
+        else if (7 <= month && month <= 9) { quarter = "Q3"; longQuarter = "3rd quarter"; }
+        else if (10 <= month && month <= 12) {quarter = "Q4"; longQuarter = "4th quarter"; }
         expectedStringResult[3] = quarter;
         expectedStringResult[4] = longQuarter;
         
