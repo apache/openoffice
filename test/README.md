@@ -77,7 +77,9 @@ ant -Dopenoffice.home="C:\Program Files (x86)\OpenOffice 4" compile
 ```
 
 ## Running Tests
-There are three test suites available. Build Verification Test (BVT), Function Verification Test (FVT), and Performance Verification Test (PVT).
+There are several test suites available. API test, Build Verification Test (BVT), Function Verification Test (FVT), and Performance Verification Test (PVT).
+
+The **API** test will test OpenOffice using UNO API tests ported from main/qadevOOo.
 
 The **Build Verification Test** Suite includes approximately fifty unit tests used for general build verification.
 
@@ -97,6 +99,8 @@ FVT Example:
 ```shell
 ./run -Dopenoffice.home="$PWD/testspace/install/openoffice4" -tp fvt
 ```
+API test Example (Linux):
+./run -Dopenoffice.home="$PWD/testspace/install/openoffice4" -tp api
 ### Running a Single Class
 ```shell
 ./run -Dopenoffice.home="$PWD/testspace/install/openoffice4" -tc bvt.gui.BasicFunctionTest
