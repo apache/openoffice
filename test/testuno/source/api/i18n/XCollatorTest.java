@@ -24,6 +24,8 @@
 package api.i18n;
 
 import java.text.Collator;
+import java.util.Arrays;
+import java.util.Collection;
 
 import com.sun.star.i18n.CollatorOptions;
 import com.sun.star.i18n.XCollator;
@@ -35,6 +37,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 import org.openoffice.test.uno.UnoApp;
 
 /**
@@ -52,9 +57,11 @@ import org.openoffice.test.uno.UnoApp;
 * Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.i18n.XCollator
 */
+@RunWith(Parameterized.class)
 public class XCollatorTest {
     private static final UnoApp app = new UnoApp();
 
+    private String collatorServiceName;
     private XComponentContext xContext = null;
     private XCollator oObj = null;
     private String[] alg = null ;
@@ -74,11 +81,23 @@ public class XCollatorTest {
         app.close();
     }
 
+    @Parameters(name = "{0}")
+    public static Collection<Object[]> data() {
+        return Arrays.asList(new Object[][]{
+                {"com.sun.star.i18n.Collator"},
+                {"com.sun.star.i18n.ChapterCollator"}
+        });
+    }
+
+    public XCollatorTest(String collatorServiceName) {
+        this.collatorServiceName = collatorServiceName;
+    }
+
     @Before
     public void before() throws Exception, java.lang.Exception
     {
         xContext = app.getComponentContext();
-        final Object object = xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.Collator", xContext);
+        final Object object = xContext.getServiceManager().createInstanceWithContext(collatorServiceName, xContext);
         oObj = UnoRuntime.queryInterface(XCollator.class, object);
         alg = oObj.listCollatorAlgorithms(loc);
     }
