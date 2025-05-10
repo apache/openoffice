@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -31,14 +31,11 @@
 #include <basegfx/matrix/b3dhommatrix.hxx>
 #include <basegfx/numeric/ftools.hxx>
 #include <osl/mutex.hxx>
-#include <com/sun/star/drawing/DoubleSequence.hpp> 
+#include <com/sun/star/drawing/DoubleSequence.hpp>
 
-//////////////////////////////////////////////////////////////////////////////
 // predefines
 #define nMinSegments sal_uInt32(1)
 #define nMaxSegments sal_uInt32(512)
-
-//////////////////////////////////////////////////////////////////////////////
 
 namespace basegfx
 {
@@ -70,16 +67,16 @@ namespace basegfx
 			if(rCandidate.count() && fFullDashDotLen > 0.0)
 			{
 				B3DPolyPolygon aLineTarget, aGapTarget;
-	
+
 				for(sal_uInt32 a(0L); a < rCandidate.count(); a++)
 				{
 					const B3DPolygon aCandidate(rCandidate.getB3DPolygon(a));
-					
+
 					applyLineDashing(
-						aCandidate, 
-						rDotDashArray, 
-						pLineTarget ? &aLineTarget : 0, 
-						pGapTarget ? &aGapTarget : 0, 
+						aCandidate,
+						rDotDashArray,
+						pLineTarget ? &aLineTarget : 0,
+						pGapTarget ? &aGapTarget : 0,
 						fFullDashDotLen);
 
 					if(pLineTarget)
@@ -98,7 +95,7 @@ namespace basegfx
 		B3DPolyPolygon createUnitCubePolyPolygon()
 		{
 			static B3DPolyPolygon aRetval;
-		    ::osl::Mutex m_mutex;
+			::osl::Mutex m_mutex;
 
 			if(!aRetval.count())
 			{
@@ -145,7 +142,7 @@ namespace basegfx
 		B3DPolyPolygon createUnitCubeFillPolyPolygon()
 		{
 			static B3DPolyPolygon aRetval;
-		    ::osl::Mutex m_mutex;
+			::osl::Mutex m_mutex;
 
 			if(!aRetval.count())
 			{
@@ -252,7 +249,7 @@ namespace basegfx
 			return aRetval;
 		}
 
-		// helper for getting the 3D Point from given cartesian coordiantes. fVer is defined from
+		// helper for getting the 3D Point from given cartesian coordinates. fVer is defined from
 		// [F_PI2 .. -F_PI2], fHor from [0.0 .. F_2PI]
 		inline B3DPoint getPointFromCartesian(double fVer, double fHor)
 		{
@@ -273,16 +270,16 @@ namespace basegfx
 				nHorSeg = fround(fabs(fHorStop - fHorStart) / (F_2PI / 24.0));
 			}
 
-            // min/max limitations
-            nHorSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nHorSeg));
+			// min/max limitations
+			nHorSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nHorSeg));
 
 			if(!nVerSeg)
 			{
 				nVerSeg = fround(fabs(fVerStop - fVerStart) / (F_2PI / 24.0));
 			}
 
-            // min/max limitations
-            nVerSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nVerSeg));
+			// min/max limitations
+			nVerSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nVerSeg));
 
 			// create constants
 			const double fVerDiffPerStep((fVerStop - fVerStart) / (double)nVerSeg);
@@ -338,8 +335,8 @@ namespace basegfx
 
 			return aRetval;
 		}
-		
-		B3DPolyPolygon createSpherePolyPolygonFromB3DRange( const B3DRange& rRange, 
+
+		B3DPolyPolygon createSpherePolyPolygonFromB3DRange( const B3DRange& rRange,
 			sal_uInt32 nHorSeg, sal_uInt32 nVerSeg,
 			double fVerStart, double fVerStop,
 			double fHorStart, double fHorStop)
@@ -372,16 +369,16 @@ namespace basegfx
 				nHorSeg = fround(fabs(fHorStop - fHorStart) / (F_2PI / 24.0));
 			}
 
-            // min/max limitations
-            nHorSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nHorSeg));
+			// min/max limitations
+			nHorSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nHorSeg));
 
 			if(!nVerSeg)
 			{
 				nVerSeg = fround(fabs(fVerStop - fVerStart) / (F_2PI / 24.0));
 			}
 
-            // min/max limitations
-            nVerSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nVerSeg));
+			// min/max limitations
+			nVerSeg = ::std::min(nMaxSegments, ::std::max(nMinSegments, nVerSeg));
 
 			// vertical loop
 			for(sal_uInt32 a(0L); a < nVerSeg; a++)
@@ -416,8 +413,8 @@ namespace basegfx
 
 			return aRetval;
 		}
-		
-		B3DPolyPolygon createSphereFillPolyPolygonFromB3DRange( const B3DRange& rRange, 
+
+		B3DPolyPolygon createSphereFillPolyPolygonFromB3DRange( const B3DRange& rRange,
 			sal_uInt32 nHorSeg, sal_uInt32 nVerSeg,
 			bool bNormals,
 			double fVerStart, double fVerStop,
@@ -513,7 +510,6 @@ namespace basegfx
 			}
 		}
 
-		//////////////////////////////////////////////////////////////////////
 		// comparators with tolerance for 3D PolyPolygons
 
 		bool equal(const B3DPolyPolygon& rCandidateA, const B3DPolyPolygon& rCandidateB, const double& rfSmallValue)
@@ -541,133 +537,131 @@ namespace basegfx
 			return equal(rCandidateA, rCandidateB, fSmallValue);
 		}
 
-/// converters for com::sun::star::drawing::PolyPolygonShape3D
-        B3DPolyPolygon UnoPolyPolygonShape3DToB3DPolyPolygon(
-            const com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DSource, 
-            bool bCheckClosed)
-        {
-            B3DPolyPolygon aRetval;
-            const sal_Int32 nOuterSequenceCount(rPolyPolygonShape3DSource.SequenceX.getLength());
+// converters for com::sun::star::drawing::PolyPolygonShape3D
+		B3DPolyPolygon UnoPolyPolygonShape3DToB3DPolyPolygon(
+			const com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DSource,
+			bool bCheckClosed)
+		{
+			B3DPolyPolygon aRetval;
+			const sal_Int32 nOuterSequenceCount(rPolyPolygonShape3DSource.SequenceX.getLength());
 
-            if(nOuterSequenceCount)
-            {
-                OSL_ENSURE(nOuterSequenceCount == rPolyPolygonShape3DSource.SequenceY.getLength() 
-                    && nOuterSequenceCount == rPolyPolygonShape3DSource.SequenceZ.getLength(),
-                    "UnoPolyPolygonShape3DToB3DPolygon: Not all double sequences have the same length (!)");
+			if(nOuterSequenceCount)
+			{
+				OSL_ENSURE(nOuterSequenceCount == rPolyPolygonShape3DSource.SequenceY.getLength()
+					&& nOuterSequenceCount == rPolyPolygonShape3DSource.SequenceZ.getLength(),
+					"UnoPolyPolygonShape3DToB3DPolygon: Not all double sequences have the same length (!)");
 
-                const com::sun::star::drawing::DoubleSequence* pInnerSequenceX = rPolyPolygonShape3DSource.SequenceX.getConstArray();
-                const com::sun::star::drawing::DoubleSequence* pInnerSequenceY = rPolyPolygonShape3DSource.SequenceY.getConstArray();
-                const com::sun::star::drawing::DoubleSequence* pInnerSequenceZ = rPolyPolygonShape3DSource.SequenceZ.getConstArray();
+				const com::sun::star::drawing::DoubleSequence* pInnerSequenceX = rPolyPolygonShape3DSource.SequenceX.getConstArray();
+				const com::sun::star::drawing::DoubleSequence* pInnerSequenceY = rPolyPolygonShape3DSource.SequenceY.getConstArray();
+				const com::sun::star::drawing::DoubleSequence* pInnerSequenceZ = rPolyPolygonShape3DSource.SequenceZ.getConstArray();
 
-                for(sal_Int32 a(0); a < nOuterSequenceCount; a++)
-                {
-                    basegfx::B3DPolygon aNewPolygon;
-                    const sal_Int32 nInnerSequenceCount(pInnerSequenceX->getLength());
-                    OSL_ENSURE(nInnerSequenceCount == pInnerSequenceY->getLength() 
-                        && nInnerSequenceCount == pInnerSequenceZ->getLength(),
-                        "UnoPolyPolygonShape3DToB3DPolygon: Not all double sequences have the same length (!)");
+				for(sal_Int32 a(0); a < nOuterSequenceCount; a++)
+				{
+					basegfx::B3DPolygon aNewPolygon;
+					const sal_Int32 nInnerSequenceCount(pInnerSequenceX->getLength());
+					OSL_ENSURE(nInnerSequenceCount == pInnerSequenceY->getLength()
+						&& nInnerSequenceCount == pInnerSequenceZ->getLength(),
+						"UnoPolyPolygonShape3DToB3DPolygon: Not all double sequences have the same length (!)");
 
-                    const double* pArrayX = pInnerSequenceX->getConstArray();
-                    const double* pArrayY = pInnerSequenceY->getConstArray();
-                    const double* pArrayZ = pInnerSequenceZ->getConstArray();
-                    
-                    for(sal_Int32 b(0); b < nInnerSequenceCount; b++)
-                    {
-                        aNewPolygon.append(basegfx::B3DPoint(*pArrayX++,*pArrayY++,*pArrayZ++));
-                    }
-                    
-                    pInnerSequenceX++;
-                    pInnerSequenceY++;
-                    pInnerSequenceZ++;
+					const double* pArrayX = pInnerSequenceX->getConstArray();
+					const double* pArrayY = pInnerSequenceY->getConstArray();
+					const double* pArrayZ = pInnerSequenceZ->getConstArray();
 
-                    // #i101520# correction is needed for imported polygons of old format,
-                    // see callers
-                    if(bCheckClosed)
-                    {
-                        basegfx::tools::checkClosed(aNewPolygon);
-                    }
+					for(sal_Int32 b(0); b < nInnerSequenceCount; b++)
+					{
+						aNewPolygon.append(basegfx::B3DPoint(*pArrayX++,*pArrayY++,*pArrayZ++));
+					}
 
-                    aRetval.append(aNewPolygon);
-                }
-            }
+					pInnerSequenceX++;
+					pInnerSequenceY++;
+					pInnerSequenceZ++;
 
-            return aRetval;
-        }
+					// #i101520# correction is needed for imported polygons of old format,
+					// see callers
+					if(bCheckClosed)
+					{
+						basegfx::tools::checkClosed(aNewPolygon);
+					}
 
-        void B3DPolyPolygonToUnoPolyPolygonShape3D(
-            const B3DPolyPolygon& rPolyPolygonSource, 
-            com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DRetval)
-        {
-            const sal_uInt32 nPolygonCount(rPolyPolygonSource.count());
+					aRetval.append(aNewPolygon);
+				}
+			}
 
-            if(nPolygonCount)
-            {
-                rPolyPolygonShape3DRetval.SequenceX.realloc(nPolygonCount);
-                rPolyPolygonShape3DRetval.SequenceY.realloc(nPolygonCount);
-                rPolyPolygonShape3DRetval.SequenceZ.realloc(nPolygonCount);
+			return aRetval;
+		}
 
-                com::sun::star::drawing::DoubleSequence* pOuterSequenceX = rPolyPolygonShape3DRetval.SequenceX.getArray();
-                com::sun::star::drawing::DoubleSequence* pOuterSequenceY = rPolyPolygonShape3DRetval.SequenceY.getArray();
-                com::sun::star::drawing::DoubleSequence* pOuterSequenceZ = rPolyPolygonShape3DRetval.SequenceZ.getArray();
+		void B3DPolyPolygonToUnoPolyPolygonShape3D(
+			const B3DPolyPolygon& rPolyPolygonSource,
+			com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DRetval)
+		{
+			const sal_uInt32 nPolygonCount(rPolyPolygonSource.count());
 
-                for(sal_uInt32 a(0); a < nPolygonCount; a++)
-                {
-                    const basegfx::B3DPolygon aPoly(rPolyPolygonSource.getB3DPolygon(a));
-                    const sal_uInt32 nPointCount(aPoly.count());
+			if(nPolygonCount)
+			{
+				rPolyPolygonShape3DRetval.SequenceX.realloc(nPolygonCount);
+				rPolyPolygonShape3DRetval.SequenceY.realloc(nPolygonCount);
+				rPolyPolygonShape3DRetval.SequenceZ.realloc(nPolygonCount);
 
-                    if(nPointCount)
-                    {
-                        const bool bIsClosed(aPoly.isClosed());
-                        const sal_uInt32 nTargetCount(bIsClosed ? nPointCount + 1 : nPointCount);
-                        pOuterSequenceX->realloc(nTargetCount);
-                        pOuterSequenceY->realloc(nTargetCount);
-                        pOuterSequenceZ->realloc(nTargetCount);
-                        
-                        double* pInnerSequenceX = pOuterSequenceX->getArray();
-                        double* pInnerSequenceY = pOuterSequenceY->getArray();
-                        double* pInnerSequenceZ = pOuterSequenceZ->getArray();
-                        
-                        for(sal_uInt32 b(0); b < nPointCount; b++)
-                        {
-                            const basegfx::B3DPoint aPoint(aPoly.getB3DPoint(b));
-                            
-                            *pInnerSequenceX++ = aPoint.getX();
-                            *pInnerSequenceY++ = aPoint.getY();
-                            *pInnerSequenceZ++ = aPoint.getZ();
-                        }
-                        
-                        if(bIsClosed)
-                        {
-                            const basegfx::B3DPoint aPoint(aPoly.getB3DPoint(0));
+				com::sun::star::drawing::DoubleSequence* pOuterSequenceX = rPolyPolygonShape3DRetval.SequenceX.getArray();
+				com::sun::star::drawing::DoubleSequence* pOuterSequenceY = rPolyPolygonShape3DRetval.SequenceY.getArray();
+				com::sun::star::drawing::DoubleSequence* pOuterSequenceZ = rPolyPolygonShape3DRetval.SequenceZ.getArray();
 
-                            *pInnerSequenceX++ = aPoint.getX();
-                            *pInnerSequenceY++ = aPoint.getY();
-                            *pInnerSequenceZ++ = aPoint.getZ();
-                        }
-                    }
-                    else
-                    {
-                        pOuterSequenceX->realloc(0);
-                        pOuterSequenceY->realloc(0);
-                        pOuterSequenceZ->realloc(0);
-                    }
-                    
-                    pOuterSequenceX++;
-                    pOuterSequenceY++;
-                    pOuterSequenceZ++;
-                }
-            }
-            else
-            {
-                rPolyPolygonShape3DRetval.SequenceX.realloc(0);
-                rPolyPolygonShape3DRetval.SequenceY.realloc(0);
-                rPolyPolygonShape3DRetval.SequenceZ.realloc(0);
-            }
-        }
+				for(sal_uInt32 a(0); a < nPolygonCount; a++)
+				{
+					const basegfx::B3DPolygon aPoly(rPolyPolygonSource.getB3DPolygon(a));
+					const sal_uInt32 nPointCount(aPoly.count());
 
-    } // end of namespace tools
+					if(nPointCount)
+					{
+						const bool bIsClosed(aPoly.isClosed());
+						const sal_uInt32 nTargetCount(bIsClosed ? nPointCount + 1 : nPointCount);
+						pOuterSequenceX->realloc(nTargetCount);
+						pOuterSequenceY->realloc(nTargetCount);
+						pOuterSequenceZ->realloc(nTargetCount);
+
+						double* pInnerSequenceX = pOuterSequenceX->getArray();
+						double* pInnerSequenceY = pOuterSequenceY->getArray();
+						double* pInnerSequenceZ = pOuterSequenceZ->getArray();
+
+						for(sal_uInt32 b(0); b < nPointCount; b++)
+						{
+							const basegfx::B3DPoint aPoint(aPoly.getB3DPoint(b));
+
+							*pInnerSequenceX++ = aPoint.getX();
+							*pInnerSequenceY++ = aPoint.getY();
+							*pInnerSequenceZ++ = aPoint.getZ();
+						}
+
+						if(bIsClosed)
+						{
+							const basegfx::B3DPoint aPoint(aPoly.getB3DPoint(0));
+
+							*pInnerSequenceX++ = aPoint.getX();
+							*pInnerSequenceY++ = aPoint.getY();
+							*pInnerSequenceZ++ = aPoint.getZ();
+						}
+					}
+					else
+					{
+						pOuterSequenceX->realloc(0);
+						pOuterSequenceY->realloc(0);
+						pOuterSequenceZ->realloc(0);
+					}
+
+					pOuterSequenceX++;
+					pOuterSequenceY++;
+					pOuterSequenceZ++;
+				}
+			}
+			else
+			{
+				rPolyPolygonShape3DRetval.SequenceX.realloc(0);
+				rPolyPolygonShape3DRetval.SequenceY.realloc(0);
+				rPolyPolygonShape3DRetval.SequenceZ.realloc(0);
+			}
+		}
+
+	} // end of namespace tools
 } // end of namespace basegfx
 
-//////////////////////////////////////////////////////////////////////////////
-
-// eof
+/* vim: set noet sw=4 ts=4: */
