@@ -213,28 +213,28 @@ void SmGraphicWindow::MouseButtonDown(const MouseEvent& rMEvt)
 void SmGraphicWindow::GetFocus()
 {
 /*
-    if (xAccessible.is())
-    {
-        uno::Any aOldValue, aNewValue;
-        // aOldValue remains empty
-        aNewValue <<= AccessibleStateType::FOCUSED;
-        pAccessible->LaunchEvent( AccessibleEventId::STATE_CHANGED,
-                aOldValue, aNewValue );
-    }
+	if (xAccessible.is())
+	{
+		uno::Any aOldValue, aNewValue;
+		// aOldValue remains empty
+		aNewValue <<= AccessibleStateType::FOCUSED;
+		pAccessible->LaunchEvent( AccessibleEventId::STATE_CHANGED,
+				aOldValue, aNewValue );
+	}
 */
 }
 
 void SmGraphicWindow::LoseFocus()
 {
-    ScrollableWindow::LoseFocus();
-    if (xAccessible.is())
-    {
-        uno::Any aOldValue, aNewValue;
-        aOldValue <<= AccessibleStateType::FOCUSED;
-        // aNewValue remains empty
-        pAccessible->LaunchEvent( AccessibleEventId::STATE_CHANGED,
-                aOldValue, aNewValue );
-    }
+	ScrollableWindow::LoseFocus();
+	if (xAccessible.is())
+	{
+		uno::Any aOldValue, aNewValue;
+		aOldValue <<= AccessibleStateType::FOCUSED;
+		// aNewValue remains empty
+		pAccessible->LaunchEvent( AccessibleEventId::STATE_CHANGED,
+				aOldValue, aNewValue );
+	}
 }
 
 void SmGraphicWindow::ShowCursor(sal_Bool bShow)
@@ -355,18 +355,18 @@ void SmGraphicWindow::Command(const CommandEvent& rCEvt)
 			case COMMAND_CONTEXTMENU:
 			{
 				GetParent()->ToTop();
-                SmResId aResId( RID_VIEWMENU );
-                PopupMenu* pPopupMenu = new PopupMenu(aResId);
+				SmResId aResId( RID_VIEWMENU );
+				PopupMenu* pPopupMenu = new PopupMenu(aResId);
 				pPopupMenu->SetSelectHdl(LINK(this, SmGraphicWindow, MenuSelectHdl));
-                Point aPos(5, 5);
-                if (rCEvt.IsMouseEvent())
-                    aPos = rCEvt.GetMousePosPixel();
-                DBG_ASSERT( pViewShell, "view shell missing" );
+				Point aPos(5, 5);
+				if (rCEvt.IsMouseEvent())
+					aPos = rCEvt.GetMousePosPixel();
+				DBG_ASSERT( pViewShell, "view shell missing" );
 
-                // added for replaceability of context menus #96085, #93782
-                pViewShell->GetViewFrame()->GetBindings().GetDispatcher()
-                        ->ExecutePopup( aResId, this, &aPos );
-                //pPopupMenu->Execute( this, aPos );
+				// added for replaceability of context menus #96085, #93782
+				pViewShell->GetViewFrame()->GetBindings().GetDispatcher()
+						->ExecutePopup( aResId, this, &aPos );
+				//pPopupMenu->Execute( this, aPos );
 
 				delete pPopupMenu;
 				bCallBase = sal_False;
@@ -378,12 +378,12 @@ void SmGraphicWindow::Command(const CommandEvent& rCEvt)
 				const CommandWheelData* pWData = rCEvt.GetWheelData();
 				if ( pWData && COMMAND_WHEEL_ZOOM == pWData->GetMode() )
 				{
-                    sal_uInt16 nTmpZoom = GetZoom();
+					sal_uInt16 nTmpZoom = GetZoom();
 					if( 0L > pWData->GetDelta() )
-                        nTmpZoom -= 10;
+						nTmpZoom -= 10;
 					else
-                        nTmpZoom += 10;
-                    SetZoom( nTmpZoom );
+						nTmpZoom += 10;
+					SetZoom( nTmpZoom );
 					bCallBase = sal_False;
 				}
 			}
@@ -397,7 +397,7 @@ void SmGraphicWindow::Command(const CommandEvent& rCEvt)
 
 IMPL_LINK_INLINE_START( SmGraphicWindow, MenuSelectHdl, Menu *, pMenu )
 {
-    SmViewShell *pViewSh = GetView();
+	SmViewShell *pViewSh = GetView();
 	if (pViewSh)
 		pViewSh->GetViewFrame()->GetDispatcher()->Execute( pMenu->GetCurItemId() );
 	return 0;
@@ -411,7 +411,7 @@ void SmGraphicWindow::SetZoom(sal_uInt16 Factor)
 	Fraction   aFraction (nZoom, 100);
 	SetMapMode( MapMode(MAP_100TH_MM, Point(), aFraction, aFraction) );
 	SetTotalSize();
-    SmViewShell *pViewSh = GetView();
+	SmViewShell *pViewSh = GetView();
 	if (pViewSh)
 		pViewSh->GetViewFrame()->GetBindings().Invalidate(SID_ATTR_ZOOM);
 	Invalidate();
@@ -429,31 +429,31 @@ void SmGraphicWindow::ZoomToFitInWindow()
 	Size	   aWindowSize (GetSizePixel());
 
 	if (aSize.Width() > 0 && aSize.Height() > 0)
-    {
-        long nVal = Min ((85 * aWindowSize.Width()) / aSize.Width(),
-                      (85 * aWindowSize.Height()) / aSize.Height());
-        SetZoom ( sal::static_int_cast< sal_uInt16 >(nVal) );
-    }
+	{
+		long nVal = Min ((85 * aWindowSize.Width()) / aSize.Width(),
+						 (85 * aWindowSize.Height()) / aSize.Height());
+		SetZoom ( sal::static_int_cast< sal_uInt16 >(nVal) );
+	}
 }
 
 uno::Reference< XAccessible > SmGraphicWindow::CreateAccessible()
 {
-    if (!pAccessible)
-    {
-        pAccessible = new SmGraphicAccessible( this );
-        xAccessible = pAccessible;
-    }
-    return xAccessible;
+	if (!pAccessible)
+	{
+		pAccessible = new SmGraphicAccessible( this );
+		xAccessible = pAccessible;
+	}
+	return xAccessible;
 }
 
 /**************************************************************************/
 
 
 SmGraphicController::SmGraphicController(SmGraphicWindow &rSmGraphic,
-                        sal_uInt16          nId_,
+						sal_uInt16          nId_,
 						SfxBindings 	&rBindings) :
-    SfxControllerItem(nId_, rBindings),
-    rGraphic(rSmGraphic)
+	SfxControllerItem(nId_, rBindings),
+	rGraphic(rSmGraphic)
 {
 }
 
@@ -470,10 +470,10 @@ void SmGraphicController::StateChanged(sal_uInt16 nSID, SfxItemState eState, con
 
 
 SmEditController::SmEditController(SmEditWindow &rSmEdit,
-                     sal_uInt16       nId_,
+					 sal_uInt16       nId_,
 					 SfxBindings  &rBindings) :
-    SfxControllerItem(nId_, rBindings),
-    rEdit(rSmEdit)
+	SfxControllerItem(nId_, rBindings),
+	rEdit(rSmEdit)
 {
 }
 
@@ -499,29 +499,29 @@ void SmEditController::StateChanged(sal_uInt16 nSID, SfxItemState eState, const 
 
 SmCmdBoxWindow::SmCmdBoxWindow(SfxBindings *pBindings_, SfxChildWindow *pChildWindow,
 							   Window *pParent) :
-    SfxDockingWindow(pBindings_, pChildWindow, pParent, SmResId(RID_CMDBOXWINDOW)),
-    aEdit       (*this),
-    aController (aEdit, SID_TEXT, *pBindings_),
-    bExiting    (sal_False)
+	SfxDockingWindow(pBindings_, pChildWindow, pParent, SmResId(RID_CMDBOXWINDOW)),
+	aEdit       (*this),
+	aController (aEdit, SID_TEXT, *pBindings_),
+	bExiting    (sal_False)
 {
 	Hide ();
 
-    aInitialFocusTimer.SetTimeoutHdl(LINK(this, SmCmdBoxWindow, InitialFocusTimerHdl));
-    aInitialFocusTimer.SetTimeout(100);
+	aInitialFocusTimer.SetTimeoutHdl(LINK(this, SmCmdBoxWindow, InitialFocusTimerHdl));
+	aInitialFocusTimer.SetTimeout(100);
 }
 
 
 SmCmdBoxWindow::~SmCmdBoxWindow ()
 {
-    aInitialFocusTimer.Stop();
-    bExiting = sal_True;
+	aInitialFocusTimer.Stop();
+	bExiting = sal_True;
 }
 
 
 SmViewShell * SmCmdBoxWindow::GetView()
 {
-    SfxViewShell *pView = GetBindings().GetDispatcher()->GetFrame()->GetViewShell();
-    return PTR_CAST(SmViewShell, pView);
+	SfxViewShell *pView = GetBindings().GetDispatcher()->GetFrame()->GetViewShell();
+	return PTR_CAST(SmViewShell, pView);
 }
 
 void SmCmdBoxWindow::Resize()
@@ -536,8 +536,8 @@ void SmCmdBoxWindow::Resize()
 			case SFX_ALIGN_BOTTOM:	aRect.Top()++;		break;
 			case SFX_ALIGN_LEFT:	aRect.Right()--;	break;
 			case SFX_ALIGN_RIGHT:	aRect.Left()++;		break;
-            default:
-                break;
+			default:
+				break;
 		}
 	}
 
@@ -582,8 +582,8 @@ void SmCmdBoxWindow::Paint(const Rectangle& /*rRect*/)
 				aRect.Left()++;
 				break;
 
-            default:
-                break;
+			default:
+				break;
 		}
 		DrawLine( aFrom, aTo );
 		aView.DrawFrame(aRect, FRAME_DRAW_OUT);
@@ -601,8 +601,8 @@ Size SmCmdBoxWindow::CalcDockingSize(SfxChildAlignment eAlign)
 		case SFX_ALIGN_LEFT:
 		case SFX_ALIGN_RIGHT:
 			return Size();
-        default:
-            break;
+		default:
+			break;
 	}
 	return SfxDockingWindow::CalcDockingSize(eAlign);
 }
@@ -617,8 +617,8 @@ SfxChildAlignment SmCmdBoxWindow::CheckAlignment(SfxChildAlignment eActual,
 		case SFX_ALIGN_BOTTOM:
 		case SFX_ALIGN_NOALIGNMENT:
 			return eWish;
-        default:
-            break;
+		default:
+			break;
 	}
 
 	return eActual;
@@ -628,40 +628,40 @@ SfxChildAlignment SmCmdBoxWindow::CheckAlignment(SfxChildAlignment eActual,
 void SmCmdBoxWindow::StateChanged( StateChangedType nStateChange )
 {
 	if (STATE_CHANGE_INITSHOW == nStateChange)
-    {
-        Resize(); // #98848# avoid SmEditWindow not being painted correctly
+	{
+		Resize(); // #98848# avoid SmEditWindow not being painted correctly
 
-        // set initial position of window in floating mode
-        if (sal_True == IsFloatingMode())
-            AdjustPosition(); //! don't change pos in docking-mode !
+		// set initial position of window in floating mode
+		if (sal_True == IsFloatingMode())
+			AdjustPosition(); //! don't change pos in docking-mode !
 
-//        // make sure the formula can be edited right away
-//        aEdit.GrabFocus();
+//		// make sure the formula can be edited right away
+//		aEdit.GrabFocus();
 
-        // grab focus as above does not work...
+		// grab focus as above does not work...
 		// Thus we implement a timer based solution to get the initial
-        // focus in the Edit window.
+		// focus in the Edit window.
 		aInitialFocusTimer.Start();
-    }
+	}
 
-    SfxDockingWindow::StateChanged( nStateChange );
+	SfxDockingWindow::StateChanged( nStateChange );
 }
 
 
 IMPL_LINK( SmCmdBoxWindow, InitialFocusTimerHdl, Timer *, EMPTYARG /*pTimer*/ )
 {
-    // We want to have the focus in the edit window once Math has been opened
-    // to allow for immediate typing.
-    // Problem: There is no proper way to do this
-    // Thus: this timer based solution has been implemented (see GrabFocus below)
-    //
-    // Follow-up problem (#i114910): grabbing the focus may bust the help system since
-    // it relies on getting the current frame which conflicts with grabbing the focus.
-    // Thus aside from the 'GrabFocus' call everything else is to get the
-    // help reliably working despite using 'GrabFocus'.
+	// We want to have the focus in the edit window once Math has been opened
+	// to allow for immediate typing.
+	// Problem: There is no proper way to do this
+	// Thus: this timer based solution has been implemented (see GrabFocus below)
+	//
+	// Follow-up problem (#i114910): grabbing the focus may bust the help system since
+	// it relies on getting the current frame which conflicts with grabbing the focus.
+	// Thus aside from the 'GrabFocus' call everything else is to get the
+	// help reliably working despite using 'GrabFocus'.
 
-    try
-    {
+	try
+	{
         uno::Reference< frame::XDesktop > xDesktop;
         uno::Reference< lang::XMultiServiceFactory > xSMGR( comphelper::getProcessServiceFactory() );
         if (xSMGR.is())
@@ -1464,13 +1464,13 @@ void SmViewShell::Execute(SfxRequest& rReq)
 			break;
 
 		case SID_ZOOMOUT:
-			DBG_ASSERT(aGraphic.GetZoom() >= 25, "Sm: falsches sal_uInt16 Argument");
+			DBG_ASSERT(aGraphic.GetZoom() >= 25, "Sm: Wrong sal_uInt16 argument");
 			aGraphic.SetZoom(aGraphic.GetZoom() - 25);
 			break;
 
         case SID_COPYOBJECT:
         {
-            //TODO/LATER: does not work because of UNO Tunneling - will be fixed later
+            // TODO/LATER: does not work because of UNO Tunneling - will be fixed later
             Reference< datatransfer::XTransferable > xTrans( GetDoc()->GetModel(), uno::UNO_QUERY );
             if( xTrans.is() )
             {

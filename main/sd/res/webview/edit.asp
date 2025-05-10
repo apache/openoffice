@@ -1,4 +1,4 @@
-<HTML>
+<html>
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,11 +19,11 @@
  * under the License.
  *
  ***********************************************************-->
-<HEAD>
-  <TITLE>$$1</TITLE>
-</HEAD>
-<FRAMESET ROWS="90%,10%" FRAMEBORDER=yes>
-  <FRAME name="view" src="webcast.asp">
-  <FRAME name="edit" src="editpic.asp">
-</FRAMESET>
-</HTML>
+<head>
+  <title>$$1</title>
+</head>
+<frameset rows="90%,10%" frameborder="yes">
+  <frame name="view" src="webcast.asp">
+  <frame name="edit" src="editpic.asp">
+</frameset>
+</html>
