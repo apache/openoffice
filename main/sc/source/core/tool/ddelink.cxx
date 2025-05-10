@@ -27,9 +27,11 @@
 
 
 // INCLUDE ---------------------------------------------------------------
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
 #include <tools/list.hxx>
 #include <sfx2/linkmgr.hxx>
 #include <sfx2/bindings.hxx>
+#include <sfx2/objsh.hxx>
 #include <svl/zforlist.hxx>
 
 #include "ddelink.hxx"
@@ -258,6 +260,12 @@ void __EXPORT ScDdeLink::ListenersGone()
 
 void ScDdeLink::TryUpdate()
 {
+	::com::sun::star::uno::Reference< ::com::sun::star::document::XLinkAuthorizer > xLinkAuthorizer( pDoc->GetDocumentShell()->GetModel(), ::com::sun::star::uno::UNO_QUERY );
+	if ( xLinkAuthorizer.is() ) {
+		if ( !xLinkAuthorizer->authorizeLinks( aTopic ) ) {
+			return;
+		}
+	}
 	if (bIsInUpdate)
 		bNeedUpdate = sal_True;			// kann jetzt nicht ausgefuehrt werden
 	else
