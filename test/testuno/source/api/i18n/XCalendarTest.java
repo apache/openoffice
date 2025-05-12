@@ -21,9 +21,7 @@
 
 
 
-package ifc.i18n;
-
-import lib.MultiMethodTest;
+package api.i18n;
 
 import com.sun.star.i18n.CalendarDisplayIndex;
 import com.sun.star.i18n.CalendarFieldIndex;
@@ -33,6 +31,14 @@ import com.sun.star.i18n.XLocaleData;
 import com.sun.star.lang.Locale;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
 
 /**
 * Testing <code>com.sun.star.i18n.XCalendar</code>
@@ -62,42 +68,61 @@ import com.sun.star.uno.UnoRuntime;
 * Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.i18n.XCalendar
 */
-public class _XCalendar extends MultiMethodTest {
+public class XCalendarTest {
+    private static final UnoApp app = new UnoApp();
+
+    private XComponentContext xContext = null;
     private boolean debug = false;
     public XCalendar oObj = null;
-    public String[][] calendars;
-    public int[] count;
     public double newDTime = 1000.75;
     public short newValue = 2;
-    public short firstDay = 2;
+    public final short firstDay = 2;
     public short mdfw = 3;
     double aOriginalDTime = 0;
     Locale[] installed_locales;
 
-    public void before() {
-        XLocaleData locData = null;
-        try {
-            locData = (XLocaleData) UnoRuntime.queryInterface(
-                XLocaleData.class,
-                    ((XMultiServiceFactory)tParam.getMSF()).createInstance(
-                    "com.sun.star.i18n.LocaleData"));
-        } catch (com.sun.star.uno.Exception e) {
+    static class CalendarData {
+        String[][] calendars;
+        int[] count;
+    };
 
-        }
+
+    @BeforeClass
+    public static void setUp() throws Exception {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDown() throws Exception {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
+
+        XLocaleData locData = null;
+        locData = UnoRuntime.queryInterface(
+            XLocaleData.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.LocaleData", xContext)
+        );
+        oObj = UnoRuntime.queryInterface(
+            XCalendar.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.LocaleCalendar", xContext)
+        );
         installed_locales = locData.getAllInstalledLocaleNames();
-        calendars = new String[installed_locales.length][];
-        count = new int[installed_locales.length];
         oObj.loadDefaultCalendar(installed_locales[0]);
         aOriginalDTime = oObj.getDateTime();
         
-        debug = tParam.getBool("DebugIsActive");
+        debug = false;
     }
 
     /**
      * Restore the changed time during the test to the original value of the
      * machine: has to be correct for the following interface tests.
      */
-    public void after() {
+    @After
+    public void after() throws Exception {
         oObj.loadDefaultCalendar(installed_locales[0]);
         oObj.setDateTime(aOriginalDTime);
     }
@@ -107,23 +132,15 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if method loads calendar, that is
     * default for a given locale.
     */
+    @Test
     public void _loadDefaultCalendar() {
-        boolean res = true;
-
         for (int i=0; i<installed_locales.length; i++) {
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
-                          ", Variant: "+ installed_locales[i].Country;
+                          ", Variant: "+ installed_locales[i].Variant;
             oObj.loadDefaultCalendar(installed_locales[i]);
-            if (oObj.getLoadedCalendar().Default) {
-                //log.println(lang + " ... OK");
-            } else {
-                log.println(lang + " ... FAILED");
-            }
-            res &= oObj.getLoadedCalendar().Default;
+            Assert.assertTrue(lang, oObj.getLoadedCalendar().Default);
         }
-
-        tRes.tested("loadDefaultCalendar()", res);
     }
 
     /**
@@ -131,23 +148,24 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns more than zero calendars for
     * every locale.
     */
+    @Test
     public void _getAllCalendars() {
-        boolean res = true;
+        getAllCalendars();
+    }
 
+    private CalendarData getAllCalendars() {
+        CalendarData data = new CalendarData();
+        data.calendars = new String[installed_locales.length][];
+        data.count = new int[installed_locales.length];
         for (int i=0; i<installed_locales.length; i++) {
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
-                          ", Variant: "+ installed_locales[i].Country;
-            calendars[i] = oObj.getAllCalendars(installed_locales[i]);
-            count[i] = calendars[i].length-1;
-            if (calendars[i].length > 0) {
-                //log.println(lang + " ... OK");
-            } else {
-                log.println(lang + " ... FAILED");
-            }
-            res &= (calendars[i].length > 0);
+                          ", Variant: "+ installed_locales[i].Variant;
+            data.calendars[i] = oObj.getAllCalendars(installed_locales[i]);
+            data.count[i] = data.calendars[i].length-1;
+            Assert.assertTrue(lang, data.calendars[i].length > 0);
         }
-        tRes.tested("getAllCalendars()", res);
+        return data;
     }
 
     /**
@@ -160,24 +178,21 @@ public class _XCalendar extends MultiMethodTest {
     *  locale </li>
     * </ul>
     */
+    @Test
     public void _loadCalendar() {
-        boolean res = true;
-        requiredMethod("getAllCalendars()");
+        loadCalendar();
+    }
 
+    private CalendarData loadCalendar() {
+        CalendarData data = getAllCalendars();
         for (int i=0; i<installed_locales.length; i++) {
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
-                          ", Variant: "+ installed_locales[i].Country;
-            oObj.loadCalendar(calendars[i][0], installed_locales[i]);
-            if (calendars[i][0].equals(oObj.getLoadedCalendar().Name)) {
-                //log.println(lang + " ... OK");
-            } else {
-                log.println(lang + " ... FAILED");
-            }
-            res &= calendars[i][0].equals(oObj.getLoadedCalendar().Name);
+                          ", Variant: "+ installed_locales[i].Variant;
+            oObj.loadCalendar(data.calendars[i][0], installed_locales[i]);
+            Assert.assertEquals(lang, data.calendars[i][0], oObj.getLoadedCalendar().Name);
         }
-
-        tRes.tested("loadCalendar()", res);
+        return data;
     }
 
     /**
@@ -190,23 +205,16 @@ public class _XCalendar extends MultiMethodTest {
     *  and locale </li>
     * </ul>
     */
+    @Test
     public void _getLoadedCalendar() {
-        boolean res = true;
-
-        requiredMethod("loadCalendar()");
+        CalendarData data = loadCalendar();
         for (int i=0; i<installed_locales.length; i++) {
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
-                          ", Variant: "+ installed_locales[i].Country;
-            oObj.loadCalendar(calendars[i][0], installed_locales[i]);
-            if (calendars[i][0].equals(oObj.getLoadedCalendar().Name)) {
-                //log.println(lang + " ... OK");
-            } else {
-                log.println(lang + " ... FAILED");
-            }
-            res &= calendars[i][0].equals(oObj.getLoadedCalendar().Name);
+                          ", Variant: "+ installed_locales[i].Variant;
+            oObj.loadCalendar(data.calendars[i][0], installed_locales[i]);
+            Assert.assertEquals(lang, data.calendars[i][0], oObj.getLoadedCalendar().Name);
         }
-        tRes.tested("getLoadedCalendar()", res);
     }
 
     /**
@@ -219,23 +227,17 @@ public class _XCalendar extends MultiMethodTest {
     *  and locale </li>
     * </ul>
     */
+    @Test
     public void _getUniqueID() {
-        boolean res = true;
+        CalendarData data = getAllCalendars();
         for (int i=0; i<installed_locales.length; i++) {
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
-                          ", Variant: "+ installed_locales[i].Country;
-            oObj.loadCalendar(calendars[i][0], installed_locales[i]);
+                          ", Variant: "+ installed_locales[i].Variant;
+            oObj.loadCalendar(data.calendars[i][0], installed_locales[i]);
             String uID = oObj.getUniqueID();
-            if (uID.equals(calendars[i][0])) {
-                //log.println(lang + " ... OK");
-            } else {
-                log.println(lang + " ... FAILED");
-            }
-            res &= uID.equals(calendars[i][0]);
+            Assert.assertEquals(lang, uID, data.calendars[i][0]);
         }
-
-        tRes.tested("getUniqueID()",res);
     }
 
     /**
@@ -243,25 +245,16 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns value, that's equal to
     * value set before. <p>
     */
-
+    @Test
     public void _setDateTime() {
-        boolean res = true;
-        
         for (int i=0; i<installed_locales.length; i++) {
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
-                          ", Variant: "+ installed_locales[i].Country;
+                          ", Variant: "+ installed_locales[i].Variant;
             oObj.setDateTime(newDTime);
             double aDTime = oObj.getDateTime();
-            if (aDTime == newDTime) {
-                //log.println(lang + " ... OK");
-            } else {
-                log.println(lang + " ... FAILED");
-            }
-            res &= (aDTime == newDTime);
+            Assert.assertTrue(lang, aDTime == newDTime);
         }
-
-        tRes.tested("setDateTime()", res);
     }
 
     /**
@@ -269,24 +262,16 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns value, that's equal to
     * value set before. <p>
     */
-
+    @Test
     public void _getDateTime() {
-        boolean res = true;
-
         for (int i=0; i<installed_locales.length; i++) {
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
-                          ", Variant: "+ installed_locales[i].Country;
+                          ", Variant: "+ installed_locales[i].Variant;
             oObj.setDateTime(newDTime);
             double aDTime = oObj.getDateTime();
-            if (aDTime == newDTime) {
-                //log.println(lang + " ... OK");
-            } else {
-                log.println(lang + " ... FAILED");
-            }
-            res &= (aDTime == newDTime);
+            Assert.assertTrue(lang, aDTime == newDTime);
         }
-        tRes.tested("getDateTime()", res);
     }
 
     /**
@@ -294,19 +279,19 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns value, that's equal to
     * value set before. <p>
     */
-
+    @Test
     public void _setValue() {
-        boolean res = true;
+        CalendarData data = getAllCalendars();
         for (int i=0; i<installed_locales.length; i++) {
             String error = "";
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
                           ", Variant: "+ installed_locales[i].Variant +
-                          ", Name: "+calendars[i][count[i]];
+                          ", Name: "+data.calendars[i][data.count[i]];
             String[] names = new String[]{"DAY_OF_MONTH",
                 "HOUR","MINUTE","SECOND","MILLISECOND",
                 "YEAR","MONTH"};
-            oObj.loadCalendar(calendars[i][count[i]],installed_locales[i]);
+            oObj.loadCalendar(data.calendars[i][data.count[i]],installed_locales[i]);
             short[] fields = new short[]{CalendarFieldIndex.DAY_OF_MONTH,
                                          CalendarFieldIndex.HOUR,
                                          CalendarFieldIndex.MINUTE,
@@ -331,30 +316,22 @@ public class _XCalendar extends MultiMethodTest {
                 short get = oObj.getValue(fields[k]);
                 if (get != set) {
                     if (debug)
-                        log.println("ERROR occur: tried to set " + names[k] + " to value " + set);
-                        log.println("list of values BEFORE set " + names[k] + " to value " + set + ":");
+                        System.out.println("ERROR occur: tried to set " + names[k] + " to value " + set);
+                        System.out.println("list of values BEFORE set " + names[k] + " to value " + set + ":");
                         for (int n=0; n < oldValues.length; n++){
-                            log.println(names[n] + ":" + oldValues[n]);
+                            System.out.println(names[n] + ":" + oldValues[n]);
                         }
-                        log.println("list of values AFTER set " + names[k] + " to value " + set + ":");
+                        System.out.println("list of values AFTER set " + names[k] + " to value " + set + ":");
                         for (int n=0; n < fields.length;n++){
-                            log.println(names[n] + ":" + oObj.getValue(fields[n]));
+                            System.out.println(names[n] + ":" + oObj.getValue(fields[n]));
                         }
                         
                     error += "failed for "+names[k]+" expected "+
                                 set+" gained "+get+" ; \n";
                 }
             }
-            if (error.equals("")) {
-                log.println(lang + " ... OK");
-            } else {
-                log.println("*** "+lang + " ... FAILED ***");
-                log.println(error);
-            }
-            res &= (error.equals(""));
+            Assert.assertTrue(error, error.equals(""));
         }
-
-        tRes.tested("setValue()", res);
     }
 
     /**
@@ -362,18 +339,14 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns value, that's equal to
     * value set before. <p>
     */
-
+    @Test
     public void _getValue() {
-        boolean res = true;
-
-        requiredMethod("setValue()");
+        _setValue();
         short aValue = oObj.getValue(CalendarFieldIndex.MONTH);
-        res &= (aValue == newValue);
-        if (!res){
-            log.println("the returned value is not the expected value:");
-            log.println("expexted: " + newValue + "  returned value: " + aValue);
-        }
-        tRes.tested("getValue()", res);
+        Assert.assertEquals(
+            "the returned value is not the expected value:" +
+            "expected: " + newValue + "  returned value: " + aValue,
+            aValue, newValue);
     }
 
     /**
@@ -386,18 +359,15 @@ public class _XCalendar extends MultiMethodTest {
     *  <li> <code> getValue() </code> : gets the value of a field </li>
     * </ul>
     */
+    @Test
     public void _addValue() {
-        boolean res = true;
-
-        requiredMethod("getValue()");
+        _setValue();
         oObj.addValue(CalendarFieldIndex.MONTH, 1);
         short aValue = oObj.getValue(CalendarFieldIndex.MONTH);
-        res &= (aValue > newValue);
-        if (!res){
-            log.println("the returned value is not the expected value:");
-            log.println("expexted: " + newValue + "  returned value: " + aValue);
-        }
-        tRes.tested("addValue()", res);
+        Assert.assertTrue(
+            "the returned value is not the expected value:" +
+            "expected: " + newValue + "  returned value: " + aValue,
+            aValue > newValue);
     }
 
     /**
@@ -405,12 +375,9 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if the method successfully returns
     * and no exceptions were thrown.
     */
+    @Test
     public void _setFirstDayOfWeek() {
-        boolean res = true;
-
         oObj.setFirstDayOfWeek(firstDay);
-        res &= true;
-        tRes.tested("setFirstDayOfWeek()", res);
     }
 
     /**
@@ -423,13 +390,11 @@ public class _XCalendar extends MultiMethodTest {
     *  week</li>
     * </ul>
     */
+    @Test
     public void _getFirstDayOfWeek() {
-        boolean res = true;
-
-        requiredMethod("setFirstDayOfWeek()");
+        _setFirstDayOfWeek();
         short aFirstDayOfWeek = oObj.getFirstDayOfWeek();
-        res &= (aFirstDayOfWeek == firstDay);
-        tRes.tested("getFirstDayOfWeek()", res);
+        Assert.assertEquals("getFirstDayOfWeek()", aFirstDayOfWeek, firstDay);
     }
 
     /**
@@ -437,12 +402,9 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if the method successfully returns
     * and no exceptions were thrown.
     */
+    @Test
     public void _setMinimumNumberOfDaysForFirstWeek() {
-        boolean res = true;
-
         oObj.setMinimumNumberOfDaysForFirstWeek(mdfw);
-        res &= true;
-        tRes.tested("setMinimumNumberOfDaysForFirstWeek()", res);
     }
 
     /**
@@ -455,75 +417,64 @@ public class _XCalendar extends MultiMethodTest {
     *  many days of a week must reside in the first week of a year</li>
     * </ul>
     */
+    @Test
     public void _getMinimumNumberOfDaysForFirstWeek() {
-        boolean res = true;
-
-        requiredMethod("setMinimumNumberOfDaysForFirstWeek()");
+        _setMinimumNumberOfDaysForFirstWeek();
         short aShort = oObj.getMinimumNumberOfDaysForFirstWeek();
-        res &= (aShort == mdfw);
-        tRes.tested("getMinimumNumberOfDaysForFirstWeek()", res);
+        Assert.assertEquals("getMinimumNumberOfDaysForFirstWeek()", aShort, mdfw);
     }
 
     /**
     * Test calls the method, then result is checked. <p>
     * Has <b> OK </b> status if the method returns 12.
     */
+    @Test
     public void _getNumberOfMonthsInYear() {
-        boolean res = true;
         short aShort = oObj.getNumberOfMonthsInYear();
-
-        res &= (aShort == (short) 12);
-        tRes.tested("getNumberOfMonthsInYear()", res);
+        Assert.assertTrue("getNumberOfMonthsInYear()", (aShort == (short) 12));
     }
 
     /**
     * Test calls the method, then result is checked. <p>
     * Has <b> OK </b> status if the method returns 7.
     */
+    @Test
     public void _getNumberOfDaysInWeek() {
-        boolean res = true;
         short aShort = oObj.getNumberOfDaysInWeek();
-
-        res &= (aShort == (short) 7);
-        tRes.tested("getNumberOfDaysInWeek()", res);
+        Assert.assertTrue("getNumberOfDaysInWeek()", (aShort == (short) 7));
     }
 
     /**
     * Test calls the method, then result is checked. <p>
     * Has <b> OK </b> status if length of array, returned by the method is 12.
     */
+    @Test
     public void _getMonths() {
-        boolean res = true;
         CalendarItem[] months = oObj.getMonths();
-
-        res &= (months.length == 12);
-        tRes.tested("getMonths()", res);
+        Assert.assertTrue("getMonths()", months.length == 12);
     }
 
     /**
     * Test calls the method, then result is checked. <p>
     * Has <b> OK </b> status if length of array, returned by the method is 7.
     */
+    @Test
     public void _getDays() {
-        boolean res = true;
         CalendarItem[] Days = oObj.getDays();
-
-        res &= (Days.length == 7);
-        tRes.tested("getDays()", res);
+        Assert.assertTrue("getDays()", Days.length == 7);
     }
 
     /**
     * After loading calendar, test calls the method, then result is checked.<p>
     * Has <b> OK </b> status if length of string, returned by the method is 3.
     */
+    @Test
     public void _getDisplayName() {
-        boolean res = true;
-
-        oObj.loadCalendar(calendars[0][0],installed_locales[0]);
+        CalendarData data = getAllCalendars();
+        oObj.loadCalendar(data.calendars[0][0],installed_locales[0]);
         String DisplayName = oObj.getDisplayName(CalendarDisplayIndex.MONTH,
             newValue, (short) 0);
-        res &= (DisplayName.length() == 3);
-        tRes.tested("getDisplayName()", res);
+        Assert.assertTrue("getDisplayName()", DisplayName.length() == 3);
     }
 
 
@@ -533,16 +484,13 @@ public class _XCalendar extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns true when valid month is
     * set, and if the method returns false when set month is not valid.
     */
+    @Test
     public void _isValid() {
-        boolean res = true;
-        
         oObj.loadDefaultCalendar(installed_locales[0]);
         oObj.setValue(CalendarFieldIndex.MONTH, (short) 37);
-        res &= !oObj.isValid();
+        Assert.assertTrue(!oObj.isValid());
         oObj.setValue(CalendarFieldIndex.MONTH, (short) 10);
-        res &= oObj.isValid();
-
-        tRes.tested("isValid()", res);
+        Assert.assertTrue(oObj.isValid());
     }
 
     /**

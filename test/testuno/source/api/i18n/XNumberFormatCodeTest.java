@@ -21,9 +21,7 @@
 
 
 
-package ifc.i18n;
-
-import lib.MultiMethodTest;
+package api.i18n;
 
 import com.sun.star.i18n.KNumberFormatType;
 import com.sun.star.i18n.KNumberFormatUsage;
@@ -31,6 +29,16 @@ import com.sun.star.i18n.NumberFormatCode;
 import com.sun.star.i18n.NumberFormatIndex;
 import com.sun.star.i18n.XNumberFormatCode;
 import com.sun.star.lang.Locale;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
+
 
 /**
 * Testing <code>com.sun.star.i18n.XNumberFormatCode</code>
@@ -44,12 +52,38 @@ import com.sun.star.lang.Locale;
 * Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.i18n.XNumberFormatCode
 */
-public class _XNumberFormatCode extends MultiMethodTest {
+public class XNumberFormatCodeTest {
+    private static final UnoApp app = new UnoApp();
+
+    private XComponentContext xContext = null;
     public XNumberFormatCode oObj = null;
     public String[] languages = new String[]
         {"de","en","es","fr","ko","ko","zh"};
     public String[] countries = new String[]
         {"DE","US","ES","FR","KR","KR","CN"};
+
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
+        oObj = UnoRuntime.queryInterface(
+            XNumberFormatCode.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.NumberFormatCodeMapper", xContext)
+        );
+    }
+
 
     /**
     * Test calls the method twice with two different format types as
@@ -57,6 +91,7 @@ public class _XNumberFormatCode extends MultiMethodTest {
     * Has <b> OK </b> status if both times returned structure's field 'Code'
     * does not equal to empty string.
     */
+    @Test
     public void _getDefault() {
         boolean res = true;
         NumberFormatCode nfc = null;
@@ -66,9 +101,9 @@ public class _XNumberFormatCode extends MultiMethodTest {
                 KNumberFormatUsage.DATE, getLocale(i));
             String str = nfc.Code;
             if (str.equals("")) {
-                log.println("'NumberFormat.code.equals(\"\") = true' for"
+                System.out.println("'NumberFormat.code.equals(\"\") = true' for"
                     + " language: " + languages[i]);
-                log.println("Usage: oObj.getDefault(KNumberFormatType.SHORT,"
+                System.out.println("Usage: oObj.getDefault(KNumberFormatType.SHORT,"
                     + " KNumberFormatUsage.DATE,new Locale(" + languages[i]
                     + "," + countries[i] + ",\"\");");
             }
@@ -78,15 +113,15 @@ public class _XNumberFormatCode extends MultiMethodTest {
                 KNumberFormatUsage.DATE,getLocale(i));
             str = nfc.Code;
             if (str.equals("")) {
-                log.println("'NumberFormat.code.equals(\"\") = true' for "
+                System.out.println("'NumberFormat.code.equals(\"\") = true' for "
                     + "language: " + languages[i]);
-                log.println("Usage: oObj.getDefault(KNumberFormatType.LONG,"
+                System.out.println("Usage: oObj.getDefault(KNumberFormatType.LONG,"
                     + " KNumberFormatUsage.DATE,new Locale(" + languages[i]
                     + "," + countries[i] + ",\"\");");
             }
             res &= ( ! str.equals("") );
         }
-        tRes.tested("getDefault()", res);
+        Assert.assertTrue("getDefault()", res);
     }
 
     /**
@@ -95,6 +130,7 @@ public class _XNumberFormatCode extends MultiMethodTest {
     * Has <b> OK </b> status if both times returned structure's field 'Code'
     * does not equal to a empty string.
     */
+    @Test
     public void _getFormatCode() {
         boolean res = true;
         NumberFormatCode nfc = null;
@@ -107,7 +143,7 @@ public class _XNumberFormatCode extends MultiMethodTest {
                 (NumberFormatIndex.DATE_SYSTEM_LONG,getLocale(i));
             res &= ( ! nfc.Code.equals("") );
         }
-        tRes.tested("getFormatCode()", res);
+        Assert.assertTrue("getFormatCode()", res);
     }
 
     /**
@@ -116,6 +152,7 @@ public class _XNumberFormatCode extends MultiMethodTest {
     * Has <b> OK </b> status if both times returned array's length does not
     * equal to zero.
     */
+    @Test
     public void _getAllFormatCode() {
         boolean res = true;
         NumberFormatCode[] nfc = null;
@@ -126,13 +163,14 @@ public class _XNumberFormatCode extends MultiMethodTest {
             nfc = oObj.getAllFormatCode(KNumberFormatUsage.TIME, getLocale(i));
             res &= ( nfc.length != 0 );
         }
-        tRes.tested("getAllFormatCode()", res);
+        Assert.assertTrue("getAllFormatCode()", res);
     }
 
     /**
     * Test calls the method for each locale. <p>
     * Has <b> OK </b> status if returned array's length does not equal to zero.
     */
+    @Test
     public void _getAllFormatCodes() {
         boolean res = true;
         NumberFormatCode[] nfc = null;
@@ -141,7 +179,7 @@ public class _XNumberFormatCode extends MultiMethodTest {
             nfc = oObj.getAllFormatCodes(getLocale(i));
             res &= ( nfc.length != 0 );
         }
-        tRes.tested("getAllFormatCodes()", res);
+        Assert.assertTrue("getAllFormatCodes()", res);
     }
 
     /**

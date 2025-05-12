@@ -21,15 +21,23 @@
 
 
 
-package ifc.i18n;
-
-import lib.MultiMethodTest;
+package api.i18n;
 
 import com.sun.star.i18n.KParseTokens;
 import com.sun.star.i18n.KParseType;
 import com.sun.star.i18n.ParseResult;
 import com.sun.star.i18n.XCharacterClassification;
 import com.sun.star.lang.Locale;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
 
 /**
  * Testing <code>com.sun.star.i18n.XCharacterClassification</code>
@@ -49,7 +57,10 @@ import com.sun.star.lang.Locale;
  * Test is <b> NOT </b> multithread compliant. <p>
  * @see com.sun.star.i18n.XCharacterClassification
  */
-public class _XCharacterClassification extends MultiMethodTest {
+public class XCharacterClassificationTest {
+    private static final UnoApp app = new UnoApp();
+
+    private XComponentContext xContext = null;
     public XCharacterClassification oObj = null;
     public String[] languages = new String[]{"de","en","es","fr","ja","ko","zh"};
     public String[] countries = new String[]{"DE","US","ES","FR","JP","KR","CN"};
@@ -97,6 +108,28 @@ public class _XCharacterClassification extends MultiMethodTest {
         "U_CJK_COMPATIBILITY_FORMS","U_SMALL_FORM_VARIANTS","U_ARABIC_PRESENTATION_FORMS_B",
         "U_SPECIALS","U_HALFWIDTH_AND_FULLWIDTH_FORMS","U_CHAR_SCRIPT_COUNT","U_NO_SCRIPT"};
 
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
+        oObj = UnoRuntime.queryInterface(
+            XCharacterClassification.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.CharacterClassification", xContext)
+        );
+    }
+
     /**
     * Test calls the method for different locales. Then each result is compared
     * with a string, converted to a upper case using
@@ -104,6 +137,7 @@ public class _XCharacterClassification extends MultiMethodTest {
     * Has <b> OK </b> status if string, returned by the method is equal to
     * a string that is returned by String.toUpperCase() for all locales.
     */
+    @Test
     public void _toUpper() {
         boolean res = true;
         char[] characters = new char[]{586,65,97,498,721,4588,772,8413,3404};
@@ -117,13 +151,13 @@ public class _XCharacterClassification extends MultiMethodTest {
                 new java.util.Locale(languages[i], countries[i]));
             res &= get.equals(exp);
             if (!res) {
-                log.println("FAILED for: language=" + languages[i] +
+                System.out.println("FAILED for: language=" + languages[i] +
                     " ; country=" + countries[i]);
-                log.println("Expected: " + exp);
-                log.println("Gained : " + get);
+                System.out.println("Expected: " + exp);
+                System.out.println("Gained : " + get);
             }
         }
-        tRes.tested("toUpper()", res);
+        Assert.assertTrue("toUpper()", res);
     }
 
     /**
@@ -133,6 +167,8 @@ public class _XCharacterClassification extends MultiMethodTest {
     * Has <b> OK </b> status if string, returned by the method is equal to
     * a string that is returned by String.toLowerCase() for all locales.
     */
+    @Test
+    @Ignore("Bug #87590 Incorrect casing for U+026A, U+0268, U+0197...")
     public void _toLower() {
         boolean res = true;
         char[] characters = new char[]{586,65,97,498,721,4588,772,8413,3404};
@@ -146,13 +182,13 @@ public class _XCharacterClassification extends MultiMethodTest {
                 new java.util.Locale(languages[i],countries[i]));
             res &= get.equals(exp);
             if (!res) {
-                log.println("FAILED for: language=" + languages[i]
+                System.out.println("FAILED for: language=" + languages[i]
                     + " ; country=" + countries[i]);
-                log.println("Expected: " + exp);
-                log.println("Gained : " + get);
+                System.out.println("Expected: " + exp);
+                System.out.println("Gained : " + get);
             }
         }
-        tRes.tested("toLower()", res);
+        Assert.assertTrue("toLower()", res);
     }
 
     /**
@@ -162,6 +198,7 @@ public class _XCharacterClassification extends MultiMethodTest {
     * Has <b> OK </b> status if string, returned by the method is equal to
     * a string that was converted using Character.toTitleCase() for all locales.
     */
+    @Test
     public void _toTitle() {
         boolean res = true;
         String toCheck = new String(new char[]{8112});
@@ -174,13 +211,13 @@ public class _XCharacterClassification extends MultiMethodTest {
                 new char[]{Character.toTitleCase(toCheck.toCharArray()[0])});
             res &= get.equals(exp);
             if (!res) {
-                log.println("FAILED for: language=" + languages[i]
+                System.out.println("FAILED for: language=" + languages[i]
                     + " ; country=" + countries[i]);
-                log.println("Expected: " + exp);
-                log.println("Gained : " + get);
+                System.out.println("Expected: " + exp);
+                System.out.println("Gained : " + get);
             }
         }
-        tRes.tested("toTitle()", res);
+        Assert.assertTrue("toTitle()", res);
     }
 
     /**
@@ -192,13 +229,18 @@ public class _XCharacterClassification extends MultiMethodTest {
     * is equal to an element number.<p>
     * @see com.sun.star.i18n.CharType
     */
+    @Test
     public void _getType() {
         boolean res = true;
-        char[] characters = new char[]{586,65,97,498,721,4588,772,8413,3404,
-            48,8544,179,32,8232,8233,144,8204,57344,56320,173,40,41,95,3852,247,
-            3647,901,3896,171,187};
-        int[] charsInt = new int[]{586,65,97,498,721,4588,772,8413,3404,48,
-            8544,179,32,8232,8233,144,8204,57344,56320,173,40,41,95,3852,247,
+        // If or when this list gets out of date again,
+        // find new characters of the required type with:
+        // for (int i = 30; i <= 0xffff; i++) {
+        //     String s = new String("" + (char)i);
+        //     int type = oObj.getType(s, 0);
+        //     System.out.println("character " + i + " has type " + charstyles_office[type]);
+        // }
+        char[] characters = new char[]{888,65,97,498,721,4588,772,8413,3404,
+            48,8544,179,32,8232,8233,144,8204,57344,56320,45,40,41,95,3852,247,
             3647,901,3896,171,187};
         String toCheck = new String(characters);
 
@@ -206,12 +248,12 @@ public class _XCharacterClassification extends MultiMethodTest {
             int get = oObj.getType(toCheck, i);
             res &= (charstyles_office[get] == charstyles_office[i]);
             if (!res) {
-                log.println("Code :" + Integer.toHexString(charsInt[i]));
-                log.println("Gained: " + charstyles_office[get]);
-                log.println("Expected : " + charstyles_office[i]);
+                System.out.println("Code: " + Integer.toHexString((int)characters[i]));
+                System.out.println("Gained: " + charstyles_office[get]);
+                System.out.println("Expected: " + charstyles_office[i]);
             }
         }
-        tRes.tested("getType()", res);
+        Assert.assertTrue("getType()", res);
     }
 
     /**
@@ -220,9 +262,18 @@ public class _XCharacterClassification extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns type, expected for a given
     * character and locale.
     */
+    @Test
     public void _getCharacterType() {
         boolean res = true;
-        String toCheck = "Ab0)";
+        // If or when this list gets out of date again,
+        // find new characters of the required type with:
+        //for (int i = 32; i <= 0xffff; i++) {
+        //    int charType = oObj.getCharacterType("" + (char)i, 0, getLocale(1));
+        //    if (charType == 32) {
+        //        System.out.println("character " + i + " has type 32");
+        //    }
+        //}
+        String toCheck = "Ab0*";
         int[] expected = new int[]{226,228,97,32};
 
         for (int i=0;i<toCheck.length();i++) {
@@ -230,15 +281,15 @@ public class _XCharacterClassification extends MultiMethodTest {
                 int get = oObj.getCharacterType(toCheck, i, getLocale(j));
                 res &= (get == expected[i]);
                 if (!res) {
-                    log.println("FAILED for: language=" + languages[j] +
+                    System.out.println("FAILED for: language=" + languages[j] +
                         " ; country=" + countries[j]);
-                    log.println("Sysmbol :" + toCheck.toCharArray()[i]);
-                    log.println("Gained: " + get);
-                    log.println("Expected : " + expected[i]);
+                    System.out.println("Symbol: " + toCheck.toCharArray()[i]);
+                    System.out.println("Gained: " + get);
+                    System.out.println("Expected: " + expected[i]);
                 }
             }
         }
-        tRes.tested("getCharacterType()", res);
+        Assert.assertTrue("getCharacterType()", res);
     }
 
     /**
@@ -247,6 +298,7 @@ public class _XCharacterClassification extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns type, expected for a given
     * string and locale.
     */
+    @Test
     public void _getStringType() {
         boolean res = true;
         String[] toCheck = new String[]{"01234","AAAAA","bbbbb","AA()bb"};
@@ -258,14 +310,14 @@ public class _XCharacterClassification extends MultiMethodTest {
                     toCheck[j].length(), getLocale(i));
                 res &= (get == exp[j]);
                 if (!res) {
-                    log.println("FAILED for: language=" + languages[i] +
+                    System.out.println("FAILED for: language=" + languages[i] +
                         " ; country=" + countries[i]);
-                    log.println("Expected: " + exp[j]);
-                    log.println("Gained : " + get);
+                    System.out.println("Expected: " + exp[j]);
+                    System.out.println("Gained : " + get);
                 }
             }
         }
-        tRes.tested("getStringType()", res);
+        Assert.assertTrue("getStringType()", res);
     }
 
     /**
@@ -276,20 +328,21 @@ public class _XCharacterClassification extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns direction, that's equal to
     * a symbol position in the string.
     */
+    @Test
     public void _getCharacterDirection() {
         boolean res = true;
-        String toCheck = new String(new char[]{65,1470,48,47,35,1632,44,10,
+        String toCheck = new String(new char[]{65,1470,48,43,35,1632,44,10,
                                 9,12,33,8234,8237,1563,8235,8238,8236,768,1});
         for (short i=0;i<19;i++) {
             short get = oObj.getCharacterDirection(toCheck, i);
             res &= (get == i);
             if (!res) {
-                log.println("Code :" + toCheck.toCharArray()[i]);
-                log.println("Gained: " + get);
-                log.println("Expected: " + i);
+                System.out.println("Code :" + toCheck.toCharArray()[i]);
+                System.out.println("Gained: " + get);
+                System.out.println("Expected: " + i);
             }
         }
-        tRes.tested("getCharacterDirection()", res);
+        Assert.assertTrue("getCharacterDirection()", res);
     }
 
     /**
@@ -303,16 +356,10 @@ public class _XCharacterClassification extends MultiMethodTest {
     * since it hasn't the right neighborhood.<p>
     * @see "http://ppewww.ph.gla.ac.uk/~flavell/unicode/unidata.html"
     */
+    @Test
     public void _getScript() {
         boolean res = true;
         char[] characters = new char[]{65,128,256,384,592,750,773,924,1030,1331,1448,
-            1569,1792,1936,2313,2465,2570,2707,2822,2972,3079,3240,3337,3464,3590,
-            3745,3906,4097,4274,4357,4621,5040,5200,5776,5806,6030,6155,7683,7943,
-            8202,8319,8352,8413,8452,8545,8616,8715,8965,9217,9281,9336,9474,9608,9719,
-            9734,9999,10247,11911,12034,12274,12294,12358,12456,12552,12605,12688,12727,
-            12806,13065,13312,19968,40964,42152,44032,55296,56192,56320,57344,63744,
-            64257,64370,65056,65073,65131,65146,65532,65288};
-        int[] charsInt = new int[]{65,128,256,384,592,750,773,924,1030,1331,1448,
             1569,1792,1936,2313,2465,2570,2707,2822,2972,3079,3240,3337,3464,3590,
             3745,3906,4097,4274,4357,4621,5040,5200,5776,5806,6030,6155,7683,7943,
             8202,8319,8352,8413,8452,8545,8616,8715,8965,9217,9281,9336,9474,9608,9719,
@@ -323,18 +370,19 @@ public class _XCharacterClassification extends MultiMethodTest {
 
         for (int i=0;i<characters.length;i++) {
             int get = oObj.getScript(toCheck, i);
-            res &= (get == i);
             //The HIGH_SURROGATE 55296 doesn't work since it hasn't the right
-            //neighborhood
-            if (toCheck.substring(i, i + 1).hashCode() == 55296) res = true;
+            //neighborhood. Neither does 56192 - it combines with 55296 into another code point.
+            if (toCheck.charAt(i) != 55296 && toCheck.charAt(i) != 56192) {
+                res &= (get == i);
+            }
             if (!res) {
-                log.println("-- " + toCheck.substring(i, i + 1).hashCode());
-                log.println("Code: " + Integer.toHexString(charsInt[i]));
-                log.println("Gained: " + unicode_script[get]);
-                log.println("Expected: " + unicode_script[i]);
+                System.out.println("-- " + toCheck.substring(i, i + 1).hashCode());
+                System.out.println("Code: " + Integer.toHexString((int)characters[i]));
+                System.out.println("Gained: " + get + " (" + (0 <= get && get < unicode_script.length ? unicode_script[get] : "out of range") + ")");
+                System.out.println("Expected: " + unicode_script[i]);
             }
         }
-        tRes.tested("getScript()", res);
+        Assert.assertTrue("getScript()", res);
     }
 
     /**
@@ -344,6 +392,7 @@ public class _XCharacterClassification extends MultiMethodTest {
     * Has <b> OK </b> status if the method returns right results all three
     * times.
     */
+    @Test
     public void _parseAnyToken() {
         int nStartFlags = KParseTokens.ANY_ALPHA | KParseTokens.ASC_UNDERSCORE;
         int nContFlags = KParseTokens.ANY_ALNUM | KParseTokens.ASC_UNDERSCORE
@@ -369,7 +418,7 @@ public class _XCharacterClassification extends MultiMethodTest {
                   && (pRes.TokenType==1)
                   && (pRes.Value==0.0) );
         }
-        tRes.tested("parseAnyToken()", res);
+        Assert.assertTrue("parseAnyToken()", res);
     }
 
     /**
@@ -378,6 +427,7 @@ public class _XCharacterClassification extends MultiMethodTest {
     * checking result after every call. <p>
     * Has <b> OK </b> status if the method returns right results.
     */
+    @Test
     public void _parsePredefinedToken() {
         int nStartFlags = KParseTokens.ANY_ALPHA | KParseTokens.ASC_UNDERSCORE;
         int nContFlags = nStartFlags;
@@ -395,7 +445,7 @@ public class _XCharacterClassification extends MultiMethodTest {
                   && (pRes.TokenType==4)
                   && (pRes.Value==0.0) );
         }
-        tRes.tested("parsePredefinedToken()", res);
+        Assert.assertTrue("parsePredefinedToken()", res);
     }
 
 

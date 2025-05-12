@@ -21,14 +21,17 @@
 
 
 
-package ifc.i18n;
+package api.i18n;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Vector;
 
-import lib.MultiMethodTest;
-import lib.Status;
-import lib.StatusException;
-
+import com.sun.star.beans.PropertyState;
+import com.sun.star.beans.PropertyValue;
 import com.sun.star.i18n.Boundary;
 import com.sun.star.i18n.LineBreakHyphenationOptions;
 import com.sun.star.i18n.LineBreakResults;
@@ -37,6 +40,19 @@ import com.sun.star.i18n.ScriptType;
 import com.sun.star.i18n.WordType;
 import com.sun.star.i18n.XBreakIterator;
 import com.sun.star.lang.Locale;
+import com.sun.star.lang.XComponent;
+import com.sun.star.text.XTextDocument;
+import com.sun.star.text.XTextRange;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.common.Testspace;
+import org.openoffice.test.uno.UnoApp;
 
 /**
 * Testing <code>com.sun.star.i18n.XBreakIterator</code>
@@ -76,31 +92,55 @@ import com.sun.star.lang.Locale;
 * <ul> <p>
 * @see com.sun.star.i18n.XBreakIterator
 */
-public class _XBreakIterator extends MultiMethodTest {
+public class XBreakIteratorTest {
+    private static final UnoApp app = new UnoApp();
+    private static final String iteratorPath = "api/i18n/Iterator.sxw";
+    private static String UnicodeString;
 
+    private XComponentContext xContext = null;
     public XBreakIterator oObj = null;
 
     Locale locale = null;
-    String UnicodeString = null;
 
     short wordType = WordType.ANYWORD_IGNOREWHITESPACES;
+
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+        UnicodeString = readFileContents(iteratorPath);
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
 
     /**
      * Retrieves object relations.
      * @throws StatusException If one of relations not found.
      */
-    protected void before() {
-        locale = (Locale)tEnv.getObjRelation("Locale");
-        if (locale == null) {
-            throw new StatusException
-                (Status.failed("Relation 'Locale' not found")) ;
-        }
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
+        oObj = UnoRuntime.queryInterface(
+            XBreakIterator.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.BreakIterator", xContext)
+        );
 
-        UnicodeString = (String)tEnv.getObjRelation("UnicodeString");
-        if (UnicodeString == null) {
-            throw new StatusException(Status.failed
-                ("Relation 'UnicodeString' not found")) ;
-        }
+        locale = new Locale("en", "US", "");
+    }
+
+    private static String readFileContents(String path) throws Exception {
+        String sample = Testspace.prepareData(path);
+        PropertyValue[] properties = new PropertyValue[1];
+        properties[0] = new PropertyValue("Hidden", -1, true, PropertyState.DIRECT_VALUE);
+        XComponent docComponent = app.loadDocument(sample, properties);
+        XTextDocument textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, docComponent);
+        XTextRange xTextRange = (XTextRange)textDocument.getText();
+        return xTextRange.getString();
     }
 
     /**
@@ -109,6 +149,7 @@ public class _XBreakIterator extends MultiMethodTest {
      * Has <b>OK</b> status if position after travel and traveled length
      * has expected values.
      */
+    @Test
     public void _nextCharacters() {
         short nCharacterIteratorMode =
             com.sun.star.i18n.CharacterIteratorMode.SKIPCHARACTER;
@@ -127,16 +168,16 @@ public class _XBreakIterator extends MultiMethodTest {
             int[] lDone = new int[1];
             long lRes = oObj.nextCharacters(UnicodeString, nextCharacters[i][0],
                 locale, nCharacterIteratorMode, nextCharacters[i][1], lDone);
-            log.println("Expected result is: lRes = " + nextCharacters[i][2] +
+            System.out.println("Expected result is: lRes = " + nextCharacters[i][2] +
                         "; lDone = " + nextCharacters[i][3] );
-            log.println("Actual result is: lRes = " + lRes +
+            System.out.println("Actual result is: lRes = " + lRes +
                         "; lDone = " + lDone[0] );
 
             bRes = bRes && lRes == nextCharacters[i][2];
             bRes = bRes && lDone[0] == nextCharacters[i][3];
         }
 
-        tRes.tested("nextCharacters()", bRes);
+        Assert.assertTrue("nextCharacters()", bRes);
     }
 
     /**
@@ -145,6 +186,7 @@ public class _XBreakIterator extends MultiMethodTest {
      * Has <b>OK</b> status if position after travel and traveled length
      * has expected values.
      */
+    @Test
     public void _previousCharacters() {
         short nCharacterIteratorMode =
             com.sun.star.i18n.CharacterIteratorMode.SKIPCHARACTER;
@@ -163,42 +205,46 @@ public class _XBreakIterator extends MultiMethodTest {
                 previousCharacters[i][0],
                 locale, nCharacterIteratorMode,
                 previousCharacters[i][1], lDone);
-            log.println("Expected result is: lRes = " + previousCharacters[i][2]
+            System.out.println("Expected result is: lRes = " + previousCharacters[i][2]
                 + "; lDone = " + previousCharacters[i][3] );
-            log.println("Actual result is: lRes = " + lRes
+            System.out.println("Actual result is: lRes = " + lRes
                 + "; lDone = " + lDone[0]);
 
             bRes = bRes && lRes == previousCharacters[i][2];
             bRes = bRes && lDone[0] == previousCharacters[i][3];
         }
 
-        tRes.tested("previousCharacters()", bRes);
+        Assert.assertTrue("previousCharacters()", bRes);
     }
-
-    Vector vBounds = new Vector();
 
     /**
     * Saves bounds of all returned words for the future tests. <p>
     * Has <b>OK</b> status.
     */
+    @Test
     public void _nextWord() {
-        int i = 0;
+        ArrayList<Boundary> vBounds = nextWord();
+        Assert.assertTrue("nextWord()", vBounds != null && vBounds.size() > 0);
+    }
 
+    private ArrayList<Boundary> nextWord() {
+        int i = 0;
+        ArrayList<Boundary> vBounds = new ArrayList<>();
         while( i < UnicodeString.length() - 1 ) {
             Boundary bounds = oObj.nextWord
                 (UnicodeString, i, locale, wordType);
             if (bounds.endPos - bounds.startPos > 3) {
                 vBounds.add( bounds );
-                log.println("Word " + vBounds.size() + "("
+                System.out.println("Word " + vBounds.size() + "("
                     + bounds.startPos + "," + bounds.endPos + "): '" +
                     UnicodeString.substring(bounds.startPos,
                                             bounds.endPos) + "'");
             }
             i = bounds.endPos - 1;
         }
-        log.println("In text there are " + vBounds.size()
+        System.out.println("In text there are " + vBounds.size()
             + " words, if count from left to right");
-        tRes.tested("nextWord()", true);
+        return vBounds;
     }
 
     /**
@@ -206,26 +252,27 @@ public class _XBreakIterator extends MultiMethodTest {
     * by the method _nextWord().<p>
     * Has <b>OK</b> status if number of word bounds are equal.
     */
+    @Test
     public void _previousWord() {
-        requiredMethod("nextWord()");
+        ArrayList<Boundary> vBounds = nextWord();
 
         int i = UnicodeString.length() - 1;
-        Vector vPrevBounds = new Vector();
+        ArrayList<Boundary> vPrevBounds = new ArrayList<>();
         while( i > 0  ) {
             Boundary bounds =
                 oObj.previousWord(UnicodeString, i, locale, wordType);
             if (bounds.endPos - bounds.startPos > 3) {
                 vPrevBounds.add( bounds );
-                log.println("Word " + vPrevBounds.size() + "("
+                System.out.println("Word " + vPrevBounds.size() + "("
                     + bounds.startPos + "," + bounds.endPos + "): '"
                     + UnicodeString.substring(bounds.startPos, bounds.endPos)
                     + "'");
             }
             i = bounds.startPos;
         }
-        log.println("In text there are " + vPrevBounds.size()
+        System.out.println("In text there are " + vPrevBounds.size()
             + " words, if count from right to left");
-        tRes.tested("previousWord()", vPrevBounds.size() == vBounds.size() );
+        Assert.assertTrue("previousWord()", vPrevBounds.size() == vBounds.size() );
     }
 
     /**
@@ -235,8 +282,9 @@ public class _XBreakIterator extends MultiMethodTest {
      * Has <b>OK</b> status if bounds calculated by <code>getWordBoundary()</code>
      * method are the same as bounds obtained by <code>nextWord</code> method.
      */
+    @Test
     public void _getWordBoundary() {
-        requiredMethod("nextWord()");
+        ArrayList<Boundary> vBounds = nextWord();
 
         boolean bRes = true;
 
@@ -247,9 +295,9 @@ public class _XBreakIterator extends MultiMethodTest {
                         + iBounds.startPos;
             Boundary bounds = oObj.getWordBoundary(UnicodeString, iPos,
                 locale, wordType, true);
-            log.println("Expected result is: startPos = " + iBounds.startPos +
+            System.out.println("Expected result is: startPos = " + iBounds.startPos +
                                  "; endPos = " + iBounds.endPos);
-            log.println("Actual result is: startPos = " + bounds.startPos
+            System.out.println("Actual result is: startPos = " + bounds.startPos
                 + "; endPos = " + bounds.endPos + " Word is: '"
                 + UnicodeString.substring(bounds.startPos, bounds.endPos) + "'");
 
@@ -257,7 +305,7 @@ public class _XBreakIterator extends MultiMethodTest {
             bRes = bRes && iBounds.endPos == bounds.endPos;
         }
 
-        tRes.tested("getWordBoundary()", bRes);
+        Assert.assertTrue("getWordBoundary()", bRes);
     }
 
     /**
@@ -266,8 +314,9 @@ public class _XBreakIterator extends MultiMethodTest {
      *
      * Has <b>OK</b> status if every word has type <code>WordType.ANY_WORD</code>
      */
+    @Test
     public void _getWordType() {
-        requiredMethod("nextWord()");
+        ArrayList<Boundary> vBounds = nextWord();
 
         boolean bRes = true;
 
@@ -282,7 +331,7 @@ public class _XBreakIterator extends MultiMethodTest {
             bRes = bRes && type == WordType.ANY_WORD;
         }
 
-        tRes.tested("getWordType()", bRes);
+        Assert.assertTrue("getWordType()", bRes);
     }
 
     /**
@@ -293,27 +342,28 @@ public class _XBreakIterator extends MultiMethodTest {
      * Has <b>OK</b> status if in the first case <code>true</code>
      * returned and in the second - <code>false</code> for every word.
      */
+    @Test
     public void _isBeginWord() {
-        requiredMethod("nextWord()");
+        ArrayList<Boundary> vBounds = nextWord();
 
         boolean bRes = true;
 
         for(int i = 0; i < vBounds.size(); i++) {
             Boundary iBounds = (Boundary)vBounds.get(i);
             boolean isBegin = oObj.isBeginWord(UnicodeString, iBounds.startPos,
-                                               locale, WordType.ANY_WORD);
+                                               locale, wordType);
             bRes = bRes && isBegin;
             boolean isNotBegin = !oObj.isBeginWord(UnicodeString,
-                    iBounds.startPos + 1, locale, WordType.ANY_WORD);
+                    iBounds.startPos + 1, locale, wordType);
             bRes = bRes && isNotBegin;
 
-            log.println("At position + " + iBounds.startPos
+            System.out.println("At position + " + iBounds.startPos
                 + " isBeginWord? " + isBegin);
-            log.println("At position + " + (iBounds.startPos + 1)
+            System.out.println("At position + " + (iBounds.startPos + 1)
                 + " isBeginWord? " + !isNotBegin);
         }
 
-        tRes.tested("isBeginWord()", bRes);
+        Assert.assertTrue("isBeginWord()", bRes);
     }
 
     /**
@@ -325,27 +375,28 @@ public class _XBreakIterator extends MultiMethodTest {
      * Has <b>OK</b> status if in the first case <code>true</code>
      * returned and in the second - <code>false</code> for every word.
      */
+    @Test
     public void _isEndWord() {
-        requiredMethod("nextWord()");
+        ArrayList<Boundary> vBounds = nextWord();
 
         boolean bRes = true;
 
         for(int i = 0; i < vBounds.size(); i++) {
             Boundary iBounds = (Boundary)vBounds.get(i);
             boolean isEnd = oObj.isEndWord(UnicodeString, iBounds.endPos,
-                locale, WordType.ANY_WORD);
+                locale, wordType);
             bRes = bRes && isEnd;
             boolean isNotEnd = !oObj.isEndWord(UnicodeString,
-                iBounds.endPos - 1, locale, WordType.ANY_WORD);
+                iBounds.endPos - 1, locale, wordType);
             bRes = bRes && isNotEnd;
 
-            log.println("At position + " + iBounds.endPos
+            System.out.println("At position + " + iBounds.endPos
                 + " isEndWord? " + isEnd);
-            log.println("At position + " + (iBounds.endPos - 1)
+            System.out.println("At position + " + (iBounds.endPos - 1)
                 + " isEndWord? " + !isNotEnd);
         }
 
-        tRes.tested("isEndWord()", bRes);
+        Assert.assertTrue("isEndWord()", bRes);
     }
 
     Vector vSentenceStart = new Vector();
@@ -356,6 +407,7 @@ public class _XBreakIterator extends MultiMethodTest {
      *
      * Has <b>OK</b> status if -1 is returned for wrong position arguments.
      */
+    @Test
     public void _beginOfSentence() {
         int iPos = 0;
         while( iPos < UnicodeString.length() ) {
@@ -363,7 +415,7 @@ public class _XBreakIterator extends MultiMethodTest {
                 iPos, locale) );
             if (start.intValue() >= 0 && !vSentenceStart.contains(start) ) {
                 vSentenceStart.add( start );
-                log.println("Sentence " + vSentenceStart.size()
+                System.out.println("Sentence " + vSentenceStart.size()
                     + " : start from position " + start);
             }
             iPos++;
@@ -375,10 +427,10 @@ public class _XBreakIterator extends MultiMethodTest {
             UnicodeString.length() + 1, locale) == -1;
 
         if (!bRes) {
-            log.println("When invalid position, returned value isn't equal to -1");
+            System.out.println("When invalid position, returned value isn't equal to -1");
         }
 
-        tRes.tested("beginOfSentence()", bRes);
+        Assert.assertTrue("beginOfSentence()", bRes);
     }
 
     /**
@@ -391,13 +443,14 @@ public class _XBreakIterator extends MultiMethodTest {
      * Has <b>OK</b> status if the end position of every sentence
      * greater than starting and -1 returned for invalid arguments.
      */
+    @Test
     public void _endOfSentence() {
         boolean bRes = true;
         for(int i = 0; i < vSentenceStart.size(); i++) {
             int start = ((Integer)vSentenceStart.get(i)).intValue();
             int end = oObj.endOfSentence(UnicodeString, start, locale);
             bRes &= end > start;
-            log.println("Sentence " + i + " range is [" + start + ", "
+            System.out.println("Sentence " + i + " range is [" + start + ", "
                 + end + "]");
         }
 
@@ -407,10 +460,10 @@ public class _XBreakIterator extends MultiMethodTest {
             UnicodeString.length() + 1, locale) == -1;
 
         if (!bInvRes) {
-            log.println("When invalid position, returned value isn't equal to -1");
+            System.out.println("When invalid position, returned value isn't equal to -1");
         }
 
-        tRes.tested("endOfSentence()", bRes && bInvRes);
+        Assert.assertTrue("endOfSentence()", bRes && bInvRes);
     }
 
     /**
@@ -420,6 +473,7 @@ public class _XBreakIterator extends MultiMethodTest {
     * Has <b>OK</b> status if non-zero break position was found and it is
     * less or equal than position we trying to break.
     */
+    @Test
     public void _getLineBreak() {
         boolean bRes = true;
         LineBreakResults lineBreakResults;
@@ -445,11 +499,11 @@ public class _XBreakIterator extends MultiMethodTest {
         bRes = breakPos <= pos && breakPos > 0;
 
         if (!bRes) {
-            log.println("The last position was: " + pos
+            System.out.println("The last position was: " + pos
                 + ", and the break position was: " + breakPos);
         }
 
-        tRes.tested("getLineBreak()", bRes);
+        Assert.assertTrue("getLineBreak()", bRes);
     }
 
     // Asian type script
@@ -464,14 +518,15 @@ public class _XBreakIterator extends MultiMethodTest {
     * relatively to position passed. <p>
     * Has <b>OK</b> status if the starting position of script is returned.
     */
+    @Test
     public void _beginOfScript() {
         String multiScript = "ab" + katakana  ;
 
         int pos = oObj.beginOfScript(multiScript, 3, ScriptType.ASIAN) ;
 
-        log.println("Position = " + pos) ;
+        System.out.println("Position = " + pos) ;
 
-        tRes.tested("beginOfScript()", pos == 2) ;
+        Assert.assertTrue("beginOfScript()", pos == 2) ;
     }
 
     /**
@@ -479,14 +534,15 @@ public class _XBreakIterator extends MultiMethodTest {
     * relatively to position passed. <p>
     * Has <b>OK</b> status if the end position of script is returned.
     */
+    @Test
     public void _endOfScript() {
         String multiScript = "ab" + katakana + "cd" ;
 
         int pos = oObj.endOfScript(multiScript, 2, ScriptType.ASIAN) ;
 
-        log.println("Position = " + pos) ;
+        System.out.println("Position = " + pos) ;
 
-        tRes.tested("endOfScript()", pos == 4) ;
+        Assert.assertTrue("endOfScript()", pos == 4) ;
     }
 
     /**
@@ -494,14 +550,15 @@ public class _XBreakIterator extends MultiMethodTest {
     * relatively to position passed. <p>
     * Has <b>OK</b> status if the appropriate position is returned.
     */
+    @Test
     public void _nextScript() {
         String multiScript = "ab" + katakana + "cd"  ;
 
         int pos = oObj.nextScript(multiScript, 0, ScriptType.LATIN) ;
 
-        log.println("Position = " + pos) ;
+        System.out.println("Position = " + pos) ;
 
-        tRes.tested("nextScript()", pos == 4) ;
+        Assert.assertTrue("nextScript()", pos == 4) ;
     }
 
     /**
@@ -509,14 +566,15 @@ public class _XBreakIterator extends MultiMethodTest {
     * relatively to position passed. <p>
     * Has <b>OK</b> status if the appropriate position is returned.
     */
+    @Test
     public void _previousScript() {
         String multiScript = "ab" + katakana + "cd"  ;
 
         int pos = oObj.previousScript(multiScript, 5, ScriptType.ASIAN) ;
 
-        log.println("Position = " + pos) ;
+        System.out.println("Position = " + pos) ;
 
-        tRes.tested("previousScript()", pos == 2) ;
+        Assert.assertTrue("previousScript()", pos == 2) ;
     }
 
     /**
@@ -527,6 +585,7 @@ public class _XBreakIterator extends MultiMethodTest {
     * codepoints and <code>WEAK</code> for codepoints from Arrows
     * Unicode block.
     */
+    @Test
     public void _getScriptType() {
         boolean res = true ;
 
@@ -535,10 +594,8 @@ public class _XBreakIterator extends MultiMethodTest {
         res &= oObj.getScriptType(arabic, 0) == ScriptType.COMPLEX ;
         res &= oObj.getScriptType(arrows, 0) == ScriptType.WEAK ;
 
-        tRes.tested("getScriptType()", res) ;
+        Assert.assertTrue("getScriptType()", res) ;
     }
-
-    boolean bCharBlockRes = true;
 
     protected short getCharBlockType(int pos) {
         short i = 1;
@@ -567,7 +624,13 @@ public class _XBreakIterator extends MultiMethodTest {
      * has position 0 and the end of the last block is at the end
      * of the whole string.
      */
+    @Test
     public void _beginOfCharBlock() {
+        Assert.assertTrue("beginOfCharBlock()", beginOfCharBlock());
+    }
+
+    private boolean beginOfCharBlock() {
+        boolean bCharBlockRes = true;
         int iPos = 0;
 
         while( iPos < UnicodeString.length() && iPos > -1) {
@@ -578,7 +641,7 @@ public class _XBreakIterator extends MultiMethodTest {
                 locale, charType);
             iPos = endPos;
             vCharBlockBounds.add(new Boundary(startPos, endPos));
-            log.println("" + vCharBlockBounds.size() + "). Bounds: ["
+            System.out.println("" + vCharBlockBounds.size() + "). Bounds: ["
                 + startPos + "," + endPos + "]; Type = " + charType);
             vCharBlockTypes.add(new Short(charType));
         }
@@ -589,16 +652,16 @@ public class _XBreakIterator extends MultiMethodTest {
             bCharBlockRes &= endPos == startPos;
         }
 
-        log.println("Testing for no intersections : " + bCharBlockRes);
+        System.out.println("Testing for no intersections : " + bCharBlockRes);
         int startPos = ((Boundary)vCharBlockBounds.get(0)).startPos;
         bCharBlockRes &= startPos == 0;
         int endPos = ((Boundary)vCharBlockBounds.get
             (vCharBlockBounds.size() - 1)).endPos;
         bCharBlockRes &= endPos == UnicodeString.length();
-        log.println("Regions should starts with 0 and ends with "
+        System.out.println("Regions should starts with 0 and ends with "
             + UnicodeString.length());
 
-        tRes.tested("beginOfCharBlock()", bCharBlockRes);
+        return bCharBlockRes;
     }
 
     /**
@@ -608,8 +671,7 @@ public class _XBreakIterator extends MultiMethodTest {
      * Has the status same as <code>beginOfCharBlock()</code> method status.
      */
     public void _endOfCharBlock() {
-        requiredMethod("beginOfCharBlock()");
-        tRes.tested("endOfCharBlock()", bCharBlockRes);
+        Assert.assertTrue("endOfCharBlock()", beginOfCharBlock());
     }
 
     /**
@@ -622,7 +684,7 @@ public class _XBreakIterator extends MultiMethodTest {
      * equal to this block boundary start.
      */
     public void _nextCharBlock() {
-        requiredMethod("beginOfCharBlock()");
+        beginOfCharBlock();
 
         boolean bRes = true;
         for(int i = 0; i < vCharBlockBounds.size(); i++) {
@@ -633,14 +695,14 @@ public class _XBreakIterator extends MultiMethodTest {
                 locale, type.shortValue());
             if (iPos != bounds.startPos) {
                 bRes = false;
-                log.println("nextCharBlock(UnicodeString, "
+                System.out.println("nextCharBlock(UnicodeString, "
                     + (bounds.startPos - 1) + ", locale, " + type
                     + ") should return " + bounds.startPos);
-                log.println("... and actual value is " + iPos);
+                System.out.println("... and actual value is " + iPos);
             }
         }
 
-        tRes.tested("nextCharBlock()", bRes);
+        Assert.assertTrue("nextCharBlock()", bRes);
     }
 
     /**
@@ -653,7 +715,7 @@ public class _XBreakIterator extends MultiMethodTest {
      * equal to this block boundary start.
      */
     public void _previousCharBlock() {
-        requiredMethod("beginOfCharBlock()");
+        beginOfCharBlock();
 
         boolean bRes = true;
         for(int i = 0; i < vCharBlockBounds.size(); i++) {
@@ -663,14 +725,14 @@ public class _XBreakIterator extends MultiMethodTest {
                 bounds.endPos + 1, locale, type.shortValue());
             if (iPos != bounds.startPos) {
                 bRes = false;
-                log.println("previousCharBlock(UnicodeString, "
+                System.out.println("previousCharBlock(UnicodeString, "
                     + (bounds.endPos + 1) + ", locale, " + type
                     + ") should return " + bounds.startPos);
-                log.println("... and actual value is " + iPos);
+                System.out.println("... and actual value is " + iPos);
             }
         }
 
-        tRes.tested("previousCharBlock()", bRes);
+        Assert.assertTrue("previousCharBlock()", bRes);
     }
 
 }
