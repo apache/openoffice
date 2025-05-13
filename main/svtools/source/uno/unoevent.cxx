@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svtools.hxx"
@@ -48,10 +46,7 @@ using ::rtl::OUStringBuffer;
 const sal_Char sAPI_ServiceName[] = "com.sun.star.container.XNameReplace";
 const sal_Char sAPI_SvDetachedEventDescriptor[] = "SvDetachedEventDescriptor";
 
-//
 // SvBaseEventDescriptor
-//
-
 SvBaseEventDescriptor::SvBaseEventDescriptor( const SvEventDescription* pSupportedMacroItems ) :
 		sEventType(RTL_CONSTASCII_USTRINGPARAM("EventType")),
 		sMacroName(RTL_CONSTASCII_USTRINGPARAM("MacroName")),
@@ -249,7 +244,7 @@ void SvBaseEventDescriptor::getAnyFromMacro(Any& rAny,
 				break;
 			}
 			case EXTENDED_STYPE:
-			{   
+			{
 				// create sequence
 				Sequence<PropertyValue> aSequence(2);
 				Any aTmp;
@@ -272,7 +267,7 @@ void SvBaseEventDescriptor::getAnyFromMacro(Any& rAny,
 				rAny <<= aSequence;
 				bRetValueOK = sal_True;
 				break;
-                        }
+			}
 			case JAVASCRIPT:
 			default:
 				DBG_ERROR("not implemented");
@@ -310,7 +305,7 @@ void SvBaseEventDescriptor::getMacroFromAny(
 
 	// process ...
 	sal_Bool bTypeOK = sal_False;
-	sal_Bool bNone = sal_False;		// true if EventType=="None"
+	sal_Bool bNone = sal_False; // true if EventType=="None"
 	enum ScriptType eType = EXTENDED_STYPE;
 	OUString sScriptVal;
 	OUString sMacroVal;
@@ -375,7 +370,7 @@ void SvBaseEventDescriptor::getMacroFromAny(
 				SvxMacro aMacro(sMacroVal, sLibVal, eType);
 				rMacro = aMacro;
 			}
-			else if (eType == EXTENDED_STYPE) 
+			else if (eType == EXTENDED_STYPE)
 			{
 				SvxMacro aMacro(sScriptVal, sScript);
 				rMacro = aMacro;
@@ -396,13 +391,7 @@ void SvBaseEventDescriptor::getMacroFromAny(
 }
 
 
-
-
-//
 // SvEventDescriptor
-//
-
-
 SvEventDescriptor::SvEventDescriptor(
 	XInterface& rParent,
 	const SvEventDescription* pSupportedMacroItems) :
@@ -417,13 +406,13 @@ SvEventDescriptor::~SvEventDescriptor()
 	// automatically release xParentRef !
 }
 
-void SvEventDescriptor::replaceByName( 
+void SvEventDescriptor::replaceByName(
 	const sal_uInt16 nEvent,
 	const SvxMacro& rMacro)
 		throw(
-			IllegalArgumentException, 
-			NoSuchElementException, 
-			WrappedTargetException, 
+			IllegalArgumentException,
+			NoSuchElementException,
+			WrappedTargetException,
 			RuntimeException)
 {
 	SvxMacroItem aItem(getMacroItemWhich());
@@ -432,12 +421,12 @@ void SvEventDescriptor::replaceByName(
 	setMacroItem(aItem);
 }
 
-void SvEventDescriptor::getByName( 
+void SvEventDescriptor::getByName(
 	SvxMacro& rMacro,
 	const sal_uInt16 nEvent )
 		throw(
-			NoSuchElementException, 
-			WrappedTargetException, 
+			NoSuchElementException,
+			WrappedTargetException,
 			RuntimeException)
 {
 	const SvxMacroItem& rItem = getMacroItem();
@@ -451,14 +440,9 @@ void SvEventDescriptor::getByName(
 }
 
 
-
-
-//
 // SvDetachedEventDescriptor
-//
-
 SvDetachedEventDescriptor::SvDetachedEventDescriptor(
-	const SvEventDescription* pSupportedMacroItems) : 
+	const SvEventDescription* pSupportedMacroItems) :
 	SvBaseEventDescriptor(pSupportedMacroItems),
 	sImplName(RTL_CONSTASCII_USTRINGPARAM(sAPI_SvDetachedEventDescriptor))
 {
@@ -481,14 +465,14 @@ SvDetachedEventDescriptor::~SvDetachedEventDescriptor()
 			delete aMacros[i];
 	}
 
-    delete [] aMacros;
+	delete [] aMacros;
 }
 
 sal_Int16 SvDetachedEventDescriptor::getIndex(const sal_uInt16 nID) const
 {
 	// iterate over supported events
 	sal_Int16 nIndex = 0;
-	while ( (mpSupportedMacroItems[nIndex].mnEvent != nID) && 
+	while ( (mpSupportedMacroItems[nIndex].mnEvent != nID) &&
 			(mpSupportedMacroItems[nIndex].mnEvent != 0)      )
 	{
 		nIndex++;
@@ -496,20 +480,20 @@ sal_Int16 SvDetachedEventDescriptor::getIndex(const sal_uInt16 nID) const
 	return (mpSupportedMacroItems[nIndex].mnEvent == nID) ? nIndex : -1;
 }
 
-OUString SvDetachedEventDescriptor::getImplementationName() 
+OUString SvDetachedEventDescriptor::getImplementationName()
 	throw( ::com::sun::star::uno::RuntimeException )
 {
 	return sImplName;
 }
 
 
-void SvDetachedEventDescriptor::replaceByName( 
+void SvDetachedEventDescriptor::replaceByName(
 	const sal_uInt16 nEvent,
 	const SvxMacro& rMacro)
 	throw(
-		IllegalArgumentException, 
-		NoSuchElementException, 
-		WrappedTargetException, 
+		IllegalArgumentException,
+		NoSuchElementException,
+		WrappedTargetException,
 		RuntimeException)
 {
 	sal_Int16 nIndex = getIndex(nEvent);
@@ -521,12 +505,12 @@ void SvDetachedEventDescriptor::replaceByName(
 }
 
 
-void SvDetachedEventDescriptor::getByName( 
+void SvDetachedEventDescriptor::getByName(
 	SvxMacro& rMacro,
 	const sal_uInt16 nEvent )
 	throw(
-		NoSuchElementException, 
-		WrappedTargetException, 
+		NoSuchElementException,
+		WrappedTargetException,
 		RuntimeException)
 {
 	sal_Int16 nIndex = getIndex(nEvent);
@@ -537,8 +521,8 @@ void SvDetachedEventDescriptor::getByName(
 		rMacro = (*aMacros[nIndex]);
 }
 
-sal_Bool SvDetachedEventDescriptor::hasByName( 
-	const sal_uInt16 nEvent ) const		/// item ID of event
+sal_Bool SvDetachedEventDescriptor::hasByName(
+	const sal_uInt16 nEvent ) const		// item ID of event
 		throw(IllegalArgumentException)
 {
 	sal_Int16 nIndex = getIndex(nEvent);
@@ -549,10 +533,7 @@ sal_Bool SvDetachedEventDescriptor::hasByName(
 }
 
 
-//
 // SvMacroTableEventDescriptor
-//
-
 SvMacroTableEventDescriptor::SvMacroTableEventDescriptor(const SvEventDescription* pSupportedMacroItems) :
 	SvDetachedEventDescriptor(pSupportedMacroItems)
 {
@@ -597,3 +578,5 @@ void SvMacroTableEventDescriptor::copyMacrosIntoTable(
 		}
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */
