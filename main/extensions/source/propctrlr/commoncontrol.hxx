@@ -113,7 +113,7 @@ namespace pcr
                 <type>ControlHelper</type> is responsible for assuring the lifetime of the instance
                 pointed to by <arg>_pAntiImpl</arg>.
             @param _pModifyListener
-                a listener to be modfied when the user modified the control's value. the
+                a listener to be modified when the user modified the control's value. the
                 <member>IModifyListener::modified</member> of this listener is called from within our
                 ModifiedHdl. A default implementation of <member>IModifyListener::modified</member>
                 would just call our <member>setModified</member>.
