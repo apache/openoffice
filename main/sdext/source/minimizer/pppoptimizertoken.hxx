@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _PPPOPTIMIZER_TOKEN_HXX
 #define _PPPOPTIMIZER_TOKEN_HXX
@@ -121,7 +119,7 @@ enum PPPOptimizerTokenEnum
 	TK_GraphicURL,
 	TK_GraphicStreamURL,
 	TK_Height,
-    TK_HelpURL,
+	TK_HelpURL,
 	TK_Hidden,
 	TK_ID,
 	TK_ImageURL,
@@ -211,7 +209,7 @@ enum PPPOptimizerTokenEnum
 	STR_CANCEL,
 	STR_INTRODUCTION,
 	STR_INTRODUCTION_T,
-	STR_CHOSE_SETTINGS,
+	STR_CHOOSE_SETTINGS,
 	STR_REMOVE,
 	STR_GRAPHIC_OPTIMIZATION,
 	STR_IMAGE_OPTIMIZATION,
@@ -268,7 +266,7 @@ enum PPPOptimizerTokenEnum
 	STR_CREATING_OLE_REPLACEMENTS,
 	STR_FILESIZESEPARATOR,
 #endif
-	TK_Last, 
+	TK_Last,
 	TK_NotFound
 };
 
@@ -276,3 +274,5 @@ PPPOptimizerTokenEnum TKGet( const rtl::OUString& );
 rtl::OUString TKGet( const PPPOptimizerTokenEnum );
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
