@@ -60,7 +60,7 @@ xmlChar* ous_to_nxmlstr( const rtl::OUString& oustr, int& length )
 }
 
 /**
- * The input parameter isn't necessaryly NULL terminated.
+ * The input parameter isn't necessarily NULL terminated.
  */
 rtl::OUString xmlchar_to_ous( const xmlChar* pChar, int length ) 
 {
