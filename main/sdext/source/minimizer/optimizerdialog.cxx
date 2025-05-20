@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
- 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sdext.hxx"
@@ -40,9 +38,9 @@
 #include "minimizer.hrc"
 #include "helpid.hrc"
 
-#define URL_GRAPHIC_REPO        "private:graphicrepository"
-#define IMAGE_ROADMAP           URL_GRAPHIC_REPO "/minimizer/minimizepresi_80.png"
-#define IMAGE_ROADMAP_HC        URL_GRAPHIC_REPO "/minimizer/minimizepresi_80_h.png"
+#define URL_GRAPHIC_REPO		"private:graphicrepository"
+#define IMAGE_ROADMAP			URL_GRAPHIC_REPO "/minimizer/minimizepresi_80.png"
+#define IMAGE_ROADMAP_HC		URL_GRAPHIC_REPO "/minimizer/minimizepresi_80_h.png"
 
 // -------------------
 // - OPTIMIZERDIALOG -
@@ -71,7 +69,7 @@ void OptimizerDialog::InitDialog()
 	OUString pNames[] = {
 		TKGet( TK_Closeable ),
 		TKGet( TK_Height ),
-        TKGet( TK_HelpURL ),
+		TKGet( TK_HelpURL ),
 		TKGet( TK_Moveable ),
 		TKGet( TK_PositionX ),
 		TKGet( TK_PositionY ),
@@ -81,19 +79,19 @@ void OptimizerDialog::InitDialog()
 	Any	pValues[] = {
 		Any( sal_True ),
 		Any( sal_Int32( DIALOG_HEIGHT ) ),
-        Any( HID( HID_SDEXT_MINIMIZER_WIZ_DLG ) ),
+		Any( HID( HID_SDEXT_MINIMIZER_WIZ_DLG ) ),
 		Any( sal_True ),
 		Any( sal_Int32( 200 ) ),
 		Any( sal_Int32( 52 ) ),
 		Any( getString( STR_PRESENTATION_MINIMIZER ) ),
 		Any( sal_Int32( OD_DIALOG_WIDTH ) ) };
-	
+
 	sal_Int32 nCount = sizeof( pNames ) / sizeof( OUString );
 
 	Sequence< rtl::OUString >	aNames( pNames, nCount );
 	Sequence< Any >				aValues( pValues, nCount );
 
-	mxDialogModelMultiPropertySet->setPropertyValues( aNames, aValues ); 
+	mxDialogModelMultiPropertySet->setPropertyValues( aNames, aValues );
 }
 
 // -----------------------------------------------------------------------------
@@ -123,11 +121,11 @@ void OptimizerDialog::InitRoadmap()
 		Sequence< rtl::OUString >	aNames( pNames, nCount );
 		Sequence< Any >				aValues( pValues, nCount );
 
-        mxRoadmapControlModel = insertControlModel( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.UnoControlRoadmapModel" ) ),
+		mxRoadmapControlModel = insertControlModel( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.UnoControlRoadmapModel" ) ),
 															  TKGet( TK_rdmNavi ), aNames, aValues	);
 
 		Reference< XPropertySet > xPropertySet( mxRoadmapControlModel, UNO_QUERY_THROW );
-        xPropertySet->setPropertyValue( TKGet( TK_Name ), Any( TKGet( TK_rdmNavi ) ) );
+		xPropertySet->setPropertyValue( TKGet( TK_Name ), Any( TKGet( TK_rdmNavi ) ) );
 		mxRoadmapControl = mxDialogControlContainer->getControl( TKGet( TK_rdmNavi ) );
 		InsertRoadmapItem( 0, sal_True, getString( STR_INTRODUCTION ), ITEM_ID_INTRODUCTION );
 		InsertRoadmapItem( 1, sal_True, getString( STR_SLIDES ), ITEM_ID_SLIDES );
@@ -136,9 +134,9 @@ void OptimizerDialog::InitRoadmap()
 		InsertRoadmapItem( 4, sal_True, getString( STR_SUMMARY ), ITEM_ID_SUMMARY );
 
 		rtl::OUString sBitmap(
-            isHighContrast() ?
-            rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMAGE_ROADMAP_HC ) ) :
-            rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMAGE_ROADMAP ) ) );
+			isHighContrast() ?
+			rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMAGE_ROADMAP_HC ) ) :
+			rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMAGE_ROADMAP ) ) );
 
 		xPropertySet->setPropertyValue( TKGet( TK_ImageURL ), Any( sBitmap ) );
 		xPropertySet->setPropertyValue( TKGet( TK_Activated ), Any( (sal_Bool)sal_True ) );
@@ -148,7 +146,7 @@ void OptimizerDialog::InitRoadmap()
 	}
 	catch( Exception& )
 	{
-    }
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -182,7 +180,7 @@ void OptimizerDialog::UpdateConfiguration()
 
 	Sequence< sal_Int16 > aSelectedItems;
 	Sequence< OUString > aStringItemList;
-		
+
 	// page0
 	aAny = getControlProperty( TKGet( TK_ListBox0Pg0 ), TKGet( TK_SelectedItems ) );
 	if ( aAny >>= aSelectedItems )
@@ -225,19 +223,19 @@ void OptimizerDialog::UpdateConfiguration()
 // -----------------------------------------------------------------------------
 
 OptimizerDialog::OptimizerDialog(
-    const Reference< XComponentContext > &rxContext,
-    const Reference< XFrame > &rxFrame,
-    const Reference< XWindowPeer >& rxParent )
-    : UnoDialog( rxContext, rxParent )
+	const Reference< XComponentContext > &rxContext,
+	const Reference< XFrame > &rxFrame,
+	const Reference< XWindowPeer >& rxParent )
+	: UnoDialog( rxContext, rxParent )
 	, ConfigurationAccess( rxContext, NULL )
-    , mxFrame( rxFrame )
-    , mnCurrentStep( 0 )
-    , mnTabIndex( 0 )
+	, mxFrame( rxFrame )
+	, mnCurrentStep( 0 )
+	, mnTabIndex( 0 )
 {
-    OSL_TRACE("OptimizerDialog::OptimizerDialog");
-    OSL_ENSURE( mxFrame.is(), "OptimizerDialog: no XFrame!" );
-    Reference< XController > xController( mxFrame->getController() );
-    mxModel = xController->getModel();
+	OSL_TRACE("OptimizerDialog::OptimizerDialog");
+	OSL_ENSURE( mxFrame.is(), "OptimizerDialog: no XFrame!" );
+	Reference< XController > xController( mxFrame->getController() );
+	mxModel = xController->getModel();
 	Reference< XStorable> xStorable( mxModel, UNO_QUERY_THROW );
 	mbIsReadonly = xStorable->isReadonly();
 
@@ -256,38 +254,38 @@ OptimizerDialog::OptimizerDialog(
 	Sequence< PropertyValue > aStatusSequence( aStats.GetStatusSequence() );
 	UpdateStatus( aStatusSequence );
 
-    centerDialog();
+	centerDialog();
 }
 
 // -----------------------------------------------------------------------------
 
 OptimizerDialog::~OptimizerDialog()
 {
-    OSL_TRACE("OptimizerDialog::~OptimizerDialog");
+	OSL_TRACE("OptimizerDialog::~OptimizerDialog");
 	// not saving configuration if the dialog has been finished via cancel or close window
 	if ( mbStatus )
 		SaveConfiguration();
 
-    Reference< XComponent > xComponent( mxDialog, UNO_QUERY );
-    if ( xComponent.is() )
-    {
-        OSL_TRACE("OptimizerDialog::~OptimizerDialog - disposing dialog!");
-        xComponent->dispose();
-    }
+	Reference< XComponent > xComponent( mxDialog, UNO_QUERY );
+	if ( xComponent.is() )
+	{
+		OSL_TRACE("OptimizerDialog::~OptimizerDialog - disposing dialog!");
+		xComponent->dispose();
+	}
 }
 
 
 void SAL_CALL OptimizerDialog::statusChanged(
-    const ::com::sun::star::frame::FeatureStateEvent& aState )
+	const ::com::sun::star::frame::FeatureStateEvent& aState )
 throw (::com::sun::star::uno::RuntimeException)
 {
-    Sequence< PropertyValue > aArguments;
-    if ( ( aState.State >>= aArguments ) && aArguments.getLength() )
-        UpdateStatus( aArguments );
+	Sequence< PropertyValue > aArguments;
+	if ( ( aState.State >>= aArguments ) && aArguments.getLength() )
+		UpdateStatus( aArguments );
 }
 
 void SAL_CALL OptimizerDialog::disposing(
-    const ::com::sun::star::lang::EventObject& /*aSource*/ )
+	const ::com::sun::star::lang::EventObject& /*aSource*/ )
 throw (::com::sun::star::uno::RuntimeException)
 {}
 
@@ -314,14 +312,14 @@ void OptimizerDialog::SwitchPage( sal_Int16 nNewStep )
 			disableControl( TKGet( TK_btnNavBack ) );
 		else if ( nOldStep == 0 )
 			enableControl( TKGet( TK_btnNavBack ) );
-		
+
 		if ( nNewStep == MAX_STEP )
 			disableControl( TKGet( TK_btnNavNext ) );
 		else if ( nOldStep == MAX_STEP )
 			enableControl( TKGet( TK_btnNavNext ) );
 
 		setControlProperty( TKGet( TK_rdmNavi ), TKGet( TK_CurrentItemID ), Any( nNewStep ) );
-		
+
 		DeactivatePage( nOldStep );
 		UpdateControlStates( nNewStep );
 
@@ -555,7 +553,7 @@ void OptimizerDialog::actionPerformed( const ActionEvent& rEvent )
 			setControlProperty( TKGet( TK_btnNavCancel ), TKGet( TK_Enabled ), Any( sal_False ) );
 			setControlProperty( TKGet( TK_FixedText0Pg4 ), TKGet( TK_Enabled ), Any( sal_True ) );
 
-			// check if we have to open the FileDialog 
+			// check if we have to open the FileDialog
 			sal_Bool	bSuccessfullyExecuted = sal_True;
 			sal_Int16	nInt16 = 0;
 			getControlProperty( TKGet( TK_RadioButton1Pg4 ), TKGet( TK_State ) ) >>= nInt16;
@@ -632,12 +630,12 @@ void OptimizerDialog::actionPerformed( const ActionEvent& rEvent )
 				Sequence< Any > aArgs( 1 );
 				aArgs[ 0 ] <<= mxFrame;
 
-                Reference < XDispatch > xDispatch(
-                    mxContext->getServiceManager()->createInstanceWithArgumentsAndContext(
-                        OUString( RTL_CONSTASCII_USTRINGPARAM(
-                            "com.sun.star.presentation.PresentationOptimizer" ) ),
-                        aArgs, mxContext ),
-                    UNO_QUERY );
+				Reference < XDispatch > xDispatch(
+					mxContext->getServiceManager()->createInstanceWithArgumentsAndContext(
+						OUString( RTL_CONSTASCII_USTRINGPARAM(
+							"com.sun.star.presentation.PresentationOptimizer" ) ),
+						aArgs, mxContext ),
+					UNO_QUERY );
 
 				URL aURL;
 				aURL.Protocol = OUString( RTL_CONSTASCII_USTRINGPARAM( "vnd.com.sun.star.presentation.PresentationOptimizer:" ) );
@@ -684,27 +682,27 @@ void OptimizerDialog::actionPerformed( const ActionEvent& rEvent )
 		}
 		break;
 		default:
-        {
-            Reference< XControl > xControl( rEvent.Source, UNO_QUERY );
-            if ( xControl.is() )
-            {
-                OUString aName;
-                Reference< XPropertySet > xProps( xControl->getModel(), UNO_QUERY );
-                xProps->getPropertyValue( TKGet( TK_Name ) ) >>= aName;
-                if ( TKGet( aName ) == TK_ListBox0Pg0 )
-                {
-                    if ( rEvent.ActionCommand.getLength() )
-                    {
-                        std::vector< OptimizerSettings >::iterator aIter( GetOptimizerSettingsByName( rEvent.ActionCommand ) );
-                        std::vector< OptimizerSettings >& rList( GetOptimizerSettings() );
-                        if ( aIter != rList.end() )
-                            rList[ 0 ] = *aIter;
-                    }
-                    UpdateControlStates();
-                }
-            }
-        }
-            break;
+		{
+			Reference< XControl > xControl( rEvent.Source, UNO_QUERY );
+			if ( xControl.is() )
+			{
+				OUString aName;
+				Reference< XPropertySet > xProps( xControl->getModel(), UNO_QUERY );
+				xProps->getPropertyValue( TKGet( TK_Name ) ) >>= aName;
+				if ( TKGet( aName ) == TK_ListBox0Pg0 )
+				{
+					if ( rEvent.ActionCommand.getLength() )
+					{
+						std::vector< OptimizerSettings >::iterator aIter( GetOptimizerSettingsByName( rEvent.ActionCommand ) );
+						std::vector< OptimizerSettings >& rList( GetOptimizerSettings() );
+						if ( aIter != rList.end() )
+							rList[ 0 ] = *aIter;
+					}
+					UpdateControlStates();
+				}
+			}
+		}
+			break;
 	}
 }
 
@@ -713,38 +711,38 @@ void OptimizerDialog::actionPerformed( const ActionEvent& rEvent )
 void OptimizerDialog::textChanged( const TextEvent& rEvent )
 	throw ( com::sun::star::uno::RuntimeException )
 {
-    Reference< XSpinField > xFormattedField( rEvent.Source, UNO_QUERY );
-    if ( xFormattedField.is() )
-    {
-        double fDouble = 0;
-        Any aAny = getControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ) );
-        if ( aAny >>= fDouble )
-            SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)fDouble ) );
-        return;
-    }
+	Reference< XSpinField > xFormattedField( rEvent.Source, UNO_QUERY );
+	if ( xFormattedField.is() )
+	{
+		double fDouble = 0;
+		Any aAny = getControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ) );
+		if ( aAny >>= fDouble )
+			SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)fDouble ) );
+		return;
+	}
 
-    Reference< XComboBox > xComboBox( rEvent.Source, UNO_QUERY );
-    if ( xComboBox.is() )
-    {
-        rtl::OUString aString;
-        Any aAny = getControlProperty( TKGet( TK_ComboBox0Pg1 ), TKGet( TK_Text ) );
-        if ( aAny >>= aString )
-        {
-            sal_Int32 nI0, nI1, nI2, nI3, nI4;
-            nI0 = nI1 = nI2 = nI3 = nI4 = 0;
+	Reference< XComboBox > xComboBox( rEvent.Source, UNO_QUERY );
+	if ( xComboBox.is() )
+	{
+		rtl::OUString aString;
+		Any aAny = getControlProperty( TKGet( TK_ComboBox0Pg1 ), TKGet( TK_Text ) );
+		if ( aAny >>= aString )
+		{
+			sal_Int32 nI0, nI1, nI2, nI3, nI4;
+			nI0 = nI1 = nI2 = nI3 = nI4 = 0;
 
-            if ( getString( STR_IMAGE_RESOLUTION_0 ).getToken( 1, ';', nI0 ) == aString )
-                aString = getString( STR_IMAGE_RESOLUTION_0 ).getToken( 0, ';', nI4 );
-            else if ( getString( STR_IMAGE_RESOLUTION_1 ).getToken( 1, ';', nI1 ) == aString )
-                aString = getString( STR_IMAGE_RESOLUTION_1 ).getToken( 0, ';', nI4 );
-            else if ( getString( STR_IMAGE_RESOLUTION_2 ).getToken( 1, ';', nI2 ) == aString )
-                aString = getString( STR_IMAGE_RESOLUTION_2 ).getToken( 0, ';', nI4 );
-            else if ( getString( STR_IMAGE_RESOLUTION_3 ).getToken( 1, ';', nI3 ) == aString )
-                aString = getString( STR_IMAGE_RESOLUTION_3 ).getToken( 0, ';', nI4 );
+			if ( getString( STR_IMAGE_RESOLUTION_0 ).getToken( 1, ';', nI0 ) == aString )
+				aString = getString( STR_IMAGE_RESOLUTION_0 ).getToken( 0, ';', nI4 );
+			else if ( getString( STR_IMAGE_RESOLUTION_1 ).getToken( 1, ';', nI1 ) == aString )
+				aString = getString( STR_IMAGE_RESOLUTION_1 ).getToken( 0, ';', nI4 );
+			else if ( getString( STR_IMAGE_RESOLUTION_2 ).getToken( 1, ';', nI2 ) == aString )
+				aString = getString( STR_IMAGE_RESOLUTION_2 ).getToken( 0, ';', nI4 );
+			else if ( getString( STR_IMAGE_RESOLUTION_3 ).getToken( 1, ';', nI3 ) == aString )
+				aString = getString( STR_IMAGE_RESOLUTION_3 ).getToken( 0, ';', nI4 );
 
-            SetConfigProperty( TK_ImageResolution, Any( aString.toInt32() ) );
-        }
-    }
+			SetConfigProperty( TK_ImageResolution, Any( aString.toInt32() ) );
+		}
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -759,7 +757,7 @@ void OptimizerDialog::up( const SpinEvent& /* rEvent */ )
 		fDouble += 9;
 		if ( fDouble > 100 )
 			fDouble = 100;
-		setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( fDouble ) );	
+		setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( fDouble ) );
 		SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)fDouble ) );
 	}
 }
@@ -774,7 +772,7 @@ void OptimizerDialog::down( const SpinEvent& /* rEvent */ )
 		fDouble -= 9;
 		if ( fDouble < 0 )
 			fDouble = 0;
-		setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( fDouble ) );	
+		setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( fDouble ) );
 		SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)fDouble ) );
 	}
 }
@@ -782,13 +780,15 @@ void OptimizerDialog::down( const SpinEvent& /* rEvent */ )
 void OptimizerDialog::first( const SpinEvent& /* rEvent */ )
 	throw ( com::sun::star::uno::RuntimeException )
 {
-	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( static_cast< double >( 0 ) ) );	
+	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( static_cast< double >( 0 ) ) );
 	SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)0 ) );
 }
 
 void OptimizerDialog::last( const SpinEvent& /* rEvent */ )
 	throw ( com::sun::star::uno::RuntimeException )
 {
-	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( static_cast< double >( 100 ) ) );	
+	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( static_cast< double >( 100 ) ) );
 	SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)100 ) );
 }
+
+/* vim: set noet sw=4 ts=4: */
