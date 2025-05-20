@@ -3188,7 +3188,7 @@ void WW8PLCFx_Fc_FKP::GetPCDSprms( WW8PLCFxDesc& rDesc )
         if( !pFkp )
         {
             DBG_WARNING(
-                "+Problem: GetPCDSprms: NewFkp necessay (not possible!)" );
+                "+Problem: GetPCDSprms: NewFkp necessary (not possible!)" );
             if( !NewFkp() )
                 return;
         }

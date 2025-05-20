@@ -249,7 +249,7 @@ void XCDGenerator::Main()
     // Member m_pData is used in some impl-methods directly ...
     m_aData.pFilterCache = new FilterCache( m_aData.nVersionInput, CONFIG_MODE_ALL_LOCALES );
 
-    // Get some statistic informations of current filled filter cache ... (e.g. count of current activae filters)
+    // Get some statistic informations of current filled filter cache ... (e.g. count of current active filters)
     // because we need it to check if all filters are converted and written to disk.
     // May be it's possible to lose some of them during conversion!!!
     m_aData.nOriginalTypes     = m_aData.pFilterCache->getAllTypeNames().getLength()     ;
@@ -299,7 +299,7 @@ void XCDGenerator::impl_printSyntax()
     // So we show an assert.
     ::rtl::OStringBuffer sBuffer( 500 );
     sBuffer.append( "\nusing: xml2xcd -fis=<file standard filter> -fia=<file additional filter> -pas=<package standard filter> -paa=<package additional filter> -vin=<version input> -vou=<version output> [-wri=<true|false>]\n\n" );
-    sBuffer.append( "\tneccessary parameters:\n"                                                                                                                                                                                    );
+    sBuffer.append( "\tnecessary parameters:\n"                                                                                                                                                                                    );
     sBuffer.append( "\t\t-fis\tname of output file in system notation\n"                                                                                                                                                            );
     sBuffer.append( "\t\t-fia\tname of output file in system notation\n"                                                                                                                                                            );
     sBuffer.append( "\t\t-pas\tpackage of standard filters\n"                                                                                                                                                                       );

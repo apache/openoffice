@@ -337,9 +337,9 @@ sal_Bool SpellCheckerDispatcher::isValid_Impl(
 		OUString aChkWord( rWord );
         Locale aLocale( CreateLocale( nLanguage ) );
 
-        // replace typographical apostroph by ascii apostroph
+        // replace typographical apostrophe by ascii apostrophe
         String aSingleQuote( GetLocaleDataWrapper( nLanguage ).getQuotationMarkEnd() );
-        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpectend length of quotation mark" );
+        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpected length of quotation mark" );
         if (aSingleQuote.Len())
             aChkWord = aChkWord.replace( aSingleQuote.GetChar(0), '\'' );
 
@@ -505,9 +505,9 @@ Reference< XSpellAlternatives > SpellCheckerDispatcher::spell_Impl(
 		OUString aChkWord( rWord );
         Locale aLocale( CreateLocale( nLanguage ) );
 
-        // replace typographical apostroph by ascii apostroph
+        // replace typographical apostrophe by ascii apostrophe
         String aSingleQuote( GetLocaleDataWrapper( nLanguage ).getQuotationMarkEnd() );
-        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpectend length of quotation mark" );
+        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpected length of quotation mark" );
         if (aSingleQuote.Len())
             aChkWord = aChkWord.replace( aSingleQuote.GetChar(0), '\'' );
 
@@ -673,7 +673,7 @@ Reference< XSpellAlternatives > SpellCheckerDispatcher::spell_Impl(
 			xRes = NULL;
 
         // list of proposals found (to be checked against entries of
-        // neagtive dictionaries)
+        // negative dictionaries)
         ProposalList aProposalList;
 //        Sequence< OUString > aProposals;
         sal_Int16 eFailureType = -1;	// no failure

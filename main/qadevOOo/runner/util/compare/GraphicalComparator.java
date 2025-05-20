@@ -183,7 +183,7 @@ class GraphicalComparator implements DocComparator
     /**
      *  INPUT_PATH must set, to directory/file, where the documents exist.
      *  REFERENCE_PATH must set to directory/file, where the created references (*.prn files) will create.
-     *  OUTPUT_PATH must set to a directory, there the whole ouptut will create
+     *  OUTPUT_PATH must set to a directory, there the whole output will create
      */
     public boolean compare() throws IOException
         {
@@ -224,8 +224,8 @@ class GraphicalComparator implements DocComparator
     /**
      *  INPUT_PATH must set, to directory/file, where the documents exist.
      *  REFERENCE_PATH must set to directory/file, where the created references (*.prn files) exists.
-     *  OUTPUT_PATH must set to a directory, where the whole ouptut will create. Here the diffReference will create. 
-     *              At the momemt it's not possible to say only where the diffreferences will create.
+     *  OUTPUT_PATH must set to a directory, where the whole output will create. Here the diffReference will create.
+     *              At the moment it's not possible to say only where the differences will create.
      */
     public void createDiffReference() throws IOException
         {
@@ -236,7 +236,7 @@ class GraphicalComparator implements DocComparator
     /**
      *  INPUT_PATH must set, to directory/file, where the documents exist.
      *  REFERENCE_PATH must set to directory/file, where the created references (*.prn files) exists.
-     *  OUTPUT_PATH must set to a directory, where the whole ouptut will create. 
+     *  OUTPUT_PATH must set to a directory, where the whole output will create.
      *  DIFF_PATH must set to a directory, where the older difference references exist, it's possible to set this to the same as REFERENCE_PATH
      *  but this is not the default and will not automatically set.
      */

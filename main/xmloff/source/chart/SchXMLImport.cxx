@@ -729,7 +729,7 @@ void SAL_CALL SchXMLImport::setTargetDocument( const uno::Reference< lang::XComp
     if( xChartDoc.is() )
     try
     {
-        //prevent rebuild of view during load ( necesarry especially if loaded not via load api, which is the case for example if binary files are loaded )
+        //prevent rebuild of view during load ( necessary especially if loaded not via load api, which is the case for example if binary files are loaded )
         xChartDoc->lockControllers();
 
         uno::Reference< container::XChild > xChild( xChartDoc, uno::UNO_QUERY );
