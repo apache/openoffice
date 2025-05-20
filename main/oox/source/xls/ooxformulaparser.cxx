@@ -73,7 +73,7 @@ const FunctionInfo* OOXMLFormulaParserImpl::resolveBadFuncName( const OUString& 
         call is assumed to be
             "'<path-to-office-install>\Library\<libname>'!<funcname>". */
 
-    // the string has to start with an apostroph (followed by the library URL)
+    // the string has to start with an apostrophe (followed by the library URL)
     if( (rTokenData.getLength() >= 6) && (rTokenData[ 0 ] == '\'') )
     {
         // library URL and function name are separated by an exclamation mark

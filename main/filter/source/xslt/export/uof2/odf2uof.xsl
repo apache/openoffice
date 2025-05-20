@@ -11877,7 +11877,7 @@
 								<!--@chart:error-upper- @chart:error-lower- 缺省值为false-->
 								<xsl:when test="@chart:error-upper-indicator='true' and @chart:error-lower-indicator='true'">both</xsl:when>
 								<xsl:when test="@chart:error-upper-indicator='true'">positive</xsl:when>
-								<xsl:when test="@chart:error-lower-indicator='true'">negtive</xsl:when>
+								<xsl:when test="@chart:error-lower-indicator='true'">negative</xsl:when>
 								<xsl:otherwise>none</xsl:otherwise>
 							</xsl:choose>
 						</xsl:variable>

@@ -515,7 +515,7 @@ private:
     ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
             impl_switchToStorage_throw( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& _rxNewRootStorage );
 
-    /** switches to the given document URL, which denotes the logical URL of the document, not necessariy the
+    /** switches to the given document URL, which denotes the logical URL of the document, not necessary the
         URL where the doc was loaded/recovered from
     */
     void    impl_switchToLogicalURL(

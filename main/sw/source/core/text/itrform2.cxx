@@ -1632,7 +1632,7 @@ xub_StrLen SwTxtFormatter::FormatLine( const xub_StrLen nStartPos )
             delete pFlyStart;
     }
     else
-        // Special case: We do not allow an optimitation of the repaint
+        // Special case: We do not allow an optimization of the repaint
         // area, but during formatting the repaint offset is set to indicate
         // a maximum value for the offset. This value has to be reset:
         GetInfo().SetPaintOfst( 0 );
