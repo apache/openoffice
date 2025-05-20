@@ -13393,7 +13393,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 					<xsl:when test="@显示方式_E75C='positive'">
 						<xsl:attribute name="chart:error-upper-indicator" select="'true'"/>
 					</xsl:when>
-					<xsl:when test="@显示方式_E75C='negtive'">
+					<xsl:when test="@显示方式_E75C='negative'">
 						<xsl:attribute name="chart:error-lower-indicator" select="'true'"/>
 					</xsl:when>
 					<xsl:when test="@显示方式_E75C='both'">
