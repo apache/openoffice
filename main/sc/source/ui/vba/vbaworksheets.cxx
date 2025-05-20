@@ -377,7 +377,7 @@ ScVbaWorksheets::Select( const uno::Any& Replace ) throw (uno::RuntimeException)
 	ScMarkData& rMarkData = pViewShell->GetViewData()->GetMarkData();
 	sal_Bool bReplace = sal_True;
 	Replace >>= bReplace;
-	// Replace is defaulted to True, meanining this current collection 
+	// Replace is defaulted to True, meaning this current collection
 	// becomes the Selection, if it were false then the current selection would
 	// be extended
 	bool bSelectSingle = bReplace; 

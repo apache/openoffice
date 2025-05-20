@@ -754,7 +754,7 @@ void SwXMLImport::startDocument( void )
     pDoc->GetOrCreateDrawModel();
     // <--
 
-	// SJ: #i49801# locking the modell to disable repaints
+	// SJ: #i49801# locking the model to disable repaints
 	SwDrawModel* pDrawModel = pDoc->GetDrawModel();
 	if ( pDrawModel )
 		pDrawModel->setLock( sal_True );

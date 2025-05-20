@@ -586,7 +586,7 @@ namespace fileaccess {
         com::sun::star::uno::Sequence< com::sun::star::ucb::CommandInfo >   m_sCommandInfo;
 
     public:
-        // Misceancellous:
+        // Miscellaneous:
         // Methods for "writeComponentInfo" and "createComponentFactory"
 
         static void SAL_CALL getScheme( rtl::OUString& Scheme );

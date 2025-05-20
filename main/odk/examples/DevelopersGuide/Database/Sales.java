@@ -200,7 +200,7 @@ public class Sales
 		rs.absolute(4);
 		float price1 = row.getFloat(2);
 
-		// modifiy the 4 row
+		// modify the 4 row
 		XRowUpdate updateRow = (XRowUpdate)UnoRuntime.queryInterface(XRowUpdate.class,rs);
 		XResultSetUpdate updateRs = ( XResultSetUpdate )UnoRuntime.	queryInterface(XResultSetUpdate.class,rs);
 		updateRow.updateFloat(2, 150);

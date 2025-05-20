@@ -103,7 +103,7 @@ public class ConvWatch
             {
                 // java file has problems to check for directories, if the given directory doesn't exist.
                 String sName = FileHelper.getBasename(_sAbsoluteReferenceFile);
-                // thanks to Mircosoft, every document has a suffix, so if a name doesn't have a suffix, it must be a directory name
+                // thanks to Microsoft, every document has a suffix, so if a name doesn't have a suffix, it must be a directory name
                 int nIdx = sName.indexOf('.');
                 if (nIdx == -1)
                 {

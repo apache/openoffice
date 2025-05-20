@@ -140,7 +140,7 @@ FirstStartWizard::FirstStartWizard( Window* pParent, sal_Bool bLicenseNeedsAccep
     m_pHelp->Hide();
     m_pHelp->Disable();
     
-    // save button lables
+    // save button labels
     m_sNext = m_pNextPage->GetText();
     m_sCancel = m_pCancel->GetText();
 
