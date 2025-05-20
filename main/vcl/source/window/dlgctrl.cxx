@@ -1074,7 +1074,7 @@ static Window* ImplGetLabelFor( Window* pFrameWindow, WindowType nMyType, Window
         nMyType == WINDOW_FIXEDLINE		||
         nMyType == WINDOW_GROUPBOX )
     {
-        // #i100833# MT 2010/02: Group box and fixed lines can also lable a fixed text.
+        // #i100833# MT 2010/02: Group box and fixed lines can also label a fixed text.
         // See tools/options/print for example.
         sal_Bool bThisIsAGroupControl = (nMyType == WINDOW_GROUPBOX) || (nMyType == WINDOW_FIXEDLINE);
         Window* pSWindow = NULL;
@@ -1203,7 +1203,7 @@ static Window* ImplGetLabeledBy( Window* pFrameWindow, WindowType nMyType, Windo
                           nType == WINDOW_FIXEDLINE	||
                           nType == WINDOW_GROUPBOX ) )
                     {
-                        // a fixed text can't be labeld by a fixed text.
+                        // a fixed text can't be labeled by a fixed text.
                         if ( ( nMyType != WINDOW_FIXEDTEXT ) || ( nType != WINDOW_FIXEDTEXT ) )
                             pWindow = pSWindow;
                         break;
@@ -1243,7 +1243,7 @@ Window* Window::GetAccessibleRelationLabeledBy() const
 //    if( ! ( GetType() == WINDOW_FIXEDTEXT		||
 //            GetType() == WINDOW_FIXEDLINE		||
 //            GetType() == WINDOW_GROUPBOX ) )
-    // #i100833# MT 2010/02: Group box and fixed lines can also lable a fixed text.
+    // #i100833# MT 2010/02: Group box and fixed lines can also label a fixed text.
     // See tools/options/print for example.
     
     pWindow = ImplGetLabeledBy( pFrameWindow, GetType(), const_cast<Window*>(this) );

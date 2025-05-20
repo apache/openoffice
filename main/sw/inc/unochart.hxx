@@ -202,7 +202,7 @@ public:
     void        AddDataSequence( const SwTable &rTable, ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSequence > &rxDataSequence );
     void        RemoveDataSequence( const SwTable &rTable, ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSequence > &rxDataSequence );
 
-    // will send modifdied events for all data-sequences of the table
+    // will send modified events for all data-sequences of the table
     void        InvalidateTable( const SwTable *pTable );
     sal_Bool    DeleteBox( const SwTable *pTable, const SwTableBox &rBox );
     void        DisposeAllDataSequences( const SwTable *pTable );

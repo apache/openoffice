@@ -153,7 +153,7 @@ public:
     void AddShellId (sd::ToolBarManager::ToolBarGroup eGroup, sd::ShellId nId);
 
     /** Releasing all shells means that the given ToolBarRules object is
-        informed that every shell mananged by the called ToolBarShellList is
+        informed that every shell managed by the called ToolBarShellList is
         about to be removed and that the associated framework tool bars can
         be removed as well.  The caller still has to call UpdateShells().
     */

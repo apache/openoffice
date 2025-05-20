@@ -2987,7 +2987,7 @@
 +		return(-1);    
 +	}
 +
-+	/* Now we get all of the key materail */
++	/* Now we get all of the key material */
 +	/* from now on we will wrap or unwrap the key */
 +	if( ( blockSize = PK11_GetBlockSize( ctx->cipher , NULL ) ) < 0 ) {
 +		xmlSecError( XMLSEC_ERRORS_HERE ,
@@ -4844,7 +4844,7 @@
 +		keySlot = ( xmlSecNssKeySlotPtr )xmlSecPtrListGetItem( _xmlSecNssKeySlotList, ksPos ) ;
 +		/* If find the slot in the list */
 +		if( keySlot != NULL && xmlSecNssKeySlotGetSlot( keySlot ) == slot ) {
-+			/* If mechnism type is valid, bind the slot with the mechanism */
++			/* If mechanism type is valid, bind the slot with the mechanism */
 +			if( type != CKM_INVALID_MECHANISM ) {
 +				if( xmlSecNssKeySlotEnableMech( keySlot, type ) < 0 ) {
 +					xmlSecError( XMLSEC_ERRORS_HERE ,
@@ -4884,7 +4884,7 @@
 +			return(-1);
 +		}
 +
-+		/* If mechnism type is valid, bind the slot with the mechanism */
++		/* If mechanism type is valid, bind the slot with the mechanism */
 +		if( type != CKM_INVALID_MECHANISM ) {
 +			if( xmlSecNssKeySlotEnableMech( keySlot, type ) < 0 ) {
 +				xmlSecError( XMLSEC_ERRORS_HERE ,

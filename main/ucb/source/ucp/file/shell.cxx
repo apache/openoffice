@@ -3044,7 +3044,7 @@ uno::Sequence< ucb::ContentInfo > shell::queryCreatableContentsInfo()
 
 /*******************************************************************************/
 /*                                                                             */
-/*                 some misceancellous static functions                        */
+/*                 some miscellaneous static functions                        */
 /*                                                                             */
 /*******************************************************************************/
 

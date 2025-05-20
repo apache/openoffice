@@ -75,7 +75,7 @@ published interface XDispatchRecorderSupplier: com::sun::star::uno::XInterface
     /** provides access on the recorder of this supplier
 
         <p>
-        Returned recorder can be used to record dispatches manualy or to get
+        Returned recorder can be used to record dispatches manually or to get
         recorded data for further using e.g. saving. He is internally used too
         due to the method <member>XDispatchRecorderSupplier::dispatchAndRecord()</member>.
         </p>
