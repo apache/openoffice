@@ -10945,6 +10945,7 @@ cui	source\options\optsave.src	0	fixedtext	RID_SFXPAGE_SAVE	FT_ODF_VERSION			121
 cui	source\options\optsave.src	0	stringlist	RID_SFXPAGE_SAVE.LB_ODF_VERSION	1			0	it	1.0/1.1				20130618 17:22:18
 cui	source\options\optsave.src	0	stringlist	RID_SFXPAGE_SAVE.LB_ODF_VERSION	2			0	it	1.2				20130618 17:22:18
 cui	source\options\optsave.src	0	stringlist	RID_SFXPAGE_SAVE.LB_ODF_VERSION	3			0	it	1.2 esteso (consigliato)				20130618 17:22:18
+cui	source\options\optsave.src	0	checkbox	RID_SFXPAGE_SAVE	BTN_ODFENCRYPTION			248	it	Abilita la crittografia AES-256 (solo in ODF 1.2)				20200411 15:09:53
 cui	source\options\optsave.src	0	checkbox	RID_SFXPAGE_SAVE	BTN_NOPRETTYPRINTING			248	it	Ottimizzazione dimensioni per il formato ODF				20130618 17:22:18
 cui	source\options\optsave.src	0	checkbox	RID_SFXPAGE_SAVE	BTN_WARNALIENFORMAT			248	it	Avvisa se il salvataggio non è nel formato ODF o nel formato predefinito				20130618 17:22:18
 cui	source\options\optsave.src	0	fixedtext	RID_SFXPAGE_SAVE	FT_APP			120	it	Tipo documento				20130618 17:22:18
@@ -49720,10 +49721,10 @@ helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3149649	29			0	it	I
 helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3153178	30			0	it	Il contenuto di testo del documento si trova in \<emph\>content.xml\</emph\>.				20130618 17:22:18
 helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3154068	31			0	it	Per impostazione predefinita, \<emph\>content.xml\</emph\> il documento viene memorizzato senza elementi di formattazione, quali rientri o interruzioni di riga, per ridurne al minimo il tempo di salvataggio e apertura. Nella scheda \<emph\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferenze\</caseinline\>\<defaultinline\>Strumenti - Opzioni\</defaultinline\>\</switchinline\> - Carica/salva - Generale\</emph\> potete attivare l'uso di rientri e interruzioni di riga deselezionando la casella di controllo \<emph\>Ottimizza dimensioni del formato ODF\</emph\>.				20130618 17:22:18
 helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3145152	32			0	it	Il file \<emph\>meta.xml\</emph\> contiene le informazioni meta del documento, che potete specificare in \<emph\>File - Proprietà\</emph\>.				20130618 17:22:18
-helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3150740	33			0	it	Se salvate un documento con una password, il file \<emph\>meta.xml\</emph\> non verrà cifrato.				20130618 17:22:18
+helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3150740	33			0	it	Se salvate un documento con una password, il file \<emph\>manifest.xml\</emph\> non verrà cifrato.				20130618 17:22:18
 helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3150391	34			0	it	Il file \<emph\>settings.xml\</emph\> contiene ulteriori informazioni sulle impostazioni per questo documento.				20130618 17:22:18
 helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3150447	35			0	it	In \<emph\>styles.xml\</emph\> trovate gli stili di formattazione applicati al documento, visualizzabili nella finestra Stili e formattazione.				20130618 17:22:18
-helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3153353	36			0	it	Il file \<emph\>meta-inf/manifest.xml\</emph\> descrive la struttura del file XML.				20130618 17:22:18
+helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3153353	36			0	it	Il file \<emph\>META-INF/manifest.xml\</emph\> descrive la struttura del file XML.				20130618 17:22:18
 helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_id3153368	37			0	it	Nel formato di file compresso possono essere contenuti altri file e cartelle.				20130618 17:22:18
 helpcontent2	source\text\shared\00\00000021.xhp	0	help	hd_id3154299	38			0	it	Definizione dei formati XML				20130618 17:22:18
 helpcontent2	source\text\shared\00\00000021.xhp	0	help	par_idN10AAD				0	it	Lo schema dei formati OpenDocument è disponibile sul sito Web \<link href=\"http://www.oasis-open.org\"\>www.oasis-open.org\</link\>.				20130618 17:22:18
