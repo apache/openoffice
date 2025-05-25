@@ -3417,7 +3417,7 @@ if test "$enable_epm" = "yes"; then
    dnl ===================================================================
    dnl Check for epm - not needed for Windows or building archive format
    dnl ===================================================================
-   if test "$_os" != "WINNT" -a "$with_package_format" != "archive"; then
+   if test "$_os" != "WINNT" -a "$with_package_format" != "archive" -a "$with_package_format" != "installed"; then
       if test -n "$with_epm"; then
 	      EPM=$with_epm
       else
