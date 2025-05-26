@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _SFX_HRC
 #include <sfx2/sfx.hrc>
 #endif
@@ -55,14 +53,6 @@ TabPage TP_CONTENT_OPT
 		Size = MAP_APPFONT ( 118, 10 ) ;
 		Text [ en-US ] = "Guides ~while moving" ;
 	};
-// TODO: Remove code for unused handles
-//	CheckBox CB_HANDLE
-//	{
-//		HelpID = "sw:CheckBox:TP_CONTENT_OPT:CB_HANDLE" ;
-//		Pos = MAP_APPFONT ( 12, 27 ) ;
-//		Size = MAP_APPFONT ( 118, 10 ) ;
-//		Text [ en-US ] = "Sim~ple handles" ;
-//	};
 	CheckBox CB_BIGHANDLE
 	{
 		HelpID = "sw:CheckBox:TP_CONTENT_OPT:CB_BIGHANDLE" ;
