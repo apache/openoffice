@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include <tools/rc.h>
 //#define RESOURCE_PUBLISH_PROTECTED 1
@@ -29,7 +27,6 @@
 #endif /* RESOURCE_PUBLISH_PROTECTED */
 #include <tools/rc.hxx>
 #undef protected
-
 
 #include "wrapper.hxx"
 
@@ -64,39 +61,39 @@ namespace layout
 // Context bits ...
 class ContextImpl
 {
-    uno::Reference< awt::XLayoutRoot > mxRoot;
-    uno::Reference< container::XNameAccess > mxNameAccess;
-    PeerHandle mxTopLevel;
+	uno::Reference< awt::XLayoutRoot > mxRoot;
+	uno::Reference< container::XNameAccess > mxNameAccess;
+	PeerHandle mxTopLevel;
 
 public:
-    ContextImpl( char const *pPath )
-    {
-        uno::Sequence< uno::Any > aParams( 1 );
-        aParams[0] <<= OUString( pPath, strlen( pPath ), RTL_TEXTENCODING_UTF8 );
+	ContextImpl( char const *pPath )
+	{
+		uno::Sequence< uno::Any > aParams( 1 );
+		aParams[0] <<= OUString( pPath, strlen( pPath ), RTL_TEXTENCODING_UTF8 );
 
-        uno::Reference< lang::XSingleServiceFactory > xFactory(
+		uno::Reference< lang::XSingleServiceFactory > xFactory(
             comphelper::createProcessComponent(
                 OUString::createFromAscii( "com.sun.star.awt.Layout" ) ),
             uno::UNO_QUERY );
-        if ( !xFactory.is() )
-        {
+		if ( !xFactory.is() )
+		{
             throw uno::RuntimeException(
                 OUString( RTL_CONSTASCII_USTRINGPARAM( "Layout engine not installed" ) ),
                 uno::Reference< uno::XInterface >() );
-        }
-        mxRoot = uno::Reference< awt::XLayoutRoot >(
-            xFactory->createInstanceWithArguments( aParams ),
-            uno::UNO_QUERY );
+		}
+		mxRoot = uno::Reference< awt::XLayoutRoot >(
+			xFactory->createInstanceWithArguments( aParams ),
+			uno::UNO_QUERY );
 
-        mxNameAccess = uno::Reference< container::XNameAccess >( mxRoot, uno::UNO_QUERY );
-    }
+		mxNameAccess = uno::Reference< container::XNameAccess >( mxRoot, uno::UNO_QUERY );
+	}
 
-    ~ContextImpl()
-    {
-    }
+	~ContextImpl()
+	{
+	}
 
-    PeerHandle getByName( const OUString &rName )
-    {
+	PeerHandle getByName( const OUString &rName )
+	{
         uno::Any val = mxNameAccess->getByName( rName );
         PeerHandle xRet;
         val >>= xRet;
@@ -117,13 +114,13 @@ public:
 };
 
 Context::Context( const char *pPath )
-    : pImpl( new ContextImpl( pPath ) )
+	: pImpl( new ContextImpl( pPath ) )
 {
 }
 Context::~Context()
 {
-    delete pImpl;
-    pImpl = NULL;
+	delete pImpl;
+	pImpl = NULL;
 }
 
 void Context::setToplevel( PeerHandle xToplevel )
@@ -398,7 +395,7 @@ void Window::SetPosPixel (Point const&)
 
 Point Window::GetPosPixel () const
 {
-    return Point ();
+	return Point ();
 }
 
 void Window::SetSizePixel (Size const&)
@@ -411,69 +408,69 @@ void Window::SetPosSizePixel (Point const&, Size const&)
 
 Size Window::GetSizePixel () const
 {
-    return Size ();
+	return Size ();
 }
 
 // void Window::Enable (bool enable, bool child);
 // {
-//     GetWindow ()->Enable (enable, child);
+//	GetWindow ()->Enable (enable, child);
 // }
 
 // void Window::Disable (bool child)
 // {
-//     GetWindow ()->Disable (child);
+//	GetWindow ()->Disable (child);
 // }
 
 bool Window::IsEnabled () const
 {
-    return GetWindow ()->IsEnabled ();
-//     if (getImpl().mxWindow.is ())
-//         return getImpl ().mxWindow->isEnabled ();
-//     return false;
+	return GetWindow ()->IsEnabled ();
+//	if (getImpl().mxWindow.is ())
+//		return getImpl ().mxWindow->isEnabled ();
+//	return false;
 }
 
 void Window::EnableInput (bool enable, bool child)
 {
-    GetWindow ()->EnableInput (enable, child);
+	GetWindow ()->EnableInput (enable, child);
 }
 
 bool Window::IsInputEnabled () const
 {
-    return GetWindow ()->IsInputEnabled ();
+	return GetWindow ()->IsInputEnabled ();
 }
 
 bool Window::HasFocus () const
 {
-    return GetWindow ()->HasFocus ();
+	return GetWindow ()->HasFocus ();
 }
 
 Font& Window::GetFont () const
 {
-    return const_cast <Font&> (GetWindow ()->GetFont ());
+	return const_cast <Font&> (GetWindow ()->GetFont ());
 }
 
 void Window::SetFont (Font const& font)
 {
-    GetWindow ()->SetFont (font);
+	GetWindow ()->SetFont (font);
 }
 
 void Window::Invalidate (sal_uInt8 flags)
 {
-    GetWindow ()->Invalidate (flags);
+	GetWindow ()->Invalidate (flags);
 }
 
 struct ToolkitVclPropsMap
 {
-    WinBits vclStyle;
-    long initAttr;
-    const char *propName;
+	WinBits vclStyle;
+	long initAttr;
+	const char *propName;
 
-    // the value to give the prop to enable/disable it -- not the most brilliant
-    // type declaration and storage, but does the work... properties are
-    // either a boolean or a short since they are either a directly wrappers for
-    // a WinBit, or aggregates related (like Align for WB_LEFT, _RIGHT and _CENTER).
-    bool isBoolean;
-    short enableProp, disableProp;
+	// the value to give the prop to enable/disable it -- not the most brilliant
+	// type declaration and storage, but does the work... properties are
+	// either a boolean or a short since they are either a directly wrappers for
+	// a WinBit, or aggregates related (like Align for WB_LEFT, _RIGHT and _CENTER).
+	bool isBoolean;
+	short enableProp, disableProp;
 };
 
 #define TYPE_BOOL  true
@@ -481,11 +478,11 @@ struct ToolkitVclPropsMap
 #define NOTYPE     0
 static const ToolkitVclPropsMap toolkitVclPropsMap[] =
 {
-    { WB_BORDER,    awt::WindowAttribute::BORDER,    "Border", TYPE_SHORT, 1, 0 },
-    { WB_NOBORDER,    awt::VclWindowPeerAttribute::NOBORDER,    "Border", TYPE_SHORT, 0, 1 },
-    { WB_SIZEABLE,    awt::WindowAttribute::SIZEABLE,    NULL, NOTYPE, 0, 0 },
-    { WB_MOVEABLE,    awt::WindowAttribute::MOVEABLE,    NULL, NOTYPE, 0, 0 },
-    { WB_CLOSEABLE,    awt::WindowAttribute::CLOSEABLE,    NULL, NOTYPE, 0, 0 },
+	{ WB_BORDER,    awt::WindowAttribute::BORDER,    "Border", TYPE_SHORT, 1, 0 },
+	{ WB_NOBORDER,    awt::VclWindowPeerAttribute::NOBORDER,    "Border", TYPE_SHORT, 0, 1 },
+	{ WB_SIZEABLE,    awt::WindowAttribute::SIZEABLE,    NULL, NOTYPE, 0, 0 },
+	{ WB_MOVEABLE,    awt::WindowAttribute::MOVEABLE,    NULL, NOTYPE, 0, 0 },
+	{ WB_CLOSEABLE,    awt::WindowAttribute::CLOSEABLE,    NULL, NOTYPE, 0, 0 },
 
     { WB_HSCROLL,    awt::VclWindowPeerAttribute::HSCROLL,    NULL, NOTYPE, 0, 0 },
     { WB_VSCROLL,    awt::VclWindowPeerAttribute::VSCROLL,    NULL, NOTYPE, 0, 0 },
@@ -525,7 +522,7 @@ static const ToolkitVclPropsMap toolkitVclPropsMap[] =
 #undef NOTYPE
 
 static const int toolkitVclPropsMapLen =
-    sizeof( toolkitVclPropsMap ) / sizeof( ToolkitVclPropsMap );
+	sizeof( toolkitVclPropsMap ) / sizeof( ToolkitVclPropsMap );
 
 void Window::SetStyle( WinBits nStyle )
 {
@@ -720,9 +717,9 @@ void ControlImpl::UpdateListening (Link const& link)
 }
 
 void SAL_CALL ControlImpl::disposing (lang::EventObject const&)
-    throw (uno::RuntimeException)
+	throw (uno::RuntimeException)
 {
-///    mxWindow.clear ();
+//	mxWindow.clear ();
 }
 
 void SAL_CALL ControlImpl::focusGained (awt::FocusEvent const&)
@@ -1111,8 +1108,8 @@ void TabControl::InsertPage (sal_uInt16 id, OUString const& title, sal_uInt16 po
 #endif
 
 #if 0
-    /// This so seems the right solution, but it makes the buttons of the
-    /// tabdialog move up
+    // This so seems the right solution, but it makes the buttons of the
+    // tabdialog move up
 
     ::TabPage *page = GetTabPage (id);
     if (Window *w = dynamic_cast <Window*> (page))
@@ -1160,8 +1157,8 @@ void TabControl::SetTabPage (sal_uInt16 id, ::TabPage* page)
     GetTabControl ()->SetTabPage (id, page);
 
 #if 0
-    /// This so seems the right solution, but it makes the buttons of the
-    /// tabdialog move up
+    // This so seems the right solution, but it makes the buttons of the
+    // tabdialog move up
     if (Window *w = dynamic_cast <Window*> (page))
     {
         w->SetParent (this);
@@ -1603,8 +1600,10 @@ void InPlug::ParentSet (Window *window)
 {
     window->SetParent (dynamic_cast< ::Window* > (this));
 
-    /// FIXME: for standalone run of layout::SfxTabDialog
+    // FIXME: for standalone run of layout::SfxTabDialog
     SetParent (window->GetParent ());
 }
 
 } // namespace layout
+
+/* vim: set noet sw=4 ts=4: */

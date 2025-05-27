@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_unotools.hxx"
@@ -55,7 +53,7 @@ using namespace ::com::sun::star::uno	;
 #define	DEFAULT_SHOWINTRO				sal_True
 #define	DEFAULT_CONNECTIONURL			OUString()
 
-#define	ROOTNODE_START			   		OUString(RTL_CONSTASCII_USTRINGPARAM("Setup/Office"	))
+#define	ROOTNODE_START					OUString(RTL_CONSTASCII_USTRINGPARAM("Setup/Office"	))
 #define	PROPERTYNAME_SHOWINTRO			OUString(RTL_CONSTASCII_USTRINGPARAM("ooSetupShowIntro"	))
 #define	PROPERTYNAME_CONNECTIONURL		OUString(RTL_CONSTASCII_USTRINGPARAM("ooSetupConnectionURL"	))
 
@@ -90,7 +88,7 @@ class SvtStartOptions_Impl : public ConfigItem
 		/*-****************************************************************************************************//**
 			@short		called for notify of configmanager
 			@descr		These method is called from the ConfigManager before application ends or from the
-			 			PropertyChangeListener if the sub tree broadcasts changes. You must update your
+						PropertyChangeListener if the sub tree broadcasts changes. You must update your
 						internal values.
 
 			@ATTENTION	We don't implement these method - because we support readonly values at runtime only!
@@ -103,7 +101,7 @@ class SvtStartOptions_Impl : public ConfigItem
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void Notify( const Sequence< OUString >& seqPropertyNames );
+		virtual void Notify( const Sequence< OUString >& seqPropertyNames );
 
 		/*-****************************************************************************************************//**
 			@short		write changes to configuration
@@ -120,7 +118,7 @@ class SvtStartOptions_Impl : public ConfigItem
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void Commit();
+		virtual void Commit();
 
 		//---------------------------------------------------------------------------------------------------------
 		//	public interface
@@ -172,8 +170,8 @@ class SvtStartOptions_Impl : public ConfigItem
 
 	private:
 
-		sal_Bool	m_bShowIntro		;	/// cache "ShowIntro" of Start section
-		OUString	m_sConnectionURL	;	/// cache "Connection" of Start section
+		sal_Bool	m_bShowIntro		;	// cache "ShowIntro" of Start section
+		OUString	m_sConnectionURL	;	// cache "Connection" of Start section
 };
 
 //_________________________________________________________________________________________________________________
@@ -185,7 +183,7 @@ class SvtStartOptions_Impl : public ConfigItem
 //*****************************************************************************************************************
 SvtStartOptions_Impl::SvtStartOptions_Impl()
 	// Init baseclasses first
-    :	ConfigItem			( ROOTNODE_START	)
+	:	ConfigItem			( ROOTNODE_START	)
 	// Init member then.
 	,	m_bShowIntro		( DEFAULT_SHOWINTRO	)
 {
@@ -206,20 +204,20 @@ SvtStartOptions_Impl::SvtStartOptions_Impl()
 		// Safe impossible cases.
 		// Check any for valid value.
 		DBG_ASSERT( !(seqValues[nProperty].hasValue()==sal_False), "SvtStartOptions_Impl::SvtStartOptions_Impl()\nInvalid property value for property detected!\n" );
-        switch( nProperty )
-        {
-            case PROPERTYHANDLE_SHOWINTRO		:	{
-										 	   			DBG_ASSERT(!(seqValues[nProperty].getValueTypeClass()!=TypeClass_BOOLEAN), "SvtStartOptions_Impl::SvtStartOptions_Impl()\nWho has changed the value type of \"Office.Common\\Start\\ShowIntro\"?" );
+		switch( nProperty )
+		{
+			case PROPERTYHANDLE_SHOWINTRO		:	{
+														DBG_ASSERT(!(seqValues[nProperty].getValueTypeClass()!=TypeClass_BOOLEAN), "SvtStartOptions_Impl::SvtStartOptions_Impl()\nWho has changed the value type of \"Office.Common\\Start\\ShowIntro\"?" );
 														seqValues[nProperty] >>= m_bShowIntro;
 													}
 													break;
 
-            case PROPERTYHANDLE_CONNECTIONURL	:	{
-										 				DBG_ASSERT(!(seqValues[nProperty].getValueTypeClass()!=TypeClass_STRING), "SvtStartOptions_Impl::SvtStartOptions_Impl()\nWho has changed the value type of \"Office.Common\\Start\\Connection\"?" );
+			case PROPERTYHANDLE_CONNECTIONURL	:	{
+														DBG_ASSERT(!(seqValues[nProperty].getValueTypeClass()!=TypeClass_STRING), "SvtStartOptions_Impl::SvtStartOptions_Impl()\nWho has changed the value type of \"Office.Common\\Start\\Connection\"?" );
 														seqValues[nProperty] >>= m_sConnectionURL;
 													}
 													break;
-        }
+		}
 	}
 
 	// Don't enable notification mechanism of our baseclass!
@@ -263,7 +261,7 @@ void SvtStartOptions_Impl::Notify( const Sequence< OUString >& seqPropertyNames 
 			DBG_ASSERT(!(seqValues[nProperty].getValueTypeClass()!=TypeClass_STRING), "SvtStartOptions_Impl::Notify()\nWho has changed the value type of \"Office.Common\\Start\\Connection\"?" );
 			seqValues[nProperty] >>= m_sConnectionURL;
 		}
-        #if OSL_DEBUG_LEVEL > 1
+		#if OSL_DEBUG_LEVEL > 1
 		else DBG_ASSERT( sal_False, "SvtStartOptions_Impl::Notify()\nUnkown property detected ... I can't handle these!\n" );
 		#endif
 	}
@@ -280,17 +278,17 @@ void SvtStartOptions_Impl::Commit()
 	Sequence< Any >			seqValues	( nCount );
 	for( sal_Int32 nProperty=0; nProperty<nCount; ++nProperty )
 	{
-        switch( nProperty )
-        {
-            case PROPERTYHANDLE_SHOWINTRO		:	{
-                						 				seqValues[nProperty] <<= m_bShowIntro;
-										 			}
-                						 			break;
-            case PROPERTYHANDLE_CONNECTIONURL	:	{
-	                						 			seqValues[nProperty] <<= m_sConnectionURL;
-											 		}
-        	        						 		break;
-        }
+		switch( nProperty )
+		{
+			case PROPERTYHANDLE_SHOWINTRO		:	{
+														seqValues[nProperty] <<= m_bShowIntro;
+													}
+													break;
+			case PROPERTYHANDLE_CONNECTIONURL	:	{
+														seqValues[nProperty] <<= m_sConnectionURL;
+													}
+													break;
+		}
 	}
 	// Set properties in configuration.
 	PutProperties( seqNames, seqValues );
@@ -360,17 +358,17 @@ sal_Int32				SvtStartOptions::m_nRefCount		= 0		;
 //*****************************************************************************************************************
 SvtStartOptions::SvtStartOptions()
 {
-    // Global access, must be guarded (multithreading!).
-    MutexGuard aGuard( GetOwnStaticMutex() );
+	// Global access, must be guarded (multithreading!).
+	MutexGuard aGuard( GetOwnStaticMutex() );
 	// Increase our refcount ...
 	++m_nRefCount;
 	// ... and initialize our data container only if it not already!
-    if( m_pDataContainer == NULL )
+	if( m_pDataContainer == NULL )
 	{
-        RTL_LOGFILE_CONTEXT(aLog, "unotools ( ??? ) ::SvtStartOptions_Impl::ctor()");
-        m_pDataContainer = new SvtStartOptions_Impl();
+		RTL_LOGFILE_CONTEXT(aLog, "unotools ( ??? ) ::SvtStartOptions_Impl::ctor()");
+		m_pDataContainer = new SvtStartOptions_Impl();
 
-        ItemHolder1::holdConfigItem(E_STARTOPTIONS);
+		ItemHolder1::holdConfigItem(E_STARTOPTIONS);
 	}
 }
 
@@ -379,13 +377,13 @@ SvtStartOptions::SvtStartOptions()
 //*****************************************************************************************************************
 SvtStartOptions::~SvtStartOptions()
 {
-    // Global access, must be guarded (multithreading!)
-    MutexGuard aGuard( GetOwnStaticMutex() );
+	// Global access, must be guarded (multithreading!)
+	MutexGuard aGuard( GetOwnStaticMutex() );
 	// Decrease our refcount.
 	--m_nRefCount;
 	// If last instance was deleted ...
 	// we must destroy our static data container!
-    if( m_nRefCount <= 0 )
+	if( m_nRefCount <= 0 )
 	{
 		delete m_pDataContainer;
 		m_pDataContainer = NULL;
@@ -397,7 +395,7 @@ SvtStartOptions::~SvtStartOptions()
 //*****************************************************************************************************************
 sal_Bool SvtStartOptions::IsIntroEnabled() const
 {
-    MutexGuard aGuard( GetOwnStaticMutex() );
+	MutexGuard aGuard( GetOwnStaticMutex() );
 	return m_pDataContainer->IsIntroEnabled();
 }
 
@@ -406,7 +404,7 @@ sal_Bool SvtStartOptions::IsIntroEnabled() const
 //*****************************************************************************************************************
 void SvtStartOptions::EnableIntro( sal_Bool bState )
 {
-    MutexGuard aGuard( GetOwnStaticMutex() );
+	MutexGuard aGuard( GetOwnStaticMutex() );
 	m_pDataContainer->EnableIntro( bState );
 }
 
@@ -415,7 +413,7 @@ void SvtStartOptions::EnableIntro( sal_Bool bState )
 //*****************************************************************************************************************
 OUString SvtStartOptions::GetConnectionURL() const
 {
-    MutexGuard aGuard( GetOwnStaticMutex() );
+	MutexGuard aGuard( GetOwnStaticMutex() );
 	return m_pDataContainer->GetConnectionURL();
 }
 
@@ -424,7 +422,7 @@ OUString SvtStartOptions::GetConnectionURL() const
 //*****************************************************************************************************************
 void SvtStartOptions::SetConnectionURL( const OUString& sURL )
 {
-    MutexGuard aGuard( GetOwnStaticMutex() );
+	MutexGuard aGuard( GetOwnStaticMutex() );
 	m_pDataContainer->SetConnectionURL( sURL );
 }
 
@@ -434,21 +432,23 @@ void SvtStartOptions::SetConnectionURL( const OUString& sURL )
 Mutex& SvtStartOptions::GetOwnStaticMutex()
 {
 	// Initialize static mutex only for one time!
-    static Mutex* pMutex = NULL;
+	static Mutex* pMutex = NULL;
 	// If these method first called (Mutex not already exist!) ...
-    if( pMutex == NULL )
-    {
+	if( pMutex == NULL )
+	{
 		// ... we must create a new one. Protect follow code with the global mutex -
 		// It must be - we create a static variable!
-        MutexGuard aGuard( Mutex::getGlobalMutex() );
+		MutexGuard aGuard( Mutex::getGlobalMutex() );
 		// We must check our pointer again - because it can be that another instance of our class will be faster than these!
-        if( pMutex == NULL )
-        {
+		if( pMutex == NULL )
+		{
 			// Create the new mutex and set it for return on static variable.
-            static Mutex aMutex;
-            pMutex = &aMutex;
-        }
-    }
+			static Mutex aMutex;
+			pMutex = &aMutex;
+		}
+	}
 	// Return new created or already existing mutex object.
-    return *pMutex;
+	return *pMutex;
 }
+
+/* vim: set noet sw=4 ts=4: */
