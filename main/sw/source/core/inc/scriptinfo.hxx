@@ -286,8 +286,8 @@ public:
 /** retrieves kashida opportunities for a given text range.
    returns the number of kashida positions in the given text range
 
-   pKashidaPositions: buffer to reveive the char indices of the
-                      kashida opportunties relative to the paragraph
+   pKashidaPositions: buffer to receive the char indices of the
+                      kashida opportunities relative to the paragraph
 */
    sal_uInt16 GetKashidaPositions ( xub_StrLen nStt, xub_StrLen nLen,
                              xub_StrLen* pKashidaPosition );

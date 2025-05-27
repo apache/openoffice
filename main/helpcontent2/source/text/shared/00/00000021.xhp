@@ -45,7 +45,7 @@
 <paragraph xml-lang="en-US" id="hd_id3154408" role="heading" level="1" l10n="U"><variable id="xmlformat"><link href="text/shared/00/00000021.xhp" name="XML File Formats">XML File Formats</link>
 </variable></paragraph>
 <paragraph xml-lang="en-US" id="par_id3148919" role="paragraph" l10n="CHG"><ahelp hid="HID_DID_SAVE_PACKED_XML">By default, $[officename] loads and saves files in the OpenDocument file format.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="par_idN10725" role="note" l10n="NEW">The OpenDocument file format (ODF) is a standardized file format used by many software applications. You can find more information at the Wikipedia site: <link href="http://en.wikipedia.org/wiki/OpenDocument">wikipedia.org/wiki/OpenDocument</link>.</paragraph>
+<paragraph xml-lang="en-US" id="par_idN10725" role="note" l10n="NEW">The OpenDocument file format (ODF) is a standardized file format used by many software applications. You can find more information at the Wikipedia site: <link href="https://en.wikipedia.org/wiki/OpenDocument">wikipedia.org/wiki/OpenDocument</link>.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3156324" role="heading" level="2" l10n="CHG">OpenDocument file format names</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154926" role="paragraph" l10n="CHG">%PRODUCTNAME %PRODUCTVERSION uses the following file formats:</paragraph>
 <table id="tbl_id3109850">
@@ -183,7 +183,7 @@
 <paragraph xml-lang="en-US" id="par_id0519200811530375" role="tablehead" l10n="NEW">Date of standard approval by OASIS<comment>intl. community wants intl iso standard date formats</comment></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablehead" id="par_id0519200811530491" xml-lang="en-US" l10n="NEW">First supporting version of the software</paragraph>
+<paragraph xml-lang="en-US" id="par_id0519200811530491" role="tablehead" l10n="NEW">First supporting version of the software</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -216,7 +216,7 @@
 <paragraph xml-lang="en-US" id="par_id0519200811530440" role="tablecontent" l10n="NEW">2011-09-29</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id0519200811530471" xml-lang="en-US" l10n="NEW">OpenOffice.org 3, StarOffice 9</paragraph>
+<paragraph xml-lang="en-US" id="par_id0519200811530471" role="tablecontent" l10n="NEW">OpenOffice.org 3, StarOffice 9</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -243,7 +243,6 @@
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3145152" xml-lang="en-US" l10n="U">The file <emph>meta.xml</emph> contains the meta information of the document, which you can enter under <emph>File - Properties</emph>.</paragraph>
-<paragraph role="listitem" id="par_id3150740" xml-lang="en-US" l10n="CHG">If you save a document with a password, <emph>meta.xml</emph> will not be encrypted.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3150391" xml-lang="en-US" l10n="U">The file <emph>settings.xml</emph> contains further information about the settings for this document.</paragraph>
@@ -252,7 +251,8 @@
 <paragraph role="listitem" id="par_id3150447" xml-lang="en-US" l10n="U">In <emph>styles.xml</emph>, you find the styles applied to the document that can be seen in the Styles and Formatting window.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3153353" xml-lang="en-US" l10n="U">The <emph>meta-inf/manifest.xml</emph> file describes the structure of the XML file.</paragraph>
+<paragraph role="listitem" id="par_id3153353" xml-lang="en-US" l10n="U">The <emph>META-INF/manifest.xml</emph> file describes the structure of the XML file.</paragraph>
+<paragraph role="listitem" id="par_id3150740" xml-lang="en-US" l10n="CHG">If you save a document with a password, <emph>manifest.xml</emph> will not be encrypted.</paragraph>
 </listitem>
 </list>
 <paragraph role="paragraph" id="par_id3153368" xml-lang="en-US" l10n="CHG">Additional files and folders can be contained in the packed file format.</paragraph>

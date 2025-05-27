@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sdext.hxx"
@@ -39,11 +37,11 @@ static ::osl::Mutex& getHashMapMutex()
 
 struct TokenTable
 {
-	const char*						    pS;
+	const char*							pS;
 	PPPOptimizerTokenEnum				pE;
 };
 
-static const TokenTable pTokenTableArray[] = 
+static const TokenTable pTokenTableArray[] =
 {
 	{ "rdmNavi",			TK_rdmNavi },
 	{ "lnNavSep1",			TK_lnNavSep1 },
@@ -138,11 +136,11 @@ static const TokenTable pTokenTableArray[] =
 	{ "GraphicURL",			TK_GraphicURL },
 	{ "GraphicStreamURL",	TK_GraphicStreamURL },
 	{ "Height",				TK_Height },
-    { "HelpURL",            TK_HelpURL },
+	{ "HelpURL",			TK_HelpURL },
 	{ "Hidden",				TK_Hidden },
 	{ "ID",					TK_ID },
 	{ "ImageURL",			TK_ImageURL },
-	{ "ParentWindow",	    TK_ParentWindow },// TODO move it
+	{ "ParentWindow",		TK_ParentWindow }, // TODO move it
 	{ "InputStream",		TK_InputStream },
 	{ "Interlaced",			TK_Interlaced },
 	{ "IsInternal",			TK_IsInternal },
@@ -178,7 +176,7 @@ static const TokenTable pTokenTableArray[] =
 	{ "Spin",				TK_Spin },
 	{ "Step",				TK_Step },
 	{ "State",				TK_State },
-	{ "StatusListener",	    TK_StatusListener },
+	{ "StatusListener",		TK_StatusListener },
 	{ "StringItemList",		TK_StringItemList },
 	{ "Strings",			TK_Strings },
 	{ "TabIndex",			TK_TabIndex },
@@ -228,7 +226,7 @@ static const TokenTable pTokenTableArray[] =
 	{ "STR_CANCEL",					STR_CANCEL },
 	{ "STR_INTRODUCTION",			STR_INTRODUCTION },
 	{ "STR_INTRODUCTION_T",			STR_INTRODUCTION_T },
-	{ "STR_CHOSE_SETTINGS",			STR_CHOSE_SETTINGS },
+	{ "STR_CHOOSE_SETTINGS",		STR_CHOOSE_SETTINGS },
 	{ "STR_REMOVE",					STR_REMOVE },
 	{ "STR_GRAPHIC_OPTIMIZATION",	STR_GRAPHIC_OPTIMIZATION },
 	{ "STR_IMAGE_OPTIMIZATION",		STR_IMAGE_OPTIMIZATION },
@@ -285,7 +283,7 @@ static const TokenTable pTokenTableArray[] =
 	{ "STR_CREATING_OLE_REPLACEMENTS",STR_CREATING_OLE_REPLACEMENTS },
 	{ "STR_FileSizeSeparator",		STR_FILESIZESEPARATOR },
 #endif
-	{ "Last",				TK_Last }, 
+	{ "Last",				TK_Last },
 	{ "NotFound",			TK_NotFound }
 };
 
@@ -324,3 +322,5 @@ rtl::OUString TKGet( const PPPOptimizerTokenEnum eToken )
 		: (sal_uInt32)eToken;
 	return rtl::OUString::createFromAscii( pTokenTableArray[ i ].pS );
 }
+
+/* vim: set noet sw=4 ts=4: */

@@ -208,7 +208,7 @@ public class MSOfficePrint
             {
                 GlobalLogWriter.get().println("No Microsoft Office document format found.");
 // TODO: use a better Exception!!!
-                throw new ConvWatchCancelException/*WrongSuffixException*/("No Mircosoft Office document format found.");
+                throw new ConvWatchCancelException/*WrongSuffixException*/("No Microsoft Office document format found.");
             }
 
             if (aStartCommand.isEmpty() == false)

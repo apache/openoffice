@@ -40,7 +40,7 @@ public class TextDocumentStructure {
             xContext = com.sun.star.comp.helper.Bootstrap.bootstrap();
             System.out.println("Connected to a running office ...");
 
-            // get the rmeote service manger
+            // get the rmeote service manager
             com.sun.star.lang.XMultiComponentFactory xMCF =
                 xContext.getServiceManager();
 

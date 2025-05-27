@@ -19,13 +19,7 @@
  *
  *************************************************************/
 
-
-
 #include "optdlg.hrc"
-
-/**************************************************************************/
-/*                                                                        */
-/**************************************************************************/
 
 TabPage RID_SCPAGE_CALC
 {
@@ -336,14 +330,6 @@ TabPage RID_SCPAGE_CONTENT
 		Size = MAP_APPFONT ( 112, 10 ) ;
 		Text [ en-US ] = "Guides ~while moving" ;
 	};
-// TODO: Remove code for unused handles
-//	CheckBox CB_HANDLES
-//	{
-//		HelpID = "sc:CheckBox:RID_SCPAGE_CONTENT:CB_HANDLES" ;
-//		Pos = MAP_APPFONT ( 12, 70 ) ;
-//		Size = MAP_APPFONT ( 112, 10 ) ;
-//		Text [ en-US ] = "~Simple handles" ;
-//	};
 	CheckBox CB_BIGHANDLES
 	{
 		HelpID = "sc:CheckBox:RID_SCPAGE_CONTENT:CB_BIGHANDLES" ;

@@ -697,7 +697,7 @@ const SwRect SwFrm::PaintArea() const
 			bLeft = sal_False;
 			bRight = sal_False;
 		}
-		else if( pTmp->IsColumnFrm() )  // nobody enters neightbour columns
+		else if( pTmp->IsColumnFrm() )  // nobody enters neighbour columns
 		{
             sal_Bool bR2L = pTmp->IsRightToLeft();
             // the first column has _no_ influence to the left range

@@ -682,11 +682,11 @@ sal_Bool GraphicManager::ImplCreateOutput( OutputDevice* pOut,
 
 			if( bRet )
 			{
-				// attribute adjustment if neccessary
+				// attribute adjustment if necessary
 				if( rAttr.IsSpecialDrawMode() || rAttr.IsAdjusted() || rAttr.IsTransparent() )
 					ImplAdjust( aOutBmpEx, rAttr, ADJUSTMENT_DRAWMODE | ADJUSTMENT_COLORS | ADJUSTMENT_TRANSPARENCY );
 
-				// OutDev adjustment if neccessary
+				// OutDev adjustment if necessary
 				if( pOut->GetOutDevType() != OUTDEV_PRINTER && pOut->GetBitCount() <= 8 && aOutBmpEx.GetBitCount() >= 8 )
 					aOutBmpEx.Dither( BMP_DITHER_MATRIX );
 			}

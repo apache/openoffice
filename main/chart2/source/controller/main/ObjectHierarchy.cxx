@@ -446,7 +446,7 @@ void ImplObjectHierarchy::createDataSeriesTree(
 
                     Reference< chart2::XDataSeries > xSeries( aSeriesSeq[nSeriesIdx], uno::UNO_QUERY );
 
-                    // data lablels
+                    // data labels
                     if( DataSeriesHelper::hasDataLabelsAtSeries( xSeries ) )
                     {
                         rtl::OUString aChildParticle( ObjectIdentifier::getStringForType( OBJECTTYPE_DATA_LABELS ) );

@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_shell.hxx"
 #include "internal/global.hxx"
@@ -38,7 +36,6 @@
 #include <stdio.h>
 #include <utility>
 #include <stdlib.h>
-
 
 #define MAX_STRING 80
 #define KB 1024.0

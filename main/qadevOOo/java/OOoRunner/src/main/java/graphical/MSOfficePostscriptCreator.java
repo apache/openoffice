@@ -296,7 +296,7 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 GlobalLogWriter.println("No Microsoft Office document format found.");
 // TODO: use a better Exception!!!
-                throw new WrongSuffixException("No Mircosoft Office document format found.");
+                throw new WrongSuffixException("No Microsoft Office document format found.");
             }
 
             if (aStartCommand.isEmpty() == false)

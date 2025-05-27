@@ -283,9 +283,9 @@ Reference< XHyphenatedWord > SAL_CALL
 	{
 		OUString aChkWord( rWord );
 
-        // replace typographical apostroph by ascii apostroph
+        // replace typographical apostrophe by ascii apostrophe
         String aSingleQuote( GetLocaleDataWrapper( nLanguage ).getQuotationMarkEnd() );
-        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpectend length of quotation mark" );
+        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpected length of quotation mark" );
         if (aSingleQuote.Len())
             aChkWord = aChkWord.replace( aSingleQuote.GetChar(0), '\'' );
 
@@ -427,9 +427,9 @@ Reference< XHyphenatedWord > SAL_CALL
 	{
         OUString aChkWord( rWord );
 
-        // replace typographical apostroph by ascii apostroph
+        // replace typographical apostrophe by ascii apostrophe
         String aSingleQuote( GetLocaleDataWrapper( nLanguage ).getQuotationMarkEnd() );
-        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpectend length of quotation mark" );
+        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpected length of quotation mark" );
         if (aSingleQuote.Len())
             aChkWord = aChkWord.replace( aSingleQuote.GetChar(0), '\'' );
 
@@ -562,9 +562,9 @@ Reference< XPossibleHyphens > SAL_CALL
 	{
 		OUString aChkWord( rWord );
 
-        // replace typographical apostroph by ascii apostroph
+        // replace typographical apostrophe by ascii apostrophe
         String aSingleQuote( GetLocaleDataWrapper( nLanguage ).getQuotationMarkEnd() );
-        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpectend length of quotation mark" );
+        DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpected length of quotation mark" );
         if (aSingleQuote.Len())
             aChkWord = aChkWord.replace( aSingleQuote.GetChar(0), '\'' );
 

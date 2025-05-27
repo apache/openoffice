@@ -446,7 +446,7 @@ public class XLIFFReader extends DefaultHandler {
         if (qName.equals("trans-unit")) {
             String id = attrs.getValue("id");
             if ((DataStore.get(id)) != null) {
-                //TODO arraycopy might not be nessessary 
+                //TODO arraycopy might not be necessary
                 System.arraycopy((String[]) DataStore.get(id), 0, data, 0,
                         data.length);
                 int help = (Integer.valueOf(data[FOUND_PARTS_COUNTER_IDX])).intValue(); //found one more part

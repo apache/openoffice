@@ -994,7 +994,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 #endif
 
 	// The following special cases have to be handled before the filter detection
-	// because the content of the title, etc. is not used for filter even in Netcape.
+	// because the content of the title, etc. is not used for filter even in Netscape.
 	if( !pPendStack )
 	{
 		if( bInTitle )
@@ -5116,11 +5116,11 @@ void SwHTMLParser::InsertLineBreak()
 	}
 	else if( pPam->GetPoint()->nContent.GetIndex() )
 	{
-		// if a claer was executed in a non-empty paragraph,
+		// if a clear was executed in a non-empty paragraph,
 		// a new paragraph must be opened afterwards.
 		// MIB 21.02.97: Actually, the lower paragraph should be set to 0.
 		// But this works with something like <BR ..><P>.
-		// (>Netacpe). Therefore we leave it for now.
+		// (>Netscape). Therefore we leave it for now.
 		AppendTxtNode( AM_NOSPACE );
 	}
 	if( bBreakItem && SVX_BREAK_PAGE_BEFORE==aBreakItem.GetBreak() )

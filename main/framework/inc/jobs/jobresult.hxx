@@ -52,7 +52,7 @@ namespace framework{
 //_______________________________________
 /**
     @short  represent a result of a finished job execution
-    @descr  Such result instance transport all neccessarry
+    @descr  Such result instance transport all necessary
             data from the code place where the job was finished
             to the outside code, where e.g. listener must be notified.
  */

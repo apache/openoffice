@@ -44,7 +44,7 @@ public class CharArrayLCSAlgorithm {
      *
      *  @param  orgSeq  The original sequence.
      *  @param  modSeq  The modified (or changed) sequence to
-     *                  compare against the origial.
+     *                  compare against the original.
      *
      *  @return  A <code>Difference</code> array.
      */
