@@ -383,8 +383,8 @@ sal_Bool SwView::InsertGraphicDlg( SfxRequest& rReq )
             rReq.AppendItem( SfxBoolItem( FN_PARAM_1, bAsLink ) );
         }
 
-        SFX_REQUEST_ARG( rReq, pAsLink, SfxBoolItem, FN_PARAM_1 , sal_False );
-        SFX_REQUEST_ARG( rReq, pStyle, SfxStringItem, FN_PARAM_2 , sal_False );
+		SFX_REQUEST_ARG( rReq, pAsLink, SfxBoolItem, FN_PARAM_1 , sal_False );
+		SFX_REQUEST_ARG( rReq, pStyle, SfxStringItem, FN_PARAM_2 , sal_False );
 
         sal_Bool bAsLink = sal_False;
         if( nHtmlMode & HTMLMODE_ON )
@@ -415,31 +415,31 @@ sal_Bool SwView::InsertGraphicDlg( SfxRequest& rReq )
             }
         }
 
-        SwWrtShell& rSh = GetWrtShell();
-        rSh.LockPaint();
-        rSh.StartAction();
+		SwWrtShell& rSh = GetWrtShell();
+		rSh.LockPaint();
+		rSh.StartAction();
 
-        /// #111827#
-        SwRewriter aRewriter;
-        aRewriter.AddRule(UNDO_ARG1, String(SW_RES(STR_GRAPHIC_DEFNAME)));
+		// #111827#
+		SwRewriter aRewriter;
+		aRewriter.AddRule(UNDO_ARG1, String(SW_RES(STR_GRAPHIC_DEFNAME)));
 
-        // #123922# determine if we really want to insert or replace the graphic at a selected object
-        const bool bReplaceMode(rSh.HasSelection() && nsSelectionType::SEL_FRM == rSh.GetSelectionType());
+		// #123922# determine if we really want to insert or replace the graphic at a selected object
+		const bool bReplaceMode(rSh.HasSelection() && nsSelectionType::SEL_FRM == rSh.GetSelectionType());
 
-        rSh.StartUndo(UNDO_INSERT, &aRewriter);
+		rSh.StartUndo(UNDO_INSERT, &aRewriter);
 
-        int nError = InsertGraphic( aFileName, aFilterName, bAsLink, GraphicFilter::GetGraphicFilter() );
+		int nError = InsertGraphic( aFileName, aFilterName, bAsLink, GraphicFilter::GetGraphicFilter() );
 
-        // Format ist ungleich Current Filter, jetzt mit auto. detection
-        if( nError == GRFILTER_FORMATERROR )
-            nError = InsertGraphic( aFileName, aEmptyStr, bAsLink, GraphicFilter::GetGraphicFilter() );
+		// Format ist ungleich Current Filter, jetzt mit auto. detection
+		if( nError == GRFILTER_FORMATERROR )
+			nError = InsertGraphic( aFileName, aEmptyStr, bAsLink, GraphicFilter::GetGraphicFilter() );
 
-        // #123922# no new FrameFormat for replace mode, only when new object was created,
-        // else this would reset the current setting for the frame holding the graphic
-        if ( !bReplaceMode && rSh.IsFrmSelected() )
-        {
-            SwFrmFmt* pFmt = pDoc->FindFrmFmtByName( sGraphicFormat );
-            if(!pFmt)
+		// #123922# no new FrameFormat for replace mode, only when new object was created,
+		// else this would reset the current setting for the frame holding the graphic
+		if ( !bReplaceMode && rSh.IsFrmSelected() )
+		{
+			SwFrmFmt* pFmt = pDoc->FindFrmFmtByName( sGraphicFormat );
+			if(!pFmt)
                 pFmt = pDoc->MakeFrmFmt(sGraphicFormat,
                                         pDocShell->GetDoc()->GetDfltFrmFmt(),
                                         sal_True, sal_False);
@@ -486,14 +486,14 @@ sal_Bool SwView::InsertGraphicDlg( SfxRequest& rReq )
             bReturn = sal_True;
             AutoCaption( GRAPHIC_CAP );
             rReq.Done();
-        }
+		}
 
-        rSh.EndUndo(); // due to possible change of Shell
-    }
+		rSh.EndUndo(); // due to possible change of Shell
+	}
 
-    delete pFileDlg;
+	delete pFileDlg;
 
-    return bReturn;
+	return bReturn;
 }
 
 
@@ -502,21 +502,21 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
 	sal_uInt16 nSlot = rReq.GetSlot();
 	const SfxItemSet* pArgs = rReq.GetArgs();
 	const SfxPoolItem* pItem;
-    sal_Bool bIgnore = sal_False;
+	sal_Bool bIgnore = sal_False;
 	switch( nSlot )
 	{
 		case SID_CREATE_SW_DRAWVIEW:
-            // --> OD 2005-08-08 #i52858# - method name changed
-            pWrtShell->getIDocumentDrawModelAccess()->GetOrCreateDrawModel();
-            // <--
+			// --> OD 2005-08-08 #i52858# - method name changed
+			pWrtShell->getIDocumentDrawModelAccess()->GetOrCreateDrawModel();
+			// <--
 			break;
 
 		case FN_LINE_NUMBERING_DLG:
 		{
 			SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
-            DBG_ASSERT(pFact, "Dialogdiet fail!");
-            VclAbstractDialog* pDlg = pFact->CreateVclSwViewDialog( DLG_LINE_NUMBERING,    *this);
-            DBG_ASSERT(pDlg, "Dialogdiet fail!");
+			DBG_ASSERT(pFact, "Dialogdiet fail!");
+			VclAbstractDialog* pDlg = pFact->CreateVclSwViewDialog( DLG_LINE_NUMBERING,    *this);
+			DBG_ASSERT(pDlg, "Dialogdiet fail!");
 			pDlg->Execute();
 			delete pDlg;
 			break;
@@ -533,25 +533,25 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
 		case FN_PAGEDOWN_SEL:
 		{
 			Rectangle aVis( GetVisArea() );
-            SwEditWin& rTmpWin = GetEditWin();
-            if ( FN_PAGEUP == nSlot || FN_PAGEUP_SEL == nSlot )
-			    PageUpCrsr(FN_PAGEUP_SEL == nSlot);
-            else
-    			PageDownCrsr(FN_PAGEDOWN_SEL == nSlot);
+			SwEditWin& rTmpWin = GetEditWin();
+			if ( FN_PAGEUP == nSlot || FN_PAGEUP_SEL == nSlot )
+				PageUpCrsr(FN_PAGEUP_SEL == nSlot);
+			else
+				PageDownCrsr(FN_PAGEDOWN_SEL == nSlot);
 
 			rReq.SetReturnValue(SfxBoolItem(nSlot,
 												aVis != GetVisArea()));
-            //#i42732# - notify the edit window that from now on we do not use the input language
-            rTmpWin.SetUseInputLanguage( sal_False );
-        }
+			//#i42732# - notify the edit window that from now on we do not use the input language
+			rTmpWin.SetUseInputLanguage( sal_False );
+		}
 		break;
 		case FN_REDLINE_ON:
 		{
 			if( pArgs &&
 				SFX_ITEM_SET == pArgs->GetItemState(nSlot, sal_False, &pItem ))
 			{
-                IDocumentRedlineAccess* pIDRA = pWrtShell->getIDocumentRedlineAccess();
-                Sequence <sal_Int8> aPasswd = pIDRA->GetRedlinePassword();
+				IDocumentRedlineAccess* pIDRA = pWrtShell->getIDocumentRedlineAccess();
+				Sequence <sal_Int8> aPasswd = pIDRA->GetRedlinePassword();
 				if( aPasswd.getLength() )
 				{
 					DBG_ASSERT( !((const SfxBoolItem*)pItem)->GetValue(), "SwView::Execute(): password set an redlining off doesn't match!" );
@@ -665,15 +665,15 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
                     }
                 }
             }
-        }
-        break;
+		}
+		break;
 		case SID_DOCUMENT_COMPARE:
 		case SID_DOCUMENT_MERGE:
 			{
 				String sFileName, sFilterName;
 				sal_Int16 nVersion = 0;
-                bool bHasFileName = false;
-                pViewImpl->SetParam( 0 );
+				bool bHasFileName = false;
+				pViewImpl->SetParam( 0 );
 
 				if( pArgs )
 				{
@@ -716,10 +716,10 @@ void __EXPORT SwView::Execute(SfxRequest &rReq)
             }
 		break;
 		case FN_SYNC_LABELS:
-        case FN_MAILMERGE_CHILDWINDOW:
-            GetViewFrame()->ShowChildWindow(nSlot, sal_True);
-        break;
-        case FN_ESCAPE:
+		case FN_MAILMERGE_CHILDWINDOW:
+			GetViewFrame()->ShowChildWindow(nSlot, sal_True);
+		break;
+		case FN_ESCAPE:
 		{
 			if ( pWrtShell->HasDrawView() && pWrtShell->GetDrawView()->IsDragObj() )
 			{
@@ -2226,7 +2226,7 @@ extern int lcl_FindDocShell( SfxObjectShellRef& xDocSh, SfxObjectShellLock& xLoc
 			xDocSh->DoClose();
 	}
 
-    delete pMedium;
+	delete pMedium;
 	return nFound;
 }
 /* -----------------05.02.2003 12:06-----------------
@@ -2234,10 +2234,10 @@ extern int lcl_FindDocShell( SfxObjectShellRef& xDocSh, SfxObjectShellLock& xLoc
  * --------------------------------------------------*/
 void SwView::EnableMailMerge(sal_Bool bEnable )
 {
-    bInMailMerge = bEnable;
-    SfxBindings& rBind = GetViewFrame()->GetBindings();
-    rBind.Invalidate(FN_INSERT_FIELD_DATA_ONLY);
-    rBind.Update(FN_INSERT_FIELD_DATA_ONLY);
+	bInMailMerge = bEnable;
+	SfxBindings& rBind = GetViewFrame()->GetBindings();
+	rBind.Invalidate(FN_INSERT_FIELD_DATA_ONLY);
+	rBind.Update(FN_INSERT_FIELD_DATA_ONLY);
 }
 /*
 */
@@ -2310,8 +2310,8 @@ class SwMergeSourceWarningBox_Impl : public ModalDialog
 
 void SwView::GenerateFormLetter(sal_Bool bUseCurrentDocument)
 {
-    if(bUseCurrentDocument)
-    {
+	if(bUseCurrentDocument)
+	{
         if(!GetWrtShell().IsAnyDatabaseFieldInDoc())
         {
             // check availability of data sources (except biblio source)

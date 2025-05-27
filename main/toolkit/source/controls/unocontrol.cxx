@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_toolkit.hxx"
@@ -73,19 +71,19 @@ using ::com::sun::star::accessibility::XAccessible;
 
 struct LanguageDependentProp
 {
-    const char* pPropName;
-    sal_Int32   nPropNameLength;
+	const char* pPropName;
+	sal_Int32   nPropNameLength;
 };
 
 static const LanguageDependentProp aLanguageDependentProp[] =
 {
-    { "Text",            4 },
-    { "Label",           5 },
-    { "Title",           5 },
-    { "HelpText",        8 },
-    { "CurrencySymbol", 14 },
-    { "StringItemList", 14 },
-    { 0, 0                 }
+	{ "Text",            4 },
+	{ "Label",           5 },
+	{ "Title",           5 },
+	{ "HelpText",        8 },
+	{ "CurrencySymbol", 14 },
+	{ "StringItemList", 14 },
+	{ 0, 0                 }
 };
 
 static Sequence< ::rtl::OUString> lcl_ImplGetPropertyNames( const Reference< XMultiPropertySet > & rxModel )
@@ -93,8 +91,8 @@ static Sequence< ::rtl::OUString> lcl_ImplGetPropertyNames( const Reference< XMu
 	Sequence< ::rtl::OUString> aNames;
 	Reference< XPropertySetInfo >  xPSInf = rxModel->getPropertySetInfo();
 	DBG_ASSERT( xPSInf.is(), "UpdateFromModel: No PropertySetInfo!" );
-	if ( xPSInf.is() ) 
-	{	
+	if ( xPSInf.is() )
+	{
 		Sequence< Property> aProps = xPSInf->getProperties();
 		sal_Int32 nLen = aProps.getLength();
 		aNames = Sequence< ::rtl::OUString>( nLen );
@@ -110,39 +108,39 @@ static Sequence< ::rtl::OUString> lcl_ImplGetPropertyNames( const Reference< XMu
 class VclListenerLock
 {
 private:
-    VCLXWindow*  m_pLockWindow;
+	VCLXWindow*  m_pLockWindow;
 
 public:
-    inline VclListenerLock( VCLXWindow* _pLockWindow )
-        :m_pLockWindow( _pLockWindow )
-    {
+	inline VclListenerLock( VCLXWindow* _pLockWindow )
+		:m_pLockWindow( _pLockWindow )
+	{
 		if ( m_pLockWindow )
 			m_pLockWindow->suspendVclEventListening( );
-    }
-    inline ~VclListenerLock( )
-    {
+	}
+	inline ~VclListenerLock( )
+	{
 		if ( m_pLockWindow )
 			m_pLockWindow->resumeVclEventListening( );
-    }
+	}
 
 private:
-    VclListenerLock();                                      // never implemented
-    VclListenerLock( const VclListenerLock& );              // never implemented
-    VclListenerLock& operator=( const VclListenerLock& );   // never implemented
+	VclListenerLock();                                      // never implemented
+	VclListenerLock( const VclListenerLock& );              // never implemented
+	VclListenerLock& operator=( const VclListenerLock& );   // never implemented
 };
 
 typedef ::std::map< ::rtl::OUString, sal_Int32 >    MapString2Int;
 struct UnoControl_Data
 {
-    MapString2Int   aSuspendedPropertyNotifications;
-    /// true if and only if our model has a property ResourceResolver
-    bool            bLocalizationSupport;
+	MapString2Int   aSuspendedPropertyNotifications;
+	// true if and only if our model has a property ResourceResolver
+	bool            bLocalizationSupport;
 
-    UnoControl_Data()
-        :aSuspendedPropertyNotifications()
-        ,bLocalizationSupport( false )
-    {
-    }
+	UnoControl_Data()
+		:aSuspendedPropertyNotifications()
+		,bLocalizationSupport( false )
+	{
+	}
 };
 
 //	----------------------------------------------------
@@ -150,8 +148,8 @@ struct UnoControl_Data
 //	----------------------------------------------------
 DBG_NAME( UnoControl )
 UnoControl::UnoControl()
-    :maContext( ::comphelper::getProcessServiceFactory() )
-    ,maDisposeListeners( *this )
+	:maContext( ::comphelper::getProcessServiceFactory() )
+	,maDisposeListeners( *this )
 	,maWindowListeners( *this )
 	,maFocusListeners( *this )
 	,maKeyListeners( *this )
@@ -159,17 +157,17 @@ UnoControl::UnoControl()
 	,maMouseMotionListeners( *this )
 	,maPaintListeners( *this )
 	,maModeChangeListeners( GetMutex() )
-    ,mpData( new UnoControl_Data )
+	,mpData( new UnoControl_Data )
 {
-    DBG_CTOR( UnoControl, NULL );
-    OSL_ENSURE( false, "UnoControl::UnoControl: not implemented. Well, not really." );
-    // just implemented to let the various FooImplInheritanceHelper compile, you should use the
-    // version taking a service factory
+	DBG_CTOR( UnoControl, NULL );
+	OSL_ENSURE( false, "UnoControl::UnoControl: not implemented. Well, not really." );
+	// just implemented to let the various FooImplInheritanceHelper compile, you should use the
+	// version taking a service factory
 }
 
 UnoControl::UnoControl( const Reference< XMultiServiceFactory >& i_factory )
 	: maContext( i_factory )
-    , maDisposeListeners( *this )
+	, maDisposeListeners( *this )
 	, maWindowListeners( *this )
 	, maFocusListeners( *this )
 	, maKeyListeners( *this )
@@ -177,9 +175,9 @@ UnoControl::UnoControl( const Reference< XMultiServiceFactory >& i_factory )
 	, maMouseMotionListeners( *this )
 	, maPaintListeners( *this )
 	, maModeChangeListeners( GetMutex() )
-    , mpData( new UnoControl_Data )
+	, mpData( new UnoControl_Data )
 {
-    DBG_CTOR( UnoControl, NULL );
+	DBG_CTOR( UnoControl, NULL );
 	mbDisposePeer = sal_True;
 	mbRefeshingPeer = sal_False;
 	mbCreatingPeer = sal_False;
@@ -189,8 +187,8 @@ UnoControl::UnoControl( const Reference< XMultiServiceFactory >& i_factory )
 
 UnoControl::~UnoControl()
 {
-    DELETEZ( mpData );
-    DBG_DTOR( UnoControl, NULL );
+	DELETEZ( mpData );
+	DBG_DTOR( UnoControl, NULL );
 }
 
 ::rtl::OUString UnoControl::GetComponentServiceName()
@@ -225,28 +223,28 @@ Reference< XWindowPeer >	UnoControl::ImplGetCompatiblePeer( sal_Bool bAcceptExis
 
 		Window* pParentWindow( NULL );
 		{
-		    osl::Guard< vos::IMutex > aGuard( Application::GetSolarMutex() );
-            pParentWindow = dynamic_cast< Window* >( Application::GetDefaultDevice() );
-            ENSURE_OR_THROW( pParentWindow != NULL, "could obtain a default parent window!" );
+			osl::Guard< vos::IMutex > aGuard( Application::GetSolarMutex() );
+			pParentWindow = dynamic_cast< Window* >( Application::GetDefaultDevice() );
+			ENSURE_OR_THROW( pParentWindow != NULL, "could obtain a default parent window!" );
 		}
-        try
-        {
-		    xMe->createPeer( NULL, pParentWindow->GetComponentInterface( sal_True ) );
-        }
-        catch( const Exception& )
-        {
-	        mbCreatingCompatiblePeer = sal_False;
-            throw;
-        }
+		try
+		{
+			xMe->createPeer( NULL, pParentWindow->GetComponentInterface( sal_True ) );
+		}
+		catch( const Exception& )
+		{
+			mbCreatingCompatiblePeer = sal_False;
+			throw;
+		}
 		xCompatiblePeer = getPeer();
 		setPeer( xCurrentPeer );
 
-        if ( xCompatiblePeer.is() && mxGraphics.is() )
-        {
-            Reference< XView > xPeerView( xCompatiblePeer, UNO_QUERY );
-            if ( xPeerView.is() )
-                xPeerView->setGraphics( mxGraphics );
-        }
+		if ( xCompatiblePeer.is() && mxGraphics.is() )
+		{
+			Reference< XView > xPeerView( xCompatiblePeer, UNO_QUERY );
+			if ( xPeerView.is() )
+				xPeerView->setGraphics( mxGraphics );
+		}
 
 		if( bVis )
 			maComponentInfos.bVisible = sal_True;
@@ -259,75 +257,75 @@ Reference< XWindowPeer >	UnoControl::ImplGetCompatiblePeer( sal_Bool bAcceptExis
 
 bool UnoControl::ImplCheckLocalize( ::rtl::OUString& _rPossiblyLocalizable )
 {
-    if  (   !mpData->bLocalizationSupport
-        ||  ( _rPossiblyLocalizable.getLength() == 0 )
-        ||  ( _rPossiblyLocalizable[0] != '&' )
-            // TODO: make this reasonable. At the moment, everything which by accident starts with a & is considered
-            // localizable, which is probably wrong.
-        )
-        return false;
+	if  (   !mpData->bLocalizationSupport
+		||  ( _rPossiblyLocalizable.getLength() == 0 )
+		||  ( _rPossiblyLocalizable[0] != '&' )
+			// TODO: make this reasonable. At the moment, everything which by accident starts with a & is considered
+			// localizable, which is probably wrong.
+		)
+		return false;
 
-    try
-    {
-	    Reference< XPropertySet > xPropSet( mxModel, UNO_QUERY_THROW );
-        Reference< resource::XStringResourceResolver > xStringResourceResolver(
-            xPropSet->getPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ResourceResolver" ) ) ),
-            UNO_QUERY
-        );
-        if ( xStringResourceResolver.is() )
-        {
-            ::rtl::OUString aLocalizationKey( _rPossiblyLocalizable.copy( 1 ) );
-            _rPossiblyLocalizable = xStringResourceResolver->resolveString( aLocalizationKey );
-            return true;
-        }
-    }
-    catch( const Exception& )
-    {
-    	DBG_UNHANDLED_EXCEPTION();
-    }
-    return false;
+	try
+	{
+		Reference< XPropertySet > xPropSet( mxModel, UNO_QUERY_THROW );
+		Reference< resource::XStringResourceResolver > xStringResourceResolver(
+			xPropSet->getPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ResourceResolver" ) ) ),
+			UNO_QUERY
+		);
+		if ( xStringResourceResolver.is() )
+		{
+			::rtl::OUString aLocalizationKey( _rPossiblyLocalizable.copy( 1 ) );
+			_rPossiblyLocalizable = xStringResourceResolver->resolveString( aLocalizationKey );
+			return true;
+		}
+	}
+	catch( const Exception& )
+	{
+		DBG_UNHANDLED_EXCEPTION();
+	}
+	return false;
 }
 
 void UnoControl::ImplSetPeerProperty( const ::rtl::OUString& rPropName, const Any& rVal )
 {
-    // since a change made in propertiesChange, we can't be sure that this is called with an valid getPeer(),
+	// since a change made in propertiesChange, we can't be sure that this is called with an valid getPeer(),
 	// this assumption may be false in some (seldom) multi-threading scenarios (cause propertiesChange
 	// releases our mutex before calling here in)
 	// That's why this additional check
-	
-    if ( mxVclWindowPeer.is() )
-    {
+
+	if ( mxVclWindowPeer.is() )
+	{
 		Any aConvertedValue( rVal );
 
-        if ( mpData->bLocalizationSupport )
-        {
-            // We now support a mapping for language dependent properties. This is the
-            // central method to implement it.
-            if (( rPropName.equalsAsciiL( "Text",            4 )) ||
-                ( rPropName.equalsAsciiL( "Label",           5 )) ||
-                ( rPropName.equalsAsciiL( "Title",           5 )) ||
-                ( rPropName.equalsAsciiL( "HelpText",        8 )) ||
-                ( rPropName.equalsAsciiL( "CurrencySymbol", 14 )) ||
-                ( rPropName.equalsAsciiL( "StringItemList", 14 )) )
-            {
-                ::rtl::OUString aValue;
-                uno::Sequence< rtl::OUString > aSeqValue;
-                if ( aConvertedValue >>= aValue )
-                {
-                    if ( ImplCheckLocalize( aValue ) )
-                        aConvertedValue <<= aValue;
-                }
-                else if ( aConvertedValue >>= aSeqValue )
-                {
-                    for ( sal_Int32 i = 0; i < aSeqValue.getLength(); i++ )
-                        ImplCheckLocalize( aSeqValue[i] );
-                    aConvertedValue <<= aSeqValue;
-                }
-            }
-        }
-        
+		if ( mpData->bLocalizationSupport )
+		{
+			// We now support a mapping for language dependent properties. This is the
+			// central method to implement it.
+			if (( rPropName.equalsAsciiL( "Text",            4 )) ||
+				( rPropName.equalsAsciiL( "Label",           5 )) ||
+				( rPropName.equalsAsciiL( "Title",           5 )) ||
+				( rPropName.equalsAsciiL( "HelpText",        8 )) ||
+				( rPropName.equalsAsciiL( "CurrencySymbol", 14 )) ||
+				( rPropName.equalsAsciiL( "StringItemList", 14 )) )
+			{
+				::rtl::OUString aValue;
+				uno::Sequence< rtl::OUString > aSeqValue;
+				if ( aConvertedValue >>= aValue )
+				{
+					if ( ImplCheckLocalize( aValue ) )
+						aConvertedValue <<= aValue;
+				}
+				else if ( aConvertedValue >>= aSeqValue )
+				{
+					for ( sal_Int32 i = 0; i < aSeqValue.getLength(); i++ )
+						ImplCheckLocalize( aSeqValue[i] );
+					aConvertedValue <<= aSeqValue;
+				}
+			}
+		}
+
 		mxVclWindowPeer->setProperty( rPropName, aConvertedValue );
-    }
+	}
 }
 
 void UnoControl::PrepareWindowDescriptor( WindowDescriptor& )
@@ -352,15 +350,15 @@ Reference< XWindow >	UnoControl::getParentPeer() const
 
 void UnoControl::updateFromModel()
 {
-	// Alle standard Properties werden ausgelesen und in das Peer uebertragen
+	// Alle standard Properties werden ausgelesen und in das Peer übertragen
 	if( getPeer().is() )
 	{
 		Reference< XMultiPropertySet >	xPropSet( mxModel, UNO_QUERY );
-        if( xPropSet.is() )
-        {
-	        Sequence< ::rtl::OUString> aNames = lcl_ImplGetPropertyNames( xPropSet );
-	        xPropSet->firePropertiesChangeEvent( aNames, this );
-        }
+		if( xPropSet.is() )
+		{
+			Sequence< ::rtl::OUString> aNames = lcl_ImplGetPropertyNames( xPropSet );
+			xPropSet->firePropertiesChangeEvent( aNames, this );
+		}
 	}
 }
 
@@ -388,19 +386,19 @@ void UnoControl::disposeAccessibleContext()
 
 void UnoControl::dispose(  ) throw(RuntimeException)
 {
-    Reference< XWindowPeer > xPeer;
-    {
-        ::osl::MutexGuard aGuard( GetMutex() );
-        if( mbDisposePeer )
-        {
-            xPeer = mxPeer;
-        }
-        setPeer( NULL );
-    }
-    if( xPeer.is() )
-    {
-        xPeer->dispose();
-    }
+	Reference< XWindowPeer > xPeer;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		if( mbDisposePeer )
+		{
+			xPeer = mxPeer;
+		}
+		setPeer( NULL );
+	}
+	if( xPeer.is() )
+	{
+		xPeer->dispose();
+	}
 
 	// dispose and release our AccessibleContext
 	disposeAccessibleContext();
@@ -416,7 +414,7 @@ void UnoControl::dispose(  ) throw(RuntimeException)
 	maMouseMotionListeners.disposeAndClear( aDisposeEvent );
 	maPaintListeners.disposeAndClear( aDisposeEvent );
 	maModeChangeListeners.disposeAndClear( aDisposeEvent );
-	
+
 	// Model wieder freigeben
 	setModel( Reference< XControlModel > () );
 	setContext( Reference< XInterface > () );
@@ -425,104 +423,104 @@ void UnoControl::dispose(  ) throw(RuntimeException)
 void UnoControl::addEventListener( const Reference< XEventListener >& rxListener ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard( GetMutex() );
-	
+
 	maDisposeListeners.addInterface( rxListener );
 }
 
 void UnoControl::removeEventListener( const Reference< XEventListener >& rxListener ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard( GetMutex() );
-	
+
 	maDisposeListeners.removeInterface( rxListener );
 }
 
 sal_Bool UnoControl::requiresNewPeer( const ::rtl::OUString& /* _rPropertyName */ ) const
 {
-    return sal_False;
+	return sal_False;
 }
 
 // XPropertiesChangeListener
 void UnoControl::propertiesChange( const Sequence< PropertyChangeEvent >& rEvents ) throw(RuntimeException)
 {
-    Sequence< PropertyChangeEvent > aEvents( rEvents );
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
+	Sequence< PropertyChangeEvent > aEvents( rEvents );
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
 
-        if ( !mpData->aSuspendedPropertyNotifications.empty() )
-        {
-            // strip the property which we are currently updating (somewhere up the stack)
-            PropertyChangeEvent* pEvents = aEvents.getArray();
-            PropertyChangeEvent* pEventsEnd = pEvents + aEvents.getLength();
-            for ( ; pEvents < pEventsEnd; )
-                if ( mpData->aSuspendedPropertyNotifications.find( pEvents->PropertyName ) != mpData->aSuspendedPropertyNotifications.end() )
-                {
-                    if ( pEvents != pEventsEnd )
-                        ::std::copy( pEvents + 1, pEventsEnd, pEvents );
-                    --pEventsEnd;
-                }
-                else
-                    ++pEvents;
-            aEvents.realloc( pEventsEnd - aEvents.getConstArray() );
+		if ( !mpData->aSuspendedPropertyNotifications.empty() )
+		{
+			// strip the property which we are currently updating (somewhere up the stack)
+			PropertyChangeEvent* pEvents = aEvents.getArray();
+			PropertyChangeEvent* pEventsEnd = pEvents + aEvents.getLength();
+			for ( ; pEvents < pEventsEnd; )
+				if ( mpData->aSuspendedPropertyNotifications.find( pEvents->PropertyName ) != mpData->aSuspendedPropertyNotifications.end() )
+				{
+					if ( pEvents != pEventsEnd )
+						::std::copy( pEvents + 1, pEventsEnd, pEvents );
+					--pEventsEnd;
+				}
+				else
+					++pEvents;
+			aEvents.realloc( pEventsEnd - aEvents.getConstArray() );
 
-            if ( !aEvents.getLength() )
-                return;
-        }
-    }
+			if ( !aEvents.getLength() )
+				return;
+		}
+	}
 
-    ImplModelPropertiesChanged( aEvents );
+	ImplModelPropertiesChanged( aEvents );
 }
-	
+
 void UnoControl::ImplLockPropertyChangeNotification( const ::rtl::OUString& rPropertyName, bool bLock )
 {
-    MapString2Int::iterator pos = mpData->aSuspendedPropertyNotifications.find( rPropertyName );
-    if ( bLock )
-    {
-        if ( pos == mpData->aSuspendedPropertyNotifications.end() )
-            pos = mpData->aSuspendedPropertyNotifications.insert( MapString2Int::value_type( rPropertyName, 0 ) ).first;
-        ++pos->second;
-    }
-    else
-    {
-        OSL_ENSURE( pos != mpData->aSuspendedPropertyNotifications.end(), "UnoControl::ImplLockPropertyChangeNotification: property not locked!" );
-        if ( pos != mpData->aSuspendedPropertyNotifications.end() )
-        {
-            OSL_ENSURE( pos->second > 0, "UnoControl::ImplLockPropertyChangeNotification: invalid suspension counter!" );
-            if ( 0 == --pos->second )
-                mpData->aSuspendedPropertyNotifications.erase( pos );
-        }
-    }
+	MapString2Int::iterator pos = mpData->aSuspendedPropertyNotifications.find( rPropertyName );
+	if ( bLock )
+	{
+		if ( pos == mpData->aSuspendedPropertyNotifications.end() )
+			pos = mpData->aSuspendedPropertyNotifications.insert( MapString2Int::value_type( rPropertyName, 0 ) ).first;
+		++pos->second;
+	}
+	else
+	{
+		OSL_ENSURE( pos != mpData->aSuspendedPropertyNotifications.end(), "UnoControl::ImplLockPropertyChangeNotification: property not locked!" );
+		if ( pos != mpData->aSuspendedPropertyNotifications.end() )
+		{
+			OSL_ENSURE( pos->second > 0, "UnoControl::ImplLockPropertyChangeNotification: invalid suspension counter!" );
+			if ( 0 == --pos->second )
+				mpData->aSuspendedPropertyNotifications.erase( pos );
+		}
+	}
 }
 
 void UnoControl::ImplLockPropertyChangeNotifications( const Sequence< ::rtl::OUString >& rPropertyNames, bool bLock )
 {
-    for (   const ::rtl::OUString* pPropertyName = rPropertyNames.getConstArray();
-            pPropertyName != rPropertyNames.getConstArray() + rPropertyNames.getLength();
-            ++pPropertyName
-        )
-        ImplLockPropertyChangeNotification( *pPropertyName, bLock );
+	for (   const ::rtl::OUString* pPropertyName = rPropertyNames.getConstArray();
+			pPropertyName != rPropertyNames.getConstArray() + rPropertyNames.getLength();
+			++pPropertyName
+		)
+		ImplLockPropertyChangeNotification( *pPropertyName, bLock );
 }
 
 void UnoControl::ImplModelPropertiesChanged( const Sequence< PropertyChangeEvent >& rEvents )
 {
 	::osl::ClearableGuard< ::osl::Mutex > aGuard( GetMutex() );
 
-    if( getPeer().is() )
+	if( getPeer().is() )
 	{
 		DECLARE_STL_VECTOR( PropertyValue, PropertyValueVector);
 		PropertyValueVector 	aPeerPropertiesToSet;
 		sal_Int32				nIndependentPos = 0;
-        bool                    bResourceResolverSet( false );
+		bool                    bResourceResolverSet( false );
 			// position where to insert the independent properties into aPeerPropertiesToSet,
-            // dependent ones are inserted at the end of the vector
+			// dependent ones are inserted at the end of the vector
 
 		sal_Bool bNeedNewPeer = sal_False;
 			// some properties require a re-creation of the peer, 'cause they can't be changed on the fly
 
 		Reference< XControlModel > xOwnModel( getModel(), UNO_QUERY );
 			// our own model for comparison
-        Reference< XPropertySet > xPS( xOwnModel, UNO_QUERY );
-        Reference< XPropertySetInfo > xPSI( xPS->getPropertySetInfo(), UNO_QUERY );
-        OSL_ENSURE( xPSI.is(), "UnoControl::ImplModelPropertiesChanged: should have property set meta data!" );
+		Reference< XPropertySet > xPS( xOwnModel, UNO_QUERY );
+		Reference< XPropertySetInfo > xPSI( xPS->getPropertySetInfo(), UNO_QUERY );
+		OSL_ENSURE( xPSI.is(), "UnoControl::ImplModelPropertiesChanged: should have property set meta data!" );
 
 		const PropertyChangeEvent* pEvents = rEvents.getConstArray();
 
@@ -534,82 +532,82 @@ void UnoControl::ImplModelPropertiesChanged( const Sequence< PropertyChangeEvent
 			Reference< XControlModel > xModel( pEvents->Source, UNO_QUERY );
 			sal_Bool bOwnModel = xModel.get() == xOwnModel.get();
 			if ( !bOwnModel )
-                continue;
+				continue;
 
-            // Detect changes on our resource resolver which invalidates
-            // automatically some language dependent properties.
-            if ( pEvents->PropertyName.equalsAsciiL( "ResourceResolver", 16 ))
-            {
-                Reference< resource::XStringResourceResolver > xStrResolver;
-                if ( pEvents->NewValue >>= xStrResolver )
-                    bResourceResolverSet = xStrResolver.is();
-            }
-            
-            sal_uInt16 nPType = GetPropertyId( pEvents->PropertyName );
-			if ( mbDesignMode && mbDisposePeer && !mbRefeshingPeer && !mbCreatingPeer )	 
-            {
-                // if we're in design mode, then some properties can change which
-                // require creating a *new* peer (since these properties cannot
-                // be switched at existing peers)
-                if ( nPType )
-                    bNeedNewPeer = ( nPType == BASEPROPERTY_BORDER )
-                                || ( nPType == BASEPROPERTY_MULTILINE )
-							    || ( nPType == BASEPROPERTY_DROPDOWN )
-							    || ( nPType == BASEPROPERTY_HSCROLL )
-							    || ( nPType == BASEPROPERTY_VSCROLL )
-							    || ( nPType == BASEPROPERTY_AUTOHSCROLL )
-							    || ( nPType == BASEPROPERTY_AUTOVSCROLL )
-							    || ( nPType == BASEPROPERTY_ORIENTATION )
-							    || ( nPType == BASEPROPERTY_SPIN )
-							    || ( nPType == BASEPROPERTY_ALIGN )
-							    || ( nPType == BASEPROPERTY_PAINTTRANSPARENT );
-                else
-                    bNeedNewPeer = requiresNewPeer( pEvents->PropertyName );
+			// Detect changes on our resource resolver which invalidates
+			// automatically some language dependent properties.
+			if ( pEvents->PropertyName.equalsAsciiL( "ResourceResolver", 16 ))
+			{
+				Reference< resource::XStringResourceResolver > xStrResolver;
+				if ( pEvents->NewValue >>= xStrResolver )
+					bResourceResolverSet = xStrResolver.is();
+			}
 
-                if ( bNeedNewPeer )
+			sal_uInt16 nPType = GetPropertyId( pEvents->PropertyName );
+			if ( mbDesignMode && mbDisposePeer && !mbRefeshingPeer && !mbCreatingPeer )
+			{
+				// if we're in design mode, then some properties can change which
+				// require creating a *new* peer (since these properties cannot
+				// be switched at existing peers)
+				if ( nPType )
+					bNeedNewPeer = ( nPType == BASEPROPERTY_BORDER )
+								|| ( nPType == BASEPROPERTY_MULTILINE )
+								|| ( nPType == BASEPROPERTY_DROPDOWN )
+								|| ( nPType == BASEPROPERTY_HSCROLL )
+								|| ( nPType == BASEPROPERTY_VSCROLL )
+								|| ( nPType == BASEPROPERTY_AUTOHSCROLL )
+								|| ( nPType == BASEPROPERTY_AUTOVSCROLL )
+								|| ( nPType == BASEPROPERTY_ORIENTATION )
+								|| ( nPType == BASEPROPERTY_SPIN )
+								|| ( nPType == BASEPROPERTY_ALIGN )
+								|| ( nPType == BASEPROPERTY_PAINTTRANSPARENT );
+				else
+					bNeedNewPeer = requiresNewPeer( pEvents->PropertyName );
+
+				if ( bNeedNewPeer )
 					break;
 			}
 
 			if ( nPType && ( nLen > 1 ) && DoesDependOnOthers( nPType ) )
 			{
-				// Properties die von anderen abhaengen erst hinterher einstellen,
-				// weil sie von anderen Properties abhaengig sind, die aber erst spaeter
+				// Properties die von anderen abhängen erst hinterher einstellen,
+				// weil sie von anderen Properties abhängig sind, die aber erst später
 				// eingestellt werden, z.B. VALUE nach VALUEMIN/MAX.
 				aPeerPropertiesToSet.push_back(PropertyValue(pEvents->PropertyName, 0, pEvents->NewValue, PropertyState_DIRECT_VALUE));
 			}
 			else
 			{
-                if ( bResourceResolverSet )
-                {
+				if ( bResourceResolverSet )
+				{
 					// The resource resolver property change should be one of the first ones.
-                    // All language dependent properties are dependent on this property.
-                    // As BASEPROPERTY_NATIVE_WIDGET_LOOK is not dependent on resource
-                    // resolver. We don't need to handle a special order for these two props.
-                    aPeerPropertiesToSet.insert(
-                        aPeerPropertiesToSet.begin(),
+					// All language dependent properties are dependent on this property.
+					// As BASEPROPERTY_NATIVE_WIDGET_LOOK is not dependent on resource
+					// resolver. We don't need to handle a special order for these two props.
+					aPeerPropertiesToSet.insert(
+						aPeerPropertiesToSet.begin(),
 						PropertyValue( pEvents->PropertyName, 0, pEvents->NewValue, PropertyState_DIRECT_VALUE ) );
-                    ++nIndependentPos;
-                }
-                else if ( nPType == BASEPROPERTY_NATIVE_WIDGET_LOOK )
-                {
-                    // since *a lot* of other properties might be overruled by this one, we need
-                    // a special handling:
-                    // NativeWidgetLook needs to be set first: If it is set to ON, all other
-                    // properties describing the look (e.g. BackgroundColor) are ignored, anyway.
-                    // If it is switched OFF, then we need to do it first because else it will
-                    // overrule other look-related properties, and re-initialize them from system
-                    // defaults.
-                    aPeerPropertiesToSet.insert(
-                        aPeerPropertiesToSet.begin(),
+					++nIndependentPos;
+				}
+				else if ( nPType == BASEPROPERTY_NATIVE_WIDGET_LOOK )
+				{
+					// since *a lot* of other properties might be overruled by this one, we need
+					// a special handling:
+					// NativeWidgetLook needs to be set first: If it is set to ON, all other
+					// properties describing the look (e.g. BackgroundColor) are ignored, anyway.
+					// If it is switched OFF, then we need to do it first because else it will
+					// overrule other look-related properties, and re-initialize them from system
+					// defaults.
+					aPeerPropertiesToSet.insert(
+						aPeerPropertiesToSet.begin(),
 						PropertyValue( pEvents->PropertyName, 0, pEvents->NewValue, PropertyState_DIRECT_VALUE ) );
-                    ++nIndependentPos;
-                }
-                else
-                {
+					++nIndependentPos;
+				}
+				else
+				{
 					aPeerPropertiesToSet.insert(aPeerPropertiesToSet.begin() + nIndependentPos,
 						PropertyValue(pEvents->PropertyName, 0, pEvents->NewValue, PropertyState_DIRECT_VALUE));
 					++nIndependentPos;
-                }
+				}
 			}
 		}
 
@@ -619,50 +617,50 @@ void UnoControl::ImplModelPropertiesChanged( const Sequence< PropertyChangeEvent
 
 		DBG_ASSERT( !bNeedNewPeer || xParent.is(), "Need new peer, but don't have a parent!" );
 
-        // Check if we have to update language dependent properties
-        if ( !bNeedNewPeer && bResourceResolverSet )
-        {
-            // Add language dependent properties into the peer property set.
-            // Our resource resolver has been changed and we must be sure
-            // that language dependent props use the new resolver.
-            const LanguageDependentProp* pLangDepProp = aLanguageDependentProp;
-            while ( pLangDepProp->pPropName != 0 )
-            {
-                bool bMustBeInserted( true );
-                for ( sal_uInt32 i = 0; i < aPeerPropertiesToSet.size(); i++ )
-                {
-                    if ( aPeerPropertiesToSet[i].Name.equalsAsciiL( 
-                            pLangDepProp->pPropName, pLangDepProp->nPropNameLength ))
-                    {
-                        bMustBeInserted = false;
-                        break;
-                    }
-                }
-                
-                if ( bMustBeInserted )
-                {
-                    // Add language dependent props at the end
-                    ::rtl::OUString aPropName( ::rtl::OUString::createFromAscii( pLangDepProp->pPropName ));
-                    if ( xPSI.is() && xPSI->hasPropertyByName( aPropName ) )
-                    {
-                        aPeerPropertiesToSet.push_back(
-                            PropertyValue( aPropName, 0, xPS->getPropertyValue( aPropName ), PropertyState_DIRECT_VALUE ) );
-                    }
-                }
-                
-                ++pLangDepProp;
-            }
-        }
-        aGuard.clear();
-		
-        // clear the guard before creating a new peer - as usual, our peer implementations use the SolarMutex
+		// Check if we have to update language dependent properties
+		if ( !bNeedNewPeer && bResourceResolverSet )
+		{
+			// Add language dependent properties into the peer property set.
+			// Our resource resolver has been changed and we must be sure
+			// that language dependent props use the new resolver.
+			const LanguageDependentProp* pLangDepProp = aLanguageDependentProp;
+			while ( pLangDepProp->pPropName != 0 )
+			{
+				bool bMustBeInserted( true );
+				for ( sal_uInt32 i = 0; i < aPeerPropertiesToSet.size(); i++ )
+				{
+					if ( aPeerPropertiesToSet[i].Name.equalsAsciiL(
+							pLangDepProp->pPropName, pLangDepProp->nPropNameLength ))
+					{
+						bMustBeInserted = false;
+						break;
+					}
+				}
+
+				if ( bMustBeInserted )
+				{
+					// Add language dependent props at the end
+					::rtl::OUString aPropName( ::rtl::OUString::createFromAscii( pLangDepProp->pPropName ));
+					if ( xPSI.is() && xPSI->hasPropertyByName( aPropName ) )
+					{
+						aPeerPropertiesToSet.push_back(
+							PropertyValue( aPropName, 0, xPS->getPropertyValue( aPropName ), PropertyState_DIRECT_VALUE ) );
+					}
+				}
+
+				++pLangDepProp;
+			}
+		}
+		aGuard.clear();
+
+		// clear the guard before creating a new peer - as usual, our peer implementations use the SolarMutex
 		// #82300# - 2000-12-21 - fs@openoffice.org
 		if (bNeedNewPeer && xParent.is())
 		{
 			vos::OGuard aVclGuard( Application::GetSolarMutex() );
 				// and now this is the final withdrawal:
 				// With 83561, I have no other idea than locking the SolarMutex here ....
-				// I really hate the fact that VCL is not theadsafe ....
+				// I really hate the fact that VCL is not threadsafe ....
 				// #83561# - 2001-03-01 - fs@openoffice.org
 
 			// Funktioniert beim Container nicht!
@@ -676,17 +674,17 @@ void UnoControl::ImplModelPropertiesChanged( const Sequence< PropertyChangeEvent
 			aPeerPropertiesToSet.clear();
 		}
 
-        // lock the multiplexing of VCL events to our UNO listeners
-        // this is for compatibility reasons: in OOo 1.0.x, changes which were done at the
-        // model did not cause the listeners of the controls/peers to be called
-        // Since the implementations for the listeners changed a lot towards 1.1, this
-        // would not be the case anymore, if we would not do this listener-lock below
-        // #i14703# - 2003-05-23 - fs@openoffice.org
-        Window* pVclPeer = VCLUnoHelper::GetWindow( getPeer() );
-        VCLXWindow* pPeer = pVclPeer ? pVclPeer->GetWindowPeer() : NULL;
-        VclListenerLock aNoVclEventMultiplexing( pPeer );
+		// lock the multiplexing of VCL events to our UNO listeners
+		// this is for compatibility reasons: in OOo 1.0.x, changes which were done at the
+		// model did not cause the listeners of the controls/peers to be called
+		// Since the implementations for the listeners changed a lot towards 1.1, this
+		// would not be the case anymore, if we would not do this listener-lock below
+		// #i14703# - 2003-05-23 - fs@openoffice.org
+		Window* pVclPeer = VCLUnoHelper::GetWindow( getPeer() );
+		VCLXWindow* pPeer = pVclPeer ? pVclPeer->GetWindowPeer() : NULL;
+		VclListenerLock aNoVclEventMultiplexing( pPeer );
 
-        // setting peer properties may result in an attempt to acquire the solar mutex, 'cause the peers
+		// setting peer properties may result in an attempt to acquire the solar mutex, 'cause the peers
 		// usually don't have an own mutex but use the SolarMutex instead.
 		// To prevent deadlocks resulting from this, we do this without our own mutex locked
 		// 2000-11-03 - fs@openoffice.org
@@ -706,18 +704,18 @@ void UnoControl::disposing( const EventObject& rEvt ) throw(RuntimeException)
 	::osl::ClearableMutexGuard aGuard( GetMutex() );
 	// bei "Multible Inheritance" nicht unterschiedliche Typen vergleichen.
 
-    if ( maAccessibleContext.get() == rEvt.Source )
-    {
+	if ( maAccessibleContext.get() == rEvt.Source )
+	{
 		// just in case the context is disposed, but not released - ensure that we do not re-use it in the future
 		maAccessibleContext = NULL;
-    }
+	}
 	else if( mxModel.get() == Reference< XControlModel >(rEvt.Source,UNO_QUERY).get() )
 	{
 		// #62337# if the model dies, it does not make sense for us to live ...
 		Reference< XControl >  xThis = this;
 
-        aGuard.clear();
-        xThis->dispose();
+		aGuard.clear();
+		xThis->dispose();
 
 		DBG_ASSERT( !mxModel.is(), "UnoControl::disposing: invalid dispose behaviour!" );
 		mxModel.clear();
@@ -733,48 +731,48 @@ void SAL_CALL UnoControl::setOutputSize( const awt::Size& aSize ) throw (Runtime
 		xPeerWindow = xPeerWindow.query( getPeer() );
 	}
 
-    if ( xPeerWindow.is() )
+	if ( xPeerWindow.is() )
 		xPeerWindow->setOutputSize( aSize );
 }
 
 namespace
 {
-    template < typename RETVALTYPE >
-    RETVALTYPE lcl_askPeer( const uno::Reference< awt::XWindowPeer >& _rxPeer, RETVALTYPE (SAL_CALL XWindow2::*_pMethod)(), RETVALTYPE _aDefault )
-    {
-        RETVALTYPE aReturn( _aDefault );
+	template < typename RETVALTYPE >
+	RETVALTYPE lcl_askPeer( const uno::Reference< awt::XWindowPeer >& _rxPeer, RETVALTYPE (SAL_CALL XWindow2::*_pMethod)(), RETVALTYPE _aDefault )
+	{
+		RETVALTYPE aReturn( _aDefault );
 
-        Reference< XWindow2 > xPeerWindow( _rxPeer, UNO_QUERY );
-        if ( xPeerWindow.is() )
-            aReturn = (xPeerWindow.get()->*_pMethod)();
+		Reference< XWindow2 > xPeerWindow( _rxPeer, UNO_QUERY );
+		if ( xPeerWindow.is() )
+			aReturn = (xPeerWindow.get()->*_pMethod)();
 
-        return aReturn;
-    }
+		return aReturn;
+	}
 }
 
 awt::Size SAL_CALL UnoControl::getOutputSize(  ) throw (RuntimeException)
 {
-    return lcl_askPeer( getPeer(), &XWindow2::getOutputSize, awt::Size() );
+	return lcl_askPeer( getPeer(), &XWindow2::getOutputSize, awt::Size() );
 }
 
 ::sal_Bool SAL_CALL UnoControl::isVisible(  ) throw (RuntimeException)
 {
-    return lcl_askPeer( getPeer(), &XWindow2::isVisible, maComponentInfos.bVisible );
+	return lcl_askPeer( getPeer(), &XWindow2::isVisible, maComponentInfos.bVisible );
 }
 
 ::sal_Bool SAL_CALL UnoControl::isActive(  ) throw (RuntimeException)
 {
-    return lcl_askPeer( getPeer(), &XWindow2::isActive, sal_False );
+	return lcl_askPeer( getPeer(), &XWindow2::isActive, sal_False );
 }
 
 ::sal_Bool SAL_CALL UnoControl::isEnabled(  ) throw (RuntimeException)
 {
-    return lcl_askPeer( getPeer(), &XWindow2::isEnabled, maComponentInfos.bEnable );
+	return lcl_askPeer( getPeer(), &XWindow2::isEnabled, maComponentInfos.bEnable );
 }
 
 ::sal_Bool SAL_CALL UnoControl::hasFocus(  ) throw (RuntimeException)
 {
-    return lcl_askPeer( getPeer(), &XWindow2::hasFocus, sal_False );
+	return lcl_askPeer( getPeer(), &XWindow2::hasFocus, sal_False );
 }
 
 // XWindow
@@ -783,37 +781,37 @@ void UnoControl::setPosSize( sal_Int32 X, sal_Int32 Y, sal_Int32 Width, sal_Int3
 	Reference< XWindow > xWindow;
 	{
 		::osl::MutexGuard aGuard( GetMutex() );
-		
-        if ( Flags & awt::PosSize::X )
-		    maComponentInfos.nX = X; 
-        if ( Flags & awt::PosSize::Y )
-		    maComponentInfos.nY = Y; 
-        if ( Flags & awt::PosSize::WIDTH )
-		    maComponentInfos.nWidth = Width; 
-        if ( Flags & awt::PosSize::HEIGHT )
-		    maComponentInfos.nHeight = Height;
+
+		if ( Flags & awt::PosSize::X )
+			maComponentInfos.nX = X;
+		if ( Flags & awt::PosSize::Y )
+			maComponentInfos.nY = Y;
+		if ( Flags & awt::PosSize::WIDTH )
+			maComponentInfos.nWidth = Width;
+		if ( Flags & awt::PosSize::HEIGHT )
+			maComponentInfos.nHeight = Height;
 		maComponentInfos.nFlags |= Flags;
-		
+
 		xWindow = xWindow.query( getPeer() );
 	}
 
-    if( xWindow.is() )
+	if( xWindow.is() )
 		xWindow->setPosSize( X, Y, Width, Height, Flags );
 }
 
 awt::Rectangle UnoControl::getPosSize(  ) throw(RuntimeException)
 {
-    awt::Rectangle aRect( maComponentInfos.nX, maComponentInfos.nY, maComponentInfos.nWidth, maComponentInfos.nHeight);
-    Reference< XWindow > xWindow;
+	awt::Rectangle aRect( maComponentInfos.nX, maComponentInfos.nY, maComponentInfos.nWidth, maComponentInfos.nHeight);
+	Reference< XWindow > xWindow;
 
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-        xWindow = xWindow.query( getPeer() );
-    }
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		xWindow = xWindow.query( getPeer() );
+	}
 
-    if( xWindow.is() )
-	    aRect = xWindow->getPosSize();
-    return aRect;
+	if( xWindow.is() )
+		aRect = xWindow->getPosSize();
+	return aRect;
 }
 
 void UnoControl::setVisible( sal_Bool bVisible ) throw(RuntimeException)
@@ -821,7 +819,7 @@ void UnoControl::setVisible( sal_Bool bVisible ) throw(RuntimeException)
 	Reference< XWindow > xWindow;
 	{
 		::osl::MutexGuard aGuard( GetMutex() );
-	
+
 		// Visible status ist Sache der View
 		maComponentInfos.bVisible = bVisible;
 		xWindow = xWindow.query( getPeer() );
@@ -835,7 +833,7 @@ void UnoControl::setEnable( sal_Bool bEnable ) throw(RuntimeException)
 	Reference< XWindow > xWindow;
 	{
 		::osl::MutexGuard aGuard( GetMutex() );
-	
+
 		// Enable status ist Sache der View
 		maComponentInfos.bEnable = bEnable;
 		xWindow = xWindow.query( getPeer() );
@@ -857,158 +855,158 @@ void UnoControl::setFocus(	) throw(RuntimeException)
 
 void UnoControl::addWindowListener( const Reference< XWindowListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    maWindowListeners.addInterface( rxListener );
-	    if ( maWindowListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-    }
-    if ( xPeerWindow.is() )
-	    xPeerWindow->addWindowListener( &maWindowListeners );
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		maWindowListeners.addInterface( rxListener );
+		if ( maWindowListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->addWindowListener( &maWindowListeners );
 }
 
 void UnoControl::removeWindowListener( const Reference< XWindowListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    if ( maWindowListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-        maWindowListeners.removeInterface( rxListener );
-    }
-    if ( xPeerWindow.is() )
-	    xPeerWindow->removeWindowListener( &maWindowListeners );
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		if ( maWindowListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+		maWindowListeners.removeInterface( rxListener );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->removeWindowListener( &maWindowListeners );
 }
 
 void UnoControl::addFocusListener( const Reference< XFocusListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    maFocusListeners.addInterface( rxListener );
-	    if ( maFocusListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-    }
-    if ( xPeerWindow.is() )
-	    xPeerWindow->addFocusListener( &maFocusListeners );
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		maFocusListeners.addInterface( rxListener );
+		if ( maFocusListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->addFocusListener( &maFocusListeners );
 }
 
 void UnoControl::removeFocusListener( const Reference< XFocusListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    if ( maFocusListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-        maFocusListeners.removeInterface( rxListener );
-    }
-    if ( xPeerWindow.is() )
-	    xPeerWindow->removeFocusListener( &maFocusListeners );
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		if ( maFocusListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+		maFocusListeners.removeInterface( rxListener );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->removeFocusListener( &maFocusListeners );
 }
 
 void UnoControl::addKeyListener( const Reference< XKeyListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    maKeyListeners.addInterface( rxListener );
-	    if ( maKeyListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-    }
-    if ( xPeerWindow.is() )
-        xPeerWindow->addKeyListener( &maKeyListeners);
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		maKeyListeners.addInterface( rxListener );
+		if ( maKeyListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->addKeyListener( &maKeyListeners);
 }
 
 void UnoControl::removeKeyListener( const Reference< XKeyListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    if ( maKeyListeners.getLength() == 1 )
-            xPeerWindow = xPeerWindow.query( getPeer() );
-        maKeyListeners.removeInterface( rxListener );
-    }
-    if ( xPeerWindow.is() )
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		if ( maKeyListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+		maKeyListeners.removeInterface( rxListener );
+	}
+	if ( xPeerWindow.is() )
 		xPeerWindow->removeKeyListener( &maKeyListeners);
 }
 
 void UnoControl::addMouseListener( const Reference< XMouseListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    maMouseListeners.addInterface( rxListener );
-	    if ( maMouseListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-    }
-    if ( xPeerWindow.is() )
-        xPeerWindow->addMouseListener( &maMouseListeners);
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		maMouseListeners.addInterface( rxListener );
+		if ( maMouseListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->addMouseListener( &maMouseListeners);
 }
 
 void UnoControl::removeMouseListener( const Reference< XMouseListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    if ( maMouseListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-        maMouseListeners.removeInterface( rxListener );
-    }
-    if ( xPeerWindow.is() )
-	    xPeerWindow->removeMouseListener( &maMouseListeners );
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		if ( maMouseListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+		maMouseListeners.removeInterface( rxListener );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->removeMouseListener( &maMouseListeners );
 }
 
 void UnoControl::addMouseMotionListener( const Reference< XMouseMotionListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    maMouseMotionListeners.addInterface( rxListener );
-	    if ( maMouseMotionListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-    }
-    if ( xPeerWindow.is() )
-        xPeerWindow->addMouseMotionListener( &maMouseMotionListeners);
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		maMouseMotionListeners.addInterface( rxListener );
+		if ( maMouseMotionListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->addMouseMotionListener( &maMouseMotionListeners);
 }
 
 void UnoControl::removeMouseMotionListener( const Reference< XMouseMotionListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    if ( maMouseMotionListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-        maMouseMotionListeners.removeInterface( rxListener );
-    }
-    if ( xPeerWindow.is() )
-	    xPeerWindow->removeMouseMotionListener( &maMouseMotionListeners );
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		if ( maMouseMotionListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+		maMouseMotionListeners.removeInterface( rxListener );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->removeMouseMotionListener( &maMouseMotionListeners );
 }
 
 void UnoControl::addPaintListener( const Reference< XPaintListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    maPaintListeners.addInterface( rxListener );
-	    if ( maPaintListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-    }
-    if ( xPeerWindow.is() )
-        xPeerWindow->addPaintListener( &maPaintListeners);
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		maPaintListeners.addInterface( rxListener );
+		if ( maPaintListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->addPaintListener( &maPaintListeners);
 }
 
 void UnoControl::removePaintListener( const Reference< XPaintListener >& rxListener ) throw(RuntimeException)
 {
-    Reference< XWindow > xPeerWindow;
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
-	    if ( maPaintListeners.getLength() == 1 )
-		    xPeerWindow = xPeerWindow.query( getPeer() );
-        maPaintListeners.removeInterface( rxListener );
-    }
-    if ( xPeerWindow.is() )
-	    xPeerWindow->removePaintListener( &maPaintListeners );
+	Reference< XWindow > xPeerWindow;
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
+		if ( maPaintListeners.getLength() == 1 )
+			xPeerWindow = xPeerWindow.query( getPeer() );
+		maPaintListeners.removeInterface( rxListener );
+	}
+	if ( xPeerWindow.is() )
+		xPeerWindow->removePaintListener( &maPaintListeners );
 }
 
 // XView
@@ -1017,7 +1015,7 @@ sal_Bool UnoControl::setGraphics( const Reference< XGraphics >& rDevice ) throw(
 	Reference< XView > xView;
 	{
 		::osl::MutexGuard aGuard( GetMutex() );
-	
+
 		mxGraphics = rDevice;
 		xView = xView.query( getPeer() );
 	}
@@ -1037,31 +1035,31 @@ awt::Size UnoControl::getSize(  ) throw(RuntimeException)
 
 void UnoControl::draw( sal_Int32 x, sal_Int32 y ) throw(RuntimeException)
 {
-    Reference< XWindowPeer > xDrawPeer;
-    Reference< XView > xDrawPeerView;
+	Reference< XWindowPeer > xDrawPeer;
+	Reference< XView > xDrawPeerView;
 
-    bool bDisposeDrawPeer( false );
-    {
-	    ::osl::MutexGuard aGuard( GetMutex() );
+	bool bDisposeDrawPeer( false );
+	{
+		::osl::MutexGuard aGuard( GetMutex() );
 
-        xDrawPeer = ImplGetCompatiblePeer( sal_True );
-        bDisposeDrawPeer = xDrawPeer.is() && ( xDrawPeer != getPeer() );
+		xDrawPeer = ImplGetCompatiblePeer( sal_True );
+		bDisposeDrawPeer = xDrawPeer.is() && ( xDrawPeer != getPeer() );
 
-        xDrawPeerView.set( xDrawPeer, UNO_QUERY );
-        DBG_ASSERT( xDrawPeerView.is(), "UnoControl::draw: no peer!" );
-    }
+		xDrawPeerView.set( xDrawPeer, UNO_QUERY );
+		DBG_ASSERT( xDrawPeerView.is(), "UnoControl::draw: no peer!" );
+	}
 
-    if ( xDrawPeerView.is() )
-    {
-        Reference< XVclWindowPeer > xWindowPeer;
-        xWindowPeer.set( xDrawPeer, UNO_QUERY ); 
-        if ( xWindowPeer.is() )
-	        xWindowPeer->setDesignMode( mbDesignMode );
-        xDrawPeerView->draw( x, y );
-    }
+	if ( xDrawPeerView.is() )
+	{
+		Reference< XVclWindowPeer > xWindowPeer;
+		xWindowPeer.set( xDrawPeer, UNO_QUERY );
+		if ( xWindowPeer.is() )
+			xWindowPeer->setDesignMode( mbDesignMode );
+		xDrawPeerView->draw( x, y );
+	}
 
-    if ( bDisposeDrawPeer )
-        xDrawPeer->dispose();
+	if ( bDisposeDrawPeer )
+		xDrawPeer->dispose();
 }
 
 void UnoControl::setZoom( float fZoomX, float fZoomY ) throw(RuntimeException)
@@ -1069,7 +1067,7 @@ void UnoControl::setZoom( float fZoomX, float fZoomY ) throw(RuntimeException)
 	Reference< XView > xView;
 	{
 		::osl::MutexGuard aGuard( GetMutex() );
-		
+
 		maComponentInfos.nZoomX = fZoomX;
 		maComponentInfos.nZoomY = fZoomY;
 
@@ -1083,40 +1081,40 @@ void UnoControl::setZoom( float fZoomX, float fZoomY ) throw(RuntimeException)
 void UnoControl::setContext( const Reference< XInterface >& rxContext ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard( GetMutex() );
-	
+
 	mxContext = rxContext;
 }
 
 Reference< XInterface > UnoControl::getContext(  ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard( GetMutex() );
-	
+
 	return mxContext;
 }
 
 void UnoControl::peerCreated()
 {
-    Reference< XWindow > xWindow( getPeer(), UNO_QUERY );
-    if ( !xWindow.is() )
-        return;
+	Reference< XWindow > xWindow( getPeer(), UNO_QUERY );
+	if ( !xWindow.is() )
+		return;
 
-    if ( maWindowListeners.getLength() )
-	    xWindow->addWindowListener( &maWindowListeners );
+	if ( maWindowListeners.getLength() )
+		xWindow->addWindowListener( &maWindowListeners );
 
-    if ( maFocusListeners.getLength() )
-	    xWindow->addFocusListener( &maFocusListeners );
+	if ( maFocusListeners.getLength() )
+		xWindow->addFocusListener( &maFocusListeners );
 
-    if ( maKeyListeners.getLength() )
-	    xWindow->addKeyListener( &maKeyListeners );
+	if ( maKeyListeners.getLength() )
+		xWindow->addKeyListener( &maKeyListeners );
 
-    if ( maMouseListeners.getLength() )
-	    xWindow->addMouseListener( &maMouseListeners );
+	if ( maMouseListeners.getLength() )
+		xWindow->addMouseListener( &maMouseListeners );
 
-    if ( maMouseMotionListeners.getLength() )
-	    xWindow->addMouseMotionListener( &maMouseMotionListeners );
+	if ( maMouseMotionListeners.getLength() )
+		xWindow->addMouseMotionListener( &maMouseMotionListeners );
 
-    if ( maPaintListeners.getLength() )
-	    xWindow->addPaintListener( &maPaintListeners );
+	if ( maPaintListeners.getLength() )
+		xWindow->addPaintListener( &maPaintListeners );
 }
 
 void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Reference< XWindowPeer >& rParentPeer ) throw(RuntimeException)
@@ -1130,7 +1128,7 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 		aException.Context = (XAggregation*)(::cppu::OWeakAggObject*)this;
 		throw( aException );
 	}
-	
+
 	if( !getPeer().is() )
 	{
 		mbCreatingPeer = sal_True;
@@ -1140,7 +1138,7 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 		if( rParentPeer.is() && mxContext.is() )
 		{
 			// kein TopWindow
-			if ( !xToolkit.is() ) 
+			if ( !xToolkit.is() )
 				xToolkit = rParentPeer->getToolkit();
 			Any aAny = OWeakAggObject::queryInterface( ::getCppuType((const Reference< XControlContainer>*)0) );
 			Reference< XControlContainer > xC;
@@ -1155,13 +1153,13 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 		{ // Nur richtig, wenn es sich um ein Top Window handelt
 			if( rParentPeer.is() )
 			{
-				if ( !xToolkit.is() ) 
+				if ( !xToolkit.is() )
 					xToolkit = rParentPeer->getToolkit();
 				eType = WindowClass_CONTAINER;
 			}
 			else
 			{
-				if ( !xToolkit.is() ) 
+				if ( !xToolkit.is() )
 					xToolkit = VCLUnoHelper::CreateToolkit();
 				eType = WindowClass_TOP;
 			}
@@ -1173,10 +1171,10 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 		aDescr.Bounds = getPosSize();
 		aDescr.WindowAttributes = 0;
 
-        // Border
+		// Border
 		Reference< XPropertySet > xPSet( mxModel, UNO_QUERY );
 		Reference< XPropertySetInfo >  xInfo = xPSet->getPropertySetInfo();
-		
+
 		Any aVal;
 		::rtl::OUString aPropName = GetPropertyName( BASEPROPERTY_BORDER );
 		if ( xInfo->hasPropertyByName( aPropName ) )
@@ -1193,17 +1191,17 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 		}
 
 		// DESKTOP_AS_PARENT
-        if ( aDescr.Type == WindowClass_TOP )
-        {
-            aPropName = GetPropertyName( BASEPROPERTY_DESKTOP_AS_PARENT );
-            if ( xInfo->hasPropertyByName( aPropName ) )
-            {
-                aVal = xPSet->getPropertyValue( aPropName );
-                sal_Bool b = sal_Bool();
-                if ( ( aVal >>= b ) && b)
-                    aDescr.ParentIndex = -1;
-            }
-        }
+		if ( aDescr.Type == WindowClass_TOP )
+		{
+			aPropName = GetPropertyName( BASEPROPERTY_DESKTOP_AS_PARENT );
+			if ( xInfo->hasPropertyByName( aPropName ) )
+			{
+				aVal = xPSet->getPropertyValue( aPropName );
+				sal_Bool b = sal_Bool();
+				if ( ( aVal >>= b ) && b)
+					aDescr.ParentIndex = -1;
+			}
+		}
 		// Moveable
 		aPropName = GetPropertyName( BASEPROPERTY_MOVEABLE );
 		if ( xInfo->hasPropertyByName( aPropName ) )
@@ -1233,7 +1231,7 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 			if ( ( aVal >>= b ) && b)
 				aDescr.WindowAttributes |= VclWindowPeerAttribute::DROPDOWN;
 		}
-		
+
 		// Spin
 		aPropName = GetPropertyName( BASEPROPERTY_SPIN );
 		if ( xInfo->hasPropertyByName( aPropName ) )
@@ -1284,8 +1282,8 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 				aDescr.WindowAttributes |= VclWindowPeerAttribute::AUTOVSCROLL;
 		}
 
-		//added for issue79712
-		//NoLabel 
+		// added for issue79712
+		// NoLabel
 		aPropName = GetPropertyName( BASEPROPERTY_NOLABEL );
 		if ( xInfo->hasPropertyByName( aPropName ) )
 		{
@@ -1295,7 +1293,7 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 				aDescr.WindowAttributes |= VclWindowPeerAttribute::NOLABEL;
 		}
 		//issue79712 ends
-		
+
 		// Align
 		aPropName = GetPropertyName( BASEPROPERTY_ALIGN );
 		if ( xInfo->hasPropertyByName( aPropName ) )
@@ -1313,7 +1311,7 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 			}
 		}
 
-        // Ableitungen die Moeglichkeit geben die Attribute zu manipulieren
+		// Ableitungen die Möglichkeit geben die Attribute zu manipulieren
 		PrepareWindowDescriptor(aDescr);
 
 		// create the peer
@@ -1331,7 +1329,7 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 		UnoControlComponentInfos aComponentInfos(maComponentInfos);
 		sal_Bool bDesignMode(mbDesignMode);
 
-        Reference< XGraphics >  xGraphics( mxGraphics           );
+		Reference< XGraphics >  xGraphics( mxGraphics           );
 		Reference< XView >      xView    ( getPeer(), UNO_QUERY );
 		Reference< XWindow >    xWindow  ( getPeer(), UNO_QUERY );
 
@@ -1345,7 +1343,7 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 
 		xView->setZoom( aComponentInfos.nZoomX, aComponentInfos.nZoomY );
 
-        setPosSize( aComponentInfos.nX, aComponentInfos.nY, aComponentInfos.nWidth, aComponentInfos.nHeight, aComponentInfos.nFlags );
+		setPosSize( aComponentInfos.nX, aComponentInfos.nY, aComponentInfos.nWidth, aComponentInfos.nHeight, aComponentInfos.nFlags );
 
 		if( aComponentInfos.bVisible && !bDesignMode )
 			// Erst nach dem setzen der Daten anzeigen
@@ -1356,7 +1354,7 @@ void UnoControl::createPeer( const Reference< XToolkit >& rxToolkit, const Refer
 
 		xView->setGraphics( xGraphics );
 
-        peerCreated();
+		peerCreated();
 
 		mbCreatingPeer = sal_False;
 	}
@@ -1371,36 +1369,36 @@ Reference< XWindowPeer > UnoControl::getPeer() throw(RuntimeException)
 sal_Bool UnoControl::setModel( const Reference< XControlModel >& rxModel ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard( GetMutex() );
-	
+
 	Reference< XMultiPropertySet > xPropSet( mxModel, UNO_QUERY );
 
-    // query for the XPropertiesChangeListener - our delegator is allowed to overwrite this interface
-    Reference< XPropertiesChangeListener > xListener;
-    queryInterface( ::getCppuType( &xListener ) ) >>= xListener;
+	// query for the XPropertiesChangeListener - our delegator is allowed to overwrite this interface
+	Reference< XPropertiesChangeListener > xListener;
+	queryInterface( ::getCppuType( &xListener ) ) >>= xListener;
 
 	if( xPropSet.is() )
 		xPropSet->removePropertiesChangeListener( xListener );
 
-    mpData->bLocalizationSupport = false;
+	mpData->bLocalizationSupport = false;
 	mxModel = rxModel;
 
-    if( mxModel.is() )
+	if( mxModel.is() )
 	{
-        try
-        {
-		    xPropSet.set( mxModel, UNO_QUERY_THROW );
-            Reference< XPropertySetInfo > xPSI( xPropSet->getPropertySetInfo(), UNO_SET_THROW );
+		try
+		{
+			xPropSet.set( mxModel, UNO_QUERY_THROW );
+			Reference< XPropertySetInfo > xPSI( xPropSet->getPropertySetInfo(), UNO_SET_THROW );
 
-            Sequence< ::rtl::OUString> aNames = lcl_ImplGetPropertyNames( xPropSet );
-		    xPropSet->addPropertiesChangeListener( aNames, xListener );
+			Sequence< ::rtl::OUString> aNames = lcl_ImplGetPropertyNames( xPropSet );
+			xPropSet->addPropertiesChangeListener( aNames, xListener );
 
-            mpData->bLocalizationSupport = xPSI->hasPropertyByName( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ResourceResolver" ) ) );
-        }
-        catch( const Exception& )
-        {
-        	DBG_UNHANDLED_EXCEPTION();
-            mxModel.clear();
-        }
+			mpData->bLocalizationSupport = xPSI->hasPropertyByName( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ResourceResolver" ) ) );
+		}
+		catch( const Exception& )
+		{
+		DBG_UNHANDLED_EXCEPTION();
+			mxModel.clear();
+		}
 	}
 
 	return mxModel.is();
@@ -1438,12 +1436,12 @@ void UnoControl::setDesignMode( sal_Bool bOn ) throw(RuntimeException)
 		aModeChangeEvent.NewMode = ::rtl::OUString::createFromAscii( mbDesignMode ? "design" : "alive" );
 	}
 
-	// ajust the visibility of our window
+	// adjust the visibility of our window
 	if ( xWindow.is() )
 		xWindow->setVisible( !bOn );
 
 	// and notify our mode listeners
-    maModeChangeListeners.notifyEach( &XModeChangeListener::modeChanged, aModeChangeEvent );
+	maModeChangeListeners.notifyEach( &XModeChangeListener::modeChanged, aModeChangeEvent );
 }
 
 sal_Bool UnoControl::isDesignMode(	) throw(RuntimeException)
@@ -1466,7 +1464,7 @@ sal_Bool UnoControl::isTransparent(  ) throw(RuntimeException)
 sal_Bool UnoControl::supportsService( const ::rtl::OUString& rServiceName ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard( GetMutex() );
-	
+
 	Sequence< ::rtl::OUString > aSNL = getSupportedServiceNames();
 	const ::rtl::OUString* pArray = aSNL.getConstArray();
 	const ::rtl::OUString* pArrayEnd = aSNL.getConstArray() + aSNL.getLength();
@@ -1486,8 +1484,8 @@ Sequence< ::rtl::OUString > UnoControl::getSupportedServiceNames(  ) throw(Runti
 // ------------------------------------------------------------------------
 Reference< XAccessibleContext > SAL_CALL UnoControl::getAccessibleContext(  ) throw (RuntimeException)
 {
-    // creation of the context will certainly require the SolarMutex ...
-    ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
+	// creation of the context will certainly require the SolarMutex ...
+	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard aGuard( GetMutex() );
 
 	Reference< XAccessibleContext > xCurrentContext( maAccessibleContext.get(), UNO_QUERY );
@@ -1551,7 +1549,7 @@ awt::Point SAL_CALL UnoControl::convertPointToLogic( const awt::Point& i_Point, 
 	}
 	if ( xPeerConversion.is() )
 		return xPeerConversion->convertPointToLogic( i_Point, i_TargetUnit );
-    return awt::Point( );
+	return awt::Point( );
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -1564,7 +1562,7 @@ awt::Point SAL_CALL UnoControl::convertPointToPixel( const awt::Point& i_Point, 
 	}
 	if ( xPeerConversion.is() )
 		return xPeerConversion->convertPointToPixel( i_Point, i_SourceUnit );
-    return awt::Point( );
+	return awt::Point( );
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -1577,7 +1575,7 @@ awt::Size SAL_CALL UnoControl::convertSizeToLogic( const awt::Size& i_Size, ::sa
 	}
 	if ( xPeerConversion.is() )
 		return xPeerConversion->convertSizeToLogic( i_Size, i_TargetUnit );
-    return awt::Size( );
+	return awt::Size( );
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -1590,18 +1588,20 @@ awt::Size SAL_CALL UnoControl::convertSizeToPixel( const awt::Size& i_Size, ::sa
 	}
 	if ( xPeerConversion.is() )
 		return xPeerConversion->convertSizeToPixel( i_Size, i_SourceUnit );
-    return awt::Size( );
+	return awt::Size( );
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 uno::Reference< awt::XStyleSettings > SAL_CALL UnoControl::getStyleSettings() throw (RuntimeException)
 {
-    Reference< awt::XStyleSettingsSupplier > xPeerSupplier;
+	Reference< awt::XStyleSettingsSupplier > xPeerSupplier;
 	{
 		::osl::MutexGuard aGuard( GetMutex() );
 		xPeerSupplier = xPeerSupplier.query( getPeer() );
 	}
 	if ( xPeerSupplier.is() )
 		return xPeerSupplier->getStyleSettings();
-    return NULL;
+	return NULL;
 }
+
+/* vim: set noet sw=4 ts=4: */
