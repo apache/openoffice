@@ -134,7 +134,7 @@ void SfxMenuControl::SetOwnMenu( SfxVirtualMenu* pMenu )
 
 //--------------------------------------------------------------------
 
-// binds the instance to the specified id and assignes the title
+// binds the instance to the specified id and assigns the title
 
 void SfxMenuControl::Bind(
     SfxVirtualMenu* pOwn,
@@ -160,7 +160,7 @@ void SfxMenuControl::Bind(
 
 //--------------------------------------------------------------------
 
-// binds the item to the specified menu and assignes the title
+// binds the item to the specified menu and assigns the title
 
 void SfxMenuControl::Bind(
     SfxVirtualMenu* pOwn,
