@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -30,7 +30,7 @@
 Sub RunTest()
 
 '*************************************************************************
-' SERVICE: 
+' SERVICE:
 ' com.sun.star.awt.UnoControlCurrencyFieldModel
 '*************************************************************************
 On Error Goto ErrHndl
@@ -68,7 +68,7 @@ On Error Goto ErrHndl
     bOK = true
     oldVal = oObj.Value
     Out.Log("value before: "+oldVal)
-    if (oldVal &lt;&gt; 999) then 
+    if (oldVal &lt;&gt; 999) then
         oObj.Value = 999
     else
         oObj.Value = 1000
@@ -82,7 +82,7 @@ On Error Goto ErrHndl
     bOK = true
     oldVal = oObj.ValueMax
     Out.Log("value before: "+oldVal)
-    if (oldVal &lt;&gt; 1000000) then 
+    if (oldVal &lt;&gt; 1000000) then
         oObj.ValueMax = 1000000
     else
         oObj.ValueMax = 1000001
@@ -96,7 +96,7 @@ On Error Goto ErrHndl
     bOK = true
     oldVal = oObj.ValueMin
     Out.Log("value before: "+oldVal)
-    if (oldVal &lt;&gt; -1000000) then 
+    if (oldVal &lt;&gt; -1000000) then
         oObj.ValueMin = -1000000
     else
         oObj.ValueMin = -1000001

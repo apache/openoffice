@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="DlgControl" script:language="StarBasic">Option Explicit
 
@@ -49,7 +49,7 @@ Dim MaxIndex as Integer
 			bDoEnable = Ubound(DlgCalModel.lstOwnData.StringItemList()) &gt; -1
 			DlgCalModel.cmdDelete.Enabled = bDoEnable
 			If bDoEnable Then
-				MaxIndex = Ubound(DlgCalModel.lstOwnData.StringItemList()) 
+				MaxIndex = Ubound(DlgCalModel.lstOwnData.StringItemList())
 				If iSel &gt; MaxIndex Then
 					iSel = MaxIndex
 				End If
@@ -80,7 +80,7 @@ Dim ListIndex as Integer
 				ListIndex = CalGetGermanLandAtMousePos(CInt(aEvent.X/fWidthCorrFactor), CInt(aEvent.Y/fHeightCorrFactor))
 				DlgCalendar.GetControl(&quot;lstHolidays&quot;).SelectItemPos(ListIndex, True)
 			End If
-	End Select	
+	End Select
 End Sub
 
 
@@ -135,7 +135,7 @@ End Sub
 
 
 Sub ToggleInsertButton()
-	DlgCalModel.cmdInsert.Enabled = LTrim(DlgCalModel.txtEvent.Text) &lt;&gt; &quot;&quot;	
+	DlgCalModel.cmdInsert.Enabled = LTrim(DlgCalModel.txtEvent.Text) &lt;&gt; &quot;&quot;
 End Sub
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="BankHoliday" script:language="StarBasic">Option Explicit
 
@@ -98,10 +98,10 @@ Function CalMaxDayInMonth(ByVal iYear as Integer, ByVal iMonth as Integer) as In
 &apos; delivers the maximum Day of a month in a certain year
 	Dim TmpDate as Long
 	Dim	MaxDay as Long
-	
+
 	MaxDay = 28
 	TmpDate = DateSerial(iYear, iMonth, MaxDay)
-	
+
 	While Month(TmpDate) = iMonth
 		MaxDay = MaxDay + 1
 		TmpDate = TmpDate + 1
@@ -114,23 +114,23 @@ End Function
 Function CalGetIntOfShortMonthName(ByVal MonthName as String) as Integer
 Dim i as Integer
 Dim nMonth as Integer
-	
+
 	nMonth = Val(MonthName)
-	
+
 	If (1 &lt;= nMonth And 12 &gt;= nMonth) Then
 		CalGetIntOfShortMonthName = nMonth
 		Exit Function
-	End If	
-	
+	End If
+
 	MonthName = UCase(Trim(Left(MonthName, 3)))
 
-	For i = 0 To 11 
+	For i = 0 To 11
 		If (UCase(cCalShortMonthNames(i)) = MonthName) Then
 			CalGetIntOfShortMonthName = i+1
 			Exit Function
 		End If
 	Next
-	
+
 	&apos;	Not Found
 	CalGetIntOfShortMonthName = 0
 End Function
@@ -163,7 +163,7 @@ Dim lDate as Long
 	bFound = False
 	lDate = DateSerial(YearInt, iMonth, 1)
 	Do
-		If iWeekDay = WeekDay(lDate) Then 
+		If iWeekDay = WeekDay(lDate) Then
 			bFound = True
 		Else
 			lDate = lDate + 1

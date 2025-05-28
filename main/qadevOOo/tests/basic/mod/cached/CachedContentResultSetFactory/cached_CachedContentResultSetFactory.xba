@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -41,14 +41,14 @@ option explicit
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' cached.CachedContentResultSetFactory
 '*************************************************************************
 On Error Goto ErrHndl
     Dim oUCB, oCI, oContent As Object
     Dim args As Variant
     Dim sURL, sCntURL As String
-    
+
     oObj = createUnoService("com.sun.star.ucb.CachedContentResultSetFactory")
 
     args = Array("Local", "Office")
@@ -58,7 +58,7 @@ On Error Goto ErrHndl
     sURL = utils.Path2URL(cTestDocsDir &amp; "solibrary.jar")
     sURL = utils.utils.StrReplace(sURL, "/", "%2F")
     sCntURL = "vnd.sun.star.pkg://" &amp; sURL &amp; "/"
-    
+
     oCI = oUCB.createContentIdentifier(sCntUrl)
     oContent = oUCB.queryContent(oCI)
 
@@ -87,7 +87,7 @@ On Error Goto ErrHndl
 
     oStubFactory = createUnoService("com.sun.star.ucb.CachedContentResultSetStubFactory")
     oCachedContentResultSetStub = oStubFactory.createCachedContentResultSetStub(oResSet)
-    
+
 Exit Sub
 ErrHndl:
     Test.Exception()

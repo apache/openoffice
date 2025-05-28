@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="FilesModul" script:language="StarBasic">Option Explicit
 
@@ -88,7 +88,7 @@ Dim bAssignFileName as Boolean
 							Exit Function
 						End If
 						CurFileContent = &quot;&quot;
-						CurFileName = NewList(n,0)													
+						CurFileName = NewList(n,0)
 						If (FieldInList(NewList(n,1), XMLTemplateList())) Then
 							CurFileContent = GetRealFileContent(CurFileName)
 							t = SearchArrayforPartString(CurFileContent, XMLTemplateContentList())
@@ -156,7 +156,7 @@ Function InterruptProcess() as Boolean
 		bConversionIsRunning = False
 		InterruptProcess() = True
 		Exit Function
-	End if		
+	End if
 	InterruptProcess() = False
 End Function
 
@@ -173,11 +173,11 @@ Function SetExtension(LocExtension) as String
 	if (Instr(LocExtension, &quot;vnd.sun.xml.impress&quot;)) &gt; 0 then
 		SetExtension() = &quot;vor|sti|std&quot;
 	elseif (Instr(LocExtension, &quot;vnd.sun.xml.writer&quot;)) &gt; 0 then
-		SetExtension() = &quot;vor|stw&quot;	
+		SetExtension() = &quot;vor|stw&quot;
 	elseif (Instr(LocExtension, &quot;vnd.sun.xml.calc&quot;)) &gt; 0 then
 		SetExtension() = &quot;vor|stc&quot;
 	elseif (Instr(LocExtension, &quot;vnd.sun.xml.draw&quot;)) &gt; 0 then
-		SetExtension() = &quot;vor|std|sti&quot;	
+		SetExtension() = &quot;vor|std|sti&quot;
 	endif
 End Function
 
@@ -297,10 +297,10 @@ Dim sPrevMimeTypeorExtension as String
 		TotFound = 0
 		SetProgressDisplay(0)
 		bConversionisrunning = false
-		FinalizeDialogButtons()	
+		FinalizeDialogButtons()
 		Exit Sub
 	End If
-	TotFound = Ubound(FilesList()) + 1 			
+	TotFound = Ubound(FilesList()) + 1
 	If FilesList(0,0) = &quot;&quot; Then					&apos; Querying the number of fields in a multidimensionl Array is unsecure
 		TotFound = 0							&apos; because it will return the value 0 (and not -1) even when the Array is empty
 		SetProgressDisplay(0)
@@ -314,7 +314,7 @@ Dim sPrevMimeTypeorExtension as String
 		OpenProperties(1).Name = &quot;AsTemplate&quot;
 		OpenProperties(1).Value = False
 		OpenProperties(2).Name = &quot;MacroExecutionMode&quot;
-		OpenProperties(2).Value = com.sun.star.document.MacroExecMode.NEVER_EXECUTE	
+		OpenProperties(2).Value = com.sun.star.document.MacroExecMode.NEVER_EXECUTE
 		OpenProperties(3).Name = &quot;UpdateDocMode&quot;
 		OpenProperties(3).Value = com.sun.star.document.UpdateDocMode.NO_UPDATE
 		OpenProperties(4).Name = &quot;InteractionHandler&quot;
@@ -341,7 +341,7 @@ Dim sPrevMimeTypeorExtension as String
 			sViewPath = ConvertFromUrl(sSourceUrl) 	&apos; CutPathView(sSourceUrl, 70)
 			ImportDialog.LabelCurDocument.Label = Str(i+1) &amp; &quot;/&quot; &amp; MaxFileIndex + 1 &amp; &quot;  (&quot; &amp; sViewPath &amp; &quot;)&quot;
 			Select Case lcase(sExtension)
-				Case &quot;odt&quot;, &quot;ods&quot;, &quot;odp&quot;, &quot;odg&quot;, &quot;odm&quot;, &quot;odf&quot; 
+				Case &quot;odt&quot;, &quot;ods&quot;, &quot;odp&quot;, &quot;odg&quot;, &quot;odm&quot;, &quot;odf&quot;
 					SourceStemDir = RTrimStr(Applications(ApplIndex,SBDOCSOURCE), &quot;/&quot;)
 					TargetStemDir = RTrimStr(Applications(ApplIndex,SBDOCTARGET), &quot;/&quot;)
 				Case Else 								&apos; Templates and Helper-Applications remain
@@ -360,9 +360,9 @@ Dim sPrevMimeTypeorExtension as String
 						ShowOverwriteAllDialog(sTargetUrl, sTitle)
 						bDoSave = (iGeneralOverwrite = SBOVERWRITEQUERY) Or (iGeneralOverwrite = SBOVERWRITEALWAYS)
 					Elseif iGeneralOverwrite = SBOVERWRITENEVER Then
-						bDoSave = False					
+						bDoSave = False
 					ElseIf ((iGeneralOverWrite = SBOVERWRITEQUERY) OR (iGeneralOverwrite = SBOVERWRITECANCEL)) Then
-						&apos; Todo: According to AS there might come a new feature that storeasUrl could possibly rise a UI dialog. 
+						&apos; Todo: According to AS there might come a new feature that storeasUrl could possibly rise a UI dialog.
 						&apos; In this case my own UI becomes obsolete
 						sCurFileExists = ReplaceString(sFileExists, ConvertFromUrl(sTargetUrl), &quot;&lt;1&gt;&quot;)
 						sCurFileExists = ReplaceString(sCurFileExists, chr(13), &quot;&lt;CR&gt;&quot;)
@@ -382,7 +382,7 @@ Dim sPrevMimeTypeorExtension as String
 			End If
 			If bDoSave Then
 				If Not oUcb.Exists(TargetDir) Then
-					bDoSave = CreateFolder(TargetDir) 
+					bDoSave = CreateFolder(TargetDir)
 				End If
 				If bDoSave Then
 					oDocument = StarDesktop.LoadComponentFromURL(sSourceUrl, &quot;_default&quot;, 0, OpenProperties())
@@ -525,7 +525,7 @@ Dim StringList() as String
 			End If
 		Next a
 	Next i
-	SearchArrayForPartString() = -1	
+	SearchArrayForPartString() = -1
 End Function
 
 
@@ -538,7 +538,7 @@ Dim oTextCursor
 Dim oCell
 	If Not bLogExists Then
         Exit Sub
-    End If 
+    End If
 	bFilterTracerIsinsideTable = False
 	FilterIndex = GetIndexForPartStringinMultiArray(sFilterName(), CurFileContent, 0)
 	sDocumentType = sFiltername(FilterIndex,3)
@@ -577,7 +577,7 @@ Dim oCell
 	End If
 	oLogCursor.Text.InsertTextContent(oLogCursor, oLogTable, True)
 	oTextCursor = oLogTable.GetCellbyPosition(0,0).createTextCursor()
-	oTextCursor.SetString(sSourceDocuments)	
+	oTextCursor.SetString(sSourceDocuments)
 	oTextCursor = oLogTable.GetCellbyPosition(1,0).createTextCursor()
 	oTextCursor.SetString(sTargetDocuments)
 	If bFilterTracerIsinsideTable Then
@@ -606,7 +606,7 @@ Dim oCommandControl
 Dim oEvent
 Dim oCell
 	oCommandButton = oLocDocument.createInstance(&quot;com.sun.star.form.component.CommandButton&quot;)
-	oShape = oLocDocument.CreateInstance (&quot;com.sun.star.drawing.ControlShape&quot;)	
+	oShape = oLocDocument.CreateInstance (&quot;com.sun.star.drawing.ControlShape&quot;)
 	If IsMissing(aSize) Then
 		oShape.Size = GetSize(4000, 600)
 	End If
@@ -650,14 +650,14 @@ Dim bLogIsThere as Boolean
 End Sub
 
 
-Function GetFilterTracingLogPath(sTargetUrl as String, ApplIndex) as String				
+Function GetFilterTracingLogPath(sTargetUrl as String, ApplIndex) as String
 Dim TargetFileName as String
 Dim sTargetFolder as String
 Dim CurFilterTracingPath as String
 Dim CurFilterTracingname as String
 Dim CurFilterFolder as String
 		CurFilterTracingPath = FilterTracingLogPath(ApplIndex)
-		If bTakeOverTargetName(ApplIndex) Then			
+		If bTakeOverTargetName(ApplIndex) Then
 			TargetFilename = GetFileNameWithoutextension(sTargetUrl, &quot;/&quot;)
 			CurFilterFolder = DirectoryNameoutofPath(FilterTracingLogPath(ApplIndex), &quot;/&quot;)
 			CurFilterTracingpath = CurFilterFolder &amp; &quot;/&quot; &amp; TargetFilename &amp; &quot;.log&quot;
@@ -717,7 +717,7 @@ Dim LocFileName as String
 	oLogCursor.HyperLinkTarget = sUrl
 	LocFileName = FileNameOutOfPath(sUrl)
 	oCell.InsertString(oLogCursor, LocFileName,False)
-End Sub			
+End Sub
 
 
 Sub InsertCommentToLogCell(sComment as string, oCell as Object)
@@ -747,7 +747,7 @@ Dim MaxRowIndex as Integer
 		oLogCursor.gotoEnd(False)
 		oLogCursor.HyperLinkURL = &quot;&quot;
 		oLogCursor.HyperLinkName = &quot;&quot;
-		oLogCursor.HyperLinkTarget = &quot;&quot;		
+		oLogCursor.HyperLinkTarget = &quot;&quot;
 		oLogCursor.SetString(sLogSummary)
 		oLogDocument.Store()
 		oLogDocument.Dispose()
@@ -821,16 +821,16 @@ Sub OpenLogDocument()
 
 	bShowLogFile = True
 	ImportDialogArea.endexecute()
-	
+
 End Sub
 
 
-Sub MergeRange(oTable as Object, oCell as Object, MergeCount as Integer)	
+Sub MergeRange(oTable as Object, oCell as Object, MergeCount as Integer)
 Dim oTableCursor as Object
 	oTableCursor = oTable.createCursorByCellName(oCell.CellName)
 	oTableCursor.goRight(MergeCount, True)
 	oTableCursor.mergeRange()
-End Sub		
+End Sub
 
 
 Function ConcatComment(sComment as String, AdditionalComment as String)
@@ -838,7 +838,7 @@ Function ConcatComment(sComment as String, AdditionalComment as String)
 		sComment = AdditionalComment
 	Else
 		sComment = sComment &amp; chr(13) + AdditionalComment
-	End If				
+	End If
 	ConcatComment = sComment
 End Function
 </script:module>

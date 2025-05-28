@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Internet" script:language="StarBasic">REM  *****  BASIC  *****
 Option Explicit
@@ -40,7 +40,7 @@ Dim LastDate as Date
 	CheckHistoryControls = bLocGoon
 End Function
 
- 
+
 Sub InsertCompanyHistory()
 Dim StockName as String
 Dim CurRow as Integer
@@ -48,7 +48,7 @@ Dim sMsgInternetError as String
 Dim CurRate as Double
 Dim oCell as Object
 Dim sStockID as String
-Dim ChartSource as String	
+Dim ChartSource as String
 	If CheckHistoryControls() Then
 		StartDate = CDateFromISO(StockRatesModel.txtStartDate.Date)
 		EndDate = CDateFromISO(StockRatesModel.txtEndDate.Date)
@@ -71,14 +71,14 @@ Dim ChartSource as String
 &apos;		oDocument.AddActionLock()
 		UnprotectSheets(oSheets)
 		InitializeStatusline(&quot;&quot;, 10, 1)
-		oBackGroundSheet = oSheets.GetbyName(&quot;Background&quot;)	
+		oBackGroundSheet = oSheets.GetbyName(&quot;Background&quot;)
 		StockName = DlgStockRates.GetControl(&quot;lstStockNames&quot;).GetSelectedItem()
 		CurRow = GetStockRowIndex(Stockname)
 		sStockID = oFirstSheet.GetCellByPosition(SBCOLUMNID1, CurRow).String
 		ChartSource = ReplaceString(HistoryChartSource, sStockID, &quot;&lt;StockID&gt;&quot;)
 		ChartSource = ReplaceString(ChartSource, iStartDay, &quot;&lt;StartDay&gt;&quot;)
 		ChartSource = ReplaceString(ChartSource, cStr(iStartMonth-1), &quot;&lt;StartMonth&gt;&quot;)
-		ChartSource = ReplaceString(ChartSource, iStartYear, &quot;&lt;StartYear&gt;&quot;)	
+		ChartSource = ReplaceString(ChartSource, iStartYear, &quot;&lt;StartYear&gt;&quot;)
 		ChartSource = ReplaceString(ChartSource, iEndDay, &quot;&lt;EndDay&gt;&quot;)
 		ChartSource = ReplaceString(ChartSource, cStr(iEndMonth-1), &quot;&lt;EndMonth&gt;&quot;)
 		ChartSource = ReplaceString(ChartSource, iEndYear, &quot;&lt;EndYear&gt;&quot;)
@@ -99,7 +99,7 @@ Dim ChartSource as String
 		If oSheets.HasbyName(sNewSheetName) Then
 			oController.ActiveSheet = oSheets.GetByName(sNewSheetName)
 		End If
-&apos;		oDocument.RemoveActionLock()	
+&apos;		oDocument.RemoveActionLock()
 	End If
 End Sub
 
@@ -110,7 +110,7 @@ Dim i as Integer
 Dim StocksCount as Integer
 Dim iStartRow as Integer
 Dim sUrl as String
-Dim StockName as String		
+Dim StockName as String
 Dim CurRate as Double
 Dim oCell as Object
 Dim sMsgInternetError as String
@@ -127,7 +127,7 @@ Dim ChartSource as String
 		sStockID = oFirstSheet.GetCellByPosition(SBCOLUMNID1, i).String
 		ChartSource = ReplaceString(sCurChartSource, sStockID, &quot;&lt;StockID&gt;&quot;)
 		If GetCurrentRate(ChartSource, CurRate, 0) Then
-			InsertCurrentValue(CurRate, i, Now)		
+			InsertCurrentValue(CurRate, i, Now)
 		Else
 			sMsgInternetError = Stockname &amp; &quot;: &quot; &amp; sNoInternetDataAvailable &amp; chr(13) &amp; sCheckInternetSettings
 			Msgbox(sMsgInternetError, 16, sProductname)
@@ -146,17 +146,17 @@ Dim sFilter As String
 Dim sOptions As String
 Dim oLinkSheet As Object
 Dim sDate as String
-	If oSheets.hasByName(&quot;Link&quot;) Then 
+	If oSheets.hasByName(&quot;Link&quot;) Then
 		oLinkSheet = oSheets.getByName(&quot;Link&quot;)
 	Else
 		oLinkSheet = oDocument.createInstance(&quot;com.sun.star.sheet.Spreadsheet&quot;)
 		oSheets.insertByName(&quot;Link&quot;, oLinkSheet)
 		oLinkSheet.IsVisible = False
 	End If
-	
+
 	sFilter = &quot;Text - txt - csv (StarCalc)&quot;
 	sOptions = sCurSeparator &amp; &quot;,34,SYSTEM,1,1/10/2/10/3/10/4/10/5/10/6/10/7/10/8/10/9/10&quot;
-	
+
 	oLinkSheet.LinkMode = com.sun.star.sheet.SheetLinkMode.NONE
 	oLinkSheet.link(sUrl, &quot;&quot;, sFilter, sOptions, 1 )
 	fValue = oLinkSheet.getCellByPosition(iValueCol, iValueRow).Value
@@ -216,7 +216,7 @@ Dim iCellValue as Long
 			RemoveCount = RemoveCount + 1
 			iCurRow = iCurRow - 1
 		End If
-	Loop Until bLeaveLoop	
+	Loop Until bLeaveLoop
 	If RemoveCount &gt; 1 Then
 		oSheet.Rows.RemoveByIndex(iCurRow, RemoveCount-1)
 	End If
@@ -260,7 +260,7 @@ Dim i as Integer
 		DateString = ReplaceString(DateString,CStr(i+1),ShortMonths(i))
 	Next i
 	DateString = ReplaceString(DateString, &quot;.&quot;, &quot;-&quot;)
-	StringToDate = CDate(DateString)	
+	StringToDate = CDate(DateString)
 End Function
 
 
@@ -278,20 +278,20 @@ Dim aSize As Variant
 Dim oContainerChart as Object
 Dim mRangeAddresses(0) as New com.sun.star.table.CellRangeAddress
 	mRangeAddresses(0).Sheet = GetSheetIndex(oSheets, sNewSheetName)
-	mRangeAddresses(0).StartColumn = SBDATECOLUMN 
+	mRangeAddresses(0).StartColumn = SBDATECOLUMN
 	mRangeAddresses(0).StartRow = SBSTARTROW-1
 	mRangeAddresses(0).EndColumn = SBVALUECOLUMN
 	mRangeAddresses(0).EndRow = iMaxRow
-		
+
 	oSheet = oDocument.Sheets.getByName(sNewSheetName)
 	oCharts = oSheet.Charts
-	
+
 	If Not oCharts.hasElements Then
 		oSheet.GetCellbyPosition(2,2).SetString(sName)
 		oChartRange = oSheet.getCellRangeByPosition(SBDATECOLUMN,6,5,SBSTARTROW-3)
 		aPos = oChartRange.Position
 		aSize = oChartRange.Size
-		
+
 		Dim oRectangleShape As New com.sun.star.awt.Rectangle
 		oRectangleShape.X = aPos.X
 		oRectangleShape.Y = aPos.Y
@@ -346,7 +346,7 @@ Dim bLeaveLoop as Boolean
 		Do
 			oValueCell = oSheet.GetCellbyPosition(SBVALUECOLUMN, SBSTARTROW + i)
 			If oValueCell.CellStyle = CurrCellStyle Then
-				SplitCellValue(oSheet, OldNumber, NewNumber, SBVALUECOLUMN, SBSTARTROW + i, &quot;&quot;)		
+				SplitCellValue(oSheet, OldNumber, NewNumber, SBVALUECOLUMN, SBSTARTROW + i, &quot;&quot;)
 				i = i + 1
 			Else
 				bLeaveLoop = True

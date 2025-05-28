@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -62,13 +62,13 @@ Global oComponentInstance As Object ' it will be disposed
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' forms.OGridControlModel
 '*************************************************************************
 On Error Goto ErrHndl
     Dim bOK As Boolean, i As Integer
     Dim oShape As Object, oGridColumn As Object
-    
+
     bOK = true
 
     oDoc = utils.createDocument("swriter", cObjectName)
@@ -86,7 +86,7 @@ On Error Goto ErrHndl
         oGridColumn.Label = "Label" + Str(i)
         oGridColumn.DataField = "Data" + Str(i)
         oObj.insertByName("Field" + i , oGridColumn)
-        
+
     next i
 
     SelectableObj1 = oObj.getByName("Field" + 7)
@@ -106,7 +106,7 @@ On Error Goto ErrHndl
     oReplaceInstance = oObj.createColumn("TextField")
     oReplaceInstance.Label = "LabelReplace"
     oReplaceInstance.DataField = "LabelReplace"
-    
+
     'for XIndexReplace
     oIdxReplaceInstance = oObj.createColumn("TextField")
     oIdxReplaceInstance.Label = "LabelIndexReplace"

@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -36,17 +36,17 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.awt.XTopWindow
 '*************************************************************************
 On Error Goto ErrHndl
     Dim bOK As Boolean
     Dim list1 As Object, list2 As Object
     Dim aDoc As Object
-    
+
     list1 = createUnoListener("L1_", "com.sun.star.awt.XTopWindowListener")
     list2 = createUnoListener("L2_", "com.sun.star.awt.XTopWindowListener")
-    
+
     l1Called = false
     l2Called = false
 
@@ -81,7 +81,7 @@ On Error Goto ErrHndl
     wait(1000)
     bOK = bOK AND deactivated AND NOT activated
     Test.MethodTested("toBack()", bOK)
-    
+
     Out.Log("Disposing a doc ...")
     aDoc.dispose()
     Out.Log("Doc disposed.")

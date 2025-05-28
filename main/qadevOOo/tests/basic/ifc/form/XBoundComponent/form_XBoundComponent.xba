@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -35,7 +35,7 @@ option explicit
 ' This Interface/Service test depends on the following GLOBAL variables,
 ' which must be specified in the object creation:
 
-'     - Sub prepareCommit() 
+'     - Sub prepareCommit()
 '       Function checkCommit() As Boolean
 
 '*************************************************************************
@@ -47,7 +47,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.form.XBoundComponent
 '*************************************************************************
 On Error Goto ErrHndl
@@ -56,11 +56,11 @@ On Error Goto ErrHndl
 
     Test.StartMethod("commit()")
     bOK = true
-    
+
     prepareCommit()
-    
+
     bOK = bOK AND oObj.commit()
-    
+
     bOK = bOK AND checkCommit()
     Test.MethodTested("commit()", bOK)
 

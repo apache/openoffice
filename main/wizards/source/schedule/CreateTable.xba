@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="CreateTable" script:language="StarBasic">Option Explicit
 
@@ -38,9 +38,9 @@ Dim i as Integer
 Dim s as Integer
 Dim oYearCell as object
 Dim iDate
-Dim ColPos, RowPos as Integer	
+Dim ColPos, RowPos as Integer
 Dim oNameCell, oDateCell as Object
-Dim iCellValue as Long	
+Dim iCellValue as Long
 Dim oRangeFebCell, oCellAddress, oFebcell as Object
 Dim oRangeBlank as Object
 Dim sBlankStyle as String
@@ -98,7 +98,7 @@ Dim iStartDay as Integer
 	oStatusLine.Start(&quot;&quot;,40)		&apos;GetResText(sProgess)
 	&apos; Set month
 	oMonthCell = oSheet.GetCellRangeByName(&quot;Month&quot;)
-	
+
 	iDate = DateSerial(iSelYear,iSelMonth,1)
 	oMonthCell.Value = iDate
 	&apos; Inserting holidays
@@ -111,16 +111,16 @@ Dim iStartDay as Integer
 	Next
 	oDateCell = oSheet.GetCellbyPosition(DateColumn,FirstDayRow+i-iStartDay - 1)
 	oAddress = oDateCell.RangeAddress
-	
+
 	Select Case iSelMonth
 		Case 2,4,6,9,11
-			oSheet.RemoveRange(oAddress, com.sun.star.sheet.CellDeleteMode.ROWS) 
+			oSheet.RemoveRange(oAddress, com.sun.star.sheet.CellDeleteMode.ROWS)
 			If iSelMonth = 2 Then
-				oAddress.StartRow = oAddress.StartRow - 1	
+				oAddress.StartRow = oAddress.StartRow - 1
 				oAddress.EndRow = oAddress.StartRow
 				oSheet.RemoveRange(oAddress, com.sun.star.sheet.CellDeleteMode.ROWS)
 				If Not CalIsLeapYear(iSelYear) Then
-					oAddress.StartRow = oAddress.StartRow - 1	
+					oAddress.StartRow = oAddress.StartRow - 1
 					oAddress.EndRow = oAddress.StartRow
 					oSheet.RemoveRange(oAddress, com.sun.star.sheet.CellDeleteMode.ROWS)
 				End If

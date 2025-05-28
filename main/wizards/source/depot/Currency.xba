@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Currency" script:language="StarBasic">REM  *****  BASIC  *****
 Option Explicit
@@ -70,7 +70,7 @@ End Sub
 Sub DisposeDocument()
 	If bDoUnload Then
 		oDocument.Dispose()
-	End If		
+	End If
 End Sub
 
 
@@ -96,7 +96,7 @@ Dim bIsDocCountry as Boolean
 	If Instr(sCurExtension,&quot;;&quot;) &lt;&gt; 0 Then
 		&apos; Take the german extension as the stock place is Frankfurt
 		sCurExtension = &quot;407&quot;
-	End If		
+	End If
 	sCurChartSource = sMarket(Index,3)
 	bIsDocLanguage = Instr(1, sMarket(Index,6), sDocLanguage, SBBINARY) &lt;&gt; 0
 	bIsDocCountry = Instr(1, sMarket(Index,7), sDocCountry, SBBINARY) &lt;&gt; 0  OR SDocCountry = &quot;&quot;
@@ -106,7 +106,7 @@ Dim bIsDocCountry as Boolean
 	TransactModel.txtMinimum.CurrencySymbol = sCurCurrency
 	bEnableMarket = Index = 0
 	bEnableInternet = sCurChartSource &lt;&gt; &quot;&quot;
-	oMarketModel.Enabled = bEnableMarket	
+	oMarketModel.Enabled = bEnableMarket
 	oInternetModel.Enabled = bEnableInternet
 	If Not IsMissing(aEvent) Then
 		ConvertStylesCurrencies()
@@ -130,7 +130,7 @@ Dim oStyles as Object
 		oStyle = oStyles.GetbyIndex(m)
 		StyleName = oStyle.Name
 		bAddToList = CheckFormatType(oStyle)
-		If bAddToList Then 
+		If bAddToList Then
 			SwitchNumberFormat(ostyle, oDocFormats, sCurCurrency, sCurExtension)
 		End If
 	Next m
@@ -181,7 +181,7 @@ End Sub
 
 
 Function Numberformat( oFormats as Object, aFormatStr as String, oLocale as Variant )
-Dim nRetkey 
+Dim nRetkey
 	nRetKey = oFormats.queryKey(aFormatStr, oLocale, True)
 	If nRetKey = -1 Then
 		nRetKey = oFormats.addNew( aFormatStr, oLocale )
