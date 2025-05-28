@@ -1175,7 +1175,7 @@ uno::Reference< XAccessibleTable > SAL_CALL
 	return xRet;
 */
     // --> OD 2010-03-10 #i87532#
-    // assure that return accesible object is empty, if no column header exists.
+    // assure that return accessible object is empty, if no column header exists.
     SwAccessibleTableColHeaders* pTableColHeaders =
         new SwAccessibleTableColHeaders( GetMap(), static_cast< const SwTabFrm *>( GetFrm() ) );
     uno::Reference< XAccessibleTable > xTableColumnHeaders( pTableColHeaders );

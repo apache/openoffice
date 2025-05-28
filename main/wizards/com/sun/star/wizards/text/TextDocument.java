@@ -184,7 +184,7 @@ public class TextDocument
         }
         catch (Exception e)
         {
-            // TODO: it seems the whole project does not really have an error handling. Other menthods
+            // TODO: it seems the whole project does not really have an error handling. Other methods
             // seem to generally silence errors, so we can't do anything else here ...
         }
 

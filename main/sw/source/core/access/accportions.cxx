@@ -393,7 +393,7 @@ void SwAccessiblePortionData::GetLastLineBoundary(
 {
     DBG_ASSERT( aLineBreaks.size() >= 2, "need min + max value" );
 
-	// The last two positions except the two deleimiters are the ones
+	// The last two positions except the two delimiters are the ones
 	// we are looking for, except for empty paragraphs (nBreaks==3)
 	size_t nBreaks = aLineBreaks.size();
     FillBoundary( rBound, aLineBreaks, nBreaks <= 3 ? 0 : nBreaks-4 );
@@ -418,7 +418,7 @@ sal_uInt16 SwAccessiblePortionData::GetModelPosition( sal_Int32 nPos ) const
         DBG_ASSERT( ( aModelPositions[nPortionNo+1] - nStartPos ) ==
                     ( aAccessiblePositions[nPortionNo+1] -
                       aAccessiblePositions[nPortionNo] ),
-                    "accesability portion disagrees with text model" );
+                    "accessibility portion disagrees with text model" );
 
         sal_Int32 nWithinPortion = nPos - aAccessiblePositions[nPortionNo];
         nStartPos += nWithinPortion;
@@ -492,7 +492,7 @@ size_t SwAccessiblePortionData::FindBreak(
                 "earlier value should have been returned" );
 
     DBG_ASSERT( nMin < rPositions.size()-1,
-                "shouldn't return last position (due to termintator values)" );
+                "shouldn't return last position (due to terminator values)" );
 
     return nMin;
 }
@@ -608,7 +608,7 @@ sal_Int32 SwAccessiblePortionData::GetAccessiblePosition( sal_uInt16 nPos ) cons
         DBG_ASSERT( ( nEndPos - nStartPos ) ==
                     ( aAccessiblePositions[nPortionNo+1] -
                       aAccessiblePositions[nPortionNo] ),
-                    "accesability portion disagrees with text model" );
+                    "accessibility portion disagrees with text model" );
 
         sal_Int32 nWithinPortion = nPos - aModelPositions[nPortionNo];
         nRet += nWithinPortion;
@@ -643,7 +643,7 @@ sal_uInt16 SwAccessiblePortionData::FillSpecialPos(
 
         // skip backwards over zero-length portions, since GetCharRect()
         // counts all model-zero-length portions as belonging to the
-        // previus portion
+        // previous portion
         size_t nCorePortionNo = nPortionNo;
         while( nModelPos == nModelEndPos )
         {
@@ -788,7 +788,7 @@ sal_Bool SwAccessiblePortionData::GetEditableRange(
 			// special case: because size_t is usually unsigned, we can't just
 			// decrease nLastPortion to -1 (which would normally do the job, so
 			// this whole if wouldn't be needed). Instead, we'll do this
-			// special case and just increae the start portion beyond the last
+			// special case and just increase the start portion beyond the last
 			// portion to make sure the loop below will have zero iteration.
 			nStartPortion = nLastPortion + 1;
 	}

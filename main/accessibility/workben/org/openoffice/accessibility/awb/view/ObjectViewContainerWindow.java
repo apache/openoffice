@@ -28,7 +28,7 @@ import com.sun.star.accessibility.XAccessibleContext;
 
 /** Top level window that creates a single object view container.  This
     container shows information about a specific accessible object and is
-    not affected by the selection of the accessbility tree widget.
+    not affected by the selection of the accessibility tree widget.
 */
 public class ObjectViewContainerWindow
     extends JFrame

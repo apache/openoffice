@@ -60,7 +60,7 @@ namespace connectivity
         } T_DRIVERTYPE;
 		
 
-		/** delegates all calls to the orignal driver and extend the existing one with the SDBCX layer.
+		/** delegates all calls to the original driver and extend the existing one with the SDBCX layer.
 		
 		*/
 		class ODriverDelegator : public ::comphelper::OBaseMutex

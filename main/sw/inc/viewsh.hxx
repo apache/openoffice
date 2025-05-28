@@ -524,8 +524,8 @@ public:
 	void ShowPreViewSelection( sal_uInt16 nSelPage );
 	void InvalidateAccessibleFocus();
 
-    //apply Accessiblity options
-    void ApplyAccessiblityOptions(SvtAccessibilityOptions& rAccessibilityOptions);
+    //apply Accessibility options
+    void ApplyAccessibilityOptions(SvtAccessibilityOptions& rAccessibilityOptions);
 
     /** invalidate CONTENT_FLOWS_FROM/_TO relation for paragraphs
 

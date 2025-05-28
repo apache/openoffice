@@ -60,7 +60,7 @@ public class SSR
 
 
     /** Setup the GUI.  It is divided into three areas.  The lower half is
-        ocupied by a message area that logs all the events received from
+        occupied by a message area that logs all the events received from
         accessibility objects.  The upper half is shared by two different 
         displays of the currently focused object.  On left there is a textual
         representation.  On the right there is a graphical view of the 
@@ -149,7 +149,7 @@ public class SSR
     /// The main frame that contains all other GUI elements.
     private JFrame mFrame;
 
-    /// A textutal representation of the currently focused object.
+    /// A textual representation of the currently focused object.
     private TextualDisplay maTextualDisplay;
 
     /// A graphical representation of the currently focused object.
