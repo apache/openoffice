@@ -964,7 +964,7 @@ SwView::SwView( SfxViewFrame *_pFrame, SfxViewShell* pOldSh )
 
 	pWrtShell->SetUIOptions( aUsrPref );
 	pWrtShell->SetReadOnlyAvailable( aUsrPref.IsCursorInProtectedArea() );
-	pWrtShell->ApplyAccessiblityOptions(SW_MOD()->GetAccessibilityOptions());
+	pWrtShell->ApplyAccessibilityOptions(SW_MOD()->GetAccessibilityOptions());
 
 	if( pWrtShell->GetDoc()->IsUpdateExpFld() )
 	{

@@ -837,9 +837,9 @@ void SwModule::ConfigurationChanged( utl::ConfigurationBroadcaster* pBrdCst, sal
                     if(bAccessibility)
                     {
                         if(pViewShell->IsA(aSwViewTypeId))
-                            ((SwView*)pViewShell)->ApplyAccessiblityOptions(*pAccessibilityOptions);
+                            ((SwView*)pViewShell)->ApplyAccessibilityOptions(*pAccessibilityOptions);
                         else if(pViewShell->IsA(aSwPreViewTypeId))
-                            ((SwPagePreView*)pViewShell)->ApplyAccessiblityOptions(*pAccessibilityOptions);
+                            ((SwPagePreView*)pViewShell)->ApplyAccessibilityOptions(*pAccessibilityOptions);
                     }
                     pViewShell->GetWindow()->Invalidate();
                 }

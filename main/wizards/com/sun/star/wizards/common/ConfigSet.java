@@ -404,7 +404,7 @@ public class ConfigSet implements ConfigNode, XMLProvider, ListModel
     public void reindexSet(Object confView, String memberName, String indexPropertyName) throws Exception
     {
         /*
-         * First I read all memebrs of the set,
+         * First I read all members of the set,
          * except the one that should be number 0
          * to a vector, ordered by there index property
          */

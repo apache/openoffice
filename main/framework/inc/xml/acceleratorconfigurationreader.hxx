@@ -117,8 +117,8 @@ class AcceleratorConfigurationReader : public  css::xml::sax::XDocumentHandler
         /** @short  is used to map key codes to its
                     string representation.
                     
-            @descr  To perform this operatio is
-                    created only one times and holded
+            @descr  To perform this operation is
+                    created only one times and held
                     alive forever ...*/
         ::salhelper::SingletonRef< KeyMapping > m_rKeyMapping;
         

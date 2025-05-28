@@ -565,7 +565,7 @@ void SubstitutePathVariables_Impl::ReadSharePointRuleSetFromConfiguration(
             }
         }
 
-        // Decode the environment and optional the operatng system settings
+        // Decode the environment and optional the operating system settings
         Any                             aEnvValue;
         EnvironmentType eEnvType = GetEnvTypeFromString( aEnvUsed );
         if ( eEnvType == ET_OS )
