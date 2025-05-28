@@ -701,7 +701,7 @@ namespace frm
                     Reference<XIndexAccess> xFieldsByIndex(xFieldsByName, UNO_QUERY);
 
                     // do we have a bound column if yes we have to select it
-                    // and the displayed column is the first column othwhise we act as a combobox
+                    // and the displayed column is the first column otherwise we act as a combobox
                     ::rtl::OUString aFieldName;
                     ::rtl::OUString aBoundFieldName;
 

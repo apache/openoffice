@@ -288,8 +288,8 @@ public:
 
 	SwDocShell*     GetDocShell();
 
-    //apply Accessiblity options
-    void ApplyAccessiblityOptions(SvtAccessibilityOptions& rAccessibilityOptions);
+    //apply Accessibility options
+    void ApplyAccessibilityOptions(SvtAccessibilityOptions& rAccessibilityOptions);
 
     // OD 09.01.2003 #106334# - inline method to request values of new members
     // <mbResetFormDesignMode> and <mbFormDesignModeToReset>

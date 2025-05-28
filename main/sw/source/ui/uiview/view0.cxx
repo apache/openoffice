@@ -142,9 +142,9 @@ view::XSelectionSupplier* SwView::GetUNOObject()
 /* -----------------------------06.05.2002 13:18------------------------------
 
  ---------------------------------------------------------------------------*/
-void SwView::ApplyAccessiblityOptions(SvtAccessibilityOptions& rAccessibilityOptions)
+void SwView::ApplyAccessibilityOptions(SvtAccessibilityOptions& rAccessibilityOptions)
 {
-    pWrtShell->ApplyAccessiblityOptions(rAccessibilityOptions);
+    pWrtShell->ApplyAccessibilityOptions(rAccessibilityOptions);
     //to enable the right state of the selection cursor in readonly documents
     if(GetDocShell()->IsReadOnly())
         pWrtShell->ShowCrsr();
