@@ -1332,7 +1332,7 @@
  			else
 +			{
  				// Weird, but can happen with an empty segment.
- 				Warn("No associations");
+ 				Warn("No assocations");
 -
 +			}
  //			Assert(pslot->m_vpslotAssoc.Size() > 0);
