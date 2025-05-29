@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -35,7 +35,7 @@ option explicit
 ' This Interface/Service test depends on the following GLOBAL variables,
 ' which must be specified in the object creation:
 
-'     - java existing in PATH system var and 
+'     - java existing in PATH system var and
 '       SystemShellExecute.class file in docs dir
 
 '*************************************************************************
@@ -48,7 +48,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.system.XSystemShellExecute
 '*************************************************************************
 On Error Goto ErrHndl
@@ -63,32 +63,32 @@ On Error Goto ErrHndl
     cResURL = utils.getTempFileURL("SystemShellExecute.txt", true)
     cResFile = utils.URL2Path(cResURL)
     bOK = true
-    
+
     cArgs = "-classpath " + cClassPath + " SystemShellExecute " + cResFile
     Out.Log("Executing : 'java " + cArgs + "'")
     oObj.execute("java", cArgs, 1)
-    
+
     oFacc = createUnoService("com.sun.star.ucb.SimpleFileAccess")
 
-    if bOK then 
+    if bOK then
         Out.Log("Waiting while the file will be created or timeout reached ...")
         bExist = false
         i = 0
         while i &lt; 20 AND NOT bExist
             bExist = oFacc.exists(cResURL)
-            wait(1000) 
+            wait(1000)
             i = i + 1
         wend
-        
+
         if bExist then
             Out.Log("The command was executed and file created in " + i + " sec.")
         else
             Out.Log("File was not created.")
         endif
-        
+
         bOK = bOK AND bExist
     endif
-    
+
     Test.MethodTested("execute()", bOK)
 
 Exit Sub

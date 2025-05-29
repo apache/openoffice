@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="LocalHolidays" script:language="StarBasic">Option Explicit
 
@@ -33,10 +33,10 @@ Dim lDate&amp;
 	CalInsertBankholiday(DateSerial(YearInt, 1, 1), &quot;Jour de l&apos;an&quot;, cHolidayType_Full)
 	lEasterDate = CalEasterTable(YearInt)
 	CalInsertBankholiday(lEasterDate, &quot;Pâques&quot;, cHolidayType_Full)
-	CalInsertBankholiday(lEasterDate + 1, &quot;Lundi de Pâques&quot;, cHolidayType_Full)	
+	CalInsertBankholiday(lEasterDate + 1, &quot;Lundi de Pâques&quot;, cHolidayType_Full)
 	CalInsertBankholiday(lEasterDate + 39, &quot;Ascension&quot;, cHolidayType_Full)
 	CalInsertBankholiday(lEasterDate + 49, &quot;Pentecôte&quot;, cHolidayType_Full)
-	CalInsertBankholiday(lEasterDate + 50, &quot;Lundi de Pentecôte&quot;, cHolidayType_Full)	
+	CalInsertBankholiday(lEasterDate + 50, &quot;Lundi de Pentecôte&quot;, cHolidayType_Full)
 	CalInsertBankholiday(DateSerial(YearInt, 5, 1), &quot;Fête du travail&quot;, cHolidayType_Full)
 	CalInsertBankholiday(DateSerial(YearInt, 5, 8), &quot;Victoire 1945&quot;, cHolidayType_Full)
 	CalInsertBankholiday(DateSerial(YearInt, 7, 14), &quot;Fête Nationale&quot;, cHolidayType_Full)
@@ -78,14 +78,14 @@ Sub FindWholeYearHolidays_FI(ByVal YearInt as Integer)
 	CalInsertBankholiday(OsternDate-2, &quot;Pitkäperjantai&quot;, cHolidayType_Full)
 	CalInsertBankholiday(OsternDate, &quot;Pääsiäispäivä&quot;, cHolidayType_Full)
 	CalInsertBankholiday(OsternDate+1, &quot;2. pääsiäispäivä&quot;, cHolidayType_Full)
-	&apos; Ascension Day 
+	&apos; Ascension Day
 	CalInsertBankholiday(OsternDate+39, &quot;Helatorstai&quot;, cHolidayType_Full)
 	&apos; First of May
 	CalInsertBankholiday(DateSerial(YearInt, 5, 1), &quot;Vappu, suomalaisen työn päivä&quot;, cHolidayType_Full)
 	&apos; Mothers Day : 2nd Sunday in May, Full
 	CalInsertBankholiday(GetMonthDate(YearInt, 5,1,7), &quot;Äitienpäivä&quot;, cHolidayType_Full)
 	&apos; MidSummerfeast (next Sunday after 20th June)
-	CalInsertBankholiday(GetNextWeekday(YearInt, 6, 20, 7), &quot;Juhannus, Suomen lipun päivä&quot;, cHolidayType_Full)	
+	CalInsertBankholiday(GetNextWeekday(YearInt, 6, 20, 7), &quot;Juhannus, Suomen lipun päivä&quot;, cHolidayType_Full)
 	&apos; Independance day
 	CalInsertBankholiday(DateSerial(YearInt, 12, 6), &quot;Itsenäisyyspäivä&quot;, cHolidayType_Full)
 	&apos; Christmas
@@ -113,7 +113,7 @@ Dim lDate&amp;, VierterAdvent&amp;
 	CalInsertBankholiday(lDate+1, &quot;2. påskedag&quot;, cHolidayType_Full)
 	&apos; 4th Friday after Easter
 	CalInsertBankholiday(lDate+26, &quot;Store bededag&quot;, cHolidayType_Full)
-	&apos; &quot;Ascension Day 
+	&apos; &quot;Ascension Day
 	CalInsertBankholiday(lDate+39, &quot;Kristi himmelfahrt&quot;, cHolidayType_Full)
 	&apos; &quot;Whitsunday&quot;
 	CalInsertBankholiday(lDate+49, &quot;Pinsesøndag&quot;, cHolidayType_Full)
@@ -234,7 +234,7 @@ Dim lRamazanBayRamStartDate as Long
 			Exit Sub
 	End Select
 	&apos;Feast Of the Sacrifice Eve
-	CalInsertBankholiday(lKurbanBayRamStartDate, &quot;Kurban Bayramı Arefesi&quot;, cHolidayType_Half)	
+	CalInsertBankholiday(lKurbanBayRamStartDate, &quot;Kurban Bayramı Arefesi&quot;, cHolidayType_Half)
 	&apos;Feast Of the Sacrifice
 	AddFollowUpHolidays(lKurbanBayRamStartDate, 4, &quot;Kurban Bayram&quot;, cHolidayType_Full)
 	&apos; End of Ramadan Eve
@@ -242,7 +242,7 @@ Dim lRamazanBayRamStartDate as Long
 	&apos; End of Ramadan
 	AddFollowUpHolidays(lRamazanBayRamStartDate, 3, &quot;Ramazan (Şeker) Bayramı&quot;, cHolidayType_Full)
 End Sub
-	
+
 
 Sub FindWholeYearHolidays_GREEK(ByVal YearInt as Integer)
 Dim lDate as Long
@@ -269,7 +269,7 @@ Dim lDate as Long
 	lDate = CalOrthodoxEasterTable(YearInt)
 	&apos; Triodon
 	CalInsertBankholiday(lDate-70, &quot;Αρχή Τριωδίου&quot;, cHolidayType_Full)
- 	&apos; Meat Fare		
+ 	&apos; Meat Fare
 	CalInsertBankholiday(lDate-56, &quot;Τσικνοπέμπτη&quot;, cHolidayType_Full)
 	&apos; First Day of Lent
 	CalInsertBankholiday(lDate-48, &quot;Καθαρή Δευτέρα&quot;, cHolidayType_Full)
@@ -291,7 +291,7 @@ Dim lDate as Long
 	CalInsertBankholiday(lDate-1, &quot;Μεγάλο Σάββατο&quot;, cHolidayType_Full)
 	&apos; Easter Monday
 	CalInsertBankholiday(lDate+1, &quot;Δευτέρα του Πάσχα&quot;, cHolidayType_Full)
-	&apos; Pentecost	
+	&apos; Pentecost
 	CalInsertBankholiday(lDate+49, &quot;Κυριακή της Πεντηκοστής&quot;, cHolidayType_Full)
 	&apos; Ascension Day
 	CalInsertBankholiday(lDate+39, &quot;Του Αγίου Πνεύματος&quot;, cHolidayType_Full)
@@ -376,7 +376,7 @@ Sub FindWholeYearHolidays_PL (ByVal YearInt as Integer)
 	CalInsertBankholiday(OsternDate-2, &quot;Wielki Piątek&quot;, cHolidayType_Full)
 	CalInsertBankholiday(OsternDate, &quot;Wielka Niedziela&quot;, cHolidayType_Full)
 	CalInsertBankholiday(OsternDate+1, &quot;Lany Poniedziałek&quot;, cHolidayType_Full)
-	&apos; Ascension Day 
+	&apos; Ascension Day
 	CalInsertBankholiday(OsternDate+39, &quot;Wniebowstąpienie&quot;, cHolidayType_Full)
 	&apos; Pentecost
 	CalInsertBankholiday(OsternDate+49, &quot;Zielone Świątki&quot;, cHolidayType_Full)

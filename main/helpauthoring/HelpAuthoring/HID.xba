@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="HID" script:language="StarBasic">&apos; *** MODULE HID ***
 
@@ -37,8 +37,8 @@ Sub Main
 	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
 	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgHID&quot;)
 	oDialogModel = oDialog.Model
-	
-&apos;	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)	
+
+&apos;	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)
 &apos;	filename = oPath.UserConfig+&quot;/help_hid.lst&quot;
 &apos;	oButHIDList = oDialog.GetControl(&quot;butHIDList&quot;)
 &apos;	If FileExists(filename) Then
@@ -49,16 +49,16 @@ Sub Main
 &apos;		oButHIDList.Enable = false
 &apos;	End If
 	oTxtHID = oDialog.GetControl(&quot;txtHID&quot;)
-	
+
 	&apos; Check if bookmarks are allowed here
 	If IsInList Then
 		msgbox &quot;No Bookmarks allowed inside a list.&quot;, 48, &quot;D&apos;oh!&quot;
 		Exit Sub
 	End If
-	
+
 	&apos; Find out if we are in front of an existing HID
 	If oDialog.Execute() = 1 Then
-	
+
 		If oTxtHID.Text = &quot;&quot; Then
 			msgbox &quot;Empty Help ID. No Help ID element added.&quot;
 		Else
@@ -75,7 +75,7 @@ Sub Main
 				sHID = oTxtHID.Text
 				sUNO = &quot;&quot;
 			End If
-			
+
 			If sHID &lt;&gt; &quot;&quot; Then
 				bmid = CreateID
 				InsertTagCR(&quot;BOOKMARK&quot;,&quot;&lt;BOOKMARK branch=&quot;&quot;hid/&quot; + sHID + &quot;&quot;&quot; id=&quot;&quot;bm_id&quot; + bmid + &quot;&quot;&quot; localize=&quot;&quot;false&quot;&quot;/&gt;&quot;,&quot;hlp_aux_bookmark&quot;)
@@ -84,7 +84,7 @@ Sub Main
 				bmid = CreateID
 				InsertTagCR(&quot;BOOKMARK&quot;,&quot;&lt;BOOKMARK branch=&quot;&quot;hid/&quot; + sUNO + &quot;&quot;&quot; id=&quot;&quot;bm_id&quot; + bmid + &quot;&quot;&quot; localize=&quot;&quot;false&quot;&quot;/&gt;&quot;,&quot;hlp_aux_bookmark&quot;)
 			End If
-			
+
 		End If
 	End If
 	oDialog.dispose
@@ -92,7 +92,7 @@ Sub Main
 End Sub
 
 Sub ConvertToSymbol
-	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)	
+	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)
 	filename = oPath.UserConfig+&quot;/help_hid.lst&quot;
 	oTxtHID = oDialog.GetControl(&quot;txtHID&quot;)
 	oButHIDList = oDialog.GetControl(&quot;butHIDList&quot;)
@@ -114,7 +114,7 @@ Sub ConvertToSymbol
 				Else
 					symHID = arHID(0)
 				End If
-				bFound = true	
+				bFound = true
 			End If
 		Loop
 		Close #iNumber

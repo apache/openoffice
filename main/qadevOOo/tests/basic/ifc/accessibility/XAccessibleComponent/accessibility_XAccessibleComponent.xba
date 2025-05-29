@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -37,7 +37,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.accessibility.XAccessibleComponent
 '*************************************************************************
 On Error Goto ErrHndl
@@ -54,7 +54,7 @@ On Error Goto ErrHndl
     bOK = bOK AND (NOT isNull(bounds)) AND (bounds.X &gt;= 0) AND (bounds.Y &gt;= 0) _
     AND (bounds.Width &gt; 0) AND (bounds.Height &gt; 0)
     Test.MethodTested("getBounds()",bOK)
-    
+
     Test.StartMethod("contains()")
     Dim point1 As new com.sun.star.awt.Point
     Dim point2 As new com.sun.star.awt.Point
@@ -74,7 +74,7 @@ On Error Goto ErrHndl
 	Dim ComponentFound As Boolean
 	Dim visibleFound as Boolean
 	Dim XAccessibleSelection as Boolean
-	
+
     bOK = true
     childCount = oObj.getAccessibleChildCount()
     if (childCount = 0) then
@@ -97,7 +97,7 @@ On Error Goto ErrHndl
             End If
             if hasUNOInterfaces(oChild,"drafts.com.sun.star.accessibility.XAccessibleComponent") then
 				ComponentFound = TRUE
-				if XAccessibleSelection then 
+				if XAccessibleSelection then
 					if oObj.isAccessibleChildSelected(i) then
 						visibleFound = TRUE
 					End If
@@ -108,13 +108,13 @@ On Error Goto ErrHndl
 				point1.Y = chBounds.Y
 				accAt = oObj.getAccessibleAt(point1)
 				locRes = utils.at_equals(accAt,oChild)
-				Out.log("	getAccessibleAt() with   valid points with child " + i + ": " + locRes) 
-				bOK = bOK AND locRes        
+				Out.log("	getAccessibleAt() with   valid points with child " + i + ": " + locRes)
+				bOK = bOK AND locRes
 				point2.X = chBounds.X - 1
 				point2.Y = chBounds.Y - 1
 				accAt = oObj.getAccessibleAt(point2)
 				locRes = NOT utils.at_equals(accAt,oChild)
-				Out.log("	getAccessibleAt() with invalid points with child " + i + ": " + locRes) 
+				Out.log("	getAccessibleAt() with invalid points with child " + i + ": " + locRes)
 				bOK = bOK AND locRes
             End If
         next i
@@ -175,8 +175,8 @@ On Error Goto ErrHndl
     Out.Log("Background color is: "+bColor)
     Test.MethodTested("getBackground()",bOK)
 
-	
-	
+
+
 
 Exit Sub
 ErrHndl:
@@ -193,7 +193,7 @@ Function getAccessibleChildren() As Variant
     Dim emptyArray() As Variant
     j = 0
     i = 0
-    if NOT hasUNOInterfaces(oObj,"drafts.com.sun.star.accessibility.XAccessible") then 
+    if NOT hasUNOInterfaces(oObj,"drafts.com.sun.star.accessibility.XAccessible") then
         Out.Log("An object does not support XAccessible interface!")
         Exit Function
     End If
@@ -227,7 +227,7 @@ Function getParentComponent() As Object
         Exit Function
     End If
     accParent = oObj.getAccessibleParent()
-    if isNull(accParent) then 
+    if isNull(accParent) then
         Out.Log("The component has no accessible parent!")
         Exit Function
     End If

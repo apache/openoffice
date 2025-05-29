@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -42,7 +42,7 @@ Global oText as Object
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' toolkit.AccessibleFixedText
 '*************************************************************************
 On Error Goto ErrHndl
@@ -59,7 +59,7 @@ On Error Goto ErrHndl
     xText = createUnoService("com.sun.star.awt.UnoControlFixedTextModel")
     oText.setModel(xText)
     oText.setText("FixedText")
-    
+
     Dim oDialog as object
     Dim xDialog as Object
     oDialog = createUnoService("com.sun.star.awt.UnoControlDialog")
@@ -68,8 +68,8 @@ On Error Goto ErrHndl
     oDialog.addControl("Text", oText)
     oDialog.setVisible(true)
     oDialog.setPosSize(0, 0, 200, 100, com.sun.star.awt.PosSize.SIZE)
-    
-    
+
+
     tk = createUNOService("com.sun.star.awt.Toolkit")
     wait(500)
     oWin = tk.getActiveTopWindow
@@ -78,7 +78,7 @@ On Error Goto ErrHndl
     Out.Log("Implementation name: "+oObj.getImplementationName())
     accText = oObj.getText()
     readOnly = true
- 
+
 Exit Sub
 ErrHndl:
     Test.Exception()

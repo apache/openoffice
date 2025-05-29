@@ -11,9 +11,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -43,7 +43,7 @@ Global oGrouperCollection As Object
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' sc.ScPageObj
 '*************************************************************************
 On Error Goto ErrHndl
@@ -56,20 +56,20 @@ On Error Goto ErrHndl
     oGrouperCollection = createUNOService("com.sun.star.drawing.ShapeCollection")
 
     oDP = oDoc.getDrawPages()
-	
+
 	oDP.insertNewByIndex(0)
 	oDP.insertNewByIndex(1)
-	
+
 	oObj = oDP.getByIndex(0)
 	addShape(oObj,1)
 	addShape(oObj,2)
 	addShape(oObj,3)
 	addShape(oObj,4)
-	
+
     oXShapeInstance = oDoc.createInstance("com.sun.star.drawing.RectangleShape")
     oGrouperCollection.Add(oObj.getByIndex(2))
     oGrouperCollection.Add(oObj.getByIndex(3))
-    
+
 Exit Sub
 ErrHndl:
     Test.Exception()
@@ -89,7 +89,7 @@ On Error Goto ErrHndl
     oShape = oDoc.createInstance("com.sun.star.drawing.RectangleShape")
     oShape.Size = aSize
     oShape.Position = aPoint
-    
+
     oPage.add(oShape)
 
     addShapeToDrawDoc() = oShape

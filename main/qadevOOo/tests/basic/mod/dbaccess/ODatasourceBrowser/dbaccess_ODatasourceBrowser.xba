@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -44,24 +44,24 @@ Global otherWin As Object
 Global dispatchUrl As String
 
 ' variable for frame.XController
-Global oFrameToAttach As Object 
-Global oModelToAttach As Object 
+Global oFrameToAttach As Object
+Global oModelToAttach As Object
 Global bHasNoViewData As Boolean
-Global oObjToSuspend As Object  
+Global oObjToSuspend As Object
 Global bHasNoModel As Boolean
 
 ' variables for awt.XTabController
-Global oXTabControllerModel as Object    
+Global oXTabControllerModel as Object
 Global oXTabControllerContainer as Object
 
 ' variable for lang.XInitialization
-Global aInitArgs As Variant 
+Global aInitArgs As Variant
 
 
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' dbaccess.ODatasourceBrowser
 '*************************************************************************
 On Error Goto ErrHndl
@@ -84,10 +84,10 @@ On Error Goto ErrHndl
     url.Complete = ".component:DB/DataSourceBrowser"
     dispatcher = frame1.queryDispatch(url, "_beamer", 12)
     dispatcher.dispatch(url, DimArray())
-    
+
     frame2 = frame1.findFrame("_beamer", 4)
     frame2.setName("ODatasourceBrowser")
-    
+
     oObj = frame2.getController()
 
     ' now initialize the browser to make him displaying a table in its gtrid.
@@ -98,7 +98,7 @@ On Error Goto ErrHndl
     params(1).Value = com.sun.star.sdb.CommandType.TABLE
     params(2).Name = "Command"
     params(2).Value = "biblio"
-    
+
     oObj.initialize(params())
     ' waiting while data loading ...
     wait(2000)
@@ -129,7 +129,7 @@ On Error Goto ErrHndl
 
 ' setting variable for lang.XInitialization
     aInitArgs = params()
-    
+
 Exit Sub
 ErrHndl:
     Test.Exception()

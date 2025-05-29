@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="CalendarMain" script:language="StarBasic">Option Explicit
 
@@ -106,7 +106,7 @@ Dim iThisMonth as Integer
 	DlgCalModel.imgCountry.ImageURL = BitmapDir &amp; sBitmapFilename
 	CalChoosenLand = -2
 	CalLoadOwnData()
-	
+
 	With DlgCalModel
 		.cmdDelete.Enabled = False
 		.lstMonth.StringItemList() = cCalShortMonthNames()
@@ -140,7 +140,7 @@ Dim iThisMonth as Integer
 	DlgCalModel.cmdGoOn.DefaultButton = True
 	ToggleWindow(True)
 	DlgCalendar.GetControl(&quot;lblHolidays&quot;).Visible = sCurLangLocale  = cLANGUAGE_GERMAN
-	DlgCalendar.GetControl(&quot;lstHolidays&quot;).Visible = sCurLangLocale  = cLANGUAGE_GERMAN	
+	DlgCalendar.GetControl(&quot;lstHolidays&quot;).Visible = sCurLangLocale  = cLANGUAGE_GERMAN
 	fHeightCorrFactor = DlgCalendar.GetControl(&quot;imgCountry&quot;).Size.Height/198
 	fWidthCorrFactor = DlgCalendar.GetControl(&quot;imgCountry&quot;).Size.Width/166
 	DlgCalendar.Execute()
@@ -171,7 +171,7 @@ Dim DateFormatString as String
 				DateFormatString = &quot;DD/MMM&quot;
 			Else
 				DateFormatString = &quot;DD-MMM&quot;
-			End If		
+			End If
 		Case cLANGUAGE_DUTCH
 			DateFormatString = &quot;DD/MMM&quot;
 		Case cLANGUAGE_SWEDISH
@@ -191,13 +191,13 @@ Dim DateFormatString as String
 				DateFormatString = &quot;M&quot; &amp; &quot;&quot;&quot;&quot; &amp; &quot;月&quot; &amp; &quot;&quot;&quot;&quot; &amp; &quot;D&quot; &amp;&quot;&quot;&quot;&quot; &amp; &quot;日&quot; &amp; &quot;&quot;&quot;&quot;
 			End If
 		Case cLANGUAGE_GREEK
-			DateFormatString = &quot;DD/MMM&quot;		
+			DateFormatString = &quot;DD/MMM&quot;
 		Case cLANGUAGE_TURKISH
-			DateFormatString = &quot;DD/MMM&quot;		
+			DateFormatString = &quot;DD/MMM&quot;
 		Case cLANGUAGE_POLISH
-			DateFormatString = &quot;MMM DD&quot;		
+			DateFormatString = &quot;MMM DD&quot;
 		Case cLANGUAGE_FINNISH
-			DateFormatString = &quot;PP.KKK&quot;		
+			DateFormatString = &quot;PP.KKK&quot;
 	End Select
 
 	lDateFormat = AddNumberFormat(oFormats, DateFormatString, oDocument.CharLocale)

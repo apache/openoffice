@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="develop" script:language="StarBasic">REM  *****  BASIC  *****
 Option Explicit
@@ -57,8 +57,8 @@ Dim i as Integer
 		GetCurrentMetaValues(i)
 		oTCModel = InsertTextControl(i)
 		If CurFieldType = com.sun.star.sdbc.DataType.TIMESTAMP Then
-			InsertTimeStampShape(i)			
-		Else		
+			InsertTimeStampShape(i)
+		Else
 			InsertDBControl(i)
 			bIsVeryFirstRun = False
 			oDBModelList(i).LabelControl = oTCModel
@@ -112,7 +112,7 @@ Sub ResetPosSizes(LastIndex as Integer)
 					nYTCPos = nYDBPos + LabelDiffHeight
 				End If
 			End If
-			a = a + 1				
+			a = a + 1
 	End Select
 End Sub
 
@@ -213,8 +213,8 @@ Dim aSize As New com.sun.star.awt.Size
 			nYDBPos = nYTCPos + nTCHeight
 			If CurFieldLength = 20 And nDBWidth &gt; 2 * nTCWidth Then
 				iReduceWidth = iReduceWidth + 1
-			End If 
-	End Select	
+			End If
+	End Select
 	oShape.SetSize(GetSize(nTCWidth,nTCHeight))
 	If CurHelpText &lt;&gt; &quot;&quot; Then
 		oModel.HelpText = CurHelptext
@@ -234,7 +234,7 @@ Dim iColRightX as Long
 		oDBShapeList(i).Position = aPoint
 	Else
 		oDBModelList(i) = CreateUnoService(oModelService(CurControlType))
-		oDBShapeList(i) = InsertControl(oDrawPage, oDBModelList(i), aPoint, aSize)		
+		oDBShapeList(i) = InsertControl(oDrawPage, oDBModelList(i), aPoint, aSize)
 		SetNumerics(oDBModelList(i), CurFieldType)
 		If CurControlType = cCheckBox Then
 			oDBModelList(i).Label = &quot;&quot;
@@ -265,7 +265,7 @@ Dim oGroupShape as Object
 		oDBShapeList(i).Position = aPoint
 		nDBWidth = oDBShapeList(i).Size.Width
 		nDBHeight = oDBShapeList(i).Size.Height
-	Else		
+	Else
 		oGroupShape = oDocument.CreateInstance(&quot;com.sun.star.drawing.GroupShape&quot;)
 		oGroupShape.AnchorType = com.sun.star.text.TextContentAnchorType.AT_PARAGRAPH
 		oDrawPage.Add(oGroupShape)
@@ -293,12 +293,12 @@ Dim oGroupShape as Object
 		Set oDBShapeList(i)= oGroupShape
 	End If
 	CheckOuterPoints(nXDBPos, nDBWidth, nYDBPos, nDBHeight, True)
-	InsertTimeStampShape() = oDBShapeList(i)	
+	InsertTimeStampShape() = oDBShapeList(i)
 End Function
 
 
 &apos; Note: on all Controls except for the checkbox the Label has to be set
-&apos; a bit under the DBControl because its Height is also smaller 
+&apos; a bit under the DBControl because its Height is also smaller
 Sub GetLabelDiffHeight(Index as Integer)
 	If (CurArrangement = cLeftJustified) Or (CurArrangement = cColumnarLeft) Then
 		If Index &lt;= Ubound(FieldMetaValues()) Then
@@ -455,7 +455,7 @@ Dim nOldMaxRowY as Long
 					nMaxRowY = nRowY
 				End If
 			End If
-		End If 
+		End If
 	End If
 	&apos; Find the outer right point
 	If bIsFirstRun Then
@@ -510,10 +510,10 @@ Dim oColumn as Object
 	oColumn.Hidden = bHidden
 	SetNumerics(oColumn, iLocFieldType)
 	oColumn.DataField = CurFieldName
-	oColumn.Label = ColName 
+	oColumn.Label = ColName
 	oColumn.Width = 0 	&apos; Width of column is adjusted to Columname
 	oGridModel.insertByName(oColumn.Name, oColumn)
-End Function		
+End Function
 
 
 Sub ControlCaptionstoStandardLayout()

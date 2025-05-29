@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -46,7 +46,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.ucb.XCachedContentResultSetStubFactory
 '*************************************************************************
 On Error Goto ErrHndl
@@ -58,23 +58,23 @@ On Error Goto ErrHndl
 
     Dim oResSetStub As Object
     oResSetStub = oObj.createCachedContentResultSetStub(oContentResultSet)
-    
+
     If IsNull(oResSetStub) Then
         bOk = False
         out.log("Method returned NULL")
     Else
         Dim stubRowNum, setRowNum As Integer
-    
+
         oResSetStub.last()
-        stubRowNum = oResSetStub.getRow()     
-        
+        stubRowNum = oResSetStub.getRow()
+
         oContentResultSet.last()
         setRowNum = oContentResultSet.getRow()
-    
+
         bOk = (stubRowNum = setRowNum) and (setRowNum &gt; 0)
         out.log("Number of rows : set=" + setRowNum + "stub=" + stubRowNum)
     EndIf
-    
+
     Test.MethodTested("createCachedContentResultSetStub()", bOK)
 
 Exit Sub

@@ -10,9 +10,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -42,7 +42,7 @@ option explicit
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' com.sun.star.sw.SwXMailMerge
 '*************************************************************************
 On Error Goto ErrHndl
@@ -55,7 +55,7 @@ On Error Goto ErrHndl
 	Dim cOutputURL as String
     Dim oXConnection as Variant
     Dim myBookMarks as Variant
-	
+
     oObj = createUnoService("com.sun.star.text.MailMerge")
 
 	cTestDoc = utils.Path2URL(cTestDocsDir + "/" + "MailMerge.sxw")
@@ -65,10 +65,10 @@ On Error Goto ErrHndl
     cDataCommand = "biblio"
     oXResultSet = getXResultSet()
     oXConnection = oXResultSet.ActiveConnection
-    
+
 	' create arguments for XJob:
     myBookMarks = getMyBookMarks()
-	
+
     oObj.DataSourceName = cDataSourceName
     oObj.Command = cDataCommand
     oObj.CommandType = com.sun.star.sdb.CommandType.TABLE
@@ -78,7 +78,7 @@ On Error Goto ErrHndl
     oObj.FileNamePrefix = "Author"
     oObj.FileNameFromColumn = TRUE
     oObj.Selection = DimArray()
-    
+
 	' use a simple DataBase with simple Table
 	vXJobArg0(0).Name = "DataSourceName" : vXJobArg0(0).Value = cDataSourceName
 	vXJobArg0(1).Name = "Command" : vXJobArg0(1).Value = cDataCommand
@@ -88,7 +88,7 @@ On Error Goto ErrHndl
 	vXJobArg0(5).Name = "OutputURL" : vXJobArg0(5).Value = cOutputURL
 	vXJobArg0(6).Name = "FileNamePrefix" : vXJobArg0(6).Value = "Identifier"
 	vXJobArg0(7).Name = "FileNameFromColumn" : vXJobArg0(7).Value = true
-	
+
 	' use a simple DataBase with simple Table and write to printer
 	vXJobArg1(0).Name = "DataSourceName" : vXJobArg1(0).Value = cDataSourceName
 	vXJobArg1(1).Name = "Command" : vXJobArg1(1).Value = cDataCommand
@@ -97,7 +97,7 @@ On Error Goto ErrHndl
 	vXJobArg1(4).Name = "FileNamePrefix" : vXJobArg1(4).Value = "Author"
 	vXJobArg1(5).Name = "FileNameFromColumn" : vXJobArg1(5).Value = true
 	vXJobArg1(6).Name = "DocumentURL" : vXJobArg1(6).Value = cTestDoc
-	
+
 	' use a XConnection
 	vXJobArg2(0).Name = "ActiveConnection" : vXJobArg2(0).Value = oXConnection
 	vXJobArg2(1).Name = "DataSourceName" : vXJobArg2(1).Value = cDataSourceName
@@ -109,14 +109,14 @@ On Error Goto ErrHndl
 	vXJobArg2(7).Name = "FileNamePrefix" : vXJobArg2(7).Value = "Identifier"
 	vXJobArg2(8).Name = "FileNameFromColumn" : vXJobArg2(8).Value = true
 	vXJobArg2(9).Name = "Selection" : vXJobArg2(9).Value = myBookMarks()
-	
+
 	vXJobArgs(0) = vXJobArg0()
 	vXJobArgs(1) = vXJobArg1()
 	vXJobArgs(2) = vXJobArg2()
 	vXJobArgs(3) = DimArray()
-    
+
 	out.log("com.sun.star.text.MailMerge created.")
-    
+
 Exit Sub
 ErrHndl:
     Test.Exception()
@@ -135,7 +135,7 @@ Function getXResultSet() as Variant
     oRowSet.execute()
     wait(200)
 '    oRowSet.getFirst()
-    getXResultSet() = oRowSet 
+    getXResultSet() = oRowSet
 end Function
 
 Function getMyBookMarks() as Variant
