@@ -38,7 +38,7 @@ AstArray::AstArray(const OString& name, AstType* pType, const ExprList& rDimExpr
 }
 
 AstArray::AstArray(AstType* pType, const ExprList& rDimExpr, AstScope* pScope)
-	: AstType(NT_array, OString("arrary_"), pScope)
+	: AstType(NT_array, OString("array_"), pScope)
 	, m_pType(pType)
 	, m_dimension((sal_uInt32)(rDimExpr.size()))
 	, m_dimExpressions(rDimExpr)

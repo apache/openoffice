@@ -48,7 +48,7 @@ namespace rtl
 /**
   This String class provide base functionality for C++ like 8-Bit
   character array handling. The advantage of this class is, that it
-  handle all the memory managament for you - and it do it
+  handle all the memory management for you - and it do it
   more efficient. If you assign a string to another string, the
   data of both strings are shared (without any copy operation or
   memory allocation) as long as you do not change the string. This class
@@ -368,7 +368,7 @@ public:
       This function can't be used for language specific comparison.
 
       @param    str         the object (substring) to be compared.
-      @param    fromIndex   the index to start the comparion from.
+      @param    fromIndex   the index to start the comparison from.
                             The index must be greater or equal than 0
                             and less or equal as the string length.
       @return   sal_True if str match with the characters in the string
@@ -392,7 +392,7 @@ public:
       This function can't be used for language specific comparison.
 
       @param    str         the object (substring) to be compared.
-      @param    fromIndex   the index to start the comparion from.
+      @param    fromIndex   the index to start the comparison from.
                             The index must be greater or equal than 0
                             and less or equal as the string length.
       @return   sal_True if str match with the characters in the string
@@ -631,7 +631,7 @@ public:
       @param  index   the replacing index in str.
                       The index must be greater or equal as 0 and
                       less or equal as the length of the string.
-      @param  count   the count of charcters that will replaced
+      @param  count   the count of characters that will replaced
                       The count must be greater or equal as 0 and
                       less or equal as the length of the string minus index.
       @param  newStr  the new substring.
@@ -733,7 +733,7 @@ public:
       @param    cTok        the character which separate the tokens.
       @param    index       the position at which the token is searched in the
                             string.
-                            The index must not be greater thanthe length of the
+                            The index must not be greater than the length of the
                             string.
                             This param is set to the position of the
                             next token or to -1, if it is the last token.
@@ -764,7 +764,7 @@ public:
       Returns the first character from this string.
 
       @return   the first character from this string or 0, if this string
-                is emptry.
+                is empty.
     */
     sal_Char toChar() const SAL_THROW(())
     {

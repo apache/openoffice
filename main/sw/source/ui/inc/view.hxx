@@ -632,8 +632,8 @@ public:
 
     // Enable mail merge - mail merge field dialog enabled
     void EnableMailMerge(sal_Bool bEnable = sal_True);
-    //apply Accessiblity options
-    void ApplyAccessiblityOptions(SvtAccessibilityOptions& rAccessibilityOptions);
+    //apply Accessibility options
+    void ApplyAccessibilityOptions(SvtAccessibilityOptions& rAccessibilityOptions);
 
 	SwView(SfxViewFrame* pFrame, SfxViewShell*);
 	~SwView();

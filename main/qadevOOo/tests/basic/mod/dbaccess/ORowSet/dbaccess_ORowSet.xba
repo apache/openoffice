@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -64,7 +64,7 @@ option explicit
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' dbaccess.ORowSet
 '*************************************************************************
 On Error Goto ErrHndl
@@ -79,7 +79,7 @@ On Error Goto ErrHndl
 
     facc = createUnoService("com.sun.star.ucb.SimpleFileAccess")
 
-    if not facc.exists(srcFile) then 
+    if not facc.exists(srcFile) then
         Out.log("could not find source of testDB.dbf: " + srcFile)
     end if
     if (facc.exists(dstFile)) then facc.kill(dstFile)

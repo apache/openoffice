@@ -120,7 +120,7 @@ function GetMatches (sPattern)
  *  As there can be a great many matching types, some sort of abbreviation is necessary.
  *  Format all matches into lines of n entries.
  *  Show the line containing the selected match and the ones before and after.
- *  Show also the number of ommited matches.
+ *  Show also the number of omitted matches.
  */
 function ShowMatches (aMatches, nSelectionIndex)
 {

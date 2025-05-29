@@ -52,7 +52,7 @@ public class AccessibleEditableTextPara extends TestCase {
     /**
     * Called to create an instance of <code>TestEnvironment</code>
     * with an object to test and related objects.
-    * Obtains accissible object for the spreadsheet document.
+    * Obtains accessible object for the spreadsheet document.
     *
     * @param Param test parameters
     * @param log writer to log information while testing

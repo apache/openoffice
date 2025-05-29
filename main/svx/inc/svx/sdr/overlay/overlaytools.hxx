@@ -30,7 +30,7 @@
 //////////////////////////////////////////////////////////////////////////////
 // Overlay helper class which holds a BotmapEx which is to be visualized
 // at the given logic position with the Bitmap's pixel size, unscaled and
-// unrotated (like a marker). The discrete pixel on the bitmap assocciated
+// unrotated (like a marker). The discrete pixel on the bitmap associated
 // with the target position is given in discrete X,Y coordinates
 namespace drawinglayer
 {
@@ -45,7 +45,7 @@ namespace drawinglayer
             // The logic position
 			basegfx::B2DPoint						maBasePosition;
 
-            // The pixel inside the BitmapEx which is assocciated with
+            // The pixel inside the BitmapEx which is associated with
             // the target position (offset in the bitmap)
 			sal_uInt16								mnCenterX;
 			sal_uInt16								mnCenterY;

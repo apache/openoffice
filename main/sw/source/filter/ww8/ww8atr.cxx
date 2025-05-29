@@ -4237,7 +4237,7 @@ void WW8Export::Out_BorderLine(WW8Bytes& rO, const SvxBorderLine* pLine,
 void WW8Export::Out_SwFmtBox(const SvxBoxItem& rBox, bool bShadow)
 {
     if ( bOutPageDescs && !bWrtWW8 )
-        return; // no page ouline in WW6
+        return; // no page outline in WW6
 
     static const sal_uInt16 aBorders[] =
     {

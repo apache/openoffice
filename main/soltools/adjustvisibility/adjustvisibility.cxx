@@ -152,7 +152,7 @@ void adjustVisibility( const std::string& rFile, int fd, bool bVerbose)
 		    if ( aShdr.sh_type != SHT_SYMTAB ) {
     			continue;
             }
-            // Section is a symbol section. Get the assiociated data.
+            // Section is a symbol section. Get the associated data.
             Elf_Data* pSymbolData;
 		    if ( (pSymbolData = elf_getdata(pScn, 0)) == NULL ) {
                 throw ElfError(rFile, "elf_getdata() failed");

@@ -131,13 +131,13 @@ public class DesktopTools
     }
 
     /**
-     * returns an object arrary of all open documents
+     * returns an object array of all open documents
      * @param xMSF the MultiServiceFactory
      * @return returns an Array of document kinds like ["swriter"]
      */
     /**
      * returns an array of all open documents
-     * @param xMSF the XMultiSerivceFactory
+     * @param xMSF the XMultiServiceFactory
      * @return returns an array of all open documents
      */
     public static Object[] getAllOpenDocuments(XMultiServiceFactory xMSF)

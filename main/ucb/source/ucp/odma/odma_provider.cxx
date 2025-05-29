@@ -205,7 +205,7 @@ uno::Reference< ucb::XContent > SAL_CALL ContentProvider::queryContent(
 	::rtl::Reference<ContentProperties> aProp;
 	// first check if we got an ODMA ID from outside
 	if( sCanonicURL.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM(ODMA_URL_ODMAID)))
-	{// we get an orignal ODMA id so we have to look for the name
+	{// we get an original ODMA id so we have to look for the name
 		::rtl::OString sDocId = ::rtl::OUStringToOString(sCanonicURL,RTL_TEXTENCODING_MS_1252);
 		sal_Char* lpszDocName = new sal_Char[ODM_NAME_MAX];
 		

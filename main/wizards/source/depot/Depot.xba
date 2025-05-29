@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Depot" script:language="StarBasic">Option Explicit
 
@@ -54,8 +54,8 @@ Dim bEnableHistory as Boolean
 		ChooseMarket()
 	End If
 	If Not IsMissing(bChooseMarketPlace) Then
-		If bChooseMarketPlace Then	
-			oMarketModel.Enabled = bEnableMarket	
+		If bChooseMarketPlace Then
+			oMarketModel.Enabled = bEnableMarket
 			oInternetModel.Enabled = bEnableInternet
 		End If
 	End If
@@ -150,13 +150,13 @@ Dim LocStockName as String
 		oMovementSheet.GetCellByPosition(SBCOLUMNNAME2, iNewRow).String = CellStockName
 		oMovementSheet.GetCellByPosition(SBCOLUMNQUANTITY2, iNewRow).Value = -TransactModel.txtQuantity.Value
 	End If
-	
+
 	oMovementSheet.GetCellByPosition(SBCOLUMNDATE2, iNewRow).Value = CDateFromISO(TransactModel.txtDate.Date)
 	oMovementSheet.GetCellByPosition(SBCOLUMNRATE2, iNewRow).Value = TransactModel.txtRate.Value
 	oMovementSheet.GetCellByPosition(SBCOLUMNPROVPERCENT2, iNewRow).Value = TransactModel.txtCommission.EffectiveValue
 	oMovementSheet.GetCellByPosition(SBCOLUMNPROVMIN2, iNewRow).Value = TransactModel.txtMinimum.Value
 	oMovementSheet.GetCellByPosition(SBCOLUMNPROVFIX2, iNewRow).Value = TransactModel.txtFix.Value
-	
+
 	&apos; Buy stocks: Update overview for new stocks
 	If TransactModel.Step = SBDIALOGBUY Then
 		iStockRow = GetStockRowIndex(CellStockName)
@@ -178,7 +178,7 @@ Dim LocStockName as String
 		Else
 			iRow = iNewRow-1
 		End If
-		
+
 		&apos; Check that no transaction after split date exists else cancel split
 		Do While Sold &gt; 0
 			oNameCell = oMovementSheet.GetCellByPosition(SBCOLUMNNAME2, iRow)
@@ -190,7 +190,7 @@ Dim LocStockName as String
 				If RestQuantity &gt; 0 Then
 					If RestQuantity &lt; Sold Then
 						&apos; Recalculate profit of new transaction
-						Profit = Profit - oMovementSheet.GetCellByPosition(SBCOLUMNPRCREST2, iRow).Value	
+						Profit = Profit - oMovementSheet.GetCellByPosition(SBCOLUMNPRCREST2, iRow).Value
 						AddValueToCellContent(SBCOLUMNQTYSOLD2, iRow, RestQuantity)
 						PartialValue = RestQuantity / Sold * Value
 						AddValueToCellContent(SBCOLUMNREALPROC2, iRow, PartialValue)
@@ -198,7 +198,7 @@ Dim LocStockName as String
 						Value = Value - PartialValue
 					Else
 						&apos; Recalculate profit of neTransactModel.lstBuyStocks.Textw transaction
-						PartialValue = oMovementSheet.GetCellByPosition(SBCOLUMNPRCREST2, iRow).Value	
+						PartialValue = oMovementSheet.GetCellByPosition(SBCOLUMNPRCREST2, iRow).Value
 						Profit = Profit - PartialValue/RestQuantity * Sold
 						&apos; Update sold shares cell
 						AddValueToCellContent(SBCOLUMNQTYSOLD2, iRow, Sold)
@@ -213,17 +213,17 @@ Dim LocStockName as String
 			iRow = iRow + TransactMode
 		Loop
 		oMovementSheet.GetCellByPosition(SBCOLUMNREALPROFIT2,iNewRow).Value = Profit
-		iStockRow = GetStockRowIndex(SelStockName)	
+		iStockRow = GetStockRowIndex(SelStockName)
 		iRestQuantity = oFirstSheet.GetCellbyPosition(SBCOLUMNQUANTITY1, iStockRow).Value
 &apos;		If iRestQuantity = 0 Then
 &apos;			If oSheets.HasbyName(SelStockName) Then
 &apos;				oSheets.RemoveByName(SelStockName)
 &apos;			End If
 &apos;		Else
-			
+
 &apos;		End If
 	End If
-	InsertCurrentValue(CurRate, iStockRow,TransactDate)	
+	InsertCurrentValue(CurRate, iStockRow,TransactDate)
 	ProtectSheets(oSheets)
 End Sub
 
@@ -250,7 +250,7 @@ Dim CurStockName as String
 			.txtRate.Value = oFirstSheet.GetCellbyPosition(SBCOLUMNRATE1, iCurRow).Value
 		End If
 		.txtStockID.Enabled = .Step = SBDIALOGBUY
-		.lblStockID.Enabled = .Step = SBDIALOGBUY	
+		.lblStockID.Enabled = .Step = SBDIALOGBUY
 		&apos; Default settings for quantity and rate
 		.txtStockID.Text = GetStockID(CurStockName, iCurRow)
 	End With
@@ -296,13 +296,13 @@ Dim oModel as Object
 			SplitDate = CDateFromISO(oModel.txtDate.Date)
 			iRow = SBROWFIRSTTRANSACT2
 			NoteText = cSplit &amp; SplitDate &amp; &quot;, &quot; &amp; oModel.txtOldRate.Value &amp; oModel.lblColon.Label &amp; oModel.txtNewRate.Value
-			Do 
+			Do
 				oNameCell = oMovementSheet.GetCellByPosition(SBCOLUMNNAME2, iRow)
 				CellStockName = oNameCell.String
 				If CellStockName = SelStockName Then
 					oDateCell = oMovementSheet.GetCellByPosition(SBCOLUMNDATE2, iRow)
 					If oDateCell.Value &gt;= SplitDate Then
-						MsgBox sMsgWrongExchangeDate, SBMSGOK + SBMSGSTOP, sMsgError				
+						MsgBox sMsgWrongExchangeDate, SBMSGOK + SBMSGSTOP, sMsgError
 						Exit Sub
 					End If
 				End If
@@ -325,7 +325,7 @@ Dim oModel as Object
 					End If
 				Case HANDLESPLIT
 					oDateCell = oMovementSheet.GetCellByPosition(SBCOLUMNDATE2, iRow)
-				 	SplitCellValue(oMovementSheet, NewNumber, OldNumber, SBCOLUMNQUANTITY2, iRow, NoteText)			
+				 	SplitCellValue(oMovementSheet, NewNumber, OldNumber, SBCOLUMNQUANTITY2, iRow, NoteText)
 		 			SplitCellValue(oMovementSheet, OldNumber, NewNumber, SBCOLUMNRATE2, iRow, &quot;&quot;)
 				 	SplitCellValue(oMovementSheet, NewNumber, OldNumber, SBCOLUMNQTYSOLD2, iRow, &quot;&quot;)
 			End Select
@@ -395,7 +395,7 @@ Sub EnableTransactionControls(bEnable as Boolean)
 			TransactModel.cmdGoOn.DefaultButton = True
 		End If
 	End With
-End Sub		
+End Sub
 
 
 Sub SetupTransactionControls(CurStep as Integer)
@@ -414,7 +414,7 @@ Sub SetupTransactionControls(CurStep as Integer)
 	CellValuetoControl(oBankSheet, TransactModel.txtCommission, &quot;ProvisionPercent&quot;)
 	CellValuetoControl(oBankSheet, TransactModel.txtMinimum, &quot;ProvisionMinimum&quot;)
 	CellValuetoControl(oBankSheet, TransactModel.txtFix, &quot;ProvisionFix&quot;)
-End Sub	
+End Sub
 
 
 Sub AddShortCuttoControl()
@@ -444,7 +444,7 @@ Dim CurStep as Integer
 	CurStep = aEvent.Source.Model.Tag
 	If FillListbox(DlgStockRates.GetControl(&quot;lstStockNames&quot;), StockRatesTitle(CurStep), True) Then
 		StockRatesModel.Step = CurStep
-		ToggleStockRateControls(False, CurStep)	
+		ToggleStockRateControls(False, CurStep)
 		InitializeStockRatesControls(CurStep)
 		DlgStockRates.Execute()
 	End If
@@ -462,11 +462,11 @@ Dim StockName as String
 End Sub
 
 
-Sub ToggleStockRateControls(bDoEnable as Boolean, CurStep as Integer)	
+Sub ToggleStockRateControls(bDoEnable as Boolean, CurStep as Integer)
 	With StockRatesModel
 		.lblStockID.Enabled = False
 		.txtStockID.Enabled = False
-		.cmdGoOn.Enabled = Ubound(StockRatesModel.lstStockNames.SelectedItems()) &lt;&gt; -1		
+		.cmdGoOn.Enabled = Ubound(StockRatesModel.lstStockNames.SelectedItems()) &lt;&gt; -1
 		Select Case CurStep
 			Case 1
 				.optPerShare.Enabled = bDoEnable

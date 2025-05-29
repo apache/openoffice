@@ -989,7 +989,7 @@ void WinMtfOutput::UpdateClipRegion()
 	{
 		aClipPath.bNeedsUpdate = sal_False;
 
-		mpGDIMetaFile->AddAction( new MetaPopAction() );                    // taking the orignal clipregion
+		mpGDIMetaFile->AddAction( new MetaPopAction() );                    // taking the original clipregion
 		mpGDIMetaFile->AddAction( new MetaPushAction( PUSH_CLIPREGION ) );  // 
 
 		switch ( aClipPath.GetType() )

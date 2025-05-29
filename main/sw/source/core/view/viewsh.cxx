@@ -2605,7 +2605,7 @@ SwAccessibleMap* ViewShell::GetAccessibleMap()
 /* -----------------------------06.05.2002 13:23------------------------------
 
  ---------------------------------------------------------------------------*/
-void ViewShell::ApplyAccessiblityOptions(SvtAccessibilityOptions& rAccessibilityOptions)
+void ViewShell::ApplyAccessibilityOptions(SvtAccessibilityOptions& rAccessibilityOptions)
 {
     if(pOpt->IsPagePreview() && !rAccessibilityOptions.GetIsForPagePreviews())
     {

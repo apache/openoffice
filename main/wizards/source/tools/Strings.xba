@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Strings" script:language="StarBasic">Option Explicit
 Public sProductname as String
@@ -87,7 +87,7 @@ Dim i as Integer
 		End If
 	Next i
 	PartStringInArray() = -1
-End Function		
+End Function
 
 
 &apos; Deletes the String &apos;SmallString&apos; out of the String &apos;BigString&apos;
@@ -133,7 +133,7 @@ Function ArrayOutOfString(BigString, Separator as String, Optional MaxIndex as I
 Dim LocList() as String
 	LocList=Split(BigString,Separator)
 
-	If not isMissing(MaxIndex) then maxIndex=ubound(LocList())	
+	If not isMissing(MaxIndex) then maxIndex=ubound(LocList())
 
 	ArrayOutOfString=LocList
 End Function
@@ -206,7 +206,7 @@ Dim oListbox as Object
 Dim i as integer
 Dim a as Integer
 	a = 0
-	oListbox = oDialog.GetControl(ListboxName)	
+	oListbox = oDialog.GetControl(ListboxName)
 	oListbox.RemoveItems(0, oListbox.GetItemCount)
 	For i = 0 to Ubound(ValList(), 1)
 		If ValList(i) &lt;&gt; &quot;&quot; Then
@@ -217,7 +217,7 @@ Dim a as Integer
 End Sub
 
 
-&apos; Searches for a String in a two-dimensional Array by querying all Searchindexex of the second dimension 
+&apos; Searches for a String in a two-dimensional Array by querying all Searchindexex of the second dimension
 &apos; and delivers the specific String of the ReturnIndex in the second dimension of the Searchlist()
 Function StringInMultiArray(SearchList(), SearchString as String, SearchIndex as Integer, ReturnIndex as Integer, Optional MaxIndex as Integer) as String
 Dim i as integer
@@ -236,7 +236,7 @@ Dim CurFieldString as String
 End Function
 
 
-&apos; Searches for a Value in multidimensial Array by querying all Searchindices of the passed dimension 
+&apos; Searches for a Value in multidimensial Array by querying all Searchindices of the passed dimension
 &apos; and delivers the Index where it is found.
 Function GetIndexInMultiArray(SearchList(), SearchValue, SearchIndex as Integer) as Integer
 Dim i as integer
@@ -254,7 +254,7 @@ Dim CurFieldValue
 End Function
 
 
-&apos; Searches for a Value in multidimensial Array by querying all Searchindices of the passed dimension 
+&apos; Searches for a Value in multidimensial Array by querying all Searchindices of the passed dimension
 &apos; and delivers the Index where the Searchvalue is found as a part string
 Function GetIndexForPartStringinMultiArray(SearchList(), SearchValue, SearchIndex as Integer) as Integer
 Dim i as integer
@@ -273,7 +273,7 @@ End Function
 
 
 Function ArrayfromMultiArray(MultiArray as String, iDim as Integer)
-Dim MaxIndex as Integer	
+Dim MaxIndex as Integer
 Dim i as Integer
 	MaxIndex = Ubound(MultiArray())
 	Dim ResultArray(MaxIndex) as String
@@ -326,7 +326,7 @@ Dim i as Integer
 Dim SepList() as String
 	If IsMissing(Separator) Then
 		Path = ConvertFromUrl(Path)
-		Separator = GetPathSeparator()		
+		Separator = GetPathSeparator()
 	End If
 	SepList() = ArrayoutofString(Path, Separator,i)
 	FileNameoutofPath = SepList(i)
@@ -385,40 +385,40 @@ Function BubbleSortList(ByVal SortList(),optional sort2ndValue as Boolean)
 	Dim sortvalue as Integer
 	Dim DisplayDummy
 	dimensions = 2
-	
-On Local Error Goto No2ndDim	
+
+On Local Error Goto No2ndDim
 	k = Ubound(SortList(),2)
 	No2ndDim:
 	If Err &lt;&gt; 0 Then dimensions = 1
-	
+
 	i = Ubound(SortList(),1)
 	If ismissing(sort2ndValue) then
 		sortvalue = 0
 	else
 		sortvalue = 1
 	end if
-	
+
 	For s = 1 to i - 1
 		For t = 0 to i-s
 			Select Case dimensions
 			Case 1
-				If SortList(t) &gt; SortList(t+1) Then                             
+				If SortList(t) &gt; SortList(t+1) Then
 					DisplayDummy = SortList(t)
 					SortList(t) = SortList(t+1)
-					SortList(t+1) = DisplayDummy    
+					SortList(t+1) = DisplayDummy
 				End If
 			Case 2
-				If SortList(t,sortvalue) &gt; SortList(t+1,sortvalue) Then 
-					For k = 0 to UBound(SortList(),2)                        
+				If SortList(t,sortvalue) &gt; SortList(t+1,sortvalue) Then
+					For k = 0 to UBound(SortList(),2)
 							DisplayDummy = SortList(t,k)
 							SortList(t,k) = SortList(t+1,k)
-							SortList(t+1,k) = DisplayDummy 
+							SortList(t+1,k) = DisplayDummy
 					Next k
 				End If
 			End Select
 		Next t
-	Next s 
-	BubbleSortList = SortList()             
+	Next s
+	BubbleSortList = SortList()
 End Function
 
 
@@ -467,6 +467,6 @@ WRONGDATATYPE:
 		CheckDouble() = 0
 		Resume NoErr:
 	End If
-NOERR:	
+NOERR:
 End Function
 </script:module>

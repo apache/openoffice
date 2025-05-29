@@ -201,7 +201,7 @@ public class FileHelper
                 // adding file to List
                 try
                 {
-                    // Composing the URL by replacing all backslashs
+                    // Composing the URL by replacing all backslashes
                     String stringUrl = "file:///"
                         + entries[ i ].getAbsolutePath().replace( '\\', '/' );
                     files.add(stringUrl);

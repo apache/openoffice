@@ -136,7 +136,7 @@ private:
     XRenderPeer& mrRenderPeer;
     Picture      maPicture;
 
-private: // prevent copy and assignmet
+private: // prevent copy and assignment
            ScopedPic( const ScopedPic& );
     void   operator=( const ScopedPic& );
 };

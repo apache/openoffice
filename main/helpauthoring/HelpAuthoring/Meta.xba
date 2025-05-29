@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Meta" script:language="StarBasic">REM  *****  BASIC  *****
 
@@ -38,24 +38,24 @@ Sub Main
 	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
 	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgMeta&quot;)
 	oDialogModel = oDialog.Model
-	
+
 	&apos;oTxtFName = oDialog.GetControl(&quot;txtFileName&quot;)
 	&apos;oTxtFName.Text = document.DocumentInfo.PropertyValues(29).Value
 	&apos;oTxtFName.Text = document.DocumentInfo.GetPropertyValue(&quot;Description&quot;)
-	
+
 &apos;	If oTxtFName.Text = &quot;&quot; Then
 &apos;		msgbox &quot;The document must be saved first.&quot;+chr(13)+&quot;Please save the document and call this dialog again.&quot;
 &apos;		oDialog.dispose
 &apos;		Exit Sub
 &apos;	End If
-	
+
 	oTxtTitle = oDialog.GetControl(&quot;txtTitle&quot;)
 	oTxtTitle.Text = document.DocumentInfo.Title
-	
+
 	oOpIndInc = oDialog.GetControl(&quot;opIndexInclude&quot;)
 	oOpIndExc = oDialog.GetControl(&quot;opIndexExclude&quot;)
-	
-	
+
+
 	&apos;oCbFileStatus = oDialog.GetControl(&quot;cbFileStatus&quot;)
 	&apos;arItems = Array(&quot;DRAFT&quot;,&quot;FINAL&quot;,&quot;PUBLISH&quot;,&quot;STALLED&quot;,&quot;DEPRECATED&quot;)
 	&apos;oCbFileStatus.AddItems(arItems,ubound(arItems))
@@ -65,35 +65,35 @@ Sub Main
 	&apos;Else
 	&apos;	oCbFileStatus.SetText(sStatus)
 	&apos;End If
-	
+
 
 	If document.DocumentInfo.GetUserFieldValue(GetUserFieldNumber(&quot;Indexer&quot;)) = &quot;exclude&quot; then
 		oOpIndExc.State = True
 	Else
 		oOpIndInc.State = True
 	End If
-	
+
 	&apos;oTxtTopicID = oDialog.GetControl(&quot;txtTopicID&quot;)
 	&apos;oTxtTopicID.Text = document.DocumentInfo.GetUserFieldValue(1)
-	
+
 	&apos;oTxtComment = oDialog.GetControl(&quot;txtComment&quot;)
 	&apos;oTxtComment.Text = document.DocumentInfo.GetUserFieldValue(GetUserFieldNumber(&quot;Comment&quot;))
-	
+
 	&apos;oTxtEdited = oDialog.GetControl(&quot;txtLastEdited&quot;)
 	&apos;oTxtEdited.Text = document.DocumentInfo.GetUserFieldValue(3)
-	
+
 	If oDialog.Execute() = 1 Then &apos; update the meta data
 		document.DocumentInfo.Title = oTxtTitle.Text
 		&apos;document.DocumentInfo.SetUserFieldValue(1,oTxtTopicID.Text)
-		&apos;document.DocumentInfo.SetUserFieldValue(GetUserFieldNumber(&quot;Comment&quot;),oTxtComment.Text)	
+		&apos;document.DocumentInfo.SetUserFieldValue(GetUserFieldNumber(&quot;Comment&quot;),oTxtComment.Text)
 		&apos;document.DocumentInfo.SetUserFieldValue(3,oTxtEdited.Text)
 		&apos;document.DocumentInfo.SetPropertyValue(&quot;Keywords&quot;,oCbFileStatus.Text)
-		
+
 		&apos;If (oCbFileStatus.Text = &quot;PUBLISH&quot;) Then
 			REM... Check for paras without ID: If there are any, this cannot be PUBLISH!
-		
+
 		&apos;End If
-		
+
 		If oOpIndExc.State = True Then
 			document.DocumentInfo.SetUserFieldValue(GetUserFieldNumber(&quot;Indexer&quot;),&quot;exclude&quot;)
 		Else
@@ -103,7 +103,7 @@ Sub Main
 	oDialog.dispose
 end sub
 
-&apos; Normalizes the values for title and topic id 
+&apos; Normalizes the values for title and topic id
 &apos; (if the fields are empty or contain invalid values)
 Sub NormalizeMeta (Event As Object)
 	Select Case Event.Source.Model.Name
@@ -164,14 +164,14 @@ Sub SetTopicTitle(txt As String)
 		Loop
 	Else
 		oTxtTitle.Text = txt
-	End If	
+	End If
 End Sub
 
 &apos; Sets the value in the Topic title field when
 &apos; &quot;Fetch&quot; button is pressed
 Sub FetchTopicTitle
 	SetTopicTitle(&quot;&quot;)
-	
+
 End Sub
 
 &apos; Sets the value in the Topic ID dialog field when
