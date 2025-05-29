@@ -62,7 +62,7 @@ void CALLTYPE GetFunctionCount( USHORT *nCount )
  * @param *nNo Input: Function number between 0 and nCount - 1
  * @param *pFuncName Output: Functionname which should be called in the AddIn-DLL
  * @param *nParamCount Output: Number of Parameter. Must be greater than 0, because there's always a return-Value. Maximum is 16.
- * @param *peType Output: Pointer to arrray with exactly 16 variables of typ Paramtype. nParamCount Entries are set to the type of the corresponding Parameters.
+ * @param *peType Output: Pointer to array with exactly 16 variables of typ Paramtype. nParamCount Entries are set to the type of the corresponding Parameters.
  * @param *pInternalName Output: Functionname as seen by the Spreadsheet user
  *
  * @see #GetFunctionCount, #GetParameterDescription

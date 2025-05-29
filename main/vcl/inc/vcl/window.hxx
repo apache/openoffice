@@ -957,7 +957,7 @@ public:
     virtual void      SetText( const XubString& rStr );
     virtual String   	GetText() const;
     // return the actual text displayed
-    // this may have e.g. accellerators removed or portions
+    // this may have e.g. accelerators removed or portions
     // replaced by ellipsis
     virtual String		GetDisplayText() const;
     // gets the visible background color. for transparent windows
