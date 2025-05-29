@@ -59,7 +59,7 @@ public class NumberFormat implements BIFFRecord {
     
     /**
 	 * Reads the NumberFormat from the <code>InputStream</code> Byte array
-	 * containg strings are doubled in length becuse they use unicode
+	 * containing strings are doubled in length because they use unicode
 	 *
 	 * @return the total number of bytes read 
 	 */

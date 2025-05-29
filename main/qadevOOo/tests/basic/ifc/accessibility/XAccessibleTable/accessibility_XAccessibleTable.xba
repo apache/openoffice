@@ -141,7 +141,7 @@ On Error Goto ErrHndl
         locRes = (selRows(i) &gt;= selRows(i-1))
         bOK = bOK AND locRes
         if NOT locRes then
-            Out.Log("Element "+i+" : Returned sequence is not in accending order.")
+            Out.Log("Element "+i+" : Returned sequence is not in ascending order.")
             break
         End If
     wend
@@ -166,7 +166,7 @@ On Error Goto ErrHndl
         locRes = (selCols(i) &gt;= selCols(i-1))
         bOK = bOK AND locRes
         if NOT locRes then
-            Out.Log("Element "+i+" : Returned sequence is not in accending order.")
+            Out.Log("Element "+i+" : Returned sequence is not in ascending order.")
             break
         End If
     wend
