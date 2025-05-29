@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -36,7 +36,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' SERVICE: 
+' SERVICE:
 ' com.sun.star.text.TextSection
 '*************************************************************************
 On Error Goto ErrHndl
@@ -48,7 +48,7 @@ On Error Goto ErrHndl
     PropertyTester.TestProperty("IsVisible")
 
     PropertyTester.TestProperty("IsProtected")
-    
+
     Dim link As New com.sun.star.text.SectionFileLink
     link.FileURL = utils.Path2URL(cTestDocsDir + "Iterator.sxw")
 
@@ -108,15 +108,15 @@ On Error Goto ErrHndl
     oTC = oDoc.createInstance("com.sun.star.text.TextColumns")
     oldVal = oObj.TextColumns.ColumnCount
     Out.Log("COLUMNS BEFORE: "+oldVal)
-    if (oldVal &lt; 100) then 
+    if (oldVal &lt; 100) then
 	val2set = oldVal + 20
-    else 
+    else
 	val2set = oldVal - 20
     Endif
     Out.Log("COLUMNS TO SET: "+val2set)
-    oTC.ColumnCount = val2set                                                                     
+    oTC.ColumnCount = val2set
     oObj.TextColumns = oTC
-    newVal = oObj.TextColumns.ColumnCount                                                                  
+    newVal = oObj.TextColumns.ColumnCount
     Out.Log("COLUMNS AFTER: "+newVal)
     bOK = oldVal &lt;&gt; newVal
     Test.MethodTested("TextColumns", bOK)

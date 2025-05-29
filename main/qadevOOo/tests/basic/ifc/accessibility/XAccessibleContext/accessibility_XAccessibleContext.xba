@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -37,7 +37,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.accessibility.XAccessibleContext
 '*************************************************************************
 On Error Goto ErrHndl
@@ -47,7 +47,7 @@ On Error Goto ErrHndl
 
     Test.StartMethod("getAccessibleChildCount()")
     bOK = true
-    childCount = oObj.getAccessibleChildCount()    
+    childCount = oObj.getAccessibleChildCount()
     bOK = bOK AND (childCount &gt; -1)
     Test.MethodTested("getAccessibleChildCount()",bOK)
 
@@ -57,9 +57,9 @@ On Error Goto ErrHndl
     Dim mCount As Integer
     bOK = true
     i = 0
-    if (childCount &gt; 50) then 
+    if (childCount &gt; 50) then
         mCount = 50
-    else 
+    else
         mCount = childCount
     End If
     while (i &lt; mCount)

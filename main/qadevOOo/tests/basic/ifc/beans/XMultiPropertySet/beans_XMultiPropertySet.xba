@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -35,10 +35,10 @@ option explicit
 Dim nCB1Val As Integer, nCB2Val As Integer
 
 
-Sub RunTest() 
+Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.beans.XMultiPropertySet
 '*************************************************************************
 On Error Goto ErrHndl
@@ -100,14 +100,14 @@ On Error Goto ErrHndl
         'kick off MYBEVOID-Properties
             If (oProperties(n).Attributes AND com.sun.star.beans.PropertyAttribute.MAYBEVOID) = 0 Then
                 searchProperties(m) = oProperties(n).Name
-                Out.Log("" + m + " " + searchProperties(m) + " " + oObj.getPropertySetInfo.getPropertyByName(searchProperties(m)).Type.Name + " " + n)          
+                Out.Log("" + m + " " + searchProperties(m) + " " + oObj.getPropertySetInfo.getPropertyByName(searchProperties(m)).Type.Name + " " + n)
                 Dim pVal As Variant
-                
+
                 pVal = oObj.getPropertyValue(searchProperties(m))
                 oObj.setPropertyValues(Array(searchProperties(m)), Array(pVal))
                 m = m + 1
             End If
-        End If 
+        End If
     next n
     nCount = m - 1
 
@@ -224,9 +224,9 @@ On Error Goto ErrHndl
         case 8 'string
             vValues(nIndex) = vValues(nIndex) + cIfcShortName
     end select
-    
+
     Out.Log("The property '" + sProperties(nIndex) + "' was changed")
-    
+
     oObj.setPropertyValues(sProperties(), vValues())
 
     bOK = (nCB1Val = nCB1ValMem) AND (nCB2Val &gt;= nCB2ValMem)

@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -49,7 +49,7 @@ Global oForm As Object
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' forms.OEditModel
 '*************************************************************************
 On Error Goto ErrHndl
@@ -70,7 +70,7 @@ On Error Goto ErrHndl
     'get control from document
     oDrawPage = oDoc.DrawPage
     oForm = oDrawPage.Forms.getByName("Standard")
-    
+
 	oForm.DataSourceName = "Bibliography"
 	oForm.Command = "biblio"
 	oForm.CommandType = com.sun.star.sdb.CommandType.TABLE
@@ -78,7 +78,7 @@ On Error Goto ErrHndl
     oObj.DataField = "Author"
 
     oForm.load()
-    
+
     ' for XUpdateBroadcaster
     bCustomUpdate = true
 
@@ -90,12 +90,12 @@ End Sub
 Global sChangedText As String
 
 ' for XBoundComponent
-Sub prepareCommit() 
+Sub prepareCommit()
 On Error Goto ErrHndl
     Out.Log("prepareCommit() called.")
     sChangedText = "_" + oObj.Text
     oObj.Text = sChangedText
-    
+
     exit sub
 ErrHndl:
     Test.Exception()
@@ -106,7 +106,7 @@ Function checkCommit() As Boolean
 On Error Goto ErrHndl
     Out.Log("checkCommit() called.")
     Dim rowText As Variant
-    
+
     rowText = oForm.getString(oForm.findColumn("Author"))
     checkCommit() = (rowText = sChangedText)
 

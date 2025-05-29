@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -36,7 +36,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.i18n.XCharacterClassification
 '*************************************************************************
 On Error Goto ErrHndl
@@ -44,7 +44,7 @@ On Error Goto ErrHndl
     Dim sType As Variant
     Dim cString1 As String, cString2 As String
     Dim cRes As Variant, sDir As Variant
-    
+
     Const cString = "TestString1"
 
     Dim Locale As New com.sun.star.lang.Locale
@@ -130,7 +130,7 @@ On Error Goto ErrHndl
    	with com.sun.star.i18n.KParseType
         tTypes(0) = .IDENTNAME: tVals(0) = "int"
         tTypes(1) = .IDENTNAME: tVals(1) = "_ind1"
-        tTypes(2) = .ONE_SINGLE_CHAR: tVals(2) = "=" 
+        tTypes(2) = .ONE_SINGLE_CHAR: tVals(2) = "="
         tTypes(3) = .ANY_NUMBER: tVals(3) = "1234"
     end with
 
@@ -144,7 +144,7 @@ On Error Goto ErrHndl
     Dim nStart As Integer, idx As Integer, nPos As Integer
     Dim pRes As Variant
     Dim cActStr As String
-    
+
     nStart = 1
     idx = 0
 

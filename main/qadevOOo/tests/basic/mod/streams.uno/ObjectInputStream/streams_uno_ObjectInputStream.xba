@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -43,7 +43,7 @@ Global oMarkOut As Object, oMarkIn As Object
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' stm.ObjectInputStream
 '*************************************************************************
 On Error Goto ErrHndl
@@ -59,7 +59,7 @@ On Error Goto ErrHndl
     oMarkOut.setOutputStream(oPipe)
     oOutputStream.setOutputStream(oMarkOut)
     oInputStream = oObj
-    
+
 Exit Sub
 ErrHndl:
     Test.Exception()
@@ -76,7 +76,7 @@ End Function
 
 Function getOutStream() As Object
 On Error Goto ErrHndl
-    Dim oNewPipe As Object 
+    Dim oNewPipe As Object
 
     oNewPipe = createUnoService("com.sun.star.io.Pipe")
     oMarkIn.getInputStream().closeInput()

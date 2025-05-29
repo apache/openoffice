@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Switch" script:language="StarBasic">REM  *****  BASIC  *****
 
@@ -44,11 +44,11 @@ Sub InsertSwitchTag(bInline As Boolean)
 
 	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgSwitch&quot;)
 	oDialogModel = oDialog.Model
-	
+
 	oOptSys = oDialog.GetControl(&quot;opSwitchSystem&quot;)
 	oOptAppl = oDialog.GetControl(&quot;opSwitchAppl&quot;)
 	oOptDistrib = oDialog.GetControl(&quot;opSwitchDistrib&quot;)
-	
+
 	If oDialog.Execute() = 1 Then
 		If oOptSys.State Then
 			sType = &quot;sys&quot;
@@ -64,13 +64,13 @@ Sub InsertSwitchTag(bInline As Boolean)
 	If bInline Then
 		oSel = thiscomponent.getcurrentcontroller.getselection
 		oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
-		
+
 		oStart = oCur.getStart
 		oCurStart = oStart.getText.createTextCursorByRange(oStart)
-			
+
 		oEnd = oCur.getEnd
 		oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
-		
+
 		thiscomponent.getcurrentcontroller.select(oCurStart)
 		InsertTag(&quot;SWITCHINLINE_&quot;,&quot;&lt;SWITCHINLINE select=&quot;&quot;&quot; + sType + &quot;&quot;&quot;&gt;&quot;,&quot;hlp_aux_switch&quot;)
 		InsertCase(sType,TRUE,oCur)
@@ -98,11 +98,11 @@ Sub InsertCaseElement
 
 	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgSwitch&quot;)
 	oDialogModel = oDialog.Model
-	
+
 	oOptSys = oDialog.GetControl(&quot;opSwitchSystem&quot;)
 	oOptAppl = oDialog.GetControl(&quot;opSwitchAppl&quot;)
 	oOptDistrib = oDialog.GetControl(&quot;opSwitchDistrib&quot;)
-	
+
 	If oDialog.Execute() = 1 Then
 		If oOptSys.State Then
 			sType = &quot;sys&quot;
@@ -122,7 +122,7 @@ End Sub
 Sub InsertDefaultElement
 	document = StarDesktop.CurrentComponent
 	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
-	
+
 	InsertDefault
 End Sub
 
@@ -133,11 +133,11 @@ Sub InsertCaseInlineElement
 
 	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgSwitch&quot;)
 	oDialogModel = oDialog.Model
-	
+
 	oOptSys = oDialog.GetControl(&quot;opSwitchSystem&quot;)
 	oOptAppl = oDialog.GetControl(&quot;opSwitchAppl&quot;)
 	oOptDistrib = oDialog.GetControl(&quot;opSwitchDistrib&quot;)
-	
+
 	If oDialog.Execute() = 1 Then
 		If oOptSys.State Then
 			sType = &quot;sys&quot;
@@ -152,13 +152,13 @@ Sub InsertCaseInlineElement
 
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
-		
+
 	oStart = oCur.getStart
 	oCurStart = oStart.getText.createTextCursorByRange(oStart)
-			
+
 	oEnd = oCur.getEnd
 	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
-		
+
 	InsertCase(sType,TRUE,oCur)
 	GoLeft(1)
 End Sub
@@ -169,13 +169,13 @@ Sub InsertDefaultInlineElement
 
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
-		
+
 	oStart = oCur.getStart
 	oCurStart = oStart.getText.createTextCursorByRange(oStart)
-			
+
 	oEnd = oCur.getEnd
 	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
-		
+
 	InsertDefaultInline(oCur)
 	GoLeft(1)
 End Sub
@@ -208,16 +208,16 @@ End Sub
 Sub InsertDefaultInline(oCur as Object)
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	&apos;oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
-	
+
 	oStart = oCur.getStart
 	oCurStart = oStart.getText.createTextCursorByRange(oStart)
-			
+
 	oEnd = oCur.getEnd
 	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
-		
+
 	thiscomponent.getcurrentcontroller.select(oCurStart)
 	InsertTag(&quot;DEFAULTINLINE_&quot;,&quot;&lt;DEFAULTINLINE&gt;&quot;)
-		
+
 	thiscomponent.getcurrentcontroller.select(oCurEnd)
 	InsertTag(&quot;_DEFAULTINLINE&quot;,&quot;&lt;/DEFAULTINLINE&gt;&quot;)
 End Sub
@@ -228,13 +228,13 @@ Sub InsertCase(sType As String, bInline As Boolean,oCur As Object)
 	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
 	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgCase&quot;)
 	oDialogModel = oDialog.Model
-	
+
 	oOptPredefined = oDialog.GetControl(&quot;opPredefined&quot;)
 	oCbPredefined = oDialog.GetControl(&quot;cbPredefined&quot;)
 	oOptSpecify = oDialog.GetControl(&quot;opSpecify&quot;)
 	oTxtSpecify = oDialog.GetControl(&quot;txtSpecify&quot;)
 	oTxtSpecify.setVisible(FALSE)
-	
+
 	If sType = &quot;sys&quot; Then
 		arItems = Array(&quot;WIN&quot;,&quot;UNIX&quot;,&quot;MAC&quot;)
 	ElseIf sType = &quot;appl&quot; Then
@@ -248,7 +248,7 @@ Sub InsertCase(sType As String, bInline As Boolean,oCur As Object)
 
 	oCbPredefined.AddItems(arItems,ubound(arItems))
 	oCbPredefined.SetText(arItems(0))
-	
+
 	If oDialog.Execute() = 1 Then
 
 		If oOptPredefined.State Then
@@ -256,20 +256,20 @@ Sub InsertCase(sType As String, bInline As Boolean,oCur As Object)
 		Else
 			sSelect = oTxtSpecify.Text
 		End If
-	
+
 		If bInline Then
 			oSel = thiscomponent.getcurrentcontroller.getselection
 			&apos;oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
-			
+
 			oStart = oCur.getStart
 			oCurStart = oStart.getText.createTextCursorByRange(oStart)
-			
+
 			oEnd = oCur.getEnd
 			oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
-		
+
 			thiscomponent.getcurrentcontroller.select(oCurStart)
 			InsertTag(&quot;CASEINLINE_&quot;,&quot;&lt;CASEINLINE select=&quot;&quot;&quot;+sSelect+&quot;&quot;&quot;&gt;&quot;)
-		
+
 			thiscomponent.getcurrentcontroller.select(oCurEnd)
 			InsertTag(&quot;_CASEINLINE&quot;,&quot;&lt;/CASEINLINE&gt;&quot;)
 		Else
@@ -292,7 +292,7 @@ Sub StatusChange
 	oCbPredefined = oDialog.GetControl(&quot;cbPredefined&quot;)
 	oOptSpecify = oDialog.GetControl(&quot;opSpecify&quot;)
 	oTxtSpecify = oDialog.GetControl(&quot;txtSpecify&quot;)
-	
+
 	If oOptPredefined.State Then
 		oCbPredefined.setVisible(TRUE)
 		oTxtSpecify.setVisible(FALSE)

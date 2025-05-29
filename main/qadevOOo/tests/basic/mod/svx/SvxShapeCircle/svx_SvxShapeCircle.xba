@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -47,7 +47,7 @@ option explicit
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' svx.SvxShapeCircle
 '*************************************************************************
 On Error Goto ErrHndl
@@ -83,7 +83,7 @@ Function CreateShape(x As Integer, y As Integer, width As Integer, height As Int
     Dim oShape As Object
     Dim pos As new com.sun.star.awt.Point
     Dim size As new com.sun.star.awt.Size
-    
+
     oShape = doc.createInstance("com.sun.star.drawing." + kind)
     pos.X = x
     pos.Y = y
