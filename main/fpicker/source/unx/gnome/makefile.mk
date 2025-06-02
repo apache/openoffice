@@ -56,7 +56,7 @@ dummy:
 .ELSE
 
 CFLAGS+= $(WIDGETSET_CFLAGS)
-CFLAGS+= $(PKGCONFIG_CFLAGS)
+INCSYSTEM+= $(PKGCONFIG_CFLAGS)
 
 # --- Files --------------------------------------------------------
 

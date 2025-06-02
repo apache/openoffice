@@ -43,7 +43,7 @@ dummy:
 
 .ELSE # we build for KDE
 
-CFLAGS+= $(KDE4_CFLAGS)
+INCSYSTEM+= $(KDE4_CFLAGS)
 
 # --- Files --------------------------------------------------------
 

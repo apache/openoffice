@@ -35,7 +35,7 @@ ENABLE_EXCEPTIONS=TRUE
 .INCLUDE: $(PRJ)$/util$/makefile.pmk
 
 .IF "$(SYSTEM_OPENSSL)" == "YES"
-CFLAGS+= $(OPENSSL_CFLAGS)
+INCSYSTEM+= $(OPENSSL_CFLAGS)
 .ENDIF
 
 # --- Files --------------------------------------------------------
