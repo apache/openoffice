@@ -45,7 +45,7 @@ DLLPRE =
 
 .IF "$(ENABLE_KDE4)" == "TRUE"
 
-CFLAGS+=$(KDE4_CFLAGS)
+INCSYSTEM+=$(KDE4_CFLAGS)
 
 # --- Files ---
 
