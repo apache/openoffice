@@ -36,7 +36,8 @@ ENABLE_EXCEPTIONS=TRUE
 INCPRE+=$(PRJ)$/source$/inc
 
 .IF "$(SYSTEM_LIBXML)" == "YES"
-CFLAGS+=-DSYSTEM_LIBXML $(LIBXML_CFLAGS)
+INCSYSTEM+=$(LIBXML_CFLAGS)
+CFLAGS+=-DSYSTEM_LIBXML
 .ENDIF
 
 # --- Files --------------------------------------------------------
