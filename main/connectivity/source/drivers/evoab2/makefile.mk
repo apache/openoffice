@@ -41,7 +41,7 @@ dummy:
 PKGCONFIG_MODULES=gtk+-2.0
 .INCLUDE : pkg_config.mk
 
-CFLAGS+=$(GOBJECT_CFLAGS)
+INCSYSTEM+=$(GOBJECT_CFLAGS)
 
 # --- Files -------------------------------------
 
