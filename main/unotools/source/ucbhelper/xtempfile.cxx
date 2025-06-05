@@ -24,6 +24,7 @@
 #include <XTempFile.hxx>
 #include <cppuhelper/factory.hxx>
 #include <cppuhelper/typeprovider.hxx>
+#include <cppuhelper/implementationentry.hxx>
 #include <unotools/tempfile.hxx>
 #include <osl/file.hxx>
 #include <unotools/configmgr.hxx>
@@ -474,10 +475,18 @@ throw ( ::css::uno::RuntimeException )
 	return static_cast< ::cppu::OWeakObject * >( new OTempFileService(context) );
 }
 
-::css::uno::Reference < ::css::lang::XSingleComponentFactory > OTempFileService::createServiceFactory_Static( ::css::uno::Reference < ::css::lang::XMultiServiceFactory > const & )
+static struct ::cppu::ImplementationEntry g_component_entries[] =
 {
-	return ::cppu::createSingleComponentFactory( XTempFile_createInstance, getImplementationName_Static(), getSupportedServiceNames_Static() );
-}
+	{
+		XTempFile_createInstance,
+		OTempFileService::getImplementationName_Static,
+		OTempFileService::getSupportedServiceNames_Static,
+		::cppu::createSingleComponentFactory,
+		0,
+		0
+	},
+	{ 0, 0, 0, 0, 0, 0 }
+};
 
 // C functions to implement this as a component
 
@@ -495,20 +504,7 @@ extern "C" SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnviron
  * @return a component factory (generic uno interface)
  */
 extern "C" SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
-    const sal_Char * pImplName, void * pServiceManager, void * /*pRegistryKey*/ )
+    const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
-    void * pRet = 0;
-	::css::uno::Reference< ::css::lang::XMultiServiceFactory > xSMgr(
-		reinterpret_cast< ::css::lang::XMultiServiceFactory * >( pServiceManager ) );
-	::css::uno::Reference< ::css::lang::XSingleComponentFactory > xFactory;
-
-	if (OTempFileService::getImplementationName_Static().compareToAscii( pImplName ) == 0)
-		xFactory = OTempFileService::createServiceFactory_Static ( xSMgr );
-
-	if ( xFactory.is() )
-	{
-		xFactory->acquire();
-		pRet = xFactory.get();
-	}
-    return pRet;
+	return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, g_component_entries );
 }

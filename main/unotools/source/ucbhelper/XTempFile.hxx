@@ -30,7 +30,6 @@
 #include <com/sun/star/io/XTempFile.hpp>
 #include <com/sun/star/io/XTruncate.hpp>
 #include <com/sun/star/lang/XSingleComponentFactory.hpp>
-#include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <cppuhelper/implbase5.hxx>
 #ifndef _CPPUHELPER_PROPERTYSETMIXIN_HXX_
@@ -138,8 +137,6 @@ public:
 	//::com::sun::star::uno::Reference < ::com::sun::star::uno::XInterface > SAL_CALL XTempFile_createInstance( ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & context);
 	static ::rtl::OUString getImplementationName_Static ();
 	static ::com::sun::star::uno::Sequence < ::rtl::OUString > getSupportedServiceNames_Static();
-
-	static ::com::sun::star::uno::Reference < com::sun::star::lang::XSingleComponentFactory > createServiceFactory_Static( com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > const & rServiceFactory );
 
 private:
 	OTempFileService( OTempFileService & );
