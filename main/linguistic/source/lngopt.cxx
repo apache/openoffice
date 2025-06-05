@@ -385,7 +385,7 @@ void LinguProps::launchEvent( const PropertyChangeEvent &rEvt ) const
 }
 
 Reference< XInterface > SAL_CALL LinguProps_CreateInstance(
-            const Reference< XMultiServiceFactory > & /*rSMgr*/ )
+            const Reference< XComponentContext > & /*rCtx*/ )
 		throw(Exception)
 {
 	Reference< XInterface > xService = (cppu::OWeakObject*)new LinguProps;
@@ -659,25 +659,6 @@ uno::Sequence< OUString > LinguProps::getSupportedServiceNames_Static()
 	uno::Sequence< OUString > aSNS( 1 );	// auch mehr als 1 Service moeglich
 	aSNS.getArray()[0] = A2OU( SN_LINGU_PROPERTIES );
 	return aSNS;
-}
-
-void * SAL_CALL LinguProps_getFactory( const sal_Char * pImplName,
-			XMultiServiceFactory *pServiceManager, void * )
-{
-	void * pRet = 0;
-	if ( !LinguProps::getImplementationName_Static().compareToAscii( pImplName ) )
-	{
-		Reference< XSingleServiceFactory > xFactory =
-			cppu::createOneInstanceFactory(
-				pServiceManager,
-				LinguProps::getImplementationName_Static(),
-				LinguProps_CreateInstance,
-				LinguProps::getSupportedServiceNames_Static());
-		// acquire, because we return an interface pointer instead of a reference
-		xFactory->acquire();
-		pRet = xFactory.get();
-	}
-	return pRet;
 }
 
 ///////////////////////////////////////////////////////////////////////////

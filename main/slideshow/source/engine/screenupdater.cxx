@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #include "precompiled_slideshow.hxx"
 
@@ -30,199 +29,199 @@
 #include <algorithm>
 
 namespace {
-    class UpdateLock : public ::slideshow::internal::ScreenUpdater::UpdateLock
-    {
-    public:
-        UpdateLock (::slideshow::internal::ScreenUpdater& rUpdater, const bool bStartLocked);
-        virtual ~UpdateLock (void);
-        virtual void Activate (void);
-    private:
-        ::slideshow::internal::ScreenUpdater& mrUpdater;
-        bool mbIsActivated;
-    };
+	class UpdateLock : public ::slideshow::internal::ScreenUpdater::UpdateLock
+	{
+	public:
+		UpdateLock (::slideshow::internal::ScreenUpdater& rUpdater, const bool bStartLocked);
+		virtual ~UpdateLock (void);
+		virtual void Activate (void);
+	private:
+		::slideshow::internal::ScreenUpdater& mrUpdater;
+		bool mbIsActivated;
+	};
 }
 
 namespace slideshow
 {
 namespace internal
 {
-    typedef std::vector<
-        std::pair<UnoViewSharedPtr,bool> > UpdateRequestVector;
+	typedef std::vector<
+		std::pair<UnoViewSharedPtr,bool> > UpdateRequestVector;
 
-    struct ScreenUpdater::ImplScreenUpdater
-    {
-        /** List of registered ViewUpdaters, to consult for necessary
-            updates
-        */
-        ThreadUnsafeListenerContainer<
-            ViewUpdateSharedPtr,
-            std::vector<ViewUpdateSharedPtr> > maUpdaters;
+	struct ScreenUpdater::ImplScreenUpdater
+	{
+		/** List of registered ViewUpdaters, to consult for necessary
+			updates
+		*/
+		ThreadUnsafeListenerContainer<
+			ViewUpdateSharedPtr,
+			std::vector<ViewUpdateSharedPtr> > maUpdaters;
 
-        /// Views that have been notified for update 
-        UpdateRequestVector                    maViewUpdateRequests;
+		// Views that have been notified for update
+		UpdateRequestVector                    maViewUpdateRequests;
 
-        /// List of View. Used to issue screen updates on.
-        UnoViewContainer const&                mrViewContainer;
- 
-        /// True, if a notifyUpdate() for all views has been issued.
-        bool                                   mbUpdateAllRequest;
+		// List of View. Used to issue screen updates on.
+		UnoViewContainer const&                mrViewContainer;
 
-        /// True, if at least one notifyUpdate() call had bViewClobbered set
-        bool                                   mbViewClobbered;
+		// True, if a notifyUpdate() for all views has been issued.
+		bool                                   mbUpdateAllRequest;
 
-        /// The screen is updated only when mnLockCount==0
-        sal_Int32 mnLockCount;
-        
-        explicit ImplScreenUpdater( UnoViewContainer const& rViewContainer ) :
-            maUpdaters(),
-            maViewUpdateRequests(),
-            mrViewContainer(rViewContainer),
-            mbUpdateAllRequest(false),
-            mbViewClobbered(false),
-            mnLockCount(0)
-        {}
-    };
+		// True, if at least one notifyUpdate() call had bViewClobbered set
+		bool                                   mbViewClobbered;
 
-    ScreenUpdater::ScreenUpdater( UnoViewContainer const& rViewContainer ) :
-        mpImpl(new ImplScreenUpdater(rViewContainer) )
-    {
-    }
+		// The screen is updated only when mnLockCount==0
+		sal_Int32 mnLockCount;
 
-    ScreenUpdater::~ScreenUpdater()
-    {
-        // outline because of pimpl
-    }
+		explicit ImplScreenUpdater( UnoViewContainer const& rViewContainer ) :
+			maUpdaters(),
+			maViewUpdateRequests(),
+			mrViewContainer(rViewContainer),
+			mbUpdateAllRequest(false),
+			mbViewClobbered(false),
+			mnLockCount(0)
+		{}
+	};
 
-    void ScreenUpdater::notifyUpdate()
-    {
-        mpImpl->mbUpdateAllRequest = true;
-    }
-    
-    void ScreenUpdater::notifyUpdate( const UnoViewSharedPtr& rView, 
-                                      bool                    bViewClobbered )
-    {
-        mpImpl->maViewUpdateRequests.push_back( 
-            std::make_pair(rView, bViewClobbered) );
+	ScreenUpdater::ScreenUpdater( UnoViewContainer const& rViewContainer ) :
+		mpImpl(new ImplScreenUpdater(rViewContainer) )
+	{
+	}
 
-        if( bViewClobbered )
-            mpImpl->mbViewClobbered = true;
-    }
+	ScreenUpdater::~ScreenUpdater()
+	{
+		// outline because of pimpl
+	}
 
-    void ScreenUpdater::commitUpdates()
-    {
-        if (mpImpl->mnLockCount > 0)
-            return;
-        
-        // cases:
-        //
-        // (a) no update necessary at all 
-        //
-        // (b) no ViewUpdate-generated update
-        //     I. update all views requested -> for_each( mrViewContainer )
-        //    II. update some views requested -> for_each( maViewUpdateRequests )
-        //
-        // (c) ViewUpdate-triggered update - update all views
-        //
+	void ScreenUpdater::notifyUpdate()
+	{
+		mpImpl->mbUpdateAllRequest = true;
+	}
 
-        // any ViewUpdate-triggered updates?
-        const bool bViewUpdatesNeeded(
-            mpImpl->maUpdaters.apply( 
-                boost::mem_fn(&ViewUpdate::needsUpdate)) );
+	void ScreenUpdater::notifyUpdate( const UnoViewSharedPtr& rView,
+									  bool					  bViewClobbered )
+	{
+		mpImpl->maViewUpdateRequests.push_back(
+			std::make_pair(rView, bViewClobbered) );
 
-        if( bViewUpdatesNeeded )
-        {
-            mpImpl->maUpdaters.applyAll( 
-                boost::mem_fn((bool (ViewUpdate::*)())&ViewUpdate::update) );
-        }
+		if( bViewClobbered )
+			mpImpl->mbViewClobbered = true;
+	}
 
-        if( bViewUpdatesNeeded ||
-            mpImpl->mbUpdateAllRequest )
-        {
-            // unconditionally update all views
-            std::for_each( mpImpl->mrViewContainer.begin(),
-                           mpImpl->mrViewContainer.end(),
-                           mpImpl->mbViewClobbered ? 
-                           boost::mem_fn(&View::paintScreen) : 
-                           boost::mem_fn(&View::updateScreen) );
-        }
-        else if( !mpImpl->maViewUpdateRequests.empty() )
-        {
-            // update notified views only
-            UpdateRequestVector::const_iterator aIter(
-                mpImpl->maViewUpdateRequests.begin() );
-            const UpdateRequestVector::const_iterator aEnd(
-                mpImpl->maViewUpdateRequests.end() );
-            while( aIter != aEnd )
-            {
-                // TODO(P1): this is O(n^2) in the number of views, if
-                // lots of views notify updates.
-                const UnoViewVector::const_iterator aEndOfViews(
-                    mpImpl->mrViewContainer.end() );
-                UnoViewVector::const_iterator aFoundView;
-                if( (aFoundView=std::find(mpImpl->mrViewContainer.begin(),
-                                          aEndOfViews,
-                                          aIter->first)) != aEndOfViews )
-                {
-                    if( aIter->second )
-                        (*aFoundView)->paintScreen(); // force-paint
-                    else
-                        (*aFoundView)->updateScreen(); // update changes only
-                }
+	void ScreenUpdater::commitUpdates()
+	{
+		if (mpImpl->mnLockCount > 0)
+			return;
 
-                ++aIter;
-            }
-        }
+		// cases:
+		//
+		// (a) no update necessary at all
+		//
+		// (b) no ViewUpdate-generated update
+		//     I. update all views requested -> for_each( mrViewContainer )
+		//    II. update some views requested -> for_each( maViewUpdateRequests )
+		//
+		// (c) ViewUpdate-triggered update - update all views
+		//
 
-        // done - clear requests
-        mpImpl->mbViewClobbered = false;
-        mpImpl->mbUpdateAllRequest = false;
-        UpdateRequestVector().swap( mpImpl->maViewUpdateRequests );
-    }
+		// any ViewUpdate-triggered updates?
+		const bool bViewUpdatesNeeded(
+			mpImpl->maUpdaters.apply(
+				boost::mem_fn(&ViewUpdate::needsUpdate)) );
 
-    void ScreenUpdater::addViewUpdate( ViewUpdateSharedPtr const& rViewUpdate )
-    {
-        mpImpl->maUpdaters.add( rViewUpdate );
-    }
+		if( bViewUpdatesNeeded )
+		{
+			mpImpl->maUpdaters.applyAll(
+				boost::mem_fn((bool (ViewUpdate::*)())&ViewUpdate::update) );
+		}
 
-    void ScreenUpdater::removeViewUpdate( ViewUpdateSharedPtr const& rViewUpdate )
-    {
-        mpImpl->maUpdaters.remove( rViewUpdate );
-    }
+		if( bViewUpdatesNeeded ||
+			mpImpl->mbUpdateAllRequest )
+		{
+			// unconditionally update all views
+			std::for_each( mpImpl->mrViewContainer.begin(),
+						   mpImpl->mrViewContainer.end(),
+						   mpImpl->mbViewClobbered ?
+						   boost::mem_fn(&View::paintScreen) :
+						   boost::mem_fn(&View::updateScreen) );
+		}
+		else if( !mpImpl->maViewUpdateRequests.empty() )
+		{
+			// update notified views only
+			UpdateRequestVector::const_iterator aIter(
+				mpImpl->maViewUpdateRequests.begin() );
+			const UpdateRequestVector::const_iterator aEnd(
+				mpImpl->maViewUpdateRequests.end() );
+			while( aIter != aEnd )
+			{
+				// TODO(P1): this is O(n^2) in the number of views, if
+				// lots of views notify updates.
+				const UnoViewVector::const_iterator aEndOfViews(
+					mpImpl->mrViewContainer.end() );
+				UnoViewVector::const_iterator aFoundView;
+				if( (aFoundView=std::find(mpImpl->mrViewContainer.begin(),
+										  aEndOfViews,
+										  aIter->first)) != aEndOfViews )
+				{
+					if( aIter->second )
+						(*aFoundView)->paintScreen(); // force-paint
+					else
+						(*aFoundView)->updateScreen(); // update changes only
+				}
 
-    void ScreenUpdater::requestImmediateUpdate()
-    {
-        if (mpImpl->mnLockCount > 0)
-            return;
+				++aIter;
+			}
+		}
 
-        // TODO(F2): This will interfere with other updates, since it
-        // happens out-of-sync with main animation loop. Might cause
-        // artifacts.
-        std::for_each( mpImpl->mrViewContainer.begin(),
-                       mpImpl->mrViewContainer.end(),
-                       boost::mem_fn(&View::updateScreen) );
-    }
+		// done - clear requests
+		mpImpl->mbViewClobbered = false;
+		mpImpl->mbUpdateAllRequest = false;
+		UpdateRequestVector().swap( mpImpl->maViewUpdateRequests );
+	}
 
-    void ScreenUpdater::lockUpdates (void)
-    {
-        ++mpImpl->mnLockCount;
-        OSL_ASSERT(mpImpl->mnLockCount>0);
-    }
+	void ScreenUpdater::addViewUpdate( ViewUpdateSharedPtr const& rViewUpdate )
+	{
+		mpImpl->maUpdaters.add( rViewUpdate );
+	}
 
-    void ScreenUpdater::unlockUpdates (void)
-    {
-        OSL_ASSERT(mpImpl->mnLockCount>0);
-        if (mpImpl->mnLockCount > 0)
-        {
-            --mpImpl->mnLockCount;
-            if (mpImpl->mnLockCount)
-                commitUpdates();
-        }
-    }
+	void ScreenUpdater::removeViewUpdate( ViewUpdateSharedPtr const& rViewUpdate )
+	{
+		mpImpl->maUpdaters.remove( rViewUpdate );
+	}
 
-    ::boost::shared_ptr<ScreenUpdater::UpdateLock> ScreenUpdater::createLock (const bool bStartLocked)
-    {
-        return ::boost::shared_ptr<ScreenUpdater::UpdateLock>(new ::UpdateLock(*this, bStartLocked));
-    }
+	void ScreenUpdater::requestImmediateUpdate()
+	{
+		if (mpImpl->mnLockCount > 0)
+			return;
+
+		// TODO(F2): This will interfere with other updates, since it
+		// happens out-of-sync with main animation loop. Might cause
+		// artifacts.
+		std::for_each( mpImpl->mrViewContainer.begin(),
+					   mpImpl->mrViewContainer.end(),
+					   boost::mem_fn(&View::updateScreen) );
+	}
+
+	void ScreenUpdater::lockUpdates (void)
+	{
+		++mpImpl->mnLockCount;
+		OSL_ASSERT(mpImpl->mnLockCount>0);
+	}
+
+	void ScreenUpdater::unlockUpdates (void)
+	{
+		OSL_ASSERT(mpImpl->mnLockCount>0);
+		if (mpImpl->mnLockCount > 0)
+		{
+			--mpImpl->mnLockCount;
+			if (mpImpl->mnLockCount)
+				commitUpdates();
+		}
+	}
+
+	::boost::shared_ptr<ScreenUpdater::UpdateLock> ScreenUpdater::createLock (const bool bStartLocked)
+	{
+		return ::boost::shared_ptr<ScreenUpdater::UpdateLock>(new ::UpdateLock(*this, bStartLocked));
+	}
 
 
 } // namespace internal
@@ -231,34 +230,32 @@ namespace internal
 namespace {
 
 UpdateLock::UpdateLock (
-    ::slideshow::internal::ScreenUpdater& rUpdater,
-    const bool bStartLocked)
-    : mrUpdater(rUpdater),
-      mbIsActivated(false)
+	::slideshow::internal::ScreenUpdater& rUpdater,
+	const bool bStartLocked)
+	: mrUpdater(rUpdater),
+	  mbIsActivated(false)
 {
-    if (bStartLocked)
-        Activate();
+	if (bStartLocked)
+		Activate();
 }
-
-
 
 
 UpdateLock::~UpdateLock (void)
 {
-    if (mbIsActivated)
-        mrUpdater.unlockUpdates();
+	if (mbIsActivated)
+		mrUpdater.unlockUpdates();
 }
-
-
 
 
 void UpdateLock::Activate (void)
 {
-    if ( ! mbIsActivated)
-    {
-        mbIsActivated = true;
-        mrUpdater.lockUpdates();
-    }
+	if ( ! mbIsActivated)
+	{
+		mbIsActivated = true;
+		mrUpdater.lockUpdates();
+	}
 }
 
 }
+
+/* vim: set noet sw=4 ts=4: */

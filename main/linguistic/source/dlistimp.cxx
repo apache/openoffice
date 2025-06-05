@@ -409,7 +409,7 @@ sal_Int32 DicList::GetDicPos(const uno::Reference< XDictionary > &xDic)
 
 
 uno::Reference< XInterface > SAL_CALL
-    DicList_CreateInstance( const uno::Reference< XMultiServiceFactory > & /*rSMgr*/ )
+    DicList_CreateInstance( const uno::Reference< XComponentContext > & /*rCtx*/ )
 			throw(Exception)
 {
 	uno::Reference< XInterface > xService = (cppu::OWeakObject *) new DicList;
@@ -790,25 +790,6 @@ uno::Sequence< rtl::OUString > DicList::getSupportedServiceNames_Static() throw(
     uno::Sequence< rtl::OUString > aSNS( 1 );   // auch mehr als 1 Service moeglich
 	aSNS.getArray()[0] = A2OU( SN_DICTIONARY_LIST );
 	return aSNS;
-}
-
-void * SAL_CALL DicList_getFactory(	const sal_Char * pImplName,
-		XMultiServiceFactory * pServiceManager, void *  )
-{
-	void * pRet = 0;
-	if ( !DicList::getImplementationName_Static().compareToAscii( pImplName ) )
-	{
-		uno::Reference< XSingleServiceFactory > xFactory =
-			cppu::createOneInstanceFactory(
-				pServiceManager,
-				DicList::getImplementationName_Static(),
-				DicList_CreateInstance,
-				DicList::getSupportedServiceNames_Static());
-		// acquire, because we return an interface pointer instead of a reference
-		xFactory->acquire();
-		pRet = xFactory.get();
-	}
-	return pRet;
 }
 
 ///////////////////////////////////////////////////////////////////////////

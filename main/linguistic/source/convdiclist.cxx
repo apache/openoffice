@@ -682,30 +682,10 @@ uno::Sequence< OUString > ConvDicList::getSupportedServiceNames_Static()
 ///////////////////////////////////////////////////////////////////////////
 
 uno::Reference< uno::XInterface > SAL_CALL ConvDicList_CreateInstance(
-        const uno::Reference< XMultiServiceFactory > & /*rSMgr*/ )
+        const uno::Reference< XComponentContext > & /*rCtx*/ )
     throw(Exception)
 {
     return StaticConvDicList::get();
-}
-
-void * SAL_CALL ConvDicList_getFactory(
-        const sal_Char * pImplName,
-        XMultiServiceFactory * pServiceManager, void *  )
-{
-    void * pRet = 0;
-    if ( !ConvDicList::getImplementationName_Static().compareToAscii( pImplName ) )
-    {
-        uno::Reference< XSingleServiceFactory > xFactory =
-            cppu::createOneInstanceFactory(
-                pServiceManager,
-                ConvDicList::getImplementationName_Static(),
-                ConvDicList_CreateInstance,
-                ConvDicList::getSupportedServiceNames_Static());
-        // acquire, because we return an interface pointer instead of a reference
-        xFactory->acquire();
-        pRet = xFactory.get();
-    }
-    return pRet;
 }
 
 ///////////////////////////////////////////////////////////////////////////
