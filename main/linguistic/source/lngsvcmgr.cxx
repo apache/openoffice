@@ -1990,33 +1990,11 @@ uno::Sequence< OUString > LngSvcMgr::getSupportedServiceNames_Static()
 
 
 uno::Reference< uno::XInterface > SAL_CALL LngSvcMgr_CreateInstance(
-            const uno::Reference< lang::XMultiServiceFactory > & /*rSMgr*/ )
+            const uno::Reference< uno::XComponentContext > & /*rCtx*/ )
         throw(uno::Exception)
 {
     uno::Reference< uno::XInterface > xService = (cppu::OWeakObject*) new LngSvcMgr;
 	return xService;
-}
-
-void * SAL_CALL LngSvcMgr_getFactory(
-			const sal_Char * pImplName,
-            lang::XMultiServiceFactory * pServiceManager,
-			void * /*pRegistryKey*/ )
-{
-
-	void * pRet = 0;
-	if ( !LngSvcMgr::getImplementationName_Static().compareToAscii( pImplName ) )
-	{
-        uno::Reference< lang::XSingleServiceFactory > xFactory =
-			cppu::createOneInstanceFactory(
-				pServiceManager,
-				LngSvcMgr::getImplementationName_Static(),
-				LngSvcMgr_CreateInstance,
-				LngSvcMgr::getSupportedServiceNames_Static());
-		// acquire, because we return an interface pointer instead of a reference
-		xFactory->acquire();
-		pRet = xFactory.get();
-	}
-	return pRet;
 }
 
 

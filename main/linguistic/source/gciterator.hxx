@@ -88,7 +88,7 @@ class GrammarCheckingIterator:
     >,
     public LinguDispatcher
 {
-    com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >    m_xMSF;
+    com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >    m_xContext;
 
 
 	//the queue is keeping track of all senteces to be checked
@@ -163,7 +163,7 @@ public:
 
     void DequeueAndCheck();
 
-    explicit GrammarCheckingIterator( const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > & rxMgr );
+    explicit GrammarCheckingIterator( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > & rxCtx );
     virtual ~GrammarCheckingIterator();
 
     // XProofreadingIterator
@@ -196,6 +196,9 @@ public:
     virtual void SetServiceList( const ::com::sun::star::lang::Locale &rLocale, const ::com::sun::star::uno::Sequence< rtl::OUString > &rSvcImplNames );
     virtual ::com::sun::star::uno::Sequence< rtl::OUString > GetServiceList( const ::com::sun::star::lang::Locale &rLocale ) const;
     virtual DspType GetDspType() const;
+
+    static ::rtl::OUString getImplementationName_Static() throw();
+    static com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static() throw();
 };
 
 
