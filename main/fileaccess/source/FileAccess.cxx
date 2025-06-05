@@ -30,6 +30,7 @@
 
 #include <cppuhelper/factory.hxx>
 #include <cppuhelper/implbase1.hxx>
+#include <cppuhelper/implementationentry.hxx>
 
 #include <tools/ref.hxx>
 #include <tools/urlobj.hxx>
@@ -59,9 +60,6 @@
 #include <com/sun/star/ucb/XSimpleFileAccess3.hpp>
 #include <com/sun/star/util/XMacroExpander.hpp>
 
-#define IMPLEMENTATION_NAME "com.sun.star.comp.ucb.SimpleFileAccess"
-#define SERVICE_NAME "com.sun.star.ucb.SimpleFileAccess"
-
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::lang;
 using namespace ::com::sun::star::io;
@@ -85,7 +83,7 @@ class OCommandEnvironment;
 
 class OFileAccess : public FileAccessHelper
 {
-    Reference< XMultiServiceFactory > mxSMgr;
+    Reference< XComponentContext > mxCtx;
     Reference< XCommandEnvironment > mxEnvironment;
     OCommandEnvironment* mpEnvironment;
 
@@ -97,8 +95,8 @@ class OFileAccess : public FileAccessHelper
         throw ( Exception );
 
 public:
-    OFileAccess( const Reference< XMultiServiceFactory > & xSMgr )
-        : mxSMgr( xSMgr), mpEnvironment( NULL ) {}
+    OFileAccess( const Reference< XComponentContext > & xCtx )
+        : mxCtx( xCtx ), mpEnvironment( NULL ) {}
 
     // Methods
     virtual void SAL_CALL copy( const ::rtl::OUString& SourceURL, const ::rtl::OUString& DestURL ) throw(::com::sun::star::ucb::CommandAbortedException, ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
@@ -322,19 +320,9 @@ void OFileAccess::transferImpl( const rtl::OUString& rSource,
 
             try
             {
-                Reference< XComponentContext > xCtx;
-                Reference< XPropertySet > xPropSet( mxSMgr, UNO_QUERY_THROW );
-                if ( xPropSet.is() )
-                {
-                    xPropSet->getPropertyValue(
-                        rtl::OUString(
-                            RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ) ) )
-                                >>= xCtx;
-                }
-
                 Reference< XMacroExpander > xExpander;
 
-                xCtx->getValueByName(
+                mxCtx->getValueByName(
                     rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
                         "/singletons/com.sun.star.util.theMacroExpander" ) ) )
                             >>= xExpander;
@@ -875,11 +863,15 @@ void OFileAccess::setHidden( const ::rtl::OUString& FileURL, sal_Bool bHidden )
 //==================================================================================================
 //==================================================================================================
 
-Reference< XInterface > SAL_CALL FileAccess_CreateInstance( const Reference< XMultiServiceFactory > & xSMgr )
+Reference< XInterface > SAL_CALL FileAccess_CreateInstance( const Reference< XComponentContext > & xCtx )
 {
-    return Reference < XInterface >( ( cppu::OWeakObject * ) new OFileAccess( xSMgr ) );
+    return Reference < XInterface >( ( cppu::OWeakObject * ) new OFileAccess( xCtx ) );
 }
 
+rtl::OUString FileAccess_getImplementationName()
+{
+    return rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.ucb.SimpleFileAccess" ) );
+}
 
 Sequence< rtl::OUString > FileAccess_getSupportedServiceNames()
 {
@@ -890,13 +882,25 @@ Sequence< rtl::OUString > FileAccess_getSupportedServiceNames()
         if( !pNames )
         {
             static Sequence< rtl::OUString > seqNames(1);
-            seqNames.getArray()[0] = rtl::OUString::createFromAscii( SERVICE_NAME );
+            seqNames.getArray()[0] = rtl::OUString::createFromAscii( "com.sun.star.ucb.SimpleFileAccess" );
             pNames = &seqNames;
         }
     }
     return *pNames;
 }
 
+struct ::cppu::ImplementationEntry g_component_entries [] =
+{
+    {
+        FileAccess_CreateInstance,
+        FileAccess_getImplementationName,
+        FileAccess_getSupportedServiceNames,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    { 0, 0, 0, 0, 0, 0 }
+};
 
 }
 
@@ -913,25 +917,8 @@ FILEACCESS_DLLPUBLIC void SAL_CALL component_getImplementationEnvironment(
 }
 //==================================================================================================
 FILEACCESS_DLLPUBLIC void * SAL_CALL component_getFactory(
-    const sal_Char * pImplName, void * pServiceManager, void * /*pRegistryKey*/ )
+    const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
-    void * pRet = 0;
-
-    if (pServiceManager && rtl_str_compare( pImplName, IMPLEMENTATION_NAME ) == 0)
-    {
-        Reference< XSingleServiceFactory > xFactory( cppu::createSingleFactory(
-            reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
-            rtl::OUString::createFromAscii( pImplName ),
-            io_FileAccess::FileAccess_CreateInstance,
-            io_FileAccess::FileAccess_getSupportedServiceNames() ) );
-
-        if (xFactory.is())
-        {
-            xFactory->acquire();
-            pRet = xFactory.get();
-        }
-    }
-
-    return pRet;
+    return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, ::io_FileAccess::g_component_entries );
 }
 }
