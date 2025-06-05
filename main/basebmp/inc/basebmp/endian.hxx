@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef INCLUDED_BASEBMP_ENDIAN_HXX
 #define INCLUDED_BASEBMP_ENDIAN_HXX
@@ -29,14 +27,14 @@
 namespace basebmp
 {
 
-/// Swap the order of bytes for the given POD type
+// Swap the order of bytes for the given POD type
 template< typename T > inline T byteSwap( T );
 
 #define BASEBMP_BYTE_SWAP(Type,SwapFunc) \
-   template<> inline Type byteSwap<Type>( Type v ) \
-   { \
-       return SwapFunc(v); \
-   }
+	template<> inline Type byteSwap<Type>( Type v ) \
+	{ \
+		return SwapFunc(v); \
+	}
 
 // byteSwap<T> shall fail for any type T not in the list below
 BASEBMP_BYTE_SWAP(sal_Int8,)
@@ -51,3 +49,5 @@ BASEBMP_BYTE_SWAP(sal_uInt32,OSL_SWAPDWORD)
 } // namespace basebmp
 
 #endif /* INCLUDED_BASEBMP_ENDIAN_HXX */
+
+/* vim: set noet sw=4 ts=4: */
