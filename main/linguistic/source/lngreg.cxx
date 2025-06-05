@@ -26,7 +26,14 @@
 
 
 #include <cppuhelper/factory.hxx>	// helper for factories
+#include <cppuhelper/implementationentry.hxx>
 #include <rtl/string.hxx>
+
+#include "lngsvcmgr.hxx"
+#include "lngopt.hxx"
+#include "dlistimp.hxx"
+#include "convdiclist.hxx"
+#include "gciterator.hxx"
 
 #include <com/sun/star/registry/XRegistryKey.hpp>
 
@@ -34,51 +41,76 @@ using namespace com::sun::star::lang;
 
 using namespace com::sun::star::registry;
 
-extern void * SAL_CALL LngSvcMgr_getFactory
-(
-	const sal_Char * pImplName,
-	XMultiServiceFactory * pServiceManager,
-	void * /*pRegistryKey*/
-);
+using namespace com::sun::star;
 
-extern void * SAL_CALL DicList_getFactory
-(
-	const sal_Char * pImplName,
-	XMultiServiceFactory * pServiceManager,
-	void *
-);
+extern uno::Reference< uno::XInterface > SAL_CALL LngSvcMgr_CreateInstance(
+        const uno::Reference< uno::XComponentContext  > & /*rCtx*/ )
+    throw(uno::Exception);
 
-void * SAL_CALL LinguProps_getFactory
-(
-	const sal_Char * pImplName,
-	XMultiServiceFactory * pServiceManager,
-	void *
-);
+extern uno::Reference< uno::XInterface > SAL_CALL LinguProps_CreateInstance(
+        const uno::Reference< uno::XComponentContext > & /*rCtx*/ )
+    throw(uno::Exception);
 
-extern void * SAL_CALL ConvDicList_getFactory
-(
-    const sal_Char * pImplName,
-    XMultiServiceFactory * pServiceManager,
-    void *
-);
+extern uno::Reference< uno::XInterface > SAL_CALL DicList_CreateInstance(
+        const uno::Reference< uno::XComponentContext > & /*rCtx*/ )
+    throw(uno::Exception);
 
-extern void * SAL_CALL GrammarCheckingIterator_getFactory
-(
-    const sal_Char * pImplName,
-    XMultiServiceFactory * pServiceManager,
-    void *
-);
+extern uno::Reference< uno::XInterface > SAL_CALL ConvDicList_CreateInstance(
+        const uno::Reference< uno::XComponentContext > & /*rCtx*/ )
+    throw(uno::Exception);
 
-//extern void * SAL_CALL GrammarChecker_getFactory
-//(
-//    const sal_Char * pImplName,
-//    XMultiServiceFactory * pServiceManager,
-//    void *
-//);
+extern uno::Reference< uno::XInterface > SAL_CALL GrammarCheckingIterator_createInstance(
+        const uno::Reference< uno::XComponentContext > & rxCtx )
+    throw(uno::Exception);
 
 ////////////////////////////////////////
 // definition of the two functions that are used to provide the services
 //
+
+struct ::cppu::ImplementationEntry g_component_entries [] =
+{
+    {
+        LngSvcMgr_CreateInstance,
+        LngSvcMgr::getImplementationName_Static,
+        LngSvcMgr::getSupportedServiceNames_Static,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    {
+        LinguProps_CreateInstance,
+        LinguProps::getImplementationName_Static,
+        LinguProps::getSupportedServiceNames_Static,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    {
+        DicList_CreateInstance,
+        DicList::getImplementationName_Static,
+        DicList::getSupportedServiceNames_Static,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    {
+        ConvDicList_CreateInstance,
+        ConvDicList::getImplementationName_Static,
+        ConvDicList::getSupportedServiceNames_Static,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    {
+        GrammarCheckingIterator_createInstance,
+        GrammarCheckingIterator::getImplementationName_Static,
+        GrammarCheckingIterator::getSupportedServiceNames_Static,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    { 0, 0, 0, 0, 0, 0 }
+};
 
 extern "C"
 {
@@ -92,43 +124,7 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
 	const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
-	void * pRet =
-		LngSvcMgr_getFactory(
-			pImplName,
-			reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
-			pRegistryKey );
-	
-	if(!pRet)
-		pRet = LinguProps_getFactory(
-			pImplName,
-			reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
-			pRegistryKey );
-
-	if(!pRet)
-		pRet = 	DicList_getFactory(
-			pImplName,
-			reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
-			pRegistryKey );
-
-    if(!pRet)
-        pRet =  ConvDicList_getFactory(
-            pImplName,
-            reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
-            pRegistryKey );
-
-	if(!pRet)
-        pRet =  GrammarCheckingIterator_getFactory(
-            pImplName,
-            reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
-            pRegistryKey );
-/*
-	if(!pRet)
-        pRet =  GrammarChecker_getFactory(
-            pImplName,
-            reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
-            pRegistryKey );
-*/
-	return pRet;
+    return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, g_component_entries );
 }
 }
 
