@@ -24,16 +24,31 @@
 #include "wincommon.hxx"
 #include "manager.hxx"
 
+#include <cppuhelper/implementationentry.hxx>
+
 using namespace ::com::sun::star;
 
 // -------------------
 // - factory methods -
 // -------------------
 
-static uno::Reference< uno::XInterface > SAL_CALL create_MediaPlayer( const uno::Reference< lang::XMultiServiceFactory >& rxFact )
+static uno::Reference< uno::XInterface > SAL_CALL create_MediaPlayer( const uno::Reference< uno::XComponentContext >& rxContext )
 {
-	return uno::Reference< uno::XInterface >( *new ::avmedia::win::Manager( rxFact ) );
+	return uno::Reference< uno::XInterface >( *new ::avmedia::win::Manager( rxContext ) );
 }
+
+static struct ::cppu::ImplementationEntry g_component_entries[] =
+{
+    {
+        create_MediaPlayer,
+        ::avmedia::win::Manager::getImplementationName_Static,
+        ::avmedia::win::Manager::getSupportedServiceNames_Static,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    { 0, 0, 0, 0, 0, 0 }
+};
 
 // ------------------------------------------
 // - component_getImplementationEnvironment -
@@ -48,26 +63,7 @@ extern "C" SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnviron
 // - component_getFactory -
 // ------------------------
 
-extern "C" SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* )
+extern "C" SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* pRegistryKey )
 {
-	uno::Reference< lang::XSingleServiceFactory > xFactory;
-	void*									pRet = 0;
-
-	if( rtl_str_compare( pImplName, "com.sun.star.comp.avmedia.Manager_DirectX" ) == 0 )
-	{
-		const ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( "com.sun.star.media.Manager_DirectX" ) );
-
-		xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
-						reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
-						::rtl::OUString::createFromAscii( "com.sun.star.comp.avmedia.Manager_DirectX" ),
-						create_MediaPlayer, uno::Sequence< ::rtl::OUString >( &aServiceName, 1 ) ) );
-	}
-
-	if( xFactory.is() )
-	{
-		xFactory->acquire();
-		pRet = xFactory.get();
-	}
-
-	return pRet;
+	return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, g_component_entries );
 }

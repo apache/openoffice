@@ -35,8 +35,9 @@ namespace avmedia { namespace macavf {
 // - FrameGrabber -
 // ----------------
 
-FrameGrabber::FrameGrabber( const uno::Reference< lang::XMultiServiceFactory >& /*rxMgr*/ )
-:   mpImageGen( NULL )
+FrameGrabber::FrameGrabber( const uno::Reference< uno::XComponentContext >& rxContext )
+:   mpImageGen( NULL ),
+    mxContext( rxContext )
 {}
 
 // ------------------------------------------------------------------------------
