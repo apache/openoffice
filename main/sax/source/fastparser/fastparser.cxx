@@ -539,6 +539,11 @@ void FastSaxParser::setLocale( const Locale & Locale ) throw (RuntimeException)
 	maData.maLocale = Locale;
 }
 
+OUString FastSaxParser::getImplementationName_Static(void)
+{
+    return OUString::createFromAscii( PARSER_IMPLEMENTATION_NAME );
+}
+
 Sequence< OUString > FastSaxParser::getSupportedServiceNames_Static(void)
 {
 	Sequence<OUString> aRet(1);
@@ -549,7 +554,7 @@ Sequence< OUString > FastSaxParser::getSupportedServiceNames_Static(void)
 // XServiceInfo
 OUString FastSaxParser::getImplementationName() throw (RuntimeException)
 {
-    return OUString::createFromAscii( PARSER_IMPLEMENTATION_NAME );
+    return getImplementationName_Static();
 }
 
 // XServiceInfo
