@@ -1016,7 +1016,7 @@ private:
 // the extern interface
 //---------------------------------------
 Reference < XInterface > SAL_CALL SaxWriter_CreateInstance(
-	const Reference < XMultiServiceFactory >  &  )
+	const Reference < XComponentContext >  &  )
 	throw (Exception)
 {
 	SAXWriter *p = new SAXWriter;

@@ -38,6 +38,7 @@
 #include <cppuhelper/weak.hxx>
 #include <cppuhelper/implbase1.hxx>
 #include <cppuhelper/implbase2.hxx>
+#include <cppuhelper/implementationentry.hxx>
 
 #include <expat.h>
 
@@ -133,8 +134,6 @@ OUString XmlChar2OUString( const XML_Char *p )
 	}\
 	((void)0)
 
-#define IMPLEMENTATION_NAME	"com.sun.star.comp.extensions.xml.sax.ParserExpat"
-#define SERVICE_NAME		"com.sun.star.xml.sax.Parser"
 
 class SaxExpatParser_Impl;
 
@@ -154,6 +153,7 @@ public:
 public:
 
 	// The implementation details
+    static OUString					getImplementationName_Static(void) throw();
     static Sequence< OUString > 	getSupportedServiceNames_Static(void) throw ();
 
 public:
@@ -189,19 +189,22 @@ private:
 // the extern interface 
 //---------------------------------------
 Reference< XInterface > SAL_CALL SaxExpatParser_CreateInstance(
-	const Reference< XMultiServiceFactory  >  & ) throw(Exception)
+	Reference< XComponentContext > const & ) throw(Exception)
 {	
 	SaxExpatParser *p = new SaxExpatParser;
 
 	return Reference< XInterface > ( (OWeakObject * ) p );
 }
 
-
+OUString SaxExpatParser::getImplementationName_Static() throw ()
+{
+	return OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.extensions.xml.sax.ParserExpat" ) );
+}
 
 Sequence< OUString > 	SaxExpatParser::getSupportedServiceNames_Static(void) throw ()
 {
 	Sequence<OUString> aRet(1);
-	aRet.getArray()[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(SERVICE_NAME) );
+	aRet.getArray()[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.xml.sax.Parser" ) );
 	return aRet;
 }
 
@@ -591,7 +594,7 @@ void SaxExpatParser::setLocale( const Locale & locale )	throw (RuntimeException)
 // XServiceInfo
 OUString SaxExpatParser::getImplementationName() throw ()
 {
-    return OUString::createFromAscii( IMPLEMENTATION_NAME );
+    return getImplementationName_Static();
 }
 
 // XServiceInfo
@@ -610,10 +613,7 @@ sal_Bool SaxExpatParser::supportsService(const OUString& ServiceName) throw ()
 // XServiceInfo
 Sequence< OUString > SaxExpatParser::getSupportedServiceNames(void) throw ()
 {
-    
-    Sequence<OUString> seq(1);
-    seq.getArray()[0] = OUString::createFromAscii( SERVICE_NAME );
-    return seq;
+    return getSupportedServiceNames_Static();
 }
 
 
@@ -1021,6 +1021,28 @@ void SaxExpatParser_Impl::callbackEndCDATA( void *pvThis )
 }
 using namespace sax_expatwrap;
 
+
+static struct ::cppu::ImplementationEntry g_component_entries[] =
+{
+	{
+		SaxExpatParser_CreateInstance,
+		SaxExpatParser::getImplementationName_Static,
+		SaxExpatParser::getSupportedServiceNames_Static,
+		::cppu::createSingleComponentFactory,
+		0,
+		0
+	},
+	{
+		SaxWriter_CreateInstance,
+		SaxWriter_getImplementationName,
+		SaxWriter_getSupportedServiceNames,
+		::cppu::createSingleComponentFactory,
+		0,
+		0
+	},
+	{ 0, 0, 0, 0, 0, 0 }
+};
+
 extern "C" 
 {
 
@@ -1031,40 +1053,9 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 }
 
 SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
-	const sal_Char * pImplName, void * pServiceManager, void * /*pRegistryKey*/ )
+	const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
-	void * pRet = 0;
-	
-	if (pServiceManager )
-	{
-		Reference< XSingleServiceFactory > xRet;
-		Reference< XMultiServiceFactory > xSMgr =
-			reinterpret_cast< XMultiServiceFactory * > ( pServiceManager );
-		
-		OUString aImplementationName = OUString::createFromAscii( pImplName );
-		
-		if (aImplementationName ==
-			OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLEMENTATION_NAME  ) ) )
-		{
-			xRet = createSingleFactory( xSMgr, aImplementationName,
-										SaxExpatParser_CreateInstance,
-										SaxExpatParser::getSupportedServiceNames_Static() );
-		}
-		else if ( aImplementationName == SaxWriter_getImplementationName() )
-		{
-			xRet = createSingleFactory( xSMgr, aImplementationName,
-										SaxWriter_CreateInstance,
-										SaxWriter_getSupportedServiceNames() );
-		}
-
-		if (xRet.is())
-		{
-			xRet->acquire();
-			pRet = xRet.get();
-		}
-	}
-	
-	return pRet;
+	return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, g_component_entries );
 }
 		
 

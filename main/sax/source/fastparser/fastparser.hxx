@@ -100,6 +100,7 @@ public:
     virtual ~FastSaxParser();
 
     // The implementation details
+    static ::rtl::OUString getImplementationName_Static(void);
     static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
 
     // XFastParser
