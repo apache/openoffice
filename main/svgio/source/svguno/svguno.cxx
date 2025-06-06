@@ -33,6 +33,7 @@
 #include <com/sun/star/lang/XSingleServiceFactory.hpp>
 #include <uno/environment.h>
 #include <cppuhelper/factory.hxx>
+#include <cppuhelper/implementationentry.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -47,7 +48,7 @@ namespace svgio
     {
         extern uno::Sequence< rtl::OUString > SAL_CALL XSvgParser_getSupportedServiceNames();
         extern rtl::OUString SAL_CALL XSvgParser_getImplementationName();
-        extern uno::Reference< uno::XInterface > SAL_CALL XSvgParser_createInstance( const uno::Reference< lang::XMultiServiceFactory > & );
+        extern uno::Reference< uno::XInterface > SAL_CALL XSvgParser_createInstance( const uno::Reference< uno::XComponentContext > & );
     } // end of namespace svgreader
 } // end of namespace svgio
 
@@ -65,29 +66,24 @@ extern "C"
 //////////////////////////////////////////////////////////////////////////////
 // component_getFactory
 
-extern "C" 
+static struct ::cppu::ImplementationEntry g_component_entries[] =
 {
-    SVGIO_DLLPUBLIC void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* /* pRegistryKey */ )
     {
-        uno::Reference< lang::XSingleServiceFactory > xFactory;
-        void* pRet = 0;
+        svgio::svgreader::XSvgParser_createInstance,
+        svgio::svgreader::XSvgParser_getImplementationName,
+        svgio::svgreader::XSvgParser_getSupportedServiceNames,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    { 0, 0, 0, 0, 0, 0 }
+};
 
-        if(svgio::svgreader::XSvgParser_getImplementationName().equalsAscii(pImplName))
-        {
-            xFactory = ::cppu::createSingleFactory(
-                reinterpret_cast< lang::XMultiServiceFactory * >(pServiceManager),
-                svgio::svgreader::XSvgParser_getImplementationName(),
-                svgio::svgreader::XSvgParser_createInstance,
-                svgio::svgreader::XSvgParser_getSupportedServiceNames());
-        }
-
-        if(xFactory.is())
-        {
-            xFactory->acquire();
-            pRet = xFactory.get();
-        }
-
-        return pRet;
+extern "C"
+{
+    SVGIO_DLLPUBLIC void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* pRegistryKey )
+    {
+        return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, g_component_entries );
     }
 }
 
