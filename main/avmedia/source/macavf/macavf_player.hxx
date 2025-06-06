@@ -42,7 +42,7 @@ class Player
                                     ::com::sun::star::lang::XServiceInfo >
 {
 public:
-    explicit Player( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& );
+    explicit Player( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& );
     virtual  ~Player();
 
     bool create( const ::rtl::OUString& rURL );
@@ -77,7 +77,7 @@ public:
     virtual bool handleObservation( NSString* pKeyPath );
 
 private:
-    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxMgr;
+    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;
 
     AVPlayer*           mpPlayer;
 

@@ -27,7 +27,7 @@
 #include "mediawindow.hrc"
 #include <tools/urlobj.hxx>
 #include <comphelper/processfactory.hxx>
-#include <com/sun/star/lang/XMultiServiceFactory.hpp>
+#include <com/sun/star/lang/XMultiComponentFactory.hpp>
 #include <com/sun/star/media/XManager.hpp>
 #ifndef _COM_SUN_STAR_LANG_XCOMPONENT_HDL_
 #include <com/sun/star/lang/XComponent.hdl>
@@ -62,19 +62,19 @@ MediaWindowBaseImpl::MediaWindowBaseImpl( MediaWindow* pMediaWindow ) :
 
 MediaWindowBaseImpl::~MediaWindowBaseImpl()
 {
-    uno::Reference< lang::XMultiServiceFactory > xFactory( ::comphelper::getProcessServiceFactory() );
+    uno::Reference< uno::XComponentContext > xContext( ::comphelper::getProcessComponentContext() );
 }
 
 // -------------------------------------------------------------------------
 
 uno::Reference< media::XPlayer > MediaWindowBaseImpl::createPlayer( const ::rtl::OUString& rURL, sal_Bool& rbJavaBased )
 {
-    uno::Reference< lang::XMultiServiceFactory >    xFactory( ::comphelper::getProcessServiceFactory() );
+    uno::Reference< uno::XComponentContext >        xContext( ::comphelper::getProcessComponentContext() );
     uno::Reference< media::XPlayer >                xPlayer;
 
     rbJavaBased = sal_False;
 
-    if( xFactory.is() )
+    if( xContext.is() )
     {
         static const ServiceManager aServiceManagers[] =
         {
@@ -82,6 +82,7 @@ uno::Reference< media::XPlayer > MediaWindowBaseImpl::createPlayer( const ::rtl:
             { AVMEDIA_MANAGER_SERVICE_NAME_FALLBACK1, AVMEDIA_MANAGER_SERVICE_IS_JAVABASED_FALLBACK1 }
         };
 
+        uno::Reference< lang::XMultiComponentFactory > xFactory = xContext->getServiceManager();
         for( sal_uInt32 i = 0; !xPlayer.is() && ( i < ( sizeof( aServiceManagers ) / sizeof( ServiceManager ) ) ); ++i )
         {
             const String aServiceName( aServiceManagers[ i ].pServiceName, RTL_TEXTENCODING_ASCII_US );
@@ -92,7 +93,7 @@ uno::Reference< media::XPlayer > MediaWindowBaseImpl::createPlayer( const ::rtl:
 
                 try
                 {
-                    uno::Reference< media::XManager > xManager( xFactory->createInstance( aServiceName ), uno::UNO_QUERY );
+                    uno::Reference< media::XManager > xManager( xFactory->createInstanceWithContext( aServiceName, xContext ), uno::UNO_QUERY );
 
                     if( xManager.is() )
                     {

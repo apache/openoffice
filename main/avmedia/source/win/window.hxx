@@ -46,7 +46,7 @@ class Window : public ::cppu::WeakImplHelper2 < ::com::sun::star::media::XPlayer
 {
 public:
 
-            Window( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rxMgr,
+            Window( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext,
                     Player& rPlayer );
             ~Window();
 
@@ -100,7 +100,7 @@ public:
 
 private:
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxMgr;
+    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;
 
     ::osl::Mutex                                maMutex;
     ::cppu::OMultiTypeInterfaceContainerHelper  maListeners;

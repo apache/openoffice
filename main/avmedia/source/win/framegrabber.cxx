@@ -60,8 +60,8 @@ namespace avmedia { namespace win {
 // - FrameGrabber -
 // ----------------
 
-FrameGrabber::FrameGrabber( const uno::Reference< lang::XMultiServiceFactory >& rxMgr ) :
-    mxMgr( rxMgr )
+FrameGrabber::FrameGrabber( const uno::Reference< uno::XComponentContext >& rxContext ) :
+    mxContext( rxContext )
 {
     ::CoInitialize( NULL );
 }
