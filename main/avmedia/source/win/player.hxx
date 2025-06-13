@@ -57,7 +57,7 @@ class Player :  public cppu::BaseMutex,
 {
 public:
 
-                        Player( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rxMgr );
+                        Player( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
                         ~Player();
 
     bool                create( const ::rtl::OUString& rURL );
@@ -99,7 +99,7 @@ public:
 
 private:
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxMgr;
+    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;
 
     ::rtl::OUString         maURL;
     IGraphBuilder*          mpGB;

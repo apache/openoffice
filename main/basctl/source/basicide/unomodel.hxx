@@ -24,7 +24,7 @@
 #define UNOMODEL_HXX
 
 #include <com/sun/star/lang/XServiceInfo.hpp>
-#include <com/sun/star/lang/XMultiServiceFactory.hpp>
+#include <com/sun/star/uno/XComponentContext.hpp>
 #include <sfx2/sfxbasemodel.hxx>
 
 //-----------------------------------------------------------------------------
@@ -56,7 +56,7 @@ public:
 };
 
 com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL SIDEModel_createInstance(
-				const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > & rSMgr )
+				const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > & rContext )
 					throw( com::sun::star::uno::Exception );
 
 #endif

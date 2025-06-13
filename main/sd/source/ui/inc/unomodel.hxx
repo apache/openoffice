@@ -24,6 +24,7 @@
 #define SD_UNO_MODEL_HXX
 
 #include <com/sun/star/style/XStyleFamiliesSupplier.hpp>
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
 #include <com/sun/star/document/XLinkTargetSupplier.hpp>
 #include <com/sun/star/drawing/XDrawPagesSupplier.hpp>
 #include <com/sun/star/drawing/XDrawPageSummarizer.hpp>
@@ -76,6 +77,7 @@ class SdXImpressDocument : public SfxBaseModel, // implements SfxListener, OWEAK
 						   public ::com::sun::star::drawing::XDrawPagesSupplier,
 						   public ::com::sun::star::presentation::XPresentationSupplier,
 						   public ::com::sun::star::presentation::XCustomPresentationSupplier,
+						   public ::com::sun::star::document::XLinkAuthorizer,
 						   public ::com::sun::star::document::XLinkTargetSupplier,
 						   public ::com::sun::star::beans::XPropertySet,
 						   public ::com::sun::star::style::XStyleFamiliesSupplier,
@@ -200,6 +202,9 @@ public:
     virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+
+	// XLinkAuthorizer
+    virtual sal_Bool SAL_CALL authorizeLinks( const ::rtl::OUString &url ) throw(::com::sun::star::uno::RuntimeException);
 
 	// XLinkTargetSupplier
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL getLinks(  ) throw(::com::sun::star::uno::RuntimeException);

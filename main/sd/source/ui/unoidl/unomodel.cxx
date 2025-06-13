@@ -45,7 +45,9 @@
 #include <editeng/unofield.hxx>
 #include <unomodel.hxx>
 #include <sfx2/dispatch.hxx>
+#include <sfx2/docfile.hxx>
 #include <sfx2/bindings.hxx>
+#include <sfx2/linkmgr.hxx>
 #include <vcl/svapp.hxx>
 #include <editeng/UnoForbiddenCharsTable.hxx>
 #include <svx/svdoutl.hxx>
@@ -301,6 +303,7 @@ uno::Any SAL_CALL SdXImpressDocument::queryInterface( const uno::Type & rType ) 
 	else QUERYINT(drawing::XMasterPagesSupplier);
 	else QUERYINT(drawing::XDrawPagesSupplier);
 	else QUERYINT(presentation::XHandoutMasterSupplier);
+	else QUERYINT(document::XLinkAuthorizer);
 	else QUERYINT(document::XLinkTargetSupplier);
 	else QUERYINT(style::XStyleFamiliesSupplier);
 	else QUERYINT(com::sun::star::ucb::XAnyCompareFactory);
@@ -395,7 +398,7 @@ uno::Sequence< uno::Type > SAL_CALL SdXImpressDocument::getTypes(  ) throw(uno::
 		const sal_Int32 nBaseTypes = aBaseTypes.getLength();
 		const uno::Type* pBaseTypes = aBaseTypes.getConstArray();
 
-		const sal_Int32 nOwnTypes = mbImpressDoc ? 14 : 11;		// !DANGER! Keep this updated!
+		const sal_Int32 nOwnTypes = mbImpressDoc ? 15 : 12;		// !DANGER! Keep this updated!
 
 		maTypeSequence.realloc(  nBaseTypes + nOwnTypes );
 		uno::Type* pTypes = maTypeSequence.getArray();
@@ -407,6 +410,7 @@ uno::Sequence< uno::Type > SAL_CALL SdXImpressDocument::getTypes(  ) throw(uno::
 		*pTypes++ = ITYPE(drawing::XLayerSupplier);
 		*pTypes++ = ITYPE(drawing::XMasterPagesSupplier);
 		*pTypes++ = ITYPE(drawing::XDrawPagesSupplier);
+		*pTypes++ = ITYPE(document::XLinkAuthorizer);
 		*pTypes++ = ITYPE(document::XLinkTargetSupplier);
 		*pTypes++ = ITYPE(style::XStyleFamiliesSupplier);
 		*pTypes++ = ITYPE(com::sun::star::ucb::XAnyCompareFactory);
@@ -1423,6 +1427,30 @@ void SAL_CALL SdXImpressDocument::addPropertyChangeListener( const OUString& , c
 void SAL_CALL SdXImpressDocument::removePropertyChangeListener( const OUString& , const uno::Reference< beans::XPropertyChangeListener >&  ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
 void SAL_CALL SdXImpressDocument::addVetoableChangeListener( const OUString& , const uno::Reference< beans::XVetoableChangeListener >&  ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
 void SAL_CALL SdXImpressDocument::removeVetoableChangeListener( const OUString& , const uno::Reference< beans::XVetoableChangeListener >&  ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
+
+// XLinkAuthorizer
+sal_Bool SAL_CALL SdXImpressDocument::authorizeLinks( const ::rtl::OUString &url )
+	throw(uno::RuntimeException)
+{
+	OGuard aGuard( Application::GetSolarMutex() );
+	if ( mpDoc ) {
+		// The following access to the window is copied from SwDoc::UpdateLinks()
+		SfxMedium* pMedium = mpDocShell->GetMedium();
+		SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
+		sfx2::LinkManager *pLinkMgr = mpDoc->GetLinkManager();
+		if ( pLinkMgr->urlIsSafe( url ) ) {
+			return sal_True;
+		}
+		Window* pDlgParent = 0;
+		if ( pFrm )
+			pDlgParent = &pFrm->GetWindow();
+		if ( !pDlgParent )
+			pDlgParent = mpDocShell->GetDialogParent( pMedium );
+		if ( pDlgParent )
+			return pLinkMgr->GetUserAllowsLinkUpdate( pDlgParent );
+	}
+	return sal_False;
+}
 
 // XLinkTargetSupplier
 uno::Reference< container::XNameAccess > SAL_CALL SdXImpressDocument::getLinks()

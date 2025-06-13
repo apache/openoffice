@@ -29,6 +29,7 @@
 #include <rtl/ustring.hxx>
 
 #include <cppuhelper/factory.hxx>
+#include <cppuhelper/implementationentry.hxx>
 
 #include "unomodel.hxx"
 
@@ -37,6 +38,18 @@ using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::lang;
 
+static struct ::cppu::ImplementationEntry g_component_entries[] =
+{
+     {
+         SIDEModel_createInstance,
+         SIDEModel::getImplementationName_Static,
+         SIDEModel::getSupportedServiceNames_Static,
+         ::cppu::createSingleComponentFactory,
+         0,
+         0
+     },
+     { 0, 0, 0, 0, 0, 0 }
+};
 
 extern "C" {
 
@@ -53,37 +66,7 @@ void* SAL_CALL component_getFactory( const sal_Char* pImplementationName,
                                      void* pServiceManager,
                                      void* pRegistryKey )
 {
-	(void)pRegistryKey;
-
-	// Set default return value for this operation - if it failed.
-	void* pReturn = NULL ;
-
-	if	(
-			( pImplementationName	!=	NULL ) &&
-			( pServiceManager		!=	NULL )
-		)
-	{
-		// Define variables which are used in following macros.
-        Reference< XSingleServiceFactory >   xFactory                                                                                                ;
-        Reference< XMultiServiceFactory >    xServiceManager( reinterpret_cast< XMultiServiceFactory* >( pServiceManager ) ) ;
-
-		if( SIDEModel::getImplementationName_Static().equalsAscii( pImplementationName ) )
-		{
-			xFactory = ::cppu::createSingleFactory( xServiceManager,
-			SIDEModel::getImplementationName_Static(),
-			SIDEModel_createInstance,
-			SIDEModel::getSupportedServiceNames_Static() );
-		}
-
-		// Factory is valid - service was found.
-		if ( xFactory.is() )
-		{
-			xFactory->acquire();
-			pReturn = xFactory.get();
-		}
-	}
-
-	// Return with result of this operation.
-	return pReturn ;
+    return ::cppu::component_getFactoryHelper( pImplementationName, pServiceManager, pRegistryKey, g_component_entries );
 }
+
 } // extern "C"

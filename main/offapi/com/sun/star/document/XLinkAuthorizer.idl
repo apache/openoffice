@@ -20,10 +20,32 @@
  *************************************************************/
 
 
-namespace sax_expatwrap {
-Reference< XInterface > SAL_CALL SaxWriter_CreateInstance(
-	const Reference< XComponentContext > & rCtx ) throw (Exception);
-OUString SaxWriter_getServiceName() throw();
-OUString SaxWriter_getImplementationName() throw();
-Sequence< OUString > 	SaxWriter_getSupportedServiceNames(void) throw();
-}
+#ifndef __com_sun_star_document_XLinkAuthorizer_idl__
+#define __com_sun_star_document_XLinkAuthorizer_idl__
+
+//=============================================================================
+
+module com { module sun { module star { module document {
+
+//=============================================================================
+/** gives the authorization to follow links and update them.
+
+ */
+published interface XLinkAuthorizer: com::sun::star::uno::XInterface
+{
+    /** request for authorization to follow or update links.
+
+        @param url if empty, means any link. If indicated, the URL is checked
+        against "private" protocols that it makes no sense to disallow.
+
+        @returns true if links can be followed or updated.
+	 */
+    boolean authorizeLinks( [in] string url );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

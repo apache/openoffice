@@ -32,8 +32,8 @@ namespace avmedia { namespace macavf {
 // - Manager -
 // ----------------
 
-Manager::Manager( const uno::Reference< lang::XMultiServiceFactory >& rxMgr ) :
-    mxMgr( rxMgr )
+Manager::Manager( const uno::Reference< uno::XComponentContext >& rxContext ) :
+    mxContext( rxContext )
 {
     OSL_TRACE( "Constructing avmedia::macavf::Manager" );
 }
@@ -48,7 +48,7 @@ Manager::~Manager()
 uno::Reference< media::XPlayer > SAL_CALL Manager::createPlayer( const ::rtl::OUString& rURL )
     throw (uno::RuntimeException)
 {
-    Player*                             pPlayer( new Player( mxMgr ) );
+    Player*                             pPlayer( new Player( mxContext ) );
     uno::Reference< media::XPlayer >    xRet( pPlayer );
     INetURLObject                       aURL( rURL );
 
@@ -65,7 +65,7 @@ uno::Reference< media::XPlayer > SAL_CALL Manager::createPlayer( const ::rtl::OU
 ::rtl::OUString SAL_CALL Manager::getImplementationName(  )
     throw (uno::RuntimeException)
 {
-    return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME ) );
+    return getImplementationName_Static();
 }
 
 // ------------------------------------------------------------------------------
@@ -81,11 +81,28 @@ sal_Bool SAL_CALL Manager::supportsService( const ::rtl::OUString& ServiceName )
 uno::Sequence< ::rtl::OUString > SAL_CALL Manager::getSupportedServiceNames(  )
     throw (uno::RuntimeException)
 {
+    return getSupportedServiceNames_Static();
+}
+
+// ------------------------------------------------------------------------------
+
+::rtl::OUString SAL_CALL Manager::getImplementationName_Static(  )
+    throw (uno::RuntimeException)
+{
+    return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME ) );
+}
+
+// ------------------------------------------------------------------------------
+
+uno::Sequence< ::rtl::OUString > SAL_CALL Manager::getSupportedServiceNames_Static(  )
+    throw (uno::RuntimeException)
+{
     uno::Sequence< ::rtl::OUString > aRet(1);
     aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( AVMEDIA_MACAVF_MANAGER_SERVICENAME ) );
 
     return aRet;
 }
+
 
 } // namespace macavf
 } // namespace avmedia

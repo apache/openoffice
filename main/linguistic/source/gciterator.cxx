@@ -73,6 +73,10 @@ using ::rtl::OUString;
 using namespace linguistic;
 using namespace ::com::sun::star;
 
+// forward declarations
+static ::rtl::OUString GrammarCheckingIterator_getImplementationName() throw();
+static uno::Sequence< OUString > GrammarCheckingIterator_getSupportedServiceNames() throw();
+
 
 //////////////////////////////////////////////////////////////////////
 
@@ -266,8 +270,8 @@ void stopGrammarChecking ()
 }
 */
 
-GrammarCheckingIterator::GrammarCheckingIterator( const uno::Reference< uno::XComponentContext > & rxCtx ) :
-    m_xContext( rxCtx ),
+GrammarCheckingIterator::GrammarCheckingIterator( const uno::Reference< lang::XMultiServiceFactory > & rxMgr ) :
+    m_xMSF( rxMgr ),
 	m_bEnd( sal_False ),
     m_aCurCheckedDocId(),
     m_bGCServicesChecked( sal_False ),
@@ -950,7 +954,7 @@ throw (uno::RuntimeException)
 
         // release all UNO references
         
-        m_xContext.clear();
+        m_xMSF.clear();
         m_xBreakIterator.clear();
 
         // clear containers with UNO references AND have those references released
@@ -1148,9 +1152,9 @@ void GrammarCheckingIterator::GetMatchingGCSvcs_Impl()
 void GrammarCheckingIterator::GetAvailableGCSvcs_Impl()
 {
 	// internal method; will always be called with locked mutex
-    if (m_xContext.is())
+    if (m_xMSF.is())
 	{
-        uno::Reference< container::XContentEnumerationAccess > xEnumAccess( m_xContext.getServiceManager(), uno::UNO_QUERY );
+        uno::Reference< container::XContentEnumerationAccess > xEnumAccess( m_xMSF, uno::UNO_QUERY );
 		uno::Reference< container::XEnumeration > xEnum;
 		if (xEnumAccess.is())
             xEnum = xEnumAccess->createContentEnumeration( A2OU( SN_GRAMMARCHECKER ) );
@@ -1164,7 +1168,7 @@ void GrammarCheckingIterator::GetAvailableGCSvcs_Impl()
 				uno::Reference< lang::XSingleServiceFactory > xFactory;
 
                 uno::Reference< uno::XComponentContext > xContext;
-                uno::Reference< beans::XPropertySet > xProps( m_xContext.getServiceManager(), uno::UNO_QUERY );
+                uno::Reference< beans::XPropertySet > xProps( m_xMSF, uno::UNO_QUERY );
                 xProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))) >>= xContext;
 
                 if ( xContext.is() && 
@@ -1221,13 +1225,13 @@ throw(uno::RuntimeException)
 
 OUString SAL_CALL GrammarCheckingIterator::getImplementationName(  ) throw (uno::RuntimeException)
 {
-    return getImplementationName_Static();
+    return GrammarCheckingIterator_getImplementationName();
 }
 
 
 uno::Sequence< OUString > SAL_CALL GrammarCheckingIterator::getSupportedServiceNames(  ) throw (uno::RuntimeException)
 {
-    return getSupportedServiceNames_Static();
+    return GrammarCheckingIterator_getSupportedServiceNames();
 }
 
     
@@ -1283,13 +1287,13 @@ LinguDispatcher::DspType GrammarCheckingIterator::GetDspType() const
 ///////////////////////////////////////////////////////////////////////////
 
 
-OUString GrammarCheckingIterator::getImplementationName_Static() throw()
+static OUString GrammarCheckingIterator_getImplementationName() throw()
 {
     return A2OU( "com.sun.star.lingu2.ProofreadingIterator" );
 }
 
 
-uno::Sequence< OUString > GrammarCheckingIterator::getSupportedServiceNames_Static() throw()
+static uno::Sequence< OUString > GrammarCheckingIterator_getSupportedServiceNames() throw()
 {
     uno::Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = A2OU( SN_GRAMMARCHECKINGITERATOR );
@@ -1297,11 +1301,31 @@ uno::Sequence< OUString > GrammarCheckingIterator::getSupportedServiceNames_Stat
 }
 
 
-uno::Reference< uno::XInterface > SAL_CALL GrammarCheckingIterator_createInstance(
-    const uno::Reference< uno::XComponentContext > & rxCtx )
+static uno::Reference< uno::XInterface > SAL_CALL GrammarCheckingIterator_createInstance(
+    const uno::Reference< lang::XMultiServiceFactory > & rxSMgr )
 throw(uno::Exception)
 {
-    return static_cast< ::cppu::OWeakObject * >(new GrammarCheckingIterator( rxCtx ));
+    return static_cast< ::cppu::OWeakObject * >(new GrammarCheckingIterator( rxSMgr ));
 }
 
 
+void * SAL_CALL GrammarCheckingIterator_getFactory(
+    const sal_Char *pImplName,
+    lang::XMultiServiceFactory *pServiceManager,
+    void * /*pRegistryKey*/ )
+{
+    void * pRet = 0;
+    if ( !GrammarCheckingIterator_getImplementationName().compareToAscii( pImplName ) )
+    {
+        uno::Reference< lang::XSingleServiceFactory > xFactory =
+            cppu::createOneInstanceFactory(
+                pServiceManager,
+                GrammarCheckingIterator_getImplementationName(),
+                GrammarCheckingIterator_createInstance,
+                GrammarCheckingIterator_getSupportedServiceNames());
+        // acquire, because we return an interface pointer instead of a reference
+        xFactory->acquire();
+        pRet = xFactory.get();
+    }
+    return pRet;
+}

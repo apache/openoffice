@@ -27,6 +27,8 @@
 #include "iframe.hxx"
 #include <sfx2/sfxdlg.hxx>
 #include <sfx2/sfxsids.hrc>
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
+#include <com/sun/star/frame/XDesktop.hpp>
 #include <com/sun/star/frame/XDispatchProvider.hpp>
 #include <com/sun/star/frame/XDispatch.hpp>
 #include <com/sun/star/frame/XFramesSupplier.hpp>
@@ -36,6 +38,7 @@
 #include <tools/debug.hxx>
 #include <rtl/ustring.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
+#include <ucbhelper/simpleinteractionrequest.hxx>
 #include <svtools/miscopt.hxx>
 #include <vcl/window.hxx>
 
@@ -143,6 +146,21 @@ throw( uno::RuntimeException )
     if ( SvtMiscOptions().IsPluginsEnabled() )
     {
         DBG_ASSERT( !mxFrame.is(), "Frame already existing!" );
+        ::rtl::OUString sURL( maFrmDescr.GetURL().GetMainURL( INetURLObject::NO_DECODE ) );
+        // Obtain authorization from the current document, that is: our mxObj'x "client site"
+        uno::Reference< com::sun::star::document::XLinkAuthorizer > xLinkAuthorizer;
+        uno::Reference< com::sun::star::lang::XComponent > xComponent;
+        uno::Reference< com::sun::star::embed::XComponentSupplier > xCompSupplier( mxObj->getClientSite(), uno::UNO_QUERY );
+        if ( xCompSupplier.is() ) {
+            xComponent.set( xCompSupplier->getComponent(), uno::UNO_QUERY );
+            if ( xComponent.is() ) {
+                xLinkAuthorizer.set( xComponent, uno::UNO_QUERY );
+            }
+        }
+        if ( xLinkAuthorizer.is() ) {
+            if ( !xLinkAuthorizer->authorizeLinks( sURL ) )
+                return sal_False;
+        }
         Window* pParent = VCLUnoHelper::GetWindow( xFrame->getContainerWindow() );
         IFrameWindow_Impl* pWin = new IFrameWindow_Impl( pParent, maFrmDescr.IsFrameBorderOn() );
         pWin->SetSizePixel( pParent->GetOutputSizePixel() );
@@ -168,7 +186,7 @@ throw( uno::RuntimeException )
         uno::Reference< frame::XDispatchProvider > xProv( mxFrame, uno::UNO_QUERY );
 
         util::URL aTargetURL;
-        aTargetURL.Complete = ::rtl::OUString( maFrmDescr.GetURL().GetMainURL( INetURLObject::NO_DECODE ) );
+        aTargetURL.Complete = sURL;
         uno::Reference < util::XURLTransformer > xTrans( mxFact->createInstance( rtl::OUString::createFromAscii("com.sun.star.util.URLTransformer" )), uno::UNO_QUERY );
         xTrans->parseStrict( aTargetURL );
 

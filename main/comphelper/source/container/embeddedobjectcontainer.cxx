@@ -23,6 +23,7 @@
 #include "precompiled_comphelper.hxx"
 #include <com/sun/star/container/XChild.hpp>
 #include <com/sun/star/container/XNameAccess.hpp>
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
 #include <com/sun/star/embed/XEmbedObjectCreator.hpp>
 #include <com/sun/star/embed/XLinkCreator.hpp>
 #include <com/sun/star/embed/XEmbedPersist.hpp>
@@ -669,7 +670,19 @@ uno::Reference < embed::XEmbeddedObject > EmbeddedObjectContainer::InsertEmbedde
 				::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.embed.EmbeddedObjectCreator")) ), uno::UNO_QUERY );
 		uno::Sequence< beans::PropertyValue > aObjDescr( 1 );
 		aObjDescr[0].Name = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Parent" ) );
-		aObjDescr[0].Value <<= pImpl->m_xModel.get();
+		uno::Any model( pImpl->m_xModel.get() );
+		aObjDescr[0].Value <<= model;
+		// The call to XLinkCreator::createInstanceLink() will open the link.
+		// We must request for authorization now. And we need the URL for that.
+		::rtl::OUString aURL;
+		for ( sal_Int32 i = 0; i < aMedium.getLength(); i++ )
+			if ( aMedium[i].Name.equalsAscii( "URL" ) )
+				aMedium[i].Value >>= aURL;
+		uno::Reference< com::sun::star::document::XLinkAuthorizer > xLinkAuthorizer( model, uno::UNO_QUERY );
+		if ( xLinkAuthorizer.is() ) {
+			if ( !xLinkAuthorizer->authorizeLinks( aURL ) )
+				throw uno::RuntimeException();
+		}
 		xObj = uno::Reference < embed::XEmbeddedObject >( xFactory->createInstanceLink(
 				pImpl->mxStorage, rNewName, aMedium, aObjDescr ), uno::UNO_QUERY );
 
