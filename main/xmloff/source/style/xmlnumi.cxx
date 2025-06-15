@@ -28,6 +28,7 @@
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <com/sun/star/awt/Size.hpp>
 #include <com/sun/star/awt/FontDescriptor.hpp>
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
 #include <com/sun/star/text/HoriOrientation.hpp>
 #include <com/sun/star/text/VertOrientation.hpp>
 // --> OD 2008-01-16 #newlistlevelattrs#
@@ -1216,6 +1217,18 @@ void SvxXMLListStyleContext::FillUnoNumRule(
 						pLevelStyle->GetProperties( pI18NMap );
 					Any aAny;
 					aAny <<= aProps;
+					// Validate any URLs
+					for( sal_Int32 j = 0; j < aProps.getLength(); j++ ) {
+						if ( aProps[ j ].Name.equalsAscii( "GraphicURL" ) ) {
+							OUString aURL;
+							aProps[ j ].Value >>= aURL;
+							uno::Reference< com::sun::star::document::XLinkAuthorizer > xLinkAuthorizer( GetImport().GetModel(), uno::UNO_QUERY );
+							if ( xLinkAuthorizer.is() ) {
+								if ( !xLinkAuthorizer->authorizeLinks( aURL ) )
+									throw uno::RuntimeException();
+							}
+						}
+					}
 					rNumRule->replaceByIndex( nLevel, aAny );
 				}
 			}
