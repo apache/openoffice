@@ -83,7 +83,7 @@
 #define ENV_CANCEL		SHRT_MAX
 
 // Method is used for envelopes and labels!
-//	in applab.cxx and appenv.cxx
+// in applab.cxx and appenv.cxx
 String InsertLabEnvText( SwWrtShell& rSh, SwFldMgr& rFldMgr, const String& rText )
 {
 	String sRet;
@@ -512,7 +512,7 @@ static sal_uInt16 nTitleNo = 0;
 
 		rReq.Done();
 	}
-	else //Cancel
+	else // Cancel
 	{
 		rReq.Ignore();
 
