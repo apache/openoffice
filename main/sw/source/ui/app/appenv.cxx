@@ -173,20 +173,19 @@ static sal_uInt16 nTitleNo = 0;
 	pMyDocSh = (SwDocShell*) SfxObjectShell::Current();
 	pOldSh	 = pMyDocSh ? pMyDocSh->GetWrtShell() : 0;
 
-	// Create new document
+	// Create new document (don't show!)
 	SfxObjectShellLock xDocSh( new SwDocShell( SFX_CREATE_MODE_STANDARD ) );
 	xDocSh->DoInitNew( 0 );
 	pFrame = SfxViewFrame::LoadHiddenDocument( *xDocSh, 0 );
 	pNewView = (SwView*) pFrame->GetViewShell();
-	pNewView->AttrChangedNotify( &pNewView->GetWrtShell() );//Damit SelectShell gerufen wird.
+	pNewView->AttrChangedNotify( &pNewView->GetWrtShell() ); // Damit SelectShell gerufen wird.
 	pSh = pNewView->GetWrtShellPtr();
 
 	String aTmp( SW_RES(STR_ENV_TITLE) );
 	aTmp += String::CreateFromInt32( ++nTitleNo );
 	xDocSh->SetTitle( aTmp );
 
-	// Copy old Collections "Sender" and "Recipient" into new
-	// Document
+	// Copy old Collections "Sender" and "Recipient" into new document
 	if ( pOldSh )
 	{
 		::lcl_CopyCollAttr(pOldSh, pSh, RES_POOLCOLL_JAKETADRESS);
