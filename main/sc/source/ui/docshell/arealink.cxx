@@ -247,6 +247,8 @@ sal_Bool ScAreaLink::Refresh( const String& rNewFile, const String& rNewFilter,
 	// Request for authorization
 	sfx2::LinkManager* pLinkMgr = pImpl->m_pDocSh->GetDocument()->GetLinkManager();
 	if ( pLinkMgr ) {
+		if ( pLinkMgr->urlIsVendor( rNewFile ) )
+			return sal_False;
 		SfxViewFrame* pFrame = SfxViewFrame::GetFirst( pImpl->m_pDocSh );
 		if ( pFrame ) {
 			Window* pWindow = &pFrame->GetWindow();

@@ -932,13 +932,16 @@ void SwNoTxtFrm::PaintPicture( OutputDevice* pOut, const SwRect &rGrfArea ) cons
             // <--
 			{
 				Size aTmpSz;
-                ::sfx2::SvLinkSource* pGrfObj = pGrfNd->GetLink()->GetObj();
+				::sfx2::SvLinkSource* pGrfObj = pGrfNd->GetLink()->GetObj();
+				String aUrl;
+				GetRealURL( *pGrfNd, aUrl );
 				if( !pGrfObj ||
 					!pGrfObj->IsDataComplete() ||
 					!(aTmpSz = pGrfNd->GetTwipSize()).Width() ||
 					!aTmpSz.Height() || !pGrfNd->GetAutoFmtLvl() )
 				{
-                    if (pShell->GetDoc()->GetLinkManager().GetUserAllowsLinkUpdate(pShell->GetWin())) {
+                    ::sfx2::LinkManager& linkMgr = pShell->GetDoc()->GetLinkManager();
+                    if ( !linkMgr.urlIsVendor( aUrl ) && linkMgr.GetUserAllowsLinkUpdate( pShell->GetWin() ) ) {
                         // --> OD 2006-12-22 #i73788#
                         pGrfNd->TriggerAsyncRetrieveInputStream();
                         // <--
@@ -946,7 +949,7 @@ void SwNoTxtFrm::PaintPicture( OutputDevice* pOut, const SwRect &rGrfArea ) cons
 				}
                 String aTxt( pGrfNd->GetTitle() );
 				if ( !aTxt.Len() )
-					GetRealURL( *pGrfNd, aTxt );
+					aTxt = aUrl;
                 ::lcl_PaintReplacement( aAlignedGrfArea, aTxt, *pShell, this, sal_False );
 				bContinue = sal_False;
 			}

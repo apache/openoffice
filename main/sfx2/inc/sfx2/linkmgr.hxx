@@ -170,6 +170,9 @@ public:
     // Check whether a link URL must be subject to authorization
     sal_Bool urlIsSafe( const ::com::sun::star::util::URL &url );
 
+    // Check whether a link URL is using a ``strange'' scheme
+    sal_Bool urlIsVendor( const ::rtl::OUString &url );
+
 private:
 				LinkManager( const LinkManager& );
 				LinkManager& operator=( const LinkManager& );

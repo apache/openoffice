@@ -2367,7 +2367,9 @@ sal_Bool SwXTextDocument::authorizeLinks( const ::rtl::OUString& rURL ) throw( R
 		SfxMedium* pMedium = pDocShell->GetMedium();
 		SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
 		sfx2::LinkManager &pLinkMgr = doc->GetLinkManager();
-		if ( pLinkMgr.urlIsSafe( rURL ) ) {
+		if ( pLinkMgr.urlIsVendor( rURL ) ) {
+			return sal_False;
+		} else if ( pLinkMgr.urlIsSafe( rURL ) ) {
 			return sal_True;
 		}
 		Window* pDlgParent = 0;
