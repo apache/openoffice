@@ -1438,7 +1438,9 @@ sal_Bool SAL_CALL SdXImpressDocument::authorizeLinks( const ::rtl::OUString &url
 		SfxMedium* pMedium = mpDocShell->GetMedium();
 		SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
 		sfx2::LinkManager *pLinkMgr = mpDoc->GetLinkManager();
-		if ( pLinkMgr->urlIsSafe( url ) ) {
+		if ( pLinkMgr->urlIsVendor( url ) ) {
+			return sal_False;
+		} else if ( pLinkMgr->urlIsSafe( url ) ) {
 			return sal_True;
 		}
 		Window* pDlgParent = 0;
