@@ -575,6 +575,18 @@ sal_Bool LinkManager::urlIsSafe( const ::com::sun::star::util::URL &url )
 }
 
 
+sal_Bool LinkManager::urlIsVendor( const ::rtl::OUString &url )
+{
+	if ( url.matchIgnoreAsciiCaseAsciiL( "vnd.sun.star.", 13, 0 ) ) {
+		return url.matchIgnoreAsciiCaseAsciiL ( "expand", 6, 13 ) ||
+			url.matchIgnoreAsciiCaseAsciiL ( "script", 6, 13 ) ||
+			url.matchIgnoreAsciiCaseAsciiL ( "tdoc", 4, 13 ) ||
+			url.matchIgnoreAsciiCaseAsciiL ( "uno", 3, 13 );
+	}
+	return sal_False;
+}
+
+
 // ----------------------------------------------------------------------
 String lcl_DDE_RelToAbs( const String& rTopic, const String& rBaseURL )
 {

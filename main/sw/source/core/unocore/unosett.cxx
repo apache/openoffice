@@ -2113,6 +2113,9 @@ void SwXNumberingRules::SetNumberingRuleByIndex(
 						SfxMedium* pMedium = myDocShell->GetMedium();
 						SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
 						sfx2::LinkManager& pLinkMgr = myDoc->GetLinkManager();
+						if ( pLinkMgr.urlIsVendor( sBrushURL ) ) {
+							break; // Stop here
+						}
 						if ( !pLinkMgr.urlIsSafe( sBrushURL ) ) {
 							Window* pDlgParent = 0;
 							if ( pFrm )

@@ -232,7 +232,12 @@ void SAL_CALL SdrGraphicUpdater::onTerminated(void)
 
 void SAL_CALL SdrGraphicUpdater::run(void)
 {
-	Graphic aGraphic( ImpLoadLinkedGraphic( maFileName, maFilterName ) );
+	sfx2::LinkManager *linkMgr = mrGraphicLink.GetLinkManager();
+	Graphic aGraphic;
+	if ( (linkMgr == NULL) ||
+		 ( !linkMgr->urlIsVendor( maFileName ) && ( linkMgr->GetUserAllowsLinkUpdate(NULL) ) ) ) {
+		aGraphic = ImpLoadLinkedGraphic( maFileName, maFilterName );
+	}
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	if ( !mbIsTerminated )
 	{
@@ -820,7 +825,8 @@ sal_Bool SdrGrafObj::ImpUpdateGraphicLink( sal_Bool bAsynchron ) const
     if( pGraphicLink )
 	{
         sfx2::LinkManager *linkMgr = pGraphicLink->GetLinkManager();
-        if ((linkMgr == NULL) || (linkMgr->GetUserAllowsLinkUpdate(NULL))) {
+        if ( (linkMgr == NULL) ||
+             ( !linkMgr->urlIsVendor( aFileName ) && ( linkMgr->GetUserAllowsLinkUpdate(NULL) ) ) ) {
             if ( bAsynchron )
                 pGraphicLink->UpdateAsynchron();
             else
