@@ -184,6 +184,9 @@ sal_Bool SwGrfNode::ReRead(
     ASSERT( pGraphic || pGrfObj || rGrfName.Len(),
         "GraphicNode without a name, Graphic or GraphicObject" );
 
+    if ( GetDoc()->GetLinkManager().urlIsVendor( rGrfName ) )
+        return sal_False;
+
     // ReadRead mit Namen
     if ( refLink.Is() )
     {
