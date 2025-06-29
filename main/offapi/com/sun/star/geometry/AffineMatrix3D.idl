@@ -59,7 +59,7 @@ module com {  module sun {  module star {  module geometry {
     physical dimensions attached to them. This physical measurement
     units are typically only added when using these data types to
     render something onto a physical output device. For 3D coordinates
-	there is also a projection from 3D to 2D device coordiantes needed.
+	there is also a projection from 3D to 2D device coordinates needed.
 	Only then the total transformation matrix (oncluding projection to 2D)
 	and the device resolution determine the actual measurement unit in 3D.<p>
 
