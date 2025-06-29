@@ -1552,7 +1552,7 @@ public class NumericalHelper
                     DebugHelper.exception(1 /*BasicErrorCode.SbERR_OUT_OF_RANGE*/, PropertyNames.EMPTY_STRING);
                 }
                 String number = NumericalHelper.toString(new Integer(n));
-                /* converison idea: every digit is written with a maximum of two
+                /* conversion idea: every digit is written with a maximum of two
                  * different roman symbols, using three in total, e.g. CC, CD, 
                  * DCC, CM for the hundreds (meaning 200, 400, 700 and 900).
                  * So every digit is converted separately with regard to the

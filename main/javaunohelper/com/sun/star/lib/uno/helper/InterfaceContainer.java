@@ -465,7 +465,7 @@ public class InterfaceContainer implements Cloneable
     }
     
     /** The iterator keeps a copy of the list. Changes to InterfaceContainer do not
-     *  affect the data of the iterator. Conversly, changes to the iterator are effect
+     *  affect the data of the iterator. Conversely, changes to the iterator are effect
      *  InterfaceContainer.
      *
      * @param index
