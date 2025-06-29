@@ -910,7 +910,7 @@ void SVTXFormattedField::setProperty( const ::rtl::OUString& PropertyName, const
 						// no double
 						if (Value.hasValue())
 						{	// but a value
-							// try if it is something converitble
+							// try if it is something convertible
 							sal_Int32 nValue = 0;
 							if (!(Value >>= nValue))
 								throw ::com::sun::star::lang::IllegalArgumentException();

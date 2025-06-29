@@ -43,7 +43,7 @@ using namespace ::com::sun::star::lang;
 
 void java_util_Properties::setProperty(const ::rtl::OUString key, const ::rtl::OUString& value)
 {
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	jobject out(0);
 	
 	{

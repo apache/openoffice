@@ -345,7 +345,7 @@ Reference< XDatabaseMetaData > SAL_CALL java_sql_Connection::getMetaData(  ) thr
 	Reference< XDatabaseMetaData > xMetaData = m_xMetaData;
 	if(!xMetaData.is())
 	{
-        SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+        SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
         static jmethodID mID(NULL);
         jobject out = callObjectMethod(t.pEnv,"getMetaData","()Ljava/sql/DatabaseMetaData;", mID);
 		if(out)
@@ -420,7 +420,7 @@ Reference< ::com::sun::star::container::XNameAccess > SAL_CALL java_sql_Connecti
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Connection_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     static jmethodID mID(NULL);
     /*jobject out = */callObjectMethod(t.pEnv,"getTypeMap","()Ljava/util/Map;", mID);
 	// ACHTUNG: der Aufrufer wird Eigentuemer des zurueckgelieferten Zeigers !!!
@@ -537,7 +537,7 @@ Reference< XPreparedStatement > SAL_CALL java_sql_Connection::prepareCall( const
 	checkDisposed(java_sql_Connection_BASE::rBHelper.bDisposed);
 
 	::rtl::OUString aStr;
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	{
 
 		// temporaere Variable initialisieren
