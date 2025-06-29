@@ -123,7 +123,7 @@ void SAL_CALL java_sql_PreparedStatement::setString( sal_Int32 parameterIndex, c
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
     m_aLogger.log( LogLevel::FINER, STR_LOG_STRING_PARAMETER, parameterIndex, x );
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	{		// temporaere Variable initialisieren
 		createStatement(t.pEnv);
 		static const char * cSignature = "(ILjava/lang/String;)V";
@@ -151,7 +151,7 @@ void SAL_CALL java_sql_PreparedStatement::setString( sal_Int32 parameterIndex, c
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	createStatement(t.pEnv);
     static jmethodID mID(NULL);
     jobject out = callResultSetMethod(t.env(),"executeQuery",mID);
@@ -166,7 +166,7 @@ void SAL_CALL java_sql_PreparedStatement::setBoolean( sal_Int32 parameterIndex, 
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod("setBoolean", "(IZ)V", mID, parameterIndex, x);
@@ -179,7 +179,7 @@ void SAL_CALL java_sql_PreparedStatement::setByte( sal_Int32 parameterIndex, sal
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod("setByte", "(IB)V", mID, parameterIndex, x);
@@ -192,7 +192,7 @@ void SAL_CALL java_sql_PreparedStatement::setDate( sal_Int32 parameterIndex, con
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     java_sql_Date aT(x);
     static jmethodID mID(NULL);
@@ -207,7 +207,7 @@ void SAL_CALL java_sql_PreparedStatement::setTime( sal_Int32 parameterIndex, con
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     java_sql_Time aT(x);
     static jmethodID mID(NULL);
@@ -221,7 +221,7 @@ void SAL_CALL java_sql_PreparedStatement::setTimestamp( sal_Int32 parameterIndex
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     java_sql_Timestamp aD(x);
@@ -234,7 +234,7 @@ void SAL_CALL java_sql_PreparedStatement::setDouble( sal_Int32 parameterIndex, d
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod("setDouble", "(ID)V", mID, parameterIndex, x);
@@ -247,7 +247,7 @@ void SAL_CALL java_sql_PreparedStatement::setFloat( sal_Int32 parameterIndex, fl
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod("setFloat", "(IF)V", mID, parameterIndex, x);
@@ -260,7 +260,7 @@ void SAL_CALL java_sql_PreparedStatement::setInt( sal_Int32 parameterIndex, sal_
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod("setInt", "(II)V", mID, parameterIndex, x);
@@ -273,7 +273,7 @@ void SAL_CALL java_sql_PreparedStatement::setLong( sal_Int32 parameterIndex, sal
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod("setLong", "(IJ)V", mID, parameterIndex, x);
@@ -286,7 +286,7 @@ void SAL_CALL java_sql_PreparedStatement::setNull( sal_Int32 parameterIndex, sal
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod("setNull", "(II)V", mID, parameterIndex, sqlType);
@@ -323,7 +323,7 @@ void SAL_CALL java_sql_PreparedStatement::setObjectWithInfo( sal_Int32 parameter
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	{
 		createStatement(t.pEnv);
 
@@ -382,7 +382,7 @@ void SAL_CALL java_sql_PreparedStatement::setObjectNull( sal_Int32 parameterInde
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod<jobject>("setObject", "(ILjava/lang/Object;)V", mID, parameterIndex, NULL);
@@ -408,7 +408,7 @@ void SAL_CALL java_sql_PreparedStatement::setShort( sal_Int32 parameterIndex, sa
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     callVoidMethod("setShort", "(IS)V", mID, parameterIndex, x);
@@ -421,7 +421,7 @@ void SAL_CALL java_sql_PreparedStatement::setBytes( sal_Int32 parameterIndex, co
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	{
 		createStatement(t.pEnv);
 
@@ -446,7 +446,7 @@ void SAL_CALL java_sql_PreparedStatement::setCharacterStream( sal_Int32 paramete
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	{
 		createStatement(t.pEnv);
 
@@ -494,7 +494,7 @@ void SAL_CALL java_sql_PreparedStatement::setBinaryStream( sal_Int32 parameterIn
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	{
 		createStatement(t.pEnv);
 		// temporaere Variable initialisieren
@@ -556,7 +556,7 @@ void SAL_CALL java_sql_PreparedStatement::clearBatch(  ) throw(::com::sun::star:
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	{
 		createStatement(t.pEnv);
         static jmethodID mID(NULL);
@@ -569,7 +569,7 @@ void SAL_CALL java_sql_PreparedStatement::addBatch( ) throw(::com::sun::star::sd
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	{
 		createStatement(t.pEnv);
         static jmethodID mID(NULL);
@@ -583,7 +583,7 @@ void SAL_CALL java_sql_PreparedStatement::addBatch( ) throw(::com::sun::star::sd
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 	::com::sun::star::uno::Sequence< sal_Int32 > aSeq;
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     jintArray out = (jintArray)callObjectMethod(t.pEnv,"executeBatch","()[I", mID);
@@ -601,7 +601,7 @@ void SAL_CALL java_sql_PreparedStatement::addBatch( ) throw(::com::sun::star::sd
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     createStatement(t.pEnv);
     static jmethodID mID(NULL);
     jobject out = callObjectMethod(t.pEnv,"getMetaData","()Ljava/sql/ResultSetMetaData;", mID);
