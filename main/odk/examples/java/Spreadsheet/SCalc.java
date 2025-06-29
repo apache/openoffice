@@ -258,8 +258,8 @@ public class SCalc  {
         // get the CellRange which holds the data for the chart and its RangeAddress
         // get the TableChartSupplier from the sheet and then the TableCharts from it.
         // add a new chart based on the data to the TableCharts.
-        // get the ChartDocument, which provide the Diagramm. Change the properties
-        // Dim3D (3 dimension) and String (the title) of the diagramm.
+        // get the ChartDocument, which provide the Diagram. Change the properties
+        // Dim3D (3 dimension) and String (the title) of the diagram.
         //***************************************************************************
         
         // insert a chart
@@ -289,7 +289,7 @@ public class SCalc  {
         XTableCharts oCharts = oSupp.getCharts();
         oCharts.addNewByName("Example", oRect, oAddr, true, true);
         
-        // get the diagramm and Change some of the properties
+        // get the diagram and Change some of the properties
         
         try {
             oChart = (XTableChart) (UnoRuntime.queryInterface(

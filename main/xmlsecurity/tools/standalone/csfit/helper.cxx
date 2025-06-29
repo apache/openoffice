@@ -112,15 +112,15 @@ Reference< XMultiComponentFactory > serviceManager( Reference< XComponentContext
 		xLocalComponentContext = bootstrap_InitialComponentContext( xSimpleRegistry ) ;
 		OSL_ENSURE( xLocalComponentContext.is() ,
 			"serviceManager - "
-			"Cannot create intial component context" ) ;
+			"Cannot create initial component context" ) ;
 
 		xLocalServiceManager = xLocalComponentContext->getServiceManager() ;
 		OSL_ENSURE( xLocalServiceManager.is() ,
 			"serviceManager - "
-			"Cannot create intial service manager" ) ;
+			"Cannot create initial service manager" ) ;
 
 		/*-
-		 * Because of the exception rasied from
+		 * Because of the exception raised from
 		 * ucbhelper/source/provider/provconf.cxx, lin 323
 		 * I do not use the content broker at present
 		 ********************************************************************

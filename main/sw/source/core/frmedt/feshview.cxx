@@ -328,7 +328,7 @@ sal_Bool SwFEShell::MoveAnchor( sal_uInt16 nDir )
         switch ( nAnchorId ) {
             case FLY_AT_PAGE:
             {
-                ASSERT( pOld->IsPageFrm(), "Wrong anchor, page exspected." );
+                ASSERT( pOld->IsPageFrm(), "Wrong anchor, page expected." );
                 if( SW_MOVE_UP == nDir )
                     pNew = pOld->GetPrev();
                 else if( SW_MOVE_DOWN == nDir )
@@ -342,7 +342,7 @@ sal_Bool SwFEShell::MoveAnchor( sal_uInt16 nDir )
             }
             case FLY_AT_CHAR:
             {
-                ASSERT( pOld->IsCntntFrm(), "Wrong anchor, page exspected." );
+                ASSERT( pOld->IsCntntFrm(), "Wrong anchor, page expected." );
                 if( SW_MOVE_LEFT == nDir || SW_MOVE_RIGHT == nDir )
                 {
                     SwPosition *pPos = (SwPosition*)aAnch.GetCntntAnchor();
@@ -376,7 +376,7 @@ sal_Bool SwFEShell::MoveAnchor( sal_uInt16 nDir )
             } // no break!
             case FLY_AT_PARA:
             {
-                ASSERT( pOld->IsCntntFrm(), "Wrong anchor, page exspected." );
+                ASSERT( pOld->IsCntntFrm(), "Wrong anchor, page expected." );
                 if( SW_MOVE_UP == nDir )
                     pNew = pOld->FindPrev();
                 else if( SW_MOVE_DOWN == nDir )
@@ -402,7 +402,7 @@ sal_Bool SwFEShell::MoveAnchor( sal_uInt16 nDir )
             }
             case FLY_AT_FLY:
             {
-                ASSERT( pOld->IsFlyFrm(), "Wrong anchor, fly frame exspected.");
+                ASSERT( pOld->IsFlyFrm(), "Wrong anchor, fly frame expected.");
                 SwPageFrm* pPage = pOld->FindPageFrm();
                 ASSERT( pPage, "Where's my page?" );
                 SwFlyFrm* pNewFly = NULL;

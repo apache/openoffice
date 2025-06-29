@@ -50,7 +50,7 @@ import com.sun.star.ucb.XDynamicResultSet;
 public class _XCachedDynamicResultSetFactory extends MultiMethodTest {
 
     /**
-     * Conatins the tested object.
+     * Contains the tested object.
      */
     public XCachedDynamicResultSetFactory oObj;
     private XDynamicResultSet resSetStub = null ;

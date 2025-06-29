@@ -28,7 +28,7 @@
 #include <com/sun/star/i18n/ScriptType.hpp>
 
 #include <hintids.hxx>
-#include <cmdid.h>		  	// Funktion-Ids
+#include <cmdid.h>		  	// Function-Ids
 #include <vcl/msgbox.hxx>
 #include <svl/eitem.hxx>
 #include <sfx2/request.hxx>
