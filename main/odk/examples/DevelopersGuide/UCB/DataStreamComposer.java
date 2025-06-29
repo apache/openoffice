@@ -42,7 +42,7 @@ public class DataStreamComposer {
     /**
      * Constructor.
      *
-     *@param      String[]   This construtor requires the arguments:
+     *@param      String[]   This constructor requires the arguments:
      *                          -url=...               (optional)
      *                          -srcURL=...            (optional)
      *                          -workdir=...           (optional)
