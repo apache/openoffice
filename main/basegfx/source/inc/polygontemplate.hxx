@@ -385,7 +385,7 @@ public:
 
 		if(nCount)
 		{
-			// instert point data
+			// insert point data
 			{
 				SimplePointVector::iterator aIndex(maPoints.begin());
 				aIndex += nIndex;

@@ -1148,7 +1148,7 @@ void ZipPackage::ConnectTo( const uno::Reference< io::XInputStream >& xInStream 
 uno::Reference< io::XInputStream > ZipPackage::writeTempFile()
 {
     // In case the target local file does not exist or empty
-    // write directly to it otherwize create a temporary file to write to.
+    // write directly to it otherwise create a temporary file to write to.
     // If a temporary file is created it is returned back by the method.
     // If the data written directly, xComponentStream will be switched here
     
@@ -1475,7 +1475,7 @@ void SAL_CALL ZipPackage::commitChanges()
                 uno::Reference< ::com::sun::star::ucb::XSimpleFileAccess > xSimpleAccess(
                     m_xFactory->createInstance( ::rtl::OUString::createFromAscii( "com.sun.star.ucb.SimpleFileAccess" ) ),
                     uno::UNO_QUERY );
-                OSL_ENSURE( xSimpleAccess.is(), "Can't instatiate SimpleFileAccess service!\n" );
+                OSL_ENSURE( xSimpleAccess.is(), "Can't instantiate SimpleFileAccess service!\n" );
                 uno::Reference< io::XTruncate > xOrigTruncate;
                 if ( xSimpleAccess.is() )
                 {

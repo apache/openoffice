@@ -150,7 +150,7 @@ public:
 	get();
 
 	/**
-	  * This method returns the Service Manager used to instanciate the Broker.
+	  * This method returns the Service Manager used to instantiate the Broker.
 	  *
 	  * @return a Service Manager.
 	  */

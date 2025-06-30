@@ -184,7 +184,7 @@ char    *magic[] = {                    /* Note: order is important     */
         "__FILE__",
         NULL                            /* Must be last                 */
 };
-
+
 static char     *sharpfilename = NULL;
 
 int nRunde = 0;
@@ -395,7 +395,7 @@ nRunde++;
 #endif
 
 }
-
+
 FILE_LOCAL
 void cppmain()
 /*
@@ -547,7 +547,7 @@ end_line:   if (c == '\n') {                    /* Compiling at EOL?    */
 			EvalBuf[nEvalOff++] = '\0';
 #endif
 }
-
+
 void output(int c)
 /*
  * Output one character to stdout -- output() is passed as an

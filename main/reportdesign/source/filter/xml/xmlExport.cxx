@@ -1044,7 +1044,7 @@ void ORptExport::exportContainer(const Reference< XSection>& _xSection)
     //    if ( bFormula )
     //        sFormula = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("rpt:")) + _sFormula.copy(nPos,nLength);
     //    else
-    //        sFormula = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("field:[")) + _sFormula.copy(nPos,nLength) + ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("]"));;
+    //        sFormula = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("field:[")) + _sFormula.copy(nPos,nLength) + ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("]"));
     //}
     return sFormula;
 }

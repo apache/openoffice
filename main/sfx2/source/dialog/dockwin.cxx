@@ -147,7 +147,7 @@ SfxDockingWrapper::SfxDockingWrapper( Window* pParentWnd ,
     pWindow = pTitleDockWindow;
 	eChildAlignment = SFX_ALIGN_NOALIGNMENT;
 
-    // Use factory manager to retrieve XWindow factory. That can be used to instanciate
+    // Use factory manager to retrieve XWindow factory. That can be used to instantiate
     // the real window factory.
     uno::Reference< lang::XSingleComponentFactory > xFactoryMgr( 
             xServiceManager->createInstance( 

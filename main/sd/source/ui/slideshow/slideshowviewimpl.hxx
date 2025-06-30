@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _SD_SLIDESHOWVIEWIMPL_HXX_
 #define _SD_SLIDESHOWVIEWIMPL_HXX_
@@ -83,33 +81,31 @@ namespace sd
 
 struct WrappedMouseEvent : public ::com::sun::star::lang::EventObject
 {
-    enum EventType
-    {
-        PRESSED,
-        RELEASED,
-        ENTERED,
-        EXITED
-    };
+	enum EventType
+	{
+		PRESSED,
+		RELEASED,
+		ENTERED,
+		EXITED
+	};
 
-    EventType 		meType;
-    ::com::sun::star::awt::MouseEvent	maEvent;
+	EventType 		meType;
+	::com::sun::star::awt::MouseEvent	maEvent;
 };
 
 struct WrappedMouseMotionEvent : public ::com::sun::star::lang::EventObject
 {
-    enum EventType
-    {
-        DRAGGED,
-        MOVED
-    };
+	enum EventType
+	{
+		DRAGGED,
+		MOVED
+	};
 
-    EventType 		meType;
-    ::com::sun::star::awt::MouseEvent	maEvent;
+	EventType 		meType;
+	::com::sun::star::awt::MouseEvent	maEvent;
 };
 
-///////////////////////////////////////////////////////////////////////
 // SlideShowViewListeners
-///////////////////////////////////////////////////////////////////////
 
 typedef std::vector< ::com::sun::star::uno::WeakReference< ::com::sun::star::util::XModifyListener > > ViewListenerVector;
 class SlideShowViewListeners
@@ -117,10 +113,10 @@ class SlideShowViewListeners
 public:
 	SlideShowViewListeners( ::osl::Mutex& rMutex );
 
-    void    addListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& _rxListener );
-    void    removeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& _rxListener );
-	bool    notify( const ::com::sun::star::lang::EventObject& _rEvent ) throw( com::sun::star::uno::Exception );
-	void    disposing( const ::com::sun::star::lang::EventObject& _rEventSource );
+	void	addListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& _rxListener );
+	void	removeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& _rxListener );
+	bool	notify( const ::com::sun::star::lang::EventObject& _rEvent ) throw( com::sun::star::uno::Exception );
+	void	disposing( const ::com::sun::star::lang::EventObject& _rEventSource );
 
 protected:
 	ViewListenerVector maListeners;
@@ -129,154 +125,147 @@ protected:
 
 typedef ::std::auto_ptr< SlideShowViewListeners >	SlideShowViewListenersPtr;
 
-///////////////////////////////////////////////////////////////////////
 // SlideShowViewPaintListeners
-///////////////////////////////////////////////////////////////////////
 
 typedef ::comphelper::OListenerContainerBase< ::com::sun::star::awt::XPaintListener,
-                                                ::com::sun::star::awt::PaintEvent >   		SlideShowViewPaintListeners_Base;
+												::com::sun::star::awt::PaintEvent >			SlideShowViewPaintListeners_Base;
 
 class SlideShowViewPaintListeners : public SlideShowViewPaintListeners_Base
 {
 public:
-    SlideShowViewPaintListeners( ::osl::Mutex& rMutex );
+	SlideShowViewPaintListeners( ::osl::Mutex& rMutex );
 
 protected:
-    virtual bool implTypedNotify( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPaintListener >& rListener, const ::com::sun::star::awt::PaintEvent& rEvent ) throw( ::com::sun::star::uno::Exception );
+	virtual bool implTypedNotify( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPaintListener >& rListener, const ::com::sun::star::awt::PaintEvent& rEvent ) throw( ::com::sun::star::uno::Exception );
 };
 typedef ::std::auto_ptr< SlideShowViewPaintListeners >	SlideShowViewPaintListenersPtr;
 
-///////////////////////////////////////////////////////////////////////
 // SlideShowViewMouseListeners
-///////////////////////////////////////////////////////////////////////
 
 typedef ::comphelper::OListenerContainerBase< ::com::sun::star::awt::XMouseListener, WrappedMouseEvent > SlideShowViewMouseListeners_Base;
 
 class SlideShowViewMouseListeners : public SlideShowViewMouseListeners_Base
 {
 public:
-    SlideShowViewMouseListeners( ::osl::Mutex& rMutex );
+	SlideShowViewMouseListeners( ::osl::Mutex& rMutex );
 
 protected:
-    virtual bool implTypedNotify( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseListener >&	rListener,
-                             const WrappedMouseEvent& 			  		rEvent ) throw( ::com::sun::star::uno::Exception );
+	virtual bool implTypedNotify( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseListener >&	rListener,
+								  const WrappedMouseEvent&						rEvent ) throw( ::com::sun::star::uno::Exception );
 };
 
 typedef ::std::auto_ptr< SlideShowViewMouseListeners >	SlideShowViewMouseListenersPtr;
 
 
-///////////////////////////////////////////////////////////////////////
 // SlideShowViewMouseMotionListeners
-///////////////////////////////////////////////////////////////////////
 
 typedef ::comphelper::OListenerContainerBase< ::com::sun::star::awt::XMouseMotionListener,
-                                                WrappedMouseMotionEvent > SlideShowViewMouseMotionListeners_Base;
+												WrappedMouseMotionEvent > SlideShowViewMouseMotionListeners_Base;
 
 class SlideShowViewMouseMotionListeners : public SlideShowViewMouseMotionListeners_Base
 {
 public:
-    SlideShowViewMouseMotionListeners( ::osl::Mutex& rMutex );
+	SlideShowViewMouseMotionListeners( ::osl::Mutex& rMutex );
 
 protected:
-    virtual bool implTypedNotify( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseMotionListener >&	rListener,
-                             const WrappedMouseMotionEvent& 		  		rEvent ) throw( ::com::sun::star::uno::Exception );
+	virtual bool implTypedNotify( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseMotionListener >&	rListener,
+								  const WrappedMouseMotionEvent&					rEvent ) throw( ::com::sun::star::uno::Exception );
 };
 typedef ::std::auto_ptr< SlideShowViewMouseMotionListeners >	SlideShowViewMouseMotionListenersPtr;
 
 
-///////////////////////////////////////////////////////////////////////
 // SlideShowView
-///////////////////////////////////////////////////////////////////////
 
 class ShowWindow;
 class SlideshowImpl;
 
 typedef ::cppu::WeakComponentImplHelper4< ::com::sun::star::presentation::XSlideShowView,
 											::com::sun::star::awt::XWindowListener,
-                                            ::com::sun::star::awt::XMouseListener,
-                                            ::com::sun::star::awt::XMouseMotionListener > SlideShowView_Base;
+											::com::sun::star::awt::XMouseListener,
+											::com::sun::star::awt::XMouseMotionListener > SlideShowView_Base;
 
 class SlideShowView : public ::comphelper::OBaseMutex,
-                    public SlideShowView_Base
+					public SlideShowView_Base
 {
 public:
 	SlideShowView( ShowWindow&     rOutputWindow,
-                   SdDrawDocument* pDoc,
-                   AnimationMode   eAnimationMode,
-                   SlideshowImpl*  pSlideShow,
-                   bool            bFullScreen );
+				   SdDrawDocument* pDoc,
+				   AnimationMode   eAnimationMode,
+				   SlideshowImpl*  pSlideShow,
+				   bool            bFullScreen );
 
 	void ignoreNextMouseReleased() { mbMousePressedEaten = true; }
 
-    /// Dispose all internal references
-    virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
+	// Dispose all internal references
+	virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
 
-    /// Disposing our broadcaster
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& ) throw(::com::sun::star::uno::RuntimeException);
+	// Disposing our broadcaster
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& ) throw(::com::sun::star::uno::RuntimeException);
 
-    virtual void SAL_CALL paint( const ::com::sun::star::awt::PaintEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL paint( const ::com::sun::star::awt::PaintEvent& e ) throw (::com::sun::star::uno::RuntimeException);
 
-    // XSlideShowView methods
+	// XSlideShowView methods
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSpriteCanvas > SAL_CALL getCanvas(  ) throw (::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL clear(  ) throw (::com::sun::star::uno::RuntimeException);
 	virtual ::com::sun::star::geometry::AffineMatrix2D SAL_CALL getTransformation(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addTransformationChangedListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeTransformationChangedListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addPaintListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPaintListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removePaintListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPaintListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addMouseListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeMouseListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addMouseMotionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseMotionListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addTransformationChangedListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL removeTransformationChangedListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addPaintListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPaintListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL removePaintListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPaintListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addMouseListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL removeMouseListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addMouseMotionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseMotionListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL removeMouseMotionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseMotionListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setMouseCursor( sal_Int16 nPointerShape ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getCanvasArea(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setMouseCursor( sal_Int16 nPointerShape ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::awt::Rectangle SAL_CALL getCanvasArea(  ) throw (::com::sun::star::uno::RuntimeException);
 
-    // XWindowListener methods
-    virtual void SAL_CALL windowResized( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
+	// XWindowListener methods
+	virtual void SAL_CALL windowResized( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
 
-    // XMouseListener implementation
-    virtual void SAL_CALL mousePressed( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL mouseReleased( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL mouseEntered( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL mouseExited( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	// XMouseListener implementation
+	virtual void SAL_CALL mousePressed( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL mouseReleased( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL mouseEntered( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL mouseExited( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
 
-    // XMouseMotionListener implementation
-    virtual void SAL_CALL mouseDragged( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL mouseMoved( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	// XMouseMotionListener implementation
+	virtual void SAL_CALL mouseDragged( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL mouseMoved( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
 
 	using cppu::WeakComponentImplHelperBase::disposing;
 
 protected:
-    ~SlideShowView() {}
+	~SlideShowView() {}
 
 private:
-    void init();
+	void init();
 
 	void updateimpl( ::osl::ClearableMutexGuard& rGuard, SlideshowImpl* pSlideShow );
 
-    ::cppcanvas::SpriteCanvasSharedPtr												mpCanvas;
-    ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >				mxWindow;
-    ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >			mxWindowPeer;
-    ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPointer >				mxPointer;
+	::cppcanvas::SpriteCanvasSharedPtr												mpCanvas;
+	::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >				mxWindow;
+	::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >			mxWindowPeer;
+	::com::sun::star::uno::Reference< ::com::sun::star::awt::XPointer >				mxPointer;
 	SlideshowImpl*							mpSlideShow;
 	ShowWindow&								mrOutputWindow;
-    SlideShowViewListenersPtr				mpViewListeners;
+	SlideShowViewListenersPtr				mpViewListeners;
 	SlideShowViewPaintListenersPtr			mpPaintListeners;
-    SlideShowViewMouseListenersPtr			mpMouseListeners;
-    SlideShowViewMouseMotionListenersPtr	mpMouseMotionListeners;
+	SlideShowViewMouseListenersPtr			mpMouseListeners;
+	SlideShowViewMouseMotionListenersPtr	mpMouseMotionListeners;
 	SdDrawDocument*							mpDoc;
-    bool									mbIsMouseMotionListener;
+	bool									mbIsMouseMotionListener;
 	Rectangle								maPresentationArea;
 	AnimationMode							meAnimationMode;
 	bool									mbFirstPaint;
-    bool                                    mbFullScreen;
+	bool									mbFullScreen;
 	bool									mbMousePressedEaten;
 };
-
 
 } // namespace ::sd
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

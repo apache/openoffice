@@ -45,7 +45,7 @@ public class PropertiesComposer {
     /**
      * Constructor.
      *
-     *@param      String[]   This construtor requires the arguments:
+     *@param      String[]   This constructor requires the arguments:
      *                          -url=...        (optional)
      *                          -propNames=...  (optional)
      *                          -propValues=... (optional)

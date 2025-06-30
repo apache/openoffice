@@ -63,7 +63,7 @@ namespace framework{
 
 /*-************************************************************************************************************//**
 	@short			create a new global servicemanager
-	@descr			A global servicemanager is necessary to instanciate UNO-services. To do this, you need
+	@descr			A global servicemanager is necessary to instantiate UNO-services. To do this, you need
 					a factory to create new objects with special type. That's the reason for a servicemanager.
 
 	@implements		-
@@ -237,7 +237,7 @@ class ServiceManager
 	//-------------------------------------------------------------------------------------------------------------
 
 		/*-****************************************************************************************************//**
-			@short		debug-method to check incoming parameter of some other mehods of this class
+			@short		debug-method to check incoming parameter of some other methods of this class
 			@descr		The following methods are used to check parameters for other methods
 						of this class. The return value is used directly for an ASSERT(...).
 

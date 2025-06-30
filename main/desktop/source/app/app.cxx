@@ -2425,7 +2425,7 @@ sal_Bool Desktop::InitializeQuickstartMode( Reference< XMultiServiceFactory >& r
         Sequence< Any > aSeq( 1 );
         aSeq[0] <<= bQuickstart;
 
-        // Try to instanciate quickstart service. This service is not mandatory, so
+        // Try to instantiate quickstart service. This service is not mandatory, so
         // do nothing if service is not available
 
         // #i105753# the following if was invented for performance

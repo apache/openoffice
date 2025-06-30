@@ -208,7 +208,7 @@ public class JavaLoader implements XImplementationLoader,
 	/**
 	 * Verifies if a given service is supported by the component.
 	 * <p>
-	 * @return		true,if service is suported - otherwise false     
+	 * @return		true,if service is supported - otherwise false
 	 * @param		serviceName		the name of the service that should be checked
 	 * @see			com.sun.star.lang.XServiceInfo
 	 */
@@ -312,7 +312,7 @@ public class JavaLoader implements XImplementationLoader,
 		Class[] paramTypes = {String.class, XMultiServiceFactory.class, XRegistryKey.class};				                    		
 		Object[] params = { implementationName, multiServiceFactory, xKey };
 		
-        // try to get factory from implemetation class
+        // try to get factory from implementation class
         // latest style: use the public static method __getComponentFactory
         // - new style: use the public static method __getServiceFactory
         // - old style: use the public static method getServiceFactory ( DEPRECATED )

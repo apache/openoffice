@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sd.hxx"
@@ -38,7 +38,6 @@
 
 namespace sd { namespace sidebar {
 
-
 MasterPagesSelector* RecentMasterPagesSelector::Create (
     ::Window* pParent,
     ViewShellBase& rViewShellBase,
@@ -49,10 +48,10 @@ MasterPagesSelector* RecentMasterPagesSelector::Create (
         return NULL;
 
     ::boost::shared_ptr<MasterPageContainer> pContainer (new MasterPageContainer());
-    
+
     MasterPagesSelector* pSelector(
         new RecentMasterPagesSelector (
-            pParent, 
+            pParent,
             *pDocument,
             rViewShellBase,
             pContainer,
@@ -62,7 +61,6 @@ MasterPagesSelector* RecentMasterPagesSelector::Create (
 
     return pSelector;
 }
-
 
 
 
@@ -78,13 +76,11 @@ RecentMasterPagesSelector::RecentMasterPagesSelector (
 
 
 
-
 RecentMasterPagesSelector::~RecentMasterPagesSelector (void)
 {
     RecentlyUsedMasterPages::Instance().RemoveEventListener (
         LINK(this,RecentMasterPagesSelector,MasterPageListListener));
 }
-
 
 
 
@@ -99,13 +95,11 @@ void RecentMasterPagesSelector::LateInit (void)
 
 
 
-
 IMPL_LINK(RecentMasterPagesSelector,MasterPageListListener, void*, EMPTYARG)
 {
     MasterPagesSelector::Fill();
     return 0;
 }
-
 
 
 
@@ -136,7 +130,7 @@ void RecentMasterPagesSelector::Fill (ItemList& rItemList)
         if (aToken != MasterPageContainer::NIL_TOKEN)
         {
             String sStyleName (mpContainer->GetStyleNameForToken(aToken));
-            if (sStyleName.Len()==0 
+            if (sStyleName.Len()==0
                 || aCurrentNames.find(sStyleName) == aCurrentNames.end())
             {
                 rItemList.push_back(aToken);
@@ -147,13 +141,12 @@ void RecentMasterPagesSelector::Fill (ItemList& rItemList)
 
 
 
-
 void RecentMasterPagesSelector::AssignMasterPageToPageList (
     SdPage* pMasterPage,
     const ::boost::shared_ptr<std::vector<SdPage*> >& rpPageList)
 {
 	sal_uInt16 nSelectedItemId = PreviewValueSet::GetSelectItemId();
-    
+
     MasterPagesSelector::AssignMasterPageToPageList(pMasterPage, rpPageList);
 
     // Restore the selection.
@@ -168,14 +161,17 @@ void RecentMasterPagesSelector::AssignMasterPageToPageList (
 
 
 
-
 void RecentMasterPagesSelector::ProcessPopupMenu (Menu& rMenu)
 {
     if (rMenu.GetItemPos(SID_TP_EDIT_MASTER) != MENU_ITEM_NOTFOUND)
         rMenu.EnableItem(SID_TP_EDIT_MASTER, sal_False);
+    // Disable some entries
+    if (mpContainer->GetPreviewSize() == MasterPageContainer::SMALL)
+        rMenu.EnableItem(SID_TP_SHOW_SMALL_PREVIEW, sal_False);
+    else
+        rMenu.EnableItem(SID_TP_SHOW_LARGE_PREVIEW, sal_False);
 }
 
-
-
-
 } } // end of namespace sd::sidebar
+
+/* vim: set noet sw=4 ts=4: */

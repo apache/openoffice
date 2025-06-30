@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Correspondence" script:language="StarBasic">Option Explicit
 
@@ -37,7 +37,7 @@ Sub Main
 	DialogModel = TemplateDialog.Model
 	DialogModel.Step = 2
 	DialogModel.Optmerge.State = True
-	LoadLanguageCorrespondence()	
+	LoadLanguageCorrespondence()
 	TemplateDialog.Execute
 	TemplateDialog.Dispose()
 End Sub
@@ -107,29 +107,29 @@ Dim oDocSettings as Object
 Dim oContext as Object
 Dim bDBvalid as Boolean
 	&apos;On Local Error Goto GENERALERROR
-	
+
 	If bTemplate Then
 		bDBFields = DialogModel.Optmerge.State              &apos;database or placeholder
 		TemplateDialog.EndExecute()
 		DialogExited = TRUE
 	End If
-	
+
 	If bDBFields Then
 		oDBAccess = GetRegistryKeyContent(&quot;org.openoffice.Office.DataAccess/AddressBook/&quot;)
 		sAddressbook = oDBAccess.DataSourceName
 
 		bDBvalid = false
-		oContext = createUnoService( &quot;com.sun.star.sdb.DatabaseContext&quot; )		
+		oContext = createUnoService( &quot;com.sun.star.sdb.DatabaseContext&quot; )
 
-		If (not isNull(oContext)) Then 
+		If (not isNull(oContext)) Then
 			&apos;Is the previously assigned address data source still valid?
 			bDBvalid = oContext.hasByName(sAddressbook)
 		end if
-				
-		If (bDBvalid = false) Then			
+
+		If (bDBvalid = false) Then
 			oAddressPilot = createUnoService(&quot;com.sun.star.ui.dialogs.AddressBookSourcePilot&quot;)
 			oAddressPilot.execute
-			
+
 			oDBAccess = GetRegistryKeyContent(&quot;org.openoffice.Office.DataAccess/AddressBook/&quot;)
 			sAddressbook = oDBAccess.DataSourceName
 			If sAddressbook = &quot;&quot; Then
@@ -198,7 +198,7 @@ Dim bDBvalid as Boolean
 		aArgs(3).Value = Table
 		oDisp.dispatch(aURL, aArgs())
 	End If
-	
+
 	GENERALERROR:
 	If Err &lt;&gt; 0 Then
 		Msgbox(msgError$,16, GetProductName())

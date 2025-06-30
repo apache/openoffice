@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Embed" script:language="StarBasic">&apos; *** MODULE EMBED ***
 
@@ -48,13 +48,13 @@ Sub Main(optional bCR As Boolean)
 	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
 	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgEmbed&quot;)
 	oDialogModel = oDialog.Model
-	
+
 	oTxtFilePath = oDialog.GetControl(&quot;txtFilePath&quot;)   		&apos; path to file, rel to Docroot
 	oTxtID = oDialog.GetControl(&quot;txtID&quot;) 					&apos; anchor
 	oTxtHidFName = oDialog.GetControl(&quot;txtHidFName&quot;)		&apos; pure filename
 	oOpVariable = oDialog.GetControl(&quot;opVariable&quot;)
 	oOpSection = oDialog.GetControl(&quot;opSection&quot;)
-	
+
 	DocRoot = ReadConfig(&quot;HelpPrefix&quot;)
 	EmbedFolder = ReadConfig(&quot;LastEmbedDir&quot;)
 	EmbedFile = ReadConfig(&quot;LastEmbedFile&quot;)
@@ -66,7 +66,7 @@ Sub Main(optional bCR As Boolean)
 		oOpVariable.State = FALSE
 	End If
 	SetLabel
-	
+
 	If IsSubDir(EmbedFolder,DocRoot) Then
 		RelDir = Right(EmbedFolder,Len(EmbedFolder)-Len(DocRoot))
 		If Dir(DocRoot+RelDir+EmbedFile) &gt; &quot;&quot; Then
@@ -127,11 +127,11 @@ Dim ListAny(0) as Long
 	ListAny(0) = com.sun.star.ui.dialogs.TemplateDescription.FILEOPEN_SIMPLE
 	oFileDialog = CreateUnoService(&quot;com.sun.star.ui.dialogs.FilePicker&quot;)
 	oFileDialog.Initialize(ListAny())
-	
+
 	DocRoot = ReadConfig(&quot;HelpPrefix&quot;)
 	sLastEmbedDir = ReadConfig(&quot;LastEmbedDir&quot;)
 	sLastEmbedFile = ReadConfig(&quot;LastEmbedFile&quot;)
-	
+
 	If IsSubDir(sLastEmbedDir,DocRoot) Then
 		oFileDialog.setDisplayDirectory(sLastEmbedDir)
 		If sLastEmbedFile &lt;&gt; &quot;&quot; AND Dir(sLastEmbedDir+sLastEmbedFile) &gt; &quot;&quot; Then
@@ -140,7 +140,7 @@ Dim ListAny(0) as Long
 	Else
 		oFileDialog.setDisplayDirectory(DocRoot)
 	End If
-	
+
 	oMasterKey = GetRegistryKeyContent(&quot;org.openoffice.TypeDetection.Types/&quot;)
 	oTypes() = oMasterKey.Types
 	oFileDialog.AppendFilter(&quot;Help&quot;, &quot;*.xhp&quot;)
@@ -148,23 +148,23 @@ Dim ListAny(0) as Long
 	oFileDialog.SetTitle(&quot;Embed From Help File&quot;)
 	iAccept = oFileDialog.Execute()
 	If iAccept = 1 Then
-		sPath = oFileDialog.Files(0)  
+		sPath = oFileDialog.Files(0)
 		sCurDir = oFileDialog.getDisplayDirectory +&quot;/&quot;
 		WriteConfig(&quot;LastEmbedDir&quot;,sCurDir)
 		LastFile = Right(sPath, Len(sPath) - Len(sCurDir))
 		WriteConfig(&quot;LastEmbedFile&quot;,LastFile)
 
-		oTxtPath = oDialog.GetControl(&quot;txtFilePath&quot;)		
-		oTxtHidFName = oDialog.GetControl(&quot;txtHidFName&quot;)		
+		oTxtPath = oDialog.GetControl(&quot;txtFilePath&quot;)
+		oTxtHidFName = oDialog.GetControl(&quot;txtHidFName&quot;)
 		oTxtHidFName.Text = sPath
-		
+
 		If IsSubDir(sCurDir,DocRoot) Then
 			oTxtPath.Text = GetRelPath(sPath, DocRoot)
 		Else
 			oTxtPath.Text = sPath
 			msgbox(&quot;File is outside of your Document Root&quot;,48,&quot;Warning&quot;)
 		End If
-		
+
 		oButBrowseIDs = oDialog.GetControl(&quot;butBrowseIDs&quot;)
 		oButBrowseIDs.Enable = true
 	End If
@@ -174,7 +174,7 @@ End Sub
 Sub UpdateFileName
 	oTxtPath = oDialog.GetControl(&quot;txtFilePath&quot;)
 	ShortFName = oTxtPath.Text
-	
+
 	If ShortFName &gt; &quot;&quot; Then
 
 		oTxtHidFName = oDialog.GetControl(&quot;txtHidFName&quot;)
@@ -184,8 +184,8 @@ Sub UpdateFileName
 		&apos;	oTxtHidFName.Text = MakeAbsPath(ShortFName)
 			oTxtHidFName.Text = ShortFName
 		End If
-	
-		oButBrowseIDs = oDialog.GetControl(&quot;butBrowseIDs&quot;)		
+
+		oButBrowseIDs = oDialog.GetControl(&quot;butBrowseIDs&quot;)
 		If not(FileExists(oTxtHidFName.Text)) Then
 			msgbox oTxtHidFName.Text+&quot; cannot be found.&quot;,48,&quot;D&apos;oh!&quot;
 			oButBrowseIDs.Enable = false
@@ -202,13 +202,13 @@ Sub BrowseEmbed
 	oTxtPath = oDialog.GetControl(&quot;txtFilePath&quot;)
 	oTxtHidFName = oDialog.GetControl(&quot;txtHidFName&quot;)
 	filename = oTxtHidFName.Text
-	
+
 	ReDim arParas(0)
 	ReDim arVars(0)
 	ReDim arSecs(0)
-	
+
 &apos;	msgbox(filename)
-	
+
 	iNumber = Freefile
 	If FileExists(filename) Then
 		Dim arLines(0) As String
@@ -221,7 +221,7 @@ Sub BrowseEmbed
 		Loop
 		Close #iNumber
 		sContent = join(arLines(),&quot; &quot;)
-		
+
 		arTmp() = split(sContent,&quot;&lt;paragraph&quot;)
 		For n=1 to ubound(arTmp())
 			If arTmp(n) &lt;&gt; &quot;&quot; Then
@@ -274,19 +274,19 @@ Sub BrowseEmbed
 				ReDim Preserve arVars(sDim)
 			End If
 		Next n
-	
+
 		ShowSecs
-			
+
 		If oBrowseDialog.Execute() = 1 Then
 			olbElements = oBrowseDialog.GetControl(&quot;lbElements&quot;)
 			sSelected = olbElements.SelectedItem
 			sSelected = Left(sSelected,Instr(sSelected,&quot;:&quot;)-1)
 			oTxtID = oDialog.GetControl(&quot;txtID&quot;)
 			oTxtID.Text = sSelected
-		End If	
+		End If
 	Else
 		msgbox &quot;Cannot open &quot;+filename,48,&quot;Error&quot;
-	End If	
+	End If
 End Sub
 
 Sub UpdateLIst
@@ -336,7 +336,7 @@ Sub CheckButton
 	If sSelected = &quot;&quot; Then
 		oButSelect.enable = false
 	Else
-		oButSelect.enable = true	
+		oButSelect.enable = true
 	End If
 End Sub
 

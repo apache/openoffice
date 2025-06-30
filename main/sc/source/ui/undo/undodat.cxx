@@ -1479,7 +1479,7 @@ ScUndoRepeatDB::ScUndoRepeatDB( ScDocShell* pNewDocShell, SCTAB nNewTab,
 	{
 		aOldQuery = *pOldQ;
 		aNewQuery = *pNewQ;
-		bQuerySize = sal_True;;
+		bQuerySize = sal_True;
 	}
 }
 

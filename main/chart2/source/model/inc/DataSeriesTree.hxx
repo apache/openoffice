@@ -47,7 +47,7 @@ public:
 
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( DataSeriesTree )
 
 protected:

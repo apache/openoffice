@@ -132,7 +132,7 @@ OString generateCompHelperDeclaration(std::ostream & o,
         " css::uno::Reference< css::uno::XComponentContext > const & "
         "context );\n\n";
 
-    // close namepsace
+    // close namespace
     for (short i=0; i < nbrackets; i++)
         o << "} ";
     o << "// closing component helper namespace\n\n";
@@ -173,7 +173,7 @@ void generateCompHelperDefinition(std::ostream & o,
       << "    return static_cast< ::cppu::OWeakObject * >(new "
       << classname <<  "(context));\n}\n\n";
 
-    // close namepsace
+    // close namespace
     for (short j=0; j < nbrackets; j++)
         o << "} ";
     o << "// closing component helper namespace\n\n";
@@ -1067,14 +1067,14 @@ void generateSkeleton(ProgramOptions const & options,
                              nmspace, propertyhelper);
 
         if (serviceobject) {
-            // close namepsace
+            // close namespace
             *pofs << "} // closing anonymous implementation namespace\n\n";
             
             generateCompHelperDefinition(*pofs, options.implname,
                                          classname, services);
             generateCompFunctions(*pofs, nmspace);
         } else {
-            // close namepsace
+            // close namespace
             for (short i=0; i < nm; i++)
                 *pofs << "} ";
             *pofs << (nm > 0 ? "// closing namespace\n\n" : "\n");
@@ -1139,9 +1139,9 @@ void generateCalcAddin(ProgramOptions const & options,
     }
     
     // if backwardcompatible==true the AddIn service needs to be added to the
-    // suported service list, the necessary intefaces are mapped to the add-in
+    // supported service list, the necessary interfaces are mapped to the add-in
     // configuration. Since OO.org 2.0.4 this is obsolete and the add-in is
-    // take form the configuration from Calc directly, this simplifies the
+    // taken from the configuration from Calc directly, this simplifies the
     // add-in code
     if (options.backwardcompatible) {
         checkType(manager, "com.sun.star.sheet.AddIn",
@@ -1236,7 +1236,7 @@ void generateCalcAddin(ProgramOptions const & options,
 		generateMethodBodies(*pofs, options, manager, interfaces, classname,
                              nmspace, propertyhelper);
         
-        // close namepsace
+        // close namespace
         *pofs << "} // closing anonymous implementation namespace\n\n";
 
         generateCompHelperDefinition(*pofs, options.implname, classname,

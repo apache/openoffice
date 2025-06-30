@@ -1465,7 +1465,7 @@
                 <xsl:variable name="curr-char" select="substring($vml-path, $position , 1)"/>
                 <xsl:choose>
                     <xsl:when test="string-length(translate($curr-char ,  'mlcxetrvnfsawqyb' ,'')) = 0 ">
-                        <!-- "MmZzLlHhVvCcSsQqTtAa" are all possiable  command chars -->
+                        <!-- "MmZzLlHhVvCcSsQqTtAa" are all possible command chars -->
                         <xsl:value-of select="concat( $curr-char , ':'  , $position +1)"/>
                     </xsl:when>
                     <xsl:when test="string-length(translate($curr-char ,  '+-.0123456789@' ,'')) = 0 ">

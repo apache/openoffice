@@ -755,7 +755,7 @@ public class PRNCompare
 
     
 /* 
- * Some selftest functionallity
+ * Some selftest functionality
  */
 //    public static void main(String[] args)
 //        {

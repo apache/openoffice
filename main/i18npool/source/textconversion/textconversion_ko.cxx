@@ -279,7 +279,7 @@ TextConversion_ko::getConversions( const OUString& aText, sal_Int32 nStartPos, s
             }
             // found match
             if (result.Candidates.hasElements()) {
-                result.Boundary.startPos = start + nStartPos;;
+                result.Boundary.startPos = start + nStartPos;
                 result.Boundary.endPos = start + len + nStartPos;
                 return result;
             }

@@ -66,7 +66,7 @@ namespace framework{
 /**
     @short  it represent a job; execute it and control it's lifetime
 
-    @descr  This implemetation can be used to wrapp jobs, execute it
+    @descr  This implementation can be used to wrap jobs, execute it
             synchronously or asynchronous, control it's lifetime
             and differe between jobs with and without configuration.
  */

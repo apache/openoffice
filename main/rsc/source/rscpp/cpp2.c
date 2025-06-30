@@ -312,7 +312,7 @@ nest_err:       cerror("#%s must be in an #if", token);
         }
         return (counter + 1);
 }
-
+
 FILE_LOCAL
 void doif(int hash)
 /*
@@ -357,7 +357,7 @@ badif:  cerror("#if, #ifdef, or #ifndef without an argument", NULLST);
 #endif
         return;
 }
-
+
 FILE_LOCAL
 void doinclude()
 /*
@@ -391,7 +391,7 @@ void doinclude()
 #ifdef CONTROL_COMMENTS_NOT_ALLOWED
         while ((c = get()) != '\n' && c != EOF_CHAR)
             save(c);                    /* Put it away.                 */
-        unget();                        /* Force nl after includee      */
+        unget();                        /* Force nl after include      */
         /*
          * The draft is unclear if the following should be done.
          */
@@ -427,7 +427,7 @@ void doinclude()
 incerr: cerror("#include syntax error", NULLST);
         return;
 }
-
+
 FILE_LOCAL int
 openinclude(char* filename, int searchlocal)
 /*
@@ -503,7 +503,7 @@ openinclude(char* filename, int searchlocal)
         }
         return (FALSE);
 }
-
+
 FILE_LOCAL int
 hasdirectory(char* source, char* result)
 /*
@@ -547,7 +547,7 @@ hasdirectory(char* source, char* result)
 #endif
 #endif
 }
-
+
 #if HOST == SYS_VMS
 
 /*

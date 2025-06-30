@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_extensions.hxx"
@@ -49,7 +47,7 @@ inline void dbg_msg( const char* pString, ... )
 	vfprintf( stderr, pString, ap );
 	va_end( ap );
 #else
-    (void)pString;
+	(void)pString;
 #endif
 }
 
@@ -86,7 +84,7 @@ inline void dbg_msg( const char* pString, ... )
 	else
 
 int				Sane::nRefCount = 0;
-oslModule       Sane::pSaneLib = 0;
+oslModule		Sane::pSaneLib = 0;
 SANE_Int		Sane::nVersion = 0;
 SANE_Device**	Sane::ppDevices = 0;
 int				Sane::nDevices = 0;
@@ -117,14 +115,14 @@ static sal_Bool bSaneSymbolLoadFailed = sal_False;
 
 inline oslGenericFunction Sane::LoadSymbol( const char* pSymbolname )
 {
-    oslGenericFunction pFunction = osl_getAsciiFunctionSymbol( pSaneLib, pSymbolname );
+	oslGenericFunction pFunction = osl_getAsciiFunctionSymbol( pSaneLib, pSymbolname );
 	if( ! pFunction )
 	{
 		fprintf( stderr, "Could not load symbol %s\n",
 				 pSymbolname );
 		bSaneSymbolLoadFailed = sal_True;
 	}
-    return pFunction;
+	return pFunction;
 }
 
 SANE_Status Sane::ControlOption( int nOption, SANE_Action nAction,
@@ -182,20 +180,20 @@ Sane::~Sane()
 
 void Sane::Init()
 {
-    ::rtl::OUString sSaneLibName( ::rtl::OUString::createFromAscii( "libsane" SAL_DLLEXTENSION ) );
-    pSaneLib = osl_loadModule( sSaneLibName.pData, SAL_LOADMODULE_LAZY );
-    if( ! pSaneLib )
-    {
-        sSaneLibName = ::rtl::OUString::createFromAscii( "libsane" SAL_DLLEXTENSION ".1" );
-        pSaneLib = osl_loadModule( sSaneLibName.pData, SAL_LOADMODULE_LAZY );
-    }
-    // try reasonable places that might not be in the library search path
+	::rtl::OUString sSaneLibName( ::rtl::OUString::createFromAscii( "libsane" SAL_DLLEXTENSION ) );
+	pSaneLib = osl_loadModule( sSaneLibName.pData, SAL_LOADMODULE_LAZY );
 	if( ! pSaneLib )
-    {
-        ::rtl::OUString sSaneLibSystemPath( ::rtl::OUString::createFromAscii( "/usr/local/lib/libsane" SAL_DLLEXTENSION ) );
-        osl_getFileURLFromSystemPath( sSaneLibSystemPath.pData, &sSaneLibName.pData );
-        pSaneLib = osl_loadModule( sSaneLibName.pData, SAL_LOADMODULE_LAZY );
-    }
+	{
+		sSaneLibName = ::rtl::OUString::createFromAscii( "libsane" SAL_DLLEXTENSION ".1" );
+		pSaneLib = osl_loadModule( sSaneLibName.pData, SAL_LOADMODULE_LAZY );
+	}
+	// try reasonable places that might not be in the library search path
+	if( ! pSaneLib )
+	{
+		::rtl::OUString sSaneLibSystemPath( ::rtl::OUString::createFromAscii( "/usr/local/lib/libsane" SAL_DLLEXTENSION ) );
+		osl_getFileURLFromSystemPath( sSaneLibSystemPath.pData, &sSaneLibName.pData );
+		pSaneLib = osl_loadModule( sSaneLibName.pData, SAL_LOADMODULE_LAZY );
+	}
 
 	if( pSaneLib )
 	{
@@ -256,7 +254,7 @@ void Sane::DeInit()
 	if( pSaneLib )
 	{
 		p_exit();
-        osl_unloadModule( pSaneLib );
+		osl_unloadModule( pSaneLib );
 		pSaneLib = 0;
 	}
 }
@@ -284,7 +282,7 @@ void Sane::ReloadOptions()
 
 	mnOptions = pOptions[ 0 ];
 	if( (size_t)pZero->size > sizeof( SANE_Word ) )
-		fprintf( stderr, "driver returned numer of options with larger size tha SANE_Word !!!\n" );
+		fprintf( stderr, "driver returned number of options with larger size than SANE_Word !!!\n" );
 	if( mppOptions )
 		delete [] mppOptions;
 	mppOptions = (const SANE_Option_Descriptor**)new SANE_Option_Descriptor*[ mnOptions ];
@@ -569,34 +567,34 @@ sal_Bool Sane::Start( BitmapTransporter& rBitmap )
 	if( ! maHandle )
 		return sal_False;
 
-    int nWidthMM	= 0;
-    int nHeightMM	= 0;
-    double fTLx, fTLy, fBRx, fBRy, fResl = 0.0;
-    int nOption;
-    if( ( nOption = GetOptionByName( "tl-x" ) ) != -1	&&
-        GetOptionValue( nOption, fTLx, 0 )				&&
-        GetOptionUnit( nOption ) == SANE_UNIT_MM )
-    {
-        if( ( nOption = GetOptionByName( "br-x" ) ) != -1	&&
-            GetOptionValue( nOption, fBRx, 0 )				&&
-            GetOptionUnit( nOption ) == SANE_UNIT_MM )
-        {
-            nWidthMM = (int)fabs(fBRx - fTLx);
-        }
-    }
-    if( ( nOption = GetOptionByName( "tl-y" ) ) != -1	&&
-        GetOptionValue( nOption, fTLy, 0 )				&&
-        GetOptionUnit( nOption ) == SANE_UNIT_MM )
-    {
-        if( ( nOption = GetOptionByName( "br-y" ) ) != -1	&&
-            GetOptionValue( nOption, fBRy, 0 )				&&
-            GetOptionUnit( nOption ) == SANE_UNIT_MM )
-        {
-            nHeightMM = (int)fabs(fBRy - fTLy);
-        }
-    }
-    if( ( nOption = GetOptionByName( "resolution" ) ) != -1 )
-        GetOptionValue( nOption, fResl );
+	int nWidthMM	= 0;
+	int nHeightMM	= 0;
+	double fTLx, fTLy, fBRx, fBRy, fResl = 0.0;
+	int nOption;
+	if( ( nOption = GetOptionByName( "tl-x" ) ) != -1	&&
+		GetOptionValue( nOption, fTLx, 0 )				&&
+		GetOptionUnit( nOption ) == SANE_UNIT_MM )
+	{
+		if( ( nOption = GetOptionByName( "br-x" ) ) != -1	&&
+			GetOptionValue( nOption, fBRx, 0 )				&&
+			GetOptionUnit( nOption ) == SANE_UNIT_MM )
+		{
+			nWidthMM = (int)fabs(fBRx - fTLx);
+		}
+	}
+	if( ( nOption = GetOptionByName( "tl-y" ) ) != -1	&&
+		GetOptionValue( nOption, fTLy, 0 )				&&
+		GetOptionUnit( nOption ) == SANE_UNIT_MM )
+	{
+		if( ( nOption = GetOptionByName( "br-y" ) ) != -1	&&
+			GetOptionValue( nOption, fBRy, 0 )				&&
+			GetOptionUnit( nOption ) == SANE_UNIT_MM )
+		{
+			nHeightMM = (int)fabs(fBRy - fTLy);
+		}
+	}
+	if( ( nOption = GetOptionByName( "resolution" ) ) != -1 )
+		GetOptionValue( nOption, fResl );
 
 	sal_uInt8* pBuffer = NULL;
 
@@ -641,7 +639,7 @@ sal_Bool Sane::Start( BitmapTransporter& rBitmap )
 			if (nStatus != SANE_STATUS_GOOD || aParams.bytes_per_line == 0)
 			{
 				bSuccess = sal_False;
-			    break;
+				break;
 			}
 #if (OSL_DEBUG_LEVEL > 1) || defined DBG_UTIL
 			const char* ppFormats[] = { "SANE_FRAME_GRAY", "SANE_FRAME_RGB",
@@ -728,7 +726,7 @@ sal_Bool Sane::Start( BitmapTransporter& rBitmap )
 					tv.tv_sec = 5;
 					tv.tv_usec = 0;
 					if( select( fd+1, &fdset, NULL, NULL, &tv ) == 0 )
-						fprintf( stderr, "Timout on sane_read descriptor\n" );
+						fprintf( stderr, "Timeout on sane_read descriptor\n" );
 				}
 				nLen = 0;
 				nStatus = p_read( maHandle, pBuffer, BYTE_BUFFER_SIZE, &nLen );
@@ -754,12 +752,12 @@ sal_Bool Sane::Start( BitmapTransporter& rBitmap )
 			sal_uInt32 nHeight = (sal_uInt32) (nFrameLength / aParams.bytes_per_line);
 			if( ! bWidthSet )
 			{
-                if( ! fResl )
-                    fResl = 300; // if all else fails that's a good guess
-                if( ! nWidthMM )
-                    nWidthMM = (int)(((double)nWidth / fResl) * 25.4);
-                if( ! nHeightMM )
-                    nHeightMM = (int)(((double)nHeight / fResl) * 25.4);
+				if( ! fResl )
+					fResl = 300; // if all else fails that's a good guess
+				if( ! nWidthMM )
+					nWidthMM = (int)(((double)nWidth / fResl) * 25.4);
+				if( ! nHeightMM )
+					nHeightMM = (int)(((double)nHeight / fResl) * 25.4);
 #if OSL_DEBUG_LEVEL > 1
 				fprintf( stderr, "set dimensions to (%d, %d) Pixel, (%d, %d) mm, resolution is %lg\n", (int)nWidth, (int)nHeight, (int)nWidthMM, (int)nHeightMM, fResl );
 #endif
@@ -767,9 +765,9 @@ sal_Bool Sane::Start( BitmapTransporter& rBitmap )
 				aConverter.Seek( 18 );
 				aConverter << (sal_uInt32)nWidth;
 				aConverter << (sal_uInt32)nHeight;
-                aConverter.Seek( 38 );
-                aConverter << (sal_uInt32)(1000*nWidth/nWidthMM);
-                aConverter << (sal_uInt32)(1000*nHeight/nHeightMM);
+				aConverter.Seek( 38 );
+				aConverter << (sal_uInt32)(1000*nWidth/nWidthMM);
+				aConverter << (sal_uInt32)(1000*nHeight/nHeightMM);
 				bWidthSet = sal_True;
 			}
 			aConverter.Seek(60);
@@ -858,9 +856,9 @@ sal_Bool Sane::Start( BitmapTransporter& rBitmap )
 								aConverter << nValue;
 								aConverter.SeekRel( 2 );
 								break;
-                            case SANE_FRAME_GRAY:
-                            case SANE_FRAME_RGB:
-                                break;
+							case SANE_FRAME_GRAY:
+							case SANE_FRAME_RGB:
+								break;
 						}
 					}
 				}
@@ -983,8 +981,8 @@ String Sane::GetOptionUnitName( int n )
 {
 	String aText;
 	SANE_Unit nUnit = mppOptions[n]->unit;
-    size_t nUnitAsSize = (size_t)nUnit;
-    if (nUnitAsSize >= sizeof(ppUnits)/sizeof(ppUnits[0]))
+	size_t nUnitAsSize = (size_t)nUnit;
+	if (nUnitAsSize >= sizeof(ppUnits)/sizeof(ppUnits[0]))
 		aText = String::CreateFromAscii( "[unknown units]" );
 	else
 		aText = String( ppUnits[ nUnit ], gsl_getSystemTextEncoding() );
@@ -998,3 +996,5 @@ sal_Bool Sane::ActivateButtonOption( int n )
 		return sal_False;
 	return sal_True;
 }
+
+/* vim: set noet sw=4 ts=4: */

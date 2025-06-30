@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
@@ -31,20 +29,20 @@
 
 namespace basegfx
 {
-    class Impl3DHomMatrix : public ::basegfx::internal::ImplHomMatrixTemplate< 4 >
-    {
-    };
-    
-    namespace { struct IdentityMatrix : public rtl::Static< B3DHomMatrix::ImplType, 
-                                                            IdentityMatrix > {}; }
+	class Impl3DHomMatrix : public ::basegfx::internal::ImplHomMatrixTemplate< 4 >
+	{
+	};
+
+	namespace { struct IdentityMatrix : public rtl::Static< B3DHomMatrix::ImplType,
+															IdentityMatrix > {}; }
 
 	B3DHomMatrix::B3DHomMatrix() :
-        mpImpl( IdentityMatrix::get() ) // use common identity matrix
+		mpImpl( IdentityMatrix::get() ) // use common identity matrix
 	{
 	}
 
 	B3DHomMatrix::B3DHomMatrix(const B3DHomMatrix& rMat) :
-        mpImpl(rMat.mpImpl)
+		mpImpl(rMat.mpImpl)
 	{
 	}
 
@@ -54,14 +52,14 @@ namespace basegfx
 
 	B3DHomMatrix& B3DHomMatrix::operator=(const B3DHomMatrix& rMat)
 	{
-        mpImpl = rMat.mpImpl;
+		mpImpl = rMat.mpImpl;
 		return *this;
 	}
 
-    void B3DHomMatrix::makeUnique()
-    {
-        mpImpl.make_unique();
-    }
+	void B3DHomMatrix::makeUnique()
+	{
+		mpImpl.make_unique();
+	}
 
 	double B3DHomMatrix::get(sal_uInt16 nRow, sal_uInt16 nColumn) const
 	{
@@ -88,7 +86,7 @@ namespace basegfx
 
 	void B3DHomMatrix::identity()
 	{
-        mpImpl = IdentityMatrix::get();
+		mpImpl = IdentityMatrix::get();
 	}
 
 	bool B3DHomMatrix::isInvertible() const
@@ -190,7 +188,7 @@ namespace basegfx
 
 	bool B3DHomMatrix::operator!=(const B3DHomMatrix& rMat) const
 	{
-        return !(*this == rMat);
+		return !(*this == rMat);
 	}
 
 	void B3DHomMatrix::rotate(double fAngleX,double fAngleY,double fAngleZ)
@@ -224,7 +222,7 @@ namespace basegfx
 
 				mpImpl->doMulMatrix(aRotMatY);
 			}
-			
+
 			if(!fTools::equalZero(fAngleZ))
 			{
 				Impl3DHomMatrix aRotMatZ;
@@ -246,7 +244,7 @@ namespace basegfx
 		if(!fTools::equalZero(fX) || !fTools::equalZero(fY) || !fTools::equalZero(fZ))
 		{
 			Impl3DHomMatrix aTransMat;
-			
+
 			aTransMat.set(0, 3, fX);
 			aTransMat.set(1, 3, fY);
 			aTransMat.set(2, 3, fZ);
@@ -262,7 +260,7 @@ namespace basegfx
 		if(!fTools::equal(fOne, fX) || !fTools::equal(fOne, fY) ||!fTools::equal(fOne, fZ))
 		{
 			Impl3DHomMatrix aScaleMat;
-			
+
 			aScaleMat.set(0, 0, fX);
 			aScaleMat.set(1, 1, fY);
 			aScaleMat.set(2, 2, fZ);
@@ -273,11 +271,11 @@ namespace basegfx
 
 	void B3DHomMatrix::shearXY(double fSx, double fSy)
 	{
-		// #i76239# do not test againt 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
+		// #i76239# do not test against 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
 		if(!fTools::equalZero(fSx) || !fTools::equalZero(fSy))
 		{
 			Impl3DHomMatrix aShearXYMat;
-			
+
 			aShearXYMat.set(0, 2, fSx);
 			aShearXYMat.set(1, 2, fSy);
 
@@ -287,11 +285,11 @@ namespace basegfx
 
 	void B3DHomMatrix::shearYZ(double fSy, double fSz)
 	{
-		// #i76239# do not test againt 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
+		// #i76239# do not test against 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
 		if(!fTools::equalZero(fSy) || !fTools::equalZero(fSz))
 		{
 			Impl3DHomMatrix aShearYZMat;
-			
+
 			aShearYZMat.set(1, 0, fSy);
 			aShearYZMat.set(2, 0, fSz);
 
@@ -301,11 +299,11 @@ namespace basegfx
 
 	void B3DHomMatrix::shearXZ(double fSx, double fSz)
 	{
-		// #i76239# do not test againt 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
+		// #i76239# do not test against 1.0, but against 0.0. We are talking about a value not on the diagonal (!)
 		if(!fTools::equalZero(fSx) || !fTools::equalZero(fSz))
 		{
 			Impl3DHomMatrix aShearXZMat;
-			
+
 			aShearXZMat.set(0, 1, fSx);
 			aShearXZMat.set(2, 1, fSz);
 
@@ -346,7 +344,7 @@ namespace basegfx
 		}
 
 		Impl3DHomMatrix aFrustumMat;
-		
+
 		aFrustumMat.set(0, 0, 2.0 * fNear / (fRight - fLeft));
 		aFrustumMat.set(1, 1, 2.0 * fNear / (fTop - fBottom));
 		aFrustumMat.set(0, 2, (fRight + fLeft) / (fRight - fLeft));
@@ -358,7 +356,7 @@ namespace basegfx
 
 		mpImpl->doMulMatrix(aFrustumMat);
 	}
-	
+
 	void B3DHomMatrix::ortho(double fLeft, double fRight, double fBottom, double fTop, double fNear, double fFar)
 	{
 		if(fTools::equal(fNear, fFar))
@@ -379,14 +377,14 @@ namespace basegfx
 		}
 
 		Impl3DHomMatrix aOrthoMat;
-		
+
 		aOrthoMat.set(0, 0, 2.0 / (fRight - fLeft));
 		aOrthoMat.set(1, 1, 2.0 / (fTop - fBottom));
 		aOrthoMat.set(2, 2, -1.0 * (2.0 / (fFar - fNear)));
 		aOrthoMat.set(0, 3, -1.0 * ((fRight + fLeft) / (fRight - fLeft)));
 		aOrthoMat.set(1, 3, -1.0 * ((fTop + fBottom) / (fTop - fBottom)));
 		aOrthoMat.set(2, 3, -1.0 * ((fFar + fNear) / (fFar - fNear)));
-		
+
 		mpImpl->doMulMatrix(aOrthoMat);
 	}
 
@@ -497,7 +495,7 @@ namespace basegfx
 
 		// get ShearYZ
 		rShear.setZ(aCol1.scalar(aCol2));
-		
+
 		if(fTools::equalZero(rShear.getZ()))
 		{
 			rShear.setZ(0.0);
@@ -544,49 +542,49 @@ namespace basegfx
 		rScale.correctValues(1.0);
 
 		// Get rotations
-        {
-            double fy=0;
-            double cy=0;
-            
-            if( ::basegfx::fTools::equal( aCol0.getZ(), 1.0 )
-                || aCol0.getZ() > 1.0 )
-            {
-                fy = -F_PI/2.0;
-                cy = 0.0;
-            }
-            else if( ::basegfx::fTools::equal( aCol0.getZ(), -1.0 )
-                || aCol0.getZ() < -1.0 )
-            {
-                fy = F_PI/2.0;
-                cy = 0.0;
-            }
-            else
-            {
-                fy = asin( -aCol0.getZ() );
-                cy = cos(fy);
-            }
+		{
+			double fy=0;
+			double cy=0;
 
-            rRotate.setY(fy);
-            if( ::basegfx::fTools::equalZero( cy ) )
-            {
-                if( aCol0.getZ() > 0.0 )
-                    rRotate.setX(atan2(-1.0*aCol1.getX(), aCol1.getY()));
-                else
-                    rRotate.setX(atan2(aCol1.getX(), aCol1.getY()));
-                rRotate.setZ(0.0);
-            }
-            else
-            {
-                rRotate.setX(atan2(aCol1.getZ(), aCol2.getZ()));
-                rRotate.setZ(atan2(aCol0.getY(), aCol0.getX()));
-            }
+			if( ::basegfx::fTools::equal( aCol0.getZ(), 1.0 )
+				|| aCol0.getZ() > 1.0 )
+			{
+				fy = -F_PI/2.0;
+				cy = 0.0;
+			}
+			else if( ::basegfx::fTools::equal( aCol0.getZ(), -1.0 )
+				|| aCol0.getZ() < -1.0 )
+			{
+				fy = F_PI/2.0;
+				cy = 0.0;
+			}
+			else
+			{
+				fy = asin( -aCol0.getZ() );
+				cy = cos(fy);
+			}
 
-            // corrcet rotate values
-            rRotate.correctValues();
-        }
+			rRotate.setY(fy);
+			if( ::basegfx::fTools::equalZero( cy ) )
+			{
+				if( aCol0.getZ() > 0.0 )
+					rRotate.setX(atan2(-1.0*aCol1.getX(), aCol1.getY()));
+				else
+					rRotate.setX(atan2(aCol1.getX(), aCol1.getY()));
+				rRotate.setZ(0.0);
+			}
+			else
+			{
+				rRotate.setX(atan2(aCol1.getZ(), aCol2.getZ()));
+				rRotate.setZ(atan2(aCol0.getY(), aCol0.getX()));
+			}
+
+			// correct rotate values
+			rRotate.correctValues();
+		}
 
 		return true;
 	}
 } // end of namespace basegfx
 
-// eof
+/* vim: set noet sw=4 ts=4: */

@@ -301,7 +301,7 @@ bool PNGReaderImpl::ReadNextChunk()
             return false;
 
         // calculate chunktype CRC (swap it back to original byte order)
-        sal_uInt32 nChunkType = mnChunkType;;
+        sal_uInt32 nChunkType = mnChunkType;
         #if defined(__LITTLEENDIAN) || defined(OSL_LITENDIAN)
         nChunkType = SWAPLONG( nChunkType );
         #endif

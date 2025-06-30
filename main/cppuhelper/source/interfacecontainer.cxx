@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cppuhelper.hxx"
@@ -35,7 +33,6 @@
 
 #include <com/sun/star/lang/XEventListener.hpp>
 
-
 using namespace osl;
 using namespace com::sun::star::uno;
 using namespace com::sun::star::lang;
@@ -43,8 +40,6 @@ using namespace com::sun::star::lang;
 namespace cppu
 {
 
-//===================================================================
-//===================================================================
 //===================================================================
 /**
  * Reallocate the sequence.
@@ -75,8 +70,6 @@ static void sequenceRemoveElementAt( Sequence< Reference< XInterface > > & rSeq,
 	rSeq = aDestSeq;
 }
 
-
-//-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------
 
 #ifdef _MSC_VER
@@ -84,8 +77,7 @@ static void sequenceRemoveElementAt( Sequence< Reference< XInterface > > & rSeq,
 #endif
 
 //===================================================================
-//===================================================================
-//===================================================================
+
 OInterfaceIteratorHelper::OInterfaceIteratorHelper( OInterfaceContainerHelper & rCont_ )
 	SAL_THROW( () )
 	: rCont( rCont_ )
@@ -156,7 +148,7 @@ void OInterfaceIteratorHelper::remove() SAL_THROW( () )
 	{
 		OSL_ASSERT( nRemain >= 0 &&
 					nRemain < aData.pAsSequence->getLength() );
-        XInterface * p = aData.pAsSequence->getConstArray()[nRemain].get();
+		XInterface * p = aData.pAsSequence->getConstArray()[nRemain].get();
 		rCont.removeInterface( * reinterpret_cast< const Reference< XInterface > * >( &p ) );
 	}
 	else
@@ -167,9 +159,6 @@ void OInterfaceIteratorHelper::remove() SAL_THROW( () )
 }
 
 //===================================================================
-//===================================================================
-//===================================================================
-
 
 OInterfaceContainerHelper::OInterfaceContainerHelper( Mutex & rMutex_ ) SAL_THROW( () )
 	: rMutex( rMutex_ )
@@ -274,7 +263,7 @@ sal_Int32 OInterfaceContainerHelper::removeInterface( const Reference<XInterface
 		sal_Int32 i;
 		for( i = 0; i < nLen; i++ )
 		{
-			// It is not valid to compare the Pointer direkt, but is is is much
+			// It is not valid to compare the Pointer directly, but is is is much
 			// more faster.
 			if( pL[i].get() == rListener.get() )
 			{
@@ -320,7 +309,7 @@ void OInterfaceContainerHelper::disposeAndClear( const EventObject & rEvt ) SAL_
 {
 	ClearableMutexGuard aGuard( rMutex );
 	OInterfaceIteratorHelper aIt( *this );
-	// Container freigeben, falls im disposing neue Einträge kommen
+	// Container freigeben, falls im disposing neue EintrÃ¤ge kommen
 	OSL_ENSURE( !bIsList || bInUse, "OInterfaceContainerHelper not in use" );
 	if( !bIsList && aData.pAsInterface )
 		aData.pAsInterface->release();
@@ -350,7 +339,7 @@ void OInterfaceContainerHelper::clear() SAL_THROW( () )
 {
 	ClearableMutexGuard aGuard( rMutex );
 	OInterfaceIteratorHelper aIt( *this );
-	// Container freigeben, falls im disposing neue Einträge kommen
+	// Container freigeben, falls im disposing neue EintrÃ¤ge kommen
 	OSL_ENSURE( !bIsList || bInUse, "OInterfaceContainerHelper not in use" );
 	if( !bIsList && aData.pAsInterface )
 		aData.pAsInterface->release();
@@ -363,23 +352,21 @@ void OInterfaceContainerHelper::clear() SAL_THROW( () )
 }
 
 //##################################################################################################
-//##################################################################################################
-//##################################################################################################
 
 // specialized class for type
 
 typedef ::std::vector< std::pair < Type , void* > > t_type2ptr;
 
 OMultiTypeInterfaceContainerHelper::OMultiTypeInterfaceContainerHelper( Mutex & rMutex_ )
-    SAL_THROW( () )
-    : rMutex( rMutex_ )
+	SAL_THROW( () )
+	: rMutex( rMutex_ )
 {
 	m_pMap = new t_type2ptr();
 }
 OMultiTypeInterfaceContainerHelper::~OMultiTypeInterfaceContainerHelper()
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
-    t_type2ptr * pMap = (t_type2ptr *)m_pMap;
+	t_type2ptr * pMap = (t_type2ptr *)m_pMap;
 	t_type2ptr::iterator iter = pMap->begin();
 	t_type2ptr::iterator end = pMap->end();
 
@@ -392,9 +379,9 @@ OMultiTypeInterfaceContainerHelper::~OMultiTypeInterfaceContainerHelper()
 	delete pMap;
 }
 Sequence< Type > OMultiTypeInterfaceContainerHelper::getContainedTypes() const
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
-    t_type2ptr * pMap = (t_type2ptr *)m_pMap;
+	t_type2ptr * pMap = (t_type2ptr *)m_pMap;
 	t_type2ptr::size_type nSize;
 
 	::osl::MutexGuard aGuard( rMutex );
@@ -431,65 +418,65 @@ static t_type2ptr::iterator findType(t_type2ptr *pMap, const Type & rKey )
 	t_type2ptr::iterator end = pMap->end();
 
 	while( iter != end )
-    {
-        if (iter->first == rKey)
-            break;
-        iter++;
-    }
-    return iter;
+	{
+		if (iter->first == rKey)
+			break;
+		iter++;
+	}
+	return iter;
 }
 
 OInterfaceContainerHelper * OMultiTypeInterfaceContainerHelper::getContainer( const Type & rKey ) const
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
 	::osl::MutexGuard aGuard( rMutex );
 
-    t_type2ptr * pMap = (t_type2ptr *)m_pMap;
+	t_type2ptr * pMap = (t_type2ptr *)m_pMap;
  	t_type2ptr::iterator iter = findType( pMap, rKey );
 	if( iter != pMap->end() )
 			return (OInterfaceContainerHelper*) (*iter).second;
 	return 0;
 }
 sal_Int32 OMultiTypeInterfaceContainerHelper::addInterface(
-    const Type & rKey, const Reference< XInterface > & rListener )
-    SAL_THROW( () )
+	const Type & rKey, const Reference< XInterface > & rListener )
+	SAL_THROW( () )
 {
 	::osl::MutexGuard aGuard( rMutex );
-    t_type2ptr * pMap = (t_type2ptr *)m_pMap;
+	t_type2ptr * pMap = (t_type2ptr *)m_pMap;
 	t_type2ptr::iterator iter = findType( pMap, rKey );
 	if( iter == pMap->end() )
 	{
 		OInterfaceContainerHelper * pLC = new OInterfaceContainerHelper( rMutex );
-        pMap->push_back(std::pair<Type, void*>(rKey, pLC));
+		pMap->push_back(std::pair<Type, void*>(rKey, pLC));
 		return pLC->addInterface( rListener );
 	}
 	else
 		return ((OInterfaceContainerHelper*)(*iter).second)->addInterface( rListener );
 }
 sal_Int32 OMultiTypeInterfaceContainerHelper::removeInterface(
-    const Type & rKey, const Reference< XInterface > & rListener )
-    SAL_THROW( () )
+	const Type & rKey, const Reference< XInterface > & rListener )
+	SAL_THROW( () )
 {
 	::osl::MutexGuard aGuard( rMutex );
 
 	// search container with id nUik
-    t_type2ptr * pMap = (t_type2ptr *)m_pMap;
+	t_type2ptr * pMap = (t_type2ptr *)m_pMap;
 	t_type2ptr::iterator iter = findType( pMap, rKey );
 		// container found?
 	if( iter != pMap->end() )
-        return ((OInterfaceContainerHelper*)(*iter).second)->removeInterface( rListener );
+		return ((OInterfaceContainerHelper*)(*iter).second)->removeInterface( rListener );
 
 	// no container with this id. Always return 0
 	return 0;
 }
 void OMultiTypeInterfaceContainerHelper::disposeAndClear( const EventObject & rEvt )
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
 	t_type2ptr::size_type nSize = 0;
 	OInterfaceContainerHelper ** ppListenerContainers = NULL;
 	{
 		::osl::MutexGuard aGuard( rMutex );
-        t_type2ptr * pMap = (t_type2ptr *)m_pMap;
+		t_type2ptr * pMap = (t_type2ptr *)m_pMap;
 		nSize = pMap->size();
 		if( nSize )
 		{
@@ -520,10 +507,10 @@ void OMultiTypeInterfaceContainerHelper::disposeAndClear( const EventObject & rE
 	delete [] ppListenerContainers;
 }
 void OMultiTypeInterfaceContainerHelper::clear()
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
 	::osl::MutexGuard aGuard( rMutex );
-    t_type2ptr * pMap = (t_type2ptr *)m_pMap;
+	t_type2ptr * pMap = (t_type2ptr *)m_pMap;
 	t_type2ptr::iterator iter = pMap->begin();
 	t_type2ptr::iterator end = pMap->end();
 
@@ -534,9 +521,6 @@ void OMultiTypeInterfaceContainerHelper::clear()
 	}
 }
 
-
-//##################################################################################################
-//##################################################################################################
 //##################################################################################################
 
 // specialized class for long
@@ -549,28 +533,28 @@ static t_long2ptr::iterator findLong(t_long2ptr *pMap, sal_Int32 nKey )
 	t_long2ptr::iterator end = pMap->end();
 
 	while( iter != end )
-    {
-        if (iter->first == nKey)
-            break;
-        iter++;
-    }
-    return iter;
+	{
+		if (iter->first == nKey)
+			break;
+		iter++;
+	}
+	return iter;
 }
 
 OMultiTypeInterfaceContainerHelperInt32::OMultiTypeInterfaceContainerHelperInt32( Mutex & rMutex_ )
-    SAL_THROW( () )
-    : m_pMap( NULL )
-    , rMutex( rMutex_ )
+	SAL_THROW( () )
+	: m_pMap( NULL )
+	, rMutex( rMutex_ )
 {
-    // delay pMap allocation until necessary.
+	// delay pMap allocation until necessary.
 }
 OMultiTypeInterfaceContainerHelperInt32::~OMultiTypeInterfaceContainerHelperInt32()
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
-    if (!m_pMap)
-        return;
+	if (!m_pMap)
+		return;
 
-    t_long2ptr * pMap = (t_long2ptr *)m_pMap;
+	t_long2ptr * pMap = (t_long2ptr *)m_pMap;
 	t_long2ptr::iterator iter = pMap->begin();
 	t_long2ptr::iterator end = pMap->end();
 
@@ -583,9 +567,9 @@ OMultiTypeInterfaceContainerHelperInt32::~OMultiTypeInterfaceContainerHelperInt3
 	delete pMap;
 }
 Sequence< sal_Int32 > OMultiTypeInterfaceContainerHelperInt32::getContainedTypes() const
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
-    t_long2ptr * pMap = (t_long2ptr *)m_pMap;
+	t_long2ptr * pMap = (t_long2ptr *)m_pMap;
 	t_long2ptr::size_type nSize;
 
 	::osl::MutexGuard aGuard( rMutex );
@@ -597,7 +581,7 @@ Sequence< sal_Int32 > OMultiTypeInterfaceContainerHelperInt32::getContainedTypes
 
 		t_long2ptr::iterator iter = pMap->begin();
 		t_long2ptr::iterator end = pMap->end();
-        
+
 		sal_Int32 i = 0;
 		while( iter != end )
 		{
@@ -616,65 +600,65 @@ Sequence< sal_Int32 > OMultiTypeInterfaceContainerHelperInt32::getContainedTypes
 	return ::com::sun::star::uno::Sequence< sal_Int32 >();
 }
 OInterfaceContainerHelper * OMultiTypeInterfaceContainerHelperInt32::getContainer( const sal_Int32 & rKey ) const
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
 	::osl::MutexGuard aGuard( rMutex );
 
-    if (!m_pMap)
-        return 0;
-    t_long2ptr * pMap = (t_long2ptr *)m_pMap;
+	if (!m_pMap)
+		return 0;
+	t_long2ptr * pMap = (t_long2ptr *)m_pMap;
  	t_long2ptr::iterator iter = findLong( pMap, rKey );
 	if( iter != pMap->end() )
 			return (OInterfaceContainerHelper*) (*iter).second;
 	return 0;
 }
 sal_Int32 OMultiTypeInterfaceContainerHelperInt32::addInterface(
-    const sal_Int32 & rKey, const Reference< XInterface > & rListener )
-    SAL_THROW( () )
+	const sal_Int32 & rKey, const Reference< XInterface > & rListener )
+	SAL_THROW( () )
 {
 	::osl::MutexGuard aGuard( rMutex );
-    if (!m_pMap)
-    	m_pMap = new t_long2ptr();
-    t_long2ptr * pMap = (t_long2ptr *)m_pMap;
+	if (!m_pMap)
+		m_pMap = new t_long2ptr();
+	t_long2ptr * pMap = (t_long2ptr *)m_pMap;
 	t_long2ptr::iterator iter = findLong( pMap, rKey );
  	if( iter == pMap->end() )
 	{
 		OInterfaceContainerHelper * pLC = new OInterfaceContainerHelper( rMutex );
-        pMap->push_back(std::pair< sal_Int32, void* >(rKey, pLC));
+		pMap->push_back(std::pair< sal_Int32, void* >(rKey, pLC));
 		return pLC->addInterface( rListener );
 	}
 	else
 		return ((OInterfaceContainerHelper*)(*iter).second)->addInterface( rListener );
 }
 sal_Int32 OMultiTypeInterfaceContainerHelperInt32::removeInterface(
-    const sal_Int32 & rKey, const Reference< XInterface > & rListener )
-    SAL_THROW( () )
+	const sal_Int32 & rKey, const Reference< XInterface > & rListener )
+	SAL_THROW( () )
 {
 	::osl::MutexGuard aGuard( rMutex );
 
-    if (!m_pMap)
-        return 0;
+	if (!m_pMap)
+		return 0;
 	// search container with id nUik
-    t_long2ptr * pMap = (t_long2ptr *)m_pMap;
+	t_long2ptr * pMap = (t_long2ptr *)m_pMap;
 	t_long2ptr::iterator iter = findLong( pMap, rKey );
 		// container found?
 	if( iter != pMap->end() )
-        return ((OInterfaceContainerHelper*)(*iter).second)->removeInterface( rListener );
+		return ((OInterfaceContainerHelper*)(*iter).second)->removeInterface( rListener );
 
 	// no container with this id. Always return 0
 	return 0;
 }
 void OMultiTypeInterfaceContainerHelperInt32::disposeAndClear( const EventObject & rEvt )
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
 	t_long2ptr::size_type nSize = 0;
 	OInterfaceContainerHelper ** ppListenerContainers = NULL;
 	{
 		::osl::MutexGuard aGuard( rMutex );
-        if (!m_pMap)
-            return;
+		if (!m_pMap)
+			return;
 
-        t_long2ptr * pMap = (t_long2ptr *)m_pMap;
+		t_long2ptr * pMap = (t_long2ptr *)m_pMap;
 		nSize = pMap->size();
 		if( nSize )
 		{
@@ -705,12 +689,12 @@ void OMultiTypeInterfaceContainerHelperInt32::disposeAndClear( const EventObject
 	delete [] ppListenerContainers;
 }
 void OMultiTypeInterfaceContainerHelperInt32::clear()
-    SAL_THROW( () )
+	SAL_THROW( () )
 {
 	::osl::MutexGuard aGuard( rMutex );
-    if (!m_pMap)
-        return;
-    t_long2ptr * pMap = (t_long2ptr *)m_pMap;
+	if (!m_pMap)
+		return;
+	t_long2ptr * pMap = (t_long2ptr *)m_pMap;
 	t_long2ptr::iterator iter = pMap->begin();
 	t_long2ptr::iterator end = pMap->end();
 
@@ -722,3 +706,5 @@ void OMultiTypeInterfaceContainerHelperInt32::clear()
 }
 
 }
+
+/* vim: set noet sw=4 ts=4: */

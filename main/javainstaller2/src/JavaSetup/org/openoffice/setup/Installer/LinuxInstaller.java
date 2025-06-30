@@ -503,7 +503,7 @@ public class LinuxInstaller extends Installer {
 
         String databaseString = "";
         String databasePath = null;
-        HashMap map = new HashMap();;
+        HashMap map = new HashMap();
         boolean useLocalDatabase = false;
     
         if (installData.isUserInstallation()) {

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -40,12 +40,12 @@ use installer::systemactions;
 sub put_language_into_name
 {
 	my ( $oldname, $onelanguage ) = @_;
-	
+
 	my $newname = "";
-	
+
 	my $filename = "";
 	my $extension = "";
-	
+
 	if ( $oldname =~ /en-US/ )	# files, that contain the language in the file name
 	{
 		$newname = $oldname;
@@ -56,17 +56,17 @@ sub put_language_into_name
 		if ( $oldname =~ /^\s*(.*)(\..*?)\s*$/ )	# files with extension
 		{
 			$filename = $1;
-			$extension = $2;	
+			$extension = $2;
 		}
 		else
 		{
 			$filename = $oldname;
-			$extension = "";	
+			$extension = "";
 		}
-	
+
 		$newname = $1 . "_" . $onelanguage . $2;
 	}
-	
+
 	return $newname;
 }
 
@@ -77,12 +77,12 @@ sub put_language_into_name
 sub get_patch_file_list
 {
 	my ( $patchfilestring ) = @_;
-	
+
 	$patchfilestring =~ s/^\s*\(?//;
 	$patchfilestring =~ s/\)?\s*$//;
 	$patchfilestring =~ s/^\s*\///;
 	$patchfilestring =~ s/^\s*\\//;
-	
+
 	my $patchfilesarray = installer::converter::convert_stringlist_into_array_without_linebreak_and_quotes(\$patchfilestring, ",");
 
 	return $patchfilesarray;
@@ -95,13 +95,13 @@ sub get_patch_file_list
 sub get_all_executables_from_manifest
 {
 	my ($unzipdir, $manifestfile, $executable_files_in_extensions) = @_;
-	
+
 	my $is_executable = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$manifestfile}; $i++ )
 	{
 		my $line = ${$manifestfile}[$i];
-		
+
 		if ( $line =~ /\"application\/vnd\.sun\.star\.executable\"/ ) { $is_executable = 1; }
 
 		if (( $line =~ /manifest\:full\-path=\"(.*?)\"/ ) && ( $is_executable ))
@@ -124,15 +124,15 @@ sub get_all_executables_from_manifest
 sub collect_all_executable_files_in_extensions
 {
 	my ($unzipdir, $executable_files_in_extensions) = @_;
-	
+
 	$unzipdir =~ s/\Q$installer::globals::separator\E\s*$//;
-		
+
 	my $manifestfilename = $unzipdir . $installer::globals::separator . "META-INF" . $installer::globals::separator . "manifest.xml";
 
 	if ( -f $manifestfilename )
 	{
 		my $manifestfile = installer::files::read_file($manifestfilename);
-		get_all_executables_from_manifest($unzipdir, $manifestfile, $executable_files_in_extensions);		
+		get_all_executables_from_manifest($unzipdir, $manifestfile, $executable_files_in_extensions);
 	}
 }
 
@@ -145,11 +145,11 @@ sub resolving_archive_flag
 	my ($filesarrayref, $additionalpathsref, $languagestringref, $loggingdir) = @_;
 
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::archivefiles::resolving_archive_flag : $#{$filesarrayref} : $#{$additionalpathsref} : $$languagestringref : $loggingdir"); }
-	
+
 	my @newallfilesarray = ();
 
 	my ($systemcall, $returnvalue, $infoline);
-		
+
 	my $unziplistfile = $loggingdir . "unziplist_" . $installer::globals::build . "_" . $installer::globals::compiler . "_" . $$languagestringref . ".txt";
 
 	my $platformunzipdirbase = installer::systemactions::create_directories("zip", $languagestringref);
@@ -166,13 +166,13 @@ sub resolving_archive_flag
 
 		my $onefile = ${$filesarrayref}[$i];
 		my $styles = "";
-		
+
 		if ( $onefile->{'Styles'} ) { $styles = $onefile->{'Styles'}; }
-	
+
 		if ( $styles =~ /\bARCHIVE\b/ )		# copying, unzipping and changing the file list
 		{
-			my $iscommonfile = 0;			
-			my $sourcepath = $onefile->{'sourcepath'};			
+			my $iscommonfile = 0;
+			my $sourcepath = $onefile->{'sourcepath'};
 
 			if ( $sourcepath =~ /\Q$installer::globals::separator\E\bcommon$installer::globals::productextension\Q$installer::globals::separator\E/ )	# /common/ or /common.pro/
 			{
@@ -182,12 +182,12 @@ sub resolving_archive_flag
 			my $use_internal_rights = 0;
 			if ( $styles =~ /\bUSE_INTERNAL_RIGHTS\b/ ) { $use_internal_rights = 1; }	# using the rights used inside the zip file
 
-			my $rename_to_language = 0;			
+			my $rename_to_language = 0;
 			if ( $styles =~ /\bRENAME_TO_LANGUAGE\b/ ) { $rename_to_language = 1; }	# special handling for renamed files (scriptitems.pm)
 
 			my %executable_files_in_extensions = ();
 			my $set_executable_privileges = 0;  # setting privileges for exectables is required for oxt files
-			if ( $onefile->{'Name'} =~ /\.oxt\s*$/ ) { $set_executable_privileges = 1; }					
+			if ( $onefile->{'Name'} =~ /\.oxt\s*$/ ) { $set_executable_privileges = 1; }
 
 			# mechanism to select files from an archive files
 			my $select_files = 0;
@@ -203,7 +203,7 @@ sub resolving_archive_flag
                     $installer::logging::Lang->printf("\"%s\"\n", $line);
 				}
 			}
-			
+
 			if ( $onefile->{'Selectfiles'} ) { $onefile->{'Selectfiles'} = ""; } # Selected files list no longer required
 
 			# mechanism to define patch files inside an archive files
@@ -222,13 +222,13 @@ sub resolving_archive_flag
 			}
 
 			if ( $onefile->{'Patchfiles'} ) { $onefile->{'Patchfiles'} = ""; } # Patch file list no longer required
-			
+
 			# creating directories
 
 			my $onelanguage = $onefile->{'specificlanguage'};
-			
+
 			# files without language into directory "00"
-			
+
 			if ($onelanguage eq "") { $onelanguage = "00"; }
 
 			my $unzipdir;
@@ -237,13 +237,13 @@ sub resolving_archive_flag
 			# else { $unzipdir = $platformunzipdirbase . $installer::globals::separator . $onelanguage . $installer::globals::separator; }
 
 			$unzipdir = $platformunzipdirbase . $installer::globals::separator . $onelanguage . $installer::globals::separator;
-			
+
 			installer::systemactions::create_directory($unzipdir);	# creating language specific subdirectories
 
 			my $onefilename = $onefile->{'Name'};
 			$onefilename =~ s/\./\_/g;		# creating new directory name
 			$onefilename =~ s/\//\_/g;		# only because of /letter/fontunxpsprint.zip, the only zip file with path
-			$unzipdir = $unzipdir . $onefilename . $installer::globals::separator; 
+			$unzipdir = $unzipdir . $onefilename . $installer::globals::separator;
 
 			if ( $installer::globals::dounzip ) { installer::systemactions::create_directory($unzipdir); }	# creating subdirectories with the names of the zipfiles
 
@@ -267,8 +267,8 @@ sub resolving_archive_flag
 			}
 			else
 			{
-				if ( $installer::globals::dounzip )			# really unpacking the files 
-				{					
+				if ( $installer::globals::dounzip )			# really unpacking the files
+				{
 					if ( $zip->extractTree("", $unzipdir) != AZ_OK )
                     {
                         installer::exiter::exit_program("ERROR: can not unzip ".$sourcepath, "resolving_archive_flag");
@@ -280,7 +280,7 @@ sub resolving_archive_flag
 						$systemcall = "cd $unzipdir; find . -name \\*.dll -exec chmod 775 \{\} \\\;";
 						$returnvalue = system($systemcall);
 						$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
-		
+
 						if ($returnvalue)
 						{
 							$installer::logger::Lang->printf("ERROR: Could not execute \"\"!\n", $systemcall);
@@ -290,7 +290,7 @@ sub resolving_archive_flag
 					if ( ! $installer::globals::iswindowsbuild )
 					{
 						# Setting unix rights to "775" for all created directories inside the package
-		
+
 						$systemcall = "cd $unzipdir; find . -type d -exec chmod 775 \{\} \\\;";
 						$returnvalue = system($systemcall);
                         $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
@@ -299,43 +299,43 @@ sub resolving_archive_flag
                             $installer::logger::Lang->printf("ERROR: Could not execute \"\"!\n", $systemcall);
 						}
 					}
-					
+
 					# Selecting names of executable files in extensions
 					if ( $set_executable_privileges )
 					{
 						collect_all_executable_files_in_extensions($unzipdir, \%executable_files_in_extensions);
 					}
 				}
-	
+
 				my $zipfileref = \@zipfile;
 				my $unziperror = 0;
-				
+
 				foreach my $zipname ( $zip->memberNames() )
 				{
-					# Format from Archive:::Zip : 
+					# Format from Archive:::Zip :
 					# dir1/
 					# dir1/so7drawing.desktop
 
 					# some directories and files (from the help) start with "./simpress.idx"
-						
+
 					$zipname =~ s/^\s*\.\///;
-						
+
 					if ($installer::globals::iswin and $^O =~ /MSWin/i) { $zipname =~ s/\//\\/g; }
 
 					if ( $zipname =~ /\Q$installer::globals::separator\E\s*$/ )	# slash or backslash at the end characterizes a directory
 					{
 						$zipname = $zipname . "\n";
 						push(@{$additionalpathsref}, $zipname);
-								
+
 						# Also needed here:
 						# Name
 						# Language
 						# ismultilingual
 						# Basedirectory
-							
-						# This is not needed, because the list of all directories for the 
+
+						# This is not needed, because the list of all directories for the
 						# epm list file is generated from the destination directories of the
-						# files included in the product!	
+						# files included in the product!
 					}
 					else
 					{
@@ -359,7 +359,7 @@ sub resolving_archive_flag
                                 $newfile{'sourcepath'},
                                 $newfile{'UnixRights'});
 						}
-						
+
 						if ( $set_executable_privileges )
 						{
 							# All paths to executables are saved in the hash %executable_files_in_extensions
@@ -374,7 +374,7 @@ sub resolving_archive_flag
                                     $newfile{'UnixRights'});
 							}
 						}
-						
+
 						if ( $select_files )
 						{
 							if ( ! installer::existence::exists_in_array($zipname,$selectlistfiles) )
@@ -390,14 +390,14 @@ sub resolving_archive_flag
                                     $onefilename,
                                     $zipname);
 								push( @keptfiles, $zipname); # collecting all kept files
-							}			
+							}
 						}
-						
+
 						if ( $select_patch_files )
 						{
 							# Is this file listed in the Patchfile list?
 							# $zipname (filename including path in zip file has to be listed in patchfile list
-							
+
 							if ( ! installer::existence::exists_in_array($zipname,$patchlistfiles) )
 							{
 								$newfile{'Styles'} =~ s/\bPATCH\b//;	# removing the flag PATCH
@@ -407,10 +407,10 @@ sub resolving_archive_flag
 							}
 							else
 							{
-								push( @keptpatchflags, $zipname); # collecting all PATCH flags 
+								push( @keptpatchflags, $zipname); # collecting all PATCH flags
 							}
 						}
-							
+
 						if ( $rename_to_language )
 						{
 							my $newzipname = put_language_into_name($zipname, $onelanguage);
@@ -427,8 +427,8 @@ sub resolving_archive_flag
                                 $newzipname,
                                 $zipname);
 						}
-							
-						my $sourcefiletest = $unzipdir . $zipname;							
+
+						my $sourcefiletest = $unzipdir . $zipname;
 						if ( ! -f $sourcefiletest )
 						{
                             $installer::logger::Lang->printf("ATTENTION: Unzip failed for %s!\n", $sourcefiletest);
@@ -437,15 +437,15 @@ sub resolving_archive_flag
 
 						# only adding the new line into the files array, if not in repeat modus
 
-						if ( ! $repeat_unzip ) { push(@newallfilesarray, \%newfile); }			
-					}		
+						if ( ! $repeat_unzip ) { push(@newallfilesarray, \%newfile); }
+					}
 				}
 
 				# Comparing the content of @keptfiles and $selectlistfiles
 				# Do all files from the list of selected files are stored in @keptfiles ?
 				# @keptfiles contains only files included in $selectlistfiles. But are all
 				# files from $selectlistfiles included in @keptfiles?
-				
+
 				if ( $select_files )
 				{
                     $installer::logger::Lang->printf("SELECTLIST: Number of files in file selection list: %d\n",
@@ -464,7 +464,7 @@ sub resolving_archive_flag
 						{
                             $installer::logger::Lang->printf(
                                 "WARNING: %s not included in install set (does not exist in zip file)!\n",
-                                $name);;
+                                $name);
 						}
 					}
 				}
@@ -495,34 +495,34 @@ sub resolving_archive_flag
                                 "WARNING: %s did not keep PATCH flag (does not exist in zip file)!\n",
                                 $name);
                         }
-					}		
+					}
 				}
 
 				if ( $unziperror )
-				{ 
+				{
 					installer::logger::print_warning( "Repeating to unpack $sourcepath! \n" );
                     $installer::logger::Lang->printf("ATTENTION: Repeating to unpack %s!\n", $sourcepath);
 					$repeat_unzip = 1;
 					$maxcounter++;
-					
+
 					if ( $maxcounter == 5 )	# exiting the program
 					{
-						installer::exiter::exit_program("ERROR: Failed to unzip $sourcepath !", "resolving_archive_flag");					
-					}				
+						installer::exiter::exit_program("ERROR: Failed to unzip $sourcepath !", "resolving_archive_flag");
+					}
 				}
 				else
 				{
                     $installer::logger::Lang->printf("Info: %s unpacked without problems !\n", $sourcepath);
 					$repeat_unzip = 0;
 					$maxcounter = 0;
-				}				
+				}
 			}
 		}
 		else		# nothing to do here, no zipped file (no ARCHIVE flag)
 		{
 			push(@newallfilesarray, $onefile);
-		}	
-	}	
+		}
+	}
 
     $installer::logger::Lang->print("\n");
 

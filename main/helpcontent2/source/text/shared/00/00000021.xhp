@@ -42,20 +42,19 @@
 <bookmark_value>ODF file formats</bookmark_value>
 </bookmark><comment>mw changed "file formats;OpenDocument." entry and deleted "file formats;XML". MW made "document types;..." a one level entry</comment><comment>mw changed "defaults;..."</comment>
 <bookmark xml-lang="en-US" branch="hid/SFX2_HID_DID_SAVE_PACKED_XML" id="bm_id3159242" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3154408" role="heading" level="1" l10n="U" oldref="2"><variable id="xmlformat"><link href="text/shared/00/00000021.xhp" name="XML File Formats">XML File Formats</link>
+<paragraph xml-lang="en-US" id="hd_id3154408" role="heading" level="1" l10n="U"><variable id="xmlformat"><link href="text/shared/00/00000021.xhp" name="XML File Formats">XML File Formats</link>
 </variable></paragraph>
-<paragraph xml-lang="en-US" id="par_id3148919" role="paragraph" l10n="CHG" oldref="3"><ahelp hid="HID_DID_SAVE_PACKED_XML">By default, $[officename] loads and saves files in the OpenDocument file format.</ahelp></paragraph>
-<paragraph xml-lang="en-US" id="par_idN10725" role="note" l10n="NEW">The OpenDocument file format (ODF) is a standardized file format used by many software applications. You can find more information at the Wikipedia site: <link href="http://en.wikipedia.org/wiki/OpenDocument">wikipedia.org/wiki/OpenDocument</link>.</paragraph>
-<paragraph xml-lang="en-US" id="hd_id3156324" role="heading" level="2" l10n="CHG"
-oldref="4">OpenDocument file format names</paragraph>
-<paragraph xml-lang="en-US" id="par_id3154926" role="paragraph" l10n="CHG" oldref="5">%PRODUCTNAME %PRODUCTVERSION uses the following file formats:</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148919" role="paragraph" l10n="CHG"><ahelp hid="HID_DID_SAVE_PACKED_XML">By default, $[officename] loads and saves files in the OpenDocument file format.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_idN10725" role="note" l10n="NEW">The OpenDocument file format (ODF) is a standardized file format used by many software applications. You can find more information at the Wikipedia site: <link href="https://en.wikipedia.org/wiki/OpenDocument">wikipedia.org/wiki/OpenDocument</link>.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3156324" role="heading" level="2" l10n="CHG">OpenDocument file format names</paragraph>
+<paragraph xml-lang="en-US" id="par_id3154926" role="paragraph" l10n="CHG">%PRODUCTNAME %PRODUCTVERSION uses the following file formats:</paragraph>
 <table id="tbl_id3109850">
 <tablerow>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3157898" role="tablehead" l10n="CHG" oldref="6">Document format</paragraph>
+<paragraph xml-lang="en-US" id="par_id3157898" role="tablehead" l10n="CHG">Document format</paragraph>
 </tablecell>
 <tablecell>
-<paragraph xml-lang="en-US" id="par_id3149549" role="tablehead" l10n="U" oldref="7">File extension</paragraph>
+<paragraph xml-lang="en-US" id="par_id3149549" role="tablehead" l10n="U">File extension</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -184,7 +183,7 @@ oldref="4">OpenDocument file format names</paragraph>
 <paragraph xml-lang="en-US" id="par_id0519200811530375" role="tablehead" l10n="NEW">Date of standard approval by OASIS<comment>intl. community wants intl iso standard date formats</comment></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablehead" id="par_id0519200811530491" xml-lang="en-US" l10n="NEW">First supporting version of the software</paragraph>
+<paragraph xml-lang="en-US" id="par_id0519200811530491" role="tablehead" l10n="NEW">First supporting version of the software</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -217,7 +216,7 @@ oldref="4">OpenDocument file format names</paragraph>
 <paragraph xml-lang="en-US" id="par_id0519200811530440" role="tablecontent" l10n="NEW">2011-09-29</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id0519200811530471" xml-lang="en-US" l10n="NEW">OpenOffice.org 3, StarOffice 9</paragraph>
+<paragraph xml-lang="en-US" id="par_id0519200811530471" role="tablecontent" l10n="NEW">OpenOffice.org 3, StarOffice 9</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -234,33 +233,33 @@ oldref="4">OpenDocument file format names</paragraph>
 </table>
 <paragraph role="paragraph" id="par_id0514200811525591" xml-lang="en-US" l10n="NEW">In current versions, you can select to save your documents using ODF 1.2 (default) or ODF 1.0/1.1 (for backward compatibility). Choose <item type="menuitem">Tools - Options - Load/Save - General</item> and select the ODF format version.</paragraph>
 <paragraph role="paragraph" id="par_idN107E9" xml-lang="en-US" l10n="CHG">If you want to exchange documents with users that still use OpenOffice.org 1 or StarOffice 7, save the document using the respectively named filter in the <emph>File type</emph> listbox.</paragraph>
-<paragraph role="tip" id="par_id3146907" xml-lang="en-US" l10n="CHG" oldref="1">If you want to define another file format as the default, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010200.xhp" name="Load/Save - General">Load/Save - General</link></emph> to find alternative file formats for each $[officename] document type.</paragraph>
-<paragraph role="heading" id="hd_id3150398" xml-lang="en-US" level="2" l10n="U" oldref="28">XML file structure</paragraph>
-<paragraph role="paragraph" id="par_id3149649" xml-lang="en-US" l10n="CHG" oldref="29">Documents in OpenDocument file format are stored as compressed zip archives that contain XML files. To view these XML files, you can open the OpenDocument file with an unzip program. The following files and directories are contained within the OpenDocument files:</paragraph>
+<paragraph role="tip" id="par_id3146907" xml-lang="en-US" l10n="CHG">If you want to define another file format as the default, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010200.xhp" name="Load/Save - General">Load/Save - General</link></emph> to find alternative file formats for each $[officename] document type.</paragraph>
+<paragraph role="heading" id="hd_id3150398" xml-lang="en-US" level="2" l10n="U">XML file structure</paragraph>
+<paragraph role="paragraph" id="par_id3149649" xml-lang="en-US" l10n="CHG">Documents in OpenDocument file format are stored as compressed zip archives that contain XML files. To view these XML files, you can open the OpenDocument file with an unzip program. The following files and directories are contained within the OpenDocument files:</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph role="listitem" id="par_id3153178" xml-lang="en-US" l10n="U" oldref="30">The text content of the document is located in <emph>content.xml</emph>.</paragraph>
-<paragraph role="listitem" id="par_id3154068" xml-lang="en-US" l10n="CHG" oldref="31">By default, <emph>content.xml</emph> is stored without formatting elements like indentation or line breaks to minimize the time for saving and opening the document. On the <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - General</emph> tab page you can activate the use of indentations and line breaks by clearing the check box <emph>Size optimization for ODF format</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3153178" xml-lang="en-US" l10n="U">The text content of the document is located in <emph>content.xml</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3154068" xml-lang="en-US" l10n="CHG">By default, <emph>content.xml</emph> is stored without formatting elements like indentation or line breaks to minimize the time for saving and opening the document. On the <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - General</emph> tab page you can activate the use of indentations and line breaks by clearing the check box <emph>Size optimization for ODF format</emph>.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3145152" xml-lang="en-US" l10n="U" oldref="32">The file <emph>meta.xml</emph> contains the meta information of the document, which you can enter under <emph>File - Properties</emph>.</paragraph>
-<paragraph role="listitem" id="par_id3150740" xml-lang="en-US" l10n="CHG" oldref="33">If you save a document with a password, <emph>meta.xml</emph> will not be encrypted.</paragraph>
+<paragraph role="listitem" id="par_id3145152" xml-lang="en-US" l10n="U">The file <emph>meta.xml</emph> contains the meta information of the document, which you can enter under <emph>File - Properties</emph>.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3150391" xml-lang="en-US" l10n="U" oldref="34">The file <emph>settings.xml</emph> contains further information about the settings for this document.</paragraph>
+<paragraph role="listitem" id="par_id3150391" xml-lang="en-US" l10n="U">The file <emph>settings.xml</emph> contains further information about the settings for this document.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3150447" xml-lang="en-US" l10n="U" oldref="35">In <emph>styles.xml</emph>, you find the styles applied to the document that can be seen in the Styles and Formatting window.</paragraph>
+<paragraph role="listitem" id="par_id3150447" xml-lang="en-US" l10n="U">In <emph>styles.xml</emph>, you find the styles applied to the document that can be seen in the Styles and Formatting window.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="listitem" id="par_id3153353" xml-lang="en-US" l10n="U" oldref="36">The <emph>meta-inf/manifest.xml</emph> file describes the structure of the XML file.</paragraph>
+<paragraph role="listitem" id="par_id3153353" xml-lang="en-US" l10n="U">The <emph>META-INF/manifest.xml</emph> file describes the structure of the XML file.</paragraph>
+<paragraph role="listitem" id="par_id3150740" xml-lang="en-US" l10n="CHG">If you save a document with a password, <emph>manifest.xml</emph> will not be encrypted.</paragraph>
 </listitem>
 </list>
-<paragraph role="paragraph" id="par_id3153368" xml-lang="en-US" l10n="CHG" oldref="37">Additional files and folders can be contained in the packed file format.</paragraph>
-<paragraph role="heading" id="hd_id3154299" xml-lang="en-US" level="2" l10n="U" oldref="38">Definition of the XML formats</paragraph>
+<paragraph role="paragraph" id="par_id3153368" xml-lang="en-US" l10n="CHG">Additional files and folders can be contained in the packed file format.</paragraph>
+<paragraph role="heading" id="hd_id3154299" xml-lang="en-US" level="2" l10n="U">Definition of the XML formats</paragraph>
 <paragraph role="paragraph" id="par_idN10AAD" xml-lang="en-US" l10n="NEW">The schema for the OpenDocument formats can be found on the <link href="https://www.oasis-open.org">www.oasis-open.org</link> web site.</paragraph>
-<paragraph role="paragraph" id="par_id3149561" xml-lang="en-US" l10n="CHG" oldref="39">The DTD (Document Type Description) files for the older formats can be found in the installation folder.<comment>removed path</comment></paragraph>
-<paragraph role="paragraph" id="par_id3152596" xml-lang="en-US" l10n="U" oldref="40">Note that the formats are subject to certain licenses. You can find notes on the licenses at the start of the DTD files. More detailed information can be found on the <link href="https://www.openoffice.org" name="Apache OpenOffice">Apache OpenOffice</link> website.</paragraph>
+<paragraph role="paragraph" id="par_id3149561" xml-lang="en-US" l10n="CHG">The DTD (Document Type Description) files for the older formats can be found in the installation folder.<comment>removed path</comment></paragraph>
+<paragraph role="paragraph" id="par_id3152596" xml-lang="en-US" l10n="U">Note that the formats are subject to certain licenses. You can find notes on the licenses at the start of the DTD files. More detailed information can be found on the <link href="https://www.openoffice.org" name="Apache OpenOffice">Apache OpenOffice</link> website.</paragraph>
 <section id="relatedtopics">
 <embed href="text/shared/guide/doc_open.xhp#doc_open"/>
 <embed href="text/shared/guide/doc_save.xhp#doc_save"/>

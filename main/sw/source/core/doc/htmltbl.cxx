@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 #include "hintids.hxx"
@@ -57,14 +55,13 @@ using namespace ::com::sun::star;
 #define COLFUZZY 20
 #define MAX_TABWIDTH (USHRT_MAX - 2001)
 
-
 class SwHTMLTableLayoutConstraints
 {
 	sal_uInt16 nRow;					// Start-Zeile
 	sal_uInt16 nCol;					// Start-Spalte
 	sal_uInt16 nColSpan;				// COLSPAN der Zelle
 
-	SwHTMLTableLayoutConstraints *pNext;		// die naechste Bedingung
+	SwHTMLTableLayoutConstraints *pNext;		// die nächste Bedingung
 
 	sal_uLong nMinNoAlign, nMaxNoAlign;	// Zwischenergebnisse AL-Pass 1
 
@@ -86,7 +83,7 @@ public:
 	sal_uInt16 GetColumn() const { return nCol; }
 };
 
-/*  */
+/* */
 
 SwHTMLTableLayoutCnts::SwHTMLTableLayoutCnts( const SwStartNode *pSttNd,
 										  SwHTMLTableLayout* pTab,
@@ -241,13 +238,13 @@ SwHTMLTableLayout::~SwHTMLTableLayout()
 	delete[] aCells;
 }
 
-// Die Breiten der Umrandung werden zunaechst wie in Netscape berechnet:
-// Aeussere Umrandung: BORDER + CELLSPACING + CELLPADDING
+// Die Breiten der Umrandung werden zunächst wie in Netscape berechnet:
+// Äußere Umrandung: BORDER + CELLSPACING + CELLPADDING
 // Innere Umrandung: CELLSPACING + CELLPADDING
 // Allerdings wird die Breite der Umrandung im SW trotzdem beachtet, wenn
-// bSwBorders gesetzt ist, damit nicht faellschlich umgebrochen wird.
-// MIB 27.6.97: Dabei muss auch der Abstand zum Inhalt beruecksichtigt werden,
-// und zwar auch dann, wenn wenn nur die gegenueberliegende Seite
+// bSwBorders gesetzt ist, damit nicht fälschlich umgebrochen wird.
+// MIB 27.6.97: Dabei muss auch der Abstand zum Inhalt berücksichtigt werden,
+// und zwar auch dann, wenn wenn nur die gegenüberliegende Seite
 // eine Umrandung hat.
 sal_uInt16 SwHTMLTableLayout::GetLeftCellSpace( sal_uInt16 nCol, sal_uInt16 nColSpan,
 											sal_Bool bSwBorders ) const
@@ -272,9 +269,9 @@ sal_uInt16 SwHTMLTableLayout::GetLeftCellSpace( sal_uInt16 nCol, sal_uInt16 nCol
 				 nSpace < MIN_BORDER_DIST )
 		{
 			ASSERT( !nCellPadding, "GetLeftCellSpace: CELLPADDING!=0" );
-			// Wenn die Gegenueberliegende Seite umrandet ist muessen
+			// Wenn die Gegenüberliegende Seite umrandet ist müssen
 			// wir zumindest den minimalen Abstand zum Inhalt
-			// beruecksichtigen. (Koennte man zusaetzlich auch an
+			// berücksichtigen. (Könnte man zusätzlich auch an
 			// nCellPadding festmachen.)
 			nSpace = MIN_BORDER_DIST;
 		}
@@ -298,9 +295,9 @@ sal_uInt16 SwHTMLTableLayout::GetRightCellSpace( sal_uInt16 nCol, sal_uInt16 nCo
 			 nSpace < MIN_BORDER_DIST )
 	{
 		ASSERT( !nCellPadding, "GetRightCellSpace: CELLPADDING!=0" );
-		// Wenn die Gegenueberliegende Seite umrandet ist muessen
+		// Wenn die Gegenüberliegende Seite umrandet ist müssen
 		// wir zumindest den minimalen Abstand zum Inhalt
-		// beruecksichtigen. (Koennte man zusaetzlich auch an
+		// berücksichtigen. (Könnte man zusätzlich auch an
 		// nCellPadding festmachen.)
 		nSpace = MIN_BORDER_DIST;
 	}
@@ -391,7 +388,7 @@ sal_uInt16 SwHTMLTableLayout::GetBrowseWidthByTabFrm(
 	{
 		// Wenn die Tabelle in einem selbst angelegten Rahmen steht, dann ist
 		// die Breite Ankers und nicht die Breite Rahmens von Bedeutung.
-		// Bei Absatz-gebundenen Rahmen werden Absatz-Einzuege nicht beachtet.
+		// Bei Absatz-gebundenen Rahmen werden Absatz-Einzüge nicht beachtet.
 		const SwFrm *pAnchor = ((const SwFlyFrm *)pUpper)->GetAnchorFrm();
 		if( pAnchor->IsTxtFrm() )
 			nWidth = pAnchor->Frm().Width();
@@ -476,7 +473,7 @@ static void lcl_GetMinMaxSize( sal_uLong& rMinNoAlignCnts, sal_uLong& rMaxNoAlig
 	}
 
 	// <NOBR> in der gesamten Zelle bezieht sich auf Text, aber nicht
-	// auf Tabellen. Netscape beruecksichtigt dies nur fuer Grafiken.
+	// auf Tabellen. Netscape berücksichtigt dies nur für Grafiken.
 	if( (pColl && RES_POOLCOLL_HTML_PRE==pColl->GetPoolFmtId()) || bNoBreak )
 	{
 		rMinNoAlignCnts = rMaxNoAlignCnts;
@@ -509,16 +506,16 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 		pColumn->ClearPass1Info( !HasColTags() );
 		sal_uInt16 nMinColSpan = USHRT_MAX; // Spaltenzahl, auf die sich dir
 										// berechnete Breite bezieht
-		sal_uInt16 nColSkip = USHRT_MAX;	// Wie viele Spalten muessen
-										// uebersprungen werden
+		sal_uInt16 nColSkip = USHRT_MAX;	// Wie viele Spalten müssen
+										// übersprungen werden
 
 		for( sal_uInt16 j=0; j<nRows; j++ )
 		{
 			SwHTMLTableLayoutCell *pCell = GetCell(j,i);
 			SwHTMLTableLayoutCnts *pCnts = pCell->GetContents();
 
-			// fix #31488#: Zum Ermitteln der naechsten zu berechnenden
-			// Spalte muessen alle Zeilen herangezogen werden
+			// fix #31488#: Zum Ermitteln der nächsten zu berechnenden
+			// Spalte müssen alle Zeilen herangezogen werden
 			sal_uInt16 nColSpan = pCell->GetColSpan();
 			if( nColSpan < nColSkip )
 				nColSkip = nColSpan;
@@ -584,11 +581,11 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 										sal_uLong nAbsMinTableCnts = pChild->nMin;
 
 										// Eine feste Tabellen-Breite wird als Minimum
-										// und Maximum gleichzeitig uebernommen
+										// und Maximum gleichzeitig übernommen
 										if( !pChild->bPrcWidthOption && pChild->nWidthOption )
 										{
 											sal_uLong nTabWidth = pChild->nWidthOption;
-											if( nTabWidth >= nAbsMinTableCnts  )
+											if( nTabWidth >= nAbsMinTableCnts )
 											{
 												nMaxTableCnts = nTabWidth;
 												nAbsMinTableCnts = nTabWidth;
@@ -619,11 +616,11 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 						sal_uLong nAbsMinTableCnts = pChild->nMin;
 
 						// Eine feste Tabellen-Breite wird als Minimum
-						// und Maximum gleichzeitig uebernommen
+						// und Maximum gleichzeitig übernommen
 						if( !pChild->bPrcWidthOption && pChild->nWidthOption )
 						{
 							sal_uLong nTabWidth = pChild->nWidthOption;
-							if( nTabWidth >= nAbsMinTableCnts  )
+							if( nTabWidth >= nAbsMinTableCnts )
 							{
 								nMaxTableCnts = nTabWidth;
 								nAbsMinTableCnts = nTabWidth;
@@ -643,9 +640,9 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 					pCnts = pCnts->GetNext();
 				}
 
-// War frueher hinter AddBorderWidth
+// War früher hinter AddBorderWidth
 				// Wenn die Breite einer Tabelle in der Zelle breiter ist als
-				// das, was wir fuer sonstigen Inhalt berechnet haben, muessen
+				// das, was wir für sonstigen Inhalt berechnet haben, müssen
 				// wir die Breite der Tabelle nutzen
 				if( nMaxTableCell > nMaxNoAlignCell )
 					nMaxNoAlignCell = nMaxTableCell;
@@ -657,14 +654,14 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 					if( nMaxNoAlignCell < nMinNoAlignCell )
 						nMaxNoAlignCell = nMinNoAlignCell;
 				}
-// War frueher hinter AddBorderWidth
+// War früher hinter AddBorderWidth
 
 				sal_Bool bRelWidth = pCell->IsPrcWidthOption();
 				sal_uInt16 nWidth = pCell->GetWidthOption();
 
 				// Eine NOWRAP-Option bezieht sich auf Text und auf
 				// Tabellen, wird aber bei fester Zellenbreite
-				// nicht uebernommen. Stattdessen wirkt die angegebene
+				// nicht übernommen. Stattdessen wirkt die angegebene
 				// Zellenbreite wie eine Mindestbreite.
 				if( pCell->HasNoWrapOption() )
 				{
@@ -689,10 +686,10 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 					// fixe Breite besitzt und gleichzeitig ein HR, wird
 					// sie nie schmaler als die angegebene Breite.
 					// (Genaugenomen scheint die Zelle nie schmaler zu werden
-					// als die HR-Linie, denn wenn man fuer die Linie eine
+					// als die HR-Linie, denn wenn man für die Linie eine
 					// Breite angibt, die breiter ist als die der Zelle, dann
 					// wird die Zelle so breit wie die Linie. Das bekommen wir
-					// natuerlich nicht hin.)
+					// natürlich nicht hin.)
 					if( nWidth>nMinNoAlignCell )
 						nMinNoAlignCell = nWidth;
 					if( nWidth>nAbsMinNoAlignCell )
@@ -700,7 +697,7 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 				}
 #endif
 
-				// Mindestbreite fuer Inhalt einhalten
+				// Mindestbreite für Inhalt einhalten
 				if( nMinNoAlignCell < MINLAY )
 					nMinNoAlignCell = MINLAY;
 				if( nMaxNoAlignCell < MINLAY )
@@ -714,7 +711,7 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 
 				if( 1==nColSpan )
 				{
-					// die Werte direkt uebernehmen
+					// die Werte direkt übernehmen
 					pColumn->MergeMinMaxNoAlign( nMinNoAlignCell,
 												 nMaxNoAlignCell,
 												 nAbsMinNoAlignCell );
@@ -728,8 +725,8 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 					// die Angaben erst am Ende, und zwar zeilenweise von
 					// links nach rechts bearbeiten
 
-					// Wann welche Werte wie uebernommen werden ist weiter
-					// unten erklaert.
+					// Wann welche Werte wie übernommen werden ist weiter
+					// unten erklärt.
 					if( !HasColTags() && nWidth && !bRelWidth )
 					{
 						sal_uLong nAbsWidth = nWidth, nDummy = 0, nDummy2 = 0;
@@ -777,17 +774,17 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 			// es gibt Zellen mit COLSPAN 1 und demnach auch sinnvolle
 			// Werte in pColumn
 
-			// Werte anhand folgender Tabelle (Netscape 4.0 pv 3) uebernehmen:
+			// Werte anhand folgender Tabelle (Netscape 4.0 pv 3) übernehmen:
 			//
 			// WIDTH:			kein COLS		COLS
 			//
 			// keine			min = min		min = absmin
 			//					max = max		max = max
 			//
-			// >= min			min = min  		min = width
+			// >= min			min = min		min = width
 			//					max = width		max = width
 			//
-			// >= absmin		min = wdith(*)	min = width
+			// >= absmin		min = width(*)	min = width
 			//					max = width		max = width
 			//
 			// < absmin			min = absmin	min = absmin
@@ -800,7 +797,7 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 			if( pColumn->GetWidthOption() && !pColumn->IsRelWidthOption() )
 			{
 				// absolute Breiten als Minimal- und Maximalbreite
-				// uebernehmen.
+				// übernehmen.
 				sal_uLong nAbsWidth = pColumn->GetWidthOption();
 				sal_uLong nDummy = 0, nDummy2 = 0;
 				AddBorderWidth( nAbsWidth, nDummy, nDummy2, i, 1, sal_False );
@@ -834,7 +831,7 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 			// angepasst wird.
 			pColumn->SetMinMax( MINLAY, MINLAY );
 
-			// die naechsten Spalten muessen nicht bearbeitet werden
+			// die nächsten Spalten müssen nicht bearbeitet werden
 			i += (nColSkip-1);
 		}
 
@@ -854,7 +851,7 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 		sal_uLong nConstrMin = pConstr->GetMinNoAlign();
 		sal_uLong nConstrMax = pConstr->GetMaxNoAlign();
 
-		// jetzt holen wir uns die bisherige Breite der ueberspannten
+		// jetzt holen wir uns die bisherige Breite der überspannten
 		// Spalten
 		sal_uLong nColsMin = 0;
 		sal_uLong nColsMax = 0;
@@ -951,12 +948,12 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 			// Zum Anpassen der relativen Breiten werden im 1. Schritt die
 			// Minimalbreiten aller anzupassenden Zellen jeweils mit der
 			// relativen Breite einer Spalte multipliziert. Dadurch stimmen
-			// dann die Breitenverhaeltnisse der Spalten untereinander.
-			// Ausserdem wird der Faktor berechnet, um den die Zelle dadurch
+			// dann die Breitenverhältnisse der Spalten untereinander.
+			// Außerdem wird der Faktor berechnet, um den die Zelle dadurch
 			// breiter geworden ist als die Minimalbreite.
 			// Im 2. Schritt werden dann die berechneten Breiten durch diesen
 			// Faktor geteilt. Dadurch bleibt die Breite (mind.) einer Zelle
-			// erhalten und dient als Ausgangsbasis fuer die andern Breiten.
+			// erhalten und dient als Ausgangsbasis für die andern Breiten.
 			// Es werden auch hier nur die Maximalbreiten beeinflusst!
 
 			sal_uLong nAbsMin = 0;	// absolute Min-Breite alter Spalten mit
@@ -1017,7 +1014,7 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 				if( pColumn->IsRelWidthOption() && pColumn->GetWidthOption() )
 				{
 					// Sicherstellen, dass die relativen breiten nicht
-					// ueber 100% landen
+					// über 100% landen
 					sal_uInt16 nColWidth = pColumn->GetWidthOption();
 					if( nRel+nColWidth > 100 )
 					{
@@ -1030,7 +1027,7 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 				}
 				else if( !pColumn->GetMin() )
 				{
-					// Die Spalte ist leer (wurde also ausschliesslich
+					// Die Spalte ist leer (wurde also ausschließlich
 					// durch COLSPAN erzeugt) und darf deshalb auch
 					// keine %-Breite zugewiesen bekommen.
 					nRelCols++;
@@ -1039,10 +1036,10 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 
 			// Eventuell noch vorhandene Prozente werden auf die Spalten ohne
 			// eine Breiten-Angabe verteilt. Wie in Netscape werden die
-			// verbleibenden Prozente entsprechend der Verhaeltnisse
+			// verbleibenden Prozente entsprechend der Verhältnisse
 			// der Maximalbreiten der in Frage kommenden Spalten
 			// untereinander verteilt.
-			// ??? Wie beruecksichtigen bei den Maximalbreiten auch Spalten
+			// ??? Wie berücksichtigen bei den Maximalbreiten auch Spalten
 			// mit fester Breite. Ist das richtig???
 			if( nRel < 100 && nRelCols < nCols )
 			{
@@ -1055,7 +1052,7 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 						!pColumn->GetWidthOption() &&
 						pColumn->GetMin() )
 					{
-						// den Rest bekommt die naechste Spalte
+						// den Rest bekommt die nächste Spalte
 						sal_uInt16 nColWidth =
 							(sal_uInt16)((pColumn->GetMax() * nRelLeft) / nFixMax);
 						pColumn->SetWidthOption( nColWidth, sal_True, sal_False );
@@ -1122,39 +1119,39 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 	delete pConstraints;
 }
 
-// nAbsAvail ist der verfuegbare Platz in TWIPS.
-// nRelAvail ist der auf USHRT_MAX bezogene verfuegbare Platz oder 0
+// nAbsAvail ist der verfügbare Platz in TWIPS.
+// nRelAvail ist der auf USHRT_MAX bezogene verfügbare Platz oder 0
 // nAbsSpace ist der Anteil von nAbsAvail, der durch der umgebende Zelle
-//           fur die Umrandung und den Abstand zum Inhalt reserviert ist.
+//           für die Umrandung und den Abstand zum Inhalt reserviert ist.
 void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAvail,
 										 sal_uInt16 nAbsLeftSpace,
 										 sal_uInt16 nAbsRightSpace,
 										 sal_uInt16 nParentInhAbsSpace )
 {
-	// Erstmal fuehren wie jede Menge Plausibilitaets-Test durch
+	// Erstmal führen wie jede Menge Plausibilitäts-Test durch
 
-	// Eine absolute zur Verfuegung stehende Breite muss immer uebergeben
+	// Eine absolute zur Verfügung stehende Breite muss immer übergeben
 	// werden.
 	ASSERT( nAbsAvail, "AutoLayout Pass 2: Keine absolute Breite gegeben" );
 
-	// Eine realtive zur Verfuegung stehende Breite darf nur und muss fuer
-	// Tabellen in Tabellen uebergeben
+	// Eine relative zur Verfügung stehende Breite darf nur und muss für
+	// Tabellen in Tabellen übergeben
 	ASSERT( IsTopTable() == (nRelAvail==0),
 			"AutoLayout Pass 2: Rel. Breite bei Tab in Tab oder umgekehrt" );
 
-	// Die Minimalbreite der Tabelle darf natuerlich nie groesser sein
+	// Die Minimalbreite der Tabelle darf natürlich nie größer sein
 	// als das die Maximalbreite.
 	ASSERT( nMin<=nMax, "AutoLayout Pass2: nMin > nMax" );
 
-	// Die verfuegbare Breite, fuer die die Tabelle berechnet wurde, merken.
+	// Die verfügbare Breite, für die die Tabelle berechnet wurde, merken.
 	// (Dies ist ein guter Ort, denn hier kommen wir bei der Erstberechnung
 	// der Tabelle aus dem Parser und bei jedem _Resize-Aufruf vorbei.)
 	nLastResizeAbsAvail = nAbsAvail;
 
-	// Schritt 1: Der verfuegbare Platz wird an linke/rechte Raender,
-	// vorhandene Filler-Zellen und Abstaende angepasst
+	// Schritt 1: Der verfügbare Platz wird an linke/rechte Ränder,
+	// vorhandene Filler-Zellen und Abstände angepasst
 
-	// Abstand zum Inhalt und Unrandung
+	// Abstand zum Inhalt und Umrandung
 	sal_uInt16 nAbsLeftFill = 0, nAbsRightFill = 0;
 	if( !IsTopTable() &&
 		GetMin() + nAbsLeftSpace + nAbsRightSpace <= nAbsAvail )
@@ -1168,14 +1165,14 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 	{
 		if( IsTopTable() )
 		{
-			// fuer die Top-Table beruecksichtigen wir die Raender immer,
-			// den die Minimalbreite der Tabelle wird hier nie unterschritten
+			// für die Top-Table berücksichtigen wir die Ränder immer,
+			// denn die Minimalbreite der Tabelle wird hier nie unterschritten
 			nAbsAvail -= (nLeftMargin + nRightMargin);
 		}
 		else if( GetMin() + nLeftMargin + nRightMargin <= nAbsAvail )
 		{
-			// sonst beruecksichtigen wir die Raender nur, wenn auch Platz
-			// fuer sie da ist (nMin ist hier bereits berechnet!)
+			// sonst berücksichtigen wir die Ränder nur, wenn auch Platz
+			// für sie da ist (nMin ist hier bereits berechnet!)
 			nAbsLeftFill = nAbsLeftFill + nLeftMargin;
 			nAbsRightFill = nAbsRightFill + nRightMargin;
 		}
@@ -1190,7 +1187,7 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 			nAbsRightFill = MINLAY+nInhRightBorderWidth;
 	}
 
-	// Anpassen des verfuegbaren Platzes.
+	// Anpassen des verfügbaren Platzes.
 	nRelLeftFill = 0;
 	nRelRightFill = 0;
 	if( !IsTopTable() && (nAbsLeftFill>0 || nAbsRightFill) )
@@ -1213,23 +1210,23 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 	{
 		if( bPrcWidthOption )
 		{
-			ASSERT( nWidthOption<=100, "Prozentangabe zu gross" );
+			ASSERT( nWidthOption<=100, "Prozentangabe zu groß" );
 			if( nWidthOption > 100 )
 				nWidthOption = 100;
 
 			// Die absolute Breite entspricht den angegeben Prozent der
-			// zur Verfuegung stehenden Breite.
+			// zur Verfügung stehenden Breite.
 			// Top-Tabellen bekommen nur eine relative Breite, wenn der
-			// verfuegbare Platz *echt groesser* ist als die Minimalbreite.
-			// ACHTUNG: Das "echte groesser" ist noetig, weil der Wechsel
+			// verfügbare Platz *echt größer* ist als die Minimalbreite.
+			// ACHTUNG: Das "echte größer" ist nötig, weil der Wechsel
 			// von einer relativen Breite zu einer absoluten Breite durch
-			// Resize sonst zu einer Endlosschleife fuehrt.
+			// Resize sonst zu einer Endlosschleife führt.
 			// Weil bei Tabellen in Rahmen kein Resize aufgerufen wird,
-			// wenn der Rahmen eine nicht-relative Breite besitzt, koennen
+			// wenn der Rahmen eine nicht-relative Breite besitzt, können
 			// wir da solche Spielchen nicht spielen
 			// MIB 19.2.98: Wegen fix #47394# spielen wir solche Spielchen
 			// jetzt doch. Dort war eine Grafik in einer 1%-breiten
-			// Tabelle und hat da natuerlich nicht hineingepasst.
+			// Tabelle und hat da natürlich nicht hineingepasst.
 			nAbsTabWidth = (sal_uInt16)( ((sal_uLong)nAbsAvail * nWidthOption) / 100 );
 			if( IsTopTable() &&
 				( /*MayBeInFlyFrame() ||*/ (sal_uLong)nAbsTabWidth > nMin ) )
@@ -1244,19 +1241,19 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 			if( nAbsTabWidth > MAX_TABWIDTH )
 				nAbsTabWidth = MAX_TABWIDTH;
 
-			// Tabellen in Tabellen duerfen niemals breiter werden als der
-			// verfuegbare Platz.
+			// Tabellen in Tabellen dürfen niemals breiter werden als der
+			// verfügbare Platz.
 			if( !IsTopTable() && nAbsTabWidth > nAbsAvail )
 				nAbsTabWidth = nAbsAvail;
 		}
 	}
 
 	ASSERT( IsTopTable() || nAbsTabWidth<=nAbsAvail,
-			"AutoLayout Pass2: nAbsTabWidth > nAbsAvail fuer Tab in Tab" );
+			"AutoLayout Pass2: nAbsTabWidth > nAbsAvail für Tab in Tab" );
 	ASSERT( !nRelAvail || nAbsTabWidth<=nAbsAvail,
-			"AutoLayout Pass2: nAbsTabWidth > nAbsAvail fuer relative Breite" );
+			"AutoLayout Pass2: nAbsTabWidth > nAbsAvail für relative Breite" );
 
-	// Catch fuer die beiden Asserts von oben (man weiss ja nie!)
+	// Catch für die beiden Asserts von oben (man weiß ja nie!)
 	if( (!IsTopTable() || nRelAvail>0) && nAbsTabWidth>nAbsAvail )
 		nAbsTabWidth = nAbsAvail;
 
@@ -1267,11 +1264,11 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 		nMin > MAX_TABWIDTH )
 	{
 		// Wenn
-		// - das Minimum einer inneren Tabelle groesser ist als der
-		//   verfuegbare Platz, oder
-		// - das Minimum einer Top-Table groesser ist als USHRT_MAX
-		// muss die Tabelle an den verfuegbaren Platz bzw. USHRT_MAX
-		// abgepasst werden. Dabei bleiben die Verhaeltnisse der Breiten
+		// - das Minimum einer inneren Tabelle größer ist als der
+		//   verfügbare Platz, oder
+		// - das Minimum einer Top-Table größer ist als USHRT_MAX
+		// muss die Tabelle an den verfügbaren Platz bzw. USHRT_MAX
+		// abgepasst werden. Dabei bleiben die Verhältnisse der Breiten
 		// untereinander erhalten.
 
 		nAbsTabWidth = IsTopTable() ? MAX_TABWIDTH : nAbsAvail;
@@ -1365,16 +1362,16 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 		// Wenn
 		// - die Tabelle eine fixe Breite besitzt und das Maximum der
 		//   Tabelle kleiner ist, oder
-		// - das Maximum kleiner ist als der verfuegbare Platz
-		// kann das Maximum direkt uebernommen werden bzw. die Tabelle nur
-		// unter Beruecksichtigung des Maximums an die fixe Breite
+		// - das Maximum kleiner ist als der verfügbare Platz
+		// kann das Maximum direkt übernommen werden bzw. die Tabelle nur
+		// unter Berücksichtigung des Maximums an die fixe Breite
 		// angepasst werden.
 
 		// Keine fixe Breite, dann das Maximum nehmen.
 		if( !nAbsTabWidth )
 			nAbsTabWidth = (sal_uInt16)nMax;
 
-		// Eine Top-Table darf auch breiter werden als der verfuegbare Platz.
+		// Eine Top-Table darf auch breiter werden als der verfügbare Platz.
 		if( nAbsTabWidth > nAbsAvail )
 		{
 			ASSERT( IsTopTable(),
@@ -1382,8 +1379,8 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 			nAbsAvail = nAbsTabWidth;
 		}
 
-		// Nur den Anteil der relativen Breite verwenden, der auch fuer
-		// die absolute Breite verwendet wuerde.
+		// Nur den Anteil der relativen Breite verwenden, der auch für
+		// die absolute Breite verwendet würde.
 		sal_uLong nAbsTabWidthL = nAbsTabWidth;
 		nRelTabWidth =
 			( nRelAvail ? (sal_uInt16)((nAbsTabWidthL * nRelAvail) / nAbsAvail)
@@ -1405,7 +1402,7 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 
 			// In diesem (und nur in diesem) Fall gibt es Spalten,
 			// die ihre Maximalbreite genau einhalten, also weder
-			// schmaler noch breiter werden. Beim zurueckrechnen der
+			// schmaler noch breiter werden. Beim zurückrechnen der
 			// absoluten Breite aus der relativen Breite kann es
 			// zu Rundungsfehlern kommen (bug #45598#). Um die auszugleichen
 			// werden zuerst die fixen Breiten entsprechend korrigiert
@@ -1420,7 +1417,7 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 				SwHTMLTableLayoutColumn *pColumn = GetColumn( i );
 				if( !pColumn->IsRelWidthOption() || !pColumn->GetWidthOption() )
 				{
-					// Die Spalte behaelt ihre Breite bei.
+					// Die Spalte behält ihre Breite bei.
 					nFixedCols++;
 					sal_uLong nColMax = pColumn->GetMax();
 					pColumn->SetAbsColWidth( (sal_uInt16)nColMax );
@@ -1442,8 +1439,8 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 
 			// Zu verteilende Anteile des Maximums und der relativen und
 			// absoluten Breiten. nFixMax entspricht an dieser Stelle
-			// nAbs, so dass man gleich nFixMax haette nehmen koennen.
-			// Der Code ist so aber verstaendlicher.
+			// nAbs, so dass man gleich nFixMax hätte nehmen können.
+			// Der Code ist so aber verständlicher.
 			ASSERT( nFixMax == nAbs, "Zwei Schleifen, zwei Summen?" )
 			sal_uLong nDistMax = nMax - nFixMax;
 			sal_uInt16 nDistAbsTabWidth = nAbsTabWidth - nAbs;
@@ -1478,7 +1475,7 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 		else
 		{
 			// nein, dann den zu verteilenden Platz auf alle Spalten
-			// gleichmaessig verteilen.
+			// gleichmäßig verteilen.
 			for( sal_uInt16 i=0; i<nCols; i++ )
 			{
 				sal_uLong nColMax = GetColumn( i )->GetMax();
@@ -1491,7 +1488,7 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 	}
 	else
 	{
-		// den ueber die Minimalbreite herausgehenden Platz entsprechend
+		// den über die Minimalbreite herausgehenden Platz entsprechend
 		// den einzelnen Spalten anteilig zuschlagen
 		if( !nAbsTabWidth )
 			nAbsTabWidth = nAbsAvail;
@@ -1530,20 +1527,20 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 
 	}
 
-	// Schritt 4: Fuer Tabellen in Tabellen kann es links und/oder rechts
+	// Schritt 4: Für Tabellen in Tabellen kann es links und/oder rechts
 	// noch Ausgleichzellen geben. Deren Breite wird jetzt berechnet.
 	nInhAbsLeftSpace = 0;
 	nInhAbsRightSpace = 0;
 	if( !IsTopTable() && (nRelLeftFill>0 || nRelRightFill>0 ||
 						  nAbsTabWidth<nAbsAvail) )
 	{
-		// Die Breite von zusaetzlichen Zellen zur Ausrichtung der
+		// Die Breite von zusätzlichen Zellen zur Ausrichtung der
 		// inneren Tabelle bestimmen
 		sal_uInt16 nAbsDist = (sal_uInt16)(nAbsAvail-nAbsTabWidth);
 		sal_uInt16 nRelDist = (sal_uInt16)(nRelAvail-nRelTabWidth);
 		sal_uInt16 nParentInhAbsLeftSpace = 0, nParentInhAbsRightSpace = 0;
 
-		// Groesse und Position der zusaetzlichen Zellen bestimmen
+		// Größe und Position der zusätzlichen Zellen bestimmen
 		switch( eTableAdjust )
 		{
 		case SVX_ADJUST_RIGHT:
@@ -1577,9 +1574,9 @@ void SwHTMLTableLayout::AutoLayoutPass2( sal_uInt16 nAbsAvail, sal_uInt16 nRelAv
 		ASSERT( !pRightFillerBox || nRelRightFill>0,
 				"Fuer rechte Filler-Box ist keine Breite da!" );
 
-		// Filler-Breiten werden auf die aeusseren Spalten geschlagen, wenn
-		// es nach dem ersten Durchlauf keine Boxen fuer sie gibt (nWidth>0)
-		// oder ihre Breite zu klein wuerde oder wenn es COL-Tags gibt und
+		// Filler-Breiten werden auf die äußeren Spalten geschlagen, wenn
+		// es nach dem ersten Durchlauf keine Boxen für sie gibt (nWidth>0)
+		// oder ihre Breite zu klein würde oder wenn es COL-Tags gibt und
 		// die Filler-Breite der Umrandung-Breite entspricht (dann haben wir
 		// die Tabelle wahrscheinlich selbst exportiert)
 		if( nRelLeftFill && !pLeftFillerBox &&
@@ -1650,11 +1647,11 @@ void SwHTMLTableLayout::SetWidths( sal_Bool bCallPass2, sal_uInt16 nAbsAvail,
 								   sal_uInt16 nAbsRightSpace,
 								   sal_uInt16 nParentInhAbsSpace )
 {
-	// SetWidth muss am Ende einmal mehr fuer jede Zelle durchlaufen
+	// SetWidth muss am Ende einmal mehr für jede Zelle durchlaufen
 	// worden sein.
 	nWidthSet++;
 
-	// Schritt 0: Wenn noetig, wird hier noch der Pass2 des Layout-Algorithmus
+	// Schritt 0: Wenn nötig, wird hier noch der Pass2 des Layout-Algorithmus
 	// aufgerufen.
 	if( bCallPass2 )
 		AutoLayoutPass2( nAbsAvail, nRelAvail, nAbsLeftSpace, nAbsRightSpace,
@@ -1662,7 +1659,7 @@ void SwHTMLTableLayout::SetWidths( sal_Bool bCallPass2, sal_uInt16 nAbsAvail,
 
 	// Schritt 1: Setzten der neuen Breite an allen Content-Boxen.
 	// Da die Boxen nichts von der HTML-Tabellen-Struktur wissen, wird
-	// ueber die HTML-Tabellen-Struktur iteriert. Fuer Tabellen in Tabellen
+	// über die HTML-Tabellen-Struktur iteriert. Für Tabellen in Tabellen
 	// in Tabellen wird rekursiv SetWidth aufgerufen.
 	for( sal_uInt16 i=0; i<nRows; i++ )
 	{
@@ -1703,9 +1700,9 @@ void SwHTMLTableLayout::SetWidths( sal_Bool bCallPass2, sal_uInt16 nAbsAvail,
 
 	// Schritt 2: Wenn eine Top-Tabelle vorliegt, werden jetzt die Formate
 	// der Nicht-Content-Boxen angepasst. Da diese aufgrund der
-	// Garbage-Collection in der HTML-Tabelle nicht bekannt sind, muessen
-	// wir hier ueber die Tabelle iterieren. Bei der Gelegenheit wird auch
-	// das Tabellen-Frameformat angepasst. Fuer Tabellen in Tabellen werden
+	// Garbage-Collection in der HTML-Tabelle nicht bekannt sind, müssen
+	// wir hier über die Tabelle iterieren. Bei der Gelegenheit wird auch
+	// das Tabellen-Frameformat angepasst. Für Tabellen in Tabellen werden
 	// stattdessen die Breiten der Filler-Zellen gesetzt.
 	if( IsTopTable() )
 	{
@@ -1713,10 +1710,10 @@ void SwHTMLTableLayout::SetWidths( sal_Bool bCallPass2, sal_uInt16 nAbsAvail,
 		((SwTable *)pSwTable)->GetTabLines().ForEach( &lcl_ResizeLine,
 													  &nCalcTabWidth );
 		ASSERT( Abs( nRelTabWidth-nCalcTabWidth ) < COLFUZZY,
-				"Tabellebreite stimmt nicht mit Zeilenbreite ueberein." );
+				"Tabellenbreite stimmt nicht mit Zeilenbreite überein." );
 
 		// Beim Anpassen des Tabellen-Formats dieses locken, weil sonst
-		// die Boxformate erneut angepasst werden. Ausserdem muss eine
+		// die Boxformate erneut angepasst werden. Außerdem muss eine
 		// evtl. vorhandene %-Angabe in jedem Fall erhalten bleiben.
 		SwFrmFmt *pFrmFmt = pSwTable->GetFrmFmt();
 		((SwTable *)pSwTable)->LockModify();
@@ -1740,7 +1737,7 @@ void SwHTMLTableLayout::SetWidths( sal_Bool bCallPass2, sal_uInt16 nAbsAvail,
 				if( bUseRelWidth )
 				{
 					// Bei %-Angaben wird die Breite auf das Minimum gesetzt.
-					aFlyFrmSize.SetWidth(  nMin > USHRT_MAX	? USHRT_MAX
+					aFlyFrmSize.SetWidth( nMin > USHRT_MAX	? USHRT_MAX
 															: nMin );
 					aFlyFrmSize.SetWidthPercent( (sal_uInt8)nWidthOption );
 				}
@@ -1756,7 +1753,7 @@ void SwHTMLTableLayout::SetWidths( sal_Bool bCallPass2, sal_uInt16 nAbsAvail,
 			// checke doch mal ob die Tabellen korrekte Breiten haben
 			SwTwips nSize = pSwTable->GetFrmFmt()->GetFrmSize().GetWidth();
 			const SwTableLines& rLines = pSwTable->GetTabLines();
-			for( sal_uInt16 n = 0; n < rLines.Count(); ++n  )
+			for( sal_uInt16 n = 0; n < rLines.Count(); ++n )
 				_CheckBoxWidth( *rLines[ n ], nSize );
 		}
 #endif
@@ -1780,7 +1777,7 @@ void SwHTMLTableLayout::SetWidths( sal_Bool bCallPass2, sal_uInt16 nAbsAvail,
 void SwHTMLTableLayout::_Resize( sal_uInt16 nAbsAvail, sal_Bool bRecalc )
 {
 	// Wenn bRecalc gesetzt ist, hat sich am Inhalt der Tabelle etwas
-	// geaendert. Es muss dann der erste Pass noch einmal durchgefuehrt
+	// geändert. Es muss dann der erste Pass noch einmal durchgeführt
 	// werden.
 	if( bRecalc )
 		AutoLayoutPass1();
@@ -1789,7 +1786,7 @@ void SwHTMLTableLayout::_Resize( sal_uInt16 nAbsAvail, sal_Bool bRecalc )
 	if ( pRoot && pRoot->IsCallbackActionEnabled() )
 		pRoot->StartAllAction();	//swmod 071108//swmod 071225
 
-	// Sonst koennen die Breiten gesetzt werden, wobei zuvor aber jeweils
+	// Sonst können die Breiten gesetzt werden, wobei zuvor aber jeweils
 	// noch der Pass 2 laufen muss.
 	SetWidths( sal_True, nAbsAvail );
 
@@ -1817,7 +1814,7 @@ sal_Bool SwHTMLTableLayout::Resize( sal_uInt16 nAbsAvail, sal_Bool bRecalc,
 		return sal_False;
 	ASSERT( IsTopTable(), "Resize darf nur an Top-Tabellen aufgerufen werden" );
 
-	// Darf die Tabelle ueberhaupt Resized werden oder soll sie es trotzdem?
+	// Darf die Tabelle überhaupt Resized werden oder soll sie es trotzdem?
 	if( bMustNotResize && !bForce )
 		return sal_False;
 
@@ -1827,9 +1824,9 @@ sal_Bool SwHTMLTableLayout::Resize( sal_uInt16 nAbsAvail, sal_Bool bRecalc,
 
 	const SwDoc *pDoc = GetDoc();
 
-	// Wenn es ein Layout gibt, wurde evtl. die Groesse der Root-Frames
-	// und nicht die der VisArea uebergeben. Wenn wir nicht in einem Rahmen
-	// stehen, muss die Tabelle allerdings fuer die VisArea berechnet werden,
+	// Wenn es ein Layout gibt, wurde evtl. die Größe der Root-Frames
+	// und nicht die der VisArea übergeben. Wenn wir nicht in einem Rahmen
+	// stehen, muss die Tabelle allerdings für die VisArea berechnet werden,
 	// weil sonst die Umschaltung von relativ nach absolut nicht funktioniert.
 	if( pDoc->GetCurrentViewShell() && pDoc->GetCurrentViewShell()->GetViewOptions()->getBrowseMode() )
 	{
@@ -1841,7 +1838,7 @@ sal_Bool SwHTMLTableLayout::Resize( sal_uInt16 nAbsAvail, sal_Bool bRecalc,
 	if( nDelay==0 && aResizeTimer.IsActive() )
 	{
 		// Wenn beim Aufruf eines synchronen Resize noch ein asynchrones
-		// Resize aussteht, dann werden nur die neuen Werte uebernommen.
+		// Resize aussteht, dann werden nur die neuen Werte übernommen.
 
 		bRecalc |= bDelayedResizeRecalc;
 		nDelayedResizeAbsAvail = nAbsAvail;
@@ -1851,12 +1848,12 @@ sal_Bool SwHTMLTableLayout::Resize( sal_uInt16 nAbsAvail, sal_Bool bRecalc,
 	// Optimierung:
 	// Wenn die Minima/Maxima nicht neu berechnet werden sollen und
 	// - die Breite der Tabelle nie neu berechnet werden muss, oder
-	// - die Tabelle schon fuer die uebergebene Breite berechnet wurde, oder
-	// - der verfuegbare Platz kleiner oder gleich der Minimalbreite ist
+	// - die Tabelle schon für die übergebene Breite berechnet wurde, oder
+	// - der verfügbare Platz kleiner oder gleich der Minimalbreite ist
 	//   und die Tabelle bereits die Minimalbreite besitzt, oder
-	// - der verfuegbare Platz groesser ist als die Maximalbreite und
+	// - der verfügbare Platz größer ist als die Maximalbreite und
 	//   die Tabelle bereits die Maximalbreite besitzt
-	//   wird sich an der Tabelle nichts aendern.
+	//   wird sich an der Tabelle nichts ändern.
 	if( !bRecalc && ( !bMustResize ||
 					  (nLastResizeAbsAvail==nAbsAvail) ||
 					  (nAbsAvail<=nMin && nRelTabWidth==nMin) ||
@@ -1893,3 +1890,5 @@ void SwHTMLTableLayout::BordersChanged( sal_uInt16 nAbsAvail, sal_Bool bRecalc )
 
 	Resize( nAbsAvail, bRecalc );
 }
+
+/* vim: set noet sw=4 ts=4: */

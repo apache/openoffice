@@ -1515,7 +1515,7 @@ namespace svxform
 		if (!IsFormEntry(pParentEntry))
 			return NULL;
 
-		FmFormData* pParentFormData = (FmFormData*)pParentEntry->GetUserData();;
+		FmFormData* pParentFormData = (FmFormData*)pParentEntry->GetUserData();
 		Reference< XForm >  xParentForm( pParentFormData->GetFormIface());
 
 		//////////////////////////////////////////////////////////////////////

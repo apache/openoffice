@@ -46,4 +46,4 @@ namespace utl
 		return ::comphelper::getProcessServiceFactory();
 	}	
 
-} // namesapce utl
+} // namespace utl

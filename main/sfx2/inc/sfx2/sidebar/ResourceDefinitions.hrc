@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef _SFX_SIDEBAR_RESOURCE_DEFINITIONS_HRC
@@ -60,7 +60,7 @@
 #endif
 
 //unit pixel
-//panel common 
+//panel common
 #define PROPERTYPAGE_WIDTH		109
 
 //about titlebar
@@ -86,7 +86,7 @@
 #define FT_TITLE_Y				(TITLEBAR_HEIGHT - FT_TITLE_HEIGHT)/2 + 1
 
 
-//about section page 
+//about section page
 #define SECTIONPAGE_MARGIN_VERTICAL		12
 #define SECTIONPAGE_MARGIN_VERTICAL_TOP		1
 #define SECTIONPAGE_MARGIN_VERTICAL_BOT		5
@@ -127,7 +127,7 @@
 #define POPUPPANEL_SEP_VERTICAL_1	10
 #define POPUPPANEL_SEP_VERTICAL_2	6
 #define POPUPPANEL_SEP_HEIGHT		1
- 
+
 #define POPUP_BORDER_WIDTH		2
 #define POPUP_BORDER_HEIGHT		3
 #define OFFSET_X		1

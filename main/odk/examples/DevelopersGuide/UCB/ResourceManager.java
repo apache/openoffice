@@ -46,7 +46,7 @@ public class ResourceManager {
     /**
      * Constructor.
      *
-     *@param      String[]   This construtor requires the arguments:
+     *@param      String[]   This constructor requires the arguments:
      *                          -url=...             (optional)
      *                          -targetFolderURL=... (optional)
      *                          -newTitle=...        (optional)
@@ -203,7 +203,7 @@ public class ResourceManager {
         }
 
 		if ( m_contenturl == null || m_contenturl.equals( "" )) {
-            m_contenturl = Helper.prependCurrentDirAsAbsoluteFileURL( "data/data.txt" );;
+            m_contenturl = Helper.prependCurrentDirAsAbsoluteFileURL( "data/data.txt" );
         }
 
         if ( m_targetFolderURL == null || m_targetFolderURL.equals( "" )) {

@@ -82,7 +82,7 @@ published interface XTypeDetection: com::sun::star::uno::XInterface
         The property <member>MediaDescriptor::URL</member> should be set on
         this descriptor as minimum. It specifies the location of the document.
         If this parameter is missing another one is required: <member>MediaDescriptor::InputStream</member>.
-        This can be useful to prevent operaton against multiple opening of the stream
+        This can be useful to prevent operation against multiple opening of the stream
         and perform the operation. If this stream isn't already included the detection
         will open it (if allowed!) and add it to the descriptor so it will be available for
         all following parts.

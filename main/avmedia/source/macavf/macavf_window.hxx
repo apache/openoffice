@@ -54,7 +54,7 @@ class Window
 {
 public:
 
-            Window( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& i_rxMgr,
+            Window( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& i_rxContext,
                     Player& i_rPlayer,
                     NSView* i_pParentView
                     );
@@ -103,7 +103,7 @@ public:
 
 private:
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxMgr;
+    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;
 
     ::osl::Mutex                                maMutex;
     ::cppu::OMultiTypeInterfaceContainerHelper  maListeners;

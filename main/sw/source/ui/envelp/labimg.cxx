@@ -303,7 +303,7 @@ SwLabCfgItem::SwLabCfgItem(sal_Bool bLabel) :
 
 			if(pValues[nProp].hasValue())
 			{
-				//to have a contiuous switch an offset is added
+				//to have a continuous switch an offset is added
 				if(nProp == 17 && !bIsLabel)
 					nProperty += 3;
                 if(nProperty >= 20)
@@ -430,7 +430,7 @@ void	SwLabCfgItem::Commit()
 	const Type& rType = ::getBooleanCppuType();
 	for(int nProp = 0, nProperty = 0; nProp < aNames.getLength(); nProp++, nProperty++)
 	{
-		//to have a contiuous switch an offset is added
+		//to have a continuous switch an offset is added
 		if(nProp == 17 && !bIsLabel)
 			nProperty += 3;
 		switch(nProperty)

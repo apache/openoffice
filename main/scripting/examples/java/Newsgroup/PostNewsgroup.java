@@ -97,7 +97,7 @@ public class PostNewsgroup extends JFrame
 		});
 
 		Container container = getContentPane();
-		container.setLayout( new GridBagLayout() );;
+		container.setLayout( new GridBagLayout() );
 		GridBagConstraints constraints = new GridBagConstraints();
 		constraints.fill = GridBagConstraints.BOTH;
 
@@ -614,7 +614,7 @@ public class PostNewsgroup extends JFrame
 
 		// replyTextField must have <string>@<string>.<string>
 		// (string at least 2 chars long)
-		// consider <s>.<s>@<s>.<s>.<s> format? (array of dot positons?)
+		// consider <s>.<s>@<s>.<s>.<s> format? (array of dot positions?)
 		String replyString = replyTextField.getText();
 		int atPos = replyString.indexOf( "@" );
 		int dotPos = replyString.lastIndexOf( "." );

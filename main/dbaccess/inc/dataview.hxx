@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef DBAUI_DATAVIEW_HXX
 #define DBAUI_DATAVIEW_HXX
@@ -38,21 +37,21 @@ namespace dbaui
 	class IController;
 	class DBACCESS_DLLPUBLIC ODataView :	public Window
 	{
-		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >	m_xServiceFactory;	// the service factory to work with
+		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >	m_xServiceFactory; // the service factory to work with
 
 	protected:
-		IController&        m_rController;	// the controller in where we resides in
-        FixedLine           m_aSeparator;
+		IController&		m_rController; // the controller in where we resides in
+		FixedLine			m_aSeparator;
 		::std::auto_ptr< ::svt::AcceleratorExecute> m_pAccel;
 
 	public:
-		ODataView(	Window* pParent, 
+		ODataView(	Window* pParent,
 					IController& _rController,
-					const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& , 
+					const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& ,
 					WinBits nStyle = 0 );
 		virtual ~ODataView();
 
-		/// late construction
+		// late construction
 		virtual void Construct();
 		// initialize will be called when after the controller finished his initialize method
 		virtual void initialize(){}
@@ -77,7 +76,7 @@ namespace dbaui
 		// window overridables
 		virtual void Paint( const Rectangle& _rRect );
 
-		/// re-arrange all controls, including the toolbox, it's separator, and the "real view"
+		// re-arrange all controls, including the toolbox, it's separator, and the "real view"
 		virtual void resizeAll( const Rectangle& _rPlayground );
 
 		// re-arrange the controls belonging to the document itself
@@ -85,3 +84,5 @@ namespace dbaui
 	};
 }
 #endif // DBAUI_DATAVIEW_HXX
+
+/* vim: set noet sw=4 ts=4: */

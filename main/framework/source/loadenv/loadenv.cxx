@@ -741,7 +741,7 @@ LoadEnv::EContentType LoadEnv::classifyContent(const ::rtl::OUString&           
         return E_UNSUPPORTED_CONTENT;
     }
 
-    // following operatons can work on an internal type name only :-(
+    // following operations can work on an internal type name only :-(
     css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR = ::utl::getProcessServiceFactory();
     css::uno::Reference< css::document::XTypeDetection > xDetect(xSMGR->createInstance(SERVICENAME_TYPEDETECTION), css::uno::UNO_QUERY);
 

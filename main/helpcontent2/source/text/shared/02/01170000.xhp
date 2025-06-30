@@ -52,13 +52,13 @@
 </bookmark><comment>MW deleted "option field creation", changed "option button" to "push button" and "selections;" to "selecting;"</comment>
 <bookmark xml-lang="en-US" branch="hid/.uno:Config" id="bm_id4029443" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:Config" id="bm_id3153252" localize="false"/>
-<paragraph role="heading" id="hd_id3154142" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/shared/02/01170000.xhp" name="Form Controls">Form Controls</link></paragraph>
-<paragraph role="paragraph" id="par_id3151378" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="formulartext"><ahelp hid=".uno:Config">The Form Controls toolbar contains tools that you need to create an interactive form.</ahelp>
+<paragraph role="heading" id="hd_id3154142" xml-lang="en-US" level="1" l10n="CHG"><link href="text/shared/02/01170000.xhp" name="Form Controls">Form Controls</link></paragraph>
+<paragraph role="paragraph" id="par_id3151378" xml-lang="en-US" l10n="CHG"><variable id="formulartext"><ahelp hid=".uno:Config">The Form Controls toolbar contains tools that you need to create an interactive form.</ahelp>
 </variable> You can use the toolbar to add controls to a form in a text, spreadsheet, presentation, or HTML document, for example a button that runs a macro.</paragraph>
 </section>
 <section id="howtoget">
 <paragraph role="paragraph" id="par_id1027200809391346" xml-lang="en-US" l10n="NEW">Choose <item type="menuitem">View - Toolbars - Form Controls</item>.</paragraph>
-<paragraph role="paragraph" id="par_id3147336" xml-lang="en-US" l10n="CHG" oldref="68">Icon on the <emph>Insert</emph> toolbar (you may need to enable this initially invisible icon):</paragraph>
+<paragraph role="paragraph" id="par_id3147336" xml-lang="en-US" l10n="CHG">Icon on the <emph>Insert</emph> toolbar (you may need to enable this initially invisible icon):</paragraph>
 <section id="syformular">
 <table id="">
 <tablerow>
@@ -67,42 +67,42 @@
 <image id="img_id3150943" src="res/commandimagelist/sc_config.png" width="0.1665in" height="0.1665in"><alt id="alt_id3150943" xml-lang="en-US">Icon</alt></image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="CHG" oldref="3">Form Controls</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="CHG">Form Controls</paragraph>
 </tablecell>
 </tablerow>
 </table>
 </section>
 </section>
 <paragraph role="note" id="par_idN10B21" xml-lang="en-US" l10n="NEW"><link href="text/shared/guide/xforms.xhp">XML Form documents</link> (XForms) use the same controls.</paragraph>
-<paragraph role="paragraph" id="par_id3152771" xml-lang="en-US" l10n="CHG" oldref="45">To create a form, open a document and use the Form Controls toolbar to add and define the form controls. If you want, you can also link the form to a database, so that you can use the controls to manipulate a database.</paragraph>
-<paragraph role="paragraph" id="par_id3150791" xml-lang="en-US" l10n="U" oldref="46">When you create a form in an HTML document, you can use the form to send data over the Internet.</paragraph>
-<paragraph role="note" id="par_id3145171" xml-lang="en-US" l10n="U" oldref="47">%PRODUCTNAME only exports the form properties that are supported by the HTML version that you export to. To specify the HTML version, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML Compatibility</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3152771" xml-lang="en-US" l10n="CHG">To create a form, open a document and use the Form Controls toolbar to add and define the form controls. If you want, you can also link the form to a database, so that you can use the controls to manipulate a database.</paragraph>
+<paragraph role="paragraph" id="par_id3150791" xml-lang="en-US" l10n="U">When you create a form in an HTML document, you can use the form to send data over the Internet.</paragraph>
+<paragraph role="note" id="par_id3145171" xml-lang="en-US" l10n="U">%PRODUCTNAME only exports the form properties that are supported by the HTML version that you export to. To specify the HTML version, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - HTML Compatibility</emph>.</paragraph>
 <paragraph role="heading" id="par_idN10C39" xml-lang="en-US" level="2" l10n="NEW">To add a control to a document</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph role="paragraph" id="par_id3154918" xml-lang="en-US" l10n="CHG" oldref="4">On the Form Controls toolbar, click the icon of the control that you want to add.</paragraph>
+<paragraph role="paragraph" id="par_id3154918" xml-lang="en-US" l10n="CHG">On the Form Controls toolbar, click the icon of the control that you want to add.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="paragraph" id="par_idN10C4D" xml-lang="en-US" l10n="NEW">In the document, drag to create the control.</paragraph>
 <paragraph role="paragraph" id="par_idN10C50" xml-lang="en-US" l10n="NEW">To create a square control field, hold down the Shift key while you drag.</paragraph>
 </listitem>
 </list>
-<paragraph role="tip" id="par_id3154127" xml-lang="en-US" l10n="U" oldref="78">To add a field from the field list of a table or query to a form, drag a cell into the form. In a text document, you can also drag a column header to add a field to a form. To include a label for the field, hold down the <switchinline select="sys"><caseinline select="MAC">Command
+<paragraph role="tip" id="par_id3154127" xml-lang="en-US" l10n="U">To add a field from the field list of a table or query to a form, drag a cell into the form. In a text document, you can also drag a column header to add a field to a form. To include a label for the field, hold down the <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift key down when you drag a column head.</paragraph>
 <paragraph role="heading" id="par_idN10C87" xml-lang="en-US" level="2" l10n="NEW">Modifying a Control</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph role="paragraph" id="par_id3148645" xml-lang="en-US" l10n="U" oldref="5">Right-click the control and choose <emph>Control</emph>. A dialog opens where you can define the properties of the control.</paragraph>
+<paragraph role="paragraph" id="par_id3148645" xml-lang="en-US" l10n="U">Right-click the control and choose <emph>Control</emph>. A dialog opens where you can define the properties of the control.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U" oldref="163">To specify a accelerator key for a control, add a tilde (~) in front of the character in the label for the control.</paragraph>
+<paragraph role="paragraph" id="par_id3153363" xml-lang="en-US" l10n="U">To specify a accelerator key for a control, add a tilde (~) in front of the character in the label for the control.</paragraph>
 </listitem>
 <listitem>
-<paragraph role="paragraph" id="par_id3152792" xml-lang="en-US" l10n="U" oldref="135">You can drag and drop controls from one document to another document. You can also copy and paste controls between documents. When you insert a control from another document, $[officename] analyzes the data source, content type, and content properties of the control so that the control fits the logical structure in the target document. For example, a control that displays contents from an address book continues to display the same contents after you copy the control to a different document. You can view these properties on the <emph>Data</emph> tab page of the <emph>Form properties</emph> dialog.</paragraph>
+<paragraph role="paragraph" id="par_id3152792" xml-lang="en-US" l10n="U">You can drag and drop controls from one document to another document. You can also copy and paste controls between documents. When you insert a control from another document, $[officename] analyzes the data source, content type, and content properties of the control so that the control fits the logical structure in the target document. For example, a control that displays contents from an address book continues to display the same contents after you copy the control to a different document. You can view these properties on the <emph>Data</emph> tab page of the <emph>Form properties</emph> dialog.</paragraph>
 </listitem>
 </list>
 <section id="Section3">
-<paragraph role="heading" id="hd_id3154411" xml-lang="en-US" level="2" l10n="CHG" oldref="24">Select<comment>controls and design bars</comment></paragraph>
+<paragraph role="heading" id="hd_id3154411" xml-lang="en-US" level="2" l10n="CHG">Select<comment>controls and design bars</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -110,7 +110,7 @@
 <image id="img_id3153516" src="res/commandimagelist/sc_drawselect.png" width="0.2228in" height="0.2228in"><alt id="alt_id3153516" xml-lang="en-US">Icon</alt></image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3150470" xml-lang="en-US" l10n="U" oldref="25">This icon switches the mouse pointer to the select mode, or deactivates this mode. The select mode is used to select the controls of the current form.</paragraph>
+<paragraph role="paragraph" id="par_id3150470" xml-lang="en-US" l10n="U">This icon switches the mouse pointer to the select mode, or deactivates this mode. The select mode is used to select the controls of the current form.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -124,7 +124,7 @@
 <section id="Section19">
 <bookmark xml-lang="en-US" branch="hid/.uno:Checkbox" id="bm_id8176164" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:CheckBox" id="bm_id3150751" localize="false"/>
-<paragraph role="heading" id="hd_id3146914" xml-lang="en-US" level="2" l10n="U" oldref="10">Check Box<comment>controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3146914" xml-lang="en-US" level="2" l10n="U">Check Box<comment>controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -132,7 +132,7 @@
 <image id="img_id3156380" src="res/commandimagelist/sc_checkbox.png" width="0.2228in" height="0.2228in"><alt id="alt_id3156380" xml-lang="en-US">Icon</alt></image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3153927" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid=".uno:CheckBox">Creates a check box.</ahelp> Check boxes allow you to activate or deactivate a function in a form.</paragraph>
+<paragraph role="paragraph" id="par_id3153927" xml-lang="en-US" l10n="U"><ahelp hid=".uno:CheckBox">Creates a check box.</ahelp> Check boxes allow you to activate or deactivate a function in a form.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -140,7 +140,7 @@
 <section id="Section16">
 <bookmark xml-lang="en-US" branch="hid/.uno:Edit" id="bm_id7355178" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:Edit" id="bm_id3153785" localize="false"/>
-<paragraph role="heading" id="hd_id3153794" xml-lang="en-US" level="2" l10n="U" oldref="16">Text Box<comment>controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3153794" xml-lang="en-US" level="2" l10n="U">Text Box<comment>controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -148,7 +148,7 @@
 <image id="img_id3153266" src="res/commandimagelist/sc_edit.png" width="0.2228in" height="0.2228in"><alt id="alt_id3153266" xml-lang="en-US">Icon</alt></image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3158444" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid=".uno:Edit">Creates a text box.</ahelp> Text boxes are fields in which the user can enter text. In a form, text boxes display data or allow for new data input.</paragraph>
+<paragraph role="paragraph" id="par_id3158444" xml-lang="en-US" l10n="U"><ahelp hid=".uno:Edit">Creates a text box.</ahelp> Text boxes are fields in which the user can enter text. In a form, text boxes display data or allow for new data input.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -156,7 +156,7 @@
 <section id="Section7">
 <bookmark xml-lang="en-US" branch="hid/.uno:FormattedField" id="bm_id6606960" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:FormattedField" id="bm_id3155526" localize="false"/>
-<paragraph role="heading" id="hd_id3151218" xml-lang="en-US" level="2" l10n="U" oldref="124">Formatted Field<comment>controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3151218" xml-lang="en-US" level="2" l10n="U">Formatted Field<comment>controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -165,16 +165,16 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3147547" xml-lang="en-US" l10n="U" oldref="125"><ahelp hid=".uno:FormattedField">Creates a formatted field.</ahelp> A formatted field is a text box in which you can define how the inputs and outputs are formatted, and which limiting values apply.</paragraph>
+<paragraph role="paragraph" id="par_id3147547" xml-lang="en-US" l10n="U"><ahelp hid=".uno:FormattedField">Creates a formatted field.</ahelp> A formatted field is a text box in which you can define how the inputs and outputs are formatted, and which limiting values apply.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="paragraph" id="par_id3155346" xml-lang="en-US" l10n="U" oldref="126">A formatted field has <link href="text/shared/02/01170002.xhp" name="special control properties">special control properties</link> (choose <emph>Format - Control</emph>).</paragraph>
+<paragraph role="paragraph" id="par_id3155346" xml-lang="en-US" l10n="U">A formatted field has <link href="text/shared/02/01170002.xhp" name="special control properties">special control properties</link> (choose <emph>Format - Control</emph>).</paragraph>
 </section>
 <section id="Section21">
 <bookmark xml-lang="en-US" branch="hid/.uno:Pushbutton" id="bm_id6486131" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:Pushbutton" id="bm_id3153878" localize="false"/>
-<paragraph role="heading" id="hd_id3148774" xml-lang="en-US" level="2" l10n="U" oldref="6">Push Button<comment>controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3148774" xml-lang="en-US" level="2" l10n="U">Push Button<comment>controls bar</comment></paragraph>
 <table id="tbl_id3154501">
 <tablerow>
 <tablecell>
@@ -183,8 +183,8 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3147046" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid=".uno:Pushbutton">Creates a push button.</ahelp> This function can be used to execute a command for a defined event, such as a mouse click.</paragraph>
-<paragraph role="paragraph" id="par_id3154731" xml-lang="en-US" l10n="U" oldref="138">You can apply text and graphics to these buttons.</paragraph>
+<paragraph role="paragraph" id="par_id3147046" xml-lang="en-US" l10n="U"><ahelp hid=".uno:Pushbutton">Creates a push button.</ahelp> This function can be used to execute a command for a defined event, such as a mouse click.</paragraph>
+<paragraph role="paragraph" id="par_id3154731" xml-lang="en-US" l10n="U">You can apply text and graphics to these buttons.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -192,7 +192,7 @@
 <section id="Section20">
 <bookmark xml-lang="en-US" branch="hid/.uno:Radiobutton" id="bm_id3862451" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:RadioButton" id="bm_id3153418" localize="false"/>
-<paragraph role="heading" id="hd_id3157844" xml-lang="en-US" level="2" l10n="U" oldref="8">Option Button<comment>controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3157844" xml-lang="en-US" level="2" l10n="U">Option Button<comment>controls bar</comment></paragraph>
 <table id="tbl_id3151318">
 <tablerow>
 <tablecell>
@@ -201,7 +201,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3149123" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid=".uno:RadioButton">Creates an option button.</ahelp> Option buttons enable the user to choose one of several options. Option buttons with the same functionality are given the same name (<link href="text/shared/02/01170101.xhp" name="Name"><emph>Name</emph></link>
+<paragraph role="paragraph" id="par_id3149123" xml-lang="en-US" l10n="U"><ahelp hid=".uno:RadioButton">Creates an option button.</ahelp> Option buttons enable the user to choose one of several options. Option buttons with the same functionality are given the same name (<link href="text/shared/02/01170101.xhp" name="Name"><emph>Name</emph></link>
 <emph>property</emph>). Normally, they are given a <link href="text/shared/02/01170000.xhp" name="group box">group box</link>.</paragraph>
 </tablecell>
 </tablerow>
@@ -210,7 +210,7 @@
 <section id="Section15">
 <bookmark xml-lang="en-US" branch="hid/.uno:ListBox" id="bm_id7238352" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:ListBox" id="bm_id3154475" localize="false"/>
-<paragraph role="heading" id="hd_id3156064" xml-lang="en-US" level="2" l10n="U" oldref="18">List Box<comment>controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3156064" xml-lang="en-US" level="2" l10n="U">List Box<comment>controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -219,7 +219,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3166428" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid=".uno:ListBox">Creates a list box.</ahelp> A list box lets users select an entry from a list. If the form is linked to a database and the database connection is active, the <link href="text/shared/02/01170900.xhp" name="List Box Wizard"><emph>List Box Wizard</emph></link> will automatically appear after the list box is inserted in the document. This wizard helps you create the list box.</paragraph>
+<paragraph role="paragraph" id="par_id3166428" xml-lang="en-US" l10n="U"><ahelp hid=".uno:ListBox">Creates a list box.</ahelp> A list box lets users select an entry from a list. If the form is linked to a database and the database connection is active, the <link href="text/shared/02/01170900.xhp" name="List Box Wizard"><emph>List Box Wizard</emph></link> will automatically appear after the list box is inserted in the document. This wizard helps you create the list box.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -227,7 +227,7 @@
 <section id="Section14">
 <bookmark xml-lang="en-US" branch="hid/.uno:Combobox" id="bm_id5504530" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:ComboBox" id="bm_id3156169" localize="false"/>
-<paragraph role="heading" id="hd_id3147171" xml-lang="en-US" level="2" l10n="U" oldref="20">Combo Box<comment>controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3147171" xml-lang="en-US" level="2" l10n="U">Combo Box<comment>controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -236,7 +236,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3149407" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid=".uno:ComboBox">Creates a combo box.</ahelp> A combo box is a single-line list box with a drop-down list from which users choose an option. You can assign the "read-only" property to the combo box so that users cannot enter other entries than those found in the list. If the form is bound to a database and the database connection is active, the <link href="text/shared/02/01170900.xhp" name="Combo Box Wizard"><emph>Combo Box Wizard</emph></link> will automatically appear after you insert the combo box in the document.</paragraph>
+<paragraph role="paragraph" id="par_id3149407" xml-lang="en-US" l10n="U"><ahelp hid=".uno:ComboBox">Creates a combo box.</ahelp> A combo box is a single-line list box with a drop-down list from which users choose an option. You can assign the "read-only" property to the combo box so that users cannot enter other entries than those found in the list. If the form is bound to a database and the database connection is active, the <link href="text/shared/02/01170900.xhp" name="Combo Box Wizard"><emph>Combo Box Wizard</emph></link> will automatically appear after you insert the combo box in the document.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -244,7 +244,7 @@
 <section id="Section18">
 <bookmark xml-lang="en-US" branch="hid/.uno:Label" id="bm_id7047484" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:Label" id="bm_id3154255" localize="false"/>
-<paragraph role="heading" id="hd_id3145618" xml-lang="en-US" level="2" l10n="U" oldref="12">Label Field<comment>controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3145618" xml-lang="en-US" level="2" l10n="U">Label Field<comment>controls bar</comment></paragraph>
 <table id="tbl_id3156712">
 <tablerow>
 <tablecell>
@@ -253,7 +253,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3148534" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid=".uno:Label">Creates a field for displaying text.</ahelp> These labels are only for displaying predefined text. Entries cannot be made in these fields.</paragraph>
+<paragraph role="paragraph" id="par_id3148534" xml-lang="en-US" l10n="U"><ahelp hid=".uno:Label">Creates a field for displaying text.</ahelp> These labels are only for displaying predefined text. Entries cannot be made in these fields.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -282,7 +282,7 @@
 </tablerow>
 </table>
 </section>
-<paragraph role="heading" id="hd_id3149436" xml-lang="en-US" level="2" l10n="U" oldref="134"><link href="text/shared/02/01170001.xhp" name="Context Menu Commands">Context Menu Commands</link></paragraph><comment>end of visible part of FORM CONTROLS file</comment>
+<paragraph role="heading" id="hd_id3149436" xml-lang="en-US" level="2" l10n="U"><link href="text/shared/02/01170001.xhp" name="Context Menu Commands">Context Menu Commands</link></paragraph><comment>end of visible part of FORM CONTROLS file</comment>
 <switch select="sys">
 <case select="HIDE_HERE"><comment>now the MORE CONTROLS</comment>
 <section id="more_controls">
@@ -409,7 +409,7 @@
 <section id="Section13">
 <bookmark xml-lang="en-US" branch="hid/.uno:Imagebutton" id="bm_id2102401" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:Imagebutton" id="bm_id3151373" localize="false"/>
-<paragraph role="heading" id="hd_id3153316" xml-lang="en-US" level="2" l10n="U" oldref="22">Image Button<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3153316" xml-lang="en-US" level="2" l10n="U">Image Button<comment>more controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -418,7 +418,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3148601" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid=".uno:Imagebutton">Creates a button displayed as an image.</ahelp> Aside from the graphic representation, an image button has the same properties as a "normal" button.</paragraph>
+<paragraph role="paragraph" id="par_id3148601" xml-lang="en-US" l10n="U"><ahelp hid=".uno:Imagebutton">Creates a button displayed as an image.</ahelp> Aside from the graphic representation, an image button has the same properties as a "normal" button.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -426,7 +426,7 @@
 <section id="Section12">
 <bookmark xml-lang="en-US" branch="hid/.uno:ImageControl" id="bm_id7383386" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:ImageControl" id="bm_id3150947" localize="false"/>
-<paragraph role="heading" id="hd_id3159171" xml-lang="en-US" level="2" l10n="U" oldref="49">Image Control<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3159171" xml-lang="en-US" level="2" l10n="U">Image Control<comment>more controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -435,8 +435,8 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3149596" xml-lang="en-US" l10n="U" oldref="50"><ahelp hid=".uno:ImageControl">Creates an image control. It can only be used to add images from a database.</ahelp> In the form document, double-click one of these controls to open the <emph>Insert Graphic</emph> dialog to insert the image. There is also a context menu (not in design mode) with commands for inserting and deleting the image.</paragraph>
-<paragraph role="paragraph" id="par_id3150318" xml-lang="en-US" l10n="U" oldref="70">Images from a database can be displayed in a form, and new images can be inserted in the database as long as the image control is not write-protected. The control must refer to a database field of the image type. Therefore, enter the data field into the properties window on the <emph>Data</emph> tab page.</paragraph>
+<paragraph role="paragraph" id="par_id3149596" xml-lang="en-US" l10n="U"><ahelp hid=".uno:ImageControl">Creates an image control. It can only be used to add images from a database.</ahelp> In the form document, double-click one of these controls to open the <emph>Insert Graphic</emph> dialog to insert the image. There is also a context menu (not in design mode) with commands for inserting and deleting the image.</paragraph>
+<paragraph role="paragraph" id="par_id3150318" xml-lang="en-US" l10n="U">Images from a database can be displayed in a form, and new images can be inserted in the database as long as the image control is not write-protected. The control must refer to a database field of the image type. Therefore, enter the data field into the properties window on the <emph>Data</emph> tab page.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -444,7 +444,7 @@
 <section id="Section10">
 <bookmark xml-lang="en-US" branch="hid/.uno:DateField" id="bm_id4810502" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:DateField" id="bm_id3145656" localize="false"/>
-<paragraph role="heading" id="hd_id3156040" xml-lang="en-US" level="2" l10n="U" oldref="29">Date Field<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3156040" xml-lang="en-US" level="2" l10n="U">Date Field<comment>more controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -453,18 +453,18 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3151312" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid=".uno:DateField">Creates a date field.</ahelp> If the form is linked to a database, the date values can be adopted from the database.</paragraph>
+<paragraph role="paragraph" id="par_id3151312" xml-lang="en-US" l10n="U"><ahelp hid=".uno:DateField">Creates a date field.</ahelp> If the form is linked to a database, the date values can be adopted from the database.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="paragraph" id="par_id3151302" xml-lang="en-US" l10n="U" oldref="131">If you assign the "Dropdown" property to the date field, the user can open a calendar to select a date under the date field. This also applies to a date field within a Table Control field.</paragraph>
-<paragraph role="tip" id="par_id3154395" xml-lang="en-US" l10n="U" oldref="63">Date fields can be easily edited by the user with the up arrow and down arrow keys. Depending on the cursor position, the day, month, or the year is can be increased or decreased using the arrow keys.</paragraph>
-<paragraph role="paragraph" id="par_id3153112" xml-lang="en-US" l10n="U" oldref="132"><link href="text/shared/02/01170003.xhp" name="Specific Remarks on Date Fields">Specific Remarks on Date Fields</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3151302" xml-lang="en-US" l10n="U">If you assign the "Dropdown" property to the date field, the user can open a calendar to select a date under the date field. This also applies to a date field within a Table Control field.</paragraph>
+<paragraph role="tip" id="par_id3154395" xml-lang="en-US" l10n="U">Date fields can be easily edited by the user with the up arrow and down arrow keys. Depending on the cursor position, the day, month, or the year is can be increased or decreased using the arrow keys.</paragraph>
+<paragraph role="paragraph" id="par_id3153112" xml-lang="en-US" l10n="U"><link href="text/shared/02/01170003.xhp" name="Specific Remarks on Date Fields">Specific Remarks on Date Fields</link>.</paragraph>
 </section>
 <section id="Section9">
 <bookmark xml-lang="en-US" branch="hid/.uno:TimeField" id="bm_id4739584" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:TimeField" id="bm_id3154541" localize="false"/>
-<paragraph role="heading" id="hd_id3152369" xml-lang="en-US" level="2" l10n="U" oldref="31">Time Field<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3152369" xml-lang="en-US" level="2" l10n="U">Time Field<comment>more controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -473,16 +473,16 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3155399" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid=".uno:TimeField">Creates a time field.</ahelp> If the form is linked to a database, the time values for the form can be adopted from the database.</paragraph>
+<paragraph role="paragraph" id="par_id3155399" xml-lang="en-US" l10n="U"><ahelp hid=".uno:TimeField">Creates a time field.</ahelp> If the form is linked to a database, the time values for the form can be adopted from the database.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="tip" id="par_id3154764" xml-lang="en-US" l10n="U" oldref="64">Time fields can be easily edited by the user with the up and down arrow keys. Depending on the cursor position, the hours, minutes, or the seconds are increased or decreased using the arrow keys.</paragraph>
+<paragraph role="tip" id="par_id3154764" xml-lang="en-US" l10n="U">Time fields can be easily edited by the user with the up and down arrow keys. Depending on the cursor position, the hours, minutes, or the seconds are increased or decreased using the arrow keys.</paragraph>
 </section>
 <section id="Section11">
 <bookmark xml-lang="en-US" branch="hid/.uno:FileControl" id="bm_id1460134" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:FileControl" id="bm_id3154859" localize="false"/>
-<paragraph role="heading" id="hd_id3156186" xml-lang="en-US" level="2" l10n="U" oldref="27">File Selection<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3156186" xml-lang="en-US" level="2" l10n="U">File Selection<comment>more controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -491,7 +491,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3149438" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid=".uno:FileControl">Creates a button that enables file selection.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3149438" xml-lang="en-US" l10n="U"><ahelp hid=".uno:FileControl">Creates a button that enables file selection.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -499,7 +499,7 @@
 <section id="Section8">
 <bookmark xml-lang="en-US" branch="hid/.uno:NumericField" id="bm_id3301501" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:NumericField" id="bm_id3154211" localize="false"/>
-<paragraph role="heading" id="hd_id3154652" xml-lang="en-US" level="2" l10n="U" oldref="33">Numerical Field<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3154652" xml-lang="en-US" level="2" l10n="U">Numerical Field<comment>more controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -508,7 +508,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3145601" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid=".uno:NumericField">Creates a numerical field.</ahelp> If the form is linked to a database, the numerical values in the form can be adopted from the database.</paragraph>
+<paragraph role="paragraph" id="par_id3145601" xml-lang="en-US" l10n="U"><ahelp hid=".uno:NumericField">Creates a numerical field.</ahelp> If the form is linked to a database, the numerical values in the form can be adopted from the database.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -516,7 +516,7 @@
 <section id="Section6">
 <bookmark xml-lang="en-US" branch="hid/.uno:CurrencyField" id="bm_id9766539" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:CurrencyField" id="bm_id3151327" localize="false"/>
-<paragraph role="heading" id="hd_id3153612" xml-lang="en-US" level="2" l10n="U" oldref="35">Currency Field<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3153612" xml-lang="en-US" level="2" l10n="U">Currency Field<comment>more controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -525,7 +525,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3145115" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid=".uno:CurrencyField">Creates a currency field.</ahelp> If the form is linked to a database, the currency field contents for in the form can be adopted from the database.</paragraph>
+<paragraph role="paragraph" id="par_id3145115" xml-lang="en-US" l10n="U"><ahelp hid=".uno:CurrencyField">Creates a currency field.</ahelp> If the form is linked to a database, the currency field contents for in the form can be adopted from the database.</paragraph>
 </tablecell>
 </tablerow>
 </table>
@@ -533,7 +533,7 @@
 <section id="Section5">
 <bookmark xml-lang="en-US" branch="hid/.uno:PatternField" id="bm_id1317017" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:PatternField" id="bm_id3155746" localize="false"/>
-<paragraph role="heading" id="hd_id3148825" xml-lang="en-US" level="2" l10n="U" oldref="37">Pattern Field<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3148825" xml-lang="en-US" level="2" l10n="U">Pattern Field<comment>more controls bar</comment></paragraph>
 <table id="">
 <tablerow>
 <tablecell>
@@ -542,16 +542,16 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3150122" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid=".uno:PatternField">Creates a pattern field.</ahelp> Pattern fields consist of an edit mask and a literal mask. The edit mask determines which data can be entered. The literal mask determines the contents of the pattern field when loading the form.</paragraph>
+<paragraph role="paragraph" id="par_id3150122" xml-lang="en-US" l10n="U"><ahelp hid=".uno:PatternField">Creates a pattern field.</ahelp> Pattern fields consist of an edit mask and a literal mask. The edit mask determines which data can be entered. The literal mask determines the contents of the pattern field when loading the form.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="note" id="par_id3152947" xml-lang="en-US" l10n="U" oldref="67">Please note that pattern fields are not exported into HTML format.</paragraph>
+<paragraph role="note" id="par_id3152947" xml-lang="en-US" l10n="U">Please note that pattern fields are not exported into HTML format.</paragraph>
 </section>
 <section id="Section17">
 <bookmark xml-lang="en-US" branch="hid/.uno:Groupbox" id="bm_id3430892" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:GroupBox" id="bm_id3147364" localize="false"/>
-<paragraph role="heading" id="hd_id3145147" xml-lang="en-US" level="2" l10n="U" oldref="14">Group Box<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3145147" xml-lang="en-US" level="2" l10n="U">Group Box<comment>more controls bar</comment></paragraph>
 <table id="tbl_id3154020">
 <tablerow>
 <tablecell>
@@ -560,20 +560,20 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3154572" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid=".uno:GroupBox">Creates a frame to visually group several controls.</ahelp> Group boxes allow you to group option buttons in a frame.</paragraph>
-<paragraph role="paragraph" id="par_id3148394" xml-lang="en-US" l10n="U" oldref="72">If you insert a group frame into the document, the <link href="text/shared/autopi/01120000.xhp" name="Group Element Wizard">Group Element Wizard</link> starts, which allows you to easily create an option group.</paragraph>
+<paragraph role="paragraph" id="par_id3154572" xml-lang="en-US" l10n="U"><ahelp hid=".uno:GroupBox">Creates a frame to visually group several controls.</ahelp> Group boxes allow you to group option buttons in a frame.</paragraph>
+<paragraph role="paragraph" id="par_id3148394" xml-lang="en-US" l10n="U">If you insert a group frame into the document, the <link href="text/shared/autopi/01120000.xhp" name="Group Element Wizard">Group Element Wizard</link> starts, which allows you to easily create an option group.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="paragraph" id="par_id3150567" xml-lang="en-US" l10n="U" oldref="65">
+<paragraph role="paragraph" id="par_id3150567" xml-lang="en-US" l10n="U">
 <emph>Note:</emph> When you drag a group box over already existing controls and then want to select a control, you have to first open the context menu of the group box and choose <emph>Arrange - Send to Back</emph>. Then select the control while pressing <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl</defaultinline></switchinline>.</paragraph>
-<paragraph role="note" id="par_id3145615" xml-lang="en-US" l10n="U" oldref="66">Group boxes are used only for a visual effect. A functional grouping of option fields can be made through the name definition: under the <link href="text/shared/02/01170101.xhp" name="Name"><emph>Name</emph></link> properties of all option fields, enter the same name in order to group them.</paragraph>
+<paragraph role="note" id="par_id3145615" xml-lang="en-US" l10n="U">Group boxes are used only for a visual effect. A functional grouping of option fields can be made through the name definition: under the <link href="text/shared/02/01170101.xhp" name="Name"><emph>Name</emph></link> properties of all option fields, enter the same name in order to group them.</paragraph>
 </section>
 <section id="Section4">
 <bookmark xml-lang="en-US" branch="hid/.uno:Grid" id="bm_id74623" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:Grid" id="bm_id3147372" localize="false"/>
-<paragraph role="heading" id="hd_id3157996" xml-lang="en-US" level="2" l10n="U" oldref="39">Table Control<comment>more controls bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3157996" xml-lang="en-US" level="2" l10n="U">Table Control<comment>more controls bar</comment></paragraph>
 <table id="tbl_id3153023">
 <tablerow>
 <tablecell>
@@ -582,11 +582,11 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3154579" xml-lang="en-US" l10n="CHG" oldref="40"><ahelp hid=".">Creates a table control to display a database table.</ahelp> If you create a new table control, the <link href="text/shared/02/01170800.xhp" name="Table Element Wizard">Table Element Wizard</link> appears.</paragraph>
+<paragraph role="paragraph" id="par_id3154579" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Creates a table control to display a database table.</ahelp> If you create a new table control, the <link href="text/shared/02/01170800.xhp" name="Table Element Wizard">Table Element Wizard</link> appears.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="paragraph" id="par_id3154697" xml-lang="en-US" l10n="U" oldref="133"><link href="text/shared/02/01170004.xhp" name="Special Information about Table Controls">Special information about Table Controls</link>.</paragraph>
+<paragraph role="paragraph" id="par_id3154697" xml-lang="en-US" l10n="U"><link href="text/shared/02/01170004.xhp" name="Special Information about Table Controls">Special information about Table Controls</link>.</paragraph>
 </section>
 <section id="Section24">
 <bookmark xml-lang="en-US" branch="hid/.uno:NavigationBar" id="bm_id8951689" localize="false"/>
@@ -614,7 +614,7 @@
 <section id="Section1">
 <bookmark xml-lang="en-US" branch="hid/.uno:AutoControlFocus" id="bm_id8170669" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:AutoControlFocus" id="bm_id3149198" localize="false"/>
-<paragraph role="heading" id="hd_id3146815" xml-lang="en-US" level="2" l10n="U" oldref="136">Automatic Control Focus<comment>design bar</comment></paragraph>
+<paragraph role="heading" id="hd_id3146815" xml-lang="en-US" level="2" l10n="U">Automatic Control Focus<comment>design bar</comment></paragraph>
 <table id="tbl_id3154633">
 <tablerow>
 <tablecell>
@@ -623,7 +623,7 @@
 </image></paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="paragraph" id="par_id3109848" xml-lang="en-US" l10n="U" oldref="137"><ahelp hid=".uno:AutoControlFocus">If <emph>Automatic Control Focus</emph> is activated, the first form control will be selected when you open the document. If the button is not activated, the text will be selected after opening. The <link href="text/shared/02/01170300.xhp" name="Tab Order">Tab Order</link> that you have specified determines which is the first form control.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3109848" xml-lang="en-US" l10n="U"><ahelp hid=".uno:AutoControlFocus">If <emph>Automatic Control Focus</emph> is activated, the first form control will be selected when you open the document. If the button is not activated, the text will be selected after opening. The <link href="text/shared/02/01170300.xhp" name="Tab Order">Tab Order</link> that you have specified determines which is the first form control.</ahelp></paragraph>
 </tablecell>
 </tablerow>
 </table>

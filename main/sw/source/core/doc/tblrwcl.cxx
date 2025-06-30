@@ -1945,7 +1945,7 @@ void lcl_CalcNewWidths( const _FndLines& rFndLines, _CpyPara& rPara )
                         else
                             break;
                     }
-                    // nPos is now the left border of the first selceted box
+                    // nPos is now the left border of the first selected box
                     if( rPara.nMinLeft > nPos )
                         rPara.nMinLeft = nPos;
                     nBoxCount = pFndLine->GetBoxes().Count();
@@ -2512,7 +2512,7 @@ sal_Bool lcl_LineSetHeadCondColl( const SwTableLine*& rpLine, void* )
 	return sal_True;
 }
 
-/*  */
+/* */
 
 SwTwips lcl_GetDistance( SwTableBox* pBox, sal_Bool bLeft )
 {
@@ -2732,7 +2732,7 @@ sal_Bool lcl_SetOtherBoxWidth( SwTableLine* pLine, CR_SetBoxWidth& rParam,
 	return sal_True;
 }
 
-/**/
+/* */
 
 sal_Bool lcl_InsSelBox( SwTableLine* pLine, CR_SetBoxWidth& rParam,
 							SwTwips nDist, sal_Bool bCheck )
@@ -3473,7 +3473,7 @@ sal_Bool lcl_DelOtherBox( SwTableLine* , CR_SetBoxWidth& , SwTwips , sal_Bool )
 	return sal_True;
 }
 
-/**/
+/* */
 
 void lcl_AjustLines( SwTableLine* pLine, CR_SetBoxWidth& rParam )
 {
@@ -4061,7 +4061,7 @@ sal_Bool SwTable::SetColWidth( SwTableBox& rAktBox, sal_uInt16 eType,
 
 	return bRet;
 }
-/*  */
+/* */
 
 _FndBox* lcl_SaveInsDelData( CR_SetLineHeight& rParam, SwUndo** ppUndo,
 								SwTableSortBoxes& rTmpLst )
@@ -4558,7 +4558,7 @@ sal_Bool SwTable::SetRowHeight( SwTableBox& rAktBox, sal_uInt16 eType,
 	return bRet;
 }
 
-/*  */
+/* */
 
 SwFrmFmt* SwShareBoxFmt::GetFormat( long nWidth ) const
 {

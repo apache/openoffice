@@ -110,7 +110,7 @@ void __EXPORT ScViewFunctionSet::BeginDrag()
 		if ( rMark.IsMarked() && !rMark.IsMultiMarked() )
 		{
 			ScDocument* pClipDoc = new ScDocument( SCDOCMODE_CLIP );
-			// bApi = sal_True -> no error mesages
+			// bApi = sal_True -> no error messages
 			sal_Bool bCopied = pViewData->GetView()->CopyToClip( pClipDoc, sal_False, sal_True );
 			if ( bCopied )
 			{

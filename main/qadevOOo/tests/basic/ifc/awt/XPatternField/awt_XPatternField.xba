@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -36,7 +36,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.awt.XPatternField
 '*************************************************************************
 On Error Goto ErrHndl
@@ -55,7 +55,7 @@ On Error Goto ErrHndl
     bOK = bOK AND (eMask &lt;&gt; eMaskOld) AND (lMask &lt;&gt; lMaskOld)
     Test.MethodTested("setMasks()", bOK)
     Test.MethodTested("getMasks()", bOK)
-    
+
     Test.StartMethod("getString()")
     Test.StartMethod("setString()")
     bOK = true
@@ -67,13 +67,13 @@ On Error Goto ErrHndl
     bOK = bOK AND (oldVal &lt;&gt; newVal)
     Test.MethodTested("setString()", bOK)
     Test.MethodTested("getString()", bOK)
-    
+
     Test.StartMethod("isStrictFormat()")
     Test.StartMethod("setStrictFormat()")
     bOK = true
     oldVal = oObj.isStrictFormat()
     Out.Log("value before: "+oldVal)
-    if (oldVal) then 
+    if (oldVal) then
         oObj.setStrictFormat(false)
     else
         oObj.setStrictFormat(true)
@@ -83,7 +83,7 @@ On Error Goto ErrHndl
     bOK = bOK AND (oldVal &lt;&gt; newVal)
     Test.MethodTested("setStrictFormat()", bOK)
     Test.MethodTested("isStrictFormat()", bOK)
-    
+
 
 Exit Sub
 ErrHndl:

@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -36,7 +36,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' SERVICE: 
+' SERVICE:
 ' com.sun.star.form.component.DatabaseListBox
 '*************************************************************************
 On Error Goto ErrHndl
@@ -47,19 +47,19 @@ On Error Goto ErrHndl
     oldVal = oObj.BoundColumn
     Test.StartMethod("BoundColumn")
     Out.Log("value before: "+oldVal)
-    
-    if (oldVal &lt;&gt; 30) then 
+
+    if (oldVal &lt;&gt; 30) then
         oObj.BoundColumn = 30
     else
         oObj.BoundColumn = 35
     endif
-    
+
     newVal = oObj.BoundColumn
     Out.Log("value after: "+newVal)
-    
+
     bOK = bOK AND (newVal &lt;&gt; oldVal)
     Test.MethodTested("BoundColumn", bOK)
-    
+
     PropertyTester.TestProperty("ListSourceType")
 
 Exit Sub

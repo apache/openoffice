@@ -160,7 +160,7 @@ sal_uLong TIFFReader::DataTypeSize()
 	switch ( nDataType )
 	{
 		case 1 : 			// BYTE
-		case 2 : 			// ACSII
+		case 2 : 			// ASCII
 		case 6 :			// SIGNED Byte
 		case 7 :			// UNDEFINED
 			nSize = 1;

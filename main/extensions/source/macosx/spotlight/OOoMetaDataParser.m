@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ static NSDictionary *metaXML2MDIKeys;
 + (void)initialize
 {
     static BOOL isInitialized = NO;
-    
+
     if (isInitialized == NO) {
         //set up the meta elements with only one value
         NSMutableSet *temp = [NSMutableSet new];
@@ -40,7 +40,7 @@ static NSDictionary *metaXML2MDIKeys;
         [temp addObject:@"dc:description"];
         [temp addObject:@"meta:user-defined"];
         singleValueXMLElements = [[NSSet setWithSet:temp] retain];
-        
+
         //set up the meta elements that can have more than one value
         [temp removeAllObjects];
         [temp addObject:@"dc:subject"];
@@ -49,7 +49,7 @@ static NSDictionary *metaXML2MDIKeys;
         [temp addObject:@"dc:creator"];
         multiValueXMLElements = [[NSSet setWithSet:temp] retain];
         [temp release];
-        
+
         //set up the map to store the values with the correct MDI keys
         NSMutableDictionary *tempDict = [NSMutableDictionary new];
         [tempDict setObject:(NSString*)kMDItemTitle forKey:@"dc:title"];
@@ -64,7 +64,7 @@ static NSDictionary *metaXML2MDIKeys;
         [tempDict setObject:@"org_openoffice_opendocument_custominfo4" forKey:@"Info 4"];
         metaXML2MDIKeys = [[NSDictionary dictionaryWithDictionary:tempDict] retain];
         [tempDict release];
-        
+
         isInitialized = YES;
     }
 }
@@ -75,30 +75,30 @@ static NSDictionary *metaXML2MDIKeys;
         shouldReadCharacters = NO;
 //        currentElement = nil;
         textCurrentElement = nil;
-        
+
         return self;
     }
-    
+
     return nil;
 }
 
 - (void)parseXML:(NSData*)data intoDictionary:(NSMutableDictionary*)dict
 {
     metaValues = dict;
-    
+
     //NSLog(@"data: %@ %d", data, [data length]);
-        
+
     //init parser settings
     shouldReadCharacters = NO;
-    
+
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
-    
+
     [parser setDelegate:self];
     [parser setShouldResolveExternalEntities:NO];
     [parser parse];
-    
+
     [parser release];
-    
+
     //NSLog(@"finished parsing meta");
 }
 
@@ -114,7 +114,7 @@ static NSDictionary *metaXML2MDIKeys;
         shouldReadCharacters = NO;
         return;
     }
-    
+
     if (shouldReadCharacters == YES) {
         textCurrentElement = [NSMutableString new];
         isCustom = [elementName isEqualToString:@"meta:user-defined"];
@@ -127,7 +127,7 @@ static NSDictionary *metaXML2MDIKeys;
     //NSLog(@"start element %@", elementName);
 }
 
-- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName 
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
 //    NSLog(@"</%@>", elementName);
     if (shouldReadCharacters == YES) {
@@ -138,11 +138,11 @@ static NSDictionary *metaXML2MDIKeys;
             mdiName = (NSString*)[metaXML2MDIKeys objectForKey:elementName];
         }
         //NSLog(@"mdiName: %@", mdiName);
-        
+
         if (mdiName == nil) {
             return;
         }
-        
+
         if ([singleValueXMLElements containsObject:elementName] == YES) {
             [metaValues setObject:textCurrentElement forKey:mdiName];
         } else {
@@ -165,7 +165,7 @@ static NSDictionary *metaXML2MDIKeys;
             [customAttribute release];
         }
     }
-    
+
     //cleanup part 2
     shouldReadCharacters = NO;
     isCustom = NO;
@@ -177,18 +177,18 @@ static NSDictionary *metaXML2MDIKeys;
     if (shouldReadCharacters == NO) {
         return;
     }
-    
-    // this delegate method might be called several times for a single element, 
+
+    // this delegate method might be called several times for a single element,
     // so we have to collect the received data
     [textCurrentElement appendString:string];
-    
+
     //NSLog(@"chars read: %@", string);
 }
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
 {
     //NSLog(@"parsing finished with error");
-    NSLog([NSString stringWithFormat:@"Error %i, Description: %@, Line: %i, Column: %i", [parseError code], 
+    NSLog([NSString stringWithFormat:@"Error %i, Description: %@, Line: %i, Column: %i", [parseError code],
         [[parser parserError] localizedDescription], [parser lineNumber],
         [parser columnNumber]]);
 }

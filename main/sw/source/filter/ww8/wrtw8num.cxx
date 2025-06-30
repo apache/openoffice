@@ -24,7 +24,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #include <hintids.hxx>
 #include <vcl/font.hxx>
@@ -629,7 +628,7 @@ void WW8Export::OutListNamesTab()
     pFib->lcbSttbListNames = pTableStrm->Tell() - pFib->fcSttbListNames;
 }
 
-/*  */
+/* */
 
 // old WW95-Code
 

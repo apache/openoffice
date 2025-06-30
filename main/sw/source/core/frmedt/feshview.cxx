@@ -328,7 +328,7 @@ sal_Bool SwFEShell::MoveAnchor( sal_uInt16 nDir )
         switch ( nAnchorId ) {
             case FLY_AT_PAGE:
             {
-                ASSERT( pOld->IsPageFrm(), "Wrong anchor, page exspected." );
+                ASSERT( pOld->IsPageFrm(), "Wrong anchor, page expected." );
                 if( SW_MOVE_UP == nDir )
                     pNew = pOld->GetPrev();
                 else if( SW_MOVE_DOWN == nDir )
@@ -342,7 +342,7 @@ sal_Bool SwFEShell::MoveAnchor( sal_uInt16 nDir )
             }
             case FLY_AT_CHAR:
             {
-                ASSERT( pOld->IsCntntFrm(), "Wrong anchor, page exspected." );
+                ASSERT( pOld->IsCntntFrm(), "Wrong anchor, page expected." );
                 if( SW_MOVE_LEFT == nDir || SW_MOVE_RIGHT == nDir )
                 {
                     SwPosition *pPos = (SwPosition*)aAnch.GetCntntAnchor();
@@ -376,7 +376,7 @@ sal_Bool SwFEShell::MoveAnchor( sal_uInt16 nDir )
             } // no break!
             case FLY_AT_PARA:
             {
-                ASSERT( pOld->IsCntntFrm(), "Wrong anchor, page exspected." );
+                ASSERT( pOld->IsCntntFrm(), "Wrong anchor, page expected." );
                 if( SW_MOVE_UP == nDir )
                     pNew = pOld->FindPrev();
                 else if( SW_MOVE_DOWN == nDir )
@@ -402,7 +402,7 @@ sal_Bool SwFEShell::MoveAnchor( sal_uInt16 nDir )
             }
             case FLY_AT_FLY:
             {
-                ASSERT( pOld->IsFlyFrm(), "Wrong anchor, fly frame exspected.");
+                ASSERT( pOld->IsFlyFrm(), "Wrong anchor, fly frame expected.");
                 SwPageFrm* pPage = pOld->FindPageFrm();
                 ASSERT( pPage, "Where's my page?" );
                 SwFlyFrm* pNewFly = NULL;
@@ -3064,11 +3064,11 @@ const Color SwFEShell::GetShapeBackgrd() const
                 // determine page frame of the frame the shape is anchored.
                 const SwFrm* pAnchorFrm =
                         static_cast<SwDrawContact*>(GetUserCall(pSdrObj))->GetAnchorFrm( pSdrObj );
-                ASSERT( pAnchorFrm, "inconsistent modell - no anchor at shape!");
+                ASSERT( pAnchorFrm, "inconsistent model - no anchor at shape!");
                 if ( pAnchorFrm )
                 {
                     const SwPageFrm* pPageFrm = pAnchorFrm->FindPageFrm();
-                    ASSERT( pPageFrm, "inconsistent modell - no page!");
+                    ASSERT( pPageFrm, "inconsistent model - no page!");
                     if ( pPageFrm )
                     {
                         aRetColor = pPageFrm->GetDrawBackgrdColor();
@@ -3116,11 +3116,11 @@ bool SwFEShell::IsShapeDefaultHoriTextDirR2L() const
                 // determine page frame of the frame the shape is anchored.
                 const SwFrm* pAnchorFrm =
                         static_cast<SwDrawContact*>(GetUserCall(pSdrObj))->GetAnchorFrm( pSdrObj );
-                ASSERT( pAnchorFrm, "inconsistent modell - no anchor at shape!");
+                ASSERT( pAnchorFrm, "inconsistent model - no anchor at shape!");
                 if ( pAnchorFrm )
                 {
                     const SwPageFrm* pPageFrm = pAnchorFrm->FindPageFrm();
-                    ASSERT( pPageFrm, "inconsistent modell - no page!");
+                    ASSERT( pPageFrm, "inconsistent model - no page!");
                     if ( pPageFrm )
                     {
                         bRet = pPageFrm->IsRightToLeft() ? true : false;

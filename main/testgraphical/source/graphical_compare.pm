@@ -1,7 +1,7 @@
 package graphical_compare;
 
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -9,16 +9,16 @@ package graphical_compare;
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -98,7 +98,7 @@ sub getOOoRunnerClasspath()
 
     if (! -d $sSourceRoot )
     {
-        log_print( "SourceRoot not found, search it in '$sSourceRoot'\n");        
+        log_print( "SourceRoot not found, search it in '$sSourceRoot'\n");
         return "";
     }
 
@@ -108,8 +108,8 @@ sub getOOoRunnerClasspath()
     my $sJurtPath    = $sSourceRootBin;
     my $sJuhPath     = $sSourceRootBin;
     my $sJavaUnoPath = $sSourceRootBin;
-    
-    my $sOOoRunnerClasspath = 
+
+    my $sOOoRunnerClasspath =
         appendPath( $sRidlPath,      "ridl.jar") . getJavaPathSeparator() .
         appendPath( $sUnoilPath,     "unoil.jar") . getJavaPathSeparator() .
         appendPath( $sJurtPath,      "jurt.jar") . getJavaPathSeparator() .
@@ -178,7 +178,7 @@ sub searchForReference($)
     {
         return 0;
     }
-    return 1;    
+    return 1;
 }
 # ------------------------------------------------------------------------------
 
@@ -228,7 +228,7 @@ sub SingleDocumentCompare($$$$$$)
     # ------------------------------------------------------------------------------
     # create postscript or pdf from second installed office
     # ------------------------------------------------------------------------------
-    
+
     my $sPathesIni = appendPath(getProjectOutput(), "pathes.ini");
     my $gspath = getFromPathes($sPathesIni, "gs.path");
     my $gsexe = getFromPathes($sPathesIni, "gs.exe");
@@ -243,7 +243,7 @@ sub SingleDocumentCompare($$$$$$)
         my $sInputPath = $sDocumentPoolPath;
         $sInputPath = appendPath($sInputPath, $sDocumentPool);
         $sInputPath = appendPath($sInputPath, $sDocumentName);
-        
+
         if (! -f $sInputPath )
         {
             $nConvwatchFailed = 1;
@@ -298,13 +298,13 @@ sub SingleDocumentCompare($$$$$$)
                 }
 
                 $sParams .= " -cp " . $sOOoRunnerClasspath .
-                    " org.openoffice.Runner" . 
-                    " -TimeOut $nTimeOut" . 
+                    " org.openoffice.Runner" .
+                    " -TimeOut $nTimeOut" .
                     " -tb java_complex" .
                     " -ini $sPropertyFile" .
-                    " -o graphical.PostscriptCreator";                
+                    " -o graphical.PostscriptCreator";
                 # $sParams .= " -cs pipe,name=$USER";
-                
+
                 # $sDebug = "-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9001,suspend=y";
                 my $err = calljava(getJavaExecutable(), $sParams, $sDebug);
                 $sDebug = "";
@@ -347,12 +347,12 @@ sub SingleDocumentCompare($$$$$$)
             print("]\n");
             return $nConvwatchFailed;
         }
-       
+
 
         # ------------------------------------------------------------------------------
         # create jpeg from postscript or pdf from second installed office
         # ------------------------------------------------------------------------------
-        
+
         if ($nConvwatchFailed == 0)
         {
             log_print("----- CREATE JPEG FROM POSTSCRIPT OR PDF FROM RUNNING OFFICE -----\n");
@@ -363,8 +363,8 @@ sub SingleDocumentCompare($$$$$$)
             my $sOutputPath = getProjectOutput();
 
             my $sParams = "-cp " . $sOOoRunnerClasspath .
-                " org.openoffice.Runner" . 
-                " -TimeOut $nTimeOut" . 
+                " org.openoffice.Runner" .
+                " -TimeOut $nTimeOut" .
                 " -tb java_complex" .
                 " -DOC_COMPARATOR_INPUT_PATH " . quoteIfNeed($sInputPath) .
                 " -DOC_COMPARATOR_OUTPUT_PATH "  . quoteIfNeed($sOutputPath) .
@@ -380,7 +380,7 @@ sub SingleDocumentCompare($$$$$$)
             {
                 $sParams .= " -gs.exe $gsexe";
             }
-            
+
             # $sDebug = "-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9001,suspend=y";
             my $err = calljava(getJavaExecutable(), $sParams, $sDebug);
             $sDebug = "";
@@ -397,7 +397,7 @@ sub SingleDocumentCompare($$$$$$)
     # ------------------------------------------------------------------------------
     # create jpeg from postscript or pdf from references
     # ------------------------------------------------------------------------------
-        
+
     if ($nConvwatchFailed == 0)
     {
         log_print("----- CREATE JPEG FROM POSTSCRIPT OR PDF FROM REFERENCE -----\n");
@@ -405,7 +405,7 @@ sub SingleDocumentCompare($$$$$$)
         # start OOoRunner
         my $sInputPath = appendPath(getProjectRoot(), "references");
         $sInputPath = appendPath($sInputPath, getEnvironment());
-        $sInputPath = appendPath($sInputPath, $sDocumentPool);     
+        $sInputPath = appendPath($sInputPath, $sDocumentPool);
         $sInputPath = appendPath($sInputPath, $sDocumentName);
 
         my $err = searchForReference($sInputPath);
@@ -416,7 +416,7 @@ sub SingleDocumentCompare($$$$$$)
         }
         else
         {
-            my $sOutputPath = getProjectOutputReference();      
+            my $sOutputPath = getProjectOutputReference();
             rmkdir $sOutputPath;
 
             my $sIndexFile = appendPath($sOutputPath, "index.ini");
@@ -431,8 +431,8 @@ sub SingleDocumentCompare($$$$$$)
                 }
             }
             my $sParams = "-cp " . $sOOoRunnerClasspath .
-                " org.openoffice.Runner" . 
-                " -TimeOut $nTimeOut" . 
+                " org.openoffice.Runner" .
+                " -TimeOut $nTimeOut" .
                 " -tb java_complex" .
                 " -DOC_COMPARATOR_INPUT_PATH " . quoteIfNeed($sInputPath) .
                 " -DOC_COMPARATOR_OUTPUT_PATH "  . quoteIfNeed($sOutputPath) .
@@ -448,7 +448,7 @@ sub SingleDocumentCompare($$$$$$)
             {
                 $sParams .= " -gs.exe $gsexe";
             }
-            
+
             # $sDebug = "-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9001,suspend=y";
             my $err = calljava(getJavaExecutable(), $sParams, $sDebug);
             $sDebug = "";
@@ -464,7 +464,7 @@ sub SingleDocumentCompare($$$$$$)
     # ------------------------------------------------------------------------------
     # compare JPEGs
     # ------------------------------------------------------------------------------
-    
+
     if ($nConvwatchFailed == 0)
     {
         log_print("----- COMPARE JPEGS -----\n");
@@ -474,19 +474,19 @@ sub SingleDocumentCompare($$$$$$)
 
         my $sParams = "-Xmx512m" .
             " -cp " . $sOOoRunnerClasspath .
-            " org.openoffice.Runner" . 
-            " -TimeOut $nTimeOut" . 
+            " org.openoffice.Runner" .
+            " -TimeOut $nTimeOut" .
             " -tb java_complex" .
             " -DOC_COMPARATOR_INPUT_PATH "  . quoteIfNeed($sInputPath) .
             " -DOC_COMPARATOR_OUTPUT_PATH " . quoteIfNeed($sOutputPath) .
-            " -NoOffice" . 
+            " -NoOffice" .
             " -NoSmallPictures" .
             " -o graphical.JPEGComparator";
         if ($impath)
         {
             $sParams .= " -imagemagick.path " . quoteIfNeed($impath);
         }
-        
+
         # start OOoRunner
         # $sDebug = "-Xdebug  -Xrunjdwp:transport=dt_socket,server=y,address=9001,suspend=y";
         my $err = calljava(getJavaExecutable(), $sParams, $sDebug);
@@ -555,7 +555,7 @@ sub SingleDocumentCompare($$$$$$)
         my $sLogFile = appendPath(getProjectOutput(), $sDocumentName . ".txt");
         showFile($sLogFile);
     }
-    # printTime(endTime($nSimpleCompareTime));    
+    # printTime(endTime($nSimpleCompareTime));
 
     return $nConvwatchFailed;
 }

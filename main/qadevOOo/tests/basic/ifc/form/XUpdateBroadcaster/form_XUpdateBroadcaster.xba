@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -60,7 +60,7 @@ Dim nCB2updVal As Boolean
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.form.XUpdateBroadcaster
 '*************************************************************************
 On Error Goto ErrHndl
@@ -81,7 +81,7 @@ On Error Goto ErrHndl
     oObj.addUpdateListener(oListener1)
     oObj.addUpdateListener(oListener2)
 
-    if bCustomUpdate then 
+    if bCustomUpdate then
 		Out.Log("Object specific update function was called.")
         UpdateComponent()
     else
@@ -89,8 +89,8 @@ On Error Goto ErrHndl
         TryToUpdate()
     end if
 	wait(1000)
-	
-    bOK = bOK AND nCB1appVal AND nCB2appVal AND nCB1updVal AND nCB2updVal 
+
+    bOK = bOK AND nCB1appVal AND nCB2appVal AND nCB1updVal AND nCB2updVal
 
     Test.MethodTested("addUpdateListener()", bOK)
 
@@ -100,7 +100,7 @@ On Error Goto ErrHndl
     oObj.removeUpdateListener(oListener1)
     countersReset()
 
-    if bCustomUpdate then 
+    if bCustomUpdate then
 		Out.Log("Object specific update function was called.")
         UpdateComponent()
     else
@@ -109,7 +109,7 @@ On Error Goto ErrHndl
     end if
 	wait(1000)
 
-    bOK = bOK AND NOT nCB1appVal AND nCB2appVal AND NOT nCB1updVal AND nCB2updVal 
+    bOK = bOK AND NOT nCB1appVal AND nCB2appVal AND NOT nCB1updVal AND nCB2updVal
     Test.MethodTested("removeUpdateListener()", bOK)
 
     Out.Log("Removing Listener 2")
@@ -149,7 +149,7 @@ Sub TryToUpdate()
 
     if hasUnoInterfaces(oObj, "com.sun.star.beans.XPropertySet") then
         props() = oObj.getPropertySetInfo().getProperties()
-        
+
         for i = lbound(props()) to ubound(props())
             PropertyTester.TestProperty(props(i).Name)
         next i

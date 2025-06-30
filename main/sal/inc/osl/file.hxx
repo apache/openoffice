@@ -149,7 +149,7 @@ public:
 	    If ustrRelativeFileURL denotes an absolute path ustrBaseDirectoryURL will be ignored.
     	
 	    @param ustrAbsoluteFileURL [out]
-	    On success it receives the full qualified absoulte file URL.
+	    On success it receives the full qualified absolute file URL.
 
 	    @return 
 	    E_None on success 
@@ -940,7 +940,7 @@ public:
 
 	/** Open a regular file.
 
-        Open a file. Only regular files	can be openend.
+        Open a file. Only regular files	can be opened.
         	        	
 	    @param uFlags [in]
 	    Specifies the open mode.

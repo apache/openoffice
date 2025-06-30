@@ -133,7 +133,7 @@ ucbhelper::InterceptedInteraction::EInterceptionState StillReadWriteInteraction:
                 return ::ucbhelper::InterceptedInteraction::E_INTERCEPTED;
             }
             else //simply abort
-                bAbort = sal_True;;
+                bAbort = sal_True;
 		}
 		break;
 	}

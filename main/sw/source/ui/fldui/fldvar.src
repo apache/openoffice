@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "globals.hrc"
 #include "fldtdlg.hrc"
 #include "helpid.h"
@@ -140,7 +138,7 @@ TabPage TP_FLD_VAR
 		Border = TRUE ;
 		Hide = TRUE ;
 		MaxTextLength = 1 ;
-		TEXT = "." ;
+		Text = "." ;
 	};
 	FixedText FT_VARNAME
 	{

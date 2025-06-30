@@ -58,7 +58,7 @@ public:
            ::com::sun::star::uno::XComponentContext > const & xContext );
 	virtual ~Title();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
     APPHELPER_SERVICE_FACTORY_HELPER( Title )
 
     /// XServiceInfo declarations

@@ -1314,7 +1314,7 @@ void SAL_CALL SvxShape::setSize( const awt::Size& rSize )
 	if( mpObj.is() && mpModel)
 	{
         // #123539# optimization for 3D chart object generation: do not use UNO
-        // API commmands to get the range, this is too expensive since for 3D
+        // API commands to get the range, this is too expensive since for 3D
         // scenes it may recalculate the whole scene since in AOO this depends
         // on the contained geometry (layouted to show all content)
         const bool b3DConstruction(dynamic_cast< E3dObject* >(mpObj.get()) && mpModel->isLocked());
@@ -2023,7 +2023,7 @@ void SvxShape::endSetPropertyValues()
 	const OUString* pNames = aPropertyNames.getConstArray();
 
 	uno::Sequence< uno::Any > aRet( nCount );
-	uno::Any* pValue = aRet.getArray();;
+	uno::Any* pValue = aRet.getArray();
 
 	if( mpImpl->mpMaster )
 	{

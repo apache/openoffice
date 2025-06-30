@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -35,13 +35,13 @@ use par2script::globals;
 sub exit_program
 {
 	my ($message, $function) = @_;
-	
+
 	my $infoline;
-		
+
 	$infoline = "\n***************************************************************\n";
 	push(@par2script::globals::logfileinfo, $infoline);
 	print("$infoline");
-	
+
 	$infoline = "$message\n";
 	push(@par2script::globals::logfileinfo, $infoline);
 	print("$infoline");
@@ -60,8 +60,8 @@ sub exit_program
 	}
 
 	print("$infoline");
-		
-	exit(-1);	
+
+	exit(-1);
 }
 
 #####################################
@@ -72,13 +72,13 @@ sub exit_program
 sub multidefinitionerror
 {
 	my ( $multidefinitiongids ) = @_;
-	print "************************************************\n";	
+	print "************************************************\n";
 	print "ERROR: multiple definition of gids:\n";
-	print "************************************************\n";	
+	print "************************************************\n";
 
 	my $gid;
 	foreach $gid ( @{$multidefinitiongids} ) { print "\t$gid\n"; }
-	exit(-1);	
+	exit(-1);
 }
 
 #####################################
@@ -89,9 +89,9 @@ sub multidefinitionerror
 sub multiassignmenterror
 {
 	my ( $multiassignmentgids ) = @_;
-	#print "************************************************\n";	
+	#print "************************************************\n";
 	#print "ERROR: multiple assignments of gids:\n";
-	#print "************************************************\n";	
+	#print "************************************************\n";
 
 	my $line;
 	foreach $line ( @{$multiassignmentgids} ) { print "\t$line\n"; }
@@ -106,13 +106,13 @@ sub multiassignmenterror
 sub missingassignmenterror
 {
 	my ( $missingassignmentgids ) = @_;
-	print "********************************************************\n";	
+	print "********************************************************\n";
 	print "ERROR: Missing assignments for the following GIDs:\n";
-	print "********************************************************\n";	
+	print "********************************************************\n";
 
 	my $gid;
 	foreach $gid ( @{$missingassignmentgids} ) { print "\t$gid\n"; }
-	exit(-1);	
+	exit(-1);
 }
 
 1;

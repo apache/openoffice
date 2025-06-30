@@ -297,7 +297,7 @@ void JobDispatch::impl_dispatchEvent( /*IN*/ const ::rtl::OUString&             
 
     // no jobs ... no execution
     // But a may given listener will know something ...
-    // I think this operaton was finished successfully.
+    // I think this operation was finished successfully.
     // It's not really an error, if no registered jobs could be located.
     // Step over all found jobs and execute it
     int nExecutedJobs=0;
@@ -354,7 +354,7 @@ void JobDispatch::impl_dispatchEvent( /*IN*/ const ::rtl::OUString&             
             of e.g. one instance services.
 
     @param  sService
-                the uno implementation or service name of the job, which should be instanciated
+                the uno implementation or service name of the job, which should be instantiated
 
     @param  lArgs
                 optional arguments for this request

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Helpers" script:language="StarBasic">&apos; *** MODULE HELPERS ***
 
@@ -39,20 +39,20 @@ End Sub
 &apos;=======================================================
 Sub ShowProp(Elem As Object)
 	dim oDialog As Object
-	
+
 	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
 	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgObjProp&quot;)
 	oDialogModel = oDialog.Model
-		
+
 	oTxtProp = oDialog.GetControl(&quot;txtProp&quot;)
 	oTxtProp.Text = Join(Split(Elem.dbg_properties,&quot;;&quot;),chr(13))
-	
+
 	oTxtMeth = oDialog.GetControl(&quot;txtMeth&quot;)
 	oTxtMeth.Text = Join(Split(Elem.dbg_methods,&quot;;&quot;),chr(13))
-	
+
 	oTxtInt = oDialog.GetControl(&quot;txtInt&quot;)
 	oTxtInt.Text = Join(Split(Elem.dbg_supportedInterfaces,&quot;;&quot;),chr(13))
-	
+
 	oDialog.Execute()
 	oDialog.dispose
 End Sub
@@ -144,7 +144,7 @@ Sub InsertTag (Element As String, Content As String)
 
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(5) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Type&quot;
 	args(0).Value = 8
@@ -168,7 +168,7 @@ End Sub
 &apos;-------------------------------------------------------
 &apos; Inserts a tag (element) in the document at the
 &apos; current cursor position in its own newly created paragraph.
-&apos; It also sets the character format to hlp_aux_tag and 
+&apos; It also sets the character format to hlp_aux_tag and
 &apos; the paragraph to the specified value (should start with hlp_)
 &apos;=======================================================
 Sub InsertTagCR (Element As String, Content As String, Style As String)
@@ -177,7 +177,7 @@ Sub InsertTagCR (Element As String, Content As String, Style As String)
 
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(5) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Type&quot;
 	args(0).Value = 8
@@ -213,7 +213,7 @@ Sub InsertField(Field as String, Content as String)
 
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(5) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Type&quot;
 	args(0).Value = 8
@@ -239,10 +239,10 @@ End Sub
 Sub goUp(Count As Integer, Optional bSelect As Boolean)
 	dim document   as object
 	dim dispatcher as object
-	
+
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(1) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Count&quot;
 	args(0).Value = Count
@@ -264,10 +264,10 @@ End Sub
 Sub goDown(Count As Integer, Optional bSelect As Boolean)
 	dim document   as object
 	dim dispatcher as object
-	
+
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(1) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Count&quot;
 	args(0).Value = Count
@@ -290,10 +290,10 @@ End Sub
 Sub goRight(Count As Integer, Optional bSelect As Boolean)
 	dim document   as object
 	dim dispatcher as object
-	
+
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(1) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Count&quot;
 	args(0).Value = Count
@@ -315,10 +315,10 @@ End Sub
 Sub goLeft(Count As Integer, optional bSelect As boolean)
 	dim document   as object
 	dim dispatcher as object
-	
+
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(1) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Count&quot;
 	args(0).Value = Count
@@ -340,15 +340,15 @@ End Sub
 Sub CR
 	dim document   as object
 	dim dispatcher as object
-	
+
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
 	oCur.gotoEndOfParagraph(0)
 	thiscomponent.getcurrentcontroller.select(oCur)
-	
+
 	dispatcher.executeDispatch(document, &quot;.uno:InsertPara&quot;, &quot;&quot;, 0, Array())
 End Sub
 
@@ -360,15 +360,15 @@ End Sub
 Sub CR_before
 	dim document   as object
 	dim dispatcher as object
-	
+
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
 	oCur.gotoStartOfParagraph(0)
 	thiscomponent.getcurrentcontroller.select(oCur)
-	
+
 	dispatcher.executeDispatch(document, &quot;.uno:InsertPara&quot;, &quot;&quot;, 0, Array())
 End Sub
 
@@ -394,10 +394,10 @@ end sub
 Sub SetParaStyle(StyleName As String)
 	dim document   as object
 	dim dispatcher as object
-	
+
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(1) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Template&quot;
 	args(0).Value = StyleName
@@ -415,10 +415,10 @@ end Sub
 Sub SetCharStyle(StyleName As String)
 	dim document   as object
 	dim dispatcher as object
-	
+
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(1) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Template&quot;
 	args(0).Value = StyleName
@@ -434,12 +434,12 @@ end Sub
 &apos; Inserts a new ID for the paragraph
 &apos;=======================================================
 Sub InsertNewParaData
-	
+
 		If not IsHelpFile Then
 		msgbox(strErr_NoHelpFile)
 		Exit Sub
 	End If
-	
+
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
 
@@ -452,14 +452,14 @@ Sub InsertNewParaData
 		msgbox &quot;Cannot assign paragraph id:&quot;+chr(13)+sMsg,48,&quot;Error&quot;
 		Exit Sub
 	End If
-	
+
 	If sID &lt;&gt; &quot;&quot; Then
 		msgbox &quot;Paragraph already has an ID.&quot;+chr(13)+&quot;If you want to assign a new ID delete the existing one first.&quot;,48,&quot;Error&quot;
 		Exit Sub
 	End If
-	
+
 	oCur.gotoStartOfParagraph(0)
-	
+
 	If (Left(oCur.ParaStyleName,8) = &quot;hlp_head&quot;) Then
 		id = &quot;hd_id&quot; + CreateID
 		thiscomponent.getcurrentcontroller.select(oCur)
@@ -475,7 +475,7 @@ Sub InsertNewParaData
 		InsertField(&quot;ID&quot;,MetaData)
 		SetCharStyle(&quot;Default&quot;)
 	End If
-	
+
 
 End Sub
 
@@ -488,7 +488,7 @@ Function LoadDialog(Libname as String, DialogName as String, Optional oLibContai
 	Dim oLib as Object
 	Dim oLibDialog as Object
 	Dim oRuntimeDialog as Object
-	
+
 	If IsMissing(oLibContainer ) then
 		oLibContainer = DialogLibraries
 	End If
@@ -563,7 +563,7 @@ End Function
 Function IsInBookmark
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
-	
+
 	If ((oCur.ParaStyleName = &quot;hlp_aux_bookmark&quot;) AND (not(oCur.IsEndOfParagraph))) Then
 		oCur.GotoStartOfParagraph(0)
 		oCur.GotoEndOfParagraph(1)
@@ -607,7 +607,7 @@ Sub InsertLink(sPath As String, sText As String, sName As String)
 
 	document   = ThisComponent.CurrentController.Frame
 	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-	
+
 	dim args(4) as new com.sun.star.beans.PropertyValue
 	args(0).Name = &quot;Hyperlink.Text&quot;
 	args(0).Value = sText
@@ -660,9 +660,9 @@ Sub CreateTable(nRows as Integer, nCols as Integer, sID as String)
 	args1(2).Value = nRows
 	args1(3).Name = &quot;Flags&quot;
 	args1(3).Value = 9
-	
+
 	dispatcher.executeDispatch(document, &quot;.uno:InsertTable&quot;, &quot;&quot;, 0, args1())
-	
+
 	args1(0).Name = &quot;TopBottomMargin.TopMargin&quot;
 	args1(0).Value = 500
 	args1(1).Name = &quot;TopBottomMargin.BottomMargin&quot;
@@ -750,7 +750,7 @@ End Sub
 &apos;=======================================================
 Function GetParaData
 	arParaData = Array(&quot;&quot;,&quot;&quot;,&quot;&quot;) &apos; ID, localize, #message
-	
+
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
 	oCur.gotoStartOfParagraph(0)
@@ -761,7 +761,7 @@ Function GetParaData
 
 
 	TE = Enum.nextElement
-		
+
 	TP = TE.createEnumeration
 	Ct = 0
 	posID = 0
@@ -810,18 +810,18 @@ End Function
 &apos;=======================================================
 
 Sub SetParaData(sID as String, sLocalize as String)
-	
+
 	oSel = thiscomponent.getcurrentcontroller.getselection
 	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
 	oCur.gotoStartOfParagraph(0)
 	oCur.gotoEndOfParagraph(1)
 	Enum = oCur.createEnumeration
 	Fd = FALSE
-	
+
 
 	Do While Enum.hasMoreElements
 		TE = Enum.nextElement
-		
+
 		TP = TE.createEnumeration
 		Ct = 0
 		posID = 0
@@ -852,7 +852,7 @@ Sub SetParaData(sID as String, sLocalize as String)
 		If Fd Then
 			Exit Do
 		End If
-	Loop	
+	Loop
 
 	oCur.TextField.update
 	UpdateFields
@@ -886,7 +886,7 @@ Function TagFormatIsCorrect(sTN As String, sPS As String)
 
 	arTag = Array(&quot;BOOKMARK&quot;,&quot;SORT&quot;,&quot;SECTION&quot;,&quot;SWITCH&quot;,&quot;CASE&quot;,&quot;DEFAULT&quot;)
 	arTagFormat = Array(&quot;hlp_aux_bookmark&quot;,&quot;hlp_aux_sort&quot;,&quot;hlp_aux_section&quot;,&quot;hlp_aux_switch&quot;,&quot;hlp_aux_switch&quot;,&quot;hlp_aux_switch&quot;)
-	
+
 	For n=0 to ubound(arTag)
 		If (sTN = arTag(n) AND sPS &lt;&gt; arTagFormat(n)) Then
 			TagFormatIsCorrect = arTagFormat(n)
@@ -894,13 +894,13 @@ Function TagFormatIsCorrect(sTN As String, sPS As String)
 		End If
 		TagFormatIsCorrect = &quot;&quot;
 	Next n
-	
+
 End Function
 
 &apos;=======================================================
 &apos; GetFilePath
 &apos;-------------------------------------------------------
-&apos; look for the &quot;text/...&quot; part of the file name and separate it 
+&apos; look for the &quot;text/...&quot; part of the file name and separate it
 &apos;=======================================================
 Function GetFilePath(fname As String)
 
@@ -930,12 +930,12 @@ Dim oStoreProperties(0) as New com.sun.star.beans.PropertyValue
 &apos;	ListAny(0) = com.sun.star.ui.dialogs.TemplateDescription.FILEOPEN_LINK_PREVIEW_IMAGE_TEMPLATE
 	oFileDialog = CreateUnoService(&quot;com.sun.star.ui.dialogs.FilePicker&quot;)
 	oFileDialog.Initialize(ListAny())
-	
+
 	sLastImgDir = ReadConfig(&quot;LastImgDir&quot;)
 	If sLastImgDir &lt;&gt; &quot;&quot; Then
 		oFileDialog.setDisplayDirectory(sLastImgDir)
 	End If
-	
+
 	oMasterKey = GetRegistryKeyContent(&quot;org.openoffice.TypeDetection.Types/&quot;)
 	oTypes() = oMasterKey.Types
 
@@ -961,7 +961,7 @@ End Function
 &apos; Reads a parameter value from the config file
 &apos;=======================================================
 Function ReadConfig(Parm As String)
-	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)	
+	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)
 	filename = oPath.UserConfig+&quot;/helpauthoring.cfg&quot;
 	iNumber = Freefile
 	bFound = false
@@ -997,7 +997,7 @@ End Function
 Function WriteConfig(Parm As String, Value As String)
 	Dim arLines(0) As String
 	bFound = false
-	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)	
+	oPath = createUNOService(&quot;com.sun.star.util.PathSettings&quot;)
 	filename = oPath.UserConfig+&quot;/helpauthoring.cfg&quot;
 	iNumber = Freefile
 	If FileExists(filename) Then
@@ -1012,7 +1012,7 @@ Function WriteConfig(Parm As String, Value As String)
 			End If
 		Loop
 		Close #iNumber
-		
+
 		nLine = 1
 		Do While (nLine &lt;= ubound(arLines())) and (not bFound)
 			arLine = split(arLines(nLine),&quot;=&quot;)
@@ -1033,7 +1033,7 @@ Function WriteConfig(Parm As String, Value As String)
 			Print #iNumber, Parm+&quot;=&quot;+Value
 		End If
 		Close #iNumber
-	
+
 	Else
 		Open filename For Output As iNumber
 		Print #iNumber, Parm+&quot;=&quot;+Value
@@ -1057,17 +1057,17 @@ Function SetDocumentRoot
 		oFolderDialog.setDisplayDirectory(sHelpPrefix)
 	End If
 	iAccept = oFolderDialog.Execute()
-		
+
 	If iAccept = 1 Then
 		sHelpPrefix = oFolderDialog.getDirectory + &quot;/&quot;
 		WriteConfig(&quot;HelpPrefix&quot;,sHelpPrefix)
 	End If
-	
+
 	SetDocumentRoot = sHelpPrefix
 End Function
 
 Function MakeAbsPath(sPath As String)
-	
+
 	sHelpPrefix = ReadConfig(&quot;HelpPrefix&quot;)
 	If sHelpPrefix = &quot;&quot; Then
 		sHelpPrefix = SetDocumentRoot
@@ -1096,7 +1096,7 @@ End Function
 
 Function GetUserFieldNumber(fn as String)
 	fnum = -1
-	For a=0 to document.DocumentInfo.getUserFieldCount - 1 
+	For a=0 to document.DocumentInfo.getUserFieldCount - 1
 		If document.DocumentInfo.getUserFieldName(a) = fn Then
 			fnum = a
 			Exit for

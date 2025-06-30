@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -69,13 +69,13 @@ sub save_file
 }
 
 ######################################################
-# Creating a new direcotory
+# Creating a new directory
 ######################################################
 
 sub create_directory
 {
 	my ($directory) = @_;
-		
+
 	my $returnvalue = 1;
 
 	if (!(-d $directory))
@@ -84,14 +84,14 @@ sub create_directory
 
 		if ($returnvalue)
 		{
-			$infoline = "\nCreated directory: $directory\n"; 
+			$infoline = "\nCreated directory: $directory\n";
 			push(@packager::globals::logfileinfo, $infoline);
-	
+
 			if ($packager::globals::isunix)
 			{
 				my $localcall = "chmod 775 $directory \>\/dev\/null 2\>\&1";
 				system($localcall);
-			}			
+			}
 		}
 		else
 		{
@@ -101,34 +101,34 @@ sub create_directory
 }
 
 ######################################################
-# Creating a unique directory with number extension	
+# Creating a unique directory with number extension
 ######################################################
 
 sub create_unique_directory
 {
 	my ($directory) = @_;
-	
+
 	$directory =~ s/\Q$packager::globals::separator\E\s*$//;
 	$directory = $directory . "_INCREASINGNUMBER";
-	
+
 	my $counter = 1;
 	my $created = 0;
-	my $localdirectory = "";	
+	my $localdirectory = "";
 
 	do
 	{
-		$localdirectory = $directory; 
+		$localdirectory = $directory;
 		$localdirectory =~ s/INCREASINGNUMBER/$counter/;
-		$counter++;			
-		
+		$counter++;
+
 		if ( ! -d $localdirectory )
 		{
 			create_directory($localdirectory);
-			$created = 1;	
-		}		
+			$created = 1;
+		}
 	}
 	while ( ! $created );
-	
+
 	return $localdirectory;
 }
 
@@ -141,7 +141,7 @@ sub remove_complete_directory
 	my ($directory) = @_;
 
 	my @content = ();
-	
+
 	$directory =~ s/\Q$packager::globals::separator\E\s*$//;
 
 	if ( -d $directory )
@@ -151,7 +151,7 @@ sub remove_complete_directory
 		closedir(DIR);
 
 		my $oneitem;
-	
+
 		foreach $oneitem (@content)
 		{
 			if ((!($oneitem eq ".")) && (!($oneitem eq "..")))
@@ -169,12 +169,12 @@ sub remove_complete_directory
 				}
 			}
 		}
-		
+
 		# try to remove empty directory
-		
+
 		rmdir $directory;
-		
-	}	
+
+	}
 }
 
 1;

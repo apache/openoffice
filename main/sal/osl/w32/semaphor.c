@@ -27,7 +27,7 @@
 #include <osl/semaphor.h>
 
 /*
-	Implemetation notes:
+	Implementation notes:
 	The void* represented by oslSemaphore is used
 	to store a WIN32 HANDLE.
 */

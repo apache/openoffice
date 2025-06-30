@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
- 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sdext.hxx"
@@ -71,12 +69,12 @@ void OptimizerDialog::ImplSetBold( const rtl::OUString& rControl )
 // -----------------------------------------------------------------------------
 
 rtl::OUString OptimizerDialog::ImplInsertSeparator(
-    const OUString& rControlName,
-    sal_Int32 nOrientation,
-    sal_Int32 nPosX,
-    sal_Int32 nPosY,
-    sal_Int32 nWidth,
-    sal_Int32 nHeight )
+	const OUString& rControlName,
+	sal_Int32 nOrientation,
+	sal_Int32 nPosX,
+	sal_Int32 nPosY,
+	sal_Int32 nWidth,
+	sal_Int32 nHeight )
 {
 	OUString pNames[] = {
 		TKGet( TK_Height ),
@@ -107,21 +105,21 @@ rtl::OUString OptimizerDialog::ImplInsertSeparator(
 // -----------------------------------------------------------------------------
 
 rtl::OUString OptimizerDialog::ImplInsertButton(
-    const OUString& rControlName,
-    const rtl::OUString& rHelpURL,
-    sal_Int32 nXPos,
-    sal_Int32 nYPos,
-    sal_Int32 nWidth,
-    sal_Int32 nHeight,
-    sal_Int16 nTabIndex,
-    sal_Bool bEnabled,
-    sal_Int32 nResID,
-    sal_Int16 nPushButtonType )
+	const OUString& rControlName,
+	const rtl::OUString& rHelpURL,
+	sal_Int32 nXPos,
+	sal_Int32 nYPos,
+	sal_Int32 nWidth,
+	sal_Int32 nHeight,
+	sal_Int16 nTabIndex,
+	sal_Bool bEnabled,
+	sal_Int32 nResID,
+	sal_Int16 nPushButtonType )
 {
 	OUString pNames[] = {
 		TKGet( TK_Enabled ),
 		TKGet( TK_Height ),
-        TKGet( TK_HelpURL ),
+		TKGet( TK_HelpURL ),
 		TKGet( TK_Label ),
 		TKGet( TK_PositionX ),
 		TKGet( TK_PositionY ),
@@ -131,9 +129,9 @@ rtl::OUString OptimizerDialog::ImplInsertButton(
 		TKGet( TK_Width ) };
 
 	Any	pValues[] = {
-		Any( bEnabled  ),
+		Any( bEnabled ),
 		Any( nHeight ),
-        Any( rHelpURL ),
+		Any( rHelpURL ),
 		Any( getString( nResID ) ),
 		Any( nXPos ),
 		Any( nYPos ),
@@ -155,15 +153,15 @@ rtl::OUString OptimizerDialog::ImplInsertButton(
 // -----------------------------------------------------------------------------
 
 rtl::OUString OptimizerDialog::ImplInsertFixedText(
-    const rtl::OUString& rControlName,
-    const OUString& rLabel,
-    sal_Int32 nXPos,
-    sal_Int32 nYPos,
-    sal_Int32 nWidth,
-    sal_Int32 nHeight,
-    sal_Bool bMultiLine,
-    sal_Bool bBold,
-    sal_Int16 nTabIndex )
+	const rtl::OUString& rControlName,
+	const OUString& rLabel,
+	sal_Int32 nXPos,
+	sal_Int32 nYPos,
+	sal_Int32 nWidth,
+	sal_Int32 nHeight,
+	sal_Bool bMultiLine,
+	sal_Bool bBold,
+	sal_Int16 nTabIndex )
 {
 	OUString pNames[] = {
 		TKGet( TK_Height ),
@@ -199,19 +197,19 @@ rtl::OUString OptimizerDialog::ImplInsertFixedText(
 // -----------------------------------------------------------------------------
 
 rtl::OUString OptimizerDialog::ImplInsertCheckBox(
-    const OUString& rControlName,
-    const OUString& rLabel,
-    const rtl::OUString& rHelpURL,
-    sal_Int32 nXPos,
-    sal_Int32 nYPos,
-    sal_Int32 nWidth,
-    sal_Int32 nHeight,
-    sal_Int16 nTabIndex )
+	const OUString& rControlName,
+	const OUString& rLabel,
+	const rtl::OUString& rHelpURL,
+	sal_Int32 nXPos,
+	sal_Int32 nYPos,
+	sal_Int32 nWidth,
+	sal_Int32 nHeight,
+	sal_Int16 nTabIndex )
 {
 	OUString pNames[] = {
 		TKGet( TK_Enabled ),
 		TKGet( TK_Height ),
-        TKGet( TK_HelpURL ),
+		TKGet( TK_HelpURL ),
 		TKGet( TK_Label ),
 		TKGet( TK_PositionX ),
 		TKGet( TK_PositionY ),
@@ -222,7 +220,7 @@ rtl::OUString OptimizerDialog::ImplInsertCheckBox(
 	Any	pValues[] = {
 		Any( sal_True ),
 		Any( nHeight ),
-        Any( rHelpURL ),
+		Any( rHelpURL ),
 		Any( rLabel ),
 		Any( nXPos ),
 		Any( nYPos ),
@@ -236,28 +234,28 @@ rtl::OUString OptimizerDialog::ImplInsertCheckBox(
 	Sequence< Any >				aValues( pValues, nCount );
 
 	Reference< XCheckBox > xCheckBox( insertCheckBox( rControlName, aNames, aValues ) );
-    xCheckBox->addItemListener( this );
+	xCheckBox->addItemListener( this );
 	return rControlName;
 }
 
 // -----------------------------------------------------------------------------
 
 rtl::OUString OptimizerDialog::ImplInsertFormattedField(
-    const OUString& rControlName,
-    const rtl::OUString& rHelpURL,
-    sal_Int32 nXPos,
-    sal_Int32 nYPos,
-    sal_Int32 nWidth,
-    double fEffectiveMin,
-    double fEffectiveMax,
-    sal_Int16 nTabIndex )
+	const OUString& rControlName,
+	const rtl::OUString& rHelpURL,
+	sal_Int32 nXPos,
+	sal_Int32 nYPos,
+	sal_Int32 nWidth,
+	double fEffectiveMin,
+	double fEffectiveMax,
+	sal_Int16 nTabIndex )
 {
 	OUString pNames[] = {
 		TKGet( TK_EffectiveMax ),
 		TKGet( TK_EffectiveMin ),
 		TKGet( TK_Enabled ),
 		TKGet( TK_Height ),
-        TKGet( TK_HelpURL ),
+		TKGet( TK_HelpURL ),
 		TKGet( TK_PositionX ),
 		TKGet( TK_PositionY ),
 		TKGet( TK_Repeat ),
@@ -271,7 +269,7 @@ rtl::OUString OptimizerDialog::ImplInsertFormattedField(
 		Any( fEffectiveMin ),
 		Any( sal_True ),
 		Any( (sal_Int32)12 ),
-        Any( rHelpURL ),
+		Any( rHelpURL ),
 		Any( nXPos ),
 		Any( nYPos ),
 		Any( (sal_Bool)sal_True ),
@@ -286,9 +284,9 @@ rtl::OUString OptimizerDialog::ImplInsertFormattedField(
 	Sequence< Any >				aValues( pValues, nCount );
 
 	Reference< XTextComponent > xTextComponent( insertFormattedField( rControlName, aNames, aValues ), UNO_QUERY_THROW );
-    xTextComponent->addTextListener( this );
-    Reference< XSpinField > xSpinField( xTextComponent, UNO_QUERY_THROW );
-    xSpinField->addSpinListener( this );
+	xTextComponent->addTextListener( this );
+	Reference< XSpinField > xSpinField( xTextComponent, UNO_QUERY_THROW );
+	xSpinField->addSpinListener( this );
 
 	return rControlName;
 }
@@ -296,22 +294,22 @@ rtl::OUString OptimizerDialog::ImplInsertFormattedField(
 // -----------------------------------------------------------------------------
 
 rtl::OUString OptimizerDialog::ImplInsertComboBox(
-    const OUString& rControlName,
-    const rtl::OUString& rHelpURL,
-    const sal_Bool bEnabled,
-    const Sequence< OUString >& rItemList,
-    sal_Int32 nXPos,
-    sal_Int32 nYPos,
-    sal_Int32 nWidth,
-    sal_Int32 nHeight,
-    sal_Int16 nTabIndex,
-    bool bListen )
+	const OUString& rControlName,
+	const rtl::OUString& rHelpURL,
+	const sal_Bool bEnabled,
+	const Sequence< OUString >& rItemList,
+	sal_Int32 nXPos,
+	sal_Int32 nYPos,
+	sal_Int32 nWidth,
+	sal_Int32 nHeight,
+	sal_Int16 nTabIndex,
+	bool bListen )
 {
 	OUString pNames[] = {
 		TKGet( TK_Dropdown ),
 		TKGet( TK_Enabled ),
 		TKGet( TK_Height ),
-        TKGet( TK_HelpURL ),
+		TKGet( TK_HelpURL ),
 		TKGet( TK_LineCount ),
 		TKGet( TK_PositionX ),
 		TKGet( TK_PositionY ),
@@ -324,7 +322,7 @@ rtl::OUString OptimizerDialog::ImplInsertComboBox(
 		Any( sal_True ),
 		Any( bEnabled ),
 		Any( nHeight ),
-        Any( rHelpURL ),
+		Any( rHelpURL ),
 		Any( (sal_Int16)8),
 		Any( nXPos ),
 		Any( nYPos ),
@@ -339,27 +337,27 @@ rtl::OUString OptimizerDialog::ImplInsertComboBox(
 	Sequence< Any >				aValues( pValues, nCount );
 
 	Reference< XTextComponent > xTextComponent( insertComboBox( rControlName, aNames, aValues ), UNO_QUERY_THROW );
-    if ( bListen )
-        xTextComponent->addTextListener( this );
+	if ( bListen )
+		xTextComponent->addTextListener( this );
 	return rControlName;
 }
 
 // -----------------------------------------------------------------------------
 
 rtl::OUString OptimizerDialog::ImplInsertRadioButton(
-    const rtl::OUString& rControlName,
-    const OUString& rLabel,
-    const rtl::OUString& rHelpURL,
-    sal_Int32 nXPos,
-    sal_Int32 nYPos,
-    sal_Int32 nWidth,
-    sal_Int32 nHeight,
-    sal_Bool bMultiLine,
-    sal_Int16 nTabIndex )
+	const rtl::OUString& rControlName,
+	const OUString& rLabel,
+	const rtl::OUString& rHelpURL,
+	sal_Int32 nXPos,
+	sal_Int32 nYPos,
+	sal_Int32 nWidth,
+	sal_Int32 nHeight,
+	sal_Bool bMultiLine,
+	sal_Int16 nTabIndex )
 {
 	OUString pNames[] = {
 		TKGet( TK_Height ),
-        TKGet( TK_HelpURL ),
+		TKGet( TK_HelpURL ),
 		TKGet( TK_Label ),
 		TKGet( TK_MultiLine ),
 		TKGet( TK_PositionX ),
@@ -370,7 +368,7 @@ rtl::OUString OptimizerDialog::ImplInsertRadioButton(
 
 	Any	pValues[] = {
 		Any( nHeight ),
-        Any( rHelpURL ),
+		Any( rHelpURL ),
 		Any( rLabel ),
 		Any( bMultiLine ),
 		Any( nXPos ),
@@ -385,28 +383,28 @@ rtl::OUString OptimizerDialog::ImplInsertRadioButton(
 	Sequence< Any >				aValues( pValues, nCount );
 
 	Reference< XRadioButton > xRadioButton( insertRadioButton( rControlName, aNames, aValues ) );
-    xRadioButton->addItemListener( this );
+	xRadioButton->addItemListener( this );
 	return rControlName;
 }
 
 // -----------------------------------------------------------------------------
 
 rtl::OUString OptimizerDialog::ImplInsertListBox(
-    const OUString& rControlName,
-    const rtl::OUString& rHelpURL,
-    const sal_Bool bEnabled,
-    const Sequence< OUString >& rItemList,
-    sal_Int32 nXPos,
-    sal_Int32 nYPos,
-    sal_Int32 nWidth,
-    sal_Int32 nHeight,
-    sal_Int16 nTabIndex )
+	const OUString& rControlName,
+	const rtl::OUString& rHelpURL,
+	const sal_Bool bEnabled,
+	const Sequence< OUString >& rItemList,
+	sal_Int32 nXPos,
+	sal_Int32 nYPos,
+	sal_Int32 nWidth,
+	sal_Int32 nHeight,
+	sal_Int16 nTabIndex )
 {
 	OUString pNames[] = {
 		TKGet( TK_Dropdown ),
 		TKGet( TK_Enabled ),
 		TKGet( TK_Height ),
-        TKGet( TK_HelpURL ),
+		TKGet( TK_HelpURL ),
 		TKGet( TK_LineCount ),
 		TKGet( TK_MultiSelection ),
 		TKGet( TK_PositionX ),
@@ -420,7 +418,7 @@ rtl::OUString OptimizerDialog::ImplInsertListBox(
 		Any( sal_True ),
 		Any( bEnabled ),
 		Any( nHeight ),
-        Any( rHelpURL ),
+		Any( rHelpURL ),
 		Any( (sal_Int16)8),
 		Any( sal_False ),
 		Any( nXPos ),
@@ -436,7 +434,7 @@ rtl::OUString OptimizerDialog::ImplInsertListBox(
 	Sequence< Any >				aValues( pValues, nCount );
 
 	Reference< XListBox > xListBox( insertListBox( rControlName, aNames, aValues ) );
-    xListBox->addActionListener( this );
+	xListBox->addActionListener( this );
 	return rControlName;
 }
 
@@ -444,10 +442,10 @@ rtl::OUString OptimizerDialog::ImplInsertListBox(
 
 void OptimizerDialog::InitNavigationBar()
 {
-    sal_Int32	nCancelPosX = OD_DIALOG_WIDTH - BUTTON_WIDTH - 6;
-    sal_Int32	nFinishPosX = nCancelPosX - 6 - BUTTON_WIDTH;
-    sal_Int32	nNextPosX = nFinishPosX - 6 - BUTTON_WIDTH;
-    sal_Int32	nBackPosX = nNextPosX - 3 - BUTTON_WIDTH;
+	sal_Int32	nCancelPosX = OD_DIALOG_WIDTH - BUTTON_WIDTH - 6;
+	sal_Int32	nFinishPosX = nCancelPosX - 6 - BUTTON_WIDTH;
+	sal_Int32	nNextPosX = nFinishPosX - 6 - BUTTON_WIDTH;
+	sal_Int32	nBackPosX = nNextPosX - 3 - BUTTON_WIDTH;
 
 	ImplInsertSeparator( TKGet( TK_lnNavSep1 ), 0, 0, DIALOG_HEIGHT - 26, OD_DIALOG_WIDTH, 1 );
 	ImplInsertSeparator( TKGet( TK_lnNavSep2 ), 1, 85, 0, 1, BUTTON_POS_Y - 6 );
@@ -488,7 +486,7 @@ void OptimizerDialog::UpdateControlStatesPage0()
 	{
 		aSelectedItems.realloc( 1 );
 		aSelectedItems[ 0 ] = nSelectedItem;
-		if ( nSelectedItem > 2 )	// only allowing to delete custom themes, the first can|t be deleted
+		if ( nSelectedItem > 2 )	// only allowing to delete custom themes, the first can't be deleted
 			bRemoveButtonEnabled = sal_True;
 	}
 	setControlProperty( TKGet( TK_ListBox0Pg0 ), TKGet( TK_StringItemList ), Any( aItemList ) );
@@ -502,8 +500,8 @@ void OptimizerDialog::InitPage0()
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText0Pg0 ), getString( STR_INTRODUCTION ), PAGE_POS_X, PAGE_POS_Y, PAGE_WIDTH, 8, sal_False, sal_True, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText1Pg0 ), getString( STR_INTRODUCTION_T ), PAGE_POS_X + 6, PAGE_POS_Y + 14, PAGE_WIDTH - 12, 100, sal_True, sal_False, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertSeparator( TKGet( TK_Separator1Pg0 ), 0, PAGE_POS_X + 6, DIALOG_HEIGHT - 66, PAGE_WIDTH - 12, 1 ) );
-	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText2Pg0 ), getString( STR_CHOSE_SETTINGS ), PAGE_POS_X + 6, DIALOG_HEIGHT - 60, PAGE_WIDTH - 12, 8, sal_True, sal_False, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertListBox(  TKGet( TK_ListBox0Pg0 ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP1_LB_SETTINGS),sal_True, aItemList, PAGE_POS_X + 6, DIALOG_HEIGHT - 48, ( OD_DIALOG_WIDTH - 50 ) - ( PAGE_POS_X + 6 ), 12, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText2Pg0 ), getString( STR_CHOOSE_SETTINGS ), PAGE_POS_X + 6, DIALOG_HEIGHT - 60, PAGE_WIDTH - 12, 8, sal_True, sal_False, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertListBox( TKGet( TK_ListBox0Pg0 ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP1_LB_SETTINGS),sal_True, aItemList, PAGE_POS_X + 6, DIALOG_HEIGHT - 48, ( OD_DIALOG_WIDTH - 50 ) - ( PAGE_POS_X + 6 ), 12, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertButton( TKGet( TK_Button0Pg0 ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP1_PB_DELSETTS ),OD_DIALOG_WIDTH - 46, DIALOG_HEIGHT - 49, 40, 14, mnTabIndex++, sal_True, STR_REMOVE, PushButtonType_STANDARD ) );
 	maControlPages.push_back( aControlList );
 	DeactivatePage( 0 );
@@ -530,16 +528,16 @@ void OptimizerDialog::InitPage1()
 	{
 		Reference< XCustomPresentationSupplier > aXCPSup( xModel, UNO_QUERY_THROW );
 		Reference< XNameContainer > aXCont( aXCPSup->getCustomPresentations() );
-        if ( aXCont.is() )
-            aCustomShowList = aXCont->getElementNames();
+		if ( aXCont.is() )
+			aCustomShowList = aXCont->getElementNames();
 	}
 	std::vector< rtl::OUString > aControlList;
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText0Pg3 ), getString( STR_CHOOSE_SLIDES ), PAGE_POS_X, PAGE_POS_Y, PAGE_WIDTH, 8, sal_False, sal_True, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertCheckBox(  TKGet( TK_CheckBox0Pg3 ), getString( STR_DELETE_MASTER_PAGES ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP2_CB_MASTERPAGES ), PAGE_POS_X + 6, PAGE_POS_Y + 14, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertCheckBox(  TKGet( TK_CheckBox2Pg3 ), getString( STR_DELETE_HIDDEN_SLIDES ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP2_CB_HIDDENSLIDES ), PAGE_POS_X + 6, PAGE_POS_Y + 28, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertCheckBox(  TKGet( TK_CheckBox3Pg3 ), getString( STR_CUSTOM_SHOW ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP2_CB_CUSTOMSHOW ), PAGE_POS_X + 6, PAGE_POS_Y + 42, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertListBox(  TKGet( TK_ListBox0Pg3 ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP2_LB_CUSTOMSHOW),sal_True, aCustomShowList, PAGE_POS_X + 14, PAGE_POS_Y + 54, 150, 12, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertCheckBox(  TKGet( TK_CheckBox1Pg3 ), getString( STR_DELETE_NOTES_PAGES ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP2_CB_NOTES ), PAGE_POS_X + 6, PAGE_POS_Y + 70, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertCheckBox( TKGet( TK_CheckBox0Pg3 ), getString( STR_DELETE_MASTER_PAGES ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP2_CB_MASTERPAGES ), PAGE_POS_X + 6, PAGE_POS_Y + 14, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertCheckBox( TKGet( TK_CheckBox2Pg3 ), getString( STR_DELETE_HIDDEN_SLIDES ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP2_CB_HIDDENSLIDES ), PAGE_POS_X + 6, PAGE_POS_Y + 28, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertCheckBox( TKGet( TK_CheckBox3Pg3 ), getString( STR_CUSTOM_SHOW ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP2_CB_CUSTOMSHOW ), PAGE_POS_X + 6, PAGE_POS_Y + 42, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertListBox( TKGet( TK_ListBox0Pg3 ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP2_LB_CUSTOMSHOW),sal_True, aCustomShowList, PAGE_POS_X + 14, PAGE_POS_Y + 54, 150, 12, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertCheckBox( TKGet( TK_CheckBox1Pg3 ), getString( STR_DELETE_NOTES_PAGES ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP2_CB_NOTES ), PAGE_POS_X + 6, PAGE_POS_Y + 70, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
 	maControlPages.push_back( aControlList );
 	DeactivatePage( 1 );
 
@@ -583,7 +581,7 @@ void OptimizerDialog::UpdateControlStatesPage2()
 
 	setControlProperty( TKGet( TK_RadioButton0Pg1 ), TKGet( TK_State ), Any( (sal_Int16)( bJPEGCompression != sal_True ) ) );
 	setControlProperty( TKGet( TK_RadioButton1Pg1 ), TKGet( TK_State ), Any( (sal_Int16)( bJPEGCompression != sal_False ) ) );
-	setControlProperty( TKGet( TK_FixedText1Pg1  ), TKGet( TK_Enabled ), Any( bJPEGCompression ) );
+	setControlProperty( TKGet( TK_FixedText1Pg1 ), TKGet( TK_Enabled ), Any( bJPEGCompression ) );
 	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_Enabled ), Any( bJPEGCompression ) );
 	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( (double)nJPEGQuality ) );
 	setControlProperty( TKGet( TK_CheckBox1Pg1 ), TKGet( TK_State ), Any( (sal_Int16)bRemoveCropArea ) );
@@ -607,9 +605,9 @@ void OptimizerDialog::InitPage2()
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText1Pg1 ), getString( STR_QUALITY ), PAGE_POS_X + 20, PAGE_POS_Y + 40, 72, 8, sal_False, sal_False, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertFormattedField( TKGet( TK_FormattedField0Pg1 ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP3_MF_QUALITY ), PAGE_POS_X + 106, PAGE_POS_Y + 38, 50, 0, 100, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText2Pg1 ), getString( STR_IMAGE_RESOLUTION ), PAGE_POS_X + 6, PAGE_POS_Y + 54, 94, 8, sal_False, sal_False, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertComboBox(  TKGet( TK_ComboBox0Pg1 ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP3_LB_DPI ), sal_True, aResolutionItemList, PAGE_POS_X + 106, PAGE_POS_Y + 52, 100, 12, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertCheckBox(  TKGet( TK_CheckBox1Pg1 ), getString( STR_REMOVE_CROP_AREA ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP3_CB_CROP ), PAGE_POS_X + 6, PAGE_POS_Y + 68, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertCheckBox(  TKGet( TK_CheckBox2Pg1 ), getString( STR_EMBED_LINKED_GRAPHICS ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP3_CB_LINKS ), PAGE_POS_X + 6, PAGE_POS_Y + 82, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertComboBox( TKGet( TK_ComboBox0Pg1 ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP3_LB_DPI ), sal_True, aResolutionItemList, PAGE_POS_X + 106, PAGE_POS_Y + 52, 100, 12, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertCheckBox( TKGet( TK_CheckBox1Pg1 ), getString( STR_REMOVE_CROP_AREA ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP3_CB_CROP ), PAGE_POS_X + 6, PAGE_POS_Y + 68, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertCheckBox( TKGet( TK_CheckBox2Pg1 ), getString( STR_EMBED_LINKED_GRAPHICS ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP3_CB_LINKS ), PAGE_POS_X + 6, PAGE_POS_Y + 82, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
 	maControlPages.push_back( aControlList );
 	DeactivatePage( 2 );
 	UpdateControlStatesPage2();
@@ -648,7 +646,7 @@ void OptimizerDialog::InitPage3()
 
 	std::vector< rtl::OUString > aControlList;
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText0Pg2 ), getString( STR_OLE_OPTIMIZATION ), PAGE_POS_X, PAGE_POS_Y, PAGE_WIDTH, 8, sal_False, sal_True, mnTabIndex++ ) );
-	aControlList.push_back( ImplInsertCheckBox(  TKGet( TK_CheckBox0Pg2 ), getString( STR_OLE_REPLACE ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP4_CB_OLE ), PAGE_POS_X + 6, PAGE_POS_Y + 14, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertCheckBox( TKGet( TK_CheckBox0Pg2 ), getString( STR_OLE_REPLACE ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP4_CB_OLE ), PAGE_POS_X + 6, PAGE_POS_Y + 14, PAGE_WIDTH - 12, 8, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertRadioButton( TKGet( TK_RadioButton0Pg2 ), getString( STR_ALL_OLE_OBJECTS ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP4_RB_ALLOLE), PAGE_POS_X + 14, PAGE_POS_Y + 28, PAGE_WIDTH - 22, 8, sal_False, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertRadioButton( TKGet( TK_RadioButton1Pg2 ), getString( STR_ALIEN_OLE_OBJECTS_ONLY ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP4_RB_NOTODF),PAGE_POS_X + 14, PAGE_POS_Y + 40, PAGE_WIDTH - 22, 8, sal_False, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText1Pg2 ), nOLECount ? getString( STR_OLE_OBJECTS_DESC ) : getString( STR_NO_OLE_OBJECTS_DESC ), PAGE_POS_X + 6, PAGE_POS_Y + 64, PAGE_WIDTH - 22, 50, sal_True, sal_False, mnTabIndex++ ) );
@@ -832,7 +830,7 @@ void OptimizerDialog::UpdateControlStatesPage4()
 		sal_Int32 i = aStr.indexOf( aImagePlaceholder, 0 );
 		if ( i >= 0 )
 			aStr = aStr.replaceAt( i, aImagePlaceholder.getLength(), OUString::valueOf( nGraphics ) );
-		
+
 		sal_Int32 j = aStr.indexOf( aQualityPlaceholder, 0 );
 		if ( j >= 0 )
 			aStr = aStr.replaceAt( j, aQualityPlaceholder.getLength(), OUString::valueOf( nJPEGQuality ) );
@@ -922,7 +920,7 @@ void OptimizerDialog::InitPage4()
 
 		Any	pValues[] = {
 			Any( (sal_Int32)12 ),
-			Any( OUString( RTL_CONSTASCII_USTRINGPARAM("STR_SAVE_AS") ) ),//TODO
+			Any( OUString( RTL_CONSTASCII_USTRINGPARAM("STR_SAVE_AS") ) ), //TODO
 			Any( (sal_Int32)( PAGE_POS_X + 6 ) ),
 			Any( (sal_Int32)( DIALOG_HEIGHT - 75 ) ),
 			Any( (sal_Int32)( 0 ) ),
@@ -955,18 +953,18 @@ void OptimizerDialog::InitPage4()
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText8Pg4 ), OUString(), PAGE_POS_X + 100, PAGE_POS_Y + 58, 30, 8, sal_False, sal_False, mnTabIndex++ ) );
 	setControlProperty( TKGet( TK_FixedText8Pg4 ), TKGet( TK_Align ), Any( static_cast< short >( 2 ) ) );
 
-	aControlList.push_back( ImplInsertRadioButton( TKGet( TK_RadioButton0Pg4 ), getString(  STR_APPLY_TO_CURRENT ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP5_RB_CURDOC),PAGE_POS_X + 6, PAGE_POS_Y + 78, PAGE_WIDTH - 12, 8, sal_False, mnTabIndex++ ) );
+	aControlList.push_back( ImplInsertRadioButton( TKGet( TK_RadioButton0Pg4 ), getString( STR_APPLY_TO_CURRENT ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP5_RB_CURDOC),PAGE_POS_X + 6, PAGE_POS_Y + 78, PAGE_WIDTH - 12, 8, sal_False, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertRadioButton( TKGet( TK_RadioButton1Pg4 ), getString( STR_SAVE_AS ), HID(HID_SDEXT_MINIMIZER_WIZ_STEP5_RB_NEWDOC),PAGE_POS_X + 6, PAGE_POS_Y + 90, PAGE_WIDTH - 12, 8, sal_False, mnTabIndex++ ) );
 	aControlList.push_back( ImplInsertFixedText( TKGet( TK_FixedText1Pg4 ), OUString(), PAGE_POS_X + 6, DIALOG_HEIGHT - 87, PAGE_WIDTH - 12, 8, sal_True, sal_False, mnTabIndex++ ) );
 	aControlList.push_back( TKGet( TK_Progress ) );
 	aControlList.push_back( ImplInsertSeparator( TKGet( TK_Separator1Pg4 ), 0, PAGE_POS_X + 6, DIALOG_HEIGHT - 58, PAGE_WIDTH - 12, 1 ) );
-	aControlList.push_back( ImplInsertCheckBox(  TKGet( TK_CheckBox1Pg4 ), getString( STR_SAVE_SETTINGS ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP5_CB_SAVESETTINGS ), PAGE_POS_X + 6, DIALOG_HEIGHT - 47, 100, 8, mnTabIndex++ ) );
-    // don't listen to this
+	aControlList.push_back( ImplInsertCheckBox( TKGet( TK_CheckBox1Pg4 ), getString( STR_SAVE_SETTINGS ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP5_CB_SAVESETTINGS ), PAGE_POS_X + 6, DIALOG_HEIGHT - 47, 100, 8, mnTabIndex++ ) );
+	// don't listen to this
 	aControlList.push_back(
-        ImplInsertComboBox(
-            TKGet( TK_ComboBox0Pg4 ),  HID( HID_SDEXT_MINIMIZER_WIZ_STEP5_LB_SETTINGSNAME ),sal_True, aItemList, 
-            PAGE_POS_X + 106, DIALOG_HEIGHT - 48, 100, 12, mnTabIndex++ , 
-            false) );
+		ImplInsertComboBox(
+			TKGet( TK_ComboBox0Pg4 ), HID( HID_SDEXT_MINIMIZER_WIZ_STEP5_LB_SETTINGSNAME ),sal_True, aItemList,
+			PAGE_POS_X + 106, DIALOG_HEIGHT - 48, 100, 12, mnTabIndex++ ,
+			false) );
 	maControlPages.push_back( aControlList );
 	DeactivatePage( 4 );
 
@@ -1025,3 +1023,5 @@ void OptimizerDialog::DeactivatePage( sal_Int16 nStep )
 	while( aBeg != aEnd )
 		setVisible( *aBeg++, sal_False );
 }
+
+/* vim: set noet sw=4 ts=4: */

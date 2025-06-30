@@ -131,13 +131,13 @@ public class DesktopTools
     }
 
     /**
-     * returns an object arrary of all open documents
+     * returns an object array of all open documents
      * @param xMSF the MultiServiceFactory
      * @return returns an Array of document kinds like ["swriter"]
      */
     /**
      * returns an array of all open documents
-     * @param xMSF the XMultiSerivceFactory
+     * @param xMSF the XMultiServiceFactory
      * @return returns an array of all open documents
      */
     public static Object[] getAllOpenDocuments(XMultiServiceFactory xMSF)
@@ -454,7 +454,7 @@ public class DesktopTools
             aConfig.insertOrUpdateExtensibleGroupProperty(
                     "Windows", "5539", "UserData", "Data", "V2,V,0,AL:(5,16,0/0/244/349,244;610)");
 
-            // Is node "SplitWindow2" available? If not, instert it.
+            // Is node "SplitWindow2" available? If not, insert it.
             aConfig.getOrInsertGroup("Windows", "SplitWindow2");
 
             aConfig.insertOrUpdateExtensibleGroupProperty(

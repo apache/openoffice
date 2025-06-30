@@ -162,7 +162,7 @@ public class StateSetAllView
         {
             super.paintChildren (g);
 
-            // Calculcate the are inside the border.
+            // Calculate the area inside the border.
             Insets aInsets = getInsets ();
             Dimension aSize = getSize();
             Rectangle aWidgetArea = new Rectangle (

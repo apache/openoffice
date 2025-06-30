@@ -51,7 +51,7 @@ PATCH_FILES= use-own-tuple.patch gtest-python3.patch
 .IF "$(OS)"=="WNT"
 
 CONFIGURE_DIR=
-# dirty hack for gbuild whihc relies on .cxx extension for C++ files
+# dirty hack for gbuild which relies on .cxx extension for C++ files
 CONFIGURE_ACTION=cp src/gtest-all.cc src/gtest-all.cxx
 CONFIGURE_FLAGS=
 

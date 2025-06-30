@@ -28,7 +28,7 @@ import com.sun.star.uno.Any;
 
 /**
  * This class is a factory for Value objects for different types of 
- * memebers. 
+ * members.
  * Other than some Value implementations classes this class contains static 
  * type conversion methods and factory methods.
  * 
@@ -88,7 +88,7 @@ public class DataAwareFields
 
     /**
      * an abstract implementation of DataAware.Value to access
-     * object memebers (fields) usign reflection.
+     * object members (fields) usign reflection.
      */
     private static abstract class FieldValue implements DataAware.Value
     {

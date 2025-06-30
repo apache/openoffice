@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Listbox" script:language="StarBasic">Option Explicit
 Dim OriginalList()
@@ -33,7 +33,7 @@ Dim MaxIndex as Integer
 	For i = 0 To MaxIndex
 		SourceListbox = AddSingleItemToListbox(SourceListbox, SecondList(i))
 	Next i
-	Call FormSetMoveRights()	
+	Call FormSetMoveRights()
 End Sub
 
 
@@ -48,7 +48,7 @@ Dim CopyList()
 		RemoveListboxItemByName(TargetListbox, RemoveList(i))
 	Next i
 	CopyList() = OriginalList()
-	s = 0 
+	s = 0
 	MaxIndex = Ubound(CopyList())
 	For i = 0 To MaxIndex
 		If IndexInArray(CopyList(i),RemoveList())= -1 Then
@@ -57,7 +57,7 @@ Dim CopyList()
 		End If
 	Next i
 	ReDim Preserve OriginalList(s-1)
-	Call FormSetMoveRights()	
+	Call FormSetMoveRights()
 End Sub
 
 
@@ -114,13 +114,13 @@ Dim CurIndex
 Dim iOldTargetSelect as Integer
 Dim iOldSourceSelect as Integer
 	MaxCurTarget = Ubound(TargetListbox.StringItemList())
-	MaxSourceSelected = Ubound(SourceListbox.SelectedItems())	
-	Dim TargetList(MaxCurTarget+MaxSourceSelected+1) 
+	MaxSourceSelected = Ubound(SourceListbox.SelectedItems())
+	Dim TargetList(MaxCurTarget+MaxSourceSelected+1)
 	If MaxSourceSelected &gt; -1 Then
 		iOldSourceSelect = SourceListbox.SelectedItems(0)
 		If Ubound(TargetListbox.SelectedItems()) &gt; -1 Then
 			iOldTargetSelect = TargetListbox.SelectedItems(0)
-		Else 
+		Else
 			iOldTargetSelect = -1
 		End If
 		For n = 0 To MaxCurTarget
@@ -218,11 +218,11 @@ Dim ResultArray()
 					ResultArray(m) = CurItem
 					m = m + 1
 				End If
-			Next n	
+			Next n
 		End If
-		RemoveSelected = ResultArray()	
+		RemoveSelected = ResultArray()
 	Else
-		RemoveSelected = oListbox.StringItemList()	
+		RemoveSelected = oListbox.StringItemList()
 	End If
 End Function
 
@@ -259,7 +259,7 @@ Sub ToggleListboxControls(oDialogModel as Object, bDoEnable as Boolean)
 	If bDoEnable Then
 		FormSetMoveRights()
 	End If
-End Sub	
+End Sub
 
 
 &apos; Enable or disable the buttons used for moving the available
@@ -278,7 +278,7 @@ Dim SelectCount as Integer
 	oDialogModel.cmdMoveAll.Enabled = FieldCount &gt;=1
 	oDialogModel.cmdMoveSelected.Enabled = bIsFieldSelected
 	oDialogModel.cmdGoOn.Enabled = SelectCount&gt;=1
-	&apos; This flag is set to &apos;1&apos; when the lstSelFields has been modified 
+	&apos; This flag is set to &apos;1&apos; when the lstSelFields has been modified
 End Sub
 
 
@@ -361,7 +361,7 @@ Dim ItemList()
 Dim MaxIndex as Integer
 Dim i as Integer
 	ItemList() = oListBox.StringItemList()
-	MaxIndex = Ubound(ItemList())	
+	MaxIndex = Ubound(ItemList())
 	For i = 0 To MaxIndex
 		If sItem = ItemList(i) Then
 			GetItemPos() = i

@@ -299,7 +299,7 @@ sal_Bool SfxObjectShell::PutURLContentsToVersionStream_Impl(
             uno::Reference< embed::XStorage > xTempStorage =
                 ::comphelper::OStorageHelper::GetStorageFromURL( aTempURL, embed::ElementModes::READWRITE );
 
-            // the password will be transferred from the xStorage to xTempStorage by storage implemetation
+            // the password will be transferred from the xStorage to xTempStorage by storage implementation
             xStorage->copyToStorage( xTempStorage );
 
             // the temporary storage was committed by the previous method and it will die by refcount

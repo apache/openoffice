@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include <hintids.hxx>
 #include <sfx2/request.hxx>
@@ -82,33 +79,33 @@ void lcl_SetUIPrefs(const SwViewOption* pPref, SwView* pView, ViewShell* pSh )
 {
 	// in FrameSets kann die tatsaechliche Sichtbarkeit von der Einstellung der ViewOptions abweichen
 	sal_Bool bVScrollChanged = pPref->IsViewVScrollBar() != pSh->GetViewOptions()->IsViewVScrollBar();
-    sal_Bool bHScrollChanged = pPref->IsViewHScrollBar() != pSh->GetViewOptions()->IsViewHScrollBar();
-    sal_Bool bVAlignChanged = pPref->IsVRulerRight() != pSh->GetViewOptions()->IsVRulerRight();
+	sal_Bool bHScrollChanged = pPref->IsViewHScrollBar() != pSh->GetViewOptions()->IsViewHScrollBar();
+	sal_Bool bVAlignChanged = pPref->IsVRulerRight() != pSh->GetViewOptions()->IsVRulerRight();
 
-    pSh->SetUIOptions(*pPref);
-    const SwViewOption* pNewPref = pSh->GetViewOptions();
+	pSh->SetUIOptions(*pPref);
+	const SwViewOption* pNewPref = pSh->GetViewOptions();
 
-	// Scrollbars an / aus
+	// Scrollbar on / off
 	if(bVScrollChanged)
 	{
-        pView->ShowVScrollbar(pNewPref->IsViewVScrollBar());
+		pView->ShowVScrollbar(pNewPref->IsViewVScrollBar());
 	}
 	if(bHScrollChanged)
 	{
-        pView->ShowHScrollbar( pNewPref->IsViewHScrollBar() || pNewPref->getBrowseMode() );
+		pView->ShowHScrollbar( pNewPref->IsViewHScrollBar() || pNewPref->getBrowseMode() );
 	}
-    //if only the position of the vertical ruler has been changed initiate an update
-    if(bVAlignChanged && !bHScrollChanged && !bVScrollChanged)
-        pView->InvalidateBorder();
+	// if only the position of the vertical ruler has been changed initiate an update
+	if(bVAlignChanged && !bHScrollChanged && !bVScrollChanged)
+		pView->InvalidateBorder();
 
-	// Lineale an / aus
-    if(pNewPref->IsViewVRuler())
-		pView->CreateVLineal();
+	// Ruler on / off
+	if(pNewPref->IsViewVRuler())
+		pView->CreateVRuler();
 	else
-		pView->KillVLineal();
+		pView->KillVRuler();
 
 	// TabWindow an/aus
-    if(pNewPref->IsViewHRuler())
+	if(pNewPref->IsViewHRuler())
 		pView->CreateTab();
 	else
 		pView->KillTab();
@@ -119,7 +116,6 @@ void lcl_SetUIPrefs(const SwViewOption* pPref, SwView* pView, ViewShell* pSh )
 /*--------------------------------------------------------------------
 	Beschreibung:	Aktuelle SwWrtShell
  --------------------------------------------------------------------*/
-
 
 SwWrtShell*	GetActiveWrtShell()
 {
@@ -132,7 +128,6 @@ SwWrtShell*	GetActiveWrtShell()
 /*--------------------------------------------------------------------
 	Beschreibung: 	Pointer auf die aktuelle Sicht
  --------------------------------------------------------------------*/
-
 
 SwView* GetActiveView()
 {
@@ -150,7 +145,6 @@ SwView* SwModule::GetFirstView()
 	SwView* pView = (SwView*)SfxViewShell::GetFirst(&aTypeId);
 	return pView;
 }
-
 
 SwView* SwModule::GetNextView(SwView* pView)
 {
@@ -262,12 +256,12 @@ void SwModule::ApplyUserMetric( FieldUnit eMetric, sal_Bool bWeb )
         FieldUnit eVScrollMetric = pPref->IsVScrollMetric() ? pPref->GetVScrollMetric() : eMetric;
 
 		SwView* pTmpView = SwModule::GetFirstView();
-		// fuer alle MDI-Fenster das Lineal umschalten
+		// Switch Ruler for every MDI window
 		while(pTmpView)
 		{
 			if(bWeb == (0 != PTR_CAST(SwWebView, pTmpView)))
 			{
-                pTmpView->ChangeVLinealMetric(eVScrollMetric);
+                pTmpView->ChangeVRulerMetric(eVScrollMetric);
                 pTmpView->ChangeTabMetric(eHScrollMetric);
 			}
 
@@ -306,7 +300,7 @@ void SwModule::ApplyRulerMetric( FieldUnit eMetric, sal_Bool bHorizontal, sal_Bo
             if( bHorizontal )
                 pTmpView->ChangeTabMetric(eMetric);
             else
-                pTmpView->ChangeVLinealMetric(eMetric);
+                pTmpView->ChangeVRulerMetric(eMetric);
         }
         pTmpView = SwModule::GetNextView(pTmpView);
     }
@@ -390,8 +384,8 @@ sal_uInt16 SwModule::GetRedlineAuthor()
 {
 	if (!bAuthorInitialised)
 	{
-        const SvtUserOptions& rOpt = GetUserOptions();
-        if( !(sActAuthor = rOpt.GetFullName()).Len() )
+		const SvtUserOptions& rOpt = GetUserOptions();
+		if( !(sActAuthor = rOpt.GetFullName()).Len() )
 			if( !(sActAuthor = rOpt.GetID()).Len() )
 				sActAuthor = String( SW_RES( STR_REDLINE_UNKNOWN_AUTHOR ));
 		bAuthorInitialised = sal_True;
@@ -405,7 +399,7 @@ sal_uInt16 SwModule::GetRedlineAuthor()
 
 const String& SwModule::GetRedlineAuthor(sal_uInt16 nPos)
 {
-	DBG_ASSERT(nPos<pAuthorNames->Count(), "author not found!"); //#i45342# RTF doc with no author table caused reader to crash
+	DBG_ASSERT(nPos<pAuthorNames->Count(), "author not found!"); // #i45342# RTF doc with no author table caused reader to crash
 	while (!(nPos<pAuthorNames->Count()))
 	{
 		InsertRedlineAuthor(String(RTL_CONSTASCII_USTRINGPARAM("nn")));
@@ -498,7 +492,7 @@ void lcl_FillAuthorAttr( sal_uInt16 nAuthor, SfxItemSet &rSet,
 	}
 
 	if( !bBackGr )
-        rSet.Put( SvxColorItem( aCol, RES_CHRATR_COLOR ) );
+		rSet.Put( SvxColorItem( aCol, RES_CHRATR_COLOR ) );
 }
 
 /*--------------------------------------------------------------------
@@ -585,7 +579,7 @@ const String& SwModule::GetDocStatWordDelim() const
 /* ---------------------------------------------------------------------------
 
  ---------------------------------------------------------------------------*/
-// Durchreichen der Metric von der ModuleConfig (fuer HTML-Export)
+// Durchreichen der Metric von der ModuleConfig (für HTML-Export)
 sal_uInt16 SwModule::GetMetric( sal_Bool bWeb ) const
 {
 	SwMasterUsrPref* pPref;
@@ -601,7 +595,7 @@ sal_uInt16 SwModule::GetMetric( sal_Bool bWeb ) const
 			GetUsrPref(sal_False);
 		pPref = pUsrPref;
 	}
-    return static_cast< sal_uInt16 >(pPref->GetMetric());
+	return static_cast< sal_uInt16 >(pPref->GetMetric());
 }
 /* ---------------------------------------------------------------------------
 
@@ -611,7 +605,7 @@ sal_uInt16 SwModule::GetLinkUpdMode( sal_Bool ) const
 {
 	if(!pUsrPref)
 		GetUsrPref(sal_False);
-    return (sal_uInt16)pUsrPref->GetUpdateLinkMode();
+	return (sal_uInt16)pUsrPref->GetUpdateLinkMode();
 }
 /* ---------------------------------------------------------------------------
 
@@ -620,7 +614,7 @@ SwFldUpdateFlags SwModule::GetFldUpdateFlags( sal_Bool ) const
 {
 	if(!pUsrPref)
 		GetUsrPref(sal_False);
-    return pUsrPref->GetFldUpdateFlags();
+	return pUsrPref->GetFldUpdateFlags();
 }
 /* -----------------------------28.09.00 14:18--------------------------------
 
@@ -629,7 +623,7 @@ void SwModule::ApplyFldUpdateFlags(SwFldUpdateFlags eFldFlags)
 {
 	if(!pUsrPref)
 		GetUsrPref(sal_False);
-    pUsrPref->SetFldUpdateFlags(eFldFlags);
+	pUsrPref->SetFldUpdateFlags(eFldFlags);
 }
 /* -----------------------------28.09.00 14:18--------------------------------
 
@@ -656,14 +650,14 @@ void SwModule::CheckSpellChanges( sal_Bool bOnlineSpelling,
 			 pDocSh = (SwDocShell*)SfxObjectShell::GetNext( *pDocSh, &aType ) )
 		{
 			SwDoc* pTmp = pDocSh->GetDoc();
-			if ( pTmp->GetCurrentViewShell() )	//swmod 071108//swmod 071225
-            {
+			if ( pTmp->GetCurrentViewShell() )	// swmod 071108//swmod 071225
+			{
 				pTmp->SpellItAgainSam( bInvalid, bOnlyWrong, bSmartTags );
-                ViewShell* pViewShell = 0;
-                pTmp->GetEditShell( &pViewShell );
-                if ( bSmartTags && pViewShell && pViewShell->GetWin() )
-                    pViewShell->GetWin()->Invalidate();
-            }
+				ViewShell* pViewShell = 0;
+				pTmp->GetEditShell( &pViewShell );
+				if ( bSmartTags && pViewShell && pViewShell->GetWin() )
+					pViewShell->GetWin()->Invalidate();
+			}
 		}
 //		pSpell->SetSpellWrongAgain( sal_False );
 //		pSpell->SetSpellAllAgain( sal_False );
@@ -672,7 +666,9 @@ void SwModule::CheckSpellChanges( sal_Bool bOnlineSpelling,
 
 void SwModule::ApplyDefaultPageMode(sal_Bool bIsSquaredPageMode)
 {
-    if(!pUsrPref)
-        GetUsrPref(sal_False);
-    pUsrPref->SetDefaultPageMode(bIsSquaredPageMode);
+	if(!pUsrPref)
+		GetUsrPref(sal_False);
+	pUsrPref->SetDefaultPageMode(bIsSquaredPageMode);
 }
+
+/* vim: set noet sw=4 ts=4: */

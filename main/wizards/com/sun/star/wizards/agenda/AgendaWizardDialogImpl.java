@@ -88,7 +88,7 @@ public class AgendaWizardDialogImpl extends AgendaWizardDialog
     private TopicsControl topicsControl;
     
     /**
-     * an array with two array memebers:
+     * an array with two array members:
      * agendaTemplates[0] contains an array with
      * UI template names.
      * agendaTemplates[1] contains an array with

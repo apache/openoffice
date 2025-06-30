@@ -655,7 +655,7 @@ typedef	void *oslFileHandle;
 
 /** Open a regular file.
 
-    Open a file. Only regular files	can be openend.
+    Open a file. Only regular files	can be opened.
     
 	@param pustrFileURL [in] 
 	The full qualified URL of the file to open. 
@@ -1328,7 +1328,7 @@ oslFileError SAL_CALL osl_getCanonicalName( rtl_uString *pustrRequestedURL, rtl_
 	If pustrRelativeFileURL denotes an absolute path pustrBaseDirectoryURL will be ignored.
 	
 	@param ppustrAbsoluteFileURL [out]
-	On success it receives the full qualified absoulte file URL.
+	On success it receives the full qualified absolute file URL.
 
 	@return 
 	osl_File_E_None on success<br> 

@@ -54,7 +54,7 @@ published interface XMenu: com::sun::star::uno::XInterface
         <member>getItemCount()</member> or if it is negative.</p>
 
         @param nItemId
-            specifies the ID of the menu item to be insterted.
+            specifies the ID of the menu item to be inserted.
 
         @param aText
             specifies the label of the menu item.
@@ -64,7 +64,7 @@ published interface XMenu: com::sun::star::uno::XInterface
             <type>MenuItemStyle</type>.
 
         @param nItemPos
-            specifies the position where the menu item will be insterted.
+            specifies the position where the menu item will be inserted.
      */
     [oneway] void insertItem( [in] short nItemId,
                               [in] string aText,

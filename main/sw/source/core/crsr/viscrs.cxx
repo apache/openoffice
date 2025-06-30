@@ -762,7 +762,7 @@ void SwSelPaintRects::Get1PixelInLogic( const ViewShell& rSh,
 }
 
 
-/*  */
+/* */
 
 SwShellCrsr::SwShellCrsr(
     const SwCrsrShell& rCShell,
@@ -957,7 +957,7 @@ sal_Bool SwShellCrsr::IsAtValidPos( sal_Bool bPoint ) const
 	return SwCursor::IsAtValidPos( bPoint );
 }
 
-/*  */
+/* */
 
 SwShellTableCrsr::SwShellTableCrsr( const SwCrsrShell& rCrsrSh,
 									const SwPosition& rPos )

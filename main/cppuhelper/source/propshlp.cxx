@@ -472,7 +472,7 @@ void OPropertySetHelper::setDependentFastPropertyValue( sal_Int32 i_handle, cons
 	catch (const RuntimeException& )            { throw;	/* allowed to leave */ }
 	catch (const Exception& )
 	{
-		// not allowed to leave this meathod
+		// not allowed to leave this method
 		WrappedTargetException aWrapped;
         aWrapped.TargetException <<= ::cppu::getCaughtException();
 		aWrapped.Context = static_cast< XPropertySet* >( this );
@@ -540,7 +540,7 @@ void OPropertySetHelper::setFastPropertyValue( sal_Int32 nHandle, const Any& rVa
 			catch (const ::com::sun::star::uno::RuntimeException& )				{ throw;	/* allowed to leave */ }
 			catch (const ::com::sun::star::uno::Exception& e )
 			{
-				// not allowed to leave this meathod
+				// not allowed to leave this method
 				::com::sun::star::lang::WrappedTargetException aWrap;
 				aWrap.Context = static_cast< ::com::sun::star::beans::XPropertySet* >( this );
 				aWrap.TargetException <<= e;
@@ -906,7 +906,7 @@ void OPropertySetHelper::setFastPropertyValues(
 
 // XMultiPropertySet
 /**
- * The sequence may be conatain not known properties. The implementation
+ * The sequence may contain not known properties. The implementation
  * must ignore these properties.
  */
 void OPropertySetHelper::setPropertyValues(

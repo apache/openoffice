@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -54,7 +54,7 @@ use strict;
 
 =cut
 sub analyze_languagelist()
-{   
+{
     my $languageproduct = $installer::globals::languagelist;
 
     $languageproduct =~ s/\_/\,/g;  # substituting "_" by ",", in case of dmake definition 01_49
@@ -105,7 +105,7 @@ sub get_language_directory_name ($)
 # Reading languages from zip list file
 ####################################################
 
-sub get_info_about_languages 
+sub get_info_about_languages
 {
 	my ( $allsettingsarrayref ) = @_;
 
@@ -118,11 +118,11 @@ sub get_info_about_languages
 	{
 		installer::exiter::exit_program("ERROR: Languages not defined on command line (-l) and not in product list!", "get_info_about_languages");
 	}
-		
+
 	# Adapting the separator format from zip list.
 	# | means new product, , (comma) means more than one language in one product
 	# On the command line, | is difficult to use. Therefore this script uses hashes
-		
+
 	$installer::globals::languagelist =~ s/\|/\#/g;
 
 	analyze_languagelist();
@@ -140,11 +140,11 @@ sub all_elements_of_array1_in_array2
 
 	for ( my $i = 0; $i <= $#{$array1}; $i++ )
 	{
-		if (! installer::existence::exists_in_array(${$array1}[$i], $array2))		
+		if (! installer::existence::exists_in_array(${$array1}[$i], $array2))
 		{
 			$array2_contains_all_elements_of_array1 = 0;
 			last;
-		}	
+		}
 	}
 
 	return $array2_contains_all_elements_of_array1;
@@ -159,12 +159,12 @@ sub all_elements_of_array1_in_array2
     $languagestring can be one or more language names, separated by ','.
 
     $installer::globals::ismultilingual is set to 1 when $languagestring contains more than one languages.
-    
+
 =cut
 sub get_all_languages_for_one_product ($$)
 {
 	my ( $languagestring, $allvariables ) = @_;
-	
+
 
 	$installer::globals::ismultilingual = ($languagestring =~ /\,/ ) ? 1 : 0;
 
@@ -175,7 +175,7 @@ sub get_all_languages_for_one_product ($$)
 	if ( $installer::globals::iswindowsbuild )
 	{
 		my $furthercheck = 1;
-		
+
 		# For some languages (that are not supported by Windows, english needs to be added to the installation set
 		# Languages saved in "@installer::globals::noMSLocaleLangs"
 
@@ -190,7 +190,7 @@ sub get_all_languages_for_one_product ($$)
 			$allvariables->{'PRODUCTLANGUAGE'} = $officestartlanguage;
 			$furthercheck = 0;
 		}
-		
+
 		# In bilingual installation sets, in which english is the first language,
 		# the Office start language shall be the second language.
 
@@ -201,9 +201,9 @@ sub get_all_languages_for_one_product ($$)
 				my $officestartlanguage = $languagearray[1];
 				$installer::globals::set_office_start_language  = 1;
 				# setting the variable PRODUCTLANGUAGE, needed for Linguistic-ForceDefaultLanguage.xcu
-				$allvariables->{'PRODUCTLANGUAGE'} = $officestartlanguage;				
+				$allvariables->{'PRODUCTLANGUAGE'} = $officestartlanguage;
 			}
-		}		
+		}
 	}
 
 	return \@languagearray;
@@ -219,9 +219,9 @@ sub get_all_languages_for_one_product ($$)
 sub fake_languagesstring
 {
 	my ($stringref) = @_;
-	
+
 	# ATTENTION: This function has to be removed as soon as possible!
-	
+
 	$$stringref =~ s/01/en-US/;
 	$$stringref =~ s/03/pt/;
 	$$stringref =~ s/07/ru/;
@@ -277,14 +277,14 @@ sub get_language_string
 }
 
 ##########################################################
-# Analyzing the languages in the languages array and 
+# Analyzing the languages in the languages array and
 # returning the most important language
 ##########################################################
 
 sub get_default_language
 {
 	my ($languagesref) = @_;
-	
+
 	return ${$languagesref}[0];		# ToDo, only returning the first language
 }
 
@@ -307,14 +307,14 @@ sub detect_asian_language
 		{
 			my $asialang = $installer::globals::asianlanguages[$j];
 			$asialang =~ s/\s*$//;
-			
+
 			if ( $onelang eq $asialang )
 			{
 				$containsasia = 1;
 				last;
 			}
 		}
-		
+
 		if ( $containsasia ) { last; }
 	}
 
@@ -336,7 +336,7 @@ sub contains_only_asian_languages
 		my $onelang = ${$languagesref}[$i];
 		$onelang =~ s/\s*$//;
 
-		if (! installer::existence::exists_in_array($onelang, \@installer::globals::asianlanguages))		
+		if (! installer::existence::exists_in_array($onelang, \@installer::globals::asianlanguages))
 		{
 			$onlyasian = 0;
 			last;
@@ -355,7 +355,7 @@ sub detect_western_language
 	my ($languagesref) = @_;
 
 	my $containswestern = 1;
-	
+
 	if ( contains_only_asian_languages($languagesref) ) { $containswestern = 0; }
 
 	return $containswestern;
@@ -368,9 +368,9 @@ sub detect_western_language
 sub get_java_language
 {
 	my ( $language ) = @_;
-	
+
 	# my $javalanguage = "";
-	
+
 	# if ( $language eq "en-US" ) { $javalanguage = "en_US"; }
 	# elsif ( $language eq "ar" ) { $javalanguage = "ar_AR"; }
 	# elsif ( $language eq "bg" ) { $javalanguage = "bg_BG"; }
@@ -400,16 +400,16 @@ sub get_java_language
 	# elsif ( $language eq "th" ) { $javalanguage = "th_TH"; }
 	# elsif ( $language eq "zh-CN" ) { $javalanguage = "zh_CN"; }
 	# elsif ( $language eq "zh-TW" ) { $javalanguage = "zh_TW"; }
-	
+
 	# languages not defined yet
 	# if ( $javalanguage eq "" )
 	# {
 	# 	$javalanguage = $language;
-	#	$javalanguage =~ s/\-/\_/;	
+	#	$javalanguage =~ s/\-/\_/;
 	# }
 
 	my $javalanguage = $language;
-	$javalanguage =~ s/\-/\_/;	
+	$javalanguage =~ s/\-/\_/;
 
 	return $javalanguage;
 }
@@ -436,7 +436,7 @@ sub get_key_language ($)
     my ($languages) = @_;
 
     my $language_count = scalar @$languages;
-    
+
     if ($language_count == 1)
     {
         return $languages->[0];

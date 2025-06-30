@@ -320,7 +320,7 @@ namespace svt { namespace table
     //====================================================================
 	//= ITableModel
 	//====================================================================
-    /** declares the interface to implement by an abtract table model
+    /** declares the interface to implement by an abstract table model
     */
 	class SAL_NO_VTABLE SVT_DLLPUBLIC ITableModel
 	{
@@ -410,11 +410,11 @@ namespace svt { namespace table
         */
         virtual TableMetrics    getRowHeaderWidth() const = 0;
 
-        /** returns the visibilit mode of the vertical scrollbar
+        /** returns the visibility mode of the vertical scrollbar
         */
         virtual ScrollbarVisibility getVerticalScrollbarVisibility() const = 0;
 
-        /** returns the visibilit mode of the horizontal scrollbar
+        /** returns the visibility mode of the horizontal scrollbar
         */
         virtual ScrollbarVisibility getHorizontalScrollbarVisibility() const = 0;
 

@@ -224,7 +224,7 @@ void ConfigurationControllerResourceManager::DeactivateResource (
         
         if (aDescriptor.mxResource.is() && aDescriptor.mxResourceFactory.is())
         {
-            // 2.  Notifiy listeners that the resource is being deactivated. 
+            // 2.  Notify listeners that the resource is being deactivated.
             mpBroadcaster->NotifyListeners(
                 FrameworkHelper::msResourceDeactivationEvent,
                 rxResourceId,
@@ -258,7 +258,7 @@ void ConfigurationControllerResourceManager::DeactivateResource (
         DBG_UNHANDLED_EXCEPTION();
     }
     
-    // 5.  Notifiy listeners that the resource is being deactivated. 
+    // 5.  Notify listeners that the resource is being deactivated.
     mpBroadcaster->NotifyListeners(
         FrameworkHelper::msResourceDeactivationEndEvent,
         rxResourceId,

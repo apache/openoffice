@@ -21,15 +21,22 @@
 
 
 
-package ifc.i18n;
-
-import lib.MultiMethodTest;
+package api.i18n;
 
 import com.sun.star.i18n.TransliterationModules;
 import com.sun.star.i18n.TransliterationModulesNew;
 import com.sun.star.i18n.TransliterationType;
 import com.sun.star.i18n.XTransliteration;
 import com.sun.star.lang.Locale;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
 
 /**
 * Testing <code>com.sun.star.i18n.XTransliteration</code>
@@ -50,30 +57,56 @@ import com.sun.star.lang.Locale;
 * Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.i18n.XTransliteration
 */
-public class _XTransliteration extends MultiMethodTest {
+public class XTransliterationTest {
+    private static final UnoApp app = new UnoApp();
 
+    private XComponentContext xContext = null;
     public XTransliteration oObj = null;
     private String[] mod = null ;
     private Locale loc = new Locale("en", "EN", "") ;
+
+
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
+        oObj = UnoRuntime.queryInterface(
+            XTransliteration.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.Transliteration", xContext)
+        );
+    }
 
     /**
     * Gets all available transliteration modules. <p>
     * Has <b>OK</b> status if array returned has at least
     * one module name.
     */
+    @Test
     public void _getAvailableModules() {
         mod = oObj.getAvailableModules(loc, TransliterationType.ONE_TO_ONE);
 
         if (mod != null) {
-            log.println("Available modules :") ;
+            System.out.println("Available modules :") ;
             for (int i = 0; i < mod.length; i++) {
-                log.println("  '" + mod[i] + "'") ;
+                System.out.println("  '" + mod[i] + "'") ;
             }
         } else {
-            log.println("!!! NULL returned !!!") ;
+            System.out.println("!!! NULL returned !!!") ;
         }
 
-        tRes.tested("getAvailableModules()", mod != null && mod.length > 0) ;
+        Assert.assertTrue("getAvailableModules()", mod != null && mod.length > 0) ;
     }
 
     /**
@@ -82,15 +115,16 @@ public class _XTransliteration extends MultiMethodTest {
     * Has <b>OK</b> status if the method <code>getName</code> returns the
     * string "case ignore (generic)".
     */
+    @Test
     public void _loadModule() {
-        log.println("Load module IGNORE_CASE");
+        System.out.println("Load module IGNORE_CASE");
         oObj.loadModule(TransliterationModules.IGNORE_CASE, loc);
 
         String name = oObj.getName();
         boolean res = name.equals("case ignore (generic)");
-        log.println("getName return: " + name);
+        System.out.println("getName return: " + name);
 
-        tRes.tested("loadModule()", res );
+        Assert.assertTrue("loadModule()", res );
     }
 
     /**
@@ -100,6 +134,7 @@ public class _XTransliteration extends MultiMethodTest {
      * Has <b>OK</b> status if the name of the object is equals to
      * 'lower_to_upper(generic)'
      */
+    @Test
     public void _loadModuleNew() {
         boolean result = true ;
 
@@ -109,9 +144,9 @@ public class _XTransliteration extends MultiMethodTest {
 
         String name = oObj.getName();
         result = name.equals("lower_to_upper(generic)");
-        log.println("getName return: " + name);
+        System.out.println("getName return: " + name);
 
-        tRes.tested("loadModuleNew()", result);
+        Assert.assertTrue("loadModuleNew()", result);
     }
 
     /**
@@ -120,15 +155,16 @@ public class _XTransliteration extends MultiMethodTest {
     * Has <b>OK</b> status if the method <code>getName</code> returns the
     * string "lower_to_upper(generic)".
     */
+    @Test
     public void _loadModuleByImplName() {
-        log.println("Load module LOWERCASE_UPPERCASE");
+        System.out.println("Load module LOWERCASE_UPPERCASE");
         oObj.loadModuleByImplName("LOWERCASE_UPPERCASE", loc);
 
         String name = oObj.getName();
         boolean res = name.equals("lower_to_upper(generic)");
-        log.println("getName return: " + name);
+        System.out.println("getName return: " + name);
 
-        tRes.tested("loadModuleByImplName()", res);
+        Assert.assertTrue("loadModuleByImplName()", res);
     }
 
     /**
@@ -137,25 +173,27 @@ public class _XTransliteration extends MultiMethodTest {
     * Has <b>OK</b> status if the method <code>getName</code> returns the
     * string "upper_to_lower(generic)".
     */
+    @Test
     public void _loadModulesByImplNames() {
-        log.println("Load module UPPERCASE_LOWERCASE");
+        System.out.println("Load module UPPERCASE_LOWERCASE");
         oObj.loadModulesByImplNames(new String[]{"UPPERCASE_LOWERCASE"}, loc);
 
         String name = oObj.getName();
         boolean res = name.equals("upper_to_lower(generic)");
-        log.println("getName return: " + name);
+        System.out.println("getName return: " + name);
 
-        tRes.tested("loadModulesByImplNames()", res);
+        Assert.assertTrue("loadModulesByImplNames()", res);
     }
 
     /**
      * Loads <code>LOWERCASE_UPPERCASE</code> module and checks current type.
      * <p>Has <b>OK</b> status if the type is <code>ONE_TO_ONE</code>
      */
+    @Test
     public void _getType() {
         oObj.loadModule(TransliterationModules.LOWERCASE_UPPERCASE, loc);
         boolean result = oObj.getType() == TransliterationType.ONE_TO_ONE;
-        tRes.tested("getType()", result);
+        Assert.assertTrue("getType()", result);
     }
 
     /**
@@ -165,14 +203,15 @@ public class _XTransliteration extends MultiMethodTest {
     * Has <b>OK</b> status if the method <code>getName</code> returns the
     * string "upper_to_lower(generic)".
     */
+    @Test
     public void _getName() {
         oObj.loadModule(TransliterationModules.LOWERCASE_UPPERCASE, loc);
 
         String name = oObj.getName();
         boolean res = name.equals("lower_to_upper(generic)");
-        log.println("getName return: " + name);
+        System.out.println("getName return: " + name);
 
-        tRes.tested("getName()", res);
+        Assert.assertTrue("getName()", res);
     }
 
     /**
@@ -183,6 +222,7 @@ public class _XTransliteration extends MultiMethodTest {
     * elements are positions of substring characters in the source
     * string.
     */
+    @Test
     public void _transliterate() {
         oObj.loadModule(TransliterationModules.LOWERCASE_UPPERCASE, loc);
 
@@ -196,7 +236,7 @@ public class _XTransliteration extends MultiMethodTest {
             offs[0][2] == 3 &&
             offs[0][3] == 4 ;
 
-        tRes.tested("transliterate()", result) ;
+        Assert.assertTrue("transliterate()", result) ;
     }
 
 
@@ -207,14 +247,15 @@ public class _XTransliteration extends MultiMethodTest {
     * returned (not null, length = 4, with two ranges
     * (a, i), (A, I) in any order).
     */
+    @Test
     public void _transliterateRange() {
         oObj.loadModule(TransliterationModules.IGNORE_CASE, loc);
 
         String[] out = oObj.transliterateRange("a", "i") ;
 
-        log.println("transliterateRange return:");
+        System.out.println("transliterateRange return:");
         for(int i = 0; i < out.length; i++) {
-            log.println(out[i]);
+            System.out.println(out[i]);
         }
 
         boolean bOK = out != null &&
@@ -225,14 +266,14 @@ public class _XTransliteration extends MultiMethodTest {
             "A".equals(out[2]) && "I".equals(out[3])) ;
 
         if (!bOK) {
-            log.println("Unexpected range returned :");
+            System.out.println("Unexpected range returned :");
             for (int i = 0; i < out.length; i++) {
-                log.print("'" + out[i] +"', ");
+                System.out.print("'" + out[i] +"', ");
             }
-            log.println();
+            System.out.println();
         }
 
-        tRes.tested("transliterateRange()", bOK);
+        Assert.assertTrue("transliterateRange()", bOK);
     }
 
     /**
@@ -240,6 +281,7 @@ public class _XTransliteration extends MultiMethodTest {
     * method so it indirectly tested in this method. <p>
     * Always has <b>OK</b> status.
     */
+    @Test
     public void _folding() {
         oObj.loadModule(TransliterationModules.LOWERCASE_UPPERCASE, loc);
 
@@ -254,7 +296,7 @@ public class _XTransliteration extends MultiMethodTest {
             offs[0][3] == 4 ;
 
 
-        tRes.tested("folding()", result) ;
+        Assert.assertTrue("folding()", result) ;
     }
 
 
@@ -263,6 +305,7 @@ public class _XTransliteration extends MultiMethodTest {
     * Tries to compare two equal substrings. <p>
     * Has <b>OK</b> status if the method returned <code>true</code>.
     */
+    @Test
     public void _equals() {
         oObj.loadModule(TransliterationModules.LOWERCASE_UPPERCASE, loc);
 
@@ -272,10 +315,10 @@ public class _XTransliteration extends MultiMethodTest {
         boolean res = oObj.equals("aAbBcC", 1, 3, match1, "aAbBcC", 1,
             3, match2) ;
 
-        log.println("Returned : " + res + " Match1 = " + match1[0] +
+        System.out.println("Returned : " + res + " Match1 = " + match1[0] +
             " Match2 = " + match2[0]) ;
 
-        tRes.tested("equals()", res) ;
+        Assert.assertTrue("equals()", res) ;
     }
 
     /**
@@ -288,6 +331,7 @@ public class _XTransliteration extends MultiMethodTest {
      * proper value according to lexicographical order and if
      * comparisons with invalid parameters return none 0 value.
      */
+    @Test
     public void _compareSubstring() {
         oObj.loadModule(TransliterationModules.LOWERCASE_UPPERCASE, loc);
         boolean result = true ;
@@ -311,7 +355,7 @@ public class _XTransliteration extends MultiMethodTest {
 
         // testing with wrong offsets and lengths
 
-        tRes.tested("compareSubstring()", result) ;
+        Assert.assertTrue("compareSubstring()", result) ;
     }
 
     /**
@@ -332,34 +376,34 @@ public class _XTransliteration extends MultiMethodTest {
         try {
             res = oObj.compareSubstring(str1, p1, len1, str2, p2, len2);
         } catch (java.lang.NullPointerException e) {
-            log.println("Exception while method calling occurs :" + e);
+            System.out.println("Exception while method calling occurs :" + e);
         }
 
         if (res != expRes) {
-            log.print("Comparing FAILED; return: " + res + ", expected: " +
+            System.out.print("Comparing FAILED; return: " + res + ", expected: " +
                 expRes + " ");
             ret = false ;
         } else {
-            log.print("Comparing OK : ");
+            System.out.print("Comparing OK : ");
         }
-        log.println("('" + str1 + "', " + p1 + ", " + len1 + ", '" +
+        System.out.println("('" + str1 + "', " + p1 + ", " + len1 + ", '" +
             str2 + "', " + p2 + ", " + len2 + ")");
 
         res = -666 ;
         try {
             res = oObj.compareSubstring(str2, p2, len2, str1, p1, len1);
         } catch (java.lang.NullPointerException e) {
-            log.println("Exception while method calling occurs :" + e);
+            System.out.println("Exception while method calling occurs :" + e);
         }
 
         if (res != -expRes) {
-            log.print("Comparing FAILED; return: " + res + ", expected: " +
+            System.out.print("Comparing FAILED; return: " + res + ", expected: " +
                 -expRes  + " ");
             ret = false ;
         } else {
-            log.print("Comparing OK :");
+            System.out.print("Comparing OK :");
         }
-        log.println("('" + str2 + "', " + p2 + ", " + len2 + ", '" +
+        System.out.println("('" + str2 + "', " + p2 + ", " + len2 + ", '" +
             str1 + "', " + p1 + ", " + len1 + ")");
 
         return ret ;
@@ -373,6 +417,7 @@ public class _XTransliteration extends MultiMethodTest {
      * always return 0 and if comparisons of none equal returns
      * proper value according to lexicographical order .
      */
+    @Test
     public void _compareString() {
         oObj.loadModule(TransliterationModules.LOWERCASE_UPPERCASE, loc);
         boolean result = true ;
@@ -392,7 +437,7 @@ public class _XTransliteration extends MultiMethodTest {
         result &= testString("aaa\t\na", "aaa\t\na", 0) ;
         result &= testString("aaa\t\nb", "aaa\t\na", 1) ;
 
-        tRes.tested("compareString()", result) ;
+        Assert.assertTrue("compareString()", result) ;
     }
 
     /**
@@ -418,13 +463,13 @@ public class _XTransliteration extends MultiMethodTest {
         try {
             res = oObj.compareString(str1, str2);
         } catch (java.lang.NullPointerException e) {
-            log.println("Exception while method calling occurs :" + e);
+            System.out.println("Exception while method calling occurs :" + e);
         }
 
         if (res == expRes) {
-            log.println("Comparing of '" + str1 + "' and '" + str2 + "' OK" );
+            System.out.println("Comparing of '" + str1 + "' and '" + str2 + "' OK" );
         } else {
-            log.println("Comparing of '" + str1 + "' and '" + str2 +
+            System.out.println("Comparing of '" + str1 + "' and '" + str2 +
                 "' FAILED; return: " + res + ", expected: " + expRes);
             ret = false ;
         }
@@ -435,13 +480,13 @@ public class _XTransliteration extends MultiMethodTest {
         try {
             res = oObj.compareString(str2, str1);
         } catch (java.lang.NullPointerException e) {
-            log.println("Exception while method calling occurs :" + e);
+            System.out.println("Exception while method calling occurs :" + e);
         }
 
         if (res == -expRes) {
-            log.println("Comparing of '" + str2 + "' and '" + str1 + "' OK" );
+            System.out.println("Comparing of '" + str2 + "' and '" + str1 + "' OK" );
         } else {
-            log.println("Comparing of '" + str2 + "' and '" + str1 +
+            System.out.println("Comparing of '" + str2 + "' and '" + str1 +
                 "' FAILED; return: " + res + ", expected: " + -expRes);
             ret = false ;
         }

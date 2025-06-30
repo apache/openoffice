@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -43,13 +43,13 @@ sub get_module_name_description
 	my ($modulesarrayref, $onelanguage, $gid, $type) = @_;
 
 	my $found = 0;
-	
+
 	my $newstring = "";
 
 	for ( my $i = 0; $i <= $#{$modulesarrayref}; $i++ )
 	{
 		my $onemodule = ${$modulesarrayref}[$i];
-		
+
 		if ( $onemodule->{'gid'} eq $gid )
 		{
 			my $typestring = $type . " " . "(" . $onelanguage . ")";
@@ -59,13 +59,13 @@ sub get_module_name_description
 
 		if ( $found ) { last; }
 	}
-	
+
 	# defaulting to english
-	
+
 	if ( ! $found )
 	{
 		my $defaultlanguage = "en-US";
-		
+
 		for ( my $i = 0; $i <= $#{$modulesarrayref}; $i++ )
 		{
 			my $onemodule = ${$modulesarrayref}[$i];
@@ -85,7 +85,7 @@ sub get_module_name_description
 }
 
 ###################################################
-# Finding module, specified by the gid 
+# Finding module, specified by the gid
 ###################################################
 
 sub get_module
@@ -94,11 +94,11 @@ sub get_module
 
 	my $found = 0;
 	my $searchmodule = "";
-	
+
 	for ( my $i = 0; $i <= $#{$modulesarrayref}; $i++ )
 	{
 		my $onemodule = ${$modulesarrayref}[$i];
-		
+
 		if ( $onemodule->{'gid'} eq $modulegid )
 		{
 			$searchmodule = $onemodule;
@@ -108,38 +108,38 @@ sub get_module
 
 		# if ( ! $found ) { installer::exiter::exit_program("ERROR: Could not find module belonging to gid $modulegid!", "get_module (xpdinstaller)"); }
 	}
-	
+
 	return $searchmodule;
 }
 
 ###################################################
-# Creating package start tag 
+# Creating package start tag
 ###################################################
 
 sub get_package_tag
 {
 	my ( $module, $indent, $linkpackage ) = @_;
-	
+
 	my $modulegid = $module->{'gid'};
 	if ( $linkpackage ) { $modulegid = $modulegid . "u"; }
 	my $parentgid = "";
 	if ( $module->{'ParentID'} ) { $parentgid = $module->{'ParentID'}; }
 	if ( $parentgid eq "" ) { $parentgid = "root"; }
 	if ( $module->{'XPDParentID'} ) { $parentgid = $module->{'XPDParentID'}; } # changing parent of "Prg" and "Opt" to "root"
-	
-	my $tag = $indent . "<package " . "name=" . "\"" . $modulegid . "\" " . "parent=" . "\"" . $parentgid . "\">" . "\n"; 
+
+	my $tag = $indent . "<package " . "name=" . "\"" . $modulegid . "\" " . "parent=" . "\"" . $parentgid . "\">" . "\n";
 
 	return ( $tag, $parentgid );
 }
 
 ###################################################
-# Creating display start tag 
+# Creating display start tag
 ###################################################
 
 sub get_display_tag
 {
 	my ( $module, $indent ) = @_;
-	
+
 	# Styles=(HIDDEN_ROOT)
 	my $styles = "";
 	my $type = "";
@@ -149,34 +149,34 @@ sub get_display_tag
 
 	# special handling for language modules. Only visible in multilingual installation set.
 	if (( $styles =~ /\bSHOW_MULTILINGUAL_ONLY\b/ ) && ( ! $installer::globals::ismultilingual )) { $type = "hidden"; }
-	
+
 	# special handling for the root module, which has no parent
 	my $parentgid = "";
 	if ( $module->{'ParentID'} ) { $parentgid = $module->{'ParentID'}; }
 	if ( $parentgid eq "" ) { $type = "hidden"; }
 
-	my $tag = $indent . "<display " . "type=" . "\"" . $type . "\"" . ">" . "\n"; 
+	my $tag = $indent . "<display " . "type=" . "\"" . $type . "\"" . ">" . "\n";
 
 	return $tag;
 }
 
 ###################################################
-# Creating installunit start tag 
+# Creating installunit start tag
 ###################################################
 
 sub get_installunit_tag
 {
 	my ( $indent ) = @_;
-	
+
 	my $type = $installer::globals::packageformat;
-	
-	my $tag = $indent . "<installunit " . "type=" . "\"" . $type . "\"" . ">" . "\n"; 
+
+	my $tag = $indent . "<installunit " . "type=" . "\"" . $type . "\"" . ">" . "\n";
 
 	return $tag;
 }
 
 ###################################################
-# Creating simple start tags 
+# Creating simple start tags
 ###################################################
 
 sub get_start_tag
@@ -188,7 +188,7 @@ sub get_start_tag
 }
 
 ###################################################
-# Creating end tags 
+# Creating end tags
 ###################################################
 
 sub get_end_tag
@@ -200,12 +200,12 @@ sub get_end_tag
 }
 
 ###################################################
-# Creating simple complete tag 
+# Creating simple complete tag
 ###################################################
 
 sub get_tag_line
 {
-	my ( $indent, $name, $value ) = @_; 
+	my ( $indent, $name, $value ) = @_;
 	$value = '' unless defined $value;
 
 	my $line = $indent . "<" . $name . ">" . $value . "</" . $name . ">" . "\n";
@@ -213,7 +213,7 @@ sub get_tag_line
 }
 
 ###################################################
-# Asking module for sortkey entry 
+# Asking module for sortkey entry
 ###################################################
 
 sub get_sortkey_value
@@ -221,14 +221,14 @@ sub get_sortkey_value
 	my ( $module ) = @_;
 
 	my $value = "9999";
-		
+
 	if ( $module->{'Sortkey'} ) { $value = $module->{'Sortkey'}; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Asking module for default entry 
+# Asking module for default entry
 ###################################################
 
 sub get_default_value
@@ -236,17 +236,17 @@ sub get_default_value
 	my ( $module ) = @_;
 
 	my $value = "";
-		
+
 	if ( $module->{'Default'} ) { $value = $module->{'Default'}; } # is YES or NO
-	
+
 	if ( $value =~ /\bNO\b/i ) { $value = "false"; }
 	else { $value = "true"; }
-		
+
 	return $value;
 }
 
 ###################################################
-# Asking module for showinuserinstall entry 
+# Asking module for showinuserinstall entry
 # scp style: DONTSHOWINUSERINSTALL
 ###################################################
 
@@ -255,16 +255,16 @@ sub get_showinuserinstall_value
 	my ( $module ) = @_;
 
 	my $value = "true";
-	
+
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
-	if ( $styles =~ /\bDONTSHOWINUSERINSTALL\b/ ) { $value = "false"; }	
-	
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
+	if ( $styles =~ /\bDONTSHOWINUSERINSTALL\b/ ) { $value = "false"; }
+
 	return $value;
 }
 
 ###################################################
-# Asking module for showinuserinstall entry 
+# Asking module for showinuserinstall entry
 # scp style: USERINSTALLONLY
 ###################################################
 
@@ -273,16 +273,16 @@ sub get_userinstallonly_value
 	my ( $module ) = @_;
 
 	my $value = "false";
-	
+
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
-	if ( $styles =~ /\bUSERINSTALLONLY\b/ ) { $value = "true"; }	
-	
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
+	if ( $styles =~ /\bUSERINSTALLONLY\b/ ) { $value = "true"; }
+
 	return $value;
 }
 
 ###################################################
-# Asking module for dontuninstall entry 
+# Asking module for dontuninstall entry
 # scp style: DONTUNINSTALL
 ###################################################
 
@@ -293,14 +293,14 @@ sub get_dontuninstall_value
 	my $value = "false";
 
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
 	if ( $styles =~ /\bDONTUNINSTALL\b/ ) { $value = "true"; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Asking module for XpdCheckSolaris entry 
+# Asking module for XpdCheckSolaris entry
 # (belongs to scp module)
 ###################################################
 
@@ -309,13 +309,13 @@ sub get_checksolaris_value
 	my ( $module ) = @_;
 
 	my $value = "";
-	if ( $module->{'XpdCheckSolaris'} ) { $value = $module->{'XpdCheckSolaris'}; } 
-	
+	if ( $module->{'XpdCheckSolaris'} ) { $value = $module->{'XpdCheckSolaris'}; }
+
 	return $value;
 }
 
 ###################################################
-# Asking module for isupdatepackage entry 
+# Asking module for isupdatepackage entry
 # scp style: ISUPDATEPACKAGE
 ###################################################
 
@@ -326,14 +326,14 @@ sub get_isupdatepackage_value
 	my $value = "false";
 
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
 	if ( $styles =~ /\bISUPDATEPACKAGE\b/ ) { $value = "true"; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Asking module for showmultilingualonly entry 
+# Asking module for showmultilingualonly entry
 # scp style: SHOW_MULTILINGUAL_ONLY
 ###################################################
 
@@ -344,14 +344,14 @@ sub get_showmultilingualonly_value
 	my $value = "false";
 
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
 	if ( $styles =~ /\bSHOW_MULTILINGUAL_ONLY\b/ ) { $value = "true"; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Asking module for showmultilingualonly entry 
+# Asking module for showmultilingualonly entry
 # scp style: SHOW_MULTILINGUAL_ONLY
 ###################################################
 
@@ -362,14 +362,14 @@ sub get_applicationmodule_value
 	my $value = "false";
 
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
 	if ( $styles =~ /\bAPPLICATIONMODULE\b/ ) { $value = "true"; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Asking module for java module entry 
+# Asking module for java module entry
 # scp style: JAVAMODULE
 ###################################################
 
@@ -380,14 +380,14 @@ sub get_isjavamodule_value
 	my $value = "false";
 
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
 	if ( $styles =~ /\bJAVAMODULE\b/ ) { $value = "true"; }
-	
+
 	return $value;
 }
 
 #####################################################################
-# Asking module, if installation shall use --force 
+# Asking module, if installation shall use --force
 # scp style: USEFORCE  (Linux only)
 #####################################################################
 
@@ -398,14 +398,14 @@ sub get_useforce_value
 	my $value = "false";
 
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
 	if ( $styles =~ /\bUSEFORCE\b/ ) { $value = "true"; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Asking module, if installation can fail 
+# Asking module, if installation can fail
 # scp style: INSTALLCANFAIL
 ###################################################
 
@@ -416,14 +416,14 @@ sub get_installcanfail_value
 	my $value = "false";
 
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
 	if ( $styles =~ /\bINSTALLCANFAIL\b/ ) { $value = "true"; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Asking module, if installation can fail 
+# Asking module, if installation can fail
 # scp style: INSTALLCANFAIL
 ###################################################
 
@@ -434,40 +434,40 @@ sub get_forceintoupdate_value
 	my $value = "false";
 
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
 	if ( $styles =~ /\bFORCEINTOUPDATE\b/ ) { $value = "true"; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Substituting all occurrences of "<" by "&lt;" 
+# Substituting all occurrences of "<" by "&lt;"
 # and all occurrences of ">" by "&gt;"
 ###################################################
 
 sub replace_brackets_in_string
 {
 	my ( $string ) = @_;
-	
+
 	if ( $string =~ /\</ ) { $string =~ s/\</\&lt\;/g; }
 	if ( $string =~ /\>/ ) { $string =~ s/\>/\&gt\;/g; }
 
-	return $string;	
+	return $string;
 }
 
 ###################################################
-# Substituting all occurrences of "\uUXYZ" by 
+# Substituting all occurrences of "\uUXYZ" by
 # "&#xUXYZ;", because the use xml saxparser does
 # not know anything about this encoding. Therfore
 # the xml file can keep standard encoding "UTF-8"
-# and all strings with "\uUXYZ" do not need to 
+# and all strings with "\uUXYZ" do not need to
 # be converted from the Java installer.
 ###################################################
 
 sub replace_javaencoding_in_string
 {
 	my ( $string ) = @_;
-	
+
 	while ( $string =~ /(\\u\w\w\w\w)/ )
 	{
 		my $oldvalue = $1;
@@ -477,7 +477,7 @@ sub replace_javaencoding_in_string
 			my $number = $1;
 			$newvalue = "&#x" . $number . ";";
 		}
-		
+
 		$string =~ s/\Q$oldvalue\E/$newvalue/;
 	}
 
@@ -491,26 +491,26 @@ sub replace_javaencoding_in_string
 
 sub collect_lang_values
 {
-	my ($indent, $module, $xpdfile, $searchentry, $saveentry) = @_;	
+	my ($indent, $module, $xpdfile, $searchentry, $saveentry) = @_;
 
 	foreach $key (keys %{$module})
 	{
 		my $write_line = 0;
 		my $javalanguage = "";
-		
+
 		if ( $key =~ /^\s*\Q$searchentry\E\s+\((\S+)\)\s*$/ )	# this are the language dependent keys
 		{
 			$language = $1;
 			$javalanguage = installer::languages::get_java_language($language);
 			$write_line = 1;
-		} 
+		}
 		elsif ( $key =~ /^\s*\Q$searchentry\E\s*$/ )	# this are the language independent keys
 		{
 			$javalanguage = "en_US";
 			$write_line = 1;
 		}
-		
-		if ( $write_line ) 
+
+		if ( $write_line )
 		{
 			my $value = $module->{$key};
 			$value = replace_brackets_in_string($value);
@@ -522,27 +522,27 @@ sub collect_lang_values
 }
 
 ###################################################
-# Removing language dependent entries from 
+# Removing language dependent entries from
 # module hash (Name and Description)
 ###################################################
 
 sub remove_lang_values
 {
-	my ($module, $searchentry) = @_;	
+	my ($module, $searchentry) = @_;
 
 	my $key = "";
 
 	foreach $key (keys %{$module})
-	{		
+	{
 		if ( $key =~ /^\s*\Q$searchentry\E\s+\((\S+)\)\s*$/ )	# this are the language dependent keys
 		{
 			delete($module->{$key});
-		} 
+		}
 	}
 }
 
 ###################################################
-# Setting package install order 
+# Setting package install order
 ###################################################
 
 sub get_order_value
@@ -550,14 +550,14 @@ sub get_order_value
 	my ( $module ) = @_;
 
 	my $value = "1000"; # Setting the default value
-	
+
 	if ( $module->{'InstallOrder'} ) { $value = $module->{'InstallOrder'}; }
 
 	return $value;
 }
 
 ###################################################
-# Checking size of package 
+# Checking size of package
 ###################################################
 
 sub get_size_value
@@ -576,7 +576,7 @@ sub get_size_value
 	if ( $packagename =~ /\.rpm\s*$/ ) { $isrpmfile = 1; }
 
 	if (( $installer::globals::islinuxrpmbuild ) && ( $isrpmfile ))
-	{	
+	{
 		# if ( ! $installer::globals::rpmquerycommand ) { installer::exiter::exit_program("ERROR: rpm not found for querying packages!", "get_size_value"); }
 		if ( ! $installer::globals::rpmquerycommand ) { $installer::globals::rpmquerycommand = "rpm"; }
 
@@ -593,7 +593,7 @@ sub get_size_value
 		}
 		my ($rpmout, $error) = make_systemcall_allowing_error($systemcall, 0, 1);
 		$ENV{LD_LIBRARY_PATH} = $ld_library_backup;
-		# Evaluating an error, because of rpm problems with removed LD_LIBRARY_PATH 
+		# Evaluating an error, because of rpm problems with removed LD_LIBRARY_PATH
 		if ( $error )
 		{
             $installer::logger::Info->print("... trying /usr/bin/rpm ...\n");
@@ -609,7 +609,7 @@ sub get_size_value
 		else { $value = $ganzzahl; }
 
 		my $rpmname = $packagename;
-		installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$rpmname);		
+		installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$rpmname);
 		$infoline = "Filesize $rpmname : $value\n";
 		$installer::logger::Lang->print($infoline);
 	}
@@ -619,7 +619,7 @@ sub get_size_value
 		my $filename = "pkgmap";
 		$filename = $packagename . $installer::globals::separator . $filename;
 		$file = installer::files::read_file($filename);
-		
+
 		for ( my $i = 0; $i <= $#{$file}; $i++ )
 		{
 			my $line = ${$file}[$i];
@@ -630,16 +630,16 @@ sub get_size_value
 				$value = $value/2;		# not blocks, but kB
 				last;
 			}
-		}		
+		}
 	}
-	
+
 	if ( $value eq "" ) { $value = "0"; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Checking md5 of package 
+# Checking md5 of package
 ###################################################
 
 sub get_md5_value
@@ -647,7 +647,7 @@ sub get_md5_value
 	my ( $packagename, $xpdinfo ) = @_;
 
 	my $value = "";
-	
+
 	if ( $xpdinfo->{'md5sum'} )
 	{
 		$value =  $xpdinfo->{'md5sum'};
@@ -657,7 +657,7 @@ sub get_md5_value
 	if ( $installer::globals::islinuxrpmbuild )
 	{
 		my $md5file = "/usr/bin/md5sum";
-	
+
 		if ( -x $md5file )
 		{
 			my $systemcall = "$md5file $packagename 2\>\&1 |";
@@ -667,19 +667,19 @@ sub get_md5_value
 			{
 				$value = $1;
 			}
-			
+
 			my $rpmname = $packagename;
-			installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$rpmname);		
+			installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$rpmname);
 			$infoline = "md5sum of $rpmname : $value\n";
 			$installer::logger::Lang->print($infoline);
 		}
 	}
-	
+
 	return $value;
 }
 
 ###################################################
-# Checking name of package 
+# Checking name of package
 ###################################################
 
 sub get_name_value
@@ -690,14 +690,14 @@ sub get_name_value
 
 	# $packagename contains the complete path to the package
 	# Only the name of file or directory is required
-	
-	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$value);		
-	
+
+	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$value);
+
 	return $value;
 }
 
 ###################################################
-# Checking full package name (Linux only) 
+# Checking full package name (Linux only)
 ###################################################
 
 sub get_fullpkgname_value
@@ -715,7 +715,7 @@ sub get_fullpkgname_value
 			$value =  $xpdinfo->{'FullPackageName'};
 			return $value;
 		}
-		
+
 		# if ( ! $installer::globals::rpmquerycommand ) { installer::exiter::exit_program("ERROR: rpm not found for querying packages!", "get_fullpkgname_value"); }
 		if ( ! $installer::globals::rpmquerycommand ) { $installer::globals::rpmquerycommand = "rpm"; }
 		my $systemcall = "$installer::globals::rpmquerycommand -qp $packagename |";
@@ -731,7 +731,7 @@ sub get_fullpkgname_value
 		}
 		my ($returnarray, $error) = make_systemcall_allowing_error($systemcall, 0, 1);
 		$ENV{LD_LIBRARY_PATH} = $ld_library_backup;
-		# Evaluating an error, because of rpm problems with removed LD_LIBRARY_PATH 
+		# Evaluating an error, because of rpm problems with removed LD_LIBRARY_PATH
 		if ( $error )
 		{
             $installer::logger::Info->print("... trying /usr/bin/rpm ...\n");
@@ -743,17 +743,17 @@ sub get_fullpkgname_value
 		installer::remover::remove_leading_and_ending_whitespaces(\$value);
 
 		my $rpmname = $packagename;
-		installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$rpmname);		
+		installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$rpmname);
 
 		$infoline = "Full package name from $rpmname: $value\n";
 		$installer::logger::Lang->print($infoline);
-	}	
-	
+	}
+
 	return $value;
 }
 
 ###################################################
-# Checking package version (Solaris only) 
+# Checking package version (Solaris only)
 ###################################################
 
 sub get_pkgversion_value
@@ -761,7 +761,7 @@ sub get_pkgversion_value
 	my ( $completepackagename, $xpdinfo ) = @_;
 
 	my $value = "";
-	
+
 	if ( $xpdinfo->{'PkgVersion'} )
 	{
 		$value =  $xpdinfo->{'PkgVersion'};
@@ -783,12 +783,12 @@ sub get_pkgversion_value
 		$value = ${$returnarray}[0];
 		installer::remover::remove_leading_and_ending_whitespaces(\$value);
 	}
-	
+
 	return $value;
 }
 
 ###################################################
-# Writing subdirectory into xpd file 
+# Writing subdirectory into xpd file
 ###################################################
 
 sub get_subdir_value
@@ -796,16 +796,16 @@ sub get_subdir_value
 	my ( $packagename, $subdir, $module ) = @_;
 
 	my $value = "";
-	
+
 	if ( $subdir ) { $value = $subdir; }
-	
+
 	if ( $module->{'Subdir'} ) { $value = $module->{'Subdir'}; }
-	
+
 	return $value;
 }
 
 ###################################################
-# Checking if package is relocatable 
+# Checking if package is relocatable
 ###################################################
 
 sub get_relocatable_value
@@ -813,16 +813,16 @@ sub get_relocatable_value
 	my ( $module ) = @_;
 
 	my $value = "true";
-	
+
 	my $styles = "";
-	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; } 
-	if ( $styles =~ /\bNOTRELOCATABLE\b/ ) { $value = "false"; }	
+	if ( $module->{'Styles'} ) { $styles = $module->{'Styles'}; }
+	if ( $styles =~ /\bNOTRELOCATABLE\b/ ) { $value = "false"; }
 
 	return $value;
 }
 
 ###################################################
-# Checking if package is relocatable 
+# Checking if package is relocatable
 ###################################################
 
 sub get_languagespecific_value
@@ -830,7 +830,7 @@ sub get_languagespecific_value
 	my ( $islanguagemodule ) = @_;
 
 	my $value = "false";
-	
+
 	if ( defined $islanguagemodule && $islanguagemodule == 1 ) { $value = "true"; }
 
 	return $value;
@@ -882,7 +882,7 @@ sub make_systemcall
             $installer::logger::Lang->print($line);
         }
 	}
-	
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: $systemcall\n";
@@ -894,7 +894,7 @@ sub make_systemcall
 		$infoline = "SUCCESS: $systemcall\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	return \@returns;
 }
 
@@ -926,7 +926,7 @@ sub make_systemcall_allowing_error
             $installer::logger::Lang->print($line);
         }
 	}
-	
+
 	if ($returnvalue)
 	{
 		if ( $can_fail )
@@ -939,7 +939,7 @@ sub make_systemcall_allowing_error
 		{
 			$infoline = "ERROR: $systemcall\n";
 			$installer::logger::Lang->print($infoline);
-			$error_occured = 1;			
+			$error_occured = 1;
 		}
 	}
 	else
@@ -947,7 +947,7 @@ sub make_systemcall_allowing_error
 		$infoline = "SUCCESS: $systemcall\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	return (\@returns, $returnvalue);
 }
 
@@ -960,19 +960,19 @@ sub get_product_tag
 	my ($allvariables, $indent) = @_;
 
 	my $productname = $allvariables->{'LCONEWORDPRODUCTNAME'};
-	my $tag = $indent . "<product " . "name=" . "\"" . $productname . "\">" . "\n"; 
+	my $tag = $indent . "<product " . "name=" . "\"" . $productname . "\">" . "\n";
 
 	return $tag;
 }
 
 ###################################################
-# Macro tags 
+# Macro tags
 ###################################################
 
 sub set_macro_tag
 {
 	my ($allvariables, $indent, $key) = @_;
-	
+
 	my $property = "";
 	my $value = "";
 
@@ -980,7 +980,7 @@ sub set_macro_tag
 	elsif ( $key eq "product_version" ) { $property = "PRODUCTVERSION"; }
 	elsif ( $key eq "product_suffix" ) { $property = "PRODUCTEXTENSION"; }
 	elsif ( $key eq "product_fullname" ) { $property = "FULLPRODUCTNAME"; }
-	
+
 	if (( $property eq "PRODUCTNAME" ) || ( $property eq "PRODUCTVERSION" ) || ( $property eq "PRODUCTEXTENSION" ))
 	{
 		$value = $allvariables->{$property};
@@ -992,7 +992,7 @@ sub set_macro_tag
 		if ( $allvariables->{"PRODUCTEXTENSION"} ) { $value = $value . " " . $allvariables->{"PRODUCTEXTENSION"}; }
 	}
 
-	my $tag = $indent . "<macro " . "key=" . "\"" . $key . "\">" . $value . "\<\/macro\>" . "\n"; 
+	my $tag = $indent . "<macro " . "key=" . "\"" . $key . "\">" . $value . "\<\/macro\>" . "\n";
 
 	return $tag;
 
@@ -1000,7 +1000,7 @@ sub set_macro_tag
 
 ###################################################
 # Setting the minor of the product version
-# Required to check for Major Upgrades. 
+# Required to check for Major Upgrades.
 ###################################################
 
 sub set_minor_tag
@@ -1012,13 +1012,13 @@ sub set_minor_tag
 	{
 		if ( $allvariables->{"PACKAGEVERSION"} =~ /^\s*\d+\.(\d+)/ ) { $productminor = $1; }
 	}
-	my $tag = $indent . "<productminor>" . $productminor . "</productminor>" . "\n"; 
+	my $tag = $indent . "<productminor>" . $productminor . "</productminor>" . "\n";
 
 	return $tag;
 }
 
 ###################################################
-# Setting the update behaviour 
+# Setting the update behaviour
 ###################################################
 
 sub set_update_tag
@@ -1027,13 +1027,13 @@ sub set_update_tag
 
 	my $updateflag = "false";
 	if ( $allvariables->{"DONTUPDATE"} ) { $updateflag = "true"; }
-	my $tag = $indent . "<dontupdate>" . $updateflag . "</dontupdate>" . "\n"; 
+	my $tag = $indent . "<dontupdate>" . $updateflag . "</dontupdate>" . "\n";
 
 	return $tag;
 }
 
 ###################################################
-# Setting the license dialog behaviour 
+# Setting the license dialog behaviour
 ###################################################
 
 sub set_hideeula_tag
@@ -1042,13 +1042,13 @@ sub set_hideeula_tag
 
 	my $hidelicenseflag = "false";
 	if ( $allvariables->{"HIDELICENSEDIALOG"} ) { $hidelicenseflag = "true"; }
-	my $tag = $indent . "<hideeula>" . $hidelicenseflag . "</hideeula>" . "\n"; 
+	my $tag = $indent . "<hideeula>" . $hidelicenseflag . "</hideeula>" . "\n";
 
 	return $tag;
 }
 
 ###################################################
-# Setting default directory 
+# Setting default directory
 ###################################################
 
 sub set_defaultdir_tag
@@ -1057,13 +1057,13 @@ sub set_defaultdir_tag
 
 	my $defaultdir = "";
 	if ( $allvariables->{"DEFAULTDESTPATH"} ) { $defaultdir = $allvariables->{"DEFAULTDESTPATH"}; }
-	my $tag = $indent . "<defaultdir>" . $defaultdir . "</defaultdir>" . "\n"; 
+	my $tag = $indent . "<defaultdir>" . $defaultdir . "</defaultdir>" . "\n";
 
 	return $tag;
 }
 
 ###################################################
-# Setting product directory 
+# Setting product directory
 ###################################################
 
 sub set_productdir_tag
@@ -1074,7 +1074,7 @@ sub set_productdir_tag
 	if ( $allvariables->{"UNIXPRODUCTNAME"} )
 	{
 		$productdir = $allvariables->{"UNIXPRODUCTNAME"};
-		
+
 		if ( $allvariables->{"BRANDPACKAGEVERSION"} )
 		{
 			$productdir = $productdir . $allvariables->{"BRANDPACKAGEVERSION"};
@@ -1085,10 +1085,10 @@ sub set_productdir_tag
 			if ( $allvariables->{"PRODUCTVERSION"} )
 			{
 				$productdir = $productdir . $allvariables->{"PRODUCTVERSION"};
-			}			
+			}
 		}
 	}
-	my $tag = $indent . "<productdir>" . $productdir . "</productdir>" . "\n"; 
+	my $tag = $indent . "<productdir>" . $productdir . "</productdir>" . "\n";
 
 	return $tag;
 }
@@ -1101,7 +1101,7 @@ sub set_packagedir_tag
 {
 	my ($indent) = @_;
 
-	my $tag = $indent . "<packagedirectory>" . $installer::globals::epmoutpath . "</packagedirectory>" . "\n"; 
+	my $tag = $indent . "<packagedirectory>" . $installer::globals::epmoutpath . "</packagedirectory>" . "\n";
 
 	return $tag;
 }
@@ -1114,7 +1114,7 @@ sub set_packagetype_tag
 {
 	my ($indent) = @_;
 
-	my $tag = $indent . "<packageformat>" . $installer::globals::packageformat . "</packageformat>" . "\n"; 
+	my $tag = $indent . "<packageformat>" . $installer::globals::packageformat . "</packageformat>" . "\n";
 
 	return $tag;
 }
@@ -1126,12 +1126,12 @@ sub set_packagetype_tag
 sub set_architecture_tag
 {
 	my ($indent) = @_;
-	
+
 	my $architecture = "";
-	if ( $installer::globals::issolarissparcbuild ) { $architecture = "sparc"; } 
-	if ( $installer::globals::issolarisx86build ) { $architecture = "i386"; }	
-	
-	my $tag = $indent . "<architecture>" . $architecture . "</architecture>" . "\n"; 
+	if ( $installer::globals::issolarissparcbuild ) { $architecture = "sparc"; }
+	if ( $installer::globals::issolarisx86build ) { $architecture = "i386"; }
+
+	my $tag = $indent . "<architecture>" . $architecture . "</architecture>" . "\n";
 
 	return $tag;
 }
@@ -1143,13 +1143,13 @@ sub set_architecture_tag
 sub set_multilanguage_tag
 {
 	my ($indent) = @_;
-	
+
 	my $value = "false";
 	if ( $installer::globals::ismultilingual == 1 ) { $value = "true"; }
-	
-	my $tag = $indent . "<multilingual>" . $value . "</multilingual>" . "\n"; 
 
-	return $tag;	
+	my $tag = $indent . "<multilingual>" . $value . "</multilingual>" . "\n";
+
+	return $tag;
 }
 
 ###################################################
@@ -1159,14 +1159,14 @@ sub set_multilanguage_tag
 sub set_language_tag
 {
 	my ($languagestringref, $indent) = @_;
-	
-	my $tag = $indent . "<languages>" . $$languagestringref . "</languages>" . "\n"; 
 
-	return $tag;	
+	my $tag = $indent . "<languages>" . $$languagestringref . "</languages>" . "\n";
+
+	return $tag;
 }
 
 ###################################################
-# Collecting content for product xpd file 
+# Collecting content for product xpd file
 ###################################################
 
 # <?xml version='1.0' encoding='utf-8'?>
@@ -1220,7 +1220,7 @@ sub get_setup_file_content
 
 	$tag = set_packagedir_tag($singleindent);
 	push(@xpdfile, $tag);
-	
+
 	$tag = set_packagetype_tag($singleindent);
 	push(@xpdfile, $tag);
 
@@ -1238,18 +1238,18 @@ sub get_setup_file_content
 
 	$tag = get_end_tag("product", $noindent);
 	push(@xpdfile, $tag);
-	
-	return \@xpdfile;	
+
+	return \@xpdfile;
 }
 
 ###################################################
-# Collecting content for xpd file 
+# Collecting content for xpd file
 ###################################################
 
 sub get_file_content
 {
 	my ( $module, $packagename, $solslanguage, $linkpackage, $isemptyparent, $subdir, $islanguagemodule, $onelanguage, $xpdinfo ) = @_;
-	
+
 	my @xpdfile = ();
 	my $value = "";
 	my $line = "";
@@ -1318,14 +1318,14 @@ sub get_file_content
 	push(@xpdfile, $line);
 
 	# iterating over all languages to get names and descriptions
-	collect_lang_values($doubleindent, $module, \@xpdfile, "Name", "name");	
-	collect_lang_values($doubleindent, $module, \@xpdfile, "Description", "description");	
+	collect_lang_values($doubleindent, $module, \@xpdfile, "Name", "name");
+	collect_lang_values($doubleindent, $module, \@xpdfile, "Description", "description");
 
 	$tag = get_end_tag("display", $singleindent);
 	push(@xpdfile, $tag);
 
 	# end of display tag
-	
+
 	if ( ! $isemptyparent )
 	{
 		# start of installunit tag -> using info from package defined in packagelist
@@ -1384,7 +1384,7 @@ sub get_file_content
 
 	$tag = get_end_tag("package", $noindent);
 	push(@xpdfile, $tag);
-	
+
 	return ( \@xpdfile, $parentgid );
 }
 
@@ -1395,26 +1395,26 @@ sub get_file_content
 sub get_xpd_filename
 {
 	my ($modulegid, $linkpackage) = @_;
-	
+
 	if ( $linkpackage ) { $modulegid = $modulegid . "u"; }
-	
+
 	my $filename = $modulegid . ".xpd";
-	
+
 	return $filename;
 }
 
 ###################################################
-# Determine, which package was created newly 
+# Determine, which package was created newly
 ###################################################
 
 sub determine_new_packagename
 {
 	my ( $installdir, $subdir, $xpdinfo ) = @_;
-	
+
 	my $newpackage = "";
-	$installdir =~ s/\Q$installer::globals::separator\E\s*$//;	
+	$installdir =~ s/\Q$installer::globals::separator\E\s*$//;
 	my $directory = $installdir . $installer::globals::separator . $subdir;
-	$directory =~ s/\Q$installer::globals::separator\E\s*$//;	
+	$directory =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	if ( $xpdinfo->{'RealPackageName'} )
 	{
@@ -1426,18 +1426,18 @@ sub determine_new_packagename
 	my ($newcontent, $allcontent) = installer::systemactions::find_new_content_in_directory($directory, \@installer::globals::currentcontent);
 	@installer::globals::currentcontent = ();
 	foreach my $element ( @{$allcontent} ) { push(@installer::globals::currentcontent, $element); }
-	
+
 	my $newentriesnumber = $#{$newcontent} + 1;
 	if ( $newentriesnumber > 1 ) { installer::exiter::exit_program("ERROR: More than one new package in directory $directory", "determine_new_packagename (xpdinstaller)"); }
 	elsif ( $newentriesnumber < 1 )  { installer::exiter::exit_program("ERROR: No new package in directory $directory", "determine_new_packagename (xpdinstaller)"); }
 	$newpackage = ${$newcontent}[0];
-	
+
 	return $newpackage;
 }
 
 ###################################################
-# Checking, if the parentgid is defined in 
-# another package 
+# Checking, if the parentgid is defined in
+# another package
 ###################################################
 
 sub is_empty_parent
@@ -1445,12 +1445,12 @@ sub is_empty_parent
 	my ($gid, $packages) = @_;
 
 	my $is_empty_parent = 1;
-	
+
 	for ( my $k = 0; $k <= $#{$packages}; $k++ )
 	{
 		my $onepackage = ${$packages}[$k];
 		my $packagegid = $onepackage->{'module'};
-		
+
 		if ( $packagegid eq $gid )
 		{
 			$is_empty_parent = 0;
@@ -1462,7 +1462,7 @@ sub is_empty_parent
 }
 
 ###################################################
-# Creating additional xpd files for empty parents 
+# Creating additional xpd files for empty parents
 ###################################################
 
 sub create_emptyparents_xpd_file
@@ -1482,7 +1482,7 @@ sub create_emptyparents_xpd_file
 
 		my $xpdfilename = get_xpd_filename($parentgid, 0);
 		$xpdfilename = $xpddir . $installer::globals::separator . $xpdfilename;
-	
+
 		installer::files::save_file($xpdfilename, $xpdfile);
 		push(@installer::globals::allxpdfiles, $xpdfilename);
 		my $infoline = "Saving xpd file: $xpdfilename\n";
@@ -1496,7 +1496,7 @@ sub create_emptyparents_xpd_file
 }
 
 ###################################################
-# Creating additional xpd files for empty parents 
+# Creating additional xpd files for empty parents
 ###################################################
 
 sub filter_content_from_xpdfile
@@ -1504,9 +1504,9 @@ sub filter_content_from_xpdfile
 	my ($xpdfile) = @_;
 
 	my @newxpdfile = ();
-	
+
 	my $include = 1;
-	
+
 	for ( my $i = 0; $i <= $#{$xpdfile}; $i++ )
 	{
 		my $line = ${$xpdfile}[$i];
@@ -1515,12 +1515,12 @@ sub filter_content_from_xpdfile
 		if ( $include ) { push(@newxpdfile, $line); }
 		if (( $line =~ /^\s*\<\/installunit/ ) && ( ! $include )) { $include = 1; }
 	}
-	
+
 	return \@newxpdfile;
 }
 
 ##########################################################################
-# Changing the parent inside the xpd file 
+# Changing the parent inside the xpd file
 # Old: <package name="gid_Module_Root" parent="root">
 # New: <package name="gid_Module_Root_Files_1" parent="gid_Module_Root">
 ##########################################################################
@@ -1535,20 +1535,20 @@ sub change_parent_in_xpdfile
 		{
 			my $oldname = $1;
 			my $oldparent = $2;
-			
+
 			my $newname = $modulename;
 			my $newparent = $oldname;
 
 			${$xpdfile}[$i] =~ s/\"\Q$oldname\E\"/\"$newname\"/;
 			${$xpdfile}[$i] =~ s/\"\Q$oldparent\E\"/\"$newparent\"/;
-			
-			last;	
+
+			last;
 		}
 	}
 }
 
 ###################################################
-# Creating one xpd file for each package 
+# Creating one xpd file for each package
 ###################################################
 
 sub create_xpd_file
@@ -1564,30 +1564,30 @@ sub create_xpd_file
 
 	my $modulegid = $onepackage->{'module'};
 
-	my $onelanguage = "";	# 
-    my $solslanguage = "";	# 
-	my $islanguagemodule = 0;	# 
-	if ( $onepackage->{'islanguagemodule'} ) { $islanguagemodule = $onepackage->{'islanguagemodule'}; }	# 
-	if ( $islanguagemodule )	# 
+	my $onelanguage = "";	#
+    my $solslanguage = "";	#
+	my $islanguagemodule = 0;	#
+	if ( $onepackage->{'islanguagemodule'} ) { $islanguagemodule = $onepackage->{'islanguagemodule'}; }	#
+	if ( $islanguagemodule )	#
 	{
-		$onelanguage = $onepackage->{'language'};	# 
-		if ( $installer::globals::issolarispkgbuild ) { $solslanguage = installer::epmfile::get_solaris_language_for_langpack($onelanguage); }	# 
+		$onelanguage = $onepackage->{'language'};	#
+		if ( $installer::globals::issolarispkgbuild ) { $solslanguage = installer::epmfile::get_solaris_language_for_langpack($onelanguage); }	#
 	}
 
 	installer::logger::include_header_into_logfile("Creating xpd file ($modulegid):");
 
 	my $module = get_module($modulegid, $modulesarrayref);
-	
+
 	if ( $module ne "" )
 	{
 		my $packagename = determine_new_packagename($installdir, $subdir, $xpdinfo);
 
 		# all content saved in scp is now available and can be used to create the xpd file
 		my ( $xpdfile, $parentgid ) = get_file_content($module, $packagename, $solslanguage, $linkpackage, 0, "", $islanguagemodule, $onelanguage, $xpdinfo);
-	
+
 		my $xpdfilename = get_xpd_filename($modulegid, $linkpackage);
 		$xpdfilename = $xpddir . $installer::globals::separator . $xpdfilename;
-		
+
 		# Very special handling for Root module:
 		# Because packages should only be assigned to leaves and not to knods,
 		# the root module is divided into a knod without package and a new
@@ -1618,8 +1618,8 @@ sub create_xpd_file
 		{
 			my $create_missing_parent = is_empty_parent($parentgid, $allpackages);
 
-			# if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($parentgid, \@installer::globals::emptyxpdparents) )) 
-			if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($parentgid, \@installer::globals::createdxpdfiles) )) 
+			# if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($parentgid, \@installer::globals::emptyxpdparents) ))
+			if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($parentgid, \@installer::globals::createdxpdfiles) ))
 			{
 				$grandpagid = create_emptyparents_xpd_file($parentgid, $modulesarrayref, $xpddir);
 			}
@@ -1629,8 +1629,8 @@ sub create_xpd_file
 		{
 			my $create_missing_parent = is_empty_parent($grandpagid, $allpackages);
 
-			# if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($parentgid, \@installer::globals::emptyxpdparents) )) 
-			if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($grandpagid, \@installer::globals::createdxpdfiles) )) 
+			# if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($parentgid, \@installer::globals::emptyxpdparents) ))
+			if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($grandpagid, \@installer::globals::createdxpdfiles) ))
 			{
 				create_emptyparents_xpd_file($grandpagid, $modulesarrayref, $xpddir);
  			}
@@ -1644,27 +1644,27 @@ sub create_xpd_file
 }
 
 ###################################################
-# Creating a xpd file for a copied package 
+# Creating a xpd file for a copied package
 ###################################################
 
 sub create_xpd_file_for_childproject
 {
 	my ($module, $destdir, $packagename, $allvariableshashref, $modulesarrayref) = @_;
-	
+
 	my $modulegid = $module->{'gid'};
 
 	my $currentdir = cwd();
 	$destdir =~ s/\/\s*$//;
 	$currentdir =~ s/\/\s*$//;
-	
+
 	my $completepackage = $currentdir . $installer::globals::separator . $destdir . $installer::globals::separator . $packagename;
 
 	# all content saved in scp is now available and can be used to create the xpd file
 	my ( $xpdfile, $parentgid ) = get_file_content($module, $completepackage, "", 0, 0, "", 0, "", "");
-	
+
 	my $xpdfilename = get_xpd_filename($modulegid, 0);
 	$xpdfilename = $installer::globals::xpddir . $installer::globals::separator . $xpdfilename;
-	
+
 	installer::files::save_file($xpdfilename, $xpdfile);
 	push( @installer::globals::createdxpdfiles, $modulegid);
 	push(@installer::globals::allxpdfiles, $xpdfilename);
@@ -1676,7 +1676,7 @@ sub create_xpd_file_for_childproject
 		# my $create_missing_parent = is_empty_parent($parentgid, $allpackages);
 		my $create_missing_parent = 1; # -> Always missing parent by child projects!
 		# Parent is now created, if it was not created before. Attention: Parent module must not come later.
-		if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($parentgid, \@installer::globals::createdxpdfiles) )) 
+		if (( $create_missing_parent ) && ( ! installer::existence::exists_in_array($parentgid, \@installer::globals::createdxpdfiles) ))
 		{
 			create_emptyparents_xpd_file($parentgid, $modulesarrayref, $installer::globals::xpddir);
 		}
@@ -1684,7 +1684,7 @@ sub create_xpd_file_for_childproject
 }
 
 ##############################################################
-# Creating a xpd file for copied system integration package 
+# Creating a xpd file for copied system integration package
 ##############################################################
 
 sub create_xpd_file_for_systemintegration
@@ -1693,13 +1693,13 @@ sub create_xpd_file_for_systemintegration
 
 	my $parentgid = $module->{'gid'};
 
-	# Create new visible module from scp info and create 
+	# Create new visible module from scp info and create
 	# new hidden module for each package inside in tar file
-	
+
 	for ( my $i = 0; $i <= $#{$newcontent}; $i++ )
 	{
 		my $newpackagename = ${$newcontent}[$i];
-		
+
 		# installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$newpackagename);
 
 		my $infoline = "Creating xpd file for package: $newpackagename\n";
@@ -1713,8 +1713,8 @@ sub create_xpd_file_for_systemintegration
 		$childmodule->{'gid'} = $modulegid;
 		$childmodule->{'Styles'} =~ s/\)/\,HIDDEN_ROOT\)/;
 		# iterating over all languages to get names and descriptions
-		remove_lang_values($childmodule, "Name");	
-		remove_lang_values($childmodule, "Description");	
+		remove_lang_values($childmodule, "Name");
+		remove_lang_values($childmodule, "Description");
 
 		my $shortpackagename = $newpackagename;
 		installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$shortpackagename);
@@ -1739,7 +1739,7 @@ sub create_xpd_file_for_systemintegration
 				{
 					my $name = $1;
 					my $order = $2;
-					
+
 					if ( $shortpackagename =~ /\Q$name\E/ ) { $childmodule->{'InstallOrder'} = $order; }
 				}
 			}
@@ -1750,7 +1750,7 @@ sub create_xpd_file_for_systemintegration
 
 		my $xpdfilename = get_xpd_filename($modulegid, 0);
 		$xpdfilename = $installer::globals::xpddir . $installer::globals::separator . $xpdfilename;
-	
+
 		installer::files::save_file($xpdfilename, $xpdfile);
 		push(@installer::globals::allxpdfiles, $xpdfilename);
 		$infoline = "Saving xpd file: $xpdfilename\n";
@@ -1762,13 +1762,13 @@ sub create_xpd_file_for_systemintegration
 }
 
 ##############################################################
-# Copying xpd files into installation set 
+# Copying xpd files into installation set
 ##############################################################
 
 sub copy_xpd_files
 {
 	my ( $destdir ) = @_;
-	
+
 	for ( my $i = 0; $i <= $#installer::globals::allxpdfiles; $i++ )
 	{
 		if ( ! -f $installer::globals::allxpdfiles[$i] ) { installer::exiter::exit_program("ERROR: Could not find xpd file: $installer::globals::allxpdfiles[$i]!", "copy_xpd_files"); }
@@ -1784,29 +1784,29 @@ sub copy_xpd_files_into_installset
 {
 	my ($installdir) = @_;
 
-	$installdir =~ s/\Q$installer::globals::separator\E\s*$//;	
+	$installdir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	my $instdir = $installdir . $installer::globals::separator . "installdata";
 	installer::systemactions::create_directory($instdir);
 
 	my $xpddir = $instdir . $installer::globals::separator . "xpd";
 	installer::systemactions::create_directory($xpddir);
-	copy_xpd_files($xpddir);		
+	copy_xpd_files($xpddir);
 }
 
 ##############################################################
-# Creating base xpd file with product information 
+# Creating base xpd file with product information
 ##############################################################
 
 sub create_setup_xpd
 {
 	my ($allvariables, $languagestringref) = @_;
-	
+
 	my ( $xpdfile ) = get_setup_file_content($allvariables, $languagestringref);
 
 	my $xpdfilename = $installer::globals::productxpdfile;
 	$xpdfilename = $installer::globals::xpddir . $installer::globals::separator . $xpdfilename;
-	
+
 	installer::files::save_file($xpdfilename, $xpdfile);
 	push(@installer::globals::allxpdfiles, $xpdfilename);
 	my $infoline = "Saving xpd file: $xpdfilename\n";
@@ -1826,7 +1826,7 @@ sub create_xpd_installer
 
 	# create setup.xpd file
 	create_setup_xpd($allvariables, $languagestringref);
-	
+
 	# copy xpd files into installation set
 	copy_xpd_files_into_installset($installdir);
 }

@@ -53,7 +53,7 @@ published interface XParametersSupplier;
 /** is a client side RowSet, which use retrieves is data based on a database table,
 	a query or a SQL command or by a rowset reader, who mustn't support SQL.
 	The connection of the rowset is typically a named DataSource or a DataAccess component
-	or a previous instanciated connection.
+	or a previous instantiated connection.
 	<p>
 	Depending on the
 	<type scope="com::sun::star::sdbc">ResultSetConcurrency</type>
@@ -85,7 +85,7 @@ published interface XParametersSupplier;
 			</td>
 		</tr>
 		<tr><td valign="top"><em>column values</em></td>
-			<td valign="top">If the opration includes changes in the values of the columns of the row set, then these are
+			<td valign="top">If the operation includes changes in the values of the columns of the row set, then these are
 			notified before anything else (except requests for approval).
 			@see ResultSet
 			@see com::sun::star::sdbcx::XColumnsSupplier
@@ -221,7 +221,7 @@ published service RowSet
 
 	/** approving of actions performed on the rowset.
 
-        <p>The support of this interface implies a sematical extension to the <type scope="com::sun::star::sdbc">XResultSetUpdate</type>
+        <p>The support of this interface implies a semantical extension to the <type scope="com::sun::star::sdbc">XResultSetUpdate</type>
         interface which is supported via the <type scope="com::sun::star::sdbc">ResultSet</type>.</p>
 
         @see XResultSetUpdate
@@ -233,7 +233,7 @@ published service RowSet
         <p>The optional support of this interface is already implied with the support of the <type scope="com::sun::star::sdbc">ResultSet</type> service.</p>
 
         <p>However, note that the additional support of the <type>XRowSetApproveBroadcaster</type> interface results
-        in a sematical extension: the methods <member scope="com::sun::star::sdbc">XResultSetUpdate::insertRow</member>,
+        in a semantical extension: the methods <member scope="com::sun::star::sdbc">XResultSetUpdate::insertRow</member>,
         <member scope="com::sun::star::sdbc">XResultSetUpdate::updateRow</member> and <member scope="com::sun::star::sdbc">XResultSetUpdate::deleteRow</member>
         will now throw the <type>RowSetVetoException</type> if the action which is to be performed was vetoed
         by one of the <type>XRowSetApproveListener</type>'s.</p>
@@ -245,7 +245,7 @@ published service RowSet
         <p>The optional support of this interface is already implied with the support of the <type scope="com::sun::star::sdbcx">ResultSet</type> service.</p>
 
         <p>However, note that the additional support of the <type>XRowSetApproveBroadcaster</type> interface results
-        in a sematical extension: the method <member scope="com::sun::star::sdbcx">XDeleteRows::deleteRows</member>
+        in a semantical extension: the method <member scope="com::sun::star::sdbcx">XDeleteRows::deleteRows</member>
         will now throw the <type>RowSetVetoException</type> if the deletion was vetoed
         by one of the <type>XRowSetApproveListener</type>'s.</p>
 	 */

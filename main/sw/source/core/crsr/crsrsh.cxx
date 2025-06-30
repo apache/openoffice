@@ -1942,7 +1942,7 @@ void SwCrsrShell::RefreshBlockCursor()
         {
             // The order of the SwSelectionList has to be preserved but
             // the order inside the ring created by CreateCrsr() is not like
-            // exspected => First create the selections before the last one
+            // expected => First create the selections before the last one
             // downto the first selection.
             // At least create the cursor for the last selection
             --pPam;
@@ -3172,7 +3172,7 @@ bool SwCrsrShell::SelectHiddenRange()
     return bRet;
 }
 
-/*  */
+/* */
 
 	// die Suchfunktionen
 sal_uLong SwCrsrShell::Find( const SearchOptions& rSearchOpt, sal_Bool bSearchInNotes,
@@ -3515,7 +3515,7 @@ void SwCrsrShell::GetSmartTagTerm( const Point& rPt, SwRect& rSelectRect,
             // get smarttag word
             String aText( pNode->GetTxt().Copy( nBegin, nLen ) );
 
-            //save the start and end positons of the line and the starting point
+            //save the start and end positions of the line and the starting point
             Push();
             LeftMargin();
             xub_StrLen nLineStart = GetCrsr()->GetPoint()->nContent.GetIndex();

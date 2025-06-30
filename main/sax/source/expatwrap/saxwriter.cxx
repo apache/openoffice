@@ -1016,7 +1016,7 @@ private:
 // the extern interface
 //---------------------------------------
 Reference < XInterface > SAL_CALL SaxWriter_CreateInstance(
-	const Reference < XMultiServiceFactory >  &  )
+	const Reference < XComponentContext >  &  )
 	throw (Exception)
 {
 	SAXWriter *p = new SAXWriter;
@@ -1175,7 +1175,7 @@ void SAXWriter::startElement(const OUString& aName, const Reference< XAttributeL
 		nLength ++;  // '>'
 	}
 
-	// Is there a new indentation necesarry ?
+	// Is there a new indentation necessary ?
 	sal_Int32 nPrefix(getIndentPrefixLength( nLength ));
 
 	// write into sequence

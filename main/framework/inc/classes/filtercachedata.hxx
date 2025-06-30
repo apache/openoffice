@@ -77,7 +77,7 @@ namespace framework{
 #define PROPERTY_SEPERATOR                          sal_Unicode(',')                                                    /// seperator for own formatted property strings of types and filters
 #define LIST_SEPERATOR                              sal_Unicode(';')                                                    /// seperator for own formatted lists as part of our own formatted type- or filter-string
 #define LOCALE_FALLBACK                             DECLARE_ASCII("en-US"                                           )   /// fallback, if configuration can't give us current set locale ...
-#define DEFAULT_FILTERCACHE_VERSION                 6                                                                   /// these implmentation of FilterCache support different version of TypeDetection.xml! This define the current set default one.
+#define DEFAULT_FILTERCACHE_VERSION                 6                                                                   /// these implementation of FilterCache support different version of TypeDetection.xml! This define the current set default one.
 
 #define DEFAULT_FILTERCACHE_MODE                    CONFIG_MODE_DELAYED_UPDATE | CONFIG_MODE_ALL_LOCALES                                          /// ConfigItems could run in different modes: supported values are ... { CONFIG_MODE_IMMEDIATE_UPDATE, CONFIG_MODE_DELAYED_UPDATE, CONFIG_MODE_ALL_LOCALES }
 //#define DEFAULT_FILTERCACHE_MODE                    CONFIG_MODE_DELAYED_UPDATE                                          /// ConfigItems could run in different modes: supported values are ... { CONFIG_MODE_IMMEDIATE_UPDATE, CONFIG_MODE_DELAYED_UPDATE, CONFIG_MODE_ALL_LOCALES }

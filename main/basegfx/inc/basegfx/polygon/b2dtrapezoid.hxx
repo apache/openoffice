@@ -86,7 +86,7 @@ namespace basegfx
         // convert SourcePolyPolygon to trapezoids. The trapezoids will be appended to
         // ro_Result. ro_Result will not be cleared. If SourcePolyPolygon contains curves,
         // it's default AdaptiveSubdivision will be used.
-        // CAUTION: Trapezoids are oreintation-dependent in the sense that the upper and lower
+        // CAUTION: Trapezoids are orientation-dependent in the sense that the upper and lower
         // lines have to be parallel to the X-Axis, thus this subdivision is NOT simply usable
         // for primitive decompositions. To use it, the shear and rotate parts of the
         // involved transformations HAVE to be taken into account.
@@ -103,7 +103,7 @@ namespace basegfx
             double fLineWidth = 1.0);
 
         // create trapezoids for all edges of the given polygon. The closed state of
-        // the polygon is taken into account. If curves are contaned, the default
+        // the polygon is taken into account. If curves are contained, the default
         // AdaptiveSubdivision will be used.
         BASEGFX_DLLPUBLIC void createLineTrapezoidFromB2DPolygon(
             B2DTrapezoidVector& ro_Result, 
@@ -111,7 +111,7 @@ namespace basegfx
             double fLineWidth = 1.0);
 
         // create trapezoids for all edges of the given polyPolygon. The closed state of
-        // the PolyPolygon is taken into account. If curves are contaned, the default
+        // the PolyPolygon is taken into account. If curves are contained, the default
         // AdaptiveSubdivision will be used.
         BASEGFX_DLLPUBLIC void createLineTrapezoidFromB2DPolyPolygon(
             B2DTrapezoidVector& ro_Result, 

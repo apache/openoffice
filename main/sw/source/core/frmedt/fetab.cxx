@@ -1463,7 +1463,7 @@ sal_uInt16 SwFEShell::GetCurTabColNum() const
 		{
             long nX = (pFrm->Frm().*fnRect->fnGetRight)() - (pPage->Frm().*fnRect->fnGetLeft)();
 
-			const long nRight = aTabCols.GetLeftMin() + aTabCols.GetRight();;
+			const long nRight = aTabCols.GetLeftMin() + aTabCols.GetRight();
 
             if ( !::IsSame( nX, nRight ) )
 			{

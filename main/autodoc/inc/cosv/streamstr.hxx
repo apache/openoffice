@@ -129,7 +129,7 @@ class StreamStr : public bostream
                             double              i_n );
 
     /** This operator is used to finish a sequence of streaming
-        oeprators by returning the c-string of the complete string.
+        operators by returning the c-string of the complete string.
 
         @return The same as ->c_str().
 

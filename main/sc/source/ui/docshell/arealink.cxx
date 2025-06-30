@@ -33,6 +33,7 @@
 #include <sfx2/fcontnr.hxx>
 #include <sfx2/sfxsids.hrc>
 #include <sfx2/linkmgr.hxx>
+#include <sfx2/viewfrm.hxx>
 #include <svl/stritem.hxx>
 #include <vcl/msgbox.hxx>
 
@@ -242,6 +243,22 @@ sal_Bool ScAreaLink::Refresh( const String& rNewFile, const String& rNewFilter,
 
 	if (!rNewFile.Len() || !rNewFilter.Len())
 		return sal_False;
+
+	// Request for authorization
+	sfx2::LinkManager* pLinkMgr = pImpl->m_pDocSh->GetDocument()->GetLinkManager();
+	if ( pLinkMgr ) {
+		if ( pLinkMgr->urlIsVendor( rNewFile ) )
+			return sal_False;
+		SfxViewFrame* pFrame = SfxViewFrame::GetFirst( pImpl->m_pDocSh );
+		if ( pFrame ) {
+			Window* pWindow = &pFrame->GetWindow();
+			if ( pWindow ) {
+				if ( !pLinkMgr->GetUserAllowsLinkUpdate( pWindow ) ) {
+					return sal_False;
+				}
+			}
+		}
+	}
 
     String aNewUrl( ScGlobal::GetAbsDocName( rNewFile, pImpl->m_pDocSh ) );
 	sal_Bool bNewUrlName = (aNewUrl != aFileName);

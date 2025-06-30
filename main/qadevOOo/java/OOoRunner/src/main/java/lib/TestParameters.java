@@ -169,7 +169,7 @@ public class TestParameters extends Hashtable {
     public Integer OfficeCloseTimeOut = new Integer(15000);
 
     /**
-     * Wraper around "get()" with some debug output
+     * Wrapper around "get()" with some debug output
      * @param key A key of this table.
      * @return The value of this key.
      * @see java.util.Hashtable
@@ -235,7 +235,7 @@ public class TestParameters extends Hashtable {
 
 
     /**
-     * Wraper around "put()"
+     * Wrapper around "put()"
      * @param key A key of this table.
      * @param val The value of the key.
      * @return The value of this key.

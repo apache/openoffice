@@ -470,7 +470,7 @@ void DocxExport::WriteNumbering()
 	::sax_fastparser::FSHelperPtr pNumberingFS = m_pFilter->openOutputStreamWithSerializer( S( "word/numbering.xml" ),
 		S( "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml" ) );
 
-	// switch the serializer to redirect the output to word/nubering.xml
+	// switch the serializer to redirect the output to word/numbering.xml
 	m_pAttrOutput->SetSerializer( pNumberingFS );
 
 	pNumberingFS->startElementNS( XML_w, XML_numbering,

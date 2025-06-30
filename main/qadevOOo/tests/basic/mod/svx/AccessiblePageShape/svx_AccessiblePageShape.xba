@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -41,7 +41,7 @@ Global hasChangeableAttrs As Boolean
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' svx.AccessiblePageShape
 '*************************************************************************
 On Error Goto ErrHndl
@@ -71,9 +71,9 @@ End Sub
 Sub fireEvent()
     Dim oldHeight As Integer, newHeight As Integer
     oldHeight = oPage.getPropertyValue("Height")
-    if oldHeight = 3000 then 
+    if oldHeight = 3000 then
         newHeight = 5000
-    else 
+    else
         newHeight = 3000
     end if
     oPage.setPropertyValue("Height",newHeight)

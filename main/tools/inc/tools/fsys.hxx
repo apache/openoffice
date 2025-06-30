@@ -128,7 +128,7 @@ enum FSysPathStyle
 // FSysAction
 typedef int FSysAction;
 #define FSYS_ACTION_COPYFILE		0x01	// not only create hardlink
-#define FSYS_ACTION_RECURSIVE		0x02	// deep through dircetory structure
+#define FSYS_ACTION_RECURSIVE		0x02	// deep through directory structure
 #define FSYS_ACTION_USERECYCLEBIN	0x04	// move to recycle bin
 #define FSYS_ACTION_MOVE			0x08	// delete after copy (=> move)
 #define FSYS_ACTION_CONTINUE		0x10	// continue on error
@@ -498,7 +498,7 @@ public:
 /** FSysRedirector is an abstract base class for a hook to redirect
 	mirrored directory trees.
 
-	<P>One instance of a subclass can be instanciated and registered
+	<P>One instance of a subclass can be instantiated and registered
 	using the method FSysRedirector::Register(FSysRedirector*).
  */
 

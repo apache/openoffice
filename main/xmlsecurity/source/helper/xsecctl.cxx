@@ -185,7 +185,7 @@ sal_Bool XSecController::convertDateTime( com::sun::star::util::DateTime& rDateT
 			//23 on Linux and 24 on Solaris and Windows.
 
 			//we only support a hundredth second
-			//make ,1 -> 10   ,01 -> 1    ,001 -> only use first two diggits
+			//make ,1 -> 10   ,01 -> 1    ,001 -> only use first two digits
 			sHundredth = rString.copy(nPos2 + 1);
 			sal_Int32 len = sHundredth.getLength();
 			if (len == 1)

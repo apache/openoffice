@@ -525,7 +525,7 @@ HierarchyDataSource::createInstanceWithArguments(
     {
         OSL_ENSURE( false,
                     "HierarchyDataSource::createInstanceWithArguments - "
-                    "Cannot instanciate configuration access!" );
+                    "Cannot instantiate configuration access!" );
         throw;
     }
 
@@ -533,7 +533,7 @@ HierarchyDataSource::createInstanceWithArguments(
     {
         OSL_ENSURE( false,
                     "HierarchyDataSource::createInstanceWithArguments - "
-                    "Cannot instanciate configuration access!" );
+                    "Cannot instantiate configuration access!" );
         return xConfigAccess;
     }
 

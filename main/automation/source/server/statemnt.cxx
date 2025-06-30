@@ -1918,7 +1918,7 @@ sal_Bool FindShortcutErrors::IsWinOK( Window *pWin )
 			case FDS_ACTION_MARK:
 				{
 					sal_Bool bMissing = sal_False;
-					if ( !bHasAccel && aText.Len() )	// should there be an accelarator defined
+					if ( !bHasAccel && aText.Len() )	// should there be an accelerator defined
 					{
 
 						Window* 	pChild;

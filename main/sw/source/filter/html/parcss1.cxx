@@ -68,7 +68,7 @@
 
 const sal_Int32 MAX_LEN = 1024;
 
-/*  */
+/* */
 
 void CSS1Parser::InitRead( const String& rIn )
 {
@@ -108,7 +108,7 @@ sal_Unicode CSS1Parser::GetNextChar()
 	return c;
 }
 
-/*  */
+/* */
 
 // Diese Funktion realisiert den in
 //
@@ -207,7 +207,7 @@ CSS1Token CSS1Parser::GetNextToken()
 							{
 							case '{':
 								if( !cQuoteCh && !bOldEscape )
-									nBlockLvl++;;
+									nBlockLvl++;
 								break;
 							case ';':
 								if( !cQuoteCh && !bOldEscape )
@@ -687,7 +687,7 @@ CSS1Token CSS1Parser::GetNextToken()
 }
 
 
-/*  */
+/* */
 
 
 // Dies folegenden Funktionen realisieren den in
@@ -1149,7 +1149,7 @@ CSS1Expression *CSS1Parser::ParseDeclaration( String& rProperty )
 	return pRoot;
 }
 
-/*  */
+/* */
 
 CSS1Parser::CSS1Parser()
 {
@@ -1159,7 +1159,7 @@ CSS1Parser::~CSS1Parser()
 {
 }
 
-/*  */
+/* */
 
 sal_Bool CSS1Parser::ParseStyleSheet( const String& rIn )
 {
@@ -1249,14 +1249,14 @@ sal_Bool CSS1Parser::DeclarationParsed( const String& /*rProperty*/,
 }
 
 
-/*  */
+/* */
 
 CSS1Selector::~CSS1Selector()
 {
 	delete pNext;
 }
 
-/*  */
+/* */
 
 CSS1Expression::~CSS1Expression()
 {

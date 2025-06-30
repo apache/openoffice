@@ -267,7 +267,7 @@ public abstract class SxcDocumentDeserializer implements OfficeConstants,
 
 		// add settings
 		NodeList settingsList = settings.getElementsByTagName(TAG_OFFICE_SETTINGS);
-		Node settingsNode = settingsList.item(0);;
+		Node settingsNode = settingsList.item(0);
 		processSettings(settingsNode);
 
     }

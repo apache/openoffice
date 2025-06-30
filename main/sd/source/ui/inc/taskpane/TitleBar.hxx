@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef SD_TASKPANE_TITLE_BAR_HXX
 #define SD_TASKPANE_TITLE_BAR_HXX
 
@@ -35,7 +33,6 @@ class String;
 class VirtualDevice;
 
 namespace sd { namespace toolpanel {
-
 
 /** The title bar above a control in a sub tool panel.
 
@@ -56,7 +53,7 @@ public:
 
 	/** Create a new title bar whose content, the given title string,
 		will be formatted according to the given type.
-	*/
+	 */
 	TitleBar (
 		::Window* pParent,
 		const String& rsTitle,
@@ -80,10 +77,10 @@ public:
 
 	virtual void MouseMove(const MouseEvent& rEvent);
 	/** Empty implementation prevents forwarding to docking window.
-	*/
+	 */
 	virtual void MouseButtonDown (const MouseEvent& rEvent);
 	/** Empty implementation prevents forwarding to docking window.
-	*/
+	 */
 	virtual void MouseButtonUp (const MouseEvent& rEvent);
 
 	virtual void DataChanged (const DataChangedEvent& rEvent);
@@ -107,7 +104,7 @@ private:
 	/** Return whether this TitleBar object has an expansion indicator
 		bitmap. It is safe to call GetExpansionIndicator() when this method
 		returns <FALSE/> but unnecessary.
-	*/
+	 */
 	bool HasExpansionIndicator (void) const;
 
 	/** Return the image of the expansion indicator.
@@ -115,7 +112,7 @@ private:
 			When there is no expansion indicator for this TitleBar object,
 			then an empty Image is returned. You better call
 			HasExpansionIndicator() to prevent this.
-	*/
+	 */
 	Image GetExpansionIndicator (void) const;
 
 	/** Calculate the bounding box of the title text. This takes into
@@ -125,14 +122,14 @@ private:
 		@param nAvailableWidth
 			When 0 is given then the natural text width is used, i.e. the
 			text is not broken into multiple lines.
-	*/
+	 */
 	Rectangle CalculateTextBoundingBox (
 		int nAvailableWidth,
 		bool bEmphasizeExpanded);
 
 	/** Add some space to the given text box and return the bounding box of
 		the title bar.
-	*/
+	 */
 	Rectangle CalculateTitleBarBox (
 		const Rectangle& rTextBox,
 		int nTitleBarWidth);
@@ -141,7 +138,7 @@ private:
 
 	void PaintBackground (const Rectangle& rTextBox);
 
-	/// Paint a focus indicator that encloses the given rectangle.
+	// Paint a focus indicator that encloses the given rectangle.
 	void PaintFocusIndicator (const Rectangle& rIndicatorBox);
 
 	Rectangle PaintExpansionIndicator (const Rectangle& rTextBox);
@@ -163,3 +160,5 @@ private:
 } } // end of namespace ::sd::toolpanel
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

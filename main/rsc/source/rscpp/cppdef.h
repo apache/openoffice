@@ -180,7 +180,7 @@
 #ifndef LINE_PREFIX
 #define LINE_PREFIX             ""
 #endif
-
+
 /*
  * OLD_PREPROCESSOR forces the definition of OK_DOLLAR, OK_CONCAT,
  * COMMENT_INVISIBLE, and STRING_FORMAL to values appropriate for

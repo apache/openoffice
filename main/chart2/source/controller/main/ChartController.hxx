@@ -706,7 +706,7 @@ private:
 
     ::std::set< ::rtl::OUString > impl_getAvailableCommands();
 
-    /** Creates a helper accesibility class that must be initialized via XInitialization.  For
+    /** Creates a helper accessibility class that must be initialized via XInitialization.  For
         parameters see 
 
         The returned object should not be used directly.  Instead a proxy object

@@ -62,7 +62,7 @@ published interface XNumericControl : XPropertyControl
 
         <p>Only a certain set of <type scope="com::sun::star::util">MeasureUnit</type> values is
         supported. In particular, every value which denotes a fraction of another
-        unit (like 100th millimiters) cannot be used as DisplayUnit.</p>
+        unit (like 100th millimeters) cannot be used as DisplayUnit.</p>
 
         @throws com::sun::star::lang::IllegalArgumentException
             if the caller attempts to set an unsupported <type scope="com::sun::star::util">MeasureUnit</type>

@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -51,7 +51,7 @@ const arrSize = 300
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.i18n.XBreakIterator
 '*************************************************************************
 On Error Goto ErrHndl
@@ -250,14 +250,14 @@ On Error Goto ErrHndl
     _LineBreakUserOptions.allowHyphenateEnglish = false
 
     breakPos = 0  : pos = 0
-    
+
     while breakPos = 0 AND pos &lt; len(UnicodeString)
         LineBreakResults = oObj.getLineBreak(UnicodeString, pos, oLocale, 0, _LineBreakHyphenationOptions, _LineBreakUserOptions)
         breakPos = LineBreakResults.BreakIndex
         pos = pos + 1
-    wend 
-    
-    ' finally the position of break must be found in the middle and 
+    wend
+
+    ' finally the position of break must be found in the middle and
     ' it must be before the break position specified
     bOK = (breakPos &lt;= pos AND breakPos > 0)
 

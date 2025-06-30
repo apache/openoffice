@@ -53,7 +53,7 @@ public class DBaseStringFunctions
 
         upper(xRowRes);
         lower(xRowRes);
-        acsii(xRowRes);
+        ascii(xRowRes);
         char_length(xRowRes);
         concat(xRowRes);
         chartest(xRowRes);
@@ -98,10 +98,10 @@ public class DBaseStringFunctions
         where = temp;
     }
 
-    private void acsii(final XRowSet xRowRes) throws com.sun.star.uno.Exception, com.sun.star.beans.UnknownPropertyException
+    private void ascii(final XRowSet xRowRes) throws com.sun.star.uno.Exception, com.sun.star.beans.UnknownPropertyException
     {
         final XRow row = execute(xRowRes, "ASCII('2') ");
-        assertTrue("acsii('2') failed!", row.getInt(1) == 50);
+        assertTrue("ascii('2') failed!", row.getInt(1) == 50);
     }
 
     private void char_length(final XRowSet xRowRes) throws com.sun.star.uno.Exception, com.sun.star.beans.UnknownPropertyException

@@ -105,7 +105,7 @@ public class CfgParser
         if (os != null && os.length() > 1)
         {
 
-            //found something that could be a prefex
+            //found something that could be a prefix
             //check all parameters for this
             Enumeration keys = param.keys();
             while (keys.hasMoreElements())

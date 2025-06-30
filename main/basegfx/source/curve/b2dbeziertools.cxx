@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,27 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
 #include <basegfx/curve/b2dbeziertools.hxx>
 #include <basegfx/curve/b2dcubicbezier.hxx>
 #include <algorithm>
-
-//////////////////////////////////////////////////////////////////////////////
 
 namespace basegfx
 {
@@ -110,12 +106,12 @@ namespace basegfx
 			// not a bezier, linear edge
 			return fDistance / fLength;
 		}
-		
+
 		// it is a bezier
 		::std::vector< double >::const_iterator aIter = ::std::lower_bound(maLengthArray.begin(), maLengthArray.end(), fDistance);
 		const sal_uInt32 nIndex(aIter - maLengthArray.begin());
 		const double fHighBound(maLengthArray[nIndex]);
-		const double fLowBound(nIndex ?  maLengthArray[nIndex - 1] : 0.0);
+		const double fLowBound(nIndex ? maLengthArray[nIndex - 1] : 0.0);
 		const double fLinearInterpolatedLength((fDistance - fLowBound) / (fHighBound - fLowBound));
 
 		return (static_cast< double >(nIndex) + fLinearInterpolatedLength) / static_cast< double >(mnEdgeCount);
@@ -154,6 +150,4 @@ namespace basegfx
 	}
 } // end of namespace basegfx
 
-//////////////////////////////////////////////////////////////////////////////
-
-// eof
+/* vim: set noet sw=4 ts=4: */

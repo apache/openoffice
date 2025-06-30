@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -26,7 +26,7 @@ package par2script::undefine;
 use par2script::globals;
 
 ##########################################################
-# Removing in the script all the gids, that are listed 
+# Removing in the script all the gids, that are listed
 # in undefine scp files
 ##########################################################
 
@@ -40,7 +40,7 @@ sub undefine_gids
 		my $unitem = "Un$item";
 
 		for ( my $i = 0; $i <= $#{$parfilecontent}; $i++ )
-		{	
+		{
 			if ( ${$parfilecontent}[$i] =~ /^\s*$unitem\s*(\w+?)\s*$/ )
 			{
 				my $gid = $1;
@@ -51,20 +51,20 @@ sub undefine_gids
 }
 
 ##########################################################
-# Collecting all subdirectories of a specified directory 
+# Collecting all subdirectories of a specified directory
 ##########################################################
 
 sub collect_children_dirs
 {
 	my ($gid, $collector) = @_;
-	
+
 	my $diritem = "Directory";
 	my $parentkey = "ParentID";
 
 	if ( exists($par2script::globals::definitions{$diritem}) )
 	{
 		my $onedefinition;
-				
+
 		foreach $onedefinition (keys %{$par2script::globals::definitions{$diritem}})
 		{
 			if ( $par2script::globals::definitions{$diritem}->{$onedefinition}->{$parentkey} eq $gid )
@@ -77,7 +77,7 @@ sub collect_children_dirs
 }
 
 ##########################################################
-# Removing in the script complete profiles. 
+# Removing in the script complete profiles.
 # This includes the Profile and its ProfileItems.
 ##########################################################
 
@@ -104,7 +104,7 @@ sub remove_complete_item
 	}
 
 	for ( my $i = 0; $i <= $#{$parfilecontent}; $i++ )
-	{	
+	{
 		if ( ${$parfilecontent}[$i] =~ /^\s*$removeitem\s*(\w+?)\s*$/ )
 		{
 			my $onegid = $1;
@@ -122,7 +122,7 @@ sub remove_complete_item
 				{
 					if ( exists($par2script::globals::definitions{$depitem}) )
 					{
-						my $onedefinition;				
+						my $onedefinition;
 						foreach $onedefinition (keys %{$par2script::globals::definitions{$depitem}})
 						{
 							if ( $par2script::globals::definitions{$depitem}->{$onedefinition}->{$dependentkey} eq $gid )

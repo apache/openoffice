@@ -573,7 +573,7 @@ public:
 
     /**
      * Takes a flat file name, and convert it to an absolute URL path.  An
-     * absolute URL path begines with 'file:///.
+     * absolute URL path begins with 'file:///.
      *
      * @param rFile file name to convert
      */

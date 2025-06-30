@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include "precompiled_sd.hxx"
 
@@ -43,138 +41,125 @@ using ::sd::framework::FrameworkHelper;
 namespace sd {
 
 SlideShowRestarter::SlideShowRestarter (
-    const ::rtl::Reference<SlideShow>& rpSlideShow,
-    ViewShellBase* pViewShellBase)
-    : mnEventId(0),
-      mpSlideShow(rpSlideShow),
-      mpViewShellBase(pViewShellBase),
-      mnDisplayCount(GetDisplayCount()),
-      mpDispatcher(pViewShellBase->GetViewFrame()->GetDispatcher()),
-      mnCurrentSlideNumber(0)
+	const ::rtl::Reference<SlideShow>& rpSlideShow,
+	ViewShellBase* pViewShellBase)
+	: mnEventId(0),
+	  mpSlideShow(rpSlideShow),
+	  mpViewShellBase(pViewShellBase),
+	  mnDisplayCount(GetDisplayCount()),
+	  mpDispatcher(pViewShellBase->GetViewFrame()->GetDispatcher()),
+	  mnCurrentSlideNumber(0)
 {
 }
-
-
-
 
 SlideShowRestarter::~SlideShowRestarter (void)
 {
 }
 
-
-
-
 void SlideShowRestarter::Restart (void)
 {
-    // Prevent multiple and concurrently restarts.
-    if (mnEventId != 0)
-        return;
+	// Prevent multiple and concurrently restarts.
+	if (mnEventId != 0)
+		return;
 
-    // Remember the current slide in order to restore it after the slide
-    // show has been restarted.
-    if (mpSlideShow.is())
-        mnCurrentSlideNumber = mpSlideShow->getCurrentPageNumber();
+	// Remember the current slide in order to restore it after the slide
+	// show has been restarted.
+	if (mpSlideShow.is())
+		mnCurrentSlideNumber = mpSlideShow->getCurrentPageNumber();
 
-    // Remember a shared pointer to this object to prevent its destruction
-    // before the whole restarting process has finished.
-    mpSelf = shared_from_this();
+	// Remember a shared pointer to this object to prevent its destruction
+	// before the whole restarting process has finished.
+	mpSelf = shared_from_this();
 
-    // We do not know in what situation this method was called.  So, in
-    // order to be able to cleanly stop the presentation, we do that
-    // asynchronously.
-    mnEventId = Application::PostUserEvent(
-        LINK(this, SlideShowRestarter, EndPresentation));
+	// We do not know in what situation this method was called. So, in
+	// order to be able to cleanly stop the presentation, we do that
+	// asynchronously.
+	mnEventId = Application::PostUserEvent(
+		LINK(this, SlideShowRestarter, EndPresentation));
 }
-
-
-
 
 sal_Int32 SlideShowRestarter::GetDisplayCount (void)
 {
-    const Reference<XComponentContext> xContext (
-        ::comphelper::getProcessComponentContext() );
-    Reference<XMultiComponentFactory> xFactory (
-        xContext->getServiceManager(), UNO_QUERY);
-    if ( ! xFactory.is())
-        return 0;
+	const Reference<XComponentContext> xContext (
+		::comphelper::getProcessComponentContext() );
+	Reference<XMultiComponentFactory> xFactory (
+		xContext->getServiceManager(), UNO_QUERY);
+	if ( ! xFactory.is())
+		return 0;
 
-    Reference<com::sun::star::container::XIndexAccess> xIndexAccess (
-        xFactory->createInstanceWithContext(C2U("com.sun.star.awt.DisplayAccess"),xContext),
-        UNO_QUERY);
-    if ( ! xIndexAccess.is())
-        return 0;
+	Reference<com::sun::star::container::XIndexAccess> xIndexAccess (
+		xFactory->createInstanceWithContext(C2U("com.sun.star.awt.DisplayAccess"),xContext),
+		UNO_QUERY);
+	if ( ! xIndexAccess.is())
+		return 0;
 
-    return xIndexAccess->getCount();
+	return xIndexAccess->getCount();
 }
-
-
-
 
 IMPL_LINK(SlideShowRestarter, EndPresentation, void*, EMPTYARG)
 {
-    mnEventId = 0;
-    if (mpSlideShow.is())
-    {
-        if (mnDisplayCount!=GetDisplayCount())
-        {
-            mpSlideShow->end();
+	mnEventId = 0;
+	if (mpSlideShow.is())
+	{
+		if (mnDisplayCount!=GetDisplayCount())
+		{
+			mpSlideShow->end();
 
-            // The following piece of code should not be here because the
-            // slide show should be aware of the existence of the presenter
-            // console (which is displayed in the FullScreenPane).  But the
-            // timing has to be right and I did not find a better place for
-            // it.
-            
-            // Wait for the full screen pane, which displays the presenter
-            // console, to disappear.  Only when it is gone, call
-            // InitiatePresenterStart(), in order to begin the asynchronous
-            // restart of the slide show.
-            if (mpViewShellBase != NULL)
-            {
-                ::boost::shared_ptr<FrameworkHelper> pHelper(
-                    FrameworkHelper::Instance(*mpViewShellBase));
-                if (pHelper->GetConfigurationController()->getResource(
-                    pHelper->CreateResourceId(FrameworkHelper::msFullScreenPaneURL)).is())
-                {
-                    ::sd::framework::ConfigurationController::Lock aLock (
-                        pHelper->GetConfigurationController());
-                
-                    pHelper->RunOnConfigurationEvent(
-                        FrameworkHelper::msConfigurationUpdateEndEvent,
-                        ::boost::bind(&SlideShowRestarter::StartPresentation, shared_from_this()));
-                    pHelper->UpdateConfiguration();
-                }
-                else
-                {
-                    StartPresentation();
-                }
-            }
-        }
-    }
-    return 0;
+			// The following piece of code should not be here because the
+			// slide show should be aware of the existence of the presenter
+			// console (which is displayed in the FullScreenPane). But the
+			// timing has to be right and I did not find a better place for
+			// it.
+
+			// Wait for the full screen pane, which displays the presenter
+			// console, to disappear. Only when it is gone, call
+			// InitiatePresenterStart(), in order to begin the asynchronous
+			// restart of the slide show.
+			if (mpViewShellBase != NULL)
+			{
+				::boost::shared_ptr<FrameworkHelper> pHelper(
+					FrameworkHelper::Instance(*mpViewShellBase));
+				if (pHelper->GetConfigurationController()->getResource(
+					pHelper->CreateResourceId(FrameworkHelper::msFullScreenPaneURL)).is())
+				{
+					::sd::framework::ConfigurationController::Lock aLock (
+						pHelper->GetConfigurationController());
+
+					pHelper->RunOnConfigurationEvent(
+						FrameworkHelper::msConfigurationUpdateEndEvent,
+						::boost::bind(&SlideShowRestarter::StartPresentation, shared_from_this()));
+					pHelper->UpdateConfiguration();
+				}
+				else
+				{
+					StartPresentation();
+				}
+			}
+		}
+	}
+	return 0;
 }
-
-
-
 
 void SlideShowRestarter::StartPresentation (void)
 {
-    if (mpDispatcher == NULL && mpViewShellBase!=NULL)
-        mpDispatcher = mpViewShellBase->GetViewFrame()->GetDispatcher();
+	if (mpDispatcher == NULL && mpViewShellBase!=NULL)
+		mpDispatcher = mpViewShellBase->GetViewFrame()->GetDispatcher();
 
-    // Start the slide show on the saved current slide.
-    if (mpDispatcher != NULL)
-    {
-        mpDispatcher->Execute(SID_PRESENTATION, SFX_CALLMODE_ASYNCHRON);
-        if (mpSlideShow.is())
-        {
-            Sequence<css::beans::PropertyValue> aProperties (1);
-            aProperties[0].Name = C2U("FirstPage");
-            aProperties[0].Value <<= C2U("page") + OUString::valueOf(mnCurrentSlideNumber+1);
-            mpSlideShow->startWithArguments(aProperties);
-        }
-        mpSelf.reset();
-    }
+	// Start the slide show on the saved current slide.
+	if (mpDispatcher != NULL)
+	{
+		mpDispatcher->Execute(SID_PRESENTATION, SFX_CALLMODE_ASYNCHRON);
+		if (mpSlideShow.is())
+		{
+			Sequence<css::beans::PropertyValue> aProperties (1);
+			aProperties[0].Name = C2U("FirstPage");
+			aProperties[0].Value <<= C2U("page") + OUString::valueOf(mnCurrentSlideNumber+1);
+			mpSlideShow->startWithArguments(aProperties);
+		}
+		mpSelf.reset();
+	}
 }
 
 } // end of namespace sd
+
+/* vim: set noet sw=4 ts=4: */

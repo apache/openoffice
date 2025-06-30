@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ using namespace ::com::sun::star::uno;
         {
             sal_Int32 nRows = accessibleTable->getAccessibleRowCount();
             sal_Int32 nCols = accessibleTable->getAccessibleColumnCount();
-    
+
             if( nRows * nCols < MAXIMUM_ACCESSIBLE_TABLE_CELLS )
             {
                 // make all children visible to the hierarchy
@@ -101,12 +101,12 @@ using namespace ::com::sun::star::uno;
             }
             pResult = NSAccessibilityUnignoredChildren( cells );
         }
-        catch (const Exception &e) 
+        catch (const Exception &e)
         {
         }
         [cells autorelease];
     }
-    
+
     return pResult;
 }
 
@@ -116,9 +116,9 @@ using namespace ::com::sun::star::uno;
     if( accessibleTable )
     {
         sal_Int32 nRows = accessibleTable->getAccessibleRowCount();
-        sal_Int32 nCols = accessibleTable->getAccessibleColumnCount();    
-        
-        
+        sal_Int32 nCols = accessibleTable->getAccessibleColumnCount();
+
+
         if( nRows*nCols < MAXIMUM_ACCESSIBLE_TABLE_CELLS )
         {
             [ attributeNames addObject: NSAccessibilityRowsAttribute ];
@@ -135,7 +135,7 @@ using namespace ::com::sun::star::uno;
     if( accessibleTable )
     {
         sal_Int32 nRows = accessibleTable->getAccessibleRowCount();
-        sal_Int32 nCols = accessibleTable->getAccessibleColumnCount();    
+        sal_Int32 nCols = accessibleTable->getAccessibleColumnCount();
         if( nRows * nCols < MAXIMUM_ACCESSIBLE_TABLE_CELLS )
         {
             NSMutableArray * cells = [ [ NSMutableArray alloc ] init ];
@@ -155,14 +155,14 @@ using namespace ::com::sun::star::uno;
                 }
                 pResult = NSAccessibilityUnignoredChildren( cells );
             }
-            catch (const Exception &e) 
+            catch (const Exception &e)
             {
                 pResult = nil;
             }
             [ cells autorelease ];
         }
     }
-    
+
     return pResult;
 }
 
@@ -171,11 +171,11 @@ using namespace ::com::sun::star::uno;
     NSArray* pResult = nil;
 
     XAccessibleTable * accessibleTable = [ self accessibleTable ];
-    
+
     if( accessibleTable )
     {
         sal_Int32 nRows = accessibleTable->getAccessibleRowCount();
-        sal_Int32 nCols = accessibleTable->getAccessibleColumnCount();    
+        sal_Int32 nCols = accessibleTable->getAccessibleColumnCount();
         if( nRows * nCols < MAXIMUM_ACCESSIBLE_TABLE_CELLS )
         {
             NSMutableArray * cells = [ [ NSMutableArray alloc ] init ];
@@ -194,14 +194,14 @@ using namespace ::com::sun::star::uno;
                 }
                 pResult = NSAccessibilityUnignoredChildren( cells );
             }
-            catch (const Exception &e) 
+            catch (const Exception &e)
             {
                 pResult = nil;
             }
             [ cells autorelease ];
         }
     }
-    
+
     return pResult;
 }
 

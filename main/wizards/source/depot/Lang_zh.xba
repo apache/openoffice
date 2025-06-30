@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,23 +9,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Lang_zh" script:language="StarBasic">Option Explicit
 
 Sub LoadChineseSimpleLanguage()
 
 	sProductname = GetProductname
-	sOK = &quot;确定&quot; 
+	sOK = &quot;确定&quot;
 	sCancel = &quot;取消&quot;
 	sColumnHeader = &quot;列标题&quot;
 	sInsertStockName = &quot;请首先往您的帐号内输入一些股票名称！&quot;
@@ -51,7 +51,7 @@ Sub LoadChineseSimpleLanguage()
 	StockRatesTitle(1) = &quot;支付红利&quot;
 	StockRatesTitle(2) = &quot;股票拆股&quot;
 	StockRatesTitle(3) = sHistory
-	sDepotCurrency = &quot;股票交易的货币&quot;	
+	sDepotCurrency = &quot;股票交易的货币&quot;
 	sStockName = &quot;股票名称&quot;
 	TransactMode = LIFO	&apos; Possible values: &quot;FIFO&quot; and &quot;LIFO&quot;
 	DateCellStyle = &quot;结果 日期&quot;
@@ -84,7 +84,7 @@ Sub LoadChineseSimpleLanguage()
 	sMarket(0,8) = &quot;409&quot;
 	sMarket(0,9) = &quot;44&quot;
 	sMarket(0,10) = &quot;1&quot;
-	
+
 	sMarket(1,0) = &quot;欧元&quot;
 	sMarket(1,1) = chr(8364)
 	sMarket(1,2) = &quot;法兰克福&quot;
@@ -117,14 +117,14 @@ Sub LoadChineseSimpleLanguage()
 	sMarket(3,8) = &quot;411&quot;
 	sMarket(3,9) = &quot;&quot;
 	sMarket(3,10) = &quot;&quot;
-	
+
 	sMarket(4,0) = &quot;港币&quot;
 	sMarket(4,1) = &quot;HK$&quot;
 	sMarket(4,2) = &quot;香港&quot;
 	sMarket(4,3) = &quot;http://hk.finance.yahoo.com/d/quotes.csv?s=&lt;StockID&gt;.HK&amp;f=sl1d1t1c1ohgv&amp;e=.csv&quot;
 	sMarket(4,5) = &quot;编号&quot;
 	sMarket(4,6) = &quot;zh&quot;
-	sMarket(4,7) = &quot;HK&quot;	
+	sMarket(4,7) = &quot;HK&quot;
 	sMarket(4,8) = &quot;C04&quot;
 	sMarket(4,9) = &quot;44&quot;
 	sMarket(4,10) = &quot;1&quot;
@@ -144,7 +144,7 @@ Sub LoadChineseSimpleLanguage()
 	CompleteMarketList()
 
 	LocalizedCurrencies()
-	
+
 	With TransactModel
 		.lblStockNames.Label = sStockname
 		.lblQuantity.Label = &quot;数量&quot;
@@ -157,7 +157,7 @@ Sub LoadChineseSimpleLanguage()
 		.cmdGoOn.Label = sOK
 		.cmdCancel.Label = sCancel
 	End With
-	
+
 	With StockRatesModel
 		.optPerShare.Label = &quot;每股红利&quot;
 		.optTotal.Label = &quot;红利总计&quot;

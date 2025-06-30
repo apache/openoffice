@@ -24,7 +24,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_editeng.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #include <editeng/flstitem.hxx>
 #include <editeng/fontitem.hxx>
@@ -576,7 +575,7 @@ SET_FONTALIGNMENT:
 			}
 			break;
 
-/*  */
+/* */
 			case RTF_B:
 			case RTF_AB:
 				if( IsAttrSttPos() )	// nicht im Textfluss ?
@@ -1141,7 +1140,7 @@ ATTR_SETEMPHASIS:
 				break;
 
 
-/*  */
+/* */
 
 			case BRACELEFT:
 				{

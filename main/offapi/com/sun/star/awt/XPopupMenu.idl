@@ -38,7 +38,7 @@ published interface XPopupMenu: XMenu
     /** inserts a separator at the specified position.
 
         @param nItemPos
-            specifies the position where the menu separator will be insterted.
+            specifies the position where the menu separator will be inserted.
      */
     [oneway] void insertSeparator( [in] short nItemPos );
 

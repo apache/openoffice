@@ -21,12 +21,19 @@
 
 
 
-package ifc.i18n;
-
-import lib.MultiMethodTest;
+package api.i18n;
 
 import com.sun.star.i18n.XIndexEntrySupplier;
 import com.sun.star.lang.Locale;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Assert;
+import org.junit.Test;
+import org.openoffice.test.uno.UnoApp;
 
 /**
 * Testing <code>com.sun.star.i18n.XIndexEntrySupplier</code>
@@ -38,28 +45,54 @@ import com.sun.star.lang.Locale;
 * Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.i18n.XIndexEntrySupplier
 */
-public class _XIndexEntrySupplier extends MultiMethodTest {
+public class XIndexEntrySupplierTest {
+    private static final UnoApp app = new UnoApp();
+
+    private XComponentContext xContext = null;
     public XIndexEntrySupplier oObj = null;
     public String[] languages = new String[]{"de","en","es","fr","ja","ko","zh"};
     public String[] countries = new String[]{"DE","US","ES","FR","JP","KR","CN"};
     public String[] onePage = new String[]{"f.","p."," s."," sv","p.","",""};
     public String[] morePages = new String[]{"ff.","pp."," ss."," sv","pp.","",""};
 
+    // setup and close connections
+    @BeforeClass
+    public static void setUpConnection() throws Exception
+    {
+        app.start();
+    }
+
+    @AfterClass
+    public static void tearDownConnection() throws InterruptedException, com.sun.star.uno.Exception
+    {
+        app.close();
+    }
+
+    @Before
+    public void before() throws Exception {
+        xContext = app.getComponentContext();
+        oObj = UnoRuntime.queryInterface(
+            XIndexEntrySupplier.class,
+            xContext.getServiceManager().createInstanceWithContext("com.sun.star.i18n.IndexEntrySupplier", xContext)
+        );
+    }
+
     /**
     * Test calls the method, then result is checked. <p>
     * Has <b> OK </b> status if the method returns right index for several
     * locales and word.
     */
+    @Test
     public void _getIndexCharacter() {
         boolean res = true;
-        log.println("getIndexCharacter('chapter', getLocale(i), '')");
+        System.out.println("getIndexCharacter('chapter', getLocale(i), '')");
         for (int i=0; i<7; i++) {
-            log.print("getIndexCharacter('chapter', " + countries[i] + ") :");
+            System.out.print("getIndexCharacter('chapter', " + countries[i] + ") :");
             String get = oObj.getIndexCharacter("chapter", getLocale(i), "");
-            log.println(get);
+            System.out.println(get);
             res &= get.equals("C");
         }
-        tRes.tested("getIndexCharacter()", res);
+        Assert.assertTrue("getIndexCharacter()", res);
     }
 
     /**
@@ -67,26 +100,27 @@ public class _XIndexEntrySupplier extends MultiMethodTest {
     * for several pages, after every call result is checked. <p>
     * Has <b> OK </b> status if method returns right index for several locales.
     */
+    @Test
     public void _getIndexFollowPageWord() {
         boolean res = true;
 
         for (int i=0; i<7; i++) {
             String get = oObj.getIndexFollowPageWord(true, getLocale(i));
             if (! get.equals(morePages[i]) ) {
-                log.println("Language: " + languages[i]);
-                log.println("Getting: #" + get + "#");
-                log.println("Expected: #" + morePages[i] + "#");
+                System.out.println("Language: " + languages[i]);
+                System.out.println("Getting: #" + get + "#");
+                System.out.println("Expected: #" + morePages[i] + "#");
             }
             res &= get.equals(morePages[i]);
             get = oObj.getIndexFollowPageWord(false,getLocale(i));
             if (! get.equals(onePage[i]) ) {
-                log.println("Language: " + languages[i]);
-                log.println("Getting: #" + get + "#");
-                log.println("Expected: #" + onePage[i] + "#");
+                System.out.println("Language: " + languages[i]);
+                System.out.println("Getting: #" + get + "#");
+                System.out.println("Expected: #" + onePage[i] + "#");
             }
             res &= get.equals(onePage[i]);
         }
-        tRes.tested("getIndexFollowPageWord()", res);
+        Assert.assertTrue("getIndexFollowPageWord()", res);
     }
 
     /**

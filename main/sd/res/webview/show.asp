@@ -3,7 +3,7 @@
     Response.Expires = 0
 %>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,16 +11,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 <!-- #include file = "common.inc" -->
@@ -44,19 +44,19 @@
     End If
 %>
 
-<HTML>
-
-<HEAD>
-    <TITLE>$$1</TITLE>
-</HEAD>
-
-<BODY bgcolor="white">
-	<table width=100% height=99%>
-	<tr valign=center><td align=center>
-		<IMG src="<% = sGifName1 %>" width=$$4 height=$$5 border=0>
-		<br><IMG src="<% = sGifName2 %>" width=1 height=1 border=0>
-	</td></tr>
-	</table>
-</BODY>
-
-</HTML>
+<html>
+    <head>
+        <title>$$1</title>
+    </head>
+    <body bgcolor="white">
+        <table width="100%" height="99%">
+            <tr valign="center">
+                <td align="center">
+                    <img src="<% = sGifName1 %>" width=$$4 height=$$5 border="0">
+                    <br>
+                    <img src="<% = sGifName2 %>" width="1" height="1" border="0">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -176,7 +176,7 @@ void removeTempFile(){
 int InitXrmExport( char *pOutput , char* pFilename)
 /*****************************************************************************/
 {
-	// instanciate Export
+	// instantiate Export
 	ByteString sOutput( pOutput );
 	ByteString sFilename( pFilename );
     Export::InitLanguages( false );

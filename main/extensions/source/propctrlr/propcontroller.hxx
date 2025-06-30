@@ -85,7 +85,7 @@ namespace pcr
 
 #if OSL_DEBUG_LEVEL > 0
     const char* CheckPropertyBrowserInvariants( const void* pVoid );
-        // for dignostics with DBG_CHKTHIS
+        // for diagnostics with DBG_CHKTHIS
 #endif
     DBG_NAMEEX( OPropertyBrowserController )
 

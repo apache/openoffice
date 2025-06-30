@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_starmath.hxx"
-
 
 #include <sot/factory.hxx>
 #ifndef _SVX_SVXIDS_HRC //autogen
@@ -36,7 +33,6 @@
 #include <sfx2/docfile.hxx>
 #include <sfx2/docfilt.hxx>
 #include <sfx2/app.hxx>
-#include <sfx2/taskpane.hxx>
 
 #ifndef _SMDLL_HXX
 #include <smdll.hxx>
@@ -91,8 +87,6 @@ void SmDLL::Init()
 
 	SmToolBoxWrapper::RegisterChildWindow(sal_True);
 	SmCmdBoxWrapper::RegisterChildWindow(sal_True);
-
-    ::sfx2::TaskPaneWrapper::RegisterChildWindow( sal_False, pp );
 }
 
 /*************************************************************************
@@ -109,3 +103,5 @@ void SmDLL::Exit()
 
 	*GetAppData(SHL_SM) = 0;
 }
+
+/* vim: set noet sw=4 ts=4: */
