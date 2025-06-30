@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 "tests bridging python implementations of UNO objects"
 import unittest
@@ -33,7 +33,7 @@ class SequenceOutputStream( unohelper.Base, XOutputStream ):
       def __init__( self ):
           self.s = uno.ByteSequence("")
           self.closed = 0
-          
+
       def closeOutput(self):
           self.closed = 1
 
@@ -45,18 +45,18 @@ class SequenceOutputStream( unohelper.Base, XOutputStream ):
 
       def getSequence( self ):
           return self.s
-          
-                  
+
+
 class SequenceInputStream( XInputStream, unohelper.Base ):
       def __init__( self, seq ):
           self.s = seq
           self.nIndex = 0
           self.closed = 0
-          
+
       def closeInput( self):
           self.closed = 1
           self.s = None
-          
+
       def skipBytes( self, nByteCount ):
           if( nByteCount + self.nIndex > len(self.s) ):
               nByteCount = len(self.s) - self.nIndex
@@ -71,18 +71,18 @@ class SequenceInputStream( XInputStream, unohelper.Base ):
           retSeq = uno.ByteSequence(self.s.value[self.nIndex : self.nIndex + nRet ])
           self.nIndex = self.nIndex + nRet
           return nRet, retSeq
-          
+
       def readSomeBytes( self, retSeq , nByteCount ):
           #as we never block !
           return readBytes( retSeq, nByteCount )
-          
+
       def available( self ):
           return len( self.s ) - self.nIndex
 
 class SequenceInputStream2( SequenceInputStream ):
       def __init__( self, seq ):
             SequenceInputStream.__init__( self, seq )
-            
+
 class TestCase(unittest.TestCase):
       def __init__(self,method,ctx):
           unittest.TestCase.__init__(self,method)
@@ -93,7 +93,7 @@ class TestCase(unittest.TestCase):
                            "com.sun.star.test.bridge.CppTestObject",self.ctx)
           self.pipe = self.ctx.ServiceManager.createInstanceWithContext( \
                            "com.sun.star.io.Pipe" , self.ctx )
-                           
+
       def testStandard( self ):
           dataOut = self.ctx.ServiceManager.createInstanceWithContext( \
                         "com.sun.star.io.DataOutputStream", self.ctx )
@@ -105,7 +105,7 @@ class TestCase(unittest.TestCase):
 
           dataInput = self.ctx.ServiceManager.createInstanceWithContext( \
                    "com.sun.star.io.DataInputStream", self.ctx )
-          
+
           dataInput.setInputStream( SequenceInputStream2( streamOut.getSequence() ) )
 
           self.failUnless( 42 == dataInput.readShort() )
@@ -116,12 +116,12 @@ class TestCase(unittest.TestCase):
 class NullDevice:
       def write( self, string ):
             pass
-      
+
 
 class EventListener( unohelper.Base, XEventListener ):
     def __init__( self ):
         self.disposingCalled = False
-        
+
     def disposing( self , eventObject ):
         self.disposingCalled = True
 
@@ -152,7 +152,7 @@ class TestHelperCase( unittest.TestCase ):
             smgr = uno.getComponentContext().ServiceManager.createInstance(
                   "com.sun.star.lang.ServiceManager" )
 
-            # check, whether listeners 
+            # check, whether listeners
             listener = EventListener()
             smgr.addEventListener( listener )
             smgr.dispose()
@@ -166,7 +166,7 @@ class TestHelperCase( unittest.TestCase ):
             smgr.removeEventListener( listener )
             smgr.dispose()
             self.failUnless( not listener.disposingCalled )
-            
+
       def testCurrentContext( self ):
             oldContext = uno.getCurrentContext()
             try:
@@ -176,8 +176,8 @@ class TestHelperCase( unittest.TestCase ):
                   self.failUnless( None == uno.getCurrentContext().getValueByName( "My43" ) )
             finally:
                   uno.setCurrentContext( oldContext )
-          
-            
+
+
 
 def suite( ctx ):
     suite = unittest.TestSuite()
@@ -187,4 +187,3 @@ def suite( ctx ):
     suite.addTest(TestHelperCase( "testListener" ) )
     suite.addTest(TestHelperCase( "testCurrentContext" ) )
     return suite
-                                           

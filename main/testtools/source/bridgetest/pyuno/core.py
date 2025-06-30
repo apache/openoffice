@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 import pyuno
 import uno
@@ -69,10 +69,10 @@ def assign( rData, bBool, cChar, nByte, nShort, nUShort, nLong, nULong, nHyper,\
 class PythonTransporter:
     def __init__( self ):
         pass
-    
+
     def transportAny( self, arg ):
         return arg
-        
+
 class TestCase( unittest.TestCase):
 
       def __init__(self,method,ctx):
@@ -81,7 +81,7 @@ class TestCase( unittest.TestCase):
 
       def setUp(self):
          # the testcomponent from the testtools project
-         self.tobj = self.ctx.ServiceManager.createInstanceWithContext( 
+         self.tobj = self.ctx.ServiceManager.createInstanceWithContext(
                                 'com.sun.star.test.bridge.CppTestObject' , self.ctx )
 
          self.tobj.Bool = 1
@@ -123,13 +123,13 @@ class TestCase( unittest.TestCase):
           self.failUnless( self.tobj.Sequence[1] == self.testElement2 , "Sequence2 test")
           self.failUnless( equalsEps( 4.3,self.tobj.Float,0.0001) , "float test" )
           self.failUnless( 4.2 == self.tobj.Double , "double test" )
-          self.failUnless( self.ctx == self.tobj.Interface , 
+          self.failUnless( self.ctx == self.tobj.Interface ,
                           "object identity test with C++ object" )
           self.failUnless( not self.ctx == self.tobj , "object not identical test " )
           self.failUnless( 42 == self.tobj.transportAny( 42 ), "transportAny long" )
           self.failUnless( "woo, this is python" == self.tobj.transportAny( "woo, this is python" ), \
                   "string roundtrip via any test"  )
-           
+
       def testEnum( self ):
           e1 = uno.Enum( "com.sun.star.uno.TypeClass" , "LONG" )
           e2 = uno.Enum( "com.sun.star.uno.TypeClass" , "LONG" )
@@ -164,7 +164,7 @@ class TestCase( unittest.TestCase):
           self.tobj.Bool = uno.Bool(0)
           self.failUnless( not self.tobj.Bool , "bool true attribute test" )
 
-          # new boolean semantic 
+          # new boolean semantic
           self.failUnless( id( self.tobj.transportAny( True ) ) == id(True)  , "boolean preserve test")
           self.failUnless( id( self.tobj.transportAny( False ) ) == id(False) , "boolean preserve test" )
           self.failUnless( id( self.tobj.transportAny(1) ) != id( True ), "boolean preserve test" )
@@ -189,12 +189,12 @@ class TestCase( unittest.TestCase):
           self.failUnless( mystruct == self.tobj.transportAny( mystruct ), "struct roundtrip with any test" )
           my2ndstruct = uno.createUnoStruct( "test.testtools.bridgetest.TestData", \
                       1, 'h', 43, -42,44,42,41,46,47,4.3,4.2,4,"yabadabadoo",self.ctx,"yabadabadoo",())
-          self.failUnless( my2ndstruct == mystruct, "struct non-default ctor test" )                                  
+          self.failUnless( my2ndstruct == mystruct, "struct non-default ctor test" )
       def testUnicode( self ):
           uni = u'\0148'
           self.tobj.String = uni
           self.failUnless( uni == self.tobj.String )
-          
+
 
           self.tobj.String = u'dubidu'
           self.failUnless( u'dubidu' == self.tobj.String , "unicode comparison test")
@@ -231,7 +231,7 @@ class TestCase( unittest.TestCase):
           except unoExc:
                 wasHere = 1
           self.failUnless(wasHere, "exception test 3")
-    
+
           illegalArg = uno.getClass( "com.sun.star.lang.IllegalArgumentException" )
           wasHere = 0
           try:
@@ -246,13 +246,13 @@ class TestCase( unittest.TestCase):
           else:
                 self.failUnless( 0, "except test 5c" )
                 self.failUnless( wasHere, "illegal argument exception test failed" )
-                  
+
       def testInterface(self):
           clazz = uno.getClass( "com.sun.star.lang.XComponent" )
           self.failUnless( "com.sun.star.lang.XComponent" == clazz.__pyunointerface__ )
           self.failUnless( issubclass( clazz, uno.getClass( "com.sun.star.uno.XInterface" ) ) )
           self.tobj.Interface = None
-           
+
 
       def testOutparam( self):
           # outparameter
@@ -279,7 +279,7 @@ class TestCase( unittest.TestCase):
           self.failUnless(myseq == self.tobj.Sequence, "outparam 17 test")
           self.failUnless(my2ndstruct == struct, "outparam 18 test")
 
-# should work, debug on windows, why not    
+# should work, debug on windows, why not
 #    struct, mybool,mychar,mybyte,myshort,myushort,mylong,myulong,myhyper,myuhyper,myfloat,\
 #              mydouble,myenum,mystring,myinterface,myany,myseq,my2ndstruct = self.tobj.setValues2( \
 #             mybool,mychar,mybyte,myshort,myushort,mylong,myulong,myhyper,myuhyper,myfloat,\
@@ -312,8 +312,8 @@ class TestCase( unittest.TestCase):
           except AttributeError:
                  wasHere = 1
           except IllegalArgumentException:
-                 wasHere = 1     
-          self.failUnless( wasHere, "wrong attribute test" )             
+                 wasHere = 1
+          self.failUnless( wasHere, "wrong attribute test" )
 
           IllegalArgumentException = uno.getClass("com.sun.star.lang.IllegalArgumentException" )
           RuntimeException = uno.getClass("com.sun.star.uno.RuntimeException" )
@@ -347,7 +347,7 @@ class TestCase( unittest.TestCase):
           self.failUnless( s == uno.ByteSequence( s ) )
           self.failUnless( s[0] == 'a' )
           self.failUnless( s[1] == 'b' )
-          
+
 
       def testInvoke( self ):
           self.failUnless( 5 == uno.invoke( self.tobj , "transportAny" , (uno.Any("byte", 5),) ) )
@@ -357,5 +357,3 @@ class TestCase( unittest.TestCase):
           mystruct = uno.createUnoStruct(
               "com.sun.star.beans.PropertyValue", "foo",0,uno.Any(t,2),0 )
           mystruct.Value = uno.Any(t, 1)
-          
-          
