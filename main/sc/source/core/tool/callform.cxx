@@ -461,5 +461,3 @@ sal_Bool FuncData::GetParamDesc( String& aName, String& aDesc, sal_uInt16 nParam
 	}
 	return bRet;
 }
-
-

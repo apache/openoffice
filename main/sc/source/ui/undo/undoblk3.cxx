@@ -2115,7 +2115,3 @@ sal_Bool __EXPORT ScUndoUpdateAreaLink::CanRepeat(SfxRepeatTarget& /* rTarget */
 {
 	return sal_False;
 }
-
-
-
-

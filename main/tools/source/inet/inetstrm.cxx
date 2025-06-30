@@ -1812,6 +1812,3 @@ int INetMIMEMessageStream::PutMsgLine (const sal_Char *pData, sal_uIntPtr nSize)
         }
     }
 }
-
-
-

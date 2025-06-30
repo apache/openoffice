@@ -107,4 +107,3 @@ sal_Int32 getColumnTypeByModelName(const ::rtl::OUString& aModelName)
     }
     return nTypeId;
 }
-

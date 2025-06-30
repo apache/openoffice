@@ -98,4 +98,3 @@ CSubmission::SubmissionResult CSubmissionPost::submit(const CSS::uno::Reference<
 
     return SUCCESS;
 }
-

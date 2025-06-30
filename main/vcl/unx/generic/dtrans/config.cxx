@@ -140,5 +140,3 @@ void DtransX11ConfigItem::Commit()
 void DtransX11ConfigItem::Notify( const Sequence< OUString >& /*rPropertyNames*/ )
 {
 }
-
-

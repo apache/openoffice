@@ -127,4 +127,3 @@ sal_Bool SalGraphics::getNativeControlRegion(  ControlType,
 {
 	return( sal_False );
 }
-

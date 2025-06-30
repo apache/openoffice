@@ -96,5 +96,3 @@ void ScTabViewShell::UIDeactivated( SfxInPlaceClient* pClient )
     ForceMove();
     SfxViewShell::UIDeactivated( pClient );
 }
-
-

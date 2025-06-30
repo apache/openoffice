@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _REGISTRY_REFLWRIT_HXX_
 #define _REGISTRY_REFLWRIT_HXX_
@@ -29,13 +27,11 @@
 #include "registry/registrydllapi.h"
 #include <rtl/ustring.hxx>
 
-/// Implememetation handle
+// Implememetation handle
 typedef void* TypeWriterImpl;
 
 /****************************************************************************
-	
 	C-Api
-
 *****************************************************************************/
 
 #ifdef __cplusplus
@@ -43,7 +39,7 @@ extern "C" {
 #endif
 
 /** specifies a collection of function pointers which represents the complete registry type writer C-API.
-    
+
     This funtions pointers are used by the C++ wrapper to call the C-API.
 */
 struct RegistryTypeWriter_Api
@@ -86,15 +82,15 @@ class RegistryTypeWriter
 public:
 
 	/** Constructor.
-        
+
         @param RTTypeClass specifies the type of the new blob.
         @param typeName specifies the full qualified type name with '/' as separator.
         @param superTypeName specifies the full qualified type name of the base type
                              with '/' as separator.
-        @param fieldCount specifies the number of fields (eg. number of attrbutes/properties,
+        @param fieldCount specifies the number of fields (e.g. number of attributes/properties,
                           enum values or constants).
         @param methodCount specifies the number of methods.
-        @param referenceCount specifies the number of references (eg. number of supported interfaces,
+        @param referenceCount specifies the number of references (e.g. number of supported interfaces,
                               exported services ...)
 	 */
 	inline RegistryTypeWriter(RTTypeClass 				RTTypeClass,
@@ -104,36 +100,36 @@ public:
 							  sal_uInt16 				methodCount,
 							  sal_uInt16				referenceCount);
 
-	/// Copy constructcor
+	// Copy constructcor
 	inline RegistryTypeWriter(const RegistryTypeWriter& toCopy);
 
 	/** Destructor. The Destructor frees the internal data block.
 
         The pointer (returned by getBlop) will be set to NULL.
-     */    
+     */
 	inline ~RegistryTypeWriter();
 
-	/// Assign operator
+	// Assign operator
 	inline RegistryTypeWriter& operator == (const RegistryTypeWriter& toAssign);
 
     /** @deprecated
         sets the unique identifier for an interface type.
 
         An earlier version of UNO used an unique identifier for interfaces. In the
-        current version of UNO this uik was eliminated and this function is 
+        current version of UNO this uik was eliminated and this function is
         not longer used.
-     */   
+     */
 	inline void setUik(const RTUik& uik);
 
     /** sets a documentation string for the type.
 
         This documentation should be the same as the documentation which is provided
         for this type in IDL.
-     */   
+     */
 	inline void setDoku(const ::rtl::OUString& doku);
 
     /** sets the IDL filename where this type is defined.
-     */   
+     */
 	inline void setFileName(const ::rtl::OUString& fileName);
 
     /** sets the data for a field member of a type blob.
@@ -146,8 +142,8 @@ public:
         @param access specifies the access mode of the field.
         @param constValue specifies the value of the field. The value is only interesting
                           for enum values or constants.
-     */   
-	inline void setFieldData( sal_uInt16 				index, 
+     */
+	inline void setFieldData( sal_uInt16 				index,
 							  const ::rtl::OUString& 	name,
 							  const ::rtl::OUString& 	typeName,
 							  const ::rtl::OUString&	doku,
@@ -164,7 +160,7 @@ public:
         @param paramCount specifies the number of parameters.
         @param excCount specifies the number of exceptions.
         @param doku specifies the documentation string of the field.
-     */   
+     */
 	inline void setMethodData(sal_uInt16				index,
 							  const ::rtl::OUString& 	name,
 							  const ::rtl::OUString& 	returnTypeName,
@@ -180,7 +176,7 @@ public:
         @param type specifies the full qualified typename.
         @param name specifies the name.
         @param mode specifies the parameter mode.
-     */   
+     */
 	inline void setParamData(sal_uInt16				index,
 							 sal_uInt16				paramIndex,
 							 const ::rtl::OUString&	type,
@@ -188,11 +184,11 @@ public:
 							 RTParamMode			mode);
 
     /** sets the data for the specified exception of a method.
-        
+
         @param index indicates the index of the method.
         @param excIndex specifies the index of the exception.
         @param type specifies the full qualified typename of the exception.
-     */   
+     */
 	inline void setExcData(sal_uInt16				index,
 						   sal_uInt16				excIndex,
 						   const ::rtl::OUString&	type);
@@ -201,22 +197,22 @@ public:
 
         The pointer will be invalid (NULL) if the instance of
         the RegistryTypeWriter will be destroyed.
-     */   
+     */
 	inline const sal_uInt8* 	getBlop();
 
     /** returns the size of the new type blob in bytes.
-     */   
+     */
 	inline sal_uInt32 		getBlopSize();
 
     /** sets the data for a reference member.
-        
+
         @param index indicates the index of the reference.
         @param name specifies the name.
         @param refType specifies the full qualified typename of the reference.
         @param doku specifies the documentation string of the reference.
         @param access specifies the access mode of the reference.
-     */   
-	inline void setReferenceData( sal_uInt16 				index, 
+     */
+	inline void setReferenceData( sal_uInt16 				index,
 							  	  const ::rtl::OUString& 	name,
 							  	  RTReferenceType 			refType,
 							  	  const ::rtl::OUString& 	doku,
@@ -224,11 +220,11 @@ public:
 
 protected:
 
-    /// stores the registry type writer Api.
+	// stores the registry type writer Api.
 	const RegistryTypeWriter_Api*								 m_pApi;
-    /// stores the handle of an implementation class
+	// stores the handle of an implementation class
 	TypeWriterImpl												 m_hImpl;
-};		
+};
 
 
 
@@ -253,17 +249,17 @@ inline RegistryTypeWriter::RegistryTypeWriter(RTTypeClass 				RTTypeClass,
 inline RegistryTypeWriter::RegistryTypeWriter(const RegistryTypeWriter& toCopy)
 	: m_pApi(toCopy.m_pApi)
 	, m_hImpl(toCopy.m_hImpl)
-{ 
-	m_pApi->acquire(m_hImpl); 
+{
+	m_pApi->acquire(m_hImpl);
 }
 
 inline RegistryTypeWriter::~RegistryTypeWriter()
-{  
+{
 	m_pApi->release(m_hImpl);
 }
 
 inline RegistryTypeWriter& RegistryTypeWriter::operator == (const RegistryTypeWriter& toAssign)
-{ 
+{
 	if (m_hImpl != toAssign.m_hImpl)
 	{
 		m_pApi->release(m_hImpl);
@@ -274,7 +270,7 @@ inline RegistryTypeWriter& RegistryTypeWriter::operator == (const RegistryTypeWr
 	return *this;
 }
 
-inline void RegistryTypeWriter::setFieldData( sal_uInt16 				index, 
+inline void RegistryTypeWriter::setFieldData( sal_uInt16 				index,
 											  const ::rtl::OUString& 	name,
 											  const ::rtl::OUString& 	typeName,
 											  const ::rtl::OUString&	doku,
@@ -340,7 +336,7 @@ inline sal_uInt32 RegistryTypeWriter::getBlopSize()
 }
 
 
-inline void RegistryTypeWriter::setReferenceData( sal_uInt16 				index, 
+inline void RegistryTypeWriter::setReferenceData( sal_uInt16 				index,
 											  	  const ::rtl::OUString& 	name,
 											  	  RTReferenceType 			refType,
 											  	  const ::rtl::OUString& 	doku,
@@ -350,3 +346,5 @@ inline void RegistryTypeWriter::setReferenceData( sal_uInt16 				index,
 }
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

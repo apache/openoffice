@@ -439,4 +439,3 @@ sal_Bool HierarchyResultSetDataSupplier::checkResult(
 
 	return sal_True;
 }
-

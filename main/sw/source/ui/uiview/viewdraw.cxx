@@ -840,6 +840,3 @@ void SwView::HyphenateDrawText()
 	pSdrView->SetAttributes( aSet );
 	GetViewFrame()->GetBindings().Invalidate(FN_HYPHENATE_OPT_DLG);
 }
-
-
-

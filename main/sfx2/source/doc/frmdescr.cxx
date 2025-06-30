@@ -321,5 +321,3 @@ SfxItemPresentation SfxFrameDescriptorItem::GetPresentation
 	rText.Erase();
 	return SFX_ITEM_PRESENTATION_NONE;
 }
-
-

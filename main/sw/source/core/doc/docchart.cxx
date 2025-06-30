@@ -270,4 +270,3 @@ SwChartLockController_Helper & SwDoc::GetChartControllerHelper()
     }
     return *pChartControllerHelper;
 }
-

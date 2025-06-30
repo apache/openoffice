@@ -127,5 +127,3 @@ Sequence< sal_Int32 > EnumTypeDescriptionImpl::getEnumValues()
 }
 
 }
-
-

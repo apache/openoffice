@@ -89,4 +89,3 @@ bool operator <(ByteSequence const & left, ByteSequence const & right) {
 }
 
 }
-

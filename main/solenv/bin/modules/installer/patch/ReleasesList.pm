@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 package installer::patch::ReleasesList;
@@ -38,7 +38,7 @@ my $Instance = undef;
 =head2 Instance()
 
     Return the singleton instance.
-    
+
 =cut
 sub Instance()
 {
@@ -67,7 +67,7 @@ sub new ($$)
     };
     bless($self, $class);
 
-    
+
     $self->Read($filename);
 
 
@@ -338,7 +338,7 @@ sub Read ($$)
         my $upgrade_code = GetText(GetFirstChild($download_node, "upgrade-code"));
         my $build_id = GetText(GetFirstChild($download_node, "build-id"));
         die "could not read package format from releases.xml" if $package_format eq "";
-        
+
         $self->{$version}->{$package_format}->{'upgrade-code'} = $upgrade_code;
         $self->{$version}->{$package_format}->{'build-id'} = $build_id;
         $self->{$version}->{$package_format}->{'url-template'} = $url_template;
@@ -380,7 +380,7 @@ sub ParseDownloadData ($$)
     my $checksum_value = GetText($checksum_node);
     my $file_size = GetText(GetFirstChild($item_node, "size"));
     my $product_code = GetText(GetFirstChild($item_node, "product-code"));
-        
+
     my $url = $url_template;
     $url =~ s/\%L/$language/g;
     return (
@@ -423,7 +423,7 @@ sub Write ($$)
 sub WriteContent ($$)
 {
     my ($self, $out) = @_;
-    
+
     print $out "<releases>\n";
     # Write the data sets for each releases with the same sort order as @{$self->{'releases'}}
     foreach my $version (@{$self->{'releases'}})
@@ -481,11 +481,11 @@ sub WriteContent ($$)
 sub WriteHeader ($$)
 {
     my ($self, $out) = @_;
-    
+
 print $out <<EOT;
 <?xml version='1.0' encoding='UTF-8'?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -493,16 +493,16 @@ print $out <<EOT;
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 EOT
 }
@@ -521,7 +521,7 @@ EOT
 sub GetPreviousVersion ($)
 {
     my ($current_version) = @_;
-    
+
     my $release_data = installer::patch::ReleasesList::Instance();
     my $previous_version = undef;
     foreach my $version (@{$release_data->{'releases'}})

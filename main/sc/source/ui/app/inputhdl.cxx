@@ -983,7 +983,7 @@ void ScInputHandler::UseFormulaData()
 		if ( aSel.nEndPos > 0 )
 		{
             xub_StrLen nPos = aSel.nEndPos;
-            String  aFormula = aTotal.Copy( 0, nPos );;
+            String  aFormula = aTotal.Copy( 0, nPos );
             xub_StrLen  nLeftParentPos = 0;
             xub_StrLen  nNextFStart = 0;
             xub_StrLen  nNextFEnd = 0;
@@ -3833,7 +3833,3 @@ ScInputHdlState& ScInputHdlState::operator=( const ScInputHdlState& r )
 
 	return *this;
 }
-
-
-
-

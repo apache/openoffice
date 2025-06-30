@@ -2627,4 +2627,3 @@ void Document::disposeParagraphs()
 }
 
 }
-

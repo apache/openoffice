@@ -1450,7 +1450,7 @@ void SwAutoFormat::BuildEnum( sal_uInt16 nLvl, sal_uInt16 nDigitLevel )
 	sal_Bool bBreak = sal_True;
 
 	// als erstes den akt. Einzug bestimmen und die Framebreite bestimmen
-	SwTwips nFrmWidth = pAktTxtFrm->Prt().Width();;
+	SwTwips nFrmWidth = pAktTxtFrm->Prt().Width();
 	SwTwips nLeftTxtPos;
 	{
 		const sal_Unicode* pTxt = pAktTxtNd->GetTxt().GetBuffer(), *pSav = pTxt;
@@ -2792,4 +2792,3 @@ void SwEditShell::SetAutoFmtFlags(SvxSwAutoFmtFlags * pFlags)
 	pEditFlags->cByInputBullet		= pFlags->cByInputBullet;
 	pEditFlags->aByInputBulletFont	= pFlags->aByInputBulletFont;
 }
-

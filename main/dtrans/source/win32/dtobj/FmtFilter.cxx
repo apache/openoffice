@@ -572,4 +572,3 @@ Sequence< sal_Int8 > SAL_CALL WinBITMAPToOOBMP( HBITMAP aHBMP )
 	
 	return ooBmpStream;
 }
-

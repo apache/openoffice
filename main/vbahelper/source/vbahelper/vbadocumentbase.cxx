@@ -297,4 +297,3 @@ VbaDocumentBase::getServiceNames()
 	}
 	return aServiceNames;
 }
-

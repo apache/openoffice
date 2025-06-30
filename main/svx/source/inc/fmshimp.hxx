@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef _SVX_FMSHIMP_HXX
 #define _SVX_FMSHIMP_HXX
@@ -94,7 +93,7 @@ DECLARE_STL_VECTOR( ::com::sun::star::uno::Reference< ::com::sun::star::form::XF
 #define GA_ENABLE_ROCTRLR	8
 
 
-// flags for controlling the behaviour when calling loadForms
+// flags for controlling the behavior when calling loadForms
 #define FORMS_LOAD			0x0000		// default: simply load
 #define FORMS_SYNC			0x0000		// default: do in synchronous
 
@@ -140,7 +139,7 @@ typedef ::cppu::WeakComponentImplHelper4<	::com::sun::star::beans::XPropertyChan
 //========================================================================
 class SAL_DLLPRIVATE FmXFormShell_Base_Disambiguation : public FmXFormShell_BD_BASE
 {
-    using ::com::sun::star::beans::XPropertyChangeListener::disposing;
+	using ::com::sun::star::beans::XPropertyChangeListener::disposing;
 protected:
 	FmXFormShell_Base_Disambiguation( ::osl::Mutex& _rMutex );
 	virtual void SAL_CALL disposing();
@@ -149,7 +148,7 @@ protected:
 //========================================================================
 namespace svx
 {
-    class FmTextControlShell;
+	class FmTextControlShell;
 }
 
 //========================================================================
@@ -166,7 +165,7 @@ class SAL_DLLPRIVATE FmXFormShell   :public FmXFormShell_BASE
                                     ,public ::svx::IControllerFeatureInvalidation
 {
 	friend class FmFormView;
-    friend class FmXFormView;
+	friend class FmXFormView;
 	friend class WizardUsageConfigItem;
 
 	class SuspendPropertyTracking;
@@ -197,47 +196,47 @@ class SAL_DLLPRIVATE FmXFormShell   :public FmXFormShell_BASE
 
 	::osl::Mutex	m_aMutex;
 	sal_uLong           m_nInvalidationEvent;
-    sal_uLong           m_nActivationEvent;
+	sal_uLong           m_nActivationEvent;
 	::std::queue< FmLoadAction >
 					m_aLoadingPages;
 
 	FmFormShell*                m_pShell;
-    ::svx::FmTextControlShell*  m_pTextShell;
+	::svx::FmTextControlShell*  m_pTextShell;
 
-    ::svx::ControllerFeatures   m_aActiveControllerFeatures;
-    ::svx::ControllerFeatures   m_aNavControllerFeatures;
+	::svx::ControllerFeatures   m_aActiveControllerFeatures;
+	::svx::ControllerFeatures   m_aNavControllerFeatures;
 
 	// aktuelle Form, Controller
 	// nur im alive mode verfuegbar
-    ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >    m_xActiveController;
-    ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >    m_xNavigationController;
-    ::com::sun::star::uno::Reference< ::com::sun::star::form::XForm >                       m_xActiveForm;
+	::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >    m_xActiveController;
+	::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >    m_xNavigationController;
+	::com::sun::star::uno::Reference< ::com::sun::star::form::XForm >                       m_xActiveForm;
 
 	// Aktueller container einer Page
 	// nur im designmode verfuegbar
 	::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess> m_xForms;
 
 	// the currently selected objects, as to be displayed in the property browser
-    InterfaceBag                                                                m_aCurrentSelection;
-    /// the currently selected form, or the form which all currently selected controls belong to, or <NULL/>
-    ::com::sun::star::uno::Reference< ::com::sun::star::form::XForm >           m_xCurrentForm;
-    /// the last selection/marking of controls only. Necessary to implement the "Control properties" slot
-    InterfaceBag                                                                m_aLastKnownMarkedControls;
+	InterfaceBag                                                                m_aCurrentSelection;
+	// the currently selected form, or the form which all currently selected controls belong to, or <NULL/>
+	::com::sun::star::uno::Reference< ::com::sun::star::form::XForm >           m_xCurrentForm;
+	// the last selection/marking of controls only. Necessary to implement the "Control properties" slot
+	InterfaceBag                                                                m_aLastKnownMarkedControls;
 
 
 		// und das ist ebenfalls fuer's 'gefunden' : Beim Finden in GridControls brauche ich die Spalte, bekomme aber
 		// nur die Nummer des Feldes, die entspricht der Nummer der Spalte + <offset>, wobei der Offset von der Position
 		// des GridControls im Formular abhaengt. Also hier eine Umrechnung.
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel>			m_xLastGridFound;
-     // the frame we live in
+	// the frame we live in
 	::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame>				m_xAttachedFrame;
-    // Administration of external form views (see the SID_FM_VIEW_AS_GRID-slot)
-    ::com::sun::star::uno::Reference< ::com::sun::star::frame::XController >                m_xExternalViewController;		// the controller for the external form view
-    ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >    m_xExtViewTriggerController;	// the nav controller at the time the external display was triggered
-    ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >                  m_xExternalDisplayedForm;		// the form which the external view is based on
+	// Administration of external form views (see the SID_FM_VIEW_AS_GRID-slot)
+	::com::sun::star::uno::Reference< ::com::sun::star::frame::XController >                m_xExternalViewController;		// the controller for the external form view
+	::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >    m_xExtViewTriggerController;	// the nav controller at the time the external display was triggered
+	::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >                  m_xExternalDisplayedForm;		// the form which the external view is based on
 
     mutable ::svxform::DocumentType
-                    m_eDocumentType;        /// the type of document we're living in
+                    m_eDocumentType;        // the type of document we're living in
 	sal_Int16		m_nLockSlotInvalidation;
 	sal_Bool		m_bHadPropertyBrowserInDesignMode : 1;
 
@@ -296,8 +295,8 @@ protected:
 	virtual void SAL_CALL propertyChange(const ::com::sun::star::beans::PropertyChangeEvent& evt) throw( ::com::sun::star::uno::RuntimeException );
 
 // ::com::sun::star::form::XFormControllerListener
-    virtual void SAL_CALL formActivated(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL formDeactivated(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL formActivated(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL formDeactivated(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
 
 // OComponentHelper
 	virtual void SAL_CALL disposing();
@@ -310,8 +309,8 @@ public:
 			void		viewActivated( FmFormView& _rCurrentView, sal_Bool _bSyncAction = sal_False );
 			void		viewDeactivated( FmFormView& _rCurrentView, sal_Bool _bDeactivateController = sal_True );
 
-    // IControllerFeatureInvalidation
-    virtual void invalidateFeatures( const ::std::vector< sal_Int32 >& _rFeatures );
+	// IControllerFeatureInvalidation
+	virtual void invalidateFeatures( const ::std::vector< sal_Int32 >& _rFeatures );
 
     void ExecuteTabOrderDialog(         // execute SID_FM_TAB_DIALOG
         const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabControllerModel >& _rxForForm
@@ -326,19 +325,19 @@ public:
     */
     void UpdateForms( sal_Bool _bInvalidate );
 
-    void ExecuteSearch();               // execute SID_FM_SEARCH
-    void CreateExternalView();          // execute SID_FM_VIEW_AS_GRID
+	void ExecuteSearch();               // execute SID_FM_SEARCH
+	void CreateExternalView();          // execute SID_FM_VIEW_AS_GRID
 
 	sal_Bool	GetY2KState(sal_uInt16& n);
 	void	    SetY2KState(sal_uInt16 n);
 
 protected:
-    // activation handling
+	// activation handling
 	inline	sal_Bool	hasEverBeenActivated( ) const { return !m_bFirstActivation; }
 	inline	void		setHasBeenActivated( ) { m_bFirstActivation = sal_False; }
 
-    // form handling
-	/// load or unload the forms on a page
+	// form handling
+	// load or unload the forms on a page
 			void		loadForms( FmFormPage* _pPage, const sal_uInt16 _nBehaviour = FORMS_LOAD | FORMS_SYNC );
 			void		smartControlReset( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& _rxModels );
 
@@ -397,24 +396,24 @@ public:
     */
     bool    setCurrentSelectionFromMark(const SdrMarkList& rMarkList);
 
-    /// returns the currently selected form, or the form which all currently selected controls belong to, or <NULL/>
+    // returns the currently selected form, or the form which all currently selected controls belong to, or <NULL/>
     ::com::sun::star::uno::Reference< ::com::sun::star::form::XForm >
                 getCurrentForm() const { return m_xCurrentForm; }
     void        forgetCurrentForm();
-    /// returns whether the last known marking contained only controls
+    // returns whether the last known marking contained only controls
     sal_Bool    onlyControlsAreMarked() const { return !m_aLastKnownMarkedControls.empty(); }
 
-    /// determines whether the current selection consists of exactly the given object
+    // determines whether the current selection consists of exactly the given object
     bool    isSolelySelected(
                 const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxObject
             );
 
-    /// handles a MouseButtonDown event of the FmFormView
-    void handleMouseButtonDown( const SdrViewEvent& _rViewEvent );
-    /// handles the request for showing the "Properties"
-    void handleShowPropertiesRequest();
+	// handles a MouseButtonDown event of the FmFormView
+	void handleMouseButtonDown( const SdrViewEvent& _rViewEvent );
+	// handles the request for showing the "Properties"
+	void handleShowPropertiesRequest();
 
-    sal_Bool hasForms() const {return m_xForms.is() && m_xForms->getCount() != 0;}
+	sal_Bool hasForms() const {return m_xForms.is() && m_xForms->getCount() != 0;}
 	sal_Bool hasDatabaseBar() const {return m_bDatabaseBar;}
 	sal_Bool canNavigate() const	{return m_xNavigationController.is();}
 
@@ -439,17 +438,17 @@ public:
 	static PopupMenu* GetConversionMenu();
 		// ein Menue, das alle ControlConversion-Eintraege enthaelt
 
-    /// checks whethere a given control conversion slot can be applied to the current selection
+    // checks whethere a given control conversion slot can be applied to the current selection
            bool canConvertCurrentSelectionToControl( sal_Int16 nConversionSlot );
-    /// enables or disables all conversion slots in a menu, according to the current selection
+    // enables or disables all conversion slots in a menu, according to the current selection
            void checkControlConversionSlotsForCurrentSelection( Menu& rMenu );
-    /// executes a control conversion slot for a given object
+    // executes a control conversion slot for a given object
            bool executeControlConversionSlot( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormComponent >& _rxObject, sal_uInt16 _nSlotId );
     /** executes a control conversion slot for the current selection
         @precond canConvertCurrentSelectionToControl( <arg>_nSlotId</arg> ) must return <TRUE/>
     */
            bool executeControlConversionSlot( sal_uInt16 _nSlotId );
-    /// checks whether the given slot id denotes a control conversion slot
+    // checks whether the given slot id denotes a control conversion slot
     static bool isControlConversionSlot( sal_uInt16 _nSlotId );
 
     void    ExecuteTextAttribute( SfxRequest& _rReq );
@@ -458,12 +457,12 @@ public:
     void    ForgetActiveControl();
     void    SetControlActivationHandler( const Link& _rHdl );
 
-    /// classifies our host document
+    // classifies our host document
     ::svxform::DocumentType
             getDocumentType() const;
 	bool    isEnhancedForm() const;
 
-    /// determines whether our host document is currently read-only
+    // determines whether our host document is currently read-only
     bool    IsReadonlyDoc() const;
 
 	// das Setzen des curObject/selObject/curForm erfolgt verzoegert (SetSelectionDelayed), mit den folgenden
@@ -477,16 +476,16 @@ public:
 		// if the form belongs to the controller (extern) displaying a grid, the according internal form will
 		// be displayed, _xForm else
 
-    // check if the current control of the active controller has the focus
-    bool    HasControlFocus() const;
+	// check if the current control of the active controller has the focus
+	bool    HasControlFocus() const;
 
 private:
 	DECL_LINK(OnFoundData, FmFoundRecordInformation*);
 	DECL_LINK(OnCanceledNotFound, FmFoundRecordInformation*);
 	DECL_LINK(OnSearchContextRequest, FmSearchContext*);
 	DECL_LINK(OnTimeOut, void*);
-    DECL_LINK(OnFirstTimeActivation, void*);
-    DECL_LINK(OnFormsCreated, FmFormPage*);
+	DECL_LINK(OnFirstTimeActivation, void*);
+	DECL_LINK(OnFormsCreated, FmFormPage*);
 
 	void LoopGrids(sal_Int16 nWhat);
 
@@ -514,7 +513,7 @@ private:
     */
     void    impl_defaultCurrentForm_nothrow();
 
-    /** sets m_xCurrentForm to the provided form, and udpates everything which
+    /** sets m_xCurrentForm to the provided form, and updates everything which
         depends on the current form
     */
     void    impl_updateCurrentForm( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XForm >& _rxNewCurForm );
@@ -602,3 +601,5 @@ public:
 };
 
 #endif          // _SVX_FMSHIMP_HXX
+
+/* vim: set noet sw=4 ts=4: */

@@ -233,7 +233,7 @@ include $(SOLARENV)/inc/minor.mk
 
 # It is important to include them in the right order as that is
 # -- at least in part -- defining precedence. This is not an issue in the
-# WORKDIR as there are no nameing collisions there, but OUTDIR is a mess
+# WORKDIR as there are no naming collisions there, but OUTDIR is a mess
 # and precedence is important there. This is also platform dependent.
 # For example:
 # $(OUTDIR)/bin/% for executables collides
@@ -243,7 +243,7 @@ include $(SOLARENV)/inc/minor.mk
 # $(OUTDIR)/xml/% for packageparts collides
 #	with $(OUTDIR)/xml/component/%.component for components
 # This is less of an issue with GNU Make versions > 3.82 which matches for
-# shortest stem instead of first match. However, upon intoduction this version
+# shortest stem instead of first match. However, upon introduction this version
 # is not available everywhere by default.
 
 include $(foreach class, \

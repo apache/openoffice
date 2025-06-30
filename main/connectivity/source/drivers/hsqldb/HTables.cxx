@@ -193,4 +193,3 @@ void OTables::appendNew(const ::rtl::OUString& _rsNewTable)
 	return ::dbtools::composeTableName( m_xMetaData, _xObject, ::dbtools::eInDataManipulation, false, false, false );
 }
 // -----------------------------------------------------------------------------
-

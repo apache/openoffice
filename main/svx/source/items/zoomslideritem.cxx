@@ -273,4 +273,3 @@ const com::sun::star::uno::Sequence < sal_Int32 >& SvxZoomSliderItem::GetSnappin
 {
     return maValues;
 }
-

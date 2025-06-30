@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
@@ -27,11 +25,11 @@
 #include "sbcomp.hxx"
 #include "expr.hxx"
 
-// Umsetztabelle fuer Token-Operatoren und Opcodes
+// Umsetztabelle für Token-Operatoren und Opcodes
 
 typedef struct {
-		SbiToken  eTok; 				// Token
-		SbiOpcode eOp;  				// Opcode
+		SbiToken eTok; // Token
+		SbiOpcode eOp; // Opcode
 } OpTable;
 
 static OpTable aOpTable [] = {
@@ -57,8 +55,8 @@ static OpTable aOpTable [] = {
 	{ NEG,	_NEG },
 	{ CAT,	_CAT },
 	{ LIKE, _LIKE },
-	{ IS,   _IS },
-	{ NIL,  _NOP }};
+	{ IS,	_IS },
+	{ NIL,	_NOP }};
 
 // Ausgabe eines Elements
 void SbiExprNode::Gen( RecursiveMode eRecMode )
@@ -68,8 +66,8 @@ void SbiExprNode::Gen( RecursiveMode eRecMode )
 		switch( GetType() )
 		{
 			case SbxEMPTY:	 pGen->Gen( _EMPTY ); break;
-			case SbxINTEGER: pGen->Gen( _CONST,  (short) nVal ); break;
-			case SbxSTRING:  
+			case SbxINTEGER: pGen->Gen( _CONST, (short) nVal ); break;
+			case SbxSTRING:
 			{
 				sal_uInt16 nStringId = pGen->GetParser()->aGblStrings.Add( aStrVal, sal_True );
 				pGen->Gen( _SCONST, nStringId ); break;
@@ -86,9 +84,9 @@ void SbiExprNode::Gen( RecursiveMode eRecMode )
 		SbiExprNode* pWithParent_ = NULL;
 		SbiOpcode eOp;
 		if( aVar.pDef->GetScope() == SbPARAM )
-        {
-            eOp = _PARAM;
-            if( 0 == aVar.pDef->GetPos() )
+		{
+			eOp = _PARAM;
+			if( 0 == aVar.pDef->GetPos() )
 			{
 				bool bTreatFunctionAsParam = true;
 				if( eRecMode == FORCE_CALL )
@@ -103,21 +101,21 @@ void SbiExprNode::Gen( RecursiveMode eRecMode )
 				if( !bTreatFunctionAsParam )
 					eOp = aVar.pDef->IsGlobal() ? _FIND_G : _FIND;
 			}
-        }
-		// AB: 17.12.1995, Spezialbehandlung fuer WITH
+		}
+		// AB: 17.12.1995, Spezialbehandlung für WITH
 		else if( (pWithParent_ = GetWithParent()) != NULL )
 		{
-			eOp = _ELEM;			// .-Ausdruck in WITH
+			eOp = _ELEM; // .-Ausdruck in WITH
 		}
 		else
 		{
-            eOp = ( aVar.pDef->GetScope() == SbRTL ) ? _RTL : 
-                (aVar.pDef->IsGlobal() ? _FIND_G : _FIND);
+			eOp = ( aVar.pDef->GetScope() == SbRTL ) ? _RTL :
+				(aVar.pDef->IsGlobal() ? _FIND_G : _FIND);
 		}
 
 		if( eOp == _FIND )
 		{
-	
+
 			SbiProcDef* pProc = aVar.pDef->GetProcDef();
 			if ( pGen->GetParser()->bClassModule )
 				eOp = _FIND_CM;
@@ -177,7 +175,7 @@ void SbiExprNode::GenElement( SbiOpcode eOp )
 		nId |= 0x8000;
 		aVar.pPar->Gen();
 	}
-		
+
 	pGen->Gen( eOp, nId, sal::static_int_cast< sal_uInt16 >( GetType() ) );
 
 	if( aVar.pvMorePar )
@@ -194,7 +192,7 @@ void SbiExprNode::GenElement( SbiOpcode eOp )
 }
 
 // Erzeugen einer Argv-Tabelle
-// Das erste Element bleibt immer frei fuer Returnwerte etc.
+// Das erste Element bleibt immer frei für Returnwerte etc.
 // Siehe auch SbiProcDef::SbiProcDef() in symtbl.cxx
 
 void SbiExprList::Gen()
@@ -218,10 +216,10 @@ void SbiExprList::Gen()
 				// AB 10.1.96: Typanpassung bei named -> passenden Parameter suchen
 				if( pProc )
 				{
-					// Vorerst: Error ausloesen
+					// Vorerst: Error auslösen
 					pParser->Error( SbERR_NO_NAMED_ARGS );
 
-					// Spaeter, wenn Named Args bei DECLARE moeglich
+					// Später, wenn Named Args bei DECLARE möglich
 					//for( sal_uInt16 i = 1 ; i < nParAnz ; i++ )
 					//{
 					//	SbiSymDef* pDef = pPool->Get( i );
@@ -249,8 +247,8 @@ void SbiExprList::Gen()
 
 void SbiExpression::Gen( RecursiveMode eRecMode )
 {
-	// AB: 17.12.1995, Spezialbehandlung fuer WITH
-	// Wenn pExpr == .-Ausdruck in With, zunaechst Gen fuer Basis-Objekt
+	// AB: 17.12.1995, Spezialbehandlung für WITH
+	// Wenn pExpr == .-Ausdruck in With, zunächst Gen für Basis-Objekt
 	pExpr->Gen( eRecMode );
 	if( bByVal )
 		pParser->aGen.Gen( _BYVAL );
@@ -264,3 +262,4 @@ void SbiExpression::Gen( RecursiveMode eRecMode )
 	}
 }
 
+/* vim: set noet sw=4 ts=4: */

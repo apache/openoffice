@@ -104,4 +104,3 @@ sal_Bool SAL_CALL MediaTypeDetectionHelper::mapStrings(
 }
 
 }	// namespace framework
-

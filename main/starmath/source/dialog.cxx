@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_starmath.hxx"
-
 
 #define SMDLL 1
 #include "tools/rcid.h"
@@ -45,7 +42,6 @@
 #include <tools/debug.hxx>
 #include <svx/ucsubset.hxx>
 
-
 #include "dialog.hxx"
 #include "starmath.hrc"
 #include "config.hxx"
@@ -56,67 +52,63 @@
 #include "document.hxx"
 #include "unomodel.hxx"
 
-
 using ::rtl::OUString;
 
-////////////////////////////////////////
-//
-// Da der FontStyle besser ueber die Attribute gesetzt/abgefragt wird als ueber
-// den StyleName bauen wir uns hier unsere eigene Uebersetzung
+// Da der FontStyle besser über die Attribute gesetzt/abgefragt wird als über
+// den StyleName bauen wir uns hier unsere eigene Übersetzung
 // Attribute <-> StyleName
-//
 
 class SmFontStyles
 {
-    String  aNormal;
-    String  aBold;
-    String  aItalic;
-    String  aBoldItalic;
-    String  aEmpty;
+	String  aNormal;
+	String  aBold;
+	String  aItalic;
+	String  aBoldItalic;
+	String  aEmpty;
 
 public:
-    SmFontStyles();
+	SmFontStyles();
 
-    sal_uInt16          GetCount() const    { return 4; }
-    const String &  GetStyleName( const Font &rFont ) const;
-    const String &  GetStyleName( sal_uInt16 nIdx ) const;
+	sal_uInt16          GetCount() const    { return 4; }
+	const String &  GetStyleName( const Font &rFont ) const;
+	const String &  GetStyleName( sal_uInt16 nIdx ) const;
 };
 
 
 SmFontStyles::SmFontStyles() :
-    aNormal ( ResId( RID_FONTREGULAR, *SM_MOD()->GetResMgr() ) ),
-    aBold   ( ResId( RID_FONTBOLD,    *SM_MOD()->GetResMgr() ) ),
-    aItalic ( ResId( RID_FONTITALIC,  *SM_MOD()->GetResMgr() ) )
+	aNormal ( ResId( RID_FONTREGULAR, *SM_MOD()->GetResMgr() ) ),
+	aBold   ( ResId( RID_FONTBOLD,    *SM_MOD()->GetResMgr() ) ),
+	aItalic ( ResId( RID_FONTITALIC,  *SM_MOD()->GetResMgr() ) )
 {
-//    SM_MOD()->GetResMgr().FreeResource();
+//	SM_MOD()->GetResMgr().FreeResource();
 
-    aBoldItalic = aBold;
-    aBoldItalic.AppendAscii( ", " );
-    aBoldItalic += aItalic;
+	aBoldItalic = aBold;
+	aBoldItalic.AppendAscii( ", " );
+	aBoldItalic += aItalic;
 }
 
 
 const String & SmFontStyles::GetStyleName( const Font &rFont ) const
 {
-    //! compare also SmSpecialNode::Prepare
-    sal_Bool bBold   = IsBold( rFont ),
-         bItalic = IsItalic( rFont );
+	//! compare also SmSpecialNode::Prepare
+	sal_Bool bBold   = IsBold( rFont ),
+		bItalic = IsItalic( rFont );
 
-    if (bBold && bItalic)
-        return aBoldItalic;
-    else if (bItalic)
-        return aItalic;
-    else if (bBold)
-        return aBold;
-    else
-        return aNormal;
+	if (bBold && bItalic)
+		return aBoldItalic;
+	else if (bItalic)
+		return aItalic;
+	else if (bBold)
+		return aBold;
+	else
+		return aNormal;
 }
 
 
 const String & SmFontStyles::GetStyleName( sal_uInt16 nIdx ) const
 {
-    // 0 = "normal",  1 = "italic",
-    // 2 = "bold",    3 = "bold italic"
+	// 0 = "normal",  1 = "italic",
+	// 2 = "bold",    3 = "bold italic"
 
 #if OSL_DEBUG_LEVEL > 1
     DBG_ASSERT( nIdx < GetCount(), "index out of range" );
@@ -134,26 +126,25 @@ const String & SmFontStyles::GetStyleName( sal_uInt16 nIdx ) const
 
 const SmFontStyles & GetFontStyles()
 {
-    static const SmFontStyles aImpl;
-    return aImpl;
+	static const SmFontStyles aImpl;
+	return aImpl;
 }
 
-/////////////////////////////////////////////////////////////////
 
 void SetFontStyle(const XubString &rStyleName, Font &rFont)
 {
-	// finden des Index passend zum StyleName fuer den leeren StyleName wird
+	// finden des Index passend zum StyleName für den leeren StyleName wird
 	// 0 (nicht bold nicht italic) angenommen.
 	sal_uInt16  nIndex = 0;
 	if (rStyleName.Len())
 	{
 		sal_uInt16 i;
-        const SmFontStyles &rStyles = GetFontStyles();
-        for (i = 0;  i < rStyles.GetCount();  i++)
-            if (rStyleName.CompareTo( rStyles.GetStyleName(i) ) == COMPARE_EQUAL)
+		const SmFontStyles &rStyles = GetFontStyles();
+		for (i = 0;  i < rStyles.GetCount();  i++)
+			if (rStyleName.CompareTo( rStyles.GetStyleName(i) ) == COMPARE_EQUAL)
 				break;
 #if OSL_DEBUG_LEVEL > 1
-        DBG_ASSERT(i < rStyles.GetCount(), "style-name unknown");
+		DBG_ASSERT(i < rStyles.GetCount(), "style-name unknown");
 #endif
 		nIndex = i;
 	}
@@ -175,18 +166,18 @@ IMPL_LINK_INLINE_END( SmPrintOptionsTabPage, SizeButtonClickHdl, Button *, pButt
 
 SmPrintOptionsTabPage::SmPrintOptionsTabPage(Window *pParent, const SfxItemSet &rOptions)
 	: SfxTabPage(pParent, SmResId(RID_PRINTOPTIONPAGE), rOptions),
-    aFixedLine1     (this, SmResId( FL_PRINTOPTIONS )),
-	aTitle		   	(this, SmResId( CB_TITLEROW )),
+	aFixedLine1		(this, SmResId( FL_PRINTOPTIONS )),
+	aTitle			(this, SmResId( CB_TITLEROW )),
 	aText		   	(this, SmResId( CB_EQUATION_TEXT )),
 	aFrame		   	(this, SmResId( CB_FRAME )),
-    aFixedLine2     (this, SmResId( FL_PRINT_FORMAT )),
-	aSizeNormal    	(this, SmResId( RB_ORIGINAL_SIZE )),
-	aSizeScaled    	(this, SmResId( RB_FIT_TO_PAGE )),
-	aSizeZoomed    	(this, SmResId( RB_ZOOM )),
+	aFixedLine2		(this, SmResId( FL_PRINT_FORMAT )),
+	aSizeNormal		(this, SmResId( RB_ORIGINAL_SIZE )),
+	aSizeScaled		(this, SmResId( RB_FIT_TO_PAGE )),
+	aSizeZoomed		(this, SmResId( RB_ZOOM )),
 	aZoom		   	(this, SmResId( MF_ZOOM )),
-    aFixedLine3     (this, SmResId( FL_MISC_OPTIONS )),
-    aNoRightSpaces  (this, SmResId( CB_IGNORE_SPACING )),
-    aSaveOnlyUsedSymbols  (this, SmResId( CB_SAVE_ONLY_USED_SYMBOLS ))
+	aFixedLine3		(this, SmResId( FL_MISC_OPTIONS )),
+	aNoRightSpaces  (this, SmResId( CB_IGNORE_SPACING )),
+	aSaveOnlyUsedSymbols  (this, SmResId( CB_SAVE_ONLY_USED_SYMBOLS ))
 {
 	FreeResource();
 
@@ -214,7 +205,7 @@ sal_Bool SmPrintOptionsTabPage::FillItemSet(SfxItemSet& rSet)
 	rSet.Put(SfxBoolItem(GetWhich(SID_PRINTTEXT), aText.IsChecked()));
 	rSet.Put(SfxBoolItem(GetWhich(SID_PRINTFRAME), aFrame.IsChecked()));
 	rSet.Put(SfxBoolItem(GetWhich(SID_NO_RIGHT_SPACES), aNoRightSpaces.IsChecked()));
-    rSet.Put(SfxBoolItem(GetWhich(SID_SAVE_ONLY_USED_SYMBOLS), aSaveOnlyUsedSymbols.IsChecked()));
+	rSet.Put(SfxBoolItem(GetWhich(SID_SAVE_ONLY_USED_SYMBOLS), aSaveOnlyUsedSymbols.IsChecked()));
 
 	return sal_True;
 }
@@ -236,7 +227,7 @@ void SmPrintOptionsTabPage::Reset(const SfxItemSet& rSet)
 	aText.Check(((const SfxBoolItem &)rSet.Get(GetWhich(SID_PRINTTEXT))).GetValue());
 	aFrame.Check(((const SfxBoolItem &)rSet.Get(GetWhich(SID_PRINTFRAME))).GetValue());
 	aNoRightSpaces.Check(((const SfxBoolItem &)rSet.Get(GetWhich(SID_NO_RIGHT_SPACES))).GetValue());
-    aSaveOnlyUsedSymbols.Check(((const SfxBoolItem &)rSet.Get(GetWhich(SID_SAVE_ONLY_USED_SYMBOLS))).GetValue());
+	aSaveOnlyUsedSymbols.Check(((const SfxBoolItem &)rSet.Get(GetWhich(SID_SAVE_ONLY_USED_SYMBOLS))).GetValue());
 }
 
 
@@ -250,7 +241,7 @@ SfxTabPage* SmPrintOptionsTabPage::Create(Window* pWindow, const SfxItemSet& rSe
 
 void SmShowFont::Paint(const Rectangle& rRect )
 {
-    Control::Paint( rRect );
+	Control::Paint( rRect );
 
 	XubString	Text (GetFont().GetName());
 	Size	TextSize(GetTextWidth(Text), GetTextHeight());
@@ -262,7 +253,7 @@ void SmShowFont::Paint(const Rectangle& rRect )
 
 void SmShowFont::SetFont(const Font& rFont)
 {
-    Color aTxtColor( GetTextColor() );
+	Color aTxtColor( GetTextColor() );
 	Font aFont (rFont);
 
 	Invalidate();
@@ -270,8 +261,8 @@ void SmShowFont::SetFont(const Font& rFont)
 	aFont.SetAlign(ALIGN_TOP);
 	Control::SetFont(aFont);
 
-    // keep old text color (new font may have different color)
-    SetTextColor( aTxtColor );
+	// keep old text color (new font may have different color)
+	SetTextColor( aTxtColor );
 }
 
 
@@ -317,16 +308,16 @@ void SmFontDialog::SetFont(const Font &rFont)
 {
 	Face = rFont;
 
-    aFontBox.SetText( Face.GetName() );
-    aBoldCheckBox.Check( IsBold( Face ) );
-    aItalicCheckBox.Check( IsItalic( Face ) );
+	aFontBox.SetText( Face.GetName() );
+	aBoldCheckBox.Check( IsBold( Face ) );
+	aItalicCheckBox.Check( IsItalic( Face ) );
 
 	aShowFont.SetFont(Face);
 }
 
 
 SmFontDialog::SmFontDialog(Window * pParent,
-        OutputDevice *pFntListDevice, sal_Bool bHideCheckboxes, sal_Bool bFreeRes)
+		OutputDevice *pFntListDevice, sal_Bool bHideCheckboxes, sal_Bool bFreeRes)
 	: ModalDialog(pParent,SmResId(RID_FONTDIALOG)),
 	aFixedText1 	(this, SmResId(1)),
 	aFontBox		(this, SmResId(1)),
@@ -335,7 +326,7 @@ SmFontDialog::SmFontDialog(Window * pParent,
 	aOKButton1		(this, SmResId(1)),
 	aCancelButton1	(this, SmResId(1)),
 	aShowFont		(this, SmResId(1)),
-    aFixedText2     (this, SmResId(2))
+	aFixedText2		(this, SmResId(2))
 {
 	if (bFreeRes)
 		FreeResource();
@@ -343,11 +334,11 @@ SmFontDialog::SmFontDialog(Window * pParent,
 	{
 		WaitObject( this );
 
-        FontList aFontList( pFntListDevice );
+		FontList aFontList( pFntListDevice );
 
-        sal_uInt16  nCount = aFontList.GetFontNameCount();
+		sal_uInt16  nCount = aFontList.GetFontNameCount();
 		for (sal_uInt16 i = 0;  i < nCount;  i++)
-            aFontBox.InsertEntry( aFontList.GetFontName(i).GetName() );
+			aFontBox.InsertEntry( aFontList.GetFontName(i).GetName() );
 
 		Face.SetSize(Size(0, 24));
 		Face.SetWeight(WEIGHT_NORMAL);
@@ -357,10 +348,10 @@ SmFontDialog::SmFontDialog(Window * pParent,
 		Face.SetCharSet(RTL_TEXTENCODING_DONTKNOW);
 		Face.SetTransparent(sal_True);
 
-        InitColor_Impl();
+		InitColor_Impl();
 
-        // preview like controls should have a 2D look
-        aShowFont.SetBorderStyle( WINDOW_BORDER_MONO );
+		// preview like controls should have a 2D look
+		aShowFont.SetBorderStyle( WINDOW_BORDER_MONO );
 	}
 
 	aFontBox.SetSelectHdl(LINK(this, SmFontDialog, FontSelectHdl));
@@ -368,53 +359,53 @@ SmFontDialog::SmFontDialog(Window * pParent,
 	aBoldCheckBox.SetClickHdl(LINK(this, SmFontDialog, AttrChangeHdl));
 	aItalicCheckBox.SetClickHdl(LINK(this, SmFontDialog, AttrChangeHdl));
 
-    if (bHideCheckboxes)
-    {
-        aBoldCheckBox.Check( sal_False );
-        aBoldCheckBox.Enable( sal_False );
-        aBoldCheckBox.Show( sal_False );
-        aItalicCheckBox.Check( sal_False );
-        aItalicCheckBox.Enable( sal_False );
-        aItalicCheckBox.Show( sal_False );
-        aFixedText2.Show( sal_False );
+	if (bHideCheckboxes)
+	{
+		aBoldCheckBox.Check( sal_False );
+		aBoldCheckBox.Enable( sal_False );
+		aBoldCheckBox.Show( sal_False );
+		aItalicCheckBox.Check( sal_False );
+		aItalicCheckBox.Enable( sal_False );
+		aItalicCheckBox.Show( sal_False );
+		aFixedText2.Show( sal_False );
 
-        Size  aSize( aFontBox.GetSizePixel() );
-        long nComboBoxBottom = aFontBox.GetPosPixel().Y() + aFontBox.GetSizePixel().Height();
-        long nCheckBoxBottom = aItalicCheckBox.GetPosPixel().Y() + aItalicCheckBox.GetSizePixel().Height();
-        aSize.Height() += nCheckBoxBottom - nComboBoxBottom;
-        aFontBox.SetSizePixel( aSize );
-    }
+		Size  aSize( aFontBox.GetSizePixel() );
+		long nComboBoxBottom = aFontBox.GetPosPixel().Y() + aFontBox.GetSizePixel().Height();
+		long nCheckBoxBottom = aItalicCheckBox.GetPosPixel().Y() + aItalicCheckBox.GetSizePixel().Height();
+		aSize.Height() += nCheckBoxBottom - nComboBoxBottom;
+		aFontBox.SetSizePixel( aSize );
+	}
 }
 
 void SmFontDialog::InitColor_Impl()
 {
 #if OSL_DEBUG_LEVEL > 1
-    Color aBC( GetDisplayBackground().GetColor() );
+	Color aBC( GetDisplayBackground().GetColor() );
 #endif
-    ColorData   nBgCol  = COL_WHITE,
-                nTxtCol = COL_BLACK;
-    const StyleSettings &rS = GetSettings().GetStyleSettings();
-    if (rS.GetHighContrastMode())
-    {
-        nBgCol  = rS.GetFieldColor().GetColor();
-        nTxtCol = rS.GetFieldTextColor().GetColor();
-    }
+	ColorData	nBgCol  = COL_WHITE,
+				nTxtCol = COL_BLACK;
+	const StyleSettings &rS = GetSettings().GetStyleSettings();
+	if (rS.GetHighContrastMode())
+	{
+		nBgCol  = rS.GetFieldColor().GetColor();
+		nTxtCol = rS.GetFieldTextColor().GetColor();
+	}
 
-    Color aTmpColor( nBgCol );
-    Wallpaper aWall( aTmpColor );
-    Color aTxtColor( nTxtCol );
-    aShowFont.SetBackground( aWall );
-    aShowFont.SetTextColor( aTxtColor );
+	Color aTmpColor( nBgCol );
+	Wallpaper aWall( aTmpColor );
+	Color aTxtColor( nTxtCol );
+	aShowFont.SetBackground( aWall );
+	aShowFont.SetTextColor( aTxtColor );
 }
 
 
 void SmFontDialog::DataChanged( const DataChangedEvent& rDCEvt )
 {
-    if ( rDCEvt.GetType() == DATACHANGED_SETTINGS  &&
-         (rDCEvt.GetFlags() & SETTINGS_STYLE) )
-            InitColor_Impl();
+	if ( rDCEvt.GetType() == DATACHANGED_SETTINGS  &&
+		 (rDCEvt.GetFlags() & SETTINGS_STYLE) )
+			InitColor_Impl();
 
-    ModalDialog::DataChanged( rDCEvt );
+	ModalDialog::DataChanged( rDCEvt );
 }
 
 /**************************************************************************/
@@ -426,10 +417,10 @@ IMPL_LINK( SmFontSizeDialog, DefaultButtonClickHdl, Button *, EMPTYARG /*pButton
 
 	if (pQueryBox->Execute() == RET_YES)
 	{
-        SmModule *pp = SM_MOD();
-        SmFormat aFmt( pp->GetConfig()->GetStandardFormat() );
-        WriteTo( aFmt );
-        pp->GetConfig()->SetStandardFormat( aFmt );
+		SmModule *pp = SM_MOD();
+		SmFormat aFmt( pp->GetConfig()->GetStandardFormat() );
+		WriteTo( aFmt );
+		pp->GetConfig()->SetStandardFormat( aFmt );
 	}
 
 	delete pQueryBox;
@@ -451,7 +442,7 @@ SmFontSizeDialog::SmFontSizeDialog(Window * pParent, sal_Bool bFreeRes)
 	aOperatorSize(this, SmResId(7)),
 	aFixedText8(this, SmResId(8)),
 	aBorderSize(this, SmResId(8)),
-    aFixedLine1(this, SmResId(1)),
+	aFixedLine1(this, SmResId(1)),
 	aOKButton1(this, SmResId(1)),
 	aCancelButton1(this, SmResId(1)),
 	aDefaultButton(this, SmResId(1))
@@ -479,7 +470,7 @@ void SmFontSizeDialog::ReadFrom(const SmFormat &rFormat)
 
 void SmFontSizeDialog::WriteTo(SmFormat &rFormat) const
 {
-    rFormat.SetBaseSize( Size(0, SmPtsTo100th_mm( static_cast< long >(aBaseSize.GetValue()))) );
+	rFormat.SetBaseSize( Size(0, SmPtsTo100th_mm( static_cast< long >(aBaseSize.GetValue()))) );
 
 	rFormat.SetRelSize(SIZ_TEXT, 	 (sal_uInt16) aTextSize    .GetValue());
 	rFormat.SetRelSize(SIZ_INDEX,	 (sal_uInt16) aIndexSize   .GetValue());
@@ -489,7 +480,7 @@ void SmFontSizeDialog::WriteTo(SmFormat &rFormat) const
 
 	const Size aTmp (rFormat.GetBaseSize());
 	for (sal_uInt16  i = FNT_BEGIN;  i <= FNT_END;  i++)
-        rFormat.SetFontSize(i, aTmp);
+		rFormat.SetFontSize(i, aTmp);
 
 	rFormat.RequestApplyChanges();
 }
@@ -502,22 +493,22 @@ IMPL_LINK( SmFontTypeDialog, MenuSelectHdl, Menu *, pMenu )
 {
 	SmFontPickListBox *pActiveListBox;
 
-    sal_Bool bHideCheckboxes = sal_False;
+	sal_Bool bHideCheckboxes = sal_False;
 	switch (pMenu->GetCurItemId())
 	{
-        case 1: pActiveListBox = &aVariableFont; break;
+		case 1: pActiveListBox = &aVariableFont; break;
 		case 2: pActiveListBox = &aFunctionFont; break;
 		case 3: pActiveListBox = &aNumberFont;	 break;
 		case 4: pActiveListBox = &aTextFont;	 break;
-        case 5: pActiveListBox = &aSerifFont; bHideCheckboxes = sal_True;   break;
-        case 6: pActiveListBox = &aSansFont;  bHideCheckboxes = sal_True;   break;
-        case 7: pActiveListBox = &aFixedFont; bHideCheckboxes = sal_True;   break;
+		case 5: pActiveListBox = &aSerifFont; bHideCheckboxes = sal_True;   break;
+		case 6: pActiveListBox = &aSansFont;  bHideCheckboxes = sal_True;   break;
+		case 7: pActiveListBox = &aFixedFont; bHideCheckboxes = sal_True;   break;
 		default:pActiveListBox = NULL;
 	}
 
 	if (pActiveListBox)
 	{
-        SmFontDialog *pFontDialog = new SmFontDialog(this, pFontListDev, bHideCheckboxes);
+		SmFontDialog *pFontDialog = new SmFontDialog(this, pFontListDev, bHideCheckboxes);
 
 		pActiveListBox->WriteTo(*pFontDialog);
 		if (pFontDialog->Execute() == RET_OK)
@@ -533,10 +524,10 @@ IMPL_LINK_INLINE_START( SmFontTypeDialog, DefaultButtonClickHdl, Button *, EMPTY
 	QueryBox *pQueryBox = new QueryBox(this, SmResId(RID_DEFAULTSAVEQUERY));
 	if (pQueryBox->Execute() == RET_YES)
 	{
-        SmModule *pp = SM_MOD();
-        SmFormat aFmt( pp->GetConfig()->GetStandardFormat() );
-        WriteTo( aFmt );
-        pp->GetConfig()->SetStandardFormat( aFmt, sal_True );
+		SmModule *pp = SM_MOD();
+		SmFormat aFmt( pp->GetConfig()->GetStandardFormat() );
+		WriteTo( aFmt );
+		pp->GetConfig()->SetStandardFormat( aFmt, sal_True );
 	}
 
 	delete pQueryBox;
@@ -561,13 +552,13 @@ SmFontTypeDialog::SmFontTypeDialog(Window * pParent, OutputDevice *pFntListDevic
 	aSansFont	   (this, SmResId(6)),
 	aFixedText7    (this, SmResId(7)),
 	aFixedFont	   (this, SmResId(7)),
-    aFixedLine1    (this, SmResId(1)),
-    aFixedLine2    (this, SmResId(2)),
+	aFixedLine1    (this, SmResId(1)),
+	aFixedLine2    (this, SmResId(2)),
 	aOKButton1	   (this, SmResId(1)),
 	aCancelButton1 (this, SmResId(1)),
 	aMenuButton    (this, SmResId(1)),
-    aDefaultButton (this, SmResId(2)),
-    pFontListDev    (pFntListDevice)
+	aDefaultButton (this, SmResId(2)),
+	pFontListDev    (pFntListDevice)
 {
 	if (bFreeRes)
 		FreeResource();
@@ -579,7 +570,7 @@ SmFontTypeDialog::SmFontTypeDialog(Window * pParent, OutputDevice *pFntListDevic
 
 void SmFontTypeDialog::ReadFrom(const SmFormat &rFormat)
 {
-    SmModule *pp = SM_MOD();
+	SmModule *pp = SM_MOD();
 
 	aVariableFont = pp->GetConfig()->GetFontPickList(FNT_VARIABLE);
 	aFunctionFont = pp->GetConfig()->GetFontPickList(FNT_FUNCTION);
@@ -601,7 +592,7 @@ void SmFontTypeDialog::ReadFrom(const SmFormat &rFormat)
 
 void SmFontTypeDialog::WriteTo(SmFormat &rFormat) const
 {
-    SmModule *pp = SM_MOD();
+	SmModule *pp = SM_MOD();
 
 	pp->GetConfig()->GetFontPickList(FNT_VARIABLE) = aVariableFont;
 	pp->GetConfig()->GetFontPickList(FNT_FUNCTION) = aFunctionFont;
@@ -656,8 +647,8 @@ static const FieldMinMax pMinMaxData[10][4] =
 };
 
 SmCategoryDesc::SmCategoryDesc(const ResId& rResId, sal_uInt16 nCategoryIdx) :
-    Resource(rResId),
-    bIsHighContrast(sal_False)
+	Resource(rResId),
+	bIsHighContrast(sal_False)
 {
 	if (IsAvailableRes(ResId(1,*rResId.GetResMgr()).SetRT(RSC_STRING)))
 	{
@@ -698,9 +689,9 @@ SmCategoryDesc::~SmCategoryDesc()
 {
 	for (int i = 0; i < 4; i++)
 	{
-        delete Strings  [i];
-        delete Graphics [i];
-        delete GraphicsH[i];
+		delete Strings  [i];
+		delete Graphics [i];
+		delete GraphicsH[i];
 	}
 }
 
@@ -740,10 +731,10 @@ IMPL_LINK( SmDistanceDialog, DefaultButtonClickHdl, Button *, EMPTYARG /*pButton
 
 	if (pQueryBox->Execute() == RET_YES)
 	{
-        SmModule *pp = SM_MOD();
-        SmFormat aFmt( pp->GetConfig()->GetStandardFormat() );
-        WriteTo( aFmt );
-        pp->GetConfig()->SetStandardFormat( aFmt );
+		SmModule *pp = SM_MOD();
+		SmFormat aFmt( pp->GetConfig()->GetStandardFormat() );
+		WriteTo( aFmt );
+		pp->GetConfig()->SetStandardFormat( aFmt );
 	}
 	delete pQueryBox;
 	return 0;
@@ -766,7 +757,7 @@ IMPL_LINK( SmDistanceDialog, CheckBoxClickHdl, CheckBox *, pCheckBox )
 
 void SmDistanceDialog::SetHelpId(MetricField &rField, const rtl::OString& sHelpId)
 {
-    //! HelpID's die auf diese Weise explizit gesetzt werden, muessen im
+	//! HelpID's die auf diese Weise explizit gesetzt werden, müssen im
 	//! util Verzeichnis im File "hidother.src" mit Hilfe von "hidspecial"
 	//! definiert werden!
 
@@ -784,7 +775,7 @@ void SmDistanceDialog::SetHelpId(MetricField &rField, const rtl::OString& sHelpI
 	Edit *pSubEdit = rField.GetSubEdit();
 	if (pSubEdit)
 	{
-	    pSubEdit->SetHelpId(sHelpId);
+		pSubEdit->SetHelpId(sHelpId);
 		pSubEdit->SetHelpText(aEmptyText);
 	}
 }
@@ -800,12 +791,12 @@ void SmDistanceDialog::SetCategory(sal_uInt16 nCategory)
 	// array to convert category- and metricfield-number in help ids.
 	// 0 is used in case of unused combinations.
 #if OSL_DEBUG_LEVEL > 1
-    DBG_ASSERT(NOCATEGORIES == 10, "Sm : Array passt nicht zu Anzahl der Kategorien");
+	DBG_ASSERT(NOCATEGORIES == 10, "Sm : Array passt nicht zu Anzahl der Kategorien");
 #endif
-    const char* __READONLY_DATA  aCatMf2Hid[10][4] =
+	const char* __READONLY_DATA  aCatMf2Hid[10][4] =
 	{
-        { HID_SMA_DEFAULT_DIST,         HID_SMA_LINE_DIST,          HID_SMA_ROOT_DIST, 0 },
-        { HID_SMA_SUP_DIST,             HID_SMA_SUB_DIST ,          0, 0 },
+		{ HID_SMA_DEFAULT_DIST,         HID_SMA_LINE_DIST,          HID_SMA_ROOT_DIST, 0 },
+		{ HID_SMA_SUP_DIST,             HID_SMA_SUB_DIST ,          0, 0 },
         { HID_SMA_NUMERATOR_DIST,       HID_SMA_DENOMINATOR_DIST,   0, 0 },
         { HID_SMA_FRACLINE_EXCWIDTH,    HID_SMA_FRACLINE_LINEWIDTH, 0, 0 },
         { HID_SMA_UPPERLIMIT_DIST,      HID_SMA_LOWERLIMIT_DIST,    0, 0 },
@@ -819,10 +810,10 @@ void SmDistanceDialog::SetCategory(sal_uInt16 nCategory)
 	// array to help iterate over the controls
 	Window * __READONLY_DATA  aWin[4][2] =
 	{
-        { &aFixedText1,  &aMetricField1 },
-        { &aFixedText2,  &aMetricField2 },
-        { &aFixedText3,  &aMetricField3 },
-        { &aFixedText4,  &aMetricField4 }
+		{ &aFixedText1,  &aMetricField1 },
+		{ &aFixedText2,  &aMetricField2 },
+		{ &aFixedText3,  &aMetricField3 },
+		{ &aFixedText4,  &aMetricField4 }
 	};
 
 	SmCategoryDesc *pCat;
@@ -843,16 +834,16 @@ void SmDistanceDialog::SetCategory(sal_uInt16 nCategory)
 		aMenuButton.GetPopupMenu()->CheckItem(nActiveCategory + 1, sal_False);
 	}
 
-    // aktivieren/deaktivieren der zugehoerigen Controls in Abhaengigkeit von der
-    // gewaehlten Kategorie.
+	// aktivieren/deaktivieren der zugehörigen Controls in Abhängigkeit von der
+	// gewählten Kategorie.
 	sal_Bool  bActive;
-    for (sal_uInt16 i = 0;  i < 4;  i++)
+	for (sal_uInt16 i = 0;  i < 4;  i++)
 	{
 		FixedText   *pFT = (FixedText * const)   aWin[i][0];
 		MetricField *pMF = (MetricField * const) aWin[i][1];
 
 		// Um feststellen welche Controls aktiv sein sollen wird das
-        // vorhandensein einer zugehoerigen HelpID ueberprueft.
+		// vorhandensein einer zugehörigen HelpID überprüft.
 		bActive = aCatMf2Hid[nCategory][i] != 0;
 
 		pFT->Show(bActive);
@@ -860,12 +851,12 @@ void SmDistanceDialog::SetCategory(sal_uInt16 nCategory)
 		pMF->Show(bActive);
 		pMF->Enable(bActive);
 
-        // setzen von Masseinheit und Anzahl der Nachkommastellen
+		// setzen von Masseinheit und Anzahl der Nachkommastellen
 		FieldUnit  eUnit;
 		sal_uInt16     nDigits;
 		if (nCategory < 9)
 		{
-            eUnit = FUNIT_PERCENT;
+			eUnit = FUNIT_PERCENT;
 			nDigits = 0;
 		}
 		else
@@ -873,7 +864,7 @@ void SmDistanceDialog::SetCategory(sal_uInt16 nCategory)
 			eUnit   = FUNIT_100TH_MM;
 			nDigits = 2;
 		}
-        pMF->SetUnit(eUnit);            //! veraendert den Wert
+		pMF->SetUnit(eUnit); //! verändert den Wert
 		pMF->SetDecimalDigits(nDigits);
 
 		if (bActive)
@@ -888,7 +879,7 @@ void SmDistanceDialog::SetCategory(sal_uInt16 nCategory)
 			SetHelpId(*pMF, aCatMf2Hid[nCategory][i]);
 		}
 	}
-    // nun noch die CheckBox und das zugehoerige MetricField genau dann aktivieren,
+	// nun noch die CheckBox und das zugehörige MetricField genau dann aktivieren,
 	// falls es sich um das Klammer Menu handelt.
 	bActive = nCategory == 5;
 	aCheckBox1.Show(bActive);
@@ -903,7 +894,7 @@ void SmDistanceDialog::SetCategory(sal_uInt16 nCategory)
 	}
 
 	aMenuButton.GetPopupMenu()->CheckItem(nCategory + 1, sal_True);
-    aFixedLine.SetText(Categories[nCategory]->GetName());
+	aFixedLine.SetText(Categories[nCategory]->GetName());
 
 	nActiveCategory = nCategory;
 
@@ -915,23 +906,23 @@ void SmDistanceDialog::SetCategory(sal_uInt16 nCategory)
 
 SmDistanceDialog::SmDistanceDialog(Window *pParent, sal_Bool bFreeRes)
 	: ModalDialog(pParent, SmResId(RID_DISTANCEDIALOG)),
-    aFixedText1    (this, SmResId(1)),
-    aMetricField1  (this, SmResId(1)),
-    aFixedText2    (this, SmResId(2)),
-    aMetricField2  (this, SmResId(2)),
-    aFixedText3    (this, SmResId(3)),
-    aMetricField3  (this, SmResId(3)),
-    aCheckBox1     (this, SmResId(1)),
-    aFixedText4    (this, SmResId(4)),
-    aMetricField4  (this, SmResId(4)),
-    aOKButton1     (this, SmResId(1)),
-    aCancelButton1 (this, SmResId(1)),
-    aMenuButton    (this, SmResId(1)),
-    aDefaultButton (this, SmResId(1)),
-    aBitmap        (this, SmResId(1)),
-    aFixedLine     (this, SmResId(1))
+	aFixedText1    (this, SmResId(1)),
+	aMetricField1  (this, SmResId(1)),
+	aFixedText2    (this, SmResId(2)),
+	aMetricField2  (this, SmResId(2)),
+	aFixedText3    (this, SmResId(3)),
+	aMetricField3  (this, SmResId(3)),
+	aCheckBox1     (this, SmResId(1)),
+	aFixedText4    (this, SmResId(4)),
+	aMetricField4  (this, SmResId(4)),
+	aOKButton1     (this, SmResId(1)),
+	aCancelButton1 (this, SmResId(1)),
+	aMenuButton    (this, SmResId(1)),
+	aDefaultButton (this, SmResId(1)),
+	aBitmap        (this, SmResId(1)),
+	aFixedLine     (this, SmResId(1))
 {
-    for (sal_uInt16 i = 0; i < NOCATEGORIES; i++)
+	for (sal_uInt16 i = 0; i < NOCATEGORIES; i++)
 		Categories[i] = new SmCategoryDesc(SmResId(i + 1), i);
 	nActiveCategory   = CATEGORY_NONE;
 	bScaleAllBrackets = sal_False;
@@ -939,10 +930,10 @@ SmDistanceDialog::SmDistanceDialog(Window *pParent, sal_Bool bFreeRes)
 	if (bFreeRes)
 		FreeResource();
 
-    ApplyImages();
+	ApplyImages();
 
-    // preview like controls should have a 2D look
-    aBitmap.SetBorderStyle( WINDOW_BORDER_MONO );
+	// preview like controls should have a 2D look
+	aBitmap.SetBorderStyle( WINDOW_BORDER_MONO );
 
 	aMetricField1.SetGetFocusHdl(LINK(this, SmDistanceDialog, GetFocusHdl));
 	aMetricField2.SetGetFocusHdl(LINK(this, SmDistanceDialog, GetFocusHdl));
@@ -964,21 +955,21 @@ SmDistanceDialog::~SmDistanceDialog()
 
 void SmDistanceDialog::ApplyImages()
 {
-    sal_Bool bHighContrast = GetSettings().GetStyleSettings().GetHighContrastMode();
-    for (int i = 0;  i < NOCATEGORIES;  ++i)
-    {
+	sal_Bool bHighContrast = GetSettings().GetStyleSettings().GetHighContrastMode();
+	for (int i = 0;  i < NOCATEGORIES;  ++i)
+	{
         SmCategoryDesc *pCat = Categories[i];
         if (pCat)
             pCat->SetHighContrast( bHighContrast );
-    }
+	}
 }
 
 void SmDistanceDialog::DataChanged( const DataChangedEvent &rEvt )
 {
-    if ( (rEvt.GetType() == DATACHANGED_SETTINGS) && (rEvt.GetFlags() & SETTINGS_STYLE) )
+	if ( (rEvt.GetType() == DATACHANGED_SETTINGS) && (rEvt.GetFlags() & SETTINGS_STYLE) )
             ApplyImages();
 
-    ModalDialog::DataChanged( rEvt );
+	ModalDialog::DataChanged( rEvt );
 }
 
 void SmDistanceDialog::ReadFrom(const SmFormat &rFormat)
@@ -1019,8 +1010,8 @@ void SmDistanceDialog::ReadFrom(const SmFormat &rFormat)
 
 void SmDistanceDialog::WriteTo(SmFormat &rFormat) /*const*/
 {
-    // hmm... koennen die tatsaechlich unterschiedlich sein?
-    // wenn nicht kann oben naemlich das const stehen!
+    // hmm... können die tatsächlich unterschiedlich sein?
+    // wenn nicht kann oben nämlich das const stehen!
 	SetCategory(nActiveCategory);
 
 	rFormat.SetDistance( DIS_HORIZONTAL,    	Categories[0]->GetValue(0) );
@@ -1136,7 +1127,7 @@ void SmShowSymbolSet::Paint(const Rectangle&)
 {
 	Push(PUSH_MAPMODE);
 
-    // MapUnit einstellen fuer die 'nLen' berechnet wurde
+    // MapUnit einstellen für die 'nLen' berechnet wurde
 	SetMapMode(MapMode(MAP_PIXEL));
 
     sal_uInt16 v        = sal::static_int_cast< sal_uInt16 >((aVScrollBar.GetThumbPos() * nColumns));
@@ -1150,7 +1141,7 @@ void SmShowSymbolSet::Paint(const Rectangle&)
         aFont.SetAlign(ALIGN_TOP);
 
 		// etwas kleinere FontSize nehmen (als nLen) um etwas Luft zu haben
-        // (hoffentlich auch genug fuer links und rechts!)
+        // (hoffentlich auch genug für links und rechts!)
 		aFont.SetSize(Size(0, nLen - (nLen / 3)));
 		SetFont(aFont);
         // keep text color
@@ -1279,7 +1270,7 @@ SmShowSymbolSet::SmShowSymbolSet(Window *pParent, const ResId& rResId) :
 void SmShowSymbolSet::SetSymbolSet(const SymbolPtrVec_t& rSymbolSet)
 {
 	aSymbolSet = rSymbolSet;
-    
+
     if (static_cast< sal_uInt16 >(aSymbolSet.size()) > (nColumns * nRows))
 	{
         aVScrollBar.SetRange(Range(0, ((aSymbolSet.size() + (nColumns - 1)) / nColumns) - nRows));
@@ -1325,7 +1316,6 @@ IMPL_LINK( SmShowSymbolSet, ScrollHdl, ScrollBar*, EMPTYARG /*pScrollBar*/)
 	return 0;
 }
 
-////////////////////////////////////////////////////////////////////////////////
 
 void SmShowSymbol::Paint(const Rectangle &rRect)
 {
@@ -1369,19 +1359,18 @@ void SmShowSymbol::SetSymbol(const SmSym *pSymbol)
 }
 
 
-////////////////////////////////////////////////////////////////////////////////
 
 void SmSymbolDialog::FillSymbolSets(sal_Bool bDeleteText)
-    // fuellt die Eintraege der moeglichen 'SymbolsSet's im Dialog mit den
+	// füllt die Einträge der möglichen 'SymbolsSet's im Dialog mit den
 	// aktuellen Werten des SymbolSet Managers, selektiert aber keinen.
 {
 	aSymbolSets.Clear();
 	if (bDeleteText)
 		aSymbolSets.SetNoSelection();
 
-    std::set< String >  aSybolSetNames( rSymbolMgr.GetSymbolSetNames() );
-    std::set< String >::const_iterator aIt( aSybolSetNames.begin() );
-    for ( ; aIt != aSybolSetNames.end(); ++aIt)
+    std::set< String >  aSymbolSetNames( rSymbolMgr.GetSymbolSetNames() );
+    std::set< String >::const_iterator aIt( aSymbolSetNames.begin() );
+    for ( ; aIt != aSymbolSetNames.end(); ++aIt)
         aSymbolSets.InsertEntry( *aIt );
 }
 
@@ -1390,7 +1379,7 @@ IMPL_LINK( SmSymbolDialog, SymbolSetChangeHdl, ListBox *, EMPTYARG pListBox )
 {
     (void) pListBox;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pListBox == &aSymbolSets, "Sm : falsches Argument");
+	DBG_ASSERT(pListBox == &aSymbolSets, "Sm : Wrong argument");
 #endif
 
 	SelectSymbolSet(aSymbolSets.GetSelectEntry());
@@ -1402,7 +1391,7 @@ IMPL_LINK( SmSymbolDialog, SymbolChangeHdl, SmShowSymbolSet *, EMPTYARG pShowSym
 {
     (void) pShowSymbolSet;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pShowSymbolSet == &aSymbolSetDisplay, "Sm : falsches Argument");
+	DBG_ASSERT(pShowSymbolSet == &aSymbolSetDisplay, "Sm : Wrong argument");
 #endif
 
 	SelectSymbol(aSymbolSetDisplay.GetSelectSymbol());
@@ -1413,7 +1402,7 @@ IMPL_LINK( SmSymbolDialog, EditClickHdl, Button *, EMPTYARG pButton )
 {
     (void) pButton;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pButton == &aEditBtn, "Sm : falsches Argument");
+	DBG_ASSERT(pButton == &aEditBtn, "Sm : Wrong argument");
 #endif
 
     SmSymDefineDialog *pDialog = new SmSymDefineDialog(this, pFontListDev, rSymbolMgr);
@@ -1431,7 +1420,7 @@ IMPL_LINK( SmSymbolDialog, EditClickHdl, Button *, EMPTYARG pButton )
 
     sal_uInt16 nSymPos = GetSelectedSymbol();
 
-    // Dialog an evtl geaenderte Daten des SymbolSet Manager anpassen
+    // Dialog an evtl geänderte Daten des SymbolSet Manager anpassen
     if (pDialog->Execute() == RET_OK  &&  rSymbolMgr.IsModified())
 	{
         rSymbolMgr.Save();
@@ -1449,7 +1438,7 @@ IMPL_LINK( SmSymbolDialog, EditClickHdl, Button *, EMPTYARG pButton )
        	aSymbolSet      = rSymbolMgr.GetSymbolSet( aSymbolSetName );
         aSymbolSetDisplay.SetSymbolSet( aSymbolSet );
     }
-    
+
     if (nSymPos >= aSymbolSet.size())
         nSymPos = static_cast< sal_uInt16 >(aSymbolSet.size()) - 1;
     SelectSymbol( nSymPos );
@@ -1463,7 +1452,7 @@ IMPL_LINK( SmSymbolDialog, SymbolDblClickHdl, SmShowSymbolSet *, EMPTYARG pShowS
 {
     (void) pShowSymbolSet;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pShowSymbolSet == &aSymbolSetDisplay, "Sm : falsches Argument");
+	DBG_ASSERT(pShowSymbolSet == &aSymbolSetDisplay, "Sm : Wrong argument");
 #endif
 
 	GetClickHdl(&aGetBtn);
@@ -1476,7 +1465,7 @@ IMPL_LINK( SmSymbolDialog, GetClickHdl, Button *, EMPTYARG pButton )
 {
     (void) pButton;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pButton == &aGetBtn, "Sm : falscher Button");
+	DBG_ASSERT(pButton == &aGetBtn, "Sm : Wrong button");
 #endif
 
 	const SmSym *pSym = GetSymbol();
@@ -1499,7 +1488,7 @@ IMPL_LINK_INLINE_START( SmSymbolDialog, CloseClickHdl, Button *, EMPTYARG pButto
 {
     (void) pButton;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pButton == &aCloseBtn, "Sm : falscher Button");
+	DBG_ASSERT(pButton == &aCloseBtn, "Sm : Wrong button");
 #endif
 
 	EndDialog(sal_True);
@@ -1636,7 +1625,6 @@ const SmSym * SmSymbolDialog::GetSymbol() const
 }
 
 
-////////////////////////////////////////////////////////////////////////////////
 
 
 void SmShowChar::Paint(const Rectangle &rRect)
@@ -1680,13 +1668,12 @@ void SmShowChar::SetSymbol( sal_UCS4 cChar, const Font &rFont )
 }
 
 
-////////////////////////////////////////////////////////////////////////////////
 
 void SmSymDefineDialog::FillSymbols(ComboBox &rComboBox, sal_Bool bDeleteText)
 {
 #if OSL_DEBUG_LEVEL > 1
 	DBG_ASSERT(&rComboBox == &aOldSymbols  ||  &rComboBox == &aSymbols,
-		"Sm : falsche ComboBox");
+		"Sm : Wrong comboBox");
 #endif
 
 	rComboBox.Clear();
@@ -1704,7 +1691,7 @@ void SmSymDefineDialog::FillSymbolSets(ComboBox &rComboBox, sal_Bool bDeleteText
 {
 #if OSL_DEBUG_LEVEL > 1
 	DBG_ASSERT(&rComboBox == &aOldSymbolSets  ||  &rComboBox == &aSymbolSets,
-		"Sm : falsche ComboBox");
+		"Sm : Wrong comboBox");
 #endif
 
 	rComboBox.Clear();
@@ -1763,7 +1750,7 @@ SmSym * SmSymDefineDialog::GetSymbol(const ComboBox &rComboBox)
 {
 #if OSL_DEBUG_LEVEL > 1
 	DBG_ASSERT(&rComboBox == &aOldSymbols  ||  &rComboBox == &aSymbols,
-		"Sm : falsche ComboBox");
+		"Sm : Wrong comboBox");
 #endif
     return aSymbolMgrCopy.GetSymbolByName(rComboBox.GetText());
 }
@@ -1773,7 +1760,7 @@ IMPL_LINK( SmSymDefineDialog, OldSymbolChangeHdl, ComboBox *, EMPTYARG pComboBox
 {
     (void) pComboBox;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pComboBox == &aOldSymbols, "Sm : falsches Argument");
+	DBG_ASSERT(pComboBox == &aOldSymbols, "Sm : Wrong argument");
 #endif
     SelectSymbol(aOldSymbols, aOldSymbols.GetText(), sal_False);
 	return 0;
@@ -1784,7 +1771,7 @@ IMPL_LINK( SmSymDefineDialog, OldSymbolSetChangeHdl, ComboBox *, EMPTYARG pCombo
 {
     (void) pComboBox;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pComboBox == &aOldSymbolSets, "Sm : falsches Argument");
+	DBG_ASSERT(pComboBox == &aOldSymbolSets, "Sm : Wrong argument");
 #endif
 	SelectSymbolSet(aOldSymbolSets, aOldSymbolSets.GetText(), sal_False);
 	return 0;
@@ -1812,7 +1799,7 @@ IMPL_LINK( SmSymDefineDialog, ModifyHdl, ComboBox *, pComboBox )
 	else
     {
 #if OSL_DEBUG_LEVEL > 1
-		DBG_ASSERT(0, "Sm : falsche ComboBox Argument");
+		DBG_ASSERT(0, "Sm : Wrong comboBox argument");
 #endif
     }
 
@@ -1828,7 +1815,7 @@ IMPL_LINK( SmSymDefineDialog, FontChangeHdl, ListBox *, EMPTYARG pListBox )
 {
     (void) pListBox;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pListBox == &aFonts, "Sm : falsches Argument");
+	DBG_ASSERT(pListBox == &aFonts, "Sm : Wrong argument");
 #endif
 
 	SelectFont(aFonts.GetSelectEntry());
@@ -1856,7 +1843,7 @@ IMPL_LINK( SmSymDefineDialog, StyleChangeHdl, ComboBox *, EMPTYARG pComboBox )
 {
     (void) pComboBox;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pComboBox == &aStyles, "Sm : falsches Argument");
+	DBG_ASSERT(pComboBox == &aStyles, "Sm : Wrong argument");
 #endif
 
 	SelectStyle(aStyles.GetText());
@@ -1884,7 +1871,7 @@ IMPL_LINK( SmSymDefineDialog, CharHighlightHdl, Control *, EMPTYARG )
 
 	UpdateButtons();
 
-    // display Unicode position as symbol name while iterating over characters 
+    // display Unicode position as symbol name while iterating over characters
     const String aHex( String::CreateFromInt64( cChar, 16 ).ToUpperAscii() );
     const String aPattern( A2OU( aHex.Len() > 4 ? "Ux000000" : "Ux0000" ) );
     String aUnicodePos( aPattern.Copy( 0, aPattern.Len() - aHex.Len() ) );
@@ -1900,8 +1887,8 @@ IMPL_LINK( SmSymDefineDialog, AddClickHdl, Button *, EMPTYARG pButton )
 {
     (void) pButton;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pButton == &aAddBtn, "Sm : falsches Argument");
-    DBG_ASSERT(aAddBtn.IsEnabled(), "Sm : Voraussetzungen erfuellt ??");
+	DBG_ASSERT(pButton == &aAddBtn, "Sm : Wrong argument");
+    DBG_ASSERT(aAddBtn.IsEnabled(), "Sm : Voraussetzungen erfüllt?");
 #endif
 
     // add symbol
@@ -1915,9 +1902,9 @@ IMPL_LINK( SmSymDefineDialog, AddClickHdl, Button *, EMPTYARG pButton )
     aSymbolName.SetText( aNewSymbol.GetName() );
     aSymbolSetName.SetText( aNewSymbol.GetSymbolSetName() );
 
-    // update list box entries
-    FillSymbolSets(aOldSymbolSets, sal_False);
-    FillSymbolSets(aSymbolSets,    sal_False);
+	// update list box entries
+	FillSymbolSets(aOldSymbolSets, sal_False);
+	FillSymbolSets(aSymbolSets,    sal_False);
 	FillSymbols(aOldSymbols ,sal_False);
 	FillSymbols(aSymbols    ,sal_False);
 
@@ -1929,37 +1916,37 @@ IMPL_LINK( SmSymDefineDialog, AddClickHdl, Button *, EMPTYARG pButton )
 
 IMPL_LINK( SmSymDefineDialog, ChangeClickHdl, Button *, EMPTYARG pButton )
 {
-    (void) pButton;
+	(void) pButton;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pButton == &aChangeBtn, "Sm : falsches Argument");
-    DBG_ASSERT(aChangeBtn.IsEnabled(), "Sm : Voraussetzungen erfuellt ??");
+	DBG_ASSERT(pButton == &aChangeBtn, "Sm : Wrong argument");
+	DBG_ASSERT(aChangeBtn.IsEnabled(), "Sm : Voraussetzungen erfüllt?");
 #endif
 
-    // get new Sybol to use
-    //! get font from symbol-disp lay since charset-display does not keep
-    //! the bold attribut.
-    const SmSym aNewSymbol( aSymbols.GetText(), aCharsetDisplay.GetFont(),
+	// get new Symbol to use
+	//! get font from symbol-disp lay since charset-display does not keep
+	//! the bold attribute.
+	const SmSym aNewSymbol( aSymbols.GetText(), aCharsetDisplay.GetFont(),
             aCharsetDisplay.GetSelectCharacter(), aSymbolSets.GetText() );
 
-    // remove old symbol if the name was changed then add new one
-//    const bool bSetNameChanged    = aOldSymbolSets.GetText() != aSymbolSets.GetText();
-    const bool bNameChanged       = aOldSymbols.GetText() != aSymbols.GetText();
-    if (bNameChanged)
-        aSymbolMgrCopy.RemoveSymbol( aOldSymbols.GetText() );
-    aSymbolMgrCopy.AddOrReplaceSymbol( aNewSymbol, true );
+	// remove old symbol if the name was changed then add new one
+//	const bool bSetNameChanged    = aOldSymbolSets.GetText() != aSymbolSets.GetText();
+	const bool bNameChanged       = aOldSymbols.GetText() != aSymbols.GetText();
+	if (bNameChanged)
+		aSymbolMgrCopy.RemoveSymbol( aOldSymbols.GetText() );
+	aSymbolMgrCopy.AddOrReplaceSymbol( aNewSymbol, true );
 
-    // clear display for original symbol if necessary
-    if (bNameChanged)
-        SetOrigSymbol(NULL, XubString());
+	// clear display for original symbol if necessary
+	if (bNameChanged)
+		SetOrigSymbol(NULL, XubString());
 
-    // update display of new symbol
-    aSymbolDisplay.SetSymbol( &aNewSymbol );
-    aSymbolName.SetText( aNewSymbol.GetName() );
-    aSymbolSetName.SetText( aNewSymbol.GetSymbolSetName() );
-    
-    // update list box entries
-    FillSymbolSets(aOldSymbolSets, sal_False);
-    FillSymbolSets(aSymbolSets,    sal_False);
+	// update display of new symbol
+	aSymbolDisplay.SetSymbol( &aNewSymbol );
+	aSymbolName.SetText( aNewSymbol.GetName() );
+	aSymbolSetName.SetText( aNewSymbol.GetSymbolSetName() );
+
+	// update list box entries
+	FillSymbolSets(aOldSymbolSets, sal_False);
+	FillSymbolSets(aSymbolSets,    sal_False);
     FillSymbols(aOldSymbols ,sal_False);
     FillSymbols(aSymbols    ,sal_False);
 
@@ -1973,8 +1960,8 @@ IMPL_LINK( SmSymDefineDialog, DeleteClickHdl, Button *, EMPTYARG pButton )
 {
     (void) pButton;
 #if OSL_DEBUG_LEVEL > 1
-	DBG_ASSERT(pButton == &aDeleteBtn, "Sm : falsches Argument");
-    DBG_ASSERT(aDeleteBtn.IsEnabled(), "Sm : Voraussetzungen erfuellt ??");
+	DBG_ASSERT(pButton == &aDeleteBtn, "Sm : Wrong argument");
+    DBG_ASSERT(aDeleteBtn.IsEnabled(), "Sm : Voraussetzungen erfüllt?");
 #endif
 
 	if (pOrigSymbol)
@@ -2084,7 +2071,7 @@ SmSymDefineDialog::SmSymDefineDialog(Window * pParent,
 
 	pOrigSymbol = 0;
 
-    // auto completion is troublesome since that symbols character also gets automatically selected in the 
+    // auto completion is troublesome since that symbols character also gets automatically selected in the
     // display and if the user previously selected a character to define/redefine that one this is bad
     aOldSymbols.EnableAutocomplete( sal_False, sal_True );
     aSymbols   .EnableAutocomplete( sal_False, sal_True );
@@ -2148,7 +2135,7 @@ void SmSymDefineDialog::InitColor_Impl()
     aOldSymbolDisplay.SetTextColor( aTxtColor );
     aSymbolDisplay   .SetBackground( aWall );
     aSymbolDisplay   .SetTextColor( aTxtColor );
-    
+
     const Image &rArrowRight = bHighContrast ? aRigthArrow_Im_HC : aRigthArrow_Im;
     aRightArrow.SetImage( rArrowRight );
 }
@@ -2209,7 +2196,7 @@ sal_Bool SmSymDefineDialog::SelectSymbolSet(ComboBox &rComboBox,
 {
 #if OSL_DEBUG_LEVEL > 1
 	DBG_ASSERT(&rComboBox == &aOldSymbolSets  ||  &rComboBox == &aSymbolSets,
-		"Sm : falsche ComboBox");
+		"Sm : Wrong comboBox");
 #endif
 
 	// 'Normalisieren' des SymbolNamens (ohne leading und trailing Leerzeichen)
@@ -2232,16 +2219,16 @@ sal_Bool SmSymDefineDialog::SelectSymbolSet(ComboBox &rComboBox,
 
 	sal_Bool  bIsOld = &rComboBox == &aOldSymbolSets;
 
-    // setzen des SymbolSet Namens an der zugehoerigen Darstellung
+    // setzen des SymbolSet Namens an der zugehörigen Darstellung
 	FixedText &rFT = bIsOld ? aOldSymbolSetName : aSymbolSetName;
 	rFT.SetText(rComboBox.GetText());
 
-    // setzen der zum SymbolSet gehoerenden Symbol Namen an der zugehoerigen
-	// Auswahbox
+    // setzen der zum SymbolSet gehörenden Symbol Namen an der zugehörigen
+	// Auswahlbox
 	ComboBox  &rCB = bIsOld ? aOldSymbols : aSymbols;
 	FillSymbols(rCB, sal_False);
 
-    // bei Wechsel des SymbolSets fuer das alte Zeichen ein gueltiges
+    // bei Wechsel des SymbolSets für das alte Zeichen ein gültiges
 	// Symbol bzw keins zur Anzeige bringen
 	if (bIsOld)
 	{
@@ -2290,7 +2277,7 @@ sal_Bool SmSymDefineDialog::SelectSymbol(ComboBox &rComboBox,
 {
 #if OSL_DEBUG_LEVEL > 1
 	DBG_ASSERT(&rComboBox == &aOldSymbols  ||  &rComboBox == &aSymbols,
-		"Sm : falsche ComboBox");
+		"Sm : Wrong comboBox");
 #endif
 
 	// 'Normalisieren' des SymbolNamens (ohne Leerzeichen)
@@ -2462,6 +2449,4 @@ void SmSymDefineDialog::SelectChar(xub_Unicode cChar)
 	UpdateButtons();
 }
 
-
-/**************************************************************************/
-
+/* vim: set noet sw=4 ts=4: */

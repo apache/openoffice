@@ -2936,4 +2936,3 @@ const ScDPItemData* ScDPMembers::GetSrcItemDataByIndex( SCROW nIndex)
     return pSource->GetData()->GetColumnEntries( nDim ).size();
  }
 // End Comments
-

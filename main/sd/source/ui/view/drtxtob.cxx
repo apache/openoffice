@@ -406,7 +406,7 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
             {
 				if( mpView && mpView->GetTextEditOutlinerView() )
 				{
-					EditView & rEditView = mpView->GetTextEditOutlinerView()->GetEditView();;
+					EditView & rEditView = mpView->GetTextEditOutlinerView()->GetEditView();
 					String          aStatusVal;
 					LanguageType    nLang = LANGUAGE_NONE;
 					bool bIsLookUpWord = GetStatusValueForThesaurusFromContext( aStatusVal, nLang, rEditView );

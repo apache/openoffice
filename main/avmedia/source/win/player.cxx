@@ -86,9 +86,9 @@ bool isWindowsVistaOrHigher()
 // - Player -
 // ----------------
 
-Player::Player( const uno::Reference< lang::XMultiServiceFactory >& rxMgr ) :
+Player::Player( const uno::Reference< uno::XComponentContext >& rxContext ) :
     Player_BASE(m_aMutex),
-    mxMgr( rxMgr ),
+    mxContext( rxContext ),
     mpGB( NULL ),
     mpOMF( NULL ),
     mpMC( NULL ),
@@ -532,7 +532,7 @@ uno::Reference< ::media::XPlayerWindow > SAL_CALL Player::createPlayerWindow( co
 
     if( mpVW && aSize.Width > 0 && aSize.Height > 0 )
     {
-        ::avmedia::win::Window* pWindow = new ::avmedia::win::Window( mxMgr, *this );
+        ::avmedia::win::Window* pWindow = new ::avmedia::win::Window( mxContext, *this );
 
         xRet = pWindow;
 
@@ -554,7 +554,7 @@ uno::Reference< media::XFrameGrabber > SAL_CALL Player::createFrameGrabber(  )
 
     if( !maURL.isEmpty() )
     {
-        FrameGrabber* pGrabber = new FrameGrabber( mxMgr );
+        FrameGrabber* pGrabber = new FrameGrabber( mxContext );
         
         xRet = pGrabber;
         

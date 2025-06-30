@@ -35,7 +35,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
 /**
- * This object gives all functionallity to print msoffice documents.
+ * This object gives all functionality to print msoffice documents.
  * It also offers functions to check what type of document it is.
  * It handles *.doc as word documents and use word to print
  * *.xls as excel
@@ -296,7 +296,7 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 GlobalLogWriter.println("No Microsoft Office document format found.");
 // TODO: use a better Exception!!!
-                throw new WrongSuffixException("No Mircosoft Office document format found.");
+                throw new WrongSuffixException("No Microsoft Office document format found.");
             }
 
             if (aStartCommand.isEmpty() == false)

@@ -2019,7 +2019,3 @@ void ScTable::FindConditionalFormat( sal_uLong nKey, ScRangeList& rList )
 		delete pIter;
 	}
 }
-
-
-
-

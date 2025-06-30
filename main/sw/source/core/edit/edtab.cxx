@@ -526,4 +526,3 @@ void SwEditShell::AppendUndoForInsertFromDB( sal_Bool bIsTable )
 {
 	GetDoc()->AppendUndoForInsertFromDB( *GetCrsr(), bIsTable );
 }
-

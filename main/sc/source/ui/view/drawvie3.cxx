@@ -172,7 +172,3 @@ void ScDrawView::UpdateIMap( SdrObject* pObj )
 		}
 	}
 }
-
-
-
-

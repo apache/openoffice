@@ -182,7 +182,3 @@ void ScInvertMerger::AddRect( const Rectangle& rRect )
 		}
 	}
 }
-
-
-
-

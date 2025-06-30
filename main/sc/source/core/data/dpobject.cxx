@@ -286,7 +286,7 @@ void ScDPObject::SetSheetDesc(const ScSheetSourceDesc& rDesc, bool bFromRefUpdat
 	pSheetDesc->aQueryParam.nCol1 = pSheetDesc->aSourceRange.aStart.Col();
 	pSheetDesc->aQueryParam.nRow1 = pSheetDesc->aSourceRange.aStart.Row();
 	pSheetDesc->aQueryParam.nCol2 = pSheetDesc->aSourceRange.aEnd.Col();
-	pSheetDesc->aQueryParam.nRow2 = pSheetDesc->aSourceRange.aEnd.Row();;
+	pSheetDesc->aQueryParam.nRow2 = pSheetDesc->aSourceRange.aEnd.Row();
 	pSheetDesc->aQueryParam.bHasHeader = sal_True;
 
 	InvalidateSource();		// new source must be created
@@ -2629,5 +2629,3 @@ bool ScDPCollection::HasDPTable(SCCOL nCol, SCROW nRow, SCTAB nTab) const
 
     return pMergeAttr->HasDPTable();
 }
-
-

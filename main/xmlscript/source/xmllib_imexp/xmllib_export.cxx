@@ -169,4 +169,3 @@ SAL_CALL exportLibrary(
 }
 
 }
-

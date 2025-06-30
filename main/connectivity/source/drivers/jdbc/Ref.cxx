@@ -54,4 +54,3 @@ jclass java_sql_Ref::getMyClass() const
     static jmethodID mID(NULL);
     return callStringMethod("getBaseTypeName",mID);
 }
-

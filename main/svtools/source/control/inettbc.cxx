@@ -1358,4 +1358,3 @@ void SvtURLBox::SetFilter(const String& _sFilter)
     pImp->m_aFilters.clear();
     FilterMatch::createWildCardFilterList(_sFilter,pImp->m_aFilters);
 }
-

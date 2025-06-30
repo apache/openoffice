@@ -148,5 +148,3 @@ VbaGlobalsBase::hasServiceName( const rtl::OUString& serviceName )
     }
     return false;
 }
-
-

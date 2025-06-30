@@ -303,7 +303,7 @@ public:
           mbSkipTriggersNextEffect(true) {}
 
     /** Remember to trigger (or not to trigger) the next effect after the
-        current effect is skiped.
+        current effect is skipped.
     */
     void setSkipTriggersNextEffect (const bool bSkipTriggersNextEffect)
     { mbSkipTriggersNextEffect = bSkipTriggersNextEffect; }
@@ -329,7 +329,7 @@ private:
                 // handler is triggered upon next effect events (multiplexer
                 // prio=-1)!  Posting a notifyNextEffect() here is only safe
                 // (we don't run into busy loop), because we assume that
-                // someone has registerered above for next effects
+                // someone has registered above for next effects
                 // (multiplexer prio=0) at the user event queue.
                 return mrEventQueue.addEventWhenQueueIsEmpty(
                     makeEvent( boost::bind( &EventMultiplexer::notifyNextEffect,
@@ -1000,4 +1000,3 @@ void UserEventQueue::callSkipEffectEventHandler (void)
 
 } // namespace internal
 } // namespace presentation
-

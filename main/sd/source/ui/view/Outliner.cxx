@@ -1314,12 +1314,12 @@ void Outliner::SetViewMode (PageKind ePageKind)
 
         // Force (well, request) a synchronous update of the configuration.
         // In a better world we would handle the asynchronous view update
-        // instead.  But that would involve major restucturing of the
+        // instead.  But that would involve major restructuring of the
         // Outliner code.
         framework::FrameworkHelper::Instance(rBase)->RequestSynchronousUpdate();
         SetViewShell(rBase.GetMainViewShell());
 
-        // Switching to another view shell has intermediatly called
+        // Switching to another view shell has intermediately called
         // EndSpelling().  A PrepareSpelling() is pending, so call that now.
         PrepareSpelling();
 
@@ -1704,7 +1704,7 @@ sal_Bool Outliner::ConvertNextDocument()
 
 sal_uInt16 Outliner::ShowModalMessageBox (Dialog& rMessageBox)
 {
-    // We assume that the parent of the given messge box is NULL, i.e. it is
+    // We assume that the parent of the given message box is NULL, i.e. it is
     // modal with respect to the top application window. However, this
     // does not affect the search dialog.  Therefore we have to lock it here
     // while the message box is being shown.  We also have to take into

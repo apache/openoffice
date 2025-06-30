@@ -1371,4 +1371,3 @@ void PresenterController::ThrowIfDisposed (void) const
 
 
 } } // end of namespace ::sdext::presenter
-

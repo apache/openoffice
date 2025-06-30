@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 package com.sun.star.wizards.web;
 
@@ -96,12 +95,12 @@ import com.sun.star.wizards.web.data.CGStyle;
  * Each group (all elements of a vector) uses the same DataObject,
  * so when I change the underlying dataObject, I change the whole vector's DataObject,
  * thus actualizing UI.<br/>
- * This is what happends when a session loads: I Load the session into
+ * This is what happens when a session loads: I Load the session into
  * a tree of DataObjects, and change the DataAware's DataObject. <br/>
  * One could also look at this as a kind of "View-Model" relationship.
  * The controls are the View, The DataObjects are the Model, containing the
  * Data rad directly from the configuration, and the DataAware objects
- * are the controller inbetween.
+ * are the controller in between.
  *
  * @author rpiterman
  *
@@ -112,7 +111,7 @@ public abstract class WWD_Startup extends WWD_General
     SimpleDataAware sda = null;
     /**
      * This is currently not used.
-     * It should have been a Listener which invoces
+     * It should have been a Listener which invokes
      * an Update to the Preview-Document, only
      * We did not implement the live-preview document,
      * so this became obsolete.
@@ -146,7 +145,7 @@ public abstract class WWD_Startup extends WWD_General
      */
     protected List designAware = new Vector();
     /**
-     * A Vector containig the DataAware objects
+     * A Vector containing the DataAware objects
      * which relay on Publishing Objects.
      * Differently from other Vectors, each
      * DataAware object in this Vector relays
@@ -214,7 +213,7 @@ public abstract class WWD_Startup extends WWD_General
      * He - my constructor !
      * I call/do here in this order: <br/>
      * Check if ftp http proxy is set, and warn user he can not use
-     * ftp if  it is.<br/>
+     * ftp if it is.<br/>
      * draw NaviBar and steps 1 to 7, incl. Step X,
      * which is the Layouts ImageList on step 3.<br/>
      * load the settings from the configuration. <br/>
@@ -225,7 +224,7 @@ public abstract class WWD_Startup extends WWD_General
      * check the content (documents) specified in the default session.<br/>
      * fill the list boxes (saved sessions, styles, combobox save session). <br/>
      * make data aware. <br/>
-     * updateUI (refreshes the display to crrespond to the data in
+     * updateUI (refreshes the display to correspond to the data in
      * the default session.)<br/>
      * fill the documents listbox. <br/>
      * if proxies are set, disable the ftp controls in step 7.
@@ -342,7 +341,7 @@ public abstract class WWD_Startup extends WWD_General
     /**
      * fills the road map, and sets the necessary properties,
      * like MaxStep, Complete, Interactive-
-     * Disables the finbihButton.
+     * Disables the finishButton.
      */
     private void addRoadMapItems()
     {
@@ -453,7 +452,7 @@ public abstract class WWD_Startup extends WWD_General
     {
         try
         {
-            // instanciate
+            // instantiate
             String[] settingsResources = new String[]
             {
                 resources.resPages,
@@ -511,7 +510,7 @@ public abstract class WWD_Startup extends WWD_General
         settings.savedSessions.clear();
         for (int i = 0; i < sessions.length; i++)
         {
-            settings.savedSessions.add(i, sessions[i]);        // add an empty session to the saved session list which apears in step 1
+            settings.savedSessions.add(i, sessions[i]); // add an empty session to the saved session list which appears in step 1
         }
         CGSessionName sn = new CGSessionName();
         sn.cp_Name = resources.resSessionNameNone;
@@ -769,7 +768,7 @@ public abstract class WWD_Startup extends WWD_General
 
     /**
      * changes the DataAwares Objects' (in
-     * the gioen list) DataObject to the
+     * the given list) DataObject to the
      * @param data
      * @param list
      */
@@ -856,7 +855,7 @@ public abstract class WWD_Startup extends WWD_General
         {
             if (!checkDocument((CGDocument) content.cp_Documents.getElementAt(i), task, xC))
             // I use here 'i--' since, when the document is removed
-            // an index change accures
+            // an index change occurs
             {
                 content.cp_Documents.remove(i--);
             /*for (Iterator i = content.cp_Contents.childrenMap.values().iterator(); i.hasNext();)
@@ -883,7 +882,7 @@ public abstract class WWD_Startup extends WWD_General
     /**
      * Disables/enables the docUpDown buttons (step 2)
      * according to the currently selected document
-     * (no doc selected - both disbaled, last doc selected,
+     * (no doc selected - both disabled, last doc selected,
      * down disabled and so on...)
      *
      */

@@ -251,4 +251,3 @@ void XMLTextParagraphExport::exportListAndSectionChange(
 	// save old section (old numRule gets saved in calling method)
 	rPrevSection.set(rNextSection);
 }
-

@@ -371,7 +371,7 @@ LRESULT CALLBACK listenerWndProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lP
             return TRUE;
         case WM_CREATE:
             {
-                // request notfication when taskbar is recreated
+                // request notification when taskbar is recreated
                 // we then have to add our icon again
                 s_uTaskbarRestart = RegisterWindowMessage(TEXT("TaskbarCreated"));
                 s_uMsgKillTray = RegisterWindowMessage( SHUTDOWN_QUICKSTART_MESSAGE );
@@ -969,5 +969,3 @@ void ShutdownIcon::EnableAutostartW32( const rtl::OUString &aShortcut )
 }
 
 #endif // WNT
-
-

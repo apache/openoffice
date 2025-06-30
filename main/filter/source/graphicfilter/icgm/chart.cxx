@@ -93,4 +93,3 @@ sal_Bool CGMChart::IsAnnotation()
 {
 	return ( mDataNode[ 0 ].nZoneEnum == 0 );
 };
-

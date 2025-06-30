@@ -616,4 +616,3 @@ Reference< runtime::XFormController > FmFormView::GetFormController( const Refer
 {
     return pImpl->getFormController( _rxForm, _rDevice );
 }
-

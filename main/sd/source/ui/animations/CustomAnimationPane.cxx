@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
@@ -199,13 +197,13 @@ CustomAnimationPane::CustomAnimationPane( ::Window* pParent, ViewShellBase& rBas
 	maStrProperty = mpFTProperty->GetText();
 
 	FreeResource();
-    
-    // use bold font for group headings (same font for all fixed lines):
-    Font font( mpFLEffect->GetFont() );
-    font.SetWeight( WEIGHT_BOLD );
-    mpFLEffect->SetFont( font );
-    mpFLModify->SetFont( font );
-    
+
+	// use bold font for group headings (same font for all fixed lines):
+	Font font( mpFLEffect->GetFont() );
+	font.SetWeight( WEIGHT_BOLD );
+	mpFLEffect->SetFont( font );
+	mpFLModify->SetFont( font );
+
 	fillDurationComboBox( mpCBSpeed );
 	mpPBMoveUp->SetSymbol( SYMBOL_ARROW_UP );
 	mpPBMoveDown->SetSymbol( SYMBOL_ARROW_DOWN );
@@ -242,18 +240,18 @@ CustomAnimationPane::CustomAnimationPane( ::Window* pParent, ViewShellBase& rBas
 	// get current page and update custom animation list
 	onChangeCurrentPage();
 
-    // Wait a short time before the presets list is created.  This gives the
-    // system time to paint the control.
-    maLateInitTimer.SetTimeout(100);
-    maLateInitTimer.SetTimeoutHdl(LINK(this, CustomAnimationPane, lateInitCallback));
-    maLateInitTimer.Start();
+	// Wait a short time before the presets list is created. This gives the
+	// system time to paint the control.
+	maLateInitTimer.SetTimeout(100);
+	maLateInitTimer.SetTimeoutHdl(LINK(this, CustomAnimationPane, lateInitCallback));
+	maLateInitTimer.Start();
 
-    UpdateLook();
+	UpdateLook();
 }
 
 CustomAnimationPane::~CustomAnimationPane()
 {
-    maLateInitTimer.Stop();
+	maLateInitTimer.Stop();
 
 	removeListener();
 
@@ -319,67 +317,67 @@ void CustomAnimationPane::KeyInput( const KeyEvent& rKEvt )
 void CustomAnimationPane::addListener()
 {
 	Link aLink( LINK(this,CustomAnimationPane,EventMultiplexerListener) );
-    mrBase.GetEventMultiplexer()->AddEventListener (
-        aLink,
-        tools::EventMultiplexerEvent::EID_EDIT_VIEW_SELECTION
-        | tools::EventMultiplexerEvent::EID_CURRENT_PAGE
-        | tools::EventMultiplexerEvent::EID_MAIN_VIEW_REMOVED
-        | tools::EventMultiplexerEvent::EID_MAIN_VIEW_ADDED
-        | tools::EventMultiplexerEvent::EID_DISPOSING
-        | tools::EventMultiplexerEvent::EID_END_TEXT_EDIT);
+	mrBase.GetEventMultiplexer()->AddEventListener (
+		aLink,
+		tools::EventMultiplexerEvent::EID_EDIT_VIEW_SELECTION
+		| tools::EventMultiplexerEvent::EID_CURRENT_PAGE
+		| tools::EventMultiplexerEvent::EID_MAIN_VIEW_REMOVED
+		| tools::EventMultiplexerEvent::EID_MAIN_VIEW_ADDED
+		| tools::EventMultiplexerEvent::EID_DISPOSING
+		| tools::EventMultiplexerEvent::EID_END_TEXT_EDIT);
 }
 
 void CustomAnimationPane::removeListener()
 {
 	Link aLink( LINK(this,CustomAnimationPane,EventMultiplexerListener) );
-    mrBase.GetEventMultiplexer()->RemoveEventListener( aLink );
+	mrBase.GetEventMultiplexer()->RemoveEventListener( aLink );
 }
 
 IMPL_LINK(CustomAnimationPane,EventMultiplexerListener,
-    tools::EventMultiplexerEvent*,pEvent)
+	tools::EventMultiplexerEvent*,pEvent)
 {
-    switch (pEvent->meEventId)
-    {
-        case tools::EventMultiplexerEvent::EID_EDIT_VIEW_SELECTION:
-            onSelectionChanged();
-            break;
+	switch (pEvent->meEventId)
+	{
+		case tools::EventMultiplexerEvent::EID_EDIT_VIEW_SELECTION:
+			onSelectionChanged();
+			break;
 
-        case tools::EventMultiplexerEvent::EID_CURRENT_PAGE:
-            onChangeCurrentPage();
-            break;
+		case tools::EventMultiplexerEvent::EID_CURRENT_PAGE:
+			onChangeCurrentPage();
+			break;
 
-        case tools::EventMultiplexerEvent::EID_MAIN_VIEW_ADDED:
-            // At this moment the controller may not yet been set at model
-            // or ViewShellBase.  Take it from the view shell passed with
-            // the event.
-            if( bool(mrBase.GetMainViewShell()) )
-            {
+		case tools::EventMultiplexerEvent::EID_MAIN_VIEW_ADDED:
+			// At this moment the controller may not yet been set at model
+			// or ViewShellBase. Take it from the view shell passed with
+			// the event.
+			if( bool(mrBase.GetMainViewShell()) )
+			{
 				if( mrBase.GetMainViewShell()->GetShellType() == ViewShell::ST_IMPRESS )
 				{
 					mxView = Reference<XDrawView>::query(mrBase.GetDrawController());
-	                onSelectionChanged();
-		            onChangeCurrentPage();
+					onSelectionChanged();
+					onChangeCurrentPage();
 					break;
 				}
-            }
+			}
 		// fall through intended
-        case tools::EventMultiplexerEvent::EID_MAIN_VIEW_REMOVED:
-            mxView = 0;
+		case tools::EventMultiplexerEvent::EID_MAIN_VIEW_REMOVED:
+			mxView = 0;
 			mxCurrentPage = 0;
 			updateControls();
-            break;
+			break;
 
-        case tools::EventMultiplexerEvent::EID_DISPOSING:
-            mxView = Reference<XDrawView>();
-            onSelectionChanged();
-            onChangeCurrentPage();
-            break;
+		case tools::EventMultiplexerEvent::EID_DISPOSING:
+			mxView = Reference<XDrawView>();
+			onSelectionChanged();
+			onChangeCurrentPage();
+			break;
 		case tools::EventMultiplexerEvent::EID_END_TEXT_EDIT:
 			if( mpMainSequence.get() && pEvent->mpUserData )
 				mpCustomAnimationList->update( mpMainSequence );
 			break;
-    }
-    return 0;
+	}
+	return 0;
 }
 
 
@@ -408,17 +406,17 @@ void CustomAnimationPane::updateLayout()
 	const int nButtonExtraWidth = 4 * aOffset.X();
 
 	// the "add effect" button is placed top-left
-    Size aCtrlSize( mpPBAddEffect->GetSizePixel() );
-    aCtrlSize.setWidth( mpPBAddEffect->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
-    mpPBAddEffect->SetPosSizePixel( aCursor, aCtrlSize );
+	Size aCtrlSize( mpPBAddEffect->GetSizePixel() );
+	aCtrlSize.setWidth( mpPBAddEffect->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
+	mpPBAddEffect->SetPosSizePixel( aCursor, aCtrlSize );
 
 	aCursor.X() += aOffset.X() + aCtrlSize.Width();
 
 	// place the "change effect" button
 
 	// if the "change" button does not fit right of the "add effect", put it on the next line
-    aCtrlSize = mpPBChangeEffect->GetSizePixel();
-    aCtrlSize.setWidth( mpPBChangeEffect->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
+	aCtrlSize = mpPBChangeEffect->GetSizePixel();
+	aCtrlSize.setWidth( mpPBChangeEffect->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
 	if( ( aCursor.X() + aCtrlSize.Width() + aOffset.X() ) > aPaneSize.Width() )
 	{
 		aCursor.X() = aOffset.X();
@@ -431,8 +429,8 @@ void CustomAnimationPane::updateLayout()
 	// place the "remove effect" button
 
 	// if the "remove" button does not fit right of the "add effect", put it on the next line
-    aCtrlSize = mpPBRemoveEffect->GetSizePixel();
-    aCtrlSize.setWidth( mpPBRemoveEffect->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
+	aCtrlSize = mpPBRemoveEffect->GetSizePixel();
+	aCtrlSize.setWidth( mpPBRemoveEffect->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
 	if( ( aCursor.X() + aCtrlSize.Width() + aOffset.X() ) > aPaneSize.Width() )
 	{
 		aCursor.X() = aOffset.X();
@@ -459,9 +457,9 @@ void CustomAnimationPane::updateLayout()
 
 	Size aFixedTextSize( mpFTStart->CalcMinimumSize() );
 	long nWidth = aFixedTextSize.Width();
-    aFixedTextSize = mpFTProperty->CalcMinimumSize();
+	aFixedTextSize = mpFTProperty->CalcMinimumSize();
 	nWidth = std::max( nWidth, aFixedTextSize.Width() );
-    aFixedTextSize = mpFTSpeed->CalcMinimumSize();
+	aFixedTextSize = mpFTSpeed->CalcMinimumSize();
 	aFixedTextSize.Width() = std::max( nWidth, aFixedTextSize.Width() ) + aOffset.X();
 	mpFTStart->SetSizePixel(aFixedTextSize);
 	mpFTProperty->SetSizePixel(aFixedTextSize);
@@ -470,7 +468,7 @@ void CustomAnimationPane::updateLayout()
 	aSize = mpPBPropertyMore->GetSizePixel();
 
 	// place the "start" fixed text
-	
+
 	Point aFTPos( aCursor );
 	Point aLBPos( aCursor );
 	Size aListBoxSize( LogicToPixel( Size( 60, 12 ), MAP_APPFONT ) );
@@ -483,7 +481,7 @@ void CustomAnimationPane::updateLayout()
 		aLBPos.Y() += aFixedTextSize.Height() + aOffset.Y();
 
 		// height of fixed text + list box + something = 2 * list box
-		nDeltaY = aListBoxSize.Height() +  aFixedTextSize.Height() + 2*aOffset.Y();
+		nDeltaY = aListBoxSize.Height() + aFixedTextSize.Height() + 2*aOffset.Y();
 	}
 	else
 	{
@@ -521,27 +519,27 @@ void CustomAnimationPane::updateLayout()
 
 	Point aListPos( aFTPos );
 
-	// positionate the buttons on the bottom
+	// position the buttons on the bottom
 
 	// place the auto preview checkbox
 	aCursor = Point( aOffset.X(), aPaneSize.Height() - mpCBAutoPreview->GetSizePixel().Height() - aOffset.Y() );
 	mpCBAutoPreview->SetPosPixel( aCursor );
 
-	// place the seperator 2 fixed line
+	// place the separator 2 fixed line
 	aCursor.Y() -= /* aOffset.Y() + */ mpFLSeperator2->GetSizePixel().Height();
 	aSize = mpFLSeperator2->GetSizePixel();
 	aSize.Width() = aPaneSize.Width() - 2 * aOffset.X();
 	mpFLSeperator2->SetPosSizePixel( aCursor, aSize );
-	
+
 	// next, layout and place the play and slide show buttons
-    aCtrlSize = mpPBSlideShow->GetSizePixel();
-    aCtrlSize.setWidth( mpPBSlideShow->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
+	aCtrlSize = mpPBSlideShow->GetSizePixel();
+	aCtrlSize.setWidth( mpPBSlideShow->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
 
 	Size aPlaySize( mpPBPlay->GetSizePixel() );
-    aPlaySize.setWidth( mpPBPlay->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
+	aPlaySize.setWidth( mpPBPlay->CalcMinimumSize( aSize.Width() ).getWidth() + nButtonExtraWidth );
 
 	aCursor.Y() -= aCtrlSize.Height() /* + aOffset.Y() */;
-	
+
 	// do we need two lines for the buttons?
 	int aTestWidth = aCursor.X() + mpPBPlay->GetSizePixel().Width() + 2 * aOffset.X() + mpPBSlideShow->GetSizePixel().Width();
 	if( aTestWidth > aPaneSize.Width() )
@@ -557,7 +555,7 @@ void CustomAnimationPane::updateLayout()
 		mpPBSlideShow->SetPosSizePixel( aCursor, aCtrlSize );
 	}
 
-	// place the seperator 1 fixed line
+	// place the separator 1 fixed line
 	aCursor.X() = aOffset.X();
 	aCursor.Y() -= /* aOffset.Y() + */ mpFLSeperator1->GetSizePixel().Height();
 	aSize = mpFLSeperator1->GetSizePixel();
@@ -574,17 +572,17 @@ void CustomAnimationPane::updateLayout()
 	aCursor.X() -= aOffset.X() + aSize.Width();
 	mpPBMoveUp->SetPosPixel( aCursor );
 
-    // Place the change order label.
-    // Its width has to be calculated dynamically so that is can be
-    // displayed flush right without having too much space to the buttons
-    // with some languages or truncated text with others.
+	// Place the change order label.
+	// Its width has to be calculated dynamically so that is can be
+	// displayed flush right without having too much space to the buttons
+	// with some languages or truncated text with others.
 	mpFTChangeOrder->SetSizePixel(mpFTChangeOrder->CalcMinimumSize());
 
 	aCursor.X() -= aOffset.X() + mpFTChangeOrder->GetSizePixel().Width();
-    aCursor.Y() += (aSize.Height() - mpFTChangeOrder->GetSizePixel().Height()) >> 1;
-    mpFTChangeOrder->SetPosPixel( aCursor );
+	aCursor.Y() += (aSize.Height() - mpFTChangeOrder->GetSizePixel().Height()) >> 1;
+	mpFTChangeOrder->SetPosPixel( aCursor );
 
-	// positionate the custom animation list control
+	// position the custom animation list control
 	Size aCustomAnimationListSize( aPaneSize.Width() - aListPos.X() - aOffset.X(), aCursor.Y() - aListPos.Y() - 2 * aOffset.Y() );
 	mpCustomAnimationList->SetPosSizePixel( aListPos, aCustomAnimationListSize );
 }
@@ -765,7 +763,7 @@ void CustomAnimationPane::updateControls()
 		OUString aUIName( getPresets().getUINameForPresetId( pEffect->getPresetId() ) );
 
 		OUString aTemp( maStrModify );
-		
+
 		if( aUIName.getLength() )
 		{
 			aTemp += OUString( (sal_Unicode)' ' );
@@ -777,7 +775,7 @@ void CustomAnimationPane::updateControls()
 		if( pDescriptor.get() )
 		{
 			PropertySubControl* pSubControl = NULL;
-	
+
 			Any aValue;
 
 			UStringList aProperties( pDescriptor->getProperties() );
@@ -791,7 +789,7 @@ void CustomAnimationPane::updateControls()
 
 				aValue = getProperty1Value( mnPropertyType, pEffect );
 			}
-		
+
 			if( aValue.hasValue() )
 			{
 				pSubControl = mpLBProperty->getSubControl();
@@ -822,9 +820,7 @@ void CustomAnimationPane::updateControls()
 			mpPBPropertyMore->Enable( sal_False );
 		}
 
-		//
 		// ---
-		//
 		sal_uInt16 nPos = 0xffff;
 
 		sal_Int16 nNodeType = pEffect->getNodeType();
@@ -849,13 +845,13 @@ void CustomAnimationPane::updateControls()
 				nPos = 0;
 			else if( fDuration == 3.0 )
 				nPos = 1;
-			else if( fDuration == 2.0 ) 
+			else if( fDuration == 2.0 )
 				nPos = 2;
-			else if( fDuration == 1.0 ) 
+			else if( fDuration == 1.0 )
 				nPos = 3;
-			else if( fDuration == 0.5 ) 
+			else if( fDuration == 0.5 )
 				nPos = 4;
-			else 
+			else
 				nPos = 0xffff;
 
 			mpCBSpeed->SelectEntryPos( nPos );
@@ -900,14 +896,14 @@ void CustomAnimationPane::updateControls()
 		{
 			do
 			{
-				aIter++;	
+				aIter++;
 			}
 			while( (aIter != mpMainSequence->getEnd()) && !(mpCustomAnimationList->isExpanded((*aIter)) ) );
 
 			if( aIter == mpMainSequence->getEnd() )
 				bEnableDown = false;
 		}
-		
+
 		if( bEnableUp || bEnableDown )
 		{
 			MainSequenceRebuildGuard aGuard( mpMainSequence );
@@ -1081,8 +1077,8 @@ void CustomAnimationPane::onContextMenu( sal_uInt16 nSelectedPopupEntry )
 
 void CustomAnimationPane::DataChanged (const DataChangedEvent& rEvent)
 {
-    (void)rEvent;
-    UpdateLook();
+	(void)rEvent;
+	UpdateLook();
 }
 
 
@@ -1090,26 +1086,26 @@ void CustomAnimationPane::DataChanged (const DataChangedEvent& rEvent)
 
 void CustomAnimationPane::UpdateLook (void)
 {
-    const Wallpaper aBackground (
-        ::sfx2::sidebar::Theme::GetWallpaper(
-            ::sfx2::sidebar::Theme::Paint_PanelBackground));
-    SetBackground(aBackground);
-    if (mpFLModify != NULL)
-        mpFLModify->SetBackground(aBackground);
+	const Wallpaper aBackground (
+		::sfx2::sidebar::Theme::GetWallpaper(
+		::sfx2::sidebar::Theme::Paint_PanelBackground));
+	SetBackground(aBackground);
+	if (mpFLModify != NULL)
+		mpFLModify->SetBackground(aBackground);
 	if (mpFLEffect != NULL)
-        mpFLEffect->SetBackground(aBackground);
+		mpFLEffect->SetBackground(aBackground);
 	if (mpFTStart != NULL)
-        mpFTStart->SetBackground(aBackground);
-    if (mpFTProperty != NULL)
-        mpFTProperty->SetBackground(aBackground);
-    if (mpFTSpeed != NULL)
-        mpFTSpeed->SetBackground(aBackground);
+		mpFTStart->SetBackground(aBackground);
+	if (mpFTProperty != NULL)
+		mpFTProperty->SetBackground(aBackground);
+	if (mpFTSpeed != NULL)
+		mpFTSpeed->SetBackground(aBackground);
 	if (mpFTChangeOrder != NULL)
-        mpFTChangeOrder->SetBackground(aBackground);
+		mpFTChangeOrder->SetBackground(aBackground);
 	if (mpFLSeperator1 != NULL)
-        mpFLSeperator1->SetBackground(aBackground);
-    if (mpFLSeperator2 != NULL)
-        mpFLSeperator2->SetBackground(aBackground);
+		mpFLSeperator1->SetBackground(aBackground);
+	if (mpFLSeperator2 != NULL)
+		mpFLSeperator2->SetBackground(aBackground);
 }
 
 
@@ -1119,7 +1115,7 @@ void addValue( STLPropertySet* pSet, sal_Int32 nHandle, const Any& rValue )
 {
 	switch( pSet->getPropertyState( nHandle ) )
 	{
-	case STLPropertyState_AMBIGUOUS: 
+	case STLPropertyState_AMBIGUOUS:
 		// value is already ambiguous, do nothing
 		break;
 	case STLPropertyState_DIRECT:
@@ -1191,7 +1187,7 @@ Any CustomAnimationPane::getProperty1Value( sal_Int32 nType, CustomAnimationEffe
 	case nPropertyTypeCharHeight:
 		{
 			const OUString aAttributeName( RTL_CONSTASCII_USTRINGPARAM( "CharHeight" ) );
-            Any aValue( pEffect->getProperty( AnimationNodeType::SET, aAttributeName, VALUE_TO ) );
+			Any aValue( pEffect->getProperty( AnimationNodeType::SET, aAttributeName, VALUE_TO ) );
 			if( !aValue.hasValue() )
 				aValue = pEffect->getProperty( AnimationNodeType::ANIMATE, aAttributeName, VALUE_TO );
 			return aValue;
@@ -1337,8 +1333,8 @@ STLPropertySet* CustomAnimationPane::createSelectionSet()
 	// get options from selected effects
 	EffectSequence::iterator aIter( maListSelection.begin() );
 	const EffectSequence::iterator aEnd( maListSelection.end() );
-    const CustomAnimationPresets& rPresets (getPresets());
-    while( aIter != aEnd )
+	const CustomAnimationPresets& rPresets (getPresets());
+		while( aIter != aEnd )
 	{
 		CustomAnimationEffectPtr pEffect = (*aIter++);
 
@@ -1359,7 +1355,7 @@ STLPropertySet* CustomAnimationPane::createSelectionSet()
 		addValue( pSet, nHandleIterateType, makeAny( pEffect->getIterateType() ) );
 
 		// convert absolute time to percentage value
-        // This calculation is done in float to avoid some rounding artifacts.
+		// This calculation is done in float to avoid some rounding artifacts.
 		float fIterateInterval = (float)pEffect->getIterateInterval();
 		if( pEffect->getDuration() )
 			fIterateInterval = (float)(fIterateInterval / pEffect->getDuration() );
@@ -1376,7 +1372,7 @@ STLPropertySet* CustomAnimationPane::createSelectionSet()
 		addValue( pSet, nHandlePresetId, makeAny( pEffect->getPresetId() ) );
 
 		addValue( pSet, nHandleHasText, makeAny( (sal_Bool)pEffect->hasText() ) );
-		
+
 		addValue( pSet, nHandleHasVisibleShape, Any( hasVisibleShape( pEffect->getTargetShape() ) ) );
 
 		Any aSoundSource;
@@ -1409,7 +1405,7 @@ STLPropertySet* CustomAnimationPane::createSelectionSet()
 			addValue( pSet, nHandleTrigger, makeAny( pIS->getTriggerShape() ) );
 		}
 
-		// 
+		//
 
 		CustomAnimationPresetPtr pDescriptor = rPresets.getEffectDescriptor( pEffect->getPresetId() );
 		if( pDescriptor.get() )
@@ -1452,7 +1448,7 @@ void CustomAnimationPane::changeSelection( STLPropertySet* pResultSet, STLProper
 {
 	// change selected effect
 	bool bChanged = false;
-	
+
 	MainSequenceRebuildGuard aGuard( mpMainSequence );
 
 	EffectSequence::iterator aIter( maListSelection.begin() );
@@ -1741,24 +1737,24 @@ void CustomAnimationPane::changeSelection( STLPropertySet* pResultSet, STLProper
 
 			//#Bug 119988#
 			/************************************************************************/
-			/* 
+			/*
 			Note, the setAnimateForm means set the animation from TextGroup to Object's Shape
 			And on the UI in means "Animate attached shape" in "Effect Option" dialog
-			The setTextGrouping means set animation to Object's Text, 
+			The setTextGrouping means set animation to Object's Text,
 			the nTextGrouping is Text Animation Type
 			nTextGrouping = -1 is "As one Object", means no text animation.
 
 			The previous call order first do the setTextGrouping and then do the setAnimateForm,
-			that will cause such defect: in the setTextGrouping, the effect has been removed, 
+			that will cause such defect: in the setTextGrouping, the effect has been removed,
 			but in setAnimateForm still need this effect, then a NULL pointer of that effect will
 			be gotten, and cause crash.
 
 			[]bHasAnimateForm means the UI has changed, bAnimateForm is it value
 
 			So if create a new textgroup animation, the following animation will never be run!
-			Since the ¡°Animate attached shape¡± is default checked.
-			And the bHasAnimateForm default is false, and if user uncheck it the value bAnimateForm will be false, 
-			it same as the TextGroup¡¯s default value, also could not be run setAnimateForm.
+			Since the Â¡Â°Animate attached shapeÂ¡Â± is default checked.
+			And the bHasAnimateForm default is false, and if user uncheck it the value bAnimateForm will be false,
+			it same as the TextGroupÂ¡Â¯s default value, also could not be run setAnimateForm.
 			if( bHasAnimateForm )
 			{
 			if( pTextGroup->getAnimateForm() != bAnimateForm )
@@ -1771,12 +1767,12 @@ void CustomAnimationPane::changeSelection( STLPropertySet* pResultSet, STLProper
 			In setTextGrouping, there are three case:
 			1.	Create new text effects for empty TextGroup
 			2.	Remove all text effects of TextGroup (nTextGrouping == -1)
-			3.	Change all the text effects¡¯ start type
+			3.	Change all the text effectsÂ¡Â¯ start type
 
 			So here is the right logic:
-			If set the animation from text to shape and remove text animation, 
+			If set the animation from text to shape and remove text animation,
 			should do setAnimateForm first, then do setTextGrouping.
-			Other case,do setTextGrouping first, then do setAnimateForm. 
+			Other case,do setTextGrouping first, then do setAnimateForm.
 
 			*/
 			/************************************************************************/
@@ -1801,7 +1797,7 @@ void CustomAnimationPane::changeSelection( STLPropertySet* pResultSet, STLProper
 				pEffectSequence->setAnimateForm( pTextGroup, bAnimateForm );
 				bChanged = true;
 			}
-			
+
 			if( bHasTextGrouping )
 			{
 				if( pTextGroup.get() && pTextGroup->getTextGrouping() != nTextGrouping )
@@ -1813,11 +1809,11 @@ void CustomAnimationPane::changeSelection( STLPropertySet* pResultSet, STLProper
 
 			if (!bDoSetAnimateFormFirst && bNeedDoSetAnimateForm)
 			{
-                if( pTextGroup.get() )
-                {
-                    pEffectSequence->setAnimateForm( pTextGroup, bAnimateForm );
-                    bChanged = true;
-                }
+				if( pTextGroup.get() )
+				{
+					pEffectSequence->setAnimateForm( pTextGroup, bAnimateForm );
+					bChanged = true;
+				}
 			}
 
 			if( bHasTextGroupingAuto )
@@ -1893,7 +1889,7 @@ bool getTextSelection( const Any& rSelection, Reference< XShape >& xShape, std::
 	if( xSelectedText.is() ) try
 	{
 		xShape.set( xSelectedText->getText(), UNO_QUERY_THROW );
-	
+
 		Reference< XTextRangeCompare > xTextRangeCompare( xShape, UNO_QUERY_THROW );
 		Reference< XEnumerationAccess > xParaEnumAccess( xShape, UNO_QUERY_THROW );
 		Reference< XEnumeration > xParaEnum( xParaEnumAccess->createEnumeration(), UNO_QUERY_THROW );
@@ -1936,7 +1932,7 @@ bool getTextSelection( const Any& rSelection, Reference< XShape >& xShape, std::
 			else
 				xRange.clear();
 		}
-		
+
 		return true;
 	}
 	catch( Exception& e )
@@ -2126,7 +2122,7 @@ void CustomAnimationPane::createPath( PathKind eKind, std::vector< Any >& rTarge
 	if( nSID )
 	{
 		DrawViewShell* pViewShell = dynamic_cast< DrawViewShell* >(
-		    FrameworkHelper::Instance(mrBase)->GetViewShell(FrameworkHelper::msCenterPaneURL).get());
+			FrameworkHelper::Instance(mrBase)->GetViewShell(FrameworkHelper::msCenterPaneURL).get());
 
 		if( pViewShell )
 		{
@@ -2298,14 +2294,14 @@ void CustomAnimationPane::onChangeSpeed()
 	}
 }
 
-/// this link is called when the property box is modified by the user
+// this link is called when the property box is modified by the user
 IMPL_LINK( CustomAnimationPane, implPropertyHdl, Control*, EMPTYARG )
 {
 	onChangeProperty();
 	return 0;
 }
 
-/// this link is called when one of the controls is modified
+// this link is called when one of the controls is modified
 IMPL_LINK( CustomAnimationPane, implControlHdl, Control*, pControl )
 {
 	if( pControl == mpPBAddEffect )
@@ -2333,7 +2329,7 @@ IMPL_LINK( CustomAnimationPane, implControlHdl, Control*, pControl )
 	else if( pControl == mpCBAutoPreview )
 	{
 		SdOptions* pOptions = SD_MOD()->GetSdOptions(DOCUMENT_TYPE_IMPRESS);
-		pOptions->SetPreviewChangedEffects( mpCBAutoPreview->IsChecked() ? sal_True : sal_False );	
+		pOptions->SetPreviewChangedEffects( mpCBAutoPreview->IsChecked() ? sal_True : sal_False );
 	}
 
 	updateControls();
@@ -2343,14 +2339,14 @@ IMPL_LINK( CustomAnimationPane, implControlHdl, Control*, pControl )
 
 IMPL_LINK(CustomAnimationPane, lateInitCallback, Timer*, EMPTYARG )
 {
-    // Call getPresets() to initiate the (expensive) construction of the
-    // presets list.
-    getPresets();
+	// Call getPresets() to initiate the (expensive) construction of the
+	// presets list.
+	getPresets();
 
-    // update selection and control states
-    onSelectionChanged();
+	// update selection and control states
+	onSelectionChanged();
 
-    return 0;
+	return 0;
 }
 
 void CustomAnimationPane::moveSelection( bool bUp )
@@ -2386,7 +2382,7 @@ void CustomAnimationPane::moveSelection( bool bUp )
 				if( aInsertPos != rEffectSequence.begin() )
 				{
 					aInsertPos--;
-					while( (aInsertPos != rEffectSequence.begin()) && !mpCustomAnimationList->isExpanded(*aInsertPos)) 
+					while( (aInsertPos != rEffectSequence.begin()) && !mpCustomAnimationList->isExpanded(*aInsertPos))
 						aInsertPos--;
 
 					rEffectSequence.insert( aInsertPos, pEffect );
@@ -2416,7 +2412,7 @@ void CustomAnimationPane::moveSelection( bool bUp )
 				if( aInsertPos != rEffectSequence.end() )
 				{
 					aInsertPos++;
-					while( (aInsertPos != rEffectSequence.end()) && !mpCustomAnimationList->isExpanded(*aInsertPos)) 
+					while( (aInsertPos != rEffectSequence.end()) && !mpCustomAnimationList->isExpanded(*aInsertPos))
 						aInsertPos++;
 
 					rEffectSequence.insert( aInsertPos, pEffect );
@@ -2518,9 +2514,9 @@ void CustomAnimationPane::onSelect()
 
 const CustomAnimationPresets& CustomAnimationPane::getPresets (void)
 {
-    if (mpCustomAnimationPresets == NULL)
-        mpCustomAnimationPresets = &CustomAnimationPresets::getCustomAnimationPresets();
-    return *mpCustomAnimationPresets;
+	if (mpCustomAnimationPresets == NULL)
+		mpCustomAnimationPresets = &CustomAnimationPresets::getCustomAnimationPresets();
+	return *mpCustomAnimationPresets;
 }
 
 
@@ -2569,7 +2565,7 @@ void CustomAnimationPane::updatePathFromMotionPathTag( const rtl::Reference< Mot
 				if( pPage )
 					pManager->AddUndoAction( new UndoAnimationPath( mrBase.GetDocShell()->GetDoc(), pPage, pEffect->getNode() ) );
 			}
-			
+
 			pEffect->updatePathFromSdrPathObj( *pPathObj );
 		}
 	}
@@ -2586,8 +2582,8 @@ void CustomAnimationPane::updatePathFromMotionPathTag( const rtl::Reference< Mot
 	{
 		pWindow = new DialogListBox( pParent, WB_CLIPCHILDREN|WB_TABSTOP|WB_AUTOHSCROLL );
 		const Size aMinSize( pWindow->LogicToPixel( Size( 80, 256 ), MAP_APPFONT ) );
-        pWindow->SetSizePixel(aMinSize);
-        pWindow->SetBackground(Wallpaper(Color(COL_BLUE)));
+		pWindow->SetSizePixel(aMinSize);
+		pWindow->SetBackground(Wallpaper(Color(COL_BLUE)));
 
 		::Window* pPaneWindow = new CustomAnimationPane( pWindow, rBase, aMinSize );
 		pWindow->SetChildWindow( pPaneWindow, aMinSize );
@@ -2602,10 +2598,12 @@ void CustomAnimationPane::updatePathFromMotionPathTag( const rtl::Reference< Mot
 
 sal_Int32 getCustomAnimationPanelMinimumHeight (::Window* pDialog)
 {
-    if (pDialog != NULL)
+	if (pDialog != NULL)
 		return pDialog->LogicToPixel(Size( 80, 256 ), MAP_APPFONT).Height();
-    else
-        return 0;
+	else
+		return 0;
 }
 
 }
+
+/* vim: set noet sw=4 ts=4: */

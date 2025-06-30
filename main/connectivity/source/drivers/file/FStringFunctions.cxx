@@ -260,4 +260,3 @@ ORowSetValue OOp_Right::operate(const ORowSetValue& lhs,const ORowSetValue& rhs)
 	
 	return sRet.copy(sRet.getLength()-nCount,nCount);
 }
-

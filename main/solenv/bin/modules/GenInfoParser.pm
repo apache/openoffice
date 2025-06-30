@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -27,7 +27,7 @@
 #
 # usage: see below
 #
-#************************************************************************* 
+#*************************************************************************
 
 package GenInfoParser;
 
@@ -52,8 +52,8 @@ sub new {
 
 ##### methods #####
 
-sub load_list 
-{   
+sub load_list
+{
     # load list into memory
     my $self        = shift;
     my $list_file   = shift;
@@ -64,14 +64,14 @@ sub load_list
     return 0;
 }
 
-sub get_keys 
+sub get_keys
 {
 	# return a sorted list of keys, the sorting is case insensitive
     my $self        = shift;
     my $access_path = shift;
 
     my ($key, $value, $sub_data_ref) = $self->walk_accesspath($access_path);
-    
+
     my @keys = ();
 	if ( $sub_data_ref ) {
 		my @normalized_keys = keys %$sub_data_ref;
@@ -84,8 +84,8 @@ sub get_keys
     }
     return @keys;
 }
-    
-sub get_key 
+
+sub get_key
 {
     # returns the key corresponding to the access_path
     my $self        = shift;
@@ -96,7 +96,7 @@ sub get_key
     return $key;
 }
 
-sub get_value 
+sub get_value
 {
     # returns the value corresponding to the access_path
     my $self        = shift;
@@ -114,8 +114,8 @@ sub get_value
 
 ##### private methods #####
 
-sub parse_list 
-{   
+sub parse_list
+{
     # parse complete list
     my $self        = shift;
     my $list_file   = shift;
@@ -131,7 +131,7 @@ sub parse_list
     close(FILE);
 }
 
-sub parse_block 
+sub parse_block
 {
 	# parse each sub block and place it in a hash
 	# used data structure:
@@ -143,7 +143,7 @@ sub parse_block
     my $current_key = 0;
     my $line;
     while( $line = <$glob_ref> ) {
-        # this is the inner loop, any additional pattern matching will 
+        # this is the inner loop, any additional pattern matching will
         # have a notable affect on runtime behavior
         # clean up of $value is done in get_value()
         my ($key, $value) = split(' ', $line, 2);
@@ -171,11 +171,11 @@ sub parse_block
     }
 }
 
-sub walk_accesspath 
+sub walk_accesspath
 {
-	# returns the key, value and sub_data_ref which 
+	# returns the key, value and sub_data_ref which
     # corresponds to the access_path
-    
+
     my $self        = shift;
     my $access_path = shift;
 
@@ -198,7 +198,7 @@ sub walk_accesspath
 	    return ($$lookup_ref[0], $$lookup_ref[1], $sub_data_ref);
     }
     else {
-        # empty access path is only vlaid for getting top level key list
+        # empty access path is only valid for getting top level key list
         return ( undef, undef, $sub_data_ref );
     }
 }
@@ -234,10 +234,10 @@ GenInfoParser - Perl extension for parsing general info databases
     # get key/value pair
     $key = $a->get_key('src633/Comment/build');
     $value = $a->get_value('src633/Comment/build');
-  
+
 =head1 DESCRIPTION
 
-GenInfoParser is a perl extension to load and parse General Info Databses.
+GenInfoParser is a perl extension to load and parse General Info Databases.
 It uses a simple object oriented interface to retrieve the information stored
 in the database.
 
@@ -256,16 +256,16 @@ Loads and parses $database. Returns 1 on success and 0 on failure
 GenInfoParser::get_keys($path)
 
 Returns a sorted list of keys from the path $path. Returns an emtpy list if $path
-has no sublist. If there is no $path spcified, the method will return the
+has no sublist. If there is no $path specified, the method will return the
 primary key list. $path can be specified case insensitive. Sorting is done case
 insensitive.
 
 GenInfoParser::get_key($path)
 
 Returns the key to $path or 'undef' if an invalid path is given.
-Example: $path = 'src633/comment/build' will return 'Build' as key. 
+Example: $path = 'src633/comment/build' will return 'Build' as key.
 Note: $path can be specified case insensitive, but the returned key will
-have the exact case as in the database. 
+have the exact case as in the database.
 
 GenInfoParser::get_value($path)
 

@@ -655,7 +655,7 @@ Reference< ucb::XSimpleFileAccess > BackendImpl::getFileAccess( void )
 			throw RuntimeException(
 				::rtl::OUString::createFromAscii( 
 				"dp_registry::backend::help::BackendImpl::getFileAccess(), "
-				"could not instatiate SimpleFileAccess." ),
+				"could not instantiate SimpleFileAccess." ),
 				Reference< XInterface >() );
 		}
 	}
@@ -674,4 +674,3 @@ extern sdecl::ServiceDecl const serviceDecl(
 } // namespace help
 } // namespace backend
 } // namespace dp_registry
-

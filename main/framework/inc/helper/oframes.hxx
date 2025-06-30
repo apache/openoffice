@@ -77,7 +77,7 @@ namespace framework{
 					XElementAccess
 	@base			OWeakObject
 
-	@ATTENTION		Don't use this class as direct member - use it dynamicly. Do not derive from this class.
+	@ATTENTION		Don't use this class as direct member - use it dynamically. Do not derive from this class.
 					We hold a weakreference to our owner not to our superclass.
 
 	@devstatus		deprecated
@@ -170,7 +170,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 		/*-****************************************************************************************************//**
 			@short      get count of all current frames in container
 			@descr		This is the beginning of full index-access. With a count you can step over all items in container.
-						Next call shuoöd be getByIndex(). But these mechanism works only, if no lock in container is set!
+						Next call should be getByIndex(). But these mechanism works only, if no lock in container is set!
 
 			@seealso	class FrameContainer
 			@seealso	method getByIndex()
@@ -306,7 +306,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 	//-------------------------------------------------------------------------------------------------------------
 
 		/*-****************************************************************************************************//**
-			@short		debug-method to check incoming parameter of some other mehods of this class
+			@short		debug-method to check incoming parameter of some other methods of this class
 			@descr		The following methods are used to check parameters for other methods
 						of this class. The return value is used directly for an ASSERT(...).
 

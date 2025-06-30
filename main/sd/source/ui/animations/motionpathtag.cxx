@@ -1320,4 +1320,3 @@ void SAL_CALL MotionPathTag::release(  ) throw ()
 }
 
 } // end of namespace sd
-

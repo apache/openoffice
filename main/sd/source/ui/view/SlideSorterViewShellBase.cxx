@@ -90,4 +90,3 @@ SlideSorterViewShellBase::~SlideSorterViewShellBase (void)
 
 
 } // end of namespace sd
-

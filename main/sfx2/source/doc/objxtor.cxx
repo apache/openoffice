@@ -1170,4 +1170,3 @@ bool SfxObjectShell::GetProtectionHash( /*out*/ ::com::sun::star::uno::Sequence<
     DBG_ASSERT( 0, "function not implemented" );
     return false;
 }    
-

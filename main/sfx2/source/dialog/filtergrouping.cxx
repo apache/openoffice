@@ -50,7 +50,7 @@ namespace sfx2
 //........................................................................
 
 //#define DISABLE_GROUPING_AND_CLASSIFYING
-	// not using the functionallity herein, yet
+	// not using the functionality herein, yet
 
 	using namespace ::com::sun::star::uno;
 	using namespace ::com::sun::star::ui::dialogs;
@@ -1266,5 +1266,3 @@ namespace sfx2
 //........................................................................
 }	// namespace sfx2
 //........................................................................
-
-

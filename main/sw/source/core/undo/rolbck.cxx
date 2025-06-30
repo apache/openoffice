@@ -287,7 +287,7 @@ SwHistorySetTxtFld::SwHistorySetTxtFld( SwTxtFld* pTxtFld, sal_uLong nNodePos )
 
 String SwHistorySetTxtFld::GetDescription() const
 {
-    return m_pFld->GetField()->GetDescription();;
+    return m_pFld->GetField()->GetDescription();
 }
 
 SwHistorySetTxtFld::~SwHistorySetTxtFld()
@@ -1014,7 +1014,7 @@ void SwHistoryChangeCharFmt::SetInDoc(SwDoc * pDoc, bool )
 }
 // <- #i27615#
 
-/*  */
+/* */
 
 
 SwHistory::SwHistory( sal_uInt16 nInitSz, sal_uInt16 nGrowSz )
@@ -1551,4 +1551,3 @@ void SwRegHistory::_MakeSetWhichIds()
 		}
 	}
 }
-

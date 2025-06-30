@@ -103,4 +103,3 @@ void* ORealDynamicLoader::getApi() const
 }
 
 } // namespace salhelper
-

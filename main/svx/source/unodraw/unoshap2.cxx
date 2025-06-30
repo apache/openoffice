@@ -1724,7 +1724,8 @@ bool SvxGraphicObject::setPropertyValueImpl( const ::rtl::OUString& rName, const
                 if (mpModel) {
                     linkManager = mpModel->GetLinkManager();
                 }
-                if ((linkManager == NULL) || (linkManager->GetUserAllowsLinkUpdate(SFX_APP()->GetTopWindow()))) {
+                if ( ( linkManager == NULL ) ||
+                     ( !linkManager->urlIsVendor( aURL ) && linkManager->GetUserAllowsLinkUpdate( SFX_APP()->GetTopWindow() ) ) ) {
                     SFX_APP()->GetFilterMatcher().GuessFilter( aSfxMedium, &pSfxFilter, SFX_FILTER_IMPORT, SFX_FILTER_NOTINSTALLED | SFX_FILTER_EXECUTABLE );
                 }
 

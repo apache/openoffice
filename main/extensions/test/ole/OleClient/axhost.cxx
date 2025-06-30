@@ -47,6 +47,3 @@ LRESULT HostWin::OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, B
 
 	return 0;
 }
-
-
-

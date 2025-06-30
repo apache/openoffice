@@ -4247,4 +4247,3 @@ sal_Bool SfxMedium::SwitchDocumentToFile( ::rtl::OUString aURL )
 
     return bResult;
 }
-

@@ -35,7 +35,7 @@ public class HTMLResult
     // private String m_sNamePrefix;              // the HTML files used a suffix to build it's right name
     
     /**
-     * ls is the current line separator (carridge return)
+     * ls is the current line separator (carriage return)
      */
     private String ls;
 
@@ -93,13 +93,13 @@ public class HTMLResult
      */
     public void header(String _sTitle)
         {
-                writeln( "<HTML>");
-                writeln( "<HEAD>" );
-                writeln( "<TITLE>" + _sTitle + "</TITLE>");
-                writeln( "<LINK rel=\"stylesheet\" type=\"text/css\" href=\"/gfxcmp_ui/xmloff.css\" media=\"screen\" />");
-                writeln( "<LINK rel=\"stylesheet\" type=\"text/css\" href=\"/gfxcmp_ui/style.css\" media=\"screen\" />");
-                writeln( "</HEAD>");
-                writeln( "<BODY bgcolor=white>");
+                writeln( "<html>");
+                writeln( "<head>" );
+                writeln( "<title>" + _sTitle + "</title>");
+                writeln( "<link rel=\"stylesheet\" type=\"text/css\" href=\"/gfxcmp_ui/xmloff.css\" media=\"screen\" />");
+                writeln( "<link rel=\"stylesheet\" type=\"text/css\" href=\"/gfxcmp_ui/style.css\" media=\"screen\" />");
+                writeln( "</head>");
+                writeln( "<body bgcolor=white>");
                 flush();            
         }
     
@@ -110,18 +110,18 @@ public class HTMLResult
     
     public void indexSection(String _sOfficeInfo)
         {
-                writeln( "<H2>Results for " + _sOfficeInfo + "</H2>");
-                writeln( "<P>This result was created at: " + DateHelper.getDateTimeForHumanreadableLog());
-                writeln( "<P>Legend:<BR>");
-                writeln( stronghtml(FIRSTGFX_TABLETITLE) + " contains the output printed via 'ghostscript' as a jpeg picture.<BR>");
+                writeln( "<h2>Results for " + _sOfficeInfo + "</h2>");
+                writeln( "<p>This result was created at: " + DateHelper.getDateTimeForHumanreadableLog());
+                writeln( "<p>Legend:<br>");
+                writeln( stronghtml(FIRSTGFX_TABLETITLE) + " contains the output printed via 'ghostscript' as a jpeg picture.<br>");
 
-                writeln( "<TABLE class=\"infotable\">");
-                writeln( "<TR>");
+                writeln( "<table class=\"infotable\">");
+                writeln( "<tr>");
                 writeln( tableHeaderCell(TEST_TABLETITLE));
                 writeln( tableHeaderCell(""));
                 writeln( tableHeaderCell(VISUAL_STATUS_TABLETITLE));
                 writeln( tableHeaderCell(VISUAL_STATUS_MESSAGE_TABLETITLE));
-                writeln( "</TR>");
+                writeln( "</tr>");
                 flush();
         }
 /**
@@ -134,11 +134,11 @@ public class HTMLResult
     private String getHREF(String _sHREF, String _sPathInfo)
         {
             StringBuffer a = new StringBuffer();
-            a.append("<A HREF=\"");
+            a.append("<a href=\"");
             a.append(_sHREF);
             a.append("\">");
             a.append(_sPathInfo);
-            a.append("</A>");
+            a.append("</a>");
             return a.toString();
         }
 
@@ -150,9 +150,9 @@ public class HTMLResult
     private String tableDataCell(String _sValue)
         {
             StringBuffer a = new StringBuffer();
-            a.append("<TD>");
+            a.append("<td>");
             a.append(_sValue);
-            a.append("</TD>");
+            a.append("</td>");
             return a.toString();
         }
     
@@ -164,27 +164,27 @@ public class HTMLResult
     private String tableHeaderCell(String _sValue)
         {
             StringBuffer a = new StringBuffer();
-            a.append("<TH>");
+            a.append("<th>");
             a.append(_sValue);
-            a.append("</TH>");
+            a.append("</th>");
             return a.toString();
         }
     
     public void indexLine(String _sHTMLFile, String _sHTMLName, String _sStatusRunThrough, String _sStatusMessage)
         {
-                writeln( "<TR>");
+                writeln( "<tr>");
                 writeln(tableDataCell( getHREF(_sHTMLFile, _sHTMLName) ) );
                 writeln(tableDataCell( "" ) );                
                 writeln( tableDataCell(_sStatusRunThrough) );
                 writeln( tableDataCell(_sStatusMessage) );
-                writeln( "</TR>");
+                writeln( "</tr>");
                 flush();
         }
     
     public void close()
         {
-            writeln( "</TABLE>");
-            writeln( "</BODY></HTML>");
+            writeln( "</table>");
+            writeln( "</body></html>");
             try
             {
                 m_aOut.close();
@@ -198,9 +198,9 @@ public class HTMLResult
     private String stronghtml(String _sValue)
         {
             StringBuffer a = new StringBuffer();
-            a.append("<STRONG>");
+            a.append("<strong>");
             a.append(_sValue);
-            a.append("</STRONG>");
+            a.append("</strong>");
             return a.toString();
         }
     

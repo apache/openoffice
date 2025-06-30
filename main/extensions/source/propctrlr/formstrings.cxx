@@ -29,4 +29,3 @@
 #include "formstrings.hxx"
 #undef PCR_IMPLEMENT_STRINGS
 #endif
-

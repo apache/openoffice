@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sdext.hxx"
@@ -119,7 +117,7 @@ void ImpDeleteUnusedMasterPages( const Reference< XModel >& rxModel )
 	}
 }
 
-void ImpDeleteHiddenSlides(  const Reference< XModel >& rxModel )
+void ImpDeleteHiddenSlides( const Reference< XModel >& rxModel )
 {
 	try
 	{
@@ -231,7 +229,7 @@ void ImpCompressGraphic( Reference< XGraphicProvider >& rxGraphicProvider, const
 			Sequence< PropertyValue > aFilterData( 8 );
 			aFilterData[ 0 ].Name = TKGet( TK_ImageResolution );
 			aFilterData[ 0 ].Value <<= nImageResolution;
-			aFilterData[ 1 ].Name = TKGet( TK_ColorMode );		// todo: jpeg color mode (0->true color, 1->greyscale)
+			aFilterData[ 1 ].Name = TKGet( TK_ColorMode );		// todo: jpeg color mode (0->true color, 1->grayscale)
 			aFilterData[ 1 ].Value <<= (sal_Int32)0;
 			aFilterData[ 2 ].Name = TKGet( TK_Quality );		// quality that is used if we export to jpeg
 			aFilterData[ 2 ].Value <<= nJPEGQuality;
@@ -245,7 +243,7 @@ void ImpCompressGraphic( Reference< XGraphicProvider >& rxGraphicProvider, const
 			aFilterData[ 6 ].Value <<= bRemoveCropping;
 			aFilterData[ 7 ].Name = TKGet( TK_GraphicCropLogic );
 			aFilterData[ 7 ].Value <<= rGraphicCropLogic;
-			
+
 			Sequence< PropertyValue > aArgs( 3 );
 			aArgs[ 0 ].Name = TKGet( TK_MimeType );				// the GraphicProvider is using "MimeType", the GraphicExporter "MediaType"...
 			aArgs[ 0 ].Value <<= rDestMimeType;
@@ -290,7 +288,7 @@ Reference< XGraphic > ImpCompressGraphic( const Reference< XComponentContext >& 
 				{
 					awt::Size aDestSizePixel( aSourceSizePixel );
 					if ( !bAnimated )
-					{					
+					{
 						sal_Bool bNeedsOptimizing = sal_False;
 						sal_Bool bRemoveCropArea( rGraphicSettings.mbRemoveCropArea );
 
@@ -438,7 +436,7 @@ void CompressGraphics( ImpOptimizer& rOptimizer, const Reference< XComponentCont
 
 								if ( aGraphicUserIter->maGraphicCropLogic.Left || aGraphicUserIter->maGraphicCropLogic.Top
 								|| aGraphicUserIter->maGraphicCropLogic.Right || aGraphicUserIter->maGraphicCropLogic.Bottom )
-								{	// removing crop area was not possible or should't been applied
+								{	// removing crop area was not possible or shouldn't be applied
 									text::GraphicCrop aGraphicCropLogic( 0, 0, 0, 0 );
 									if ( !aGraphicSettings.mbRemoveCropArea )
 									{
@@ -480,7 +478,7 @@ void CompressGraphics( ImpOptimizer& rOptimizer, const Reference< XComponentCont
 						}
 					}
 				}
-			}			
+			}
 			aGraphicIter++;
 		}
 	}
@@ -495,7 +493,7 @@ void CompressGraphics( ImpOptimizer& rOptimizer, const Reference< XComponentCont
 
 ImpOptimizer::ImpOptimizer( const Reference< XComponentContext >& rxContext, const Reference< XModel >& rxModel ) :
 	mxContext						( rxContext ),
-    mxModel						( rxModel ),
+	mxModel						( rxModel ),
 	mbJPEGCompression			( sal_False ),
 	mnJPEGQuality				( 90 ),
 	mbRemoveCropArea			( sal_False ),
@@ -508,17 +506,17 @@ ImpOptimizer::ImpOptimizer( const Reference< XComponentContext >& rxContext, con
 	mbDeleteNotesPages			( sal_False ),
 	mbOpenNewDocument			( sal_True )
 {
-    OSL_TRACE("ImpOptimizer::ImpOptimizer");
-    Reference< XController > xController( mxModel->getCurrentController() );
-    if (xController.is() )
-        mxFrame.set( xController->getFrame() );
+	OSL_TRACE("ImpOptimizer::ImpOptimizer");
+	Reference< XController > xController( mxModel->getCurrentController() );
+	if (xController.is() )
+		mxFrame.set( xController->getFrame() );
 }
 
 // -----------------------------------------------------------------------------
 
 ImpOptimizer::~ImpOptimizer()
 {
-    OSL_TRACE("ImpOptimizer::~ImpOptimizer");
+	OSL_TRACE("ImpOptimizer::~ImpOptimizer");
 }
 
 // -----------------------------------------------------------------------------
@@ -527,10 +525,10 @@ void ImpOptimizer::DispatchStatus()
 {
 	if ( mxStatusListener.is() )
 	{
-        FeatureStateEvent aState;
-        aState.IsEnabled = sal_True;
-        aState.State <<= GetStatusSequence();
-        mxStatusListener->statusChanged( aState );
+		FeatureStateEvent aState;
+		aState.IsEnabled = sal_True;
+		aState.State <<= GetStatusSequence();
+		mxStatusListener->statusChanged( aState );
 	}
 }
 
@@ -600,7 +598,7 @@ static void DispatchURL( Reference< XComponentContext > xMSF, OUString sURL, Ref
 		xURLTransformer->parseStrict( aUrl );
 		Sequence< PropertyValue > aArgs;
 		Reference< XDispatchProvider > xDispatchProvider( xFrame, UNO_QUERY_THROW );
-		Reference< XDispatch > xDispatch = xDispatchProvider->queryDispatch( aUrl, OUString(), 0 );  // "_self"
+		Reference< XDispatch > xDispatch = xDispatchProvider->queryDispatch( aUrl, OUString(), 0 ); // "_self"
 		if ( xDispatch.is() )
 			xDispatch->dispatch( aUrl, aArgs );
 	}
@@ -613,12 +611,12 @@ static void DispatchURL( Reference< XComponentContext > xMSF, OUString sURL, Ref
 
 sal_Bool ImpOptimizer::Optimize( const Sequence< PropertyValue >& rArguments )
 {
-    OSL_TRACE("ImpOptimizer::Optimize");
+	OSL_TRACE("ImpOptimizer::Optimize");
 	sal_Bool bRet = sal_True;
 
 	if ( mxModel.is() )
 	{
-        Reference< XWindowPeer > xParentWindow;
+		Reference< XWindowPeer > xParentWindow;
 		sal_Int64 nEstimatedFileSize = 0;
 		SetStatusValue( TK_Progress, Any( static_cast< sal_Int32 >( 0 ) ) );
 		DispatchStatus();
@@ -669,7 +667,7 @@ sal_Bool ImpOptimizer::Optimize( const Sequence< PropertyValue >& rArguments )
 		Reference< XFrame > xSelf;
 		if ( maSaveAsURL.getLength() )
 		{
-	
+
 			SetStatusValue( TK_Progress, Any( static_cast< sal_Int32 >( 10 ) ) );
 			SetStatusValue( TK_Status, Any( ConfigurationAccess::getString( STR_DUPLICATING_PRESENTATION ) ) );
 			DispatchStatus();
@@ -717,7 +715,7 @@ sal_Bool ImpOptimizer::Optimize( const Sequence< PropertyValue >& rArguments )
 			mxModel->lockControllers();
 			bRet = ImplOptimize();
 			mxModel->unlockControllers();
-	
+
 			// clearing undo stack:
 			Reference< XFrame > xFrame( mxFrame );
 			if ( xFrame.is() )
@@ -739,13 +737,13 @@ sal_Bool ImpOptimizer::Optimize( const Sequence< PropertyValue >& rArguments )
 		if ( xParentWindow.is() )
 		{
 			InformationDialog aInformationDialog(
-                mxContext, xParentWindow,  maSaveAsURL, mbOpenNewDocument,
-                nSourceSize, nDestSize, nEstimatedFileSize );
+				mxContext, xParentWindow, maSaveAsURL, mbOpenNewDocument,
+				nSourceSize, nDestSize, nEstimatedFileSize );
 			aInformationDialog.execute();
 			SetStatusValue( TK_OpenNewDocument, Any( mbOpenNewDocument ) );
 			DispatchStatus();
 		}
-	
+
 		if ( maSaveAsURL.getLength() )
 		{
 			if ( mbOpenNewDocument && xSelf.is() )
@@ -771,3 +769,4 @@ sal_Bool ImpOptimizer::Optimize( const Sequence< PropertyValue >& rArguments )
 	return bRet;
 }
 
+/* vim: set noet sw=4 ts=4: */

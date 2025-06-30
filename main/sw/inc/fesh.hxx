@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef _FESH_HXX
 #define _FESH_HXX
@@ -42,7 +41,6 @@
 #define INCLUDED_VECTOR
 #endif
 
-
 class SwFlyFrm;
 class SwTabCols;
 class SvxBrushItem;
@@ -62,7 +60,7 @@ class SdrMarkList;
 
 namespace svx
 {
-    class ISdrObjectFilter;
+	class ISdrObjectFilter;
 }
 
 
@@ -137,9 +135,9 @@ enum CurRectType
 	RECT_OUTTABSECTION_PRT, 	//Rect der aktuellen PrtArea des Bereichs,
 								// aber ausserhalb der Tabelle
 	RECT_HEADERFOOTER,     		//Rect des aktuellen Headers/Footer
-    RECT_HEADERFOOTER_PRT,      //Rect der PrtArea des aktuellen Headers/Footers
+	RECT_HEADERFOOTER_PRT,      //Rect der PrtArea des aktuellen Headers/Footers
 
-    RECT_PAGES_AREA             //Rect covering the pages area
+	RECT_PAGES_AREA             //Rect covering the pages area
 };
 
 struct SwGetCurColNumPara
@@ -186,26 +184,26 @@ class SW_DLLPUBLIC SwFEShell : public SwEditShell
 	sal_Bool bCheckForOLEInCaption;
 
 	SW_DLLPRIVATE SwFlyFrm *FindFlyFrm() const;
-    SW_DLLPRIVATE SwFlyFrm *FindFlyFrm( const ::com::sun::star::uno::Reference < ::com::sun::star::embed::XEmbeddedObject >&  ) const;
+	SW_DLLPRIVATE SwFlyFrm *FindFlyFrm( const ::com::sun::star::uno::Reference < ::com::sun::star::embed::XEmbeddedObject >&  ) const;
 
 	//Actions fuer alle Shells beenden und ChangeLink rufen.
 	SW_DLLPRIVATE void EndAllActionAndCall();
 
 	SW_DLLPRIVATE void ScrollTo( const Point &rPt );
 
-    // OD 25.06.2003 #108784# - correct type of 1st parameter
-    SW_DLLPRIVATE void ChangeOpaque( SdrLayerID nLayerId );
+	// OD 25.06.2003 #108784# - correct type of 1st parameter
+	SW_DLLPRIVATE void ChangeOpaque( SdrLayerID nLayerId );
 
-    // Used for mouse operations on a table:
-    // Returns a cell frame that is 'close' to rPt.
-    SW_DLLPRIVATE const SwFrm *GetBox( const Point &rPt, bool* pbRow = 0, bool* pbCol = 0 ) const;
+	// Used for mouse operations on a table:
+	// Returns a cell frame that is 'close' to rPt.
+	SW_DLLPRIVATE const SwFrm *GetBox( const Point &rPt, bool* pbRow = 0, bool* pbCol = 0 ) const;
 
 	//0 == in keiner Spalte
 	SW_DLLPRIVATE sal_uInt16 _GetCurColNum( const SwFrm *pFrm,
 						  SwGetCurColNumPara* pPara ) const;
 
-    SW_DLLPRIVATE void _GetTabCols( SwTabCols &rToFill, const SwFrm *pBox ) const;
-    SW_DLLPRIVATE void _GetTabRows( SwTabCols &rToFill, const SwFrm *pBox ) const;
+	SW_DLLPRIVATE void _GetTabCols( SwTabCols &rToFill, const SwFrm *pBox ) const;
+	SW_DLLPRIVATE void _GetTabRows( SwTabCols &rToFill, const SwFrm *pBox ) const;
 
 	SW_DLLPRIVATE sal_Bool ImpEndCreate();
 
@@ -216,13 +214,13 @@ class SW_DLLPUBLIC SwFEShell : public SwEditShell
 								const Point& rInsPt, sal_Bool bIsMove,
 								sal_Bool bSelectInsert );
 
-    // get list of marked SdrObjects;
-    // helper method for GetSelFrmType, IsSelContainsControl
-    SW_DLLPRIVATE const SdrMarkList* _GetMarkList() const;
+	// get list of marked SdrObjects;
+	// helper method for GetSelFrmType, IsSelContainsControl
+	SW_DLLPRIVATE const SdrMarkList* _GetMarkList() const;
 
-    SW_DLLPRIVATE sal_Bool CheckHeadline( bool bRepeat ) const;
+	SW_DLLPRIVATE sal_Bool CheckHeadline( bool bRepeat ) const;
 
-    using SwEditShell::Copy;
+	using SwEditShell::Copy;
 
 public:
 
@@ -733,7 +731,7 @@ public:
                       const String& rCharacterStyle,
                       const sal_Bool bCpyBrd = sal_True );
 
-	//Das Lineal will auch noch etwas von uns wissen.
+	// Der Ruler will auch noch etwas von uns wissen.
 	sal_uInt16 GetCurColNum( SwGetCurColNumPara* pPara = 0 ) const;	//0 == in keiner Spalte
 	sal_uInt16 GetCurMouseColNum( const Point &rPt,
 							SwGetCurColNumPara* pPara = 0 ) const;
@@ -799,3 +797,5 @@ public:
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

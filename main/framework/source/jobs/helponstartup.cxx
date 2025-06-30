@@ -160,7 +160,7 @@ css::uno::Any SAL_CALL HelpOnStartup::execute(const css::uno::Sequence< css::bea
     // classify it's used application module.
     ::rtl::OUString sModule = its_getModuleIdFromEnv(lArguments);
 
-    // Attention: We are bound to events for openeing any document inside the office.
+    // Attention: We are bound to events for opening any document inside the office.
     // That includes e.g. the help module itself. But we have to do nothing then!
     if (!sModule.getLength())
         return css::uno::Any();

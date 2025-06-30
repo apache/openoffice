@@ -353,7 +353,7 @@ void SAL_CALL OContentHelper::initialize( const Sequence< Any >& _aArguments ) t
 {
 	const Any* pBegin = _aArguments.getConstArray();
 	const Any* pEnd = pBegin + _aArguments.getLength();
-	PropertyValue aValue;;
+	PropertyValue aValue;
 	for(;pBegin != pEnd;++pBegin)
 	{
 		*pBegin >>= aValue;
@@ -755,4 +755,3 @@ void OContentHelper::notifyDataSourceModified()
 //........................................................................
 }	// namespace dbaccess
 //........................................................................
-

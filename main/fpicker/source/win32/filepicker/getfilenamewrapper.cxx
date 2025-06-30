@@ -289,4 +289,3 @@ int CGetFileNameWrapper::commDlgExtendedError( )
 {
     return m_ExtendedDialogError;
 }
-

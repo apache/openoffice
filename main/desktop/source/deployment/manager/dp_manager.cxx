@@ -1697,4 +1697,3 @@ void PackageManagerImpl::CmdEnvWrapperImpl::pop() throw (RuntimeException)
 }
 
 } // namespace dp_manager
-

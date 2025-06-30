@@ -228,4 +228,3 @@ OUString getPathToSystemRegistry()
 }	
 
 }
-

@@ -1479,7 +1479,7 @@ ScUndoRepeatDB::ScUndoRepeatDB( ScDocShell* pNewDocShell, SCTAB nNewTab,
 	{
 		aOldQuery = *pOldQ;
 		aNewQuery = *pNewQ;
-		bQuerySize = sal_True;;
+		bQuerySize = sal_True;
 	}
 }
 
@@ -2181,9 +2181,3 @@ sal_Bool __EXPORT ScUndoChartData::CanRepeat(SfxRepeatTarget& /* rTarget */) con
 {
 	return sal_False;
 }
-
-
-
-
-
-

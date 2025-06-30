@@ -430,4 +430,3 @@ SvCommand::~SvCommand()
 	while( NULL != (pStr = aInFileList.Remove()) )
 		delete pStr;
 }
-

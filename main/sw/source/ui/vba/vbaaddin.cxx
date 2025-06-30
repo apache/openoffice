@@ -97,4 +97,3 @@ SwVbaAddin::getServiceNames()
 	}
 	return aServiceNames;
 }
-

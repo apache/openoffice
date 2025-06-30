@@ -1196,5 +1196,3 @@ void SwEditShell::ApplyViewOptions( const SwViewOption &rOpt )
 	ViewShell::ApplyViewOptions( rOpt );
 	SwEditShell::EndAction();
 }
-
-

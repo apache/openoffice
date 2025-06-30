@@ -258,4 +258,3 @@ void ShadowOverlayObject::SetPosition( const basegfx::B2DPoint& rPoint1,
 }
 
 } } // end of namespace sw::sidebarwindows
-

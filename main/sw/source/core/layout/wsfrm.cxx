@@ -3310,7 +3310,7 @@ static void InvaPercentFlys( SwFrm *pFrm, SwTwips nDiff )
                                         pFly->GetAnchorFrm()->GetUpper();
                     // ... and we have already more than 90% height and we
                     // not allow the text to go through...
-                    // then a notifycation could cause an endless loop, e.g.
+                    // then a notification could cause an endless loop, e.g.
                     // 100% height and no text wrap inside a cell of a table.
                     if( pFly->Frm().Height()*10 >
                         ( nDiff + pRel->Prt().Height() )*9 &&
@@ -3643,7 +3643,7 @@ void SwLayoutFrm::FormatWidthCols( const SwBorderAttrs &rAttrs,
 				{
 					bFoundLower = sal_True;
 					pLay = (SwLayoutFrm*)pLay->GetNext();
-					ASSERT( pLay->IsFtnContFrm(),"FtnContainer exspected" );
+					ASSERT( pLay->IsFtnContFrm(),"FtnContainer expected" );
 					nInnerHeight += pLay->InnerHeight();
                     nInnerHeight += (pLay->Frm().*fnRect->fnGetHeight)() -
                                     (pLay->Prt().*fnRect->fnGetHeight)();
@@ -4037,5 +4037,3 @@ void SwRootFrm::InvalidateAllObjPos()
         pPageFrm = static_cast<const SwPageFrm*>(pPageFrm->GetNext());
     }
 }
-
-

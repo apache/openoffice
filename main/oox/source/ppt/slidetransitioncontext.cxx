@@ -193,4 +193,3 @@ void SlideTransitionContext::endFastElement( sal_Int32 aElement ) throw (::com::
 
 
 } }
-

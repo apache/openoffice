@@ -111,6 +111,3 @@ void ScDrawShell::GetFormTextState(SfxItemSet& rSet)
 		rSet.Set(aViewAttr);
 	}
 }
-
-
-

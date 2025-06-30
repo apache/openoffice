@@ -233,5 +233,3 @@ SwVbaFont::getServiceNames()
         }
         return aServiceNames;
 }
-
-

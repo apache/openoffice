@@ -2628,5 +2628,3 @@ void SwRootFrm::CalcFrmRects(
     rCrsr.Remove( 0, rCrsr.Count() );
     rCrsr.Insert( &aRegion, 0 );
 }
-
-

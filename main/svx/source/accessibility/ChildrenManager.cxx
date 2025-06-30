@@ -186,4 +186,3 @@ void ChildrenManager::ViewForwarderChanged (ChangeType aChangeType,
 
 
 } // end of namespace accessibility
-

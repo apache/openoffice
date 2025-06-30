@@ -116,4 +116,3 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoBitmapTable_createInstance( Sdr
 {
 	return *new SvxUnoBitmapTable(pModel);
 }
-

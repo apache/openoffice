@@ -144,7 +144,7 @@ public:
 class SVX_DLLPUBLIC SdrMark : public sdr::ObjectUser
 { 
 protected:
-	SdrObject*											mpSelectedSdrObject;	// the seleceted object
+	SdrObject*											mpSelectedSdrObject;	// the selected object
 	SdrPageView*										mpPageView;
 	SdrUShortCont*										mpPoints;     // Markierte Punkte
 	SdrUShortCont*										mpLines;      // Markierte Linienabschnitte

@@ -393,4 +393,3 @@ void OTableDesignView::GetFocus()
 		GetEditorCtrl()->GrabFocus();
 }
 // -----------------------------------------------------------------------------
-

@@ -2380,5 +2380,3 @@ RscTop * RscTypCont::InitClassSfxSlotInfo( RscTop * pSuper )
 									RSC_SFX_SLOT_INFO_HELPTEXT );
 	return pClassSfxSlotInfo;
 }
-
-

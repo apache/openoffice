@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
@@ -31,7 +29,7 @@
 #if defined UNX
 #include <stdlib.h>
 #else
-#include <math.h>   // atof()
+#include <math.h> // atof()
 #endif
 #include <rtl/math.hxx>
 #include <vcl/svapp.hxx>
@@ -53,15 +51,15 @@ SbiScanner::SbiScanner( const ::rtl::OUString& rBuf, StarBASIC* p ) : aBuf( rBuf
 	nLine	 = 0;
 	nCol1	 = 0;
 	nCol2	 = 0;
-	nCol     = 0;
+	nCol	 = 0;
 	bError	 =
 	bAbort   =
 	bSpaces  =
 	bNumber  =
 	bSymbol  =
 	bUsedForHilite =
-	bCompatible = 
-	bVBASupportOn = 
+	bCompatible =
+	bVBASupportOn =
 	bPrevLineExtentsComment = sal_False;
 	bHash    =
 	bErrors  = sal_True;
@@ -84,11 +82,11 @@ void SbiScanner::UnlockColumn()
 
 void SbiScanner::GenError( SbError code )
 {
-    if( GetSbData()->bBlockCompilerError )
-    {
-        bAbort = sal_True;
-        return;
-    }
+	if( GetSbData()->bBlockCompilerError )
+	{
+		bAbort = sal_True;
+		return;
+	}
 	if( !bError && bErrors )
 	{
 		sal_Bool bRes = sal_True;
@@ -97,7 +95,7 @@ void SbiScanner::GenError( SbError code )
 		if( pBasic )
 		{
 			// Falls EXPECTED oder UNEXPECTED kommen sollte, bezieht es sich
-			// immer auf das letzte Token, also die Col1 uebernehmen
+			// immer auf das letzte Token, also die Col1 √ºbernehmen
 			sal_uInt16 nc = nColLock ? nSavedCol1 : nCol1;
 			switch( code )
 			{
@@ -118,7 +116,7 @@ void SbiScanner::GenError( SbError code )
 		nErrors++;
 }
 
-// Falls sofort ein Doppelpunkt folgt, wird sal_True zurueckgeliefert.
+// Falls sofort ein Doppelpunkt folgt, wird sal_True zur√ºckgeliefert.
 // Wird von SbiTokenizer::MayBeLabel() verwendet, um einen Label zu erkennen
 
 sal_Bool SbiScanner::DoesColonFollow()
@@ -144,7 +142,7 @@ static SbxDataType GetSuffixType( sal_Unicode c )
 	return SbxVARIANT;
 }
 
-// Einlesen des naechsten Symbols in die Variablen aSym, nVal und eType
+// Einlesen des n√§chsten Symbols in die Variablen aSym, nVal und eType
 // Returnwert ist sal_False bei EOF oder Fehlern
 #define BUF_SIZE 80
 
@@ -153,14 +151,14 @@ namespace {
 /** Returns true, if the passed character is a white space character. */
 inline bool lclIsWhitespace( sal_Unicode cChar )
 {
-    return (cChar == ' ') || (cChar == '\t') || (cChar == '\f');
+	return (cChar == ' ') || (cChar == '\t') || (cChar == '\f');
 }
 
 } // namespace
 
 sal_Bool SbiScanner::NextSym()
 {
-	// Fuer den EOLN-Fall merken
+	// F√ºr den EOLN-Fall merken
 	sal_uInt16 nOldLine = nLine;
 	sal_uInt16 nOldCol1 = nCol1;
 	sal_uInt16 nOldCol2 = nCol2;
@@ -183,20 +181,20 @@ sal_Bool SbiScanner::NextSym()
 		p2 += n;
 		while( ( n < nLen ) && ( *p2 != '\n' ) && ( *p2 != '\r' ) )
 			p2++, n++;
-        // #163944# ignore trailing whitespace
-        sal_Int32 nCopyEndPos = n;
-        while( (nBufPos < nCopyEndPos) && lclIsWhitespace( aBuf[ nCopyEndPos - 1 ] ) )
-            --nCopyEndPos;
+		// #163944# ignore trailing whitespace
+		sal_Int32 nCopyEndPos = n;
+		while( (nBufPos < nCopyEndPos) && lclIsWhitespace( aBuf[ nCopyEndPos - 1 ] ) )
+			--nCopyEndPos;
 		aLine = aBuf.copy( nBufPos, nCopyEndPos - nBufPos );
 		if( n < nLen )
-        {
-		    if( *p2 == '\r' && *( p2+1 ) == '\n' )
-			    n += 2;
-		    else
-			    n++;
-        }
+		{
+			if( *p2 == '\r' && *( p2+1 ) == '\n' )
+				n += 2;
+			else
+				n++;
+		}
 		nBufPos = n;
-        pLine = aLine.getStr();
+		pLine = aLine.getStr();
 		nOldLine = ++nLine;
 		nCol = nCol1 = nCol2 = nOldCol1 = nOldCol2 = 0;
 		nColLock = 0;
@@ -223,7 +221,7 @@ sal_Bool SbiScanner::NextSym()
 	}
 
 	// Symbol? Dann Zeichen kopieren.
-    if( BasicSimpleCharClass::isAlpha( *pLine, bCompatible ) || *pLine == '_' )
+	if( BasicSimpleCharClass::isAlpha( *pLine, bCompatible ) || *pLine == '_' )
 	{
 		// Wenn nach '_' nichts kommt, ist es ein Zeilenabschluss!
 		if(	*pLine == '_' && !*(pLine+1) )
@@ -258,7 +256,7 @@ sal_Bool SbiScanner::NextSym()
 			}
 		}
 
-		// Abschliessendes '_' durch Space ersetzen, wenn Zeilenende folgt
+		// Abschlie√üendes '_' durch Space ersetzen, wenn Zeilenende folgt
 		// (sonst falsche Zeilenfortsetzung)
 		if(	!bUsedForHilite && !*pLine && *(pLine-1) == '_' )
 		{
@@ -267,7 +265,7 @@ sal_Bool SbiScanner::NextSym()
 		}
 		// Typkennung?
 		// Das Ausrufezeichen bitte nicht testen, wenn
-		// danach noch ein Symbol anschliesst
+		// danach noch ein Symbol anschlie√üt
 		else if( *pLine != '!' || !BasicSimpleCharClass::isAlpha( pLine[ 1 ], bCompatible ) )
 		{
 			SbxDataType t = GetSuffixType( *pLine );
@@ -314,8 +312,8 @@ sal_Bool SbiScanner::NextSym()
 				{
 					pLine++; nCol++; continue;
 				}
-//              if( toupper( *pLine ) == 'D' )
-//                  eScanType = SbxDOUBLE;
+//				if( toupper( *pLine ) == 'D' )
+//					eScanType = SbxDOUBLE;
 				*p++ = 'E'; pLine++; nCol++;
 				// Vorzeichen hinter Exponent?
 				if( *pLine == '+' )
@@ -339,7 +337,7 @@ sal_Bool SbiScanner::NextSym()
 			GenError( SbERR_BAD_CHAR_IN_NUMBER );	}
 
 		// #57844 Lokalisierte Funktion benutzen
-	    nVal = rtl_math_uStringToDouble( buf, buf+(p-buf), '.', ',', NULL, NULL );
+		nVal = rtl_math_uStringToDouble( buf, buf+(p-buf), '.', ',', NULL, NULL );
 		// ALT: nVal = atof( buf );
 
 		ndig = ndig - comma;
@@ -353,12 +351,12 @@ sal_Bool SbiScanner::NextSym()
 		}
 		if( bBufOverflow )
 			GenError( SbERR_MATH_OVERFLOW );
-		// zu viele Zahlen fuer SINGLE?
-//      if (ndig > 15 || ncdig > 6)
-//          eScanType = SbxDOUBLE;
-//      else
-//      if( nVal > SbxMAXSNG || nVal < SbxMINSNG )
-//          eScanType = SbxDOUBLE;
+		// zu viele Zahlen f√ºr SINGLE?
+//		if (ndig > 15 || ncdig > 6)
+//			eScanType = SbxDOUBLE;
+//		else
+//		if( nVal > SbxMAXSNG || nVal < SbxMINSNG )
+//			eScanType = SbxDOUBLE;
 
 		// Typkennung?
 		SbxDataType t = GetSuffixType( *pLine );
@@ -380,7 +378,7 @@ sal_Bool SbiScanner::NextSym()
 		//char *cmp = "0123456789ABCDEF";
 		sal_Unicode base = 16;
 		sal_Unicode ndig = 8;
-		sal_Unicode xch  = *pLine++ & 0xFF; nCol++;
+		sal_Unicode xch = *pLine++ & 0xFF; nCol++;
 		switch( toupper( xch ) )
 		{
 			case 'O':
@@ -399,7 +397,7 @@ sal_Bool SbiScanner::NextSym()
 		while( BasicSimpleCharClass::isAlphaNumeric( *pLine & 0xFF, bCompatible ) )
 		{
 			sal_Unicode ch = sal::static_int_cast< sal_Unicode >(
-                toupper( *pLine & 0xFF ) );
+				toupper( *pLine & 0xFF ) );
 			pLine++; nCol++;
 			// AB 4.1.1996: Buffer voll, leer weiter scannen
 			if( (p-buf) == (BUF_SIZE-1) )
@@ -448,28 +446,28 @@ sal_Bool SbiScanner::NextSym()
 				if( *pLine != cSep || cSep == ']' ) break;
 			} else aError = cSep, GenError( SbERR_EXPECTED );
 		}
-		// If VBA Interop then doen't eat the [] chars	
+		// If VBA Interop then don't eat the [] chars
 		if ( cSep == ']' && bVBASupportOn )
-			aSym = aLine.copy( n - 1, nCol - n  + 1);
+			aSym = aLine.copy( n - 1, nCol - n + 1);
 		else
 			aSym = aLine.copy( n, nCol - n - 1 );
 		// Doppelte Stringbegrenzer raus
 		String s( cSep );
 		s += cSep;
 		sal_uInt16 nIdx = 0;
-		do 
+		do
 		{
 			nIdx = aSym.Search( s, nIdx );
 			if( nIdx == STRING_NOTFOUND )
 				break;
 			aSym.Erase( nIdx, 1 );
 			nIdx++;
-		} 
+		}
 		while( true );
 		if( cSep != ']' )
 			eScanType = ( cSep == '#' ) ? SbxDATE : SbxSTRING;
 	}
-	// ungueltige Zeichen:
+	// ung√ºltige Zeichen:
 	else if( ( *pLine & 0xFF ) >= 0x7F )
 	{
 		GenError( SbERR_SYNTAX ); pLine++; nCol++;
@@ -491,7 +489,7 @@ sal_Bool SbiScanner::NextSym()
 	nCol2 = nCol-1;
 
 PrevLineCommentLbl:
-	// Kommentar?
+	// Comment?
 	if( bPrevLineExtentsComment || (eScanType != SbxSTRING &&
 		( aSym.GetBuffer()[0] == '\'' || aSym.EqualsIgnoreCaseAscii( "REM" ) ) ) )
 	{
@@ -510,15 +508,15 @@ PrevLineCommentLbl:
 eoln:
 	if( nCol && *--pLine == '_' )
 	{
-		pLine = NULL; 
+		pLine = NULL;
 		bool bRes = NextSym();
 		if( bVBASupportOn && aSym.GetBuffer()[0] == '.' )
 		{
 			// object _
 			//    .Method
 			// ^^^  <- spaces is legal in MSO VBA
-			OSL_TRACE("*** resetting bSpaces***"); 
-			bSpaces = sal_False; 
+			OSL_TRACE("*** resetting bSpaces***");
+			bSpaces = sal_False;
 		}
 		return bRes;
 	}
@@ -541,68 +539,68 @@ LetterTable::LetterTable( void )
 	for( int i = 0 ; i < 256 ; ++i )
 		IsLetterTab[i] = false;
 
-	IsLetterTab[0xC0] = true;	// ¿ , CAPITAL LETTER A WITH GRAVE ACCENT
-	IsLetterTab[0xC1] = true;	// ¡ , CAPITAL LETTER A WITH ACUTE ACCENT
-	IsLetterTab[0xC2] = true;	// ¬ , CAPITAL LETTER A WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xC3] = true;	// √ , CAPITAL LETTER A WITH TILDE
-	IsLetterTab[0xC4] = true;	// ƒ , CAPITAL LETTER A WITH DIAERESIS
-	IsLetterTab[0xC5] = true;	// ≈ , CAPITAL LETTER A WITH RING ABOVE
-	IsLetterTab[0xC6] = true;	// ∆ , CAPITAL LIGATURE AE
-	IsLetterTab[0xC7] = true;	// « , CAPITAL LETTER C WITH CEDILLA
-	IsLetterTab[0xC8] = true;	// » , CAPITAL LETTER E WITH GRAVE ACCENT
-	IsLetterTab[0xC9] = true;	// … , CAPITAL LETTER E WITH ACUTE ACCENT
-	IsLetterTab[0xCA] = true;	//   , CAPITAL LETTER E WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xCB] = true;	// À , CAPITAL LETTER E WITH DIAERESIS
-	IsLetterTab[0xCC] = true;	// Ã , CAPITAL LETTER I WITH GRAVE ACCENT
-	IsLetterTab[0xCD] = true;	// Õ , CAPITAL LETTER I WITH ACUTE ACCENT
-	IsLetterTab[0xCE] = true;	// Œ , CAPITAL LETTER I WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xCF] = true;	// œ , CAPITAL LETTER I WITH DIAERESIS
-	IsLetterTab[0xD0] = true;	// – , CAPITAL LETTER ETH
-	IsLetterTab[0xD1] = true;	// — , CAPITAL LETTER N WITH TILDE
-	IsLetterTab[0xD2] = true;	// “ , CAPITAL LETTER O WITH GRAVE ACCENT
-	IsLetterTab[0xD3] = true;	// ” , CAPITAL LETTER O WITH ACUTE ACCENT
-	IsLetterTab[0xD4] = true;	// ‘ , CAPITAL LETTER O WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xD5] = true;	// ’ , CAPITAL LETTER O WITH TILDE
-	IsLetterTab[0xD6] = true;	// ÷ , CAPITAL LETTER O WITH DIAERESIS
-	IsLetterTab[0xD8] = true;	// ÿ , CAPITAL LETTER O WITH STROKE
-	IsLetterTab[0xD9] = true;	// Ÿ , CAPITAL LETTER U WITH GRAVE ACCENT
-	IsLetterTab[0xDA] = true;	// ⁄ , CAPITAL LETTER U WITH ACUTE ACCENT
-	IsLetterTab[0xDB] = true;	// € , CAPITAL LETTER U WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xDC] = true;	// ‹ , CAPITAL LETTER U WITH DIAERESIS
-	IsLetterTab[0xDD] = true;	// › , CAPITAL LETTER Y WITH ACUTE ACCENT
-	IsLetterTab[0xDE] = true;	// ﬁ , CAPITAL LETTER THORN
-	IsLetterTab[0xDF] = true;	// ﬂ , SMALL LETTER SHARP S
-	IsLetterTab[0xE0] = true;	// ‡ , SMALL LETTER A WITH GRAVE ACCENT
-	IsLetterTab[0xE1] = true;	// · , SMALL LETTER A WITH ACUTE ACCENT
-	IsLetterTab[0xE2] = true;	// ‚ , SMALL LETTER A WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xE3] = true;	// „ , SMALL LETTER A WITH TILDE
-	IsLetterTab[0xE4] = true;	// ‰ , SMALL LETTER A WITH DIAERESIS
-	IsLetterTab[0xE5] = true;	// Â , SMALL LETTER A WITH RING ABOVE
-	IsLetterTab[0xE6] = true;	// Ê , SMALL LIGATURE AE
-	IsLetterTab[0xE7] = true;	// Á , SMALL LETTER C WITH CEDILLA
-	IsLetterTab[0xE8] = true;	// Ë , SMALL LETTER E WITH GRAVE ACCENT
-	IsLetterTab[0xE9] = true;	// È , SMALL LETTER E WITH ACUTE ACCENT
-	IsLetterTab[0xEA] = true;	// Í , SMALL LETTER E WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xEB] = true;	// Î , SMALL LETTER E WITH DIAERESIS
-	IsLetterTab[0xEC] = true;	// Ï , SMALL LETTER I WITH GRAVE ACCENT
-	IsLetterTab[0xED] = true;	// Ì , SMALL LETTER I WITH ACUTE ACCENT
-	IsLetterTab[0xEE] = true;	// Ó , SMALL LETTER I WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xEF] = true;	// Ô , SMALL LETTER I WITH DIAERESIS
-	IsLetterTab[0xF0] = true;	//  , SMALL LETTER ETH
-	IsLetterTab[0xF1] = true;	// Ò , SMALL LETTER N WITH TILDE
-	IsLetterTab[0xF2] = true;	// Ú , SMALL LETTER O WITH GRAVE ACCENT
-	IsLetterTab[0xF3] = true;	// Û , SMALL LETTER O WITH ACUTE ACCENT
-	IsLetterTab[0xF4] = true;	// Ù , SMALL LETTER O WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xF5] = true;	// ı , SMALL LETTER O WITH TILDE
-	IsLetterTab[0xF6] = true;	// ˆ , SMALL LETTER O WITH DIAERESIS
-	IsLetterTab[0xF8] = true;	// ¯ , SMALL LETTER O WITH OBLIQUE BAR
-	IsLetterTab[0xF9] = true;	// ˘ , SMALL LETTER U WITH GRAVE ACCENT
-	IsLetterTab[0xFA] = true;	// ˙ , SMALL LETTER U WITH ACUTE ACCENT
-	IsLetterTab[0xFB] = true;	// ˚ , SMALL LETTER U WITH CIRCUMFLEX ACCENT
-	IsLetterTab[0xFC] = true;	// ¸ , SMALL LETTER U WITH DIAERESIS
-	IsLetterTab[0xFD] = true;	// ˝ , SMALL LETTER Y WITH ACUTE ACCENT
-	IsLetterTab[0xFE] = true;	// ˛ , SMALL LETTER THORN
-	IsLetterTab[0xFF] = true;	// ˇ , SMALL LETTER Y WITH DIAERESIS
+	IsLetterTab[0xC0] = true;	// √Ä , CAPITAL LETTER A WITH GRAVE ACCENT
+	IsLetterTab[0xC1] = true;	// √Å , CAPITAL LETTER A WITH ACUTE ACCENT
+	IsLetterTab[0xC2] = true;	// √Ç , CAPITAL LETTER A WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xC3] = true;	// √É , CAPITAL LETTER A WITH TILDE
+	IsLetterTab[0xC4] = true;	// √Ñ , CAPITAL LETTER A WITH DIAERESIS
+	IsLetterTab[0xC5] = true;	// √Ö , CAPITAL LETTER A WITH RING ABOVE
+	IsLetterTab[0xC6] = true;	// √Ü , CAPITAL LIGATURE AE
+	IsLetterTab[0xC7] = true;	// √á , CAPITAL LETTER C WITH CEDILLA
+	IsLetterTab[0xC8] = true;	// √à , CAPITAL LETTER E WITH GRAVE ACCENT
+	IsLetterTab[0xC9] = true;	// √â , CAPITAL LETTER E WITH ACUTE ACCENT
+	IsLetterTab[0xCA] = true;	// √ä , CAPITAL LETTER E WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xCB] = true;	// √ã , CAPITAL LETTER E WITH DIAERESIS
+	IsLetterTab[0xCC] = true;	// √å , CAPITAL LETTER I WITH GRAVE ACCENT
+	IsLetterTab[0xCD] = true;	// √ç , CAPITAL LETTER I WITH ACUTE ACCENT
+	IsLetterTab[0xCE] = true;	// √é , CAPITAL LETTER I WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xCF] = true;	// √è , CAPITAL LETTER I WITH DIAERESIS
+	IsLetterTab[0xD0] = true;	// √ê , CAPITAL LETTER ETH
+	IsLetterTab[0xD1] = true;	// √ë , CAPITAL LETTER N WITH TILDE
+	IsLetterTab[0xD2] = true;	// √í , CAPITAL LETTER O WITH GRAVE ACCENT
+	IsLetterTab[0xD3] = true;	// √ì , CAPITAL LETTER O WITH ACUTE ACCENT
+	IsLetterTab[0xD4] = true;	// √î , CAPITAL LETTER O WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xD5] = true;	// √ï , CAPITAL LETTER O WITH TILDE
+	IsLetterTab[0xD6] = true;	// √ñ , CAPITAL LETTER O WITH DIAERESIS
+	IsLetterTab[0xD8] = true;	// √ò , CAPITAL LETTER O WITH STROKE
+	IsLetterTab[0xD9] = true;	// √ô , CAPITAL LETTER U WITH GRAVE ACCENT
+	IsLetterTab[0xDA] = true;	// √ö , CAPITAL LETTER U WITH ACUTE ACCENT
+	IsLetterTab[0xDB] = true;	// √õ , CAPITAL LETTER U WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xDC] = true;	// √ú , CAPITAL LETTER U WITH DIAERESIS
+	IsLetterTab[0xDD] = true;	// √ù , CAPITAL LETTER Y WITH ACUTE ACCENT
+	IsLetterTab[0xDE] = true;	// √û , CAPITAL LETTER THORN
+	IsLetterTab[0xDF] = true;	// √ü , SMALL LETTER SHARP S
+	IsLetterTab[0xE0] = true;	// √† , SMALL LETTER A WITH GRAVE ACCENT
+	IsLetterTab[0xE1] = true;	// √° , SMALL LETTER A WITH ACUTE ACCENT
+	IsLetterTab[0xE2] = true;	// √¢ , SMALL LETTER A WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xE3] = true;	// √£ , SMALL LETTER A WITH TILDE
+	IsLetterTab[0xE4] = true;	// √§ , SMALL LETTER A WITH DIAERESIS
+	IsLetterTab[0xE5] = true;	// √• , SMALL LETTER A WITH RING ABOVE
+	IsLetterTab[0xE6] = true;	// √¶ , SMALL LIGATURE AE
+	IsLetterTab[0xE7] = true;	// √ß , SMALL LETTER C WITH CEDILLA
+	IsLetterTab[0xE8] = true;	// √® , SMALL LETTER E WITH GRAVE ACCENT
+	IsLetterTab[0xE9] = true;	// √© , SMALL LETTER E WITH ACUTE ACCENT
+	IsLetterTab[0xEA] = true;	// √™ , SMALL LETTER E WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xEB] = true;	// √´ , SMALL LETTER E WITH DIAERESIS
+	IsLetterTab[0xEC] = true;	// √¨ , SMALL LETTER I WITH GRAVE ACCENT
+	IsLetterTab[0xED] = true;	// √≠ , SMALL LETTER I WITH ACUTE ACCENT
+	IsLetterTab[0xEE] = true;	// √Æ , SMALL LETTER I WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xEF] = true;	// √Ø , SMALL LETTER I WITH DIAERESIS
+	IsLetterTab[0xF0] = true;	// √∞ , SMALL LETTER ETH
+	IsLetterTab[0xF1] = true;	// √± , SMALL LETTER N WITH TILDE
+	IsLetterTab[0xF2] = true;	// √≤ , SMALL LETTER O WITH GRAVE ACCENT
+	IsLetterTab[0xF3] = true;	// √≥ , SMALL LETTER O WITH ACUTE ACCENT
+	IsLetterTab[0xF4] = true;	// √¥ , SMALL LETTER O WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xF5] = true;	// √µ , SMALL LETTER O WITH TILDE
+	IsLetterTab[0xF6] = true;	// √∂ , SMALL LETTER O WITH DIAERESIS
+	IsLetterTab[0xF8] = true;	// √∏ , SMALL LETTER O WITH OBLIQUE BAR
+	IsLetterTab[0xF9] = true;	// √π , SMALL LETTER U WITH GRAVE ACCENT
+	IsLetterTab[0xFA] = true;	// √∫ , SMALL LETTER U WITH ACUTE ACCENT
+	IsLetterTab[0xFB] = true;	// √ª , SMALL LETTER U WITH CIRCUMFLEX ACCENT
+	IsLetterTab[0xFC] = true;	// √º , SMALL LETTER U WITH DIAERESIS
+	IsLetterTab[0xFD] = true;	// √Ω , SMALL LETTER Y WITH ACUTE ACCENT
+	IsLetterTab[0xFE] = true;	// √æ , SMALL LETTER THORN
+	IsLetterTab[0xFF] = true;	// √ø , SMALL LETTER Y WITH DIAERESIS
 }
 
 bool LetterTable::isLetterUnicode( sal_Unicode c )
@@ -614,3 +612,5 @@ bool LetterTable::isLetterUnicode( sal_Unicode c )
 	bool bRet = pCharClass->isLetter( aStr, 0 );
 	return bRet;
 }
+
+/* vim: set noet sw=4 ts=4: */

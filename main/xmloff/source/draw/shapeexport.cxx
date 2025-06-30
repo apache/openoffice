@@ -400,7 +400,7 @@ void XMLShapeExport::collectShapeAutoStyles(const uno::Reference< drawing::XShap
 				    // * control models are allowed to have an Align of "void"
 				    // * the Default for control model's Align is TextAlign_LEFT
 				    // * defaults for style properties are not written, but we need to write the "left",
-				    //   because we need to distiguish this "left" from the case where not align attribute
+				    //   because we need to distinguish this "left" from the case where not align attribute
 				    //   is present which means "void"
 				    // 102407 - 2002-11-01 - fs@openoffice.org
 				    static const ::rtl::OUString s_sParaAdjustPropertyName( RTL_CONSTASCII_USTRINGPARAM( "ParaAdjust" ) );

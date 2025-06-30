@@ -256,5 +256,3 @@ String TTProfiler::Pad( const String aS, xub_StrLen nLen )
 	else
 		return CUniString(" ").Append( aS );
 }
-
-

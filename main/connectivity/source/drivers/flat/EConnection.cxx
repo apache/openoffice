@@ -179,5 +179,3 @@ Reference< XPreparedStatement > SAL_CALL OFlatConnection::prepareCall( const ::r
     ::dbtools::throwFeatureNotImplementedException( "XConnection::prepareCall", *this );
 	return NULL;
 }
-
-

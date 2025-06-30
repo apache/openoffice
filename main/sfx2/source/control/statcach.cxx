@@ -569,5 +569,3 @@ void SfxStateCache::Dispatch( const SfxItemSet* pSet, sal_Bool bForceSynchron )
         pDispatch->Dispatch( aArgs, bForceSynchron );
 	}
 }
-
-

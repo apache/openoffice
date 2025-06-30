@@ -111,7 +111,7 @@ MSFilterTracer::MSFilterTracer( const ::rtl::OUString& rConfigPath, uno::Sequenc
 				utl::OOutputStreamWrapper* pHelper = new ::utl::OOutputStreamWrapper( *mpStream );
 				uno::Reference< io::XOutputStream > xOutputStream( pHelper );
 
-				// instanciating the DocumentHandler, then setting the OutputStream
+				// instantiating the DocumentHandler, then setting the OutputStream
 				mxHandler = uno::Reference< xml::sax::XDocumentHandler >( xMgr->createInstance( rtl::OUString::createFromAscii( "com.sun.star.xml.sax.Writer" ) ), uno::UNO_QUERY );
 				uno::Reference< io::XActiveDataSource > xDocSrc( mxHandler, uno::UNO_QUERY );
 				xDocSrc->setOutputStream( xOutputStream );
@@ -244,4 +244,3 @@ void MSFilterTracer::SetProperty( const ::rtl::OUString& rPropName, const uno::A
 {
 	mpCfgItem->WriteAny( rPropName, rProperty );
 }
-

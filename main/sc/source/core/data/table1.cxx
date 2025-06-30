@@ -1413,7 +1413,7 @@ void ScTable::ExtendPrintArea( OutputDevice* pDev,
     // First, mark those columns that we need to skip i.e. hidden and empty columns.
 
     ScFlatBoolColSegments aSkipCols;
-    aSkipCols.setInsertFromBack(true); // speed optimazation.
+    aSkipCols.setInsertFromBack(true); // speed optimization.
     aSkipCols.setFalse(0, MAXCOL);
     for (SCCOL i = 0; i <= MAXCOL; ++i)
     {
@@ -1736,4 +1736,3 @@ SCROW ScTable::VisibleDataCellIterator::getRow() const
 {
     return mnCurRow;
 }
-

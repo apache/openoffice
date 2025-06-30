@@ -54,5 +54,3 @@ double SAL_CALL funcB( double a)
 {
 	return a;
 }
-
-

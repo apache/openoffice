@@ -1271,4 +1271,3 @@ bool EventMultiplexer::notifySlideTransitionStarted()
 
 } // namespace internal
 } // namespace presentation
-

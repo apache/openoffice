@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="Layouter" script:language="StarBasic">Option Explicit
 
@@ -245,11 +245,11 @@ Dim s as Integer
 	End If
 	ToggleLayoutPage(True)
 WIZARDERROR:
-	If Err &lt;&gt; 0 Then	
+	If Err &lt;&gt; 0 Then
 		Msgbox(sMsgErrMsg, 16, GetProductName())
 		Resume LOCERROR
 		LOCERROR:
-		DlgFormDB.Dispose()	
+		DlgFormDB.Dispose()
 	End If
 End Sub
 
@@ -278,10 +278,10 @@ Dim oModel as Object
 	End If
 
 WIZARDERROR:
-	If Err &lt;&gt; 0 Then	
+	If Err &lt;&gt; 0 Then
 		Msgbox(sMsgErrMsg, 16, GetProductName())
 		Resume LOCERROR
-		LOCERROR:		
+		LOCERROR:
 	End If
 	ToggleLayoutPage(True)
 End Sub
@@ -316,10 +316,10 @@ Dim oModel as Object
 		End Select
 	End If
 WIZARDERROR:
-	If Err &lt;&gt; 0 Then	
+	If Err &lt;&gt; 0 Then
 		Msgbox(sMsgErrMsg, 16, GetProductName())
 		Resume LOCERROR
-		LOCERROR:		
+		LOCERROR:
 	End If
 End Sub
 
@@ -357,12 +357,12 @@ Sub ToggleLayoutPage(bDoEnable as Boolean, Optional FocusControlName as String)
 		ToggleBorderGroup(bDoEnable)
 	Else
 		If Not bDebug Then
-			oDocument.LockControllers()	
+			oDocument.LockControllers()
 		End If
 	End If
 	If Not IsMissing(FocusControlName) Then
 		DlgFormDB.GetControl(FocusControlName).SetFocus()
-	End If	
+	End If
 End Sub
 
 

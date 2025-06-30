@@ -68,5 +68,3 @@ SwNumFmtDlg::SwNumFmtDlg(Window* pParent, const SfxItemSet& rSet)
 SwNumFmtDlg::~SwNumFmtDlg()
 {
 }
-
-

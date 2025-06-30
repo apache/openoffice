@@ -28,4 +28,3 @@
 #define _UNICODE    1
 
 #include "setup.cpp"
-

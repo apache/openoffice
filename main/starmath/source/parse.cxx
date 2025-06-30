@@ -2524,5 +2524,3 @@ const SmErrorDesc  *SmParser::GetError(sal_uInt16 i)
                ? m_aErrDescList.Seek(i)
                : m_aErrDescList.Seek(m_nCurError);
 }
-
-

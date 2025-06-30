@@ -35,4 +35,3 @@ extern "C" void SAL_CALL secondfunc()
 {
    printf("second func called.\n");
 }
-

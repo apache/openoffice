@@ -160,4 +160,3 @@ CommandEnvironmentProxy::getProgressHandler()
 }
 
 } /* namespace ucbhelper */
-

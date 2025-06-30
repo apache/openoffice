@@ -1028,4 +1028,3 @@ IMPL_LINK( ScDocShell, RefreshDBDataHdl, ScRefreshTimer*, pRefreshTimer )
 
 	return bContinue != 0;
 }
-

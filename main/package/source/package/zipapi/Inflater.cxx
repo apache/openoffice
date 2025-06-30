@@ -155,4 +155,3 @@ sal_Int32 Inflater::doInflateBytes (Sequence < sal_Int8 >  &rBuffer, sal_Int32 n
 
 	return 0;
 }
-

@@ -115,4 +115,3 @@ sal_uLong SwFilterDetect::DetectFilter( SfxMedium& rMedium, const SfxFilter** pp
 
 	return nRet;
 }
-

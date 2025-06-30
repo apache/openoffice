@@ -24,7 +24,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #include <hintids.hxx>
 #include <vcl/font.hxx>
@@ -629,7 +628,7 @@ void WW8Export::OutListNamesTab()
     pFib->lcbSttbListNames = pTableStrm->Tell() - pFib->fcSttbListNames;
 }
 
-/*  */
+/* */
 
 // old WW95-Code
 
@@ -826,7 +825,7 @@ void MSWordExportBase::SubstituteBullet( String& rNumStr,
      else
      {
         /*
-        Well we don't have an available substition, and we're
+        Well we don't have an available substitution, and we're
         in our private area, so give up and show a standard
         bullet symbol
         */

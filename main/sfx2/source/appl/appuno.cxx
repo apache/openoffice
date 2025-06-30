@@ -2474,4 +2474,3 @@ com::sun::star::uno::Reference < ::com::sun::star::task::XInteractionRequest > N
 {
     return com::sun::star::uno::Reference < ::com::sun::star::task::XInteractionRequest >(pImp);
 }            
-

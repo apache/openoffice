@@ -168,7 +168,3 @@ sal_Bool OQueryTableConnectionData::Update()
 	return sal_True;
 }
 // -----------------------------------------------------------------------------
-
-
-
-

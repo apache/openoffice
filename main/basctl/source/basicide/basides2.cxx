@@ -344,4 +344,3 @@ void __EXPORT BasicIDEShell::ExecuteBasic( SfxRequest& rReq )
     if( nCount )
 	    CheckWindows();
 }
-

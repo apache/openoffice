@@ -210,4 +210,3 @@ uno::Reference<uno::XInterface> SAL_CALL SwXFilterOptions_createInstance(
 	SwDLL::Init();
     return (::cppu::OWeakObject*) new SwXFilterOptions;
 }
-

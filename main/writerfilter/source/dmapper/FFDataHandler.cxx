@@ -369,7 +369,7 @@ void FFDataHandler::lcl_sprm(Sprm & r_Sprm)
     case NS_ooxml::LN_CT_FFDDList_listEntry:
     /* WRITERFILTERSTATUS done: 100, planned: 2, spent: 0 */
         {
-            m_DropDownEntries.push_back(r_Sprm.getValue()->getString());;
+            m_DropDownEntries.push_back(r_Sprm.getValue()->getString());
         }
         break;
     case NS_ooxml::LN_CT_FFData_ddList:

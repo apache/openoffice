@@ -277,4 +277,3 @@ void SdrTableRtfExporter::WriteCell( sal_Int32 nCol, sal_Int32 nRow )
 }
 
 } }
-

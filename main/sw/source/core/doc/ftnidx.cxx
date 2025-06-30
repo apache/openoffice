@@ -328,7 +328,7 @@ SwTxtFtn* SwFtnIdxs::SeekEntry( const SwNodeIndex& rPos, sal_uInt16* pFndPos ) c
 	return 0;
 }
 
-/*  */
+/* */
 
 const SwSectionNode* SwUpdFtnEndNtAtEnd::FindSectNdWithEndAttr(
 				const SwTxtFtn& rTxtFtn )
@@ -389,7 +389,3 @@ sal_uInt16 SwUpdFtnEndNtAtEnd::ChkNumber( const SwTxtFtn& rTxtFtn )
 	const SwSectionNode* pSectNd = FindSectNdWithEndAttr( rTxtFtn );
 	return pSectNd ? GetNumber( rTxtFtn, *pSectNd ) : 0;
 }
-
-
-
-

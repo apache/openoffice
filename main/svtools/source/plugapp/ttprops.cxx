@@ -72,4 +72,3 @@ SvtResId TTProperties::GetSvtResId( sal_uInt16 nId )
 {
 	return SvtResId( nId );
 }
-

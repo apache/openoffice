@@ -42,7 +42,7 @@ published service DocumentIndex
 {
 	service  com::sun::star::text::BaseIndex;
 
-	/** determines if alphabetical separators are genererated.
+	/** determines if alphabetical separators are generated.
 	 */
 	[optional, property] boolean UseAlphabeticalSeparators;
 

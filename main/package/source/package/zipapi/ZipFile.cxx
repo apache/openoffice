@@ -1082,4 +1082,3 @@ void ZipFile::getSizeAndCRC( sal_Int32 nOffset, sal_Int32 nCompressedSize, sal_I
     *nSize = nRealSize;
     *nCRC = aCRC.getValue();
 }
-

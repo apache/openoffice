@@ -126,5 +126,3 @@ uno::Reference< beans::XPropertySet >  GetLinguPropertySet()
 {
 	return LinguMgr::GetLinguPropertySet();
 }
-
-

@@ -770,7 +770,7 @@ int SwTransferable::PrepareForCopy( sal_Bool bIsCut )
 {
 	int nRet = 1;
     if(!pWrtShell)
-        return 0;;
+        return 0;
 
 	String sGrfNm;
 	const int nSelection = pWrtShell->GetSelectionType();
@@ -3284,7 +3284,7 @@ void SwTransferable::DragFinished( sal_Int8 nAction )
 }
 
 
-/*  */
+/* */
 
 int SwTransferable::PrivatePaste( SwWrtShell& rShell )
 {
@@ -3695,7 +3695,7 @@ SwTransferable* SwTransferable::GetSwTransferable( const TransferableDataHelper&
     
 }
 
-/*  */
+/* */
 
 // -----------------------------------------------------------------------
 

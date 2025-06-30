@@ -99,4 +99,3 @@ bool operator==(const OConnectionLineData& lhs, const OConnectionLineData& rhs)
         && (lhs.m_aDestFieldName == rhs.m_aDestFieldName);
 }
 }
-

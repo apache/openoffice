@@ -100,7 +100,6 @@ void GraphicViewShellBase::Execute (SfxRequest& rRequest)
             rRequest.Cancel();
             break;
 
-        case SID_TASKPANE:
         case SID_SWITCH_SHELL:
         case SID_LEFT_PANE_DRAW:
         case SID_LEFT_PANE_IMPRESS:
@@ -124,4 +123,3 @@ void GraphicViewShellBase::InitializeFramework (void)
 
 
 } // end of namespace sd
-

@@ -1628,4 +1628,3 @@ uno::Reference<frame::XModel> SwXParagraph::GetModel()
     }
     return 0;
 }
-

@@ -24,7 +24,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #include <algorithm>
 #include <functional>
@@ -591,7 +590,7 @@ void MSWordStyles::OutputStylesTable()
     m_rExport.bStyDef = false;
 }
 
-/*  */
+/* */
 
 //---------------------------------------------------------------------------
 //          Fonts
@@ -875,7 +874,7 @@ void wwFontHelper::WriteFontTable( const RtfAttributeOutput& rAttrOutput )
         ::std::bind2nd( ::std::mem_fun( &wwFont::WriteRtf ), &rAttrOutput ) );
 }
 
-/*  */
+/* */
 
 WW8_WrPlc0::WW8_WrPlc0( sal_uLong nOffset )
     : aPos( 4, 4 ), nOfs( nOffset )
@@ -900,7 +899,7 @@ void WW8_WrPlc0::Write( SvStream& rStrm )
 
 //------------------------------------------------------------------------------
 
-/*  */
+/* */
 //------------------------------------------------------------------------------
 // class MSWordSections : Uebersetzung PageDescs in Sections
 //      behandelt auch Header und Footer
@@ -987,7 +986,7 @@ bool WW8_WrPlcSepx::HeaderFooterWritten()
 
 sal_uInt16 MSWordSections::CurrentNumberOfColumns( const SwDoc &rDoc ) const
 {
-    ASSERT( aSects.Count(), "no segement inserted yet" );
+    ASSERT( aSects.Count(), "no segment inserted yet" );
     if ( !aSects.Count() )
         return 1;
 
@@ -1899,7 +1898,7 @@ void MSWordExportBase::WriteHeaderFooterText( const SwFmt& rFmt, bool bHeader )
     }
 }
 
-/*  */
+/* */
 //------------------------------------------------------------------------------
 // class WW8_WrPlcFtnEdn : Sammeln der Fuss/Endnoten und Ausgeben der Texte
 // und Plcs am Ende des Docs.

@@ -219,4 +219,3 @@ IMPL_LINK(SwInsertGrfRulerDlg, DoubleClickHdl, ValueSet*, EMPTYARG)
 	EndDialog(RET_OK);
 	return 0;
 }
-

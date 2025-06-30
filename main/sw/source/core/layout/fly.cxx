@@ -188,9 +188,9 @@ SwFlyFrm::SwFlyFrm( SwFlyFrmFmt *pFmt, SwFrm* pSib, SwFrm *pAnch ) :
 
 void SwFlyFrm::Chain( SwFrm* _pAnch )
 {
-    // Connect to chain neighboors.
-    // No problem, if a neighboor doesn't exist - the construction of the
-    // neighboor will make the connection
+    // Connect to chain neighbors.
+    // No problem, if a neighbor doesn't exist - the construction of the
+    // neighbor will make the connection
     const SwFmtChain& rChain = GetFmt()->GetChain();
     if ( rChain.GetPrev() || rChain.GetNext() )
     {
@@ -2961,4 +2961,3 @@ sal_Bool SwFlyFrm::IsPageNumberingFrm()
 }
 
 //Bug 120881(End)
-

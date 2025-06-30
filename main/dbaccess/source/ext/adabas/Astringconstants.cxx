@@ -49,8 +49,3 @@ IMPLEMENT_CONSTASCII_USTRING(PROPERTY_SHUTDOWN, "ShutdownDatabase");
 //= SQLSTATE
 //============================================================
 IMPLEMENT_CONSTASCII_USTRING(SQLSTATE_GENERAL, "01000");
-
-
-
-
-

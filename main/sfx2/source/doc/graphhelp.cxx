@@ -522,4 +522,3 @@ sal_uInt16 GraphicHelper::getThumbnailReplacementIDByFactoryName_Impl( const ::r
 
 	return nResult;
 }
-

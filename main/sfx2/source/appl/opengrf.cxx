@@ -284,5 +284,3 @@ void SvxOpenGraphicDialog::SetControlHelpIds( const sal_Int16* _pControlId, cons
 {
 	mpImpl->aFileDlg.SetControlHelpIds( _pControlId, _pHelpId );
 }
-
-

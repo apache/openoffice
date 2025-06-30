@@ -323,4 +323,3 @@ sal_Int16 LicenseDialog::solar_execute()
 }
 
 } // namespace dp_gui
-

@@ -289,7 +289,7 @@ sal_Bool ORelationTableConnectionData::Update()
 			return sal_False;
 	}
 
-	// reassign the keys because the orientaion could be changed
+	// reassign the keys because the orientation could be changed
 	Reference<XPropertySet> xTableProp(getReferencingTable()->getTable());
 	Reference< XIndexAccess> xKeys ( getReferencingTable()->getKeys());
 	
@@ -459,4 +459,3 @@ xKey.clear();
 	return sal_True;
 }
 // -----------------------------------------------------------------------------
-

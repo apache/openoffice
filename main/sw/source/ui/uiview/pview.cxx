@@ -108,7 +108,7 @@ TYPEINIT1(SwPagePreView,SfxViewShell)
 
 #define MIN_PREVIEW_ZOOM 25
 #define MAX_PREVIEW_ZOOM 600
-/*  */
+/* */
 /* -----------------26.11.2002 10:41-----------------
  *
  * --------------------------------------------------*/
@@ -1268,7 +1268,7 @@ void SwPagePreView::Init(const SwViewOption * pPrefs)
 	aOpt.SetGridVisible( sal_False );
 
     GetViewShell()->ApplyViewOptions( aOpt );
-    GetViewShell()->ApplyAccessiblityOptions(SW_MOD()->GetAccessibilityOptions());
+    GetViewShell()->ApplyAccessibilityOptions(SW_MOD()->GetAccessibilityOptions());
 
     // OD 09.01.2003 #i6467# - adjust view shell option to the same as for print
     SwPrintData const aPrintOptions = *SW_MOD()->GetPrtOptions(false);
@@ -1512,7 +1512,7 @@ int SwPagePreView::ChgPage( int eMvMode, int bUpdateScrollbar )
 }
 
 
-/*  */
+/* */
 /*--------------------------------------------------------------------
 	Beschreibung:
  --------------------------------------------------------------------*/
@@ -1892,7 +1892,7 @@ void SwPagePreView::ScrollDocSzChg()
 }
 
 
-/*  */
+/* */
 /*--------------------------------------------------------------------
 	Beschreibung:
  --------------------------------------------------------------------*/
@@ -2163,9 +2163,9 @@ void SwPagePreViewWin::SwitchView()
 /* -----------------------------06.05.2002 13:18------------------------------
 
  ---------------------------------------------------------------------------*/
-void SwPagePreView::ApplyAccessiblityOptions(SvtAccessibilityOptions& rAccessibilityOptions)
+void SwPagePreView::ApplyAccessibilityOptions(SvtAccessibilityOptions& rAccessibilityOptions)
 {
-    GetViewShell()->ApplyAccessiblityOptions(rAccessibilityOptions);
+    GetViewShell()->ApplyAccessibilityOptions(rAccessibilityOptions);
 }
 /* -----------------------------2002/06/26 14:30------------------------------
 

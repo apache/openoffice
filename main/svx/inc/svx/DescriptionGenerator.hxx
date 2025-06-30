@@ -51,7 +51,7 @@ public:
     };
 
     /** Creates a new description generator with an empty description
-        string.  Usually you will want to call initialize next to specifiy
+        string.  Usually you will want to call initialize next to specify
         a general description of the shape.
         @param xShape
             The shape from which properties will be extracted by later calls

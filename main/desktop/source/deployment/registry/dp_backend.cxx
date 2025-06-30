@@ -819,4 +819,3 @@ Any Package::TypeInfo::getIcon( sal_Bool highContrast, sal_Bool smallIcon )
 
 }
 }
-

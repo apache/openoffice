@@ -319,4 +319,3 @@ uno::Sequence<rtl::OUString> SAL_CALL ScAddressConversionObj::getSupportedServic
                                                          : SC_SERVICENAME_CELLADDRESS );
     return aRet;
 }
-

@@ -51,7 +51,3 @@ void ScPaintLockData::AddRange( const ScRange& rRange, sal_uInt16 nP )
 	xRangeList->Join( rRange );
 	nParts |= nP;
 }
-
-
-
-

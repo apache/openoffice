@@ -2445,7 +2445,7 @@ sal_Bool SfxDocTemplate_Impl::Construct( )
     uno::Reference< XLocalizable > xLocalizable( xTemplates, UNO_QUERY );
 
     Sequence< Any > aCompareArg(1);
-    *(aCompareArg.getArray()) <<= xLocalizable->getLocale();;
+    *(aCompareArg.getArray()) <<= xLocalizable->getLocale();
     m_rCompareFactory = uno::Reference< XAnyCompareFactory >(
                     xFactory->createInstanceWithArguments( OUString::createFromAscii( "com.sun.star.ucb.AnyCompareFactory" ),
                                                            aCompareArg ),
@@ -2732,4 +2732,3 @@ sal_Bool getTextProperty_Impl( Content& rContent,
 
     return bGotProperty;
 }
-

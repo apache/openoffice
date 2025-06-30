@@ -179,7 +179,7 @@ SV_IMPL_PTRARR( _DB_Columns, _DB_ColumnPtr )
 
 SV_IMPL_OP_PTRARR_SORT( SwInsDBColumns, SwInsDBColumnPtr )
 
-/*  */
+/* */
 
 #define DBCOLUMN_CONFIG_VERSION1 	1
 #define DBCOLUMN_CONFIG_VERSION 	DBCOLUMN_CONFIG_VERSION1
@@ -206,7 +206,7 @@ private:
 	_DB_ColumnConfigData& operator =( const _DB_ColumnConfigData& );
 };
 
-/*  */
+/* */
 
 int SwInsDBColumn::operator<( const SwInsDBColumn& rCmp ) const
 {
@@ -1530,7 +1530,7 @@ void SwInsertDBColAutoPilot::SetTabSet()
     rSh.MoveTable( GetfnTableCurr(), GetfnTableStart() );
 }
 
-/*  */
+/* */
 
 
 _DB_ColumnConfigData::~_DB_ColumnConfigData() {}
@@ -1938,4 +1938,3 @@ void SwInsertDBColAutoPilot::Load()
 		}
 	}
 }
-

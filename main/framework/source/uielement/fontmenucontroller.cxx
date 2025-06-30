@@ -255,4 +255,3 @@ void SAL_CALL FontMenuController::updatePopupMenu() throw ( ::com::sun::star::un
 }
 
 }
-

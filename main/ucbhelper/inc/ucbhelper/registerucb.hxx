@@ -68,15 +68,15 @@ typedef std::vector< ContentProviderRegistrationInfo >
  */
 struct ContentProviderData
 {
-    /** The UNO service name to use to instanciate the content provider.
+    /** The UNO service name to use to instantiate the content provider.
 	 */
 	rtl::OUString ServiceName;
 
-    /** The URL template to use to instanciate the content provider.
+    /** The URL template to use to instantiate the content provider.
 	 */
     rtl::OUString URLTemplate;
 
-    /** The arguments to use to instanciate the content provider.
+    /** The arguments to use to instantiate the content provider.
 	 */
     rtl::OUString Arguments;
 

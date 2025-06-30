@@ -1442,4 +1442,3 @@ const SfxItemPropertySimpleEntry* SdStyleSheet::getPropertyMapEntry( const OUStr
 {
 	return GetStylePropertySet().getPropertyMapEntry(rPropertyName);
 }
-

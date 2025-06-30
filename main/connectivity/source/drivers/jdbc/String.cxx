@@ -55,4 +55,3 @@ java_lang_String::operator ::rtl::OUString()
 		return ::rtl::OUString();
 	return JavaString2String(t.pEnv,(jstring)object);
 }
-

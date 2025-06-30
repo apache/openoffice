@@ -309,4 +309,3 @@ void ScAccessiblePreviewCell::CreateTextHelper()
         mpTextHelper->SetAdditionalChildStates( aChildStates );
 	}
 }
-

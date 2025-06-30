@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
@@ -90,7 +88,7 @@ bool FontSubsetInfo::CreateFontSubset(
 
 	// TODO: move the glyphid/encid/notdef reshuffling from the callers to here
 
-	// dispatch to underlying subsetters 
+	// dispatch to underlying subsetters
 	bool bOK = false;
 
 	// TODO: better match available input-type to possible subset-types
@@ -108,9 +106,9 @@ bool FontSubsetInfo::CreateFontSubset(
 	case ANY_TYPE1:
 		bOK = CreateFontSubsetFromType1( pOutGlyphWidths);
 		break;
-		// fall trough
+		// fall through
 	case NO_FONT:
-		// fall trough
+		// fall through
 	default:
 		DBG_ERROR( "unhandled type in CreateFontSubset()");
 		break;
@@ -153,7 +151,7 @@ bool FontSubsetInfo::CreateFontSubsetFromSfnt( sal_Int32* pOutGlyphWidths )
 	{
 		nSFTErr = CreateT3FromTTGlyphs( mpSftTTFont, mpOutFile, mpReqFontName,
 			aShortGlyphIds, pEncArray, mnReqGlyphCount,
-            		0 /* 0 = horizontal, 1 = vertical */ );
+					0 /* 0 = horizontal, 1 = vertical */ );
 	}
 	else if( (mnReqFontTypeMask & SFNT_TTF) != 0 )
 	{
@@ -178,5 +176,4 @@ bool FontSubsetInfo::CreateFontSubsetFromType1( sal_Int32* pOutGlyphWidths)
 	return false;
 }
 
-// ====================================================================
-
+/* vim: set noet sw=4 ts=4: */

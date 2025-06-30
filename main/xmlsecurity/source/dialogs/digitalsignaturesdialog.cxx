@@ -839,4 +839,3 @@ SignatureStreamHelper DigitalSignaturesDialog::ImplOpenSignatureStream(
 
 	return aHelper;
 }
-

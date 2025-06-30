@@ -213,4 +213,3 @@ void MyWin::MouseButtonDown( const MouseEvent& rMEvt )
 	  delete pDialog;
 	}
 }
-

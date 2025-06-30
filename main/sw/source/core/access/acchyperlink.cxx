@@ -265,4 +265,3 @@ void SwAccessibleHyperlink::Invalidate()
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	xPara = 0;
 }
-

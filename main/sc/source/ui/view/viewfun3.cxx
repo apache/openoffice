@@ -1865,7 +1865,3 @@ sal_Bool ScViewFunc::LinkBlock( const ScRange& rSource, const ScAddress& rDestPo
 
 	return sal_True;
 }
-
-
-
-

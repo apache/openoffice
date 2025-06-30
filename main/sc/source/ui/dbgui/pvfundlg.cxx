@@ -785,4 +785,3 @@ IMPL_LINK( ScDPShowDetailDlg, DblClickHdl, ListBox*, pLBox )
 }
 
 // ============================================================================
-

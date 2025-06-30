@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -48,7 +48,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.sdbc.XRow
 '*************************************************************************
 On Error Goto ErrHndl
@@ -60,7 +60,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "boolean"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getBoolean(i)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -72,7 +72,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "byte"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getByte(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -84,7 +84,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "short"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getShort(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -96,7 +96,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "int"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getInt(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -108,7 +108,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "long"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getLong(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -120,7 +120,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "float"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getFloat(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -132,7 +132,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "double"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getDouble(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -144,7 +144,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "string"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getString(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -156,7 +156,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "bytes"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getBytes(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -168,7 +168,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "date"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getDate(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -180,7 +180,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "time"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getTime(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -192,7 +192,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "timestamp"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getTimestamp(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -204,7 +204,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "binarystream"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getBinaryStream(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -216,7 +216,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "characterstream"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getCharacterStream(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -228,7 +228,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "object"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getObject(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -240,7 +240,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "ref"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getRef(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -252,7 +252,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "blob"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getBlob(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -264,7 +264,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "clob"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getClob(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -276,7 +276,7 @@ On Error Goto ErrHndl
     bOK = true
     colType = "array"
     i = findColumn(colType)
-    if i >= 0 then 
+    if i >= 0 then
         oObj.getArray(i + 1)
     else
         Out.Log("!!! Column of type '" + colType + "' is not found. No test performed.")
@@ -299,14 +299,14 @@ End Sub
 
 Function findColumn(cType As String) As Integer
     Dim i As Integer
-    
+
     for i = lbound(rowTypes()) to ubound(rowTypes())
         if rowTypes(i) = cType then
             findColumn() = rowTypesCol(i)
             exit function
-        end if    
+        end if
     next i
-    
-    findColumn() = -1 
+
+    findColumn() = -1
 End function
 </script:module>

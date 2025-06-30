@@ -777,7 +777,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc,)
             xContext = defaultBootstrap_InitialComponentContext();
         }
         
-		//#### accept, instanciate, etc. ###########################################################
+		//#### accept, instantiate, etc. ###########################################################
 
 		if (aUnoUrl.getLength()) // accepting connections
 		{
@@ -881,6 +881,3 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc,)
 	out( "\n" );
 	return nRet;
 }
-
-
-

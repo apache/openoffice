@@ -787,7 +787,7 @@ sal_Bool SwDoc::GotoOutline( SwPosition& rPos, const String& rName ) const
 	return sal_False;
 }
 
-/*  */
+/* */
 
 // --- Nummerierung -----------------------------------------
 

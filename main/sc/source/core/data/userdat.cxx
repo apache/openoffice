@@ -120,4 +120,3 @@ SdrObjUserData* ScMacroInfo::Clone( SdrObject* /*pObj*/ ) const
 {
    return new ScMacroInfo( *this );
 }
-

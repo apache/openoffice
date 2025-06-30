@@ -1747,6 +1747,3 @@ IMPL_LINK( SdDesignNameDlg, ModifyHdl, Edit*, EMPTYARG )
 
 	return 0;
 }
-
-
-

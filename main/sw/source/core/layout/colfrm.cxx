@@ -474,8 +474,3 @@ void SwLayoutFrm::AdjustColumns( const SwFmtCol *pAttr, sal_Bool bAdjustAttribut
         }
     }
 }
-
-
-
-
-

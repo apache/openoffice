@@ -337,5 +337,3 @@ extern sdecl::ServiceDecl const serviceDecl(
 } // namespace component
 } // namespace backend
 } // namespace dp_registry
-
-

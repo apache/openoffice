@@ -145,6 +145,3 @@ int DiaTimeItem::operator==( const SfxPoolItem& rItem ) const
 {
 	return( ( (DiaTimeItem&) rItem ).GetValue() == GetValue() );
 }
-
-
-

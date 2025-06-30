@@ -124,4 +124,3 @@ Image TkResMgr::getImageFromURL( const ::rtl::OUString& i_rImageURL )
     }
     return Image();
 }
-

@@ -28,6 +28,7 @@
 #include <svgio/svgreader/svgdocumenthandler.hxx>
 #include <com/sun/star/xml/sax/XParser.hpp>
 #include <com/sun/star/xml/sax/InputSource.hpp>
+#include <com/sun/star/uno/XComponentContext.hpp>
 #include <comphelper/processfactory.hxx>
 #include <drawinglayer/geometry/viewinformation2d.hxx>
 
@@ -85,7 +86,7 @@ namespace svgio
             return rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "svgio::svgreader::XSvgParser" ) );
         }
 
-        uno::Reference< uno::XInterface > SAL_CALL XSvgParser_createInstance(const uno::Reference< lang::XMultiServiceFactory >&)
+        uno::Reference< uno::XInterface > SAL_CALL XSvgParser_createInstance(const uno::Reference< uno::XComponentContext >&)
         {
             return static_cast< ::cppu::OWeakObject* >(new XSvgParser);
         }

@@ -202,4 +202,3 @@ UUIInteractionHelper::handleCookiesRequest(
     }
     return false;
 }
-

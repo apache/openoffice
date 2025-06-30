@@ -356,4 +356,3 @@ String SvtDefaultOptions::GetDefaultPath( sal_uInt16 nId ) const
 {
 	return pImp->GetDefaultPath( nId );
 }
-

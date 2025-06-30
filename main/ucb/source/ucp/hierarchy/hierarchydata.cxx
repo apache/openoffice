@@ -214,8 +214,8 @@ sal_Bool HierarchyEntry::getData( HierarchyEntryData& rData )
 			}
 
             // TargetURL property may contain a reference to the Office
-            // installation directory. To ensure a reloctable office
-            // installation, the path to the office installtion directory must
+            // installation directory. To ensure a relocatable office
+            // installation, the path to the office installation directory must
             // never be stored directly. A placeholder is used instead. Replace
             // it by actual installation directory.
             if ( m_xOfficeInstDirs.is() && ( aValue.getLength() > 0 ) )
@@ -432,8 +432,8 @@ sal_Bool HierarchyEntry::setData(
 					// Set TargetURL value.
 
                     // TargetURL property may contain a reference to the Office
-                    // installation directory. To ensure a reloctable office
-                    // installation, the path to the office installtion
+                    // installation directory. To ensure a relocatable office
+                    // installation, the path to the office installation
                     // directory must never be stored directly. Use a
                     // placeholder instead.
                     rtl::OUString aValue( rData.getTargetURL() );
@@ -770,8 +770,8 @@ sal_Bool HierarchyEntry::move(
             uno::makeAny( rData.getTitle() ) );
 
         // TargetURL property may contain a reference to the Office
-        // installation directory. To ensure a reloctable office
-        // installation, the path to the office installtion
+        // installation directory. To ensure a relocatable office
+        // installation, the path to the office installation
         // directory must never be stored directly. Use a placeholder
         // instead.
         rtl::OUString aValue( rData.getTargetURL() );
@@ -1212,8 +1212,8 @@ const HierarchyEntryData& HierarchyEntry::iterator::operator*() const
             m_pImpl->dir->getByHierarchicalName( aTargetURL ) >>= aValue;
 
             // TargetURL property may contain a reference to the Office
-            // installation directory. To ensure a reloctable office
-            // installation, the path to the office installtion directory must
+            // installation directory. To ensure a relocatable office
+            // installation, the path to the office installation directory must
             // never be stored directly. A placeholder is used instead. Replace
             // it by actual installation directory.
             if ( m_pImpl->officeDirs.is() && ( aValue.getLength() > 0 ) )

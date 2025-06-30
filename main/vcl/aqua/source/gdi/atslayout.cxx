@@ -1249,4 +1249,3 @@ SalLayout* AquaSalGraphics::GetTextLayout( ImplLayoutArgs&, int /*nFallbackLevel
 }
 
 // =======================================================================
-

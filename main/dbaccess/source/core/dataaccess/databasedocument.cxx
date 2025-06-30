@@ -925,7 +925,7 @@ sal_Bool SAL_CALL ODatabaseDocument::hasLocation(  ) throw (RuntimeException)
     DocumentGuard aGuard( *this, DocumentGuard::MethodWithoutInit );
     return m_pImpl->getURL();
         // both XStorable::getLocation and XModel::getURL have to return the URL of the document, *not*
-        // the location of the file which the docunment was possibly recovered from (which would be getDocFileLocation)
+        // the location of the file which the document was possibly recovered from (which would be getDocFileLocation)
 }
 // -----------------------------------------------------------------------------
 sal_Bool SAL_CALL ODatabaseDocument::isReadonly(  ) throw (RuntimeException)
@@ -2183,5 +2183,3 @@ void SAL_CALL ODatabaseDocument::releaseNumberForComponent( const uno::Reference
 //........................................................................
 }	// namespace dbaccess
 //........................................................................
-
-

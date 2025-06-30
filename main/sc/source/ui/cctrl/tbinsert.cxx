@@ -224,5 +224,3 @@ void __EXPORT ScTbxInsertPopup::PopupModeEnd()
 	SfxPopupWindow::PopupModeEnd();
 }
 */
-
-

@@ -140,7 +140,7 @@ namespace dbaui
 		/// update the infos for a data source with a given item set
 		void		update(const ::rtl::OUString& _rName, SfxItemSet& _rSet);
 		/** Tells the map that an entry has been renamed in a sense that it should be accessible under
-			a new name. This does not necesssarily mean that the data source has been renamed within
+			a new name. This does not necessarily mean that the data source has been renamed within
 			it's database context
 		*/
 		void		renamed(const ::rtl::OUString& _rOldName, const ::rtl::OUString& _rNewName);

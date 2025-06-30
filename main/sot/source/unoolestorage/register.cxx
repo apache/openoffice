@@ -28,10 +28,24 @@
 #include <com/sun/star/registry/XRegistryKey.hpp>
 #include <com/sun/star/registry/InvalidRegistryException.hpp>
 #include <cppuhelper/factory.hxx>
+#include <cppuhelper/implementationentry.hxx>
 
 #include "xolesimplestorage.hxx"
 
 using namespace ::com::sun::star;
+
+static struct ::cppu::ImplementationEntry g_component_entries[] =
+{
+    {
+        OLESimpleStorage::impl_staticCreateSelfInstance,
+        OLESimpleStorage::impl_staticGetImplementationName,
+        OLESimpleStorage::impl_staticGetSupportedServiceNames,
+        ::cppu::createSingleComponentFactory,
+        0,
+        0
+    },
+    { 0, 0, 0, 0, 0, 0 }
+};
 
 
 extern "C" {
@@ -41,29 +55,9 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment( const
 	*ppEnvTypeName = CPPU_CURRENT_LANGUAGE_BINDING_NAME;
 }
 
-SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory( const sal_Char * pImplName, void * pServiceManager, void * /*pRegistryKey*/ )
+SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory( const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
-	void * pRet = 0;
-	
-	::rtl::OUString aImplName( ::rtl::OUString::createFromAscii( pImplName ) );
-	uno::Reference< lang::XSingleServiceFactory > xFactory;
-
-	if ( pServiceManager && aImplName.equals( OLESimpleStorage::impl_staticGetImplementationName() ) )
-	{
-		xFactory= ::cppu::createSingleFactory( reinterpret_cast< lang::XMultiServiceFactory*>( pServiceManager ),
-											OLESimpleStorage::impl_staticGetImplementationName(),
-											OLESimpleStorage::impl_staticCreateSelfInstance,
-											OLESimpleStorage::impl_staticGetSupportedServiceNames() );
-	}
-		
-	if ( xFactory.is() )
-	{
-		xFactory->acquire();
-		pRet = xFactory.get();
-	}
-	
-	return pRet;
+    return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, g_component_entries );
 }
 
 } // extern "C"
-

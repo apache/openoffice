@@ -67,4 +67,3 @@ sal_uInt16 SfxSlot::GetWhich( const SfxItemPool &rPool ) const
 { 
     return rtl::OStringToOUString( GetCommand(), RTL_TEXTENCODING_UTF8);
 }
-

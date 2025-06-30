@@ -39,4 +39,3 @@ void VCLExternalSolarLock::release()
 {
 	Application::GetSolarMutex().release();
 }
-

@@ -529,7 +529,7 @@ sal_Bool SwDoc::SortTbl(const SwSelBoxes& rBoxes, const SwSortOptions& rOpt)
 	_FndBox aFndBox( 0, 0 );
 	{
 		_FndPara aPara( rBoxes, &aFndBox );
-		pTblNd->GetTable().GetTabLines().ForEach( &_FndLineCopyCol, &aPara );;
+		pTblNd->GetTable().GetTabLines().ForEach( &_FndLineCopyCol, &aPara );
 	}
 
 	if(!aFndBox.GetLines().Count())
@@ -1028,5 +1028,3 @@ const SfxItemSet* FlatFndBox::GetItemSet(sal_uInt16 n_Col, sal_uInt16 n_Row) con
 
 	return ppItemSets ? *(ppItemSets + (n_Row * nCols + n_Col )) : 0;
 }
-
-

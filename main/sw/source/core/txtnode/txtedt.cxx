@@ -472,7 +472,7 @@ void SwTxtNode::RstTxtAttr(
         }
 
         // Default behavior is to process all attributes:
-        bool bSkipAttr = false;;
+        bool bSkipAttr = false;
         boost::shared_ptr<SfxItemSet> pStyleHandle;
 
         // 1. case: We want to reset only the attributes listed in pSet:
@@ -1666,7 +1666,7 @@ void SwTxtNode::TransliterateText(
 	{
         // since we don't use Hiragana/Katakana or half-width/full-width transliterations here
         // it is fine to use ANYWORD_IGNOREWHITESPACES. (ANY_WORD btw is broken and will 
-        // occasionaly miss words in consecutive sentences). Also with ANYWORD_IGNOREWHITESPACES
+        // occasionally miss words in consecutive sentences). Also with ANYWORD_IGNOREWHITESPACES
         // text like 'just-in-time' will be converted to 'Just-In-Time' which seems to be the
         // proper thing to do.
         const sal_Int16 nWordType = WordType::ANYWORD_IGNOREWHITESPACES;
@@ -2272,4 +2272,3 @@ sal_Bool SwTxtFrm::HasPageNumberField()
 	return GetRegisteredIn()?((SwTxtNode*)GetRegisteredIn())->HasPageNumberField():false;
 }
 //Bug 120881(End)
-

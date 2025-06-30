@@ -1416,4 +1416,3 @@ Reference<XInterface> SAL_CALL NestedRegistry_CreateInstance( const Reference<XC
 }
 
 }
-

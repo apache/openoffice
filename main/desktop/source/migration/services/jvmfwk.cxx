@@ -522,4 +522,3 @@ void SAL_CALL JavaMigration::addOrReplaceNodeFromTemplate(
 //ToDo enable java, user class path
 
 } //end namespace jfw
-

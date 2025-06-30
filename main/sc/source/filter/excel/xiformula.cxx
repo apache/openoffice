@@ -120,4 +120,3 @@ const ScTokenArray* XclImpFormulaCompiler::CreateFormula(
 }
 
 // ============================================================================
-

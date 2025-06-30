@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -102,19 +100,19 @@ const SwFrmFmt *lcl_InsertBCText( SwWrtShell& rSh, const SwLabItem& rItem,
 	sal_uInt16 nPhyPageNum, nVirtPageNum;
 	rSh.GetPageNum( nPhyPageNum, nVirtPageNum );
 
-    aSet.Put(SwFmtAnchor(bPage ? FLY_AS_CHAR : FLY_AT_PAGE, nPhyPageNum));
+	aSet.Put(SwFmtAnchor(bPage ? FLY_AS_CHAR : FLY_AT_PAGE, nPhyPageNum));
 	if (!bPage)
 	{
 		aSet.Put(SwFmtHoriOrient(rItem.lLeft + nCol * rItem.lHDist,
-                                                    text::HoriOrientation::NONE, text::RelOrientation::PAGE_FRAME ));
+													text::HoriOrientation::NONE, text::RelOrientation::PAGE_FRAME ));
 		aSet.Put(SwFmtVertOrient(rItem.lUpper + nRow * rItem.lVDist,
-                                                    text::VertOrientation::NONE, text::RelOrientation::PAGE_FRAME ));
+													text::VertOrientation::NONE, text::RelOrientation::PAGE_FRAME ));
 	}
-    if ( nCol == rItem.nCols -1 )
-    {
-        aSet.Put( SvxLRSpaceItem( 0, 0, 0, 0, RES_LR_SPACE ) );
-    }
-	const SwFrmFmt *pFmt = rSh.NewFlyFrm(aSet, sal_True,  &rFmt );	// Fly einfuegen
+	if ( nCol == rItem.nCols -1 )
+	{
+		aSet.Put( SvxLRSpaceItem( 0, 0, 0, 0, RES_LR_SPACE ) );
+	}
+	const SwFrmFmt *pFmt = rSh.NewFlyFrm(aSet, sal_True,  &rFmt ); // Fly einfügen
 	ASSERT( pFmt, "Fly not inserted" );
 
 	rSh.UnSelectFrm();	//Rahmen wurde automatisch selektiert
@@ -125,7 +123,7 @@ const SwFrmFmt *lcl_InsertBCText( SwWrtShell& rSh, const SwLabItem& rItem,
 	if(!rItem.bSynchron || !(nCol|nRow))
 	{
 		SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
-        DBG_ASSERT(pFact, "Dialogdiet fail!");
+		DBG_ASSERT(pFact, "Dialogdiet fail!");
 		::GlossarySetActGroup fnSetActGroup = pFact->SetGlossaryActGroupFunc( DLG_RENAME_GLOS );
 		if ( fnSetActGroup )
 			(*fnSetActGroup)( rItem.sGlossaryGroup );
@@ -142,23 +140,23 @@ const SwFrmFmt *lcl_InsertLabText( SwWrtShell& rSh, const SwLabItem& rItem,
 						sal_uInt16 nCol, sal_uInt16 nRow, sal_Bool bLast, sal_Bool bPage)
 {
 	SfxItemSet aSet(rSh.GetAttrPool(), RES_ANCHOR, RES_ANCHOR,
-						RES_VERT_ORIENT, RES_VERT_ORIENT, RES_HORI_ORIENT, RES_HORI_ORIENT, 
+						RES_VERT_ORIENT, RES_VERT_ORIENT, RES_HORI_ORIENT, RES_HORI_ORIENT,
 						RES_LR_SPACE, RES_LR_SPACE, 0 );
 	sal_uInt16 nPhyPageNum, nVirtPageNum;
 	rSh.GetPageNum( nPhyPageNum, nVirtPageNum );
 
-    aSet.Put(SwFmtAnchor(bPage ? FLY_AS_CHAR : FLY_AT_PAGE, nPhyPageNum));
+	aSet.Put(SwFmtAnchor(bPage ? FLY_AS_CHAR : FLY_AT_PAGE, nPhyPageNum));
 	if (!bPage)
 	{
 		aSet.Put(SwFmtHoriOrient(rItem.lLeft + nCol * rItem.lHDist,
-                                                    text::HoriOrientation::NONE, text::RelOrientation::PAGE_FRAME ));
+													text::HoriOrientation::NONE, text::RelOrientation::PAGE_FRAME ));
 		aSet.Put(SwFmtVertOrient(rItem.lUpper + nRow * rItem.lVDist,
-                                                    text::VertOrientation::NONE, text::RelOrientation::PAGE_FRAME ));
+													text::VertOrientation::NONE, text::RelOrientation::PAGE_FRAME ));
 	}
-    if ( nCol == rItem.nCols -1 )
-    {
-        aSet.Put( SvxLRSpaceItem( 0, 0, 0, 0, RES_LR_SPACE ) );
-    }
+	if ( nCol == rItem.nCols -1 )
+	{
+		aSet.Put( SvxLRSpaceItem( 0, 0, 0, 0, RES_LR_SPACE ) );
+	}
 	const SwFrmFmt *pFmt = rSh.NewFlyFrm(aSet, sal_True,  &rFmt );	// Fly einfuegen
 	ASSERT( pFmt, "Fly not inserted" );
 
@@ -170,16 +168,15 @@ const SwFrmFmt *lcl_InsertLabText( SwWrtShell& rSh, const SwLabItem& rItem,
 	String sDBName;
 	if( (!rItem.bSynchron || !(nCol|nRow)) && (sDBName = InsertLabEnvText( rSh, rFldMgr, rItem.aWriting )).Len() && !bLast )
 	{
-        sDBName.SetToken( 3, DB_DELIM, String::CreateFromAscii("True"));
-        SwInsertFld_Data aData(TYP_DBNEXTSETFLD, 0, sDBName, aEmptyStr, 0, &rSh );
-        rFldMgr.InsertFld( aData );
+		sDBName.SetToken( 3, DB_DELIM, String::CreateFromAscii("True"));
+		SwInsertFld_Data aData(TYP_DBNEXTSETFLD, 0, sDBName, aEmptyStr, 0, &rSh );
+		rFldMgr.InsertFld( aData );
 	}
 
 	return pFmt;
 }
 
 // ----------------------------------------------------------------------------
-
 
 void SwModule::InsertLab(SfxRequest& rReq, sal_Bool bLabel)
 {
@@ -196,11 +193,11 @@ static sal_uInt16 nBCTitleNo = 0;
 	SfxItemSet aSet( GetPool(), FN_LABEL, FN_LABEL, 0 );
 	aSet.Put( aLabCfg.GetItem() );
 
-    SwAbstractDialogFactory* pDialogFactory = SwAbstractDialogFactory::Create();
-    DBG_ASSERT(pDialogFactory, "SwAbstractDialogFactory fail!");
+	SwAbstractDialogFactory* pDialogFactory = SwAbstractDialogFactory::Create();
+	DBG_ASSERT(pDialogFactory, "SwAbstractDialogFactory fail!");
 
-    AbstarctSwLabDlg* pDlg = pDialogFactory->CreateSwLabDlg( 0, aSet, pNewDBMgr, bLabel, DLG_LAB );
-    DBG_ASSERT(pDlg, "Dialogdiet fail!");
+	AbstarctSwLabDlg* pDlg = pDialogFactory->CreateSwLabDlg( 0, aSet, pNewDBMgr, bLabel, DLG_LAB );
+	DBG_ASSERT(pDlg, "Dialogdiet fail!");
 
 	if ( RET_OK == pDlg->Execute() )
 	{
@@ -219,13 +216,13 @@ static sal_uInt16 nBCTitleNo = 0;
 		if (pPrt)
 		{
 			SwDocShell *pDocSh = (SwDocShell*)(&*xDocSh);
-            pDocSh->getIDocumentDeviceAccess()->setJobsetup(pPrt->GetJobSetup());
+			pDocSh->getIDocumentDeviceAccess()->setJobsetup(pPrt->GetJobSetup());
 		}
 
 		SfxViewFrame* pViewFrame = SfxViewFrame::DisplayNewDocument( *xDocSh, rReq );
 
-        SwView      *pNewView = (SwView*) pViewFrame->GetViewShell();
-        pNewView->AttrChangedNotify( &pNewView->GetWrtShell() );//Damit SelectShell gerufen wird.
+		SwView		*pNewView = (SwView*) pViewFrame->GetViewShell();
+		pNewView->AttrChangedNotify( &pNewView->GetWrtShell() ); // Damit SelectShell gerufen wird.
 
 		// Dokumenttitel setzen
 		String aTmp;
@@ -244,46 +241,46 @@ static sal_uInt16 nBCTitleNo = 0;
 		pViewFrame->GetFrame().Appear();
 
 		// Shell ermitteln
-        SwWrtShell *pSh = pNewView->GetWrtShellPtr();
+		SwWrtShell *pSh = pNewView->GetWrtShellPtr();
 		ASSERT( pSh, "missing WrtShell" );
 
-		{	// block for locks the dispatcher!!
+		{ // block for locks the dispatcher!!
 
 			SwWait aWait( (SwDocShell&)*xDocSh, true );
 
 			SET_CURR_SHELL(pSh);
-            pSh->SetLabelDoc(rItem.bSynchron);
-            pSh->DoUndo( sal_False );
+			pSh->SetLabelDoc(rItem.bSynchron);
+			pSh->DoUndo( sal_False );
 			pSh->StartAllAction();
 
-			pSh->SetNewDoc();		// Performanceprobleme vermeiden
+			pSh->SetNewDoc(); // Performanceprobleme vermeiden
 
 			SwPageDesc aDesc = pSh->GetPageDesc( 0 );
 			SwFrmFmt&  rFmt  = aDesc.GetMaster();
 
-			// Raender
-            SvxLRSpaceItem aLRMargin( RES_LR_SPACE );
-            SvxULSpaceItem aULMargin( RES_UL_SPACE );
+			// Ränder
+			SvxLRSpaceItem aLRMargin( RES_LR_SPACE );
+			SvxULSpaceItem aULMargin( RES_UL_SPACE );
 			aLRMargin.SetLeft ((sal_uInt16) rItem.lLeft );
 			aULMargin.SetUpper((sal_uInt16) rItem.lUpper);
-            aLRMargin.SetRight(MINLAY/2);
-            aULMargin.SetLower(MINLAY/2);
-            rFmt.SetFmtAttr(aLRMargin);
-            rFmt.SetFmtAttr(aULMargin);
+			aLRMargin.SetRight(MINLAY/2);
+			aULMargin.SetLower(MINLAY/2);
+			rFmt.SetFmtAttr(aLRMargin);
+			rFmt.SetFmtAttr(aULMargin);
 
 			// Kopf- und Fusszeilen
-            rFmt.SetFmtAttr(SwFmtHeader(sal_Bool(sal_False)));
+			rFmt.SetFmtAttr(SwFmtHeader(sal_Bool(sal_False)));
 			aDesc.ChgHeaderShare(sal_False);
-            rFmt.SetFmtAttr(SwFmtFooter(sal_Bool(sal_False)));
+			rFmt.SetFmtAttr(SwFmtFooter(sal_Bool(sal_False)));
 			aDesc.ChgFooterShare(sal_False);
 
 
-			aDesc.SetUseOn(nsUseOnPage::PD_ALL);				// Seitennumerierung
+			aDesc.SetUseOn(nsUseOnPage::PD_ALL); // Seitennumerierung
 
 			// Einstellen der Seitengroesse
-            rFmt.SetFmtAttr(SwFmtFrmSize(ATT_FIX_SIZE,
-                                    rItem.lPaperWidth == 0 ? rItem.lLeft  + rItem.nCols * rItem.lHDist + MINLAY : rItem.lPaperWidth,
-                                    rItem.bCont || rItem.lPaperHeight == 0 ? rItem.lUpper + rItem.nRows * rItem.lVDist + MINLAY : rItem.lPaperHeight));
+			rFmt.SetFmtAttr(SwFmtFrmSize(ATT_FIX_SIZE,
+									rItem.lPaperWidth == 0 ? rItem.lLeft  + rItem.nCols * rItem.lHDist + MINLAY : rItem.lPaperWidth,
+									rItem.bCont || rItem.lPaperHeight == 0 ? rItem.lUpper + rItem.nRows * rItem.lVDist + MINLAY : rItem.lPaperHeight));
 
 			// Numerierungsart
 			SvxNumberType aType;
@@ -294,12 +291,12 @@ static sal_uInt16 nBCTitleNo = 0;
 			const SwPageDesc &rFollow = pSh->GetPageDesc( pSh->GetCurPageDesc() );
 			aDesc.SetFollow( &rFollow );
 
-            pPrt = pSh->getIDocumentDeviceAccess()->getPrinter( true );
-            SvxPaperBinItem aItem( RES_PAPER_BIN );
+			pPrt = pSh->getIDocumentDeviceAccess()->getPrinter( true );
+			SvxPaperBinItem aItem( RES_PAPER_BIN );
 			aItem.SetValue((sal_Int8)pPrt->GetPaperBin());
-            rFmt.SetFmtAttr(aItem);
+			rFmt.SetFmtAttr(aItem);
 
-			//determine orientation by calculating the width and height of the resulting page
+			// determine orientation by calculating the width and height of the resulting page
 			const int nResultWidth = rItem.lHDist * (rItem.nCols - 1) + rItem.lWidth + rItem.lLeft;
 			const int nResultHeight = rItem.lVDist * (rItem.nRows - 1) + rItem.lHeight + rItem.lUpper;
 			aDesc.SetLandscape(nResultWidth > nResultHeight);
@@ -310,21 +307,21 @@ static sal_uInt16 nBCTitleNo = 0;
 			SwFldMgr*		 pFldMgr = new SwFldMgr;
 			pFldMgr->SetEvalExpFlds(sal_False);
 
-			//fix(24446): Damit der Text der Ettiketten nicht im unbedruckbaren
-			//Bereich landet stellen wir entsprechende Raender ein. Um das Handling
-			//so Optimal wie moeglich zu halten stellen wir zunaechst an der
-			//aktuellen Absatzvorlage keinen Rand als hartes Attribut ein (Damit die
-			//Formatierung wg. der Zeichengeb. Rahmen passt. Dann stellen wir die
-			//Standarabsatzvorlage anhand des unbedruckbaren Bereiches ein.
+			// fix(24446): Damit der Text der Ettiketten nicht im unbedruckbaren
+			// Bereich landet stellen wir entsprechende Ränder ein. Um das Handling
+			// so Optimal wie möglich zu halten stellen wir zunächst an der
+			// aktuellen Absatzvorlage keinen Rand als hartes Attribut ein (Damit die
+			// Formatierung wg. der Zeichengeb. Rahmen passt. Dann stellen wir die
+			// Standardabsatzvorlage anhand des unbedruckbaren Bereiches ein.
 			const long nMin = pPrt->GetPageOffset().X() - rItem.lLeft;
 			if ( nMin > 0 )
 			{
-                SvxLRSpaceItem aLR( RES_LR_SPACE );
+				SvxLRSpaceItem aLR( RES_LR_SPACE );
 				pSh->SetAttrItem( aLR );
 				SwFmt *pStandard = pSh->GetTxtCollFromPool( RES_POOLCOLL_STANDARD );
 				aLR.SetLeft ( sal_uInt16(nMin) );
 				aLR.SetRight( sal_uInt16(nMin) );
-                pStandard->SetFmtAttr( aLR );
+				pStandard->SetFmtAttr( aLR );
 			}
 
 			// Rahmenvorlage vorbereiten
@@ -332,23 +329,23 @@ static sal_uInt16 nBCTitleNo = 0;
 			SwFmtFrmSize aFrmSize(	ATT_FIX_SIZE,
 									rItem.lHDist - (rItem.lHDist-rItem.lWidth),
 									rItem.lVDist - (rItem.lVDist-rItem.lHeight));
-            pFmt->SetFmtAttr(aFrmSize);
+			pFmt->SetFmtAttr(aFrmSize);
 
 			SvxLRSpaceItem aFrmLRSpace(	0, (sal_uInt16)(rItem.lHDist - rItem.lWidth),
 										0, 0,
 										RES_LR_SPACE);
-            pFmt->SetFmtAttr(aFrmLRSpace);
+			pFmt->SetFmtAttr(aFrmLRSpace);
 
 			SvxULSpaceItem aFrmULSpace(	0, (sal_uInt16)(rItem.lVDist - rItem.lHeight),
 										RES_UL_SPACE);
-            pFmt->SetFmtAttr(aFrmULSpace);
+			pFmt->SetFmtAttr(aFrmULSpace);
 
 			const SwFrmFmt *pFirstFlyFmt = 0;
 			if ( rItem.bPage )
 			{
 				SwFmtVertOrient aFrmVertOrient( pFmt->GetVertOrient() );
-                aFrmVertOrient.SetVertOrient( text::VertOrientation::TOP );
-                pFmt->SetFmtAttr(aFrmVertOrient);
+				aFrmVertOrient.SetVertOrient( text::VertOrientation::TOP );
+				pFmt->SetFmtAttr(aFrmVertOrient);
 
 				for ( sal_uInt16 i = 0; i < rItem.nRows; ++i )
 				{
@@ -368,7 +365,7 @@ static sal_uInt16 nBCTitleNo = 0;
 							if (rItem.bSynchron)
 							{
 								// if there is no content in the fly then
-								// dont leave the fly!!!
+								// don't leave the fly!!!
 								pSh->Push();
 								pSh->SttDoc();
 								sal_Bool bInFly = 0 != pSh->WizzardGetFly();
@@ -380,20 +377,20 @@ static sal_uInt16 nBCTitleNo = 0;
 								else
 									pSh->SetMark();		// set only the mark
 
-                                SwSectionData aSect(CONTENT_SECTION,
-                                    String::CreateFromAscii(MASTER_LABEL));
+								SwSectionData aSect(CONTENT_SECTION,
+									String::CreateFromAscii(MASTER_LABEL));
 								pSh->InsertSection(aSect);
 							}
 						}
 						else if (rItem.bSynchron)
-                        {
-                            SwSectionData aSect(FILE_LINK_SECTION,
-                                    pSh->GetUniqueSectionName());
-                            String sLinkName(sfx2::cTokenSeperator);
-                            sLinkName += sfx2::cTokenSeperator;
+						{
+							SwSectionData aSect(FILE_LINK_SECTION,
+									pSh->GetUniqueSectionName());
+							String sLinkName(sfx2::cTokenSeperator);
+							sLinkName += sfx2::cTokenSeperator;
 							sLinkName += String::CreateFromAscii(MASTER_LABEL);
 							aSect.SetLinkFileName(sLinkName);
-                            aSect.SetProtectFlag(true);
+							aSect.SetProtectFlag(true);
 							pSh->Insert(aDotStr);	// Dummytext zum Zuweisen der Section
 							pSh->SttDoc();
 							pSh->EndDoc(sal_True);	// Alles im Rahmen selektieren
@@ -409,19 +406,19 @@ static sal_uInt16 nBCTitleNo = 0;
 			{
 				pFirstFlyFmt = bLabel ?
 					lcl_InsertLabText( *pSh, rItem, *pFmt, *pFldMgr,
-                            static_cast< sal_uInt16 >(rItem.nCol - 1),
-                            static_cast< sal_uInt16 >(rItem.nRow - 1), sal_True, sal_False ) :
-                    lcl_InsertBCText(*pSh, rItem, *pFmt,
-                            static_cast< sal_uInt16 >(rItem.nCol - 1),
-                            static_cast< sal_uInt16 >(rItem.nRow - 1), sal_False);
+							static_cast< sal_uInt16 >(rItem.nCol - 1),
+							static_cast< sal_uInt16 >(rItem.nRow - 1), sal_True, sal_False ) :
+					lcl_InsertBCText(*pSh, rItem, *pFmt,
+							static_cast< sal_uInt16 >(rItem.nCol - 1),
+							static_cast< sal_uInt16 >(rItem.nRow - 1), sal_False);
 			}
 
-			//fill the user fields
+			// fill the user fields
 			if(!bLabel)
 			{
 				uno::Reference< frame::XModel >  xModel = pSh->GetView().GetDocShell()->GetBaseModel();
-                DBG_ASSERT(pDialogFactory, "SwAbstractDialogFactory fail!");
-                SwLabDlgMethod SwLabDlgUpdateFieldInformation = pDialogFactory->GetSwLabDlgStaticMethod ();
+				DBG_ASSERT(pDialogFactory, "SwAbstractDialogFactory fail!");
+				SwLabDlgMethod SwLabDlgUpdateFieldInformation = pDialogFactory->GetSwLabDlgStaticMethod ();
 				SwLabDlgUpdateFieldInformation(xModel, rItem);
 			}
 
@@ -434,12 +431,12 @@ static sal_uInt16 nBCTitleNo = 0;
 
 			pSh->EndAllAction();
 			pSh->DoUndo( sal_True );
-        }
+		}
 
 		if( rItem.aWriting.indexOf( '<' ) >= 0 )
 		{
-			// Datenbankbrowser mit zuletzt verwendeter Datenbank oeffnen
-            ShowDBObj( *pNewView, pSh->GetDBData() );
+			// Datenbankbrowser mit zuletzt verwendeter Datenbank öffnen
+			ShowDBObj( *pNewView, pSh->GetDBData() );
 		}
 
 		if( rItem.bSynchron )
@@ -448,7 +445,7 @@ static sal_uInt16 nBCTitleNo = 0;
 			ASSERT(pDisp, "Heute kein Dispatcher am Frame?");
 			pDisp->Execute(FN_SYNC_LABELS, SFX_CALLMODE_ASYNCHRON);
 		}
-        rReq.SetReturnValue(SfxVoidItem(bLabel ? FN_LABEL : FN_BUSINESS_CARD));
+		rReq.SetReturnValue(SfxVoidItem(bLabel ? FN_LABEL : FN_BUSINESS_CARD));
 	}
 	delete pDlg;
 
@@ -456,4 +453,4 @@ static sal_uInt16 nBCTitleNo = 0;
 		delete pNewDBMgr;
 }
 
-
+/* vim: set noet sw=4 ts=4: */

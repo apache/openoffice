@@ -192,7 +192,7 @@ void SwView::ExecLingu(SfxRequest &rReq)
 							const SwPosition *pPoint = pWrtShell->GetCrsr()->GetPoint();
 							sal_Bool bRestoreCursor = pPoint->nNode.GetNode().IsTxtNode();
 							const SwNodeIndex aPointNodeIndex( pPoint->nNode );
-							xub_StrLen nPointIndex = pPoint->nContent.GetIndex();;
+							xub_StrLen nPointIndex = pPoint->nContent.GetIndex();
 
 							// since this conversion is not interactive the whole converted
 							// document should be undone in a single undo step.
@@ -998,4 +998,3 @@ sal_Bool SwView::ExecFieldPopup( const Point& rPt, IFieldmark *fieldBM )
 
     return bRet;
 }
-

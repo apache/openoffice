@@ -234,5 +234,3 @@ sal_Bool SmFormat::operator == (const SmFormat &rFormat) const
 
     return bRes;
 }
-
-

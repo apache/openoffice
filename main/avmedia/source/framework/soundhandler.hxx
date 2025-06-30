@@ -29,7 +29,6 @@
 //_________________________________________________________________________________________________________________
 
 #include <com/sun/star/lang/XTypeProvider.hpp>
-#include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <com/sun/star/frame/XNotifyingDispatch.hpp>
 #include <com/sun/star/frame/XStatusListener.hpp>
 #include <com/sun/star/frame/XFrame.hpp>
@@ -37,6 +36,7 @@
 #include <com/sun/star/media/XPlayer.hpp>
 #include <com/sun/star/beans/PropertyValue.hpp>
 #include <com/sun/star/util/URL.hpp>
+#include <com/sun/star/uno/XComponentContext.hpp>
 
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/lang/XSingleServiceFactory.hpp>
@@ -102,8 +102,8 @@ class SoundHandler  :   // interfaces
 		//---------------------------------------------------------------------------------------------------------
 		//	constructor / destructor
 		//---------------------------------------------------------------------------------------------------------
-                 SoundHandler( const css::uno::Reference< css::lang::XMultiServiceFactory >& xFactory );
-        virtual ~SoundHandler(                                                                        );
+                 SoundHandler( const css::uno::Reference< css::uno::XComponentContext >& xContext );
+        virtual ~SoundHandler(                                                                    );
 
 		//---------------------------------------------------------------------------------------------------------
         //  XInterface, XTypeProvider, XServiceInfo
@@ -123,8 +123,7 @@ class SoundHandler  :   // interfaces
        static css::uno::Sequence< ::rtl::OUString >                   SAL_CALL impl_getStaticSupportedServiceNames(                                                                               );                                       
        static ::rtl::OUString                                         SAL_CALL impl_getStaticImplementationName   (                                                                               );                                       
     /* Helper for registry */                                                                                                                                                                                                           
-       static css::uno::Reference< css::uno::XInterface >             SAL_CALL impl_createInstance                ( const css::uno::Reference< css::lang::XMultiServiceFactory >& xServiceManager ) throw( css::uno::Exception );          
-       static css::uno::Reference< css::lang::XSingleServiceFactory > SAL_CALL impl_createFactory                 ( const css::uno::Reference< css::lang::XMultiServiceFactory >& xServiceManager );                                       
+       static css::uno::Reference< css::uno::XInterface >             SAL_CALL impl_createInstance                ( const css::uno::Reference< css::uno::XComponentContext >& xContext ) throw( css::uno::Exception );
     /* Helper for initialization of service by using own reference! */                                                                                                                                                                  
        virtual void                                                   SAL_CALL impl_initService                   (                                                                               );                                       
 
@@ -169,7 +168,7 @@ class SoundHandler  :   // interfaces
 	private:
 
 		bool m_bError;
-        css::uno::Reference< css::lang::XMultiServiceFactory >     m_xFactory          ;   /// global uno service factory to create new services
+        css::uno::Reference< css::uno::XComponentContext >         m_xContext          ;   /// component context to create new services
         css::uno::Reference< css::uno::XInterface >                m_xSelfHold         ;   /// we must protect against dying during async(!) dispatch() call!
         css::uno::Reference< css::media::XPlayer >                 m_xPlayer           ;   /// uses avmedia player to play sounds ... 
 

@@ -2016,6 +2016,3 @@ void ScXMLRejectionContext::EndElement()
 {
 	pChangeTrackingImportHelper->EndChangeAction();
 }
-
-
-

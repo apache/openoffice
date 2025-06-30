@@ -190,7 +190,7 @@ extern char *GetOutputFile( int argc, char* argv[])
 int InitExport( char *pOutput , char* pFilename )
 /*****************************************************************************/
 {
-	// instanciate Export
+	// instantiate Export
 	ByteString sOutput( pOutput );
 	ByteString sFilename( pFilename );
 
@@ -2629,4 +2629,3 @@ ParserQueue::~ParserQueue(){
     if( aQueueNext )    delete aQueueNext;
     if( aQueueCur )     delete aQueueCur;
 }
-

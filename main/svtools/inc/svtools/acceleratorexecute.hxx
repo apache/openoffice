@@ -96,10 +96,10 @@ struct TMutexInit
 
     @attention
 
-            Because exceution of an accelerator command can be dangerous
+            Because execution of an accelerator command can be dangerous
             (in case it force an office shutdown for key "ALT+F4"!)
             all internal dispatches are done asynchronous.
-            Menas that the trigger call doesn't wait till the dispatch
+            Means that the trigger call doesn't wait till the dispatch
             is finished. You can call very often. All requests will be
             queued internal and dispatched ASAP.
 
@@ -209,7 +209,7 @@ class SVT_DLLPUBLIC AcceleratorExecute : private TMutexInit
         //---------------------------------------
         /** @short  trigger this accelerator.
 
-            @descr  The internal configuartions are used to find
+            @descr  The internal configurations are used to find
                     as suitable command for this key code.
                     This command will be queued and executed later
                     asynchronous.

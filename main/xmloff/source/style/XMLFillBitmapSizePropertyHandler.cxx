@@ -92,4 +92,3 @@ sal_Bool XMLFillBitmapSizePropertyHandler::exportXML(
 
 	return sal_False;
 }
-

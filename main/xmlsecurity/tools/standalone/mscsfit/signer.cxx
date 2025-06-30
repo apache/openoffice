@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /** -- C++ Source File -- **/
@@ -85,22 +85,22 @@ int SAL_CALL main( int argc, char **argv )
 
 	for( int hhh = 0 ; hhh < 4 ; hhh ++ ) {
 
-	//Init libxml and libxslt libraries
+	// Init libxml and libxslt libraries
 	xmlInitParser();
 	LIBXML_TEST_VERSION
 	xmlLoadExtDtdDefaultValue = XML_DETECT_IDS | XML_COMPLETE_ATTRS;
 	xmlSubstituteEntitiesDefault(1);
 
 	#ifndef XMLSEC_NO_XSLT
-	xmlIndentTreeOutput = 1; 
+	xmlIndentTreeOutput = 1;
 	#endif // XMLSEC_NO_XSLT
 
-	//Initialize the crypto engine
+	// Initialize the crypto engine
 	if( argc == 5 ) {
 		n_pCertStore = argv[4] ;
 		n_hStoreHandle = CertOpenSystemStore( NULL, n_pCertStore ) ;
 		if( n_hStoreHandle == NULL ) {
-			fprintf( stderr, "Can not open the system cert store %s\n", n_pCertStore ) ;
+			fprintf( stderr, "Cannot open the system cert store %s\n", n_pCertStore ) ;
 			return 1 ;
 		}
 	} else {
@@ -109,39 +109,39 @@ int SAL_CALL main( int argc, char **argv )
 	}
 	xmlSecMSCryptoAppInit( n_pCertStore ) ;
 
-	//Load XML document
+	// Load XML document
 	doc = xmlParseFile( argv[1] ) ;
 	if( doc == NULL || xmlDocGetRootElement( doc ) == NULL ) {
 		fprintf( stderr , "### Cannot load template xml document!\n" ) ;
 		goto done ;
 	}
 
-	//Find the signature template
+	// Find the signature template
 	tplNode = xmlSecFindNode( xmlDocGetRootElement( doc ), xmlSecNodeSignature, xmlSecDSigNs ) ;
 	if( tplNode == NULL ) {
 		fprintf( stderr , "### Cannot find the signature template!\n" ) ;
 		goto done ;
 	}
 
-	//Find the element with ID attribute
-	//Here we only try to find the "document" node.
+	// Find the element with ID attribute
+	// Here we only try to find the "document" node.
 	tarNode = xmlSecFindNode( xmlDocGetRootElement( doc ), ( xmlChar* )"document", ( xmlChar* )"http://openoffice.org/2000/office" ) ;
 	if( tarNode == NULL ) {
 		tarNode = xmlSecFindNode( xmlDocGetRootElement( doc ), ( xmlChar* )"document", NULL ) ;
 	}
 
-	//Find the "id" attrbute in the element
+	// Find the "id" attribute in the element
 	if( tarNode != NULL ) {
 		if( ( idAttr = xmlHasProp( tarNode, ( xmlChar* )"id" ) ) != NULL ) {
-			//NULL
+			// NULL
 		} else if( ( idAttr = xmlHasProp( tarNode, ( xmlChar* )"Id" ) ) != NULL ) {
-			//NULL
+			// NULL
 		} else {
 			idAttr = NULL ;
 		}
 	}
 
-	//Add ID to DOM
+	// Add ID to DOM
 	if( idAttr != NULL ) {
 		idValue = xmlNodeListGetString( tarNode->doc, idAttr->children, 1 ) ;
 		if( idValue == NULL ) {
@@ -150,27 +150,27 @@ int SAL_CALL main( int argc, char **argv )
 		}
 
 		if( xmlAddID( NULL, doc, idValue, idAttr ) == NULL ) {
-			fprintf( stderr , "### Can not add the ID value!\n" ) ;
+			fprintf( stderr , "### Cannot add the ID value!\n" ) ;
 			goto done ;
 		}
 	}
 
-	//Reference handler
-	//Find the signature reference
+	// Reference handler
+	// Find the signature reference
 	tarNode = xmlSecFindNode( tplNode, xmlSecNodeReference, xmlSecDSigNs ) ;
 	if( tarNode == NULL ) {
 		fprintf( stderr , "### Cannot find the signature reference!\n" ) ;
 		goto done ;
 	}
 
-	//Find the "URI" attrbute in the reference
+	// Find the "URI" attribute in the reference
 	uriAttr = xmlHasProp( tarNode, ( xmlChar* )"URI" ) ;
 	if( tarNode == NULL ) {
 		fprintf( stderr , "### Cannot find URI of the reference!\n" ) ;
 		goto done ;
 	}
 
-	//Get the "URI" attrbute value
+	// Get the "URI" attribute value
 	uriValue = xmlNodeListGetString( tarNode->doc, uriAttr->children, 1 ) ;
 	if( uriValue == NULL ) {
 		fprintf( stderr , "### the URI value is NULL!\n" ) ;
@@ -187,7 +187,7 @@ int SAL_CALL main( int argc, char **argv )
 		fprintf( stdout , "### Find the URI [%s]\n", OUStringToOString( *uri , RTL_TEXTENCODING_ASCII_US ).getStr() ) ;
 		Reference< XInputStream > xStream = createStreamFromFile( *uri ) ;
 		if( !xStream.is() ) {
-			fprintf( stderr , "### Can not get the URI stream!\n" ) ;
+			fprintf( stderr , "### Cannot get the URI stream!\n" ) ;
 			goto done ;
 		}
 
@@ -203,7 +203,7 @@ int SAL_CALL main( int argc, char **argv )
 			"ServicesManager - "
 			"Cannot get service manager" ) ;
 
-		//Create signature template
+		// Create signature template
 		Reference< XInterface > element =
 			xManager->createInstanceWithContext( OUString::createFromAscii( "com.sun.star.xml.security.bridge.xmlsec.XMLElementWrapper_XmlSecImpl" ) , xContext ) ;
 		OSL_ENSURE( element.is() ,
@@ -225,10 +225,10 @@ int SAL_CALL main( int argc, char **argv )
 			"Signer - "
 			"Cannot get implementation of \"xsec.XMLElement\"" ) ;
 
-		//Set signature template
+		// Set signature template
 		pElement->setNativeElement( tplNode ) ;
 
-		//Build XML Signature template
+		// Build XML Signature template
 		Reference< XInterface > signtpl =
 			xManager->createInstanceWithContext( OUString::createFromAscii( "com.sun.star.xml.crypto.XMLSignatureTemplate" ) , xContext ) ;
 		OSL_ENSURE( signtpl.is() ,
@@ -240,15 +240,15 @@ int SAL_CALL main( int argc, char **argv )
 			"Signer - "
 			"Cannot get interface of \"XXMLSignatureTemplate\" from service \"xsec.XMLSignatureTemplate\"" ) ;
 
-		//Import the signature template
+		// Import the signature template
 		xTemplate->setTemplate( xElement ) ;
 
-		//Import the URI/Stream binding
+		// Import the URI/Stream binding
 		if( xUriBinding.is() )
 			xTemplate->setBinding( xUriBinding ) ;
 
-		//Create security environment
-		//Build Security Environment
+		// Create security environment
+		// Build Security Environment
 		Reference< XInterface > xsecenv =
 			xManager->createInstanceWithContext( OUString::createFromAscii("com.sun.star.xml.security.bridge.xmlsec.SecurityEnvironment_MSCryptImpl"), xContext ) ;
 		OSL_ENSURE( xsecenv.is() ,
@@ -260,7 +260,7 @@ int SAL_CALL main( int argc, char **argv )
 			"Signer - "
 			"Cannot get interface of \"XSecurityEnvironment\" from service \"xsec.SecurityEnvironment\"" ) ;
 
-		//Setup key slot and certDb
+		// Setup key slot and certDb
 		Reference< XUnoTunnel > xEnvTunnel( xsecenv , UNO_QUERY ) ;
 		OSL_ENSURE( xElement.is() ,
 			"Signer - "
@@ -271,7 +271,7 @@ int SAL_CALL main( int argc, char **argv )
 			"Signer - "
 			"Cannot get implementation of \"xsec.SecurityEnvironment\"" ) ;
 
-		//Setup key slot and certDb
+		// Setup key slot and certDb
 		if( n_hStoreHandle != NULL ) {
 			pSecEnv->setCryptoSlot( n_hStoreHandle ) ;
 			pSecEnv->setCertDb( n_hStoreHandle ) ;
@@ -279,7 +279,7 @@ int SAL_CALL main( int argc, char **argv )
 			pSecEnv->enableDefaultCrypt( sal_True ) ;
 		}
 
-		//Build XML Security Context
+		// Build XML Security Context
 		Reference< XInterface > xmlsecctx =
 			xManager->createInstanceWithContext( OUString::createFromAscii("com.sun.star.xml.security.bridge.xmlsec.XMLSecurityContext_MSCryptImpl"), xContext ) ;
 		OSL_ENSURE( xsecenv.is() ,
@@ -293,7 +293,7 @@ int SAL_CALL main( int argc, char **argv )
 
 		xSecCtx->addSecurityEnvironment( xSecEnv ) ;
 
-		//Generate XML signature
+		// Generate XML signature
 		Reference< XInterface > xmlsigner =
 			xManager->createInstanceWithContext( OUString::createFromAscii("com.sun.star.xml.security.bridge.xmlsec.XMLSignature_MSCryptImpl"), xContext ) ;
 		OSL_ENSURE( xmlsigner.is() ,
@@ -305,14 +305,14 @@ int SAL_CALL main( int argc, char **argv )
 			"Signer - "
 			"Cannot get interface of \"XXMLSignature\" from service \"xsec.XMLSignature\"" ) ;
 
-		//perform signature
+		// perform signature
 		xTemplate = xSigner->generate( xTemplate , xSecEnv ) ;
 		OSL_ENSURE( xTemplate.is() ,
 			"Signer - "
-			"Cannot generate the xml signature" ) ; 
-		
+			"Cannot generate the xml signature" ) ;
+
 		SecurityOperationStatus m_nStatus = xTemplate->getStatus();
-		
+
 		if (m_nStatus == SecurityOperationStatus_OPERATION_SUCCEEDED)
 		{
 			fprintf( stdout, "Operation succeeds.\n") ;
@@ -328,11 +328,11 @@ int SAL_CALL main( int argc, char **argv )
 
 	dstFile = fopen( argv[2], "w" ) ;
 	if( dstFile == NULL ) {
-		fprintf( stderr , "### Can not open file %s\n", argv[2] ) ;
+		fprintf( stderr , "### Cannot open file %s\n", argv[2] ) ;
 		goto done ;
 	}
 
-	//Save result
+	// Save result
 	xmlDocDump( dstFile, doc ) ;
 
 done:
@@ -352,7 +352,7 @@ done:
 
 	/* Shutdown libxslt/libxml */
 	#ifndef XMLSEC_NO_XSLT
-	xsltCleanupGlobals();            
+	xsltCleanupGlobals();
 	#endif /* XMLSEC_NO_XSLT */
 	xmlCleanupParser();
 
@@ -361,3 +361,4 @@ done:
 	return 0;
 }
 
+/* vim: set noet sw=4 ts=4: */

@@ -125,7 +125,3 @@ sal_Bool ScPrintRangeSaver::operator==( const ScPrintRangeSaver& rCmp ) const
 			}
 	return bEqual;
 }
-
-
-
-

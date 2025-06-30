@@ -96,7 +96,7 @@ DECLARE_STL_MAP	(	TypeSequence,
 	As we don't want a global helper class which handles implementation id's
 	of components from all over the office (supposing somebody want's to use this :)
 	this is only a define. Wherever you have a "closed" area (which is small enough
-	and large enough :), see below) where diffenrent components want to use an id helper,
+	and large enough :), see below) where different components want to use an id helper,
 	define your own one with this macro.<BR>
 	The more classes use this helper, the later redundant map entries will be
 	cleared. The less classes use it, the earlier map entries which may have

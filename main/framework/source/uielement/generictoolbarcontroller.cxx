@@ -395,4 +395,3 @@ MenuToolbarController::createPopupWindow() throw (::com::sun::star::uno::Runtime
     return NULL;
 }
 } // namespace
-

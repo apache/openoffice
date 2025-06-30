@@ -672,4 +672,3 @@ SwVbaSelection::getServiceNames()
 	}
 	return aServiceNames;
 }
-

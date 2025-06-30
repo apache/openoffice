@@ -478,7 +478,7 @@ OfficeDocumentsManager::createDocumentEventNotifier(
 
     OSL_ENSURE(
         xIfc.is(),
-        "Could not instanciate com.sun.star.frame.GlobalEventBroadcaster" );
+        "Could not instantiate com.sun.star.frame.GlobalEventBroadcaster" );
 
     if ( xIfc.is() )
     {
@@ -718,7 +718,7 @@ bool OfficeDocumentsManager::isBasicIDE(
             }
 
             OSL_ENSURE( m_xModuleMgr .is(),
-                        "Could not instanciate ModuleManager service!" );
+                        "Could not instantiate ModuleManager service!" );
         }
     }
 

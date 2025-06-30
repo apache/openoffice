@@ -304,6 +304,3 @@ FltError ScFormatFilterPluginImpl::ScExportExcel5( SfxMedium& rMedium, ScDocumen
 
 	return eRet;
 }
-
-
-

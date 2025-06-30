@@ -99,4 +99,3 @@ IMPL_LINK(AsynchronousCall, HandleUserCall, void*, EMPTYARG )
 
 
 } } // end of namespace sfx2::sidebar
-

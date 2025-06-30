@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 package ExtensionsLst;
@@ -28,7 +28,7 @@ use Digest::MD5;
 use base 'Exporter';
 our @EXPORT = qw(DownloadExtensions GetExtensionList);
 
-    
+
 =head1 NAME
 
     ExtensionLst.pm - Functionality for the interpretation of the main/extensions.lst file.
@@ -36,7 +36,7 @@ our @EXPORT = qw(DownloadExtensions GetExtensionList);
 =head1 SYNOPSIS
 
     For downloading extensions during build setup:
-    
+
     use ExtensionsLst;
     ExtensionsLst::DownloadExtensions();
 
@@ -53,14 +53,14 @@ our @EXPORT = qw(DownloadExtensions GetExtensionList);
     Once at the beginning right after configure is run the
     DownloadExtensions() function determines the list of extensions
     that are not present locally and downloads them.
-    
+
     The second time is after all modules are built (and the locally
     built extensions are present) and the pack sets are created.  For
     every language (or sets of lanugages) a set of extensions is
-    collected and included into the pack set. 
+    collected and included into the pack set.
 
     The content of the extensions.lst file is ignored when the --with-extensions option is given to configure.
-    
+
 =cut
 
 
@@ -101,7 +101,7 @@ sub EvaluateOperator ($$$)
     my ($left,$operator,$right) = @_;
 
     my $result;
-    
+
     if ($operator =~ /^(=|==|eq)$/)
     {
         if ($left =~ /^$right$/)
@@ -134,7 +134,7 @@ sub EvaluateOperator ($$$)
     with arbitrary spacing allowed around and between the three parts.
 
     The left hand side is specially handled:
-    
+
     - When the left hand side is 'language' then it is replaced by
     any of the given languages in turn.  When the term evaluates to true for any of the languages then
     true is returned.  False is returned only when none of the given languages matches.
@@ -151,7 +151,7 @@ sub EvaluateTerm ($$)
     my $languages = shift;
 
     my $result;
-    
+
     if ($term =~ /^\s*(\w+)\s*(\W+)\s*(.*?)\s*$/)
     {
         my ($left,$operator,$right) = ($1,$2,$3);
@@ -160,9 +160,9 @@ sub EvaluateTerm ($$)
         {
             die "unsupported operator $operator on line $LineNo";
         }
-        
+
         die "no right side in condition on line $LineNo ($term)" if ! defined $right;
-        
+
         if ($left =~ /^[A-Z_0-9]+$/)
         {
             # Uppercase words are interpreted as environment variables.
@@ -241,7 +241,7 @@ sub EvaluateSelector($$)
     my $languages = shift;
 
     my $result = "";
-    
+
     if ($expression =~ /^\s*$/)
     {
         # Empty selector is always true.
@@ -264,7 +264,7 @@ sub EvaluateSelector($$)
             return $left_result && $right_result;
         }
         else
-        { 
+        {
             return $left_result || $right_result;
         }
     }
@@ -323,7 +323,7 @@ sub ProcessURL ($)
                 $name = $url_name;
             }
         }
-        
+
         return [$protocol, $name, $URL, $md5];
     }
     else
@@ -354,18 +354,18 @@ sub ParseExtensionsLst ($$)
 {
     my $file_name = shift;
     my $languages = shift;
-    
+
     open my $in, "$file_name";
 
     my $current_selector_value = 1;
     my @URLs = ();
-    
+
     while (<$in>)
     {
         my $line = $_;
         $line =~ s/[\r\n]+//g;
         ++$LineNo;
-        
+
         # Strip away comments.
         next if $line =~ /^\s*#/;
 
@@ -409,7 +409,7 @@ sub Download (@)
 
     my @missing = ();
     my $download_path = $ENV{'TARFILE_LOCATION'};
-    
+
     # First check which (if any) extensions have already been downloaded.
     for my $entry (@urls)
     {
@@ -417,7 +417,7 @@ sub Download (@)
 
         # We can not check the existence of file URLs because they point to extensions that
         # have yet to be built.
-        
+
         next if $protocol !~ /(http|https)/;
         my $candidate = File::Spec->catfile($download_path, $name);
         if ( ! -f $candidate)
@@ -462,7 +462,7 @@ sub Download (@)
         print "all downloadable extensions present\n";
         return;
     }
-    
+
     # Download the missing files.
     for my $entry (@missing)
     {
@@ -475,7 +475,7 @@ sub Download (@)
 
         # Prepare md5
         my $md5 = Digest::MD5->new();
-        
+
         # Download the extension.
         my $agent = LWP::UserAgent->new();
         $agent->timeout(120);
@@ -511,7 +511,7 @@ sub Download (@)
                 print "md5 is not present\n";
                 printf "   is %s, length is %d\n", $md5sum, length(md5sum);
             }
-            
+
             rename($temporary_filename, $filename) || die "can not rename $temporary_filename to $filename";
         }
         else

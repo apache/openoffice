@@ -341,4 +341,3 @@ void SAL_CALL UnoControlTabPageContainer::addControl( const ::rtl::OUString& Nam
     aEvent.Element <<= Control;
     xContainerListener->elementInserted( aEvent );
 }
-

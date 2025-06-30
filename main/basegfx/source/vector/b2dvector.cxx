@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basegfx.hxx"
@@ -57,36 +55,35 @@ namespace basegfx
 		return *this;
 	}
 
-	B2DVector& B2DVector::operator=( const B2DTuple& rVec ) 
-	{ 
+	B2DVector& B2DVector::operator=( const B2DTuple& rVec )
+	{
 		mfX = rVec.getX();
-		mfY = rVec.getY(); 
-		return *this; 
+		mfY = rVec.getY();
+		return *this;
 	}
 
+	double B2DVector::getLength() const
+	{
+		if(fTools::equalZero(mfX))
+		{
+			return fabs(mfY);
+		}
+		else if(fTools::equalZero(mfY))
+		{
+			return fabs(mfX);
+		}
 
-	double B2DVector::getLength() const 
-	{ 
-        if(fTools::equalZero(mfX))
-        {
-            return fabs(mfY);
-        }
-        else if(fTools::equalZero(mfY))
-        {
-            return fabs(mfX);
-        }
-
-        return hypot( mfX, mfY ); 
+		return hypot( mfX, mfY );
 	}
 
-	double B2DVector::scalar( const B2DVector& rVec ) const 
-	{ 
-		return((mfX * rVec.mfX) + (mfY * rVec.mfY)); 
+	double B2DVector::scalar( const B2DVector& rVec ) const
+	{
+		return((mfX * rVec.mfX) + (mfY * rVec.mfY));
 	}
 
-	double B2DVector::cross( const B2DVector& rVec ) const 
-	{ 
-		return(mfX * rVec.getY() - mfY * rVec.getX()); 
+	double B2DVector::cross( const B2DVector& rVec ) const
+	{
+		return(mfX * rVec.getY() - mfY * rVec.getX());
 	}
 
 	double B2DVector::angle( const B2DVector& rVec ) const
@@ -149,7 +146,7 @@ namespace basegfx
 	}
 
 	B2VectorOrientation getOrientation( const B2DVector& rVecA, const B2DVector& rVecB )
-	{ 
+	{
 		double fVal(rVecA.getX() * rVecB.getY() - rVecA.getY() * rVecB.getX());
 
 		if(fTools::equalZero(fVal))
@@ -212,4 +209,4 @@ namespace basegfx
 	}
 } // end of namespace basegfx
 
-// eof
+/* vim: set noet sw=4 ts=4: */

@@ -96,5 +96,3 @@ String SfxMacroInfoItem::GetQualifiedName() const
 	aMacroName += aMethodName;
 	return aMacroName;
 }
-
-

@@ -375,4 +375,3 @@ VCLXVirtualDevice::~VCLXVirtualDevice()
     
     return aAWTSize;
 }
-

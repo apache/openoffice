@@ -152,8 +152,3 @@ SfxPoolItem* SfxFlagItem::Clone(SfxItemPool *) const
 	DBG_CHKTHIS(SfxFlagItem, 0);
 	return new SfxFlagItem( *this );
 }
-
-
-
-
-

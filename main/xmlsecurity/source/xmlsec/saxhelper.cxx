@@ -60,7 +60,7 @@ xmlChar* ous_to_nxmlstr( const rtl::OUString& oustr, int& length )
 }
 
 /**
- * The input parameter isn't necessaryly NULL terminated.
+ * The input parameter isn't necessarily NULL terminated.
  */
 rtl::OUString xmlchar_to_ous( const xmlChar* pChar, int length ) 
 {
@@ -100,7 +100,7 @@ const xmlChar** attrlist_to_nxmlstr( const cssu::Sequence< cssxcsax::XMLAttribut
 	const xmlChar** attrs = NULL ;
 	rtl::OUString oustr ;
 	
-	sal_Int32 nLength = aAttributes.getLength();;
+	sal_Int32 nLength = aAttributes.getLength();
 
 	if( nLength != 0 ) 
 	{
@@ -443,4 +443,3 @@ void SAXHelper::setDocumentLocator(
 
 	//m_pSaxHandler->setDocumentLocator( m_pParserCtxt , m_pSaxLocator ) ;
 }
-

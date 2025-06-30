@@ -81,4 +81,3 @@ DocuExplorer::Process_Token( DYN adoc::Token & let_drToken )
 
 
 }   // namespace adoc
-

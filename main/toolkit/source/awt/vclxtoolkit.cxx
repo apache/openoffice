@@ -1767,4 +1767,3 @@ void SAL_CALL VCLXToolkit::reschedule()
 {
     Application::Reschedule(true);
 }
-

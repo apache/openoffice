@@ -945,4 +945,3 @@ namespace basegfx
         }
     }
 }
-

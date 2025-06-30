@@ -4213,4 +4213,3 @@ void ScInterpreter::ScForecast()
             PushDouble( fMeanY + fSumDeltaXDeltaY / fSumSqrDeltaX * (fVal - fMeanX));
     }
 }
-

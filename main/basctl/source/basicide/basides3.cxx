@@ -170,4 +170,3 @@ void __EXPORT BasicIDEShell::ExecuteDialog( SfxRequest& rReq )
 		pCurWin->ExecuteCommand( rReq );
 	}
 }
-

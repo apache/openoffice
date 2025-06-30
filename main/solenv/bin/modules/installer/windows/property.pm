@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -37,7 +37,7 @@ use installer::windows::language;
 sub get_arpcomments_for_property_table
 {
 	my ( $allvariables, $languagestringref ) = @_;
-	
+
 	my $name = $allvariables->{'PRODUCTNAME'};
 	my $version = $allvariables->{'PRODUCTVERSION'};
 	my $comment = $name . " " . $version;
@@ -66,14 +66,14 @@ sub get_arpcomments_for_property_table
 	my $localminor = "";
 	if ( $installer::globals::updatepack ) { $localminor = $installer::globals::lastminor; }
 	else { $localminor = $installer::globals::minor; }
-	
+
 	my $buildidstring = "(" . $installer::globals::build . $localminor . "(Build:" . $installer::globals::buildid . "))";
 
 	# the environment variable CWS_WORK_STAMP is set only in CWS
 	if ( $ENV{'CWS_WORK_STAMP'} ) { $buildidstring = $buildidstring . "\[CWS\:" . $ENV{'CWS_WORK_STAMP'} . "\]"; }
 
 	$comment = $comment . " " . $buildidstring;
-	
+
 	return $comment;
 }
 
@@ -119,11 +119,11 @@ sub get_language_string
 sub get_english_language_string
 {
 	my $langstring = "";
-	
+
 	# Sorting value not keys, therefore collecting all values
 	my %helper = ();
 	foreach my $lang ( keys %installer::globals::all_required_english_languagestrings )
-	{		
+	{
 		$helper{$installer::globals::all_required_english_languagestrings{$lang}} = 1;
 	}
 
@@ -173,10 +173,10 @@ sub get_productname_for_property_table
 		my $patchstring = "Product Update" . " " . $allvariables->{'WINDOWSPATCHLEVEL'};
 		$productname = $productname . " " . $patchstring;
 	}
-	
+
 	# Saving this name in hash $allvariables for further usage
 	$allvariables->{'PROPERTYTABLEPRODUCTNAME'} = $productname;
-	my $infoline = "Defined variable PROPERTYTABLEPRODUCTNAME: $productname\n"; 
+	my $infoline = "Defined variable PROPERTYTABLEPRODUCTNAME: $productname\n";
 	$installer::logger::Lang->print($infoline);
 
 	return $productname;
@@ -192,7 +192,7 @@ sub get_quickstarterlinkname_for_property_table
 	my $version = $allvariables->{'PRODUCTVERSION'};
 	my $quickstartername = $name . " " . $version;
 
-	my $infoline = "Defined Quickstarter Link name: $quickstartername\n"; 
+	my $infoline = "Defined Quickstarter Link name: $quickstartername\n";
 	$installer::logger::Lang->print($infoline);
 
 	return $quickstartername;
@@ -211,7 +211,7 @@ sub get_productversion_for_property_table
 sub set_featurename_properties_for_patch ($)
 {
 	my ($propertyfile) = @_;
-	
+
 	foreach my $feature_gid (keys %installer::globals::featurecollector)
 	{
 		push @$propertyfile, $feature_gid . "\t" . "1" . "\n";
@@ -226,7 +226,7 @@ sub set_featurename_properties_for_patch ($)
 sub set_important_properties
 {
 	my ($propertyfile, $allvariables, $languagestringref) = @_;
-	
+
 	# Setting new variables with the content of %PRODUCTNAME and %PRODUCTVERSION
 	if ( $allvariables->{'PRODUCTNAME'} )
 	{
@@ -237,55 +237,55 @@ sub set_important_properties
 	if ( $allvariables->{'PRODUCTVERSION'} )
 	{
 		my $onepropertyline = "DEFINEDVERSION" . "\t" . $allvariables->{'PRODUCTVERSION'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
-	
+
 	if (( $allvariables->{'PRODUCTNAME'} ) && ( $allvariables->{'PRODUCTVERSION'} ) && ( $allvariables->{'MANUFACTURER'} ) && ( $allvariables->{'PRODUCTCODE'} ))
 	{
 		my $onepropertyline = "FINDPRODUCT" . "\t" . "Software\\" . $allvariables->{'MANUFACTURER'} . "\\" . $allvariables->{'PRODUCTNAME'} . $allvariables->{'PRODUCTADDON'} . "\\" . $allvariables->{'PRODUCTVERSION'} . "\\" . $allvariables->{'PRODUCTCODE'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
-	
+
 	if ( $allvariables->{'PRODUCTMAJOR'} )
 	{
 		my $onepropertyline = "PRODUCTMAJOR" . "\t" . $allvariables->{'PRODUCTMAJOR'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
-	
+
 	if ( $allvariables->{'PRODUCTMINOR'} )
 	{
 		my $onepropertyline = "PRODUCTMINOR" . "\t" . $allvariables->{'PRODUCTMINOR'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	if ( $allvariables->{'PRODUCTBUILDID'} )
 	{
 		my $onepropertyline = "PRODUCTBUILDID" . "\t" . $allvariables->{'PRODUCTBUILDID'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	if ( $allvariables->{'OOOBASEVERSION'} )
 	{
 		my $onepropertyline = "OOOBASEVERSION" . "\t" . $allvariables->{'OOOBASEVERSION'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	if ( $allvariables->{'URELAYERVERSION'} )
 	{
 		my $onepropertyline = "URELAYERVERSION" . "\t" . $allvariables->{'URELAYERVERSION'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	if ( $allvariables->{'BRANDPACKAGEVERSION'} )
 	{
 		my $onepropertyline = "BRANDPACKAGEVERSION" . "\t" . $allvariables->{'BRANDPACKAGEVERSION'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	if ( $allvariables->{'BASISROOTNAME'} )
 	{
 		my $onepropertyline = "BASISROOTNAME" . "\t" . $allvariables->{'BASISROOTNAME'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	if ( $allvariables->{'EXCLUDE_FROM_REBASE'} )
@@ -297,11 +297,11 @@ sub set_important_properties
 	if ( $allvariables->{'PREREQUIREDPATCH'} )
 	{
 		my $onepropertyline = "PREREQUIREDPATCH" . "\t" . $allvariables->{'PREREQUIREDPATCH'} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
     my $onepropertyline = "IGNOREPREREQUIREDPATCH" . "\t" . "1" . "\n";
-    push(@{$propertyfile}, $onepropertyline);	
+    push(@{$propertyfile}, $onepropertyline);
 
     $onepropertyline = "DONTOPTIMIZELIBS" . "\t" . "0" . "\n";
     push(@{$propertyfile}, $onepropertyline);
@@ -310,7 +310,7 @@ sub set_important_properties
 	{
 		my $onepropertyline = "OFFICEDIRHOSTNAME" . "\t" . $installer::globals::officedirhostname . "\n";
 		push(@{$propertyfile}, $onepropertyline);
-		
+
 		my $localofficedirhostname = $installer::globals::officedirhostname;
 		$localofficedirhostname =~ s/\//\\/g;
 		$onepropertyline = "OFFICEDIRHOSTNAME_" . "\t" . $localofficedirhostname . "\n";
@@ -320,10 +320,10 @@ sub set_important_properties
 	if ( $installer::globals::desktoplinkexists )
 	{
 		my $onepropertyline = "DESKTOPLINKEXISTS" . "\t" . "1" . "\n";
-		push(@{$propertyfile}, $onepropertyline);		
+		push(@{$propertyfile}, $onepropertyline);
 
 		$onepropertyline = "CREATEDESKTOPLINK" . "\t" . "1" . "\n";	# Setting the default
-		push(@{$propertyfile}, $onepropertyline);		
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	if ( $installer::globals::patch )
@@ -332,17 +332,17 @@ sub set_important_properties
 		push(@{$propertyfile}, $onepropertyline);
 
 		$onepropertyline = "SETUP_USED" . "\t" . "0" . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	if ( $installer::globals::languagepack )
 	{
 		my $onepropertyline = "ISLANGUAGEPACK" . "\t" . "1" . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	my $languagesline = "PRODUCTALLLANGUAGES" . "\t" . $$languagestringref . "\n";
-	push(@{$propertyfile}, $languagesline);	
+	push(@{$propertyfile}, $languagesline);
 
 	if (( $allvariables->{'PRODUCTEXTENSION'} ) && ( $allvariables->{'PRODUCTEXTENSION'}  eq "Beta" ))
 	{
@@ -354,20 +354,20 @@ sub set_important_properties
 	elsif ( $allvariables->{'DEVELOPMENTPRODUCT'} )
 	{
 		my $registryline = "WRITE_REGISTRY" . "\t" . "0" . "\n";
-		push(@{$propertyfile}, $registryline);		
+		push(@{$propertyfile}, $registryline);
 	}
 	else
 	{
 		my $registryline = "WRITE_REGISTRY" . "\t" . "1" . "\n";	# Default: Write complete registry
-		push(@{$propertyfile}, $registryline);		
+		push(@{$propertyfile}, $registryline);
 	}
-	
+
 	# Adding also used tree conditions for multilayer products.
 	# These are saved in %installer::globals::usedtreeconditions
 	foreach my $treecondition (keys %installer::globals::usedtreeconditions)
 	{
 		my $onepropertyline = $treecondition . "\t" . "1" . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	# No more license dialog for selected products
@@ -390,19 +390,19 @@ sub set_important_properties
 		if ( ! $already_defined )
 		{
 			push(@{$propertyfile}, $onepropertyline);
-		}		
+		}
 	}
-	
+
 	# Setting .NET requirements
 	if ( $installer::globals::required_dotnet_version ne "" )
 	{
 		my $onepropertyline = "REQUIRED_DOTNET_VERSION" . "\t" . $installer::globals::required_dotnet_version . "\n";
-		push(@{$propertyfile}, $onepropertyline);		
+		push(@{$propertyfile}, $onepropertyline);
 
 		$onepropertyline = "DOTNET_SUFFICIENT" . "\t" . "1" . "\n";	# default value for found .NET
-		push(@{$propertyfile}, $onepropertyline);		
+		push(@{$propertyfile}, $onepropertyline);
 	}
-	
+
 }
 
 #######################################################
@@ -412,7 +412,7 @@ sub set_important_properties
 sub set_ms_file_types_properties
 {
 	my ($propertyfile) = @_;
-	
+
     push(@{$propertyfile}, "REGISTER_PPS"  . "\t" . "0" . "\n");
     push(@{$propertyfile}, "REGISTER_PPSX" . "\t" . "0" . "\n");
     push(@{$propertyfile}, "REGISTER_PPSM" . "\t" . "0" . "\n");
@@ -447,7 +447,7 @@ sub set_ms_file_types_properties
 
 ####################################################################################
 # Updating the file Property.idt dynamically
-# Content: 
+# Content:
 # Property Value
 ####################################################################################
 
@@ -456,7 +456,7 @@ sub update_property_table
 	my ($basedir, $language, $allvariables, $languagestringref) = @_;
 
 	my $properyfilename = $basedir . $installer::globals::separator . "Property.idt";
-	
+
 	my $propertyfile = installer::files::read_file($properyfilename);
 
 	# Getting the new values
@@ -490,14 +490,14 @@ sub update_property_table
 
 	# Setting feature names as properties for Windows patch mechanism
 	if ( $installer::globals::patch ) { set_featurename_properties_for_patch($propertyfile); }
-	
+
 	# Setting variables for register for ms file types
 	set_ms_file_types_properties($propertyfile);
 
 	# Saving the file
-	
+
 	installer::files::save_file($properyfilename ,$propertyfile);
-	my $infoline = "Updated idt file: $properyfilename\n"; 
+	my $infoline = "Updated idt file: $properyfilename\n";
 	$installer::logger::Lang->print($infoline);
 
 }
@@ -510,7 +510,7 @@ sub update_property_table
 ####################################################################################
 
 sub set_languages_in_property_table
-{	
+{
 	my ($basedir, $languagesarrayref) = @_;
 
 	my $properyfilename = $basedir . $installer::globals::separator . "Property.idt";
@@ -520,33 +520,33 @@ sub set_languages_in_property_table
 	foreach my $localproperty ( keys %installer::globals::languageproperties )
 	{
 		$onepropertyline =  $localproperty . "\t" . $installer::globals::languageproperties{$localproperty} . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	# Setting the info about multilingual installation in property "isMulti"
 
-	my $propertyname = "isMulti";	
+	my $propertyname = "isMulti";
 	my $ismultivalue = 0;
 
 	if ( $installer::globals::ismultilingual ) { $ismultivalue = 1; }
 
 	my $onepropertyline =  $propertyname . "\t" . $ismultivalue . "\n";
-	push(@{$propertyfile}, $onepropertyline);	
+	push(@{$propertyfile}, $onepropertyline);
 
 	# setting the ARPPRODUCTICON
-	
+
 	if ($installer::globals::sofficeiconadded)	# set in shortcut.pm
 	{
 		$onepropertyline =  "ARPPRODUCTICON" . "\t" . "soffice.ico" . "\n";
-		push(@{$propertyfile}, $onepropertyline);	
+		push(@{$propertyfile}, $onepropertyline);
 	}
 
 	# Saving the file
-	
+
 	installer::files::save_file($properyfilename ,$propertyfile);
-	my $infoline = "Added language content into idt file: $properyfilename\n"; 
+	my $infoline = "Added language content into idt file: $properyfilename\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 }
 
 ############################################################
@@ -556,7 +556,7 @@ sub set_languages_in_property_table
 ############################################################
 
 sub set_codes_in_property_table
-{	
+{
 	my ($basedir) = @_;
 
 	# Reading the property file
@@ -573,11 +573,11 @@ sub set_codes_in_property_table
 	}
 
 	# Saving the property file
-	
+
 	installer::files::save_file($properyfilename ,$propertyfile);
-	my $infoline = "Added language content into idt file: $properyfilename\n"; 
+	my $infoline = "Added language content into idt file: $properyfilename\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 }
 
 ############################################################
@@ -599,12 +599,12 @@ sub set_regkeyprodpath_in_property_table
 
 	my $onepropertyline = "REGKEYPRODPATH" . "\t" . "Software" . "\\" . $installer::globals::manufacturer . "\\". $name;
 
-	push(@{$propertyfile}, $onepropertyline);	
+	push(@{$propertyfile}, $onepropertyline);
 
 	# Saving the property file
-	
+
 	installer::files::save_file($properyfilename ,$propertyfile);
-	my $infoline = "Added language content into idt file: $properyfilename\n"; 
+	my $infoline = "Added language content into idt file: $properyfilename\n";
 	$installer::logger::Lang->print($infoline);
 
 }
@@ -617,15 +617,15 @@ sub set_regkeyprodpath_in_property_table
 sub update_checkbox_table
 {
 	my ($basedir, $allvariables) = @_;
-	
+
 	if (( $allvariables->{'PRODUCTEXTENSION'} ) && ( $allvariables->{'PRODUCTEXTENSION'}  eq "Beta" ))
 	{
 		my $checkboxfilename = $basedir . $installer::globals::separator . "CheckBox.idt";
-		
+
 		if ( -f $checkboxfilename )
 		{
 			my $checkboxfile = installer::files::read_file($checkboxfilename);
-		
+
 			my $checkboxline = "SELECT_WORD" . "\t" . "0" . "\n";
 			push(@{$checkboxfile}, $checkboxline);
 			$checkboxline = "SELECT_EXCEL" . "\t" . "0" . "\n";
@@ -635,10 +635,10 @@ sub update_checkbox_table
 
 			# Saving the property file
 			installer::files::save_file($checkboxfilename ,$checkboxfile);
-			my $infoline = "Added ms file type defaults into idt file: $checkboxfilename\n"; 
+			my $infoline = "Added ms file type defaults into idt file: $checkboxfilename\n";
 			$installer::logger::Lang->print($infoline);
 		}
-	}	
+	}
 }
 
 1;

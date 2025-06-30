@@ -261,7 +261,7 @@ DWORD WINAPI DndTargetOleSTAFunc(LPVOID pParams)
 // XServiceInfo
 OUString SAL_CALL DropTarget::getImplementationName(  ) throw (RuntimeException)
 {
-	return OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_IMPL_NAME));;
+	return OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_IMPL_NAME));
 }
 // XServiceInfo
 sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName ) throw (RuntimeException)
@@ -653,4 +653,3 @@ inline sal_Int8 DropTarget::getFilteredActions( DWORD grfKeyState, DWORD dwEffec
 	sal_Int8 actions= dndOleKeysToAction( grfKeyState, dndOleDropEffectsToActions( dwEffect));
 	return actions & m_nDefaultActions;
 }
-

@@ -44,4 +44,3 @@ void SvRefBase::QueryDelete()
 	nRefCount = SV_NO_DELETE_REFCOUNT / 2;
 	delete this;
 }
-

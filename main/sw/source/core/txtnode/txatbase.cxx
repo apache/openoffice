@@ -78,4 +78,3 @@ xub_StrLen* SwTxtAttrEnd::GetEnd()
 {
     return & m_nEnd;
 }
-

@@ -281,6 +281,3 @@ extern "C" UINT __stdcall IsOfficeRunning( MSIHANDLE handle )
 
 	return ERROR_SUCCESS;
 }
-
-
-

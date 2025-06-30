@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
-
 
 #include <tools/stream.hxx>
 #include "sbcomp.hxx"
@@ -49,7 +46,7 @@ sal_Bool SbiParser::Channel( sal_Bool bAlways )
 	return bRes;
 }
 
-// Fuer PRINT und WRITE wird bei Objektvariablen versucht,
+// Für PRINT und WRITE wird bei Objektvariablen versucht,
 // die Default-Property anzusprechen.
 
 // PRINT
@@ -57,7 +54,7 @@ sal_Bool SbiParser::Channel( sal_Bool bAlways )
 void SbiParser::Print()
 {
 	sal_Bool bChan = Channel();
-	// Die Ausdruecke zum Drucken:
+	// Die Ausdrücke zum drucken:
 	while( !bAbort )
 	{
 		if( !IsEoln( Peek() ) )
@@ -88,7 +85,7 @@ void SbiParser::Print()
 void SbiParser::Write()
 {
 	sal_Bool bChan = Channel();
-	// Die Ausdruecke zum Drucken:
+	// Die Ausdrücke zum drucken:
 	while( !bAbort )
 	{
 		SbiExpression* pExpr = new SbiExpression( this );
@@ -168,7 +165,7 @@ void SbiParser::LineInput()
 	pExpr->Gen();
 	aGen.Gen( _LINPUT );
 	delete pExpr;
-	aGen.Gen( _CHAN0 );		// ResetChannel() nicht mehr in StepLINPUT()
+	aGen.Gen( _CHAN0 ); // ResetChannel() nicht mehr in StepLINPUT()
 }
 
 // INPUT
@@ -199,10 +196,10 @@ void SbiParser::Input()
 		else break;
 	}
 	delete pExpr;
-	aGen.Gen( _CHAN0 );		// ResetChannel() nicht mehr in StepINPUT()
+	aGen.Gen( _CHAN0 ); // ResetChannel() nicht mehr in StepINPUT()
 }
 
-// OPEN stringexpr FOR mode ACCCESS access mode AS Channel [Len=n]
+// OPEN stringexpr FOR mode ACCESS access mode AS Channel [Len=n]
 
 void SbiParser::Open()
 {
@@ -214,7 +211,7 @@ void SbiParser::Open()
 	switch( Next() )
 	{
 		case INPUT:
-			nMode = STREAM_READ;  nFlags |= SBSTRM_INPUT; break;
+			nMode = STREAM_READ; nFlags |= SBSTRM_INPUT; break;
 		case OUTPUT:
 			nMode = STREAM_WRITE | STREAM_TRUNC; nFlags |= SBSTRM_OUTPUT; break;
 		case APPEND:
@@ -231,7 +228,7 @@ void SbiParser::Open()
 		Next();
 		eTok = Next();
 		// #27964# Nur STREAM_READ,STREAM_WRITE-Flags in nMode beeinflussen
-		nMode &= ~(STREAM_READ | STREAM_WRITE);		// loeschen
+		nMode &= ~(STREAM_READ | STREAM_WRITE);		// löschen
 		if( eTok == READ )
 		{
 			if( Peek() == WRITE )
@@ -291,8 +288,8 @@ void SbiParser::Open()
 		}
 	}
 	if( !pLen ) pLen = new SbiExpression( this, 128, SbxINTEGER );
-	// Der Stack fuer den OPEN-Befehl sieht wie folgt aus:
-	// Blocklaenge
+	// Der Stack für den OPEN-Befehl sieht wie folgt aus:
+	// Blocklänge
 	// Kanalnummer
 	// Dateiname
 	pLen->Gen();
@@ -351,4 +348,4 @@ void SbiParser::Close()
 	}
 }
 
-
+/* vim: set noet sw=4 ts=4: */

@@ -1167,8 +1167,3 @@ void SAL_CALL cli_proxy_dispatch(
 #endif
     }
 }
-
-
-
-
-

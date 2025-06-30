@@ -136,6 +136,3 @@ sal_Bool __EXPORT ScUndoDraw::CanRepeat(SfxRepeatTarget& rTarget) const
 	else
 		return sal_False;
 }
-
-
-

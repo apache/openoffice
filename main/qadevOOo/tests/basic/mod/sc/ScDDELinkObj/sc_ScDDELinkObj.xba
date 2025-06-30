@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -34,7 +34,7 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.container.XNamed
+' Required for  com.sun.star.container.XNamed
 Global cNameToSet As String ' "fixed" if name is fixed
 Global DDEItem As String
 Global DDETopic As String
@@ -46,7 +46,7 @@ Global oTestDoc As Object
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' sc.ScDDELinkObj
 '*************************************************************************
 On Error Goto ErrHndl
@@ -60,15 +60,15 @@ On Error Goto ErrHndl
 
     DDEItem = "Sheet1.A1"
 
-    ' This construction of 2-way conversion of testdocs location 
-    ' should take place here, because there is unnecessary slash at the end of 
+    ' This construction of 2-way conversion of testdocs location
+    ' should take place here, because there is unnecessary slash at the end of
     ' cTestDocsDir.
     DDETopic = utils.URL2Path(utils.Path2URL(cTestDocsDir &amp; "ScDDELinksObj.sdc"))
 
     DDEApplication = "soffice"
 
     oF = "=DDE(""" + DDEApplication + """;""" + DDETopic + """;""" + DDEItem + """)"
-    
+
     oSheet.getCellByPosition(1, 2).Formula = oF
     oSheet.getCellByPosition(3, 4).Formula = oF
     oSheet.getCellByPosition(5, 6).Formula = oF

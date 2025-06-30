@@ -64,4 +64,3 @@ namespace connectivity
 		return sStatement;
 	}
 }
-

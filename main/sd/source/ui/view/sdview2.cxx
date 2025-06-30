@@ -1031,12 +1031,12 @@ void ImplProcessObjectList(SdrObject* pObj, SdrObjectVector& rVector )
 
 SdrModel* View::GetMarkedObjModel() const
 {
-	return FmFormView::GetMarkedObjModel();;
+	return FmFormView::GetMarkedObjModel();
 }
 
 sal_Bool View::Paste(const SdrModel& rMod, const Point& rPos, SdrObjList* pLst /* =NULL */, sal_uInt32 nOptions /* =0 */)
 {
-	return FmFormView::Paste( rMod, rPos, pLst,nOptions );;
+	return FmFormView::Paste( rMod, rPos, pLst,nOptions );
 }
 
 } // end of namespace sd

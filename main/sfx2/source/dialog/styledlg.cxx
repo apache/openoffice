@@ -168,5 +168,3 @@ IMPL_LINK( SfxStyleDialog, CancelHdl, Button *, pButton )
 	EndDialog( RET_CANCEL );
 	return 0;
 }
-
-

@@ -80,4 +80,3 @@ ContextHandlerRef ThemeFragmentHandler::onCreateContext( sal_Int32 nElement, con
 
 } // namespace drawingml
 } // namespace oox
-

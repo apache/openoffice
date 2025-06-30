@@ -921,7 +921,3 @@ sal_Bool SwCrsrShell::EndAllTblBoxEdit()
 	} while( this != (pSh = (ViewShell *)pSh->GetNext()) );
 	return bRet;
 }
-
-
-
-

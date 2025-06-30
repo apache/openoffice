@@ -407,4 +407,3 @@ void XclExpChartPageSettings::Save( XclExpStream& rStrm )
 }
 
 // ============================================================================
-

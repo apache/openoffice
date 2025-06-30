@@ -565,7 +565,7 @@ void SubstitutePathVariables_Impl::ReadSharePointRuleSetFromConfiguration(
             }
         }
 
-        // Decode the environment and optional the operatng system settings
+        // Decode the environment and optional the operating system settings
         Any                             aEnvValue;
         EnvironmentType eEnvType = GetEnvTypeFromString( aEnvUsed );
         if ( eEnvType == ET_OS )
@@ -624,7 +624,7 @@ SubstitutePathVariables::SubstitutePathVariables( const Reference< XMultiService
     {
         if (( i != PREDEFVAR_WORKDIRURL ) && ( i != PREDEFVAR_PATH ))
         {
-            // Special path variables, don't include into automatic resubstituion search!
+            // Special path variables, don't include into automatic resubstitution search!
             // $(workdirurl) is not allowed to resubstitute! This variable is the value of path settings entry
             // and it could be possible that it will be resubstituted by itself!!
             // Example: WORK_PATH=c:\test, $(workdirurl)=WORK_PATH => WORK_PATH=$(workdirurl) and this cannot be substituted!

@@ -91,7 +91,7 @@ SchXMLDocContext::SchXMLDocContext( SchXMLImportHelper& rImpHelper,
 		  IsXMLToken( rLName, XML_DOCUMENT_META) ||
 		  IsXMLToken( rLName, XML_DOCUMENT_STYLES) ||
 		  IsXMLToken( rLName, XML_DOCUMENT_CONTENT) ),
-				"SchXMLDocContext instanciated with no <office:document> element" );
+				"SchXMLDocContext instantiated with no <office:document> element" );
 }
 
 SchXMLDocContext::~SchXMLDocContext()
@@ -186,7 +186,7 @@ SchXMLBodyContext::SchXMLBodyContext( SchXMLImportHelper& rImpHelper,
 {
 	DBG_ASSERT( XML_NAMESPACE_OFFICE == nPrefix &&
 				IsXMLToken( rLName, XML_CHART ),
-				"SchXMLBodyContext instanciated with no <office:chart> element" );
+				"SchXMLBodyContext instantiated with no <office:chart> element" );
 }
 
 SchXMLBodyContext::~SchXMLBodyContext()
@@ -225,5 +225,3 @@ SvXMLImportContext* SchXMLBodyContext::CreateChildContext(
 
 	return pContext;	
 }
-
-

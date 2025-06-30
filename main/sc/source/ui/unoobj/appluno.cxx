@@ -996,7 +996,3 @@ sal_Bool SAL_CALL ScFunctionListObj::hasByName( const rtl::OUString& aName )
 }
 
 //------------------------------------------------------------------------
-
-
-
-

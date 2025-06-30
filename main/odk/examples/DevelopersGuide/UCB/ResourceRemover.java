@@ -36,7 +36,7 @@ public class ResourceRemover {
     /**
      * Constructor.
      *
-     *@param      String[]   This construtor requires the arguments:
+     *@param      String[]   This constructor requires the arguments:
      *                          -url=...     (optional)
      *                          -workdir=... (optional)
      *                       See Help (method printCmdLineUsage()).

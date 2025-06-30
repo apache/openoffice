@@ -101,4 +101,3 @@ const TextFont* Theme::resolveFont( const OUString& rName ) const
 
 } // namespace drawingml
 } // namespace oox
-

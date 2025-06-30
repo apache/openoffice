@@ -228,5 +228,3 @@ NoneItem::do_ProduceItem() const
 }
 
 }   // anonymous namespace
-
-

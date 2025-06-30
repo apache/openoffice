@@ -67,7 +67,7 @@ public class ImageReadHandler extends ElementReadHandler
 //        final String preserveIRI = attrs.getValue(OfficeNamespaces.OOREPORT_NS, OfficeToken.PRESERVE_IRI);
         if (formula != null && formula.length() != 0)
         {
-            // now, the evaulated content ends up in the 'content' attribute of the
+            // now, the evaluated content ends up in the 'content' attribute of the
             // element.
             final FormulaExpression valueExpression = new FormulaExpression();
             valueExpression.setFormula(formula);
@@ -99,7 +99,7 @@ public class ImageReadHandler extends ElementReadHandler
 
         if (OfficeNamespaces.OOREPORT_NS.equals(uri))
         {
-            // expect a report control. The control will modifiy the current
+            // expect a report control. The control will modify the current
             // element (as we do not separate the elements that strictly ..)
             if ("report-control".equals(tagName))
             {

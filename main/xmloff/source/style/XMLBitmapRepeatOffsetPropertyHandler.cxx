@@ -98,4 +98,3 @@ sal_Bool XMLBitmapRepeatOffsetPropertyHandler::exportXML(
 
 	return sal_False;
 }
-

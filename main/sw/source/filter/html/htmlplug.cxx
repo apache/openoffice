@@ -124,7 +124,7 @@ const sal_uLong HTML_FRMOPTS_OLE_CSS1		=
 	HTML_FRMOPT_S_ALIGN |
 	HTML_FRMOPT_S_SPACE;
 
-/*  */
+/* */
 
 void SwHTMLParser::SetFixSize( const Size& rPixSize,
 							   const Size& rTwipDfltSize,
@@ -298,7 +298,7 @@ void SwHTMLParser::SetSpace( const Size& rPixSpace,
 	}
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::InsertEmbed()
 {
@@ -492,7 +492,7 @@ void SwHTMLParser::InsertEmbed()
 	}
 }
 
-/*  */
+/* */
 
 #ifdef SOLAR_JAVA
 void SwHTMLParser::NewObject()
@@ -588,7 +588,7 @@ void SwHTMLParser::NewObject()
 
 	// Objects that are declared only are not evaluated. Moreover, only
 	// Java applets are supported.
-	sal_Bool bIsApplet = sal_False;;
+	sal_Bool bIsApplet = sal_False;
 
 	if( !bDeclare && aClassID.Len() == 42 &&
 		aClassID.EqualsAscii( "clsid:", 0, 6 ) )
@@ -828,7 +828,7 @@ void SwHTMLParser::InsertParam()
 }
 
 
-/*  */
+/* */
 
 void SwHTMLParser::InsertFloatingFrame()
 {
@@ -972,7 +972,7 @@ void SwHTMLParser::InsertFloatingFrame()
 	bInFloatingFrame = sal_True;
 }
 
-/*  */
+/* */
 
 /*
 #define SWHTML_OPTTYPE_IGNORE 0

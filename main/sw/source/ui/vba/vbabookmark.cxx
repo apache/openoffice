@@ -102,4 +102,3 @@ SwVbaBookmark::getServiceNames()
 	}
 	return aServiceNames;
 }
-

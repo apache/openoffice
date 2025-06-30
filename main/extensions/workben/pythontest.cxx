@@ -550,4 +550,3 @@ int __LOADONCALLAPI main (int argc, char **argv)
 	fprintf( stderr, "main terminates\n" );
 	return 0;
 }
-

@@ -74,5 +74,3 @@ Reference< XTypeDescription > TypedefTypeDescriptionImpl::getReferencedType()
 }
 
 }
-
-

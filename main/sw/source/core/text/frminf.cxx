@@ -368,6 +368,3 @@ KSHORT SwTxtFrmInfo::GetBigIndent( xub_StrLen& rFndPos,
 			? KSHORT( aRect.Left() - pFrm->Frm().Left() - pFrm->Prt().Left())
 			: 0;
 }
-
-
-

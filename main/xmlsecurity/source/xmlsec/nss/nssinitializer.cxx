@@ -522,4 +522,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL ONSSInitializer::getSupportedServiceNam
 {
     return ONSSInitializer_getSupportedServiceNames();
 }
-

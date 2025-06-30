@@ -170,5 +170,3 @@ sal_Bool ScUnitConverter::GetValue( double& fValue, const String& rFromUnit,
 	fValue = 1.0;
 	return sal_False;
 }
-
-

@@ -19,7 +19,7 @@
   (insert "        </UML:TaggedValue.type>\n")
   (insert "      </UML:TaggedValue>\n")
   (insert "    </UML:ModelElement.taggedValue>\n"))
-  
+
 (defun insert-uml-attribute (type name offset bits mask shift comment attrid)
   (insert "<UML:Classifier.feature>\n")
   (insert "  <UML:Attribute name=\"" name "\">\n")
@@ -119,7 +119,7 @@
   (insert "</UML:Generalization>\n"))
 
 (defun insert-uml-sprm (name sprmcode kind)
-  (insert-uml-class-begin name) 
+  (insert-uml-class-begin name)
   (insert-uml-stereotype "ww8sprm")
   (insert-uml-taggedvalue sprmcode "sprmcode")
   (insert-uml-taggedvalue (concat "rtf:" name) "sprmid")

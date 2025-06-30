@@ -229,4 +229,3 @@ embed::VisualRepresentation SAL_CALL OCommonEmbeddedObject::getPreferredVisualRe
 
 	return aVisualRepresentation;
 }
-

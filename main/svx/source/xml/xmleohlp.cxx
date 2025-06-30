@@ -812,4 +812,3 @@ sal_Bool SAL_CALL SvXMLEmbeddedObjectHelper::hasElements()
         return rContainer.HasEmbeddedObjects();
     }
 }
-

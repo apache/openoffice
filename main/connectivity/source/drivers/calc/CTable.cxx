@@ -864,4 +864,3 @@ void OCalcTable::FileClose()
 	OCalcTable_BASE::FileClose();
 }
 // -------------------------------------------------------------------------
-

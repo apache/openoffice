@@ -96,5 +96,3 @@ uno::Reference< uno::XInterface > SAL_CALL SdPresentationDocument_createInstance
             _nCreationFlags, sal_False, DOCUMENT_TYPE_IMPRESS );
 	return uno::Reference< uno::XInterface >( pShell->GetModel() );
 }
-
-

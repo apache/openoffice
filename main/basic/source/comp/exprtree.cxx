@@ -1156,4 +1156,3 @@ SbiDimList::SbiDimList( SbiParser* p ) : SbiExprList( p )
 	}
 	else pParser->Next();
 }
-

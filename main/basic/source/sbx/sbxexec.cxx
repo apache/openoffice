@@ -387,11 +387,10 @@ SbxVariable* SbxObject::FindQualified( const XubString& rName, SbxClassType t )
 	const xub_Unicode* p = rName.GetBuffer();
 	p = SkipWhitespace( p );
 	if( !*p )
-		return NULL;;
+		return NULL;
 	pVar = QualifiedName( this, this, &p, t );
 	p = SkipWhitespace( p );
 	if( *p )
 		SetError( SbxERR_SYNTAX );
 	return pVar;
 }
-

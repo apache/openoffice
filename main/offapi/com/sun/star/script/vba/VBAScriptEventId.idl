@@ -77,7 +77,7 @@ constants VBAScriptEventId
 
     //-------------------------------------------------------------------------
     /** This event is fired when a VBA script in the current document tries to
-        instanciate a userform.
+        instantiate a userform.
 
         <p>The member <member>VBAScriptEvent::ModuleName</member> of the event
         object will contain the name of the userform module.</p>

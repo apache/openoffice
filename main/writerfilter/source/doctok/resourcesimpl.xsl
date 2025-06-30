@@ -846,4 +846,3 @@ bool isBooleanDffOpt(sal_uInt32 nId)
 </xsl:template>
 
 </xsl:stylesheet>
-

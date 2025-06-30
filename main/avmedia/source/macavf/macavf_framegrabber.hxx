@@ -38,7 +38,7 @@ class FrameGrabber : public ::cppu::WeakImplHelper2 < ::com::sun::star::media::X
 {
 public:
 
-    explicit FrameGrabber( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& );
+    explicit FrameGrabber( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& );
     virtual  ~FrameGrabber();
 
     bool    create( const ::rtl::OUString& rURL );
@@ -54,7 +54,7 @@ public:
 
 private:
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >    mxMgr;
+    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >    mxContext;
 
     AVAssetImageGenerator* mpImageGen;
 };

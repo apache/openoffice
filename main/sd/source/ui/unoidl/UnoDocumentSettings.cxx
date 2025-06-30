@@ -1241,4 +1241,3 @@ Sequence< OUString > SAL_CALL DocumentSettings::getSupportedServiceNames(  )
 
 	return aSeq;
 }
-

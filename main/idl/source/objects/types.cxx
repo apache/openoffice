@@ -2691,5 +2691,3 @@ void SvMetaAttribute::WriteCSV( SvIdlDataBase&, SvStream& rStrm )
     rStrm << GetName().GetBuffer() << ' ';
     rStrm << GetSlotId().GetBuffer();
 }
-
-

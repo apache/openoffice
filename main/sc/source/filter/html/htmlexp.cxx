@@ -1332,6 +1332,3 @@ void ScHTMLExport::IncIndent( short nVal )
 		nIndent = nIndentMax;
 	sIndent[nIndent] = 0;
 }
-
-
-

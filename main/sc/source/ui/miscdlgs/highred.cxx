@@ -295,6 +295,3 @@ IMPL_LINK( ScHighlightChgDlg, OKBtnHdl, PushButton*, pOKBtn )
 	}
 	return 0;
 }
-
-
-

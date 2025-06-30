@@ -175,4 +175,3 @@ void vcl::unohelper::DragAndDropWrapper::dropActionChanged( const ::com::sun::st
     if ( mpClient )
         mpClient->dropActionChanged( rDTDE );
 }
-

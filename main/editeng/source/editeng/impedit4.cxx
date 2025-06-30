@@ -713,7 +713,7 @@ sal_uInt32 ImpEditEngine::WriteRTF( SvStream& rOutput, EditSelection aSel )
 			nIndex = nIndex + pTextPortion->GetLen();
 		}
 
-		rOutput << OOO_STRING_SVTOOLS_RTF_PAR << OOO_STRING_SVTOOLS_RTF_PARD << OOO_STRING_SVTOOLS_RTF_PLAIN;;
+		rOutput << OOO_STRING_SVTOOLS_RTF_PAR << OOO_STRING_SVTOOLS_RTF_PARD << OOO_STRING_SVTOOLS_RTF_PLAIN;
 		rOutput << endl;
 	}
 	// RTF-Nachspann...
@@ -2866,7 +2866,7 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
 
         // since we don't use Hiragana/Katakana or half-width/full-width transliterations here
         // it is fine to use ANYWORD_IGNOREWHITESPACES. (ANY_WORD btw is broken and will 
-        // occasionaly miss words in consecutive sentences). Also with ANYWORD_IGNOREWHITESPACES
+        // occasionally miss words in consecutive sentences). Also with ANYWORD_IGNOREWHITESPACES
         // text like 'just-in-time' will be converted to 'Just-In-Time' which seems to be the
         // proper thing to do.
         const sal_Int16 nWordType = i18n::WordType::ANYWORD_IGNOREWHITESPACES;
@@ -3246,5 +3246,3 @@ long ImpEditEngine::LogicToTwips( long n )
 	aSz = pRefDev->LogicToLogic( aSz, NULL, &aTwipsMode );
 	return aSz.Width();
 }
-
-

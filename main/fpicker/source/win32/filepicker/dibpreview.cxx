@@ -466,4 +466,3 @@ void SAL_CALL CDIBPreview::UnregisterDibPreviewWindowClass()
 		s_ClassAtom = 0;
 	}
 }
-

@@ -278,7 +278,7 @@ sal_Bool Idlc::isDocValid()
 { 
 	if ( m_bGenerateDoc )
 		return m_bIsDocValid; 
-	return sal_False;;
+	return sal_False;
 }
 	 
 static Idlc* pStaticIdlc = NULL;

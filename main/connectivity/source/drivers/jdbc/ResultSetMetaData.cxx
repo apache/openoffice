@@ -231,4 +231,3 @@ sal_Bool SAL_CALL java_sql_ResultSetMetaData::isWritable( sal_Int32 column ) thr
     return callBooleanMethodWithIntArg( "isWritable", mID,column );
 }
 // -------------------------------------------------------------------------
-

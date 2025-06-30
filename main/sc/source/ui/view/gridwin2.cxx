@@ -1069,7 +1069,3 @@ void ScGridWindow::PagebreakMove( const MouseEvent& rMEvt, sal_Bool bUp )
 	else
 		pViewData->GetView()->ResetTimer();
 }
-
-
-
-

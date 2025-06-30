@@ -95,4 +95,3 @@ sal_Bool XMLWordWrapPropertyHdl::exportXML( OUString& rStrExpValue, const Any& r
 	}
 	return sal_True;
 }
-

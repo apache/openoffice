@@ -266,4 +266,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicExport( SvStream& rStream, Graphic& r
 
 	return aXPMWriter.WriteXPM( rGraphic, rStream, pFilterConfigItem );
 }
-

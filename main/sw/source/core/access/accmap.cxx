@@ -654,7 +654,7 @@ class SwAccPreviewData
 
     const SwPageFrm *mpSelPage;
 
-    /** adjust logic page retangle to its visible part
+    /** adjust logic page rectangle to its visible part
 
         OD 17.01.2003 #103492#
 
@@ -821,7 +821,7 @@ void SwAccPreviewData::DisposePage(const SwPageFrm *pPageFrm )
         mpSelPage = 0;
 }
 
-/** adjust logic page retangle to its visible part
+/** adjust logic page rectangle to its visible part
 
     OD 17.01.2003 #103492#
 
@@ -2439,7 +2439,7 @@ void SwAccessibleMap::InvalidatePosOrSize( const SwFrm *pFrm,
 						mpFrmMap->find( aFrmOrObj.GetSwFrm() );
 					if( aIter != mpFrmMap->end() )
 					{
-						// If there is an accesible object already it is
+						// If there is an accessible object already it is
 						// notified directly.
 						uno::Reference < XAccessible > xAcc( (*aIter).second );
 						xAccImpl =
@@ -3603,7 +3603,7 @@ Size SwAccessibleMap::GetPreViewPageSize( sal_uInt16 _nPrevwPageNum ) const
     }
 }
 
-/** method to build up a new data structure of the accessible pararaphs,
+/** method to build up a new data structure of the accessible paragraphs,
     which have a selection
 
     OD 2005-12-13 #i27301#
@@ -3823,4 +3823,3 @@ sal_Bool SwAccessibleMap::IsDocumentSelAll()
 {
 	return GetShell()->GetDoc()->IsPrepareSelAll();
 }
-

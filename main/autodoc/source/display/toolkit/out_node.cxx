@@ -48,7 +48,7 @@ struct Less_NodePtr     C_Less_NodePtr;
 Node  C_aNullNode(Node::null_object);
 
 
-}   // namepace anonymous
+}   // namespace anonymous
 
 
 //**********************        Node        ***************************//

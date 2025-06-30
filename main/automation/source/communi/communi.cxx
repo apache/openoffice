@@ -589,5 +589,3 @@ CommunicationManagerClientViaSocket::CommunicationManagerClientViaSocket( sal_Bo
 CommunicationManagerClientViaSocket::~CommunicationManagerClientViaSocket()
 {
 }
-
-

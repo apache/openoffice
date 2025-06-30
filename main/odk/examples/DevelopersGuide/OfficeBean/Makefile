@@ -73,4 +73,3 @@ OOoBeanViewer: $(CLASSFILES)
 .PHONY: clean
 clean :
 	-$(DELRECURSIVE) $(subst /,$(PS),$(OUT_COMP_CLASS))
-

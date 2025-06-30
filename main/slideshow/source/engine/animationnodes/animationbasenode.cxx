@@ -510,4 +510,3 @@ AttributableShapeSharedPtr AnimationBaseNode::getShape() const
 
 } // namespace internal
 } // namespace slideshow
-

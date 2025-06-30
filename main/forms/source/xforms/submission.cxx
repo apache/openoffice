@@ -526,7 +526,7 @@ void SAL_CALL Submission::submitWithInteraction(
 
         if( _rxHandler.is() )
         {
-            // labouriously create interaction request
+            // laboriously create interaction request
             comphelper::OInteractionRequest* pRequest 
                 = new comphelper::OInteractionRequest( 
                     makeAny( aInvalidDataException ) );
@@ -712,4 +712,3 @@ void SAL_CALL Submission::removeVetoableChangeListener( const ::rtl::OUString& P
 {
     PropertySetBase::removeVetoableChangeListener( PropertyName, aListener );
 }
-

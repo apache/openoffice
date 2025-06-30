@@ -80,7 +80,3 @@ UnoControlContainerModel::UnoControlContainerModel( const ::com::sun::star::uno:
 	}
 	return *pHelper;
 }
-
-
-
-

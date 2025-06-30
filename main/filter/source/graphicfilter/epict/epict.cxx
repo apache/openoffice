@@ -2296,4 +2296,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicExport(SvStream & rStream, Graphic & 
 
 	return aPictWriter.WritePict( aScaledMtf, rStream, pFilterConfigItem );
 }
-

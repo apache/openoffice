@@ -860,7 +860,7 @@ void SvImpIconView::CheckSizes( SvLBoxEntry* pEntry,
 		if( aSize.Height() > nMaxBmpHeight )
 		{
 			nMaxBmpHeight = aSize.Height();
-			nMaxBmpHeight += (2*TBOFFS_ICON);;
+			nMaxBmpHeight += (2*TBOFFS_ICON);
 			if( !(nFlags & F_GRIDMODE ) )
 				bMustRecalcBoundingRects = sal_True;
 		}
@@ -4153,5 +4153,3 @@ void SvImpIconView::CancelUserEvent()
 		nCurUserEvent = 0;
 	}
 }
-
-

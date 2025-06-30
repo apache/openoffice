@@ -199,5 +199,3 @@ sal_Bool __EXPORT ScUndoWidthOrHeight::CanRepeat(SfxRepeatTarget& rTarget) const
 {
 	return (rTarget.ISA(ScTabViewTarget));
 }
-
-

@@ -39,7 +39,7 @@ module com { module sun { module star { module ucb {
     for objects that provide access to a subset of the data.
 
     <p><b>Note:</b> This is an abstract service. This means, that there should
-    never be implementations that can be instanciated using the service name
+    never be implementations that can be instantiated using the service name
     <code>com.sun.star.ucb.HierarchyDataSource</code>. Each implementation must
     provide its own service name that can be used to create instances of that
     service implementation. Important for those service specifications is also
@@ -49,7 +49,7 @@ published service HierarchyDataSource
 {
 	//-------------------------------------------------------------------------
     /** allows creating access objects for specific views such as subsets and
-        fragments of the hierrachy data.
+        fragments of the hierarchy data.
 
         <p>The parameter <var>aServiceSpecifier</var> passed to
         <member scope="com::sun::star::lang">XMultiServiceFactory::createInstanceWithArguments</member>

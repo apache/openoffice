@@ -106,12 +106,12 @@ extern "C" {
     necessary to specify the bootstrap parameter <code>UNO_JAVA_JFW_SHARED_DATA</code>.
     </p>
 
-    <p>Setting the class path used by a Java VM should not be necesarry. The locations
+    <p>Setting the class path used by a Java VM should not be necessary. The locations
     of Jar files should be knows by a class loader. If a jar file depends on another
     jar file then it can be referenced in the manifest file of the first jar. However,
     a user may add jars to the class path by using this API. If it becomes necessary
     to add files to the class path which is to be used by all users then one can use
-    the bootrap parameter UNO_JAVA_JFW_CLASSPATH_URLS. The value contains of file URLs
+    the bootstrap parameter UNO_JAVA_JFW_CLASSPATH_URLS. The value contains of file URLs
     which must be separated by spaces.</p>
 
     
@@ -201,7 +201,7 @@ extern "C" {
     <dd>This is a unofficial variable which was introduced to workaround external issues. 
     It may be removed in the future. By setting it to 1, the framework will not try to 
     find out if the system is configured to use accessibility tools or if a JRE has an 
-    accessibiliy bridge installed</dd>
+    accessibility bridge installed</dd>
     </dl>
 */
 

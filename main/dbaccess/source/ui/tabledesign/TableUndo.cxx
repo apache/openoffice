@@ -485,7 +485,3 @@ void OPrimKeyUndoAct::Redo()
 	m_pEditorCtrl->InvalidateHandleColumn();
 	OTableEditorUndoAct::Redo();
 }
-
-
-
-

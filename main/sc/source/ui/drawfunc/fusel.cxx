@@ -685,8 +685,3 @@ void FuSelection::Deactivate()
 #ifdef _MSC_VER
 #pragma optimize ( "", on )
 #endif
-
-
-
-
-

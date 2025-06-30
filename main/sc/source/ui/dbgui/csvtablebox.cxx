@@ -457,4 +457,3 @@ ScAccessibleCsvControl* ScCsvTableBox::ImplCreateAccessible()
 
 
 // ============================================================================
-

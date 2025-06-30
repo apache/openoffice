@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_scfilt.hxx"
 #include "xlpage.hxx"
@@ -37,9 +35,9 @@
 
 struct XclPaperSize
 {
-    Paper            	mePaper;            /// SVX paper size identifier.
-    long                mnWidth;            /// Paper width in twips.
-    long                mnHeight;           /// Paper height in twips.
+    Paper            	mePaper;            // SVX paper size identifier.
+    long                mnWidth;            // Paper width in twips.
+    long                mnHeight;           // Paper height in twips.
 };
 
 #define IN2TWIPS( v )      ((long)((v) * EXC_TWIPS_PER_INCH + 0.5))
@@ -240,5 +238,4 @@ void XclPageData::SetScPaperSize( const Size& rSize, bool bPortrait )
     }
 }
 
-// ============================================================================
-
+/* vim: set noet sw=4 ts=4: */

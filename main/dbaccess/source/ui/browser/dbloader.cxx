@@ -351,4 +351,3 @@ void SAL_CALL DBContentLoader::load(const Reference< XFrame > & rFrame, const ::
 void DBContentLoader::cancel(void) throw()
 {
 }
-

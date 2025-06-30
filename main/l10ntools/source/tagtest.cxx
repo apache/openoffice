@@ -1567,5 +1567,3 @@ void LingTest::CheckTestee( GSILine *aTestee, sal_Bool bHasSourceLine, sal_Bool 
         }
     }
 }
-
-

@@ -388,4 +388,3 @@ Bundle* CGMElements::InsertBundle( List& rList, Bundle& rBundle )
 	rList.Insert( pBundle, LIST_APPEND );
 	return pBundle;
 };
-

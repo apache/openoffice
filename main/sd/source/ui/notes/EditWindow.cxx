@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
@@ -62,7 +60,7 @@ EditWindow::EditWindow (Window* pParentWindow, SfxItemPool* pItemPool)
 {
 	SetMapMode(MAP_PIXEL);
 
-    // compare DataChanged
+	// compare DataChanged
 	SetBackground (GetSettings().GetStyleSettings().GetWindowColor());
 
 	maModifyTimer.SetTimeout(2000);
@@ -70,19 +68,18 @@ EditWindow::EditWindow (Window* pParentWindow, SfxItemPool* pItemPool)
 
 	maCursorMoveTimer.SetTimeout(500);
 
-    CreateEditView();
+	CreateEditView();
 
-    SvxFontHeightItem aItem (GetFont().GetSize().Height(), 100,
-        EE_CHAR_FONTHEIGHT);
-    pItemPool->SetPoolDefaultItem (aItem);
-    aItem.SetWhich(EE_CHAR_FONTHEIGHT_CJK);
-    pItemPool->SetPoolDefaultItem (aItem);
-    aItem.SetWhich(EE_CHAR_FONTHEIGHT_CTL);
-    pItemPool->SetPoolDefaultItem (aItem);
+	SvxFontHeightItem aItem (GetFont().GetSize().Height(), 100,
+		EE_CHAR_FONTHEIGHT);
+	pItemPool->SetPoolDefaultItem (aItem);
+	aItem.SetWhich(EE_CHAR_FONTHEIGHT_CJK);
+	pItemPool->SetPoolDefaultItem (aItem);
+	aItem.SetWhich(EE_CHAR_FONTHEIGHT_CTL);
+	pItemPool->SetPoolDefaultItem (aItem);
 
-    InsertText (UniString::CreateFromAscii("EditWindow created and ready.\n"));
+	InsertText (UniString::CreateFromAscii("EditWindow created and ready.\n"));
 }
-
 
 EditWindow::~EditWindow (void)
 {
@@ -107,7 +104,6 @@ EditWindow::~EditWindow (void)
 
 ////////////////////////////////////////
 
-
 void SmGetLeftSelectionPart(const ESelection aSel,
 							sal_uInt16 &nPara, sal_uInt16 &nPos)
 	// returns paragraph number and position of the selections left part
@@ -126,29 +122,21 @@ void SmGetLeftSelectionPart(const ESelection aSel,
 	}
 }
 
-
-
-
 EditEngine * EditWindow::GetEditEngine (void)
 {
-    if (mpEditEngine == NULL)
-        mpEditEngine = CreateEditEngine ();
-    return mpEditEngine;
+	if (mpEditEngine == NULL)
+		mpEditEngine = CreateEditEngine ();
+	return mpEditEngine;
 }
-
-
-
 
 EditEngine* EditWindow::CreateEditEngine (void)
 {
-    EditEngine* pEditEngine = mpEditEngine;
+	EditEngine* pEditEngine = mpEditEngine;
 	if (pEditEngine == NULL)
 	{
 		mpEditEngineItemPool = EditEngine::CreatePool();
 
-        //
-        // set fonts to be used
-        //
+		// set fonts to be used
         SvtLinguOptions aOpt;
         SvtLinguConfig().GetOptions( aOpt );
         //
@@ -190,7 +178,7 @@ EditEngine* EditWindow::CreateEditEngine (void)
                     rFntDta.nFontInfoId));
         }
 
-        // set font heights
+		// set font heights
 		SvxFontHeightItem aFontHeigt(
             Application::GetDefaultDevice()->LogicToPixel(
                 Size (0, 10), MapMode (MAP_POINT)).Height(), 100,
@@ -206,7 +194,7 @@ EditEngine* EditWindow::CreateEditEngine (void)
 		pEditEngine->EnableUndo (sal_True);
 		pEditEngine->SetDefTab (sal_uInt16(
 			Application::GetDefaultDevice()->GetTextWidth(
-                UniString::CreateFromAscii("XXXX"))));
+				UniString::CreateFromAscii("XXXX"))));
 
 		pEditEngine->SetControlWord(
 				(pEditEngine->GetControlWord()
@@ -215,7 +203,7 @@ EditEngine* EditWindow::CreateEditEngine (void)
 				(~EE_CNTRL_PASTESPECIAL));
 
 		pEditEngine->SetWordDelimiters (
-            UniString::CreateFromAscii(" .=+-*/(){}[];\""));
+			UniString::CreateFromAscii(" .=+-*/(){}[];\""));
 		pEditEngine->SetRefMapMode (MAP_PIXEL);
 		pEditEngine->SetPaperSize (Size(800, 0));
 		pEditEngine->EraseVirtualDevice();
@@ -225,29 +213,24 @@ EditEngine* EditWindow::CreateEditEngine (void)
 	return pEditEngine;
 }
 
-
-
-
 void EditWindow::DataChanged (const DataChangedEvent&)
 {
-    const StyleSettings aSettings (GetSettings().GetStyleSettings());
+	const StyleSettings aSettings (GetSettings().GetStyleSettings());
 
-    SetBackground( aSettings.GetWindowColor() );
+	SetBackground( aSettings.GetWindowColor() );
 
-    // edit fields in other Applications use this font instead of
-    // the application font thus we use this one too
-    SetPointFont( aSettings.GetFieldFont() );
-    EditEngine* pEditEngine = GetEditEngine();
+	// edit fields in other Applications use this font instead of
+	// the application font thus we use this one too
+	SetPointFont( aSettings.GetFieldFont() );
+	EditEngine* pEditEngine = GetEditEngine();
 
 	if (pEditEngine!=NULL && mpEditEngineItemPool!=NULL)
 	{
-        //!
-        //! see also SmDocShell::GetEditEngine() !
-        //!
+		//! see also SmDocShell::GetEditEngine() !
 
-        //		pEditEngine->SetDefTab( sal_uInt16( GetTextWidth( C2S("XXXX") ) ) );
+		//		pEditEngine->SetDefTab( sal_uInt16( GetTextWidth( C2S("XXXX") ) ) );
 
-        sal_uInt16 aFntInfoId[3] = {
+		sal_uInt16 aFntInfoId[3] = {
                 EE_CHAR_FONTINFO, EE_CHAR_FONTINFO_CJK, EE_CHAR_FONTINFO_CTL };
         for (int i = 0;  i < 3;  ++i)
         {
@@ -280,16 +263,13 @@ void EditWindow::DataChanged (const DataChangedEvent&)
         pEditEngine->SetText( aTxt );
 	}
 
-    String aText (mpEditEngine->GetText (LINEEND_LF));
-    mpEditEngine->Clear();
-    mpEditEngine->SetText (aText);
+	String aText (mpEditEngine->GetText (LINEEND_LF));
+	mpEditEngine->Clear();
+	mpEditEngine->SetText (aText);
 
 	AdjustScrollBars();
 	Resize();
 }
-
-
-
 
 void EditWindow::Resize (void)
 {
@@ -301,7 +281,7 @@ void EditWindow::Resize (void)
 		mpEditView->SetOutputArea(AdjustScrollBars());
 		mpEditView->ShowCursor();
 
-        DBG_ASSERT( mpEditView->GetEditEngine(), "EditEngine missing" );
+		DBG_ASSERT( mpEditView->GetEditEngine(), "EditEngine missing" );
 		const long nMaxVisAreaStart = mpEditView->GetEditEngine()->GetTextHeight() -
 									  mpEditView->GetOutputArea().GetHeight();
 		if (mpEditView->GetVisArea().Top() > nMaxVisAreaStart)
@@ -317,9 +297,6 @@ void EditWindow::Resize (void)
 	Invalidate();
 }
 
-
-
-
 void EditWindow::MouseButtonUp(const MouseEvent &rEvt)
 {
 	if (mpEditView != NULL)
@@ -328,11 +305,8 @@ void EditWindow::MouseButtonUp(const MouseEvent &rEvt)
 		Window::MouseButtonUp (rEvt);
 
 	// ggf FormulaCursor neu positionieren
-    //	CursorMoveTimerHdl(&aCursorMoveTimer);
+	//	CursorMoveTimerHdl(&aCursorMoveTimer);
 }
-
-
-
 
 void EditWindow::MouseButtonDown(const MouseEvent &rEvt)
 {
@@ -344,36 +318,33 @@ void EditWindow::MouseButtonDown(const MouseEvent &rEvt)
 	GrabFocus();
 }
 
-
-
-
 void EditWindow::Command(const CommandEvent& rCEvt)
 {
-    /*	if (rCEvt.GetCommand() == COMMAND_CONTEXTMENU)
+	/*	if (rCEvt.GetCommand() == COMMAND_CONTEXTMENU)
 	{
 		GetParent()->ToTop();
 
-        Point aPoint = rCEvt.GetMousePosPixel();
+		Point aPoint = rCEvt.GetMousePosPixel();
 		PopupMenu* pPopupMenu = new PopupMenu(SmResId(RID_COMMANDMENU));
 
-        // added for replaceability of context menus #96085, #93782
-        Menu* pMenu = NULL;
-        ::com::sun::star::ui::ContextMenuExecuteEvent aEvent;
-        aEvent.SourceWindow = VCLUnoHelper::GetInterface( this );
-        aEvent.ExecutePosition.X = aPoint.X();
-        aEvent.ExecutePosition.Y = aPoint.Y();
-        if ( GetView()->TryContextMenuInterception( *pPopupMenu, pMenu, aEvent ) )
-        {
-            if ( pMenu )
-            {
-                delete pPopupMenu;
-                pPopupMenu = (PopupMenu*) pMenu;
-            }
-        }
+		// added for replaceability of context menus #96085, #93782
+		Menu* pMenu = NULL;
+		::com::sun::star::ui::ContextMenuExecuteEvent aEvent;
+		aEvent.SourceWindow = VCLUnoHelper::GetInterface( this );
+		aEvent.ExecutePosition.X = aPoint.X();
+		aEvent.ExecutePosition.Y = aPoint.Y();
+		if ( GetView()->TryContextMenuInterception( *pPopupMenu, pMenu, aEvent ) )
+		{
+			if ( pMenu )
+			{
+				delete pPopupMenu;
+				pPopupMenu = (PopupMenu*) pMenu;
+			}
+		}
 
-        pPopupMenu->SetSelectHdl(LINK(this, EditWindow, MenuSelectHdl));
+		pPopupMenu->SetSelectHdl(LINK(this, EditWindow, MenuSelectHdl));
 
-        pPopupMenu->Execute( this, aPoint );
+		pPopupMenu->Execute( this, aPoint );
 		delete pPopupMenu;
 	}
 	else*/ if (mpEditView)
@@ -384,7 +355,7 @@ void EditWindow::Command(const CommandEvent& rCEvt)
 }
 IMPL_LINK_INLINE_START( EditWindow, MenuSelectHdl, Menu *, EMPTYARG )
 {
-    /*    SmViewShell *pViewSh = rCmdBox.GetView();
+	/*	SmViewShell *pViewSh = rCmdBox.GetView();
 	if (pViewSh)
 		pViewSh->GetViewFrame()->GetDispatcher()->Execute(
 				SID_INSERTCOMMAND, SFX_CALLMODE_STANDARD,
@@ -396,7 +367,7 @@ IMPL_LINK_INLINE_END( EditWindow, MenuSelectHdl, Menu *, EMPTYARG )
 
 void EditWindow::KeyInput(const KeyEvent& )
 {
-    /*	if (rKEvt.GetKeyCode().GetCode() == KEY_ESCAPE)
+	/*	if (rKEvt.GetKeyCode().GetCode() == KEY_ESCAPE)
 	{
 		sal_Bool bCallBase = sal_True;
 		SfxViewShell* pViewShell = SfxViewShell::Current();
@@ -405,7 +376,7 @@ void EditWindow::KeyInput(const KeyEvent& )
 			SmDocShell* pDocSh = (SmDocShell*) pViewShell->GetViewFrame()->GetObjectShell();
 			if (pDocSh)
 			{
-    // fuert zum (sofortigen) Zerstoeren von this!
+	// führt zum (sofortigen) Zerstören von this!
 				pDocSh->DoInPlaceActivate( sal_False );
 				bCallBase = sal_False;
 			}
@@ -415,18 +386,18 @@ void EditWindow::KeyInput(const KeyEvent& )
 	}
 	else
 	{
-		// Timer neu starten, um den Handler (auch bei l�ngeren Eingaben)
-		// m�glichst nur einmal am Ende aufzurufen.
+		// Timer neu starten, um den Handler (auch bei längeren Eingaben)
+		// möglichst nur einmal am Ende aufzurufen.
 		aCursorMoveTimer.Start();
 
-        DBG_ASSERT( mpEditView, "EditView missing (NULL pointer)" );
-        if (!mpEditView)
-            CreateEditView();
+		DBG_ASSERT( mpEditView, "EditView missing (NULL pointer)" );
+		if (!mpEditView)
+			CreateEditView();
 		if ( !mpEditView->PostKeyEvent(rKEvt) )
 		{
 			if ( !SfxViewShell::Current()->KeyInput(rKEvt) )
 			{
-    // fuert bei F1 (Hilfe) zum Zerstoeren von this!
+	// führt bei F1 (Hilfe) zum Zerstören von this!
 				Flush();
 				if ( aModifyTimer.IsActive() )
 					aModifyTimer.Stop();
@@ -445,21 +416,18 @@ void EditWindow::KeyInput(const KeyEvent& )
 			}
 		}
 		else
-        {
+		{
             // have doc-shell modified only for formula input/change and not
-            // cursor travelling and such things...
+            // cursor traveling and such things...
             SmDocShell *pDocShell = GetDoc();
             if (pDocShell)
                 pDocShell->SetModified( GetEditEngine()->IsModified() );
 
             aModifyTimer.Start();
-        }
+		}
 	}
-    */
+	*/
 }
-
-
-
 
 void EditWindow::Paint(const Rectangle& rRect)
 {
@@ -468,15 +436,12 @@ void EditWindow::Paint(const Rectangle& rRect)
 	mpEditView->Paint(rRect);
 }
 
-
-
-
 void EditWindow::CreateEditView (void)
 {
-    EditEngine* pEditEngine = GetEditEngine();
+	EditEngine* pEditEngine = GetEditEngine();
 
-    //! pEditEngine and mpEditView may be 0.
-    //! For example when the program is used by the document-converter
+	//! pEditEngine and mpEditView may be 0.
+	//! For example when the program is used by the document-converter
 	if (mpEditView==NULL && pEditEngine!=NULL)
 	{
 		mpEditView = new EditView (pEditEngine, this);
@@ -502,19 +467,16 @@ void EditWindow::CreateEditView (void)
 		mpEditView->ShowCursor(sal_True, sal_True);
 
 		pEditEngine->SetStatusEventHdl(
-            LINK(this, EditWindow, EditStatusHdl));
+			LINK(this, EditWindow, EditStatusHdl));
 		SetPointer(mpEditView->GetPointer());
 
 		SetScrollBarRanges();
 	}
 }
 
-
-
-
 IMPL_LINK( EditWindow, EditStatusHdl, EditStatus *, EMPTYARG )
 {
-    if (!mpEditView)
+	if (!mpEditView)
 		return 1;
 	else
 	{
@@ -525,14 +487,14 @@ IMPL_LINK( EditWindow, EditStatusHdl, EditStatus *, EMPTYARG )
 
 IMPL_LINK_INLINE_START( EditWindow, ScrollHdl, ScrollBar *, EMPTYARG )
 {
-    DBG_ASSERT(mpEditView, "EditView missing");
-    if (mpEditView)
-    {
+	DBG_ASSERT(mpEditView, "EditView missing");
+	if (mpEditView)
+	{
         mpEditView->SetVisArea(Rectangle(Point(mpHorizontalScrollBar->GetThumbPos(),
                                             mpVerticalScrollBar->GetThumbPos()),
                                         mpEditView->GetVisArea().GetSize()));
         mpEditView->Invalidate();
-    }
+	}
 	return 0;
 }
 IMPL_LINK_INLINE_END( EditWindow, ScrollHdl, ScrollBar *, EMPTYARG )
@@ -564,9 +526,9 @@ Rectangle EditWindow::AdjustScrollBars()
 
 void EditWindow::SetScrollBarRanges()
 {
-    EditEngine* pEditEngine = GetEditEngine();
-    if (mpEditView != NULL && pEditEngine != NULL)
-    {
+	EditEngine* pEditEngine = GetEditEngine();
+	if (mpEditView != NULL && pEditEngine != NULL)
+	{
         if (mpVerticalScrollBar != NULL)
         {
             long nTmp = pEditEngine->GetTextHeight();
@@ -584,7 +546,7 @@ void EditWindow::SetScrollBarRanges()
 
 void EditWindow::InitScrollBars()
 {
-    if (mpEditView != NULL)
+	if (mpEditView != NULL)
 	{
 		const Size aOut( mpEditView->GetOutputArea().GetSize() );
         if (mpVerticalScrollBar != NULL)
@@ -612,21 +574,19 @@ void EditWindow::InitScrollBars()
 	}
 }
 
-
 XubString EditWindow::GetText()
 {
 	String aText;
-    EditEngine *pEditEngine = GetEditEngine();
+	EditEngine *pEditEngine = GetEditEngine();
 	DBG_ASSERT( pEditEngine, "EditEngine missing" );
 	if (pEditEngine)
 		aText = pEditEngine->GetText( LINEEND_LF );
 	return aText;
 }
 
-
 void EditWindow::SetText(const XubString& rText)
 {
-    EditEngine *pEditEngine = GetEditEngine();
+	EditEngine *pEditEngine = GetEditEngine();
 	DBG_ASSERT( pEditEngine, "EditEngine missing" );
 	if (pEditEngine  &&  !pEditEngine->IsModified())
 	{
@@ -638,7 +598,7 @@ void EditWindow::SetText(const XubString& rText)
 		pEditEngine->SetText(rText);
 		pEditEngine->ClearModifyFlag();
 
-		//! Hier die Timer neu zu starten verhindert, dass die Handler f�r andere
+		//! Hier die Timer neu zu starten verhindert, dass die Handler für andere
 		//! (im Augenblick nicht mehr aktive) Math Tasks aufgerufen werden.
 		maModifyTimer.Start();
 		maCursorMoveTimer.Start();
@@ -647,18 +607,16 @@ void EditWindow::SetText(const XubString& rText)
 	}
 }
 
-
 void EditWindow::GetFocus()
 {
 	Window::GetFocus();
 
-    if (!mpEditView)
-         CreateEditView();
+	if (!mpEditView)
+		CreateEditView();
 	if (mpEditEngine != NULL)
 		mpEditEngine->SetStatusEventHdl(
-            LINK(this, EditWindow, EditStatusHdl));
+			LINK(this, EditWindow, EditStatusHdl));
 }
-
 
 void EditWindow::LoseFocus()
 {
@@ -668,15 +626,14 @@ void EditWindow::LoseFocus()
 	Window::LoseFocus();
 }
 
-
 sal_Bool EditWindow::IsAllSelected() const
 {
-    sal_Bool bRes = sal_False;
-    EditEngine *pEditEngine = ((EditWindow *) this)->GetEditEngine();
+	sal_Bool bRes = sal_False;
+	EditEngine *pEditEngine = ((EditWindow *) this)->GetEditEngine();
 	DBG_ASSERT( mpEditView, "NULL pointer" );
-    DBG_ASSERT( pEditEngine, "NULL pointer" );
-    if (pEditEngine  &&  mpEditView)
-    {
+	DBG_ASSERT( pEditEngine, "NULL pointer" );
+	if (pEditEngine  &&  mpEditView)
+	{
         ESelection eSelection( mpEditView->GetSelection() );
         sal_Int32 nParaCnt = pEditEngine->GetParagraphCount();
         if (!(nParaCnt - 1))
@@ -700,7 +657,6 @@ void EditWindow::SelectAll()
 		mpEditView->SetSelection( ESelection( 0, 0, EE_PARA_MAX, EE_INDEX_MAX ) );
 	}
 }
-
 
 void EditWindow::MarkError(const Point &rPos)
 {
@@ -787,7 +743,7 @@ void EditWindow::SelPrevMark()
 }
 
 sal_Bool EditWindow::HasMark(const String& rText) const
-	// returns true iff 'rText' contains a mark
+	// returns true if 'rText' contains a mark
 {
 	return rText.SearchAscii("<?>", 0) != STRING_NOTFOUND;
 }
@@ -873,6 +829,6 @@ void EditWindow::InsertText(const String& Text)
         mpEditView->InsertText(Text);
 }
 
-
-
 } } // end of namespace ::sd::notes
+
+/* vim: set noet sw=4 ts=4: */

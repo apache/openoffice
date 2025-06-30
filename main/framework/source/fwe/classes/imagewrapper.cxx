@@ -114,4 +114,3 @@ sal_Int64 SAL_CALL ImageWrapper::getSomething( const Sequence< sal_Int8 >& aIden
 }
 
 }
-

@@ -473,6 +473,3 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoMarkerTable_createInstance( Sdr
 {
 	return *new SvxUnoMarkerTable(pModel);
 }
-
-
-

@@ -1644,7 +1644,7 @@ boolean SetupAppX::GetCmdLineParameters( LPTSTR *pCmdLine )
         return false;
     }
     else
-        return true;;
+        return true;
 }
 
 //--------------------------------------------------------------------------

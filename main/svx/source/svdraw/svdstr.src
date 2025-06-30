@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "svx/svdstr.hrc"
 // Beginning of cached strings
 String STR_ObjNameSingulNONE
@@ -2748,11 +2746,6 @@ Bitmap SIP_SA_PAGESHADOW35X35
 	File = "pageshadow35x35.png" ;
 };
 
-Bitmap SIP_SA_MARKERS
-{
-	File = "markers.png" ;
-};
-
 Bitmap SIP_SA_FINE_MARKERS
 {
 	File = "markers.png" ;
@@ -2845,11 +2838,6 @@ String STR_ObjNameSingulTable
 String STR_ObjNamePluralTable
 {
 	Text [ en-US ] = "Tables" ;
-};
-
-Bitmap SIP_SA_CROP_MARKERS
-{
-	File = "cropmarkers.png" ;
 };
 
 Bitmap SIP_SA_CROP_FINE_MARKERS

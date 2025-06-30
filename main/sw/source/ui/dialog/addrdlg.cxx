@@ -61,5 +61,3 @@ Dtor
 __EXPORT SwAddrDlg::~SwAddrDlg()
 {
 }
-
-

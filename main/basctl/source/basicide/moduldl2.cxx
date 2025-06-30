@@ -1721,4 +1721,3 @@ void createLibImpl( Window* pWin, const ScriptDocument& rDocument,
 }
 
 //----------------------------------------------------------------------------
-

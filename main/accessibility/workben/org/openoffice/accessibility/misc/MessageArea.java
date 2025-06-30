@@ -48,7 +48,7 @@ public class MessageArea
 
 
     /** Create a new message area.  This method is private because the class is
-        a singleton and may therefore not be instanciated from the outside.
+        a singleton and may therefore not be instantiated from the outside.
     */
     private MessageArea ()
     {

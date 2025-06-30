@@ -27,16 +27,29 @@ using namespace ::com::sun::star;
 // - factory methods -
 // -------------------
 
-static uno::Reference< uno::XInterface > SAL_CALL create_MediaPlayer( const uno::Reference< lang::XMultiServiceFactory >& rxFact )
+static uno::Reference< uno::XInterface > SAL_CALL create_MediaPlayer( const uno::Reference< uno::XComponentContext >& rxContext )
 {
-	return uno::Reference< uno::XInterface >( *new ::avmedia::macavf::Manager( rxFact ) );
+	return uno::Reference< uno::XInterface >( *new ::avmedia::macavf::Manager( rxContext ) );
 }
+
+static struct ::cppu::ImplementationEntry g_component_entries[] =
+{
+	{
+		create_MediaPlayer,
+		::avmedia::macavf::Manager::getImplementationName_Static,
+		::avmedia::macavf::Manager::getSupportedServiceNames_Static,
+		::cppu::createSingleComponentFactory,
+		0,
+		0
+	},
+	{ 0, 0, 0, 0, 0, 0 }
+};
 
 // ------------------------------------------
 // - component_getImplementationEnvironment -
 // ------------------------------------------
 
-extern "C" void SAL_CALL component_getImplementationEnvironment( const sal_Char ** ppEnvTypeName, uno_Environment ** /* ppEnv */ )
+extern "C" SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment( const sal_Char ** ppEnvTypeName, uno_Environment ** /* ppEnv */ )
 {
 	*ppEnvTypeName = CPPU_CURRENT_LANGUAGE_BINDING_NAME;
 }
@@ -45,26 +58,7 @@ extern "C" void SAL_CALL component_getImplementationEnvironment( const sal_Char 
 // - component_getFactory -
 // ------------------------
 
-extern "C" void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* /* pRegistryKey */ )
+extern "C" SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* pRegistryKey )
 {
-	uno::Reference< lang::XSingleServiceFactory > xFactory;
-	void*									pRet = 0;
-
-	if( rtl_str_compare( pImplName, AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME ) == 0 )
-	{
-		const ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( AVMEDIA_MACAVF_MANAGER_SERVICENAME ) );
-
-		xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
-						reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
-						::rtl::OUString::createFromAscii( AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME ),
-						create_MediaPlayer, uno::Sequence< ::rtl::OUString >( &aServiceName, 1 ) ) );
-	}
-
-	if( xFactory.is() )
-	{
-		xFactory->acquire();
-		pRet = xFactory.get();
-	}
-
-	return pRet;
+	return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, g_component_entries );
 }

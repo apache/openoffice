@@ -47,7 +47,7 @@ import com.sun.star.loader.XImplementationLoader;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * The <code>ServiceManager</code> class is an implmentation of the <code>ServiceManager</code>the central class needed for
+ * The <code>ServiceManager</code> class is an implementation of the <code>ServiceManager</code>the central class needed for
  * implementing or using UNO components in Java.
  * <p>
  * The Methods <code>queryInterface</code> and <code>isSame</code> delegate
@@ -259,7 +259,7 @@ public class ServiceManager implements XMultiServiceFactory,
     
 	/**
 	 * Creates a new instance of a specified service. Therefor the associated factory of the service is 
-	 * looked up and used to instanciate a new component.
+	 * looked up and used to instantiate a new component.
 	 * <p>
 	 * @return	newly created component
 	 * @param	serviceSpecifier 	indicates the service or component name
@@ -274,7 +274,7 @@ public class ServiceManager implements XMultiServiceFactory,
     
 	/**
 	 * Creates a new instance of a specified service with the given parameters. 
-	 * Therefor the associated factory of the service is  looked up and used to instanciate a new component.
+	 * Therefor the associated factory of the service is  looked up and used to instantiate a new component.
 	 * <p>
 	 * @return	newly created component
 	 * @param	serviceSpecifier 	indicates the service or component name
@@ -637,7 +637,7 @@ public class ServiceManager implements XMultiServiceFactory,
      * Provides an enumeration of all registered services.
      * <p>
      * @return 	an enumeration of all available services.
-     * @see 	com.sun.star.conatiner.XEnumerationAccess
+     * @see 	com.sun.star.container.XEnumerationAccess
      */
     public XEnumeration createEnumeration()	
             throws com.sun.star.uno.RuntimeException

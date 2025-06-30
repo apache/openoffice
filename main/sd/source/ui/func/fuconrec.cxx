@@ -285,7 +285,7 @@ sal_Bool FuConstructRectangle::MouseButtonUp(const MouseEvent& rMEvt)
 				// #109583#
 				// Correct the value of SDRATTR_TEXTDIRECTION to avoid SetItemSet
 				// calling SetVerticalWriting() again since this item may not yet
-				// be set at the object and thus may differ from verical state of
+				// be set at the object and thus may differ from vertical state of
 				// the object.
                 aSet.Put(SvxWritingModeItem(com::sun::star::text::WritingMode_TB_RL, SDRATTR_TEXTDIRECTION));
 				pObj->SetMergedItemSet(aSet);

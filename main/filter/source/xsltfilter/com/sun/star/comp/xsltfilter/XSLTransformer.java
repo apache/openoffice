@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package com.sun.star.comp.xsltfilter;
 
-
-
-//Standard Java classes
+// Standard Java classes
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -51,7 +49,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
-//StarOffice Interfaces and UNO
+// OpenOffice Interfaces and UNO
 import com.sun.star.beans.NamedValue;
 import com.sun.star.comp.loader.FactoryHelper;
 import com.sun.star.io.XActiveDataControl;
@@ -72,7 +70,7 @@ import com.sun.star.uno.AnyConverter;
 import com.sun.star.uno.Type;
 import com.sun.star.uno.UnoRuntime;
 
-//Uno to java Adaptor
+// Uno to java Adaptor
 import com.sun.star.lib.uno.adapter.XInputStreamToInputStreamAdapter;
 import com.sun.star.lib.uno.adapter.XOutputStreamToOutputStreamAdapter;
 import javax.xml.transform.Templates;
@@ -89,7 +87,7 @@ public class XSLTransformer
 
     /**
      * This component provides java based XSL transformations
-     * A SAX based interface is not feasible when crossing language bordes
+     * A SAX based interface is not feasible when crossing language borders
      * since too much time would be wasted by bridging the events between environments
      * example: 190 pages document, 82000 events 8seconds transform 40(!) sec. bridging
      *
@@ -217,7 +215,7 @@ public class XSLTransformer
             @Override
             public void run() {
 
-                // Local variabes used outside try block in finally block                  
+                // Local variables used outside try block in finally block
                 InputStream is = null;
                 Source source = null;
                 BufferedOutputStream os = null;
@@ -246,7 +244,7 @@ public class XSLTransformer
 
                     is = new BufferedInputStream(
                             new XInputStreamToInputStreamAdapter(m_xis));
-                    //Source xmlsource = new StreamSource(xmlinput);    
+                    //Source xmlsource = new StreamSource(xmlinput);
                     SAXParserFactory spf = SAXParserFactory.newInstance();
                     spf.setValidating(false);
                     spf.setNamespaceAware(true);
@@ -284,7 +282,7 @@ public class XSLTransformer
                                 (transformation = ((Transformation) ref.get())) == null ||
                                 ((Transformation) ref.get()).lastmod < lastmod) {
                             // we cannot find a valid reference for this stylesheet
-                            // or the stylsheet was updated
+                            // or the stylesheet was updated
                             if (ref != null) {
                                 xsltReferences.remove(stylesheeturl);
                             }
@@ -307,7 +305,7 @@ public class XSLTransformer
                     xsltTemplate = transformation.cachedXSLT;
 							transformer = xsltTemplate.newTransformer();
                             transformer.setOutputProperty("encoding", "UTF-8");
-                            // transformer.setURIResolver(XSLTransformer.this);					
+                            // transformer.setURIResolver(XSLTransformer.this);
 
                     // invalid to set 'null' as parameter as 'null' is not a valid Java object
                     if (sourceurl != null) {

@@ -616,4 +616,3 @@ Reference< XStatusIndicator > FilterConfigItem::GetStatusIndicator() const
 	}
 	return xStatusIndicator;
 }
-

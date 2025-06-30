@@ -64,4 +64,3 @@ namespace logging
 //........................................................................
 
 IMPLEMENT_COMPONENT_LIBRARY_API( ::logging::LogModule, ::logging::initializeModule )
-

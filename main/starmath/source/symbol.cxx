@@ -360,5 +360,3 @@ void SmSymbolManager::Save()
         m_bModified = false;
     }
 }
-
-

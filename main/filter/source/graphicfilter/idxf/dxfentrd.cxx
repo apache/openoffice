@@ -897,4 +897,3 @@ void DXFEntities::Clear()
 		delete ptmp;
 	}
 }
-

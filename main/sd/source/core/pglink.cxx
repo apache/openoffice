@@ -138,6 +138,3 @@ void SdPageLink::Closed()
 
 	SvBaseLink::Closed();
 }
-
-
-

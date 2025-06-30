@@ -606,4 +606,3 @@ LRESULT CALLBACK CFilePreview::WndProc(
 
 	return lResult;
 }
-

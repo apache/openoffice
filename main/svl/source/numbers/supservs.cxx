@@ -222,4 +222,3 @@ void SvNumberFormatsSupplierServiceObject::implEnsureFormatter()
 		initialize( aFakedInitProps );
 	}
 }
-

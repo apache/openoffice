@@ -62,4 +62,3 @@
 #include <stdio.h>
 
 #include <sfx.hrc>
-

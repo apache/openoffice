@@ -30,5 +30,3 @@ include $(ROOT)/makefile.in
 
 
 package : $(CLASS_FILES)
-
-

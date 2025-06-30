@@ -336,5 +336,3 @@ void ExtNameBuff::Reset( void )
 {
     maExtNames.clear();
 }
-
-

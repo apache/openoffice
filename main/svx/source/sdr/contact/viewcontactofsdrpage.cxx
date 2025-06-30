@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 #include <svx/sdr/contact/viewcontactofsdrpage.hxx>
@@ -46,11 +44,7 @@
 #include <drawinglayer/primitive2d/discreteshadowprimitive2d.hxx>
 #include <drawinglayer/attribute/sdrfillattribute.hxx>
 
-//////////////////////////////////////////////////////////////////////////////
-
 #define PAPER_SHADOW(SIZE) (SIZE >> 8)
-
-//////////////////////////////////////////////////////////////////////////////
 
 namespace sdr
 {
@@ -131,15 +125,15 @@ namespace sdr
 
 		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfPageShadow::createViewIndependentPrimitive2DSequence() const
 		{
-			static bool bUseOldPageShadow(true);
+			static bool bUseNoPageShadow(true);
 			const SdrPage& rPage = getPage();
 			basegfx::B2DHomMatrix aPageMatrix;
 			aPageMatrix.set(0, 0, (double)rPage.GetWdt());
 			aPageMatrix.set(1, 1, (double)rPage.GetHgt());
 
-			if(bUseOldPageShadow)
+			if(bUseNoPageShadow) // TODO: Code cleanup
 			{
-				// create page shadow polygon
+				// create page border polygon
 //				const double fPageBorderFactor(1.0 / 256.0);
 				basegfx::B2DPolygon aPageShadowPolygon;
 //				aPageShadowPolygon.append(basegfx::B2DPoint(1.0, fPageBorderFactor));
@@ -721,5 +715,4 @@ namespace sdr
 	} // end of namespace contact
 } // end of namespace sdr
 
-//////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

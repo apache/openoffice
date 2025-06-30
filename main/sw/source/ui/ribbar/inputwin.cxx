@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include <tools/gen.hxx>
 #include <sfx2/imgmgr.hxx>
@@ -81,11 +78,11 @@ SwInputWindow::SwInputWindow( Window* pParent, SfxBindings* pBind )
     bActive = bIsTable = bDelSel = sal_False;
 
 	FreeResource();
-	
+
 	aEdit.SetSizePixel( aEdit.CalcMinimumSize() );
 
-    SfxImageManager* pManager = SfxImageManager::GetImageManager( SW_MOD() );
-    pManager->RegisterToolBox(this);
+	SfxImageManager* pManager = SfxImageManager::GetImageManager( SW_MOD() );
+	pManager->RegisterToolBox(this);
 
 	pView = ::GetActiveView();
 	pWrtShell = pView ? pView->GetWrtShellPtr() : 0;
@@ -101,13 +98,13 @@ SwInputWindow::SwInputWindow( Window* pParent, SfxBindings* pBind )
 	aEdit.SetAccessibleName(String(SW_RES(STR_ACCESS_FORMULA_TEXT)));
 	SetHelpId(ED_FORMULA, HID_EDIT_FORMULA);
 
-    sal_Bool bHC = GetSettings().GetStyleSettings().GetHighContrastMode();
-    SetItemImage( FN_FORMULA_CALC, pManager->GetImage(FN_FORMULA_CALC, bHC ));
+	sal_Bool bHC = GetSettings().GetStyleSettings().GetHighContrastMode();
+	SetItemImage( FN_FORMULA_CALC, pManager->GetImage(FN_FORMULA_CALC, bHC ));
 	SetItemImage( FN_FORMULA_CANCEL, pManager->GetImage(FN_FORMULA_CANCEL, bHC  ));
 	SetItemImage( FN_FORMULA_APPLY, pManager->GetImage(FN_FORMULA_APPLY, bHC  ));
 
-    SetItemBits( FN_FORMULA_CALC, GetItemBits( FN_FORMULA_CALC ) | TIB_DROPDOWNONLY );
-    SetDropdownClickHdl( LINK( this, SwInputWindow, DropdownClickHdl ));
+	SetItemBits( FN_FORMULA_CALC, GetItemBits( FN_FORMULA_CALC ) | TIB_DROPDOWNONLY );
+	SetDropdownClickHdl( LINK( this, SwInputWindow, DropdownClickHdl ));
 
 	Size	aSizeTbx = CalcWindowSizePixel();
 	Size 	aEditSize = aEdit.GetSizePixel();
@@ -137,20 +134,20 @@ SwInputWindow::SwInputWindow( Window* pParent, SfxBindings* pBind )
 
 __EXPORT SwInputWindow::~SwInputWindow()
 {
-    SfxImageManager::GetImageManager( SW_MOD() )->ReleaseToolBox(this);
+	SfxImageManager::GetImageManager( SW_MOD() )->ReleaseToolBox(this);
 
-	//Lineale aufwecken
+	// Activate ruler
 	if(pView)
 	{
-        pView->GetHLineal().SetActive( sal_True );
-        pView->GetVLineal().SetActive( sal_True );
+		pView->GetHRuler().SetActive( sal_True );
+		pView->GetVRuler().SetActive( sal_True );
 	}
 	if ( pMgr )
 		delete pMgr;
 	if(pWrtShell)
 		pWrtShell->EndSelTblCells();
 
-    CleanupUglyHackWithUndo();
+	CleanupUglyHackWithUndo();
 }
 
 void SwInputWindow::CleanupUglyHackWithUndo()
@@ -178,7 +175,7 @@ void SwInputWindow::DataChanged( const DataChangedEvent& rDCEvt )
 {
     if ( rDCEvt.GetType() == DATACHANGED_SETTINGS && (rDCEvt.GetFlags() & SETTINGS_STYLE) )
     {
-        //      update item images
+        // update item images
         SwModule *pMod  = SW_MOD();
         SfxImageManager *pImgMgr = SfxImageManager::GetImageManager( pMod );
         sal_Bool bHC = GetSettings().GetStyleSettings().GetHighContrastMode();
@@ -211,14 +208,14 @@ void __EXPORT SwInputWindow::Resize()
 void SwInputWindow::ShowWin()
 {
 	bIsTable = sal_False;
-	//Lineale anhalten
+	// Stop ruler
 	if(pView)
 	{
-        pView->GetHLineal().SetActive( sal_False );
-        pView->GetVLineal().SetActive( sal_False );
+		pView->GetHRuler().SetActive( sal_False );
+		pView->GetVRuler().SetActive( sal_False );
 
-		DBG_ASSERT(pWrtShell, "Keine WrtShell!");
-		// Cursor in Tabelle
+		DBG_ASSERT(pWrtShell, "No WrtShell!");
+		// Cursor in table
 		bIsTable = pWrtShell->IsCrsrInTbl() ? sal_True : sal_False;
 
 		if( bFirst )
@@ -235,7 +232,7 @@ void SwInputWindow::ShowWin()
 			aAktTableName = pWrtShell->GetTableFmt()->GetName();
 		}
 		else
-            aPos.SetText(SW_RESSTR(STR_TBL_FORMULA));
+			aPos.SetText(SW_RESSTR(STR_TBL_FORMULA));
 
 		// Aktuelles Feld bearbeiten
 		ASSERT(pMgr == 0, FieldManager nicht geloescht.);
@@ -679,3 +676,4 @@ SfxChildWinInfo __EXPORT SwInputChild::GetInfo() const
 	return aInfo;
 }
 
+/* vim: set noet sw=4 ts=4: */

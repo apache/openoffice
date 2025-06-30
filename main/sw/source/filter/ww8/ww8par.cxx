@@ -23,7 +23,6 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #include <com/sun/star/embed/ElementModes.hpp>
 #include <com/sun/star/embed/XStorage.hpp>
@@ -2943,7 +2942,7 @@ bool SwWW8ImplReader::AddTextToParagraph(const String& rAddString)
 /*
 #ifdef DEBUG
 //!! does not compile with debug=t -> unresolved external (dbg_out),
-//!! sommeone who knows what he wants to get should fix this
+//!! someone who knows what he wants to get should fix this
 //        ::std::clog << "<addTextToParagraph>" << dbg_out(rAddString)
 //        << "</addTextToParagraph>" << ::std::endl;
 #endif
@@ -5699,6 +5698,3 @@ SdrObjUserData* SwMacroInfo::Clone( SdrObject* /*pObj*/ ) const
 {
    return new SwMacroInfo( *this );
 }
-
-
-

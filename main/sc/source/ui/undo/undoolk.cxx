@@ -93,6 +93,3 @@ void EnableDrawAdjust( ScDocument* pDoc, sal_Bool bEnable )
 	if (pLayer)
 		pLayer->EnableAdjust(bEnable);
 }
-
-
-

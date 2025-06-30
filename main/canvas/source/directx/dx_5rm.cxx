@@ -1684,7 +1684,7 @@ namespace dxcanvas
 			IDirectDrawSurface* pSurface;
 
 			aSurfaceDesc.dwSize = sizeof(DDSURFACEDESC);
-			aSurfaceDesc.dwFlags = DDSD_CAPS | DDSD_HEIGHT | DDSD_WIDTH | DDSD_PIXELFORMAT;;
+			aSurfaceDesc.dwFlags = DDSD_CAPS | DDSD_HEIGHT | DDSD_WIDTH | DDSD_PIXELFORMAT;
 			aSurfaceDesc.dwWidth = rSize.getX();
 			aSurfaceDesc.dwHeight= rSize.getY();
 

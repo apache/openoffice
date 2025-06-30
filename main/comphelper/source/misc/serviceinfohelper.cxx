@@ -101,5 +101,3 @@ void ServiceInfoHelper::addToSequence( ::com::sun::star::uno::Sequence< ::rtl::O
 }
 
 }
-
-

@@ -57,7 +57,7 @@ const sal_Int32 MAX_MACRO_LEN( 1024 );
 
 const sal_Int32 MAX_ENTITY_LEN( 8L );
 
-/*  */
+/* */
 
 // Tabellen zum Umwandeln von Options-Werten in Strings
 
@@ -108,7 +108,7 @@ static HTMLOptionEnum __READONLY_DATA aTableRulesOptEnums[] =
 
 SV_IMPL_PTRARR(HTMLOptions,HTMLOptionPtr)
 
-/*  */
+/* */
 
 sal_uInt16 HTMLOption::GetEnum( const HTMLOptionEnum *pOptEnums, sal_uInt16 nDflt ) const
 {
@@ -307,7 +307,7 @@ HTMLTableRules HTMLOption::GetTableRules() const
 	return (HTMLTableRules)GetEnum( aTableRulesOptEnums, HTML_TR_NONE );
 }
 
-/*  */
+/* */
 
 HTMLParser::HTMLParser( SvStream& rIn, int bReadNewDoc )
 	: SvParser( rIn )
@@ -2366,5 +2366,3 @@ sal_Bool HTMLParser::SetEncodingByHTTPHeader(
     }
 	return bRet;
 }
-
-

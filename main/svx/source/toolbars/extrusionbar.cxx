@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
@@ -365,7 +363,7 @@ static void impl_execute( SdrView*, SfxRequest& rReq, SdrCustomShapeGeometryItem
 
 			switch( nSurface )
 			{
-			case 0:	// wireframe
+			case 0: // wireframe
 				eShadeMode = ShadeMode_DRAFT;
 				break;
 			case 1: // matte
@@ -511,57 +509,57 @@ void ExtrusionBar::execute( SdrView* pSdrView, SfxRequest& rReq, SfxBindings& rB
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_ON_OFF;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_TILT_DOWN:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_DOWN;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_TILT_UP:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_UP;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_TILT_LEFT:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_LEFT;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_TILT_RIGHT:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_ROTATE_RIGHT;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_DIRECTION:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_ORIENTATION;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_PROJECTION:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_PROJECTION;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_DEPTH:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_DEPTH;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_3D_COLOR:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_COLOR;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_SURFACE:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_SURFACE;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_LIGHTING_INTENSITY:
 		{
 			if ( !nStrResId )
 				nStrResId = RID_SVXSTR_UNDO_APPLY_EXTRUSION_BRIGHTNESS;
-		}	// PASSTROUGH
+		}	// PASSTHROUGH
 		case SID_EXTRUSION_LIGHTING_DIRECTION:
 		{
 			if ( !nStrResId )
@@ -1362,3 +1360,5 @@ void ExtrusionBar::getState( SdrView* pSdrView, SfxItemSet& rSet )
 		getExtrusionColorState( pSdrView, rSet );
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */

@@ -76,4 +76,3 @@ uno::Sequence< OUString > SAL_CALL ThesaurusMeaning::querySynonyms()
 ///////////////////////////////////////////////////////////////////////////
 
 }   // namespace linguistic
-

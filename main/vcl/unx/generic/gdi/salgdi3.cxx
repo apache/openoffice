@@ -1674,4 +1674,3 @@ bool FcGlyphFallbackSubstititution::FindFontSubstitute( ImplFontSelectData& rFon
 }
 
 // ===========================================================================
-

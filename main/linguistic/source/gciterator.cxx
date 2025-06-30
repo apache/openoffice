@@ -480,7 +480,7 @@ uno::Reference< linguistic2::XProofreader > GrammarCheckingIterator::GetGrammarC
         {
             xRes = aImplNameIt->second;
         }
-        else    // the service is to be instatiated here for the first time...
+        else    // the service is to be instantiated here for the first time...
         {
             try
             {
@@ -952,7 +952,7 @@ throw (uno::RuntimeException)
     {    
         ::osl::Guard< ::osl::Mutex > aGuard( MyMutex::get() );
 
-        // releaase all UNO references
+        // release all UNO references
         
         m_xMSF.clear();
         m_xBreakIterator.clear();

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,17 +9,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:uof="http://schemas.uof.org/cn/2003/uof" xmlns:表="http://schemas.uof.org/cn/2003/uof-spreadsheet" xmlns:演="http://schemas.uof.org/cn/2003/uof-slideshow" xmlns:字="http://schemas.uof.org/cn/2003/uof-wordproc" xmlns:图="http://schemas.uof.org/cn/2003/graph" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" office:version="1.0" exclude-result-prefixes="office style text table draw fo xlink dc meta number presentation svg chart dr3d math form script config ooo ooow oooc dom xforms smil anim">
 	<xsl:output method="xml" indent="no" encoding="UTF-8" version="1.0"/>
 	<xsl:variable name="scValueWithUnit">
@@ -235,7 +237,7 @@
 					<xsl:if test="/office:document/office:body/office:spreadsheet/table:database-ranges/table:database-range">
 						<表:区域公式集 uof:locID="s0122">
 							<表:区域公式 uof:locID="s0123" uof:attrList="类型">
-								<xsl:attribute name="表:类型">table</xsl:attribute>                            
+								<xsl:attribute name="表:类型">table</xsl:attribute>
 								<xsl:for-each select="/office:document/office:body/office:spreadsheet/table:database-ranges/table:database-range">
 									<表:区域 uof:locID="s0007">
 										<xsl:value-of select="@table:target-range-address"/>
@@ -473,7 +475,7 @@
 			<xsl:attribute name="uof:attrList">最大行 最大列 缺省行高 缺省列宽</xsl:attribute>
 			<xsl:variable name="group-column" select="./table:table-column-group"/>
 			<xsl:variable name="group-row" select="./table:table-row-group"/>
-			<xsl:apply-templates select="@table:style-name"/>            
+			<xsl:apply-templates select="@table:style-name"/>
 			<xsl:for-each select="table:table-column">
 				<表:列 uof:locID="s0048" uof:attrList="列号 隐藏 列宽 式样引用 跨度">
 					<xsl:attribute name="表:列号"><xsl:value-of select="position()"/></xsl:attribute>
@@ -1115,7 +1117,7 @@
 		<字:句 uof:locID="t0085">
 			<xsl:element name="字:文本串">
 				<xsl:attribute name="locID">t0109</xsl:attribute>
-	
+
 				<xsl:value-of select="." />
 			</xsl:element>
 		</字:句>
@@ -1166,7 +1168,7 @@
 
 
 	 MEASURE LIST:
-	 * 1 milimeter (mm), the basic measure
+	 * 1 millimeter (mm), the basic measure
 
 	 * 1 centimeter (cm) = 10 mm
 
@@ -3540,7 +3542,7 @@
 						<xsl:with-param name="preceding-cellstylename" select="''"/>
 						<xsl:with-param name="temp-num" select="'0'"/>
 						<xsl:with-param name="cellstylename" select="$cellstylename"/>
-						<xsl:with-param name="table-collumns" select="$cell/ancestor::table:table//table:table-column "/>
+						<xsl:with-param name="table-columns" select="$cell/ancestor::table:table//table:table-column "/>
 					</xsl:call-template>
 				</xsl:variable>
 				<xsl:choose>
@@ -3560,13 +3562,13 @@
 		<xsl:param name="preceding-cellstylename"/>
 		<xsl:param name="temp-num"/>
 		<xsl:param name="cellstylename"/>
-		<xsl:param name="table-collumns"/>
+		<xsl:param name="table-columns"/>
 		<xsl:choose>
 			<xsl:when test="$temp-num&lt;$column-num">
 				<xsl:variable name="firstcolumn">
 					<xsl:choose>
-						<xsl:when test="$table-collumns[1]/@table:number-columns-repeated">
-							<xsl:value-of select="$table-collumns[1]/@table:number-columns-repeated"/>
+						<xsl:when test="$table-columns[1]/@table:number-columns-repeated">
+							<xsl:value-of select="$table-columns[1]/@table:number-columns-repeated"/>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:value-of select="'1'"/>
@@ -3575,8 +3577,8 @@
 				</xsl:variable>
 				<xsl:variable name="preceding-cellstylename-to-param">
 					<xsl:choose>
-						<xsl:when test="$table-collumns[1]/@table:default-cell-style-name">
-							<xsl:value-of select="$table-collumns[1]/@table:default-cell-style-name"/>
+						<xsl:when test="$table-columns[1]/@table:default-cell-style-name">
+							<xsl:value-of select="$table-columns[1]/@table:default-cell-style-name"/>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:value-of select="''"/>
@@ -3588,7 +3590,7 @@
 					<xsl:with-param name="temp-num" select="$temp-num + $firstcolumn"/>
 					<xsl:with-param name="preceding-cellstylename" select="$preceding-cellstylename-to-param"/>
 					<xsl:with-param name="cellstylename" select="$cellstylename"/>
-					<xsl:with-param name="table-collumns" select="$table-collumns[position()!=1]"/>
+					<xsl:with-param name="table-columns" select="$table-columns[position()!=1]"/>
 				</xsl:call-template>
 			</xsl:when>
 			<xsl:otherwise>
@@ -4057,7 +4059,7 @@
 				<xsl:attribute name="uof:locID">s0114</xsl:attribute>
 				<xsl:if test="$styleProperties/@fo:margin-left">
 					<xsl:attribute name="表:缩进"><xsl:variable name="margin"><xsl:call-template name="convert2pt"><xsl:with-param name="value" select="$styleProperties/@fo:margin-left"/><xsl:with-param name="rounding-factor" select="1"/></xsl:call-template></xsl:variable><xsl:value-of select="number($margin) div 10"/></xsl:attribute>
-				</xsl:if>                
+				</xsl:if>
 				<xsl:element name="表:水平对齐方式">
 					<xsl:attribute name="uof:locID">s0115</xsl:attribute>
 					<xsl:choose>
@@ -4521,7 +4523,7 @@
 	</xsl:template>
 	<!--chengxz 0621 E-->
 	<!--xsl:template name="image">
-		
+
 			<xsl:element name="图:图形">
 				<xsl:attribute name="图:标识符"><xsl:value-of select="@draw:name"/></xsl:attribute>
 				<xsl:attribute name="uof:locID">g0000</xsl:attribute>
@@ -4598,7 +4600,7 @@
 			<xsl:when test="../child::*[$pos]">
 				<xsl:for-each select="../child::*[$pos]">
 					<xsl:variable name="nodepos">
-						<!--add by lvxg  -->
+						<!--add by lvxg -->
 						<xsl:choose>
 							<xsl:when test="./@draw:style-name">
 								<xsl:value-of select="@draw:style-name"/>
@@ -4725,8 +4727,8 @@
 						<xsl:if test="./@draw:points or ./@svg:d">
 							<图:关键点坐标 uof:locID="g0009" uofattrList="路径">
 								<!--xsl:call-template name="draw:points">
-                        <xsl:with-param name="point" select="./@draw:points"/>
-                        </xsl:call-template-->
+						<xsl:with-param name="point" select="./@draw:points"/>
+						</xsl:call-template-->
 								<xsl:attribute name="图:路径"><xsl:choose><xsl:when test="@svg:d"><xsl:value-of select="@svg:d"/></xsl:when><xsl:when test="@draw:points"><xsl:call-template name="draw:points"><xsl:with-param name="point" select="@draw:points"/><xsl:with-param name="lujing"/></xsl:call-template></xsl:when></xsl:choose></xsl:attribute>
 							</图:关键点坐标>
 						</xsl:if>
@@ -5490,7 +5492,7 @@
 							<xsl:attribute name="uof:attrList">类型</xsl:attribute>
 							<xsl:element name="表:操作条件">
 								<xsl:attribute name="uof:locID">s0106</xsl:attribute>
-								<!--redoffice comment  from  lvxg  8.27-->
+								<!--redoffice comment from lvxg 8.27-->
 								<xsl:if test="$first-condition/@table:operator">
 									<xsl:element name="表:操作码">
 										<xsl:attribute name="uof:locID">s0009</xsl:attribute>
@@ -5650,7 +5652,7 @@
 				<xsl:value-of select="$hex-value"/>
 			</xsl:otherwise>
 		</xsl:choose>
-	</xsl:template>    
+	</xsl:template>
 	<xsl:template name="hex2decimal">
 		<xsl:param name="hex-number"/>
 		<xsl:param name="index"/>
@@ -5787,7 +5789,7 @@
 		<xsl:element name="表:数据有效性集">
 			<xsl:attribute name="uof:locID">s0005</xsl:attribute>
 			<xsl:call-template name="create-validation-set">
-			    </xsl:call-template>
+				</xsl:call-template>
 		</xsl:element>
 	</xsl:template>
 	<xsl:template name="create-validation-set">

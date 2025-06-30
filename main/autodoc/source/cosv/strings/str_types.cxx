@@ -36,5 +36,3 @@ CharOrder_Table::CharOrder_Table( const int * i_pCharWeightsArray )
 
 
 }   // namespace csv
-
-

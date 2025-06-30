@@ -754,4 +754,3 @@ extern "C" sal_Bool __LOADONCALLAPI GraphicImport(SvStream & rStream, Graphic & 
 
 	return aTGAReader.ReadTGA( rStream, rGraphic );
 }
-

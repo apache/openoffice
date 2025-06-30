@@ -211,9 +211,3 @@ Reference< XResultSetMetaData > SAL_CALL OAdabasResultSet::getMetaData(  ) throw
 	return m_xMetaData;
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-
-

@@ -901,7 +901,7 @@ void FmSearchEngine::Init(const ::rtl::OUString& sVisibleFields)
                 }
             }
             // set the field selection back to the first
-            pFieldNames = seqFieldNames.getArray();;
+            pFieldNames = seqFieldNames.getArray();
             DBG_ASSERT(nFoundIndex != -1, "FmSearchEngine::Init : Invalid field name were given !");
             m_arrFieldMapping.push_back(nFoundIndex);
         }
@@ -1294,4 +1294,3 @@ void FmSearchEngine::RebuildUsedFields(sal_Int32 nFieldIndex, sal_Bool bForce)
     // und natuerlich beginne ich die naechste Suche wieder jungfraeulich
     InvalidatePreviousLoc();
 }
-

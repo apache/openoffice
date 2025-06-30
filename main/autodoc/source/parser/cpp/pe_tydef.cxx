@@ -132,6 +132,3 @@ PE_Typedef::On_afterName_Semicolon( const char * )
 }
 
 }   // namespace cpp
-
-
-

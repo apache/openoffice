@@ -1295,5 +1295,3 @@ void SvxColorTabPage::FillUserData()
 	// Das Farbmodell wird in der Ini-Datei festgehalten
 	SetUserData( UniString::CreateFromInt32( eCM ) );
 }
-
-

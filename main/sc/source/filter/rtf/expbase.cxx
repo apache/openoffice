@@ -99,5 +99,3 @@ ScFieldEditEngine& ScExportBase::GetEditEngine() const
 		((ScExportBase*)this)->pEditEngine = new ScFieldEditEngine( pDoc->GetEditPool() );
 	return *pEditEngine;
 }
-
-

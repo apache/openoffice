@@ -414,5 +414,3 @@ const struct SvXMLEnumMapEntry aXML_KeepTogetherType[] =
         { XML_AUTO,         1 },
         { XML_TOKEN_INVALID, 0}
 };
-
-

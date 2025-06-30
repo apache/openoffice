@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,21 +9,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
 <!--
-	For further documentation and updates visit http://xml.openoffice.org/odf2xhtml
+	For further documentation and updates visit https://xml.openoffice.org/odf2xhtml
 -->
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -111,8 +111,8 @@
 	</xsl:text>
 <xsl:text>span.footnodeNumber { padding-right:1em; }
 	</xsl:text>
-<xsl:text>span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
-	</xsl:text>        
+<xsl:text>span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000; margin:0; border:0; padding:0; }
+	</xsl:text>
 <xsl:text>* { margin:0;}
 	</xsl:text>
 			<xsl:call-template name="write-mapped-CSS-styles">
@@ -133,7 +133,7 @@
 				<xsl:for-each select="$globalData/all-styles/style[$styleNo]">
 				<xsl:choose>
 					<xsl:when test="final-properties != ''">
-					<!-- NOTE: easy process, as only the style family in conjunction with the style name, makes the style unambigous -->
+					<!-- NOTE: easy process, as only the style family in conjunction with the style name, makes the style unambiguous -->
 				<xsl:text>.</xsl:text><!--<xsl:value-of select="@style:family" /><xsl:text>:</xsl:text>--><xsl:value-of select="translate(@style:name, '.,;: %()[]/\+', '_____________')"/><xsl:text> { </xsl:text> <xsl:value-of select="final-properties" /><xsl:text>}
 	</xsl:text>
 						<xsl:call-template name="write-mapped-CSS-styles">
@@ -168,24 +168,24 @@
 
 		<!-- approximation to find the correct master page style (with page dimensions) -->
 		<xsl:variable name="masterPageNames">
-            <!-- set context to styles.xml -->
-            <xsl:for-each select="$globalData/all-doc-styles/style">
-                <!-- Loop over every style:style containing a @style:master-page-name attribute -->            
-                <xsl:for-each select="key('masterPage','count')">
-                        <!-- set context to styles.xml -->
-                        <xsl:for-each select="/*/office:body">
-                            <!-- Check if this style is being used in the body -->
-                            <xsl:if test="key('elementUsingStyle', ../@style:name)">
-                                <!-- Check every master-page-name if it is not emtpy and return as ';' separated list  -->
-                                <xsl:if test="string-length(../@style:master-page-name) &gt; 0"><xsl:value-of select="../@style:master-page-name"/>;</xsl:if>
-                            </xsl:if>
-                        </xsl:for-each>
-                </xsl:for-each>
-            </xsl:for-each>
+			<!-- set context to styles.xml -->
+			<xsl:for-each select="$globalData/all-doc-styles/style">
+				<!-- Loop over every style:style containing a @style:master-page-name attribute -->
+				<xsl:for-each select="key('masterPage','count')">
+					<!-- set context to styles.xml -->
+					<xsl:for-each select="/*/office:body">
+						<!-- Check if this style is being used in the body -->
+						<xsl:if test="key('elementUsingStyle', ../@style:name)">
+							<!-- Check every master-page-name if it is not empty and return as ';' separated list -->
+							<xsl:if test="string-length(../@style:master-page-name) &gt; 0"><xsl:value-of select="../@style:master-page-name"/>;</xsl:if>
+						</xsl:if>
+					</xsl:for-each>
+				</xsl:for-each>
+			</xsl:for-each>
 		</xsl:variable>
-		<!-- Take the first of the masterpage list and get the according style:master-page element and find the @style:page-layout-name  -->
+		<!-- Take the first of the masterpage list and get the according style:master-page element and find the @style:page-layout-name -->
 		<xsl:variable name="pageLayoutName" select="key('masterPageElements', substring-before($masterPageNames,';'))/@style:page-layout-name"/>
-		 <!-- Find the according style:page-layout and store the properties in a variable  -->
+		 <!-- Find the according style:page-layout and store the properties in a variable -->
 		<xsl:variable name="pageProperties" select="key('pageLayoutElements', $pageLayoutName)/style:page-layout-properties"/>
 
 <xsl:text>@page { </xsl:text>
@@ -234,25 +234,25 @@
 		<xsl:param name="globalData" />
 		<xsl:param name="pageProperties" />
 
-		<xsl:variable name="marginTop"  select="$pageProperties/@fo:margin-top" />
+		<xsl:variable name="marginTop" select="$pageProperties/@fo:margin-top" />
 		<xsl:if test="$marginTop">
 			<xsl:text>margin-top: </xsl:text>
 			<xsl:value-of select="$marginTop" />
 			<xsl:text>; </xsl:text>
 		</xsl:if>
-		<xsl:variable name="marginBottom"  select="$pageProperties/@fo:margin-bottom" />
+		<xsl:variable name="marginBottom" select="$pageProperties/@fo:margin-bottom" />
 		<xsl:if test="$marginBottom">
 			<xsl:text>margin-bottom: </xsl:text>
 			<xsl:value-of select="$marginBottom" />
 			<xsl:text>; </xsl:text>
 		</xsl:if>
-		<xsl:variable name="marginLeft"  select="$pageProperties/@fo:margin-left" />
+		<xsl:variable name="marginLeft" select="$pageProperties/@fo:margin-left" />
 		<xsl:if test="$marginLeft">
 			<xsl:text>margin-left: </xsl:text>
 			<xsl:value-of select="$marginLeft" />
 			<xsl:text>; </xsl:text>
 		</xsl:if>
-		<xsl:variable name="marginRight"  select="$pageProperties/@fo:margin-right" />
+		<xsl:variable name="marginRight" select="$pageProperties/@fo:margin-right" />
 		<xsl:if test="$marginRight">
 			<xsl:text>margin-right: </xsl:text>
 			<xsl:value-of select="$marginRight" />
@@ -334,21 +334,21 @@
 		<xsl:element name="meta">
 			<xsl:attribute name="name">DCTERMS.title</xsl:attribute>
 			<xsl:attribute name="content">
-			   <xsl:value-of select="$globalData/meta-file/*/office:meta/dc:title" />
+				<xsl:value-of select="$globalData/meta-file/*/office:meta/dc:title" />
 			</xsl:attribute>
 			<xsl:attribute name="lang" namespace="http://www.w3.org/XML/1998/namespace">
-			   <xsl:value-of select="$lang" />
+				<xsl:value-of select="$lang" />
 			</xsl:attribute>
 		</xsl:element>
 
-		<!-- the identifier for source  (identifier) -->
+		<!-- the identifier for source (identifier) -->
 		<xsl:call-template name="add-meta-tag">
 			<xsl:with-param name="meta-name" select="'DCTERMS.identifier'" />
 			<xsl:with-param name="meta-data" select="translate($netloc, ' ','')" />
 			<xsl:with-param name="meta-enc" select="'DCTERMS.URI'" />
 		</xsl:call-template>
 
-		<!-- the language for source  (language) -->
+		<!-- the language for source (language) -->
 		<xsl:call-template name="add-meta-tag">
 			<xsl:with-param name="meta-name" select="'DCTERMS.language'" />
 			<xsl:with-param name="meta-data" select="$lang" />
@@ -437,11 +437,11 @@
 		<link rel="transformation" href="http://xml.openoffice.org/odf2xhtml/rdf-extract.xsl" />
 		-->
 
-		<!-- base URL of document for resolving relative links  
+		<!-- base URL of document for resolving relative links
 		NOTE: CHROME has a problem, with relative references as from content table, referencing to root directory instead of document
 		<xsl:element name="base">
 			<xsl:attribute name="href">-->
-				<!-- earlier 'targetURL' was used for an absoulte reference of base provided by the Office (file URL)
+				<!-- earlier 'targetURL' was used for an absolute reference of base provided by the Office (file URL)
 					<xsl:value-of select="$targetURL" />
 					now '.' let relative links work, even if document has been moved -->
 				<!--<xsl:text>.</xsl:text>

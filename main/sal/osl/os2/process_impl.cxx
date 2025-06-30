@@ -428,4 +428,3 @@ oslProcessError SAL_CALL osl_setProcessLocale( rtl_Locale * pLocale )
 
     return (result);
 }
-

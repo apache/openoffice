@@ -5,7 +5,7 @@
 
 Both element contain localized child elements.
 
-The following table shows what localized item is used, when the Office the locale 
+The following table shows what localized item is used, when the Office the locale
 en-US uses.
 
 
@@ -15,7 +15,7 @@ Installed office en-US
          | publisher     | release notes
 =============================================
 pub1.oxt | en-US         | en-US
---------------------------------------------- 
+---------------------------------------------
 pub2.oxt | en-US-region1 | en-US-region1
 ---------------------------------------------
 pub3.oxt | en            | en
@@ -41,7 +41,7 @@ pub8.oxt
 ================================================================================
 Need not be committed in extensions/www/testarea/desktop.
 
-pub8.oxt is intended for tests with extensions.services.openoffice.org.
+pub8.oxt is intended for tests with extensions.openoffice.org.
 It does not contain <update-information>. That is, the Extension Manager will obtain
 the update information from the repository as feed:
 
@@ -54,15 +54,15 @@ Test
 ----
 Repository:
 
--Create the new extension in the repository. 
+-Create the new extension in the repository.
 -Provide a company name and a URL to the company website. This setting should be ignored
- when generating the udpate feed. Instead the publisher name from the extension is used.
+ when generating the update feed. Instead the publisher name from the extension is used.
  Enter "Publisher Title" : some arbitrary company
  "Publisher URL": any arbitrary URL but not:
  http://extensions.openoffice.org/testarea/desktop/publisher/publisher_en-US.html
-  
--Create a new release for the extension. Upload the version 2.0 (update/pub8.oxt). 
- Provide release notes. These release notes should later not be seen when clicking on 
+
+-Create a new release for the extension. Upload the version 2.0 (update/pub8.oxt).
+ Provide release notes. These release notes should later not be seen when clicking on
  the release notes link.
 
 
@@ -77,7 +77,7 @@ Result:
 The Update Dialog should show the publisher name as provided in the description.xml. For example,
 when lang=en-US was selected: My OpenOffice en-US
 
-A release notes link is displayed with an URL to the release notes as provided in 
+A release notes link is displayed with an URL to the release notes as provided in
 the description.xml. For example, when lang=en-US was selected:
 "http://extensions.openoffice.org/testarea/desktop/publisher/publisher_en-US.html
 
@@ -101,15 +101,15 @@ Test
 ----
 Repository:
 
--Create the new extension in the repository. 
+-Create the new extension in the repository.
 -Provide a company name and a URL to the company website. This setting should be ignored
- when generating the udpate feed. Instead the publisher name from the extension is used.
+ when generating the update feed. Instead the publisher name from the extension is used.
  Enter "Publisher Title" : some arbitrary company name
  "Publisher URL": any arbitrary URL but not:
  http://extensions.openoffice.org/testarea/desktop/publisher/publisher_en-US.html
-  
--Create a new release for the extension. Upload the version 2.0 (update/pub9.oxt). 
- Provide release notes. These release notes should later be displayed when clicking on 
+
+-Create a new release for the extension. Upload the version 2.0 (update/pub9.oxt).
+ Provide release notes. These release notes should later be displayed when clicking on
  the release notes link.
 
 
@@ -146,12 +146,12 @@ Test
 ----
 Repository:
 
--Create the new extension in the repository. 
--Provide a company name and a URL to the company website. They should then be in the udpate 
- feed. 
-  
--Create a new release for the extension. Upload the version 2.0 (update/pub10.oxt). 
- Provide release notes. These release notes should NOT  be displayed when clicking on 
+-Create the new extension in the repository.
+-Provide a company name and a URL to the company website. They should then be in the update
+ feed.
+
+-Create a new release for the extension. Upload the version 2.0 (update/pub10.oxt).
+ Provide release notes. These release notes should NOT be displayed when clicking on
  the release notes link. Instead the release notes provided by pub10.oxt should be displayed.
 
 
@@ -165,8 +165,8 @@ Office:
 Result:
 The Update Dialog should show the publisher name as provided in the repository.
 
-A release notes link is displayed with an URL to the release notes as provided in the 
-pub10.oxt.  For example, when the locale of the office is en-US then this page will be 
+A release notes link is displayed with an URL to the release notes as provided in the
+pub10.oxt. For example, when the locale of the office is en-US then this page will be
 displayed:
 For example,
 when lang=en-US was selected: My OpenOffice en-US
@@ -189,13 +189,13 @@ Test
 ----
 Repository:
 
--Create the new extension in the repository. 
--Provide a company name and a URL to the company website. They should then be in the udpate 
- feed. 
-  
--Create a new release for the extension. Upload the version 2.0 (update/pub11.oxt). 
- Provide release notes. These release notes should be displayed when clicking on 
- the release notes link. 
+-Create the new extension in the repository.
+-Provide a company name and a URL to the company website. They should then be in the update
+ feed.
+
+-Create a new release for the extension. Upload the version 2.0 (update/pub11.oxt).
+ Provide release notes. These release notes should be displayed when clicking on
+ the release notes link.
 
 
 Office:

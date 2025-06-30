@@ -224,5 +224,3 @@ Reference< XIdlArray > ArrayIdlClassImpl::getArray()
 }
 
 }
-
-

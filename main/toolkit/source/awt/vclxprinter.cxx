@@ -388,5 +388,3 @@ VCLXInfoPrinter::~VCLXInfoPrinter()
     xP = new VCLXInfoPrinter( rPrinterName );
     return xP;
 }
-
-

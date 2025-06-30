@@ -33,39 +33,34 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3143271">
 <bookmark_value>TimeSerial function</bookmark_value>
 </bookmark>
-<paragraph role="heading" id="hd_id3143271" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03030205.xhp" name="TimeSerial Function [Runtime]">TimeSerial Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U" oldref="2">Calculates a serial time value for the specified hour, minute, and second parameters that are passed as numeric value. You can then use this value to calculate the difference between times.</paragraph>
+<paragraph role="heading" id="hd_id3143271" xml-lang="en-US" level="1" l10n="U"><link href="text/sbasic/shared/03030205.xhp" name="TimeSerial Function [Runtime]">TimeSerial Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U">Calculates a serial time value for the specified hour, minute, and second parameters that are passed as numeric value. You can then use this value to calculate the difference between times.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3146794" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
-<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U" oldref="5">TimeSerial (hour, minute, second)</paragraph>
-<paragraph role="heading" id="hd_id3148797" xml-lang="en-US" level="2" l10n="U" oldref="6">Return value:</paragraph>
-<paragraph role="paragraph" id="par_id3154908" xml-lang="en-US" l10n="U" oldref="7">Date</paragraph>
-<paragraph role="heading" id="hd_id3154124" xml-lang="en-US" level="2" l10n="U" oldref="8">Parameters:</paragraph>
-<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U" oldref="9">
-<emph>hour:</emph> Any integer expression that indicates the hour of the time that is used to determine the serial time value. Valid values: 0-23.</paragraph>
-<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="U" oldref="10">
-<emph>minute:</emph> Any integer expression that indicates the minute of the time that is used to determine the serial time value. In general, use values between 0 and 59. However, you can also use values that lie outside of this range, where the number of minutes influence the hour value.</paragraph>
-<paragraph role="paragraph" id="par_id3161831" xml-lang="en-US" l10n="U" oldref="11">
-<emph>second:</emph> Any integer expression that indicates the second of the time that is used to determine the serial time value. In general, you can use values between 0 and 59. However, you can also use values that lie outside of this range, where the number seconds influences the minute value.</paragraph>
-<paragraph role="paragraph" id="par_id3155854" xml-lang="en-US" l10n="U" oldref="12">
-<emph>Examples:</emph>
-</paragraph>
-<paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="U" oldref="13">12, -5, 45 corresponds to 11, 55, 45</paragraph>
-<paragraph role="paragraph" id="par_id3147349" xml-lang="en-US" l10n="U" oldref="14">12, 61, 45 corresponds to 13, 2, 45</paragraph>
-<paragraph role="paragraph" id="par_id3147426" xml-lang="en-US" l10n="U" oldref="15">12, 20, -2 corresponds to 12, 19, 58</paragraph>
-<paragraph role="paragraph" id="par_id3153365" xml-lang="en-US" l10n="U" oldref="16">12, 20, 63 corresponds to 12, 21, 4</paragraph>
-<paragraph role="paragraph" id="par_id3146985" xml-lang="en-US" l10n="U" oldref="17">You can use the TimeSerial function to convert any time into a single value that you can use to calculate time differences.</paragraph>
-<paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="U" oldref="18">The TimeSerial function returns the type Variant with VarType 7 (Date). This value is stored internally as a double-precision number between 0 and 0.9999999999. As opposed to the DateSerial or DateValue function, where the serial date values are calculated as days relative to a fixed date, you can calculate with values returned by the TimeSerial function, but you cannot evaluate them.</paragraph>
-<paragraph role="paragraph" id="par_id3149482" xml-lang="en-US" l10n="U" oldref="19">In the TimeValue function, you can pass a string as a parameter containing the time. For the TimeSerial function, however, you can pass the individual parameters (hour, minute, second) as separate numeric expressions.</paragraph>
+<paragraph role="heading" id="hd_id3146794" xml-lang="en-US" level="2" l10n="U">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150792" xml-lang="en-US" l10n="U">TimeSerial (hour, minute, second)</paragraph>
+<paragraph role="heading" id="hd_id3148797" xml-lang="en-US" level="2" l10n="U">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3154908" xml-lang="en-US" l10n="U">Date</paragraph>
+<paragraph role="heading" id="hd_id3154124" xml-lang="en-US" level="2" l10n="U">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153193" xml-lang="en-US" l10n="U"><emph>hour:</emph> Any integer expression that indicates the hour of the time that is used to determine the serial time value. Valid values: 0-23.</paragraph>
+<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="U"><emph>minute:</emph> Any integer expression that indicates the minute of the time that is used to determine the serial time value. In general, use values between 0 and 59. However, you can also use values that lie outside of this range, where the number of minutes influence the hour value.</paragraph>
+<paragraph role="paragraph" id="par_id3161831" xml-lang="en-US" l10n="U"><emph>second:</emph> Any integer expression that indicates the second of the time that is used to determine the serial time value. In general, you can use values between 0 and 59. However, you can also use values that lie outside of this range, where the number seconds influences the minute value.</paragraph>
+<paragraph role="paragraph" id="par_id3155854" xml-lang="en-US" l10n="U"><emph>Examples:</emph></paragraph>
+<paragraph role="paragraph" id="par_id3153952" xml-lang="en-US" l10n="U">12, -5, 45 corresponds to 11, 55, 45</paragraph>
+<paragraph role="paragraph" id="par_id3147349" xml-lang="en-US" l10n="U">12, 61, 45 corresponds to 13, 2, 45</paragraph>
+<paragraph role="paragraph" id="par_id3147426" xml-lang="en-US" l10n="U">12, 20, -2 corresponds to 12, 19, 58</paragraph>
+<paragraph role="paragraph" id="par_id3153365" xml-lang="en-US" l10n="U">12, 20, 63 corresponds to 12, 21, 4</paragraph>
+<paragraph role="paragraph" id="par_id3146985" xml-lang="en-US" l10n="U">You can use the TimeSerial function to convert any time into a single value that you can use to calculate time differences.</paragraph>
+<paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="U">The TimeSerial function returns the type Variant with VarType 7 (Date). This value is stored internally as a double-precision number between 0 and 0.9999999999. As opposed to the DateSerial or DateValue function, where the serial date values are calculated as days relative to a fixed date, you can calculate with values returned by the TimeSerial function, but you cannot evaluate them.</paragraph>
+<paragraph role="paragraph" id="par_id3149482" xml-lang="en-US" l10n="U">In the TimeValue function, you can pass a string as a parameter containing the time. For the TimeSerial function, however, you can pass the individual parameters (hour, minute, second) as separate numeric expressions.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
-<paragraph role="heading" id="hd_id3154790" xml-lang="en-US" level="2" l10n="U" oldref="20">Example:</paragraph>
-<paragraph role="paragraph" id="par_id3145252" xml-lang="en-US" l10n="U" oldref="21">Sub ExampleTimeSerial</paragraph>
-<paragraph role="paragraph" id="par_id3153157" xml-lang="en-US" l10n="U" oldref="22">Dim dDate As Double, sDate As String</paragraph>
-<paragraph role="paragraph" id="par_id3156286" xml-lang="en-US" l10n="U" oldref="23">dDate = TimeSerial(8,30,15)</paragraph>
-<paragraph role="paragraph" id="par_id3148456" xml-lang="en-US" l10n="U" oldref="24">sDate = TimeSerial(8,30,15)</paragraph>
-<paragraph role="paragraph" id="par_id3155600" xml-lang="en-US" l10n="U" oldref="25">MsgBox dDate,64,"Time as a number"</paragraph>
-<paragraph role="paragraph" id="par_id3153417" xml-lang="en-US" l10n="U" oldref="26">MsgBox sDate,64,"Formatted time"</paragraph>
-<paragraph role="paragraph" id="par_id3153836" xml-lang="en-US" l10n="U" oldref="27">End Sub</paragraph>
+<paragraph role="heading" id="hd_id3154790" xml-lang="en-US" level="2" l10n="U">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3145252" xml-lang="en-US" l10n="U">Sub ExampleTimeSerial</paragraph>
+<paragraph role="paragraph" id="par_id3153157" xml-lang="en-US" l10n="U">Dim dDate As Double, sDate As String</paragraph>
+<paragraph role="paragraph" id="par_id3156286" xml-lang="en-US" l10n="U">dDate = TimeSerial(8,30,15)</paragraph>
+<paragraph role="paragraph" id="par_id3148456" xml-lang="en-US" l10n="U">sDate = TimeSerial(8,30,15)</paragraph>
+<paragraph role="paragraph" id="par_id3155600" xml-lang="en-US" l10n="U">MsgBox dDate,64,"Time as a number"</paragraph>
+<paragraph role="paragraph" id="par_id3153417" xml-lang="en-US" l10n="U">MsgBox sDate,64,"Formatted time"</paragraph>
+<paragraph role="paragraph" id="par_id3153836" xml-lang="en-US" l10n="U">End Sub</paragraph>
 </body>
 </helpdocument>

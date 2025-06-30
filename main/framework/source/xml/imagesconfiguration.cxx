@@ -230,4 +230,3 @@ sal_Bool ImagesConfiguration::StoreImages(
 }
 
 }
-

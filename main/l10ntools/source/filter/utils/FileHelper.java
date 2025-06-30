@@ -33,11 +33,11 @@ import java.util.*;
 // __________ Implementation __________
 
 /**
- * It collects some static helper functons to handle file system specific problems.
+ * It collects some static helper functions to handle file system specific problems.
  * Sometimes it's necessary to convert URL from/to system paths;
  * or from string notation to structural versions (e.g. com.sun.star.util.URL).
  * And sometimes java had another notation then the office it has.
- * Further it provides functionality to work easiear with the java.io.File class of java.
+ * Further it provides functionality to work easier with the java.io.File class of java.
  *
  *
  */
@@ -342,7 +342,7 @@ public class FileHelper
      *          e.g.: "myfile_"
      *
      *  @param  sExtension
-     *          the whished extension.
+     *          the wished extension.
      *          e.g.: "dat"
      *
      *  @return A valid file object, if an unique file could be created -

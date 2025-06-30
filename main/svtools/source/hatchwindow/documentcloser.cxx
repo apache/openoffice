@@ -288,4 +288,3 @@ uno::Reference< uno::XInterface > SAL_CALL ODocumentCloser::impl_staticCreateSel
 
     return static_cast< cppu::OWeakObject * >( new ODocumentCloser( xContext ) );
 }
-

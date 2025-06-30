@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,19 +7,17 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
-
-
 
 package installer::parameter;
 
@@ -39,7 +37,7 @@ use strict;
 sub usage
 {
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::parameter::usage"); }
-	
+
 	print <<Ende;
 --------------------------------------------------------------------------------
 $installer::globals::prog
@@ -52,7 +50,7 @@ The following parameter are needed:
 -b: Build, e.g. srx645 (optional)
 -m: Minor, e.g. m10 (optional)
 -simple: Path to do a simple install to
--c: Compiler, e.g. wntmsci8, unxlngi5, unxsols4, ... (optional) 
+-c: Compiler, e.g. wntmsci8, unxlngi5, unxsols4, ... (optional)
 -u: Path, in which zipfiles are unpacked (optional)
 -msitemplate: Source of the msi file templates (Windows compiler only)
 -msilanguage: Source of the msi file templates (Windows compiler only)
@@ -71,11 +69,11 @@ The following parameter are needed:
 -dontstrip: No file stripping (Unix only)
 -log : Logging all available information (optional)
 -debug : Collecting debug information
-  
+
 Examples for Windows:
 
 perl make_epmlist.pl -f zip.lst -p OfficeFAT -l en-US
-                     -u /export/unpack -buildid 8712 
+                     -u /export/unpack -buildid 8712
                      -msitemplate /export/msi_files
                      -msilanguage /export/msi_languages
 
@@ -96,16 +94,16 @@ sub saveparameter
 {
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::parameter::saveparameter"); }
 
-    $installer::logger::Global->printf("Command line arguments:\n");
+	$installer::logger::Global->printf("Command line arguments:\n");
 
-    my $index = 0;
+	my $index = 0;
 	foreach my $argument (@ARGV)
 	{
-        $installer::logger::Global->printf("    %2d: %s\n", $index++, $argument);
+		$installer::logger::Global->printf("    %2d: %s\n", $index++, $argument);
 	}
-	
+
 	# also saving global settings:
-    $installer::logger::Global->printf("Separator: %s\n", $installer::globals::separator);
+	$installer::logger::Global->printf("Separator: %s\n", $installer::globals::separator);
 }
 
 #####################################
@@ -119,7 +117,7 @@ sub getparameter
 	while ( $#ARGV >= 0 )
 	{
 		my $param = shift(@ARGV);
-		
+
 		if ($param eq "-f") { $installer::globals::ziplistname = shift(@ARGV); }
 		elsif ($param eq "-s") { $installer::globals::setupscriptname = shift(@ARGV); }
 		elsif ($param eq "-p") { $installer::globals::product = shift(@ARGV); }
@@ -165,9 +163,9 @@ sub getparameter
 			$installer::globals::rootpath = $path;
 		}
 		elsif ($param eq "-release")
-        {
-            $installer::globals::is_release = 1;
-        }
+		{
+			$installer::globals::is_release = 1;
+		}
 		else
 		{
 			installer::logger::print_error( "unknown parameter: $param" );
@@ -184,7 +182,7 @@ sub getparameter
 }
 
 ############################################
-# Controlling  the fundamental parameter
+# Controlling the fundamental parameter
 # (required for every process)
 ############################################
 
@@ -226,7 +224,7 @@ sub make_path_absolute
 			if ( $$pathref !~ /^\s*\// && $$pathref !~ /^\s*\w\:/ )	# not an absolute POSIX or DOS path
 			{
 				$$pathref = cwd() . $installer::globals::separator . $$pathref;
-			}	
+			}
 			my $p = $$pathref;
 			chomp( $p );
 			my $q = '';
@@ -238,12 +236,12 @@ sub make_path_absolute
 			$p =~ s/\\/\\\\/g;
 			chomp( $p = qx{cygpath -w "$p"} );
 			$$pathref = $p.$q;
-			# Use windows paths, but with '/'s.			
+			# Use Windows paths, but with '/'s.
 			$$pathref =~ s/\\/\//g;
 		}
 		else
 		{
-			if (!($$pathref =~ /^\s*\w\:/))	# this is a relative windows path (no dos drive)
+			if (!($$pathref =~ /^\s*\w\:/))	# this is a relative Windows path (no dos drive)
 			{
 				$$pathref = cwd() . $installer::globals::separator . $$pathref;
 				if ( $installer::globals::isos2 )
@@ -263,20 +261,20 @@ sub make_path_absolute
 
 ##################################################
 # Setting some global parameters
-# This has to be expanded with furher platforms
+# This has to be expanded with further platforms
 ##################################################
 
 sub setglobalvariables
-{	
+{
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::parameter::setglobalvariables"); }
 
 	# Setting the installertype directory corresponding to the environment variable PKGFORMAT
 	# The global variable $installer::globals::packageformat can only contain one package format.
-	# If PKGFORMAT cotains more than one format (for example "rpm deb") this is splitted in the
+	# If PKGFORMAT contains more than one format (for example "rpm deb") this is split in the
 	# makefile calling the perl program.
 	$installer::globals::installertypedir = $installer::globals::packageformat;
 
-	if ( $installer::globals::compiler =~ /wnt(msc|gcc)i/ )
+	if ( $installer::globals::compiler =~ /wnt(msc|gcc)[ix]/ )
 	{
 		$installer::globals::iswindowsbuild = 1;
 	}
@@ -314,7 +312,7 @@ sub setglobalvariables
 	}
 
 	if ( $installer::globals::compiler =~ /unxso[lg]s/ ) { $installer::globals::issolarissparcbuild = 1; }
-	
+
 	if ( $installer::globals::compiler =~ /unxso[lg]i/ ) { $installer::globals::issolarisx86build = 1; }
 
 	if ($ENV{OS} eq 'LINUX')
@@ -341,7 +339,7 @@ sub setglobalvariables
 			if ( $installer::globals::rpm eq "" ) { installer::exiter::exit_program("ERROR: Environment variable \"\$RPM\" has to be defined!", "setglobalvariables"); }
 		}
 
-		# Creating Debian packages ?	
+		# Creating Debian packages ?
 		if (( $installer::globals::packageformat eq "deb" ) || ( $installer::globals::debian ))
 		{
 			$installer::globals::debian = 1;
@@ -364,23 +362,23 @@ sub setglobalvariables
 			{
 				$installer::globals::islinuxx86_64debbuild = 1;
 			}
-		}	
+		}
 	}
 
 	# Defaulting to native package format for epm
-	
+
 	if ( ! $installer::globals::packageformat ) { $installer::globals::packageformat = "native"; }
 
 	# extension, if $installer::globals::pro is set
 	if ($installer::globals::pro) { $installer::globals::productextension = ".pro"; }
-	
+
 	# no languages defined as parameter
 	if ($installer::globals::languagelist eq "") { $installer::globals::languages_defined_in_productlist = 1; }
 
 	# setting and creating the unpackpath
-	
+
 	if ($installer::globals::unpackpath eq "")	# unpackpath not set
-	{	
+	{
 		$installer::globals::unpackpath = cwd();
 		if ( $installer::globals::iswin ) { $installer::globals::unpackpath =~ s/\//\\/g; }
 		if ( $installer::globals::isos2 ) { $installer::globals::unpackpath =~ s/\\/\//g; }
@@ -416,7 +414,7 @@ sub setglobalvariables
 	}
 
 	# setting and creating the temppath
-	
+
 	if (( $ENV{'TMP'} ) || ( $ENV{'TEMP'} ) || ( $ENV{'TMPDIR'} ))
 	{
 		if ( $ENV{'TMP'} ) { $installer::globals::temppath = $ENV{'TMP'}; }
@@ -441,14 +439,14 @@ sub setglobalvariables
 
 		$installer::globals::jdstemppath = $installer::globals::temppath;
 		$installer::globals::jdstemppath =~ s/i_/j_/;
-		push(@installer::globals::jdsremovedirs, $installer::globals::jdstemppath);			
+		push(@installer::globals::jdsremovedirs, $installer::globals::jdstemppath);
 		$installer::globals::temppath = $installer::globals::temppath . $installer::globals::separator . $installer::globals::compiler . $installer::globals::productextension;
-		installer::systemactions::create_directory($installer::globals::temppath);		
+		installer::systemactions::create_directory($installer::globals::temppath);
 		if ( $^O =~ /cygwin/i )
 		{
 			$installer::globals::cyg_temppath = $installer::globals::temppath;
 			$installer::globals::cyg_temppath =~ s/\\/\\\\/g;
-			chomp( $installer::globals::cyg_temppath = qx{cygpath -w "$installer::globals::cyg_temppath"} ); 
+			chomp( $installer::globals::cyg_temppath = qx{cygpath -w "$installer::globals::cyg_temppath"} );
 		}
 		$installer::globals::temppathdefined = 1;
 		$installer::globals::jdstemppathdefined = 1;
@@ -458,14 +456,14 @@ sub setglobalvariables
 		$installer::globals::temppathdefined = 0;
 		$installer::globals::jdstemppathdefined = 0;
 	}
-	
+
 	# only one cab file, if Windows msp patches shall be prepared
 	if ( $installer::globals::prepare_winpatch ) { $installer::globals::number_of_cabfiles = 1; }
 
 }
 
 ############################################
-# Controlling  the parameter that are
+# Controlling the parameters that are
 # required for special processes
 ############################################
 
@@ -479,7 +477,7 @@ sub control_required_parameter
 		# idt template path. Only required for Windows build ($installer::globals::compiler =~ /wntmsci/)
 		# for the creation of the msi database.
 		##############################################################################################
-	
+
 		if (($installer::globals::idttemplatepath eq "") && ($installer::globals::iswindowsbuild))
 		{
 			installer::logger::print_error( "idt template path not set (-msitemplate)!" );
@@ -491,25 +489,25 @@ sub control_required_parameter
 		# idt language path. Only required for Windows build ($installer::globals::compiler =~ /wntmsci/)
 		# for the creation of the msi database.
 		##############################################################################################
-	
+
 		if (($installer::globals::idtlanguagepath eq "") && ($installer::globals::iswindowsbuild))
 		{
 			installer::logger::print_error( "idt language path not set (-msilanguage)!" );
 			usage();
 			exit(-1);
 		}
-	
+
 		# Analyzing the idt template path
-	
+
 		if (!($installer::globals::idttemplatepath eq ""))	# idttemplatepath set, relative or absolute?
 		{
 			make_path_absolute(\$installer::globals::idttemplatepath);
 		}
-	
+
 		installer::remover::remove_ending_pathseparator(\$installer::globals::idttemplatepath);
 
 		# Analyzing the idt language path
-	
+
 		if (!($installer::globals::idtlanguagepath eq ""))	# idtlanguagepath set, relative or absolute?
 		{
 			make_path_absolute(\$installer::globals::idtlanguagepath);
@@ -522,7 +520,7 @@ sub control_required_parameter
 		# The name "codes.txt" can be overwritten in Product definition with CODEFILENAME (msiglobal.pm)
 
 		if (( $installer::globals::iswindowsbuild ) && ( $installer::globals::packageformat ne "archive" ) && ( $installer::globals::packageformat ne "installed" ))
-		{	
+		{
 			$installer::globals::codefilename = $installer::globals::idttemplatepath  . $installer::globals::separator . $installer::globals::codefilename;
 			installer::files::check_file($installer::globals::codefilename);
 			$installer::globals::componentfilename = $installer::globals::idttemplatepath  . $installer::globals::separator . $installer::globals::componentfilename;
@@ -586,7 +584,7 @@ sub outputparameter ()
 	if ( $installer::globals::debug ) { installer::logger::debuginfo("installer::parameter::outputparameter"); }
 
 	my @output = ();
-	
+
 	push(@output, "\n");
 	push(@output, "########################################################\n");
 	push(@output, "$installer::globals::prog, version 1.0\n");
@@ -640,12 +638,12 @@ sub outputparameter ()
 	if ( $installer::globals::languagepack ) { push(@output, "Creating language pack!\n"); }
 	if ( $installer::globals::patch ) { push(@output, "Creating patch!\n"); }
 	push(@output, "########################################################\n");
-	
+
 	# output into shell and into logfile
-	
+
 	foreach my $line (@output)
 	{
-	    $installer::logger::Info->print($line);
+		$installer::logger::Info->print($line);
 	}
 }
 

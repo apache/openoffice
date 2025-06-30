@@ -213,4 +213,3 @@ void ScXMLAnnotationContext::AddContentStyle( sal_uInt16 nFamily, const rtl::OUS
 {
     mrAnnotationData.maContentStyles.push_back( ScXMLAnnotationStyleEntry( nFamily, rName, rSelection ) );
 }
-

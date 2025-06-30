@@ -638,4 +638,3 @@ Sequence< OUString > SAL_CALL SdUnoDrawView::getSupportedServiceNames(  ) throw 
 }
 
 } // end of namespace sd
-

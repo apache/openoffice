@@ -8965,7 +8965,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 		<xsl:param name="points"/>
 		<xsl:param name="value"/>
 		<xsl:if test="$points">
-			<xsl:variable name="frist-piont">
+			<xsl:variable name="first-point">
 				<xsl:value-of select="substring-before($points,'lineto')"/>
 			</xsl:variable>
 			<xsl:variable name="other-points">
@@ -8974,10 +8974,10 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 			<xsl:choose>
 				<xsl:when test="contains($other-points,'lineto')">
 					<xsl:variable name="x-coor">
-						<xsl:value-of select="number(substring-before($frist-piont,' ')) * 1000"/>
+						<xsl:value-of select="number(substring-before($first-point,' ')) * 1000"/>
 					</xsl:variable>
 					<xsl:variable name="y-coor">
-						<xsl:value-of select="number(substring-after($frist-piont,' ')) * 1000"/>
+						<xsl:value-of select="number(substring-after($first-point,' ')) * 1000"/>
 					</xsl:variable>
 					<xsl:call-template name="DrawPoints">
 						<xsl:with-param name="points" select="$other-points"/>
@@ -8986,10 +8986,10 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:variable name="q-x-coor">
-						<xsl:value-of select="number(substring-before($frist-piont,' ')) * 1000"/>
+						<xsl:value-of select="number(substring-before($first-point,' ')) * 1000"/>
 					</xsl:variable>
 					<xsl:variable name="q-y-coor">
-						<xsl:value-of select="number(substring-after($frist-piont,' ')) * 1000"/>
+						<xsl:value-of select="number(substring-after($first-point,' ')) * 1000"/>
 					</xsl:variable>
 					<xsl:variable name="e-x-coor">
 						<xsl:value-of select="number(substring-before($other-points,' ')) * 1000"/>
@@ -13240,7 +13240,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 			</xsl:if>
 		</xsl:element>
 		<xsl:element name="style:text-properties">
-			<!-- absent fucntions -->
+			<!-- absent functions -->
 			<xsl:for-each select="图表:图例项_E765[1]/图表:字体_E70B">
 				<xsl:call-template name="TextProperties"/>
 			</xsl:for-each>
@@ -13393,7 +13393,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 					<xsl:when test="@显示方式_E75C='positive'">
 						<xsl:attribute name="chart:error-upper-indicator" select="'true'"/>
 					</xsl:when>
-					<xsl:when test="@显示方式_E75C='negtive'">
+					<xsl:when test="@显示方式_E75C='negative'">
 						<xsl:attribute name="chart:error-lower-indicator" select="'true'"/>
 					</xsl:when>
 					<xsl:when test="@显示方式_E75C='both'">
@@ -13570,7 +13570,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 				</style:graphic-properties>
 			</style:style>
 			<xsl:apply-templates select="图表:数据点集_E755" mode="chartstyle"/>
-			<!-- Waiting, New Funciton : xsl:apply-templates select="图表:引导线_E758" mode="chartstyle" -->
+			<!-- Waiting, New Function : xsl:apply-templates select="图表:引导线_E758" mode="chartstyle" -->
 			<xsl:apply-templates select="图表:误差线集_E759" mode="chartstyle"/>
 			<xsl:apply-templates select="图表:趋势线集_E762" mode="chartstyle"/>
 		</xsl:for-each>

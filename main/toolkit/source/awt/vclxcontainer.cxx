@@ -228,8 +228,3 @@ void VCLXContainer::setGroup( const ::com::sun::star::uno::Sequence< ::com::sun:
 		}
 	}
 }
-
-
-
-
-

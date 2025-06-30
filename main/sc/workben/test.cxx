@@ -2034,4 +2034,3 @@ IMPL_LINK(MyWindow, ViewHdl, PushButton*, EMPTYARG)
 
 	return 0;
 }
-

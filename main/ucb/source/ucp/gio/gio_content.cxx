@@ -529,7 +529,7 @@ getReadOnlyException( const uno::Reference< uno::XInterface >& rContext )
 
 void Content::queryChildren( ContentRefList& rChildren )
 {
-    // Obtain a list with a snapshot of all currently instanciated contents
+    // Obtain a list with a snapshot of all currently instantiated contents
     // from provider and extract the contents which are direct children
     // of this content.
 
@@ -586,7 +586,7 @@ sal_Bool Content::exchangeIdentity( const uno::Reference< ucb::XContentIdentifie
     // Exchange own identitity.
     if ( exchange( xNewId ) )
     {
-        // Process instanciated children...
+        // Process instantiated children...
         ContentRefList aChildren;
         queryChildren( aChildren );
 

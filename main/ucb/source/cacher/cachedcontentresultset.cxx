@@ -1712,7 +1712,7 @@ sal_Bool SAL_CALL CachedContentResultSet
 	}
 	aGuard.clear();
 
-	//find out whethter the original resultset contains rows or not
+	//find out whether the original resultset contains rows or not
 	m_xResultSetOrigin->afterLast();
 
 	aGuard.reacquire();
@@ -1747,7 +1747,7 @@ sal_Bool SAL_CALL CachedContentResultSet
 	}
 	aGuard.clear();
 
-	//find out whethter the original resultset contains rows or not
+	//find out whether the original resultset contains rows or not
 	m_xResultSetOrigin->beforeFirst();
 
 	aGuard.reacquire();
@@ -2222,4 +2222,3 @@ Reference< XResultSet > SAL_CALL CachedContentResultSetFactory
     xRet = new CachedContentResultSet( m_xSMgr, xSource, xMapping );
 	return xRet;
 }
-

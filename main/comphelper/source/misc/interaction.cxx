@@ -40,7 +40,7 @@ namespace comphelper
     //--------------------------------------------------------------------
     void SAL_CALL OInteractionPassword::setPassword( const ::rtl::OUString& _Password ) throw (RuntimeException)
     {
-        m_sPassword = _Password;;
+        m_sPassword = _Password;
     }
     
     //--------------------------------------------------------------------
@@ -91,5 +91,3 @@ namespace comphelper
 //.........................................................................
 }	// namespace comphelper
 //.........................................................................
-
-

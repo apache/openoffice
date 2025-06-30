@@ -293,4 +293,3 @@ ContentProvider::queryContent(
 
 	return xContent;
 }
-

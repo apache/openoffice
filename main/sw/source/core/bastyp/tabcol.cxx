@@ -135,4 +135,3 @@ void SwTabCols::Remove( sal_uInt16 nPos, sal_uInt16 nAnz )
     SwTabColsEntries::iterator aStart = aData.begin() + nPos;
     aData.erase( aStart, aStart + nAnz );
 }
-

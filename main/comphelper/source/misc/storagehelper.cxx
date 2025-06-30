@@ -549,4 +549,3 @@ sal_Bool OStorageHelper::PathHasSegment( const ::rtl::OUString& aPath, const ::r
 }
 
 }
-

@@ -1314,7 +1314,7 @@ sal_Bool SvXMLImport::IsPackageURL( const ::rtl::OUString& rURL ) const
 		switch( rURL[nPos] )
 		{
 		case '/':
-			// a relative path segement
+			// a relative path segment
 			return sal_True;
 		case ':':
 			// a schema
@@ -2074,4 +2074,3 @@ SvXMLImport::AddRDFa(uno::Reference<rdf::XMetadatable> i_xObject,
     rRDFaHelper.ParseAndAddRDFa(i_xObject,
         i_rAbout, i_rProperty, i_rContent, i_rDatatype);
 }
-

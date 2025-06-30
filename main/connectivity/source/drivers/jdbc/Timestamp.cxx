@@ -193,5 +193,3 @@ java_sql_Timestamp::operator ::com::sun::star::util::DateTime()
 	return ::dbtools::DBTypeConversion::toDateTime(toString());
 }
 // -----------------------------------------------------------------------------
-
-

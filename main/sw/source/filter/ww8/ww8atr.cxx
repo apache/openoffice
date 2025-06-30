@@ -23,7 +23,6 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 /*
  * This file contains methods for the WW8 output
@@ -300,7 +299,7 @@ void MSWordExportBase::OutputItemSet( const SfxItemSet& rSet, bool bPapFmt, bool
         {
             AttrOutput().OutputItem( *pItem );
 
-            // switch off the numerbering?
+            // switch off the numbering?
             if ( !( (SwNumRuleItem*)pItem )->GetValue().Len() &&
                  SFX_ITEM_SET != rSet.GetItemState( RES_LR_SPACE, false) &&
                  SFX_ITEM_SET == rSet.GetItemState( RES_LR_SPACE, true, &pItem ) )
@@ -943,7 +942,7 @@ String MSWordExportBase::GetBookmarkName( sal_uInt16 nTyp, const String* pName, 
 }
 
 //-----------------------------------------------------------------------
-/*  */
+/* */
 /* File CHRATR.HXX: */
 void WW8AttributeOutput::RTLAndCJKState( bool bIsRTL, sal_uInt16 nScript )
 {
@@ -2953,7 +2952,7 @@ void AttributeOutputBase::TextField( const SwFmtFld& rField )
             nScript = i18n::ScriptType::ASIAN;
 
         long nHeight = ((SvxFontHeightItem&)(GetExport().GetItem(
-            GetWhichOfScript(RES_CHRATR_FONTSIZE,nScript)))).GetHeight();;
+            GetWhichOfScript(RES_CHRATR_FONTSIZE,nScript)))).GetHeight();
 
         nHeight = (nHeight + 10) / 20; //Font Size in points;
 
@@ -4238,7 +4237,7 @@ void WW8Export::Out_BorderLine(WW8Bytes& rO, const SvxBorderLine* pLine,
 void WW8Export::Out_SwFmtBox(const SvxBoxItem& rBox, bool bShadow)
 {
     if ( bOutPageDescs && !bWrtWW8 )
-        return; // no page ouline in WW6
+        return; // no page outline in WW6
 
     static const sal_uInt16 aBorders[] =
     {

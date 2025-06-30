@@ -205,4 +205,3 @@ Reference< XFastContextHandler > TextBodyContext::createFastChildContext( sal_In
 // --------------------------------------------------------------------
 
 } }
-

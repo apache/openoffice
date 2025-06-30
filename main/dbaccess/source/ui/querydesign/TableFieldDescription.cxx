@@ -237,6 +237,3 @@ void OTableFieldDesc::Save( ::comphelper::NamedValueCollection& o_rSettings, con
     }
 }
 // -----------------------------------------------------------------------------
-
-
-

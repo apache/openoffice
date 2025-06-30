@@ -531,4 +531,3 @@ void XclExpTabViewSettings::WriteTabBgColor( XclExpStream& rStrm ) const
         XclExpTabBgColor( maData ).Save( rStrm );
 }
 // ============================================================================
-

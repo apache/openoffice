@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #include "precompiled_reportdesign.hxx"
 #include "ModuleHelper.hxx"
@@ -43,22 +42,22 @@
 namespace rptui
 {
 //.........................................................................
-    using namespace ::com::sun::star;
+	using namespace ::com::sun::star;
 //=========================================================================
 //= OModuleImpl
 //=========================================================================
-/** implementation for <type>OModule</type>. not threadsafe, has to be guarded by it's owner
+/** implementation for <type>OModule</type>. not threadsafe, has to be guarded by its owner
 */
 class OModuleImpl
 {
 	ResMgr*	m_pRessources;
 
 public:
-	/// ctor
+	// ctor
 	OModuleImpl();
 	~OModuleImpl();
 
-	/// get the manager for the resources of the module
+	// get the manager for the resources of the module
 	ResMgr*	getResManager();
 };
 
@@ -67,7 +66,7 @@ DBG_NAME( rpt_OModuleImpl )
 OModuleImpl::OModuleImpl()
 	:m_pRessources(NULL)
 {
-    DBG_CTOR( rpt_OModuleImpl,NULL);
+	DBG_CTOR( rpt_OModuleImpl,NULL);
 
 }
 
@@ -77,18 +76,18 @@ OModuleImpl::~OModuleImpl()
 	if (m_pRessources)
 		delete m_pRessources;
 
-    DBG_DTOR( rpt_OModuleImpl,NULL);
+	DBG_DTOR( rpt_OModuleImpl,NULL);
 }
 
 //-------------------------------------------------------------------------
 ResMgr*	OModuleImpl::getResManager()
 {
-	// note that this method is not threadsafe, which counts for the whole class !
+	// note that this method is not threadsafe, which counts for the whole class!
 
 	if (!m_pRessources)
 	{
 		// create a manager with a fixed prefix
-        rtl::OString sName = rtl::OString( "rptui" );
+		rtl::OString sName = rtl::OString( "rptui" );
 		m_pRessources = ResMgr::CreateResMgr( sName.getStr());
 	}
 	return m_pRessources;
@@ -133,6 +132,6 @@ void OModule::ensureImpl()
 	s_pImpl = new OModuleImpl();
 }
 
-//.........................................................................
 }	// namespace dbaui
-//.........................................................................
+
+/* vim: set noet sw=4 ts=4: */

@@ -80,4 +80,3 @@ void *OModule::getSymbol(const rtl::OUString& strSymbolName)
     VOS_ASSERT(m_Module);
 	return ( osl_getSymbol( m_Module, strSymbolName.pData ) );
 }
-

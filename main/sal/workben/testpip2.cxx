@@ -88,6 +88,3 @@ int main (void)
     printf( "TestPipe Client: test passed.\n" );
     return 0;
 }
-
-
-

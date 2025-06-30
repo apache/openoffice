@@ -652,7 +652,3 @@ ResultSetBase::getMetaData(
 			  m_xMSF, m_sProperty );
 	return uno::Reference< sdbc::XResultSetMetaData >( p );
 }
-
-
-
-

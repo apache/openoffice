@@ -542,4 +542,3 @@ void NumFormatListBox::Clear()
 	ListBox::Clear();
 	nCurrFormatType = -1;
 }
-

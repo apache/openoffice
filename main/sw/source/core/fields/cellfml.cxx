@@ -254,7 +254,7 @@ double SwTableBox::GetValue( SwTblCalcPara& rCalcPara ) const
 	return nRet;
 }
 
-/*  */
+/* */
 
 // Struktur, die zum TabelleRechnen benoetigt wird
 
@@ -309,7 +309,7 @@ sal_Bool SwTblCalcPara::CalcWithStackOverflow()
 	return !rCalc.IsCalcError();
 }
 
-/*  */
+/* */
 
 SwTableFormula::SwTableFormula( const String& rFormel )
 	: sFormel( rFormel )
@@ -1216,5 +1216,3 @@ void SwTableFormula::ToSplitMergeBoxNm( SwTableFmlUpdate& rTblUpd )
 	sFormel = ScanString( &SwTableFormula::_SplitMergeBoxNm, *pTbl, (void*)&rTblUpd );
 	eNmType = INTRNL_NAME;
 }
-
-

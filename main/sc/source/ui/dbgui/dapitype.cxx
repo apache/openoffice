@@ -132,6 +132,3 @@ String ScDataPilotServiceDlg::GetParPass() const
 {
 	return aEdPasswd.GetText();
 }
-
-
-

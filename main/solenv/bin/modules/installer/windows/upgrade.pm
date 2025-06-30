@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -30,7 +30,7 @@ use installer::windows::idtglobal;
 
 ####################################################################################
 # Creating the file Upgrade.idt dynamically
-# Content: 
+# Content:
 # UpgradeCode VersionMin VersionMax Language Attributes Remove ActionProperty
 ####################################################################################
 
@@ -48,10 +48,10 @@ sub create_upgrade_table
 		$include_ooo_fix = 1;
 		$ooomaxnew = "34.0.0";
 	}
-	
+
 	installer::windows::idtglobal::write_idt_header(\@upgradetable, "upgrade");
 
-	# Setting also $installer::globals::msimajorproductversion, that is for example "3.0.0", to differ between old products for OOo 2.x and 
+	# Setting also $installer::globals::msimajorproductversion, that is for example "3.0.0", to differ between old products for OOo 2.x and
 	# older products from OOo 3.x. The latter must be removed always, the removal of the first is controlled with a checkbox.
 	my $newline = $installer::globals::upgradecode . "\t" . "\t" . $installer::globals::msimajorproductversion . "\t" . "\t" . "0" . "\t" . "\t" . "OLDPRODUCTS" . "\n";
 	push(@upgradetable, $newline);
@@ -84,11 +84,11 @@ sub create_upgrade_table
 		#	push(@upgradetable, $newline);
 		#
 		#	$newline = $allvariableshashref->{'PATCHUPGRADECODE'} . "\t" . $installer::globals::msiproductversion . "\t" . "\t" . "\t" . "258" . "\t" . "\t" . "SAMEPRODUCTSPATCH" . "\n";
-		#	push(@upgradetable, $newline);	
+		#	push(@upgradetable, $newline);
 		# }
-		
+
 		# also searching for the beta
-		
+
 		if (( $allvariableshashref->{'BETAUPGRADECODE'} ) && ( ! $installer::globals::languagepack ))
 		{
 			$newline = $allvariableshashref->{'BETAUPGRADECODE'} . "\t" . "1.0" . "\t" . "\t" . "\t" . "1" . "\t" . "\t" . "BETAPRODUCTS" . "\n";
@@ -96,13 +96,13 @@ sub create_upgrade_table
 		}
 
 		# also searching for the stub
-		
+
 		if (( $allvariableshashref->{'STUBUPGRADECODE'} ) && ( ! $installer::globals::languagepack ))
 		{
 			$newline = $allvariableshashref->{'STUBUPGRADECODE'} . "\t" . "1.0" . "\t" . "\t" . "\t" . "1" . "\t" . "\t" . "STUBPRODUCTS" . "\n";
 			push(@upgradetable, $newline);
 		}
-		
+
 		# searching for all older patches and languagepacks (defined in a extra file)
 
 		if (( $allvariableshashref->{'REMOVE_UPGRADE_CODE_FILE'} ) && ( ! $installer::globals::languagepack ))
@@ -119,14 +119,14 @@ sub create_upgrade_table
 	}
 
 	# No upgrade for Beta versions!
-	
+
 	if (( $allvariableshashref->{'PRODUCTEXTENSION'} eq "Beta" ) && ( ! $installer::globals::patch ) && ( ! $installer::globals::languagepack ))
 	{
 		@upgradetable = ();
 		installer::windows::idtglobal::write_idt_header(\@upgradetable, "upgrade");
-        $installer::logger::Lang->printf("Beta product -> empty Upgrade table\n"); 
+        $installer::logger::Lang->printf("Beta product -> empty Upgrade table\n");
 	}
-	
+
 	# Saving the file
 
 	my $upgradetablename = $basedir . $installer::globals::separator . "Upgrade.idt";
@@ -144,7 +144,7 @@ sub analyze_file_for_upgrade_table
 	my ($filecontent) = @_;
 
 	my @allnewlines = ();
-	
+
 	for ( my $i = 0; $i <= $#{$filecontent}; $i++ )
 	{
 		my $line = ${$filecontent}[$i];
@@ -154,7 +154,7 @@ sub analyze_file_for_upgrade_table
 		if ( $line =~ /^(.*)\t(.*)\t(.*)\t(.*)\t(.*)\t(.*)\t(.*)$/ ) { push(@allnewlines, $line); }
 		else { installer::exiter::exit_program("ERROR: Wrong syntax in file for upgrade table", "analyze_file_for_upgrade_table"); }
 	}
-	
+
 	return \@allnewlines;
 }
 

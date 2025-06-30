@@ -193,5 +193,3 @@ IMPL_LINK(SwFldInputDlg, NextHdl, PushButton*, EMPTYARG)
 	EndDialog(RET_OK);
 	return 0;
 }
-
-

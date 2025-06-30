@@ -1056,5 +1056,3 @@ void BasicIDEShell::ImplStartListening( StarBASIC* pBasic )
 {
 	StartListening( pBasic->GetBroadcaster(), sal_True /* Nur einmal anmelden */ );
 }
-
-

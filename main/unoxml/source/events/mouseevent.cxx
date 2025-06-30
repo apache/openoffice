@@ -194,4 +194,3 @@ namespace DOM { namespace events
         CUIEvent::initEvent(eventTypeArg, canBubbleArg, cancelableArg);
     }
 }}
-

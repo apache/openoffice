@@ -75,7 +75,7 @@ class SAXEventKeeperImpl : public cppu::WeakImplHelper6
 {
 private:
 	/*
-	 * the XMLDocumentWrapper component which maintains all bufferred SAX
+	 * the XMLDocumentWrapper component which maintains all buffered SAX
 	 * in DOM format.
 	 */
 	com::sun::star::uno::Reference< 
@@ -90,7 +90,7 @@ private:
 		
 	/*
 	 * the compressed document handler provided by the XMLDocumentWrapper
-	 * component, the handler has more effient method definition that the 
+	 * component, the handler has more efficient method definition that the
 	 * normal document handler.
 	 */
 	com::sun::star::uno::Reference< 
@@ -110,7 +110,7 @@ private:
 	
 	/*
 	 * the root node of the BufferNode tree.
-	 * the BufferNode tree is used to keep track of all bufferred elements,
+	 * the BufferNode tree is used to keep track of all buffered elements,
 	 * it has the same structure with the document which maintains those 
 	 * elements physically.
 	 */
@@ -178,7 +178,7 @@ private:
 	std::vector< sal_Int32 > m_vReleasedElementMarkBuffers;
 	
 	/*
-	 * a flag to indicate whether the ElementMark releasing process is runing.
+	 * a flag to indicate whether the ElementMark releasing process is running.
 	 * When a releasing request comes, the assigned ElementMark is added to
 	 * the m_vReleasedElementMarkBuffers first, then this flag is checked.
 	 * If the ElementMark releasing process is not running, then call that

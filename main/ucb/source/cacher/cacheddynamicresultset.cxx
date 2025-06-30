@@ -198,5 +198,3 @@ Reference< XDynamicResultSet > SAL_CALL CachedDynamicResultSetFactory
 	xRet = new CachedDynamicResultSet( SourceStub, ContentIdentifierMapping, m_xSMgr );
 	return xRet;
 }
-
-

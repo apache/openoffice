@@ -1411,4 +1411,3 @@ sal_Bool WinSalGraphics::getNativeControlRegion(  ControlType nType,
     ReleaseDC( mhWnd, hDC );
 	return( bRet );
 }
-

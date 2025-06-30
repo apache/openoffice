@@ -326,4 +326,3 @@ sal_uInt16 SwFrameStyleEventDescriptor::getMacroItemWhich() const
 {
 	return RES_FRMMACRO;
 }
-

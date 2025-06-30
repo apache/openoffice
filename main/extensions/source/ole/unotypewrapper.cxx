@@ -170,6 +170,3 @@ STDMETHODIMP UnoTypeWrapper::get_Name(BSTR  *pVal)
  	Unlock();
  	return hr;
 }
-
-
-

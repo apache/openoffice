@@ -675,4 +675,3 @@ ScAccessibleCsvControl* ScCsvRuler::ImplCreateAccessible()
 
 
 // ============================================================================
-

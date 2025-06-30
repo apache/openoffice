@@ -259,4 +259,3 @@ void FuncPage::InitLRUList()
 
 
 } // formula
-

@@ -145,7 +145,7 @@ public class SDFWriter  extends DataWriter {
 	 * @see com.sun.star.tooling.converter.DataWriter#writeData(java.util.Map[])
 	 */
 	protected void writeData(Map[] data) throws IOException {
-		// TODO redesign DataHandler in the way that this is not nessesary any more
+		// TODO redesign DataHandler in the way that this is not necessary any more
 		
 	}
 

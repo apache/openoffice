@@ -180,4 +180,3 @@ IMPL_LINK( PasswordDialog, OKHdl_Impl, OKButton *, EMPTYARG )
 
     return 1;
 }
-

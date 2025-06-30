@@ -64,4 +64,3 @@ ooo_wrapper_registry_remove(XAccessible *pAccessible)
     if( uno_to_gobject )
         g_hash_table_remove( uno_to_gobject, (gpointer) pAccessible );
 }
-

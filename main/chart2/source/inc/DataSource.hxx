@@ -51,7 +51,7 @@ public:
 
 	virtual ~DataSource();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( DataSource )
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()

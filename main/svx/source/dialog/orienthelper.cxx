@@ -199,4 +199,3 @@ void OrientStackedWrapper::SetControlValue( bool bValue )
 // ============================================================================
 
 } // namespace svx
-

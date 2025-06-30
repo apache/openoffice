@@ -586,6 +586,3 @@ sal_Bool SAL_CALL ScTestAddIn::supportsService( const ::rtl::OUString& ServiceNa
 }
 
 //------------------------------------------------------------------------
-
-
-

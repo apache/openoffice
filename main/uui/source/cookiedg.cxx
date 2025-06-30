@@ -137,4 +137,3 @@ short CookiesDialog::Execute()
 
 	return nRet;
 }
-

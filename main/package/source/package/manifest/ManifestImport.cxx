@@ -402,4 +402,3 @@ void SAL_CALL ManifestImport::setDocumentLocator( const uno::Reference< xml::sax
 
     return aConvertedName;
 }
-

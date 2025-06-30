@@ -276,5 +276,3 @@ int test_ftpopen(void)
     
     TESTEVAL;
 }
-
-

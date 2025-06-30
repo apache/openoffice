@@ -219,4 +219,3 @@ sal_uLong DdeData::GetInternalFormat( sal_uLong nFmt )
 	}
 	return nFmt;
 }
-

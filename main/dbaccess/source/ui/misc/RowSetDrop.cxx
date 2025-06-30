@@ -264,6 +264,3 @@ sal_Bool ORowSetImportExport::insertNewRow()
 	return sal_True;
 }
 // -----------------------------------------------------------------------------
-
-
-

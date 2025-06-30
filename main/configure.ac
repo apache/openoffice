@@ -2778,7 +2778,7 @@ AC_MSG_CHECKING([whether we are allowed and able to use --ccache-skip])
 if test "$_os" != "Darwin" ; then
    AC_MSG_RESULT([only used on Mac currently, skipping])
 elif test "$enable_ccache_skip" = "no" ; then
-   AC_MSG_RESULT([no - diabled explicitly])
+   AC_MSG_RESULT([no - disabled explicitly])
 elif test "$enable_ccache_skip" = "yes" ; then
    AC_MSG_RESULT([yes - enabled explicitly, skipping checks])
    AC_SUBST([USE_CCACHE], [YES])
@@ -3414,10 +3414,10 @@ dnl ===================================================================
 AC_MSG_CHECKING([whether to enable EPM for packing])
 if test "$enable_epm" = "yes"; then
    AC_MSG_RESULT([yes])
-   dnl ===================================================================
-   dnl Check for epm - not needed for Windows
-   dnl ===================================================================
-   if test "$_os" != "WINNT"; then
+   dnl ================================================================================
+   dnl Check for epm - not needed for Windows or building archive or installed formats
+   dnl ================================================================================
+   if test "$_os" != "WINNT" -a "$with_package_format" != "archive" -a "$with_package_format" != "installed"; then
       if test -n "$with_epm"; then
 	      EPM=$with_epm
       else
@@ -3766,7 +3766,7 @@ if test -n "$with_system_jpeg" -o -n "$with_system_libs" && \
     AC_CHECK_HEADER(jpeglib.h, [],
         [AC_MSG_ERROR(jpeg.h not found. install libjpeg)], [])
     AC_CHECK_LIB(jpeg, jpeg_resync_to_restart, [ JPEG3RDLIB=-ljpeg ],
-	[AC_MSG_CHECKING(jpeg library not found or fuctional)], [])
+	[AC_MSG_CHECKING(jpeg library not found or functional)], [])
 else
     AC_MSG_RESULT([internal])
     SYSTEM_JPEG=NO

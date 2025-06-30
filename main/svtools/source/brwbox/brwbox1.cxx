@@ -2753,5 +2753,3 @@ void BrowseBox::GetFocus()
 	}
 	Control::GetFocus();
 }
-
-

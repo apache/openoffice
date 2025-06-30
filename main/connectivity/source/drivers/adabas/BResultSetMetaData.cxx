@@ -80,4 +80,3 @@ sal_Bool SAL_CALL OAdabasResultSetMetaData::isAutoIncrement( sal_Int32 column ) 
 	return getNumColAttrib(column,SQL_DESC_AUTO_UNIQUE_VALUE) == SQL_TRUE;
 }
 // -------------------------------------------------------------------------
-

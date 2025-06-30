@@ -266,5 +266,3 @@ void ScInputCfg::OptionsChanged()
 {
 	SetModified();
 }
-
-

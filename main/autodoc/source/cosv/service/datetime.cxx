@@ -76,5 +76,3 @@ Time::Null_()
 
 
 }   // namespace csv
-
-

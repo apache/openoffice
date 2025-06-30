@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -37,7 +37,7 @@ Dim bCB1 As Long, bCB2 As Long
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.linguistic2.XDictionaryList
 '*************************************************************************
 On Error Goto ErrHndl
@@ -105,7 +105,7 @@ On Error Goto ErrHndl
 
     Test.StartMethod("addDictionaryListEventListener()")
     Dim bListOK As Boolean
-    
+
     bOK = true
     bCB1 = false
     bCB2 = false
@@ -115,7 +115,7 @@ On Error Goto ErrHndl
     Out.Log("First listener was added: " + bListOK)
     bListOK = oObj.addDictionaryListEventListener(oListener2, false)
     Out.Log("Second listener was added: " + bListOK)
-    
+
     Test.StartMethod("flushEvents()")
 
     Out.Log("The level of buffer returned by flushEvents() is " + oObj.flushEvents())
@@ -150,16 +150,16 @@ On Error Goto ErrHndl
     Test.StartMethod("beginCollectEvents()")
     bOK = true
     Dim bufSize1 As Integer, bufSize2 As Integer
-    
+
     bufSize1 = oObj.beginCollectEvents()
     bufSize2 = oObj.beginCollectEvents()
-    
+
     bOK = bOK AND (bufSize2 = bufSize1 + 1)
     Test.MethodTested("beginCollectEvents()", bOK)
 
     Test.StartMethod("endCollectEvents()")
     bufSize1 = oObj.endCollectEvents()
-    
+
     bOK = bOK AND (bufSize2 = bufSize1 + 1)
     Test.MethodTested("endCollectEvents()", bOK)
 

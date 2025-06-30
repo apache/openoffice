@@ -638,5 +638,3 @@ sal_Bool RangeNameBufferWK3::FindAbs( const String& rRef, sal_uInt16& rIndex )
 
 	return sal_False;
 }
-
-

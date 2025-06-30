@@ -266,7 +266,3 @@ sal_uInt16 SwDoc::CallEvent( sal_uInt16 nEvent, const SwCallMouseEvent& rCallEve
 	}
 	return nRet;
 }
-
-
-
-

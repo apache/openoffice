@@ -136,4 +136,3 @@
 
 #define SFX_TYPEMAP
 #include "sdslots.hxx"
-

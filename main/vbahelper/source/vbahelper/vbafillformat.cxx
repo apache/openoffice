@@ -192,4 +192,3 @@ ScVbaFillFormat::getServiceNames()
     }
     return aServiceNames;
 }
-

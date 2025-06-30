@@ -560,5 +560,3 @@ sal_Bool ScUndoWrapper::CanRepeat(SfxRepeatTarget& rTarget) const
     else
         return sal_False;
 }
-
-

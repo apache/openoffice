@@ -158,6 +158,3 @@ SvNumberFormatsSupplierObj* SvNumberFormatsSupplierObj::getImplementation(
 
 
 //------------------------------------------------------------------------
-
-
-

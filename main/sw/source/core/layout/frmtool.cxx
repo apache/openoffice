@@ -3614,4 +3614,3 @@ bool SwDeletionChecker::HasBeenDeleted()
 
 	return true;
 }
-

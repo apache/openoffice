@@ -827,7 +827,7 @@ short SvxNumberFormatShell::FillEListWithSysCurrencys( SvStrings& rList,short nS
 //  short           nIq=0;
 
 	NfIndexTableOffset eOffsetStart=NF_CURRENCY_START;
-	NfIndexTableOffset eOffsetEnd=NF_CURRENCY_END;;
+	NfIndexTableOffset eOffsetEnd=NF_CURRENCY_END;
 	long nIndex;
 
 	for(nIndex=eOffsetStart;nIndex<=eOffsetEnd;nIndex++)
@@ -1862,4 +1862,3 @@ sal_Bool SvxNumberFormatShell::IsInTable(sal_uInt16 nPos,sal_Bool bTmpBanking,co
 
 	return bFlag;
 }
-

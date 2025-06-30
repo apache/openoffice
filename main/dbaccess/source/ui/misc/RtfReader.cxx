@@ -368,6 +368,3 @@ TypeSelectionPageFactory ORTFReader::getTypeSelectionPageFactory()
     return &OWizRTFExtend::Create;
 }
 // -----------------------------------------------------------------------------
-
-
-

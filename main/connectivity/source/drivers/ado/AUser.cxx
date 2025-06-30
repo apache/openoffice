@@ -216,8 +216,3 @@ void SAL_CALL OAdoUser::changePassword( const ::rtl::OUString& objPassword, cons
 	ADOS::ThrowException(*m_pCatalog->getConnection()->getConnection(),*this);
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-

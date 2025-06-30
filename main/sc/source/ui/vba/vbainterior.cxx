@@ -410,4 +410,3 @@ ScVbaInterior::getServiceNames()
 	}
 	return aServiceNames;
 }
-

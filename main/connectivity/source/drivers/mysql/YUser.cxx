@@ -343,4 +343,3 @@ void SAL_CALL OMySQLUser::changePassword( const ::rtl::OUString& /*oldPassword*/
 	return sPrivs;
 }
 // -----------------------------------------------------------------------------
-

@@ -47,6 +47,3 @@ OutputStack::Leave()
     csv_assert( NOT aCurDestination.empty() );
     aCurDestination.pop();
 }
-
-
-

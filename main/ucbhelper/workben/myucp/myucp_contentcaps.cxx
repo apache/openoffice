@@ -216,4 +216,3 @@ uno::Sequence< ucb::CommandInfo > Content::getCommands(
     return uno::Sequence<
         ucb::CommandInfo >( aCommandInfoTable, nCommandCount );
 }
-

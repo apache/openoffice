@@ -532,7 +532,7 @@ uno::Sequence< beans::PropertyValue > ModelData_Impl::GetPreselectedFilter_Impl(
 
 		if ( !aFilterProps.getLength() )
 		{
-			// the default filter was not faund, use just the first acceptable one
+			// the default filter was not found, use just the first acceptable one
 			aFilterProps = GetDocServiceAnyFilter( nMust, nDont );
 		}
 	}
@@ -1798,4 +1798,3 @@ Window* SfxStoringHelper::GetModelWindow( const uno::Reference< frame::XModel >&
 
 	return pWin;
 }
-

@@ -255,7 +255,7 @@ class SalGtkFilePicker :
 
 		void ensureFilterList( const ::rtl::OUString& _rInitialCurrentFilter );
 
-		// to instanciate own services
+		// to instantiate own services
 		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > m_xServiceMgr;
 
 	private:

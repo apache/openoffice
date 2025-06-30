@@ -29,4 +29,3 @@
 #include <tools/debug.hxx>
 
 TYPEINIT1(SdUndoAction, SfxUndoAction);
-

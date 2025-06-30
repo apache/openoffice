@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ using namespace com::sun::star;
 using namespace com::sun::star::beans;
 using namespace com::sun::star::uno;
 
-/* Note: the accesory view as implemented here is already deprecated in Leopard. Unfortunately
+/* Note: the accessory view as implemented here is already deprecated in Leopard. Unfortunately
    as long as our baseline is Tiger we cannot gain the advantages over multiple accessory views
    as well havs having accessory views AND a preview (as long as you are linked vs. 10.4 libraries
    the preview insists on not being present. This is unfortunate.
@@ -86,7 +86,7 @@ class ControllerProperties
     NSTextField*                        mpPageEdit;
     NSStepper*                          mpStepper;
     NSTextView*                         mpPagesLabel;
-    ResStringArray                      maLocalizedStrings;        
+    ResStringArray                      maLocalizedStrings;
 
     public:
     ControllerProperties( vcl::PrinterController* i_pController,
@@ -111,24 +111,24 @@ class ControllerProperties
         mpState->bNeedRestart = false;
         DBG_ASSERT( maLocalizedStrings.Count() >= 5, "resources not found !" );
     }
-    
+
     rtl::OUString getMoreString()
     {
         return maLocalizedStrings.Count() >= 4
                ? rtl::OUString( maLocalizedStrings.GetString( 3 ) )
                : rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "More" ) );
     }
-    
+
     rtl::OUString getPrintSelectionString()
     {
         return maLocalizedStrings.Count() >= 5
                ? rtl::OUString( maLocalizedStrings.GetString( 4 ) )
                : rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Print selection only" ) );
     }
-    
+
     void updatePrintJob()
     {
-        // TODO: refresh page count etc from mpController 
+        // TODO: refresh page count etc from mpController
 
         // page range may have changed depending on options
         sal_Int32 nPages = mpController->getFilteredPageCount();
@@ -161,7 +161,7 @@ class ControllerProperties
             updatePreviewImage( nPage-1 );
         }
     }
-    
+
     int addNameTag( const rtl::OUString& i_rPropertyName )
     {
         int nNewTag = mnNextTag++;
@@ -176,18 +176,18 @@ class ControllerProperties
         maTagToValueInt[ nNewTag ] = i_nValue;
         return nNewTag;
     }
-    
+
     void addObservedControl( NSObject* i_pView )
     {
         maViews.push_back( i_pView );
     }
-    
+
     void addViewPair( NSView* i_pLeft, NSView* i_pRight )
     {
         maViewPairMap[ i_pLeft ] = i_pRight;
         maViewPairMap[ i_pRight ] = i_pLeft;
     }
-    
+
     NSView* getPair( NSView* i_pLeft ) const
     {
         NSView* pRight = nil;
@@ -196,7 +196,7 @@ class ControllerProperties
             pRight = it->second;
         return pRight;
     }
-    
+
     void changePropertyWithIntValue( int i_nTag )
     {
         std::map< int, rtl::OUString >::const_iterator name_it = maTagToPropertyName.find( i_nTag );
@@ -225,7 +225,7 @@ class ControllerProperties
             }
         }
     }
-    
+
     void changePropertyWithBoolValue( int i_nTag, sal_Bool i_bValue )
     {
         std::map< int, rtl::OUString >::const_iterator name_it = maTagToPropertyName.find( i_nTag );
@@ -239,11 +239,11 @@ class ControllerProperties
                    pVal->Value <<= i_bValue ? sal_Int32(2) : sal_Int32(0);
                else
                    pVal->Value <<= i_bValue;
-                updatePrintJob(); 
+                updatePrintJob();
             }
         }
     }
-    
+
     void changePropertyWithStringValue( int i_nTag, const rtl::OUString& i_rValue )
     {
         std::map< int, rtl::OUString >::const_iterator name_it = maTagToPropertyName.find( i_nTag );
@@ -253,11 +253,11 @@ class ControllerProperties
             if( pVal )
             {
                 pVal->Value <<= i_rValue;
-                updatePrintJob(); 
+                updatePrintJob();
             }
         }
     }
-    
+
     void updateEnableState()
     {
         for( std::vector< NSObject* >::iterator it = maViews.begin(); it != maViews.end(); ++it )
@@ -269,11 +269,11 @@ class ControllerProperties
                 pCtrl = (NSControl*)pObj;
             else if( [pObj isKindOfClass: [NSCell class]] )
                 pCell = (NSCell*)pObj;
-            
+
             int nTag = pCtrl ? [pCtrl tag] :
                        pCell ? [pCell tag] :
                        -1;
-            
+
             std::map< int, rtl::OUString >::const_iterator name_it = maTagToPropertyName.find( nTag );
             if( name_it != maTagToPropertyName.end() && ! name_it->second.equalsAscii( "PrintContent" ) )
             {
@@ -287,11 +287,11 @@ class ControllerProperties
                 }
                 else if( pCell )
                     [pCell setEnabled: bEnabled];
-                
+
             }
         }
     }
-    
+
     void updatePreviewImage( sal_Int32 i_nPage )
     {
         sal_Int32 nPages = mpController->getFilteredPageCount();
@@ -304,7 +304,7 @@ class ControllerProperties
             PrinterController::PageSize aPageSize( mpController->getFilteredPageFile( i_nPage, aMtf, false ) );
             VirtualDevice aDev;
             if( mpController->getPrinter()->GetPrinterOptions().IsConvertToGreyscales() )
-                aDev.SetDrawMode( aDev.GetDrawMode() | ( DRAWMODE_GRAYLINE | DRAWMODE_GRAYFILL | DRAWMODE_GRAYTEXT | 
+                aDev.SetDrawMode( aDev.GetDrawMode() | ( DRAWMODE_GRAYLINE | DRAWMODE_GRAYFILL | DRAWMODE_GRAYTEXT |
                                                          DRAWMODE_GRAYBITMAP | DRAWMODE_GRAYGRADIENT ) );
             // see salprn.cxx, currently we pretend to be a 720dpi device on printers
             aDev.SetReferenceDevice( 720, 720 );
@@ -342,7 +342,7 @@ class ControllerProperties
     {
         if( maLocalizedStrings.Count() < 3 )
             return;
-        
+
         // get the preview control
         NSRect aPreviewFrame = [mpAccessoryView frame];
         aPreviewFrame.origin.x = 0;
@@ -366,13 +366,13 @@ class ControllerProperties
         [mpPreview setImageAlignment: NSImageAlignCenter];
         [mpPreview setImageFrameStyle: NSImageFrameNone];
         [mpPreviewBox addSubview: [mpPreview autorelease]];
-    
+
         // add a label
         sal_Int32 nPages = mpController->getFilteredPageCount();
         rtl::OUStringBuffer aBuf( 16 );
         aBuf.appendAscii( "/ " );
         aBuf.append( rtl::OUString::valueOf( nPages ) );
-    
+
         NSString* pText = CreateNSString( aBuf.makeStringAndClear() );
         NSRect aTextRect = { { 100, 5 }, { 100, 22 } };
         mpPagesLabel = [[NSTextView alloc] initWithFrame: aTextRect];
@@ -383,7 +383,7 @@ class ControllerProperties
         [mpPagesLabel setString: [pText autorelease]];
         [mpPagesLabel setToolTip: [CreateNSString( maLocalizedStrings.GetString( 2 ) ) autorelease]];
         [mpPreviewBox addSubview: [mpPagesLabel autorelease]];
-    
+
         NSRect aFieldRect = { { 45, 5 }, { 35, 25 } };
         mpPageEdit = [[NSTextField alloc] initWithFrame: aFieldRect];
         [mpPageEdit setEditable: YES];
@@ -391,14 +391,14 @@ class ControllerProperties
         [mpPageEdit setDrawsBackground: YES];
         [mpPageEdit setToolTip: [CreateNSString( maLocalizedStrings.GetString( 1 ) ) autorelease]];
         [mpPreviewBox addSubview: [mpPageEdit autorelease]];
-    
+
         // add a stepper control
         NSRect aStepFrame = { { 85, 5 }, { 15, 25 } };
         mpStepper = [[NSStepper alloc] initWithFrame: aStepFrame];
         [mpStepper setIncrement: 1];
         [mpStepper setValueWraps: NO];
         [mpPreviewBox addSubview: [mpStepper autorelease]];
-                        
+
         // constrain the text field to decimal numbers
         NSNumberFormatter* pFormatter = [[NSNumberFormatter alloc] init];
         [pFormatter setFormatterBehavior: NSNumberFormatterBehavior10_4];
@@ -410,20 +410,20 @@ class ControllerProperties
         [mpPageEdit setFormatter: pFormatter];
         [mpStepper setMinValue: 1];
         [mpStepper setMaxValue: nPages];
-    
+
         [mpPageEdit setIntValue: 1];
         [mpStepper setIntValue: 1];
-    
+
         // connect target and action
         [mpStepper setTarget: i_pCtrlTarget];
         [mpStepper setAction: @selector(triggeredPreview:)];
         [mpPageEdit setTarget: i_pCtrlTarget];
         [mpPageEdit setAction: @selector(triggeredPreview:)];
-        
+
         // set first preview image
         updatePreviewImage( 0 );
     }
-    
+
     void changePreview( NSObject* i_pSender )
     {
         if( [i_pSender isMemberOfClass: [NSTextField class]] )
@@ -462,7 +462,7 @@ static void filterAccelerator( rtl::OUString& io_rText )
 {
     if( (self = [super init]) )
     {
-        mpController = pController; 
+        mpController = pController;
     }
     return self;
 }
@@ -514,7 +514,7 @@ static void filterAccelerator( rtl::OUString& io_rText )
         NSTextField* pField = (NSTextField*)pSender;
         int nTag = [pField tag];
         sal_Int64 nValue = [pField intValue];
-        
+
         NSView* pOther = mpController->getPair( pField );
         if( pOther )
             [(NSControl*)pOther setIntValue: nValue];
@@ -555,13 +555,13 @@ struct ColumnItem
     NSControl*      pControl;
     long            nOffset;
     NSControl*      pSubControl;
-    
+
     ColumnItem( NSControl* i_pControl = nil, long i_nOffset = 0, NSControl* i_pSub = nil )
     : pControl( i_pControl )
     , nOffset( i_nOffset )
     , pSubControl( i_pSub )
     {}
-    
+
     long getWidth() const
     {
         long nWidth = 0;
@@ -587,7 +587,7 @@ static void adjustViewAndChildren( NSView* pNSView, NSSize& rMaxSize,
                                   )
 {
     // balance columns
-    
+
     // first get overall column widths
     long nLeftWidth = 0;
     long nRightWidth = 0;
@@ -603,7 +603,7 @@ static void adjustViewAndChildren( NSView* pNSView, NSSize& rMaxSize,
         if( nW > nRightWidth )
             nRightWidth = nW;
     }
-    
+
     // right align left column
     for( size_t i = 0; i < rLeftColumn.size(); i++ )
     {
@@ -633,14 +633,14 @@ static void adjustViewAndChildren( NSView* pNSView, NSSize& rMaxSize,
             if( rRightColumn[i].pSubControl )
             {
                 NSRect aSubRect = [rRightColumn[i].pSubControl frame];
-                aSubRect.origin.x = nX + aSubRect.origin.x - aCtrlRect.origin.x; 
+                aSubRect.origin.x = nX + aSubRect.origin.x - aCtrlRect.origin.x;
                 [rRightColumn[i].pSubControl setFrame: aSubRect];
             }
             aCtrlRect.origin.x = nX;
             [rRightColumn[i].pControl setFrame: aCtrlRect];
         }
     }
-    
+
     NSArray* pSubViews = [pNSView subviews];
     unsigned int nViews = [pSubViews count];
     NSRect aUnion = NSZeroRect;
@@ -650,7 +650,7 @@ static void adjustViewAndChildren( NSView* pNSView, NSSize& rMaxSize,
     {
         aUnion = NSUnionRect( aUnion, [[pSubViews objectAtIndex: n] frame] );
     }
-    
+
     // move everything so it will fit
     for( unsigned int n = 0; n < nViews; n++ )
     {
@@ -660,12 +660,12 @@ static void adjustViewAndChildren( NSView* pNSView, NSSize& rMaxSize,
         aFrame.origin.y -= aUnion.origin.y - 5;
         [pCurSubView setFrame: aFrame];
     }
-    
+
     // resize the view itself
     aUnion.size.height += 10;
     aUnion.size.width += 20;
     [pNSView setFrameSize: aUnion.size];
-    
+
     if( aUnion.size.width > rMaxSize.width )
         rMaxSize.width = aUnion.size.width;
     if( aUnion.size.height > rMaxSize.height )
@@ -687,7 +687,7 @@ static void adjustTabViews( NSTabView* pTabView, NSSize aTabSize )
             double nDiff = aTabSize.height - aRect.size.height;
             aRect.size = aTabSize;
             [pNSView setFrame: aRect];
-            
+
             NSArray* pSubViews = [pNSView subviews];
             unsigned int nSubViews = [pSubViews count];
 
@@ -766,17 +766,17 @@ static void linebreakCell( NSCell* pBtn, const rtl::OUString& i_rText )
 static void addSubgroup( NSView* pCurParent, long& rCurY, const rtl::OUString& rText )
 {
     NSControl* pTextView = createLabel( rText );
-    [pCurParent addSubview: [pTextView autorelease]];                
+    [pCurParent addSubview: [pTextView autorelease]];
     NSRect aTextRect = [pTextView frame];
     // move to nCurY
     aTextRect.origin.y = rCurY - aTextRect.size.height;
     [pTextView setFrame: aTextRect];
-    
+
     NSRect aSepRect = { { aTextRect.size.width + 1, aTextRect.origin.y }, { 100, 6 } };
     NSBox* pBox = [[NSBox alloc] initWithFrame: aSepRect];
     [pBox setBoxType: NSBoxSeparator];
     [pCurParent addSubview: [pBox autorelease]];
-    
+
     // update nCurY
     rCurY = aTextRect.origin.y - 5;
 }
@@ -791,35 +791,35 @@ static void addBool( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
 {
     NSRect aCheckRect = NSMakeRect( rCurX + nAttachOffset, 0, 0, 15);
     NSButton* pBtn = [[NSButton alloc] initWithFrame: aCheckRect];
-    [pBtn setButtonType: NSSwitchButton];                
+    [pBtn setButtonType: NSSwitchButton];
     [pBtn setState: bValue ? NSOnState : NSOffState];
     if( ! bEnabled )
         [pBtn setEnabled: NO];
     linebreakCell( [pBtn cell], rText );
     [pBtn sizeToFit];
-    
+
     rRightColumn.push_back( ColumnItem( pBtn ) );
-    
+
     // connect target
     [pBtn setTarget: pCtrlTarget];
     [pBtn setAction: @selector(triggered:)];
     int nTag = pControllerProperties->addNameTag( rProperty );
     pControllerProperties->addObservedControl( pBtn );
     [pBtn setTag: nTag];
-    
+
     aCheckRect = [pBtn frame];
     // #i115837# add a murphy factor; it can apparently occasionally happen
     // that sizeToFit does not a perfect job and that the button linebreaks again
     // if - and only if - there is already a '\n' contained in the text and the width
     // is minimally of
     aCheckRect.size.width += 1;
-    
+
     // move to rCurY
     aCheckRect.origin.y = rCurY - aCheckRect.size.height;
     [pBtn setFrame: aCheckRect];
 
     [pCurParent addSubview: [pBtn autorelease]];
-    
+
     // update rCurY
     rCurY = aCheckRect.origin.y - 5;
 }
@@ -841,23 +841,23 @@ static void addRadio( NSView* pCurParent, long& rCurX, long& rCurY, long nAttach
         NSRect aTextRect = [pTextView frame];
         aTextRect.origin.x = rCurX + nAttachOffset;
         [pCurParent addSubview: [pTextView autorelease]];
-        
+
         rLeftColumn.push_back( ColumnItem( pTextView ) );
-        
+
         // move to nCurY
         aTextRect.origin.y = rCurY - aTextRect.size.height;
         [pTextView setFrame: aTextRect];
-        
+
         // update nCurY
         rCurY = aTextRect.origin.y - 5;
-        
+
         // indent the radio group relative to the text
         // nOff = 20;
     }
-    
+
     // setup radio matrix
     NSButtonCell* pProto = [[NSButtonCell alloc] init];
-    
+
     NSRect aRadioRect = NSMakeRect( rCurX + nOff, 0, 280 - rCurX, 5*rChoices.getLength());
     [pProto setTitle: @"RadioButtonGroup"];
     [pProto setButtonType: NSRadioButton];
@@ -885,17 +885,17 @@ static void addRadio( NSView* pCurParent, long& rCurX, long& rCurY, long nAttach
     }
     [pMatrix sizeToFit];
     aRadioRect = [pMatrix frame];
-    
+
     // move it down, so it comes to the correct position
     aRadioRect.origin.y = rCurY - aRadioRect.size.height;
     [pMatrix setFrame: aRadioRect];
     [pCurParent addSubview: [pMatrix autorelease]];
-    
+
     rRightColumn.push_back( ColumnItem( pMatrix ) );
-    
+
     // update nCurY
     rCurY = aRadioRect.origin.y - 5;
-    
+
     [pProto release];
 }
 
@@ -931,7 +931,7 @@ static void addList( NSView* pCurParent, long& rCurX, long& rCurY, long /*nAttac
     }
 
     [pBtn selectItemAtIndex: nSelectValue];
-    
+
     // add the button to observed controls for enabled state changes
     // also add a tag just for this purpose
     pControllerProperties->addObservedControl( pBtn );
@@ -939,18 +939,18 @@ static void addList( NSView* pCurParent, long& rCurX, long& rCurY, long /*nAttac
 
     [pBtn sizeToFit];
     [pCurParent addSubview: [pBtn autorelease]];
-    
+
     rRightColumn.push_back( ColumnItem( pBtn ) );
 
     // connect target and action
     [pBtn setTarget: pCtrlTarget];
     [pBtn setAction: @selector(triggered:)];
-    
+
     // move to nCurY
     aBtnRect = [pBtn frame];
     aBtnRect.origin.y = rCurY - aBtnRect.size.height;
     [pBtn setFrame: aBtnRect];
-    
+
     // align label
     aTextRect.origin.y = aBtnRect.origin.y + (aBtnRect.size.height - aTextRect.size.height)/2;
     [pTextView setFrame: aTextRect];
@@ -976,22 +976,22 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
         // add a label
         NSControl* pTextView = createLabel( rText );
         [pCurParent addSubview: [pTextView autorelease]];
-        
+
         rLeftColumn.push_back( ColumnItem( pTextView ) );
-        
+
         // move to nCurY
         NSRect aTextRect = [pTextView frame];
         aTextRect.origin.x = rCurX + nAttachOffset;
         aTextRect.origin.y = rCurY - aTextRect.size.height;
         [pTextView setFrame: aTextRect];
-        
+
         // update nCurY
         rCurY = aTextRect.origin.y - 5;
-        
+
         // and set the offset for the real edit field
         nOff = aTextRect.size.width + 5;
     }
-    
+
     NSRect aFieldRect = NSMakeRect( rCurX + nOff + nAttachOffset, 0, 100, 25);
     NSTextField* pFieldView = [[NSTextField alloc] initWithFrame: aFieldRect];
     [pFieldView setEditable: YES];
@@ -999,9 +999,9 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
     [pFieldView setDrawsBackground: YES];
     [pFieldView sizeToFit]; // FIXME: this does nothing
     [pCurParent addSubview: [pFieldView autorelease]];
-    
+
     rRightColumn.push_back( ColumnItem( pFieldView ) );
-    
+
     // add the field to observed controls for enabled state changes
     // also add a tag just for this purpose
     pControllerProperties->addObservedControl( pFieldView );
@@ -1024,13 +1024,13 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
         [pStep setValueWraps: NO];
         [pStep setTag: nTag];
         [pCurParent addSubview: [pStep autorelease]];
-        
+
         rRightColumn.back().pSubControl = pStep;
-        
+
         pControllerProperties->addObservedControl( pStep );
         [pStep setTarget: pCtrlTarget];
         [pStep setAction: @selector(triggered:)];
-        
+
         // constrain the text field to decimal numbers
         NSNumberFormatter* pFormatter = [[NSNumberFormatter alloc] init];
         [pFormatter setFormatterBehavior: NSNumberFormatterBehavior10_4];
@@ -1049,7 +1049,7 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
         sal_Int64 nSelectVal = 0;
         if( pValue && pValue->Value.hasValue() )
             pValue->Value >>= nSelectVal;
-        
+
         [pFieldView setIntValue: nSelectVal];
         [pStep setIntValue: nSelectVal];
 
@@ -1099,14 +1099,14 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
     NSView* pAccessoryView = [[NSView alloc] initWithFrame: aViewFrame];
     NSTabView* pTabView = [[NSTabView alloc] initWithFrame: aTabViewFrame];
     [pAccessoryView addSubview: [pTabView autorelease]];
-    
+
     sal_Bool bIgnoreSubgroup = sal_False;
-    
+
     ControllerProperties* pControllerProperties = new ControllerProperties( pController, pOp, pAccessoryView, pTabView, pState );
     ControlTarget* pCtrlTarget = [[ControlTarget alloc] initWithControllerMap: pControllerProperties];
-    
+
     std::vector< ColumnItem > aLeftColumn, aRightColumn;
-    
+
     // ugly:
     // prepend a "selection" checkbox if the properties have such a selection in PrintContent
     bool bAddSelectionCheckBox = false, bSelectionBoxEnabled = false, bSelectionBoxChecked = false;
@@ -1233,7 +1233,7 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
             // so we have a single accessory view that is tabbed for grouping
             if( aCtrlType.equalsAscii( "Group" )
                 || ! pCurParent
-                || ( aCtrlType.equalsAscii( "Subgroup" ) && nCurY < -250 && ! bIgnore ) 
+                || ( aCtrlType.equalsAscii( "Subgroup" ) && nCurY < -250 && ! bIgnore )
                )
             {
                 rtl::OUString aGroupTitle( aText );
@@ -1242,7 +1242,7 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
                 // set size of current parent
                 if( pCurParent )
                     adjustViewAndChildren( pCurParent, aMaxTabSize, aLeftColumn, aRightColumn );
-                
+
                 // new tab item
                 if( ! aText.getLength() )
                     aText = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "OOo" ) );
@@ -1253,7 +1253,7 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
                 pCurParent = [[NSView alloc] initWithFrame: aTabViewFrame];
                 [pItem setView: pCurParent];
                 [pLabel release];
-                
+
                 // reset indent
                 nCurX = 20;
                 // reset Y
@@ -1271,13 +1271,13 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
                     bAddSelectionCheckBox = false;
                 }
             }
-            
+
             if( aCtrlType.equalsAscii( "Subgroup" ) && pCurParent )
             {
                 bIgnoreSubgroup = bIgnore;
                 if( bIgnore )
                     continue;
-                
+
                 addSubgroup( pCurParent, nCurY, aText );
             }
             else if( bIgnoreSubgroup || bIgnore )
@@ -1286,7 +1286,7 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
             }
             else if( aCtrlType.equalsAscii( "Bool" ) && pCurParent )
             {
-                sal_Bool bVal = sal_False;                
+                sal_Bool bVal = sal_False;
                 PropertyValue* pVal = pController->getValue( aPropertyName );
                 if( pVal )
                     pVal->Value >>= bVal;
@@ -1335,17 +1335,17 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
             DBG_ERROR( "Unsupported UI option" );
         }
     }
-        
+
     pControllerProperties->updateEnableState();
     adjustViewAndChildren( pCurParent, aMaxTabSize, aLeftColumn, aRightColumn );
-    
+
     // leave some space for the preview
     if( aMaxTabSize.height < 200 )
         aMaxTabSize.height = 200;
-    
+
     // now reposition everything again so it is upper bound
     adjustTabViews( pTabView, aMaxTabSize );
-    
+
     // find the minimum needed tab size
     NSSize aTabCtrlSize = [pTabView minimumSize];
     aTabCtrlSize.height += aMaxTabSize.height + 10;
@@ -1355,16 +1355,16 @@ static void addEdit( NSView* pCurParent, long& rCurX, long& rCurY, long nAttachO
     aViewFrame.size.width = aTabCtrlSize.width + aTabViewFrame.origin.x;
     aViewFrame.size.height = aTabCtrlSize.height + aTabViewFrame.origin.y;
     [pAccessoryView setFrameSize: aViewFrame.size];
-    
+
     pControllerProperties->setupPreview( pCtrlTarget );
 
     // set the accessory view
     [pOp setAccessoryView: [pAccessoryView autorelease]];
-    
-    // set the current selecte tab item
+
+    // set the current selected tab item
     if( pState->nLastPage >= 0 && pState->nLastPage < [pTabView numberOfTabViewItems] )
         [pTabView selectTabViewItemAtIndex: pState->nLastPage];
-        
+
     return pCtrlTarget;
 }
 

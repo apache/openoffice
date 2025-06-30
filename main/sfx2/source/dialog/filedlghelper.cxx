@@ -849,7 +849,7 @@ ErrCode FileDialogHelper_Impl::getGraphic( Graphic& rGraphic ) const
 
 	if ( ! maGraphic )
 	{
-		OUString aPath;;
+		OUString aPath;
 		Sequence < OUString > aPathSeq = mxFileDlg->getFiles();
 
 		if ( aPathSeq.getLength() == 1 )
@@ -2910,4 +2910,3 @@ String DecodeSpaces_Impl( const String& rSource )
 // ------------------------------------------------------------------------
 
 }	// end of namespace sfx2
-

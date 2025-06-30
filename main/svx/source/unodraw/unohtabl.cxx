@@ -96,6 +96,3 @@ uno::Reference< uno::XInterface > SAL_CALL SvxUnoHatchTable_createInstance( SdrM
 {
 	return *new SvxUnoHatchTable(pModel);
 }
-
-
-

@@ -133,5 +133,3 @@ Ww1Shell::Ww1Shell( SwDoc& rD, SwPaM& rPam, const String& rBaseURL, sal_Bool bNe
     : SwFltShell(&rD, rPam, rBaseURL, bNew, nFieldFlags)
 {
 }
-
-

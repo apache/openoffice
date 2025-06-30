@@ -512,4 +512,3 @@ IMPL_LINK( SfxViewVersionDialog_Impl, ButtonHdl, Button*, pButton )
 
 	return 0L;
 }
-

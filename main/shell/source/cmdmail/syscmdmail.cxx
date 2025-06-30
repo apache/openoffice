@@ -71,7 +71,7 @@ namespace
             const sal_Char *pStart = rStr.getStr();
             const sal_Char *pFrom = pStart;
             const sal_Int32 nLen = rStr.getLength();
-            sal_Int32 nPrev = 0;;
+            sal_Int32 nPrev = 0;
             do
             {
                 rBuffer.append( pFrom, nIndex - nPrev );

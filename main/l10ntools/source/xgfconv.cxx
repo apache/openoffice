@@ -84,4 +84,3 @@ int _cdecl main( int argc, char *argv[] )
 	aOutput.Close();
 	return ( 0 );
 }
-

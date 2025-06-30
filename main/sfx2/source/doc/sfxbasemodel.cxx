@@ -514,7 +514,7 @@ SfxSaveGuard::~SfxSaveGuard()
 
     if ( m_pData->m_bSuicide )
     {
-        // Reset this state. In case the new close() request is not accepted by somehwere else ...
+        // Reset this state. In case the new close() request is not accepted by somewhere else ...
         // it's not a good idea to have two "owners" for close .-)
         m_pData->m_bSuicide = sal_False;
         try
@@ -4514,4 +4514,3 @@ void SfxModelSubComponent::disposing()
 {
     // nothing to do here
 }
-

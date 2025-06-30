@@ -136,5 +136,3 @@ Any SAL_CALL ODbaseTables::queryInterface( const Type & rType ) throw(RuntimeExc
 	return OTables_BASE::queryInterface(rType);
 }
 // -----------------------------------------------------------------------------
-
-

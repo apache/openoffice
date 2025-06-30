@@ -278,7 +278,7 @@ namespace sax_fastparser {
 	// XServiceInfo
 	OUString FastSaxSerializer::getImplementationName() throw (RuntimeException)
 	{
-		return OUString::createFromAscii( SERIALIZER_IMPLEMENTATION_NAME );
+		return getImplementationName_Static();
 	}
 
 	// XServiceInfo
@@ -396,4 +396,3 @@ namespace sax_fastparser {
     }
 
 } // namespace sax_fastparser
-

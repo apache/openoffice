@@ -452,6 +452,3 @@ void OConnection::throwUrlNotValid(const ::rtl::OUString & _rsUrl,const ::rtl::O
 	throw aError;
 }
 // -----------------------------------------------------------------------------
-
-
-

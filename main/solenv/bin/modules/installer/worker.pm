@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -43,7 +43,7 @@ use installer::systemactions;
 use installer::windows::language;
 
 #####################################################################
-# Unpacking all files ending with tar.gz in a specified directory 
+# Unpacking all files ending with tar.gz in a specified directory
 #####################################################################
 
 sub unpack_all_targzfiles_in_directory
@@ -66,7 +66,7 @@ sub unpack_all_targzfiles_in_directory
 
 		my $infoline = "Systemcall: $systemcall\n";
 		$installer::logger::Lang->print($infoline);
-	
+
 		if ($returnvalue)
 		{
 			$infoline = "ERROR: Could not execute \"$systemcall\"!\n";
@@ -81,7 +81,7 @@ sub unpack_all_targzfiles_in_directory
 }
 
 #########################################
-# Copying installation sets to ship 
+# Copying installation sets to ship
 #########################################
 
 sub copy_install_sets_to_ship
@@ -89,7 +89,7 @@ sub copy_install_sets_to_ship
 	my ( $destdir, $shipinstalldir  ) = @_;
 
 	installer::logger::include_header_into_logfile("Copying installation set to ship:");
-	
+
 	my $dirname = $destdir;
 	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$dirname);
 	$dirname = $dirname . "_inprogress";
@@ -109,14 +109,14 @@ sub copy_install_sets_to_ship
 
 	# unpacking the tar.gz file for Solaris
 	if ( $installer::globals::issolarisbuild ) { unpack_all_targzfiles_in_directory($localshipinstalldir); }
-	
+
 	$localshipinstalldir = installer::systemactions::rename_string_in_directory($localshipinstalldir, "_inprogress", "");
 
 	return $localshipinstalldir;
 }
 
 #########################################
-# Copying installation sets to ship 
+# Copying installation sets to ship
 #########################################
 
 sub link_install_sets_to_ship
@@ -145,14 +145,14 @@ sub link_install_sets_to_ship
 
 	# link installation set to /ship ($localshipinstalldir)
 	$installer::logger::Lang->print( "... linking installation set from " . $destdir . " to " . $localshipinstalldir . "\n" );
-	
+
 	my $systemcall = "ln -s $destdir $localshipinstalldir";
 
 	$returnvalue = system($systemcall);
 
 	$infoline = "Systemcall: $systemcall\n";
 	$installer::logger::Lang->print($infoline);
-		
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: Could not create link \"$localshipinstalldir\"!\n";
@@ -168,15 +168,15 @@ sub link_install_sets_to_ship
 }
 
 #########################################
-# Create checksum file 
+# Create checksum file
 #########################################
 
 sub make_checksum_file
 {
 	my ( $filesref, $includepatharrayref ) = @_;
-	
+
 	my @checksum = ();
-	
+
 	my $checksumfileref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$installer::globals::checksumfile, $includepatharrayref, 1);
 	if ( $$checksumfileref eq "" ) { installer::exiter::exit_program("ERROR: Could not find file $installer::globals::checksumfile !", "make_checksum_file"); }
 
@@ -206,7 +206,7 @@ sub make_checksum_file
 			open (CHECK, "$systemcall");
 			@localchecksum = <CHECK>;
 			close (CHECK);
-			
+
 			for ( my $j = 0; $j <= $#localchecksum; $j++ ) { push(@checksum, $localchecksum[$j]); }
 
 			$systemcall = "$$checksumfileref";	# reset the system call
@@ -217,20 +217,20 @@ sub make_checksum_file
 }
 
 #########################################
-# Saving the checksum file 
+# Saving the checksum file
 #########################################
 
 sub save_checksum_file
 {
 	my ($current_install_number, $installchecksumdir, $checksumfile) = @_;
-	
+
 	my $numberedchecksumfilename = $installer::globals::checksumfilename;
 	$numberedchecksumfilename =~ s/\./_$current_install_number\./;	# checksum.txt -> checksum_01.txt
 	installer::files::save_file($installchecksumdir . $installer::globals::separator . $numberedchecksumfilename, $checksumfile);
 }
 
 #################################################
-# Writing some global information into 
+# Writing some global information into
 # the list of files without flag PATCH
 #################################################
 
@@ -258,14 +258,14 @@ sub write_nopatchlist_header
 #################################################
 # Creating the content of the list of files
 # without flag PATCH.
-# All files are saved in 
+# All files are saved in
 # @{$installer::globals::nopatchfilecollector}
 #################################################
 
 sub create_nopatchlist
 {
 	my @content =();
-	
+
 	write_nopatchlist_header(\@content);
 
 	for ( my $i = 0; $i <= $#{$installer::globals::nopatchfilecollector}; $i++ )
@@ -276,12 +276,12 @@ sub create_nopatchlist
 		$oneline = $oneline . "\n";
 		push(@content, $oneline);
 	}
-	
+
 	return \@content;
 }
 
 #########################################
-# Saving the patchlist file 
+# Saving the patchlist file
 #########################################
 
 sub save_patchlist_file
@@ -315,20 +315,20 @@ sub remove_old_installation_sets
 
 	$installer::logger::Info->print( "... removing old installation directories ...\n" );
 
-	my $removedir = $basedir;	
-	
+	my $removedir = $basedir;
+
 	if ( -d $removedir ) { installer::systemactions::remove_complete_directory($removedir, 1); }
-	
+
 	# looking for non successful old installation sets
-	
+
 	$removedir = $basedir . "_witherror";
 	if ( -d $removedir ) { installer::systemactions::remove_complete_directory($removedir, 1); }
 
 	$removedir = $basedir . "_inprogress";
 	if ( -d $removedir ) { installer::systemactions::remove_complete_directory($removedir, 1); }
-	
+
 	# finally the $basedir can be created empty
-	
+
 	if ( $installer::globals::localinstalldirset ) { installer::systemactions::create_directory_structure($basedir); }
 
 	installer::systemactions::create_directory($basedir);
@@ -372,7 +372,7 @@ sub remove_old_ship_installation_sets
 				installer::systemactions::remove_complete_directory(${$alldirs}[$i], 1);
 			}
 		}
-	}	
+	}
 }
 
 ###############################################################
@@ -382,7 +382,7 @@ sub remove_old_ship_installation_sets
 sub create_installation_directory
 {
 	my ($shipinstalldir, $languagestringref, $current_install_number_ref) = @_;
-	
+
 	my $installdir = "";
 
 	my $languageref = $languagestringref;
@@ -396,7 +396,7 @@ sub create_installation_directory
 		remove_old_ship_installation_sets($installdir);
 	}
 	else
-	{		
+	{
 		$installdir = installer::systemactions::create_directories("install", $languageref);
 		$installer::logger::Info->print( "... creating installation set in $installdir ...\n" );
 		remove_old_installation_sets($installdir);
@@ -417,16 +417,16 @@ sub create_installation_directory
 sub analyze_and_save_logfile
 {
 	my ($loggingdir, $installdir, $installlogdir, $allsettingsarrayref, $languagestringref, $current_install_number) = @_;
-	
+
 	my $is_success = 1;
 	my $finalinstalldir = "";
-	
+
 	$installer::logger::Info->print( "... checking log file " . $loggingdir . $installer::globals::logfilename . "\n" );
 
     my $contains_error = installer::control::check_logfile();
-    
+
 	# Dependent from the success, the installation directory can be renamed and mails can be send.
-		
+
 	if ($contains_error)
 	{
 		my $errordir = installer::systemactions::rename_string_in_directory($installdir, "_inprogress", "_witherror");
@@ -463,12 +463,12 @@ sub analyze_and_save_logfile
 		}
 		else
 		{
-			$destdir = installer::systemactions::rename_string_in_directory($installdir, "_inprogress", "");		
+			$destdir = installer::systemactions::rename_string_in_directory($installdir, "_inprogress", "");
 		}
-		
+
 		$finalinstalldir = $destdir;
 	}
-		
+
 	# Saving the logfile in the log file directory and additionally in a log directory in the install directory
 
 	my $numberedlogfilename = $installer::globals::logfilename;
@@ -486,19 +486,19 @@ sub analyze_and_save_logfile
             installer::systemactions::copy_one_file($installer::logger::Lang->{'filename'}, $log_file_name);
         }
     }
-      
+
 	# Saving the list of patchfiles in a patchlist directory in the install directory
 	if (( $installer::globals::patch ) || ( $installer::globals::creating_windows_installer_patch )) { installer::worker::save_patchlist_file($installlogdir, $numberedlogfilename); }
-	
+
 	if ( $installer::globals::creating_windows_installer_patch ) { $installer::globals::creating_windows_installer_patch = 0; }
-	
+
 	# Exiting the packaging process, if an error occurred.
 	# This is important, to get an error code "-1", if an error was found in the log file,
 	# that did not break the packaging process
-	
+
 	if ( ! $is_success) { installer::exiter::exit_program("ERROR: Found an error in the logfile. Packaging failed.", "analyze_and_save_logfile"); }
-	
-	return ($is_success, $finalinstalldir);		
+
+	return ($is_success, $finalinstalldir);
 }
 
 ###############################################################
@@ -514,11 +514,11 @@ sub save_logfile_after_linking
 	if ( $installer::globals::updatepack ) { $numberedlogfilename =~ s /log_/log_$current_install_number\_/; }
 	$installer::logger::Info->print( "... creating log file $numberedlogfilename \n" );
 	installer::files::save_file($loggingdir . $numberedlogfilename, \@installer::globals::logfileinfo);
-	installer::files::save_file($installlogdir . $installer::globals::separator . $numberedlogfilename, \@installer::globals::logfileinfo);	
+	installer::files::save_file($installlogdir . $installer::globals::separator . $numberedlogfilename, \@installer::globals::logfileinfo);
 }
 
 ###############################################################
-# Removing all directories that are saved in the 
+# Removing all directories that are saved in the
 # global directory @installer::globals::removedirs
 ###############################################################
 
@@ -531,12 +531,12 @@ sub clean_output_tree
 		if ( -d $installer::globals::removedirs[$i] )
 		{
 			$installer::logger::Info->print( "... removing directory $installer::globals::removedirs[$i] ...\n" );
-			installer::systemactions::remove_complete_directory($installer::globals::removedirs[$i], 1);			
+			installer::systemactions::remove_complete_directory($installer::globals::removedirs[$i], 1);
 		}
 	}
 
 	# Last try to remove the ship test directory
-	
+
 	if ( $installer::globals::shiptestdirectory )
 	{
 		if ( -d $installer::globals::shiptestdirectory )
@@ -546,11 +546,11 @@ sub clean_output_tree
 			my $systemcall = "rmdir $installer::globals::shiptestdirectory";
 			my $returnvalue = system($systemcall);
 		}
-	}	
+	}
 }
 
 ###############################################################
-# Removing all directories that are saved in the 
+# Removing all directories that are saved in the
 # global directory @installer::globals::jdsremovedirs
 ###############################################################
 
@@ -563,7 +563,7 @@ sub clean_jds_temp_dirs
 		if ( -d $installer::globals::jdsremovedirs[$i] )
 		{
 			$installer::logger::Info->print( "... removing directory $installer::globals::jdsremovedirs[$i] ...\n" );
-			installer::systemactions::remove_complete_directory($installer::globals::jdsremovedirs[$i], 1);			
+			installer::systemactions::remove_complete_directory($installer::globals::jdsremovedirs[$i], 1);
 		}
 	}
 }
@@ -575,11 +575,11 @@ sub clean_jds_temp_dirs
 sub copy_array_from_references
 {
 	my ( $arrayref ) = @_;
-	
+
 	my @newarray = ();
 
 	for ( my $i = 0; $i <= $#{$arrayref}; $i++ )
-	{		
+	{
 		push(@newarray, ${$arrayref}[$i]);
 	}
 
@@ -593,10 +593,10 @@ sub copy_array_from_references
 sub copy_hash_from_references
 {
 	my ($hashref) = @_;
-	
+
 	my %newhash = ();
 	my $key;
-	
+
 	foreach $key (keys %{$hashref})
 	{
 		$newhash{$key} = $hashref->{$key};
@@ -613,9 +613,9 @@ sub copy_hash_from_references
 sub get_language_specific_include_pathes
 {
 	my ( $patharrayref, $onelanguage ) = @_;
-	
+
 	my @patharray = ();
-	
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		my $line = ${$patharrayref}[$i];
@@ -641,14 +641,14 @@ sub return_first_item_with_special_flag
 		my $oneitem = ${$itemsref}[$i];
 		my $styles = "";
 		if ( $oneitem->{'Styles'} ) { $styles = $oneitem->{'Styles'} };
-		
+
 		if ( $styles =~ /\b$flag\b/ )
 		{
 			$firstitem = $oneitem;
 			last;
 		}
 	}
-	
+
 	return $firstitem;
 }
 
@@ -667,13 +667,13 @@ sub collect_all_items_with_special_flag
 		my $oneitem = ${$itemsref}[$i];
 		my $styles = "";
 		if ( $oneitem->{'Styles'} ) { $styles = $oneitem->{'Styles'} };
-		
+
 		if ( $styles =~ /\b$flag\b/ )
 		{
 			push( @allitems, $oneitem );
 		}
 	}
-	
+
 	return \@allitems;
 }
 
@@ -685,7 +685,7 @@ sub collect_all_items_with_special_flag
 sub collect_all_files_without_patch_flag
 {
 	my ($filesref) = @_;
-	
+
 	my $newfiles = collect_all_items_without_special_flag($filesref, "PATCH");
 
 	for ( my $i = 0; $i <= $#{$newfiles}; $i++ ) { push(@{$installer::globals::nopatchfilecollector}, ${$newfiles}[$i]); }
@@ -706,13 +706,13 @@ sub collect_all_items_without_special_flag
 		my $oneitem = ${$itemsref}[$i];
 		my $styles = "";
 		if ( $oneitem->{'Styles'} ) { $styles = $oneitem->{'Styles'} };
-		
+
 		if ( !( $styles =~ /\b$flag\b/ ))
 		{
 			push( @allitems, $oneitem );
 		}
 	}
-	
+
 	return \@allitems;
 }
 
@@ -742,7 +742,7 @@ sub remove_all_items_with_special_flag
 		}
 		push( @allitems, $oneitem );
 	}
-	
+
 	return \@allitems;
 }
 
@@ -759,11 +759,11 @@ sub install_simple ($$$$$$)
         if ( $ENV{'GNUCOPY'} ) { $gnucp = $ENV{'GNUCOPY'}; }
 	my $copyopts = '-af';
 	$copyopts = '-PpRf' unless ( $ENV{'GNUCOPY'} ); # if not gnucopy, assume POSIX copy
-	
+
 	$installer::logger::Info->print( "... installing module $packagename ...\n" );
 
 	my $destdir = $installer::globals::destdir;
-	my @lines = (); 
+	my @lines = ();
 
 	$installer::logger::Info->print( "DestDir: $destdir \n" );
 	$installer::logger::Info->print( "Rootpath: $installer::globals::rootpath \n" );
@@ -776,9 +776,9 @@ sub install_simple ($$$$$$)
 	{
 		my $onedir = ${$directoriesarray}[$i];
 		my $dir = "";
-	
+
 		if ( $onedir->{'Dir'} ) { $dir = $onedir->{'Dir'}; }
-	
+
 		if ((!($dir =~ /\bPREDEFINED_/ )) || ( $dir =~ /\bPREDEFINED_PROGDIR\b/ ))
 		{
 			# printf "mkdir $destdir$onedir->{'HostName'}\n";
@@ -808,13 +808,13 @@ sub install_simple ($$$$$$)
 		chmod (oct($unixrights), "$destdir$destination") || die "Can't change permissions: $!";
  		push @lines, "$destination\n";
 	}
-	
+
 	for ( my $i = 0; $i <= $#{$linksarray}; $i++ )
 	{
 		my $onelink = ${$linksarray}[$i];
 		my $destination = $onelink->{'destination'};
 		my $destinationfile = $onelink->{'destinationfile'};
-	
+
 		# print "link $destinationfile -> $destdir$destination\n";
 		symlink ("$destinationfile", "$destdir$destination") || die "Can't create symlink: $!";
 		push @lines, "$destination\n";
@@ -825,7 +825,7 @@ sub install_simple ($$$$$$)
 		my $onelink = ${$unixlinksarray}[$i];
         my $target = $onelink->{'Target'};
 		my $destination = $onelink->{'destination'};
-	
+
 		# print "Unix link $target -> $destdir$destination\n";
 		`ln -sf '$target' '$destdir$destination'`;
 		push @lines, "$destination\n";
@@ -851,12 +851,12 @@ sub install_simple ($$$$$$)
 sub add_shellnewfile_into_filesarray
 {
 	my ($filesref, $onefile, $inffile) = @_;
-	
+
 	my %shellnewfile = ();
 	my $shellnewfileref = \%shellnewfile;
-	
+
 	installer::converter::copy_item_object($inffile, $shellnewfileref);
-						
+
 	$shellnewfileref->{'Name'} = $onefile->{'Name'};
 	$shellnewfileref->{'sourcepath'} = $onefile->{'sourcepath'};
 	$shellnewfileref->{'gid'} = $onefile->{'gid'} . "_Userinstall";
@@ -899,7 +899,7 @@ sub replace_array_in_template_file
 		{
 			my @return = splice(@{$templatefile}, $i, 1, @{$arrayref});
 		}
-	}	
+	}
 }
 
 ###########################################################
@@ -909,7 +909,7 @@ sub replace_array_in_template_file
 sub collect_all_modules
 {
 	my ($registryitemsref) = @_;
-	
+
 	my @allmodules = ();
 
 	for ( my $i = 0; $i <= $#{$registryitemsref}; $i++ )
@@ -922,7 +922,7 @@ sub collect_all_modules
 			push(@allmodules, $module);
 		}
 	}
-	
+
 	return \@allmodules;
 }
 
@@ -949,7 +949,7 @@ sub write_content_into_inf_file
 		{
 			my $onefile = ${$filesref}[$i];
 			my $directory = $onefile->{'Dir'};
-		
+
 			if ( $directory =~ /\bPREDEFINED_OSSHELLNEWDIR\b/ )
 			{
 				$shellnewstring = $shellnewstring . $onefile->{'Name'} . "\n";
@@ -966,7 +966,7 @@ sub write_content_into_inf_file
 	# Second part: Start menu entries
 
 	# The OfficeMenuFolder is defined as: $productname . " " . $productversion;
-	
+
 	my $productname = $allvariableshashref->{'PRODUCTNAME'};
 	my $productversion = $allvariableshashref->{'PRODUCTVERSION'};
 	my $productkey = $productname . " " . $productversion;
@@ -989,7 +989,7 @@ sub write_content_into_inf_file
 			my $app = $gid;
 			$app =~ s/gid_Folderitem_//;
 			$app = uc($app);
-			
+
 			my $name = $folderitem->{'Name'};
 			my $placeholder = "PLACEHOLDER_FOLDERITEM_NAME_" . $app;
 			replace_in_template_file($templatefile, $placeholder, $name);
@@ -1000,16 +1000,16 @@ sub write_content_into_inf_file
 
 			my $executablegid = $folderitem->{'FileID'};
 			my $exefile = installer::existence::get_specified_file($filesref, $executablegid);
-			my $exefilename = $exefile->{'Name'};	
+			my $exefilename = $exefile->{'Name'};
 			$placeholder = "PLACEHOLDER_FOLDERITEM_TARGET_" . $app;
 			replace_in_template_file($templatefile, $placeholder, $exefilename);
 		}
 	}
-	
+
 	# Third part: Windows registry entries
 
 	# collecting all modules
-	
+
 	my $allmodules = collect_all_modules($registryitemsref);
 
 	my @registryitems = ();
@@ -1018,30 +1018,30 @@ sub write_content_into_inf_file
 	for ( my $j = 0; $j <= $#{$allmodules}; $j++ )
 	{
 		my $moduleid = ${$allmodules}[$j];
-	
+
 		my $inffilemodule = $inffile->{'modules'};
 		# inf files can be assigned to "gid_Module_Root_Files_2", but RegistryItems to "gid_Module_Root"
 		if ( $inffilemodule =~ /Module_Root/i ) { $inffilemodule = $installer::globals::rootmodulegid; }
 
-		if ( ! ( $moduleid eq $inffilemodule )) { next; } 
-		
+		if ( ! ( $moduleid eq $inffilemodule )) { next; }
+
 		my $shortmodulename = $moduleid;
 		$shortmodulename =~ s/gid_Module_//;
 		my $sectionname = "InstRegKeys." . $shortmodulename;
 		$allsectionsstring = $allsectionsstring . $sectionname . ",";
 		my $sectionheader = "\[" . $sectionname . "\]" . "\n";
 		push(@registryitems, $sectionheader);
-		
+
 		for ( my $i = 0; $i <= $#{$registryitemsref}; $i++ )
 		{
 			my $registryitem = ${$registryitemsref}[$i];
 
 			if ( ! ( $registryitem->{'ModuleID'} eq $moduleid )) { next; }
-		
+
 			if (( ! $registryitem->{'ismultilingual'} ) || (( $registryitem->{'ismultilingual'} ) && ( $registryitem->{'specificlanguage'} eq $onelanguage )))
 			{
 				# Syntax: HKCR,".bau",,,"soffice.StarConfigFile.6"
-		
+
 				my $regroot = "";
 				my $parentid = "";
 				if ( $registryitem->{'ParentID'} ) { $parentid = $registryitem->{'ParentID'}; }
@@ -1051,18 +1051,18 @@ sub write_content_into_inf_file
 				my $subkey = "";
 				if ( $registryitem->{'Subkey'} ) { $subkey = $registryitem->{'Subkey'}; }
 				if ( $subkey ne "" ) { $subkey = "\"" . $subkey . "\""; }
-			
+
 				my $valueentryname = "";
 				if ( $registryitem->{'Name'} ) { $valueentryname = $registryitem->{'Name'}; }
 				if ( $valueentryname ne "" ) { $valueentryname = "\"" . $valueentryname . "\""; }
-			
+
 				my $flag = "";
-			
+
 				my $value = "";
 				if ( $registryitem->{'Value'} ) { $value = $registryitem->{'Value'}; }
-				if ( $value =~ /\<progpath\>/ ) { $value =~ s/\\\"/\"\"/g; } # Quoting for INF is done by double "" 
+				if ( $value =~ /\<progpath\>/ ) { $value =~ s/\\\"/\"\"/g; } # Quoting for INF is done by double ""
 				$value =~ s/\\\"/\"/g;	# no more masquerading of '"'
-				$value =~ s/\<progpath\>/\%INSTALLLOCATION\%/g;  
+				$value =~ s/\<progpath\>/\%INSTALLLOCATION\%/g;
 				if ( $value ne "" ) { $value = "\"" . $value . "\""; }
 
 				my $oneline = $regroot . "," . $subkey . "," . $valueentryname . "," . $flag . "," . $value . "\n";
@@ -1070,16 +1070,16 @@ sub write_content_into_inf_file
 				push(@registryitems, $oneline);
 			}
 		}
-		
+
 		push(@registryitems, "\n"); # empty line after each section
 	}
 
 	# replacing the $allsectionsstring
 	$allsectionsstring =~ s/\,\s*$//;
 	replace_in_template_file($templatefile, "ALLREGISTRYSECTIONSPLACEHOLDER", $allsectionsstring);
-	
+
 	# replacing the placeholder for all registry keys
-	replace_array_in_template_file($templatefile, "REGISTRYKEYSPLACEHOLDER", \@registryitems);		
+	replace_array_in_template_file($templatefile, "REGISTRYKEYSPLACEHOLDER", \@registryitems);
 
 }
 
@@ -1107,18 +1107,18 @@ sub create_inf_file
 		$installer::logger::Lang->print($infoline);
 
 		# there are inffiles for all modules
-	
+
 		for ( my $i = 0; $i <= $#{$inf_files}; $i++ )
 		{
 			my $inffile = ${$inf_files}[$i];
 			my $inf_file_name = $inffile->{'Name'};
-			
+
 			my $templatefilename = $inffile->{'sourcepath'};
-			
+
 			if ( ! -f $templatefilename ) { installer::exiter::exit_program("ERROR: Could not find file $templatefilename !", "create_inf_file");  }
 
 			# iterating over all languages
-		
+
 			for ( my $j = 0; $j <= $#{$languagesarrayref}; $j++ )	# iterating over all languages
 			{
 				my $firstlanguage = 0;
@@ -1156,7 +1156,7 @@ sub create_inf_file
 
 				if ( $j < $#{$languagesarrayref} ) { installer::converter::copy_item_object($inffile, $languageinifileref); }
 				else { $languageinifileref = $inffile; }
-						
+
 				$languageinifileref->{'Name'} = $language_inf_file_name;
 				$languageinifileref->{'sourcepath'} = $sourcepath;
 				# destination and gid also have to be adapted
@@ -1188,7 +1188,7 @@ sub select_patch_items
 	for ( my $i = 0; $i <= $#{$itemsref}; $i++ )
 	{
 		my $oneitem = ${$itemsref}[$i];
-		
+
 		my $name = $oneitem->{'Name'};
 		if (( $name =~ /\bLICENSE/ ) || ( $name =~ /\bREADME/ ))
 		{
@@ -1196,12 +1196,12 @@ sub select_patch_items
 			next;
 		}
 
-		# Items with style "PATCH" have to be included into the patch			
+		# Items with style "PATCH" have to be included into the patch
 		my $styles = "";
 		if ( $oneitem->{'Styles'} ) { $styles = $oneitem->{'Styles'}; }
 		if ( $styles =~ /\bPATCH\b/ ) { push(@itemsarray, $oneitem); }
 	}
-	
+
 	return \@itemsarray;
 }
 
@@ -1221,12 +1221,12 @@ sub select_patch_items_without_name
 	{
 		my $oneitem = ${$itemsref}[$i];
 
-		# Items with style "PATCH" have to be included into the patch			
+		# Items with style "PATCH" have to be included into the patch
 		my $styles = "";
 		if ( $oneitem->{'Styles'} ) { $styles = $oneitem->{'Styles'}; }
 		if ( $styles =~ /\bPATCH\b/ ) { push(@itemsarray, $oneitem); }
 	}
-	
+
 	return \@itemsarray;
 }
 
@@ -1246,12 +1246,12 @@ sub select_langpack_items
 	{
 		my $oneitem = ${$itemsref}[$i];
 
-		# Items with style "LANGUAGEPACK" have to be included into the patch			
+		# Items with style "LANGUAGEPACK" have to be included into the patch
 		my $styles = "";
 		if ( $oneitem->{'Styles'} ) { $styles = $oneitem->{'Styles'}; }
 		if (( $styles =~ /\bLANGUAGEPACK\b/ ) || ( $styles =~ /\bFORCELANGUAGEPACK\b/ )) { push(@itemsarray, $oneitem); }
 	}
-	
+
 	return \@itemsarray;
 }
 
@@ -1281,10 +1281,10 @@ sub analyze_patch_files
 			# all files of the Windows patch belong to the root module
 			$onefile->{'modules'} = $installer::globals::rootmodulegid;
 		}
-		
+
 		push(@filesarray, $onefile);
 	}
-	
+
 	return \@filesarray;
 }
 
@@ -1325,7 +1325,7 @@ sub prepare_linuxlinkfiles
 	@installer::globals::linuxlinks = (); # empty this array, because it could be already used
 	@installer::globals::linuxpatchfiles = (); # empty this array, because it could be already used
 	@installer::globals::allfilessav = (); # empty this array, because it could be already used. Required for forced links
-	
+
 	my @filesarray = ();
 
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
@@ -1344,7 +1344,7 @@ sub prepare_linuxlinkfiles
 		# Saving a copy
 		my %copyfilehash = ();
 		my $copyfile = \%copyfilehash;
-		installer::converter::copy_item_object($onefile, $copyfile);			
+		installer::converter::copy_item_object($onefile, $copyfile);
 		push( @installer::globals::allfilessav, $copyfile);
 
 		my $original_destination = $onefile->{'destination'};
@@ -1358,7 +1358,7 @@ sub prepare_linuxlinkfiles
 
 		# all files without PATCH flag are included into the RPM
 		if ( ! $ispatchfile ) { push( @filesarray, $onefile); }
-		else { push( @installer::globals::linuxpatchfiles, $onefile); }	
+		else { push( @installer::globals::linuxpatchfiles, $onefile); }
 
 		# Preparing the collector for the links
 		# Setting the new file name as destination of the link
@@ -1371,7 +1371,7 @@ sub prepare_linuxlinkfiles
 		$infoline = "LINUXLINK: Created link: $linkfile->{'destination'} pointing to $linkfile->{'destinationfile'} !\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	return \@filesarray;
 }
 
@@ -1422,10 +1422,10 @@ sub prepare_forced_linuxlinkfiles
 				installer::pathanalyzer::get_path_from_fullqualifiedname(\$localdestination);
 				$localdestination =~ s/\Q$installer::globals::separator\E\s*$//;
 				$linkfile->{'destination'} = $localdestination . $installer::globals::separator . $onelink->{'Name'};
-	
+
 				$infoline = "Forced link into update file: $linkfile->{'destination'} pointing to $linkfile->{'destinationfile'} !\n";
 				$installer::logger::Lang->print($infoline);
-			
+
 				# The file, defined by the link, has to be included into the
 				# link array @installer::globals::linuxlinks
 				push( @installer::globals::linuxlinks, $linkfile );
@@ -1434,9 +1434,9 @@ sub prepare_forced_linuxlinkfiles
 			if ( $onelink->{'FileID'} )
 			{
 				$fileid = $onelink->{'FileID'};
-			
+
 				my $searchedlinkfile = find_file_by_id(\@installer::globals::allfilessav, $fileid);
-			
+
 				# making a copy!
 				my %linkfilehash = ();
 				my $linkfile = \%linkfilehash;
@@ -1453,26 +1453,26 @@ sub prepare_forced_linuxlinkfiles
 				installer::pathanalyzer::get_path_from_fullqualifiedname(\$localdestination);
 				$localdestination =~ s/\Q$installer::globals::separator\E\s*$//;
 				$linkfile->{'destination'} = $localdestination . $installer::globals::separator . $onelink->{'Name'};
-	
+
 				$infoline = "Forced link into update file: $linkfile->{'destination'} pointing to $linkfile->{'destinationfile'} !\n";
 				$installer::logger::Lang->print($infoline);
-			
+
 				# The file, defined by the link, has to be included into the
 				# link array @installer::globals::linuxlinks
 				push( @installer::globals::linuxlinks, $linkfile );
 			 }
-			
+
 			if ( $fileid eq "" ) { installer::exiter::exit_program("ERROR: No FileID assigned to forced link $onelink->{'gid'} !", "prepare_forced_linuxlinkfiles"); }
-			
+
 		}
 		else
 		{
-			# Links with flag FORCE_INTO_UPDATE_PACKAGE are forced into "u"-RPM. All other 
+			# Links with flag FORCE_INTO_UPDATE_PACKAGE are forced into "u"-RPM. All other
 			# links are included into the non-"u"-package.
-			push( @linksarray, $onelink );		
+			push( @linksarray, $onelink );
 		}
 	}
-	
+
 	return \@linksarray;
 }
 
@@ -1496,25 +1496,25 @@ sub reorg_patchfile
 		$directory = ${$patchfiledirectories}[$i];
 		$line = "[" . $directory . "]" . "\n";
 		push(@patchfilesarray, $line);
-		
+
 		for ( my $j = 0; $j <= $#{$patchfiles}; $j++ )
 		{
 			# "\tXXXXX\t" . $olddestination . "\n";
 			if ( ${$patchfiles}[$j] =~ /^\s*(.*?)\s*\tXXXXX\t\Q$directory\E\s*$/ )
 			{
 				$line = $1 . "\n";
-				push(@patchfilesarray, $line);			
+				push(@patchfilesarray, $line);
 			}
 		}
 	}
-	
+
 	return \@patchfilesarray;
 }
 
 ###########################################################
 # One special file has to be the last in patchfile.txt.
 # Controlling this file, guarantees, that all files were
-# patch correctly. Using version.ini makes it easy to 
+# patch correctly. Using version.ini makes it easy to
 # control this by looking into the about box
 # -> shifting one section to the end
 ###########################################################
@@ -1540,7 +1540,7 @@ sub shift_section_to_end
 		if ( $record ) { push(@lastsection, $line); }
 		else { push(@patchfile, $line); }
 	}
-	
+
 	if ( $#lastsection > -1 )
 	{
 		for ( my $i = 0; $i <= $#lastsection; $i++ )
@@ -1555,7 +1555,7 @@ sub shift_section_to_end
 ###########################################################
 # One special file has to be the last in patchfile.txt.
 # Controlling this file, guarantees, that all files were
-# patch correctly. Using version.ini makes it easy to 
+# patch correctly. Using version.ini makes it easy to
 # control this by looking into the about box
 # -> shifting one file of the last section to the end
 ###########################################################
@@ -1563,18 +1563,18 @@ sub shift_section_to_end
 sub shift_file_to_end
 {
 	my ($patchfilelist) = @_;
-	
+
 	my @patchfile = ();
 	my $lastfilename = "version.ini";
 	my $lastfileline = "";
 	my $foundfile = 0;
-	
+
 	# Only searching this file in the last section
 	my $lastsectionname = "";
 
 	for ( my $i = 0; $i <= $#{$patchfilelist}; $i++ )
 	{
-		my $line = ${$patchfilelist}[$i];	
+		my $line = ${$patchfilelist}[$i];
 		if ( $line =~ /^\s*\[(.*?)\]\s*$/ ) { $lastsectionname = $1; }
 	}
 
@@ -1592,12 +1592,12 @@ sub shift_file_to_end
 			$record = 0;
 			next;
 		}
-		
+
 		push(@patchfile, $line);
 	}
-	
+
 	if ( $foundfile ) { push(@patchfile, $lastfileline); }
-	
+
 	return 	\@patchfile;
 }
 
@@ -1612,7 +1612,7 @@ sub sort_hash
 	my $item = "";
 	my @sortedarray = ();
 
-	foreach $item (keys %{$hashref}) { push(@sortedarray, $item); }	
+	foreach $item (keys %{$hashref}) { push(@sortedarray, $item); }
 	installer::sorter::sorting_array_of_strings(\@sortedarray);
 
 	return \@sortedarray;
@@ -1649,40 +1649,40 @@ sub prepare_windows_patchfiles
 		my $styles = "";
 		if ( $onefile->{'Styles'} ) { $styles = $onefile->{'Styles'}; }
 		if ( $styles =~ /\bDONTRENAMEINPATCH\b/ ) { next; }
-		
+
 		# special handling for files with flag DONTSHOW. This files get the extension ".dontshow" to be filtered by dialogs.
 		my $localwindowspatchlevel = $windowspatchlevel;
 		if ( $styles =~ /\bDONTSHOW\b/ ) { $localwindowspatchlevel = $localwindowspatchlevel . "\.dontshow"; }
-		
+
 		my $olddestination = $onefile->{'destination'};
 		my $newdestination = $olddestination . "." . $localwindowspatchlevel;
 		my $localfilename = $olddestination;
 		installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$localfilename);	# file name part
 		my $line = "\"" . $localfilename . "\"" . "=" . "\"" . "\." . $localwindowspatchlevel . "\"";
 		$onefile->{'destination'} = $newdestination;
-		
+
 		my $newfilename = $onefile->{'Name'} . "." . $localwindowspatchlevel;
 		$onefile->{'Name'} = $newfilename;
-		
+
 		# adding section information (section is the directory)
 		my $origolddestination = $olddestination;
 		installer::pathanalyzer::get_path_from_fullqualifiedname(\$olddestination);	# directory part
 		if ( ! $olddestination ) { $olddestination = "_root";  }
 		if ( ! exists($patchfiledirectories{$olddestination}) ) { $patchfiledirectories{$olddestination} = 1; }
 		$line = $line . "\tXXXXX\t" . $olddestination . "\n";
-		
+
 		push(@patchfiles, $line);
-		
+
 		# also collecting all files from patch in @installer::globals::patchfilecollector
 		my $patchfileline = $origolddestination . "\n";
 		push(@installer::globals::patchfilecollector, $patchfileline);
 	}
-	
+
 	my $winpatchdirname = "winpatch";
 	my $winpatchdir = installer::systemactions::create_directories($winpatchdirname, $languagestringref);
 
 	my $patchlistfile = installer::existence::get_specified_file_by_name($filesref, $patchfilename);
-	
+
 	# reorganizing the patchfile content, sorting for directory to decrease the file size
 	my $sorteddirectorylist = sort_hash(\%patchfiledirectories);
 	my $patchfilelist = reorg_patchfile(\@patchfiles, $sorteddirectorylist);
@@ -1698,11 +1698,11 @@ sub prepare_windows_patchfiles
 
 	$installer::logger::Lang->print("\n");
 	$installer::logger::Lang->printf("Created list of patch files: %s\n", $patchfilename);
-	
+
 	# and assigning the new source
 	$patchlistfile->{'sourcepath'} = $patchfilename;
-	
-	# and finally checking the file size	
+
+	# and finally checking the file size
 	if ( -f $patchfilename )	# test of existence
 	{
 		my $filesize = ( -s $patchfilename );
@@ -1726,17 +1726,17 @@ sub replace_variables_in_string
 	my ( $string, $variableshashref ) = @_;
 
 	if ( $string =~ /^.*\%\w+.*$/ )
-	{			
+	{
 		my $key;
 
 		foreach $key (keys %{$variableshashref})
 		{
 			my $value = $variableshashref->{$key};
 			$key = "\%" . $key;
-			$string =~ s/\Q$key\E/$value/g;			
+			$string =~ s/\Q$key\E/$value/g;
 		}
 	}
-	
+
 	return $string;
 }
 
@@ -1750,17 +1750,17 @@ sub replace_dollar_variables_in_string
 	my ( $string, $variableshashref ) = @_;
 
 	if ( $string =~ /^.*\$\{\w+\}.*$/ )
-	{			
+	{
 		my $key;
 
 		foreach $key (keys %{$variableshashref})
 		{
 			my $value = $variableshashref->{$key};
 			$key = "\$\{" . $key . "\}";
-			$string =~ s/\Q$key\E/$value/g;			
+			$string =~ s/\Q$key\E/$value/g;
 		}
 	}
-	
+
 	return $string;
 }
 
@@ -1773,7 +1773,7 @@ sub get_all_files_from_filelist
 {
 	my ( $listfile, $section ) = @_;
 
-	my @allpackages = ();	
+	my @allpackages = ();
 
 	for ( my $i = 0; $i <= $#{$listfile}; $i++ )
 	{
@@ -1797,7 +1797,7 @@ sub get_section_from_file
 {
 	my ($file, $sectionname) = @_;
 
-	my @section = ();	
+	my @section = ();
 	my $record = 0;
 
 	for ( my $i = 0; $i <= $#{$file}; $i++ )
@@ -1809,9 +1809,9 @@ sub get_section_from_file
 			$record = 0;
 			last;
 		}
-		
+
 		if ( $line =~ /^\s*\[\Q$sectionname\E\]\s*$/ ) { $record = 1; }
-		
+
 		if ( $line =~ /^\s*\[/ ) { next; } # this is a section line
 		if ( $line =~ /^\s*\#/ ) { next; } # this is a comment line
 		if ( $line =~ /^\s*$/ ) { next; }  # empty line
@@ -1831,7 +1831,7 @@ sub get_section_from_file
 sub replace_one_dollar_variable
 {
 	my ($file, $variable, $searchstring) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$file}; $i++ )
 	{
 		${$file}[$i] =~ s/\$\{$searchstring\}/$variable/g;
@@ -1852,7 +1852,7 @@ sub substitute_dollar_variables
 	{
 		my $value = $variableshashref->{$key};
 		replace_one_dollar_variable($file, $value, $key);
-	}	
+	}
 }
 
 #############################################################################
@@ -1867,7 +1867,7 @@ sub get_all_packages_in_installdir
 
 	my @allpackages = ();
 	my $allpackages = \@allpackages;
-	
+
 	if ( $installer::globals::islinuxrpmbuild )
 	{
 		$allpackages = installer::systemactions::find_file_with_file_extension("rpm", $directory);
@@ -1877,32 +1877,32 @@ sub get_all_packages_in_installdir
 	{
 		$allpackages = installer::systemactions::get_all_directories($directory);
 	}
-	
+
 	return $allpackages;
 }
 
 ###############################################################
-# The list of exclude packages can contain the 
+# The list of exclude packages can contain the
 # beginning of the package name, not the complete name.
 ###############################################################
 
 sub is_matching
 {
 	my ($onepackage, $allexcludepackages ) = @_;
-	
+
 	my $matches = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$allexcludepackages}; $i++ )
 	{
 		my $oneexcludepackage = ${$allexcludepackages}[$i];
-	
+
 		if ( $onepackage =~ /^\s*$oneexcludepackage/ )
 		{
 			$matches = 1;
 			last;
-		}	
+		}
 	}
-	
+
 	return $matches;
 }
 
@@ -1960,13 +1960,13 @@ sub copy_all_packages
 			else
 			{
 				$infoline = "Excluding package (matching): $onepackage\n";
-				$installer::logger::Lang->print($infoline);		
-			}	
+				$installer::logger::Lang->print($infoline);
+			}
 		}
 		else
 		{
 			$infoline = "Excluding package (precise name): $onepackage\n";
-			$installer::logger::Lang->print($infoline);		
+			$installer::logger::Lang->print($infoline);
 		}
 	}
 }
@@ -1983,7 +1983,7 @@ sub make_systemcall
 
 	my $infoline = "Systemcall: $systemcall\n";
 	$installer::logger::Lang->print($infoline);
-		
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: Could not execute \"$systemcall\"!\n";
@@ -1994,7 +1994,7 @@ sub make_systemcall
 		$infoline = "Success: Executed \"$systemcall\" successfully!\n";
 		$installer::logger::Lang->print($infoline);
 	}
-}	
+}
 
 ###########################################################
 # Copying all Solaris packages or RPMs from solver
@@ -2003,7 +2003,7 @@ sub make_systemcall
 sub copy_additional_packages
 {
 	my ($allcopypackages, $destdir, $includepatharrayref) = @_;
-	
+
 	my $infoline = "Copy additional packages into installation set.\n";
 	$installer::logger::Lang->print($infoline);
 
@@ -2016,7 +2016,7 @@ sub copy_additional_packages
 		$installer::logger::Lang->print($infoline);
 
 		# this package must be delivered into the solver
-		
+
 		my $packagesourceref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$onepackage, $includepatharrayref, 0);
 		if ($$packagesourceref eq "") { installer::exiter::exit_program("ERROR: Could not find jds file $onepackage!", "copy_additional_packages"); }
 
@@ -2030,7 +2030,7 @@ sub copy_additional_packages
             my $destfile = $destdir . $installer::globals::separator . $onepackage;
             installer::systemactions::copy_one_file($$packagesourceref, $destfile);
         }
-	}	
+	}
 }
 
 ###########################################################
@@ -2050,7 +2050,7 @@ sub create_jds_sets
 
 	my $firstdir = $installationdir;
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$firstdir);
-	
+
 	my $lastdir = $installationdir;
 	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$lastdir);
 
@@ -2061,7 +2061,7 @@ sub create_jds_sets
 
 	my $jdsdir = $firstdir . $lastdir;
 	if ( -d $jdsdir ) { installer::systemactions::remove_complete_directory($jdsdir); }
-	
+
 	my $olddir = $jdsdir;
 	$olddir =~ s/_inprogress/_witherror/;
 	if ( -d $olddir ) { installer::systemactions::remove_complete_directory($olddir); }
@@ -2071,7 +2071,7 @@ sub create_jds_sets
 	if ( -d $olddir ) { installer::systemactions::remove_complete_directory($olddir); }
 
 	# creating the new directory
-	
+
 	installer::systemactions::create_directory($jdsdir);
 
 	$installer::globals::saveinstalldir = $jdsdir;
@@ -2097,7 +2097,7 @@ sub create_jds_sets
 	# determining the source directory
 	my $alldirs = installer::systemactions::get_all_directories($installationdir);
 	my $sourcedir = ${$alldirs}[0]; # there is only one directory
-	
+
 	if ( $installer::globals::issolarisbuild ) { $sourcedir = $installer::globals::saved_packages_path; }
 
 	# copy all packages/RPMs
@@ -2116,7 +2116,7 @@ sub check_jds_language
 	my ($allvariableshashref, $languagestringref) = @_;
 
 	my $infoline = "";
-		
+
 	# languagesarrayref and $allvariableshashref->{'JDSLANG'}
 
 	if ( ! $allvariableshashref->{'JDSLANG'} ) { installer::exiter::exit_program("ERROR: For building JDS installation sets \"JDSLANG\" must be defined!", "check_jds_language"); }
@@ -2133,7 +2133,7 @@ sub check_jds_language
 	my $string2 = installer::converter::convert_array_to_comma_separated_string($sortedarray2);
 
 	my $arrays_are_equal = compare_arrays($sortedarray1, $sortedarray2);
-	
+
 	return $arrays_are_equal;
 }
 
@@ -2144,11 +2144,11 @@ sub check_jds_language
 sub compare_arrays
 {
 	my ($array1, $array2) = @_;
-	
+
 	my $arrays_are_equal = 1;
 
 	# checking the size
-	
+
 	if ( ! ( $#{$array1} == $#{$array2} )) { $arrays_are_equal = 0; }	# different size
 
 	if ( $arrays_are_equal ) # only make further investigations if size is equal
@@ -2173,29 +2173,29 @@ sub compare_arrays
 }
 
 #################################################################
-# Copying the files defined as ScpActions into the 
+# Copying the files defined as ScpActions into the
 # installation set.
 #################################################################
 
 sub put_scpactions_into_installset
 {
-	my ($installdir) = @_;	
+	my ($installdir) = @_;
 
 	installer::logger::include_header_into_logfile("Start: Copying scp action files into installation set");
 
 	for ( my $i = 0; $i <= $#installer::globals::allscpactions; $i++ )
 	{
 		my $onescpaction = $installer::globals::allscpactions[$i];
-		
+
 		my $subdir = "";
 		if ( $onescpaction->{'Subdir'} ) { $subdir = $onescpaction->{'Subdir'}; }
-		
+
 		if ( $onescpaction->{'Name'} eq "loader.exe" ) { next; }	# do not copy this ScpAction loader
 
 		my $destdir = $installdir;
 		$destdir =~ s/\Q$installer::globals::separator\E\s*$//;
 		if ( $subdir ) { $destdir = $destdir . $installer::globals::separator . $subdir; }
-		
+
 		my $sourcefile = $onescpaction->{'sourcepath'};
 		my $destfile = $destdir . $installer::globals::separator . $onescpaction->{'DestinationName'};
 
@@ -2203,17 +2203,17 @@ sub put_scpactions_into_installset
 		if ( $onescpaction->{'Styles'} ) { $styles = $onescpaction->{'Styles'}; }
 		if (( $styles =~ /\bFILE_CAN_MISS\b/ ) && ( $sourcefile eq "" )) { next; }
 
-		if (( $subdir =~ /\// ) || ( $subdir =~ /\\/ )) 
+		if (( $subdir =~ /\// ) || ( $subdir =~ /\\/ ))
 		{
-			installer::systemactions::create_directory_structure($destdir);		
+			installer::systemactions::create_directory_structure($destdir);
 		}
 		else
-		{ 
+		{
 			installer::systemactions::create_directory($destdir);
 		}
 
 		installer::systemactions::copy_one_file($sourcefile, $destfile);
-		
+
 		if ( $onescpaction->{'UnixRights'} )
 		{
 			my $localcall = "chmod $onescpaction->{'UnixRights'} $destfile \>\/dev\/null 2\>\&1";
@@ -2247,13 +2247,13 @@ sub collect_scpactions
 sub get_platform_name
 {
 	my $platformname = "";
-	
+
 	if (( $installer::globals::islinuxintelrpmbuild ) || ( $installer::globals::islinuxinteldebbuild ))
 	{
 		$platformname = "LinuxIntel";
 	}
 	elsif (( $installer::globals::islinuxppcrpmbuild ) || ( $installer::globals::islinuxppcdebbuild ))
-	{ 
+	{
 		$platformname = "LinuxPowerPC";
 	}
 	elsif (( $installer::globals::islinuxx86_64rpmbuild ) || ( $installer::globals::islinuxx86_64debbuild ))
@@ -2266,7 +2266,7 @@ sub get_platform_name
 	}
 	elsif ( $installer::globals::issolarisx86build )
 	{
-		$platformname = "Solarisx86";	
+		$platformname = "Solarisx86";
 	}
 	elsif ( $installer::globals::iswindowsbuild )
 	{
@@ -2287,9 +2287,9 @@ sub get_platform_name
 	else
 	{
 		# $platformname = $installer::globals::packageformat;
-		$platformname = $installer::globals::compiler;		
+		$platformname = $installer::globals::compiler;
 	}
-	
+
 	return $platformname;
 }
 
@@ -2303,11 +2303,11 @@ sub get_platform_name
 sub add_variables_from_inc_to_hashref
 {
 	my ($allvariables, $includepatharrayref) = @_;
-	
+
 	my $infoline = "";
 	my $includefilelist = "";
 	if ( $allvariables->{'ADD_INCLUDE_FILES'} ) { $includefilelist = $allvariables->{'ADD_INCLUDE_FILES'}; }
-	
+
 	my $includefiles = installer::converter::convert_stringlist_into_array_without_linebreak_and_quotes(\$includefilelist, ",");
 
 	for ( my $i = 0; $i <= $#{$includefiles}; $i++ )
@@ -2326,7 +2326,7 @@ sub add_variables_from_inc_to_hashref
 		{
 			# Analyzing all "key=value" lines
 			my $oneline = ${$includefile}[$j];
-			
+
 			if ( $oneline =~ /^\s*(\S+)\s*\=\s*(.*?)\s*$/ )	# no white space allowed in key
 			{
 				my $key = $1;
@@ -2337,10 +2337,10 @@ sub add_variables_from_inc_to_hashref
 			}
 		}
 	}
-	
+
 	# Allowing different Java versions for Windows and Unix. Instead of "JAVAVERSION"
 	# the property "WINDOWSJAVAVERSION" has to be used, if it is set.
-	
+
 	if ( $installer::globals::iswindowsbuild )
 	{
 		if (( exists($allvariables->{'WINDOWSJAVAVERSION'})) && ( $allvariables->{'WINDOWSJAVAVERSION'} ne "" ))
@@ -2349,8 +2349,8 @@ sub add_variables_from_inc_to_hashref
             $installer::logger::Global->printf(
                 "Changing value of property \"JAVAVERSION\" to %s (property \"WINDOWSJAVAVERSION\").\n",
                 $allvariables->{'JAVAVERSION'});
-		}	
-	}	
+		}
+	}
 }
 
 ##############################################
@@ -2363,11 +2363,11 @@ sub collect_all_files_from_includepathes
 
 	installer::logger::globallog("Reading all directories: Start");
 	$installer::logger::Info->print( "... reading include paths ...\n" );
-	# empty the global 
-	
+	# empty the global
+
 	@installer::globals::allincludepathes =();
-	my $infoline;	
-	
+	my $infoline;
+
 	for ( my $i = 0; $i <= $#{$patharrayref}; $i++ )
 	{
 		$includepath = ${$patharrayref}[$i];
@@ -2397,19 +2397,19 @@ sub collect_all_files_from_includepathes
             $installer::logger::Global->printf(
                 "Directory %s contains $number files (including subdirs)\n",
                 $includepath);
-			
+
 			my %allfileshash = ();
 			$allfileshash{'includepath'} = $includepath;
-			
+
 			for ( my $j = 0; $j <= $#sourcefiles; $j++ )
 			{
 				$allfileshash{$sourcefiles[$j]} = 1;
 			}
 
-			push(@installer::globals::allincludepathes, \%allfileshash);			
+			push(@installer::globals::allincludepathes, \%allfileshash);
 		}
-	}	
-	
+	}
+
 	$installer::globals::include_pathes_read = 1;
 
     installer::logger::globallog("Reading all directories: End");
@@ -2426,17 +2426,17 @@ sub find_file_by_id
 
 	my $foundfile = 0;
 	my $onefile;
-	
+
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
 	{
 		$onefile = ${$filesref}[$i];
 		my $filegid = $onefile->{'gid'};
-		
+
 		if ( $filegid eq $gid )
 		{
 			$foundfile = 1;
-			last;	
-		}		
+			last;
+		}
 	}
 
 	# It does not need to exist. For example products that do not contain the libraries.
@@ -2444,7 +2444,7 @@ sub find_file_by_id
 
 	if (! $foundfile ) { $onefile  = ""; }
 
-	return $onefile;	
+	return $onefile;
 }
 
 ##############################################
@@ -2457,25 +2457,25 @@ sub find_item_by_gid
 
 	my $founditem = 0;
 	my $oneitem = "";
-	
+
 	for ( my $i = 0; $i <= $#{$itemsref}; $i++ )
 	{
 		my $localitem = ${$itemsref}[$i];
 		my $itemgid = $localitem->{'gid'};
-		
+
 		if ( $itemgid eq $gid )
 		{
 			$oneitem = $localitem;
 			$founditem = 1;
-			last;	
-		}		
+			last;
+		}
 	}
 
-	return $oneitem;	
+	return $oneitem;
 }
 
 #########################################################
-# Calling sum 
+# Calling sum
 #########################################################
 
 sub call_sum
@@ -2483,11 +2483,11 @@ sub call_sum
 	my ($filename) = @_;
 
 	$sumfile = "/usr/bin/sum";
-	
+
 	if ( ! -f $sumfile ) { installer::exiter::exit_program("ERROR: No file /usr/bin/sum", "call_sum"); }
-	
+
 	my $systemcall = "$sumfile $filename |";
-	
+
 	my $sumoutput = "";
 
 	open (SUM, "$systemcall");
@@ -2498,7 +2498,7 @@ sub call_sum
 
 	my $infoline = "Systemcall: $systemcall\n";
 	$installer::logger::Lang->print($infoline);
-		
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: Could not execute \"$systemcall\"!\n";
@@ -2509,12 +2509,12 @@ sub call_sum
 		$infoline = "Success: Executed \"$systemcall\" successfully!\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
-	return $sumoutput;		
+
+	return $sumoutput;
 }
 
 #########################################################
-# Calling wc 
+# Calling wc
 # wc -c pkginfo | cut -f6 -d' '
 #########################################################
 
@@ -2523,11 +2523,11 @@ sub call_wc
 	my ($filename) = @_;
 
 	$wcfile = "/usr/bin/wc";
-	
+
 	if ( ! -f $wcfile ) { installer::exiter::exit_program("ERROR: No file /usr/bin/wc", "call_wc"); }
-	
+
 	my $systemcall = "$wcfile -c $filename |";
-	
+
 	my $wcoutput = "";
 
 	open (WC, "$systemcall");
@@ -2538,7 +2538,7 @@ sub call_wc
 
 	my $infoline = "Systemcall: $systemcall\n";
 	$installer::logger::Lang->print($infoline);
-		
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: Could not execute \"$systemcall\"!\n";
@@ -2549,12 +2549,12 @@ sub call_wc
 		$infoline = "Success: Executed \"$systemcall\" successfully!\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
-	return $wcoutput;		
+
+	return $wcoutput;
 }
 
 ##############################################
-# Setting architecture ARCH=i86pc 
+# Setting architecture ARCH=i86pc
 # instead of ARCH=i386.
 ##############################################
 
@@ -2582,7 +2582,7 @@ sub set_old_architecture_string
 sub check_requires_setting
 {
 	my ($pkginfofile) = @_;
-	
+
 	my $found = 0;
 	my $patchid = "";
 
@@ -2595,8 +2595,8 @@ sub check_requires_setting
 			last;
 		}
 	}
-	
-	if (( ! $found ) || ( $patchid eq "" )) { installer::exiter::exit_program("ERROR: No patch id defined for SUNW_REQUIRES in patch pkginfo file!", "check_requires_setting"); }	
+
+	if (( ! $found ) || ( $patchid eq "" )) { installer::exiter::exit_program("ERROR: No patch id defined for SUNW_REQUIRES in patch pkginfo file!", "check_requires_setting"); }
 }
 
 ##############################################
@@ -2611,14 +2611,14 @@ sub set_pkginfo_line
 	# 1 i pkginfo 442 34577 1166716297
 	# ->
 	# 1 i pkginfo 443 34737 1166716297
-	# 
+	#
 	# wc -c pkginfo | cut -f6 -d' '  -> 442  (variable)
 	# sum pkginfo | cut -f1 -d' '  -> 34577  (variable)
 	# grep 'pkginfo' pkgmap | cut -f6 -d' '  -> 1166716297  (fix)
 
 	my $checksum = call_sum($pkginfofilename);
 	if ( $checksum =~ /^\s*(\d+)\s+.*$/ ) { $checksum = $1; }
-	
+
 	my $wordcount = call_wc($pkginfofilename);
 	if ( $wordcount =~ /^\s*(\d+)\s+.*$/ ) { $wordcount = $1; }
 
@@ -2641,7 +2641,7 @@ sub set_pkginfo_line
 sub set_time_stamp
 {
 	my ($olddir, $newdir, $copyfiles) = @_;
-	
+
 	for ( my $i = 0; $i <= $#{$copyfiles}; $i++ )
 	{
 		my $sourcefile = $olddir . $installer::globals::separator . ${$copyfiles}[$i];
@@ -2664,7 +2664,7 @@ sub set_time_stamp
 			$infoline = "Success: \"$systemcall\" !\n";
 			$installer::logger::Lang->print($infoline);
 		}
-	}	
+	}
 }
 
 ############################################################
@@ -2676,7 +2676,7 @@ sub set_time_stamp
 sub generate_cygwin_pathes_old
 {
 	my ($filesref) = @_;
-	
+
 	my ($tmpfilehandle, $tmpfilename) = tmpnam();
 	open SOURCEPATHLIST, ">$tmpfilename" or die "oops...\n";
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
@@ -2691,7 +2691,7 @@ sub generate_cygwin_pathes_old
 	{
 		${$filesref}[$i]->{'cyg_sourcepath'} = $cyg_sourcepathlist[$i];
 	}
-	
+
 }
 
 #################################################
@@ -2704,12 +2704,12 @@ sub generate_cygwin_pathes
 	my ($filesref) = @_;
 
 	$installer::logger::Lang->add_timestamp("Starting generating cygwin paths");
-	
+
 	my $infoline = "Generating cygwin paths (generate_cygwin_pathes)\n";
-	$installer::logger::Lang->print($infoline);	
-	
+	$installer::logger::Lang->print($infoline);
+
 	my $max = 5000;  # number of paths in one file
-	
+
 	my @pathcollector = ();
 	my $startnumber = 0;
 	my $counter = 0;
@@ -2727,7 +2727,7 @@ sub generate_cygwin_pathes
 			$temppath =~ s/\Q$installer::globals::separator\E\s*$//;
 			$tmpfilename = $temppath . $installer::globals::separator . $tmpfilename;
 			$infoline = "Creating temporary file for cygwin conversion: $tmpfilename (contains $counter paths)\n";
-			$installer::logger::Lang->print($infoline);	
+			$installer::logger::Lang->print($infoline);
 			if ( -f $tmpfilename ) { unlink $tmpfilename; }
 
 			installer::files::save_file($tmpfilename, \@pathcollector);
@@ -2738,11 +2738,11 @@ sub generate_cygwin_pathes
                 $counter);
 			my @cyg_sourcepathlist = qx{cygpath -w -f "$tmpfilename"};
 			chomp @cyg_sourcepathlist;
-			
+
 			# Validating the array, it has to contain the correct number of values
 			my $new_pathes = $#cyg_sourcepathlist + 1;
 			if ( $new_pathes == $counter ) { $success = 1; }
-		
+
 			if ($success)
 			{
 				$installer::logger::Lang->printf(
@@ -2760,18 +2760,18 @@ sub generate_cygwin_pathes
 			for ( my $j = 0; $j <= $#cyg_sourcepathlist; $j++ )
 			{
 				my $number = $startnumber + $j;
-				${$filesref}[$number]->{'cyg_sourcepath'} = $cyg_sourcepathlist[$j];		
+				${$filesref}[$number]->{'cyg_sourcepath'} = $cyg_sourcepathlist[$j];
 			}
 
 			if ( -f $tmpfilename ) { unlink $tmpfilename; }
-			
+
 			@pathcollector = ();
 			$startnumber = $startnumber + $max;
 			$counter = 0;
 		}
 	}
 
-	# Checking existence fo cyg_sourcepath for every file	
+	# Checking existence fo cyg_sourcepath for every file
 	for ( my $i = 0; $i <= $#{$filesref}; $i++ )
 	{
 		if (( ! exists(${$filesref}[$i]->{'cyg_sourcepath'}) ) || ( ${$filesref}[$i]->{'cyg_sourcepath'} eq "" ))
@@ -2797,14 +2797,14 @@ sub filter_pkgmapfile
 	my @pkgmap = ();
 
 	my $line = ": 1 10\n";
-	push(@pkgmap, $line);	
+	push(@pkgmap, $line);
 
 	for ( my $i = 0; $i <= $#{$pkgmapfile}; $i++ )
 	{
 		$line = ${$pkgmapfile}[$i];
-		if ( $line =~ /^\s*1\si\s/ ) { push(@pkgmap, $line); }	
+		if ( $line =~ /^\s*1\si\s/ ) { push(@pkgmap, $line); }
 	}
-	
+
 	return \@pkgmap;
 }
 
@@ -2817,14 +2817,14 @@ sub filter_pkgmapfile
 sub fix_solaris_x86_patch
 {
 	my ($packagename, $subdir) = @_;
-	
+
 	# changing into directory of packages, important for soft linking
 	my $startdir = cwd();
 	chdir($subdir);
-	
+
 	# $packagename is: "SUNWstaroffice-core01"
 	# Current working directory is: "<path>/install/en-US_inprogress"
-	
+
 	# create new folder in "packages": $packagename . ".i"
 	my $newpackagename = $packagename . "\.i";
 	my $newdir = $newpackagename;
@@ -2851,7 +2851,7 @@ sub fix_solaris_x86_patch
 		my $destfile = $newdir . $installer::globals::separator . $allcopyfiles[$i];
 		installer::systemactions::copy_one_file($sourcefile, $destfile);
 	}
-	
+
 	# change in pkginfo in $packagename . ".i" the value for ARCH from i386 to i86pc
 	my $pkginfofilename = "pkginfo";
 	$pkginfofilename = $newdir . $installer::globals::separator . $pkginfofilename;
@@ -2859,7 +2859,7 @@ sub fix_solaris_x86_patch
 	my $pkginfofile = installer::files::read_file($pkginfofilename);
 	set_old_architecture_string($pkginfofile);
 	installer::files::save_file($pkginfofilename, $pkginfofile);
-	
+
 	# adapt the values in pkgmap for pkginfo file, because this file was edited
 	my $pkgmapfilename = "pkgmap";
 	$pkgmapfilename = $newdir . $installer::globals::separator . $pkgmapfilename;
@@ -2867,7 +2867,7 @@ sub fix_solaris_x86_patch
 	my $pkgmapfile = installer::files::read_file($pkgmapfilename);
 	set_pkginfo_line($pkgmapfile, $pkginfofilename);
 	installer::files::save_file($pkgmapfilename, $pkgmapfile);
-	
+
 	# changing back to startdir
 	chdir($startdir);
 }
@@ -2876,22 +2876,22 @@ sub fix_solaris_x86_patch
 # Creating double core01 package for Solaris x86.
 # One package with ARCH=i386 and one with
 # ARCH=i86pc. This is necessary, to inform the
-# user about the missing "small patch", if 
+# user about the missing "small patch", if
 # packages with ARCH=i86pc are installed.
 ###################################################
 
 sub fix2_solaris_x86_patch
 {
 	my ($packagename, $subdir) = @_;
-	
+
 	if ( $packagename =~ /-core01\s*$/ )	# only this one package needs to be duplicated
-	{	
+	{
 		my $startdir = cwd();
 		chdir($subdir);
-	
+
 		# $packagename is: "SUNWstaroffice-core01"
 		# Current working directory is: "<path>/install/en-US_inprogress"
-	
+
 		# create new package in "packages": $packagename . ".i"
 		my $olddir = $packagename;
 		my $newpackagename = $packagename . "\.i";
@@ -2916,7 +2916,7 @@ sub fix2_solaris_x86_patch
 			my $destfile = $newdir . $installer::globals::separator . $allcopyfiles[$i];
 			installer::systemactions::copy_one_file($sourcefile, $destfile);
 		}
-	
+
 		# change in pkginfo in $packagename . ".i" the value for ARCH from i386 to i86pc
 		my $pkginfofilename = "pkginfo";
 		$pkginfofilename = $newdir . $installer::globals::separator . $pkginfofilename;
@@ -2925,7 +2925,7 @@ sub fix2_solaris_x86_patch
 		set_old_architecture_string($pkginfofile);
 		check_requires_setting($pkginfofile);
 		installer::files::save_file($pkginfofilename, $pkginfofile);
-	
+
 		# adapt the values in pkgmap for pkginfo file, because this file was edited
 		my $pkgmapfilename = "pkgmap";
 		$pkgmapfilename = $newdir . $installer::globals::separator . $pkgmapfilename;
@@ -2954,7 +2954,7 @@ sub fix2_solaris_x86_patch
 sub resolving_hidden_flag
 {
 	my ($filesarrayref, $variableshashref, $item, $languagestringref) = @_;
-	
+
 	my $diritem = lc($item);
 	my $infoline = "";
 
@@ -2968,30 +2968,30 @@ sub resolving_hidden_flag
 		my $styles = "";
 
 		if ( $onefile->{'Styles'} ) { $styles = $onefile->{'Styles'}; }
-	
+
 		if ( $styles =~ /\bHIDDEN\b/ )
 		{
 			# Language specific subdirectory
 
 			my $onelanguage = $onefile->{'specificlanguage'};
-			
+
 			if ($onelanguage eq "")
 			{
 				$onelanguage = "00";	# files without language into directory "00"
 			}
-			
-			my $hiddendir = $hiddendirbase . $installer::globals::separator . $onelanguage . $installer::globals::separator; 
+
+			my $hiddendir = $hiddendirbase . $installer::globals::separator . $onelanguage . $installer::globals::separator;
 			installer::systemactions::create_directory($hiddendir);	# creating language specific directories
 
 			# copy files and edit them with the variables defined in the zip.lst
-				
+
 			my $onefilename = $onefile->{'Name'};
 			my $newfilename = "\." . $onefilename;
 			my $sourcefile = $onefile->{'sourcepath'};
-			my $destfile = $hiddendir . $newfilename;  
-				
+			my $destfile = $hiddendir . $newfilename;
+
 			my $copysuccess = installer::systemactions::copy_one_file($sourcefile, $destfile);
-	
+
 			if ( $copysuccess )
 			{
 				# $onefile->{'Name'} = $newfilename;
@@ -3000,20 +3000,20 @@ sub resolving_hidden_flag
 				installer::pathanalyzer::get_path_from_fullqualifiedname(\$destination);
 				if ( $destination eq "" ) { $onefile->{'destination'} = $newfilename; }
 				else { $onefile->{'destination'} = $destination . $installer::globals::separator . $newfilename; }
-				
+
 				$infoline = "Success: Using file with flag HIDDEN from \"$onefile->{'sourcepath'}\"!\n";
-				$installer::logger::Lang->print($infoline);			
+				$installer::logger::Lang->print($infoline);
 			}
 			else
 			{
 				$infoline = "Error: Failed to copy HIDDEN file from \"$sourcefile\" to \"$destfile\"!\n";
-				$installer::logger::Lang->print($infoline);			
-			}		
+				$installer::logger::Lang->print($infoline);
+			}
 		}
 	}
 
 	$infoline = "\n";
-	$installer::logger::Lang->print($infoline);	
+	$installer::logger::Lang->print($infoline);
 }
 
 ################################################
@@ -3024,7 +3024,7 @@ sub resolving_hidden_flag
 sub key_in_a_is_also_key_in_b
 {
 	my ( $hashref_a, $hashref_b) = @_;
-	
+
 	my $returnvalue = 1;
 
 	my $key;
@@ -3036,7 +3036,7 @@ sub key_in_a_is_also_key_in_b
 			foreach $keyb ( keys %{$hashref_b} ) { print "$keyb : $hashref_b->{$keyb}\n"; }
 			print "*****\n";
 			$returnvalue = 0;
-		}	
+		}
 	}
 
 	return $returnvalue;
@@ -3049,14 +3049,14 @@ sub key_in_a_is_also_key_in_b
 sub get_first_from_list
 {
 	my ( $list ) = @_;
-	
+
 	my $first = $list;
 
 	if ( $list =~ /^\s*(.+?),(.+)\s*$/)	# "?" for minimal matching
 	{
 		$first = $1;
 	}
-	
+
 	return $first;
 }
 
@@ -3070,9 +3070,9 @@ sub set_spellcheckerlanguages
 
 	my %productlanguages = ();
 	for ( my $i = 0; $i <= $#{$productlanguagesarrayref}; $i++ ) { $productlanguages{${$productlanguagesarrayref}[$i]} = 1;  }
-	
+
 	my $spellcheckfilename = $allvariables->{'SPELLCHECKERFILE'};
-	
+
 	my $spellcheckfileref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$spellcheckfilename, "", 1);
 
 	if ($$spellcheckfileref eq "") { installer::exiter::exit_program("ERROR: Could not find $spellcheckfilename!", "set_spellcheckerlanguages"); }
@@ -3080,13 +3080,13 @@ sub set_spellcheckerlanguages
     $installer::logger::Global->printf("Using spellchecker file: %s\n", $$spellcheckfileref);
 
 	my $spellcheckfile = installer::files::read_file($$spellcheckfileref);
-	my %spellcheckhash = (); 
+	my %spellcheckhash = ();
 
 	for ( my $j = 0; $j <= $#{$spellcheckfile}; $j++ )
 	{
 		# Analyzing all "key=value" lines
 		my $oneline = ${$spellcheckfile}[$j];
-			
+
 		if ( $oneline =~ /^\s*(\S+)\s*\=\s*\"(.*?)\"\s*$/ )	# no white space allowed in key
 		{
 			my $onelang = $1;
@@ -3094,11 +3094,11 @@ sub set_spellcheckerlanguages
 
 			# Special handling for language packs. Only include the first language of the language list.
 			# If no spellchecker shall be included, the keyword "EMPTY" can be used.
-			
+
 			if ( $installer::globals::languagepack )
 			{
 				my $first = get_first_from_list($languagelist);
-				
+
 				if ( $first eq "EMPTY" )	 # no spellchecker into language pack
 				{
 					$languagelist = "";
@@ -3112,25 +3112,25 @@ sub set_spellcheckerlanguages
 			{
 				$languagelist =~ s/^\s*EMPTY\s*,//;	# removing the entry EMPTY
 			}
-					
+
 			$spellcheckhash{$onelang} = $languagelist;
 		}
-	}			
+	}
 
 	# Collecting all required languages in %installer::globals::spellcheckerlanguagehash
-	
+
 	foreach my $lang (keys %productlanguages)
 	{
 		my $languagelist = "";
 		if ( exists($spellcheckhash{$lang}) ) { $languagelist = $spellcheckhash{$lang}; }
 		else { $languagelist = $spellcheckhash{'en-US'}; }	# defaulting to English
-		
+
 		my $langlisthash = installer::converter::convert_stringlist_into_hash(\$languagelist, ",");
 		foreach my $onelang ( keys %{$langlisthash} ) { $installer::globals::spellcheckerlanguagehash{$onelang} = 1; }
 	}
-	
+
 	$installer::globals::analyze_spellcheckerlanguage = 1;
-	
+
 	# Logging
 
 	my $langstring = "";
@@ -3146,7 +3146,7 @@ sub set_spellcheckerlanguages
 
 sub put_license_into_setup
 {
-	my ($installdir, $includepatharrayref) = @_;	
+	my ($installdir, $includepatharrayref) = @_;
 
 	# find and read the license file
 	my $licenselanguage = "en-US";					# always english !
@@ -3157,11 +3157,11 @@ sub put_license_into_setup
 	my $licenseref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$licensefilename, $licenseincludepatharrayref, 0);
 	if ($$licenseref eq "") { installer::exiter::exit_program("ERROR: Could not find License file $licensefilename!", "put_license_into_setup"); }
 	my $licensefile = installer::files::read_file($$licenseref);
-	
+
 	# Read setup
 	my $setupfilename = $installdir . $installer::globals::separator . "setup";
 	my $setupfile = installer::files::read_file($setupfilename);
-	
+
 	# Replacement
 	my $infoline = "Adding licensefile into setup script\n";
 	$installer::logger::Lang->print($infoline);
@@ -3181,17 +3181,17 @@ sub put_license_into_setup
 sub set_getuid_path
 {
 	my ($includepatharrayref) = @_;
-	
+
 	my $getuidlibraryname = "getuid.so";
 	my $getuidlibraryref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$getuidlibraryname, $includepatharrayref, 0);
 	if ($$getuidlibraryref eq "") { installer::exiter::exit_program("ERROR: Could not find $getuidlibraryname!", "set_getuid_path"); }
-	
+
 	$installer::globals::getuidpath = $$getuidlibraryref;
-	$installer::globals::getuidpathset = 1;	
+	$installer::globals::getuidpathset = 1;
 }
 
 #########################################################
-# Create a tar file from the binary package 
+# Create a tar file from the binary package
 #########################################################
 
 sub tar_package
@@ -3202,12 +3202,12 @@ sub tar_package
 
 	my $systemcall = "cd $installdir; $ldpreloadstring tar -cf - $packagename > $tarfilename";
 	# my $systemcall = "cd $installdir; $ldpreloadstring tar -cf - * > $tarfilename";
-	
+
 	my $returnvalue = system($systemcall);
 
 	my $infoline = "Systemcall: $systemcall\n";
 	$installer::logger::Lang->print($infoline);
-		
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: Could not execute \"$systemcall\"!\n";
@@ -3218,7 +3218,7 @@ sub tar_package
 		$infoline = "Success: Executed \"$systemcall\" successfully!\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	my $localcall = "chmod 775 $tarfilename \>\/dev\/null 2\>\&1";
 	$returnvalue = system($localcall);
 
@@ -3229,7 +3229,7 @@ sub tar_package
 }
 
 #########################################################
-# Create a tar file from the binary package 
+# Create a tar file from the binary package
 #########################################################
 
 sub untar_package
@@ -3239,12 +3239,12 @@ sub untar_package
 	my $ldpreloadstring = $ENV{'FAKEROOT'};
 
 	my $systemcall = "cd $installdir; $ldpreloadstring tar -xf $tarfilename";
-	
+
 	my $returnvalue = system($systemcall);
 
 	my $infoline = "Systemcall: $systemcall\n";
 	$installer::logger::Lang->print($infoline);
-		
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: Could not execute \"$systemcall\"!\n";
@@ -3255,7 +3255,7 @@ sub untar_package
 		$infoline = "Success: Executed \"$systemcall\" successfully!\n";
 		$installer::logger::Lang->print($infoline);
 	}
-	
+
 	my $localcall = "chmod 775 $tarfilename \>\/dev\/null 2\>\&1";
 	$returnvalue = system($localcall);
 }
@@ -3275,7 +3275,7 @@ sub shuffle_array
 	# {
 	#	$counter++;
 	#	$infoline = "$counter: $onepackage->{'module'}\n";
-	#	$installer::logger::Lang->print($infoline);		
+	#	$installer::logger::Lang->print($infoline);
 	# }
 
 	my $i = @$arrayref;
@@ -3285,14 +3285,14 @@ sub shuffle_array
 		@$arrayref[$i,$j] = @$arrayref[$j,$i];
 	}
 
-	# $counter = 0;	
+	# $counter = 0;
 	# $infoline = "New package order: \n";
 	# $installer::logger::Lang->print($infoline);
 	# foreach my $onepackage ( @{$arrayref} )
 	# {
 	#	$counter++;
 	#	$infoline = "$counter: $onepackage->{'module'}\n";
-	#	$installer::logger::Lang->print($infoline);		
+	#	$installer::logger::Lang->print($infoline);
 	# }
 }
 
@@ -3319,7 +3319,7 @@ sub set_english_license
 sub set_time_stamp_for_file
 {
 	my ($sourcefile, $destfile) = @_;
-	
+
 	my $systemcall = "touch -r $sourcefile $destfile";
 
 	my $returnvalue = system($systemcall);
@@ -3351,14 +3351,14 @@ sub change_onefile_in_pkgmap
 	# 1 i pkginfo 442 34577 1166716297
 	# ->
 	# 1 i pkginfo 443 34737 1166716297
-	# 
+	#
 	# wc -c pkginfo | cut -f6 -d' '  -> 442  (variable)
 	# sum pkginfo | cut -f1 -d' '  -> 34577  (variable)
 	# grep 'pkginfo' pkgmap | cut -f6 -d' '  -> 1166716297  (fix)
 
 	my $checksum = call_sum($fullfilename);
 	if ( $checksum =~ /^\s*(\d+)\s+.*$/ ) { $checksum = $1; }
-	
+
 	my $wordcount = call_wc($fullfilename);
 	if ( $wordcount =~ /^\s*(\d+)\s+.*$/ ) { $wordcount = $1; }
 
@@ -3387,12 +3387,12 @@ sub add_license_into_systemintegrationpackages
 		my $copyrightfilename = ${$packages}[$i] . $installer::globals::separator . "install" . $installer::globals::separator . "copyright";
 		if ( ! -f $copyrightfilename ) { installer::exiter::exit_program("ERROR: Could not find license file in system integration package: $copyrightfilename!", "add_license_into_systemintegrationpackages"); }
 		my $copyrightfile = installer::files::read_file($copyrightfilename);
-		
+
 		# Saving time stamp of old copyrightfile
 		my $savcopyrightfilename = $copyrightfilename . ".sav";
 		installer::systemactions::copy_one_file($copyrightfilename, $savcopyrightfilename);
 		set_time_stamp_for_file($copyrightfilename, $savcopyrightfilename); # now $savcopyrightfile has the time stamp of $copyrightfile
-	
+
 		# Adding license content to copyright file
 		push(@{$copyrightfile}, "\n");
 		for ( my $i = 0; $i <= $#{$installer::globals::englishlicense}; $i++ ) { push(@{$copyrightfile}, ${$installer::globals::englishlicense}[$i]); }
@@ -3401,13 +3401,13 @@ sub add_license_into_systemintegrationpackages
 		# Setting the old time stamp saved with $savcopyrightfilename
 		set_time_stamp_for_file($savcopyrightfilename, $copyrightfilename); # now $copyrightfile has the time stamp of $savcopyrightfile
 		unlink($savcopyrightfilename);
-	
+
 		# Changing content of copyright file in pkgmap
 		my $pkgmapfilename = ${$packages}[$i] . $installer::globals::separator . "pkgmap";
 		if ( ! -f $pkgmapfilename ) { installer::exiter::exit_program("ERROR: Could not find pkgmap in system integration package: $pkgmapfilename!", "add_license_into_systemintegrationpackages"); }
 		my $pkgmap = installer::files::read_file($pkgmapfilename);
 		change_onefile_in_pkgmap($pkgmap, $copyrightfilename, "copyright");
-		installer::files::save_file($pkgmapfilename, $pkgmap);		
+		installer::files::save_file($pkgmapfilename, $pkgmap);
 	}
 }
 
@@ -3418,9 +3418,9 @@ sub add_license_into_systemintegrationpackages
 sub collectpackagemaps
 {
 	my ( $installdir, $languagestringref, $allvariables ) = @_;
-	
+
 	installer::logger::include_header_into_logfile("Collecing all packagemaps (pkgmap):");
-	
+
 	my $pkgmapdir = installer::systemactions::create_directories("pkgmap", $languagestringref);
 	my $subdirname = $allvariables->{'UNIXPRODUCTNAME'} . "_pkgmaps";
 	my $pkgmapsubdir = $pkgmapdir . $installer::globals::separator . $subdirname;

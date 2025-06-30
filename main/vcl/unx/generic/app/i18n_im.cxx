@@ -610,6 +610,3 @@ SalI18N_InputMethod::AddConnectionWatch(Display *pDisplay, void *pConnectionHand
 										  (XPointer)pConnectionHandler);
 	return (Bool)nStatus;
 }
-
-
-

@@ -599,4 +599,3 @@ void SwUndoDrawDelete::AddObj( sal_uInt16 , SwDrawFrmFmt* pFmt,
 
 	pMarkLst->InsertEntry( rMark );
 }
-

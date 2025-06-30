@@ -911,4 +911,3 @@ bool SvAddressParser::createRFC822Mailbox(String const & rPhrase,
 	}
 	return true;
 }
-

@@ -913,7 +913,7 @@ sal_Bool OResultSet::ExecuteRow(IResultSetHelper::Movement eFirstCursorPosition,
     sal_Bool bHasRestriction = m_pSQLAnalyzer->hasRestriction();
 again:
 
-	// protect from reading over the end when someboby is inserting while we are reading
+	// protect from reading over the end when somebody is inserting while we are reading
 	// this method works only for dBase at the moment !!!!
 	if (eCursorPosition == IResultSetHelper::NEXT && m_nFilePos == m_nLastVisitedPos)
 	{

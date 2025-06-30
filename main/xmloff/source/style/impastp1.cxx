@@ -125,4 +125,3 @@ int SvXMLAutoStylePoolNamesPCmp_Impl( const OUString& r1,
 IMPL_CONTAINER_SORT( SvXMLAutoStylePoolNamesP_Impl,
 					 OUString,
 				     SvXMLAutoStylePoolNamesPCmp_Impl )
-

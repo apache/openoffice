@@ -573,6 +573,3 @@ sal_Int32 CharClass::getStringType( const String& rStr, xub_StrLen nPos, xub_Str
 		return ParseResult();
 	}
 }
-
-
-

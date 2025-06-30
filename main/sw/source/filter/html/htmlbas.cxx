@@ -355,5 +355,3 @@ void SwHTMLWriter::OutBasicBodyEvents()
 		HTMLOutFuncs::Out_Events( Strm(), *pDocTable, aBodyEventTable,
 								  bCfgStarBasic, eDestEnc, &aNonConvertableCharacters );
 }
-
-

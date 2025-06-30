@@ -256,7 +256,7 @@ void SwView_Impl::Invalidate()
 void SwView_Impl::AddTransferable(SwTransferable& rTransferable)
 {
     //prevent removing of the non-referenced SwTransferable
-    rTransferable.m_refCount++;;
+    rTransferable.m_refCount++;
     {
         xTransferable = Reference<XUnoTunnel> (&rTransferable);
     }
@@ -337,5 +337,3 @@ void SwClipboardChangeListener::AddRemoveListener( sal_Bool bAdd )
 {
 	pView->AddRemoveClipboardListener( Reference< XClipboardListener >( this ), bAdd );
 }
-
-

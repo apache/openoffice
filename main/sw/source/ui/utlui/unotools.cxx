@@ -517,4 +517,3 @@ MenuResource::MenuResource(const ResId& rResId) :
 {
 	FreeResource();
 }
-

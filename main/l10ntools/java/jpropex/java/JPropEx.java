@@ -306,7 +306,7 @@ public class JPropEx
     }
     
     // we have different types of properties in the source code
-    // each needs a different file nameing scheme
+    // each needs a different file naming scheme
     private int detectFormat( String filename )
     {
        if( filename.endsWith( "_en_US.properties" ) )

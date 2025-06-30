@@ -55,4 +55,3 @@ sdbcx::ObjectType OCalcTables::createObject(const ::rtl::OUString& _rName)
     return xRet;
 }
 // -------------------------------------------------------------------------
-

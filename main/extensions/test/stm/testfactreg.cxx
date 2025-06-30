@@ -163,4 +163,3 @@ Sequence<BYTE> createIntSeq( INT32 i )
 	sprintf( pcCount , "%d" , i );
 	return createSeq( pcCount );
 }
-

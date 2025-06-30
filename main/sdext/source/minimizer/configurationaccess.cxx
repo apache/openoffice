@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sdext.hxx"
@@ -45,58 +43,57 @@ using namespace ::com::sun::star::container;
 using rtl::OUString;
 using rtl::OUStringBuffer;
 
-
 #include <rtl/instance.hxx>
 
 typedef std::map < sal_Int32, rtl::OUString > StringResourceMap;
 
 struct StaticResourceMap
-    : public rtl::StaticWithInit< StringResourceMap, StaticResourceMap  >
+	: public rtl::StaticWithInit< StringResourceMap, StaticResourceMap >
 {
-    StringResourceMap &
-    operator()() const;
+	StringResourceMap &
+	operator()() const;
 };
 
 StringResourceMap &
 StaticResourceMap::operator()() const
 {
-    static StringResourceMap aMap;
-    return aMap;
+	static StringResourceMap aMap;
+	return aMap;
 }
 
 static const OUString& GetConfigurationProviderServiceName (void)
 {
-    static const OUString sConfigurationProviderServiceName (
-        RTL_CONSTASCII_USTRINGPARAM(
-            "com.sun.star.configuration.ConfigurationProvider"));
-    return sConfigurationProviderServiceName;
+	static const OUString sConfigurationProviderServiceName (
+		RTL_CONSTASCII_USTRINGPARAM(
+			"com.sun.star.configuration.ConfigurationProvider"));
+	return sConfigurationProviderServiceName;
 }
 static const OUString& GetPathToConfigurationRoot (void)
 {
-    static const OUString sPathToConfigurationRoot (
-        RTL_CONSTASCII_USTRINGPARAM("org.openoffice.Office.Impress/PresentationMinimizer"));
-    return sPathToConfigurationRoot;
+	static const OUString sPathToConfigurationRoot (
+		RTL_CONSTASCII_USTRINGPARAM("org.openoffice.Office.Impress/PresentationMinimizer"));
+	return sPathToConfigurationRoot;
 }
 
 static OUString lcl_loadString(
-    const Reference< resource::XResourceBundle > xResourceBundle,
-    sal_Int32 nResourceId )
+	const Reference< resource::XResourceBundle > xResourceBundle,
+	sal_Int32 nResourceId )
 {
-    OUString sString;
-    OUStringBuffer sKey;
-    sKey.appendAscii( RTL_CONSTASCII_STRINGPARAM( "string:" ) );
-    sKey.append( nResourceId );
+	OUString sString;
+	OUStringBuffer sKey;
+	sKey.appendAscii( RTL_CONSTASCII_STRINGPARAM( "string:" ) );
+	sKey.append( nResourceId );
 
-    try
-    {
-        OSL_VERIFY( xResourceBundle->getByName( sKey.makeStringAndClear() ) >>= sString );
-    }
-    catch( const uno::Exception& )
-    {
-        OSL_ENSURE( false, "OptimizerSettings: missing resource!" );
-    }
+	try
+	{
+		OSL_VERIFY( xResourceBundle->getByName( sKey.makeStringAndClear() ) >>= sString );
+	}
+	catch( const uno::Exception& )
+	{
+		OSL_ENSURE( false, "OptimizerSettings: missing resource!" );
+	}
 
-    return sString;
+	return sString;
 }
 
 void OptimizerSettings::LoadSettingsFromConfiguration( const Reference< XNameAccess >& rSettings )
@@ -223,22 +220,22 @@ ConfigurationAccess::~ConfigurationAccess()
 
 rtl::OUString ConfigurationAccess::getString( sal_Int32 nResId )
 {
-    const StringResourceMap &aStrings = StaticResourceMap::get();
+	const StringResourceMap &aStrings = StaticResourceMap::get();
 	StringResourceMap::const_iterator aIter( aStrings.find( nResId ) );
 	return aIter != aStrings.end() ? ((*aIter).second) : rtl::OUString();
 }
 
 void ConfigurationAccess::LoadStrings()
 {
-    static bool bLoaded = false;
-    if ( bLoaded )
-        return;
-    else
-        bLoaded = true;
+	static bool bLoaded = false;
+	if ( bLoaded )
+		return;
+	else
+		bLoaded = true;
 	try
 	{
 
-        Reference< resource::XResourceBundleLoader > xResourceBundleLoader(
+		Reference< resource::XResourceBundleLoader > xResourceBundleLoader(
             m_xContext->getValueByName(
                 OUString( RTL_CONSTASCII_USTRINGPARAM(
                     "/singletons/com.sun.star.resource.OfficeResourceLoader" ) ) ),
@@ -259,7 +256,7 @@ void ConfigurationAccess::LoadStrings()
         aStrings[ STR_CANCEL                   ] = lcl_loadString( xResourceBundle, STR_CANCEL );
         aStrings[ STR_INTRODUCTION             ] = lcl_loadString( xResourceBundle, STR_INTRODUCTION );
         aStrings[ STR_INTRODUCTION_T           ] = lcl_loadString( xResourceBundle, STR_INTRODUCTION_T );
-        aStrings[ STR_CHOSE_SETTINGS           ] = lcl_loadString( xResourceBundle, STR_CHOSE_SETTINGS );
+        aStrings[ STR_CHOOSE_SETTINGS          ] = lcl_loadString( xResourceBundle, STR_CHOOSE_SETTINGS );
         aStrings[ STR_REMOVE                   ] = lcl_loadString( xResourceBundle, STR_REMOVE );
         aStrings[ STR_GRAPHIC_OPTIMIZATION     ] = lcl_loadString( xResourceBundle, STR_GRAPHIC_OPTIMIZATION );
         aStrings[ STR_IMAGE_OPTIMIZATION       ] = lcl_loadString( xResourceBundle, STR_IMAGE_OPTIMIZATION );
@@ -331,7 +328,7 @@ void ConfigurationAccess::LoadConfiguration()
 			Reference< XInterface > xRoot( OpenConfiguration( true ) );
 			if ( !xRoot.is() )
 				break;
-            Reference< container::XNameAccess > xSet( GetConfigurationNode( xRoot, TKGet( TK_LastUsedSettings ) ), UNO_QUERY );
+			Reference< container::XNameAccess > xSet( GetConfigurationNode( xRoot, TKGet( TK_LastUsedSettings ) ), UNO_QUERY );
 			if ( xSet.is() )
 			{
 				OptimizerSettings& rCurrent( maSettings.front() );
@@ -401,7 +398,7 @@ void ConfigurationAccess::SaveConfiguration()
 				Reference< container::XNameReplace > xTemplates( GetConfigurationNode( xRoot, aPath ), UNO_QUERY );
 				rSettings.SaveSettingsToConfiguration( xTemplates );
 			}
-            xRoot->commitChanges();
+			xRoot->commitChanges();
 		}
 		while( false );
 	}
@@ -416,13 +413,13 @@ Reference< XInterface > ConfigurationAccess::OpenConfiguration( bool bReadOnly )
 	Reference< XInterface > xRoot;
 	try
 	{
-        Reference< lang::XMultiServiceFactory > xProvider( m_xContext->getServiceManager()->createInstanceWithContext( GetConfigurationProviderServiceName(), m_xContext ), UNO_QUERY );
-        if ( xProvider.is() )
-        {
+		Reference< lang::XMultiServiceFactory > xProvider( m_xContext->getServiceManager()->createInstanceWithContext( GetConfigurationProviderServiceName(), m_xContext ), UNO_QUERY );
+		if ( xProvider.is() )
+		{
             Sequence< Any > aCreationArguments( 2 );
             aCreationArguments[0] = makeAny( PropertyValue(
-                OUString( RTL_CONSTASCII_USTRINGPARAM( "nodepath" ) ), 0, 
-                makeAny( GetPathToConfigurationRoot() ), 
+                OUString( RTL_CONSTASCII_USTRINGPARAM( "nodepath" ) ), 0,
+                makeAny( GetPathToConfigurationRoot() ),
                 PropertyState_DIRECT_VALUE ) );
             aCreationArguments[1] = makeAny(beans::PropertyValue(
                 OUString( RTL_CONSTASCII_USTRINGPARAM( "lazywrite" ) ), 0, makeAny( true ),
@@ -437,7 +434,7 @@ Reference< XInterface > ConfigurationAccess::OpenConfiguration( bool bReadOnly )
 
             xRoot = xProvider->createInstanceWithArguments(
                 sAccessService, aCreationArguments );
-        }
+		}
 	}
 	catch ( Exception& /* rException */ )
 	{
@@ -446,12 +443,12 @@ Reference< XInterface > ConfigurationAccess::OpenConfiguration( bool bReadOnly )
 }
 
 Reference< XInterface > ConfigurationAccess::GetConfigurationNode(
-    const Reference< XInterface >& xRoot, 
-    const OUString& sPathToNode )
+	const Reference< XInterface >& xRoot,
+	const OUString& sPathToNode )
 {
-    Reference< XInterface > xNode;
-    try
-    {
+	Reference< XInterface > xNode;
+	try
+	{
 		if ( !sPathToNode.getLength() )
 			xNode = xRoot;
 		else
@@ -462,16 +459,16 @@ Reference< XInterface > ConfigurationAccess::GetConfigurationNode(
 				xHierarchy->getByHierarchicalName( sPathToNode ) >>= xNode;
 			}
 		}
-    }
-    catch ( Exception& rException )
-    {
-        OSL_TRACE ("caught exception while getting configuration node %s: %s",
+	}
+	catch ( Exception& rException )
+	{
+		OSL_TRACE ("caught exception while getting configuration node %s: %s",
             ::rtl::OUStringToOString(sPathToNode,
                 RTL_TEXTENCODING_UTF8).getStr(),
             ::rtl::OUStringToOString(rException.Message,
                 RTL_TEXTENCODING_UTF8).getStr());
-    }
-    return xNode;
+	}
+	return xNode;
 }
 
 com::sun::star::uno::Any ConfigurationAccess::GetConfigProperty( const PPPOptimizerTokenEnum ePropertyToken ) const
@@ -613,3 +610,5 @@ std::vector< OptimizerSettings >::iterator ConfigurationAccess::GetOptimizerSett
 	}
 	return aIter;
 }
+
+/* vim: set noet sw=4 ts=4: */

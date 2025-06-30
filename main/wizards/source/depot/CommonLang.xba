@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="CommonLang" script:language="StarBasic">REM  *****  BASIC  *****
 
@@ -109,7 +109,7 @@ Public sDepotCurrency as String
 Public iValueCol as Integer
 
 Public DlgReference as Object
-Public DlgTransaction as Object	
+Public DlgTransaction as Object
 Public DlgStockRates as Object
 Public DlgStartUp as Object
 Public TransactModel as Object
@@ -147,11 +147,11 @@ Sub LoadLanguage()
 		Case &quot;de&quot;
 			LoadGermanLanguage()
 		Case &quot;en&quot;
-			LoadEnglishLanguage()			
+			LoadEnglishLanguage()
 		Case &quot;fr&quot;
 			LoadFrenchLanguage()
 		Case &quot;it&quot;
-			LoadItalianLanguage()		
+			LoadItalianLanguage()
 		Case &quot;es&quot;
 			LoadSpanishLanguage()
 		Case &quot;sv&quot;
@@ -159,16 +159,16 @@ Sub LoadLanguage()
 		Case &quot;ja&quot;
 			LoadJapaneseLanguage()
 		Case &quot;ko&quot;
-			LoadKoreanLanguage()			
+			LoadKoreanLanguage()
 		Case &quot;zh&quot;
 			If sDocCountry = &quot;CN&quot; Then
 				LoadChineseSimpleLanguage()
 			Else
 				LoadChineseTradLanguage()
-			End If				
+			End If
 	End Select
-	InitializeStartUpModel()	
-End Sub	
+	InitializeStartUpModel()
+End Sub
 
 Sub CompleteMarketList()
 Dim EuroIndex as Integer
@@ -195,9 +195,9 @@ Dim bIsLocale as Boolean
 				bIsLocale = CheckDocLocale(sLangList(m), sCountryList(m))
 				If bIsLocale Then
 					EuroIndex = m
-					Exit For								
+					Exit For
 				End If
-			Next m	
+			Next m
 			sMarket(n,6) = sLangList(EuroIndex)
 			sMarket(n,7) = sCountryList(EuroIndex)
 			sMarket(n,8) = sExtensionList(EuroIndex)
@@ -207,7 +207,7 @@ Dim bIsLocale as Boolean
 			Exit For
 		End If
 	Next n
-End Sub	
+End Sub
 
 Sub LocalizedCurrencies()
 	If GlobListIndex = -1 Then
@@ -216,7 +216,7 @@ Sub LocalizedCurrencies()
 		sCountryMarket(0,2) = &quot;Paris&quot;
 		sCountryMarket(0,3) = &quot;http://fr.finance.yahoo.com/d/quotes.csv?s=&lt;StockID&gt;.PA&amp;f=s4l1t1c1ghov&amp;e=.csv&quot;
 		sCountryMarket(0,5) = &quot;Code&quot;
-		sCountryMarket(0,6) = &quot;fr&quot;			
+		sCountryMarket(0,6) = &quot;fr&quot;
 		sCountryMarket(0,7) = &quot;FR&quot;
 		sCountryMarket(0,8) = &quot;40C&quot;
 		sCountryMarket(0,9) = &quot;59/9&quot;
@@ -259,8 +259,8 @@ Sub LocalizedCurrencies()
 		sCountryMarket(4,1) = &quot;kr&quot;
 		sCountryMarket(4,2) = &quot;Stockholm&quot;
 		sCountryMarket(4,3) = &quot;http://se.finance.yahoo.com/d/quotes.csv?s=&lt;StockID&gt;.L&amp;f=sl1d1t1c1ohgv&amp;e=.c&quot;
-		sCountryMarket(4,5) = &quot;Kod&quot;			
-		sCountryMarket(4,6) = &quot;sv&quot;			
+		sCountryMarket(4,5) = &quot;Kod&quot;
+		sCountryMarket(4,6) = &quot;sv&quot;
 		sCountryMarket(4,7) = &quot;SE&quot;
 		sCountryMarket(4,8) = &quot;41D&quot;
 		sCountryMarket(4,9) = &quot;44&quot;
@@ -271,12 +271,12 @@ Sub LocalizedCurrencies()
 		sCountryMarket(5,1) = &quot;￥&quot;
 		sCountryMarket(5,2) = &quot;代號&quot;
 		sCountryMarket(5,3) = &quot;http://tw.finance.yahoo.com/d/quotes.csv?s=&lt;StockID&gt;.TW&amp;f=sl1d1t1c1ohgv&amp;e=.csv&quot;
-		sCountryMarket(5,5) = &quot;代號&quot;			
-		sCountryMarket(5,6) = &quot;zh&quot;			
-		sCountryMarket(5,7) = &quot;TW&quot;	
+		sCountryMarket(5,5) = &quot;代號&quot;
+		sCountryMarket(5,6) = &quot;zh&quot;
+		sCountryMarket(5,7) = &quot;TW&quot;
 		sCountryMarket(5,8) = &quot;404&quot;
 		sCountryMarket(5,9) = &quot;44&quot;
-		sCountryMarket(5,10) = &quot;1&quot;		
+		sCountryMarket(5,10) = &quot;1&quot;
 
 		&apos; Chinese Yuan
 		sCountryMarket(6,0) = &quot;人民币&quot;
@@ -284,12 +284,12 @@ Sub LocalizedCurrencies()
 		sCountryMarket(6,2) = &quot;代号&quot;
 		sCountryMarket(6,3) = &quot;http://cn.finance.yahoo.com/d/quotes.csv?s=&lt;StockID&gt;.SS&amp;f=sl1d1t1c1ohgv&amp;e=.csv&quot;
 		sCountryMarket(6,5) = &quot;代号&quot;
-		sCountryMarket(6,6) = &quot;zh&quot;			
-		sCountryMarket(6,7) = &quot;CN&quot;	
+		sCountryMarket(6,6) = &quot;zh&quot;
+		sCountryMarket(6,7) = &quot;CN&quot;
 		sCountryMarket(6,8) = &quot;804&quot;
 		sCountryMarket(6,9) = &quot;44&quot;
 		sCountryMarket(6,10) = &quot;1&quot;
-		
+
 		&apos; korean Won
 		sCountryMarket(7,0) = &quot;한국 원화&quot;
 		sCountryMarket(7,1) = &quot;￦&quot;
@@ -297,7 +297,7 @@ Sub LocalizedCurrencies()
 		sCountryMarket(7,3) = &quot;http://kr.finance.yahoo.com/d/quotes.csv?s=&lt;StockID&gt;.KS&amp;f=snl1d1t1c1ohgv&amp;e=.csv&quot;
 		sCountryMarket(7,5) = &quot;종목 코드&quot;
 		sCountryMarket(7,6) = &quot;ko&quot;
-		sCountryMarket(7,7) = &quot;KR&quot;			
+		sCountryMarket(7,7) = &quot;KR&quot;
 		sCountryMarket(7,8) = &quot;412&quot;
 		sCountryMarket(7,9) = &quot;44&quot;
 		sCountryMarket(7,10) = &quot;2&quot;
@@ -307,9 +307,9 @@ Sub LocalizedCurrencies()
 &apos;		sCountryMarket(5,1) = &quot;р.&quot;
 &apos;		sCountryMarket(5,2) = &quot;&quot;
 &apos;		sCountryMarket(5,3) = &quot;&quot;
-&apos;		sCountryMarket(5,5) = &quot;&quot;				
-&apos;		sCountryMarket(5,6) = &quot;ru&quot;			
-&apos;		sCountryMarket(5,7) = &quot;RU&quot;	
+&apos;		sCountryMarket(5,5) = &quot;&quot;
+&apos;		sCountryMarket(5,6) = &quot;ru&quot;
+&apos;		sCountryMarket(5,7) = &quot;RU&quot;
 &apos;		sCountryMarket(5,8) = &quot;-419&quot;
 &apos;		sCountryMarket(5,9) = &quot;&quot;
 &apos;
@@ -318,8 +318,8 @@ Sub LocalizedCurrencies()
 &apos;		sCountryMarket(6,2) = &quot;&quot;
 &apos;		sCountryMarket(6,3) = &quot;&quot;
 &apos;		sCountryMarket(6,5) = &quot;&quot;				&apos;Still Todo!!
-&apos;		sCountryMarket(6,6) = &quot;pl&quot;			
-&apos;		sCountryMarket(6,7) = &quot;PL&quot;	
+&apos;		sCountryMarket(6,6) = &quot;pl&quot;
+&apos;		sCountryMarket(6,7) = &quot;PL&quot;
 &apos;		sCountryMarket(6,8) = &quot;-415&quot;
 &apos;		sCountryMarket(6,9) = &quot;&quot;
 &apos;
@@ -328,15 +328,15 @@ Sub LocalizedCurrencies()
 &apos;		sCountryMarket(7,2) = &quot;&quot;
 &apos;		sCountryMarket(7,3) = &quot;&quot;
 &apos;		sCountryMarket(7,5) = &quot;&quot;				&apos;Still Todo!!
-&apos;		sCountryMarket(7,6) = &quot;tr&quot;			
-&apos;		sCountryMarket(7,7) = &quot;TR&quot;	
+&apos;		sCountryMarket(7,6) = &quot;tr&quot;
+&apos;		sCountryMarket(7,7) = &quot;TR&quot;
 &apos;		sCountryMarket(7,8) = &quot;-41F&quot;
 &apos;		sCountryMarket(7,9) = &quot;&quot;
 
 	Dim n as Integer
 	Dim m as Integer
 &apos;	Dim sCountryMarket(6,9) as String
-	
+
 		For n = 0 To Ubound(sCountryMarket(),1)
 			If sDocLanguage = sCountryMarket(n,6) and sDocCountry = sCountryMarket(n,7) Then
 				GlobListIndex = 6
@@ -345,7 +345,7 @@ Sub LocalizedCurrencies()
 				Next m
 				Exit For
 			End If
-		Next n		
+		Next n
 	End If
 End Sub
 
@@ -354,9 +354,9 @@ Sub LoadDepotDialogs()
 	DlgStockRates = LoadDialog(&quot;Depot&quot;, &quot;Dialog3&quot;)
 	DlgStartUp = LoadDialog(&quot;Depot&quot;, &quot;Dialog4&quot;)
 	TransactModel = DlgTransaction.Model
-	StockRatesModel = DlgStockRates.Model	
+	StockRatesModel = DlgStockRates.Model
 	StartUpModel = DlgStartUp.Model
-End Sub	
+End Sub
 
 
 Sub InitializeStartUpModel()
@@ -365,7 +365,7 @@ Sub InitializeStartUpModel()
 		sStartUpHint = ReplaceString(sStartUpHint, sHistory, &quot;&lt;History&gt;&quot;)
 		.lblHint.Label = sStartupHint
 &apos;		.cmdGoOn.Enabled = Ubound(StartUpModel.lstMarkets.SelectedItems()) &lt;&gt; -1
-		.cmdGoOn.Label = sOK 
+		.cmdGoOn.Label = sOK
 		.cmdCancel.Label = sCancel
 	End With
 End Sub</script:module>

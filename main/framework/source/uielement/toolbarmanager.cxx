@@ -308,7 +308,7 @@ ToolBarManager::ToolBarManager( const Reference< XMultiServiceFactory >& rServic
 	idx++; // will become 0 if '/' not found: use full string
 	::rtl::OString aHelpIdAsString( HELPID_PREFIX_TESTTOOL );
 	::rtl::OUString aToolbarName = rResourceName.copy( idx );
-	aHelpIdAsString += rtl::OUStringToOString( aToolbarName, RTL_TEXTENCODING_UTF8 );;
+	aHelpIdAsString += rtl::OUStringToOString( aToolbarName, RTL_TEXTENCODING_UTF8 );
 	m_pToolBar->SetHelpId( aHelpIdAsString );
 
 	m_aAsyncUpdateControllersTimer.SetTimeout( 50 );

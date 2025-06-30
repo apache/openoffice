@@ -159,4 +159,3 @@ xub_StrLen SwGrammarMarkUp::getSentenceEnd( xub_StrLen nPos )
         nRet = *pIter;
     return nRet;
 }
-

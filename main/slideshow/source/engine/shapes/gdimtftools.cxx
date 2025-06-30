@@ -543,4 +543,3 @@ bool getRectanglesFromScrollMtf( ::basegfx::B2DRectangle&       o_rScrollRect,
 
 }
 }
-

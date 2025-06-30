@@ -90,7 +90,7 @@ bool UnoInterfaceToUniqueIdentifierMapper::registerReference( const OUString& rI
 		while(nLength--)
 		{
 			if( (*p < '0') || (*p > '9') )
-				return true; // a custom id, that will never conflict with genereated id's
+				return true; // a custom id, that will never conflict with generated id's
 
 			p++;
 		}
@@ -164,4 +164,3 @@ bool UnoInterfaceToUniqueIdentifierMapper::findIdentifier( const OUString& rIden
 }
 
 }
-

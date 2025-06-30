@@ -678,9 +678,3 @@ sal_Bool ScTable::SearchAndReplace(const SvxSearchItem& rSearchItem,
 	}
 	return bFound;
 }
-
-
-
-
-
-

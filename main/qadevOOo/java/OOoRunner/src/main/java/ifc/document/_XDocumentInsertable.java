@@ -109,7 +109,7 @@ public class _XDocumentInsertable extends MultiMethodTest {
             tEnv.getObjRelation("XDocumentInsertable.Checker") ;
 
         if (checker == null) {
-            log.println("Relaion not found, trying to query for "+
+            log.println("Relation not found, trying to query for "+
                 "XTextRange ...") ;
             range = (XTextRange)
                 UnoRuntime.queryInterface (XTextRange.class, oObj) ;

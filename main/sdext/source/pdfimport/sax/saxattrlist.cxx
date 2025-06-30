@@ -97,4 +97,3 @@ com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL Sa
 }
 
 }
-

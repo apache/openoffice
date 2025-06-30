@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -36,7 +36,7 @@ option explicit
 Sub RunTest()
 
 '*************************************************************************
-' SERVICE: 
+' SERVICE:
 ' com.sun.star.text.TextGraphicObject
 '*************************************************************************
 On Error Goto ErrHndl
@@ -55,7 +55,7 @@ On Error Goto ErrHndl
     Dim aPParr1(1) As Variant
     Dim aPol1(3) As new com.sun.star.awt.Point
     Dim gArr As Variant
-    
+
     bOK = true
     aPol1(0).x = 0   : aPol1(0).y = 0
     aPol1(1).x = 101 : aPol1(1).y = 0
@@ -69,10 +69,10 @@ On Error Goto ErrHndl
     aPParr1(0) = aPol1() : aPParr1(1) = aPol2()
     oObj.setPropertyValue("ContourPolyPolygon", aPParr1())
     gArr = oObj.getPropertyValue("ContourPolyPolygon")
-    
+
     if isArray(gArr) AND ubound(gArr) &gt;= 1 then
         Dim aP1 As Variant, aP2 As Variant
-        
+
         aP1 = gArr(0)
         aP2 = gArr(1)
         bOK = bOK AND comparePointArrays(aPol1(), aP1, 0, 0, 4)
@@ -85,9 +85,9 @@ On Error Goto ErrHndl
         Out.Log("Returned value is invalid")
         Out.Log = false
     endif
-    
+
     Test.MethodTested("ContourPolyPolygon", bOK)
-        
+
 '    PropertyTester.TestProperty("ContourPolyPolygon",testArr())
 
     Dim aCropArr(1) As Variant
@@ -153,9 +153,9 @@ End Sub
 
 Function comparePointArrays(arr1 As Variant, arr2 As Variant, fromIdx1 As Integer, fromIdx2 As Integer, count As Integer) As Boolean
 On Error Goto ErrHndl
-    Dim bOK As Boolean   
-    Dim i As Integer 
-    
+    Dim bOK As Boolean
+    Dim i As Integer
+
     if NOT isArray(arr1) then
         Out.Log("First parameter is not Array.")
         comparePointArrays() = false
@@ -187,13 +187,13 @@ On Error Goto ErrHndl
             Out.Log("Points #" + i + " are different : (" + _
                 arr1(fromIdx1 + i).x + "," + arr1(fromIdx1 + i).y + "), (" + _
                 arr2(fromIdx2 + i).x + "," + arr2(fromIdx2 + i).y + ")."
-                
+
             bOK = false
         end if
     next i
 
     comparePointArrays() = bOK
-    
+
     exit Function
 ErrHndl:
     Test.Exception()

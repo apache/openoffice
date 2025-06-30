@@ -36,7 +36,7 @@
 #include <svtools/htmltokn.h>
 #include <svtools/htmlkywd.hxx>
 
-/*  */
+/* */
 
 // Tabellen zum Umwandeln von Options-Werten in Strings
 
@@ -166,4 +166,3 @@ void HTMLParser::RemoveSGMLComment( String &rString, sal_Bool bFull )
 		}
 	}
 }
-

@@ -373,7 +373,3 @@ Sequence< OUString > SAL_CALL DragSource::getSupportedServiceNames() throw (Runt
 {
   return dragSource_getSupportedServiceNames();
 }
-
-
-
-

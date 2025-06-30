@@ -423,4 +423,3 @@ void DataSupplier::validate()
 	throw( ResultSetException )
 {
 }
-

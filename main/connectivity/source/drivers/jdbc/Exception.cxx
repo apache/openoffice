@@ -41,4 +41,3 @@ jclass java_lang_Exception::getMyClass() const
         theClass = findMyClass("java/lang/Exception");
 	return theClass;
 }
-

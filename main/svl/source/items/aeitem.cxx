@@ -305,6 +305,3 @@ void SfxAllEnumItem::RemoveAllValues()
 	if ( pValues )
 		pValues->DeleteAndDestroy( 0, pValues->Count() );
 }
-
-
-

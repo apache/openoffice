@@ -226,7 +226,7 @@ void test_SimpleRegistry(
 		xSubKey->setLongValue(123456789);
 		
 		xSubKey = xKey->createKey(OUString( RTL_CONSTASCII_USTRINGPARAM("SecondSubKey") ));
-		xSubKey->setAsciiValue(OUString( RTL_CONSTASCII_USTRINGPARAM("ich bin ein acsii value") ));
+		xSubKey->setAsciiValue(OUString( RTL_CONSTASCII_USTRINGPARAM("ich bin ein ascii value") ));
 		
 		xSubKey = xKey->createKey(OUString( RTL_CONSTASCII_USTRINGPARAM("ThirdSubKey") ));
 		xSubKey->setStringValue(OUString( RTL_CONSTASCII_USTRINGPARAM("ich bin ein unicode value") ));
@@ -251,7 +251,7 @@ void test_SimpleRegistry(
 			} else
 			if (name == OUString( RTL_CONSTASCII_USTRINGPARAM("/FirstKey/SecondSubKey") ))
 			{
-				TEST_ENSHURE( xSubKey->getAsciiValue() == OUString( RTL_CONSTASCII_USTRINGPARAM("ich bin ein acsii value") ), 
+				TEST_ENSHURE( xSubKey->getAsciiValue() == OUString( RTL_CONSTASCII_USTRINGPARAM("ich bin ein ascii value") ),
 							"test_SimpleRegistry error 11" );
 			} else
 			if (name == OUString( RTL_CONSTASCII_USTRINGPARAM("/FirstKey/ThirdSubKey") ))
@@ -688,5 +688,3 @@ SAL_IMPLEMENT_MAIN()
     xSimReg->destroy();
 	return(0);
 }
-
-

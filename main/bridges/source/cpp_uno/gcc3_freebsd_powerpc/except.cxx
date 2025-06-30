@@ -280,4 +280,3 @@ void fillUnoException( __cxa_exception * header, uno_Any * pExc, uno_Mapping * p
 }
 
 }
-

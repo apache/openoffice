@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <precomp.h>
 #include "cx_c_std.hxx"
-
 
 // NOT FULLY DECLARED SERVICES
 #include "all_toks.hxx"
@@ -32,14 +31,10 @@
 #include <x_parse.hxx>
 #include "c_dealer.hxx"
 
-
 namespace cpp {
-
 
 const intt C_nCppInitialNrOfStati = 600;
 const intt C_nStatusSize = 128;
-
-
 
 const uintt nF_fin_Error = 1;
 const uintt nF_fin_CreateWithoutText = 2;
@@ -112,7 +107,7 @@ DYN TextToken * TCF_Eof(const char *) { return new Tok_Eof; }
 
 Context_CppStd::Context_CppStd( DYN autodoc::TkpDocuContext & let_drContext_Docu )
 	:   Cx_Base(0),
-        aStateMachine(C_nStatusSize,C_nCppInitialNrOfStati),
+		aStateMachine(C_nStatusSize,C_nCppInitialNrOfStati),
 		pDocuContext(&let_drContext_Docu),
 		pContext_Comment(0),
 		pContext_Preprocessor(0),
@@ -123,7 +118,7 @@ Context_CppStd::Context_CppStd( DYN autodoc::TkpDocuContext & let_drContext_Docu
 {
 	pDocuContext->SetParentContext(*this,"*/");
 
-    pContext_Comment = new Context_Comment(*this);
+	pContext_Comment = new Context_Comment(*this);
 	pContext_Preprocessor = new Context_Preprocessor(*this);
 	pContext_ConstString = new Context_ConstString(*this);
 	pContext_ConstChar = new Context_ConstChar(*this);
@@ -156,21 +151,21 @@ Context_CppStd::ReadCharChain( CharacterSource & io_rText )
 void
 Context_CppStd::AssignDealer( Distributor & o_rDealer )
 {
-    Cx_Base::AssignDealer(o_rDealer);
+	Cx_Base::AssignDealer(o_rDealer);
 
-    pDocuContext->AssignDealer(o_rDealer);
-    pContext_Comment->AssignDealer(o_rDealer);
-    pContext_Preprocessor->AssignDealer(o_rDealer);
-    pContext_ConstString->AssignDealer(o_rDealer);
-    pContext_ConstChar->AssignDealer(o_rDealer);
-    pContext_ConstNumeric->AssignDealer(o_rDealer);
-    pContext_UnblockMacro->AssignDealer(o_rDealer);
+	pDocuContext->AssignDealer(o_rDealer);
+	pContext_Comment->AssignDealer(o_rDealer);
+	pContext_Preprocessor->AssignDealer(o_rDealer);
+	pContext_ConstString->AssignDealer(o_rDealer);
+	pContext_ConstChar->AssignDealer(o_rDealer);
+	pContext_ConstNumeric->AssignDealer(o_rDealer);
+	pContext_UnblockMacro->AssignDealer(o_rDealer);
 }
 
 void
 Context_CppStd::PerformStatusFunction( uintt					i_nStatusSignal,
-									   F_CRTOK 	                i_fTokenCreateFunction,
-									   CharacterSource &	    io_rText )
+									   F_CRTOK					i_fTokenCreateFunction,
+									   CharacterSource &		io_rText )
 {
 	switch (i_nStatusSignal)
 	{
@@ -215,17 +210,17 @@ Context_CppStd::PerformStatusFunction( uintt					i_nStatusSignal,
 		case nF_goto_Const:
 			SetNewToken(0);
 			break;
-        case nF_goto_UnblockMacro:
+		case nF_goto_UnblockMacro:
 			SetNewToken(0);
 			break;
 
 		case nF_fin_Error:
 		default:
-        {
-            char cCC = io_rText.CurChar();
-            String  sCurChar( &cCC, 1 );
+		{
+			char cCC = io_rText.CurChar();
+			String  sCurChar( &cCC, 1 );
 			throw X_Parser( X_Parser::x_InvalidChar, sCurChar, String::Null_(), 0 );
-        }
+		}
 	}	// end switch (i_nStatusSignal)
 }
 
@@ -234,8 +229,8 @@ Context_CppStd::SetupStateMachine()
 {
 	// Besondere Array-Stati (kein Tokenabschluss oder Kontextwechsel):
 //	const INT16	top = 0;		// Top-Status
-	const INT16	wht = 1;		// Whitespace-überlese-Status
-	const INT16	bez = 2;        // Bezeichner-lese-Status
+	const INT16	wht = 1;		// Whitespace-Ãœberlese-Status
+	const INT16	bez = 2;		// Bezeichner-lese-Status
 
 	// Tokenfinish-Stati:
 	const INT16	finError = 3;
@@ -393,7 +388,7 @@ Context_CppStd::SetupStateMachine()
 	aStateMachine.AddStatus(dpBst_gotoConstString);
 	aStateMachine.AddStatus(dpBst_gotoConstChar);
 	aStateMachine.AddStatus(dpBst_gotoConstNumeric);
-    aStateMachine.AddStatus(dpBst_gotoUnblockMacro);
+	aStateMachine.AddStatus(dpBst_gotoUnblockMacro);
 
 	// Identifier
 
@@ -481,8 +476,8 @@ Context_CppStd::SetupStateMachine()
 	aStateMachine.AddToken("long",	TCF_BuiltInType,	A_nBezDefStatus,	finBiType);
 	aStateMachine.AddToken("float",	TCF_BuiltInType,	A_nBezDefStatus,	finBiType);
 	aStateMachine.AddToken("double",TCF_BuiltInType,	A_nBezDefStatus,	finBiType);
-	aStateMachine.AddToken("wchar_t",TCF_BuiltInType,	A_nBezDefStatus,    finBiType);
-	aStateMachine.AddToken("size_t",TCF_BuiltInType,	A_nBezDefStatus,    finBiType);
+	aStateMachine.AddToken("wchar_t",TCF_BuiltInType,	A_nBezDefStatus,	finBiType);
+	aStateMachine.AddToken("size_t",TCF_BuiltInType,	A_nBezDefStatus,	finBiType);
 
 	// Type modifiers
 	aStateMachine.AddToken("signed",	TCF_TypeModifier,	A_nBezDefStatus,	finTypeModifier);
@@ -494,13 +489,13 @@ Context_CppStd::SetupStateMachine()
 	aStateMachine.AddToken("__cdecl",	0,	A_nBezDefStatus,	finIgnore);
 	aStateMachine.AddToken("__stdcall", 0,	A_nBezDefStatus,	finIgnore);
 	aStateMachine.AddToken("__fastcall",0,	A_nBezDefStatus,	finIgnore);
-	aStateMachine.AddToken("/**/",	    0,	A_nOperatorDefStatus,finIgnore);
+	aStateMachine.AddToken("/**/",		0,	A_nOperatorDefStatus,finIgnore);
 
 	// Context changers
 	aStateMachine.AddToken("#",		0,	A_nOperatorDefStatus,   gotoPreprocessor);
 	aStateMachine.AddToken("#undef",0,	A_nOperatorDefStatus,   gotoPreprocessor);
 	aStateMachine.AddToken("#unblock-",
-                                    0,	A_nOperatorDefStatus,   gotoUnblockMacro);
+									0,	A_nOperatorDefStatus,   gotoUnblockMacro);
 	aStateMachine.AddToken("/*",	0,	A_nOperatorDefStatus,	gotoComment);
 	aStateMachine.AddToken("//",	0,	A_nOperatorDefStatus,	gotoComment);
 	aStateMachine.AddToken("/**",   0,	A_nOperatorDefStatus,	gotoDocu);
@@ -510,7 +505,7 @@ Context_CppStd::SetupStateMachine()
 		//	regular
 	aStateMachine.AddToken("\r\n",	0,	A_nOperatorDefStatus,	finEOL);
 	aStateMachine.AddToken("\n",	0,	A_nOperatorDefStatus,	finEOL);
-	aStateMachine.AddToken("\r",    0,	A_nOperatorDefStatus,	finEOL);
+	aStateMachine.AddToken("\r",	0,	A_nOperatorDefStatus,	finEOL);
 		//	To ignore in some cases(may be only at preprocessor?), but
 		//		linecount has to be incremented.
 	aStateMachine.AddToken("\\\r\n",0,	A_nOperatorDefStatus,	finEOL);
@@ -518,6 +513,6 @@ Context_CppStd::SetupStateMachine()
 	aStateMachine.AddToken("\\\r",	0,	A_nOperatorDefStatus,	finEOL);
 };
 
+} // namespace cpp
 
-}   // namespace cpp
-
+/* vim: set noet sw=4 ts=4: */

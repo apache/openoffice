@@ -471,4 +471,3 @@ SwVbaFields::getServiceNames()
     }
     return aServiceNames;
 }
-

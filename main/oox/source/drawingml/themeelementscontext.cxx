@@ -234,4 +234,3 @@ Reference< XFastContextHandler > ThemeElementsContext::createFastChildContext( s
 
 } // namespace drawingml
 } // namespace oox
-

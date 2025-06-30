@@ -165,7 +165,7 @@ public class ConverterServlet extends HttpServlet {
                     out.println( "</head>" );
                     out.println( "<body><br><p>");              
                     out.println( "<b>Sorry, the conversion failed!</b></p>");
-                    out.println( "<p><b>Error Mesage:</b><br>" + exc.getMessage() + "<br>");
+                    out.println( "<p><b>Error Message:</b><br>" + exc.getMessage() + "<br>");
                     exc.printStackTrace(out);
                     out.println( "</p></body><html>");
                 }
@@ -249,7 +249,7 @@ public class ConverterServlet extends HttpServlet {
             
             /* A desktop environment contains tasks with one or more
                frames in which components can be loaded. Desktop is the
-               environment for components which can instanciate within
+               environment for components which can instantiate within
                frames. */
             XComponentLoader xcomponentloader = ( XComponentLoader )
                 UnoRuntime.queryInterface( XComponentLoader.class,

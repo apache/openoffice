@@ -98,4 +98,3 @@ throw ( ::com::sun::star::container::NoSuchElementException, ::com::sun::star::l
 }
 
 }
-

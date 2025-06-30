@@ -400,5 +400,3 @@ GenericInformation* GenericInformationList::SetOwner( GenericInformation *pNewOw
 	pOwner = pNewOwner;
 	return pOldOwner;
 }
-
-

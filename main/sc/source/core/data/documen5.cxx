@@ -807,6 +807,3 @@ void ScDocument::AddOLEObjectToCollection(const String& rName)
 		pOtherObjects = new ScStrCollection;
 	pOtherObjects->Insert( new StrData( rName ) );
 }
-
-
-

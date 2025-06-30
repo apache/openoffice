@@ -87,7 +87,7 @@ public:
 	sal_Bool HasNoBreakTag() const { return bNoBreakTag; }
 };
 
-/*  */
+/* */
 
 class SwHTMLTableLayoutCell
 {
@@ -126,7 +126,7 @@ public:
 	sal_Bool HasNoWrapOption() const { return bNoWrapOption; }
 };
 
-/*  */
+/* */
 
 class SwHTMLTableLayoutColumn
 {
@@ -180,7 +180,7 @@ public:
 	sal_Bool HasLeftBorder() const { return bLeftBorder; }
 };
 
-/*  */
+/* */
 
 class SwHTMLTableLayout
 {
@@ -373,7 +373,7 @@ public:
 	sal_Bool MayBeInFlyFrame() const { return bMayBeInFlyFrame; }
 };
 
-/*  */
+/* */
 
 inline void SwHTMLTableLayoutCell::SetProtected()
 {
@@ -383,7 +383,7 @@ inline void SwHTMLTableLayoutCell::SetProtected()
 	pContents = 0;
 }
 
-/*  */
+/* */
 
 inline void SwHTMLTableLayoutColumn::MergeMinMaxNoAlign( sal_uLong nCMin,
     sal_uLong nCMax,    sal_uLong nAbsMin )
@@ -424,7 +424,7 @@ inline void SwHTMLTableLayoutColumn::SetMinMax( sal_uLong nMn, sal_uLong nMx )
 	nMax = nMx;
 }
 
-/*  */
+/* */
 
 inline sal_uInt16 SwHTMLTableLayout::GetInhCellSpace( sal_uInt16 nCol,
 												  sal_uInt16 nColSpan ) const

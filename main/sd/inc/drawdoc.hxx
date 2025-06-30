@@ -471,7 +471,7 @@ public:
     static SdDrawDocument* pDocLockedInsertingLinks;  // static to prevent recursions while resolving links
 
     /** Create and insert a set of two new pages: a standard (draw) page and
-        the associated notes page.  The new pages are inserted direclty
+        the associated notes page.  The new pages are inserted directly
         after the specified page set.
         @param pCurrentPage
             This page is used to retrieve the layout for the page to
@@ -584,7 +584,7 @@ public:
 
 	sd::UndoManager* GetUndoManager() const;
 
-	/* converts the given western font height to a corresponding ctl font height, deppending on the system language */
+	/* converts the given western font height to a corresponding ctl font height, depending on the system language */
 	static sal_uInt32 convertFontHeightToCTL( sal_uInt32 nWesternFontHeight );
 
 	/** Get the style sheet pool if it was a SdStyleSheetPool.

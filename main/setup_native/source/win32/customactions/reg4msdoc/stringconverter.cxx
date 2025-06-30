@@ -62,5 +62,3 @@ std::wstring AnsiToUnicodeString(const std::string& AnsiString)
 
 	return std::wstring(buff);
 }
-
-

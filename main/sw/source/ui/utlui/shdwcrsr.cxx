@@ -125,7 +125,3 @@ Rectangle SwShadowCursor::GetRect() const
 
 	return pWin->PixelToLogic( Rectangle( aPt, aSz ) );
 }
-
-
-
-

@@ -277,4 +277,3 @@ void SpellCache::AddWord( const OUString& rWord, LanguageType nLang )
 ///////////////////////////////////////////////////////////////////////////
 
 }	// namespace linguistic
-

@@ -377,15 +377,15 @@ public:
 	static void encodeBase64(rtl::OUStringBuffer& aStrBuffer, const com::sun::star::uno::Sequence<sal_Int8>& aPass);
 
 	// Decode a base 64 encoded string into a sequence of bytes. The first
-	// version can be used for attribute values only, bacause it does not
+	// version can be used for attribute values only, because it does not
 	// return any chars left from conversion.
-	// For text submitted throgh the SAX characters call, the later method
+	// For text submitted through the SAX characters call, the later method
 	// must be used!
 	static void decodeBase64(com::sun::star::uno::Sequence<sal_Int8>& aPass, const rtl::OUString& sBuffer);
 
 	static sal_Int32 decodeBase64SomeChars(com::sun::star::uno::Sequence<sal_Int8>& aPass, const rtl::OUString& sBuffer);
 
-	/** convert num-forat and num-letter-sync values to NumberingType */
+	/** convert num-format and num-letter-sync values to NumberingType */
 	sal_Bool convertNumFormat( sal_Int16& rType,
 						 	   const ::rtl::OUString& rNumFormat,
 							   const ::rtl::OUString& rNumLetterSync,

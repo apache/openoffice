@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /* static char datefunc_Id[]="@(#) StarCalc Datefunc AddIn (c) 1998-2000 Sun Microsystems, Inc."; */
@@ -212,7 +212,7 @@ static void DaysToDate( long nDays,
  * Two modes of operation are provided.
  * The first is just a simple division by 7 calculation.
  *
- * The second calculates the diffence by week of year.
+ * The second calculates the difference by week of year.
  *
  * The International Standard IS-8601 has decreed that Monday
  * shall be the first day of the week.
@@ -513,7 +513,7 @@ void CALLTYPE GetFunctionCount( USHORT *nCount )
  * @param *nNo Input: Function number between 0 and nCount - 1
  * @param *pFuncName Output: Functionname which should be called in the AddIn-DLL
  * @param *nParamCount Output: Number of Parameter. Must be greater than 0, because there's always a return-Value. Maximum is 16.
- * @param *peType Output: Pointer to arrray with exactly 16 variables of typ Paramtype. nParamCount Entries are set to the type of the corresponding Parameters.
+ * @param *peType Output: Pointer to array with exactly 16 variables of typ Paramtype. nParamCount Entries are set to the type of the corresponding Parameters.
  * @param *pInternalName Output: Functionname as seen by the Spreadsheet user
  *
  * @see #GetFunctionCount, #GetParameterDescription

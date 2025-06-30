@@ -1,5 +1,5 @@
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,33 +7,33 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 ### i85263 ###
 svx.SvxShape::com::sun::star::drawing::TextProperties::TextWritingMode
 svx.SvxShapeConnector::com::sun::star::drawing::TextProperties::TextWritingMode
-# -> disbaled in svx.sce
+# -> disabled in svx.sce
 
 ### i46736 ###
 svx.AccessibleImageBullet
-# -> disbaled in svx.sce
+# -> disabled in svx.sce
 
-### i85501 ### 
+### i85501 ###
 svx.SvxGraphCtrlAccessibleContext
-# -> disbaled in svx.sce
+# -> disabled in svx.sce
 
 ### i85539 ###
 svx.AccessiblePresentationShape
-# -> disbaled in svx.sce
+# -> disabled in svx.sce
 
 ### i85476 ###
 svx.SvxUnoText::com::sun::star::text::XTextRangeMover
@@ -94,11 +94,11 @@ svx.SvxUnoTextRange::com::sun::star::beans::XPropertySet
 
 ### i90294 ###
 svx.GraphicExporter
-# -> disbaled in svx.sce
+# -> disabled in svx.sce
 
 ### i98339 ###
 svx.AccessibleControlShape
-# -> disbaled in svx.sce
+# -> disabled in svx.sce
 
 ### i111114 ###
 svx.AccessiblePresentationOLEShape::com::sun::star::accessibility::XAccessibleComponent

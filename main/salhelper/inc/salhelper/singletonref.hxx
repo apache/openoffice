@@ -42,7 +42,7 @@ namespace salhelper{
 
 /** @short  template for implementing singleton classes.
 
-    @descr  Such classes can be instanciated everytimes they
+    @descr  Such classes can be instantiated everytimes they
             are needed. But the internal wrapped object will
             be created one times only. Of course its used
             resources are referenced one times only too.

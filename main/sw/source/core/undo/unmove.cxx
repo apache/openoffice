@@ -348,4 +348,3 @@ void SwUndoMove::DelFtn( const SwPaM& rRange )
 			delete pHistory, pHistory = 0;
 	}
 }
-

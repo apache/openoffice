@@ -240,10 +240,9 @@ SvXMLImportContext *ScXMLNamedExpressionContext::CreateChildContext( sal_uInt16 
 	switch( rTokenMap.Get( nPrefix, rLName ) )
 	{
 	}*/
-	return new SvXMLImportContext( GetImport(), nPrefix, rLName );;
+	return new SvXMLImportContext( GetImport(), nPrefix, rLName );
 }
 
 void ScXMLNamedExpressionContext::EndElement()
 {
 }
-

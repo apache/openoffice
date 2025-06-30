@@ -282,7 +282,7 @@ void ContentProvider::notifyDocumentClosed( const rtl::OUString & rDocId )
     if ( xRoot.is() )
     {
         // No document content found for rDocId but root content
-        // instanciated. Root content must announce document removal
+        // instantiated. Root content must announce document removal
         // to content event listeners.
         xRoot->notifyChildRemoved( rDocId );
     }
@@ -300,7 +300,7 @@ void ContentProvider::notifyDocumentOpened( const rtl::OUString & rDocId )
     ::ucbhelper::ContentRefList::const_iterator it  = aAllContents.begin();
     ::ucbhelper::ContentRefList::const_iterator end = aAllContents.end();
 
-    // Find root content. If instanciated let it propagate document insertion.
+    // Find root content. If instantiated let it propagate document insertion.
 
     while ( it != end )
     {
@@ -591,7 +591,7 @@ ContentProvider::queryStorageTitle( const rtl::OUString & rUri ) const
     else if ( aUri.isDocument() )
     {
         // for documents, title shall not be derived from URL. It shall
-        // be somethimg more 'speaking' than just the document UID.
+        // be something more 'speaking' than just the document UID.
         if ( m_xDocsMgr.is() )
             aTitle = m_xDocsMgr->queryStorageTitle( aUri.getDocumentId() );
     }
@@ -622,4 +622,3 @@ ContentProvider::queryDocumentModel( const rtl::OUString & rUri ) const
                 "ContentProvider::queryDocumentModel - no model!" );
     return xModel;
 }
-

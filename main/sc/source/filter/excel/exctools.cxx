@@ -426,5 +426,3 @@ void ExcScenarioList::Apply( const XclImpRoot& rRoot )
 		p = _Prev();
 	}
 }
-
-

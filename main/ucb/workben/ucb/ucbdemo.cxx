@@ -2590,4 +2590,3 @@ void MyApp::Main()
 	if ( xComponent.is() )
 		xComponent->dispose();
 }
-

@@ -388,7 +388,7 @@ LineBreakResults SAL_CALL BreakIterator_Unicode::getLineBreak(
                     lbr.breakType = BreakType::HYPHENATION;
                 } else {
                     lbr.breakIndex = line.aBreakIterator->preceding(nStartPos);
-                    lbr.breakType = BreakType::WORDBOUNDARY;;
+                    lbr.breakType = BreakType::WORDBOUNDARY;
                 }
             } else { //word boundary break
                 lbr.breakIndex = line.aBreakIterator->preceding(nStartPos);

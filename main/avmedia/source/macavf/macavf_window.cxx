@@ -35,8 +35,8 @@ namespace avmedia { namespace macavf {
 // - Window -
 // ---------------
 
-Window::Window( const uno::Reference< lang::XMultiServiceFactory >& i_rxMgr, Player& i_rPlayer, NSView* i_pParentView )
-:   mxMgr( i_rxMgr )
+Window::Window( const uno::Reference< uno::XComponentContext >& i_rxContext, Player& i_rPlayer, NSView* i_pParentView )
+:   mxContext( i_rxContext )
 ,   maListeners( maMutex )
 ,   meZoomLevel( media::ZoomLevel_NOT_AVAILABLE )
 ,   mrPlayer( i_rPlayer )
@@ -338,4 +338,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL Window::getSupportedServiceNames(  )
 
 } // namespace macavf
 } // namespace avmedia
-

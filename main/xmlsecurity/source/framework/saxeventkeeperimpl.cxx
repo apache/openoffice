@@ -884,7 +884,7 @@ void SAXEventKeeperImpl::markElementMarkBuffer(sal_Int32 nId)
  *
  *   FUNCTION
  *	puts the ElementMark with the particular Id into the releasing list,
- *	checks whether the releasing process is runing, if not then launch 
+ *	checks whether the releasing process is running, if not then launch
  *	this process.
  *
  *   INPUTS
@@ -1456,4 +1456,3 @@ cssu::Sequence< rtl::OUString > SAL_CALL SAXEventKeeperImpl::getSupportedService
 {
 	return SAXEventKeeperImpl_getSupportedServiceNames();
 }
-

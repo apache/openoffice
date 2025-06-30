@@ -184,5 +184,3 @@ SfxPoolItem* __EXPORT SvxPostItTextItem::Clone( SfxItemPool * ) const
 {
 	return new SvxPostItTextItem( *this );
 }
-
-

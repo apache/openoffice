@@ -38,7 +38,7 @@ class SfxItemPool;
 class SvxBoxItem;
 class FontList;
 
-/*  */
+/* */
 
 enum SvxCSS1Position
 {
@@ -88,7 +88,7 @@ enum SvxCSS1PageBreak
 #define CSS1_SCRIPT_CTL 	0x04
 #define CSS1_SCRIPT_ALL		0x07
 
-/*  */
+/* */
 
 struct CSS1PropertyEnum
 {
@@ -97,7 +97,7 @@ struct CSS1PropertyEnum
 };
 
 
-/*  */
+/* */
 
 class SvxBorderLine;
 

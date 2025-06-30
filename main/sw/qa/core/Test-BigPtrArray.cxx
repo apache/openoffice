@@ -145,7 +145,7 @@ TEST_F(BigPtrArrayUnittest, test_ctor)
 
     BigPtrArray bparr;
 
-    ASSERT_TRUE(bparr.Count() == 0) << "BigPtrArray ctor failed";;
+    ASSERT_TRUE(bparr.Count() == 0) << "BigPtrArray ctor failed";
 }
 
 TEST_F(BigPtrArrayUnittest, test_insert_entries_at_front)

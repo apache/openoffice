@@ -579,7 +579,7 @@ sal_Bool SwDoubleLinePortion::ChgSpaceAdd( SwLineLayout* pCurr,
 
 void SwDoubleLinePortion::ResetSpaceAdd( SwLineLayout* pCurr )
 {
-	pCurr->RemoveFirstLLSpaceAdd();;
+	pCurr->RemoveFirstLLSpaceAdd();
 	if( !pCurr->GetLLSpaceAddCount() )
 		pCurr->FinishSpaceAdd();
 }

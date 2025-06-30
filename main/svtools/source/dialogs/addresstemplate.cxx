@@ -1305,7 +1305,7 @@ void AssignmentPersistentData::Commit()
 							{	// we can still scroll up
 								// -> scroll up
 								implScrollFields(m_pImpl->nFieldScrollPos - 1, sal_False, sal_True);
-								// give the right control in the "prebious" line the focus
+								// give the right control in the "previous" line the focus
 								m_pImpl->pFields[0 - 1 + 2]->GrabFocus();
 								// return saying "have handled this"
 								return 1;
@@ -1321,4 +1321,3 @@ void AssignmentPersistentData::Commit()
 // .......................................................................
 }	// namespace svt
 // .......................................................................
-

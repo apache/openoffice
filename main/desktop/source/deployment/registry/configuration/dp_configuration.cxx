@@ -508,7 +508,7 @@ bool BackendImpl::removeFromConfigmgrIni(
         //in case the xcu contained %origin% then the configmr.ini contains the
         //url to the file in the user installation (e.g. $BUNDLED_EXTENSIONS_USER)
         //However, m_url (getURL()) contains the URL for the file in the actual
-        //extension installatation.
+        //extension installation.
         ::boost::optional<ConfigurationBackendDb::Data> data = readDataFromDb(url_);
         if (data)
             i = std::find(rSet.begin(), rSet.end(), data->iniEntry);
@@ -747,7 +747,7 @@ void BackendImpl::PackageImpl::processPackage_(
             for (t_string2string_map::iterator i(entries.begin());
                  i != entries.end(); ++i)
             {
-                //If the xcu file was installed before the configmgr was chaned
+                //If the xcu file was installed before the configmgr was changed
                 //to use the configmgr.ini, one needed to rebuild to whole directory
                 //structur containing the xcu, xcs files from all extensions. Now,
                 //we just add all other xcu/xcs files to the configmgr.ini instead of
@@ -814,4 +814,3 @@ extern sdecl::ServiceDecl const serviceDecl(
 } // namespace configuration
 } // namespace backend
 } // namespace dp_registry
-

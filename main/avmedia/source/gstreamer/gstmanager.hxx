@@ -41,7 +41,7 @@ namespace gst
 class Manager : public ::cppu::WeakImplHelper2< ::com::sun::star::media::XManager,
                                                 ::com::sun::star::lang::XServiceInfo >
 {
-public: Manager( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rxMgr );
+public: Manager( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
     ~Manager();
 
     // XManager
@@ -59,10 +59,13 @@ public: Manager( const ::com::sun::star::uno::Reference< ::com::sun::star::lang:
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
      throw( ::com::sun::star::uno::RuntimeException );
 
+    // Static helper functions
+    static ::rtl::OUString SAL_CALL getImplementationName_Static();
+    static ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_Static();
 
 private:
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxMgr;
+    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;
 };
 } // namespace gst
 } // namespace avmedia

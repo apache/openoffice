@@ -127,7 +127,7 @@ sal_Bool SAL_CALL SkeletonDriver::acceptsURL( const ::rtl::OUString& url )
 // --------------------------------------------------------------------------------
 Sequence< DriverPropertyInfo > SAL_CALL SkeletonDriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& info ) throw(SQLException, RuntimeException)
 {
-	// if you have somthing special to say, return it here :-)
+	// if you have something special to say, return it here :-)
 	return Sequence< DriverPropertyInfo >();
 }
 // --------------------------------------------------------------------------------
@@ -196,4 +196,3 @@ void checkDisposed(sal_Bool _bThrow) throw ( DisposedException )
 	}
 }
 //.........................................................................
-

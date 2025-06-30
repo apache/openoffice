@@ -379,7 +379,7 @@ void SwNode2LayImpl::RestoreUpperFrms( SwNodes& rNds, sal_uLong nStt, sal_uLong 
 				else
 					pNxt = pUp->Lower();
 				pNew = ((SwTableNode*)pNd)->MakeFrm( pUp );
-				ASSERT( pNew->IsTabFrm(), "Table exspected" );
+				ASSERT( pNew->IsTabFrm(), "Table expected" );
 				pNew->Paste( pUp, pNxt );
 				((SwTabFrm*)pNew)->RegistFlys();
 				(*pUpperFrms)[x-2] = pNew;
@@ -464,5 +464,3 @@ SwFrm* SwNode2Layout::GetFrm( const Point* pDocPos,
 {
 	return pImpl->GetFrm( pDocPos, pPos, bCalcFrm );
 }
-
-

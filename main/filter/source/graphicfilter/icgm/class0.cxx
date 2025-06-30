@@ -130,5 +130,3 @@ void CGM::ImplDoClass0()
 		default: ComOut( CGM_UNKNOWN_COMMAND, "" ) break;
 	}
 };
-
-

@@ -227,7 +227,7 @@ OUString SvXMLNamespaceMap::GetQNameByKey( sal_uInt16 nKey,
                 sQName.append ( sal_Unicode(':') );
                 sQName.append ( rLocalName );
             }
-			return sQName.makeStringAndClear();;
+			return sQName.makeStringAndClear();
 		}
 		case XML_NAMESPACE_XML:
 		{
@@ -236,7 +236,7 @@ OUString SvXMLNamespaceMap::GetQNameByKey( sal_uInt16 nKey,
 			sQName.append ( GetXMLToken(XML_XML) );
 			sQName.append ( sal_Unicode(':') );
 			sQName.append ( rLocalName );
-			return sQName.makeStringAndClear();;
+			return sQName.makeStringAndClear();
 		}
 		default:
 		{

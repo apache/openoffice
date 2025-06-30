@@ -57,4 +57,3 @@ OSignalHandler::TSignalAction OSignalHandler::raise(sal_Int32 Signal, void *pDat
 {
 	return (TSignalAction)osl_raiseSignal(Signal, pData);
 }
-

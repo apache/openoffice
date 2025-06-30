@@ -298,6 +298,3 @@ const String& 	SwAuthorityFieldType::GetAuthTypeName(ToxAuthorityType eType)
 	}
     return *pAuthFieldTypeList->GetObject( static_cast< sal_uInt16 >(eType) );
 }
-
-
-

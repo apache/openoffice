@@ -4348,7 +4348,7 @@
 				</xsl:choose>
 			</xsl:if>
 			<!-- fix means the horizontal alignment is dependent on ss:Horizontal,
-				 but set on paragaraph properties not cell paragraphs -->
+				 but set on paragraph properties not cell paragraphs -->
 			<xsl:if test="ss:Alignment/@ss:Horizontal">
 				<xsl:attribute name="style:text-align-source">fix</xsl:attribute>
 			</xsl:if>
@@ -5079,7 +5079,7 @@
 					</xsl:call-template>
 					<xsl:text>cm</xsl:text>
 				</xsl:when>
-				<!-- Note: This is the default row hight value in spec it is written 255 point, this seems wrong -->
+				<!-- Note: This is the default row height value in spec it is written 255 point, this seems wrong -->
 				<!-- <xsl:otherwise>0.503cm</xsl:otherwise> -->
 				<xsl:otherwise>0.45cm</xsl:otherwise>
 			</xsl:choose>
@@ -6364,7 +6364,7 @@
 						<xsl:when test="../@ss:StyleID">
 							<xsl:value-of select="../@ss:StyleID"/>
 						</xsl:when>
-						<!-- if no correspondent column style exisit.. -->
+						<!-- if no corresponding column style exists... -->
 						<!-- inherit style from parent table style -->
 						<xsl:when test="../../@ss:StyleID">
 							<!-- function to give in col-pos and get back column style  -->
@@ -6787,7 +6787,7 @@
 							<xsl:value-of select="../@ss:StyleID"/>
 						</xsl:attribute>
 					</xsl:when>
-					<!-- if no correspondent column style exisit.. -->
+					<!-- if no corresponding column style exists... -->
 					<!-- inherit style from parent table style -->
 					<xsl:when test="../../@ss:StyleID">
 						<!-- function to give in col-pos and get back column style  -->
@@ -7057,7 +7057,7 @@
 		</xsl:if>
 	</xsl:template>
 	<xsl:template name="validation-row-column-string">
-		<!-- returns a string with structer,including row\column position by extraction from x:DataValidation -->
+		<!-- returns a string with structure, including row\column position by extraction from x:DataValidation -->
 		<xsl:param name="last"/>
 		<xsl:param name="total"/>
 		<xsl:param name="index"/>
@@ -7080,7 +7080,7 @@
 		</xsl:if>
 	</xsl:template>
 	<xsl:template name="condition-row-column-string">
-		<!-- returns a string with structer,including row\column position by extraction from x:ConditionalFormatting -->
+		<!-- returns a string with structure, including row\column position by extraction from x:ConditionalFormatting -->
 		<xsl:param name="last"/>
 		<xsl:param name="total"/>
 		<xsl:param name="index"/>
@@ -7431,7 +7431,7 @@
 					<xsl:with-param name="current-pos" select="$current-pos + 1 + $font-size-length"/>
 				</xsl:call-template>
 			</xsl:when>
-			<!-- dont' consider tangled or adjoined '&X' and '&Y', '&U' & '&E', processing-check is necessary, too complex. :( -->
+			<!-- don't consider tangled or adjoined '&X' and '&Y', '&U' & '&E', processing-check is necessary, too complex. :( -->
 			<xsl:when test="starts-with($current-style-data,'&amp;X')">
 				<xsl:variable name="superscript-count-before">
 					<xsl:call-template name="get-substyle-count-in-data">

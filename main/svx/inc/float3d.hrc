@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -148,32 +148,32 @@
 
 // high contrast
 #define BMP_GEO_H					130
-#define BMP_REPRESENTATION_H		131		
+#define BMP_REPRESENTATION_H		131
 #define BMP_LIGHT_H					132
 #define BMP_TEXTURE_H				133
 #define BMP_MATERIAL_H				134
 #define BMP_UPDATE_H				135
 #define BMP_ASSIGN_H				136
-#define BMP_CHANGE_TO_3D_H			137	
+#define BMP_CHANGE_TO_3D_H			137
 #define BMP_LATHE_OBJ_H				138
-#define BMP_PERSPECTIVE_H			139	
-#define BMP_NORMALS_OBJ_H			142	
-#define BMP_NORMALS_FLAT_H			143	
-#define BMP_NORMALS_SPHERE_H		144		
-#define BMP_NORMALS_INVERT_H		145		
-#define BMP_TWO_SIDED_LIGHTING_H	146			
-#define BMP_DOUBLE_SIDED_H			147	
+#define BMP_PERSPECTIVE_H			139
+#define BMP_NORMALS_OBJ_H			142
+#define BMP_NORMALS_FLAT_H			143
+#define BMP_NORMALS_SPHERE_H		144
+#define BMP_NORMALS_INVERT_H		145
+#define BMP_TWO_SIDED_LIGHTING_H	146
+#define BMP_DOUBLE_SIDED_H			147
 #define BMP_SHADOW_3D_H				148
 #define BMP_3DLIGHT_H				149
-#define BMP_LIGHT_COLOR_H			150	
-#define BMP_AMBIENT_COLOR_H			151	
-#define BMP_TEX_LUMINANCE_H			152	
+#define BMP_LIGHT_COLOR_H			150
+#define BMP_AMBIENT_COLOR_H			151
+#define BMP_TEX_LUMINANCE_H			152
 #define BMP_TEX_COLOR_H				153
-#define BMP_TEX_REPLACE_H			154	
-#define BMP_TEX_MODULATE_H			155	
+#define BMP_TEX_REPLACE_H			154
+#define BMP_TEX_MODULATE_H			155
 #define BMP_TEX_BLEND_H				156
-#define BMP_TEX_OBJECT_H			157	
-#define BMP_TEX_PARALLEL_H			158	
-#define BMP_TEX_CIRCLE_H			159	
-#define BMP_TEX_FILTER_H			160	
+#define BMP_TEX_OBJECT_H			157
+#define BMP_TEX_PARALLEL_H			158
+#define BMP_TEX_CIRCLE_H			159
+#define BMP_TEX_FILTER_H			160
 #define BMP_COLORDLG_H				161

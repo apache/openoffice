@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@
 #import "apple_remote/RemoteControl.h"
 #include "postmac.h"
 
- 
+
 @implementation CocoaThreadEnabler
 -(void)enableCocoaThreads:(id)param
 {
@@ -99,10 +99,10 @@
                     return;
                 }
             }
-          
+
             /*
              * #i98949# - Cmd-M miniaturize window, Cmd-Option-M miniaturize all windows
-             */ 
+             */
             if( [[pEvent charactersIgnoringModifiers] isEqualToString: @"m"] )
             {
                 if ( nModMask == NSCommandKeyMask && ([pFrame->getNSWindow() styleMask] & NSMiniaturizableWindowMask) )
@@ -117,7 +117,7 @@
                     return;
                 }
             }
-            
+
             // #i90083# handle frame switching
             // FIXME: lousy workaround
             if( (nModMask & (NSControlKeyMask|NSAlternateKeyMask)) == 0 )
@@ -135,21 +135,21 @@
                     return;
                 }
             }
- 
+
             // get information whether the event was handled; keyDown returns nothing
             GetSalData()->maKeyEventAnswer[ pEvent ] = false;
             bool bHandled = false;
-            
+
             // dispatch to view directly to avoid the key event being consumed by the menubar
             // popup windows do not get the focus, so they don't get these either
             // simplest would be dispatch this to the key window always if it is without parent
             // however e.g. in document we want the menu shortcut if e.g. the stylist has focus
-            if( pFrame->mpParent && (pFrame->mnStyle & SAL_FRAME_STYLE_FLOAT) == 0 ) 
+            if( pFrame->mpParent && (pFrame->mnStyle & SAL_FRAME_STYLE_FLOAT) == 0 )
             {
                 [[pKeyWin contentView] keyDown: pEvent];
                 bHandled = GetSalData()->maKeyEventAnswer[ pEvent ];
             }
-            
+
             // see whether the main menu consumes this event
             // if not, we want to dispatch it ourselves. Unless we do this "trick"
             // the main menu just beeps for an unknown or disabled key equivalent
@@ -179,7 +179,7 @@
             unsigned int nModMask = ([pEvent modifierFlags] & (NSShiftKeyMask|NSControlKeyMask|NSAlternateKeyMask|NSCommandKeyMask));
             if( nModMask == NSCommandKeyMask )
             {
-                
+
                 if( [[pEvent charactersIgnoringModifiers] isEqualToString: @"v"] )
                 {
                     if( [NSApp sendAction: @selector(paste:) to: nil from: nil] )
@@ -259,7 +259,7 @@
 -(void)cycleFrameBackward: (AquaSalFrame*)pCurFrame
 {
     // do the same as cycleFrameForward only with a reverse iterator
-    
+
     // find current frame in list
     std::list< AquaSalFrame* >& rFrames( GetSalData()->maFrames );
     std::list< AquaSalFrame* >::reverse_iterator it = rFrames.rbegin();
@@ -295,7 +295,7 @@
         }
     }
 }
- 
+
 -(NSMenu*)applicationDockMenu:(NSApplication *)sender
 {
     (void)sender;
@@ -319,10 +319,10 @@
 {
     (void)app;
     rtl::OUStringBuffer aFileList( 256 );
-    
+
     NSEnumerator* it = [files objectEnumerator];
     NSString* pFile = nil;
-    
+
     while( (pFile = [it nextObject]) != nil )
     {
         const rtl::OUString aFile( GetOUString( pFile ) );
@@ -333,7 +333,7 @@
             aFileList.append( aFile );
         }
     }
-    
+
     if( aFileList.getLength() )
     {
         // we have no back channel here, we have to assume success, in which case
@@ -361,10 +361,10 @@
     (void)bShowPrintPanels;
     // currently ignores print settings an bShowPrintPanels
     rtl::OUStringBuffer aFileList( 256 );
-    
+
     NSEnumerator* it = [files objectEnumerator];
     NSString* pFile = nil;
-    
+
     while( (pFile = [it nextObject]) != nil )
     {
         if( aFileList.getLength() > 0 )
@@ -385,7 +385,7 @@
     NSApplicationTerminateReply aReply = NSTerminateNow;
     {
         YIELD_GUARD;
-        
+
         SalData* pSalData = GetSalData();
         if( ! pSalData->maFrames.empty() )
         {
@@ -393,7 +393,7 @@
             [NSApp activateIgnoringOtherApps: YES];
             aReply = pSalData->maFrames.front()->CallCallback( SALEVENT_SHUTDOWN, NULL ) ? NSTerminateCancel : NSTerminateNow;
         }
-        
+
         if( aReply == NSTerminateNow )
         {
             ApplicationEvent aEv( String(), ApplicationAddress(), ByteString( "PRIVATE:DOSHUTDOWN" ), String() );
@@ -403,7 +403,7 @@
             // can occur in Desktop::doShutdown for example
         }
     }
-    
+
     return aReply;
 }
 
@@ -411,7 +411,7 @@
 {
     (void)pNotification;
     YIELD_GUARD;
-    
+
     const SalData* pSalData = GetSalData();
 	if( !pSalData->maFrames.empty() )
 		pSalData->maFrames.front()->CallCallback( SALEVENT_SETTINGSCHANGED, NULL );
@@ -421,7 +421,7 @@
 {
     (void)pNotification;
     YIELD_GUARD;
-    
+
     SalData* pSalData = GetSalData();
     std::list< AquaSalFrame* >::iterator it;
     for( it = pSalData->maFrames.begin(); it != pSalData->maFrames.end(); ++it )
@@ -470,7 +470,7 @@
     if( pAppleRemoteCtrl && pAppleRemoteCtrl->remoteControl)
     {
         // [remoteControl startListening: self];
-        // does crash because the right thing to do is 
+        // does crash because the right thing to do is
         // [pAppleRemoteCtrl->remoteControl startListening: self];
         // but the instance variable 'remoteControl' is declared protected
         // workaround : declare remoteControl instance variable as public in RemoteMainController.m
@@ -498,12 +498,12 @@
     if( pAppleRemoteCtrl && pAppleRemoteCtrl->remoteControl)
     {
         // [remoteControl stopListening: self];
-        // does crash because the right thing to do is 
+        // does crash because the right thing to do is
         // [pAppleRemoteCtrl->remoteControl stopListening: self];
         // but the instance variable 'remoteControl' is declared protected
         // workaround : declare remoteControl instance variable as public in RemoteMainController.m
 
-        [pAppleRemoteCtrl->remoteControl stopListening: self]; 
+        [pAppleRemoteCtrl->remoteControl stopListening: self];
 #ifdef DEBUG
         NSLog(@"Apple Remote will resign active - Releasing remote controls");
 #endif
@@ -534,4 +534,3 @@
 
 
 @end
-

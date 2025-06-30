@@ -33,7 +33,7 @@
 module com { module sun { module star { module ucb { 
 
 //=============================================================================
-/** A network error specifing a read failure.
+/** A network error specifying a read failure.
 */
 published exception InteractiveNetworkReadException: com::sun::star::ucb::InteractiveNetworkException
 {

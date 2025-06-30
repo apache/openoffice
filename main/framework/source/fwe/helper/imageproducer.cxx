@@ -49,4 +49,3 @@ Image SAL_CALL GetImageFromURL( const ::com::sun::star::uno::Reference< ::com::s
 }
 
 }
-

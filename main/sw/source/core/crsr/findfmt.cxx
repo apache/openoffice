@@ -76,5 +76,3 @@ sal_Bool SwPaM::Find( const SwFmt& rFmt, SwMoveFn fnMove,
 	delete pPam;
 	return bFound;
 }
-
-

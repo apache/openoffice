@@ -2123,7 +2123,7 @@ void SfxCommonTemplateDialog_Impl::SaveFactoryStyleFilter( SfxObjectShell* i_pOb
     {
         Sequence< PropertyValue > lProps(1);
         lProps[0].Name = DEFINE_CONST_UNICODE("ooSetupFactoryStyleFilter");
-        lProps[0].Value = makeAny( i_nFilter );;
+        lProps[0].Value = makeAny( i_nFilter );
         xContainer->replaceByName( getModuleIdentifier( xModuleManager, i_pObjSh ), makeAny( lProps ) );
     }
 }
@@ -3241,4 +3241,3 @@ sal_Int8    DropToolBox_Impl::ExecuteDrop( const ExecuteDropEvent& rEvt )
 {
      return rParent.aFmtLb.ExecuteDrop(rEvt);
 }
-

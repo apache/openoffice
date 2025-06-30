@@ -2067,6 +2067,3 @@ sal_Bool ScDPOutput::GetHeaderDrag( const ScAddress& rPos, sal_Bool bMouseLeft, 
 
 	return sal_False;
 }
-
-
-

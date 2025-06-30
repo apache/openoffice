@@ -663,5 +663,3 @@ void SwWrongList::Insert( const rtl::OUString& rType,
 
     maList.insert(aIter, SwWrongArea( rType, meType, xPropertyBag, nNewPos, nNewLen) );
 }
-
-

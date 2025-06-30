@@ -41,4 +41,3 @@ namespace dbaui
 	#undef _REGISTRATIONHELPER_CXX_INCLUDED_INDIRECTLY_
 
 }
-

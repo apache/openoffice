@@ -82,4 +82,3 @@ void ScUnoListenerCalls::ExecuteAndClear()
         }
     }
 }
-

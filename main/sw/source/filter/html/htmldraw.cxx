@@ -83,7 +83,7 @@ static HTMLOptionEnum __FAR_DATA aHTMLMarqDirectionTable[] =
 	{ 0,						0						}
 };
 
-/*  */
+/* */
 void SwHTMLParser::InsertDrawObject( SdrObject* pNewDrawObj,
 									 const Size& rPixSpace,
                                      sal_Int16 eVertOri,
@@ -217,7 +217,7 @@ void SwHTMLParser::InsertDrawObject( SdrObject* pNewDrawObj,
 	pDoc->InsertDrawObj( *pPam, *pNewDrawObj, aFrmSet );
 }
 
-/*  */
+/* */
 
 static void PutEEPoolItem( SfxItemSet &rEEItemSet,
 						   const SfxPoolItem& rSwItem )
@@ -607,7 +607,7 @@ void SwHTMLParser::ResizeDrawObject( SdrObject* pObj, SwTwips nWidth )
 	pObj->SetLogicRect( Rectangle( rOldRect.TopLeft(), aNewSz ) );
 }
 
-/*  */
+/* */
 
 const SdrObject *SwHTMLWriter::GetMarqueeTextObj( const SwDrawFrmFmt& rFmt )
 {
@@ -845,5 +845,3 @@ Writer& OutHTML_DrawFrmFmtAsMarquee( Writer& rWrt,
 
 	return rWrt;
 }
-
-

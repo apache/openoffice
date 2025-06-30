@@ -445,7 +445,7 @@ sal_uInt16 DirReader_Impl::Read()
                 if ( pDir->pStatLst ) //Status fuer Sort gewuenscht?
                     pDir->ImpSortedInsert( pTemp, new FileStat( aStat ) );
                 else
-                    pDir->ImpSortedInsert( pTemp, NULL );;
+                    pDir->ImpSortedInsert( pTemp, NULL );
 				return 1;
             }
             else
@@ -653,4 +653,3 @@ ErrCode FileStat::QueryDiskSpace( const String &, BigInt &, BigInt & )
 void FSysEnableSysErrorBox( sal_Bool )
 {
 }
-

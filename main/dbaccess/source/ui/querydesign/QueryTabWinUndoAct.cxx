@@ -144,8 +144,3 @@ void OTabFieldMovedUndoAct::Undo()
 	pOwner->LeaveUndoMode();
 }
 // -----------------------------------------------------------------------------
-
-
-
-
-

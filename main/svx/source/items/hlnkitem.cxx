@@ -423,4 +423,3 @@ sal_Bool SvxHyperlinkItem::PutValue( const com::sun::star::uno::Any& rVal, sal_u
 
     return sal_True;
 }
-

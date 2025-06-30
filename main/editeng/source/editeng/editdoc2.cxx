@@ -535,4 +535,3 @@ void ConvertAndPutItems( SfxItemSet& rDest, const SfxItemSet& rSource, const Map
 		}
 	}
 }
-

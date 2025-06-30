@@ -67,7 +67,7 @@ public:
 
     virtual ~LabeledDataSequence();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( LabeledDataSequence )
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()

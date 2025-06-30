@@ -1340,5 +1340,3 @@ void    NumberingPreview::Paint( const Rectangle& /*rRect*/ )
 NumberingPreview::~NumberingPreview()
 {
 }
-
-

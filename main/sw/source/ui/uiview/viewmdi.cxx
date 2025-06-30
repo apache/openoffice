@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
-
 
 #include <string> // HACK: prevent conflict between STLPORT and Workshop headers
 
@@ -81,7 +77,6 @@
 
 sal_uInt16	SwView::nMoveType = NID_PGE;
 sal_Int32 SwView::nActMark = 0;
-
 
 #define VIEW_IMAGECOLOR COL_LIGHTBLUE
 
@@ -175,8 +170,8 @@ void SwView::_SetZoom( const Size &rEditSize, SvxZoomType eZoomType,
 	SwViewOption aOpt( *pOpt );
     if ( !GetViewFrame()->GetFrame().IsInPlace() )
 	{
-		//MasterUsrPrefs updaten UND DANACH die ViewOptions der aktuellen
-		//View updaten.
+		// MasterUsrPrefs updaten UND DANACH die ViewOptions der aktuellen
+		// View updaten.
 		if ( !bViewOnly &&
 				(sal_uInt16(nFac) 	   != pUsrPref->GetZoom() ||
 				sal_uInt8  (eZoomType) != pUsrPref->GetZoomType()) )
@@ -202,8 +197,8 @@ void SwView::_SetZoom( const Size &rEditSize, SvxZoomType eZoomType,
                 aPos.Y() = pWrtShell->GetAnyCurRect(RECT_PAGE).Top() - DOCUMENTBORDER;
             else
 			{
-    			//sicherstellen, dass sich der Cursor im sichtbaren
-			    //Bereich befindet, damit nur 1x gescrollt wird
+    			// sicherstellen, dass sich der Cursor im sichtbaren
+			    // Bereich befindet, damit nur 1x gescrollt wird
 			    aPos.X() = lLeftMargin;
 			    const SwRect &rCharRect = pWrtShell->GetCharRect();
 			    if ( rCharRect.Top() > GetVisArea().Bottom() ||
@@ -217,7 +212,7 @@ void SwView::_SetZoom( const Size &rEditSize, SvxZoomType eZoomType,
 		// OS: Notloesung - in CalcVisArea wird u.U. wieder SetZoom gerufen und
 		// dann werden falsche Werte eingestellt
         ((SwViewOption*)pWrtShell->GetViewOptions())->SetZoomType( eZoomType );
-		CalcVisArea( rEditSize );	//fuer das Neuberechnen des sichtbaren Bereiches
+		CalcVisArea( rEditSize );	// für das Neuberechnen des sichtbaren Bereiches
 	}
 	else if ( sal_uInt16(nFac) != pOpt->GetZoom() )
 	{
@@ -261,8 +256,8 @@ void SwView::SetViewLayout( sal_uInt16 nColumns, bool bBookMode, sal_Bool bViewO
         const sal_Bool bWeb = 0 != PTR_CAST(SwWebView, this);
         SwMasterUsrPref *pUsrPref = (SwMasterUsrPref*)SW_MOD()->GetUsrPref(bWeb);
 
-        //MasterUsrPrefs updaten UND DANACH die ViewOptions der aktuellen
-        //View updaten.
+        // MasterUsrPrefs updaten UND DANACH die ViewOptions der aktuellen
+        // View updaten.
         if ( nColumns  != pUsrPref->GetViewLayoutColumns() ||
              bBookMode != pUsrPref->IsViewLayoutBookMode() )
         {
@@ -324,13 +319,13 @@ int SwView::_CreateScrollbar( sal_Bool bHori )
 
 	(*ppScrollbar)->EnableDrag( sal_True );
 
-    if(GetWindow())
-        InvalidateBorder();
+	if(GetWindow())
+		InvalidateBorder();
 
 	// Scrollbar muss nochmals getestet werden, da im InvalidateBorder u.U. der
 	// Scrollbar wieder geloescht wurde
 	if ( !bShowAtResize && (*ppScrollbar))
-        (*ppScrollbar)->ExtendedShow();
+		(*ppScrollbar)->ExtendedShow();
 
 	return 1;
 }
@@ -342,8 +337,8 @@ void SwView::CreatePageButtons(sal_Bool bShow)
 	pPageUpBtn->SetHelpId(HID_SCRL_PAGEUP);
 	pPageDownBtn	= new SwHlpImageButton(pMDI, SW_RES( BTN_PAGEDOWN ), sal_False );
 	pPageDownBtn->SetHelpId(HID_SCRL_PAGEDOWN);
-    Reference< XFrame > xFrame = GetViewFrame()->GetFrame().GetFrameInterface();
-    pNaviBtn = new SwNaviImageButton(pMDI, xFrame );
+	Reference< XFrame > xFrame = GetViewFrame()->GetFrame().GetFrameInterface();
+	pNaviBtn = new SwNaviImageButton(pMDI, xFrame );
 	pNaviBtn->SetHelpId(HID_SCRL_NAVI);
 	Link aLk( LINK( this, SwView, BtnPage ) );
 	pPageUpBtn->SetClickHdl( aLk );
@@ -367,9 +362,9 @@ void SwView::CreatePageButtons(sal_Bool bShow)
  */
 IMPL_LINK( SwView, BtnPage, Button *, pButton )
 {
-    // #i75416# move the execution of the search to an asynchronously called static link
-    bool* pbNext = new bool( (pButton == pPageDownBtn) );
-    Application::PostUserEvent( STATIC_LINK(this, SwView, MoveNavigationHdl), pbNext );
+	// #i75416# move the execution of the search to an asynchronously called static link
+	bool* pbNext = new bool( (pButton == pPageDownBtn) );
+	Application::PostUserEvent( STATIC_LINK(this, SwView, MoveNavigationHdl), pbNext );
 	return 0;
 }
 /*-----------------20.06.97 10:46-------------------
@@ -571,7 +566,7 @@ void SwView::ChangeTabMetric( FieldUnit eUnit )
     }
 }
 
-void SwView::ChangeVLinealMetric( FieldUnit eUnit )
+void SwView::ChangeVRulerMetric( FieldUnit eUnit )
 {
     if(pVRuler->GetUnit() != eUnit)
     {
@@ -582,27 +577,27 @@ void SwView::ChangeVLinealMetric( FieldUnit eUnit )
 /* -----------------------------07.04.01 17:09--------------------------------
 
  ---------------------------------------------------------------------------*/
-void SwView::GetVLinealMetric(FieldUnit& eToFill) const
+void SwView::GetVRulerMetric(FieldUnit& eToFill) const
 {
     eToFill = pVRuler->GetUnit();
 }
 /* -----------------------------07.04.01 17:09--------------------------------
 
  ---------------------------------------------------------------------------*/
-void SwView::GetHLinealMetric(FieldUnit& eToFill) const
+void SwView::GetHRulerMetric(FieldUnit& eToFill) const
 {
     eToFill = pHRuler->GetUnit();
 }
 /*************************************************************************
 |*
-|*	SwView::CreateVLineal()
+|*	SwView::CreateVRuler()
 |*
 |*	Beschreibung
 |*	Ersterstellung	VB 29.05.91
 |*
 *************************************************************************/
 
-int SwView::CreateVLineal()
+int SwView::CreateVRuler()
 {
     pHRuler->SetBorderPos( pVRuler->GetSizePixel().Width()-1 );
 
@@ -614,14 +609,14 @@ int SwView::CreateVLineal()
 
 /*************************************************************************
 |*
-|*	SwView::KillVLineal()
+|*	SwView::KillVRuler()
 |*
 |*	Beschreibung
 |*	Ersterstellung	VB 29.05.91
 |*
 *************************************************************************/
 
-int SwView::KillVLineal()
+int SwView::KillVRuler()
 {
     pVRuler->Hide();
     pHRuler->SetBorderPos( 0 );
@@ -749,4 +744,4 @@ sal_Bool SwView::IsVScrollbarVisible()const
     return pVScrollbar->IsVisible( sal_False );
 }
 
-
+/* vim: set noet sw=4 ts=4: */

@@ -676,5 +676,3 @@ void Ww1SingleSprmPFromText::Start(
 
 #undef STOP1
 #undef STOP2
-
-

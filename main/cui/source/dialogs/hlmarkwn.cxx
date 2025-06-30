@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cui.hxx"
@@ -51,9 +49,7 @@ using namespace ::com::sun::star;
 using namespace ::rtl;
 
 /*************************************************************************
-|*
 |* Userdata-struct for tree-entries
-|*
 |************************************************************************/
 
 struct TargetData
@@ -71,9 +67,7 @@ struct TargetData
 
 
 //########################################################################
-//#                                                                      #
 //# Tree-Window                                                          #
-//#                                                                      #
 //########################################################################
 
 SvxHlmarkTreeLBox::SvxHlmarkTreeLBox( Window* pParent, const ResId& rResId )
@@ -113,15 +107,11 @@ void SvxHlmarkTreeLBox::Paint( const Rectangle& rRect )
 }
 
 //########################################################################
-//#                                                                      #
 //# Window-Class                                                         #
-//#                                                                      #
 //########################################################################
 
 /*************************************************************************
-|*
 |* Constructor / Destructor
-|*
 |************************************************************************/
 
 SvxHlinkDlgMarkWnd::SvxHlinkDlgMarkWnd( SvxHyperlinkTabPageBase *pParent )
@@ -130,7 +120,7 @@ SvxHlinkDlgMarkWnd::SvxHlinkDlgMarkWnd( SvxHyperlinkTabPageBase *pParent )
 	maBtClose( this, CUI_RES (BT_CLOSE) ),
 	maLbTree ( this, CUI_RES (TLB_MARK) ),
 	mbUserMoved ( sal_False ),
-	mbFirst	    ( sal_True ),
+	mbFirst		( sal_True ),
 	mpParent	( pParent ),
 	mnError		( LERR_NOERROR )
 {
@@ -144,9 +134,9 @@ SvxHlinkDlgMarkWnd::SvxHlinkDlgMarkWnd( SvxHyperlinkTabPageBase *pParent )
 	maLbTree.SetStyle( maLbTree.GetStyle() | WB_TABSTOP | WB_BORDER | WB_HASLINES |
 							WB_HASBUTTONS |  //WB_HASLINESATROOT |
 							WB_HSCROLL | WB_HASBUTTONSATROOT );
-							
-    maLbTree.SetAccessibleName(String(CUI_RES(STR_MARK_TREE)));
-							
+
+	maLbTree.SetAccessibleName(String(CUI_RES(STR_MARK_TREE)));
+
 }
 
 SvxHlinkDlgMarkWnd::~SvxHlinkDlgMarkWnd()
@@ -155,9 +145,7 @@ SvxHlinkDlgMarkWnd::~SvxHlinkDlgMarkWnd()
 }
 
 /*************************************************************************
-|*
 |* Set an errorstatus
-|*
 |************************************************************************/
 
 sal_uInt16 SvxHlinkDlgMarkWnd::SetError( sal_uInt16 nError)
@@ -174,9 +162,7 @@ sal_uInt16 SvxHlinkDlgMarkWnd::SetError( sal_uInt16 nError)
 }
 
 /*************************************************************************
-|*
 |* Move window
-|*
 |************************************************************************/
 
 sal_Bool SvxHlinkDlgMarkWnd::MoveTo ( Point aNewPos )
@@ -209,14 +195,12 @@ sal_Bool SvxHlinkDlgMarkWnd::ConnectToDialog( sal_Bool bDoit )
 }
 
 /*************************************************************************
-|*
 |* Interface to refresh tree
-|*
 |************************************************************************/
 
 void SvxHlinkDlgMarkWnd::RefreshTree ( String aStrURL )
 {
-    String aEmptyStr;
+	String aEmptyStr;
 	OUString aUStrURL;
 
 	EnterWait();
@@ -243,9 +227,7 @@ void SvxHlinkDlgMarkWnd::RefreshTree ( String aStrURL )
 }
 
 /*************************************************************************
-|*
 |* get links from document
-|*
 |************************************************************************/
 
 sal_Bool SvxHlinkDlgMarkWnd::RefreshFromDoc( OUString aURL )
@@ -336,9 +318,7 @@ void SvxHlinkDlgMarkWnd::Error(int nNr)
 }
 */
 /*************************************************************************
-|*
 |* Fill Tree-Control
-|*
 |************************************************************************/
 
 int SvxHlinkDlgMarkWnd::FillTree( uno::Reference< container::XNameAccess > xLinks, SvLBoxEntry* pParentEntry )
@@ -348,7 +328,7 @@ int SvxHlinkDlgMarkWnd::FillTree( uno::Reference< container::XNameAccess > xLink
 	const sal_uLong nLinks = aNames.getLength();
 	const OUString* pNames = aNames.getConstArray();
 
-    Color aMaskColor( COL_LIGHTMAGENTA );
+	Color aMaskColor( COL_LIGHTMAGENTA );
 	const OUString aProp_LinkDisplayName( RTL_CONSTASCII_USTRINGPARAM( "LinkDisplayName" ) );
 	const OUString aProp_LinkTarget( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.document.LinkTarget" ) );
 	const OUString aProp_LinkDisplayBitmap( RTL_CONSTASCII_USTRINGPARAM( "LinkDisplayBitmap" ) );
@@ -383,7 +363,7 @@ int SvxHlinkDlgMarkWnd::FillTree( uno::Reference< container::XNameAccess > xLink
 				aAny >>= aDisplayName;
 				String aStrDisplayname ( aDisplayName );
 
-				// is it a target ?
+				// is it a target?
 				uno::Reference< lang::XServiceInfo > xSI( xTarget, uno::UNO_QUERY );
 				sal_Bool bIsTarget = xSI->supportsService( aProp_LinkTarget );
 
@@ -398,16 +378,16 @@ int SvxHlinkDlgMarkWnd::FillTree( uno::Reference< container::XNameAccess > xLink
 					uno::Reference< awt::XBitmap > aXBitmap( xTarget->getPropertyValue( aProp_LinkDisplayBitmap ), uno::UNO_QUERY );
 					if( aXBitmap.is() )
 					{
-                        Image aBmp( VCLUnoHelper::GetBitmap( aXBitmap ).GetBitmap(), aMaskColor );
-                        // insert Displayname into treelist with bitmaps
+						Image aBmp( VCLUnoHelper::GetBitmap( aXBitmap ).GetBitmap(), aMaskColor );
+						// insert Displayname into treelist with bitmaps
 						pEntry = maLbTree.InsertEntry ( aStrDisplayname,
-                                                        aBmp, aBmp,
+														aBmp, aBmp,
 														pParentEntry,
 														sal_False, LIST_APPEND,
 														(void*)pData );
-                        maLbTree.SetExpandedEntryBmp( pEntry, aBmp, BMP_COLOR_HIGHCONTRAST );
-                        maLbTree.SetCollapsedEntryBmp( pEntry, aBmp, BMP_COLOR_HIGHCONTRAST );
-                        nEntries++;
+						maLbTree.SetExpandedEntryBmp( pEntry, aBmp, BMP_COLOR_HIGHCONTRAST );
+						maLbTree.SetCollapsedEntryBmp( pEntry, aBmp, BMP_COLOR_HIGHCONTRAST );
+						nEntries++;
 					}
 					else
 					{
@@ -443,9 +423,7 @@ int SvxHlinkDlgMarkWnd::FillTree( uno::Reference< container::XNameAccess > xLink
 }
 
 /*************************************************************************
-|*
 |* Clear Tree
-|*
 |************************************************************************/
 
 void SvxHlinkDlgMarkWnd::ClearTree()
@@ -464,9 +442,7 @@ void SvxHlinkDlgMarkWnd::ClearTree()
 }
 
 /*************************************************************************
-|*
 |* Find Entry for String
-|*
 |************************************************************************/
 
 SvLBoxEntry* SvxHlinkDlgMarkWnd::FindEntry ( String aStrName )
@@ -487,9 +463,7 @@ SvLBoxEntry* SvxHlinkDlgMarkWnd::FindEntry ( String aStrName )
 }
 
 /*************************************************************************
-|*
 |* Select Entry
-|*
 |************************************************************************/
 
 void SvxHlinkDlgMarkWnd::SelectEntry ( String aStrMark )
@@ -503,9 +477,7 @@ void SvxHlinkDlgMarkWnd::SelectEntry ( String aStrMark )
 }
 
 /*************************************************************************
-|*
 |* Click on Apply-Button / Doubleclick on item in tree
-|*
 |************************************************************************/
 
 IMPL_LINK ( SvxHlinkDlgMarkWnd, ClickApplyHdl_Impl, void *, EMPTYARG )
@@ -527,16 +499,14 @@ IMPL_LINK ( SvxHlinkDlgMarkWnd, ClickApplyHdl_Impl, void *, EMPTYARG )
 }
 
 /*************************************************************************
-|*
 |* Click on Close-Button
-|*
 |************************************************************************/
 
 IMPL_LINK ( SvxHlinkDlgMarkWnd, ClickCloseHdl_Impl, void *, EMPTYARG )
 {
-    Close();
+	Close();
 
 	return( 0L );
 }
 
-
+/* vim: set noet sw=4 ts=4: */

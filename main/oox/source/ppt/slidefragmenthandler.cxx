@@ -216,4 +216,3 @@ void SAL_CALL SlideFragmentHandler::endDocument(  ) throw (::com::sun::star::xml
 }
 
 } }
-

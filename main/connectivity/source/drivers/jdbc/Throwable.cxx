@@ -61,5 +61,3 @@ jclass java_lang_Throwable::st_getMyClass()
     return callStringMethod("getLocalizedMessage",mID);
 }
 // -----------------------------------------------------------------------------
-
-

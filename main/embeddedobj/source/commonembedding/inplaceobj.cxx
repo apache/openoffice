@@ -82,4 +82,3 @@ void SAL_CALL OCommonEmbeddedObject::translateAccelerators(
 {
 	// TODO: UI activation related
 }
-

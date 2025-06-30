@@ -408,5 +408,3 @@ sal_Bool ODbaseDatabaseMetaData::impl_supportsMixedCaseQuotedIdentifiers_throw( 
 	return sal_True;
 }
 // -----------------------------------------------------------------------------
-
-

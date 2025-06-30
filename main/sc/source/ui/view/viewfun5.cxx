@@ -736,5 +736,3 @@ sal_Bool ScViewFunc::PasteDDE( const uno::Reference<datatransfer::XTransferable>
 
 	return sal_True;
 }
-
-

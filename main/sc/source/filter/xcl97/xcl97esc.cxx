@@ -545,5 +545,3 @@ void XclEscherClientTextbox::WriteData( EscherEx& /*rEx*/ ) const
 {
     pXclObj->SetText( GetRoot(), rTextObj );
 }
-
-

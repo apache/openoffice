@@ -998,6 +998,3 @@ void DifAttrCache::Apply( ScDocument& rDoc, SCTAB nTab )
 		}
 	}
 }
-
-
-

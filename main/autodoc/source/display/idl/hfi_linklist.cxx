@@ -368,5 +368,3 @@ HF_IdlLinkList::Get_EntryDocu(ce_id i_nMemberId) const
     else
         return 0;
 }
-
-

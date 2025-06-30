@@ -4616,4 +4616,3 @@ sal_uInt16 SvNumberformat::ImpGetNumForStringElementCount( sal_uInt16 nNumFor ) 
     }
     return nCnt;
 }
-

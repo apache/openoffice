@@ -874,4 +874,3 @@ String SvFileInformationManager::GetFolderDescription( const svtools::VolumeInfo
 	String sDescription = String( SvtResId( nResId ) );
     return sDescription;
 }
-

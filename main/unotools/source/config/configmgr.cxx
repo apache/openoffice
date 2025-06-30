@@ -751,4 +751,3 @@ sal_Bool	ConfigManager::IsLocalConfigProvider()
 {
 	return false;
 }
-

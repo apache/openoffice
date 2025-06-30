@@ -239,5 +239,3 @@ void EnumIdlClassImpl::createObject( Any & rObj )
 }
 
 }
-
-

@@ -90,7 +90,7 @@
 
 	<xsl:template name="collect-global-odf-properties">
 		<!-- to access the variable as a node-set by XPATH expressions, it is necessary to convert it
-			 from a result-tree-fragment (RTF) to a node set by a in a XSLT 1.0 non standarized function -->
+			 from a result-tree-fragment (RTF) to a node set by a in a XSLT 1.0 non standardized function -->
 		<xsl:variable name="globalDataRTF">
 			<xsl:call-template name="collect-document-links-RTF" />
 		</xsl:variable>
@@ -214,7 +214,7 @@
 		<xsl:copy-of select="$documentLinks/styles-file/*/office:styles" />
 		<xsl:copy-of select="$documentLinks/styles-file/*/office:font-face-decls" />
 
-		<!-- office:automatic-styles may be containted in two files (i.e. content.xml and styles.xml).
+		<!-- office:automatic-styles may be contained in two files (i.e. content.xml and styles.xml).
 			 Wild card necessary as top level element differs from flat office files ("SampleName.fsxw") -->
 		<xsl:copy-of select="/*/office:automatic-styles" />
 
@@ -307,7 +307,7 @@
 		<xsl:param name="defaultOfficeStyle" />
 		<xsl:param name="defaultFamilyStyles" />
 
-	   <!--** traversee all style trees - branch after branch - collecting style properties **-->
+	   <!--** traverse all style trees - branch after branch - collecting style properties **-->
 		<xsl:element name="all-doc-styles" namespace="">
 
 	   <!-- Background Information:
@@ -320,7 +320,7 @@
 		   but automatic:styles may inherit from both office:styles and themself.
 		-->
 
-		   <!--** traversee all office:styles trees beginning with the top-level styles **-->
+		   <!--** traverse all office:styles trees beginning with the top-level styles **-->
 			<xsl:for-each select="$globalData/office:styles/style:style[not(@style:parent-style-name)]">
 			   <!-- Looking for parents from style:family
 			   <xsl:for-each select="$globalData/office:styles/style:style[@style:family=current()/@style:family][not(@style:parent-style-name)]"> -->
@@ -344,7 +344,7 @@
 					   an element representing the absolute style properties style:property  ** -->
 			</xsl:for-each>
 
-	   <!--** traversee all office:automatic-styles trees beginning with the top-level styles **-->
+	   <!--** traverse all office:automatic-styles trees beginning with the top-level styles **-->
 			<xsl:for-each select="$globalData/office:automatic-styles/style:style[not(@style:parent-style-name)]">
 			   <!--** creates a style element with style:name and style:family attribute and
 					   an element representing the absolute style properties style:property  ** -->
@@ -386,7 +386,7 @@
 		<xsl:param name="inheritedStyleProperties" />
 		<xsl:param name="searchOnlyInAutomaticStyles" />
 
-		   <!--** create an absolute style by inherting properties from the given parent properties **-->
+		   <!--** create an absolute style by inheriting properties from the given parent properties **-->
 		<xsl:variable name="newStyleProperties-RTF">
 			<xsl:call-template name="create-inherited-style-properties">
 				<xsl:with-param name="inheritedStyleProperties" select="$inheritedStyleProperties" />
@@ -527,7 +527,7 @@
 
 			<xsl:if test="*/@style:font-size-rel">
 <!--
-	The intheritedStyleProperties should include a absolute Font Size, but
+	The inherited StyleProperties should include an absolute Font Size, but
 	<style:properties
 		xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
 		xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
@@ -635,7 +635,7 @@
 	</xsl:template>
 
 	<!-- REASON FOR TEMPLATE:
-	   The OpenOffice style properities gathered in the variable 'globalData' have to be mapped to the CSS style format
+	   The OpenOffice style properties gathered in the variable 'globalData' have to be mapped to the CSS style format
 	-->
 	<xsl:template name="map-odf-properties">
 		<xsl:param name="globalData" />
@@ -810,7 +810,7 @@
 		<xsl:text>padding</xsl:text>
         <xsl:value-of select="substring-after(name(), 'fo:margin')"/>
 		<xsl:text>:</xsl:text>
-		<!-- Map once erroneusly used inch shortage 'inch' to CSS shortage 'in' -->
+		<!-- Map once erroneously used inch shortage 'inch' to CSS shortage 'in' -->
 		<xsl:choose>
 			<xsl:when test="contains(., 'inch')">
 				<xsl:value-of select="substring-before(.,'ch')"/>

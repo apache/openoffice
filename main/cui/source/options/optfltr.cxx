@@ -429,4 +429,3 @@ void OfaMSFilterTabPage2::MSFltrSimpleTable::KeyInput( const KeyEvent& rKEvt )
     else
         SvxSimpleTable::KeyInput(rKEvt);
 }
-

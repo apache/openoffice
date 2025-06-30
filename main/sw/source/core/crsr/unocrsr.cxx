@@ -200,7 +200,7 @@ sal_Bool SwUnoCrsr::IsSelOvr( int eFlags )
 }
 
 
-/*  */
+/* */
 
 SwUnoTableCrsr::SwUnoTableCrsr(const SwPosition& rPos)
 	: SwCursor(rPos,0,false), SwUnoCrsr(rPos), SwTableCursor(rPos), aTblSel(rPos,0,false)
@@ -265,4 +265,3 @@ void SwUnoTableCrsr::MakeBoxSels()
 		}
 	}
 }
-

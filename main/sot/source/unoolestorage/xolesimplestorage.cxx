@@ -46,16 +46,16 @@ const sal_Int32 nBytesCount = 32000;
 
 
 // --------------------------------------------------------------------------------
-OLESimpleStorage::OLESimpleStorage( uno::Reference< lang::XMultiServiceFactory > xFactory )
+OLESimpleStorage::OLESimpleStorage( uno::Reference< uno::XComponentContext > xContext )
 : m_bDisposed( sal_False )
 , m_pStream( NULL )
 , m_pStorage( NULL )
 , m_pListenersContainer( NULL )
-, m_xFactory( xFactory )
+, m_xContext( xContext )
 , m_bNoTemporaryCopy( sal_False )
 {
-	OSL_ENSURE( m_xFactory.is(), "No factory is provided on creation!\n" );
-	if ( !m_xFactory.is() )
+	OSL_ENSURE( m_xContext.is(), "No component context is provided on creation!\n" );
+	if ( !m_xContext.is() )
 		throw uno::RuntimeException();
 }
 
@@ -91,9 +91,9 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OLESimpleStorage::impl_staticGetSuppor
 
 //-------------------------------------------------------------------------
 uno::Reference< uno::XInterface > SAL_CALL OLESimpleStorage::impl_staticCreateSelfInstance(
-			const uno::Reference< lang::XMultiServiceFactory >& xServiceManager )
+			const uno::Reference< uno::XComponentContext >& xComponentContext )
 {
-	return uno::Reference< uno::XInterface >( *new OLESimpleStorage( xServiceManager ) );
+	return uno::Reference< uno::XInterface >( *new OLESimpleStorage( xComponentContext ) );
 }
 
 //-------------------------------------------------------------------------
@@ -262,7 +262,7 @@ void SAL_CALL OLESimpleStorage::initialize( const uno::Sequence< uno::Any >& aAr
 	else
 	{
 		uno::Reference < io::XStream > xTempFile( 
-				m_xFactory->createInstance( ::rtl::OUString::createFromAscii( "com.sun.star.io.TempFile" ) ),
+				m_xContext->getServiceManager()->createInstanceWithContext( ::rtl::OUString::createFromAscii( "com.sun.star.io.TempFile" ), m_xContext ),
 				uno::UNO_QUERY_THROW );
 		uno::Reference < io::XSeekable > xTempSeek( xTempFile, uno::UNO_QUERY_THROW );
 		uno::Reference< io::XOutputStream > xTempOut = xTempFile->getOutputStream();
@@ -447,7 +447,7 @@ uno::Any SAL_CALL OLESimpleStorage::getByName( const ::rtl::OUString& aName )
 	uno::Any aResult;
 
 	uno::Reference< io::XStream > xTempFile(
-		m_xFactory->createInstance( ::rtl::OUString::createFromAscii( "com.sun.star.io.TempFile" ) ),
+		m_xContext->getServiceManager()->createInstanceWithContext( ::rtl::OUString::createFromAscii( "com.sun.star.io.TempFile" ), m_xContext ),
 		uno::UNO_QUERY );
 	uno::Reference< io::XSeekable > xSeekable( xTempFile, uno::UNO_QUERY_THROW );
 	uno::Reference< io::XOutputStream > xOutputStream = xTempFile->getOutputStream();
@@ -482,9 +482,10 @@ uno::Any SAL_CALL OLESimpleStorage::getByName( const ::rtl::OUString& aName )
 		aArgs[1] <<= (sal_Bool)sal_True; // do not create copy
 
 		uno::Reference< container::XNameContainer > xResultNameContainer(
-			m_xFactory->createInstanceWithArguments(
+			m_xContext->getServiceManager()->createInstanceWithArgumentsAndContext(
 					::rtl::OUString::createFromAscii( "com.sun.star.embed.OLESimpleStorage" ),
-					aArgs ),
+					aArgs,
+                    m_xContext ),
 			uno::UNO_QUERY_THROW );
 
 		aResult <<= xResultNameContainer;
@@ -803,5 +804,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OLESimpleStorage::getSupportedServiceN
 {
 	return impl_staticGetSupportedServiceNames();
 }
-
-

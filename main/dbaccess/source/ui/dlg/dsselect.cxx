@@ -150,7 +150,7 @@ ODatasourceSelectDialog::ODatasourceSelectDialog(Window* _pParent, const StringB
 
 	fillListBox(_rDatasources);
 #ifdef HAVE_ODBC_ADMINISTRATION
-	// allow ODBC datasource managenment
+	// allow ODBC datasource management
 	if (  !_bAdabas )
 	{
 		m_aManageDatasources.Show();
@@ -311,4 +311,3 @@ void ODatasourceSelectDialog::fillListBox(const StringBag& _rDatasources)
 //.........................................................................
 }	// namespace dbaui
 //.........................................................................
-

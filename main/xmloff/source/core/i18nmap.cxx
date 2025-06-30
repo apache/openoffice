@@ -118,5 +118,3 @@ const OUString& SvI18NMap::Get( sal_uInt16 nKind, const OUString& rName ) const
 	else
 		return rName;
 }
-
-

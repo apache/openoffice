@@ -359,4 +359,3 @@ string OOXMLFactory_ns::getName() const
 
 }
 }
-

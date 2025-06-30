@@ -107,5 +107,3 @@ void OKeys::dropObject(sal_Int32 /*_nPos*/,const ::rtl::OUString _sElementName)
 		ADOS::ThrowException(*m_pConnection->getConnection(),static_cast<XTypeProvider*>(this));
 }
 // -----------------------------------------------------------------------------
-
-

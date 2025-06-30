@@ -734,4 +734,3 @@ sal_uLong SwXMLTextBlocks::SetMacroTable(
 
 	return nRes;
 }
-

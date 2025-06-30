@@ -258,7 +258,7 @@ ContentProvider::createPackage( const rtl::OUString & rName, const rtl::OUString
         Packages::const_iterator it = m_pPackages->find( rURL );
         if ( it != m_pPackages->end() )
         {
-            // Already instanciated. Return package.
+            // Already instantiated. Return package.
             return (*it).second->m_xNA;
         }
     }
@@ -323,4 +323,3 @@ sal_Bool ContentProvider::removePackage( const rtl::OUString & rName )
     }
     return sal_False;
 }
-

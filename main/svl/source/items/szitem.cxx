@@ -202,6 +202,3 @@ sal_Bool SfxSizeItem::PutValue( const com::sun::star::uno::Any& rVal,
 
 	return bRet;
 }
-
-
-

@@ -60,7 +60,7 @@ public class StyleUtilities
     }
 
     /**
-     * Copies the specififed style (keyed by its family and name) into the current styles collection. This copies the
+     * Copies the specified style (keyed by its family and name) into the current styles collection. This copies the
      * style and all inherited styles into the target collection. Inherited common styles will be always be added to the
      * common collection (which will be written into the 'styles.xml' later).
      * <p/>
@@ -85,7 +85,7 @@ public class StyleUtilities
     }
 
     /**
-     * Copies the specififed style (keyed by its family and name) into the current styles collection. This copies the
+     * Copies the specified style (keyed by its family and name) into the current styles collection. This copies the
      * style and all inherited styles into the target collection. Inherited common styles will be always be added to the
      * common collection (which will be written into the 'styles.xml' later).
      * <p/>

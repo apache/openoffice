@@ -170,4 +170,3 @@ sal_Bool 	SwNumberingTypeListBox::SelectNumberingType(sal_Int16 nType)
 	SelectEntryPos( nPos );
 	return LISTBOX_ENTRY_NOTFOUND != nPos;
 }
-

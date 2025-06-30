@@ -636,8 +636,8 @@ Polygon::Polygon( const Point& rBezPt1, const Point& rCtrlPt1,
 	const double	fY0 = rBezPt1.Y();
 	const double	fX1 = 3.0 * rCtrlPt1.X();
 	const double	fY1 = 3.0 * rCtrlPt1.Y();
-	const double	fX2 = 3.0 * rCtrlPt2.X();;
-	const double	fY2 = 3.0 * rCtrlPt2.Y();;
+	const double	fX2 = 3.0 * rCtrlPt2.X();
+	const double	fY2 = 3.0 * rCtrlPt2.Y();
 	const double	fX3 = rBezPt2.X();
 	const double	fY3 = rBezPt2.Y();
 
@@ -1868,7 +1868,7 @@ sal_Bool Polygon::operator==( const Polygon& rPoly ) const
 
 sal_Bool Polygon::IsEqual( const Polygon& rPoly ) const
 {
-	sal_Bool bIsEqual = sal_True;;
+	sal_Bool bIsEqual = sal_True;
 	sal_uInt16 i;
 	if ( GetSize() != rPoly.GetSize() )
 		bIsEqual = sal_False;
@@ -2129,7 +2129,7 @@ void impCorrectContinuity(basegfx::B2DPolygon& roPolygon, sal_uInt32 nIndex, sal
 	{
 		if(roPolygon.isPrevControlPointUsed(nIndex) && roPolygon.isNextControlPointUsed(nIndex))
 		{
-            // #115917# Patch from osnola (modified, thanks for showing the porblem)
+            // #115917# Patch from osnola (modified, thanks for showing the problem)
             //
             // The correction is needed because an integer polygon with control points
             // is converted to double precision. When C1 or C2 is used the involved vectors

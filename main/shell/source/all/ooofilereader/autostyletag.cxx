@@ -92,5 +92,3 @@ void CAutoStyleTag::clearStyleLocalePair(  )
 {
     m_CurrentStyleLocalePair  = EMPTY_STYLELOCALE_PAIR;
 }
-
-

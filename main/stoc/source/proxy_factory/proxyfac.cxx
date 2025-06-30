@@ -452,7 +452,7 @@ Reference< XAggregation > FactoryImpl::createProxy(
 OUString FactoryImpl::getImplementationName()
     throw (RuntimeException)
 {
-    return proxyfac_getImplementationName();;
+    return proxyfac_getImplementationName();
 }
 
 //______________________________________________________________________________
@@ -530,4 +530,3 @@ void * SAL_CALL component_getFactory(
 }
 
 }
-

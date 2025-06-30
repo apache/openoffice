@@ -687,7 +687,3 @@ ScRangePair** ScRangePairList::CreateNameSortedArray( sal_uLong& nListCount,
 	}
 	return ppSortArray;
 }
-
-
-
-

@@ -128,4 +128,3 @@ Reference< XPreparedStatement > SAL_CALL ODbaseConnection::prepareCall( const ::
 	return NULL;
 }
 // -----------------------------------------------------------------------------
-

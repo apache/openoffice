@@ -871,6 +871,3 @@ Reference< XResultSet > SAL_CALL ODatabaseMetaData::getUDTs( const Any& catalog,
 	return NULL;
 }
 // -----------------------------------------------------------------------------
-
-
-

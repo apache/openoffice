@@ -353,5 +353,3 @@ void TEIMEInfos::DestroyAttribs()
 	pAttribs = NULL;
     nLen = 0;
 }
-
-

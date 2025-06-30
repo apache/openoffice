@@ -391,4 +391,3 @@ throw ( NoSuchElementException, RuntimeException)
 }
 
 } // namespace framework
-

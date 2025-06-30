@@ -358,4 +358,3 @@ void SwTxtMeta::ChgTxtNode(SwTxtNode * const pNode)
         rFmtMeta.NotifyChangeTxtNode(pNode);
     }
 }
-

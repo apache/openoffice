@@ -51,7 +51,7 @@ public class ChildrenRetriever {
     /**
      * Constructor. Create a new connection with the specific args to a running office
      *
-     *@param      String[]   This construtor requires the arguments:
+     *@param      String[]   This constructor requires the arguments:
      *                          -url=...       (optional)
      *                          -propNames=... (optional)
      *                       See Help (method printCmdLineUsage()).

@@ -84,4 +84,3 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory( const sal_Char * pImp
 }
 
 } // extern "C"
-

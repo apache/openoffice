@@ -98,4 +98,3 @@ sal_Bool SwCrsrShell::ExpandToSentenceBorders()
 {
 	return pCurCrsr->ExpandToSentenceBorders();
 }
-

@@ -165,6 +165,3 @@ void SwTemplateControl::Command( const CommandEvent& rCEvt )
 		ReleaseMouse();
 	}
 }
-
-
-

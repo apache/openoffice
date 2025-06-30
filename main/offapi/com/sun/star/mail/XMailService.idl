@@ -117,7 +117,7 @@ interface XMailService: ::com::sun::star::uno::XInterface {
     void removeConnectionListener([in] XConnectionListener xListener);
 
     /**
-        Return the context of the current connnection. The context
+        Return the context of the current connection. The context
         contains information like the server name, port, connection type
         etc.
         

@@ -86,7 +86,7 @@ public:
 
 	virtual ~CachedDataSequence();
 
-    /// establish methods for factory instatiation
+    /// establish methods for factory instantiation
 	APPHELPER_SERVICE_FACTORY_HELPER( CachedDataSequence )
     /// declare XServiceInfo methods
     APPHELPER_XSERVICEINFO_DECL()

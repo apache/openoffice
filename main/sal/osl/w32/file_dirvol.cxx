@@ -685,7 +685,7 @@ static int path_make_parent(sal_Unicode* path)
     get the parent only, e.g. 'c:\dir\subdir' -> 
     'c:\dir' or '\\share\sub\dir' -> '\\share\sub'
     @return The position where the path has been cut 
-    off (this is the posistion of the last backslash).
+    off (this is the position of the last backslash).
     If there are no more parents 0 will be returned, 
     e.g. 'c:\' or '\\Share' have no more parents */        
 
@@ -1717,7 +1717,7 @@ oslFileError SAL_CALL osl_getFileStatus(
 		FileTimeToTimeValue( &pItemImpl->FindData.ftCreationTime, &pStatus->aCreationTime ) )
 		pStatus->uValidFields |= osl_FileStatus_Mask_CreationTime;
 
-	/* Most of the fields are already set, regardless of requiered fields */
+	/* Most of the fields are already set, regardless of required fields */
 
 	rtl_uString_newFromStr( &pStatus->ustrFileName, reinterpret_cast<const sal_Unicode*>(pItemImpl->FindData.cFileName) );
 	pStatus->uValidFields |= osl_FileStatus_Mask_FileName;

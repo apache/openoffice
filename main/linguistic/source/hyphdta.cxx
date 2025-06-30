@@ -58,7 +58,7 @@ HyphenatedWord::HyphenatedWord(const OUString &rWord, sal_Int16 nLang, sal_Int16
     nLanguage       (nLang)
 {
     String aSingleQuote( GetLocaleDataWrapper( nLanguage ).getQuotationMarkEnd() );
-    DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpectend length of quotation mark" );
+    DBG_ASSERT( 1 == aSingleQuote.Len(), "unexpected length of quotation mark" );
     if (aSingleQuote.Len())
     { 
         // ignore typographical apostrophes (which got replaced in original
@@ -198,4 +198,3 @@ com::sun::star::uno::Reference < com::sun::star::linguistic2::XPossibleHyphens >
 ///////////////////////////////////////////////////////////////////////////
 
 }	// namespace linguistic
-

@@ -593,7 +593,7 @@ oslGenericFunction ODriver::getOdbcFunction(sal_Int32 _nIndex) const
 	switch(_nIndex)
 	{
 		case ODBC3SQLAllocHandle:
-			pFunction = (oslGenericFunction)pODBC3SQLAllocHandle;;
+			pFunction = (oslGenericFunction)pODBC3SQLAllocHandle;
 			break;
 		case ODBC3SQLConnect:
 			pFunction = (oslGenericFunction)pODBC3SQLConnect;
@@ -1812,7 +1812,3 @@ void ODriver::convertOldVersion(const ::rtl::OUString& sDBName,const TDatabaseSt
 	} // namespace adabas
 }// namespace connectivity
 // -----------------------------------------------------------------------------
-
-
-
-

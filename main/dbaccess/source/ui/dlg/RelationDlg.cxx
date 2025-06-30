@@ -295,5 +295,3 @@ void ORelationDialog::notifyConnectionChange()
 	Init(m_pConnData);
 }
 // -----------------------------------------------------------------------------
-
-

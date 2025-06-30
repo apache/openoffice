@@ -776,6 +776,3 @@ void ScXMLDPConditionContext::EndElement()
 	}
 	pFilterContext->AddFilterField(aFilterField);
 }
-
-
-

@@ -90,4 +90,3 @@ Reference< XPropertySet > OKeyColumns::createDescriptor()
 	return pNew;
 }
 // -------------------------------------------------------------------------
-

@@ -2755,4 +2755,3 @@ sal_Bool SwCombinedCharField::PutValue( const uno::Any& rAny,
 	}
 	return sal_True;
 }
-

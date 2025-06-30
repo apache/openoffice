@@ -128,7 +128,7 @@ published service FillProperties
     [property] boolean FillBackground;
 
 	//-------------------------------------------------------------------------
-    /** If the property <memebr>FillStyle</member> is set to <const>
+    /** If the property <member>FillStyle</member> is set to <const>
         FillStyle::BITMAP</const>, this is the name of the used fill bitmap
         style.
 	*/
@@ -162,7 +162,7 @@ published service FillProperties
 
     //-------------------------------------------------------------------------
     /** Every second line of tiles is moved the given percent of the
-        witdh of the bitmap.
+        width of the bitmap.
     */
     [property] short FillBitmapOffsetX;
 

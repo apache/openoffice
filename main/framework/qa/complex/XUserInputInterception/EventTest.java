@@ -64,7 +64,7 @@ import static org.junit.Assert.*;
  * This <CODE>ComplexTest</CODE> checks the interface 
  * <CODE>XUserInputInterception</CODE>. Therefore it creates a document,
  * adds a mouse and a key listener onto the interface and fire the
- * correspond events. If all listener works as expected the test resluts in 
+ * correspond events. If all listener works as expected the test results in
  * <CODE>OK</CODE> status.
  * @short Check the interface XUserInputIntercaption
  * @descr checks is a simple way the interface XUserInputInteraction
@@ -93,7 +93,7 @@ public class EventTest {
     private SOfficeFactory m_SOF = null;
     
     /**
-     * define the miliseconds to wait until a <CODE>EventTrigger</CODE> thread should
+     * define the milliseconds to wait until a <CODE>EventTrigger</CODE> thread should
      * be finished with its work
      */
     final int m_threadWait = 3000;
@@ -130,7 +130,7 @@ public class EventTest {
     
     //-------------------------------------------
     /**
-     * creates the mebmer <CODE>m_xMSF</CODE> and <CODE>m_SOF</CODE>
+     * creates the member <CODE>m_xMSF</CODE> and <CODE>m_SOF</CODE>
      * @short Create the environment for following tests.
      * @descr create an empty test frame, where we can load
      * different components inside.
@@ -346,7 +346,7 @@ public class EventTest {
      * <CODE>m_mouseReleased</CODE> are <CODE>TRUE</CODE>
      * @param xUII the XUserInputInterception
      * @param xModel the XModel of a document
-     * @see EventTest.MyMouseClickHander
+     * @see EventTest.MyMouseClickHandler
      * @see EventTest.EventTrigger
      */
     
@@ -372,7 +372,7 @@ public class EventTest {
     }
     
     /**
-     * returns the <CODE>XUserInputInterception</CODE> from the <CODE>XMdoel</CODE>
+     * returns the <CODE>XUserInputInterception</CODE> from the <CODE>XModel</CODE>
      * @param xModel the XModel of a document
      * @return the <CODE>XUserInputInterception</CODE> of the document
      */
@@ -382,7 +382,7 @@ public class EventTest {
 
         XUserInputInterception xUII = UnoRuntime.queryInterface(XUserInputInterception.class, xController);
         if (xUII == null) {
-            fail("could not get XUserInputInterception from XContoller");
+            fail("could not get XUserInputInterception from XController");
         }
          return xUII;
     }
@@ -396,7 +396,7 @@ public class EventTest {
          * This event sets the member <code>m_keyPressed</coed> to
          *  <code>true</code>
          * @param oEvent The key event informs about the pressed key.
-         * @return returns <CODE>TRUE</CODE> in erery case
+         * @return returns <CODE>TRUE</CODE> in every case
          */
         public boolean keyPressed( KeyEvent oEvent ){
             System.out.println("XKeyHandler: keyPressed-Event");
@@ -407,7 +407,7 @@ public class EventTest {
          * This event sets the member <code>m_keyReleased</coed> to
          *  <code>true</code>
          * @param oEvent The key event informs about the pressed key.
-         * @return returns <CODE>TRUE</CODE> in erery case
+         * @return returns <CODE>TRUE</CODE> in every case
          */
         public boolean keyReleased( KeyEvent oEvent ){
             System.out.println("XKeyHandler: keyReleased-Event");
@@ -432,7 +432,7 @@ public class EventTest {
          * This event sets the member <code>m_mousePressed</coed> to
          *  <code>true</code>
          * @param oEvent The mouse event informs about the kind of mouse event.
-         * @return returns <CODE>TRUE</CODE> in erery case
+         * @return returns <CODE>TRUE</CODE> in every case
          */
         public boolean mousePressed( MouseEvent oEvent ){
             System.out.println("XMouseClickHandler: mousePressed-Event");
@@ -443,7 +443,7 @@ public class EventTest {
          * This event sets the member <code>m_mouseReleased</coed> to
          *  <code>true</code>
          * @param oEvent The mouse event informs about the kind of mouse event.
-         * @return returns <CODE>TRUE</CODE> in erery case
+         * @return returns <CODE>TRUE</CODE> in every case
          */
         public boolean mouseReleased( MouseEvent oEvent ){
             System.out.println("XMouseClickHandler: mouseReleased-Event");
@@ -481,8 +481,8 @@ public class EventTest {
         private XModel xModel = null;
         
         /**
-         * Creates an instacne of this class. The parameter <CODE>eType</CODE> represents
-         * the kind of event which will be triggert at <CODE>run()</CODE>
+         * Creates an instance of this class. The parameter <CODE>eType</CODE> represents
+         * the kind of event which will be triggered at <CODE>run()</CODE>
          * @param model the model of a document
          * @param eType the kind of event which should be trigger
          */

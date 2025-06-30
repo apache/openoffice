@@ -199,7 +199,7 @@ static HTMLOptionEnum __FAR_DATA aHTMLFileNameFldFmtTable[] =
 	{ 0,				 	0 }
 };
 
-/*  */
+/* */
 
 sal_uInt16 SwHTMLParser::GetNumType( const String& rStr, sal_uInt16 nDfltType )
 {
@@ -666,4 +666,3 @@ void SwHTMLParser::InsertComment( const String& rComment, const sal_Char *pTag )
     if( bMoveFwd )
         pPam->Move( fnMoveForward );
 }
-

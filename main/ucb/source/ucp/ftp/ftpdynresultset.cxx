@@ -81,7 +81,3 @@ void DynamicResultSet::initDynamic()
 	
 	m_xResultSet2 = m_xResultSet1;
 }
-
-
-
-

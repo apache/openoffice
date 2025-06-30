@@ -135,5 +135,3 @@ void SwBaseShell::InsertURLButton(const String& rURL, const String& rTarget, con
     rSh.EndUndo( UNDO_UI_INSERT_URLBTN );
 	rSh.EndAction();
 }
-
-

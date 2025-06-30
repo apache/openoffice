@@ -202,4 +202,3 @@ void HierarchyUri::init() const
         }
     }
 }
-

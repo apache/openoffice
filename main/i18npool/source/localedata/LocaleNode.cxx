@@ -382,7 +382,7 @@ void LCCTYPENode::generateCode (const OFileWriter &of) const
 	}
 	::rtl::OUString str =   getAttr() -> getValueByName("unoid");
 	of.writeAsciiString("\n\n");
-	of.writeParameter("LC_CTYPE_Unoid", str);;
+	of.writeParameter("LC_CTYPE_Unoid", str);
 
     OUString aDateSep =
         writeParameterCheckLen( of, "DateSeparator", "dateSeparator", 1, 1);

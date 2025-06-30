@@ -2142,7 +2142,7 @@ void SwCursor::RestoreSavePos()		// Point auf die SavePos setzen
 }
 
 
-/*  */
+/* */
 
 SwTableCursor::SwTableCursor( const SwPosition &rPos, SwPaM* pRing )
 	: SwCursor( rPos, pRing, false )
@@ -2409,5 +2409,3 @@ sal_Bool SwTableCursor::HasReadOnlyBoxSel() const
 		}
 	return bRet;
 }
-
-

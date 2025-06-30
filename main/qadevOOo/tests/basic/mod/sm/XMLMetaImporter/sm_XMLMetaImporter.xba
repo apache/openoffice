@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -48,7 +48,7 @@ option explicit
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' sm.XMLMetaImporter
 '*************************************************************************
 On Error Goto ErrHndl
@@ -58,7 +58,7 @@ On Error Goto ErrHndl
     oSrcDocument = oDoc
     oObj.setTargetDocument(oDoc)
 
-    sTitle = "XMLMetaImporter Title" 
+    sTitle = "XMLMetaImporter Title"
     sName = "XMLMetaImporter"
     sValue = "XMLMetaImporter_Value"
     vXMLData = Array( _
@@ -87,7 +87,7 @@ Function CheckImport() As Boolean
     Dim res As Boolean
     Dim i As Integer
     Dim docInfo As Object
-    Dim fieldValue, fieldName, title as String 
+    Dim fieldValue, fieldName, title as String
     docInfo = oDoc.getDocumentInfo()
     res = false
     For i = 0 to docInfo.getUserFieldCount() - 1
@@ -96,7 +96,7 @@ Function CheckImport() As Boolean
         out.log("Field name: " + fieldName + " Value: " + fieldValue)
         If (fieldName = sName) and (fieldValue = sValue) then
             res = true
-        EndIf    
+        EndIf
     Next i
 
     title = docInfo.getPropertyValue("Title")

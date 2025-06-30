@@ -481,4 +481,3 @@ uno::Sequence<rtl::OUString> SAL_CALL ScDocumentConfiguration::getSupportedServi
 }
 
 //-------------------------------------------------------------------------
-

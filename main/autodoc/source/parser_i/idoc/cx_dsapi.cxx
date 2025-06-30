@@ -524,4 +524,3 @@ Context_Docu::SetMode_IsMultiLine( bool	i_bTrue )
 
 }   // namespace dsapi
 }   // namespace csi
-

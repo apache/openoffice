@@ -331,5 +331,3 @@ VbaFontBase::getUnderline() throw ( uno::RuntimeException )
 */
 	return uno::makeAny( nValue );
 }
-
-

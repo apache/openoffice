@@ -203,7 +203,7 @@ void SAL_CALL SystemExec::dispatchWithNotification( const css::util::URL&       
 void SAL_CALL SystemExec::addStatusListener( const css::uno::Reference< css::frame::XStatusListener >&,
                                              const css::util::URL& ) throw( css::uno::RuntimeException )
 {
-    // not suported yet
+    // not supported yet
 }
 
 //_________________________________________________________________________________________________________________
@@ -211,7 +211,7 @@ void SAL_CALL SystemExec::addStatusListener( const css::uno::Reference< css::fra
 void SAL_CALL SystemExec::removeStatusListener( const css::uno::Reference< css::frame::XStatusListener >&,
                                                 const css::util::URL& ) throw( css::uno::RuntimeException )
 {
-    // not suported yet
+    // not supported yet
 }
 
 //_________________________________________________________________________________________________________________

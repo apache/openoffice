@@ -41,59 +41,53 @@
 <bookmark xml-lang="en-US" branch="hid/.uno:SelectionMode" id="bm_id3144740" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:StatusSelectionMode" id="bm_id2039489" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:StatusSelectionMode" id="bm_id3149495" localize="false"/>
-<paragraph role="heading" id="hd_id3148668" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/20050000.xhp" name="Selection Mode">Selection Mode</link></paragraph>
-<paragraph role="paragraph" id="par_id3146130" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".uno:StatusSelectionMode">Displays the current selection mode. You can switch between STD = Standard, EXT = Extend, ADD = Add, BLK = Block selection.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148668" xml-lang="en-US" level="1" l10n="U"><link href="text/shared/02/20050000.xhp" name="Selection Mode">Selection Mode</link></paragraph>
+<paragraph role="paragraph" id="par_id3146130" xml-lang="en-US" l10n="CHG"><ahelp hid=".uno:StatusSelectionMode">Displays the current selection mode. You can switch between STD = Standard, EXT = Extend, ADD = Add, BLK = Block selection.</ahelp></paragraph>
 </section>
-<paragraph role="paragraph" id="par_id3153894" xml-lang="en-US" l10n="U" oldref="3">Each click in the field cycles through the available options:</paragraph>
+<paragraph role="paragraph" id="par_id3153894" xml-lang="en-US" l10n="U">Each click in the field cycles through the available options:</paragraph>
 <table id="tbl_id3157991">
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="U" oldref="4">
-<emph>Display</emph>
-</paragraph>
+<paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="U"><emph>Display</emph></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3149095" xml-lang="en-US" l10n="U" oldref="5">
-<emph>Mode</emph>
-</paragraph>
+<paragraph role="paragraph" id="par_id3149095" xml-lang="en-US" l10n="U"><emph>Mode</emph></paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3155941" xml-lang="en-US" l10n="U" oldref="6">
-<emph>Effect</emph>
-</paragraph>
+<paragraph role="paragraph" id="par_id3155941" xml-lang="en-US" l10n="U"><emph>Effect</emph></paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3149827" xml-lang="en-US" l10n="U" oldref="7">STD</paragraph>
+<paragraph role="paragraph" id="par_id3149827" xml-lang="en-US" l10n="U">STD</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3152780" xml-lang="en-US" l10n="U" oldref="8">Standard mode</paragraph>
+<paragraph role="paragraph" id="par_id3152780" xml-lang="en-US" l10n="U">Standard mode</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3147209" xml-lang="en-US" l10n="U" oldref="9">Click in text where you want to position the cursor; click in a cell to make it the active cell. Any other selection is then deselected.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3149763" xml-lang="en-US" l10n="U" oldref="10">EXT</paragraph>
-</tablecell>
-<tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3149580" xml-lang="en-US" l10n="U" oldref="11">Extension mode (F8)</paragraph>
-</tablecell>
-<tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3153717" xml-lang="en-US" l10n="U" oldref="12">Clicking in the text extends or crops the current selection.</paragraph>
+<paragraph role="paragraph" id="par_id3147209" xml-lang="en-US" l10n="U">Click in text where you want to position the cursor; click in a cell to make it the active cell. Any other selection is then deselected.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3154047" xml-lang="en-US" l10n="U" oldref="13">ADD</paragraph>
+<paragraph role="paragraph" id="par_id3149763" xml-lang="en-US" l10n="U">EXT</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3147620" xml-lang="en-US" l10n="U" oldref="14">Additional selection mode (Shift+F8)</paragraph>
+<paragraph role="paragraph" id="par_id3149580" xml-lang="en-US" l10n="U">Extension mode (F8)</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id3154307" xml-lang="en-US" l10n="U" oldref="15">A new selection is added to an existing selection. The result is a multiple selection.</paragraph>
+<paragraph role="paragraph" id="par_id3153717" xml-lang="en-US" l10n="U">Clicking in the text extends or crops the current selection.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154047" xml-lang="en-US" l10n="U">ADD</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147620" xml-lang="en-US" l10n="U">Additional selection mode (Shift+F8)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154307" xml-lang="en-US" l10n="U">A new selection is added to an existing selection. The result is a multiple selection.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>

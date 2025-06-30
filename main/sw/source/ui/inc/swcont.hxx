@@ -97,7 +97,7 @@ public:
 									//zuerst nach Position dann nach Name sortieren
 									return nYPosition != rCont.nYPosition ?
 										nYPosition < rCont.nYPosition :
-											sContentName < rCont.sContentName;;
+											sContentName < rCont.sContentName;
 								}
 
 	long		GetYPos() const {return nYPosition;}

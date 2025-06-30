@@ -127,4 +127,3 @@ void ModifyListenerCallBack::stopListening()
 }
 
 } // namespace chart
-

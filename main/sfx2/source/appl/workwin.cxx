@@ -3135,4 +3135,3 @@ void SfxWorkWindow::DataChanged_Impl( const DataChangedEvent& )
 
     ArrangeChilds_Impl();
 }
-

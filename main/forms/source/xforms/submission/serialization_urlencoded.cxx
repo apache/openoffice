@@ -202,5 +202,3 @@ Reference< XInputStream > CSerializationURLEncoded::getInputStream()
 {
     return Reference< XInputStream >(m_aPipe, UNO_QUERY);
 }
-
-

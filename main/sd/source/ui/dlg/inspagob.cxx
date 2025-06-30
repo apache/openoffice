@@ -180,5 +180,3 @@ IMPL_LINK( SdInsertPagesObjsDlg, SelectObjectHdl, void *, EMPTYARG )
 
 	return( 0 );
 }
-
-

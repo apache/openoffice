@@ -31,6 +31,7 @@
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/embed/XTransactedObject.hpp>
 #include <com/sun/star/embed/XClassifiedObject.hpp>
+#include <com/sun/star/uno/XComponentContext.hpp>
 
 
 #include <com/sun/star/io/XOutputStream.hpp>
@@ -57,7 +58,7 @@ class OLESimpleStorage	: public ::cppu::WeakImplHelper3
 	BaseStorage* m_pStorage;
 
 	::cppu::OInterfaceContainerHelper* m_pListenersContainer; // list of listeners
-	::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > m_xFactory;
+	::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > m_xContext;
 
 	sal_Bool m_bNoTemporaryCopy;
 	
@@ -71,7 +72,7 @@ class OLESimpleStorage	: public ::cppu::WeakImplHelper3
 
 public:
 
-	OLESimpleStorage( ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > xFactory );
+	OLESimpleStorage( ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > xContext );
 
 	virtual ~OLESimpleStorage();
 
@@ -79,7 +80,7 @@ public:
 	static ::rtl::OUString SAL_CALL impl_staticGetImplementationName();
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 		impl_staticCreateSelfInstance(
-			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceManager );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& xContext );
 
 
 	//____________________________________________________________________________________________________

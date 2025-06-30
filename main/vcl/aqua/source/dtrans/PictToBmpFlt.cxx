@@ -189,4 +189,3 @@ bool PNGToImage( com::sun::star::uno::Sequence<sal_Int8>& rPngData,
 	[pOut getBytes: rImgData.getArray() length: nImgSize];
 	return (nImgSize > 0);
 }
-

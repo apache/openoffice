@@ -54,7 +54,7 @@ move_ToParent( Node * &   io_node,
 
 
 
-}   // namepace anonymous
+}   // namespace anonymous
 
 
 

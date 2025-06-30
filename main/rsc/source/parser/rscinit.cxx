@@ -934,4 +934,3 @@ void RscTypCont::Init()
 
 	aNmTb.SetSort();
 }
-

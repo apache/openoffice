@@ -165,6 +165,3 @@ void ScGridMerger::Flush()
 		nCount = 0;
 	}
 }
-
-
-

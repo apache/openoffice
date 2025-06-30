@@ -169,7 +169,7 @@ uno::Any CreateEventData_Impl( const SvxMacro *pMacro )
 			uno::Sequence < beans::PropertyValue > aProperties(3);
             beans::PropertyValue *pValues = aProperties.getArray();
 
-			::rtl::OUString aType = ::rtl::OUString::createFromAscii( STAR_BASIC );;
+			::rtl::OUString aType = ::rtl::OUString::createFromAscii( STAR_BASIC );
             ::rtl::OUString aLib  = pMacro->GetLibName();
             ::rtl::OUString aMacro = pMacro->GetMacName();
 

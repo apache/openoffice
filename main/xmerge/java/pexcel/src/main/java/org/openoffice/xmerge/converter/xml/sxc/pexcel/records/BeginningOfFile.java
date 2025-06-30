@@ -33,7 +33,7 @@ import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 
 /**
  *  This class describes the beginning of file. It is the 
- *  the Biff record that marks the beginning of a a worbook
+ *  the Biff record that marks the beginning of a a workbook
  *  or the beginning of worksheets in the workbook
  *
  */

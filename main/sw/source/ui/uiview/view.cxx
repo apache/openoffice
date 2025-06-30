@@ -19,11 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include <string> // HACK: prevent conflict between STLPORT and Workshop headers
 #include <stdlib.h>
@@ -110,14 +107,12 @@
 #include <com/sun/star/document/XDocumentProperties.hpp>
 #include <com/sun/star/document/XDocumentPropertiesSupplier.hpp>
 
-
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::lang;
 using namespace ::com::sun::star::scanner;
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
-
 
 extern sal_Bool bNoInterrupt; // in mainwn.cxx
 
@@ -248,9 +243,7 @@ IMPL_LINK( SwView, FormControlActivated, FmFormShell*, EMPTYARG )
 void SwView::SelectShell()
 {
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//
 //		Achtung: SelectShell fuer die WebView mitpflegen
-//
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 		  if(bInDtor)
@@ -893,7 +886,7 @@ SwView::SwView( SfxViewFrame *_pFrame, SfxViewShell* pOldSh )
 	const bool bIsDocModified = pWrtShell->GetDoc()->IsModified();
 	// <--
 
-	// JP 05.02.99: Bug 61495 - damit unter anderem das HLineal im
+	// JP 05.02.99: Bug 61495 - damit unter anderem der HRuler im
 	//				ReadonlyFall nicht angezeigt wird
 	aUsrPref.SetReadonly( pWrtShell->GetViewOptions()->IsReadonly() );
 
@@ -923,7 +916,7 @@ SwView::SwView( SfxViewFrame *_pFrame, SfxViewShell* pOldSh )
 	StartListening( *pViewFrame, sal_True );
 	StartListening( *pDocSh, sal_True );
 
-	// Vom HLineal den ZOOM-Faktor einstellen
+	// Vom HRuler den ZOOM-Faktor einstellen
 	Fraction aZoomFract( aUsrPref.GetZoom(), 100 );
 	pHRuler->SetZoom( aZoomFract );
 	pVRuler->SetZoom( aZoomFract );
@@ -967,11 +960,11 @@ SwView::SwView( SfxViewFrame *_pFrame, SfxViewShell* pOldSh )
 	if( aUsrPref.IsViewHRuler() )
 		CreateTab();
 	if( aUsrPref.IsViewVRuler() )
-		CreateVLineal();
+		CreateVRuler();
 
 	pWrtShell->SetUIOptions( aUsrPref );
 	pWrtShell->SetReadOnlyAvailable( aUsrPref.IsCursorInProtectedArea() );
-	pWrtShell->ApplyAccessiblityOptions(SW_MOD()->GetAccessibilityOptions());
+	pWrtShell->ApplyAccessibilityOptions(SW_MOD()->GetAccessibilityOptions());
 
 	if( pWrtShell->GetDoc()->IsUpdateExpFld() )
 	{
@@ -1665,9 +1658,9 @@ void SwView::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 					rSh.SetReadonlyOption( GetDocShell()->IsReadOnly() );
 
                     if ( rSh.GetViewOptions()->IsViewVRuler() )
-                        CreateVLineal();
+                        CreateVRuler();
 					else
-                        KillVLineal();
+                        KillVRuler();
                     if ( rSh.GetViewOptions()->IsViewHRuler() )
                         CreateTab();
 					else
@@ -1759,7 +1752,6 @@ void SwView::ScannerEventHdl( const EventObject& /*rEventObject*/ )
 /*-----------------04.03.97 15:07-------------------
 
 --------------------------------------------------*/
-
 
 void	SwView::StopShellTimer()
 {
@@ -1899,3 +1891,5 @@ void InitPrintOptionsFromApplication(SwPrintData & o_rData, bool const bWeb)
 }
 
 } // namespace sw
+
+/* vim: set noet sw=4 ts=4: */

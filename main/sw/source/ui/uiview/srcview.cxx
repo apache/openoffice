@@ -552,7 +552,7 @@ void SwSrcView::GetState(SfxItemSet& rSet)
 					nCount = rMgr.GetUndoActionCount();
 					if(nCount)
 					{
-						String aStr(SvtResId( STR_UNDO));;
+						String aStr(SvtResId( STR_UNDO));
 						aStr += rMgr.GetUndoActionComment(--nCount);
 						rSet.Put(SfxStringItem(nWhich, aStr));
 					}
@@ -564,7 +564,7 @@ void SwSrcView::GetState(SfxItemSet& rSet)
 					nCount = rMgr.GetRedoActionCount();
 					if(nCount)
 					{
-						String aStr(SvtResId( STR_REDO));;
+						String aStr(SvtResId( STR_REDO));
 						aStr += rMgr.GetRedoActionComment(--nCount);
 						rSet.Put(SfxStringItem(nWhich,aStr));
 					}
@@ -947,5 +947,3 @@ void SwSrcView::Load(SwDocShell* pDocShell)
 	aEditWin.GetTextEngine()->ResetUndo();
 	aEditWin.GetOutWin()->GrabFocus();
 }
-
-

@@ -166,4 +166,3 @@ SwAccessibleChildSList_const_iterator& SwAccessibleChildSList_const_iterator::op
 {
     return rList.IsVisibleChildrenOnly() ? next_visible() : next();
 }
-

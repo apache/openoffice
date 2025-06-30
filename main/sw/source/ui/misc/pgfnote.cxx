@@ -178,7 +178,7 @@ SwFootNotePage::SwFootNotePage(Window *pParent, const SfxItemSet &rSet) :
 	SetMetric( aLineDistEdit, 	aMetric );
 	MeasurementSystem eSys = SvtSysLocale().GetLocaleData().getMeasurementSystemEnum();
 	long nHeightValue = MEASURE_METRIC != eSys ? 1440 : 1134;
-	aMaxHeightEdit.SetValue(aMaxHeightEdit.Normalize(nHeightValue),FUNIT_TWIP);;
+	aMaxHeightEdit.SetValue(aMaxHeightEdit.Normalize(nHeightValue),FUNIT_TWIP);
 	aMaxHeightEdit.SetAccessibleRelationLabeledBy(&aMaxHeightBtn);
 }
 
@@ -364,6 +364,3 @@ sal_uInt16* SwFootNotePage::GetRanges()
 {
 	return aPageRg;
 }
-
-
-

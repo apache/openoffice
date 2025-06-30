@@ -1173,5 +1173,3 @@ IMPL_LINK(SwSvxNumBulletTabDialog, RemoveNumberingHdl, PushButton*, EMPTYARG)
 	EndDialog(RET_USER);
 	return 0;
 }
-
-

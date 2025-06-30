@@ -68,7 +68,7 @@
 #include <srcview.hxx>
 #include <wrtsh.hxx>
 #include <docsh.hxx>
-#include <cmdid.h>		  	// Funktion-Ids
+#include <cmdid.h>		  	// Function-Ids
 #include <initui.hxx>
 #include <uitool.hxx>
 #include <swmodule.hxx>
@@ -82,7 +82,7 @@
 #include <cfgitems.hxx>
 #include <prtopt.hxx>
 #include <modcfg.hxx>
-#include <globals.h>		// globale Konstanten z.B.
+#include <globals.h>		// global Constants i.e.
 #include <app.hrc>
 #include <fontcfg.hxx>
 #include <barcfg.hxx>
@@ -115,13 +115,13 @@
 using namespace ::com::sun::star;
 
 /*--------------------------------------------------------------------
-	Beschreibung: Slotmaps fuer Methoden der Applikation
+	Description: Slotmaps for Methods of Application
  --------------------------------------------------------------------*/
 
 
-// hier werden die SlotID's included
-// siehe Idl-File
-//
+// SlotID's included here
+// see Idl-File
+
 #define SwModule
 #define ViewSettings
 #define WebViewSettings
@@ -145,7 +145,7 @@ SFX_IMPL_INTERFACE( SwModule, SfxModule, SW_RES(RID_SW_NAME) )
 
 
 /*--------------------------------------------------------------------
-	Beschreibung: Andere States
+	Description: Other States
  --------------------------------------------------------------------*/
 
 
@@ -208,9 +208,9 @@ void SwModule::StateOther(SfxItemSet &rSet)
 	}
 }
 
-/*-- 06.04.2004 15:21:43---------------------------------------------------
+/*-- 2004-04-06 3:21:43 PM---------------------------------------------------
 
-  -----------------------------------------------------------------------*/
+  ---------------------------------------------------------------------------*/
 SwView* lcl_LoadDoc(SwView* pView, const String& rURL)
 {
     SwView* pNewView = 0;
@@ -256,7 +256,7 @@ SwView* lcl_LoadDoc(SwView* pView, const String& rURL)
     return pNewView;
 }
 /*--------------------------------------------------------------------
-	Beschreibung:	Felddialog starten
+	Description:	Start Field Dialog
  --------------------------------------------------------------------*/
 
 void NewXForms( SfxRequest& rReq ); // implementation: below
@@ -678,11 +678,11 @@ void SwModule::ExecOther(SfxRequest& rReq)
 }
 
 /*--------------------------------------------------------------------
-	Beschreibung: Notifies abfangen
+	Description: Intercept Notifies
  --------------------------------------------------------------------*/
 
 
-	// Hint abfangen fuer DocInfo
+	// Intercept Hint for DocInfo
 void SwModule::Notify( SfxBroadcaster& /*rBC*/, const SfxHint& rHint )
 {
 	if( rHint.ISA( SfxEventHint ) )
@@ -720,14 +720,14 @@ void SwModule::Notify( SfxBroadcaster& /*rBC*/, const SfxHint& rHint )
                     {
                         pWrtSh->UpdateInputFlds();
 
-                        // Sind Datenbankfelder enthalten?
-                        // Erstmal alle verwendeten Datenbanken holen
+                        // Does it contain database fields?
+                        // Fetch all used databases first
                         SwDoc *pDoc = pDocSh->GetDoc();
                         SvStringsDtor aDBNameList;
                         pDoc->GetAllUsedDB( aDBNameList );
                         sal_uInt16 nCount = aDBNameList.Count();
                         if (nCount)
-                        {   // Datenbankbeamer oeffnen
+                        {   // Open database beamer
                             ShowDBObj(pWrtSh->GetView(), pDoc->GetDBData());
                         }
                     }
@@ -837,9 +837,9 @@ void SwModule::ConfigurationChanged( utl::ConfigurationBroadcaster* pBrdCst, sal
                     if(bAccessibility)
                     {
                         if(pViewShell->IsA(aSwViewTypeId))
-                            ((SwView*)pViewShell)->ApplyAccessiblityOptions(*pAccessibilityOptions);
+                            ((SwView*)pViewShell)->ApplyAccessibilityOptions(*pAccessibilityOptions);
                         else if(pViewShell->IsA(aSwPreViewTypeId))
-                            ((SwPagePreView*)pViewShell)->ApplyAccessiblityOptions(*pAccessibilityOptions);
+                            ((SwPagePreView*)pViewShell)->ApplyAccessibilityOptions(*pAccessibilityOptions);
                     }
                     pViewShell->GetWindow()->Invalidate();
                 }
@@ -866,18 +866,18 @@ void SwModule::ConfigurationChanged( utl::ConfigurationBroadcaster* pBrdCst, sal
 
 }
 
-/* -----------------------------20.02.01 12:43--------------------------------
+/* -----------------------------2001-01-02 12:43 PM--------------------------------
 
- ---------------------------------------------------------------------------*/
+ ---------------------------------------------------------------------------------- */
 SwDBConfig*	SwModule::GetDBConfig()
 {
 	if(!pDBConfig)
 		pDBConfig = new SwDBConfig;
 	return pDBConfig;
 }
-/* -----------------------------11.04.2002 15:27------------------------------
+/* -----------------------------2002-04-11 03:27 PM------------------------------
 
- ---------------------------------------------------------------------------*/
+ -------------------------------------------------------------------------------- */
 svtools::ColorConfig& SwModule::GetColorConfig()
 {
     if(!pColorConfig)
@@ -888,9 +888,9 @@ svtools::ColorConfig& SwModule::GetColorConfig()
     }
     return *pColorConfig;
 }
-/* -----------------------------06.05.2002 09:42------------------------------
+/* -----------------------------2002-05-06 09:42 AM------------------------------
 
- ---------------------------------------------------------------------------*/
+ -------------------------------------------------------------------------------- */
 SvtAccessibilityOptions& SwModule::GetAccessibilityOptions()
 {
     if(!pAccessibilityOptions)
@@ -900,9 +900,9 @@ SvtAccessibilityOptions& SwModule::GetAccessibilityOptions()
     }
     return *pAccessibilityOptions;
 }
-/* -----------------06.05.2003 14:52-----------------
+/* -----------------2003-05-06 02:52 PM-----------------
 
- --------------------------------------------------*/
+ ------------------------------------------------------- */
 SvtCTLOptions& SwModule::GetCTLOptions()
 {
     if(!pCTLOptions)
@@ -912,9 +912,9 @@ SvtCTLOptions& SwModule::GetCTLOptions()
     }
     return *pCTLOptions;
 }
-/* -----------------07.07.2003 09:31-----------------
+/* -----------------2003-07-07 09:31 AM-----------------
 
- --------------------------------------------------*/
+ ------------------------------------------------------- */
 SvtUserOptions& SwModule::GetUserOptions()
 {
     if(!pUserOptions)
@@ -924,9 +924,9 @@ SvtUserOptions& SwModule::GetUserOptions()
     }
     return *pUserOptions;
 }
-/* -----------------18.07.2003 13:31-----------------
+/* -----------------2003-07-18 01:31 PM-----------------
 
- --------------------------------------------------*/
+ ------------------------------------------------------- */
 SvtUndoOptions& SwModule::GetUndoOptions()
 {
     if(!pUndoOptions)
@@ -936,16 +936,15 @@ SvtUndoOptions& SwModule::GetUndoOptions()
     }
     return *pUndoOptions;
 }
-/*-----------------30.01.97 08.30-------------------
+/*-----------------1997-01-30 08:30 AM-------------------
 
---------------------------------------------------*/
+--------------------------------------------------------- */
 const SwMasterUsrPref *SwModule::GetUsrPref(sal_Bool bWeb) const
 {
 	SwModule* pNonConstModule = (SwModule*)this;
 	if(bWeb && !pWebUsrPref)
 	{
-		// im Load der SwMasterUsrPref wird der SpellChecker gebraucht, dort darf
-		// er aber nicht angelegt werden #58256#
+		// Spellchecker is needed in Load of SwMasterUsrPref, but it may not be placed there #58256#
 		pNonConstModule->pWebUsrPref = new SwMasterUsrPref(sal_True);
 	}
 	else if(!bWeb && !pUsrPref)

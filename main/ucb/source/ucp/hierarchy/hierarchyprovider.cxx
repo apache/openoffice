@@ -331,4 +331,3 @@ HierarchyContentProvider::getOfficeInstallationDirectories()
     }
     return m_xOfficeInstDirs;
 }
-

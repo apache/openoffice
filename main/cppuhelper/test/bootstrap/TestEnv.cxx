@@ -121,4 +121,3 @@ extern "C" void uno_ext_getMapping(uno_Mapping     ** ppMapping,
 {
 	cppu::helper::purpenv::createMapping(ppMapping, pFrom, pTo);
 }
-

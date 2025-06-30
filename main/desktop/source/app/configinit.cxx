@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_desktop.hxx"
@@ -78,11 +75,11 @@ typedef uno::Reference< lang::XMultiServiceFactory > ConfigurationProvider;
 
 OUString getMsgString( sal_uInt16 nId, char const * aFallBackMsg )
 {
-    ResMgr* pResMgr = Desktop::GetDesktopResManager();
-    if ( !pResMgr || !nId )
-        return OUString::createFromAscii(aFallBackMsg);
-    else
-        return OUString( String(ResId( nId, *pResMgr )));
+	ResMgr* pResMgr = Desktop::GetDesktopResManager();
+	if ( !pResMgr || !nId )
+		return OUString::createFromAscii(aFallBackMsg);
+	else
+		return OUString( String(ResId( nId, *pResMgr )));
 }
 // ----------------------------------------------------------------------------
 /** Creates the normal configuration provider.
@@ -91,42 +88,42 @@ OUString getMsgString( sal_uInt16 nId, char const * aFallBackMsg )
 static
 ConfigurationProvider createDefaultConfigurationProvider( )
 {
-    uno::Reference< lang::XMultiServiceFactory > xServiceManager = ::comphelper::getProcessServiceFactory();
+	uno::Reference< lang::XMultiServiceFactory > xServiceManager = ::comphelper::getProcessServiceFactory();
 
-    OSL_ENSURE( xServiceManager.is(),"No ServiceManager set for CreateApplicationConfigurationProvider");
+	OSL_ENSURE( xServiceManager.is(),"No ServiceManager set for CreateApplicationConfigurationProvider");
 
-    ConfigurationProvider xProvider;
+	ConfigurationProvider xProvider;
 
-    if (xServiceManager.is())
-    {
-   
-            xProvider.set( xServiceManager->createInstance(k_PROVIDER),  UNO_QUERY);
-    }
+	if (xServiceManager.is())
+	{
 
-    if (!xProvider.is())
-    {
-        OUString const sMsg = OUSTRING("Service \"") + k_PROVIDER + 
-                                OUSTRING("\" is not available at the service manager.");
+			xProvider.set( xServiceManager->createInstance(k_PROVIDER),  UNO_QUERY);
+	}
 
-        throw lang::ServiceNotRegisteredException(sMsg, xServiceManager);
-    }
+	if (!xProvider.is())
+	{
+		OUString const sMsg = OUSTRING("Service \"") + k_PROVIDER +
+							  OUSTRING("\" is not available at the service manager.");
 
-    return xProvider;
+		throw lang::ServiceNotRegisteredException(sMsg, xServiceManager);
+	}
+
+	return xProvider;
 }
 // ----------------------------------------------------------------------------
-/// @attention this method must be called from a catch statement!
+// @attention this method must be called from a catch statement!
 static void handleGeneralException(uno::Exception& aException,
                                    const rtl::OUString& aMessage)
 {
-    aException.Message = aMessage ;
-    throw ;
+	aException.Message = aMessage ;
+	throw ;
 }
 // ----------------------------------------------------------------------------
 
 uno::Reference< lang::XMultiServiceFactory > CreateApplicationConfigurationProvider( )
 {
-    uno::Reference< lang::XMultiServiceFactory > xProvider;
-    
+	uno::Reference< lang::XMultiServiceFactory > xProvider;
+
     try
     {
         xProvider = createDefaultConfigurationProvider( );
@@ -140,25 +137,25 @@ uno::Reference< lang::XMultiServiceFactory > CreateApplicationConfigurationProvi
      catch (backend::CannotConnectException & exception)
     {
         handleGeneralException(exception,
-                getMsgString( STR_CONFIG_ERR_CANNOT_CONNECT, 
+                getMsgString( STR_CONFIG_ERR_CANNOT_CONNECT,
                             "A connection to your configuration settings could not be established. "));
     }
     catch (backend::BackendSetupException & exception)
     {
         handleGeneralException(exception,
-                getMsgString( STR_CONFIG_ERR_CANNOT_CONNECT, 
+                getMsgString( STR_CONFIG_ERR_CANNOT_CONNECT,
                             "A connection to your configuration settings could not be established. "));
     }
     catch (configuration::CannotLoadConfigurationException & exception)
     {
         handleGeneralException(exception,
-                getMsgString( STR_CONFIG_ERR_CANNOT_CONNECT, 
+                getMsgString( STR_CONFIG_ERR_CANNOT_CONNECT,
                             "A connection to your configuration settings could not be established. "));
     }
     catch (uno::Exception & exception)
     {
         handleGeneralException(exception,
-                getMsgString( STR_CONFIG_ERR_ACCESS_GENERAL, 
+                getMsgString( STR_CONFIG_ERR_ACCESS_GENERAL,
                             "A general error occurred while accessing your configuration settings."));
     }
 
@@ -168,9 +165,6 @@ uno::Reference< lang::XMultiServiceFactory > CreateApplicationConfigurationProvi
 // ----------------------------------------------------------------------------
 
 
-
-
-// ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
 // ConfigurationErrorHandler
 // ----------------------------------------------------------------------------
@@ -191,20 +185,20 @@ namespace
         void deinstall()    { uno::setCurrentContext(m_xChainedContext); }
 
         uno::Any getChainedValueByName( OUString const & aName) const
-        { 
-            return m_xChainedContext.is() 
-                            ? m_xChainedContext->getValueByName(aName) 
-                            : uno::Any(); 
+        {
+            return m_xChainedContext.is()
+                            ? m_xChainedContext->getValueByName(aName)
+                            : uno::Any();
         }
 
         // XCurrentContext
         virtual uno::Any SAL_CALL
-            getValueByName( OUString const & aName) 
+            getValueByName( OUString const & aName)
                 throw (uno::RuntimeException);
     };
-    
+
     uno::Any SAL_CALL
-        SimpleCurrentContext::getValueByName( OUString const & aName) 
+        SimpleCurrentContext::getValueByName( OUString const & aName)
             throw (uno::RuntimeException)
     {
         return getChainedValueByName(aName);
@@ -227,73 +221,71 @@ public:
 
     // XCurrentContext
     virtual uno::Any SAL_CALL
-        getValueByName( OUString const & aName) 
+        getValueByName( OUString const & aName)
             throw (uno::RuntimeException);
 
 private:
-    InteractionHandler  m_xHandler;
+	InteractionHandler  m_xHandler;
 };
 
 //------------------------------------------------------------------------------
-uno::Any SAL_CALL ConfigurationErrorHandler::Context::getValueByName( OUString const & aName) 
-        throw (uno::RuntimeException)
+uno::Any SAL_CALL ConfigurationErrorHandler::Context::getValueByName( OUString const & aName)
+		throw (uno::RuntimeException)
 {
-    if ( aName.equalsAscii( CONFIG_ERROR_HANDLER ) )
-    {
-        if ( !m_xHandler.is() )
-            m_xHandler = ConfigurationErrorHandler::getDefaultInteractionHandler();
-        return uno::Any( m_xHandler );
-    }
-    return SimpleCurrentContext::getValueByName( aName );
+	if ( aName.equalsAscii( CONFIG_ERROR_HANDLER ) )
+	{
+		if ( !m_xHandler.is() )
+			  m_xHandler = ConfigurationErrorHandler::getDefaultInteractionHandler();
+		return uno::Any( m_xHandler );
+	}
+	return SimpleCurrentContext::getValueByName( aName );
 }
 
 //------------------------------------------------------------------------------
 ConfigurationErrorHandler::~ConfigurationErrorHandler()
 {
-    deactivate();
+	deactivate();
 }
 
 //------------------------------------------------------------------------------
-/// installs the handler into the current context
+// installs the handler into the current context
 void ConfigurationErrorHandler::activate()
 {
-    if (!m_pContext) 
-    {
-        m_pContext = new Context;
-        m_pContext->acquire();
-    }
-    m_pContext->install();
+	if (!m_pContext)
+	{
+		m_pContext = new Context;
+		m_pContext->acquire();
+	}
+	m_pContext->install();
 }
 
 //------------------------------------------------------------------------------
-/// deinstalls the handler from the current context, restoring the previous context
+// deinstalls the handler from the current context, restoring the previous context
 void ConfigurationErrorHandler::deactivate()
 {
-    if (m_pContext) 
-    {
-        m_pContext->deinstall();
-        m_pContext->release();
-        m_pContext = 0;
-    }
+	if (m_pContext)
+	{
+		m_pContext->deinstall();
+		m_pContext->release();
+		m_pContext = 0;
+	}
 }
 //------------------------------------------------------------------------------
 
 ConfigurationErrorHandler::InteractionHandler ConfigurationErrorHandler::getDefaultInteractionHandler()
 {
-    uno::Reference< lang::XMultiServiceFactory > xServiceManager = ::comphelper::getProcessServiceFactory();
+	uno::Reference< lang::XMultiServiceFactory > xServiceManager = ::comphelper::getProcessServiceFactory();
 
-    OSL_ENSURE( xServiceManager.is(),"No ServiceManager set for ConfigurationErrorHandler");
+	OSL_ENSURE( xServiceManager.is(),"No ServiceManager set for ConfigurationErrorHandler");
 
-    InteractionHandler xHandler;
+	InteractionHandler xHandler;
 
-    if (xServiceManager.is())
-    {
-        xHandler.set( xServiceManager->createInstance(k_ERRORHANDLER), UNO_QUERY );
-    }
+	if (xServiceManager.is())
+	{
+		xHandler.set( xServiceManager->createInstance(k_ERRORHANDLER), UNO_QUERY );
+	}
 
-    return xHandler;
+	return xHandler;
 }
-//------------------------------------------------------------------------------
 
-
-
+/* vim: set noet sw=4 ts=4: */

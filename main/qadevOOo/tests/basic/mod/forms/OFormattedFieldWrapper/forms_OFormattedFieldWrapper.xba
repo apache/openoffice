@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -34,10 +34,10 @@ option explicit
 
 ' REQUIRED VARIABLES for interface/service tests:
 
-' Requiered for  com.sun.star.lang.XComponent
+' Required for  com.sun.star.lang.XComponent
  Global oComponentInstance As Object ' it will be disposed
 
-' Requiered for  com.sun.star.io.XPersistObject
+' Required for  com.sun.star.io.XPersistObject
  Global oPersistInstance As Object
 
 ' for XUpdateBroadcaster
@@ -49,7 +49,7 @@ Global oForm As Object
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' forms.OFormattedFieldWrapper
 '*************************************************************************
 On Error Goto ErrHndl
@@ -70,7 +70,7 @@ On Error Goto ErrHndl
     'get control from document
     oDrawPage = oDoc.DrawPage
     oForm = oDrawPage.Forms.getByName("Standard")
-    
+
     oForm.DataSourceName = "Bibliography"
     oForm.Command = "biblio"
     oForm.CommandType = com.sun.star.sdb.CommandType.TABLE
@@ -78,7 +78,7 @@ On Error Goto ErrHndl
     oObj.DataField = "Custom2"
 
     oForm.load()
-    
+
     ' for XUpdateBroadcaster
     bCustomUpdate = true
 
@@ -97,14 +97,14 @@ On Error Goto ErrHndl
         Dim URL as new com.sun.star.util.URL
         Dim noProps()
         Dim res as Boolean
-        
+
         frame = xDoc.getCurrentController().getFrame()
         URL.Complete = ".uno:SwitchControlDesignMode"
         transf = createUnoService("com.sun.star.util.URLTransformer")
         res = transf.parseStrict(URL)
-        
+
         out.log("URL parsed :" + res)
-        
+
         disp = frame.queryDispatch(URL, "", com.sun.star.frame.FrameSearchFlag.SELF _
                 OR com.sun.star.frame.FrameSearchFlag.CHILDREN)
 
@@ -119,19 +119,19 @@ End Sub
 Global sChangedText As String
 
 ' for XBoundComponent
-Sub prepareCommit() 
+Sub prepareCommit()
 On Error Goto ErrHndl
     Out.Log("prepareCommit() called.")
 
     if isNull(oObj.EffectiveValue) OR isEmpty(oObj.EffectiveValue) then
         oObj.EffectiveValue = "12"
-    endif 
+    endif
     sChangedText = "9" + oObj.EffectiveValue
-    
+
     Out.Log("Text was: '" + oObj.EffectiveValue + "', set to '" + sChangedText + "'")
 
     oObj.EffectiveValue = sChangedText
-    
+
     exit sub
 ErrHndl:
     Test.Exception()
@@ -142,9 +142,9 @@ Function checkCommit() As Boolean
 On Error Goto ErrHndl
     Out.Log("checkCommit() called.")
     Dim rowText As Variant
-    
+
     rowText = oForm.getString(oForm.findColumn("Custom2"))
-    
+
     Out.Log("Result test: '" + rowText + "'")
     checkCommit() = (rowText = sChangedText)
 

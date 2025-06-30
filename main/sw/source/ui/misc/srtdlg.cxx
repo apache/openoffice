@@ -520,9 +520,3 @@ IMPL_LINK( SwSortDlg, LanguageHdl, ListBox*, pLBox )
 	}
 	return 0;
 }
-
-
-
-
-
-

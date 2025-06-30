@@ -217,5 +217,3 @@ void GetASCWriter( const String& rFltNm, const String& /*rBaseURL*/, WriterRef& 
 {
   xRet = new SwASCWriter( rFltNm );
 }
-
-

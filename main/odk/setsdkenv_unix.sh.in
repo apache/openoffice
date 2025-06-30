@@ -1,6 +1,6 @@
 #! /bin/sh
 ###############################################################
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 ###############################################################
 
 # This script starts a new shell and sets all environment variables, which
@@ -210,7 +210,7 @@ case ${sdk_platform} in
 	PTHREAD_LIBS=-lc_r
 	export PTHREAD_CFLAGS
 	export PTHREAD_LIBS
-    else	
+    else
 	PTHREAD_LIBS=-pthread
 	export PTHREAD_LIBS
     fi
@@ -284,7 +284,7 @@ then
 #    Only necessary on MacOSX, on other Unix systems the links are already prepared
 #    in the SDK installation.
 
-#    prepare links 
+#    prepare links
     if [ "${OFFICE_HOME}" ]
     then
 	mkdir -p "${OO_SDK_OUT}/${directoryname}/lib"
@@ -322,11 +322,11 @@ then
 	    "${OO_SDK_OFFICE_LIB_DIR}/libuno_purpenvhelper${comid}.${soext}.3"
 
     fi
-fi 
+fi
 
 
 # Prepare shell with all necessary environment variables.
-echo 
+echo
 echo " ************************************************************************"
 echo " *"
 echo " * SDK environment is prepared for ${platform}"
@@ -354,4 +354,3 @@ echo " *"
 echo " ************************************************************************"
 
 echo "]2;Shell prepared with the SDK environment"
-

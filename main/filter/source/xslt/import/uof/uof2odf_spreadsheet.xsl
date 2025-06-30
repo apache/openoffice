@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,6 +20,7 @@
  * under the License.
  *
  ***********************************************************-->
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:uof="http://schemas.uof.org/cn/2003/uof" xmlns:表="http://schemas.uof.org/cn/2003/uof-spreadsheet" xmlns:演="http://schemas.uof.org/cn/2003/uof-slideshow" xmlns:字="http://schemas.uof.org/cn/2003/uof-wordproc" xmlns:图="http://schemas.uof.org/cn/2003/graph" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" office:version="1.0">
 	<xsl:output method="xml" indent="no" encoding="UTF-8" version="1.0"/>
 	<xsl:template match="uof:UOF">
@@ -3926,7 +3928,7 @@
 	<xsl:template name="drawpoints">
 		<xsl:param name="points"/>
 		<xsl:param name="value"/>
-		<xsl:variable name="frist-piont">
+		<xsl:variable name="first-point">
 			<xsl:value-of select="substring-before($points,'lineto')"/>
 		</xsl:variable>
 		<xsl:variable name="other-points">
@@ -3935,10 +3937,10 @@
 		<xsl:choose>
 			<xsl:when test="contains($other-points,'lineto')">
 				<xsl:variable name="x-coor">
-					<xsl:value-of select="substring-before($frist-piont,' ') * 1000"/>
+					<xsl:value-of select="substring-before($first-point,' ') * 1000"/>
 				</xsl:variable>
 				<xsl:variable name="y-coor">
-					<xsl:value-of select="substring-after($frist-piont,' ') * 1000"/>
+					<xsl:value-of select="substring-after($first-point,' ') * 1000"/>
 				</xsl:variable>
 				<xsl:variable name="all-points">
 					<xsl:value-of select="concat($value,$x-coor,',',$y-coor,' ')"/>
@@ -3950,10 +3952,10 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:variable name="q-x-coor">
-					<xsl:value-of select="substring-before($frist-piont,' ') * 1000"/>
+					<xsl:value-of select="substring-before($first-point,' ') * 1000"/>
 				</xsl:variable>
 				<xsl:variable name="q-y-coor">
-					<xsl:value-of select="substring-after($frist-piont,' ') * 1000"/>
+					<xsl:value-of select="substring-after($first-point,' ') * 1000"/>
 				</xsl:variable>
 				<xsl:variable name="e-x-coor">
 					<xsl:value-of select="substring-before($other-points,' ') * 1000"/>
@@ -6112,7 +6114,7 @@
 
 
 	 MEASURE LIST:
-	 * 1 milimeter (mm), the basic measure
+	 * 1 millimeter (mm), the basic measure
 
 	 * 1 centimeter (cm) = 10 mm
 
@@ -8975,7 +8977,7 @@
 						<xsl:with-param name="preceding-cellstylename" select="''"/>
 						<xsl:with-param name="temp-num" select="'0'"/>
 						<xsl:with-param name="cellstylename" select="$cellstylename"/>
-						<xsl:with-param name="table-collumns" select="$cell/ancestor::表:工作表内容//表:列"/>
+						<xsl:with-param name="table-columns" select="$cell/ancestor::表:工作表内容//表:列"/>
 					</xsl:call-template>
 				</xsl:variable>
 				<xsl:choose>

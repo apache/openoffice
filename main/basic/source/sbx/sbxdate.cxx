@@ -399,4 +399,3 @@ start:
 			SbxBase::SetError( SbxERR_CONVERSION );
 	}
 }
-

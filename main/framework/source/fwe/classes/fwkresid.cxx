@@ -58,4 +58,3 @@ FwkResId::FwkResId( sal_uInt16 nId ) :
 }
 
 }
-

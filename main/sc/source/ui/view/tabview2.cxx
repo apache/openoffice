@@ -975,6 +975,3 @@ void ScTabView::UpdatePageBreakData( sal_Bool bForcePaint )
 	delete pPageBreakData;
 	pPageBreakData = pNewData;
 }
-
-
-

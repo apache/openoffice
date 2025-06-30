@@ -240,7 +240,7 @@ sal_Int16 SAL_CALL OGenericUnoDialog::execute(  ) throw(RuntimeException)
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
 	Dialog* pDialogToExecute = NULL;
-	// create the dialog, if neccessary
+	// create the dialog, if necessary
 	{
 		UnoDialogEntryGuard aGuard( *this );
 
@@ -366,4 +366,3 @@ IMPL_LINK( OGenericUnoDialog, OnDialogDying, VclWindowEvent*, _pEvent )
 //.........................................................................
 }	// namespace svt
 //.........................................................................
-

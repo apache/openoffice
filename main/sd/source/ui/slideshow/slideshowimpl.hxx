@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _SD_SlideShowImpl_HXX_
 #define _SD_SlideShowImpl_HXX_
@@ -141,31 +139,31 @@ public:
 	void addAsSlideShowListener();
 	void removeAsSlideShowListener();
 
-    void addSlideShowListener( const css::uno::Reference< css::presentation::XSlideShowListener >& Listener );
-    void removeSlideShowListener( const css::uno::Reference< css::presentation::XSlideShowListener >& Listener );
+	void addSlideShowListener( const css::uno::Reference< css::presentation::XSlideShowListener >& Listener );
+	void removeSlideShowListener( const css::uno::Reference< css::presentation::XSlideShowListener >& Listener );
 
 	void addShapeEventListener( const css::uno::Reference< css::drawing::XShape >& xShape );
 	void removeShapeEventListener( const css::uno::Reference< css::drawing::XShape >& xShape );
 
 	// css::animations::XAnimationListener
-    virtual void SAL_CALL beginEvent( const css::uno::Reference< css::animations::XAnimationNode >& Node ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL endEvent( const css::uno::Reference< css::animations::XAnimationNode >& Node ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL repeat( const css::uno::Reference< css::animations::XAnimationNode >& Node, ::sal_Int32 Repeat ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL beginEvent( const css::uno::Reference< css::animations::XAnimationNode >& Node ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL endEvent( const css::uno::Reference< css::animations::XAnimationNode >& Node ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL repeat( const css::uno::Reference< css::animations::XAnimationNode >& Node, ::sal_Int32 Repeat ) throw (css::uno::RuntimeException);
 
-    // css::presentation::XSlideShowListener:
-    virtual void SAL_CALL paused() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL resumed() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL slideTransitionStarted() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL slideTransitionEnded() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL slideAnimationsEnded() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL slideEnded(sal_Bool bReverse) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL hyperLinkClicked(const ::rtl::OUString & hyperLink) throw (css::uno::RuntimeException);
+	// css::presentation::XSlideShowListener:
+	virtual void SAL_CALL paused() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL resumed() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL slideTransitionStarted() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL slideTransitionEnded() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL slideAnimationsEnded() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL slideEnded(sal_Bool bReverse) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL hyperLinkClicked(const ::rtl::OUString & hyperLink) throw (css::uno::RuntimeException);
 
-    // css::lang::XEventListener:
-    virtual void SAL_CALL disposing(const css::lang::EventObject & Source) throw (css::uno::RuntimeException);
+	// css::lang::XEventListener:
+	virtual void SAL_CALL disposing(const css::lang::EventObject & Source) throw (css::uno::RuntimeException);
 
-    // css::presentation::XShapeEventListener:
-    virtual void SAL_CALL click(const css::uno::Reference< css::drawing::XShape > & xShape, const css::awt::MouseEvent & aOriginalEvent) throw (css::uno::RuntimeException);
+	// css::presentation::XShapeEventListener:
+	virtual void SAL_CALL click(const css::uno::Reference< css::drawing::XShape > & xShape, const css::awt::MouseEvent & aOriginalEvent) throw (css::uno::RuntimeException);
 
 	::cppu::OInterfaceContainerHelper maListeners;
 
@@ -186,62 +184,62 @@ public:
 	explicit SlideshowImpl( const css::uno::Reference< css::presentation::XPresentation2 >& xPresentation, ViewShell* pViewSh, ::sd::View* pView, SdDrawDocument* pDoc, ::Window* pParentWindow);
 
 	// css::presentation::XSlideShowController:
-    virtual ::sal_Bool SAL_CALL getAlwaysOnTop() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setAlwaysOnTop( ::sal_Bool _alwaysontop ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getMouseVisible() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setMouseVisible( ::sal_Bool _mousevisible ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getUsePen() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setUsePen( ::sal_Bool _usepen ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getPenColor() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setPenColor( ::sal_Int32 _pencolor ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setUseEraser( ::sal_Bool _usepen ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getPenWidth() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setPenWidth( double dStrokeWidth ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEraseAllInk( bool bEraseAllInk ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEraseInk( sal_Int32 nEraseInkSize ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setPenMode( bool bSwitchPenMode) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEraserMode( bool bSwitchEraserMode ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isRunning(  ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getSlideCount(  ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< css::drawing::XDrawPage > SAL_CALL getSlideByIndex( ::sal_Int32 Index ) throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException);
-    virtual void SAL_CALL addSlideShowListener( const css::uno::Reference< css::presentation::XSlideShowListener >& Listener ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL removeSlideShowListener( const css::uno::Reference< css::presentation::XSlideShowListener >& Listener ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL gotoNextEffect(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL gotoPreviousEffect(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL gotoFirstSlide(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL gotoNextSlide(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL gotoPreviousSlide(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL gotoLastSlide(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL gotoBookmark( const ::rtl::OUString& Bookmark ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL gotoSlide( const css::uno::Reference< css::drawing::XDrawPage >& Page ) throw (css::lang::IllegalArgumentException, css::uno::RuntimeException);
-    virtual void SAL_CALL gotoSlideIndex( ::sal_Int32 Index ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL stopSound(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL pause(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL resume(  ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isPaused(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL blankScreen( ::sal_Int32 Color ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL activate(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL deactivate(  ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isActive(  ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< css::drawing::XDrawPage > SAL_CALL getCurrentSlide(  ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getCurrentSlideIndex(  ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getNextSlideIndex(  ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isEndless(  ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isFullScreen(  ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< css::presentation::XSlideShow > SAL_CALL getSlideShow(  ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL getAlwaysOnTop() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setAlwaysOnTop( ::sal_Bool _alwaysontop ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL getMouseVisible() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setMouseVisible( ::sal_Bool _mousevisible ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL getUsePen() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setUsePen( ::sal_Bool _usepen ) throw (css::uno::RuntimeException);
+	virtual ::sal_Int32 SAL_CALL getPenColor() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setPenColor( ::sal_Int32 _pencolor ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setUseEraser( ::sal_Bool _usepen ) throw (css::uno::RuntimeException);
+	virtual double SAL_CALL getPenWidth() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setPenWidth( double dStrokeWidth ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setEraseAllInk( bool bEraseAllInk ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setEraseInk( sal_Int32 nEraseInkSize ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setPenMode( bool bSwitchPenMode) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL setEraserMode( bool bSwitchEraserMode ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isRunning(  ) throw (css::uno::RuntimeException);
+	virtual ::sal_Int32 SAL_CALL getSlideCount(  ) throw (css::uno::RuntimeException);
+	virtual css::uno::Reference< css::drawing::XDrawPage > SAL_CALL getSlideByIndex( ::sal_Int32 Index ) throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException);
+	virtual void SAL_CALL addSlideShowListener( const css::uno::Reference< css::presentation::XSlideShowListener >& Listener ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL removeSlideShowListener( const css::uno::Reference< css::presentation::XSlideShowListener >& Listener ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL gotoNextEffect(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL gotoPreviousEffect(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL gotoFirstSlide(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL gotoNextSlide(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL gotoPreviousSlide(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL gotoLastSlide(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL gotoBookmark( const ::rtl::OUString& Bookmark ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL gotoSlide( const css::uno::Reference< css::drawing::XDrawPage >& Page ) throw (css::lang::IllegalArgumentException, css::uno::RuntimeException);
+	virtual void SAL_CALL gotoSlideIndex( ::sal_Int32 Index ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL stopSound(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL pause(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL resume(  ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isPaused(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL blankScreen( ::sal_Int32 Color ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL activate(  ) throw (css::uno::RuntimeException);
+	virtual void SAL_CALL deactivate(  ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isActive(  ) throw (css::uno::RuntimeException);
+	virtual css::uno::Reference< css::drawing::XDrawPage > SAL_CALL getCurrentSlide(  ) throw (css::uno::RuntimeException);
+	virtual ::sal_Int32 SAL_CALL getCurrentSlideIndex(  ) throw (css::uno::RuntimeException);
+	virtual ::sal_Int32 SAL_CALL getNextSlideIndex(  ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isEndless(  ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isFullScreen(  ) throw (css::uno::RuntimeException);
+	virtual css::uno::Reference< css::presentation::XSlideShow > SAL_CALL getSlideShow(  ) throw (css::uno::RuntimeException);
 
-    // XIndexAccess
-    virtual ::sal_Int32 SAL_CALL getCount(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasElements(  ) throw (::com::sun::star::uno::RuntimeException);
+	// XIndexAccess
+	virtual ::sal_Int32 SAL_CALL getCount(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL hasElements(  ) throw (::com::sun::star::uno::RuntimeException);
 
 	// will be called from the SlideShowListenerProxy when this event is fired from the XSlideShow
-    void slideEnded(const bool bReverse);
-    void hyperLinkClicked(const ::rtl::OUString & hyperLink) throw (css::uno::RuntimeException);
+	void slideEnded(const bool bReverse);
+	void hyperLinkClicked(const ::rtl::OUString & hyperLink) throw (css::uno::RuntimeException);
 	void click(const css::uno::Reference< css::drawing::XShape > & xShape, const css::awt::MouseEvent & aOriginalEvent);
 
-	/// ends the presentation async
+	// ends the presentation async
 	void endPresentation();
 
 	ViewShell* getViewShell() const { return mpViewShell; }
@@ -251,16 +249,16 @@ public:
 	void mouseButtonUp(const MouseEvent& rMEvt);
 
 private:
-    SlideshowImpl(SlideshowImpl &); // not defined
-    void operator =(SlideshowImpl &); // not defined
+	SlideshowImpl(SlideshowImpl &); // not defined
+	void operator =(SlideshowImpl &); // not defined
 
-    virtual ~SlideshowImpl();
+	virtual ~SlideshowImpl();
 
-    // overload WeakComponentImplHelperBase::disposing()
-    // This function is called upon disposing the component,
-    // if your component needs special work when it becomes
-    // disposed, do it here.
-    virtual void SAL_CALL disposing();
+	// overload WeakComponentImplHelperBase::disposing()
+	// This function is called upon disposing the component,
+	// if your component needs special work when it becomes
+	// disposed, do it here.
+	virtual void SAL_CALL disposing();
 
 	// internal
 	bool startShow( PresentationSettingsEx* pPresSettings );
@@ -294,10 +292,10 @@ private:
 
 	void resize( const Size& rSize );
 
-    void setActiveXToolbarsVisible( sal_Bool bVisible );
+	void setActiveXToolbarsVisible( sal_Bool bVisible );
 
 	DECL_LINK( updateHdl, Timer* );
-    DECL_LINK( PostYieldListener, void* );
+	DECL_LINK( PostYieldListener, void* );
 	DECL_LINK( ReadyForNextInputHdl, Timer* );
 	DECL_LINK( endPresentationHdl, void* );
 	DECL_LINK( ContextMenuSelectHdl, Menu * );
@@ -328,17 +326,17 @@ private:
 	void registerShapeEvents( sal_Int32 nSlideNumber );
 	void registerShapeEvents( css::uno::Reference< css::drawing::XShapes >& xShapes ) throw (css::uno::Exception);
 
-    css::uno::Reference< css::presentation::XSlideShow > createSlideShow() const;
+	css::uno::Reference< css::presentation::XSlideShow > createSlideShow() const;
 
 	void setAutoSaveState( bool bOn );
-    void gotoPreviousSlide (const bool bSkipAllMainSequenceEffects);
+	void gotoPreviousSlide (const bool bSkipAllMainSequenceEffects);
 
-    /** Called by PostYieldListener and updateHdl handlers this method is
-        responsible to call the slideshow update() method and, depending on
-        its return value, wait for a certain amount of time before another
-        call to update() is scheduled.
-    */
-    sal_Int32 updateSlideShow (void);
+	/** Called by PostYieldListener and updateHdl handlers this method is
+		responsible to call the slideshow update() method and, depending on
+		its return value, wait for a certain amount of time before another
+		call to update() is scheduled.
+	*/
+	sal_Int32 updateSlideShow (void);
 
 	css::uno::Reference< css::presentation::XSlideShow > mxShow;
 	comphelper::ImplementationReference< ::sd::SlideShowView, css::presentation::XSlideShowView > mxView;
@@ -353,8 +351,8 @@ private:
 	DrawDocShell* mpDocSh;
 	SdDrawDocument* mpDoc;
 
-	SfxItemSet*     mpNewAttr;
-    ::Window*       mpParentWindow;
+	SfxItemSet*		mpNewAttr;
+	::Window*		mpParentWindow;
 	ShowWindow*		mpShowWindow;
 	PushButton* 	mpTimeButton;
 
@@ -364,7 +362,7 @@ private:
 	Point			maSlideOrigin;
 	Point			maPopupMousePos;
 	Size			maSlideSize;
-    Size			maPresSize;
+	Size			maPresSize;
 	AnimationMode   meAnimationMode;
 	String			maCharBuffer;
 	Pointer 		maOldPointer;
@@ -374,26 +372,26 @@ private:
 	Link			maStarBASICGlobalErrorHdl;
 	unsigned long	mnChildMask;
 	bool			mbGridVisible;
-    bool            mbBordVisible;
-    bool            mbSlideBorderVisible;
-	bool            mbSetOnlineSpelling;
+	bool			mbBordVisible;
+	bool			mbSlideBorderVisible;
+	bool			mbSetOnlineSpelling;
 	bool			mbDisposed;
 	bool			mbMouseIsDrawing;
 	bool			mbAutoSaveWasOn;
 	bool			mbRehearseTimings;
 	bool			mbDesignMode;
 	bool			mbIsPaused;
-	bool			mbWasPaused;		// used to cache pause state during context menu
+	bool			mbWasPaused; // used to cache pause state during context menu
 	bool			mbInputFreeze;
 	sal_Bool		mbActive;
 
 	PresentationSettings maPresSettings;
 	sal_Int32		mnUserPaintColor;
 
-    bool			mbUsePen;
-    double			mdUserPaintStrokeWidth;
+	bool			mbUsePen;
+	double			mdUserPaintStrokeWidth;
 
-	/// used in updateHdl to prevent recursive calls
+	// used in updateHdl to prevent recursive calls
 	sal_Int32		mnEntryCounter;
 
 	sal_Int32		mnLastSlideNumber;
@@ -408,7 +406,7 @@ private:
 
 	css::uno::Reference< css::media::XPlayer > mxPlayer;
 
-    ::std::auto_ptr<PaneHider> mpPaneHider;
+	::std::auto_ptr<PaneHider> mpPaneHider;
 
 	sal_uLong	mnEndShowEvent;
 	sal_uLong	mnContextMenuEvent;
@@ -421,3 +419,5 @@ private:
 } // namespace ::sd
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

@@ -99,4 +99,3 @@ bool SwMovedFwdFrmsByObjPos::DoesRowContainMovedFwdFrm( const SwRowFrm& _rRowFrm
     return bDoesRowContainMovedFwdFrm;
 }
 // <--
-

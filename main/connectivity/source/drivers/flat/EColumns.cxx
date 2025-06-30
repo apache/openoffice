@@ -48,5 +48,3 @@ sdbcx::ObjectType OFlatColumns::createObject(const ::rtl::OUString& _rName)
 	return xRet;
 }
 // -------------------------------------------------------------------------
-
-

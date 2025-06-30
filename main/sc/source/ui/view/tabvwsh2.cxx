@@ -472,6 +472,3 @@ sal_Bool ScTabViewShell::SelectObject( const String& rName )
 
 	return bFound;
 }
-
-
-

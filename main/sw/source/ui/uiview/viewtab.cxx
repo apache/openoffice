@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include <tools/list.hxx>
 
@@ -70,16 +67,13 @@
 
 using namespace ::com::sun::star;
 
-
 /*--------------------------------------------------------------------
 	Beschreibung:	Debug-Methode
  --------------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------------
 	Beschreibung:	Columns eintueten
  --------------------------------------------------------------------*/
-
 
 void lcl_FillSvxColumn(const SwFmtCol& rCol,
 						  sal_uInt16 nTotalWidth,
@@ -196,25 +190,23 @@ void lcl_EraseDefTabs(SvxTabStopItem& rTabStops)
 	Beschreibung:	Seitenrand umdrehen
  --------------------------------------------------------------------*/
 
-
 void SwView::SwapPageMargin(const SwPageDesc& rDesc, SvxLRSpaceItem& rLRSpace)
 {
-    sal_uInt16 nPhyPage, nVirPage;
-    GetWrtShell().GetPageNum( nPhyPage, nVirPage );
+	sal_uInt16 nPhyPage, nVirPage;
+	GetWrtShell().GetPageNum( nPhyPage, nVirPage );
 
-    if ( rDesc.GetUseOn() == nsUseOnPage::PD_MIRROR && (nPhyPage % 2) == 0 )
-    {
-        long nTmp = rLRSpace.GetRight();
-        rLRSpace.SetRight( rLRSpace.GetLeft() );
-        rLRSpace.SetLeft( nTmp );
-    }
+	if ( rDesc.GetUseOn() == nsUseOnPage::PD_MIRROR && (nPhyPage % 2) == 0 )
+	{
+		long nTmp = rLRSpace.GetRight();
+		rLRSpace.SetRight( rLRSpace.GetLeft() );
+		rLRSpace.SetLeft( nTmp );
+	}
 }
 
 /*--------------------------------------------------------------------
 	Beschreibung:	Wenn der Rahmenrand verschoben wird, sollen die
 					Spaltentrenner an der gleichen absoluten Position bleiben
  --------------------------------------------------------------------*/
-
 
 void lcl_Scale(long& nVal, long nScale)
 {
@@ -257,14 +249,13 @@ void ResizeFrameCols(SwFmtCol& rCol,
 		rArr[0]->SetWishWidth(rArr[0]->GetWishWidth() + (sal_uInt16)nWishDiff);
 	else
 		rArr[rArr.Count()-1]->SetWishWidth(rArr[rArr.Count()-1]->GetWishWidth() + (sal_uInt16)nWishDiff);
-    //reset auto width
-    rCol.SetOrtho(sal_False, 0, 0 );
+	//reset auto width
+	rCol.SetOrtho(sal_False, 0, 0 );
 }
 /*--------------------------------------------------------------------
 	Beschreibung:	Hier werden alle Aenderungen der Tableiste
 					wieder in das Modell geschossen
  --------------------------------------------------------------------*/
-
 
 void SwView::ExecTabWin( SfxRequest& rReq )
 {
@@ -1033,7 +1024,6 @@ void SwView::ExecTabWin( SfxRequest& rReq )
 					werden der Tableiste uebermittelt
  --------------------------------------------------------------------*/
 
-
 void SwView::StateTabWin(SfxItemSet& rSet)
 {
     SwWrtShell &rSh 		= GetWrtShell();
@@ -1278,7 +1268,7 @@ void SwView::StateTabWin(SfxItemSet& rSet)
                     const SvxTabStopItem& rDefTabs = (const SvxTabStopItem&)
                         rSh.GetDefault(RES_PARATR_TABSTOP);
 
-                    DBG_ASSERT(pHRuler, "warum ist das Lineal nicht da?");
+                    DBG_ASSERT(pHRuler, "Why is there no Ruler?");
                     long nDefTabDist = ::GetTabDist(rDefTabs);
                     pHRuler->SetDefTabDist( nDefTabDist );
                     pVRuler->SetDefTabDist( nDefTabDist );
@@ -1330,7 +1320,7 @@ void SwView::StateTabWin(SfxItemSet& rSet)
             }
 
 	case SID_ATTR_PARA_ULSPACE:
-	{	
+	{
 		SvxULSpaceItem aUL = (const SvxULSpaceItem&)aCoreSet.Get(RES_UL_SPACE);
 		aUL.SetWhich(nWhich);
 
@@ -1904,8 +1894,8 @@ void SwView::StateTabWin(SfxItemSet& rSet)
                     if ( IsTabColFromDoc() )
                         bColumn = rSh.GetCurMouseColNum( aTabColFromDocPos ) != 0;
                     else
-                        bColumn = (nFrmType & (FRMTYPE_COLUMN|FRMTYPE_FLY_ANY|FRMTYPE_COLSECTOUTTAB)) 
-                                  ? sal_True 
+                        bColumn = (nFrmType & (FRMTYPE_COLUMN|FRMTYPE_FLY_ANY|FRMTYPE_COLSECTOUTTAB))
+                                  ? sal_True
                                   : sal_False;
                     if ( !bColumn )
                     {
@@ -2064,4 +2054,4 @@ void SwView::StateTabWin(SfxItemSet& rSet)
     }
 }
 
-
+/* vim: set noet sw=4 ts=4: */

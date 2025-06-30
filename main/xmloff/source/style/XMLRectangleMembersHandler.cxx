@@ -118,4 +118,3 @@ sal_Bool XMLRectangleMembersHdl::exportXML(
 	rStrExpValue = sBuffer.makeStringAndClear();
 	return sal_True;
 }
-

@@ -1238,7 +1238,7 @@ rtl::OUString TreeFileIterator::expandURL( const rtl::OUString& aURL )
 		if( !xFac.is() )
 		{
 			throw RuntimeException(
-				::rtl::OUString::createFromAscii( "Databases::expand(), could not instatiate UriReferenceFactory." ),
+				::rtl::OUString::createFromAscii( "Databases::expand(), could not instantiate UriReferenceFactory." ),
 				Reference< XInterface >() );
 		}
 
@@ -1311,6 +1311,3 @@ rtl::OUString TreeFileIterator::implGetTreeFileFromPackage
 
 	return aRetFile;
 }
-
-
-

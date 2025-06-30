@@ -119,7 +119,7 @@ namespace cairocanvas
         {
             if( rSprite.is() )
             {
-                ::boost::polymorphic_downcast< Sprite* >( rSprite.get() )->redraw( pCairo, true );;
+                ::boost::polymorphic_downcast< Sprite* >( rSprite.get() )->redraw( pCairo, true );
             }
         }
 

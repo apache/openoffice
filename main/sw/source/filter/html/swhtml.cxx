@@ -260,7 +260,7 @@ sal_uLong HTMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPam, co
 }
 
 
-/*  */
+/* */
 
 SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
                             const String& rPath,
@@ -994,7 +994,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 #endif
 
 	// The following special cases have to be handled before the filter detection
-	// because the content of the title, etc. is not used for filter even in Netcape.
+	// because the content of the title, etc. is not used for filter even in Netscape.
 	if( !pPendStack )
 	{
 		if( bInTitle )
@@ -2037,7 +2037,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		aParaAttrs.Remove( 0, aParaAttrs.Count() );
 }
 
-/*  */
+/* */
 
 extern sal_Bool lcl_css1atr_equalFontItems( const SfxPoolItem& r1, const SfxPoolItem& r2 );
 
@@ -2512,7 +2512,7 @@ ViewShell *SwHTMLParser::CallEndAction( sal_Bool bChkAction, sal_Bool bChkPtr )
 		const sal_Bool bOldLock = pActionViewShell->IsViewLocked();
 		pActionViewShell->LockView( sal_True );
 		const sal_Bool bOldEndActionByVirDev = pActionViewShell->IsEndActionByVirDev();
-		pActionViewShell->SetEndActionByVirDev( sal_True );;
+		pActionViewShell->SetEndActionByVirDev( sal_True );
 		((SwEditShell*)pActionViewShell)->EndAction();
 		pActionViewShell->SetEndActionByVirDev( bOldEndActionByVirDev );
 		pActionViewShell->LockView( bOldLock );
@@ -2559,7 +2559,7 @@ ViewShell *SwHTMLParser::CheckActionViewShell()
 	return pActionViewShell;
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 							 _HTMLAttrs *pPostIts )
@@ -2971,7 +2971,7 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 		nEndCnt != pAttr->GetSttCnt() )
 	{
 		bInsert = sal_True;
-		// We do some optimization for script depenedent attribtes here.
+		// We do some optimization for script dependent attributes here.
 		if( *pEndIdx == pAttr->GetSttPara() )
 		{
 			lcl_swhtml_getItemInfo( *pAttr, bScript, bFont, nScriptItem );
@@ -3329,7 +3329,7 @@ void SwHTMLParser::InsertAttrs( _HTMLAttrs& rAttrs )
 	}
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewStdAttr( int nToken )
 {
@@ -3775,7 +3775,7 @@ void SwHTMLParser::EndFontAttr( int nToken )
 		aFontStack.Remove( aFontStack.Count()-1, 1 );
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewPara()
 {
@@ -4027,7 +4027,7 @@ void SwHTMLParser::EndHeading()
 	nFontStHeadStart = nFontStMin;
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewTxtFmtColl( int nToken, sal_uInt16 nColl )
 {
@@ -4156,7 +4156,7 @@ void SwHTMLParser::EndTxtFmtColl( int nToken )
 	SetTxtCollAttrs();
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewDefList()
 {
@@ -4372,7 +4372,7 @@ void SwHTMLParser::EndDefListItem( int nToken, sal_Bool bSetColl,
 		SetTxtCollAttrs();
 }
 
-/*  */
+/* */
 
 sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 									   sal_Bool bSurroundOnly ) const
@@ -4443,7 +4443,7 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 	return bFound;
 }
 
-/*  */
+/* */
 
 // the special methods for inserting objects
 
@@ -4673,7 +4673,7 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 	}
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewCharFmt( int nToken )
 {
@@ -4737,7 +4737,7 @@ void SwHTMLParser::NewCharFmt( int nToken )
 }
 
 
-/*  */
+/* */
 
 void SwHTMLParser::InsertSpacer()
 {
@@ -4951,7 +4951,7 @@ SwTwips SwHTMLParser::GetCurrentBrowseWidth()
 }
 
 
-/*  */
+/* */
 
 void SwHTMLParser::InsertIDOption()
 {
@@ -4972,7 +4972,7 @@ void SwHTMLParser::InsertIDOption()
 }
 
 
-/*  */
+/* */
 
 
 void SwHTMLParser::InsertLineBreak()
@@ -5116,11 +5116,11 @@ void SwHTMLParser::InsertLineBreak()
 	}
 	else if( pPam->GetPoint()->nContent.GetIndex() )
 	{
-		// if a claer was executed in a non-empty paragraph,
+		// if a clear was executed in a non-empty paragraph,
 		// a new paragraph must be opened afterwards.
 		// MIB 21.02.97: Actually, the lower paragraph should be set to 0.
 		// But this works with something like <BR ..><P>.
-		// (>Netacpe). Therefore we leave it for now.
+		// (>Netscape). Therefore we leave it for now.
 		AppendTxtNode( AM_NOSPACE );
 	}
 	if( bBreakItem && SVX_BREAK_PAGE_BEFORE==aBreakItem.GetBreak() )
@@ -5380,7 +5380,7 @@ void SwHTMLParser::ParseMoreMetaOptions()
     InsertAttr( aFmtFld );
 }
 
-/*  */
+/* */
 
 _HTMLAttr::_HTMLAttr( const SwPosition& rPos, const SfxPoolItem& rItem,
 					  _HTMLAttr **ppHd ) :
@@ -5491,4 +5491,3 @@ void SwHTMLParser::AddMetaUserDefined( ::rtl::OUString const & i_rMetaName )
         (*pName) = i_rMetaName;
     }
 }
-

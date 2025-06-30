@@ -239,4 +239,3 @@ void SvxEventConfigPage::Reset( const SfxItemSet& )
 {
 	_SvxMacroTabPage::Reset();
 }
-

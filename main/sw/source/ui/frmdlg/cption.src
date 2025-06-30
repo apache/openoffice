@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // #include *****************************************************************
 #include "helpid.h"
 #include "frmui.hrc"
@@ -273,7 +271,7 @@ ModalDialog DLG_SEQUENCE_OPTION
 		Size = MAP_APPFONT ( 72, 12 ) ;
 		Border = TRUE ;
 		MaxTextLength = 1 ;
-		TEXT = "." ;
+		Text = "." ;
 	};
 		FixedLine FL_CATANDFRAME
 	{

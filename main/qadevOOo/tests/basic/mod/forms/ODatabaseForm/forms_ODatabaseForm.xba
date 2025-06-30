@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -40,7 +40,7 @@ option explicit
 ' Required for  com.sun.star.lang.XComponent:
   Global oComponentInstance As Object ' it will be disposed
 
-  ' Requiered for  com.sun.star.container.XNameContainer
+  ' Required for  com.sun.star.container.XNameContainer
   Global oInstance As Object 'instance to insert
 
   ' Required for com.sun.star.sdbc.XResultSet
@@ -53,7 +53,7 @@ option explicit
 ' Required for  com.sun.star.sdbc.XColumnLocate:
   Global cExistantColumnName As String
 
-  ' Requiered for  com.sun.star.container.XNameReplace
+  ' Required for  com.sun.star.container.XNameReplace
   Global cNameToReplace As String 'name of instance to be replased
   Global oReplaceInstance As Object 'instance, that will be inserted
                                     'instead old one
@@ -75,7 +75,7 @@ option explicit
   Global XTabControlModel2 As Object
 
   Global oConnection As Object
-  
+
 ' Required for com.sun.star.container.XContainer
   Global oElementToInsert As Object
   Global oContainer As Object
@@ -83,7 +83,7 @@ option explicit
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' forms.ODatabaseForm
 '*************************************************************************
 On Error Goto ErrHndl
@@ -141,10 +141,10 @@ On Error Goto ErrHndl
 
     'for XNameContainer, XIndexContainer
     oInstance = oDoc.createInstance("com.sun.star.form.component.ComboBox")
-    
+
     'for XContainer
     oElementToInsert = oDoc.createInstance("com.sun.star.form.component.ComboBox")
-    
+
     'for XNameReplace
     oReplaceInstance = oDoc.createInstance("com.sun.star.form.component.ComboBox")
     oObj.insertByName(cObjectName + "Replace", oDoc.createInstance("com.sun.star.form.component.ComboBox"))

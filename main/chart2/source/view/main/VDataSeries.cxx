@@ -311,7 +311,7 @@ void VDataSeries::doSortByXValues()
         //do sort
         std::stable_sort( aTmp.begin(), aTmp.end(), lcl_LessXOfPoint() );
 
-        //fill the sorted points back to the mambers
+        //fill the sorted points back to the members
         m_aValues_X.Doubles.realloc( m_nPointCount );
         m_aValues_Y.Doubles.realloc( m_nPointCount );
 

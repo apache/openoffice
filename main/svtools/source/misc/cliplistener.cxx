@@ -91,4 +91,3 @@ void TransferableClipboardListener::ClearCallbackLink()
 {
 	aLink = Link();
 }
-

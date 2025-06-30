@@ -60,4 +60,3 @@ ColorData ScRangeFindList::GetColorName( sal_uInt16 nIndex )		// static
 }
 
 //==================================================================
-

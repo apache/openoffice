@@ -82,7 +82,7 @@ OLEString& ADOS::GetKeyStr()
 // -------------------------------------------------------------------------
 sal_Int32 ADOS::MapADOType2Jdbc(DataTypeEnum eType)
 {
-	sal_Int32 nType = DataType::VARCHAR;;
+	sal_Int32 nType = DataType::VARCHAR;
 	switch (eType)
 	{
 		case adUnsignedSmallInt:
@@ -327,7 +327,3 @@ WpADOField ADOS::getField(ADORecordset* _pRecordSet,sal_Int32 _nColumnIndex) thr
 	return aField;
 }
 // -----------------------------------------------------------------------------
-
-
-
-

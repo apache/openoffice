@@ -881,7 +881,7 @@ void SbiRuntime::StepSTMNT( sal_uInt32 nOp1, sal_uInt32 nOp2 )
 	// #29955 for-Schleifen-Ebene korrigieren, #67452 NICHT im Error-Handler sonst Chaos
 	if( !bInError )
 	{
-		// (Bei Sprüngen aus Schleifen tritt hier eine Differenz auf)
+		// (Bei SprÃ¼ngen aus Schleifen tritt hier eine Differenz auf)
 		sal_uInt16 nExspectedForLevel = static_cast<sal_uInt16>( nOp2 / 0x100 );
 		if( pGosubStk )
 			nExspectedForLevel = nExspectedForLevel + pGosubStk->nStartForLvl;
@@ -893,7 +893,7 @@ void SbiRuntime::StepSTMNT( sal_uInt32 nOp1, sal_uInt32 nOp2 )
 	}
 
 	// 16.10.96: #31460 Neues Konzept fuer StepInto/Over/Out
-	// Erklärung siehe bei _ImplGetBreakCallLevel.
+	// ErklÃ¤rung siehe bei _ImplGetBreakCallLevel.
 	if( pInst->nCallLvl <= pInst->nBreakCallLvl )
 	//if( nFlags & SbDEBUG_STEPINTO )
 	{
@@ -1165,7 +1165,7 @@ void SbiRuntime::StepLOCAL( sal_uInt32 nOp1, sal_uInt32 nOp2 )
 void SbiRuntime::StepPUBLIC_Impl( sal_uInt32 nOp1, sal_uInt32 nOp2, bool bUsedForClassModule )
 {
 	String aName( pImg->GetString( static_cast<short>( nOp1 ) ) );
-	SbxDataType t = (SbxDataType)(SbxDataType)(nOp2 & 0xffff);;
+	SbxDataType t = (SbxDataType)(SbxDataType)(nOp2 & 0xffff);
 	sal_Bool bFlag = pMod->IsSet( SBX_NO_MODIFY );
 	pMod->SetFlag( SBX_NO_MODIFY );
 	SbxVariableRef p = pMod->Find( aName, SbxCLASS_PROPERTY );
@@ -1298,4 +1298,3 @@ void SbiRuntime::StepSTATIC( sal_uInt32 nOp1, sal_uInt32 nOp2 )
     SbxDataType t = (SbxDataType) nOp2;
     StepSTATIC_Impl( aName, t );
 }
-

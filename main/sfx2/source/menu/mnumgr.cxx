@@ -633,4 +633,3 @@ Menu* SfxPopupMenuManager::GetSVMenu()
 {
 	return (Menu*) GetMenu()->GetSVMenu();
 }
-

@@ -43,7 +43,7 @@ abstract public class ObjectView
 {
     /** This factory method creates a new instance of the (derived) class
         when the given accessible object supports all necessary features.
-        In the ususal case this will be the support of a specific
+        In the usual case this will be the support of a specific
         accessibility interface.
     */
     static public ObjectView Create (

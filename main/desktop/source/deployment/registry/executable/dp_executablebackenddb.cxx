@@ -74,4 +74,3 @@ OUString ExecutableBackendDb::getKeyElementName()
 } // namespace executable
 } // namespace backend
 } // namespace dp_registry
-

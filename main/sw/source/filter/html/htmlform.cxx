@@ -179,7 +179,7 @@ const sal_Char * __FAR_DATA aEventOptionTable[] =
 	0
 };
 
-/*  */
+/* */
 
 class SwHTMLForm_Impl
 {
@@ -436,7 +436,7 @@ SwHTMLImageWatcher::SwHTMLImageWatcher(
 	ASSERT( xSrc.is(), "Kein XImageProducerSupplier" );
 
 	// Als Event-Listener am Shape anmelden, damit wir es beim dispose
-    // loslassen koînnen ...
+    // loslassen k√∂nnen ...
 	uno::Reference< XEventListener > xEvtLstnr = (XEventListener *)this;
 	uno::Reference< XComponent > xComp( xShape, UNO_QUERY );
 	xComp->addEventListener( xEvtLstnr );
@@ -2654,4 +2654,3 @@ void SwHTMLParser::InsertSelectText()
 			rText += aToken;
 	}
 }
-

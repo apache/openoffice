@@ -1483,7 +1483,7 @@ sal_Bool lcl_ErgoVadis( SwTxtFrm* pFrm, xub_StrLen &rPos, const PrepareHint ePre
 	if( ePrep == PREP_ERGOSUM )
 	{
 		if( !rFtnInfo.aErgoSum.Len() )
-			return sal_False;;
+			return sal_False;
 		rPos = pFrm->GetOfst();
 	}
 	else
@@ -2799,4 +2799,3 @@ void SwTxtFrm::repaintTextFrames( const SwTxtNode& rNode )
             pCurShell->InvalidateWindows( aRec );
     }    
 }
-

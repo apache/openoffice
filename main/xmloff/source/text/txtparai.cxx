@@ -1377,7 +1377,7 @@ void XMLTOCMarkImportContext_Impl::ProcessAttribute(
 	if ((XML_NAMESPACE_TEXT == nNamespace) &&
 		IsXMLToken( sLocalName, XML_OUTLINE_LEVEL ) )
     {
-		// ouline level: set Level property
+		// outline level: set Level property
 		sal_Int32 nTmp;
         if ( SvXMLUnitConverter::convertNumber( nTmp, sValue )
              && nTmp >= 1
@@ -1444,7 +1444,7 @@ void XMLUserIndexMarkImportContext_Impl::ProcessAttribute(
         }
         else if ( IsXMLToken( sLocalName, XML_OUTLINE_LEVEL ) )
         {
-            // ouline level: set Level property
+            // outline level: set Level property
             sal_Int32 nTmp;
             if (SvXMLUnitConverter::convertNumber(
                 nTmp, sValue, 0,

@@ -183,4 +183,3 @@ SvtListener* SvtListenerIter::GetCurr() const	// returns the current
 {
 	return pDelNext ? pDelNext->GetListener() : 0;
 }
-

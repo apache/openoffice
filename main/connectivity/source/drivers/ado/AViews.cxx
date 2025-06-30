@@ -95,6 +95,3 @@ void OViews::dropObject(sal_Int32 /*_nPos*/,const ::rtl::OUString _sElementName)
 		ADOS::ThrowException(*m_pCatalog->getConnection()->getConnection(),static_cast<XTypeProvider*>(this));
 }
 // -------------------------------------------------------------------------
-
-
-

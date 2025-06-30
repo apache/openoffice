@@ -70,4 +70,3 @@ uno::Reference<XInterface> AquaSalInstance::CreateDropTarget()
 
     return uno::Reference<XInterface>(static_cast< XInitialization* >(new DropTarget()), UNO_QUERY);
 }
-

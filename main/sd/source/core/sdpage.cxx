@@ -3145,4 +3145,3 @@ bool HeaderFooterSettings::operator==( const HeaderFooterSettings& rSettings ) c
 		   (meDateTimeFormat == rSettings.meDateTimeFormat) &&
 		   (maDateTimeText == rSettings.maDateTimeText);
 }
-

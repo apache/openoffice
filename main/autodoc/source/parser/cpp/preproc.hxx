@@ -51,7 +51,7 @@ class PreProcessor
     // LIFECYCLE
 						PreProcessor();
 						~PreProcessor();
-    // OPERATONS
+    // OPERATIONS
     void                AssignPartners(
                             CodeExplorer &      o_rCodeExplorer,
                             CharacterSource &   o_rCharSource,

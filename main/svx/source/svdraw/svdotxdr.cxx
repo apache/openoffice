@@ -266,4 +266,3 @@ Pointer SdrTextObj::GetCreatePointer() const
 	if (IsTextFrame()) return Pointer(POINTER_DRAW_TEXT);
 	return Pointer(POINTER_CROSS);
 }
-

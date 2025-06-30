@@ -251,7 +251,7 @@ struct EmbeddedObjectRef_Impl
 
     // #i104867#
     sal_uInt32                                  mnGraphicVersion;
-    awt::Size                                   aDefaultSizeForChart_In_100TH_MM;//#i103460# charts do not necessaryly have an own size within ODF files, in this case they need to use the size settings from the surrounding frame, which is made available with this member
+    awt::Size                                   aDefaultSizeForChart_In_100TH_MM;//#i103460# charts do not necessarily have an own size within ODF files, in this case they need to use the size settings from the surrounding frame, which is made available with this member
 };
 
 void EmbeddedObjectRef::Construct_Impl()
@@ -1055,7 +1055,7 @@ sal_uInt32 EmbeddedObjectRef::getGraphicVersion() const
 
 void EmbeddedObjectRef::SetDefaultSizeForChart( const Size& rSizeIn_100TH_MM )
 {
-    //#i103460# charts do not necessaryly have an own size within ODF files,
+    //#i103460# charts do not necessarily have an own size within ODF files,
     //for this case they need to use the size settings from the surrounding frame,
     //which is made available with this method
 
@@ -1068,4 +1068,3 @@ void EmbeddedObjectRef::SetDefaultSizeForChart( const Size& rSizeIn_100TH_MM )
 }
 
 } // namespace svt
-

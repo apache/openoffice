@@ -97,8 +97,3 @@ void UnoMemoryStream::closeInput() throw(::com::sun::star::io::NotConnectedExcep
 {
 	// nothing to do	
 }
-
-
-
-
-

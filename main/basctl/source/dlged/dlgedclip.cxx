@@ -142,4 +142,3 @@ void SAL_CALL DlgEdTransferableImpl::lostOwnership( const Reference< XClipboard 
     m_SeqFlavors = Sequence< DataFlavor >();
     m_SeqData = Sequence< Any >();
 }
-

@@ -835,7 +835,7 @@ sal_Int32 SwXTextDocument::replaceAll(const Reference< util::XSearchDescriptor >
 	else if(pSearch->bStyles)
 	{
 		SwTxtFmtColl *pSearchColl = lcl_GetParaStyle(pSearch->sSearchText, pUnoCrsr->GetDoc());
-		SwTxtFmtColl *pReplaceColl = lcl_GetParaStyle(pSearch->sReplaceText, pUnoCrsr->GetDoc());;
+		SwTxtFmtColl *pReplaceColl = lcl_GetParaStyle(pSearch->sReplaceText, pUnoCrsr->GetDoc());
 
         sal_Bool bCancel;
         nResult = pUnoCrsr->Find( *pSearchColl,
@@ -2374,6 +2374,30 @@ void SwXTextDocument::removeVetoableChangeListener(const OUString& /*PropertyNam
 {
 	DBG_WARNING("not implemented");
 }
+
+sal_Bool SwXTextDocument::authorizeLinks( const ::rtl::OUString& rURL ) throw( RuntimeException )
+{
+	SwDoc *doc = pDocShell->GetDoc();
+	if ( doc ) {
+		// The following access to the window is copied from SwDoc::UpdateLinks()
+		SfxMedium* pMedium = pDocShell->GetMedium();
+		SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
+		sfx2::LinkManager &pLinkMgr = doc->GetLinkManager();
+		if ( pLinkMgr.urlIsVendor( rURL ) ) {
+			return sal_False;
+		} else if ( pLinkMgr.urlIsSafe( rURL ) ) {
+			return sal_True;
+		}
+		Window* pDlgParent = 0;
+		if ( pFrm )
+			pDlgParent = &pFrm->GetWindow();
+		if ( !pDlgParent )
+			pDlgParent = pDocShell->GetDialogParent( pMedium );
+		if ( pDlgParent )
+			return pLinkMgr.GetUserAllowsLinkUpdate( pDlgParent );
+	}
+	return sal_False;
+}
 /* -----------------25.10.99 10:42-------------------
 
  --------------------------------------------------*/
@@ -3193,7 +3217,7 @@ void SAL_CALL SwXTextDocument::render(
                     //
                     // First, we have to export hyperlinks, notes, and outline to pdf.
                     // During this process, additional information required for tagging
-                    // the pdf file are collected, which are evaulated during painting.
+                    // the pdf file are collected, which are evaluated during painting.
                     //
                     SwWrtShell* pWrtShell = pView->IsA(aSwViewTypeId) ?
                                             ((SwView*)pView)->GetWrtShellPtr() :
@@ -3353,7 +3377,7 @@ uno::Sequence< lang::Locale > SAL_CALL SwXTextDocument::getDocumentLanguages(
     for (sal_uInt16 i = 0; i < pColls->Count(); ++i)
     {
         const SwAttrSet &rAttrSet = (*pColls)[i]->GetAttrSet();
-        LanguageType nLang = LANGUAGE_DONTKNOW;;
+        LanguageType nLang = LANGUAGE_DONTKNOW;
         if (bLatin)
         {
             nLang = rAttrSet.GetLanguage( sal_False ).GetLanguage();
@@ -4296,5 +4320,3 @@ SwViewOptionAdjust_Impl::AdjustViewOptions(SwPrintData const*const pPrtOptions)
 
 
 /*****************************************************************************/
-
-

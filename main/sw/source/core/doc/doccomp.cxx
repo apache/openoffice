@@ -836,7 +836,7 @@ void Compare::ShiftBoundaries( CompareData& rData1, CompareData& rData2 )
 	}
 }
 
-/*  */
+/* */
 
 class SwCompareLine : public CompareLine
 {
@@ -1570,7 +1570,7 @@ void SwCompareData::SetRedlinesToDoc( sal_Bool bUseDocInfo )
 	}
 }
 
-/*  */
+/* */
 
 
 
@@ -1878,5 +1878,3 @@ long SwDoc::MergeDoc( const SwDoc& rDoc )
 
 	return nRet;
 }
-
-

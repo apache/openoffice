@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _SVDTRANS_HXX
 #define _SVDTRANS_HXX
@@ -41,13 +39,13 @@
 // Winkelangaben der DrawingEngine sind 1/100 Degree
 // #i19054# nowhere used, removed // const int nWinkDiv=100;
 // Um Winkel der DrawingEngine mit den Trigonometrischen Funktionen
-// verarbeiten zu koennen, muessen sie zunaest ins Bogenmass umgerechnet
+// verarbeiten zu können, müssen sie zunächst ins Bogenmaß umgerechnet
 // werden. Dies gestaltet sich recht einfach mit der folgenden Konstanten
 // nPi180. Sei nWink ein Winkel in 1/100 Deg so schreibt man z.B.:
 //   double nSin=sin(nWink*nPi180);
-// Rueckwandlung entsprechend durch Teilen.
+// Rückwandlung entsprechend durch Teilen.
 const double nPi=3.14159265358979323846;
-const double nPi180=0.000174532925199432957692222; // Bei zuweing Stellen ist tan(4500*nPi180)!=1.0
+const double nPi180=0.000174532925199432957692222; // Bei zu wenig Stellen ist tan(4500*nPi180)!=1.0
 
 // Der maximale Shearwinkel
 #define SDRMAXSHEAR 8900
@@ -93,14 +91,14 @@ void ShearPoly(PolyPolygon& rPoly, const Point& rRef, double tn, FASTBOOL bVShea
 void ShearXPoly(XPolyPolygon& rPoly, const Point& rRef, double tn, FASTBOOL bVShear=sal_False);
 
 // rPnt.X bzw rPnt.Y wird auf rCenter.X bzw. rCenter.Y gesetzt!
-// anschliessend muss rPnt nur noch um rCenter gedreht werden.
-// Der Rueckgabewinkel ist ausnahmsweise in Rad.
+// anschließend muss rPnt nur noch um rCenter gedreht werden.
+// Der Rückgabewinkel ist ausnahmsweise in Rad.
 inline double GetCrookAngle(Point& rPnt, const Point& rCenter, const Point& rRad, FASTBOOL bVertical);
 // Die folgenden Methoden behandeln einen Punkt eines XPolygons, wobei die
 // benachbarten Kontrollpunkte des eigentlichen Punktes ggf. in pC1/pC2
-// uebergeben werden. Ueber rSin/rCos wird gleichzeitig sin(nWink) und cos(nWink)
-// zurueckgegeben.
-// Der Rueckgabewinkel ist hier ebenfalls in Rad.
+// übergeben werden. Über rSin/rCos wird gleichzeitig sin(nWink) und cos(nWink)
+// zurückgegeben.
+// Der Rückgabewinkel ist hier ebenfalls in Rad.
 double CrookRotateXPoint(Point& rPnt, Point* pC1, Point* pC2, const Point& rCenter,
 						 const Point& rRad, double& rSin, double& rCos, FASTBOOL bVert);
 double CrookSlantXPoint(Point& rPnt, Point* pC1, Point* pC2, const Point& rCenter,
@@ -140,11 +138,11 @@ inline void RotatePoint(Point& rPnt, const Point& rRef, double sn, double cs)
 inline void ShearPoint(Point& rPnt, const Point& rRef, double tn, FASTBOOL bVShear)
 {
 	if (!bVShear) { // Horizontal
-		if (rPnt.Y()!=rRef.Y()) { // sonst nicht noetig
+		if (rPnt.Y()!=rRef.Y()) { // sonst nicht nötig
 			rPnt.X()-=Round((rPnt.Y()-rRef.Y())*tn);
 		}
 	} else { // ansonsten vertikal
-		if (rPnt.X()!=rRef.X()) { // sonst nicht noetig
+		if (rPnt.X()!=rRef.X()) { // sonst nicht nötig
 			rPnt.Y()-=Round((rPnt.X()-rRef.X())*tn);
 		}
 	}
@@ -171,14 +169,14 @@ inline double GetCrookAngle(Point& rPnt, const Point& rCenter, const Point& rRad
 // Y-Achse zeigt nach unten! Die Funktion negiert bei der
 // Winkelberechnung die Y-Achse, sodass GetAngle(Point(0,-1))=90.00deg.
 // GetAngle(Point(0,0)) liefert 0.
-// Der Rueckgabewert liegt im Bereich -180.00..179.99 Degree und
+// Der Rückgabewert liegt im Bereich -180.00..179.99 Degree und
 // ist in 1/100 Degree angegeben.
 SVX_DLLPUBLIC long GetAngle(const Point& rPnt);
 long NormAngle180(long a); // Winkel normalisieren auf -180.00..179.99
 SVX_DLLPUBLIC long NormAngle360(long a); // Winkel normalisieren auf    0.00..359.99
 sal_uInt16 GetAngleSector(long nWink); // Sektor im kartesischen Koordinatensystem bestimmen
-// Berechnet die Laenge von (0,0) via a^2 + b^2 = c^2
-// Zur Vermeidung von Ueberlaeufen werden ggf. einige Stellen ignoriert.
+// Berechnet die Länge von (0,0) via a^2 + b^2 = c^2
+// Zur Vermeidung von Überläufen werden ggf. einige Stellen ignoriert.
 long GetLen(const Point& rPnt);
 
 /*
@@ -197,26 +195,26 @@ long GetLen(const Point& rPnt);
   |3                2|       |   \3                2\
   +------------------+       |    --------------------
 							 |Shr |
-  Bei Rueckkonvertierung des        Polygons in ein Rect ist die Reihenfolge
-  zwangslaeufig umgekehrt:
+  Bei Rückkonvertierung des        Polygons in ein Rect ist die Reihenfolge
+  zwangsläufig umgekehrt:
   - Berechnung des Drehwinkels: Winkel der Strecke 0-1 aus Abb. C) zum Horizont
-  - Rueckdrehung des geshearten Rects (man erhaelt Abb B))
-  - Bestimmung der Breite des Rects=Laenge der Strecke 0-1 aus Abb. B)
-  - Bestimmung der Hoehe des Rects=vertikaler Abstand zwischen den Punkten
+  - Rückdrehung des geshearten Rects (man erhält Abb B))
+  - Bestimmung der Breite des Rects=Länge der Strecke 0-1 aus Abb. B)
+  - Bestimmung der Höhe des Rects=vertikaler Abstand zwischen den Punkten
 	0 und 3 aus Abb. B)
   - Bestimmung des Shear-Winkels aus der Strecke 0-3 zur Senkrechten.
   Es ist darauf zu achten, dass das Polygon bei einer zwischenzeitlichen
   Transformation evtl. gespiegelt wurde (Mirror oder Resize mit neg. Faktor).
-  In diesem Fall muss zunaecht eine Normalisierung durch Vertauschung der
-  Punkte (z.B. 0 mit 3 und 1 mit 2) durchgefuehrt werden, damit der
+  In diesem Fall muss zunächst eine Normalisierung durch Vertauschung der
+  Punkte (z.B. 0 mit 3 und 1 mit 2) durchgeführt werden, damit der
   Richtungssinn im Polygon wieder stimmig ist.
   Hinweis: Positiver Shear-Winkel bedeutet Shear mit auf dem Bildschirm
-  sichtbarer positiver Kursivierung. Mathematisch waere dass eine negative
-  Kursivierung, da die Y-Achse auf dem Bildschirm von oben nach unten verlaeuft.
+  sichtbarer positiver Kursivierung. Mathematisch wäre dass eine negative
+  Kursivierung, da die Y-Achse auf dem Bildschirm von oben nach unten verläuft.
   Drehwinkel: Positiv bedeutet auf dem Bildschirm sichtbare Linksdrehung.
 */
 
-class GeoStat { // Geometrischer Status fuer ein Rect
+class GeoStat { // Geometrischer Status für ein Rect
 public:
 	long     nDrehWink;
 	long     nShearWink;
@@ -236,13 +234,13 @@ void Poly2Rect(const Polygon& rPol, Rectangle& rRect, GeoStat& rGeo);
 SVX_DLLPUBLIC void OrthoDistance8(const Point& rPt0, Point& rPt, FASTBOOL bBigOrtho);
 SVX_DLLPUBLIC void OrthoDistance4(const Point& rPt0, Point& rPt, FASTBOOL bBigOrtho);
 
-// Multiplikation und anschliessende Division.
+// Multiplikation und anschließende Division.
 // Rechnung und Zwischenergebnis sind BigInt.
 SVX_DLLPUBLIC long BigMulDiv(long nVal, long nMul, long nDiv);
 
-// Fehlerbehaftetes Kuerzen einer Fraction.
-// nDigits gibt an, wieviele signifikante Stellen in
-// Zaehler/Nenner mindestens erhalten bleiben sollen.
+// Fehlerbehaftetes Kürzen einer Fraction.
+// nDigits gibt an, wie viele signifikante Stellen in
+// Zähler/Nenner mindestens erhalten bleiben sollen.
 void Kuerzen(Fraction& rF, unsigned nDigits);
 
 
@@ -261,7 +259,7 @@ public:
 	Fraction& Y()             { return aY; }
 };
 
-// Fuer die Umrechnung von Masseinheiten
+// Für die Umrechnung von Maßeinheiten
 SVX_DLLPUBLIC FrPair GetMapFactor(MapUnit eS, MapUnit eD);
 FrPair GetMapFactor(MapUnit eS, FieldUnit eD);
 FrPair GetMapFactor(FieldUnit eS, MapUnit eD);
@@ -289,7 +287,7 @@ class SVX_DLLPUBLIC SdrFormatter {
 	Fraction  aScale;
 	long      nMul_;
 	long      nDiv_;
-	short     nKomma_;
+	short     nComma_;
 	FASTBOOL  bSrcFU;
 	FASTBOOL  bDstFU;
 	FASTBOOL  bDirty;
@@ -319,3 +317,5 @@ public:
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #endif //_SVDTRANS_HXX
+
+/* vim: set noet sw=4 ts=4: */

@@ -1200,4 +1200,3 @@ void * SAL_CALL component_getFactory(
 	return pRet;
 }
 }
-

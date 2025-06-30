@@ -295,4 +295,3 @@ extern sdecl::ServiceDecl const serviceDecl(
     "ScVbaGlobals",
     "ooo.vba.excel.Globals" );
 }
-

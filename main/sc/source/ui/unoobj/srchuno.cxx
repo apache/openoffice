@@ -265,8 +265,3 @@ ScCellSearchObj* ScCellSearchObj::getImplementation(
 
 
 //------------------------------------------------------------------------
-
-
-
-
-

@@ -24,7 +24,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_editeng.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 #include <osl/endian.h>
 #include <tools/cachestr.hxx>
 #include <vcl/graph.hxx>
@@ -184,7 +183,7 @@ static sal_uInt8 __FAR_DATA aPal8[ 256 * 4 ] =
 };
 
 
-/*  */
+/* */
 
 
 inline long SwapLong( long n )
@@ -253,7 +252,7 @@ static void WriteBMPHeader( SvStream& rStream,
 	}
 }
 
-/*  */
+/* */
 
 		// wandel die ASCII-HexCodes in binaere Zeichen um. Werden
 		// ungueltige Daten gefunden (Zeichen ausser 0-9|a-f|A-F, so

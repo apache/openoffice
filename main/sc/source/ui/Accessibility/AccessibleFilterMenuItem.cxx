@@ -198,4 +198,3 @@ void ScAccessibleFilterMenuItem::updateStateSet()
     if (isSelected())
         p->insert(SELECTED);
 }
-

@@ -145,7 +145,7 @@ Boundary SAL_CALL BreakIteratorImpl::previousWord( const OUString& Text, sal_Int
 
         sal_Int32 nPos = skipSpace(Text, nStartPos, len, rWordType, sal_False);
 
-        // if some spaces are skiped, and the script type is Asian with no CJK rLocale, we have to return
+        // if some spaces are skipped, and the script type is Asian with no CJK rLocale, we have to return
         // (nStartPos, -1) for caller to send correct rLocale for loading correct dictionary.
         result.startPos = nPos;
         if (nPos != nStartPos && nPos > 0 && !isCJK(rLocale) && getScriptClass(Text.iterateCodePoints(&nPos, -1)) == ScriptType::ASIAN) {
@@ -602,4 +602,3 @@ BreakIteratorImpl::getSupportedServiceNames(void) throw( RuntimeException )
 }
 
 } } } }
-

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <precomp.h>
@@ -25,8 +25,6 @@
 // NOT FULLY DECLARED SERVICES
 #include <cosv/bstream.hxx>
 #include <cosv/x.hxx>
-
-
 
 CharacterSource::CharacterSource()
 	:	dpSource(new char[2]),
@@ -58,34 +56,34 @@ CharacterSource::LoadText(csv::bstream & io_rSource)
 	dpSource = new char[nSourceSize+1];
 
 	intt nCount = (intt) io_rSource.read(dpSource,nSourceSize);
-    if (nCount != nSourceSize)
-        throw csv::X_Default("IO-Error: Could not load file completely.");
+	if (nCount != nSourceSize)
+		throw csv::X_Default("IO-Error: Could not load file completely.");
 
 	dpSource[nSourceSize] = NULCH;
 
-    BeginSource();
+	BeginSource();
 }
 
-///  KORR_FUTURE:  So far, this works only when tokens do not cross inserted text boundaries.
+// KORR_FUTURE: So far, this works only when tokens do not cross inserted text boundaries.
 void
 CharacterSource::InsertTextAtCurPos( const char * i_sText2Insert )
 {
-    if ( i_sText2Insert == 0 ? true : strlen(i_sText2Insert) == 0 )
-        return;
+	if ( i_sText2Insert == 0 ? true : strlen(i_sText2Insert) == 0 )
+		return;
 
-    aSourcesStack.push( S_SourceState(
-                            dpSource,
-		                    nSourceSize,
-                            nCurPos,
-		                    nLastCut,
-		                    nLastTokenStart,
-		                    cCharAtLastCut ) );
+	aSourcesStack.push( S_SourceState(
+							dpSource,
+							nSourceSize,
+							nCurPos,
+							nLastCut,
+							nLastTokenStart,
+							cCharAtLastCut ) );
 
 	nSourceSize = strlen(i_sText2Insert);
 	dpSource = new char[nSourceSize+1];
-	strcpy( dpSource,  i_sText2Insert);     // SAFE STRCPY (#100211# - checked)
+	strcpy( dpSource, i_sText2Insert); // SAFE STRCPY (#100211# - checked)
 
-    BeginSource();
+	BeginSource();
 }
 
 const char *
@@ -110,44 +108,45 @@ CharacterSource::BeginSource()
 	dpSource[nLastCut] = NULCH;
 }
 
-//  KORR_FUTURE:  So far, this works only when tokens do not cross inserted text boundaries.
+// KORR_FUTURE: So far, this works only when tokens do not cross inserted text boundaries.
 char
 CharacterSource::MoveOn_OverStack()
 {
-    while ( aSourcesStack.size() > 0 AND nCurPos >= nSourceSize-1 )
-    {
-        S_SourceState & aState = aSourcesStack.top();
-        delete [] dpSource;
+	while ( aSourcesStack.size() > 0 AND nCurPos >= nSourceSize-1 )
+	{
+		S_SourceState & aState = aSourcesStack.top();
+		delete [] dpSource;
 
-        dpSource = aState.dpSource;
-        nSourceSize = aState.nSourceSize;
-        nCurPos = aState.nCurPos;
-        nLastCut = aState.nLastCut;
-        nLastTokenStart = aState.nLastTokenStart;
-        cCharAtLastCut = aState.cCharAtLastCut;
+		dpSource = aState.dpSource;
+		nSourceSize = aState.nSourceSize;
+		nCurPos = aState.nCurPos;
+		nLastCut = aState.nLastCut;
+		nLastTokenStart = aState.nLastTokenStart;
+		cCharAtLastCut = aState.cCharAtLastCut;
 
-        aSourcesStack.pop();
-    }
+		aSourcesStack.pop();
+	}
 
-    if ( nLastCut < nCurPos )
-        CutToken();
+	if ( nLastCut < nCurPos )
+		CutToken();
 
-    return CurChar();
+	return CurChar();
 }
 
 CharacterSource::
 S_SourceState::S_SourceState( DYN char *	dpSource_,
-		                      intt			nSourceSize_,
-		                      intt			nCurPos_,
-		                      intt			nLastCut_,
-		                      intt			nLastTokenStart_,
-		                      char 			cCharAtLastCut_ )
-    :   dpSource(dpSource_),
-        nSourceSize(nSourceSize_),
-        nCurPos(nCurPos_),
+							  intt			nSourceSize_,
+							  intt			nCurPos_,
+							  intt			nLastCut_,
+							  intt			nLastTokenStart_,
+							  char 			cCharAtLastCut_ )
+	:	dpSource(dpSource_),
+		nSourceSize(nSourceSize_),
+		nCurPos(nCurPos_),
 		nLastCut(nLastCut_),
 		nLastTokenStart(nLastTokenStart_),
 		cCharAtLastCut(cCharAtLastCut_)
 {
 }
 
+/* vim: set noet sw=4 ts=4: */

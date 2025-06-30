@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -35,10 +35,10 @@ option explicit
 ' REQUIRED VARIABLES for interface/service tests:
 
 ' Required for lang.XSingleServiceFactory
-Global aArguments As Variant 
+Global aArguments As Variant
 ' Array of arguments for createInstanceWithArguments()
 
-Global aMustSupportInterface As Variant 
+Global aMustSupportInterface As Variant
 ' Array of Strings with names of interfaces which
 ' must be supported by created instance.
 
@@ -46,12 +46,12 @@ Global aMustSupportInterface As Variant
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' inv.Invocation
 '*************************************************************************
 On Error Goto ErrHndl
     oObj = createUNOService("com.sun.star.comp.stoc.Invocation")
-    
+
     aArguments = Array(createUnoService("com.sun.star.io.Pipe"))
     aMustSupportInterface = Array("com.sun.star.script.XInvocation")
 Exit Sub

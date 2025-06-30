@@ -171,5 +171,3 @@ component_getFactory( const sal_Char *pImplName,
 
     return pRet;
 }
-
-

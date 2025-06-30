@@ -126,7 +126,7 @@ public class DirectoryHelper
                     // adding file to List
                     try
                     {
-                        // Composing the URL by replacing all backslashs
+                        // Composing the URL by replacing all backslashes
                         // String stringUrl = "file:///" + aFileEntries[ i ].getAbsolutePath().replace( '\\', '/' );
                         String aStr = aDirEntries[ i ].getAbsolutePath();
                         m_aFileList.add(aStr);

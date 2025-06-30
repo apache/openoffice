@@ -608,5 +608,3 @@ sal_Bool SvtFilterOptions::IsEnableWordPreview() const
 {
 	return pImp->IsFlag( FILTERCFG_ENABLE_WORD_PREVIEW );
 }
-
-

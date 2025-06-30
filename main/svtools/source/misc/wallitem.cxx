@@ -58,4 +58,3 @@ void SfxBrushItemLink::Set( SfxBrushItemLink* pLink )
 	else
 		delete pLink;
 }
-

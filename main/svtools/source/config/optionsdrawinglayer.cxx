@@ -1727,4 +1727,3 @@ Mutex& SvtOptionsDrawinglayer::GetOwnStaticMutex()
 }
 
 // eof
-

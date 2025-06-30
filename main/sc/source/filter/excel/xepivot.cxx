@@ -1805,4 +1805,3 @@ const XclExpPivotCache* XclExpPivotTableManager::CreatePivotCache( const ScDPObj
 }
 
 // ============================================================================
-

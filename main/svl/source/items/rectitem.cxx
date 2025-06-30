@@ -192,6 +192,3 @@ sal_Bool SfxRectangleItem::PutValue( const com::sun::star::uno::Any& rVal,
 
 	return bRet;
 }
-
-
-

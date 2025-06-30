@@ -381,4 +381,3 @@ Sequence< OUString > SAL_CALL CSysShExec::getSupportedServiceNames(	 )
 {
 	return SysShExec_getSupportedServiceNames();
 }
-

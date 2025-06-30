@@ -1789,7 +1789,7 @@ namespace drawinglayer
 				}
 				case PRIMITIVE2D_ID_MODIFIEDCOLORPRIMITIVE2D :
 				{
-					// modified color group. Force output to unified color. Use default pocessing.
+					// modified color group. Force output to unified color. Use default processing.
 					RenderModifiedColorPrimitive2D(static_cast< const primitive2d::ModifiedColorPrimitive2D& >(rCandidate));
 					break;
 				}
@@ -2100,7 +2100,7 @@ namespace drawinglayer
 				}
 				case PRIMITIVE2D_ID_TRANSFORMPRIMITIVE2D :
 				{
-					// use default transform group pocessing
+					// use default transform group processing
 					RenderTransformPrimitive2D(static_cast< const primitive2d::TransformPrimitive2D& >(rCandidate));
 					break;
 				}
@@ -2112,13 +2112,13 @@ namespace drawinglayer
 				}
 				case PRIMITIVE2D_ID_MARKERARRAYPRIMITIVE2D :
 				{
-					// use default marker array pocessing
+					// use default marker array processing
 					RenderMarkerArrayPrimitive2D(static_cast< const primitive2d::MarkerArrayPrimitive2D& >(rCandidate));
 					break;
 				}
 				case PRIMITIVE2D_ID_POINTARRAYPRIMITIVE2D :
 				{
-					// use default point array pocessing
+					// use default point array processing
 					RenderPointArrayPrimitive2D(static_cast< const primitive2d::PointArrayPrimitive2D& >(rCandidate));
 					break;
 				}

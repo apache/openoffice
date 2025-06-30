@@ -11877,7 +11877,7 @@
 								<!--@chart:error-upper- @chart:error-lower- 缺省值为false-->
 								<xsl:when test="@chart:error-upper-indicator='true' and @chart:error-lower-indicator='true'">both</xsl:when>
 								<xsl:when test="@chart:error-upper-indicator='true'">positive</xsl:when>
-								<xsl:when test="@chart:error-lower-indicator='true'">negtive</xsl:when>
+								<xsl:when test="@chart:error-lower-indicator='true'">negative</xsl:when>
 								<xsl:otherwise>none</xsl:otherwise>
 							</xsl:choose>
 						</xsl:variable>
@@ -13770,7 +13770,7 @@
 		</xsl:choose>
 	</xsl:template>
 	<!-- Each parameter of the argumentlist have to be determined.
-	Due to the low level string functionlity in XSLT it becomes a clumsy task -->
+	Due to the low level string functionality in XSLT it becomes a clumsy task -->
 	<xsl:template name="find-parameters">
 		<!-- used for mapping of row/column reference  -->
 		<xsl:param name="rowPos"/>

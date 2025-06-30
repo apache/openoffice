@@ -1347,7 +1347,7 @@ SwLinePortion *SwTxtFormatter::NewPortion( SwTxtFormatInfo &rInf )
                     // --> FME 2005-12-19 #127428# Abandon dec. tab position if line is full:
                     // We have a decimal tab portion in the line and the next character has to be
                     // aligned at the tab stop position. We store the width from the beginning of
-                    // the tab stop portion up to the portion containint the decimal separator:
+                    // the tab stop portion up to the portion containing the decimal separator:
 				  if ( GetTxtFrm()->GetTxtNode()->getIDocumentSettingAccess()->get(IDocumentSettingAccess::TAB_COMPAT) /*rInf.GetVsh()->IsTabCompat();*/ &&
 						 POR_TABDECIMAL == pLastTabPortion->GetWhichPor() )
                     {
@@ -1578,7 +1578,7 @@ xub_StrLen SwTxtFormatter::FormatLine( const xub_StrLen nStartPos )
         pCurr->CalcLine( *this, GetInfo() );
 		CalcRealHeight( GetInfo().IsNewLine() );
 
-		//Bug 120864:For Special case that at the first caculation couldn't get correct height. And need to recaculate for the right height.
+		//Bug 120864:For Special case that at the first calculation couldn't get correct height. And need to recalculate for the right height.
 		SwLinePortion* pPorTmp = pCurr->GetPortion();
 		if ( IsFlyInCntBase() && (!IsQuick() || (pPorTmp && pPorTmp->IsFlyCntPortion() && !pPorTmp->GetPortion() &&
 			pCurr->Height() > pPorTmp->Height())))
@@ -1632,7 +1632,7 @@ xub_StrLen SwTxtFormatter::FormatLine( const xub_StrLen nStartPos )
             delete pFlyStart;
     }
     else
-        // Special case: We do not allow an optimitation of the repaint
+        // Special case: We do not allow an optimization of the repaint
         // area, but during formatting the repaint offset is set to indicate
         // a maximum value for the offset. This value has to be reset:
         GetInfo().SetPaintOfst( 0 );

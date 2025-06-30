@@ -1792,6 +1792,3 @@ void ScUnoAddInCall::SetResult( const uno::Any& rNewRes )
 
 
 //------------------------------------------------------------------------
-
-
-

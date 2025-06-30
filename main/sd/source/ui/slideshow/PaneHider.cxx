@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
 #include "PaneHider.hxx"
@@ -105,7 +103,6 @@ PaneHider::~PaneHider (void)
 		}
 	}
 }
-
 
 } // end of namespace sd
 

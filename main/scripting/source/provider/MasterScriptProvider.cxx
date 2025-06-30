@@ -155,7 +155,7 @@ throw ( Exception, RuntimeException )
         {
             // from the arguments, we were able to deduce a model. That alone doesn't
             // suffice, we also need an XEmbeddedScripts which actually indicates support
-            // for embeddeding scripts
+            // for embedding scripts
             Reference< XEmbeddedScripts > xScripts( m_xModel, UNO_QUERY );
             if ( !xScripts.is() )
             {
@@ -337,7 +337,7 @@ throw ( provider::ScriptFrameworkErrorException,
     Reference< provider::XScript > xScript;
 
     // If the script location is in the same location context as this
-    // MSP then delate to the lanaguage provider controlled by this MSP
+    // MSP then delegate to the language provider controlled by this MSP
     // ** Special case is BASIC, all calls to getScript will be handled
     // by the language script provider in the current location context
     // even if its different

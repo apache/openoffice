@@ -249,4 +249,3 @@ ScVbaCommandBars::getServiceNames()
     }
     return aServiceNames;
 }
-

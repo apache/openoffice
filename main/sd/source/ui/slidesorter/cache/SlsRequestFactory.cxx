@@ -67,6 +67,3 @@ void RequestFactory::operator()(
 
 
 } } } // end of namespace ::sd::slidesorter::cache
-
-
-

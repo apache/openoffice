@@ -12,9 +12,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -41,14 +41,14 @@ option explicit
 ' Required for  com.sun.star.drawing.XShapeDescriptor
  Global cShapeType As String
 
-' Requiered for  com.sun.star.text.XText
+' Required for  com.sun.star.text.XText
  Global oInstance As Object
 
 
 Sub CreateObj()
 
 '*************************************************************************
-' COMPONENT: 
+' COMPONENT:
 ' svx.SvxGraphicObject
 '*************************************************************************
 On Error Goto ErrHndl
@@ -72,9 +72,9 @@ On Error Goto ErrHndl
     aSize.Height = 10000
     oShape.Size = aSize
     oShape.Position = aPoint
-        
+
     oDoc.DrawPages(0).add(oShape)
-    oShape.setString("Graphic Object")   
+    oShape.setString("Graphic Object")
     oObj = oShape
 
     oComponentInstance = oDoc.createInstance("com.sun.star.drawing.GraphicObjectShape")
@@ -89,7 +89,7 @@ On Error Goto ErrHndl
     oComponentInstance.setString("For com.sun.star.lang.XComponent")
 
     oInstance = oDoc.createInstance("com.sun.star.text.TextField.DateTime")
-    
+
 Exit Sub
 ErrHndl:
     Test.Exception()

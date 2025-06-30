@@ -848,4 +848,3 @@ IMPL_LINK( ScConditionalFormatDlg, NewBtnHdl, PushButton*, pBtn )
 
     return 0;
 }
-

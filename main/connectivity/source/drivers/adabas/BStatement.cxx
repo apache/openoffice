@@ -70,6 +70,3 @@ sal_Bool SAL_CALL OAdabasStatement::execute( const ::rtl::OUString& sql ) throw(
 	return OAdabasStatement_BASE::execute(sql);
 }
 // -----------------------------------------------------------------------------
-
-
-

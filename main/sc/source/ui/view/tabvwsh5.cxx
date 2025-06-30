@@ -417,9 +417,3 @@ void ScTabViewShell::UpdateNumberFormatter(
 	pDoc->DeleteNumberFormat( rInfoItem.GetDelArray(),
 							  rInfoItem.GetDelCount() );
 }
-
-
-
-
-
-

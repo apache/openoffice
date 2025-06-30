@@ -780,7 +780,7 @@ void SmMathConfig::SaveFontFormatList()
         aNodeNameDelim += aFntFmtId;
         aNodeNameDelim += aDelim;
 
-        const OUString *pName = aNames.getConstArray();;
+        const OUString *pName = aNames.getConstArray();
 
         // Name
         pVal->Name  = aNodeNameDelim;
@@ -1306,4 +1306,3 @@ void SmMathConfig::Notify( const com::sun::star::uno::Sequence< rtl::OUString >&
 {}
 
 /////////////////////////////////////////////////////////////////
-

@@ -1217,4 +1217,3 @@ const FontNameAttr* FontSubstConfiguration::getSubstInfo( const String& rFontNam
     }
     return NULL;
 }
-

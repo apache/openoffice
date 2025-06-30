@@ -294,4 +294,3 @@ sal_Bool SbxStdCollection::StoreData( SvStream& rStrm ) const
 	}
 	return bRes;
 }
-

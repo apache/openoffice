@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,8 +20,6 @@
  * under the License.
  *
  ***********************************************************-->
-
-
 
 <!--
 	For further documentation and updates visit https://xml.openoffice.org/odf2xhtml
@@ -798,7 +797,7 @@
 					<xsl:when test="$createDiv and normalize-space(.) != ''">
 						<!-- every following frame sibling till the next draw:frame
 							have to be encapsulated within a div with left indent.
-							To be moved altogether according the indent (usually right) -->
+							To be moved altogether according to the indent (usually right) -->
 						<xsl:comment>Next 'div' added for floating.</xsl:comment>
 						<xsl:element name="div">
 							<xsl:attribute name="style">
@@ -989,9 +988,9 @@
 		</xsl:variable>
 		<!-- if the frame is anchored on a paragraph -->
 		<xsl:if test="@text:anchor-type='paragraph'">
-			<xsl:comment>Next 'div' is emulating the top hight of a draw:frame.</xsl:comment>
+			<xsl:comment>Next 'div' is emulating the top height of a draw:frame.</xsl:comment>
 			<!-- When the svg:y is set relative to the paragraph content, the best way to emulate a positive height,
-			 is to add an invisible division between with a height.
+			 is to add an invisible division in between with a height.
 			 Often text will flow into this 'gap', which is handled separately!
 			 -->
 			<xsl:if test="$svgY &gt; 0">
@@ -1010,7 +1009,7 @@
 		<!--
 		<xsl:variable name="followingSibling" select="following-sibling::node()[1]"/>
 		<xsl:choose>
-		   HEURISTIC: if the frame is anchored on a paragraph and the above gab is big enough to hold a text line,
+			HEURISTIC: if the frame is anchored on a paragraph and the above gab is big enough to hold a text line,
 				move it behind the text
 			<xsl:when test="@text:anchor-type='paragraph' and
 				(
@@ -1510,13 +1509,13 @@
 			</xsl:if>
 			<xsl:attribute name="alt">
 				<xsl:choose>
-					<xsl:when test="../svg:desc">
-						<xsl:value-of select="../svg:desc"/>
+					<xsl:when test="../@svg:title">
+						<xsl:value-of select="../@svg:title"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:message>
 	Accessibility Warning:
-		 No alternate text ('svg:desc' element) set for
+		 No alternate text ('svg:title' element) set for
 		 image '
 							<xsl:value-of select="@xlink:href"/>'!
 						</xsl:message>

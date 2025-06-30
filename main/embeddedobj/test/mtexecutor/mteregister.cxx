@@ -116,4 +116,3 @@ sal_Bool SAL_CALL component_writeInfo( void * pServiceManager, void * pRegistryK
 }
 
 } // extern "C"
-

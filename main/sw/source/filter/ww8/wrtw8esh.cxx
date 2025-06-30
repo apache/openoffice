@@ -22,7 +22,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 #include <com/sun/star/embed/Aspects.hpp>
 #include <hintids.hxx>
 #define _SVSTDARR_ULONGSSORT
@@ -961,7 +960,7 @@ const SvULongs* WW8_WrPlcTxtBoxes::GetShapeIdArr() const
     return &aShapeIds;
 }
 
-/*  */
+/* */
 
 sal_uInt32 WW8Export::GetSdrOrdNum( const SwFrmFmt& rFmt ) const
 {
@@ -1445,7 +1444,7 @@ void WinwordAnchoring::WriteData( EscherEx& rEx ) const
     }
 }
 
-/*  */
+/* */
 
 void WW8Export::CreateEscher()
 {
@@ -1490,7 +1489,7 @@ void SwEscherEx::WritePictures()
     Flush();
 }
 
-/*  */
+/* */
 
 // Output- Routines for Escher Export
 

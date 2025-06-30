@@ -24,6 +24,9 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
+#include <sfx2/docfile.hxx>
+#include <sfx2/frame.hxx>
+#include <sfx2/linkmgr.hxx>
 #include <svx/svxids.hrc>
 #include <editeng/memberids.hrc>
 #include <swtypes.hxx>
@@ -2097,6 +2100,34 @@ void SwXNumberingRules::SetNumberingRuleByIndex(
 				{
 					OUString sBrushURL;
 					pData->aVal >>= sBrushURL;
+					// We could have pDoc, but not pDocShell, or vice-versa
+					SwDoc* myDoc = pDoc;
+					SwDocShell* myDocShell = pDocShell;
+					if ( myDoc && ( myDocShell == NULL ) ) {
+						myDocShell = myDoc->GetDocShell();
+					} else if ( ( myDoc == NULL ) && myDocShell ) {
+						myDoc = myDocShell->GetDoc();
+					}
+					if ( myDoc && myDocShell ) {
+						// The following access to the window is copied from SwDoc::UpdateLinks()
+						SfxMedium* pMedium = myDocShell->GetMedium();
+						SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
+						sfx2::LinkManager& pLinkMgr = myDoc->GetLinkManager();
+						if ( pLinkMgr.urlIsVendor( sBrushURL ) ) {
+							break; // Stop here
+						}
+						if ( !pLinkMgr.urlIsSafe( sBrushURL ) ) {
+							Window* pDlgParent = 0;
+							if ( pFrm )
+								pDlgParent = &pFrm->GetWindow();
+							if ( !pDlgParent )
+								pDlgParent = myDocShell->GetDialogParent( pMedium );
+							if ( pDlgParent )
+								if ( !pLinkMgr.GetUserAllowsLinkUpdate( pDlgParent )) {
+									break; // Stop here
+								}
+						}
+					}
 					if(!pSetBrush)
 					{
 						const SvxBrushItem* pOrigBrush = aFmt.GetBrush();
@@ -2816,4 +2847,3 @@ sal_Int64 SAL_CALL SwXTextColumns::getSomething( const uno::Sequence< sal_Int8 >
     }
 	return 0;
 }
-

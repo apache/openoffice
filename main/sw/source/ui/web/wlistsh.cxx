@@ -59,5 +59,3 @@ SwWebListShell::SwWebListShell(SwView &_rView) :
 __EXPORT SwWebListShell::~SwWebListShell()
 {
 }
-
-

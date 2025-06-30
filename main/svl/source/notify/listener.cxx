@@ -153,5 +153,3 @@ rBC
 	DBG_ASSERT( IsListening( rBC ),
 				"notification from unregistered broadcaster" );
 }
-
-

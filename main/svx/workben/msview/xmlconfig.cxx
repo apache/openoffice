@@ -568,4 +568,3 @@ rtl::OUString SwitchElementConfig::format( SvStream& rStream, sal_Size& nLength 
 
 	return ElementConfig::dump_hex( rStream, nLength );
 }
-

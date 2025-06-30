@@ -681,4 +681,3 @@ __EXPORT ScTpSubTotalGroup2::~ScTpSubTotalGroup2()
 __EXPORT ScTpSubTotalGroup3::~ScTpSubTotalGroup3()
 {
 }
-

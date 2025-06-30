@@ -205,4 +205,3 @@ void SwXMLExport::_ExportMeta()
 		}
 	}
 }
-

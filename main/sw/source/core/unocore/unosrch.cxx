@@ -813,6 +813,3 @@ void SwXTextSearch::FillSearchOptions( util::SearchOptions& rSearchOpt ) const
 //		inSelection??
 //	 	aSrchParam.SetSrchInSelection(TypeConversion::toBOOL(aVal));
 }
-
-
-

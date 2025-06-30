@@ -220,7 +220,7 @@ Reference< XShape > Drawing::createAndInsertXShape( const OUString& rService,
     catch( Exception& )
     {
     }
-    OSL_ENSURE( xShape.is(), "Drawing::createAndInsertXShape - cannot instanciate shape object" );
+    OSL_ENSURE( xShape.is(), "Drawing::createAndInsertXShape - cannot instantiate shape object" );
     return xShape;
 }
 

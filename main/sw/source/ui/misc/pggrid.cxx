@@ -514,4 +514,3 @@ IMPL_LINK(SwTextGridPage, GridModifyHdl, void*, EMPTYARG)
     aExampleWN.UpdateExample(aSet);
     return 0;
 }
-

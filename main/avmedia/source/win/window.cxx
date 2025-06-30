@@ -197,8 +197,8 @@ WNDCLASS* lcl_getWndClass()
 
 // ------------------------------------------------------------------------------
 
-Window::Window( const uno::Reference< lang::XMultiServiceFactory >& rxMgr, Player& rPlayer ) :
-    mxMgr( rxMgr ),
+Window::Window( const uno::Reference< uno::XComponentContext >& rxContext, Player& rPlayer ) :
+    mxContext( rxContext ),
     mrPlayer( rPlayer ),
     meZoomLevel( media::ZoomLevel_NOT_AVAILABLE ),
     mnParentWnd( 0 ),

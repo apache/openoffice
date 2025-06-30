@@ -299,7 +299,7 @@ sal_Bool SfxObjectShell::PutURLContentsToVersionStream_Impl(
             uno::Reference< embed::XStorage > xTempStorage =
                 ::comphelper::OStorageHelper::GetStorageFromURL( aTempURL, embed::ElementModes::READWRITE );
 
-            // the password will be transferred from the xStorage to xTempStorage by storage implemetation
+            // the password will be transferred from the xStorage to xTempStorage by storage implementation
             xStorage->copyToStorage( xTempStorage );
 
             // the temporary storage was committed by the previous method and it will die by refcount
@@ -2653,7 +2653,7 @@ sal_Bool SfxObjectShell::DoSave_Impl( const SfxItemSet* pArgs )
     pSet->ClearItem( SID_VERSION );
     pSet->ClearItem( SID_DOC_BASEURL );
 
-    // create a medium as a copy; this medium is only for writingm, because it uses the same name as the original one
+    // create a medium as a copy; this medium is only for writing, because it uses the same name as the original one
     // writing is done through a copy, that will be transferred to the target ( of course after calling HandsOff )
     SfxMedium* pMediumTmp = new SfxMedium( pRetrMedium->GetName(), pRetrMedium->GetOpenMode(), pRetrMedium->IsDirect(), pFilter, pSet );
     pMediumTmp->SetLongName( pRetrMedium->GetLongName() );

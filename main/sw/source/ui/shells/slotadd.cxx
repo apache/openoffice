@@ -146,6 +146,3 @@
 #define SFX_TYPEMAP
 #include <sfx2/msg.hxx>
 #include "swslots.hxx"
-
-
-

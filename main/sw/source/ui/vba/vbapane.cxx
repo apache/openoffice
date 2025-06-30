@@ -69,4 +69,3 @@ SwVbaPane::getServiceNames()
 	}
 	return aServiceNames;
 }
-

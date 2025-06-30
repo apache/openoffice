@@ -245,4 +245,3 @@ void WrappedResultSet::updateColumn(sal_Int32 nPos,Reference< XRowUpdate > _xPar
 		}
 	}
 }
-

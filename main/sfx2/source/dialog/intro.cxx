@@ -103,5 +103,3 @@ void IntroWindow_Impl::Paint( const Rectangle& )
 void IntroWindow_Impl::Slide()
 {
 }
-
-

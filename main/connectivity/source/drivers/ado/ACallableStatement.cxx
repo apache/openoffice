@@ -227,5 +227,3 @@ void SAL_CALL OCallableStatement::release() throw()
 	OPreparedStatement::release();
 }
 // -----------------------------------------------------------------------------
-
-

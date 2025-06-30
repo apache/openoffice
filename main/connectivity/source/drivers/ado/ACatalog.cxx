@@ -119,5 +119,3 @@ void OCatalog::refreshUsers()
 		m_pUsers = new OUsers(this,m_aMutex,aVector,aUsers,m_pConnection->getMetaData()->supportsMixedCaseQuotedIdentifiers());
 }
 // -------------------------------------------------------------------------
-
-

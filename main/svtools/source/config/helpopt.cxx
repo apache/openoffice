@@ -757,4 +757,3 @@ void  SvtHelpOptions::SetHelpStyleSheet(const String& rStyleSheet)
 {
     pImp->SetHelpStyleSheet(rStyleSheet);
 }
-

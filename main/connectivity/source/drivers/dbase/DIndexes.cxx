@@ -129,5 +129,3 @@ void ODbaseIndexes::dropObject(sal_Int32 _nPos,const ::rtl::OUString /*_sElement
 
 }
 // -------------------------------------------------------------------------
-
-

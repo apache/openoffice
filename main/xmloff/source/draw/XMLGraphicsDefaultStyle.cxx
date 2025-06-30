@@ -121,5 +121,3 @@ void XMLGraphicsDefaultStyle::SetDefaults()
 
 	FillPropertySet( xDefaults );
 }
-
-

@@ -890,5 +890,3 @@ void SwSpellDialogChildWindow::LockFocusNotification(bool bLock)
     DBG_ASSERT(m_pSpellState->m_bLockFocus != bLock, "invalid locking - no change of state");
     m_pSpellState->m_bLockFocus = bLock;
 }
-
-

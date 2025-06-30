@@ -285,6 +285,3 @@ void UnoControlBase::Impl_getColumnsAndLines( sal_Int16& nCols, sal_Int16& nLine
 			xP->dispose();
 	}
 }
-
-
-

@@ -1280,4 +1280,3 @@ void StgTmpStrm::FlushData()
 	else
 		SvMemoryStream::FlushData();
 }
-

@@ -728,7 +728,7 @@ void LongCurrencyField::Last()
 }
 
 // =======================================================================
-
+
 LongCurrencyBox::LongCurrencyBox( Window* pParent, WinBits nWinStyle ) :
 	ComboBox( pParent, nWinStyle )
 {

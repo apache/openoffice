@@ -118,7 +118,7 @@ sub create_directory
 					$installer::logger::Lang->print("\n");
 					$installer::logger::Lang->printf(
 						"Attention: Created directory \"\" in the second try.\n",
-						$directory);;
+						$directory);
 
 					my $localcall = "chmod 775 $directory \>\/dev\/null 2\>\&1";
 					system($localcall);
@@ -144,7 +144,7 @@ sub create_directory
 				$installer::logger::Lang->print("\n");
 				$installer::logger::Lang->printf(
 					"Another process created this directory in exactly this moment :-) : %s\n",
-					$directory);;
+					$directory);
 			}
 		}
 	}
@@ -1717,7 +1717,7 @@ sub read_full_directory ($$$)
 	my $fullname;
 	local *DH;
 
-	$installer::logger::Lang->printf("seaching files under '%s'\n", $currentdir);
+	$installer::logger::Lang->printf("searching files under '%s'\n", $currentdir);
 
 	my @directory_queue = [$currentdir, $pathstring];
 

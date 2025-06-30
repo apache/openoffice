@@ -201,7 +201,7 @@ Sequence< OUString > lcl_MergeSeq(
 
     for (sal_Int32 k = 0;  k < 2;  ++k)
     {
-		// add previously configuerd service first and append
+		// add previously configured service first and append
 		// new found services at the end
         const Sequence< OUString > &rSeq = k == 0 ? rCfgSvcs : rNewSvcs;
 
@@ -278,8 +278,8 @@ void SvxLinguConfigUpdate::UpdateAll( sal_Bool bForceCheck )
                 Sequence< OUString > aAvailSvcs(
                         xLngSvcMgr->getAvailableServices( aService, aLocale ));
 #if OSL_DEBUG_LEVEL > 1
-                const OUString * pCfgSvcs   = aCfgSvcs.getConstArray();;
-                const OUString * pAvailSvcs = aAvailSvcs.getConstArray();;
+                const OUString * pCfgSvcs   = aCfgSvcs.getConstArray();
+                const OUString * pAvailSvcs = aAvailSvcs.getConstArray();
                 (void) pCfgSvcs;
                 (void) pAvailSvcs;
 #endif
@@ -1369,5 +1369,3 @@ Locale SvxCreateLocale( LanguageType eLang )
 
 	return aLocale;
 }
-
-

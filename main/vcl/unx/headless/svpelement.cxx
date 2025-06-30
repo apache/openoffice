@@ -283,5 +283,3 @@ sal_uInt32 SvpElement::getBitCountFromScanlineFormat( sal_Int32 nFormat )
     }
     return nBitCount;
 }
-
-

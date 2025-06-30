@@ -85,7 +85,3 @@ void ScExpandedFixedText::RequestHelp(const HelpEvent& rEvt)
 		FixedText::RequestHelp( rEvt );
 	}
 }
-
-
-
-

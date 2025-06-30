@@ -911,4 +911,3 @@ ScMatrixRef XclImpCachedMatrix::CreateScMatrix() const
 }
 
 // ============================================================================
-

@@ -387,7 +387,7 @@ USHORT DirReader_Impl::Read()
                 if ( pDir->pStatLst ) //Status fuer Sort gewuenscht?
                     pDir->ImpSortedInsert( pTemp, new FileStat( aStat ) );
                 else
-                    pDir->ImpSortedInsert( pTemp, NULL );;
+                    pDir->ImpSortedInsert( pTemp, NULL );
 				return 1;
             }
             else
@@ -1007,4 +1007,3 @@ void FSysEnableSysErrorBox( sal_Bool bEnable )
 {
     DosError( bEnable ? 0 : FERR_DISABLEHARDERR );
 }
-

@@ -63,5 +63,3 @@ SwWebDrawFormShell::SwWebDrawFormShell(SwView& rVw) :
 __EXPORT SwWebDrawFormShell::~SwWebDrawFormShell()
 {
 }
-
-

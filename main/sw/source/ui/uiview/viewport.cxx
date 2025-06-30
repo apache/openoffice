@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include "hintids.hxx"
 #include <vcl/help.hxx>
@@ -118,7 +115,7 @@ void lcl_GetPos(SwView* pView,
 }
 
 /*--------------------------------------------------------------------
-	Beschreibung:	Nullpunkt Lineal setzen
+	Beschreibung:	Nullpunkt Ruler setzen
  --------------------------------------------------------------------*/
 
 void SwView::InvalidateRulerPos()
@@ -136,7 +133,7 @@ void SwView::InvalidateRulerPos()
 
 	GetViewFrame()->GetBindings().Invalidate(aInval);
 
-    DBG_ASSERT(pHRuler, "warum ist das Lineal nicht da?");
+    DBG_ASSERT(pHRuler, "Why is there no Ruler?");
     pHRuler->ForceUpdate();
     pVRuler->ForceUpdate();
 }
@@ -866,7 +863,7 @@ void SwView::CalcAndSetBorderPixel( SvBorder &rToFill, sal_Bool /*bInner*/ )
 			rToFill.Left() = nWidth;
 	}
 
-    DBG_ASSERT(pHRuler, "warum ist das Lineal nicht da?");
+    DBG_ASSERT(pHRuler, "Why is there no Ruler?");
     if ( pHRuler->IsVisible() )
         rToFill.Top() = pHRuler->GetSizePixel().Height();
 
@@ -899,19 +896,19 @@ void ViewResizePixel( const Window &rRef,
 					ImageButton* pPageDownBtn,
 					ImageButton* pNaviBtn,
                     Window& rScrollBarBox,
-					SvxRuler* pVLineal,
-					SvxRuler* pHLineal,
+					SvxRuler* pVRuler,
+					SvxRuler* pHRuler,
                     sal_Bool bWebView,
                     sal_Bool bVRulerRight )
 {
 // ViewResizePixel wird auch von der PreView benutzt!!!
 
-	const sal_Bool bHLineal = pHLineal && pHLineal->IsVisible();
-	const long nHLinSzHeight = bHLineal ?
-						pHLineal->GetSizePixel().Height() : 0;
-    const sal_Bool bVLineal = pVLineal && pVLineal->IsVisible();
-    const long nVLinSzWidth = bVLineal ?
-						pVLineal->GetSizePixel().Width() : 0;
+	const sal_Bool bHRuler = pHRuler && pHRuler->IsVisible();
+	const long nHLinSzHeight = bHRuler ?
+						pHRuler->GetSizePixel().Height() : 0;
+    const sal_Bool bVRuler = pVRuler && pVRuler->IsVisible();
+    const long nVLinSzWidth = bVRuler ?
+						pVRuler->GetSizePixel().Width() : 0;
     long nHBSzHeight2= rHScrollbar.IsVisible( sal_False ) || !rHScrollbar.IsAuto() ?
 					   rRef.GetSettings().GetStyleSettings().GetScrollBarSize() : 0;
     long nHBSzHeight =
@@ -920,9 +917,9 @@ void ViewResizePixel( const Window &rRef,
     long nVBSzWidth = rVScrollbar.IsVisible(sal_True) ||  (rVScrollbar.IsVisible( sal_False ) && !rVScrollbar.IsAuto()) ?
                          rRef.GetSettings().GetStyleSettings().GetScrollBarSize() : 0;
 
-    if(pVLineal)
+    if(pVRuler)
     {
-        WinBits nStyle = pVLineal->GetStyle()&~WB_RIGHT_ALIGNED;
+        WinBits nStyle = pVRuler->GetStyle()&~WB_RIGHT_ALIGNED;
         Point aPos( rOfst.X(), rOfst.Y()+nHLinSzHeight );
 		if(bVRulerRight)
 		{
@@ -931,25 +928,25 @@ void ViewResizePixel( const Window &rRef,
         }
         Size  aSize( nVLinSzWidth, rEditSz.Height() );
 		if(!aSize.Width())
-			aSize.Width() = pVLineal->GetSizePixel().Width();
-        pVLineal->SetStyle(nStyle);
-        pVLineal->SetPosSizePixel( aPos, aSize );
-        if(!pVLineal->IsVisible())
-            pVLineal->Resize();
-    }
-//  Lineal braucht ein Resize, sonst funktioniert es nicht im unischtbaren Zustand
-    if(pHLineal)
-    {
+			aSize.Width() = pVRuler->GetSizePixel().Width();
+        pVRuler->SetStyle(nStyle);
+        pVRuler->SetPosSizePixel( aPos, aSize );
+        if(!pVRuler->IsVisible())
+            pVRuler->Resize();
+	}
+//	Ruler braucht ein Resize, sonst funktioniert es nicht im unischtbaren Zustand
+	if(pHRuler)
+	{
 		Size aSize( rSize.Width(), nHLinSzHeight );
-        if ( nVBSzWidth && !bVRulerRight)
+		if ( nVBSzWidth && !bVRulerRight)
 			aSize.Width() -= nVBSzWidth;
 		if(!aSize.Height())
-			aSize.Height() = pHLineal->GetSizePixel().Height();
-		pHLineal->SetPosSizePixel( rOfst, aSize );
+			aSize.Height() = pHRuler->GetSizePixel().Height();
+		pHRuler->SetPosSizePixel( rOfst, aSize );
 //		#46802 VCL ruft an unsichtbaren Fenstern kein Resize
-//      fuer das Lineal ist das aber keine gute Idee
-		if(!pHLineal->IsVisible())
-			pHLineal->Resize();
+//		für den Ruler ist das aber keine gute Idee
+		if(!pHRuler->IsVisible())
+			pHRuler->Resize();
 	}
 
 	// Scrollbars und SizeBox anordnen
@@ -975,7 +972,7 @@ void ViewResizePixel( const Window &rRef,
         if(bVRulerRight)
 		{
 			aPos.X() = rOfst.X();
-            if(bHLineal)
+            if(bHRuler)
             {
                 aPos.Y() += nHLinSzHeight;
                 aSize.Height() -= nHLinSzHeight;
@@ -1109,14 +1106,14 @@ void SwView::InnerResizePixel( const Point &rOfst, const Size &rSize )
 			bRepeat = sal_True;
 	}while( bRepeat );
 	bProtectDocShellVisArea = sal_False;
-    bInInnerResizePixel = sal_False;
+	bInInnerResizePixel = sal_False;
 }
 
 
 void SwView::OuterResizePixel( const Point &rOfst, const Size &rSize )
 {
-    // FME 22.08.2003 #i16909# - return, if no size (caused by minimize window).
-    if ( bInOuterResizePixel || ( !rSize.Width() && !rSize.Height() ) )
+	// FME 22.08.2003 #i16909# - return, if no size (caused by minimize window).
+	if ( bInOuterResizePixel || ( !rSize.Width() && !rSize.Height() ) )
 		return;
 	bInOuterResizePixel	= sal_True;
 
@@ -1173,8 +1170,8 @@ void SwView::OuterResizePixel( const Point &rOfst, const Size &rSize )
 
 	do {
 		++nCnt;
-        const sal_Bool bScroll1 = pVScrollbar->IsVisible(sal_True);
-        const sal_Bool bScroll2 = pHScrollbar->IsVisible(sal_True);
+		const sal_Bool bScroll1 = pVScrollbar->IsVisible(sal_True);
+		const sal_Bool bScroll2 = pHScrollbar->IsVisible(sal_True);
 		SvBorder aBorder;
 		CalcAndSetBorderPixel( aBorder, sal_False );
 		const Size aEditSz( GetEditWin().GetOutputSizePixel() );
@@ -1187,7 +1184,7 @@ void SwView::OuterResizePixel( const Point &rOfst, const Size &rSize )
 		if ( bShowAtResize )
 			ShowAtResize();
 
-        if( pHRuler->IsVisible() || pVRuler->IsVisible() )
+		if( pHRuler->IsVisible() || pVRuler->IsVisible() )
 			InvalidateRulerPos();	//Inhalt invalidieren.
 
 		//CursorStack zuruecksetzen, da die Cursorpositionen fuer PageUp/-Down
@@ -1224,7 +1221,7 @@ void SwView::OuterResizePixel( const Point &rOfst, const Size &rSize )
 
 		//Nicht endlosschleifen. Moeglichst dann stoppen wenn die
 		//(Auto-)Scrollbars sichtbar sind.
-		if ( bRepeat && 
+		if ( bRepeat &&
              ( nCnt > 10 || ( nCnt > 3 && bHAuto && bAuto ) )
            )
 		{
@@ -1250,7 +1247,7 @@ void SwView::OuterResizePixel( const Point &rOfst, const Size &rSize )
 	if( bUnLockView )
 		pWrtShell->LockView( sal_False );
 
-    bInOuterResizePixel = sal_False;
+	bInOuterResizePixel = sal_False;
 
 	if ( mpPostItMgr )
 	{
@@ -1288,15 +1285,15 @@ Size SwView::GetOptimalSizePixel() const
             const SvxLRSpaceItem &rLeftLRSpace = rDesc.GetLeft().GetLRSpace();
             aPgSize.Width() += Abs( long(rLeftLRSpace.GetLeft()) - long(rLRSpace.GetLeft()) );
 		}
-    }
+	}
 	return GetEditWin().LogicToPixel( aPgSize );
 }
 
 
 sal_Bool SwView::UpdateScrollbars()
 {
-    sal_Bool bRet = sal_False;
-    if ( !aVisArea.IsEmpty() )
+	sal_Bool bRet = sal_False;
+	if ( !aVisArea.IsEmpty() )
 	{
 		const sal_Bool bBorder = IsDocumentBorder();
 		Rectangle aTmpRect( aVisArea );
@@ -1365,7 +1362,7 @@ sal_Bool SwView::HandleWheelCommands( const CommandEvent& rCEvt )
 		bOk = sal_True;
 	}
 	else
-	{ 
+	{
 		if (pWData && (COMMAND_WHEEL_SCROLL==pWData->GetMode()) && (((sal_uLong)0xFFFFFFFF) == pWData->GetScrollLines()))
         	{
                         if (pWData->GetDelta()<0)
@@ -1381,4 +1378,4 @@ sal_Bool SwView::HandleWheelCommands( const CommandEvent& rCEvt )
 	return bOk;
 }
 
-
+/* vim: set noet sw=4 ts=4: */

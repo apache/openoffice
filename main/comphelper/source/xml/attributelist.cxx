@@ -172,4 +172,3 @@ void AttributeList::AppendAttributeList( const uno::Reference< ::com::sun::star:
 }
 
 } // namespace comphelper
-

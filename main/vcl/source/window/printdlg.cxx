@@ -2408,7 +2408,7 @@ IMPL_LINK( PrintDialog, UIOption_CheckHdl, CheckBox*, i_pBox )
 IMPL_LINK( PrintDialog, UIOption_RadioHdl, RadioButton*, i_pBtn )
 {
     // this handler gets called for all radiobuttons that get unchecked, too
-    // however we only want one notificaction for the new value (that is for
+    // however we only want one notification for the new value (that is for
     // the button that gets checked)
     if( i_pBtn->IsChecked() )
     {
@@ -2646,4 +2646,3 @@ void PrintProgressDialog::Paint( const Rectangle& )
         aDecoView.DrawFrame( aFrameRect );
     }
 }
-

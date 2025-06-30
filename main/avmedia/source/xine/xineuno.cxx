@@ -24,16 +24,31 @@
 #include "xinecommon.hxx"
 #include "manager.hxx"
 
+#include <cppuhelper/implementationentry.hxx>
+
 using namespace ::com::sun::star;
 
 // -------------------
 // - factory methods -
 // -------------------
 
-static uno::Reference< uno::XInterface > SAL_CALL create_MediaPlayer( const uno::Reference< lang::XMultiServiceFactory >& rxFact )
+static uno::Reference< uno::XInterface > SAL_CALL create_MediaPlayer( const uno::Reference< uno::XComponentContext >& rxContext )
 {
-	return uno::Reference< uno::XInterface >( *new ::avmedia::xine::Manager( rxFact ) );
+	return uno::Reference< uno::XInterface >( *new ::avmedia::xine::Manager( rxContext ) );
 }
+
+static struct ::cppu::ImplementationEntry g_component_entries[] =
+{
+	{
+		create_MediaPlayer,
+		::avmedia::xine::getImplementationName_Static,
+		::avmedia::xine::getSupportedServiceNames_Static,
+		::cppu::createSingleComponentFactory,
+		0,
+		0
+	},
+	{ 0, 0, 0, 0, 0, 0 }
+};
 
 // ------------------------------------------
 // - component_getImplementationEnvironment -
@@ -48,26 +63,7 @@ extern "C" void SAL_CALL component_getImplementationEnvironment( const sal_Char 
 // - component_getFactory -
 // ------------------------
 
-extern "C" void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* /* pRegistryKey */ )
+extern "C" void* SAL_CALL component_getFactory( const sal_Char* pImplName, void* pServiceManager, void* pRegistryKey )
 {
-	uno::Reference< lang::XSingleServiceFactory > xFactory;
-	void*									pRet = 0;
-
-	if( rtl_str_compare( pImplName, AVMEDIA_XINE_MANAGER_IMPLEMENTATIONNAME ) == 0 )
-	{
-		const ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( AVMEDIA_XINE_MANAGER_SERVICENAME ) );
-
-		xFactory = uno::Reference< lang::XSingleServiceFactory >( ::cppu::createSingleFactory(
-						reinterpret_cast< lang::XMultiServiceFactory* >( pServiceManager ),
-						::rtl::OUString::createFromAscii( AVMEDIA_XINE_MANAGER_IMPLEMENTATIONNAME ),
-						create_MediaPlayer, uno::Sequence< ::rtl::OUString >( &aServiceName, 1 ) ) );
-	}
-
-	if( xFactory.is() )
-	{
-		xFactory->acquire();
-		pRet = xFactory.get();
-	}
-
-	return pRet;
+	return ::cppu::component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, avmedia::g_component_entries );
 }

@@ -231,4 +231,3 @@ void SfxDocumentTemplateDlg::NewTemplate(const String &rPath)
 	pTemplates->NewTemplate(
 		aRegionLb.GetSelectEntryPos(), GetTemplateName(), rPath);
 }
-

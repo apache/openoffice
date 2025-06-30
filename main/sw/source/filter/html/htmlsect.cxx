@@ -70,7 +70,7 @@
 using namespace ::com::sun::star;
 
 
-/*  */
+/* */
 
 void SwHTMLParser::NewDivision( int nToken )
 {
@@ -543,7 +543,7 @@ sal_Bool SwHTMLParser::EndSections( sal_Bool bLFStripped )
 	return bSectionClosed;
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::NewMultiCol()
 {
@@ -772,7 +772,7 @@ void SwHTMLParser::NewMultiCol()
 	PushContext( pCntxt );
 }
 
-/*  */
+/* */
 
 void SwHTMLParser::InsertFlyFrame( const SfxItemSet& rItemSet,
 								   _HTMLAttrContext *pCntxt,
@@ -801,7 +801,7 @@ void SwHTMLParser::InsertFlyFrame( const SfxItemSet& rItemSet,
 }
 
 
-/*  */
+/* */
 
 void SwHTMLParser::MovePageDescAttrs( SwNode *pSrcNd,
 									  sal_uLong nDestIdx,
@@ -853,4 +853,3 @@ void SwHTMLParser::MovePageDescAttrs( SwNode *pSrcNd,
 		}
 	}
 }
-

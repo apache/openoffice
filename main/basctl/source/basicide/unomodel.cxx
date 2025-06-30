@@ -114,11 +114,10 @@ uno::Sequence< OUString > SIDEModel::getSupportedServiceNames_Static(void)
 }
 
 uno::Reference< uno::XInterface > SAL_CALL SIDEModel_createInstance(
-				const uno::Reference< lang::XMultiServiceFactory > & ) throw( uno::Exception )
+				const uno::Reference< uno::XComponentContext > & ) throw( uno::Exception )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	BasicIDEDLL::Init();
 	SfxObjectShell* pShell = new BasicDocShell();
 	return uno::Reference< uno::XInterface >( pShell->GetModel() );
 }
-

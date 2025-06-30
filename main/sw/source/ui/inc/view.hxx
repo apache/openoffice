@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef _SWVIEW_HXX
 #define _SWVIEW_HXX
@@ -121,8 +120,8 @@ enum ShellModes
 	SHELL_MODE_TABLE_TEXT,
 	SHELL_MODE_TABLE_LIST_TEXT,
 	SHELL_MODE_MEDIA,
-    SHELL_MODE_EXTRUDED_CUSTOMSHAPE,
-    SHELL_MODE_FONTWORK,
+	SHELL_MODE_EXTRUDED_CUSTOMSHAPE,
+	SHELL_MODE_FONTWORK,
 	SHELL_MODE_POSTIT
 };
 
@@ -143,13 +142,13 @@ struct SwApplyTemplate
 
 	int eType;
 	sal_uInt16 nColor;
-    SwFormatClipboard* pFormatClipboard;
+	SwFormatClipboard* pFormatClipboard;
 	sal_Bool bUndo;
 
 	SwApplyTemplate() :
 		eType(0),
 		nColor(0),
-        pFormatClipboard(0),
+		pFormatClipboard(0),
 		bUndo(sal_False)
 	{
 		aColl.pTxtColl = 0;
@@ -167,7 +166,7 @@ class SW_DLLPUBLIC SwView: public SfxViewShell
 	friend void lcl_SelectShellForDrop( SwView &rView );
 
 	friend class TestTemplateItem;
-    friend class SwHHCWrapper;
+	friend class SwHHCWrapper;
 	friend class SwHyphWrapper;
 	friend class SwView_Impl;
 	friend class SwClipboardChangeListener;
@@ -181,7 +180,7 @@ class SW_DLLPUBLIC SwView: public SfxViewShell
 	static sal_uInt16			nInsertObjectCtrlState;
 	static sal_uInt16			nInsertFieldCtrlState;
 	static sal_uInt16			nMoveType; // fuer Buttons unter dem Scrollbar (viewmdi)
-    static sal_Int32        nActMark; // aktuelle Sprungmarke fuer unbenannte Merker
+	static sal_Int32        nActMark; // aktuelle Sprungmarke fuer unbenannte Merker
 
 	static sal_Bool             bExtra;
 	static sal_Bool             bFound;
@@ -191,20 +190,20 @@ class SW_DLLPUBLIC SwView: public SfxViewShell
 	static SearchAttrItemList* pReplList;
 
 
-    SvxHtmlOptions      aHTMLOpt;
-	Timer				aTimer;			//Fuer verzoegerte ChgLnks waehrend
+	SvxHtmlOptions      aHTMLOpt;
+	Timer				aTimer;			//Für verzögerte ChgLnks waehrend
 										//einer Aktion
 	String				aPageStr;		//Statusanzeige, aktuelle Seite
 	String 				sSwViewData,
 	//and the new cursor position if the user double click in the PagePreView
 						sNewCrsrPos;
-    // to support keyboard the number of the page to go to can be set too
-    sal_uInt16              nNewPage;
+	// to support keyboard the number of the page to go to can be set too
+	sal_uInt16              nNewPage;
 	sal_uInt16			nOldPageNum;
 	String			nOldSectionName;
 	Point				aTabColFromDocPos;	//Verschieben von Tabellenspalten aus
 											//aus dem Dokument heraus.
-    SwTxtNode           * pNumRuleNodeFromDoc; // Moving indent of numrule #i23726#
+	SwTxtNode           * pNumRuleNodeFromDoc; // Moving indent of numrule #i23726#
 
 	Size				aDocSz;			// aktuelle Dokumentgroesse
 	Rectangle			aVisArea;		// sichtbarer Bereich
@@ -238,27 +237,27 @@ class SW_DLLPUBLIC SwView: public SfxViewShell
 
 	const SwFrmFmt		*pLastTableFormat;
 
-    SwFormatClipboard   *pFormatClipboard; //holds data for format paintbrush
+	SwFormatClipboard	*pFormatClipboard; //holds data for format paintbrush
 
 	SwPostItMgr			*mpPostItMgr;
 
 	int					nSelectionType;
 
-    static const int MASTERENUMCOMMANDS = 6;
+	static const int MASTERENUMCOMMANDS = 6;
 
-    String			aCurrShapeEnumCommand[ MASTERENUMCOMMANDS ];
+	String			aCurrShapeEnumCommand[ MASTERENUMCOMMANDS ];
 
-    sal_uInt16          nPageCnt;
+	sal_uInt16          nPageCnt;
 
 	// Aktueller Drawmode
 	sal_uInt16			nDrawSfxId;
-    String          sDrawCustom; //some drawing types are marked with strings!
+	String          sDrawCustom; //some drawing types are marked with strings!
 	sal_uInt16			nFormSfxId;
 	sal_uInt16			nLastPasteDestination;
 
-    // save the border distance status from SwView::StateTabWin to re-use it in SwView::ExecTabWin()
-    sal_uInt16          nLeftBorderDistance;
-    sal_uInt16          nRightBorderDistance;
+	// save the border distance status from SwView::StateTabWin to re-use it in SwView::ExecTabWin()
+	sal_uInt16          nLeftBorderDistance;
+	sal_uInt16          nRightBorderDistance;
 
 	sal_Bool			bCenterCrsr : 1,
 					bTopCrsr : 1,
@@ -514,24 +513,24 @@ public:
     void            ShowHScrollbar(sal_Bool bShow);
     sal_Bool        IsHScrollbarVisible()const;
 
-    void            ShowVScrollbar(sal_Bool bShow);
-    sal_Bool        IsVScrollbarVisible()const;
+	void            ShowVScrollbar(sal_Bool bShow);
+	sal_Bool        IsVScrollbarVisible()const;
 
-    int             CreateVLineal();
-    int             KillVLineal();
-    int             CreateTab();
-    int             KillTab();
+	int				CreateVRuler();
+	int				KillVRuler();
+	int				CreateTab();
+	int				KillTab();
 
-    int             StatVLineal() const { return ((Window*)pVRuler)->IsVisible(); }
-	void			ChangeVLinealMetric(FieldUnit eUnit);
-    void            GetVLinealMetric(FieldUnit& rToFill) const;
+	int				StatVRuler() const { return ((Window*)pVRuler)->IsVisible(); }
+	void			ChangeVRulerMetric(FieldUnit eUnit);
+	void			GetVRulerMetric(FieldUnit& rToFill) const;
 
-    int             StatTab() const { return ((Window*)pHRuler)->IsVisible(); }
-    SvxRuler&       GetHLineal()    { return *pHRuler; }
-    SvxRuler&       GetVLineal()    { return *pVRuler; }
+	int				StatTab() const { return ((Window*)pHRuler)->IsVisible(); }
+	SvxRuler&		GetHRuler()    { return *pHRuler; }
+	SvxRuler&		GetVRuler()    { return *pVRuler; }
 	void			InvalidateRulerPos();
 	void			ChangeTabMetric(FieldUnit eUnit);
-    void            GetHLinealMetric(FieldUnit& rToFill) const;
+	void			GetHRulerMetric(FieldUnit& rToFill) const;
 
 		// Handler
 	void			Execute(SfxRequest&);
@@ -633,8 +632,8 @@ public:
 
     // Enable mail merge - mail merge field dialog enabled
     void EnableMailMerge(sal_Bool bEnable = sal_True);
-    //apply Accessiblity options
-    void ApplyAccessiblityOptions(SvtAccessibilityOptions& rAccessibilityOptions);
+    //apply Accessibility options
+    void ApplyAccessibilityOptions(SvtAccessibilityOptions& rAccessibilityOptions);
 
 	SwView(SfxViewFrame* pFrame, SfxViewShell*);
 	~SwView();
@@ -692,3 +691,5 @@ SfxTabPage* CreatePrintOptionsPage(	Window *pParent,
 									sal_Bool bPreview);
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

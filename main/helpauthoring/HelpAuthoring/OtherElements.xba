@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="OtherElements" script:language="StarBasic">REM  *****  BASIC  *****
 
@@ -39,13 +39,13 @@ Sub InsertVariable
 	oCurStart = oStart.getText.createTextCursorByRange(oStart)
 	oEnd = oCur.getEnd
 	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
-	
+
 	ID = inputbox(&quot;Enter an identifier for the variable element:&quot;,&quot;Enter Variable ID&quot;)
-	
+
 	If ID=&quot;&quot; Then
 		Exit Sub
 	End If
-	
+
 	thiscomponent.getcurrentcontroller.select(oCurStart)
 	InsertTag(&quot;VAR_&quot;,&quot;&lt;VAR ID=&quot;&quot;&quot;+ID+&quot;&quot;&quot;&gt;&quot;)
 	thiscomponent.getcurrentcontroller.select(oCurEnd)
@@ -79,11 +79,11 @@ Sub InsertGraphic
 	If sFName &lt;&gt; &quot;&quot; Then
 		DocRoot = ReadConfig(&quot;HelpPrefix&quot;)
 &apos;		msgbox(&quot;DocRoot &quot;+DocRoot+chr(13)+&quot;FName &quot;+sFName)
-		
+
 		If not(IsSubDir(sFName,DocRoot)) Then
 			msgbox(&quot;Image is located outside of your Document Root&quot;+chr(13)+DocRoot,48,&quot;Warning&quot;)
 		End If
-	
+
 		sAlt = InputBox(&quot;Enter an alternative Text for the graphical element.&quot;+chr(13)+&quot;This can be changed later in the image properties.&quot;,&quot;ALT description&quot;,&quot;&lt;ALT DESCRIPTION&gt;&quot;)
 &apos;		sCap = InputBox(&quot;Enter a caption for the image (optional)&quot;,&quot;Caption&quot;,&quot;&quot;)
 		sID = CreateID
@@ -152,13 +152,13 @@ Sub InsertExtendedTip
 	oCurStart = oStart.getText.createTextCursorByRange(oStart)
 	oEnd = oCur.getEnd
 	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
-	
+
 	Ret = msgbox (&quot;Create a hidden tip?&quot;,3+32,&quot;Extended Tip&quot;)
-	
+
 	If Ret=2 or Ret=3 Then
 		Exit Sub
 	End If
-	
+
 	thiscomponent.getcurrentcontroller.select(oCurStart)
 	If Ret=6 Then
 		InsertTag(&quot;AHID_&quot;,&quot;&lt;AHID hid=&quot;&quot;&quot;+ID+&quot;&quot;&quot;&gt;&quot;)
@@ -179,7 +179,7 @@ Sub InsertSort
 	InsertTag(&quot;SORT_&quot;,&quot;&lt;SORT order=&quot;&quot;asc&quot;&quot;&gt;&quot;,&quot;hlp_aux_sort&quot;)
 	GoLeft(1)
 	GoDown(1)
-	msgbox &quot;Remember to also specify the closing SORT tag!&quot;,48,&quot;Don&apos;t forget to close the tag&quot;	
+	msgbox &quot;Remember to also specify the closing SORT tag!&quot;,48,&quot;Don&apos;t forget to close the tag&quot;
 End Sub
 
 Sub CloseSort
@@ -207,9 +207,9 @@ sub InsertSection
 	oCurStart = oStart.getText.createTextCursorByRange(oStart)
 	oEnd = oCur.getEnd
 	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
-	
+
 	sSectionName = AlphaNum(inputbox(&quot;Please specify a section name/identifier:&quot;))
-	
+
 	If sSectionName = &quot;&quot; Then
 		Exit Sub
 	End If
@@ -246,7 +246,7 @@ sub InsertSection
 		GoUp(1)
 		InsertTag(&quot;SECTION_&quot;,&quot;&lt;SECTION id=&quot;&quot;&quot;+sSectionName+&quot;&quot;&quot;&gt;&quot;)
 		SetParaStyle(&quot;hlp_aux_section&quot;)
-	
+
 		thiscomponent.getcurrentcontroller.select(oCurEnd)
 		CR
 		SetParaStyle(&quot;hlp_aux_section&quot;)
@@ -254,13 +254,13 @@ sub InsertSection
 	Else
 		GoUp(1)
 		InsertTagCR(&quot;SECTION_&quot;,&quot;&lt;SECTION id=&quot;&quot;&quot;+sSectionName+&quot;&quot;&quot;&gt;&quot;,&quot;hlp_aux_section&quot;)
-		CR 
+		CR
 		SetParaStyle(&quot;hlp_aux_section&quot;)
 		InsertTag(&quot;_SECTION&quot;,&quot;&lt;/SECTION&gt;&quot;)
 		GoUp(1)
 		SetParaStyle(&quot;hlp_default&quot;)
-	End If	
-	
+	End If
+
 end sub
 
 Sub ToggleParaL10NStatus
@@ -302,9 +302,9 @@ Sub ToggleParaL10NStatus
 	Else
 		SetParaData(sID,&quot;no&quot;)
 	End If
-	
+
 	thiscomponent.getcurrentcontroller.select(oSel(0))
-	
+
 End Sub
 
 
@@ -333,7 +333,7 @@ Sub UnLocalizeImage
 		End If
 		UnsetBorder
 	End If
-	
+
 End Sub
 
 
@@ -370,7 +370,7 @@ Sub InsertHowToGet
 	dispatcher.executeDispatch(document, &quot;.uno:InsertSection&quot;, &quot;&quot;, 0, args())
 	GoUp(1)
 	InsertTagCR(&quot;SECTION_&quot;,&quot;&lt;SECTION id=&quot;&quot;howtoget&quot;&quot;&gt;&quot;,&quot;hlp_aux_section&quot;)
-	CR 
+	CR
 	SetParaStyle(&quot;hlp_aux_section&quot;)
 	InsertTag(&quot;_SECTION&quot;,&quot;&lt;/SECTION&gt;&quot;)
 	GoUp(1)
@@ -407,7 +407,7 @@ Sub InsertRelatedTopics
 	dispatcher.executeDispatch(document, &quot;.uno:InsertSection&quot;, &quot;&quot;, 0, args())
 	GoUp(1)
 	InsertTagCR(&quot;SECTION_&quot;,&quot;&lt;SECTION id=&quot;&quot;relatedtopics&quot;&quot;&gt;&quot;,&quot;hlp_aux_section&quot;)
-	CR 
+	CR
 	SetParaStyle(&quot;hlp_aux_section&quot;)
 	InsertTag(&quot;_SECTION&quot;,&quot;&lt;/SECTION&gt;&quot;)
 	GoUp(1)

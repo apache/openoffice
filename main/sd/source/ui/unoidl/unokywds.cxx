@@ -29,5 +29,3 @@
 #include <unokywds.hxx>
 #undef SD_DEFINE_KEYWORDS
 #endif
-
-

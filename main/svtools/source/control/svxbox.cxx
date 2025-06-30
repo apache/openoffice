@@ -609,5 +609,3 @@ String SvxComboBox::GetText() const
 
 	return aTxt;
 }
-
-

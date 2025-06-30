@@ -343,4 +343,3 @@ void SdrTextObj::ImpLinkAbmeldung()
 		pData->pLink=NULL;
 	}
 }
-

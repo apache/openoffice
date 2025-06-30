@@ -73,6 +73,3 @@ SfxPoolItem* __EXPORT SvxDrawToolItem::Create( SvStream& rStream, sal_uInt16 nVe
 	rStream >> nVal;
 	return new SvxDrawToolItem(nVal);
 }
-
-
-

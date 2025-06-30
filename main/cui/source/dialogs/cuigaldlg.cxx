@@ -1270,4 +1270,3 @@ IMPL_LINK( TPGalleryThemeProperties, DialogClosedHdl, ::com::sun::star::ui::dial
 
     return 0L;
 }
-

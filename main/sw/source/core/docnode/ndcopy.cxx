@@ -1142,7 +1142,7 @@ bool SwDoc::CopyImpl( SwPaM& rPam, SwPosition& rPos,
             else if( bCanMoveBack )
             {   //Insertion at the first position of a text node. It will not be splitted, the table
                 // will be inserted before the text node.
-                // See below, before the SetInsertRange funciton of the undo object will be called,
+                // See below, before the SetInsertRange function of the undo object will be called,
                 // the CpyPam would be moved to the next content position. This has to be avoided
                 // We want to be moved to the table node itself thus we have to set bCanMoveBack
                 // and to manipulate aCpyPam.
@@ -1640,7 +1640,3 @@ void SwDoc::CopyFlyInFlyImpl(
 		}
 	}
 }
-
-
-
-

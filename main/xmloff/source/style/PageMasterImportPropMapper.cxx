@@ -397,4 +397,3 @@ void PageMasterImportPropertyMapper::finished(::std::vector< XMLPropertyState >&
 		delete pFooterDynamic;
 	}
 }
-

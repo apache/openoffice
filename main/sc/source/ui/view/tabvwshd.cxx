@@ -89,8 +89,3 @@ Window* ScTabViewShell::GetDialogParent()
 
 	return GetActiveWin();		// for normal views, too
 }
-
-
-
-
-

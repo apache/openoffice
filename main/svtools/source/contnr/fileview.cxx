@@ -2801,4 +2801,3 @@ IMPL_STATIC_LINK( QueryDeleteDlg_Impl, ClickLink, PushButton*, pBtn )
 }
 
 }
-

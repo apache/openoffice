@@ -131,7 +131,7 @@ CompDescrsFromAnXmlFile::Parse( const UniString & i_sXmlFilePath )
 									// Start new token:
 									pTokenStart = pBufferPosition;
 									nTokenLength = 0;
-									bWithinElement = TRUE;;
+									bWithinElement = TRUE;
 								}
 								else
 								{
@@ -222,6 +222,3 @@ CompDescrsFromAnXmlFile::Empty()
 	dpDescriptions->erase( dpDescriptions->begin(),
 						   dpDescriptions->end() );
 }
-
-
-

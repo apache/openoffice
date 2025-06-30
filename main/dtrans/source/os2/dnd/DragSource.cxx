@@ -202,7 +202,7 @@ throw( RuntimeException)
 //
 OUString SAL_CALL DragSource::getImplementationName(  ) throw (RuntimeException)
 {
-    return OUString(RTL_CONSTASCII_USTRINGPARAM(OS2_DNDSOURCE_IMPL_NAME));;
+    return OUString(RTL_CONSTASCII_USTRINGPARAM(OS2_DNDSOURCE_IMPL_NAME));
 }
 
 sal_Bool SAL_CALL DragSource::supportsService( const OUString& ServiceName ) throw (RuntimeException)

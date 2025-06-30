@@ -964,7 +964,7 @@ sal_Bool ScChildrenShapes::FindSelectedShapesChanges(const uno::Reference<drawin
         {
             sal_Int8 nComp(0);
             if (aXShapesItr == aXShapesEndItr)
-                nComp = -1; // simulate that the Shape is lower, so the selction state will be removed
+                nComp = -1; // simulate that the Shape is lower, so the selection state will be removed
             else
                 nComp = Compare(*aDataItr, *aXShapesItr);
             if (nComp == 0)
@@ -2559,4 +2559,3 @@ sal_Int32 SAL_CALL ScAccessibleDocument::getBackground(  )
     IsObjectValid();
     return SC_MOD()->GetColorConfig().GetColorValue( ::svtools::DOCCOLOR ).nColor;
 }
-

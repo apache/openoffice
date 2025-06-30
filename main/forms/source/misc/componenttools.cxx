@@ -103,7 +103,7 @@ namespace frm
     Reference< XModel >  getXModel( const Reference< XInterface >& _rxComponent )
     {
 	    Reference< XInterface > xParent = _rxComponent;
-	    Reference< XModel > xModel( xParent, UNO_QUERY );;
+	    Reference< XModel > xModel( xParent, UNO_QUERY );
 	    while ( xParent.is() && !xModel.is() )
 	    {
 		    Reference< XChild > xChild( xParent, UNO_QUERY );
@@ -116,4 +116,3 @@ namespace frm
 //........................................................................
 } // namespace frm
 //........................................................................
-

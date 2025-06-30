@@ -349,7 +349,3 @@ sal_Bool SwCrsrShell::GotoFlyAnchor()
 					SwCrsrShell::READONLY );
 	return bRet;
 }
-
-
-
-

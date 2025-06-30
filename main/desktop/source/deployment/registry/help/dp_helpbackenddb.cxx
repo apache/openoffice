@@ -171,4 +171,3 @@ HelpBackendDb::getEntry(::rtl::OUString const & url)
 } // namespace help
 } // namespace backend
 } // namespace dp_registry
-

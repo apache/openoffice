@@ -116,4 +116,3 @@ SwRewriter SwUndoFmtColl::GetRewriter() const
 
     return aResult;
 }
-

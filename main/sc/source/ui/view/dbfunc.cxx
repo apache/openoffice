@@ -522,6 +522,3 @@ sal_Bool ScDBFunc::ImportData( const ScImportParam& rParam, sal_Bool bRecord )
 	ScDBDocFunc aDBDocFunc( *GetViewData()->GetDocShell() );
     return aDBDocFunc.DoImport( GetViewData()->GetTabNo(), rParam, NULL, bRecord );
 }
-
-
-

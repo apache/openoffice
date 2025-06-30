@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #ifndef _RTL_LOCALE_H_
 #define _RTL_LOCALE_H_
@@ -37,7 +35,7 @@ extern "C" {
 #endif
 
 /**
-	The implementation structur of a locale. Do not create this structure
+	The implementation structure of a locale. Do not create this structure
 	direct. Only use the functions rtl_locale_register and
 	rtl_locale_setDefault. The strings Language, Country and Variant
 	are constants, so it is not necessary to acquire and release them.
@@ -62,7 +60,7 @@ typedef struct _rtl_Locale
 	sal_Int32		HashCode;
 } rtl_Locale;
 
-#if defined( SAL_W32) ||  defined(SAL_OS2)
+#if defined( SAL_W32) || defined(SAL_OS2)
 #pragma pack(pop)
 #endif
 
@@ -123,9 +121,9 @@ rtl_uString * SAL_CALL rtl_locale_getVariant( rtl_Locale * This );
 sal_Int32 SAL_CALL rtl_locale_hashCode( rtl_Locale * This );
 
 /**
-	Returns true if the locals are equal, otherwis false.
+	Returns true if the locals are equal, otherwise false.
  */
-sal_Int32 SAL_CALL rtl_locale_equals( rtl_Locale * This, rtl_Locale * obj  );
+sal_Int32 SAL_CALL rtl_locale_equals( rtl_Locale * This, rtl_Locale * obj );
 
 #ifdef __cplusplus
 }

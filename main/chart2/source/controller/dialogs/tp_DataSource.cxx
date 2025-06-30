@@ -755,7 +755,7 @@ IMPL_LINK( DataSourceTabPage, RemoveButtonClickedHdl, void *, EMPTYARG )
         fillSeriesListBox();
 
         // select previous or next series
-        //@improve: see methods GetModel()->GetAbsPos()/GetEntry() for absoulte list positions
+        //@improve: see methods GetModel()->GetAbsPos()/GetEntry() for absolute list positions
         if( xNewSelSeries.is())
         {
             pEntry = dynamic_cast< SeriesEntry * >( m_apLB_SERIES->First());

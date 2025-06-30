@@ -265,4 +265,3 @@ extern sdecl::ServiceDecl const serviceDecl(
     "ScVbaUserForm",
     "ooo.vba.msforms.UserForm" );
 }
-

@@ -594,4 +594,3 @@ String ScDPDimensionSaveData::CreateDateGroupDimName( sal_Int32 nDatePart, const
 }
 
 // ============================================================================
-

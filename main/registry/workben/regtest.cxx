@@ -143,7 +143,7 @@ int _cdecl main()
 	if (reg_openKey(hRootKey, OUString::createFromAscii("mySecondKey").pData, &hKey2))
 		cout << "\n15. open key \"mySecondKey\" failed\n";
 	else
-		cout << "15. key \"mySecondKey\" is opended\n"; 
+		cout << "15. key \"mySecondKey\" is opened\n";
 	
 	if (reg_closeKey(hKey5))
 		cout << "\t15. closing key \"myThirdSubKey\" failed\n"; 	
@@ -332,5 +332,3 @@ int _cdecl main()
 
 	return(0);
 }
-
-

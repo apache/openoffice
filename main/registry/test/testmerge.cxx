@@ -414,5 +414,3 @@ void test_merge()
     cout << "test_merge() Ok!\n";
     return;
 }
-
-

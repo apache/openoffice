@@ -320,4 +320,3 @@ void XclImpColRowSettings::ConvertHiddenFlags( SCTAB nScTab )
 
     rDoc.DecSizeRecalcLevel( nScTab );      // #i116460# performance with many hidden rows
 }
-

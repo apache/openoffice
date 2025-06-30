@@ -84,4 +84,3 @@ void _cdecl main( int argc, char * argv[] )
 		delete [] pArguments;
 	}
 }
-

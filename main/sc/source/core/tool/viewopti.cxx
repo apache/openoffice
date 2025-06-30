@@ -747,5 +747,3 @@ void ScViewCfg::SetOptions( const ScViewOptions& rNew )
 	aDisplayItem.SetModified();
 	aGridItem.SetModified();
 }
-
-

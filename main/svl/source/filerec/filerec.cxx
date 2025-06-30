@@ -1012,5 +1012,3 @@ FASTBOOL SfxMultiRecordReader::GetContent()
 
 	return sal_False;
 }
-
-

@@ -195,6 +195,3 @@ IMPL_LINK( ScMoveTableDlg, SelHdl, ListBox *, pLb )
 
 	return 0;
 }
-
-
-

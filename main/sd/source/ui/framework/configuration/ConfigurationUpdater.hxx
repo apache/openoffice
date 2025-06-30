@@ -112,8 +112,8 @@ private:
         css::drawing::framework::XConfiguration> mxRequestedConfiguration;
 
     /** This flag is set to </sal_True> when an update of the current
-        configurtion was requested (because the last request in the queue
-        was processed) but could not be exected because the
+        configuration was requested (because the last request in the queue
+        was processed) but could not be executed because the
         ConfigurationController was locked.  A call to UpdateConfiguration()
         resets the flag to </sal_False>.
     */
@@ -132,7 +132,7 @@ private:
     sal_Int32 mnLockCount;
 
     /** This timer is used to check from time to time whether the requested
-        configuration and the current configuration are identcal and request
+        configuration and the current configuration are identical and request
         an update when they are not.
         This is used to overcome problems with resources that become
         available asynchronously.
@@ -168,7 +168,7 @@ private:
         ::std::vector<css::uno::Reference<css::drawing::framework::XResourceId> >&
             rResourcesToDeactivate);
 
-    /** Remove from the requested configration all pure anchors that have no
+    /** Remove from the requested configuration all pure anchors that have no
         child.  Requested but not yet activated anchors can not be removed
         because without the actual resource the 'pureness' of an anchor can
         not be determined.
@@ -182,7 +182,7 @@ private:
 
     /** This method sets the mbUpdateBeingProcessed member that is used to
         prevent reentrance problems.  This method allows function objects
-        easyly and safely to modify the variable.
+        easily and safely to modify the variable.
     */
     void SetUpdateBeingProcessed (bool bValue);
 

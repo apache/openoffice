@@ -338,4 +338,3 @@ SwVbaRange::getServiceNames()
 	}
 	return aServiceNames;
 }
-

@@ -75,4 +75,3 @@ SbiGlobals::~SbiGlobals()
 	delete pUnoFac;
     delete pTransliterationWrapper;
 }
-

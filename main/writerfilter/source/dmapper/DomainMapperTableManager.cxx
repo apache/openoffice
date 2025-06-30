@@ -495,7 +495,7 @@ void DomainMapperTableManager::endOfRowAction()
     {
         //determine table width 
         double nFullWidth = m_nTableWidthOfCurrentTable.top();
-        //the positions have to be distibuted in a range of 10000 
+        //the positions have to be distributed in a range of 10000
         const double nFullWidthRelative = 10000.;
         uno::Sequence< text::TableColumnSeparator > aSeparators( m_nCellCounterForCurrentRow.top() - 1 );
         text::TableColumnSeparator* pSeparators = aSeparators.getArray();

@@ -350,7 +350,7 @@ extern "C" void SAL_CALL test_ServiceManager()
 		TEST_ENSHURE( xFact.is(), "Service com::sun::star.test.TestManager1 not found" );
 
 		Reference< XInterface > xTest1 = xFact->createInstance();
-		TEST_ENSHURE( nInstanceCount == 1, "wrong service instanciated" );
+		TEST_ENSHURE( nInstanceCount == 1, "wrong service instantiated" );
 
 		// TestManager2
 		xProv = xSMgr->queryServiceProvider( L"com::sun::star.test.TestManager2");
@@ -358,7 +358,7 @@ extern "C" void SAL_CALL test_ServiceManager()
 		TEST_ENSHURE( xFact.is(), "Service com::sun::star.test.TestManager2 not found" );
 
 		Reference < XInterface > xTest2 = xFact->createInstance();
-		TEST_ENSHURE( nInstanceCount == 2, "wrong service instanciated" );
+		TEST_ENSHURE( nInstanceCount == 2, "wrong service instantiated" );
 
 		xTest1 = Reference< XInterface >();
 		xTest2 = Reference< XInterface >();
@@ -463,6 +463,3 @@ void * SAL_CALL component_getFactory(
 	return pRet;
 }
 }
-
-
-

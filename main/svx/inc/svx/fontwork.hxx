@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 #ifndef _SVX_FONTWORK_HXX
 #define _SVX_FONTWORK_HXX
@@ -56,9 +55,7 @@ class XFormTextShadowXValItem;
 class XFormTextShadowYValItem;
 
 /*************************************************************************
-|*
-|* ControllerItem fuer Fontwork
-|*
+|* ControllerItem for Fontwork
 \************************************************************************/
 
 class SvxFontWorkDialog;
@@ -76,9 +73,7 @@ public:
 };
 
 /*************************************************************************
-|*
-|* Ableitung vom SfxChildWindow als "Behaelter" fuer Fontwork-Dialog
-|*
+|* Ableitung vom SfxChildWindow als "Behälter" für Fontwork-Dialog
 \************************************************************************/
 
 class SVX_DLLPUBLIC SvxFontWorkChildWindow : public SfxChildWindow
@@ -89,9 +84,7 @@ class SVX_DLLPUBLIC SvxFontWorkChildWindow : public SfxChildWindow
 };
 
 /*************************************************************************
-|*
 |* Floating Window zur Attributierung von Texteffekten
-|*
 \************************************************************************/
 
 class SVX_DLLPUBLIC SvxFontWorkDialog : public SfxDockingWindow
@@ -143,7 +136,7 @@ class SVX_DLLPUBLIC SvxFontWorkDialog : public SfxDockingWindow
 	DECL_LINK( SelectShadowHdl_Impl, void * );
 
 	DECL_LINK( ModifyInputHdl_Impl, void * );
-	DECL_LINK( InputTimoutHdl_Impl, void * );
+	DECL_LINK( InputTimeoutHdl_Impl, void * );
 
 	DECL_LINK( ColorSelectHdl_Impl, void * );
 
@@ -179,4 +172,6 @@ class SVX_DLLPUBLIC SvxFontWorkDialog : public SfxDockingWindow
 	void SetActive(sal_Bool bActivate = sal_True);
 };
 
-#endif		// _SVX_FONTWORK_HXX
+#endif // _SVX_FONTWORK_HXX
+
+/* vim: set noet sw=4 ts=4: */

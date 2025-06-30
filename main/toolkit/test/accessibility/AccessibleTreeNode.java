@@ -109,7 +109,7 @@ class AccessibleTreeNode
         return maDisplayObject.toString();
     }
 
-    /** get names of suported actions */
+    /** get names of supported actions */
     public String[] getActions () 
     { 
         return new String[] {};

@@ -1290,7 +1290,7 @@ void DoubleCurrencyField::FormatChanged(FORMAT_CHANGE_TYPE nWhat)
 		case FCT_KEYONLY:
 			DBG_ERROR("DoubleCurrencyField::FormatChanged : somebody modified my key !");
 			// We always build our own format from the settings we get via special methods (setCurrencySymbol etc.).
-			// Nobody but ourself should modifiy the format key directly !
+			// Nobody but ourself should modify the format key directly !
 			break;
 	}
 
@@ -1391,4 +1391,3 @@ void DoubleCurrencyField::UpdateCurrencyFormat()
 	SetFormat(sNewFormat, eLanguage);
 	m_bChangingFormat = sal_False;
 }
-

@@ -1977,4 +1977,3 @@ Rectangle SvLBox::GetBoundingRect( SvLBoxEntry* )
 {
 	return Rectangle();
 }
-

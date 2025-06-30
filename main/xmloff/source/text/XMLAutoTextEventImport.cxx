@@ -137,4 +137,3 @@ Reference< XInterface > SAL_CALL XMLAutoTextEventImport_createInstance(
 	// return (cppu::OWeakObject*)new XMLAutoTextEventImport;
 	return (cppu::OWeakObject*)new XMLAutoTextEventImport(rSMgr);
 }
-

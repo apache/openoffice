@@ -1296,7 +1296,7 @@ sal_Bool BasicManager::ImplLoadBasic( SvStream& rStrm, StarBASICRef& rOldBasic )
 			}
 			rOldBasic = pNew;
 
-			// Fill new libray container (5.2 -> 6.0)
+			// Fill new library container (5.2 -> 6.0)
 			copyToLibraryContainer( pNew, mpImpl->maContainerInfo );
 
 /*
@@ -1602,7 +1602,7 @@ sal_Bool BasicManager::LoadLib( sal_uInt16 nLib )
         {
             String aLibName = pLibInfo->GetLibName();
             xLibContainer->loadLibrary( aLibName );
-            bDone = xLibContainer->isLibraryLoaded( aLibName );;
+            bDone = xLibContainer->isLibraryLoaded( aLibName );
         }
         else
         {
@@ -2595,4 +2595,3 @@ Reference< XStarBasicAccess > getStarBasicAccess( BasicManager* pMgr )
 		new StarBasicAccess_Impl( (BasicManager*)pMgr );
 	return xRet;
 }
-

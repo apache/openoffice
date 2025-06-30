@@ -102,4 +102,3 @@ sal_Bool IsReadonlyAccordingACL( const sal_Unicode* )
 }
 
 #endif
-

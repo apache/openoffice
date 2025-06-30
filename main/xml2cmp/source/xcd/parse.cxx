@@ -449,5 +449,3 @@ X2CParser::TestCurChar()
 	if (*text == '\n')
 		nFileLine++;
 }
-
-

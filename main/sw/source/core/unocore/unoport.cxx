@@ -1074,4 +1074,3 @@ void SwXTextPortion::Modify( const SfxPoolItem* pOld, const SfxPoolItem *pNew)
         m_pFrameFmt = 0;
     }
 }
-

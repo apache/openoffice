@@ -159,7 +159,7 @@ interface XUIElementFactoryRegistration : com::sun::star::uno::XInterface
         
         @param aModuleName
             an optional module name that can be used to deregister a factory only for a single module. This value
-            can remain empty if not a module based factory should be deregisted. The module identifier can be retrieved
+            can remain empty if not a module based factory should be deregistered. The module identifier can be retrieved
             from the <type scope="com::sun::star::frame">ModuleManager</type> service.
 
         <p>

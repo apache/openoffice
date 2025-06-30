@@ -1340,7 +1340,3 @@ sal_uInt8 ScPatternAttr::GetRotateDir( const SfxItemSet* pCondSet ) const
 
 	return nRet;
 }
-
-
-
-

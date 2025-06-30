@@ -969,5 +969,3 @@ void BibFrameController_Impl::activate()
 void BibFrameController_Impl::deactivate()
 {
 }
-
-

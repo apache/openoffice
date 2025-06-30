@@ -390,8 +390,3 @@ Adoc_PE::FinishCurShortTag()
 
 
 }   // namespace adoc
-
-
-
-
-

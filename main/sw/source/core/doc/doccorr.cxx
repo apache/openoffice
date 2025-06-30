@@ -367,4 +367,3 @@ SwEditShell* SwDoc::GetEditShell( ViewShell** ppSh ) const
 {
     return GetEditShell(0);
 }
-

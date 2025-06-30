@@ -185,7 +185,7 @@ sal_Bool XSecController::convertDateTime( com::sun::star::util::DateTime& rDateT
 			//23 on Linux and 24 on Solaris and Windows.
 
 			//we only support a hundredth second
-			//make ,1 -> 10   ,01 -> 1    ,001 -> only use first two diggits
+			//make ,1 -> 10   ,01 -> 1    ,001 -> only use first two digits
 			sHundredth = rString.copy(nPos2 + 1);
 			sal_Int32 len = sHundredth.getLength();
 			if (len == 1)
@@ -982,8 +982,8 @@ void XSecController::endMission()
 				( m_vInternalSignatureInformations[i].xReferenceResolvedListener, cssu::UNO_QUERY );
 			
 			/*
-			 * askes the SignatureCreator/SignatureVerifier to release
-			 * all resouces it uses.
+			 * asks the SignatureCreator/SignatureVerifier to release
+			 * all resources it uses.
 			 */	
 			xMissionTaker->endMission();
 		}

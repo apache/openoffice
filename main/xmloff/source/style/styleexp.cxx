@@ -558,5 +558,3 @@ void XMLStyleExport::exportStyleFamily(
 
 	delete pExportedStyles;
 }
-
-

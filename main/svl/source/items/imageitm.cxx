@@ -138,4 +138,3 @@ String SfxImageItem::GetURL() const
 {
     return pImp->aURL;
 }
-

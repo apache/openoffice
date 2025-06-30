@@ -387,8 +387,8 @@ XMLTextListsHelper::EnsureNumberedParagraph(
     const ::rtl::OUString i_ListId,
     sal_Int16 & io_rLevel, const ::rtl::OUString i_StyleName)
 {
-    OSL_ENSURE(i_ListId.getLength(), "inavlid ListId");
-    OSL_ENSURE(io_rLevel >= 0, "inavlid Level");
+    OSL_ENSURE(i_ListId.getLength(), "invalid ListId");
+    OSL_ENSURE(io_rLevel >= 0, "invalid Level");
     NumParaList_t & rNPList( mNPLists[i_ListId] );
     const ::rtl::OUString none; // default
     if ( rNPList.empty() && (0 != io_rLevel)) {
@@ -534,4 +534,3 @@ XMLTextListsHelper::MakeNumRule(
 
     return xNumRules;
 }
-

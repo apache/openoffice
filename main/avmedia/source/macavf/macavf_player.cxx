@@ -84,8 +84,8 @@ MacAVObserverObject* MacAVObserverHandler::getObserver() const
 // - Player -
 // ----------------
 
-Player::Player( const uno::Reference< lang::XMultiServiceFactory >& rxMgr )
-:   mxMgr( rxMgr )
+Player::Player( const uno::Reference< uno::XComponentContext >& rxContext )
+:   mxContext( rxContext )
 ,   mpPlayer( NULL )
 ,   mfUnmutedVolume( 0 )
 ,   mfStopTime( DBL_MAX )
@@ -410,7 +410,7 @@ uno::Reference< ::media::XPlayerWindow > SAL_CALL Player::createPlayerWindow( co
          return xRet;
 
     // create the window
-    ::avmedia::macavf::Window* pWindow = new ::avmedia::macavf::Window( mxMgr, *this, pParentView );
+    ::avmedia::macavf::Window* pWindow = new ::avmedia::macavf::Window( mxContext, *this, pParentView );
     xRet = pWindow;
     return xRet;
 }
@@ -423,7 +423,7 @@ uno::Reference< media::XFrameGrabber > SAL_CALL Player::createFrameGrabber()
     uno::Reference< media::XFrameGrabber > xRet;
     OSL_TRACE ("Player::createFrameGrabber");
 
-    FrameGrabber* pGrabber = new FrameGrabber( mxMgr );
+    FrameGrabber* pGrabber = new FrameGrabber( mxContext );
     AVAsset* pMovie = [[mpPlayer currentItem] asset];
     if( pGrabber->create( pMovie ) )
         xRet = pGrabber;
@@ -460,4 +460,3 @@ uno::Sequence< ::rtl::OUString > SAL_CALL Player::getSupportedServiceNames(  )
 
 } // namespace macavf
 } // namespace avmedia
-

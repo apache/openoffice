@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
@@ -32,8 +30,8 @@
 #include <svx/svdlayer.hxx>
 #include <svx/svdmodel.hxx>
 #include <svx/svdview.hxx>
-#include "svx/svdstr.hrc"   // Namen aus der Resource
-#include "svx/svdglob.hxx"  // StringCache
+#include "svx/svdstr.hrc" // Names from resource
+#include "svx/svdglob.hxx" // StringCache
 #include <svx/scene3d.hxx>
 #include <editeng/outlobj.hxx>
 #include <svx/svdogrp.hxx>
@@ -49,13 +47,11 @@
 // #124389#
 #include <svx/svdotable.hxx>
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
 // iterates over all views and unmarks this SdrObject if it is marked
 static void ImplUnmarkObject( SdrObject* pObj )
 {
-    SdrViewIter aIter( pObj );
-    for ( SdrView* pView = aIter.FirstView(); pView; pView = aIter.NextView() )
+	SdrViewIter aIter( pObj );
+	for ( SdrView* pView = aIter.FirstView(); pView; pView = aIter.NextView() )
 	{
 		pView->MarkObj( pObj, pView->GetSdrPageView(), sal_True );
 	}
@@ -76,7 +72,7 @@ void SdrUndoAction::Repeat(SfxRepeatTarget& rView)
 {
 	SdrView* pV=PTR_CAST(SdrView,&rView);
 	if (pV!=NULL) SdrRepeat(*pV);
-	DBG_ASSERT(pV!=NULL,"Repeat: Uebergebenes SfxRepeatTarget ist keine SdrView");
+	DBG_ASSERT(pV!=NULL,"Repeat: Übergebenes SfxRepeatTarget ist keine SdrView");
 }
 
 XubString SdrUndoAction::GetRepeatComment(SfxRepeatTarget& rView) const
@@ -226,17 +222,7 @@ XubString SdrUndoGroup::GetSdrRepeatComment(SdrView& /*rView*/) const
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//   @@@@   @@@@@   @@@@@@  @@@@@   @@@@   @@@@@@   @@@@
-//  @@  @@  @@  @@      @@  @@     @@  @@    @@    @@  @@
-//  @@  @@  @@  @@      @@  @@     @@        @@    @@
-//  @@  @@  @@@@@       @@  @@@@   @@        @@     @@@@
-//  @@  @@  @@  @@      @@  @@     @@        @@        @@
-//  @@  @@  @@  @@  @@  @@  @@     @@  @@    @@    @@  @@
-//   @@@@   @@@@@    @@@@   @@@@@   @@@@     @@     @@@@
-//
-////////////////////////////////////////////////////////////////////////////////////////////////////
+// OBJECTS
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrUndoObj::SdrUndoObj(SdrObject& rNewObj):
@@ -273,8 +259,8 @@ void SdrUndoObj::GetDescriptionStringForObject( const SdrObject& _rForObject, sa
 
 void SdrUndoObj::ImpTakeDescriptionStr(sal_uInt16 nStrCacheID, XubString& rStr, FASTBOOL bRepeat) const
 {
-    if ( pObj )
-        GetDescriptionStringForObject( *pObj, nStrCacheID, rStr, bRepeat );
+	if ( pObj )
+		GetDescriptionStringForObject( *pObj, nStrCacheID, rStr, bRepeat );
 }
 
 // #94278# common call method for evtl. page change when UNDO/REDO
@@ -296,18 +282,18 @@ void SdrUndoObj::ImpShowPageOfThisObject()
 
 void SdrUndoAttrObj::ensureStyleSheetInStyleSheetPool(SfxStyleSheetBasePool& rStyleSheetPool, SfxStyleSheet& rSheet)
 {
-    SfxStyleSheetBase* pThere = rStyleSheetPool.Find(rSheet.GetName(), rSheet.GetFamily());
+	SfxStyleSheetBase* pThere = rStyleSheetPool.Find(rSheet.GetName(), rSheet.GetFamily());
 
-    if(!pThere)
-    {
-        // re-insert remembered style which was removed in the meantime. To do this
-        // without assertion, do it without parent and set parent after insertion
-        const UniString aParent(rSheet.GetParent());
-        
-        rSheet.SetParent(UniString());
-        rStyleSheetPool.Insert(&rSheet);
-        rSheet.SetParent(aParent);
-    }
+	if(!pThere)
+	{
+		// re-insert remembered style which was removed in the meantime. To do this
+		// without assertion, do it without parent and set parent after insertion
+		const UniString aParent(rSheet.GetParent());
+
+		rSheet.SetParent(UniString());
+		rStyleSheetPool.Insert(&rSheet);
+		rSheet.SetParent(aParent);
+	}
 }
 
 SdrUndoAttrObj::SdrUndoAttrObj(SdrObject& rNewObj, FASTBOOL bStyleSheet1, FASTBOOL bSaveText)
@@ -315,8 +301,8 @@ SdrUndoAttrObj::SdrUndoAttrObj(SdrObject& rNewObj, FASTBOOL bStyleSheet1, FASTBO
 	pUndoSet(NULL),
 	pRedoSet(NULL),
 	pRepeatSet(NULL),
-    mxUndoStyleSheet(),
-    mxRedoStyleSheet(),
+	mxUndoStyleSheet(),
+	mxRedoStyleSheet(),
 	bHaveToTakeRedoSet(sal_True),
 	pTextUndo(NULL),
 
@@ -354,7 +340,7 @@ SdrUndoAttrObj::SdrUndoAttrObj(SdrObject& rNewObj, FASTBOOL bStyleSheet1, FASTBO
 		pUndoSet = new SfxItemSet(pObj->GetMergedItemSet());
 
 		if(bStyleSheet)
-            mxUndoStyleSheet = pObj->GetStyleSheet();
+			mxUndoStyleSheet = pObj->GetStyleSheet();
 
 		if(bSaveText)
 		{
@@ -393,7 +379,7 @@ void SdrUndoAttrObj::SetRepeatAttr(const SfxItemSet& rSet)
 
 void SdrUndoAttrObj::Undo()
 {
-    E3DModifySceneSnapRectUpdater aUpdater(pObj);
+	E3DModifySceneSnapRectUpdater aUpdater(pObj);
 	sal_Bool bIs3DScene(pObj && pObj->ISA(E3dScene));
 
 	// #94278# Trigger PageChangeCall
@@ -428,17 +414,17 @@ void SdrUndoAttrObj::Undo()
 		if(bStyleSheet)
 		{
 			mxRedoStyleSheet = pObj->GetStyleSheet();
-            SfxStyleSheet* pSheet = dynamic_cast< SfxStyleSheet* >(mxUndoStyleSheet.get());
+			SfxStyleSheet* pSheet = dynamic_cast< SfxStyleSheet* >(mxUndoStyleSheet.get());
 
-            if(pSheet && pObj->GetModel() && pObj->GetModel()->GetStyleSheetPool())
-            {
-                ensureStyleSheetInStyleSheetPool(*pObj->GetModel()->GetStyleSheetPool(), *pSheet);
-    			pObj->SetStyleSheet(pSheet, sal_True);
-            }
-            else
-            {
-                OSL_ENSURE(false, "OOps, something went wrong in SdrUndoAttrObj (!)");
-            }
+			if(pSheet && pObj->GetModel() && pObj->GetModel()->GetStyleSheetPool())
+			{
+				ensureStyleSheetInStyleSheetPool(*pObj->GetModel()->GetStyleSheetPool(), *pSheet);
+				pObj->SetStyleSheet(pSheet, sal_True);
+			}
+			else
+			{
+				OSL_ENSURE(false, "OOps, something went wrong in SdrUndoAttrObj (!)");
+			}
 		}
 
 		sdr::properties::ItemChangeBroadcaster aItemChange(*pObj);
@@ -504,7 +490,7 @@ void SdrUndoAttrObj::Undo()
 
 void SdrUndoAttrObj::Redo()
 {
-    E3DModifySceneSnapRectUpdater aUpdater(pObj);
+	E3DModifySceneSnapRectUpdater aUpdater(pObj);
 	sal_Bool bIs3DScene(pObj && pObj->ISA(E3dScene));
 
 	if(!pUndoGroup || bIs3DScene)
@@ -684,7 +670,7 @@ SdrUndoGeoObj::SdrUndoGeoObj(SdrObject& rNewObj):
 	if (pOL!=NULL && pOL->GetObjCount() && !rNewObj.ISA(E3dScene))
 	{
 		// Aha, Gruppenobjekt
-		// AW: Aber keine 3D-Szene, dann nur fuer die Szene selbst den Undo anlegen
+		// AW: Aber keine 3D-Szene, dann nur für die Szene selbst den Undo anlegen
 		pUndoGroup=new SdrUndoGroup(*pObj->GetModel());
 		sal_uIntPtr nObjAnz=pOL->GetObjCount();
 		for (sal_uIntPtr nObjNum=0; nObjNum<nObjAnz; nObjNum++) {
@@ -771,10 +757,10 @@ SdrUndoObjList::~SdrUndoObjList()
 {
 	if (pObj!=NULL && IsOwner())
 	{
-		// Attribute muessen wieder in den regulaeren Pool
+		// Attribute müssen wieder in den regulären Pool
 		SetOwner(sal_False);
 
-		// nun loeschen
+		// nun löschen
 		SdrObject::Free( pObj );
 	}
 }
@@ -905,16 +891,16 @@ void SdrUndoDelObj::TryToFlushGraphicContent()
 }
 
 SdrUndoDelObj::SdrUndoDelObj(SdrObject& rNewObj, FASTBOOL bOrdNumDirect)
-:   SdrUndoRemoveObj(rNewObj,bOrdNumDirect) 
-{ 
-    SetOwner(sal_True);
+:	SdrUndoRemoveObj(rNewObj,bOrdNumDirect)
+{
+	SetOwner(sal_True);
 
-    // #122985# if graphic object is deleted (but goes to undo) flush it's graphic content
-    // since it is potentially no longer needed
-    TryToFlushGraphicContent();
+	// #122985# if graphic object is deleted (but goes to undo) flush its graphic content
+	// since it is potentially no longer needed
+	TryToFlushGraphicContent();
 }
 
-SdrUndoDelObj::~SdrUndoDelObj() 
+SdrUndoDelObj::~SdrUndoDelObj()
 {
 }
 
@@ -931,9 +917,9 @@ void SdrUndoDelObj::Redo()
 	DBG_ASSERT(!IsOwner(),"RedoDeleteObj: pObj gehoert bereits der UndoAction");
 	SetOwner(sal_True);
 
-    // #122985# if graphic object is deleted (but goes to undo) flush it's graphic content
-    // since it is potentially no longer needed
-    TryToFlushGraphicContent();
+	// #122985# if graphic object is deleted (but goes to undo) flush its graphic content
+	// since it is potentially no longer needed
+	TryToFlushGraphicContent();
 }
 
 XubString SdrUndoDelObj::GetComment() const
@@ -965,22 +951,22 @@ XubString SdrUndoDelObj::GetSdrRepeatComment(SdrView& /*rView*/) const
 void SdrUndoNewObj::Undo()
 {
 	SdrUndoInsertObj::Undo();
-	DBG_ASSERT(!IsOwner(),"RedoNewObj: pObj gehoert bereits der UndoAction");
+	DBG_ASSERT(!IsOwner(),"RedoNewObj: pObj gehört bereits der UndoAction");
 	SetOwner(sal_True);
 }
 
 void SdrUndoNewObj::Redo()
 {
 	SdrUndoInsertObj::Redo();
-	DBG_ASSERT(IsOwner(),"RedoNewObj: pObj gehoert nicht der UndoAction");
+	DBG_ASSERT(IsOwner(),"RedoNewObj: pObj gehört nicht der UndoAction");
 	SetOwner(sal_False);
 }
 
 String SdrUndoNewObj::GetComment( const SdrObject& _rForObject )
 {
-    String sComment;
-    GetDescriptionStringForObject( _rForObject, STR_UndoInsertObj, sComment );
-    return sComment;
+	String sComment;
+	GetDescriptionStringForObject( _rForObject, STR_UndoInsertObj, sComment );
+	return sComment;
 }
 
 XubString SdrUndoNewObj::GetComment() const
@@ -1010,18 +996,18 @@ SdrUndoReplaceObj::~SdrUndoReplaceObj()
 {
 	if (pObj!=NULL && IsOldOwner())
 	{
-		// Attribute muessen wieder in den regulaeren Pool
+		// Attribute müssen wieder in den regulären Pool
 		SetOldOwner(sal_False);
 
-		// nun loeschen
+		// nun löschen
 		SdrObject::Free( pObj );
 	}
 	if (pNewObj!=NULL && IsNewOwner())
 	{
-		// Attribute muessen wieder in den regulaeren Pool
+		// Attribute müssen wieder in den regulären Pool
 		SetNewOwner(sal_False);
 
-		// nun loeschen
+		// nun löschen
 		SdrObject::Free( pNewObj );
 	}
 }
@@ -1190,25 +1176,25 @@ void SdrUndoObjSetText::AfterSetText()
 
 void SdrUndoObjSetText::Undo()
 {
-    // only works with SdrTextObj
-    SdrTextObj* pTarget = dynamic_cast< SdrTextObj* >(pObj);
+	// only works with SdrTextObj
+	SdrTextObj* pTarget = dynamic_cast< SdrTextObj* >(pObj);
 
-    if(!pTarget)
-    {
-        OSL_ENSURE(false, "SdrUndoObjSetText::Undo with SdrObject not based on SdrTextObj (!)");
-        return;
-    }
+	if(!pTarget)
+	{
+		OSL_ENSURE(false, "SdrUndoObjSetText::Undo with SdrObject not based on SdrTextObj (!)");
+		return;
+	}
 
-    // #94278# Trigger PageChangeCall
-    ImpShowPageOfThisObject();
+	// #94278# Trigger PageChangeCall
+	ImpShowPageOfThisObject();
 
-    // alten Text sichern fuer Redo
+    // alten Text sichern für Redo
     if(!bNewTextAvailable)
     {
         AfterSetText();
     }
 
-    // Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
+    // Text für Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsübereignung
     OutlinerParaObject* pText1 = pOldText;
 
     if(pText1)
@@ -1249,7 +1235,7 @@ void SdrUndoObjSetText::Redo()
         return;
     }
 
-    // Text fuer Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsuebereignung
+    // Text für Undo kopieren, denn SetOutlinerParaObject() ist Eigentumsübereignung
     OutlinerParaObject* pText1 = pNewText;
 
     if(pText1)
@@ -1266,7 +1252,7 @@ void SdrUndoObjSetText::Redo()
 
     pTarget->ActionChanged();
 
-    // #124389# if it's a table, als oneed to relayout TextFrame
+    // #124389# if it's a table, also need to relayout TextFrame
     if(0 != dynamic_cast< sdr::table::SdrTableObj* >(pTarget))
     {
         pTarget->NbcAdjustTextFrameWidthAndHeight();
@@ -1430,17 +1416,7 @@ String SdrUndoObjStrAttr::GetComment() const
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//  @@      @@@@   @@  @@  @@@@@  @@@@@
-//  @@     @@  @@  @@  @@  @@     @@  @@
-//  @@     @@  @@  @@  @@  @@     @@  @@
-//  @@     @@@@@@   @@@@   @@@@   @@@@@
-//  @@     @@  @@    @@    @@     @@  @@
-//  @@     @@  @@    @@    @@     @@  @@
-//  @@@@@  @@  @@    @@    @@@@@  @@  @@
-//
-////////////////////////////////////////////////////////////////////////////////////////////////////
+// LAYER
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrUndoLayer::SdrUndoLayer(sal_uInt16 nLayerNum, SdrLayerAdmin& rNewLayerAdmin, SdrModel& rNewModel):
@@ -1516,7 +1492,7 @@ void SdrUndoMoveLayer::Undo()
 #ifdef DBG_UTIL
 	SdrLayer* pCmpLayer=
 #endif
-	pLayerAdmin->RemoveLayer(nNeuPos);
+	pLayerAdmin->RemoveLayer(nNewPos);
 	DBG_ASSERT(pCmpLayer==pLayer,"SdrUndoMoveLayer::Undo(): Removter Layer ist != pLayer");
 	pLayerAdmin->InsertLayer(pLayer,nNum);
 }
@@ -1528,7 +1504,7 @@ void SdrUndoMoveLayer::Redo()
 #endif
 	pLayerAdmin->RemoveLayer(nNum);
 	DBG_ASSERT(pCmpLayer==pLayer,"SdrUndoMoveLayer::Redo(): Removter Layer ist != pLayer");
-	pLayerAdmin->InsertLayer(pLayer,nNeuPos);
+	pLayerAdmin->InsertLayer(pLayer,nNewPos);
 }
 
 XubString SdrUndoMoveLayer::GetComment() const
@@ -1537,17 +1513,7 @@ XubString SdrUndoMoveLayer::GetComment() const
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//  @@@@@    @@@@    @@@@   @@@@@   @@@@
-//  @@  @@  @@  @@  @@  @@  @@     @@  @@
-//  @@  @@  @@  @@  @@      @@     @@
-//  @@@@@   @@@@@@  @@ @@@  @@@@    @@@@
-//  @@      @@  @@  @@  @@  @@         @@
-//  @@      @@  @@  @@  @@  @@     @@  @@
-//  @@      @@  @@   @@@@@  @@@@@   @@@@
-//
-////////////////////////////////////////////////////////////////////////////////////////////////////
+// PAGES
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrUndoPage::SdrUndoPage(SdrPage& rNewPg)
@@ -1671,7 +1637,7 @@ void SdrUndoDelPage::Undo()
 void SdrUndoDelPage::Redo()
 {
 	ImpRemovePage(nPageNum);
-	// Die MasterPage-Beziehungen werden ggf. von selbst geloesst
+	// Die MasterPage-Beziehungen werden ggf. von selbst gelöst
 	DBG_ASSERT(!bItsMine,"RedoDeletePage: mrPage gehoert bereits der UndoAction");
 	bItsMine=sal_True;
 }
@@ -1768,15 +1734,7 @@ XubString SdrUndoSetPageNum::GetComment() const
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//  @@   @@  @@@@   @@@@  @@@@@@ @@@@@ @@@@@   @@@@@   @@@@   @@@@  @@@@@  @@@@
-//  @@@ @@@ @@  @@ @@  @@   @@   @@    @@  @@  @@  @@ @@  @@ @@  @@ @@    @@  @@
-//  @@@@@@@ @@  @@ @@       @@   @@    @@  @@  @@  @@ @@  @@ @@     @@    @@
-//  @@@@@@@ @@@@@@  @@@@    @@   @@@@  @@@@@   @@@@@  @@@@@@ @@ @@@ @@@@   @@@@
-//  @@ @ @@ @@  @@     @@   @@   @@    @@  @@  @@     @@  @@ @@  @@ @@        @@
-//  @@   @@ @@  @@ @@  @@   @@   @@    @@  @@  @@     @@  @@ @@  @@ @@    @@  @@
-//  @@   @@ @@  @@  @@@@    @@   @@@@@ @@  @@  @@     @@  @@  @@@@@ @@@@@  @@@@
-//
+// MASTERPAGES
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrUndoPageMasterPage::SdrUndoPageMasterPage(SdrPage& rChangedPage)
@@ -1941,7 +1899,7 @@ SdrUndoAction* SdrUndoFactory::CreateUndoObjectStrAttr( SdrObject& rObject,
                                                         String sOldStr,
                                                         String sNewStr )
 {
-    return new SdrUndoObjStrAttr( rObject, eObjStrAttrType, sOldStr, sNewStr );
+	return new SdrUndoObjStrAttr( rObject, eObjStrAttrType, sOldStr, sNewStr );
 }
 
 
@@ -1956,9 +1914,9 @@ SdrUndoAction* SdrUndoFactory::CreateUndoDeleteLayer(sal_uInt16 nLayerNum, SdrLa
 	return new SdrUndoDelLayer( nLayerNum, rNewLayerAdmin, rNewModel );
 }
 
-SdrUndoAction* SdrUndoFactory::CreateUndoMoveLayer(sal_uInt16 nLayerNum, SdrLayerAdmin& rNewLayerAdmin, SdrModel& rNewModel, sal_uInt16 nNeuPos1)
+SdrUndoAction* SdrUndoFactory::CreateUndoMoveLayer(sal_uInt16 nLayerNum, SdrLayerAdmin& rNewLayerAdmin, SdrModel& rNewModel, sal_uInt16 nNewPos1)
 {
-	return new SdrUndoMoveLayer( nLayerNum, rNewLayerAdmin, rNewModel, nNeuPos1 );
+	return new SdrUndoMoveLayer( nLayerNum, rNewLayerAdmin, rNewModel, nNewPos1 );
 }
 
 // page
@@ -1981,7 +1939,7 @@ SdrUndoAction* SdrUndoFactory::CreateUndoSetPageNum(SdrPage& rNewPg, sal_uInt16 
 {
 	return new SdrUndoSetPageNum( rNewPg, nOldPageNum1, nNewPageNum1 );
 }
-	// master page
+// master page
 SdrUndoAction* SdrUndoFactory::CreateUndoPageRemoveMasterPage(SdrPage& rChangedPage)
 {
 	return new SdrUndoPageRemoveMasterPage( rChangedPage );
@@ -1992,4 +1950,4 @@ SdrUndoAction* SdrUndoFactory::CreateUndoPageChangeMasterPage(SdrPage& rChangedP
 	return new SdrUndoPageChangeMasterPage(rChangedPage);
 }
 
-// eof
+/* vim: set noet sw=4 ts=4: */

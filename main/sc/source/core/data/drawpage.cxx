@@ -57,5 +57,3 @@ __EXPORT ScDrawPage::~ScDrawPage()
 {
 	return static_cast<cppu::OWeakObject*>( new ScPageObj( this ) );
 }
-
-

@@ -483,4 +483,3 @@ bool parseSearchArgument(String const & rInput, ucb::SearchInfo & rInfo)
 	skipWhiteSpace(p, pEnd);
 	return p == pEnd;
 }
-

@@ -23,7 +23,6 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #include <vector>
 #include <list>
@@ -152,7 +151,7 @@ ww::eField lcl_getFieldId( const IFieldmark* pFieldmark ) {
     }
 }
 
-/*  */
+/* */
 
 MSWordAttrIter::MSWordAttrIter( MSWordExportBase& rExport )
     : pOld( rExport.pChpIter ), m_rExport( rExport )
@@ -1312,7 +1311,7 @@ const SwRedlineData* WW8SwAttrIter::GetRedline( xub_StrLen nPos )
     return NULL;
 }
 
-/*  */
+/* */
 
 short MSWordExportBase::GetCurrentPageDirection() const
 {
@@ -2426,7 +2425,7 @@ void WW8AttributeOutput::TableNodeInfo( ww8::WW8TableNodeInfo::Pointer_t pNodeIn
 }
 
 #if 0
-/*  */
+/* */
 
 sal_uInt16 WW8Export::StartTableFromFrmFmt( WW8Bytes &rAt, const SwFrmFmt *pFmt )
 {
@@ -2571,7 +2570,7 @@ bool MSWordExportBase::NoPageBreakSection( const SfxItemSet* pSet )
     return bRet;
 }
 
-/*  */
+/* */
 
 void MSWordExportBase::OutputSectionNode( const SwSectionNode& rSectionNode )
 {
@@ -2628,7 +2627,7 @@ void WW8Export::AppendSection( const SwPageDesc *pPageDesc, const SwSectionFmt* 
     pSepx->AppendSep(Fc2Cp(Strm().Tell()), pPageDesc, pFmt, nLnNum);
 }
 
-/*  */
+/* */
 
 //---------------------------------------------------------------------------
 //       Flys
@@ -2897,7 +2896,7 @@ void WW8AttributeOutput::Redline( const SwRedlineData* pRedline )
     }
 }
 
-/*  */
+/* */
 
 void MSWordExportBase::OutputContentNode( const SwCntntNode& rNode )
 {

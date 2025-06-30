@@ -71,7 +71,7 @@ import lib.StatusException;
 public class _XCommandProcessor extends MultiMethodTest {
 
     /**
-     * Conatins the tested object.
+     * Contains the tested object.
      */
     public XCommandProcessor oObj;
 
@@ -176,7 +176,7 @@ public class _XCommandProcessor extends MultiMethodTest {
      * The following method tests are to be completed successfully before :
      * <ul>
      *  <li> <code> createCommandIdentifier() </code> : to have a unique
-     *  identifier which is used to abourt started command. </li>
+     *  identifier which is used to abort started command. </li>
      * </ul>
      */
     public void _abort() {

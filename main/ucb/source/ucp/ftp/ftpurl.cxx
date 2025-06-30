@@ -835,4 +835,3 @@ void FTPURL::del() const
     if(err != CURLE_OK)
         throw curl_exception(err);
 }
-

@@ -70,4 +70,3 @@ component_getFactory(
 }
 
 } // extern "C"
-

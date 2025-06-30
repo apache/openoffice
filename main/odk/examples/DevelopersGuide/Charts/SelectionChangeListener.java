@@ -198,7 +198,7 @@ public class SelectionChangeListener implements XSelectionChangeListener {
 
             int button = com.sun.star.awt.MessageBoxButtons.BUTTONS_OK;
             XMessageBoxFactory aMBF = (XMessageBoxFactory) UnoRuntime.queryInterface(XMessageBoxFactory.class, aToolKit);
-            XMessageBox xMB = aMBF.createMessageBox(aWinPeer, MessageBoxType.INFOBOX, button, "Event-Notify", "Listener was called, selcetion has changed");
+            XMessageBox xMB = aMBF.createMessageBox(aWinPeer, MessageBoxType.INFOBOX, button, "Event-Notify", "Listener was called, selection has changed");
             xMB.execute();
         }
     }

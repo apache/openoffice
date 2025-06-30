@@ -522,6 +522,3 @@ void SwTOXDescription::ApplyTo(SwTOXBase& rTOXBase)
     rTOXBase.SetSortAlgorithm(sSortAlgorithm);
 
 }
-
-
-

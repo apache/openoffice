@@ -442,4 +442,3 @@ void SvpSalFrame::UnionClipRegion( long, long, long, long )
 void SvpSalFrame::EndSetClipRegion()
 {
 }
-

@@ -297,4 +297,3 @@ NumberFormatCodeMapper::getSupportedServiceNames(void) throw( ::com::sun::star::
     aRet[0] = ::rtl::OUString::createFromAscii(cNumFormat);
     return aRet;
 }
-

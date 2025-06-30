@@ -69,7 +69,7 @@ java_sql_DriverPropertyInfo::operator starsdbc::DriverPropertyInfo()
 ::rtl::OUString java_sql_DriverPropertyInfo::name()
 {
 	::rtl::OUString aStr;
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"name","Ljava/lang/String;");
@@ -82,7 +82,7 @@ java_sql_DriverPropertyInfo::operator starsdbc::DriverPropertyInfo()
 ::rtl::OUString java_sql_DriverPropertyInfo::description()
 {
 	::rtl::OUString aStr;
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"description","Ljava/lang/String;");
@@ -95,7 +95,7 @@ java_sql_DriverPropertyInfo::operator starsdbc::DriverPropertyInfo()
 ::rtl::OUString java_sql_DriverPropertyInfo::value()
 {
 	::rtl::OUString aStr;
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"value","Ljava/lang/String;");
@@ -108,7 +108,7 @@ java_sql_DriverPropertyInfo::operator starsdbc::DriverPropertyInfo()
 sal_Bool java_sql_DriverPropertyInfo::required()
 {
 	jboolean out(0);
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"required","Z");
@@ -120,7 +120,7 @@ sal_Bool java_sql_DriverPropertyInfo::required()
 // --------------------------------------------------------------------------------
 Sequence< ::rtl::OUString> java_sql_DriverPropertyInfo::choices()
 {
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"choices","[Ljava/lang/String;");
@@ -134,4 +134,3 @@ Sequence< ::rtl::OUString> java_sql_DriverPropertyInfo::choices()
 	return Sequence< ::rtl::OUString>();
 }
 // --------------------------------------------------------------------------------
-

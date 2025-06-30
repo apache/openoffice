@@ -2758,7 +2758,7 @@ sal_Bool WinSalGraphics::CreateFontSubset( const rtl::OUString& rToFile,
 			aRealGlyphIds[i] = aGlyphId;
 		}
 
-		pCharMap->DeReference(); // TODO: and and use a RAII object
+		pCharMap->DeReference(); // TODO: and use a RAII object
 
 		// provide a font subset from the CFF-table
 		FILE* pOutFile = fopen( aToFile.GetBuffer(), "wb" );
@@ -3026,7 +3026,7 @@ void WinSalGraphics::GetGlyphWidths( const ImplFontData* pFont,
 				nChar = pMap->GetNextChar( nChar );
             }
 
-			pMap->DeReference(); // TODO: and and use a RAII object
+			pMap->DeReference(); // TODO: and use a RAII object
         }
     }
     else if( pFont->IsEmbeddable() )
@@ -3076,4 +3076,3 @@ SystemFontData WinSalGraphics::GetSysFontData( int nFallbacklevel ) const
 }
 
 //--------------------------------------------------------------------------
-
