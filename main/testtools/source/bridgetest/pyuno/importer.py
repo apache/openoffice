@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 import unittest
 import uno
@@ -29,7 +29,7 @@ class ImporterTestCase(unittest.TestCase):
       def __init__(self,method,ctx):
           unittest.TestCase.__init__(self,method)
           self.ctx = ctx
-          
+
       def setUp(self):
           self.tobj = self.ctx.ServiceManager.createInstanceWithContext( \
                            "com.sun.star.test.bridge.CppTestObject",self.ctx)
@@ -37,7 +37,7 @@ class ImporterTestCase(unittest.TestCase):
       def testStandard( self ):
           self.failUnless( IllegalArgumentException != None, "none-test" )
           self.failUnlessRaises( IllegalArgumentException, self.tobj.raiseException, 1,"foo",self.tobj)
-                 
+
           self.failUnless( TWO == uno.Enum( "test.testtools.bridgetest.TestEnum","TWO"), "enum" )
           self.failUnless( UNSIGNED_LONG == uno.Enum( "com.sun.star.uno.TypeClass", "UNSIGNED_LONG" ) )
           self.failUnless( typeOfIllegalArgumentException ==
