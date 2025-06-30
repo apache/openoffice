@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -95,12 +95,12 @@ $(LIB$(TNR)TARGET) :	$(LIB$(TNR)FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB$(TNR)FILES) $(LIB$(TNR)OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB$(TNR)OBJFILES)"!=""    
+.IF "$(LIB$(TNR)OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB$(TNR)OBJFILES)) > $(null,$(LIB$(TNR)OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB$(TNR)OBJFILES)"!=""    
-.IF "$(LIB$(TNR)FILES)"!=""    
+.ENDIF          # "$(LIB$(TNR)OBJFILES)"!=""
+.IF "$(LIB$(TNR)FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB$(TNR)FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB$(TNR)FILES)"!=""    
+.ENDIF          # "$(LIB$(TNR)FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -111,14 +111,14 @@ $(LIB$(TNR)TARGET) :	$(LIB$(TNR)FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB$(TNR)FILES) $(LIB$(TNR)OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB$(TNR)OBJFILES)"!=""    
+.IF "$(LIB$(TNR)OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB$(TNR)OBJFILES)) > $(null,$(LIB$(TNR)OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB$(TNR)OBJFILES)"!=""    
-.IF "$(LIB$(TNR)FILES)"!=""    
+.ENDIF          # "$(LIB$(TNR)OBJFILES)"!=""
+.IF "$(LIB$(TNR)FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB$(TNR)FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB$(TNR)FILES)"!=""    
+.ENDIF          # "$(LIB$(TNR)FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB$(TNR)FILES)"!=""    
+.ENDIF          # "$(LIB$(TNR)FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"

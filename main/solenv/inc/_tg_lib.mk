@@ -1,5 +1,5 @@
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 # unroll begin
 
@@ -90,12 +90,12 @@ $(LIB1TARGET) :	$(LIB1FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB1FILES) $(LIB1OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB1OBJFILES)"!=""    
+.IF "$(LIB1OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB1OBJFILES)) > $(null,$(LIB1OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB1OBJFILES)"!=""    
-.IF "$(LIB1FILES)"!=""    
+.ENDIF          # "$(LIB1OBJFILES)"!=""
+.IF "$(LIB1FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB1FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB1FILES)"!=""    
+.ENDIF          # "$(LIB1FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -106,14 +106,14 @@ $(LIB1TARGET) :	$(LIB1FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB1FILES) $(LIB1OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB1OBJFILES)"!=""    
+.IF "$(LIB1OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB1OBJFILES)) > $(null,$(LIB1OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB1OBJFILES)"!=""    
-.IF "$(LIB1FILES)"!=""    
+.ENDIF          # "$(LIB1OBJFILES)"!=""
+.IF "$(LIB1FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB1FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB1FILES)"!=""    
+.ENDIF          # "$(LIB1FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB1FILES)"!=""    
+.ENDIF          # "$(LIB1FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -197,12 +197,12 @@ $(LIB2TARGET) :	$(LIB2FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB2FILES) $(LIB2OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB2OBJFILES)"!=""    
+.IF "$(LIB2OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB2OBJFILES)) > $(null,$(LIB2OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB2OBJFILES)"!=""    
-.IF "$(LIB2FILES)"!=""    
+.ENDIF          # "$(LIB2OBJFILES)"!=""
+.IF "$(LIB2FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB2FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB2FILES)"!=""    
+.ENDIF          # "$(LIB2FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -213,14 +213,14 @@ $(LIB2TARGET) :	$(LIB2FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB2FILES) $(LIB2OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB2OBJFILES)"!=""    
+.IF "$(LIB2OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB2OBJFILES)) > $(null,$(LIB2OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB2OBJFILES)"!=""    
-.IF "$(LIB2FILES)"!=""    
+.ENDIF          # "$(LIB2OBJFILES)"!=""
+.IF "$(LIB2FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB2FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB2FILES)"!=""    
+.ENDIF          # "$(LIB2FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB2FILES)"!=""    
+.ENDIF          # "$(LIB2FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -304,12 +304,12 @@ $(LIB3TARGET) :	$(LIB3FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB3FILES) $(LIB3OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB3OBJFILES)"!=""    
+.IF "$(LIB3OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB3OBJFILES)) > $(null,$(LIB3OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB3OBJFILES)"!=""    
-.IF "$(LIB3FILES)"!=""    
+.ENDIF          # "$(LIB3OBJFILES)"!=""
+.IF "$(LIB3FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB3FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB3FILES)"!=""    
+.ENDIF          # "$(LIB3FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -320,14 +320,14 @@ $(LIB3TARGET) :	$(LIB3FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB3FILES) $(LIB3OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB3OBJFILES)"!=""    
+.IF "$(LIB3OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB3OBJFILES)) > $(null,$(LIB3OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB3OBJFILES)"!=""    
-.IF "$(LIB3FILES)"!=""    
+.ENDIF          # "$(LIB3OBJFILES)"!=""
+.IF "$(LIB3FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB3FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB3FILES)"!=""    
+.ENDIF          # "$(LIB3FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB3FILES)"!=""    
+.ENDIF          # "$(LIB3FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -411,12 +411,12 @@ $(LIB4TARGET) :	$(LIB4FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB4FILES) $(LIB4OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB4OBJFILES)"!=""    
+.IF "$(LIB4OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB4OBJFILES)) > $(null,$(LIB4OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB4OBJFILES)"!=""    
-.IF "$(LIB4FILES)"!=""    
+.ENDIF          # "$(LIB4OBJFILES)"!=""
+.IF "$(LIB4FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB4FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB4FILES)"!=""    
+.ENDIF          # "$(LIB4FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -427,14 +427,14 @@ $(LIB4TARGET) :	$(LIB4FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB4FILES) $(LIB4OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB4OBJFILES)"!=""    
+.IF "$(LIB4OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB4OBJFILES)) > $(null,$(LIB4OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB4OBJFILES)"!=""    
-.IF "$(LIB4FILES)"!=""    
+.ENDIF          # "$(LIB4OBJFILES)"!=""
+.IF "$(LIB4FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB4FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB4FILES)"!=""    
+.ENDIF          # "$(LIB4FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB4FILES)"!=""    
+.ENDIF          # "$(LIB4FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -518,12 +518,12 @@ $(LIB5TARGET) :	$(LIB5FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB5FILES) $(LIB5OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB5OBJFILES)"!=""    
+.IF "$(LIB5OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB5OBJFILES)) > $(null,$(LIB5OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB5OBJFILES)"!=""    
-.IF "$(LIB5FILES)"!=""    
+.ENDIF          # "$(LIB5OBJFILES)"!=""
+.IF "$(LIB5FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB5FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB5FILES)"!=""    
+.ENDIF          # "$(LIB5FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -534,14 +534,14 @@ $(LIB5TARGET) :	$(LIB5FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB5FILES) $(LIB5OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB5OBJFILES)"!=""    
+.IF "$(LIB5OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB5OBJFILES)) > $(null,$(LIB5OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB5OBJFILES)"!=""    
-.IF "$(LIB5FILES)"!=""    
+.ENDIF          # "$(LIB5OBJFILES)"!=""
+.IF "$(LIB5FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB5FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB5FILES)"!=""    
+.ENDIF          # "$(LIB5FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB5FILES)"!=""    
+.ENDIF          # "$(LIB5FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -625,12 +625,12 @@ $(LIB6TARGET) :	$(LIB6FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB6FILES) $(LIB6OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB6OBJFILES)"!=""    
+.IF "$(LIB6OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB6OBJFILES)) > $(null,$(LIB6OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB6OBJFILES)"!=""    
-.IF "$(LIB6FILES)"!=""    
+.ENDIF          # "$(LIB6OBJFILES)"!=""
+.IF "$(LIB6FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB6FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB6FILES)"!=""    
+.ENDIF          # "$(LIB6FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -641,14 +641,14 @@ $(LIB6TARGET) :	$(LIB6FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB6FILES) $(LIB6OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB6OBJFILES)"!=""    
+.IF "$(LIB6OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB6OBJFILES)) > $(null,$(LIB6OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB6OBJFILES)"!=""    
-.IF "$(LIB6FILES)"!=""    
+.ENDIF          # "$(LIB6OBJFILES)"!=""
+.IF "$(LIB6FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB6FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB6FILES)"!=""    
+.ENDIF          # "$(LIB6FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB6FILES)"!=""    
+.ENDIF          # "$(LIB6FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -732,12 +732,12 @@ $(LIB7TARGET) :	$(LIB7FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB7FILES) $(LIB7OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB7OBJFILES)"!=""    
+.IF "$(LIB7OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB7OBJFILES)) > $(null,$(LIB7OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB7OBJFILES)"!=""    
-.IF "$(LIB7FILES)"!=""    
+.ENDIF          # "$(LIB7OBJFILES)"!=""
+.IF "$(LIB7FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB7FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB7FILES)"!=""    
+.ENDIF          # "$(LIB7FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -748,14 +748,14 @@ $(LIB7TARGET) :	$(LIB7FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB7FILES) $(LIB7OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB7OBJFILES)"!=""    
+.IF "$(LIB7OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB7OBJFILES)) > $(null,$(LIB7OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB7OBJFILES)"!=""    
-.IF "$(LIB7FILES)"!=""    
+.ENDIF          # "$(LIB7OBJFILES)"!=""
+.IF "$(LIB7FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB7FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB7FILES)"!=""    
+.ENDIF          # "$(LIB7FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB7FILES)"!=""    
+.ENDIF          # "$(LIB7FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -839,12 +839,12 @@ $(LIB8TARGET) :	$(LIB8FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB8FILES) $(LIB8OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB8OBJFILES)"!=""    
+.IF "$(LIB8OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB8OBJFILES)) > $(null,$(LIB8OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB8OBJFILES)"!=""    
-.IF "$(LIB8FILES)"!=""    
+.ENDIF          # "$(LIB8OBJFILES)"!=""
+.IF "$(LIB8FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB8FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB8FILES)"!=""    
+.ENDIF          # "$(LIB8FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -855,14 +855,14 @@ $(LIB8TARGET) :	$(LIB8FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB8FILES) $(LIB8OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB8OBJFILES)"!=""    
+.IF "$(LIB8OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB8OBJFILES)) > $(null,$(LIB8OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB8OBJFILES)"!=""    
-.IF "$(LIB8FILES)"!=""    
+.ENDIF          # "$(LIB8OBJFILES)"!=""
+.IF "$(LIB8FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB8FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB8FILES)"!=""    
+.ENDIF          # "$(LIB8FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB8FILES)"!=""    
+.ENDIF          # "$(LIB8FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -946,12 +946,12 @@ $(LIB9TARGET) :	$(LIB9FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB9FILES) $(LIB9OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB9OBJFILES)"!=""    
+.IF "$(LIB9OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB9OBJFILES)) > $(null,$(LIB9OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB9OBJFILES)"!=""    
-.IF "$(LIB9FILES)"!=""    
+.ENDIF          # "$(LIB9OBJFILES)"!=""
+.IF "$(LIB9FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB9FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB9FILES)"!=""    
+.ENDIF          # "$(LIB9FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -962,14 +962,14 @@ $(LIB9TARGET) :	$(LIB9FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB9FILES) $(LIB9OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB9OBJFILES)"!=""    
+.IF "$(LIB9OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB9OBJFILES)) > $(null,$(LIB9OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB9OBJFILES)"!=""    
-.IF "$(LIB9FILES)"!=""    
+.ENDIF          # "$(LIB9OBJFILES)"!=""
+.IF "$(LIB9FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB9FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB9FILES)"!=""    
+.ENDIF          # "$(LIB9FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB9FILES)"!=""    
+.ENDIF          # "$(LIB9FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"
@@ -1053,12 +1053,12 @@ $(LIB10TARGET) :	$(LIB10FILES) \
 .ELIF "$(GUI)"=="OS2"
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) $@ $(LIB10FILES) $(LIB10OBJFILES)
 	@+-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB10OBJFILES)"!=""    
+.IF "$(LIB10OBJFILES)"!=""
 	@+$(TYPE) $(mktmp $(LIB10OBJFILES)) > $(null,$(LIB10OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB10OBJFILES)"!=""    
-.IF "$(LIB10FILES)"!=""    
+.ENDIF          # "$(LIB10OBJFILES)"!=""
+.IF "$(LIB10FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB10FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB10FILES)"!=""    
+.ENDIF          # "$(LIB10FILES)"!=""
 	@+$(ECHONL)
 
 .ELSE			# "$(GUI)"=="UNX"
@@ -1069,14 +1069,14 @@ $(LIB10TARGET) :	$(LIB10FILES) \
 .ELSE
 	$(COMMAND_ECHO)$(LIBMGR) $(LIBFLAGS) /OUT:$@ @$(mktmp $(LIB10FILES) $(LIB10OBJFILES))
     @-$(RM) $(@:s/.lib/.lin/)
-.IF "$(LIB10OBJFILES)"!=""    
+.IF "$(LIB10OBJFILES)"!=""
 	@$(TYPE) $(mktmp $(LIB10OBJFILES)) > $(null,$(LIB10OBJFILES) $(NULLDEV) $(@:s/.lib/.lin/))
-.ENDIF          # "$(LIB10OBJFILES)"!=""    
-.IF "$(LIB10FILES)"!=""    
+.ENDIF          # "$(LIB10OBJFILES)"!=""
+.IF "$(LIB10FILES)"!=""
 	@-$(TYPE) $(foreach,i,$(LIB10FILES) $(i:s/.lib/.lin/)) >> $(@:s/.lib/.lin/)
-.ENDIF          # "$(LIB10FILES)"!=""    
+.ENDIF          # "$(LIB10FILES)"!=""
 	@$(ECHONL)
-.ENDIF          # "$(LIB10FILES)"!=""    
+.ENDIF          # "$(LIB10FILES)"!=""
 .ELSE			# "$(GUI)"=="WNT"
 	@-$(RM) $@
   .IF "$(VERBOSE)" == "TRUE"

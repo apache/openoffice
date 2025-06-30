@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -44,7 +44,7 @@ TARFILE_MD5=52654eb3b2e60c35731ea8fc87f1bd29
 
 PATCH_FILES=jpeg-8d.patch
 
-ADDITIONAL_FILES=makefile.mk jconfig.h	
+ADDITIONAL_FILES=makefile.mk jconfig.h
 
 #relative to CONFIGURE_DIR
 
@@ -55,7 +55,7 @@ OUT2INC=	jconfig.h	\
 			jerror.h	\
 			jmorecfg.h	\
 			jpegint.h	\
-			jpeglib.h	
+			jpeglib.h
 
 # --- Targets ------------------------------------------------------
 

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -83,9 +83,9 @@ SCP1FILES  = installation_ooo.par          \
              common_brand_readme.par       \
              ooo_brand.par
 
-.IF "$(OS)"=="MACOSX" 
+.IF "$(OS)"=="MACOSX"
 SCP1FILES +=                               \
-             directory_ooo_macosx.par      
+             directory_ooo_macosx.par
 .ENDIF
 
 .IF "$(ENABLE_OPENGL)" == "TRUE"
@@ -99,7 +99,7 @@ SCP1FILES +=                               \
              file_javafilter.par
 .ENDIF
 
-.IF "$(SOLAR_JAVA)"!="" 
+.IF "$(SOLAR_JAVA)"!=""
 .IF "$(GUI)"=="WNT"
 SCP1FILES +=                               \
              registryitem_javafilter.par
@@ -139,7 +139,7 @@ SCP1FILES += directxcanvas.par
 .IF "$(DISABLE_ACTIVEX)"==""
 SCP1FILES +=                           \
              module_activex.par        \
-             file_activex.par 
+             file_activex.par
 .ENDIF
 .ENDIF
 
@@ -231,9 +231,9 @@ SCP2FILES  = installation_ooo.par          \
              common_brand_readme.par       \
              ooo_brand.par
 
-.IF "$(OS)"=="MACOSX" 
+.IF "$(OS)"=="MACOSX"
 SCP2FILES +=                               \
-             directory_ooo_macosx.par      
+             directory_ooo_macosx.par
 .ENDIF
 
 .IF "$(SOLAR_JAVA)"!=""
@@ -242,7 +242,7 @@ SCP2FILES +=                               \
              file_javafilter.par
 .ENDIF
 
-.IF "$(SOLAR_JAVA)"!="" 
+.IF "$(SOLAR_JAVA)"!=""
 .IF "$(GUI)"=="WNT"
 SCP2FILES +=                               \
              registryitem_javafilter.par

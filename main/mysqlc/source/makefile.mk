@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -192,7 +192,7 @@ COMPONENT_LIBRARY = \
             $(EXTENSIONDIR)$/$(SHL1TARGET)$(DLLPOST)
 
 COMPONENT_MYSQL_LIBFILE = \
-            $(EXTENSIONDIR)$/$(MYSQL_LIBFILE:f) 
+            $(EXTENSIONDIR)$/$(MYSQL_LIBFILE:f)
 
 COMPONENT_MYSQL_CPPCONN_FILE=\
             $(EXTENSIONDIR)$/$(MYSQL_CPPCONNFILE:f)
@@ -279,7 +279,7 @@ $(DESCRIPTION_SRC): description.xml
     +-$(RM) $@
     $(TYPE) description.xml | $(SED) "s/#VERSION#/$(EXTENSION_VERSION)/" | $(SED) "s,#TITLE#,$(EXTENSION_TITLE)," > $@
 
-.IF "$(SYSTEM_MYSQL)" != "YES" 
+.IF "$(SYSTEM_MYSQL)" != "YES"
 # --- the MySQL client lib needs to be copied
 $(COMPONENT_MYSQL_LIBFILE): $(MYSQL_LIBFILE)
 	@@-$(MKDIRHIER) $(@:d)

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -95,24 +95,24 @@ $(CPP_DOCU_CLEANUP_FLAG) : $(INCLUDELIST) $(PRJ)$/docs$/cpp$/ref$/cpp.css
 	$(TOUCH) $@
 
 $(CPP_DOCU_INDEX_FILE) : $(CPP_DOCU_CLEANUP_FLAG)
-	-$(MKDIRHIER) $(@:d)        
+	-$(MKDIRHIER) $(@:d)
 	$(MY_AUTODOC) -html $(DESTDIRGENCPPREF) -name $(CPPDOCREFNAME) $(AUTODOCPARAMS)
 	-rm $(@:d:d)$/cpp.css
 	$(MY_TEXTCOPY) $(MY_TEXTCOPY_SOURCEPRE) $(PRJ)$/docs$/cpp$/ref$/cpp.css $(MY_TEXTCOPY_TARGETPRE) $(@:d:d)$/cpp.css
 
 $(JAVA_SRC_FILES) : $(SOLARCOMMONPCKDIR)$/jurt_src.zip $(SOLARCOMMONPCKDIR)$/ridl_src.zip $(SOLARCOMMONPCKDIR)$/unoloader_src.zip $(SOLARCOMMONPCKDIR)$/juh_src.zip
-	-$(MKDIRHIER) $(@:d)        
+	-$(MKDIRHIER) $(@:d)
 	$(MY_COPY) $^ $(JAVA_SRC_DIR)
 	cd $(JAVA_SRC_DIR) && unzip -qu jurt_src.zip && unzip -qu ridl_src.zip && unzip -qu unoloader_src.zip && unzip -qu juh_src.zip
 
-#$(JAVA_SRC_DIR)$/com$/sun$/star$/beans$/%.java : $(PRJ)$/source$/bean$/com$/sun$/star$/beans$/%.java 
-#	-$(MKDIRHIER) $(@:d)        
+#$(JAVA_SRC_DIR)$/com$/sun$/star$/beans$/%.java : $(PRJ)$/source$/bean$/com$/sun$/star$/beans$/%.java
+#	-$(MKDIRHIER) $(@:d)
 #	$(MY_COPY) $< $@
 
 #$(JAVA_DOCU_INDEX_FILE) .SEQUENTIAL : $(JAVA_SRC_FILES) $(JAVA_BEAN_SRC_FILES)
 .IF "$(SOLAR_JAVA)"!=""
 $(JAVA_DOCU_INDEX_FILE) .SEQUENTIAL : $(JAVA_SRC_FILES)
-	-$(MKDIRHIER) $(@:d)        
+	-$(MKDIRHIER) $(@:d)
 	$(JAVADOC) -J-Xmx120m $(JAVADOCPARAMS) > $(JAVADOCLOG)
 .IF "$(OS)" != "MACOSX"
         cd $(shell dirname $(JAVA_DOCU_INDEX_FILE)) && patch $(shell basename $(JAVA_DOCU_INDEX_FILE)) $(PWD)/idl_ref_javadoc.patch

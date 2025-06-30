@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -45,7 +45,7 @@ EXTRA_FRAMEWORK_FLAG=-framework Python
 .ENDIF # .IF "$(EXTRA_CFLAGS)"!=""
 
 .IF "$(GUI)" == "UNX"
-# python expects modules without the lib prefix 
+# python expects modules without the lib prefix
 # pyuno.so even on Mac OS X, because it is a python module
 PYUNO_MODULE=$(DLLDEST)$/pyuno.so
 PYUNORC=pyunorc
@@ -90,7 +90,7 @@ SHL1STDLIBS= \
 		$(CPPUHELPERLIB)	\
 		$(SALLIB)		\
 		$(PYTHONLIB) 		\
-		$(EXTRA_FRAMEWORK_FLAG) 
+		$(EXTRA_FRAMEWORK_FLAG)
 
 SHL1DEPN=
 SHL1LIBS=$(SLB)$/$(TARGET).lib
@@ -120,8 +120,8 @@ ALLTAR : \
 	$(DLLDEST)$/uno.py 		\
 	$(DLLDEST)$/unohelper.py	\
 	$(PYUNO_MODULE)			\
-	$(MISC)$/$(PYUNORC)		
-.ENDIF 
+	$(MISC)$/$(PYUNORC)
+.ENDIF
 .ENDIF
 
 .INCLUDE :  target.mk
@@ -152,7 +152,7 @@ $(PYUNO_MODULE) : $(SLO)$/pyuno_dlopenwrapper.obj
 
 $(MISC)$/$(PYUNORC) : pyuno
 	-rm -f $@
-	cat pyuno > $@ 
+	cat pyuno > $@
 
 $(MISC)$/pyuno.flt : pyuno.flt
 	-rm -f $@

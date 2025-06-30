@@ -19,7 +19,7 @@
 #
 #**************************************************************
 
-# edit to match directory level 
+# edit to match directory level
 PRJ		= ..$/..$/..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = helpcontent2
@@ -114,8 +114,8 @@ XHPFILES = \
    webwizard05is.xhp \
    webwizard06.xhp \
    webwizard07.xhp \
-   webwizard07fc.xhp 
-	
+   webwizard07fc.xhp
+
 # --- Targets ------------------------------------------------------
 
 .INCLUDE :  target.mk

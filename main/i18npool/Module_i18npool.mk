@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -73,7 +73,7 @@ $(eval $(call gb_Module_add_targets,i18npool,\
 # DONE inp  i18npool\source\textconversion\data        nmake   -   all inp_textconv_dict inp_textconversion inp_inc NULL
 # DONE inp  i18npool\source\search                     nmake   -   all inp_search inp_inc NULL
 # DONE inp  i18npool\source\ordinalsuffix              nmake   -   all inp_ordinalsuffix NULL
-# inp  i18npool\util                              nmake   -   all inp_util inp_brkit inp_dict inp_chclass inp_translit inp_cal inp_dnum inp_natnum inp_localedata inp_locdata_data inp_numformat inp_rserv inp_index inp_index_data 
+# inp  i18npool\util                              nmake   -   all inp_util inp_brkit inp_dict inp_chclass inp_translit inp_cal inp_dnum inp_natnum inp_localedata inp_locdata_data inp_numformat inp_rserv inp_index inp_index_data
 #                                                                          inp_collator inp_collator_data inp_inputchecker inp_textconversion inp_textconv_dict inp_search inp_isolang inp_paper inp_ordinalsuffix NULL
 
 
