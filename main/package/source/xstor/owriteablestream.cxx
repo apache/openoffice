@@ -1950,7 +1950,7 @@ void OWriteStream::CopyToStreamInternally_Impl( const uno::Reference< io::XStrea
         m_pImpl->AddLog( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX "Quiet exception" ) ) );
 
 		// TODO: set the stoream in invalid state or dispose
-		OSL_ENSURE( sal_False, "The stream become invalid during copying!\n" );
+		OSL_ENSURE( sal_False, "The stream became invalid during copying!\n" );
 		throw uno::RuntimeException();
 	}
 	
