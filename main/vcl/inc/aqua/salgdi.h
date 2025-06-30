@@ -342,14 +342,14 @@ public:
     // OutputDevice for all its device specific preferred font substitutions
     virtual void			GetDevFontSubstList( OutputDevice* );
     virtual bool			AddTempDevFont( ImplDevFontList*, const String& rFileURL, const String& rFontName );
-    // CreateFontSubset: a method to get a subset of glyhps of a font
+    // CreateFontSubset: a method to get a subset of glyphs of a font
     // inside a new valid font file
     // returns TRUE if creation of subset was successful
     // parameters: rToFile: contains a osl file URL to write the subset to
     //             pFont: describes from which font to create a subset
     //             pGlyphIDs: the glyph ids to be extracted
     //             pEncoding: the character code corresponding to each glyph
-    //             pWidths: the advance widths of the correspoding glyphs (in PS font units)
+    //             pWidths: the advance widths of the corresponding glyphs (in PS font units)
     //             nGlyphs: the number of glyphs
     //             rInfo: additional outgoing information
     // implementation note: encoding 0 with glyph id 0 should be added implicitly

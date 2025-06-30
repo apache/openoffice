@@ -44,7 +44,7 @@ namespace comphelper
 		::rtl::OUString* pNames = aNames.getArray();
 		for(sal_Int32 i=0;i<pType->nMembers;i++,++pNames)
 		{
-			// the decription reference
+			// the description reference
 			typelib_TypeDescriptionReference* pMemberDescriptionReference = pType->ppMembers[i];
 			// the description for the reference
 			typelib_TypeDescription* pMemberDescription = NULL;

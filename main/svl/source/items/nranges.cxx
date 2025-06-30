@@ -212,7 +212,7 @@ SfxNumRanges::SfxNumRanges( const NUMTYPE* pArr )
 
 /**	<H3>Description</H3>
 
-	Constcurts an SfxNumRanges-instance from an sorted ranges of NUMTYPEs,
+	Constructs an SfxNumRanges-instance from an sorted ranges of NUMTYPEs,
 	terminates with on 0.
 
 	precondition: for each n >= 0 && n < (sizeof(pArr)-1)

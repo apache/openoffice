@@ -52,7 +52,7 @@ module com {  module sun {  module star {  module drawing {
     <li>Only the current draw page and only the visible shapes are
     accessible.  To switch to another page or to access shapes that lie
     outside the currently visible area, the user has to issue these requests
-    manually or programmatically through the usual chanels, e.g. pressing
+    manually or programmatically through the usual channels, e.g. pressing
     keys or selecting menu entries.</li>
     <li>The hierarchy exposed through the 
     <type scope="::com::sun::star::accessibility">XAccessibleContext</type>

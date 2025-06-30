@@ -876,7 +876,7 @@ uno::Any SAL_CALL ScFunctionListObj::getByName( const rtl::OUString& aName )
 		for (sal_uInt16 nIndex=0; nIndex<nCount; nIndex++)
 		{
 			const ScFuncDesc* pDesc = pFuncList->GetFunction(nIndex);
-			//!	Case-insensitiv ???
+			//!	Case-insensitive ???
 			if ( pDesc && pDesc->pFuncName && aNameStr == *pDesc->pFuncName )
 			{
 				uno::Sequence<beans::PropertyValue> aSeq( SC_FUNCDESC_PROPCOUNT );
@@ -987,7 +987,7 @@ sal_Bool SAL_CALL ScFunctionListObj::hasByName( const rtl::OUString& aName )
 		for (sal_uInt16 nIndex=0; nIndex<nCount; nIndex++)
 		{
 			const ScFuncDesc* pDesc = pFuncList->GetFunction(nIndex);
-			//!	Case-insensitiv ???
+			//!	Case-insensitive ???
 			if ( pDesc && pDesc->pFuncName && aNameStr == *pDesc->pFuncName )
 				return sal_True;
 		}

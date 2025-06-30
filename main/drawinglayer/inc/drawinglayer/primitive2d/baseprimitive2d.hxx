@@ -130,7 +130,7 @@ namespace drawinglayer
             (get2DDecomposition/getB2DRange). The PropertyValue ViewParameters is converted to
             the appropriate C++ implementation class ViewInformation2D.
 
-            This base class does not implement any buffering; e.g. buffering the decompositon
+            This base class does not implement any buffering; e.g. buffering the decomposition
             and/or the range. These may be buffered anytime since the definition is that the primitive 
             is read-only and thus unchangeable. This implies that the decomposition and/or getting
             the range will lead to the same result as last time, under the precondition that
@@ -197,7 +197,7 @@ namespace drawinglayer
         /** BufferedDecompositionPrimitive2D class
         
             Baseclass for all C++ implementations of com::sun::star::graphic::XPrimitive2D
-            which want to buffer the decomoposition result
+            which want to buffer the decomposition result
 
             Buffering the decomposition is the most-used buffering and is thus used my most
             primitive implementations which support a decomposition as base class.

@@ -66,7 +66,7 @@ namespace dbaccess
         virtual ::rtl::OUString getNameForObject(const ::connectivity::sdbcx::ObjectType& _xObject);
 
 		/** tell the container to free all elements and all additional resources.<BR>
-			After using this method the object may be reconstructed by calling one of the <code>constrcuct</code> methods.
+			After using this method the object may be reconstructed by calling one of the <code>construct</code> methods.
 		*/
 		virtual void SAL_CALL disposing();
 

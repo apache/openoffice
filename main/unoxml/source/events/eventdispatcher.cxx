@@ -192,10 +192,10 @@ namespace DOM { namespace events {
             targetListeners = m_TargetListeners;
         }
 
-        // the caputre vector now holds the node path from target to root
-        // first we must search for capture listernes in order root to
+        // the capture vector now holds the node path from target to root
+        // first we must search for capture listeners in order root to
         // to target. after that, any target listeners have to be called
-        // then bubbeling phase listeners are called in target to root
+        // then bubbling phase listeners are called in target to root
         // order
         // start at the root
         NodeVector_t::const_reverse_iterator rinode =

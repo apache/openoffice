@@ -1950,7 +1950,7 @@ void OWriteStream::CopyToStreamInternally_Impl( const uno::Reference< io::XStrea
         m_pImpl->AddLog( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX "Quiet exception" ) ) );
 
 		// TODO: set the stoream in invalid state or dispose
-		OSL_ENSURE( sal_False, "The stream become invalid during copiing!\n" );
+		OSL_ENSURE( sal_False, "The stream become invalid during copying!\n" );
 		throw uno::RuntimeException();
 	}
 	
@@ -2286,7 +2286,7 @@ void SAL_CALL OWriteStream::closeInput(  )
 	if ( !m_bInitOnDemand && ( m_bInStreamDisconnected || !m_xInStream.is() ) )
 		throw io::NotConnectedException();
 
-	// the input part of the stream stays open for internal purposes ( to allow reading during copiing )
+	// the input part of the stream stays open for internal purposes ( to allow reading during copying )
 	// since it can not be reopened until output part is closed, it will be closed with output part.
 	m_bInStreamDisconnected = sal_True;
 	// m_xInStream->closeInput();

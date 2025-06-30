@@ -768,7 +768,7 @@ class MultiPageContainerRecReader : public ContainerRecReader
         // container record array and by examining the flags present in
         // the record to determine we expect to read or not.
         // In this case for a MultPage control there is no Top or Left
-        // values in the control record array, however time contraints
+        // values in the control record array, however time constraints
         // and associated risk prevent further investigation of this
         // at the moment.
         // similar situation exists for the start of the container record

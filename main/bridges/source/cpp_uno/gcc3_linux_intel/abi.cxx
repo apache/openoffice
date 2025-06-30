@@ -33,7 +33,7 @@
 #include "share.hxx"
 
 // At least Clang 3.8 can't compile our CPPU_CURRENT_NAMESPACE::__cxa_get_globals()
-// decleration with <exception> or anything else that indirectly includes <cxxabi.h>
+// declaration with <exception> or anything else that indirectly includes <cxxabi.h>
 // included, as it sees it as a an overload of __cxxabi::__cxa_get_globals() with a
 // different return type. Thus, it has to be placed in a file that doesn't include
 // those, and wrapped in a function:

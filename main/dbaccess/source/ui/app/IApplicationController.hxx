@@ -57,7 +57,7 @@ namespace dbaui
 			@param	_pTree
 				The tree list box.
 			@return
-				<TRUE/> if the cotainer could be changed otherwise <FALSE/>
+				<TRUE/> if the container could be changed otherwise <FALSE/>
 		*/
 		virtual sal_Bool onContainerSelect(ElementType _eType) = 0;
 

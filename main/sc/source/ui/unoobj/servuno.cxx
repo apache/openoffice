@@ -119,7 +119,7 @@ public:
                         aArgs[0] = maWorkbook;
                         aArgs[1] = uno::Any( xModel );
                         aArgs[2] = uno::Any( rtl::OUString( sSheetName ) );
-                        // use the convience function
+                        // use the convenience function
                         maCachedObject <<= ooo::vba::createVBAUnoAPIServiceWithArgs( mpDocShell, "ooo.vba.excel.Worksheet", aArgs );
                         break;
                     }

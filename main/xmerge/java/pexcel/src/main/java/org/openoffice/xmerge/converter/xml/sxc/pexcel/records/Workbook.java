@@ -128,7 +128,7 @@ OfficeConstants {
 	}
 
 	/**
- 	 *	Reads a workbook from the <code>InputStream</code> and contructs a
+ 	 *	Reads a workbook from the <code>InputStream</code> and constructs a
 	 *	workbook object from it 
 	 *
  	 * @param	is InputStream containing a Pocket Excel Data file.

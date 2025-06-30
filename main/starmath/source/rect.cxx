@@ -722,7 +722,7 @@ sal_Bool SmGetGlyphBoundRect(const OutputDevice &rDev,
 
     // use scale factor when calling GetTextBoundRect to counter
     // negative effects from antialiasing which may otherwise result
-    // in significant incorrect bounding rectangles for some charcters.
+    // in significant incorrect bounding rectangles for some characters.
 	Size aFntSize = aFnt.GetSize();
 
     // HDU: workaround to avoid HUGE font sizes and resulting problems (#112783#)

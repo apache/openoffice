@@ -47,7 +47,7 @@ IMPLEMENT_THUNK( kernel32, WINDOWS, BOOL, WINAPI, MoveFileExA, ( LPCSTR lpExisti
 			CHAR	szBuffer[32767];	// The buffer size must not exceed 32K
 			DWORD	dwBufLen = GetPrivateProfileSectionA( RENAME_SECTION, szBuffer, elementsof(szBuffer), WININIT_FILENAME );
 
-			CHAR	szRename[MAX_PATH];	// This is enough for at most to times 67 chracters
+			CHAR	szRename[MAX_PATH];	// This is enough for at most to times 67 characters
 			strcpy( szRename, szNewFileNameA );
 			strcat( szRename, "=" );
 			strcat( szRename, szExistingFileNameA );

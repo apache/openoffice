@@ -144,7 +144,7 @@ void deleteRootsModule()
             {
                 if (PK11_HasRootCerts(slot))
                 {
-                    xmlsec_trace("The root certifificates module \"%s"
+                    xmlsec_trace("The root certificates module \"%s"
                               "\" is already loaded: \n%s",
                               module->commonName,  module->dllName);
 
@@ -346,7 +346,7 @@ bool nsscrypto_initialize( const css::uno::Reference< css::lang::XMultiServiceFa
             }
             else
             {
-                xmlsec_trace("FAILED to add new root certifice module: "
+                xmlsec_trace("FAILED to add new root certificate module: "
                           "\"" ROOT_CERTS "\" contained in \n%s", ospath.getStr());
                 return_value = false;
 

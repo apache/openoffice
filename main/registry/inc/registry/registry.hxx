@@ -104,7 +104,7 @@ public:
 	 */
 	inline Registry();
 
-	/// Copy constructcor
+	/// Copy constructor
 	inline Registry(const Registry& toCopy);
 
 	/// Destructor. The Destructor close the registry if it is open.

@@ -28,7 +28,7 @@
 // =======================================================================
 
 // -----------------------------------------------------------------------
-// English (US/UK/AUS/CAN/NZ/EIRE/SAFRICA/JAMAICA/CARRIBEAN)
+// English (US/UK/AUS/CAN/NZ/EIRE/SAFRICA/JAMAICA/CARIBBEAN)
 static const wchar_t* aImplLangEnglishTab[LSTR_COUNT] =
 {
 	L"Shift",                                                // LSTR_KEY_SHIFT

@@ -133,10 +133,10 @@ public class CheckDateTimeField {
 		DateTime dateField = (DateTime) props.getPropertyValue("DateTimeValue");
 	
 		String dateString = document.getText().getString();
-		assertTrue("Verify time field is creatd, by verify it's hour",  dateString.indexOf(String.valueOf(dateField.Hours).trim()) != -1);
-		assertTrue("Verify time field is creatd, by verify it's minutes",  dateString.indexOf(String.valueOf(dateField.Minutes).trim()) != -1);
+		assertTrue("Verify time field is created, by verify it's hour",  dateString.indexOf(String.valueOf(dateField.Hours).trim()) != -1);
+		assertTrue("Verify time field is created, by verify it's minutes",  dateString.indexOf(String.valueOf(dateField.Minutes).trim()) != -1);
 		int expectHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-		assertEquals("Verify time field is creatd, value is right, by compare Hour", expectHour, dateField.Hours);
+		assertEquals("Verify time field is created, value is right, by compare Hour", expectHour, dateField.Hours);
 		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
 		store.storeAsURL(url, propsValue);
 		app.closeDocument(document);
@@ -148,7 +148,7 @@ public class CheckDateTimeField {
 			  Object field =  enumeration.nextElement();
 				XPropertySet props2 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
 				DateTime dateField2 = (DateTime) props2.getPropertyValue("DateTimeValue");
-				assertEquals("Verify time field is creatd correct by save and reload.", expectHour, dateField2.Hours);
+				assertEquals("Verify time field is created correct by save and reload.", expectHour, dateField2.Hours);
 		}
 		
 		
@@ -201,10 +201,10 @@ public class CheckDateTimeField {
 		DateTime dateField = (DateTime) props.getPropertyValue("DateTimeValue");
 	
 		String dateString = document.getText().getString();
-		assertTrue("Verify date field is creatd, by verify it's Month",  dateString.indexOf(String.valueOf(dateField.Month).trim()) != -1);
-		assertTrue("Verify date field is creatd, by verify it's Day",  dateString.indexOf(String.valueOf(dateField.Day).trim()) != -1);
+		assertTrue("Verify date field is created, by verify it's Month",  dateString.indexOf(String.valueOf(dateField.Month).trim()) != -1);
+		assertTrue("Verify date field is created, by verify it's Day",  dateString.indexOf(String.valueOf(dateField.Day).trim()) != -1);
 		int expectDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
-		assertEquals("Verify date field is creatd, value is right, by compare Day", expectDay, dateField.Day);
+		assertEquals("Verify date field is created, value is right, by compare Day", expectDay, dateField.Day);
 		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
 		store.storeAsURL(url, propsValue);
 		app.closeDocument(document);
@@ -216,7 +216,7 @@ public class CheckDateTimeField {
 			  Object field =  enumeration.nextElement();
 				XPropertySet props2 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
 				DateTime dateField2 = (DateTime) props2.getPropertyValue("DateTimeValue");
-				assertEquals("Verify date field is creatd correct by save and reload.", expectDay, dateField2.Day);
+				assertEquals("Verify date field is created correct by save and reload.", expectDay, dateField2.Day);
 		}
 		
 	}

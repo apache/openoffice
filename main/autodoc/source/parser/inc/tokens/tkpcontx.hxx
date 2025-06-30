@@ -57,7 +57,7 @@ class TkpContext
 		It leaves io_rText.CurChar() at the first char of the following Token or
 		the following Context.
 
-		This function returns, when a context has parsed some characterss
+		This function returns, when a context has parsed some characters
 		and completed a token OR left the context.
 		If the token is to be ignored, it is cut from io_rText.
 

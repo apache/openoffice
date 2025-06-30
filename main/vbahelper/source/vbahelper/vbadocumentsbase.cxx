@@ -266,7 +266,7 @@ uno::Any VbaDocumentsBase::createDocument() throw (uno::RuntimeException)
     aMediaDesc[ ::comphelper::MediaDescriptor::PROP_MACROEXECUTIONMODE() ] <<= document::MacroExecMode::USE_CONFIG;
     aMediaDesc.setComponentDataEntry( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ApplyFormDesignMode" ) ), uno::Any( false ) );
 
-    // craete the new document
+    // create the new document
 	uno::Reference< lang::XComponent > xComponent = xLoader->loadComponentFromURL(
 									   sURL ,
 									   rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("_blank") ), 0,

@@ -160,7 +160,7 @@ public:
         @param eType
             The part of the page object for which to return the bounding
             box.
-        @param eCoodinateSystem
+        @param eCoordinateSystem
             The bounding box can be returned in model and in pixel
             (window) coordinates.
     */

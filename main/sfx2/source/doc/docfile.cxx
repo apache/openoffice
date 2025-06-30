@@ -2280,7 +2280,7 @@ void SfxMedium::DoInternalBackup_Impl( const ::ucbhelper::Content& aOriginalCont
 
 	if ( !pImp->m_aBackupURL.getLength() )
 	{
-		// the copiing to the backup catalog failed ( for example because
+		// the copying to the backup catalog failed ( for example because
 		// of using an encrypted partition as target catalog )
 		// since the user did not specify to make backup explicitly
 		// office should try to make backup in another place,
