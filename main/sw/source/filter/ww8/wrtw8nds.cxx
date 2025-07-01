@@ -730,7 +730,7 @@ void WW8AttributeOutput::StartRuby( const SwTxtNode& rNode, const SwFmtRuby& rRu
 
     /*
      MS needs to know the name and size of the font used in the ruby item,
-     but we coud have written it in a mixture of asian and western
+     but we could have written it in a mixture of asian and western
      scripts, and each of these can be a different font and size than the
      other, so we make a guess based upon the first character of the text,
      defaulting to asian.

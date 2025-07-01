@@ -452,7 +452,7 @@ ScSheetLinkObj* ScSheetLinksObj::GetObjectByName_Impl(const rtl::OUString& aName
 		for (SCTAB nTab=0; nTab<nTabCount; nTab++)
 			if (pDoc->IsLinked(nTab))
 			{
-				//!	case-insensitiv ???
+				//!	case-insensitive ???
 				String aLinkDoc = pDoc->GetLinkDoc( nTab );
 				if ( aLinkDoc == aNameStr )
 					return new ScSheetLinkObj( pDocShell, aNameStr );
@@ -549,7 +549,7 @@ sal_Bool SAL_CALL ScSheetLinksObj::hasByName( const rtl::OUString& aName )
 		for (SCTAB nTab=0; nTab<nTabCount; nTab++)
 			if (pDoc->IsLinked(nTab))
 			{
-				//!	case-insensitiv ???
+				//!	case-insensitive ???
 				String aLinkDoc(pDoc->GetLinkDoc( nTab ));
 				if ( aLinkDoc == aNameStr )
 					return sal_True;

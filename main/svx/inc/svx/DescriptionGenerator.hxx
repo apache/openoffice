@@ -136,7 +136,7 @@ public:
     */
     void AppendString (const ::rtl::OUString& sString);
 
-    /** This method adds for debuging and development the list of all known
+    /** This method adds for debugging and development the list of all known
         properties to the description.   Don't use in production code.
     */
     void AddPropertyNames (void);

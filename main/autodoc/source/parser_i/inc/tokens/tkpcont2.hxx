@@ -50,7 +50,7 @@ class TkpContext
 		It leaves io_rText at the first char of the following Token or
 		the following Context.
 
-		This function returns, when a context has parsed some characterss
+		This function returns, when a context has parsed some characters
 		and completed a token OR left the context.
 		If the token is to be ignored, PassNewToken() returns false
 		and cuts the token from io_rText.

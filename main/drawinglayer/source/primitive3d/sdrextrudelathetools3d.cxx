@@ -37,7 +37,7 @@
 #include <drawinglayer/geometry/viewinformation3d.hxx>
 #include <numeric>
 
-// decompositon helpers for extrude/lathe (rotation) objects
+// decomposition helpers for extrude/lathe (rotation) objects
 
 namespace
 {

@@ -1317,7 +1317,7 @@ CustomAnimationEffectTabPage::CustomAnimationEffectTabPage( Window* pParent, con
 		mpFTProperty1->Enable( mpLBProperty1->IsEnabled() );
 
 		//
-		// accelerate & deccelerate
+		// accelerate & decelerate
 		//
 
 		if( pSet->getPropertyState( nHandleAccelerate ) == STLPropertyState_DIRECT )

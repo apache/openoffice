@@ -445,7 +445,7 @@ sal_Bool SAL_CALL Submission::convertFastPropertyValue(
 {
     if ( nHandle == HANDLE_IncludeNamespacePrefixes )
     {
-        // for convinience reasons (????), we accept a string which contains
+        // for convenience reasons (????), we accept a string which contains
         // a comma-separated list of namespace prefixes
         ::rtl::OUString sTokenList;
         if ( rValue >>= sTokenList )

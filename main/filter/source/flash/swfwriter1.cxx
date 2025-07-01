@@ -623,7 +623,7 @@ void Writer::Impl_writeText( const Point& rPos, const String& rText, const sal_I
 
 */
 
-#if	0 // makes the calculated bound rect visible for debuging
+#if	0 // makes the calculated bound rect visible for debugging
 {
 		Polygon aTmpPoly( aPoly );
 		sal_uInt16 nID = FlashGeometryExporter::writePolygonShape( aMovieStream, aTmpPoly, false, Color(COL_MAGENTA), Color(COL_MAGENTA), mpClipPolyPolygon  );

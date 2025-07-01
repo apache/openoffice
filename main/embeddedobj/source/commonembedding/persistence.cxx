@@ -543,7 +543,7 @@ uno::Reference< util::XCloseable > OCommonEmbeddedObject::LoadDocumentFromStorag
 		{
 		}
 
-		OSL_ENSURE( aTempFileURL.getLength(), "Coudn't retrieve temporary file URL!\n" );
+		OSL_ENSURE( aTempFileURL.getLength(), "Couldn't retrieve temporary file URL!\n" );
 
         aLoadArgs.put( "URL", aTempFileURL );
         aLoadArgs.put( "InputStream", xTempInpStream );
@@ -897,7 +897,7 @@ uno::Reference< util::XCloseable > OCommonEmbeddedObject::CreateTempDocFromLink_
 		{
 		}
 
-		OSL_ENSURE( aTempFileURL.getLength(), "Coudn't retrieve temporary file URL!\n" );
+		OSL_ENSURE( aTempFileURL.getLength(), "Couldn't retrieve temporary file URL!\n" );
 
 		aTempMediaDescr[0].Name = ::rtl::OUString::createFromAscii( "URL" );
 		aTempMediaDescr[0].Value <<= aTempFileURL;

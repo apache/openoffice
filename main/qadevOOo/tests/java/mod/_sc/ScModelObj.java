@@ -123,7 +123,7 @@ public class ScModelObj extends TestCase {
                                                                  PrintWriter log) {
         // creation of the testobject here
         // first we write what we are intend to do to log file
-        log.println("craeting a test environment");
+        log.println("creating a test environment");
 
         // get a soffice factory object
         SOfficeFactory SOF = SOfficeFactory.getFactory(

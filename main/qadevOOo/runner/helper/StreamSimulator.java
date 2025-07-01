@@ -42,7 +42,7 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
 {
     //_________________________________
     /**
-     * @member  m_sFileName     name of the corrsponding file on disk
+     * @member  m_sFileName     name of the corresponding file on disk
      * @member  m_xInStream     the internal input stream for reading
      * @member  m_xOutStream    the internal input stream for writing
      * @member  m_xSeek         points at runtime to m_xInStream or m_xOutStream and make it seekable

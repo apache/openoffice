@@ -439,7 +439,7 @@ public:
 	sal_Bool		SetStreamSize( sal_Size nSize );
 
 				/// Read in the stream to a zero character and put all
-				/// read chracters in the Bytestring. The String interface
+				/// read characters in the Bytestring. The String interface
 				/// convert the BytString with the given encoding to a String
 	sal_Bool		ReadCString( ByteString& rStr );
 	sal_Bool 		ReadCString( String& rStr, rtl_TextEncoding eToEncode );

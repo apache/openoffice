@@ -243,7 +243,7 @@ namespace connectivity
 		void setParseTree(OSQLParseNode * pNewParseTree);
 
 		// Is the parse in a special mode?
-		// Predicate chack is used to check a condition for a field
+		// Predicate check is used to check a condition for a field
 		sal_Bool inPredicateCheck() const {return m_xField.is();}
 		const ::rtl::OUString& getFieldName() const {return m_sFieldName;}
 

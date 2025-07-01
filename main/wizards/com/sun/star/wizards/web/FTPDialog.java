@@ -627,7 +627,7 @@ public class FTPDialog extends UnoDialog2 implements UIConsts, WWHID
     }
 
     /**
-     * used for debuging.
+     * used for debugging.
      * @param args
      */
     public static void main(String args[])

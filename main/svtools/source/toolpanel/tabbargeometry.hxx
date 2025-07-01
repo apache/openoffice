@@ -41,7 +41,7 @@ namespace svt
 	//==================================================================================================================
     /** a rectangle which automatically translates between unrotated and rotated geometry.
 
-        It can be operated as if it were an unrotated area, but is able to provide corrdinates of rotated objects,
+        It can be operated as if it were an unrotated area, but is able to provide coordinates of rotated objects,
         relative to its playground.
     */
 	class NormalizedArea

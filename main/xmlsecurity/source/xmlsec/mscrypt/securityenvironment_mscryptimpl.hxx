@@ -73,7 +73,7 @@ class SecurityEnvironment_MSCryptImpl : public ::cppu::WeakImplHelper4<
 		//Key store
 		HCERTSTORE							m_hKeyStore ;
 
-		//Certiticate store
+		//Certificate store
 		HCERTSTORE							m_hCertStore ;
 		
 		// i120675, save the store handles
