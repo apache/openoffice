@@ -5530,7 +5530,7 @@ void SAL_CALL ScCellRangeObj::autoFormat( const rtl::OUString& aName )
 		for (nIndex=0; nIndex<nCount; nIndex++)
 		{
 			(*pAutoFormat)[nIndex]->GetName(aCompare);
-			if ( aCompare == aNameString )						//!	Case-insensitiv ???
+			if ( aCompare == aNameString )						//!	Case-insensitive ???
 				break;
 		}
 		if (nIndex<nCount)

@@ -146,7 +146,7 @@ public class DataInputStream extends TestCase {
         byte[] byteData = new byte[] {
             1, 2, 3, 4, 5, 6, 7, 8 } ;
 
-        // createing a connectable object for XConnectable interface
+        // creating a connectable object for XConnectable interface
         XInterface xConnect = null;
         try {
             xConnect = (XInterface)xMSF.createInstance(

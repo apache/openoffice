@@ -245,7 +245,7 @@ namespace sfx2 {
 typedef SwPageDesc* SwPageDescPtr;
 SV_DECL_PTRARR_DEL( SwPageDescs, SwPageDescPtr, 4, 4 )
 
-// forward declartion
+// forward declaration
 void SetAllScriptItem( SfxItemSet& rSet, const SfxPoolItem& rItem );
 
 // global function to start grammar checking in the document

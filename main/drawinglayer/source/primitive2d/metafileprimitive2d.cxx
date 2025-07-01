@@ -2123,7 +2123,7 @@ namespace
 
 						if(aGDIMetaFile.GetActionCount())
 						{
-							// cerate sub-content
+							// create sub-content
 							drawinglayer::primitive2d::Primitive2DSequence xSubContent;
 							{
                                 rTargetHolders.Push();

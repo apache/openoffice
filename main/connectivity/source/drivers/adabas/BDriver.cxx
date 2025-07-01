@@ -1768,7 +1768,7 @@ void ODriver::installSystemTables(	const TDatabaseStruct& _aInfo)
 // -----------------------------------------------------------------------------
 void ODriver::convertOldVersion(const ::rtl::OUString& sDBName,const TDatabaseStruct& _rDbInfo)
 {
-	// first we have to check if this databse is a old version and we have to update the system tables
+	// first we have to check if this database is a old version and we have to update the system tables
 	if ( !isVersion(sDBName,CURRENT_DB_VERSION) && isKernelVersion(CURRENT_DB_VERSION) )
 	{
 		if (	!_rDbInfo.sControlUser.getLength() 

@@ -85,7 +85,7 @@ class ImplEncirclementOverlay
 	// The OverlayObjects
 	::sdr::overlay::OverlayObjectList				maObjects;
 
-	// The remembered second position in logical coodinates
+	// The remembered second position in logical coordinates
 	basegfx::B2DPoint								maSecondPosition;
 
 public:

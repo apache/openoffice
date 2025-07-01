@@ -42,7 +42,7 @@ public class _XEnumerationAccess extends MultiMethodTest{
     * Has <b> OK </b> status if the method returns not null value. <p>
     */
     public void _createEnumeration(){
-        log.println( "createing Enumeration" );
+        log.println( "creating Enumeration" );
         XEnumeration oEnum = oObj.createEnumeration();
         tRes.tested( "createEnumeration()", oEnum != null );
         return;

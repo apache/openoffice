@@ -307,7 +307,7 @@ public:
 
 	void			SetTopEntry( sal_uInt16 nTop );
 	sal_uInt16			GetTopEntry() const 			{ return mnTop; }
-	// ShowProminentEntry will set the entry correspoding to nEntryPos
+	// ShowProminentEntry will set the entry corresponding to nEntryPos
 	// either at top or in the middle depending on the chosen style
 	void            ShowProminentEntry( sal_uInt16 nEntryPos );
 	void            SetProminentEntryType( ProminentEntry eType ) { meProminentType = eType; }

@@ -206,7 +206,7 @@ bool OutputDevice::ImplSelectClipRegion( const Region& rRegion, SalGraphics* pGr
 	}
 	
 	bool bClipRegion = pGraphics->SetClipRegion( rRegion, this );
-	OSL_ENSURE( bClipRegion, "OutputDevice::ImplSelectClipRegion() - can't cerate region" );
+	OSL_ENSURE( bClipRegion, "OutputDevice::ImplSelectClipRegion() - can't create region" );
 	return bClipRegion;
 }
 

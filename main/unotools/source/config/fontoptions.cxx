@@ -255,7 +255,7 @@ void SvtFontOptions_Impl::Notify( const Sequence< OUString >& seqPropertyNames )
 	// Safe impossible cases.
 	// We need values from ALL notified configuration keys.
 	DBG_ASSERT( !(seqPropertyNames.getLength()!=seqValues.getLength()), "SvtFontOptions_Impl::Notify()\nI miss some values of configuration keys!\n" );
-	// Step over list of property names and get right value from coreesponding value list to set it on internal members!
+	// Step over list of property names and get right value from corresponding value list to set it on internal members!
 	sal_Int32 nCount = seqPropertyNames.getLength();
 	for( sal_Int32 nProperty=0; nProperty<nCount; ++nProperty )
 	{

@@ -2415,7 +2415,7 @@ sal_Bool SwXTextField::supportsService(const OUString& rServiceName) throw( uno:
 {
 	OUString sServiceName = SwXServiceProvider::GetProviderName(m_nServiceId);
 
-	// case-corected version of service-name (see #i67811)
+	// case-corrected version of service-name (see #i67811)
 	// (need to supply both because of compatibility to older versions)
 	OUString sServiceNameCC(  OldNameToNewName_Impl( sServiceName ) );
 
@@ -2428,7 +2428,7 @@ uno::Sequence< OUString > SwXTextField::getSupportedServiceNames(void) throw( un
 {
 	OUString sServiceName = SwXServiceProvider::GetProviderName(m_nServiceId);
 
-	// case-corected version of service-name (see #i67811)
+	// case-corrected version of service-name (see #i67811)
 	// (need to supply both because of compatibility to older versions)
 	OUString sServiceNameCC(  OldNameToNewName_Impl( sServiceName ) );
 	sal_Int32 nLen = sServiceName == sServiceNameCC ? 2 : 3;

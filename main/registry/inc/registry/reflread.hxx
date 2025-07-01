@@ -118,7 +118,7 @@ public:
 							  sal_uInt32 bufferLen, 
 							  sal_Bool copyData);
 
-	/// Copy constructcor
+	/// Copy constructor
 	inline RegistryTypeReader(const RegistryTypeReader& toCopy);
 
 	/// Destructor. The Destructor frees the data block if the copyData flag was TRUE.

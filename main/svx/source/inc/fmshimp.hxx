@@ -82,7 +82,7 @@ SV_DECL_PTRARR(SdrObjArray, SdrObject*, 32, 16)
 //	SV_DECL_OBJARR(FmFormArray, ::com::sun::star::uno::Reference< ::com::sun::star::form::XForm>, 32, 16);
 DECLARE_STL_VECTOR( ::com::sun::star::uno::Reference< ::com::sun::star::form::XForm > ,FmFormArray);
 
-// catch databse exceptions if occur
+// catch database exceptions if occur
 #define DO_SAFE(statement) try { statement; } catch( const Exception& ) { DBG_ERROR("unhandled exception (I tried to move a cursor (or something like that).)"); }
 
 #define GA_DISABLE_SYNC		1

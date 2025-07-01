@@ -750,7 +750,7 @@ sub minicalc_enter_cell
   {
     if ($global_debug)
     {
-      &print_debug ("  Typing carrage return to go down\n");
+      &print_debug ("  Typing carriage return to go down\n");
     }
     enter_string("\n", 1);
   }
@@ -942,7 +942,7 @@ sub enter_string
      }
   }
 
-  # Replace "\n" with real carrage returns.
+  # Replace "\n" with real carriage returns.
   #
   my $string_val = $in_string;
   $string_val =~ s#\\n#\n#g;

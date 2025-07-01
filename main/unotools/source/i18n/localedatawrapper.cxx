@@ -488,7 +488,7 @@ void LocaleDataWrapper::invalidateData()
                 // and default for Language found.
 				if ( areChecksEnabled()
 						&& !aDebugLocale.EqualsAscii( "ar_SD" )	// Sudan/ar
-						&& !aDebugLocale.EqualsAscii( "en_CB" )	// Carribean is not a country
+						&& !aDebugLocale.EqualsAscii( "en_CB" )	// Caribbean is not a country
 //						&& !aDebugLocale.EqualsAscii( "en_BG" )	// ?!? Bulgaria/en
 //						&& !aDebugLocale.EqualsAscii( "es_BR" )	// ?!? Brazil/es
 					)

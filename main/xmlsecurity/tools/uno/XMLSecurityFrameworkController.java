@@ -40,7 +40,7 @@ import com.sun.star.xml.crypto.sax.*;
 import com.sun.star.xml.wrapper.*;
 
 /*
- * the XMLSecurityFrameworkController class is used to controll the xml security framework.
+ * the XMLSecurityFrameworkController class is used to control the xml security framework.
  */
 public class XMLSecurityFrameworkController 
 	implements XDocumentHandler, XSignatureCreationResultListener, XSignatureVerifyResultListener,

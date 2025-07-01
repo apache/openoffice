@@ -134,7 +134,7 @@ public class XMLStylesExporter extends TestCase {
             throw new StatusException("Can't create component.", e) ;
         }
 
-        // Cheching Head Tag existence and that property has changed
+        // Checking Head Tag existence and that property has changed
         filter.addTag(new XMLTools.Tag ("office:document-styles"));
         filter.addTag(new XMLTools.Tag ("text:footnotes-configuration",
             "style:num-prefix","New Property")) ;
