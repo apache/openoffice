@@ -34,7 +34,7 @@ namespace objectpositioning
             const bool mbFollowTextFlow;
 
         public:
-            /** construtor
+            /** constructor
 
                 OD 05.11.2003
 

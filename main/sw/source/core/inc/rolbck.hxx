@@ -146,7 +146,7 @@ public:
 
 class SwHistorySetTxtFld : public SwHistoryHint
 {
-    //!! beware of the order for the declation of the auto_ptrs.
+    //!! beware of the order for the declaration of the auto_ptrs.
     //!! If they get destroyed in the wrong order sw may crash (namely mail-merge as well)
     ::std::auto_ptr<SwFieldType> m_pFldType;
     const ::std::auto_ptr<SwFmtFld> m_pFld;

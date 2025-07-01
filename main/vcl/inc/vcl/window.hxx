@@ -875,7 +875,7 @@ public:
     Point               OutputToAbsoluteScreenPixel( const Point& rPos ) const;
     Point               AbsoluteScreenToOutputPixel( const Point& rPos ) const;
     Rectangle           GetDesktopRectPixel() const;
-    //  window extents including border and decoratrion
+    //  window extents including border and decoration
     Rectangle           GetWindowExtentsRelative( Window *pRelativeWindow ) const;
     // window extents of the client window, coordinates to be used in SetPosPixel
     Rectangle           GetClientWindowExtentsRelative( Window *pRelativeWindow ) const;

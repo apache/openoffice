@@ -141,7 +141,7 @@ ScriptElement::ScriptElement( ScriptData & sII ) :
        
        if( sm_it != sm_itend )
        {
-           // was there a purpose for contstructing this
+           // was there a purpose for constructing this
            // XMLElement* subxel = new XMLElement( OUSTR( "file" ) );
            xel->addAttribute( OUSTR( "name" ), sm_it->first );
 

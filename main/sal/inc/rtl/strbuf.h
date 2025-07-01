@@ -79,7 +79,7 @@ sal_Int32 SAL_CALL rtl_stringbuffer_newFromStringBuffer( rtl_String ** newStr,
 	If the <code>minimumCapacity</code> argument is nonpositive, this
 	method takes no action and simply returns.
 
-	@param   capacity		  in: old capicity, out: new capacity.
+	@param   capacity		  in: old capacity, out: new capacity.
 	@param   minimumCapacity   the minimum desired capacity.
  */
 void SAL_CALL rtl_stringbuffer_ensureCapacity(	/*inout*/rtl_String ** This, 

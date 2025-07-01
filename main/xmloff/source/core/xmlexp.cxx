@@ -1535,7 +1535,7 @@ sal_uInt32 SvXMLExport::exportDoc( enum ::xmloff::token::XMLTokenEnum eClass )
 		if( mnExportFlags & EXPORT_SCRIPTS )
 			_ExportScripts();
 
-		// font declerations
+		// font declarations
 		if( mnExportFlags & EXPORT_FONTDECLS )
 			_ExportFontDecls();
 

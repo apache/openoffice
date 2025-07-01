@@ -1286,7 +1286,7 @@ void SAL_CALL rtl_uString_newConcat( rtl_uString ** newStr, rtl_uString * left, 
     the length of str, inclusive.
 
     @param count
-    the number of charcters to remove.  Must not be negative, and the sum of
+    the number of characters to remove.  Must not be negative, and the sum of
     index and count must not exceed the length of str.
 
     @param subStr

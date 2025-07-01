@@ -3033,12 +3033,12 @@ void Desktop::OpenClients()
         }
     }
 
-    // Disable AutoSave feature in case "-norestore" or a similare command line switch is set on the command line.
+    // Disable AutoSave feature in case "-norestore" or a similar command line switch is set on the command line.
     // The reason behind: AutoSave/EmergencySave/AutoRecovery share the same data.
     // But the require that all documents, which are saved as backup should exists inside
     // memory. May be this mechanism will be inconsistent if the configuration exists ...
-    // but no document inside memory corrspond to this data.
-    // Furter it's not acceptable to recover such documents without any UI. It can
+    // but no document inside memory correspond to this data.
+    // Further it's not acceptable to recover such documents without any UI. It can
     // need some time, where the user won't see any results and wait for finishing the office startup ...
     sal_Bool bAllowRecoveryAndSessionManagement = (
                                                     ( !pArgs->IsNoRestore() ) &&

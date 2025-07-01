@@ -64,12 +64,12 @@ cssu::Reference< cssl::XMultiServiceFactory > CreateDemoServiceFactory()
 		xLocalComponentContext = ::cppu::bootstrap_InitialComponentContext( xSimpleRegistry ) ;
 		OSL_ENSURE( xLocalComponentContext.is() ,
 			"serviceManager - "
-			"Cannot create intial component context" ) ;
+			"Cannot create initial component context" ) ;
 
 		xLocalServiceManager = xLocalComponentContext->getServiceManager() ;
 		OSL_ENSURE( xLocalServiceManager.is() ,
 			"serviceManager - "
-			"Cannot create intial service manager" ) ;
+			"Cannot create initial service manager" ) ;
 
 		xMSF = cssu::Reference< cssl::XMultiServiceFactory >(xLocalServiceManager, cssu::UNO_QUERY) ;
 		

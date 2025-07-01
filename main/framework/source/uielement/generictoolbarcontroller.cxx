@@ -355,7 +355,7 @@ class Toolbarmenu : public PopupMenu
 
 Toolbarmenu::Toolbarmenu()
 {
-    OSL_TRACE("**** contstructing Toolbarmenu 0x%x", this );
+    OSL_TRACE("**** constructing Toolbarmenu 0x%x", this );
 }
 
 Toolbarmenu::~Toolbarmenu()

@@ -956,7 +956,7 @@ void ToolBarManager::Implementation::Update (
                 mrBase.GetViewShellManager());
 
             // 3) Unlock the ViewShellManager::UpdateLock.  This updates the
-            // shell stack.  We have to be carfull here.  The deletion of
+            // shell stack.  We have to be careful here.  The deletion of
             // the lock may end in a synchronous call to LockUpdate(). When
             // at this time the lock has been deleted but the auto_ptr has
             // not yet been reset then the lock is deleted a second time.

@@ -32,13 +32,13 @@ import java.util.ArrayList;
 public interface CwsDataExchange {
     
     /**
-     * Retunrs all module names which are added to the specified childworkspace
+     * Returns all module names which are added to the specified childworkspace
      * @return a String array of all added modules
      */
     public ArrayList getModules();
     
     /**
-     * Set the test status of cws related UnoAPI tests to the EIS dabase
+     * Set the test status of cws related UnoAPI tests to the EIS database
      * @param status the status of the UnoAPI test
      */
     public void setUnoApiCwsStatus(boolean status);

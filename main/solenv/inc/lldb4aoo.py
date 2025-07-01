@@ -109,13 +109,13 @@ def get_pimpl_info( valobj, dict):
 
 
 def getinfo_for_rtl_String( valobj, dict):
-	return ret_strdata_info( valobj, 'refCount', 'length', 'buffer') 
+	return ret_strdata_info( valobj, 'refCount', 'length', 'buffer')
 
 def getinfo_for_rtl_uString( valobj, dict):
-	return ret_strdata_info( valobj, 'refCount', 'length', 'buffer') 
+	return ret_strdata_info( valobj, 'refCount', 'length', 'buffer')
 
 def getinfo_for__ByteStringData( valobj, dict):
-	return ret_strdata_info( valobj, 'mnRefCount', 'mnLen', 'maStr') 
+	return ret_strdata_info( valobj, 'mnRefCount', 'mnLen', 'maStr')
 
 def getinfo_for__UniStringData( valobj, dict):
-	return ret_strdata_info( valobj, 'mnRefCount', 'mnLen', 'maStr') 
+	return ret_strdata_info( valobj, 'mnRefCount', 'mnLen', 'maStr')

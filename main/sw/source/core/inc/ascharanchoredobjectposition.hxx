@@ -92,7 +92,7 @@ namespace objectpositioning
 
         // *********************************************************************
         public:
-            /** construtor; provided object to be positioned and needed data
+            /** constructor; provided object to be positioned and needed data
                 for calculation of the object position
 
                 OD 28.10.2003 #110978#

@@ -206,7 +206,7 @@ bool OutputDevice::ImplSelectClipRegion( const Region& rRegion, SalGraphics* pGr
 	}
 	
 	bool bClipRegion = pGraphics->SetClipRegion( rRegion, this );
-	OSL_ENSURE( bClipRegion, "OutputDevice::ImplSelectClipRegion() - can't cerate region" );
+	OSL_ENSURE( bClipRegion, "OutputDevice::ImplSelectClipRegion() - can't create region" );
 	return bClipRegion;
 }
 
@@ -522,7 +522,7 @@ sal_Bool OutputDevice::ImplHasMirroredGraphics()
    return ( ImplGetGraphics() && (mpGraphics->GetLayout() & SAL_LAYOUT_BIDI_RTL) );
 }
 
-// note: the coordiantes to be remirrored are in frame coordiantes !
+// note: the coordinates to be remirrored are in frame coordinates !
 
 void    OutputDevice::ImplReMirror( Point &rPoint ) const
 {

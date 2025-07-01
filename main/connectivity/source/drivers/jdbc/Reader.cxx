@@ -66,7 +66,7 @@ void SAL_CALL java_io_Reader::skipBytes( sal_Int32 nBytesToSkip ) throw(::com::s
 sal_Int32 SAL_CALL java_io_Reader::available(  ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
 	jboolean out(sal_False);
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		static const char * cSignature = "()Z";
@@ -90,7 +90,7 @@ sal_Int32 SAL_CALL java_io_Reader::readBytes( ::com::sun::star::uno::Sequence< s
 {
 	OSL_ENSURE(aData.getLength() < nBytesToRead," Sequence is smaller than BytesToRead");
 	jint out(0);
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		jcharArray pCharArray = t.pEnv->NewCharArray(nBytesToRead);

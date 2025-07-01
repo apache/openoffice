@@ -19,7 +19,7 @@
 #  
 #**************************************************************
 
-# Builds the Databse SDBC driver skeleton example of the Developers Guide.
+# Builds the Database SDBC driver skeleton example of the Developers Guide.
 
 PRJ=../../../..
 SETTINGS=$(PRJ)/settings

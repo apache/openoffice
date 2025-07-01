@@ -1316,7 +1316,9 @@ sal_Bool ScModelObj::authorizeLinks( const ::rtl::OUString& rURL ) throw( uno::R
 		SfxMedium* pMedium = pDocShell->GetMedium();
 		SfxFrame* pFrm = pMedium ? pMedium->GetLoadTargetFrame() : 0;
 		sfx2::LinkManager *pLinkMgr = doc->GetLinkManager();
-		if ( pLinkMgr->urlIsSafe( rURL ) ) {
+		if ( pLinkMgr->urlIsVendor( rURL ) ) {
+			return sal_False;
+		} else if ( pLinkMgr->urlIsSafe( rURL ) ) {
 			return sal_True;
 		}
 		Window* pDlgParent = 0;
@@ -3671,7 +3673,7 @@ void ScScenariosObj::Notify( SfxBroadcaster&, const SfxHint& rHint )
 
 sal_Bool ScScenariosObj::GetScenarioIndex_Impl( const rtl::OUString& rName, SCTAB& rIndex )
 {
-	//!	Case-insensitiv ????
+	//!	Case-insensitive ????
 
 	if ( pDocShell )
 	{

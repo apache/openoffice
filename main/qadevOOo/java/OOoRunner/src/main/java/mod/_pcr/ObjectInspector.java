@@ -134,7 +134,7 @@ public class ObjectInspector extends TestCase {
                 xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, xWindowPeer);
                 
             } catch (StatusException e){
-                throw new StatusException("Coud not create test object", e);
+                throw new StatusException("Could not create test object", e);
             }
             
             XInterface oFrame = (XInterface) xMSF.createInstance("com.sun.star.frame.Frame");

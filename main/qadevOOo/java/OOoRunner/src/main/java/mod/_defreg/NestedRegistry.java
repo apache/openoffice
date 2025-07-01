@@ -83,7 +83,7 @@ public class NestedRegistry extends TestCase {
     * Creates a temporary copy of file, which is deleted when VM exits.
     * @param src Source file path.
     * @param dst Destination file path.
-    * @throws java.io.IOException If any problems occur during copiing.
+    * @throws java.io.IOException If any problems occur during copying.
     */
     protected void copyFile(String src, String dst, PrintWriter log)
             throws java.io.IOException {

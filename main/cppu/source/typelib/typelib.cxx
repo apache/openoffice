@@ -525,7 +525,7 @@ bool complete(typelib_TypeDescription ** ppTypeDescr, bool initTables) {
 			::typelib_typedescription_register( &pTD ); // replaces incomplete one
 			OSL_ASSERT( pTD == *ppTypeDescr ); // has to merge into existing one
 
-			// insert into the chache
+			// insert into the cache
 			MutexGuard aGuard( rInit.getMutex() );
 			if( !rInit.pCache )
 				rInit.pCache = new TypeDescriptionList_Impl;
@@ -2231,7 +2231,7 @@ extern "C" void SAL_CALL typelib_typedescription_getByName(
 				// on demand is activated.
 				typelib_typedescription_register( ppRet );
 
-				// insert into the chache
+				// insert into the cache
 				MutexGuard aGuard( rInit.getMutex() );
 				if( !rInit.pCache )
 					rInit.pCache = new TypeDescriptionList_Impl;

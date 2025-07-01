@@ -32,7 +32,7 @@ class SimpleStatus {
     /* Run states. */
 
     /**
-     * The constatnt represents PASSED runtime state.
+     * The constant represents PASSED runtime state.
      */
     public final static int PASSED = 0;
 
@@ -134,7 +134,7 @@ class SimpleStatus {
     }
     
     /**
-     * Get the ressult: passed or failed.
+     * Get the result: passed or failed.
      */
     public String getStateString() {
         if (state)

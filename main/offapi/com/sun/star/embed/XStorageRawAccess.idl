@@ -82,7 +82,7 @@ published interface XStorageRawAccess
 
 		<p>
 		This method returns a stream from the package as it is stored there,
-		without any decompression/decription and etc. This method can be
+		without any decompression/description and etc. This method can be
 		helpful to check file consistency, for example by signing.
 		</p>
 

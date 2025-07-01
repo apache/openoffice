@@ -108,7 +108,7 @@
 #define BMP_DOKROOT_CLOSED	(RC_TP_DOC_START + 16)
 #define RC_TP_DOC_END		(RC_TP_DOC_START + 17)
 
-// Funktion-TabPage:
+// Function-TabPage:
 #define RC_TP_FUNC_START	(RC_TP_DOC_END)
 #define FT_FUNCTYPE			(RC_TP_FUNC_START + 1)
 #define LB_FUNCTYPE			(RC_TP_FUNC_START + 2)

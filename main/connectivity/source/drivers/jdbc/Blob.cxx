@@ -60,7 +60,7 @@ jclass java_sql_Blob::getMyClass() const
 sal_Int64 SAL_CALL java_sql_Blob::length(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
 {
 	jlong out(0);
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		// temporaere Variable initialisieren
@@ -77,7 +77,7 @@ sal_Int64 SAL_CALL java_sql_Blob::length(  ) throw(::com::sun::star::sdbc::SQLEx
 ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL java_sql_Blob::getBytes( sal_Int64 pos, sal_Int32 count ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
 {
 
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	::com::sun::star::uno::Sequence< sal_Int8 > aSeq;
 	{
 		// temporaere Variable initialisieren
@@ -102,7 +102,7 @@ sal_Int64 SAL_CALL java_sql_Blob::length(  ) throw(::com::sun::star::sdbc::SQLEx
 
 ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL java_sql_Blob::getBinaryStream(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
 {
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     static jmethodID mID(NULL);
     jobject out = callObjectMethod(t.pEnv,"getBinaryStream","()Ljava/io/InputStream;", mID);
 	// ACHTUNG: der Aufrufer wird Eigentuemer des zurueckgelieferten Zeigers !!!
@@ -112,7 +112,7 @@ sal_Int64 SAL_CALL java_sql_Blob::length(  ) throw(::com::sun::star::sdbc::SQLEx
 sal_Int64 SAL_CALL java_sql_Blob::position( const ::com::sun::star::uno::Sequence< sal_Int8 >& pattern, sal_Int64 start ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
 {
 	jlong out(0);
-    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Enviroment geloescht worden!");
+    SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
 	
 	{
 		// temporaere Variable initialisieren

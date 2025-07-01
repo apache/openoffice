@@ -624,7 +624,7 @@ void UnfoldInCenterAnimator::HidePane (void)
         Sequence<double>(4),
         rendering::CompositeOperation::SOURCE);
     
-    // Animate the uppder and lower window bitmaps.
+    // Animate the upper and lower window bitmaps.
     Reference<rendering::XSpriteCanvas> xSpriteCanvas (mpWindowManager->GetParentCanvas(), UNO_QUERY);
     ::boost::shared_ptr<MultiAnimation> pMultiAnimation (new MultiAnimation(mbDoAnimation ? 500 : 1));
 
@@ -883,10 +883,10 @@ void MoveInFromBottomAnimator::CreateShowAnimation (
     const geometry::RealPoint2D& rStartLocation,
     const geometry::RealPoint2D& rEndLocation)
 {
-    // Animate the uppder and lower window bitmaps.
+    // Animate the upper and lower window bitmaps.
     ::boost::shared_ptr<MultiAnimation> pMultiAnimation (new MultiAnimation(bAnimate ? 500 : 0));
 
-    // Animate new pane to move in from the buttom.
+    // Animate new pane to move in from the bottom.
     pMultiAnimation->AddAnimation(
         ::boost::bind(
             InterpolatePosition,

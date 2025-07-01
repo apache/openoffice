@@ -112,7 +112,7 @@ CDIBPreview::CDIBPreview(HINSTANCE instance,HWND parent,sal_Bool bShowWindow) :
 
 	bool bSuccess = IsWindow(m_Hwnd);
 
-	OSL_POSTCOND(bSuccess,"Coud not create preview window");
+	OSL_POSTCOND(bSuccess,"Could not create preview window");
 
 	if (!bSuccess)
 	{
