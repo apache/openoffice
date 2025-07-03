@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -52,7 +52,7 @@ UNOTYPES+=  com.sun.star.registry.XImplementationRegistration \
 
 # --- Application excomp ------------------------------------------------
 APP1TARGET= $(TARGET)
-APP1OBJS=   $(OBJ)$/excomp.obj 
+APP1OBJS=   $(OBJ)$/excomp.obj
 
 APP1STDLIBS= \
 		$(CPPULIB) 	\
@@ -74,7 +74,7 @@ SHL1STDLIBS= \
 		$(CPPULIB)		\
 		$(CPPUHELPERLIB)	\
 		$(SALHELPERLIB)		\
-		$(SALLIB)	
+		$(SALLIB)
 
 SHL1DEPN=
 SHL1LIBS=
@@ -98,7 +98,7 @@ SHL2STDLIBS= \
 SHL2DEPN=
 SHL2LIBS=
 SHL2OBJS=  	$(SLO)$/excomp2.obj	\
-	      	$(SLO)$/$(COMP2TYPELIST)_description.obj	
+	      	$(SLO)$/$(COMP2TYPELIST)_description.obj
 SHL2IMPLIB=	i$(TARGET2)
 SHL2DEF=	$(MISC)$/$(SHL2TARGET).def
 
@@ -111,7 +111,7 @@ ALLIDLFILES:= example$/XTest.idl example$/ExampleComponent1.idl example$/Example
 
 .IF "$(depend)" == ""
 ALL : 		$(BIN)$/excomp.rdb	\
-		ALLTAR 
+		ALLTAR
 .ELSE
 ALL: 		ALLDEP
 .ENDIF

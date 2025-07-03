@@ -1,5 +1,5 @@
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,23 +7,23 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 CC_PATH*="$(CC_PATH)"
 
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP1DEF = $(MISC)/$(APP1TARGET).def
 .ENDIF
 
@@ -87,7 +87,7 @@ APP1PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP1PRODUCTNAME)\"
 $(MISC)/$(APP1TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP1LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP1LIBS)"!="" 
+.ENDIF          #"$(APP1LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP1TARGETN:b)_linkinc.ls
@@ -247,7 +247,7 @@ $(APP1TARGETN): $(APP1OBJS) $(APP1LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP1PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP1LINKRES:b).rc
 .ENDIF			# "$(APP1LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP1TARGET) WINDOWAPI > $(MISC)/$(APP1TARGET).def
 .ENDIF
 
@@ -265,7 +265,7 @@ $(APP1TARGETN): $(APP1OBJS) $(APP1LIBS) \
 		$(APP1OBJS) \
 		$(APP1LIBS) \
 		$(APP1STDLIBS) \
-		$(APP1STDLIB) $(STDLIB1) 
+		$(APP1STDLIB) $(STDLIB1)
 
 
 .IF "$(APP1TARGET)" == "loader"
@@ -291,7 +291,7 @@ $(APP1TARGET)_run: $(APP1TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP2DEF = $(MISC)/$(APP2TARGET).def
 .ENDIF
 
@@ -355,7 +355,7 @@ APP2PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP2PRODUCTNAME)\"
 $(MISC)/$(APP2TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP2LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP2LIBS)"!="" 
+.ENDIF          #"$(APP2LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP2TARGETN:b)_linkinc.ls
@@ -515,7 +515,7 @@ $(APP2TARGETN): $(APP2OBJS) $(APP2LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP2PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP2LINKRES:b).rc
 .ENDIF			# "$(APP2LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP2TARGET) WINDOWAPI > $(MISC)/$(APP2TARGET).def
 .ENDIF
 
@@ -533,7 +533,7 @@ $(APP2TARGETN): $(APP2OBJS) $(APP2LIBS) \
 		$(APP2OBJS) \
 		$(APP2LIBS) \
 		$(APP2STDLIBS) \
-		$(APP2STDLIB) $(STDLIB2) 
+		$(APP2STDLIB) $(STDLIB2)
 
 
 .IF "$(APP2TARGET)" == "loader"
@@ -559,7 +559,7 @@ $(APP2TARGET)_run: $(APP2TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP3DEF = $(MISC)/$(APP3TARGET).def
 .ENDIF
 
@@ -623,7 +623,7 @@ APP3PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP3PRODUCTNAME)\"
 $(MISC)/$(APP3TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP3LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP3LIBS)"!="" 
+.ENDIF          #"$(APP3LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP3TARGETN:b)_linkinc.ls
@@ -783,7 +783,7 @@ $(APP3TARGETN): $(APP3OBJS) $(APP3LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP3PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP3LINKRES:b).rc
 .ENDIF			# "$(APP3LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP3TARGET) WINDOWAPI > $(MISC)/$(APP3TARGET).def
 .ENDIF
 
@@ -801,7 +801,7 @@ $(APP3TARGETN): $(APP3OBJS) $(APP3LIBS) \
 		$(APP3OBJS) \
 		$(APP3LIBS) \
 		$(APP3STDLIBS) \
-		$(APP3STDLIB) $(STDLIB3) 
+		$(APP3STDLIB) $(STDLIB3)
 
 
 .IF "$(APP3TARGET)" == "loader"
@@ -827,7 +827,7 @@ $(APP3TARGET)_run: $(APP3TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP4DEF = $(MISC)/$(APP4TARGET).def
 .ENDIF
 
@@ -891,7 +891,7 @@ APP4PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP4PRODUCTNAME)\"
 $(MISC)/$(APP4TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP4LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP4LIBS)"!="" 
+.ENDIF          #"$(APP4LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP4TARGETN:b)_linkinc.ls
@@ -1051,7 +1051,7 @@ $(APP4TARGETN): $(APP4OBJS) $(APP4LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP4PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP4LINKRES:b).rc
 .ENDIF			# "$(APP4LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP4TARGET) WINDOWAPI > $(MISC)/$(APP4TARGET).def
 .ENDIF
 
@@ -1069,7 +1069,7 @@ $(APP4TARGETN): $(APP4OBJS) $(APP4LIBS) \
 		$(APP4OBJS) \
 		$(APP4LIBS) \
 		$(APP4STDLIBS) \
-		$(APP4STDLIB) $(STDLIB4) 
+		$(APP4STDLIB) $(STDLIB4)
 
 
 .IF "$(APP4TARGET)" == "loader"
@@ -1095,7 +1095,7 @@ $(APP4TARGET)_run: $(APP4TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP5DEF = $(MISC)/$(APP5TARGET).def
 .ENDIF
 
@@ -1159,7 +1159,7 @@ APP5PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP5PRODUCTNAME)\"
 $(MISC)/$(APP5TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP5LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP5LIBS)"!="" 
+.ENDIF          #"$(APP5LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP5TARGETN:b)_linkinc.ls
@@ -1319,7 +1319,7 @@ $(APP5TARGETN): $(APP5OBJS) $(APP5LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP5PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP5LINKRES:b).rc
 .ENDIF			# "$(APP5LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP5TARGET) WINDOWAPI > $(MISC)/$(APP5TARGET).def
 .ENDIF
 
@@ -1337,7 +1337,7 @@ $(APP5TARGETN): $(APP5OBJS) $(APP5LIBS) \
 		$(APP5OBJS) \
 		$(APP5LIBS) \
 		$(APP5STDLIBS) \
-		$(APP5STDLIB) $(STDLIB5) 
+		$(APP5STDLIB) $(STDLIB5)
 
 
 .IF "$(APP5TARGET)" == "loader"
@@ -1363,7 +1363,7 @@ $(APP5TARGET)_run: $(APP5TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP6DEF = $(MISC)/$(APP6TARGET).def
 .ENDIF
 
@@ -1427,7 +1427,7 @@ APP6PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP6PRODUCTNAME)\"
 $(MISC)/$(APP6TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP6LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP6LIBS)"!="" 
+.ENDIF          #"$(APP6LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP6TARGETN:b)_linkinc.ls
@@ -1587,7 +1587,7 @@ $(APP6TARGETN): $(APP6OBJS) $(APP6LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP6PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP6LINKRES:b).rc
 .ENDIF			# "$(APP6LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP6TARGET) WINDOWAPI > $(MISC)/$(APP6TARGET).def
 .ENDIF
 
@@ -1605,7 +1605,7 @@ $(APP6TARGETN): $(APP6OBJS) $(APP6LIBS) \
 		$(APP6OBJS) \
 		$(APP6LIBS) \
 		$(APP6STDLIBS) \
-		$(APP6STDLIB) $(STDLIB6) 
+		$(APP6STDLIB) $(STDLIB6)
 
 
 .IF "$(APP6TARGET)" == "loader"
@@ -1631,7 +1631,7 @@ $(APP6TARGET)_run: $(APP6TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP7DEF = $(MISC)/$(APP7TARGET).def
 .ENDIF
 
@@ -1695,7 +1695,7 @@ APP7PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP7PRODUCTNAME)\"
 $(MISC)/$(APP7TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP7LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP7LIBS)"!="" 
+.ENDIF          #"$(APP7LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP7TARGETN:b)_linkinc.ls
@@ -1855,7 +1855,7 @@ $(APP7TARGETN): $(APP7OBJS) $(APP7LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP7PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP7LINKRES:b).rc
 .ENDIF			# "$(APP7LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP7TARGET) WINDOWAPI > $(MISC)/$(APP7TARGET).def
 .ENDIF
 
@@ -1873,7 +1873,7 @@ $(APP7TARGETN): $(APP7OBJS) $(APP7LIBS) \
 		$(APP7OBJS) \
 		$(APP7LIBS) \
 		$(APP7STDLIBS) \
-		$(APP7STDLIB) $(STDLIB7) 
+		$(APP7STDLIB) $(STDLIB7)
 
 
 .IF "$(APP7TARGET)" == "loader"
@@ -1899,7 +1899,7 @@ $(APP7TARGET)_run: $(APP7TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP8DEF = $(MISC)/$(APP8TARGET).def
 .ENDIF
 
@@ -1963,7 +1963,7 @@ APP8PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP8PRODUCTNAME)\"
 $(MISC)/$(APP8TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP8LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP8LIBS)"!="" 
+.ENDIF          #"$(APP8LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP8TARGETN:b)_linkinc.ls
@@ -2123,7 +2123,7 @@ $(APP8TARGETN): $(APP8OBJS) $(APP8LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP8PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP8LINKRES:b).rc
 .ENDIF			# "$(APP8LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP8TARGET) WINDOWAPI > $(MISC)/$(APP8TARGET).def
 .ENDIF
 
@@ -2141,7 +2141,7 @@ $(APP8TARGETN): $(APP8OBJS) $(APP8LIBS) \
 		$(APP8OBJS) \
 		$(APP8LIBS) \
 		$(APP8STDLIBS) \
-		$(APP8STDLIB) $(STDLIB8) 
+		$(APP8STDLIB) $(STDLIB8)
 
 
 .IF "$(APP8TARGET)" == "loader"
@@ -2167,7 +2167,7 @@ $(APP8TARGET)_run: $(APP8TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP9DEF = $(MISC)/$(APP9TARGET).def
 .ENDIF
 
@@ -2231,7 +2231,7 @@ APP9PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP9PRODUCTNAME)\"
 $(MISC)/$(APP9TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP9LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP9LIBS)"!="" 
+.ENDIF          #"$(APP9LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP9TARGETN:b)_linkinc.ls
@@ -2391,7 +2391,7 @@ $(APP9TARGETN): $(APP9OBJS) $(APP9LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP9PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP9LINKRES:b).rc
 .ENDIF			# "$(APP9LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP9TARGET) WINDOWAPI > $(MISC)/$(APP9TARGET).def
 .ENDIF
 
@@ -2409,7 +2409,7 @@ $(APP9TARGETN): $(APP9OBJS) $(APP9LIBS) \
 		$(APP9OBJS) \
 		$(APP9LIBS) \
 		$(APP9STDLIBS) \
-		$(APP9STDLIB) $(STDLIB9) 
+		$(APP9STDLIB) $(STDLIB9)
 
 
 .IF "$(APP9TARGET)" == "loader"
@@ -2435,7 +2435,7 @@ $(APP9TARGET)_run: $(APP9TARGETN)
 # Instruction for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP10DEF = $(MISC)/$(APP10TARGET).def
 .ENDIF
 
@@ -2499,7 +2499,7 @@ APP10PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP10PRODUCTNAME)\"
 $(MISC)/$(APP10TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP10LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP10LIBS)"!="" 
+.ENDIF          #"$(APP10LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP10TARGETN:b)_linkinc.ls
@@ -2659,7 +2659,7 @@ $(APP10TARGETN): $(APP10OBJS) $(APP10LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP10PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP10LINKRES:b).rc
 .ENDIF			# "$(APP10LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP10TARGET) WINDOWAPI > $(MISC)/$(APP10TARGET).def
 .ENDIF
 
@@ -2677,7 +2677,7 @@ $(APP10TARGETN): $(APP10OBJS) $(APP10LIBS) \
 		$(APP10OBJS) \
 		$(APP10LIBS) \
 		$(APP10STDLIBS) \
-		$(APP10STDLIB) $(STDLIB10) 
+		$(APP10STDLIB) $(STDLIB10)
 
 
 .IF "$(APP10TARGET)" == "loader"

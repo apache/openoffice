@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -49,8 +49,8 @@ TARFILE_MD5=1f24ab1d39f4a51faf22244c94a6203f
 #xmlsec1-nssdisablecallbacks.patch: Disable use of smime3 so don't need to package it
 #xmlsec1-customkeymanage.patch: Could we do this alternatively outside xmlsec
 #xmlsec1-nssmangleciphers.patch: Dubious, do we still need this ?
-#xmlsec1-noverify.patch: As per readme.txt. 
-#xmlsec1-mingw32.patch: Mingw32 support. 
+#xmlsec1-noverify.patch: As per readme.txt.
+#xmlsec1-mingw32.patch: Mingw32 support.
 #xmlsec1-mingw-customkeymanage-addmscrypto.patch builds the custom keymanager on mingw
 PATCH_FILES=\
    xmlsec1-configure.patch \
@@ -124,7 +124,7 @@ xmlsec_CFLAGS+=-m64
 .ENDIF
 
 .IF "$(SYSBASE)"!=""
-xmlsec_CFLAGS+=-I$(SYSBASE)$/usr$/include 
+xmlsec_CFLAGS+=-I$(SYSBASE)$/usr$/include
 .IF "$(COMNAME)"=="sunpro5"
 xmlsec_CFLAGS+=$(C_RESTRICTIONFLAGS)
 .ENDIF			# "$(COMNAME)"=="sunpro5"
@@ -168,7 +168,7 @@ BUILD_DIR=$(CONFIGURE_DIR)
 .ENDIF
 
 
-OUTDIR2INC=include$/xmlsec 
+OUTDIR2INC=include$/xmlsec
 
 .IF "$(OS)"=="WNT"
 .IF "$(COM)"=="GCC"

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -44,20 +44,20 @@ MENUFILES=$(PKGDIR)$/{$(PRODUCTLIST)}4.2-$(TARGET)-menus-$(PKGVERSION)-noarch-$(
 
 .IF "$(OS)" == "LINUX"
 
-ALLTAR : $(MENUFILES) 
+ALLTAR : $(MENUFILES)
 
 $(MISC)/$(TARGET)/usr/share/applications/ :
 	@$(MKDIRHIER) $(@)
-    
+
 # --- slackware-specific stuff ------------------------------------
 # symlinks shall not be included in the tarball, but created with the doinst-script
 
 # FIXME: removal of *-extension.* only to create identical packages to OOF680
-%/usr/share/applications : 
+%/usr/share/applications :
 	@$(MKDIRHIER) $@
 	/bin/sh -c "cd $(COMMONMISC)$/$(*:b:s/-/ /:1:s/4.2//); DESTDIR=$(shell @cd $*; pwd) GNOMEDIR="" ICON_PREFIX=$(ICONPREFIX.$(*:b:s/-/ /:1:s/4.2//)) KDEMAINDIR=/opt/kde .$/create_tree.sh"
-	$(RM) $*$/opt$/kde$/share$/icons$/*$/*$/*$/*-extension.png	
-	$(RM) $*$/opt$/kde$/share$/mimelnk$/application$/*-extension.desktop 
+	$(RM) $*$/opt$/kde$/share$/icons$/*$/*$/*$/*-extension.png
+	$(RM) $*$/opt$/kde$/share$/mimelnk$/application$/*-extension.desktop
 	$(RM) $*$/usr$/share$/applications$/*.desktop
 	$(RM) $*$/usr$/bin$/soffice
 
@@ -96,7 +96,7 @@ $(MISC)/$(TARGET)/empty.tar :
 $(MENUFILES) : makefile.mk slack-desc update-script $(COMMONMISC)$/{$(PRODUCTLIST)}$/build.flag
 $(MENUFILES) : $(MISC)/$(TARGET)/empty.tar
 	@-$(MKDIRHIER) $(@:d)
-	-$(RM) $(@:d)$/$(@:b:s/-/ /:1)-$(TARGET)-menus-*.tgz 
+	-$(RM) $(@:d)$/$(@:b:s/-/ /:1)-$(TARGET)-menus-*.tgz
 	-$(RM) -r $(MISC)$/$(@:b)
 	dmake $(MISC)$/$(@:b)$/usr/share/applications $(MISC)$/$(@:b)$/install$/slack-desc $(MISC)$/$(@:b)$/install$/doinst.sh
 	@$(COPY) $(MISC)/$(TARGET)$/empty.tar $@.tmp

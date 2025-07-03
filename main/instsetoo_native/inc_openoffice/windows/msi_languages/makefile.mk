@@ -41,8 +41,8 @@ ULFFILES = \
 	RadioBut.ulf \
 	Nsis.ulf     \
 	SIS.ulf      \
-	UIText.ulf 
-    
+	UIText.ulf
+
 MLFFILES = $(foreach,i,$(ULFFILES) $(MISC)$/$(TARGET)$/$(i:b).mlf)
 UULFFILES = $(MISC)$/$(TARGET)$/Nsis.uulf
 

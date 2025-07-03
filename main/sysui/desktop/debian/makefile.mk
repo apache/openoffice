@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -51,7 +51,7 @@ DEBFILES=$(foreach,i,{$(PRODUCTLIST)} $(PKGDIR)$/$i4.2-$(TARGET)-menus_$(PKGVERS
 
 .IF "$(PKGFORMAT)"!="$(PKGFORMAT:s/deb//)"
 
-ALLTAR : $(DEBFILES) 
+ALLTAR : $(DEBFILES)
 
 
 %/DEBIAN/control : $$(@:f)
@@ -80,7 +80,7 @@ $(DEBFILES) : $(COMMONMISC)$/{$(PRODUCTLIST)}$/build.flag
 $(DEBFILES) : makefile.mk control postinst postrm prerm
 	-$(RM) $(@:d)$(@:f:s/_/ /:1)_*
 	$(RM) -r $(MISC)$/$(@:b)
-	dmake $(MISC)$/$(@:b)$/DEBIAN$/{control postinst postrm prerm} 
+	dmake $(MISC)$/$(@:b)$/DEBIAN$/{control postinst postrm prerm}
 	@chmod -R go-w $(MISC)$/$(@:b)
 	@chmod a+rx $(MISC)$/$(@:b)$/DEBIAN $(MISC)/$(@:b)/DEBIAN/post* $(MISC)/$(@:b)/DEBIAN/pre*
 	@chmod g-s $(MISC)/$(@:b)/DEBIAN
