@@ -19,7 +19,7 @@
 #
 #**************************************************************
 
-# edit to match directory level 
+# edit to match directory level
 PRJ		= ..$/..$/..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = helpcontent2
@@ -130,7 +130,7 @@ XHPFILES = \
    effectoptionstext.xhp \
    effectoptionstiming.xhp \
    slidesorter.xhp \
-   sidebar.xhp 
+   sidebar.xhp
 
 # --- Targets ------------------------------------------------------
 

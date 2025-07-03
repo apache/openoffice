@@ -1,5 +1,5 @@
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 # unroll begin
 
@@ -33,7 +33,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP1TARGET)"!=""
@@ -136,7 +136,7 @@ $(ZIP1TARGETN) : delzip $(ZIP1DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP1TMP).$(ZIP1TARGET){$(subst,$(ZIP1HELPVAR),_ $(@:db))}$(ZIP1EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP1TMP).$(ZIP1TARGET){$(subst,$(ZIP1HELPVAR),_ $(@:db))}$(ZIP1EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP1TMP).$(ZIP1TARGET){$(subst,$(ZIP1HELPVAR),_ $(@:db))}$(ZIP1EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP1TMP).$(ZIP1TARGET){$(subst,$(ZIP1HELPVAR),_ $(@:db))}$(ZIP1EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP1TMP).$(ZIP1TARGET){$(subst,$(ZIP1HELPVAR),_ $(@:db))}$(ZIP1EXT)
 .ELSE			# "$(ZIP1DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP1FLAGS) $@ $(foreach,j,$(ZIP1LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP1TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -162,7 +162,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP2TARGET)"!=""
@@ -265,7 +265,7 @@ $(ZIP2TARGETN) : delzip $(ZIP2DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP2TMP).$(ZIP2TARGET){$(subst,$(ZIP2HELPVAR),_ $(@:db))}$(ZIP2EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP2TMP).$(ZIP2TARGET){$(subst,$(ZIP2HELPVAR),_ $(@:db))}$(ZIP2EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP2TMP).$(ZIP2TARGET){$(subst,$(ZIP2HELPVAR),_ $(@:db))}$(ZIP2EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP2TMP).$(ZIP2TARGET){$(subst,$(ZIP2HELPVAR),_ $(@:db))}$(ZIP2EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP2TMP).$(ZIP2TARGET){$(subst,$(ZIP2HELPVAR),_ $(@:db))}$(ZIP2EXT)
 .ELSE			# "$(ZIP2DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP2FLAGS) $@ $(foreach,j,$(ZIP2LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP2TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -291,7 +291,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP3TARGET)"!=""
@@ -394,7 +394,7 @@ $(ZIP3TARGETN) : delzip $(ZIP3DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP3TMP).$(ZIP3TARGET){$(subst,$(ZIP3HELPVAR),_ $(@:db))}$(ZIP3EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP3TMP).$(ZIP3TARGET){$(subst,$(ZIP3HELPVAR),_ $(@:db))}$(ZIP3EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP3TMP).$(ZIP3TARGET){$(subst,$(ZIP3HELPVAR),_ $(@:db))}$(ZIP3EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP3TMP).$(ZIP3TARGET){$(subst,$(ZIP3HELPVAR),_ $(@:db))}$(ZIP3EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP3TMP).$(ZIP3TARGET){$(subst,$(ZIP3HELPVAR),_ $(@:db))}$(ZIP3EXT)
 .ELSE			# "$(ZIP3DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP3FLAGS) $@ $(foreach,j,$(ZIP3LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP3TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -420,7 +420,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP4TARGET)"!=""
@@ -523,7 +523,7 @@ $(ZIP4TARGETN) : delzip $(ZIP4DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP4TMP).$(ZIP4TARGET){$(subst,$(ZIP4HELPVAR),_ $(@:db))}$(ZIP4EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP4TMP).$(ZIP4TARGET){$(subst,$(ZIP4HELPVAR),_ $(@:db))}$(ZIP4EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP4TMP).$(ZIP4TARGET){$(subst,$(ZIP4HELPVAR),_ $(@:db))}$(ZIP4EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP4TMP).$(ZIP4TARGET){$(subst,$(ZIP4HELPVAR),_ $(@:db))}$(ZIP4EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP4TMP).$(ZIP4TARGET){$(subst,$(ZIP4HELPVAR),_ $(@:db))}$(ZIP4EXT)
 .ELSE			# "$(ZIP4DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP4FLAGS) $@ $(foreach,j,$(ZIP4LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP4TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -549,7 +549,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP5TARGET)"!=""
@@ -652,7 +652,7 @@ $(ZIP5TARGETN) : delzip $(ZIP5DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP5TMP).$(ZIP5TARGET){$(subst,$(ZIP5HELPVAR),_ $(@:db))}$(ZIP5EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP5TMP).$(ZIP5TARGET){$(subst,$(ZIP5HELPVAR),_ $(@:db))}$(ZIP5EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP5TMP).$(ZIP5TARGET){$(subst,$(ZIP5HELPVAR),_ $(@:db))}$(ZIP5EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP5TMP).$(ZIP5TARGET){$(subst,$(ZIP5HELPVAR),_ $(@:db))}$(ZIP5EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP5TMP).$(ZIP5TARGET){$(subst,$(ZIP5HELPVAR),_ $(@:db))}$(ZIP5EXT)
 .ELSE			# "$(ZIP5DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP5FLAGS) $@ $(foreach,j,$(ZIP5LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP5TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -678,7 +678,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP6TARGET)"!=""
@@ -781,7 +781,7 @@ $(ZIP6TARGETN) : delzip $(ZIP6DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP6TMP).$(ZIP6TARGET){$(subst,$(ZIP6HELPVAR),_ $(@:db))}$(ZIP6EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP6TMP).$(ZIP6TARGET){$(subst,$(ZIP6HELPVAR),_ $(@:db))}$(ZIP6EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP6TMP).$(ZIP6TARGET){$(subst,$(ZIP6HELPVAR),_ $(@:db))}$(ZIP6EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP6TMP).$(ZIP6TARGET){$(subst,$(ZIP6HELPVAR),_ $(@:db))}$(ZIP6EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP6TMP).$(ZIP6TARGET){$(subst,$(ZIP6HELPVAR),_ $(@:db))}$(ZIP6EXT)
 .ELSE			# "$(ZIP6DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP6FLAGS) $@ $(foreach,j,$(ZIP6LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP6TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -807,7 +807,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP7TARGET)"!=""
@@ -910,7 +910,7 @@ $(ZIP7TARGETN) : delzip $(ZIP7DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP7TMP).$(ZIP7TARGET){$(subst,$(ZIP7HELPVAR),_ $(@:db))}$(ZIP7EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP7TMP).$(ZIP7TARGET){$(subst,$(ZIP7HELPVAR),_ $(@:db))}$(ZIP7EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP7TMP).$(ZIP7TARGET){$(subst,$(ZIP7HELPVAR),_ $(@:db))}$(ZIP7EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP7TMP).$(ZIP7TARGET){$(subst,$(ZIP7HELPVAR),_ $(@:db))}$(ZIP7EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP7TMP).$(ZIP7TARGET){$(subst,$(ZIP7HELPVAR),_ $(@:db))}$(ZIP7EXT)
 .ELSE			# "$(ZIP7DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP7FLAGS) $@ $(foreach,j,$(ZIP7LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP7TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -936,7 +936,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP8TARGET)"!=""
@@ -1039,7 +1039,7 @@ $(ZIP8TARGETN) : delzip $(ZIP8DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP8TMP).$(ZIP8TARGET){$(subst,$(ZIP8HELPVAR),_ $(@:db))}$(ZIP8EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP8TMP).$(ZIP8TARGET){$(subst,$(ZIP8HELPVAR),_ $(@:db))}$(ZIP8EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP8TMP).$(ZIP8TARGET){$(subst,$(ZIP8HELPVAR),_ $(@:db))}$(ZIP8EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP8TMP).$(ZIP8TARGET){$(subst,$(ZIP8HELPVAR),_ $(@:db))}$(ZIP8EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP8TMP).$(ZIP8TARGET){$(subst,$(ZIP8HELPVAR),_ $(@:db))}$(ZIP8EXT)
 .ELSE			# "$(ZIP8DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP8FLAGS) $@ $(foreach,j,$(ZIP8LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP8TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -1065,7 +1065,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP9TARGET)"!=""
@@ -1168,7 +1168,7 @@ $(ZIP9TARGETN) : delzip $(ZIP9DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP9TMP).$(ZIP9TARGET){$(subst,$(ZIP9HELPVAR),_ $(@:db))}$(ZIP9EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP9TMP).$(ZIP9TARGET){$(subst,$(ZIP9HELPVAR),_ $(@:db))}$(ZIP9EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP9TMP).$(ZIP9TARGET){$(subst,$(ZIP9HELPVAR),_ $(@:db))}$(ZIP9EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP9TMP).$(ZIP9TARGET){$(subst,$(ZIP9HELPVAR),_ $(@:db))}$(ZIP9EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP9TMP).$(ZIP9TARGET){$(subst,$(ZIP9HELPVAR),_ $(@:db))}$(ZIP9EXT)
 .ELSE			# "$(ZIP9DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP9FLAGS) $@ $(foreach,j,$(ZIP9LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP9TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)
@@ -1194,7 +1194,7 @@ avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
 command_seperator=;
 EQ=
 avoid_cvs_dir=-x "*CVS*" -x "*.svn*"
- 
+
 .ENDIF
 
 .IF "$(ZIP10TARGET)"!=""
@@ -1297,7 +1297,7 @@ $(ZIP10TARGETN) : delzip $(ZIP10DEPS)
 	$(COMMAND_ECHO)$(IFEXIST) $(ZIP10TMP).$(ZIP10TARGET){$(subst,$(ZIP10HELPVAR),_ $(@:db))}$(ZIP10EXT) $(THEN) \
 	    $(PERL) -w $(SOLARENV)/bin/cleanzip.pl $(ZIP10TMP).$(ZIP10TARGET){$(subst,$(ZIP10HELPVAR),_ $(@:db))}$(ZIP10EXT) \
 	    $(FI)
-    $(COMMAND_ECHO)$(COPY) $(ZIP10TMP).$(ZIP10TARGET){$(subst,$(ZIP10HELPVAR),_ $(@:db))}$(ZIP10EXT)  $@ 
+    $(COMMAND_ECHO)$(COPY) $(ZIP10TMP).$(ZIP10TARGET){$(subst,$(ZIP10HELPVAR),_ $(@:db))}$(ZIP10EXT)  $@
     $(COMMAND_ECHO)$(RM) $(ZIP10TMP).$(ZIP10TARGET){$(subst,$(ZIP10HELPVAR),_ $(@:db))}$(ZIP10EXT)
 .ELSE			# "$(ZIP10DIR)" != ""
 	$(COMMAND_ECHO)zip $(ZIP_VERBOSITY) $(ZIP10FLAGS) $@ $(foreach,j,$(ZIP10LIST) $(subst,LANGDIR,{$(subst,$(BIN)/$(ZIP10TARGET)_, $(@:db))} $j )) -x delzip $(avoid_cvs_dir) $(CHECKZIPRESULT)

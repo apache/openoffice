@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -45,14 +45,14 @@ XCS_TRIM=$(PROCESSOUT)/registry/schema/$(PACKAGEDIR)/{$(XCSFILES)}
 # XCS_RESOURCES=$(foreach,i,$(XCSFILES) $(MISC)/registry/res/{$(alllangiso)}/$(PACKAGEDIR)/$(i:b).properties)
 
 ALLTAR: \
-    $(XCS_TRIM) 
+    $(XCS_TRIM)
 .ENDIF			# "$(XCSFILES)"!=""
 
 .IF "$(XCS_TRIM)" != ""
 $(XCS_TRIM) :   $(DTDDIR)/registry/component-schema.dtd \
                 $(XSLDIR)/schema_val.xsl \
                 $(XSLDIR)/sanity.xsl \
-                $(XSLDIR)/schema_trim.xsl 
+                $(XSLDIR)/schema_trim.xsl
 .ENDIF
 
 $(PROCESSOUT)/registry/schema/$(PACKAGEDIR)/%.xcs : %.xcs
@@ -78,7 +78,7 @@ $(PROCESSOUT)/merge/$(PACKAGEDIR)/%.xcs : %.xcs
 
 # Create properties files for localized <info> contents (Currently not built)
 .IF "$(XCS_RESOURCES)" != ""
-$(XCS_RESOURCES) :   $(XSLDIR)/resource.xsl 
+$(XCS_RESOURCES) :   $(XSLDIR)/resource.xsl
 .ENDIF
 
 $(PROCESSOUT)/registry/res/{$(alllangiso)}/$(PACKAGEDIR)/%.properties :| $(PROCESSOUT)/merge/$(PACKAGEDIR)/%.xcs
@@ -91,7 +91,7 @@ $(PROCESSOUT)/registry/res/{$(alllangiso)}/$(PACKAGEDIR)/%.properties :| $(PROCE
 	            --stringparam locale {$(subst,/$(PACKAGEDIR)/$(@:f), $(subst,$(PROCESSOUT)/registry/res/, $@))} \
 	            $(SYSXSLDIR)resource.xsl $<
 
-# 
+#
 # --- XCU ---
 #
 
@@ -104,7 +104,7 @@ XCU_LANG    =$(foreach,i,$(LOCALIZEDFILES) $(PROCESSOUT)/registry/res/{$(alllang
 .IF "$(XCU_DEFAULT)" != ""
 $(XCU_DEFAULT) : $(DTDDIR)/registry/component-update.dtd \
                  $(XSLDIR)/data_val.xsl \
-                 $(XSLDIR)/alllang.xsl 
+                 $(XSLDIR)/alllang.xsl
 .ENDIF
 
 $(PROCESSOUT)/registry/data/$(PACKAGEDIR)/%.xcu : %.xcu
@@ -112,7 +112,7 @@ $(PROCESSOUT)/registry/data/$(PACKAGEDIR)/%.xcu : %.xcu
 .IF "$(VERBOSE)" != "FALSE"
     @echo --- validating and creating a locale independent file
 .ENDIF
-	@-$(MKDIRHIER) $(@:d) 
+	@-$(MKDIRHIER) $(@:d)
 	$(COMMAND_ECHO)$(XSLTPROC) --nonet -o $(normpath $(subst,$(PATH_IN_MODULE), $(PWD))/$(subst,$(PRJ), $(@:d))$*.val) \
 	            --stringparam xcs $(XCSROOTURL)/registry/schema/$(XSLTPACKAGEDIR)/$*.xcs \
 	            --stringparam schemaRoot $(XCSROOTURL)/registry/schema \
@@ -157,7 +157,7 @@ $(PROCESSOUT)/registry/res/{$(alllangiso)}/$(PACKAGEDIR)/%.xcu :| %.xcu
 
 # --- languagepack tag modules ---
 .IF "$(LANGUAGEPACKS)" != ""
-$(LANGUAGEPACKS) : $(XSLDIR)/delcomment.sed 
+$(LANGUAGEPACKS) : $(XSLDIR)/delcomment.sed
 .ENDIF
 
 
@@ -165,13 +165,13 @@ $(PROCESSOUT)/registry/spool/Langpack-%.xcu : Langpack.xcu.tmpl
 .IF "$(VERBOSE)" != "FALSE"
     @echo --- creating a Langpack module for locale $*
 .ENDIF
-	-$(MKDIRHIER) $(@:d) 
+	-$(MKDIRHIER) $(@:d)
     $(COMMAND_ECHO)$(SED) -e "s/__LANGUAGE__/$*/" -f $(XSLDIR)/delcomment.sed $< > $@
 
 
 # --- modules ---
 .IF "$(XCU_MODULES)" != ""
-$(XCU_MODULES) : $(XSLDIR)/alllang.xsl 
+$(XCU_MODULES) : $(XSLDIR)/alllang.xsl
 .ENDIF
 
 
@@ -180,7 +180,7 @@ $(PROCESSOUT)/registry/spool/$(PACKAGEDIR)/%.xcu :| $$(@:b:s/-/./:b).xcu
 .IF "$(VERBOSE)" != "FALSE"
     @echo --- creating a module file
 .ENDIF
-	@-$(MKDIRHIER) $(@:d) 
+	@-$(MKDIRHIER) $(@:d)
 	$(COMMAND_ECHO)$(XSLTPROC) --nonet -o $(normpath $(subst,$(PATH_IN_MODULE), $(PWD))/$(subst,$(PRJ), $@)) \
 	            --stringparam xcs $(XCSROOTURL)/registry/schema/$(XSLTPACKAGEDIR)/$(<:b).xcs \
 	            --stringparam schemaRoot $(XCSROOTURL)/registry/schema \

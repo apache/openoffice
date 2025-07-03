@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -47,11 +47,11 @@ ALLTAR : \
 .ELSE
 
 ALLTAR : \
-	$(BIN)$/clioootypesversion.mk 
+	$(BIN)$/clioootypesversion.mk
 
 .ENDIF
 
-	
+
 CLIMAKERFLAGS =
 .IF "$(debug)" != ""
 CLIMAKERFLAGS += --verbose
@@ -70,7 +70,7 @@ $(BIN)/cli_oootypes.dll : $(RDB) $(EXTRA_RDB) version.txt
 		-r $(SOLARBINDIR)$/cli_uretypes.dll \
         --keyfile $(SOLARBINDIR)$/cliuno.snk \
 		$(RDB)
-		
+
 
 #Create the config file that is used with the policy assembly
 $(BIN)$/cli_oootypes.config: cli_oootypes_config version.txt
@@ -84,7 +84,6 @@ $(POLICY_ASSEMBLY_FILE) : $(BIN)$/cli_oootypes.config $(BIN)$/cli_oootypes.dll
 			-link:$(BIN)$/cli_oootypes.config
 
 #always deliver a clioootypesversion.mk. It is needed for the packing process even for all other
-#platforms. Therefore BUILD_FOR_CLI is not used here 
+#platforms. Therefore BUILD_FOR_CLI is not used here
 $(BIN)$/clioootypesversion.mk: version.txt
 	$(GNUCOPY) $< $@
-	

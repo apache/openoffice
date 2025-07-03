@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -51,7 +51,7 @@ CXXFLAGS+= $(LFS_CFLAGS)
 
 # --- Files --------------------------------------------------------
 
-# disable check for PIC code as it would complain about 
+# disable check for PIC code as it would complain about
 # hand coded assembler
 CHECKFORPIC=
 
@@ -62,7 +62,7 @@ LIB1FILES=	\
 	$(SLB)$/oslall.lib	\
 	$(SLB)$/cpposl.lib	\
 	$(SLB)$/cpprtl.lib	\
-	$(SLB)$/textenc.lib 
+	$(SLB)$/textenc.lib
 
 #.IF "$(GUI)"=="UNX"
 #LIB1FILES+=$(SLB)$/systoolsunx.lib
@@ -168,8 +168,8 @@ DEF1NAME= $(SHL1TARGET)
 
 #
 # This part builds a tiny extra lib,
-# containing an alloc.c which uses system 
-# heap instead of our own mem management. 
+# containing an alloc.c which uses system
+# heap instead of our own mem management.
 # This is e.g. useful for proper valgrinding
 # the office.
 #
@@ -214,7 +214,7 @@ SHL1STDLIBS+=-lgcc
 $(SHL1TARGETN) : $(OUT)$/inc$/udkversion.h
 .ENDIF # "$(SHL1TARGETN)" != ""
 
-$(OUT)$/inc$/udkversion.h: 
+$(OUT)$/inc$/udkversion.h:
 	echo '#ifndef _SAL_UDKVERSION_H_'           >  $@
 	echo '#define _SAL_UDKVERSION_H_'           >> $@
 	echo ''                                     >> $@

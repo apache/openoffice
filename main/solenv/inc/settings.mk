@@ -935,7 +935,7 @@ MKDEPFLAGS+=$(MKDEPLOCAL)
 #.ENDIF
 
 BISON*=bison
-YACCFLAGS*=-d 
+YACCFLAGS*=-d
 
 SVIDL=$(AUGMENT_LIBRARY_PATH) $(SOLARBINDIR)/svidl
 
@@ -1027,7 +1027,7 @@ AUGMENT_LIBRARY_PATH_LOCAL = : && \
     $(OOO_LIBRARY_PATH_VAR)=$(normpath, $(PWD)/$(DLLDEST)):$(normpath, $(SOLARSHAREDBIN))$${{$(OOO_LIBRARY_PATH_VAR):+:$${{$(OOO_LIBRARY_PATH_VAR)}}}}
 .END
 
-# remove if .Net 2003 support has expired 
+# remove if .Net 2003 support has expired
 .IF "$(debug)"!=""
 .IF "$(OS)$(COM)$(CPU)" == "WNTMSCI"
 .IF "$(COMEX)" == "10"
@@ -1112,7 +1112,7 @@ RSCDEFS+=-DDBG_UTIL
 
 .IF "$(product)"!=""
 CDEFS+= -DPRODUCT -DNDEBUG
-RSCDEFS+= -DPRODUCT 
+RSCDEFS+= -DPRODUCT
 RSCDEFS+= -DNDEBUG
 .ENDIF
 

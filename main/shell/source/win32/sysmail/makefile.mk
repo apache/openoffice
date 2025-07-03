@@ -38,7 +38,7 @@ SLOFILES=$(SLO)$/sysmailentry.obj\
 		 $(SLO)$/sysmailmsg.obj\
 		 $(SLO)$/sysmailclient.obj\
 		 $(SLO)$/sysmailprov.obj
-	
+
 SHL1TARGET=$(TARGET).uno
 
 SHL1STDLIBS=$(CPPULIB)\

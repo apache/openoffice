@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -65,7 +65,7 @@ CFLAGSSLOCUIMT=-KPIC -mt
 CFLAGSPROF=-xpg
 CFLAGSDEBUG=-g
 CFLAGSDBGUTIL=
-#  -m32 -xarch=sparc        restrict target to 32 bit sparc 
+#  -m32 -xarch=sparc        restrict target to 32 bit sparc
 #  -xO3                     optimization level 3
 #  -xspace                  don't do optimizations which do increase binary size
 #  -xprefetch=yes           do prefetching (helps on UltraSparc III)
@@ -92,7 +92,7 @@ CFLAGSOUTOBJ=-o
 #   compilation unit that uses std::hash_map<sal_Int64, sal_Int64> (see
 #   sfx2/source/toolbox/imgmgr.cxx:1.27) and thus unfortunately needs to be
 #   disabled globally
-# - wnoretvalue: warning about the last statement of a function not 
+# - wnoretvalue: warning about the last statement of a function not
 #   returning a value. Unfortunately triggers on perfectly acceptable
 #   code, for example if the last statement in is a throw statement
 # - anonnotype: Warns if a type is declared in an anonymous union. Temporary
@@ -108,7 +108,7 @@ CFLAGSWERRCXX=-xwe
 # Once all modules on this platform compile without warnings, set
 # COMPILER_WARN_ERRORS=TRUE here instead of setting MODULES_WITH_WARNINGS (see
 # settings.mk):
-MODULES_WITH_WARNINGS := 
+MODULES_WITH_WARNINGS :=
 
 STDOBJVCL=$(L)/salmain.o
 

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -55,7 +55,7 @@ SHARE_LIBS+= "libxml2.lib" "crypt32.lib" "advapi32.lib" "libxmlsec.lib" "libxmls
 .ELSE
 SHARE_LIBS+= "-lxml2" "-lnss3" "-lnspr4" "-lxmlsec1" "-lxmlsec1-nss" "-lxsec_xmlsec" "-lxs_comm" "-lxs_nss"
 .ENDIF
-		
+
 SHARE_OBJS =	\
 		$(OBJ)$/helper.obj
 
@@ -67,7 +67,7 @@ APP2TARGET=	signer
 APP2OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/signer.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP2STDLIBS+= -lstdc++
 .ENDIF
@@ -82,7 +82,7 @@ APP3TARGET=	encrypter
 APP3OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/encrypter.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP3STDLIBS+= -lstdc++
 .ENDIF
@@ -97,7 +97,7 @@ APP4TARGET=	verifier
 APP4OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/verifier.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP4STDLIBS+= -lstdc++
 .ENDIF
@@ -112,7 +112,7 @@ APP4STDLIBS+=	\
 #APP5OBJS=	\
 #		$(SHARE_OBJS)	\
 #		$(OBJ)$/decrypter.obj
-#		
+#
 #.IF "$(OS)" == "LINUX"
 #APP5STDLIBS+= -lstdc++
 #.ENDIF
@@ -127,7 +127,7 @@ APP6TARGET=	certmngr
 APP6OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/certmngr.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP6STDLIBS+= -lstdc++
 .ENDIF

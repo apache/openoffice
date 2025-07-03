@@ -19,7 +19,7 @@
 #
 #**************************************************************
 
-# edit to match directory level 
+# edit to match directory level
 PRJ		= ..$/..$/..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = helpcontent2
@@ -71,7 +71,7 @@ XHPFILES = \
    01010000.xhp \
    01020000.xhp \
    01050000.xhp \
-   icon_alt.xhp 
+   icon_alt.xhp
 
 # --- Targets ------------------------------------------------------
 

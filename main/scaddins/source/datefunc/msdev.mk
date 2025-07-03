@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -72,19 +72,19 @@ UNOHEADER=\
 	$(UNOHEADER_OUT)\com\sun\star\util\Date.hpp \
 	$(UNOHEADER_OUT)\com\sun\star\sheet\addin\XDateFunctions.hpp
 
-$(UNOHEADER_OUT)\com\sun\star\sheet\addin\XDateFunctions.hpp: $(RDBS) $(CPPUMAKER) 
+$(UNOHEADER_OUT)\com\sun\star\sheet\addin\XDateFunctions.hpp: $(RDBS) $(CPPUMAKER)
 	-$(MKDIR) $(@D)
 	$(CPPUMAKER) $(CPPUMAKER_OPT) -Tcom.sun.star.sheet.addin.XDateFunctions -B/UCR -O$(UNOHEADER_OUT) $(RDBS)
 
-$(UNOHEADER_OUT)\com\sun\star\sheet\XAddIn.hpp: $(RDBS) $(CPPUMAKER) 
+$(UNOHEADER_OUT)\com\sun\star\sheet\XAddIn.hpp: $(RDBS) $(CPPUMAKER)
 	-$(MKDIR) $(@D)
 	$(CPPUMAKER) $(CPPUMAKER_OPT) -Tcom.sun.star.sheet.XAddIn -B/UCR -O$(UNOHEADER_OUT) $(RDBS)
 
-$(UNOHEADER_OUT)\com\sun\star\lang\XServiceName.hpp: $(RDBS) $(CPPUMAKER) 
+$(UNOHEADER_OUT)\com\sun\star\lang\XServiceName.hpp: $(RDBS) $(CPPUMAKER)
 	-$(MKDIR) $(@D)
 	$(CPPUMAKER) $(CPPUMAKER_OPT) -Tcom.sun.star.lang.XServiceName -B/UCR -O$(UNOHEADER_OUT) $(RDBS)
 
-$(UNOHEADER_OUT)\com\sun\star\util\Date.hpp: $(RDBS) $(CPPUMAKER) 
+$(UNOHEADER_OUT)\com\sun\star\util\Date.hpp: $(RDBS) $(CPPUMAKER)
 	-$(MKDIR) $(@D)
 	$(CPPUMAKER) $(CPPUMAKER_OPT) -Tcom.sun.star.util.Date -B/UCR -O$(UNOHEADER_OUT) $(RDBS)
 
@@ -92,15 +92,15 @@ include i:\udk100\msdev\genheader.mk
 
 $(URDS): $(UNOIDL)
 
-.idl{$(URDOUT)}.urd: 
+.idl{$(URDOUT)}.urd:
 	-$(MKDIR) $(@D)
-	$(UNOIDL) -I$(ROOT)\idl $< -Burd -OH$(@D) 
+	$(UNOIDL) -I$(ROOT)\idl $< -Burd -OH$(@D)
 
 $(RDBOUT)\dateadd.rdb: $(URDS) $(REGMERGE)
 	-$(MKDIR) $(@D)
 	$(REGMERGE) $@ /UCR  $(URDS)
 
-.cxx{$(OBJOUT)}.obj: 
+.cxx{$(OBJOUT)}.obj:
 	-$(MKDIR) $(@D)
 	$(CC) $(CCPPFLAGS) $(CCFLAGS) $< /Fo$@
 

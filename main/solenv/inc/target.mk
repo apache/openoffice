@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -1421,7 +1421,7 @@ $(EXTUPDATEINFO_DEST) : $(EXTUPDATEINFO_SOURCE)
 
 makedoc:
 		@@-mkdir $(OUT)/ucrdoc
-		$(COMMAND_ECHO)$(IDLC) $(VERBOSITY) @$(mktmp $(IDLCFLAGS) $(UNOIDLDEFS) $(UNOIDLINCEXTRA) $(UNOIDLINC) -C -O$(OUT)/ucrdoc/$(IDLPACKAGE) $(DEPIDLFILES:+"\n"))		
+		$(COMMAND_ECHO)$(IDLC) $(VERBOSITY) @$(mktmp $(IDLCFLAGS) $(UNOIDLDEFS) $(UNOIDLINCEXTRA) $(UNOIDLINC) -C -O$(OUT)/ucrdoc/$(IDLPACKAGE) $(DEPIDLFILES:+"\n"))
 
 .IF "$(LOCALDBTARGET)"!=""
 $(LOCALDBTARGET) : $(URDFILES) $(DEPIDLFILES)
@@ -1523,9 +1523,9 @@ $(LOCALIZE_ME_DEST) : $(LOCALIZE_ME)
 #  LASTRUN_MERGED
 .INCLUDE .IGNORE : $(INCCOM)/$(TARGET)_lastrun.mk
 .IF "$(LASTRUN_MERGED)"=="TRUE"
-$(LOCALIZE_ME_DEST) : $(LOCALIZE_ME) $(LOCALIZESDF) 
+$(LOCALIZE_ME_DEST) : $(LOCALIZE_ME) $(LOCALIZESDF)
 .ELSE			# "$(LASTRUN_MERGED)"=="TRUE"
-$(LOCALIZE_ME_DEST) .PHONY : $(LOCALIZE_ME) $(LOCALIZESDF) 
+$(LOCALIZE_ME_DEST) .PHONY : $(LOCALIZE_ME) $(LOCALIZESDF)
 	echo LASTRUN_MERGED:=TRUE > $(INCCOM)/$(TARGET)_lastrun.mk
 .ENDIF			# "$(LASTRUN_MERGED)"=="TRUE"
     $(COMMAND_ECHO)-$(MKDIR) $(@:d)
@@ -1871,11 +1871,11 @@ killbin:
 
 killobj:
 .IF "$(SLOFILES)" != ""
-	-cd $(SLO) && $(TYPE:s/+//) $(mktmp  $(SLOFILES:f)) | xargs -n 20 rm 
+	-cd $(SLO) && $(TYPE:s/+//) $(mktmp  $(SLOFILES:f)) | xargs -n 20 rm
 	-cd $(SLO) && $(TYPE:s/+//) $(mktmp  $(SLOFILES:s/.obj/.o/:f)) | xargs -n 20 rm
 .ENDIF
 .IF "$(OBJFILES)" != ""
-	-cd $(OBJ) && $(TYPE:s/+//) $(mktmp  $(OBJFILES:f)) | xargs -n 20 rm 
+	-cd $(OBJ) && $(TYPE:s/+//) $(mktmp  $(OBJFILES:f)) | xargs -n 20 rm
 	-cd $(OBJ) && $(TYPE:s/+//) $(mktmp  $(OBJFILES:s/.obj/.o/:f)) | xargs -n 20 rm
 .ENDIF
 
@@ -1884,7 +1884,7 @@ killobj:
 	-cd $(REAL_$(SECOND_BUILD)_SLO) && $(TYPE:s/+//) $(mktmp  $(REAL_$(SECOND_BUILD)_SLOFILES:s/.obj/.o/:f)) | xargs -n 20 rm
 .ENDIF
 .IF "$(REAL_$(SECOND_BUILD)_OBJFILES)" != ""
-	-cd $(REAL_$(SECOND_BUILD)_OBJ) && $(TYPE:s/+//) $(mktmp  $(REAL_$(SECOND_BUILD)_OBJFILES:f)) | xargs -n 20 rm 
+	-cd $(REAL_$(SECOND_BUILD)_OBJ) && $(TYPE:s/+//) $(mktmp  $(REAL_$(SECOND_BUILD)_OBJFILES:f)) | xargs -n 20 rm
 	-cd $(REAL_$(SECOND_BUILD)_OBJ) && $(TYPE:s/+//) $(mktmp  $(REAL_$(SECOND_BUILD)_OBJFILES:s/.obj/.o/:f)) | xargs -n 20 rm
 .ENDIF
 .IF "$(DEPOBJFILES)" != ""
@@ -2030,7 +2030,7 @@ UNOUCRDEPxxx : $(UNOUCRDEP);
 #$(subst,$(OUTPATH),$(COMMON_OUTDIR) $(BIN))/hid.lst .PHONY :
 #	@echo "Making:   " $@
 #	@echo $(WORK_STAMP).$(LAST_MINOR) 010101010101010 > $@.$(ROUT).tmp
-#	$(COMMAND_ECHO)$(TYPE) $(SOLARCOMMONBINDIR)/hid/*.hid | tr -d "\015" | $(SORT) -u >> $@.$(ROUT).tmp 
+#	$(COMMAND_ECHO)$(TYPE) $(SOLARCOMMONBINDIR)/hid/*.hid | tr -d "\015" | $(SORT) -u >> $@.$(ROUT).tmp
 #	@$(IFEXIST) $@ $(THEN) $(RM:s/+//) $@ $(FI)
 #	@-$(RENAME) $@.$(ROUT).tmp $@
 #	@-mkdir $(@:d)hid

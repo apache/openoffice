@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,22 +7,22 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
 .IF "$(SLOFILES)$(OBJFILES)$(DEPOBJFILES)$(SRCFILES)$(SRC1FILES)$(SRC2FILES)$(SRC3FILES)$(RCFILES)$(HDBDEPNTARGET)$(IDLFILES)$(PARFILES)$(ZIP1TARGET)$(ZIP2TARGET)$(ZIP3TARGET)$(ZIP4TARGET)$(ZIP5TARGET)$(ZIP6TARGET)$(ZIP7TARGET)$(ZIP8TARGET)$(ZIP9TARGET)$(COMP1TYPELIST)$(COMP2TYPELIST)$(COMP3TYPELIST)$(COMP4TYPELIST)$(COMP5TYPELIST)$(COMP6TYPELIST)$(COMP7TYPELIST)$(COMP8TYPELIST)$(COMP9TYPELIST)"!=""
-ALLDEP .PHONY: 
+ALLDEP .PHONY:
 	@-$(IFEXIST) $(SRS)/$(TARGET).*.dpr $(THEN) $(RM:s/+//) $(SRS)/$(TARGET).*.dpr >& $(NULLDEV) $(FI)
 	@@-$(RM) $(MISC)/$(TARGET).dpr
 	@@-$(RM) $(MISC)/$(TARGET).*.dprr
@@ -30,16 +30,16 @@ ALLDEP .PHONY:
 	@@-$(RM) $(MISC)/$(TARGET).dpz
 	@@-$(RM) $(MISC)/$(COMP1TYPELIST).mk $(MISC)/$(COMP2TYPELIST).mk $(MISC)/$(COMP3TYPELIST).mk $(MISC)/$(COMP4TYPELIST).mk $(MISC)/$(COMP5TYPELIST).mk $(MISC)/$(COMP6TYPELIST).mk $(MISC)/$(COMP7TYPELIST).mk $(MISC)/$(COMP8TYPELIST).mk $(MISC)/$(COMP9TYPELIST).mk
 .IF "$(nodep)"==""
-.IF "$(DEPFILE_SLO)"!=""	
+.IF "$(DEPFILE_SLO)"!=""
 	@@-$(RM) $(DEPFILE_SLO)
 	$(foreach,i,$(all_local_slo) $(shell @$(MAKEDEPEND) @$(mktmp -f - -p$(SLO) $(MKDEPFLAGS) $(CDEFS) $(CDEFSSLO) $(CDEFSMT) $i ) > $(MISC)/s_$(i:b).dpcc ))
 	$(foreach,i,$(all_misc_slo) $(shell @$(MAKEDEPEND) @$(mktmp -f - -p$(SLO) $(MKDEPFLAGS) $(CDEFS) $(CDEFSSLO) $(CDEFSMT) $i ) > $(MISC)/s_$(i:b).dpcc ))
-.ENDIF			# "$(DEPFILE_SLO)"!=""	
-.IF "$(DEPFILE_OBJ)"!=""	
+.ENDIF			# "$(DEPFILE_SLO)"!=""
+.IF "$(DEPFILE_OBJ)"!=""
 	@@-$(RM) $(DEPFILE_OBJ)
 	$(foreach,i,$(all_local_obj) $(shell @$(MAKEDEPEND) @$(mktmp -f - -p$(OBJ) $(MKDEPFLAGS) $(CDEFS) $(CDEFSOBJ) $(CDEFSMT) $i ) > $(MISC)/o_$(i:b).dpcc ))
 	$(foreach,i,$(all_misc_obj) $(shell @$(MAKEDEPEND) @$(mktmp -f - -p$(OBJ) $(MKDEPFLAGS) $(CDEFS) $(CDEFSOBJ) $(CDEFSMT) $i ) > $(MISC)/o_$(i:b).dpcc ))
-.ENDIF			# "$(DEPFILE_OBJ)"!=""	
+.ENDIF			# "$(DEPFILE_OBJ)"!=""
 .ENDIF			# "$(nodep)"==""
 .IF "$(DEPFILES)" != ""
 	echo xxx$(DEPFILES)xxx
@@ -56,7 +56,7 @@ ALLDPC: \
 	@echo NOT-Making: Depend-Lists
 	@echo ttt: ppp > $(MISC)/$(TARGET).dpc
 .ELSE
-	@echo Making : Dependencies 
+	@echo Making : Dependencies
 .IF "$(CFILES)$(CXXFILES)"!=""
 .IF "$(SLOFILES)$(OBJFILES)$(DEPOBJFILES)"==""
 	@echo ++++++++++++++++++++++++++++++++++++++++++++++++
