@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -40,7 +40,7 @@ CDEFS+= -DYY_NEVER_INTERACTIVE=1
 CFLAGS+=-DSYSTEM_EXPAT
 .ENDIF
 
-	
+
 # --- Files --------------------------------------------------------
 
 OBJFILES=   			\
@@ -53,7 +53,7 @@ OBJFILES=   			\
     $(OBJ)$/helpmerge.obj   \
     $(OBJ)$/helpex.obj      \
     $(OBJ)$/file.obj        \
-	$(OBJ)$/directory.obj   
+	$(OBJ)$/directory.obj
 
 
 LIB1TARGET= $(LB)$/$(TARGET).lib
@@ -65,8 +65,8 @@ LIB1OBJFILES=        $(OBJ)$/export.obj      \
         $(OBJ)$/srciter.obj             \
         $(OBJ)$/file.obj \
 		$(OBJ)$/directory.obj     \
-        $(OBJ)$/utf8conv.obj    
-   
+        $(OBJ)$/utf8conv.obj
+
 
 APP1VERSIONMAP=exports.map
 
@@ -88,7 +88,7 @@ APP1LIBS+=	$(LB)$/$(TARGET).lib
 APP1DEPN=   $(OBJ)$/src_yy_wrapper.obj $(LB)$/$(TARGET).lib
 
 APP2TARGET= helpex
-APP2OBJS= $(OBJ)$/helpmerge.obj  $(OBJ)$/xmlparse.obj $(OBJ)$/export2.obj $(OBJ)$/utf8conv.obj $(OBJ)$/merge.obj $(OBJ)$/helpex.obj 
+APP2OBJS= $(OBJ)$/helpmerge.obj  $(OBJ)$/xmlparse.obj $(OBJ)$/export2.obj $(OBJ)$/utf8conv.obj $(OBJ)$/merge.obj $(OBJ)$/helpex.obj
 APP2RPATH= NONE
 
 .IF "$(OS)"!="MACOSX"
@@ -166,10 +166,10 @@ APP7STDLIBS+= \
 # static libs at end for OS X
 .ENDIF
 
-# 
+#
 #APP8TARGET= treeconfig
 #APP8OBJS=   $(OBJ)$/treeconfig.obj $(OBJ)$/inireader.obj $(OBJ)$/export2.obj
-#APP8STDLIBS=$(TOOLSLIB) $(SALLIB) $(VOSLIB) $(ICUINLIB) $(STLPORT) 
+#APP8STDLIBS=$(TOOLSLIB) $(SALLIB) $(VOSLIB) $(ICUINLIB) $(STLPORT)
 
 # localizer for l10n framework
 APP9TARGET= localize_sl

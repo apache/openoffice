@@ -1,5 +1,5 @@
 ###############################################################
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 ###############################################################
 
 
@@ -29,12 +29,12 @@ gb_Jar_JAVACOMMAND := $(JAVAINTERPRETER)
 gb_Jar_JARCOMMAND := jar
 
 # location of manifest file in workdir
-define gb_Jar_get_manifest_target 
+define gb_Jar_get_manifest_target
 $(call gb_JavaClassSet_get_classdir,$(call gb_Jar_get_classsetname,$(1)))/META-INF/MANIFEST.MF
 endef
 
 # creates classset and META-INF folders if they don't exist
-# adds manifest version, class path, solarversion and content from sources to manifest file 
+# adds manifest version, class path, solarversion and content from sources to manifest file
 # creates the target folder of the jar file if it doesn't exist
 # creates the jar file
 define gb_Jar__command
@@ -62,7 +62,7 @@ $(call gb_Jar_get_target,%) : $(call gb_JavaClassSet_get_target,$(call gb_Jar_ge
 	$(call gb_Jar__command,$*,$@,$*,$?)
 
 # resets scoped variables (see explanations where they are set)
-# creates a class set and a dependency to it 
+# creates a class set and a dependency to it
 # registers target and clean target
 # adds jar files to DeliverLogTarget
 # adds dependency for outdir target to workdir target (pattern rule for delivery is in Package.mk)
@@ -137,7 +137,7 @@ define gb_Jar_use_externals
 $(call gb_JavaClassSet_use_externals,$(call gb_Jar_get_classsetname,$(1)),$(2))
 endef
 
-# possible directories for jar files containing UNO services 
+# possible directories for jar files containing UNO services
 gb_Jar_COMPONENTPREFIXES := \
     OOO:vnd.sun.star.expand:\dOOO_BASE_DIR/program/classes/ \
     URE:vnd.sun.star.expand:\dURE_INTERNAL_JAVA_DIR/ \

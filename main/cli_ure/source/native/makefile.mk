@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -88,7 +88,7 @@ SLOFILES = \
     $(SLO)$/native_bootstrap.obj \
     $(SLO)$/path.obj \
     $(SLO)$/assembly_cppuhelper.obj
-	
+
 
 SHL1OBJS = $(SLOFILES)
 
@@ -138,20 +138,20 @@ $(ASSEMBLY_ATTRIBUTES) : assembly.cxx $(BIN)$/cliuno.snk $(BIN)$/cliureversion.m
     echo \
 	'[assembly:System::Reflection::AssemblyKeyFile($(ASSEMBLY_KEY_X))];' \
 	>> $(OUT)$/misc$/assembly_cppuhelper.cxx
-	
-	
+
+
 
 #make sure we build cli_cppuhelper after the version changed
 $(SHL1OBJS) : $(BIN)$/cli_cppuhelper.config
 
-	
+
 
 $(SIGN): $(SHL1TARGETN)
 	$(WRAPCMD) sn.exe -R $(BIN)$/$(TARGET).dll	$(BIN)$/cliuno.snk	 && $(TOUCH) $@
 
 #do not forget to deliver cli_cppuhelper.config. It is NOT embedded in the policy file.
-.IF "$(CCNUMVER)" >= "001399999999"		
-#.NET 2 and higher	
+.IF "$(CCNUMVER)" >= "001399999999"
+#.NET 2 and higher
 # If the x86 switch is omitted then the system assumes the assembly to be MSIL.
 # The policy file is still found when an application tries to load an older
 # cli_cppuhelper.dll but the system cannot locate it. It possibly assumes that the
@@ -168,12 +168,12 @@ $(POLICY_ASSEMBLY_FILE) : $(BIN)$/cli_cppuhelper.config
 	$(WRAPCMD) AL.exe -out:$@ \
 			-version:$(CLI_CPPUHELPER_POLICY_VERSION) \
 			-keyfile:$(BIN)$/cliuno.snk \
-			-link:$(BIN)$/cli_cppuhelper.config		
-.ENDIF			
+			-link:$(BIN)$/cli_cppuhelper.config
+.ENDIF
 
 #Create the config file that is used with the policy assembly
-$(BIN)$/cli_cppuhelper.config: cli_cppuhelper_config $(BIN)$/cliureversion.mk 
+$(BIN)$/cli_cppuhelper.config: cli_cppuhelper_config $(BIN)$/cliureversion.mk
 	$(PERL) $(SOLARENV)$/bin$/clipatchconfig.pl \
 	$< $@
-	
+
 .ENDIF			# "$(BUILD_FOR_CLI)" != ""

@@ -61,7 +61,7 @@ SHARE_LIBS+= "ixml2.lib" "nss3.lib" "libnspr4.lib" "libxmlsec.lib" "libxmlsec-ns
 .ELSE
 SHARE_LIBS+= "-lxml2" "-lnss3" "-lnspr4" "-lxmlsec1" "-lxmlsec1-nss" "-lxsec_xmlsec"
 .ENDIF
-		
+
 SHARE_OBJS =	\
 		$(OBJ)$/helper.obj
 
@@ -73,7 +73,7 @@ APP2TARGET=	signer
 APP2OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/signer.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP2STDLIBS+= -lstdc++
 .ENDIF
@@ -88,7 +88,7 @@ APP3TARGET=	encrypter
 APP3OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/encrypter.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP3STDLIBS+= -lstdc++
 .ENDIF
@@ -103,7 +103,7 @@ APP4TARGET=	verifier
 APP4OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/verifier.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP4STDLIBS+= -lstdc++
 .ENDIF
@@ -118,7 +118,7 @@ APP5TARGET=	decrypter
 APP5OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/decrypter.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP5STDLIBS+= -lstdc++
 .ENDIF
@@ -133,7 +133,7 @@ APP6TARGET=	certmngr
 APP6OBJS=	\
 		$(SHARE_OBJS)	\
 		$(OBJ)$/certmngr.obj
-		
+
 .IF "$(OS)" == "LINUX"
 APP6STDLIBS+= -lstdc++
 .ENDIF

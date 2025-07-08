@@ -95,7 +95,7 @@ SALHELPERLIB=isalhelper.lib
 REGLIB=ireg.lib
 STORELIB=istore.lib
 
-BLANK= 
+BLANK=
 EMPTYSTRING=
 PATH_SEPARATOR=;
 
@@ -144,7 +144,7 @@ LINK_JAVA_LIBS=/LIBPATH:"$(OO_SDK_JAVA_HOME)/lib"
 # use this for release version
 #EXE_LINK_FLAGS=/MAP /OPT:NOREF /SUBSYSTEM:CONSOLE /BASE:0x1100000
 #LIBRARY_LINK_FLAGS=/NODEFAULTLIB /DLL
-endif	
+endif
 
 
 
@@ -229,7 +229,7 @@ SDK_JAVA_INCLUDES = -I"$(OO_SDK_JAVA_HOME)/include" -I"$(OO_SDK_JAVA_HOME)/inclu
 
 CC_DEFINES_JNI=-DUNX -DSOLARIS -DCPPU_ENV=sunpro5
 CC_DEFINES=-DUNX -DSOLARIS -DSPARC -DCPPU_ENV=sunpro5  -DHAVE_GCC_VISIBILITY_FEATURE
-CC_OUTPUT_SWITCH=-o 
+CC_OUTPUT_SWITCH=-o
 
 LIBRARY_LINK_FLAGS=-w -mt -z combreloc -PIC -temp=/tmp '-R$$ORIGIN' -z text -norunpath -G -Bdirect -Bdynamic -lpthread -lCrun -lc -lm
 # means if used CC is lower then version 5.5 use option -instance=static
@@ -387,7 +387,7 @@ ifneq (,$(findstring darwin,$(PLATFORM)))
 
 PROCTYPE := $(shell $(PRJ)/config.guess | cut -d"-" -f1)
 
-# Default is MacOSX on a Intel machine    
+# Default is MacOSX on a Intel machine
 PLATFORM=macosx
 
 ifeq "$(PROCTYPE)" "x86_64"
@@ -426,7 +426,7 @@ QM=\"
 SQM='
 ECHOLINE=@echo
 P2BG=&
-    
+
 DEL=rm -f
 DELRECURSIVE=rm -rf
 COPY=cp
@@ -601,7 +601,7 @@ LIBRARY_LINK_FLAGS=-shared '-Wl,-rpath,$$ORIGIN'
 #COMP_LINK_FLAGS=$(LIBRARY_LINK_FLAGS) -Wl,--version-script,$(PRJ)/settings/component.uno.map
 COMP_LINK_FLAGS=$(LIBRARY_LINK_FLAGS)
 
-EXE_LINK_FLAGS=-Wl,--allow-shlib-undefined 
+EXE_LINK_FLAGS=-Wl,--allow-shlib-undefined
 #EXE_LINK_FLAGS+=-Wl,-export-dynamic -Wl,-z,defs
 LINK_LIBS=-L"$(OUT)/lib" -L"$(OO_SDK_HOME)/lib" -L"$(OO_SDK_OFFICE_LIB_DIR)" $(PTHREAD_LIBS)
 LINK_JAVA_LIBS=-L"$(OO_SDK_JAVA_HOME)/jre/lib/$(JAVA_PROC_TYPE)"

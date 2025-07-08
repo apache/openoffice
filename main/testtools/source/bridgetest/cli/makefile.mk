@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -84,7 +84,7 @@ CLI_CPPUHELPER = $(SOLARBINDIR)$/cli_cppuhelper.dll
 CLI_OOOTYPES = $(SOLARBINDIR)$/cli_oootypes.dll
 CLI_TYPES_BRIDGETEST = $(BIN)$/cli_types_bridgetest.dll
 
-CSCFLAGS = -warnaserror+ 
+CSCFLAGS = -warnaserror+
 .IF "$(CCNUMVER)" <= "001399999999"
 VBC_FLAGS = -warnaserror+
 .ELSE
@@ -161,7 +161,7 @@ $(BIN)$/cli_vb_testobj.uno.dll : \
 		-reference:System.Windows.Forms.dll \
 		cli_vb_testobj.vb
 
-$(MISC)$/copyassemblies.done .ERRREMOVE: 
+$(MISC)$/copyassemblies.done .ERRREMOVE:
     $(GNUCOPY) $(CLI_CPPUHELPER) $(BIN)$/$(CLI_CPPUHELPER:f)
     $(GNUCOPY) $(CLI_BASETYPES) $(BIN)$/$(CLI_BASETYPES:f)
     $(GNUCOPY) $(CLI_URETYPES) $(BIN)$/$(CLI_URETYPES:f)

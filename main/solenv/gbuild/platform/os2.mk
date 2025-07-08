@@ -7,9 +7,9 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -388,7 +388,7 @@ gb_Library_TARGETTYPEFLAGS := -Zdll
 gb_Library_VERSIONMAPFLAG := -Wl,--version-script
 gb_Library_get_rpath :=
 
-gb_Library_SYSPRE := 
+gb_Library_SYSPRE :=
 gb_Library_PLAINEXT := .lib
 
 gb_Library_PLAINLIBS_NONE += \
@@ -513,7 +513,7 @@ gb_StaticLibrary_StaticLibrary_platform =
 # Executable class
 
 gb_Executable_EXT := .exe
-gb_Executable_TARGETTYPEFLAGS := 
+gb_Executable_TARGETTYPEFLAGS :=
 #-RELEASE -BASE:0x1b000000 -OPT:NOREF -INCREMENTAL:NO -DEBUG
 gb_Executable_get_rpath :=
 

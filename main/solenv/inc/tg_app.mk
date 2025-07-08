@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 CC_PATH*="$(CC_PATH)"
@@ -25,7 +25,7 @@ CC_PATH*="$(CC_PATH)"
 # instructions for linking
 # unroll begin
 
-.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI" 
+.IF "$(GUI)" == "OS2" && "$(TARGETTYPE)" == "GUI"
 APP$(TNR)DEF = $(MISC)/$(APP$(TNR)TARGET).def
 .ENDIF
 
@@ -89,7 +89,7 @@ APP$(TNR)PRODUCTDEF+:=-DPRODUCT_NAME=\"$(APP$(TNR)PRODUCTNAME)\"
 $(MISC)/$(APP$(TNR)TARGET)_linkinc.ls .PHONY:
 	@@-$(RM) $@
 	sed -f $(SOLARENV)/bin/chrel.sed $(foreach,i,$(APP$(TNR)LIBS) $(i:s/.lib/.lin/)) >> $@
-.ENDIF          #"$(APP$(TNR)LIBS)"!="" 
+.ENDIF          #"$(APP$(TNR)LIBS)"!=""
 .ENDIF
 
 LINKINCTARGETS+=$(MISC)/$(APP$(TNR)TARGETN:b)_linkinc.ls
@@ -249,7 +249,7 @@ $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
 	$(COMMAND_ECHO)$(RC) -r -DOS2 $(APP$(TNR)PRODUCTDEF) -I$(SOLARRESDIR) $(INCLUDE) $(RCLINKFLAGS) $(MISC)/$(APP$(TNR)LINKRES:b).rc
 .ENDIF			# "$(APP$(TNR)LINKRES)" != ""
 
-.IF "$(TARGETTYPE)" == "GUI" 
+.IF "$(TARGETTYPE)" == "GUI"
 	@echo NAME $(APP$(TNR)TARGET) WINDOWAPI > $(MISC)/$(APP$(TNR)TARGET).def
 .ENDIF
 
@@ -267,7 +267,7 @@ $(APP$(TNR)TARGETN): $(APP$(TNR)OBJS) $(APP$(TNR)LIBS) \
 		$(APP$(TNR)OBJS) \
 		$(APP$(TNR)LIBS) \
 		$(APP$(TNR)STDLIBS) \
-		$(APP$(TNR)STDLIB) $(STDLIB$(TNR)) 
+		$(APP$(TNR)STDLIB) $(STDLIB$(TNR))
 
 
 .IF "$(APP$(TNR)TARGET)" == "loader"
