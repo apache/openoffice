@@ -1,5 +1,5 @@
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -60,7 +60,7 @@
     <pathelement location="${env.BSH_JAR}"/>
     <pathelement location="${solar.jar}/js.jar"/>
     <pathelement location="${jardir}"/>
-  </path> 
+  </path>
 
   <path id="idesupport.class.path">
     <pathelement path="${jardir}"/>
@@ -70,7 +70,7 @@
     <pathelement path="${jardir}"/>
     <pathelement path="${solar.jar}/openide.jar"/>
   </path>
-    
+
   <path id="netbeans.editor.support.classpath">
     <pathelement path="${jardir}"/>
     <pathelement path="${netbeans.install.path}/modules/ext/nb-editor.jar"/>
@@ -111,7 +111,7 @@
      </fileset>
   </path>
   <path id="my.bootstrap.classpath" refID="${boot_refID}"/>
-    
+
   <!-- ===================== Prepare Directories ========================= -->
   <target name="prepare">
     <mkdir dir="${jardir}"/>
@@ -127,7 +127,7 @@
       <compilerarg value="-Xbootclasspath:${toString:my.bootstrap.classpath}"/>
     </javac>
     <javac srcdir="Framework/" destdir="${jardir}"
-         includes="**/*.java" classpathref="idlclasspath" debug="${debug}" 
+         includes="**/*.java" classpathref="idlclasspath" debug="${debug}"
          optimize="${optimize}" deprecation="off" includeantruntime="false">
      <compilerarg value="-Xbootclasspath:${toString:my.bootstrap.classpath}"/>
     </javac>

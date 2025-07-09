@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Locale SYSTEM 'locale.dtd'>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <Locale versionDTD="2.0.3" allowUpdateFromCLDR="no" version="1.0" >
   <LC_INFO>
@@ -138,7 +138,7 @@
       <FormatCode>[NatNum1]"སྤྱི་ལོ" YYYY "ཟླ་" M "ཚེས་" DD</FormatCode>
       <DefaultName></DefaultName>
     </FormatElement>
-    <!-- Time format was originally "ཆུ་ཚོད་" HH "སྐར་མ་" MM "སྐར་ཆ་་" SS -->            
+    <!-- Time format was originally "ཆུ་ཚོད་" HH "སྐར་མ་" MM "སྐར་ཆ་་" SS -->
     <!-- Replaced with HH:MM:SS until more information is available -->
     <FormatElement msgid="TimeFormatskey1" default="false" type="short" usage="TIME"  formatindex="39">
       <FormatCode>HH:MM</FormatCode>
@@ -269,7 +269,7 @@
       <DefaultName></DefaultName>
     </FormatElement>
     <FormatElement msgid="PercentFormatskey1" default="true" type="short" usage="PERCENT_NUMBER"  formatindex="8">
-      <!-- Percentage formats other than % sign are not possible in 2.0  0 "བརྒྱ་ཆ་་" is replaced by % -->            
+      <!-- Percentage formats other than % sign are not possible in 2.0  0 "བརྒྱ་ཆ་་" is replaced by % -->
       <FormatCode>[NatNum1]0%</FormatCode>
       <DefaultName></DefaultName>
     </FormatElement>

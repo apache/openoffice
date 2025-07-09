@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -85,7 +85,7 @@ Sub DeleteAllSavedFiles()
 	sFileName = sWorkPath+cTempFileName+&quot;.&quot;+GetDocEndings(frmDraw or cFltXML)
 	If FileExists (sFileName) then
 		Kill (sFileName)
-	End If	
+	End If
 End Sub
 
 Sub DeleteAllLogFiles()
@@ -97,19 +97,19 @@ Sub DeleteAllLogFiles()
 	End If
 	If FileExists (sWorkPath+sSCLogFileName) then
 		Kill (sWorkPath+sSCLogFileName)
-	End If	
+	End If
 	If FileExists (sWorkPath+sSDLogFileName) then
 		Kill (sWorkPath+sSDLogFileName)
-	End If	
+	End If
 	If FileExists (sWorkPath+sSMathLogFileName) then
 		Kill (sWorkPath+sSMathLogFileName)
-	End If	
+	End If
 	If FileExists (sWorkPath+sSChartLogFileName) then
 		Kill (sWorkPath+sSChartLogFileName)
-	End If	
+	End If
 	If FileExists (sWorkPath+sSHptLogFileName) then
 		Kill (sWorkPath+sSHptLogFileName)
-	End If	
+	End If
 	If FileExists (sWorkPath+sSDrawLogFileName) then
 		Kill (sWorkPath+sSDrawLogFileName)
 	End If
@@ -131,8 +131,8 @@ Function OpenLogDat (sFileName as String) as Integer
 	Dim LocaleFileChannel%
 	If FileExists (sWorkPath+sFileName) then
 		Kill (sWorkPath+sFileName)
-	End If	
-	LocaleFileChannel% = Freefile 
+	End If
+	LocaleFileChannel% = Freefile
 	Open sWorkPath+sFileName For Output As LocaleFileChannel%
 	OpenLogDat = LocaleFileChannel%
 end Function
@@ -204,7 +204,7 @@ DIM nStrPos as Long
 	if bMakeChartTest then
     gCurrentDocTest = frmChart
 		call MakeChartTest
-	end if	
+	end if
 	if bMakeMathTest then
     gCurrentDocTest = frmMath
 		call MakeNewDoc
@@ -221,14 +221,14 @@ DIM nStrPos as Long
     gCurrentDocTest = frmExtension
 		call Test_Ext.TestExtensions
 	end if
-	
+
 	Close #GlobalTestLog
 	GlobalTestLog = 0
 end Sub
 
 Sub WriteTestSequence
 	Print #GlobalTestLog, &quot;Sequence of testing&quot;
-	
+
 	if bMakeWriterTest then
 		WriteTests (&quot;writer  : &quot;, true, GlobalTestLog)
 	end if
@@ -246,7 +246,7 @@ Sub WriteTestSequence
 	end if
 	if bMakeChartTest then
 		WriteTests (&quot;chart   : &quot;, false, GlobalTestLog)
-	end if	
+	end if
 	if bMakeMathTest then
 		WriteTests (&quot;math    : &quot;, false, GlobalTestLog)
 	end if
@@ -284,33 +284,33 @@ Sub WriteTestSequence
 		sWriteStr = sWriteStr + &quot;, open XML&quot;
 	end if
 	end if
-	
+
 	sWriteStr = sWriteStr + &quot;, close&quot;
-	
+
 	Print #GlobalTestLog, sWriteStr
 end Sub
 
 Sub WriteDBTests (sText as string, nFileChannel as integer)
 	Dim sWriteStr as string
-	
+
 	sWriteStr = sText
 	sWriteStr = sWriteStr + &quot;open / services&quot;
 	sWriteStr = sWriteStr + &quot;, insert&quot;
 	sWriteStr = sWriteStr + &quot;, delete&quot;
 	sWriteStr = sWriteStr + &quot;, seek&quot;
 	sWriteStr = sWriteStr + &quot;, close&quot;
-	
+
 	Print #nFileChannel, sWriteStr
 end Sub
 
 Sub WriteExtensionTests (sText as string, nFileChannel as integer)
 	Dim sWriteStr as string
-	
+
 	sWriteStr = sText
 	sWriteStr = sWriteStr + &quot;services&quot;
 	sWriteStr = sWriteStr + &quot;, install&quot;
 	sWriteStr = sWriteStr + &quot;, uninstall&quot;
-	
+
 	Print #nFileChannel, sWriteStr
 end Sub
 
@@ -318,7 +318,7 @@ Sub MakeDocTest
 	Dim oDoc as Object
 	Dim sFileNameXML$, sFileName8$
 	Dim bSuccess as Boolean
-	
+
 	On Local Error GoTo DOCTESTERROR
 	gCurrentTestCase = cLogfileFailed
 	LocalTestLog% = OpenLogDat (GetLogFileName(gCurrentDocTest))
@@ -342,35 +342,35 @@ Sub MakeDocTest
 		gCurrentTestCase = cDocSaveOpen8
 		if bMakeSaveOpen8Test and IsFilterAvailable (gCurrentDocTest or cFlt8) then
 			oDoc = LoadDoc (sFileName8)
-			
+
 &apos;			oDoc = Documents.open(sFileName)
 			LogTestResult( GetDocFilter(gCurrentDocTest or cFltNewDoc)+&quot; &quot;+ cMessageSaveOpen8Doc, not IsNull (oDoc) )
-			
+
 			if not IsNull (oDoc) then
 				gCurrentTestCase = cDocClose
 				oDoc.close (true)
-			end If	
+			end If
 		end if
-		
+
 		gCurrentTestCase = cDocSaveOpenXML
 		if bMakeSaveOpenXMLTest and IsFilterAvailable (gCurrentDocTest or cFltXML) then
 			oDoc = LoadDoc (sFileNameXML)
-			
+
 &apos;			oDoc = Documents.open(sFileName)
 			LogTestResult( GetDocFilter(gCurrentDocTest or cFltNewDoc)+&quot; &quot;+ cMessageSaveOpenXMLDoc, not IsNull (oDoc) )
-			
+
 			if not IsNull (oDoc) then
 				gCurrentTestCase = cDocClose
 				oDoc.close (true)
-			end If	
+			end If
 		end if
-		
-	end If		
+
+	end If
 	Print #LocalTestLog, &quot;---&quot;
 	Close #LocalTestLog%
 	LocalTestLog = 0
 	Exit Sub &apos; Without error
-	
+
 	DOCTESTERROR:
 	If ( gCurrentTestCase = cLogfileFailed ) then
 		LogTestResult( &quot; &quot;, False )
@@ -379,7 +379,7 @@ Sub MakeDocTest
 		LogTestResult( GetDocFilter(gCurrentDocTest or cFltNewDoc)+&quot; &quot;+ GetErrorMessage(gCurrentTestCase), False )
 		Close #LocalTestLog%
 		LocalTestLog = 0
-	End If	
+	End If
 	Exit Sub &apos; With error
 End Sub
 
@@ -402,7 +402,7 @@ Sub MakeNewDoc
 	Close #LocalTestLog%
 	LocalTestLog = 0
 	Exit Sub &apos; Without error
-	
+
 	DOCTESTERROR2:
 	If ( gCurrentTestCase = cLogfileFailed ) then
 		LogTestResult( &quot; &quot;, False )
@@ -411,7 +411,7 @@ Sub MakeNewDoc
 		LogTestResult( GetDocFilter(gCurrentDocTest or cFltNewDoc)+&quot; &quot;+ GetErrorMessage(gCurrentTestCase), False )
 		Close #LocalTestLog%
 		LocalTestLog = 0
-	End If	
+	End If
 	Exit Sub &apos; With error
 End Sub
 
@@ -441,7 +441,7 @@ Sub MakeChartTest
 	Close #LocalTestLog%
 	LocalTestLog = 0
 	Exit Sub &apos; Without error
-	
+
 	CHARTTESTERROR:
 	If ( gCurrentTestCase = cLogfileFailed ) then
 		LogTestResult( &quot; &quot;, False )
@@ -450,7 +450,7 @@ Sub MakeChartTest
 		LogTestResult( GetDocFilter(gCurrentDocTest or cFltNewDoc)+&quot; &quot;+ GetErrorMessage(gCurrentTestCase), FALSE )
 		Close #LocalTestLog%
 		LocalTestLog = 0
-	End If	
+	End If
 	Exit Sub &apos; With error
 End Sub
 
@@ -459,37 +459,37 @@ Sub LogState (bState as Boolean, sText as String, nLocaleFileChannel as integer)
 		Print #nLocaleFileChannel, sText+&quot; -&gt; ok&quot;
 	else
 		Print #nLocaleFileChannel, sText+&quot; -&gt; error&quot;
-	end If	
+	end If
 end Sub
 
 Function GetDocEndings (DocType as Integer) as String
 	Select Case ( DocType )
 		case frmWriter or cFlt8
-			GetDocEndings = &quot;odt&quot; &apos; Textdokument 
+			GetDocEndings = &quot;odt&quot; &apos; Textdokument
 		case frmCalc or cFlt8
-			GetDocEndings = &quot;ods&quot; &apos;Tabellendokument 
+			GetDocEndings = &quot;ods&quot; &apos;Tabellendokument
 		case frmImpress or cFlt8
-			GetDocEndings = &quot;odp&quot; &apos;PrÕsentation 
+			GetDocEndings = &quot;odp&quot; &apos;PrÕsentation
 		case frmDraw or cFlt8
 			GetDocEndings = &quot;odg&quot; &apos;Zeichen
 		case frmHyperText, frmHyperText or cFltXML
 			GetDocEndings = &quot;html&quot; &apos;Hypertext-Dokument
 		case frmWriter or cFltXML
-			GetDocEndings = &quot;sxw&quot; &apos; Textdokument 
+			GetDocEndings = &quot;sxw&quot; &apos; Textdokument
 		case frmCalc or cFltXML
-			GetDocEndings = &quot;sxc&quot; &apos;Tabellendokument 
+			GetDocEndings = &quot;sxc&quot; &apos;Tabellendokument
 		case frmImpress or cFltXML
-			GetDocEndings = &quot;sxi&quot; &apos;PrÕsentation 
+			GetDocEndings = &quot;sxi&quot; &apos;PrÕsentation
 		case frmDraw or cFltXML
 			GetDocEndings = &quot;sxd&quot; &apos;Zeichen
 		case else
 			GetDocEndings = &quot;&quot;
-	end Select		
+	end Select
 end Function
 
 Function GetDocFilter (DocType as Integer) as String
 	Select Case ( DocType )
-		case frmWriter or cFlt8 
+		case frmWriter or cFlt8
 			GetDocFilter = &quot;writer8&quot; &apos; text document
 		case frmCalc or cFlt8
 			GetDocFilter = &quot;calc8&quot; &apos; spreadsheet document
@@ -499,7 +499,7 @@ Function GetDocFilter (DocType as Integer) as String
 			GetDocFilter = &quot;draw8&quot; &apos; drawing
 		case frmMath or cFlt8
 			GetDocFilter = &quot;math8&quot; &apos; formula
-			
+
 		case frmWriter or cFltXML
 			GetDocFilter = &quot;StarOffice XML (Writer)&quot; &apos; text document
 		case frmCalc or cFltXML
@@ -510,10 +510,10 @@ Function GetDocFilter (DocType as Integer) as String
 			GetDocFilter = &quot;StarOffice XML (Draw)&quot; &apos; drawing
 		case frmMath or cFltXML
 			GetDocFilter = &quot;StarOffice XML (Math)&quot; &apos; formula
-			
+
 		case frmHyperText, frmHyperText or cFltXML
 			GetDocFilter = &quot;HTML&quot; &apos; HTML document
-			
+
 		case frmWriter or cFltNewDoc
 			GetDocFilter = &quot;swriter&quot; &apos; text document
 		case frmCalc or cFltNewDoc
@@ -530,12 +530,12 @@ Function GetDocFilter (DocType as Integer) as String
 			GetDocFilter = &quot;schart&quot; &apos; chart
 		case else
 			GetDocFilter = &quot;&quot;
-	end Select		
+	end Select
 end Function
 
 Function GetLogFileName (DocType as Integer) as String
 	Select Case ( DocType )
-		case frmWriter 
+		case frmWriter
 			GetLogFileName = sSWLogFileName &apos; text document
 		case frmCalc
 			GetLogFileName = sSCLogFileName &apos; spreadsheet document
@@ -554,18 +554,18 @@ Function GetLogFileName (DocType as Integer) as String
 		case frmTestClosure
 			GetLogFileName = sTestGlueLogFileName &apos; test framework
 		case frmDataBase
-			GetLogFileName = sSDBLogFileName &apos;Database	
+			GetLogFileName = sSDBLogFileName &apos;Database
 		case frmExtension
-			GetLogFileName = sExtLogFileName &apos;Extension	
+			GetLogFileName = sExtLogFileName &apos;Extension
 		case else
 			GetLogFileName = &quot;&quot;
-	end Select		
+	end Select
 end Function
 
 Function GetErrorMessageOnAction (nAction as Integer) as String
 	Select Case ( nAction )
-		case cDocNew 
-			GetErrorMessageOnAction = cMessageNewDoc 
+		case cDocNew
+			GetErrorMessageOnAction = cMessageNewDoc
 		case cDocSaveOpen8
 			GetErrorMessageOnAction = cMessageSaveOpen8Doc
 		case cDocSaveOpenXML
@@ -574,7 +574,7 @@ Function GetErrorMessageOnAction (nAction as Integer) as String
 			GetErrorMessageOnAction = cMessageCloseDoc
 		case else
 			GetErrorMessageOnAction = &quot;&quot;
-	end Select		
+	end Select
 end Function
 
 Function IsFilterAvailable (FilterType as Integer) as boolean
@@ -591,22 +591,22 @@ Function TestJava
 	gCurrentTestCase = cDocNew
 	oObj = createUnoService( cUnoJavaLoader )
 	LogTestResult( &quot;Java &quot;+ cMessageNewDoc, not IsNull (oObj) )
-	
+
 	Print #LocalTestLog, &quot;---&quot;
 	Close #LocalTestLog%
 	LocalTestLog = 0
-	
+
 	TestJava = not IsNull (oObj)
 End Function
 
 Sub LoadLibrary( LibName as String )
-	
+
 	dim args(1)
 	dim arg as new com.sun.star.beans.PropertyValue
 	arg.Name = &quot;LibraryName&quot;
 	arg.Value = LibName
 	args(0) = arg
-	
+
 	dim url as new com.sun.star.util.URL
 	dim trans as object
 	trans = createUnoService(&quot;com.sun.star.util.URLTransformer&quot; )
@@ -616,7 +616,7 @@ Sub LoadLibrary( LibName as String )
 	dim disp as object
 	disp = StarDesktop.currentFrame.queryDispatch( url, &quot;&quot;, 0 )
 	disp.dispatch( url, args() )
-	
+
 End Sub
 
 Sub LoadDoc (DocName as String) as Object
@@ -627,7 +627,7 @@ Sub LoadDoc (DocName as String) as Object
 	if Left(DocName, 5 ) &lt;&gt; &quot;file:&quot; then
 	trans.parsestrict( url )
 	endif
-	
+
 	Dim aPropArray(0) as Object
 	aPropArray(0) = CreateUnoStruct(&quot;com.sun.star.beans.PropertyValue&quot;)
 	aPropArray(0).Name = &quot;OpenFlags&quot;
@@ -647,17 +647,17 @@ Sub SaveDoc (DocName as String, oDoc as Object, sFilterName as string )
 	if Left(DocName, 5 ) &lt;&gt; &quot;file:&quot; then
 	trans.parsestrict( url )
 	endif
-	
+
 	if not (sFilterName = &quot;&quot;) then
 		Dim aPropArray(0) as Object
 		aPropArray(0) = CreateUnoStruct(&quot;com.sun.star.beans.PropertyValue&quot;)
 		aPropArray(0).Name = &quot;FilterName&quot;
 		aPropArray(0).Value = sFilterName
-	
+
 		oDoc.storeAsURL( url.Complete, aPropArray() )
 	else
 		MessageBox &quot;Filtername is unknown!&quot;
-	end if	
+	end if
 end Sub
 
 Function CloseDoc( oDoc as Object )

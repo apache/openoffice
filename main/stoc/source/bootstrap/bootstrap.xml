@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE module-description PUBLIC "-//StarOffice//DTD ComponentDescription 1.0//EN" "module-description.dtd">
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -28,7 +28,7 @@
         <author> Juergen Schmidt </author>
         <name>	com.sun.star.comp.stoc.DLLComponentLoader	</name>
         <description>
-	This component provides a mechanism to load an external compoment implemented as 
+	This component provides a mechanism to load an external compoment implemented as
 	a shared library.
 </description>
         <loader-name>	com.sun.star.loader.SharedLibrary	</loader-name>
@@ -58,7 +58,7 @@
         <name>	com.sun.star.comp.stoc.NestedRegistry	</name>
         <description>
 	This component provides access to a simple hierarchical registry. The registry based on
-	two registry file. 
+	two registry file.
 </description>
         <loader-name>	com.sun.star.loader.SharedLibrary	</loader-name>
         <language>	c++	</language>
@@ -236,7 +236,7 @@ This service is an implementation of the com.sun.star.security.Policy service.
         <name>	com.sun.star.comp.stoc.SimpleRegistry	</name>
         <description>
 	This component provides access to a simple hierarchical registry. The registry based on
-	one registry file. 
+	one registry file.
 </description>
         <loader-name>	com.sun.star.loader.SharedLibrary	</loader-name>
         <language>	c++	</language>
@@ -267,14 +267,14 @@ This service is an implementation of the com.sun.star.security.Policy service.
 	two ways are possible:
 	- register a component persistent in a registry on which the servicemanager
 	  works, using the com.sun.star.registry.ImplementationRegistration service.
-	- insert a corresponding factory for the service directly using the 
+	- insert a corresponding factory for the service directly using the
 	  interface XSet.
 
-	For creating an object of a requested service the service manager checks 
-	if a factory for this service is avaible, if not the registry will be 
+	For creating an object of a requested service the service manager checks
+	if a factory for this service is avaible, if not the registry will be
 	searched for information about this service. If there is an appropriate
-	entry, the component is loaded, a factory is created and announced to the 
-	service manager. Finding a factory the service manager calls the factory 
+	entry, the component is loaded, a factory is created and announced to the
+	service manager. Finding a factory the service manager calls the factory
 	for creating new objects.
 </description>
         <loader-name>	com.sun.star.loader.SharedLibrary	</loader-name>
