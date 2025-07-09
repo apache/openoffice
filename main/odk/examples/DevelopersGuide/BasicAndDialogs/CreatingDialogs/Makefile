@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the CreatingDialogs example of the Developers Guide.
@@ -41,7 +41,7 @@ COMPONENT_MANIFESTFILE = $(OUT_COMP_CLASS)/$(COMPONENT_NAME).uno.Manifest
 COMPONENT_UNOPKG_MANIFEST = $(OUT_COMP_CLASS)/$(COMPONENT_NAME)/META-INF/manifest.xml
 REGISTERFLAG = $(OUT_MISC)/devguide_basicanddialogs_creatingdialogs_register_component.flag
 
-# often the java files are structured in a hierarchy similar to the package, 
+# often the java files are structured in a hierarchy similar to the package,
 # for the example we know the package
 PACKAGE = com.sun.star.comp.sdk.examples
 
@@ -102,8 +102,8 @@ ifneq "$(SDK_AUTO_DEPLOYMENT)" ""
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 

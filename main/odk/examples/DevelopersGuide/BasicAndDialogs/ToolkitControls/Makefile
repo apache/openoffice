@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the CreatingDialogs example of the Developers Guide.
@@ -76,7 +76,7 @@ $(COMP_PACKAGE) : $(COMP_UNOPKG_MANIFEST) $(COMP_LIBRARY_FILES)
 	ToolkitControls/MultiPage.xba ToolkitControls/MultiPageDlg.xdl \
 	ToolkitControls/ProgressBar.xba ToolkitControls/ProgressBarDlg.xdl \
 	ToolkitControls/script.xlb ToolkitControls/ScrollBar.xba \
-	ToolkitControls/ScrollBarDlg.xdl 
+	ToolkitControls/ScrollBarDlg.xdl
 	cd $(subst /,$(PS),$(COMP_GEN_OUT)) && $(SDK_ZIP) -u ../../../bin/$(@F) META-INF/manifest.xml
 
 $(COMP_REGISTERFLAG) : $(COMP_PACKAGE)
@@ -88,8 +88,8 @@ ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 
@@ -97,8 +97,8 @@ $(SAMPLE_NAME) : $(COMP_REGISTERFLAG)
 	@echo --------------------------------------------------------------------------------
 	@echo The "$(QM)ToolkitControls$(QM)" library was installed in your office installation
 	@echo if SDK_AUTO_DEPLOYMENT = YES. You can use it in the BASIC IDE as a normal
-	@echo Basic library. 
-	@echo You can also load the document "$(QM)$(COMP_NAME).odt$(QM)" and press a button 
+	@echo Basic library.
+	@echo You can also load the document "$(QM)$(COMP_NAME).odt$(QM)" and press a button
 	@echo to run one of the example macros.
 	@echo -
 	@echo $(MAKE) $(COMP_NAME).odt.load

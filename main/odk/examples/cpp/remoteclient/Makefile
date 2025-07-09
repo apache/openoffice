@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the C++ remoteclient example of the SDK.
@@ -34,7 +34,7 @@ COMP_IMPL_NAME=$(COMP_NAME).uno.$(SHAREDLIB_EXT)
 COMP_IMPL=$(SHAREDLIB_OUT)/$(COMP_IMPL_NAME)
 COMP_RDB_NAME = $(COMP_NAME).uno.rdb
 COMP_RDB = $(OUT_BIN)/$(COMP_RDB_NAME)
-COMP_SERVICES=$(SHAREDLIB_OUT)/remoteclientsample.rdb 
+COMP_SERVICES=$(SHAREDLIB_OUT)/remoteclientsample.rdb
 
 ENV_COMP_SERVICES=-env:URE_MORE_SERVICES=$(URLPREFIX)$(COMP_SERVICES)
 
@@ -59,7 +59,7 @@ include $(SETTINGS)/stdtarget.mk
 $(OUT_BIN)/%.rdb :
 	-$(MKDIR) $(subst /,$(PS),$(@D))
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
-	$(REGMERGE) $@ / $(URE_TYPES) 
+	$(REGMERGE) $@ / $(URE_TYPES)
 
 $(OUT_COMP_SLO)/%.$(OBJ_EXT) : %.cxx $(SDKTYPEFLAG)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
@@ -81,7 +81,7 @@ $(SHAREDLIB_OUT)/%.$(SHAREDLIB_EXT) : $(SLOFILES)
 ifeq "$(OS)" "MACOSX"
 	$(INSTALL_NAME_URELIBS)  $@
 endif
-endif	
+endif
 
 $(COMP_SERVICES) :
 	-$(MKDIR) $(subst /,$(PS),$(@D))
@@ -98,16 +98,16 @@ $(COMP_SERVICES) :
 #CppClientExample : $(COMP_IMPL) $(COMP_ENV_FLAG)
 CppClientExample : $(COMP_IMPL) $(COMP_SERVICES)
 	@echo --------------------------------------------------------------------------------
-	@echo The remoteclient C++ component can be used by using the uno binary. Use the 
-	@echo the follwong command to start the example. The run target starts a remote 
+	@echo The remoteclient C++ component can be used by using the uno binary. Use the
+	@echo the follwong command to start the example. The run target starts a remote
 	@echo server and connect with the client to this server.
-	@echo - 
+	@echo -
 	@echo $(MAKE) remoteclient.run
-	@echo - 
+	@echo -
 	@echo NOTE: The example uses the $(QM)uno$(QM) tool to prepare a working UNO environment.
 	@echo $(SQM)      $(SQM)The example component is made available via -env:URE_MORE_SERVICES=...
 	@echo $(SQM)      $(SQM)Please check the generated $(QM)$(COMP_SERVICES)$(QM) to see how you can specify your own components in such an environment
-	@echo $(SQM)      $(SQM)and how to use the passive UNO registration.  
+	@echo $(SQM)      $(SQM)and how to use the passive UNO registration.
 	@echo --------------------------------------------------------------------------------
 
 %.run: $(COMP_IMPL)

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the C++ FlatXmlFilter component example of the Developers Guide.
@@ -59,7 +59,7 @@ $(OUT_COMP_SLO)/%.$(OBJ_EXT) : %.cxx $(SDKTYPEFLAG)
 
 #$(COMP_MAPFILE) : $(SLOFILES)
 #	-$(MKDIR) $(subst /,$(PS),$(@D))
-#	cat $(PRJ)/settings/component.uno.map > $(COMP_MAPFILE) 
+#	cat $(PRJ)/settings/component.uno.map > $(COMP_MAPFILE)
 #ifeq "$(OS)" "MACOSX"
 #	nm -gx $(SLOFILES) | $(ADDSYMBOLS) >> $(COMP_MAPFILE)
 #endif
@@ -80,7 +80,7 @@ $(SHAREDLIB_OUT)/%.$(SHAREDLIB_EXT) : $(SLOFILES)
 ifeq "$(OS)" "MACOSX"
 	$(INSTALL_NAME_URELIBS)  $@
 endif
-endif	
+endif
 
 # rule for component package manifest
 $(OUT_COMP_GEN)/%/manifest.xml :
@@ -109,7 +109,7 @@ $(COMP_COMPONENTS) :
 $(COMP_PACKAGE) : $(SHAREDLIB_OUT)/$(COMP_IMPL_NAME) FlatXmlFilter_cpp.xcu $(COMP_UNOPKG_MANIFEST) $(COMP_COMPONENTS)
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
 	-$(MKDIR) $(subst /,$(PS),$(@D))
-	-$(MKDIR) $(subst /,$(PS),$(OUT_COMP_GEN)/$(UNOPKG_PLATFORM))	 
+	-$(MKDIR) $(subst /,$(PS),$(OUT_COMP_GEN)/$(UNOPKG_PLATFORM))
 	$(COPY) $(subst /,$(PS),$<) $(subst /,$(PS),$(OUT_COMP_GEN)/$(UNOPKG_PLATFORM))
 	$(SDK_ZIP) $@ FlatXmlFilter_cpp.xcu
 	cd $(subst /,$(PS),$(OUT_COMP_GEN)) && $(SDK_ZIP) -u ../../bin/$(@F) $(COMP_NAME).components
@@ -125,12 +125,12 @@ ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 
-FlatXmlFilterCppExample : $(COMP_REGISTERFLAG) 
+FlatXmlFilterCppExample : $(COMP_REGISTERFLAG)
 	@echo --------------------------------------------------------------------------------
 	@echo The C++ FlatXmlFilter component is installed if SDK_AUTO_DEPLOYMENT = YES.
 	@echo You can use the filters "$(QM)DevGuide FlatXML ...$(QM)" inside your office installation
