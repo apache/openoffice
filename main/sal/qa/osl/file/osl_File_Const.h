@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,35 +50,35 @@ extern "C"
 #endif
 
 
-	
+
 //------------------------------------------------------------------------
 // common used string resource
 // these common used string will be used as assist resource in test
 // they are mostly OS independent, some of the resource can be reused
-// so, acommon test data repository will be better since it can be 
-// shared among all test code 
+// so, acommon test data repository will be better since it can be
+// shared among all test code
 //------------------------------------------------------------------------
-	
+
 const sal_Char pBuffer_Char[]   = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const sal_Char pBuffer_Number[] = "1234567890";
 const sal_Char pBuffer_Blank[]  = "";
-	
+
 #define TRUNC_LEN               10;
 #define ENLARG_LEN              100;
 
 
-	
+
 //------------------------------------------------------------------------
-// OS dependent/independent definitions/includes  
-// we use FILE_PREFIX for URL prefix, 
-//        TEST_PLATFORM for test platform initial, 
-//        TEST_PLATFORM_ROOT for root dir in comrresponding platform, 
-//        TEST_PLATFORM_TEMP for temp dir in comrresponding platform, 
+// OS dependent/independent definitions/includes
+// we use FILE_PREFIX for URL prefix,
+//        TEST_PLATFORM for test platform initial,
+//        TEST_PLATFORM_ROOT for root dir in comrresponding platform,
+//        TEST_PLATFORM_TEMP for temp dir in comrresponding platform,
 //        PATH_LIST_DELIMITER for seperator of path list in comrresponding platform,
 //        PATH_SEPERATOR for seperator in URL or system path in comrresponding platform,
 //        PATH_MAX/MAX_PATH for max path length in comrresponding platform,
 //------------------------------------------------------------------------
-	
+
 //------------------------------------------------------------------------
 // OS independent const definition
 //------------------------------------------------------------------------
@@ -121,9 +121,9 @@ const sal_Char pBuffer_Blank[]  = "";
 
 
 //------------------------------------------------------------------------
-// macro definition for the ASCII array/OUString declarations, 
-// we use p### for the ASCII array, 
-//        a### for the OUString, 
+// macro definition for the ASCII array/OUString declarations,
+// we use p### for the ASCII array,
+//        a### for the OUString,
 //        n###Len for its length
 //------------------------------------------------------------------------
 
@@ -139,46 +139,46 @@ const sal_Char pBuffer_Blank[]  = "";
 OSLTEST_DECLARE( NullURL,  "" );
 OSLTEST_DECLARE( SlashURL, PATH_SEPERATOR );
 OSLTEST_DECLARE( PreURL, FILE_PREFIX );
-OSLTEST_DECLARE( RootURL,  FILE_PREFIX TEST_PLATFORM ); 
+OSLTEST_DECLARE( RootURL,  FILE_PREFIX TEST_PLATFORM );
 
-OSLTEST_DECLARE( TempDirectoryURL,  FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP ); 
-OSLTEST_DECLARE( TempDirectorySys,  TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP ); 
-OSLTEST_DECLARE( UserDirectoryURL,  FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "" ); 
+OSLTEST_DECLARE( TempDirectoryURL,  FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP );
+OSLTEST_DECLARE( TempDirectorySys,  TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP );
+OSLTEST_DECLARE( UserDirectoryURL,  FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "" );
 OSLTEST_DECLARE( UserDirectorySys,  TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "" );
 
 //------------------------------------------------------------------------
 // common used URL:temp, canonical, root, relative, link,etc
 //------------------------------------------------------------------------
-OSLTEST_DECLARE( CanURL1,  FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/canonical.name" ); 
-OSLTEST_DECLARE( CanURL2,  "ca@#;+.,$///78no\0ni..name" ); 
-OSLTEST_DECLARE( CanURL3,  "ca@#;+.,$//tmp/678nonical//name" ); 
-OSLTEST_DECLARE( CanURL4,  "canonical.name" ); 
+OSLTEST_DECLARE( CanURL1,  FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/canonical.name" );
+OSLTEST_DECLARE( CanURL2,  "ca@#;+.,$///78no\0ni..name" );
+OSLTEST_DECLARE( CanURL3,  "ca@#;+.,$//tmp/678nonical//name" );
+OSLTEST_DECLARE( CanURL4,  "canonical.name" );
 OSLTEST_DECLARE( TmpName1, "tmpdir" );
-OSLTEST_DECLARE( TmpName2, "tmpname" ); 
-OSLTEST_DECLARE( TmpName3, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpdir" ); 
-OSLTEST_DECLARE( TmpName4, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpdir/tmpname" ); 
-OSLTEST_DECLARE( TmpName5, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpdir/../tmpdir/./tmpname" ); 
-OSLTEST_DECLARE( TmpName6, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpname" ); 
-OSLTEST_DECLARE( TmpName7, FILE_PREFIX TEST_PLATFORM "tmpname" ); 
-OSLTEST_DECLARE( TmpName8, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpname/tmpdir" ); 
-OSLTEST_DECLARE( TmpName9, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpdir/../tmpdir/./" ); 
+OSLTEST_DECLARE( TmpName2, "tmpname" );
+OSLTEST_DECLARE( TmpName3, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpdir" );
+OSLTEST_DECLARE( TmpName4, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpdir/tmpname" );
+OSLTEST_DECLARE( TmpName5, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpdir/../tmpdir/./tmpname" );
+OSLTEST_DECLARE( TmpName6, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpname" );
+OSLTEST_DECLARE( TmpName7, FILE_PREFIX TEST_PLATFORM "tmpname" );
+OSLTEST_DECLARE( TmpName8, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpname/tmpdir" );
+OSLTEST_DECLARE( TmpName9, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/tmpdir/../tmpdir/./" );
 OSLTEST_DECLARE_UTF8( TmpName10, FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/%E6%9C%AA%E5%91%BD%E5%90%8Dzhgb18030" );
 
-OSLTEST_DECLARE( RelURL1,  "relative/file1" ); 
-OSLTEST_DECLARE( RelURL2,  "relative/./file2" ); 
+OSLTEST_DECLARE( RelURL1,  "relative/file1" );
+OSLTEST_DECLARE( RelURL2,  "relative/./file2" );
 OSLTEST_DECLARE( RelURL3,  "relative/../file3" );
-OSLTEST_DECLARE( RelURL4,  "././relative/../file4" ); 
-OSLTEST_DECLARE( RelURL5,  TEST_PLATFORM_TEMP "/./../" TEST_PLATFORM_TEMP ); 
+OSLTEST_DECLARE( RelURL4,  "././relative/../file4" );
+OSLTEST_DECLARE( RelURL5,  TEST_PLATFORM_TEMP "/./../" TEST_PLATFORM_TEMP );
 OSLTEST_DECLARE( LnkURL1,  FILE_PREFIX TEST_PLATFORM TEST_PLATFORM_TEMP "/link.file" );
 OSLTEST_DECLARE( HidURL1,  ".hiddenfile" );
 
 //------------------------------------------------------------------------
 // common used System Path:temp, root,etc
 //------------------------------------------------------------------------
-OSLTEST_DECLARE( RootSys,  TEST_PLATFORM_ROOT ); 
-OSLTEST_DECLARE( SysPath1, TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/system.path" ); 
-OSLTEST_DECLARE( SysPath2, TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/system/path" ); 
-OSLTEST_DECLARE( SysPath3, TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/tmpdir" ); 
+OSLTEST_DECLARE( RootSys,  TEST_PLATFORM_ROOT );
+OSLTEST_DECLARE( SysPath1, TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/system.path" );
+OSLTEST_DECLARE( SysPath2, TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/system/path" );
+OSLTEST_DECLARE( SysPath3, TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/tmpdir" );
 OSLTEST_DECLARE( SysPath4, TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/tmpname" );
 OSLTEST_DECLARE_UTF8( SysPath5, TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/%E6%9C%AA%E5%91%BD%E5%90%8Dzhgb18030" );
 OSLTEST_DECLARE( FifoSys,  TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/tmpdir/fifo" );
@@ -191,7 +191,7 @@ OSLTEST_DECLARE( FifoSys,  TEST_PLATFORM_ROOT TEST_PLATFORM_TEMP "/tmpdir/fifo" 
 #if ( defined UNX ) || ( defined OS2 )                                 //          Unix
 OSLTEST_DECLARE( TypeURL1,  FILE_PREFIX "dev/ccv");                    //socket    Solaris/Linux
 OSLTEST_DECLARE( TypeURL2,  FILE_PREFIX "devices/pseudo/tcp@0:tcp");   //special   Solaris/Linux
-OSLTEST_DECLARE( TypeURL3,  FILE_PREFIX "lib" );                       //link      Solaris 
+OSLTEST_DECLARE( TypeURL3,  FILE_PREFIX "lib" );                       //link      Solaris
 #else                                                                  //          Windows
 OSLTEST_DECLARE( TypeURL1,  FILE_PREFIX "" );
 OSLTEST_DECLARE( TypeURL2,  FILE_PREFIX "" );
@@ -205,7 +205,7 @@ OSLTEST_DECLARE( TypeURL3,  FILE_PREFIX "" );
 #if ( defined UNX ) || ( defined OS2 )					//			Unix
 OSLTEST_DECLARE( VolURL1,  FILE_PREFIX  "");			//ufs		Solaris/Linux
 #ifdef SOLARIS
-OSLTEST_DECLARE( VolURL2,  FILE_PREFIX  "dev/fd" );		//fd		Solaris 
+OSLTEST_DECLARE( VolURL2,  FILE_PREFIX  "dev/fd" );		//fd		Solaris
 #else
 OSLTEST_DECLARE( VolURL2,  FILE_PREFIX  "dev/floppy/0u1440" );	//fd0		Linux
 #endif

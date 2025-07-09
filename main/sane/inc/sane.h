@@ -242,7 +242,7 @@ extern SANE_String_Const sane_strstatus (SANE_Status status);
 
 #ifdef __cplusplus
 }
-#endif 
+#endif
 
 
 #endif /* sane_h */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -157,7 +157,7 @@ sal_Int32 SAL_CALL rtl_ustr_reverseCompare_WithLength( const sal_Unicode * first
 /** Compare two strings from back to front for equality.
 
     The comparison is based on the numeric value of each character in the
-    strings and returns 'true' if, ans only if, both strings are equal.  
+    strings and returns 'true' if, ans only if, both strings are equal.
 	This function cannot be used for language-specific sorting.
 
     @param first

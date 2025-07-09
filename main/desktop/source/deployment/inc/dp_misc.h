@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -115,7 +115,7 @@ oslProcess raiseProcess( ::rtl::OUString const & appURL,
 //==============================================================================
 
 /** writes the argument string to the console.
-    On Linux/Unix/etc. it converts the UTF16 string to an ANSI string using 
+    On Linux/Unix/etc. it converts the UTF16 string to an ANSI string using
     osl_getThreadTextEncoding() as target encoding. On Windows it uses WriteFile
     with the standard out stream. unopkg.com reads the data and prints them out using
     WriteConsoleW.
@@ -125,21 +125,21 @@ void writeConsole(::rtl::OUString const & sText);
 
 /** writes the argument string to the console.
     On Linux/Unix/etc. the string is passed into fprintf without any conversion.
-    On Windows the string is converted to UTF16 assuming the argument is UTF8 
-    encoded. The UTF16 string is written to stdout with WriteFile. unopkg.com 
+    On Windows the string is converted to UTF16 assuming the argument is UTF8
+    encoded. The UTF16 string is written to stdout with WriteFile. unopkg.com
     reads the data and prints them out using WriteConsoleW.
 */
 DESKTOP_DEPLOYMENTMISC_DLLPUBLIC
 void writeConsole(::rtl::OString const & sText);
 
-/** writes the argument to the console using the error stream. 
+/** writes the argument to the console using the error stream.
     Otherwise the same as writeConsole.
 */
 DESKTOP_DEPLOYMENTMISC_DLLPUBLIC
 void writeConsoleError(::rtl::OUString const & sText);
 
 
-/** writes the argument to the console using the error stream. 
+/** writes the argument to the console using the error stream.
     Otherwise the same as writeConsole.
 */
 DESKTOP_DEPLOYMENTMISC_DLLPUBLIC
@@ -165,7 +165,7 @@ void TRACE(::rtl::OString const & sText);
 
 /** registers or revokes shared or bundled extensions which have been
     recently added or removed.
-*/    
+*/
 DESKTOP_DEPLOYMENTMISC_DLLPUBLIC
 void syncRepositories(::com::sun::star::uno::Reference<
                       ::com::sun::star::ucb::XCommandEnvironment> const & xCmdEnv);

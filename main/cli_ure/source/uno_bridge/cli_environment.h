@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,10 +43,10 @@ public __gc class Cli_environment
 
 #if OSL_DEBUG_LEVEL >= 1
     int _numRegisteredObjects;
-#endif     
+#endif
 
 public:
-    
+
     static Cli_environment()
     {
         m_objects = Hashtable::Synchronized(new Hashtable());
@@ -61,7 +61,7 @@ public:
     inline Cli_environment();
 
     ~Cli_environment();
-    
+
     /**
        Registers an UNO object as being mapped by this bridge. The resulting
        cli object is represents all interfaces of the UNO object. Therefore the
@@ -80,7 +80,7 @@ public:
        destructors.
      */
     inline void revokeInterface(System::String* oid);
-    
+
     void revokeInterface(System::String* oid, System::Type* type);
     /**
      * Retrieves an interface identified by its object id and type from this

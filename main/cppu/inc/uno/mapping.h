@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ typedef void (SAL_CALL * uno_AcquireMappingFunc)(struct _uno_Mapping *);
 typedef void (SAL_CALL * uno_ReleaseMappingFunc)(struct _uno_Mapping *);
 
 /** Function pointer declaration to map an interface from one environment to another.
-    
+
 	@param pMapping			mapping
 	@param ppOut			[inout] destination interface; existing interfaces are released
 	@param pInterface		source interface
@@ -87,7 +87,7 @@ typedef struct _uno_Mapping
 #endif
 
 /** Gets an interface mapping from one environment to another.
-    
+
 	@param ppMapping	[inout] mapping; existing mapping will be released
 	@param pFrom		source environment
 	@param pTo			destination environment
@@ -103,7 +103,7 @@ void SAL_CALL uno_getMapping(
 	SAL_THROW_EXTERN_C();
 
 /** Callback function pointer declaration to get a mapping.
-    
+
 	@param ppMapping	inout mapping
 	@param pFrom		source environment
 	@param pTo			destination environment
@@ -116,7 +116,7 @@ typedef void (SAL_CALL * uno_getMappingFunc)(
 	rtl_uString * pAddPurpose );
 
 /** Registers a callback being called each time a mapping is demanded.
-    
+
 	@param pCallback	callback function
 */
 void SAL_CALL uno_registerMappingCallback(
@@ -124,7 +124,7 @@ void SAL_CALL uno_registerMappingCallback(
 	SAL_THROW_EXTERN_C();
 
 /** Revokes a mapping callback registration.
-    
+
 	@param pCallback	callback function
 */
 void SAL_CALL uno_revokeMappingCallback(
@@ -132,14 +132,14 @@ void SAL_CALL uno_revokeMappingCallback(
 	SAL_THROW_EXTERN_C();
 
 /** Function pointer declaration to free a mapping.
-    
+
 	@param pMapping		mapping to be freed
 */
 typedef void (SAL_CALL * uno_freeMappingFunc)( struct _uno_Mapping * pMapping );
 
 /** Registers a mapping. A mapping registers itself on first acquire and revokes itself on last
     release. The given freeMapping function is called by the runtime to cleanup any resources.
-    
+
 	@param ppMapping	inout mapping to be registered
 	@param freeMapping	called by runtime to delete mapping
 	@param pFrom		source environment
@@ -153,7 +153,7 @@ void SAL_CALL uno_registerMapping(
 
 /** Revokes a mapping. A mapping registers itself on first acquire and revokes itself on last
     release.
-    
+
 	@param pMapping		mapping to be revoked
 */
 void SAL_CALL uno_revokeMapping(
@@ -162,7 +162,7 @@ void SAL_CALL uno_revokeMapping(
 
 /** Gets an interface mapping from one language environment to another by corresponding environment
     type names.
-    
+
 	@param ppMapping	[inout] mapping; existing mapping will be released
 	@param pFrom		source environment type name
 	@param pTo			destination environment type name
@@ -182,7 +182,7 @@ void SAL_CALL uno_getMappingByName(
 
 /** Function pointer declaration to get a mapping from a loaded bridge. Bridges export a function
     called uno_ext_getMapping() of this signature.
-    
+
 	@param ppMapping	[inout] mapping; existing mapping will be released
 	@pFrom				source environment
 	@pTo				destination environment

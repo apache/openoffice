@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,25 +51,25 @@ struct Mapping : public uno_Mapping
 struct Bridge
 {
     mutable oslInterlockedCount m_ref;
-    
+
     uno_ExtEnvironment *        m_uno_env;
     uno_Environment *           m_java_env;
-    
+
     Mapping                     m_java2uno;
     Mapping                     m_uno2java;
     bool                        m_registered_java2uno;
-    
+
     JNI_info const *            m_jni_info;
-    
+
     //
     ~Bridge() SAL_THROW( () );
     explicit Bridge(
         uno_Environment * java_env, uno_ExtEnvironment * uno_env,
         bool registered_java2uno );
-    
+
     void acquire() const;
     void release() const;
-    
+
     // jni_data.cxx
     void map_to_uno(
         JNI_context const & jni,
@@ -85,7 +85,7 @@ struct Bridge
         JNI_type_info const * info /* maybe 0 */,
         bool in_param, bool out_param,
         bool special_wrapped_integral_types = false ) const;
-    
+
     // jni_uno2java.cxx
     void handle_uno_exc(
         JNI_context const & jni, uno_Any * uno_exc ) const;
@@ -99,7 +99,7 @@ struct Bridge
     jobject map_to_java(
         JNI_context const & jni,
         uno_Interface * pUnoI, JNI_interface_type_info const * info ) const;
-    
+
     // jni_java2uno.cxx
     void handle_java_exc(
         JNI_context const & jni,
