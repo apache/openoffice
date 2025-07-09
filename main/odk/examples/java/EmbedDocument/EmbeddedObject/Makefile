@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 PRJ=../../../..
@@ -28,7 +28,7 @@ include $(SETTINGS)/std.mk
 
 # Define non-platform/compiler specific settings
 
-# we use the sample directory name for separating this example 
+# we use the sample directory name for separating this example
 # from others in the output directory
 SAMPLE_NAME=EmbeddedObject
 SAMPLE_CLASS_OUT=$(OUT_CLASS)/$(SAMPLE_NAME)
@@ -61,7 +61,7 @@ SDK_CLASSPATH = $(subst $(EMPTYSTRING) $(PATH_SEPARATOR),$(PATH_SEPARATOR),$(CLA
 
 
 # Targets
-.PHONY: ALL 
+.PHONY: ALL
 ALL : $(COMP_NAME)
 
 include $(SETTINGS)/stdtarget.mk
@@ -111,16 +111,16 @@ ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 
 $(COMP_NAME) : $(COMP_REGISTERFLAG)
 	@echo ------
 	@echo The $(COMP_NAME) component was installed if SDK_AUTO_DEPLOYMENT = YES.
-	@echo Load the "$(QM)$(SAMPLE_NAME).odt$(QM)" document to see how this component works. 
-	@echo You can use this component inside your office installation, see the example 
+	@echo Load the "$(QM)$(SAMPLE_NAME).odt$(QM)" document to see how this component works.
+	@echo You can use this component inside your office installation, see the example
 	@echo description.
 	@echo -
 	@echo $(MAKE) $(SAMPLE_NAME).odt.load

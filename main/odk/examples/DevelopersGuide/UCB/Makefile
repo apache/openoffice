@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the UCB examples of the Developers Guide.
@@ -99,13 +99,13 @@ $(OUT_APP_CLASS)/%.jar : $(OUT_APP_CLASS)/%.mf $(OUT_APP_CLASS)/%.class $(APP_CL
 	+cd $(subst /,$(PS),$(OUT_APP_CLASS)) && $(SDK_JAR) cvfm $(@F) $*.mf $*.class $(APP_CLASSNAMES)
 	+$(SDK_JAR) uvf $@ $(SDK_JAVA_UNO_BOOTSTRAP_FILES)
 
-$(APP2_JAR) : $(OUT_APP_CLASS)/$(APP2_NAME).mf $(OUT_APP_CLASS)/$(APP2_NAME).class $(OUT_APP_CLASS)/DataStreamRetriever.class $(APP_CLASSFILES) 
+$(APP2_JAR) : $(OUT_APP_CLASS)/$(APP2_NAME).mf $(OUT_APP_CLASS)/$(APP2_NAME).class $(OUT_APP_CLASS)/DataStreamRetriever.class $(APP_CLASSFILES)
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
 	-$(MKDIR) $(subst /,$(PS),$(@D))
 	+cd $(subst /,$(PS),$(OUT_APP_CLASS)) && $(SDK_JAR) cvfm $(@F) $(basename $(@F)).mf $(basename $(@F)).class DataStreamRetriever.class $(APP_CLASSNAMES)
 	+$(SDK_JAR) uvf $@ $(SDK_JAVA_UNO_BOOTSTRAP_FILES)
 
-$(APP6_JAR) : $(OUT_APP_CLASS)/$(APP6_NAME).mf $(OUT_APP_CLASS)/$(APP6_NAME).class $(OUT_APP_CLASS)/DataStreamRetriever.class $(APP_CLASSFILES) 
+$(APP6_JAR) : $(OUT_APP_CLASS)/$(APP6_NAME).mf $(OUT_APP_CLASS)/$(APP6_NAME).class $(OUT_APP_CLASS)/DataStreamRetriever.class $(APP_CLASSFILES)
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
 	-$(MKDIR) $(subst /,$(PS),$(@D))
 	+cd $(subst /,$(PS),$(OUT_APP_CLASS)) && $(SDK_JAR) cvfm $(@F) $(basename $(@F)).mf $(basename $(@F)).class DataStreamRetriever.class $(APP_CLASSNAMES)
