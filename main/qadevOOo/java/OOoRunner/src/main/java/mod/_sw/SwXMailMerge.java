@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,7 +81,7 @@ public class SwXMailMerge extends TestCase {
         XInterface oRowSet = null;
         Object oConnection = null;
         XJob Job = null;
-        
+
         log.println(" instantiate MailMerge service");
         try {
             oObj = (XInterface) ( (XMultiServiceFactory) Param.getMSF()).createInstance
@@ -89,7 +89,7 @@ public class SwXMailMerge extends TestCase {
         } catch (Exception e) {
             throw new StatusException("Can't create object environment", e) ;
         }
-        
+
         // <set some variables>
         String cTestDoc = utils.getFullTestURL("MailMerge.sxw");
         //cMailMerge_DocumentURL = cTestDoc
@@ -101,7 +101,7 @@ public class SwXMailMerge extends TestCase {
         sel[1] = new int[5];
         Object[] myBookMarks = new Object[2];
         // </set some variables>
-        
+
         // <create XResultSet>
         log.println("create a XResultSet");
         try {
@@ -110,9 +110,9 @@ public class SwXMailMerge extends TestCase {
         } catch (Exception e) {
             throw new StatusException("Can't create com.sun.star.sdb.RowSet", e);
         }
-        XPropertySet oRowSetProps = (XPropertySet) 
+        XPropertySet oRowSetProps = (XPropertySet)
                         UnoRuntime.queryInterface(XPropertySet.class, oRowSet);
-        XRowSet xRowSet = (XRowSet) 
+        XRowSet xRowSet = (XRowSet)
                         UnoRuntime.queryInterface(XRowSet.class, oRowSet);
         try {
             oRowSetProps.setPropertyValue("DataSourceName",cDataSourceName);
@@ -132,13 +132,13 @@ public class SwXMailMerge extends TestCase {
         } catch (SQLException e) {
             throw new StatusException("Can't execute oRowSet", e);
         }
-        
-        XResultSet oResultSet = (XResultSet) 
+
+        XResultSet oResultSet = (XResultSet)
                            UnoRuntime.queryInterface(XResultSet.class, oRowSet);
 
-        
-        
-        
+
+
+
         // <create Bookmarks>
         log.println("create bookmarks");
         try {
@@ -152,22 +152,22 @@ public class SwXMailMerge extends TestCase {
             throw new StatusException("Can't get Bookmarks", e);
         }
         // </create Bookmarks>
-        
+
         // <fill object with values>
-        
+
         log.println("fill MailMerge with default connection");
-        
-        XPropertySet oObjProps = (XPropertySet) 
+
+        XPropertySet oObjProps = (XPropertySet)
                             UnoRuntime.queryInterface(XPropertySet.class, oObj);
         try {
-            oObjProps.setPropertyValue("ActiveConnection", getLocalXConnection(Param));            
-            oObjProps.setPropertyValue("DataSourceName", cDataSourceName);            
+            oObjProps.setPropertyValue("ActiveConnection", getLocalXConnection(Param));
+            oObjProps.setPropertyValue("DataSourceName", cDataSourceName);
             oObjProps.setPropertyValue("Command", cDataCommand);
             oObjProps.setPropertyValue("CommandType", new Integer(CommandType.TABLE));
             oObjProps.setPropertyValue("OutputType", new Short(MailMergeType.FILE));
             oObjProps.setPropertyValue("DocumentURL", cTestDoc);
             oObjProps.setPropertyValue("OutputURL", cOutputURL);
-            oObjProps.setPropertyValue("FileNamePrefix", "Author");            
+            oObjProps.setPropertyValue("FileNamePrefix", "Author");
             oObjProps.setPropertyValue("FileNameFromColumn", new Boolean(false));
             oObjProps.setPropertyValue("Selection", new Object[0]);
 
@@ -181,15 +181,15 @@ public class SwXMailMerge extends TestCase {
             throw new StatusException("Can't set properties on oObj", e);
         }
         // </fill object with values>
-        
-        
+
+
         // <create object relations>
         Object[] vXJobArgs = new Object[4];
         NamedValue[] vXJobArg0 = new NamedValue[8];
         NamedValue[] vXJobArg1 = new NamedValue[7];
         NamedValue[] vXJobArg2 = new NamedValue[10];
         NamedValue[] vXJobArg3 = new NamedValue[0];
-        
+
         // first Arguments
         vXJobArg0[0] = new NamedValue("DataSourceName", cDataSourceName);
         vXJobArg0[1] = new NamedValue("Command", cDataCommand);
@@ -222,13 +222,13 @@ public class SwXMailMerge extends TestCase {
         vXJobArg2[7] = new NamedValue("FileNamePrefix", "Identifier");
         vXJobArg2[8] = new NamedValue("FileNameFromColumn", new Boolean(true));
         vXJobArg2[9] = new NamedValue("Selection", myBookMarks);
-        
+
         vXJobArgs[0] = vXJobArg0;
         vXJobArgs[1] = vXJobArg1;
         vXJobArgs[2] = vXJobArg2;
         vXJobArgs[3] = vXJobArg3;
-        
-        
+
+
         Job = (XJob) UnoRuntime.queryInterface(XJob.class, oObj);
         try{
             Job.execute(vXJobArg2);
@@ -237,11 +237,11 @@ public class SwXMailMerge extends TestCase {
         } catch (  Exception e){
             System.out.println(e.toString());
         }
-        
+
 
         // <create XResultSet>
         log.println("create XResultSet");
-        
+
         try {
             oRowSet = (XInterface) ( (XMultiServiceFactory) Param.getMSF()).createInstance
                 ("com.sun.star.sdb.RowSet");
@@ -249,9 +249,9 @@ public class SwXMailMerge extends TestCase {
             throw new StatusException("Can't create com.sun.star.sdb.RowSet", e);
         }
         oRowSetProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, oRowSet);
-        
+
         xRowSet = (XRowSet) UnoRuntime.queryInterface(XRowSet.class, oRowSet);
-        
+
         try {
             oRowSetProps.setPropertyValue("DataSourceName",cDataSourceName);
             oRowSetProps.setPropertyValue("Command",cDataCommand);
@@ -270,57 +270,57 @@ public class SwXMailMerge extends TestCase {
         } catch (SQLException e) {
             throw new StatusException("Can't execute oRowSet", e);
         }
-        
-        oResultSet = (XResultSet) 
+
+        oResultSet = (XResultSet)
                            UnoRuntime.queryInterface(XResultSet.class, oRowSet);
-        
+
         XResultSet oMMXResultSet = null;
         try {
-            oMMXResultSet = (XResultSet) 
-                           UnoRuntime.queryInterface(XResultSet.class, 
-                               ( (XInterface) 
-                                ( (XMultiServiceFactory) 
+            oMMXResultSet = (XResultSet)
+                           UnoRuntime.queryInterface(XResultSet.class,
+                               ( (XInterface)
+                                ( (XMultiServiceFactory)
                                 Param.getMSF()).createInstance("com.sun.star.sdb.RowSet")));
-            
+
         } catch (Exception e) {
             throw new StatusException("Can't create com.sun.star.sdb.RowSet", e);
         }
         // </create object relations>
-        
+
         TestEnvironment tEnv = new TestEnvironment(oObj) ;
-        
+
         // <adding object relations>
-        
+
         // com.sun.star.sdb.DataAccessDescriptor
         tEnv.addObjRelation("DataAccessDescriptor.XResultSet", oResultSet);
         tEnv.addObjRelation("DataAccessDescriptor.XConnection", getRemoteXConnection(Param));
-        
+
         // com.sun.star.text.MailMaerge
         tEnv.addObjRelation("MailMerge.XConnection", getRemoteXConnection(Param));
         tEnv.addObjRelation("MailMerge.XResultSet", oMMXResultSet);
-        
+
         // com.sun.star.text.XMailMergeBroadcaster
         tEnv.addObjRelation( "executeArgs", vXJobArg0);
         tEnv.addObjRelation( "Job", Job);
-        
+
         // com.sun.star.task.XJob
         tEnv.addObjRelation("XJobArgs", vXJobArgs);
-        
+
         // </adding object relations>
-        
+
         return tEnv ;
     }
-    
+
     private XConnection getRemoteXConnection(TestParameters Param){
-        
+
         log.println("create remote connection");
-        
+
         String databaseName = null ;
         XDataSource oXDataSource = null;
         Object oInterface = null;
         XMultiServiceFactory xMSF = null ;
         int uniqueSuffix = Param.getInt("uniqueSuffix");
-        
+
         try {
             xMSF = (XMultiServiceFactory)Param.getMSF();
             oInterface = xMSF.createInstance( "com.sun.star.sdb.DatabaseContext" );
@@ -329,7 +329,7 @@ public class SwXMailMerge extends TestCase {
             String tmpDatabaseUrl = utils.getOfficeTempDir((XMultiServiceFactory)Param.getMSF());
 
             databaseName = "NewDatabaseSource" + uniqueSuffix ;
-            
+
             String tmpDatabaseFile = tmpDatabaseUrl + databaseName + ".odb";
             System.out.println("try to delete '"+tmpDatabaseFile+"'");
             utils.deleteFile(((XMultiServiceFactory) Param.getMSF()), tmpDatabaseFile);
@@ -345,15 +345,15 @@ public class SwXMailMerge extends TestCase {
                 UnoRuntime.queryInterface(XPropertySet.class, newSource);
 
             xSrcProp.setPropertyValue("URL", tmpDatabaseUrl) ;
-            
+
             DBTools dbt = new DBTools( (XMultiServiceFactory)Param.getMSF(), log );
             // registering source in DatabaseContext
             log.println("register database '"+tmpDatabaseUrl+"' as '"+databaseName+"'" );
             dbt.reRegisterDB(databaseName, newSource) ;
-            
+
             uniqueSuffix++;
             Param.put("uniqueSuffix", new Integer(uniqueSuffix));
-            
+
             return dbt.connectToSource(newSource);
         }
         catch( Exception e ) {
@@ -364,11 +364,11 @@ public class SwXMailMerge extends TestCase {
             throw new StatusException("could not register new database", e) ;
         }
     }
-    
+
     private XConnection getLocalXConnection(TestParameters Param){
-        
+
         log.println("create local connection");
-        
+
         XInterface oDataCont = null;
         try {
             oDataCont = (XInterface)( (XMultiServiceFactory) Param.getMSF()).createInstance
@@ -378,22 +378,22 @@ public class SwXMailMerge extends TestCase {
         }
         XNameAccess xNADataCont = (XNameAccess)
             UnoRuntime.queryInterface(XNameAccess.class, oDataCont);
-        
+
         String[] dataNames = xNADataCont.getElementNames();
-        
+
         String dataName="";
         for (int i = 0; i < dataNames.length; i++){
             if (dataNames[i].startsWith("Biblio")) dataName=dataNames[i];
         }
-        
+
         try{
-            
+
             Object oDataBase = xNADataCont.getByName(dataName);
             XDataSource xDataSource = (XDataSource)
                 UnoRuntime.queryInterface(XDataSource.class, oDataBase);
-            
+
             return xDataSource.getConnection("","");
-            
+
         } catch ( NoSuchElementException e){
             throw new StatusException("Couldn't get registered data base", e);
         } catch (  WrappedTargetException e){
@@ -401,33 +401,33 @@ public class SwXMailMerge extends TestCase {
         } catch (   SQLException e){
             throw new StatusException("Couldn't get XConnection from registered data base", e);
         }
-        
+
     }
-    
+
     protected void cleanup(TestParameters Param, PrintWriter log) {
         log.println("closing connections...");
         XMultiServiceFactory xMsf = (XMultiServiceFactory) Param.getMSF();
         DBTools dbt = new DBTools( xMsf, log );
-        
+
         if (Param.containsKey("uniqueSuffix")){
             int uniqueSuffix = Param.getInt("uniqueSuffix");
             uniqueSuffix--;
             String databaseName =  "";
             while (uniqueSuffix >= 0){
-                
+
                 databaseName = "NewDatabaseSource" + uniqueSuffix ;
-                
+
                 log.println("revoke '"+databaseName+"'");
-                
+
                 try{
                     dbt.revokeDB(databaseName);
                 } catch (com.sun.star.uno.Exception e){
                 }
-                
+
                 uniqueSuffix--;
             }
         }
-        
-    }    
+
+    }
 
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,17 +58,17 @@ public class TabControllerModel extends TestCase {
         util.DesktopTools.closeDoc(xTextDoc);
     }
 
-    public TestEnvironment createTestEnvironment(TestParameters param, 
+    public TestEnvironment createTestEnvironment(TestParameters param,
                                                  PrintWriter log) {
         XInterface oObj = null;
 
         log.println("inserting some ControlShapes");
 
-        XControlShape shape1 = FormTools.createControlShape(xTextDoc, 3000, 
-                                                            4500, 15000, 1000, 
+        XControlShape shape1 = FormTools.createControlShape(xTextDoc, 3000,
+                                                            4500, 15000, 1000,
                                                             "CommandButton");
-        XControlShape shape2 = FormTools.createControlShape(xTextDoc, 5000, 
-                                                            3500, 7500, 5000, 
+        XControlShape shape2 = FormTools.createControlShape(xTextDoc, 5000,
+                                                            3500, 7500, 5000,
                                                             "TextField");
 
         try {
@@ -76,7 +76,7 @@ public class TabControllerModel extends TestCase {
                            "com.sun.star.awt.TabControllerModel");
         } catch (Exception e) {
             e.printStackTrace(log);
-            throw new StatusException("Couldn't create " + 
+            throw new StatusException("Couldn't create " +
                                       "TabControllerModel", e);
         }
 
@@ -84,7 +84,7 @@ public class TabControllerModel extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        tEnv.addObjRelation("OBJNAME", 
+        tEnv.addObjRelation("OBJNAME",
                             "stardiv.vcl.controlmodel.TabController");
         tEnv.addObjRelation("Model1", shape1.getControl());
         tEnv.addObjRelation("Model2", shape2.getControl());

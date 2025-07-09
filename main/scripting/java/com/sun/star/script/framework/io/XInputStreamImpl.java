@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ public class XInputStreamImpl implements XInputStream
     {
         this.is = is;
     }
-   
+
     public int readBytes( /*OUT*/byte[][] aData, /*IN*/int nBytesToRead ) throws com.sun.star.io.NotConnectedException, com.sun.star.io.BufferSizeExceededException, com.sun.star.io.IOException
     {
         aData[ 0 ] = new byte[ nBytesToRead ];
@@ -43,7 +43,7 @@ public class XInputStreamImpl implements XInputStream
 
         try
         {
-            int bytesRead = 0; 
+            int bytesRead = 0;
             while ( ( nBytesToRead > 0 ) && ( bytesRead = is.read( aData[ 0 ], totalBytesRead, nBytesToRead ) ) > 0 )
             {
                 totalBytesRead += bytesRead;
@@ -64,7 +64,7 @@ public class XInputStreamImpl implements XInputStream
         {
             throw new com.sun.star.io.BufferSizeExceededException( aie.toString() );
         }
-        return totalBytesRead;   
+        return totalBytesRead;
     }
 
     public int readSomeBytes( /*OUT*/byte[][] aData, /*IN*/int nMaxBytesToRead ) throws com.sun.star.io.NotConnectedException, com.sun.star.io.BufferSizeExceededException, com.sun.star.io.IOException
@@ -74,7 +74,7 @@ public class XInputStreamImpl implements XInputStream
         if ( 0 < availableBytes && availableBytes < nMaxBytesToRead )
         {
             bytesToRead = availableBytes;
-        } 
+        }
         int read =  readBytes( aData, bytesToRead );
         return read;
     }
@@ -82,7 +82,7 @@ public class XInputStreamImpl implements XInputStream
     public void skipBytes( /*IN*/int nBytesToSkip ) throws com.sun.star.io.NotConnectedException, com.sun.star.io.BufferSizeExceededException, com.sun.star.io.IOException
     {
         long bytesSkipped = 0;
-        try 
+        try
         {
             bytesSkipped = is.skip( (long)nBytesToSkip );
         }
@@ -95,7 +95,7 @@ public class XInputStreamImpl implements XInputStream
     public int available(  ) throws com.sun.star.io.NotConnectedException, com.sun.star.io.IOException
     {
         int bytesAvail = 0;
-        try 
+        try
         {
             bytesAvail = is.available();
         }
@@ -108,7 +108,7 @@ public class XInputStreamImpl implements XInputStream
 
     public void closeInput(  ) throws com.sun.star.io.NotConnectedException, com.sun.star.io.IOException
     {
-        try 
+        try
         {
             is.close();
         }

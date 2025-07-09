@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,9 +31,9 @@ import com.sun.star.uno.TypeClass;
  * Optional or named parameters in SO are of the Object type in Java.
  * These objects must be converted to the right simple value type.
  * Unfortunately, StarBasic does not know the original desired type,
- * and a value that should be a "Float" is delivered as "Byte". This class 
+ * and a value that should be a "Float" is delivered as "Byte". This class
  * handles the conversions of these types.<br>
- * This class does not log warnings (or throws Exceptions) when the precision 
+ * This class does not log warnings (or throws Exceptions) when the precision
  * of a value is lost.
  */
 public class NumericalHelper
@@ -88,7 +88,7 @@ public class NumericalHelper
 
     /**
      * get a byte value from the object
-     * @param aValue 
+     * @param aValue
      * @return a byte
      * @throws com.sun.star.lang.IllegalArgumentException if the object cannot be converted
      */
@@ -146,7 +146,7 @@ public class NumericalHelper
 
     /**
      * get a char value from the object
-     * @param aValue 
+     * @param aValue
      * @return a char
      * @throws com.sun.star.lang.IllegalArgumentException  if the object cannot be converted
      */
@@ -211,7 +211,7 @@ public class NumericalHelper
 
     /**
      * get a short value from the object
-     * @param aValue 
+     * @param aValue
      * @return a short
      * @throws com.sun.star.lang.IllegalArgumentException if the object cannot be converted
      */
@@ -335,7 +335,7 @@ public class NumericalHelper
     /**
     @param _aValue a object this can contain anything
     @return true, if the parameter aValue is type of real numbers
-    
+
     see also http://en.wikipedia.org/wiki/Mathematics
      */
     public static boolean isRealNumber(Object _aValue)
@@ -346,7 +346,7 @@ public class NumericalHelper
     /**
     @param aValue a object this can contain anything
      * @return true, if the value is type of any integer values. double / float are not(!) integer values
-     * @throws com.sun.star.lang.IllegalArgumentException 
+     * @throws com.sun.star.lang.IllegalArgumentException
      */
     public static boolean isInteger(Object aValue) throws com.sun.star.lang.IllegalArgumentException
     {
@@ -409,8 +409,8 @@ public class NumericalHelper
 //        DebugHelper.exception(BasicErrorCode.SbERR_CONVERSION, PropertyNames.EMPTY_STRING);
 //        return 0;
 //    }}
-//    
-//    
+//
+//
 //    public static String toStringWithErrorMessage(Object _aValue) throws com.sun.star.script.BasicErrorException{
 //    try {
 //        return toString(_aValue);
@@ -420,7 +420,7 @@ public class NumericalHelper
 //        return PropertyNames.EMPTY_STRING;
 //    }}
 //
-//    
+//
 //    public static int toIntWithErrorMessage(Object _aValue, int _ndefaultValue) throws com.sun.star.script.BasicErrorException{
 //    try {
 //        return toInt(_aValue, _ndefaultValue);
@@ -433,14 +433,14 @@ public class NumericalHelper
 //    public static boolean toBooleanWithErrorMessage(Object _oObject, int _nTrueField, int _nFalseField) throws com.sun.star.script.BasicErrorException{
 //        return toBooleanWithErrorMessage(_oObject, new int[]{_nTrueField}, new int[]{_nFalseField});
 //    }
-//    
-//    
+//
+//
 //    public static boolean toBooleanWithErrorMessage(Object _oObject) throws com.sun.star.script.BasicErrorException{
 //        try{
 //            return toBoolean(_oObject);
 //        }
 //        catch (java.lang.Exception e){
-//           DebugHelper.exception(BasicErrorCode.SbERR_BAD_ARGUMENT, PropertyNames.EMPTY_STRING); 
+//           DebugHelper.exception(BasicErrorCode.SbERR_BAD_ARGUMENT, PropertyNames.EMPTY_STRING);
 //           return false;
 //        }
 //    }
@@ -460,16 +460,16 @@ public class NumericalHelper
 //            return false;
 //        }
 //    }catch (java.lang.Exception e){
-//       DebugHelper.exception(BasicErrorCode.SbERR_OUT_OF_RANGE, PropertyNames.EMPTY_STRING); 
+//       DebugHelper.exception(BasicErrorCode.SbERR_OUT_OF_RANGE, PropertyNames.EMPTY_STRING);
 //        return false;
 //    }}
-//        
-//    
+//
+//
 //    public static boolean toBooleanWithErrorMessage(Object _oObject, int _nTrueField, int _nFalseField, boolean _bdefaultValue) throws com.sun.star.script.BasicErrorException{
 //        return toBooleanWithErrorMessage(_oObject, new int[]{_nTrueField}, new int[]{_nFalseField}, _bdefaultValue);
 //    }
-//    
-//    
+//
+//
 //    public static boolean toBooleanWithErrorMessage(Object _oObject, int[] _nTrueFields, int[] _nFalseFields, boolean _bdefaultValue) throws com.sun.star.script.BasicErrorException{
 //    try{
 //        if ((_oObject == null) || (AnyConverter.isVoid(_oObject))){
@@ -489,12 +489,12 @@ public class NumericalHelper
 //            }
 //        }
 //    }catch (java.lang.Exception e){
-//       DebugHelper.exception(BasicErrorCode.SbERR_OUT_OF_RANGE, PropertyNames.EMPTY_STRING); 
+//       DebugHelper.exception(BasicErrorCode.SbERR_OUT_OF_RANGE, PropertyNames.EMPTY_STRING);
 //        return false;
 //    }}
     /**
      * get an int value from the object
-     * @param aValue 
+     * @param aValue
      * @return an int
      * @throws com.sun.star.lang.IllegalArgumentException if the object cannot be converted
      */
@@ -550,7 +550,7 @@ public class NumericalHelper
 
     /**
      * get a long value from the object
-     * @param aValue 
+     * @param aValue
      * @return a long
      * @throws com.sun.star.lang.IllegalArgumentException if the object cannot be converted
      */
@@ -606,7 +606,7 @@ public class NumericalHelper
 
     /**
      * get a float value from the object
-     * @param aValue 
+     * @param aValue
      * @return a float
      * @throws com.sun.star.lang.IllegalArgumentException if the object cannot be converted
      */
@@ -662,7 +662,7 @@ public class NumericalHelper
 
     /**
      * get a double value from the object
-     * @param aValue 
+     * @param aValue
      * @return a double
      * @throws com.sun.star.lang.IllegalArgumentException if the object cannot be converted
      */
@@ -718,7 +718,7 @@ public class NumericalHelper
 
     /**
      * get a String value from the object
-     * @param aValue 
+     * @param aValue
      * @return a String
      * @throws com.sun.star.lang.IllegalArgumentException if the object cannot be converted
      */
@@ -768,7 +768,7 @@ public class NumericalHelper
 
     /**
      * get a boolean value from the object
-     * @param aValue 
+     * @param aValue
      * @return a boolean
      * @throws com.sun.star.lang.IllegalArgumentException if the object cannot be converted
      */
@@ -826,7 +826,7 @@ public class NumericalHelper
      * get an int array from an object
      * @param anArrayValue a value that is constructed into an array
      * @return an integer array
-     * @throws com.sun.star.lang.IllegalArgumentException 
+     * @throws com.sun.star.lang.IllegalArgumentException
      */
     public static int[] toIntArray(Object anArrayValue)
             throws com.sun.star.lang.IllegalArgumentException
@@ -860,7 +860,7 @@ public class NumericalHelper
      * get an byte array from an object
      * @param anArrayValue a value that is constructed into an array
      * @return a byte array
-     * @throws com.sun.star.lang.IllegalArgumentException 
+     * @throws com.sun.star.lang.IllegalArgumentException
      */
     public static byte[] toByteArray(Object anArrayValue)
             throws com.sun.star.lang.IllegalArgumentException
@@ -894,7 +894,7 @@ public class NumericalHelper
      * get a short array from an object
      * @param anArrayValue a value that is constructed into an array
      * @return a short array
-     * @throws com.sun.star.lang.IllegalArgumentException 
+     * @throws com.sun.star.lang.IllegalArgumentException
      */
     public static short[] toShortArray(Object anArrayValue)
             throws com.sun.star.lang.IllegalArgumentException
@@ -928,7 +928,7 @@ public class NumericalHelper
      * get a string array from an object
      * @param anArrayValue a value that is constructed into an array
      * @return a short array
-     * @throws com.sun.star.lang.IllegalArgumentException 
+     * @throws com.sun.star.lang.IllegalArgumentException
      */
     public static String[] toStringArray(Object anArrayValue)
             throws com.sun.star.lang.IllegalArgumentException
@@ -963,7 +963,7 @@ public class NumericalHelper
      * @param _aValue a value that is constructed into an int
      * @param _ndefaultValue the value that is returned, if conversion fails, or if 'aValue' is null
      * @return an int value
-     * @throws java.lang.Exception 
+     * @throws java.lang.Exception
      */
     public static int toInt(Object _aValue, int _ndefaultValue) throws Exception
     {
@@ -1164,7 +1164,7 @@ public class NumericalHelper
 //            throws com.sun.star.script.BasicErrorException {
 //        return RomanNumbering.getRomanEquivalent(n);
 //    }
-    /** 
+    /**
      * get the type object from the given object
      * @param aValue an object representing a (numerical) value; can also be an 'any'
      * @return a type object: the object together with the its type information
@@ -1280,7 +1280,7 @@ public class NumericalHelper
     /**
      * get the simple int type
      * @param typeObject
-     * @return 
+     * @return
      * @throws com.sun.star.lang.IllegalArgumentException
      */
     static int getInt(TypeObject typeObject)
@@ -1296,7 +1296,7 @@ public class NumericalHelper
 
     /**
      * get the simple float type
-     * @throws com.sun.star.lang.IllegalArgumentException 
+     * @throws com.sun.star.lang.IllegalArgumentException
      */
     static float getFloat(TypeObject typeObject)
             throws com.sun.star.lang.IllegalArgumentException
@@ -1491,7 +1491,7 @@ public class NumericalHelper
 
 //    public static boolean isObjectNumericRepresentation(Object _oValue, NumberFormatter _oNumberFormatter, XPropertySet _xPropertySet) throws com.sun.star.script.BasicErrorException{
 //    try{
-//        int nNumberFormat = AnyConverter.toInt(_xPropertySet.getPropertyValue("NumberFormat"));        
+//        int nNumberFormat = AnyConverter.toInt(_xPropertySet.getPropertyValue("NumberFormat"));
 //        if (AnyConverter.isString(_oValue)){
 //            String sCellContent = AnyConverter.toString(_oValue);
 //            try{
@@ -1506,9 +1506,9 @@ public class NumericalHelper
 //        }
 //    }
 //    catch (com.sun.star.uno.Exception e){
-//        DebugHelper.exception(1 /*BasicErrorCode.SbERR_METHOD_FAILED*/, PropertyNames.EMPTY_STRING);          
+//        DebugHelper.exception(1 /*BasicErrorCode.SbERR_METHOD_FAILED*/, PropertyNames.EMPTY_STRING);
 //        return false;
-//    }} 
+//    }}
     /**
      * Helper class for roman numbering
      */
@@ -1553,7 +1553,7 @@ public class NumericalHelper
                 }
                 String number = NumericalHelper.toString(new Integer(n));
                 /* conversion idea: every digit is written with a maximum of two
-                 * different roman symbols, using three in total, e.g. CC, CD, 
+                 * different roman symbols, using three in total, e.g. CC, CD,
                  * DCC, CM for the hundreds (meaning 200, 400, 700 and 900).
                  * So every digit is converted separately with regard to the
                  * special cases 4 and 9.

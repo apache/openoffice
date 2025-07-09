@@ -59,7 +59,7 @@ public class OOXMLParser
     {
         if (aArgumentList.length<2 ||aArgumentList.length>3)
             throw new RuntimeException("usage: OOXMLParser <parser-tables-path> <XML-input-file> <log-file>?");
-        
+
         if (aArgumentList.length == 3)
         {
             final File aLogFile = new File(aArgumentList[2]);
@@ -71,12 +71,12 @@ public class OOXMLParser
             Log.Dbg = null;
             System.out.printf("writing no log data\n");
         }
-        
+
         new OOXMLParser(aArgumentList[0], aArgumentList[1]);
     }
-    
-    
-    
+
+
+
     private OOXMLParser (
         final String sParseTableFilename,
         final String sInputFilename)
@@ -85,12 +85,12 @@ public class OOXMLParser
         final StateMachine aMachine = new StateMachine(new File(sParseTableFilename), null);
         final InputStream aIn = GetInputStream(sInputFilename);
         long nEndTime = System.currentTimeMillis();
-        
+
         final ActionContext aActionContext = new ActionContext();
         AddSomeActions(aMachine.GetActionManager(), aActionContext);
-        
+
         System.out.printf("initialzed parser in %fs\n", (nEndTime-nStartTime)/1000.0);
-        
+
         try
         {
             nStartTime = System.currentTimeMillis();
@@ -101,7 +101,7 @@ public class OOXMLParser
             System.out.printf("parsed %d elements in %fs\n",
                 nElementCount,
                 (nEndTime-nStartTime)/1000.0);
-            
+
             System.out.printf("%d different elements found:\n", aActionContext.TypeCounts.size());
             for (final Entry<String, Integer> aEntry : aActionContext.TypeCounts.entrySet())
             {
@@ -113,10 +113,10 @@ public class OOXMLParser
             aException.printStackTrace();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private static void AddSomeActions (
         final ActionManager aActionManager,
         final ActionContext aActionContext)
@@ -156,7 +156,7 @@ public class OOXMLParser
                         eTrigger,
                         aContext.GetElementName(),
                         aStartLocation.getCharacterOffset());
-                    
+
                     if (aContext.GetAttributes().GetAttributeCount() == 0)
                         System.out.printf("    no attributes\n");
                     else
@@ -193,16 +193,16 @@ public class OOXMLParser
             final int nSeparator = sInputName.indexOf('#');
             if (nSeparator >= 0)
             {
-                // Split the input name into the file name of the archive and the 
+                // Split the input name into the file name of the archive and the
                 // name of a zip entry.
                 final String sArchiveName = sInputName.substring(0, nSeparator);
                 String sEntryName = sInputName.substring(nSeparator+1);
-                
+
                 // Normalize and cleanup the entry name.
                 sEntryName = sEntryName.replace('\\',  '/');
                 if (sEntryName.startsWith("/"))
                     sEntryName = sEntryName.substring(1);
-    
+
                 final ZipFile aZipFile = new ZipFile(new File(sArchiveName));
                 final ZipEntry aZipEntry = aZipFile.getEntry(sEntryName);
                 aIn = aZipFile.getInputStream(aZipEntry);

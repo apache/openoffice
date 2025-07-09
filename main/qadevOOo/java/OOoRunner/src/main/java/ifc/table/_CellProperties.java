@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ import com.sun.star.xml.AttributeData;
 * @see com.sun.star.table.CellProperties
 */
 public class _CellProperties extends MultiPropertyTest {
-    
+
 
     /**
      * This property is tested with custom property tester which
@@ -65,7 +65,7 @@ public class _CellProperties extends MultiPropertyTest {
             }
         }) ;
     }
-    
+
     public void _UserDefinedAttributes() {
         XNameContainer uda = null;
         boolean res = false;
@@ -77,8 +77,8 @@ public class _CellProperties extends MultiPropertyTest {
             attr.Namespace = "http://www.sun.com/staroffice/apitest/Cellprop";
             attr.Type="CDATA";
             attr.Value="true";
-            uda.insertByName("Cellprop:has-first-alien-attribute",attr);            
-            String[] els = uda.getElementNames();            
+            uda.insertByName("Cellprop:has-first-alien-attribute",attr);
+            String[] els = uda.getElementNames();
             oObj.setPropertyValue("UserDefinedAttributes",uda);
             uda = (XNameContainer) AnyConverter.toObject(
                 new Type(XNameContainer.class),
@@ -98,7 +98,7 @@ public class _CellProperties extends MultiPropertyTest {
             log.println("PropertyVetoException while getting Property 'UserDefinedAttributes'");
         } catch (com.sun.star.container.ElementExistException eee) {
             log.println("ElementExistException while getting Property 'UserDefinedAttributes'");
-        } 
+        }
         tRes.tested("UserDefinedAttributes",res);
     }
 

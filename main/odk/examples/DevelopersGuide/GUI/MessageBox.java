@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,29 +43,29 @@ import com.sun.star.uno.XComponentContext;
 
 
 public class MessageBox  {
-    
+
     protected XComponentContext m_xContext = null;
     protected com.sun.star.lang.XMultiComponentFactory m_xMCF;
-    
+
     /** Creates a new instance of MessageBox */
     public MessageBox(XComponentContext _xContext, XMultiComponentFactory _xMCF){
         m_xContext = _xContext;
         m_xMCF = _xMCF;
     }
-    
+
     public static void main(String args[]) {
         XComponent xComp = null;
         try {
             XComponentContext xContext = com.sun.star.comp.helper.Bootstrap.bootstrap();
             if(xContext != null )
                 System.out.println("Connected to a running office ...");
-            XMultiComponentFactory xMCF = xContext.getServiceManager();                     
-            
+            XMultiComponentFactory xMCF = xContext.getServiceManager();
+
             MessageBox oMessageBox = new MessageBox(xContext, xMCF);
-            
+
             //load default text document to get an active frame
             xComp = oMessageBox.createDefaultTextDocument();
-            
+
             XWindowPeer xWindowPeer = oMessageBox.getWindowPeerOfFrame(xComp);
             if (xWindowPeer != null) {
                 XVclWindowPeer xVclWindowPeer = (XVclWindowPeer) UnoRuntime.queryInterface(XVclWindowPeer.class, xWindowPeer);
@@ -74,7 +74,7 @@ public class MessageBox  {
             } else{
                 System.out.println("Could not retrieve current frame");
             }
-            
+
         } catch( Exception e ) {
             System.err.println( e + e.getMessage());
             e.printStackTrace();
@@ -89,33 +89,33 @@ public class MessageBox  {
                     }
                 } catch (com.sun.star.util.CloseVetoException e) {
                     System.err.println( e + e.getMessage());
-                    e.printStackTrace();     
+                    e.printStackTrace();
                 }
             }
         }
-        
+
         System.exit( 0 );
     }
-    
-    // helper method to get the window peer of a document or if no 
+
+    // helper method to get the window peer of a document or if no
     // document is specified it tries to get the avtive frame
     // which is potentially dangerous
     public XWindowPeer getWindowPeerOfFrame(XComponent xComp) {
         try {
             XFrame xFrame = null;
-            
+
             if (xComp != null) {
                 XModel xModel = (XModel)UnoRuntime.queryInterface(XModel.class, xComp);
                 xFrame = xModel.getCurrentController().getFrame();
-                
+
             } else {
                 // Note: This method is potentially dangerous and should only be used for debugging
                 // purposes as it relies on the platform dependent window handler..
                 Object oDesktop = m_xMCF.createInstanceWithContext("com.sun.star.frame.Desktop", m_xContext);
                 XFramesSupplier xFramesSupplier = (XFramesSupplier) UnoRuntime.queryInterface(XFramesSupplier.class, oDesktop);
-                xFrame = xFramesSupplier.getActiveFrame();                
+                xFrame = xFramesSupplier.getActiveFrame();
             }
-                        
+
             if (xFrame != null){
                 XWindow xWindow = xFrame.getContainerWindow();
                 if (xWindow != null){
@@ -130,9 +130,9 @@ public class MessageBox  {
     }
 
     XComponent createDefaultTextDocument() {
-        
+
         XComponent xComp =  null;
-        try {  
+        try {
             Object oDesktop = m_xMCF.createInstanceWithContext(
                                                "com.sun.star.frame.Desktop", m_xContext);
 
@@ -140,7 +140,7 @@ public class MessageBox  {
             // text document
             com.sun.star.frame.XComponentLoader xCLoader =(com.sun.star.frame.XComponentLoader)
                 UnoRuntime.queryInterface(com.sun.star.frame.XComponentLoader.class,oDesktop);
-            
+
             com.sun.star.beans.PropertyValue[] args = new com.sun.star.beans.PropertyValue [1];
             args[0] = new com.sun.star.beans.PropertyValue();
             args[0].Name = "Hidden";
@@ -148,13 +148,13 @@ public class MessageBox  {
             String strDoc = "private:factory/swriter";
 
             xComp = xCLoader.loadComponentFromURL(strDoc, "_blank", 0, args);
-            
+
         } catch(com.sun.star.uno.Exception ex) {
             ex.printStackTrace();
         }
         return xComp;
     }
-    
+
     /** shows an error messagebox
      *  @param _xParentWindowPeer the windowpeer of the parent window
      *  @param _sTitle the title of the messagebox
@@ -179,14 +179,14 @@ public class MessageBox  {
             }
         }
     }
-    
-    
+
+
     /** @param _xVclWindowPeer the windowpeer of a dialog control or the dialog itself
      *  @return true if HighContrastMode is activated or false if HighContrastMode is deactivated
      */
     public boolean isHighContrastModeActivated(XVclWindowPeer _xVclWindowPeer) {
         boolean bIsActivated = false;
-        
+
         try {
             if (_xVclWindowPeer != null){
                 int nUIColor = AnyConverter.toInt(_xVclWindowPeer.getProperty("DisplayBackgroundColor"));
@@ -204,7 +204,7 @@ public class MessageBox  {
         }
         return bIsActivated;
     }
-    
+
     public static int getRedColorShare(int _nColor) {
         int nRed = (int) _nColor/65536;
         int nRedModulo = _nColor % 65536;
@@ -213,14 +213,14 @@ public class MessageBox  {
         int nBlue = nGreenModulo;
         return nRed;
     }
-    
+
     public static int getGreenColorShare(int _nColor) {
         int nRed = (int) _nColor/65536;
         int nRedModulo = _nColor % 65536;
         int nGreen = (int) (nRedModulo / 256);
         return nGreen;
     }
-    
+
     public static int getBlueColorShare(int _nColor) {
         int nRed = (int) _nColor/65536;
         int nRedModulo = _nColor % 65536;
@@ -229,5 +229,5 @@ public class MessageBox  {
         int nBlue = nGreenModulo;
         return nBlue;
     }
-    
+
 }

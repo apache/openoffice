@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
@@ -45,7 +45,7 @@ public class JDBCDriver extends ComponentBase implements XServiceInfo, XDriver {
     };
     private XComponentContext context;
     private final ResourceBasedEventLogger logger;
-    
+
     public static XSingleComponentFactory __getComponentFactory(String implName) {
         XSingleComponentFactory xSingleComponentFactory = null;
         if (implName.equals(getImplementationNameStatic())) {
@@ -54,17 +54,17 @@ public class JDBCDriver extends ComponentBase implements XServiceInfo, XDriver {
         }
         return xSingleComponentFactory;
     }
-    
+
     public JDBCDriver(XComponentContext componentContext) {
         this.context = componentContext;
         SharedResources.registerClient(componentContext);
         logger = new ResourceBasedEventLogger(context, "sdbcl", "org.openoffice.sdbc.jdbcBridge");
     }
-    
+
     public XComponentContext getContext() {
         return context;
     }
-    
+
     public ResourceBasedEventLogger getLogger() {
         return logger;
     }
@@ -74,9 +74,9 @@ public class JDBCDriver extends ComponentBase implements XServiceInfo, XDriver {
         // Please take care when changing it.
         return JDBCDriver.class.getName();
     }
-    
+
     // XComponent:
-    
+
     @Override
     protected synchronized void postDisposing() {
         context = null;
@@ -84,17 +84,17 @@ public class JDBCDriver extends ComponentBase implements XServiceInfo, XDriver {
     }
 
     // XServiceInfo:
-    
+
     @Override
     public String getImplementationName() {
         return getImplementationNameStatic();
     }
-    
+
     @Override
     public String[] getSupportedServiceNames() {
         return services.clone();
     }
-    
+
     @Override
     public boolean supportsService(String serviceName) {
         for (String service : getSupportedServiceNames()) {
@@ -106,14 +106,14 @@ public class JDBCDriver extends ComponentBase implements XServiceInfo, XDriver {
     }
 
     // XDriver:
-    
+
     @Override
     public boolean acceptsURL(String url) throws SQLException {
         // don't ask the real driver for the url
         // I feel responsible for all jdbc url's
         return url.startsWith("jdbc:");
     }
-    
+
     @Override
     public synchronized XConnection connect(String url, PropertyValue[] info) throws SQLException {
         checkDisposed();
@@ -142,7 +142,7 @@ public class JDBCDriver extends ComponentBase implements XServiceInfo, XDriver {
     public int getMinorVersion() {
         return 0;
     }
-    
+
     @Override
     public DriverPropertyInfo[] getPropertyInfo(String url, PropertyValue[] info) throws SQLException {
         if (!acceptsURL(url)) {
@@ -191,6 +191,6 @@ public class JDBCDriver extends ComponentBase implements XServiceInfo, XDriver {
                         "ImplicitSchemaRestriction", "The schema which should be used in getTables calls, when the caller passed NULL.",
                         false, "", new String[0])
         };
-        
+
     }
 }

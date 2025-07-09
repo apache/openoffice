@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sd.animation;
 
@@ -99,20 +99,20 @@ public class CustomAnimation {
 				"Page 11", "Page 12", "Page 13", "Page 14", "Page 15",
 				"Page 16", "Page 17", "Page 18", "Page 19", "Page 20",
 				"Page 21", "Page 22", "Page 23", };
-		AnimationEffect AnimationEffectArray[] = { 
+		AnimationEffect AnimationEffectArray[] = {
 				AnimationEffect.NONE,
-				AnimationEffect.FADE_FROM_LEFT, 
+				AnimationEffect.FADE_FROM_LEFT,
 				AnimationEffect.FADE_FROM_TOP,
 				AnimationEffect.FADE_FROM_RIGHT,
 				AnimationEffect.FADE_FROM_BOTTOM,
 				AnimationEffect.FADE_TO_CENTER,
 				AnimationEffect.FADE_FROM_CENTER,
-				AnimationEffect.MOVE_FROM_LEFT, 
+				AnimationEffect.MOVE_FROM_LEFT,
 				AnimationEffect.MOVE_FROM_TOP,
 				AnimationEffect.MOVE_FROM_RIGHT,
 				AnimationEffect.MOVE_FROM_BOTTOM,
 				AnimationEffect.VERTICAL_STRIPES,
-				AnimationEffect.HORIZONTAL_STRIPES, 
+				AnimationEffect.HORIZONTAL_STRIPES,
 				AnimationEffect.CLOCKWISE,
 				AnimationEffect.COUNTERCLOCKWISE,
 				AnimationEffect.FADE_FROM_UPPERLEFT,
@@ -121,28 +121,28 @@ public class CustomAnimation {
 				AnimationEffect.FADE_FROM_LOWERRIGHT,
 				AnimationEffect.CLOSE_VERTICAL,
 				AnimationEffect.CLOSE_HORIZONTAL,
-				AnimationEffect.OPEN_VERTICAL, 
+				AnimationEffect.OPEN_VERTICAL,
 				AnimationEffect.OPEN_HORIZONTAL,
-				AnimationEffect.PATH, 
+				AnimationEffect.PATH,
 /*				AnimationEffect.MOVE_TO_LEFT,
-				AnimationEffect.MOVE_TO_TOP, 
+				AnimationEffect.MOVE_TO_TOP,
 				AnimationEffect.MOVE_TO_RIGHT,
-				AnimationEffect.MOVE_TO_BOTTOM, 
+				AnimationEffect.MOVE_TO_BOTTOM,
 				AnimationEffect.SPIRALIN_LEFT,
-				AnimationEffect.SPIRALIN_RIGHT, 
+				AnimationEffect.SPIRALIN_RIGHT,
 				AnimationEffect.SPIRALOUT_LEFT,
-				AnimationEffect.SPIRALOUT_RIGHT, 
+				AnimationEffect.SPIRALOUT_RIGHT,
 				AnimationEffect.DISSOLVE,
-				AnimationEffect.WAVYLINE_FROM_LEFT, 
+				AnimationEffect.WAVYLINE_FROM_LEFT,
 				AnimationEffect.RANDOM,
 				AnimationEffect.VERTICAL_LINES,
-				AnimationEffect.LASER_FROM_LEFT, 
+				AnimationEffect.LASER_FROM_LEFT,
 				AnimationEffect.APPEAR,
-				AnimationEffect.HIDE, 
+				AnimationEffect.HIDE,
 				AnimationEffect.MOVE_FROM_UPPERLEFT,
 				AnimationEffect.VERTICAL_CHECKERBOARD,
 				AnimationEffect.HORIZONTAL_ROTATE,
-				AnimationEffect.VERTICAL_STRETCH, 
+				AnimationEffect.VERTICAL_STRETCH,
 				AnimationEffect.ZOOM_IN,
 				AnimationEffect.ZOOM_OUT_FROM_LEFT, */
 				};
@@ -174,9 +174,9 @@ public class CustomAnimation {
 					.setPropertyValue("Effect", AnimationEffectArray[i]);
 		}
 
-		// If this property and the property DimPrevious are both true, the shape is hidden on the next click after the AnimationEffect has finished. 
+		// If this property and the property DimPrevious are both true, the shape is hidden on the next click after the AnimationEffect has finished.
 		xShapePropSet[1].setPropertyValue("DimHide", new Boolean(false));
-		// If true, this shape is painted using DimColor on the next click after finishing the AnimationEffect. 
+		// If true, this shape is painted using DimColor on the next click after finishing the AnimationEffect.
 		xShapePropSet[1].setPropertyValue("DimPrevious", new Boolean(true));
 		// his color is used to paint the shape on the next click after the animation effect has finished
 		xShapePropSet[1].setPropertyValue("DimColor", new Integer(0xff0000));
@@ -237,7 +237,7 @@ public class CustomAnimation {
 
 	/**
 	 * create a new presentation document and insert a new slide.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
@@ -254,7 +254,7 @@ public class CustomAnimation {
 
 	/**
 	 * Save presentation and reLoad the slide.
-	 * 
+	 *
 	 * @param no
 	 * @return void
 	 * @throws Exception
@@ -273,7 +273,7 @@ public class CustomAnimation {
 
 	/**
 	 * save and reload Presentation document.
-	 * 
+	 *
 	 * @param presentationDocument
 	 * @param sFilter
 	 * @param sExtension

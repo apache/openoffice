@@ -23,7 +23,7 @@ package org.apache.openoffice.ooxml.parser.attribute;
 
 /** Store information about a single attribute (per state) that was read
  *  from the parse table.
- * 
+ *
  *  Note that an attribute that is defined for more than one state has one
  *  AttributeDescriptor object per state.
  *
@@ -47,66 +47,66 @@ public class AttributeDescriptor
         msAttributeName = sAttributeName;
         mnAttributeTypeId = nAttributeTypeId;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetTypeId()
     {
         return mnAttributeTypeId;
     }
 
-    
-    
-    
+
+
+
     public int GetNamespaceId ()
     {
         return mnNamespaceId;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetNameId ()
     {
         return mnAttributeId;
     }
-    
-    
-    
-    
+
+
+
+
     public boolean CanBeUnqualified ()
     {
         return mbCanBeUnqualified;
     }
 
-    
-    
-    
+
+
+
     public boolean IsOptional ()
     {
         return mbIsOptional;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetDefaultValue ()
     {
         return msDefaultValue;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetName ()
     {
         return msAttributeName;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
@@ -117,9 +117,9 @@ public class AttributeDescriptor
             mnAttributeTypeId);
     }
 
-    
-    
-    
+
+
+
     private final int mnNamespaceId;
     private final int mnAttributeId;
     private final boolean mbCanBeUnqualified;

@@ -45,9 +45,9 @@ public class Run<TokenType>
         maGroupEnd = null;
         maLine = null;
     }
-    
 
-    
+
+
 
     public void Format (
         final Graphics2D aG2)
@@ -57,9 +57,9 @@ public class Run<TokenType>
         mnHeight = aMetrics.getHeight();
         mnOffset = -aMetrics.getDescent();
     }
-    
-    
-    
+
+
+
 
     public void Paint (
         final Graphics2D aG2,
@@ -83,88 +83,88 @@ public class Run<TokenType>
             aG2.setColor(aSavedColor);
         }
         aG2.drawString(msText, nX, nY+mnOffset);
-        
+
         if (msToolTipText != null)
         {
             aG2.drawLine(nX, nY-1, nX+mnWidth, nY-1);
         }
     }
 
-    
-    
-    
+
+
+
     public String GetText()
     {
         return msText;
     }
-    
-    
-    
-    
+
+
+
+
     public Style GetStyle ()
     {
         return maStyle;
     }
 
-    
-    
+
+
 
     public int GetStreamOffset ()
     {
         return mnStreamOffset;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetStreamEndOffset ()
     {
         return mnStreamOffset + msText.length();
     }
-    
-    
-    
-    
+
+
+
+
     public int GetWidth()
     {
         return mnWidth;
     }
 
-    
-    
-    
+
+
+
     public int GetHeight ()
     {
         return mnHeight;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetGroupParent (final Run<TokenType> aParent)
     {
         maParent = aParent;
     }
 
-    
-    
-    
+
+
+
     public void SetGroupEnd (final Run<TokenType> aRun)
     {
         maGroupEnd = aRun;
     }
 
-    
-    
-    
+
+
+
     public Run<TokenType> GetGroupEnd()
     {
         return maGroupEnd;
     }
 
-    
-    
-    
+
+
+
     public boolean IsGroup ()
     {
         if (maGroupEnd == null)
@@ -174,67 +174,67 @@ public class Run<TokenType>
         else
             return true;
     }
-    
-    
-    
-    
+
+
+
+
     public Run<TokenType> GetParent ()
     {
         return maParent;
     }
-    
-    
-    
-    
+
+
+
+
     public Line<TokenType> GetLine ()
     {
         return maLine;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetLine (final Line<TokenType> aLine)
     {
         maLine = aLine;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetToolTipText (final String sText)
     {
         msToolTipText = sText;
     }
 
-    
-    
-    
+
+
+
     public String GetToolTipText ()
     {
         return msToolTipText;
     }
-    
-    
-    
-    
+
+
+
+
     public TokenType GetTokenType ()
     {
         return meTokenType;
     }
-   
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return "run '"+msText+"' @ "+mnOffset;
     }
-    
-    
-    
-    
+
+
+
+
     private final String msText;
     private final TokenType meTokenType;
     private final Style maStyle;

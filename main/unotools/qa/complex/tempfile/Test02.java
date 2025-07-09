@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,17 +31,17 @@ import com.sun.star.uno.UnoRuntime;
 import java.util.Random;
 
 public class Test02 implements TempFileTest {
-    
+
     XMultiServiceFactory m_xMSF;
     XSimpleFileAccess m_xSFA;
     TestHelper m_aTestHelper;
-    
+
     public Test02(XMultiServiceFactory xMSF, XSimpleFileAccess xSFA) {
         m_xMSF = xMSF;
         m_xSFA = xSFA;
         m_aTestHelper = new TestHelper( "Test02: ");
     }
-    
+
     public boolean test() {
         Object oTempFile = null;
         XTempFile xTempFile = null;
@@ -65,16 +65,16 @@ public class Test02 implements TempFileTest {
             Random oRandom = new Random();
             oRandom.nextBytes( pBytesIn );
             m_aTestHelper.WriteBytesWithStream( pBytesIn, xTempFile );
-            
+
             //get the URL.
             sFileURL = m_aTestHelper.GetTempFileURL( xTempFile );
-            
+
             //let the service not to remove the URL.
             m_aTestHelper.SetTempFileRemove( xTempFile, false );
-            
+
             //close the tempfile by closing input and output.
             m_aTestHelper.CloseTempFile( xTempFile );
-            
+
             //check that the file is still available.
             //xTempFile.seek(0);
             m_aTestHelper.ReadDirectlyFromTempFile( pBytesOut, pBytesIn.length + 1, m_xSFA, sFileURL );

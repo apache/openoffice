@@ -68,9 +68,9 @@ public class Test
                 null);
             final QualifiedName element = new QualifiedName(aTransition[2]);
             final String type = "T_"+aTransition[2];
-            
+
             start.AddTransition(new Transition(start, end, element, type));
-        }            
+        }
         HopcroftMinimizer.MinimizeDFA (
             new StateContainer(),
             aStates,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package com.sun.star.sdbcx.comp.postgresql;
@@ -66,7 +66,7 @@ public class PostgresqlPreparedStatement extends ComponentBase
     private XWarningsSupplier implWarningsSupplier;
     private XMultipleResults implMultipleResults;
     private XConnection connection;
-    
+
     public PostgresqlPreparedStatement(XPreparedStatement impl, XConnection connection) {
         this.impl = impl;
         this.implCloseable = UnoRuntime.queryInterface(XCloseable.class, impl);
@@ -81,7 +81,7 @@ public class PostgresqlPreparedStatement extends ComponentBase
     }
 
     // XComponentBase:
-    
+
     @Override
     protected void postDisposing() {
         try {
@@ -89,9 +89,9 @@ public class PostgresqlPreparedStatement extends ComponentBase
         } catch (SQLException sqlException) {
         }
     }
-    
+
     // XPreparedStatement:
-    
+
     public boolean execute() throws SQLException {
         return impl.execute();
     }
@@ -107,15 +107,15 @@ public class PostgresqlPreparedStatement extends ComponentBase
     public XConnection getConnection() throws SQLException {
         return connection;
     }
-    
+
     // XCloseable:
-    
+
     public void close() throws SQLException {
         dispose();
     }
 
     // XPropertySet:
-    
+
     public void addPropertyChangeListener(String arg0, XPropertyChangeListener arg1) throws UnknownPropertyException, WrappedTargetException {
         implPropertySet.addPropertyChangeListener(arg0, arg1);
     }
@@ -146,19 +146,19 @@ public class PostgresqlPreparedStatement extends ComponentBase
     }
 
     // XCancellable:
-    
+
     public void cancel() {
         implCancellable.cancel();
     }
 
     // XResultSetMetaDataSupplier:
-    
+
     public XResultSetMetaData getMetaData() throws SQLException {
         return new PostgresqlResultSetMetaData(implResultSetMetaDataSupplier.getMetaData());
     }
 
     // XParameters:
-    
+
     public void clearParameters() throws SQLException {
         implParameters.clearParameters();
     }
@@ -252,7 +252,7 @@ public class PostgresqlPreparedStatement extends ComponentBase
     }
 
     // XPreparedBatchExecution:
-    
+
     public void addBatch() throws SQLException {
         implPreparedBatchExecution.addBatch();
     }
@@ -266,7 +266,7 @@ public class PostgresqlPreparedStatement extends ComponentBase
     }
 
     // XWarningsSupplier:
-    
+
     public void clearWarnings() throws SQLException {
         implWarningsSupplier.clearWarnings();
     }
@@ -276,7 +276,7 @@ public class PostgresqlPreparedStatement extends ComponentBase
     }
 
     // XMultipleResults:
-    
+
     public boolean getMoreResults() throws SQLException {
         return implMultipleResults.getMoreResults();
     }

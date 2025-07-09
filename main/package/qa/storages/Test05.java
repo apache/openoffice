@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package complex.storages;
@@ -92,7 +92,7 @@ public class Test05 implements StorageTest {
 				m_aTestHelper.Error( "Can't create substorage!" );
 				return false;
 			}
-	
+
             byte pBigBytes[] = new byte[33000];
 			for ( int nInd = 0; nInd < 33000; nInd++ )
 				pBigBytes[nInd] = (byte)( nInd % 128 );
@@ -116,7 +116,7 @@ public class Test05 implements StorageTest {
 			// open a new substream, set "MediaType" and "Compressed" properties to it and write some bytes
 			if ( !m_aTestHelper.WriteBytesToSubstream( xSubSubStorage, "SubStream2", "MediaType2", false, pBytes2 ) )
 				return false;
-	
+
 			// set "MediaType" property for storages and check that "IsRoot" and "OpenMode" properties are set correctly
 			if ( !m_aTestHelper.setStorageTypeAndCheckProps( xTempFileStorage,
 															"MediaType3",
@@ -213,7 +213,7 @@ public class Test05 implements StorageTest {
 				m_aTestHelper.Error( "Wrong exception is thrown by disposed storage: " + e );
 				return false;
 			}
-	
+
 			try
 			{
 				xSubStream1.getInputStream();
@@ -241,7 +241,7 @@ public class Test05 implements StorageTest {
 				m_aTestHelper.Error( "Wrong exception is thrown by disposed stream: " + e );
 				return false;
 			}
-	
+
 
 			// dispose root storage
 			if ( !m_aTestHelper.disposeStorage( xTempFileStorage ) )
@@ -273,7 +273,7 @@ public class Test05 implements StorageTest {
 				m_aTestHelper.Error( "Can't open existing substorage 'SubSubStorage'!" );
 				return false;
 			}
-	
+
 			if ( !m_aTestHelper.checkStorageProperties( xResSubStorage, "MediaType4", false, ElementModes.READ ) )
 				return false;
 
@@ -286,7 +286,7 @@ public class Test05 implements StorageTest {
 				m_aTestHelper.Error( "Can't open existing substorage 'SubSubStorage'!" );
 				return false;
 			}
-	
+
 			if ( !m_aTestHelper.checkStorageProperties( xResSubSubStorage, "MediaType5", false, ElementModes.READ ) )
 				return false;
 
@@ -314,6 +314,6 @@ public class Test05 implements StorageTest {
 			m_aTestHelper.Error( "Exception: " + e );
 			return false;
 		}
-    } 
+    }
 
 }

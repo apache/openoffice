@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ public class pdbcomparison
 
   private String pdbarr1[];
   private String pdbarr2[];
- 
+
 
    /**
    * Default Constructor
@@ -68,7 +68,7 @@ public class pdbcomparison
       str += "********************************************************\n";
 
       System.out.println(str);
-     
+
    }
 
    /**
@@ -77,7 +77,7 @@ public class pdbcomparison
    * output file and updates the array pdbarr1 and pdbarr2 with
    * list of pdb's to be compared.
    *
-   * @param propFile Property filename which list the log/outputfile/list/pdb 
+   * @param propFile Property filename which list the log/outputfile/list/pdb
    *                 names
    * @return
    *
@@ -94,7 +94,7 @@ public class pdbcomparison
        System.out.println("Could not open Property File " + propFile);
        return;
      }
-     
+
 
      String logFile  = defaultProps.getProperty(this.LOGTAG);
      String outFile  = defaultProps.getProperty(this.OUTTAG);
@@ -110,10 +110,10 @@ public class pdbcomparison
     }
 
     if (logFile == null || logFile.length() == 0)
-       logFile = this.LOGFILE; 
+       logFile = this.LOGFILE;
 
     if (outFile == null || outFile.length() == 0)
-       outFile = this.LOGFILE; 
+       outFile = this.LOGFILE;
 
 
      // validate log and output files
@@ -122,7 +122,7 @@ public class pdbcomparison
      LOGFILE = logFile;
      OUTFILE = outFile;
 
-     System.out.println("Output is written to log file... " + LOGFILE); 
+     System.out.println("Output is written to log file... " + LOGFILE);
      if (listFile != null)
      {
        if (! checkFile(listFile)) return;
@@ -140,7 +140,7 @@ public class pdbcomparison
    * Also validates permissions to create.
    *
    *  @param  filename  name of file to be created
-   *  @return true, if file could be created 
+   *  @return true, if file could be created
    *          false, if could not.
    *
    */
@@ -167,7 +167,7 @@ public class pdbcomparison
          return false;
        }
 
-       if (newF.exists()) 
+       if (newF.exists())
        {
          try {
            newF.delete();
@@ -206,9 +206,9 @@ public class pdbcomparison
        }
 
      }
-  
+
      return true;
- 
+
    }
 
    /**
@@ -242,25 +242,25 @@ public class pdbcomparison
        System.out.println("Cannot read file " + filename);
        return false;
      }
-  
+
      return true;
- 
+
    }
 
    /**
-   * This method populates the pdb arrays with the names of the pdbs to 
+   * This method populates the pdb arrays with the names of the pdbs to
    * compare. This listFile lists a series of entries, wherein each
    * line indicates the PDB names to be compared.
    * <pdbname1>=<pdbname2>
-   *   
+   *
    *  @param  listFile  name of the listfile
-   *  @return 
+   *  @return
    *
    */
    private void  populatePDBArray(String listFile)
    {
 	// open ListFile and populate the PDB list to be compared
-	if (listFile != null) 
+	if (listFile != null)
 	{
 	    Properties listProps = new Properties();
 	    try {
@@ -271,7 +271,7 @@ public class pdbcomparison
 		 System.out.println("Could not open List File " + listFile);
 		 return;
 	    }
-	    
+
 	    pdbarr1 = new String[listProps.size()];
 	    pdbarr2 = new String[listProps.size()];
 	    Enumeration e = listProps.keys();
@@ -279,7 +279,7 @@ public class pdbcomparison
 	    while (e.hasMoreElements())
 	    {
 		    pdbarr1[j] = (String)e.nextElement();
-		    pdbarr2[j] = listProps.getProperty(pdbarr1[j]);   
+		    pdbarr2[j] = listProps.getProperty(pdbarr1[j]);
                     j++;
 	    }
 
@@ -287,12 +287,12 @@ public class pdbcomparison
    }
 
    /**
-   * This method populates the pdb arrays with the names of the pdbs to 
-   * compare.  
-   * 
+   * This method populates the pdb arrays with the names of the pdbs to
+   * compare.
+   *
    *  @param  pdbname1 Name of 2nd PDB file to be compared
    *  @param  pdbname2 Name of 2nd PDB file to be compared
-   *  @return 
+   *  @return
    *
    */
    private void  populatePDBArray(String pdbname1, String pdbname2)
@@ -300,7 +300,7 @@ public class pdbcomparison
       if (pdbname1 == null) return;
       if (pdbname2 == null) return;
 
-      if ((pdbname1 != null) && (pdbname2 != null)) 
+      if ((pdbname1 != null) && (pdbname2 != null))
       {
 	 pdbarr1 = new String[1];
 	 pdbarr2 = new String[1];
@@ -311,11 +311,11 @@ public class pdbcomparison
    }
 
    /**
-   * This method populates the pdb arrays with the names of the pdbs to 
-   * compare.  
-   * 
-   *  @param  arrayno  Array number which corresponds to the pdb array 
-   *                   containing  list of pdbs 
+   * This method populates the pdb arrays with the names of the pdbs to
+   * compare.
+   *
+   *  @param  arrayno  Array number which corresponds to the pdb array
+   *                   containing  list of pdbs
    *                   If 1 then send pdbarr1, if 2 send pdbarr2 else null
    *
    *  @return PDB string array containing list of PDB's
@@ -360,13 +360,13 @@ public class pdbcomparison
 
        if (pdb1.equals(pdb2)) {
         writeToLog("PDB " + pdbname1 + "  and PDB " + pdbname2 + " are equal");
-       
+
         return true;
        } else {
         writeToLog("PDB " + pdbname1 + "  and PDB " + pdbname2 + " are not equal");
         return false;
        }
-   } 
+   }
 
 
 
@@ -374,7 +374,7 @@ public class pdbcomparison
    *  Write message to LOGFILE
    *
    *  @param msg Message to be written to log file
-   *  @return 
+   *  @return
    *
    */
    private void writeToLog(String msg)
@@ -399,7 +399,7 @@ public class pdbcomparison
          System.out.println("ERROR: Could not write to File " + LOGFILE);
          return;
       }
-   } 
+   }
 
    /**
    *  Write status of comparison  to OUTFILE
@@ -408,7 +408,7 @@ public class pdbcomparison
    *  @param pdbname1 file name of pdb which was compared.
    *  @param pdbname2 file name of pdb which was compared.
    *
-   *  @return 
+   *  @return
    *
    */
    private void writeToOutputFile(String status, String pdbname1, String pdbname2)
@@ -431,7 +431,7 @@ public class pdbcomparison
      try {
            long len = raf.length();
            raf.seek(len);
-     
+
            raf.write(msg.getBytes());
            raf.write("\n".getBytes());
       } catch (IOException e) {
@@ -446,7 +446,7 @@ public class pdbcomparison
        return;
      }
 
-   } 
+   }
 
 
 
@@ -454,7 +454,7 @@ public class pdbcomparison
    *  Main starting block of execution
    *
    *  @param command line args captured in an array of Strings
-   *  @return 
+   *  @return
    *
    */
    public static void main(String args[])
@@ -465,16 +465,16 @@ public class pdbcomparison
      int nargs = args.length;
      int status=0;
 
-     if (nargs != 1) 
-     {  
+     if (nargs != 1)
+     {
          System.out.println("Incorrect no. of arguments passed...");
          pdbcmp.usage();
          System.exit(-1);
-   
+
      }
 
      String propFile = args[0];
- 
+
      File f=null;
      try {
        f = new File(propFile);
@@ -482,7 +482,7 @@ public class pdbcomparison
        System.out.println("Exception: Could not open file " + propFile);
        System.exit(-1);
      }
-     
+
      if (! f.canRead()) {
        System.out.println("Exception: " + propFile + " is not a file ");
        System.exit(-1);
@@ -493,16 +493,16 @@ public class pdbcomparison
        System.exit(-1);
      }
 
-     // parse Property file 
+     // parse Property file
      pdbcmp.parsePropertyFile(propFile);
 
      String pdbarr1[] = pdbcmp.getPDBArray(1);
      String pdbarr2[] = pdbcmp.getPDBArray(2);
-     if ( (pdbarr1 == null) || 
+     if ( (pdbarr1 == null) ||
           (pdbarr2 == null) ||
-          (pdbarr1.length == 0) || 
+          (pdbarr1.length == 0) ||
           (pdbarr1.length == 0))
-     { 
+     {
        System.out.println("pdbArray is empty. No PDBS to compare... \n");
        System.exit(-1);
      }
@@ -532,7 +532,7 @@ public class pdbcomparison
      pdbcmp.writeToLog("PDB Comparison: end time " + endTime);
      pdbcmp.writeToLog("************** End *****************n");
      pdbcmp.writeToLog("\n");
-   
+
      System.exit(status);
    }
 }

@@ -41,31 +41,31 @@ public class SimpleType
         super(aParent, aName, aLocation);
         maFinalValues = null;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.SimpleType;
     }
-    
-    
-    
+
+
+
 
     public void SetFinal (final String[] aFinalValues)
     {
         maFinalValues = aFinalValues;
     }
-    
-    
-    
-    
+
+
+
+
     public boolean IsFinal (final String sCatgery)
     {
         if (maFinalValues != null)
-        {   
+        {
             for (final String sFinal : maFinalValues)
             {
                 if (sFinal.equals(sCatgery))
@@ -77,26 +77,26 @@ public class SimpleType
         return false;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return "simple type "+GetName().GetDisplayName();
     }
-    
-    
-    
-    
+
+
+
+
     private String[] maFinalValues;
 }

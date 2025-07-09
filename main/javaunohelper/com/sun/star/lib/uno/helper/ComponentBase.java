@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ public class ComponentBase extends WeakBase implements XComponent
     protected boolean bDisposed= false;
     static final Type  EVT_LISTENER_TYPE= new Type(XEventListener.class);
 
-    
+
     /** Creates a new instance of CompBase */
     public ComponentBase()
     {
@@ -60,8 +60,8 @@ public class ComponentBase extends WeakBase implements XComponent
             throw new DisposedException();
         }
     }
-    
-    /** Override to perform extra clean-up work. Provided for subclasses. It is 
+
+    /** Override to perform extra clean-up work. Provided for subclasses. It is
         called during dispose()
      */
     protected void preDisposing()
@@ -72,9 +72,9 @@ public class ComponentBase extends WeakBase implements XComponent
     protected void postDisposing()
     {
     }
-    
-    
-    /** Method of XComponent. It is called by the owning client when the component is not needed 
+
+
+    /** Method of XComponent. It is called by the owning client when the component is not needed
      *  anymore. The registered listeners are notified that this method has been called.
      */
     public void dispose()
@@ -122,14 +122,14 @@ public class ComponentBase extends WeakBase implements XComponent
                 System.out.println("OComponentHelper::dispose() - dispose called twice" );
         }
     }
-    
+
     /** Method of XComponent.
      */
     public void removeEventListener(XEventListener xEventListener)
-    {   
+    {
         listenerContainer.removeInterface( EVT_LISTENER_TYPE, xEventListener);
     }
-    
+
     public void addEventListener(XEventListener listener)
     {
         boolean bDoDispose= false;
@@ -144,8 +144,8 @@ public class ComponentBase extends WeakBase implements XComponent
         {
             listener.disposing( new EventObject(this));
         }
-    }  
-    
+    }
+
     protected void finalize() throws Throwable
     {
         if ( ! bInDispose && ! bDisposed)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,29 +48,29 @@ import com.sun.star.table.XCell;
  * with existing values of documents from a Lotus Notes database.
  */
 public class NotesAccess implements Runnable {
-  
+
     /** Host server of the Domino Directory.
      */
     static String stringHost = "";
-  
+
     /** User in the host's Domino Directory.
      */
     static String stringUser = "";
-    
+
     /** Password for the user in the host's Domino Directory.
      */
     static String stringPassword = "";
-    
+
     /** Database with documents to get data from.
      */
     static String stringDatabase = "";
-    
+
     /** Reading the arguments and constructing the thread.
      * @param argv Holding values for the host, user, and the password of the user.
      */
     public static void main( String args[] ) {
         Thread thread;
-        
+
         if ( args.length < 4 ) {
             System.out.println(
                 "usage: java -jar NotesAccess.jar \"<Domino Host>\" \"<User>\" " +
@@ -80,7 +80,7 @@ public class NotesAccess implements Runnable {
                 "java -jar NotesAccess.jar \"\" \"\" \"\" \"Stocks.nsf\"" );
             System.exit( 1 );
         }
-        
+
         if ( !args[ 0 ].trim().equals( "" ) ) {
             stringHost = args[ 0 ].trim();
         }
@@ -88,7 +88,7 @@ public class NotesAccess implements Runnable {
             stringUser = args[ 1 ].trim();
         }
         stringPassword = args[ 2 ].trim();
-        
+
         try {
             java.io.File sourceFile = new java.io.File(args[ 3 ].trim());
             stringDatabase = sourceFile.getCanonicalPath();
@@ -97,31 +97,31 @@ public class NotesAccess implements Runnable {
             e.printStackTrace();
             System.exit( 1 );
         }
-    
+
         if ( stringHost.equals( "" ) ) {
             // Initializing.
             NotesAccess notesaccess = new NotesAccess();
-            
+
             // Allowing only local calls to the Domino classes.
             thread = new NotesThread( ( Runnable ) notesaccess );
         }
         else {
             // Extracting the host, user, and password.
             NotesAccess notesaccess = new NotesAccess();
-            
+
             // Allowing remote calls to the Domino classes.
             thread = new Thread( ( Runnable ) notesaccess );
         }
-        
+
         // Starting the thread.
         thread.start();
     }
-    
+
     /** This is the default constructor without arguments.
      */
     public NotesAccess() {
     }
-  
+
     /** Reading all documents from the given database and writing the data to
      * an OpenOffice.org Calc spreadsheet document.
      */
@@ -130,11 +130,11 @@ public class NotesAccess implements Runnable {
             // get the remote office component context
             XComponentContext xContext =
                 com.sun.star.comp.helper.Bootstrap.bootstrap();
-            
+
             System.out.println("Connected to a running office ...");
-            
-            XMultiComponentFactory xMCF = xContext.getServiceManager();            
-          
+
+            XMultiComponentFactory xMCF = xContext.getServiceManager();
+
             /* A desktop environment contains tasks with one or more
                frames in which components can be loaded. Desktop is the
                environment for components which can instantiate within
@@ -143,28 +143,28 @@ public class NotesAccess implements Runnable {
                 UnoRuntime.queryInterface(XComponentLoader.class,
                     xMCF.createInstanceWithContext(
                         "com.sun.star.frame.Desktop", xContext));
-      
+
             // Load a Writer document, which will be automatically displayed
             XComponent xComponent = xLoader.loadComponentFromURL(
                 "private:factory/scalc", "_blank", 0,
                 new PropertyValue[0] );
-      
+
             // Querying for the interface XSpreadsheetDocument
             XSpreadsheetDocument xSpreadsheetDoc =
                 (XSpreadsheetDocument) UnoRuntime.queryInterface(
                     XSpreadsheetDocument.class, xComponent);
-      
+
             // Getting all sheets from the spreadsheet document.
             XSpreadsheets xSpreadsheets = xSpreadsheetDoc.getSheets() ;
-      
+
             // Querying for the interface XIndexAccess.
             XIndexAccess xIndexAccess = (XIndexAccess) UnoRuntime.queryInterface(
                 XIndexAccess.class, xSpreadsheets);
-      
+
             // Getting the first spreadsheet.
             XSpreadsheet xSpreadsheet = (XSpreadsheet) UnoRuntime.queryInterface(
                 XSpreadsheet.class, xIndexAccess.getByIndex(0));
-      
+
             Session session;
             if ( !stringHost.equals( "" ) ) {
                 // Creating a Notes session for remote calls to the Domino classes.
@@ -176,69 +176,69 @@ public class NotesAccess implements Runnable {
                 // Domino classes.
                 session = NotesFactory.createSession();
             }
-      
+
             // Getting the specified Notes database.
             Database database = session.getDatabase( "", stringDatabase );
-            
+
             // Getting a collection of all documents from the database.
             DocumentCollection documentCollection = database.getAllDocuments();
-      
+
             // Getting the first document from the database
             Document document = documentCollection.getFirstDocument();
-      
+
             // Start to write to cells at this row.
             int intRowToStart = 0;
-      
+
             // The current row.
             int intRow = intRowToStart;
-      
+
             // The current column.
             int intColumn = 0;
-      
+
             // Process all documents
             while ( document != null ) {
                 // Getting the name of the stock.
                 String stringName = document.getItemValueString("Name");
-                
+
                 // Inserting the name to a specified cell.
                 insertIntoCell(intColumn, intRow, stringName, xSpreadsheet, "");
-                
+
                 // Getting the number of stocks.
                 double intNumber = document.getItemValueInteger( "Number" );
-        
+
                 // Inserting the number of stocks to a specified cell.
                 insertIntoCell( intColumn + 1, intRow, String.valueOf(intNumber),
                                 xSpreadsheet, "V" );
-        
+
                 // Getting current share price.
                 double doubleSharePrice = document.getItemValueDouble("SharePrice");
-        
+
                 // Inserting the current share price to a specified cell.
                 insertIntoCell(intColumn + 2, intRow,
                                String.valueOf(doubleSharePrice),
                                xSpreadsheet, "V");
-        
+
                 // Inserting the total value.
                 insertIntoCell(intColumn + 3, intRow, "=B"
                                + String.valueOf( intRow + 1 )
                                + "*C" + String.valueOf(intRow + 1),
                                xSpreadsheet, "");
-        
+
                 // Increasing the current row.
                 intRow++;
-                
+
                 // Getting the next document from the collection.
                 document = documentCollection.getNextDocument();
             }
-      
+
             // Summing all specific amounts.
             insertIntoCell(intColumn + 3, intRow, "=sum(D"
                            + String.valueOf( intRowToStart + 1 ) + ":D"
                            + String.valueOf( intRow ),
                            xSpreadsheet, "");
-      
+
             xContext = null;
-      
+
             // Leaving the program.
             System.exit(0);
         }
@@ -246,7 +246,7 @@ public class NotesAccess implements Runnable {
             e.printStackTrace();
         }
     }
-  
+
     /** Inserting a value or formula to a cell defined by the row and column.
      * @param intCellX Row.
      * @param intCellY Column.
@@ -261,7 +261,7 @@ public class NotesAccess implements Runnable {
                                       String stringFlag)
     {
         XCell xCell = null;
-    
+
         try {
             xCell = xSpreadsheet.getCellByPosition( intCellX, intCellY );
         } catch ( com.sun.star.lang.IndexOutOfBoundsException exception ) {

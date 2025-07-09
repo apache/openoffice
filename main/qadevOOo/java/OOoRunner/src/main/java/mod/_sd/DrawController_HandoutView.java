@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -119,7 +119,7 @@ public class DrawController_HandoutView extends TestCase {
     * wait to allow frames to be loaded. Retrieves
     * the collection of the draw pages
     * from the first document and takes one of them. Inserts some shapes to the
-    * retrieved draw page. 
+    * retrieved draw page.
     * Switch to the <b>HandoutMode</b>.
     * Obtains a current controller from the first document
     * using the interface <code>XModel</code>. The obtained controller is the
@@ -218,7 +218,7 @@ public class DrawController_HandoutView extends TestCase {
         }
 
         utils.shortWait(500);
-        
+
         XModel aModel = (XModel)
             UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
@@ -226,7 +226,7 @@ public class DrawController_HandoutView extends TestCase {
 
         log.println("bring first document to front...");
         DesktopTools.bringWindowToFront(aModel);
-        
+
         XModel aModel2 = (XModel)
             UnoRuntime.queryInterface(XModel.class, xSecondDrawDoc);
 
@@ -260,7 +260,7 @@ public class DrawController_HandoutView extends TestCase {
         xShapes1.add(shape3);
         xShapes2.add(shape1);
         shortWait();
-        
+
         tEnv.addObjRelation("Selections", new Object[] {
             oDrawPage, oShapeCol1, oShapeCol2});
         tEnv.addObjRelation("Comparer", new Comparator() {
@@ -287,7 +287,7 @@ public class DrawController_HandoutView extends TestCase {
         tEnv.addObjRelation("FirstModel", aModel);
 
         tEnv.addObjRelation("XUserInputInterception.XModel", aModel);
-        
+
         XFrame the_frame = the_Desk.getCurrentFrame();
         tEnv.addObjRelation("Frame", the_frame);
 
@@ -311,10 +311,10 @@ public class DrawController_HandoutView extends TestCase {
             UnoRuntime.queryInterface(XModifiable.class,xDrawDoc);
 
         tEnv.addObjRelation("Modifiable",modify);
-        
+
         tEnv.addObjRelation("XComponent.DisposeThis", xDrawDoc);
 
-        
+
         return tEnv;
 
     } // finish method getTestEnvironment

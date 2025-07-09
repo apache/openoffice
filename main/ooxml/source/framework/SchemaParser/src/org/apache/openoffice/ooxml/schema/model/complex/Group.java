@@ -40,10 +40,10 @@ public class Group
     {
         super(aParent, aName, aLocation);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -56,12 +56,12 @@ public class Group
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
-        aVisitor.Visit(this);        
+        aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {

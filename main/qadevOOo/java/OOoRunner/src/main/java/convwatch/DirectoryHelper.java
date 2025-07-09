@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ import java.util.ArrayList;
  * @author Lars.Langhans@sun.com
  */
 public class DirectoryHelper
-{    
+{
     ArrayList m_aFileList = new ArrayList();
     boolean m_bRecursiveIsAllowed = true;
 
@@ -41,12 +41,12 @@ public class DirectoryHelper
         {
             m_bRecursiveIsAllowed = _bValue;
         }
-    
+
     /**
      * Traverse over a given directory, and filter with a given FileFilter
      * object and gives back the deep directory as a Object[] list, which
      * contain a String object for every directory entry.
-     * 
+     *
      * <B>Example</B>
      * List directory /bin, filter out all files which ends with '.prn'
      *
@@ -61,14 +61,14 @@ public class DirectoryHelper
      *              return true;
      *          }
      *  };
-     *           
+     *
      * Object[] aList = DirectoryHelper.traverse("/bin", aFileFilter);
      * for (int i=0;i<aList.length;i++)
      * {
      *     String aEntry = (String)aList[i];
      *     System.out.println(aEntry);
      * }
-     * 
+     *
      */
     public static Object[] traverse( String _sDirectory, FileFilter _aFileFilter, boolean _bRecursiveIsAllowed )
         {
@@ -77,7 +77,7 @@ public class DirectoryHelper
             a.traverse_impl(_sDirectory, _aFileFilter);
             return a.m_aFileList.toArray();
         }
-    
+
     public static Object[] traverse( String _sDirectory, boolean _bRecursiveIsAllowed )
         {
             DirectoryHelper a = new DirectoryHelper();
@@ -85,8 +85,8 @@ public class DirectoryHelper
             a.traverse_impl(_sDirectory, null);
             return a.m_aFileList.toArray();
         }
-    
-    void traverse_impl( String afileDirectory, FileFilter _aFileFilter ) 
+
+    void traverse_impl( String afileDirectory, FileFilter _aFileFilter )
         {
             File fileDirectory = new File(afileDirectory);
             // Testing, if the file is a directory, and if so, it throws an exception
@@ -94,7 +94,7 @@ public class DirectoryHelper
             {
                 throw new IllegalArgumentException( "not a directory: " + fileDirectory.getName() );
             }
-            
+
             // Getting all files and directories in the current directory
             File[] aDirEntries;
             if (_aFileFilter != null)
@@ -105,7 +105,7 @@ public class DirectoryHelper
             {
                 aDirEntries = fileDirectory.listFiles();
             }
-            
+
             // Iterating for each file and directory
             for ( int i = 0; i < aDirEntries.length; ++i )
             {
@@ -117,7 +117,7 @@ public class DirectoryHelper
                         traverse_impl( aDirEntries[ i ].getAbsolutePath(), _aFileFilter );
                     }
                 }
-                else 
+                else
                 {
                     // adding file to List
                     try
@@ -141,7 +141,7 @@ public class DirectoryHelper
     //     {
     //         String sDirectory = "/misc/convwatch/gfxcmp/data/doc-pool/demo";
     //         Object[] aDirectoryList = DirectoryHelper.traverse( sDirectory, false );
-    // 
+    //
     //         for (int i=0;i<aDirectoryList.length;i++)
     //         {
     //             String sEntry = (String)aDirectoryList[i];

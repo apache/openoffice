@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sd.shape;
 
@@ -97,7 +97,7 @@ public class ShapeProperties {
 
 	/**
 	 * test Insert a new slide and Insert a new EllipseShape
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	 @Test
@@ -110,14 +110,14 @@ public class ShapeProperties {
 	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("Name", "test");
-	 
+
 	 xShape=saveAndLoadShape(1,0);
 	 XPropertySet xPropSet2 = (XPropertySet) UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 assertEquals("Not the same shape","test",xPropSet2.getPropertyValue("Name"));
 	 assertEquals("Not EllopseShape","com.sun.star.drawing.EllipseShape",xShape.getShapeType());
 	 }
-	
+
 	 /**
 	 * test Insert text to an EllopseShape
 	 *
@@ -134,7 +134,7 @@ public class ShapeProperties {
 	 ShapeUtil.addPortion(xShape, "test", false);
 	 assertEquals("Not put text correctly","test",ShapeUtil.getPortion(xShape));
 	 }
-	
+
 	 /**
 	 * test Shape fill with Gradient
 	 *
@@ -170,7 +170,7 @@ public class ShapeProperties {
 	 aGradient=(Gradient) xPropSet.getPropertyValue("FillGradient");
 	 assertEquals("Not Linear Gradient",GradientStyle.LINEAR,aGradient.Style);
 	 }
-	
+
 	 /**
 	 * test Shape fill with yellow color
 	 *
@@ -194,7 +194,7 @@ public class ShapeProperties {
 	 assertEquals("Not Color Fill Style",FillStyle.SOLID,xPropSet.getPropertyValue("FillStyle"));
 	 assertEquals("Not Yellow Color Fill",0xffff00,xPropSet.getPropertyValue("FillColor"));
 	 }
-	
+
 	 /**
 	 * test shape fill with Hatch Style(Pattern in MS)
 	 * @throws Exception
@@ -215,7 +215,7 @@ public class ShapeProperties {
 	 aHatch.Distance=100;
 	 aHatch.Angle=450;
 	 xPropSet.setPropertyValue("FillHatch", aHatch);
-	
+
 	 // --------------------------
 	 xShape=saveAndLoadShape(1,0);
 	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
@@ -228,7 +228,7 @@ public class ShapeProperties {
 	// ------------Shape Line-----------------------------
 	/**
 	 * test Shape Line style DASH
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	 @Test
@@ -238,18 +238,18 @@ public class ShapeProperties {
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
-	
+
 	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("LineStyle", LineStyle.DASH);
-	
+
 	 LineDash aLineDash=new LineDash();
 	 aLineDash.Style=DashStyle.ROUND;
 	 aLineDash.Dots=2;
 	 aLineDash.DashLen=100;
 	 aLineDash.Distance=50;
 	 xPropSet.setPropertyValue("LineDash", aLineDash);
-	
+
 	 // --------------------------
 	 xShape=saveAndLoadShape(1,0);
 	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
@@ -258,12 +258,12 @@ public class ShapeProperties {
 	 aLineDash=(LineDash) xPropSet.getPropertyValue("LineDash");
 	 assertEquals("Not Round Dash Style", DashStyle.ROUND ,aLineDash.Style);
 	 }
-	
+
 	 /**
 	 * test Shape Line Color
 	 * @throws Exception
 	 */
-	
+
 	 @Test
 	 public void testShapeLineColor() throws Exception {
 	 Point po = new Point(1000, 8000);
@@ -284,7 +284,7 @@ public class ShapeProperties {
 
 	/**
 	 * test Shape position and size
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	 @Test
@@ -323,7 +323,7 @@ public class ShapeProperties {
 	// ------------------Shape Remove----------------------------
 	/**
 	 * test Remove shape from impress Document
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	 @Test
@@ -348,7 +348,7 @@ public class ShapeProperties {
 
 	/**
 	 * create a new presentation document and insert a new slide.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
@@ -363,7 +363,7 @@ public class ShapeProperties {
 
 	/**
 	 * Save presentation and reLoad the presentation and shape in it.
-	 * 
+	 *
 	 * @param po
 	 * @param shapeType
 	 * @return
@@ -377,7 +377,7 @@ public class ShapeProperties {
 	}
 	/**
 	 * save and reload Presentation document.
-	 * 
+	 *
 	 * @param presentationDocument
 	 * @param sFilter
 	 * @param sExtension

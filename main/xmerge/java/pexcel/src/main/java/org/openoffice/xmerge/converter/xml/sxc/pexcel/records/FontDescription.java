@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 
 
 /**
- * Represents a BIFF Record descibing a font used 
+ * Represents a BIFF Record descibing a font used
  */
 public class FontDescription implements BIFFRecord {
 
@@ -60,12 +60,12 @@ public class FontDescription implements BIFFRecord {
 
 		Debug.log(Debug.TRACE,"Building FontDescriptor based on Format : " + fmt);
 
-		this.dwHeight	= EndianConverter.writeShort((short) (fmt.getFontSize()*20)); 
-			
+		this.dwHeight	= EndianConverter.writeShort((short) (fmt.getFontSize()*20));
+
 		grbit = new byte[] {(byte)0x00, (byte)0x00};
 		bls = EndianConverter.writeShort((short) 400);
 		uls = 0;
-			
+
 		if (fmt.getAttribute(Format.ITALIC))
 			grbit[0] |= ITALIC;
 
@@ -80,8 +80,8 @@ public class FontDescription implements BIFFRecord {
 		bCharSet	= 0;
 
 		String fontName = fmt.getFontName();
-		if(	!fontName.equals("Tahoma") && 
-			!fontName.equals("Courier New")) { 
+		if(	!fontName.equals("Tahoma") &&
+			!fontName.equals("Courier New")) {
 			// We will set our default font to be Tahoma
 			fontName = new String("Tahoma");
 		}
@@ -108,12 +108,12 @@ public class FontDescription implements BIFFRecord {
 	 * @return true if italic otherwise false
 	 */
 	public boolean isItalic() {
-	
+
 		return (EndianConverter.readShort(grbit) == 2);
 	}
 
 	/**
-	 * Tests if this font descriptor defines underline 
+	 * Tests if this font descriptor defines underline
 	 *
 	 * @return true if underline otherwise false
 	 */
@@ -123,7 +123,7 @@ public class FontDescription implements BIFFRecord {
 	}
 
 	/**
-	 * Tests if this font descriptor defines bold 
+	 * Tests if this font descriptor defines bold
 	 *
 	 * @return true if bold otherwise false
 	 */
@@ -133,7 +133,7 @@ public class FontDescription implements BIFFRecord {
 	}
 
     /**
-	 * Get the background color this format uses 
+	 * Get the background color this format uses
 	 *
 	 * @return the background color
 	 */
@@ -143,21 +143,21 @@ public class FontDescription implements BIFFRecord {
 		if(rgb!=0xFF) {
 			ColourConverter cc = new ColourConverter(PocketExcelConstants.cLookup);
 			c = cc.convertToRGB(rgb);
-		} 
+		}
 		return c;
 	}
-	
+
 	/**
 	 * Compares current font descriptor against one passed in
 	 *
-	 * @return true if attrbitues are the same 
+	 * @return true if attrbitues are the same
 	 */
 	public boolean compareTo(FontDescription rhs) {
 
 		if(EndianConverter.readShort(icvFore) !=
-		EndianConverter.readShort(rhs.icvFore)) 
+		EndianConverter.readShort(rhs.icvFore))
 			return false;
-			
+
 		if (EndianConverter.readShort(dwHeight) !=
 		EndianConverter.readShort(rhs.dwHeight))
 			return false;
@@ -176,26 +176,26 @@ public class FontDescription implements BIFFRecord {
 
 		return true;
 	}
-	
+
 
 	/**
- 	 * Constructs a Font Description from the <code>InputStream</code> 
+ 	 * Constructs a Font Description from the <code>InputStream</code>
  	 *
- 	 * @param	is InputStream containing a <code>FontDescription</code> 
+ 	 * @param	is InputStream containing a <code>FontDescription</code>
  	 */
     public FontDescription(InputStream is) throws IOException {
     	read(is);
 	}
 
     /**
-	 * Get the hex code for this particular <code>BIFFRecord</code> 
+	 * Get the hex code for this particular <code>BIFFRecord</code>
 	 *
 	 * @return the hex code for <code>FontDescription</code>
 	 */
     public short getBiffType() {
         return PocketExcelConstants.FONT_DESCRIPTION;
     }
-   
+
    	/**
 	 * Get the Font size
 	 *
@@ -209,7 +209,7 @@ public class FontDescription implements BIFFRecord {
 	 *
 	 */
 	public String getFont() {
-	
+
 		String name;
 
 		try {
@@ -219,43 +219,43 @@ public class FontDescription implements BIFFRecord {
 		}
         return name;
 	}
-   
+
 	/**
- 	 * Constructs a Font Description from the <code>InputStream</code> 
+ 	 * Constructs a Font Description from the <code>InputStream</code>
  	 *
- 	 * @param	input InputStream containing a <code>FontDescription</code> 
+ 	 * @param	input InputStream containing a <code>FontDescription</code>
  	 */
     public int read(InputStream input) throws IOException {
 
         int numOfBytesRead	= input.read(dwHeight);
-        numOfBytesRead		+= input.read(grbit);    
-        numOfBytesRead		+= input.read(icvFore);        
+        numOfBytesRead		+= input.read(grbit);
+        numOfBytesRead		+= input.read(icvFore);
         numOfBytesRead		+= input.read(bls);
         numOfBytesRead		+= input.read(Reserved2);
         uls 				= (byte) input.read();
         bFamily				= (byte) input.read();
-        bCharSet			= (byte) input.read();    
+        bCharSet			= (byte) input.read();
         Reserved3			= (byte) input.read();
         cch					= (byte) input.read();
 		numOfBytesRead += 5;
-        
+
         rgch = new byte[cch*2];
-        input.read(rgch, 0, cch*2);        
-    
-        Debug.log(Debug.TRACE,"\tdwHeight : "+ EndianConverter.readShort(dwHeight) + 
+        input.read(rgch, 0, cch*2);
+
+        Debug.log(Debug.TRACE,"\tdwHeight : "+ EndianConverter.readShort(dwHeight) +
                             " grbit : " + EndianConverter.readShort(grbit) +
                             " bls : " + EndianConverter.readShort(bls) +
                             " uls : " + uls +
-                            "\n\tFamily : " + bFamily +        
+                            "\n\tFamily : " + bFamily +
                             " bCharSet : " + bCharSet +
                             " cch : " + cch +
                             " rgch : " + new String(rgch,"UTF-16LE"));
-                            
+
         return numOfBytesRead;
     }
-    
+
     public void write(OutputStream output) throws IOException {
-		    
+
 		output.write(getBiffType());
 		output.write(dwHeight);
 		output.write(grbit);
@@ -271,5 +271,5 @@ public class FontDescription implements BIFFRecord {
 
 		Debug.log(Debug.TRACE,"Writing FontDescription record");
     }
-    
+
 }

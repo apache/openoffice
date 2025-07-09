@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package embeddedobj.test;
@@ -92,7 +92,7 @@ class WindowHelper {
 				aDescriptor.ParentIndex = 1;
 				aDescriptor.Parent = xParentPeer;
 				aDescriptor.Bounds = new com.sun.star.awt.Rectangle( (int)aBounds.getX(),
-																	 (int)aBounds.getY(), 
+																	 (int)aBounds.getY(),
 																	 (int)aBounds.getWidth(),
 																	 (int)aBounds.getHeight() );
 
@@ -114,7 +114,7 @@ class WindowHelper {
 			xWindow = (XWindow)UnoRuntime.queryInterface( XWindow.class, xPeer);
 			if ( xWindow != null )
 				xWindow.setPosSize( (int)aBounds.getX(),
-									(int)aBounds.getY(), 
+									(int)aBounds.getY(),
 									(int)aBounds.getWidth(),
 									(int)aBounds.getHeight(),
 									com.sun.star.awt.PosSize.POSSIZE );
@@ -132,7 +132,7 @@ class WindowHelper {
 	{
 		if ( !AnyConverter.isArray( aAny ) )
 			throw new com.sun.star.uno.RuntimeException();
-		
+
 		Object[] aArgs = new Object[1];
 		aArgs[0] = aAny;
 		XBitmap xResult = null;
@@ -152,6 +152,6 @@ class WindowHelper {
 			System.out.println( "exception: " + e );
 		}
 
-		return xResult;	
+		return xResult;
 	}
 };

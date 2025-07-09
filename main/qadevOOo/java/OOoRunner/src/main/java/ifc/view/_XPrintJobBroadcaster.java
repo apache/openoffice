@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ import lib.StatusException;
 public class _XPrintJobBroadcaster extends MultiMethodTest {
     public XPrintJobBroadcaster oObj = null;
     MyPrintJobListener listenerImpl = null;
-    
+
     /**
      * Get an object implementation of the _XPrintJobListener interface from the
      * test environment.
@@ -50,7 +50,7 @@ public class _XPrintJobBroadcaster extends MultiMethodTest {
             throw new StatusException(Status.failed(" No test possible. The XPrintJobListener interface has to be implemented."));
         }
     }
-    
+
     /**
      * add the listener, see if it's called.
      */
@@ -60,7 +60,7 @@ public class _XPrintJobBroadcaster extends MultiMethodTest {
         util.utils.shortWait(1000);
         tRes.tested("addPrintJobListener()", listenerImpl.actionTriggered());
     }
-    
+
     /**
      * remove the listener, see if it's still caleed.
      */
@@ -69,7 +69,7 @@ public class _XPrintJobBroadcaster extends MultiMethodTest {
         oObj.removePrintJobListener(listenerImpl);
 
             util.utils.shortWait(5000);
-            
+
         listenerImpl.reset();
         listenerImpl.fireEvent();
         tRes.tested("removePrintJobListener()", !listenerImpl.actionTriggered());
@@ -85,7 +85,7 @@ public class _XPrintJobBroadcaster extends MultiMethodTest {
         XPrintable xPrintable = null;
         PropertyValue[]printProps = null;
         String printFileName = null;
-        
+
         /**
          * Constructor
          * @param printable An object that can be cast to an XPrintable.
@@ -110,7 +110,7 @@ public class _XPrintJobBroadcaster extends MultiMethodTest {
         public boolean actionTriggered() {
             return eventCalled;
         }
-        
+
         /**
          * Fire the event that calls the printJobEvent
          */
@@ -121,7 +121,7 @@ public class _XPrintJobBroadcaster extends MultiMethodTest {
             catch(com.sun.star.lang.IllegalArgumentException e) {
             }
         }
-        
+
         public void reset() {
             File f = new File(printFileName);
             if (f.exists())
@@ -142,5 +142,5 @@ public class _XPrintJobBroadcaster extends MultiMethodTest {
         public void disposing(com.sun.star.lang.EventObject eventObject) {
         }
     }
-    
+
 }

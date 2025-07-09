@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,18 +26,18 @@ package org.openoffice.xmerge.converter.xml.sxc.pexcel.records.formula;
 import org.openoffice.xmerge.util.Debug;
 
 /**
- * This is the Factory class responsible for creating a <code>Token</code>. 
+ * This is the Factory class responsible for creating a <code>Token</code>.
  * It has three methods for returning three different types of Tokens
- * (Operator, Operand and Function).  
+ * (Operator, Operand and Function).
  * This utility class is used by either the <code>FormulaParser</code> or the
- * <code>FormulaDecoder</code>. 
+ * <code>FormulaDecoder</code>.
  */
 public class TokenFactory {
-    
+
 	private OperatorLookup operatorLookup;
 	private OperandLookup operandLookup;
 	private FunctionLookup fl;
-   
+
 	/**
 	 * Default Constructor
 	 */
@@ -49,7 +49,7 @@ public class TokenFactory {
 
 	/**
 	 * The Factory method for creating function Tokens
-	 * 
+	 *
 	 * @return The created <code>Token</code>
 	 */
 	public Token getFunctionToken(String s, int args) {
@@ -60,21 +60,21 @@ public class TokenFactory {
 		try {
 			t = new Token(s, ParseToken.TOKEN_FUNCTION_VARIABLE, fl.getIDFromString(s), args);
 		} catch (UnsupportedFunctionException eFn) {
-				
+
 			Debug.log(Debug.ERROR, eFn.getMessage());
 		}
 		return t;
 	}
-        
+
 	/**
 	 * The Factory method for creating operator Tokens
 	 *
 	 * @return The created <code>Token</code>
 	 */
 	public Token getOperatorToken(String s, int args) {
-	
+
 		Token t = null;
-                
+
 		Debug.log(Debug.TRACE,"TokenFactory creating operator Token : " + s);
 		try  {
 			if(args==1) {
@@ -90,7 +90,7 @@ public class TokenFactory {
 			}
 		} catch (UnsupportedFunctionException eFn) {
 			Debug.log(Debug.ERROR, eFn.getMessage());
-		} 
+		}
 		return t;
 	}
 
@@ -101,13 +101,13 @@ public class TokenFactory {
 	 */
 	public Token getOperandToken(String s, String type) {
 		Token t = null;
-        
+
 		Debug.log(Debug.TRACE,"TokenFactory creating operand (" + type + ") Token : " + s);
 		try {
 			t = new Token(s, ParseToken.TOKEN_OPERAND, operandLookup.getIDFromString(type), 0);
 		} catch (UnsupportedFunctionException eFn) {
 			Debug.log(Debug.ERROR, eFn.getMessage());
-		} 
+		}
 
 		return t;
 	}

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@ import com.sun.star.xml.AttributeData;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import lib.MultiPropertyTest;
- 
+
 import util.ValueChanger;
 import util.utils;
 
@@ -156,7 +156,7 @@ public class _CharacterProperties extends MultiPropertyTest {
 
     /**
      * Custom tester for style name properties. If object relations "STYLENAME1"
-     * and "STYLENAME2" exists, then testing with these strings, else switches 
+     * and "STYLENAME2" exists, then testing with these strings, else switches
      * between 'Citation' and 'Emphasis' names.
      */
     protected PropertyTester StyleTester = new PropertyTester() {
@@ -307,9 +307,9 @@ public class _CharacterProperties extends MultiPropertyTest {
                 "RubyIsAbove",new Boolean(true));
         }
     }
-    
+
     /**
-    * This property only takes values between 0..100 
+    * This property only takes values between 0..100
     * so ist must be treated special
     */
     public void _CharEscapementHeight() {
@@ -317,7 +317,7 @@ public class _CharacterProperties extends MultiPropertyTest {
         Byte max = new Byte((byte)100);
         testProperty("CharEscapementHeight", aByte, max) ;
     }
-    
+
 
     /**
     * This property can be void, so if old value is <code> null </code>
@@ -430,7 +430,7 @@ public class _CharacterProperties extends MultiPropertyTest {
             tRes.tested(name, false);
         }
     }// end of changeProp
-    
+
     public void _TextUserDefinedAttributes() {
         XNameContainer uda = null;
         boolean res = false;
@@ -453,7 +453,7 @@ public class _CharacterProperties extends MultiPropertyTest {
             String[] els = uda.getElementNames();
             oObj.setPropertyValue("TextUserDefinedAttributes", uda);
             uda = (XNameContainer) AnyConverter.toObject(
-                          new Type(XNameContainer.class), 
+                          new Type(XNameContainer.class),
                           oObj.getPropertyValue("TextUserDefinedAttributes"));
             els = uda.getElementNames();
 
@@ -484,19 +484,19 @@ public class _CharacterProperties extends MultiPropertyTest {
 
         tRes.tested("TextUserDefinedAttributes", res);
     }
-    
+
     private class OwnUserDefinedAttributes implements XNameContainer{
         Hashtable members = null;
-        
-        
+
+
         public OwnUserDefinedAttributes() {
             members = new Hashtable();
         }
-        
+
         public Object getByName(String str) throws com.sun.star.container.NoSuchElementException, com.sun.star.lang.WrappedTargetException {
             return members.get(str);
         }
-        
+
         public String[] getElementNames() {
             Enumeration oEnum = members.keys();
             int count = members.size();
@@ -506,34 +506,34 @@ public class _CharacterProperties extends MultiPropertyTest {
                 res[i] = (String)oEnum.nextElement();
             return res;
         }
-        
+
         public com.sun.star.uno.Type getElementType() {
             Enumeration oEnum = members.keys();
             String key = (String)oEnum.nextElement();
             Object o = members.get(key);
             return new Type(o.getClass());
         }
-        
+
         public boolean hasByName(String str) {
             return members.get(str) != null;
         }
-        
+
         public boolean hasElements() {
             return members.size() > 0;
         }
-        
+
         public void insertByName(String str, Object obj) throws com.sun.star.lang.IllegalArgumentException, com.sun.star.container.ElementExistException, com.sun.star.lang.WrappedTargetException {
             members.put(str, obj);
         }
-        
+
         public void removeByName(String str) throws com.sun.star.container.NoSuchElementException, com.sun.star.lang.WrappedTargetException {
             members.remove(str);
         }
-        
+
         public void replaceByName(String str, Object obj) throws com.sun.star.lang.IllegalArgumentException, com.sun.star.container.NoSuchElementException, com.sun.star.lang.WrappedTargetException {
             members.put(str, obj);
         }
-        
+
     }
 
 } //finish class _CharacterProperties

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,21 +113,21 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 		layout.marginHeight = 0;
 		layout.marginWidth = 0;
 		parent.setLayout(layout);
-		
+
 		messageLabel = new Label(parent, SWT.NONE);
 		GridData gridData = new GridData(GridData.FILL_HORIZONTAL);
 		gridData.minimumHeight = 14;
 		gridData.heightHint = 14;
 		messageLabel.setLayoutData(gridData);
-		   
+
 		viewer = new TableViewer(parent, SWT.H_SCROLL | SWT.V_SCROLL | SWT.BORDER);
 		gridData = new GridData(GridData.FILL_BOTH);
 		viewer.getTable().setLayoutData(gridData);
-		
+
 		viewer.setContentProvider(new VclExplorerContentProvider());
 		viewer.setLabelProvider(new VclExplorerLabelProvider());
 		viewer.setInput(controlInfos);
-		
+
 		display = parent.getDisplay();
 		duplicatedNameColor = new Color(display, 255, 160, 160);
 		final Table table = viewer.getTable();
@@ -143,7 +143,7 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 		column.setResizable(true);
 		column.setMoveable(false);
 		column.setWidth(150);
-		
+
 		column = new TableColumn(table, SWT.NONE);
 		column.setText("Type");
 		column.setResizable(true);
@@ -177,11 +177,11 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 			public boolean canModify(Object element, String property) {
 				if (!"Name".equals(property))
 					return false;
-				
+
 				ControlInfo controlInfo = (ControlInfo) element;
 				if (controlInfo.name != null)
 					return false;
-				 
+
 				return uiMapOp.scan();
 			}
 
@@ -230,7 +230,7 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 						| ColumnViewerEditor.TABBING_MOVE_TO_ROW_NEIGHBOR
 						| ColumnViewerEditor.TABBING_VERTICAL
 						| ColumnViewerEditor.KEYBOARD_ACTIVATION);
-	
+
 		// Create the help context id for the viewer's control
 		PlatformUI.getWorkbench().getHelpSystem().setHelp(viewer.getControl(), "org.vclauto.assistant.viewer");
 		makeActions();
@@ -270,7 +270,7 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 		// Other plug-ins can contribute there actions here
 		manager.add(new Separator(IWorkbenchActionConstants.MB_ADDITIONS));
 	}
-	
+
 	private void fillLocalToolBar(IToolBarManager manager) {
 		manager.add(inspectAction);
 		manager.add(launchAction);
@@ -288,15 +288,15 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 				} catch (Exception e) {
 					showMessage("OpenOffice disappeared! It maybe crashed or freezed. Please re-launch it.");
 				}
-				
-				
+
+
 			}
 		};
 		inspectAction.setText("Inspect");
 		inspectAction.setToolTipText("Inspect VCL controls.");
 //		action1.setImageDescriptor(PlatformUI.getWorkbench().getSharedImages().
 //			getImageDescriptor(ISharedImages.IMG_OBJS_INFO_TSK));
-		
+
 		launchAction = new Action() {
 			public void run() {
 				IPreferenceStore store = Activator.getDefault().getPreferenceStore();
@@ -310,7 +310,7 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 					showMessage("OpenOffice home is not set correctly in the Vclauto assistant preference page.");
 					return;
 				}
-				
+
 				IRunnableWithProgress op = new IRunnableWithProgress() {
 					@Override
 					public void run(IProgressMonitor arg0) throws InvocationTargetException, InterruptedException {
@@ -321,9 +321,9 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 						}
 					}
 				};
-				
+
 				IWorkbench wb = PlatformUI.getWorkbench();
-				
+
 				try {
 					wb.getProgressService().run(true, false, op);
 				} catch (InvocationTargetException e) {
@@ -343,11 +343,11 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 				ISelection selection = viewer.getSelection();
 				if (selection == null)
 					return;
-	
+
 				final ControlInfo controlInfo = (ControlInfo)((IStructuredSelection) selection).getFirstElement();
 				if (controlInfo.name != null) {
 					doInsertCode(controlInfo.name);
-				}		          
+				}
 			}
 		};
 	}
@@ -365,10 +365,10 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 			controlInfo.name = null;
 			e.printStackTrace();
 		}
-		
+
 		return true;
 	}
-	
+
 	private void doInsertCode(String code) {
 		IWorkbench wb = PlatformUI.getWorkbench();
 		IWorkbenchWindow window = wb.getActiveWorkbenchWindow();
@@ -381,21 +381,21 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 		AbstractTextEditor editor = (AbstractTextEditor) editorPart;
 		IDocumentProvider dp = editor.getDocumentProvider();
 		IDocument doc = dp.getDocument(editor.getEditorInput());
-		try {			
+		try {
 			ITextSelection textSelection = (ITextSelection) editorPart.getSite().getSelectionProvider().getSelection();
-			int offset = textSelection.getOffset();				
-		
+			int offset = textSelection.getOffset();
+
 			doc.replace(offset, textSelection.getLength(), code);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
 	}
-	
+
 	private void hookDoubleClickAction() {
 		viewer.addDoubleClickListener(new IDoubleClickListener() {
 			public void doubleClick(DoubleClickEvent event) {
-		
+
 				insertCodeAction.run();
 			}
 		});
@@ -414,7 +414,7 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 		viewer.getControl().setFocus();
 	}
 
-	
+
 	@Override
 	public void addWinInfo(final SmartId id, final long type, final String t) {
 		final String tooltip = t.replaceAll("%.*%.*:", "");
@@ -428,7 +428,7 @@ public class VclExplorer extends ViewPart implements WinInfoReceiver {
 //		for (ControlInfo info : controlInfos) {
 //			info.shot();
 //		}
-//		
+//
 		display.asyncExec(new Runnable() {
 			public void run() {
 				if (uiMapOp.scan()) {

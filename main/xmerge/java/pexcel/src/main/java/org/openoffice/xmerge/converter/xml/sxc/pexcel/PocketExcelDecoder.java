@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ import org.openoffice.xmerge.converter.xml.sxc.pexcel.records.*;
  *  @author   Paul Rank
  */
 final class PocketExcelDecoder extends SpreadsheetDecoder {
-	
+
 	private Workbook wb;
 	private Worksheet ws;
 	private CellValue cell;
@@ -60,13 +60,13 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      *
      *  @param  name      		The name of the WorkBook.
      *  @param	worksheetNames	set of Strings equivalent to the worksheets
-	 *  						contained in the workbook 
+	 *  						contained in the workbook
      *  @param  password  		The password for the workBook.
      *
      *  @throws  IOException  	If any I/O error occurs.
      */
     PocketExcelDecoder(String name, String[] worksheetNames, String password) throws IOException {
-    	super(name, password);    
+    	super(name, password);
 
 		fmt = new Format();
     }
@@ -83,7 +83,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      *  @throws  IOException  If any I/O error occurs.
      */
     public void addDeviceContent(ConvertData cd) throws IOException {
-	
+
 		Enumeration e = cd.getDocumentEnumeration();
 		wb = (Workbook) e.nextElement();
 	}
@@ -114,23 +114,23 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
 		Vector nameDefinitionVector = new Vector();
 		while(e.hasMoreElements()) {
 			DefinedName dn = (DefinedName)e.nextElement();
-			NameDefinition nameDefinitionEntry = dn.getNameDefinition(); 
+			NameDefinition nameDefinitionEntry = dn.getNameDefinition();
 			nameDefinitionVector.add(nameDefinitionEntry);
 		}
 		Debug.log(Debug.TRACE,"Getting " + nameDefinitionVector.size() + " DefinedName records");
         return (nameDefinitionVector.elements());
     }
-	
+
     /**
      *  This method returns an enumeration of Settings object(s),
 	 *  one for each worksheet
      *
-     *  @return An enumerattion of <code>Settings</code> 
+     *  @return An enumerattion of <code>Settings</code>
      */
     public BookSettings getSettings() {
 
         return (wb.getSettings());
-    }	
+    }
     /**
      *  This method returns the number of spreadsheets
      *  stored in the WorkBook.
@@ -145,7 +145,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
 		for(Enumeration e  = ws.getColInfos();e.hasMoreElements();) {
 			ColInfo ci = (ColInfo)e.nextElement();
 			int repeated = ci.getLast() - ci.getFirst() + 1;
-			ColumnRowInfo colInfo = new ColumnRowInfo(	ci.getColWidth(), 
+			ColumnRowInfo colInfo = new ColumnRowInfo(	ci.getColWidth(),
 														repeated,
 														ColumnRowInfo.COLUMN);
 			colRowVector.add(colInfo);
@@ -154,18 +154,18 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
 		// Collect Rows from worksheet and add them to the vector
 		for(Enumeration e  = ws.getRows();e.hasMoreElements();) {
 			Row rw = (Row)e.nextElement();
-			// We will use the repeat field for number (unlike columns rows 
+			// We will use the repeat field for number (unlike columns rows
 			// cannot be repeated, we have unique record for each row in pxl
-			int repeated = rw.getRowNumber();		
-			ColumnRowInfo rowInfo = new ColumnRowInfo(	rw.getRowHeight(), 
+			int repeated = rw.getRowNumber();
+			ColumnRowInfo rowInfo = new ColumnRowInfo(	rw.getRowHeight(),
 														repeated,
 														ColumnRowInfo.ROW);
 			colRowVector.add(rowInfo);
-		}		
+		}
 		Debug.log(Debug.TRACE,"Getting " + colRowVector.size() + " ColRowInfo records");
         return (colRowVector.elements());
     }
-	
+
     /**
      *  This method gets the requested WorkSheet from the
      *  WorkBook and sets it as the selected WorkSheet.  All
@@ -196,9 +196,9 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      */
     public String getSheetName() {
 
-		String wsName = wb.getSheetName(wsIndex); 
+		String wsName = wb.getSheetName(wsIndex);
 		Debug.log(Debug.TRACE,"The name of the current Worksheet is : " + wsName);
-		return wsName;		
+		return wsName;
     }
 
 
@@ -237,7 +237,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      *            -1 if no cell is currently selected.
      */
     public int getRowNumber() {
-	
+
 		int row = -1;
 
 		if (cell != null) {
@@ -264,7 +264,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
     public int getNumberOfColumns() {
         return maxCols;
     }
-     
+
 
     /**
      *  This method returns the col number of the current cell.
@@ -273,7 +273,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      *           -1 if no cell is currently selected.
      */
     public int getColNumber() {
-	
+
 		int col = -1;
 
 		if (cell != null) {
@@ -290,7 +290,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      *           null if no cell is currently selected.
      */
     public String getCellContents() {
-	
+
 		String contents = new String("");
 
 		if (cell != null) {
@@ -302,7 +302,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
 			}
 			catch (IOException e) {
 				System.err.println("Could Not retrieve Cell contents");
-				System.err.println("Setting contents of cell(" + cell.getRow() 
+				System.err.println("Setting contents of cell(" + cell.getRow()
 									+ "," + cell.getCol() + ") to an empty string");
 				System.err.println("Error msg: " + e.getMessage());
 			}
@@ -318,7 +318,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      *  <p>Many spreadsheets use ',' as a separator.
      *  StarOffice XML format uses ';' as a separator instead.</p>
      *
-     *  <p>Many spreadsheets use '!' as a separator when refencing 
+     *  <p>Many spreadsheets use '!' as a separator when refencing
      *  a cell in a different sheet.</p>
      *
      *  <blockquote>
@@ -341,7 +341,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
         formula = formula.replace('!', '.');
 
         return formula;
-    }	
+    }
 
     /**
      *  This method returns the contents of the current cell.
@@ -350,7 +350,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      *           null if no cell is currently selected.
      */
     public String getCellValue() {
-	
+
 		String contents = new String("");
 
 		if (cell != null) {
@@ -359,7 +359,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
 			}
 			catch (IOException e) {
 				System.err.println("Could Not retrieve Cell value");
-				System.err.println("Setting value of cell(" + cell.getRow() 
+				System.err.println("Setting value of cell(" + cell.getRow()
 									+ "," + cell.getCol() + ") to an empty string");
 				System.err.println("Error msg: " + e.getMessage());
 			}
@@ -375,8 +375,8 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
      */
     public String getCellDataType() {
 
-		String type = OfficeConstants.CELLTYPE_STRING; 
-		
+		String type = OfficeConstants.CELLTYPE_STRING;
+
 		if(cell instanceof FloatNumber)
 			type = OfficeConstants.CELLTYPE_FLOAT;
 		if(cell instanceof Formula)
@@ -395,7 +395,7 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
         return new Format(fmt);
     }
 
-    
+
     /**
      *  Create the format data for the new cell.
      */
@@ -416,17 +416,17 @@ final class PocketExcelDecoder extends SpreadsheetDecoder {
 		fmt.setBackground(xf.getBackground());
 		fmt.setAlign(xf.getAlign());
 		fmt.setVertAlign(xf.getVertAlign());
-		fmt.setAttribute(Format.WORD_WRAP, xf.isWordWrap());	
-		
-		fmt.setAttribute(Format.TOP_BORDER, xf.isBorder(ExtendedFormat.TOP_BORDER));	
-		fmt.setAttribute(Format.BOTTOM_BORDER, xf.isBorder(ExtendedFormat.BOTTOM_BORDER));	
-		fmt.setAttribute(Format.RIGHT_BORDER, xf.isBorder(ExtendedFormat.RIGHT_BORDER));	
-		fmt.setAttribute(Format.LEFT_BORDER, xf.isBorder(ExtendedFormat.LEFT_BORDER));	
+		fmt.setAttribute(Format.WORD_WRAP, xf.isWordWrap());
+
+		fmt.setAttribute(Format.TOP_BORDER, xf.isBorder(ExtendedFormat.TOP_BORDER));
+		fmt.setAttribute(Format.BOTTOM_BORDER, xf.isBorder(ExtendedFormat.BOTTOM_BORDER));
+		fmt.setAttribute(Format.RIGHT_BORDER, xf.isBorder(ExtendedFormat.RIGHT_BORDER));
+		fmt.setAttribute(Format.LEFT_BORDER, xf.isBorder(ExtendedFormat.LEFT_BORDER));
 
 		fmt.setFontName(fd.getFont());
 		fmt.setFontSize(fd.getFontSize());
-		
+
 		fmt.setCategory(getCellDataType());
 
-    }   
+    }
 }

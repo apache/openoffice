@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,8 +54,8 @@ public class _XScriptInfo extends MultiMethodTest {
 
     public void _getLogicalName() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getLogicalName");
 
         Iterator tests;
@@ -85,8 +85,8 @@ public class _XScriptInfo extends MultiMethodTest {
 
     public void _getParcelURI() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getParcelURI");
 
         Iterator tests;
@@ -115,8 +115,8 @@ public class _XScriptInfo extends MultiMethodTest {
 
     public void _getLanguage() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getLanguage");
 
         Iterator tests;
@@ -145,8 +145,8 @@ public class _XScriptInfo extends MultiMethodTest {
 
     public void _getFunctionName() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getFunctionName");
 
         Iterator tests;
@@ -175,8 +175,8 @@ public class _XScriptInfo extends MultiMethodTest {
 
     public void _getLanguageProperties() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getLanguageProperties");
 
         Iterator tests;
@@ -215,8 +215,8 @@ public class _XScriptInfo extends MultiMethodTest {
 
     public void _getFileSetNames() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getFileSetNames");
 
         Iterator tests;
@@ -252,8 +252,8 @@ public class _XScriptInfo extends MultiMethodTest {
 
     public void _getFilesInFileSet() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getFilesInFileSet");
 
         Iterator tests;
@@ -290,8 +290,8 @@ public class _XScriptInfo extends MultiMethodTest {
 
     public void _getDescription() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getDescription");
 
         Iterator tests;

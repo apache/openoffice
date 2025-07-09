@@ -64,13 +64,13 @@ import org.apache.openoffice.ooxml.schema.model.simple.Union;
 /** Parser for single schema file.
  *  Imports and includes of other schema files are stored and can be retrieved
  *  by calling GetImportedSchemas().
- *  
+ *
  *  Typical usage:
  *  1) Create SchemaParser for top-level schema file.
  *  2) Call Parse().
  *  3) Repeat the same recursively for all imported schemas (as returned by
  *     GetImportedSchemas()).
- *  
+ *
  *  All top level types (complex types, simple types, elements, etc.) are
  *  stored in the given Schema object.
  */
@@ -90,21 +90,21 @@ public class SchemaParser
         maImportedSchemas = new Vector<>();
         maLastLocation = null;
     }
-    
-    
-    
-    
+
+
+
+
     /** Parse the schema file.
      *  @return
      *      Return false if there is any error.
-     * @throws XMLStreamException 
+     * @throws XMLStreamException
      */
     public void Parse ()
         throws XMLStreamException
     {
         if (maReader == null)
             return;
-        
+
         while (maReader.hasNext())
         {
             final int nCode = maReader.next();
@@ -115,7 +115,7 @@ public class SchemaParser
                     {
                         ProcessSchemaTag();
                         ParseSchema();
-                        
+
                         maLastLocation = maReader.getLocation();
                     }
                     else
@@ -123,27 +123,27 @@ public class SchemaParser
                         throw CreateErrorException("expecting top level element to be 'schema'");
                     }
                     break;
-                    
+
                 case XMLStreamReader.END_DOCUMENT:
                     return;
-                    
+
                 default:
                     throw CreateErrorException("unexpected XML event %d", nCode);
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<File> GetImportedSchemaFilenames ()
     {
         return maImportedSchemas;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetLineCount ()
     {
         if (maLastLocation != null)
@@ -151,10 +151,10 @@ public class SchemaParser
         else
             return 0;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetByteCount ()
     {
         if (maLastLocation != null)
@@ -162,10 +162,10 @@ public class SchemaParser
         else
             return 0;
     }
-    
-    
-    
-    
+
+
+
+
     /** Process the namespace definitions in the outer 'schema' element.
      */
     private void ProcessSchemaTag ()
@@ -187,14 +187,14 @@ public class SchemaParser
             maLocalNamespaceMap.put(sPrefix, sURI);
             maSchemaBase.Namespaces.ProvideNamespace(sURI, sPrefix);
         }
-        
+
         maLocalNamespaceMap.put(null, msTargetNamespace);
         maSchemaBase.Namespaces.ProvideNamespace(msTargetNamespace, null);
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseSchema ()
         throws XMLStreamException
     {
@@ -205,31 +205,31 @@ public class SchemaParser
                 case XMLStreamReader.START_ELEMENT:
                     ProcessTopLevelStartElement();
                     break;
-                    
+
                 case XMLStreamReader.END_ELEMENT:
                     return;
-            
+
                 default:
                     throw CreateErrorException("unexpected event (expteced START_ELEMENT): %d", maReader.getEventType());
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ProcessTopLevelStartElement ()
         throws XMLStreamException
     {
         assert(GetAttributeValue("minOccurs") == null);
         assert(GetAttributeValue("maxOccurs") == null);
-        
+
         switch (maReader.getLocalName())
         {
             case "attribute":
                 maSchemaBase.Attributes.Add(ParseAttribute());
                 break;
-            
+
             case "attributeGroup":
                 maSchemaBase.AttributeGroups.Add(ParseAttributeGroup());
                 break;
@@ -237,22 +237,22 @@ public class SchemaParser
             case "complexType":
                 maSchemaBase.ComplexTypes.Add(ParseComplexType());
                 break;
-                
+
             case "element":
             	final Element aElement = ParseElement(null);
             	if (maSchema != null)
             		maSchema.TopLevelElements.Add(aElement);
                 maSchemaBase.TopLevelElements.Add(aElement);
                 break;
-                
+
             case "group":
                 maSchemaBase.Groups.Add(ParseGroup(null));
                 break;
-                
+
             case "import":
                 ParseImport();
                 break;
-                
+
             case "include":
                 ParseInclude();
                 break;
@@ -260,29 +260,29 @@ public class SchemaParser
             case "simpleType":
                 maSchemaBase.SimpleTypes.Add(ParseSimpleType(null));
                 break;
-                
+
             default:
                 throw CreateErrorException("unexpected top level element %s", maReader.getLocalName());
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ProcessStartElement (final Node aParent)
         throws XMLStreamException
     {
         final String sMinimumOccurrence = GetOptionalAttributeValue("minOccurs", "1");
         final String sMaximumOccurrence = GetOptionalAttributeValue("maxOccurs", "1");
-        
+
         final Node aLocalParent;
         if ( ! (sMinimumOccurrence.equals("1") && sMaximumOccurrence.equals("1")))
         {
             // Occurrence does not only have default values (min=max=1).
             // Have to create an intermediate node for the occurrence indicator.
             final OccurrenceIndicator aIndicator = new OccurrenceIndicator(
-                aParent, 
-                sMinimumOccurrence, 
+                aParent,
+                sMinimumOccurrence,
                 sMaximumOccurrence,
                 GetLocation());
             aParent.AddChild(aIndicator);
@@ -290,7 +290,7 @@ public class SchemaParser
         }
         else
             aLocalParent = aParent;
-        
+
         switch (maReader.getLocalName())
         {
             case "all":
@@ -304,11 +304,11 @@ public class SchemaParser
             case "attribute":
                 aLocalParent.AddAttribute(ParseAttributeOrReference());
                 break;
-                
+
             case "attributeGroup":
                 aLocalParent.AddAttribute(ParseAttributeGroupOrReference());
                 break;
-                
+
             case "choice":
                 aLocalParent.AddChild(ParseChoice(aLocalParent));
                 break;
@@ -336,28 +336,28 @@ public class SchemaParser
             case "sequence":
                 aLocalParent.AddChild(ParseSequence(aLocalParent));
                 break;
-                
+
             case "simpleContent":
                 aLocalParent.AddChild(ParseSimpleContent(aLocalParent));
                 break;
-                
+
             default:
                 throw CreateErrorException("unsupported content type %s", maReader.getLocalName());
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void IgnoreAnnotation ()
         throws XMLStreamException
     {
         IgnoreContent();
     }
 
-    
-    
-    
+
+
+
     private void IgnoreContent ()
         throws XMLStreamException
     {
@@ -368,10 +368,10 @@ public class SchemaParser
                 case XMLStreamReader.START_ELEMENT:
                     IgnoreContent();
                     break;
-                    
+
                 case XMLStreamReader.END_ELEMENT:
                     return;
-                    
+
                 case XMLStreamReader.COMMENT:
                 case XMLStreamReader.CHARACTERS:
                     break;
@@ -383,47 +383,47 @@ public class SchemaParser
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private All ParseAll (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("minOccurs", "maxOccurs"));
-        
+
         final All aAll = new All(aParent, GetLocation());
         ParseContent(aAll);
-        return aAll;        
+        return aAll;
     }
-    
-    
-    
-    
+
+
+
+
     private Any ParseAny (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("minOccurs", "maxOccurs", "namespace", "processContents"));
-        
+
         final Any aAny = new Any(
             aParent,
             GetLocation(),
             GetOptionalAttributeValue("processContents", "strict"),
             GetOptionalAttributeValue("namespace", "##any"));
         ExpectEndElement("ParseAny");
-        return aAny;        
+        return aAny;
     }
-    
-    
-    
-    
+
+
+
+
     private AttributeGroup ParseAttributeGroup ()
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("name"));
 
         final AttributeGroup aGroup = new AttributeGroup(GetOptionalQualifiedName("name"), GetLocation());
-        
+
         while (true)
         {
             switch (Next())
@@ -436,10 +436,10 @@ public class SchemaParser
                     else
                         aGroup.AddAttribute(ParseAttributeOrReference());
                     break;
-                    
+
                 case XMLStreamReader.END_ELEMENT:
                     return aGroup;
-                    
+
                 default:
                     throw CreateErrorException(
                         "unexpected event when parsing attributeGroup: %d",
@@ -447,10 +447,10 @@ public class SchemaParser
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private INode ParseAttributeGroupOrReference ()
         throws XMLStreamException
     {
@@ -471,10 +471,10 @@ public class SchemaParser
         }
         return aGroup;
     }
-    
-    
-    
-    
+
+
+
+
     private INode ParseAttributeOrReference ()
         throws XMLStreamException
     {
@@ -486,7 +486,7 @@ public class SchemaParser
         else
         {
             assert(HasOnlyAttributes("default", "fixed", "ref", "use"));
-            
+
             aAttribute = new AttributeReference(
                 GetQualifiedName("ref"),
                 GetOptionalAttributeValue("use", "optional"),
@@ -498,10 +498,10 @@ public class SchemaParser
         }
         return aAttribute;
     }
-    
-    
-    
-    
+
+
+
+
     private Attribute ParseAttribute ()
         throws XMLStreamException
     {
@@ -516,7 +516,7 @@ public class SchemaParser
             meAttributeFormDefault,
             GetLocation());
         ExpectEndElement("attribute");
-        
+
         return aAttribute;
     }
 
@@ -526,65 +526,65 @@ public class SchemaParser
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("minOccurs", "maxOccurs"));
-        
+
         final Choice aChoice = new Choice(aParent, GetLocation());
         ParseContent(aChoice);
         return aChoice;
     }
 
-    
-    
-    
+
+
+
     private ComplexContent ParseComplexContent (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("minOccurs", "maxOccurs"));
-        
+
         final ComplexContent aNode = new ComplexContent(aParent, GetLocation());
         ParseContent(aNode);
         return aNode;
     }
 
-    
-    
-    
+
+
+
     private ComplexType ParseComplexType ()
         throws XMLStreamException
     {
-        assert(HasOnlyAttributes("mixed", "name"));        
-        
+        assert(HasOnlyAttributes("mixed", "name"));
+
         final ComplexType aComplexType = new ComplexType(
             null,
             GetQualifiedName("name"),
             GetLocation());
-        
+
         ParseContent(aComplexType);
-        
+
         return aComplexType;
     }
-    
-    
-    
-    
+
+
+
+
     private Element ParseElement (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("minOccurs", "maxOccurs", "name", "type"));
-        
+
         final Element aElement = new Element(
             aParent,
             GetQualifiedName("name"),
             GetQualifiedName("type"),
             GetLocation());
-        
+
         ExpectEndElement("element");
-        
+
         return aElement;
     }
-    
 
-    
-    
+
+
+
     private Element ParseElementOrReference (final Node aParent)
         throws XMLStreamException
     {
@@ -614,15 +614,15 @@ public class SchemaParser
         }
         return aElement;
     }
-    
-    
-    
-    
+
+
+
+
     private Extension ParseExtension (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("base", "minOccurs", "maxOccurs"));
-        
+
         final Extension aNode = new Extension(
             aParent,
             CreateQualifiedName(GetAttributeValue("base")),
@@ -631,9 +631,9 @@ public class SchemaParser
         return aNode;
     }
 
-    
-    
-    
+
+
+
     private Group ParseGroup (final Node aParent)
         throws XMLStreamException
     {
@@ -647,14 +647,14 @@ public class SchemaParser
         return aGroup;
     }
 
-    
-    
-    
+
+
+
     private Node ParseGroupOrReference (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("minOccurs", "maxOccurs", "name", "ref"));
-        
+
         final Node aGroup;
         final String sName = GetOptionalAttributeValue("name", null);
         if (sName != null)
@@ -679,10 +679,10 @@ public class SchemaParser
         }
         return aGroup;
     }
-    
 
-    
-    
+
+
+
     private Restriction ParseRestriction (final Node aParent)
         throws XMLStreamException
     {
@@ -693,7 +693,7 @@ public class SchemaParser
             aParent,
             CreateQualifiedName(sBaseType),
             GetLocation());
-        
+
         while (true)
         {
             switch (Next())
@@ -705,7 +705,7 @@ public class SchemaParser
                         case "enumeration":
                             aRestriction.AddEnumeration(sValue);
                             break;
-                            
+
                         case "minInclusive":
                             aRestriction.SetMinInclusive(sValue);
                             break;
@@ -746,21 +746,21 @@ public class SchemaParser
 
                 case XMLStreamReader.END_ELEMENT:
                     return aRestriction;
-                    
+
                 default:
                     throw CreateErrorException("unexpected XML event while parsing restrictions: %d", maReader.getEventType());
             }
         }
     }
 
-    
-    
-    
+
+
+
     private List ParseList (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("itemType"));
-        
+
         final List aList = new List(
             aParent,
             GetQualifiedName("itemType"),
@@ -770,13 +770,13 @@ public class SchemaParser
     }
 
 
-    
-    
+
+
     private Sequence ParseSequence (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("minOccurs", "maxOccurs", "name"));
-        
+
         final Sequence aSequence = new Sequence(
             aParent,
             GetOptionalQualifiedName("name"),
@@ -785,14 +785,14 @@ public class SchemaParser
         return aSequence;
     }
 
-    
-    
+
+
 
     private SimpleContent ParseSimpleContent (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("minOccurs", "maxOccurs"));
-        
+
         final SimpleContent aSimpleContent = new SimpleContent(
             aParent,
             GetLocation());
@@ -800,14 +800,14 @@ public class SchemaParser
         return aSimpleContent;
     }
 
-    
-    
 
-    private SimpleType ParseSimpleType (final Node aParent) 
+
+
+    private SimpleType ParseSimpleType (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("final", "name"));
-        
+
         final SimpleType aType = new SimpleType(
             aParent,
             GetQualifiedName("name"),
@@ -815,7 +815,7 @@ public class SchemaParser
         final String sFinalValue = GetOptionalAttributeValue("final", null);
         if (sFinalValue != null)
             aType.SetFinal(sFinalValue.split("\\s+"));
-        
+
         while (true)
         {
             switch (Next())
@@ -826,7 +826,7 @@ public class SchemaParser
                         case "list":
                             aType.AddChild(ParseList(aType));
                             break;
-                            
+
                         case "restriction":
                             aType.AddChild(ParseRestriction(aType));
                             break;
@@ -834,29 +834,29 @@ public class SchemaParser
                         case "union":
                             aType.AddChild(ParseUnion(aType));
                             break;
-                            
+
                         default:
                             throw CreateErrorException("unsupported simple type part %s", maReader.getLocalName());
                     }
                     break;
-                    
+
                 case XMLStreamReader.END_ELEMENT:
                     return aType;
-                    
+
                 default:
                     throw CreateErrorException("unexpected XML event in ParseSimpleType: %s", maReader.getEventType());
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private Union ParseUnion (final Node aParent)
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("memberTypes"));
-        
+
         final Union aUnion = new Union(
             aParent,
             GetLocation());
@@ -869,11 +869,11 @@ public class SchemaParser
                     GetLocation()));
 
         ParseContent(aUnion);
-            
+
         return aUnion;
     }
-    
-    
+
+
     private void ParseContent (final Node aParent)
         throws XMLStreamException
     {
@@ -884,10 +884,10 @@ public class SchemaParser
                 case XMLStreamReader.START_ELEMENT:
                     ProcessStartElement(aParent);
                     break;
-                    
+
                 case XMLStreamReader.END_ELEMENT:
                     return;
-                    
+
                 default:
                     throw CreateErrorException(
                         "unexpected XML event %d while parsing content of %s",
@@ -896,15 +896,15 @@ public class SchemaParser
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseImport ()
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("id", "namespace", "schemaLocation"));
-        
+
         final String sFilename = GetOptionalAttributeValue("schemaLocation", null);
         if (sFilename == null)
         {
@@ -921,18 +921,18 @@ public class SchemaParser
         {
             maImportedSchemas.add(new File(maDirectory, sFilename));
         }
-        
+
         ExpectEndElement("import");
     }
-    
 
-    
+
+
 
     private void ParseInclude ()
         throws XMLStreamException
     {
         assert(HasOnlyAttributes("id", "schemaLocation"));
-        
+
         final String sFilename = GetOptionalAttributeValue("schemaLocation", null);
         if (sFilename == null)
         {
@@ -942,12 +942,12 @@ public class SchemaParser
         {
             maImportedSchemas.add(new File(maDirectory, sFilename));
         }
-        
+
         ExpectEndElement("include");
     }
-    
 
-    
+
+
 
     private void ExpectEndElement (final String sCaller)
         throws XMLStreamException
@@ -958,10 +958,10 @@ public class SchemaParser
                 sCaller,
                 nNextEvent);
     }
-    
-    
-    
-    
+
+
+
+
     /** Return the next relevant token from the XML stream.
      *  Ignores comments.
      *  @return
@@ -977,7 +977,7 @@ public class SchemaParser
                 case XMLStreamReader.COMMENT:
                     // Ignore comments.
                     break;
-                    
+
                 case XMLStreamReader.CHARACTERS:
                     // Ignore whitespace.
                     if (maReader.getText().matches("^\\s+$"))
@@ -985,7 +985,7 @@ public class SchemaParser
                     else
                     {
                         // Character events are not expected in schema files
-                        // and therefore not supported. 
+                        // and therefore not supported.
                         // Alternatively, they could easily be ignored.
                         throw CreateErrorException("unexpected CHARACTERS event with text [%s]", maReader.getText());
                     }
@@ -1011,18 +1011,18 @@ public class SchemaParser
         }
         return XMLStreamReader.END_DOCUMENT;
     }
-    
-    
-    
-    
+
+
+
+
     private String GetAttributeValue (final String sAttributeLocalName)
     {
         return maReader.getAttributeValue(null, sAttributeLocalName);
     }
-    
-    
-    
-    
+
+
+
+
     private String GetOptionalAttributeValue (
         final String sAttributeLocalName,
         final String sDefaultValue)
@@ -1033,10 +1033,10 @@ public class SchemaParser
         else
             return sValue;
     }
-    
-    
-    
-    
+
+
+
+
     /** Read the specified attribute and return its value as QualifiedName object.
      */
     private QualifiedName GetQualifiedName (final String sAttributeLocalName)
@@ -1051,10 +1051,10 @@ public class SchemaParser
         else
             return CreateQualifiedName(sName);
     }
-    
-    
-    
-    
+
+
+
+
     private QualifiedName GetOptionalQualifiedName (final String sAttributeLocalName)
     {
         final String sName = maReader.getAttributeValue(null, sAttributeLocalName);
@@ -1063,10 +1063,10 @@ public class SchemaParser
         else
             return CreateQualifiedName(sName);
     }
-    
-    
-    
-    
+
+
+
+
     /** Create a QualifiedName object from the given string.
      * @param sName
      *     May or may not contain a namespace prefix (separated from the name
@@ -1085,13 +1085,13 @@ public class SchemaParser
                 sNamespaceURL = msTargetNamespace;
                 sLocalPart = aParts[0];
                 break;
-                
+
             case 2:
                 // sName is of the form prefix:local.
                 sNamespaceURL = maLocalNamespaceMap.get(aParts[0]);
                 sLocalPart = aParts[1];
                 break;
-                
+
             default:
                 throw new RuntimeException(
                     "the string '"+sName+"' can not be transformed into a qualified name");
@@ -1107,12 +1107,12 @@ public class SchemaParser
             sGlobalNamespacePrefix,
             sLocalPart);
     }
-    
-    
-    
-    
+
+
+
+
     /** Create an XMLStreamReader for the given file.
-     *  Returns null when there is an error. 
+     *  Returns null when there is an error.
      */
     private static XMLStreamReader GetStreamReader (final File aSchemaFile)
     {
@@ -1120,7 +1120,7 @@ public class SchemaParser
         aFactory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, false);
         aFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);
         aFactory.setProperty(XMLInputFactory.IS_COALESCING, false);
-        
+
         try
         {
             return aFactory.createXMLStreamReader(
@@ -1133,12 +1133,12 @@ public class SchemaParser
             return null;
         }
     }
-    
-    
-    
-    
+
+
+
+
     private RuntimeException CreateErrorException (
-        final String sFormat, 
+        final String sFormat,
         final Object ... aArgumentList)
     {
         return new RuntimeException(String.format(sFormat, aArgumentList)
@@ -1148,10 +1148,10 @@ public class SchemaParser
                 maReader.getLocation().getColumnNumber(),
                 maReader.getLocation().getCharacterOffset()));
     }
-    
-    
-    
-    
+
+
+
+
     /** This predicate is only used for debugging to assert
      *  that no unsupported attributes are present.
      *  If there where then the parser has to be extended.
@@ -1160,7 +1160,7 @@ public class SchemaParser
     {
         for (int nIndex=0,nCount=maReader.getAttributeCount(); nIndex<nCount; ++nIndex)
         {
-            final String sAttributeName = maReader.getAttributeLocalName(nIndex); 
+            final String sAttributeName = maReader.getAttributeLocalName(nIndex);
             boolean bFound = false;
             for (final String sName : aAttributeNameList)
                 if (sAttributeName.equals(sName))
@@ -1177,10 +1177,10 @@ public class SchemaParser
         }
         return true;
     }
-    
 
-    
-    
+
+
+
     private Location GetLocation ()
     {
         final javax.xml.stream.Location aLocation = maReader.getLocation();
@@ -1190,10 +1190,10 @@ public class SchemaParser
             aLocation.getColumnNumber(),
             aLocation.getCharacterOffset());
     }
-    
-    
-    
-    
+
+
+
+
     private final Schema maSchema;
     private final SchemaBase maSchemaBase;
     private final XMLStreamReader maReader;
@@ -1204,7 +1204,7 @@ public class SchemaParser
     private final Map<String,String> maLocalNamespaceMap;
     /// The names of other schema files referenced by import elements.
     private final Vector<File> maImportedSchemas;
-    /// Some values for tracking the number of read bytes and lines. 
+    /// Some values for tracking the number of read bytes and lines.
     private javax.xml.stream.Location maLastLocation;
     private FormDefault meAttributeFormDefault;
     private FormDefault meElementFormDefault;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ import java.util.regex.Pattern;
  */
 public class VclHookException extends RuntimeException {
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -42,7 +42,7 @@ public class VclHookException extends RuntimeException {
 	 */
 	/***ERROR****/
 	public static final int SVT_START = 22000;
-	
+
 	public static final int S_GPF_ABORT									=( SVT_START +   0 );
 	public static final int S_APP_SHUTDOWN								=( SVT_START +   1 );
 	public static final int S_SID_EXECUTE_FAILED_NO_DISPATCHER			=( SVT_START +   2 );
@@ -116,9 +116,9 @@ public class VclHookException extends RuntimeException {
 	public static final int S_CANNOT_FIND_FLOATING_WIN					=( SVT_START +  70 );
 	public static final int S_NO_LIST_BOX_STRING                        =( SVT_START +  71 );
 	public static final int S_SLOT_IN_EXECUTE                           =( SVT_START +  72 );
-	
+
 	public static Properties MESSAGES = new Properties();
-	
+
 	static {
 		MESSAGES.put(new Integer(S_GPF_ABORT), "Program aborted with GPF");
 		MESSAGES.put(new Integer(S_APP_SHUTDOWN), "Application has been shut down");
@@ -294,47 +294,47 @@ public class VclHookException extends RuntimeException {
 				"Another Slot is being executed already.");
 
 	}
-	
+
 	private SmartId id = null;
-	
+
 	private String message = null;
-	
+
 	private int code = -1;
-	
+
 	private Properties properties = new Properties();
-	
+
 	public VclHookException(String message) {
 		this(null, message);
 	}
-	
+
 	public VclHookException(SmartId id, String message) {
 		this.id = id;
 		this.message = message;
 		if (id != null)
 			parse();
 	}
-	
+
 
 	public String getMessage() {
 		return this.message;
 	}
-	
-	
+
+
 	private void parse() {
-		if (message == null) 
+		if (message == null)
 			return;
-		
+
 		//Replace some key
 		message = message.replaceAll("%Method=([^%]*)%", "$1");
 		message = message.replaceAll("%RType=([^%]*)%", "$1");
 		message = message.replaceAll("%RCommand=([^%]*)%", "$1");
 		message = message.replaceAll("%UId=([^%]*)%", "$1");
-		
+
 		// Parse String into Properties
 		int start = -1, sep = -1, end =-1, pos = 0;
 		String key = null;
 		String value= null;
-		while( (start = message.indexOf('%', pos)) != -1 
+		while( (start = message.indexOf('%', pos)) != -1
 				&& (sep = message.indexOf('=', start + 1)) != -1
 				&& (end = message.indexOf('%', sep + 1)) != -1) {
 			key = message.substring(start + 1, sep);
@@ -342,7 +342,7 @@ public class VclHookException extends RuntimeException {
 			pos = end + 1;
 			properties.put(key, value);
 		}
-		
+
 		String resId = properties.getProperty("ResId");
 		if (resId == null)
 			return;
@@ -350,7 +350,7 @@ public class VclHookException extends RuntimeException {
 		String originalMsg = (String) MESSAGES.get(this.code);
 		if (originalMsg == null)
 			return;
-		
+
 		Pattern pattern = Pattern.compile("\\(\\$([^\\)]*)\\)");
 		Matcher matcher = pattern.matcher(originalMsg);
 		StringBuffer result = new StringBuffer();
@@ -361,8 +361,8 @@ public class VclHookException extends RuntimeException {
 		matcher.appendTail(result);
 		message =  "ID:" + id + " - " + result.toString();
 	}
-	
-	
+
+
 	public int getCode() {
 		return this.code;
 	}

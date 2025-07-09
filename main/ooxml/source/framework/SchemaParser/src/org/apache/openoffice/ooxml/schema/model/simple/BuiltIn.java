@@ -41,10 +41,10 @@ public class BuiltIn
             aTypes.add(new BuiltIn(eType));
         return aTypes;
     }
-    
-    
-    
-    
+
+
+
+
     protected BuiltIn (
         final BuiltInType eType)
     {
@@ -52,44 +52,44 @@ public class BuiltIn
         meType = eType;
     }
 
-    
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.BuiltIn;
     }
-    
-    
-    
-    
+
+
+
+
     public BuiltInType GetBuiltInType ()
     {
         return meType;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return "builtin "+GetName().GetDisplayName();
     }
-    
-    
-    
-    
+
+
+
+
     private final BuiltInType meType;
 
 

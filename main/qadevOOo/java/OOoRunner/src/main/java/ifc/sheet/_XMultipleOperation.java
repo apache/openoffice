@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ public class _XMultipleOperation extends MultiMethodTest {
         boolean res = true;
         XCellRange cellRange = oSheet.getCellRangeByName("$A$17:$A$17");
         XCellRangeAddressable CRA = (XCellRangeAddressable) UnoRuntime.queryInterface(
-                                            XCellRangeAddressable.class, 
+                                            XCellRangeAddressable.class,
                                             cellRange);
         XCell cell = null;
         XCell cell2 = null;
@@ -84,7 +84,7 @@ public class _XMultipleOperation extends MultiMethodTest {
         log.println("filling cells");
         fillCells();
         log.println("setting TableOperation with parameter ROW");
-        oObj.setTableOperation(CRA.getRangeAddress(), TableOperationMode.ROW, 
+        oObj.setTableOperation(CRA.getRangeAddress(), TableOperationMode.ROW,
                                CA.getCellAddress(), CA2.getCellAddress());
         log.println("checking values");
         cellCoords = new Point[] {
@@ -96,8 +96,8 @@ public class _XMultipleOperation extends MultiMethodTest {
         log.println("filling cells");
         fillCells();
         log.println("setting TableOperation with parameter COLUMN");
-        oObj.setTableOperation(CRA.getRangeAddress(), 
-                               TableOperationMode.COLUMN, CA.getCellAddress(), 
+        oObj.setTableOperation(CRA.getRangeAddress(),
+                               TableOperationMode.COLUMN, CA.getCellAddress(),
                                CA2.getCellAddress());
         log.println("checking values");
         cellCoords = new Point[] {
@@ -110,8 +110,8 @@ public class _XMultipleOperation extends MultiMethodTest {
             log.println("filling cells");
             fillCells();
             log.println("setting TableOperation with parameter BOTH");
-            oObj.setTableOperation(CRA.getRangeAddress(), 
-                                   TableOperationMode.BOTH, 
+            oObj.setTableOperation(CRA.getRangeAddress(),
+                                   TableOperationMode.BOTH,
                                    CA.getCellAddress(), CA2.getCellAddress());
             log.println("checking values");
             cellCoords = new Point[] {
@@ -144,23 +144,23 @@ public class _XMultipleOperation extends MultiMethodTest {
 
         for (int i = 0; i < cellValues.length; i++) {
             try {
-                boolean locres = oSheet.getCellByPosition(cellCoords[i].X, 
+                boolean locres = oSheet.getCellByPosition(cellCoords[i].X,
                                                           cellCoords[i].Y)
                                        .getValue() == cellValues[i];
                 res &= locres;
 
                 if (!locres) {
-                    log.println("Result differs for cell (" + 
-                                cellCoords[i].X + "," + cellCoords[i].Y + 
+                    log.println("Result differs for cell (" +
+                                cellCoords[i].X + "," + cellCoords[i].Y +
                                 ")");
                     log.println("Expected: " + cellValues[i]);
-                    log.println("Getting: " + 
-                                oSheet.getCellByPosition(cellCoords[i].X, 
+                    log.println("Getting: " +
+                                oSheet.getCellByPosition(cellCoords[i].X,
                                                          cellCoords[i].Y)
                                       .getValue());
                 }
             } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
-                log.println("Exception while checking Values " + 
+                log.println("Exception while checking Values " +
                             e.getMessage());
                 res &= false;
             }

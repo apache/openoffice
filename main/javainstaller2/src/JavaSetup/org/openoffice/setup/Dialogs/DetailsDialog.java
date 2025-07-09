@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ public class DetailsDialog extends JDialog implements ActionListener {
     private JButton okButton;
     private String helpFileName;
     private String helpFileString;
-    
+
     public DetailsDialog(SetupFrame setupFrame) {
 
         super(setupFrame.getDialog());
@@ -57,14 +57,14 @@ public class DetailsDialog extends JDialog implements ActionListener {
 
         String dialogTitle = ResourceManager.getString("String_InstallationCompleted_Button");
         String dialogText = setupFrame.getCurrentPanel().getDialogText();
-                
+
         setTitle(dialogTitle);
         this.getContentPane().setLayout(new java.awt.BorderLayout());
-        
+
         JPanel toppanel = new JPanel();
         toppanel.setLayout(new java.awt.BorderLayout());
         toppanel.setBorder(new EmptyBorder(new Insets(5, 10, 5, 10)));
-        
+
         JPanel buttonpanel = new JPanel();
         buttonpanel.setLayout(new java.awt.FlowLayout());
         buttonpanel.setBorder(new EmptyBorder(new Insets(5, 10, 5, 10)));
@@ -97,39 +97,39 @@ public class DetailsDialog extends JDialog implements ActionListener {
         okButton.addActionListener(this);
 
         JSeparator separator = new JSeparator();
-        
+
         // toppanel.add(label1, BorderLayout.NORTH);
-        // toppanel.add(label2, BorderLayout.CENTER);  
-        buttonpanel.add(okButton);  
+        // toppanel.add(label2, BorderLayout.CENTER);
+        buttonpanel.add(okButton);
 
         this.getContentPane().add(toppanel, BorderLayout.NORTH);
         this.getContentPane().add(editorScrollPane, BorderLayout.CENTER);
         this.getContentPane().add(buttonpanel, BorderLayout.SOUTH);
-        
+
         // JScrollBar ScrollBar = editorScrollPane.getVerticalScrollBar();
         // if ( ScrollBar.isShowing() ) {
         //     editorPane.setFocusable(false);
         // } else {
-        //     editorPane.setFocusable(true);            
+        //     editorPane.setFocusable(true);
         // }
-        
-        // Setting tab-order and focus on okButton 
+
+        // Setting tab-order and focus on okButton
         DialogFocusTraversalPolicy policy = new DialogFocusTraversalPolicy(new JComponent[] {okButton, editorScrollPane});
         this.setFocusTraversalPolicy(policy);  // set policy
         this.setFocusCycleRoot(true); // enable policy
     }
- 
+
      private JEditorPane createEditorPane(String dialogText) {
         JEditorPane editorPane = new JEditorPane();
         editorPane.setEditable(false);
         editorPane.setContentType("text/html");
-        editorPane.setText(dialogText);        
+        editorPane.setText(dialogText);
         return editorPane;
-    }     
-     
+    }
+
     public void actionPerformed (java.awt.event.ActionEvent evt) {
         setVisible(false);
-        dispose(); 
+        dispose();
     }
 
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package org.openoffice.test.common;
 
@@ -43,30 +43,30 @@ import org.w3c.dom.NodeList;
 public class XMLReporter extends RunListener {
 
 	private File outputDir = Testspace.getFile("output");
-	
+
 	private File file = null;
-	
+
 	private Document doc = null;
-	
+
 	private Element testsuiteEl = null;
-	
+
 	private Element testcaseEl = null;
-	
+
 	private String suiteName = null;
-	
+
 	private long suiteStart = 0;
-	
+
 	private long failures = 0;
-	
+
 	private long errors = 0;
-	
+
 	private long tests = 0;
-	
+
 	private long ignored = 0;
-	
+
 	private long runStart = 0;
 	private long testStart = 0;
-	
+
 	@Override
 	public void testStarted(Description description) throws Exception {
 //		if (!description.getClassName().equals(testClassName)) {
@@ -81,7 +81,7 @@ public class XMLReporter extends RunListener {
 		testsuiteEl.appendChild(testcaseEl);
 		testStart = System.currentTimeMillis();
 	}
-	
+
 	@Override
 	public void testAssumptionFailure(Failure failure) {
 
@@ -132,7 +132,7 @@ public class XMLReporter extends RunListener {
 			outputBackupDir.renameTo(new File(outputBackupDir.getAbsolutePath() + "." + System.currentTimeMillis()));
 			FileUtil.deleteFile(outputBackupDir);
 		}
-		
+
 		outputDir.renameTo(outputBackupDir);
 	}
 
@@ -150,16 +150,16 @@ public class XMLReporter extends RunListener {
 		errors = 0;
 		tests = 0;
 		ignored = 0;
-		
+
 		file = new File(outputDir, "result.xml");
 		doc = FileUtil.newXML();
-	
+
 		testsuiteEl = doc.createElement("testsuite");
 		testsuiteEl.setAttribute("name", suiteName);
 		testsuiteEl.setAttribute("start", Long.toString(suiteStart));
 		doc.appendChild(testsuiteEl);
 	}
-	
+
 	private void finishSuite() {
 		store();
 	}
@@ -172,9 +172,9 @@ public class XMLReporter extends RunListener {
 			testsuiteEl.setAttribute("tests", Long.toString(tests));
 			testsuiteEl.setAttribute("ignored", Long.toString(ignored));
 			NodeList els = testsuiteEl.getElementsByTagName("properties");
-			if (els.getLength() > 0) 
+			if (els.getLength() > 0)
 				testsuiteEl.removeChild(els.item(0));
-			
+
 			Element props = doc.createElement("properties");
 			testsuiteEl.appendChild(props);
 			// Add some extra information

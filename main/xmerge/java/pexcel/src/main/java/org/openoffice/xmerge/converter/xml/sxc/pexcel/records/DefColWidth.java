@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,14 +32,14 @@ import org.openoffice.xmerge.util.EndianConverter;
 import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 
 /**
- * Represents a BIFF record defining the default column width 
+ * Represents a BIFF record defining the default column width
  */
 public class DefColWidth implements BIFFRecord {
 
     private byte[] grbit = new byte[2];
     private byte[] coldx = new byte[2];
     private byte[] ixfe  = new byte[2];
-    
+
     public DefColWidth() {
     	grbit	= new byte[] {0x00, 0x00};
 		coldx	= new byte[] {0x00, 0x09};
@@ -57,14 +57,14 @@ public class DefColWidth implements BIFFRecord {
 	}
 
     /**
-	 * Get the hex code for this particular <code>BIFFRecord</code> 
+	 * Get the hex code for this particular <code>BIFFRecord</code>
 	 *
 	 * @return the hex code for <code>DefColWidth</code>
 	 */
     public short getBiffType() {
         return PocketExcelConstants.DEF_COL_WIDTH;
     }
-       
+
     public void write(OutputStream output) throws IOException {
 
 		output.write(getBiffType());
@@ -74,17 +74,17 @@ public class DefColWidth implements BIFFRecord {
 
 		Debug.log(Debug.TRACE,	"Writing DefColWidth record");
     }
-    
+
     public int read(InputStream input) throws IOException {
 
         int numOfBytesRead	= input.read(grbit);
         numOfBytesRead 		+= input.read(coldx);
         numOfBytesRead		+= input.read(ixfe);
-        
-        Debug.log(Debug.TRACE,"\tgrbit : "+ EndianConverter.readShort(grbit) + 
+
+        Debug.log(Debug.TRACE,"\tgrbit : "+ EndianConverter.readShort(grbit) +
                             " coldx : " + EndianConverter.readShort(coldx) +
                             " ixfe : " + EndianConverter.readShort(ixfe));
         return 0;
     }
-    
+
 }

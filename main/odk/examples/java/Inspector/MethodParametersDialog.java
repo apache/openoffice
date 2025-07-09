@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ public class MethodParametersDialog extends JDialog{
     private ActionListener oActionListener;
     private JButton jHelpButton = new JButton("Help");
     private JButton jOKButton = new JButton("Ok");
-    private JButton jInvokeButton = new JButton("Invoke");   
+    private JButton jInvokeButton = new JButton("Invoke");
     private Object m_oReturnButton = null;
     private Object m_oUnoObject = null;
     private Object m_oUnoReturnObject = null;
@@ -60,8 +60,8 @@ public class MethodParametersDialog extends JDialog{
     private JPanel jResultPanel = null;
     private boolean bisdiposed = false;
     private XUnoMethodNode m_xUnoMethodNode;
- 
-    
+
+
     public MethodParametersDialog(XUnoMethodNode _xUnoMethodNode){
         m_xUnoMethodNode = _xUnoMethodNode;
         m_xIdlMethod = _xUnoMethodNode.getXIdlMethod();
@@ -69,8 +69,8 @@ public class MethodParametersDialog extends JDialog{
         m_oUnoObject = m_xUnoMethodNode.getUnoObject();
         Object[] m_aParameterObjects = new Object[m_aParamInfo.length];
     }
-    
-    
+
+
     public Vector getMethodObjects() {
         super.setModal(true);
         addBorderPanel(getContentPane(), BorderLayout.NORTH);
@@ -88,7 +88,7 @@ public class MethodParametersDialog extends JDialog{
         for (int i = 0; i < m_aParameterPanels.length; i++){
             m_aParameterPanels[i] = new ParameterPanel(m_aParamInfo[i]);
             jPnlParamContainer.add(m_aParameterPanels[i]);
-        } 
+        }
         jPnlParamContainer.add(new ButtonPanel(), java.awt.BorderLayout.SOUTH);
         getContentPane().add(jPnlParamContainer, java.awt.BorderLayout.CENTER);
         pack();
@@ -97,7 +97,7 @@ public class MethodParametersDialog extends JDialog{
         super.setFocusable(true);
         super.setFocusableWindowState(true);
         super.requestFocus();
-        m_aParameterPanels[0].getInputComponent().requestFocusInWindow();        
+        m_aParameterPanels[0].getInputComponent().requestFocusInWindow();
 		setVisible(true);
         if (!bisdiposed){
             Vector aMethodObjects = new Vector();
@@ -111,8 +111,8 @@ public class MethodParametersDialog extends JDialog{
             return null;
         }
     }
-  
-    
+
+
     private void insertResultPanel(Exception _oInvocationException){
         boolean bAddPanel = false;
         if (jResultPanel == null){
@@ -132,22 +132,22 @@ public class MethodParametersDialog extends JDialog{
         }
         jResultPanel.add(jLblResult,BorderLayout.WEST);
         if (bAddPanel){
-            int nPos = jPnlParamContainer.getComponentCount() - 1;        
+            int nPos = jPnlParamContainer.getComponentCount() - 1;
             jPnlParamContainer.add(jResultPanel, nPos);
         }
         super.pack();
         super.validate();
     }
-    
-    
+
+
     private Object[] getParameterValues(){
         Object[] oParameterValues = new Object[m_aParameterPanels.length];
         for (int i = 0; i < m_aParameterPanels.length; i++){
             oParameterValues[i] = m_aParameterPanels[i].getValue();
-        }        
+        }
         return oParameterValues;
     }
-    
+
 
     private boolean isCompleted(){
         boolean bIsCompleted = true;
@@ -156,11 +156,11 @@ public class MethodParametersDialog extends JDialog{
             if (!bIsCompleted){
                 break;
             }
-        }        
+        }
         return bIsCompleted;
     }
-    
-    
+
+
     private void addBorderPanel(java.awt.Container _jContainer, String _sLayout){
         JPanel jPnlBorder = new JPanel();
         jPnlBorder.setPreferredSize(new java.awt.Dimension(10, 10));
@@ -173,8 +173,8 @@ public class MethodParametersDialog extends JDialog{
         jPnlBorder.setMaximumSize(new java.awt.Dimension(10, 10));
         _jContainer.add(jPnlBorder);
     }
-    
-    
+
+
     private class ParameterPanel extends JPanel{
         private JComponent m_jComponent;
         private TypeClass m_aTypeClass = null;
@@ -196,13 +196,13 @@ public class MethodParametersDialog extends JDialog{
             addGapPanel(jPnlCenter1);
             switch (m_aTypeClass.getValue()){
                 case TypeClass.BOOLEAN_value:
-                    jComboBox.setBackground(new java.awt.Color(255, 255, 255));               
+                    jComboBox.setBackground(new java.awt.Color(255, 255, 255));
                     jComboBox.setPreferredSize(new java.awt.Dimension(50, 19));
                     jComboBox.addItem("True");
                     jComboBox.addItem("False");
                     jComboBox.addKeyListener(new UpdateUIAdapter());
                     jPnlCenter1.add(jComboBox);
-                    m_jComponent = jComboBox;                    
+                    m_jComponent = jComboBox;
                     break;
                 case TypeClass.BYTE_value:
                 case TypeClass.CHAR_value:
@@ -219,20 +219,20 @@ public class MethodParametersDialog extends JDialog{
                     jTextField.setPreferredSize(new java.awt.Dimension(50, 19));
                     jTextField.addKeyListener(new UpdateUIAdapter());
                     jPnlCenter1.add(jTextField);
-                    m_jComponent = jTextField;                    
+                    m_jComponent = jTextField;
                     break;
                 default:
                     System.out.println("Type " + m_aTypeClass.getValue() + " not yet defined in 'ParameterPanel()'");
-            }            
+            }
             add(jPnlCenter1, java.awt.BorderLayout.CENTER);
             JPanel jPnlEast = new JPanel();
-            add(jPnlEast, BorderLayout.EAST);            
+            add(jPnlEast, BorderLayout.EAST);
         }
-        
+
         private JComponent getInputComponent(){
             return m_jComponent;
         }
-        
+
         public Object getValue(){
             Object oReturn = null;
             if (m_jComponent instanceof JTextField){
@@ -245,8 +245,8 @@ public class MethodParametersDialog extends JDialog{
             }
             return oReturn;
         }
-        
-        
+
+
         public boolean isCompleted(){
             if (m_jComponent instanceof JTextField){
                 return !((JTextField) m_jComponent).getText().equals("");
@@ -257,7 +257,7 @@ public class MethodParametersDialog extends JDialog{
         }
     }
 
-    
+
     private class UpdateUIAdapter extends KeyAdapter{
         public void keyReleased(KeyEvent e){
             boolean bIsCompleted = isCompleted();
@@ -269,8 +269,8 @@ public class MethodParametersDialog extends JDialog{
             }
         }
     }
-    
-    
+
+
 
     private class ButtonPanel extends JPanel{
         public ButtonPanel(){
@@ -284,7 +284,7 @@ public class MethodParametersDialog extends JDialog{
                 public void actionPerformed(ActionEvent e) {
                     oActionListener.actionPerformed(e);
                 }
-            });            
+            });
             jHelpButton.setEnabled(oActionListener != null);
             jPnlBottomCenter.add(jHelpButton);
             addGapPanel(jPnlBottomCenter);
@@ -294,7 +294,7 @@ public class MethodParametersDialog extends JDialog{
                     invokeParameterMethod();
                     dispose();
                 }
-            });            
+            });
             jOKButton.setEnabled(isCompleted());
             jInvokeButton.setEnabled(isCompleted());
             jInvokeButton.addActionListener(new ActionListener() {
@@ -302,7 +302,7 @@ public class MethodParametersDialog extends JDialog{
                     invokeParameterMethod();
                 }
             });
-            
+
             jPnlBottomCenter.add(jOKButton);
             addGapPanel(jPnlBottomCenter);
             jPnlBottomCenter.add(jInvokeButton);
@@ -316,18 +316,18 @@ public class MethodParametersDialog extends JDialog{
                     dispose();
                 }
             });
-            
+
             jPnlBottomCenter.add(jCancelButton);
             add(jPnlBottomCenter);
         }
     }
-    
-    
+
+
     public void addActionListener(ActionListener _oActionListener){
         oActionListener = _oActionListener;
-        jHelpButton.setEnabled(oActionListener != null);      
+        jHelpButton.setEnabled(oActionListener != null);
     }
-    
+
 
     public void invokeParameterMethod(){
     try{
@@ -337,6 +337,6 @@ public class MethodParametersDialog extends JDialog{
     } catch (Exception ex) {
         insertResultPanel(ex);
         m_oUnoReturnObject = null;
-    }}      
-    
+    }}
+
 }

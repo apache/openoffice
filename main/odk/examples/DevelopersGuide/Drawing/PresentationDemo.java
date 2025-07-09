@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ import com.sun.star.presentation.XPresentationSupplier;
     @author Sven Jacobi
  */
 
-// This demo will demonstrate how to create a presentation using the Office API 
+// This demo will demonstrate how to create a presentation using the Office API
 
 // The first parameter describes the connection that is to use. If there is no parameter
 // "uno:socket,host=localhost,port=2083;urp;StarOffice.ServiceManager" is used.
@@ -97,7 +97,7 @@ public class PresentationDemo
 				com.sun.star.presentation.FadeEffect.FADE_FROM_RIGHT,
 					com.sun.star.presentation.AnimationSpeed.FAST,
 						1, 0 ); // automatic object and slide transition
-			
+
 			// create a rectangle that is placed on the top left of the page
 			xShapePropSet = ShapeHelper.createAndInsertShape( xDrawDoc,
 				xShapes,new Point( 1000, 1000 ), new Size( 5000, 5000 ),
@@ -106,7 +106,7 @@ public class PresentationDemo
                 com.sun.star.presentation.AnimationEffect.WAVYLINE_FROM_BOTTOM );
 
 			/* the following three properties provokes that the shape is dimmed
-			   to red 
+			   to red
 			   after the animation has been finished */
 			xShapePropSet.setPropertyValue( "DimHide", new Boolean( false ) );
 			xShapePropSet.setPropertyValue( "DimPrevious", new Boolean( true ) );
@@ -166,7 +166,7 @@ public class PresentationDemo
 				UnoRuntime.queryInterface( XPropertySet.class, xShape );
 			xShapePropSet.setPropertyValue("Effect",
                 com.sun.star.presentation.AnimationEffect.FADE_FROM_BOTTOM );
-            
+
 			xShapePropSet.setPropertyValue(
 				"OnClick", com.sun.star.presentation.ClickAction.BOOKMARK );
 			// set the name of page two, and use it with the bookmark action
@@ -208,7 +208,7 @@ public class PresentationDemo
 		// what type of page xPage is, for this purpose it can been tested
 		// if the com.sun.star.presentation.DrawPage service is supported
 		XServiceInfo xInfo = (XServiceInfo)UnoRuntime.queryInterface(
-				XServiceInfo.class, xPage );	
+				XServiceInfo.class, xPage );
 		if ( xInfo.supportsService( "com.sun.star.presentation.DrawPage" ) == true )
 		{
 			try

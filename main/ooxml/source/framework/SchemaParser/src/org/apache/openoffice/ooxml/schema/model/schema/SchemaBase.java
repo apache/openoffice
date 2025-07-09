@@ -36,10 +36,10 @@ import org.apache.openoffice.ooxml.schema.model.simple.BuiltIn;
 import org.apache.openoffice.ooxml.schema.model.simple.SimpleType;
 
 
-/** Container of elements, complex types, simple types, etc for a set of 
+/** Container of elements, complex types, simple types, etc for a set of
  *  master schema files and the included and imported secondary schema files.
- *  
- *  See Schema objects for the set of top level elements that are unique to 
+ *
+ *  See Schema objects for the set of top level elements that are unique to
  *  each master schema file.
  */
 public class SchemaBase
@@ -54,20 +54,20 @@ public class SchemaBase
         AttributeGroups = new TypeContainer<>();
         Attributes = new TypeContainer<>();
         AttributeValueToIdMap = new HashMap<>();
-        
+
         // Initialize the list of simple types with all known built ins (
         // these are implicitly defined).
         for (final BuiltIn aType : BuiltIn.GetTypes())
             SimpleTypes.Add(aType);
     }
-    
-    
-    
-    
+
+
+
+
     public Node GetTypeForName (final QualifiedName aName)
     {
         final String sTypeName = aName.GetDisplayName();
-        
+
         if (ComplexTypes.Contains(sTypeName))
             return ComplexTypes.Get(sTypeName);
         else if (SimpleTypes.Contains(sTypeName))
@@ -83,33 +83,33 @@ public class SchemaBase
     }
 
 
-    
-    
+
+
     public Node GetSimpleTypeForName (final QualifiedName aName)
     {
         final String sTypeName = aName.GetDisplayName();
-        
+
         if (SimpleTypes.Contains(sTypeName))
             return SimpleTypes.Get(aName.GetDisplayName());
         else
             return null;
     }
 
-    
-    
-    
+
+
+
     /** Create a new schema object that contains only the used types, i.e.
-     *  types that are reachable via element transitions, starting with the 
+     *  types that are reachable via element transitions, starting with the
      *  top level elements.
      */
     public SchemaBase GetOptimizedSchema (final Iterable<Schema> aTopLevelSchemas)
     {
         return new SchemaOptimizer(this).Run();
     }
-    
-    
-    
-    
+
+
+
+
     public final NamespaceMap Namespaces;
     public final TypeContainer<Element> TopLevelElements;
     public final TypeContainer<ComplexType> ComplexTypes;

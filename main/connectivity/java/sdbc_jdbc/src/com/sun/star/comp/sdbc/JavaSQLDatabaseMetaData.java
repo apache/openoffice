@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
@@ -48,13 +48,13 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
     private final java.sql.DatabaseMetaData jdbcDatabaseMetaData;
     private final JavaSQLConnection connection;
     private final ConnectionLog logger;
-    
+
     public JavaSQLDatabaseMetaData(java.sql.DatabaseMetaData jdbcDatabaseMetaData, JavaSQLConnection connection) {
         this.jdbcDatabaseMetaData = jdbcDatabaseMetaData;
         this.connection = connection;
         this.logger = connection.getLogger();
     }
-    
+
     @Override
     public XConnection getConnection() throws SQLException {
         return connection;
@@ -64,14 +64,14 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
     public PropertyValue[] getConnectionInfo() {
         return connection.getConnectionInfo();
     }
-    
+
     private XResultSet wrapResultSet(java.sql.ResultSet resultSet) {
         if (resultSet == null) {
             return null;
         }
         return new JavaSQLResultSet(resultSet, connection);
     }
-    
+
     @Override
     public XResultSet getTypeInfo() throws SQLException {
         try {
@@ -80,7 +80,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public XResultSet getCatalogs() throws SQLException {
         try {
@@ -89,7 +89,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getCatalogSeparator() throws SQLException {
         try {
@@ -102,7 +102,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public XResultSet getSchemas() throws SQLException {
         try {
@@ -111,11 +111,11 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public XResultSet getColumnPrivileges(Object catalog, String schema, String table,
             String columnNamePattern) throws SQLException {
-        
+
         try {
             String jdbcCatalog = null;
             if (AnyConverter.isString(catalog)) {
@@ -130,7 +130,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getColumns(Object catalog, String schemaPattern, String tableNamePattern, String columnNamePattern) throws SQLException {
         try {
@@ -147,7 +147,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getTables(Object catalog, String schemaPattern, String tableNamePattern, String[] types) throws SQLException {
         try {
@@ -183,7 +183,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getProcedureColumns(Object catalog, String schemaNamePattern, String procedureNamePattern,
             String columnNamePattern) throws SQLException {
@@ -201,7 +201,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getProcedures(Object catalog, String schemaNamePattern, String procedureNamePattern) throws SQLException {
         try {
@@ -234,7 +234,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public int getMaxBinaryLiteralLength() throws SQLException {
         try {
@@ -243,7 +243,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxRowSize() throws SQLException {
         try {
@@ -252,7 +252,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxCatalogNameLength() throws SQLException {
         try {
@@ -261,7 +261,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxCharLiteralLength() throws SQLException {
         try {
@@ -270,7 +270,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxColumnNameLength() throws SQLException {
         try {
@@ -279,7 +279,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxColumnsInIndex() throws SQLException {
         try {
@@ -288,7 +288,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxCursorNameLength() throws SQLException {
         try {
@@ -297,7 +297,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxConnections() throws SQLException {
         try {
@@ -306,7 +306,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxColumnsInTable() throws SQLException {
         try {
@@ -315,7 +315,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxStatementLength() throws SQLException {
         try {
@@ -324,7 +324,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxTableNameLength() throws SQLException {
         try {
@@ -333,7 +333,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxTablesInSelect() throws SQLException {
         try {
@@ -342,7 +342,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public XResultSet getExportedKeys(Object catalog, String schema, String table) throws SQLException {
         try {
@@ -358,7 +358,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getImportedKeys(Object catalog, String schema, String table) throws SQLException {
         try {
@@ -374,7 +374,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getPrimaryKeys(Object catalog, String schema, String table) throws SQLException {
         try {
@@ -390,7 +390,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getIndexInfo(Object catalog, String schema, String table,
             boolean unique, boolean approximate) throws SQLException {
@@ -408,7 +408,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getBestRowIdentifier(Object catalog, String schema, String table,
             int scope, boolean nullable) throws SQLException {
@@ -480,12 +480,12 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
         columns[6].setColumnType(DataType.VARCHAR);
         return new CustomResultSetMetaData(columns);
     }
-    
+
     private XResultSet generateOwnTablePrivileges(Object catalog, String schemaPattern,
             String tableNamePattern) throws SQLException {
-        
+
         XResultSetMetaData resultSetMetaData = getTablesPrivilegesMetadata();
-        
+
         ArrayList<ORowSetValue[]> privileges = new ArrayList<>();
         String[] privilegeTypes = {
                 "SELECT", "INSERT", "DELETE", "UPDATE", "CREATE",
@@ -511,7 +511,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
         }
         return new CustomResultSet(resultSetMetaData, privileges);
     }
-    
+
     @Override
     public XResultSet getTablePrivileges(Object catalog, String schemaPattern, String tableNamePattern) throws SQLException {
         try {
@@ -570,7 +570,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
                         }
                         rowsOut.add(rowOut);
                     }
-                    results = new CustomResultSet(getTablesPrivilegesMetadata(), rowsOut);                    
+                    results = new CustomResultSet(getTablesPrivilegesMetadata(), rowsOut);
                 }
                 return results;
             } else {
@@ -580,7 +580,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSet getCrossReference(Object primaryCatalog, String primarySchema, String primaryTable,
             Object foreignCatalog, String foreignSchema, String foreignTable) throws SQLException {
@@ -606,7 +606,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean doesMaxRowSizeIncludeBlobs() throws SQLException {
         try {
@@ -615,7 +615,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean storesLowerCaseQuotedIdentifiers() throws SQLException {
         try {
@@ -624,7 +624,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean storesLowerCaseIdentifiers() throws SQLException {
         try {
@@ -633,7 +633,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean storesMixedCaseIdentifiers() throws SQLException {
         try {
@@ -642,7 +642,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean storesMixedCaseQuotedIdentifiers() throws SQLException {
         try {
@@ -651,7 +651,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean storesUpperCaseQuotedIdentifiers() throws SQLException {
         try {
@@ -660,7 +660,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean storesUpperCaseIdentifiers() throws SQLException {
         try {
@@ -669,7 +669,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsAlterTableWithAddColumn() throws SQLException {
         try {
@@ -678,7 +678,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsAlterTableWithDropColumn() throws SQLException {
         try {
@@ -687,7 +687,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxIndexLength() throws SQLException {
         try {
@@ -696,7 +696,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsNonNullableColumns() throws SQLException {
         try {
@@ -705,7 +705,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getCatalogTerm() throws SQLException {
         try {
@@ -718,7 +718,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getIdentifierQuoteString() throws SQLException {
         try {
@@ -731,7 +731,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getExtraNameCharacters() throws SQLException {
         try {
@@ -744,7 +744,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsDifferentTableCorrelationNames() throws SQLException {
         try {
@@ -753,7 +753,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean isCatalogAtStart() throws SQLException {
         try {
@@ -762,7 +762,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean dataDefinitionIgnoredInTransactions() throws SQLException {
         try {
@@ -771,7 +771,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean dataDefinitionCausesTransactionCommit() throws SQLException {
         try {
@@ -780,7 +780,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsDataManipulationTransactionsOnly() throws SQLException {
         try {
@@ -789,7 +789,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsDataDefinitionAndDataManipulationTransactions() throws SQLException {
         try {
@@ -798,7 +798,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsPositionedDelete() throws SQLException {
         try {
@@ -807,7 +807,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsPositionedUpdate() throws SQLException {
         try {
@@ -816,7 +816,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsOpenStatementsAcrossRollback() throws SQLException {
         try {
@@ -825,7 +825,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsOpenStatementsAcrossCommit() throws SQLException {
         try {
@@ -834,7 +834,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsOpenCursorsAcrossCommit() throws SQLException {
         try {
@@ -843,7 +843,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsOpenCursorsAcrossRollback() throws SQLException {
         try {
@@ -852,7 +852,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsTransactionIsolationLevel(int level) throws SQLException {
         try {
@@ -861,7 +861,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSchemasInDataManipulation() throws SQLException {
         try {
@@ -870,7 +870,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsANSI92FullSQL() throws SQLException {
         try {
@@ -879,7 +879,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsANSI92EntryLevelSQL() throws SQLException {
         try {
@@ -888,7 +888,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsIntegrityEnhancementFacility() throws SQLException {
         try {
@@ -897,7 +897,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSchemasInIndexDefinitions() throws SQLException {
         try {
@@ -906,7 +906,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsCatalogsInIndexDefinitions() throws SQLException {
         try {
@@ -915,7 +915,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsCatalogsInDataManipulation() throws SQLException {
         try {
@@ -924,7 +924,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsCatalogsInTableDefinitions() throws SQLException {
         try {
@@ -933,7 +933,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSchemasInTableDefinitions() throws SQLException {
         try {
@@ -942,7 +942,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsOuterJoins() throws SQLException {
         try {
@@ -951,7 +951,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public XResultSet getTableTypes() throws SQLException {
         try {
@@ -960,7 +960,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxStatements() throws SQLException {
         try {
@@ -969,7 +969,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxProcedureNameLength() throws SQLException {
         try {
@@ -978,7 +978,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxSchemaNameLength() throws SQLException {
         try {
@@ -987,7 +987,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsTransactions() throws SQLException {
         try {
@@ -996,7 +996,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean allProceduresAreCallable() throws SQLException {
         try {
@@ -1005,7 +1005,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsStoredProcedures() throws SQLException {
         try {
@@ -1014,7 +1014,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSelectForUpdate() throws SQLException {
         try {
@@ -1023,7 +1023,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean allTablesAreSelectable() throws SQLException {
         try {
@@ -1032,7 +1032,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean isReadOnly() throws SQLException {
         try {
@@ -1041,7 +1041,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean usesLocalFiles() throws SQLException {
         try {
@@ -1050,7 +1050,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean usesLocalFilePerTable() throws SQLException {
         try {
@@ -1059,7 +1059,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsTypeConversion() throws SQLException {
         // This was calling JDBC's supportsTypeConversion(), which doesn't exist
@@ -1069,7 +1069,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean nullPlusNonNullIsNull() throws SQLException {
         try {
@@ -1078,7 +1078,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsColumnAliasing() throws SQLException {
         try {
@@ -1087,7 +1087,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsTableCorrelationNames() throws SQLException {
         try {
@@ -1096,7 +1096,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsConvert(int fromType, int toType) throws SQLException {
         try {
@@ -1105,7 +1105,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsExpressionsInOrderBy() throws SQLException {
         try {
@@ -1114,7 +1114,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsGroupBy() throws SQLException {
         try {
@@ -1123,7 +1123,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsGroupByBeyondSelect() throws SQLException {
         try {
@@ -1132,7 +1132,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsGroupByUnrelated() throws SQLException {
         try {
@@ -1141,7 +1141,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsMultipleTransactions() throws SQLException {
         try {
@@ -1150,7 +1150,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsMultipleResultSets() throws SQLException {
         try {
@@ -1159,7 +1159,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsLikeEscapeClause() throws SQLException {
         try {
@@ -1168,7 +1168,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsOrderByUnrelated() throws SQLException {
         try {
@@ -1177,7 +1177,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsUnion() throws SQLException {
         try {
@@ -1186,7 +1186,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsUnionAll() throws SQLException {
         try {
@@ -1195,7 +1195,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsMixedCaseIdentifiers() throws SQLException {
         try {
@@ -1204,7 +1204,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsMixedCaseQuotedIdentifiers() throws SQLException {
         try {
@@ -1213,7 +1213,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean nullsAreSortedAtEnd() throws SQLException {
         try {
@@ -1222,7 +1222,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean nullsAreSortedAtStart() throws SQLException {
         try {
@@ -1231,7 +1231,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean nullsAreSortedHigh() throws SQLException {
         try {
@@ -1240,7 +1240,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean nullsAreSortedLow() throws SQLException {
         try {
@@ -1249,7 +1249,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsCatalogsInProcedureCalls() throws SQLException {
         try {
@@ -1258,7 +1258,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSchemasInProcedureCalls() throws SQLException {
         try {
@@ -1267,7 +1267,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsCatalogsInPrivilegeDefinitions() throws SQLException {
         try {
@@ -1276,7 +1276,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSchemasInPrivilegeDefinitions() throws SQLException {
         try {
@@ -1285,7 +1285,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsCorrelatedSubqueries() throws SQLException {
         try {
@@ -1294,7 +1294,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSubqueriesInComparisons() throws SQLException {
         try {
@@ -1303,7 +1303,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSubqueriesInExists() throws SQLException {
         try {
@@ -1312,7 +1312,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSubqueriesInIns() throws SQLException {
         try {
@@ -1321,7 +1321,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsSubqueriesInQuantifieds() throws SQLException {
         try {
@@ -1330,7 +1330,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsANSI92IntermediateSQL() throws SQLException {
         try {
@@ -1339,7 +1339,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getURL() throws SQLException {
         String url = connection.getURL();
@@ -1348,11 +1348,11 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
                 url = jdbcDatabaseMetaData.getURL();
             } catch (java.sql.SQLException jdbcSQLException) {
                 throw Tools.toUnoException(this, jdbcSQLException);
-            }            
+            }
         }
         return url;
     }
-    
+
     @Override
     public String getUserName() throws SQLException {
         try {
@@ -1365,7 +1365,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getDriverName() throws SQLException {
         try {
@@ -1378,7 +1378,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getDriverVersion() throws SQLException {
         try {
@@ -1391,7 +1391,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getDatabaseProductVersion() throws SQLException {
         try {
@@ -1404,7 +1404,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getDatabaseProductName() throws SQLException {
         try {
@@ -1417,7 +1417,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getProcedureTerm() throws SQLException {
         try {
@@ -1430,7 +1430,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getSchemaTerm() throws SQLException {
         try {
@@ -1443,17 +1443,17 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getDriverMajorVersion() {
         return jdbcDatabaseMetaData.getDriverMajorVersion();
     }
-    
+
     @Override
     public int getDriverMinorVersion() {
         return jdbcDatabaseMetaData.getDriverMinorVersion();
     }
-    
+
     @Override
     public int getDefaultTransactionIsolation() throws SQLException {
         try {
@@ -1462,7 +1462,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getSQLKeywords() throws SQLException {
         try {
@@ -1475,7 +1475,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getSearchStringEscape() throws SQLException {
         try {
@@ -1488,7 +1488,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getStringFunctions() throws SQLException {
         try {
@@ -1501,7 +1501,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getTimeDateFunctions() throws SQLException {
         try {
@@ -1514,7 +1514,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getSystemFunctions() throws SQLException {
         try {
@@ -1527,7 +1527,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getNumericFunctions() throws SQLException {
         try {
@@ -1540,7 +1540,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsExtendedSQLGrammar() throws SQLException {
         try {
@@ -1549,7 +1549,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsCoreSQLGrammar() throws SQLException {
         try {
@@ -1558,7 +1558,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsMinimumSQLGrammar() {
         try {
@@ -1569,7 +1569,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             return false;
         }
     }
-    
+
     @Override
     public boolean supportsFullOuterJoins() throws SQLException {
         try {
@@ -1578,7 +1578,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsLimitedOuterJoins() throws SQLException {
         try {
@@ -1587,7 +1587,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxColumnsInGroupBy() throws SQLException {
         try {
@@ -1596,7 +1596,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxColumnsInOrderBy() throws SQLException {
         try {
@@ -1605,7 +1605,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxColumnsInSelect() throws SQLException {
         try {
@@ -1614,7 +1614,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public int getMaxUserNameLength() throws SQLException {
         try {
@@ -1623,7 +1623,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsResultSetType(int type) throws SQLException {
         try {
@@ -1632,7 +1632,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsResultSetConcurrency(int setType, int concurrency) throws SQLException {
         try {
@@ -1641,7 +1641,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean ownUpdatesAreVisible(int setType) throws SQLException {
         try {
@@ -1650,7 +1650,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean ownDeletesAreVisible(int setType) throws SQLException {
         try {
@@ -1659,7 +1659,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean ownInsertsAreVisible(int setType) throws SQLException {
         try {
@@ -1668,7 +1668,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean othersUpdatesAreVisible(int setType) throws SQLException {
         try {
@@ -1677,7 +1677,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean othersDeletesAreVisible(int setType) throws SQLException {
         try {
@@ -1686,7 +1686,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean othersInsertsAreVisible(int setType) throws SQLException {
         try {
@@ -1695,7 +1695,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean updatesAreDetected(int setType) throws SQLException {
         try {
@@ -1704,7 +1704,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean deletesAreDetected(int setType) throws SQLException {
         try {
@@ -1713,7 +1713,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean insertsAreDetected(int setType) throws SQLException {
         try {
@@ -1722,7 +1722,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public boolean supportsBatchUpdates() throws SQLException {
         try {
@@ -1731,7 +1731,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public XResultSet getUDTs(Object catalog, String schemaPattern,
             String typeNamePattern, int[] types) throws SQLException {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ public class InterfaceContainer_Test
     List list2;
     //contains original object + proxies + null value
     List list3;
-    
+
     public InterfaceContainer_Test()
     {
         obj1= new AWeakBase();
@@ -76,7 +76,7 @@ public class InterfaceContainer_Test
         proxyObj3Weak2= ProxyProvider.createProxy(obj3, XWeak.class);
         proxyObj2TypeProv= ProxyProvider.createProxy(obj2, XTypeProvider.class);
         proxyObj3TypeProv= ProxyProvider.createProxy(obj3, XTypeProvider.class);
-        
+
         list1= new ArrayList();
         list1.add(obj1);
         list1.add(obj2);
@@ -91,7 +91,7 @@ public class InterfaceContainer_Test
         list3.add(proxyObj2TypeProv);
         list3.add(proxyObj3Weak1);
     }
-    
+
     /** Tests add(object), size(), clear();
      */
     public boolean add()
@@ -100,7 +100,7 @@ public class InterfaceContainer_Test
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         r[i++]= cont.size() == 0;
         r[i++]= cont.add(obj1);
         r[i++]= cont.size() == 1;
@@ -112,7 +112,7 @@ public class InterfaceContainer_Test
         cont.clear();
         r[i++]= cont.size() == 0;
         r[i++]= cont.isEmpty();
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -122,7 +122,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     /**Tests list.addAll(Collection c), list.addAll(int index, Collection c)
      */
     public boolean listConstructors()
@@ -131,7 +131,7 @@ public class InterfaceContainer_Test
         boolean r[]= new boolean[50];
         int i= 0;
         InterfaceContainer cont= new InterfaceContainer(100);
-        
+
         r[i++]= cont.elementData.length == 100;
         boolean bOk= true;
         for (int c= 0; c < i; c++)
@@ -169,7 +169,7 @@ public class InterfaceContainer_Test
         InterfaceContainer cont= new InterfaceContainer(10);
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         cont.ensureCapacity(9);
         r[i++]= cont.elementData.length >= 9;
         cont.ensureCapacity(11);
@@ -183,14 +183,14 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean addAll()
     {
         System.out.println("Testing List.addAll(Collection c), List.addAll(int index, Collection c)");
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         r[i++]= cont.addAll(list1);
         r[i++]= cont.size() == list1.size();
         for (int c= 0; c < cont.size(); c++)
@@ -212,7 +212,7 @@ public class InterfaceContainer_Test
         r[i++]= cont.get(0) == list3.get(0);
         r[i++]= cont.get(1) == list3.get(2);
         r[i++]= cont.get(2) == list3.get(3);
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -222,7 +222,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     /** Tests List.add(int index, Object element), List.get(int index)
      */
     public boolean get()
@@ -231,7 +231,7 @@ public class InterfaceContainer_Test
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         cont.add(0, obj1);
         cont.add(1, obj2);
         cont.add(1, proxyObj3Weak1);
@@ -247,7 +247,7 @@ public class InterfaceContainer_Test
         {
             r[i++]= true;
         }
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -265,7 +265,7 @@ public class InterfaceContainer_Test
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         r[i++]= cont.contains(obj1) ? false : true; // nothing in the list
         cont.add(obj1);
         cont.add(proxyObj2TypeProv);
@@ -277,7 +277,7 @@ public class InterfaceContainer_Test
         r[i++]= cont.contains(proxyObj1Weak1);
         r[i++]= cont.contains(obj3);
         r[i++]= cont.contains(null) ? false : true;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -311,7 +311,7 @@ public class InterfaceContainer_Test
         cont.add(3, list1.get(1));
         cont.add(5, list1.get(2));
         r[i++]= cont.contains(list1) ? false : true;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -338,7 +338,7 @@ public class InterfaceContainer_Test
         cont.addAll(list2);
         r[i++]= cont.indexOf(proxyObj3Weak1) == 2;
         r[i++]= cont.lastIndexOf(proxyObj3Weak2) == 5;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -348,7 +348,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     /** Tests List.remove(int index), List.remove(Object element), List.removeAll(Collection c)
      */
     public boolean remove()
@@ -357,7 +357,7 @@ public class InterfaceContainer_Test
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         cont.addAll(list2);
         r[i++]=  proxyObj2TypeProv.equals(cont.remove(1));
         r[i++]= cont.size() == 2;
@@ -372,14 +372,14 @@ public class InterfaceContainer_Test
         r[i++]= cont.removeAll(list3);
         r[i++]= cont.isEmpty();
         cont.addAll(list2);
-        
+
         List list= new ArrayList();
         list.add(list2.get(0));
         list.add(list2.get(1));
         list.add(proxyObj3Weak2);
         r[i++]= cont.removeAll(list);
         r[i++]= cont.isEmpty();
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -389,7 +389,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     /** Tests List.retainAll
      */
     public boolean retainAll()
@@ -398,20 +398,20 @@ public class InterfaceContainer_Test
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         cont.addAll(list1); //obj1, obj2, obj3
         cont.addAll(list2); //obj1, proxyObj2TypeProv, proxyObj3TypeProv
         List list = new ArrayList();
         list.add(obj1);
         list.add(proxyObj3Weak1);
-        
+
         r[i++]= cont.retainAll(list);
         r[i++]= cont.get(0) == obj1;
         r[i++]= cont.get(1) == obj3;
         r[i++]= cont.get(2) == obj1;
         r[i++]= cont.get(3) == proxyObj3TypeProv;
         r[i++]= 4 == cont.size();
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -421,7 +421,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     /** Tests List.set(int index, Object element)
      **/
     public boolean set()
@@ -437,7 +437,7 @@ public class InterfaceContainer_Test
         r[i++]= o2 == list2.get(2);
         r[i++]= cont.get(0) == obj3;
         r[i++]= cont.get(2) == proxyObj3Weak1;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -447,7 +447,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     /** Tests List.toArray(), List.toArray(Object[] a)
      */
     public boolean toArray()
@@ -456,16 +456,16 @@ public class InterfaceContainer_Test
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         cont.addAll(list1);
         Object[] ar= cont.toArray();
         Object[] arOrig= list1.toArray();
         r[i++]= ar.length == arOrig.length;
-        
+
         r[i]= true;
         for (int c= 0; c < ar.length; c++)
             r[i]= r[i] && ar[c] == arOrig[c];
-        
+
         i++;
         XWeak[] arWeak= new XWeak[3];
         XWeak[] arWeak2= (XWeak[])cont.toArray(arWeak);
@@ -473,9 +473,9 @@ public class InterfaceContainer_Test
         r[i]= true;
         for (int c= 0; c < ar.length; c++)
             r[i]= r[i] && ar[c] == arWeak2[c];
-        
+
         i++;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -485,14 +485,14 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean Iterator_next()
     {
         System.out.println("Testing InterfaceContainer.iterator, Iterator.next()");
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         cont.addAll(list1);
         Iterator it= cont.iterator();
         r[i++]= it.next() == list1.get(0);
@@ -508,7 +508,7 @@ public class InterfaceContainer_Test
         {
             r[i++]= false;
         }
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -518,14 +518,14 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean Iterator_hasNext()
     {
         System.out.println("Testing, Iterator.next()");
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         Iterator it= cont.iterator();
         r[i++]= ! it.hasNext();
         cont.addAll(list1);
@@ -537,7 +537,7 @@ public class InterfaceContainer_Test
         r[i++]= it.hasNext();
         it.next();
         r[i++]= ! it.hasNext();
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -547,14 +547,14 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean Iterator_remove()
     {
         System.out.println("Testing, Iterator.remove()");
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         Iterator it= cont.iterator();
         try
         {
@@ -594,7 +594,7 @@ public class InterfaceContainer_Test
             it.remove();
         }
         r[i++]= cont.isEmpty();
-        
+
         // 2 iterators, remove must not impair the other iterator
         cont.clear();
         cont.addAll(list1);
@@ -617,7 +617,7 @@ public class InterfaceContainer_Test
             r[i++]= false;
         }
         r[i++]= cont.size() == 0;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -633,7 +633,7 @@ public class InterfaceContainer_Test
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         cont.addAll(list1);
         Iterator it= cont.listIterator();
         r[i++]= it.next() == list1.get(0);
@@ -649,7 +649,7 @@ public class InterfaceContainer_Test
         {
             r[i++]= false;
         }
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -659,14 +659,14 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean ListIterator_hasNext()
     {
         System.out.println("Testing ListIterator.hasNext()");
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         Iterator it= cont.listIterator();
         r[i++]= ! it.hasNext();
         cont.addAll(list1);
@@ -678,7 +678,7 @@ public class InterfaceContainer_Test
         r[i++]= it.hasNext();
         it.next();
         r[i++]= ! it.hasNext();
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -688,14 +688,14 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean ListIterator_remove()
     {
         System.out.println("Testing ListIterator.remove()");
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         ListIterator it= cont.listIterator();
         try
         {
@@ -735,7 +735,7 @@ public class InterfaceContainer_Test
             it.remove();
         }
         r[i++]= cont.isEmpty();
-        
+
         // 2 iterators, remove must not impair the other iterator
         cont.clear();
         cont.addAll(list1);
@@ -758,7 +758,7 @@ public class InterfaceContainer_Test
             r[i++]= false;
         }
         r[i++]= cont.size() == 0;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -768,14 +768,14 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean ListIterator_hasPrevious()
     {
         System.out.println("Testing ListIterator.hasPrevious()");
         InterfaceContainer cont= new InterfaceContainer();
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         ListIterator it= cont.listIterator();
         r[i++]= ! it.hasPrevious();
         cont.addAll(list1);
@@ -785,7 +785,7 @@ public class InterfaceContainer_Test
             it.next();
             r[i++]= it.hasPrevious();
         }
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -795,7 +795,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean ListIterator_previous()
     {
         System.out.println("Testing ListIterator.previous()");
@@ -803,7 +803,7 @@ public class InterfaceContainer_Test
         boolean r[]= new boolean[50];
         int i= 0;
         boolean bOk= true;
-        
+
         cont.addAll(list1);
         // go to the end of our list and list1
         ListIterator it= cont.listIterator();
@@ -812,7 +812,7 @@ public class InterfaceContainer_Test
         ListIterator it_list1= list1.listIterator();
         while (it_list1.hasNext())
             it_list1.next();
-        
+
         while (it.hasPrevious())
         {
             r[i++]= it.previous() == it_list1.previous();
@@ -826,7 +826,7 @@ public class InterfaceContainer_Test
         {
             r[i++]=true;
         }
-        
+
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
         if ( ! bOk )
@@ -835,7 +835,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean ListIterator_nextIndex()
     {
         System.out.println("Testing ListIterator.nextIndex()");
@@ -843,7 +843,7 @@ public class InterfaceContainer_Test
         boolean r[]= new boolean[50];
         int i= 0;
         boolean bOk= true;
-        
+
         ListIterator it= cont.listIterator();
         cont.addAll(list1);
         it= cont.listIterator();
@@ -852,7 +852,7 @@ public class InterfaceContainer_Test
         r[i++]= it.nextIndex() == 1;
         it.next();
         r[i++]= it.nextIndex() == 2;
-        
+
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
         if ( ! bOk )
@@ -868,20 +868,20 @@ public class InterfaceContainer_Test
         boolean r[]= new boolean[50];
         int i= 0;
         boolean bOk= true;
-        
+
         ListIterator it= cont.listIterator();
         cont.addAll(list1);
         it= cont.listIterator();
         while (it.hasNext())
             it.next();
-        
+
         r[i++]= it.previousIndex() == 2;
         it.previous();
         r[i++]= it.previousIndex() == 1;
         it.previous();
         r[i++]= it.previousIndex() == 0;
         it.previous();
-        
+
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
         if ( ! bOk )
@@ -897,7 +897,7 @@ public class InterfaceContainer_Test
         boolean r[]= new boolean[50];
         int i= 0;
         boolean bOk= true;
-        
+
         ListIterator it= cont.listIterator();
         it.add(obj1);
         r[i++]= cont.size() == 1;
@@ -907,7 +907,7 @@ public class InterfaceContainer_Test
         r[i++]= it.previous() == obj3;
         r[i++]= it.previous() == obj2;
         r[i++]= it.previous() == obj1;
-        
+
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
         if ( ! bOk )
@@ -916,14 +916,14 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean disposeAndClear()
     {
         System.out.println("Testing InterfaceContainer.disposeAndClear");
         InterfaceContainer cont= new InterfaceContainer(10);
         boolean r[]= new boolean[50];
         int i= 0;
-        
+
         cont.add(obj1);
         cont.add(obj2);
         cont.add(obj3);
@@ -943,7 +943,7 @@ public class InterfaceContainer_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
 
     public static void main(String[] args)
     {
@@ -982,7 +982,7 @@ public class InterfaceContainer_Test
             System.out.println("Test finished.\nErrors occurred!!!");
         else
             System.out.println("Test finished. \nNo errors.");
-        
+
     }
-    
+
 }

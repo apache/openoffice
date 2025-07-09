@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,7 @@ import java.io.File;
 import java.util.Vector;
 
 public class InfoDir {
-    
+
     private InfoDir() {
     }
 
@@ -37,12 +37,12 @@ public class InfoDir {
         InstallData data = InstallData.getInstance();
         File jarFile = data.getJarFilePath();
         String destFile = null;
-        
+
         if ( jarFile != null ) {
             String sourceDir = jarFile.getParent();
             File sourceFileFile = new File(sourceDir, fileName);
             String sourceFile = sourceFileFile.getPath();
-            
+
             // String jarFileName = jarFile.getName();
             File destDir = new File(data.getInstallDefaultDir(), data.getProductDir());
             File destFileFile = new File(destDir, fileName);
@@ -50,7 +50,7 @@ public class InfoDir {
 
             boolean success = SystemManager.copy(sourceFile, destFile);
         }
-        
+
         return destFile;
     }
 
@@ -72,14 +72,14 @@ public class InfoDir {
             destDir.mkdir();
             SystemManager.copyAllFiles(sourceDir, destDir, fileExtension);
             SystemManager.setUnixPrivilegesDirectory(destDir, fileExtension, unixRights);
-        }        
+        }
     }
 
     static private void copyInstallDirectoryDoubleSubdir(File destBaseDir, String dir1, String dir2) {
         InstallData data = InstallData.getInstance();
         File sourceDir1 = data.getInfoRoot(dir1);
         File sourceDir = new File(sourceDir1, dir2);
-        
+
         destBaseDir.mkdir();
         File destDir1 = new File(destBaseDir, dir1);
         destDir1.mkdir();
@@ -88,7 +88,7 @@ public class InfoDir {
 
         SystemManager.copyAllFiles(sourceDir, destDir);
     }
-    
+
     static private File createUninstallDir() {
         InstallData data = InstallData.getInstance();
         File baseDir = new File(data.getInstallDefaultDir(), data.getProductDir());
@@ -96,7 +96,7 @@ public class InfoDir {
         baseDir.mkdir();
         return baseDir;
     }
-    
+
     static private void copyGetUidSoFile(File dir) {
         InstallData data = InstallData.getInstance();
         String uidFileSource = data.getGetUidPath();
@@ -107,9 +107,9 @@ public class InfoDir {
             String uidFileDest = destFile.getPath();
             boolean success = SystemManager.copy(uidFileSource, uidFileDest);
             data.setGetUidPath(uidFileDest);
-        }        
+        }
     }
-    
+
     static private void copyJreFile(File dir) {
         InstallData data = InstallData.getInstance();
         String jrefilename = System.getProperty("JRE_FILE");
@@ -118,9 +118,9 @@ public class InfoDir {
             // For Solaris, JRE_FILE can already contain the complete path.
             // Otherwise it contains only the filename
             File jreFile = new File(jrefilename);
-            
+
             if ( ! jreFile.exists()) {
-                jreFile = new File(data.getPackagePath(), jrefilename);            
+                jreFile = new File(data.getPackagePath(), jrefilename);
             }
 
             if ( jreFile.exists() ) {
@@ -129,16 +129,16 @@ public class InfoDir {
                 destDir.mkdir();
                 String onlyFileName = jreFile.getName();
                 File destFile = new File(destDir, onlyFileName);
-                
+
                 // In maintenance mode the file already exists
                 if ( ! destFile.exists() ) {
                     String jreFileDest = destFile.getPath();
-                    boolean success = SystemManager.copy(jreFileSource, jreFileDest);        
+                    boolean success = SystemManager.copy(jreFileSource, jreFileDest);
                 }
             }
-        }   	
+        }
     }
-    
+
     static private void moveAdminFiles(File dir) {
         InstallData data = InstallData.getInstance();
 
@@ -159,7 +159,7 @@ public class InfoDir {
             data.setAdminFileNameRelocNoDepends(destFile.getPath());
             sourceFile.delete();
         }
-        
+
         if ( data.getAdminFileNameNoReloc() != null ) {
             File sourceFile = new File(data.getAdminFileNameNoReloc());
             String fileName = sourceFile.getName();
@@ -178,31 +178,31 @@ public class InfoDir {
             sourceFile.delete();
         }
     }
-    
+
     static private void createInfoFile(File dir) {
         Vector fileContent = new Vector();
         String line = null;
         InstallData data = InstallData.getInstance();
-        
+
         line = "PackagePath=" + data.getPackagePath();
         fileContent.add(line);
         line = "InstallationPrivileges=" + data.getInstallationPrivileges();
         fileContent.add(line);
-        line = "AdminFileReloc=" + data.getAdminFileNameReloc(); 
+        line = "AdminFileReloc=" + data.getAdminFileNameReloc();
         fileContent.add(line);
-        line = "AdminFileRelocNoDepends=" + data.getAdminFileNameRelocNoDepends(); 
+        line = "AdminFileRelocNoDepends=" + data.getAdminFileNameRelocNoDepends();
         fileContent.add(line);
-        line = "AdminFileNoReloc=" + data.getAdminFileNameNoReloc(); 
+        line = "AdminFileNoReloc=" + data.getAdminFileNameNoReloc();
         fileContent.add(line);
-        line = "AdminFileNoRelocNoDepends=" + data.getAdminFileNameNoRelocNoDepends(); 
+        line = "AdminFileNoRelocNoDepends=" + data.getAdminFileNameNoRelocNoDepends();
         fileContent.add(line);
-        line = "InstallationDir=" + data.getInstallDir();        
+        line = "InstallationDir=" + data.getInstallDir();
         fileContent.add(line);
         line = "DatabasePath=" + data.getDatabasePath();
         fileContent.add(line);
         line = "GetUidFile=" + data.getGetUidPath();
         fileContent.add(line);
-        
+
         String infoFileName = "infoFile";
         File infoFile = new File(dir, infoFileName);
         SystemManager.saveCharFileVector(infoFile.getPath(), fileContent);
@@ -212,7 +212,7 @@ public class InfoDir {
         InstallData data = InstallData.getInstance();
         File jarFile = data.getJarFilePath();
         SystemManager.deleteFile(jarFile);
-        
+
         String jarFilePath = jarFile.getParent();
         File setupFile = new File(jarFilePath, "setup");
         SystemManager.deleteFile(setupFile);
@@ -234,7 +234,7 @@ public class InfoDir {
         }
 
         if ( ! data.getGetUidPath().equals("null") ) {
-            SystemManager.deleteFile(new File(data.getGetUidPath()));            
+            SystemManager.deleteFile(new File(data.getGetUidPath()));
         }
     }
 
@@ -258,7 +258,7 @@ public class InfoDir {
             }
         }
     }
-    
+
     static private void removeInforoot() {
         InstallData data = InstallData.getInstance();
         SystemManager.removeDirectory(data.getInfoRoot());

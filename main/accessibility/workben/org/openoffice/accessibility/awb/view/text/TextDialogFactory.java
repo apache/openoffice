@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,14 +32,14 @@ import com.sun.star.accessibility.XAccessibleText;
 import com.sun.star.lang.IndexOutOfBoundsException;
 import com.sun.star.uno.UnoRuntime;
 
- 
+
 /** Factory for dialogs of the text views.
-*/   
+*/
 public class TextDialogFactory
 {
     static public JDialog CreateSelectionDialog (XAccessibleContext xContext)
     {
-        JDialog aDialog = new TextActionDialog( 
+        JDialog aDialog = new TextActionDialog(
             xContext,
             "Select range:",
             "select")
@@ -47,8 +47,8 @@ public class TextDialogFactory
                 boolean TextAction (XAccessibleText xText)
                     throws IndexOutOfBoundsException
                 {
-                    return xText.setSelection( 
-                        GetSelectionStart(), 
+                    return xText.setSelection(
+                        GetSelectionStart(),
                         GetSelectionEnd() );
                 }
             };
@@ -67,8 +67,8 @@ public class TextDialogFactory
                 boolean TextAction (XAccessibleText xText)
                     throws IndexOutOfBoundsException
                 {
-                    return xText.copyText( 
-                        GetSelectionStart(), 
+                    return xText.copyText(
+                        GetSelectionStart(),
                         GetSelectionEnd());
                 }
             };
@@ -86,8 +86,8 @@ public class TextDialogFactory
                 boolean EditableTextAction (XAccessibleEditableText xText)
                     throws IndexOutOfBoundsException
                 {
-                    return xText.cutText( 
-                        GetSelectionStart(), 
+                    return xText.cutText(
+                        GetSelectionStart(),
                         GetSelectionEnd() );
                 }
             };
@@ -116,7 +116,7 @@ public class TextDialogFactory
     {
         JDialog aDialog = new TextEditDialog (
             xContext,
-            "Edit text:", 
+            "Edit text:",
             "edit");
         if (aDialog != null)
             aDialog.show();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -55,14 +55,14 @@ public class SqlTableHelper {
         public String defaultValue;
         public int ordinalPosition;
     }
-    
+
     private static class KeyProperties {
         ArrayList<String> columnNames = new ArrayList<>();
         String referencedTable;
         int type;
         int updateRule;
         int deleteRule;
-        
+
         KeyProperties(String referencedTable, int type, int updateRule, int deleteRule) {
             this.referencedTable = referencedTable;
             this.type = type;
@@ -70,13 +70,13 @@ public class SqlTableHelper {
             this.deleteRule = deleteRule;
         }
     }
-    
+
     public List<ColumnDescription> readColumns(XDatabaseMetaData metadata, String catalogName, String schema, String table) throws SQLException {
         Object catalog = Any.VOID;
         if (!catalogName.isEmpty()) {
             catalog = catalogName;
         }
-        
+
         XResultSet results = metadata.getColumns(catalog, schema, table, "%");
         List<ColumnDescription> columnDescriptions = collectColumnDescriptions(results);
         sanitizeColumnDescriptions(columnDescriptions);
@@ -87,7 +87,7 @@ public class SqlTableHelper {
         }
         return columnsByOrdinal;
     }
-    
+
     private List<ColumnDescription> collectColumnDescriptions(XResultSet results) throws SQLException {
         List<ColumnDescription> columns = new ArrayList<>();
         XRow row = UnoRuntime.queryInterface(XRow.class, results);
@@ -106,7 +106,7 @@ public class SqlTableHelper {
         }
         return columns;
     }
-    
+
     private void sanitizeColumnDescriptions(List<ColumnDescription> columnDescriptions) {
         if (columnDescriptions.isEmpty()) {
             return;
@@ -132,7 +132,7 @@ public class SqlTableHelper {
             columnDescription.ordinalPosition -= offset;
         }
     }
-    
+
     public Map<String, OKey> readKeys(XDatabaseMetaData metadata, String catalogName, String schemaName, String tableName,
             boolean isCaseSensitive, OTable table) throws SQLException {
         Map<String, OKey> keys = new TreeMap<>();
@@ -141,7 +141,7 @@ public class SqlTableHelper {
         readForeignKeys(metadata, catalogName, schemaName, tableName, isCaseSensitive, keys, table);
         return keys;
     }
-    
+
     private OKey readPrimaryKey(XDatabaseMetaData metadata,
             String catalogName, String schemaName, String tableName, boolean isCaseSensitive, OTable table) throws SQLException {
         Object catalog = Any.VOID;
@@ -174,7 +174,7 @@ public class SqlTableHelper {
             CompHelper.disposeComponent(results);
         }
     }
-    
+
     private void readForeignKeys(XDatabaseMetaData metadata,
             String catalogName, String schemaName, String tableName, boolean isCaseSensitive, Map<String, OKey> keys, OTable table) throws SQLException {
         Object catalog = Any.VOID;
@@ -195,12 +195,12 @@ public class SqlTableHelper {
                     }
                     String schemaReturned = row.getString(2);
                     String nameReturned = row.getString(3);
-                    
+
                     String foreignKeyColumn = row.getString(8);
                     int updateRule = row.getInt(10);
                     int deleteRule = row.getInt(11);
                     String fkName = row.getString(12);
-                    
+
                     if (!row.wasNull() && !fkName.isEmpty()) {
                         if (!oldFkName.equals(fkName)) {
                             if (keyProperties != null) {
@@ -232,7 +232,7 @@ public class SqlTableHelper {
             CompHelper.disposeComponent(results);
         }
     }
-    
+
     public ArrayList<String> readIndexes(XDatabaseMetaData metadata, String catalogName, String schemaName, String tableName, OTable table) throws SQLException {
         Object catalog = Any.VOID;
         if (!catalogName.isEmpty()) {

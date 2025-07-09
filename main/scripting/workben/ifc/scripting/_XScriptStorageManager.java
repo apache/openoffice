@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ public class _XScriptStorageManager extends MultiMethodTest {
     public void _createScriptStorage() {
         boolean result = true;
 
-        Collection c = 
+        Collection c =
             (Collection) tEnv.getObjRelation("_createScriptStorage");
 
         if (c == null) {
@@ -94,7 +94,7 @@ public class _XScriptStorageManager extends MultiMethodTest {
     public void _createScriptStorageWithURI() {
         boolean result = true;
 
-        Collection c = 
+        Collection c =
             (Collection) tEnv.getObjRelation("_createScriptStorageWithURI");
 
         if (c == null) {
@@ -139,14 +139,14 @@ public class _XScriptStorageManager extends MultiMethodTest {
             log.println("expected: " + expected + ", output: " + output);
             result &= output.equals(expected);
         }
-        
+
         tRes.tested("createScriptStorageWithURI()", result);
     }
 
     public void _getScriptStorage() {
         boolean result = true;
 
-        Collection c = 
+        Collection c =
             (Collection) tEnv.getObjRelation("_getScriptStorage");
 
         if (c == null) {
@@ -194,7 +194,7 @@ public class _XScriptStorageManager extends MultiMethodTest {
     public void _refreshScriptStorage() {
         boolean result = true;
 
-        Collection c = 
+        Collection c =
             (Collection) tEnv.getObjRelation("_refreshScriptStorage");
 
         if (c == null) {

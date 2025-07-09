@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,16 +59,16 @@ public class ConverterInfoReader {
 
 
     /**
-     *  Constructor.  A jar file is passed in.  The jar file is 
+     *  Constructor.  A jar file is passed in.  The jar file is
      *  parsed and the <code>Vector</code> of <code>ConverterInfo</code>
      *  objects is built.
      *
      *  @param  jar  The URL of the jar file to process.
      *  @param  shouldvalidate Boolean to enable or disable xml validation.
      *
-     *  @throws  IOException                   If the jar file cannot 
+     *  @throws  IOException                   If the jar file cannot
      *                                         be read or if the
-     *                                         META-INF/converter.xml 
+     *                                         META-INF/converter.xml
      *                                         can not be read in the
      *                                         jar file.
      *  @throws  ParserConfigurationException  If the DocumentBuilder
@@ -106,11 +106,11 @@ public class ConverterInfoReader {
         //
         istream           = jarfile.getInputStream(jarentry);
         isource           = new InputSource(istream);
- 
+
         // Get the DOM builder and build the document.
         //
         builderFactory    = DocumentBuilderFactory.newInstance();
-	
+
 	//DTD validation
 	if (shouldvalidate){
 	    System.out.println("Validating xml...");
@@ -129,7 +129,7 @@ public class ConverterInfoReader {
     /**
      *  Loops over the <i>converter</i> <code>Node</code> in the converter.xml
      *  file and processes them.
-     * 
+     *
      *  @throws  RegistryException  If the plug-in associated with a
      *                              specific <i>converter</i> <code>Node</code>
      *                              cannot be loaded.
@@ -138,7 +138,7 @@ public class ConverterInfoReader {
 
         Node     converterNode;
         NodeList converterNodes = document.getElementsByTagName(TAG_CONVERTER);
-   
+
         for (int i=0; i < converterNodes.getLength(); i++) {
             converterNode = converterNodes.item(i);
             if (converterNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -157,7 +157,7 @@ public class ConverterInfoReader {
      *  @param  e  The <code>Element</code> corresponding to the
      *             <i>converter</i> XML tag.
      *
-     * 
+     *
      *  @throws  RegistryException  If the plug-in cannot be loaded.
      */
     private void parseConverterNode(Element e) throws RegistryException {
@@ -176,11 +176,11 @@ public class ConverterInfoReader {
 	String  xsltDeserial= null;
         String  temp;
 
-        temp = e.getAttribute(ATTRIB_OFFICE_TYPE); 
+        temp = e.getAttribute(ATTRIB_OFFICE_TYPE);
         if (temp.length() != 0) {
            officeMime = temp;
         }
- 
+
         temp = e.getAttribute(ATTRIB_VERSION);
         if (temp.length() != 0) {
            version = temp;
@@ -194,7 +194,7 @@ public class ConverterInfoReader {
 
                 detailElement  = (Element)detailNode;
                 elementTagName = detailElement.getTagName();
-  
+
                 if (TAG_NAME.equalsIgnoreCase(elementTagName)) {
                     name = getTextValue(detailElement);
                 } else if (TAG_DESC.equalsIgnoreCase(elementTagName)) {
@@ -202,13 +202,13 @@ public class ConverterInfoReader {
                 } else if (TAG_VENDOR.equalsIgnoreCase(elementTagName)) {
                     vendor = getTextValue(detailElement);
 		} else if (TAG_XSLT_SERIAL.equalsIgnoreCase(elementTagName)) {
-                    xsltSerial = getTextValue(detailElement);   
+                    xsltSerial = getTextValue(detailElement);
                 } else if (TAG_XSLT_DESERIAL.equalsIgnoreCase(elementTagName)) {
                     xsltDeserial = getTextValue(detailElement);
                 } else if (TAG_CLASS_IMPL.equalsIgnoreCase(elementTagName)) {
                     classImpl = getTextValue(detailElement);
                 } else if (TAG_TARGET.equalsIgnoreCase(elementTagName)) {
-             
+
                     temp = detailElement.getAttribute(ATTRIB_DEVICE_TYPE);
                     if (temp.length() != 0) {
                         deviceMime.add(temp);
@@ -219,12 +219,12 @@ public class ConverterInfoReader {
 	ConverterInfo converterInfo;
 	if ((xsltSerial==null) || (xsltDeserial==null)){
 	    converterInfo = new ConverterInfo(jarfilename,
-			    officeMime, deviceMime, name, 
+			    officeMime, deviceMime, name,
 			    desc, version, vendor,classImpl);
 	}
 	else{
 	    converterInfo = new ConverterInfo(jarfilename,
-			    officeMime, deviceMime, name, 
+			    officeMime, deviceMime, name,
 			    desc, version, vendor,classImpl,
 			    xsltSerial,xsltDeserial);
 	    }
@@ -240,7 +240,7 @@ public class ConverterInfoReader {
      *  <code>Element</code>.
      *
      *  @param  e  The <code>Element</code> to process.
-     * 
+     *
      *  @return  The text value of the <code>Element</code>.
      */
     private String getTextValue(Element e) {

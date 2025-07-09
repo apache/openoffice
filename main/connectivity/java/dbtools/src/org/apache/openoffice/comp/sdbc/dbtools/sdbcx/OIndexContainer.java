@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -51,12 +51,12 @@ import com.sun.star.uno.UnoRuntime;
 
 public class OIndexContainer extends OContainer {
     protected OTable table;
-    
+
     public OIndexContainer(Object lock, List<String> names, boolean isCaseSensitive, OTable table) throws ElementExistException {
         super(lock, isCaseSensitive, names);
         this.table = table;
     }
-    
+
     @Override
     protected XPropertySet createDescriptor() {
         return new SdbcxIndexDescriptor(isCaseSensitive());
@@ -69,7 +69,7 @@ public class OIndexContainer extends OContainer {
             if (connection == null) {
                 return null;
             }
-            
+
             XPropertySet ret = null;
             String qualifier = "";
             String subname;
@@ -80,7 +80,7 @@ public class OIndexContainer extends OContainer {
             } else {
                 subname = name;
             }
-            
+
             Object catalog = table.getPropertyValue(PropertyIds.CATALOGNAME.name);
             String schemaName = AnyConverter.toString(table.getPropertyValue(PropertyIds.SCHEMANAME.name));
             String tableName = AnyConverter.toString(table.getPropertyValue(PropertyIds.NAME.name));
@@ -119,7 +119,7 @@ public class OIndexContainer extends OContainer {
             throw new SQLException("Error", this, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     private static boolean isPrimaryKeyIndex(XDatabaseMetaData metadata, Object catalog, String schema, String table, String name) throws SQLException {
         XResultSet results = null;
         try {
@@ -135,7 +135,7 @@ public class OIndexContainer extends OContainer {
             CompHelper.disposeComponent(results);
         }
     }
-    
+
     @Override
     protected XPropertySet appendObject(String _rForName, XPropertySet descriptor) throws SQLException {
         try {
@@ -176,7 +176,7 @@ public class OIndexContainer extends OContainer {
             throw new SQLException("Error", this, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     @Override
     protected void dropObject(int index, String elementName) throws SQLException {
         XConnection connection = table.getConnection();
@@ -190,7 +190,7 @@ public class OIndexContainer extends OContainer {
             schema = elementName.substring(0, len);
         }
         name = elementName.substring(len + 1);
-        
+
         String composedName = DbTools.composeTableName(connection.getMetaData(), table, ComposeRule.InTableDefinitions, false, false, true);
         String indexName = DbTools.composeTableName(connection.getMetaData(), "", schema, name, true, ComposeRule.InIndexDefinitions);
         String sql = String.format("DROP INDEX %s ON %s", indexName, composedName);
@@ -202,7 +202,7 @@ public class OIndexContainer extends OContainer {
             CompHelper.disposeComponent(statement);
         }
     }
-    
+
     @Override
     protected void impl_refresh() {
         // FIXME

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,14 +30,14 @@ import java.util.Iterator;
 
 public class MultiTypeInterfaceContainer
 {
-    
+
     private Map<Object,InterfaceContainer> map= new HashMap<Object,InterfaceContainer>();
-    
+
     /** Creates a new instance of MultiTypeInterfaceContainer */
     public MultiTypeInterfaceContainer()
     {
     }
-    
+
     /** only returns types which have at least one value in InterfaceContainer
      *  return value can contain an element null, if someone called
      *  addInterface (null, interf)
@@ -46,11 +46,11 @@ public class MultiTypeInterfaceContainer
     {
         int size;
         Type[] retVal= null;
-        
+
         if ( (size=map.size()) > 0)
         {
             Type [] arTypes= new Type[size];
-            
+
             int countTypes= 0;
             for (Map.Entry<Object,InterfaceContainer> entry : map.entrySet())
             {
@@ -68,7 +68,7 @@ public class MultiTypeInterfaceContainer
                         arTypes[countTypes++]= new Type(key.getClass());
                 }
             }
-            
+
             if (countTypes != size)
             {
                 retVal= new Type[countTypes];
@@ -81,18 +81,18 @@ public class MultiTypeInterfaceContainer
             retVal= new Type[0];
         return retVal;
     }
-    
+
     /** param key can be null */
     synchronized public InterfaceContainer getContainer(Object key)
     {
         return map.get(key);
     }
-    
-    
+
+
     synchronized public int addInterface(Object ckey, Object iface)
     {
         //If the key is a Type then it does not matter if the objects are different
-        // if they represent the same type. This is because Types overrides hashCode and 
+        // if they represent the same type. This is because Types overrides hashCode and
         // equals. For example:
         // Type a= new Type(XInterface.class);
         // Type b= new Type(XInterface.class);
@@ -110,8 +110,8 @@ public class MultiTypeInterfaceContainer
         }
         return cont.size();
     }
-  
-    
+
+
     synchronized public int removeInterface(Object key, Object iface)
     {
         int retVal= 0;
@@ -123,7 +123,7 @@ public class MultiTypeInterfaceContainer
         }
         return retVal;
     }
-    
+
     public void disposeAndClear(EventObject evt)
     {
         Iterator<InterfaceContainer> it= null;
@@ -134,7 +134,7 @@ public class MultiTypeInterfaceContainer
         while (it.hasNext() )
             it.next().disposeAndClear(evt);
     }
-    
+
     synchronized public void clear()
     {
         Iterator<InterfaceContainer> it= map.values().iterator();

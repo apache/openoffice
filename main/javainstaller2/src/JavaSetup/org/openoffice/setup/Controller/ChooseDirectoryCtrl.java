@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ import org.openoffice.setup.Util.PackageCollector;
 public class ChooseDirectoryCtrl extends PanelController {
 
     private String helpFile;
-    
+
     public ChooseDirectoryCtrl() {
         super("ChooseDirectory", new ChooseDirectory());
         helpFile = "String_Helpfile_ChooseDirectory";
@@ -62,17 +62,17 @@ public class ChooseDirectoryCtrl extends PanelController {
         if ( data.olderVersionExists() ) {
             return new String("InstallationImminent");
         } else if ( data.sameVersionExists() ) {
-            return new String("ChooseComponents");            
+            return new String("ChooseComponents");
         } else {
             return new String("ChooseInstallationType");
         }
     }
-    
+
     public String getPrevious() {
         InstallData data = InstallData.getInstance();
 
         if ( data.hideEula() ) {
-            return new String("Prologue");            
+            return new String("Prologue");
         } else {
             return new String("AcceptLicense");
         }
@@ -90,14 +90,14 @@ public class ChooseDirectoryCtrl extends PanelController {
         }
         // mask spaces
         // s.replaceAll(" ", "\\ ");
-        
+
         return s;
     }
 
     public void beforeShow() {
         ChooseDirectory panel = (ChooseDirectory)getPanel();
         InstallData data = InstallData.getInstance();
-        
+
         if ( data.getInstallDir() == null ) {
             String installDir = data.getDefaultDir();
 
@@ -123,7 +123,7 @@ public class ChooseDirectoryCtrl extends PanelController {
         dir = removeEndingDelimiter(dir);
         InstallData data = InstallData.getInstance();
         data.setInstallDir(dir);
-        
+
         File installDefaultDir = new File(dir, data.getDefaultDir());
         data.setInstallDefaultDir(installDefaultDir.getPath());
 
@@ -163,13 +163,13 @@ public class ChooseDirectoryCtrl extends PanelController {
             }
 
             // Additional tasks, if the directory is okay
-            
+
             if ( ! repeatDialog ) {
                 // Calculate available disc space
                 int discSpace = SystemManager.calculateDiscSpace(dir);
                 data.setAvailableDiscSpace(discSpace);
 
-                Installer installer = InstallerFactory.getInstance();                
+                Installer installer = InstallerFactory.getInstance();
 
                 // Is this a new directory, or one that was already set before.
                 // In this case, the database does not need to be evaluated again.
@@ -179,12 +179,12 @@ public class ChooseDirectoryCtrl extends PanelController {
                     String oldDatabasePath = data.getDatabasePath();
                     // Setting the database path
                     installer.defineDatabasePath();
-                    
+
                     if (( oldDatabasePath == null ) || ( ! oldDatabasePath.equals(data.getDatabasePath()))) {
                         data.setDatabaseAnalyzed(false);
                         data.setDatabaseQueried(false);
                     } else {
-                        data.setDatabaseAnalyzed(true);                        
+                        data.setDatabaseAnalyzed(true);
                     }
                 }
 
@@ -198,16 +198,16 @@ public class ChooseDirectoryCtrl extends PanelController {
                     InstallChangeCtrl.checkInstallChange(data);
                     // InstallChangeCtrl.checkInstallChange(data, panel);
                 }
-                                
+
                 // At this point it is clear, whether the update-Package is installed or not.
                 // If it is installed, it is also clear, in which version it is installed.
-                // Therefore the following dialog is also defined.                
-                
+                // Therefore the following dialog is also defined.
+
                 if ( data.newerVersionExists() ) {
                     // This can happen only in installation with user privileges.
-                    // Installations with root privileges have cancelled installation 
+                    // Installations with root privileges have cancelled installation
                     // already at first dialog.
-                    // Possibility to select a new directory, in which no 
+                    // Possibility to select a new directory, in which no
                     // newer product exists
                     String message = ResourceManager.getString("String_Newer_Version_Installed_Found") + "\n" + data.getInstallDir() + "\n" +
                                      ResourceManager.getString("String_Newer_Version_Database") + ": " + data.getDatabasePath() + "\n" +
@@ -217,15 +217,15 @@ public class ChooseDirectoryCtrl extends PanelController {
 
                     repeatDialog = true;
                 }
-                
+
                 // If an older version is found, and the update is forbidden, the user
                 // can select another installation directory.
 
                 if ( data.olderVersionExists() && data.dontUpdate() ) {
                     // This can happen only in installation with user privileges.
-                    // Installations with root privileges have cancelled installation 
+                    // Installations with root privileges have cancelled installation
                     // already at first dialog (InstallChangeCtrl.java).
-                    // Possibility to select a new directory, in which no 
+                    // Possibility to select a new directory, in which no
                     // older product exists
                     String message = ResourceManager.getString("String_Older_Version_Installed_Found") + "\n" + data.getInstallDir() + "\n" +
                                      ResourceManager.getString("String_Newer_Version_Database") + ": " + data.getDatabasePath() + "\n" +
@@ -245,7 +245,7 @@ public class ChooseDirectoryCtrl extends PanelController {
                 }
             }
         }
-        
+
         return repeatDialog;
     }
 

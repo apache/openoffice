@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,17 +75,17 @@ public class BridgeFactory implements XBridgeFactory/*, XEventListener*/ {
 	 * @param   regKey       the registryKey
 	 * @see                  com.sun.star.comp.loader.JavaLoader
 	 */
-	public static XSingleServiceFactory __getServiceFactory(String implName, 
-														  XMultiServiceFactory multiFactory, 
+	public static XSingleServiceFactory __getServiceFactory(String implName,
+														  XMultiServiceFactory multiFactory,
 														  XRegistryKey regKey)
 	{
 		XSingleServiceFactory xSingleServiceFactory = null;
 
 	    if (implName.equals(BridgeFactory.class.getName()) )
 	        xSingleServiceFactory = FactoryHelper.getServiceFactory(BridgeFactory.class,
-																	multiFactory, 
+																	multiFactory,
 																	regKey);
-	    
+
 	    return xSingleServiceFactory;
 	}
 
@@ -98,9 +98,9 @@ public class BridgeFactory implements XBridgeFactory/*, XEventListener*/ {
 	 * @param    anInstanceProvider   the instance provider
 	 * @see                           com.sun.star.bridge.XBridgeFactory
 	 */
-    public XBridge createBridge(String sName, String sProtocol, XConnection aConnection, XInstanceProvider anInstanceProvider) throws 
-		BridgeExistsException, 
-		com.sun.star.lang.IllegalArgumentException, 
+    public XBridge createBridge(String sName, String sProtocol, XConnection aConnection, XInstanceProvider anInstanceProvider) throws
+		BridgeExistsException,
+		com.sun.star.lang.IllegalArgumentException,
 		com.sun.star.uno.RuntimeException
     {
         boolean hasName = sName.length() != 0;
@@ -157,13 +157,13 @@ public class BridgeFactory implements XBridgeFactory/*, XEventListener*/ {
 			if(xBridge != null) {
 				if(xBridge.getName().equals(sName))
 					break;
-					
+
 				else
 					xBridge = null;
 			}
 		}
 
-		
+
 		if(DEBUG) System.err.println("##### " + getClass().getName() + ".getBridge:" + sName + " " + xBridge);
 
 		return xBridge;

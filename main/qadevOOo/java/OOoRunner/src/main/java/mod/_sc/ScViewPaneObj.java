@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,14 +71,14 @@ public class ScViewPaneObj extends TestCase {
     static private XSpreadsheetDocument xSpreadsheetDoc;
     static private SOfficeFactory SOF;
     static private XInterface oObj;
-    
+
     /**
      * Creates Spreadsheet document.
      */
     public void initialize( TestParameters Param, PrintWriter log ) {
         // get a soffice factory object
         SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)Param.getMSF());
-        
+
         try {
             log.println("creating a spreadsheetdocument");
             xSpreadsheetDoc = SOF.createCalcDoc(null);
@@ -87,7 +87,7 @@ public class ScViewPaneObj extends TestCase {
             throw new StatusException( "Couldn't create document ", e );
         }
     }
-    
+
     /**
      * Disposes Spreadsheet document.
      */
@@ -97,7 +97,7 @@ public class ScViewPaneObj extends TestCase {
         UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
-    
+
     /**
      * Creating a Testenvironment for the interfaces to be tested.
      * Retieves the current controller of the spreadsheet document using the
@@ -115,7 +115,7 @@ public class ScViewPaneObj extends TestCase {
      */
     protected TestEnvironment createTestEnvironment(TestParameters Param, PrintWriter log) {
         XDrawPage oDrawPage;
-        
+
         XModel xm = (XModel)
         UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
         XController xc = xm.getCurrentController();
@@ -134,36 +134,36 @@ public class ScViewPaneObj extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by index", e);
         }
-        
+
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        
+
         //Relation for XControlAccess
         tEnv.addObjRelation("DOCUMENT", UnoRuntime.queryInterface(XComponent.class,xSpreadsheetDoc));
         tEnv.addObjRelation("XControlAccess.isSheet", Boolean.TRUE);
-        
+
         XViewPane VP = (XViewPane)
         UnoRuntime.queryInterface(XViewPane.class, oObj);
         CellRangeAddress dataArea = VP.getVisibleRange();
         tEnv.addObjRelation("DATAAREA", dataArea);
-        
+
         // XForm for com.sun.star.view.XFormLayerAccess
         log.println("adding relation for com.sun.star.view.XFormLayerAccess: XForm");
-        
+
         XForm myForm = null;
         String kindOfControl="CommandButton";
         XShape aShape = null;
         try{
             log.println("adding contol shape '" + kindOfControl + "'");
             XComponent oComp = (XComponent) UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc) ;
-            
+
             aShape = FormTools.createControlShape(oComp, 3000, 4500, 15000, 10000, kindOfControl);
-            
+
         } catch (Exception e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't create following control shape : '" +
                 kindOfControl + "': ", e);
         }
-        
+
         try {
             log.println( "getting Drawpages" );
             XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
@@ -175,7 +175,7 @@ public class ScViewPaneObj extends TestCase {
                 new Type(XDrawPage.class),oDP.getByIndex(0));
             if (oDrawPage == null)
                 log.println("ERROR: could not get DrawPage: null");
-            
+
             oDrawPage.add(aShape);
             log.println("getting XForm");
             XNameContainer xForm = FormTools.getForms(oDrawPage);
@@ -198,7 +198,7 @@ public class ScViewPaneObj extends TestCase {
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
             log.println("ERROR: could not add ObjectRelation 'XFormLayerAccess.XForm': " + ex.toString());
         }
-        
+
         return tEnv;
     }
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@ import org.openoffice.setup.SetupData.SetupDataProvider;
 import org.openoffice.setup.Util.LogManager;
 
 public class Controller {
-    
+
     private Controller() {
     }
 
@@ -48,12 +48,12 @@ public class Controller {
     static public void checkPackageFormat(InstallData installData) {
         String packageFormat = installData.getPackageFormat();
         String os = installData.getOSType();
-        
+
         boolean notSupportedPackageFormat = true;
-        
+
         // Show warnings for currently not supported combinations of OS and package format.
         // This has to be adapted if further OS or package formats are supported.
-        
+
         if (( os.equalsIgnoreCase("SunOS") ) && ( packageFormat.equalsIgnoreCase("pkg") )) {
             notSupportedPackageFormat = false;
         }
@@ -61,9 +61,9 @@ public class Controller {
         if (( os.equalsIgnoreCase("Linux") ) && ( packageFormat.equalsIgnoreCase("rpm") )) {
             notSupportedPackageFormat = false;
         }
-        
+
         // Inform user about not supported package format and exit program
-        
+
         if ( notSupportedPackageFormat ) {
             System.err.println("Error: Package format not supported by this OS!");
             String mainmessage = ResourceManager.getString("String_Packageformat_Not_Supported");
@@ -90,16 +90,16 @@ public class Controller {
         pkgCommandArray[0] = "locale";
         pkgCommandArray[1] = "-a";
         returnValue = ExecuteProcess.executeProcessReturnVector(pkgCommandArray, returnVector, returnErrorVector);
-        
+
         if ( returnValue == 0 ) {
             log = pkgCommand + "<br><b>Returns: " + returnValue + " Successful command</b><br>";
-            LogManager.addCommandsLogfileComment(log);                        
+            LogManager.addCommandsLogfileComment(log);
 
             // System.err.println("Available languages 1: ");
             // for (int i = 0; i < returnVector.size(); i++) {
             //     System.err.println(returnVector.get(i));
             // }
-            
+
             // Collecting "en-US" instead of "en-US.UTF8"
             Vector realVector = new Vector();
 
@@ -111,7 +111,7 @@ public class Controller {
                 }
                 if ( ! realVector.contains(oneLang)) {
                     realVector.add(oneLang);
-                }            
+                }
             }
 
             // System.err.println("Available languages 2: ");
@@ -120,7 +120,7 @@ public class Controller {
             // }
 
             installData.setSystemLanguages(realVector);
-        } else {    // an error occurred                    
+        } else {    // an error occurred
             log = pkgCommand + "<br><b>Returns: " + returnValue + " An error occurred</b><br>";
             LogManager.addCommandsLogfileComment(log);
             System.err.println("Error in command: " + pkgCommand);
@@ -128,7 +128,7 @@ public class Controller {
                 LogManager.addCommandsLogfileComment((String)returnErrorVector.get(i));
                 System.err.println(returnErrorVector.get(i));
             }
-        }    	
+        }
     }
 
     static public boolean createdSubDirectory(String dir) {
@@ -152,11 +152,11 @@ public class Controller {
             Informer.showErrorMessage(message, title);
             errorShown = true;
         }
-                
+
         if ( SystemManager.exists_directory(testDir.getPath()) ) {
             testDir.delete();
         }
-        
+
         return createdDirectory;
     }
 
@@ -170,16 +170,16 @@ public class Controller {
             // title = ResourceManager.getString("String_Error");
             // Informer.showErrorMessage(message, title);
         }
-        
+
         if ( ! createdDirectory ) {
             String message = ResourceManager.getString("String_ChooseDirectory_No_Success") + ": " + dir;
             String title = ResourceManager.getString("String_Error");
             Informer.showErrorMessage(message, title);
         }
-        
+
         return createdDirectory;
     }
-    
+
     static public boolean reducedRootWritePrivileges() {
         Vector vec = new Vector();
         File dir = new File("/usr");
@@ -192,7 +192,7 @@ public class Controller {
         // Check for zones. If "zonename" is successful and the name is not "global",
         // this is a "sparse zone".
         // Alternative: Simply always check, if root has write access in selected directories.
-        
+
         for (int i = 0; i < vec.size(); i++) {
             File directory = (File)vec.get(i);
             if ( directory.exists() ) {
@@ -206,32 +206,32 @@ public class Controller {
                     restrictedWritePrivilges = true;
                     System.err.println("Restricted Root privileges. No write access in " + directory.getPath());
                     break;
-                } 
+                }
             }
         }
-    	
+
         return restrictedWritePrivilges;
     }
-    
+
     static public void checkForNewerVersion(InstallData installData) {
         LogManager.setCommandsHeaderLine("Checking change installation");
         InstallChangeCtrl.checkInstallChange(installData);
-                
+
         if ( installData.newerVersionExists() ) {
             // Inform user about a newer version installed
             SetupDataProvider.setNewMacro("DIR", installData.getInstallDefaultDir()); // important for string replacement
 
             System.err.println("Error: A newer version is already installed in " + installData.getInstallDefaultDir() + " !");
-            String message1 = ResourceManager.getString("String_Newer_Version_Installed_Found") 
+            String message1 = ResourceManager.getString("String_Newer_Version_Installed_Found")
                             + "\n" + installData.getInstallDefaultDir() + "\n";
             String message2 = ResourceManager.getString("String_Newer_Version_Installed_Remove");
             String message = message1 + "\n" + message2;
             String title = ResourceManager.getString("String_Error");
             Informer.showErrorMessage(message, title);
-            System.exit(1);                   
+            System.exit(1);
         }
     }
-    
+
     static public void checkForUidFile(InstallData installData) {
         // check existence of getuid.so
         File getuidFile = Controller.findUidFile(installData);
@@ -258,12 +258,12 @@ public class Controller {
 
             if ( getuidpath != null ) {
                 getuidFile = new File(getuidpath);
-                
+
                 if (( getuidFile.isDirectory() ) && ( ! getuidFile.isFile() )) {
                     // Testing, if GETUID_PATH only contains the path, not the filename
                     String defaultfilename = "getuid.so";
                     getuidFile = new File(getuidpath, defaultfilename);
-                    
+
                     if ( ! getuidFile.exists() ) {
                         getuidFile = null;
                     }
@@ -280,7 +280,7 @@ public class Controller {
         } else {
             getuidFile = new File(data.getGetUidPath());
         }
-        
+
         return getuidFile;
     }
 

@@ -35,7 +35,7 @@ public class State
     implements Comparable<State>
 {
     /** Create a new state from a basename and an optional suffix.
-     * 
+     *
      *  Don't call this constructor directly.  Use methods in StateContext instead.
      *  They ensure that states are unique per context.
      */
@@ -52,18 +52,18 @@ public class State
         mbIsAccepting = false;
         maTextType = null;
     }
-    
-    
-    
-    
+
+
+
+
     State Clone (final StateContext aContext)
     {
         return aContext.GetOrCreateState(maBasename, msSuffix);
     }
-    
-    
-    
-    
+
+
+
+
     static String GetStateName (
         final QualifiedName aBasename,
         final String sSuffix)
@@ -73,26 +73,26 @@ public class State
         else
             return aBasename.GetStateName()+"_"+sSuffix;
     }
-    
 
-    
-    
+
+
+
     public String GetFullname ()
     {
         return msFullname;
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName GetBasename ()
     {
         return maBasename;
     }
 
 
-    
-    
+
+
     /** Return a qualified name that contains the suffix.
      *  This is typically only used for sorting type names.
      */
@@ -106,91 +106,91 @@ public class State
                 : maBasename.GetLocalPart());
     }
 
-    
-    
+
+
 
     public String GetSuffix ()
     {
         return msSuffix;
     }
 
-    
-    
-    
+
+
+
     public void AddTransition (final Transition aTransition)
     {
         assert(this == aTransition.GetStartState());
         maTransitions.add(aTransition);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<Transition> GetTransitions()
     {
         return maTransitions;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetTransitionCount ()
     {
         return maTransitions.size();
     }
 
-    
-    
-    
+
+
+
     public void AddEpsilonTransition (final EpsilonTransition aTransition)
     {
         assert(this == aTransition.GetStartState());
         maEpsilonTransitions.add(aTransition);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<EpsilonTransition> GetEpsilonTransitions()
     {
         return maEpsilonTransitions;
     }
-    
-    
-    
-    
+
+
+
+
     public void AddSkipData (final SkipData aSkipData)
     {
         maSkipData.add(aSkipData);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<SkipData> GetSkipData ()
     {
         return maSkipData;
     }
-    
-    
-    
+
+
+
 
     public void SetIsAccepting ()
     {
         mbIsAccepting = true;
     }
-    
-    
-    
-    
+
+
+
+
     public boolean IsAccepting ()
     {
         return mbIsAccepting;
     }
-    
-    
-    
-    
+
+
+
+
     /** The basename is the primary sort key.  The suffix is the secondary key.
      */
     @Override
@@ -210,27 +210,27 @@ public class State
         }
         return nResult;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetTextType (final INode aTextType)
     {
         assert(maTextType==null);
         maTextType = aTextType;
     }
 
-    
-    
-    
+
+
+
     public INode GetTextType ()
     {
         return maTextType;
     }
 
-    
-    
-    
+
+
+
     public void CopyFrom (final State aOther)
     {
         if (aOther.IsAccepting())
@@ -240,18 +240,18 @@ public class State
         SetTextType(aOther.GetTextType());
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return msFullname;
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maBasename;
     private final String msSuffix;
     private final String msFullname;

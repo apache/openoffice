@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ import com.sun.star.table.XCell;
 
 /**
  *  Check the cell background color and font color setting can be applied and saved
- * 
+ *
  */
 @RunWith(value = Parameterized.class)
 public class CellEffectUnderline {
@@ -62,12 +62,12 @@ public class CellEffectUnderline {
 	private int inputStyle;
 	private int inputColor;
 	private String fileType;
-	
+
 	private static final UnoApp unoApp = new UnoApp();
-	
+
 	XComponent scComponent = null;
 	XSpreadsheetDocument scDocument = null;
-	
+
 	@Parameters
 	public static Collection<Object[]> data() throws Exception {
 		String[] typeList = {"CharUnderline", "CharUnderlineHasColor", "CharUnderlineColor"};
@@ -92,7 +92,7 @@ public class CellEffectUnderline {
 			{16, list[16], typeList, 16, list[16], "ods"}, //BOLDDASHDOT 16
 			{17, list[17], typeList, 17, list[17], "ods"}, //BOLDDASHDOTDOT 17
 			{18, list[18], typeList, 18, list[18], "ods"}, //BOLDWAVE = 18
-			
+
 			{0, list[0], typeList, 0, list[0], "xls"}, //NONE 0
 			{1, list[1], typeList, 1, list[1], "xls"}, //SIGNLE 1
 			{2, list[2], typeList, 2, list[2], "xls"}, //DOUBLE 2
@@ -111,10 +111,10 @@ public class CellEffectUnderline {
 			{1, list[15], typeList, 15, list[15], "xls"}, //BOLDLONGDASH 15
 			{1, list[16], typeList, 16, list[16], "xls"}, //BOLDDASHDOT 16
 			{1, list[17], typeList, 17, list[17], "xls"}, //BOLDDASHDOTDOT 17
-			{1, list[18], typeList, 18, list[18], "xls"} //BOLDWAVE = 18		
+			{1, list[18], typeList, 18, list[18], "xls"} //BOLDWAVE = 18
 		});
 	}
-	
+
 	public CellEffectUnderline(int expectedStyle, int expectedColor, String[] inputType, int inputStyle, int inputColor, String fileType) {
 		this.expectedLine = expectedStyle;
 		this.expectedColor = expectedColor;
@@ -123,8 +123,8 @@ public class CellEffectUnderline {
 		this.inputColor = inputColor;
 		this.fileType = fileType;
 	}
-	
-	
+
+
 	@Before
 	public void setUp() throws Exception {
 		scComponent = unoApp.newDocument("scalc");
@@ -134,9 +134,9 @@ public class CellEffectUnderline {
 	@After
 	public void tearDown() throws Exception {
 		unoApp.closeDocument(scComponent);
-		
+
 	}
-	
+
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
 		unoApp.start();
@@ -145,9 +145,9 @@ public class CellEffectUnderline {
 	@AfterClass
 	public static void tearDownConnection() throws InterruptedException, Exception {
 		unoApp.close();
-		SCUtil.clearTempDir();	
+		SCUtil.clearTempDir();
 	}
-	
+
 	/**
 	 * Check the cell underline style and underline color
 	 * 1. Create a spreadsheet file.
@@ -167,13 +167,13 @@ public class CellEffectUnderline {
 		boolean[] hasColor = new boolean[cellNum];
 		int[] colorResults = new int[cellNum];
 		CellInfo cInfo = TestUtil.randCell(100, 32768);
-		
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		for (int i = 0; i < cellNum; i++) {
 			cells[i] = sheet.getCellByPosition(cInfo.getCol(), cInfo.getRow() + i);
 		}
-		
+
 		cells[0].setValue(inputColor);
 		SCUtil.setTextToCell(cells[1], inputType[0]);
 		cells[2].setFormula("=\"ABC\"");
@@ -184,13 +184,13 @@ public class CellEffectUnderline {
 			if (inputStyle > 0) {
 				SCUtil.setCellProperties(cells[i], inputType[1], true);
 				SCUtil.setCellProperties(cells[i], inputType[2], inputColor);
-			}						
+			}
 		}
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		for (int i = 0; i < cellNum; i++) {
 			cells[i] = sheet.getCellByPosition(cInfo.getCol(), cInfo.getRow() + i);
 			styleResults[i] = ((Short) SCUtil.getCellProperties(cells[i], inputType[0])).shortValue();
@@ -206,15 +206,15 @@ public class CellEffectUnderline {
 			if (inputStyle > 0) {
 				if( fileType.equalsIgnoreCase("xls") || fileType.equalsIgnoreCase("xlt")) {
 					assertFalse("Incorrect cell underline has color setting(" + inputType[1] + ") value got in ." + fileType + " file.", hasColor[i]);
-				} 
+				}
 				else {
 					assertTrue("Incorrect cell underline has color setting(" + inputType[1] + ") value got in ." + fileType + " file.", hasColor[i]);
 					assertEquals("Incorrect cell underline color(" + inputType[2] + ") value got in ." + fileType + " file.", expectedColor, colorResults[i], 0);
 				}
-				
+
 			}
 		}
-			
+
 	}
 
 }

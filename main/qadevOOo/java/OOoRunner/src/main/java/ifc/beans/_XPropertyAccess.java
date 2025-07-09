@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,12 +42,12 @@ import lib.StatusException;
  * @see com.sun.star.beans.XPropertyAccess
  */
 public class _XPropertyAccess extends MultiMethodTest {
-    
+
     /**
      * oObj filled by MultiMethodTest
      */
     public XPropertyAccess oObj = null;// oObj filled by MultiMethodTest
-    
+
     /**
      * object relation X<CODE>PropertyAccess.propertyToChange</CODE><br>
      * This relation must be filled from the module. It contains a property which must
@@ -55,7 +55,7 @@ public class _XPropertyAccess extends MultiMethodTest {
      * <CODE>setPropertyValues()</CODE>
      */
     public PropertyValue propertyToChange = null;
-    
+
     /**
      * checks if the object relation <CODE>XPropertyAccess.propertyToChange</CODE>
      * is available
@@ -66,18 +66,18 @@ public class _XPropertyAccess extends MultiMethodTest {
             throw new StatusException(Status.failed("Object relation 'XPropertyAccess.propertyToChange' is null"));
         }
     }
-    
+
     /**
      * Test calls the method and checks if the returned sequence contains a property which is named
      * in the object relation <code>XPropertyAccess.propertyToChange</code>.
      */
     public void _getPropertyValues() {
         PropertyValue[] properties = oObj.getPropertyValues();
-        
+
         boolean ok = true;
-        
+
         if (properties != null){
-            
+
             boolean found = false;
             for (int i=0; i < properties.length; i++){
                 if (properties[i].Name.equals(propertyToChange.Name)) found = true;
@@ -86,16 +86,16 @@ public class _XPropertyAccess extends MultiMethodTest {
                 log.println("ERROR: could not find desired property '"+ propertyToChange.Name+"'");
                 ok=false;
             }
-            
+
         } else {
             log.println("ERROR: the method returned NULL");
             ok =false;
         }
-        
+
         tRes.tested("getPropertyValues()", ok );
         return;
     }
-    
+
     /**
      * Test calls the method and checks if:
      * <ul>
@@ -108,18 +108,18 @@ public class _XPropertyAccess extends MultiMethodTest {
      * </ul>
      */
     public void _setPropertyValues(){
-        
+
         boolean ok = true;
         boolean test = true;
         boolean exp = false;
-        
+
         try {
             PropertyValue[] newProps = new PropertyValue[1];
             newProps[0] = propertyToChange;
-            
+
             log.println("try to set property values given by object relation 'XPropertyAccess.propertyToChange'...");
             oObj.setPropertyValues(newProps);
-            
+
         } catch (UnknownPropertyException ex) {
             log.println("ERROR: Exception was thrown while trying to set property value: " +
                 ex.toString());
@@ -137,11 +137,11 @@ public class _XPropertyAccess extends MultiMethodTest {
                 ex.toString());
             test = false;
         }
-        
+
         if ( test){
             log.println("... OK");
         }
-        
+
         ok &= test;
         test = false;
         exp = false;
@@ -172,29 +172,29 @@ public class _XPropertyAccess extends MultiMethodTest {
                 ex.toString());
             exp = true;
         }
-        
+
         if (! exp){
             log.println("FAILED: expected exception 'UnknownPropertyException' was not thrown");
         } else {
             if (test) log.println("... OK");
         }
-        
+
         ok &= test;
         test = false;
         exp = false;
         try {
-            
+
             log.println("try to set values with invalid property name. " +
                 "Expect 'com.sun.star.beans.UnknownPropertyException'...");
-            
+
             PropertyValue[] newProps = new PropertyValue[1];
             PropertyValue newProp = new PropertyValue();
             newProp.Name = "XPropertyAccess.InvalidPropertyName";
             newProp.Value = "invalid property";
             newProps[0] = newProp;
-            
+
             oObj.setPropertyValues(newProps);
-            
+
         } catch (WrappedTargetException ex) {
             log.println("ERROR: unexpected exception was thrown while trying to set invalid value: " +
                 ex.toString());
@@ -213,18 +213,18 @@ public class _XPropertyAccess extends MultiMethodTest {
             exp = true;
             test = true;
         }
-        
+
         ok &= test;
-        
+
         if (! exp){
             log.println("FAILED: expected exception 'UnknownPropertyException' was not thrown");
         } else {
             if (test) log.println("... OK");
         }
-        
+
         tRes.tested("setPropertyValues()", ok);
         return;
-        
+
     }
-    
+
 }    /// finish class XPropertyAccess

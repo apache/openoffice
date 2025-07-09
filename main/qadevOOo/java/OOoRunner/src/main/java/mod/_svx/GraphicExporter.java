@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -120,7 +120,7 @@ public class GraphicExporter extends TestCase {
      *   </li>
      * </ul>
      */
-    protected TestEnvironment createTestEnvironment(TestParameters tParam, 
+    protected TestEnvironment createTestEnvironment(TestParameters tParam,
                                                     PrintWriter log) {
         XInterface oObj = null;
         XShape oShape = null;
@@ -142,7 +142,7 @@ public class GraphicExporter extends TestCase {
         // create testobject here
         SOfficeFactory SOF = SOfficeFactory.getFactory(
                                      (XMultiServiceFactory) tParam.getMSF());
-        oShape = SOF.createShape(xDrawDoc, 5000, 5000, 1500, 1000, 
+        oShape = SOF.createShape(xDrawDoc, 5000, 5000, 1500, 1000,
                                  "GraphicObject");
         DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc, 0)).add(oShape);
 
@@ -151,10 +151,10 @@ public class GraphicExporter extends TestCase {
         XComponent xComp = null;
 
         try {
-            oShapeProps.setPropertyValue("GraphicURL", 
+            oShapeProps.setPropertyValue("GraphicURL",
                                          util.utils.getFullTestURL(
                                                  "space-metal.jpg"));
-            xComp = (XComponent) UnoRuntime.queryInterface(XComponent.class, 
+            xComp = (XComponent) UnoRuntime.queryInterface(XComponent.class,
                                                            oShape);
 
             XExporter xEx = (XExporter) UnoRuntime.queryInterface(
@@ -176,7 +176,7 @@ public class GraphicExporter extends TestCase {
 
         final URL aURL = new URL();
         aURL.Complete = util.utils.getOfficeTemp(
-                                (XMultiServiceFactory) tParam.getMSF()) + 
+                                (XMultiServiceFactory) tParam.getMSF()) +
                         "picture.jpg";
 
         final XSimpleFileAccess fAcc;
@@ -200,7 +200,7 @@ public class GraphicExporter extends TestCase {
         log.println("ImplName " + util.utils.getImplName(oObj));
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        tEnv.addObjRelation("MediaDescriptor", 
+        tEnv.addObjRelation("MediaDescriptor",
                             XMLTools.createMediaDescriptor(
                                     new String[] {
             "FilterName", "URL", "MediaType"
@@ -213,7 +213,7 @@ public class GraphicExporter extends TestCase {
         tEnv.addObjRelation("NoFilter.cancel()", new Boolean(true));
 
         final String hideMode = (String) tParam.get("soapi.test.hidewindows");
-        tEnv.addObjRelation("XFilter.Checker", 
+        tEnv.addObjRelation("XFilter.Checker",
                             new ifc.document._XFilter.FilterChecker() {
             public boolean checkFilter() {
                 try {

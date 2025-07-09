@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,9 +42,9 @@ import com.sun.star.uno.AnyConverter;
 
 public class Clipboard
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
-		try 
+		try
 		{
             // get the remote office context. If necessary a new office
             // process is started
@@ -71,13 +71,13 @@ public class Clipboard
             xDoc.getText().setString("In the first step, paste the current content of the clipboard in the document!\nThe text \"Hello world!\" shall be insert at the current cursor position below.\n\nIn the second step, please select some words and put it into the clipboard! ...\n\nCurrent clipboard content = ");
 
             // ensure that the document content is optimal visible
-            com.sun.star.frame.XModel xModel = 
+            com.sun.star.frame.XModel xModel =
                 (com.sun.star.frame.XModel)UnoRuntime.queryInterface(
                     com.sun.star.frame.XModel.class, xDoc);
             // get the frame for later usage
             com.sun.star.frame.XFrame xFrame =
                 xModel.getCurrentController().getFrame();
-            
+
             com.sun.star.view.XViewSettingsSupplier xViewSettings =
                 (com.sun.star.view.XViewSettingsSupplier)UnoRuntime.queryInterface(
                     com.sun.star.view.XViewSettingsSupplier.class,
@@ -86,7 +86,7 @@ public class Clipboard
                 "ZoomType", new Short((short)0));
             }
             // test document will be closed later
-            
+
 			Object oClipboard = xServiceManager.createInstanceWithContext(
                 "com.sun.star.datatransfer.clipboard.SystemClipboard",
                 xOfficeContext);
@@ -102,27 +102,27 @@ public class Clipboard
 				UnoRuntime.queryInterface(XClipboardNotifier.class, oClipboard);
 
 			ClipboardListener aClipListener= new ClipboardListener();
-			
+
 			xClipNotifier.addClipboardListener(aClipListener);
 
             // Read ClipBoard
-            readClipBoard(xClipboard);          
+            readClipBoard(xClipboard);
 
 			//---------------------------------------------------
 			// becoming a clipboard owner
 			//---------------------------------------------------
-			
+
 			System.out.println("Becoming a clipboard owner...");
 			System.out.println("");
 
 			ClipboardOwner aClipOwner = new ClipboardOwner();
 			xClipboard.setContents(new TextTransferable("Hello World!"), aClipOwner);
-			int iFirst = 0; 
-            
+			int iFirst = 0;
+
 			while (aClipOwner.isClipboardOwner())
 			{
 				if (iFirst != 2) {
-					if (iFirst == 1) {                    
+					if (iFirst == 1) {
 						System.out.println("Change clipboard ownership by putting something into the clipboard!\n");
 						System.out.print("Still clipboard owner...");
 					} else {
@@ -136,8 +136,8 @@ public class Clipboard
 			}
 
             // Read ClipBoard again
-            readClipBoard(xClipboard);          
-            
+            readClipBoard(xClipboard);
+
 			//---------------------------------------------------
 			// unregistering as clipboard listener
 			//---------------------------------------------------
@@ -154,10 +154,10 @@ public class Clipboard
             {
                 xComponent.dispose();
             }
-            
+
 			System.exit(0);
 		}
-		catch( Exception ex ) 
+		catch( Exception ex )
 		{
             ex.printStackTrace();
 		}
@@ -169,42 +169,42 @@ public class Clipboard
         //---------------------------------------------------
         // get a list of formats currently on the clipboard
         //---------------------------------------------------
-        
+
         XTransferable xTransferable = xClipboard.getContents();
-        
+
         DataFlavor[] aDflvArr = xTransferable.getTransferDataFlavors();
-        
+
         // print all available formats
-        
+
         System.out.println("Reading the clipboard...");
         System.out.println("Available clipboard formats:");
-            
+
         DataFlavor aUniFlv = null;
-        
+
         for (int i=0;i<aDflvArr.length;i++)
         {
-            System.out.println( "MimeType: " + 
-                                aDflvArr[i].MimeType + 
-                                " HumanPresentableName: " + 
-                                aDflvArr[i].HumanPresentableName );				
+            System.out.println( "MimeType: " +
+                                aDflvArr[i].MimeType +
+                                " HumanPresentableName: " +
+                                aDflvArr[i].HumanPresentableName );
 
             // if there is the format unicode text on the clipboard save the
             // corresponding DataFlavor so that we can later output the string
-            
+
             if ( aDflvArr[i].MimeType.equals("text/plain;charset=utf-16") )
-            {					
+            {
                 aUniFlv = aDflvArr[i];
             }
         }
-        
+
         System.out.println("");
-        
-        try	
+
+        try
         {
             if (aUniFlv != null)
             {
                 System.out.print("Unicode text on the clipboard ...\nYour selected text \"");
-                Object aData = xTransferable.getTransferData(aUniFlv);					
+                Object aData = xTransferable.getTransferData(aUniFlv);
                 System.out.println(AnyConverter.toString(aData)
                                    + "\" is now in the clipboard.\n");
             }

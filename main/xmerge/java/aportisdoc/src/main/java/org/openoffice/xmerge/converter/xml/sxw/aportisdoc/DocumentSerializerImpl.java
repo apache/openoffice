@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -122,7 +122,7 @@ public final class DocumentSerializerImpl
         //
         Record records[] = encoder.getRecords();
         ConvertData cd = new ConvertData();
-        
+
         PalmDocument palmDoc = new PalmDocument(docName,
             DocConstants.CREATOR_ID, DocConstants.TYPE_ID,
             0, PalmDB.PDB_HEADER_ATTR_BACKUP, records);
@@ -256,7 +256,7 @@ public final class DocumentSerializerImpl
 
 
     /**
-     *  This method traverses an <code>Element</code> <code>Node</code> 
+     *  This method traverses an <code>Element</code> <code>Node</code>
      *  within a paragraph.
      *
      *  @param  node  <code>Element</code> <code>Node</code> within a
@@ -516,7 +516,7 @@ public final class DocumentSerializerImpl
 
     /**
      *  Logs debug messages.
-     * 
+     *
      *  @param  str  The debug message.
      */
     private void log(String str) {

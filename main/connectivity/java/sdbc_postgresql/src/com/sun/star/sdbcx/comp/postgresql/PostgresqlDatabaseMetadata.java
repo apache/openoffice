@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package com.sun.star.sdbcx.comp.postgresql;
@@ -38,7 +38,7 @@ public class PostgresqlDatabaseMetadata extends WeakBase implements XDatabaseMet
     private XDatabaseMetaData impl;
     private XConnection connection;
     private String url;
-    
+
     public PostgresqlDatabaseMetadata(XDatabaseMetaData impl, XConnection connection, String url) {
         this.impl = impl;
         this.connection = connection;
@@ -112,13 +112,13 @@ public class PostgresqlDatabaseMetadata extends WeakBase implements XDatabaseMet
             int charOctetLength = row.getInt(16);
             int ordinalPosition = row.getInt(17);
             String isNullable = row.getString(18);
-            
+
             if (dataType == DataType.BIT) {
                 if (typeName.equals("bool")) {
                     dataType = DataType.BOOLEAN;
                 }
             }
-            
+
             ORowSetValue[] rowOut = new ORowSetValue[18];
             rowOut[0] = new ORowSetValue(tableCat);
             rowOut[1] = new ORowSetValue(tableSchem);
@@ -362,7 +362,7 @@ public class PostgresqlDatabaseMetadata extends WeakBase implements XDatabaseMet
             int sqlDataType = row.getInt(16);
             int sqlDateTimeSub = row.getInt(17);
             int numPrecRadix = row.getInt(18);
-            
+
             if (dataType == DataType.BIT) {
                 if (typeName.equals("bit")) {
                     // but the editor sees multi-bit columns as single bit

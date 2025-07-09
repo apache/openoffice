@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ import com.sun.star.util.Date;
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.container.XNameAccess;
 import com.sun.star.sdbc.*;
-    
+
 public class Sales
 {
 	private XConnection con;
@@ -71,7 +71,7 @@ public class Sales
 	public void insertDataIntoSales() throws com.sun.star.uno.Exception
 	{
 		XStatement stmt = con.createStatement();
-		stmt.executeUpdate("INSERT INTO SALES " + 
+		stmt.executeUpdate("INSERT INTO SALES " +
 				"VALUES (1, '100', '1','Linux','2001-02-12',15)");
 		stmt.executeUpdate("INSERT INTO SALES " +
 				"VALUES (2, '101', '2','Beef','2001-10-18',15.78)");
@@ -84,7 +84,7 @@ public class Sales
 	{
 		XStatement stmt = con.createStatement();
 		String updateString =	"UPDATE SALES " +
-								"SET PRICE = 30 " + 
+								"SET PRICE = 30 " +
 								"WHERE SALENR = 1";
 		stmt.executeUpdate(updateString);
 	}

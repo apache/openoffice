@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 public class FloatNumber extends CellValue {
 
     protected byte[] num  = new byte[8];
-    
+
 	/**
  	 * Constructs a pocket Excel Document from the
  	 * <code>InputStream</code> and assigns it the document name passed in
@@ -49,11 +49,11 @@ public class FloatNumber extends CellValue {
 	}
 
 	/**
- 	 * Constructs a <code>FloatNumber</code> using specified attributes 
+ 	 * Constructs a <code>FloatNumber</code> using specified attributes
 	 *
 	 * @param row row number
-	 * @param column column number 
-	 * @param cellContents contents of the cell 
+	 * @param column column number
+	 * @param cellContents contents of the cell
 	 * @param ixfe font index
  	 */
     public FloatNumber(int row, int column, String cellContents, int ixfe) throws IOException {
@@ -66,7 +66,7 @@ public class FloatNumber extends CellValue {
 	}
 
     /**
-	 * Get the hex code for this particular <code>BIFFRecord</code> 
+	 * Get the hex code for this particular <code>BIFFRecord</code>
 	 *
 	 * @return the hex code for <code>FloatNumber</code>
 	 */
@@ -77,40 +77,40 @@ public class FloatNumber extends CellValue {
     /**
 	 * Reads a<code>FloatNumber</code> from the specified <code>InputStream</code>
 	 *
-	 * @param input the <code>InputStram</code> to read from  
-	 */    
+	 * @param input the <code>InputStram</code> to read from
+	 */
     public int read(InputStream input) throws IOException {
-	
+
 		int numOfBytesRead = super.read(input);
 
-        numOfBytesRead += input.read(num);    
-        
+        numOfBytesRead += input.read(num);
+
         Debug.log(Debug.TRACE," num : " + getString());
         return numOfBytesRead;
     }
-    
+
     public void write(OutputStream output) throws IOException {
 
     	output.write(getBiffType());
-		
+
 		super.write(output);
 
 	    output.write(num);
 
 		Debug.log(Debug.TRACE,"Writing FloatNumber record");
     }
-   
+
 
     /**
-	 * Gets the numerical value the cell represents 
+	 * Gets the numerical value the cell represents
 	 *
-	 * @return the <code>String</code> representing a double value 
+	 * @return the <code>String</code> representing a double value
 	 */
 	public String getString() throws IOException {
 
 		double value = EndianConverter.readDouble(num);
 		Double myDo = new Double(value);
-		return myDo.toString();	
+		return myDo.toString();
 	}
 
 }

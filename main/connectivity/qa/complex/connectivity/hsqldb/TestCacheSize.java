@@ -18,9 +18,9 @@
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL HSQL DEVELOPMENT GROUP, HSQLDB.ORG, 
- * OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
- * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+ * ARE DISCLAIMED. IN NO EVENT SHALL HSQL DEVELOPMENT GROUP, HSQLDB.ORG,
+ * OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
  * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
  * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
  * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
@@ -76,7 +76,7 @@ public class TestCacheSize {
 
     // frequent reporting of progress
     boolean reportProgress = false;
-    
+
     XMultiServiceFactory servicefactory = null;
 
     // type of the big table {MEMORY | CACHED | TEXT}
@@ -114,7 +114,7 @@ public class TestCacheSize {
     XDataSource ds;
     XDriver drv;
     com.sun.star.beans.PropertyValue[] info;
-    
+
     public TestCacheSize(XMultiServiceFactory _xmulti,com.sun.star.beans.PropertyValue[] _info,XDriver _drv){
         servicefactory = _xmulti;
         drv = _drv;
@@ -124,9 +124,9 @@ public class TestCacheSize {
     public void setURL(String _url){
         url = _url;
     }
-    
+
     public void setUp() {
-        
+
         user     = "sa";
         password = "";
 
@@ -137,7 +137,7 @@ public class TestCacheSize {
             //Class.forName("org.hsqldb.jdbcDriver");
 
             if (filedb) {
-                
+
                 cConnection = drv.connect(url,info);
                 sStatement = cConnection.createStatement();
 

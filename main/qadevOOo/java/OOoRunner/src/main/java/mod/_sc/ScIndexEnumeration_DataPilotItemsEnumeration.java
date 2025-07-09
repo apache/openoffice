@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,7 +123,7 @@ public class ScIndexEnumeration_DataPilotItemsEnumeration
     * @see com.sun.star.sheet.XDataPilotTablesSupplier
     * @see com.sun.star.sheet.XDataPilotDescriptor
     */
-    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                                  PrintWriter log) {
         XInterface oObj = null;
 
@@ -156,10 +156,10 @@ public class ScIndexEnumeration_DataPilotItemsEnumeration
 
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class), 
+                             new Type(XSpreadsheet.class),
                              oIndexAccess.getByIndex(0));
             oSheet2 = (XSpreadsheet) AnyConverter.toObject(
-                              new Type(XSpreadsheet.class), 
+                              new Type(XSpreadsheet.class),
                               oIndexAccess.getByIndex(1));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace();
@@ -219,7 +219,7 @@ public class ScIndexEnumeration_DataPilotItemsEnumeration
         log.println("Getting test objects");
 
         XDataPilotTablesSupplier DPTS = (XDataPilotTablesSupplier) UnoRuntime.queryInterface(
-                                                XDataPilotTablesSupplier.class, 
+                                                XDataPilotTablesSupplier.class,
                                                 oSheet);
         XDataPilotTables DPT = DPTS.getDataPilotTables();
         XDataPilotDescriptor DPDsc = DPT.createDataPilotDescriptor();
@@ -240,9 +240,9 @@ public class ScIndexEnumeration_DataPilotItemsEnumeration
         }
 
         try {
-            fieldPropSet.setPropertyValue("Function", 
+            fieldPropSet.setPropertyValue("Function",
                                           com.sun.star.sheet.GeneralFunction.SUM);
-            fieldPropSet.setPropertyValue("Orientation", 
+            fieldPropSet.setPropertyValue("Orientation",
                                           com.sun.star.sheet.DataPilotFieldOrientation.DATA);
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace();
@@ -283,14 +283,14 @@ public class ScIndexEnumeration_DataPilotItemsEnumeration
             throw new StatusException("Couldn't get data pilot field", e);
         }
 
-        log.println("Creating object - " + 
+        log.println("Creating object - " +
                     ((oObj == null) ? "FAILED" : "OK"));
 
         XDataPilotField xDataPilotField = (XDataPilotField) UnoRuntime.queryInterface(
                                                   XDataPilotField.class, oObj);
 
         XEnumerationAccess xEnumerationAccess = (XEnumerationAccess) UnoRuntime.queryInterface(
-                                                        XEnumerationAccess.class, 
+                                                        XEnumerationAccess.class,
                                                         xDataPilotField.getItems());
 
         oObj = xEnumerationAccess.createEnumeration();
@@ -326,7 +326,7 @@ public class ScIndexEnumeration_DataPilotItemsEnumeration
                 return;
             }
 
-            XNamed named = (XNamed) UnoRuntime.queryInterface(XNamed.class, 
+            XNamed named = (XNamed) UnoRuntime.queryInterface(XNamed.class,
                                                               field);
             String name = named.getName();
 
@@ -341,35 +341,35 @@ public class ScIndexEnumeration_DataPilotItemsEnumeration
                 try {
                     switch (cnt % 5) {
                     case 0:
-                        props.setPropertyValue("Orientation", 
+                        props.setPropertyValue("Orientation",
                                                DataPilotFieldOrientation.COLUMN);
                         log.println("  Column");
 
                         break;
 
                     case 1:
-                        props.setPropertyValue("Orientation", 
+                        props.setPropertyValue("Orientation",
                                                DataPilotFieldOrientation.ROW);
                         log.println("  Row");
 
                         break;
 
                     case 2:
-                        props.setPropertyValue("Orientation", 
+                        props.setPropertyValue("Orientation",
                                                DataPilotFieldOrientation.DATA);
                         log.println("  Data");
 
                         break;
 
                     case 3:
-                        props.setPropertyValue("Orientation", 
+                        props.setPropertyValue("Orientation",
                                                DataPilotFieldOrientation.HIDDEN);
                         log.println("  Hidden");
 
                         break;
 
                     case 4:
-                        props.setPropertyValue("Orientation", 
+                        props.setPropertyValue("Orientation",
                                                DataPilotFieldOrientation.PAGE);
                         log.println("  Page");
 

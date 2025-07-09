@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,10 +67,10 @@ public final class PluginFactoryImpl extends PluginFactory
     implements DocumentDeserializerFactory, DocumentSerializerFactory, DocumentMergerFactory
 {
 
-	public PluginFactoryImpl (ConverterInfo ci) { 
+	public PluginFactoryImpl (ConverterInfo ci) {
 	       super(ci);
 	}
-    
+
     /** ConverterCapabilities object for this type of conversion. */
     private final static ConverterCapabilities converterCap =
         new ConverterCapabilitiesImpl();
@@ -86,7 +86,7 @@ public final class PluginFactoryImpl extends PluginFactory
      *
      *  @return  A <code>DocumentSerializerImpl</code> object.
      */
-    public DocumentSerializer createDocumentSerializer(Document doc) {	
+    public DocumentSerializer createDocumentSerializer(Document doc) {
         return new DocumentSerializerImpl(this,doc);
     }
 
@@ -94,9 +94,9 @@ public final class PluginFactoryImpl extends PluginFactory
     /**
      *  Returns an instance of <code>DocumentDeserializerImpl</code>,
      *  which is an implementation of the <code>DocumentDeserializer</code>
-     *  interface. 
+     *  interface.
      *
-     *  @param  cd   <code>ConvertData</code> object.               
+     *  @param  cd   <code>ConvertData</code> object.
      *
      *  @return  A DocumentDeserializerImpl object.
      */
@@ -104,9 +104,9 @@ public final class PluginFactoryImpl extends PluginFactory
 
         return new DocumentDeserializerImpl(this,cd);
     }
-    
+
      public org.openoffice.xmerge.Document createDeviceDocument(java.lang.String str, java.io.InputStream inputStream) throws java.io.IOException {
-	    String ext = this.getDeviceFileExtension(); 
+	    String ext = this.getDeviceFileExtension();
 	    DOMDocument domDoc = new DOMDocument(str,ext);
 	    domDoc.read(inputStream);
 	    return domDoc;
@@ -121,7 +121,7 @@ public final class PluginFactoryImpl extends PluginFactory
         doc.read(is);
         return doc;
     }
-    
+
      public Document createOfficeDocument(String name, InputStream is,boolean isZip)
         throws IOException {
 
@@ -132,11 +132,11 @@ public final class PluginFactoryImpl extends PluginFactory
     }
 
     /**
-     *  Returns a <code>String</code> containing the file extension of a 
+     *  Returns a <code>String</code> containing the file extension of a
      *  <code>Document</code>. This method uses a properties file to determine
-     *  a mapping from the device mime in the <code>ConverterInfo</code> to a 
-     *  particular file extension. If a mapping is not specified, the default 
-     *  is ".txt".  
+     *  a mapping from the device mime in the <code>ConverterInfo</code> to a
+     *  particular file extension. If a mapping is not specified, the default
+     *  is ".txt".
      *
      *  @return  <code>String</code>.
      */
@@ -150,24 +150,24 @@ public final class PluginFactoryImpl extends PluginFactory
 	String mimeType = null;
 	ConverterInfo ci = this.getConverterInfo();
 	Enumeration enumerate = ci.getDeviceMime();
-	while (enumerate.hasMoreElements()) {       
+	while (enumerate.hasMoreElements()) {
 	    mimeType= (String) enumerate.nextElement();
 	}
 	try {
 	    props.load(is);
-	    
+
 		 String info = props.getProperty(mimeType);
 		 if (info != null) {
 		     ext = info;
 		 }
 	} catch (Exception e) {
-	    
+
 	    // It is okay for the property file to not exist.
 	    //
 	}
-	return ext;   
+	return ext;
     }
-    
+
     /**
      *  Returns an instance of <code>DocumentMergerImpl</code>,
      *  which is an implementation of the <code>DocumentMerger</code>
@@ -177,7 +177,7 @@ public final class PluginFactoryImpl extends PluginFactory
      *
      *  @return  A DocumentMergerImpl object.
      */
-    public DocumentMerger createDocumentMerger(Document doc) {  
+    public DocumentMerger createDocumentMerger(Document doc) {
 	ConverterCapabilities cc = converterCap;
         DocumentMergerImpl merger = new DocumentMergerImpl(doc, cc);
         return merger;

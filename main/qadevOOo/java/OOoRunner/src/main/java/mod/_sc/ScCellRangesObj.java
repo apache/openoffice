@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -194,7 +194,7 @@ public class ScCellRangesObj extends TestCase {
                 for (int j = 0; j < 5; j++) {
                     oSheet.getCellByPosition(i, j).setFormula("a");
                 }
-            } 
+            }
             for (int i = 0; i < 10; i++) {
                 for (int j = 5; j < 10; j++) {
                     oSheet.getCellByPosition(i, j).setValue(i + j);
@@ -206,7 +206,7 @@ public class ScCellRangesObj extends TestCase {
                 "Exception occurred while filling cells", e);
         }
 
-        
+
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
         // NameReplaceIndex : _XNameReplace
@@ -238,7 +238,7 @@ public class ScCellRangesObj extends TestCase {
         tEnv.addObjRelation("SHEET", oSheet);
         // add expected results for the XCellRangesQuery interface test
         String[]expectedResults = new String[7];
-        expectedResults[_XCellRangesQuery.QUERYCOLUMNDIFFERENCES] = "Sheet1.I7:J8"; 
+        expectedResults[_XCellRangesQuery.QUERYCOLUMNDIFFERENCES] = "Sheet1.I7:J8";
         expectedResults[_XCellRangesQuery.QUERYCONTENTCELLS] = "";
         expectedResults[_XCellRangesQuery.QUERYEMPTYCELLS] = "";
         expectedResults[_XCellRangesQuery.QUERYFORMULACELLS] = "";

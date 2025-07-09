@@ -47,10 +47,10 @@ public class CreatorBase
         msLogIndentation = "";
         maElementSimpleTypes = new HashSet<>();
     }
-    
-    
-    
-    
+
+
+
+
     /** Create a very simple automaton:
      *  a) Its start state is also the accepting state.
      *  b) It does not allow any transitions.
@@ -64,14 +64,14 @@ public class CreatorBase
         aStateContext.GetStartState().SetIsAccepting();
         aStateContext.GetStartState().SetTextType(aSimpleType);
         return new FiniteAutomaton(
-            aStateContext, 
+            aStateContext,
             new Vector<Attribute>(),
             aSimpleType.GetLocation());
     }
-    
-    
-    
-    
+
+
+
+
     protected Vector<Attribute> CollectAttributes (final INode aRoot)
     {
         final Vector<Attribute> aAttributes = new Vector<>();
@@ -81,15 +81,15 @@ public class CreatorBase
         return aAttributes;
     }
 
-    
-    
-    
+
+
+
     protected void AddSkipTransition (
         final State aState,
         final SkipData aSkipData)
     {
         aState.AddSkipData(aSkipData);
-        
+
         if (maLog != null)
         {
             maLog.printf("%sskip state %s\n",
@@ -97,10 +97,10 @@ public class CreatorBase
                 aState.GetFullname());
         }
     }
-    
-    
-    
-    
+
+
+
+
     protected void ProcessAttributes (final INode aNode)
     {
         for (final Attribute aAttribute : new AttributeIterator(aNode, maSchemaBase))
@@ -111,10 +111,10 @@ public class CreatorBase
             maAttributes.add(aAttribute);
         }
     }
-    
-        
 
-    
+
+
+
     protected final SchemaBase maSchemaBase;
     protected final StateContainer maStateContainer;
     protected final Log maLog;
