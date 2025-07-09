@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,19 +45,19 @@ module com { module sun { module star { module awt {
 	@see com::sun::star::accessibility::XAccessibleExtendedComponent
 
 	@since OpenOffice 1.1.2
-*/    
+*/
 published service AccessibleListBox
 {
 	/** This interface gives access to the structural information of a list box:
 
        <ul>
-       <li>Role: The role of a list box is <const 
+       <li>Role: The role of a list box is <const
            scope="com::sun::star::accessibility"
            >AccessibleRole::PANEL</const>.</li>
        <li>Name: The name of a list box is its localized label.</li>
        <li>Description: The description of a list box is its localized
            help text.</li>
-       <li>Children: There exists one child. 
+       <li>Children: There exists one child.
 		   It is of type <type scope="com::sun::star::awt">AccessibleList</type>.</li>
        <li>Parent: The parent is the window that contains the list box.</li>
        <li>Relations: There are no relations.</li>
@@ -66,7 +66,7 @@ published service AccessibleListBox
            <li><const scope="com::sun::star::accessibility"
                >AccessibleStateType::DEFUNC</const>
                is set if the object has already been disposed
-               and subsequent calls to this object result in				
+               and subsequent calls to this object result in
                <type scope="com::sun::star::lang">DisposedException</type>
                exceptions.</li>
            <li><const scope="com::sun::star::accessibility"
@@ -97,7 +97,7 @@ published service AccessibleListBox
 	interface com::sun::star::accessibility::XAccessibleComponent;
 	interface com::sun::star::accessibility::XAccessibleExtendedComponent;
 };
-          
+
 }; }; }; };
 
 #endif

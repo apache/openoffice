@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,12 +46,12 @@ struct PolyStruct2<a> {
     a member1;
     long member2;
 };
- 
+
 struct PolyStruct3<a,b> {
     a member1;
     b member2;
 };
-    
+
 interface XTest {
     boolean test();
 
@@ -70,12 +70,12 @@ interface XTest {
     [oneway] void testOneway();
 
     void testExceptions()
-        raises( com::sun::star::uno::Exception, 
+        raises( com::sun::star::uno::Exception,
                 com::sun::star::lang::ClassNotFoundException);
 
-    
+
     PolyStruct<char,long> testPolyStruct([in] PolyStruct<char, long> val);
- 
+
 
     void inParameters([in] boolean aBool, [in] byte aByte, [in] short aShort,
                       [in] unsigned short aUShort, [in] long aLong, [in] unsigned long aULong,
@@ -94,7 +94,7 @@ interface XTest {
                       [out] com::sun::star::uno::XInterface aXInterface,
                       [out] com::sun::star::lang::XComponent aXComponent,
                       [out] sequence<boolean> seqBool);
-    
+
     void inoutParameters([inout] boolean aBool, [inout] byte aByte, [inout] short aShort,
                          [inout] unsigned short aUShort, [inout] long aLong,
                          [inout] unsigned long aULong,
@@ -125,7 +125,7 @@ interface XTest {
     com::sun::star::uno::XInterface retXInterface();
     com::sun::star::lang::XComponent retXComponent();
     sequence<boolean> retSeqBool();
-    
+
     [attribute] boolean attrBoolean;
     [attribute] byte attrByte;
     [attribute] short attrShort;
@@ -165,7 +165,7 @@ typedef Enum2 Enum;
 typedef Struct1 Struct;
 typedef com::sun::star::uno::XInterface XInterface;
 typedef com::sun::star::uno::XNamingService XNamingService;
-typedef com::sun::star::lang::XComponent XComponent; 
+typedef com::sun::star::lang::XComponent XComponent;
 
 typedef sequence< Boolean > SequenceBoolean;
 typedef sequence< Byte > SequenceByte;
@@ -185,7 +185,7 @@ typedef sequence< Enum > SequenceEnum;
 typedef sequence< Struct > SequenceStruct;
 typedef sequence< XInterface > SequenceXInterface;
 typedef sequence< XNamingService > SequenceXNamingService;
-typedef sequence< XComponent > SequenceXComponent; 
+typedef sequence< XComponent > SequenceXComponent;
 
 struct Struct2 {
     boolean p1;
@@ -408,7 +408,7 @@ service S1: XTest {
         [in] sequence< SequenceHyper > at7,
         [in] sequence< SequenceUnsignedHyper > at8,
         [in] sequence< SequenceFloat > at9,
-        [in] sequence< SequenceDouble > at10, 
+        [in] sequence< SequenceDouble > at10,
         [in] sequence< SequenceChar > at11,
         [in] sequence< SequenceString > at12,
         [in] sequence< SequenceType > at13,

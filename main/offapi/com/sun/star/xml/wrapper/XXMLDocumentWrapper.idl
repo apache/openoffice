@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 //i20156 - new file for xmlsecurity module
 
 /** -- idl definition -- **/
@@ -39,12 +39,12 @@ interface XXMLElementWrapper;
 /**
  * Interface of XML Document Wrapper.
  * <p>
- * When converting SAX events into a DOM tree, this interface is 
- * used to manipulate the DOM data in UNO perspective. 
+ * When converting SAX events into a DOM tree, this interface is
+ * used to manipulate the DOM data in UNO perspective.
  * <p>
  * Every lauguage has its own methods to manipulate its native DOM
  * data structure, this interface provides a common method set which
- * each lauguage have to implement. 
+ * each lauguage have to implement.
  * <p>
  * In another word, this interface wraps language dependent methods,
  * then other component can manipulate DOM data through UNO methods.
@@ -57,11 +57,11 @@ interface XXMLDocumentWrapper : com::sun::star::uno::XInterface
 	 * @return   the current element in the SAX event stream
 	 */
 	XXMLElementWrapper getCurrentElement();
-	
+
 	/**
 	 * Sets the current element.
 	 * <p>
-	 * When the current element is replaced outside of this interface, then 
+	 * When the current element is replaced outside of this interface, then
 	 * uses this method can update the current element pointer.
 	 *
 	 * @param element   the new current element
@@ -75,7 +75,7 @@ interface XXMLDocumentWrapper : com::sun::star::uno::XInterface
 	 * the new current element.
 	 */
 	void removeCurrentElement();
-	
+
 	/**
 	 * Checks whether an element is the current element.
 	 *
@@ -84,11 +84,11 @@ interface XXMLDocumentWrapper : com::sun::star::uno::XInterface
 	 *               <code>false</code> otherwise
 	 */
 	boolean isCurrent([in] XXMLElementWrapper node);
-	
+
 	/**
 	 * Checks whether the current element is empty.
 	 *
-	 * @return   <code>true</code> if the current element is empty, 
+	 * @return   <code>true</code> if the current element is empty,
 	 *           <code>false</code> otherwise
 	 */
 	boolean isCurrentElementEmpty();
@@ -100,7 +100,7 @@ interface XXMLDocumentWrapper : com::sun::star::uno::XInterface
 	 * @return       the name of the element
 	 */
 	string getNodeName([in] XXMLElementWrapper node);
-	
+
 	/**
 	 * Clears all useless element in a branch of the DOM tree along the
 	 * tree order.
@@ -117,7 +117,7 @@ interface XXMLDocumentWrapper : com::sun::star::uno::XInterface
 		[in] XXMLElementWrapper node,
 		[in] sequence< XXMLElementWrapper > reservedDescendants,
 		[in] XXMLElementWrapper stopAtNode);
-		
+
 	/**
 	 * Collapses a tree path
 	 * <p>
@@ -128,7 +128,7 @@ interface XXMLDocumentWrapper : com::sun::star::uno::XInterface
 	 *               path will be collapsed
 	 */
 	void collapse([in] XXMLElementWrapper node);
-		
+
 	/**
 	 * Converts a part of the DOM tree into SAX events.
 	 *
@@ -140,12 +140,12 @@ interface XXMLDocumentWrapper : com::sun::star::uno::XInterface
 	 * @param endNode                 the end point where to stop generating
 	 */
 	void generateSAXEvents(
-		[in] com::sun::star::xml::sax::XDocumentHandler handler, 
-		[in] com::sun::star::xml::sax::XDocumentHandler saxEventKeeperHandler, 
-		[in] XXMLElementWrapper startNode, 
+		[in] com::sun::star::xml::sax::XDocumentHandler handler,
+		[in] com::sun::star::xml::sax::XDocumentHandler saxEventKeeperHandler,
+		[in] XXMLElementWrapper startNode,
 		[in] XXMLElementWrapper endNode)
 		raises(  com::sun::star::xml::sax::SAXException );
-		
+
 	/**
 	 * Converts the whole DOM tree into a SAX event stream.
 	 *

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -98,18 +98,18 @@ published interface XRecursiveCall : com::sun::star::uno::XInterface
 	/***
 	 * @param nToCall If nToCall is 0, the method returns immeadiatly.
 	 *                Otherwise, call the given interface with nToCall -1
-	 * 
+	 *
 	 ***/
 	void callRecursivly( [in] XRecursiveCall xCall , [in] long nToCall );
 };
 
-/** 
+/**
  * Monster test interface to test bridge calls.
  * An implementation of this object has to store given values and return whenever there
  * is an out param or return value.
  */
 published interface XBridgeTestBase : com::sun::star::uno::XInterface
-{	
+{
 	/**
 	 * in parameter test, tests by calls reference also (complex types)
 	 */
@@ -124,10 +124,10 @@ published interface XBridgeTestBase : com::sun::star::uno::XInterface
 							 [in] TestData aStruct );
 	/**
 	 * inout parameter test
-	 * 
+	 *
 	 * @return aStruct. The out parameter contain the values, that were previously set
 	 *         by setValues or (if not called before) default constructed values.
-	 * 
+	 *
 	 */
 	TestData setValues2( [inout] boolean bBool, [inout] char cChar, [inout] byte nByte,
 						 [inout] short nShort, [inout] unsigned short nUShort,
@@ -138,7 +138,7 @@ published interface XBridgeTestBase : com::sun::star::uno::XInterface
 						 [inout] com::sun::star::uno::XInterface xInterface, [inout] any aAny,
 						 [inout] sequence< TestElement > aSequence,
 						 [inout] TestData aStruct );
-	
+
 	/**
 	 * out parameter test
 	 */
@@ -151,7 +151,7 @@ published interface XBridgeTestBase : com::sun::star::uno::XInterface
 						[out] com::sun::star::uno::XInterface xInterface, [out] any aAny,
 						[out] sequence< TestElement > aSequence,
 						[out] TestData aStruct );
-	
+
 	[attribute] boolean					 Bool;
 	[attribute] byte					 Byte;
 	[attribute] char					 Char;
@@ -172,7 +172,7 @@ published interface XBridgeTestBase : com::sun::star::uno::XInterface
 
 
 	/***
-	 * This method returns the parameter value. 
+	 * This method returns the parameter value.
 	 * Method to extensivly test anys.
 	 ****/
 	any transportAny( [in] any value );
@@ -180,7 +180,7 @@ published interface XBridgeTestBase : com::sun::star::uno::XInterface
 	/***
 	 * methods to check sequence of calls. Call call() and callOneway
 	 * in an arbitrary sequence. Increase the callId for every call.
-	 * The testobject sets an error flag. 
+	 * The testobject sets an error flag.
 
 		@see testSequencePassed
 	 ***/
@@ -190,13 +190,13 @@ published interface XBridgeTestBase : com::sun::star::uno::XInterface
 
 	/****
 	 * methods to check, if threads thread identity is holded.
-	 *                  
+	 *
 	 ***/
 	void startRecursiveCall( [in] XRecursiveCall xCall , [in] long nToCall );
 };
 
 
-/** 
+/**
  * Inherting from monster; adds raiseException(), attribute raising RuntimeException.
  */
 published interface XBridgeTest : XBridgeTestBase
@@ -209,7 +209,7 @@ published interface XBridgeTest : XBridgeTestBase
 							 [in] string Message,
 							 [in] com::sun::star::uno::XInterface Context )
 		raises( com::sun::star::lang::IllegalArgumentException );
-	
+
 
 	/**
 	 * Throws runtime exception.
@@ -219,7 +219,7 @@ published interface XBridgeTest : XBridgeTestBase
 	 ***/
 	[oneway] void raiseRuntimeExceptionOneway(	[in] string Message,
 												[in] com::sun::star::uno::XInterface Context );
-		
+
     /**
 	 * raises runtime exception;
 	 * the exception struct returned has to be filled with formerly set test data.
@@ -252,7 +252,7 @@ published interface XBridgeTest2 : XBridgeTest
     sequence< sequence< long > > setDim2( [in] sequence< sequence< long > > aSeq);
     sequence< sequence < sequence < long > > > setDim3(
         [in] sequence< sequence < sequence < long > > > aSeq);
-    
+
     void setSequencesInOut( [inout] sequence< boolean > aSeqBoolean,
                        [inout] sequence< char > aSeqChar,
                        [inout] sequence< byte > aSeqByte,
@@ -289,7 +289,7 @@ published interface XBridgeTest2 : XBridgeTest
                        [out] sequence< sequence< long > > aSeqDim2,
                        [out] sequence< sequence < sequence < long > > > aSeqDim3);
 
-    
+
 };
 //=============================================================================
 
